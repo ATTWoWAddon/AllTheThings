@@ -44,6 +44,7 @@ local RGBToHex = function(r, g, b)
 end
 -- Attempts to determine the colorized text for a given Group
 app.TryColorizeName = function(group, name)
+	name = name or group.name;
 	if IsRetrieving(name) then return name; end
 	-- raid headers
 	if group.isRaid then

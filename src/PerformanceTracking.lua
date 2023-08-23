@@ -32,11 +32,14 @@ app.PrintPerf = function()
 		if type(typeData) == "table" then
 			for k,v in pairs(typeData) do
 				if type(v) == "table" then
-					line[1] = typeKey;
-					line[2] = k;
-					line[3] = v.count;
-					line[4] = v.time;
-					tinsert(blob, table_concat(line, ","))
+					if type(k) == "string" then
+						line[1] = typeKey;
+						line[2] = k;
+						line[3] = v.count;
+						line[4] = v.time;
+						tinsert(blob, table_concat(line, ","))
+					else print("Why is this a",type(k),typeKey,v)
+					end
 				-- else print("Why is this a",type(v),typeKey,k,v)
 				end
 			end

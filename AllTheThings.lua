@@ -62,6 +62,7 @@ local CacheFields, SearchForField, SearchForFieldContainer, SearchForSourceIDQui
 	= app.CacheFields, app.SearchForField, app.SearchForFieldContainer, app.SearchForSourceIDQuickly;
 local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResults;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
+local TryColorizeName = app.TryColorizeName;
 
 -- Add a Feader & Filter debugger
 setmetatable(app.FilterConstants, {
@@ -1116,6 +1117,16 @@ local function BuildGroups(parent)
 			BuildGroups(group);
 		end
 	end
+end
+local function BuildSourceTextColorized(group)
+	local line = {}
+	local cap = 100
+	while group do
+		cap = cap - 1
+		line[cap] = TryColorizeName(group, group.text or RETRIEVING_DATA)
+		group = group.sourceParent or group.parent
+	end
+	return app.TableConcat(line, nil, nil, " > ", cap, 99)
 end
 local function BuildSourceText(group, l)
 	local parent = group.sourceParent or group.parent;
@@ -4248,7 +4259,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 				and (showCompleted or not app.IsComplete(j))
 				and not app.HasCost(j, paramA, paramB)
 			then
-				text = BuildSourceText(parent, 1);
+				text = BuildSourceTextColorized(parent);
 				if showUnsorted or (not string.match(text, L["UNSORTED_1"]) and not string.match(text, L["HIDDEN_QUEST_TRIGGERS"])) then
 					for source,replacement in pairs(abbrevs) do
 						text = string.gsub(text, source, replacement);
@@ -4583,13 +4594,13 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 				for i=1,#entries do
 					item = entries[i];
 					entry = item.group;
-					left = entry.text or RETRIEVING_DATA;
+					left = TryColorizeName(entry, entry.text or RETRIEVING_DATA);
 					if not working and IsRetrieving(left) then working = true; end
 
 					-- If this entry has a specific Class requirement and is not itself a 'Class' header, tack that on as well
 					if entry.c and entry.key ~= "classID" and #entry.c == 1 then
 						local class = GetClassInfo(entry.c[1]);
-						left = left .. " [" .. app.TryColorizeName(entry, class) .. "]";
+						left = left .. " [" .. TryColorizeName(entry, class) .. "]";
 					end
 					if entry.icon then item.prefix = item.prefix .. "|T" .. entry.icon .. ":0|t "; end
 
@@ -4633,7 +4644,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 								if count == 1 then
 									id = id[1];
 									locationGroup = C_Map_GetMapInfo(id);
-									locationName = locationGroup and (locationGroup.name or locationGroup.text);
+									locationName = locationGroup and TryColorizeName(locationGroup, locationGroup.name or locationGroup.text);
 								else
 									local mapsConcat, names, name = {}, {};
 									for i=1,count,1 do
@@ -4653,7 +4664,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 								end
 							else
 								locationGroup = SearchForObject(field, id, "field") or (id and field == "mapID" and C_Map_GetMapInfo(id));
-								locationName = locationGroup and (locationGroup.name or locationGroup.text);
+								locationName = locationGroup and TryColorizeName(locationGroup, locationGroup.name or locationGroup.text);
 							end
 							-- print("contains info",entry.itemID,field,id,locationGroup,locationName)
 							if locationName then
@@ -9049,7 +9060,7 @@ local unitFields = {
 				t.classID = classID;
 			end
 			-- include the Class coloring as part of the 'name' to make sorting neat
-			t.name = app.TryColorizeName(t, name);
+			t.name = TryColorizeName(t, name);
 			return name;
 		end
 		return unit;
@@ -9090,7 +9101,7 @@ local unitFields = {
 					t.raceID = character.raceID;
 					t.race = C_CreatureInfo.GetRaceInfo(character.raceID).raceName;
 				end
-				t.name = app.TryColorizeName(t, character.name or UNKNOWN).."-"..(character.realm or UNKNOWN);
+				t.name = TryColorizeName(t, character.name or UNKNOWN).."-"..(character.realm or UNKNOWN);
 				t.level = character.lvl;
 				break;
 			end
@@ -14440,7 +14451,7 @@ local function SetRowData(self, row, data)
 		else
 			rowLabel:SetPoint("RIGHT");
 		end
-		rowLabel:SetText(app.TryColorizeName(data, text));
+		rowLabel:SetText(TryColorizeName(data, text));
 		if data.font then
 			rowLabel:SetFontObject(data.font);
 			rowSummary:SetFontObject(data.font);
