@@ -1,0 +1,53 @@
+<Bindings>
+	<Binding name="ALLTHETHINGS_TOGGLEACCOUNTMODE" category="BINDING_HEADER_ALLTHETHINGS">
+		AllTheThings.Settings:ToggleAccountMode();
+	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLECOMPLETIONISTMODE" category="BINDING_HEADER_ALLTHETHINGS">
+		AllTheThings.Settings:ToggleCompletionistMode();
+	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLEDEBUGMODE" category="BINDING_HEADER_ALLTHETHINGS">
+		AllTheThings.Settings:ToggleDebugMode();
+	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLEFACTIONMODE" category="BINDING_HEADER_ALLTHETHINGS">
+		AllTheThings.Settings:ToggleFactionMode();
+	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLECOMPLETEDTHINGS" header="ALLTHETHINGS_PREFERENCES" category="BINDING_HEADER_ALLTHETHINGS">
+		AllTheThings.Settings:ToggleCompletedThings();
+	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLECOMPLETEDGROUPS" category="BINDING_HEADER_ALLTHETHINGS">
+		AllTheThings.Settings:ToggleCompletedGroups();
+	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLECOLLECTEDTHINGS" category="BINDING_HEADER_ALLTHETHINGS">
+		AllTheThings.Settings:ToggleCollectedThings();
+	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLEBOEITEMS" category="BINDING_HEADER_ALLTHETHINGS">
+		AllTheThings.Settings:ToggleBOEItems();
+	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLESOURCETEXT" category="BINDING_HEADER_ALLTHETHINGS">
+		AllTheThings.Settings:SetTooltipSetting("SourceLocations",
+		not AllTheThings.Settings:GetTooltipSetting("SourceLocations"));
+	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLEMAINLIST" header="ALLTHETHINGS_MODULES" category="BINDING_HEADER_ALLTHETHINGS">
+		AllTheThings.ToggleMainList();
+	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLEMINILIST" category="BINDING_HEADER_ALLTHETHINGS">
+		AllTheThings.ToggleMiniListForCurrentZone();
+	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLE_PROFESSION_LIST" category="BINDING_HEADER_ALLTHETHINGS">
+		AllTheThings:GetWindow("Tradeskills"):Toggle();
+	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLE_RAID_ASSISTANT" category="BINDING_HEADER_ALLTHETHINGS">
+		AllTheThings:GetWindow("RaidAssistant"):Toggle();
+	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLE_WORLD_QUESTS_LIST" category="BINDING_HEADER_ALLTHETHINGS">
+		AllTheThings:GetWindow("WorldQuests"):Toggle();
+	</Binding>
+	<Binding name="ALLTHETHINGS_TOGGLERANDOM" category="BINDING_HEADER_ALLTHETHINGS">
+		AllTheThings:GetWindow("Random"):Toggle();
+	</Binding>
+	<Binding name="ALLTHETHINGS_REROLL_RANDOM" category="BINDING_HEADER_ALLTHETHINGS">
+		local window = AllTheThings:GetWindow("Random");
+		window:SetVisible(true);
+		window:Reroll();
+	</Binding>
+</Bindings>

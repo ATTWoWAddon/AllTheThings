@@ -1,0 +1,59 @@
+## Title: AllTheThings |cfd9b9b9b(TBC)|r
+## IconTexture: Interface/Addons/AllTheThings/assets/logo_32x32
+## Name: AllTheThings
+## Notes: Addon for Tracking Collections & Account Completion
+## Author: Crieve-Sargeras
+## Version: @project-version@
+## Interface: 20504
+## X-Interface: 20504
+## X-Wago-ID: yQKyY5K7
+## X-Curse-Project-ID: 267285
+## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSavedVariables, ATTClassicSettings, ATTClassicAD, ATTClassicAuctionData, ATTClassicDebugData
+## SavedVariablesPerCharacter: ATTClassicSettingsPerCharacter
+lib\LibStub\LibStub.lua
+lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
+lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
+db\RaceDB.lua
+src\base.lua
+lib\Colors.lua
+lib\Sort.lua
+lib\Table.lua
+classic\locales.lua
+classic\src-Classes-base.lua
+src\Modules\Events.lua
+db\TBC\ExplorationDB.lua
+db\TBC\LocalizationDB.lua
+classic\Presets.lua
+src\Cache.lua
+lib\Audio.lua
+src\Classes\Filter Types.lua
+src\Classes\Illusions.lua
+src\Classes\PVP Ranks.lua
+classic\Settings.lua
+classic\ATT-Classic.lua
+db\TBC\Categories.lua
+src\UI\Achievements.lua
+src\UI\Attunements.lua
+src\UI\Auctions.lua
+src\UI\Battle Pets.lua
+src\UI\Breadcrumbs.lua
+src\UI\Dailies.lua
+src\UI\Factions.lua
+src\UI\Flight Paths.lua
+src\UI\Hidden Achievement Triggers.lua
+src\UI\Hidden Quest Triggers.lua
+src\UI\Illusions.lua
+src\UI\Maps.lua
+src\UI\Mounts.lua
+src\UI\Never Implemented.lua
+src\UI\Objects.lua
+src\UI\Quests.lua
+src\UI\Raid Assistant.lua
+src\UI\Random.lua
+src\UI\Removed With Patch Loot.lua
+src\UI\Soft Reserves.lua
+src\UI\Sync.lua
+src\UI\Titles.lua
+src\UI\Toys.lua
+src\UI\Unsorted.lua
+src\Root.lua

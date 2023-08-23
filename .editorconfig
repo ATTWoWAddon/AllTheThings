@@ -1,0 +1,11 @@
+root = true
+
+[*]
+trim_trailing_whitespace = true
+insert_final_newline = false
+indent_style = space
+indent_size = 4
+
+[*.lua]
+end_of_line = crlf
+indent_style = tab

@@ -1,0 +1,14 @@
+AllTheThings.iml
+.idea/workspace.xml
+.idea/modules.xml
+.idea/misc.xml
+.idea/inspectionProfiles/profiles_settings.xml
+icon.png
+*.user
+.vs/
+obj/
+**/desktop.ini
+*.bak
+__pycache__
+/.vscode/settings.json
+.venv
