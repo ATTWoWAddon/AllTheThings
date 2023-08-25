@@ -772,8 +772,8 @@ local L = {
 	["COST_ICON"] = "|T" .. app.asset("Currency") .. ":0|t";
 	["COST_TEXT"] = "|T" .. app.asset("Currency") .. ":0|t |cffdedade"..CURRENCY.."|r";
 	-- TODO @DeadSerious: NEED GOOD UPGRADE ICON
-	["UPGRADE_ICON"] = "|T" .. app.asset("star") .. ":0|t";
-	["UPGRADE_TEXT"] = "|T" .. app.asset("star") .. ":0|t |cff62e37e"..UPGRADE.."|r";
+	["UPGRADE_ICON"] = "|T" .. app.asset("Interface_Upgrade") .. ":0|t";
+	["UPGRADE_TEXT"] = "|T" .. app.asset("Interface_Upgrade") .. ":0|t |cff62e37e"..UPGRADE.."|r";
 	["REAGENT_ICON"] = "|T" .. app.asset("Category_Crafting") .. ":0|t";
 	["REAGENT_TEXT"] = "|T" .. app.asset("Category_Crafting") .. ":0|t |cffdedade"..GetItemClassInfo(5).."|r";
 

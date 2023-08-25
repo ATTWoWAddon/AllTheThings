@@ -1865,7 +1865,7 @@ app.IsNPCQuestGiver = function(self, npcID)
 				return true;
 			end
 		end
-		
+
 		npcQuestsCache[npcID] = false;
 		return false;
 	end
@@ -8048,7 +8048,7 @@ local fields = {
 			end
 		end
 		local statistic = GetStatistic(t.achievementID);
-		if statistic and statistic ~= '0' then
+		if statistic and statistic ~= '0' and statistic ~= '' and not string.match(statistic, "%W") then
 			return statistic;
 		end
 	end,
@@ -22098,7 +22098,7 @@ app.InitDataCoroutine = function()
 	-- Let a frame go before hitting the initial refresh to make sure as much time as possible is allowed for the operation
 	-- print("Yield prior to Refresh")
 	coroutine.yield();
-	
+
 	-- Prepare the Sound Pack!
 	app.Audio:ReloadSoundPack();
 
