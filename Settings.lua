@@ -3848,9 +3848,43 @@ end)
 --checkboxPlayDeathSound:SetATTTooltip(L["PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP"])
 checkboxPlayDeathSound:AlignBelow(checkboxScreenshotCollectedThings)
 
+local textSoundpack = child:CreateTextLabel("|cffFFFFFF"..L["SOUNDPACK"])
+textSoundpack:SetPoint("LEFT", headerCelebrations, 0, 0)
+textSoundpack:SetPoint("TOP", checkboxPlayDeathSound, "BOTTOM", 0, 0)
+textSoundpack:SetWidth(textSoundpack:GetUnboundedStringWidth())
+
+local dropdownSoundpack = CreateFrame("Frame", "dropdownSoundpack", child, "UIDropDownMenuTemplate")
+dropdownSoundpack:SetPoint("TOPLEFT", textSoundpack, "BOTTOMLEFT", -15, 0)
+UIDropDownMenu_SetWidth(dropdownSoundpack, 270) -- Use in place of dropDown:SetWidth
+
+-- Set the dropdown's current text to the active soundpack 
+AllTheThings.Audio:RegisterForSoundPackEvents(function(event, soundPack)
+	UIDropDownMenu_SetText(dropdownSoundpack, AllTheThings.Audio:GetActiveSoundPack().name)
+end)
+
+-- Change the active soundpack based on user selection
+local function WPDropDownDemo_OnClick(self, arg1)
+	AllTheThings.Audio:ActivateSoundPack(arg1)
+	UIDropDownMenu_SetText(dropdownSoundpack, AllTheThings.Audio:GetActiveSoundPack().name)
+	AllTheThings.Audio:PlayFanfare()
+end
+
+-- Populate the dropdown menu with all existing soundpacks
+function WPDropDownDemo_Menu(frame, level, menuList)
+	local info = UIDropDownMenu_CreateInfo()
+	info.func = WPDropDownDemo_OnClick
+
+	local soundPacks = AllTheThings.Audio:GetAllSoundPacks()
+	for i, sounds in pairs(soundPacks) do
+		info.text, info.arg1 = sounds.name, sounds.name
+		UIDropDownMenu_AddButton(info)
+	end
+end
+UIDropDownMenu_Initialize(dropdownSoundpack, WPDropDownDemo_Menu)
+
 local headerMinimapButton = child:CreateHeaderLabel(L["MINIMAP_LABEL"])
 headerMinimapButton:SetPoint("LEFT", headerCelebrations, 0, 0)
-headerMinimapButton:SetPoint("TOP", checkboxPlayDeathSound, "BOTTOM", 0, -10)
+headerMinimapButton:SetPoint("TOP", dropdownSoundpack, "BOTTOM", 0, -10)
 
 local checkboxShowMinimapButton = child:CreateCheckBox(L["MINIMAP_BUTTON_CHECKBOX"],
 function(self)
