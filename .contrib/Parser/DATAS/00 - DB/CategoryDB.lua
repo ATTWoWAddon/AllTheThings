@@ -23,6 +23,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134492,
 		text = {
 			en = "Tarot Decks",
+			cn = "塔罗牌",
 		},
 	},
 	[58] = {

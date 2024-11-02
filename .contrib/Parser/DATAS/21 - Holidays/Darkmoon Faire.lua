@@ -6,6 +6,7 @@ MINIGAMES_HEADER = createHeader({
 	icon = 134481,
 	text = {
 		en = "Minigames",
+		cn = "小游戏",
 	},
 	description = {
 		en = "The following minigames cost one Darkmoon Game Token to play and have a daily quest that grants you prize tickets as well as a number of associated achievements.",
@@ -23,7 +24,7 @@ DARKMOON_DANCE_HEADER = createHeader({
 		pt = "Feira de Negraluna Jogo da Dança",
 		ru = "Ярмарка Новолуния состязании танцоров",
 		ko = "다크문 유랑단 춤 게임",
-		cn = "暗月马戏团舞游戏",
+		cn = "暗月马戏团跳舞游戏",
 	},
 	description = {
 		en = "To play the Darkmoon Faire Dance game, talk to Simon Sezdans in front of the South Pavillion. Each attempt at the Darkmoon Faire Dance game costs one Darkmoon Game Token. Talking to Simon will also set the difficulty for your dance game:\n  Just something fun and easygoing! (Easy)\n  I'd like a little challenge! (Medium)\n  Show me your moves, don't hold back! (Hard)\n\nDarkmoon Dance Master is not a rhythm game like most dance games are, but a memory game instead. You will have a dancer next to you in the dancing arena, who will start a sequence of moves highlighted by runes in front of him. Easy games will have a sequence of 3 runes at a time, Medium games 4 runes, and Hard games 5 runes.\n\nThere are three possible runes: Chicken Dance (Yellow), Power Spin (Purple) and Fist Pump (Blue). Once the opponent finishes their sequence, you have 5 seconds to match the exact sequence used by the dancer. There is no punishment for taking your time to complete the sequence, as long as you do it in time and don't miss any steps.\n\nThe game ends after 5 rounds (if you complete all steps successfully), but can end prematurely if you miss too many steps. Missing no steps will grant you a perfect score.",
