@@ -8,6 +8,7 @@ GUEST_RELATIONS = createHeader({
 --	eventID = EVENTS.TODO,
 	text = {
 		en = "Guest Relations",
+		cn = "宾客关系",
 	},
 });
 
