@@ -402,13 +402,13 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["sourceQuest"] = 56377,	-- Forging Onward
 						}),
-						q(58876, {	-- Lost Flight
+						q(58876,	-- Lost Flight
+						bubbleDownSelf({["timeline"] = { ADDED_7_3_5, REMOVED_9_0_2_LAUNCH }}, {
 							["provider"] = { "i", 174863 },	-- Spawn of Vexiona
-							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								i(174862),	-- Uncorrupted Voidwing (MOUNT!)
 							},
-						}),
+						})),
 						q(58737, {	-- Magni's Findings
 							["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },
 							["provider"] = { "n", 152206 },	-- Magni Bronzebeard

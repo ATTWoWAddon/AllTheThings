@@ -324,8 +324,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 			["timeline"] = { ADDED_3_0_2 },
 		}),
-		ach(1697, {	-- Nation of Adoration [Alliance]
-			["timeline"] = { ADDED_3_0_2, REMOVED_10_2_5 },
+		ach(1697,	-- Nation of Adoration [Alliance]
+		bubbleDownSelf({["timeline"] = { ADDED_3_0_2, REMOVED_10_2_5 }},{
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				crit(12838, {	-- A Gift for the High Priestess of Elune
@@ -341,9 +341,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["_quests"] = { 24611 },	-- A Gift for the Prophet
 				}),
 			},
-		}),
-		ach(1698, {	-- Nation of Adoration [Horde]
-			["timeline"] = { ADDED_3_0_2, REMOVED_10_2_5 },
+		})),
+		ach(1698, 	-- Nation of Adoration [Horde]
+		bubbleDownSelf({["timeline"] = { ADDED_3_0_2, REMOVED_10_2_5 }},{
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				crit(12842, {	-- A Gift for the Warchief / A Gift for the High Overlord/ A Gift for the Warchief's Advisor
@@ -359,7 +359,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["_quests"] = { 24613 },	-- A Gift for the Banshee Queen
 				}),
 			},
-		}),
+		})),
 		ach(1700, {	-- Perma-Peddle
 			["provider"] = { "i", 22235 },	-- Truesilver Shafted Arrow
 			["timeline"] = { ADDED_3_0_2 },

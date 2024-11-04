@@ -398,9 +398,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					i(54806, {	-- Frostscythe of Lord Ahune [Level 80]
 						["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 					}),
-					i(53641, {	-- Frigid Frostling (PET!)
-						["timeline"] = { ADDED_3_3_3 },
-					}),
+					i(53641),	-- Frigid Frostling (PET!)
 				},
 			}),
 			i(35723, {	-- Shards of Ahune
@@ -2324,7 +2322,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 			},
 		}),
-		
+
 		-- Honor the Flame Quests
 		n(FACTION_HEADER_ALLIANCE, {
 			["timeline"] = { ADDED_2_4_0 },

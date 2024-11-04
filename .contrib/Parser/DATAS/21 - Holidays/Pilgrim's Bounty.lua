@@ -98,12 +98,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				["timeline"] = { ADDED_3_2_2, REMOVED_5_0_4 },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
-					title(133, {	-- <Name> the Pilgrim [NOTE: WoWHead's ID is incorrect, don't look at this and freak out like I did. - Crieve]
-						["timeline"] = { ADDED_3_2_2 },
-					}),
-					i(44810, {	-- Plump Turkey (PET!)
-						["timeline"] = { ADDED_3_2_2 },
-					}),
+					title(133),	-- <Name> the Pilgrim [NOTE: WoWHead's ID is incorrect, don't look at this and freak out like I did. - Crieve]
+					i(44810),	-- Plump Turkey (PET!)
 				},
 			}),
 			ach(3579, {	-- "FOOD FIGHT!"

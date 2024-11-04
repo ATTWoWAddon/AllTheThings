@@ -1742,10 +1742,14 @@ i(205206, 408648);	-- Calescent Shalewing
 i(192774, 374097);	-- Coralscale Salamanther
 i(0, 424539);		-- Draconic Gladiator's Drake
 i(213438, 434462);	-- Infinite Armoredon
+-- #if BEFORE 11.0.7
 i(0, 437162);		-- Polly Roger
 i(0, 254812);		-- Royal Seafeather
+-- #endif
 i(212920, 433281);	-- Savage Blue Battle Turtle
+-- #if BEFORE 11.0.7
 i(0, 300154);		-- Silver Tidestallion
+-- #endif
 i(192751, 373967);	-- Stormtouched Bruffalon
 i(210142, 424607);	-- Taivan
 i(213439, 434470);	-- Vicious Dreamtalon [A]
@@ -1889,7 +1893,7 @@ i(224150, 451489);	-- Siesbarg
 i(223572, 449415);	-- Slatestone Ramolith
 i(221753, 447057);	-- Smoldering Cinderbee
 i(223153, 447151);	-- Soaring Meaderbee
-i(225250, 454682);		-- Startouched Furline
+i(225250, 454682);	-- Startouched Furline
 i(221765, 442358);	-- Stonevault Mechsuit
 i(224147, 451486);	-- Sureki Skyrazor
 i(223267, 447195);	-- Swarmite Skyhunter
@@ -1903,25 +1907,31 @@ i(223276, 448680);	-- Widow's Undercrawler
 -- PATCH 11.0.5 --
 ------------------
 i(224399, 452645);	-- Amani Hunting Bear
-i(230200, 466838);		-- Chaos-Forged Dreadwing
-i(230184, 466811);		-- Chaos-Forged Gryphon
-i(230185, 466812);		-- Chaos-Forged Hippogryph
-i(230201, 466845);		-- Chaos-Forged Wind Rider
+i(230200, 466838);	-- Chaos-Forged Dreadwing
+i(230184, 466811);	-- Chaos-Forged Gryphon
+i(230185, 466812);	-- Chaos-Forged Hippogryph
+i(230201, 466845);	-- Chaos-Forged Wind Rider
 i(228760, 463133);	-- Coldflame Tempest
 i(231374, 468353);	-- Enchanted Spellweave Carpet
 i(224398, 452643);	-- Frayfeather Hippogryph
 i(211087, 428067);	-- Hateforged Blazecycle
-i(229418, 465235);		-- Trader's Gilded Brutosaur
+i(229418, 465235);	-- Trader's Gilded Brutosaur
 
 ------------------
--- PATCH 11.0.5 --
+-- PATCH 11.0.7 --
 ------------------
 i(233241, 471696);	-- Hooktalon
+i(0, 473472);		-- Jani's Trashpile
+i(232901, 472253);	-- Lunar Launcher
+i(232926, 472479);	-- Love Witch's Sweeper
 i(226042, 457656);	-- Plunderlord's Midnight Crocolisk
+i(233240, 437162);	-- Polly Roger
+i(233242, 254812);	-- Royal Seafeather
+i(233354, 473861);	-- Savage Alabaster Battle Turtle
 i(223313, 448934);	-- Shadow of Doubt
+i(233243, 300154);	-- Silver Tidestallion
+i(233019, 472489);	-- Sky Witch's Sweeper
 i(232991, 472752);	-- The Breaker's Song
-
--- New itemID learnables for mounts previously only learned by spell.
---i(233240, 437162);	-- Polly Roger
---i(233242, 254812);	-- Royal Seafeather
---i(233243, 300154);	-- Silver Tidestallion
+i(232639, 471562);	-- Thrayir, Eyes of the Siren
+i(232624, 471538);	-- Timely Buzzbee
+i(233020, 472488);	-- Twilight Witch's Sweeper

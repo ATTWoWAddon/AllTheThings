@@ -526,8 +526,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(28728, {	-- Signs of Things to Come
 							["qg"] = 49480,	-- Tarindrella
 							["sourceQuest"] = 28727,	-- Vile Touch
-							["coord"] = { 44.8, 29.0, SHADOWGLEN },
 							["coords"] = {
+								{ 44.8, 29.0, SHADOWGLEN },
 								-- #if AFTER 5.0.4
 								{ 45.6, 74.5, SHADOWGLEN },
 								-- #else

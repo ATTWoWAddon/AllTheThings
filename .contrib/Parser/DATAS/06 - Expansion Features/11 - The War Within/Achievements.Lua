@@ -908,6 +908,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				}),
 			},
 		}),
+        --[[ TODO: (!) New achievements not sourced yet
+		ach(20501, bubbleDownSelf({	-- You Xal Not Pass
+			["timeline"] = { ADDED_11_0_7 },
+		},{
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				41189,	-- Azj the World Turns (!)
+                41188,  -- Crystal Chronicled  (!)
+                41133,  -- Isle Remember You (!)
+                41187,  -- Rage Aside the Machine (!)
+                41186,  -- Slate of the Union (!)
+			}},
+			["groups"] = {
+				i(223313),	-- Shadow of Doubt (MOUNT!)
+			},
+		})),
+		]]--
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {

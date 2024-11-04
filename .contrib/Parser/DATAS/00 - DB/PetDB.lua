@@ -4070,10 +4070,14 @@ i(208446, 4264);	-- Fyrn
 ------------------
 i(210409, 4286);	-- Aura
 i(206174, 3582);	-- Blub
+-- #if BEFORE 11.0.7
 i(0, 4426);			-- Bubbles
+-- #endif
 i(0, 4437);			-- Fathom
+-- #if BEFORE 11.0.7
 i(0, 4425);			-- Glamrok
 i(0, 4435);			-- Happy
+-- #endif
 i(217043, 4436);	-- Pokee
 
 ------------------
@@ -4258,13 +4262,11 @@ i(231356, 4686);	-- Specter
 i(229993, 4669);	-- Bluedoo
 
 ------------------
--- PATCH 11.0.5 --
+-- PATCH 11.0.7 --
 ------------------
 --- ITEM ---
+i(233251, 4426);		-- Bubbles
+i(233248, 4425);		-- Glamrok
+i(233252, 4435);		-- Happy
 --i(0, ???);	-- Parley
 --i(233247, ???);	-- Sparklesnap
-
--- New itemID learnables for pet species previously only learned by spell.
---i(233251, 4426);			-- Bubbles
---i(233248, 4425);			-- Glamrok
---i(233252, 4435);			-- Happy

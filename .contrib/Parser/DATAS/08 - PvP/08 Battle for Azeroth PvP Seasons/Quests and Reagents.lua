@@ -13,24 +13,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED
 		},
 		["isWeekly"] = true,
 	}, {
-		q(53457, {	-- Quartermaster's Bounty
-			["timeline"] = { ADDED_8_0_1, REMOVED_8_2_0 },
-			["g"] = {
-				i(163827),	-- Quartermaster's Coin (QI!)
-			},
-		}),
-		q(57274, {	-- Quartermaster's Bounty
-			["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 },
-			["g"] = {
-				i(171198),	-- Quartermaster's Prize (QI!)
-			},
-		}),
-		q(58279, {	-- Quartermaster's Bounty
-			["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
-			["g"] = {
-				i(172519),	-- Quartermaster's Note (QI!)
-			},
-		}),
+		q(53457,	-- Quartermaster's Bounty
+		bubbleDownSelf({["timeline"] = { ADDED_8_0_1, REMOVED_8_2_0 }},{
+			i(163827),	-- Quartermaster's Coin (QI!)
+		})),
+		q(57274,	-- Quartermaster's Bounty
+		bubbleDownSelf({["timeline"] = { ADDED_8_2_0, REMOVED_8_3_0 }},{
+			i(171198),	-- Quartermaster's Prize (QI!)
+		})),
+		q(58279,	-- Quartermaster's Bounty
+		bubbleDownSelf({["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 }},{
+			i(172519),	-- Quartermaster's Note (QI!)
+		})),
 	})),
 	filter(REAGENTS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 } }, {
 		i(159570),	-- Battleborn Sigil Dread Combatant

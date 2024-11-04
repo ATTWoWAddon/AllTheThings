@@ -19,8 +19,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			ach(15952),		-- Rival I: Dragonflight Season 1
 			ach(15953),		-- Rival II: Dragonflight Season 1
 			ach(15954, {	-- Duelist: Dragonflight Season 1
-				ill(6786, {["timeline"] = { ADDED_10_0_7 }}),	-- Primal Storm (ILLUSION!)
-				i(202089, {["timeline"] = { ADDED_10_0_5 }}),	-- Crimson Gladiator's Prestigious Cloak
+				ill(6786, {["timeline"] = { ADDED_10_0_7, REMOVED_10_1_0 }}),	-- Primal Storm (ILLUSION!)
+				i(202089, {["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 }}),	-- Crimson Gladiator's Prestigious Cloak
 			}),
 			ach(15984),		-- Elite: Dragonflight Season 1
 			ach(15957, {	-- Gladiator: Dragonflight Season 1

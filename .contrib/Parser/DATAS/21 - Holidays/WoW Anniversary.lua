@@ -674,9 +674,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(171498),	-- Savior's Grasp
 								i(171506),	-- Leggings of Eternity
 								i(171497),	-- Legguards of Endless Rage
-								i(122112, {	-- Hyjal Wisp (PET!)
-									["timeline"] = { ADDED_6_1_0 },
-								}),
+								i(122112),	-- Hyjal Wisp (PET!)
 							},
 						}),
 					}),
@@ -941,9 +939,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(171588, {	-- Westfall Saber
 									["races"] = ALLIANCE_ONLY,
 								}),
-								i(142085, {	-- Nerubian Swarmer (PET!)
-									["timeline"] = { ADDED_7_1_0 },
-								}),
+								i(142085),	-- Nerubian Swarmer (PET!)
 							},
 						}),
 						e(1636, {	-- The Lich King
@@ -969,9 +965,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(171573),	-- Warmace of Menethil
 								i(171579),	-- Windrunner's Heartseeker
 								i(50818),	-- Invincible (MOUNT!)
-								i(142098, {	-- Drudge Ghoul (PET!)
-									["timeline"] = { ADDED_7_1_0 },
-								}),
+								i(142098),	-- Drudge Ghoul (PET!)
 								i(122229),	-- Music Roll: Invincible
 								i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 									["sourceQuest"] = 38990,	-- The Call of Icecrown
@@ -1148,6 +1142,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				i(187709),	-- Celebration Package
 				i(172013),	-- Celebration Firework
 				i(171177),	-- Invitation from the Timewalkers
+			}),
+		}),
+	})),
+	n(WOW_ANNIVERSARY_NINETEEN, bubbleDown({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0 } }, {
+		ach(18702),	-- WoW's 19th Anniversary
+		n(MAILBOX, {
+			i(208211, {	-- Anniversary Gift
+				i(208210),	-- Celebration Package
+				i(172013),	-- Celebration Firework
+				i(171177),	-- Invitation from the Timewalkers
+				i(208543, {	-- Lil' Frostwing (PET!)
+					ach(19192),	-- Lil' Frostwing
+				}),
 			}),
 		}),
 	})),
@@ -2170,6 +2177,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["coord"] = { 62.3, 51.8, TANARIS },
 				-- #endif
 				["isWeekly"] = true,
+				["timeline"] = { ADDED_8_2_5, REMOVED_8_2_5, ADDED_11_0_2 },
 				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
 			}),
 		}),
@@ -2302,20 +2310,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	})),
-	n(WOW_ANNIVERSARY_EIGHTEEN, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } },{
-	})),
 	n(WOW_ANNIVERSARY_NINETEEN, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } },{
-		ach(18702),	-- WoW's 19th Anniversary
-		n(MAILBOX, {
-			i(208211, {	-- Anniversary Gift
-				i(208210),	-- Celebration Package
-				i(172013),	-- Celebration Firework
-				i(171177),	-- Invitation from the Timewalkers
-				i(208543, {	-- Lil' Frostwing (PET!)
-					ach(19192),	-- Lil' Frostwing
-				}),
-			}),
-		}),
 		n(VENDORS, {
 			n(158061, {	-- Historian Ma'di
 				["coord"] = { 50.7, 41.1, CAVERNS_OF_TIME },

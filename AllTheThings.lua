@@ -7699,12 +7699,54 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 		(function()
 		local results, groups, nested, header, headerKeys, difficultyID, topHeader, nextParent, headerID, groupKey, typeHeaderID, isInInstance;
 		local rootGroups, mapGroups = {}, {};
-		self.Rebuild = function(self)
-			-- app.PrintDebug("Rebuild",self.mapID);
-			local currentMaps, mapID = {}, self.mapID
 
+		self.MapCache = setmetatable({}, { __mode = "kv" })
+		local function TrySwapFromCache()
+			-- window to keep cached maps/not re-build & update them
+			local expired = GetTimePreciseSec() - 60
+			for mapID,mapData in pairs(self.MapCache) do
+				-- app.PrintDebug("Check expired cached map",mapID,mapData._lastshown,expired)
+				if mapData._lastshown < expired then
+					-- app.PrintDebug("Removed cached map",mapID,mapData._lastshown,expired)
+					self.MapCache[mapID] = nil
+				end
+			end
+			local mapID = self.mapID
+			header = self.MapCache[mapID]
+			if not header then return end
+			if not header._maps[mapID] then
+				-- app.PrintDebug("cache maps cleared! rebuild new for",mapID)
+				self.MapCache[mapID] = nil
+				return
+			end
+			-- app.PrintDebug("Loaded cached Map",mapID)
+			header._lastshown = GetTimePreciseSec()
+			self:SetData(header)
+			self.CurrentMaps = header._maps
+			-- app.PrintTable(self.CurrentMaps)
+			-- Reset the Fill if needed
+			if not header._fillcomplete then
+				-- app.PrintDebug("Re-fill cached Map",mapID)
+				app.SetSkipLevel(2);
+				app.FillGroups(header);
+				app.SetSkipLevel(0);
+			end
+			Callback(self.Update, self);
+			return true
+		end
+
+		app.AddEventHandler("OnSettingsNeedsRefresh", function()
+			-- if settings change that requrie refresh, wipe cached maps
+			wipe(self.MapCache)
+		end)
+
+		self.Rebuild = function(self)
 			-- Reset the minilist Runner before building new data
 			self:GetRunner().Reset()
+
+			if TrySwapFromCache() then return end
+			-- app.PrintDebug("Rebuild",self.mapID);
+			local currentMaps, mapID = {}, self.mapID
 
 			-- Get all results for this map, without any results that have been cloned into Source Ignored groups or are under Unsorted
 			results = CleanInheritingGroups(SearchForField("mapID", mapID), "sourceIgnored");
@@ -7884,6 +7926,10 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 
 				-- Swap out the map data for the header.
 				self:SetData(header);
+				header._maps = currentMaps
+				header._lastshown = GetTimePreciseSec()
+				-- app.PrintDebug("Saved cached Map",mapID,header._lastshown)
+				self.MapCache[mapID] = header
 				-- Fill up the groups that need to be filled!
 				app.SetSkipLevel(2);
 				app.FillGroups(header);
@@ -7991,11 +8037,14 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 		end
 	end
 	if self:IsVisible() then
-		-- Update the mapID into the data for external reference in case not rebuilding
-		self.data.mapID = self.mapID;
 		-- Update the window and all of its row data
 		if not self:IsSameMapID() then
+			-- app.PrintDebug("Leaving map",self.data.mapID)
+			self.data._lastshown = GetTimePreciseSec()
 			force = self:Rebuild();
+		else
+			-- Update the mapID into the data for external reference in case not rebuilding
+			self.data.mapID = self.mapID;
 		end
 		self:BaseUpdate(force, got);
 	end

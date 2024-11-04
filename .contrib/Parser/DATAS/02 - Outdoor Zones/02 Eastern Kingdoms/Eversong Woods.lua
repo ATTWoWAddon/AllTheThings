@@ -482,9 +482,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 									-- #endif
 								}),
 								i(20474),	-- Sunstrider Book Satchel
-								i(131235, {	-- Sunspire Cinch
-									["timeline"] = { ADDED_7_0_3 },
-								}),
+								-- added after removal of the quest
+								-- i(131235, {	-- Sunspire Cinch
+								-- 	["timeline"] = { ADDED_7_0_3 },
+								-- }),
 								i(20996),	-- Sunspire Cord
 								i(20995),	-- Well Watcher Gloves
 							},

@@ -943,9 +943,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(223574, {	-- [PH] Proto Ram Earthen (White Skin, Grand Horns, White Saddle) (MOUNT!)
 				["displayID"] = 117968,
 			}),
-			i(223313, {	-- [PH] Shadow Elemental (Black) (MOUNT!)
-				["displayID"] = 119534,
-			}),
 			i(223587, {	-- [PH] Silver Armored Fel Bat Gladiator Mount (MOUNT!)
 				["displayID"] = 119718,
 			}),

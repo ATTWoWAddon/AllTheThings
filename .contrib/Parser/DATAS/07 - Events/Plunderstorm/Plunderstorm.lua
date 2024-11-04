@@ -111,7 +111,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 					},
 				}),
 			},{ -- RENOWN 6 --
+				-- #if BEFORE 11.0.7
 				pet(4435),	-- Happy (PET!)
+				-- #else
+				i(233252),	-- Happy (PET!)
+				-- #endif
 				i(216988),	-- Spun Cotton Shirt
 			},{ -- RENOWN 7 --
 				i(216984),	-- Skulker's Cloak
@@ -120,12 +124,20 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 			},{ -- RENOWN 9 --
 				i(216994),	-- Warm Woolen Cap
 			},{ -- RENOWN 10 --
+				-- #if BEFORE 11.0.7
 				mount(300154),	-- Silver Tidestallion (MOUNT!)
+				-- #else
+				i(233243),	-- Silver Tidestallion (MOUNT!)
+				-- #endif
 				title(544, {	-- Swashbuckler <Name>
 					["collectible"] = false,
 				}),
 			},{ -- RENOWN 11 --
+				-- #if BEFORE 11.0.7
 				pet(4426),	-- Bubbles (PET!)
+				-- #else
+				i(233251),	-- Bubbles (PET!)
+				-- #endif
 			},{ -- RENOWN 12 --
 				i(216986),	-- Swindler's Cutouts
 			},{ -- RENOWN 13 --
@@ -144,7 +156,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 			},{ -- RENOWN 19 --
 				i(216985),	-- Weatherproven Drape
 			},{ -- RENOWN 20 --
+				-- #if BEFORE 11.0.7
 				mount(254812),	-- Royal Seafeather (MOUNT!)
+				-- #else
+				i(233242),	-- Royal Seafeather (MOUNT!)
+				-- #endif
 				title(545, {	-- Buccaneer <Name>
 					["collectible"] = false,
 				}),
@@ -169,7 +185,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 			},{ -- RENOWN 29 --
 				i(216729),	-- Plunderlord's Fancy Trousers
 			},{ -- RENOWN 30 --
+				-- #if BEFORE 11.0.7
 				pet(4425),	-- Glamrok (PET!)
+				-- #else
+				i(233248),	-- Glamrok (PET!)
+				-- #endif
 				title(546, {	-- First Mate <Name>
 					["collectible"] = false,
 				}),
@@ -190,7 +210,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 				i(219348),	-- Plunderlord's Monocle
 				i(216734),	-- Plunderlord's Tricorne of Admiralty
 			},{ -- RENOWN 39 --
+				-- #if BEFORE 11.0.7
 				mount(437162),	-- Polly Roger (MOUNT!)
+				-- #else
+				i(233240),	-- Polly Roger (MOUNT!)
+				-- #endif
 			},{ -- RENOWN 40 --
 				title(541),	-- Plunderlord <Name>
 				i(219349),	-- Plunderlord's Tabard

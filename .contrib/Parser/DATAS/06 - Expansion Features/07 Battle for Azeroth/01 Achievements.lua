@@ -4,6 +4,36 @@
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	n(ACHIEVEMENTS, {	-- Achievements (Achievements that don't really fit into a specific Location which are specific to BFA)
+		--[[ TODO: (!) New achievements not sourced yet
+		ach(20501, bubbleDownSelf({	-- A Farewell to Arms
+			["timeline"] = { ADDED_11_0_7 },
+		},{
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				12947,	-- Azerothian Diplomat
+				12807,	-- Battle for Azeroth Dungeon Hero
+				40961,	-- Batle of Dazar'alor (!)
+				40959,	-- Black Empire State of Mind (!)
+				41209,	-- Dressed to Kill: Battle for Azeroth (!)
+				13414,	-- Crucible of Storms
+				13134,	-- Expedition Leader
+				40958,	-- Full Heart, Can't Lose (!)
+				40956,	-- I'm On Island Time (!)
+				40957,	-- Maximum Effort (!)
+				13541,	-- Mecha-Done
+				40963,	-- Ny'alotha, the Waking City (!)
+				40962,	-- The Eternal Palace (!)
+				13994,	-- Through the Depths of Visions
+				14730,	-- To All the Squirrels I Set Sail to See
+				40960,	-- Uldir (!)
+				13638,	-- Undersea Usurper
+				40955,	-- War Stories (!)
+			}},
+			["groups"] = {
+				mount(473472),	-- Jani's Trashpile (MOUNT!)
+			},
+		})),
+		]]--
 		ach(13036),		-- A Loa of a Tale (automated)
 		pvp(ach(12573, {	-- Band of Brothers
 			crit(41008),		-- Honorable Kill

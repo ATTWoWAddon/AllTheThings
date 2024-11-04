@@ -1008,7 +1008,6 @@ root(ROOTS.Unsorted, {
 			i(232631),	-- Wrapped Spear
 			--
 			i(228911),	-- Xal'atath's Rusty Coin
-			i(232905),	-- Malown's Slam
 
 			i(228938),	-- Area 52 Tabard
 			i(233053),	-- Crown of the Violet Rose

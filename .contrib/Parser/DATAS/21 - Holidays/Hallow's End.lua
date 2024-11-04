@@ -142,7 +142,11 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 	}),
 	i(70722, {	-- Little Wickerman (TOY!)
 		["timeline"] = { ADDED_4_2_0 },
+		-- #if BEFORE 11.0.7
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
+		-- #else
+		["cost"] = { { "i", 33226, 100 }, },	-- 100x Tricky Treat
+		-- #endif
 	}),
 	i(37011, {	-- Magic Broom (MOUNT!)
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
@@ -440,7 +444,7 @@ function candybucket(questID, t)
 	t = q(questID, t);
 	t._drop = { "g" };
 	t.isYearly = true;
-	t.g = { i(33226) };	-- Tricky Treat
+	t.g = { i(33226, { ["_drop"] = {"races"} }) };	-- Tricky Treat
 	if t.provider and t.provider[1] == "o" then
 		ObjectDB[t.provider[2]] = CANDY_BUCKET_OBJECT_DATA;
 	elseif t.providers then

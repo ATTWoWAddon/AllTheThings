@@ -1330,7 +1330,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(132094, {	-- Proprietor's Mitts
-									["timeline"] = { ADDED_7_0_3 },
+									-- this is the only source, but it's added to a quest after the quest was removed?? what
+									-- ["timeline"] = { ADDED_7_0_3 },
 								}),
 								i(57397, {	-- Goldshire Iron Bracer
 									["timeline"] = { ADDED_4_0_3 },

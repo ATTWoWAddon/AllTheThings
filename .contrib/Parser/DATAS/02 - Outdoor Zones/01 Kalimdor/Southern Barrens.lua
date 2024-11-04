@@ -1570,7 +1570,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 14,
 				}),
 				q(26687, {	-- Reinforcements From Theramore
-					["qgs"] = 39118,	-- General Twinbraid
+					["qg"] = 39118,	-- General Twinbraid
 					["sourceQuest"] = 25182,	-- Kill 'em All!
 					["coord"] = { 43.5, 78.3, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },

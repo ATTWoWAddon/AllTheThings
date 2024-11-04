@@ -66,11 +66,11 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				}),
 			},
 		})),
-		q(7666, {	-- Again Into the Great Ossuary [A]
+		q(7666,	-- Again Into the Great Ossuary [A]
+		bubbleDownSelf({["timeline"] = { REMOVED_4_0_3 }}, {
 			["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 			["sourceQuest"] = 7647,	-- Judgment and Redemption
 			["coord"] = { 37.6, 32.6, STORMWIND_CITY },
-			["timeline"] = { REMOVED_4_0_3 },
 			["classes"] = { PALADIN },
 			["races"] = ALLIANCE_ONLY,
 			["repeatable"] = true,
@@ -78,12 +78,12 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["groups"] = {
 				i(18746),	-- Divination Scryer
 			},
-		}),
-		q(7669, {	-- Again Into the Great Ossuary [H]
+		})),
+		q(7669,	-- Again Into the Great Ossuary [H]
+		bubbleDownSelf({["timeline"] = { REMOVED_4_0_3 }}, {
 			["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 			["sourceQuest"] = 8258,	-- The Darkreaver Menace
 			["coord"] = { 38.7, 35.9, ORGRIMMAR },
-			["timeline"] = { REMOVED_4_0_3 },
 			["classes"] = { SHAMAN },
 			["races"] = HORDE_ONLY,
 			["repeatable"] = true,
@@ -91,7 +91,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["groups"] = {
 				i(18746),	-- Divination Scryer
 			},
-		}),
+		})),
 		q(27140, {	-- Alexi's Gambit
 			["qg"] = 45110,	-- Alexi Barov <House of Barov>
 			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
@@ -361,14 +361,14 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				}),
 			},
 		}),
-		q(7647, {	-- Judgment and Redemption
+		q(7647,	-- Judgment and Redemption
+		bubbleDownSelf({["timeline"] = { REMOVED_4_0_3 }}, {
 			["providers"] = {
 				{ "n", 928 },	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 				{ "i", 18804 },	-- Lord Grayson's Satchel
 			},
 			["sourceQuest"] = 7646,	-- The Divination Scryer
 			["coord"] = { 37.6, 32.6, STORMWIND_CITY },
-			["timeline"] = { REMOVED_4_0_3 },
 			["classes"] = { PALADIN },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 60,
@@ -390,7 +390,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 					["lvl"] = 60,
 				}),
 			},
-		}),
+		})),
 		q(5522, {	-- Leonid Barthalomew
 			["providers"] = {
 				{ "n", 10267 },	-- Tinkee Steamboil

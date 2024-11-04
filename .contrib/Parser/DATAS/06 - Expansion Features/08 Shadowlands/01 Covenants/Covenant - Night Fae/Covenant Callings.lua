@@ -62,7 +62,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				}),
 				q(60383, {	-- Aiding Maldraxxus
 					["provider"] = { "n", 167195 },	-- Blodwyn
-					["coord"] = { 46.4, 50.6, ARDENWEALD },
+					["coord"] = { 46.4, 50.6, THE_TRUNK },
 					["g"] = {
 						i(181475),	-- Bounty of the Grove Wardens
 					},

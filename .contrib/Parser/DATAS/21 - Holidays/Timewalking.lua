@@ -45,12 +45,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 	["groups"] = {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(19079, {	-- Master of the Turbulent Timeways
-			["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
-			["groups"] = {
-				crit(62267),	-- Gain Mastery of Timeways for 5 weeks
-				i(205208),	-- Sandy Shalewing (MOUNT!)
-			},
+				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
+				["groups"] = {
+					crit(62267),	-- Gain Mastery of Timeways for 5 weeks
+					i(205208),	-- Sandy Shalewing (MOUNT!)
+				},
 			}),
+			--[[ TODO: Needs criteria
+			ach(41056, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {	-- Master of the Turbulent Timeways II
+				["description"] = "Each week finish 4 dungeons with Distilled Knowledge of Timeways buff active, upon reaching 4 stacks the buff changes into Mastery of Timeways, completing that week's criteria.",
+				["groups"] = {
+					--crit(???),	-- Gain Mastery of Timeways for 5 weeks
+					i(232624),	-- Timely Buzzbee (MOUNT!)
+				},
+			})),
+			]]--
 		})),
 		n(COMMON_BOSS_DROPS, {
 			i(133543, {	-- Infinite Timereaver (MOUNT!)
@@ -387,8 +396,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			e(2633, {	-- Postmaster Malown
 				["crs"] = { 11143 },	-- Postmaster Malown
 				["g"] = {
-					i(13393),	-- Malown's Slam
-					--i(232905),	-- Malown's Slam TODO: missing sourceid?
+					i(232905),	-- Malown's Slam
 					i(13390),	-- The Postmaster's Band
 					i(13392),	-- The Postmaster's Seal
 					i(13391),	-- The Postmaster's Treads

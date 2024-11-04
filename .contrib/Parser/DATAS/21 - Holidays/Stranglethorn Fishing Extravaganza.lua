@@ -18,12 +18,6 @@ STRANGLETHORN_FISHING_EXTRAVAGANZA_HEADER = createHeader({
 	},
 });
 
-local BOOTS_OF_THE_BAY = i(50287, {	-- Boots of the Bay
-	["timeline"] = { ADDED_3_3_0 },
-});
-local DREAD_PIRATE_RING = i(122529, {	-- Dread Pirate Ring
-	["timeline"] = { ADDED_6_1_0 },
-});
 root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STRANGLETHORN_FISHING_EXTRAVAGANZA_HEADER, {
 	["description"] = "The Stranglethorn Fishing Extravaganza is a weekly fishing event held every Sunday in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",
 	["maps"] = {
@@ -102,11 +96,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					i(19970),	-- Arcanite Fishing Pole
 					i(19979),	-- Hook of the Master Angler
 					-- #if AFTER 5.1.0
-					BOOTS_OF_THE_BAY,
-					i(50255, {	-- Dread Pirate Ring
-						["timeline"] = { ADDED_3_3_0, REMOVED_6_1_0 },
+					i(50287),	-- Boots of the Bay,
+					i(122529, {	-- Dread Pirate Ring
+						["timeline"] = { ADDED_6_1_0 },
 					}),
-					DREAD_PIRATE_RING,
 					-- #endif
 				},
 			}),
@@ -181,8 +174,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 				},
 				["timeline"] = { ADDED_5_1_0, REMOVED_7_1_0 },
 				["groups"] = {
-					BOOTS_OF_THE_BAY,
-					DREAD_PIRATE_RING,
+					i(50287),	-- Boots of the Bay,
+					i(122529, {	-- Dread Pirate Ring
+						["timeline"] = { ADDED_6_1_0, REMOVED_7_1_0 },
+					}),
 					i(19971),	-- High Test Eternium Fishing Line
 				},
 			}),
@@ -220,8 +215,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 				["isWorldQuest"] = true,
 				["groups"] = {
 					i(19970),	-- Arcanite Fishing Pole
-					BOOTS_OF_THE_BAY,
-					DREAD_PIRATE_RING,
+					i(50287),	-- Boots of the Bay,
+					i(122529),	-- Dread Pirate Ring,
 					i(19979),	-- Hook of the Master Angler
 					i(19971),	-- High Test Eternium Fishing Line
 				},

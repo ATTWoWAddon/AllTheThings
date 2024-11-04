@@ -413,7 +413,9 @@ namespace ATT
                                         container.Key.Contains("Uncollectible") ||
                                         container.Key.Contains("Sourceless") ||
                                         container.Key.Contains("Unsorted");
-            Process(container.Value);
+
+            Dictionary<string, object> fakeRoot = new Dictionary<string, object>();
+            Process(container.Value, fakeRoot);
         }
 
         /// <summary>
@@ -468,7 +470,7 @@ namespace ATT
         /// Process a list of data containers.
         /// </summary>
         /// <param name="list">The data container list.</param>
-        private static void Process(List<object> list)
+        private static void Process(List<object> list, IDictionary<string, object> parentData)
         {
             // Check to make sure the data is valid.
             if (list == null) return;
@@ -476,7 +478,7 @@ namespace ATT
             // Iterate through the list and process all of the relative data dictionaries.
             for (int i = list.Count - 1; i >= 0; --i)
             {
-                if (!Process(list[i] as IDictionary<string, object>)) list.RemoveAt(i);
+                if (!Process(list[i] as IDictionary<string, object>, parentData)) list.RemoveAt(i);
             }
         }
 
@@ -486,7 +488,7 @@ namespace ATT
         /// <param name="data">The data container.</param>
         ///
         /// <returns>Whether or not the data is valid.</returns>
-        private static bool Process(IDictionary<string, object> data)
+        private static bool Process(IDictionary<string, object> data, IDictionary<string, object> parentData)
         {
             // Check to make sure the data is valid.
             if (data == null) return false;
@@ -503,12 +505,12 @@ namespace ATT
             }
 
             // handle the current processing against the data
-            if (!ProcessingFunction(data))
+            if (!ProcessingFunction(data, parentData))
                 return false;
 
             // If this container has an aqd or hqd, then process those objects as well.
-            if (data.TryGetValue("aqd", out IDictionary<string, object> qd)) Process(qd);
-            if (data.TryGetValue("hqd", out qd)) Process(qd);
+            if (data.TryGetValue("aqd", out IDictionary<string, object> qd)) Process(qd, data);
+            if (data.TryGetValue("hqd", out qd)) Process(qd, data);
 
             // If this container has groups, then process those groups as well.
             if (data.TryGetValue("g", out List<object> groups))
@@ -547,10 +549,10 @@ namespace ATT
                     //LogDebug($"INFO: New inherited lvl {NestedMinLvl}", data);
                 }
 
-                Process(groups);
+                Process(groups, data);
 
                 // Parent field consolidation now that groups have been processed
-                if (!MergeItemData)
+                if (CurrentParseStage >= ParseStage.Incorporation)
                     ConsolidateHeirarchicalFields(data, groups);
 
                 if (restoreDifficulty)
@@ -608,17 +610,19 @@ namespace ATT
         /// * Validation of raw data<para/>
         /// </summary>
         /// <param name="data"></param>
-        private static bool DataValidation(IDictionary<string, object> data)
+        private static bool DataValidation(IDictionary<string, object> data, IDictionary<string, object> parentData)
         {
             // Retail has no reason to include Objective groups since the in-game Quest system does not warrant ATT including all this extra information
             // Crieve wants objectives and doesn't agree with this, but will allow it outside of Classic Builds.
             if (data.ContainsKey("objectiveID") && !Program.PreProcessorTags.ContainsKey("OBJECTIVES")) return false;
 
-            // Some objects have a default timeline applied, but this prevents sharedData/bubbleDown from having effect...
-            // Instead let's wrap this in a '_defaulttimeline' field and switch it to the 'timeline' field here if there ends up being no 'timeline'
-            if (data.TryGetValue("_defaulttimeline", out object defTimeline))
+            Validate_InheritedFields(data, parentData);
+
+            if (!data.ContainsKey("timeline"))
             {
-                if (!data.ContainsKey("timeline"))
+                // Some objects have a default timeline applied, but this prevents sharedData/bubbleDown from having effect...
+                // Instead let's wrap this in a '_defaulttimeline' field and switch it to the 'timeline' field here if there ends up being no 'timeline'
+                if (data.TryGetValue("_defaulttimeline", out object defTimeline))
                 {
                     LogDebugWarn($"Default Timeline used! {ToJSON(defTimeline)} Consider adding an accurate 'timeline' field", data);
                     Timeline.Merge(data, defTimeline);
@@ -626,7 +630,7 @@ namespace ATT
             }
 
             // verify the timeline data of Merged data (can prevent keeping the data in the data container)
-            if (!CheckTimeline(data))
+            if (!CheckTimeline(data, parentData))
                 return false;
 
             Validate_General(data);
@@ -789,7 +793,7 @@ namespace ATT
         /// <summary>
         /// Logic which incoporates conditional DB data into Objects and captures the extent of SOURCED fields for each Object
         /// </summary>
-        private static bool DataConditionalMerge(IDictionary<string, object> data)
+        private static bool DataConditionalMerge(IDictionary<string, object> data, IDictionary<string, object> parentData)
         {
             // Merge all relevant dictionary info into the data
             DoConditionalDataMerging(data);
@@ -806,7 +810,7 @@ namespace ATT
         /// <summary>
         /// Logic which incoporates various DB data, and can move data between containers
         /// </summary>
-        private static bool DataIncorporation(IDictionary<string, object> data)
+        private static bool DataIncorporation(IDictionary<string, object> data, IDictionary<string, object> parentData)
         {
             // don't bother incorporating data for unsorted content
             if (ProcessingUnsortedCategory)
@@ -833,7 +837,7 @@ namespace ATT
         /// * Consolidation of dictionary information into sourced data
         /// </summary>
         /// <param name="data"></param>
-        private static bool DataConsolidation(IDictionary<string, object> data)
+        private static bool DataConsolidation(IDictionary<string, object> data, IDictionary<string, object> parentData)
         {
             // eariler in the processing we may realize that data is not useful, and can mark it to be removed
             if (data.ContainsKey("_remove"))
@@ -845,7 +849,7 @@ namespace ATT
             Objects.PostProcessMergeInto(data);
 
             // verify the timeline data of Merged data (can prevent keeping the data in the data container)
-            if (!CheckTimeline(data))
+            if (!CheckTimeline(data, parentData))
                 return false;
 
             Consolidate_General(data);
@@ -1669,6 +1673,31 @@ namespace ATT
         private static void Validate_Achievement(IDictionary<string, object> data)
         {
             if (!data.TryGetValue("achID", out long achID) || data.ContainsKey("criteriaID")) return;
+        }
+
+        private static void Validate_InheritedFields(IDictionary<string, object> data, IDictionary<string, object> parentData)
+        {
+            foreach(string inheritedField in InheritingFields)
+            {
+                // parent must have the field in order in inherit it
+                if (!parentData.TryGetValue(inheritedField, out object inheritedValue))
+                    continue;
+
+                // don't assign a field that's already existing
+                if (data.ContainsKey(inheritedField))
+                    continue;
+
+                // use common merge logic
+                // LogDebug($"INFO: Inheriting field {inheritedField}={ToJSON(inheritedValue)}", data);
+                Objects.Merge(data, inheritedField, inheritedValue);
+
+                if (!data.TryGetValue("_inherited", out List<string> inheritedFields))
+                {
+                    data["_inherited"] = inheritedFields = new List<string>();
+                }
+                // track that this data had an inherited field
+                inheritedFields.Add(inheritedField);
+            }
         }
 
         private static void Incorporate_Achievement(IDictionary<string, object> data)
@@ -2901,6 +2930,14 @@ namespace ATT
                     data.Remove("requireSkill");
                 }
             }
+
+            // Unobtainable Content with Forcibly-Obtainable Content within
+            if (data.TryGetValue("_u", out long forceObtainable) && forceObtainable == 0 && data.TryGetValue("u", out long unob) && unob < 3)
+            {
+                data.Remove("u");
+                data.Remove("rwp");
+                LogDebug($"INFO: Removed 'u={unob}' since it is a forcibly-obtainable Thing or one exists within", data);
+            }
         }
 
         private static void Consolidate_item(IDictionary<string, object> data)
@@ -3062,7 +3099,7 @@ namespace ATT
         /// <summary>
         /// Returns whether the data meets the current parser 'timeline' expectations
         /// </summary>
-        private static bool CheckTimeline(IDictionary<string, object> data)
+        private static bool CheckTimeline(IDictionary<string, object> data, IDictionary<string, object> parentData)
         {
             // Check to see what patch this data was made relevant for.
             if (data.TryGetValue("timeline", out object timelineRef) && timelineRef is Timeline timeline)
@@ -3150,7 +3187,12 @@ namespace ATT
                             }
                         case "removed":
                             {
-                                if (CURRENT_RELEASE_VERSION >= entry.LongVersion) removed = 2;
+                                if (CURRENT_RELEASE_VERSION >= entry.LongVersion)
+                                {
+                                    removed = 2;
+                                    // Mark the most recent patch this was removed
+                                    if (removedPatch <= 10000) removedPatch = entry.Version;
+                                }
                                 else
                                 {
                                     // Mark the first patch this was removed on. (the upcoming patch)
@@ -3172,6 +3214,26 @@ namespace ATT
                     case 4: // Deleted
                     case 2: // Removed From Game
                         data["u"] = 2;
+                        break;
+                    default:
+                        // if a timeline 'specifically' indicates a Thing is available, we will let that 'bubbleOut' the u value
+                        // as long as the Thing itself isn't specifically also marked with 'u' directly
+                        if (data.ContainsKey("u"))
+                            break;
+
+                        // or inherited a 'timeline' to itself
+                        if (data.TryGetValue("_inherited", out List<string> inheritedFields) && inheritedFields.Contains("timeline"))
+                            break;
+
+                        // ignore this thing being forcibly-obtainable due to an 'added' timeline when the parent group contains a 'rwp' beyond the 'awp' of this group
+                        if (parentData.TryGetValue("rwp", out long parentRwp) && parentRwp >= addedPatch)
+                        {
+                            // also inherit the rwp so that further children don't also reverse force-obtainable themselves back over the parent
+                            removedPatch = parentRwp;
+                            break;
+                        }
+
+                        data["_u"] = 0;
                         break;
                 }
 
@@ -3234,6 +3296,8 @@ namespace ATT
             foreach (KeyValuePair<string, int> fieldAdjustment in HierarchicalFieldAdjustments)
             {
                 bool cleanParentGroups = fieldAdjustment.Value == 0;
+                bool forcePropogate = fieldAdjustment.Value == 2;
+                bool canConsolidate = true;
                 string field = fieldAdjustment.Key;
                 parentGroup.TryGetValue(field, out object parentVal);
 
@@ -3244,18 +3308,20 @@ namespace ATT
                         fieldValues.Add(value);
                         if (cleanParentGroups && Equals(parentVal, value))
                         {
+                            // awp and rwp are spammy
+                            //LogDebug($"INFO: Removed field {field}={parentVal} due to FieldAdjustment {ToJSON(fieldAdjustment)}", parentGroup);
                             data.Remove(field);
                         }
                     }
-                    else
+                    else if (!forcePropogate)
                     {
-                        fieldValues.Clear();
+                        canConsolidate = false;
                         break;
                     }
                 }
 
-                // exactly 1 unique value across all groups, then adjust...
-                if (fieldValues.Count == 1)
+                // exactly 1 unique value across all groups or forced, then adjust...
+                if (canConsolidate && fieldValues.Count == 1)
                 {
                     object val = fieldValues.First();
                     if (parentVal != null && !Equals(parentVal, val))
@@ -3274,13 +3340,21 @@ namespace ATT
                             {
                                 if (group is IDictionary<string, object> data)
                                 {
-                                    data.Remove(field);
+                                    if (data.Remove(field))
+                                    {
+                                        LogDebug($"INFO: Removed field {field}={val} due to FieldAdjustment {ToJSON(fieldAdjustment)}", data);
+                                    }
                                 }
                             }
                             break;
                         // only add to parent (Propagation)
                         case 1:
-                            parentGroup[field] = val;
+                        case 2:
+                            if (!Equals(parentVal, val))
+                            {
+                                LogDebug($"INFO: Set field {field}={val} due to FieldAdjustment {ToJSON(fieldAdjustment)}", parentGroup);
+                                parentGroup[field] = val;
+                            }
                             break;
                     }
                 }

@@ -17,9 +17,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 219260 },	-- Ruffious
 				["coord"] = { 58.9, 75.3, DORNOGAL },
 				["isWeekly"] = true,
-				["g"] = {
-					--
-				},
 			}, {
 				q(80188),	-- Preserving in Arenas
 				q(80184),	-- Preserving in Battle
