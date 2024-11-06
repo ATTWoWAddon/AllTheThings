@@ -176,6 +176,23 @@ end)
 checkboxDisplayInCombat:SetATTTooltip(L.DISPLAY_IN_COMBAT_CHECKBOX_TOOLTIP)
 checkboxDisplayInCombat:AlignBelow(checkboxTooltipModifierNone, -1)
 
+local checkboxExceptNPCs = child:CreateCheckBox(L.NOT_DISPLAY_IN_COMBAT_NPCS_CHECKBOX,
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("DisplayInCombatExceptNPCs"))
+	if not (settings:GetTooltipSetting("Enabled") and settings:GetTooltipSetting("DisplayInCombat")) then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("DisplayInCombatExceptNPCs", self:GetChecked())
+end)
+checkboxExceptNPCs:SetATTTooltip(L.NOT_DISPLAY_IN_COMBAT_NPCS_CHECKBOX_TOOLTIP)
+checkboxExceptNPCs:AlignAfter(checkboxDisplayInCombat)
+
 local checkboxSummarizeThings = child:CreateCheckBox(L.SUMMARIZE_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SummarizeThings"))
