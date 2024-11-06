@@ -1443,6 +1443,7 @@ ExportDB.AccountWideQuestsDB = {
 	[79431] = true,
 	[79441] = true,
 	[79449] = true,
+	[79456] = true,	-- Grimoire of Eredathian Darkglare
 	[79459] = true,
 	[79460] = true,
 	[79462] = true,

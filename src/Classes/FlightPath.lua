@@ -159,7 +159,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 						t[nodeData.nodeID] = nodeData.name
 					end
 				else
-					print("No taxi nodes found for map", mapID);
+					app.print("No taxi nodes found for map", mapID);
 				end
 			end
 

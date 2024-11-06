@@ -202,7 +202,7 @@ for i,mapID in ipairs({
 	-- #endif
 	-- #if AFTER LEGION
 	993,	-- Broken Isles
-	994,	-- Argus
+	994,	-- Argus (reported no flight points on this map...)
 	-- #endif
 	-- #if AFTER BFA
 	1011,	-- Zandalar

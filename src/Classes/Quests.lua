@@ -1451,6 +1451,9 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		return GetQuestLinkForObject(t);
 	end,
 	tooltipLink = function(t)
+		-- linktests[#linktests + 1] = "|cffffff00|Hquest:"..t.questID..":"..(app._subid or 0).."|h["..(t.name or "").."]|h|r" -- works when _subid is correct for questid
+		-- linktests[#linktests + 1] = "|cffffff00|Hquest:"..t.questID..":"..(app._subid or 0).."|h["..(t.name or "").." "..t.questID.."]|h|r" -- de-links
+		-- linktests[#linktests + 1] = "|cffffff00|Hquest:"..t.questID..":"..(app._subid or 0).."|h["..t.questID.."]|h|r" -- cannot send message
 		return "quest:"..t.questID
 	end,
 	collectible = CollectibleAsQuest,
