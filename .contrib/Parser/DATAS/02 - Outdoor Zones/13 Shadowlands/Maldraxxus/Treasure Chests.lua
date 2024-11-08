@@ -93,7 +93,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(364483, {		-- Empty Nightcap Cask
-				["description"] = "Coordinates are to the entrance of Molten Forge. The cask is found at 50.3, 17.4 once you enter the Molten Forge.",
+				["description"] = "Requires |cFF40bf40Necrolord Covenant|r with Abomination Factory Rank 3. Coordinates are to the entrance of Molten Forge. The cask is found at 50.3, 17.4 once you enter the Molten Forge.",
 				["coords"] = {
 					{ 37.9, 76.3, MALDRAXXUS },
 					{ 50.3, 17.4, 1651 },	-- Molten Forge
