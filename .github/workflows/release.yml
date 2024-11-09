@@ -27,7 +27,7 @@ jobs:
           Parser for Retail.bat
           cd ../../
         shell: cmd
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
             name: Retail-db-output  # Artifact name
             path: db/Retail/  # File path to upload
@@ -49,7 +49,7 @@ jobs:
           rm -rf db/Retail
 
       - name: Download artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: Retail-db-output  # Name of the artifact to download
           path: db/Retail
