@@ -42,7 +42,7 @@ jobs:
           # alternative would be to use checkout@v1
 
       - name: fetch latest 200 commits & tags
-        run: git fetch --tags --depth=200
+        run: git fetch --depth=200
 
       - name: Download artifact
         uses: actions/download-artifact@v4
