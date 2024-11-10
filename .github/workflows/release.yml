@@ -42,7 +42,6 @@ jobs:
           # checkout@v2 doesn't pull tags by default now, which results in super long auto changelog, so pull all history incl. tags
           # alternative would be to use checkout@v1
           fetch-depth: 0
-          lfs: 'true'
 
       - name: Download artifact
         uses: actions/download-artifact@v4
