@@ -42,6 +42,9 @@ jobs:
         with:
           fetch-depth: 200
 
+      - name: Fetch tags
+        run: git fetch --tags
+
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
