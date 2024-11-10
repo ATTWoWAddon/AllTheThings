@@ -42,8 +42,15 @@ jobs:
         with:
           fetch-depth: 200
 
-      - name: Fetch tags
-        run: git fetch --tags
+      - name: Fetch the latest two tags
+        run: |
+          # Get the latest 2 tags from the remote
+          latest_two_tags=$(git ls-remote --tags --sort='-v:refname' origin | head -n 2 | awk '{print $2}')
+          
+          # Fetch each of these tags
+          for tag in $latest_two_tags; do
+              git fetch origin "$tag:$tag"
+          done
 
       - name: Download artifact
         uses: actions/download-artifact@v4
