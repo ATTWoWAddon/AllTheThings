@@ -13,7 +13,7 @@ DAILY_EVENT_ROLL = createHeader({
 		pt = "Lista de Eventos",
 		ru = "Ролл События",
 		ko = "이벤트 롤",
-		cn = "事件投骰",
+		cn = "事件掷骰",
 	},
 	description = {
 		en = "If this quest has a checkmark next to it, then check below to see if you are eligible for the scenario portal. If not, that means that you should come back tomorrow.",

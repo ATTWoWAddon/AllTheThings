@@ -6,6 +6,7 @@ SEVERED_THREADS_PACT = createHeader({
 	icon = 5409320,
 	text = {
 		en = "Severed Threads Pact",
+		cn = "斩离之丝契约",
 	},
 });
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {

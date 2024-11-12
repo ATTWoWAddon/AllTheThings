@@ -7,6 +7,7 @@ SNUFFLING = createHeader({
 	icon = 648644,
 	text = {
 		en = "Snuffling",
+		cn = "嗅探",
 	},
 });
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {

@@ -13,7 +13,7 @@ DAILY_DREAMWAY_EVENT_ROLL = createHeader({
 		pt = "Lista de Eventos",
 		ru = "Ролл События",
 		ko = "이벤트 롤",
-		cn = "事件投骰",
+		cn = "事件掷骰",
 	},
 	description = {
 		en = "If this quest has a checkmark next to it, then check below which stone is active. If none of them are checked, that means that none of the owlcat stones can be interacted with today and that you should come back tomorrow.",
