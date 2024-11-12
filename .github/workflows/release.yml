@@ -17,20 +17,23 @@ on:
 jobs:
   build-windows:
     runs-on: windows-latest
-    
+    strategy:
+      matrix:
+        version: [Retail, Classic, PTR, BETA] # 在此設定不同的版本
+
     steps:
       - uses: actions/checkout@v4
 
       - name: Database Parser
         run: |
           cd .contrib/Parser
-          Parser for Retail.bat
-          cd ../../
+          "Parser for ${{ matrix.version }}".bat
         shell: cmd
+      
       - uses: actions/upload-artifact@v4
         with:
-            name: Retail-db-output  # Artifact name
-            path: db/Retail/  # File path to upload
+            name: ${{ matrix.version }}-db-output  # 使用 matrix 版本作為 artifact 名稱
+            path: db/${{ matrix.version }}/  # 文件路徑動態化
             retention-days: 1
 
   release-linux:
@@ -44,11 +47,11 @@ jobs:
         run: |
           git fetch origin --deepen=200
 
-      - name: Download artifact
+      - name: Download artifacts
         uses: actions/download-artifact@v4
         with:
-          name: Retail-db-output  # Name of the artifact to download
-          path: db/Retail
+          name: ${{ matrix.version }}-db-output  # 根據 matrix 版本下載相應的 artifact
+          path: db/${{ matrix.version }}
 
       # once cloned, we just run the GitHub Action for the packager project
       - name: Package and release
