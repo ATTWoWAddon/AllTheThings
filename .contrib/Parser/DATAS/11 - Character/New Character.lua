@@ -446,12 +446,14 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { ADDED_2_0_1, REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
 			i(20980, {	-- Warder's Shortbow
+				["description"] = "New Blood Elf Hunters start with this weapon.",
 				["timeline"] = { ADDED_2_0_1 }
 			}),
 			i(57244, {	-- Warder's Spear
 				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 }
 			}),
 			i(23347, {	-- Weathered Crossbow
+				["description"] = "New Human, Draenei, and Undead Hunters start with this weapon.",
 				["timeline"] = { ADDED_2_0_1 }
 			}),
 			i(2504, {	-- Worn Shortbow
@@ -468,9 +470,15 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(157680),	-- Heartbonded Belt
 			i(157678),	-- Heartbonded Legguards
 			i(157675),	-- Heartbonded Greaves
-			i(157649),	-- Goldstring Recurve
-			i(157622),	-- Silverscope Longrifle
-			i(157650),	-- Tracker's Spear
+			i(157649, {	-- Goldstring Recurve
+				["description"] = "New Highmountain Tauren Hunters start with this weapon.",
+			}),
+			i(157622, {	-- Silverscope Longrifle
+				["description"] = "New Mechagnome Hunters start with this weapon. The 4 remaining Mechagnome players gatekept this from us for far too long.",
+			}),
+			i(157650, {	-- Tracker's Spear
+				["description"] = "New Highmountain Tauren Hunters start with this weapon in your inventory via the Wrapped Spear.",					
+			}),	
 		})),
 	}),
 	cl(MONK, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {
