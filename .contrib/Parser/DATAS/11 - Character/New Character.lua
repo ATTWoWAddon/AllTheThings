@@ -829,7 +829,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(157704),	-- Lightsoul Girdle
 			i(157702),	-- Lightsoul Legplates
 			i(157699),	-- Lightsoul Sabatons
-			i(157631),	-- Maul of Smiting
+			i(157631, {	-- Maul of Smiting
+				["description"] = "New Lightforged Draenei Paladins start with this weapon."
+			}),
 			mount(290608, {	-- Crusader's Direhorn (MOUNT!)
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = { ZANDALARI },
@@ -1004,7 +1006,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(157712),	-- Curate's Sash
 			i(157709),	-- Curate's Pants
 			i(157706),	-- Curate's Boots
-			i(157632),	-- Staff of Interwoven Power
+			i(157632, {	-- Staff of Interwoven Power
+				["description"] = "New Nightborne or Void Elf Priests start with this weapon."
+			}),
 		})),
 	}),
 	cl(ROGUE, {
@@ -1235,8 +1239,12 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(157728),	-- Totem-Caller Belt
 			i(157726),	-- Totem-Caller Legwraps
 			i(157723),	-- Totem-Caller Boots
-			i(157638),	-- Lightning-Binder's Claws
-			i(157655),	-- Lightning-Binder's Bulwark
+			i(157638, {	-- Lightning-Binder's Claws
+				["description"] = "New Allied Race Shamans start with this weapon."
+			}),
+			i(157655, {	-- Lightning-Binder's Bulwark
+				["description"] = "New Allied Race Shamans start with this weapon."
+			}),
 		})),
 	}),
 	cl(WARLOCK, {
@@ -1481,7 +1489,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(157736),	-- Felburner's Cord
 			i(157733),	-- Felburner's Leggings
 			i(157730),	-- Felburner's Sandals
-			i(157652),	-- Shadow-Binder's Spire
+			i(157652, {	-- Shadow-Binder's Spire
+				["description"] = "New Allied Race Warlocks start with this weapon."
+			}),
 		})),
 	}),
 	cl(WARRIOR, {
