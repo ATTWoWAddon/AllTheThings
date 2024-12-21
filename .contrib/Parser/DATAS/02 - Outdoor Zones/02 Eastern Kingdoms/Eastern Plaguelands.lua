@@ -628,7 +628,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						n(28500, {	-- Master Siegesmith Corvus
-							["coord"] = { 50.8, 30.2, EASTERN_PLAGUELANDS },
+							["coord"] = { 83.4 46.1, EASTERN_PLAGUELANDS },
 							["classes"] = { DEATHKNIGHT },
 							["groups"] = {
 								i(38645),	-- Bone-Plated Armor
