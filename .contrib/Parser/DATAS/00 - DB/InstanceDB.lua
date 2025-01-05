@@ -17,7 +17,7 @@ inst(2784, 2784);	-- Demon Fall Canyon
 -- #endif
 
 -- This list was exported using excel manually using data from this url:
--- https://wago.tools/db2/JournalInstance?build=11.0.0.55120
+-- https://wago.tools/db2/JournalInstance?build=11.0.7.58238
 inst(63, 36);	-- Deadmines
 inst(64, 33);	-- Shadowfang Keep
 inst(65, 643);	-- Throne of the Tides
@@ -42,12 +42,12 @@ inst(226, 389);	-- Ragefire Chasm
 inst(227, 48);	-- Blackfathom Deeps
 inst(228, 230);	-- Blackrock Depths
 inst(229, 229);	-- Lower Blackrock Spire
-inst(230, 429);	-- Dire Maul
+inst(230, 429);	-- Dire Maul - Capital Gardens
 inst(231, 90);	-- Gnomeregan
 inst(232, 349);	-- Maraudon
 inst(233, 129);	-- Razorfen Downs
 inst(234, 47);	-- Razorfen Kraul
-inst(236, 329);	-- Stratholme
+inst(236, 329);	-- Stratholme - Main Gate
 inst(237, 109);	-- The Temple of Atal'hakkar
 inst(238, 34);	-- The Stockade
 inst(239, 70);	-- Uldaman
@@ -193,7 +193,7 @@ inst(1202, 2521);	-- Ruby Life Pools
 inst(1203, 2515);	-- The Azure Vault
 inst(1204, 2527);	-- Halls of Infusion
 inst(1205, 2574);	-- Dragon Isles
---inst(1206, 0);	-- The Nokud Offensive
+inst(1206, 0);	-- The Nokud Offensive
 inst(1207, 2549);	-- Amirdrassil, the Dream's Hope
 inst(1208, 2569);	-- Aberrus, the Shadowed Crucible
 inst(1209, 2579);	-- Dawn of the Infinite
@@ -206,22 +206,11 @@ inst(1271, 2660);	-- Ara-Kara, City of Echoes
 inst(1272, 2661);	-- Cinderbrew Meadery
 inst(1273, 2657);	-- Nerub-ar Palace
 inst(1274, 2669);	-- City of Threads
+inst(1276, 429);	-- Dire Maul - Warpwood Quarter
+inst(1277, 429);	-- Dire Maul - Gordok Commons
 inst(1278, 2774);	-- Khaz Algar
-inst(1279, 2664);	-- Fungal Folly
-inst(1280, 2679);	-- Mycomancer Cavern
-inst(1281, 2681);	-- Kriegval's Rest
-inst(1282, 2683);	-- The Waterworks
-inst(1283, 2687);	-- The Sinkhole
-inst(1284, 2689);	-- Tak-Rethan Abyss
-inst(1285, 2686);	-- Nightfall Sanctum
-inst(1286, 2690);	-- The Underkeep
-inst(1287, 2680);	-- Earthcrawl Mines
-inst(1288, 2684);	-- The Dread Pit
-inst(1289, 2685);	-- Skittering Breach
-inst(1290, 2688);	-- The Spiral Weave
-inst(1291, 2682);	-- Zekvir's Lair
-inst(1293, 2690);	-- The Underkeep
-inst(1301, 2792);    -- Blackrock Depths
+inst(1292, 329);	-- Stratholme - Service Entrance
+inst(1301, 2792);	-- Blackrock Depths
 
 -- Reassign the instance function
 inst = function(id, t)
