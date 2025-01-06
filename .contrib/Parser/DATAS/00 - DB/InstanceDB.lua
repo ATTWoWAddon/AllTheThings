@@ -31,7 +31,11 @@ inst(72, 671);	-- The Bastion of Twilight
 inst(73, 669);	-- Blackwing Descent
 inst(74, 754);	-- Throne of the Four Winds
 inst(75, 757);	-- Baradin Hold
+-- #if BEFORE CATA
+inst(76, 309);	-- Zul'Gurub
+-- #else
 inst(76, 859);	-- Zul'Gurub
+-- #endif
 inst(77, 568);	-- Zul'Aman
 inst(78, 720);	-- Firelands
 inst(184, 938);	-- End Time
@@ -53,7 +57,11 @@ inst(238, 34);	-- The Stockade
 inst(239, 70);	-- Uldaman
 inst(240, 43);	-- Wailing Caverns
 inst(241, 209);	-- Zul'Farrak
+-- #if BEFORE MOP
+inst(246, 289);	-- Scholomance
+-- #else
 inst(246, 1007);	-- Scholomance
+-- #endif
 inst(247, 558);	-- Auchenai Crypts
 inst(248, 543);	-- Hellfire Ramparts
 inst(249, 585);	-- Magisters' Terrace
@@ -91,7 +99,11 @@ inst(303, 962);	-- Gate of the Setting Sun
 inst(311, 1001);	-- Scarlet Halls
 inst(312, 959);	-- Shado-Pan Monastery
 inst(313, 960);	-- Temple of the Jade Serpent
+-- #if BEFORE MOP
+inst(316, 189);	-- Scarlet Monastery
+-- #else
 inst(316, 1004);	-- Scarlet Monastery
+-- #endif
 inst(317, 1008);	-- Mogu'shan Vaults
 inst(320, 996);	-- Terrace of Endless Spring
 inst(321, 994);	-- Mogu'shan Palace
