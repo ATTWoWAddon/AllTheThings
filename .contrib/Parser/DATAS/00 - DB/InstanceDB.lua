@@ -14,6 +14,8 @@ end
 inst(2789, 2789);	-- The Tainted Scar
 inst(2791, 2791);	-- Storm Cliffs
 inst(2784, 2784);	-- Demon Fall Canyon
+inst(2804, 2804);	-- The Crystal Vale
+inst(2832, 2832);	-- Nightmare Grove
 -- #endif
 
 -- This list was exported using excel manually using data from this url:
