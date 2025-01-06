@@ -339,6 +339,64 @@ local function zoneTextAreasRunner(group, value)
 		assignZoneAreaIDs(parentMapID, mapID, value);
 	end
 end
+local function RealzoneTextRunner(group, value)
+	local mapID = group.mapID;
+	if not mapID then
+		-- Generate a new unique mapID (negative)
+		mapID = nextCustomMapID;
+		nextCustomMapID = nextCustomMapID - 1;
+		if group.maps then
+			tinsert(group.maps, mapID)
+		else
+			group.maps = {mapID};
+		end
+
+		-- Manually assign the name of this map since it is not a real mapID.
+		CacheField(group, "mapID", mapID);
+	end
+
+	-- Use the localizer to force the minilist to display this as if it was a map file.
+	local name = GetRealZoneText(value[1]);
+	if name then app.L.MAP_ID_TO_ZONE_TEXT[mapID] = name; end
+
+	-- Remap the original mapID to the new mapID when it encounters any of these artIDs.
+	local mapIDs, parentMapID, info = {}, nil, nil;
+	if group.coords then
+		for index,coord in ipairs(group.coords) do
+			parentMapID = coord[3];
+			if parentMapID and not mapIDs[parentMapID] then
+				mapIDs[parentMapID] = 1;
+				info = C_Map_GetMapInfo(parentMapID);
+				if info and info.parentMapID then
+					mapIDs[info.parentMapID] = 1;
+				end
+			end
+		end
+	else
+		parentMapID = app.GetRelativeValue(group.parent, "mapID");
+		if parentMapID then
+			mapIDs[parentMapID] = 1;
+			info = C_Map_GetMapInfo(parentMapID);
+			if info and info.parentMapID then
+				mapIDs[info.parentMapID] = 1;
+			end
+		end
+	end
+	if group.maps then
+		for i,parentMapID in ipairs(group.maps) do
+			if not mapIDs[parentMapID] then
+				mapIDs[parentMapID] = 1;
+				info = C_Map_GetMapInfo(parentMapID);
+				if info and info.parentMapID then
+					mapIDs[info.parentMapID] = 1;
+				end
+			end
+		end
+	end
+	for parentMapID,_ in pairs(mapIDs) do
+		assignZoneAreaIDs(parentMapID, mapID, value);
+	end
+end
 local function zoneTextContinentRunner(group, value)
 	local mapID = group.mapID;
 	if mapID then
@@ -603,6 +661,11 @@ local fieldConverters = {
 	["zone-text-areaID"] = function(group, value)
 		tinsert(runners, function()
 			zoneTextAreasRunner(group, { value });
+		end);
+	end,
+	["savedInstanceID"] = function(group, value)
+		tinsert(runners, function()
+			RealzoneTextRunner(group, { value });
 		end);
 	end,
 	["zone-text-areas"] = function(group, value)
