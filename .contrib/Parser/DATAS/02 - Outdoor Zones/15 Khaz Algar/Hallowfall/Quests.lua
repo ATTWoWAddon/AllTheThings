@@ -1064,9 +1064,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							i(219815),	-- Small Hilt (QI!)
 						}),
 						--
-						i(219810),	-- Broken Bracelet
-						i(219809),	-- Plush Lynx
-						i(219524),	-- Tarnished Compass
+						i(219810, { -- Broken Bracelet
+							["description"] = "Take this to Keyrra Flamestonge @ (65.4, 32.2)"
+						}),
+						i(219809, { -- Plush Lynx
+							["description"] = "Take this to Philip Taversil @ (43.2, 55.4)"
+						}),
+						i(219524, { -- Tarnished Compass
+							["description"] = "Take this to the Grave Offering Location @ (43.46, 51.71)"
+						}),
 					},
 				}),
 				q(82810, {	-- Time Found
@@ -1084,9 +1090,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							i(224179),	-- Swamplogged Letter (QI!)
 						}),
 						--
-						i(224267),	-- Dented Spearhead
-						i(224268),	-- Filigreed Cleric
-						i(224266),	-- Ivory Tinderbox
+						i(224267, {	-- Dented Spearhead
+							["description"] = "Take this to Aurelia Steelstrike @ (42.35, 55.02)"
+						}),
+						i(224268, {	-- Filigreed Cleric
+							["description"] = "Take this to Haverd Sunhart @ (41.6, 34.6)"
+						}),
+						i(224266, {	-- Ivory Tinderbox
+							["description"] = "Take this to Kiera Horth @ (44.0, 49.8)"
+						}),
 					},
 				}),
 				q(82813, {	-- Time Borrowed
@@ -1102,9 +1114,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(224254),	-- Wooden Figure (QI!)
 						i(224238),	-- Worn Coin (QI!)
 						--
-						i(224272),	-- Calcified Journal
-						i(224274),	-- Sturdy Locket
-						i(224273),	-- Wooden Figure
+						i(224272, {	-- Calcified Journal
+							["description"] = "Take this to Lorel Ironglen @ (48.4, 38.8)"
+						}),
+						i(224274, {	-- Sturdy Locket
+							["description"] = "Take this to Brahal Lynflayme @ (69.2, 43.8)"
+						}),
+						i(224273, { -- Wooden Figure
+							["description"] = "Take this to Amy Lychenstone around (42.38, 49.51)"
+						}),
 					},
 				}),
 			}),
