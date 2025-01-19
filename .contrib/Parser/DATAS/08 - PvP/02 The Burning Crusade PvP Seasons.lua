@@ -877,62 +877,81 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					n(WRIST, {
 						i(28451, {	-- General's Chain Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28445, {	-- General's Dragonhide Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28405, {	-- General's Dreadweave Cuffs
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(147772, {	-- General's Felweave Cuffs
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							["timeline"] = { ADDED_7_2_0 },
+							["races"] = HORDE_ONLY,
 						}),
 						i(31598, {	-- General's Kodohide Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28643, {	-- General's Lamellar Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28424, {	-- General's Leather Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28605, {	-- General's Linked Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28638, {	-- General's Mail Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(32973, {	-- General's Mooncloth Cuffs
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(32983, {	-- General's Ornamented Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28381, {	-- General's Plate Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(32991, {	-- General's Ringmail Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(147771, {	-- General's Satin Cuffs
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							["timeline"] = { ADDED_7_2_0 },
+							["races"] = HORDE_ONLY,
 						}),
 						i(28646, {	-- General's Scaled Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28411, {	-- General's Silk Cuffs
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28448, {	-- General's Wyrmhide Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28973, {	-- Marshal's Chain Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(28978, {	-- Marshal's Dragonhide Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(28981, {	-- Marshal's Dreadweave Cuffs
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -940,18 +959,23 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						}),
 						i(31599, {	-- Marshal's Kodohide Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(28984, {	-- Marshal's Lamellar Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(28988, {	-- Marshal's Leather Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(28989, {	-- Marshal's Linked Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(28992, {	-- Marshal's Mail Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(32977, {	-- Marshal's Mooncloth Cuffs
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -959,15 +983,19 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						}),
 						i(32986, {	-- Marshal's Ornamented Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(28996, {	-- Marshal's Plate Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(32994, {	-- Marshal's Ringmail Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(28999, {	-- Marshal's Scaled Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(29002, {	-- Marshal's Silk Cuffs
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -975,210 +1003,276 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						}),
 						i(29006, {	-- Marshal's Wyrmhide Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 					}),
 					n(WAIST, {
 						i(28450, {	-- General's Chain Girdle
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28443, {	-- General's Dragonhide Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28404, {	-- General's Dreadweave Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(147615, {	-- General's Felweave Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							["timeline"] = { ADDED_7_2_0 },
+							["races"] = HORDE_ONLY,
 						}),
 						i(31594, {	-- General's Kodohide Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28641, {	-- General's Lamellar Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28423, {	-- General's Leather Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28629, {	-- General's Linked Girdle
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28639, {	-- General's Mail Girdle
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(32974, {	-- General's Mooncloth Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(32982, {	-- General's Ornamented Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28385, {	-- General's Plate Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(32992, {	-- General's Ringmail Girdle
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(147613, {	-- General's Satin Cord
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							["timeline"] = { ADDED_7_2_0 },
+							["races"] = HORDE_ONLY,
 						}),
 						i(28644, {	-- General's Scaled Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28409, {	-- General's Silk Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28446, {	-- General's Wyrmhide Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28974, {	-- Marshal's Chain Girdle
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(28976, {	-- Marshal's Dragonhide Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(28980, {	-- Marshal's Dreadweave Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(31596, {	-- Marshal's Kodohide Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(28983, {	-- Marshal's Lamellar Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(28986, {	-- Marshal's Leather Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(28990, {	-- Marshal's Linked Girdle
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(28993, {	-- Marshal's Mail Girdle
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(32976, {	-- Marshal's Mooncloth Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(32985, {	-- Marshal's Ornamented Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(28995, {	-- Marshal's Plate Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(32995, {	-- Marshal's Ringmail Girdle
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(28998, {	-- Marshal's Scaled Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(29001, {	-- Marshal's Silk Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(29004, {	-- Marshal's Wyrmhide Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 					}),
 					n(FEET, {
 						i(28449, {	-- General's Chain Sabatons
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28444, {	-- General's Dragonhide Boots
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28402, {	-- General's Dreadweave Stalkers
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(147616, {	-- General's Felweave Boots
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							["timeline"] = { ADDED_7_2_0 },
+							["races"] = HORDE_ONLY,
 						}),
 						i(31595, {	-- General's Kodohide Boots
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28642, {	-- General's Lamellar Greaves
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28422, {	-- General's Leather Boots
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28630, {	-- General's Linked Sabatons
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28640, {	-- General's Mail Sabatons
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(32975, {	-- General's Mooncloth Slippers
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(32984, {	-- General's Ornamented Greaves
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28383, {	-- General's Plate Greaves
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(30491, {	-- General's Plate Sabatons / General's Plate Greaves Tier 2 [TBC]
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4, ADDED_6_0_2 },
+							["races"] = HORDE_ONLY,
 						}),
 						i(32993, {	-- General's Ringmail Sabatons
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(147614, {	-- General's Satin Slippers
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							["timeline"] = { ADDED_7_2_0 },
+							["races"] = HORDE_ONLY,
 						}),
 						i(28645, {	-- General's Scaled Greaves
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28410, {	-- General's Silk Footguards
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28447, {	-- General's Wyrmhide Boots
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = HORDE_ONLY,
 						}),
 						i(28975, {	-- Marshal's Chain Sabatons
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(28977, {	-- Marshal's Dragonhide Boots
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(28982, {	-- Marshal's Dreadweave Stalkers
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(31597, {	-- Marshal's Kodohide Boots
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(28985, {	-- Marshal's Lamellar Greaves
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(28987, {	-- Marshal's Leather Boots
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(28991, {	-- Marshal's Linked Sabatons
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(28994, {	-- Marshal's Mail Sabatons
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(32978, {	-- Marshal's Mooncloth Slippers
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(32987, {	-- Marshal's Ornamented Greaves
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(28997, {	-- Marshal's Plate Greaves
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(32996, {	-- Marshal's Ringmail Sabatons
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(29000, {	-- Marshal's Scaled Greaves
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(29003, {	-- Marshal's Silk Footguards
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(29005, {	-- Marshal's Wyrmhide Boots
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 					}),
 					n(BACK, {
