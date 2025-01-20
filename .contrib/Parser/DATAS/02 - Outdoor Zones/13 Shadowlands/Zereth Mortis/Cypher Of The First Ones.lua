@@ -534,7 +534,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 								["coord"] = { 32.65, 40.76, ZERETH_MORTIS },
 							}),
 							i(187728, {	-- Ephemera Strand
-								["description"] = "Possibly Unique (30)",
 								["g"] = {
 									i(187787, {	-- Ephemera Orb
 										i(187890),	-- Anima-charged Yolk
