@@ -519,23 +519,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							42208,	-- Return to the Firelands
 							42990,	-- Neltharion's Lair: The Earthen Amulet
 						},
+						["maps"] = { THE_HEART_OF_AZEROTH_FIRELANDS },
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["coord"] = { 33.0, 60.0, THE_HEART_Of_AZEROTH },
 					}),
 					q(41773, {	-- The Firelord's Command
 						["sourceQuests"] = { 41772 },	-- Ascendant of Flames
 						["provider"] = { "n", 105055 },	-- Baron Scaldius
-						["maps"] = { 738 },	-- Firelands (Scenario Map)
+						["maps"] = { THE_HEART_OF_AZEROTH_FIRELANDS },	-- Firelands (Scenario Map)
 					}),
 					q(41934, {	-- The Brand of Damnation
 						["sourceQuests"] = { 41773 },	-- The Firelord's Command
 						["provider"] = { "n", 105120 },	-- Lord Smolderon
-						["maps"] = { 738 },	-- Firelands (Scenario Map)
+						["maps"] = { THE_HEART_OF_AZEROTH_FIRELANDS },	-- Firelands (Scenario Map)
 					}),
 					q(41888, {	-- Allegiance of Flame
 						["sourceQuests"] = { 41934 },	-- The Brand of Damnation
 						["provider"] = { "n", 105594 },	-- Lord Smolderon
-						["maps"] = { 738 },	-- Firelands (Scenario Map)
+						["maps"] = { THE_HEART_OF_AZEROTH_FIRELANDS },	-- Firelands (Scenario Map)
 						["g"] = {
 							i(139698),	-- Farseer's Harness
 							title(336),	-- Farseer <Name>
