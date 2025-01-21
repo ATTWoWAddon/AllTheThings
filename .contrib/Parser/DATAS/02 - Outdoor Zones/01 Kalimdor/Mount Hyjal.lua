@@ -7,7 +7,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["icon"] = 409547,
 		["timeline"] = { ADDED_4_0_3 },
 		["maps"] = {
-			738,	-- Firelands
 			760,	-- Malorne's Nightmare
 		},
 		["groups"] = {
