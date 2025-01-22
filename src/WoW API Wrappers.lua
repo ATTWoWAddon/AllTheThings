@@ -29,11 +29,11 @@ app.WOWAPI = lib;
 -- Priority API assigner.
 -- Can be used to one-line assign the most relevant API to the specified WOWAPI wrapper.
 ---@param name string
----@param ... function
+---@param ... function|nil
 local function AssignAPIWrapper(name, ...)
     for i = 1, select("#", ...) do
         local api = select(i, ...)  -- Get API Function
-        if type(api) == "function" then
+        if api then
             if rawget(lib, name) then
                 print("Warning: existing ATT.WOWAPI replaced!", name)
             end

@@ -3,10 +3,10 @@
 -- this DB file map the journalInstanceID to the real InstanceID, as know as ID in the Map table(https://wago.tools/db2/Map?build=11.0.7.58238).
 
 do
-local oldInst = inst;
-local InstanceDB = {};
-inst = function(journalInstanceID, instanceID)
-	InstanceDB[journalInstanceID] = instanceID;
+local oldInst = inst;	-- Save origin inst function to a temp, old_inst.
+local InstanceDB = {};	-- Declare a local table, InstanceDB, only valid in the InstanceDB.
+inst = function(journalInstanceID, instanceID)	-- Declare a new function, inst.
+	InstanceDB[journalInstanceID] = instanceID;	-- Assign instanceID to journalInstanceID.
 end
 
 -- #if SEASON_OF_DISCOVERY
@@ -243,9 +243,9 @@ inst(1293, 2690);	-- The Underkeep
 inst(1301, 2792);	-- Blackrock Depths
 
 -- Reassign the instance function
-inst = function(id, t)
-	t = oldInst(id, t);
-	t.savedInstanceID = InstanceDB[id];
+inst = function(journalInstanceID, t)
+	t = oldInst(journalInstanceID, t);
+	t.savedInstanceID = InstanceDB[journalInstanceID];
 	return t;
 end
 end

@@ -8,6 +8,7 @@ INFINITE_BAZARR = createHeader({
 	icon = 298656,
 	text = {
 		en = "Infinite Bazaar",
+		tw = "無限市集",
 	},
 	description = {
 		en = "The Infinite Bazaar has multiple locations.",

@@ -6,6 +6,7 @@ GEAR_CONVERSION = createHeader({
 	icon = 1391675,
 	text = {
 		en = "Gear Conversion",
+		tw = "裝備轉換",
 	},
 });
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
