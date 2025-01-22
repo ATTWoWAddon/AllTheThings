@@ -687,7 +687,7 @@ iq(230265, 85225);	-- Bronze Celebration Titles: Zuldazar Enthusiast
 -- PATCH 11.0.7 --
 ------------------
 iq(233500, 86379);	-- Crimson Snapdragon Treat
---iq(233495, 86375);	-- Inky Snapdragon Treat
+iq(233495, 86375);	-- Inky Snapdragon Treat
 iq(233497, 86376);	-- Kaja'Cola-braised Snapdragon Treat
 iq(233494, 86374);	-- Muddy Snapdragon Treat
 iq(233499, 86378);	-- Royal Snapdragon Treat

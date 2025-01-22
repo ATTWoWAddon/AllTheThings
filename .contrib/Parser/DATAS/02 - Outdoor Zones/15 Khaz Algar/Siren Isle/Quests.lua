@@ -461,13 +461,14 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 				-- ^ moved into CharacterItemDB instead
 				-- color changes questID (otherwise it will block 100% for zone)
 				q(86386),	-- Crimson Snapdragon Treat
-				--q(86382),	-- Inky Snapdragon Treat
+				q(86382),	-- Inky Snapdragon Treat
 				q(86383),	-- Kaja'Cola-braised Snapdragon Treat
 				q(86381),	-- Muddy Snapdragon Treat
 				q(86385),	-- Royal Snapdragon Treat
 				q(86387),	-- Sandy Snapdragon Treat
 				q(86384),	-- Storminfused Snapdragon Treat
 				-- q(86373),	-- Teal Snapdragon Treat (automated)
+				q(86375),	-- Talk to Gazix Fusegrease and unlock the Inky Snapdragon Treat
 				--
 				--It went live:
 				--it seems like questID fire per item drop for slot now
