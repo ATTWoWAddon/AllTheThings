@@ -99,11 +99,26 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 								{"sub", "pvp_weapons_ensemble", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR },
 							},
 						}),
-						-- Savage Gladiator weapons have never been implemented
-						i(42557, {	-- Savage Gladiator's Barrier
-							["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
+						-- #if BEFORE MOP
+						i(42444, {	-- Savage Gladiator's War Edge (Throw Wep)
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
+						-- #endif
+						-- Wands, and Hunter Waraxe are still in Cata classic
 						i(42511, {	-- Savage Gladiator's Baton of Light
+							["timeline"] = { ADDED_3_0_2 },
+						}),
+						i(42448, {	-- Savage Gladiator's Touch of Defeat
+							["timeline"] = { ADDED_3_0_2 },
+						}),
+						i(42517, {	-- Savage Gladiator's Piercing Touch
+							["timeline"] = { ADDED_3_0_2 },
+						}),
+						i(42214, {	-- Savage Gladiator's Waraxe
+							["timeline"] = { ADDED_3_0_2 },
+						}),
+						-- Other Savage Gladiator weapons have never been implemented
+						i(42557, {	-- Savage Gladiator's Barrier
 							["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
 						}),
 						i(42356, {	-- Savage Gladiator's Battle Staff
@@ -151,9 +166,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						i(42215, {	-- Savage Gladiator's Mutilator
 							["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
 						}),
-						i(42517, {	-- Savage Gladiator's Piercing Touch
-							["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
-						}),
 						i(42296, {	-- Savage Gladiator's Pike
 							["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
 						}),
@@ -193,14 +205,6 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						i(42388, {	-- Savage Gladiator's Staff
 							["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
 						}),
-						i(42448, {	-- Savage Gladiator's Touch of Defeat
-							["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
-						}),
-						-- #if BEFORE MOP
-						i(42444, {	-- Savage Gladiator's War Edge (Throw Wep)
-							["timeline"] = { REMOVED_5_0_4 },
-						}),
-						-- #endif
 						i(44415, {	-- Savage Gladiator's War Staff
 							["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
 						}),
