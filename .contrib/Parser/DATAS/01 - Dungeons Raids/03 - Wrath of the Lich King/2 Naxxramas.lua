@@ -1534,11 +1534,21 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								i(39255),	-- Staff of the Plague Beast
 								i(39246),	-- Amulet of Autopsy
 								i(39249),	-- Shoulderplates of Bloodshed
-								i(39248),	-- Tunic of the Lost Pack
+								i(39248, {	-- Tunic of the Lost Pack
+									-- #if ANYCLASSIC
+									["description"] = "This item was originally available in Naxxramas 10, but after H+ was introduced to Wrath Classic, it was removed.",
+									["timeline"] = { ADDED_3_0_2, REMOVED_3_4_1 },
+									-- #endif
+								}),
 								i(39247),	-- Cuffs of Dark Shadows
 								i(39252),	-- Preceptor's Bindings
 								i(39251),	-- Necrogenic Belt
-								i(39254),	-- Saltarello Shoes
+								i(39254, {	-- Saltarello Shoes
+									-- #if ANYCLASSIC
+									["description"] = "This item was originally available in Naxxramas 10, but after H+ was introduced to Wrath Classic, it was removed.",
+									["timeline"] = { ADDED_3_0_2, REMOVED_3_4_1 },
+									-- #endif
+								}),
 								i(39250),	-- Ring of Holy Cleansing
 							},
 						}),
@@ -1688,7 +1698,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								i(39274),	-- Retcher's Shoulderpads
 								i(39272),	-- Drape of Surgery
 								i(39275),	-- Contagion Gloves
-								i(39262),	-- Gauntlets of Combined Strength
+								i(39262, {	-- Gauntlets of Combined Strength
+									-- #if ANYCLASSIC
+									["description"] = "This item was originally available in Naxxramas 10, but after H+ was introduced to Wrath Classic, it was removed.",
+									["timeline"] = { ADDED_3_0_2, REMOVED_3_4_1 },
+									-- #endif
+								}),
 								i(39261),	-- Tainted Girdle of Mending
 								i(39263, {	-- Dissevered Leggings
 									-- #if ANYCLASSIC
@@ -1836,7 +1851,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								i(39391),	-- Heinous Mail Chestguard
 								i(39242),	-- Robes of Hoarse Breaths
 								i(39386),	-- Tunic of Dislocation
-								i(39248),	-- Tunic of the Lost Pack
+								i(39248, {	-- Tunic of the Lost Pack
+									-- #if ANYCLASSIC
+									["description"] = "This item was originally available in Naxxramas 10, but after H+ was introduced to Wrath Classic, it was removed.",
+									["timeline"] = { ADDED_3_0_2, REMOVED_3_4_1 },
+									-- #endif
+								}),
 								i(39278),	-- Bands of Anxiety
 								i(39235),	-- Bone-Framed Bracers
 								i(39195),	-- Bracers of Lost Sentiments
@@ -1846,7 +1866,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								i(39283),	-- Putrescent Bands
 								i(39390),	-- Resurgent Phantom Bindings
 								i(39275),	-- Contagion Gloves
-								i(39262),	-- Gauntlets of Combined Strength
+								i(39262, {	-- Gauntlets of Combined Strength
+									-- #if ANYCLASSIC
+									["description"] = "This item was originally available in Naxxramas 10, but after H+ was introduced to Wrath Classic, it was removed.",
+									["timeline"] = { ADDED_3_0_2, REMOVED_3_4_1 },
+									-- #endif
+								}),
 								i(39197),	-- Gauntlets of the Master
 								i(39192),	-- Gloves of Dark Gestures
 								i(39243),	-- Handgrips of the Foredoomed
@@ -1888,7 +1913,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								i(39234),	-- Plague-Impervious Boots
 								i(39139),	-- Ravaging Sabatons
 								i(39369),	-- Sabatons of Deathlike Gloom
-								i(39254),	-- Saltarello Shoes
+								i(39254, {	-- Saltarello Shoes
+									-- #if ANYCLASSIC
+									["description"] = "This item was originally available in Naxxramas 10, but after H+ was introduced to Wrath Classic, it was removed.",
+									["timeline"] = { ADDED_3_0_2, REMOVED_3_4_1 },
+									-- #endif
+								}),
 								i(39273),	-- Sullen Cloth Boots
 								i(39236),	-- Trespasser's Boots
 								i(39193),	-- Band of Neglected Pleas
