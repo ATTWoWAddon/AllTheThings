@@ -34,8 +34,6 @@ for key, value in pairs({
 		[-153] = 1103070,																	-- Work Orders
 	-- Class Trial
 		[-154] = 1391675,						-- Level 48
-	-- PvP
-		[-216] = 458725,							-- Prestige
 	-- War Campaign
 		[-236] = 2565243,								-- Alliance War Campaign
 	-- PvP
@@ -136,8 +134,6 @@ for key, value in pairs({
 		[-153] = CAPACITANCE_WORK_ORDERS,										-- Work Orders
 	-- Class Trial
 		[-154] = sformat(SPELLBOOK_AVAILABLE_AT, 48),						-- Level 48
-	-- PvP
-		[-216] = PVP_PRESTIGE_RANK_UP_TITLE,									-- Prestige
 	-- War Campaign
 		[-236] = C_Map.GetAreaInfo(9663),										-- War Campaign - Alliance
 	-- PvP
