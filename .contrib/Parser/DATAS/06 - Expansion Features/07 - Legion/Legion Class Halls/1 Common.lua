@@ -205,7 +205,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_7_3_5 },
 					}),
 				}),
-				n(-299, {	-- Missions
+				n(MISSIONS, {
 					mission(1505, {	-- A Good Dust Up
 						q(45172, {	-- To Battle!
 							-- This is not removed from game; confirmed again in 9.0.5. You get it on the mission table one time per character after gearing up your followers a bit (its an 850 mission).

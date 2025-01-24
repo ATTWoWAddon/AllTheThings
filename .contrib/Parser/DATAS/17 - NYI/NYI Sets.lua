@@ -2387,7 +2387,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 				}),
 			}),
-			n(-299, {	-- Missions
+			n(MISSIONS, {
 				filter(CLOTH, {
 					i(114399),	-- Cord of Hooded Nightmares
 				}),

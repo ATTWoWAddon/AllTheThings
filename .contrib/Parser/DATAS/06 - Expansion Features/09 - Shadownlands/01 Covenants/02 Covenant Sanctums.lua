@@ -329,7 +329,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					},
 				}),
 			})),
-			n(-299, {	-- Missions
+			n(MISSIONS, {
 				mi(2253),	-- Topple the Giants
 				mi(2299),	-- Maw: Topple the Giants
 				mi(2298),	-- Maw: Coalescing Stygia

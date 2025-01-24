@@ -5,7 +5,7 @@
 root(ROOTS.ExpansionFeatures,
 	expansion(EXPANSION.WOD, {
 		n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
-			n(-299, {	-- Missions
+			n(MISSIONS, {
 				n(85805, {	-- Frostwall Command Table [Garrison Level 3]
 					["modelScale"] = 2.5,
 					["crs"] = {

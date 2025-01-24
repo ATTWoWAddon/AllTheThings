@@ -35,8 +35,6 @@ for key, value in pairs({
 	-- PvP
 		[-240] = 2022761,								-- Rated
 		[-242] = 236368,				-- Unrated
-	-- Garrison Missons
-		[-299] = 1035062,						-- Missions
 	-- PvP
 		[-302] = 630784,								-- Level Range 80-84
 		[-303] = 630786,							-- Level Range 85-89
@@ -129,8 +127,6 @@ for key, value in pairs({
 	-- PvP
 		[-240] = PVP_TAB_CONQUEST,												-- Rated
 		[-242] = "Unrated",														-- Unrated
-	-- Garrison Missions
-		[-299] = GARRISON_MISSIONS,												-- Missions
 	-- PvP
 		[-302] = BATTLEFIELD_LEVEL.." 80-84",									-- Level Range 80-84
 		[-303] = BATTLEFIELD_LEVEL.." 85-89",									-- Level Range 85-89
