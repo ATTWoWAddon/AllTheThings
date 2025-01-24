@@ -219,7 +219,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					}),
 					q(36874),	-- Warlord of Draenor
 				}))),
-				n(-153, {	-- Work Orders
+				n(WORK_ORDERS, {
 					n(86639, {	-- Altar of Bones
 						i(118043, {	-- Broken Bones
 							n(PVP_ASPIRANT, {
