@@ -451,7 +451,6 @@ for key,value in pairs({
 	-- Misc
 		[-493] = "Сломанный лут с миссий",							-- Broken Mission Loot
 	-- Blizzard Events and Anniversaries
-		[-520] = "Препатч",											-- Expansion Pre-Launch
 		[-543] = "Вторжение Легиона",								-- Legion Invasions
 	-- Mists of Pandaria PvP Seasons
 		[-675] = select(2, GetAchievementInfo(8214))..": Сезон 12",	-- Malevolent Gladiator: Season 12

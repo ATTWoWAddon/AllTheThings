@@ -472,7 +472,6 @@ for key,value in pairs({
 	-- Misc
 		[-493] = "要塞任务拾取",										-- Header for WoD Mission Loot
 	-- Blizzard Events and Anniversaries
-		[-520] = "资料片前夕",											-- Expansion Pre-Launch
 		[-543] = "军团入侵",											-- Legion Invasions
 	-- Mists of Pandaria PvP Seasons
 		[-675] = select(2, GetAchievementInfo(8214)).."第12赛季",	-- Malevolent Gladiator: Season 12

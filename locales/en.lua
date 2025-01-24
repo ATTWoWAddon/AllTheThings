@@ -64,7 +64,6 @@ for key, value in pairs({
 	-- Misc
 		[-493] = 1103070,						-- Temporary Header WoD Mission Loot
 	-- Blizzard Events and Anniversaries
-		[-520] = 134289,					-- Expansion Pre-Launch
 		[-543] = app.asset("Interface_Linvas"),												-- Legion Invasions
 	-- PvP Headers
 		-- [-651] = 311230,									-- Not used yet. Future PvP Icons if needed
@@ -167,7 +166,6 @@ for key, value in pairs({
 	-- Misc
 		[-493] = "Garrison Mission Loot",										-- Header for WoD Mission Loot
 	-- Blizzard Events and Anniversaries
-		[-520] = "Expansion Pre-Launch",										-- Expansion Pre-Launch
 		[-543] = "Legion Invasions",											-- Legion Invasions
 	-- Mists of Pandaria PvP Seasons
 		[-675] = select(2, GetAchievementInfo(8214))..": Season 12",			-- Malevolent Gladiator: Season 12

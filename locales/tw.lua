@@ -464,7 +464,6 @@ if app.IsRetail then
 	-- Misc
 		[-493] = "要塞任務拾取",										-- Header for WoD Mission Loot
 	-- Blizzard Events and Anniversaries
-		[-520] = "資料片前夕",											-- Expansion Pre-Launch
 		[-543] = "軍團入侵",											-- Legion Invasions
 	-- Mists of Pandaria PvP Seasons
 		[-675] = select(2, GetAchievementInfo(8214)).."第12賽季",		-- Malevolent Gladiator: Season 12

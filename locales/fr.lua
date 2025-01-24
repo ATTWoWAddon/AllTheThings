@@ -456,7 +456,6 @@ for key,value in pairs({
 	-- BFA Outposts
 		[-397] = "Avant-postes",									-- Outposts
 	-- Misc
-		[-520] = "Pré-Lancement de l’Extension",					-- Expansion Pre-Launch
 		[-543] = "Invasions de Legion ",							-- Legion Invasions
 	-- Mists of Pandaria PvP Seasons
 		[-675] = select(2, GetAchievementInfo(8214))..": Saison 12",	-- Malevolent Gladiator: Season 12
