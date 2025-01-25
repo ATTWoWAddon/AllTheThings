@@ -16,31 +16,33 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
 			spell(60893, {	-- Northrend Alchemy Research
-				r(53895),	-- Crazy Alchemist's Potion
-				r(60354),	-- Elixir of Accuracy
-				r(60365),	-- Elixir of Armor Piercing
-				r(60355),	-- Elixir of Deadly Strikes
-				r(60366),	-- Elixir of Lightning Speed
-				r(60356),	-- Elixir of Mighty Defense
-				r(60357),	-- Elixir of Mighty Intellect[10.1.7+] / Elixir of Expertise
-				r(56519),	-- Elixir of Mighty Mageblood
-				r(54220),	-- Elixir of Protection
-				r(62410, {["timeline"] = {ADDED_3_0_8}}),	-- Elixir of Water Walking
-				r(54221),	-- Potion of Speed
-				r(54222),	-- Potion of Wild Magic
-				r(53904),	-- Powerful Rejuvenation Potion
-				r(53777),	-- Transmute: Eternal Air to Earth
-				r(53776),	-- Transmute: Eternal Air to Water
-				r(53781),	-- Transmute: Eternal Earth to Air
-				r(53782),	-- Transmute: Eternal Earth to Shadow
-				r(53775),	-- Transmute: Eternal Fire to Life
-				r(53774),	-- Transmute: Eternal Fire to Water
-				r(53773),	-- Transmute: Eternal Life to Fire
-				r(53771),	-- Transmute: Eternal Life to Shadow
-				r(53779),	-- Transmute: Eternal Shadow to Earth
-				r(53780),	-- Transmute: Eternal Shadow to Life
-				r(53783),	-- Transmute: Eternal Water to Air
-				r(53784),	-- Transmute: Eternal Water to Fire
+				i(115460, { -- Northrend Alchemy Research
+					r(53895),	-- Crazy Alchemist's Potion
+					r(60354),	-- Elixir of Accuracy
+					r(60365),	-- Elixir of Armor Piercing
+					r(60355),	-- Elixir of Deadly Strikes
+					r(60366),	-- Elixir of Lightning Speed
+					r(60356),	-- Elixir of Mighty Defense
+					r(60357),	-- Elixir of Mighty Intellect[10.1.7+] / Elixir of Expertise
+					r(56519),	-- Elixir of Mighty Mageblood
+					r(54220),	-- Elixir of Protection
+					r(62410, {["timeline"] = {ADDED_3_0_8}}),	-- Elixir of Water Walking
+					r(54221),	-- Potion of Speed
+					r(54222),	-- Potion of Wild Magic
+					r(53904),	-- Powerful Rejuvenation Potion
+					r(53777),	-- Transmute: Eternal Air to Earth
+					r(53776),	-- Transmute: Eternal Air to Water
+					r(53781),	-- Transmute: Eternal Earth to Air
+					r(53782),	-- Transmute: Eternal Earth to Shadow
+					r(53775),	-- Transmute: Eternal Fire to Life
+					r(53774),	-- Transmute: Eternal Fire to Water
+					r(53773),	-- Transmute: Eternal Life to Fire
+					r(53771),	-- Transmute: Eternal Life to Shadow
+					r(53779),	-- Transmute: Eternal Shadow to Earth
+					r(53780),	-- Transmute: Eternal Shadow to Life
+					r(53783),	-- Transmute: Eternal Water to Air
+					r(53784),	-- Transmute: Eternal Water to Fire
+				})
 			}),
 		}),
 		filter(CONSUMABLES, {

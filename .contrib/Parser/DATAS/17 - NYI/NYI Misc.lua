@@ -1312,7 +1312,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(208545),	-- Kindled Bonfire
 			i(209020),	-- Loot-Filled Pumpkin
 			i(209025),	-- Loot-Filled Pumpkin
-			i(115460),	-- Northrend Alchemy Research
 			i(208784),	-- Primeval Fin
 			i(209870),	-- Surge Catcher
 				------ Secrets of Azeroth ------
