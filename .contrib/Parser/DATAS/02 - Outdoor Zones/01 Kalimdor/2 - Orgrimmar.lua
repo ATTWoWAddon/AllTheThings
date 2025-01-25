@@ -4296,6 +4296,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				-- #if ANYCLASSIC
+				-- #if BEFORE CATA
 				-- TODO: Finish this part.
 				n(12799, {	-- Sergeant Ba'sha <Accessories Quartermaster>
 					["coord"] = { 41.6, 68.6, ORGRIMMAR },
@@ -4391,6 +4392,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(18874),	-- High Warlord's War Staff
 					},
 				}),
+				-- #else
+				n(52549, {	-- Sergeant Thunderhorn <Conquest Quartermaster>
+					["coord"] = { 38.8, 70.0, ORGRIMMAR },
+					["timeline"] = { ADDED_4_2_0 },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR },{"merge"},	-- Subroutines are automatically finalized
+						{"pop"},	-- Discard the Set header and acquire the children.
+					},
+				}),
+				-- #endif
 				-- #endif
 				n(26396, {	-- Sergeant Thunderhorn Warlord Vendor Edition
 					["timeline"] = { ADDED_2_4_2 },
