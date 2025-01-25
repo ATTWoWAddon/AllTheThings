@@ -3,11 +3,10 @@
 -------------------------------------------
 root(ROOTS.Character, n(CLASS_TRIAL, {
 	expansion(EXPANSION.LEGION, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
-		n(LEVEL_HUNDRED, {
+		header(HEADERS.Achievement, 9060, {
 			-- Note: [As of August 16, 2018 Level 100 Boost became Level 100 Class Trial]
 			["description"] = "These were obtained by creating a Level 100 Class Trial for each class and specialization.",
 			["lvl"] = 100,
-			["icon"] = 1033987,
 			["groups"] = {
 				cl(DEATHKNIGHT, {
 					i(142023, {	-- Adventurer's Footlocker

@@ -4603,29 +4603,53 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"exclude", "headerID", NECK, FINGER, TRINKET },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
-				-- 54661: Captain Dirgehammer <Cataclysmic Gladiator> (Cataclysmic?)
-				-- 52546: Captain Dirgehammer <Conquest Quartermaster> (Ruthless?)
-				-- 51254: Captain Dirgehammer <Conquest Quartermaster> (Vicious?)
-				applyclassicphase(WRATH_PHASE_FOUR, n(34075, {	-- Captain Dirgehammer <Apprentice Armor Quartermaster> // Original S8 Vendor // Relentless Gladiator: Season 7 Gladiator Gear
+				applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, n(54661, {	-- Captain Dirgehammer <Conquest Quartermaster> // Original S11 Vendor // Cataclysmic Gladiator: Season 11 Gladiator Gear
+					["coord"] = { 75.0, 67.4, STORMWIND_CITY },
+					-- #if BEFORE MOP
+					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR },{ "pop" }},	-- Cataclysmic Gladiator's Set
+					-- #endif
+					["timeline"] = { REMOVED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+				})),
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, n(52546, {	-- Captain Dirgehammer <Conquest Quartermaster> // Original S10 Vendor // Ruthless Gladiator: Season 10 Gladiator Gear
+					["coord"] = { 75.0, 67.4, STORMWIND_CITY },
+					-- #if BEFORE MOP
+					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR },{ "pop" }},	-- Ruthless Gladiator's Set
+					-- #endif
+					["timeline"] = { REMOVED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+				})),
+				applyclassicphase(CATA_PHASE_ONE, n(51254, {	-- Captain Dirgehammer <Conquest Quartermaster> // Original S9 Vendor // Vicious Gladiator: Season 9 Gladiator Gear
+					["coord"] = { 75.0, 67.4, STORMWIND_CITY },
+					-- #if BEFORE MOP
+					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR },{ "pop" }},	-- Vicious Gladiator's Set
+					-- #endif
+					["timeline"] = { REMOVED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+				})),
+				applyclassicphase(WRATH_PHASE_FOUR, n(34075, {	-- Captain Dirgehammer <Apprentice Armor Quartermaster> // Original S8 Vendor // Relentless Gladiator: Season 8 Gladiator Gear
 					["coord"] = { 75.0, 67.4, STORMWIND_CITY },
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
 				})),
-				applyclassicphase(WRATH_PHASE_THREE, n(34074, {	-- Captain Dirgehammer <Apprentice Armor Quartermaster> // Original S7 Vendor // Furious Gladiator: Season 6 Gladiator Gear
+				applyclassicphase(WRATH_PHASE_THREE, n(34074, {	-- Captain Dirgehammer <Apprentice Armor Quartermaster> // Original S7 Vendor // Furious Gladiator: Season 7 Gladiator Gear
 					["coord"] = { 75.0, 67.4, STORMWIND_CITY },
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
 				})),
-				applyclassicphase(WRATH_PHASE_TWO, n(34073, {	-- Captain Dirgehammer <Apprentice Armor Quartermaster> // Original S6 Vendor // Deadly Gladiator: Season 5 Gladiator Gear
+				applyclassicphase(WRATH_PHASE_TWO, n(34073, {	-- Captain Dirgehammer <Apprentice Armor Quartermaster> // Original S6 Vendor // Deadly Gladiator: Season 6 Gladiator Gear
 					["coord"] = { 75.0, 67.4, STORMWIND_CITY },
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(WRATH_PHASE_ONE, n(32381, {	-- Captain Dirgehammer // Original S5 Vendor // Hateful Gladiator: Season 5 Gladiator Gear
 					["coord"] = { 75.0, 67.4, STORMWIND_CITY },
@@ -4633,6 +4657,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "pop" }},	-- Hateful Gladiator's Set
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
 				})),
 				n(12777, {	-- Captain Dirgehammer <Armor Quartermaster>
 					-- #if BEFORE TBC
@@ -5764,9 +5789,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(WRATH_PHASE_FOUR, n(34084, {	-- Knight-Lieutenant Moonstrike <Northrend Armor Quartermaster> // Original S8 Vendor // Furious Gladiator: Season 8 Honor Gear
 					["coord"] = { 74.8, 67.3, STORMWIND_CITY },
 					-- #if BEFORE 4.0.3.13277
-					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
+					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_ELITE },{ "pop" }},	-- Furious Gladiator's Set
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, n(34083, {	-- Knight-Lieutenant Moonstrike <Northrend Armor Quartermaster> // Original S7 Vendor // Deadly Gladiator: Season 7 Honor Gear
 					["coord"] = { 74.8, 67.3, STORMWIND_CITY },
@@ -5774,6 +5800,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(WRATH_PHASE_TWO, n(34082, {	-- Knight-Lieutenant Moonstrike <Armor Quartermaster> // Original S6 Vendor // Hateful Gladiator: Season 6 Honor Gear
 					["coord"] = { 74.8, 67.3, STORMWIND_CITY },
@@ -5781,6 +5808,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "pop" }},	-- Hateful Gladiator's Set
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(WRATH_PHASE_ONE, n(32834, {	-- Knight-Lieutenant Moonstrike <Armor Quartermaster> // Original S5 Vendor // Savage Gladiator: Season 5 Honor Gear
 					["coord"] = { 74.8, 67.3, STORMWIND_CITY },
@@ -5788,6 +5816,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR },{ "pop" }},	-- Savage Gladiator's Set
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
 				})),
 				-- #if AFTER CATA
 				-- This is a future Crieve problem, probably a similar thing to Moonstrike.
@@ -5899,20 +5928,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(12784, {	-- Lieutenant Jackspring <Legacy Weapon Quartermaster> [WRATH+] / Lieutenant Jackspring <Weapons Quartermaster>
 					-- #if AFTER WRATH
 					["coord"] = { 75.2, 67.2, STORMWIND_CITY },
+					-- #if NOT ANYCLASSIC
 					["description"] = "Blizzard strikes again. In order to transmog these, you need to have the original title associated with the gear. However, you can still collect them even if you've never had the title.\n\nThese items will require a refresh/reload to register as collected, and it's highly recommended that you keep them in your bank/void storage for later. You'll likely randomly lose credit for them and have to re-equip them to remind the game they exist.",
+					-- #endif
 					-- #else
 					["coord"] = { 71.9, 55.6, STORMWIND_CITY },
 					-- #endif
 					["timeline"] = { ADDED_2_0_1 },	-- Prior to TBC, was just a Reagent Vendor.
 					["sym"] = {
 						-- #IF ANYCLASSIC
-						{"sub", "pvp_gear_base", EXPANSION.CLASSIC, FACTION_HEADER_ALLIANCE, WEAPONS }, {"merge"},	-- Grand Marshal Weapons
+						{"sub", "pvp_gear_base", EXPANSION.CLASSIC, FACTION_HEADER_ALLIANCE, WEAPONS }, {"pop"}, { "finalize" },	-- Grand Marshal Weapons
+						-- #if AFTER CATA
+						{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR }, {"pop"}, { "where", "headerID", WEAPONS }, { "pop" }, { "finalize" },
+						{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR }, {"pop"}, { "where", "headerID", WEAPONS }, { "pop" }, { "finalize" },
+						-- #endif
+						{ "merge" },
 						-- #ELSE
 						{"select","expansionID",EXPANSION.CLASSIC},
 						{"find","headerID",FACTION_HEADER_ALLIANCE},
 						{"find","headerID",WEAPONS},	-- Grand Marshal Weapons
-						-- #ENDIF
 						{"pop"},
+						-- #ENDIF
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -5961,8 +5997,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					}),
 				}),
-				-- #if AFTER CATA
-				-- This is a future Crieve problem, probably a similar thing to the other Tristias.
+				n(12778, {	-- Lieutenant Rachel Vaccar <Outland Armor Quartermaster>
+					["coord"] = { 75.2, 67.2, STORMWIND_CITY },
+					["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+					-- #IF ANYCLASSIC
+					["sym"] = {
+						{ "select", "expansionID", EXPANSION.TBC },	{ "pop" },
+						{ "contains", "headerID", SEASON_BRUTAL, SEASON_VENGEFUL, SEASON_MERCILESS, SEASON_GLADIATOR }, { "pop" },
+						{ "where", "headerID", PVP_GLADIATOR }, { "pop" },
+						{ "postprocess" },
+					},
+					-- #ENDIF
+					["races"] = ALLIANCE_ONLY,
+				}),
+				-- #if AFTER LEGION
 				n(54660, {	-- Lieutenant Tristia <Vicious Gladiator>
 					["coord"] = { 75.0, 67.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
@@ -5972,18 +6020,37 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"exclude", "headerID", NECK, FINGER, TRINKET },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
-				n(51255, {	-- Lieutenant Tristia Original CATA S9 ELITE VENDOR Alliance
-					["coord"] = { 75.0, 67.0, STORMWIND_CITY },
+				-- #else
+				applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, n(54660, {	-- Lieutenant Tristia <Glorious Conquest Quartermaster> // Original S11 Vendor // Cataclysmic Gladiator: Elite Season 11 Gladiator Gear
+					["coord"] = { 74.8, 67.6, STORMWIND_CITY },
+					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_ELITE },{ "pop" }},	-- Elite Cataclysmic Gladiator's Set
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
+				})),
 				-- #endif
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, n(52545, {	-- Lieutenant Tristia <Glorious Conquest Quartermaster> // Original S10 Vendor // Ruthless Gladiator: Elite Season 10 Gladiator Gear
+					["coord"] = { 74.8, 67.6, STORMWIND_CITY },
+					-- #if BEFORE MOP
+					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_ELITE },{ "pop" }},	-- Elite Ruthless Gladiator's Set
+					-- #endif
+					["timeline"] = { REMOVED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+				})),
+				applyclassicphase(CATA_PHASE_ONE, n(51255, {	-- Lieutenant Tristia <Glorious Conquest Quartermaster> // Original S9 Vendor // Vicious Gladiator: Elite Season 9 Gladiator Gear
+					["coord"] = { 74.8, 67.6, STORMWIND_CITY },
+					-- #if BEFORE MOP
+					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_ELITE },{ "pop" }},	-- Elite Vicious Gladiator's Set
+					-- #endif
+					["timeline"] = { REMOVED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+				})),
 				applyclassicphase(WRATH_PHASE_FOUR, n(34078, {	-- Lieutenant Tristia <Veteran Armor Quartermaster> // Original S8 Vendor // Wrathful Gladiator: Season 8 Gladiator Gear
 					["coord"] = { 74.7, 67.2, STORMWIND_CITY },
 					-- #if BEFORE 4.0.3.13277
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR },{ "pop" }},	-- Wrathful Gladiator's Set
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, n(34077, {	-- Lieutenant Tristia <Veteran Armor Quartermaster> // Original S7 Vendor // Relentless Gladiator: Season 7 Gladiator Gear
 					["coord"] = { 74.7, 67.2, STORMWIND_CITY },
@@ -5991,6 +6058,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(WRATH_PHASE_TWO, n(34076, {	-- Lieutenant Tristia <Veteran Armor Quartermaster> // Original S6 Vendor // Furious Gladiator: Season 6 Gladiator Gear
 					["coord"] = { 74.7, 67.2, STORMWIND_CITY },
@@ -5998,6 +6066,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(WRATH_PHASE_ONE, n(32380, {	-- Lieutenant Tristia <Veteran Armor Quartermaster> // Original S5 Vendor // Deadly Gladiator: Season 5 Gladiator Gear
 					["coord"] = { 74.7, 67.2, STORMWIND_CITY },
@@ -6010,6 +6079,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
 				})),
 				-- #if NOT ANYCLASSIC
 				-- Crieve NOTE: This NPC ID wasn't used for TBC Classic, so not sure how this was actually used.
@@ -6018,8 +6088,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 75.0, 67.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-					["groups"] = {
-					},
 				}),
 				-- #endif
 				n(8666, {	-- Lil Timmy <Boy with kittens>
@@ -6698,7 +6766,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_2_0_1 },	-- Prior to TBC, was just a Food Vendor.
 					["sym"] = {	-- Grand Marshal Armor
 						-- #IF ANYCLASSIC
-						{"sub", "pvp_gear_base", EXPANSION.CLASSIC, FACTION_HEADER_ALLIANCE }, {"merge"},
+						{"sub", "pvp_gear_base", EXPANSION.CLASSIC, FACTION_HEADER_ALLIANCE }, { "merge" },
+						-- #if AFTER CATA
+						{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR },{ "merge" },
+						{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR },{ "merge" },
+						-- #endif
 						-- #ELSE
 						{"select","expansionID",EXPANSION.CLASSIC},
 						{"find","headerID",FACTION_HEADER_ALLIANCE},

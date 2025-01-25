@@ -739,6 +739,15 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(41134),	-- [DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden)
 		-- #endif
 		-- #endif
+		-- 4.4.2.58486
+		-- #if ANYCLASSIC
+		-- #if AFTER 4.4.2
+		ach(41332),	-- Rival: Season 10
+		ach(41333),	-- Duelist: Season 10
+		ach(41334),	-- Challenger: Season 10
+		ach(41336),	-- Gladiator: Season 10
+		-- #endif
+		-- #endif
 	}),
 	expansion(EXPANSION.MOP, {
 		ach(6337),	-- Ossirian kills (Ruins of Ahn'Qiraj)
@@ -3658,11 +3667,11 @@ root(ROOTS.HiddenAchievementTriggers, {
 
 		-- 11.1.0
 		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
-			ach(40908),	-- Demolition Superdome matches
-			ach(40909),	-- Demolition Superdome victories
+			ach(40908),	-- Cage of Carnage matches
+			ach(40909),	-- Cage of Carnage victories
 			ach(41102),	-- Excavation Site 9 clears
-			ach(41103),	-- [PH] Undermine Delve clears
-			ach(41104),	-- [PH] Demolition Dome clears
+			ach(41103),	-- Sidestreet Sluice clears
+			ach(41104),	-- Demolition Dome clears
 			ach(41299),	-- Vexie and the Geargrinders (Raid Finder Liberation of Undermine)
 			ach(41300),	-- Vexie and the Geargrinders (Normal Liberation of Undermine)
 			ach(41301),	-- Vexie and the Geargrinders (Heroic Liberation of Undermine)
@@ -3702,6 +3711,11 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(41364),	-- Earn and Tutorialize First Warband Camp (Not Used!) (DNT)
 			ach(41365),	-- Season 2 - Defeated Underpin
 			ach(41683),	-- Khaz Algar Safari (copy)
+			-- 11.1.0.58626
+			ach(41696),	-- Vicious Saddle (40)
+			ach(41697),	-- Vicious Saddle (40)
+			ach(41698),	-- Vicious Saddle (41)
+			ach(41699),	-- Vicious Saddle (41)
 		})),
 	}),
 });

@@ -56,8 +56,8 @@ end]];
 -- #endif
 root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { ADDED_2_0_1 } }, pvp(expansion(EXPANSION.TBC, {
 	n(PVP_HONOR, {
-		-- Players have said that the Alliance versions were available through Wrath.
-		n(FACTION_HEADER_ALLIANCE, bubbleDownFiltered({ ["timeline"] = { ADDED_2_0_1, REMOVED_4_0_1 } }, FILTERFUNC_itemID, {
+		-- Players have said that the Alliance versions were available through Cata.
+		n(FACTION_HEADER_ALLIANCE, bubbleDownFiltered({ ["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 } }, FILTERFUNC_itemID, {
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				n(WEAPONS, {

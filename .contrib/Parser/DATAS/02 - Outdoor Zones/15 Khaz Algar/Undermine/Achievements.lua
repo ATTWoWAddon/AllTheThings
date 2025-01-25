@@ -37,6 +37,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						41549,	-- Mechanical Battler of Undermine
 						41550,	-- Undead Battler of Undermine
 					}},
+					["g"] = {
+						i(232855),	-- Foreman (PET!)
+					},
 				})),
 				petbattle(ach(41542, {	-- Aquatic Battler of Undermine
 					crit(102982, {	-- Precision Powerdrill
@@ -219,9 +222,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					}),
 				})),
 			}),
-			ach(40948),	-- Nine-Tenths of the Law
-			ach(40894),	-- Sojourner of Undermine (automaded)
-			ach(41586, {	-- Racing to a Revolution
+			ach(41586, {	-- Going Goblin Mode
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
 					41216,	-- Adventurer of Undermine
@@ -232,11 +233,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				}},
 				-- TODO reward: Warband Campite: Gallagio Grand Gallery
 			}),
-			ach(41588),	-- Read Between the Lines (automated)
+			ach(40948),	-- Nine-Tenths of the Law
+			ach(40894),	-- Sojourner of Undermine (automated)
+			ach(41588, {	-- Read Between the Lines (automated)
+				i(235050),	-- Desk-In-A-Box (TOY!)
+			}),
 			ach(41589),	-- That Can-Do Attitude
 			pvp(ach(41522)),	-- Tour of Duty: Undermine
 			ach(41217),	-- Treasures of Undermine (automated)
 			ach(40900),	-- Undermined (automated)
+			achraw(41708, {	-- You're My Friend Now
+				["crs"] = {
+					239250,	-- Grabbable Rat
+					239248,	-- Grabbable Rat
+					239249,	-- Grabbable Rat
+					239251,	-- Grabbable Rat
+					239252,	-- Grabbable Rat
+				},
+			}),
 		}),
 	}),
 })));

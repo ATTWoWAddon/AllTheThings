@@ -3,11 +3,10 @@
 -------------------------------------------
 root(ROOTS.Character, n(CLASS_TRIAL, {
 	expansion(EXPANSION.WOD, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
-		n(LEVEL_HUNDRED, {
+		header(HEADERS.Achievement, 9060, {
 			-- Note: [As of August 16, 2018 Level 100 Boost became Level 100 Class Trial]
 			["description"] = "These were obtained by boosting a character to Level 100 for each class and specialization.",
 			["lvl"] = 100,
-			["icon"] = 1033987,
 			["sourceIgnored"] = true,
 			["groups"] = {
 				cl(DEATHKNIGHT, {

@@ -3,12 +3,11 @@
 -------------------------------------------
 root(ROOTS.Character, n(CLASS_TRIAL, {
 	expansion(EXPANSION.WOD, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
-		n(LEVEL_NINETY, {
+		header(HEADERS.Achievement, 6193, {
 			-- Note: [As of patch 6.0.1 Level 90 Boost does reward this gear instead]
 			-- Note: [As of --Date--(when this became class trial) you obtain the old Level 90 Boost Gear]
 			["description"] = "These were obtained by creating a Level 90 Class Trial or boosting a character to Level 90 for each class and specialization.",
 			["lvl"] = 90,
-			["icon"] = 614740,
 			["groups"] = {
 				cl(DEATHKNIGHT, {
 					cl(DEATHKNIGHT, UNHOLY, {

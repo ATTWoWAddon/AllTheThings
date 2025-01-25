@@ -191,7 +191,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						["provider"] = { "n", 212419 },	-- Attica Whiskervale
 						["coord"] = { 64.5, 18.8, HALLOWFALL },
 						["g"] = {
-							i(219346),	-- Camp Supplies (QI!)
+							o(439314, {	-- Camp Supplies
+								i(219346),	-- Camp Supplies (QI!)
+							}),
 						},
 					}),
 					q(76169, {	-- Glow in the Dark

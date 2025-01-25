@@ -1,0 +1,2 @@
+["customCollect"] = "SL_COV_NEC",	-- Necrolord
+["description"] = "|cFF40bf40Necrolord Covenant|r only.",

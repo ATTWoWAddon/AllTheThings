@@ -354,6 +354,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			}},
 			["maps"] = ALL_REGULAR_DELVES,
 		}),
+		ach(41714, { 	-- From Trash to Treasure (automated)
+			["timeline"] = { ADDED_11_1_0 },
+		}),
 		ach(40438, {	-- Glory of the Delver
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -391,10 +394,13 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		ach(40446, {	-- I TAKE Candle!
 			["maps"] = KOBOLD_DELVES,
 		}),
-		ach(40459),	-- I've Got a Flying Machine!
-		ach(40789),	-- I've Got More Flying Machine?! (automated)
+		ach(40459),		-- I've Got a Flying Machine!
+		ach(40789),		-- I've Got More Flying Machine?! (automated)
 		ach(40788, {	-- I Got the Keys
 			["maps"] = ALL_REGULAR_DELVES,
+		}),
+		ach(41709, { 	-- Journey's End (Season 2)
+			["timeline"] = { ADDED_11_1_0 },
 		}),
 		ach(40452, {	-- Just Keep Swimming
 			["maps"] = KOBYSS_DELVES,

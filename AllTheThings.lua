@@ -1033,6 +1033,30 @@ end
 local GetFixedItemSpecInfo, GetSpecsString, GetGroupItemIDWithModID, GetItemIDAndModID, GroupMatchesParams, GetClassesString
 	= app.GetFixedItemSpecInfo, app.GetSpecsString, app.GetGroupItemIDWithModID, app.GetItemIDAndModID, app.GroupMatchesParams, app.GetClassesString
 
+local function CleanInheritingGroups(groups, ...)
+	-- Cleans any groups which are nested under any group with any specified fields
+	local arrs = select("#", ...);
+	if groups and arrs > 0 then
+		local refined, f, match = {}, nil, nil;
+		-- app.PrintDebug("CIG:Start",#groups,...)
+		for _,j in ipairs(groups) do
+			match = nil;
+			for n=1,arrs do
+				f = select(n, ...);
+				if GetRelativeValue(j, f) then
+					match = true;
+					-- app.PrintDebug("CIG:Skip",j.hash,f)
+					break;
+				end
+			end
+			if not match then
+				tinsert(refined, j);
+			end
+		end
+		-- app.PrintDebug("CIG:End",#refined)
+		return refined;
+	end
+end
 -- Symlink Lib
 do
 local select, tremove, unpack =
@@ -1372,7 +1396,7 @@ local ResolveFunctions = {
 		local cache, value;
 		for i=1,vals do
 			value = select(i, ...);
-			cache = Search("achievementID", value, "key", true);
+			cache = CleanInheritingGroups(Search("achievementID", value, "key", true), "sourceIgnored")
 			local mergeAch = cache[1]
 			-- multiple achievements match the selection, make sure to merge them together so we don't lose fields
 			-- that only exist in the original Source (Achievements source prunes some data)
@@ -1888,7 +1912,7 @@ local function ResolveSymlinkGroupAsync(group)
 	local groups = ResolveSymbolicLink(group);
 	group.sym = nil;
 	if groups then
-		PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter);
+		PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter, app.RecursiveGroupRequirementsFilter);
 		-- app.PrintDebug("RSGa",group.g and #group.g,group.hash)
 		-- newly added group data needs to be checked again for further content to fill, since it will not have been recursively checked
 		-- on the initial pass due to the async nature
@@ -1990,7 +2014,7 @@ local function AddContainsData(group, tooltipInfo)
 	if not working and not app.ActiveRowReference then
 		app.Sort(group.g, app.SortDefaults.Hierarchy, true);
 	end
-	-- app.PrintDebug("SummarizeThings",group.hash,group.g and #group.g)
+	-- app.PrintDebug("SummarizeThings",app:SearchLink(group),group.g and #group.g)
 	local entries = {};
 	-- app.Debugging = "CONTAINS-"..group.hash;
 	ContainsLimit = app.Settings:GetTooltipSetting("ContainsCount") or 25;
@@ -2013,6 +2037,7 @@ local function AddContainsData(group, tooltipInfo)
 					working = true;
 				end
 				left = TryColorizeName(entry, left);
+				-- app.PrintDebug("Entry#",i,app:SearchLink(entry),app.GenerateSourcePathForTooltip(entry))
 
 				-- If this entry has a specific Class requirement and is not itself a 'Class' header, tack that on as well
 				if entry.c and entry.key ~= "classID" and #entry.c == 1 then
@@ -2322,7 +2347,7 @@ app.AddEventHandler("OnLoad", function()
 end)
 
 local function GetSearchResults(method, paramA, paramB, options)
-	-- app.PrintDebug("GetSearchResults",method,paramA,paramB,...)
+	-- app.PrintDebug("GetSearchResults",method,paramA,paramB)
 	if not method then
 		print("GetSearchResults: Invalid method: nil");
 		return nil, true;
@@ -2407,58 +2432,63 @@ local function GetSearchResults(method, paramA, paramB, options)
 
 	-- Determine if this is a cache for an item
 	local itemID, sourceID, modID, bonusID, itemString;
-	if rawlink then
-		-- paramA
-		itemString = rawlink:match("item[%-?%d:]+");
-		if itemString then
-			sourceID = app.GetSourceID(rawlink);
-			-- app.PrintDebug("Rawlink SourceID",sourceID,rawlink)
-			local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, linkModID, numBonusIds, bonusID1 = (":"):split(itemString);
-			if itemID2 then
-				itemID = tonumber(itemID2);
-				modID = tonumber(linkModID) or 0;
-				if modID == 0 then modID = nil; end
-				bonusID = (tonumber(numBonusIds) or 0) > 0 and tonumber(bonusID1) or 3524;
-				if bonusID == 3524 then bonusID = nil; end
-				if sourceID then
-					paramA = "sourceID"
-					paramB = sourceID
-					-- app.PrintDebug("use sourceID params",paramA,paramB)
-				else
+	if not paramB then
+		if rawlink then
+			-- paramA
+			itemString = rawlink:match("item[%-?%d:]+");
+			if itemString then
+				sourceID = app.GetSourceID(rawlink);
+				-- app.PrintDebug("Rawlink SourceID",sourceID,rawlink)
+				local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, linkModID, numBonusIds, bonusID1 = (":"):split(itemString);
+				if itemID2 then
+					itemID = tonumber(itemID2);
+					modID = tonumber(linkModID) or 0;
+					if modID == 0 then modID = nil; end
+					bonusID = (tonumber(numBonusIds) or 0) > 0 and tonumber(bonusID1) or 3524;
+					if bonusID == 3524 then bonusID = nil; end
+					if sourceID then
+						paramA = "sourceID"
+						paramB = sourceID
+						-- app.PrintDebug("use sourceID params",paramA,paramB)
+					else
+						paramA = "itemID";
+						paramB = GetGroupItemIDWithModID(nil, itemID, modID, bonusID) or itemID;
+						-- app.PrintDebug("use itemID params",paramA,paramB)
+					end
+				end
+			else
+				local kind, id = (":"):split(rawlink);
+				kind = kind:lower();
+				if id then id = tonumber(id); end
+				if kind == "itemid" then
 					paramA = "itemID";
-					paramB = GetGroupItemIDWithModID(nil, itemID, modID, bonusID) or itemID;
-					-- app.PrintDebug("use itemID params",paramA,paramB)
+					paramB = id;
+					itemID = id;
+				elseif kind == "questid" then
+					paramA = "questID";
+					paramB = id;
+				elseif kind == "creatureid" or kind == "npcid" then
+					paramA = "creatureID";
+					paramB = id;
+				elseif kind == "achievementid" then
+					paramA = "achievementID";
+					paramB = id;
 				end
 			end
-		else
-			local kind, id = (":"):split(rawlink);
-			kind = kind:lower();
-			if id then id = tonumber(id); end
-			if kind == "itemid" then
-				paramA = "itemID";
-				paramB = id;
-				itemID = id;
-			elseif kind == "questid" then
-				paramA = "questID";
-				paramB = id;
-			elseif kind == "creatureid" or kind == "npcid" then
-				paramA = "creatureID";
-				paramB = id;
-			elseif kind == "achievementid" then
-				paramA = "achievementID";
-				paramB = id;
-			end
+		elseif paramA == "itemID" then
+			-- itemID should only be the itemID, not including modID
+			itemID = GetItemIDAndModID(paramB) or paramB;
 		end
-	elseif paramA == "itemID" then
-		-- itemID should only be the itemID, not including modID
-		itemID = GetItemIDAndModID(paramB) or paramB;
+	-- else app.PrintDebug("Skip search rawlink check",rawlink)
 	end
 
 	-- Create clones of the search results
 	if not group.g then
 		-- Clone all the non-ignored groups so that things don't get modified in the Source
+		-- app.PrintDebug("Cloning Roots for",paramA,paramB,"#group",group and #group);
 		local cloned = {};
 		for _,o in ipairs(group) do
+			-- app.PrintDebug("Clone:",app:SearchLink(o),GetRelativeValue(o, "sourceIgnored"),app.GetRelativeRawWithField(o, "sourceIgnored"),app.GenerateSourcePathForTooltip(o))
 			if not GetRelativeValue(o, "sourceIgnored") then
 				cloned[#cloned + 1] = CreateObject(o)
 			end
@@ -2588,7 +2618,7 @@ local function GetSearchResults(method, paramA, paramB, options)
 		-- app.PrintDebug(#nested,"Nested total");
 		-- Nest the objects by matching filter priority if it's not a currency
 		if paramA ~= "currencyID" then
-			PriorityNestObjects(root, nested, nil, app.RecursiveCharacterRequirementsFilter);
+			PriorityNestObjects(root, nested, nil, app.RecursiveCharacterRequirementsFilter, app.RecursiveGroupRequirementsFilter);
 		else
 			-- do roughly the same logic for currency, but will not add the skipped objects afterwards
 			local added = {};
@@ -3009,7 +3039,7 @@ local function FillGroupDirect(group, FillData, doDGU)
 		DetermineSymlinkGroups(group));
 
 	-- Adding the groups normally based on available-source priority
-	PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter);
+	PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter, app.RecursiveGroupRequirementsFilter);
 
 	if groups and #groups > 0 then
 		-- if FillData.Debug then
@@ -3456,7 +3486,7 @@ local function BuildSourceParent(group)
 				end
 				tinsert(clones, clonedParent);
 			end
-			PriorityNestObjects(sourceGroup, clones, nil, app.RecursiveCharacterRequirementsFilter);
+			PriorityNestObjects(sourceGroup, clones, nil, app.RecursiveCharacterRequirementsFilter, app.RecursiveGroupRequirementsFilter);
 			NestObject(group, sourceGroup, nil, 1);
 		end
 	end
@@ -3944,12 +3974,15 @@ local function SearchForLink(link)
 					end
 				end
 			end
+			local search
 			-- Don't use SourceID for artifact searches since they contain many SourceIDs
 			local sourceID = not artifactID and app.GetSourceID(link);
 			if sourceID then
 				-- Search for the Source ID. (an appearance)
 				-- app.PrintDebug("SEARCHING FOR ITEM LINK WITH SOURCE", link, itemID, sourceID);
-				return SearchForObject("sourceID", sourceID, nil, true);
+				search = SearchForObject("sourceID", sourceID, nil, true)
+				-- app.PrintDebug("SFL.sourceID",sourceID,#search)
+				if #search > 0 then return search, "sourceID", sourceID end
 			end
 			-- Search for the Item ID. (an item without an appearance)
 			-- app.PrintDebug("SFL-exact",itemID, modID, (tonumber(bonusCount) or 0) > 0 and bonusID1)
@@ -3966,16 +3999,17 @@ local function SearchForLink(link)
 				modItemID = GetGroupItemIDWithModID(nil, itemID, modID);
 			end
 			-- app.PrintDebug("SEARCHING FOR ITEM LINK", link, exactItemID, modItemID, itemID);
-			local search
 			if exactItemID ~= itemID then
 				search = SearchForObject("modItemID", exactItemID, nil, true);
-				if #search > 0 then return search; end
+				-- app.PrintDebug("SFL.modItemID",exactItemID,#search)
+				if #search > 0 then return search, "modItemID", exactItemID end
 			end
 			if modItemID ~= itemID and modItemID ~= exactItemID then
 				search = SearchForObject("modItemID", modItemID, nil, true);
-				if #search > 0 then return search; end
+				-- app.PrintDebug("SFL.modItemID",modItemID,#search)
+				if #search > 0 then return search, "modItemID", modItemID end
 			end
-			return SearchForObject("itemID", itemID, nil, true);
+			return SearchForObject("itemID", itemID, nil, true), "itemID", itemID
 		end
 	end
 
@@ -6962,30 +6996,6 @@ customWindowUpdates.CosmicInfuser = function(self, force)
 		self:BaseUpdate(force);
 	end
 end;
-local function CleanInheritingGroups(groups, ...)
-	-- Cleans any groups which are nested under any group with any specified fields
-	local arrs = select("#", ...);
-	if groups and arrs > 0 then
-		local refined, f, match = {}, nil, nil;
-		-- app.PrintDebug("CIG:Start",#groups,...)
-		for _,j in ipairs(groups) do
-			match = nil;
-			for n=1,arrs do
-				f = select(n, ...);
-				if GetRelativeValue(j, f) then
-					match = true;
-					-- app.PrintDebug("CIG:Skip",j.hash,f)
-					break;
-				end
-			end
-			if not match then
-				tinsert(refined, j);
-			end
-		end
-		-- app.PrintDebug("CIG:End",#refined)
-		return refined;
-	end
-end
 customWindowUpdates.CurrentInstance = function(self, force, got)
 	-- app.PrintDebug("CurrentInstance:Update",force,got)
 	if not self.initialized then

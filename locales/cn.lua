@@ -463,8 +463,6 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Class Trial
-		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."（直升）",	-- Level 50 (Boost)
 	-- PvP
 		[-242] = "无评级",												-- Unrated
 	-- Outposts in Draenor

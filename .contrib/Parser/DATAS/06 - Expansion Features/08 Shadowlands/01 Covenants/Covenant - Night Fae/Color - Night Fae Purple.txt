@@ -1,1 +1,0 @@
-["description"] = "|cFFA330C9Night Fae Covenant|r only.",

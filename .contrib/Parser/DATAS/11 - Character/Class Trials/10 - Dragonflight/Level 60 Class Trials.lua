@@ -3,7 +3,7 @@
 -------------------------------------------
 root(ROOTS.Character, n(CLASS_TRIAL, {
 	expansion(EXPANSION.DF, {
-		n(LEVEL_SIXTY_TRIAL, {
+		header(HEADERS.Achievement, 14783, {
 			-- Note: [As of July 4, 2018 it's Boosted 110's as no 110 trial is available]
 			-- Note: [As of August 18th, 2018 110 trials have been implemented and use same itemID's as boosting]
 			-- Note: [As of October 13th, 2020 Level 110 trials became Level 48 trials]
@@ -11,7 +11,6 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 			-- Note: BETA 10.0.2 50 Trials became 60 Trials
 			["description"] = "These are gained by creating a Level 60 Trial of that particular class.  Each class has one default spec except Shamans, Druids and Hunters.",
 			["lvl"] = 60,
-			["icon"] = 236567,
 			["groups"] = {
 				i(185940), -- Pristine Survival Kit
 				cl(DEATHKNIGHT, {

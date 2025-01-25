@@ -3885,14 +3885,14 @@ Dreamfire,2748,35,0,2,199,13992,2667,1,9,100000,10200,0
 "Prized Aspirant's Chain Armor",4339,4164,0,272,283,13303,0,1,10,110100,5450,0
 "Prized Aspirant's Plate Armor",4340,35,0,272,283,13303,0,1,10,110100,5450,0
 "[DNT] 11.1 Mythic VFX Unlock - All Items",4341,0,87353,259,0,0,0,1,10,110100,5710,0
-"Undermine Revolutionary's Cloth Armor",4342,400,0,0,303,13989,0,1,10,110100,6000,0
-"Undermine Revolutionary's Plate Armor",4343,35,0,0,303,13989,0,1,10,110100,6000,0
-"Undermine Revolutionary's Leather Armor",4344,3592,0,0,303,13989,0,1,10,110100,6000,0
-"Undermine Revolutionary's Mail Armor",4345,4164,0,0,303,13989,0,1,10,110100,6000,0
-"""Slickest Goblin of the Season""",4350,3592,0,0,313,13591,4344,1,10,110100,4370,0
-"""Smartest Goblin of the Season""",4351,400,0,0,313,13591,4342,1,10,110100,2800,0
-"""Toughest Goblin of the Season""",4352,35,0,0,313,13591,4343,1,10,110100,2800,0
-"""Craftiest Goblin of the Season""",4353,4164,0,0,313,13591,4345,1,10,110100,2800,0
+"Undermine Revolutionary's Vestments",4342,400,0,0,303,13989,0,1,10,110100,6000,0
+"Undermine Revolutionary's Battleplate",4343,35,0,0,303,13989,0,1,10,110100,6000,0
+"Undermine Revolutionary's Battlegear",4344,3592,0,0,303,13989,0,1,10,110100,6000,0
+"Undermine Revolutionary's Guise",4345,4164,0,0,303,13989,0,1,10,110100,6000,0
+"Slickest in Town",4350,3592,87447,0,313,13591,4344,1,10,110100,4370,0
+"Smartest in Town",4351,400,87445,0,313,13591,4342,1,10,110100,2800,0
+"Toughest in Town",4352,35,87449,0,313,13591,4343,1,10,110100,2800,0
+"Craftiest in Town",4353,4164,87448,0,313,13591,4345,1,10,110100,2800,0
 "Mindboost Scholar Regalia",4354,400,0,0,303,14016,4342,1,10,110100,6000,0
 "Smoketrail Racer Suit",4355,3592,0,0,303,14016,4344,1,10,110100,0,0
 "Dustfire Outlaw Attire",4356,4164,0,0,303,14016,4345,1,10,110100,6000,0

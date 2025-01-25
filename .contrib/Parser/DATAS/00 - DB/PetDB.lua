@@ -4311,6 +4311,7 @@ i(236768, 4759);	-- Craboom
 i(232842, 4638);	-- Crimson Mechasaur
 i(232858, 4655);	-- Cruncher
 i(232853, 4632);	-- Eepy
+i(232855, 4631);	-- Foreman
 i(232843, 4642);	-- Gorillion
 i(232859, 4653);	-- Lab Rat
 i(205013, 3518);	-- Lettuce
@@ -4336,7 +4337,6 @@ n(231567, 4657);	-- Venture Bombshell
 n(231477, 4651);	-- Wily Rat
 --- UNSORTED ---
 --i(???, 4739);	-- Fancier Rat
-i(232855, 4631);	-- Foreman
 i(232844, 4640);	-- Fuz-Size Flarendo
 i(235909, 4755);	-- Gleam
 i(232857, 4635);	-- Goggles

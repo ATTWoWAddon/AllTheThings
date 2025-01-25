@@ -125,7 +125,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				e(604, {	-- Krystallus
 					["creatureID"] = 27977,	-- Krystallus
 					["groups"] = {
-						i(37649),	-- Quarry Chisel
+						i(37649, {	-- Quarry Chisel
+							["timeline"] = { CREATED_3_0_2, ADDED_7_3_5 },
+						}),
 						i(35670),	-- Brann's Lost Mining Helmet
 						i(35672),	-- Hollow Geode Helm
 						-- #if AFTER 7.3.5

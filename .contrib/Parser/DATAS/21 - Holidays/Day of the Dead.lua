@@ -232,6 +232,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 					}),
 					i(46860, {	-- Whimsical Skull Mask (Cosmetic)
 						["timeline"] = { ADDED_3_2_2 },
+						-- #if BEFORE LEGION
+						["collectible"] = false,
+						-- #endif
 					}),
 					i(79048, {	-- Whimsical Skull Mask
 						["timeline"] = { ADDED_5_0_4 },

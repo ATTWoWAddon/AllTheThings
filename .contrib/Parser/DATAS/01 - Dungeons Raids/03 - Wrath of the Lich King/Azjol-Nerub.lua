@@ -246,13 +246,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							-- #endif
 						}),
 						i(37244, {	-- Fungi-Coated Boots
-							["timeline"] = { CREATED_3_0_2, ADDED_4_0_3 },
+							["timeline"] = { CREATED_3_0_2, ADDED_8_0_1 },
 							-- #if AFTER 8.0.1
 							["cr"] = 29128,	-- Anub'ar Prime Guard [BLIZZARD BROKE THE REST LOL GOODLUCK]
 							-- #endif
 						}),
 						i(37245, {	-- Tangled Web Bindings
-							["timeline"] = { CREATED_3_0_2, ADDED_4_0_3 },
+							["timeline"] = { CREATED_3_0_2, ADDED_8_0_1 },
 							-- #if AFTER 8.0.1
 							["cr"] = 29128,	-- Anub'ar Prime Guard [BLIZZARD BROKE THE REST LOL GOODLUCK]
 							-- #endif

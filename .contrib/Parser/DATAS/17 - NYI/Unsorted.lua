@@ -209,7 +209,6 @@ root(ROOTS.Unsorted, {
 				i(232848),	-- Mr. DELVER
 				i(232852),	-- Mutt
 				i(232854),	-- Grinner
-				i(232855),	-- Foreman
 				i(232856),	-- Scruff
 				i(232857),	-- Goggles
 				i(235909),	-- Gleam
@@ -1541,7 +1540,6 @@ root(ROOTS.Unsorted, {
 				i(234471),	-- Earthen Device
 				i(234472),	-- Earthen Crystal
 				i(234969),	-- Archivist Chassis
-				i(235050),	-- Desk-In-A-Box
 				i(232005),	-- Cryptic Crostini
 				i(232006),	-- Detective's Delight
 				i(232007),	-- Sleuth's Sip

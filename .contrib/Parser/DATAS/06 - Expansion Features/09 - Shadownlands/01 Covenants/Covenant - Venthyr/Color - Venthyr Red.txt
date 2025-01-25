@@ -1,0 +1,2 @@
+["customCollect"] = "SL_COV_VEN",	-- Venthyr
+["description"] = "|cFFfe040fVenthyr Covenant|r only.",

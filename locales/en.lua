@@ -124,9 +124,6 @@ for key, value in pairs({
 		[-1210] = 133168,										-- Invasion: Pirate
 	};
 	["HEADER_NAMES"] = {
-	-- Class Trial
-		[-137] = sformat(SPELLBOOK_AVAILABLE_AT, 90),						-- Level 90
-		[-138] = sformat(SPELLBOOK_AVAILABLE_AT, 100),					-- Level 100
 	-- WoD Dungeons(Fake npcid)
 		[-140] = GetRealZoneText(1182),									-- Auchindoun
 		[-141] = GetRealZoneText(1175),									-- Bloodmaul Slag Mines
@@ -137,16 +134,9 @@ for key, value in pairs({
 		[-146] = GetRealZoneText(1279),									-- The Everbloom
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
 	-- Class Trial
-		[-148] = sformat(SPELLBOOK_AVAILABLE_AT, 50).." Class Trial",	-- Level 50 Class Trial
-		[-149] = sformat(SPELLBOOK_AVAILABLE_AT, 110),					-- Level 110
-		[-150] = sformat(SPELLBOOK_AVAILABLE_AT, 120),					-- Level 120
 		[-153] = CAPACITANCE_WORK_ORDERS,										-- Work Orders
 	-- Class Trial
 		[-154] = sformat(SPELLBOOK_AVAILABLE_AT, 48),						-- Level 48
-		[-155] = sformat(SPELLBOOK_AVAILABLE_AT, 50).." Character Boost",	-- Level 50 Character Boost
-		[-156] = sformat(SPELLBOOK_AVAILABLE_AT, 60).." Character Boost",	-- Level 60 Character Boost
-	-- Class Trial
-		[-160] = sformat(SPELLBOOK_AVAILABLE_AT, 60).." Class Trial",	-- Level 60 Class Trial
 	-- PvP
 		[-216] = PVP_PRESTIGE_RANK_UP_TITLE,									-- Prestige
 	-- War Campaign

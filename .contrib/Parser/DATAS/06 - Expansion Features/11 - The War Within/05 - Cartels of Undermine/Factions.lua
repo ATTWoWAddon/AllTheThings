@@ -56,9 +56,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				}),
 				ach(41086, {	-- Ally of Undermine
 					["minReputation"] = { FACTION_CARTELS_OF_UNDERMINE, 20 },	-- Cartels of Undermine 20
-				}),
-				title(603, {	-- <Name> the Explosive
-					["minReputation"] = { FACTION_CARTELS_OF_UNDERMINE, 20 },	-- Cartels of Undermine 20
+					["g"] = {
+						title(603),	-- <Name> the Explosive
+					},
 				}),
 			}),
 			faction(FACTION_DARKFUSE_SOLUTIONS, {

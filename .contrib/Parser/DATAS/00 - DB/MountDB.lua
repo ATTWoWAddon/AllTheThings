@@ -1961,6 +1961,7 @@ i(229948, 466019);	-- Blackwater Shredder Deluxe Mk 2
 i(229935, 465999);	-- Crimson Armored Growler
 i(0, 1217235);		-- Crimson Shreddertank
 i(229974, 466133);	-- Delver's Gob-Trotter
+i(0, 1221694);		-- Enterprising Shreddertank
 i(232523, 460013);	-- G-99 Breakneck
 i(229956, 466028);	-- Mean Green Flying Machine
 i(229946, 466013);	-- Ocher Delivery Rocket
@@ -1976,8 +1977,8 @@ i(0, 466001);		-- Blackwater Bonecrusher
 i(235344, 1216542);	-- Blazing Royal Fire Hawk
 i(233064, 473188);	-- Bronze Goblin Wave Shredder
 i(0, 466018);		-- Darkfuse Demolisher
+i(229955, 466027);	-- Darkfuse Spy-Eye
 i(235662, 1218069);	-- Emerald Snail
-i(0, 1221694);		-- Enterprising Shreddertank
 i(227362, 459784);	-- Golden Ashes of Al'ar
 i(0, 466017);		-- Innovation Investigator
 i(0, 468068);		-- Junkmaestro's Magnetomech

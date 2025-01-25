@@ -1593,17 +1593,19 @@ model = function(displayID, t)
 end
 -- Converts a given Item/Mod/Bonus combination into the current modItemID format (should roughly match GetGroupItemIDWithModID from Item.Retail.lua)
 modItemId = function(itemID, modID, bonusID)
-	local i, m, b;
-	i = itemID and tonumber(itemID) or 0;
+	itemID = itemID and tonumber(itemID) or 0;
+	-- #if AFTER LEGION
+	local m, b;
 	m = modID and tonumber(modID);
 	b = bonusID and tonumber(bonusID);
 	if m then
-		i = i + (m / 1000);
+		itemID = itemID + (m / 1000);
 	end
 	if b and b ~= 3524 then
-		i = i + (b / 100000000);
+		itemID = itemID + (b / 100000000);
 	end
-	return i;
+	-- #endif
+	return itemID;
 end
 -- Adds the 'autoname' field with proper formatting to set the 'name' of this object automatically in Retail
 -- NOTE: The base Type must support: GlobalVariants.WithAutoName as a Class Variant for the 'autoname' field to be recognized in the addon to generate a 'name'

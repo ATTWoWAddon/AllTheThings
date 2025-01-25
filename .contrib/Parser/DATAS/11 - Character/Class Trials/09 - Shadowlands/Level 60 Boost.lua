@@ -3,12 +3,11 @@
 -------------------------------------------
 root(ROOTS.Character, n(CLASS_TRIAL, {
 	expansion(EXPANSION.SL, bubbleDown({["u"] = REAL_MONEY}, {
-		n(LEVEL_SIXTY, {
+		header(HEADERS.Achievement, 14783, {
 			-- Note: [As of October 13th, 2020 Level 120 Boost became Level 50 Boost]
 			-- Note: [As of November 11th, 2021 SL Character boost increased from 50 to 60. Some of the old 50 items went to the new class trial level 50]
 			["description"] = "These are gained by using a Level 60 Boost of that particular class.  Each class has one default spec.  Shamans and Druids have two specs available and both are needed to 100% each category.",
 			["lvl"] = 60,
-			["icon"] = 236567,
 			["groups"] = {
 				i(185940), -- Pristine Survival Kit
 				cl(DEATHKNIGHT, {

@@ -132,6 +132,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					i(235321),	-- Feather-Spike Girdle
 				},
 			}),
+			n(230947, {	-- Slimesby (has its own criteria, so listing it to allow automation to nest the criteria into it, seems to only drop junk items however)
+				["crs"] = { 230946 },	-- V.V. Goosworth
+				["coord"] = { 36.9, 78.2, UNDERMINE },
+			}),
 			n(230800, {	-- Slugger the Smart
 				["coord"] = { 52.3, 40.8, UNDERMINE },
 				["questID"] = 84895,

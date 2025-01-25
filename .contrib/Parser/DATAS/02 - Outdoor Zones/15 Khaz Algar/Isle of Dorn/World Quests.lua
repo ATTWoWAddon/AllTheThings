@@ -66,7 +66,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(81639, {	-- Honey Thieving Nerubians
 					["coord"] = { 78.9, 37.9, ISLE_OF_DORN },
 					["g"] = {
-						i(211811),	-- Small Glob of Fire Honey (QI!)
+						o(439463, {	-- Spilled Fire honey
+							["coords"] = {
+								{ 75.0, 36.5, ISLE_OF_DORN },
+								{ 75.1, 38.1, ISLE_OF_DORN },
+								{ 75.7, 37.7, ISLE_OF_DORN },
+								{ 76.1, 36.3, ISLE_OF_DORN },
+								{ 76.4, 37.1, ISLE_OF_DORN },
+							},
+							["g"] = { i(211811) },	-- Small Glob of Fire Honey (QI!)
+						}),
 					},
 				}),
 				q(81710, {	-- Mead for the Catalog
