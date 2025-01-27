@@ -30,8 +30,6 @@ for key, value in pairs({
 		[-145] = 1042064,										-- Skyreach
 		[-146] = 1060551,										-- The Everbloom
 		[-147] = 1042065,										-- Upper Blackrock Spire
-	-- Class Trial
-		[-154] = 1391675,						-- Level 48
 	-- PvP
 		[-240] = 2022761,								-- Rated
 		[-242] = 236368,				-- Unrated
@@ -122,8 +120,6 @@ for key, value in pairs({
 		[-145] = GetRealZoneText(1209),									-- Skyreach
 		[-146] = GetRealZoneText(1279),									-- The Everbloom
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
-	-- Class Trial
-		[-154] = sformat(SPELLBOOK_AVAILABLE_AT, 48),						-- Level 48
 	-- PvP
 		[-240] = PVP_TAB_CONQUEST,												-- Rated
 		[-242] = "Unrated",														-- Unrated
