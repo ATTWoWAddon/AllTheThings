@@ -30,9 +30,6 @@ for key, value in pairs({
 		[-145] = 1042064,										-- Skyreach
 		[-146] = 1060551,										-- The Everbloom
 		[-147] = 1042065,										-- Upper Blackrock Spire
-	-- PvP
-		[-302] = 630784,								-- Level Range 80-84
-		[-303] = 630786,							-- Level Range 85-89
 	-- Outposts in Draenor
 		[-357] = 975743,						-- Sparring Arena Outpost (Gorgond)
 		[-358] = 975739,							-- Lumber Mill Outpost (Gorgrond)
@@ -117,9 +114,6 @@ for key, value in pairs({
 		[-145] = GetRealZoneText(1209),									-- Skyreach
 		[-146] = GetRealZoneText(1279),									-- The Everbloom
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
-	-- PvP
-		[-302] = BATTLEFIELD_LEVEL.." 80-84",									-- Level Range 80-84
-		[-303] = BATTLEFIELD_LEVEL.." 85-89",									-- Level Range 85-89
 	-- Outposts in Draenor
 		[-357] = GetSpellName(171866),											-- Sparring Arena Outpost
 		[-358] = GetSpellName(164028),											-- Lumber Mill Outpost

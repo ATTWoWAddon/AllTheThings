@@ -177,7 +177,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 		i(135543, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_9_0_1 } }, {	-- Rival's Crate of Battlefield Goods 80-89 before 9.0; splitting this box into two categories, loot table varies with level
 			["description"] = "Rewarded for winning a random battleground in the level 80-89 range before 9.0.",
 			["groups"] = {
-				n(-302, {	-- Level 80-84 before 9.0
+				n(LEVEL_RANGE_80_84, {
 					["description"] = "Rewarded for winning a random battleground in the level 80-84 range before 9.0.",
 					["groups"] = {
 						i(134616),	-- Inflammatory Cord*
@@ -207,7 +207,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						i(134627),	-- Scorching Pendant*
 					},
 				}),
-				n(-303, {	-- Level 85-89 before 9.0
+				n(LEVEL_RANGE_85_89, {
 					["description"] = "Rewarded for winning a random battleground in the level 85-89 range before 9.0.",
 					["groups"] = {
 						i(134754),	-- Veiled Cuffs*
