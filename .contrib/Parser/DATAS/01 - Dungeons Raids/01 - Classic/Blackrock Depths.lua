@@ -48,10 +48,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(228, {	-- Blackrock Depths
 		-- #if BEFORE MOP
 		["lore"] = "Once the capital city of the Dark Iron dwarves, this volcanic labyrinth now serves as the seat of power for Ragnaros the Firelord. Ragnaros has uncovered the secret to creating life from stone and plans to build an army of unstoppable golems to aid him in conquering the whole of Blackrock Mountain. Obsessed with defeating Nefarian and his draconic minions, Ragnaros will go to any extreme to achieve final victory.",
-		-- #endif
-		-- #if BEFORE MOP
 		["zone-text-areaID"] = 1584,	-- Blackrock Depths
 		-- #endif
+		["description"] = "The best route for a full clear is to enter Shadowforge City first time through the Dark Iron Highway. The Detention Block can be cleared whenever.",
 		["coord"] = { 39.06, 18.12, BLACKROCK_MOUNTAIN_LEVEL3 },
 		["mapID"] = BLACKROCK_DEPTHS,
 		["maps"] = { 243 },
@@ -3134,7 +3133,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["groups"] = {
 						o(160845, {	-- Dark Coffer
-							["description"] = "Contains one or more random world drop BoEs. Usually greens. The named unique items found within are used to turn in Librams.",
+							-- #if BEFORE 4.0.3
+							["sharedDescription"] = "Is used to turn in Librams.",
+							-- #else
+							["sharedDescription"] = "Was used to turn in Librams prior to Cataclysm, is now without any purpose.",
+							-- #endif
 							["cost"] = {{ "i", 11197, 1 }},	-- Dark Keeper Key
 							["groups"] = {
 								i(11752),	-- Black Blood of the Tormented

@@ -3061,6 +3061,8 @@ namespace ATT
                         break;
                     case "a":
                         break;
+                    case "s":
+                        break;
                     default:
                         LogError($"Invalid Data Value: provider-type {pType}", data);
                         break;

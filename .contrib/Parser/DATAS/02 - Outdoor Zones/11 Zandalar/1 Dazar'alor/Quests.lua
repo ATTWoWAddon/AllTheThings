@@ -391,8 +391,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					48897,	-- The Bargain is Struck (Gonk)
 					49663,	-- False Prophecies
 				},
-				["provider"] = { "n", 127815 },	-- Zolani
-				["coord"] = { 49.9, 46.6, DAZARALOR },
+				["provider"] = { "n", 120740 },	-- King Rastakhan
+				["coord"] = { 49.8, 46.4, DAZARALOR },
 				["races"] = HORDE_ONLY,
 			}),
 			q(50240, {	-- A Slip of the Tongue
@@ -451,7 +451,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(47313, {	-- Discreet Discussions
 				["sourceQuests"] = { 47513 },	-- Vol'dun
-				["coord"] = { 41.1, 66.7, HALL_OF_CHRONICLERS },
+				["coord"] = { 40.1, 69.4, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 133050 },	-- Princess Talanji
 			}),
@@ -496,7 +496,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 141555 },	-- Baine Bloodhoof
-				["coord"] = { 41.4, 72.2, HALL_OF_CHRONICLERS },
+				["coord"] = { 41.1, 72.2, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,
 			}),
 			q(56249, {	-- I Am the Trashmaster
@@ -532,7 +532,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					51111,	-- King or Prey
 				},
 				["provider"] = { "n", 141555 },	-- Baine Bloodhoof
-				["coord"] = { 41.4, 72.2, HALL_OF_CHRONICLERS },
+				["coord"] = { 41.1, 72.2, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,
 			}),
 			q(52472, {	-- Make Loh Go
@@ -751,20 +751,20 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(46931, {	-- Speaker of the Horde
 				["sourceQuests"] = { 46930 },	-- Rastakhan
-				["coord"] = { 50.0, 42.7, DAZARALOR },
+				["coord"] = { 49.8, 46.4, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 120740 },	-- King Rastakhan
 			}),
 			q(49488, {	-- Tal'gurub
 				["sourceQuests"] = { 49615 },	-- Trust of a King
-				["coord"] = { 49.9, 46.6, DAZARALOR },
+				["coord"] = { 49.8, 46.4, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 120740 },	-- King Rastakhan
 			}),
 			q(47509, {	-- Terrace of the Chosen
 				["sourceQuests"] = { 49310 },	-- The Prophet's Ploy
 				["provider"] = { "n", 141555 },	-- Baine Bloodhoof
-				["coord"] = { 41.4, 72.2, HALL_OF_CHRONICLERS },
+				["coord"] = { 41.1, 72.2, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,
 			}),
 			q(47432, {	-- The Bargain is Struck (Paku)
@@ -775,8 +775,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(48897, {	-- The Bargain is Struck (Gonk)
 				["sourceQuests"] = { 47439 },	-- Gonk, Lord of the Pack
-				["provider"] = { "n", 127489 },	-- Hexlord Raal
-				["coord"] = { 49.9, 33.5, DAZARALOR },
+				["provider"] = { "n", 127576 },	-- Wardruid Loti
+				["coord"] = { 50, 33.6, DAZARALOR },
 				["races"] = HORDE_ONLY,
 			}),
 			q(47199, {	-- The Blood Gate
@@ -787,7 +787,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 141555 },	-- Baine Bloodhoof
-				["coord"] = { 40.1, 70.7, HALL_OF_CHRONICLERS },
+				["coord"] = { 41.1, 72.2, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,
 			}),
 			q(47257, {	-- The Bones of Xibala (H)
@@ -857,7 +857,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51101, {	-- The Wounded King
 				["sourceQuests"] = { 49310 },	-- The Prophet's Ploy
 				["provider"] = { "n", 141555 },	-- Baine Bloodhoof
-				["coord"] = { 41.4, 72.2, HALL_OF_CHRONICLERS },
+				["coord"] = { 41.1, 72.2, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,
 			}),
 			q(47445, {	-- The Zanchuli Council
@@ -956,7 +956,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(47103, {	-- Journey to Nazmir
-				["coord"] = { 41.1, 66.8, HALL_OF_CHRONICLERS },
+				["coord"] = { 40.1, 69.4, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 133050 },
 				["sourceQuests"] = { 47512 },	-- Nazmir

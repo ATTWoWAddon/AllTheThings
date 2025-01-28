@@ -62,7 +62,12 @@ app.CreateArtifact = app.CreateClass(CLASSNAME, KEY, {
 	variantText = function(t)
 		local info = t.artifactinfo
 		if not info[4] then return UNKNOWN end
-		local text = ColorizeRGB("Variant " .. info[4], info[9], info[10], info[11]);
+		local text
+		if info[9] > 0 and info[10] > 0 and info[11] > 0 then
+			text = ColorizeRGB("Variant " .. info[4], info[9], info[10], info[11]);
+		else
+			text = ColorizeRGB("Variant " .. info[4], 1, 1, 1); -- Change from black to white, so it's readable
+		end
 		t.variantText = text;
 		return text;
 	end,

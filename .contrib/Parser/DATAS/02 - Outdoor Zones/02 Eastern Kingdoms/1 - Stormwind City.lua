@@ -4685,7 +4685,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"pop"},
 						{ "exclude", "headerID", WEAPONS, BACK },
 						{ "exclude", "filterID", NECK_F, FINGER_F, RELICS_F, TRINKET_F },
-						{"postprocess"},
 					},
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
@@ -6005,7 +6004,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "select", "expansionID", EXPANSION.TBC },	{ "pop" },
 						{ "contains", "headerID", SEASON_BRUTAL, SEASON_VENGEFUL, SEASON_MERCILESS, SEASON_GLADIATOR }, { "pop" },
 						{ "where", "headerID", PVP_GLADIATOR }, { "pop" },
-						{ "postprocess" },
 					},
 					-- #ENDIF
 					["races"] = ALLIANCE_ONLY,

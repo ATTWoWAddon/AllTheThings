@@ -113,13 +113,29 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						i(231749, {	-- Undermine Enforcer's Spikes
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
 						}),
+						iensemble(237034, {	-- Smartest in Town's Attire
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 9750}},
+						}),
+						iensemble(237102, {	-- Slickest in Town's Attire
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 9750}},
+						}),
+						iensemble(237112, {	-- Craftiest in Town's Attire
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 9750}},
+						}),
+						iensemble(237122, {	-- Toughest in Town's Attire
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 9750}},
+						}),
 					}, {	-- RENOWN 18 --
 					}, {	-- RENOWN 19 --
 						i(229944, {	-- The Topskimmer Special (MOUNT!)
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 11375}},
 						}),
-						i(232982, {	-- G77C Ultra (MM!)
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 975}},
+						--now missing instead new item?
+						--i(232982, {	-- G77C Ultra (MM!)
+						--	["cost"] = {{"c", RESONANCE_CRYSTALS, 975}},
+						--}),
+						i(232981, {	-- GNZ Airmaster 9000 (MM!) (TODO: didn't added into mount mod)
+							--["cost"] = {{"c", RESONANCE_CRYSTALS, 0}},
 						}),
 					}, {	-- RENOWN 20 --
 					},

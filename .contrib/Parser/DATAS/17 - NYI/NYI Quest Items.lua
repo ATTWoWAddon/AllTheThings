@@ -683,7 +683,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(217311),	-- The Foreman's Second Scroll
 			i(217312),	-- The Foreman's Third Scroll
 			i(216682),	-- The Vizier's Invitation
-			i(225888),	-- Titan Emitter
 			i(212224),	-- Titan Relics
 			i(209857),	-- Unusual Seeds
 			i(219215),	-- Wax Puddle

@@ -11,8 +11,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			exploration(15357),	-- Candleslag Quarry
 			exploration(14804),	-- Chittering Den
 			exploration(15030),	-- Deepforge Golemworks
-			visit_exploration(14821,{coord={65.0,41.2,2214}}),	-- Fetid Grotto
+			visit_exploration(14821,{coord={65.0,41.2,THE_RINGING_DEEPS}}),	-- Fetid Grotto
 			exploration(14796),	-- Gundargaz
+			visit_exploration(15523,{coord={72.5,75.3,THE_RINGING_DEEPS}, timeline={ADDED_11_1_0}}),	-- Gutterside Rocket Station
 			visit_exploration(15528,{coord={75.2,83.0,THE_RINGING_DEEPS}, timeline={ADDED_11_1_0}}),	-- Gutterville
 			exploration(14797),	-- Ironhaul Station
 			exploration(14813),	-- Lightless Chasm
@@ -20,10 +21,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			exploration(14801),	-- Nibelgaz Mine
 			exploration(14816),	-- Obsidian Hollow
 			exploration(14812),	-- Opportunity Point
-			visit_exploration(14822,{coord={53.7,44.1,2214}}),	-- Pillarstone Spire
+			visit_exploration(14822,{coord={53.7,44.1,THE_RINGING_DEEPS}}),	-- Pillarstone Spire
 			visit_exploration(15526,{coord={72.1,96.6,THE_RINGING_DEEPS}, timeline={ADDED_11_1_0}}),	-- Sanity's Rest
 			exploration(15031),	-- Shadowvein Extraction Site
-			visit_exploration(14820,{coord={60.5,45.6,2214}}),	-- Shadowvein Point
+			visit_exploration(14820,{coord={60.5,45.6,THE_RINGING_DEEPS}}),	-- Shadowvein Point
 			exploration(15345),	-- Shimmermist Falls
 			exploration(15104),	-- Taelloch
 			exploration(14815),	-- Taelloch Mine

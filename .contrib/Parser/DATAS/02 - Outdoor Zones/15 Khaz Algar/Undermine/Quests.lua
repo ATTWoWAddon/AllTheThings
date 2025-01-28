@@ -1319,12 +1319,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					--TODO: re-do in future build - bugged
 				},
 			}),
-			--q(XXXX, {	-- XXXX
-			--	["sourceQuests"] = { 84953 },	-- HQT: Venture Co. weekly contract
-			--	["provider"] = { "n", 236035 },	-- Scrapminer Krazzik
-			--	["coord"] = { 56.7, 79.1, UNDERMINE },
-			--	["isWeekly"] = true,
-			--}),
+			q(86431, {	-- Scrapchewer
+				["sourceQuests"] = { 84953 },	-- HQT: Venture Co. weekly contract
+				["provider"] = { "n", 236035 },	-- Scrapminer Krazzik
+				["coord"] = { 56.7, 79.0, UNDERMINE },
+				["isWeekly"] = true,
+				["g"] = {
+					i(234970),	-- Partially-Drained Battery (QI!)
+					o(508727),	-- Partially-Drained Battery
+				},
+			}),
 			-- Unsorted, referenced in achievements, needed to parse (please sort these!)
 			-- Alex TODO: all 3 NYI in-game, not returning name for quests
 			q(87297),	-- ???
@@ -1375,9 +1379,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 				q(86410),	-- Slime Wranglin'
 				q(86412),	-- Fancy Pants
 				q(86418),	-- Fresh Towel?
+				q(87569),	-- Legally Mandated Break
+				q(87588),	-- Bash that Trash
 				-- Surge Pricing event rewards (TODO: move to better place as all quests above)
 				--i(236757),	-- Generous Tip Chest
 				--i(236758),	-- Extravagant Tip Chest
+				-- Job Streak give reward after first 10 job in row per character (was itemID 233264 for me), no hqt
 				-- Special Assigment Unlock trackers
 				q(85489, {["repeatable"]=true}),	-- Special Assignment: Capstone 1 - Unlock (for Special Assignment: Boom! Headshot! (questID 85487))
 				q(85490, {["repeatable"]=true}),	-- Special Assignment: Capstone 2 - Unlock (for Special Assignment: Security Detail (questID 85488))

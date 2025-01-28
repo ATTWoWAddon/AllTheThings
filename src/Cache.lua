@@ -94,6 +94,9 @@ end;
 local cacheQuestID = function(group, questID)
 	CacheField(group, "questID", questID);
 end
+local cacheSpellID = function(group, spellID)
+	CacheField(group, "spellID", spellID);
+end
 if app.Debugging and app.Version == "[Git]" then
 	local L = app.L;
 	local referenceCounter = {};
@@ -163,6 +166,7 @@ end
 local providerTypeConverters = {
 	["n"] = cacheCreatureID,
 	["o"] = cacheObjectID,
+	["s"] = cacheSpellID,
 	["c"] = function(group, providerID)
 		CacheField(group, "currencyIDAsCost", providerID);
 		--CacheField(group, "currencyID", providerID);

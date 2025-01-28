@@ -64,7 +64,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				n(234362, {	-- Kaja'Cola Dispenser
-					["coord"] = { 67.3, 28.5, UNDERMINE },	-- TODO: more coords? placed near every active scrap pile, not sure if same npcID
+					["coord"] = { 67.3, 28.5, UNDERMINE },
 					["g"] = {
 						i(233444),	-- Kaja'Cola X-Treme [reqire renown 7]
 						i(233445),	-- Kaja'Cola X-Treme Mega-Can [reqire renown 16]
@@ -94,7 +94,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(87279),	-- 516164 @ 69.7, 76.5, UNDERMINE (Emerald Hills Golf Course)
 			q(87281),	-- 516166 @ 67.4, 29.3, UNDERMINE (Blackwater Marina)
 			--q(),	-- objectID @ x, y, UNDERMINE (The Heaps)
-			--q(),	-- objectID @ x, y, UNDERMINE (Hovel Hill (South))
+			q(87271),	-- objectID @ x, y, UNDERMINE (Hovel Hill (South))
 		}),
 	}),
 })));

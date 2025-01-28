@@ -23,6 +23,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["questID"] = 50582,
 				["coord"] = { 51.5, 26.7, ZULDAZAR },
 			}),
+			o(316863, {	-- Lost Zandalari Relic
+				["coord"] = { 46.6, 29.9, DAZARALOR },
+				["g"] = { i(166506) },	-- Clump of Broken Loa Idols
+			}),
 			o(276735, {	-- Offerings of the Chosen
 				["questID"] = 48938,
 				["coord"] = { 38.3, 7.2, DAZARALOR },
@@ -65,7 +69,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				}),
 				o(278694, {	-- Treasure Chest
 					["questID"] = 50724,
-					["coord"] = { 80.1, 13.1, ZULDAZAR },
+					["coord"] = { 79.5, 15.7, ZULDAZAR },
 				}),
 				o(278793, {	-- Treasure Chest
 					["questID"] = 50715,

@@ -395,81 +395,8 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 					}),
 				},
 			})),
-			ach(10598, {	-- Fishing 'Round the Isles
-				crit(29956, {		-- Huge Mossgill Perch
-					["_quests"] = { 41612, 41613, 41270 },
-				}),
-				crit(29931, {		-- Work Order: Cursed Queenfish
-					["_quests"] = { 41267 },
-				}),
-				crit(31285, {		-- Lively Runescale Koi
-					["_quests"] = { 41279, 41605, 41604 },
-				}),
-				crit(31274, {		-- Lively Cursed Queenfish
-					["_quests"] = { 41598, 41599, 41264 },
-				}),
-				crit(29929, {		-- Queen Queenfish
-					["_quests"] = { 41268 },
-				}),
-				crit(29932, {		-- Wild Northern Barracuda
-					["_quests"] = { 41252 },
-				}),
-				crit(29945, {		-- Huge Cursed Queenfish
-					["_quests"] = { 41611, 41265, 41610 },
-				}),
-				crit(29953, {		-- Huge Runescale Koi
-					["_quests"] = { 41280, 41616, 41617 },
-				}),
-				crit(31279, {		-- Lively Highmountain Salmon
-					["_quests"] = { 41596, 41244, 41597 },
-				}),
-				crit(31281, {		-- Lively Stormrays
-					["_quests"] = { 41602, 41274, 41603 },
-				}),
-				crit(29949, {		-- Huge Highmountain Salmon
-					["_quests"] = { 41609, 41243 },
-				}),
-				crit(29942, {		-- Buoy Fishing
-					["_quests"] = { 41273 },
-				}),
-				crit(29930, {		-- Raft Fishing
-					["_quests"] = { 41266 },
-				}),
-				crit(29950, {		-- Huge Stormrays
-					["_quests"] = { 41614, 41275, 41615 },
-				}),
-				crit(29935, {		-- Slippery Stormrays
-					["_quests"] = { 41278 },
-				}),
-				crit(29941, {		-- Cave Fishing
-					["_quests"] = { 41271 },	-- Into the Whirlpool
-				}),
-				crit(29937, {		-- Work Order: Stormrays
-					["_quests"] = { 41277 },
-				}),
-				crit(29934, {		-- Work Order: Highmountain Salmon
-					["_quests"] = { 41240 },
-				}),
-				crit(31287, {		-- Lively Mossgill Perch
-					["_quests"] = { 41601, 41600, 41269 },
-				}),
-				crit(29933, {		-- Migrating Highmountain Salmon
-					["_quests"] = { 41253 },
-				}),
-				crit(29936, {		-- Rocket Boot Fishing
-					["_quests"] = { 41276 },
-				}),
-				crit(29943, {		-- Work Order: Mossgill Perch
-					["_quests"] = { 41272 },
-				}),
-				crit(29940, {		-- Work Order: Runescale Koi
-					["_quests"] = { 41282 },
-				}),
-				crit(29938, {		-- The Angler Mangler
-					["_quests"] = { 41283 },
-				}),
-			}),
-			ach(10597),		-- Legion Aquaculture
+			ach(10598),	-- Fishing 'Round the Isles (automated)
+			ach(10597),	-- Legion Aquaculture
 		}),
 		filter(MISC, {
 			i(133715, {	-- Ancient Vrykul Ring

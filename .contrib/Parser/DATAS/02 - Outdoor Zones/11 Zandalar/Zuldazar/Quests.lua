@@ -382,7 +382,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					49491,	-- Fuel for the Voodoo
 				},
 				["provider"] = { "n", 129907 },	-- Zul the Prophet
-				["coord"] = { 42.9, 28.2, ZULDAZAR },
+				["coord"] = { 62.9, 28.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(155300),	-- Jambani Deflector
@@ -601,7 +601,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					49144,	-- Wrath of the Zandalari
 				},
 				["provider"] = { "n", 127837 },	-- Kaza'jin the Wavebinder
-				["coord"] = { 48.1, 60.4, ZULDAZAR },
+				["coord"] = { 49.6, 64.5, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 			}),
 			q(49495, {	-- Enforcing Fate
@@ -1332,9 +1332,18 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 47.1, 60.5, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(153526),	-- Grimoire of the Other Side (QI!)
-					i(153525),	-- Reclaimed Bijous (QI!)
-					i(153527),	-- Venerated Remains (QI!)
+					o(277886, {	-- Grimoire of the Other Side 
+						["coord"] = { 46.8, 61.9, ZULDAZAR },
+						["g"] = { i(153526) },	-- Grimoire of the Other Side (QI!)
+					}),
+					o(277444, {	-- Reclaimed Bijous
+						["coord"] = { 45.6, 60.4, ZULDAZAR },
+						["g"] = { i(153525) },	-- Reclaimed Bijous (QI!)
+					}),
+					o(277447, {	-- Venerated Remains
+						["coord"] = { 45.8, 62.4, ZULDAZAR },
+						["g"] = { i(153527) },	-- Venerated Remains (QI!)
+					}),
 				},
 			}),
 			q(51286, {	-- Stop the Evacuation

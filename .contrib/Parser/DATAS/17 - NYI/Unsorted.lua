@@ -423,9 +423,6 @@ root(ROOTS.Unsorted, {
 				i(232979),	-- Jaks Jabberjaw (MM!)
 				i(232978),	-- Louie Firehands (MM!)
 
-				-- Engines
-				i(232981),	-- GNZ Airmaster 9000 (MM!)
-
 				-- Gob-Trotter
 				i(233196),	-- Delver's Gob-Trotter Schematic: Gold (MM!)
 				-- Dirigible
@@ -444,17 +441,14 @@ root(ROOTS.Unsorted, {
 			filter(MISC, {	-- More known
 				-- Chestos
 				i(229422),	-- Undermine Equipment Chest
-				i(234729),	-- Cache of Undermine Treasures
 				i(234731),	-- Cache of Undermine Treasures
 				i(235151),	-- Distinguished Actor's Chest
-				i(235610),	-- Seasoned Adventurer's Cache
 				i(236689),	-- Finder's Fee
 				i(236756),	-- Socially Expected Tip Chest
 				i(236757),	-- Generous Tip Chest
 				i(236758),	-- Extravagant Tip Chest
 				i(236763),	-- Finder's Fee
 				i(236764),	-- Finder's Fee
-				i(236765),	-- Finder's Fee
 				-- Crests
 				i(231264),	-- Glorious Cluster of Gilded Undermine Crests
 				i(231270),	-- Pack of Runed Undermine Crests
@@ -536,7 +530,6 @@ root(ROOTS.Unsorted, {
 				i(233246),	-- Gunk-Covered Thingy
 				i(234197),	-- Gilded Screwdriver
 				i(234421),	-- Web Bomb
-				i(234970),	-- Partially-Drained Battery
 				i(234616),	-- Supreme Mangoro Madness
 				i(234617),	-- Dulux Bluesberry Blast
 				i(234618),	-- Omega Oyster Outbreak
@@ -550,16 +543,9 @@ root(ROOTS.Unsorted, {
 				i(235713),	-- Weird Sand
 				i(235895),	-- Bloodstone
 				i(235910),	-- Mint Condition Gallagio Anniversary Coin
-				i(236633),	-- Low-Town Fizz
-				i(236646),	-- Gallagio Especial
-				i(236647),	-- Coin and Kaja
-				i(236648),	-- Liquid Nitro
-				i(236649),	-- Few Screws Loose
-				i(236650),	-- Paincracker
 				i(236651),	-- Vince's Old Left Shoe
 				i(236652),	-- Re-Down-Upcycled Salvage
 				i(236680),	-- Imitation Crab Meat
-				i(236681),	-- Liquid Gold
 			}),
 			filter(MOUNTS, {
 				i(233064),	-- Bronze Goblin Wave Shredder (MOUNT!)
@@ -745,7 +731,6 @@ root(ROOTS.Unsorted, {
 				i(230212),	-- Emergency Teleporter
 				i(230792),	-- X-Plo-Dar 64k
 				i(231021),	-- Imported Brews
-				i(231022),	-- Bits o' Scrap
 				i(231369),	-- Redberry
 				i(231894),	-- Useful Trash
 				i(231900),	-- Sample Potion
@@ -776,7 +761,6 @@ root(ROOTS.Unsorted, {
 				i(235310),	-- Flashy Patchwork Trousers
 				i(235312),	-- Snooty's Aviator Bindings
 				i(235313),	-- Shockproof Helm
-				i(235314),	-- Knightrider's Steelfists
 				i(235315),	-- Rocketstep Boots
 				i(235323),	-- Blastshell Bracers
 				i(235324),	-- Scavenger's Lost Bind
@@ -1179,18 +1163,6 @@ root(ROOTS.Unsorted, {
 			i(234384),	-- Ensemble: Chains of the Stygian Sea
 			i(234385),	-- Ensemble: Aegis of Hidden Stars
 			i(234733),	-- Bloodwake Ritual Bowl
-			i(234743),	-- Steamwheedle's Trove
-			i(234744),	-- Blackwater's Trove
-			i(234745),	-- Bilgewater's Trove
-			i(234746),	-- Venture Co.'s Trove
-			i(235258),	-- Bilgewater's Trove
-			i(235259),	-- Bilgewater's Trove
-			i(235260),	-- Blackwater's Trove
-			i(235261),	-- Blackwater's Trove
-			i(235262),	-- Steamwheedle's Trove
-			i(235263),	-- Steamwheedle's Trove
-			i(235264),	-- Venture Co.'s Trove
-			i(235265),	-- Venture Co.'s Trove
 			i(236960),	-- Prototype A.S.M.R.
 			i(237014),	-- Severed Threads Commendation
 			i(237025),	-- Smartest in Town's Visor
@@ -1201,7 +1173,6 @@ root(ROOTS.Unsorted, {
 			i(237031),	-- Smartest in Town's Sandals
 			i(237032),	-- Smartest in Town's Bangles
 			i(237033),	-- Smartest in Town's Gloves
-			i(237034),	-- Smartest in Town's Attire
 			i(237035),	-- Smartest in Town's Cape
 			i(237036),	-- Golden Valorstone
 			i(237094),	-- Slickest in Town's Hood
@@ -1212,7 +1183,6 @@ root(ROOTS.Unsorted, {
 			i(237099),	-- Slickest in Town's Armlets
 			i(237100),	-- Slickest in Town's Grips
 			i(237101),	-- Slickest in Town's Drape
-			i(237102),	-- Slickest in Town's Attire
 			i(237103),	-- Craftiest in Town's Helmet
 			i(237104),	-- Craftiest in Town's Rocketguards
 			i(237105),	-- Craftiest in Town's Greatbelt
@@ -1222,7 +1192,6 @@ root(ROOTS.Unsorted, {
 			i(237109),	-- Craftiest in Town's Gauntlets
 			i(237110),	-- Craftiest in Town's Shroud
 			i(237111),	-- Craftiest in Town's Mail
-			i(237112),	-- Craftiest in Town's Attire
 			i(237113),	-- Toughest in Town's Spiked Helm
 			i(237114),	-- Toughest in Town's Pauldrons
 			i(237115),	-- Toughest in Town's Girdle
@@ -1232,7 +1201,6 @@ root(ROOTS.Unsorted, {
 			i(237119),	-- Toughest in Town's Graspers
 			i(237120),	-- Toughest in Town's Cloak
 			i(237121),	-- Toughest in Town's Cuirass
-			i(237122),	-- Toughest in Town's Attire
 			i(237123),	-- Descaled Capelet
 			i(237124),	-- Power-Washed Drape
 			i(237125),	-- Upcycled Cloak
@@ -1269,24 +1237,7 @@ root(ROOTS.Unsorted, {
 			i(237268),	-- How to Get Out of Parking Tickets More Than Once
 			i(237276),	-- Refurbished Rocket Glider
 			i(237305),	-- Chalky Shungite
-			i(237306),	-- NEW Goblin Hot Potato
-			i(237313),	-- Totally Legit Samophlange
-			i(237314),	-- Fighting Guide: Unarmed Combat
-			i(237315),	-- Fighting Guide: Armed Combat
-			i(237316),	-- Injury Guide: Stunned
-			i(237317),	-- Injury Guide: Play Dead
-			i(237318),	-- Injury Guide: Knockdown
-			i(237319),	-- Fighting Guide: Magical Combat
-			i(237320),	-- Fighting Guide: Grappling Combat
-			i(237321),	-- Scoring Guide: Start Counter
-			i(237322),	-- Scoring Guide: Remove Point
-			i(237323),	-- Scoring Guide: Add Point
-			i(237330),	-- Disposable Hamburger
-			i(237331),	-- Disposable Hotdog
-			i(237332),	-- Single-Use Grill
 			i(237333),	-- Undermine Crate
-			i(237334),	-- Half-Eaten Takeout
-			i(237335),	-- Collectible Pineappletini Mug
 			i(237345),	-- Limited Edition Rocket Bobber
 			i(237346),	-- Artisan Beverage Goblet Bobber
 			i(237347),	-- Organically-Sourced Wellington Bobber
@@ -1563,7 +1514,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MOUNTS, {
 				i(232926),	-- Love Witch's Sweeper (MOUNT!) [Love in the Air]
-				i(232901),	-- Lunar Launcher (MOUNT!) [Love in the Air]
 				i(233023),	-- Silvermoon Sweeper (MOUNT!)
 				i(233019),	-- Sky Witch's Sweeper (MOUNT!) [Love in the Air]
 				i(233020),	-- Twilight Witch's Sweeper (MOUNT!) [Love in the Air]

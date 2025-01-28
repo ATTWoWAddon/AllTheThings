@@ -700,13 +700,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 					i(219206),	-- Hand of Piety
 					i(219204),	-- Imperial Flarebolt
 					i(219202),	-- Lamplighter's Mercy
+					i(219208),	-- Pyretic Star
 					i(219199),	-- Radiant Steelglaives
+					i(218125),	-- Reactive Webbed Escutcheon
 					i(219200),	-- Unscathed Rampart
 					i(219201),	-- Vessel of Sacred Flame
 					i(219209),	-- Worshipper's Poniard
 					i(219205),	-- Shooting Starquebus
 					i(219210),	-- Sanctifier's Startierce
-					i(219208),	-- Pyretic Star
 				}),
 			},
 		})),
@@ -2093,6 +2094,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			}),
 			n(DELVE_COMPLETION, {
 				n(TREASURES, {
+					filter(BATTLE_PETS, {
+						i(225337),	-- Violet Sporbit (PET!)
+					}),
 					filter(COSMETIC, {
 						i(225067),	-- Shadowlit Haversack
 						i(225065),	-- Torchbearer's Haversack
@@ -2321,6 +2325,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 				n(TREASURES, {
 					filter(BATTLE_PETS, {
 						i(222971),	-- Bouncer (PET!)
+						i(225337),	-- Violet Sporbit (PET!)
 					}),
 					filter(COSMETIC, {
 						i(212172),	-- Ajul'Nerub Raptorial Spine
@@ -2638,6 +2643,19 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 					i(212171),	-- Zekvir's Raptorial Spine
 				}),
 			})),
+			n(DELVE_COMPLETION, {
+				n(TREASURES, {
+					filter(BATTLE_PETS, {
+						i(222971),	-- Bouncer (PET!)
+					}),
+					filter(COSMETIC, {
+						i(212163),	-- Soporific Shroom Cap
+					}),
+					n(WEAPONS, {
+						i(218126),	-- Befouler's Syringe
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(83752, {	-- Threats of Zekvir
 					["provider"] = { "n", 227492 },	-- Brann Bronzebeard

@@ -5,6 +5,7 @@
 -- ex. FirstCraft(QUESTID, RECIPEID);	-- RECIPE_NAME
 local function FirstCraft(questID, recipeID, added, removed)
 	local t = hqt(questID, name(HEADERS.Spell, recipeID))
+	t.provider = { "s", recipeID };
 	if added then
 		t.timeline = { added };
 	end
@@ -18,6 +19,7 @@ local function FirstCraft(questID, recipeID, added, removed)
 end
 local function FirstSkin(questID, creatureID, added, group)
 	local t = hqt(questID, name(HEADERS.NPC, creatureID))
+	t.provider = { "n", creatureID };
 	t.isWeekly = true;
 	if added then
 		t.timeline = { added };

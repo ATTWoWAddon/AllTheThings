@@ -1,12 +1,40 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+ALCAZ_ISLAND = createHeader({
+	readable = "Alcaz Island",
+	icon = 132996,
+	text = {
+		en = "Alcaz Island",
+	},
+	description = {
+		en = "Return to Alcaz Island to get to get to the bottom of Dr. Weavil's insidious plans, and perhaps you will take home a nice souvenir.",
+	},
+});
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(DUSTWALLOW_MARSH, {
 		["lore"] = "A hot, fetid swampland, underground springs feed Dustwallow Marsh and keep it eternally wet and muddy. Mosquitoes buzz in the air. Trees dip fronds into the waters. The climate is home to a variety of predators, including alligators and murlocs.\n\nBlack dragons dwell in the southern end of the swamp, and the creatures lair in such profusion that the area garners the name \"Wyrmbog.\" Dustwallow Marsh abuts the ocean on its east side, and the mixing of the waters makes a wide swath brackish. Off the coast is a rocky island, on which is perched the Alliance stronghold-city of Theramore.",
 		["icon"] = 236758,
 		["maps"] = { 416 },	-- Dustwallow Marsh
 		["groups"] = {
+			n(ALCAZ_ISLAND, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {
+				["lvl"] = lvlsquish(110, 45, 45),
+				["groups"] = {
+					n(15552, {	-- Dr. Weavil
+						["coord"] = { 77.6, 17.2, DUSTWALLOW_MARSH },
+						["groups"] = {
+							i(142265),	-- Big Red Raygun (TOY!)
+							i(142262),	-- Electrified Key
+						},
+					}),
+					n(ZONE_DROPS, {
+						i(142264),	-- Drudge Fluid
+						i(142262),	-- Electrified Key
+						i(142266),	-- Handful of Gizmos
+						i(142263),	-- Machine Fluid
+					}),
+				},
+			})),
 			n(ACHIEVEMENTS, {
 				ach(4929, {	-- Dustwallow Marsh Quests (Alliance)
 					["timeline"] = { ADDED_4_0_3 },
@@ -3533,19 +3561,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				-- #if AFTER 7.1.0.22731
-				n(15552, {	-- Dr. Weavil
-					["coord"] = { 77.6, 17.2, DUSTWALLOW_MARSH },
-					["groups"] = {
-						i(142265, {	-- Big Red Raygun (TOY!)
-							["timeline"] = { ADDED_7_1_0 },
-						}),
-						i(142262, {	-- Electrified Key
-							["timeline"] = { ADDED_7_1_0 },
-						}),
-					},
-				}),
-				-- #endif
 				n(14231, {	-- Drogoth the Roamer
 					-- #if AFTER CATA
 					["coords"] = {

@@ -153,17 +153,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 37.0, 41.8, BASTION },
 				["questID"] = 61000,
 				["g"] = {
-					i(183606),	-- Bulwark of Echoing Courage
-					i(183608),	-- Evernote Vesper
-					i(183614),	-- Gavel of Harmonious Wisdom
-					i(183613),	-- Glinting Daybreak Dagger
-					i(183611),	-- Humble Ophelia's Greatblade
-					i(183612),	-- Loyal Champion's Hammer
-					i(183604),	-- Piercing Timbre Crossbow
-					i(183609),	-- Re-Powered Golliath Fists
-					i(183607),	-- Uncertain Aspirant's Spear
-					i(183610),	-- Warrior Poet's Poniard
-					i(183605),	-- Devourer Wrought Warglaive
+					o(354649, {	-- Relic Hoard
+						i(183606),	-- Bulwark of Echoing Courage
+						i(183608),	-- Evernote Vesper
+						i(183614),	-- Gavel of Harmonious Wisdom
+						i(183613),	-- Glinting Daybreak Dagger
+						i(183611),	-- Humble Ophelia's Greatblade
+						i(183612),	-- Loyal Champion's Hammer
+						i(183604),	-- Piercing Timbre Crossbow
+						i(183609),	-- Re-Powered Golliath Fists
+						i(183607),	-- Uncertain Aspirant's Spear
+						i(183610),	-- Warrior Poet's Poniard
+						i(183605),	-- Devourer Wrought Warglaive
+					}),
 				},
 			}),
 			n(163460, {	-- Dionae

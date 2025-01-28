@@ -61,6 +61,7 @@ src\Cache.lua
 # Helper Modules
 src\Modules\RetrievingData.lua
 src\Modules\Collection.lua
+src\Modules\CustomCollect.lua
 src\Modules\FactionData.lua
 src\Modules\Color.lua
 src\Modules\Costs.lua

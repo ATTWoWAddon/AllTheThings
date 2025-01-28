@@ -21,7 +21,6 @@ local QUANTUM_GROUP = sharedData({
 		filter(CLOTH, {
 			hqt(77629, {	-- when you learn everything from Quantum Headpiece (Cloth)
 				["name"] = "Quantum Headpiece (Cloth) completed.",
-				["collectible"] = false,
 			}),
 			ig(114263),	-- Firefly Hood						(NYI)
 			ig(114387),	-- Hood of Hooded Nighmates			(NYI)
@@ -38,7 +37,6 @@ local QUANTUM_GROUP = sharedData({
 		filter(LEATHER, {
 			hqt(77628, {	-- when you learn everything from Quantum Headpiece (Leather)
 				["name"] = "Quantum Headpiece (Leather) completed.",
-				["collectible"] = false,
 			}),
 			ig(114264),	-- Bloodthorn Hood					(NYI)
 			ig(114388),	-- Hood of Falling Leaves			(NYI)
@@ -53,7 +51,6 @@ local QUANTUM_GROUP = sharedData({
 		filter(MAIL, {
 			hqt(77627, {	-- when you learn everything from Quantum Headpiece (Mail)
 				["name"] = "Quantum Headpiece (Mail) completed.",
-				["collectible"] = false,
 			}),
 			ig(114389),	-- Element-Binder Helm				(NYI)
 			ig(114265),	-- Leafscale Helm					(NYI)
@@ -65,7 +62,6 @@ local QUANTUM_GROUP = sharedData({
 		filter(PLATE, {
 			hqt(77626, {	-- when you learn everything from Quantum Headpiece (Plate)
 				["name"] = "Quantum Headpiece (Plate) completed.",
-				["collectible"] = false,
 			}),
 			ig(121506),	-- Dreadsworn Crown					(NYI)
 			ig(114390),	-- Greathelm of Grievous Storms		(NYI)
@@ -87,7 +83,6 @@ local QUANTUM_GROUP = sharedData({
 		filter(CLOTH, {
 			hqt(77641, {	-- when you learn everything from Quantum Shoulders (Cloth)
 				["name"] = "Quantum Shoulders (Cloth) completed.",
-				["collectible"] = false,
 			}),
 			ig(114271),	-- Firefly Mantle					(NYI)
 			ig(3958),	-- Mesh Mantle						(NYI)
@@ -100,7 +95,6 @@ local QUANTUM_GROUP = sharedData({
 		filter(LEATHER, {
 			hqt(77640, {	-- when you learn everything from Quantum Shoulders (Leather)
 				["name"] = "Quantum Shoulders (Leather) completed.",
-				["collectible"] = false,
 			}),
 			ig(114272),	-- Bloodthorn Spaulders				(NYI)
 			ig(3983),	-- Strapped Shoulderpads			(NYI)
@@ -113,7 +107,6 @@ local QUANTUM_GROUP = sharedData({
 		filter(MAIL, {
 			hqt(77639, {	-- when you learn everything from Quantum Shoulders (Mail)
 				["name"] = "Quantum Shoulders (Mail) completed.",
-				["collectible"] = false,
 			}),
 			ig(18320),	-- Demonheart Spaulders				(NYI)
 			ig(114273),	-- Leafscale Spaulders				(NYI)
@@ -127,7 +120,6 @@ local QUANTUM_GROUP = sharedData({
 		filter(PLATE, {
 			hqt(77638 , {	-- when you learn everything from Quantum Shoulders (Plate)
 				["name"] = "Quantum Shoulders (Plate) completed.",
-				["collectible"] = false,
 			}),
 			ig(108083),	-- Hardened Draenic Steel Shoulders	(NYI)
 			ig(108167),	-- Peerless Draenic Steel Shoulders	(NYI)
@@ -148,7 +140,6 @@ local QUANTUM_GROUP = sharedData({
 		filter(CLOTH, {
 			hqt(77637, {	-- when you learn everything from Quantum Chestpiece (Cloth)
 				["name"] = "Quantum Chestpiece (Cloth) completed.",
-				["collectible"] = false,
 			}),
 			ig(114254),	-- Firefly Robes					(NYI)
 			ig(114317),	-- Mantisweave Robes				(NYI)
@@ -164,7 +155,6 @@ local QUANTUM_GROUP = sharedData({
 		filter(LEATHER, {
 			hqt(77636, {	-- when you learn everything from Quantum Chestpiece (Leather)
 				["name"] = "Quantum Chestpiece (Leather) completed.",
-				["collectible"] = false,
 			}),
 			ig(114251),	-- Bloodthorn Chestguard			(NYI)
 			ig(189917),	-- Constellation Master's Smock		(NYI)
@@ -181,7 +171,6 @@ local QUANTUM_GROUP = sharedData({
 		filter(MAIL, {
 			hqt(77635, {	-- when you learn everything from Quantum Chestpiece (Mail)
 				["name"] = "Quantum Chestpiece (Mail) completed.",
-				["collectible"] = false,
 			}),
 			ig(114315),	-- Chestguard of Meditative Focus	(NYI)
 			ig(18304),	-- Greenroot Mail					(NYI Unique)
@@ -198,7 +187,6 @@ local QUANTUM_GROUP = sharedData({
 		filter(PLATE, {
 			hqt(77634, {	-- when you learn everything from Quantum Chestpiece (Plate)
 				["name"] = "Quantum Chestpiece (Plate) completed.",
-				["collectible"] = false,
 			}),
 			ig(108078),	-- Hardened Draenic Steel Chestplate	(NYI)
 			ig(108162),	-- Peerless Draenic Steel Chestplate	(NYI)
@@ -220,7 +208,6 @@ local QUANTUM_GROUP = sharedData({
 		filter(CLOTH, {
 			hqt(77633 , {	-- when you learn everything from Quantum Gloves (Cloth)
 				["name"] = "Quantum Gloves (Cloth) completed.",
-				["collectible"] = false,
 			}),
 			ig(114259),	-- Firefly Gloves					(NYI)
 			ig(114383),	-- Gloves of Hooded Nightmares		(NYI)
@@ -240,7 +227,6 @@ local QUANTUM_GROUP = sharedData({
 		filter(LEATHER, {
 			hqt(77632 , {	-- when you learn everything from Quantum Gloves (Leather)
 				["name"] = "Quantum Gloves (Leather) completed.",
-				["collectible"] = false,
 			}),
 			ig(114260),	-- Bloodthorn Gauntlets				(NYI)
 			i(113220, {	-- Crimson Gauntlets of Death		(NYI)
@@ -260,7 +246,6 @@ local QUANTUM_GROUP = sharedData({
 		filter(MAIL, {
 			hqt(77631 , {	-- when you learn everything from Quantum Gloves (Mail)
 				["name"] = "Quantum Gloves (Mail) completed.",
-				["collectible"] = false,
 			}),
 			ig(114385),	-- Element-Binder Gauntlets			(NYI)
 			i(113222, {	-- Keengrip Arrowpullers			(NYI)
@@ -281,7 +266,6 @@ local QUANTUM_GROUP = sharedData({
 		filter(PLATE, {
 			hqt(77630, {	-- when you learn everything from Quantum Gloves (Plate)
 				["name"] = "Quantum Gloves (Plate) completed.",
-				["collectible"] = false,
 			}),
 			i(113228, {	-- Gauntlets of Discarded Time		(NYI)
 				["modID"] = 4,
@@ -312,7 +296,6 @@ local QUANTUM_GROUP = sharedData({
 		filter(CLOTH, {
 			hqt(77625, {	-- when you learn everything from Quantum Legs (Cloth)
 				["name"] = "Quantum Legs (Cloth) completed.",
-				["collectible"] = false,
 			}),
 			ig(114267),	-- Firefly Trousers					(NYI)
 			ig(3957),	-- Mesh Pants						(NYI)(Unique)
@@ -328,7 +311,6 @@ local QUANTUM_GROUP = sharedData({
 		filter(LEATHER, {
 			hqt(77624, {	-- when you learn everything from Quantum Legs (Leather)
 				["name"] = "Quantum Legs (Leather) completed.",
-				["collectible"] = false,
 			}),
 			ig(114268),	-- Bloodthorn Legguards				(NYI)
 			ig(114392),	-- Legguards of Falling Leaves		(NYI)
@@ -341,7 +323,6 @@ local QUANTUM_GROUP = sharedData({
 		filter(MAIL, {
 			hqt(77623, {	-- when you learn everything from Quantum Legs (Mail)
 				["name"] = "Quantum Legs (Mail) completed.",
-				["collectible"] = false,
 			}),
 			ig(114393),	-- Element-Binder Legguards			(NYI)
 			ig(189943),	-- Greaves of Cosmic Designs		(NYI)
@@ -359,7 +340,6 @@ local QUANTUM_GROUP = sharedData({
 		filter(PLATE, {
 			hqt(77622, {	-- when you learn everything from Quantum Legs (Plate)
 				["name"] = "Quantum Legs (Plate) completed.",
-				["collectible"] = false,
 			}),
 			ig(121510),	-- Dreadsworn Legguards				(NYI)
 			i(147514, {	-- Felguard Destroyer's Legplates	(NYI)
@@ -383,7 +363,6 @@ local QUANTUM_GROUP = sharedData({
 	i(208111, {	-- Quantum Axe			(One-Handed)
 		hqt(77597, {	-- when you learn everything from Quantum Axe (One-Handed)
 			["name"] = "Quantum Axe (One-Handed) completed.",
-			["collectible"] = false,
 		}),
 		ig(134755),	-- Covert Hatchet						(NYI)
 		ig(5255),	-- Quilboar Tomahawk					(NYI)
@@ -402,7 +381,6 @@ local QUANTUM_GROUP = sharedData({
 	i(208117, {	-- Quantum Bow
 		hqt(77603, {	-- when you learn everything from Quantum Bow
 			["name"] = "Quantum Bow completed.",
-			["collectible"] = false,
 		}),
 		ig(5748),	-- Centaur Longbow						(NYI)
 		ig(204674),	-- Cursed Demonbone Longbow				(NYI)
@@ -425,7 +403,6 @@ local QUANTUM_GROUP = sharedData({
 	i(208118, {	-- Quantum Crossbow
 		hqt(77604, {	-- when you learn everything from Quantum Crossbow
 			["name"] = "Quantum Crossbow completed.",
-			["collectible"] = false,
 		}),
 		ig(134778),	-- Seasoned Crossbow					(Removed)
 		ig(134580),	-- Vanguard Heavy Crossbow				(Removed)
@@ -433,7 +410,6 @@ local QUANTUM_GROUP = sharedData({
 	i(208119, {	-- Quantum Firearm
 		hqt(77605, {	-- when you learn everything from Quantum Firearm/Gun
 			["name"] = "Quantum Firearm/Gun completed.",
-			["collectible"] = false,
 		}),
 		i(110591),	-- Flintlocke's Blasthammer				(NYI)
 
@@ -447,7 +423,6 @@ local QUANTUM_GROUP = sharedData({
 	i(208125, {	-- Quantum Focus
 		hqt(77609, {	-- when you learn everything from Quantum Focus (Off-hand)
 			["name"] = "Quantum Focus/Off-hand completed.",
-			["collectible"] = false,
 		}),
 		ig(153641),	-- Manual of Elemental Enchancement		(NYI)
 		ig(161932),	-- Manual of Elemental Enchancement		(NYI)
@@ -461,7 +436,6 @@ local QUANTUM_GROUP = sharedData({
 	i(208113, {	-- Quantum Greataxe		(Two-Handed)
 		hqt(77599, {	-- when you learn everything from Quantum Greataxe (Two-Handed)
 			["name"] = "Quantum Greataxe (Two-Handed) completed.",
-			["collectible"] = false,
 		}),
 		ig(108046),	-- Draenic Steel War Axe				(NYI)
 		ig(189996),	-- Elegantly Balanced Axe				(NYI)(Unique)
@@ -480,13 +454,11 @@ local QUANTUM_GROUP = sharedData({
 	i(208114, {	-- Quantum Greathammer	(Two-Handed) (Mace)
 		hqt(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed) (Mace)
 			["name"] = "Quantum Greathammer/Mace (Two-Handed) completed.",
-			["collectible"] = false,
 		}),
 	}),
 	i(208112, {	-- Quantum Greatsword	(Two-Handed)
 		hqt(77598, {	-- when you learn everything from Quantum Greatsword	(Two-Handed)
 			["name"] = "Quantum Greatsword (Two-Handed) completed.",
-			["collectible"] = false,
 		}),
 		ig(134746),	-- Covert Greatsword					(Removed)
 		i(186410, {	-- Jaithys, the Prison Blade		(Removed)
@@ -514,7 +486,6 @@ local QUANTUM_GROUP = sharedData({
 	i(208120, {	-- Quantum Knife
 		hqt(77606, {	-- when you learn everything from Quantum Knife (Dagger)
 			["name"] = "Quantum Knife/Dagger completed.",
-			["collectible"] = false,
 		}),
 		ig(147908),	-- 6.0 Weapon - Knife_1h_DraenorRaid_D_01 - Jade	(NYI)
 		ig(108054),	-- Draenic Steel Dagger					(NYI)
@@ -542,7 +513,6 @@ local QUANTUM_GROUP = sharedData({
 	i(208121, {	-- Quantum Knuckles
 		hqt(77607, {	-- when you learn everything from Quantum Knuckles (Fist Weapon)
 			["name"] = "Quantum Knuckles/Fist Weapon completed.",
-			["collectible"] = false,
 		}),
 		ig(134719),	-- Cold-Touched Ripper					(Removed)
 		ig(2942),	-- Iron Knuckles						(Removed)
@@ -551,7 +521,6 @@ local QUANTUM_GROUP = sharedData({
 	i(208110, {	-- Quantum Mace			(One-Handed)
 		hqt(77596, {	-- when you learn everything from Quantum Mace (One-Handed)
 			["name"] = "Quantum Mace (One-Handed) completed.",
-			["collectible"] = false,
 		}),
 		ig(166405),	-- Blindside							(NYI)
 		ig(108058),	-- Draenic Steel Mace					(NYI)
@@ -581,7 +550,6 @@ local QUANTUM_GROUP = sharedData({
 	i(208116, {	-- Quantum Polearm
 		hqt(77602, {	-- when you learn everything from Quantum Polearm
 			["name"] = "Quantum Polearm completed.",
-			["collectible"] = false,
 		}),
 		ig(115297),	-- Spectral Polearm						(NYI)
 
@@ -593,7 +561,6 @@ local QUANTUM_GROUP = sharedData({
 	i(208126, {	-- Quantum Shield
 		hqt(77611, {	-- when you learn everything from Quantum Shield
 			["name"] = "Quantum Shield completed.",
-			["collectible"] = false,
 		}),
 		ig(108062),	-- Draenic Steel Bulwark				(NYI)
 		ig(108158),	-- Hardened Draenic Steel Bulwark		(NYI)
@@ -615,7 +582,6 @@ local QUANTUM_GROUP = sharedData({
 	i(208115, {	-- Quantum Staff
 		hqt(77601, {	-- when you learn everything from Quantum Staff
 			["name"] = "Quantum Staff completed.",
-			["collectible"] = false,
 		}),
 		ig(115298),	-- Spectral Spire						(NYI)
 
@@ -631,7 +597,6 @@ local QUANTUM_GROUP = sharedData({
 	i(208109, {	-- Quantum Sword		(One-Handed)
 		hqt(77595, {	-- when you learn everything from Quantum Sword (One-Handed)
 			["name"] = "Quantum Sword (One-Handed) completed.",
-			["collectible"] = false,
 		}),
 		ig(134613),	-- Scorching Quickblade					(NYI)
 		ig(166364),	-- Song of the Fallen					(NYI)
@@ -648,7 +613,6 @@ local QUANTUM_GROUP = sharedData({
 	i(208123, {	-- Quantum Wand
 		hqt(77610, {	-- when you learn everything from Quantum Wand
 			["name"] = "Quantum Wand completed.",
-			["collectible"] = false,
 		}),
 		ig(134728),	-- Cold-Touched Wand					(Removed)
 		ig(134590),	--Vanguard Baton of Light				(Removed)
@@ -656,7 +620,6 @@ local QUANTUM_GROUP = sharedData({
 	i(208122, {	-- Quantum Warglaives
 		hqt(77608, {	-- when you learn everything from Quantum Warglaives
 			["name"] = "Quantum Warglaives completed.",
-			["collectible"] = false,
 		}),
 	}),
 	i(208216, {	-- Reins of the Quantum Courser
@@ -686,121 +649,6 @@ local QUANTUM_GROUP = sharedData({
 			i(133543),	-- Reins of the Infinite Timereaver
 		},
 	}),
-	n(QUESTS, sharedData({
-		["collectible"] = false,
-	},{
-		hqt(77629, {	-- when you learn everything from Quantum Headpiece (Cloth)
-			["name"] = "Quantum Headpiece (Cloth) completed.",
-		}),
-		hqt(77628, {	-- when you learn everything from Quantum Headpiece (Leather)
-			["name"] = "Quantum Headpiece (Leather) completed.",
-		}),
-		hqt(77627, {	-- when you learn everything from Quantum Headpiece (Mail)
-			["name"] = "Quantum Headpiece (Mail) completed.",
-		}),
-		hqt(77626, {	-- when you learn everything from Quantum Headpiece (Plate)
-			["name"] = "Quantum Headpiece (Plate) completed.",
-		}),
-		hqt(77641, {	-- when you learn everything from Quantum Shoulders (Cloth)
-			["name"] = "Quantum Shoulders (Cloth) completed.",
-		}),
-		hqt(77640, {	-- when you learn everything from Quantum Shoulders (Leather)
-			["name"] = "Quantum Shoulders (Leather) completed.",
-		}),
-		hqt(77639 , {	-- when you learn everything from Quantum Shoulders (Mail)
-			["name"] = "Quantum Shoulders (Mail) completed.",
-		}),
-		hqt(77638 , {	-- when you learn everything from Quantum Shoulders (Plate)
-			["name"] = "Quantum Shoulders (Plate) completed.",
-		}),
-		hqt(77637, {	-- when you learn everything from Quantum Chestpiece (Cloth)
-			["name"] = "Quantum Chestpiece (Cloth) completed.",
-		}),
-		hqt(77636, {	-- when you learn everything from Quantum Chestpiece (Leather)
-			["name"] = "Quantum Chestpiece (Leather) completed.",
-		}),
-		hqt(77635, {	-- when you learn everything from Quantum Chestpiece (Mail)
-			["name"] = "Quantum Chestpiece (Mail) completed.",
-		}),
-		hqt(77634, {	-- when you learn everything from Quantum Chestpiece (Plate)
-			["name"] = "Quantum Chestpiece (Plate) completed.",
-		}),
-		hqt(77633 , {	-- when you learn everything from Quantum Gloves (Cloth)
-			["name"] = "Quantum Gloves (Cloth) completed.",
-		}),
-		hqt(77632 , {	-- when you learn everything from Quantum Gloves (Leather)
-			["name"] = "Quantum Gloves (Leather) completed.",
-		}),
-		hqt(77631 , {	-- when you learn everything from Quantum Gloves (Mail)
-			["name"] = "Quantum Gloves (Mail) completed.",
-		}),
-		hqt(77630, {	-- when you learn everything from Quantum Gloves (Plate)
-			["name"] = "Quantum Gloves (Plate) completed.",
-		}),
-		hqt(77625, {	-- when you learn everything from Quantum Legs (Cloth)
-			["name"] = "Quantum Legs (Cloth) completed.",
-		}),
-		hqt(77624, {	-- when you learn everything from Quantum Legs (Leather)
-			["name"] = "Quantum Legs (Leather) completed.",
-		}),
-		hqt(77623, {	-- when you learn everything from Quantum Legs (Mail)
-			["name"] = "Quantum Legs (Mail) completed.",
-		}),
-		hqt(77622, {	-- when you learn everything from Quantum Legs (Plate)
-			["name"] = "Quantum Legs (Plate) completed.",
-		}),
-		hqt(77597, {	-- when you learn everything from Quantum Axe (One-Handed)
-			["name"] = "Quantum Axe (One-Handed) completed.",
-		}),
-		hqt(77603, {	-- when you learn everything from Quantum Bow
-			["name"] = "Quantum Bow completed.",
-		}),
-		hqt(77604, {	-- when you learn everything from Quantum Crossbow
-			["name"] = "Quantum Crossbow completed.",
-		}),
-		hqt(77605, {	-- when you learn everything from Quantum Firearm/Gun
-			["name"] = "Quantum Firearm/Gun completed.",
-		}),
-		hqt(77609, {	-- when you learn everything from Quantum Focus (Off-hand)
-			["name"] = "Quantum Focus/Off-hand completed.",
-		}),
-		hqt(77599, {	-- when you learn everything from Greataxe (Two-Handed)
-			["name"] = "Quantum Greataxe (Two-Handed) completed.",
-		}),
-		hqt(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed) (Mace)
-			["name"] = "Quantum Greathammer/Mace (Two-Handed) completed.",
-		}),
-		hqt(77598, {	-- when you learn everything from Quantum Greatsword	(Two-Handed)
-			["name"] = "Quantum Greatsword (Two-Handed) completed.",
-		}),
-		hqt(77606, {	-- when you learn everything from Quantum Knife (Dagger)
-			["name"] = "Quantum Knife/Dagger completed.",
-		}),
-		hqt(77607, {	-- when you learn everything from Quantum Knuckles (Fist Weapon)
-			["name"] = "Quantum Knuckles/Fist Weapon completed.",
-		}),
-		hqt(77596, {	-- when you learn everything from Quantum Mace (One-Handed)
-			["name"] = "Quantum Mace (One-Handed) completed.",
-		}),
-		hqt(77602, {	-- when you learn everything from Quantum Polearm
-			["name"] = "Quantum Polearm completed.",
-		}),
-		hqt(77611, {	-- when you learn everything from Quantum Shield
-			["name"] = "Quantum Shield completed.",
-		}),
-		hqt(77601, {	-- when you learn everything from Quantum Staff
-			["name"] = "Quantum Staff completed.",
-		}),
-		hqt(77595, {	-- when you learn everything from Quantum Sword (One-Handed)
-			["name"] = "Quantum Sword (One-Handed) completed.",
-		}),
-		hqt(77610, {	-- when you learn everything from Quantum Wand
-			["name"] = "Quantum Wand completed.",
-		}),
-		hqt(77608, {	-- when you learn everything from Quantum Warglaives
-			["name"] = "Quantum Warglaives completed.",
-		}),
-	})),
 });
 root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
 	inst(1209, {	-- Dawn of the Infinite

@@ -126,6 +126,8 @@ ConversionMethods.provider = function(provider, reference)
 		return ConversionMethods.creatureName(providerID, reference);
 	elseif providerType == "i" then
 		return ConversionMethods.itemNameAndIcon(providerID, reference);
+	elseif providerType == "s" then
+		return ConversionMethods.spellID(providerID, reference);
 	end
 	return UNKNOWN;
 end;

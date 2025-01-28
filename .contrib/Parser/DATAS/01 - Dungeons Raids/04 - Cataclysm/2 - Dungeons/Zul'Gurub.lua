@@ -170,55 +170,63 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 								i(YELLOW_HAKKARI_BIJOU),
 							}),
 						}),
-						prof(FISHING, bubbleDown({ ["modID"] = 0, }, {
-							q(74579, {	-- Daily Zul'Gurub Cache
-								["name"] = "Daily Zul'Gurub Cache",
-								["isDaily"] = true,
+						n(PROFESSIONS, {
+							prof(FISHING, bubbleDown({ ["modID"] = 0, }, {
+								q(74579, {	-- Daily Zul'Gurub Cache
+									["name"] = "Daily Zul'Gurub Cache",
+									["isDaily"] = true,
+								}),
+								i(BLOODSCALP_COIN),
+								i(GURUBASHI_COIN),
+								i(203743, {	-- Jostled Gurubashi Cache
+									["description"] = "You can fish only 1 out of the 2 caches per day. Requires the Mudskunk Aroma Buff which you randomly receive near the water.",
+									["sym"] = {{"select","itemID",
+										-- Items
+										19945,	-- Lizardscale Eyepatch
+										19947,	-- Nat Pagle's Broken Reel
+										19944,	-- Nat Pagle's Fish Terminator
+										19946,	-- Tigule's Harpoon
+										22739,	-- Tome of Polymorph Turtle (CI!)
+									}},
+								}),
+								i(HAKKARI_COIN),
+								i(203912, {	-- Penny Pouch o' Paragons
+									["sym"] = {{"select","itemID",
+										-- Items
+										19945,	-- Lizardscale Eyepatch
+										19947,	-- Nat Pagle's Broken Reel
+										19944,	-- Nat Pagle's Fish Terminator
+										19946,	-- Tigule's Harpoon
+										22739,	-- Tome of Polymorph Turtle (CI!)
+									}},
+								}),
+								i(RAZZASHI_COIN),
+								i(SANDFURY_COIN),
+								i(SKULLSPLITTER_COIN),
+								i(VILEBRANCH_COIN),
+								i(203742, {	-- Waterlooged Gurubashi Cache
+									["description"] = "You can fish only 1 out of the 2 caches per day. Requires the Mudskunk Aroma Buff which you randomly receive near the water.",
+									["groups"] = {
+										i(19945),	-- Lizardscale Eyepatch
+										i(19947),	-- Nat Pagle's Broken Reel
+										i(19944),	-- Nat Pagle's Fish Terminator
+										i(19946),	-- Tigule's Harpoon
+										i(22739),	-- Tome of Polymorph Turtle (CI!)
+									},
+								}),
+								i(WITHERBARK_COIN),
+								i(ZULIAN_COIN),
+							})),
+							prof(SKINNING, {
+								i(19767, {	-- Primal Bat Leather
+									["cr"] = 202341,	-- Ancient Bat
+									["description"] = "Ancient Bats can be found on the following locations in Zul'Gurub:\n* Pack of 2 by crossroads between the first two bridges.\n* Pack of 2 behind a three just north down the path from the mentioned crossroad.\n* Pack of 3 between a wall and a hut on the eastern side of the second bridge.\n* Pack of 3 in the southwestern corner of Mandokir's Domain.\n* Pack of 2 in the northeastern corner of Mandokir's Domain.",
+								}),
+								i(19768, {	-- Primal Tiger Leather
+									["cr"] = 202339,	-- Ancient Tiger
+									["description"] = "Ancient Tigers can be found on the following locations in Zul'Gurub:\n* Pack of 2 west of the stairs by Mortaxx.\n* Pack of 2 east of the stairs by Mortaxx.\n* Pack of 3 east of the inn.\n* Pack of 3 northwest of the inn.\n* Pack of 3 outside of the eastern outer wall of Temple of Bethekk.",
+								}),
 							}),
-							i(BLOODSCALP_COIN),
-							i(GURUBASHI_COIN),
-							i(203743, {	-- Jostled Gurubashi Cache
-								["description"] = "You can fish only 1 out of the 2 caches per day. Requires the Mudskunk Aroma Buff which you randomly receive near the water.",
-								["sym"] = {{"select","itemID",
-									-- Items
-									19945,	-- Lizardscale Eyepatch
-									19947,	-- Nat Pagle's Broken Reel
-									19944,	-- Nat Pagle's Fish Terminator
-									19946,	-- Tigule's Harpoon
-									22739,	-- Tome of Polymorph Turtle (CI!)
-								}},
-							}),
-							i(HAKKARI_COIN),
-							i(203912, {	-- Penny Pouch o' Paragons
-								["sym"] = {{"select","itemID",
-									-- Items
-									19945,	-- Lizardscale Eyepatch
-									19947,	-- Nat Pagle's Broken Reel
-									19944,	-- Nat Pagle's Fish Terminator
-									19946,	-- Tigule's Harpoon
-									22739,	-- Tome of Polymorph Turtle (CI!)
-								}},
-							}),
-							i(RAZZASHI_COIN),
-							i(SANDFURY_COIN),
-							i(SKULLSPLITTER_COIN),
-							i(VILEBRANCH_COIN),
-							i(203742, {	-- Waterlooged Gurubashi Cache
-								["description"] = "You can fish only 1 out of the 2 caches per day. Requires the Mudskunk Aroma Buff which you randomly receive near the water.",
-								["groups"] = {
-									i(19945),	-- Lizardscale Eyepatch
-									i(19947),	-- Nat Pagle's Broken Reel
-									i(19944),	-- Nat Pagle's Fish Terminator
-									i(19946),	-- Tigule's Harpoon
-									i(22739),	-- Tome of Polymorph Turtle (CI!)
-								},
-							}),
-							i(WITHERBARK_COIN),
-							i(ZULIAN_COIN),
-						})),
-						prof(SKINNING, {
-							i(19768),	-- Primal Tiger Leather
-							i(19767),	-- Primal Bat Leather
 						}),
 						n(QUESTS, {
 							q(74696, {	-- Gurubashi, Vilebranch, and Witherbark Coins

@@ -854,7 +854,7 @@ localize(L.EVENT_REMAPPING, {
 
 -- Programmatic Event Scheduling
 _.Modules.Events.SetEventInformation(446916, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=14,["weekday"]=3,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=30,["weekday"]=4,["year"]=2025})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=14,["weekday"]=3,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=18,["weekday"]=3,["year"]=2025})
 });
 _.Modules.Events.SetEventInformation(1262, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=6,["weekday"]=1,["year"]=2022},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=27,["weekday"]=1,["year"]=2022})
@@ -2192,6 +2192,7 @@ local ObjectNames = {
 	[182031] = "Discarded Nutriment",
 	[182032] = "Galaen's Journal",
 	[182050] = "Box of Mushrooms",
+	[182053] = "Glowcap",
 	[182054] = "The Underspore",
 	[182058] = "Scourge Meat Wagon",
 	[182063] = "Basin of Holy Water",
@@ -3959,6 +3960,7 @@ local ObjectModels = {
 	[182031] = 193892,
 	[182032] = 198028,
 	[182050] = 190013,
+	[182053] = 202097,
 	[182054] = 201619,
 	[182058] = 200664,
 	[182063] = 201115,
@@ -5627,6 +5629,7 @@ localize(ObjectNames, {
 	[182031] = "Liegengelassene Nahrung",
 	[182032] = "Galaens Tagebuch",
 	[182050] = "Kasten mit Pilzen",
+	[182053] = "Glühkappe",
 	[182054] = "Die Tiefenspore",
 	[182058] = "Fleischwagen der Geißel",
 	[182063] = "Becken mit Weihwasser",
@@ -6933,6 +6936,7 @@ localize(ObjectNames, {
 	[182031] = "Aliments abandonnés",
 	[182032] = "Journal de Galaen",
 	[182050] = "Boîte de champignons",
+	[182053] = "Chapeluisant",
 	[182054] = "La spore de Basse-tourbière",
 	[182058] = "Chariot à viande du Fléau",
 	[182063] = "Bénitier",
@@ -7868,6 +7872,7 @@ localize(ObjectNames, {
 	[182031] = "Alimento Scartato",
 	[182032] = "Diario di Galaen",
 	[182050] = "Scatola di Funghi",
+	[182053] = "Cappaluce",
 	[182054] = "Sottospora",
 	[182058] = "Carro dei Morti del Flagello",
 	[182063] = "Bacile di Acqua Santa",
@@ -9060,6 +9065,7 @@ localize(ObjectNames, {
 	[182031] = "Nutrimento Descartado",
 	[182032] = "Diário de Galaen",
 	[182050] = "Caixa de Cogumelos",
+	[182053] = "Chapéu-opalino",
 	[182054] = "O Subesporo",
 	[182058] = "Carroça Carniceira do Flagelo",
 	[182063] = "Caldeirinha de Água Benta",
@@ -10379,6 +10385,7 @@ localize(ObjectNames, {
 	[182031] = "Выброшенный корм",
 	[182032] = "Записи Галена",
 	[182050] = "Ящик грибов",
+	[182053] = "Огнешляпка",
 	[182054] = "Подспорник",
 	[182058] = "Мясной фургон Плети",
 	[182063] = "Чаша святой воды",
@@ -11791,6 +11798,7 @@ localize(ObjectNames, {
 	[182031] = "버려진 버섯",
 	[182032] = "갈라엔의 일지",
 	[182050] = "버섯 상자",
+	[182053] = "초롱버섯",
 	[182054] = "쉬슬리스의 방주",
 	[182058] = "스컬지 시체 수레",
 	[182063] = "성수 담긴 접시",
@@ -13044,6 +13052,7 @@ localize(ObjectNames, {
 	[182031] = "Restos de alimentos",
 	[182032] = "Diario de Galaen",
 	[182050] = "Caja de champiñones",
+	[182053] = "Fluochampiñón",
 	[182054] = "La sotoespora",
 	[182058] = "Carro de despojos de la Plaga",
 	[182063] = "Cuenco de agua sagrada",
@@ -14263,6 +14272,7 @@ localize(ObjectNames, {
 	[182031] = "丢弃的食物",
 	[182032] = "加莱恩的日记",
 	[182050] = "蘑菇箱",
+	[182053] = "亮顶蘑菇",
 	[182054] = "幽暗孢子",
 	[182058] = "天灾战车",
 	[182063] = "圣水盆",
@@ -14700,7 +14710,11 @@ localize(L.HEADER_NAMES, {
 	[-1000042] = "世界首領",
 	[-1000044] = "地區掉落",
 	[-1000048] = "夢魘之龍",
-	[-1000055] = "限時事件",
+	[-1000055] = "限時救援事件",
+	[-1000056] = "第一個箱子",
+	[-1000057] = "第二個箱子",
+	[-1000058] = "第三個箱子",
+	[-1000059] = "最後的箱子",
 	[-1000142] = "榮譽頭銜",
 	[-1000162] = "共享外觀",
 	[-1000163] = "獨特外觀",

@@ -12,6 +12,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(226193, {	-- Cache of Nerubian Treasures (N)
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 					}),
+					i(234729, {	-- Cache of Undermine Treasures (N)
+						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
+					}),
 				},
 			}, {
 				q(83363),					-- A Burning Path Through Time

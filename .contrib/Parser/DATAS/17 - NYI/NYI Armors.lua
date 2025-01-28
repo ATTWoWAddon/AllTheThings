@@ -1363,7 +1363,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(131803),	-- Spine of Barax
 			}),
 			expansion(EXPANSION.LEGION, patch(1,0), {
-				i(140035),	-- Fluctuating Arc Capacitor
 				i(138084),	-- Iron Wrought Insignia of Conquest
 				i(138090),	-- Iron Wrought Insignia of Dominance
 				i(138093),	-- Iron Wrought Insignia of Victory

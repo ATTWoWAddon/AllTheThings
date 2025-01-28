@@ -33,6 +33,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				}),
 			}, {	-- RENOWN 7 --
 			}, {	-- RENOWN 8 --
+				q(85818, {	-- A Small Pouch of Crystals
+					["provider"] = { "n", 231409 },	-- Smaks Topskimmer
+					["coord"] = { 43.8, 50.8, UNDERMINE },
+				}),
 			}, {	-- RENOWN 9 --
 			}, {	-- RENOWN 10 --
 			}, {	-- RENOWN 11 --

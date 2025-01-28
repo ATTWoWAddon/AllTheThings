@@ -423,7 +423,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 49479 },	-- Dentaria Silverglade
 								{ "i", 5184 },	-- Filled Crystal Phial
 							},
-							["sourceQuest"] = 28729,	-- Teldrassil: Crown onf Azeroth
+							["sourceQuest"] = 28729,	-- Teldrassil: Crown of Azeroth
 							["coords"] = {
 								-- #if AFTER 5.0.4
 								{ 42.5, 50.4, SHADOWGLEN },
@@ -1567,7 +1567,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28731,	-- Teldrassil: Passing Awareness
 					["coord"] = { 41.4, 45.8, TELDRASSIL },
 					["description"] = "The quest completion marker is placed wrong, go to the crossroad just outside of Darnassus.",
-					["races"] = ALLIANCE_ONLY,
+					["races"] = PRIESTESS_OF_THE_MOON_RACES,
 				}),
 				-- #endif
 				q(2241, {	-- The Apple Falls

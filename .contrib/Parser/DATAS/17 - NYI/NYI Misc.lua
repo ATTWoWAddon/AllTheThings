@@ -1019,10 +1019,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(192476),	-- Expedition Bullwhip
 			i(191552),	-- Expedition Metal Detector
 			i(198724),	-- Expedition Telescope (NYI)
-			i(199904),	-- Extraction: Awakened Air
-			i(199905),	-- Extraction: Awakened Earth
-			i(199901),	-- Extraction: Awakened Fire
-			i(199903),	-- Extraction: Awakened Frost
 			i(199185),	-- Fanciful Strings
 			i(195460),	-- Fermented Musken Milk
 			i(198674),	-- Filled Life Pools Vial

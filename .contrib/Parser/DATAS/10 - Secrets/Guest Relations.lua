@@ -711,13 +711,13 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 						["coord"] = { 61.9, 49.8, TANARIS },
 						["g"] = { i(226234) },	-- Green Hills of Stranglethorn - Page 16 (QI!)
 					}),
-					n(227795, {	-- Sand Devil
-					["description"] = "In the Timeless Tunnel.",
-						["maps"] = { 74 },
-						["g"] = {
-							i(226237),	-- Green Hills of Stranglethorn - Page 25 (QI!)
-							i(226238),	-- Green Hills of Stranglethorn - Page 27 (QI!)
-						},
+					i(226237, {	-- Green Hills of Stranglethorn - Page 25 (QI!)
+						["description"] = "Drops from Sand Devils In the Timeless Tunnel.",
+						["crs"] = { 227795 },	-- Sand Devil
+					}),
+					i(226238, {	-- Green Hills of Stranglethorn - Page 27 (QI!)
+						["description"] = "Drops from Sand Devils In the Timeless Tunnel.",
+						["crs"] = { 227795 },	-- Sand Devil
 					}),
 					o(456038, {	-- Wet Paper
 						["description"] = "Behind the Story Time Stage, next to the Hearthstone Table.",

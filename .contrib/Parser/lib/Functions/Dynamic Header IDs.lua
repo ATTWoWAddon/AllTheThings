@@ -6,6 +6,7 @@ HeaderAssignments = {
 	["Achievements"] = -1000004,
 	["Adventures"] = -1000085,
 	["Airship"] = -1001018,
+	["Alcaz Island"] = -1001071,
 	["All Roles"] = -1000145,
 	["Alliance"] = -1000093,
 	["Allied Races"] = -1000374,
@@ -551,4 +552,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1001071;
+NextHeaderID = -1001072;

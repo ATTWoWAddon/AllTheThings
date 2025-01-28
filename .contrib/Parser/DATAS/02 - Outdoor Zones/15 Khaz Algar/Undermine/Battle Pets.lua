@@ -21,7 +21,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["coord"] = { 21.9, 56.1, ZULDAZAR },
 			}),
 			-- in Ringing Deeps
-			pet(4507, {	-- Hemospore
+			pet(4484, {	-- Frenzied Bloodtick
+				["coord"] = { 68.1, 90.8, THE_RINGING_DEEPS },
+			}),
+			pet(4507, {	-- Hemospore (TODO: wasn't in area when Frenzied Bloodtick is up?)
 				["coord"] = { 73.6, 95.0, THE_RINGING_DEEPS },
 			}),
 		})),

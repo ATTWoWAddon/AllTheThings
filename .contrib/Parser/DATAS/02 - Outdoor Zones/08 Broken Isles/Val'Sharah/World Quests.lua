@@ -101,12 +101,15 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			}),
 			q(41612, {	-- Huge Mossgill Perch
 				["requireSkill"] = FISHING,
+				["g"] = { i(134568) },	-- Huge Mossgill Perch (QI!)
 			}),
 			q(41613, {	-- Huge Mossgill Perch
 				["requireSkill"] = FISHING,
+				["g"] = { i(134568) },	-- Huge Mossgill Perch (QI!)
 			}),
 			q(41270, {	-- Huge Mossgill Perch
 				["requireSkill"] = FISHING,
+				["g"] = { i(134568) },	-- Huge Mossgill Perch (QI!)
 			}),
 			q(45804),	-- Impvasion! (Invasion wq)
 			q(42028),	-- Into the Nightmare

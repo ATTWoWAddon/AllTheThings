@@ -355,10 +355,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(222225),	-- Three of Shining
 					i(222216),	-- Three of Symbiosis
 					i(222234),	-- Three of Vivacity
-					i(222622),	-- Transcribe to Ascension
-					i(222625),	-- Transcribe to Radiance
-					i(222624),	-- Transcribe to Symbiosis
-					i(222623),	-- Transcribe to Vivacity
 					i(222242),	-- Two of Evolution
 					i(222224),	-- Two of Shining
 					i(222215),	-- Two of Symbiosis

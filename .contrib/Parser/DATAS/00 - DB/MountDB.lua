@@ -1934,6 +1934,7 @@ i(0, 303767);		-- Honeyback Hivemother
 i(233241, 471696);	-- Hooktalon
 i(235515, 473472);	-- Jani's Trashpile
 i(234716, 1214920);	-- Nightfall Skyreaver
+i(232901, 472253);	-- Lunar Launcher
 i(226042, 457656);	-- Plunderlord's Midnight Crocolisk
 i(233240, 437162);	-- Polly Roger
 i(233489, 474086);	-- Prismatic Snapdragon
@@ -1949,7 +1950,6 @@ i(232624, 471538);	-- Timely Buzzbee
 i(234721, 1214940);	-- Ur'zul Fleshripper
 --- UNSORTED ---
 i(232926, 472479);	-- Love Witch's Sweeper
-i(232901, 472253);	-- Lunar Launcher
 i(233023, 472487);	-- Silvermoon Sweeper
 i(233019, 472489);	-- Sky Witch's Sweeper
 i(233020, 472488);	-- Twilight Witch's Sweeper

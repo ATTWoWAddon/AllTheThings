@@ -12,14 +12,10 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			q(48701, {	-- Baruut the Bloodthirsty
 				["sym"] = {{"select","npcID",126862}},	-- Select the WQ NPC
 			}),
-			q(47705, {	-- Behind Legion Lines
-			}),
-			q(49047, {	-- Bucky
-			}),
-			q(48101, {	-- Bully Pulpit
-			}),
-			q(47456, {	-- Calming the Void
-			}),
+			q(47705),	-- Behind Legion Lines
+			q(49047),	-- Bucky
+			q(48101),	-- Bully Pulpit
+			q(47456),	-- Calming the Void
 			q(48727, {	-- Captain Faruq
 				["sym"] = {{"select","npcID",126869}},	-- Select the WQ NPC
 			}),
@@ -31,17 +27,13 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					i(152689),	-- Crystalline Construct Core (QI!)
 				},
 			}),
-			q(48095, {	-- Dark Experimentation
-			}),
-			q(49051, {	-- Corrupted Blood of Argus
-			}),
+			q(48095),	-- Dark Experimentation
+			q(49051),	-- Corrupted Blood of Argus
 			q(48722, {	-- Feasel the Muffin Thief
 				["sym"] = {{"select","npcID",126864}},	-- Select the WQ NPC
 			}),
-			q(47135, {	-- For Their Own Good
-			}),
-			q(48098, {	-- Garden Pests
-			}),
+			q(47135),	-- For Their Own Good
+			q(48098),	-- Garden Pests
 			q(48097, {	-- Gatekeeper's Review: Cunning
 				["g"] = {
 					i(151126),	-- Fragment of Acuity (QI!)
@@ -49,37 +41,30 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					i(151127),	-- Fragment of Wit (QI!)
 				},
 			}),
-			q(48103, {	-- Gatekeeper's Review: Tenacity
-			}),
-			q(49049, {	-- Gloamwing
-			}),
+			q(48103),	-- Gatekeeper's Review: Tenacity
+			petbattle(q(49049)),	-- Gloamwing
 			q(48731, {	-- Herald of Chaos
 				["sym"] = {{"select","npcID",126896}},	-- Select the WQ NPC
 			}),
-			q(48175, {	-- Hidden in the Hollows
-			}),
-			q(48099, {	-- Hostile Echology
-			}),
+			q(48175),	-- Hidden in the Hollows
+			q(48099),	-- Hostile Echology
 			q(48737, {	-- Instructor Tarahna
 				["sym"] = {{"select","npcID",126900}},	-- Select the WQ NPC
 			}),
 			q(48733, {	-- Jed'hin Champion Vorusk
 				["sym"] = {{"select","npcID",126899}},	-- Select the WQ NPC
 			}),
-			q(48386, {	-- Jed'hin Tournament
-			}),
+			q(48386),	-- Jed'hin Tournament
 			q(48698, {	-- Kaara the Pale
 				["sym"] = {{"select","npcID",126860}},	-- Select the WQ NPC
 			}),
-			q(49052, {	-- Mar'cuus
-			}),
+			q(49052),	-- Mar'cuus
 			q(47828, {	-- Memories of the Fallen
 				["g"] = {
 					i(151555),	-- Crystallized Memory (QI!)
 				},
 			}),
-			q(48106, {	-- No Love Lost
-			}),
+			q(48106),	-- No Love Lost
 			q(48734, {	-- Overseer Y'Beda
 				["sym"] = {{"select","npcID",124440}},	-- Select the WQ NPC
 			}),
@@ -112,8 +97,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					i(152357),	-- Vigilant Power Crystal (QI!)
 				},
 			}),
-			q(49050, {	-- Shadeflicker
-			}),
+			q(49050),	-- Shadeflicker
 			q(47833, {	-- Shadowcaster Voruun
 				["sym"] = {{"select","npcID",122838}},	-- Select the WQ NPC
 			}),
@@ -123,16 +107,14 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			q(48936, {	-- Slithon the Last
 				["sym"] = {{"select","npcID",126913}},	-- Select the WQ NPC
 			}),
-			q(49048, {	-- Snozz
-			}),
+			q(49048),	-- Snozz
 			q(48730, {	-- Sorolis the Ill-Fated
 				["sym"] = {{"select","npcID",126889}},	-- Select the WQ NPC
 			}),
 			q(48694, {	-- Soultwisted Monstrosity
 				["sym"] = {{"select","npcID",126815}},	-- Select the WQ NPC
 			}),
-			q(48100, {	-- The Defense of Eredath
-			}),
+			q(48100),	-- The Defense of Eredath
 			q(48726, {	-- Turek the Lucid
 				["sym"] = {{"select","npcID",126868}},	-- Select the WQ NPC
 			}),

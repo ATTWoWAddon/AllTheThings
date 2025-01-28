@@ -236,6 +236,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 				["g"] = {
 					n(ARMOR, bubbleDownFiltered({
 						["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+						["modID"] = 0,
 					},FILTERFUNC_itemID,{
 						filter(BACK_F, {
 							i(225187),	-- Blackmetal Cape
@@ -277,7 +278,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 							["cost"] = {{"c", TIMEWARPED_BADGE, 2200}}
 						}),
 					}),
-					filter(COSMETIC, {
+					filter(COSMETIC, bubbleDown({["modID"] = 0 }, {
 						i(227718, {	-- Bearded Branch of Lore
 							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}}
 						}),
@@ -311,7 +312,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 						i(227711, {	-- Tusked Branch of War
 							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}}
 						}),
-					}),
+					})),
 					filter(MISC, sharedData({
 						["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
 					}, {
@@ -404,7 +405,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 							["cost"] = {{"c", TIMEWARPED_BADGE, 200}}
 						}),
 					}),
-					n(WEAPONS, {
+					n(WEAPONS, bubbleDown({["modID"] = 0 }, {
 						i(225200, {	-- Alcor's Sunrazor
 							["cost"] = {{"c", TIMEWARPED_BADGE, 50}}
 						}),
@@ -451,7 +452,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 						i(225198, {	-- Warden Staff
 							["cost"] = {{"c", TIMEWARPED_BADGE, 100}}
 						}),
-					}),
+					})),
 				},
 			}),
 		}),

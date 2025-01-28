@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sym"] = {{"select","npcID",126254}},	-- Select the WQ NPC
 			}),
 			q(48983),	-- Mining Regulation
-			q(49057),	-- Minixis
+			petbattle(q(49057)),	-- Minixis
 			q(47552, {	-- Mistress Il'thendra
 				["sym"] = {{"select","npcID",122947}},	-- Select the WQ NPC
 			}),

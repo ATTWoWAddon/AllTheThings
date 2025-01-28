@@ -50,6 +50,7 @@ root(ROOTS.Zones, {
 				}),
 				n(TRINKET, {
 					i(140030),	-- Devilsaur Shock-Baton (caster version)
+					i(140035),	-- Fluctuating Arc Capacitor
 					i(140034),	-- Impact Tremor
 					i(140031),	-- Mana Spark
 					i(134278),	-- Nightborne Defender's Badge

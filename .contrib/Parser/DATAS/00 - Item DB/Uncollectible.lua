@@ -27,6 +27,8 @@ i(138293);	-- Explorer's Pack
 i(139398);	-- Pant Loaf
 i(147348);	-- Bulky Armor Set
 i(147349);	-- Spiked Armor Set
+-- BFA Vendor
+i(162588);	-- Weathered Scrollcase
 -- BFA Minor Visions
 i(169294);	-- Resilient Soul
 i(173888);	-- Shard of Self Sacrifice \\ Lingering Soul
@@ -1273,6 +1275,10 @@ i(201968);	-- Enormous Grain of Salt
 i(200818);	-- Eternal Flame
 i(192691);	-- Eternal Ice Stalactite
 i(200929);	-- Everglow Nectar
+i(199904);	-- Extraction: Awakened Air
+i(199905);	-- Extraction: Awakened Earth
+i(199901);	-- Extraction: Awakened Fire
+i(199903);	-- Extraction: Awakened Frost
 i(194036);	-- Exquisite Necklace
 i(192692);	-- Faerie Dust
 i(200805);	-- Fallen Watcher Remains
@@ -2037,6 +2043,10 @@ i(228481);	-- Tiny Fathomclam
 i(227309);	-- Titanshake
 i(220223);	-- Torn Gossamer Scrap
 i(220272);	-- Torn Manuscript Page
+i(222622);	-- Transcribe to Ascension
+i(222625);	-- Transcribe to Radiance
+i(222624);	-- Transcribe to Symbiosis
+i(222623);	-- Transcribe to Vivacity
 i(220300);	-- Translucent Wing
 i(220282);	-- Tuft of Whiskers
 i(213266);	-- Twitching Snack
@@ -2118,21 +2128,27 @@ i(236638);	-- Bundle of Kaja-Scented Incense
 i(236922);	-- Celebratory Pack of Runed Harbinger Crests
 i(233030);	-- Charged Cables
 i(234203);	-- Clay-Speckled Metal Slug
+i(237335);	-- Collectible Pineappletini Mug
 i(233029);	-- Cracked Core
 i(236636);	-- Cracked Crysoberyl
 i(236640);	-- Cracked Earthen Singing Bowl
 i(235038);	-- Crumpled Schematic
 i(236639);	-- Dented Censer
 i(234204);	-- Depleted Battery
+i(237330);	-- Disposable Hamburger
+i(237331);	-- Disposable Hotdog
 i(236923);	-- Glorious Cluster of Gilded Harbinger Crests
+i(237334);	-- Half-Eaten Takeout
 i(233031);	-- Intact Interlock
 i(236634);	-- Itty Bitty Bonsai
 i(235268);	-- Misprinted Card
 i(236637);	-- Not-Quite-Crystal Ball
 i(236926);	-- Pack of Runed Harbinger Crests
 i(236924);	-- Pouch of Weathered Harbinger Crests
+i(237313);	-- Totally Legit Samophlange
 i(231899);	-- Trash
 i(236921);	-- Triumphant Satchel of Carved Harbinger Crests
+i(237332);	-- Single-Use Grill
 i(236925);	-- Satchel of Carved Harbinger Crests
 i(236635);	-- Uncut Semi-Smoky Quartz
 i(229809);	-- Weighted Metal Ball

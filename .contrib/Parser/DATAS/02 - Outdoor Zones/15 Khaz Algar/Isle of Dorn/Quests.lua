@@ -1158,6 +1158,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 44.9, 20.6, ISLE_OF_DORN },
 				["g"] = {
 					i(225887),	-- Titan Emitter (QI!)
+					i(225888),	-- Titan Emitter (QI!)
 					i(228369),	-- Reconstructed Ledger
 				},
 			}),

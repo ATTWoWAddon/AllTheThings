@@ -19,6 +19,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					230934,	-- Ratspit
 					230979,	-- S.A.L.
 					230931,	-- Scrapbeak
+					233471,	-- Scrapchewer
 					--230947,	-- Slimesby
 					230800,	-- Slugger the Smart
 					231288,	-- Swogs Farsight
@@ -27,7 +28,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					230951,	-- Thwack
 					230946,	-- V.V. Goosworth
 					--TODO: unsorted
-					--233471,	-- Scrapchewer
 					--231310,	-- The Darkfuse Precipitant
 					--233472,	-- Volstrike the Charged
 				},
@@ -132,6 +132,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					i(235321),	-- Feather-Spike Girdle
 				},
 			}),
+			n(233471, {	-- Scrapchewer
+				--["description"] = "Can be summoned by someone who has contract with Venture Co.",
+				["coord"] = { 56.8, 79, UNDERMINE },
+				["questID"] = 85778,
+				["isWeekly"] = true,
+			}),
 			n(230947, {	-- Slimesby (has its own criteria, so listing it to allow automation to nest the criteria into it, seems to only drop junk items however)
 				["crs"] = { 230946 },	-- V.V. Goosworth
 				["coord"] = { 36.9, 78.2, UNDERMINE },
@@ -144,10 +150,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					i(235363),	-- Suspicious Energy Drink
 				},
 			}),
-			n(231288, {	-- Swogs Farsight
+			n(231288, {	-- Swigs Farsight
 				["coord"] = { 41.3, 43.6, UNDERMINE },
 				["questID"] = 85004,	-- Swigs Farsight
 				["g"] = {
+					i(235314),	-- Knightrider's Steelfists
 					i(235320),	-- S.1.Z.Z.L.E.S.T.E.P Boots
 					i(235307),	-- Smoketrail Belt
 				},
@@ -176,16 +183,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			n(230946, {	-- V.V. Goosworth
 				["crs"] = { 230947 },	-- Slimesby
 				["coord"] = { 36.9, 78.2, UNDERMINE },
-				["questID"] = 84920,	-- Rogue Alchemist Vaz (questID on kill have name from Blizzard and it is different from rare name)
+				["questID"] = 84920,
 				["g"] = {
 					i(235306),	-- Ooze-fused Mantle
 				},
 			}),
 			-- TODO: Sort it when you find them
-			n(233471, {	-- Scrapchewer
-				--["coord"] = { x, y, UNDERMINE },
-				--["questID"] = xx,
-			}),
 			n(231310, {	-- The Darkfuse Precipitant
 				--["coord"] = { x, y, UNDERMINE },
 				--["questID"] = xx,

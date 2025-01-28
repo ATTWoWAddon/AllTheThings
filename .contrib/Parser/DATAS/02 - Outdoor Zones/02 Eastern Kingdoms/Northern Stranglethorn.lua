@@ -166,7 +166,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2465 },	-- Far Seer Mok'thardin
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
-					["description"] = "Automatically granted after killing 12 eggs during |cFFFFD700The Defense of Grom'gol: Raptor Risk|r.",
+					["description"] = "Automatically granted after killing 12 eggs during the quest |cFFFFD700The Defense of Grom'gol: Raptor Risk|r.\n\nThis quest gets marked as completed when its Alliance counterpart '|cff4a54e8Just Hatched|r' (26738) is handed in.",
 					["coord"] = { 38.3, 51.0, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -176,6 +176,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 43884 },	-- Osborn Obnoticus
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
+					["description"] = "This quest gets marked as completed when its Horde counterpart '|cffe50d12A Nose for This Sort of Thing|r' (26325) is handed in.",
 					["sourceQuest"] = 26745,	-- Favored Skull
 					["coord"] = { 47.13, 10.56, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -191,6 +192,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 2076 },	-- Bubbling Cauldron
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
+					["description"] = "This quest gets marked as completed when its Alliance counterpart '|cff4a54e8A Nose for This Sort of Thing|r' (26746) is handed in.",
 					["sourceQuest"] = 26323,	-- Favored Skull
 					["coord"] = { 38.5, 48.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -206,6 +208,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 43884 },	-- Osborn Obnoticus
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
+					["description"] = "This quest gets marked as completed when its Horde counterpart '|cffe50d12Who's a Big Troll?|r' (26330) is handed in.",
 					["sourceQuest"] = 26746,	-- A Nose for This Sort of Thing
 					["coord"] = { 47.1, 10.5, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -302,7 +305,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26732, {	-- Bad Medicine
 					["qg"] = 739,	-- Brother Nimetz
-					["coord"] = { 47.2, 11.1, NORTHERN_STRANGLETHORN },
+					["coord"] = { 47.3, 11.1, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -331,6 +334,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26775, {	-- Be Raptor (A)
 					["qg"] = 44017,	-- Priestess Thaalia
+					["description"] = "This quest gets marked as completed when its Horde counterpart '|cffe50d12Be Raptor|r' (26362) is handed in.",
 					["sourceQuest"] = 26774,	-- Mind Control
 					["coord"] = { 53.4, 66.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -371,6 +375,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26362, {	-- Be Raptor (H)
 					["qg"] = 42812,	-- Priestess Hu'rala
+					["description"] = "This quest gets marked as completed when its Alliance counterpart '|cff4a54e8Be Raptor|r' (26775) is handed in.",
 					["sourceQuest"] = 26360,	-- Mind Control
 					["coord"] = { 63.4, 39.0, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -470,6 +475,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 42790 },	-- Bloodlord Mandokir
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
+					["description"] = "This quest gets marked as completed when its Horde counterpart '|cffe50d12Bloodlord Mandokir|r' (26334) is handed in.",
 					["sourceQuest"] = 26747,	-- A Physical Specimen
 					["coord"] = { 47.1, 10.6, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -480,6 +486,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 42790 },	-- Bloodlord Mandokir
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
+					["description"] = "This quest gets marked as completed when its Alliance counterpart '|cff4a54e8Bloodlord Mandokir|r' (26748) is handed in.",
 					["sourceQuest"] = 26332,	-- Skullsplitter Mojo
 					["coord"] = { 38.4, 48.6, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -836,8 +843,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 42736 },	-- Lashtail Hatchling
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
+					["description"] = "Available on arrival to the |cFFFFD700Bal'lal Ruins|r.\n\nThis quest gets marked as completed when its Horde counterpart '|cffe50d12Favored Skull|r' (26323) is handed in.",
 					["sourceQuest"] = 26739,	-- I Think She's Hungry
-					["description"] = "Available on arrival to the |cFFFFD700Bal'lal Ruins|r.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -846,8 +853,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 42736 },	-- Lashtail Hatchling
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
+					["description"] = "Available on arrival to the |cFFFFD700Bal'lal Ruins|r.\n\nThis quest gets marked as completed when its Alliance counterpart '|cff4a54e8Favored Skull|r' (26745) is handed in.",
 					["sourceQuest"] = 26321,	-- I Think She's Hungry
-					["description"] = "Available on arrival to the |cFFFFD700Bal'lal Ruins|r.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -866,6 +873,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26776, {	-- Ghaliri
 					["qg"] = 44017,	-- Priestess Thaalia
+					["description"] = "This quest gets marked as completed when its Horde counterpart '|cffe50d12Surkhan|r' (26386) is handed in.",
 					["sourceQuest"] = 26775,	-- Be Raptor
 					["coord"] = { 53.4, 66.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -1019,6 +1027,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1422 },	-- Corporal Sethman
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
+					["description"] = "This quest gets marked as completed when its Horde counterpart '|cffe50d12I Think She's Hungry|r' (26321) is handed in.",
 					["sourceQuest"] = 26738,	-- Just Hatched
 					["coord"] = { 46.9, 10.8, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -1034,6 +1043,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2465 },	-- Far Seer Mok'thardin
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
+					["description"] = "This quest gets marked as completed when its Alliance counterpart '|cff4a54e8I Think She's Hungry|r' (26739) is handed in.",
 					["sourceQuest"] = 26317,	-- A Lashtail Hatchling
 					["coord"] = { 38.4, 51.0, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -1065,6 +1075,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1422 },	-- Corporal Sethman
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
+					["description"] = "Automatically granted after obtaining 7 'Jungle Remedies' during the quest |cFFFFD700Bad Medicine|r.\n\nThis quest gets marked as completed when its Horde counterpart '|cffe50d12A Lashtail Hatchling|r' (26317) is handed in.",
 					["sourceQuest"] = 26732,	-- Bad Medicine
 					["coord"] = { 46.9, 10.8, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -1085,7 +1096,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 770 },	-- Corporal Kaleb
 						{ "i", 4085 },	-- Krazek's Crock Pot
 					},
-					["coord"] = { 47.0, 10.6, NORTHERN_STRANGLETHORN },
+					["coord"] = { 47.1, 10.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1151,6 +1162,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26774, {	-- Mind Control (A)
 					["qg"] = 44017,	-- Priestess Thaalia
+					["description"] = "This quest gets marked as completed when its Horde counterpart '|cffe50d12Mind Control|r' (26360) is handed in.",
 					["sourceQuest"] = 26773,	-- See Raptor
 					["coord"] = { 53.4, 66.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -1165,6 +1177,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26360, {	-- Mind Control (H)
 					["qg"] = 42812,	-- Priestess Hu'rala
+					["description"] = "This quest gets marked as completed when its Alliance counterpart '|cff4a54e8Mind Control|r' (26774) is handed in.",
 					["sourceQuest"] = 26359,	-- See Raptor
 					["coord"] = { 63.4, 39.0, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -1179,6 +1192,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26772, {	-- Mind Vision (A)
 					["qg"] = 44017,	-- Priestess Thaalia
+					["description"] = "This quest gets marked as completed when its Horde counterpart '|cffe50d12Mind Vision|r' (26351) is handed in.",
 					["sourceQuest"] = 26749,	-- Priestess Thaalia
 					["coord"] = { 53.4, 66.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -1193,6 +1207,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26351, {	-- Mind Vision (H)
 					["qg"] = 42812,	-- Priestess Hu'rala
+					["description"] = "This quest gets marked as completed when its Alliance counterpart '|cff4a54e8Mind Vision|r' (26772) is handed in.",
 					["sourceQuest"] = 26350,	-- Priestess Hu'rala
 					["coord"] = { 63.4, 39.0, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -1303,6 +1318,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26780, {	-- Nighttime in the Jungle (A)
 					["qg"] = 44043,	-- Kinnel
+					["description"] = "This quest gets marked as completed when its Horde counterpart '|cffe50d12Nighttime in the Jungle|r' (26304) is handed in.",
 					["sourceQuest"] = 26773,	-- See Raptor
 					["coord"] = { 53.2, 66.5, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -1316,6 +1332,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26304, {	-- Nighttime in the Jungle (H)
 					["qg"] = 42813,	-- Kil'karil
+					["description"] = "This quest gets marked as completed when its Alliance counterpart '|cff4a54e8Nighttime in the Jungle|r' (26780) is handed in.",
 					["sourceQuest"] = 26359,	-- See Raptor
 					["coord"] = { 63.2, 39.8, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -1423,6 +1440,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26751, {	-- Population Con-Troll (A)
 					["qg"] = 733,	-- Sergeant Yohwa
+					["description"] = "This quest gets marked as completed when its Horde counterpart '|cffe50d12Population Con-Troll|r' (26338) is handed in.",
 					["sourceQuest"] = 26746,	-- A Nose for This Sort of Thing
 					["coord"] = { 47.5, 10.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -1444,6 +1462,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26338, {	-- Population Con-Troll (H)
 					["qg"] = 2465,	-- Far Seer Mok'thardin
+					["description"] = "This quest gets marked as completed when its Alliance counterpart '|cff4a54e8Population Con-Troll|r' (26751) is handed in.",
 					["sourceQuest"] = 26330,	-- Who's a Big Troll?
 					["coord"] = { 38.3, 51.0, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -1465,6 +1484,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26350, {	-- Priestess Hu'rala
 					["qg"] = 2497,	-- Nimboya
+					["description"] = "This quest gets marked as completed when its Horde counterpart '|cffe50d12Priestess Thaalia|r' (26749) is handed in.",
 					["sourceQuest"] = 26334,	-- Bloodlord Mandokir
 					["coord"] = { 38.4, 48.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -1472,6 +1492,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26749, {	-- Priestess Thaalia
 					["qg"] = 43884,	-- Osborn Obnoticus
+					["description"] = "This quest gets marked as completed when its Alliance counterpart '|cff4a54e8Priestess Thaalia|r' (26350) is handed in.",
 					["sourceQuest"] = 26748,	-- Bloodlord Mandokir
 					["coord"] = { 47.1, 10.5, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -1719,6 +1740,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26773, {	-- See Raptor (A)
 					["qg"] = 44017,	-- Priestess Thaalia
+					["description"] = "This quest gets marked as completed when its Horde counterpart '|cffe50d12See Raptor|r' (26359) is handed in.",
 					["sourceQuest"] = 26772,	-- Mind Vision
 					["coord"] = { 53.4, 66.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -1726,6 +1748,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26359, {	-- See Raptor (H)
 					["qg"] = 42812,	-- Priestess Hu'rala
+					["description"] = "This quest gets marked as completed when its Alliance counterpart '|cff4a54e8See Raptor|r' (26773) is handed in.",
 					["sourceQuest"] = 26351,	-- Mind Vision
 					["coord"] = { 63.4, 39.0, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -1993,6 +2016,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26386, {	-- Surkhan
 					["qg"] = 42812,	-- Priestess Hu'rala
+					["description"] = "This quest gets marked as completed when its Alliance counterpart '|cff4a54e8Ghaliri|r' (26776) is handed in.",
 					["sourceQuest"] = 26362,	-- Be Raptor
 					["coord"] = { 63.4, 39.0, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -2178,7 +2202,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26838,	-- Rebels Without a Clue
 						28699,	-- Hero's Call: Northern Stranglethorn!
 					},
-					["coord"] = { 47.5, 10.2, NORTHERN_STRANGLETHORN },
+					["coord"] = { 47.6, 10.2, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2498,6 +2522,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26781, {	-- The Mind's Eye (A)
 					["qg"] = 44019,	-- Livingston Marshal
+					["description"] = "This quest gets marked as completed when its Horde counterpart '|cffe50d12The Mind's Eye|r' (26303) is handed in.",
 					["coord"] = { 53.2, 66.9, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2523,6 +2548,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26303, {	-- The Mind's Eye (H)
 					["qg"] = 2519,	-- Kin'weelay
+					["description"] = "This quest gets marked as completed when its Alliance counterpart '|cff4a54e8The Mind's Eye|r' (26781) is handed in.",
 					["sourceQuest"] = 26302,	-- Chasing Yenniku's Fate
 					["coord"] = { 63.0, 41.4, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -2535,11 +2561,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(26782, {	-- The Mosh'Ogg Bounty (A) -- TODO:: how is this version obtained?
-					-- CRIEVE NOTE: On play through, determine which of these is used.
-					-- The text "What was I just saying? Oh yes... some <SWASHBUCKLING HERO/BREATHTAKING HEROINE> found this ogre hand, and Mok'thardin thinks it means that the ogres have some special artifact. I've seen them guarding a chest up in some ruins behind their mound. Care to fetch it for me?" might mean that there's a requirement of a prior quest in there, so I'll try it on a character that has loremaster in classic and another that doesn't.
-					["qg"] = 44017,	-- Wulfred Harrys
-					["coord"] = { 53.2, 66.2, NORTHERN_STRANGLETHORN },
+				q(26782, {	-- The Mosh'Ogg Bounty (A)
+					["qg"] = 44018,	-- Wulfred Harrys
+					["description"] = "This quest is offered to players that HAVE completed '|cff4a54e8The Source of the Madness|r' (26734) at Rebel Camp.\n\n Also, it gets marked as completed when following quests are handed in:\n- |cffe50d12The Mosh'Ogg Bounty|r (26399);\n- |cff4a54e8The Mosh'Ogg Bounty|r (26783).",
+					["coord"] = { 53.4, 66.3, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2554,7 +2579,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26783, {	-- The Mosh'Ogg Bounty (A)
 					["qg"] = 44018,	-- Wulfred Harrys
-					["coord"] = { 53.3, 66.2, NORTHERN_STRANGLETHORN },
+					["description"] = "This quest is offered to players that HAVE NOT completed '|cff4a54e8The Source of the Madness|r' (26734) at Rebel Camp.\n\n Also, it gets marked as completed when following quests are handed in:\n- |cffe50d12The Mosh'Ogg Bounty|r (26399);\n- |cff4a54e8The Mosh'Ogg Bounty|r (26782).",
+					["coord"] = { 53.4, 66.3, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2567,8 +2593,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(26399, {	-- The Mosh'Ogg Bounty
+				q(26399, {	-- The Mosh'Ogg Bounty (H)
 					["qg"] = 42814,	-- Skeezy Whillzap
+					["description"] = "This quest gets marked as completed when following quests are handed in:\n- |cff4a54e8The Mosh'Ogg Bounty|r (26782);\n- |cff4a54e8The Mosh'Ogg Bounty|r (26783).",
 					["sourceQuest"] = 26407,	-- Mosh'Ogg Handiwork
 					["coord"] = { 63.4, 41.1, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -2784,6 +2811,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26763, {	-- Venture Company Mining (A)
 					["qg"] = 773,	-- Krazek
+					["description"] = "This quest gets marked as completed when its Horde counterpart '|cffe50d12Venture Company Mining|r' (26403) is handed in.",
 					["sourceQuest"] = 26740,	-- Krazek's Cookery
 					["coord"] = { 43.5, 23.1, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -2818,6 +2846,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26403, {	-- Venture Company Mining (H)
 					["qg"] = 42814,	-- Skeezy Whillzap
+					["description"] = "This quest gets marked as completed when its Alliance counterpart '|cff4a54e8Venture Company Mining|r' (26763) is handed in.",
 					["sourceQuest"] = 26399,	-- The Mosh'Ogg Bounty
 					["coord"] = { 63.7, 39.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -2896,6 +2925,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 2076 },	-- Bubbling Cauldron
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
+					["description"] = "This quest gets marked as completed when its Horde counterpart '|cffe50d12A Physical Specimen|r' (26747) is handed in.",
 					["sourceQuest"] = 26325,	-- A Nose for This Sort of Thing
 					["coord"] = { 38.5, 48.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -2947,6 +2977,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26779, {	-- Zul'Mamwe Mambo (A)
 					["qg"] = 44021,	-- Ghaliri
+					["description"] = "This quest gets marked as completed when its Horde counterpart '|cffe50d12Zul'Mamwe Mambo|r' (26405) is handed in.",
 					["sourceQuest"] = 26773,	-- See Raptor
 					["coord"] = { 52.6, 66.8, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -2985,6 +3016,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26405, {	-- Zul'Mamwe Mambo (H)
 					["qg"] = 42811,	-- Surkhan
+					["description"] = "This quest gets marked as completed when its Alliance counterpart '|cff4a54e8Zul'Mamwe Mambo|r' (26779) is handed in.",
 					["sourceQuest"] = 26359,	-- See Raptor
 					["coord"] = { 63.2, 38.7, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
@@ -3096,7 +3128,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(VENDORS, {
 				n(734, {	-- Corporal Bluth <Camp Trader>
 					-- #if AFTER CATA
-					["coord"] = { 47.2, 10.2, NORTHERN_STRANGLETHORN },
+					["coord"] = { 47.4, 10.2, NORTHERN_STRANGLETHORN },
 					-- #else
 					["coord"] = { 38.0, 3.0, STRANGLETHORN_VALE },
 					-- #endif
@@ -3124,6 +3156,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 35.8, 10.7, STRANGLETHORN_VALE },
 					-- #endif
+					["sym"] = {{"select","itemID",
+						2523,	-- Bullova
+						2522,	-- Crescent Axe
+						2530,	-- Francisca
+						2531,	-- Great Axe
+					}},
 					["groups"] = {
 						i(12250, {	-- Midnight Axe
 							["isLimited"] = true,
@@ -3403,7 +3441,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 
 root(ROOTS.HiddenQuestTriggers, m(EASTERN_KINGDOMS, {
 	m(NORTHERN_STRANGLETHORN, {
-		q(26412),	-- The Mosh'Ogg Bounty triggers with 'The Mosh'Ogg Bounty' (26783)
+		q(26412),	-- The Mosh'Ogg Bounty triggers with 'The Mosh'Ogg Bounty' (q:26782, 26783, 26399)
+		q(28855),	-- Triggers when you collect the 7th "Jungle Remedy" during the Bad Medicine (q:26732). A Lashtail Hatchling will start following you
 	}),
 }));
 -- #endif
