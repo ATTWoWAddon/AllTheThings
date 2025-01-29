@@ -31,7 +31,6 @@ for key, value in pairs({
 		[-146] = 1060551,										-- The Everbloom
 		[-147] = 1042065,										-- Upper Blackrock Spire
 	-- Outposts in Draenor
-		[-360] = 254118,									-- Arcane Sanctum
 		[-361] = 252185,						-- Artillery Tower
 		[-390] = 901746,								-- Smuggler's Den
 		[-391] = 413582,						-- Stoktron Brewery (alliance)
@@ -112,7 +111,6 @@ for key, value in pairs({
 		[-146] = GetRealZoneText(1279),									-- The Everbloom
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
 	-- Outposts in Draenor
-		[-360] = select(2,GetAchievementInfo(8987)),							-- Arcane Sanctum
 		[-361] = GetSpellName(182108).." Tower",								-- Artillery Tower
 		[-390] = C_Map.GetAreaInfo(7288),										-- Smuggler's Den (Spires of Arak)
 		[-391] = C_Map.GetAreaInfo(7291),										-- Stoktron Brewery (Spires of Arak)

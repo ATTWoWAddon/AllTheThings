@@ -291,7 +291,7 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(QUESTS, {
-					n(-360, {	-- Arcane Sanctum
+					header(HEADERS.Achievement, 8987, {	-- Arcane Sanctum
 						q(34631, {	-- An Audience With The Archmage
 							["provider"] = { "n", 79133 },	-- Foreman Eksos
 							["coord"] = { 69.8, 20.8, TALADOR },
