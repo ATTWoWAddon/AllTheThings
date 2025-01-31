@@ -446,8 +446,6 @@ for key,value in pairs({
 		[-361] = "Артиллерийная башня",								-- Artillery Tower
 	-- BFA Outposts
 		[-397] = "Аванпосты",										-- Outposts
-	-- Misc
-		[-493] = "Сломанный лут с миссий",							-- Broken Mission Loot
 	-- Blizzard Events and Anniversaries
 		[-543] = "Вторжение Легиона",								-- Legion Invasions
 	-- Mists of Pandaria PvP Seasons

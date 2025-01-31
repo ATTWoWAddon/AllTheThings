@@ -467,8 +467,6 @@ for key,value in pairs({
 		[-361] = GetSpellName(182108).." 塔",						-- Artillery Tower
 	-- BFA Outposts
 		[-397] = "哨站",												-- Outposts
-	-- Misc
-		[-493] = "要塞任务拾取",										-- Header for WoD Mission Loot
 	-- Blizzard Events and Anniversaries
 		[-543] = "军团入侵",											-- Legion Invasions
 	-- Mists of Pandaria PvP Seasons

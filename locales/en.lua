@@ -39,8 +39,6 @@ for key, value in pairs({
 		[-362] = 606547,						-- Peak of Serenity
 	-- BFA Outposts
 		[-397] = 1103069,							-- Outposts
-	-- Misc
-		[-493] = 1103070,						-- Temporary Header WoD Mission Loot
 	-- Blizzard Events and Anniversaries
 		[-543] = app.asset("Interface_Linvas"),												-- Legion Invasions
 	-- PvP Headers
@@ -119,8 +117,6 @@ for key, value in pairs({
 		[-362] = DUNGEON_FLOOR_KUNLAISUMMITSCENARIO0,							-- Peak of Serenity
 	-- BFA Outposts
 		[-397] = "Outposts",													-- Outposts
-	-- Misc
-		[-493] = "Garrison Mission Loot",										-- Header for WoD Mission Loot
 	-- Blizzard Events and Anniversaries
 		[-543] = "Legion Invasions",											-- Legion Invasions
 	-- Mists of Pandaria PvP Seasons

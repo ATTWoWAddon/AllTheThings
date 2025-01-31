@@ -459,8 +459,6 @@ if app.IsRetail then
 		[-361] = GetSpellName(182108).." 塔",							-- Artillery Tower
 	-- BFA Outposts
 		[-397] = "前哨站",												-- Outposts
-	-- Misc
-		[-493] = "要塞任務拾取",										-- Header for WoD Mission Loot
 	-- Blizzard Events and Anniversaries
 		[-543] = "軍團入侵",											-- Legion Invasions
 	-- Mists of Pandaria PvP Seasons
