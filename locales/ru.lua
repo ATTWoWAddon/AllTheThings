@@ -444,8 +444,6 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Outposts in Draenor
 		[-361] = "Артиллерийная башня",								-- Artillery Tower
-	-- BFA Outposts
-		[-397] = "Аванпосты",										-- Outposts
 	-- Blizzard Events and Anniversaries
 		[-543] = "Вторжение Легиона",								-- Legion Invasions
 	-- Mists of Pandaria PvP Seasons

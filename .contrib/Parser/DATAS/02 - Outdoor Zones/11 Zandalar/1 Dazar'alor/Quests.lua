@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			-- verify SQ for "the blood gate."  it may become available after "ateena's fall."  also, is "halting the empire's fall" (which sends you to baine, who offers this quest) a breadcrumb?  "the blood gate" isn't hidden like quests typically are when you have their breadcrumb in their log, so i'm not sure if "halting" is optional/disappears/becomes unavailable after doing "the blood gate."  also, is it available with *only* having done nazmir, or do you also have to finish the main zuldazar questline as well?
 			-- figure out if "The Warchief's Order" and "The Warfront Looms" are breadcrumbs.  they're both auto-popup quests after you hit 120, unlock WQs, and relog.  they both direct you to go to dazar'alor and speak with an NPC to pursue nazjatar and the arathi warfront, respectively.
 
-			n(-397, {	-- Outposts
+			n(OUTPOSTS, {
 				["description"] = "Horde Outposts allow you to set up additional bases in Kul Tiras.  You can buy Scouting Reports from Ransa, the vendor next to The Banshee's Wail.  Each one will start a mission on your Mission Command Table.  After you complete the initial questline, you'll be offered additional missions to upgrade your outposts.",
 				["g"] = {
 					i(165728, {	-- Outpost Upgrade: The Great Seal

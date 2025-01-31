@@ -37,8 +37,6 @@ for key, value in pairs({
 		[-392] = 413582,						-- Hearthfire Tavern (horde)
 	-- Pre Class Hall Monk
 		[-362] = 606547,						-- Peak of Serenity
-	-- BFA Outposts
-		[-397] = 1103069,							-- Outposts
 	-- Blizzard Events and Anniversaries
 		[-543] = app.asset("Interface_Linvas"),												-- Legion Invasions
 	-- PvP Headers
@@ -115,8 +113,6 @@ for key, value in pairs({
 		[-392] = C_Map.GetAreaInfo(7290),										-- Hearthfire Tavern
 	-- Pre Class Hall Monk
 		[-362] = DUNGEON_FLOOR_KUNLAISUMMITSCENARIO0,							-- Peak of Serenity
-	-- BFA Outposts
-		[-397] = "Outposts",													-- Outposts
 	-- Blizzard Events and Anniversaries
 		[-543] = "Legion Invasions",											-- Legion Invasions
 	-- Mists of Pandaria PvP Seasons

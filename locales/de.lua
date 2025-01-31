@@ -444,8 +444,6 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- BFA Outposts
-		[-397] = "Außenposten",										-- Outposts
 	-- Shadowlands Header
 		[-979] = "Mittler Ve'ken & Mittler Ve'nott",				-- Broker Ve'ken & Broker Ve'nott
 		[-924] = "Reisenetzwerk",									-- Transport Network

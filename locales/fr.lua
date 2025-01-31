@@ -453,8 +453,6 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- BFA Outposts
-		[-397] = "Avant-postes",									-- Outposts
 	-- Misc
 		[-543] = "Invasions de Legion ",							-- Legion Invasions
 	-- Mists of Pandaria PvP Seasons

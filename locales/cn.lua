@@ -465,8 +465,6 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Outposts in Draenor
 		[-361] = GetSpellName(182108).." 塔",						-- Artillery Tower
-	-- BFA Outposts
-		[-397] = "哨站",												-- Outposts
 	-- Blizzard Events and Anniversaries
 		[-543] = "军团入侵",											-- Legion Invasions
 	-- Mists of Pandaria PvP Seasons
