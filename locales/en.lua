@@ -31,8 +31,6 @@ for key, value in pairs({
 		[-146] = 1060551,										-- The Everbloom
 		[-147] = 1042065,										-- Upper Blackrock Spire
 	-- Outposts in Draenor
-		[-357] = 975743,						-- Sparring Arena Outpost (Gorgond)
-		[-358] = 975739,							-- Lumber Mill Outpost (Gorgrond)
 		[-360] = 254118,									-- Arcane Sanctum
 		[-361] = 252185,						-- Artillery Tower
 		[-390] = 901746,								-- Smuggler's Den
@@ -114,8 +112,6 @@ for key, value in pairs({
 		[-146] = GetRealZoneText(1279),									-- The Everbloom
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
 	-- Outposts in Draenor
-		[-357] = GetSpellName(171866),											-- Sparring Arena Outpost
-		[-358] = GetSpellName(164028),											-- Lumber Mill Outpost
 		[-360] = select(2,GetAchievementInfo(8987)),							-- Arcane Sanctum
 		[-361] = GetSpellName(182108).." Tower",								-- Artillery Tower
 		[-390] = C_Map.GetAreaInfo(7288),										-- Smuggler's Den (Spires of Arak)
