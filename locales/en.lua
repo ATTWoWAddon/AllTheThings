@@ -35,12 +35,11 @@ for key, value in pairs({
 		[-358] = 975739,							-- Lumber Mill Outpost (Gorgrond)
 		[-360] = 254118,									-- Arcane Sanctum
 		[-361] = 252185,						-- Artillery Tower
-	-- Pre Class Hall Monk
-		[-362] = 606547,						-- Peak of Serenity
-	-- Draenor Outposts
 		[-390] = 901746,								-- Smuggler's Den
 		[-391] = 413582,						-- Stoktron Brewery (alliance)
 		[-392] = 413582,						-- Hearthfire Tavern (horde)
+	-- Pre Class Hall Monk
+		[-362] = 606547,						-- Peak of Serenity
 	-- BFA Outposts
 		[-397] = 1103069,							-- Outposts
 	-- Misc
@@ -119,12 +118,11 @@ for key, value in pairs({
 		[-358] = GetSpellName(164028),											-- Lumber Mill Outpost
 		[-360] = select(2,GetAchievementInfo(8987)),							-- Arcane Sanctum
 		[-361] = GetSpellName(182108).." Tower",								-- Artillery Tower
-	-- Pre Class Hall Monk
-		[-362] = DUNGEON_FLOOR_KUNLAISUMMITSCENARIO0,							-- Peak of Serenity
-	-- Draenor Outposts
 		[-390] = C_Map.GetAreaInfo(7288),										-- Smuggler's Den (Spires of Arak)
 		[-391] = C_Map.GetAreaInfo(7291),										-- Stoktron Brewery (Spires of Arak)
 		[-392] = C_Map.GetAreaInfo(7290),										-- Hearthfire Tavern
+	-- Pre Class Hall Monk
+		[-362] = DUNGEON_FLOOR_KUNLAISUMMITSCENARIO0,							-- Peak of Serenity
 	-- BFA Outposts
 		[-397] = "Outposts",													-- Outposts
 	-- Misc
