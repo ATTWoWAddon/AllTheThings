@@ -7,6 +7,7 @@ FILLED_TRAVELERS_LOG = createHeader({
 	icon = 4696085,
 	text = {
 		en = "Filled Travelers Log",
+		cn = "旅行者日志进度",
 	},
 	description = {
 		en = "This reward is given for filling the Travel Points Progress Bar during the month.",

@@ -31,6 +31,7 @@ PLUNDERSTORE = createHeader({
 	-- #endif
 	text = {
 		en = "Plunderstore",
+		cn = "霸业商城",
 	},
 	description = {
 		en = "This ingame shop menu allows you to purchase new and returning rewards in exchange for Plunder earned during the event.",
