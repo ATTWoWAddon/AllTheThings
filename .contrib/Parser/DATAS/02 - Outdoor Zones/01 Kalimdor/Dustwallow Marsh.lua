@@ -6,9 +6,11 @@ ALCAZ_ISLAND = createHeader({
 	icon = 132996,
 	text = {
 		en = "Alcaz Island",
+		cn = "奥卡兹岛",
 	},
 	description = {
 		en = "Return to Alcaz Island to get to get to the bottom of Dr. Weavil's insidious plans, and perhaps you will take home a nice souvenir.",
+		cn = "回到奥卡兹岛，揭开维维尔博士邪恶计划最深处的秘密，也许你还能带一些精美的纪念品回家。",
 	},
 });
 root(ROOTS.Zones, m(KALIMDOR, {
