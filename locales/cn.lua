@@ -465,8 +465,6 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Outposts in Draenor
 		[-361] = GetSpellName(182108).." 塔",						-- Artillery Tower
-	-- Blizzard Events and Anniversaries
-		[-543] = "军团入侵",											-- Legion Invasions
 	-- Mists of Pandaria PvP Seasons
 		[-675] = select(2, GetAchievementInfo(8214)).."第12赛季",	-- Malevolent Gladiator: Season 12
 		[-653] = "荣誉装备暴虐赛季",									-- Honor Gear Tyrannical (S13)

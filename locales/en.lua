@@ -35,8 +35,6 @@ for key, value in pairs({
 		[-390] = 901746,								-- Smuggler's Den
 		[-391] = 413582,						-- Stoktron Brewery (alliance)
 		[-392] = 413582,						-- Hearthfire Tavern (horde)
-	-- Blizzard Events and Anniversaries
-		[-543] = app.asset("Interface_Linvas"),												-- Legion Invasions
 	-- PvP Headers
 		-- [-651] = 311230,									-- Not used yet. Future PvP Icons if needed
 		-- [-652] = 311227,										-- Not used yet. Future PvP Icons if needed
@@ -109,8 +107,6 @@ for key, value in pairs({
 		[-390] = C_Map.GetAreaInfo(7288),										-- Smuggler's Den (Spires of Arak)
 		[-391] = C_Map.GetAreaInfo(7291),										-- Stoktron Brewery (Spires of Arak)
 		[-392] = C_Map.GetAreaInfo(7290),										-- Hearthfire Tavern
-	-- Blizzard Events and Anniversaries
-		[-543] = "Legion Invasions",											-- Legion Invasions
 	-- Mists of Pandaria PvP Seasons
 		[-675] = select(2, GetAchievementInfo(8214))..": Season 12",			-- Malevolent Gladiator: Season 12
 		[-653] = "Honor Gear Tyrannical Season",								-- Honor Gear Tyrannical (S13)

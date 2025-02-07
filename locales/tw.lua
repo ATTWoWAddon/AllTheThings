@@ -457,8 +457,6 @@ if app.IsRetail then
 	for key,value in pairs({
 	-- Outposts in Draenor
 		[-361] = GetSpellName(182108).." 塔",							-- Artillery Tower
-	-- Blizzard Events and Anniversaries
-		[-543] = "軍團入侵",											-- Legion Invasions
 	-- Mists of Pandaria PvP Seasons
 		[-675] = select(2, GetAchievementInfo(8214)).."第12賽季",		-- Malevolent Gladiator: Season 12
 		[-653] = "榮譽裝備暴虐賽季",									-- Honor Gear Tyrannical (S13)

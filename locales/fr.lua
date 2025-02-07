@@ -453,8 +453,6 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Misc
-		[-543] = "Invasions de Legion ",							-- Legion Invasions
 	-- Mists of Pandaria PvP Seasons
 		[-675] = select(2, GetAchievementInfo(8214))..": Saison 12",	-- Malevolent Gladiator: Season 12
 		[-653] = "Équipement Honneur Saison Tyrannique",				-- Honor Gear Tyrannical Season
