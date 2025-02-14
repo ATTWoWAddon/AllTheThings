@@ -455,7 +455,6 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Mists of Pandaria PvP Seasons
 		[-653] = "Équipement Honneur Saison Tyrannique",				-- Honor Gear Tyrannical Season
-		[-676] = select(2, GetAchievementInfo(8791))..": Saison 13",	-- Tyrannical Gladiator: Season 13
 		[-652] = "Équipement Honneur Saison Dramatique",				-- Honor Gear Grievous Season
 		[-651] = "Équipement Honneur Saison Orgueilleux",				-- Honor Gear Prideful Season
 	-- Shadowlands Header
