@@ -466,7 +466,6 @@ for key,value in pairs({
 	-- Outposts in Draenor
 		[-361] = GetSpellName(182108).." 塔",						-- Artillery Tower
 	-- Mists of Pandaria PvP Seasons
-		[-675] = select(2, GetAchievementInfo(8214)).."第12赛季",	-- Malevolent Gladiator: Season 12
 		[-653] = "荣誉装备暴虐赛季",									-- Honor Gear Tyrannical (S13)
 		[-676] = select(2, GetAchievementInfo(8791)).."第13赛季",	-- Tyrannical Gladiator: Season 13
 		[-652] = "荣誉装备恶孽赛季",									-- Honor Gear Grievous (S14)

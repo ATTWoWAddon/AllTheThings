@@ -42,7 +42,6 @@ for key, value in pairs({
 		[-652] = 838515,						-- Honor Gear Grievous (S14)
 		[-653] = 838515,						-- Honor Gear Tyrannical (S13)
 	-- Mists of Pandaria PvP Seasons
-		[-675] = 838515,						-- Malevolent Gladiator: Season 12
 		[-676] = 838515,						-- Tyrannical Gladiator: Season 13
 		[-677] = 838515,						-- Grievous Gladiator: Season 14
 		[-678] = 838515,						-- Prideful Gladiator: Season 15
@@ -108,7 +107,6 @@ for key, value in pairs({
 		[-391] = C_Map.GetAreaInfo(7291),										-- Stoktron Brewery (Spires of Arak)
 		[-392] = C_Map.GetAreaInfo(7290),										-- Hearthfire Tavern
 	-- Mists of Pandaria PvP Seasons
-		[-675] = select(2, GetAchievementInfo(8214))..": Season 12",			-- Malevolent Gladiator: Season 12
 		[-653] = "Honor Gear Tyrannical Season",								-- Honor Gear Tyrannical (S13)
 		[-676] = select(2, GetAchievementInfo(8791))..": Season 13",			-- Tyrannical Gladiator: Season 13
 		[-652] = "Honor Gear Grievous Season",									-- Honor Gear Grievous (S14)

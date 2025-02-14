@@ -458,7 +458,6 @@ if app.IsRetail then
 	-- Outposts in Draenor
 		[-361] = GetSpellName(182108).." 塔",							-- Artillery Tower
 	-- Mists of Pandaria PvP Seasons
-		[-675] = select(2, GetAchievementInfo(8214)).."第12賽季",		-- Malevolent Gladiator: Season 12
 		[-653] = "榮譽裝備暴虐賽季",									-- Honor Gear Tyrannical (S13)
 		[-676] = select(2, GetAchievementInfo(8791)).."第13賽季",		-- Tyrannical Gladiator: Season 13
 		[-652] = "榮譽裝備惡孽賽季",									-- Honor Gear Grievous (S14)
