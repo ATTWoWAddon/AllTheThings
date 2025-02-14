@@ -41,7 +41,6 @@ for key, value in pairs({
 		[-651] = 838515,						-- Honor Gear Prideful (S15)
 		[-652] = 838515,						-- Honor Gear Grievous (S14)
 	-- Mists of Pandaria PvP Seasons
-		[-677] = 838515,						-- Grievous Gladiator: Season 14
 		[-678] = 838515,						-- Prideful Gladiator: Season 15
 	-- Warlords of Dreanor PvP Seasons
 		[-679] = 1127958,								-- Primal Gladiator: Warlords Season 1
@@ -106,7 +105,6 @@ for key, value in pairs({
 		[-392] = C_Map.GetAreaInfo(7290),										-- Hearthfire Tavern
 	-- Mists of Pandaria PvP Seasons
 		[-652] = "Honor Gear Grievous Season",									-- Honor Gear Grievous (S14)
-		[-677] = select(2, GetAchievementInfo(8643)),							-- Grievous Gladiator: Season 14
 		[-651] = "Honor Gear Prideful Season",									-- Honor Gear Prideful (S15)
 		[-678] = select(2, GetAchievementInfo(8666)),							-- Prideful Gladiator: Season 15
 	-- Warlords of Dreanor PvP Seasons
