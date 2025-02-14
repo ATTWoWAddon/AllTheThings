@@ -38,8 +38,6 @@ for key, value in pairs({
 	-- PvP Headers
 		-- [-651] = 311230,									-- Not used yet. Future PvP Icons if needed
 		[-651] = 838515,						-- Honor Gear Prideful (S15)
-	-- Mists of Pandaria PvP Seasons
-		[-678] = 838515,						-- Prideful Gladiator: Season 15
 	-- Warlords of Dreanor PvP Seasons
 		[-679] = 1127958,								-- Primal Gladiator: Warlords Season 1
 		[-680] = 1137556,							-- Wild Gladiator: Warlords Season 2
@@ -103,7 +101,6 @@ for key, value in pairs({
 		[-392] = C_Map.GetAreaInfo(7290),										-- Hearthfire Tavern
 	-- Mists of Pandaria PvP Seasons
 		[-651] = "Honor Gear Prideful Season",									-- Honor Gear Prideful (S15)
-		[-678] = select(2, GetAchievementInfo(8666)),							-- Prideful Gladiator: Season 15
 	-- Warlords of Dreanor PvP Seasons
 		[-679] = select(2, GetAchievementInfo(9232)),							-- Primal Gladiator: Warlords Season 1
 		[-680] = select(2, GetAchievementInfo(10096)),							-- Wild Gladiator: Warlords Season 2
