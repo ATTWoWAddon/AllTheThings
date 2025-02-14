@@ -35,8 +35,6 @@ for key, value in pairs({
 		[-390] = 901746,								-- Smuggler's Den
 		[-391] = 413582,						-- Stoktron Brewery (alliance)
 		[-392] = 413582,						-- Hearthfire Tavern (horde)
-	-- Warlords of Dreanor PvP Seasons
-		[-681] = 1137555,							-- Warmongering Gladiator: Warlords Season 3
 	-- SL Headers
 		[-901] = 3726261,																	-- Covenant Callings
 		[-902] = 3726261,																	-- Renown
@@ -94,8 +92,6 @@ for key, value in pairs({
 		[-390] = C_Map.GetAreaInfo(7288),										-- Smuggler's Den (Spires of Arak)
 		[-391] = C_Map.GetAreaInfo(7291),										-- Stoktron Brewery (Spires of Arak)
 		[-392] = C_Map.GetAreaInfo(7290),										-- Hearthfire Tavern
-	-- Warlords of Dreanor PvP Seasons
-		[-681] = select(2, GetAchievementInfo(10097)),							-- Warmongering Gladiator: Warlords Season 3
 	-- Shadowlands Header
 		[-901] = GetSpellName(339041),											-- Covenant Callings
 		[-902] = COVENANT_SANCTUM_TAB_RENOWN,									-- Renown
