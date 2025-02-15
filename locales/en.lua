@@ -36,7 +36,6 @@ for key, value in pairs({
 		[-391] = 413582,						-- Stoktron Brewery (alliance)
 		[-392] = 413582,						-- Hearthfire Tavern (horde)
 	-- Warlords of Dreanor PvP Seasons
-		[-679] = 1127958,								-- Primal Gladiator: Warlords Season 1
 		[-680] = 1137556,							-- Wild Gladiator: Warlords Season 2
 		[-681] = 1137555,							-- Warmongering Gladiator: Warlords Season 3
 	-- SL Headers
@@ -97,7 +96,6 @@ for key, value in pairs({
 		[-391] = C_Map.GetAreaInfo(7291),										-- Stoktron Brewery (Spires of Arak)
 		[-392] = C_Map.GetAreaInfo(7290),										-- Hearthfire Tavern
 	-- Warlords of Dreanor PvP Seasons
-		[-679] = select(2, GetAchievementInfo(9232)),							-- Primal Gladiator: Warlords Season 1
 		[-680] = select(2, GetAchievementInfo(10096)),							-- Wild Gladiator: Warlords Season 2
 		[-681] = select(2, GetAchievementInfo(10097)),							-- Warmongering Gladiator: Warlords Season 3
 	-- Shadowlands Header
