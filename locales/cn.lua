@@ -501,6 +501,10 @@ for key,value in pairs({
 		[-1120] = "马鲁克半人马",											-- Maruuk Centaur
 		[-1130] = "伊斯卡拉海象人",										-- Iskaara Tuskarr
 		[-1150] = "峈姆鼹鼠人",											-- Loamm Niffen
+	-- The War Within
+		[-1208] = "入侵：维库人",												-- Vrykul
+		[-1209] = "入侵：娜迦",													-- Naga
+		[-1210] = "入侵：海盗",												-- Pirate
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5200] = "基础外观",										-- Base Appearance

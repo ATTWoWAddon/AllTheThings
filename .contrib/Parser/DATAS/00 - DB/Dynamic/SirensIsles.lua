@@ -15,12 +15,14 @@
 		readable = "Well Loved Squeaky Toy",
 		text = {
 			en = "Well Loved Squeaky Toy",
+			cn = "深受喜爱的嘎吱玩具",
 		},
 	},
 	[505476] = {
 		readable = "Stone Carver's Scramseax",
 		text = {
 			en = "Stone Carver's Scramseax",
+			cn = "石匠的单刃猎刀",
 		},
 	},
 })
