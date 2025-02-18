@@ -401,13 +401,17 @@ app.AddCollectionTypeHandler("ItemWithAppearance", function(t)
 		if not t._missing then
 			-- TODO eventual setting to control reporting of already collected Things
 			if newAppearancesLearned > 0 then
-				app.print(L.ITEM_ID_ADDED_SHARED:format(app:SearchLink(t) or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), t.itemID, newAppearancesLearned));
+				if app.Settings:GetTooltipSetting("Report:Collected") then
+					app.print(L.ITEM_ID_ADDED_SHARED:format(app:SearchLink(t) or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), t.itemID, newAppearancesLearned));
+				end
 				app.HandleEvent("OnThingCollected", t)
 				app.UpdateRawIDs(tkey, unlockedSourceIDs)
 			end
 		else
 			-- always report missing
-			app.print(L[newCollected and "ITEM_ID_ADDED_SHARED_MISSING" or "ITEM_ID_ADDED_MISSING"]:format(app:SearchLink(t) or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, newAppearancesLearned, app.Version));
+			if app.Settings:GetTooltipSetting("Report:Collected") then
+				app.print(L.ITEM_ID_ADDED_SHARED:format(app:SearchLink(t) or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), t.itemID, newAppearancesLearned));
+			end
 			app.HandleEvent("OnThingCollected", t)
 			app.UpdateRawIDs(tkey, unlockedSourceIDs)
 		end
