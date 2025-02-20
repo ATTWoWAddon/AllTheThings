@@ -463,8 +463,6 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Outposts in Draenor
-		[-361] = GetSpellName(182108).." 塔",						-- Artillery Tower
 	-- Shadowlands Header
 		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
 		[-924] = "传送网络",											-- Transport Network

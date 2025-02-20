@@ -504,7 +504,7 @@ root(ROOTS.Zones, {
 							}),
 						}),
 					}),
-					n(-361, {	-- Artillery Tower
+					n(ARTILLERY_TOWER, {
 						q(34982, {	-- Armor Up
 							["provider"] = { "n", 80968 },	-- Miall
 							["coord"] = { 69.8, 20.7, TALADOR },
