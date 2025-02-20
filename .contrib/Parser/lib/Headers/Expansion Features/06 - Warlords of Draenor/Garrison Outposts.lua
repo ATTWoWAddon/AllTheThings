@@ -16,6 +16,31 @@ ARTILLERY_TOWER = createHeader({
 	},
 });
 
+SMUGGLERS_DEN = createHeader({
+	readable = "Smuggler's Den",
+	icon = 901746,
+	text = {
+		en = [[~C_Map.GetAreaInfo(7288)]],
+	},
+});
+
+STOKTRON_BREWERY = createHeader({
+	readable = "Stoktron Brewery",
+	icon = 413582,
+	text = {
+		en = [[~C_Map.GetAreaInfo(7291)]],
+	},
+});
+
+HEARTHFIRE_TAVERN = createHeader({
+	readable = "Hearthfire Tavern",
+	icon = 413582,
+	text = {
+		en = [[~C_Map.GetAreaInfo(7290)]],
+	},
+});
+
+
 SPARRING_ARENA = createHeader({
 	readable = "Sparring Arena",
 	text = {
