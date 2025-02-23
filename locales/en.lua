@@ -31,7 +31,6 @@ for key, value in pairs({
 		[-146] = 1060551,										-- The Everbloom
 		[-147] = 1042065,										-- Upper Blackrock Spire
 	-- SL Headers
-		[-901] = 3726261,																	-- Covenant Callings
 		[-902] = 3726261,																	-- Renown
 		[-905] = 3675495,							-- Command Table
 		[-920] = 3257749,									-- Covenant: Necrolord
@@ -83,7 +82,6 @@ for key, value in pairs({
 		[-146] = GetRealZoneText(1279),									-- The Everbloom
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
 	-- Shadowlands Header
-		[-901] = GetSpellName(339041),											-- Covenant Callings
 		[-902] = COVENANT_SANCTUM_TAB_RENOWN,									-- Renown
 		[-905] = GetSpellName(280630),											-- Command Table
 		[-979] = "Broker Ve'ken & Broker Ve'nott",								-- Broker Ve'ken & Broker Ve'nott
