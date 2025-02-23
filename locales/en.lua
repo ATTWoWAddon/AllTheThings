@@ -80,7 +80,6 @@ for key, value in pairs({
 		[-146] = GetRealZoneText(1279),									-- The Everbloom
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
 	-- Shadowlands Header
-		[-979] = "Broker Ve'ken & Broker Ve'nott",								-- Broker Ve'ken & Broker Ve'nott
 		[-981] = GetSpellName(348869),											-- Conduits
 		-- SL Maldraxxus/Necrolord
 		[-920] = GetSpellName(321078),											-- Necrolord

@@ -464,7 +464,6 @@ if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Shadowlands Header
-		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
 		[-924] = "传送网络",											-- Transport Network
 		-- SL Bastion/Kyrian
 			[-973] = "忠诚",											-- Loyalty
