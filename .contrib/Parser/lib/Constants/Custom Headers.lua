@@ -4,7 +4,6 @@
 -- Expansion Features
 	-- SL
 	KYRIAN = -939;
-	NIGHT_FAE = -929;
 	VENTHYR = -949;
 	PATH_OF_ASCENSION = -942;
 		COURAGE = -972;
