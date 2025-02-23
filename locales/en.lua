@@ -31,7 +31,6 @@ for key, value in pairs({
 		[-146] = 1060551,										-- The Everbloom
 		[-147] = 1042065,										-- Upper Blackrock Spire
 	-- SL Headers
-		[-930] = 3675494,							-- Queen's Conservatory
 		[-939] = 3257748,										-- Covenant: Kyrian
 		[-942] = 3675496,																	-- Path of Ascension
 		[-949] = 3257751,										-- Covenant: Venthyr
@@ -76,7 +75,6 @@ for key, value in pairs({
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
 	-- Shadowlands Header
 		-- SL Ardenweald/Night Fae
-		[-930] = COVENANT_SANCTUM_FEATURE_NIGHT_FAE,							-- Queen's Conservatory
 		[-934] = C_Map.GetAreaInfo(12840),										-- Star Lake Amphitheater
 		-- SL Bastion/Kyrian
 		[-939] = GetSpellName(321076),											-- Kyrian
