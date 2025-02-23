@@ -5913,7 +5913,7 @@ function app:GetDataCache()
 			}),
 
 			-- Conduits
-			app.CreateDynamicHeader("conduitID", SimpleNPCGroup(-981, {suffix=EXPANSION_NAME8})),
+			app.CreateDynamicHeader("conduitID", SimpleNPCGroup(app.HeaderConstants.CONDUITS, {suffix=EXPANSION_NAME8})),
 
 			-- Currencies
 			app.CreateDynamicHeaderByValue("currencyID", {
