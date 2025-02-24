@@ -31,7 +31,6 @@ for key, value in pairs({
 		[-146] = 1060551,										-- The Everbloom
 		[-147] = 1042065,										-- Upper Blackrock Spire
 	-- SL Headers
-		[-960] = 3675493,																	-- The Ember Court
 		[-967] = 3854020,																	-- Mirror Restoration
 		[-968] = 3854020,																	-- Set A
 		[-969] = 3854020,																	-- Set B
@@ -65,7 +64,6 @@ for key, value in pairs({
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
 	-- Shadowlands Header
 		-- SL Revendreth/Venthyr
-		[-960] = COVENANT_SANCTUM_FEATURE_VENTHYR,								-- The Ember Court
 		[-967] = "Mirror Restoration",											-- Mirror Restoration
 		[-968] = "Set A",														-- Set A
 		[-969] = "Set B",														-- Set B
