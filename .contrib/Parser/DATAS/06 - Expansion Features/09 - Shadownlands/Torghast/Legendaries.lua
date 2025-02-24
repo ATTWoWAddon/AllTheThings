@@ -70,17 +70,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						i(183393),	-- Memory of an Unbreakable Will
 					},
 				}),
-				n(-986, {	-- Mort'regar
-					i(182628),	-- Memory of Bryndaor
-					i(183237),	-- Memory of the Sleeper
-					i(183262),	-- Memory of the Butcher's Bone Fragments
-					i(183281),	-- Memory of Slick Ice
-					i(183286),	-- Memory of Shaohao
-					i(183308),	-- Memory of the Endless Kings
-					i(183320),	-- Memory of the Kiss of Death
-					i(183335),	-- Memory of the Doomblade
-					i(183357),	-- Memory of the Witch Doctor
-					i(183388),	-- Memory of a Reckless Defense
+				header(HEADERS.Achievement, 14488, {	-- Mort'regar
+					["icon"] = 2178500,
+					["groups"] = {
+						i(182628),	-- Memory of Bryndaor
+						i(183237),	-- Memory of the Sleeper
+						i(183262),	-- Memory of the Butcher's Bone Fragments
+						i(183281),	-- Memory of Slick Ice
+						i(183286),	-- Memory of Shaohao
+						i(183308),	-- Memory of the Endless Kings
+						i(183320),	-- Memory of the Kiss of Death
+						i(183335),	-- Memory of the Doomblade
+						i(183357),	-- Memory of the Witch Doctor
+						i(183388),	-- Memory of a Reckless Defense
+					},
 				}),
 				n(-987, {	-- The Upper Reaches
 					i(182631),	-- Memory of a Vampiric Aura

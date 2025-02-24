@@ -31,7 +31,6 @@ for key, value in pairs({
 		[-146] = 1060551,										-- The Everbloom
 		[-147] = 1042065,										-- Upper Blackrock Spire
 	-- SL Headers
-		[-986] = 2178500,																	-- Mort'regar
 		[-987] = 2178509,																	-- The Upper Reaches
 	-- Dragonflight
 		[-1102] = 4622453,									-- Wrathion & Sabellian
@@ -55,7 +54,6 @@ for key, value in pairs({
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
 	-- Shadowlands Header
 		-- SL Torghast
-		[-986] = select(2, GetAchievementInfo(14488)),							-- Mort'regar
 		[-987] = select(2, GetAchievementInfo(14493)),							-- The Upper Reaches
 	-- Dragonflight
 		-- Autotranslate with NPC
