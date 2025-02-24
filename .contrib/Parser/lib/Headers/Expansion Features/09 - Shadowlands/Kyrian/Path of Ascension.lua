@@ -31,3 +31,11 @@ LOYALTY = createHeader({
 		tw = "忠誠",
 	},
 });
+
+WISDOM = createHeader({
+	readable = "Wisdom",
+	icon = 3536184,
+	text = {
+		en = WOWAPI_GetSpellName(3166),
+	},
+});
