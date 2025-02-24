@@ -457,7 +457,6 @@ if app.IsRetail then
 	for key,value in pairs({
 	-- Shadowlands Header
 		-- SL Revendreth/Venthyr
-			[-956] = "大審判官",										-- Grand Inquisitors
 			[-967] = "破镜重圆",										-- Mirror Restoration
 			[-968] = "組 A",											-- Set A
 			[-969] = "組 B",											-- Set B

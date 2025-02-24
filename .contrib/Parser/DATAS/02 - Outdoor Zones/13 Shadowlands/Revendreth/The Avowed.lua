@@ -206,7 +206,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								},
 							}),
 						}),
-						n(-956, {	-- Grand Inquisitors
+						n(GRAND_INQUISITORS, {
 							n(COMMON_BOSS_DROPS, {
 								["crs"] = {
 									159157,	-- Grand Inquisitor Aurica
