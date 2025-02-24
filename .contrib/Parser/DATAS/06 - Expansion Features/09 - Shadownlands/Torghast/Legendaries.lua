@@ -55,17 +55,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						i(183382),	-- Memory of a Battlelord
 					},
 				}),
-				n(-985, {	-- Coldheart Interstitia
-					i(182632),	-- Memory of Absolute Zero
-					i(183236),	-- Memory of Ursoc
-					i(183280),	-- Memory of Fragments of Ice
-					i(183287),	-- Memory of Charred Passions
-					i(183305),	-- Memory of the Shock Barrier
-					i(183322),	-- Memory of a Divine Image
-					i(183337),	-- Memory of the Zoldyck Insignia
-					i(183355),	-- Memory of the Frost Witch
-					i(183363),	-- Memory of Azj'Aqir's Agony
-					i(183393),	-- Memory of an Unbreakable Will
+				header(HEADERS.Achievement, 14483, {	-- Coldheart Interstitia
+					["icon"] = 1392911,
+					["groups"] = {
+						i(182632),	-- Memory of Absolute Zero
+						i(183236),	-- Memory of Ursoc
+						i(183280),	-- Memory of Fragments of Ice
+						i(183287),	-- Memory of Charred Passions
+						i(183305),	-- Memory of the Shock Barrier
+						i(183322),	-- Memory of a Divine Image
+						i(183337),	-- Memory of the Zoldyck Insignia
+						i(183355),	-- Memory of the Frost Witch
+						i(183363),	-- Memory of Azj'Aqir's Agony
+						i(183393),	-- Memory of an Unbreakable Will
+					},
 				}),
 				n(-986, {	-- Mort'regar
 					i(182628),	-- Memory of Bryndaor
