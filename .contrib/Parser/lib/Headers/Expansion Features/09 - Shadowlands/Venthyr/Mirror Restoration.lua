@@ -33,3 +33,21 @@ SET_A = createHeader({
 		tw = "組 A",
 	},
 });
+
+SET_B = createHeader({
+	readable = "Set B",
+	icon = 3854020,
+	text = {
+		en = "Set B",
+		-- de = "Set B",
+		-- es = "Set B",
+		-- mx = "Set B",
+		fr = "Tier B",
+		-- pt = "Set B",
+		-- it = "Set B",
+		-- ko = "Set B",
+		ru = "Набор B",
+		cn = "组 B",
+		tw = "組 B",
+	},
+});

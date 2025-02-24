@@ -457,7 +457,6 @@ if app.IsRetail then
 	for key,value in pairs({
 	-- Shadowlands Header
 		-- SL Revendreth/Venthyr
-			[-969] = "組 B",											-- Set B
 			[-970] = "組 C",											-- Set C
 			[-971] = "組 D",											-- Set D
 	-- Dragonflight

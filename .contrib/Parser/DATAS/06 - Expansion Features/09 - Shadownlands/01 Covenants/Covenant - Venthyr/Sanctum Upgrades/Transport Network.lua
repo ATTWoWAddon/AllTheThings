@@ -138,7 +138,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											}),
 										},
 									}),
-									n(-969, {	-- Set B
+									n(SET_B, {
 										["description"] = "Wowhead: |cffffffffGroup 3|r",
 										["g"] = {
 											n(BROKEN_MIRROR_B1, {
