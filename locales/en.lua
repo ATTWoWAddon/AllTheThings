@@ -31,7 +31,6 @@ for key, value in pairs({
 		[-146] = 1060551,										-- The Everbloom
 		[-147] = 1042065,										-- Upper Blackrock Spire
 	-- SL Headers
-		[-982] = 2178518,																	-- Skoldus Hall
 		[-983] = 1392920,																	-- Fracture Chambers
 		[-984] = 1392929,																	-- The Soulforges
 		[-985] = 1392911,																	-- Coldheart Interstitia
@@ -59,7 +58,6 @@ for key, value in pairs({
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
 	-- Shadowlands Header
 		-- SL Torghast
-		[-982] = select(2, GetAchievementInfo(14463)),							-- Skoldus Hall
 		[-983] = select(2, GetAchievementInfo(14473)),							-- Fracture Chambers
 		[-984] = select(2, GetAchievementInfo(14478)),							-- The Soulforges
 		[-985] = select(2, GetAchievementInfo(14483)),							-- Coldheart Interstitia

@@ -9,17 +9,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				i(183247, {	-- Memory of a Stable Phantasma Lure
 					["description"] = "This memory is the only exception and will only drop from Layer 6 or above.",
 				}),
-				n(-982, {	-- Skoldus Hall
-					i(182634),	-- Memory of a Frozen Champion's Rage
-					i(183221),	-- Memory of the Dark Flame Spirit
-					i(183226),	-- Memory of the Balance of All Things
-					i(183254),	-- Memory of a Dire Command
-					i(183270),	-- Memory of an Arcane Bombardment
-					i(183292),	-- Memory of Clouded Focus
-					i(183342),	-- Memory of Akaari's Soul Fragment
-					i(183359),	-- Memory of Jonat
-					i(183364),	-- Memory of Sacrolash's Dark Strike
-					i(183383),	-- Memory of an Enduring Blow
+				header(HEADERS.Achievement, 14463, {	-- Skoldus Hall
+					["icon"] = 2178518,
+					["groups"] = {
+						i(182634),	-- Memory of a Frozen Champion's Rage
+						i(183221),	-- Memory of the Dark Flame Spirit
+						i(183226),	-- Memory of the Balance of All Things
+						i(183254),	-- Memory of a Dire Command
+						i(183270),	-- Memory of an Arcane Bombardment
+						i(183292),	-- Memory of Clouded Focus
+						i(183342),	-- Memory of Akaari's Soul Fragment
+						i(183359),	-- Memory of Jonat
+						i(183364),	-- Memory of Sacrolash's Dark Strike
+						i(183383),	-- Memory of an Enduring Blow
+					},
 				}),
 				n(-983, {	-- Fracture Chambers
 					i(182640),	-- Memory of a Reanimated Shambler
