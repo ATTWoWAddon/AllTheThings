@@ -116,7 +116,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						}),
 					}),
 					n(RARES, {
-						n(-954, {	-- Inquisitors
+						n(INQUISITORS, {
 							n(COMMON_BOSS_DROPS, {
 								["crs"] = {
 									156918,	-- Inquisitor Otilia

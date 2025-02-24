@@ -444,7 +444,6 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Shadowlands Header
 		-- SL Revendreth/Venthyr
-			[-954] = "Инквизиторы",									-- Inquisitors
 			[-955] = "Старшие Инквизиторы",							-- High Inquisitors
 			[-956] = "Великие Инквизиторы",							-- Grand Inquisitors
 			[-967] = "Восстановление зеркала",						-- Mirror Restoration

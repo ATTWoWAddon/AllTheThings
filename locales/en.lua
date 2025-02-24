@@ -31,7 +31,6 @@ for key, value in pairs({
 		[-146] = 1060551,										-- The Everbloom
 		[-147] = 1042065,										-- Upper Blackrock Spire
 	-- SL Headers
-		[-954] = 3528307,							-- Inquisitors
 		[-955] = 3528307,							-- High Inquisitors
 		[-956] = 3528307,							-- Grand Inquisitors
 		[-960] = 3675493,																	-- The Ember Court
@@ -68,7 +67,6 @@ for key, value in pairs({
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
 	-- Shadowlands Header
 		-- SL Revendreth/Venthyr
-		[-954] = "Inquisitors",													-- Inquisitors
 		[-955] = "High Inquisitors",											-- High Inquisitors
 		[-956] = "Grand Inquisitors",											-- Grand Inquisitors
 		[-960] = COVENANT_SANCTUM_FEATURE_VENTHYR,								-- The Ember Court
