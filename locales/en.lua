@@ -74,8 +74,6 @@ for key, value in pairs({
 		[-146] = GetRealZoneText(1279),									-- The Everbloom
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
 	-- Shadowlands Header
-		-- SL Ardenweald/Night Fae
-		[-934] = C_Map.GetAreaInfo(12840),										-- Star Lake Amphitheater
 		-- SL Bastion/Kyrian
 		[-939] = GetSpellName(321076),											-- Kyrian
 		[-942] = COVENANT_SANCTUM_FEATURE_KYRIAN,								-- Path of Ascension

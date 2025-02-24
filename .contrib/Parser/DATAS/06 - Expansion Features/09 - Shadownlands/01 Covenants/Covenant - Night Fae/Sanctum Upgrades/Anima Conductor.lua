@@ -14,7 +14,7 @@ local SILKY_SHIMMERMOTH = i(180748, {	-- Silky Shimmermoth (MOUNT!)
 	["cost"] = { { "c", ANIMA, 5000 } },
 });
 local GREATAXE_OF_UNRELENTING_PURSUIT = i(180154);
-local STAR_LAKE_AMPHITHEATER = n(-934,   {	-- Star Lake Amphitheater
+local STAR_LAKE_AMPHITHEATER = n(STAR_LAKE_AMPHITHEATER,   {
 	["description"] = "You have to be in the |cFFA330C9Night Fae|r covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else.  Only one mob is summonable per day.",
 	["questID"] = 61633,
 	["isDaily"] = true,
