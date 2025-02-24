@@ -90,7 +90,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						n(TIER_THREE, {
 							["description"] = "Each day, a set of 3 Broken Mirrors is active in Revendreth.  They are not on a predictable cycle, so the same set may be up two days in a row.  Toggle on Debug Mode, 'Show All Trackable Things,' or 'Track Repeatable Quests' to see the list of mirror sets available to restore.\n\nIf your mirror transports you to Sanctuary of the Mad, go back to the repaired mirror and re-enter it to be teleported to the correct room.",
 							["g"] = {
-								n(-967, {	-- Mirror Restoration
+								n(MIRROR_RESTORATION, {
 									n(166133, {	-- Simone
 										i(181363, {	-- Handcrafted Mirror Repair Kit
 											["cost"] = { { "c", 1820, 20 } },	-- 20x Infused Ruby

@@ -31,7 +31,6 @@ for key, value in pairs({
 		[-146] = 1060551,										-- The Everbloom
 		[-147] = 1042065,										-- Upper Blackrock Spire
 	-- SL Headers
-		[-967] = 3854020,																	-- Mirror Restoration
 		[-968] = 3854020,																	-- Set A
 		[-969] = 3854020,																	-- Set B
 		[-970] = 3854020,																	-- Set C
@@ -64,7 +63,6 @@ for key, value in pairs({
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
 	-- Shadowlands Header
 		-- SL Revendreth/Venthyr
-		[-967] = "Mirror Restoration",											-- Mirror Restoration
 		[-968] = "Set A",														-- Set A
 		[-969] = "Set B",														-- Set B
 		[-970] = "Set C",														-- Set C

@@ -444,7 +444,6 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Shadowlands Header
 		-- SL Revendreth/Venthyr
-			[-967] = "Восстановление зеркала",						-- Mirror Restoration
 			[-968] = "Набор A",										-- Set A
 			[-969] = "Набор B",										-- Set B
 			[-970] = "Набор C",										-- Set C
