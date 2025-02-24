@@ -3,7 +3,6 @@
 -------------------------------------------
 -- Expansion Features
 	-- SL
-	VENTHYR = -949;
 	EMBER_COURT = -960;
 	-- DF
 	MARUUK_CENTAUR = -1120;
