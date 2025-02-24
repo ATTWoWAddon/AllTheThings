@@ -455,7 +455,6 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Shadowlands Header
 		-- SL Revendreth/Venthyr
-			[-968] = "Tier A",										-- Set A
 			[-969] = "Tier B",										-- Set B
 			[-970] = "Tier C",										-- Set C
 			[-971] = "Tier D",										-- Set D

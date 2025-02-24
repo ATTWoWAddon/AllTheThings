@@ -15,3 +15,21 @@ MIRROR_RESTORATION = createHeader({
 		tw = "破镜重圆",
 	},
 });
+
+SET_A = createHeader({
+	readable = "Set A",
+	icon = 3854020,
+	text = {
+		en = "Set A",
+		-- de = "Set A",
+		-- es = "Set A",
+		-- mx = "Set A",
+		fr = "Tier A",
+		-- pt = "Set A",
+		-- it = "Set A",
+		-- ko = "Set A",
+		ru = "Набор A",
+		cn = "组 A",
+		tw = "組 A",
+	},
+});

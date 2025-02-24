@@ -31,7 +31,6 @@ for key, value in pairs({
 		[-146] = 1060551,										-- The Everbloom
 		[-147] = 1042065,										-- Upper Blackrock Spire
 	-- SL Headers
-		[-968] = 3854020,																	-- Set A
 		[-969] = 3854020,																	-- Set B
 		[-970] = 3854020,																	-- Set C
 		[-971] = 3854020,																	-- Set D
@@ -63,7 +62,6 @@ for key, value in pairs({
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
 	-- Shadowlands Header
 		-- SL Revendreth/Venthyr
-		[-968] = "Set A",														-- Set A
 		[-969] = "Set B",														-- Set B
 		[-970] = "Set C",														-- Set C
 		[-971] = "Set D",														-- Set D

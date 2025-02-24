@@ -97,7 +97,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											["sourceQuest"] = 59740,	-- Repair and Restore
 										}),
 									}),
-									n(-968, {	-- Set A
+									n(SET_A, {
 										["description"] = "Wowhead: |cffffffffGroup 2|r",
 										["g"] = {
 											n(BROKEN_MIRROR_A1, {
