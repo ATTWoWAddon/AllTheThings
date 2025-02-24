@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								["provider"] = { "i", 172999 },	-- Inquisitor Traian's Sinstone
 							}),
 						}),
-						n(-955, {	-- High Inquisitors
+						n(HIGH_INQUISITORS, {
 						--	TODO: add any missing loot (some is npc-specific, some is shared, ugh)
 							n(COMMON_BOSS_DROPS, {
 								["crs"] = {
