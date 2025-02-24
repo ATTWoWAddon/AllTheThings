@@ -24,17 +24,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						i(183383),	-- Memory of an Enduring Blow
 					},
 				}),
-				n(-983, {	-- Fracture Chambers
-					i(182640),	-- Memory of a Reanimated Shambler
-					i(183217),	-- Memory of my Darker Nature
-					i(183239),	-- Memory of an Unending Growth
-					i(183263),	-- Memory of Poisonous Injectors
-					i(183291),	-- Memory of Yu'lon
-					i(183307),	-- Memory of a Holy Sigil
-					i(183327),	-- Memory of the Painbreaker Psalm
-					i(183343),	-- Memory of the Deathly Shadows
-					i(183351),	-- Memory of an Elemental Equilibrium
-					i(183371),	-- Memory of the Horned Nightmare
+				header(HEADERS.Achievement, 14473, {	-- Fracture Chambers
+					["icon"] = 1392920,
+					["groups"] = {
+						i(182640),	-- Memory of a Reanimated Shambler
+						i(183217),	-- Memory of my Darker Nature
+						i(183239),	-- Memory of an Unending Growth
+						i(183263),	-- Memory of Poisonous Injectors
+						i(183291),	-- Memory of Yu'lon
+						i(183307),	-- Memory of a Holy Sigil
+						i(183327),	-- Memory of the Painbreaker Psalm
+						i(183343),	-- Memory of the Deathly Shadows
+						i(183351),	-- Memory of an Elemental Equilibrium
+						i(183371),	-- Memory of the Horned Nightmare
+					},
 				}),
 				n(-984, {	-- The Soulforges
 					i(183219),	-- Memory of Soul of Fire
