@@ -456,8 +456,6 @@ if app.IsRetail then
 	local a = L.HEADER_NAMES;
 	for key,value in pairs({
 	-- Shadowlands Header
-		-- SL Bastion/Kyrian
-			[-975] = "謙遜",											-- Humility
 		-- SL Revendreth/Venthyr
 			[-954] = "審判官",											-- Inquisitors
 			[-955] = "高階審判官",										-- High Inquisitors

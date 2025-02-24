@@ -4,7 +4,6 @@
 -- Expansion Features
 	-- SL
 	VENTHYR = -949;
-		HUMILITY = -975;
 	EMBER_COURT = -960;
 	-- DF
 	MARUUK_CENTAUR = -1120;

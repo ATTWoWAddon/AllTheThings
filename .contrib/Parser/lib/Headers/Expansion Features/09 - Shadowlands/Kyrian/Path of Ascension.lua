@@ -39,3 +39,21 @@ WISDOM = createHeader({
 		en = WOWAPI_GetSpellName(3166),
 	},
 });
+
+HUMILITY = createHeader({
+	readable = "Humility",
+	icon = 3536187,
+	text = {
+		en = "Humility",
+		de = "Demut",
+		-- es = "",
+		-- mx = "",
+		fr = "Humilité",
+		-- it = "",
+		-- ko = "",
+		-- pt = "",
+		ru = "Смирение",
+		cn = "谦逊",
+		tw = "謙遜",
+	},
+});

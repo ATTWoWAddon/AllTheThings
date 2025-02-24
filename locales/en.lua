@@ -41,7 +41,6 @@ for key, value in pairs({
 		[-969] = 3854020,																	-- Set B
 		[-970] = 3854020,																	-- Set C
 		[-971] = 3854020,																	-- Set D
-		[-975] = 3536187,																	-- Humility
 		[-982] = 2178518,																	-- Skoldus Hall
 		[-983] = 1392920,																	-- Fracture Chambers
 		[-984] = 1392929,																	-- The Soulforges
@@ -69,8 +68,6 @@ for key, value in pairs({
 		[-146] = GetRealZoneText(1279),									-- The Everbloom
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
 	-- Shadowlands Header
-		-- SL Bastion/Kyrian
-		[-975] = "Humility",													-- Humility
 		-- SL Revendreth/Venthyr
 		[-949] = GetSpellName(321079),											-- Venthyr
 		[-954] = "Inquisitors",													-- Inquisitors
