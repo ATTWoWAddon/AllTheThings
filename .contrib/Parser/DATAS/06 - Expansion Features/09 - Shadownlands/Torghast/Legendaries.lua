@@ -39,18 +39,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						i(183371),	-- Memory of the Horned Nightmare
 					},
 				}),
-				n(-984, {	-- The Soulforges
-					i(183219),	-- Memory of Soul of Fire
-					i(183232),	-- Memory of a Symmetrical Eye
-					i(183255),	-- Memory of the Flamewaker
-					i(183276),	-- Memory of the Molten Sky
-					i(183294),	-- Memory of the Jade Ignition
-					i(183302),	-- Memory of the Sunwell's Bloom
-					i(183321),	-- Memory of the Penitent One
-					i(183339),	-- Memory of a Concealed Blunderbuss
-					i(183360),	-- Memory of the Primal Tide Core
-					i(183377),	-- Memory of the Ymirjar
-					i(183382),	-- Memory of a Battlelord
+				header(HEADERS.Achievement, 14478, {	-- The Soulforges
+					["icon"] = 1392929,
+					["groups"] = {
+						i(183219),	-- Memory of Soul of Fire
+						i(183232),	-- Memory of a Symmetrical Eye
+						i(183255),	-- Memory of the Flamewaker
+						i(183276),	-- Memory of the Molten Sky
+						i(183294),	-- Memory of the Jade Ignition
+						i(183302),	-- Memory of the Sunwell's Bloom
+						i(183321),	-- Memory of the Penitent One
+						i(183339),	-- Memory of a Concealed Blunderbuss
+						i(183360),	-- Memory of the Primal Tide Core
+						i(183377),	-- Memory of the Ymirjar
+						i(183382),	-- Memory of a Battlelord
+					},
 				}),
 				n(-985, {	-- Coldheart Interstitia
 					i(182632),	-- Memory of Absolute Zero
