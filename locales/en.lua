@@ -30,8 +30,6 @@ for key, value in pairs({
 		[-145] = 1042064,										-- Skyreach
 		[-146] = 1060551,										-- The Everbloom
 		[-147] = 1042065,										-- Upper Blackrock Spire
-	-- SL Headers
-		[-987] = 2178509,																	-- The Upper Reaches
 	-- Dragonflight
 		[-1102] = 4622453,									-- Wrathion & Sabellian
 		[-1120] = 4687627,										-- Maruuk Centaur
@@ -52,9 +50,6 @@ for key, value in pairs({
 		[-145] = GetRealZoneText(1209),									-- Skyreach
 		[-146] = GetRealZoneText(1279),									-- The Everbloom
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
-	-- Shadowlands Header
-		-- SL Torghast
-		[-987] = select(2, GetAchievementInfo(14493)),							-- The Upper Reaches
 	-- Dragonflight
 		-- Autotranslate with NPC
 		[-1102] = "Wrathion & Sabellian",											-- Wrathion & Sabellian

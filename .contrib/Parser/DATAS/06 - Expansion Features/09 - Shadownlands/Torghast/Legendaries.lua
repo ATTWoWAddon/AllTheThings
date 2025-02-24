@@ -85,15 +85,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						i(183388),	-- Memory of a Reckless Defense
 					},
 				}),
-				n(-987, {	-- The Upper Reaches
-					i(182631),	-- Memory of a Vampiric Aura
-					i(183230),	-- Memory of the Apex Predator
-					i(183259),	-- Memory of the Unblinking Vigil
-					i(183273),	-- Memory of a Temporal Warp
-					i(183312),	-- Memory of a Relentless Inquisitor
-					i(183328),	-- Memory of Talbadar
-					i(183372),	-- Memory of the Grim Inquisitor
-					i(183390),	-- Memory of a Reprisal
+				header(HEADERS.Achievement, 14493, {	-- The Upper Reaches
+					["icon"] = 2178509,
+					["groups"] = {
+						i(182631),	-- Memory of a Vampiric Aura
+						i(183230),	-- Memory of the Apex Predator
+						i(183259),	-- Memory of the Unblinking Vigil
+						i(183273),	-- Memory of a Temporal Warp
+						i(183312),	-- Memory of a Relentless Inquisitor
+						i(183328),	-- Memory of Talbadar
+						i(183372),	-- Memory of the Grim Inquisitor
+						i(183390),	-- Memory of a Reprisal
+					},
 				}),
 			},
 		}),
