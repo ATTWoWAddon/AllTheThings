@@ -463,9 +463,6 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Shadowlands Header
-		-- SL Revendreth/Venthyr
-			[-971] = "组 D",											-- Set D
 	-- Dragonflight
 
 		[-1102] = "拉希奥和萨贝里安",										-- Wrathion & Sabellian
