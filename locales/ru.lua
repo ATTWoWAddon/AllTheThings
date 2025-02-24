@@ -444,7 +444,6 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Shadowlands Header
 		-- SL Revendreth/Venthyr
-			[-970] = "Набор C",										-- Set C
 			[-971] = "Набор D",										-- Set D
 	-- Dragonflight
 		[-1102] = "Гневион и Сабеллиан",							-- Wrathion & Sabellian

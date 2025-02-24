@@ -31,7 +31,6 @@ for key, value in pairs({
 		[-146] = 1060551,										-- The Everbloom
 		[-147] = 1042065,										-- Upper Blackrock Spire
 	-- SL Headers
-		[-970] = 3854020,																	-- Set C
 		[-971] = 3854020,																	-- Set D
 		[-982] = 2178518,																	-- Skoldus Hall
 		[-983] = 1392920,																	-- Fracture Chambers
@@ -61,7 +60,6 @@ for key, value in pairs({
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
 	-- Shadowlands Header
 		-- SL Revendreth/Venthyr
-		[-970] = "Set C",														-- Set C
 		[-971] = "Set D",														-- Set D
 		-- SL Torghast
 		[-982] = select(2, GetAchievementInfo(14463)),							-- Skoldus Hall
