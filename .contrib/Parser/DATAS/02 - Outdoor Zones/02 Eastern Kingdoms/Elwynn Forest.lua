@@ -2143,15 +2143,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #endif
 						i(2055, {	-- Small Wooden Hammer
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+							["timeline"] = { REMOVED_4_0_3 },
 							-- #if BEFORE 4.0.3
-							-- #if AFTER 10.1.7
 							["cr"] = 80,	-- Kobold Laborer
 							["coords"] = {
 								{ 49.0, 29.0, ELWYNN_FOREST },
 								{ 50.2, 26.6, ELWYNN_FOREST },
 							},
-							-- #endif
 							-- #endif
 						}),
 						-- #if SEASON_OF_DISCOVERY
