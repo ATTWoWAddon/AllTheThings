@@ -34,11 +34,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(28762, {	-- Beating Them Back!
 							["qg"] = 197,	-- Marshal McBride
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
@@ -54,11 +56,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(29078, {	-- Beating Them Back!
 							["qg"] = 197,	-- Marshal McBride
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_6 },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
@@ -84,11 +88,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(28767, {	-- Beating Them Back!
 							["qg"] = 197,	-- Marshal McBride
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
@@ -107,11 +113,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(28766, {	-- Beating Them Back!
 							["qg"] = 197,	-- Marshal McBride
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
@@ -127,11 +135,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(28763, {	-- Beating Them Back!
 							["qg"] = 197,	-- Marshal McBride
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
@@ -147,11 +157,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(28764, {	-- Beating Them Back!
 							["qg"] = 197,	-- Marshal McBride
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
@@ -170,11 +182,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(28757, {	-- Beating Them Back!
 							["qg"] = 197,	-- Marshal McBride
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
@@ -190,11 +204,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(28765, {	-- Beating Them Back!
 							["qg"] = 197,	-- Marshal McBride
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
@@ -210,11 +226,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(31139, {	-- Beating Them Back!
 							["qg"] = 197,	-- Marshal McBride
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { HUMAN, KULTIRAN },
 							["classes"] = { DEATHKNIGHT, DRUID, MONK },
@@ -246,11 +264,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								28818,	-- The Rear is Clear (human mage)
 								29083,	-- The Rear is Clear (non-human)
 							},
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
@@ -338,11 +358,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 197 },	-- Marshal McBride
 								{ "i", 85160 },	-- Calligraphed Letter
 							},
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { MONK },
@@ -350,11 +372,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26913, {	-- Charging into Battle
 							["qg"] = 911,	-- Llane Beshere <Warrior Trainer>
 							["sourceQuest"] = 3100,	-- Simple Letter
-							-- #if AFTER MOP
-							["coord"] = { 40.6, 53.6, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 50.2, 42.2, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 40.6, 53.6, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 50.2, 42.2, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
@@ -370,13 +394,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 9570 },	-- Consecrated Letter
 							},
 							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #elseif AFTER CATA
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #else
-							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #elseif AFTER CATA
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #else
+								{ 48.9, 41.6, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { PALADIN },
 							["races"] = { HUMAN },
@@ -385,11 +411,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26914, {	-- Corruption [MOP] / Immolation [CATA]
 							["qg"] = 459,	-- Drusilla La Salle <Warlock Trainer>
 							["sourceQuest"] = 3105,	-- Tainted Letter
-							-- #if AFTER MOP
-							["coord"] = { 39.6, 55.2, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 49.8, 42.6, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 39.6, 55.2, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 49.8, 42.6, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
@@ -414,13 +442,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 9555 },	-- Encrypted Letter
 							},
 							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #elseif AFTER CATA
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #else
-							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #elseif AFTER CATA
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #else
+								{ 48.9, 41.6, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
@@ -428,11 +458,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26390, {	-- Ending the Invasion!
 							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 26389,	-- Blackrock Invasion
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
@@ -469,13 +501,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 60677 },	-- Etched Letter
 							},
 							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #elseif AFTER CATA
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #else
-							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #elseif AFTER CATA
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #else
+								{ 48.9, 41.6, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
@@ -495,11 +529,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								28818,	-- The Rear is Clear (human mage)
 								29083,	-- The Rear is Clear (non-human)
 							},
-							-- #if AFTER MOP
-							["coord"] = { 33.3, 54.6, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.6, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.3, 54.6, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.6, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
@@ -515,11 +551,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28811, {	-- Fear No Evil
 							["qg"] = 951,	-- Brother Paxton
 							["sourceQuest"] = 28787,	-- Join the Battle!
-							-- #if AFTER MOP
-							["coord"] = { 35.3, 37.9, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.6, 38.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.3, 37.9, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.6, 38.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
@@ -539,11 +577,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28812, {	-- Fear No Evil
 							["qg"] = 951,	-- Brother Paxton
 							["sourceQuest"] = 28788,	-- Join the Battle!
-							-- #if AFTER MOP
-							["coord"] = { 35.3, 37.9, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.6, 38.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.3, 37.9, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.6, 38.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
@@ -563,11 +603,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28810, {	-- Fear No Evil
 							["qg"] = 951,	-- Brother Paxton
 							["sourceQuest"] = 28786,	-- Join the Battle!
-							-- #if AFTER MOP
-							["coord"] = { 35.3, 37.9, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.6, 38.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.3, 37.9, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.6, 38.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
@@ -587,11 +629,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28813, {	-- Fear No Evil
 							["qg"] = 951,	-- Brother Paxton
 							["sourceQuest"] = 28789,	-- Join the Battle!
-							-- #if AFTER MOP
-							["coord"] = { 35.3, 37.9, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.6, 38.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.3, 37.9, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.6, 38.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
@@ -611,11 +655,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28806, {	-- Fear No Evil
 							["qg"] = 951,	-- Brother Paxton
 							["sourceQuest"] = 28780,	-- Join the Battle!
-							-- #if AFTER MOP
-							["coord"] = { 35.3, 37.9, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.6, 38.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.3, 37.9, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.6, 38.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
@@ -635,11 +681,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28808, {	-- Fear No Evil
 							["qg"] = 951,	-- Brother Paxton
 							["sourceQuest"] = 28784,	-- Join the Battle!
-							-- #if AFTER MOP
-							["coord"] = { 35.3, 37.9, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.6, 38.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.3, 37.9, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.6, 38.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
@@ -659,11 +707,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28809, {	-- Fear No Evil
 							["qg"] = 951,	-- Brother Paxton
 							["sourceQuest"] = 28785,	-- Join the Battle!
-							-- #if AFTER MOP
-							["coord"] = { 35.3, 37.9, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.6, 38.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.3, 37.9, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.6, 38.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
@@ -683,11 +733,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(29082, {	-- Fear No Evil
 							["qg"] = 951,	-- Brother Paxton
 							["sourceQuest"] = 29080,	-- Join the Battle!
-							-- #if AFTER MOP
-							["coord"] = { 35.3, 37.9, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.6, 38.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.3, 37.9, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.6, 38.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_6 },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, KULTIRAN, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
@@ -714,11 +766,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(63447, {	-- Fear No Evil
 							["qg"] = 951,	-- Brother Paxton
 							["sourceQuest"] = 29080,	-- Join the Battle
-							-- #if AFTER MOP
-							["coord"] = { 35.3, 37.9, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.6, 38.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.3, 37.9, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.6, 38.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_9_0_5 },
 							["races"] = { KULTIRAN },
 							["groups"] = {
@@ -748,13 +802,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 9571 },	-- Glyphic Letter
 							},
 							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #elseif AFTER CATA
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #else
-							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #elseif AFTER CATA
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #else
+								{ 48.9, 41.6, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
@@ -782,13 +838,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 9548 },	-- Hallowed Letter
 							},
 							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #elseif AFTER CATA
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #else
-							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #elseif AFTER CATA
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #else
+								{ 48.9, 41.6, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
@@ -797,11 +855,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26919, {	-- Healing the Wounded [CATA] / Learning the Word [MOP]
 							["qg"] = 375,	-- Priestess Anetta <Priest Trainer>
 							["sourceQuest"] = 3103,	-- Hallowed Letter
-							-- #if AFTER MOP
-							["coord"] = { 39.2, 44.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 49.8, 39.4, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 39.2, 44.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 49.8, 39.4, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
@@ -814,11 +874,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26914, {	-- Immolation [CATA] / Corruption [MOP]
 							["qg"] = 459,	-- Drusilla La Salle <Warlock Trainer>
 							["sourceQuest"] = 3105,	-- Tainted Letter
-							-- #if AFTER MOP
-							["coord"] = { 39.6, 55.2, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 49.8, 42.6, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 39.6, 55.2, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 49.8, 42.6, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
@@ -861,22 +923,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(29080, {	-- Join the Battle!
 							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 29079,	-- Lions for Lambs
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_6 },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 						}),
 						q(28789, {	-- Join the Battle!
 							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28774,	-- Lions for Lambs
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
@@ -884,11 +950,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28786, {	-- Join the Battle!
 							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28771,	-- Lions for Lambs
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
@@ -896,11 +964,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28785, {	-- Join the Battle!
 							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28770,	-- Lions for Lambs
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
@@ -908,11 +978,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28787, {	-- Join the Battle!
 							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28772,	-- Lions for Lambs
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
@@ -920,11 +992,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28784, {	-- Join the Battle!
 							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28769,	-- Lions for Lambs
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
@@ -932,11 +1006,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28780, {	-- Join the Battle!
 							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28759,	-- Lions for Lambs
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
@@ -944,11 +1020,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28788, {	-- Join the Battle!
 							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28773,	-- Lions for Lambs
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
@@ -956,11 +1034,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(31143, {	-- Join the Battle!
 							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 31140,	-- Lions for Lambs
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { KULTIRAN, HUMAN },
 							["classes"] = { DRUID, MONK },
@@ -980,11 +1060,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26919, {	-- Learning the Word [MOP] / Healing the Wounded [CATA]
 							["qg"] = 375,	-- Priestess Anetta <Priest Trainer>
 							["sourceQuest"] = 3103,	-- Hallowed Letter
-							-- #if AFTER MOP
-							["coord"] = { 39.2, 44.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 49.8, 39.4, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 39.2, 44.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 49.8, 39.4, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
@@ -998,11 +1080,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28771, {	-- Lions for Lambs
 							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28763,	-- Beating Them Back!
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
@@ -1019,11 +1103,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28772, {	-- Lions for Lambs
 							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28764,	-- Beating Them Back!
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
@@ -1040,11 +1126,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28773, {	-- Lions for Lambs
 							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28765,	-- Beating Them Back!
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
@@ -1061,11 +1149,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28774, {	-- Lions for Lambs
 							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28766,	-- Beating Them Back!
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
@@ -1082,11 +1172,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28759, {	-- Lions for Lambs
 							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28767,	-- Beating Them Back
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
@@ -1103,11 +1195,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(29079, {	-- Lions for Lambs
 							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 29078,	-- Beating Them Back!
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_6 },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
@@ -1131,11 +1225,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(31140, {	-- Lions for Lambs
 							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 31139,	-- Beating Them Back!
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { HUMAN, KULTIRAN },
 							["classes"] = { DEATHKNIGHT, DRUID, MONK },
@@ -1152,11 +1248,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28769, {	-- Lions for Lambs
 							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28757,	-- Beating Them Back!
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
@@ -1173,11 +1271,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28770, {	-- Lions for Lambs
 							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28762,	-- Beating Them Back!
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
@@ -1194,11 +1294,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26916, {	-- Mastering the Arcane
 							["qg"] = 198,	-- Khelden Bremen <Mage Trainer>
 							["sourceQuest"] = 3104,	-- Glyphic Letter
-							-- #if AFTER MOP
-							["coord"] = { 38.6, 43.6, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 49.6, 39.4, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 38.6, 43.6, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 49.6, 39.4, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
@@ -1288,18 +1390,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 197 },	-- Marshal McBride
 								{ "i", 745 },	-- Marshal McBride's Documents
 							},
-							-- #if BEFORE CATA
-							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
-							["sourceQuest"] = 21,	-- Skirmish at Echo Ridge
-							-- #else
-							["sourceQuest"] = 26390,	-- Ending the Invasion
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["sourceQuests"] = {
+								-- #if BEFORE CATA
+								21,	-- Skirmish at Echo Ridge
+								-- #else
+								26390,	-- Ending the Invasion
+								-- #endif
+							},
+							["coords"] = {
+								-- #if BEFORE CATA
+								{ 48.9, 41.6, ELWYNN_FOREST },
+								-- #elseif AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["isBreadcrumb"] = true,	-- TODO Not required for q:62, confirm it becomes unavailable with q:62 complete
-							-- #endif
 							["races"] = exclude({ DRACTHYR_ALLIANCE, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
 								i(131876, {	-- Deputy's Chainmail
@@ -1319,11 +1426,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(2158, {	-- Rest and Relaxation
 							["qg"] = 6774,	-- Falkhaan Isenstrider
-							-- #if AFTER MOP
-							["coord"] = { 24.2, 73.4, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 45.6, 47.8, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 24.2, 73.4, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 45.6, 47.8, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_6_0_2 },
 							-- #if AFTER 6.0.2
 							["description"] = "This quest gets marked as completed when you complete the quest 'Rest and Relaxation' (37112).",
@@ -1347,11 +1456,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(37112, {	-- Rest and Relaxation
 							["qg"] = 6774,	-- Falkhaan Isenstrider
-							-- #if AFTER MOP
-							["coord"] = { 45.4, 49.0, ELWYNN_FOREST },
-							-- #else
-							["coord"] = { 45.6, 47.8, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 45.4, 49.0, ELWYNN_FOREST },
+								-- #else
+								{ 45.6, 47.8, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_6_0_2 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -1391,13 +1502,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 9542 },	-- Simple Letter
 							},
 							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #elseif AFTER CATA
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #else
-							["coord"] = { 48.8, 41.6, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #elseif AFTER CATA
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #else
+								{ 48.8, 41.6, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
@@ -1459,13 +1572,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 9576 },	-- Tainted Letter
 							},
 							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
-							-- #if AFTER MOP
-							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
-							-- #elseif AFTER CATA
-							["coord"] = { 48.0, 42.0, ELWYNN_FOREST },
-							-- #else
-							["coord"] = { 48.8, 41.6, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
+								-- #elseif AFTER CATA
+								{ 48.0, 42.0, ELWYNN_FOREST },
+								-- #else
+								{ 48.8, 41.6, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
@@ -1473,11 +1588,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26915, {	-- The Deepest Cut
 							["qg"] = 915,	-- Jorik Kerridan <Rogue Trainer>
 							["sourceQuest"] = 3102,	-- Encrypted Letter
-							-- #if AFTER MOP
-							["coord"] = { 41.8, 45.8, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 50.3, 39.9, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 41.8, 45.8, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 50.3, 39.9, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
@@ -1490,11 +1607,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26917, {	-- The Hunter's Path
 							["qg"] = 43278,	-- Ashley Blank <Hunter Trainer>
 							["sourceQuest"] = 26910,	-- Etched Letter
-							-- #if AFTER MOP
-							["coord"] = { 34.6, 55.8, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.5, 42.5, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 34.6, 55.8, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.5, 42.5, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
@@ -1528,11 +1647,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26918, {	-- The Power of the Light
 							["qg"] = 925,	-- Brother Sammuel <Paladin Trainer>
 							["sourceQuest"] = 3101,	-- Consecrated Letter
-							-- #if AFTER MOP
-							["coord"] = { 41.2, 53.0, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 50.4, 42.0, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 41.2, 53.0, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 50.4, 42.0, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { PALADIN },
 							["races"] = { HUMAN },
@@ -1545,11 +1666,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28819, {	-- The Rear is Clear
 							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28793,	-- They Sent Assassins
-							-- #if AFTER MOP
-							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.7, 39.7, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.8, 38.4, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
@@ -1557,11 +1680,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28822, {	-- The Rear is Clear
 							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28796,	-- They Sent Assassins
-							-- #if AFTER MOP
-							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.7, 39.7, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.8, 38.4, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
@@ -1569,11 +1694,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(31145, {	-- The Rear is Clear
 							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 31144,	-- They Sent Assassins
-							-- #if AFTER MOP
-							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.7, 39.7, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.8, 38.4, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { HUMAN, KULTIRAN },
 							["classes"] = { DRUID, MONK },
@@ -1581,11 +1708,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28821, {	-- The Rear is Clear
 							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28795,	-- They Sent Assassins
-							-- #if AFTER MOP
-							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.7, 39.7, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.8, 38.4, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
@@ -1593,11 +1722,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28817, {	-- The Rear is Clear
 							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28791,	-- They Sent Assassins
-							-- #if AFTER MOP
-							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.7, 39.7, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.8, 38.4, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
@@ -1605,11 +1736,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28823, {	-- The Rear is Clear
 							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28797,	-- They Sent Assassins
-							-- #if AFTER MOP
-							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.7, 39.7, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.8, 38.4, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
@@ -1617,11 +1750,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28820, {	-- The Rear is Clear
 							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28794,	-- They Sent Assassins
-							-- #if AFTER MOP
-							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.7, 39.7, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.8, 38.4, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
@@ -1629,11 +1764,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28818, {	-- The Rear is Clear
 							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28792,	-- They Sent Assassins
-							-- #if AFTER MOP
-							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.7, 39.7, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.8, 38.4, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
@@ -1641,11 +1778,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(29083, {	-- The Rear is Clear
 							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 29081,	-- They Sent Assassin
-							-- #if AFTER MOP
-							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.7, 39.7, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.8, 38.4, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_6 },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 						}),
@@ -1669,11 +1808,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28792, {	-- They Sent Assassins
 							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28784,	-- Join the Battle!
-							-- #if AFTER MOP
-							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.7, 39.7, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.8, 38.4, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
@@ -1688,11 +1829,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(31144, {	-- They Sent Assassins
 							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 31143,	-- Join the Battle!
-							-- #if AFTER MOP
-							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.7, 39.7, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.8, 38.4, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { KULTIRAN, HUMAN },
 							["classes"] = { DRUID, MONK },
@@ -1707,11 +1850,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28794, {	-- They Sent Assassins
 							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28786,	-- Join the Battle!
-							-- #if AFTER MOP
-							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.7, 39.7, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.8, 38.4, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PRIEST },
@@ -1726,11 +1871,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28793, {	-- They Sent Assassins
 							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28785,	-- Join the Battle!
-							-- #if AFTER MOP
-							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.7, 39.7, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.8, 38.4, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { PALADIN },
@@ -1745,11 +1892,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28795, {	-- They Sent Assassins
 							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28787,	-- Join the Battle!
-							-- #if AFTER MOP
-							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.7, 39.7, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.8, 38.4, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { ROGUE },
@@ -1764,11 +1913,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28797, {	-- They Sent Assassins
 							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28789,	-- Join the Battle!
-							-- #if AFTER MOP
-							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.7, 39.7, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.8, 38.4, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARRIOR },
@@ -1783,11 +1934,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28791, {	-- They Sent Assassins
 							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28780,	-- Join the Battle!
-							-- #if AFTER MOP
-							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.7, 39.7, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.8, 38.4, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
@@ -1804,11 +1957,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(28796, {	-- They Sent Assassins
 							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28788,	-- Join the Battle!
-							-- #if AFTER MOP
-							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.7, 39.7, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.8, 38.4, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = { HUMAN },
 							["classes"] = { WARLOCK },
@@ -1823,11 +1978,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(29081, {	-- They Sent Assassins
 							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 29080,	-- Join the Battle!
-							-- #if AFTER MOP
-							["coord"] = { 35.7, 39.7, NORTHSHIRE_VALLEY },
-							-- #else
-							["coord"] = { 48.8, 38.4, ELWYNN_FOREST },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 35.7, 39.7, NORTHSHIRE_VALLEY },
+								-- #else
+								{ 48.8, 38.4, ELWYNN_FOREST },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_6 },
 							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 							["groups"] = {
@@ -1892,7 +2049,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { ADDED_4_0_3 },
 								}),
 								i(2055, {	-- Small Wooden Hammer
-									["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+									["timeline"] = { ADDED_10_1_7 },
 								}),
 							},
 						}),
@@ -1978,7 +2135,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 					}),
 					-- #endif
-					-- #if BEFORE 10.1.7
 					n(ZONE_DROPS, {
 						-- #if BEFORE 8.1.0.28724
 						i(2057, {	-- Pitted Defias Shortsword
@@ -1987,13 +2143,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #endif
 						i(2055, {	-- Small Wooden Hammer
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 							-- #if BEFORE 4.0.3
+							-- #if AFTER 10.1.7
 							["cr"] = 80,	-- Kobold Laborer
 							["coords"] = {
 								{ 49.0, 29.0, ELWYNN_FOREST },
 								{ 50.2, 26.6, ELWYNN_FOREST },
 							},
+							-- #endif
 							-- #endif
 						}),
 						-- #if SEASON_OF_DISCOVERY
@@ -2003,7 +2161,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						-- #endif
 					}),
-					-- #endif
 				},
 			}),
 			n(ACHIEVEMENTS, {
@@ -2180,14 +2337,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = lvlsquish(5, 5, 1),
 				}),
 				q(46, {	-- Bounty on Murlocs
-					-- #if AFTER CATA
-					["provider"] = { "o", 203733 },	-- Bounty Board
-					["coord"] = { 74.0, 72.3, ELWYNN_FOREST },
-					-- #else
-					["qg"] = 261,	-- Guard Thomas
+					["providers"] = {
+						-- #if AFTER CATA
+						{ "o", 203733 },	-- Bounty Board
+						-- #else
+						{ "n", 261 },	-- Guard Thomas
+						-- #endif
+					},
+					-- #if BEFORE CATA
 					["sourceQuest"] = 39,	-- Deliver Thomas' Report
-					["coord"] = { 74, 72.2, ELWYNN_FOREST },
 					-- #endif
+					["coord"] = { 74.0, 72.2, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
 					["groups"] = {
@@ -2218,21 +2378,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(59, {	-- Cloth and Leather Armor
-					-- #if AFTER CATA
 					["providers"] = {
+						-- #if AFTER CATA
 						{ "n", 261 },	-- Guard Thomas
 						{ "i", 748 },	-- Stormwind Armor Marker
-					},
-					["sourceQuest"] = 71,	-- Report to Thomas
-					["coord"] = { 73.9, 72.1, ELWYNN_FOREST },
-					-- #else
-					["providers"] = {
+						-- #else
 						{ "n", 240 },	-- Marshal Dughan
 						{ "i", 748 },	-- Stormwind Armor Marker
+						-- #endif
 					},
-					["sourceQuest"] = 39,	-- Deliver Thomas' Report
-					["coord"] = { 42.2, 65.8, ELWYNN_FOREST },
-					-- #endif
+					["sourceQuests"] = {
+						-- #if AFTER CATA
+						71,	-- Report to Thomas
+						-- #else
+						39,	-- Deliver Thomas' Report
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 73.9, 72.1, ELWYNN_FOREST },
+						-- #else
+						{ 42.2, 65.8, ELWYNN_FOREST },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
 					["groups"] = {
@@ -2521,7 +2689,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(32618, {	-- Learn To Ride
+					-- #if BEFORE 10.1.5
 					["description"] = "This quest is available to Humans upon reaching level 10.",
+					-- #endif
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -2556,13 +2726,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = lvlsquish(5, 5, 1),
 				}),
 				q(147, {	-- Manhunt
-					-- #if AFTER CATA
-					["qg"] = 42256,	-- Marshal Patterson
-					["coord"] = { 81.8, 66.0, ELWYNN_FOREST },
-					-- #else
-					["qg"] = 240,	-- Marshal Dughan
-					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
-					-- #endif
+					["qgs"] = {
+						-- #if AFTER CATA
+						42256,	-- Marshal Patterson
+						-- #else
+						240,	-- Marshal Dughan
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 81.8, 66.0, ELWYNN_FOREST },
+						-- #else
+						{ 42.1, 65.9, ELWYNN_FOREST },
+						-- #endif
+					},
 					["sourceQuest"] = 123,	-- The Collector
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
@@ -2598,7 +2775,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7678, {	-- Palomino Exchange
 					["qg"] = 384,	-- Katie Hunter
 					["coord"] = { 84.0, 65.4, ELWYNN_FOREST },
-					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 12354, 1 } },	-- Palomino (MOUNT!)
 					["sym"] = { { "select", "itemID", 18777, 18776, 18778 } },
@@ -2883,7 +3060,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER 8.1.0.28724
 						{ "o", 307265 },	-- Wanted Poster
 						{ "o", 307325 },	-- Wanted Poster
-						-- #elseif 8.0.1.27326
+						-- #elseif AFTER 8.0.1.27326
 						{ "o", 307068 },	-- Bounty Board
 						-- #else
 						{ "o", 68 },	-- Wanted Poster
@@ -3103,10 +3280,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(6147, {	-- Ratty Old Belt
-							["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },
 						}),
 						i(1913, {	-- Studded Blackjack
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -3147,10 +3324,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(6202, {	-- Fingerless Gloves
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 						i(6203, {	-- Thuggish Shield
-							["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -3402,7 +3579,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 83.2, 66.7, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6272, {	-- Pattern: Blue Linen Robe
+						i(6272, {	-- Pattern: Blue Linen Robe (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -3494,7 +3671,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 41.8, 67.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6270, {	-- Pattern: Blue Linen Vest
+						i(6270, {	-- Pattern: Blue Linen Vest (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
@@ -3555,29 +3732,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						448,	-- Hogger
 						478,	-- Riverpaw Outrunner
 						97,		-- Riverpaw Runt
-						-- #ELSE
+						-- #else
 						13159,	-- James Clark
-						-- #ENDIF
+						-- #endif
 					},
-					--[[["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
-					["coords"] = {
-						{ 23.4, 35.4, ELWYNN_FOREST },
-						{ 25.4, 35.4, ELWYNN_FOREST },
-					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, ELWYNN_FOREST },
-						{ 17.8, 33.4, ELWYNN_FOREST },
-						{ 19.8, 46.8, ELWYNN_FOREST },
-					},
-					-- #endif
-					--]]
 				}),
 				i(778, {	-- Kobold Excavation Pick
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3585,25 +3743,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBounty"] = true,
 					-- #endif
 					["cr"] = 476,	-- Kobold Geomancer
-					--[[["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
-					["coords"] = {
-						{ 23.4, 35.4, ELWYNN_FOREST },
-						{ 25.4, 35.4, ELWYNN_FOREST },
-					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, ELWYNN_FOREST },
-						{ 17.8, 33.4, ELWYNN_FOREST },
-						{ 19.8, 46.8, ELWYNN_FOREST },
-					},
-					-- #endif
-					--]]
 				}),
 				i(1389, {	-- Kobold Mining Mallet
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -3626,25 +3765,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1399, {	-- Magic Candle
 					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 476,	-- Kobold Geomancer
-					--[[["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
-					["coords"] = {
-						{ 23.4, 35.4, ELWYNN_FOREST },
-						{ 25.4, 35.4, ELWYNN_FOREST },
-					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, ELWYNN_FOREST },
-						{ 17.8, 33.4, ELWYNN_FOREST },
-						{ 19.8, 46.8, ELWYNN_FOREST },
-					},
-					-- #endif
-					--]]
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(205940, {	-- Memory of a Dark Purpose
@@ -3766,25 +3886,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						474,	-- Defias Rogue Wizard
 						880,	-- Erlan Drudgemoor
 					},
-					--[[["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
-					["coords"] = {
-						{ 23.4, 35.4, ELWYNN_FOREST },
-						{ 25.4, 35.4, ELWYNN_FOREST },
-					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague Spreader
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, ELWYNN_FOREST },
-						{ 17.8, 33.4, ELWYNN_FOREST },
-						{ 19.8, 46.8, ELWYNN_FOREST },
-					},
-					-- #endif
-					--]]
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(204907, {	-- Wolf Jawbone
