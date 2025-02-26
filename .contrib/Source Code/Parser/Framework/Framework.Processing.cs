@@ -1058,6 +1058,23 @@ namespace ATT
             {
                 data.Remove(key);
             }
+
+            // we will allow some circumstances and data to be converted back to a singular field
+            // to try to preserve some initial memory usage in ATT
+            string[] swaps = new[]
+            {
+                "qg", "cr", "provider", "coord", "sourceQuest"
+            };
+
+            foreach(string swap in swaps)
+            {
+                var pluralSwap = swap + "s";
+                if (data.TryGetValue(pluralSwap, out List<object> values) && values.Count == 1)
+                {
+                    data[swap] = values[0];
+                    data.Remove(pluralSwap);
+                }
+            }
         }
 
         private static void EnsembleCleanup(IDictionary<string, object> data)

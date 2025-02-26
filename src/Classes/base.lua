@@ -108,6 +108,12 @@ local ShouldExcludeFromTooltipHelper = function(t)
 	if parent then return parent.ShouldExcludeFromTooltip; end
 	return false;
 end
+local function AutoPluralizeField(t, field)
+	local val = t[field]
+	if not val then return end
+	-- app.PrintDebug("APF:",field,val,app:SearchLink(t))
+	return {val}
+end
 
 -- Represents default field evaluation logic for all Classes unless defined within the Class
 local DefaultFields = {
@@ -190,6 +196,23 @@ local DefaultFields = {
 	end,
 	["ShouldExcludeFromTooltip"] = function(t)
 		return t.ShouldExcludeFromTooltipHelper(t);
+	end,
+	-- testing some auto-pluralize fields to reduce base addon memory footprint while maintaining field existence expectations
+	-- without requiring sweeping changes
+	["coords"] = function(t)
+		return AutoPluralizeField(t, "coord")
+	end,
+	["qgs"] = function(t)
+		return AutoPluralizeField(t, "qg")
+	end,
+	["sourceQuests"] = function(t)
+		return AutoPluralizeField(t, "sourceQuest")
+	end,
+	["providers"] = function(t)
+		return AutoPluralizeField(t, "provider")
+	end,
+	["crs"] = function(t)
+		return AutoPluralizeField(t, "cr")
 	end,
 };
 
