@@ -3,15 +3,18 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(WESTFALL, {
+		["lore"] =
+			-- #if AFTER CATA
+			"Westfall is a low-level Alliance zone. It used to be a tranquil farming area on the coast, but is now taken over by the Defias Brotherhood and crime runs rampant. The Westfall Brigade has created a last-ditch effort at Sentinel Hill to aid the zone, but faces threats from the Brotherhood at Moonbrook.",
+			-- #else
+			"Westfall borders the Kingdom of Stormwind and is mostly populated by humans not under the Alliance's complete control. The region was stolen right under the Alliance's nose by its own bitter people. This rich land has lain fallow since the Second War, but it is now held by the Defias Brotherhood. Stormwind claims the land as its own, but it has found little time to be concerned with it, with insufficient funds and might to retake the region. A handful of farmers still try to keep their land, and some even attempt a tithe to Stormwind every year, but most only grow enough to feed themselves. The Defias Brotherhood controls much of the region, focused in the southern area of Moonbrook.\n\nOnce a rich agricultural center, much of Westfall now lies fallow and forgotten. The Defias Brotherhood, renegade humans who wield secrecy and technology against Stormwind, control much of the area. Bandits and gnolls raid those farms that remain, and Stormwind's resources are stretched too thin to protect the beleaguered populace. Westfall has the mild temperatures of Elwynn, but winds batter it both from the sea and from Duskwood. The bare farmlands add little to break the wind, which can cut through clothing on a blustery day.",
+			-- #endif
 		-- #if AFTER CATA
-		["lore"] = "Westfall is a low-level Alliance zone. It used to be a tranquil farming area on the coast, but is now taken over by the Defias Brotherhood and crime runs rampant. The Westfall Brigade has created a last-ditch effort at Sentinel Hill to aid the zone, but faces threats from the Brotherhood at Moonbrook.",
 		["maps"] = {
 			53,		-- Gold Coast Quarry
 			54,		-- Jangolode Mine
 			55,		-- The Deadmines
 		},
-		-- #else
-		["lore"] = "Westfall borders the Kingdom of Stormwind and is mostly populated by humans not under the Alliance's complete control. The region was stolen right under the Alliance's nose by its own bitter people. This rich land has lain fallow since the Second War, but it is now held by the Defias Brotherhood. Stormwind claims the land as its own, but it has found little time to be concerned with it, with insufficient funds and might to retake the region. A handful of farmers still try to keep their land, and some even attempt a tithe to Stormwind every year, but most only grow enough to feed themselves. The Defias Brotherhood controls much of the region, focused in the southern area of Moonbrook.\n\nOnce a rich agricultural center, much of Westfall now lies fallow and forgotten. The Defias Brotherhood, renegade humans who wield secrecy and technology against Stormwind, control much of the area. Bandits and gnolls raid those farms that remain, and Stormwind's resources are stretched too thin to protect the beleaguered populace. Westfall has the mild temperatures of Elwynn, but winds batter it both from the sea and from Duskwood. The bare farmlands add little to break the wind, which can cut through clothing on a blustery day.",
 		-- #endif
 		["icon"] = 236852,
 		["groups"] = {
@@ -123,11 +126,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 48.6, 48.6, WESTFALL },
 						["classes"] = { ROGUE },
 						["crs"] = {
-							 95,	-- Defias Smuggler
-							504,	-- Defias Trapper
 							590,	-- Defias Looter
 							121,	-- Defias Pathstalker
 							589,	-- Defias Pillager
+							 95,	-- Defias Smuggler
+							504,	-- Defias Trapper
 						},
 						["groups"] = {
 							i(209030, {	-- Equipment Stash Key
@@ -298,18 +301,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 40.5, 16.8, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						i(3343),	-- Captain Sanders' Booty Bag
 						i(3344),	-- Captain Sanders' Sash
 						i(3342),	-- Captain Sanders' Shirt
-						i(3343),	-- Captain Sanders' Booty Bag
 					},
 				}),
 				q(3861, {	-- CLUCK!
 					["qg"] = 620,	-- Chicken
-					-- #if AFTER 3.1.0
-					["description"] = "Simply target any Chicken then spam |cFFFFD700/chicken|r at it until it emotes at you. The vendor, Farmer Saldean, sells the Special Chicken Feed you need.",
-					-- #else
-					["description"] = "Simply target any Chicken and spam |cFFFFD700/chicken|r at it until it emotes at you. This will take about 100 emotes. (make a macro!)\n\nOnce it does, type /cheer with it targetted.\n\nThe Chicken will never turn friendly for a Horde player, even if they get the emote.",
-					-- #endif
+					["description"] =
+						-- #if AFTER 3.1.0
+						"Simply target any Chicken then spam |cFFFFD700/chicken|r at it until it emotes at you. The vendor, Farmer Saldean, sells the Special Chicken Feed you need.",
+						-- #else
+						"Simply target any Chicken and spam |cFFFFD700/chicken|r at it until it emotes at you. This will take about 100 emotes. (make a macro!)\n\nOnce it does, type /cheer with it targetted.\n\nThe Chicken will never turn friendly for a Horde player, even if they get the emote.",
+						-- #endif
 					["maps"] = {
 						-- #if AFTER TBC
 						AZUREMYST_ISLE,
@@ -456,18 +460,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(184, {	-- Furlbrow's Deed
-					-- #if AFTER 4.0.3
 					["providers"] = {
 						{ "i", 1972 },	-- Westfall Deed
 						{ "i", 1971 },	-- Westfall Deed
+						-- #if AFTER 4.0.3
 						{ "o", 203734 },	-- Westfall Deed
+						-- #endif
 					},
+					-- #if AFTER 4.0.3
 					["coord"] = { 24.7, 95.2, ELWYNN_FOREST },
 					-- #else
-					["providers"] = {
-						{ "i", 1972 },	-- Westfall Deed
-						{ "i", 1971 },	-- Westfall Deed
-					},
 					["maps"] = { ELWYNN_FOREST },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
@@ -991,10 +993,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 9,
 				}),
 				q(26370, {	-- Return to Sentinel Hill
-					["qgs"] = {	-- TODO: Find quest giver lists like this and use timelines.
+					["qgs"] = {
+						-- #if AFTER 8.0.1
 						1750,	-- Grand Admiral Jes-Tereth
-						29611,	-- King Varian Wrynn
+						-- #elseif AFTER 7.0.3
 						107574,	-- Anduin Wrynn
+						-- #else
+						29611,	-- King Varian Wrynn
+						-- #endif
 					},
 					["sourceQuest"] = 26322,	-- Rise of the Brotherhood
 					["coord"] = { 85.6, 32.7, STORMWIND_CITY },
@@ -1566,10 +1572,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(520, {	-- Brack
 					-- #if AFTER CATA
-					["coord"] = { 28.8, 72.8, WESTFALL },
-					["description"] = "This mob is running up and down the beach.",
-					-- #else
+					["description"] = "Brack is running up and down the beach.",
+					-- #endif
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 28.8, 72.8, WESTFALL },
+						-- #else
 						{ 55.2, 13.4, WESTFALL },
 						{ 48.6, 10.0, WESTFALL },
 						{ 43.0, 10.0, WESTFALL },
@@ -1584,14 +1592,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 28.8, 72.6, WESTFALL },
 						{ 29.0, 79.4, WESTFALL },
 						{ 33.6, 83.2, WESTFALL },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						i(2235, {	-- Brackclaw
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 						i(6179, {	-- Privateer's Cape
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -1631,10 +1639,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(933, {	-- Large Rucksack
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 						i(4434, {	-- Scarecrow Trousers
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -1688,17 +1696,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				n(572, {	-- Leprithus
-					-- #if AFTER CATA
-					["coord"] = { 41.7, 29.3, WESTFALL },
-					["description"] = "Spawns once a day at approximately 20:00/8 PM server time.",
-					-- #else
+					["description"] =
+						-- #if AFTER CATA
+						 "Spawns once a day at approximately 20:00/8 PM server time.",
+						-- #else
+						"Spawns at BOTH the northern and west-most southern spawn points at approximately 20:00/8 PM server time. If you are quick, you could probably snag both.",
+						-- #endif
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 41.7, 29.3, WESTFALL },
+						-- #else
 						{ 42.4, 30.8, WESTFALL },
 						{ 65.2, 63.2, WESTFALL },
 						{ 60.0, 77.6, WESTFALL },
+						-- #endif
 					},
-					["description"] = "Spawns at BOTH the northern and west-most southern spawn points at approximately 20:00/8 PM server time. If you are quick, you could probably snag both.",
-					-- #endif
 					["groups"] = {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(205932, {	-- Prophecy of a King's Demise
@@ -1710,45 +1722,45 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						-- #endif
 						i(1387, {	-- Ghoulfang
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 						i(1314, {	-- Ghoul Fingers
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
 				n(1424, {	-- Master Digger
-					-- #if AFTER CATA
+					["description"] =
+						-- #if AFTER CATA
+						"Spawns inside Jangolode Mine, at the end of the cave.",
+						-- #else
+						"Spawns inside Jangolode Mine.",
+						-- #endif
 					["coord"] = { 46.2, 18.6, WESTFALL },
-					["description"] = "Spawns inside Jangolode Mine, at the end of the cave.",
-					-- #else
-					["coord"] = { 46.2, 18.8, WESTFALL },
-					["description"] = "Spawns inside Jangolode Mine.",
-					-- #endif
 					["groups"] = {
 						i(6205, {	-- Burrowing Shovel
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 						i(6206, {	-- Rock Chipper
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
 				n(506, {	-- Sergeant Brashclaw
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 64.0, 73.8, WESTFALL },
 						{ 60.0, 74.8, WESTFALL },
+						-- #else
+						{ 37.6, 32.8, WESTFALL },
+						-- #endif
 					},
-					-- #else
-					["coord"] = { 37.6, 32.8, WESTFALL },
-					-- #endif
 					["groups"] = {
 						i(2203, {	-- Brashclaw's Chopper
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 						i(2204, {	-- Brashclaw's Skewer
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -1769,13 +1781,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(519, {	-- Slark
 					-- #if AFTER CATA
+					["description"] = "Slark is running around the beach.",
+					-- #endif
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 56.0, 9.8, WESTFALL },
 						{ 49.8, 10.4, WESTFALL },
-					},
-					["description"] = "This mob is running around the beach.",
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 55.2, 13.4, WESTFALL },
 						{ 48.6, 10.0, WESTFALL },
 						{ 43.0, 10.0, WESTFALL },
@@ -1790,17 +1802,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 28.8, 72.6, WESTFALL },
 						{ 29.0, 79.4, WESTFALL },
 						{ 33.6, 83.2, WESTFALL },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						i(3188, {	-- Coral Claymore
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 						i(120952, {	-- Slarkhide
-							["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { ADDED_10_1_7 },
 						}),
 						i(6180, {	-- Slarkskin
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_2_0 },	-- ATT Discord 01.19.2024
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_2_0 },
 						}),
 					},
 				}),
@@ -1942,7 +1954,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6274, {	-- Pattern: Blue Overalls
+						i(6274, {	-- Pattern: Blue Overalls (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(5786, {	-- Pattern: Murloc Scale Belt (RECIPE!)
@@ -1951,7 +1963,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(5787, {	-- Pattern: Murloc Scale Breastplate (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5771, {	-- Pattern: Red Linen Bag
+						i(5771, {	-- Pattern: Red Linen Bag (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -1984,13 +1996,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}},
 				}),
 				n(1668, {	-- William MacGregor <Bowyer>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 57.7, 53.7, WESTFALL },
-						-- #else
-						{ 57.6, 53.8, WESTFALL },
-						-- #endif
-					},
+					["coord"] = { 57.7, 53.7, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(11304, {	-- Fine Longbow
@@ -2013,7 +2019,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(826, {	-- Brutish Riverpaw Axe
 					["cr"] = 124,	-- Riverpaw Brute
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["coords"] = {
 						-- #if BEFORE 4.0.3
 						{ 54.2, 62.0, WESTFALL },
@@ -2064,9 +2070,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 54.2, 42.6, WESTFALL },
 					["maps"] = { REDRIDGE_MOUNTAINS },
 					["crs"] = {
-						454,	-- Young Goretusk
 						157,	-- Goretusk
 						547,	-- Great Goretusk
+						454,	-- Young Goretusk
 					},
 				}),
 				-- #endif
@@ -2077,7 +2083,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(1394, {	-- Driftwood Club
 					["cr"] = 171,	-- Murloc Warrior
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["coords"] = {
 						{ 32.2, 26.6, WESTFALL },
 						{ 34.8, 23.6, WESTFALL },
@@ -2085,10 +2091,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(4290, {	-- Dust Bowl
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 12.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 832,	-- Dust Devil
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["crs"] = {
+						-- #if BEFORE 4.0.3
+						832,	-- Dust Devil
+						-- #elseif AFTER 10.1.7
+						42669,	-- Chasm Slime
+						-- #endif
+					},
 					["coords"] = {
+						-- #if BEFORE 4.0.3
 						{ 40.8, 22.0, WESTFALL },
 						{ 35.8, 34.4, WESTFALL },
 						{ 33.8, 49.4, WESTFALL },
@@ -2101,15 +2113,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 61.6, 36.0, WESTFALL },
 						{ 63.6, 51.4, WESTFALL },
 						{ 68.8, 74.0, WESTFALL },
-					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 42669,	-- Chasm Slime
-					["coords"] = {
+						-- #elseif AFTER 10.1.7
 						{ 36.0, 42.2, WESTFALL },
 						{ 40.4, 39.8, WESTFALL },
 						{ 39.0, 46.2, WESTFALL },
+						-- #endif
 					},
-					-- #endif
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(209058, {	-- Elemental Core
@@ -2180,20 +2189,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 51.6, 75.2, WESTFALL },
 					},
 					["crs"] = {
-						504,	-- Defias Trapper
-						 95,	-- Defias Smuggler
 						449,	-- Defias Knuckleduster
 						590,	-- Defias Looter
 						589,	-- Defias Pillager
 						121,	-- Defias Pathstalker
+						 95,	-- Defias Smuggler
+						504,	-- Defias Trapper
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(209059, {	-- Goretusk Haunch
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { HUNTER },
 					["crs"] = {
-						454,	-- Young Goretusk
 						157,	-- Goretusk
+						454,	-- Young Goretusk
 					},
 				})),
 				-- #endif
@@ -2226,7 +2235,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1274, {	-- Hops
 					["crs"] = {
 						573,	-- Foe Reaper 4000
-						36,		-- Harvest Golem
+						 36,	-- Harvest Golem
 						115,	-- Harvest Reaper
 						114,	-- Harvest Watcher
 						480,	-- Rusty Harvest Golem
@@ -2282,12 +2291,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 51.6, 75.2, WESTFALL },
 					},
 					["crs"] = {
-						504,	-- Defias Trapper
-						 95,	-- Defias Smuggler
 						449,	-- Defias Knuckleduster
 						590,	-- Defias Looter
 						589,	-- Defias Pillager
 						121,	-- Defias Pathstalker
+						 95,	-- Defias Smuggler
+						504,	-- Defias Trapper
 					},
 				})),
 				-- #endif
@@ -2301,40 +2310,47 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(1190, {	-- Overseer's Cloak
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 125,	-- Riverpaw Overseer
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["crs"] = {
+						-- #if BEFORE 4.0.3
+						125,	-- Riverpaw Overseer
+						-- #elseif AFTER 10.1.7
+						98,	-- Riverpaw Taskmaster
+						-- #endif
+					},
 					["coords"] = {
+						-- #if BEFORE 4.0.3
 						{ 63.8, 74.6, WESTFALL },
 						{ 58.0, 72.2, WESTFALL },
-					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 98,	-- Riverpaw Taskmaster
-					["coords"] = {
+						-- #elseif AFTER 10.1.7
 						{ 63.8, 74.6, WESTFALL },
 						{ 58.0, 72.2, WESTFALL },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(1189, {	-- Overseer's Ring
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["crs"] = {
+						-- #if BEFORE 4.0.3
+						125,	-- Riverpaw Overseer
+						-- #elseif AFTER 10.1.7
+						 98,	-- Riverpaw Taskmaster
+						-- #endif
+					},
 					-- #if BEFORE 4.0.3
-					["cr"] = 125,	-- Riverpaw Overseer
 					["coords"] = {
 						{ 63.8, 78.6, WESTFALL },
 						{ 60.2, 76.6, WESTFALL },
 						{ 60.2, 70.8, WESTFALL },
 						{ 63.6, 72.8, WESTFALL },
 					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 98,	-- Riverpaw Taskmaster
 					-- #endif
 				}),
-				i(5771, {	-- Pattern: Red Linen Bag
+				i(5771, {	-- Pattern: Red Linen Bag (RECIPE!)
 					["cr"] = 590,	-- Defias Looter
 				}),
 				-- #if BEFORE 4.0.3
-				i(5772, {	-- Pattern: Red Woolen Bag
+				i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
 					["cr"] = 450,	-- Defias Renegade Mage
 				}),
 				-- #endif
@@ -2348,10 +2364,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				-- #if AFTER 4.0.3
 				i(2698, {	-- Recipe: Cooked Crab Claw (RECIPE!)
-					["description"] = "Can drop from any mob in the zone, would recommend farming the murlocs in the north.",
+					["description"] = "Can drop from any hostile creature in the zone.\nRecommended farming spot: Murlocs in the north area.",
 				}),
 				i(728, {	-- Recipe: Westfall Stew (RECIPE!)
-					["description"] = "Can drop from any mob in the zone, would recommend farming the Riverpaw Gnolls.",
+					["description"] = "Can drop from any hostile creature in the zone.\nRecommended: farm the Riverpaw Gnolls.",
 				}),
 				-- #endif
 				i(58117, {	-- Red Bandana
@@ -2367,7 +2383,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208741, {	-- Rune of Endless Rage
-					["description"] = "This can also drop from any of the rare mobs in the zone.",
+					["description"] = "This Rune can drop from any of the Rare creatures in the zone.",
 					["coord"] = { 34.4, 84.6, WESTFALL },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
@@ -2378,42 +2394,49 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(832, {	-- Silver Defias Belt
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 121,	-- Defias Pathstalker
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["crs"] = {
+						-- #if BEFORE 4.0.3
+						121,	-- Defias Pathstalker
+						-- #elseif AFTER 10.1.7
+						42677,	-- Moonbrook Thug
+						-- #endif
+					},
 					["coords"] = {
+						-- #if BEFORE 4.0.3
 						{ 51.6, 75.2, WESTFALL },
 						{ 37.6, 75.0, WESTFALL },
-					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 42677,	-- Moonbrook Thug
-					["coords"] = {
+						-- #elseif AFTER 10.1.7
 						{ 44.4, 68.6, WESTFALL },
 						{ 42.6, 72.0, WESTFALL },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(820, {	-- Slicer Blade
 					["cr"] = 115,	-- Harvest Reaper
 				}),
 				i(816, {	-- Small Hand Blade
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					-- #if BEFORE 4.0.3
-					["cr"] = 36,	-- Harvest Golem
+					["crs"] = {
+						-- #if BEFORE 4.0.3
+						 36,	-- Harvest Golem
+						-- #elseif AFTER 10.1.7
+						114,	-- Harvest Watcher
+						-- #endif
+					},
 					["coords"] = {
+						-- #if BEFORE 4.0.3
 						{ 57.6, 36.4, WESTFALL },
 						{ 49.6, 33.2, WESTFALL },
 						{ 32.8, 35.0, WESTFALL },
 						{ 35.8, 46.0, WESTFALL },
 						{ 47.6, 67.6, WESTFALL },
-					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 114,	-- Harvest Watcher
-					["coords"] = {
+						-- #elseif AFTER 10.1.7
 						{ 57.0, 34.2, WESTFALL },
 						{ 54.6, 32.2, WESTFALL },
+						-- #endif
 					},
-					-- #endif
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(209045, {	-- Soul of the Sea
@@ -2458,10 +2481,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 63.6, 60.2, WESTFALL },
 					},
 					["crs"] = {
-						480,	-- Rusty Harvest Golem
-						114,	-- Harvest Watcher
 						 36,	-- Harvest Golem
 						115,	-- Harvest Reaper
+						114,	-- Harvest Watcher
+						480,	-- Rusty Harvest Golem
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208754, {	-- Spell Notes: TENGI RONEERA
@@ -2474,7 +2497,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE 10.1.7
 				i(1933, {	-- Staff of Conjuring
 					-- Moved to Brainwashed Noble in 10.1.7
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 619,	-- Defias Conjurer
 					["coords"] = {
 						{ 44.6, 69.4, WESTFALL },
@@ -2483,20 +2506,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(2327, {	-- Sturdy Leather Bracers
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 480,	-- Rusty Harvest Golem
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["crs"] = {
+						-- #if BEFORE 4.0.3
+						480,	-- Rusty Harvest Golem
+						-- #elseif AFTER 10.1.7
+						452,	-- Riverpaw Bandit
+						-- #endif
+					},
 					["coords"] = {
+						-- #if BEFORE 4.0.3
 						{ 59.6, 18.6, WESTFALL },
 						{ 54.6, 26.0, WESTFALL },
-					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 452,	-- Riverpaw Bandit
-					["coords"] = {
+						-- #elseif AFTER 10.1.7
 						{ 56.6, 70.0, WESTFALL },
 						{ 59.6, 75.0, WESTFALL },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(827, {	-- Wicked Blackjack
 					["crs"] = {
