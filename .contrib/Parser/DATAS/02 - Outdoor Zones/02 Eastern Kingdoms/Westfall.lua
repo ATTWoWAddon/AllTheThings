@@ -1698,7 +1698,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(572, {	-- Leprithus
 					["description"] =
 						-- #if AFTER CATA
-						 "Spawns once a day at approximately 20:00/8 PM server time.",
+						"Spawns once a day at approximately 20:00/8 PM server time.",
 						-- #else
 						"Spawns at BOTH the northern and west-most southern spawn points at approximately 20:00/8 PM server time. If you are quick, you could probably snag both.",
 						-- #endif
@@ -2417,7 +2417,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(816, {	-- Small Hand Blade
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
-					-- #if BEFORE 4.0.3
 					["crs"] = {
 						-- #if BEFORE 4.0.3
 						 36,	-- Harvest Golem
