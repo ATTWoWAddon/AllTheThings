@@ -102,6 +102,19 @@ end
 app.CreateHash = CreateHash;
 
 -- Helper Functions
+local ShouldExcludeFromTooltipHelper = function(t)
+	-- Whether or not to exclude this data from the source list in the tooltip.
+	local parent = t.parent;
+	if parent then return parent.ShouldExcludeFromTooltip; end
+	return false;
+end
+local function AutoPluralizeField(t, field)
+	local val = t[field]
+	if not val then return end
+	-- app.PrintDebug("APF:",field,val,app:SearchLink(t))
+	return {val}
+end
+
 -- Classic needs to use Search Module for this
 local SourceSearcher = app.SourceSearcher or setmetatable({}, { __index = function(t,key) return app.GetRawField end})
 
@@ -227,89 +240,73 @@ local DefaultFields = {
 	["creatureID"] = function(t)	-- TODO: Do something about this, it's silly.
 		return t.npcID;
 	end,
-	["filterID"] = function(t)	-- we like to use different field names in different places
-		return t.f
+	["ShouldExcludeFromTooltipHelper"] = function(t)
+		return ShouldExcludeFromTooltipHelper;
 	end,
-	["iconPath"] = function(t)
-		return rawget(t, "icon")
-	end,
-	-- Base ShouldExcludeFromTooltip is false, so search upwards in hierarchy for a defined result
 	["ShouldExcludeFromTooltip"] = function(t)
-		-- If this t has a helper defined for exclusion
-		local helper = t.ShouldExcludeFromTooltipHelper
-		if helper and helper(t) then return true end
-
-		-- Whether or not to exclude this data from the source list in the tooltip.
-		local parent = t.parent
-		if parent then return parent.ShouldExcludeFromTooltip end
+		return t.ShouldExcludeFromTooltipHelper(t);
 	end,
-	-- Allows automatically handling a global re-try timer for the specific group for operations which need to 're-try' things
-	-- concerning this group and are not using Event-driven handling
-	-- check 'if [not] o.CanRetry then ...'
-	-- Assign this field directly in the group if re-tries on the group should be permanently disabled
-	-- i.e. if not t.CanRetry then t.CanRetry = false end
-	-- (number) - the retry has been started with this duration in seconds
-	-- true - the group is pending an active retry timer
-	-- nil - the group has retried and the retry timer has not been re-started
-	["CanRetry"] = function(t)
-		local canretry = t.__canretry
-		if canretry == nil then
-			-- first check if we can retry for this group
-			canretry = true
-			t.__canretry = canretry
-			-- app.PrintDebug("retry:start",t,canretry,t.hash)
-			-- after some seconds, mark this group to no longer retry
-			DelayedCallback(function(t)
-				-- app.PrintDebug("__cantry:done",t,false,t.hash)
-				t.__canretry = false
-				t.HasRetried = true
-			end, CAN_RETRY_DURATION_SEC, t)
-			return CAN_RETRY_DURATION_SEC
-		elseif canretry == false then
-			-- group has been marked to stop retrying, but it can be re-tried later
-			t.__canretry = nil
-			-- app.PrintDebug("retry:nil",t,nil,t.hash)
-			return
-		-- else app.PrintDebug("retry:wait",t,canretry)	-- cannot ref t fields here or may infinite loop on CanRetry from .text
-		end
-		return canretry
+	-- testing some auto-pluralize fields to reduce base addon memory footprint while maintaining field existence expectations
+	-- without requiring sweeping changes
+	["coords"] = function(t)
+		return AutoPluralizeField(t, "coord")
 	end,
-	-- Future ProviderDB implementation for global object 'provider' content
-	-- providerinfo = function(t)
-	-- 	local k = t.key
-	-- 	local id = t[k]
-	-- 	local providersByType = app.ProviderDB[k]
-	-- 	return providersByType and providersByType[id] or nil
-	-- end,
-	-- Legacy Shim to handle code references to 'providers' after ProviderDB implementation
-	-- providers = function(t)
-	-- 	-- If cached, return immediately
-	-- 	local providers = t._providers
-	-- 	if providers ~= nil then return providers or nil end
-
-	-- 	local info = t.providerinfo
-	-- 	if not info then
-	-- 		t._providers = false	-- sentinel
-	-- 		return
-	-- 	end
-
-	-- 	-- Build synthetic legacy provider list
-	-- 	providers = {}
-
-	-- 	for providerType,idList in pairs(info) do
-	-- 		for i=1,#idList do
-	-- 			providers[#providers+1] = { providerType, idList[i] }
-	-- 		end
-	-- 	end
-
-	-- 	-- Cache it
-	-- 	t._providers = providers
-
-	-- 	return providers
-	-- end,
+	["qgs"] = function(t)
+		return AutoPluralizeField(t, "qg")
+	end,
+	["sourceQuests"] = function(t)
+		return AutoPluralizeField(t, "sourceQuest")
+	end,
+	["providers"] = function(t)
+		return AutoPluralizeField(t, "provider")
+	end,
+	["crs"] = function(t)
+		return AutoPluralizeField(t, "cr")
+	end,
 };
 
+if app.IsRetail then
+	-- Crieve doesn't see these fields being included as necessary,
+	-- future research project is to look into seeing if this is something we want to keep or put somewhere else. (such as a function)
+	for fieldName,fieldMethod in pairs({
+		-- Default text should be a valid link or name
+		-- In Retail, text can be colored and can be based on a variety of possible fields
+		-- trying to individually maintain variable coloring in every object class is quite absurd
+		["text"] = function(t)
+			return t.link or app.TryColorizeName(t);
+		end,
+		["nmc"] = function(t)
+			local c = t.c;
+			local nmc = c and not containsValue(c, app.ClassIndex) or false;
+			-- app.PrintDebug("base.nmc",t.__type,nmc)
+			t.nmc = nmc;
+			return nmc;
+		end,
+		["nmr"] = function(t)
+			local races = t.races;
+			local r = t.r;
+			local nmr = (r and r ~= app.FactionID) or (races and not containsValue(races, app.RaceIndex)) or false;
+			-- app.PrintDebug("base.nmr",t.__type,nmr)
+			t.nmr = nmr;
+			return nmr;
+		end,
+		-- we like to use different field names in different places
+		["filterID"] = function(t)
+			return t.f
+		end,
+		["iconPath"] = function(t)
+			return rawget(t, "icon")
+		end,
+	}) do
+		DefaultFields[fieldName] = fieldMethod;
+	end
+end
 
+local function ClassError(...)
+	local params = {...}
+	local err = app.TableConcat(params, nil, "", " ")
+	error(err)
+end
 local CloneDictionary = app.CloneDictionary
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
 local classDefinitions, _cache = {}, nil;
