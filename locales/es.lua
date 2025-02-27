@@ -459,9 +459,6 @@ end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Dragonflight
-		[-1150] = "Niffen de Loamm",								-- Loamm Niffen
-
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5202] = "Equilibrio de poderes",						-- Balance of Power

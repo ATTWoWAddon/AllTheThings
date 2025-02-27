@@ -30,8 +30,6 @@ for key, value in pairs({
 		[-145] = 1042064,										-- Skyreach
 		[-146] = 1060551,										-- The Everbloom
 		[-147] = 1042065,										-- Upper Blackrock Spire
-	-- Dragonflight
-		[-1150] = 5140835,										-- Loamm Niffen
 	-- The War Within
 		[-1208] = 236421,										-- Invasion: Vrykul
 		[-1209] = 236422,										-- Invasion: Naga
@@ -47,9 +45,6 @@ for key, value in pairs({
 		[-145] = GetRealZoneText(1209),									-- Skyreach
 		[-146] = GetRealZoneText(1279),									-- The Everbloom
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
-	-- Dragonflight
-		-- Autotranslate with Reputation
-		[-1150] = "Loamm Niffen",													-- Loamm Niffen
 	-- The War Within
 		[-1208] = "Invasion: Vrykul",												-- Vrykul
 		[-1209] = "Invasion: Naga",													-- Naga

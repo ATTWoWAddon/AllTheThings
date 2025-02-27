@@ -444,8 +444,6 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Dragonflight
-		[-1150] = "Niffen von Loamm",								-- Loamm Niffen
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5201] = "Ordenskampagne",								-- Class Hall Campaign

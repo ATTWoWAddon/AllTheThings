@@ -463,8 +463,6 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Dragonflight
-		[-1150] = "峈姆鼹鼠人",											-- Loamm Niffen
 	-- The War Within
 		[-1208] = "入侵：维库人",												-- Vrykul
 		[-1209] = "入侵：娜迦",													-- Naga

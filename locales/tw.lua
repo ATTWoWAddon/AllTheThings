@@ -455,8 +455,6 @@ do a[key] = value; end
 if app.IsRetail then
 	local a = L.HEADER_NAMES;
 	for key,value in pairs({
-	-- Dragonflight
-		[-1150] = "洛姆鼴鼠人",											-- Loamm Niffen
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5200] = "基礎外觀",										-- Base Appearance
