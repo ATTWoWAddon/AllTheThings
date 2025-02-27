@@ -1930,7 +1930,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				n(843, {	-- Gina MacGregor <Trade Supplies>
-					["coords"] = { 57.6, 53.8, WESTFALL },
+					["coord"] = { 57.6, 53.8, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6274, {	-- Pattern: Blue Overalls (RECIPE!)
