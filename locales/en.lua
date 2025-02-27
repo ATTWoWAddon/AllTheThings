@@ -31,7 +31,6 @@ for key, value in pairs({
 		[-146] = 1060551,										-- The Everbloom
 		[-147] = 1042065,										-- Upper Blackrock Spire
 	-- The War Within
-		[-1208] = 236421,										-- Invasion: Vrykul
 		[-1209] = 236422,										-- Invasion: Naga
 		[-1210] = 133168,										-- Invasion: Pirate
 	};
@@ -46,7 +45,6 @@ for key, value in pairs({
 		[-146] = GetRealZoneText(1279),									-- The Everbloom
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
 	-- The War Within
-		[-1208] = "Invasion: Vrykul",												-- Vrykul
 		[-1209] = "Invasion: Naga",													-- Naga
 		[-1210] = "Invasion: Pirate",												-- Pirate
 	-- Tier/Dungeon/Event/Holiday Sets
