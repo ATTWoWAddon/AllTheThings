@@ -3,6 +3,5 @@
 -------------------------------------------
 -- Expansion Features
 	-- DF
-	MARUUK_CENTAUR = -1120;
 	ISKAARA_TUSKARR = -1130;
 	LOAMM_NIFFEN = -1150;

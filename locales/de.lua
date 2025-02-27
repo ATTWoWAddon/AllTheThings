@@ -445,7 +445,6 @@ if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Dragonflight
-		[-1120] = "Zentauren der Maruuk",							-- Maruuk Centaur
 		[-1130] = "Tuskarr von Iskaara",							-- Iskaara Tuskarr
 		[-1150] = "Niffen von Loamm",								-- Loamm Niffen
 	-- Tier/Dungeon/Event/Holiday Sets

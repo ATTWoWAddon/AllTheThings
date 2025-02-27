@@ -31,7 +31,6 @@ for key, value in pairs({
 		[-146] = 1060551,										-- The Everbloom
 		[-147] = 1042065,										-- Upper Blackrock Spire
 	-- Dragonflight
-		[-1120] = 4687627,										-- Maruuk Centaur
 		[-1130] = 4687629,										-- Iskaara Tuskarr
 		[-1150] = 5140835,										-- Loamm Niffen
 	-- The War Within
@@ -51,7 +50,6 @@ for key, value in pairs({
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
 	-- Dragonflight
 		-- Autotranslate with Reputation
-		[-1120] = "Maruuk Centaur",													-- Maruuk Centaur
 		[-1130] = "Iskaara Tuskarr",												-- Iskaara Tuskarr
 		[-1150] = "Loamm Niffen",													-- Loamm Niffen
 	-- The War Within
