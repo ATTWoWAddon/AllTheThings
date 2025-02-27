@@ -464,7 +464,6 @@ if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- The War Within
-		[-1209] = "入侵：娜迦",													-- Naga
 		[-1210] = "入侵：海盗",												-- Pirate
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
