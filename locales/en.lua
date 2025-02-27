@@ -30,8 +30,6 @@ for key, value in pairs({
 		[-145] = 1042064,										-- Skyreach
 		[-146] = 1060551,										-- The Everbloom
 		[-147] = 1042065,										-- Upper Blackrock Spire
-	-- The War Within
-		[-1210] = 133168,										-- Invasion: Pirate
 	};
 	["HEADER_NAMES"] = {
 	-- WoD Dungeons(Fake npcid)
@@ -43,8 +41,6 @@ for key, value in pairs({
 		[-145] = GetRealZoneText(1209),									-- Skyreach
 		[-146] = GetRealZoneText(1279),									-- The Everbloom
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
-	-- The War Within
-		[-1210] = "Invasion: Pirate",												-- Pirate
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings, These IDs are used in src/Expansion/Legion [Ask Runaway about removing them]
 		[-5200] = "Base Appearance",											-- Base Appearance
