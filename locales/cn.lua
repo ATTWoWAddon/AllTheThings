@@ -464,7 +464,6 @@ if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Dragonflight
-		[-1130] = "伊斯卡拉海象人",										-- Iskaara Tuskarr
 		[-1150] = "峈姆鼹鼠人",											-- Loamm Niffen
 	-- The War Within
 		[-1208] = "入侵：维库人",												-- Vrykul

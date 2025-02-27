@@ -3,5 +3,4 @@
 -------------------------------------------
 -- Expansion Features
 	-- DF
-	ISKAARA_TUSKARR = -1130;
 	LOAMM_NIFFEN = -1150;

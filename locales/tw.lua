@@ -456,7 +456,6 @@ if app.IsRetail then
 	local a = L.HEADER_NAMES;
 	for key,value in pairs({
 	-- Dragonflight
-		[-1130] = "伊斯凱拉巨牙海民",										-- Iskaara Tuskarr
 		[-1150] = "洛姆鼴鼠人",											-- Loamm Niffen
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
