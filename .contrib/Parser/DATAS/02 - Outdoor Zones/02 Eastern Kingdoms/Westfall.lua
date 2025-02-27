@@ -1571,28 +1571,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				n(520, {	-- Brack
-					-- #if AFTER CATA
 					["description"] = "Brack is running up and down the beach.",
-					-- #endif
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 28.8, 72.8, WESTFALL },
-						-- #else
-						{ 55.2, 13.4, WESTFALL },
-						{ 48.6, 10.0, WESTFALL },
-						{ 43.0, 10.0, WESTFALL },
-						{ 39.0, 15.0, WESTFALL },
-						{ 35.0, 20.6, WESTFALL },
-						{ 31.0, 26.4, WESTFALL },
-						{ 29.0, 34.6, WESTFALL },
-						{ 29.6, 39.8, WESTFALL },
-						{ 27.2, 45.0, WESTFALL },
-						{ 26.6, 56.4, WESTFALL },
 						{ 26.2, 65.6, WESTFALL },
+						{ 26.6, 56.4, WESTFALL },
+						{ 27.2, 45.0, WESTFALL },
 						{ 28.8, 72.6, WESTFALL },
+						{ 29.0, 34.6, WESTFALL },
 						{ 29.0, 79.4, WESTFALL },
+						{ 29.6, 39.8, WESTFALL },
+						{ 31.0, 26.4, WESTFALL },
 						{ 33.6, 83.2, WESTFALL },
-						-- #endif
+						{ 35.0, 20.6, WESTFALL },
+						{ 39.0, 15.0, WESTFALL },
+						{ 43.0, 10.0, WESTFALL },
+						{ 48.6, 10.0, WESTFALL },
+						{ 55.2, 13.4, WESTFALL },
 					},
 					["groups"] = {
 						i(2235, {	-- Brackclaw
@@ -1624,17 +1618,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(573, {	-- Foe Reaper 4000
 					["coords"] = {
+						{ 38.6, 51.6, WESTFALL },
+						{ 45.5, 36.0, WESTFALL },
+						{ 51.6, 67.4, WESTFALL },
+						{ 51.8, 24.6, WESTFALL },
+						{ 62.8, 62.2, WESTFALL },
 						-- #if AFTER CATA
 						{ 54.6, 32.6, WESTFALL },
-						{ 44.0, 36.0, WESTFALL },
-						{ 38.8, 51.6, WESTFALL },
-						{ 62.6, 61.6, WESTFALL },
-						-- #else
-						{ 51.8, 24.6, WESTFALL },
-						{ 45.5, 36.0, WESTFALL },
-						{ 38.6, 51.6, WESTFALL },
-						{ 62.8, 62.2, WESTFALL },
-						{ 51.6, 67.4, WESTFALL },
 						-- #endif
 					},
 					["groups"] = {
@@ -1749,8 +1739,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(506, {	-- Sergeant Brashclaw
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 64.0, 73.8, WESTFALL },
 						{ 60.0, 74.8, WESTFALL },
+						{ 64.0, 73.8, WESTFALL },
 						-- #else
 						{ 37.6, 32.8, WESTFALL },
 						-- #endif
@@ -1780,29 +1770,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				n(519, {	-- Slark
-					-- #if AFTER CATA
 					["description"] = "Slark is running around the beach.",
-					-- #endif
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 56.0, 9.8, WESTFALL },
-						{ 49.8, 10.4, WESTFALL },
-						-- #else
-						{ 55.2, 13.4, WESTFALL },
-						{ 48.6, 10.0, WESTFALL },
-						{ 43.0, 10.0, WESTFALL },
-						{ 39.0, 15.0, WESTFALL },
-						{ 35.0, 20.6, WESTFALL },
-						{ 31.0, 26.4, WESTFALL },
-						{ 29.0, 34.6, WESTFALL },
-						{ 29.6, 39.8, WESTFALL },
-						{ 27.2, 45.0, WESTFALL },
-						{ 26.6, 56.4, WESTFALL },
 						{ 26.2, 65.6, WESTFALL },
+						{ 26.6, 56.4, WESTFALL },
+						{ 27.2, 45.0, WESTFALL },
 						{ 28.8, 72.6, WESTFALL },
+						{ 29.0, 34.6, WESTFALL },
 						{ 29.0, 79.4, WESTFALL },
+						{ 29.6, 39.8, WESTFALL },
+						{ 31.0, 26.4, WESTFALL },
 						{ 33.6, 83.2, WESTFALL },
-						-- #endif
+						{ 35.0, 20.6, WESTFALL },
+						{ 39.0, 15.0, WESTFALL },
+						{ 43.0, 10.0, WESTFALL },
+						{ 48.6, 10.0, WESTFALL },
+						{ 49.8, 10.4, WESTFALL },
+						{ 55.2, 13.4, WESTFALL },
+						{ 56.0, 9.8, WESTFALL },
 					},
 					["groups"] = {
 						i(3188, {	-- Coral Claymore
@@ -1945,13 +1930,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				n(843, {	-- Gina MacGregor <Trade Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 57.6, 53.8, WESTFALL },
-						-- #else
-						{ 57.6, 54.0, WESTFALL },
-						-- #endif
-					},
+					["coords"] = { 57.6, 53.8, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6274, {	-- Pattern: Blue Overalls (RECIPE!)
@@ -2093,14 +2072,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(4290, {	-- Dust Bowl
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
-						-- #if BEFORE 4.0.3
-						832,	-- Dust Devil
-						-- #elseif AFTER 10.1.7
+						-- #if AFTER 10.1.7
 						42669,	-- Chasm Slime
+						-- #else
+						832,	-- Dust Devil
 						-- #endif
 					},
 					["coords"] = {
-						-- #if BEFORE 4.0.3
+						-- #if AFTER 10.1.7
+						{ 36.0, 42.2, WESTFALL },
+						{ 40.4, 39.8, WESTFALL },
+						{ 39.0, 46.2, WESTFALL },
+						-- #else
 						{ 40.8, 22.0, WESTFALL },
 						{ 35.8, 34.4, WESTFALL },
 						{ 33.8, 49.4, WESTFALL },
@@ -2113,10 +2096,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 61.6, 36.0, WESTFALL },
 						{ 63.6, 51.4, WESTFALL },
 						{ 68.8, 74.0, WESTFALL },
-						-- #elseif AFTER 10.1.7
-						{ 36.0, 42.2, WESTFALL },
-						{ 40.4, 39.8, WESTFALL },
-						{ 39.0, 46.2, WESTFALL },
 						-- #endif
 					},
 				}),
@@ -2312,29 +2291,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1190, {	-- Overseer's Cloak
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
-						-- #if BEFORE 4.0.3
+						-- #if AFTER 10.1.7
+						 98,	-- Riverpaw Taskmaster
+						-- #else
 						125,	-- Riverpaw Overseer
-						-- #elseif AFTER 10.1.7
-						98,	-- Riverpaw Taskmaster
 						-- #endif
 					},
 					["coords"] = {
-						-- #if BEFORE 4.0.3
 						{ 63.8, 74.6, WESTFALL },
 						{ 58.0, 72.2, WESTFALL },
-						-- #elseif AFTER 10.1.7
-						{ 63.8, 74.6, WESTFALL },
-						{ 58.0, 72.2, WESTFALL },
-						-- #endif
 					},
 				}),
 				i(1189, {	-- Overseer's Ring
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
-						-- #if BEFORE 4.0.3
+						-- #if AFTER 10.1.7
+						98,	-- Riverpaw Taskmaster
+						-- #else
 						125,	-- Riverpaw Overseer
-						-- #elseif AFTER 10.1.7
-						 98,	-- Riverpaw Taskmaster
 						-- #endif
 					},
 					-- #if BEFORE 4.0.3
@@ -2396,19 +2370,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(832, {	-- Silver Defias Belt
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
-						-- #if BEFORE 4.0.3
-						121,	-- Defias Pathstalker
-						-- #elseif AFTER 10.1.7
+						-- #if AFTER 10.1.7
 						42677,	-- Moonbrook Thug
+						-- #else
+						121,	-- Defias Pathstalker
 						-- #endif
 					},
 					["coords"] = {
-						-- #if BEFORE 4.0.3
-						{ 51.6, 75.2, WESTFALL },
-						{ 37.6, 75.0, WESTFALL },
-						-- #elseif AFTER 10.1.7
+						-- #if AFTER 10.1.7
 						{ 44.4, 68.6, WESTFALL },
 						{ 42.6, 72.0, WESTFALL },
+						-- #else
+						{ 51.6, 75.2, WESTFALL },
+						{ 37.6, 75.0, WESTFALL },
 						-- #endif
 					},
 				}),
@@ -2418,22 +2392,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(816, {	-- Small Hand Blade
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
-						-- #if BEFORE 4.0.3
-						 36,	-- Harvest Golem
-						-- #elseif AFTER 10.1.7
+						-- #if AFTER 10.1.7
 						114,	-- Harvest Watcher
+						-- #else
+						 36,	-- Harvest Golem
 						-- #endif
 					},
 					["coords"] = {
-						-- #if BEFORE 4.0.3
+						-- #if AFTER 10.1.7
+						{ 57.0, 34.2, WESTFALL },
+						{ 54.6, 32.2, WESTFALL },
+						-- #else
 						{ 57.6, 36.4, WESTFALL },
 						{ 49.6, 33.2, WESTFALL },
 						{ 32.8, 35.0, WESTFALL },
 						{ 35.8, 46.0, WESTFALL },
 						{ 47.6, 67.6, WESTFALL },
-						-- #elseif AFTER 10.1.7
-						{ 57.0, 34.2, WESTFALL },
-						{ 54.6, 32.2, WESTFALL },
 						-- #endif
 					},
 				}),
@@ -2507,19 +2481,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2327, {	-- Sturdy Leather Bracers
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
-						-- #if BEFORE 4.0.3
-						480,	-- Rusty Harvest Golem
-						-- #elseif AFTER 10.1.7
+						-- #if AFTER 10.1.7
 						452,	-- Riverpaw Bandit
+						-- #else
+						480,	-- Rusty Harvest Golem
 						-- #endif
 					},
 					["coords"] = {
-						-- #if BEFORE 4.0.3
-						{ 59.6, 18.6, WESTFALL },
-						{ 54.6, 26.0, WESTFALL },
-						-- #elseif AFTER 10.1.7
+						-- #if AFTER 10.1.7
 						{ 56.6, 70.0, WESTFALL },
 						{ 59.6, 75.0, WESTFALL },
+						-- #else
+						{ 59.6, 18.6, WESTFALL },
+						{ 54.6, 26.0, WESTFALL },
 						-- #endif
 					},
 				}),
