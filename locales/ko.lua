@@ -457,7 +457,6 @@ if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Dragonflight
-		[-1102] = "래시온과 사벨리안",										-- Wrathion & Sabellian
 		[-1120] = "마루크 켄타우로스",										-- Maruuk Centaur
 		[-1130] = "이스카라 투스카르",										-- Iskaara Tuskarr
 		[-1150] = "로암 니펜",											-- Loamm Niffen

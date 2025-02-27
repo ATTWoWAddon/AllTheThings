@@ -31,7 +31,6 @@ for key, value in pairs({
 		[-146] = 1060551,										-- The Everbloom
 		[-147] = 1042065,										-- Upper Blackrock Spire
 	-- Dragonflight
-		[-1102] = 4622453,									-- Wrathion & Sabellian
 		[-1120] = 4687627,										-- Maruuk Centaur
 		[-1130] = 4687629,										-- Iskaara Tuskarr
 		[-1150] = 5140835,										-- Loamm Niffen
@@ -51,8 +50,6 @@ for key, value in pairs({
 		[-146] = GetRealZoneText(1279),									-- The Everbloom
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
 	-- Dragonflight
-		-- Autotranslate with NPC
-		[-1102] = "Wrathion & Sabellian",											-- Wrathion & Sabellian
 		-- Autotranslate with Reputation
 		[-1120] = "Maruuk Centaur",													-- Maruuk Centaur
 		[-1130] = "Iskaara Tuskarr",												-- Iskaara Tuskarr
