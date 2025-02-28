@@ -15,3 +15,21 @@ SEASON_TYRANNICAL = createHeader({
 		tw = WOWAPI_GetAchievementName(8791).. [[.."：第13賽季"]],
 	},
 });
+
+HONOR_TYRANNICAL = createHeader({
+	readable = "Honor Gear Tyrannical Season",
+	icon = 838515,
+	text = {
+		en = "Honor Gear Tyrannical Season",
+		-- de = "",
+		-- es = "",
+		-- mx = "",
+		fr = "Équipement Honneur Saison Tyrannique",
+		-- it = "",
+		-- ko = "",
+		-- pt = "",
+		ru = "Доспехи Деспотичного гладиатора за очки чести",
+		cn = "荣誉装备暴虐赛季",
+		tw = "榮譽裝備暴虐賽季",
+	},
+});
