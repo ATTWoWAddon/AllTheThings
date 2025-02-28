@@ -445,7 +445,6 @@ for key,value in pairs({
 	-- Outposts in Draenor
 		[-361] = "Артиллерийная башня",								-- Artillery Tower
 	-- Mists of Pandaria PvP Seasons
-		[-652] = "Доспехи Бездушного гладиатора за очки чести",		-- Honor Gear Grievous Season
 		[-651] = "Доспехи Гордого гладиатора за очки чести",		-- Honor Gear Prideful Season
 	-- Shadowlands Header
 		[-979] = "Брокер Ве'кен & Брокер Ве'нотт",					-- Broker Ve'ken & Broker Ve'nott

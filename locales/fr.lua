@@ -454,7 +454,6 @@ if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Mists of Pandaria PvP Seasons
-		[-652] = "Équipement Honneur Saison Dramatique",				-- Honor Gear Grievous Season
 		[-651] = "Équipement Honneur Saison Orgueilleux",				-- Honor Gear Prideful Season
 	-- Shadowlands Header
 		[-979] = "Négociant Ve'ken & Négociant Ve'nott",			-- Broker Ve'ken & Broker Ve'nott
