@@ -35,9 +35,6 @@ for key, value in pairs({
 		[-390] = 901746,								-- Smuggler's Den
 		[-391] = 413582,						-- Stoktron Brewery (alliance)
 		[-392] = 413582,						-- Hearthfire Tavern (horde)
-	-- PvP Headers
-		-- [-651] = 311230,									-- Not used yet. Future PvP Icons if needed
-		[-651] = 838515,						-- Honor Gear Prideful (S15)
 	-- Warlords of Dreanor PvP Seasons
 		[-679] = 1127958,								-- Primal Gladiator: Warlords Season 1
 		[-680] = 1137556,							-- Wild Gladiator: Warlords Season 2
@@ -99,8 +96,6 @@ for key, value in pairs({
 		[-390] = C_Map.GetAreaInfo(7288),										-- Smuggler's Den (Spires of Arak)
 		[-391] = C_Map.GetAreaInfo(7291),										-- Stoktron Brewery (Spires of Arak)
 		[-392] = C_Map.GetAreaInfo(7290),										-- Hearthfire Tavern
-	-- Mists of Pandaria PvP Seasons
-		[-651] = "Honor Gear Prideful Season",									-- Honor Gear Prideful (S15)
 	-- Warlords of Dreanor PvP Seasons
 		[-679] = select(2, GetAchievementInfo(9232)),							-- Primal Gladiator: Warlords Season 1
 		[-680] = select(2, GetAchievementInfo(10096)),							-- Wild Gladiator: Warlords Season 2

@@ -453,8 +453,6 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Mists of Pandaria PvP Seasons
-		[-651] = "Équipement Honneur Saison Orgueilleux",				-- Honor Gear Prideful Season
 	-- Shadowlands Header
 		[-979] = "Négociant Ve'ken & Négociant Ve'nott",			-- Broker Ve'ken & Broker Ve'nott
 		[-924] = "Réseau de transport",								-- Transport Network

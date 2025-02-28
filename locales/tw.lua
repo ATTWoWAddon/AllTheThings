@@ -457,8 +457,6 @@ if app.IsRetail then
 	for key,value in pairs({
 	-- Outposts in Draenor
 		[-361] = GetSpellName(182108).." 塔",							-- Artillery Tower
-	-- Mists of Pandaria PvP Seasons
-		[-651] = "榮譽裝備驕矜賽季",									-- Honor Gear Prideful (S15)
 	-- Shadowlands Header
 		[-979] = "掮靈威·肯 & 掮靈威·諾特",									-- Broker Ve'ken & Broker Ve'nott
 		[-924] = "傳送網路",											-- Transport Network
