@@ -111,16 +111,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["groups"] = {
 					pet(398),	-- Black Rat (PET!)
 					pet(396, {	-- Dusk Spiderling (PET!)
-						["description"] = "Found commonly in the area around the coord.",
+						["description"] = "Found commonly in the area around the given coordinate.",
 						["coord"] = { 32.6, 51.6, DUSKWOOD },
 					}),
 					pet(399),	-- Rat Snake (PET!)
 					pet(397),	-- Skunk (PET!)
 					pet(400, {	-- Widow Spiderling (PET!)
+						["description"] =
 						-- #if BEFORE 5.1.0
-						["description"] = "Spawns during the night between 6:30pm to 6:30am realm time, but can be found as a secondary pet all day long.",
+						"Spawns during the night between 6:30pm to 6:30am realm time, but can be found as a secondary pet all day long.",
 						-- #else
-						["description"] = "Spawns during the night between 6:30pm to 6:30am PST(US)/CEST(EU)/AEST(OCE), but can be found as a secondary pet all day long.",
+						"Spawns during the night between 6:30pm to 6:30am PST(US)/CEST(EU)/AEST(OCE), but can be found as a secondary pet all day long.",
 						-- #endif
 					}),
 				},
@@ -2103,20 +2104,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(771, {  -- Commander Felstrom
-					-- #if BEFORE 4.0.3
-					["description"] = "Spawns in the Dawning Wood Catacombs.",
-					["coord"] = { 18.0, 38.0, DUSKWOOD },
-					-- #elseif AFTER 10.1.7
-					["description"] = "Wanders the Raven Hill Cemetary, spawns at the given coordinates.",
-					["coord"] = { 21.8, 34.0, DUSKWOOD },
+					["description"] =
+					-- #if AFTER 10.1.7
+					"Wanders the Raven Hill Cemetary, spawns at the given coordinate.",
+					-- #else
+					"Spawns in the Dawning Wood Catacombs.",
 					-- #endif
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						-- #if AFTER 10.1.7
+						{ 21.8, 34.0, DUSKWOOD },
+						-- #else
+						{ 18.0, 38.0, DUSKWOOD },
+						-- #endif
+					},
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["groups"] = {
 						i(4465, {	-- Bonefist Gauntlets [Classic] / Felstrom's Gauntlets [Wrath+]
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 						i(4464, {	-- Trouncing Boots
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -2134,15 +2141,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(507, {	-- Fenros
+					["description"] =
 					-- #if BEFORE 4.0.3
-					["description"] = "Patrol between the coordinates.",
+					"Patrols between the coordinates.",
+					-- #else
+					"Spawns in one of multiple locations in Brightwood Grove, and can either be stationary or patrolling.",
+					-- #endif
 					["coords"] = {
+						-- #if BEFORE 4.0.3
 						{ 59.8, 26.8, DUSKWOOD },
 						{ 63.8, 51.6, DUSKWOOD },
-					},
-					-- #else
-					["description"] = "Spawns in one of multiple locations in Brightwood Grove, and can either be stationary or patrolling.",
-					["coords"] = {
+						-- #else
 						{ 58.4, 29.8, DUSKWOOD },
 						{ 62.0, 37.2, DUSKWOOD },
 						{ 60.6, 40.5, DUSKWOOD },
@@ -2151,14 +2160,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 61.2, 45.2, DUSKWOOD },
 						{ 64.4, 47.8, DUSKWOOD },
 						{ 64.0, 51.2, DUSKWOOD },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						i(4474, {	-- Ravenwood Bow
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 						i(6204, {	-- Tribal Worg Helm
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -2173,50 +2182,56 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(503, {  -- Lord Malathrom
-					-- #if BEFORE 4.0.3
-					["description"] = "Spawns in the Dawning Wood Catacombs.",
-					["coord"] = { 25.6, 30.2, DUSKWOOD },
-					-- #elseif AFTER 10.1.7
-					["description"] = "Spawns in one of multiple locations in the Dawning Wood Catacombs.",
+					["description"] =
+					-- #if AFTER 10.1.7
+					"Spawns in one of multiple locations in the Dawning Wood Catacombs.",
+					-- #else
+					"Spawns in the Dawning Wood Catacombs.",
+					-- #endif
 					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 24.2, 34.5, DUSKWOOD },
 						{ 25.6, 30.2, DUSKWOOD },
 						{ 20.3, 26.8, DUSKWOOD },
+						-- #else
+						{ 25.6, 30.2, DUSKWOOD },
+						-- #endif
 					},
-					-- #endif
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["groups"] = {
 						i(4462, {	-- Cloak of Rot
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 						i(1187, {	-- Spiked Collar
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
 				n(521, {  -- Lupos
+					["description"] =
 					-- #if AFTER 4.0.3
-					["description"] = "Spawns in one of multiple locations at the eastern end of the Darkened Bank.",
+					"Spawns in one of multiple locations at the eastern end of the Darkened Bank.",
+					-- #else
+					"Spawns randomly in the north-east area of the zone.",
+					-- #endif
 					["coords"] = {
+						-- #if AFTER 4.0.3
 						{ 60.8, 20.6, DUSKWOOD },
 						{ 65.6, 19.6, DUSKWOOD },
 						{ 70.2, 24.4, DUSKWOOD },
-					},
-					-- #else
-					["description"] = "Spawns randomly in the north",
-					["coords"] = {
+						-- #else
 						{ 20.0, 25.4, DUSKWOOD },
 						{ 38.4, 26.2, DUSKWOOD },
 						{ 60.2, 24.4, DUSKWOOD },
 						{ 71.0, 24.4, DUSKWOOD },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						i(3018, {	-- Hide of Lupos
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 						i(3227, {	-- Nightbane Staff
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -2243,34 +2258,38 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(574, {  -- Naraxis
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 86.36, 47.32, DUSKWOOD },
+						-- #if AFTER 4.0.3
+						{ 86.4, 47.3, DUSKWOOD },
 						-- #else
 						{ 86.6, 49.6, DUSKWOOD },
 						-- #endif
 					},
 					["groups"] = {
 						i(4448, {	-- Husk of Naraxis
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 						i(4449, {	-- Naraxis' Fang
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
 				n(534, {  -- Nefaru
-					-- #if AFTER CATA
-					["coord"] = { 74.0, 78.6, DUSKWOOD },
-					-- #else
-					["description"] = "Spawns randomly in the south",
-					["coord"] = { 63.6, 82.4, DUSKWOOD },
+					-- #if BEFORE 4.0.3
+					["description"] = "Spawns randomly in the south and south-eastern part of the zone.",
 					-- #endif
+					["coords"] = {
+						-- #if AFTER 4.0.3
+						{ 74.0, 78.6, DUSKWOOD },
+						-- #else
+						{ 63.6, 82.4, DUSKWOOD },
+						-- #endif
+					},
 					["groups"] = {
 						i(4476, {	-- Beastwalker Robe
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 						i(4477, {	-- Nefarious Buckler
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -2301,8 +2320,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 26.0, 31.0, DUSKWOOD },
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(210251, {	-- Engraved Silver Ring
-					--["provider"] = { "o",  },	-- Small Chest at Tranquil Gardens Cemetery South of Darkshire (TODO: Find ObjectID)
-					["coord"] = { 81, 71, DUSKWOOD },
+					["provider"] = { "o", 410779 },	-- Offering Box
+					["coord"] = { 81.0, 71.0, DUSKWOOD },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 				})),
@@ -2326,12 +2345,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(228, {	-- Avette Fellwood <Bowyer>
 					["coord"] = { 73.2, 44.8, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{"select","itemID",
+						3027,	-- Heavy Recurve Bow
+						3026,	-- Reinforced Bow
+					}},
 					["groups"] = {
 						i(11304, {	-- Fine Longbow
 							["isLimited"] = true,
 						}),
 					},
 				}),
+				-- #if BEFORE CATA
 				n(274, {	-- Barkeep Hann <Bartender>
 					["coord"] = { 73.8, 44.2, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
@@ -2339,6 +2363,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(1942),	-- Bottle of Moonshine
 					},
 				}),
+				-- #endif
 				n(2481, {	-- Bliztik <Alchemy Supplies>
 					["coord"] = { 18.0, 54.4, DUSKWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2352,7 +2377,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 75.8, 45.4, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(14627, {	-- Pattern: Bright Yellow Shirt
+						i(14627, {	-- Pattern: Bright Yellow Shirt (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2360,6 +2385,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(225, {	-- Gavin Gnarltree <Weaponsmith>
 					["coord"] = { 73.6, 49.8, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{"select","itemID",
+						929,	-- Battle Axe
+						2025,	-- Bearded Axe
+						2029,	-- Cleaver
+						922,	-- Dacian Falx
+						927,	-- Double Axe
+						2024,	-- Espadon
+						925,	-- Flail
+						2030,	-- Gnarled Staff
+						2028,	-- Hammer
+						2209,	-- Kris
+						928,	-- Long Staff
+						923,	-- Longsword
+						924,	-- Maul
+						2208,	-- Poniard
+						2026,	-- Rock Hammer
+						2027,	-- Scimitar
+					}},
 					["groups"] = {
 						i(12247, {	-- Broad Bladed Knife
 							["isLimited"] = true,
@@ -2372,7 +2415,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(3134, {	-- Kzixx <Rare Goods>
 					["coord"] = { 81.8, 19.8, DUSKWOOD },
 					["groups"] = {
+						i(4829, {	-- Dreamer's Belt
+							["isLimited"] = true,
+						}),
 						i(4836, {	-- Fireproof Orb
+							["isLimited"] = true,
+						}),
+						i(4828, {	-- Nightwind Belt
 							["isLimited"] = true,
 						}),
 						i(4838, {	-- Orb of Power
@@ -2381,17 +2430,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(4837, {	-- Strength of Will
 							["isLimited"] = true,
 						}),
-						i(4829, {	-- Dreamer's Belt
-							["isLimited"] = true,
-						}),
-						i(4828, {	-- Nightwind Belt
-							["isLimited"] = true,
-						}),
 						i(4827, {	-- Wizard's Belt
 							["isLimited"] = true,
 						}),
 						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_ONE, i(210709, {	-- Recipe: Elixir of Coelesced Regret
+						applyclassicphase(SOD_PHASE_ONE, i(210709, {	-- Recipe: Elixir of Coelesced Regret (RECIPE!)
 							["isLimited"] = true,
 						})),
 						-- #endif
@@ -2406,6 +2449,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(226, {	-- Morg Gnarltree <Armorer>
 					["coord"] = { 73.8, 48.6, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{"select","itemID",
+						2446,	-- Kite Shield
+						2148,	-- Polished Scale Belt
+						2149,	-- Polished Scale Boots
+						2150,	-- Polished Scale Bracers
+						2151,	-- Polished Scale Gloves
+						2152,	-- Polished Scale Leggings
+						2153,	-- Polished Scale Vest
+						17192,	-- Reinforced Targe
+					}},
 					["groups"] = {
 						i(4799, {	-- Antiquated Cloak
 							["isLimited"] = true,
@@ -2428,10 +2481,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 75.6, 45.4, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6401, {	-- Pattern: Dark Silk Shirt
+						i(6401, {	-- Pattern: Dark Silk Shirt (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(6275, {	-- Pattern: Greater Adept's Robe
+						i(6275, {	-- Pattern: Greater Adept's Robe (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2444,80 +2497,73 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(885, {	-- Black Metal Axe
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 3,	-- Flesh Eater
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 18.6, 33.0, DUSKWOOD },
 						{ 19.8, 45.2, DUSKWOOD },
 					},
 				}),
 				i(2014, {	-- Black Metal Greatsword
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 1270,	-- Fetid Corpse
 					["coords"] = {
-						-- #if BEFORE 4.0.3
-						{ 78.4, 36.0, DUSKWOOD },
-						{ 79.8, 32.8, DUSKWOOD },
-						-- #elseif AFTER 10.1.7
-						{ 81.6, 32.2, DUSKWOOD },
-						{ 81.6, 33.6, DUSKWOOD },
-						{ 76.8, 31.0, DUSKWOOD },
 						{ 74.8, 32.8, DUSKWOOD },
 						{ 75.2, 37.6, DUSKWOOD },
 						{ 76.6, 36.6, DUSKWOOD },
-						-- #endif
+						{ 76.8, 31.0, DUSKWOOD },
+						{ 78.4, 36.0, DUSKWOOD },
+						{ 79.8, 32.8, DUSKWOOD },
+						{ 81.6, 32.2, DUSKWOOD },
+						{ 81.6, 33.6, DUSKWOOD },
 					},
 				}),
 				i(886, {	-- Black Metal Shortsword
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 210,	-- Bone Chewer
 					["coords"] = {
-						-- #if BEFORE 4.0.3
-						{ 25.6, 32.4, DUSKWOOD },
-						{ 24.4, 37.4, DUSKWOOD },
-						-- #else
 						{ 15.8, 35.0, DUSKWOOD },
 						{ 17.0, 31.2, DUSKWOOD },
 						{ 23.4, 35.4, DUSKWOOD },
-						-- #endif
+						{ 24.4, 37.4, DUSKWOOD },
+						{ 25.6, 32.4, DUSKWOOD },
 					},
 				}),
 				i(2015, {	-- Black Metal War Axe
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
-					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
-						{ 25.4, 35.4, DUSKWOOD },
-					},
-					-- #elseif AFTER 10.1.7
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
+						-- #if AFTER 10.1.7
 						604,	-- Plague Spreader
-						3,		-- Flesh Eater
+						-- #else
+						570,	-- Brain Eater
+						-- #endif
 					},
 					["coords"] = {
-						{ 23.4, 35.4, DUSKWOOD },
+						{ 25.4, 35.4, DUSKWOOD },
 						{ 17.8, 33.4, DUSKWOOD },
 						{ 19.8, 46.8, DUSKWOOD },
+						{ 23.4, 35.4, DUSKWOOD },
 					},
-					-- #endif
 				}),
 				i(2013, {	-- Cryptbone Staff
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 787,	-- Skeletal Healer
-					["coords"] = {
-						{ 16.6, 31.6, DUSKWOOD },
-						{ 17.0, 38.8, DUSKWOOD },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["crs"] = {
+						-- #if AFTER 10.1.7
+						203,	-- Skeletal Mage
+						-- #else
+						787,	-- Skeletal Healer
+						-- #endif
 					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 203,	-- Skeletal Mage
 					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 79.2, 66.6, DUSKWOOD },
 						{ 79.6, 70.6, DUSKWOOD },
 						{ 79.6, 74.2, DUSKWOOD },
+						-- #else
+						{ 16.6, 31.6, DUSKWOOD },
+						{ 17.0, 38.8, DUSKWOOD },
+						-- #endif
 					},
-					-- #endif
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(211528, {	-- Dark Insight
@@ -2543,111 +2589,125 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(2232, {	-- Dark Runner Boots
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 205,	-- Nightbane Dark Runner
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
-						-- #if BEFORE 4.0.3
-						{ 62.4, 42.6, DUSKWOOD },
-						{ 64.0, 49.6, DUSKWOOD },
-						{ 64.2, 74.0, DUSKWOOD },
-						-- #elseif AFTER 10.1.7
+						-- #if AFTER 10.1.7
 						{ 66.4, 33.0, DUSKWOOD },
 						{ 61.8, 38.0, DUSKWOOD },
 						{ 65.6, 49.0, DUSKWOOD },
+						-- #else
+						{ 62.4, 42.6, DUSKWOOD },
+						{ 64.0, 49.6, DUSKWOOD },
+						{ 64.2, 74.0, DUSKWOOD },
 						-- #endif
 					},
 				}),
 				i(1077, {	-- Defias Mage Ring
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 910,	-- Defias Enchanter
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["crs"] = {
+						-- #if AFTER 10.1.7
+						218,	-- Grave Robber
+						-- #else
+						910,	-- Defias Enchanter
+						-- #endif
+					},
 					["coords"] = {
+						-- #if AFTER 10.1.7
+						{ 7.6, 34.6, DUSKWOOD },
+						-- #else
 						{ 23.6, 71.4, DUSKWOOD },
 						{ 50.6, 77.6, DUSKWOOD },
+						-- #endif
 					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						218,	-- Grave Robber
-						45811,	-- Marina DeSirrus
-					},
-					["coord"] = { 7.6, 34.6, DUSKWOOD },
-					-- #endif
 				}),
 				i(2021, {	-- Green Carapace Shield
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 569,	-- Green Recluse
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["crs"] = {
+						-- #if AFTER 10.1.7
+						949,	-- Carrion Recluse
+						-- #else
+						569,	-- Green Recluse
+						-- #endif
+					},
 					["coords"] = {
+						-- #if AFTER 10.1.7
+						{ 23.6, 36.6, DUSKWOOD },
+						{ 23.6, 36.6, DUSKWOOD },
+						{ 17.0, 38.8, DUSKWOOD },
+						-- #else
 						{ 72.8, 21.6, DUSKWOOD },
 						{ 56.6, 20.0, DUSKWOOD },
 						{ 17.0, 70.6, DUSKWOOD },
 						{ 12.6, 51.8, DUSKWOOD },
+						-- #endif
 					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 949,	-- Carrion Recluse
-					["coords"] = {
-						{ 23.6, 36.6, DUSKWOOD },
-						{ 23.6, 36.6, DUSKWOOD },
-						{ 17.0, 38.8, DUSKWOOD },
-					},
-					-- #endif
 				}),
 				i(2017, {	-- Glowing Leather Bracers
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 785,	-- Skeletal Warder
-					["coords"] = {
-						{ 16.0, 37.6, DUSKWOOD },
-						{ 17.0, 31.0, DUSKWOOD },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["crs"] = {
+						-- #if AFTER 10.1.7
+						531,	-- Skeletal Fiend
+						-- #else
+						785,	-- Skeletal Warder
+						-- #endif
 					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 531,	-- Skeletal Fiend
 					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 24.0, 44.6, DUSKWOOD },
 						{ 18.0, 47.6, DUSKWOOD },
 						{ 16.6, 43.0, DUSKWOOD },
+						-- #else
+						{ 16.0, 37.6, DUSKWOOD },
+						{ 17.0, 31.0, DUSKWOOD },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(2227, {	-- Heavy Ogre War Axe
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 892,	-- Splinter Fist Taskmaster
-					["coords"] = {
-						{ 40.6, 74.8, DUSKWOOD },
-						{ 37.2, 69.8, DUSKWOOD },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["crs"] = {
+						-- #if AFTER 10.1.7
+						212,	-- Splinter Fist Warrior
+						-- #else
+						892,	-- Splinter Fist Taskmaster
+						-- #endif
 					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = 212,	-- Splinter Fist Warrior
 					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 40.2, 72.0, DUSKWOOD },
 						{ 35.4, 71.4, DUSKWOOD },
 						{ 35.6, 81.0, DUSKWOOD },
+						-- #else
+						{ 40.6, 74.8, DUSKWOOD },
+						{ 37.2, 69.8, DUSKWOOD },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(2020, {	-- Hollowfang Blade
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 539,	-- Pygmy Venom Web Spider
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["crs"] = {
+						-- #if AFTER 10.1.7
+						45582,	-- Black Widow
+						-- #else
+						539,	-- Pygmy Venom Web Spider
+						-- #endif
+					},
 					["coords"] = {
+						-- #if AFTER 10.1.7
+						{ 34.6, 55.0, DUSKWOOD },
+						{ 27.8, 41.6, DUSKWOOD },
+						{ 35.6, 29.8, DUSKWOOD },
+						-- #else
 						{ 12.2, 69.8, DUSKWOOD },
 						{ 9.8, 49.6, DUSKWOOD },
 						{ 19.6, 26.4, DUSKWOOD },
 						{ 46.8, 16.8, DUSKWOOD },
+						-- #endif
 					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 45582,	-- Black Widow
-					["coords"] = {
-						{ 34.6, 55.0, DUSKWOOD },
-						{ 27.8, 41.6, DUSKWOOD },
-						{ 35.6, 29.8, DUSKWOOD },
-					},
-					-- #endif
 				}),
 				i(911, {	-- Ironwood Treebranch
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 889,	-- Splinter Fist Ogre
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 38.4, 72.2, DUSKWOOD },
 						{ 35.2, 71.4, DUSKWOOD },
@@ -2655,21 +2715,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(914, {	-- Large Ogre Chain Armor
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
-					-- #if BEFORE 4.0.3
-					["cr"] = 1487,	-- Splinter Fist Enslaver
-					["coords"] = {
-						{ 38.0, 80.6, DUSKWOOD },
-						{ 37.4, 84.6, DUSKWOOD },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["crs"] = {
+						-- #if AFTER 10.1.7
+						889,	-- Splinter Fist Ogre
+						-- #else
+						1487,	-- Splinter Fist Enslaver
+						-- #endif
 					},
-					-- #else
-					["cr"] = 889,	-- Splinter Fist Ogre
 					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 39.0, 72.2, DUSKWOOD },
 						{ 36.8, 78.6, DUSKWOOD },
 						{ 33.8, 70.8, DUSKWOOD },
+						-- #else
+						{ 38.0, 80.6, DUSKWOOD },
+						{ 37.4, 84.6, DUSKWOOD },
+						-- #endif
 					},
-					-- #endif
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(211472, {	-- Libram of Banishment
@@ -2685,50 +2748,46 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(897, {	-- Madwolf Bracers
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 206,	-- Nightbane Vile Fang
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
-						-- #if BEFORE 4.0.3
-						{ 73.6, 72.0, DUSKWOOD },
-						{ 62.4, 80.4, DUSKWOOD },
-						-- #elseif AFTER 10.1.7
-						{ 74.2, 71.0, DUSKWOOD },
+						-- #if AFTER 10.1.7
 						{ 72.2, 74.6, DUSKWOOD },
+						{ 74.2, 71.0, DUSKWOOD },
+						-- #if BEFORE 4.0.3
+						{ 62.4, 80.4, DUSKWOOD },
+						{ 73.6, 72.0, DUSKWOOD },
 						-- #endif
 					},
 				}),
 				i(2234, {	-- Nightwalker Armor
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 920,	-- Nightbane Tainted One
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
-						-- #if BEFORE 4.0.3
-						{ 74.0, 74.2, DUSKWOOD },
-						{ 62.8, 80.2, DUSKWOOD },
-						-- #elseif AFTER 10.1.7
+						-- #if AFTER 10.1.7
 						{ 73.6, 73.0, DUSKWOOD },
 						{ 73.8, 78.8, DUSKWOOD },
+						-- #else
+						{ 74.0, 74.2, DUSKWOOD },
+						{ 62.8, 80.2, DUSKWOOD },
 						-- #endif
 					},
 				}),
 				i(2226, {	-- Ogremage Staff
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
-						891,	-- Splinter Fist Fire Weaver
 						1251,	-- Splinter Fist Firemonger
+						-- #if BEFORE 4.0.3
+						891,	-- Splinter Fist Fire Weaver
+						-- #endif
 					},
 					["coords"] = {
-						{ 40.6, 74.8, DUSKWOOD },
-						{ 37.2, 69.8, DUSKWOOD },
-					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = 1251,	-- Splinter Fist Firemonger
-					["coords"] = {
-						{ 40.2, 72.0, DUSKWOOD },
 						{ 35.4, 71.4, DUSKWOOD },
 						{ 35.6, 81.0, DUSKWOOD },
+						{ 37.2, 69.8, DUSKWOOD },
+						{ 40.2, 72.0, DUSKWOOD },
+						{ 40.6, 74.8, DUSKWOOD },
 					},
-					-- #endif
 				}),
 				i(5773, {	-- Pattern: Robes of Arcana
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2736,7 +2795,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- Added in 8.1.5 to BFA Time-Lost Trader
 				}),
 				-- #if BEFORE CATA
-				i(6211, {	-- Recipe: Elixir of Ogre's Strength
+				i(6211, {	-- Recipe: Elixir of Ogre's Strength (RECIPE!)
 					["crs"] = {
 						1251,	-- Splinter Fist Firemonger
 						891,	-- Splinter Fist Fire Weaver
@@ -2745,38 +2804,41 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(2233, {	-- Shadow Weaver Leggings
 					["cr"] = 533,	-- Nightbane Shadow Weaver
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["coords"] = {
-						-- #if BEFORE 4.0.3
+						-- #if AFTER 10.1.7
+						{ 65.6, 69.4, DUSKWOOD },
+						{ 64.0, 75.8, DUSKWOOD },
+						-- #else
 						{ 67.2, 75.4, DUSKWOOD },
 						{ 63.6, 70.6, DUSKWOOD },
 						{ 64.8, 46.2, DUSKWOOD },
-						-- #elseif AFTER 10.1.7
-						{ 65.6, 69.4, DUSKWOOD },
-						{ 64.0, 75.8, DUSKWOOD },
 						-- #endif
 					},
 				}),
 				i(2018, {	-- Skeletal Longsword
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 1110,	-- Skeletal Raider
-					["coords"] = {
-						{ 17.6, 33.6, DUSKWOOD },
-						{ 16.8, 37.2, DUSKWOOD },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["crs"] = {
+						-- #if AFTER 10.1.7
+						 48,	-- Skeletal Warrior
+						-- #else
+						1110,	-- Skeletal Raider
+						-- #endif
 					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 48,	-- Skeletal Warrior
 					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 80.8, 69.2, DUSKWOOD },
 						{ 81.8, 70.0, DUSKWOOD },
 						{ 78.2, 70.4, DUSKWOOD },
+						-- #else
+						{ 17.6, 33.6, DUSKWOOD },
+						{ 16.8, 37.2, DUSKWOOD },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(880, {	-- Staff of Horrors
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					["cr"] = 202,	-- Skeletal Horror
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["cr"] = 202,	-- Skeletal Horror / Rotting Horror
 					["coords"] = {
 						{ 80.6, 59.6, DUSKWOOD },
 						{ 20.8, 46.8, DUSKWOOD },
@@ -2799,33 +2861,39 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(899, {	-- Venom Web Fang
 					["cr"] = 217,	-- Venom Web Spider
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["coords"] = {
-						-- #if BEFORE 4.0.3
-						{ 28.8, 29.6, DUSKWOOD },
-						{ 18.8, 27.8, DUSKWOOD },
-						-- #elseif AFTER 10.1.7
+						-- #if AFTER 10.1.7
 						{ 43.0, 20.4, DUSKWOOD },
 						{ 58.6, 20.6, DUSKWOOD },
 						{ 67.6, 48.0, DUSKWOOD },
 						{ 72.6, 24.6, DUSKWOOD },
 						{ 79.0, 21.8, DUSKWOOD },
+						-- #else
+						{ 28.8, 29.6, DUSKWOOD },
+						{ 18.8, 27.8, DUSKWOOD },
 						-- #endif
 					},
 				}),
-				-- #if BEFORE 10.1.7
 				i(920, {	-- Wicked Spiked Mace
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
+						-- #if AFTER 10.1.7
+						45811,	-- Marina DeSirrus
+						-- #else
 						909,	-- Defias Night Blade
 						215,	-- Defias Night Runner
+						-- #endif
 					},
 					["coords"] = {
+						-- #if AFTER 10.1.7
+						{ 7.8, 33.8, DUSKWOOD },
+						-- #else
 						{ 23.6, 71.6, DUSKWOOD },
 						{ 49.8, 77.8, DUSKWOOD },
+						-- #endif
 					},
 				}),
-				-- #endif
 			}),
 		},
 	}),
@@ -2836,7 +2904,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		m(EASTERN_KINGDOMS, {
 			m(DUSKWOOD, {
 				n(QUESTS, {
-					q(26673),	-- REUSE - BREADCRUMB (completed when turning in "Roland's Doom" (26670)
+					q(26673),	-- REUSE - BREADCRUMB (completed when turning in "Roland's Doom" (26670))
 				}),
 			}),
 		}),
