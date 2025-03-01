@@ -2043,7 +2043,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if AFTER 4.0.3
 				n(3090, {	-- Gerald Crawley <Poison Supplies>
-					["coord"] =  { 24.8, 38.3, REDRIDGE_MOUNTAINS },
+					["coord"] = { 24.8, 38.3, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						4565,	-- Simple Dagger
@@ -2476,8 +2476,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
 						-- #if BEFORE 4.0.3
-						-- After 4.0.3, npcID 397 is assigned to Grand Magus Doane
-						397,	-- Morganth
+						397,	-- Morganth / Grand Magus Doane [CATA+]
 						-- #elseif AFTER 10.1.7
 						429,	-- Shadowhide Darkweaver
 						-- #endif
