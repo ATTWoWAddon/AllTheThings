@@ -2789,7 +2789,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 40.6, 74.8, DUSKWOOD },
 					},
 				}),
-				i(5773, {	-- Pattern: Robes of Arcana
+				i(5773, {	-- Pattern: Robes of Arcana (RECIPE!)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 910,	-- Defias Enchanter
 					-- Added in 8.1.5 to BFA Time-Lost Trader
