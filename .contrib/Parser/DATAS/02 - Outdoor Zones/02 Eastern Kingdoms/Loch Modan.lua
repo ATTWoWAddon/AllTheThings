@@ -1063,11 +1063,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(25118, {	-- Looking for Lurkers
 					["qg"] = 1777,	-- Dakk Blunderblast
-					-- #if AFTER CATA
-					["coord"] = { 35.4, 42.8, LOCH_MODAN },
-					-- #else
-					["coord"] = { 36.0, 44.2, LOCH_MODAN },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 35.4, 42.8, LOCH_MODAN },
+						-- #else
+						{ 36.0, 44.2, LOCH_MODAN },
+						-- #endif
+					},
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1145,15 +1147,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 				}),
 				q(309, {	-- Protecting the Shipment
-					-- #if AFTER CATA
-					["qg"] = 2057,	-- Huldar
-					["sourceQuest"] = 13639,	-- Resupplying the Excavation
-					["coord"] = { 56.4, 65.8, LOCH_MODAN },
-					-- #else
-					["qg"] = 1379,	-- Miran
-					["sourceQuest"] = 454,	-- After the Ambush
-					["coord"] = { 52.2, 69.4, LOCH_MODAN },
-					-- #endif
+					["qgs"] = {
+						-- #if AFTER CATA
+						2057,	-- Huldar
+						-- #else
+						1379,	-- Miran
+						-- #endif
+					},
+					["sourceQuests"] = {
+						-- #if AFTER CATA
+						13639,	-- Resupplying the Excavation
+						-- #else
+						454,	-- After the Ambush
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 56.4, 65.8, LOCH_MODAN },
+						-- #else
+						{ 52.2, 69.4, LOCH_MODAN },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -1690,10 +1704,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(1938, {	-- Block Mallet
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 						i(1215, {	-- Support Girdle
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -1714,7 +1728,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(2821, {	-- Mo'grosh Masher
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -1731,10 +1745,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(6197, {	-- Loch Croc Hide Vest
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 						i(3563, {	-- Seafarer's Pantaloons
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -1771,10 +1785,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(2284, {	-- Rat Cloth Cloak
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 						i(6195, {	-- Wax-polished Armor
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -1803,10 +1817,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(6197, {	-- Loch Croc Hide Vest
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 						i(3563, {	-- Seafarer's Pantaloons
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -1837,10 +1851,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(2241, {	-- Desperado Cape
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 						i(3571, {	-- Trogg Beater
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -2098,11 +2112,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(1684, {	-- Khara Deepwater <Fishing Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 39.5, 39.2, LOCH_MODAN },
-					-- #else
-					["coord"] = { 40.4, 39.4, LOCH_MODAN },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 39.5, 39.2, LOCH_MODAN },
+						-- #else
+						{ 40.4, 39.4, LOCH_MODAN },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						-- #if SEASON_OF_DISCOVERY
@@ -2195,14 +2211,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 36.0, 46.0, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6275, {	-- Pattern: Greater Adept's Robe
+						i(6275, {	-- Pattern: Greater Adept's Robe (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5772, {	-- Pattern: Red Woolen Bag
+						i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
 				}),
+				-- #if AFTER CATA
 				n(6030, {	-- Thorvald Deepforge
 					["coord"] = { 23.7, 74.3, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
@@ -2217,6 +2234,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1196,	-- Tabar
 					}},
 				}),
+				-- #endif
 				n(1469, {	-- Vrok Blunderblast <Gunsmith>
 					["coord"] = { 25.3, 42.5, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
@@ -2240,16 +2258,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				i(5319, {	-- Bashing Pauldrons
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 2478,	-- Haren Swifthoof <Horde Runner>
-					["coords"] = {
-						{ 55.2, 68.2, LOCH_MODAN },
-						{ 66.0, 37.8, LOCH_MODAN },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["crs"] = {
+						-- #if AFTER 10.1.7
+						1186,	-- Black Bear
+						-- #else
+						2478,	-- Haren Swifthoof <Horde Runner>
+						-- #endif
 					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 1186,	-- Black Bear
 					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 40.6, 10.4, LOCH_MODAN },
 						{ 24.8, 13.2, LOCH_MODAN },
 						{ 30.0, 27.4, LOCH_MODAN },
@@ -2259,8 +2277,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 41.6, 48.0, LOCH_MODAN },
 						{ 41.6, 58.4, LOCH_MODAN },
 						{ 47.2, 65.6, LOCH_MODAN },
+						-- #else
+						{ 55.2, 68.2, LOCH_MODAN },
+						{ 66.0, 37.8, LOCH_MODAN },
+						-- #endif
 					},
-					-- #endif
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208843, {	-- Battle Totem
@@ -2319,65 +2340,68 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(2823, {	-- Mo'grosh Can Opener
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 1180,	-- Mo'grosh Brute
-					["coords"] = {
-						{ 79.6, 16.0, LOCH_MODAN },
-						{ 76.6, 16.0, LOCH_MODAN },
-					},
-					-- #elseif AFTER 10.1.7
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
-					--	44760,	-- Mo'grosh Earthbender	-- Is not confirmed
+						-- #if AFTER 10.1.7
 						44758,	-- Mo'grosh Darkmauler
+						-- #else
+						1180,	-- Mo'grosh Brute
+						-- #endif
 					},
 					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 71.4, 21.2, LOCH_MODAN },
 						{ 68.8, 22.4, LOCH_MODAN },
 						{ 68.8, 25.4, LOCH_MODAN },
 						{ 74.8, 25.0, LOCH_MODAN },
 						{ 76.6, 16.0, LOCH_MODAN },
+						-- #else
+						{ 79.6, 16.0, LOCH_MODAN },
+						{ 76.6, 16.0, LOCH_MODAN },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(2821, {	-- Mo'grosh Masher
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
-					-- #if BEFORE 4.0.3
-					["cr"] = 1179,	-- Mo'grosh Enforcer
+					["crs"] = {
+						-- #if AFTER 10.1.7
+						44758, -- Mo'grosh Darkmauler
+						-- #else
+						14267,	-- Emogg the Crusher
+						1179,	-- Mo'grosh Enforcer
+						-- #endif
+					},
 					["coords"] = {
+						-- #if AFTER 10.1.7
+						{ 70.0, 24.6, LOCH_MODAN },
+						-- #else
 						{ 74.2, 28.4, LOCH_MODAN },
 						{ 69.4, 22.2, LOCH_MODAN },
 						{ 64.4, 20.6, LOCH_MODAN },
+						-- #endif
 					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						14267,	-- Emogg the Crusher
-						44758, -- Mo'grosh Darkmauler
-					},
-					["coord"] = { 70.0, 24.6, LOCH_MODAN },
-					-- #endif
 				}),
 				i(2822, {	-- Mo'grosh Toothpick
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 1178,	-- Mo'grosh Ogre
-					["coords"] = {
-						{ 79.6, 16.0, LOCH_MODAN },
-						{ 76.6, 16.0, LOCH_MODAN },
-					},
-					-- #elseif AFTER 10.1.7
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
+						-- #if AFTER 10.1.7
 						44760,	-- Mo'grosh Earthbender
-					--	44758,	-- Mo'grosh Darkmauler	-- Is not confirmed
+						-- #else
+						1178,	-- Mo'grosh Ogre
+						-- #endif
 					},
 					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 71.4, 21.2, LOCH_MODAN },
 						{ 68.8, 22.4, LOCH_MODAN },
 						{ 68.8, 25.4, LOCH_MODAN },
 						{ 74.8, 25.0, LOCH_MODAN },
 						{ 76.6, 16.0, LOCH_MODAN },
+						-- #else
+						{ 79.6, 16.0, LOCH_MODAN },
+						{ 76.6, 16.0, LOCH_MODAN },
+						-- #endif
 					},
-					-- #endif
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208823, {	-- Offering Coin
@@ -2395,16 +2419,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(4949, {	-- Orcish Cleaver
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 7170,	-- Thragomm <Horde Runner>
-					["coords"] = {
-						{ 55.2, 68.2, LOCH_MODAN },
-						{ 66.0, 37.8, LOCH_MODAN },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["crs"] = {
+						-- #if AFTER 10.1.7
+						1186,	-- Black Bear
+						-- #else
+						7170,	-- Thragomm <Horde Runner>
+						-- #endif
 					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 1186,	-- Black Bear
 					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 40.6, 10.4, LOCH_MODAN },
 						{ 24.8, 13.2, LOCH_MODAN },
 						{ 30.0, 27.4, LOCH_MODAN },
@@ -2414,69 +2438,62 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 41.6, 48.0, LOCH_MODAN },
 						{ 41.6, 58.4, LOCH_MODAN },
 						{ 47.2, 65.6, LOCH_MODAN },
+						-- #else
+						{ 55.2, 68.2, LOCH_MODAN },
+						{ 66.0, 37.8, LOCH_MODAN },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(2283, {	-- Rat Cloth Belt
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 1177,	-- Tunnel Rat Surveyor
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
 					["coords"] = {
-						{ 35.2, 27.6, LOCH_MODAN },
-						{ 35.2, 27.6, LOCH_MODAN },
-					},
-					-- #elseif AFTER 10.1.7
-					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 36.8, 16.6, LOCH_MODAN },
 						{ 32.0, 12.0, LOCH_MODAN },
 						{ 29.6, 15.0, LOCH_MODAN },
+						-- #else
+						{ 35.2, 27.6, LOCH_MODAN },
+						{ 35.2, 27.6, LOCH_MODAN },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(2700, {	-- Recipe: Succulent Pork Ribs (RECIPE!)
-					["description"] = "Can drop from any mob in the zone.",
+					["description"] = "Has a chance to drop from any creature in the zone.",
 				}),
 				i(2281, {	-- Rodentia Flint Axe
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
 						1176,	-- Tunnel Rat Forager
+						-- #if BEFORE 4.0.3
 						1202,	-- Tunnel Rat Kobold
+						-- #endif
 					},
 					["coords"] = {
 						{ 38.4, 16.0, LOCH_MODAN },
 						{ 32.6, 26.4, LOCH_MODAN },
 						{ 32.2, 14.6, LOCH_MODAN },
+						-- #if BEFORE 4.0.3
 						{ 27.6, 44.8, LOCH_MODAN },
+						-- #endif
 					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 1176,	-- Tunnel Rat Forager
-					["coords"] = {
-						{ 38.4, 16.0, LOCH_MODAN },
-						{ 32.6, 26.4, LOCH_MODAN },
-						{ 32.2, 14.6, LOCH_MODAN },
-					},
-					-- #endif
 				}),
 				i(2282, {	-- Rodentia Shortsword
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["crs"] = {
 						1173,	-- Tunnel Rat Scout
 						1172,	-- Tunnel Rat Vermin
 					},
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["coords"] = {
-						{ 28.6, 45.0, LOCH_MODAN },
-						{ 25.0, 32.6, LOCH_MODAN },
-						{ 37.4, 16.6, LOCH_MODAN },
-					},
-					-- #elseif AFTER 10.1.7
 					["coords"] = {
 						{ 28.2, 36.0, LOCH_MODAN },
 						{ 25.2, 26.2, LOCH_MODAN },
 						{ 19.8, 46.8, LOCH_MODAN },
+						-- #if BEFORE 4.0.3
+						{ 28.6, 45.0, LOCH_MODAN },
+						{ 25.0, 32.6, LOCH_MODAN },
+						{ 37.4, 16.6, LOCH_MODAN },
+						-- #endif
 					},
-					-- #endif
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208741, {	-- Rune of Endless Rage
@@ -2527,67 +2544,67 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(2265, {	-- Stonesplinter Axe
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 1163,	-- Stonesplinter Skullthumper
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["crs"] = {
+						-- #if AFTER 10.1.7
+						1161,	-- Stonesplinter Trogg
+						1162,	-- Stonesplinter Scout
+						-- #else
+						1163,	-- Stonesplinter Skullthumper
+						-- #endif
+					},
 					["coords"] = {
+						-- #if AFTER 10.1.7
+						{ 31.6, 77.0, LOCH_MODAN },
+						{ 31.4, 80.6, LOCH_MODAN },
+						{ 29.6, 80.8, LOCH_MODAN },
+						-- #else
 						{ 51.6, 24.6, LOCH_MODAN },
 						{ 48.8, 29.6, LOCH_MODAN },
 						{ 36.8, 84.8, LOCH_MODAN },
 						{ 29.8, 84.0, LOCH_MODAN },
+						-- #endif
 					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						1161,	-- Stonesplinter Trogg
-						1162,	-- Stonesplinter Scout
-					},
-					["coords"] = {
-						{ 31.6, 77.0, LOCH_MODAN },
-						{ 31.4, 80.6, LOCH_MODAN },
-						{ 29.6, 80.8, LOCH_MODAN },
-					},
-					-- #endif
 				}),
 				i(2268, {	-- Stonesplinter Blade
 					["crs"] = {
 						1162,	-- Stonesplinter Scout
-						-- #if BEFORE 4.0.3
 						1161,	-- Stonesplinter Trogg
-						-- #endif
 					},
 				}),
 				i(2266, {	-- Stonesplinter Dagger
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 1166,	-- Stonesplinter Seer
-					["coords"] = {
-						{ 36.2, 86.0, LOCH_MODAN },
-						{ 30.0, 83.8, LOCH_MODAN },
-						{ 51.2, 23.6, LOCH_MODAN },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["crs"] = {
+						-- #if AFTER 10.1.7
+						1162,	-- Stonesplinter Scout
+						-- #else
+						1166,	-- Stonesplinter Seer
+						-- #endif
 					},
-					-- #elseif AFTER 10.1.7
-					["cr"] = 1162,	-- Stonesplinter Scout
 					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 40.2, 72.0, LOCH_MODAN },
 						{ 32.6, 71.8, LOCH_MODAN },
 						{ 29.4, 81.8, LOCH_MODAN },
+						-- #else
+						{ 36.2, 86.0, LOCH_MODAN },
+						{ 30.0, 83.8, LOCH_MODAN },
+						{ 51.2, 23.6, LOCH_MODAN },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(2267, {	-- Stonesplinter Mace
 					["cr"] = 1197,	-- Stonesplinter Shaman
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["coords"] = {
-						{ 54.6, 26.8, LOCH_MODAN },
-						{ 37.4, 92.2, LOCH_MODAN },
-					},
-					-- #elseif AFTER 10.1.7
-					["coords"] = {
+						-- #if AFTER 10.1.7
 						{ 35.2, 65.6, LOCH_MODAN },
 						{ 35.6, 60.4, LOCH_MODAN },
+						-- #else
+						{ 54.6, 26.8, LOCH_MODAN },
+						{ 37.4, 92.2, LOCH_MODAN },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(5109, {	-- Stonesplinter Rags
 					["crs"] = {
@@ -2598,17 +2615,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1206,	-- Gnasher
 						1205,	-- Grawmug
 						1399,	-- Magosh <Stonesplinter Tribal Shaman>
-						1164,	-- Stonesplinter Bonesnapper
-						1167,	-- Stonesplinter Digger
-						1165,	-- Stonesplinter Geomancer
-						-- #endif
-						1162,	-- Stonesplinter Scout
-						-- #if BEFORE 4.0.3
 						1166,	-- Stonesplinter Seer
 						1197,	-- Stonesplinter Shaman
 						1163,	-- Stonesplinter Skullthumper
-						1161,	-- Stonesplinter Trogg
 						-- #endif
+						1164,	-- Stonesplinter Bonesnapper
+						1167,	-- Stonesplinter Digger
+						1165,	-- Stonesplinter Geomancer
+						1162,	-- Stonesplinter Scout
+						1161,	-- Stonesplinter Trogg
 					},
 				}),
 			}),
