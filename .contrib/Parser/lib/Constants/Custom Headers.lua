@@ -4,7 +4,6 @@
 -- Expansion Features
 	-- SL
 	VENTHYR = -949;
-		LOYALTY = -973;
 		WISDOM = -974;
 		HUMILITY = -975;
 	EMBER_COURT = -960;

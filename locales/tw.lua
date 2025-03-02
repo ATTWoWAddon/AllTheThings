@@ -457,7 +457,6 @@ if app.IsRetail then
 	for key,value in pairs({
 	-- Shadowlands Header
 		-- SL Bastion/Kyrian
-			[-973] = "忠誠",											-- Loyalty
 			[-975] = "謙遜",											-- Humility
 		-- SL Revendreth/Venthyr
 			[-954] = "審判官",											-- Inquisitors

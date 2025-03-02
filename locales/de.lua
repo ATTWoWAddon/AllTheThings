@@ -446,7 +446,6 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Shadowlands Header
 		-- SL Bastion/Kyrian
-			[-973] = "Loyalität",									-- Loyalty
 			[-975] = "Demut",										-- Humility
 		-- SL Revendreth/Venthyr
 			[-954] = "Inquisitor",									-- Inquisitors
