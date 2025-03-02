@@ -2,7 +2,7 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-root(ROOTS.PVP, pvp(n(-240, {	-- Rated
+root(ROOTS.PVP, pvp(n(RATED, {
 	n(ACHIEVEMENTS, {
 		ach(5351, {	-- Blood Guard
 			["races"] = HORDE_ONLY,
@@ -364,7 +364,7 @@ root(ROOTS.PVP, pvp(n(-240, {	-- Rated
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
-	pvp(n(-240, {	-- Rated
+	pvp(n(RATED, {
 		q(70714),	-- completion of a Rated 'Solo Shuffle'
 	})),
 })));
