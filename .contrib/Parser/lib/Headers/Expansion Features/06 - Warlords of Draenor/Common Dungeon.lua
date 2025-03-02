@@ -29,3 +29,11 @@ DOCKS = createHeader({
 		en = [[~GetRealZoneText(1195)]],
 	}
 });
+
+SBG = createHeader({
+	readable = "Shadowmoon Burial Grounds",
+	icon = 1042063,
+	text = {
+		en = [[~GetRealZoneText(1176)]],
+	}
+});
