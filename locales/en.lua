@@ -21,12 +21,8 @@ for key, value in pairs({
 	-- Can also use the direct IconID, i.e. wowhead.com/icon=###
 	-- https://www.wowhead.com/icons
 	["HEADER_ICONS"] = {
-	-- WoD Dungeons(Fake npcid)
-		[-147] = 1042065,										-- Upper Blackrock Spire
 	};
 	["HEADER_NAMES"] = {
-	-- WoD Dungeons(Fake npcid)
-		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings, These IDs are used in src/Expansion/Legion [Ask Runaway about removing them]
 		[-5200] = "Base Appearance",											-- Base Appearance

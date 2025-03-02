@@ -53,3 +53,11 @@ BLOOM = createHeader({
 		en = [[~GetRealZoneText(1279)]],
 	}
 });
+
+UBRS = createHeader({
+	readable = "Upper Blackrock Spire",
+	icon = 1042065,
+	text = {
+		en = [[~GetRealZoneText(1358)]],
+	}
+});

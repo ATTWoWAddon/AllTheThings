@@ -5269,7 +5269,6 @@ AddInstancesToRotation(EXPANSION.CLASSIC, {
 
 
 -- Warlords of Draenor Timewalking
--- local UBRS = -147;
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORDS_OF_DRAENOR_DUNGEON_EVENT, {
 	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 }},{
 		n(GROUP_FINDER, {
