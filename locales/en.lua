@@ -31,7 +31,6 @@ for key, value in pairs({
 		[-146] = 1060551,										-- The Everbloom
 		[-147] = 1042065,										-- Upper Blackrock Spire
 	-- SL Headers
-		[-923] = 3675492,							-- Abomination Factory (Necrolord)
 		-- [-924] = Uses Different Icons														-- Transport Network
 		[-929] = 3257750,										-- Covenant: Night Fae
 		[-930] = 3675494,							-- Queen's Conservatory
@@ -79,7 +78,6 @@ for key, value in pairs({
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
 	-- Shadowlands Header
 		-- SL Maldraxxus/Necrolord
-		[-923] = COVENANT_SANCTUM_FEATURE_NECROLORDS,							-- Abomination Factory
 		[-924] = "Transport Network",											-- Transport Network
 		-- SL Ardenweald/Night Fae
 		[-929] = GetSpellName(321077),											-- Night Fae
