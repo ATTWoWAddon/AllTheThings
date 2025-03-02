@@ -37,3 +37,11 @@ SBG = createHeader({
 		en = [[~GetRealZoneText(1176)]],
 	}
 });
+
+SKY = createHeader({
+	readable = "Skyreach",
+	icon = 1042064,
+	text = {
+		en = [[~GetRealZoneText(1209)]],
+	}
+});
