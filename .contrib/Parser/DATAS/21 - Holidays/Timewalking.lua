@@ -5269,7 +5269,6 @@ AddInstancesToRotation(EXPANSION.CLASSIC, {
 
 
 -- Warlords of Draenor Timewalking
-local AUCH = -140;
 local BSM =	-141;
 local RAIL = -142;
 local DOCKS = -143;

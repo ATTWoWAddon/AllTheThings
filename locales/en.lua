@@ -22,7 +22,6 @@ for key, value in pairs({
 	-- https://www.wowhead.com/icons
 	["HEADER_ICONS"] = {
 	-- WoD Dungeons(Fake npcid)
-		[-140] = 1042057,										-- Auchindoun
 		[-141] = 1042059,										-- Bloodmaul Slag Mines
 		[-142] = 1042061,										-- Grimrail Depot
 		[-143] = 1060552,										-- Iron Docks
@@ -33,7 +32,6 @@ for key, value in pairs({
 	};
 	["HEADER_NAMES"] = {
 	-- WoD Dungeons(Fake npcid)
-		[-140] = GetRealZoneText(1182),									-- Auchindoun
 		[-141] = GetRealZoneText(1175),									-- Bloodmaul Slag Mines
 		[-142] = GetRealZoneText(1208),									-- Grimrail Depot
 		[-143] = GetRealZoneText(1195),									-- Iron Docks
