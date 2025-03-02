@@ -13,3 +13,11 @@ BSM = createHeader({
 		en = [[~GetRealZoneText(1175)]],
 	}
 });
+
+RAIL = createHeader({
+	readable = "Grimrail Depot",
+	icon = 1042061,
+	text = {
+		en = [[~GetRealZoneText(1208)]],
+	}
+});
