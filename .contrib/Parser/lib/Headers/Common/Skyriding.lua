@@ -18,5 +18,6 @@ DRIVE_RACING = createHeader({
 	icon = 1100022,
 	text = {
 		en = "D.R.I.V.E. Racing",
+		cn = "疾飙竞速",
 	},
 });
