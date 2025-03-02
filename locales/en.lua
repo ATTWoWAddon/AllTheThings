@@ -32,8 +32,6 @@ for key, value in pairs({
 		[-147] = 1042065,										-- Upper Blackrock Spire
 	-- Class Trial
 		[-154] = 1391675,						-- Level 48
-	-- War Campaign
-		[-236] = 2565243,								-- Alliance War Campaign
 	-- PvP
 		[-240] = 2022761,								-- Rated
 		[-242] = 236368,				-- Unrated
@@ -130,8 +128,6 @@ for key, value in pairs({
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
 	-- Class Trial
 		[-154] = sformat(SPELLBOOK_AVAILABLE_AT, 48),						-- Level 48
-	-- War Campaign
-		[-236] = C_Map.GetAreaInfo(9663),										-- War Campaign - Alliance
 	-- PvP
 		[-240] = PVP_TAB_CONQUEST,												-- Rated
 		[-242] = "Unrated",														-- Unrated
