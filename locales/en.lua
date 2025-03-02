@@ -22,12 +22,10 @@ for key, value in pairs({
 	-- https://www.wowhead.com/icons
 	["HEADER_ICONS"] = {
 	-- WoD Dungeons(Fake npcid)
-		[-146] = 1060551,										-- The Everbloom
 		[-147] = 1042065,										-- Upper Blackrock Spire
 	};
 	["HEADER_NAMES"] = {
 	-- WoD Dungeons(Fake npcid)
-		[-146] = GetRealZoneText(1279),									-- The Everbloom
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings, These IDs are used in src/Expansion/Legion [Ask Runaway about removing them]

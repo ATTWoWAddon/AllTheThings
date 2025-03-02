@@ -45,3 +45,11 @@ SKY = createHeader({
 		en = [[~GetRealZoneText(1209)]],
 	}
 });
+
+BLOOM = createHeader({
+	readable = "The Everbloom",
+	icon = 1060551,
+	text = {
+		en = [[~GetRealZoneText(1279)]],
+	}
+});
