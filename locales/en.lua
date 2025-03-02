@@ -35,8 +35,6 @@ for key, value in pairs({
 	-- PvP
 		[-240] = 2022761,								-- Rated
 		[-242] = 236368,				-- Unrated
-	-- War Campaign
-		[-253] = 2565244,								-- Horde War Campaign
 	-- Garrison Missons
 		[-299] = 1035062,						-- Missions
 	-- PvP
@@ -131,8 +129,6 @@ for key, value in pairs({
 	-- PvP
 		[-240] = PVP_TAB_CONQUEST,												-- Rated
 		[-242] = "Unrated",														-- Unrated
-	-- War Campaign
-		[-253] = C_Map.GetAreaInfo(9664),										-- War Campaign - Horde
 	-- Garrison Missions
 		[-299] = GARRISON_MISSIONS,												-- Missions
 	-- PvP

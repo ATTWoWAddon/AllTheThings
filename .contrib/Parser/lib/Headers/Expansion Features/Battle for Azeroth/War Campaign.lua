@@ -6,3 +6,12 @@ WAR_CAMPAIGN_ALLIANCE = createHeader({
 		en = [[~C_Map.GetAreaInfo(9663)]],
 	},
 });
+
+WAR_CAMPAIGN_HORDE = createHeader({
+	readable = "War Campaign - Horde",
+	constant = "WAR_CAMPAIGN_HORDE",
+	icon = 2565244,
+	text = {
+		en = [[~C_Map.GetAreaInfo(9664)]],
+	},
+});
