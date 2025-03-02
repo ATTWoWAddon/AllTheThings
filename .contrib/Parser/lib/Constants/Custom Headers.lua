@@ -4,7 +4,6 @@
 -- Expansion Features
 	-- SL
 	VENTHYR = -949;
-		COURAGE = -972;
 		LOYALTY = -973;
 		WISDOM = -974;
 		HUMILITY = -975;

@@ -5,3 +5,11 @@ PATH_OF_ASCENSION = createHeader({
 		en = [[~COVENANT_SANCTUM_FEATURE_KYRIAN]],
 	},
 });
+
+COURAGE = createHeader({
+	readable = "Courage",
+	icon = 3536185,
+	text = {
+		en = [[~C_PetJournal.GetPetInfoBySpeciesID(3065)]],
+	},
+});

@@ -41,7 +41,6 @@ for key, value in pairs({
 		[-969] = 3854020,																	-- Set B
 		[-970] = 3854020,																	-- Set C
 		[-971] = 3854020,																	-- Set D
-		[-972] = 3536185,																	-- Courage
 		[-973] = 3536186,																	-- Loyalty
 		[-974] = 3536184,																	-- Wisdom
 		[-975] = 3536187,																	-- Humility
@@ -73,7 +72,6 @@ for key, value in pairs({
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
 	-- Shadowlands Header
 		-- SL Bastion/Kyrian
-		[-972] = C_PetJournal.GetPetInfoBySpeciesID(3065),						-- Courage
 		[-973] = "Loyalty",														-- Loyalty
 		[-974] = GetSpellName(3166),											-- Wisdom
 		[-975] = "Humility",													-- Humility
