@@ -21,3 +21,11 @@ RAIL = createHeader({
 		en = [[~GetRealZoneText(1208)]],
 	}
 });
+
+DOCKS = createHeader({
+	readable = "Iron Docks",
+	icon = 1060552,
+	text = {
+		en = [[~GetRealZoneText(1195)]],
+	}
+});

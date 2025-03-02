@@ -5269,7 +5269,6 @@ AddInstancesToRotation(EXPANSION.CLASSIC, {
 
 
 -- Warlords of Draenor Timewalking
-local DOCKS = -143;
 local SBG =	-144;
 local SKY = -145;
 local BLOOM = -146;
