@@ -444,8 +444,6 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- PvP
-		[-242] = "Ungewertet",										-- Unrated
 	-- BFA Outposts
 		[-397] = "Außenposten",										-- Outposts
 	-- Shadowlands Header

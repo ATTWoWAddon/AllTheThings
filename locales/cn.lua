@@ -463,8 +463,6 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- PvP
-		[-242] = "无评级",												-- Unrated
 	-- Outposts in Draenor
 		[-361] = GetSpellName(182108).." 塔",						-- Artillery Tower
 	-- BFA Outposts
