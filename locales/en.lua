@@ -31,7 +31,6 @@ for key, value in pairs({
 		[-146] = 1060551,										-- The Everbloom
 		[-147] = 1042065,										-- Upper Blackrock Spire
 	-- SL Headers
-		[-942] = 3675496,																	-- Path of Ascension
 		[-949] = 3257751,										-- Covenant: Venthyr
 		[-954] = 3528307,							-- Inquisitors
 		[-955] = 3528307,							-- High Inquisitors
@@ -74,7 +73,6 @@ for key, value in pairs({
 		[-147] = GetRealZoneText(1358),									-- Upper Blackrock Spire
 	-- Shadowlands Header
 		-- SL Bastion/Kyrian
-		[-942] = COVENANT_SANCTUM_FEATURE_KYRIAN,								-- Path of Ascension
 		[-972] = C_PetJournal.GetPetInfoBySpeciesID(3065),						-- Courage
 		[-973] = "Loyalty",														-- Loyalty
 		[-974] = GetSpellName(3166),											-- Wisdom

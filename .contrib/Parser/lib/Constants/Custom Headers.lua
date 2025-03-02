@@ -4,7 +4,6 @@
 -- Expansion Features
 	-- SL
 	VENTHYR = -949;
-	PATH_OF_ASCENSION = -942;
 		COURAGE = -972;
 		LOYALTY = -973;
 		WISDOM = -974;
