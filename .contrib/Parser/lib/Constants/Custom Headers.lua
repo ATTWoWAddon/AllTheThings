@@ -4,7 +4,6 @@
 -- Expansion Features
 	-- SL
 	KYRIAN = -939;
-	NECROLORD = -920;
 	NIGHT_FAE = -929;
 	VENTHYR = -949;
 	TRANSPORT_NETWORK = -924;
