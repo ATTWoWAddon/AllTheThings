@@ -2754,7 +2754,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER 10.1.7
 						{ 72.2, 74.6, DUSKWOOD },
 						{ 74.2, 71.0, DUSKWOOD },
-						-- #if BEFORE 4.0.3
+						-- #else
 						{ 62.4, 80.4, DUSKWOOD },
 						{ 73.6, 72.0, DUSKWOOD },
 						-- #endif
