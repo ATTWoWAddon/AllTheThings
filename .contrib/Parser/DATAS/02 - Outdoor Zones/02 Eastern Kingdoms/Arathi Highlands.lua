@@ -2651,11 +2651,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(5624, {	-- Circlet of the Order
 					["description"] =
-					-- #if AFTER 10.1.7
-					"This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
-					-- #else
-					"This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
-					-- #endif
+						-- #if AFTER 10.1.7
+						"This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
+						-- #else
+						"This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
+						-- #endif
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["cr"] = 2584,	-- Stromgarde Defender
 					["coords"] = {
