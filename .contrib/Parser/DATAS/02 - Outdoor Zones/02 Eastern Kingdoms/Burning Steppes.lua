@@ -535,12 +535,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { BLACKROCK_DEPTHS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					-- #if AFTER SHADOWLANDS
-					-- this quest was level locked for characters above level 56 before Shadowlands level squish
-					["lvl"] = lvlsquish(56, 56, 20),
-					-- #else
-					["lvl"] = { 48, 57 },
-					-- #endif
+					["lvl"] =
+						-- #if AFTER SHADOWLANDS
+						-- this quest was level locked for characters above level 56 before Shadowlands level squish
+						lvlsquish(56, 56, 20),
+						-- #else
+						{ 48, 57 },
+						-- #endif
 				}),
 				q(28069, {	-- Adventurers Wanted: Blackrock Depths (H)
 					["provider"] = { "o", 207303 },	-- Adventure Board
@@ -549,12 +550,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { BLACKROCK_DEPTHS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					-- #if AFTER SHADOWLANDS
-					-- this quest was level locked for characters above level 56 before Shadowlands level squish
-					["lvl"] = lvlsquish(56, 56, 20),
-					-- #else
-					["lvl"] = { 48, 57 },
-					-- #endif
+					["lvl"] =
+						-- #if AFTER SHADOWLANDS
+						-- this quest was level locked for characters above level 56 before Shadowlands level squish
+						lvlsquish(56, 56, 20),
+						-- #else
+						{ 48, 57 },
+						-- #endif
 				}),
 				q(7630, {	-- Arcanite
 					["qg"] = 14437,	-- Gorzeeki Wildeyes
@@ -685,7 +687,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28174, {	-- Burning Vengeance (A)
 					["qg"] = 47811,	-- John J. Keeshan
 					["sourceQuest"] = 28666,	-- Hero's Call: Burning Steppes!
-					["description"] = "Provided to players who DID NOT complete John J. Keeshan's questline in Redridge Mountains.\n\nThis quest gets marked as completed when you complete the quest 'Burning Vengeance (28416).",
+					["description"] = "Provided to players who DID NOT complete John J. Keeshan's questline in Redridge Mountains.",
 					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
@@ -701,7 +703,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28416, {	-- Burning Vengeance (A)
 					["qg"] = 47811,	-- John J. Keeshan
 					["sourceQuest"] = 28666,	-- Hero's Call: Burning Steppes!
-					["description"] = "Provided to players who DID complete John J. Keeshan's questline in Redridge Mountains.\n\nThis quest gets marked as completed when you complete the quest 'Burning Vengeance (28174).",
+					["description"] = "Provided to players who DID complete John J. Keeshan's questline in Redridge Mountains.",
 					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2307,7 +2309,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(12828, {	-- Plans: Volcanic Hammer (RECIPE!)
-							["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3, ADDED_10_1_7 },	-- Kamboozle DATA Discord 1.10.2023
+							["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -2344,7 +2346,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(14437, {	-- Gorzeeki Wildeyes
 					-- #if AFTER 4.0.3
-					["description"] = "The following items are only available to Warlocks that completed the original Dreadsteed of Xoroth quest chain.",
+					["description"] = "The following items are only available to Warlocks that completed the original |cFFFFD700Dreadsteed of Xoroth|r quest chain.",
 					["sourceQuest"] = 7631,	-- Dreadsteed of Xoroth
 					-- #endif
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
@@ -2392,7 +2394,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 7049,	-- Flamescale Broodling
 				}),
 				-- #endif
-				i(14482, {	-- Pattern: Cindercloth Cloak
+				i(14482, {	-- Pattern: Cindercloth Cloak (RECIPE!)
 					["cr"] = 7037,	-- Thaurissan Firewalker
 					["coords"] = {
 						{43.8, 39.4, BURNING_STEPPES},
@@ -2400,74 +2402,67 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(14490, {	-- Pattern: Cindercloth Pants
-					["cr"] = 7037,	-- Thaurissan Firewalker
+					["cr"] = 7037,	-- Thaurissan Firewalker (RECIPE!)
 					["coords"] = {
 						{43.8, 39.4, BURNING_STEPPES},
 						{58.8, 37.2, BURNING_STEPPES},
 					},
 				}),
-				-- #if AFTER 10.0.5
 				i(15738, {	-- Pattern: Heavy Scorpid Gauntlets (RECIPE!)
+					-- #if AFTER 10.0.5
 					["description"] = "Killing the mobs at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
-					["coords"] = {
-						{ 34.8, 36.3, BURNING_STEPPES },
-						{ 36.0, 36.6, BURNING_STEPPES },
-					},
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 },
-					["crs"] = {
-						7025,	-- Blackrock Soldier
-						7027,	-- Blackrock Slayer
-						7029,	-- Blackrock Battlemaster
-					},
-				}),
-				i(15748, {	-- Pattern: Heavy Scorpid Leggings (RECIPE!)
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 },
-					["description"] = "Killing the mobs at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
-					["coords"] = {
-						{ 34.8, 36.3, BURNING_STEPPES },
-						{ 36.0, 36.6, BURNING_STEPPES },
-					},
-					["crs"] = {
-						7025,	-- Blackrock Soldier
-						7027,	-- Blackrock Slayer
-						7029,	-- Blackrock Battlemaster
-					},
-				}),
-				i(15774, {	-- Pattern: Heavy Scorpid Shoulders (RECIPE!)
-					["timeline"] = { REMOVED_4_0_3, ADDED_5_0_4, REMOVED_6_0_2, ADDED_10_0_5 },
-					["description"] = "Killing the mobs at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
-					["coords"] = {
-						{ 34.8, 36.3, BURNING_STEPPES },
-						{ 36.0, 36.6, BURNING_STEPPES },
-					},
-					["crs"] = {
-						7025,	-- Blackrock Soldier
-						7027,	-- Blackrock Slayer
-						7029,	-- Blackrock Battlemaster
-					},
-				}),
-				-- #else
-				i(15738, {	-- Pattern: Heavy Scorpid Gauntlets (RECIPE!)
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 },
-					["cr"] = 7025,	-- Blackrock Soldier
-				}),
-				i(15748, {	-- Pattern: Heavy Scorpid Leggings (RECIPE!)
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 },
-					["cr"] = 7027,	-- Blackrock Slayer
-				}),
-				-- #if BEFORE 5.0.4
-				i(15774, {	-- Pattern: Heavy Scorpid Shoulders (RECIPE!)
-					["timeline"] = { REMOVED_4_0_3, ADDED_5_0_4, REMOVED_6_0_2, ADDED_10_0_5 },
-					-- #if BEFORE 4.0.3
-					["coord"] = { 41.8, 37.0, BURNING_STEPPES },
-					["cr"] = 7029,	-- Blackrock Battlemaster
 					-- #endif
+					["coords"] = {
+						{ 34.8, 36.3, BURNING_STEPPES },
+						{ 36.0, 36.6, BURNING_STEPPES },
+					},
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 },
+					["crs"] = {
+						7025,	-- Blackrock Soldier
+						-- #if AFTER 10.0.5
+						7027,	-- Blackrock Slayer
+						-- #endif
+					},
 				}),
-				-- #endif
-				-- #endif
+				i(15748, {	-- Pattern: Heavy Scorpid Leggings (RECIPE!)
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 },
+					-- #if AFTER 10.0.5
+					["description"] = "Killing the mobs at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
+					-- #endif
+					["coords"] = {
+						{ 34.8, 36.3, BURNING_STEPPES },
+						{ 36.0, 36.6, BURNING_STEPPES },
+					},
+					["crs"] = {
+						-- #if AFTER 10.0.5
+						7025,	-- Blackrock Soldier
+						-- #else
+						7027,	-- Blackrock Slayer
+						-- #endif
+					},
+				}),
+				i(15774, {	-- Pattern: Heavy Scorpid Shoulders (RECIPE!)
+					["timeline"] = { REMOVED_4_0_3, ADDED_5_0_4, REMOVED_6_0_2, ADDED_10_0_5 },
+					-- #if AFTER 10.0.5
+					["description"] = "Killing the mobs at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
+					-- #endif
+					["coords"] = {
+						{ 34.8, 36.3, BURNING_STEPPES },
+						{ 36.0, 36.6, BURNING_STEPPES },
+					},
+					["crs"] = {
+						-- #if AFTER 10.0.5
+						7025,	-- Blackrock Soldier
+						-- #else
+						7029,	-- Blackrock Battlemaster
+						-- #endif
+					},
+				}),
 				i(15727, {	-- Pattern: Heavy Scorpid Vest (RECIPE!)
 					["timeline"] = { ADDED_10_0_5 },
+					-- #if AFTER 10.0.5
 					["description"] = "Killing the mobs at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
+					-- #endif
 					["coords"] = {
 						{ 34.8, 36.3, BURNING_STEPPES },
 						{ 36.0, 36.6, BURNING_STEPPES },
@@ -2475,7 +2470,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["crs"] = {
 						7025,	-- Blackrock Soldier
 						7027,	-- Blackrock Slayer
-						7029,	-- Blackrock Battlemaster
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -2495,7 +2489,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if SEASON_OF_DISCOVERY
 						REMOVED_1_15_3,
 						-- #else
-						REMOVED_4_0_3, ADDED_10_1_7,	-- ATT Discord 05.09.2023
+						REMOVED_4_0_3, ADDED_10_1_7,
 						-- #endif
 					},
 					["cr"] = 7035,	-- Firegut Brute
@@ -2505,7 +2499,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(13476, {	-- Recipe: Mighty Rage Potion (RECIPE!)
-					["timeline"] = { REMOVED_4_0_3 },
+					["timeline"] = { REMOVED_4_0_3 },	-- Moved to trainer
 					["cr"] = 7027,	-- Blackrock Slayer
 				}),
 			}),
