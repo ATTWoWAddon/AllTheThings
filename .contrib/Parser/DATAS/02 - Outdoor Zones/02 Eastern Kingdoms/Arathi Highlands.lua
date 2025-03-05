@@ -116,14 +116,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- TODO: requires sourceQuests/altQuests as it is not collectible for my main
 				}),
 				fp(17, {	-- Hammerfall, Arathi
-					-- #if AFTER BFA
+
 					["crs"] = {
+						-- #if AFTER BFA
 						2851,	-- Urda <Wind Rider Master>
 						144069,	-- Urda <Wind Rider Master>
+						-- #else
+						2851,	-- Urda <Wind Rider Master>
+						-- #endif
 					},
-					-- #else
-					["cr"] = 2851,	-- Urda <Wind Rider Master>
-					-- #endif
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 68.2, 33.4, ARATHI_HIGHLANDS },
@@ -134,14 +135,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				fp(16, {	-- Refuge Pointe, Arathi
-					-- #if AFTER BFA
 					["crs"] = {
+						-- #if AFTER BFA
 						2835,	-- Cedrik Prose <Gryphon Master>
 						144055,	-- Cedrik Prose <Gryphon Master>
+						-- #else
+						2835,	-- Cedrik Prose <Gryphon Master>
+						-- #endif
 					},
-					-- #else
-					["cr"] = 2835,	-- Cedrik Prose <Gryphon Master>
-					-- #endif
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 39.6, 47.0, ARATHI_HIGHLANDS },
@@ -162,16 +163,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					}),
 				}),
-				-- #if BEFORE CATA
 				prof(FISHING, {
-					o(180685),	-- Waterlogged Wreckage
-				}),
-				-- #endif
-				-- #if AFTER CATA
-				prof(FISHING, {
+					-- #if AFTER CATA
 					o(180662),	-- Schooner Wreckage
+					-- #else
+					o(180685),	-- Waterlogged Wreckage
+					-- #endif
 				}),
-				-- #endif
 				prof(LEATHERWORKING, {
 					n(7869, {	-- Brumn Winterhoof <Master Elemental Leatherworker>
 						["coord"] = { 28.2, 45.0, ARATHI_HIGHLANDS },
@@ -1737,7 +1735,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26341, {	-- The Stone Shards
 					["qg"] = 2789,	-- Skuerto
 					["coord"] = { 40.3, 49.1, ARATHI_HIGHLANDS },
-					["description"] = "This quest gets marked as completed when its Horde counterpart 'The Stone Shards' (26909) is handed in.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1745,7 +1742,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26909, {	-- The Stone Shards
 					["qg"] = 2787,	-- Zaruk
 					["coord"] = { 69.6, 36.5, ARATHI_HIGHLANDS },
-					["description"] = "This quest gets marked as completed when its Alliance counterpart 'The Stone Shards' (26341) is handed in.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1880,18 +1876,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(6622, {	-- Triage (H)
 					["qg"] = 12920,	-- Doctor Gregory Victor
 					["sourceQuest"] = 6623,	-- Horde Trauma
-					-- #if AFTER CATA
-					["coord"] = { 73.4, 36.8, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 68.5, 37.8, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 73.4, 36.8, ARATHI_HIGHLANDS },
+						-- #else
+						{ 68.5, 37.8, ARATHI_HIGHLANDS },
+						-- #endif
+					},
+					["description"] =
 					-- #if AFTER BFA
-					["description"] = "Needs a minimum of 225 skill in Tailoring.",
-					["requireSkill"] = TAILORING,
+					"Needs a minimum of 225 skill in Tailoring.",
 					-- #else
-					["description"] = "Needs a minimum of 225 skill in First Aid.",
-					["requireSkill"] = FIRST_AID,
+					"Needs a minimum of 225 skill in First Aid.",
 					-- #endif
+					["requireSkill"] =
+						-- #if AFTER BFA
+						TAILORING,
+						-- #else
+						FIRST_AID,
+						-- #endif
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
@@ -2233,10 +2236,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(5742, {	-- Gemstone Dagger
-							["timeline"] = { CREATED_1_11_1, ADDED_3_0_2, REMOVED_4_0_3, ADDED_10_1_7 },	-- Att disc 07.09.2023
+							["timeline"] = { CREATED_1_11_1, ADDED_3_0_2, REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 						i(5743, {	-- Prismstone Ring
-							["timeline"] = { CREATED_1_11_1, ADDED_3_0_2, REMOVED_4_0_3, ADDED_10_1_7 },	-- Att disc 05.09.2023
+							["timeline"] = { CREATED_1_11_1, ADDED_3_0_2, REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -2254,7 +2257,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(5256, {	-- Kovork's Rattle
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -2268,24 +2271,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2606, {	-- Nimar the Slayer <Warband Leader>
-					-- #if AFTER CATA
-					["coord"] = { 68.6, 66.7, ARATHI_HIGHLANDS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 68.6, 66.7, ARATHI_HIGHLANDS },
+						-- #else
 						{ 66.0, 60.2, ARATHI_HIGHLANDS },
 						{ 72.8, 64.8, ARATHI_HIGHLANDS },
 						{ 66.4, 64.8, ARATHI_HIGHLANDS },
 						{ 63.2, 66.2, ARATHI_HIGHLANDS },
 						{ 62.4, 73.4, ARATHI_HIGHLANDS },
 						{ 64.8, 74.6, ARATHI_HIGHLANDS },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						i(5257, {	-- Dark Hooded Cape
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+						}),
+						i(11166, {	-- Formula: Enchant Gloves - Skinning (RECIPE!)
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(2622, {	-- Nimar's Tribal Headdress
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -2345,10 +2351,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(5180, {	-- Necklace of Harmony
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 						i(5181, {	-- Vibrant Silk Cape
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -2426,23 +2432,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(3180, {	-- Dark Iron Entrepreneur <Speciality Goods>
 					["coord"] = { 42.7, 90.3, ARATHI_HIGHLANDS },
 					["groups"] = {
-						i(11150),	-- Formula: Enchant Gloves - Mining (RECIPE!)
 						i(4824, {	-- Blurred Axe
 							["isLimited"] = true,
 						}),
 						i(4825, {	-- Callous Axe
 							["isLimited"] = true,
 						}),
-						i(4826, {	-- Marauder Axe
-							["isLimited"] = true,
-						}),
 						i(4835, {	-- Elite Shoulders
 							["isLimited"] = true,
+						}),
+						i(11150, {	-- Formula: Enchant Gloves - Mining (RECIPE!)
+							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(4833, {	-- Glorious Shoulders
 							["isLimited"] = true,
 						}),
 						i(3429, {	-- Guardsman Belt
+							["timeline"] = { ADDED_10_1_7 },
+							["isLimited"] = true,
+						}),
+						i(4826, {	-- Marauder Axe
 							["isLimited"] = true,
 						}),
 						i(4832, {	-- Mystic Sarong
@@ -2509,7 +2518,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						-- #if AFTER TBC
-						i(21942, {	-- Design: Ruby Crown of Restoration
+						i(21942, {	-- Design: Ruby Crown of Restoration (RECIPE!)
 							["isLimited"] = true,
 						}),
 						-- #endif
@@ -2566,17 +2575,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select", "itemID",
-						5973,	-- Pattern: Barbaric Leggings (RECIPE!)
-					}},
 					["groups"] = {
 						-- #if AFTER TBC
-						i(21942, {	-- Design: Ruby Crown of Restoration
+						i(21942, {	-- Design: Ruby Crown of Restoration (RECIPE!)
 							["isLimited"] = true,
 						}),
 						-- #endif
 						i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge / CLASSIC: Formula: Enchant Bracer - Lesser Deflection (RECIPE!)
 							["timeline"] = { REMOVED_4_1_0 },	-- Learned by trainer
+						}),
+						i(5973, {	-- Pattern: Barbaric Leggings (RECIPE!)
+							["isLimited"] = true,
 						}),
 						i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
 						i(12228),	-- Recipe: Roast Raptor (RECIPE!)
@@ -2591,6 +2600,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
+					["sym"] = {{"select","itemID",
+						3027,	-- Heavy Recurve Bow
+						3026,	-- Reinforced Bow
+					}},
 					["groups"] = {
 						i(11305, {	-- Dense Shortbow
 							["isLimited"] = true,
@@ -2637,13 +2650,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(5624, {	-- Circlet of the Order
-					-- #if BEFORE 4.0.3
-					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
-					-- #elseif AFTER 10.1.7
-					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
-					-- #endif
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					["cr"] = 2584,	-- Stromgarde Defender	-- CRIEVE NOTE: Check if the undead one can drop this too.
+					["description"] =
+						-- #if AFTER 10.1.7
+						"This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
+						-- #else
+						"This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
+						-- #endif
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+					["cr"] = 2584,	-- Stromgarde Defender
 					["coords"] = {
 						{ 26.0, 58.0, ARATHI_HIGHLANDS },
 						{ 22.0, 62.2, ARATHI_HIGHLANDS },
@@ -2665,17 +2679,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2558,	-- Witherbark Berserker
 						2556,	-- Witherbark Headhunter
 						2557,	-- Witherbark Shadow Hunter
-						-- #if BEFORE 4.0.3
-						2605,	-- Zalas Witherbark <Warband Leader>
-						-- #endif
 					},
 				}),
 				i(3341, {	-- Gauntlets of Ogre Strength
 					["crs"] = {
 						2564,	-- Boulderfist Enforcer
+						-- #if BEFORE 4.0.3
 						2562,	-- Boulderfist Ogre
+						-- #endif
 					},
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["coords"] = {
 						{ 27.4, 46.8, ARATHI_HIGHLANDS },
 						{ 26.2, 46.2, ARATHI_HIGHLANDS },
@@ -2687,13 +2700,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2780,	-- Caretaker Nevlin
 						2781,	-- Caretaker Weston
 					},
-					-- #if BEFORE 4.0.3
-					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
-					-- #elseif AFTER 10.1.7
-					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
-					-- #endif
+					["description"] =
+						-- #if AFTER 10.1.7
+						"This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
+						-- #else
+						"This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
+						-- #endif
 					["coord"] = { 29.8, 59.4, ARATHI_HIGHLANDS },
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 				}),
 				i(1993, {	-- Ogremind Ring
 					["crs"] = {
@@ -2702,42 +2716,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(1297, {	-- Robes of the Shadowcaster
-					-- #if AFTER CATA
-					["cr"] = 2553,	-- Witherbark Shadowcaster
-					-- #else
 					["crs"] = {
 						2553,	-- Witherbark Shadowcaster
+						-- #if BEFORE CATA
 						2577,	-- Dark Iron Shadowcaster
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(5040, {	-- Shadow Hunter Knife
 					["cr"] = 2557,	-- Witherbark Shadow Hunter
 					["coord"] = { 63.6, 84.2, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["collectible"] = false,
-					--[[["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
-					["cr"] = 570,	-- Brain Eater
-					["coords"] = {
-						{ 23.4, 35.4, ARATHI_HIGHLANDS },
-						{ 25.4, 35.4, ARATHI_HIGHLANDS },
-					},
-					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						604,	-- Plague ARATHI_HIGHLANDS
-						3,		-- Flesh Eater
-					},
-					["coords"] = {
-						{ 23.4, 35.4, ARATHI_HIGHLANDS },
-						{ 17.8, 33.4, ARATHI_HIGHLANDS },
-						{ 19.8, 46.8, ARATHI_HIGHLANDS },
-					},
-					-- #endif
-					--]]
 				}),
 				i(3345, {	-- Silk Wizard Hat
 					["cr"] = 2591,	-- Syndicate Magus
+					["coords"] = {
+						{ 19.6, 67.0, ARATHI_HIGHLANDS },
+						{ 21.8, 62.4, ARATHI_HIGHLANDS },
+						{ 22.8, 63.8, ARATHI_HIGHLANDS },
+					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, i(213444, {	-- Tarnished Prayer Bead I
