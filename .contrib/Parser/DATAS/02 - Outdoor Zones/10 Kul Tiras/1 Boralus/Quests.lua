@@ -182,7 +182,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					},
 				}),
 			})),
-			n(-397, {	-- Outposts
+			n(OUTPOSTS, {
 				["description"] = "Alliance Outposts allow you to set up additional bases in Zandalar.  You can buy Scouting Reports from Vindicator Jaelaana, the vendor next to Wind's Redemption.  Each one will start a mission on your Mission Command Table.  After you complete the initial questline, you'll be offered additional missions to upgrade your outposts.",
 				["g"] = {
 					i(165880, {	-- Outpost Upgrade: Arom's Stand

@@ -6,7 +6,7 @@ local function bo(questID, isDaily)
 end
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, {
 	m(SIREN_ISLE, {
-		n(-1208, {   -- Invasion: Vrykul
+		n(INVASION_VRYKUL, {
 			["description"] = "Every week a faction invades the island.\n\nThe rotation is Vrykul>Naga>Pirates repeat.\n\nZone Drops listed here are only available when the invasion is active.",
 			["groups"] = {
 				petbattle(filter(BATTLE_PETS, {

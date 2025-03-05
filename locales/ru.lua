@@ -442,43 +442,6 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- PvP
-		[-242] = "Нерейтинговые",									-- Unrated
-	-- Outposts in Draenor
-		[-361] = "Артиллерийная башня",								-- Artillery Tower
-	-- BFA Outposts
-		[-397] = "Аванпосты",										-- Outposts
-	-- Misc
-		[-493] = "Сломанный лут с миссий",							-- Broken Mission Loot
-	-- Blizzard Events and Anniversaries
-		[-520] = "Препатч",											-- Expansion Pre-Launch
-		[-543] = "Вторжение Легиона",								-- Legion Invasions
-	-- Mists of Pandaria PvP Seasons
-		[-675] = select(2, GetAchievementInfo(8214))..": Сезон 12",	-- Malevolent Gladiator: Season 12
-		[-653] = "Доспехи Деспотичного гладиатора за очки чести",	-- Honor Gear Tyrannical Season
-		[-676] = select(2, GetAchievementInfo(8791))..": Сезон 13",	-- Tyrannical Gladiator: Season 13
-		[-652] = "Доспехи Бездушного гладиатора за очки чести",		-- Honor Gear Grievous Season
-		[-651] = "Доспехи Гордого гладиатора за очки чести",		-- Honor Gear Prideful Season
-	-- Shadowlands Header
-		[-979] = "Брокер Ве'кен & Брокер Ве'нотт",					-- Broker Ve'ken & Broker Ve'nott
-		[-924] = "Транспортная Сеть",								-- Transport Network
-		-- SL Bastion/Kyrian
-			[-973] = "Верность",									-- Loyalty
-			[-975] = "Смирение",									-- Humility
-		-- SL Revendreth/Venthyr
-			[-954] = "Инквизиторы",									-- Inquisitors
-			[-955] = "Старшие Инквизиторы",							-- High Inquisitors
-			[-956] = "Великие Инквизиторы",							-- Grand Inquisitors
-			[-967] = "Восстановление зеркала",						-- Mirror Restoration
-			[-968] = "Набор A",										-- Set A
-			[-969] = "Набор B",										-- Set B
-			[-970] = "Набор C",										-- Set C
-			[-971] = "Набор D",										-- Set D
-	-- Dragonflight
-		[-1102] = "Гневион и Сабеллиан",							-- Wrathion & Sabellian
-		[-1120] = "Кентавры Маруук",								-- Maruuk Centaur
-		[-1130] = "Искарские клыкарры",								-- Iskaara Tuskarr
-		[-1150] = "Лоаммские ниффы",								-- Loamm Niffen
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5200] = "Основной облик",								-- Base Appearance

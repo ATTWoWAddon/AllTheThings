@@ -3351,7 +3351,7 @@ root(ROOTS.Zones, {
 								i(138661, {	-- Ensemble: Grievous Gladiator's Dreadplate Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_ensemble", EXPANSION.MOP, -677, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },
+										{"sub", "pvp_set_ensemble", EXPANSION.MOP, SEASON_GRIEVOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DEATHKNIGHT },
 										{"select", "itemID",
 											100402,	-- Grievous Gladiator's Armplates of Alacrity
 											100393,	-- Grievous Gladiator's Girdle of Accuracy
@@ -3387,7 +3387,7 @@ root(ROOTS.Zones, {
 								i(138669, {	-- Ensemble: Grievous Gladiator's Dragonhide Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_ensemble", EXPANSION.MOP, -677, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },
+										{"sub", "pvp_set_ensemble", EXPANSION.MOP, SEASON_GRIEVOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, DRUID },
 										{"select", "itemID",
 											100267,	-- Grievous Gladiator's Bindings of Meditation
 											100284,	-- Grievous Gladiator's Bindings of Prowess
@@ -3469,7 +3469,7 @@ root(ROOTS.Zones, {
 								i(138667, {	-- Ensemble: Grievous Gladiator's Chain Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_ensemble", EXPANSION.MOP, -677, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },
+										{"sub", "pvp_set_ensemble", EXPANSION.MOP, SEASON_GRIEVOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, HUNTER },
 										{"select", "itemID",
 											100317,	-- Grievous Gladiator's Wristguards of Accuracy
 											100316,	-- Grievous Gladiator's Wristguards of Alacrity
@@ -3511,7 +3511,7 @@ root(ROOTS.Zones, {
 								i(138675, {	-- Ensemble: Grievous Gladiator's Silk Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_ensemble", EXPANSION.MOP, -677, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },
+										{"sub", "pvp_set_ensemble", EXPANSION.MOP, SEASON_GRIEVOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MAGE },
 										{"select", "itemID",
 											100218,	-- Grievous Gladiator's Cuffs of Prowess
 											100205,	-- Grievous Gladiator's Cord of Cruelty
@@ -3547,7 +3547,7 @@ root(ROOTS.Zones, {
 								i(138671, {	-- Ensemble: Grievous Gladiator's Ironskin Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_ensemble", EXPANSION.MOP, -677, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },
+										{"sub", "pvp_set_ensemble", EXPANSION.MOP, SEASON_GRIEVOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, MONK },
 										{"select", "itemID",
 											100342,	-- Grievous Gladiator's Armwraps of Accuracy
 											100338,	-- Grievous Gladiator's Waistband of Cruelty
@@ -3603,7 +3603,7 @@ root(ROOTS.Zones, {
 								i(138663, {	-- Ensemble: Grievous Gladiator's Scaled Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_ensemble", EXPANSION.MOP, -677, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },
+										{"sub", "pvp_set_ensemble", EXPANSION.MOP, SEASON_GRIEVOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PALADIN },
 										{"select", "itemID",
 											100382,	-- Grievous Gladiator's Bracers of Meditation
 											100381,	-- Grievous Gladiator's Bracers of Prowess
@@ -3665,7 +3665,7 @@ root(ROOTS.Zones, {
 								i(138677, {	-- Ensemble: Grievous Gladiator's Satin Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_ensemble", EXPANSION.MOP, -677, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },
+										{"sub", "pvp_set_ensemble", EXPANSION.MOP, SEASON_GRIEVOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, PRIEST },
 										{"select", "itemID",
 											100219,	-- Grievous Gladiator's Cuffs of Meditation
 											100209,	-- Grievous Gladiator's Cord of Meditation
@@ -3721,7 +3721,7 @@ root(ROOTS.Zones, {
 								i(138673, {	-- Ensemble: Grievous Gladiator's Leather Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_ensemble", EXPANSION.MOP, -677, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },
+										{"sub", "pvp_set_ensemble", EXPANSION.MOP, SEASON_GRIEVOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, ROGUE },
 										{"select", "itemID",
 											100342,	-- Grievous Gladiator's Armwraps of Alacrity
 											100425,	-- Grievous Gladiator's Waistband of Accuracy
@@ -3757,7 +3757,7 @@ root(ROOTS.Zones, {
 								i(138665, {	-- Ensemble: Grievous Gladiator's Ringmail Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_ensemble", EXPANSION.MOP, -677, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },
+										{"sub", "pvp_set_ensemble", EXPANSION.MOP, SEASON_GRIEVOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, SHAMAN },
 										{"select", "itemID",
 											100447,	-- Grievous Gladiator's Armbands of Meditation
 											100446,	-- Grievous Gladiator's Armbands of Prowess
@@ -3839,7 +3839,7 @@ root(ROOTS.Zones, {
 								i(138679, {	-- Ensemble: Grievous Gladiator's Felweave Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_ensemble", EXPANSION.MOP, -677, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },
+										{"sub", "pvp_set_ensemble", EXPANSION.MOP, SEASON_GRIEVOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARLOCK },
 										{"select", "itemID",
 											100217,	-- Grievous Gladiator's Cuffs of Accuracy
 											100207,	-- Grievous Gladiator's Cord of Accuracy
@@ -3875,7 +3875,7 @@ root(ROOTS.Zones, {
 								i(138659, {	-- Ensemble: Grievous Gladiator's Plate Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_ensemble", EXPANSION.MOP, -677, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },
+										{"sub", "pvp_set_ensemble", EXPANSION.MOP, SEASON_GRIEVOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR, WARRIOR },
 										{"select", "itemID",
 											100401,	-- Grievous Gladiator's Armplates of Proficiency
 											100395,	-- Grievous Gladiator's Girdle of Prowess

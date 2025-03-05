@@ -463,48 +463,6 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- PvP
-		[-242] = "无评级",												-- Unrated
-	-- Outposts in Draenor
-		[-361] = GetSpellName(182108).." 塔",						-- Artillery Tower
-	-- BFA Outposts
-		[-397] = "哨站",												-- Outposts
-	-- Misc
-		[-493] = "要塞任务拾取",										-- Header for WoD Mission Loot
-	-- Blizzard Events and Anniversaries
-		[-520] = "资料片前夕",											-- Expansion Pre-Launch
-		[-543] = "军团入侵",											-- Legion Invasions
-	-- Mists of Pandaria PvP Seasons
-		[-675] = select(2, GetAchievementInfo(8214)).."第12赛季",	-- Malevolent Gladiator: Season 12
-		[-653] = "荣誉装备暴虐赛季",									-- Honor Gear Tyrannical (S13)
-		[-676] = select(2, GetAchievementInfo(8791)).."第13赛季",	-- Tyrannical Gladiator: Season 13
-		[-652] = "荣誉装备恶孽赛季",									-- Honor Gear Grievous (S14)
-		[-651] = "荣誉装备骄矜赛季",									-- Honor Gear Prideful (S15)
-	-- Shadowlands Header
-		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
-		[-924] = "传送网络",											-- Transport Network
-		-- SL Bastion/Kyrian
-			[-973] = "忠诚",											-- Loyalty
-			[-975] = "谦逊",											-- Humility
-		-- SL Revendreth/Venthyr
-			[-954] = "审判官",											-- Inquisitors
-			[-955] = "高阶审判官",										-- High Inquisitors
-			[-956] = "大审判官",										-- Grand Inquisitors
-			[-967] = "破镜重圆",										-- Mirror Restoration
-			[-968] = "组 A",											-- Set A
-			[-969] = "组 B",											-- Set B
-			[-970] = "组 C",											-- Set C
-			[-971] = "组 D",											-- Set D
-	-- Dragonflight
-
-		[-1102] = "拉希奥和萨贝里安",										-- Wrathion & Sabellian
-		[-1120] = "马鲁克半人马",											-- Maruuk Centaur
-		[-1130] = "伊斯卡拉海象人",										-- Iskaara Tuskarr
-		[-1150] = "峈姆鼹鼠人",											-- Loamm Niffen
-	-- The War Within
-		[-1208] = "入侵：维库人",												-- Vrykul
-		[-1209] = "入侵：娜迦",													-- Naga
-		[-1210] = "入侵：海盗",												-- Pirate
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5200] = "基础外观",										-- Base Appearance

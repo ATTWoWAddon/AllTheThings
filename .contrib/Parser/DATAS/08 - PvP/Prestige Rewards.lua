@@ -2,7 +2,7 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-root(ROOTS.PVP, pvp(n(-216, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {	-- Prestige
+root(ROOTS.PVP, pvp(n(PRESTIGE, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {
 	["description"] = "System that was used during Legion Expansion.",
 	["g"] = {
 		ach(10991, {	-- First Step into a Larger World [1]

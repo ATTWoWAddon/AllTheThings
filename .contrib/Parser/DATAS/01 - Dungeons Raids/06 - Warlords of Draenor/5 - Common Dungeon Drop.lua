@@ -1,14 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local AUCH = -140;
-local BSM =	-141;
-local RAIL = -142;
-local DOCKS = -143;
-local SBG =	-144;
-local SKY = -145;
-local BLOOM = -146;
-local UBRS = -147;
 root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	n(COMMON_DUNGEON_DROPS, {
 		["description"] = "The following items can be obtained in the mentioned dungeons.",

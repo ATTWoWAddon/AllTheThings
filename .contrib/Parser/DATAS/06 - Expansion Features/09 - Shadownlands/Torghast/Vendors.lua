@@ -5,7 +5,7 @@ local PHANTASMA = 1728;
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
 	m(TORGHAST, {
 		n(VENDORS, {
-			n(-979, {	-- Broker Ve'ken & Broker Ve'nott
+			n(BROKER_VEKEN_BROKER_VENOTT, {
 				["description"] = "These items are not guaranteed, but have a chance to appear among the vendors' goods.",
 				["crs"] = {
 					152594, -- Broker Ve'ken
