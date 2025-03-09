@@ -7,6 +7,7 @@ local SHIPPING_AND_HANDLING = createHeader({
 	icon = 6383558,
 	text = {
 		en = "Shipping & Handling",
+		cn = "货运与接收",
 	},
 });
 
