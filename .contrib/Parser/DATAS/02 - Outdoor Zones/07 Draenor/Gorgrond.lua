@@ -328,7 +328,7 @@ root(ROOTS.Zones, {
 						34223 - Creature Treasure: Iron Horde Stable Master
 						34411 - Creature Treasure: King Slime
 					]]--
-					n(-358, {	-- Lumber Yard
+					header(HEADERS.Spell, 164028, {	-- Lumber Yard
 						q(36523, {	-- A Green Ogron? (A)
 							["provider"] = { "n", 81601 },	-- Burrian Coalpart
 							["races"] = ALLIANCE_ONLY,
@@ -881,7 +881,7 @@ root(ROOTS.Zones, {
 							}),
 						}),
 					}),
-					n(-357, {	-- Sparring Arena
+					header(HEADERS.Spell, 171866, {	-- Sparring Arena
 						q(35210, {	-- A Great Escape
 							["provider"] = { "o", 236140 },	-- Goren Tunnel
 							["coord"] = { 34.7, 66.9, 547 },
@@ -1438,7 +1438,7 @@ root(ROOTS.Zones, {
 							}),
 						}),
 					}),
-					n(-357, sharedData({	-- Sparring Arena (A) (Proofs of Strength)
+					header(HEADERS.Spell, 171866, sharedData({	-- Sparring Arena (A) (Proofs of Strength)
 						["sharedDescription"] = "Quest Item will only drop from mobs killed while your Sparring Arena follower is summoned, they do not need to hit any.",
 						["sourceQuest"] = 35137,	-- The Sparring Arena (A)
 						["races"] = ALLIANCE_ONLY,
@@ -1528,7 +1528,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 					})),
-					n(-357, sharedData({	-- Sparring Arena (H) (Proofs of Strength)
+					header(HEADERS.Spell, 171866, sharedData({	-- Sparring Arena (H) (Proofs of Strength)
 						["sharedDescription"] = "Quest Item will only drop from mobs killed while your Sparring Arena follower is summoned, they do not need to hit any.",
 						["sourceQuest"] = 35152,	-- The Sparring Arena (H)
 						["races"] = HORDE_ONLY,
@@ -2721,7 +2721,7 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(TREASURES, {
-					n(-357, {	-- Sparring Arena
+					header(HEADERS.Spell, 171866, {	-- Sparring Arena
 						o(233455, {	-- Aged Stone Container
 							["questID"] = 36734,
 							["coord"] = { 51.3, 40.6, GORGROND },
@@ -2899,7 +2899,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 					}),
-					n(-358, {	-- Lumber Mill
+					header(HEADERS.Spell, 164028, {	-- Lumber Mill
 						o(236350, {	-- Aged Stone Container
 							["questID"] = 36003,
 							["coord"] = { 42.4, 54.8, GORGROND },

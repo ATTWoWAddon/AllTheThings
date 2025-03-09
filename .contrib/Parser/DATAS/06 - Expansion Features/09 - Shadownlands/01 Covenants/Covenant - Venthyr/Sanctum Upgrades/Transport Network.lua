@@ -90,14 +90,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						n(TIER_THREE, {
 							["description"] = "Each day, a set of 3 Broken Mirrors is active in Revendreth.  They are not on a predictable cycle, so the same set may be up two days in a row.  Toggle on Debug Mode, 'Show All Trackable Things,' or 'Track Repeatable Quests' to see the list of mirror sets available to restore.\n\nIf your mirror transports you to Sanctuary of the Mad, go back to the repaired mirror and re-enter it to be teleported to the correct room.",
 							["g"] = {
-								n(-967, {	-- Mirror Restoration
+								n(MIRROR_RESTORATION, {
 									n(166133, {	-- Simone
 										i(181363, {	-- Handcrafted Mirror Repair Kit
 											["cost"] = { { "c", 1820, 20 } },	-- 20x Infused Ruby
 											["sourceQuest"] = 59740,	-- Repair and Restore
 										}),
 									}),
-									n(-968, {	-- Set A
+									n(SET_A, {
 										["description"] = "Wowhead: |cffffffffGroup 2|r",
 										["g"] = {
 											n(BROKEN_MIRROR_A1, {
@@ -138,7 +138,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											}),
 										},
 									}),
-									n(-969, {	-- Set B
+									n(SET_B, {
 										["description"] = "Wowhead: |cffffffffGroup 3|r",
 										["g"] = {
 											n(BROKEN_MIRROR_B1, {
@@ -181,7 +181,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											}),
 										},
 									}),
-									n(-970, {	-- Set C
+									n(SET_C, {
 										["description"] = "Wowhead: |cffffffffGroup 1|r",
 										["g"] = {
 											n(BROKEN_MIRROR_C1, {
@@ -224,7 +224,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											}),
 										},
 									}),
-									n(-971, {	-- Set D
+									n(SET_D, {
 										["description"] = "Wowhead: |cffffffffGroup 4|r",
 										["g"] = {
 											n(BROKEN_MIRROR_D1, {

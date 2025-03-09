@@ -21,7 +21,7 @@ root(ROOTS.Zones, {
 				843,	-- Shadow-Pan Showdown
 			},
 			["groups"] = {
-				n(-362, bubbleDownSelf({	-- Peak of Serenity
+				n(PEAK_OF_SERENITY, bubbleDownSelf({
 					["classes"] = { MONK },
 				},{
 					["description"] = "This area phases once you have begun the Monk Class Hall Campaign and may not be accessible again until you complete it.",

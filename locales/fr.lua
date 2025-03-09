@@ -453,38 +453,6 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- BFA Outposts
-		[-397] = "Avant-postes",									-- Outposts
-	-- Misc
-		[-520] = "Pré-Lancement de l’Extension",					-- Expansion Pre-Launch
-		[-543] = "Invasions de Legion ",							-- Legion Invasions
-	-- Mists of Pandaria PvP Seasons
-		[-675] = select(2, GetAchievementInfo(8214))..": Saison 12",	-- Malevolent Gladiator: Season 12
-		[-653] = "Équipement Honneur Saison Tyrannique",				-- Honor Gear Tyrannical Season
-		[-676] = select(2, GetAchievementInfo(8791))..": Saison 13",	-- Tyrannical Gladiator: Season 13
-		[-652] = "Équipement Honneur Saison Dramatique",				-- Honor Gear Grievous Season
-		[-651] = "Équipement Honneur Saison Orgueilleux",				-- Honor Gear Prideful Season
-	-- Shadowlands Header
-		[-979] = "Négociant Ve'ken & Négociant Ve'nott",			-- Broker Ve'ken & Broker Ve'nott
-		[-924] = "Réseau de transport",								-- Transport Network
-		-- SL Bastion/Kyrian
-			[-973] = "Loyauté",										-- Loyalty
-			[-975] = "Humilité",									-- Humility
-		-- SL Revendreth/Venthyr
-			[-954] = "Inquisiteurs",								-- Inquisitors
-			[-955] = "Grands inquisiteurs",							-- High Inquisitors
-			[-956] = "Inquisiteurs suprêmes",						-- Grand Inquisitors
-			[-967] = "Restauration de miroir",						-- Mirror Restoration
-			[-968] = "Tier A",										-- Set A
-			[-969] = "Tier B",										-- Set B
-			[-970] = "Tier C",										-- Set C
-			[-971] = "Tier D",										-- Set D
-	-- Dragonflight
-
-		[-1102] = "Irion et Sabellian",								-- Wrathion & Sabellian
-		[-1120] = "Centaure maruuk",								-- Maruuk Centaur
-		[-1130] = "Rohart iskaarien",								-- Iskaara Tuskarr
-		[-1150] = "Flairans de Terreau",							-- Loamm Niffen
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5200] = "Apparence de base",							-- Base Appearance
