@@ -2,7 +2,7 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 
-root(ROOTS.PVP, pvp(n(-242, {	-- Unrated
+root(ROOTS.PVP, pvp(n(UNRATED, {
 	i(126919, {	-- Champion's Strongbox [Alliance]
 		["u"] = REMOVED_FROM_GAME,
 	}),

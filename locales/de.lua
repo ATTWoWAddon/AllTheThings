@@ -444,26 +444,6 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- PvP
-		[-242] = "Ungewertet",										-- Unrated
-	-- BFA Outposts
-		[-397] = "Außenposten",										-- Outposts
-	-- Shadowlands Header
-		[-979] = "Mittler Ve'ken & Mittler Ve'nott",				-- Broker Ve'ken & Broker Ve'nott
-		[-924] = "Reisenetzwerk",									-- Transport Network
-		-- SL Bastion/Kyrian
-			[-973] = "Loyalität",									-- Loyalty
-			[-975] = "Demut",										-- Humility
-		-- SL Revendreth/Venthyr
-			[-954] = "Inquisitor",									-- Inquisitors
-			[-955] = "Hochinquisitor",								-- High Inquisitors
-			[-956] = "Großinquisitor",								-- Grand Inquisitors
-			[-967] = "Spiegelwiederherstellung",					-- Mirror Restoration
-	-- Dragonflight
-		[-1102] = "Furorion und Sabellian",							-- Wrathion & Sabellian
-		[-1120] = "Zentauren der Maruuk",							-- Maruuk Centaur
-		[-1130] = "Tuskarr von Iskaara",							-- Iskaara Tuskarr
-		[-1150] = "Niffen von Loamm",								-- Loamm Niffen
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5201] = "Ordenskampagne",								-- Class Hall Campaign

@@ -252,7 +252,7 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(QUESTS, {
-					n(-391, {	-- Stroktron Brewery
+					n(STOKTRON_BREWERY, {
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							q(35926, {	-- Assassin's Mark
@@ -332,7 +332,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					n(-392, {	-- Hearthfire Tavern
+					n(HEARTHFIRE_TAVERN, {
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							q(35924, {	-- Assassin's Mark
@@ -415,7 +415,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					n(-390, {	-- Smuggler's Den
+					n(SMUGGLERS_DEN, {
 						q(35739, {	-- All Natural
 							["sourceQuests"] = { 35719 },	-- Back on Track
 							["coord"] = { 60.2, 53.1, SPIRES_OF_ARAK },
@@ -2211,7 +2211,7 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(VENDORS, {
-					n(-390, {	-- Smuggler's Den
+					n(SMUGGLERS_DEN, {
 						n(82459, {	-- Honest Jim
 							["description"] = "Use the |cFFFFD700Smuggling Run!|r ability to summon.",
 							["races"] = ALLIANCE_ONLY,

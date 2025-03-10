@@ -456,15 +456,6 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Shadowlands Header
-		[-979] = "Alienatore Ve'ken & Alienatore Ve'nott",			-- Broker Ve'ken & Broker Ve'nott
-		[-924] = "Rete di Trasporto",								-- Transport Network
-		[-967] = "Ripristino degli specchi",						-- Mirror Restoration
-	-- Dragonflight
-		[-1102] = "Irathion & Sabellian",							-- Wrathion & Sabellian
-		[-1120] = "Centauro Maruuk",								-- Maruuk Centaur
-		[-1130] = "Tuskarr di Iskaara",								-- Iskaara Tuskarr
-		[-1150] = "Niffen di Loamm",								-- Loamm Niffen
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5202] = "Equilibrio di potere",						-- Balance of Power

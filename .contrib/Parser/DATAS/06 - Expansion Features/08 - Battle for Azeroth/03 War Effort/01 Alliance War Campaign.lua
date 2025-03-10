@@ -4,7 +4,7 @@
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	n(WAR_EFFORT, {
-		n(-236, {	-- Alliance War Campaign
+		n(WAR_CAMPAIGN_ALLIANCE, {
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
 				n(ACHIEVEMENTS, {
@@ -1717,7 +1717,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	n(WAR_EFFORT, {
-		n(-236, {	-- Alliance War Campaign
+		n(WAR_CAMPAIGN_ALLIANCE, {
 			n(QUESTS, {
 				q(58013),	-- Alliance war campaign, triggers when speaking to Anduin while on "This Ain't Mine"
 				q(53470),	-- Vol'dun - Alliance - landed in Vol'Dun while doing the war campaign. First zone landing
