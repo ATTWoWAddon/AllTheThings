@@ -45,7 +45,7 @@ root(ROOTS.PVP, pvp(n(PRESTIGE, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {
 						42982,	-- The Victor's Spoils [Alliance]
 						42987,	-- The Victor's Spoils [Horde]
 					},
-					["sym"] = {{"select", "headerID", -5203}, {"index", 1}},
+					["sym"] = {{"select", "headerID", PRESTIGE_REWARDS}, {"index", 1}},
 					["u"] = REMOVED_FROM_GAME,
 				},
 				--]]
@@ -89,7 +89,7 @@ root(ROOTS.PVP, pvp(n(PRESTIGE, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {
 				["allianceAchievementID"] = 10749,	-- Fighting with Style: War-torn [Alliance]
 				["hordeAchievementID"] = 11173,	-- Fighting with Style: War-torn [Horde]
 				["criteriaID"] = 2,	-- Crest of Heroism
-				["sym"] = {{"select", "headerID", -5203}, {"index", 2}},
+				["sym"] = {{"select", "headerID", PRESTIGE_REWARDS}, {"index", 2}},
 				["u"] = REMOVED_FROM_GAME,
 			},
 		--]]
@@ -113,7 +113,7 @@ root(ROOTS.PVP, pvp(n(PRESTIGE, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {
 				["allianceAchievementID"] = 10749,	-- Fighting with Style: War-torn [Alliance]
 				["hordeAchievementID"] = 11173,	-- Fighting with Style: War-torn [Horde]
 				["criteriaID"] = 3,	-- Crest of Carnage
-				["sym"] = {{"select", "headerID", -5203}, {"index", 3}},
+				["sym"] = {{"select", "headerID", PRESTIGE_REWARDS}, {"index", 3}},
 				["u"] = REMOVED_FROM_GAME,
 			},
 		--]]
@@ -133,7 +133,7 @@ root(ROOTS.PVP, pvp(n(PRESTIGE, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {
 				["allianceAchievementID"] = 10749,	-- Fighting with Style: War-torn [Alliance]
 				["hordeAchievementID"] = 11173,	-- Fighting with Style: War-torn [Horde]
 				["criteriaID"] = 4,	-- Crest of Devastation
-				["sym"] = {{"select", "headerID", -5203}, {"index", 4}},
+				["sym"] = {{"select", "headerID", PRESTIGE_REWARDS}, {"index", 4}},
 				["u"] = REMOVED_FROM_GAME,
 			},
 		--]]

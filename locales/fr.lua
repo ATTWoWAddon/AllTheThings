@@ -458,7 +458,6 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
-			[-5203] = "Récompenses préstigieuses",					-- Prestige Rewards
 			[-5204] = "Apparence de Challenge",						-- Challenge Appearance
 			[-5205] = "Apparence Cachée",							-- Hidden Appearance
 })

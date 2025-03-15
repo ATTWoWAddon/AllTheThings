@@ -99,7 +99,7 @@ local PrestigeAppearance = function(icon, t)
 		t = icon;
 		icon = nil;
 	end
-	local header = n(-5203, t);
+	local header = n(PRESTIGE_REWARDS, t);
 	if icon then header.icon = icon; end
 	if header.model then
 		print("Artifacts no longer support model!");
