@@ -85,7 +85,7 @@ local BalanceOfPowerAppearance = function(icon, t)
 		t = icon;
 		icon = nil;
 	end
-	local header = n(-5202, t);
+	local header = n(BALANCE_OF_POWER, t);
 	if icon then header.icon = icon; end
 	if header.model then
 		print("Artifacts no longer support model!");
