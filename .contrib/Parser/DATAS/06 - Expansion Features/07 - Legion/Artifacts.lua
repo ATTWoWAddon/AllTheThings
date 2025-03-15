@@ -117,7 +117,7 @@ local ChallengeAppearance = function(icon, t)
 		t = icon;
 		icon = nil;
 	end
-	local header = n(-5204, t);
+	local header = n(CHALLENGE_APPEARANCE, t);
 	if icon then
 		if type(icon) == "string" then
 			header.icon = icon;

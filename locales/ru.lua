@@ -447,7 +447,6 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
-			[-5204] = "Облик Испытаний",							-- Challenge Appearance
 			[-5205] = "Скрытый облик",								-- Hidden Appearance
 })
 do a[key] = value; end

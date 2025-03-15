@@ -467,7 +467,6 @@ if app.IsRetail then
 	for key,value in pairs({
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
-			[-5204] = "挑戰外觀",										-- Challenge Appearance
 			[-5205] = "隱藏外觀",										-- Hidden Appearance
 	})
 	do a[key] = value; end
