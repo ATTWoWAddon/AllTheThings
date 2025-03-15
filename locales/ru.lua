@@ -445,9 +445,6 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Tier/Dungeon/Event/Holiday Sets
-		-- Artifact Strings
-			[-5205] = "Скрытый облик",								-- Hidden Appearance
 })
 do a[key] = value; end
 end

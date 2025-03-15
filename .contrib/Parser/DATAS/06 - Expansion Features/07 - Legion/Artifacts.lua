@@ -143,7 +143,7 @@ local HiddenAppearance = function(icon, t)
 		t = icon;
 		icon = nil;
 	end
-	local header = n(-5205, t);
+	local header = n(HIDDEN_APPEARANCE, t);
 	if icon then header.icon = icon; end
 	if header.model then
 		print("Artifacts no longer support model!");
