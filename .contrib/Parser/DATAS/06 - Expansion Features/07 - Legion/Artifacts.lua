@@ -50,7 +50,7 @@ local BaseAppearance = function(icon, t)
 		t = icon;
 		icon = nil;
 	end
-	local header = n(-5200, t);
+	local header = n(BASE_APPEARANCE, t);
 	if icon then
 		if type(icon) == "string" then
 			header.icon = icon;

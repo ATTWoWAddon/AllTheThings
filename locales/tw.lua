@@ -467,7 +467,6 @@ if app.IsRetail then
 	for key,value in pairs({
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
-			[-5200] = "基礎外觀",										-- Base Appearance
 			[-5201] = "職業大廳戰役",									-- Class Hall Campaign
 			[-5202] = "能量的平衡",										-- Balance of Power
 			[-5203] = "榮譽獎勵",										-- Prestige Rewards
