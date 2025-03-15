@@ -449,7 +449,6 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
-			[-5201] = "Ordenskampagne",								-- Class Hall Campaign
 			[-5202] = "Gleichgewicht der Kräfte",					-- Balance of Power
 })
 do a[key] = value; end

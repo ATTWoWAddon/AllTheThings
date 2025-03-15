@@ -465,7 +465,6 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
-			[-5201] = "职业大厅战役",										-- Class Hall Campaign
 			[-5202] = "能量的平衡",										-- Balance of Power
 			[-5203] = "荣誉奖励",										-- Prestige Rewards
 			[-5204] = "挑战外观",										-- Challenge Appearance
