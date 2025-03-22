@@ -453,14 +453,6 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Tier/Dungeon/Event/Holiday Sets
-		-- Artifact Strings
-			[-5200] = "Apparence de base",							-- Base Appearance
-			[-5201] = "Campagne du Domaine de classe",				-- Class Hall Campaign
-			[-5202] = "L’équilibre de la puissance",				-- Balance of Power
-			[-5203] = "Récompenses préstigieuses",					-- Prestige Rewards
-			[-5204] = "Apparence de Challenge",						-- Challenge Appearance
-			[-5205] = "Apparence Cachée",							-- Hidden Appearance
 })
 do a[key] = value; end
 end
