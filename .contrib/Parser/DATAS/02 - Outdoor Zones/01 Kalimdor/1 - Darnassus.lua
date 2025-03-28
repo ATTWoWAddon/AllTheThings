@@ -1828,7 +1828,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(4228, {	-- Vaean <Enchanting Supplies>
 					-- #if AFTER CATA
-					["coord"] = { 58.6, 14.6, DARNASSUS },
+					["coord"] = { 56.5, 32.2, DARNASSUS },
 					-- #else
 					["coord"] = { 58.6, 14.7, DARNASSUS },
 					-- #endif
