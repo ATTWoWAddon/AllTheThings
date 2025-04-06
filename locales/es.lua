@@ -47,14 +47,14 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.VISIT_FLIGHT_MASTER = "Visita al maestro de vuelo para detectarlo";
 	L.FLIGHT_PATHS_DESC = "Las rutas de vuelo son detectadas cuando hablas con un maestro de vuelo de cada continente.\n  - Crieve";
 	if app.IsRetail then
-	L.FOLLOWERS_COLLECTION_DESC = "Se pueden recopilar seguidores en toda la cuenta si habilita esta configuración en ATT.\n\nDebes actualizar manualmente el addon con "..SHIFT_KEY_TEXT.." clic en el encabezado para que esto se detecte.";	--TODO
+	L.FOLLOWERS_COLLECTION_DESC = "Se pueden recopilar seguidores en toda la cuenta si habilita esta configuración en ATT.\n\nDebes actualizar manualmente el addon con "..SHIFT_KEY_TEXT.." clic en el encabezado para que esto se detecte.";
 	end
-	--TODO: L.HEIRLOOM_TEXT = "Unlocked Heirloom";
-	--TODO: L.HEIRLOOM_TEXT_DESC = "This indicates whether or not you have acquired or purchased the heirloom yet.";
-	--TODO: L.FAILED_ITEM_INFO = "Failed to acquire item information. The item may be invalid or may not have been cached on your server yet.";
-	--TODO: L.HEIRLOOMS_UPGRADES_DESC = "This indicates whether or not you have upgraded the heirloom to a certain level.\n\nR.I.P. Gold.\n - Crieve";
+	L.HEIRLOOM_TEXT = "Reliquias desbloqueadas";
+	L.HEIRLOOM_TEXT_DESC = "Esto indica si ya ha adquirido o comprado la reliquia.";
+	L.FAILED_ITEM_INFO = "No se pudo obtener la información del objeto. Es posible que el objeto no sea válido o que aún no se haya almacenado en caché en el servidor.";
+	L.HEIRLOOMS_UPGRADES_DESC = "Esto indica si has mejorado o no la reliquia a un cierto nivel.\n\nR.I.P. Oro.\n - Crieve";
 	if app.IsRetail then
-	L.MUSIC_ROLLS_DESC = "These are unlocked per-character and are not currently shared across your account. If someone at Blizzard is reading this, it would be really swell if you made these account wide.\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.." clicking the header for this to be detected.";	--TODO
+	L.MUSIC_ROLLS_DESC = "Estos se desbloquean por personaje y actualmente no se comparten entre cuentas. Si alguien de Blizzard está leyendo esto, sería genial que los hicieran accesibles para toda la cuenta.\n\nDebes actualizar manualmente el addon "..SHIFT_KEY_TEXT.." clic en el encabezado para que esto se detecte.";
 	end
 	--TODO: L.MUSIC_ROLLS_DESC_2 = "\n\nYou must first unlock the Music Rolls by completing the Bringing the Bass quest in your garrison for this item to drop.\n\nSelfies require the S.E.L.F.I.E Toy.";
 	--TODO: L.OPPOSITE_FACTION_EQ = "Opposite faction equivalent: ";
