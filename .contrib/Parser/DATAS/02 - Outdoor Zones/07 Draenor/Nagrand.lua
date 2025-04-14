@@ -2273,6 +2273,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(233973, {	-- Bounty of the Elements
+						["description"] = "Activate the totems in order: Air, Earth, Water, Fire",
 						["questID"] = 36174,
 						["coord"] = { 77.1, 16.6, DRAENOR_NAGRAND },
 						["g"] = {
