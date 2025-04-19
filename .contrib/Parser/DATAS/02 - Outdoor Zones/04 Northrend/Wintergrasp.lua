@@ -361,7 +361,8 @@ appendGroups(WINTERGRASP_HELMS, CHAMPION_ROSSLAI_GROUPS);
 appendGroups(WINTERGRASP_HELMS, KNIGHT_DAMERON_GROUPS);
 appendGroups(WINTERGRASP_HELMS, STONE_GUARD_GROUPS);
 appendGroups(WINTERGRASP_HELMS, TRAVIS_DAY_GROUPS);
--- #if AFTER CATA
+-- #if AFTER MOP
+-- NOTE: On Retail Wowhead these are listed as sold by all four vendors, though in Cata Classic they are ONLY sold by Ros'slai and Magruder
 appendGroups(WINTERGRASP_SHOULDERS, KNIGHT_DAMERON_GROUPS);
 appendGroups(WINTERGRASP_SHOULDERS, STONE_GUARD_GROUPS);
 -- #else
