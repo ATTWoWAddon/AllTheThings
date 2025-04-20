@@ -598,11 +598,11 @@ for key,value in pairs({
 		--TODO: ACCOUNT_WIDE_TITLES_TOOLTIP = "Most titles are tracked Account-Wide, but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.";
 
 	-- General: Filters Page
-		--TODO: ITEM_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
-		--TODO: CLASS_DEFAULTS_BUTTON = "Class Defaults";
-		--TODO: CLASS_DEFAULTS_BUTTON_TOOLTIP = "Click this button to reset all of the filters to your class defaults.\n\nNOTE: Only filters that are collectible for your class can be turned on.";
-		--TODO: ALL_BUTTON_TOOLTIP = "Click this button to enable all options at once.";
-		--TODO: UNCHECK_ALL_BUTTON_TOOLTIP = "Click this button to disable all options at once.";
+		ITEM_EXPLAIN_LABEL = "|cffFFFFFFEste contenido se muestra siempre si estas en "..app.ccColors.Account.."Modo Cuenta|cffFFFFFF.|r";
+		CLASS_DEFAULTS_BUTTON = "Predeterminados de Clase";
+		CLASS_DEFAULTS_BUTTON_TOOLTIP = "Haz clic en este botón para restaurar todos los filtros a tus predeterminados de clase.\n\nNOTA: Sólo pueden activarse los filtros que son conseguibles por tu clase.";
+		ALL_BUTTON_TOOLTIP = "Haz clic en este botón para activar todas las opciones a la vez.";
+		UNCHECK_ALL_BUTTON_TOOLTIP = "Haz clic en este botón para desactivar todas las opciones a la vez.";
 
 	-- General: Phases Page
 	-- Classic Only, fully dynamic from within parser.
