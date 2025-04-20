@@ -781,16 +781,16 @@ for key,value in pairs({
 		--TODO: WINDOWS_PAGE = "Windows";
 
 	-- Profiles Page
-		--TODO: PROFILES_PAGE = "Profiles";
-		--TODO: PROFILE = "Profile";
-		--TODO: PROFILE_INITIALIZE = "Initialize Profiles";
-		--TODO: PROFILE_INITIALIZE_TOOLTIP = "This will enable your Saved Variables for ATT to support and contain Profile data. Your current Settings and Window information will be copied into the '"..DEFAULT.."' Profile, which cannot be deleted, but may be modified and will be used as the initial Profile for all characters.\n\nPlease be sure to report any unusual behavior or bugs with Profiles to the ATT Discord!";
-		--TODO: PROFILE_INITIALIZE_CONFIRM = "Are you sure you want to enable Profile support?";
-		--TODO: PROFILE_NEW_TOOLTIP = "Create a blank Profile to be used by the current Character";
-		--TODO: PROFILE_COPY_TOOLTIP = "Copy the Selected Profile into the Current Profile";
-		--TODO: PROFILE_DELETE_TOOLTIP = "Delete the Selected Profile";
-		--TODO: PROFILE_SWITCH_TOOLTIP = "Set the Selected Profile as the Current Profile\n\nA Profile can also be "..SHIFT_KEY_TEXT.." clicked to Switch to it";
-		--TODO: SHOW_PROFILE_LOADED = "Show which profile loads during login or when switching between profiles";
+		PROFILES_PAGE = "Perfiles";
+		PROFILE = "Perfil";
+		PROFILE_INITIALIZE = "Inicializar Perfiles";
+		PROFILE_INITIALIZE_TOOLTIP = "Esto permite que ATT admita y guarde la información del Perfil en las Saved Variables. Tus ajustes actuales y la información de la ventana van a ser copiadas en el perfil '"..DEFAULT.."', que no puede ser borrado, pero podría ser modificado y será usado como el Perfil inicial para todos los personajes.\n\nAsegúrate de informar de cualquier comportamiento inesperado o error con los Perfiles en el Discord de ATT!";
+		PROFILE_INITIALIZE_CONFIRM = "¿Estás seguro de que deseas habilitar la compatibilidad con perfiles?";
+		PROFILE_NEW_TOOLTIP = "Crea un perfil vacío para usarlo en el Personaje actual";
+		PROFILE_COPY_TOOLTIP = "Copia el Perfil seleccionado en el Perfil actual";
+		PROFILE_DELETE_TOOLTIP = "Elimina el Perfil seleccionado";
+		PROFILE_SWITCH_TOOLTIP = "Establece el Perfil seleccionado como el Perfil actual\n\nUn Perfil tambien puede ser clicado con "..SHIFT_KEY_TEXT.." para cambiar a él";
+		SHOW_PROFILE_LOADED = "Muestra que perfil se carga durante el inicio de sesión o cuando se cambia entre perfiles";
 })
 do a[key] = value; end
 
