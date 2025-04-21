@@ -95,7 +95,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.MIN_MAX_STANDING_WITH_FACTION = "Requiere un nivel entre %s y %s con %s.";
 
 	L.ADDED_WITH_PATCH = "Agregado en el parche";
-	L.REMOVED_WITH_PATCH = "Removido en el Parche";
+	L.REMOVED_WITH_PATCH = "Eliminado en el Parche";
 	L.ALIVE = "Vivo";
 	L.SPAWNED = "Hace aparición";
 	L.OBJECT_TYPE = "Tipo de objeto";
@@ -107,28 +107,28 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.COMPLETED_MONTHLY = "Esto se puede completar mensualmente.";
 	L.COMPLETED_YEARLY = "Esto se puede completar anualmente.";
 	L.COMPLETED_MULTIPLE = "Esto se puede completar múltiples veces.";
-	--TODO: L.CRITERIA_FOR = "Criteria for";
-	--TODO: L.CURRENCY_FOR = "Currency for";
-	--TODO: L.LOOT_TABLE_CHANCE = "Loot Table Chance";
-	--TODO: L.BEST_BONUS_ROLL_CHANCE = "Best Bonus Roll Chance";
-	--TODO: L.BEST_PERSONAL_LOOT_CHANCE = "Best Personal Loot Chance";
-	--TODO: L.PREREQUISITE_QUESTS = "There are prerequisite quests that must be completed before this may be obtained:";
-	--TODO: L.BREADCRUMBS = "Breadcrumbs";
-	--TODO: L.BREADCRUMBS_WARNING = "There are breadcrumb quests that may not be obtainable after completing this:";
-	--TODO: L.THIS_IS_BREADCRUMB = "This is a breadcrumb quest.";
-	--TODO: L.BREADCRUMB_PARTYSYNC = "This may be unable to be completed without Party Sync if completing any of these quests first:";
-	--TODO: L.BREADCRUMB_PARTYSYNC_2 = "This may be obtained via Party Sync with another character that has not completed any of these quests:";
-	--TODO: L.BREADCRUMB_PARTYSYNC_3 = "This may be obtained via Party Sync with a character that is able to accept this quest.";
-	--TODO: L.BREADCRUMB_PARTYSYNC_4 = "Please let us know your results on Discord if you attempt obtaining this Quest via Party Sync!";
-	--TODO: L.DISABLE_PARTYSYNC = "This is likely not able to be completed by this character even using Party Sync. If you manage otherwise, please let us know on Discord!";
-	--TODO: L.UNAVAILABLE_WARNING_FORMAT = "Becomes unavailable if %d of the following are met:";
-	--TODO: L.NO_ENTRIES = "No entries matching your filters were found.";
-	--TODO: L.NO_ENTRIES_DESC = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group.";
-	--TODO: L.DEBUG_LOGIN = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.";
-	--TODO: L.UNSORTED = "Unsorted";
-	--TODO: L.UNSORTED_DESC = "This thing hasn't been Sourced yet within ATT " .. app.Version .. ".";
-	--TODO: L.NEVER_IMPLEMENTED = "Never Implemented";
-	--TODO: L.NEVER_IMPLEMENTED_DESC = "Items here technically exist within the game but have never been made available to players";
+	L.CRITERIA_FOR = "Criterio para";
+	L.CURRENCY_FOR = "Moneda para";
+	L.LOOT_TABLE_CHANCE = "Probabilidad de la tabla de botín";
+	L.BEST_BONUS_ROLL_CHANCE = "Mejor oportunidad de tirada de bonificación";
+	L.BEST_PERSONAL_LOOT_CHANCE = "Mejor posibilidad de botín personal";
+	L.PREREQUISITE_QUESTS = "Hay misiones previas requeridas que deben completarse antes de poder conseguir esto:";
+	L.BREADCRUMBS = "Cadena";
+	L.BREADCRUMBS_WARNING = "Hay una cadena de misiones que no puedan conseguirse después de completar esto:";
+	L.THIS_IS_BREADCRUMB = "Esto es una cadena de misiones.";
+	L.BREADCRUMB_PARTYSYNC = "Es posible que no se pueda completar sin Sincronización de Grupo si completas alguna de estas misiones antes:";
+	L.BREADCRUMB_PARTYSYNC_2 = "Esto puede ser obtenido a través de Sincronización de Grupo con otro personaje que no haya completado ninguna de estas misiones:";
+	L.BREADCRUMB_PARTYSYNC_3 = "Esto puede ser obtenido a través de Sincronización de Grupo con un personaje que pueda aceptar esta misión.";
+	L.BREADCRUMB_PARTYSYNC_4 = "Por favor, haznos saber tus resultados en Discord si intentas obtener esta misión a través de Sincronización de Grupo!";
+	L.DISABLE_PARTYSYNC = "Es posible que no se pueda completar con este personaje aunque uses Sincronización de Grupo. Si lo consigues, háznoslo saber en Discord!";
+	L.UNAVAILABLE_WARNING_FORMAT = "Se vuelve no disponible si se cumplen %d de los siguientes:";
+	L.NO_ENTRIES = "No se encontraron entradas que coincidan con tus filtros.";
+	L.NO_ENTRIES_DESC = "Si crees que esto es un error, intenta activar el 'Modo Debug'. Uno de tus filtros puede estar restringiendo la visibilidad del grupo.";
+	L.DEBUG_LOGIN = "Otorgado por entrar en el juego.\n\nBuen trabajo! LO HICISTE!\n\nSólo es visible en el Modo Debug.";
+	L.UNSORTED = "Desordenado";
+	L.UNSORTED_DESC = "Esta cosa aún no ha sido añadida en la versión " .. app.Version .. " de ATT.";
+	L.NEVER_IMPLEMENTED = "Nunca implementado";
+	L.NEVER_IMPLEMENTED_DESC = "Los objectos aqui técnicamente existen en el juego pero nunca han estado disponibles para los jugadores";
 	--TODO: L.HIDDEN_QUEST_TRIGGERS = "Hidden Quest Triggers";
 	--TODO: L.HIDDEN_QUEST_TRIGGERS_DESC = "These are Quests which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes";
 	--TODO: L.UNSORTED_DESC_2 = "Items here exist within the game and may be available to players, but have not yet been sourced into the accurate location in ATT";
@@ -274,19 +274,19 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 
 	-- General tab
 		-- Mode Title
-			--TODO: L.MODE = "Mode";
-			--TODO: L.TITLE_COMPLETIONIST = "Completionist ";
-			--TODO: L.TITLE_UNIQUE_APPEARANCE = "Unique ";
-			--TODO: L.TITLE_DEBUG = app.ccColors.Red .. "Debug|R ";
-			--TODO: L.TITLE_ACCOUNT = app.ccColors.Account .. "Account|R ";
-			--TODO: L.TITLE_MAIN_ONLY = " (Main Only)";
-			--TODO: L.TITLE_NONE_THINGS = "None of the Things ";
-			--TODO: L.TITLE_ONLY = " Only ";
-			--TODO: L.TITLE_INSANE = app.ccColors.Insane.."Insane|R ";
-			--TODO: L.TITLE_SOME_THINGS = "Some of the Things ";
-			--TODO: L.TITLE_LEVEL = "Level ";
-			--TODO: L.TITLE_SOLO = "Solo ";
-			--TODO: L._BETA_LABEL = " |cff4AA7FF[Beta]|R";
+			L.MODE = "Modo";
+			L.TITLE_COMPLETIONIST = "Completista ";
+			L.TITLE_UNIQUE_APPEARANCE = "Único ";
+			L.TITLE_DEBUG = app.ccColors.Red .. "Debug|R ";
+			L.TITLE_ACCOUNT = app.ccColors.Account .. "Cuenta|R ";
+			L.TITLE_MAIN_ONLY = " (Sólo Principal)";
+			L.TITLE_NONE_THINGS = "Ninguna de las cosas ";
+			L.TITLE_ONLY = " Sólo ";
+			L.TITLE_INSANE = app.ccColors.Insane.."Demente|R ";
+			L.TITLE_SOME_THINGS = "Algunas de las cosas ";
+			L.TITLE_LEVEL = "Nivel ";
+			L.TITLE_SOLO = "Solo ";
+			L._BETA_LABEL = " |cff4AA7FF[Beta]|R";
 
 		--TODO: L.MINIMAP_SLIDER = "Minimap Button Size";
 		--TODO: L.MINIMAP_SLIDER_TOOLTIP = 'Use this to customize the size of the Minimap Button.\n\nDefault: 36';
@@ -299,10 +299,10 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		--TODO: L.KEYBINDINGS_TEXT = "You can set keybindings for ATT in the game's options.";
 
 	-- Interface tab
-		--TODO: L.ADDITIONAL_LABEL = "Additional Information";
-		--TODO: L.DESCRIPTIONS = "Descriptions";
-		--TODO: L.LORE = "Lore";
-		--TODO: L.CLASSES = "Classes";
+		L.ADDITIONAL_LABEL = "Información adicional";
+		L.DESCRIPTIONS = "Descripciones";
+		L.LORE = "Trasfondo";
+		L.CLASSES = "Clases";
 
 	-- Features tab
 		--TODO: L.MINIMAP_LABEL = "Minimap Button";
@@ -407,8 +407,8 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		--TODO: L.TRADEABLE = "Tradeable";
 
 	-- Keybind usage
-		--TODO: L.ENABLED = "enabled";
-		--TODO: L.DISABLED = "disabled";
+		L.ENABLED = "activado";
+		L.DISABLED = "desactivado";
 
 	-- Icons and Collection Text
 		--TODO: L.COLLECTED = "|T" .. app.asset("known") .. ":0|t |cff15abffCollected|r";	-- Acquired the colors and icon from CanIMogIt.
@@ -532,41 +532,41 @@ for key,value in pairs({
 		--TODO: GENERAL_THINGS_LABEL = "General Things";
 		--TODO: STRANGER_THINGS_LABEL = "Stranger Things";
 
-		--TODO: ACHIEVEMENTS_CHECKBOX = ACHIEVEMENTS;
-		--TODO: ACHIEVEMENTS_CHECKBOX_TOOLTIP = "Enable this option to track achievements.";
+		ACHIEVEMENTS_CHECKBOX = ACHIEVEMENTS;
+		ACHIEVEMENTS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear logros.";
 		APPEARANCES_CHECKBOX = "Apariencias";
 		--TODO: APPEARANCES_CHECKBOX_TOOLTIP = "Enable this option to track appearance acquisition.\n\nNOTE: Disabling this option also disables all fanfares and acquisition logic.  You can use this toggle as a way to prevent lag spikes while doing important group content, but bear in mind the computation will need to occur once re-enabled.";
 		BATTLE_PETS_CHECKBOX = "Mascotas de duelo";
 		--TODO: BATTLE_PETS_CHECKBOX_TOOLTIP = "Enable this option to track battle pets and companions. These can be found in the open world or via boss drops in various Dungeons and Raids as well as from Vendors and Reputation.";
-		--TODO: DEATHS_CHECKBOX = "Deaths";
+		DEATHS_CHECKBOX = "Muertes";
 		--TODO: DEATHS_CHECKBOX_TOOLTIP = "Enable this option to track each time one of your characters die and show it as a Collectible section within the addon.\n\nNOTE: If you turn this off, we'll still track it, but we simply will not show the statistic unless you're in Debug Mode.";
-		--TODO: EXPLORATION_CHECKBOX = "Exploration";
-		--TODO: EXPLORATION_CHECKBOX_TOOLTIP = "Enable this option to track exploration completion for outdoor maps.";
-		--TODO: FLIGHT_PATHS_CHECKBOX = "Flight Paths";
+		EXPLORATION_CHECKBOX = "Exploración";
+		EXPLORATION_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear el completado de exploración para los mapas exteriores.";
+		FLIGHT_PATHS_CHECKBOX = "Puntos de vuelo";
 		--TODO: FLIGHT_PATHS_CHECKBOX_TOOLTIP = "Enable this option to track flight paths and ferry stations.\n\nTo collect these, open the dialog with the flight / ferry master in each continent.\n\nNOTE: Due to phasing technology, you may have to phase to the other versions of a zone to get credit for those points of interest.";
-		--TODO: HEIRLOOMS_CHECKBOX = HEIRLOOMS;
+		HEIRLOOMS_CHECKBOX = HEIRLOOMS;
 		--TODO: HEIRLOOMS_CHECKBOX_TOOLTIP = "Enable this option to track whether you have unlocked an Heirloom and its respective Upgrade Levels.\n\nHeirlooms that have an associated Appearance are filtered via the Appearances filter. (turning off appearances will still show the Heirloom itself)\n\nSome items that appear with heirloom quality also help boost reputations and can be filtered via the Reputations filter.";
-		--TODO: HEIRLOOMS_UPGRADES_CHECKBOX = "+Upgrades";
+		HEIRLOOMS_UPGRADES_CHECKBOX = "+Mejoras";
 		--TODO: HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP = "Enable this option to specifically track collection of individual Heirloom Upgrades.\n\nWe all know Blizzard just loves to drain your gold and your soul, so keep track of that with this toggle.";
-		--TODO: ILLUSIONS_CHECKBOX = "Illusions";
+		ILLUSIONS_CHECKBOX = "Ilusiones";
 		--TODO: ILLUSIONS_CHECKBOX_TOOLTIP = "Enable this option to track illusions.\n\nThese are really cool-looking transmog effects you can apply to your weapons!\n\nNOTE: You are not an illusion, despite what all the Nightborne think.";
-		--TODO: MOUNTS_CHECKBOX = MOUNTS;
+		MOUNTS_CHECKBOX = MOUNTS;
 		--TODO: MOUNTS_CHECKBOX_TOOLTIP = "Enable this option to track mounts.\n\nYou can ride these to go places faster than when running. Who knew!";
-		--TODO: QUESTS_CHECKBOX = QUESTS_LABEL;
+		QUESTS_CHECKBOX = QUESTS_LABEL;
 		--TODO: QUESTS_CHECKBOX_TOOLTIP = "Enable this option to track normal Quests.\n\nYou can right click any Quest in the lists to pop out their full quest chain to show your progress and any prerequisite Quests.\n\nNOTE: Tracking of Daily, Weekly, Yearly, and World Quests is not included in this option due to their periodic resets within the Blizzard Database.";
-		--TODO: QUESTS_LOCKED_CHECKBOX = "+Locked";
+		QUESTS_LOCKED_CHECKBOX = "+Bloqueado";
 		--TODO: QUESTS_LOCKED_CHECKBOX_TOOLTIP = "Enable this option to specifically include tracking of Locked Quest completion.\n\nLocked Quests are those which the player is no longer able to complete (according to known ATT data) through normal gameplay.\n\nObtaining these Quests is very reliant on the Party Sync feature or using Account-Wide Quests to incorporate progress from other characters.";
 		RECIPES_CHECKBOX = "Recetas";
 		--TODO: RECIPES_CHECKBOX_TOOLTIP = "Enable this option to track recipes for your professions.\n\nNOTE: You must open your professions list in order to cache these.";
-		--TODO: REPUTATIONS_CHECKBOX = "Reputations";
+		REPUTATIONS_CHECKBOX = "Reputaciones";
 		--TODO: REPUTATIONS_CHECKBOX_TOOLTIP = "Enable this option to track reputations.\n\nOnce you reach Exalted or Best Friend with a reputation, it will be marked Collected.\n\nYou may have to do a manual refresh for this to update correctly.";
 		TITLES_CHECKBOX = "Títulos";
 		--TODO: TITLES_CHECKBOX_TOOLTIP = "Enable this option to track titles.\n\nThese can make your character stand out and look like you've played for awhile. Typically only new players do not have a title active.";
-		--TODO: TOYS_CHECKBOX = TOY_BOX;
+		TOYS_CHECKBOX = TOY_BOX;
 		--TODO: TOYS_CHECKBOX_TOOLTIP = "Enable this option to track Toys.\n\nMost of these toys have a fun thing that they do. Others, like the Hearthstone Toys, can be used in place of your actual Hearthstone and can save you a bag slot! They also have interesting effects... Nice!";
 
 		-- Expansion Things
-		--TODO: EXPANSION_THINGS_LABEL = "Expansion Things";
+		EXPANSION_THINGS_LABEL = "Cosas de expansión";
 		AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Esencias del Corazón de Azeroth";
 		--TODO: AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "Enable this option to track Azerite Essences.\n\nTracked per character by default.";
 		DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t Manuscrito de dracovigía";
