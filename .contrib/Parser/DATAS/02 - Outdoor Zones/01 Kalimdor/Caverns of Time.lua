@@ -92,9 +92,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 20142,	-- Steward of Time <Keepers of Time>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 65.4, 49.6, TANARIS },
+						{ 55.3, 27.9, CAVERNS_OF_TIME },
 						-- #else
-						{ 66, 49.6, TANARIS },
+						{ 66.0, 49.6, TANARIS },
 						-- #endif
 					},
 					["lvl"] = lvlsquish(66, 66, 15),

@@ -3367,15 +3367,11 @@ root(ROOTS.NeverImplemented, {
 					i(190848),	-- [DNT] Do not use
 					i(213162),	-- Blessed Bow of the Windseeker
 					i(190908),	-- Devourer's Skullscythe
-					i(213073),	-- Faded Floral Staff
 					i(190816),	-- Forgehand's "Stable" Fuel Cell
 					i(213107),	-- Gladiator's Ragged Greatsword
 					i(213077),	-- Lavender Bow-quet
 					i(190822),	-- Mo'arg Enforcer's Halberd
-					i(213076),	-- Orchid Bow-quet
 					i(213063),	-- Paradise's Ruby Axe
-					i(213064),	-- Paradise's Violet Axe
-					i(213070),	-- Pristine Floral Stalk
 					i(190900),	-- Prototype Farstrider Sniper Rifle
 					i(190820),	-- Restless Void Handaxe
 					i(213066),	-- Rosy Floral Edge
@@ -3383,7 +3379,6 @@ root(ROOTS.NeverImplemented, {
 					i(213072),	-- Ruby Floral Staff
 					i(190891),	-- Shabby Battleaxe
 					i(190903),	-- Soulburner Warscythe
-					i(213067),	-- Violet Floral Edge
 					i(190902),	-- Will of the Titanforged
 					i(190889),	-- Woodsman's Hatchet
 				}),

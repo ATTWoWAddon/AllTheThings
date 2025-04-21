@@ -112,7 +112,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(25556, {	-- Into Zul'Farrak
 					["qg"] = 7804,	-- Trenton Lighthammer
 					["sourceQuest"] = 25032,	-- Secrets in the Oasis
-					["coord"] = { 42.4, 24.0, TANARIS },
+					["coord"] = { 42.5, 24.0, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),

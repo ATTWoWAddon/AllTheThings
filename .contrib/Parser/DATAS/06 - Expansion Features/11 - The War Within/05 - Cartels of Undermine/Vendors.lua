@@ -27,15 +27,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					}, {	-- RENOWN 6 --
 					}, {	-- RENOWN 7 --
 						i(232384, {	-- Aqirite-Toe Boots
+							["modID"] = 14,
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
 						}),
 						i(232381, {	-- Mostly Cobbled Shoes
+							["modID"] = 14,
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
 						}),
 						i(232379, {	-- Slime-Slicked Slippers
+							["modID"] = 14,
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
 						}),
 						i(232383, {	-- Soot-Encrusted Kickers
+							["modID"] = 14,
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
 						}),
 					}, {	-- RENOWN 8 --
@@ -46,15 +50,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					}, {	-- RENOWN 13 --
 					}, {	-- RENOWN 14 --
 						i(232410, {	-- Craftsman's Repurposed Mitts
+							["modID"] = 14,
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
 						}),
 						i(232411, {	-- Goblin Boxer's Wraps
+							["modID"] = 14,
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
 						}),
 						i(232413, {	-- Retired Bouncer's Gauntlets
+							["modID"] = 14,
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
 						}),
 						i(232412, {	-- Undermine Smelter's Gloves
+							["modID"] = 14,
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
 						}),
 					}, {	-- RENOWN 15 --
@@ -107,10 +115,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 							["requireSkill"] = TAILORING,
 						}),
 					}, {	-- RENOWN 17 --
-						i(231743, {	-- Undermine Enforcer's Helmet
+						i(231743, {	-- Undermine Enforcer's Helmet (COSMETIC!)
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 1625}},
 						}),
-						i(231749, {	-- Undermine Enforcer's Spikes
+						i(231749, {	-- Undermine Enforcer's Spikes (COSMETIC!)
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
 						}),
 						iensemble(237034, {	-- Smartest in Town's Attire

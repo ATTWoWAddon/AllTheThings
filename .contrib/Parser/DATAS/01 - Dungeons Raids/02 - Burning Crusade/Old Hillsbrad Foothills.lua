@@ -39,7 +39,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 28126,	-- Don Carlos
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 50.7, 27.5, TANARIS },
+						{ 50.8, 27.5, TANARIS },
 						-- #else
 						{ 53.9, 28.9, TANARIS },
 						-- #endif
@@ -78,7 +78,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["sourceQuest"] = 10277,	-- The Caverns of Time
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 41.8, 38.4, CAVERNS_OF_TIME },
+						{ 41.6, 38.5, CAVERNS_OF_TIME },
 						-- #else
 						{ 58.4, 54.3, TANARIS },
 						-- #endif
@@ -135,7 +135,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				n(28132, {	-- Don Carlos
-					["description"] = "This is a neutral mob that wanders the road.",
+					["description"] = "This is a neutral Elite Creature that wanders the road.",
 					["groups"] = {
 						i(38329),	-- Don Carlos' Hat
 					},
@@ -255,7 +255,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 					}),
 					n(28132, {	-- Don Carlos
-						["description"] = "This is a neutral mob that wanders the road.",
+						["description"] = "This is a neutral Elite Creature that wanders the road.",
 						["groups"] = {
 							applyclassicphase(LEGION_PHASE_ONE, i(134019, {	-- Don Carlos' Famous Hat (TOY!)
 								["timeline"] = { ADDED_7_0_3 },

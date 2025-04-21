@@ -32,6 +32,8 @@ i(73242);	-- Master's Haversack
 i(102144);	-- Kor'kron Cage Key
 i(118067);	-- Old Chain Link
 i(180786);	-- Empty Binding
+-- TBC
+i(30744);	-- Draenic Leather Pack
 -- Legion
 i(138293);	-- Explorer's Pack
 i(139398);	-- Pant Loaf

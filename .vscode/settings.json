@@ -16,7 +16,7 @@
         "utf8": "disable"
     },
     "Lua.workspace.library": [
-        "~\\.vscode\\extensions\\ketho.wow-api-0.20.5\\Annotations\\Core"
+        "~\\.vscode\\extensions\\ketho.wow-api-0.20.6\\Annotations\\Core"
     ],
     "wowAPI.luals.defineKnownGlobals": false,
     "Lua.workspace.ignoreDir": [

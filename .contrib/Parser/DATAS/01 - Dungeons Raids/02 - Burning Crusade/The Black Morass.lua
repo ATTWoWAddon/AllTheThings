@@ -44,7 +44,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					-- #if BEFORE 4.3.0.14732
 					["sourceQuest"] = 10285,	-- Return to Andormu
 					-- #endif
-					["coord"] = { 41.5, 38.5, CAVERNS_OF_TIME },
+					["coord"] = { 41.6, 38.5, CAVERNS_OF_TIME },
 					["lvl"] = lvlsquish(66, 66, 25),
 				}),
 				q(9836, {	-- The Master's Touch

@@ -84,6 +84,7 @@ local OnUpdateForSpecificGender = function(t, parent, defaultUpdate)
 	return true;
 end
 app.CreateTitle = app.CreateClass("Title", "titleID", {
+	CACHE = function() return CACHE end,
 	icon = function(t)
 		return app.asset("Category_Titles");
 	end,
@@ -111,7 +112,6 @@ app.CreateTitle = app.CreateClass("Title", "titleID", {
 			return style;
 		end
 	end,
-	RefreshCollectionOnly = true,
 	collectible = function(t)
 		return app.Settings.Collectibles.Titles;
 	end,

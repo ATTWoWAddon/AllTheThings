@@ -1949,7 +1949,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						{ 33.2, 76.8, TANARIS },
-						{ 40.2, 77.0, TANARIS },
+						{ 40.3, 77.2, TANARIS },
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,

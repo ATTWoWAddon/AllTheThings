@@ -43,9 +43,25 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["timeline"] = { ADDED_7_2_5 },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
+	i(213073, {	-- Faded Floral Staff
+		["timeline"] = { ADDED_11_1_0 },
+		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
+	}),
+	i(213076, {	-- Orchid Bow-quet
+		["timeline"] = { ADDED_11_1_0 },
+		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
+	}),
+	i(213064, {	-- Paradise's Violet Axe
+		["timeline"] = { ADDED_11_1_0 },
+		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
+	}),
 	i(74283, {	-- Pink Spring Circlet
 		["timeline"] = { ADDED_4_3_0 },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
+	}),
+	i(213070, {	-- Pristine Floral Stalk
+		["timeline"] = { ADDED_11_1_0 },
+		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
 	}),
 	i(44803, {	-- Spring Circlet
 		["timeline"] = { ADDED_3_1_0 },
@@ -57,6 +73,10 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 	}),
 	i(6833, {	-- White Tuxedo Shirt
 		["cost"] = { { "i", 44791, 25 } },	-- 25x Noblegarden Chocolate
+	}),
+	i(213067, {	-- Violet Floral Edge
+		["timeline"] = { ADDED_11_1_0 },
+		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
 	}),
 	i(164924, {	-- Yellow Spring Circlet
 		["timeline"] = { ADDED_8_1_5 },

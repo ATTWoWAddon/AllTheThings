@@ -2918,7 +2918,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(FLIGHT_PATHS, {
 				fp(539, {	-- Bootlegger Outpost, Tanaris
 					["cr"] = 41214,	-- Slick Dropdip <Flight Master>
-					["coord"] = { 55.8, 60.6, TANARIS },
+					["coord"] = { 55.9, 60.6, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				fp(531, {	-- Dawnrise Expedition, Tanaris
@@ -2929,25 +2929,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				fp(39, {	-- Gadgetzan, Tanaris
 					["cr"] = 7823,	-- Bera Stonehammer <Gryphon Master>
-					-- #if AFTER CATA
-					["coord"] = { 51.4, 29.4, TANARIS },
-					-- #else
-					["coord"] = { 51.0, 29.2, TANARIS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 51.4, 29.5, TANARIS },
+						-- #else
+						{ 51.0, 29.2, TANARIS },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(40, {	-- Gadgetzan, Tanaris
 					["cr"] = 7824,	-- Bulkrek Ragefist <Wind Rider Master>
-					-- #if AFTER CATA
-					["coord"] = { 52, 27.6, TANARIS },
-					-- #else
-					["coord"] = { 51.6, 26.6, TANARIS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 52.0, 27.6, TANARIS },
+						-- #else
+						{ 51.6, 26.6, TANARIS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 				}),
 				fp(532, {	-- Gunstan's Dig, Tanaris
 					["cr"] = 40827,	-- Thurda <Flight Master>
-					["coord"] = { 40, 77.4, TANARIS },
+					["coord"] = { 40.1, 77.5, TANARIS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -3064,7 +3068,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26889, {	-- All Cheered Out
 					["qg"] = 38704,	-- Kelsey Steelspark
 					["sourceQuest"] = 25166,	-- Captain Dreadbeard (A)
-					["coord"] = { 72.1, 45.2, TANARIS },
+					["coord"] = { 72.2, 45.2, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -3095,7 +3099,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25420, {	-- Ancient Obstacles (A)
 					["qg"] = 40109,	-- Prospector Gunstan
 					["sourceQuest"] = 28881,	-- Prospector Gunstan
-					["coord"] = { 40.1, 76.8, TANARIS },
+					["coord"] = { 40.1, 77.0, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3164,12 +3168,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25115, {	-- Blisterpaw Butchery
 					["qg"] = 39178,	-- Driz Plunkbow
 					["sourceQuest"] = 25111,	-- Scavengers Scavenged
-					["coord"] = { 52.2, 28.0, TANARIS },
+					["coord"] = { 52.3, 28.1, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(25021, {	-- Blood to Thrive
 					["qg"] = 38927,	-- Mazoga
-					["coord"] = { 42.2, 23.8, TANARIS },
+					["coord"] = { 42.3, 23.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/6 Fistful of Blood
@@ -3235,7 +3239,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25112, {	-- Butcherbot
 					["qg"] = 39178,	-- Driz Plunkbow
-					["coord"] = { 52.2, 28.0, TANARIS },
+					["coord"] = { 52.3, 28.1, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				{
@@ -3261,7 +3265,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						26886,	-- Going Off-Task
 						25053,	-- To The Ground!
 					},
-					["coord"] = { 72.1, 45.1, TANARIS },
+					["coord"] = { 72.2, 45.2, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3323,19 +3327,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(6610, {	-- Clamlette Surprise
-					-- #if BEFORE 4.0.3
-					["description"] = "Becomes available at Cooking skill level 225 when character level requirement is met.\n\nThe Alliance breadcrumb for this quest is called 'I Know A Guy...' and is picked up from cooking trainer Daryl Riknussun in Ironforge. The Horde breadcrumb for this quest is called 'To Gadgetzan You Go!' and is picked up from cooking trainer Zamja in Orgrimmar.",
-					["qg"] = 8125,	-- Dirge Quikcleave
-					["coord"] = { 52.63, 28.12, TANARIS },
-					-- #elseif AFTER 8.0.1
-					["description"] = "Becomes available at Classic Cooking skill level 225 when character level requirement is met.\n\nThe Horde breadcrumb for this quest is called 'To Gadgetzan You Go!' and is picked up from cooking trainer Zamja in Orgrimmar. Sadly the Alliance breadcrumb from Ironforge named 'I Know A Guy...' is unobtainable.",
-					["qg"] = 40589,	-- Dirge Quikcleave
-					["coord"] = { 52.4, 29.0, TANARIS },
-					-- #else
-					["description"] = "Becomes available at Cooking skill level 225 when character level requirement is met.\n\nThe Horde breadcrumb for this quest is called 'To Gadgetzan You Go!' and is picked up from cooking trainer Zamja in Orgrimmar. Sadly the Alliance breadcrumb from Ironforge named 'I Know A Guy...' is unobtainable.",
-					["qg"] = 40589,	-- Dirge Quikcleave
-					["coord"] = { 52.4, 29.0, TANARIS },
-					-- #endif
+					["description"] =
+						-- #if AFTER 8.0.1
+						"Becomes available at Classic Cooking skill level 225 when character level requirement is met.\n\nThe Horde breadcrumb for this quest is called 'To Gadgetzan You Go!' and is picked up from cooking trainer Zamja in Orgrimmar. Sadly the Alliance breadcrumb from Ironforge named 'I Know A Guy...' is unobtainable.",
+						-- #elseif AFTER 4.0.3
+						"Becomes available at Cooking skill level 225 when character level requirement is met.\n\nThe Horde breadcrumb for this quest is called 'To Gadgetzan You Go!' and is picked up from cooking trainer Zamja in Orgrimmar. Sadly the Alliance breadcrumb from Ironforge named 'I Know A Guy...' is unobtainable.",
+						-- #else
+						"Becomes available at Cooking skill level 225 when character level requirement is met.\n\nThe Alliance breadcrumb for this quest is called 'I Know A Guy...' and is picked up from cooking trainer Daryl Riknussun in Ironforge. The Horde breadcrumb for this quest is called 'To Gadgetzan You Go!' and is picked up from cooking trainer Zamja in Orgrimmar.",
+						-- #endif
+					["qgs"] = {
+						-- #if AFTER 4.0.3
+						40589,	-- Dirge Quikcleave
+						-- #else
+						8125,	-- Dirge Quikcleave
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER 4.0.3
+						{ 52.4, 29.0, TANARIS },
+						-- #else
+						{ 52.6, 28.1, TANARIS },
+						-- #endif
+					},
 					["altQuests"] = { 13825 },	-- Clamlette Surprise
 					["sourceQuests"] = {
 						6611,	-- To Gadgetzan You Go!
@@ -3415,7 +3428,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								i(9361, {	-- Cuergo's Gold with Worm
 									["timeline"] = { REMOVED_4_0_3 },
 								}),
-								i(9359),	-- Southsea Lamp (Renamed from Wirt's Third Leg)
+								i(9359),	-- Wirt's Third Leg (Patch 9.1.5: Renamed to 'Southsea Lamp')
 							},
 						}),
 					},
@@ -3445,7 +3458,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25026, {	-- Darkest Mojo
 					["qg"] = 38927,	-- Mazoga
 					["sourceQuest"] = 25025,	-- Sang'thraze the Deflector
-					["coord"] = { 42.2, 23.8, TANARIS },
+					["coord"] = { 42.3, 23.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/6 Darkest Mojo
@@ -3460,7 +3473,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25052, {	-- Dead Man's Chest (A)
 					["qg"] = 38704,	-- Kelsey Steelspark
 					["sourceQuest"] = 25050,	-- Rocket Rescue (A)
-					["coord"] = { 72.1, 45.1, TANARIS },
+					["coord"] = { 72.2, 45.2, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3518,7 +3531,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25060, {	-- Define "Crazy"
 					["qg"] = 39059,	-- Kelsey Steelspark
 					["sourceQuest"] = 25061,	-- Land's End
-					["coord"] = { 49.9, 82.8, TANARIS },
+					["coord"] = { 50.0, 82.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3601,7 +3614,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25053,	-- To The Ground!
 						25054,	-- Lootin' Plunder
 					},
-					["coord"] = { 72.1, 45.1, TANARIS },
+					["coord"] = { 72.2, 45.2, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3642,7 +3655,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25565, {	-- Fragments of Language (A)
 					["qg"] = 40109,	-- Prospector Gunstan
 					["sourceQuest"] = 28881,	-- Prospector Gunstan
-					["coord"] = { 40.1, 76.8, TANARIS },
+					["coord"] = { 40.1, 77.0, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3707,7 +3720,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25522, {	-- Gargantapid
 					["qg"] = 40580,	-- Gus Rustflutter
 					["sourceQuest"] = 25521,	-- I'm With Scorpid
-					["coord"] = { 42.4, 24.2, TANARIS },
+					["coord"] = { 42.5, 24.3, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Gargantapid's Poison Gland
@@ -3728,7 +3741,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24931, {	-- Gazer Tag
 					["qg"] = 11811,	-- Narain Soothfancy
 					["sourceQuest"] = 24932,	-- Cutting Losses
-					["coord"] = { 55.2, 60.2, TANARIS },
+					["coord"] = { 55.2, 60.3, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/5 Ocular Crystal
@@ -3760,7 +3773,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26886, {	-- Going Off-Task (A)
 					["qg"] = 38704,	-- Kelsey Steelspark
 					["sourceQuest"] = 25052,	-- Dead Man's Chest (A)
-					["coord"] = { 72.1, 45.1, TANARIS },
+					["coord"] = { 72.2, 45.2, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3811,13 +3824,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 44. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 48 (TODO: Test max level between 48 and 55)
+					-- Cataclysm: Maximum is level 48. (TODO: Test max level between 48 and 55)
 					["lvl"] = { 44, 48 },
 					-- #endif
 				})),
 				q(25521, {	-- I'm With Scorpid
 					["qg"] = 40580,	-- Gus Rustflutter
-					["coord"] = { 42.4, 24.2, TANARIS },
+					["coord"] = { 42.5, 24.3, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/6 Duneclaw Stinger
@@ -3862,7 +3875,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 50,
 					["groups"] = {
 						i(12688, {	-- Plans: Imperial Plate Belt (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },	-- Moved to trainer!
+							["timeline"] = { REMOVED_4_0_3 },	-- Now taught by trainer, recipe removed from the game.
 						}),
 					},
 				}),
@@ -3879,7 +3892,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 50,
 					["groups"] = {
 						i(12700, {	-- Plans: Imperial Plate Boots (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },	-- Moved to trainer!
+							["timeline"] = { REMOVED_4_0_3 },	-- Now taught by trainer, recipe removed from the game.
 						}),
 					},
 				}),
@@ -3896,7 +3909,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 50,
 					["groups"] = {
 						i(12690, {	-- Plans: Imperial Plate Bracer (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },	-- Moved to trainer!
+							["timeline"] = { REMOVED_4_0_3 },	-- Now taught by trainer, recipe removed from the game.
 						}),
 					},
 				}),
@@ -3913,7 +3926,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 50,
 					["groups"] = {
 						i(12705, {	-- Plans: Imperial Plate Chest (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },	-- Moved to trainer!
+							["timeline"] = { REMOVED_4_0_3 },	-- Now taught by trainer, recipe removed from the game.
 						}),
 					},
 				}),
@@ -3930,7 +3943,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 50,
 					["groups"] = {
 						i(12701, {	-- Plans: Imperial Plate Helm (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },	-- Moved to trainer!
+							["timeline"] = { REMOVED_4_0_3 },	-- Now taught by trainer, recipe removed from the game.
 						}),
 					},
 				}),
@@ -3947,7 +3960,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 50,
 					["groups"] = {
 						i(12715, {	-- Plans: Imperial Plate Leggings (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },	-- Moved to trainer!
+							["timeline"] = { REMOVED_4_0_3 },	-- Now taught by trainer, recipe removed from the game.
 						}),
 					},
 				}),
@@ -3964,7 +3977,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 50,
 					["groups"] = {
 						i(12687, {	-- Plans: Imperial Plate Shoulders (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },	-- Moved to trainer!
+							["timeline"] = { REMOVED_4_0_3 },	-- Now taught by trainer, recipe removed from the game.
 						}),
 					},
 				}),
@@ -4018,7 +4031,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25061, {	-- Land's End
 					["qg"] = 11811,	-- Narain Soothfancy
 					["sourceQuest"] = 24953,	-- Just Trying to Kill Some Bugs
-					["coord"] = { 55.2, 60.2, TANARIS },
+					["coord"] = { 55.2, 60.3, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -4026,7 +4039,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25559, {	-- Laying Claim (A)
 					["qg"] = 40109,	-- Prospector Gunstan
 					["sourceQuest"] = 28881,	-- Prospector Gunstan
-					["coord"] = { 40.1, 76.8, TANARIS },
+					["coord"] = { 40.1, 77.0, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -4061,7 +4074,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25054, {	-- Lootin' Plunder
 					["qg"] = 38704,	-- Kelsey Steelspark
 					["sourceQuest"] = 25050,	-- Rocket Rescue (A)
-					["coord"] = { 72.1, 45.1, TANARIS },
+					["coord"] = { 72.2, 45.2, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -4098,7 +4111,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25121, {	-- Momentum (A)
 					["qg"] = 38535,	-- Kelsey Steelspark
 					["sourceQuest"] = 25050,	-- Rocket Rescue (A)
-					["coord"] = { 51.2, 29.8, TANARIS },
+					["coord"] = { 51.2, 29.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -4199,9 +4212,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(28881, {	-- Prospector Gunstan
-					["qg"] = 39059,	-- Kelsey steelspark
+					["qg"] = 39059,	-- Kelsey Steelspark
 					["sourceQuest"] = 25065,	-- You Too, Brute?
-					["coord"] = { 50.0, 82.8, TANARIS },
+					["coord"] = { 50.0, 82.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -4241,11 +4254,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(648, {	-- Rescue OOX-17/TN!
 					["qg"] = 7784,	-- Homing Robot OOX-17/TN
 					["sourceQuest"] = 351,	-- Find OOX-17/TN!
-					-- #if AFTER CATA
-					["coord"] = { 59.7, 64.0, TANARIS },
-					-- #else
-					["coord"] = { 60.2, 64.6, TANARIS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 59.7, 64.0, TANARIS },
+						-- #else
+						{ 60.2, 64.6, TANARIS },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(43, 43, 15),
 					["groups"] = {
 						i(9643),	-- Optomatic Deflector
@@ -4387,13 +4402,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25091, {	-- Sandsorrow Watch
 					["qg"] = 39178,	-- Driz Plunkbow
 					["sourceQuest"] = 25115,	-- Blisterpaw Butchery
-					["coord"] = { 52.2, 28.0, TANARIS },
+					["coord"] = { 52.3, 28.1, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(25025, {	-- Sang'thraze the Deflector
 					["qg"] = 38927,	-- Mazoga
 					["sourceQuest"] = 25021,	-- Blood to Thrive
-					["coord"] = { 42.2, 23.8, TANARIS },
+					["coord"] = { 42.3, 23.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Sealed Sang'thraze
@@ -4417,7 +4432,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25111, {	-- Scavengers Scavenged
 					["qg"] = 39178,	-- Driz Plunkbow
 					["sourceQuest"] = 25112,	-- Butcherbot
-					["coord"] = { 52.2, 28.0, TANARIS },
+					["coord"] = { 52.3, 28.1, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(3520, {	-- Screecher Spirits
@@ -4472,9 +4487,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25032, {	-- Secrets in the Oasis
 					["qg"] = 38927,	-- Mazoga
 					["sourceQuest"] = 25026,	-- Darkest Mojo
-					["coord"] = { 42.2, 23.8, TANARIS },
+					["coord"] = { 42.3, 23.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Fate of Jang'thraze
+							["providers"] = {
+								{ "o", 202441 },	-- Jang'thraze the Protector
+								{ "n", 38968 },	-- Mazoga
+							},
+							["coord"] = { 39.1, 34.9, TANARIS },
+						}),
 						i(56840, {	-- Oasis Mantle
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -4706,7 +4728,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25060,	-- Define "Crazy"
 						25062,	-- What We Came For
 					},
-					["coord"] = { 49.9, 82.8, TANARIS },
+					["coord"] = { 50.0, 82.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -4754,7 +4776,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25421, {	-- The Grand Tablet (A)
 					["provider"] = { "o", 202474 },	-- Antediluvean Chest
-					["coord"] = { 37.8, 82.4, TANARIS },	-- object is technically in Uldum but just barely across the zone border, so using closest coords that show in Tanaris instead
+					["coord"] = { 37.8, 84.1, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -4771,7 +4793,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25107, {	-- The Grand Tablet (H)
 					["provider"] = { "o", 202474 },	-- Antediluvean Chest
-					["coord"] = { 37.8, 82.4, TANARIS },	-- object is technically in Uldum but just barely across the zone border, so using closest coords that show in Tanaris instead
+					["coord"] = { 37.8, 84.1, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -4858,7 +4880,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40109,	-- Prospector Gunstan
 					["sourceQuest"] = 25420,	-- Ancient Obstacles
 					["description"] = "If chest disappears for you, go to Zidormi in Uldum and ask her to return you back in time.",
-					["coord"] = { 40.1, 76.8, TANARIS },
+					["coord"] = { 40.1, 77.0, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -5062,7 +5084,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25095,	-- Thunderdrome: Sarinexx!
 						25065,	-- You Too, Brute?
 					},
-					["coord"] = { 51.7, 28.0, TANARIS },
+					["coord"] = { 51.8, 28.1, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -5080,7 +5102,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25095, {	-- Thunderdrome: Sarinexx!
 					["qg"] = 39034,	-- Dr. Dealwell
 					["sourceQuest"] = 25094,	-- Thunderdrome: Zumonga!
-					["coord"] = { 51.7, 28.0, TANARIS },
+					["coord"] = { 51.8, 28.1, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(25067, {	-- Thunderdrome: The Ginormus!
@@ -5089,19 +5111,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						26895,	-- The Thunderdrome! (A)
 						26896,	-- The Thunderdrome! (H)
 					},
-					["coord"] = { 51.7, 28.0, TANARIS },
+					["coord"] = { 51.8, 28.1, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(25094, {	-- Thunderdrome: Zumonga!
 					["qg"] = 39034,	-- Dr. Dealwell
 					["sourceQuest"] = 25067,	-- Thunderdrome: The Ginormus!
-					["coord"] = { 51.7, 28.0, TANARIS },
+					["coord"] = { 51.8, 28.1, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(25053, {	-- To The Ground! (A)
 					["qg"] = 38704,	-- Kelsey Steelspark
 					["sourceQuest"] = 24910,	-- Rocket Rescue (A)
-					["coord"] = { 72.1, 45.1, TANARIS },
+					["coord"] = { 72.2, 45.2, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -5251,7 +5273,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25566,	-- The Secrets of Uldum
 						25069,	-- The Secrets of Uldum
 					},
-					["coord"] = { 37.8, 82.4, TANARIS },	-- object is technically in Uldum but just barely across the zone border, so using closest coords that show in Tanaris instead
+					["coord"] = { 37.8, 84.1, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Antechamber Guardian slain
@@ -5262,7 +5284,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25062, {	-- What We Came For
 					["qg"] = 39059,	-- Kelsey Steelspark
 					["sourceQuest"] = 24953,	-- Just Trying to Kill Some Bugs
-					["coord"] = { 49.9, 82.8, TANARIS },
+					["coord"] = { 50.0, 82.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -5277,7 +5299,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25065, {	-- You Too, Brute?
 					["qg"] = 39059,	-- Kelsey Steelspark
 					["sourceQuest"] = 25063,	-- Terrapination
-					["coord"] = { 49.9, 82.8, TANARIS },
+					["coord"] = { 50.0, 82.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -5357,17 +5379,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(8205, {	-- Haarka the Ravenous
-					-- #if AFTER CATA
-					["coord"] = { 56.6, 68.2, TANARIS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 56.6, 68.2, TANARIS },
+						-- #else
 						{ 53.6, 70.2, TANARIS },
 						{ 54.6, 73.6, TANARIS },
 						{ 56.2, 73.6, TANARIS },
 						{ 57.0, 71.4, TANARIS },
 						{ 57.0, 68.8, TANARIS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(47387, {	-- Harakiss the Infestor
 					["coords"] = {
@@ -5456,7 +5478,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(17055, {	-- Changuk Smasher
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 12.09.2023 ATT Discord
+							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
 					},
 				}),
@@ -5469,66 +5491,71 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(8204, {	-- Soriid the Devourer
-					-- #if AFTER CATA
-					["coord"] = { 35.0, 46.2, TANARIS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 35.0, 46.2, TANARIS },
+						-- #else
 						{ 31.6, 45.0, TANARIS },
 						{ 32.6, 44.2, TANARIS },
 						{ 34.8, 43.2, TANARIS },
 						{ 34.8, 46.0, TANARIS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(44722, {	-- Twisted Reflection of Narain
 					["coord"] = { 64.6, 19.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(8199, {	-- Warleader Krazzilak
-					-- #if AFTER CATA
-					["coord"] = { 40.8, 29.6, TANARIS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.8, 29.6, TANARIS },
+						-- #else
 						{ 37.0, 24.2, TANARIS },
 						{ 38.6, 24.2, TANARIS },
 						{ 41.0, 27.4, TANARIS },
 						{ 42.6, 22.8, TANARIS },
 						{ 44.2, 24.8, TANARIS },
+						-- #endif
 					},
-					-- #endif
 				}),
 			}),
 			n(TREASURES, {
 				o(142184, {	-- Captain's Chest
-					-- #if BEFORE CATA
-					["description"] = "The Captain's Chest is found in the captains quarters in one of the two ships harboured at Lost Rigger's Cove, and is one of three sources for Southsea Lamp. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers, which are commonly found on Southsea mobs around Lost Rigger's Cove.",
-					["coord"] = { 76.5, 45.8, TANARIS },
-					-- #else
-					["description"] = "The Captain's Chest is found in the captains quarters in one of the two ships harboured at Lost Rigger's Cove, and is one of two sources for Southsea Lamp. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers, which are commonly found on Southsea Pirates and Southsea Swashbucklers within the enclosure at Lost Rigger's Cove.",
+					["description"] =
+						-- #if AFTER CATA
+						"The Captain's Chest is found in the captains quarters in one of the two ships harboured at Lost Rigger's Cove, and is one of two sources for Southsea Lamp. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers, which are commonly found on Southsea Pirates and Southsea Swashbucklers within the enclosure at Lost Rigger's Cove.",
+						-- #else
+						"The Captain's Chest is found in the captains quarters in one of the two ships harboured at Lost Rigger's Cove, and is one of three sources for Southsea Lamp. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers, which are commonly found on Southsea mobs around Lost Rigger's Cove.",
+						-- #endif
 					["coords"] = {
+						{ 76.5, 45.8, TANARIS },
+						-- #if AFTER CATA
 						{ 75.3, 45.9, TANARIS },
-						{ 76.4, 45.8, TANARIS },
+						-- #endif
 					},
-					-- #endif
 					["cost"] = {{ "i", 9249, 1 }},	-- 1x Captain's Key
 					["groups"] = {
-						i(9359, {	-- Southsea Lamp (Renamed from Wirt's Third Leg)
-							-- #if BEFORE 4.0.3
-							["description"] = "This item have three sources: Pirate's Footlocker, Captain's Chest, and Cuergo's Hidden Treasure.\nPirate's Footlocker is a common drop from mobs on Lost Rigger's Cove.\nCaptain's Chest is found in the captain's quarters in one of the two ships harboured at Lost Rigger's Cove. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers.\nCuergo's Hidden Treasure is rewarded from the quest Cuergo's Gold.",
-							-- #else
-							["description"] = "This item have two sources: Pirate's Footlocker, and Captain's Chest.\nPirate's Footlocker is a common drop from Southsea Pirates and Southsea Swashbucklers within the enclosure at Lost Rigger's Cove.\nCaptain's Chest is found in the captain's quarters in one of the two ships harboured at Lost Rigger's Cove. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers.",
-							-- #endif
+						i(9359, {	-- Southsea Lamp (Patch 9.1.5: Renamed from 'Wirt's Third Leg')
+							["description"] =
+								-- #if AFTER CATA
+								"This item have two sources: Pirate's Footlocker, and Captain's Chest.\nPirate's Footlocker is a common drop from Southsea Pirates and Southsea Swashbucklers within the enclosure at Lost Rigger's Cove.\nCaptain's Chest is found in the captain's quarters in one of the two ships harboured at Lost Rigger's Cove. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers.",
+								-- #else
+								"This item have three sources: Pirate's Footlocker, Captain's Chest, and Cuergo's Hidden Treasure.\nPirate's Footlocker is a common drop from mobs on Lost Rigger's Cove.\nCaptain's Chest is found in the captain's quarters in one of the two ships harboured at Lost Rigger's Cove. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers.\nCuergo's Hidden Treasure is rewarded from the quest Cuergo's Gold.",
+								-- #endif
 						})
 					},
 				}),
 			}),
 			n(VENDORS, {
 				n(5594, {	-- Alchemist Pestlezugg <Alchemy Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 50.8, 28.0, TANARIS },
-					-- #else
-					["coord"] = { 50.8, 27.0, TANARIS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 50.8, 28.0, TANARIS },
+						-- #else
+						{ 50.8, 27.0, TANARIS },
+						-- #endif
+					},
 					["groups"] = {
 						i(6057, {	-- Recipe: Nature Protection Potion (RECIPE!)
 							["isLimited"] = true,
@@ -5570,11 +5597,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				n(8131, {	-- Blizrik Buckshot <Gunsmith>
-					-- #if AFTER CATA
-					["coord"] = { 50.6, 28.6, TANARIS },
-					-- #else
-					["coord"] = { 50.8, 27.6, TANARIS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 50.6, 28.6, TANARIS },
+						-- #else
+						{ 50.8, 27.6, TANARIS },
+						-- #endif
+					},
 					["groups"] = {
 						i(18650, {	-- Schematic: EZ-Thro Dynamite II (RECIPE!)
 							["isLimited"] = true,
@@ -5615,16 +5644,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(13942, {	-- Recipe: Grilled Squid (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },	-- Moved to Trainers
+							["timeline"] = { REMOVED_4_0_3 },	-- Now taught by trainer, recipe removed from the game.
 						}),
 						i(13945, {	-- Recipe: Nightfin Soup (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },	-- Moved to Trainers
+							["timeline"] = { REMOVED_4_0_3 },	-- Now taught by trainer, recipe removed from the game.
 						}),
 						i(13946, {	-- Recipe: Poached Sunscale Salmon (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },	-- Moved to Trainers
+							["timeline"] = { REMOVED_4_0_3 },	-- Now taught by trainer, recipe removed from the game.
 						}),
 						i(13939, {	-- Recipe: Spotted Yellowtail (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },	-- Moved to Trainers
+							["timeline"] = { REMOVED_4_0_3 },	-- Now taught by trainer, recipe removed from the game.
 						}),
 					},
 				}),
@@ -5632,14 +5661,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.6, 28.6, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
-						i(37915, {	-- Pattern: Dress Shoes
+						i(37915, {	-- Pattern: Dress Shoes (RECIPE!)
 							["timeline"] = { ADDED_4_0_3 },
 							["isLimited"] = true,
 						}),
-						i(38327, {	-- Pattern: Haliscan Jacket
+						i(38327, {	-- Pattern: Haliscan Jacket (RECIPE!)
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(38328, {	-- Pattern: Haliscan Pantaloons
+						i(38328, {	-- Pattern: Haliscan Pantaloons (RECIPE!)
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
@@ -5649,14 +5678,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 66.6, 22.2, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
-						i(37915, {	-- Pattern: Dress Shoes
+						i(37915, {	-- Pattern: Dress Shoes (RECIPE!)
 							["timeline"] = { ADDED_2_4_2, REMOVED_4_0_3 },
 							["isLimited"] = true,
 						}),
-						i(38327, {	-- Pattern: Haliscan Jacket
+						i(38327, {	-- Pattern: Haliscan Jacket (RECIPE!)
 							["timeline"] = { ADDED_2_4_2, REMOVED_4_0_3 },
 						}),
-						i(38328, {	-- Pattern: Haliscan Pantaloons
+						i(38328, {	-- Pattern: Haliscan Pantaloons (RECIPE!)
 							["timeline"] = { ADDED_2_4_2, REMOVED_4_0_3 },
 						}),
 					},
@@ -5670,11 +5699,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(7733, {	-- Innkeeper Fizzgrimble <Innkeeper>
-					-- #if AFTER CATA
-					["coord"] = { 52.6, 27.0, TANARIS },
-					-- #else
-					["coord"] = { 52.4, 27.8, TANARIS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 52.6, 27.0, TANARIS },
+						-- #else
+						{ 52.4, 27.8, TANARIS },
+						-- #endif
+					},
 					["groups"] = {
 						i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 					},
@@ -5691,21 +5722,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(14743, {	-- Jhordy Lapforge <Engineer>
 					["requireSkill"] = GNOMISH_ENGINEERING,
 					["description"] = "Gnomish Engineers can speak to Jhordy to learn the recipe.",
-					-- #if AFTER CATA
-					["coord"] = { 52.2, 27.8, TANARIS },
-					-- #else
-					["coord"] = { 52.17, 27.88, TANARIS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 52.2, 27.8, TANARIS },
+						-- #else
+						{ 52.17, 27.88, TANARIS },
+						-- #endif
+					},
 					["groups"] = {
 						r(23489),	-- Ultrasafe Transporter - Gadgetzan
 					},
 				}),
 				n(5411, {	-- Krinkle Goodsteel <Blacksmithing Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 51.2, 30.2, TANARIS },
-					-- #else
-					["coord"] = { 51.5, 28.8, TANARIS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 51.2, 30.2, TANARIS },
+						-- #else
+						{ 51.5, 28.8, TANARIS },
+						-- #endif
+					},
 					["groups"] = {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_TWO, i(217280, {	-- Plans: Golden Scale Coif (RECIPE!)
@@ -5733,7 +5768,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.4, 27.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					-- #if AFTER 7.0.3.22396
-					["crs"] = { 98844 },	-- Sprinkle Noggenfogger <Noggenfogger Elixir>
+					["cr"] = 98844,	-- Sprinkle Noggenfogger <Noggenfogger Elixir>
 					-- #endif
 					["groups"] = {
 						i(8529),	-- Noggenfogger Elixir
@@ -5753,27 +5788,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				n(6568, {	-- Vizzklick <Tailoring Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 50.6, 28.6, TANARIS },
-					-- #else
-					["coord"] = { 51.0, 27.3, TANARIS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 50.6, 28.6, TANARIS },
+						-- #else
+						{ 51.0, 27.3, TANARIS },
+						-- #endif
+					},
 					["groups"] = {
 						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_TWO, i(217244, {	-- Pattern: Crimson Silk Robe
+						applyclassicphase(SOD_PHASE_TWO, i(217244, {	-- Pattern: Crimson Silk Robe (RECIPE!)
 							["timeline"] = { ADDED_1_15_1 },
 							["isLimited"] = true,
 						})),
-						i(7088, {	-- Pattern: Crimson Silk Robe
+						i(7088, {	-- Pattern: Crimson Silk Robe (RECIPE!)
 							["timeline"] = { REMOVED_1_15_1 },
 							["isLimited"] = true,
 						}),
 						-- #else
-						i(7088, {	-- Pattern: Crimson Silk Robe
+						i(7088, {	-- Pattern: Crimson Silk Robe (RECIPE!)
 							["isLimited"] = true,
 						}),
 						-- #endif
-						i(21358),	-- Pattern: Soul Pouch
+						i(21358),	-- Pattern: Soul Pouch (RECIPE!)
 					},
 				}),
 			}),
@@ -5862,18 +5899,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				i(9276, {	-- Pirate's Footlocker
-					-- #if BEFORE 4.0.3
+					-- #if AFTER 4.0.3
+					["description"] = "The Pirate's Footlocker is one of two sources for Southsea Lamp, and is commonly found on Southsea Pirates and Southsea Swashbucklers within the enclosure at Lost Rigger's Cove.",
+					-- #endif
 					["crs"] = {
+						-- #if BEFORE 4.0.3
 						7857,	-- Southsea Dock Worker
 						7856,	-- Southsea Freebooter
 						15685,	-- Southsea Kidnapper
+						-- #endif
 						7855,	-- Southsea Pirate
 						7858,	-- Southsea Swashbuckler
 					},
 					["groups"] = {
-						i(9359, {	-- Southsea Lamp (Renamed from Wirt's Third Leg)
-							["description"] = "This item have three sources: Pirate's Footlocker, Captain's Chest, and Cuergo's Hidden Treasure.\nPirate's Footlocker is a common drop from mobs on Lost Rigger's Cove.\nCaptain's Chest is found in the captain's quarters in one of the two ships harboured at Lost Rigger's Cove. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers.\nCuergo's Hidden Treasure is rewarded from the quest Cuergo's Gold.",
-						}),
+						-- #if BEFORE 4.0.3
 						i(9250, {	-- Ship Schedule
 							["timeline"] = { DELETED_4_0_3 },
 						}),
@@ -5886,25 +5925,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(9252, {	-- Lower Map Fragment
 							["timeline"] = { DELETED_4_1_0 },
 						}),
+						-- #endif
 						i(9249, {	-- Captain's Key
 							["description"] = "Unlocks the Captain's Chest located in one of the ships harboured at Lost Rigger's Cove.",
 						}),
-					},
-					-- #else
-					["description"] = "The Pirate's Footlocker is one of two sources for Southsea Lamp, and is commonly found on Southsea Pirates and Southsea Swashbucklers within the enclosure at Lost Rigger's Cove.",
-					["crs"] = {
-						7855,	-- Southsea Pirate
-						7858,	-- Southsea Swashbuckler
-					},
-					["groups"] = {
-						i(9359, {	-- Southsea Lamp (Renamed from Wirt's Third Leg)
-							["description"] = "This item have two sources: Pirate's Footlocker, and Captain's Chest.\nPirate's Footlocker is a common drop from Southsea Pirates and Southsea Swashbucklers within the enclosure at Lost Rigger's Cove.\nCaptain's Chest is found in the captain's quarters in one of the two ships harboured at Lost Rigger's Cove. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers.",
-						}),
-						i(9249, {	-- Captain's Key
-							["description"] = "Unlocks the Captain's Chest located in one of the ships harboured at Lost Rigger's Cove.",
+						i(9359, {	-- Southsea Lamp (Patch 9.1.5: Renamed from 'Wirt's Third Leg')
+							-- #if BEFORE 4.0.3
+							["description"] = "This item have three sources: Pirate's Footlocker, Captain's Chest, and Cuergo's Hidden Treasure.\nPirate's Footlocker is a common drop from mobs on Lost Rigger's Cove.\nCaptain's Chest is found in the captain's quarters in one of the two ships harboured at Lost Rigger's Cove. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers.\nCuergo's Hidden Treasure is rewarded from the quest Cuergo's Gold.",
+							-- #endif
 						}),
 					},
-					-- #endif
 				}),
 				i(8483, {	-- Wastewander Water Pouch
 					["crs"] = {
