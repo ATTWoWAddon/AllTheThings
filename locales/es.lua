@@ -132,31 +132,31 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	--TODO: L.HIDDEN_QUEST_TRIGGERS = "Hidden Quest Triggers";
 	--TODO: L.HIDDEN_QUEST_TRIGGERS_DESC = "These are Quests which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes";
 	--TODO: L.UNSORTED_DESC_2 = "Items here exist within the game and may be available to players, but have not yet been sourced into the accurate location in ATT";
-	--TODO: L.OPEN_AUTOMATICALLY = "Open Automatically";
-	--TODO: L.OPEN_AUTOMATICALLY_DESC = "If you aren't a Blizzard Developer, it might be a good idea to uncheck this. This was done to force Blizzard to fix and/or acknowledge these bugs.";
-	--TODO: L.MINI_LIST = "Mini List";
-	--TODO: L.MINI_LIST_DESC = "This list contains the relevant information for your current zone, which cannot be found in the ATT database";
-	--TODO: L.UPDATE_LOCATION_NOW = "Update Location Now";
-	--TODO: L.UPDATE_LOCATION_NOW_DESC = "If you wish to forcibly refresh the data to your current Map, click this button now!";
+	L.OPEN_AUTOMATICALLY = "Abrir automáticamente";
+	L.OPEN_AUTOMATICALLY_DESC = "Si no eres un desarrollador de Blizzard, puede ser buena idea que desactives esto. Esto se hizo para forzar a Blizzard a arreglar y/o conocer algunos bug.";
+	L.MINI_LIST = "Mini Lista";
+	L.MINI_LIST_DESC = "Esta lista contiene información relevante sobre la zona actual en la que estás, que no puede encontrarse en la base de datos de ATT";
+	L.UPDATE_LOCATION_NOW = "Actualizar localización ahora";
+	L.UPDATE_LOCATION_NOW_DESC = "Si quiere forzar el refresco de la información del mapa actual, haz clic en este botón ahora!";
 	--TODO: L.PERSONAL_LOOT_DESC = "Each player has an independent chance at looting an item useful for their class...\n\n... Or useless things like rings.\n\nClick twice to create a group automatically if you're by yourself.";
 	--TODO: L.RAID_ASSISTANT = "Raid Assistant";
 	--TODO: L.RAID_ASSISTANT_DESC = "Never enter the instance with the wrong settings again! Verify that everything is as it should be!";
 	--TODO: L.LOOT_SPEC_UNKNOWN = "Loot Specialization Unknown";
-	--TODO: L.LOOT_SPEC = "Loot Specialization";
+	L.LOOT_SPEC = "Especialización de botín";
 	--TODO: L.LOOT_SPEC_DESC = "In Personal Loot dungeons, raids, and outdoor encounters, this setting will dictate which items are available for you.\n\nClick this row to change it now!";
-	--TODO: L.DUNGEON_DIFF = "Dungeon Difficulty";
+	L.DUNGEON_DIFF = "Dificultad de mazmorra";
 	--TODO: L.DUNGEON_DIFF_DESC = "The difficulty setting for dungeons.\n\nClick this row to change it now!";
-	--TODO: L.RAID_DIFF = "Raid Difficulty";
+	L.RAID_DIFF = "Dificultad de banda";
 	--TODO: L.RAID_DIFF_DESC = "The difficulty setting for raids.\n\nClick this row to change it now!";
-	--TODO: L.LEGACY_RAID_DIFF = "Legacy Raid Difficulty";
+	L.LEGACY_RAID_DIFF = "Dificultad de banda antigua";
 	--TODO: L.LEGACY_RAID_DIFF_DESC = "The difficulty setting for legacy raids.\n\nClick this row to change it now!";
 	--TODO: L.TELEPORT_TO_FROM_DUNGEON = "Teleport to/from Dungeon";
 	--TODO: L.TELEPORT_TO_FROM_DUNGEON_DESC = "Click here to teleport to/from your current instance.\n\nYou can utilize the Mists of Pandaria Scenarios to quickly teleport yourself outside of your current instance this way.";
-	--TODO: L.RESET_INSTANCES = "Reset Instances";
+	L.RESET_INSTANCES = "Reiniciar instancias";
 	--TODO: L.RESET_INSTANCES_DESC = "Click here to reset your instances.\n\n"..ALT_KEY_TEXT.." click to toggle automatically resetting your instances when you leave a dungeon.\n\nWARNING: BE CAREFUL WITH THIS!";
 	--TODO: L.DELIST_GROUP = "Delist Group";
 	--TODO: L.DELIST_GROUP_DESC = "Click here to delist the group. If you are by yourself, it will softly leave the group without porting you out of any instance you are in.";
-	--TODO: L.LEAVE_GROUP = "Leave Group";
+	L.LEAVE_GROUP = "Salir del grupo";
 	--TODO: L.LEAVE_GROUP_DESC = "Click here to leave the group. In most instances, this will also port you to the nearest graveyard after 60 seconds or so.\n\nNOTE: Only works if you're in a group or if the game thinks you're in a group.";
 	--TODO: L.LOOT_SPEC_DESC_2 = "In Personal Loot dungeons, raids, and outdoor encounters, this setting will dictate which items are available for you.\n\nClick this row to go back to the Raid Assistant.";
 	--TODO: L.CURRENT_SPEC = "Current Specialization";
@@ -288,12 +288,12 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 			L.TITLE_SOLO = "Solo ";
 			L._BETA_LABEL = " |cff4AA7FF[Beta]|R";
 
-		--TODO: L.MINIMAP_SLIDER = "Minimap Button Size";
+		L.MINIMAP_SLIDER = "Tamaño del botón del minimapa";
 		--TODO: L.MINIMAP_SLIDER_TOOLTIP = 'Use this to customize the size of the Minimap Button.\n\nDefault: 36';
 		--TODO: L.EXTRA_THINGS_LABEL = "Additional Resources";
-		--TODO: L.MINIMAP_BUTTON_CHECKBOX = "Show the Minimap Button";
+		L.MINIMAP_BUTTON_CHECKBOX = "Muestra el botón del minimapa";
 		--TODO: L.MINIMAP_BUTTON_CHECKBOX_TOOLTIP = "Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.";
-		--TODO: L.WORLDMAP_BUTTON_CHECKBOX = "Show the World Map Button";
+		L.WORLDMAP_BUTTON_CHECKBOX = "Muestra el botón del mapa de mundo";
 		--TODO: L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "Enable this option if you want to see the ATT button on your world map. This button allows you to quickly access the Mini List for the currently displayed zone. Regularly, you'd need to physically travel to the zone in order to see the content on the mini list that you can access by typing '/att mini' in your chatbox.";
 		--TODO: L.CLICK_TO_CREATE_FORMAT = "Click to Create %s";
 		--TODO: L.KEYBINDINGS_TEXT = "You can set keybindings for ATT in the game's options.";
@@ -305,8 +305,8 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.CLASSES = "Clases";
 
 	-- Features tab
-		--TODO: L.MINIMAP_LABEL = "Minimap Button";
-		--TODO: L.MODULES_LABEL = "Modules & Mini Lists";
+		L.MINIMAP_LABEL = "Botón del minimapa";
+		L.MODULES_LABEL = "Módulos y Mini Listas";
 		--TODO: L.SKIP_CUTSCENES_CHECKBOX = "Automatically Skip Cutscenes";
 		--TODO: L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to automatically skip all cutscenes on your behalf.";
 		--TODO: L.AUTO_BOUNTY_CHECKBOX = "Automatically Open the Bounty List";
@@ -386,7 +386,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		--TODO: L.RESETS = "Resets";
 		--TODO: L.SHARED = "Shared";
 		--TODO: L.SPLIT = "Per Difficulty";
-		--TODO: L.REQUIRES_LEVEL = "Requires Level";
+		L.REQUIRES_LEVEL = "Necesitas ser de nivel";
 		--TODO: L.SECRETS_HEADER = "Secrets";
 		--TODO: L.LIMITED_QUANTITY = "This has a limited quantity and may not always be present on the vendor.";
 		--TODO: L.SOURCE_ID_MISSING = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
@@ -436,18 +436,18 @@ for key,value in pairs({
 		--TODO: ["Battle for Azeroth"] = "BFA",
 		--TODO: ["The Shadowlands"] = "SL",
 		--TODO: ["Shadowlands"] = "SL",
-		--TODO: ["Player vs Player"] = "PvP",
-		--TODO: ["Raid Finder"] = "LFR",
+		["Jugador contra Jugador"] = "JcJ",
+		["Buscador de bandas"] = "LFR",
 		--TODO: ["Looking For Raid"] = "LFR",
-		--TODO: ["Normal"] = "N",
-		--TODO: ["Heroic"] = "H",
-		--TODO: ["Mythic"] = "M",
+		["Normal"] = "N",
+		["Heroica"] = "H",
+		["Mítica"] = "M",
 		["Ny'alotha, Ciudad del Despertar"] = "Ny'alotha",	-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
 		["Tazavesh, el Mercado Velado"] = "Tazavesh",	-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
-		--TODO: ["10 Player"] = "10M",
-		--TODO: ["10 Player (Heroic)"] = "10M (H)",
-		--TODO: ["25 Player"] = "25M",
-		--TODO: ["25 Player (Heroic)"] = "25M (H)",
+		["10 jugadores"] = "10M",
+		["10 jugadores (Heroico)"] = "10M (H)",
+		["25 jugadores"] = "25M",
+		["25 jugadores (Heroico)"] = "25M (H)",
 		--TODO: ["Emissary Quests"] = "Emissary",
 		--TODO: [TRACKER_HEADER_WORLD_QUESTS] = "WQ",	-- ["World Quests"] = "WQ"
 		--TODO: ["WoW Anniversary"] = "Anniversary",
@@ -472,7 +472,7 @@ for key,value in pairs({
 		--TODO: SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by "..SHIFT_KEY_TEXT.." clicking on an ATT window.";
 
 	-- About Page
-		--TODO: ABOUT_PAGE = "About";
+		ABOUT_PAGE = "Información";
 		--TODO: ABOUT_TOP = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|r";
 		--TODO: ABOUT_BOTTOM = "Active Contributors: |CFFFFFFFF(Alphabetical Order)\n%s\n\n|rHall of Fame: |CFFFFFFFF(Alphabetical Order)\n%s\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe). You should absolutely download their addons to get the collection icons on items in your bags! %s %s %s\n\nFor online collection comparing check out DataForAzeroth.com from Shoogen and WoWthing.org from Freddie!|r";
 		--TODO: CLIPBOARDCOPYPASTE = "Ctrl+A, Ctrl+C to Copy to your Clipboard.";
@@ -535,11 +535,11 @@ for key,value in pairs({
 		ACHIEVEMENTS_CHECKBOX = ACHIEVEMENTS;
 		ACHIEVEMENTS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear logros.";
 		APPEARANCES_CHECKBOX = "Apariencias";
-		--TODO: APPEARANCES_CHECKBOX_TOOLTIP = "Enable this option to track appearance acquisition.\n\nNOTE: Disabling this option also disables all fanfares and acquisition logic.  You can use this toggle as a way to prevent lag spikes while doing important group content, but bear in mind the computation will need to occur once re-enabled.";
+		APPEARANCES_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear la adquisición de apariencias.\n\nNOTA: Desactiva esta opción tambien desactiva todas las animaciones y lógica de adquisición.  Puedes usar esta opción como una forma de prevenir picos de retraso mientras haces contenido de grupo importante, pero recuerda que el cálculo ocurrirá cuando se reactive.";
 		BATTLE_PETS_CHECKBOX = "Mascotas de duelo";
-		--TODO: BATTLE_PETS_CHECKBOX_TOOLTIP = "Enable this option to track battle pets and companions. These can be found in the open world or via boss drops in various Dungeons and Raids as well as from Vendors and Reputation.";
+		BATTLE_PETS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrar Mascotas de duelo y acompañantes. Pueden ser encontrados en el mundo abierto o a través de botín de jefe en varias mazmorras y bandas así como vendedores y reputaciones.";
 		DEATHS_CHECKBOX = "Muertes";
-		--TODO: DEATHS_CHECKBOX_TOOLTIP = "Enable this option to track each time one of your characters die and show it as a Collectible section within the addon.\n\nNOTE: If you turn this off, we'll still track it, but we simply will not show the statistic unless you're in Debug Mode.";
+		DEATHS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear cada vez que uno de tus personajes muere y lo muesstra como una sección de coleccionable en el addon.\n\nNOTA: Si lo desactivas, lo seguiremos rastreando, pero simplemente no mostraremos la estadística a no ser que estés en Modo Debug.";
 		EXPLORATION_CHECKBOX = "Exploración";
 		EXPLORATION_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear el completado de exploración para los mapas exteriores.";
 		FLIGHT_PATHS_CHECKBOX = "Puntos de vuelo";
@@ -615,8 +615,8 @@ for key,value in pairs({
 		--TODO: CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 
 	-- Interface Page
-		--TODO: TOOLTIP_LABEL = "Tooltips";
-		--TODO: TOOLTIP_HELP_CHECKBOX = "Show Tooltip Help";
+		TOOLTIP_LABEL = "Descripciones emergentes";
+		TOOLTIP_HELP_CHECKBOX = "Muestra la ayuda de las descripciones emergentes";
 		--TODO: TOOLTIP_HELP_CHECKBOX_TOOLTIP = "Enable this option if you want to see the help info in ATT window tooltips which indicates various key/click combinations for ATT window functionality.\nIf you already know all of the key/click combinations, you may want to save tooltip space and disable this option.";
 		--TODO: ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "Tooltip Integrations";
 		--TODO: ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP = "Enable this option if you want to see the information provided by ATT in external tooltips. This includes item links sent by other players, in the auction house, in the dungeon journal, in your bags, in the world, on NPCs, etc.\n\nIf you turn this feature off, you are seriously reducing your ability to quickly determine if you need to kill a mob or learn an appearance.\n\nWe recommend you keep this setting on.";
@@ -731,10 +731,10 @@ for key,value in pairs({
 
 	-- Features: Audio Page
 		--TODO: CELEBRATIONS_LABEL = "Celebrations & Sound Effects";
-		--TODO: AUDIO_CHANNEL = "Audio Channel";
+		AUDIO_CHANNEL = "Canal de audio";
 		--TODO: CELEBRATE_COLLECTED_CHECKBOX = "Collected Things Trigger a Celebration";
 		--TODO: CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new Thing.\n\nThis feature can greatly help keep you motivated.";
-		--TODO: SOUNDPACK = "Soundpack";
+		SOUNDPACK = "Paquete de sonidos";
 		--TODO: PLAY_DEATH_SOUND_CHECKBOX = "Play a Sound Effect when you Die";
 		--TODO: PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a sound effect when you die.";
 		--TODO: WARN_REMOVED_CHECKBOX = "Removed Things Trigger a Warning";
@@ -798,10 +798,10 @@ if app.IsRetail then
 --TODO:
 local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({
-	["NPE"] = { icon = "|T"..(3567434)..":0|t", color = "ff5bc41d", text = "New Player Experience", desc = "Only a New Character can Collect this." },
-	["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "Threads of Fate", desc = "Only a Character who chose to skip the Shadowlands Storyline can Collect this." },
-	["HOA"] = { icon = "|T"..(1869493)..":0|t", color = "ffe6cc80", text = GetSpellName(275825), desc = "Only a Character who has obtained the |cffe6cc80"..GetSpellName(275825).."|r can collect this." },
-	["!HOA"] = { icon = "|T"..(2480886)..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellName(275825), desc = "Only a Character who has |cffff0000not|r obtained the |cffe6cc80"..GetSpellName(275825).."|r can collect this." },
+	["NPE"] = { icon = "|T"..(3567434)..":0|t", color = "ff5bc41d", text = "Experiencia de los jugadores nuevos", desc = "Sólo un personaje nuevo puede coleccionar esto." },
+	["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "Hilos del destino", desc = "Sólo un personaje que elige saltarse la historia de las Tierras Sombrías puede coleccionar esto." },
+	["HOA"] = { icon = "|T"..(1869493)..":0|t", color = "ffe6cc80", text = GetSpellName(275825), desc = "Sólo un personaje que ha obtenido el |cffe6cc80"..GetSpellName(275825).."|r puede coleccionar esto." },
+	["!HOA"] = { icon = "|T"..(2480886)..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellName(275825), desc = "Sólo un personaje que |cffff0000no|r ha obtenido el |cffe6cc80"..GetSpellName(275825).."|r puede coleccionar esto." },
 })
 do a[key] = value; end
 end
