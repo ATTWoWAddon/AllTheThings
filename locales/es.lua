@@ -526,11 +526,11 @@ for key,value in pairs({
 		--TODO: SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX_TOOLTIP = "Disable this option to hide items that are listed as \"Not Available in Personal Loot\" for quests.\n\nThis is useful for tracking items that your class can't use in World Drops, but still marking quests as completed.\n\nSome items can be marked incorrectly: this setting WILL hide items that you can obtain!";
 
 		-- Collectible Things
-		--TODO: ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. "Para toda la cuenta|R by default.";
-		--TODO: TRACK_ACC_WIDE = app.ccColors.Account .. "Track Para toda la cuenta|R";
-		--TODO: ACCOUNT_THINGS_LABEL = "Account-Wide Things";
-		--TODO: GENERAL_THINGS_LABEL = "General Things";
-		--TODO: STRANGER_THINGS_LABEL = "Stranger Things";
+		ACC_WIDE_DEFAULT = "Rastreado ".. app.ccColors.Account .. "Para toda la cuenta|R por defecto.";
+		TRACK_ACC_WIDE = app.ccColors.Account .. "Rastrear para toda la cuenta|R";
+		ACCOUNT_THINGS_LABEL = "Cosas para toda la cuenta";
+		GENERAL_THINGS_LABEL = "Cosas generales";
+		STRANGER_THINGS_LABEL = "Cosas extrañas";
 
 		ACHIEVEMENTS_CHECKBOX = ACHIEVEMENTS;
 		ACHIEVEMENTS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear logros.";
@@ -543,7 +543,7 @@ for key,value in pairs({
 		EXPLORATION_CHECKBOX = "Exploración";
 		EXPLORATION_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear el completado de exploración para los mapas exteriores.";
 		FLIGHT_PATHS_CHECKBOX = "Puntos de vuelo";
-		--TODO: FLIGHT_PATHS_CHECKBOX_TOOLTIP = "Enable this option to track flight paths and ferry stations.\n\nTo collect these, open the dialog with the flight / ferry master in each continent.\n\nNOTE: Due to phasing technology, you may have to phase to the other versions of a zone to get credit for those points of interest.";
+		FLIGHT_PATHS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrar puntos de vuelo y muelles de ferry.\n\nPara coleccionar estos, abre el dialogo con el maestro de punto de vuelo / ferri en cada continente.\n\nNOTA: Debido a la tecnologia de faseo, puede que tengas que fasearte a otras versiones de una zona para obtener crédito de esos puntos de interés.";
 		HEIRLOOMS_CHECKBOX = HEIRLOOMS;
 		--TODO: HEIRLOOMS_CHECKBOX_TOOLTIP = "Enable this option to track whether you have unlocked an Heirloom and its respective Upgrade Levels.\n\nHeirlooms that have an associated Appearance are filtered via the Appearances filter. (turning off appearances will still show the Heirloom itself)\n\nSome items that appear with heirloom quality also help boost reputations and can be filtered via the Reputations filter.";
 		HEIRLOOMS_UPGRADES_CHECKBOX = "+Mejoras";
@@ -551,7 +551,7 @@ for key,value in pairs({
 		ILLUSIONS_CHECKBOX = "Ilusiones";
 		--TODO: ILLUSIONS_CHECKBOX_TOOLTIP = "Enable this option to track illusions.\n\nThese are really cool-looking transmog effects you can apply to your weapons!\n\nNOTE: You are not an illusion, despite what all the Nightborne think.";
 		MOUNTS_CHECKBOX = MOUNTS;
-		--TODO: MOUNTS_CHECKBOX_TOOLTIP = "Enable this option to track mounts.\n\nYou can ride these to go places faster than when running. Who knew!";
+		MOUNTS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrar monturas.\n\nPuedes usarlas para ir a sitios más rápido que corriendo. Quién lo diría!";
 		QUESTS_CHECKBOX = QUESTS_LABEL;
 		--TODO: QUESTS_CHECKBOX_TOOLTIP = "Enable this option to track normal Quests.\n\nYou can right click any Quest in the lists to pop out their full quest chain to show your progress and any prerequisite Quests.\n\nNOTE: Tracking of Daily, Weekly, Yearly, and World Quests is not included in this option due to their periodic resets within the Blizzard Database.";
 		QUESTS_LOCKED_CHECKBOX = "+Bloqueado";
