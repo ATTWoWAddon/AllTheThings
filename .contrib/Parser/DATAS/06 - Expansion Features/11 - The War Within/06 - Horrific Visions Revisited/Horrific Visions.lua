@@ -104,20 +104,50 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(88803, {	-- Timely Assistance
 					["sourceQuests"] = { 87336 },	-- Remembering Again and Again
 					["provider"] = { "n", 238337 },	-- Bronze Hourglass
-					["coord"] = { 51.9, 82.7, 2403 },	-- Vision of Orgrimmar
+					["coord"] = { 51.9, 82.7, RE_HORRIFIC_ORGRIMMAR },
+					--TODO: ^ missing Stormwind vision coords
+				}),
+				-- Corruptions quest
+				q(90719, {	-- Borrowing Corruption (TODO: warbound)
+					--["sourceQuests"] = { ??? },	-- TODO: it was just up with some of new builds
+					["provider"] = { "n", 238136 },	-- Augermu
+					["coord"] = { 35.2, 68.6, DORNOGAL },
+					["g"] = {
+						i(238678),	-- Lesser Rune of Echoing Void
+						i(239084),	-- Lesser Rune of Gushing Wound
+						i(239078),	-- Lesser Rune of Infinite Stars
+						i(239088),	-- Lesser Rune of the Twisted Appendage
+						i(239093),	-- Lesser Rune of the Void Ritual
+						i(238403),	-- Lesser Rune of Twilight Devastation
+					},
+				}),
+				q(90731, {	-- Enhancing Corruption (TODO: warbound)
+					["sourceQuests"] = { 90719 },	-- Borrowing Corruption
+					["provider"] = { "n", 238136 },	-- Augermu
+					["coord"] = { 35.2, 68.6, DORNOGAL },
 				}),
 				-- TODO: Some masks still have their old quests, and something is funky with criteria of mask of the long night, WIP on Blizzard's end maybe? v0v
 				q(86153, {	-- Faceless Mask of the Dark Imagination
-					--["sourceQuests"] = { ?? },	-- TODO: either 88907 or 87387 hqt
+					--["sourceQuests"] = { ?? },	-- ??
 					["provider"] = { "i", 232919 },	-- Faceless Mask of the Dark Imagination (QI!/QS!)
 				}),
-				q(86801),	-- Faceless Mask of Multitudes
+				q(86801, {	-- Faceless Mask of Multitudes
+					["provider"] = { "i", 235414 },	-- Faceless Mask of Multitudes (QS!/QI!)
+				}),
+				q(86152, {	-- Faceless Mask of the Daredevil
+					--["sourceQuests"] = { 90529 },	-- hqt?
+					["provider"] = { "i", 232918 },	-- Faceless Mask of the Daredevil (QS!/QI!)
+				}),
+				q(86151, {	-- Faceless Mask of the Burned Bridge
+					--["sourceQuests"] = { 90530 },	-- hqt?
+					["provider"] = { "i", 232917 },	-- Faceless Mask of the Burned Bridge (QI!/QS!)
+				}),
 				q(86155, {	-- Faceless Mask of the Long Night
-					--["sourceQuests"] = { ?? },	-- TODO: either 88907 or 87387 hqt
+					--["sourceQuests"] = { ?? },	-- ??
 					["provider"] = { "i", 232921 },	-- Faceless Mask of the Long Night (QI!/QS!)
 				}),
 				q(86154, {	-- Faceless Mask of the Pained
-					--["sourceQuests"] = { ?? },	-- TODO: either 88907 or 87387 hqt
+					--["sourceQuests"] = { ?? },	-- ??
 					["provider"] = { "i", 232920 },	-- Faceless Mask of the Pained (QI!/QS!)
 				}),
 				q(88652),	-- Faceless Mask of the Nemesis
@@ -163,6 +193,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				currency(3149),	-- Displaced Corrupted Mementos
 				-- Gear
 				--- leather
+				i(236812),	-- Leggings of the Insatiable Vision
+				i(236794),	-- Legwraps of the Insatiable Vision
 				i(236843),	-- Mask of the Insatiable Vision
 				i(236832),	-- Shoulderpads of the Insatiable Vision
 				i(236795),	-- Waistguard of the Insatiable Vision
@@ -171,12 +203,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				i(236912),	-- Vision Manipulator's Choker
 				-- Masks (QI!/QS!)
 				i(232921),	-- Faceless Mask of the Long Night (QI!/QS!)
+				i(235414),	-- Faceless Mask of Multitudes (QS!/QI!) (TODO: require to complete run with 4 masks?)
 			}),
 			n(TREASURES, {
-				i(239107, {	-- Black Blood Infused Bar TODO - Almost certainly has an object container
+				o(527842, {	-- Black Blood Infused Bar
+					["description"] = "Can be looted once per run",
 					["coords"] = {
-						{ 45.0, 52.7, RE_HORRIFIC_ORGRIMMAR },
+						{ 45.0, 52.7, RE_HORRIFIC_ORGRIMMAR },	-- Alex: can confirm this coord, questID & object for it
 						{ 63.7, 37.1, RE_HORRIFIC_STORMWIND },
+					},
+					["questID"] = 89472,
+					["repeatable"] = true,
+					["g"] = {
+						i(239107),	-- Black Blood Infused Bar
 					},
 				}),
 			}),
@@ -242,11 +281,35 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 			}),
 			n(VENDORS, {
+				n(238136, {	-- Augermu
+					["sourceQuest"] = 90719,	-- Borrowing Corruption
+					["coord"] = { 35.2, 68.6, DORNOGAL },
+					["g"] = sharedData({ ["cost" ] = {{"c", 3149, 500}} }, {
+						i(238678),	-- Lesser Rune of Echoing Void
+						i(239084),	-- Lesser Rune of Gushing Wound
+						i(239078),	-- Lesser Rune of Infinite Stars
+						i(239088),	-- Lesser Rune of the Twisted Appendage
+						i(239093),	-- Lesser Rune of the Void Ritual
+						i(238403),	-- Lesser Rune of Twilight Devastation
+					}),
+				}),
 				n(238544, {	-- Chreni
 					["sourceAchievement"] = 41874,	-- Symphony of Masks
+					["coord"] = { 33.8, 68.6, DORNOGAL },
+					["g"] = {
+						i(242623, {	-- Enchanted Warbound Purifying Kit
+							["cost"] = {{"c", 3149, 2000 }},
+						}),
+					},
 				}),
 				n(238546, {	-- Rhythferr
 					["sourceAchievement"] = 41857,	-- Masked Soliloquy
+					["coord"] = { 34.1, 68.5, DORNOGAL },
+					["g"] = {
+						i(242622, {	-- Warbound Purifying Kit
+							["cost"] = {{"c", 3149, 1000 }},
+						}),
+					},
 				}),
 				n(238545, {	-- TickTak
 					-- TODO: TickTak = veteran, Rhythferr (238546) = champion, Chreni (238544) = hero
@@ -450,13 +513,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						o(499957, {	-- Corrupted Chest (Valley of Wisdom/Geya'rah)
 							["coord"] = { 48.9, 58.1, RE_HORRIFIC_ORGRIMMAR },
 							["g"] = {
+								i(232917),	-- Faceless Mask of the Burned Bridge (QS!/QI!)
+								i(240193),	-- Tentacle Spokes
 								i(235797),	-- Void-Scarred Tallstrider Chick (PET!)
+								i(240178),	-- Voidflame-Resistant Hide
 							},
 						}),
 						o(499958, {	-- Corrupted Chest (Valley of Honor/Rexxar)
 							["coord"] = { 48.1, 58.1, RE_HORRIFIC_ORGRIMMAR },
 							["g"] = {
 								i(174457),	-- C'Thuffer (PET!)
+								i(232918),	-- Faceless Mask of the Daredevil (QS!/QI!)
+								i(239106),	-- Shadow Infused Onyx
 								i(240180),	-- Void-Scarred Boarhide (PET!)
 							},
 						}),
@@ -479,6 +547,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 					n(RARES, {
 						n(241024, {	-- Big Keech <Rare Antiquities>
+							["coord"] = { 72.4, 35.7, RE_HORRIFIC_ORGRIMMAR },
 							["g"] = {
 								i(238922),	-- Design: Voice-Crystal Panther (RECIPE!)
 								i(238924),	-- Void-Bound Orb of Mystery
@@ -514,6 +583,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						}),
 						o(529677, {	--Void-Forged Engine Block
 							["coord"] = { 56.9, 56.8, RE_HORRIFIC_ORGRIMMAR },
+							["questID"] = 90526,
 							["g"] = { i(240189) },	-- Void-Forged Engine Block
 						}),
 					}),
@@ -669,14 +739,26 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		--q(90524),	-- either hqt to pop thing for moto or mask drop hqt after clearing up mage quarter (with Long Night mask)
 		--q(90531),	-- pop with delay after Alleria was killed (all district was cleared with Long Night mask), when was moved into chests room
 		--^ one of it could be tribute upgrade?
+		q(87389),	-- pop after finishing scenario first time (during quest) // lowest reward hqt?
+		q(88905),	-- pop after finishing scenario first time (during quest) // lowest reward hqt?
+		--87389 & 88905 also pop on 2nd run (without quests in stormwind)
 		--q(88906),	-- ???
 		--q(88907),	-- All district was cleared (without masks), pop after killing Alleria // one of it mask sourceQuest
 		--q(87387),	-- All district was cleared (without masks), pop after killing Alleria // or veteran vendor unlock? / champion piece lockout?
 		--q(88908),	-- All district was cleared  (with Long Night mask), pop after killing Alleria // one of it could be champion vendor unlock?
 		--q(87382),	-- All district was cleared  (with Long Night mask), pop after killing Alleria // one of it could be champion vendor unlock? / champion piece lockout?
-		q(87389),	-- pop after finishing scenario first time (during quest) // lowest reward hqt?
-		q(88905),	-- pop after finishing scenario first time (during quest) // lowest reward hqt?
-		--87389 & 88905 also pop on 2nd run (without quests in stormwind)
+		--q(87384),	-- All district was cleared  (3 masks), pop after killing Thrall // reward lockout questID?
+		--q(88910),	-- All district was cleared  (3 masks), pop after killing Thrall // reward lockout questID?
+		--q(87385),	-- All district was cleared  (4 masks), pop after killing Thrall // reward lockout questID?
+		--q(88911),	-- All district was cleared  (4 masks), pop after killing Thrall // reward lockout questID?
+		--q(87386),	-- All district was cleared  (5 masks), pop after killing Thrall // reward lockout questID?
+		--q(88912),	-- All district was cleared  (5 masks), pop after killing Thrall // reward lockout questID?
+		--
+		--q(90530),	-- pop after clearing Valley of Wisdom with 2 masks (new masks sourceQuest?)
+		--q(90529),	-- pop after killing Rexxar with 3 masks (mask sourceQuest?)
+		--
+		q(90709),	-- after using itemID 242622 (Warbound Purifying Kit)
+		q(90710),	-- after using itemID 242623 (Enchanted Warbound Purifying Kit)
 
 		-- combine things for byke
 		--q(),	--

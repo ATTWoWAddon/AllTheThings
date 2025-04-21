@@ -45,9 +45,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_5 } }, 
 						["g"] = {
 							i(239546, {	-- Confiscated Cultist's Bag
 								-- TODO: seems like also share vendor stuff
-								-- but in addition:
-								i(237472),	-- Seal of Cosmic Embrace (TODO: missing from vendor?)
-								--
 								i(241126),	-- Sovereign Sureki Emblem (COSMETIC!)
 							}),
 						},
@@ -100,7 +97,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_5 } }, 
 				}),
 				n(REWARDS, {
 					-- Caches from progress bar
-					i(237743),	-- Arathi Soldier's Coffer (uncommon)
+					i(237743, {	-- Arathi Soldier's Coffer (uncommon)
+						i(241007),	-- Mereldar Blacksmithing Hammer (COSMETIC!)
+					}),
 					i(237759),	-- Arathi Cleric's Chest (rare)
 					i(237760),	-- Arathi Champion's Spoils (epic)
 					-- Crafting reagent?
@@ -109,6 +108,43 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_5 } }, 
 					--n(240968),	-- Ahn'tak
 					--n(240969),	-- Anub'Ranax
 					--n(234440),	-- Azj-Tak the Behemoth
+					-- Nighfall pieces that was previously in vendor
+					i(237435),	-- Nightfall Darkcaster's Cloak
+					i(237436),	-- Nightfall Darkcaster's Vestment
+					i(237437),	-- Nightfall Darkcaster's Sandals
+					i(237438),	-- Nightfall Darkcaster's Handwraps
+					i(237439),	-- Nightfall Darkcaster's Cowl
+					i(237440),	-- Nightfall Darkcaster's Leggings
+					i(237441),	-- Nightfall Darkcaster's Mantle
+					i(237442),	-- Nightfall Darkcaster's Cord
+					i(237443),	-- Nightfall Darkcaster's Cuffs
+					i(237444),	-- Nightfall Curseblade's Cape
+					i(237445),	-- Nightfall Curseblade's Vest
+					i(237446),	-- Nightfall Curseblade's Waders
+					i(237447),	-- Nightfall Curseblade's Grips
+					i(237470),	-- Nightfall Curseblade's Cape
+					i(237448),	-- Nightfall Curseblade's Breeches
+					i(237449),	-- Nightfall Curseblade's Shoulderpads
+					i(237450),	-- Nightfall Curseblade's Sash
+					i(237451),	-- Nightfall Curseblade's Bindings
+					i(237452),	-- Nightfall Shadowalker's Shawl
+					i(237453),	-- Nightfall Shadowalker's Chainmail
+					i(237454),	-- Nightfall Shadowalker's Striders
+					i(237455),	-- Nightfall Shadowalker's Grips
+					i(237456),	-- Nightfall Shadowalker's Coif
+					i(237457),	-- Nightfall Shadowalker's Greaves
+					i(237458),	-- Nightfall Shadowalker's Shoulderguards
+					i(237459),	-- Nightfall Shadowalker's Cinch
+					i(237460),	-- Nightfall Shadowalker's Bracers
+					i(237461),	-- Nightfall Executioner's Drape
+					i(237462),	-- Nightfall Executioner's Breastplate
+					i(237463),	-- Nightfall Executioner's Sabatons
+					i(237464),	-- Nightfall Executioner's Gauntlets
+					i(237465),	-- Nightfall Executioner's Helm
+					i(237466),	-- Nightfall Executioner's Legguards
+					i(237467),	-- Nightfall Executioner's Mantle
+					i(237468),	-- Nightfall Executioner's Girdle
+					i(237469),	-- Nightfall Executioner's Armplates
 				}),
 				n(VENDORS, {
 					n(243253, {	-- Layne Pontelle
@@ -144,48 +180,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_5 } }, 
 							i(237495),	-- Excerpt on Dark Summons
 							i(225693),	-- Shadowed Essence (Hallowfall zone treasure)
 							i(237471),	-- Band of the Voidmancer
+							i(237472),	-- Seal of Cosmic Embrace
 							i(237473),	-- Dark Bargainer's Chain
 							-- 3
 							i(237474),	-- Cult Former's Charm
-							i(237435),	-- Nightfall Darkcaster's Cloak
-							i(237436),	-- Nightfall Darkcaster's Vestment
-							i(237437),	-- Nightfall Darkcaster's Sandals
-							i(237438),	-- Nightfall Darkcaster's Handwraps
-							i(237439),	-- Nightfall Darkcaster's Cowl
-							i(237440),	-- Nightfall Darkcaster's Leggings
-							i(237441),	-- Nightfall Darkcaster's Mantle
-							i(237442),	-- Nightfall Darkcaster's Cord
-							i(237443),	-- Nightfall Darkcaster's Cuffs
-							-- 4
-							i(237444),	-- Nightfall Curseblade's Cape
-							i(237445),	-- Nightfall Curseblade's Vest
-							i(237446),	-- Nightfall Curseblade's Waders
-							i(237447),	-- Nightfall Curseblade's Grips
-							i(237470),	-- Nightfall Curseblade's Cape
-							i(237448),	-- Nightfall Curseblade's Breeches
-							i(237449),	-- Nightfall Curseblade's Shoulderpads
-							i(237450),	-- Nightfall Curseblade's Sash
-							i(237451),	-- Nightfall Curseblade's Bindings
-							i(237452),	-- Nightfall Shadowalker's Shawl
-							-- 5
-							i(237453),	-- Nightfall Shadowalker's Chainmail
-							i(237454),	-- Nightfall Shadowalker's Striders
-							i(237455),	-- Nightfall Shadowalker's Grips
-							i(237456),	-- Nightfall Shadowalker's Coif
-							i(237457),	-- Nightfall Shadowalker's Greaves
-							i(237458),	-- Nightfall Shadowalker's Shoulderguards
-							i(237459),	-- Nightfall Shadowalker's Cinch
-							i(237460),	-- Nightfall Shadowalker's Bracers
-							i(237461),	-- Nightfall Executioner's Drape
-							i(237462),	-- Nightfall Executioner's Breastplate
-							-- 6
-							i(237463),	-- Nightfall Executioner's Sabatons
-							i(237464),	-- Nightfall Executioner's Gauntlets
-							i(237465),	-- Nightfall Executioner's Helm
-							i(237466),	-- Nightfall Executioner's Legguards
-							i(237467),	-- Nightfall Executioner's Mantle
-							i(237468),	-- Nightfall Executioner's Girdle
-							i(237469),	-- Nightfall Executioner's Armplates
+							-- All Nightfall gear (beside weapons, are now missing from vendor)
+							-- and seems like reward from end boss?
 						}),
 					}),
 					n(227797, {	-- Raen Dawncavalyr
@@ -278,6 +278,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				q(88896),	-- OH weapon (caster/off spec) / Nightfall Darkcaster's Implement (itemID 237785) (it was looted from boss during nightfall event)
 				q(88687),	-- Cape / Arathi Abbot's Cloak (itemID 237394)
 				--q(??),	-- Cape / Nightfall Curseblade Cape (itemID 237444)
+				q(88692),	-- Chest / Arathi Zealot's Vest (itemID 237404)
+				q(88888),	-- Chest / Nightfall Curseblade's Vest
 				q(88691),	-- Feet / Arathi Zealot's Waders (itemID 237405)
 				--q(??),	-- Feet / Nightfall Curseblade's Waders (itemID 237446)
 				q(88690),	-- Hands / Arathi Zealot's Grips (itemID 237406)

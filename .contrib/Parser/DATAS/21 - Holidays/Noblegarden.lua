@@ -135,7 +135,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 	{	-- Brightly Colored Egg
 		-- #if AFTER WRATH
 		["itemID"] = 45072,	-- Brightly Colored Egg
-		["provider"] = { "o", 113768 },	-- Brightly Colored Egg
+		["providers"] = {
+			{ "o", 113768 },	-- Brightly Colored Egg
+			{ "o", 113769 },	-- Brightly Colored Egg
+			{ "o", 113770 },	-- Brightly Colored Egg
+			{ "o", 113771 },	-- Brightly Colored Egg
+		},
 		-- #else
 		["objectID"] = 113768,	-- Brightly Colored Egg
 		-- #endif
@@ -150,6 +155,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			-- #if AFTER TBC
 			EVERSONG_WOODS,
 			AZUREMYST_ISLE,
+			-- #endif
+			-- #if AFTER DF
+			VALDRAKKEN,
+			-- #endif
+			-- #if AFTER TWW
+			DORNOGAL,
 			-- #endif
 		},
 		["groups"] = {
@@ -177,7 +188,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			i(72145, {	-- Swift Springstrider (MOUNT!)
 				["timeline"] = { ADDED_4_3_0 },
 			}),
-
 			i(19028, {	-- Elegant Dress
 				["timeline"] = { REMOVED_7_2_5 },
 			}),
@@ -446,7 +456,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["isYearly"] = true,
 		}),
 		q(13502, {	-- A Tisket, a Tasket, a Noblegarden Basket (A)
-			["qg"] = 32836,	-- Noblegarden Vendor
+			["qgs"] = {
+				32836,	-- Noblegarden Vendor
+				-- #if AFTER TWW
+				215033,	-- Spring Sorter
+				-- #endif
+			},
 			["coords"] = {
 				{ 49.01, 51.19, AZUREMYST_ISLE },	-- Azure Watch, Azuremyst Isle
 				-- #if AFTER CATA
@@ -457,6 +472,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				{ 56.0, 58.7, TELDRASSIL },	-- Dolanaar
 				{ 43.0, 65.3, ELWYNN_FOREST },	-- Goldshire
 				{ 47.0, 52.5, DUN_MOROGH },	-- Kharanos
+				-- #endif
+				-- #if AFTER TWW
+				{ 45.9, 55.0, DORNOGAL },
 				-- #endif
 			},
 			["timeline"] = { ADDED_3_1_0 },
@@ -479,7 +497,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			},
 		}),
 		q(13503, {	-- A Tisket, a Tasket, a Noblegarden Basket (H)
-			["qg"] = 32837,	-- Noblegarden Merchant
+			["qgs"] = {
+				32837,	-- Noblegarden Merchant
+				-- #if AFTER TWW
+				215033,	-- Spring Sorter
+				-- #endif
+			},
 			["coords"] = {
 				-- #if AFTER CATA
 				{ 47.11, 59.89, MULGORE },	-- Bloodhoof Village
@@ -491,6 +514,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				{ 61.3, 52.9, TIRISFAL_GLADES },	-- Brill
 				{ 47.6, 47.3, EVERSONG_WOODS },	-- Falconwing Square
 				{ 51.9, 41.9, DUROTAR },	-- Razor Hill
+				-- #endif
+				-- #if AFTER TWW
+				{ 45.9, 55.0, DORNOGAL },
 				-- #endif
 			},
 			["timeline"] = { ADDED_3_1_0 },
@@ -652,14 +678,34 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 	-----------------
 	n(QUESTS, bubbleDown({ ["timeline"] = { ADDED_10_2_6 }, }, {
 		q(79134, {	-- A Spring Awakening (A)
-			["qg"] = 199261,	-- Holiday Enthusiast
-			["coord"] = { 31.6, 63.1, VALDRAKKEN },
+			["qgs"] = {
+				199261,	-- Holiday Enthusiast
+				-- #if AFTER TWW
+				220307,	-- Holiday Enthusiast
+				-- #endif
+			},
+			["coords"] = {
+				{ 31.6, 63.1, VALDRAKKEN },
+				-- #if AFTER TWW
+				{ 45.9, 55.0, DORNOGAL },
+				-- #endif
+			},
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 		}),
 		q(79136, {	-- A Spring Awakening (H)
-			["qg"] = 199261,	-- Holiday Enthusiast
-			["coord"] = { 31.6, 63.1, VALDRAKKEN },
+			["qgs"] = {
+				199261,	-- Holiday Enthusiast
+				-- #if AFTER TWW
+				220307,	-- Holiday Enthusiast
+				-- #endif
+			},
+			["coords"] = {
+				{ 31.6, 63.1, VALDRAKKEN },
+				-- #if AFTER TWW
+				{ 45.9, 55.0, DORNOGAL },
+				-- #endif
+			},
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 		}),
@@ -737,7 +783,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				i(216902),	-- Yellow Duck Disguise (CI!)
 				i(212608),	-- Duck Potion (QI!)
 				o(420195, {	-- Golden Egg Heirloom
-					i(212643),	-- Golden Egg Heirloom (QI!)
+					["coord"] = { 30.4, 91.3, ELWYNN_FOREST },
+					["g"] = { i(212643) },	-- Golden Egg Heirloom (QI!)
 				}),
 			},
 		}),

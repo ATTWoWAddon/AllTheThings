@@ -107,17 +107,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(225213),	-- Sky-Captain Lancekat's Curse
 				}
 			}),
-			o(453283, {	-- Smuggler's Treasure
-				["description"] = "Fly down to the Dead Arathi body and loot key.",
-				["coord"] = { 55.1, 51.9, HALLOWFALL },
-				["questID"] = 83273,
-				["g"] = {
-					i(225335),	-- Smuggler's Key
-					--
-					i(226021),	-- Jar of Pickles
-					--no longer here
-					--i(225256),	-- PH_2
-				},
+			o_repeated({	-- Smuggler's Treasure
+				o(453283, {
+					["description"] = "Fly down to the Dead Arathi body and loot key.",
+					["coord"] = { 55.1, 51.9, HALLOWFALL },
+					["questID"] = 83273,
+				}),
+				o(453274, {
+					["description"] = "Fly down to the Dead Arathi body and loot key.",
+					["coord"] = { 55.1, 51.9, HALLOWFALL },
+				}),
+				i(225335),	-- Smuggler's Key
+				i(226021),	-- Jar of Pickles
 			}),
 			o(419695, {	-- Spore-Covered Coffer
 				["description"] = "Inside the Shadowmire cave.",

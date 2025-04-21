@@ -935,6 +935,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 				i(211026),	-- Torchbearer's Shoulderguards
 				i(211022),	-- Torchbearer's Striders
 			}),
+			filter(MISC, {
+				i(242919, {	-- Cracked Keystone (QS!/QI!) (TODO: Alex - I speculate it may have different sources but cannot confirm it due to lack of time)
+					["timeline"] = { ADDED_11_1_5 },	-- TODO: REMOVED_11_2_0?
+				}),
+			}),
 			filter(NECK_F, {
 				i(211063),	-- Long-Lost Choker
 			}),
@@ -1708,6 +1713,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 				i(212170),	-- Brann's Spare Hat (COSMETIC!)
 				i(230727),	-- Explosive Victory (TOY!)
 			},
+		}),
+		q(90779, {	-- Cracked Keystone
+			["provider"] = { "i", 242919 },	-- Cracked Keystone
+			["timeline"] = { ADDED_11_1_5 },	-- TODO: REMOVED_11_2_0?
 		}),
 	}),
 	n(QUESTS, sharedData({
@@ -3401,6 +3410,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			n(QUESTS, {
 				-- q(86329),	-- Delver's Cosmetic Surprise Bag (itemID 233281) [linked to Item]
 				-- q(86328),	-- Delver's Starter Kit (itemID 233276) [linked to Item]
+				q(90780),	-- when Cracked Keystone was obtained (push loot in Fungal Folly?)
 			}),
 			--Delver's Journey Rewards
 			q(85204),	-- Delver's Dirigible Schematic: Flamethrower (spellID 467083)

@@ -188,6 +188,8 @@ function(cmd)
 	local args = { (","):split(cmd:lower()) };
 	app.SetCustomWindowParam("list", "min", args[1]);
 	app.SetCustomWindowParam("list", "limit", args[2] or 999999);
+	-- reduce the re-try duration when harvesting
+	app.SetCAN_RETRY_DURATION_SEC(1)
 	app:GetWindow("list"):Toggle();
 end)
 

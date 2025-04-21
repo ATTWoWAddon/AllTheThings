@@ -1033,7 +1033,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61738, {	-- Ember Court: Lost Chalice Band
-								--	TODO: might just require 'honored' rep???
+									["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },
 									["description"] = "Available after purchasing Staff: Stage Crew.",
 									["provider"] = { "n", 173173 },	-- Caretaker Tedo
 									["coord"] = { 55.1, 43.7, REVENDRETH },
@@ -1049,6 +1049,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								}),
 								q(61403, {	-- Ember Court: Maldraxxus Army
 									["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },
+									["sourceQuest"] = 58407,	-- The Medallion of Dominion
 									["provider"] = { "n", 172964 },	-- Emeni
 									["coord"] = { 54.2, 69.3, MALDRAXXUS },
 									["g"] = {
@@ -1675,6 +1676,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
 									["coord"] = { 32.0, 41.6, REVENDRETH },
 									["g"] = {
+										i(182363),	-- Enchanted Trickster Dust (QI!)
 										i(181530, {	-- Stock: Greeting Kits (EC!)
 											["questID"] = 61497,
 										}),

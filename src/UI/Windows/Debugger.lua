@@ -282,8 +282,42 @@ app:CreateWindow("Debugger", {
 });
 ]]--
 
--- Retail ATT Debugger Logic
 -- TODO: eventually consolidate with above Classic-esque window implementation
+-- Retail ATT Debugger Logic
+local KeyMaps = setmetatable({
+	a = "achievementID",
+	achievement = "achievementID",
+	azessence = "azeriteessenceID",
+	battlepet = "speciesID",
+	c = "currencyID",
+	creature = "npcID",
+	currency = "currencyID",
+	enchant = "spellID",
+	fp = "flightpathID",
+	follower = "followerID",
+	garrbuilding = "garrisonbuildingID",
+	garrfollower = "followerID",
+	i = "modItemID",
+	item = "modItemID",
+	itemid = "modItemID",
+	mount = "spellID",
+	mountid = "spellID",
+	n = "creatureID",
+	npc = "creatureID",
+	npcid = "creatureID",
+	o = "objectID",
+	object = "objectID",
+	r = "spellID",
+	recipe = "spellID",
+	rfp = "runeforgepowerID",
+	s = "sourceID",
+	source = "sourceID",
+	species = "speciesID",
+	spell = "spellID",
+	talent = "spellID",
+	q = "questID",
+	quest = "questID",
+}, { __index = function(t,key) return key:gsub("id", "ID") end})
 app.LoadDebugger = function()
 	local debuggerWindow = app:GetWindow("Debugger", UIParent, function(self, force)
 		if not self.initialized then
@@ -484,6 +518,7 @@ app.LoadDebugger = function()
 				end
 
 				if info then
+					-- TODO: assign children on the created object, assign parent directly, nest to data, DGU the group
 					app.NestObject(self.data, app.__CreateObject(info));
 					self:BuildData();
 					AfterCombatCallback(self.Update, self, true);
@@ -730,38 +765,57 @@ app.LoadDebugger = function()
 					end
 				-- Capture personal loot sources
 				elseif e == "LOOT_READY" then
+					-- Only register LOOT_READY once per opened loot
+					self:UnregisterEvent("LOOT_READY");
+					self:RegisterEvent("LOOT_CLOSED");
 					local slots = GetNumLootItems();
 					-- print("Loot Slots:",slots);
-					local loot, source, itemID, info;
+					local loot, source, info
 					local type, zero, server_id, instance_id, zone_uid, id, spawn_uid;
 					local mapID = app.CurrentMapID;
 					if mapID then
 						local pos = C_Map.GetPlayerMapPosition(mapID, "player");
 						if pos then
 							local px, py = pos:GetXY();
-							app.PrintDebug("Loot @ coord", math.ceil(px * 10000) / 100, math.ceil(py * 10000) / 100, mapID)
+							px = math.ceil(px * 10000) / 100
+							py = math.ceil(py * 10000) / 100
+							app.PrintDebug("Loot @ coord", px, py, mapID)
 						end
 					end
 					for i=1,slots,1 do
 						loot = GetLootSlotLink(i);
 						if loot then
-							itemID = GetItemID(loot);
-							if itemID then
+							-- app.PrintDebug("Loot @",i,":",loot)
+							-- TODO: duplicated logic from SearchForLink
+							local kind, lootID = (":"):split(loot);
+							kind = kind:lower();
+							if kind:sub(1,2) == "|c" then
+								kind = kind:sub(11);
+							end
+							if kind:sub(1,2) == "|h" then
+								kind = kind:sub(3);
+							end
+							kind = KeyMaps[kind:lower()]
+							if lootID then lootID = tonumber(select(1, ("|["):split(lootID)) or lootID); end
+							-- app.PrintDebug("Loot @",i,kind,lootID)
+							if lootID and kind then
 								source = { GetLootSourceInfo(i) };
 								for j=1,#source,2 do
 									type, zero, server_id, instance_id, zone_uid, id, spawn_uid = ("-"):split(source[j]);
 									-- TODO: test this with Item containers
-									app.print("Add Loot",itemID,"from",type,id)
-									info = { [(type == "GameObject") and "objectID" or "npcID"] = tonumber(id), ["g"] = { { ["itemID"] = itemID, ["rawlink"] = loot } } };
-									-- print("Add Loot")
-									-- app.PrintTable(info);
+									app.print("Add",kind,"Loot",loot,"from",type,id)
+									info = {
+										[type == "GameObject" and "objectID" or "npcID"] = tonumber(id),
+										g = { { [kind] = lootID, ["rawlink"] = loot } }
+									};
 									AddObject(info);
 								end
-							else
-								app.PrintDebug("No ItemID!",loot)
 							end
 						end
 					end
+				elseif e == "LOOT_CLOSED" then
+					self:RegisterEvent("LOOT_READY");
+					self:UnregisterEvent("LOOT_CLOSED");
 				elseif e == "QUEST_LOOT_RECEIVED" then
 					local questID, itemLink = ...
 					local itemID = GetItemID(itemLink)

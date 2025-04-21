@@ -153,7 +153,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(174075),	-- Emeni's Magnificent Skin
 			i(168803),	-- Emergency Supplies
 			i(173149),	-- Empty Anima Crystal
-			i(182363),	-- Enchanted Trickster Dust
 			i(181496),	-- Endmire Blossom
 			i(175793),	-- Enlarged Gluegland
 			i(180898),	-- Ephemeral Draught

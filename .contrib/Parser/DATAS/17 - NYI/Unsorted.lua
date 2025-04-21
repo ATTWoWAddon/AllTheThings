@@ -7,12 +7,9 @@ root(ROOTS.Unsorted, {
 		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
 			n(SPECIAL, {	-- Horrific Revisited
 				i(232352),	-- Ashjra'kamas, Shroud of Resolve
-				i(232917),	-- Faceless Mask of the Burned Bridge
-				i(232918),	-- Faceless Mask of the Daredevil
 				i(235274),	-- Echo of N'zoth
 				i(235284),	-- Echo of N'zoth
 				i(235285),	-- Echo of N'zoth
-				i(235414),	-- Faceless Mask of Multitudes
 				i(236787),	-- Vision Manipulator's Footwraps
 				i(236788),	-- Vision Manipulator's Handwraps
 				i(236789),	-- Vision Manipulator's Leggings
@@ -20,7 +17,6 @@ root(ROOTS.Unsorted, {
 				i(236791),	-- Vision Manipulator's Wristwraps
 				i(236792),	-- Footpads of the Insatiable Vision
 				i(236793),	-- Grips of the Insatiable Vision
-				i(236794),	-- Legwraps of the Insatiable Vision
 				i(236796),	-- Wristwraps of the Insatiable Vision
 				i(236797),	-- Vision Tormentor's Footguards
 				i(236798),	-- Vision Tormentor's Handguards
@@ -37,7 +33,6 @@ root(ROOTS.Unsorted, {
 				i(236809),	-- Vision Tormentor's Gloves
 				i(236810),	-- Malignant Vision's Gauntlets
 				i(236811),	-- Vision Manipulator's Legwraps
-				i(236812),	-- Leggings of the Insatiable Vision
 				i(236813),	-- Vision Tormentor's Greaves
 				i(236814),	-- Malignant Vision's Legguards
 				i(236815),	-- Vision Manipulator's Cuffs
@@ -125,7 +120,6 @@ root(ROOTS.Unsorted, {
 				i(233298),	-- Radiant Stalwart's Buckle
 				i(233299),	-- Sacred Templar's Buckle
 				i(239489),	-- Radiant Officer's Cache
-				i(241007),	-- Mereldar Blacksmithing Hammer
 				i(241016),	-- Arathi Lancer's Polearm
 				i(241019),	-- Arathi Camper's Knife
 				i(241033),	-- Arathi Templar's Claymore
@@ -385,27 +379,21 @@ root(ROOTS.Unsorted, {
 				i(240187),	-- Refulgent Crystal Shards
 			}),
 			n(PROFESSIONS, {
-				i(238403),	-- Enchant Weapon - Twilight Devastation
 				i(238404),	-- Enchant Weapon - Twilight Devastation
 				i(238405),	-- Enchant Weapon - Twilight Devastation
 				i(238406),	-- Formula: Enchant Weapon - Twilight Devastation
-				i(238678),	-- Enchant Weapon - Echoing Void
 				i(238679),	-- Enchant Weapon - Echoing Void
 				i(238680),	-- Enchant Weapon - Echoing Void
 				i(238683),	-- Formula: Enchant Weapon - Echoing Void
-				i(239078),	-- Enchant Weapon - Infinite Stars
 				i(239079),	-- Enchant Weapon - Infinite Stars
 				i(239080),	-- Enchant Weapon - Infinite Stars
 				i(239081),	-- Formula: Enchant Weapon - Infinite Stars
-				i(239084),	-- Enchant Weapon - Gushing Wound
 				i(239085),	-- Enchant Weapon - Gushing Wound
 				i(239086),	-- Enchant Weapon - Gushing Wound
 				i(239087),	-- Formula: Enchant Weapon - Gushing Wound
-				i(239088),	-- Enchant Weapon - Twisted Appendage
 				i(239089),	-- Enchant Weapon - Twisted Appendage
 				i(239090),	-- Enchant Weapon - Twisted Appendage
 				i(239091),	-- Formula: Enchant Weapon - Twisted Appendage
-				i(239093),	-- Enchant Weapon - Void Ritual
 				i(239094),	-- Enchant Weapon - Void Ritual
 				i(239095),	-- Enchant Weapon - Void Ritual
 				i(239096),	-- Formula: Enchant Weapon - Void Ritual
@@ -433,11 +421,8 @@ root(ROOTS.Unsorted, {
 				i(241235),	-- Painted Wooden Sword
 				i(241236),	-- Painted Wooden Dagger
 			}),
-			i(242622),	-- Warbound Purifying Kit
-			i(242623),	-- Enchanted Warbound Purifying Kit
 			i(242648),	-- Black Blood Coagulate
 			i(242711),	-- Pungent Truffle
-			i(242919),	-- Cracked Keystone
 			i(237508),	-- Can of Amps
 			i(237509),	-- Bottle of Invisibility
 			i(237510),	-- Goblet

@@ -596,7 +596,6 @@ _.Modules.Events.SetEventInformation(141, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=4,["year"]=2026},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=7,["year"]=2027})
 });
 _.Modules.Events.SetEventInformation(479, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=7,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=14,["weekday"]=2,["year"]=2025},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=21,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=28,["weekday"]=2,["year"]=2025},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=5,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=12,["weekday"]=2,["year"]=2025},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=19,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=26,["weekday"]=2,["year"]=2025},{["remappedID"]=375}),
@@ -622,7 +621,8 @@ _.Modules.Events.SetEventInformation(479, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=23,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=2,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=9,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=16,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=23,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=30,["weekday"]=2,["year"]=2026},{["remappedID"]=375}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=6,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=13,["weekday"]=2,["year"]=2026},{["remappedID"]=374})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=6,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=13,["weekday"]=2,["year"]=2026},{["remappedID"]=374}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=20,["weekday"]=2,["year"]=2026},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=27,["weekday"]=2,["year"]=2026},{["remappedID"]=375})
 });
 _.Modules.Events.SetEventInformation(201, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=4,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=3,["year"]=2024}),
