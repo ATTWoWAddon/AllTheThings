@@ -598,7 +598,7 @@ for key,value in pairs({
 		--TODO: ACCOUNT_WIDE_TITLES_TOOLTIP = "Most titles are tracked Account-Wide, but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.";
 
 	-- General: Filters Page
-		ITEM_EXPLAIN_LABEL = "|cffFFFFFFEste contenido se muestra siempre si estas en "..app.ccColors.Account.."Modo Cuenta|cffFFFFFF.|r";
+		ITEM_EXPLAIN_LABEL = "|cffFFFFFFEste contenido se muestra siempre si estás en "..app.ccColors.Account.."Modo Cuenta|cffFFFFFF.|r";
 		CLASS_DEFAULTS_BUTTON = "Predeterminados de Clase";
 		CLASS_DEFAULTS_BUTTON_TOOLTIP = "Haz clic en este botón para restaurar todos los filtros a tus predeterminados de clase.\n\nNOTA: Sólo pueden activarse los filtros que son conseguibles por tu clase.";
 		ALL_BUTTON_TOOLTIP = "Haz clic en este botón para activar todas las opciones a la vez.";
@@ -789,8 +789,8 @@ for key,value in pairs({
 		PROFILE_NEW_TOOLTIP = "Crea un perfil vacío para usarlo en el Personaje actual";
 		PROFILE_COPY_TOOLTIP = "Copia el Perfil seleccionado en el Perfil actual";
 		PROFILE_DELETE_TOOLTIP = "Elimina el Perfil seleccionado";
-		PROFILE_SWITCH_TOOLTIP = "Establece el Perfil seleccionado como el Perfil actual\n\nUn Perfil tambien puede ser clicado con "..SHIFT_KEY_TEXT.." para cambiar a él";
-		SHOW_PROFILE_LOADED = "Muestra que perfil se carga durante el inicio de sesión o cuando se cambia entre perfiles";
+		PROFILE_SWITCH_TOOLTIP = "Establece el Perfil seleccionado como el Perfil actual\n\nUn Perfil también puede ser clicado con "..SHIFT_KEY_TEXT.." para cambiar a él";
+		SHOW_PROFILE_LOADED = "Muestra qué perfil se carga durante el inicio de sesión o cuando se cambia entre perfiles";
 })
 do a[key] = value; end
 
