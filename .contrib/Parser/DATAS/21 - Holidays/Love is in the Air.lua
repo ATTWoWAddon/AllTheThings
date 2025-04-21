@@ -2679,6 +2679,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			i(49916, {	-- Lovely Charm Bracelet
 				["cost"] = { { "i", 49655, 10 } },	-- 10x Lovely Charm
 				["timeline"] = { ADDED_3_3_2, REMOVED_10_2_5 },
+				-- #if BEFORE LEGION
+				["collectible"] = false,
+				-- #endif
 			}),
 			-- #if BEFORE 3.3.2.11403
 			i(22262, {	-- Alliance Gift Collection
