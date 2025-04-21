@@ -232,8 +232,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 					}),
 					i(46860, {	-- Whimsical Skull Mask (Cosmetic)
 						["timeline"] = { ADDED_3_2_2 },
-						-- #if BEFORE LEGION
-						["collectible"] = false,
+						-- #if NOT COMMON_QUALITY_TRANSMOGS
+						-- NOTE: This is an event item that disappears once you finish the quest.
+						-- To collect it, it needs to be in your inventory after common quality transmog is added officially.
+						["ignoreSource"] = true,
 						-- #endif
 					}),
 					i(79048, {	-- Whimsical Skull Mask

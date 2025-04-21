@@ -2679,8 +2679,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			i(49916, {	-- Lovely Charm Bracelet
 				["cost"] = { { "i", 49655, 10 } },	-- 10x Lovely Charm
 				["timeline"] = { ADDED_3_3_2, REMOVED_10_2_5 },
-				-- #if BEFORE LEGION
-				["collectible"] = false,
+				-- #if NOT COMMON_QUALITY_TRANSMOGS
+				-- NOTE: This is an event item that disappears once you finish the quest.
+				-- To collect it, it needs to be in your inventory after common quality transmog is added officially.
+				["ignoreSource"] = true,
 				-- #endif
 			}),
 			-- #if BEFORE 3.3.2.11403
