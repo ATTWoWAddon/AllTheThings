@@ -3410,7 +3410,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			n(QUESTS, {
 				-- q(86329),	-- Delver's Cosmetic Surprise Bag (itemID 233281) [linked to Item]
 				-- q(86328),	-- Delver's Starter Kit (itemID 233276) [linked to Item]
-				q(90780),	-- when Cracked Keystone was obtained (push loot in Fungal Folly?)
+				-- q(90780),	-- when Cracked Keystone was obtained (push loot in Fungal Folly?)
 			}),
 			--Delver's Journey Rewards
 			q(85204),	-- Delver's Dirigible Schematic: Flamethrower (spellID 467083)

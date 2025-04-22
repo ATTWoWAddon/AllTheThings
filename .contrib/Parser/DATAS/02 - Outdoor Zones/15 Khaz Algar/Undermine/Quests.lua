@@ -290,13 +290,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["provider"] = { "n", 225624 },	-- Marin Noggenfogger
 						["coord"] = { 27.4, 70.8, UNDERMINE },
 						["g"] = {
-							o(452866, {	-- Semi-Deluxe Noggenfogger Elixirs
+							o_repeated({
 								["coord"] = { 27.6, 70.9, UNDERMINE },
-								["g"] = { i(226157) },	-- Semi-Deluxe Noggenfogger Elixirs (QI!)
-							}),
-							o(495146, {	-- Semi-Deluxe Noggenfogger Elixirs
-								["coord"] = { 27.6, 70.8, UNDERMINE },
-								["g"] = { i(226157) },	-- Semi-Deluxe Noggenfogger Elixirs (QI!)
+								["g"] = {
+									o(452866),	-- Semi-Deluxe Noggenfogger Elixirs
+									o(495146),	-- Semi-Deluxe Noggenfogger Elixirs
+									i(226157),	-- Semi-Deluxe Noggenfogger Elixirs (QI!)
+								},
 							}),
 						},
 					}),

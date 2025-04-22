@@ -1187,6 +1187,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					},
 				})),
 				o(389471, {	-- Grand Obsidian Cache
+					["description"] = "Can be accessed through the Broken Waygate repaired with an Obsidian Toolkit.",
 					["questID"] = 75047,
 					["sourceQuest"] = 74978,	-- Broken Waygate (repaired)
 					["coord"] = { 29.5, 55.7, THE_FORBIDDEN_REACH },

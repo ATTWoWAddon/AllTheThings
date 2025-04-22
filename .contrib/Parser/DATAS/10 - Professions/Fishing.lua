@@ -894,7 +894,9 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			i(226385),	-- Oxidized Wrench	(COSMETIC!)
 		}),
 		filter(MISC, {
-			i(226392),	-- Careless Dasher's Treasure
+			i(226392, {	-- Careless Dasher's Treasure
+				currency(3055),
+			}),
 			i(225768),	-- Crusty Darkmoon Card
 		}),
 	})),

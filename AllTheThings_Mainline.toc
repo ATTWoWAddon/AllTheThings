@@ -25,8 +25,8 @@
 ## Notes-zhCN: 追踪你所收藏的坐骑、宠物、玩具、幻化等。。|n按你的喜好筛选，或尝试收集所有物品！|n|n每晚构建，每周更新。
 ## Notes-zhTW: 追蹤你所收藏的坐騎、寵物、玩具、塑形等。。|n依你的喜好篩選，或試著收集所有物品！|n|n每晚構建，每週更新。
 ## Version: @project-version@
-## Interface: 110100, 110105
-## X-Interface: 110100, 110105
+## Interface: 110105, 110100
+## X-Interface: 110105, 110100
 ## X-Wago-ID: yQKyY5K7
 ## X-Curse-Project-ID: 267285
 ## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSavedVariables, AllTheThingsSettings, AllTheThingsAD, AllTheThingsProfiles, AllTheThingsAuctionData, AllTheThingsDebugData, AllTheThingsArtifactsItems, AllTheThingsHarvestItems

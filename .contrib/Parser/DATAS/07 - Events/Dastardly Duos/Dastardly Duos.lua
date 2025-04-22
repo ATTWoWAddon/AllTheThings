@@ -235,30 +235,30 @@ root(ROOTS.HiddenQuestTriggers, {
 		n(DASTARDLY_DUOS, {
 			-- In order to clear a bit messup and to sort out more clearly on live
 			-- Week 1:
-			q(87510),	-- fired after first completion Dastardly Duos
+			--q (87510),	-- fired after first completion Dastardly Duos
 			-- Week 2:
-			q(87511),	-- ^ same as above, but week 2
+			--q (87511),	-- ^ same as above, but week 2
 			q(87527),	-- there also was crit for other achievements but I wasn't smart enought to log it
 			q(87528),	-- so it is just 'after first completion Dastardly Duos, week 2'
 			-- Week 3:
-			q(87512),	-- ^ all poped after first run with week 3 quest
-			q(87513),	--
+			-- q(87512),	-- ^ all poped after first run with week 3 quest
+			-- q(87513),	--
 			q(87529),	--
 			q(87530),	--
 			-- Week 4:
 			--q(),	-- didn't fire anything this week?
 			-- Week 5:
-			q(87514),	-- ^ fired after first completion Dastardly Duos, week 5 (with quest)
-			q(87515),	--
+			-- q(87514),	-- ^ fired after first completion Dastardly Duos, week 5 (with quest)
+			-- q(87515),	--
 			q(87531),	--
 			q(87532),	--
 			-- Week 6:
 			--q(),	-- no hqt this week
 			-- Podium Upgrades
-			q(90463),	-- itemID 240203 (Podium Upgrade: Scrappy)
-			q(90464),	-- itemID 240204 (Podium Upgrade: Survival Run)
-			q(90465),	-- itemID 240205 (Podium Upgrade: Time in Spotlights)
-			q(90466),	-- ItemID 240206 (Podium Upgrade: Yards Traveled)
+			-- q(90463),	-- itemID 240203 (Podium Upgrade: Scrappy)
+			-- q(90464),	-- itemID 240204 (Podium Upgrade: Survival Run)
+			-- q(90465),	-- itemID 240205 (Podium Upgrade: Time in Spotlights)
+			-- q(90466),	-- ItemID 240206 (Podium Upgrade: Yards Traveled)
 		}),
 	})),
 });

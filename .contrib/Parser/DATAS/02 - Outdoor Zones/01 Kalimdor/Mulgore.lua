@@ -218,6 +218,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 31.0, 50.6, CAMP_NARACHE },
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
+							["groups"] = { i(49539) },	-- Adana's Torch (QI!)
 						}),
 						q(14458, {	-- Go to Adana
 							["qg"] = 2980,	-- Grull Hawkwind
@@ -271,6 +272,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 27.6, 28.4, CAMP_NARACHE },
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
+							["groups"] = { i(50465) },	-- Water Pitcher (QI!)
 						}),
 						q(24852, {	-- Our Tribe, Imprisoned
 							["qg"] = 2980,	-- Grull Hawkwind
@@ -314,6 +316,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
+								i(49535),	-- Stolen Rifle (QI!)
+								--
 								i(57201, {	-- Robes of the Sun
 									["timeline"] = { ADDED_4_0_3 },
 								}),
@@ -338,6 +342,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
+								i(50473),	-- Mane of Thornmantle (QI!)
+								--
 								i(57203, {	-- Slippers of High Honor
 									["timeline"] = { ADDED_4_0_3 },
 								}),
@@ -413,6 +419,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 15.4, 30.4, CAMP_NARACHE },
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
+							["groups"] = { i(49652) },	-- Water of Vision (QI!)
 						}),
 						q(23733, {	-- Rites of the Earthmother
 							["qg"] = 2981,	-- Chief Hawkwind
@@ -1435,10 +1442,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(5, 5, 1),
 				}),
 				q(751, {	-- The Ravaged Caravan (2/2)
-					["providers"] = {
-						{ "o", 2908 },	-- Sealed Supply Crate
-						{ "i", 4834 },	-- Venture Co. Documents
-					},
+					["provider"] = { "o", 2908 },	-- Sealed Supply Crate
 					["sourceQuest"] = 749,	-- The Ravaged Caravan (1/2)
 					-- #if AFTER CATA
 					["coord"] = { 53.6, 48.4, MULGORE },
@@ -1447,6 +1451,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
+					["groups"] = { i(4834) },	-- Venture Co. Documents (QI!)
 				}),
 				q(14491, {	-- The Restless Earth
 					["qg"] = 36644,	-- Ahmo Thunderhorn

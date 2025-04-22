@@ -1693,6 +1693,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						24999,	-- Planting the Seed of Fear
 						24995,	-- Off the Scales
 					},
+					["coord"] = { 61.6, 34.6, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,

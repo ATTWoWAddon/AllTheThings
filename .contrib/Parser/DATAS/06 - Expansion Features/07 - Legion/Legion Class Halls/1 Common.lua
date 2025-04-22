@@ -1057,33 +1057,35 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					i(152957, { ["timeline"] = { ADDED_7_3_0 } }),	-- Army of the Light Insignia
 					i(152958, { ["timeline"] = { ADDED_7_3_0 } }),	-- Army of the Light Insignia
 					i(141340),	-- Court of Farondis Insignia
-					i(146937),	-- Court of Farondis Insignia
-					i(146943),	-- Court of Farondis Insignia
+					i(146937, { ["timeline"] = { ADDED_7_2_0 } }),	-- Court of Farondis Insignia
+					i(146943, { ["timeline"] = { ADDED_7_2_0 } }),	-- Court of Farondis Insignia
 					i(141339),	-- Dreamweaver Insignia
-					i(146936),	-- Dreamweaver Insignia
-					i(146942),	-- Dreamweaver Insignia
+					i(146936, { ["timeline"] = { ADDED_7_2_0 } }),	-- Dreamweaver Insignia
+					i(146942, { ["timeline"] = { ADDED_7_2_0 } }),	-- Dreamweaver Insignia
 					i(152954, { ["timeline"] = { ADDED_7_3_0 } }),	-- Greater Argussian Reach Insignia
 					i(152955, { ["timeline"] = { ADDED_7_3_0 } }),	-- Greater Army of the Light Insignia
-					i(150927),	-- Greater Court of Farondis Insignia
-					i(150926),	-- Greater Dreamweaver Insignia
-					i(150928),	-- Greater Highmountain Tribe Insignia
-					i(152464),	-- Greater Legionfall Insignia
-					i(150930),	-- Greater Nightfallen Insignia
-					i(150925),	-- Greater Valarjar Insignia
-					i(150929),	-- Greater Wardens Insignia
+					i(150927, { ["timeline"] = { ADDED_7_2_5 } }),	-- Greater Court of Farondis Insignia
+					i(150926, { ["timeline"] = { ADDED_7_2_5 } }),	-- Greater Dreamweaver Insignia
+					i(150928, { ["timeline"] = { ADDED_7_2_5 } }),	-- Greater Highmountain Tribe Insignia
+					i(152464, { ["timeline"] = { ADDED_7_2_5 } }),	-- Greater Legionfall Insignia
+					i(150930, { ["timeline"] = { ADDED_7_2_5 } }),	-- Greater Nightfallen Insignia
+					i(150924, { ["timeline"] = { ADDED_7_2_5 } }),	-- Greater Tribute of the Broken Isles
+					i(150925, { ["timeline"] = { ADDED_7_2_5 } }),	-- Greater Valarjar Insignia
+					i(150929, { ["timeline"] = { ADDED_7_2_5 } }),	-- Greater Wardens Insignia
 					i(141341),	-- Highmountain Tribe Insignia
-					i(146938),	-- Highmountain Tribe Insignia
-					i(146944),	-- Highmountain Tribe Insignia
+					i(146938, { ["timeline"] = { ADDED_7_2_0 } }),	-- Highmountain Tribe Insignia
+					i(146944, { ["timeline"] = { ADDED_7_2_0 } }),	-- Highmountain Tribe Insignia
 					i(146950, { ["timeline"] = { ADDED_7_2_0 } }),	-- Legionfall Insignia [BOA]
 					i(146949, { ["timeline"] = { ADDED_7_2_0 } }),	-- Legionfall Insignia [BOP]
 					i(141343),	-- Nightfallen Insignia
-					i(146946),	-- Nightfallen Insignia
+					i(146940, { ["timeline"] = { ADDED_7_2_0 } }),	-- Nightfallen Insignia
+					i(146946, { ["timeline"] = { ADDED_7_2_0 } }),	-- Nightfallen Insignia
 					i(141338),	-- Valarjar Insignia
-					i(146935),	-- Valarjar Insignia
-					i(146941),	-- Valarjar Insignia
+					i(146935, { ["timeline"] = { ADDED_7_2_0 } }),	-- Valarjar Insignia
+					i(146941, { ["timeline"] = { ADDED_7_2_0 } }),	-- Valarjar Insignia
 					i(141342),	-- Wardens Insignia
-					i(146939),	-- Wardens Insignia
-					i(146945),	-- Wardens Insignia
+					i(146939, { ["timeline"] = { ADDED_7_2_0 } }),	-- Wardens Insignia
+					i(146945, { ["timeline"] = { ADDED_7_2_0 } }),	-- Wardens Insignia
 					-- Misc
 					un(REMOVED_FROM_GAME, i(143478)),	-- Arena Invitation
 					i(143328),	-- Battle Report
@@ -1146,6 +1148,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					i(139828),	-- Queen's Feathers
 					i(139878),	-- Relic of the Ebon Blade
 					i(139876),	-- Rune of Reckoning
+					i(152443, { ["timeline"] = { ADDED_7_3_0 } }),	-- Sanctified Armaments of the Light
 					i(152441, { ["timeline"] = { ADDED_7_3_0 } }),	-- Satchel of Lucidity
 					i(139670),	-- Scream of the Dead
 					i(152934, { ["timeline"] = { ADDED_7_3_0 } }),	-- Shadow-Soaked Stalker Heart

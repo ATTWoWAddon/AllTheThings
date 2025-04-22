@@ -73,12 +73,18 @@ local function DoReport(reporttype, id)
 		app.print(app:Linkify("Contributor Report: "..dialogID, app.Colors.ChatLinkError, "dialog:" .. dialogID));
 		app.Audio:PlayReportSound();
 	end
+
+	-- due to complications with multiple reports in one session of one object, we will only support
+	-- the first report of a given ID for now
+	reportData.REPORTED = true
 end
 
 local function AddReportData(reporttype, id, data)
 	-- app.PrintDebug("Contributor.AddReportData",reporttype,id)
 	-- app.PrintTable(data)
 	local reportData = Reports[reporttype][id]
+	if reportData.REPORTED then app.PrintDebug("Duplicate Report Ignored",reporttype,id) return end
+
 	if type(data) == "table" then
 		for k,v in pairs(data) do
 			reportData[k] = v
@@ -1018,6 +1024,7 @@ MobileDB.GameObject = {
 	[478437] = true,	-- Waiting Garbage Can (q:85514)
 	[478438] = true,	-- Waiting Garbage Can (q:85514)
 	[478443] = true,	-- Mislaid Curiosity (delve object)
+	[478744] = true,	-- Mislaid Curiosity (delve object)
 	[478679] = true,	-- Salvage Part
 	[479594] = true,	-- Depleted Hotrod Battery
 	[487825] = true,	-- Ruffled Pages (q:85589)

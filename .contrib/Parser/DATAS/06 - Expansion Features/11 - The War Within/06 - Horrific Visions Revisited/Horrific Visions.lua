@@ -758,8 +758,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		--q(90530),	-- pop after clearing Valley of Wisdom with 2 masks (new masks sourceQuest?)
 		--q(90529),	-- pop after killing Rexxar with 3 masks (mask sourceQuest?)
 		--
-		q(90709),	-- after using itemID 242622 (Warbound Purifying Kit)
-		q(90710),	-- after using itemID 242623 (Enchanted Warbound Purifying Kit)
+		-- q(90709),	-- after using itemID 242622 (Warbound Purifying Kit)
+		-- q(90710),	-- after using itemID 242623 (Enchanted Warbound Purifying Kit)
 
 		-- combine things for byke
 		--q(),	--
