@@ -2754,6 +2754,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { GOBLIN },
 					["groups"] = {
+						i(52581),	-- SI:7 Emblem (QI!)
+						--
 						i(67154, {	-- Staff of the Unwelcome (CATA)
 							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 						}),
@@ -2964,6 +2966,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.8, 43.4, DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { GOBLIN },
+					["groups"] = { i(60370) },	-- Gar'Thok's Reports (QI!)
 				}),
 				q(26807, {	-- Return to Eitrigg
 					["providers"] = {
@@ -2974,6 +2977,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 53.0, 43.6, DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { GOBLIN },
+					["groups"] = { i(60370) },	-- Gar'Thok's Reports (QI!)
 				}),
 				-- #if AFTER CATA
 				q(6386, {	-- Return to Razor Hill

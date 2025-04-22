@@ -518,6 +518,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		ig(134719),	-- Cold-Touched Ripper					(Removed)
 		ig(2942),	-- Iron Knuckles						(Removed)
+		ig(22317),	-- Lefty's Brass Knuckle				(Removed)
 		ig(134780),	-- Seasoned Ripper						(Removed)
 	}),
 	i(208110, {	-- Quantum Mace			(One-Handed)
@@ -618,7 +619,7 @@ local QUANTUM_GROUP = sharedData({
 			["name"] = "Quantum Wand completed.",
 		}),
 		ig(134728),	-- Cold-Touched Wand					(Removed)
-		ig(134590),	--Vanguard Baton of Light				(Removed)
+		ig(134590),	-- Vanguard Baton of Light				(Removed)
 	}),
 	i(208122, {	-- Quantum Warglaives
 		hqt(77608, {	-- when you learn everything from Quantum Warglaives

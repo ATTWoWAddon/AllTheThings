@@ -4976,7 +4976,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(49873, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	--Sacrificial Writes
+			q(49873, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Sacrificial Writes
 				["sourceQuests"] = {
 					49694,	-- Turn to Drust [A]
 					49944,	-- Turn to Drust [H]

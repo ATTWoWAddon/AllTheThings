@@ -2582,14 +2582,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			q(43677),	-- Hidden Appearance Unlocked - Demonology Warlock
 			q(43678),	-- Hidden Appearance Unlocked - Destruction Warlock
 		})),
-		-- Mage Tower
-		-- q(45849),	-- Tracking Quest - 3+ Targets Trait Complete - completed "A Gift From The Six" (questID 45862)
-		-- q(45850),	-- Tracking Quest - AoE Chosen - completed "A Gift From The Six" (questID 45861)
-		-- q(45851),	-- Dual Boss Trait Complete - completed "A Gift From The Six" (questID 45842)
-		-- q(45852),	-- Healer Trait Complete - completed "A Gift From The Six" (questID 45864)
-		-- q(45853),	-- Melee DPS Trait Complete - completed "A Gift From The Six" (questID 45865)
-		-- q(45854),	-- Ranged DPS Trait Complete - completed "A Gift From The Six" (questID 45866)
-		-- q(45855),	-- Tank Trait Complete - completed "A Gift From The Six" (questID 45863)
 
 		-- Various
 		q(41263),	-- Oh! So Powerful! - triggered after unholy dk artifact power questline

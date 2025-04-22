@@ -2450,7 +2450,7 @@ root(ROOTS.Zones, {
 									["timeline"] = { REMOVED_4_0_1 },
 								}),
 								-- #else
-								i(23143, {	--Design: Purified Shadow Draenite [CATA+] / Design: Dazzling Deep Peridot [TBC] (RECIPE!)
+								i(23143, {	-- Design: Purified Shadow Draenite [CATA+] / Design: Dazzling Deep Peridot [TBC] (RECIPE!)
 									["timeline"] = { REMOVED_4_0_1 },
 								}),
 								-- #endif

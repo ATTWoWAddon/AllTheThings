@@ -1042,7 +1042,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 47.4, 60.9, ISLE_OF_DORN },
 				}),
 				q(82801, {	-- Beetlejeweled
-					["sourceQuests"] = { 82800 },	--A Sedimental Moment
+					["sourceQuests"] = { 82800 },	-- A Sedimental Moment
 					["provider"] = { "n", 224708 },	-- Cenderragg
 					["coord"] = { 47.4, 60.9, ISLE_OF_DORN },
 					["g"] = {

@@ -176,7 +176,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							q(39401, {	-- Destroying the Competition
 								["provider"] = { "n", 94789 },	-- Rolosh Wavechaser
-								["coord"] = { 42.1, 71.0, FROSTFIRE_RIDGE },
+								["coord"] = { 41.6, 72.3, FROSTFIRE_RIDGE },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 39243,	-- Naval Commander
 							}),
@@ -188,7 +188,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							q(39675, {	-- Equipping Our Fleet
 								["provider"] = { "n", 94789 },	-- Rolosh Wavechaser
-								["coord"] = { 42.1, 71.0, FROSTFIRE_RIDGE },
+								["coord"] = { 41.6, 72.3, FROSTFIRE_RIDGE },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 39674,	-- If At First You Fail, Try Again!
 							}),
@@ -200,7 +200,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							q(39604, {	-- I Sunk Your Battleship
 								["provider"] = { "n", 94789 },	-- Rolosh Wavechaser
-								["coord"] = { 42.1, 71.0, FROSTFIRE_RIDGE },
+								["coord"] = { 41.6, 72.3, FROSTFIRE_RIDGE },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 39676,	-- A True Naval Commander
 							}),
@@ -212,7 +212,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							q(39674, {	-- If At First You Fail, Try Again!
 								["provider"] = { "n", 94789 },	-- Rolosh Wavechaser
-								["coord"] = { 42.1, 71.0, FROSTFIRE_RIDGE },
+								["coord"] = { 41.6, 72.3, FROSTFIRE_RIDGE },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 39401,	-- Destroying the Competition
 							}),
@@ -224,7 +224,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							q(39236, {	-- Let's Get To Work
 								["provider"] = { "n", 94789 },	-- Rolosh Wavechaser
-								["coord"] = { 42.1, 71.0, FROSTFIRE_RIDGE },
+								["coord"] = { 41.6, 72.3, FROSTFIRE_RIDGE },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 38259,	-- All Hands on Deck
 							}),
@@ -236,7 +236,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							q(39243, {	-- Naval Commander
 								["provider"] = { "n", 94789 },	-- Rolosh Wavechaser
-								["coord"] = { 42.1, 71.0, FROSTFIRE_RIDGE },
+								["coord"] = { 41.6, 72.3, FROSTFIRE_RIDGE },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 39423,	-- Shipyard Report
 							}),
@@ -248,7 +248,7 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							q(39246, {	-- Naval Domination
 								["provider"] = { "n", 94789 },	-- Rolosh Wavechaser
-								["coord"] = { 42.1, 71.0, FROSTFIRE_RIDGE },
+								["coord"] = { 41.6, 72.3, FROSTFIRE_RIDGE },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 39245,	-- Upgrading The Fleet
 							}),

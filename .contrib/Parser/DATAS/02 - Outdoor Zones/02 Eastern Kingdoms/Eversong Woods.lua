@@ -1942,7 +1942,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						objective(1, {	-- 0/1 Aldaron's Head
 							["provider"] = { "i", 22487 },	-- Aldaron's Head
 							["coord"] = { 32.8, 69.4, EVERSONG_WOODS },
-							["cr"] = 16294,	--Aldaron the Reckless
+							["cr"] = 16294,	-- Aldaron the Reckless
 						}),
 						i(22965),	-- Longshoreman's Bindings
 						i(131240, {	-- Longshoreman's Bracers

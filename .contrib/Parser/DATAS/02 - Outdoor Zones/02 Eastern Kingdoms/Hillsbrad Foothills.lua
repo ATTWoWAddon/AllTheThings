@@ -1413,7 +1413,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/6 Flesh Sample
-							["provider"] = { "i", 63254 },	--Flesh Sample
+							["provider"] = { "i", 63254 },	-- Flesh Sample
 							["crs"] = {
 								47859,	-- Risen Hillsbrad Farmer
 								47861,	-- Risen Hillsbrad Peasant

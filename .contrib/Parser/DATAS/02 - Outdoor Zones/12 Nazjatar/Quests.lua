@@ -331,274 +331,238 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["sourceQuest"] = 55593,	-- Insight into Our Enemies
 		}),
 		q(55821, {	-- Bounty: A Few Coral Ancients
+			["allianceQuestData"] = {
+				["sourceQuest"] = 56156,	-- A Tempered Blade (A)
+				["qg"] = 153509,	-- Artisan Okata (A)
+				["coord"] = { 37.9, 55.7, NAZJATAR },
+			},
+			["hordeQuestData"] = {
+				["sourceQuest"] = 55500,	-- Save a Friend (H)
+				["qg"] = 153512,	-- Finder Pruc (H)
+				["coord"] = { 49.1, 62.2, NAZJATAR },
+			},
 			["isDaily"] = true,
-			["providers"] = {
-				{ "n", 153509 },	-- Artisan Okata
-				{ "n", 153512 },	-- Finder Pruc (H)
-			},
-			["coords"] = {
-				{ 37.9, 55.7, NAZJATAR },	-- Alliance
-				{ 49.1, 62.2, NAZJATAR },	-- Horde
-			},
-			["sourceQuests"] = {
-				56156,	-- A Tempered Blade (A)
-				55500,	-- Save a Friend (H)
-			},
 		}),
 		q(55823, {	-- Bounty: A Few Crabs
+			["allianceQuestData"] = {
+				["sourceQuest"] = 56156,	-- A Tempered Blade (A)
+				["qg"] = 153591,	-- Mikah Brewbelly (A)
+				["coord"] = { 40.0, 55.6, NAZJATAR },
+			},
+			["hordeQuestData"] = {
+				["sourceQuest"] = 55500,	-- Save A Friend (H)
+				["qg"] = 151635,	-- Slen Darkroe (H)
+				["coord"] = { 50.8, 64.7, NAZJATAR },
+			},
 			["isDaily"] = true,
-			["providers"] = {
-				{ "n", 153591 },	-- Mikah Brewbelly (A)
-				{ "n", 151635 },	-- Slen Darkroe (H)
-			},
-			["coords"] = {
-				{ 40.0, 55.6, NAZJATAR },	-- Alliance
-				{ 50.8, 64.7, NAZJATAR },	-- Horde
-			},
-			["sourceQuests"] = {
-				56156,	-- A Tempered Blade (A)
-				55500,	-- Save A Friend (H)
-			},
 		}),
 		q(55825, {	-- Bounty: A Few Fathom Rays
+			["allianceQuestData"] = {
+				["sourceQuest"] = 56156,	-- A Tempered Blade (A)
+				["qg"] = 151772,	-- Ray Tamer Enaka (A)
+				["coord"] = { 39.9, 54.1, NAZJATAR },
+			},
+			["hordeQuestData"] = {
+				["sourceQuest"] = 55500,	-- Save A Friend (H)
+				["qg"] = 153772,	-- Lina Bluegill (H)
+				["coord"] = { 47.4, 63.2, NAZJATAR },
+			},
 			["isDaily"] = true,
-			["providers"] = {
-				{ "n", 151772 },	-- Ray Tamer Enaka
-				{ "n", 153772 },	-- Lina Bluegill
-			},
-			["coords"] = {
-				{ 39.9, 54.1, NAZJATAR },	-- Alliance
-				{ 47.4, 63.2, NAZJATAR },	-- Horde
-			},
-			["sourceQuests"] = {
-				56156,	-- A Tempered Blade (A)
-				55500,	-- Save A Friend (H)
-			},
 		}),
 		q(55820, {	-- Bounty: A Few Hydras
+			["allianceQuestData"] = {
+				["sourceQuest"] = 56156,	-- A Tempered Blade (A)
+				["qg"] = 152942,	-- Lieutenant Hawkins (A)
+				["coord"] = { 40.1, 55.5, NAZJATAR },
+			},
+			["hordeQuestData"] = {
+				["sourceQuest"] = 55500,	-- Save A Friend (H)
+				["qg"] = 151614,	-- Nevin Tideheart  (H)
+				["coord"] = { 49.8, 66.2, NAZJATAR },
+			},
 			["isDaily"] = true,
-			["providers"] = {
-				{ "n", 152942 },	-- Lieutenant Hawkins (A)
-				{ "n", 151614 },	-- Nevin Tideheart  (H)
-			},
-			["coords"] = {
-				{ 40.1, 55.5, NAZJATAR },	-- Alliance
-				{ 49.8, 66.2, NAZJATAR },	-- Horde
-			},
-			["sourceQuests"] = {
-				56156,	-- A Tempered Blade (A)
-				55500,	-- Save A Friend (H)
-			},
 		}),
 		q(55818, {	-- Bounty: A Few Naga
+			["allianceQuestData"] = {
+				["sourceQuest"] = 56156,	-- A Tempered Blade (A)
+				["qg"] = 152942,	-- Lieutenant Hawkins (A)
+				["coord"] = { 40.0, 55.4, NAZJATAR },
+			},
+			["hordeQuestData"] = {
+				["sourceQuest"] = 55500,	-- Save A Friend (H)
+				["qg"] = 151614,	-- Nevin Tideheart  (H)
+				["coord"] = { 49.8, 66.2, NAZJATAR },
+			},
 			["isDaily"] = true,
-			["providers"] = {
-				{ "n", 152942 },	-- Lieutenant Hawkins (A)
-				{ "n", 151614 },	-- Nevin Tideheart  (H)
-			},
-			["coords"] = {
-				{ 40.0, 55.4, NAZJATAR },	-- Alliance
-				{ 49.8, 66.2, NAZJATAR },	-- Horde
-			},
-			["sourceQuests"] = {
-				56156,	-- A Tempered Blade (A)
-				55500,	-- Save A Friend (H)
-			},
 		}),
 		q(55822, {	-- Bounty: A Few Makura
+			["allianceQuestData"] = {
+				["sourceQuest"] = 56156,	-- A Tempered Blade (A)
+				["qg"] = 155941,	-- Tamer Orami (A)
+				["coord"] = { 39.5, 55.4, NAZJATAR },
+			},
+			["hordeQuestData"] = {
+				["sourceQuest"] = 55500,	-- Save A Friend (H)
+				["qg"] = 151352,	-- Lily Bopip  (H)
+				["coord"] = { 47.3, 61.9, NAZJATAR },
+			},
 			["isDaily"] = true,
-			["providers"] = {
-				{ "n", 155941 },	-- Tamer Orami (A)
-				{ "n", 151352 },	-- Lily Bopip  (H)
-			},
-			["coords"] = {
-				{ 39.5, 55.4, NAZJATAR },	-- Alliance
-				{ 47.3, 61.9, NAZJATAR },	-- Horde
-			},
-			["sourceQuests"] = {
-				56156,	-- A Tempered Blade (A)
-				55500,	-- Save A Friend (H)
-			},
 		}),
 		q(55819, {	-- Bounty: A Few Murlocs
+			["allianceQuestData"] = {
+				["sourceQuest"] = 56156,	-- A Tempered Blade (A)
+				["qg"] = 155941,	-- Tamer Orami (A)
+				["coord"] = { 39.5, 55.4, NAZJATAR },
+			},
+			["hordeQuestData"] = {
+				["sourceQuest"] = 55500,	-- Save A Friend (H)
+				["qg"] = 151352,	-- Lily Bopip (H)
+				["coord"] = { 47.3, 61.9, NAZJATAR },
+			},
 			["isDaily"] = true,
-			["providers"] = {
-				{ "n", 155941 },	-- Tamer Orami (A)
-				{ "n", 151352 },	-- Lily Bopip (H)
-			},
-			["coords"] = {
-				{ 39.5, 55.4, NAZJATAR },	-- Alliance
-				{ 47.3, 61.9, NAZJATAR },	-- Horde
-			},
-			["sourceQuests"] = {
-				56156,	-- A Tempered Blade (A)
-				55500,	-- Save A Friend (H)
-			},
 		}),
 		q(55824, {	-- Bounty: A Few Snapdragons
+			["allianceQuestData"] = {
+				["sourceQuest"] = 56156,	-- A Tempered Blade (A)
+				["qg"] = 155940,	-- Enizo (A)
+				["coord"] = { 37.8, 55.5, NAZJATAR },
+			},
+			["hordeQuestData"] = {
+				["sourceQuest"] = 55500,	-- Save A Friend (H)
+				["qg"] = 151618,	-- Asme Seapearl (H)
+				["coord"] = { 50.9, 65.3, NAZJATAR },
+			},
 			["isDaily"] = true,
-			["providers"] = {
-				{ "n", 155940 },	-- Enizo (A)
-				{ "n", 151618 },	-- Asme Seapearl (H)
-			},
-			["coords"] = {
-				{ 37.8, 55.5, NAZJATAR },	-- Alliance
-				{ 50.9, 65.3, NAZJATAR },	-- Horde
-			},
-			["sourceQuests"] = {
-				56156,	-- A Tempered Blade (A)
-				55500,	-- Save A Friend (H)
-			},
 		}),
 		q(55837, {	-- Bounty: Dangerous Creatures
+			["allianceQuestData"] = {
+				["sourceQuest"] = 56156,	-- A Tempered Blade (A)
+				["qg"] = 155941,	-- Tamer Orami (A)
+				["coord"] = { 39.6, 55.5, NAZJATAR },
+			},
+			["hordeQuestData"] = {
+				["sourceQuest"] = 55500,	-- Save A Friend (H)
+				["qg"] = 151352,	-- Lily Bopip (H)
+				["coord"] = { 47.3, 61.9, NAZJATAR },
+			},
 			["isDaily"] = true,
-			["providers"] = {
-				{ "n", 155941 },	-- Tamer Orami (A)
-				{ "n", 151352 },	-- Lily Bopip (H)
-			},
-			["coords"] = {
-				{ 39.6, 55.5, NAZJATAR },	-- Alliance
-				{ 47.3, 61.9, NAZJATAR },	-- Horde
-			},
-			["sourceQuests"] = {
-				56156,	-- A Tempered Blade (A)
-				55500,	-- Save A Friend (H)
-			},
 		}),
 		q(55836, {	-- Bounty: Elite Naga Forces
+			["allianceQuestData"] = {
+				["sourceQuest"] = 56156,	-- A Tempered Blade (A)
+				["qg"] = 152942,	-- Lieutenant Hawkins (A)
+				["coord"] = { 40.0, 55.4, NAZJATAR },
+			},
+			["hordeQuestData"] = {
+				["sourceQuest"] = 55500,	-- Save A Friend (H)
+				["qg"] = 151614,	-- Nevin Tideheart (H)
+				["coord"] = { 50.4, 66.2, NAZJATAR },
+			},
 			["isDaily"] = true,
-			["providers"] = {
-				{ "n", 152942 },	-- Lieutenant Hawkins (A)
-				{ "n", 151614 },	-- Nevin Tideheart (H)
-			},
-			["coords"] = {
-				{ 40.0, 55.4, NAZJATAR },	-- Alliance
-				{ 50.4, 66.2, NAZJATAR },	-- Horde
-			},
-			["sourceQuests"] = {
-				56156,	-- A Tempered Blade (A)
-				55500,	-- Save a Friend (H)
-			},
 		}),
 		q(55830, {	-- Bounty: More Coral Ancients
+			["allianceQuestData"] = {
+				["sourceQuest"] = 56156,	-- A Tempered Blade (A)
+				["qg"] = 153509,	-- Artisan Okata (A)
+				["coord"] = { 37.8, 55.8, NAZJATAR },
+			},
+			["hordeQuestData"] = {
+				["sourceQuest"] = 55500,	-- Save A Friend (H)
+				["qg"] = 153512,	-- Finder Pruc (H)
+				["coord"] = { 49.1, 62.1, NAZJATAR },
+			},
 			["isDaily"] = true,
-			["providers"] = {
-				{ "n", 153512 },	-- Finder Pruc
-				{ "n", 153509 },	-- Artisan Okata
-			},
-			["coords"] = {
-				{ 37.8, 55.8, NAZJATAR },	-- alliance
-				{ 49.1, 62.1, NAZJATAR },	-- horde
-			},
-			["sourceQuests"] = {
-				56156,	-- A Tempered Blade (A)
-				55500,	-- Save A Friend (H)
-			},
 		}),
 		q(55832, {	-- Bounty: More Crabs
+			["allianceQuestData"] = {
+				["sourceQuest"] = 56156,	-- A Tempered Blade (A)
+				["qg"] = 153591,	-- Mikah Brewbelly (A)
+				["coord"] = { 40.0, 55.6, NAZJATAR },
+			},
+			["hordeQuestData"] = {
+				["sourceQuest"] = 55500,	-- Save A Friend (H)
+				["qg"] = 151635,	-- Slen Darkroe (H)
+				["coord"] = { 50.8, 64.7, NAZJATAR },
+			},
 			["isDaily"] = true,
-			["providers"] = {
-				{ "n", 153591 },	-- Mikah Brewbelly (A)
-				{ "n", 151635 },	-- Slen Darkroe (H)
-			},
-			["coords"] = {
-				{ 40.0, 55.6, NAZJATAR },	-- Alliance
-				{ 50.8, 64.7, NAZJATAR },	-- Horde
-			},
-			["sourceQuests"] = {
-				56156,	-- A Tempered Blade (A)
-				55500,	-- Save A Friend (H)
-			},
 		}),
 		q(55834, {	-- Bounty: More Fathom Rays
+			["allianceQuestData"] = {
+				["sourceQuest"] = 56156,	-- A Tempered Blade (A)
+				["qg"] = 151772,	-- Ray Tamer Enaka (A)
+				["coord"] = { 39.8, 54.1, NAZJATAR },
+			},
+			["hordeQuestData"] = {
+				["sourceQuest"] = 55500,	-- Save A Friend (H)
+				["qg"] = 153772,	-- Lina Bluegill (H)
+				["coord"] = { 47.4, 63.2, NAZJATAR },
+			},
 			["isDaily"] = true,
-			["providers"] = {
-				{ "n", 151772 },	-- Ray Tamer Enaka (A)
-				{ "n", 153772 },	-- Lina Bluegill (H)
-			},
-			["coords"] = {
-				{ 39.8, 54.1, NAZJATAR },	-- Alliance
-				{ 47.4, 63.2, NAZJATAR },	-- Horde
-			},
-			["sourceQuests"] = {
-				56156,	-- A Tempered Blade (A)
-				55500,	-- Save a Friend (H)
-			},
 		}),
 		q(55829, {	-- Bounty: More Hydras
+			["allianceQuestData"] = {
+				["sourceQuest"] = 56156,	-- A Tempered Blade (A)
+				["qg"] = 152942,	-- Lieutenant Hawkins (A)
+				["coord"] = { 40.1, 55.5, NAZJATAR },
+			},
+			["hordeQuestData"] = {
+				["sourceQuest"] = 55500,	-- Save A Friend (H)
+				["qg"] = 151614,	-- Nevin Tideheart (H)
+				["coord"] = { 49.8, 66.2, NAZJATAR },
+			},
 			["isDaily"] = true,
-			["providers"] = {
-				{ "n", 152942 },	-- Lieutenant Hawkins (A)
-				{ "n", 151614 },	-- Nevin Tideheart  (H)
-			},
-			["coords"] = {
-				{ 40.1, 55.5, NAZJATAR },	-- Alliance
-				{ 49.8, 66.2, NAZJATAR },	-- Horde
-			},
-			["sourceQuests"] = {
-				56156,	-- A Tempered Blade (A)
-				55500,	-- Save A Friend (H)
-			},
 		}),
 		q(55831, {	-- Bounty: More Makrura
+			["allianceQuestData"] = {
+				["sourceQuest"] = 56156,	-- A Tempered Blade (A)
+				["qg"] = 155941,	-- Tamer Orami (A)
+				["coord"] = { 39.5, 55.4, NAZJATAR },
+			},
+			["hordeQuestData"] = {
+				["sourceQuest"] = 55500,	-- Save A Friend (H)
+				["qg"] = 151352,	-- Lily Bopip (H)
+				["coord"] = { 47.4, 62.0, NAZJATAR },
+			},
 			["isDaily"] = true,
-			["providers"] = {
-				{ "n", 155941 },	-- Tamer Orami (A)
-			--	,	--  (Horde)
-			},
-			["coords"] = {
-				{ 39.5, 55.4, NAZJATAR },	-- Alliance
-			--	{ , , NAZJATAR },	-- Horde
-			},
-			["sourceQuests"] = {
-				56156,	-- A Tempered Blade (A)
-				55500,	-- Save A Friend (H)
-			},
 		}),
 		q(55828, {	-- Bounty: More Murlocs
+			["allianceQuestData"] = {
+				["sourceQuest"] = 56156,	-- A Tempered Blade (A)
+				["qg"] = 155941,	-- Tamer Orami (A)
+				["coord"] = { 39.5, 55.4, NAZJATAR },
+			},
+			["hordeQuestData"] = {
+				["sourceQuest"] = 55500,	-- Save A Friend (H)
+				["qg"] = 151352,	-- Lily Bopip (H)
+				["coord"] = { 47.4, 62.0, NAZJATAR },
+			},
 			["isDaily"] = true,
-			["providers"] = {
-				{ "n", 155941 },	-- Tamer Orami (A)
-				{ "n", 151352 },	-- Lily Bopip (H)
-			},
-			["coords"] = {
-				{ 39.6, 55.4, NAZJATAR },	-- Alliance
-				{ 47.3, 61.9, NAZJATAR },	-- Horde
-			},
-			["sourceQuests"] = {
-				56156,	-- A Tempered Blade (A)
-				55500,	-- Save A Friend (H)
-			},
 		}),
 		q(55827, {	-- Bounty: More Naga
+			["allianceQuestData"] = {
+				["sourceQuest"] = 56156,	-- A Tempered Blade (A)
+				["qg"] = 152942,	-- Lieutenant Hawkins (A)
+				["coord"] = { 40.0, 55.4, NAZJATAR },
+			},
+			["hordeQuestData"] = {
+				["sourceQuest"] = 55500,	-- Save A Friend (H)
+				["qg"] = 151614,	-- Nevin Tideheart (H)
+				["coord"] = { 49.8, 66.2, NAZJATAR },
+			},
 			["isDaily"] = true,
-			["providers"] = {
-				{ "n", 152942 },	-- Lieutenant Hawkins (A)
-				{ "n", 151614 },	-- Nevin Tideheart  (H)
-			},
-			["coords"] = {
-				{ 40.0, 55.4, NAZJATAR },	-- Alliance
-				{ 49.8, 66.2, NAZJATAR },	-- Horde
-			},
-			["sourceQuests"] = {
-				56156,	-- A Tempered Blade (A)
-				55500,	-- Save A Friend (H)
-			},
 		}),
 		q(55833, {	-- Bounty: More Snapdragons
+			["allianceQuestData"] = {
+				["sourceQuest"] = 56156,	-- A Tempered Blade (A)
+				["qg"] = 155940,	-- Enizo (A)
+				["coord"] = { 37.7, 55.4, NAZJATAR },
+			},
+			["hordeQuestData"] = {
+				["sourceQuest"] = 55500,	-- Save A Friend (H)
+				["qg"] = 151618,	-- Asme Seapearl (H)
+				["coord"] = { 50.9, 65.3, NAZJATAR },
+			},
 			["isDaily"] = true,
-			["providers"] = {
-				{ "n", 155940 },	-- Enizo (A)
-				{ "n", 151618 },	-- Asme Seapearl (H)
-			},
-			["coords"] = {
-				{ 37.7, 55.4, NAZJATAR },	-- Alliance
-				{ 50.9, 65.3, NAZJATAR },	-- Horde
-			},
-			["sourceQuests"] = {
-				56156,	-- A Tempered Blade (A)
-				55500,	-- Save A Friend (H)
-			},
 		}),
 		q(56370, {	-- Break a Few Eggs (A)
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
@@ -2151,7 +2115,10 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["provider"] = { "o", 327170 },	-- Weapon Rack
 			["sourceQuest"] = 56047,	-- We Can't Have Dull Weapons
 			["g"] = {
-				i(168516),	-- Azerite Trident (QI!)
+				o(326611, {
+					["coord"] = { 34.7, 21.1, NAZJATAR },
+					["g"] = { i(168516) },	-- Azerite Trident (QI!)
+				}),
 			},
 		}),
 		q(56075, {	-- Stolen Power

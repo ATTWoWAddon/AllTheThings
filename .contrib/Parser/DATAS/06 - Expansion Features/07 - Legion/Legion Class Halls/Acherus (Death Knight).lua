@@ -230,7 +230,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 					}),
 					q(44217, {	-- Armor Fit For A Deathlord
-						["sourceQuest"] = 39761, --Advanced Runecarving
+						["sourceQuest"] = 39761, -- Advanced Runecarving
 						["provider"] = { "n", 93550 },	-- Quartermaster Ozorg
 						["coord"] = { 44.2, 37.5, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
 						["g"] = {

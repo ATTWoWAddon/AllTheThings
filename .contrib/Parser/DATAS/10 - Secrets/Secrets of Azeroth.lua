@@ -767,11 +767,11 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 						["provider"] = { "o", 408976 },	-- Ancient Tome
 						["coord"] = { 47.2, 64.4, KARAZHAN },
 					}))),
-					o(408980, {	--Tyr's Legacy
+					o(408980, {	-- Tyr's Legacy
 						["description"] = "There are three clues inside the Guardian's Library. Pull out your thinking cap to find all three and the final object.",
 						["coord"] = { 33.1, 50.9, KARAZHAN },
 						["g"] = {
-							i(208889),	--Tyr's Legacy
+							i(208889),	-- Tyr's Legacy
 						},
 					}),
 				},

@@ -383,7 +383,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						41554,	-- The Splash Zone
 						41338,	-- Just /Dance
 						41596,	-- Garbage In, Garbage Out
-						--x,	--
+						41711,	-- Conveyor Slayer
 						41119,	-- One Rank Higher
 						41337,	-- Sleep with the Fishes
 						41347,	-- Scheming on a Thing

@@ -34,7 +34,7 @@ local function CollectedAsQuest(t)
 	return app.TypicalCharacterCollected(CACHE_QUESTS, t[KEY_QUEST])
 end
 local function CollectedAsSpell(t)
-	return app.TypicalCharacterCollected(CACHE_SPELLS, t[KEY_SPELL])
+	return app.TypicalCharacterCollected(CACHE_SPELLS, t[KEY_SPELL], SETTING)
 end
 local function SavedAsQuest(t)
 	return app.IsCached(CACHE_QUESTS, t[KEY_QUEST])

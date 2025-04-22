@@ -1120,7 +1120,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				-- from 'big' rares bonus objective
 				i(211303),	-- Dryad's Supply Pouch
 				--
-				q(78890, {	--Emerald Frenzy
+				q(78890, {	-- Emerald Frenzy
 					--["sourceQuests"] = {  },	-- ?
 					["coord"] = { 55.5, 50.0, EMERALD_DREAM },	-- 47.1, 30.3
 					["repeatable"] = true,

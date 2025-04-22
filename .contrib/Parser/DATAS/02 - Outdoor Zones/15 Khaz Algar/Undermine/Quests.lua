@@ -1088,7 +1088,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				}),
 				q(83522, {	-- Debting For A Living
 					["sourceQuest"] = 84242,	-- Diving into the Heaps
-					["provider"] = { "n", 226277 },	--Marty Zoomcart <Public Defender>
+					["provider"] = { "n", 226277 },	-- Marty Zoomcart <Public Defender>
 					["coord"] = { 50.7, 70.2, UNDERMINE },
 				}),
 				q(83524, {	-- Gold In Them There Trash

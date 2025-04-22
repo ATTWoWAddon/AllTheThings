@@ -1387,7 +1387,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 74.9, 88.8, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59263 },	-- Merchant Shi
 						["groups"] = {
-							o(210887, {	--Untainted Supplies
+							o(210887, {	-- Untainted Supplies
 								i(79880),	-- Stolen Supplies (QI!)
 							}),
 						},

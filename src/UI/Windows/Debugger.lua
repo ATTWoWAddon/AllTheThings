@@ -804,6 +804,9 @@ app.LoadDebugger = function()
 									type, zero, server_id, instance_id, zone_uid, id, spawn_uid = ("-"):split(source[j]);
 									-- TODO: test this with Item containers
 									app.print("Add",kind,"Loot",loot,"from",type,id)
+									if not id then
+										app.PrintDebug("Unknown Loot Source:",source[j])
+									end
 									info = {
 										[type == "GameObject" and "objectID" or "npcID"] = tonumber(id),
 										g = { { [kind] = lootID, ["rawlink"] = loot } }

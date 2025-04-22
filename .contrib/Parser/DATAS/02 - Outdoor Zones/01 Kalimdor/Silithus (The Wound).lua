@@ -223,7 +223,13 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 						}),
 						q(55739, {	-- Back to the Chamber (H)
 							["provider"] = { "n", 154465 },	-- Earthen Guardian
-							["coord"] = { 51.0, 88.8, DAZARALOR },
+							["coords"] = {
+								-- #if BEFORE SHADOWLANDS
+								{ 51.0, 88.8, DAZARALOR },
+								-- #else
+								{ 50.4, 41.7, DAZARALOR },
+								-- #endif
+							},
 							["description"] = "Your Heart of Azeroth needs to be 65 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = HORDE_ONLY,
@@ -601,7 +607,13 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 						}),
 						q(55522, {	-- Return to the Heart (H)
 							["provider"] = { "n", 154465 },	-- Earthen Guardian <Messenger of the Speaker>
-							["coord"] = { 51.0, 88.8, DAZARALOR },
+							["coords"] = {
+								-- #if BEFORE SHADOWLANDS
+								{ 51.0, 88.8, DAZARALOR },
+								-- #else
+								{ 50.4, 41.7, DAZARALOR },
+								-- #endif
+							},
 							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = HORDE_ONLY,
@@ -785,7 +797,13 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 						}),
 						q(56260, {	-- Unlocking the Power (H)
 							["provider"] = { "n", 154464 },	-- Earthen Guardian
-							["coord"] = { 51.0, 88.8, DAZARALOR },
+							["coords"] = {
+								-- #if BEFORE SHADOWLANDS
+								{ 51.0, 88.8, DAZARALOR },
+								-- #else
+								{ 50.4, 41.7, DAZARALOR },
+								-- #endif
+							},
 							["description"] = "Your Heart of Azeroth needs to be 70 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = HORDE_ONLY,

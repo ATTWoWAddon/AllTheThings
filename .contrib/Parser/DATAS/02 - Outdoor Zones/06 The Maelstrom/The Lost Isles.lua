@@ -219,6 +219,14 @@ root(ROOTS.Zones, {
 						["coord"] = { 53.1, 36.5, THE_LOST_ISLES },
 						["qg"] = 38124,	-- Assistant Greely
 						["sourceQuest"] = 25109,	-- The Gallywix Labor Mine
+						["groups"] = {
+							o_repeated({
+								o(202552),	-- Kaja'Cola Zero-One
+								o(202553),	-- Kaja'Cola Zero-One
+								o(202554),	-- Kaja'Cola Zero-One
+								i(52483),	-- Kaja'Cola Zero-One (QI!)
+							}),
+						},
 					}),
 					q(25100, {	-- Let's Ride
 						["coord"] = { 33.7, 38.7, THE_LOST_ISLES },
@@ -239,6 +247,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 37.3, 41.9, THE_LOST_ISLES },
 						["qg"] = 38387,	-- Sassy Hardwrench
 						["sourceQuest"] = 25024,	-- Old Friends
+						["groups"] = { i(52280) },	-- Satchel of Grenades (QI!)
 					}),
 					q(14021, {  -- Miner Troubles
 						["coord"] = { 31.2, 79.2, THE_LOST_ISLES },
@@ -326,6 +335,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 51.7, 47.3, THE_LOST_ISLES },
 						["qg"] = 38124,	-- Assistant Greely
 						["sourceQuest"] = 24940,	-- Up the Volcano
+						["groups"] = { i(52024) },	-- Rockin' Powder (QI!)
 					}),
 					q(24929, {	-- Send a Message
 						["coord"] = { 56.5, 71.9, THE_LOST_ISLES },
@@ -425,6 +435,10 @@ root(ROOTS.Zones, {
 						["qg"] = 39065,	-- Aggra
 						["sourceQuest"] = 25024,	-- Old Friends
 						["groups"] = {
+							i(52349),	-- Alexi Silenthowl's Head (QI!)
+							i(52346),	-- Commander Arrington's Head (QI!)
+							i(52347),	-- Darkblade Cyn's Head (QI!)
+							--
 							i(52960),	-- Silver Platter
 							i(52915),	-- Aggra's Sash
 						},
@@ -456,6 +470,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 54.4, 16.9, THE_LOST_ISLES },
 						["qg"] = 38738,	-- Coach Crosscheck
 						["sourceQuest"] = 25184,	-- Wild Mine Cart Ride
+						["groups"] = {
+							o_repeated({
+								o(202607),	-- Spare Shredder Parts
+								o(202608),	-- Spare Shredder Parts
+								i(52530),	-- Spare Shredder Parts (QI!)
+							}),
+						},
 					}),
 					q(14235, {	-- The Vicious Vale
 						["coord"] = { 37.6, 78.0, THE_LOST_ISLES },
@@ -482,6 +503,11 @@ root(ROOTS.Zones, {
 						["qg"] = 39199,	-- Assistant Greely
 						["sourceQuest"] = 25110,	-- Kaja'Cola Gives you IDEAS!™
 						["groups"] = {
+							o(202574, {		-- Blastshadow's Soulstone
+								["coord"] = { 56.6, 33.0, THE_LOST_ISLES },
+								["groups"] = { i(52481) },	-- Blastshadow's Soulstone (QI!)
+							}),
+							--
 							i(52918),	-- Delicia's Tights
 							i(52963),	-- Soulstone Breaker Wristbands
 							i(131843),	-- Soulstone Breaker Bracers
@@ -549,6 +575,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 25265,	-- Victory!
 						-- apparently not necessary for follow up quest 2022-04-17
 						["isBreadcrumb"] = true,
+						["groups"] = { i(52582) },	-- Sealed Package (QI!)
 					}),
 					q(14243, {	-- Warchief's Revenge
 						["coord"] = { 12.4, 63.1, THE_LOST_ISLES },

@@ -180,7 +180,29 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 				un(REMOVED_FROM_GAME, ach(11144)),		-- Power Realized
 			})),
 			ach(11610, {	-- Power Unleashed
-				ach(11609),	-- Power Unbound
+				ach(11609, {	-- Power Unbound
+					crit(35630, {
+						["_quests"] = 45849,	-- Tracking Quest - 3+ Targets Trait Complete - completed "A Gift From The Six" (questID 45862)
+					}),
+					crit(35632, {
+						["_quests"] = 45851,	-- Dual Boss Trait Complete - completed "A Gift From The Six" (questID 45842)
+					}),
+					crit(35820, {
+						["_quests"] = 45855,	-- Tank Trait Complete - completed "A Gift From The Six" (questID 45863)
+					}),
+					crit(35821, {
+						["_quests"] = 45853,	-- Melee DPS Trait Complete - completed "A Gift From The Six" (questID 45865)
+					}),
+					crit(35822, {
+						["_quests"] = 45852,	-- Healer Trait Complete - completed "A Gift From The Six" (questID 45864)
+					}),
+					crit(35823, {
+						["_quests"] = 45854,	-- Ranged DPS Trait Complete - completed "A Gift From The Six" (questID 45866)
+					}),
+					crit(35824, {
+						["_quests"] = 45850,	-- Tracking Quest - AoE Chosen - completed "A Gift From The Six" (questID 45861)
+					}),
+				}),
 			}),
 		}),
 		n(FOLLOWERS, bubbleDownSelf({

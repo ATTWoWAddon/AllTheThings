@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["description"] = "Find a Mark of Ashamane and return to the statute with the buff still active. Druids can activate in cat form.",
 				["coord"] = { 63.4, 72.9, EMERALD_DREAM },
 				["g"] = {
-					o(411065, {	--Reliquary of Ashamane
+					o(411065, {	-- Reliquary of Ashamane
 						["questID"] = 78359,
 						["g"] = {
 							i(210631),	-- Branch of Ashamane (COSMETIC!)
@@ -112,7 +112,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["description"] = "Find a Mark of Ursol and return to the statute with the buff still active. Druids can activate in bear form.",
 				["coord"] = { 47.0, 53.1, EMERALD_DREAM },
 				["g"] = {
-					o(409222, {	--Reliquary of Ursol
+					o(409222, {	-- Reliquary of Ursol
 						["questID"] = 78107,
 						["g"] = {
 							i(210434),	-- Visage of Ursoc (COSMETIC!)
@@ -125,7 +125,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["description"] = "Find a Mark of Goldrinn and return to the statute with the buff still active.",	-- possibly for shamans?
 				["coord"] = { 32.9, 83.1, EMERALD_DREAM },
 				["g"] = {
-					o(411067, {	--Reliquary of Goldrinn
+					o(411067, {	-- Reliquary of Goldrinn
 						["questID"] = 78361,
 						["g"] = {
 							i(210660),	-- Claw of Lo'Gosh (COSMETIC!)

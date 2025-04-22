@@ -45,6 +45,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_5 } }, 
 						["g"] = {
 							i(239546, {	-- Confiscated Cultist's Bag
 								-- TODO: seems like also share vendor stuff
+								i(239563),	-- Shadowbound Leash (MOUNT!)
 								i(241126),	-- Sovereign Sureki Emblem (COSMETIC!)
 							}),
 						},
@@ -303,16 +304,16 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				q(88885),	-- after turn in Sureki Incursion: The Eastern Assault (87480)
 				-- ^ could be NYI on live cause now it seems like counter for achievementID 41998 (Turning the Venom Tide)
 				-- there new one now or it somehow reset (but flag still return as complete for above?)
-				q(88900),	-- 
-				q(88886),	-- 
-				q(88892),	-- 
-				q(88897),	-- 
-				q(88899),	-- 
-				q(88887),	-- 
-				--q(),	-- 
-				--q(),	-- 
-				--q(),	-- 
-				--q(),	-- 
+				q(88900),	--
+				q(88886),	--
+				q(88892),	--
+				q(88897),	--
+				q(88899),	--
+				q(88887),	--
+				--q(),	--
+				--q(),	--
+				--q(),	--
+				--q(),	--
 			}),
 		}),
 	}),

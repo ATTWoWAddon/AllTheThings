@@ -196,7 +196,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 				},
 				["g"] = {
 					n(160708, {	-- Mail Muncher
-						["description"] = "Click the mailbox!",
+						["description"] = "Has a chance to spawn from Mailboxes in either vision.",
 						["coords"] = {
 							{ 40.0, 78.4, HORRIFIC_ORGRIMMAR },
 							{ 52.8, 76.2, HORRIFIC_ORGRIMMAR },

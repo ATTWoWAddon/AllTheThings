@@ -510,9 +510,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["requireSkill"] = FISHING,
 				["g"] = {
 					i(167698, {	-- Secret Fish Goggles
-						["g"] = {
-							i(158932),	-- Secretest Fish
-						},
+						-- #if BEFORE 11.1.5
+						["description"] = "This becomes a toy in 11.1.5.",
+						-- #endif
+						["g"] = { i(158932) },	-- Secretest Fish
 					}),
 					crit(44737, {	-- Bottom Feeding Stinkfish
 						["_quests"] = { 55299 },

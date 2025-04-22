@@ -241,6 +241,7 @@ MobileDB.Creature = {
 	 [86964] = true,	-- Bloodmane Earthbinder(Leorajh)
 	 [86979] = true,	-- Tormak the Scarred <Stable Master>
 	 [87206] = true,	-- Ancient Trading Mechanism
+	 [87242] = true,	-- Sage Paluna
 	 [87991] = true,	-- Cro Threadstrong
 	 [87992] = true,	-- Olaf
 	 [87994] = true,	-- Moroes <Tower Steward>
@@ -366,6 +367,7 @@ MobileDB.GameObject = {
 	[113769] = true,	-- Brightly Colored Egg
 	[113770] = true,	-- Brightly Colored Egg
 	[113771] = true,	-- Brightly Colored Egg
+	[143981] = true,	-- Brightly Colored Egg
 	[148499] = true,	-- Felix's Box (q:3361)
 	[153464] = true,	-- Large Solid Chest
 	[169243] = true,	-- Chest of The Seven (BRD)
@@ -433,9 +435,17 @@ MobileDB.GameObject = {
 	[201735] = true,	-- Defective Generator (q:14125)
 	[201974] = true,	-- Raptor Egg (q:24741)
 	[202198] = true,	-- Steamwheedle Crate (q:25048)
+	[202351] = true,	-- Rockin' Powder (q:24946)
 	[202420] = true,	-- Ancient Hieroglyphs (q:25565)
 	[202470] = true,	-- Bilgewater Footlocker (q:25062)
+	[202552] = true,	-- Kaja'Cola Zero-One (q:25110)
+	[202553] = true,	-- Kaja'Cola Zero-One (q:25110)
+	[202554] = true,	-- Kaja'Cola Zero-One (q:25110)
 	[202606] = true,	-- Stonetear (q:25396)
+	[202609] = true,	-- Valve #1 (q:25204)
+	[202610] = true,	-- Valve #2 (q:25204)
+	[202611] = true,	-- Valve #3 (q:25204)
+	[202612] = true,	-- Valve #4 (q:25204)
 	[202793] = true,	-- Loose Soil (q:25422)
 	[202956] = true,	-- Rocket Car Parts (q:25515)
 	[202957] = true,	-- Rocket Car Parts (q:25515)
@@ -779,6 +789,10 @@ MobileDB.GameObject = {
 	[334734] = true,	-- Glimmering Chest
 	[334735] = true,	-- Glimmering Chest
 	[334736] = true,	-- Glimmering Chest
+	[340023] = true,	-- Diagnostic Console: Uldir (q:58506)
+	[340025] = true,	-- Diagnostic Console: Uldaman (q:58506)
+	[340026] = true,	-- Diagnostic Console: Ulduar (q:58506)
+	[340027] = true,	-- Diagnostic Console: Uldum (q:58506)
 	[340625] = true,	-- Alver's Annals of Strategy (q:58622)
 	[340634] = true,	-- How Not To Lose (q:58622)
 	[340648] = true,	-- How Not To Lose (q:58622)
@@ -1218,6 +1232,13 @@ AddEventFunc("QUEST_PROGRESS", OnQUEST_DETAIL)
 AddEventFunc("QUEST_COMPLETE", OnQUEST_DETAIL)
 
 -- PLAYER_SOFT_INTERACT_CHANGED
+-- Whenever we can't find a ObjectID in ATT data, create a cached version of it so we can keep resolved data
+-- instead of always generating new
+local UnknownObjectsCache = setmetatable({}, { __index = function(t, objectID)
+	local o = app.CreateObject(objectID)
+	t[objectID] = o
+	return o
+end})
 local LastSoftInteract = {}
 local RegisterUNIT_SPELLCAST_START, UnregisterUNIT_SPELLCAST_START
 -- Allows automatically tracking nearby ObjectID's and running check functions on them for data verification
@@ -1281,7 +1302,7 @@ local SpellIDHandlers = {
 		if objRef then return end
 
 		local tooltipName = GameTooltipTextLeft1:GetText()
-		objRef = app.CreateObject(id)
+		objRef = UnknownObjectsCache[id]
 		local objID = objRef.keyval
 		-- report openable object
 		AddReportData(objRef.__type,objID,{
@@ -1305,6 +1326,7 @@ local function OnUNIT_SPELLCAST_START(...)
 	spellHandler(source)
 end
 UnregisterUNIT_SPELLCAST_START = function()
+	if not RegisteredUNIT_SPELLCAST_START then return end
 	-- app.PrintDebug("Unregister.UNIT_SPELLCAST_START")
 	app:UnregisterEvent("UNIT_SPELLCAST_START")
 	RegisteredUNIT_SPELLCAST_START = nil

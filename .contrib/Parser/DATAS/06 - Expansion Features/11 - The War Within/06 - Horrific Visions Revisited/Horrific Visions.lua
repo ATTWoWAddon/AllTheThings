@@ -45,7 +45,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				ach(41983),	-- Memento Mania
 				ach(41896),	-- Memento Mori
 				ach(41928, {	-- Reeking of Visions
-				-- Meta Achievement
+					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
 						41876,	-- The Even More Horrific Vision of Orgrimmar
 						41854,	-- The Even More Horrific Vision of Stormwind
@@ -54,6 +54,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				ach(41859),	-- Thanks For The Mementos
 				ach(41929, {	-- Through the Depths of Visions
+					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
 						41879,	-- The Most Horrific Vision of Orgrimmar
 						41855,	-- The Most Horrific Vision of Stormwind
@@ -104,7 +105,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(88803, {	-- Timely Assistance
 					["sourceQuests"] = { 87336 },	-- Remembering Again and Again
 					["provider"] = { "n", 238337 },	-- Bronze Hourglass
-					["coord"] = { 51.9, 82.7, RE_HORRIFIC_ORGRIMMAR },
+					["coords"] = {
+						{ 51.9, 82.7, RE_HORRIFIC_ORGRIMMAR },
+					},
 					--TODO: ^ missing Stormwind vision coords
 				}),
 				-- Corruptions quest
@@ -172,7 +175,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["g"] = { i(223265) },	-- Nesting Swarmite (MOUNT!)
 				}),
 				n(160708, {	-- Mail Muncher
-					["description"] = "Click the mailbox!",
+					["description"] = "Has a chance to spawn from Mailboxes in either vision.",
 					["coords"] = {
 						{ 40.0, 78.4, RE_HORRIFIC_ORGRIMMAR },
 						{ 52.8, 76.2, RE_HORRIFIC_ORGRIMMAR },
@@ -214,9 +217,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 					["questID"] = 89472,
 					["repeatable"] = true,
-					["g"] = {
-						i(239107),	-- Black Blood Infused Bar
-					},
+					["g"] = { i(239107) },	-- Black Blood Infused Bar
 				}),
 			}),
 			n(SPECIAL, {
@@ -284,7 +285,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				n(238136, {	-- Augermu
 					["sourceQuest"] = 90719,	-- Borrowing Corruption
 					["coord"] = { 35.2, 68.6, DORNOGAL },
-					["g"] = sharedData({ ["cost" ] = {{"c", 3149, 500}} }, {
+					["g"] = sharedData({ ["cost" ] = {{"c", 3149, 500}} }, {	-- 500x Displaced Corrupted Mementos
 						i(238678),	-- Lesser Rune of Echoing Void
 						i(239084),	-- Lesser Rune of Gushing Wound
 						i(239078),	-- Lesser Rune of Infinite Stars
@@ -298,7 +299,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 33.8, 68.6, DORNOGAL },
 					["g"] = {
 						i(242623, {	-- Enchanted Warbound Purifying Kit
-							["cost"] = {{"c", 3149, 2000 }},
+							["cost"] = {{"c", 3149, 2000 }},	-- 2000x Displaced Corrupted Mementos
 						}),
 					},
 				}),
@@ -307,7 +308,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 34.1, 68.5, DORNOGAL },
 					["g"] = {
 						i(242622, {	-- Warbound Purifying Kit
-							["cost"] = {{"c", 3149, 1000 }},
+							["cost"] = {{"c", 3149, 1000 }},	-- 1000x Displaced Corrupted Mementos
 						}),
 					},
 				}),
@@ -316,7 +317,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					-- TODO: all itemIDs is same, just different modID per vendor: 83 (veteran), 82 (champion) 84 (hero)
 					["coord"] = { 33.9, 68.8, DORNOGAL },
 					["sourceAchievement"] = 41873,	-- Incremental Progress
-					["g"] = sharedData({ ["cost"] = {{"c", 3149, 500}} }, {
+					["g"] = sharedData({ ["cost"] = {{"c", 3149, 500}} }, {	-- 500x Displaced Corrupted Mementos
 						-- TODO: sort it out near live release, sorted via listing in vendor for easy self-navigation
 						-- 1
 						i(236903),	-- Void-Touched Glaive
@@ -581,7 +582,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							["coord"] = { 40.5, 60.3, RE_HORRIFIC_ORGRIMMAR },
 							["g"] = { i(174920) },	-- Coifcurl's Close Shave Kit (TOY!)
 						}),
-						o(529677, {	--Void-Forged Engine Block
+						o(529677, {	-- Void-Forged Engine Block
 							["coord"] = { 56.9, 56.8, RE_HORRIFIC_ORGRIMMAR },
 							["questID"] = 90526,
 							["g"] = { i(240189) },	-- Void-Forged Engine Block

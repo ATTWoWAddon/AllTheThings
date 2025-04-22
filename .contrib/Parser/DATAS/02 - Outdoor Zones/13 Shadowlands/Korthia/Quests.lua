@@ -1106,7 +1106,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			}),
 			q(63921, {	-- Ring of Self Reflection
 				["sourceQuests"] = { 64511 },	-- Missing Relics
-				["provider"] = { "i", 187119 },	--Ring of Self Reflection
+				["provider"] = { "i", 187119 },	-- Ring of Self Reflection
 				["coord"] = { 43.8, 76.9, KORTHIA },
 				["g"] = {
 					i(187140),	-- Ring of Duplicity (TOY!)

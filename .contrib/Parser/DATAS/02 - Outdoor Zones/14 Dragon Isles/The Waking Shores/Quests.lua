@@ -1086,7 +1086,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 80.1, 39.9, THE_WAKING_SHORES },
 				}),
 				q(70917, {	-- A Shoulder to Quack On
-					["sourceQuests"] = { 70877 },	--A Quack in Time
+					["sourceQuests"] = { 70877 },	-- A Quack in Time
 					["provider"] = { "n", 196746 },	-- Bubbled Duckling
 					["coord"] = { 81.6, 45.4, THE_WAKING_SHORES },
 				}),

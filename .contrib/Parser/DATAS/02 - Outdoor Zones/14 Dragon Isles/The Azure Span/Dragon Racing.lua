@@ -226,7 +226,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							17969,	-- The Vakthros Ascent Reverse Challenge: Silver
 						}},
 					}),
-					ach(18759, {	--Azure Span Challenge: Gold
+					ach(18759, {	-- Azure Span Challenge: Gold
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",
 							17987,	-- Archive Ambit Challenge: Gold

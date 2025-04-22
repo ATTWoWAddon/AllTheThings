@@ -2026,6 +2026,7 @@ i(239020, 1227076);	-- Tyrannotort
 i(235712, 1218317);	-- Void-Crystal Panther
 i(235705, 1218305);	-- Void-Forged Stallion
 i(235700, 1218229);	-- Void-Scarred Gryphon
+i(239563, 1228865);	-- Void-Scarred Lynx
 i(235706, 1218306);	-- Void-Scarred Pack Mother
 i(235707, 1218307);	-- Void-Scarred Windrider
 i(211089, 428068);	-- Voidfire Deathcycle
@@ -2039,5 +2040,4 @@ i(238967, 1226855);	-- Molten Cormaera
 i(236415, 1219705);	-- Spotted Black Riding Goat
 i(238897, 1226511);	-- Spring Harvesthog
 i(238900, 1226531);	-- Summer Harvesthog
-i(239563, 1228865);	-- Void-Scarred Lynx
 i(238901, 1226532);	-- Winter Harvesthog

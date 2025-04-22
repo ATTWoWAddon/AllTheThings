@@ -242,7 +242,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					},
 				}),
 				e(664, {	-- Lorewalker Stonestep
-					["crs"] = { 56843 },	--Lorewalker Stonestep
+					["crs"] = { 56843 },	-- Lorewalker Stonestep
 					["g"] = {
 						-- Available
 						i(144081, {	-- Girdle of Endemic Anger
@@ -260,7 +260,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 						i(144113, {	-- Windswept Pages
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-
 						-- Removed
 						i(81058, {	-- Girdle of Endemic Anger
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },

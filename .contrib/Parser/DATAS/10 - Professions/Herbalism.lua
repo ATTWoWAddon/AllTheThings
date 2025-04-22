@@ -1103,7 +1103,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 						{ "o", 381203 },	-- Decayed Saxifrage
 						{ "o", 381198 },	-- Decayed Writhebark
 					},
-					["_quests"] = { 72345 },	--Overload Decayed Herb
+					["_quests"] = { 72345 },	-- Overload Decayed Herb
 					["maps"] = { THE_AZURE_SPAN },
 				}),
 				crit(61426, {	-- Overload Infurious Herb

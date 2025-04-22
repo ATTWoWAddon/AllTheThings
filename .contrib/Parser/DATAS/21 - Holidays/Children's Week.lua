@@ -1410,7 +1410,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
 			["groups"] = {
-				objective(1, {	--Kekek taken to visit Bronze Dragonshrine
+				objective(1, {	-- Kekek taken to visit Bronze Dragonshrine
 					["provider"] = { "n", 34387 },	-- Elder Kekek
 					["coords"] = {
 						{ 69.66, 46.25, DRAGONBLIGHT },	-- Path Starts

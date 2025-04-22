@@ -4620,13 +4620,13 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 10,
 				["g"] = {
-					i(163631),	--Sacred Timber (QI!)
+					i(163631),	-- Sacred Timber (QI!)
 				},
 			}),
 			q(53320, {	-- Ours For the Taking
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(163631),	--Sacred Timber (QI!)
+					i(163631),	-- Sacred Timber (QI!)
 				},
 			}),
 			q(53427),	--
