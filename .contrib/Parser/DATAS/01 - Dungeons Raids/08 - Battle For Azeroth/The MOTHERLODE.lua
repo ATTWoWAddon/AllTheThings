@@ -1,6 +1,19 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+local HEROIC_MODS = {}
+local MYTHIC_MODS = {}
+-- #IF AFTER 11.1.0
+-- #IF BEFORE 11.2.0
+-- Blizzard changed the default modID from difficulty to all return the Normal appearance since they made the
+-- BFA Dungeon items in TWW:S2 all change appearance based on their upgrade track
+-- So we need the proper modIDs to represent the original SourceID's from those difficulties
+HEROIC_MODS.modID = 35
+HEROIC_MODS.sharedDescription = "Obtained from M+ 6+ Loot, or Upgraded M+ 0-5 Loot"
+MYTHIC_MODS.modID = 162
+MYTHIC_MODS.sharedDescription = "Obtained from M+ Great Vault @ Myth track, or Upgraded M+ 6+ Loot"
+-- #ENDIF
+-- #ENDIF
 root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	inst(1012, {	-- The MOTHERLODE!!
 		["coords"] = {
@@ -131,69 +144,66 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
-				-- TWW Season 2 removed all heroic sources
-				["g"] = {
-					e(2109, {	-- Coin-Operated Crowd Pummeler
-						["crs"] = { 129214 },	-- Coin-Operated Crowd Pummeler
-						["g"] = {
-							i(159638),	-- Electro-Arm Bludgeoner
-							i(159663),	-- G0-4W4Y Crowd Repeller
-							i(158353),	-- Servo-Arm Bindings
-							i(159357),	-- Linked Pummeler Grips
-							i(155864),	-- Power-Assisted Vicegrips
-							i(158350),	-- Rowdy Reveler's Legwraps
-							i(159462),	-- Footbomb Championship Ring
-						},
-					}),
-					e(2114, {	-- Azerokk
-						["crs"] = { 129227 },	-- Azerokk
-						["g"] = {
-							i(158357),	-- Bindings of Enraged Earth
-							i(158359),	-- Stonefury Vambraces
-							i(159231),	-- Mine Rat's Handwarmers
-							i(159226),	-- Excavator's Safety Belt
-							i(159361),	-- Shalebiter Interlinked Chain
-							i(159725),	-- Unscrupulous Geologist's Belt
-							i(159336),	-- Mercenary Miner's Boots
-							i(159679),	-- Sabatons of Rampaging Elements
-							i(159612),	-- Azerokk's Resonating Heart
-							i(168133),	-- Unrefined Azerite Geode
-							i(168136),	-- Azerokk's Fist
-						},
-					}),
-					e(2115, {	-- Rixxa Fluxflame
-						["crs"] = { 129231 },	-- Rixxa Fluxflame
-						["g"] = {
-							i(159639),	-- P.A.C.I.F.I.S.T.  Mk7
-							i(159287),	-- Cloak of Questionable Intent
-							i(159240),	-- Rixxa's Sweat-Wicking Cuffs
-							i(159305),	-- Corrosive Handler's Gloves
-							i(158341),	-- Chemical Blaster's Legguards
-							i(159451),	-- Leadplate Leegguards
-							i(159235),	-- Deranged Alchemist's Slippers
-						},
-					}),
-					e(2116, {	-- Mogul Razdunk
-						["crs"] = {
-							129232,	-- Mogul Razdunk
-							132713,	-- Mogul Razdunk
-						},
-						["g"] = {
-							ach(12845),	-- Heroic: The MOTHERLODE!!
-							i(159641),	-- G3T-00t
-							i(158364),	-- High Altitude Turban
-							i(159360),	-- Crashguard Spaulders
-							i(159232),	-- Exquisitely Aerodynamic Shoulderpads
-							i(159415),	-- Skyscorcher Pauldrons
-							i(158349),	-- Petticoat of the Self-Stylized Azerite Baron
-							i(158307),	-- Shrapnel-Dampening Chestguard
-							i(159298),	-- Venture Co. Plenipotentiary Vest
-							i(159611),	-- Razdunk's Big Red Button
-						},
-					}),
-				},
-			}),
+			d(DIFFICULTY.DUNGEON.HEROIC, bubbleDownFiltered(HEROIC_MODS,FILTERFUNC_itemID,{
+				e(2109, {	-- Coin-Operated Crowd Pummeler
+					["crs"] = { 129214 },	-- Coin-Operated Crowd Pummeler
+					["g"] = {
+						i(159638),	-- Electro-Arm Bludgeoner
+						i(159663),	-- G0-4W4Y Crowd Repeller
+						i(158353),	-- Servo-Arm Bindings
+						i(159357),	-- Linked Pummeler Grips
+						i(155864),	-- Power-Assisted Vicegrips
+						i(158350),	-- Rowdy Reveler's Legwraps
+						i(159462),	-- Footbomb Championship Ring
+					},
+				}),
+				e(2114, {	-- Azerokk
+					["crs"] = { 129227 },	-- Azerokk
+					["g"] = {
+						i(158357),	-- Bindings of Enraged Earth
+						i(158359),	-- Stonefury Vambraces
+						i(159231),	-- Mine Rat's Handwarmers
+						i(159226),	-- Excavator's Safety Belt
+						i(159361),	-- Shalebiter Interlinked Chain
+						i(159725),	-- Unscrupulous Geologist's Belt
+						i(159336),	-- Mercenary Miner's Boots
+						i(159679),	-- Sabatons of Rampaging Elements
+						i(159612),	-- Azerokk's Resonating Heart
+						i(168133),	-- Unrefined Azerite Geode
+						i(168136),	-- Azerokk's Fist
+					},
+				}),
+				e(2115, {	-- Rixxa Fluxflame
+					["crs"] = { 129231 },	-- Rixxa Fluxflame
+					["g"] = {
+						i(159639),	-- P.A.C.I.F.I.S.T.  Mk7
+						i(159287),	-- Cloak of Questionable Intent
+						i(159240),	-- Rixxa's Sweat-Wicking Cuffs
+						i(159305),	-- Corrosive Handler's Gloves
+						i(158341),	-- Chemical Blaster's Legguards
+						i(159451),	-- Leadplate Leegguards
+						i(159235),	-- Deranged Alchemist's Slippers
+					},
+				}),
+				e(2116, {	-- Mogul Razdunk
+					["crs"] = {
+						129232,	-- Mogul Razdunk
+						132713,	-- Mogul Razdunk
+					},
+					["g"] = {
+						ach(12845),	-- Heroic: The MOTHERLODE!!
+						i(159641),	-- G3T-00t
+						i(158364),	-- High Altitude Turban
+						i(159360),	-- Crashguard Spaulders
+						i(159232),	-- Exquisitely Aerodynamic Shoulderpads
+						i(159415),	-- Skyscorcher Pauldrons
+						i(158349),	-- Petticoat of the Self-Stylized Azerite Baron
+						i(158307),	-- Shrapnel-Dampening Chestguard
+						i(159298),	-- Venture Co. Plenipotentiary Vest
+						i(159611),	-- Razdunk's Big Red Button
+					},
+				}),
+			})),
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, bubbleDown({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {
 				e(2116, {	-- Mogul Razdunk
 					["crs"] = {
@@ -211,8 +221,8 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			})),
-			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				["difficulties"] = { DIFFICULTY.DUNGEON.KEYSTONE, DIFFICULTY.DUNGEON.MYTHIC },
+			d(DIFFICULTY.DUNGEON.MYTHIC, bubbleDownFiltered(MYTHIC_MODS,FILTERFUNC_itemID,{
+				["difficulties"] = { DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE },
 				["g"] = {
 					n(ZONE_DROPS, {
 						ig(161138, {	-- Azerite Inspir-A-Geneering Elixir
@@ -311,7 +321,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						},
 					}),
 				},
-			}),
+			})),
 			n(MYTHIC_PLUS, bubbleDown({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {
 				e(2116, {	-- Mogul Razdunk
 					["crs"] = {

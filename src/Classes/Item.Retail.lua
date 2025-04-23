@@ -238,6 +238,17 @@ app.ImportRawLink = function(group, rawlink, ignoreSource)
 		end
 	end
 end
+-- Removes the color and hyperlink text/formatting from the link string
+local function CleanLink(link)
+	local cleaned = link:lower():gsub("|cniq[0-9]:|h",""):gsub("|h%[.+",""):gsub("|r","")
+	-- wanted this to just work to grab the portion of the link which contains the useful data, but
+	-- it started being dumb, maybe review later
+	-- local cleaned = link:match("[a-z]+[iI]?[dD]?:[%-?%d:]+")
+	return cleaned
+end
+local api = {}
+app.Modules.Item = api
+api.CleanLink = CleanLink
 
 -- TODO: Once Item information is stored in a single source table, this mechanism can reference that instead of using a cache table here
 local CLASS = "Item"
@@ -422,10 +433,10 @@ local itemFields = {
 	bonuses = function(t)
 		local link = t.link
 		if IsRetrieving(link) then return end
-		local itemVals = {(":"):split(link)}
+		local itemVals = {(":"):split(CleanLink(link))}
 
 		-- BonusID count
-		local bonusCount = tonumber(itemVals[15])
+		local bonusCount = tonumber(itemVals[14])
 		if not bonusCount or bonusCount < 1 then
 			t.bonuses = app.EmptyTable
 			return app.EmptyTable
@@ -433,7 +444,7 @@ local itemFields = {
 
 		local bonusID
 		local bonuses = {}
-		for i=16,15 + bonusCount,1 do
+		for i=15,14 + bonusCount,1 do
 			bonusID = tonumber(itemVals[i])
 			if bonusID then
 				bonuses[#bonuses + 1] = bonusID

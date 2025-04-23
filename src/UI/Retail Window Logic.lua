@@ -1195,7 +1195,7 @@ app.TrySearchAHForGroup = function(group)
 	-- local itemID = group.itemID
 	-- if itemID then
 	local name, link = group.name, group.link or group.silentLink
-	if name and HandleModifiedItemClick(link) then
+	if name and app.HandleModifiedItemClick(link) then
 		local AH = app.AH
 		if not AH then AH = {} app.AH = AH end
 		-- AuctionFrameBrowse_Search();	-- doesn't exist
@@ -1614,7 +1614,7 @@ app.AddEventHandler("RowOnClick", function(self, button)
 					-- Not at the Auction House
 					-- If this reference has a link, then attempt to preview the appearance or write to the chat window.
 					local link = reference.link or reference.silentLink;
-					if (link and HandleModifiedItemClick(link)) or ChatEdit_InsertLink(link) then return true; end
+					if app.HandleModifiedItemClick(link) or ChatEdit_InsertLink(link) then return true; end
 
 					if button == "LeftButton" then
 						-- Default behavior is to Refresh Collections.
@@ -1640,13 +1640,8 @@ app.AddEventHandler("RowOnClick", function(self, button)
 					return true;
 				else
 					local link = reference.link or reference.silentLink;
-					-- HandleModifiedItemClick now throws a Lua error when the link is not perfectly-handled
-					-- by LinkUtil.ExtractLink, so we need to test if that will break internally
-					if link then
-						local _, linkOptions, _ = LinkUtil.ExtractLink(link)
-						if linkOptions and HandleModifiedItemClick(link) then
-							return true;
-						end
+					if app.HandleModifiedItemClick(link) then
+						return true
 					end
 				end
 

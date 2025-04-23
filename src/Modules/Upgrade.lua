@@ -19,7 +19,7 @@ local api = {};
 app.Modules.Upgrade = api;
 
 -- Module locals
-local CreateItem, DGU, TransmogLastRefresh, GetGroupItemIDWithModID, GetSourceID, CreateItemSource
+local CreateItem, DGU, TransmogLastRefresh, GetGroupItemIDWithModID, GetSourceID, CreateItemSource, CleanLink
 local Runner = app.CreateRunner("upgrade");
 Runner.SetPerFrameDefault(1)
 
@@ -29,6 +29,10 @@ app.AddEventHandler("OnLoad", function()
 	GetGroupItemIDWithModID = app.GetGroupItemIDWithModID
 	GetSourceID = app.GetSourceID
 	CreateItemSource = app.CreateItemSource
+	CleanLink = app.Modules.Item.CleanLink
+	if not CleanLink then
+		error("Upgrade Module requires Modules.Item.CleanLink definition!")
+	end
 end)
 
 -- Static mapping of BonusID -> Next Unlock BonusID for a corresponding Item. Unlock will most-likely always be an Appearance
@@ -368,15 +372,15 @@ local function GetFirstValueAndKey(t, keys)
 	end
 end
 local function GetNextItemUnlockBonusIDByString(item)
-	local itemVals = {(":"):split(item)}
+	local itemVals = {(":"):split(CleanLink(item))}
 
 	-- BonusID count
-	local bonusCount = tonumber(itemVals[15])
+	local bonusCount = tonumber(itemVals[14])
 	-- app.PrintDebug("Upgrade",item,"BonusCount",bonusCount)
 	if not bonusCount or bonusCount < 1 then return end
 
 	local bonusID, upgrades
-	for i=16,15 + bonusCount,1 do
+	for i=15,14 + bonusCount,1 do
 		bonusID = tonumber(itemVals[i])
 		if bonusID then
 			upgrades = BonusIDNextUnlock[bonusID]
