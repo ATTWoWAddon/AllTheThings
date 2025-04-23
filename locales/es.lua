@@ -468,39 +468,39 @@ end
 local a = L.SETTINGS_MENU;
 for key,value in pairs({
 	-- Common Header
-		--TODO: SKIP_AUTO_REFRESH = "Skip Settings-Toggle Data Refreshes!";
-		--TODO: SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by "..SHIFT_KEY_TEXT.." clicking on an ATT window.";
+		SKIP_AUTO_REFRESH = "Saltar Ajustes-Conmutador de los refrescos de datos!";
+		SKIP_AUTO_REFRESH_TOOLTIP = "Por defecto (desactivado), cualquier cambio de Ajustes que pueda afectar los datos visibles causará un refresco automático.\n\nActivando esta opción, los cambios de Ajustes no tendrán efecto hasta que el Usuario ejecute un Refresco Completo con "..SHIFT_KEY_TEXT.." + clic en una ventana de ATT.";
 
 	-- About Page
 		ABOUT_PAGE = "Información";
-		--TODO: ABOUT_TOP = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|r";
-		--TODO: ABOUT_BOTTOM = "Active Contributors: |CFFFFFFFF(Alphabetical Order)\n%s\n\n|rHall of Fame: |CFFFFFFFF(Alphabetical Order)\n%s\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe). You should absolutely download their addons to get the collection icons on items in your bags! %s %s %s\n\nFor online collection comparing check out DataForAzeroth.com from Shoogen and WoWthing.org from Freddie!|r";
-		--TODO: CLIPBOARDCOPYPASTE = "Ctrl+A, Ctrl+C to Copy to your Clipboard.";
-		--TODO: CURSEFORGE_BUTTON_TOOLTIP = "Click this button to copy the url to get the ALL THE THINGS addon from Curse.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
-		--TODO: DISCORD_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things Discord server.\n\nYou can share your progress/frustrations with other collectors!";
-		--TODO: MERCH_BUTTON_LABEL = "Merch";
-		--TODO: MERCH_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things merchandise store.\n\nHere you can support the AddOn financially and get some cool merch in return!";
-		--TODO: PATREON_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things Patreon page.\n\nHere you can see how you can support the AddOn financially!";
-		--TODO: TWITCH_BUTTON_TOOLTIP = "Click this button to copy the URL to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!";
-		--TODO: WAGO_BUTTON_TOOLTIP = "Click this button to copy the url to get the ALL THE THINGS addon from Wago.io.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
+		ABOUT_TOP = " |CFFFFFFFF es un addon de rastreo de colecciones que te muestra dónde y cómo conseguirlo tódo en el juego! Tenemos una gran comunidad de usuarios en nuestro Discord (enlace el final) donde puedes preguntar, enviar sugerencias y también reportar errores o objetos que falten. Si encuentras algún coleccionable que no está documentado, puedes decirnoslo en el Discord, o para los que tengan más conocimiento técnico, tenemos un Git donde puedes contribuir directamente.\n\nSi bien nos esforzamos mucho por el completado, hay muchas cosas que se añaden al juego en cada parche, así que si nos dejamos algo, por favor entiende que somos un equipo pequeño intentando seguir el ritmo de cambios e intentando coleccionar cosas nosotros también. :D\n\nPuedes preguntarme dudas cuando esté haciendo directos e intentaré responderte lo mejor que pueda, incluso si no está relacionado directamente con ATT (programación de addons del WoW también).\n\n- |r|Cffff8000Crieve|r";
+		ABOUT_BOTTOM = "Colaboradores activos: |CFFFFFFFF(Órden alfabético)\n%s\n\n|rSalón de la Fama: |CFFFFFFFF(Órden alfabético)\n%s\n\nMención especial para AmiYuy (CanIMogIt) y Caerdon (Caerdon Wardrobe). Tienes que descargarte sus addons para tener los iconos de colección de objetos en tus bolsas! %s %s %s\n\nPara comparar en línea la colección deberías visitar DataForAzeroth.com de Shoogen y WoWthing.org de Freddie!|r";
+		CLIPBOARDCOPYPASTE = "Ctrl+A, Ctrl+C para Copiar a tu Portapapeles.";
+		CURSEFORGE_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace del addon ALL THE THINGS en Curse.\n\nPuedes dar este enlace a tus amigos para que arruinen sus vidas también! Te van a perdonar en un futuro...o no.";
+		DISCORD_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace al servidor de Discord de All The Things.\n\nPuedes compartir tu progreso/frustraciones con otros coleccionistas!";
+		MERCH_BUTTON_LABEL = "Merch";
+		MERCH_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace a la tienda de artículos de All The Things.\n\nAquí puedes dar soporte financiero al Addon y conseguir artículos chulos a cambio!";
+		PATREON_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace a la página de Patreon de All The Things.\n\nAquí puedes ver cómo dar soporte financiero al Addon!";
+		TWITCH_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace a mi canal de Twitch.\n\nPuedes preguntarme dudas cuando esté haciendo directos e intentaré responderte lo mejor que pueda!";
+		WAGO_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace del addon ALL THE THINGS en Wago.io.\n\nPuedes dar este enlace a tus amigos para que arruinen sus vidas también! Te van a perdonar en un futuro...o no.";
 
 	-- General Page
-		--TODO: DEBUG_MODE = app.ccColors.Red.."Debug Mode|r (Show Everything)";
-		--TODO: DEBUG_MODE_TOOLTIP = "Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
-		--TODO: ACCOUNT_MODE = app.ccColors.Account.."Account Mode";
-		--TODO: ACCOUNT_MODE_TOOLTIP = "Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.";
-		--TODO: FACTION_MODE = "Faction Only";
-		--TODO: FACTION_MODE_TOOLTIP = "Turn this setting on if you want to see Account Mode data only for races and classes of your current faction.";
-		--TODO: LOOT_MODE = "Loot Mode";
-		--TODO: LOOT_MODE_TOOLTIP = "Enable this option to show loot from all sources.\n\nYou can change which sort of loot displays for you based on the Filters tab.";
-		--TODO: MODE_EXPLAIN_LABEL = "|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all " .. app.ccColors.Insane .. "colored options|cffFFFFFF to unlock ".. app.ccColors.Insane .. "Insane Mode|cffFFFFFF.";
-		--TODO: COMPLETIONIST_MODE = "+Sources";
-		--TODO: COMPLETIONIST_MODE_TOOLTIP = "Enable this Mode to consider Items as Collected only when the specific Item has been unlocked for the given Appearance.\n\nThis means you will need to collect every shared Appearance of an Item.\n\nNote: By default, the game stops telling you about Items you have not collected once you have collected a shared Source, so this will ensure that uncollected Items are tracked.";
-		--TODO: MAIN_ONLY = "Main Only";
-		--TODO: MAIN_ONLY_TOOLTIP = "Turn this setting on if you additionally want ATT to *pretend* that you've earned all shared appearances not locked by a different race or class.\n\nAs an example, if you have collected a Hunter-Only Tier Piece from ICC and there is a shared appearance from the raid without class/race restrictions, ATT will *pretend* that you've earned that source of the appearance as well.\n\nNOTE: Switching to a different race/class will incorrectly report that you've earned appearance sources that you haven't collected for that new chararacter when unlocked in this way.";
-		--TODO: ONLY_RWP = "Only RWP";
-		--TODO: ONLY_RWP_TOOLTIP = "Enable this option to only track transmog that get removed from the game in the future. Only Items tagged with 'removed with patch' data count toward this. If you find an item not tagged that should be tagged, please let me know!\n\nYou can change which sort of loot displays for you based on the Filters tab.";
-		--TODO: UNOFFICIAL_SUPPORT_TOOLTIP = "NOTE: At this time, official support is not provided by WoW's API, but ATT can track items or quest completion to make it functional in the addon.";
+		DEBUG_MODE = app.ccColors.Red.."Modo Debug|r (Muestra todo)";
+		DEBUG_MODE_TOOLTIP = "Literalmente... TODAS LAS COSAS EN EL JUEGO. PUNTO. SI, TODO DE TODO. Incluso las cosas no coleccionables como bolsas, consumibles, ingredientes, etc aparecerán en las listas. (Incluído tú! No, enserio. Mira.)\n\nEsto es sólo para propósitos de Depuración. No está pensado para ser usado para el rastreo de completado.\n\nEste modo se salta todos los filtros, incluyendo no obtenibles.";
+		ACCOUNT_MODE = app.ccColors.Account.."Modo Cuenta";
+		ACCOUNT_MODE_TOOLTIP = "Activa este ajuste si quieres rastrear todas las cosas para tdos tus personajes independientemente de los filtros de clase o raza.\n\nLos filtros de No obtenible aún se aplican.";
+		FACTION_MODE = "Sólo Facción";
+		FACTION_MODE_TOOLTIP = "Activa este ajuste si quieres ver los datos de Modo Cuenta sólo para las razas y clases de tu facción actual.";
+		LOOT_MODE = "Modo botín";
+		LOOT_MODE_TOOLTIP = "Activa esta opción para mostrar el botín de todas las fuentes.\n\nPuedes cambiar el tipo de botín que se muestra en la pestaña de Filtros.";
+		MODE_EXPLAIN_LABEL = "|cffFFFFFFLo que coleccionas se resume en un modo específico. Activa todas las opciones " .. app.ccColors.Insane .. "coloreadas|cffFFFFFF para desbloquear el ".. app.ccColors.Insane .. "Modo Demente|cffFFFFFF.";
+		COMPLETIONIST_MODE = "+Fuentes";
+		COMPLETIONIST_MODE_TOOLTIP = "Activa este Modo para considerar los objetos como Coleccionados sólo cuando un objeto específico se ha desbloqueado para esa Apariencia.\n\nEsto significa que tendrás que coleccionar todas las apariencias compartidas de cada objeto.\n\nNota: Por defecto, el juego para de decirte cosas sobre los objetos que no has coleccionado cuando coleccionas una apariencia con fuente compartida, así que esto se asegura que los objetos no coleccionados son rastreados.";
+		MAIN_ONLY = "Sólo Personaje Principal";
+		MAIN_ONLY_TOOLTIP = "Activa este ajuste si a demás quieres que ATT *finja* que has conseguido todas las apariencias compartidas no bloqueadas por una raza diferente o clase.\n\nComo ejemplo, si has coleccionado una pieza de un conjunto de equipo de ICC sólo disponible para Cazador y hay una apariencia compartida de la banda sin las restricciones de clase/raza, ATT va a *finjir* que también has conseguido esa fuente de apariencia.\n\nNOTA: Cambiar a una raza/clase diferente va a mostrar incorrectamente que has conseguido una fuente de apariencia que no has conseguido para ese nuevo personaje cuando se desbloquea de esta forma.";
+		ONLY_RWP = "Sólo RWP";
+		ONLY_RWP_TOOLTIP = "Activa esta opción para rastrear sólamente las transfiguraciones que serán eliminadas del juego en un futuro. Sólo los objetos etiquetados con 'Eliminado en el Parche' ('removed with patch' o 'RWP') cuentan. Si encuentras un objeto sin etiquetar que debería estarlo, dímelo por favor!\n\nPuedes cambiar el tipo de botín que se muestra en la pestaña de Filtros.";
+		UNOFFICIAL_SUPPORT_TOOLTIP = "NOTA: Actualmente, no hay soporte oficial por parte de la API del WoW, pero ATT puede rastrear objetos o el completado de misiones para hacerlo funcional en el addon.";
 
 	-- General Content
 		GENERAL_CONTENT = "Contenido General";
