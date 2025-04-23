@@ -277,7 +277,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 			L.MODE = "Modo";
 			L.TITLE_COMPLETIONIST = "Completista ";
 			L.TITLE_UNIQUE_APPEARANCE = "Único ";
-			L.TITLE_DEBUG = app.ccColors.Red .. "Debug|R ";
+			L.TITLE_DEBUG = app.ccColors.Red .. "Depuración|R ";
 			L.TITLE_ACCOUNT = app.ccColors.Account .. "Cuenta|R ";
 			L.TITLE_MAIN_ONLY = " (Sólo Principal)";
 			L.TITLE_NONE_THINGS = "Ninguna de las cosas ";
@@ -326,7 +326,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.ICON_LEGEND_LABEL = "Leyenda de iconos";
 		L.ICON_LEGEND_TEXT = app.ccColors.White .. "|T" .. app.asset("status-unobtainable") .. ":0|t " .. "No conseguible" .. "\n|T" .. app.asset("status-prerequisites") .. ":0|t " .. "Conseguible sólo con prerequisitos" .. "\n|T" .. app.asset("status-seasonal-available") .. ":0|t " .. "Contenido temporal disponible" .. "\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t " .. "Contenido temporal no disponible" .. "\n|T374225:0|t " .. "No disponible en tu personaje actual";
 		L.CHAT_COMMANDS_LABEL = "Comandos de Chat";
-		L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFFor|R /things |cffFFFFFFor|R /allthethings\n|cffFFFFFFAbre la lista principal.\n\n|R/att mini |cffFFFFFFor|R /attmini\n|cffFFFFFFAbre la Mini Lista.\n\n|R/att bounty\n|cffFFFFFFAbre una lista de objetos con errores o no confirmados.\n\n|R/att ra |cffFFFFFFor|R /attra\n|cffFFFFFFAbre el Asistente de Banda.\n\n|R/att wq |cffFFFFFFor|R /attwq\n|cffFFFFFFAbre la lista de Misiones de Mundo.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Enlace del objeto]\n|cffFFFFFFAbre una lista con las apariencias compartidas. También funciona con otras cosas, como|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/att rwp\n|cffFFFFFFMuestra todas las cosas con 'Eliminado en el parche' en un futuro.\n\n|R/att random |cffFFFFFFor|R /attrandom |cffFFFFFFor|R /attran\n|cffFFFFFFAbre la lista Aleatoria.\n\n|R/att unsorted\n|cffFFFFFFAbre la lista de objetos sin fuente. Mejor abrir en Modo Debug.\n\n|R/rl\n|cffFFFFFFRecarga tu interfaz de WoW.|R";
+		L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFFor|R /things |cffFFFFFFor|R /allthethings\n|cffFFFFFFAbre la lista principal.\n\n|R/att mini |cffFFFFFFor|R /attmini\n|cffFFFFFFAbre la Mini Lista.\n\n|R/att bounty\n|cffFFFFFFAbre una lista de objetos con errores o no confirmados.\n\n|R/att ra |cffFFFFFFor|R /attra\n|cffFFFFFFAbre el Asistente de Banda.\n\n|R/att wq |cffFFFFFFor|R /attwq\n|cffFFFFFFAbre la lista de Misiones de Mundo.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Enlace del objeto]\n|cffFFFFFFAbre una lista con las apariencias compartidas. También funciona con otras cosas, como|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/att rwp\n|cffFFFFFFMuestra todas las cosas con 'Eliminado en el parche' en un futuro.\n\n|R/att random |cffFFFFFFor|R /attrandom |cffFFFFFFor|R /attran\n|cffFFFFFFAbre la lista Aleatoria.\n\n|R/att unsorted\n|cffFFFFFFAbre la lista de objetos sin fuente. Mejor abrir en Modo Depuración.\n\n|R/rl\n|cffFFFFFFRecarga tu interfaz de WoW.|R";
 
 	-- Sync Window
 		L.ACCOUNT_MANAGEMENT = "Administración de Cuenta";
@@ -348,7 +348,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	-- Binding Localizations
 		L.TOGGLE_ACCOUNT_MODE = "Activar Modo Cuenta";
 		L.TOGGLE_COMPLETIONIST_MODE = "Activar Modo Completista";
-		L.TOGGLE_DEBUG_MODE = "Activar Modo Debug";
+		L.TOGGLE_DEBUG_MODE = "Activar Modo Depuración";
 		L.TOGGLE_FACTION_MODE = "Activar Modo Facción";
 		L.TOGGLE_COMPLETEDTHINGS = "Activar Cosas Completadas (Ambas)";
 		L.TOGGLE_COMPLETEDGROUPS = "Activar Grupos Completados";
@@ -485,7 +485,7 @@ for key,value in pairs({
 		WAGO_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace del addon ALL THE THINGS en Wago.io.\n\nPuedes dar este enlace a tus amigos para que arruinen sus vidas también! Te van a perdonar en un futuro...o no.";
 
 	-- General Page
-		DEBUG_MODE = app.ccColors.Red.."Modo Debug|r (Muestra todo)";
+		DEBUG_MODE = app.ccColors.Red.."Modo Depuración|r (Muestra todo)";
 		DEBUG_MODE_TOOLTIP = "Literalmente... TODAS LAS COSAS EN EL JUEGO. PUNTO. SI, TODO DE TODO. Incluso las cosas no coleccionables como bolsas, consumibles, ingredientes, etc aparecerán en las listas. (Incluído tú! No, enserio. Mira.)\n\nEsto es sólo para propósitos de Depuración. No está pensado para ser usado para el rastreo de completado.\n\nEste modo se salta todos los filtros, incluyendo no obtenibles.";
 		ACCOUNT_MODE = app.ccColors.Account.."Modo Cuenta";
 		ACCOUNT_MODE_TOOLTIP = "Activa este ajuste si quieres rastrear todas las cosas para tdos tus personajes independientemente de los filtros de clase o raza.\n\nLos filtros de No obtenible aún se aplican.";
@@ -504,26 +504,26 @@ for key,value in pairs({
 
 	-- General Content
 		GENERAL_CONTENT = "Contenido General";
-		--TODO: SHOW_INCOMPLETE_THINGS_CHECKBOX = "Show All Trackable Things";
-		--TODO: SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP = "Enable this option if you want to see items, objects, NPCs, and headers which can be tracked within the game without necessarily being considered 'collectible'.\n\nYou can use this to help you earn the Loremaster Achievement if you don't already have it.\n\nNOTE: Rare Spawns and Vignettes also appear in the listing with this setting turned on.";
-		--TODO: SHOW_COMPLETED_GROUPS_CHECKBOX = "Show Completed Groups";
-		--TODO: SHOW_COMPLETED_GROUPS_CHECKBOX_TOOLTIP = "Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.";
-		--TODO: SHOW_COLLECTED_THINGS_CHECKBOX = "Show Collected Things";
-		--TODO: SHOW_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "Enable this option to see Things which have already been Collected.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.";
-		--TODO: FILTER_THINGS_BY_LEVEL_CHECKBOX = "No Level Restrictions";
-		--TODO: FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "Enable this setting if you want to see content available regardless of player level.\n\nNOTE: Disabling this is especially useful on Starter Accounts.";
-		--TODO: FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX = "No Skill Level Restrictions";
-		--TODO: FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX_TOOLTIP = "Disable this setting if you only want to see content available to the maximum possible skill level available to the game environment.";
-		--TODO: SHOW_BOE_CHECKBOX = "BoE/BoA Items";
-		--TODO: SHOW_BOE_CHECKBOX_TOOLTIP = "Enable this setting if you want to show Bind-on-Equip/Account items.\n\nDisabling this setting is useful for when you are trying to finish a Classic Dungeon for a character and don't want to farm specifically for items that can be farmed on alts or on the Auction House.\n\nIE: Don't lose your mind grinding for Pendulum of Doom.";
-		--TODO: IGNORE_FILTERS_FOR_BOES_CHECKBOX = "Ignore BoE/BoA Item Filters";
-		--TODO: IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "Enable this setting if you want to ignore armor, weapon, race, class, or profession requirements for BoE/BoA items.\n\nIf you are trying to collect things for your alts via Auction House scanning, this mode may be useful to you.";
-		--TODO: SHOW_ALL_SEASONAL = "All Seasonal Events";
-		--TODO: SHOW_ALL_SEASONAL_TOOLTIP = "Enable this setting to show all seasonal events, instead of only currently active seasonal events.\n\nNOTE: Seasonal Events will automatically be visible as active 7 days in advance.";
-		--TODO: SHOW_PET_BATTLES_CHECKBOX_TOOLTIP = "Enable this setting if you want to show content which requires Pet Battles within the game.";
-		--TODO: SHOW_PVP_CHECKBOX_TOOLTIP = "Enable this setting if you want to show content which 'may' require Player vs. Player interactions within the game.";
-		--TODO: SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX = "All Learnable Quest Rewards";
-		--TODO: SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX_TOOLTIP = "Disable this option to hide items that are listed as \"Not Available in Personal Loot\" for quests.\n\nThis is useful for tracking items that your class can't use in World Drops, but still marking quests as completed.\n\nSome items can be marked incorrectly: this setting WILL hide items that you can obtain!";
+		SHOW_INCOMPLETE_THINGS_CHECKBOX = "Muestra todas las cosas rastreables";
+		SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver los objetos, PNJs y cabeceras que se pueden rastrear en el juego sin que se consideren 'coleccionables' necesariamente.\n\nPuedes usarlo para ayudarte a conseguir el logro Maestro cultural si aún no lo tienes.\n\nNOTA: Los enemigos Raros y las aventuras también apareceran en el listado con este ajuste activado.";
+		SHOW_COMPLETED_GROUPS_CHECKBOX = "Muestra los grupos completados";
+		SHOW_COMPLETED_GROUPS_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver los grupos completados como cabecera con un porcentaje de completado. Si un grupo no tiene nada relevante para tu clase, este ajuste hará que tambien se muestren estos grupos en el listado.\n\nRecomendamos que desactives este ajuste para conservar espacio en la Mini Lista y te permite ver rápidamente qué te falta de la zona.";
+		SHOW_COLLECTED_THINGS_CHECKBOX = "Muestra las cosas coleccionadas";
+		SHOW_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "Activa esta opción para ver las cosas que ya has coleccionado.\n\nRecomendamos que desactives este ajuste para conservar espacio en la Mini Lista y te permite ver rápidamente qué te falta de la zona.";
+		FILTER_THINGS_BY_LEVEL_CHECKBOX = "Sin restricciones de niveles";
+		FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "Activa este ajuste si quieres ver el contenido disponible sin tener en cuenta el nivel del jugador.\n\nNOTA: Deshabilitar esto es especialmente útil en cuentas Starter.";
+		FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX = "Sin restricciones de habilidad";
+		FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX_TOOLTIP = "Desactiva este ajuste si quieres ver sólo el contenido disponible para el máximo nivel de habilidad de la versión del juego.";
+		SHOW_BOE_CHECKBOX = "Objetos BoE/BoA";
+		SHOW_BOE_CHECKBOX_TOOLTIP = "Activa este ajuste si quieres ver los objetos Se liga al equipar/Cuenta.\n\nDesactivar este ajuste puede ser útil cuando quieres acabar una Mazmorra clásica con un personaje y no quieres conseguir específicamente esos objetos que pueden ser conseguidos con un personaje secundario o en la Casa de Subastas.\n\nPE: No pierdas la cabeza intentando conseguir el Péndulo de Fatalidad.";
+		IGNORE_FILTERS_FOR_BOES_CHECKBOX = "Ignora los filtros de objetos BoE/BoA";
+		IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "Activa este ajuste si quieres ignorar requerimientos de armadura, arma, raza, clase o de profesión para los objetos BoE/BoA items.\n\nSi estás intentando coleccionar cosas para tus personajes secundarios escaneando la Casa de Subastas, este modo puede serte útil.";
+		SHOW_ALL_SEASONAL = "Todos los eventos de temporales";
+		SHOW_ALL_SEASONAL_TOOLTIP = "Activa este ajuste si quieres ver todos los eventos temporales, en vez de sólo los eventos temporales activos.\n\nNOTA: Los eventos temporales se van a mostrar como activos automáticamente 7 días antes del inicio.";
+		SHOW_PET_BATTLES_CHECKBOX_TOOLTIP = "Activa este ajuste si quieres ver el contenido que requiere Batallas de mascotas en el juego.";
+		SHOW_PVP_CHECKBOX_TOOLTIP = "Activa este ajuste si quieres ver el contenido que 'pueda' requerir interacciones Jugador contra Jugador en el juego.";
+		SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX = "Todas las recompensas de misión que se pueden aprender";
+		SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX_TOOLTIP = "Desactiva esta opción para esconder objetos marcados como \"No disponible en Botín Personal\" en misiones.\n\nEsto es útil para rastrear objetos que tu clase no puede usar de Botín de mundo, pero marcando las misiones como completadas.\n\nAlgunos objetos pueden marcarse incorrectamente: este ajuste ESCONDERÁ objetos que puedes obtener!";
 
 		-- Collectible Things
 		ACC_WIDE_DEFAULT = "Rastreado ".. app.ccColors.Account .. "Para toda la cuenta|R por defecto.";
@@ -539,7 +539,7 @@ for key,value in pairs({
 		BATTLE_PETS_CHECKBOX = "Mascotas de duelo";
 		BATTLE_PETS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrar Mascotas de duelo y acompañantes. Pueden ser encontrados en el mundo abierto o a través de botín de jefe en varias mazmorras y bandas así como vendedores y reputaciones.";
 		DEATHS_CHECKBOX = "Muertes";
-		DEATHS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear cada vez que uno de tus personajes muere y lo muesstra como una sección de coleccionable en el addon.\n\nNOTA: Si lo desactivas, lo seguiremos rastreando, pero simplemente no mostraremos la estadística a no ser que estés en Modo Debug.";
+		DEATHS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear cada vez que uno de tus personajes muere y lo muesstra como una sección de coleccionable en el addon.\n\nNOTA: Si lo desactivas, lo seguiremos rastreando, pero simplemente no mostraremos la estadística a no ser que estés en Modo Depuración.";
 		EXPLORATION_CHECKBOX = "Exploración";
 		EXPLORATION_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear el completado de exploración para los mapas exteriores.";
 		FLIGHT_PATHS_CHECKBOX = "Puntos de vuelo";
