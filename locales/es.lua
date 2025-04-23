@@ -436,6 +436,8 @@ for key,value in pairs({
 		--TODO: ["Battle for Azeroth"] = "BFA",
 		--TODO: ["The Shadowlands"] = "SL",
 		--TODO: ["Shadowlands"] = "SL",
+		["Las Tierras Sombrías"] = "SL",
+		["Shadowlands"] = "SL",
 		["Jugador contra Jugador"] = "JcJ",
 		["Buscador de bandas"] = "LFR",
 		--TODO: ["Looking For Raid"] = "LFR",
@@ -449,7 +451,7 @@ for key,value in pairs({
 		["25 jugadores"] = "25M",
 		["25 jugadores (Heroico)"] = "25M (H)",
 		--TODO: ["Emissary Quests"] = "Emisario",
-		--TODO: [TRACKER_HEADER_WORLD_QUESTS] = "WQ",	-- ["World Quests"] = "WQ"
+		[TRACKER_HEADER_WORLD_QUESTS] = "WQ",	-- ["World Quests"] = "WQ"
 		--TODO: ["WoW Anniversary"] = "Aniversario",
 		["Curia:"] = "Curia:",
 })
@@ -582,20 +584,20 @@ for key,value in pairs({
 		CHARACTERUNLOCKS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrar los Desbloqueos de personaje. Son varios debloqueos de personaje que no son claramente categorizables en otro sitio (e.g. variantesde Maleficio, variantes de Polimorfia, especies domables desbloqueadas de cazador, personalizaciones de Pocopoc, etc.)\n\nRastreado por personaje por defecto.";
 
 		-- Account-Wide Checkboxes
-		--TODO: ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "Achievement tracking is usually Account-Wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";
-		--TODO: ACCOUNT_WIDE_APPEARANCES_TOOLTIP = "Transmog should be collected account wide. Certain items cannot be learned by every class, so ATT will do its best to only show you things that you can collect on your current character.";
-		--TODO: ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = "Azerite Essences cannot technically be collected and used Account-Wide, but if you only care about collecting them on your main character then you may prefer tracking them Account-Wide.";
-		--TODO: ACCOUNT_WIDE_BATTLE_PETS_TOOLTIP = "Companion pets can be collected on multiple characters and realistically would require that you have an insane amount of bag space in order to collect them all on one character.\n\nWe recommend you keep this turned on, but you do you fam.";
-		--TODO: ACCOUNT_WIDE_CHARACTERUNLOCKS_TOOLTIP = "Consider any Character Unlock collected if any character has collected it.";
-		--TODO: ACCOUNT_WIDE_DEATHS_TOOLTIP = "Death tracking really only exists for pre-Wrath Classic where a statistic wasn't available to know this information. Once achievements were implemented, this feature instead acquires data directly from the statistics API. You can use the tooltip on the Death Tracker to se";
-		--TODO: ACCOUNT_WIDE_EXPLORATION_TOOLTIP = "Exploration tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?";
-		--TODO: ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = "Flight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?";
-		--TODO: ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = "Followers are typically per character, but do you really want to have to collect 243 Garrison Inn Followers on one character at a rate of 1 per week?\n\nI think not, good sir.";
-		--TODO: ACCOUNT_WIDE_QUESTS_TOOLTIP = "Quest completion is typically per Character, but this will consider a Quest as completed if ANY Character has completed that specific Quest.";
-		--TODO: ACCOUNT_WIDE_RECIPES_TOOLTIP = "Recipes are not normally tracked Account-Wide in Blizzard's database, but we can do that.\n\nIt is impossible to collect them all on one character, so with this, you can give your alts and their professions meaning.";
-		--TODO: ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "Reputations are now tracked Account-Wide in Blizzard's database for achievements, so turning this on may be a good idea.";
-		--TODO: ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = "Enable this to consider a Soulbind Conduit as collected for all characters if at least one character has learned it.";
-		--TODO: ACCOUNT_WIDE_TITLES_TOOLTIP = "Most titles are tracked Account-Wide, but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.";
+		ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "El rastreo de Logros normalmente es a nivel de toda la Cuenta, pero hay un numero de logros exclusivos de clases y razas que no puedes conseguir con tu personaje principal.";
+		ACCOUNT_WIDE_APPEARANCES_TOOLTIP = "Las transfiguraciones deben ser coleccionadas en toda la cuenta. Algunos objetos no pueden ser aprendidos por todas las clases, así que ATT hará lo posible para sólo mostrarte cosas que puedas coleccionar con tu personaje actual.";
+		ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = "Las Esencia de azerita técnicamente no pueden ser coleccionadas y usadas a nivel de Cuenta, pero si sólo te importa coleccionarlas en tu personaje principal entonces puede que prefieras rastrearlas a nivel de toda la cuenta.";
+		ACCOUNT_WIDE_BATTLE_PETS_TOOLTIP = "Las mascotas de compañia pueden coleccionarse con múltiples personajes y realmente requeriria que tuvieses un montón de espacio en las bolsas para poder coleccionarlas todas en un personaje.\n\nRecomendamos mantejer esto activado, pero cada quién hace lo que quiere.";
+		ACCOUNT_WIDE_CHARACTERUNLOCKS_TOOLTIP = "Considerar cualquier desbloqueo coleccionado si algun personaje lo ha coleccionado.";
+		ACCOUNT_WIDE_DEATHS_TOOLTIP = "EL rastreo de muertes realmente sólo existe antes de la Wrath de Classic donde no había la estadística para saber esta información. Cuando se implementaron los logros, esta función recoge esta información de la API de estadísticas. Puedes usar la ventana emergente del Rastreador de Muertes para verlo";
+		ACCOUNT_WIDE_EXPLORATION_TOOLTIP = "El rastreado de Exploración es sólo útil por personaje, pero realmente quieres tener que coleccionarlos todos en todos tus 50 personajes?";
+		ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = "El rastreado de puntos de vuelo es sólo útil por personaje, pero realmente quieres tener que coleccionarlos todos en todos tus 50 personajes?";
+		ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = "Los seguidores normalmente son por Personaje, pero realmente quieres tener que coleccionar los 243 seguidores de Ciudadela en uno de tus personajes a un ritmo de 1 por semana?\n\nNo lo creo, mi señor.";
+		ACCOUNT_WIDE_QUESTS_TOOLTIP = "El completado de misiones normalmente es por Personaje, pero esto considerará una misión como completada si CUALQUIER personaje ha completado esa misión en específico.";
+		ACCOUNT_WIDE_RECIPES_TOOLTIP = "Las recetas normalmente no son rastreadas a nivel de toda la cuenta en la base de datos de Blizzard, pero nosotros podemos hacerlo.\n\nEs imposible collecionarlas todas en un personaje, así que con esto, puedes dar a tus personajes secundarios y a sus profesiones un sentido.";
+		ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "Las reputaciones ahora son rastreadas a nivel de toda la cuenta en la base de datos de Blizzard para los logros, así que activar esto puede ser buena idea.";
+		ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = "Activa esto para considerar los conductos de nexo de almas como coleccionados en todos los personajes si almenos uno de ellos los ha aprendido.";
+		ACCOUNT_WIDE_TITLES_TOOLTIP = "La mayoría de títulos son rastreados a nivel de toda la cuenta, pero algunos títulos prestigiosos en el WoW estan bloqueados al personaje que los ganó.\n\nActiva esto si no te importa eso y quieres ver esos títulos marcados como Completados en tus personajes secundarios.";
 
 	-- General: Filters Page
 		ITEM_EXPLAIN_LABEL = "|cffFFFFFFEste contenido se muestra siempre si estás en "..app.ccColors.Account.."Modo Cuenta|cffFFFFFF.|r";
