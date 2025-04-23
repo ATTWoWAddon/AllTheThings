@@ -8,6 +8,18 @@ local appName, app = ...
 local ipairs,math_floor
 	= ipairs,math.floor
 
+-- Give a safe way to use HandleModifiedItemClick since Blizzard made it unsafe in 11.1.5
+-- HandleModifiedItemClick now throws a Lua error when the link is not perfectly-handled
+-- by LinkUtil.ExtractLink, so we need to test if that will break internally
+app.HandleModifiedItemClick = function(link)
+	if link then
+		local _, linkOptions, _ = LinkUtil.ExtractLink(link)
+		if linkOptions and HandleModifiedItemClick(link) then
+			return true
+		end
+	end
+end
+
 -- Clickable ATT Chat Link Handling
 local reports = {};
 function app:SetupReportDialog(id, reportMessage, text)
@@ -42,7 +54,7 @@ hooksecurefunc("SetItemRef", function(link, text)
 			if IsShiftKeyDown() then
 				-- If this reference has a link, then attempt to preview the appearance or write to the chat window.
 				local link = group.link or group.silentLink;
-				if (link and HandleModifiedItemClick(link)) or ChatEdit_InsertLink(link) then return true; end
+				if (app.HandleModifiedItemClick(link)) or ChatEdit_InsertLink(link) then return true; end
 			end
 
 			app:CreateMiniListForGroup(group);

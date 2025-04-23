@@ -47,7 +47,6 @@ local InCombatLockdown = _G.InCombatLockdown;
 local IsInInstance = IsInInstance
 
 -- WoW API Cache;
-local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetSpellName = app.WOWAPI.GetSpellName;
 local GetTradeSkillTexture = app.WOWAPI.GetTradeSkillTexture;
 
@@ -61,6 +60,7 @@ local CacheFields, SearchForField, SearchForFieldContainer, SearchForObject
 	= app.CacheFields, app.SearchForField, app.SearchForFieldContainer, app.SearchForObject
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local GetProgressColorText = app.Modules.Color.GetProgressColorText;
+local CleanLink = app.Modules.Item.CleanLink
 local TryColorizeName = app.TryColorizeName;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 local ATTAccountWideData;
@@ -2236,10 +2236,9 @@ local function GetSearchResults(method, paramA, paramB, options)
 	-- Determine if this is a cache for an item
 	local itemString
 	if rawlink then
-		-- paramA
-		itemString = rawlink:match("item[%-?%d:]+");
 		if not paramB then
-			if itemString then
+			itemString = CleanLink(rawlink)
+			if itemString:match("item") then
 				-- app.PrintDebug("Rawlink SourceID",sourceID,rawlink)
 				local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, linkModID, numBonusIds, bonusID1 = (":"):split(itemString);
 				if itemID then
@@ -2260,6 +2259,7 @@ local function GetSearchResults(method, paramA, paramB, options)
 					end
 				end
 			else
+				itemString = nil
 				local kind, id = (":"):split(rawlink);
 				kind = kind:lower();
 				if id then id = tonumber(id); end
@@ -3174,10 +3174,10 @@ local KeyMaps = setmetatable({
 }, { __index = function(t,key) return key:gsub("id", "ID") end})
 
 local function SearchForLink(link)
-	local itemString = link:match("item[%-?%d:]+")
-	if itemString then
+	local itemString = CleanLink(link)
+	if itemString:match("item:") then
 		-- Parse the link and get the itemID and bonus ids.
-		-- app.PrintDebug(itemString)
+		-- app.PrintDebug("item",itemString)
 		local linkData = {(":"):split(itemString)}
 		-- app.PrintTable(linkData)
 		local itemID = linkData[2]
@@ -3238,21 +3238,15 @@ local function SearchForLink(link)
 		end
 	end
 
-	local kind, id, id2, id3 = (":"):split(link);
-	kind = kind:lower();
-	if kind:sub(1,2) == "|c" then
-		kind = kind:sub(11);
-	end
-	if kind:sub(1,2) == "|h" then
-		kind = kind:sub(3);
-	end
-	if id then id = tonumber(select(1, ("|["):split(id)) or id); end
+	local kind, id, id2, id3 = (":"):split(itemString)
+	kind = kind:lower()
+	if id then id = tonumber(id) end
 	if not id or not kind then
 		-- can't search for nothing!
 		return;
 	end
 	--print(link:gsub("|c", "c"):gsub("|h", "h"));
-	-- app.PrintDebug("SFL",kind,">",KeyMaps[kind],id,">")
+	-- app.PrintDebug("SFL",itemString,kind,">",KeyMaps[kind],id,id2,id3)
 	kind = (KeyMaps[kind].."ID"):gsub("IDID", "ID")
 	if kind == "modItemID" then
 		if not id2 and not id3 then
@@ -6385,10 +6379,13 @@ customWindowUpdates.list = function(self, force, got)
 			if sourceID and sourceID > 0 then
 				-- only save the source if it is different than what we already have, or being forced
 				if not source or source < 1 or source ~= sourceID then
-					-- app.print("SourceID Update",link,data.modItemID,source,"=>",sourceID);
 					-- print(GetItemInfo(text))
-					data.sourceID = sourceID;
-					app.SaveHarvestSource(data);
+					if not source then
+						-- app.print("SourceID Update",link,data.modItemID,source,"=>",sourceID);
+						data.sourceID = sourceID
+						app.SaveHarvestSource(data)
+					-- else app.PrintDebug("SourceID Diff!",link,source,"=>",sourceID)
+					end
 				end
 			end
 			return true

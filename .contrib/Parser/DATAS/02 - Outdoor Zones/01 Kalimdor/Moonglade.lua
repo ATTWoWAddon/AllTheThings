@@ -452,7 +452,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 47,
 					["groups"] = {
 						objective(1, {	-- 0/3 Elemental Gate closed
+							["provider"] = { "o", 207103 },	-- Elemental Gate
+						}),
+						objective(2, {	-- 0/1 Breath of Cenarius
 							["provider"] = { "i", 63469 },	-- Breath of Cenarius
+							["cr"] = 9024,	-- Pyromancer Loregrain
 						}),
 						i(65638, {	-- Headdress of the Green Circle
 							["timeline"] = { ADDED_4_0_3 },
