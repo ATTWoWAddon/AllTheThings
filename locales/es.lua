@@ -423,24 +423,11 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 local a = L.ABBREVIATIONS;
 for key,value in pairs({
 		["Antorus, el Trono Ardiente"] = "Antorus",	-- ["Antorus, the Burning Throne"] = "Antorus"
-		--TODO: ["Expansion Pre"] = "Pre",
-		--TODO: ["Expansion Features"] = "EF",
-		--TODO: [GROUP_FINDER] = "D&R",	-- ["Dungeons & Raids"] = "D&R"
-		--TODO: ["The Burning Crusade"] = "BC",
-		--TODO: ["Burning Crusade"] = "BC",
-		--TODO: ["The BC"] = "BC",
-		--TODO: ["Wrath of the Lich King"] = "WotLK",
-		--TODO: ["Cataclysm "] = "Cata ",
-		--TODO: ["Mists of Pandaria"] = "MoP",
-		--TODO: ["Warlords of Draenor"] = "WoD",
-		--TODO: ["Battle for Azeroth"] = "BFA",
-		--TODO: ["The Shadowlands"] = "SL",
-		--TODO: ["Shadowlands"] = "SL",
+		["Cataclismo "] = "Cata ",
 		["Las Tierras Sombrías"] = "SL",
 		["Shadowlands"] = "SL",
 		["Jugador contra Jugador"] = "JcJ",
 		["Buscador de bandas"] = "LFR",
-		--TODO: ["Looking For Raid"] = "LFR",
 		["Normal"] = "N",
 		["Heroica"] = "H",
 		["Mítica"] = "M",
@@ -450,9 +437,7 @@ for key,value in pairs({
 		["10 jugadores (Heroico)"] = "10M (H)",
 		["25 jugadores"] = "25M",
 		["25 jugadores (Heroico)"] = "25M (H)",
-		--TODO: ["Emissary Quests"] = "Emisario",
 		[TRACKER_HEADER_WORLD_QUESTS] = "WQ",	-- ["World Quests"] = "WQ"
-		--TODO: ["WoW Anniversary"] = "Aniversario",
 		["Curia:"] = "Curia:",
 })
 do a[key] = value; end
