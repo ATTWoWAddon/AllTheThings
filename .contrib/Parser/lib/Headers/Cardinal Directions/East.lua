@@ -3,6 +3,7 @@ EAST = createHeader({
 	icon = 450908,
 	text = {
 		en = "East",
+		es = "Este",
 		fr = "Est",
 		ru = "Восток",
 		cn = "东部",
