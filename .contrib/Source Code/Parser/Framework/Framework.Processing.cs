@@ -647,7 +647,9 @@ namespace ATT
             // Crieve wants objectives and doesn't agree with this, but will allow it outside of Classic Builds.
             if (data.ContainsKey("objectiveID") && !Program.PreProcessorTags.ContainsKey("OBJECTIVES"))
             {
-                ConvertObjectiveData(data, parentData);
+                // capture the parent relationship here since we are removing the objective data
+                data["_parent"] = parentData;
+                AddPostProcessing(ConvertObjectiveData, data);
                 return false;
             }
 
@@ -3793,10 +3795,13 @@ namespace ATT
             return true;
         }
 
-        private static void ConvertObjectiveData(IDictionary<string, object> data, IDictionary<string, object> parentData)
+        private static void ConvertObjectiveData(IDictionary<string, object> data)
         {
             // Grab any coords for this objective if existing
             data.TryGetValue("coords", out List<object> coords);
+
+            if (!data.TryGetValue("_parent", out IDictionary<string, object> parentData))
+                return;
 
             // Convert various 'providers' data into sub-groups on the parent data
             if (data.TryGetValue("providers", out List<object> providers))
@@ -3812,12 +3817,15 @@ namespace ATT
                     {
                         // Items can simply be Sourced under the parent
                         case "i":
-                            providerData = new Dictionary<string, object> { { "itemID", pID } };
-                            Objects.Merge(parentData, "g", providerData);
+                            if (!TryGetSOURCED("itemID", pID, out _))
+                            {
+                                providerData = new Dictionary<string, object> { { "itemID", pID } };
+                                Objects.Merge(parentData, "g", providerData);
+                            }
                             break;
                         // Objects can be Sourced under the parent with attached coords if any
                         case "o":
-                            if (IsObtainableData(parentData))
+                            if (!TryGetSOURCED("objectID", pID, out _) && IsObtainableData(parentData))
                             {
                                 providerData = new Dictionary<string, object> { { "objectID", pID } };
                                 if (coords != null)
@@ -3829,7 +3837,7 @@ namespace ATT
                             break;
                         // NPCs can be Sourced under the parent with attached coords if any
                         case "n":
-                            if (IsObtainableData(parentData))
+                            if (!TryGetSOURCED("npcID", pID, out _) && IsObtainableData(parentData))
                             {
                                 providerData = new Dictionary<string, object> { { "npcID", pID } };
                                 if (coords != null)
