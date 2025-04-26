@@ -166,6 +166,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.RAID_DIFF_DESC_2 = "Este ajuste te permite personalizar la dificultad de una banda.\n\nHaz clic en esta línea para volver al Asistente de Banda.";
 	L.LEGACY_RAID_DIFF_DESC_2 = "Este ajuste te permite personalizar la dificultad de una banda antigua. (Pre-Asalto de Orgrimmar)\n\nHaz clic en esta línea para volver al Asistente de Banda.";
 	L.REROLL = "Volver a tirar";
+	L.REROLL_2 = "Volver a tirar: ";
 	L.REROLL_DESC = "Haz clic en este botón para volver a tirar usando el filtro activo.";
 	L.APPLY_SEARCH_FILTER = "Aplica un filtro de búsqueda";
 	L.APPLY_SEARCH_FILTER_DESC = "Por favor selecciona una opción de filtro de búsqueda.";
@@ -184,13 +185,12 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.GO_GO_RANDOM_DESC = "Esta ventana te permite seleccionar aleatoriamente un lugar u objeto que coger. Ve a por ello!";
 	L.CHANGE_SEARCH_FILTER = "Cambiar filtro de búsqueda";
 	L.CHANGE_SEARCH_FILTER_DESC = "Haz clic aquí para cambiar tu filtro de búsqueda.";
-	L.REROLL_2 = "Volver a tirar: ";
 	L.NOTHING_TO_SELECT_FROM = "No se encontró nada para seleccionar aleatoriamente. Si las 'actualizaciones Ad-Hoc' estan habilitadas en los ajustes, la Lista Principal se tiene que actualizar (/att) antes de usar esta ventana.";
 	L.NO_SEARCH_METHOD = "Método de búsqueda no especificado.";
 	L.PROFESSION_LIST = "Lista de profesiones";
 	L.PROFESSION_LIST_DESC = "Abre tus profesiones para cargarlas.";
 	L.CACHED_RECIPES_1 = "Cargado ";
-	L.CACHED_RECIPES_2 = " recetas conocidas!";
+	L.CACHED_RECIPES_2 = " ¡Recetas conocidas!";
 	L.WORLD_QUESTS_DESC = "Esto son misiones de mundo y otras cosas disponibles por tiempo limitado que estan diponibles en algun sitio. Ve a por ellas!";
 	L.QUESTS_DESC = "Muestra todas las QuestID disponibles en el juego en orden numérico ascendente.";
 	L.UPDATE_WORLD_QUESTS = "Actualiza las misiones de mundo ahora";
@@ -217,7 +217,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.ADHOC_UNIQUE_COLLECTED_INFO = "Este objeto es Único-Coleccionado pero no se pudo detectar por falta de información de la API de Blizzard.\n\nSe arreglará después de un Refresco Forzado.";
 	L.AVAILABILITY = "Disponibilidad";
 	L.REQUIRES_PVP = "|CFF00FFDEEsta cosa requiere actividades Jugador contra Jugador o una divisa relacionada con esas actividades.|r";
-	L.REQUIRES_PETBATTLES = "|CFF00FFDEThis Thing requires Pet Battling.|r";
+	L.REQUIRES_PETBATTLES = "|CFF00FFDEEsta cosa requiere duelos de mascota.|r";
 	L.REPORT_INACCURATE_QUEST = "Información de misión errónea! (Clic para Reportar)";
 	L.NESTED_QUEST_REQUIREMENTS = "Requisitos de Misión anidados";
 	L.MAIN_LIST_REQUIRES_REFRESH = "[Abrir Lista Principal para actualizar el progreso]";
@@ -263,7 +263,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	 	"Alexstrasza está preocupada por ti",
 	 	"e Invencible te caerá |cffffaaaasegurísimo|r la próxima vez",
 	 	"fue solo un mero contratiempo",
-	-- 	"time to drop your % down",
+	 	"Es hora de bajar tu porcentaje",
 	 	"y una tortuga va a llegar al agua",
 	 	"ADALIIID, LA AZERITAAA",
 	};
@@ -322,7 +322,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.AUTO_WQ_LIST_CHECKBOX = "Abre automáticamente la Lista de Misiones de Mundo";
 		L.AUTO_WQ_LIST_CHECKBOX_TOOLTIP = "Activa esta opción si quieres que la Lista de 'Misiones de Mundo' aparezca automáticamente. La lista se actualizará automáticamente cuando cambies de zonas.\n\nTambién puedes configurar este ajuste a un atajo.\n\nAtajos de teclado -> Addons -> ALL THE THINGS -> Activar Misiones de Mundo ATT\n\nComando corto: /attwq";
 		L.AUCTION_TAB_CHECKBOX = "Muestra la pestaña del módulo de Casa de Subastas";
-		L.AUCTION_TAB_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver el módulo de la Casa de Subastas que biene con ATT.\n\nAlgunos addons son traviesos y modifican esta ventana extensamente. ATT no funciona muy bien con algunos de estos juguetitos.";
+		L.AUCTION_TAB_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver el módulo de la Casa de Subastas que viene con ATT.\n\nAlgunos addons son traviesos y modifican esta ventana extensamente. ATT no funciona muy bien con algunos de estos juguetitos.";
 		L.ICON_LEGEND_LABEL = "Leyenda de iconos";
 		L.ICON_LEGEND_TEXT = app.ccColors.White .. "|T" .. app.asset("status-unobtainable") .. ":0|t " .. "No conseguible" .. "\n|T" .. app.asset("status-prerequisites") .. ":0|t " .. "Conseguible sólo con prerequisitos" .. "\n|T" .. app.asset("status-seasonal-available") .. ":0|t " .. "Contenido temporal disponible" .. "\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t " .. "Contenido temporal no disponible" .. "\n|T374225:0|t " .. "No disponible en tu personaje actual";
 		L.CHAT_COMMANDS_LABEL = "Comandos de Chat";
@@ -423,10 +423,21 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 local a = L.ABBREVIATIONS;
 for key,value in pairs({
 		["Antorus, el Trono Ardiente"] = "Antorus",	-- ["Antorus, the Burning Throne"] = "Antorus"
+		["Expansion Pre"] = "Pre",
+		["Expansion Features"] = "EF",
+		[GROUP_FINDER] = "D&R",	-- ["Dungeons & Raids"] = "D&R"
+		["The Burning Crusade"] = "BC",
+		["Burning Crusade"] = "BC",
+		["The BC"] = "BC",
+		["Wrath of the Lich King"] = "WotLK",
 		["Cataclismo "] = "Cata ",
+		--TODO: ["Mists of Pandaria"] = "MoP",
+		--TODO: ["Warlords of Draenor"] = "WoD",
+		--TODO: ["Battle for Azeroth"] = "BFA",
 		["Las Tierras Sombrías"] = "SL",
 		["Shadowlands"] = "SL",
 		["Jugador contra Jugador"] = "JcJ",
+		--TODO: ["Raid Finder"] = "LFR",
 		["Buscador de bandas"] = "LFR",
 		["Normal"] = "N",
 		["Heroica"] = "H",
@@ -437,7 +448,9 @@ for key,value in pairs({
 		["10 jugadores (Heroico)"] = "10M (H)",
 		["25 jugadores"] = "25M",
 		["25 jugadores (Heroico)"] = "25M (H)",
+		--TODO: ["Emissary Quests"] = "Emissary",
 		[TRACKER_HEADER_WORLD_QUESTS] = "WQ",	-- ["World Quests"] = "WQ"
+		--TODO: ["WoW Anniversary"] = "Anniversary",
 		["Curia:"] = "Curia:",
 })
 do a[key] = value; end
@@ -465,7 +478,7 @@ for key,value in pairs({
 		CLIPBOARDCOPYPASTE = "Ctrl+A, Ctrl+C para Copiar a tu Portapapeles.";
 		CURSEFORGE_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace del addon ALL THE THINGS en Curse.\n\nPuedes dar este enlace a tus amigos para que arruinen sus vidas también! Te van a perdonar en un futuro...o no.";
 		DISCORD_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace al servidor de Discord de All The Things.\n\nPuedes compartir tu progreso/frustraciones con otros coleccionistas!";
-		MERCH_BUTTON_LABEL = "Merch";
+		MERCH_BUTTON_LABEL = "Mercancía";
 		MERCH_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace a la tienda de artículos de All The Things.\n\nAquí puedes dar soporte financiero al Addon y conseguir artículos chulos a cambio!";
 		PATREON_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace a la página de Patreon de All The Things.\n\nAquí puedes ver cómo dar soporte financiero al Addon!";
 		TWITCH_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace a mi canal de Twitch.\n\nPuedes preguntarme dudas cuando esté haciendo directos e intentaré responderte lo mejor que pueda!";
@@ -473,9 +486,9 @@ for key,value in pairs({
 
 	-- General Page
 		DEBUG_MODE = app.ccColors.Red.."Modo Depuración|r (Muestra todo)";
-		DEBUG_MODE_TOOLTIP = "Literalmente... TODAS LAS COSAS EN EL JUEGO. PUNTO. SI, TODO DE TODO. Incluso las cosas no coleccionables como bolsas, consumibles, ingredientes, etc aparecerán en las listas. (Incluído tú! No, enserio. Mira.)\n\nEsto es sólo para propósitos de Depuración. No está pensado para ser usado para el rastreo de completado.\n\nEste modo se salta todos los filtros, incluyendo no obtenibles.";
+		DEBUG_MODE_TOOLTIP = "Literalmente... TODAS LAS COSAS EN EL JUEGO. PUNTO. SI, TODO DE TODO. Incluso las cosas no coleccionables como bolsas, consumibles, ingredientes, etc aparecerán en las listas. (Incluído tú! No, enserió. Mira.)\n\nEsto es sólo para propósitos de Depuración. No está pensado para ser usado para el rastreo de completado.\n\nEste modo se salta todos los filtros, incluyendo no obtenibles.";
 		ACCOUNT_MODE = app.ccColors.Account.."Modo Cuenta";
-		ACCOUNT_MODE_TOOLTIP = "Activa este ajuste si quieres rastrear todas las cosas para tdos tus personajes independientemente de los filtros de clase o raza.\n\nLos filtros de No obtenible aún se aplican.";
+		ACCOUNT_MODE_TOOLTIP = "Activa este ajuste si quieres rastrear todas las cosas para todos tus personajes independientemente de los filtros de clase o raza.\n\nLos filtros de No obtenible aún se aplican.";
 		FACTION_MODE = "Sólo Facción";
 		FACTION_MODE_TOOLTIP = "Activa este ajuste si quieres ver los datos de Modo Cuenta sólo para las razas y clases de tu facción actual.";
 		LOOT_MODE = "Modo botín";
@@ -484,8 +497,8 @@ for key,value in pairs({
 		COMPLETIONIST_MODE = "+Fuentes";
 		COMPLETIONIST_MODE_TOOLTIP = "Activa este Modo para considerar los objetos como Coleccionados sólo cuando un objeto específico se ha desbloqueado para esa Apariencia.\n\nEsto significa que tendrás que coleccionar todas las apariencias compartidas de cada objeto.\n\nNota: Por defecto, el juego para de decirte cosas sobre los objetos que no has coleccionado cuando coleccionas una apariencia con fuente compartida, así que esto se asegura que los objetos no coleccionados son rastreados.";
 		MAIN_ONLY = "Sólo Personaje Principal";
-		MAIN_ONLY_TOOLTIP = "Activa este ajuste si a demás quieres que ATT *finja* que has conseguido todas las apariencias compartidas no bloqueadas por una raza diferente o clase.\n\nComo ejemplo, si has coleccionado una pieza de un conjunto de equipo de ICC sólo disponible para Cazador y hay una apariencia compartida de la banda sin las restricciones de clase/raza, ATT va a *finjir* que también has conseguido esa fuente de apariencia.\n\nNOTA: Cambiar a una raza/clase diferente va a mostrar incorrectamente que has conseguido una fuente de apariencia que no has conseguido para ese nuevo personaje cuando se desbloquea de esta forma.";
-		ONLY_RWP = "Sólo RWP";
+		MAIN_ONLY_TOOLTIP = "Activa este ajuste si a demás quieres que ATT *finja* que has conseguido todas las apariencias compartidas no bloqueadas por una raza diferente o clase.\n\nComo ejemplo, si has coleccionado una pieza de un conjunto de equipo de ICC sólo disponible para Cazador y hay una apariencia compartida de la banda sin las restricciones de clase/raza, ATT va a *fingir* que también has conseguido esa fuente de apariencia.\n\nNOTA: Cambiar a una raza/clase diferente va a mostrar incorrectamente que has conseguido una fuente de apariencia que no has conseguido para ese nuevo personaje cuando se desbloquea de esta forma.";
+		ONLY_RWP = "Sólo Eliminado con el parche";
 		ONLY_RWP_TOOLTIP = "Activa esta opción para rastrear sólamente las transfiguraciones que serán eliminadas del juego en un futuro. Sólo los objetos etiquetados con 'Eliminado en el Parche' ('removed with patch' o 'RWP') cuentan. Si encuentras un objeto sin etiquetar que debería estarlo, dímelo por favor!\n\nPuedes cambiar el tipo de botín que se muestra en la pestaña de Filtros.";
 		UNOFFICIAL_SUPPORT_TOOLTIP = "NOTA: Actualmente, no hay soporte oficial por parte de la API del WoW, pero ATT puede rastrear objetos o el completado de misiones para hacerlo funcional en el addon.";
 
@@ -519,27 +532,27 @@ for key,value in pairs({
 		GENERAL_THINGS_LABEL = "Cosas generales";
 		STRANGER_THINGS_LABEL = "Cosas extrañas";
 
-		ACHIEVEMENTS_CHECKBOX = ACHIEVEMENTS;
+		ACHIEVEMENTS_CHECKBOX = "Logros";
 		ACHIEVEMENTS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear logros.";
 		APPEARANCES_CHECKBOX = "Apariencias";
 		APPEARANCES_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear la adquisición de apariencias.\n\nNOTA: Desactiva esta opción tambien desactiva todas las animaciones y lógica de adquisición.  Puedes usar esta opción como una forma de prevenir picos de retraso mientras haces contenido de grupo importante, pero recuerda que el cálculo ocurrirá cuando se reactive.";
 		BATTLE_PETS_CHECKBOX = "Mascotas de duelo";
 		BATTLE_PETS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrar Mascotas de duelo y acompañantes. Pueden ser encontrados en el mundo abierto o a través de botín de jefe en varias mazmorras y bandas así como vendedores y reputaciones.";
 		DEATHS_CHECKBOX = "Muertes";
-		DEATHS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear cada vez que uno de tus personajes muere y lo muesstra como una sección de coleccionable en el addon.\n\nNOTA: Si lo desactivas, lo seguiremos rastreando, pero simplemente no mostraremos la estadística a no ser que estés en Modo Depuración.";
+		DEATHS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear cada vez que uno de tus personajes muere y lo muestra como una sección de coleccionable en el addon.\n\nNOTA: Si lo desactivas, lo seguiremos rastreando, pero simplemente no mostraremos la estadística a no ser que estés en Modo Depuración.";
 		EXPLORATION_CHECKBOX = "Exploración";
 		EXPLORATION_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear el completado de exploración para los mapas exteriores.";
 		FLIGHT_PATHS_CHECKBOX = "Puntos de vuelo";
 		FLIGHT_PATHS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrar puntos de vuelo y muelles de ferry.\n\nPara coleccionar estos, abre el dialogo con el maestro de punto de vuelo / ferri en cada continente.\n\nNOTA: Debido a la tecnologia de faseo, puede que tengas que fasearte a otras versiones de una zona para obtener crédito de esos puntos de interés.";
-		HEIRLOOMS_CHECKBOX = HEIRLOOMS;
+		HEIRLOOMS_CHECKBOX = "Reliquias";
 		HEIRLOOMS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear si has desbloqueado una Reliquia y sus respectivos niveles de mejora.\n\nLas reliquias tienen asociada una Apariencia son filtradas por el filtro de Apariencias. (Desactivar las apariencias aún va a mostrar la Reliquia como tal)\n\nAlgunos objetos que también aparecen con la calidad de reliquia que ayudan a aumentar reputaciones pueden ser filtrados por el filtro de reputaciones.";
 		HEIRLOOMS_UPGRADES_CHECKBOX = "+Mejoras";
 		HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear específicamente la colección de cada mejora individual de Reliquias.\n\nTodos sabemos que a Blizzard le encanta drenar tu oro y tu alma, así que lleva la cuenta con este interruptor.";
 		ILLUSIONS_CHECKBOX = "Ilusiones";
 		ILLUSIONS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear ilusiones.\n\nSon efectos muy molones que puedes aplicar a tus armas!\n\nNOTA: No eres una ilusión, aunque todos los Nocheterna piensen lo contrario.";
-		MOUNTS_CHECKBOX = MOUNTS;
+		MOUNTS_CHECKBOX = "Monturas";
 		MOUNTS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrar monturas.\n\nPuedes usarlas para ir a sitios más rápido que corriendo. Quién lo diría!";
-		QUESTS_CHECKBOX = QUESTS_LABEL;
+		QUESTS_CHECKBOX = "Misiones";
 		QUESTS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear misiones normales.\n\nPuedes hacer clic derecho en cualquier misión en las listas para abrir una ventana emergente con toda su cadena de misiones para ver tu progreso y si hay alguna misión requerida previa.\n\nNOTA: El rastreo de misiones Diarias, Semanales, Anuales y de mundo no se incluye en esta opción debido a los reinicios periódicos en la base de datos de Blizzard.";
 		QUESTS_LOCKED_CHECKBOX = "+Bloqueado";
 		QUESTS_LOCKED_CHECKBOX_TOOLTIP = "Activa esta opción para incluir específicamente el rastreo de completado de misiones bloqueadas.\n\nLas misiones bloqueadas son aquellas que el personaje ya no puede completar (según los datos de ATT) jugando normalmente.\n\nLa obtención de estas misiones se basa mucho en la funcionalidad de Sincronización de Grupo o usando Misiones de cuenta para incorporar el progreso desde otros personajes.";
@@ -549,13 +562,13 @@ for key,value in pairs({
 		REPUTATIONS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear reputaciones.\n\nCuando llegas a Exaltado o Mejor amigo con una reputación, se marcará como Coleccionado.\n\nPuede que tengas que hacer un refresco manual para que se actualice correctamente.";
 		TITLES_CHECKBOX = "Títulos";
 		TITLES_CHECKBOX_TOOLTIP = "Activa esta opción para rastrar títulos.\n\nPueden hacer que tu personaje resalte y parezca que has jugado desde mucho tiempo. Típicamente sólo los jugadores nuevos no tienen un título activo.";
-		TOYS_CHECKBOX = TOY_BOX;
+		TOYS_CHECKBOX = "Juguetes";
 		TOYS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrar juguetes.\n\nLa mayoría de juguetes hacen algo divertido. Otros, como los juguetes de Piedra de Hogar, pueden usarse en vez de tu Piedra de Hogar y ahorrarte un hueco en tus bolsas! También tienen efectos interesantes... Mola!";
 
 		-- Expansion Things
 		EXPANSION_THINGS_LABEL = "Cosas de expansión";
 		AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Esencias del Corazón de Azeroth";
-		AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear Esencia de azerita.\n\nRastreados por personaje por defecto.";
+		AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear Esencias de azerita.\n\nRastreados por personaje por defecto.";
 		DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t Manuscrito de dracovigía";
 		DRAKEWATCHERMANUSCRIPTS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear Manuscrito de dracovigía de Dragonflight";
 		FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t Seguidores y Campeones";
@@ -566,20 +579,20 @@ for key,value in pairs({
 		SOULBINDCONDUITS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrar Conductos de Shadowlands.";
 
 		CHARACTERUNLOCKS_CHECKBOX = "Desbloqueos de personaje";
-		CHARACTERUNLOCKS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrar los Desbloqueos de personaje. Son varios debloqueos de personaje que no son claramente categorizables en otro sitio (e.g. variantesde Maleficio, variantes de Polimorfia, especies domables desbloqueadas de cazador, personalizaciones de Pocopoc, etc.)\n\nRastreado por personaje por defecto.";
+		CHARACTERUNLOCKS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrar los Desbloqueos de personaje. Son varios debloqueos de personaje que no son claramente categorizables en otro sitio (e.g. variantes de Maleficio, variantes de Polimorfia, especies domables desbloqueadas de cazador, personalizaciones de Pocopoc, etc.)\n\nRastreado por personaje por defecto.";
 
 		-- Account-Wide Checkboxes
 		ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "El rastreo de Logros normalmente es a nivel de toda la Cuenta, pero hay un numero de logros exclusivos de clases y razas que no puedes conseguir con tu personaje principal.";
 		ACCOUNT_WIDE_APPEARANCES_TOOLTIP = "Las transfiguraciones deben ser coleccionadas en toda la cuenta. Algunos objetos no pueden ser aprendidos por todas las clases, así que ATT hará lo posible para sólo mostrarte cosas que puedas coleccionar con tu personaje actual.";
 		ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = "Las Esencia de azerita técnicamente no pueden ser coleccionadas y usadas a nivel de Cuenta, pero si sólo te importa coleccionarlas en tu personaje principal entonces puede que prefieras rastrearlas a nivel de toda la cuenta.";
-		ACCOUNT_WIDE_BATTLE_PETS_TOOLTIP = "Las mascotas de compañia pueden coleccionarse con múltiples personajes y realmente requeriria que tuvieses un montón de espacio en las bolsas para poder coleccionarlas todas en un personaje.\n\nRecomendamos mantejer esto activado, pero cada quién hace lo que quiere.";
+		ACCOUNT_WIDE_BATTLE_PETS_TOOLTIP = "Las mascotas de compañia pueden coleccionarse con múltiples personajes y realmente requeriría que tuvieses un montón de espacio en las bolsas para poder coleccionarlas todas en un personaje.\n\nRecomendamos mantener esto activado, pero cada quién hace lo que quiere.";
 		ACCOUNT_WIDE_CHARACTERUNLOCKS_TOOLTIP = "Considerar cualquier desbloqueo coleccionado si algun personaje lo ha coleccionado.";
 		ACCOUNT_WIDE_DEATHS_TOOLTIP = "EL rastreo de muertes realmente sólo existe antes de la Wrath de Classic donde no había la estadística para saber esta información. Cuando se implementaron los logros, esta función recoge esta información de la API de estadísticas. Puedes usar la ventana emergente del Rastreador de Muertes para verlo";
 		ACCOUNT_WIDE_EXPLORATION_TOOLTIP = "El rastreado de Exploración es sólo útil por personaje, pero realmente quieres tener que coleccionarlos todos en todos tus 50 personajes?";
 		ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = "El rastreado de puntos de vuelo es sólo útil por personaje, pero realmente quieres tener que coleccionarlos todos en todos tus 50 personajes?";
 		ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = "Los seguidores normalmente son por Personaje, pero realmente quieres tener que coleccionar los 243 seguidores de Ciudadela en uno de tus personajes a un ritmo de 1 por semana?\n\nNo lo creo, mi señor.";
 		ACCOUNT_WIDE_QUESTS_TOOLTIP = "El completado de misiones normalmente es por Personaje, pero esto considerará una misión como completada si CUALQUIER personaje ha completado esa misión en específico.";
-		ACCOUNT_WIDE_RECIPES_TOOLTIP = "Las recetas normalmente no son rastreadas a nivel de toda la cuenta en la base de datos de Blizzard, pero nosotros podemos hacerlo.\n\nEs imposible collecionarlas todas en un personaje, así que con esto, puedes dar a tus personajes secundarios y a sus profesiones un sentido.";
+		ACCOUNT_WIDE_RECIPES_TOOLTIP = "Las recetas normalmente no son rastreadas a nivel de toda la cuenta en la base de datos de Blizzard, pero nosotros podemos hacerlo.\n\nEs imposible coleccionarlas todas en un personaje, así que con esto, puedes dar a tus personajes secundarios y a sus profesiones un sentido.";
 		ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "Las reputaciones ahora son rastreadas a nivel de toda la cuenta en la base de datos de Blizzard para los logros, así que activar esto puede ser buena idea.";
 		ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = "Activa esto para considerar los conductos de nexo de almas como coleccionados en todos los personajes si almenos uno de ellos los ha aprendido.";
 		ACCOUNT_WIDE_TITLES_TOOLTIP = "La mayoría de títulos son rastreados a nivel de toda la cuenta, pero algunos títulos prestigiosos en el WoW estan bloqueados al personaje que los ganó.\n\nActiva esto si no te importa eso y quieres ver esos títulos marcados como Completados en tus personajes secundarios.";
