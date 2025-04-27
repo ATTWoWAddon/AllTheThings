@@ -9,8 +9,10 @@ WINDS_OF_MYSTERIOUS_FORTUNE_HEADER = createHeader({
 	},
 	text = {
 		en = "Winds of Mysterious Fortune",
+		cn = "神秘运势之风",
 	},
 	description = {
 		en = "Earn bonus experience and reputation on your adventures in Azeroth, and find mysterious fortunes in the Dragon Isles and Khaz Algar!",
+		cn = "在艾泽拉斯冒险可以获得额外的经验值和声望，还能在巨龙群岛和卡兹阿加找到神秘的鸿运之礼！",
 	},
 });

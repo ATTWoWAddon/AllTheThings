@@ -6,6 +6,7 @@ HORRIFIC_VISIONS_REVISITED = createHeader({
 	icon = 609893,
 	text = {
 		en = "Horrific Visions Revisited",
+		cn = "重访惊魂幻象",
 	},
 });
 
