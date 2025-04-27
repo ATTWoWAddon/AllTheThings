@@ -8,7 +8,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 	["zone-text-areaID"] = 1581,	-- "The Deadmines" now points to the Deadmines.
 	["coords"] = {
 		-- #if AFTER CATA
-		{ 25.6, 51.0, 55 },	-- Deadmines, The Deadmines [Westfall]
+		{ 25.6, 51.0, DEADMINES_OUTDOORS },	-- Deadmines, The Deadmines [Westfall]
 		{ 42.6, 71.8, WESTFALL },	-- Building entrance
 		-- #else
 		{ 42.2, 82.6, WESTFALL },
@@ -16,9 +16,9 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 	},
 	["mapID"] = DEADMINES,
 	["maps"] = {
-		292,
+		DEADMINES_LEVEL2,
 		-- #if BEFORE CATA
-		55,
+		DEADMINES_OUTDOORS,
 		-- #endif
 	},
 	["lvl"] = 10,
@@ -318,9 +318,9 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					-- #if BEFORE CATA
 					{ 44.0, 78.3, WESTFALL },
 					-- #else
-					{ 57.4, 42.9, 55 },
-					{ 46.8, 47.8, 55 },
-					{ 61.7, 65.8, 55 },
+					{ 57.4, 42.9, DEADMINES_OUTDOORS },
+					{ 46.8, 47.8, DEADMINES_OUTDOORS },
+					{ 61.7, 65.8, DEADMINES_OUTDOORS },
 					-- #endif
 				},
 				["groups"] = {
@@ -341,7 +341,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					-- #if BEFORE CATA
 					{ 42.2, 82.6, WESTFALL },
 					-- #else
-					{ 55.8, 91.2, 55 },
+					{ 55.8, 91.2, DEADMINES_OUTDOORS },
 					-- #endif
 				},
 				["groups"] = {
@@ -357,10 +357,10 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					-- #if BEFORE CATA
 					{ 42.2, 79.9, WESTFALL },
 					-- #else
-					{ 52.8, 54.6, 55 },
-					{ 56.2, 67.8, 55 },
-					{ 41.4, 56.6, 55 },
-					{ 29.6, 61.4, 55 },
+					{ 52.8, 54.6, DEADMINES_OUTDOORS },
+					{ 56.2, 67.8, DEADMINES_OUTDOORS },
+					{ 41.4, 56.6, DEADMINES_OUTDOORS },
+					{ 29.6, 61.4, DEADMINES_OUTDOORS },
 					-- #endif
 				},
 				["groups"] = {

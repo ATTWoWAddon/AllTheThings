@@ -78,12 +78,17 @@
     <Compile Include="CollectedStatus.cs" />
     <Compile Include="CustomConfiguration.cs" />
     <Compile Include="DataValidator.cs" />
+    <Compile Include="DB\Types\ItemSearchName.cs" />
+    <Compile Include="DB\Types\TaxiNodes.cs" />
     <Compile Include="DB\Types\ItemEffect.cs" />
+    <Compile Include="DB\Types\GlyphProperties.cs" />
     <Compile Include="DB\Types\ItemXItemEffect.cs" />
     <Compile Include="DB\Types\Item.cs" />
     <Compile Include="DB\Types\SpellEffect.cs" />
+    <Compile Include="DB\Types\ItemModifiedAppearance.cs" />
     <Compile Include="DB\Types\TransmogSet.cs" />
     <Compile Include="DB\Types\TransmogSetItem.cs" />
+    <Compile Include="DB\Types\TransmogSourceTypeFlags.cs" />
     <Compile Include="DB\Types\TypeFlags.cs" />
     <Compile Include="DB\Types\ModifierTree.cs" />
     <Compile Include="Export\Export %28Compressed Lua%29.cs" />

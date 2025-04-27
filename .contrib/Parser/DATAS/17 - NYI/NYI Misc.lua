@@ -990,7 +990,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(191192),	-- Assorted Parts
 			i(198141),	-- Astral Essence
 			i(192127),	-- Basilisk Eggs
-			i(198442),	-- Bogthwottle's Shrinky-Do
 			i(192560),	-- Bossy Storm Stuff
 			i(192078),	-- Bottled Putrescence
 			i(199690),	-- BWU Test Profession Accessory

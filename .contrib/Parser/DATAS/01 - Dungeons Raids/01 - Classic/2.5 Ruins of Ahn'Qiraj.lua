@@ -773,11 +773,31 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					i(22219, {	-- Plans: Jagged Obsidian Shield (RECIPE!)
 						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },
 						["isLimited"] = true,
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { REMOVED_1_15_5 },
+						-- #endif
 					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_SIX, i(234458, {	-- Plans: Jagged Obsidian Shield (RECIPE!)
+						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },
+						["isLimited"] = true,
+						["timeline"] = { ADDED_1_15_5 },
+					})),
+					-- #endif
 					i(22221, {	-- Plans: Obsidian Mail Tunic (RECIPE!)
 						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },
 						["isLimited"] = true,
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { REMOVED_1_15_5 },
+						-- #endif
 					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_SIX, i(234461, {	-- Plans: Obsidian Mail Tunic (RECIPE!)
+						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },
+						["isLimited"] = true,
+						["timeline"] = { ADDED_1_15_5 },
+					})),
+					-- #endif
 				},
 			}),
 			e(1538, {	-- General Rajaxx
@@ -868,7 +888,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					i(21476),	-- Obsidian Scaled Leggings
 					i(21477),	-- Ring of Fury
 					i(21473),	-- Eye of Moam
-					i(22220),	-- Plans: Black Grasp of the Destroyer (RECIPE!)
+					i(22220, {	-- Plans: Black Grasp of the Destroyer (RECIPE!)
+					-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { REMOVED_1_15_5 },
+					-- #endif
+					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_SIX, i(234085, {	--	Plans: Black Grasp of the Destroyer (RECIPE!)
+						["timeline"] = { ADDED_1_15_5 },
+					})),
+					-- #endif
 				},
 			}),
 			e(1542, {	-- Ossirian the Unscarred

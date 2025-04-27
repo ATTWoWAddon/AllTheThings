@@ -68,7 +68,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 			["timeline"] = { ADDED_10_1_7 },
 			["rank"] = 300,
 		}),
-		applyclassicphase(MOP_PHASE_ONE, ach(7328, {	-- Ironpaw Chef
+		applyclassicphase(MOP_PHASE_LANDFALL, ach(7328, {	-- Ironpaw Chef
 			["timeline"] = { ADDED_5_0_4 },
 			["rank"] = 240,
 		})),
@@ -366,7 +366,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 			crit(15743, { ["provider"] = { "i", 62672 } } ),	-- South Island Iced Tea
 		}),
 	}))),
-	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+	applyclassicphase(MOP_PHASE_LANDFALL, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 		ach(6365, {	-- Zen Master Cook / Pandaria Cook [8.0.1+]
 			-- #if BEFORE 8.0.1
 			["spellID"] = 104381,	-- Cooking (Zen Master)

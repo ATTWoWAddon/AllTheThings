@@ -3996,7 +3996,7 @@ profession(TAILORING, {
 		},
 		-- #endif
 	})),
-	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, {
+	applyclassicphase(MOP_PHASE_LANDFALL, expansion(EXPANSION.MOP, {
 		-- #if AFTER SHADOWLANDS
 		{
 			["name"] = "Optional Reagents",

@@ -24,26 +24,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4905, {	-- Cape of Stranglethorn Quests
 					["timeline"] = { ADDED_4_0_3 },
 					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- The Trolls of Zul'gurub
-							["sourceQuests"] = { 26814, 26555 },	-- High Priest Venoxis (A, H)
-						}),
-						crit(2, {	-- Bustling Booty Bay
-							["description"] = "You only need to complete one of [Kill-Collect], [Mok'rash the Cleaver], or [Mukla's Demise] to earn full credit.",
-							["sourceQuests"] = {
-								26612,	-- Details of the Attack
-								26613,	-- Up to Snuff
-							},
-						}),
-						crit(3, {	-- A Pirate's Life For You
-							["sourceQuest"] = 26665,	-- Call of Booty
-						}),
-						crit(4, {	-- Bloodsail and Brashtide
-							["sourceQuest"] = 26703,	-- Bloodsail's End
-						}),
-					},
-					-- #else
 					["sourceQuests"] = {
 						26814, 26555,	-- High Priest Venoxis (A, H)
 						26612,	-- Details of the Attack
@@ -51,7 +31,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26665,	-- Call of Booty
 						26703,	-- Bloodsail's End
 					},
-					-- #endif
 					-- #endif
 				}),
 				explorationAch(4995, {	-- Explore the Cape of Stranglethorn

@@ -38,7 +38,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["zone-text-areaID"] = 2100,	-- Maraudon
 		["coord"] = { 35.7, 55.5, DESOLACE },
 		["mapID"] = MARAUDON,
-		["maps"] = { MARAUDON_LEVEL2, 67, 68 },
+		["maps"] = { MARAUDON_LEVEL2, MARAUDON_OUTDOOR_LEVEL1, MARAUDON_OUTDOOR_LEVEL2 },
 		["lvl"] = lvlsquish(41, 30, 10),
 		["groups"] = {
 			n(QUESTS, {
@@ -309,7 +309,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(17684),	-- Theradric Crystal Carving
 			}),
 			n(FOULSPORE_CAVERN, {
-				["coord"] = { 78.0, 55.7, 67 },	-- Maraudon [Orange], The Wicked Grotto [Desolace]
+				["coord"] = { 78.0, 55.7, MARAUDON_OUTDOOR_LEVEL1 },	-- Maraudon [Orange], The Wicked Grotto [Desolace]
 				["groups"] = {
 					e(423, {	-- Noxxion
 						["creatureID"] = 13282,
@@ -357,7 +357,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(WICKED_GROTTO, {
-				["coord"] = { 51.7, 24.7, 68 },	-- Maraudon [Purple], Foulspore Cavern [Desolace]
+				["coord"] = { 51.7, 24.7, MARAUDON_OUTDOOR_LEVEL2 },	-- Maraudon [Purple], Foulspore Cavern [Desolace]
 				["groups"] = {
 					-- #if AFTER 4.0.3
 					e(425, {	-- Tinkerer Gizlock
@@ -399,7 +399,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(MARAUDON_PORTAL, {
-				["coord"] = { 44.5, 77.1, 68 },	-- Maraudon [Falls], Foulspore Cavern [Desolace]
+				["coord"] = { 44.5, 77.1, MARAUDON_OUTDOOR_LEVEL2 },	-- Maraudon [Falls], Foulspore Cavern [Desolace]
 				-- #if BEFORE 3.0.8
 				["sourceQuest"] = 7046,	-- The Scepter of Celebras
 				["cost"] = { { "i", 17191, 1 } },	-- Scepter of Celebras

@@ -11,35 +11,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4904, {	-- Swamp of Sorrows Quests
 					["timeline"] = { ADDED_4_0_3 },
 					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- Bogpaddle
-							["sourceQuest"] = 27600,	-- In With a Bang
-						}),
-						crit(2, {	-- The Bloodmire (A)
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								27849,	-- Assault on Stonard
-								27851,	-- Cutting Supply
-							},
-						}),
-						crit(2, {	-- The Bloodmire (H)
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 27857,	-- We're Under Attack!
-						}),
-						crit(3, {	-- The Shifting Mire (A)
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 24913,	-- Remember the Light
-						}),
-						crit(3, {	-- The Shifting Mire (H)
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 27911,	-- With Dying Breath
-						}),
-						crit(4, {	-- The Sunken Temple
-							["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
-						}),
-					},
-					-- #else
 					["sourceQuests"] = {
 						27600,	-- In With a Bang
 						27849,	-- Assault on Stonard
@@ -49,7 +20,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27911,	-- With Dying Breath
 						27914,	-- Blessing of the Green Dragonflight
 					},
-					-- #endif
 					-- #endif
 				}),
 			}),

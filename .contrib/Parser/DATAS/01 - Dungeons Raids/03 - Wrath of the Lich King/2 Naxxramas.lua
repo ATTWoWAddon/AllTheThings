@@ -18,7 +18,7 @@ local DEATHS_BARGAINING_CHIP = 206576;
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(754, {	-- Naxxramas
 		["mapID"] = NAXXRAMAS,
-		["maps"] = { 163, 164, 165, 166, 167 },
+		["maps"] = { NAXXRAMAS_LEVEL2, NAXXRAMAS_LEVEL3, NAXXRAMAS_LEVEL4, NAXXRAMAS_LEVEL5, NAXXRAMAS_LEVEL6 },
 		["coords"] = {
 			{ 87.4, 51.1, DRAGONBLIGHT },
 			-- #if AFTER 10.1.5

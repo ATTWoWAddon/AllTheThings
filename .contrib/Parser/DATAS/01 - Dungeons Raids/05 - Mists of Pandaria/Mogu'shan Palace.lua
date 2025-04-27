@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
-	inst(321, {	-- Mogu'shan Palace
+	applyclassicphase(MOP_PHASE_LANDFALL, inst(321, {	-- Mogu'shan Palace
 		["coord"] = { 80.5, 33.0, VALE_OF_ETERNAL_BLOSSOMS },
 		["maps"] = {
 			453,	-- The Crimson Assembly Hall
@@ -355,7 +355,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 			}),
 		},
-	}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {

@@ -1381,7 +1381,7 @@ CurrentClassicExpansion = {
 		-- #if ANYCLASSIC
 		en = "Cataclysm Classic",
 		-- #else
-		en = "Wrath of the Lich King",
+		en = "Cataclysm",
 		-- #endif
 	},
 };
@@ -1466,15 +1466,78 @@ CATA_PHASE_HOUR_OF_TWILIGHT = createClassicPhase({
 CurrentClassicExpansion = {
 	text = {
 		-- #if ANYCLASSIC
-		en = "Mists Classic",
+		en = "Mists of Pandaria Classic",
 		-- #else
 		en = "Mists of Pandaria",
 		-- #endif
 	},
 };
-MOP_PHASE_ONE = 50;
-MOP_PHASE_TWO = 51;
-MOP_PHASE_THREE = 52;
+MOP_PHASE_ONE = createClassicPhase({
+	readable = "Mists Classic - Phase 1",
+	originalTimelines = { "5.0.4" },
+	minimumBuildVersion = 50500,
+	buildVersion = 50500,
+	phaseID = 50,
+	text = {
+		en = "Phase 1",
+		tw = "第1階段",
+	},
+	lore = {
+		en = "Included Level 85 Theramore's Fall scenario and the updated talent system.",
+	},
+});
+MOP_PHASE_LANDFALL = createClassicPhase({
+	readable = "Mists Classic - Landfall",
+	originalTimelines = { "5.1.0" },
+	minimumBuildVersion = 50500,
+	buildVersion = 50500,
+	phaseID = 51,
+	text = {
+		en = "Landfall",
+	},
+	lore = {
+		en = "Included Mogu'shan Vaults, Heart of Fear, and Terrace of the Endless Spring.",
+	},
+});
+MOP_PHASE_RISE_OF_THE_THUNDER_KING = createClassicPhase({
+	readable = "Mists Classic - Rise of the Thunder King",
+	originalTimelines = { "5.2.0" },
+	minimumBuildVersion = 50500,
+	buildVersion = 50501,
+	phaseID = 52,
+	text = {
+		en = "Rise of the Thunder King",
+	},
+	lore = {
+		en = "Included Throne of Thunder, the Isle of Giants, and the Isle of Thunder.",
+	},
+});
+MOP_PHASE_ESCALATION = createClassicPhase({
+	readable = "Mists Classic - Escalation",
+	originalTimelines = { "5.3.0" },
+	minimumBuildVersion = 50500,
+	buildVersion = 50502,
+	phaseID = 53,
+	text = {
+		en = "Escalation",
+	},
+	lore = {
+		en = "Included Heroic Scenarios, Battlefield: Barrens Scenario, Deepwind Gorge, and the Tiger's Peak arena.",
+	},
+});
+MOP_PHASE_SIEGE_OF_ORGRIMMAR = createClassicPhase({
+	readable = "Mists Classic - Siege of Orgrimmar",
+	originalTimelines = { "5.4.0" },
+	minimumBuildVersion = 50500,
+	buildVersion = 50503,
+	phaseID = 54,
+	text = {
+		en = "Siege of Orgrimmar",
+	},
+	lore = {
+		en = "Included Siege of Orgrimmar and the Timeless Isle.",
+	},
+});
 
 
 

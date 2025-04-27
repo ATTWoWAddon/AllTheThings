@@ -13,28 +13,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4909, {	-- Blasted Lands Quests
 					["timeline"] = { ADDED_4_0_3 },
 					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- Razelikh
-							["sourceQuests"] = {
-								26171,	-- You Are Rakh'likh, Demon (alliance)
-								25701,	-- You Are Rakh'likh, Demon (horde)
-							},
-						}),
-						crit(2, {	-- The Tainted Forest
-							["sourceQuests"] = {
-								26187,	-- The Downfall of Marl Wormthorn (alliance)
-								25720,	-- The Downfall of Marl Wormthorn (horde)
-							},
-						}),
-						crit(3, {	-- Avenging the Rockpool
-							["sourceQuests"] = {
-								25705,	-- False Idols
-								25706,	-- Neptool's Revenge
-							},
-						}),
-					},
-					-- #else
 					["sourceQuests"] = {
 						26171,	-- You Are Rakh'likh, Demon (alliance)
 						25701,	-- You Are Rakh'likh, Demon (horde)
@@ -43,7 +21,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						25705,	-- False Idols
 						25706,	-- Neptool's Revenge
 					},
-					-- #endif
 					-- #endif
 				}),
 				explorationAch(766),	-- Explore Blasted Lands

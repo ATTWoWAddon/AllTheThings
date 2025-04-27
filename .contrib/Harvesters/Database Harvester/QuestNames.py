@@ -63,6 +63,7 @@ def get_available_expansions(patch: str) -> dict[str, str]:
             "TBC": "tbc",
             "WOTLK": "wotlk",
             "CATA": "cata",
+            "MOP": "mop-classic",
         }
         print("Classic :", patch)
     elif version.parse(patch) < version.parse("3.0.0.0"):
@@ -71,6 +72,7 @@ def get_available_expansions(patch: str) -> dict[str, str]:
             "TBC": "tbc",
             "WOTLK": "wotlk",
             "CATA": "cata",
+            "MOP": "mop-classic",
         }
         print("TBC :", patch)
     elif version.parse(patch) < version.parse("4.0.0.0"):
@@ -78,20 +80,28 @@ def get_available_expansions(patch: str) -> dict[str, str]:
             "Retail": "",
             "WOTLK": "wotlk",
             "CATA": "cata",
+            "MOP": "mop-classic",
         }
         print("Wotlk :", patch)
     elif version.parse(patch) < version.parse("5.0.0.0"):
         expansion_dict = {
             "Retail": "",
             "CATA": "cata",
+            "MOP": "mop-classic",
         }
         print("Cata :", patch)
+    elif version.parse(patch) < version.parse("6.0.0.0"):
+        expansion_dict = {
+            "Retail": "",
+            "MOP": "mop-classic",
+        }
+        print("MoP :", patch)
     elif version.parse(patch) < version.parse("11.0.0.0"):
         expansion_dict = {
             "Retail": "",
         }
-        print("MoP-DF :", patch)
-    elif version.parse(patch) < version.parse("11.1.0.99999"):
+        print("WoD-DF :", patch)
+    elif version.parse(patch) < version.parse("11.1.5.99999"):
         expansion_dict = {
             "Retail": "",
             "PTR": "ptr",
@@ -99,10 +109,10 @@ def get_available_expansions(patch: str) -> dict[str, str]:
             #"BETA": "beta",
         }
         print("11.0.0-11.1.0 :", patch)
-    elif version.parse(patch) < version.parse("11.1.5.99999"):
+    elif version.parse(patch) < version.parse("11.1.7.99999"):
         expansion_dict = {
-            "PTR": "ptr",
-            #"PTR2": "ptr-2",
+            #"PTR": "ptr",
+            "PTR2": "ptr-2",
         }
         print("11.1.5 :", patch)
     return expansion_dict
@@ -115,6 +125,7 @@ def get_quest_names() -> None:
         "TBC": "tbc",
         "WOTLK": "wotlk",
         "CATA": "cata",
+        "MOP": "mop-classic",
         "PTR": "ptr",
         "PTR2": "ptr-2",
         "BETA": "beta",

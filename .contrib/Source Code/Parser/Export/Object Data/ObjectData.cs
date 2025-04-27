@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using static ATT.Framework;
 
 namespace ATT
 {
@@ -246,14 +247,20 @@ namespace ATT
                     // Additionally, there must be an itemID for the modID to be present.
                     if (ignoreBonus || ignoreSource || Convert.ToInt64(objRef) < 1 || !data.ContainsKey("itemID")) fields.Remove("modID");
                 }
+
+                // If invalid, then don't write the field.
+                var hasFilter = data.TryGetValue("f", out long f);
+                if (hasFilter && f < 0) fields.Remove("f");
+
                 if (data.ContainsKey("sourceID"))
                 {
+                    // CRIEVE NOTE: Blizzard started including sourceIDs for Rings/Necklaces for some reason. Let's clean that up.
+                    if (hasFilter)
+                    {
+                        Objects.Filters filter = (Objects.Filters)f;
+                        if (filter == Objects.Filters.Neck || filter == Objects.Filters.Ring) ignoreSource = true;
+                    }
                     if (ignoreSource) fields.Remove("sourceID");
-                }
-                if (data.TryGetValue("f", out objRef))
-                {
-                    // If invalid, then don't write the field.
-                    if (Convert.ToInt64(objRef) < 0) fields.Remove("f");
                 }
 
                 // Keep the name field for quest types, so long as they don't have an item.

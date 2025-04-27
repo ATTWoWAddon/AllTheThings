@@ -11,10 +11,14 @@ mount(473478),	-- Sha-Touched Riding Tiger
 mount(473487),	-- Sha-Touched Cloud Serpent
 3.4.4.59817
 mount(1217476),	-- Flaming Royal Fire Hawk
+5.5.0.60481
+mount(1224596),	-- Meeksi Teapuff
+mount(1224643),	-- Meeksi Gentlepaw
+mount(1224645),	-- Meeksi Rufflemane
+mount(1224646),	-- Meeksi Wanderpaw
+mount(1224647),	-- Meeksi Brewrobber
 6.0.1.18179
 mount(147595),	-- Stormcrow
-11.1.5.59571
-mount(1228865),	-- Void-Scarred Lynx
 
 
 
@@ -28,3 +32,9 @@ mount(466980),	-- Chaos-Born Hippogryph
 mount(466983),	-- Chaos-Born Gryphon
 3.4.4.59817
 mount(1217476),	-- Flaming Royal Fire Hawk
+5.5.0.60481
+mount(1224596),	-- Meeksi Teapuff
+mount(1224643),	-- Meeksi Gentlepaw
+mount(1224645),	-- Meeksi Rufflemane
+mount(1224646),	-- Meeksi Wanderpaw
+mount(1224647),	-- Meeksi Brewrobber

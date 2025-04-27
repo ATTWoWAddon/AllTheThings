@@ -17,15 +17,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 		["coords"] = {
 			-- #if AFTER CATA
-			{ 36.6, 29.4, 16 },	-- Uldaman [Front], Uldaman [Badlands]
+			{ 36.6, 29.4, ULDAMAN_OUTDOORS },	-- Uldaman [Front], Uldaman [Badlands]
 			{ 60.7, 37.4, BADLANDS },	-- Uldaman [Side]
 			-- #else
-			{ 36.6, 29.4, 16 },	-- Uldaman [Front], Uldaman [Badlands]
+			{ 36.6, 29.4, ULDAMAN_OUTDOORS },	-- Uldaman [Front], Uldaman [Badlands]
 			{ 64.0, 44.0, BADLANDS },	-- Uldaman [Side]
 			-- #endif
 		},
 		["mapID"] = ULDAMAN,
-		["maps"] = { 16, 231 },
+		["maps"] = { ULDAMAN_OUTDOORS, ULDAMAN_LEVEL2 },
 		["lvl"] = lvlsquish(35, 35, 15),
 		["groups"] = {
 			n(PROFESSIONS, {
@@ -603,10 +603,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					-- #if AFTER 10.1.7
 					["coords"] = {
-						{ 62.0, 51.5, 16 },	-- Spur cave
-						{ 51.8, 68.5, 16 },	-- The Sealed Hall
-						{ 34.0, 84.5, 16 },	-- North Common Hall
-						{ 32.4, 62.4, 16 },	-- South Common Hall
+						{ 62.0, 51.5, ULDAMAN_OUTDOORS },	-- Spur cave
+						{ 51.8, 68.5, ULDAMAN_OUTDOORS },	-- The Sealed Hall
+						{ 34.0, 84.5, ULDAMAN_OUTDOORS },	-- North Common Hall
+						{ 32.4, 62.4, ULDAMAN_OUTDOORS },	-- South Common Hall
 					},
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },

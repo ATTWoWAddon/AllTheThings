@@ -17,13 +17,17 @@ namespace ATT.DB
             typeof(Achievement),
             typeof(Criteria),
             typeof(CriteriaTree),
+            typeof(GlyphProperties),
             typeof(Item),
             typeof(ItemEffect),
             typeof(ItemXItemEffect),
+            typeof(ItemModifiedAppearance),
+            typeof(ItemSearchName),
             typeof(ModifierTree),
             typeof(TransmogSet),
             typeof(TransmogSetItem),
             typeof(SpellEffect),
+            typeof(TaxiNodes),
         };
 
         private static readonly IDictionary<Type, PropertyInfo[]> _typeProperties = new Dictionary<Type, PropertyInfo[]>();

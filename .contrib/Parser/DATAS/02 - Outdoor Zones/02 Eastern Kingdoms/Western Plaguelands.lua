@@ -15,35 +15,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4893, {	-- Western Plaguelands Quests
 					["timeline"] = { ADDED_4_0_3 },
 					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- The First Battle for Andorhal
-							["sourceQuests"] = {
-								27165,	-- Victory, For Now (A)
-								26926,	-- Victory, For Now (H)
-							},
-						}),
-						crit(2, {	-- A Temporary Peace
-							["sourceQuests"] = {
-								27174,	-- Combat Training (A)
-								26938,	-- Combat Training (H)
-							},
-						}),
-						crit(3, {	-- The Second Battle for Andorhal
-							["sourceQuests"] = {
-								27206,	-- Alas, Andorhal (A)
-								27144,	-- The Reckoning (H)
-							},
-						}),
-						crit(4, {	-- The Mender's Stead
-							["sourceQuests"] = {
-								--27055,	-- Students of Krastinov (TODO: verify if needed)
-								27155,	-- Turning Yourself In
-								26955,	-- Zen'Kiki and the Cultists
-							},
-						}),
-					},
-					-- #else
 					["sourceQuests"] = {
 						27165,	-- Victory, For Now (A)
 						26926,	-- Victory, For Now (H)
@@ -55,7 +26,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27155,	-- Turning Yourself In
 						26955,	-- Zen'Kiki and the Cultists
 					},
-					-- #endif
 					-- #endif
 				}),
 			}),

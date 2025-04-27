@@ -2,30 +2,6 @@
 r(463866),	-- Sigil of Flowing Waters
 r(463869),	-- Conductive Shield Coating
 r(463871),	-- Enchant Shield - Law of Nature
-1.15.5.57537
-r(471400),	-- Magnificent Trollshine
-r(1213593),	-- Speedstone
-r(1213595),	-- Tear of the Dreamer
-r(1213598),	-- Lodestone of Retaliation
-r(1213600),	-- Enchanted Stopwatch
-r(1213603),	-- Ruby-Encrusted Broach
-r(1213607),	-- Scroll: Wrath of the Swarm
-r(1213610),	-- Enchanted Repellent
-r(1213616),	-- Enchant Chest - Living Stats
-r(1213622),	-- Enchant Gloves - Holy Power
-r(1213626),	-- Enchant Gloves - Arcane Power
-r(1213628),	-- Enchanted Prayer Tome
-r(1213633),	-- Enchanted Totem
-r(1213635),	-- Enchanted Mushroom
-r(1216005),	-- Libram of Righteousness
-r(1216007),	-- Libram of the Exorcist
-r(1216010),	-- Libram of Sanctity
-r(1216014),	-- Totem of Pyroclastic Thunder
-r(1216016),	-- Totem of Thunderous Strikes
-r(1216018),	-- Totem of Flowing Magma
-r(1216020),	-- Idol of Sidereal Wrath
-r(1216022),	-- Idol of Feline Ferocity
-r(1216024),	-- Idol of Ursin Power
 1.15.5.57716
 r(1217189),	-- Enchant Bracer - Spell Power
 r(1217203),	-- Enchant Bracer - Agility

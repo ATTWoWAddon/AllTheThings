@@ -1,5 +1,12 @@
 local i = GetRecipeHelperForProfession(MINING);
 
+-- #if SEASON_OF_DISCOVERY
+------------------
+-- PATCH 1.15.5 --
+------------------
+--- ITEM ---
+i(234278, 1213638);	-- Smelt Obsidian-Infused Thorium Bar
+-- #endif
 -----------------
 --   CLASSIC   --
 -----------------

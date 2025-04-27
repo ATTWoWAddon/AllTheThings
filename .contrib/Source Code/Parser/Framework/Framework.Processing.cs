@@ -60,6 +60,53 @@ namespace ATT
                 MergeItemDB(wagoItemDb.Values.Select(i => i.AsData()));
             }
 
+            // Item Modified Appearance (Sources)
+            if (TypeDB.TryGetValue("ItemModifiedAppearance", out IDictionary<long, IDBType> wagoSourceDb))
+            {
+                MergeItemDB(wagoSourceDb.Values.Select(i => i.AsData()));
+            }
+
+            // Item Search Name (Quality, Required Skills, Item Level, Race/Class Requirements)
+            if (TypeDB.TryGetValue("ItemSearchName", out IDictionary<long, IDBType> wagoItemSearchDb))
+            {
+                MergeItemDB(wagoItemSearchDb.Values.Select(i => i.AsData()));
+            }
+
+            // GlyphGB
+            if (TypeDB.TryGetValue("GlyphProperties", out IDictionary<long, IDBType> wagoGlyphDb))
+            {
+                foreach(var obj in wagoGlyphDb.Values)
+                {
+                    if (obj is GlyphProperties glyph)
+                    {
+                        GlyphDB[glyph.ID] = glyph.SpellID;
+                    }
+                }
+            }
+
+            // FlightPathNames (FlightPathDB)
+            if (TypeDB.TryGetValue("TaxiNodes", out IDictionary<long, IDBType> wagoFlightPathDB))
+            {
+                foreach (var obj in wagoFlightPathDB.Values)
+                {
+                    if (obj is TaxiNodes fp)
+                    {
+                        string englishName = fp.Name_lang;
+                        if(!string.IsNullOrEmpty(englishName))
+                        {
+                            if (!FlightPathDB.TryGetValue(fp.ID, out var flightPath))
+                            {
+                                FlightPathDB[fp.ID] = flightPath = new Dictionary<string, object>();
+                            }
+                            flightPath["text"] = new Dictionary<string, object>
+                            {
+                                { "en", englishName.Trim() }
+                            };
+                        }
+                    }
+                }
+            }
+
             // Go through all of the items in the database and calculate the Filter ID
             // if the Filter ID is not already assigned. (manual assignment should always override this)
             foreach (var data in Items.AllItems)
@@ -647,7 +694,9 @@ namespace ATT
             // Crieve wants objectives and doesn't agree with this, but will allow it outside of Classic Builds.
             if (data.ContainsKey("objectiveID") && !Program.PreProcessorTags.ContainsKey("OBJECTIVES"))
             {
-                ConvertObjectiveData(data, parentData);
+                // capture the parent relationship here since we are removing the objective data
+                data["_parent"] = parentData;
+                AddPostProcessing(ConvertObjectiveData, data);
                 return false;
             }
 
@@ -1941,7 +1990,6 @@ namespace ATT
                 return;
 
             data.TryGetValue("achID", out long achID);
-
             // Grab AchievementDB info
             ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> achInfo);
             IDictionary<string, object> matchedCriteriaInfo = null;
@@ -3056,8 +3104,12 @@ namespace ATT
                             {
                                 // ignored criteria which are being assigned a questID can be assigned as NYI so
                                 // that when triggered they can be associated with the proper activity
-                                data["u"] = 1;
-                                LogDebugWarn($"Criteria {achID}:{criteriaID} is ignored in UI and marked NYI to trigger reporting of proper Source", data);
+                                // assign NYI only if there are not additional _quests
+                                if (questObjs.Count == 1)
+                                {
+                                    data["u"] = 1;
+                                    LogDebugWarn($"Criteria {achID}:{criteriaID} is ignored in UI and marked NYI to trigger reporting of proper Source", data);
+                                }
                             }
                         }
                         else if (questRefs.All(d => d.ContainsKey("_unsorted")))
@@ -3790,10 +3842,13 @@ namespace ATT
             return true;
         }
 
-        private static void ConvertObjectiveData(IDictionary<string, object> data, IDictionary<string, object> parentData)
+        private static void ConvertObjectiveData(IDictionary<string, object> data)
         {
             // Grab any coords for this objective if existing
             data.TryGetValue("coords", out List<object> coords);
+
+            if (!data.TryGetValue("_parent", out IDictionary<string, object> parentData))
+                return;
 
             // Convert various 'providers' data into sub-groups on the parent data
             if (data.TryGetValue("providers", out List<object> providers))
@@ -3809,12 +3864,15 @@ namespace ATT
                     {
                         // Items can simply be Sourced under the parent
                         case "i":
-                            providerData = new Dictionary<string, object> { { "itemID", pID } };
-                            Objects.Merge(parentData, "g", providerData);
+                            if (!TryGetSOURCED("itemID", pID, out _))
+                            {
+                                providerData = new Dictionary<string, object> { { "itemID", pID } };
+                                Objects.Merge(parentData, "g", providerData);
+                            }
                             break;
                         // Objects can be Sourced under the parent with attached coords if any
                         case "o":
-                            if (IsObtainableData(parentData))
+                            if (!TryGetSOURCED("objectID", pID, out _) && IsObtainableData(parentData))
                             {
                                 providerData = new Dictionary<string, object> { { "objectID", pID } };
                                 if (coords != null)
@@ -3826,7 +3884,7 @@ namespace ATT
                             break;
                         // NPCs can be Sourced under the parent with attached coords if any
                         case "n":
-                            if (IsObtainableData(parentData))
+                            if (!TryGetSOURCED("npcID", pID, out _) && IsObtainableData(parentData))
                             {
                                 providerData = new Dictionary<string, object> { { "npcID", pID } };
                                 if (coords != null)

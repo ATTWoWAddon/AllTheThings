@@ -57,7 +57,7 @@ end
 local collectibleAsCostForItem = function(t)
 	local id = t.itemID;
 	local results = SearchForField("itemIDAsCost", id);
-	if #results > 0 then
+	if results and #results > 0 then
 		local costTotal = 0;
 		if not t.parent or not t.parent.saved then
 			for _,ref in pairs(results) do
@@ -136,7 +136,7 @@ local collectedAsTransmog = function(t)
 			else
 				-- Check to see if this item was a quest reward.
 				local searchResults = SearchForField("itemID", id);
-				if #searchResults > 0 then
+				if searchResults and #searchResults > 0 then
 					for i,o in ipairs(searchResults) do
 						if o.itemID == id then
 							if ((o.key == "questID" and o.saved) or (o.parent and o.parent.key == "questID" and o.parent.saved)) and app.RecursiveDefaultCharacterRequirementsFilter(o) then
@@ -173,7 +173,8 @@ local itemFields = {
 	end,
 	["f"] = function(t)
 		if t.questID then return app.FilterConstants.QUEST_ITEMS; end
-		if #SearchForField("itemIDAsCost", t.itemID) > 0 then
+		local results = SearchForField("itemIDAsCost", t.itemID);
+		if results and #results > 0 then
 			return app.FilterConstants.QUEST_ITEMS;
 		end
 	end,

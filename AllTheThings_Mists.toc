@@ -1,0 +1,175 @@
+## Title: AllTheThings |cfd9b9b9b(Mists)|r
+## IconTexture: Interface/Addons/AllTheThings/assets/logo_32x32
+## Name: AllTheThings
+## Author: Crieve
+## Category-enUS: Collections
+## Category-deDE: Kriegsmeutesammlungen
+## Category-esES: Colecciones de banda guerrera
+## Category-esMX: Colecciones de tropa
+## Category-frFR: Collections du bataillon
+## Category-itIT: Collezioni della Brigata
+## Category-koKR: 전투부대 수집품
+## Category-ptBR: Coleções do Bando de Guerra
+## Category-ruRU: Коллекции отряда
+## Category-zhCN: 战团藏品
+## Category-zhTW: 戰隊收藏
+## Notes-enUS: Tracks your collection of mounts, pets, toys, transmog, and more.|nFilter to your liking, or try to collect all the things!|n|nNightly builds and weekly updates.
+## Notes-deDE: Verfolgt deine Sammlung an Reittieren, Haustieren, Spielzeugen, Transmogs und mehr.|nFiltere nach Belieben oder versuche, alles zu sammeln!|n|nNächtliche Builds und wöchentliche Updates.
+## Notes-esES: Registra tu colección de monturas, mascotas, juguetes, transfiguraciones y más.|n¡Filtra a tu gusto o intenta coleccionarlo todo!|n|nConstrucciones nocturnas y actualizaciones semanales.
+## Notes-esMX: Registra tu colección de monturas, mascotas, juguetes, transfiguraciones y más.|n¡Filtra a tu gusto o intenta coleccionarlo todo!|n|nConstrucciones nocturnas y actualizaciones semanales.
+## Notes-frFR: Suivez votre collection de montures, familiers, jouets, transmogrifications et plus encore.|nFiltrez selon vos préférences ou essayez de tout collectionner !|n|nConstructions nocturnes et mises à jour hebdomadaires.
+## Notes-itIT: Tieni traccia della tua collezione di cavalcature, animali domestici, giocattoli, trasmogrificazione e altro.|nFiltra a tuo piacimento o prova a collezionare tutto!|n|nBuild notturne e aggiornamenti settimanali.
+## Notes-koKR: 탈것, 애완동물, 장난감, 변신 등의 컬렉션을 추적합니다.|n원하는 대로 필터링하거나 모든 것을 수집해보세요!|n|n매일 밤 빌드와 주간 업데이트.
+## Notes-ptBR: Rastreia sua coleção de montarias, mascotes, brinquedos, transmog e muito mais.|nFiltre conforme sua preferência ou tente coletar todas as coisas!|n|nBuilds noturnos e atualizações semanais.
+## Notes-ruRU: Отслеживает вашу коллекцию ездовых животных, питомцев, игрушек, трансмогрификации и многого другого.|nФильтруйте по своему вкусу или попытайтесь собрать все!|n|nНочные сборки и еженедельные обновления.
+## Notes-zhCN: 追踪你所收藏的坐骑、宠物、玩具、幻化等。。|n按你的喜好筛选，或尝试收集所有物品！|n|n每晚构建，每周更新。
+## Notes-zhTW: 追蹤你所收藏的坐騎、寵物、玩具、塑形等。。|n依你的喜好篩選，或試著收集所有物品！|n|n每晚構建，每週更新。
+## Version: @project-version@
+## Interface: 50500
+## X-Interface: 50500
+## X-Wago-ID: yQKyY5K7
+## X-Curse-Project-ID: 267285
+## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSavedVariables, AllTheThingsSettings, AllTheThingsAD, AllTheThingsProfiles, AllTheThingsAuctionData, AllTheThingsDebugData, AllTheThingsHarvestItems
+## SavedVariablesPerCharacter: AllTheThingsSettingsPerCharacter
+## AddonCompartmentFunc: AllTheThings_MinimapButtonOnClick
+## AddonCompartmentFuncOnEnter: AllTheThings_MinimapButtonOnEnter
+## AddonCompartmentFuncOnLeave: AllTheThings_MinimapButtonOnLeave
+#src\PerformanceTracking.lua
+lib\LibStub\LibStub.lua
+lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
+lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
+src\WoW API Wrappers.lua
+
+# Raw DBs
+db\Mists\ReferenceDB.lua
+
+# Libs (no dependencies, only app assignment)
+lib\Debugging.lua
+lib\Print.lua
+lib\EventRegistration.lua
+lib\Runner.lua
+lib\Colors.lua
+lib\Sort.lua
+lib\Table.lua
+
+# Dependent Libs (may require another lib)
+lib\Callback.lua
+
+# Base ATT functionalities
+src\base.lua
+src\Commands.lua
+src\Events.lua
+# src\DataHandling.lua
+
+# Not really a lib concept...
+lib\Refresh.lua
+lib\Audio.lua
+
+# Load localization modules
+locales\Default Locale.lua
+# locales\en.lua
+locales\de.lua
+locales\es.lua
+locales\mx.lua
+locales\fr.lua
+locales\it.lua
+locales\ko.lua
+locales\pt.lua
+locales\ru.lua
+locales\cn.lua
+locales\tw.lua
+
+# Search Cache
+src\Cache.lua
+
+# Helper Modules
+src\Modules\RetrievingData.lua
+src\Modules\Collection.lua
+src\Modules\FactionData.lua
+src\Modules\Fill.lua
+src\Modules\Color.lua
+# src\Modules\Costs.lua
+src\Modules\Events.lua
+src\Modules\Filter.lua
+# src\Modules\Inventory.lua
+src\Modules\Model.lua
+# src\Modules\Search.lua
+src\Modules\Social.lua
+src\Modules\Tooltip.lua
+# src\Modules\Upgrade.lua
+src\Modules\Vignette.lua
+# src\Modules\Contributor.lua
+
+# Expansion specific localization files
+db\Mists\LocalizationDB.lua
+
+# Load object class templates
+src\Classes\base.lua
+# src\Classes\Achievement.lua
+# src\Classes\BattlePet.lua
+src\Classes\CharacterClass.lua
+# src\Classes\Currency.lua
+src\Classes\Difficulty.lua
+src\Classes\Factions.lua
+src\Classes\Quests.lua
+# src\Classes\Item.Retail.lua
+src\Classes\Item.Classic.lua
+src\Classes\Encounter.lua
+src\Classes\Expansion.lua
+src\Classes\FlightPath.lua
+src\Classes\Header.lua
+src\Classes\Maps.lua
+# src\Classes\Mount.lua
+src\Classes\NPC.lua
+src\Classes\Objects.lua
+# src\Classes\Profession.lua
+src\Classes\Category.lua
+src\Classes\Deaths.lua
+src\Classes\Dynamic Categories.lua
+src\Classes\Filter Types.lua
+src\Classes\Gear Sets.lua
+src\Classes\Glyphs.lua
+src\Classes\Illusions.lua
+# src\Classes\Miscellaneous.lua
+src\Classes\PVP Ranks.lua
+src\Classes\Races.lua
+src\Classes\Title.lua
+src\Classes\Transmog.lua
+# src\Classes\Spell.lua
+# src\Classes\Ensemble.lua
+# src\Classes\CharacterUnlock.lua
+
+# Item Sub-Classes
+# src\Classes\Heirloom.lua
+src\Classes\Toys.lua
+
+# Expansion specific source files
+src\Expansions\Warlords.lua
+src\Expansions\Legion.lua
+src\Expansions\Battle For Azeroth.lua
+src\Expansions\Shadowlands.lua
+src\Expansions\Dragonflight.lua
+
+# Load the Settings Menu
+src\Settings\Classic Settings.xml
+
+# Load primary addon source files
+# AllTheThings.lua
+classic\ATT-Classic.lua
+src\UI\Game Tooltip.lua
+src\UI\Minimap Button.lua
+src\UI\Waypoints.lua
+src\UI\World Map Button.lua
+
+# Window Logic Overhaul
+src\UI\Shared Window Logic.lua
+src\UI\Classic Window Logic.lua
+
+# Load expansion specific category database.
+db\Mists\Categories.lua
+
+# Window Definitions
+src\UI\Windows\Windows.xml
+
+# Finally, prepare the Data Cache
+src\Root.lua

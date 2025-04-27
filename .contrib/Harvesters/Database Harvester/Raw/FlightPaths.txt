@@ -775,7 +775,9 @@
 1117@@@Hellscream's Fist, Townlong Steppes
 1130@@@Quest Path 3506: Jade Forest: -hmc (Taxi: Serpent's Spine to Statue Top) NEW (Tab 870)
 1131@@@Quest Path 3507: Jade Forest: -hmc (Taxi: Statue Top to Serpent's Spine) NEW (Tab 870)
-6.0.1.18125
+5.5.0.60481
+951@@@Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise 
+963@@@Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise 
 1117@@@Serpent's Spine, Kun-Lai Summit
 1190@@@Lion's Landing, Krasarang Wilds
 1195@@@Domination Point, Krasarang Wilds
@@ -786,6 +788,7 @@
 1292@@@Quest Path 3886: Timeless Isle 5.4 - Vignette - Source of Water - Bubble Down (RKS) [REUSEME]
 1293@@@Tushui Landing, Timeless Isle
 1294@@@Huojin Landing, Timeless Isle
+6.0.1.18125
 1350@@@Shadowmoon Valley 6.0 - Observatory (JP3)
 1351@@@Shadowmoon Valley 6.0 - Ironhorde POI (JP3)
 1381@@@Teluuna Observatory, Shadowmoon Valley
@@ -1085,8 +1088,6 @@
 7.3.0.24829
 2020@@@Quest Path 6443: 7.3 QA - TEST HOTFIX - Task 110012 - TaxiPathNode - 2 - RRB
 7.3.5.25600
-951@@@Quest Path 3004: Quest - Jade Forest - Fort Grookin -> Ka Pao Rise 
-963@@@Quest Path 3018: Quest - Jade Forest - Glassfin Village -> Ka Pao Rise 
 1495@@@Quest Path 4342: Shadowmoon Valley 6.0:JP3 - A - Broken Precipice - Taxi Path to Broken Precipice 
 7.3.5.25632
 2058@@@Staghelm Point, Silithus

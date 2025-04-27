@@ -278,12 +278,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				q(35185, {	-- Garrison Campaign: The Sargerei
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 83858 },	-- Khadgar's Servant
-					["coord"] = { 42.6, 46.8, LUNARFALL },
 				}),
 				q(35186, {	-- Garrison Campaign: The Sargerei
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 83858 },	-- Khadgar's Servant
-					["coord"] = { 52.0, 39.8, FROSTWALL },
 				}),
 				q(35187, {	-- Infiltrating the Sargerei
 					["allianceQuestData"] = {
@@ -771,9 +769,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 
 			-- The Fall of Shattrath
 				q(35679, {	-- Garrison Campaign: The Fall of Shattrath
+					["provider"] = { "n", 83858 },	-- Khadgar's Servant
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(35680, {	-- Garrison Campaign: The Fall of Shattrath
+					["provider"] = { "n", 83858 },	-- Khadgar's Servant
 					["races"] = HORDE_ONLY,
 				}),
 				q(35683, {	-- Reclaiming the City

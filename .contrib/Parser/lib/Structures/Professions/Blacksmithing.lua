@@ -762,7 +762,7 @@ COMMON_CATACLYSM_BLACKSMITHING_RECIPES = applyclassicphase(CATA_PHASE_ONE, share
 	}),
 	-- #endif
 }));
-MOP_BLACKSMITHING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+MOP_BLACKSMITHING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	r(110396, {	-- Blacksmithing (Zen Master)
 		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -829,7 +829,7 @@ MOP_BLACKSMITHING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] =
 		r(122636),	-- Spiritguard Shield
 	}),
 }));
-COMMON_MOP_BLACKSMITHING_RECIPES = applyclassicphase(MOP_PHASE_ONE, sharedData({ ["cost"] = {{ "i", SPIRIT_OF_HARMONY, 1 }}, ["timeline"] = { ADDED_5_0_4 } }, {
+COMMON_MOP_BLACKSMITHING_RECIPES = applyclassicphase(MOP_PHASE_LANDFALL, sharedData({ ["cost"] = {{ "i", SPIRIT_OF_HARMONY, 1 }}, ["timeline"] = { ADDED_5_0_4 } }, {
 	i(84158),	-- Plans: Contender's Revenant Belt (RECIPE!)
 	i(84159),	-- Plans: Contender's Revenant Boots (RECIPE!)
 	i(84160),	-- Plans: Contender's Revenant Bracers (RECIPE!)

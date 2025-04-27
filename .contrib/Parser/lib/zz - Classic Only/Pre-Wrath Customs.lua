@@ -324,7 +324,7 @@ root("Achievements", {
 			-- #endif
 			["timeline"] = { ADDED_2_0_1 },
 		})),
-		applyclassicphase(MOP_PHASE_ONE, ach(6974, {	-- Pandaria Explorer [7.0.3] / Explore Pandaria
+		applyclassicphase(MOP_PHASE_LANDFALL, ach(6974, {	-- Pandaria Explorer [7.0.3] / Explore Pandaria
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				6978,	-- Explore Dread Wastes

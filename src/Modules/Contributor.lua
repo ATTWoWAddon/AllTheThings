@@ -833,6 +833,7 @@ MobileDB.GameObject = {
 	[356563] = true,	-- Sanguine Rose (q:60532)
 	[356596] = true,	-- Feather Cap (q:61406)
 	[356597] = true,	-- Lacy Bell Morel (q:61406)
+	[358297] = true,	-- Purified Nectar (q:62276)
 	[363824] = true,	-- Cage (q:62720)
 	[364345] = true,	-- A Faintly Glowing Seed
 	[368304] = true,	-- Damaged Binding

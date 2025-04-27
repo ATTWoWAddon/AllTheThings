@@ -4,8 +4,9 @@
 
 root(ROOTS.Zones, {
 	m(PANDARIA, {
-		m(ISLE_OF_GIANTS, {
+		applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, m(ISLE_OF_GIANTS, {
 			["lore"] = "The Isle of Giants is an island that has been lost in time, home to primal devilsaurs, direhorns, and skyscreamers raised by the Zandalar tribe on the isle since the loss of Zandalar.",
+			["timeline"] = { ADDED_5_2_0 },
 			["icon"] = 236192,
 			["g"] = {
 				n(FLIGHT_PATHS, {
@@ -156,6 +157,6 @@ root(ROOTS.Zones, {
 					}),
 				}),
 			},
-		}),
+		})),
 	}),
 });

@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
-	inst(324, {	-- Siege of Niuzao Temple
+	applyclassicphase(MOP_PHASE_LANDFALL, inst(324, {	-- Siege of Niuzao Temple
 		["coord"] = { 35, 82, TOWNLONG_STEPPES },
 		["maps"] = {
 			457,	-- Siege of Niuzao Temple
@@ -403,7 +403,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 			}),
 		},
-	}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {

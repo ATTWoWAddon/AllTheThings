@@ -49,7 +49,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 		-- #endif
 		["coord"] = { 64.2, 71.0, BLACKROCK_MOUNTAIN },
 		["mapID"] = BLACKWING_LAIR,
-		["maps"] = { 288, 289, 290 },
+		["maps"] = { BLACKWING_LAIR_LEVEL2, BLACKWING_LAIR_LEVEL3, BLACKWING_LAIR_LEVEL4 },
 		-- #if BEFORE WOD
 		["sourceQuest"] = 7761,	-- Blackhand's Command
 		-- #endif

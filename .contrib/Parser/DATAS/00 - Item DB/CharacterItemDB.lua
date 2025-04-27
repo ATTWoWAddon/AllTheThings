@@ -748,7 +748,7 @@ is(0, 467553);			-- Path of the Azerite Refinery [A]
 is(0, 467555);			-- Path of the Azerite Refinery [H]
 is(0, 1216786);			-- Path of the Circuit Breaker
 ihqt(235262, 86753);	-- Steamwheedle's Trove (Honored)
---ihqt(234743, XXX);	-- Steamwheedle's Trove (Revered)
+ihqt(234743, 86754);	-- Steamwheedle's Trove (Revered)
 --ihqt(235263, 86596);	-- Steamwheedle's Trove (Exalted)
 ihqt(232499, 85734);	-- Undermine Treatise on Alchemy
 ihqt(232500, 85735);	-- Undermine Treatise on Blacksmithing

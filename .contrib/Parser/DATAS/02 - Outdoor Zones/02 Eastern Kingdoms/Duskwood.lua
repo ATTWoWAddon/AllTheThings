@@ -12,34 +12,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(38344, {	-- The Legend of Stalvan
-							["sourceQuest"] = 26674,	-- Mistmantle's Revenge
-						}),
-						crit(38345, {	-- Morbent Fel
-							["sourceQuest"] = 26754,	-- Morbent's Bane
-						}),
-						crit(38347, {	-- A Hermit's Errand
-							["sourceQuest"] = 26727,	-- The Embalmer's Revenge
-						}),
-						crit(38346, {	-- Mor'ladim
-							["sourceQuest"] = 26797,	-- A Daughter's Love
-						}),
-						crit(38348, {	-- Citizens of Darkshire
-							["sourceQuest"] = 26686,	-- Bones That Walk
-						}),
-						crit(38349, {	-- Citizens of Darkshire
-							["sourceQuest"] = 26691,	-- Worgen in the Woods
-						}),
-						crit(38350, {	-- Citizens of Darkshire
-							["sourceQuest"] = 26620,	-- Seasoned Wolf Kabobs
-						}),
-						crit(38351, {	-- Citizens of Darkshire
-							["sourceQuest"] = 26623,	-- Dusky Crab Cakes
-						}),
-					},
-					-- #else
 					["sourceQuests"] = {
 						26674,	-- Mistmantle's Revenge
 						26754,	-- Morbent's Bane
@@ -50,41 +22,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26620,	-- Seasoned Wolf Kabobs
 						26691,	-- Worgen in the Woods
 					},
-					-- #endif
 					-- #endif
 				}),
 				ach(12430, {	-- Duskwood Quests
 					["timeline"] = { ADDED_7_3_5 },
 					["races"] = ALLIANCE_ONLY,
 					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(38344, {	-- The Legend of Stalvan
-							["sourceQuest"] = 26674,	-- Mistmantle's Revenge
-						}),
-						crit(38345, {	-- Morbent Fel
-							["sourceQuest"] = 26754,	-- Morbent's Bane
-						}),
-						crit(38347, {	-- A Hermit's Errand
-							["sourceQuest"] = 26727,	-- The Embalmer's Revenge
-						}),
-						crit(38346, {	-- Mor'ladim
-							["sourceQuest"] = 26797,	-- A Daughter's Love
-						}),
-						crit(38348, {	-- Citizens of Darkshire
-							["sourceQuest"] = 26686,	-- Bones That Walk
-						}),
-						crit(38349, {	-- Citizens of Darkshire
-							["sourceQuest"] = 26691,	-- Worgen in the Woods
-						}),
-						crit(38350, {	-- Citizens of Darkshire
-							["sourceQuest"] = 26620,	-- Seasoned Wolf Kabobs
-						}),
-						crit(38351, {	-- Citizens of Darkshire
-							["sourceQuest"] = 26623,	-- Dusky Crab Cakes
-						}),
-					},
-					-- #else
 					["sourceQuests"] = {
 						26674,	-- Mistmantle's Revenge
 						26754,	-- Morbent's Bane
@@ -95,7 +38,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26620,	-- Seasoned Wolf Kabobs
 						26691,	-- Worgen in the Woods
 					},
-					-- #endif
 					-- #endif
 				}),
 			}),

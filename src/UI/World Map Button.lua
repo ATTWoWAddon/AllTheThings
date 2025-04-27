@@ -4,11 +4,13 @@ local L, GameTooltip = app.L, GameTooltip;
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
 
 -- World Map Button
+local XShift = app.IsRetail and -1 or 0
+local YShift = app.IsRetail and -65 or -32
 local WorldMapButton;
 local function CreateWorldMapButton()
 	local button = CreateFrame("BUTTON", appName .. "-WorldMap", WorldMapFrame:GetCanvasContainer());
 	button:SetHighlightTexture(app.asset("MinimapHighlight_64x64"));
-	button:SetPoint("TOPRIGHT", 0, -36);
+	button:SetPoint("TOPRIGHT", XShift, YShift);
 	button:RegisterForClicks("LeftButtonUp", "RightButtonUp");
 	button:SetFrameStrata("HIGH");
 	button:EnableMouse(true);
@@ -21,7 +23,7 @@ local function CreateWorldMapButton()
 	texture:SetAllPoints();
 	texture:Show();
 	button.texture = texture;
-	
+
 	local minilist = app:GetWindow(app.IsClassic and "MiniList" or "CurrentInstance");
 	button:SetScript("OnEnter", function(self)
 		local mapID = WorldMapFrame:GetMapID();

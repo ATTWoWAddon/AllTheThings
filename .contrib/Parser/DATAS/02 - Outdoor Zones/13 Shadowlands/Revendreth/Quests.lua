@@ -317,7 +317,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["coord"] = { 38.9, 66.0, REVENDRETH },
 					["g"] = {
 						o(354075, {	-- Blank Parchment
-							i(171343),	-- Blank Parchment (QI!)
+							["coords"] = {
+								{ 37.8, 68.4, REVENDRETH },
+								{ 38.0, 70.3, REVENDRETH },
+								{ 38.1, 69.4, REVENDRETH },
+								{ 38.2, 71.4, REVENDRETH },
+								{ 38.8, 69.9, REVENDRETH },
+							},
+							["g"] = { i(171343) },	-- Blank Parchment (QI!)
 						}),
 						i(171345),	-- Forged Letter of Condemnation (QI!)
 						i(171344),	-- Venthyr Calligraphy Set (QI!)

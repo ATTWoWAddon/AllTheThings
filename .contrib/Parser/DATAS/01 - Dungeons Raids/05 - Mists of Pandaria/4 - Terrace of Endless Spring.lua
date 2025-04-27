@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
-	inst(320, {	-- Terrace of Endless Spring
+	applyclassicphase(MOP_PHASE_LANDFALL, inst(320, {	-- Terrace of Endless Spring
 		["isRaid"] = true,
 		["coord"] = { 48.4, 61.4, THE_VEILED_STAIR },
 		["maps"] = { 456 },	-- Terrace of Endless Spring
@@ -494,5 +494,5 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				},
 			}),
 		},
-	}),
+	})),
 })));

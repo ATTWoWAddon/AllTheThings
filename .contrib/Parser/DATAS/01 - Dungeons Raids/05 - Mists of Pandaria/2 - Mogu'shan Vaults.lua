@@ -2,8 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
-	inst(317, {	-- Mogu'shan Vaults
-		["isRaid"] = true,
+	applyclassicphase(MOP_PHASE_LANDFALL, inst(317, {	-- Mogu'shan Vaults
 		["coord"] = { 59.6, 39.1, KUN_LAI_SUMMIT },
 		["maps"] = {
 			471,	-- Dais of Conquerors
@@ -11,6 +10,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			473,	-- Forge of the Endless
 		},
 		["sharedLockout"] = 1,
+		["isRaid"] = true,
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(6458, {	-- Guardians of Mogu'shan
@@ -612,5 +612,5 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				},
 			}),
 		},
-	}),
+	})),
 })));

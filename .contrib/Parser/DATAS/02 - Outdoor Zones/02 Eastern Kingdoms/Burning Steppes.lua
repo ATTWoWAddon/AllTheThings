@@ -11,34 +11,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4901, {	-- Burning Steppes Quests
 					["timeline"] = { ADDED_4_0_3 },
 					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- Preparation
-							["sourceQuests"] = {
-								28183,	-- Return to Keeshan (A)
-								28425,	-- Return to Ariok (H)
-							},
-						}),
-						crit(2, {	-- Annihilation
-							["sourceQuests"] = {
-								28322,	-- The Spoils of War (A)
-								28456,	-- The Spoils of War (H)
-							},
-						}),
-						crit(3, {	-- Infiltration
-							["sourceQuests"] = {
-								28286,	-- Enough Damage For One Day (A)
-								28441,	-- Enough Damage For One Day (H)
-							},
-						}),
-						crit(4, {	-- Anticipation
-							["sourceQuests"] = {
-								28326,	-- Placing the Pawns (A)
-								28449,	-- Placing the Pawns (H)
-							},
-						}),
-					},
-					-- #else
 					["sourceQuests"] = {
 						28183,	-- Return to Keeshan (A)
 						28425,	-- Return to Ariok (H)
@@ -49,7 +21,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28326,	-- Placing the Pawns (A)
 						28449,	-- Placing the Pawns (H)
 					},
-					-- #endif
 					-- #endif
 				}),
 			}),

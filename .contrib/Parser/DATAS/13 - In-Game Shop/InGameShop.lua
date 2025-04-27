@@ -181,11 +181,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 	}),
 	filter(MOUNTS, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {	-- REMOVED --
-		mount(302361, {	-- Alabaster Stormtalon (MOUNT!)
+		i(207964, {	-- Alabaster Stormtalon (MOUNT!)
 			["timeline"] = { ADDED_8_2_5, REMOVED_10_1_0 },	-- Removed 17th April 2023
 			["races"] = ALLIANCE_ONLY,
 		}),
-		mount(302362, {	-- Alabaster Thunderwing (MOUNT!)
+		i(207963, {	-- Alabaster Thunderwing (MOUNT!)
 			["timeline"] = { ADDED_8_2_5, REMOVED_10_1_0 },	-- Removed 17th April 2023
 			["races"] = HORDE_ONLY,
 		}),

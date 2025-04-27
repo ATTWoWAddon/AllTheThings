@@ -113,11 +113,12 @@ namespace ATT
                 {
                     Errored = false;
                     // Load all of the RAW JSON Data into the database.
-                    if (!string.IsNullOrWhiteSpace(Framework.Config["wago-directory"]))
+                    var wagoDirectory = Framework.Config["wago-directory"];
+                    if (!string.IsNullOrWhiteSpace(wagoDirectory))
                     {
-                        Trace.WriteLine($"Loading Wago DB CSV files from {Framework.Config["wago-directory"]}.");
+                        Trace.WriteLine($"Loading Wago DB CSV files from {wagoDirectory}.");
                     }
-                    var files = Directory.EnumerateFiles(databaseRootFolder + Framework.Config["wago-directory"], "*.csv", SearchOption.AllDirectories).ToList();
+                    var files = Directory.EnumerateFiles(wagoDirectory, "*.csv", SearchOption.AllDirectories).ToList();
 
                     files.Sort(StringComparer.InvariantCulture);
                     foreach (var f in files) ParseWagoDbCsvFile(f);

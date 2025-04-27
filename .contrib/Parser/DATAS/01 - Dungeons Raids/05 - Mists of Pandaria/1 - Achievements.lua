@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
-	n(ACHIEVEMENTS, {
+	applyclassicphase(MOP_PHASE_LANDFALL, n(ACHIEVEMENTS, {
 		ach(6924, {	-- 100,000 Valor Points
 			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 		}),
@@ -155,5 +155,5 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			}),
 		})),
 		ach(11757, {["timeline"] = {ADDED_7_2_0}}),	-- Sha of Fabulous (Heart of Fear and Terrace of Endless Spring)
-	}),
+	})),
 })));

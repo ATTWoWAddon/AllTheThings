@@ -13,39 +13,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- The Triumvirate's First, Boros
-							["sourceQuest"] = 9700,	-- I Shoot Magic Into the Darkness
-						}),
-						crit(2, {	-- The Triumvirate's Second, Kuros
-							["sourceQuest"] = 9711,	-- Matis the Cruel
-						}),
-						crit(3, {	-- The Triumvirate's Third, Aesom
-							["sourceQuest"] = 9740,	-- The Sun Gate
-						}),
-						crit(4, {	-- Galaen's Fate
-							["sourceQuest"] = 9579,	-- Galaen's Fate
-						}),
-						crit(5, {	-- Defending Vindicator's Rest
-							["sourceQuests"] = {
-								9741,	-- Critters of the Void
-								10065,	-- Cutting a Path
-								10067,	-- Fouled Water Spirits
-								10066,	-- Oh, the Tangled Webs They Weave
-							},
-						}),
-						crit(6, {	-- Ending the Bloodcurse
-							["sourceQuest"] = 9683,	-- Ending the Bloodcurse
-						}),
-						crit(7, {	-- Loreth'Aran
-							["sourceQuest"] = 9689,	-- Razormaw
-						}),
-						crit(8, {	-- The Unwritten Prophecy
-							["sourceQuest"] = 9759,	-- Ending Their World
-						}),
-					},
-					-- #else
 					["sourceQuests"] = {
 						9700,	-- I Shoot Magic Into the Darkness
 						9711,	-- Matis the Cruel
@@ -59,7 +26,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						9689,	-- Razormaw
 						9759,	-- Ending Their World
 					},
-					-- #endif
 					-- #endif
 				}),
 				explorationAch(861),	-- Explore Bloodmyst Isle

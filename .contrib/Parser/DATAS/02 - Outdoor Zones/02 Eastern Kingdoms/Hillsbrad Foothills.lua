@@ -24,32 +24,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- The Sludge Fields
-							["sourceQuest"] = 28237,	-- A Blight Upon the Land
-						}),
-						crit(2, {	-- Stormpike
-							["sourceQuest"] = 28616,	-- Stormpike Apocalypse
-						}),
-						crit(3, {	-- Eastpoint Tower
-							["sourceQuests"] = {
-								28634,	-- Extinction
-								28636,	-- Silent of the Dwarves
-								28647,	-- The Durnholde Challenge: D-1000
-							},
-						}),
-						crit(4, {	-- Azurelode Mine
-							["sourceQuests"] = {
-								28146,	-- Coastal Delicacies!
-								28156,	-- Deep Mine Rescue
-								28138,	-- Human Infestation
-								-- 28154,	-- Muckgill's Flipper or Something... (TODO: verify if needed)
-								28144,	-- Thieving Little Monsters!
-							},
-						}),
-					},
-					-- #else
 					["sourceQuests"] = {
 						28237,	-- A Blight Upon the Land
 						28616,	-- Stormpike Apocalypse
@@ -62,7 +36,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- 28154,	-- Muckgill's Flipper or Something... (TODO: verify if needed)
 						28144,	-- Thieving Little Monsters!
 					},
-					-- #endif
 					-- #endif
 				}),
 			}),

@@ -294,6 +294,7 @@ local INSTANCE_GROUPS = {
 			ach(12846),	-- Mythic: The MOTHERELODE!!
 			ach(13006),	-- Mythic: The MOTHERLODE!! Guild Run
 			ach(12854),	-- Ready for Raiding VI
+			i(161135),	-- Schematic: Mecha-Mogul Mk2 (RECIPE!)
 		}),
 	}),
 }

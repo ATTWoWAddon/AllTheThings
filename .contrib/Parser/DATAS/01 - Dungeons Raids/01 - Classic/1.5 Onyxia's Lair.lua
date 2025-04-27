@@ -26,7 +26,7 @@ local STORMRAGE_COVER = i(16900);	-- Stormrage Cover
 
 -- #if WRATH
 local ONYXIAS_LAIR_FORTYMAN_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_ONE .. [[) then
+	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_LANDFALL .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		t.rwp = nil;
 	else

@@ -1429,7 +1429,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(42989),	-- Darkmoon Card: Berserker!
 				},
 			})),
-			applyclassicphase(MOP_PHASE_ONE, q(30449, {	-- Darkmoon Crane Deck
+			applyclassicphase(MOP_PHASE_LANDFALL, q(30449, {	-- Darkmoon Crane Deck
 				["providers"] = {
 					{ "i", 79325 },	-- Crane Deck
 					{ "n", 14847 },	-- Professor Thaddeus Paleo <Darkmoon Cards>
@@ -1611,7 +1611,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(44254),	-- Darkmoon Card: Greatness
 				},
 			})),
-			applyclassicphase(MOP_PHASE_ONE, q(30450, {	-- Darkmoon Ox Deck
+			applyclassicphase(MOP_PHASE_LANDFALL, q(30450, {	-- Darkmoon Ox Deck
 				["providers"] = {
 					{ "i", 79324 },	-- Ox Deck
 					{ "n", 14847 },	-- Professor Thaddeus Paleo <Darkmoon Cards>
@@ -1715,7 +1715,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(42988),	-- Darkmoon Card: Illusion
 				},
 			})),
-			applyclassicphase(MOP_PHASE_ONE, q(30451, {	-- Darkmoon Serpent Deck
+			applyclassicphase(MOP_PHASE_LANDFALL, q(30451, {	-- Darkmoon Serpent Deck
 				["providers"] = {
 					{ "i", 79326 },	-- Serpent Deck
 					{ "n", 14847 },	-- Professor Thaddeus Paleo <Darkmoon Cards>
@@ -1751,7 +1751,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(31857),	-- Darkmoon Card: Wrath
 				},
 			})),
-			applyclassicphase(MOP_PHASE_ONE, q(30452, {	-- Darkmoon Tiger Deck
+			applyclassicphase(MOP_PHASE_LANDFALL, q(30452, {	-- Darkmoon Tiger Deck
 				["providers"] = {
 					{ "i", 79323 },	-- Tiger Deck
 					{ "n", 14847 },	-- Professor Thaddeus Paleo <Darkmoon Cards>
@@ -4384,7 +4384,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "i", 44285, 1 },	-- Eight of Chaos
 				},
 			})),
-			applyclassicphase(MOP_PHASE_ONE, i(79325, {	-- Crane Deck
+			applyclassicphase(MOP_PHASE_LANDFALL, i(79325, {	-- Crane Deck
 				["timeline"] = { ADDED_5_0_4 },
 				["cost"] = {
 					{ "i", 79299, 1 },	-- Ace of Cranes
@@ -4522,7 +4522,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "i", 44275, 1 },	-- Eight of Nobles
 				},
 			})),
-			applyclassicphase(MOP_PHASE_ONE, i(79324, {	-- Ox Deck
+			applyclassicphase(MOP_PHASE_LANDFALL, i(79324, {	-- Ox Deck
 				["timeline"] = { ADDED_5_0_4 },
 				["cost"] = {
 					{ "i", 79291, 1 },	-- Ace of Oxen
@@ -4582,7 +4582,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "i", 37156, 1 },	-- Three of Rogues
 				},
 			})),
-			applyclassicphase(MOP_PHASE_ONE, i(79326, {	-- Serpent Deck
+			applyclassicphase(MOP_PHASE_LANDFALL, i(79326, {	-- Serpent Deck
 				["timeline"] = { ADDED_5_0_4 },
 				["cost"] = {
 					{ "i", 79307, 1 },	-- Ace of Serpents
@@ -4617,7 +4617,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "i", 37160, 1 },	-- Four of Swords
 				},
 			})),
-			applyclassicphase(MOP_PHASE_ONE, i(79323, {	-- Tiger Deck
+			applyclassicphase(MOP_PHASE_LANDFALL, i(79323, {	-- Tiger Deck
 				["timeline"] = { ADDED_5_0_4 },
 				["cost"] = {
 					{ "i", 79283, 1 },	-- Ace of Tigers

@@ -11,7 +11,7 @@ SCENARIOS = createHeader({
 	},
 });
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
-	n(SCENARIOS, {
+	applyclassicphase(MOP_PHASE_LANDFALL, n(SCENARIOS, {
 		["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -780,7 +780,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				title(226),	-- Gob Squad Commando <Name>
 			})),
 		},
-	}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_3_0 } }, {

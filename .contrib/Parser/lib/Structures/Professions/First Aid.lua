@@ -110,7 +110,7 @@ CATA_FIRST_AID = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = {
 	r(74558),	-- Field Bandage: Dense Embersilk
 	r(74557),	-- Heavy Embersilk Bandage
 }));
-MOP_FIRST_AID = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 } }, {
+MOP_FIRST_AID = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 } }, {
 	r(110406, {	-- First Aid (Zen Master)
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,

@@ -3,6 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bizmo's Brawlpub
+	["timeline"] = { ADDED_5_1_0 },
 	["races"] = ALLIANCE_ONLY,
 	["lvl"] = 120,
 	["maps"] = { DEEPRUN_TRAM },

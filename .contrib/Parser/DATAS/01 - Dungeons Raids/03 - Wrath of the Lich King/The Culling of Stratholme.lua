@@ -182,9 +182,19 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(37099),	-- Sempiternal Staff
 						i(37096),	-- Necklace of the Chrono-Lord
 						-- #if AFTER 7.3.5
-						i(37686),	-- Cracked Epoch Grasps (7.3.5 - Used to be only Heroic Mode)
-						i(37687),	-- Gloves of Distorted Time (7.3.5 - Used to be only Heroic Mode)
+						i(37686, {	-- Cracked Epoch Grasps (7.3.5 - Used to be only Heroic Mode)
+							["timeline"] = { REMOVED_11_1_5 },
+						}),
+						i(37687, {	-- Gloves of Distorted Time (7.3.5 - Used to be only Heroic Mode)
+							["timeline"] = { REMOVED_11_1_5 },
+						}),
 						-- #endif
+						i(238993, {	-- Cracked Epoch Grasps
+							["timeline"] = { ADDED_11_1_5 },
+						}),
+						i(238991, {	-- Gloves of Distorted Time
+							["timeline"] = { ADDED_11_1_5 },
+						}),
 						i(37106),	-- Ouroboros Belt
 						-- #if AFTER 7.3.5
 						i(37688),	-- Legplates of the Infinite Drakonid (7.3.5 - Used to be only Heroic Mode)
@@ -292,8 +302,18 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(37099),	-- Sempiternal Staff (7.3.5 - Used to be only Normal Mode)
 							i(37096),	-- Necklace of the Chrono-Lord (7.3.5 - Used to be only Normal Mode)
 							-- #endif
-							i(37686),	-- Cracked Epoch Grasps
-							i(37687),	-- Gloves of Distorted Time
+							i(37686, {	-- Cracked Epoch Grasps
+								["timeline"] = { REMOVED_11_1_5 },
+							}),
+							i(238993, {	-- Cracked Epoch Grasps
+								["timeline"] = { ADDED_11_1_5 },
+							}),
+							i(37687, {	-- Gloves of Distorted Time
+								["timeline"] = { REMOVED_11_1_5 },
+							}),
+							i(238991, {	-- Gloves of Distorted Time
+								["timeline"] = { ADDED_11_1_5 },
+							}),
 							-- #if AFTER 7.3.5
 							i(37106),	-- Ouroboros Belt (7.3.5 - Used to be only Normal Mode)
 							-- #endif

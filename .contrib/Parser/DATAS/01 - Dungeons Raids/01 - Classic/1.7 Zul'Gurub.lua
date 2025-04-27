@@ -14,9 +14,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 		-- #endif
 		["maps"] = {
 			ZULGURUB,
-			-- #if ANYCLASSIC
-			233,
-			-- #endif
+			ZULGURUB_OUTDOORS,
 		},
 		["isRaid"] = true,
 		["lvl"] = 58,
@@ -943,6 +941,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					["groups"] = {
 						applyclassicphase(PHASE_FIVE, i(20757)),	-- Formula: Brilliant Mana Oil (RECIPE!)
 						applyclassicphase(PHASE_FIVE, i(20756)),	-- Formula: Brilliant Wizard Oil (RECIPE!)
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_SIX, i(232610, {	-- Formula: Magnificent Trollshine
+							["timeline"] = { ADDED_1_15_5 },
+						})),
+						-- #endif
 						i(19772),	-- Pattern: Blood Tiger Breastplate (RECIPE!)
 						i(19773),	-- Pattern: Blood Tiger Shoulders (RECIPE!)
 						i(19766),	-- Pattern: Bloodvine Boots

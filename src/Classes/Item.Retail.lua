@@ -241,7 +241,10 @@ end
 -- Removes the color and hyperlink text/formatting from the link string
 local function CleanLink(link)
 	if not link then return link end
-	local cleaned = link:lower():gsub("|cniq[0-9]:|h",""):gsub("|h%[.+",""):gsub("|r","")
+	local cleaned = link:lower():gsub("|c[a-z0-9:]+|?h?",""):gsub("|h%[.+","")
+	-- :gsub("|cniq[0-9]:[|h]+","")
+	-- :gsub("|r","")
+	-- app.PrintDebug("CleanLink",link,cleaned)
 	-- wanted this to just work to grab the portion of the link which contains the useful data, but
 	-- it started being dumb, maybe review later
 	-- local cleaned = link:match("[a-z]+[iI]?[dD]?:[%-?%d:]+")

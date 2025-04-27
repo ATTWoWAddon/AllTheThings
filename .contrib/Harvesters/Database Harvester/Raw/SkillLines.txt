@@ -347,6 +347,8 @@
 987@@@Goat
 988@@@Basilisk
 999@@@NO PLAYERS
+5.5.0.60481
+1305@@@Direhorn
 6.0.1.18179
 101@@@Racial - Dwarf
 124@@@Racial - Tauren
@@ -361,7 +363,6 @@
 899@@@Racial - Pandaren
 986@@@Pet - Exotic Quilen
 987@@@Pet - Goat
-1305@@@Direhorn
 1748@@@Pet - Primal Storm Elemental
 1777@@@Pet - Water Elemental Minor Talent Version
 1818@@@Pet - Exotic Hook Wasp

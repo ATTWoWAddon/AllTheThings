@@ -1463,12 +1463,20 @@ root(ROOTS.Zones, {
 				41,		-- Loremaster of Northrend
 				4875,	-- Loremaster of Cataclysm
 				6541,	-- Loremaster of Pandaria
+				-- #if AFTER WOD
 				9833,	-- Loremaster of Draenor (A)
 				9923,	-- Loremaster of Draenor (H)
+				-- #endif
+				-- #if AFTER LEGION
 				11157,	-- Loremaster of Legion
+				-- #endif
+				-- #if AFTER BFA
 				12593,	-- Loremaster of Kul Tiras (A)
 				13294,	-- Loremaster of Zandalar (H)
+				-- #endif
+				-- #if AFTER SHADOWLANDS
 				14280,	-- Loremaster of Shadowlands
+				-- #endif
 			}},
 			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {

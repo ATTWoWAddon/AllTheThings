@@ -3,7 +3,7 @@ do
 local appName,app = ...;
 
 local EJ_GetEncounterInfo = EJ_GetEncounterInfo;
-if EJ_GetEncounterInfo and app.GameBuildVersion >= 50000 then
+if EJ_GetEncounterInfo and app.GameBuildVersion >= 60000 then
 	local MAX_CREATURES_PER_ENCOUNTER = 9;
 	local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted;
 	local tinsert, EJ_GetCreatureInfo = tinsert, EJ_GetCreatureInfo;

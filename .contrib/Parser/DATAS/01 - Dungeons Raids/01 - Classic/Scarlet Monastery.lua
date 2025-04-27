@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-SCARLET_MONASTERY_GRAVEYARD = createHeader({
+SCARLET_MONASTERY_GRAVEYARD_HEADER = createHeader({
 	readable = "Graveyard",
 	icon = 133730,
 	text = {
@@ -12,7 +12,7 @@ SCARLET_MONASTERY_GRAVEYARD = createHeader({
 		cn = "墓地",
 	},
 });
-SCARLET_MONASTERY_LIBRARY = createHeader({
+SCARLET_MONASTERY_LIBRARY_HEADER = createHeader({
 	readable = "Library",
 	icon = 133745,
 	text = {
@@ -23,7 +23,7 @@ SCARLET_MONASTERY_LIBRARY = createHeader({
 		cn = "图书馆",
 	},
 });
-SCARLET_MONASTERY_ARMORY = createHeader({
+SCARLET_MONASTERY_ARMORY_HEADER = createHeader({
 	readable = "Armory",
 	icon = 133127,
 	text = {
@@ -34,7 +34,7 @@ SCARLET_MONASTERY_ARMORY = createHeader({
 		cn = "武器库",
 	},
 });
-SCARLET_MONASTERY_CATHEDRAL = createHeader({
+SCARLET_MONASTERY_CATHEDRAL_HEADER = createHeader({
 	readable = "Cathedral",
 	icon = 133101,
 	text = {
@@ -62,12 +62,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		},
 		["maps"] = {
 			SCARLET_MONASTERY,	-- Scarlet Monastery: Forlorn Cloister (First Boss)
-			436,	-- Scarlet Monasatery: Crusader's Chapel (Last two bosses)
-			--804,	-- Scarlet Monastery: Death Knight Campaign	[Crieve NOTE: This might not be necessary?]
-			302,	-- Scarlet Monastery: Graveyard
-			303,	-- Scarlet Monastery: Library
-			304,	-- Scarlet Monastery: Armory
-			305,	-- Scarlet Monastery: Cathedral
+			SCARLET_MONASTERY_CRUSADERS_CHAPEL,	-- Scarlet Monasatery: Crusader's Chapel (Last two bosses)
+			SCARLET_MONASTERY_GRAVEYARD,	-- Scarlet Monastery: Graveyard
+			SCARLET_MONASTERY_LIBRARY,	-- Scarlet Monastery: Library
+			SCARLET_MONASTERY_ARMORY,	-- Scarlet Monastery: Armory
+			SCARLET_MONASTERY_CATHEDRAL,	-- Scarlet Monastery: Cathedral
 		},
 		["lvl"] =
 			-- #if AFTER 5.0.1
@@ -338,7 +337,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(7727),	-- Watchman Pauldrons
 					i(7757),	-- Windweaver Staff
 				}),
-				n(SCARLET_MONASTERY_GRAVEYARD, {
+				n(SCARLET_MONASTERY_GRAVEYARD_HEADER, {
 					["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 					-- #if AFTER 10.1.7
 					["description"] = "Unlocked via 'The Scarlet Key' from the Loot-Filled Pumpkin during Hallow's End or bought from the Auction House.\n\n\nObtain the Key & head to the Scarlet Monastery. After entering the building, you will find on the left side a keychain with quest mark above it. Complete this quest.\nAfterwards, when you interact with the keychain, you will get The Scarlet Key buff after which you can interact with previously locked door to 2 old dungeons and enter them.\nCurrent portals to Scarlet Monastery also function as portals to the old dungeons they used to lead to.\nInteracting with the keychain repeatedly removes/reapplies the buff.\n\nUnlock is account-wide.",
@@ -531,7 +530,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				n(SCARLET_MONASTERY_LIBRARY, {
+				n(SCARLET_MONASTERY_LIBRARY_HEADER, {
 					["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 					-- #if AFTER 10.1.7
 					["description"] = "Unlocked via 'The Scarlet Key' from the Loot-Filled Pumpkin during Hallow's End or bought from the Auction House.\n\n\nObtain the Key & head to the Scarlet Monastery. After entering the building, you will find on the left side a keychain with quest mark above it. Complete this quest.\nAfterwards, when you interact with the keychain, you will get The Scarlet Key buff after which you can interact with previously locked door to 2 old dungeons and enter them.\nCurrent portals to Scarlet Monastery also function as portals to the old dungeons they used to lead to.\nInteracting with the keychain repeatedly removes/reapplies the buff.\n\nUnlock is account-wide.",
@@ -761,7 +760,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				n(SCARLET_MONASTERY_ARMORY, {
+				n(SCARLET_MONASTERY_ARMORY_HEADER, {
 					["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 7146, 1 } },	-- The Scarlet Key
@@ -891,7 +890,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				n(SCARLET_MONASTERY_CATHEDRAL, {
+				n(SCARLET_MONASTERY_CATHEDRAL_HEADER, {
 					["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 7146, 1 } },	-- The Scarlet Key

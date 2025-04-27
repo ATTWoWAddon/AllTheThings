@@ -17,9 +17,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}),
 				},
 			}, {
-				q(83363),					-- A Burning Path Through Time
+				q(83363),										-- A Burning Path Through Time
 				q(83360, {["timeline"] = { ADDED_11_0_7 }}),	-- A Fel Path Through Time
-				q(83365),					-- A Frozen Path Through Time
+				q(83365),										-- A Frozen Path Through Time
 				q(83364, {["timeline"] = { ADDED_11_0_7 }}),	-- A Savage Path Through Time
 				q(83359, {["timeline"] = { ADDED_11_0_7 }}),	-- A Shattered Path Through Time
 				q(83362, {["timeline"] = { ADDED_11_0_7 }}),	-- A Shrouded Path Through Time
@@ -30,7 +30,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 46.5, 49.3, DORNOGAL },
 				["isWeekly"] = true,
 			}, {
-				pvp(q(83345)),				-- A Call to Battle
+				pvp(q(83345, {				-- A Call to Battle
+					["_drop"] = { "g" },	-- Drop Mark of Honor
+				})),
 				-- #IF AFTER TWW
 				-- #IF BEFORE MID
 				pvp(q(47148)),				-- Something Different

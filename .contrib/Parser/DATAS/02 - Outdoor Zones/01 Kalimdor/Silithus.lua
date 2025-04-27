@@ -2903,10 +2903,49 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_SIX, i(234272, {	-- Formula: Enchanted Repellent
+							["timeline"] = { ADDED_1_15_5 },
+						})),
+						applyclassicphase(SOD_PHASE_SIX, i(234271, {	-- Formula: Scroll: Wrath of the Swarm
+							["timeline"] = { ADDED_1_15_5 },
+						})),
+						-- #endif
 						i(20755),	-- Formula: Wizard Oil (RECIPE!)
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 						i(22308),	-- Pattern: Enchanted Runecloth Bag
 					},
+				}),
+				n(15175, {	-- Khur Hornstriker <Reagent Vendor>
+					-- #if AFTER CATA
+					["coord"] = { 52.8, 34.8, SILITHUS },
+					-- #else
+					["coord"] = { 48.8, 37.0, SILITHUS },
+					-- #endif
+					["groups"] = bubbleDownClassicRep(FACTION_CENARION_CIRCLE, {
+						{		-- Neutral
+						}, {	-- Friendly
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_SIX, i(234260, {		-- Recipe: Elixir of Alacrity (RECIPE!)
+								["timeline"] = { ADDED_1_15_5 },
+							})),
+							-- #endif
+						}, {	-- Honored
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_SIX, i(234259, {		-- Recipe: Elixir of the Ironside (RECIPE!)
+								["timeline"] = { ADDED_1_15_5 },
+							})),
+							applyclassicphase(SOD_PHASE_SIX, i(234257, {		-- Recipe: Elixir of the Honey Badger (RECIPE!)
+								["timeline"] = { ADDED_1_15_5 },
+							})),
+							applyclassicphase(SOD_PHASE_SIX, i(234258, {		-- Recipe: Elixir of the Mage-Lord (RECIPE!)
+								["timeline"] = { ADDED_1_15_5 },
+							})),
+							-- #endif
+						}, {	-- Revered
+						}, {	-- Exalted
+						},
+					}),
 				}),
 				n(15179, {	-- Mishta <Trade Supplies> [TBC+] / Mishta <General Trade Goods Vendor>
 					-- #if AFTER CATA
@@ -2921,14 +2960,55 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								["isLimited"] = true,
 							}),
 						}, {	-- Friendly
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_SIX, i(234445, {		-- Pattern: Bolt of Qiraji Silk (RECIPE!)
+								["timeline"] = { ADDED_1_15_5 },
+							})),
+							-- #endif
 							applyclassicphase(PHASE_FIVE, i(22310)),	-- Pattern: Cenarion Herb Bag (RECIPE!)
-							applyclassicphase(PHASE_FIVE_CATCH_UP, i(22772)),	-- Pattern: Sylvan Shoulders (RECIPE!)
+							applyclassicphase(PHASE_FIVE_CATCH_UP, i(22772,	{	-- Pattern: Sylvan Shoulders (RECIPE!)
+							-- #if SEASON_OF_DISCOVERY
+								["timeline"] = { REMOVED_1_15_5 },
+							-- #endif
+							})),
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_SIX, i(234314, {	--	Pattern: Sylvan Shoulders (RECIPE!)
+								["timeline"] = { ADDED_1_15_5 },
+							})),
+							applyclassicphase(SOD_PHASE_SIX, i(234263, {		-- Schematic: Obsidian Bomb (RECIPE!)
+								["timeline"] = { ADDED_1_15_5 },
+							})),
+							-- #endif
 						}, {	-- Honored
-							applyclassicphase(PHASE_FIVE_CATCH_UP, i(22773)),	-- Pattern: Sylvan Crown (RECIPE!)
+							applyclassicphase(PHASE_FIVE_CATCH_UP, i(22773,	{-- Pattern: Sylvan Crown (RECIPE!)
+							-- #if SEASON_OF_DISCOVERY
+								["timeline"] = { REMOVED_1_15_5 },
+							-- #endif
+							})),
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_SIX, i(234316, {	--	Pattern: Sylvan Crown (RECIPE!)
+								["timeline"] = { ADDED_1_15_5 },
+							})),
+							applyclassicphase(SOD_PHASE_SIX, i(234262, {		-- Schematic: The Fumigator (RECIPE!)
+								["timeline"] = { ADDED_1_15_5 },
+							})),
+							-- #endif
 						}, {	-- Revered
 							applyclassicphase(PHASE_FIVE_CATCH_UP, i(22683)),	-- Pattern: Gaea's Embrace (RECIPE!)
 							applyclassicphase(PHASE_FIVE, i(22312)),	-- Pattern: Satchel of Cenarius (RECIPE!)
-							applyclassicphase(PHASE_FIVE_CATCH_UP, i(22774)),	-- Pattern: Sylvan Vest (RECIPE!)
+							applyclassicphase(PHASE_FIVE_CATCH_UP, i(22774,	{	-- Pattern: Sylvan Vest (RECIPE!)
+							-- #if SEASON_OF_DISCOVERY
+								["timeline"] = { REMOVED_1_15_5 },
+							-- #endif
+							})),
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_SIX, i(234318, {	--	Pattern: Sylvan Vest (RECIPE!)
+								["timeline"] = { ADDED_1_15_5 },
+							})),
+							applyclassicphase(SOD_PHASE_SIX, i(234261, {		-- Schematic: Arcane Megabomb (RECIPE!)
+								["timeline"] = { ADDED_1_15_5 },
+							})),
+							-- #endif
 						}, {	-- Exalted
 						},
 					}),
@@ -2942,9 +3022,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = bubbleDownClassicRep(FACTION_CENARION_CIRCLE, {
 						{		-- Neutral
 						}, {	-- Friendly
-							applyclassicphase(PHASE_FIVE, i(22209)),	-- Plans: Heavy Obsidian Belt (RECIPE!)
+							applyclassicphase(PHASE_FIVE, i(22209)),			-- Plans: Heavy Obsidian Belt (RECIPE!)
 							applyclassicphase(PHASE_FIVE_CATCH_UP, i(22768)),	-- Plans: Ironvine Belt (RECIPE!)
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_SIX, i(234279, {		-- Plans: Obsidian Grinding Stone (RECIPE!)
+								["timeline"] = { ADDED_1_15_5 },
+							})),
+							applyclassicphase(SOD_PHASE_SIX, i(234280, {		-- Schematic: Obsidian Blasting Powder (RECIPE!)
+								["timeline"] = { ADDED_1_15_5 },
+							})),
+							-- #endif
 						}, {	-- Honored
+							applyclassicphase(SOD_PHASE_SIX, i(234278, {		-- Manual: Smelt Obsidian-Infused Thorium Bar (RECIPE!)
+								["timeline"] = { ADDED_1_15_5 },
+							})),
 							applyclassicphase(PHASE_FIVE_CATCH_UP, i(22767)),	-- Plans: Ironvine Gloves (RECIPE!)
 							applyclassicphase(PHASE_FIVE, i(22214)),	-- Plans: Light Obsidian Belt (RECIPE!)
 						}, {	-- Revered
@@ -2970,6 +3061,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			n(ZONE_DROPS, {
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_SIX, i(234010)),	-- Ancient Sandworm Bile
+				-- #endif
 				i(20404, {	-- Encrypted Twilight Text
 					["crs"] = {
 						15308,	-- Twilight Prophet <Twilight's Hammer>
@@ -3018,6 +3112,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						15759,	-- Supreme Silithid Flayer
 					},
 				})),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_SIX, i(234008)),	-- Qiraji Silk
+				applyclassicphase(SOD_PHASE_SIX, i(234011)),	-- Qiraji Stalker Venom
+				-- #endif
 				i(20408, {	-- Twilight Cultist Cowl
 					-- #if BEFORE 10.0.5
 					-- #if AFTER 4.0.3

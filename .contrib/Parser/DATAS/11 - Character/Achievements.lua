@@ -190,7 +190,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		["_noautomation"] = true,
 		["rank"] = 50,
 	})),
-	applyclassicphase(MOP_PHASE_ONE, ach(6826, {		-- 55 Exalted Reputations
+	applyclassicphase(MOP_PHASE_LANDFALL, ach(6826, {		-- 55 Exalted Reputations
 		-- #if ANYCLASSIC
 		["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
 		["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
@@ -200,7 +200,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		["_noautomation"] = true,
 		["rank"] = 55,
 	})),
-	applyclassicphase(MOP_PHASE_ONE, ach(6742, bubbleDownSelf({["timeline"] = {ADDED_5_0_4}}, {	-- 60 Exalted Reputations
+	applyclassicphase(MOP_PHASE_LANDFALL, ach(6742, bubbleDownSelf({["timeline"] = {ADDED_5_0_4}}, {	-- 60 Exalted Reputations
 		-- #if ANYCLASSIC
 		["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
 		["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],

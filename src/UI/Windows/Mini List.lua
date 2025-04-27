@@ -202,7 +202,7 @@ local CachedMapData = setmetatable({}, {
 			end
 
 			-- Sort the list, but not for instances.
-			if not results.instanceID then
+			if not results.instanceID and not IsInInstance() then
 				app.Sort(groups, SortForMiniList);
 			end
 

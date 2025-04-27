@@ -766,7 +766,7 @@ COMMON_CATACLYSM_LEATHERWORKING_RECIPES = applyclassicphase(CATA_PHASE_ONE, shar
 	-- #endif
 	heavysavageleather(10, i(52980)),	-- Pristine Hide
 }));
-MOP_LEATHERWORKING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+MOP_LEATHERWORKING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	r(110423, {	-- Leatherworking (Zen Master)
 		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
@@ -825,7 +825,7 @@ MOP_LEATHERWORKING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] 
 		r(124125),	-- Toughened Leg Armor
 	}),
 }));
-COMMON_MOP_LEATHERWORKING_RECIPES = applyclassicphase(MOP_PHASE_ONE, sharedData({ ["cost"] = {{ "i", SPIRIT_OF_HARMONY, 1 }}, ["timeline"] = { ADDED_5_0_4 } }, {
+COMMON_MOP_LEATHERWORKING_RECIPES = applyclassicphase(MOP_PHASE_LANDFALL, sharedData({ ["cost"] = {{ "i", SPIRIT_OF_HARMONY, 1 }}, ["timeline"] = { ADDED_5_0_4 } }, {
 	i(86240),	-- Pattern: Contender's Dragonscale Belt (RECIPE!)
 	i(86241),	-- Pattern: Contender's Dragonscale Boots (RECIPE!)
 	i(86242),	-- Pattern: Contender's Dragonscale Bracers (RECIPE!)

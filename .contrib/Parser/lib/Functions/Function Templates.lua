@@ -1,21 +1,21 @@
 -- WoW API Function Templates
 
--- #if AFTER TWW
+-- #if AFTER MOP
 WOWAPI_GetItemCount = function(itemID) return "C_Item.GetItemCount(" .. itemID .. ", true)"; end
 -- #else
 WOWAPI_GetItemCount = function(itemID) return "GetItemCount(" .. itemID .. ", true)"; end
 -- #endif
--- #if AFTER TWW
+-- #if AFTER MOP
 WOWAPI_GetSpellCooldown = function(spellID) return "_.WOWAPI.GetSpellCooldown(" .. spellID .. ")"; end
 -- #else
 WOWAPI_GetSpellCooldown = function(spellID) return "GetSpellCooldown(" .. spellID .. ")"; end
 -- #endif
--- #if AFTER TWW
+-- #if AFTER MOP
 WOWAPI_GetSpellName = function(spellID) return "C_Spell.GetSpellName(" .. spellID .. ")"; end
 -- #else
 WOWAPI_GetSpellName = function(spellID) return "GetSpellInfo(" .. spellID .. ")"; end
 -- #endif
--- #if AFTER TWW
+-- #if AFTER MOP
 WOWAPI_GetItemClassInfo = function(a,b) return "C_Item.GetItemClassInfo(" .. a .. ")"; end
 -- #else
 WOWAPI_GetItemClassInfo = function(a,b) return "GetItemClassInfo(" .. a .. ")"; end
@@ -24,13 +24,13 @@ WOWAPI_GetItemClassInfo = function(a,b) return "GetItemClassInfo(" .. a .. ")"; 
 WOWAPI_GetItemSubClassInfo = function(a,b)
 	local ret
 	if a and b then
-		-- #if AFTER TWW
+		-- #if AFTER MOP
 		ret = "C_Item.GetItemSubClassInfo(" .. a .. "," .. b .. ")";
 		-- #else
 		ret = "GetItemSubClassInfo(" .. a .. "," .. b .. ")";
 		-- #endif
 	else
-		-- #if AFTER TWW
+		-- #if AFTER MOP
 		ret = "C_Item.GetItemSubClassInfo(" .. a .. ")";
 		-- #else
 		ret = "GetItemSubClassInfo(" .. a .. ")";

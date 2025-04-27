@@ -3,6 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Brawl'gar Arena
+	["timeline"] = { ADDED_5_1_0 },
 	["races"] = HORDE_ONLY,
 	["lvl"] = 120,
 	["icon"] = 970888,

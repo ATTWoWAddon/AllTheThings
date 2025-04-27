@@ -12,38 +12,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- The Road to Thelsamar
-							["sourceQuests"] = {
-								26148,	-- A Decisive Strike
-								26147,	-- Bigger and Uglier
-								25118,	-- Looking for Lurkers
-								13648,	-- WANTED: The Dark Iron Spy
-								--	two above are definitely required; unclear if these are
-								--	26145,	-- The Trogg Threat
-								--	26842,	-- Out of Gnoll-where
-								--	26860,	-- Thelsamar Blood Sausages
-							},
-						}),
-						crit(2, {	-- The Axis of Awful
-							["sourceQuest"] = 26868,	-- Axis of Awful
-						}),
-						crit(3, {	-- Twilight Threats
-							["sourceQuest"] = 27116,	-- The Winds of Loch Modan
-						}),
-						crit(4, {	-- The Farstrider Lodge
-							["sourceQuests"] = {
-								27033,	-- Skystrider's Heart
-								27037,	-- Vyrin's Revenge (#2)
-								27026,	-- Defcon: Bobcat
-							--	above definitely required; unclear if these are
-							--	27028,	-- Hornet Hunting
-							--	27030,	-- Foxtails by the Handful
-							},
-						}),
-					},
-					-- #else
 					["sourceQuests"] = {
 						26148,	-- A Decisive Strike
 						26147,	-- Bigger and Uglier
@@ -62,7 +30,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						--	27028,	-- Hornet Hunting
 						--	27030,	-- Foxtails by the Handful
 					},
-					-- #endif
 					-- #endif
 				}),
 			}),

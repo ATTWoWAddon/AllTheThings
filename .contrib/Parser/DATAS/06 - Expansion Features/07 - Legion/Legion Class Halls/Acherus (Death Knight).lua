@@ -403,12 +403,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(42821, {	-- Raising an Army
 						["sourceQuest"] = 42818, -- The Scarlet Assault
 						["provider"] = { "n", 109221 },	-- Thassarian
-						["maps"] = { 804, 805 },	-- Scarlet Monastery (Scenario Map)
+						["maps"] = { SCARLET_MONASTERY_DEATH_KNIGHT_CAMPAIGN, SCARLET_MONASTERY_DEATH_KNIGHT_CAMPAIGN_LEVEL2 },	-- Scarlet Monastery (Scenario Map)
 					}),
 					q(42882, {	-- The Scarlet Massacre
 						["sourceQuest"] = 42818,	-- The Scarlet Assault
 						["provider"] = { "n", 109221 },	-- Thassarian
-						["maps"] = { 804, 805 },	-- Scarlet Monastery (Scenario Map)
+						["maps"] = { SCARLET_MONASTERY_DEATH_KNIGHT_CAMPAIGN, SCARLET_MONASTERY_DEATH_KNIGHT_CAMPAIGN_LEVEL2 },	-- Scarlet Monastery (Scenario Map)
 					}),
 					q(42823, {	-- The Scarlet Commander
 						["sourceQuests"] = {
@@ -416,12 +416,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							42882, -- The Scarlet Massacre
 						},
 						["provider"] = { "n", 109221 },	-- Thassarian
-						["maps"] = { 804, 805 },	-- Scarlet Monastery (Scenario Map)
+						["maps"] = { SCARLET_MONASTERY_DEATH_KNIGHT_CAMPAIGN, SCARLET_MONASTERY_DEATH_KNIGHT_CAMPAIGN_LEVEL2 },	-- Scarlet Monastery (Scenario Map)
 					}),
 					q(42824, {	-- The Zealot Rises
 						["sourceQuest"] = 42823,	-- The Scarlet Commander
 						["provider"] = { "n", 109221 },	-- Thassarian
-						["maps"] = { 804, 805 },	-- Scarlet Monastery (Scenario Map)
+						["maps"] = { SCARLET_MONASTERY_DEATH_KNIGHT_CAMPAIGN, SCARLET_MONASTERY_DEATH_KNIGHT_CAMPAIGN_LEVEL2 },	-- Scarlet Monastery (Scenario Map)
 					}),
 					q(44245, {	-- Champion: High Inquisitor Whitemane
 						["sourceQuest"] = 42824,	-- The Zealot Rises

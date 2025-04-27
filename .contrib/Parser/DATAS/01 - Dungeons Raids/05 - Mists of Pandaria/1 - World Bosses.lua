@@ -8,7 +8,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			["isRaid"] = true,
 			["isWeekly"] = true,
 		},{
-			e(814, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Nalak, The Storm Lord
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, e(814, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Nalak, The Storm Lord
 				["crs"] = { 69099 },	-- Nalak, the Storm Lord
 				["questID"] = 32518,
 				["coord"] = { 60.0, 37.7, ISLE_OF_THUNDER },
@@ -335,8 +335,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(91416),	-- Tyrannical Gladiator's Signet of Cruelty
 					i(94417),	-- Tyrannical Gladiator's Signet of Cruelty
 				},
-			})),
-			e(826, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Oondasta
+			}))),
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, e(826, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Oondasta
 				["questID"] = 32519,
 				["coord"] = { 49.9, 56.8, ISLE_OF_GIANTS },
 				["crs"] = { 69161 },	-- Oondasta
@@ -417,9 +417,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(95167),	-- Ring of King Kangrom
 					i(95163),	-- Ring of Shamuru
 				},
-			})),
-			e(861, bubbleDownSelf({	-- Ordos, Fire-God of the Yaungol
+			}))),
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, e(861, bubbleDownSelf({	-- Ordos, Fire-God of the Yaungol
+				-- #if AFTER WOD
 				["u"] = TEMP_MOP_LEGENDARY_CLOAK_PHASE,	-- Legendary Cloak Filter
+				-- #endif
 				["timeline"] = { ADDED_5_4_0 },
 			}, {
 				["sourceQuests"] = { 33104 },	-- A Pandaren Legend
@@ -520,8 +522,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(105756),	-- Poxleitner's Leggings of Lights
 					i(105757),	-- Shipley's Shady Silks
 				},
-			})),
-			e(725, {	-- Saylis's Warband [Galleon]
+			}))),
+			applyclassicphase(MOP_PHASE_LANDFALL, e(725, {	-- Saylis's Warband [Galleon]
 				["questID"] = 32098,
 				["coord"] = { 70.79, 63.51, VALLEY_OF_THE_FOUR_WINDS },
 				["maps"] = {	-- all Valley of the Four Winds maps
@@ -647,8 +649,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(90438),	-- Signet of the Bandit Lord
 					i(90434),	-- Steaming Seal of Flame
 				},
-			}),
-			e(691, {	-- Sha of Anger
+			})),
+			applyclassicphase(MOP_PHASE_LANDFALL, e(691, {	-- Sha of Anger
 				["questID"] = 32099,
 				["coord"] = { 53.53, 65.26, KUN_LAI_SUMMIT },
 				["maps"] = {	-- all Kun-Lai Summit maps
@@ -875,8 +877,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(84829),	-- Malevolent Gladiator's Signet of Accuracy
 					i(84828),	-- Malevolent Gladiator's Signet of Cruelty
 				},
-			}),
-			header(HEADERS.Achievement, 8535, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Celestial Challenge
+			})),
+			applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, header(HEADERS.Achievement, 8535, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Celestial Challenge
 				["questID"] = 33117,
 				["maps"] = {	-- all Timeless Isle maps
 					555,	-- Cavern of Lost Spirits
@@ -1227,7 +1229,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					i(102701),	-- Prideful Gladiator's Signet of Cruelty
 					i(103517),	-- Prideful Gladiator's Signet of Cruelty
 				},
-			})),
+			}))),
 		}),
 	}),
 })));

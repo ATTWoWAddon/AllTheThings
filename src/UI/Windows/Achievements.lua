@@ -93,7 +93,7 @@ app:CreateWindow("Achievements", {
 				categories[-1] = data;
 				cacheAchievementData(data, categories, data.g);
 				for i,matches in pairs(app.SearchForFieldContainer("achievementID")) do
-					if not data.achievements[i] and not matches[1].isStatistic then
+					if not data.achievements[i] and matches[1] and not matches[1].isStatistic then
 						local achievement = (matches[1].isGuild and app.CreateGuildAchievement or app.CreateAchievement)(tonumber(i));
 						local sources = {};
 						for j,o in ipairs(matches) do

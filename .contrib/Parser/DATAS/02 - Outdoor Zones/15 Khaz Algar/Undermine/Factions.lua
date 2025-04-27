@@ -3,67 +3,69 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
 	m(UNDERMINE, {
-		n(CARTELS_OF_UNDERMINE, {
+	--	n(CARTELS_OF_UNDERMINE, {
 			n(FACTIONS, {
 				faction(FACTION_CARTELS_OF_UNDERMINE, {
 					faction(FACTION_TWW_BILGEWATER_CARTEL),	-- Bilgewater Cartel
 					faction(FACTION_TWW_BLACKWATER_CARTEL),	-- Blackwater Cartel
 					faction(FACTION_TWW_STEAMWHEEDLE_CARTEL),	-- Steamwheedle Cartel
 					faction(FACTION_TWW_VENTURE_CO),	-- Venture Co
-					ach(41349, {	-- In with the Cartels
-						crit(102751, {	-- Bilgewater Cartel
-							["minReputation"] = { FACTION_TWW_BILGEWATER_CARTEL, HONORED },	-- Bilgewater Cartel Honored
+					n(ACHIEVEMENTS, {
+						ach(41349, {	-- In with the Cartels
+							crit(102751, {	-- Bilgewater Cartel
+								["minReputation"] = { FACTION_TWW_BILGEWATER_CARTEL, HONORED },	-- Bilgewater Cartel Honored
+							}),
+							crit(102752, {	-- Blackwater Cartel
+								["minReputation"] = { FACTION_TWW_BLACKWATER_CARTEL, HONORED },	-- Blackwater Cartel Honored
+							}),
+							crit(102753, {	-- Steamwheedle Cartel
+								["minReputation"] = { FACTION_TWW_STEAMWHEEDLE_CARTEL, HONORED },	-- Steamwheedle Cartel Honored
+							}),
+							crit(102754, {	-- Venture Co
+								["minReputation"] = { FACTION_TWW_VENTURE_CO, HONORED },	-- Venture Co Honored
+							}),
+							i(232807),	-- Iron Chick (PET!)
 						}),
-						crit(102752, {	-- Blackwater Cartel
-							["minReputation"] = { FACTION_TWW_BLACKWATER_CARTEL, HONORED },	-- Blackwater Cartel Honored
+						ach(41351, {	-- Cartels Bestie
+							crit(102751, {	-- Bilgewater Cartel
+								["minReputation"] = { FACTION_TWW_BILGEWATER_CARTEL, REVERED },	-- Bilgewater Cartel Revered
+							}),
+							crit(102752, {	-- Blackwater Cartel
+								["minReputation"] = { FACTION_TWW_BLACKWATER_CARTEL, REVERED },	-- Blackwater Cartel Revered
+							}),
+							crit(102753, {	-- Steamwheedle Cartel
+								["minReputation"] = { FACTION_TWW_STEAMWHEEDLE_CARTEL, REVERED },	-- Steamwheedle Cartel Revered
+							}),
+							crit(102754, {	-- Venture Co
+								["minReputation"] = { FACTION_TWW_VENTURE_CO, REVERED },	-- Venture Co Revered
+							}),
+							-- Reward
+							i(231739),	-- Black Bruiser's Helm
+							i(231745),	-- Black Bruiser's Shoulderspikes
+							i(231733),	-- Black Bruiser's Tabard
 						}),
-						crit(102753, {	-- Steamwheedle Cartel
-							["minReputation"] = { FACTION_TWW_STEAMWHEEDLE_CARTEL, HONORED },	-- Steamwheedle Cartel Honored
+						ach(41352, {	-- Trade-Duke
+							crit(102751, {	-- Bilgewater Cartel
+								["minReputation"] = { FACTION_TWW_BILGEWATER_CARTEL, EXALTED },	-- Bilgewater Cartel Exalted
+							}),
+							crit(102752, {	-- Blackwater Cartel
+								["minReputation"] = { FACTION_TWW_BLACKWATER_CARTEL, EXALTED },	-- Blackwater Cartel Exalted
+							}),
+							crit(102753, {	-- Steamwheedle Cartel
+								["minReputation"] = { FACTION_TWW_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamwheedle Cartel Exalted
+							}),
+							crit(102754, {	-- Venture Co
+								["minReputation"] = { FACTION_TWW_VENTURE_CO, EXALTED },	-- Venture Co Exalted
+							}),
+							-- Reward
+							title(607),	-- Trade-Duke <Name>
 						}),
-						crit(102754, {	-- Venture Co
-							["minReputation"] = { FACTION_TWW_VENTURE_CO, HONORED },	-- Venture Co Honored
+						ach(41086, {	-- Ally of Undermine
+							["minReputation"] = { FACTION_CARTELS_OF_UNDERMINE, 20 },	-- Cartels of Undermine 20
+							["g"] = {
+								title(603),	-- <Name> the Explosive
+							},
 						}),
-						i(232807),	-- Iron Chick (PET!)
-					}),
-					ach(41351, {	-- Cartels Bestie
-						crit(102751, {	-- Bilgewater Cartel
-							["minReputation"] = { FACTION_TWW_BILGEWATER_CARTEL, REVERED },	-- Bilgewater Cartel Revered
-						}),
-						crit(102752, {	-- Blackwater Cartel
-							["minReputation"] = { FACTION_TWW_BLACKWATER_CARTEL, REVERED },	-- Blackwater Cartel Revered
-						}),
-						crit(102753, {	-- Steamwheedle Cartel
-							["minReputation"] = { FACTION_TWW_STEAMWHEEDLE_CARTEL, REVERED },	-- Steamwheedle Cartel Revered
-						}),
-						crit(102754, {	-- Venture Co
-							["minReputation"] = { FACTION_TWW_VENTURE_CO, REVERED },	-- Venture Co Revered
-						}),
-						-- Reward
-						i(231739),	-- Black Bruiser's Helm
-						i(231745),	-- Black Bruiser's Shoulderspikes
-						i(231733),	-- Black Bruiser's Tabard
-					}),
-					ach(41352, {	-- Trade-Duke
-						crit(102751, {	-- Bilgewater Cartel
-							["minReputation"] = { FACTION_TWW_BILGEWATER_CARTEL, EXALTED },	-- Bilgewater Cartel Exalted
-						}),
-						crit(102752, {	-- Blackwater Cartel
-							["minReputation"] = { FACTION_TWW_BLACKWATER_CARTEL, EXALTED },	-- Blackwater Cartel Exalted
-						}),
-						crit(102753, {	-- Steamwheedle Cartel
-							["minReputation"] = { FACTION_TWW_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamwheedle Cartel Exalted
-						}),
-						crit(102754, {	-- Venture Co
-							["minReputation"] = { FACTION_TWW_VENTURE_CO, EXALTED },	-- Venture Co Exalted
-						}),
-						-- Reward
-						title(607),	-- Trade-Duke <Name>
-					}),
-					ach(41086, {	-- Ally of Undermine
-						["minReputation"] = { FACTION_CARTELS_OF_UNDERMINE, 20 },	-- Cartels of Undermine 20
-						["g"] = {
-							title(603),	-- <Name> the Explosive
-						},
 					}),
 					n(QUESTS, bubbleDownRep(FACTION_CARTELS_OF_UNDERMINE, {
 						{		-- RENOWN 1 --
@@ -279,7 +281,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 									["g"] = {
 										i(237134, {	-- Steamwheedle Trove (Paragon)
 											i(234741),	-- Miscellaneous Mechanica
-											mount(466014),		-- Steamwheedle Supplier (MOUNT!)
+											i(229943),	-- Steamwheedle Supplier (MOUNT!)
 										}),
 									},
 								}),
@@ -325,148 +327,150 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						},
 					})),
 					n(VENDORS, {
-						n(231409, {	-- Smaks Topskimmer <Renown Quartermaster>
-							["coord"] = { 43.6, 50.8, UNDERMINE },
-							["g"] = bubbleDownRep(FACTION_CARTELS_OF_UNDERMINE, {
-								{		-- RENOWN 1 --
-								}, {	-- RENOWN 2 --
-								}, {	-- RENOWN 3 --
-								}, {	-- RENOWN 4 --
-								}, {	-- RENOWN 5 --
-									i(235338, {	-- Pattern: Charged Armor Kit (RECIPE!)
-										["cost"] = {{"i", ARTISANS_ACUITY, 150}},
-									}),
-									i(234274, {	-- Schematic: 22H Slicks (RECIPE!)
-										["cost"] = {{"i", ARTISANS_ACUITY, 150}},
-									}),
-									i(232535, {	-- Technique: Contract: The Cartels of Undermine (RECIPE!)
-										["cost"] = {{"i", ARTISANS_ACUITY, 150}},
-									}),
-									i(233022, {	-- Technique: Vantus Rune: Undermine (RECIPE!)
-										["cost"] = {{"i", ARTISANS_ACUITY, 150}},
-									}),
-								}, {	-- RENOWN 6 --
-								}, {	-- RENOWN 7 --
-									i(232384, {	-- Aqirite-Toe Boots
-										["modID"] = 14,
-										["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
-									}),
-									i(232381, {	-- Mostly Cobbled Shoes
-										["modID"] = 14,
-										["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
-									}),
-									i(232379, {	-- Slime-Slicked Slippers
-										["modID"] = 14,
-										["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
-									}),
-									i(232383, {	-- Soot-Encrusted Kickers
-										["modID"] = 14,
-										["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
-									}),
-								}, {	-- RENOWN 8 --
-								}, {	-- RENOWN 9 --
-								}, {	-- RENOWN 10 --
-								}, {	-- RENOWN 11 --
-								}, {	-- RENOWN 12 --
-								}, {	-- RENOWN 13 --
-								}, {	-- RENOWN 14 --
-									i(232410, {	-- Craftsman's Repurposed Mitts
-										["modID"] = 14,
-										["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
-									}),
-									i(232411, {	-- Goblin Boxer's Wraps
-										["modID"] = 14,
-										["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
-									}),
-									i(232413, {	-- Retired Bouncer's Gauntlets
-										["modID"] = 14,
-										["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
-									}),
-									i(232412, {	-- Undermine Smelter's Gloves
-										["modID"] = 14,
-										["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
-									}),
-								}, {	-- RENOWN 15 --
-									i(229936, {	-- Violet Armored Growler (MOUNT!)
-										["cost"] = {{"c", RESONANCE_CRYSTALS, 8125}},
-									}),
-								}, {	-- RENOWN 16 --
-									i(232499, {	-- Undermine Treatise on Alchemy (CI!)
-										["cost"] = {{"i", ARTISANS_ACUITY, 50}},
-										["requireSkill"] = ALCHEMY,
-									}),
-									i(232500, {	-- Undermine Treatise on Blacksmithing (CI!)
-										["cost"] = {{"i", ARTISANS_ACUITY, 50}},
-										["requireSkill"] = BLACKSMITHING,
-									}),
-									i(232501, {	-- Undermine Treatise on Enchanting (CI!)
-										["cost"] = {{"i", ARTISANS_ACUITY, 50}},
-										["requireSkill"] = ENCHANTING,
-									}),
-									i(232507, {	-- Undermine Treatise on Engineering (CI!)
-										["cost"] = {{"i", ARTISANS_ACUITY, 50}},
-										["requireSkill"] = ENGINEERING,
-									}),
-									i(232503, {	-- Undermine Treatise on Herbalism (CI!)
-										["cost"] = {{"i", ARTISANS_ACUITY, 50}},
-										["requireSkill"] = HERBALISM,
-									}),
-									i(232508, {	-- Undermine Treatise on Inscription (CI!)
-										["cost"] = {{"i", ARTISANS_ACUITY, 50}},
-										["requireSkill"] = INSCRIPTION,
-									}),
-									i(232504, {	-- Undermine Treatise on Jewelcrafting (CI!)
-										["cost"] = {{"i", ARTISANS_ACUITY, 50}},
-										["requireSkill"] = JEWELCRAFTING,
-									}),
-									i(232505, {	-- Undermine Treatise on Leatherworking (CI!)
-										["cost"] = {{"i", ARTISANS_ACUITY, 50}},
-										["requireSkill"] = LEATHERWORKING,
-									}),
-									i(232509, {	-- Undermine Treatise on Mining (CI!)
-										["cost"] = {{"i", ARTISANS_ACUITY, 50}},
-										["requireSkill"] = MINING,
-									}),
-									i(232506, {	-- Undermine Treatise on Skinning (CI!)
-										["cost"] = {{"i", ARTISANS_ACUITY, 50}},
-										["requireSkill"] = SKINNING,
-									}),
-									i(232502, {	-- Undermine Treatise on Tailoring (CI!)
-										["cost"] = {{"i", ARTISANS_ACUITY, 50}},
-										["requireSkill"] = TAILORING,
-									}),
-								}, {	-- RENOWN 17 --
-									i(231743, {	-- Undermine Enforcer's Helmet (COSMETIC!)
-										["cost"] = {{"c", RESONANCE_CRYSTALS, 1625}},
-									}),
-									i(231749, {	-- Undermine Enforcer's Spikes (COSMETIC!)
-										["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
-									}),
-									iensemble(237034, {	-- Smartest in Town's Attire
-										["cost"] = {{"c", RESONANCE_CRYSTALS, 9750}},
-									}),
-									iensemble(237102, {	-- Slickest in Town's Attire
-										["cost"] = {{"c", RESONANCE_CRYSTALS, 9750}},
-									}),
-									iensemble(237112, {	-- Craftiest in Town's Attire
-										["cost"] = {{"c", RESONANCE_CRYSTALS, 9750}},
-									}),
-									iensemble(237122, {	-- Toughest in Town's Attire
-										["cost"] = {{"c", RESONANCE_CRYSTALS, 9750}},
-									}),
-								}, {	-- RENOWN 18 --
-									i(232515, {	-- Experimental Goblin Jetpack (COSMETIC!)
-										["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
-									}),
-								}, {	-- RENOWN 19 --
-									i(229944, {	-- The Topskimmer Special (MOUNT!)
-										["cost"] = {{"c", RESONANCE_CRYSTALS, 11375}},
-									}),
-									i(232981, {	-- GNZ Airmaster 9000 (MM!)
-										["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
-									}),
-								}, {	-- RENOWN 20 --
-								},
+						header(HEADERS.Faction, FACTION_CARTELS_OF_UNDERMINE, {
+							n(231409, {	-- Smaks Topskimmer <Renown Quartermaster>
+								["coord"] = { 43.6, 50.8, UNDERMINE },
+								["g"] = bubbleDownRep(FACTION_CARTELS_OF_UNDERMINE, {
+									{		-- RENOWN 1 --
+									}, {	-- RENOWN 2 --
+									}, {	-- RENOWN 3 --
+									}, {	-- RENOWN 4 --
+									}, {	-- RENOWN 5 --
+										i(235338, {	-- Pattern: Charged Armor Kit (RECIPE!)
+											["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+										}),
+										i(234274, {	-- Schematic: 22H Slicks (RECIPE!)
+											["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+										}),
+										i(232535, {	-- Technique: Contract: The Cartels of Undermine (RECIPE!)
+											["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+										}),
+										i(233022, {	-- Technique: Vantus Rune: Undermine (RECIPE!)
+											["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+										}),
+									}, {	-- RENOWN 6 --
+									}, {	-- RENOWN 7 --
+										i(232384, {	-- Aqirite-Toe Boots
+											["modID"] = 14,
+											["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+										}),
+										i(232381, {	-- Mostly Cobbled Shoes
+											["modID"] = 14,
+											["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+										}),
+										i(232379, {	-- Slime-Slicked Slippers
+											["modID"] = 14,
+											["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+										}),
+										i(232383, {	-- Soot-Encrusted Kickers
+											["modID"] = 14,
+											["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+										}),
+									}, {	-- RENOWN 8 --
+									}, {	-- RENOWN 9 --
+									}, {	-- RENOWN 10 --
+									}, {	-- RENOWN 11 --
+									}, {	-- RENOWN 12 --
+									}, {	-- RENOWN 13 --
+									}, {	-- RENOWN 14 --
+										i(232410, {	-- Craftsman's Repurposed Mitts
+											["modID"] = 14,
+											["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
+										}),
+										i(232411, {	-- Goblin Boxer's Wraps
+											["modID"] = 14,
+											["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
+										}),
+										i(232413, {	-- Retired Bouncer's Gauntlets
+											["modID"] = 14,
+											["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
+										}),
+										i(232412, {	-- Undermine Smelter's Gloves
+											["modID"] = 14,
+											["cost"] = {{"c", RESONANCE_CRYSTALS, 3900}},
+										}),
+									}, {	-- RENOWN 15 --
+										i(229936, {	-- Violet Armored Growler (MOUNT!)
+											["cost"] = {{"c", RESONANCE_CRYSTALS, 8125}},
+										}),
+									}, {	-- RENOWN 16 --
+										i(232499, {	-- Undermine Treatise on Alchemy (CI!)
+											["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+											["requireSkill"] = ALCHEMY,
+										}),
+										i(232500, {	-- Undermine Treatise on Blacksmithing (CI!)
+											["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+											["requireSkill"] = BLACKSMITHING,
+										}),
+										i(232501, {	-- Undermine Treatise on Enchanting (CI!)
+											["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+											["requireSkill"] = ENCHANTING,
+										}),
+										i(232507, {	-- Undermine Treatise on Engineering (CI!)
+											["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+											["requireSkill"] = ENGINEERING,
+										}),
+										i(232503, {	-- Undermine Treatise on Herbalism (CI!)
+											["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+											["requireSkill"] = HERBALISM,
+										}),
+										i(232508, {	-- Undermine Treatise on Inscription (CI!)
+											["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+											["requireSkill"] = INSCRIPTION,
+										}),
+										i(232504, {	-- Undermine Treatise on Jewelcrafting (CI!)
+											["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+											["requireSkill"] = JEWELCRAFTING,
+										}),
+										i(232505, {	-- Undermine Treatise on Leatherworking (CI!)
+											["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+											["requireSkill"] = LEATHERWORKING,
+										}),
+										i(232509, {	-- Undermine Treatise on Mining (CI!)
+											["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+											["requireSkill"] = MINING,
+										}),
+										i(232506, {	-- Undermine Treatise on Skinning (CI!)
+											["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+											["requireSkill"] = SKINNING,
+										}),
+										i(232502, {	-- Undermine Treatise on Tailoring (CI!)
+											["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+											["requireSkill"] = TAILORING,
+										}),
+									}, {	-- RENOWN 17 --
+										i(231743, {	-- Undermine Enforcer's Helmet (COSMETIC!)
+											["cost"] = {{"c", RESONANCE_CRYSTALS, 1625}},
+										}),
+										i(231749, {	-- Undermine Enforcer's Spikes (COSMETIC!)
+											["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+										}),
+										iensemble(237034, {	-- Smartest in Town's Attire
+											["cost"] = {{"c", RESONANCE_CRYSTALS, 9750}},
+										}),
+										iensemble(237102, {	-- Slickest in Town's Attire
+											["cost"] = {{"c", RESONANCE_CRYSTALS, 9750}},
+										}),
+										iensemble(237112, {	-- Craftiest in Town's Attire
+											["cost"] = {{"c", RESONANCE_CRYSTALS, 9750}},
+										}),
+										iensemble(237122, {	-- Toughest in Town's Attire
+											["cost"] = {{"c", RESONANCE_CRYSTALS, 9750}},
+										}),
+									}, {	-- RENOWN 18 --
+										i(232515, {	-- Experimental Goblin Jetpack (COSMETIC!)
+											["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
+										}),
+									}, {	-- RENOWN 19 --
+										i(229944, {	-- The Topskimmer Special (MOUNT!)
+											["cost"] = {{"c", RESONANCE_CRYSTALS, 11375}},
+										}),
+										i(232981, {	-- GNZ Airmaster 9000 (MM!)
+											["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
+										}),
+									}, {	-- RENOWN 20 --
+									},
+								}),
 							}),
 						}),
 						header(HEADERS.Faction, FACTION_TWW_BILGEWATER_CARTEL, {
@@ -505,7 +509,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 										}),
 									},
 								}),
-							}),							
+							}),
 						}),
 						header(HEADERS.Faction, FACTION_TWW_BLACKWATER_CARTEL, {
 							n(231405, {	-- Boatswain Hardee <Blackwater Quartermaster>
@@ -543,7 +547,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 										}),
 									},
 								}),
-							}),							
+							}),
 						}),
 						header(HEADERS.Faction, FACTION_TWW_STEAMWHEEDLE_CARTEL, {
 							n(231408, {	-- Lab Assistant Laszly <Steamwheedle Quartermaster>
@@ -581,7 +585,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 										}),
 									},
 								}),
-							}),						
+							}),
 						}),
 						header(HEADERS.Faction, FACTION_TWW_VENTURE_CO, {
 							n(231407, {	-- Shredz the Scrapper <Venture Quartermaster>
@@ -619,10 +623,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 										}),
 									},
 								}),
-							}),					
+							}),
 						}),
 					}),
-				}),
+			--	}),
 				faction(FACTION_DARKFUSE_SOLUTIONS, {
 					ach(41350, {	-- A Long Fuse
 						["minReputation"] = { FACTION_DARKFUSE_SOLUTIONS, EXALTED },	-- Darkfuse Solutions Exalted

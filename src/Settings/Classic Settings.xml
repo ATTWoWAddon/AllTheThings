@@ -6,7 +6,6 @@
 	<Script file="Pages/About.lua"/>
 	<Script file="Pages/General.lua"/>
 	<Script file="Pages/General - Filters.lua"/>
-	<Script file="Pages/General - Phases.lua"/>
 	<Script file="Pages/General - Unobtainables.lua"/>
 	<Script file="Pages/Interface.lua"/>
 	<Script file="Pages/Interface - Accessibility.lua"/>
@@ -17,5 +16,6 @@
 	<Script file="Pages/Features - Reporting.lua"/>
 	<Script file="Pages/Features - Sync.lua"/>
 	<Script file="Pages/Features - Windows.lua"/>
+	<Script file="Pages/Phases.lua"/>
 	<Script file="Pages/Profiles.lua"/>
 </Ui>

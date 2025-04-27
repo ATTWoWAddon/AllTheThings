@@ -24,7 +24,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE, n(WINDS_O
 	},
 	["g"] = {
 		i(235054, {	-- Pristine Mysterious Satchel
-			["description"] = "Players below level 80 can gain Mysterious Satchels from quests and enemy drops when adventuring in Dragonflight or War Within zones.\n\nThe first satchel per day will be Pristine and will have increased chance for better rewards.",
+			["description"] = "Players below level 80 can gain Mysterious Satchels from quests and enemy drops when adventuring in Dragonflight or War Within zones.\n\nThe first satchel per day per character will be Pristine and will have increased chance for better rewards.",
 			["g"] = {
 				n(ARMOR, {
 					n(BACK, {
@@ -81,10 +81,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE, n(WINDS_O
 					}),
 				}),
 				filter(MISC, {
+					i(198442),	-- Bogthwottle's Shrinky-Do
 					i(239142),	-- Bottle of Mysterious Wisdom
 					i(235701),	-- Decaying Mecha-Scrapper Construction Kit
 					i(236959),	-- Empty Mysterious Potion
+					i(170177),	-- Exposed Fish
 					i(240995),	-- Fortuitous Satchel
+					i(124640),	-- Inky Black Potion
+					i(200886),	-- Lemon Silverleaf Tea
+					i(225378),	-- Mohawk Grenade
 					i(235803),	-- Potion of Mysterious Celerity
 					i(236854),	-- Potion of Mysterious Conflagration
 					i(236857),	-- Potion of Mysterious Frostbound
@@ -93,6 +98,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE, n(WINDS_O
 					i(236856),	-- Potion of Mysterious Systemshock
 					i(235838),	-- Potion of Mysterious Tenacity
 					i(236870),	-- Potion of Mysterious Tremorshards
+					i(242711),	-- Pungent Truffle
+					i(200897),	-- Venrik's Goat Milk
 				}),
 				n(WEAPONS, {
 					i(235925),	-- Mysterious Beacon Staff
@@ -135,7 +142,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE, n(WINDS_O
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
 	n(WINDS_OF_MYSTERIOUS_FORTUNE_HEADER, {
-		q(86695),	-- Always triggers after getting Pristine Mysterious Satchel
+		q(86695, name(HEADERS.Item, 235054, {isDaily=true})),	-- Always triggers after getting Pristine Mysterious Satchel
 		q(90134),	-- Always triggers after getting Pristine Mysterious Satchel
 		q(90752),	-- Sometimes triggers after getting Pristine Mysterious Satchel
 	}),

@@ -18,27 +18,12 @@ r(461737),	-- Tempest Gauntlets
 r(461739),	-- Warcrest of the Great Chief
 r(461743),	-- Sageblade of the Archmagus
 1.15.5.57537
-r(1213481),	-- Razorspike Headcage
-r(1213484),	-- Razorspike Shoulderplate
-r(1213490),	-- Razorspike Battleplate
-r(1213492),	-- Obsidian Reaver
-r(1213498),	-- Obsidian Champion
-r(1213500),	-- Obsidian Destroyer
-r(1213502),	-- Obsidian Stormhammer
-r(1213504),	-- Obsidian Sageblade
-r(1213506),	-- Obsidian Defender
-r(1213643),	-- Obsidian Grinding Stone
+i(234488, 1214309, nil, ARMORSMITH);			-- Dreamscale Visor
 r(1213709),	-- Ironvine Belt
 r(1213711),	-- Ironvine Gloves
 r(1213715),	-- Ironvine Breastplate
 r(1213746),	-- Heavy Obsidian Belt
 r(1213748),	-- Light Obsidian Belt
-r(1214137),	-- Obsidian Heartseeker
-r(1214257),	-- Black Grasp of the Destroyer
-r(1214270),	-- Jagged Obsidian Shield
-r(1214274),	-- Obsidian Mail Tunic
-r(1214309),	-- Dreamscale Visor
-r(1215507),	-- Thick Obsidian Breastplate
 1.15.6.58725
 r(1223787),	-- Icebane Breastplate
 r(1223789),	-- Icebane Gauntlets

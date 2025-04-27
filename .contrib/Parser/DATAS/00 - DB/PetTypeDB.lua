@@ -3010,5 +3010,8 @@ root("ItemSpeciesDB", {
 	[45180] = {
 		["petTypeID"] = 1,
 	},
+	[224002] = {
+		["petTypeID"] = 3,
+	},
 });
 -- #endif

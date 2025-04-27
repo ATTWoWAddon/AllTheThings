@@ -125,11 +125,21 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(573, {	-- Hydromancer Thespia
 					["creatureID"] = 17797,
 					["groups"] = {
-						i(27789),	-- Cloak of Whispering Shells
+						i(27789, {	-- Cloak of Whispering Shells
+							["timeline"] = { REMOVED_11_1_5 },
+						}),
+						i(238929, {	-- Cloak of Whispering Shells
+							["timeline"] = { ADDED_11_1_5 },
+						}),
 						-- #if AFTER 7.3.5
 						i(27806),	-- Fathomheart Gauntlets (7.3.5 - Moved from Warlord Kalithresh)
-						i(27475),	-- Gauntlets of the Bold (7.3.5 - Moved from Warlord Kalithresh)
+						i(27475, {	-- Gauntlets of the Bold (7.3.5 - Moved from Warlord Kalithresh)
+							["timeline"] = { REMOVED_11_1_5 },
+						}),
 						-- #endif
+						i(238932, {	-- Gauntlets of the Bold
+							["timeline"] = { ADDED_11_1_5 },
+						}),
 						i(27508),	-- Incanter's Gloves
 						-- #if BEFORE 7.3.5
 						i(27787),	-- Chestguard of No Remorse (7.3.5 - Moved to Mekgineer Steamrigger)
@@ -152,7 +162,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						-- #if AFTER 7.3.5
 						i(27787),	-- Chestguard of No Remorse (7.3.5 - Moved from Hydromancer Thespia)
 						-- #endif
-						i(27793),	-- Earth Mantle Handwraps
+						i(27793, {	-- Earth Mantle Handwraps
+							["timeline"] = { REMOVED_11_1_5 },
+						}),
+						i(238988, {	-- Earth Mantle Handwraps
+							["timeline"] = { ADDED_11_1_5 },
+						}),
 						-- #if AFTER 7.3.5
 						i(27795),	-- Sash of Serpentra (7.3.5 - Moved from Warlord Kalithresh)
 						-- #endif
@@ -230,17 +245,32 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(573, {	-- Hydromancer Thespia
 						["creatureID"] = 17797,
 						["groups"] = {
-							i(27789),	-- Cloak of Whispering Shells
+							i(27789, {	-- Cloak of Whispering Shells
+								["timeline"] = { REMOVED_11_1_5 },
+							}),
+							i(238929, {	-- Cloak of Whispering Shells
+								["timeline"] = { ADDED_11_1_5 },
+							}),
 							-- #if AFTER 7.3.5
 							i(27806),	-- Fathomheart Gauntlets (7.3.5 - Moved from Warlord Kalithresh)
-							i(27475),	-- Gauntlets of the Bold (7.3.5 - Moved from Warlord Kalithresh)
+							i(27475, {	-- Gauntlets of the Bold (7.3.5 - Moved from Warlord Kalithresh)
+								["timeline"] = { REMOVED_11_1_5 },
+							}),
 							-- #endif
+							i(238932, {	-- Gauntlets of the Bold
+								["timeline"] = { ADDED_11_1_5 },
+							}),
 							i(27508),	-- Incanter's Gloves
 							-- #if BEFORE 7.3.5
 							i(27787),	-- Chestguard of No Remorse (7.3.5 - Moved to Mekgineer Steamrigger)
 							-- #endif
 							i(27783),	-- Moonrage Girdle
-							i(27784),	-- Scintillating Coral Band
+							i(27784, {	-- Scintillating Coral Band
+								["timeline"] = { REMOVED_11_1_5 },
+							}),
+							i(238930, {	-- Scintillating Coral Band
+								["timeline"] = { ADDED_11_1_5 },
+							}),
 							i(29673, {	-- Pattern: Frost Armor Kit (RECIPE!)
 								["timeline"] = { REMOVED_5_0_4 },
 							}),
@@ -257,7 +287,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							-- #if AFTER 7.3.5
 							i(27787),	-- Chestguard of No Remorse (7.3.5 - Moved from Hydromancer Thespia)
 							-- #endif
-							i(27793),	-- Earth Mantle Handwraps
+							i(27793, {	-- Earth Mantle Handwraps
+								["timeline"] = { REMOVED_11_1_5 },
+							}),
+							i(238988, {	-- Earth Mantle Handwraps
+								["timeline"] = { ADDED_11_1_5 },
+							}),
 							-- #if AFTER 7.3.5
 							i(27795),	-- Sash of Serpentra (7.3.5 - Moved from Warlord Kalithresh)
 							-- #endif

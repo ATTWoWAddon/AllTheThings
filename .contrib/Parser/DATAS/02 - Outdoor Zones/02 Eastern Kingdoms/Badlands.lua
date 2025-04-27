@@ -15,28 +15,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4900, {	-- Badlands Quests
 					["timeline"] = { ADDED_4_0_3 },
 					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- Rhea
-							["sourceQuest"] = 27769,	-- Rhea Revealed
-						}),
-						crit(2, {	-- The Fate of a Dragonflight
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 27930,	-- Devastation
-						}),
-						crit(3, {	-- The Titans' Knowledge (A)
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 27794,	-- Return to Blam (A)
-						}),
-						crit(3, {	-- The Titans' Knowledge (H)
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 27888,	-- Return to Blam (H)
-						}),
-						crit(4, {	-- The Day that Deathwing Came
-							["sourceQuest"] = 27715,	-- The Day that Deathwing Came: What Really Happened
-						}),
-					},
-					-- #else
 					["sourceQuests"] = {
 						27769,	-- Rhea Revealed
 						27930,	-- Devastation
@@ -44,7 +22,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27888,	-- Return to Blam (H)
 						27715,	-- The Day that Deathwing Came: What Really Happened
 					},
-					-- #endif
 					-- #endif
 				}),
 				explorationAch(765),	-- Explore Badlands

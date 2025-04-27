@@ -5,7 +5,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(311, {	-- Scarlet Halls
 		["coord"] = { 78.0, 56.8, SCARLET_MONASTERY_ENTRANCE },
 		["timeline"] = { ADDED_5_0_4 },
-		["maps"] = { 431, 432 },
+		["maps"] = { SCARLET_MONASTERY_HALLS_LEVEL1, SCARLET_MONASTERY_HALLS_LEVEL2 },
 		["lvl"] = lvlsquish(21, 21, 10),
 		["groups"] = {
 			d(DIFFICULTY.DUNGEON.NORMAL, {

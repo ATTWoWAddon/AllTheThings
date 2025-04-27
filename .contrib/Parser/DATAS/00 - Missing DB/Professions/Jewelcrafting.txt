@@ -559,7 +559,7 @@ r(130655),	-- Tense Roguestone
 r(130656),	-- Assassin's Roguestone
 r(130657),	-- Assassin's Imperial Amethyst
 r(130658),	-- Tense Imperial Amethyst
-6.0.1.18179
+5.5.0.60481
 r(131593),	-- River's Heart
 r(131686),	-- Primordial Ruby
 r(131688),	-- Wild Jade
@@ -573,6 +573,7 @@ r(136272),	-- Willful Serpent's Eye
 r(136273),	-- Tense Serpent's Eye
 r(136274),	-- Assassin's Serpent's Eye
 r(136275),	-- Mysterious Serpent's Eye
+6.0.1.18179
 r(158750),	-- Jewelcrafting
 7.3.0.24473
 r(170832),	-- Taladite Crystal
@@ -602,8 +603,6 @@ r(382995),	-- Classic Prospecting
 r(434019),	-- Recraft Equipment
 r(435335),	-- Apply Socket
 r(435336),	-- Vicious Jeweler's Setting
-11.1.5.59571
-r(1226650),	-- Void-Crystal Panther
 
 
 
@@ -1173,7 +1172,7 @@ r(130655),	-- Tense Roguestone
 r(130656),	-- Assassin's Roguestone
 r(130657),	-- Assassin's Imperial Amethyst
 r(130658),	-- Tense Imperial Amethyst
-6.0.1.18179
+5.5.0.60481
 r(131593),	-- River's Heart
 r(131686),	-- Primordial Ruby
 r(131688),	-- Wild Jade
@@ -1187,6 +1186,7 @@ r(136272),	-- Willful Serpent's Eye
 r(136273),	-- Tense Serpent's Eye
 r(136274),	-- Assassin's Serpent's Eye
 r(136275),	-- Mysterious Serpent's Eye
+6.0.1.18179
 r(158750),	-- Jewelcrafting
 7.3.0.24473
 r(170700),	-- Taladite Crystal
@@ -1223,5 +1223,3 @@ r(248940),	-- Empyrial Crown
 r(434019),	-- Recraft Equipment
 r(435335),	-- Apply Socket
 r(435336),	-- Vicious Jeweler's Setting
-11.1.5.59571
-r(1226650),	-- Void-Crystal Panther

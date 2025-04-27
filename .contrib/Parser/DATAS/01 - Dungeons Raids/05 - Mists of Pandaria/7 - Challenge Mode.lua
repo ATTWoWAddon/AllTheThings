@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
-	n(CHALLENGE_MODE, {
+	applyclassicphase(MOP_PHASE_LANDFALL, n(CHALLENGE_MODE, {
 		ach(6920, {	-- Challenge Conqueror
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -311,5 +311,5 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 		ach(6433, {	-- Realm First! Challenge Conqueror: Gold
 			["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
 		}),
-	}),
+	})),
 })));

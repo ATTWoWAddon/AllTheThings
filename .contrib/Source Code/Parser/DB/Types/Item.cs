@@ -12,6 +12,7 @@ namespace ATT.DB.Types
         public long ClassID { get; set; }
         public long SubclassID { get; set; }
         public long InventoryType { get; set; }
+        public long RequiredLevel { get; set; }
         public long? SpellID => Effects.FirstOrDefault(x => x.SpellID != 0)?.SpellID;
 
         private List<ItemEffect> _effects;
@@ -50,6 +51,8 @@ namespace ATT.DB.Types
                 { "_subclass", SubclassID },
                 { "_inventoryType", InventoryType },
             };
+            long lvl = RequiredLevel;
+            if (lvl > 1) data["lvl"] = lvl;
             long? spellID = SpellID;
             if (spellID.HasValue)
             {

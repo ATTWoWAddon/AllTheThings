@@ -193,6 +193,22 @@ i("Black Mageweave Lessings", 0, 439088);
 i("Boots of the Enchanter", 217254, 439097);
 i("Crimson Silk Shoulders", 217251, 439093);
 i("Crimson Silk Robe", 217244, 439085);
+
+------------------
+-- PATCH 1.15.5 --
+------------------
+i(234445, 1214173);	-- Bolt of Qiraji Silk
+i(234244, 1213534);	-- Qiraji Silk Scarf
+i(234249, 1213536);	-- Qiraji Silk Cape
+i(234250, 1213538);	-- Qiraji Silk Cloak
+i(234251, 1213540);	-- Qiraji Silk Drape
+i(234314, 1213740);	-- Sylvan Shoulders
+i(234316, 1213742);	-- Sylvan Crown
+i(234318, 1213744);	-- Sylvan Vest
+i(234240, 1213527);	-- Vampiric Cowl
+i(234241, 1213530);	-- Vampiric Shawl
+i(234242, 1213532);	-- Vampiric Robe
+
 -- #endif
 
 -------------------

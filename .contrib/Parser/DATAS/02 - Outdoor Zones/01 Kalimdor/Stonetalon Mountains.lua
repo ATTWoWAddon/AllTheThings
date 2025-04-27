@@ -17,24 +17,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- Clearing a Path
-							["sourceQuests"] = {
-								25642,	-- Don't Look Them in the Eyes
-								25646,	-- Windshear Mine Cleanup
-							},
-						}),
-						crit(2, {	-- Slay the Warlord
-						}),
-						crit(3, {	-- Seldarria
-							["sourceQuest"] = 25931,	-- Brood of Seldarria
-						}),
-						crit(4, {	-- An Unconventional Ally
-							["sourceQuest"] = 25851,	-- Dances with Grimtotem
-						}),
-					},
-					-- #else
 					["sourceQuests"] = {
 						25642,	-- Don't Look Them in the Eyes
 						25646,	-- Windshear Mine Cleanup
@@ -42,31 +24,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25851,	-- Dances with Grimtotem
 					},
 					-- #endif
-					-- #endif
 				}),
 				ach(4980, {	-- Stonetalon Mountains Quests (H)
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- A Short-Lived Victory
-							["sourceQuest"] = 26010,	-- Ashes to Ashes
-						}),
-						crit(2, {	-- Legionnaire
-							["sourceQuest"] = 26058,	-- In Defense of Krom'Gar Fortress
-						}),
-						crit(3, {	-- Da Voodoo
-							["sourceQuests"] = {
-								26067,	-- Jin'Zil's Blessing
-								26068,	-- Kobold Fury!
-							},
-						}),
-						crit(4, {	-- Honor... Never Forsake It
-							["sourceQuest"] = 26115,	-- To Be Horde...
-						}),
-					},
-					-- #else
 					["sourceQuests"] = {
 						26010,	-- Ashes to Ashes
 						26058,	-- In Defense of Krom'Gar Fortress
@@ -74,7 +36,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						26068,	-- Kobold Fury!
 						26115,	-- To Be Horde...
 					},
-					-- #endif
 					-- #endif
 				}),
 			}),

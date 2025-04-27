@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
-	inst(302, {	-- Stormstout Brewery
+	applyclassicphase(MOP_PHASE_LANDFALL, inst(302, {	-- Stormstout Brewery
 		["coord"] = { 36, 69, VALLEY_OF_THE_FOUR_WINDS },
 		["maps"] = {
 			439,	-- Grain Cellar
@@ -331,7 +331,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 			}),
 		},
-	}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {

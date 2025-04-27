@@ -25,7 +25,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		applyclassicphase(WOD_PHASE_ONE, ach(9708, {	-- Savagely Epic [Warlords Of Draenor]
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3_LAUNCH },
 		})),
-		applyclassicphase(MOP_PHASE_ONE, ach(6349, {	-- Mystically Epic [Mists of Pandaria]
+		applyclassicphase(MOP_PHASE_LANDFALL, ach(6349, {	-- Mystically Epic [Mists of Pandaria]
 			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_3_LAUNCH },
 		})),
 		applyclassicphase(CATA_PHASE_ONE, ach(5372, {	-- Cataclysmically Epic [Cataclysm]
@@ -56,7 +56,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		applyclassicphase(WOD_PHASE_ONE, ach(9707, {	-- Savagely Superior [Warlords Of Draenor]
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3_LAUNCH },
 		})),
-		applyclassicphase(MOP_PHASE_ONE, ach(6348, {	-- Mystically Superior [Mists of Pandaria]
+		applyclassicphase(MOP_PHASE_LANDFALL, ach(6348, {	-- Mystically Superior [Mists of Pandaria]
 			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_3_LAUNCH },
 		})),
 		applyclassicphase(CATA_PHASE_ONE, ach(5373, {	-- Cataclysmically Superior [Cataclysm]

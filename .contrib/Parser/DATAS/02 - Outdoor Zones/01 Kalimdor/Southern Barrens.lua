@@ -15,137 +15,64 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4937, {	-- Southern Barrens Quests (A)
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER MOP
-					["groups"] = {
-						--	some of these might have additional requirements (in case anybody reports not getting the criteria from what we have SQed here)
-						crit(38847, {	-- Honor's Stand
-							["sourceQuest"] = 25186,	-- Futile Resistance
-						}),
-						crit(38848, {	-- Northwatch Hold
-							["sourceQuest"] = 24939,	-- Run Out the Guns
-						}),
-						crit(38849, {	-- Northwatch Hold
-							["sourceQuest"] = 24948,	-- Lifting the Siege
-						}),
-						crit(38850, {	-- Northwatch Hold
-							["sourceQuest"] = 24956,	-- Silencing Rageroar
-						}),
-						crit(38851, {	-- Teegan's Expedition
-							["sourceQuest"] = 25008,	-- Filthy Animals
-						}),
-						crit(38852, {	-- Teegan's Expedition
-							["sourceQuest"] = 25027,	-- You Flicked a Fine Vine to Leaf Me
-						}),
-						crit(38853, {	-- Teegan's Expedition
-							["sourceQuest"] = 25002,	-- Scavenged
-						}),
-						crit(38854, {	-- Teegan's Expedition
-							["sourceQuest"] = 25000,	-- Teegan's People
-						}),
-						crit(38855, {	-- Life from the Dream
-							["sourceQuest"] = 24601,	-- The Nightmare Scar
-						}),
-						crit(38856, {	-- Life from the Dream
-							["sourceQuest"] = 24566,	-- Sowing a Solution
-						}),
-						crit(38857, {	-- Forward Command
-							["sourceQuest"] = 25044,	-- Diplomacy By Another Means
-						}),
-						crit(38858, {	-- Forward Command
-							["sourceQuest"] = 25057,	-- Clap 'Em In Irons
-						}),
-						crit(38859, {	-- Forward Command
-							["sourceQuest"] = 25059,	-- The Taurajo Briefs
-						}),
-						crit(38860, {	-- Forward Command
-							["sourceQuest"] = 25042,	-- Marching On Our Stomachs
-						}),
-						crit(38861, {	-- Firestone Point
-							["sourceQuest"] = 25085,	-- Mangletooth
-						}),
-						crit(38862, {	-- Firestone Point
-							["sourceQuest"] = 24824,	-- The Disturbed Earth
-						}),
-						crit(38863, {	-- Firestone Point
-							["sourceQuest"] = 24653,	-- Echoes of Agamaggan
-						}),
-						crit(38866, {	-- Fort Triumph
-							["sourceQuest"] = 25081,	-- Claim the Battlescar
-						}),
-						crit(38867, {	-- Fort Triumph
-							["sourceQuest"] = 25080,	-- Batteries Not Yet Included
-						}),
-						crit(38868, {	-- Fort Triumph
-							["sourceQuest"] = 25082,	-- Working the Bugs Out
-						}),
-						crit(38869, {	-- Fort Triumph
-							["sourceQuest"] = 25175,	-- The Bad News
-						}),
-						crit(38870, {	-- Fort Triumph
-							["sourceQuest"] = 25185,	-- The Deed Is Done
-						}),
+					-- #if ANYCLASSIC
+					["sourceQuests"] = {
+						25186,	-- Futile Resistance
+						24939,	-- Run Out the Guns
+						24948,	-- Lifting the Siege
+						24956,	-- Silencing Rageroar
+						25008,	-- Filthy Animals
+						25027,	-- You Flicked a Fine Vine to Leaf Me
+						25002,	-- Scavenged
+						25000,	-- Teegan's People
+						24601,	-- The Nightmare Scar
+						24566,	-- Sowing a Solution
+						25044,	-- Diplomacy By Another Means
+						25057,	-- Clap 'Em In Irons
+						25059,	-- The Taurajo Briefs
+						25042,	-- Marching On Our Stomachs
+						25085,	-- Mangletooth
+						24824,	-- The Disturbed Earth
+						24653,	-- Echoes of Agamaggan
+						25081,	-- Claim the Battlescar
+						25080,	-- Batteries Not Yet Included
+						25082,	-- Working the Bugs Out
+						25175,	-- The Bad News
+						25185,	-- The Deed Is Done
 					},
 					-- #endif
 				}),
 				ach(4981, {	-- Southern Barrens Quests (H)
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					-- #IF ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- Hunter's Hill
-							["sourceQuests"] = {
-								24513,	-- Eye for an Eye
-								25284,	-- Feeding the Fear
-								24505,	-- Holdout at Hunter's Hill
-								24517,	-- Put the Fear in Them
-								24514,	-- Raptor Scraps
-								24519,	-- Stalling the Survey
-								24512,	-- Warrior's Redemption
-							},
-						}),
-						crit(2, {	-- Camp Una'fe
-							["sourceQuests"] = {
-								24542,	-- A Curious Bloom
-								24525,	-- Keeping the Dogs at Bay
-								24534,	-- Speaking Their Language
-							},
-						}),
-						crit(3, {	-- Life from the Dream
-							["sourceQuests"] = {
-								24566,	-- Sowing a Solution
-								24601,	-- The Nightmare Scar
-							},
-						}),
-						crit(4, {	-- Vendetta Point
-							["sourceQuests"] = {
-								24573,	-- Honoring the Dead
-								24552,	-- Lion's Pride (H)
-								24572,	-- Taking Back Taurajo
-							},
-						}),
-						crit(5, {	-- Desolation Hold
-							["sourceQuests"] = {
-								24631,	-- Flightmare
-								24654,	-- Silithissues
-								24621,	-- Smarts-is-Smarts
-								24637,	-- The Butcher of Taurajo
-							},
-						}),
-						crit(6, {	-- Firestone Point
-							["sourceQuests"] = {
-								24667,	-- Firestone Point
-								24633,	-- Mahka's Plea
-								24608,	-- Mangletooth
-								24824,	-- The Disturbed Earth
-							},
-						}),
-						crit(7, {	-- Spearhead
-							["sourceQuest"] = 24747,	-- Sabotage!
-						}),
+					-- #if ANYCLASSIC
+					["sourceQuests"] = {
+						24513,	-- Eye for an Eye
+						25284,	-- Feeding the Fear
+						24505,	-- Holdout at Hunter's Hill
+						24517,	-- Put the Fear in Them
+						24514,	-- Raptor Scraps
+						24519,	-- Stalling the Survey
+						24512,	-- Warrior's Redemption
+						24542,	-- A Curious Bloom
+						24525,	-- Keeping the Dogs at Bay
+						24534,	-- Speaking Their Language
+						24566,	-- Sowing a Solution
+						24601,	-- The Nightmare Scar
+						24573,	-- Honoring the Dead
+						24552,	-- Lion's Pride (H)
+						24572,	-- Taking Back Taurajo
+						24631,	-- Flightmare
+						24654,	-- Silithissues
+						24621,	-- Smarts-is-Smarts
+						24637,	-- The Butcher of Taurajo
+						24667,	-- Firestone Point
+						24633,	-- Mahka's Plea
+						24608,	-- Mangletooth
+						24824,	-- The Disturbed Earth
+						24747,	-- Sabotage!
 					},
 					-- #endif
-					-- #ENDIF
 				}),
 			}),
 			battlepets({

@@ -6,6 +6,10 @@ on:
   push:
     paths:
       - '.contrib/Parser/**'
+  # Triggers the workflow on each pull request event
+  pull_request:
+    paths:
+      - '.contrib/Parser/**'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 

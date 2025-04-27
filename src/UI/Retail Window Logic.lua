@@ -93,6 +93,7 @@ local function ExpandGroupsRecursively(group, expanded, manual)
 		end
 	end
 end
+app.ExpandGroupsRecursively = ExpandGroupsRecursively
 local VisibilityFilter, SortGroup
 local function ProcessGroup(data, object)
 	if not VisibilityFilter(object) then return end

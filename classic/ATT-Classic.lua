@@ -3862,10 +3862,6 @@ local ADDON_LOADED_HANDLERS = {
 		AllTheThingsAD.LocalizedCategoryNames = setmetatable(AllTheThingsAD.LocalizedCategoryNames or {}, { __index = app.CategoryNames });
 		app.CategoryNames = nil;
 
-		-- Cache the Localized Flight Path Data
-		AllTheThingsAD.LocalizedFlightPathNames = setmetatable(AllTheThingsAD.LocalizedFlightPathNames or {}, { __index = app.FlightPathNames });
-		app.FlightPathDB = nil;
-
 		-- Character Data Storage
 		local characterData = ATTCharacterData;
 		if not characterData then

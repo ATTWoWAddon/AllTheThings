@@ -1,3 +1,26 @@
+5.5.0.60481
+pet(4172),	-- Cockatoo
+pet(4182),	-- Green Water Snake
+pet(4183),	-- Ribbon Snake
+pet(4184),	-- Scarlet Snake
+pet(4185),	-- Elven Wisp
+pet(4204),	-- Ravager Hatchling
+pet(4206),	-- Toy RC Mortar Tank
+pet(4211),	-- Lucky
+pet(4228),	-- Alarming Clockbot
+pet(4229),	-- XS-001 Constructor Bot
+pet(4233),	-- Flurky
+pet(4234),	-- Pebble
+pet(4235),	-- Hoplet
+pet(4236),	-- Glub
+pet(4273),	-- Cypress
+pet(4274),	-- Lil' Wrathion
+pet(4329),	-- Arfus
+pet(4532),	-- Pinchy the Plunderer
+pet(4585),	-- Swoopy
+pet(4683),	-- Reven
+pet(4685),	-- Timbered Air Snakelet
+pet(4734),	-- Joyous
 8.1.0.27985
 pet(2535),	-- Wicker Wraith
 11.1.0.58221
@@ -29,6 +52,20 @@ pet(4792),	-- Ada the Sweetest
 
 Missing in PetDB.lua
 
+5.5.0.60481
+pet(4172),	-- Cockatoo
+pet(4182),	-- Green Water Snake
+pet(4183),	-- Ribbon Snake
+pet(4184),	-- Scarlet Snake
+pet(4185),	-- Elven Wisp
+pet(4204),	-- Ravager Hatchling
+pet(4206),	-- Toy RC Mortar Tank
+pet(4211),	-- Lucky
+pet(4228),	-- Alarming Clockbot
+pet(4229),	-- XS-001 Constructor Bot
+pet(4683),	-- Reven
+pet(4685),	-- Timbered Air Snakelet
+pet(4734),	-- Joyous
 11.1.0.58221
 pet(4665),	-- Yellow Tropical Frog
 pet(4670),	-- Hermes

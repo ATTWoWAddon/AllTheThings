@@ -93,6 +93,7 @@ src\Modules\Events.lua
 src\Modules\Filter.lua
 # src\Modules\Inventory.lua
 src\Modules\Model.lua
+# src\Modules\Search.lua
 src\Modules\Social.lua
 src\Modules\Tooltip.lua
 # src\Modules\Upgrade.lua

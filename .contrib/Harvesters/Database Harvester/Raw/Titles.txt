@@ -231,7 +231,7 @@
 205@@@Shado-Master %s
 5.0.3.15890
 206@@@%s the Scenaterdist
-6.0.1.18125
+5.5.0.60481
 184@@@%s, the Bloodthirsty
 206@@@%s the Scenaturdist
 207@@@Tamer %s
@@ -278,6 +278,7 @@
 252@@@%s the Crazy Cat Man
 253@@@Grievous Gladiator %s
 254@@@Prideful Gladiator %s
+6.0.1.18125
 6.0.1.18156
 255@@@Mistwalker %s
 6.0.1.18379

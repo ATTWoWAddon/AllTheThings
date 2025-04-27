@@ -2,9 +2,9 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_2_0 } }, {
-	inst(362, {	-- Throne of Thunder
-		["isRaid"] = true,
+	applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, inst(362, {	-- Throne of Thunder
 		["coord"] = { 63.4, 32.6, ISLE_OF_THUNDER },	-- Throne of Thunder
+		["timeline"] = { ADDED_5_2_0 },
 		["maps"] = {
 			508,	-- Overgrown Statuary
 			509,	-- Royal Amphitheater
@@ -16,6 +16,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			515,	-- Hidden Cell
 		},
 		["sharedLockout"] = 1,
+		["isRaid"] = true,
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(8069, {	-- Last Stand of the Zandalari
@@ -2115,7 +2116,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				},
 			}),
 		},
-	}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {

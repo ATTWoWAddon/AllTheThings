@@ -546,6 +546,8 @@ do
 	app.AddSimpleCollectibleSwap("Criteria", "Achievements")
 end
 
+-- In-Game Achievement Harvesting is obsolete in Retail
+if app.IsRetail then return end
 
 -- Achievement Harvesting
 local HarvestedAchievementDatabase = {};

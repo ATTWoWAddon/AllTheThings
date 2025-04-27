@@ -21,11 +21,6 @@ r(461724),	-- Devilcore Leggings
 r(461754),	-- Girdle of Arcane Insight
 r(462227),	-- Honed Blue Dragonscale Leggings
 1.15.5.57537
-r(1213513),	-- Glowing Chitin Armor Kit
-r(1213519),	-- Sharpened Chitin Armor Kit
-r(1213521),	-- Razorbramble Cowl
-r(1213523),	-- Razorbramble Shoulderpads
-r(1213525),	-- Razorbramble Leathers
 r(1213717),	-- Sandstalker Bracers
 r(1213720),	-- Sandstalker Gauntlets
 r(1213723),	-- Sandstalker Breastplate

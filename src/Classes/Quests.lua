@@ -250,10 +250,16 @@ if not C_QuestLog_IsComplete then
 end
 
 -- Quest Links
+local GetQuestLinkForObject
+do
 local GetQuestLink = GetQuestLink;
-local function GetQuestLinkForObject(t)
+local CustomQuestLinkFormat = "|cffffff00|Hquest:%d:%d|h[%s]|h|r [quest:%d]"
+GetQuestLinkForObject = function(t)
 	local questID = t.questID;
-	if questID then return GetQuestLink(questID) or ("[" .. t.name .. " (".. questID .. ")]"); end
+	if questID then return GetQuestLink(questID)
+		-- technically the second number value is some other value to make the link actually usable
+		or CustomQuestLinkFormat:format(questID,app.Level,t.name,questID) end
+end
 end
 
 -- Quest Completion Lib

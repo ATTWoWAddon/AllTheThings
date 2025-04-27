@@ -835,10 +835,10 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	n(WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5, REMOVED_10_1_0 } }, {
 		["description"] = "These rewards are available to anyone who purchases World of Warcraft 15th Anniversary Collection.",
 		["groups"] = {
-			mount(302361, {	-- Alabaster Stormtalon (MOUNT!)
+			i(207964, {	-- Alabaster Stormtalon (MOUNT!)
 				["races"] = ALLIANCE_ONLY,
 			}),
-			mount(302362, {	-- Alabaster Thunderwing (MOUNT!)
+			i(207963, {	-- Alabaster Thunderwing (MOUNT!)
 				["races"] = HORDE_ONLY,
 			}),
 		},

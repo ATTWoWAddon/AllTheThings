@@ -1016,9 +1016,6 @@ localize(L.HEADER_EVENTS, {
 	[-1001036] = 133899,
 });
 -- Programmatic Event Scheduling
-_.Modules.Events.SetEventInformation(446916, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=14,["weekday"]=3,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=26,["weekday"]=4,["year"]=2025})
-});
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=2,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=4,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
@@ -1028,6 +1025,9 @@ _.Modules.Events.SetEventInformation(133889, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=4,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=1,["year"]=2024}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=6,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=3,["year"]=2026})
+});
+_.Modules.Events.SetEventInformation(446916, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=14,["weekday"]=3,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=2,["monthDay"]=26,["weekday"]=4,["year"]=2025})
 });
 _.Modules.Events.SetEventInformation(1262, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=6,["weekday"]=1,["year"]=2022},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=27,["weekday"]=1,["year"]=2022})
@@ -1236,7 +1236,7 @@ _.FlightPathNames = {
 	[45] = "Nethergarde Keep, Blasted Lands",
 	[46] = "Transport, Southshore",
 	[47] = "Transport, Grom'gol",
-	[48] = "Bloodvenom Post, Felwood",
+	[48] = "Bloodvenom Post, Felwood [DISABLED in 4.x]",
 	[49] = "Moonglade",
 	[50] = "Transport, Menethil Harbor",
 	[51] = "Transport, Auberdine",
@@ -1252,7 +1252,7 @@ _.FlightPathNames = {
 	[61] = "Splintertree Post, Ashenvale",
 	[62] = "Nighthaven, Moonglade",
 	[63] = "Nighthaven, Moonglade",
-	[64] = "Talrendis Point, Azshara",
+	[64] = "Talrendis Point, Azshara (NEVER in 4.x)",
 	[65] = "Talonbranch Glade, Felwood",
 	[66] = "Chillwind Camp, Western Plaguelands",
 	[67] = "Light's Hope Chapel, Eastern Plaguelands",
@@ -1579,12 +1579,12 @@ _.FlightPathNames = {
 	[402] = "Bloodhoof Village, Mulgore",
 	[404] = "Durotar - ET - CC Prologue Spy Frog Start",
 	[405] = "Durotar - ET - CC Prologue Spy Frog End",
-	[413] = "Quest - 'To The Summit' - Westreach Summit - End",
-	[414] = "Quest - 'To The Summit' - Camp Mojache -> Westreach Summit - Begin",
-	[429] = "Quest - 'To The Summit' - Mudsprocket -> Westreach Summit - Begin",
-	[433] = "Quest - 'To New Thalanaar' - Mudsprocket -> New Thalanaar - Begin",
-	[434] = "Quest - 'To New Thalanaar' - New Thalanaar - End",
-	[436] = "Quest - 'To New Thalanaar' - Shadebough -> New Thalanaar - Begin",
+	[413] = "Quest - \"To The Summit\" - Westreach Summit - End",
+	[414] = "Quest - \"To The Summit\" - Camp Mojache -> Westreach Summit - Begin",
+	[429] = "Quest - \"To The Summit\" - Mudsprocket -> Westreach Summit - Begin",
+	[433] = "Quest - \"To New Thalanaar\" - Mudsprocket -> New Thalanaar - Begin",
+	[434] = "Quest - \"To New Thalanaar\" - New Thalanaar - End",
+	[436] = "Quest - \"To New Thalanaar\" - Shadebough -> New Thalanaar - Begin",
 	[438] = "Durotar - ET - CC Prologue Troll Taxi Bat Start",
 	[439] = "Durotar - ET - CC Prologue Troll Recruit End",
 	[440] = "Durotar - ET - CC Prologue - Troll Battle End",
@@ -6811,6 +6811,13 @@ local phases = {
 		minimumBuildVersion = 11301,
 		state = 2,
 	},
+	[1610] = {
+		name = "Phase 6",
+		description = "|cFFAAFFAAThis was not available until Phase 6 of Season of Discovery.|r",
+		lore = "|cFFFFAAAAIncluded Ahn'Qiraj, and the new Nightmare Grove raid|r",
+		minimumBuildVersion = 11500000,
+		state = 2,
+	},
 	[17] = {
 		name = "Phase 1",
 		description = "|cFFAAFFAAThis was not available until Phase 1 of TBC Classic.|r",
@@ -9022,6 +9029,7 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAADies war erst Phase 4 von WoW Classic verfügbar.|r",
 	[15] = "|cFFAAFFAADies war erst Phase 5 von WoW Classic verfügbar.|r",
 	[16] = "|cFFAAFFAADies war erst Phase 6 von WoW Classic verfügbar.|r",
+	[1610] = "|cFFAAFFAADies war erst Phase 6 von Season of Discovery verfügbar.|r",
 	[17] = "|cFFAAFFAADies war erst Phase 1 von TBC Classic verfügbar.|r",
 	[18] = "|cFFAAFFAADies war erst Phase 2 von TBC Classic verfügbar.|r",
 	[19] = "|cFFAAFFAADies war erst Phase 3 von TBC Classic verfügbar.|r",
@@ -11045,6 +11053,7 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 4 du WoW Classic.|r",
 	[15] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 5 du WoW Classic.|r",
 	[16] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 6 du WoW Classic.|r",
+	[1610] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 6 du Season of Discovery.|r",
 	[17] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 1 du TBC Classic.|r",
 	[18] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 2 du TBC Classic.|r",
 	[19] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 3 du TBC Classic.|r",
@@ -12677,6 +12686,7 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 4 di WoW Classic.|r",
 	[15] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 5 di WoW Classic.|r",
 	[16] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 6 di WoW Classic.|r",
+	[1610] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 6 di Season of Discovery.|r",
 	[17] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 1 di TBC Classic.|r",
 	[18] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 2 di TBC Classic.|r",
 	[19] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 3 di TBC Classic.|r",
@@ -14588,6 +14598,7 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAIsto não estava disponível até Phase 4 de WoW Classic.|r",
 	[15] = "|cFFAAFFAAIsto não estava disponível até Phase 5 de WoW Classic.|r",
 	[16] = "|cFFAAFFAAIsto não estava disponível até Phase 6 de WoW Classic.|r",
+	[1610] = "|cFFAAFFAAIsto não estava disponível até Phase 6 de Season of Discovery.|r",
 	[17] = "|cFFAAFFAAIsto não estava disponível até Phase 1 de TBC Classic.|r",
 	[18] = "|cFFAAFFAAIsto não estava disponível até Phase 2 de TBC Classic.|r",
 	[19] = "|cFFAAFFAAIsto não estava disponível até Phase 3 de TBC Classic.|r",
@@ -16645,6 +16656,7 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAЭто было недоступно до Phase 4 из WoW Classic.|r",
 	[15] = "|cFFAAFFAAЭто было недоступно до Phase 5 из WoW Classic.|r",
 	[16] = "|cFFAAFFAAЭто было недоступно до Phase 6 из WoW Classic.|r",
+	[1610] = "|cFFAAFFAAЭто было недоступно до Phase 6 из Season of Discovery.|r",
 	[17] = "|cFFAAFFAAЭто было недоступно до Phase 1 из TBC Classic.|r",
 	[18] = "|cFFAAFFAAЭто было недоступно до Phase 2 из TBC Classic.|r",
 	[19] = "|cFFAAFFAAЭто было недоступно до Phase 3 из TBC Classic.|r",
@@ -18762,6 +18774,7 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAPhase 4(WoW Classic)까지 사용할 수 없습니다.|r",
 	[15] = "|cFFAAFFAAPhase 5(WoW Classic)까지 사용할 수 없습니다.|r",
 	[16] = "|cFFAAFFAAPhase 6(WoW Classic)까지 사용할 수 없습니다.|r",
+	[1610] = "|cFFAAFFAAPhase 6(Season of Discovery)까지 사용할 수 없습니다.|r",
 	[17] = "|cFFAAFFAAPhase 1(TBC Classic)까지 사용할 수 없습니다.|r",
 	[18] = "|cFFAAFFAAPhase 2(TBC Classic)까지 사용할 수 없습니다.|r",
 	[19] = "|cFFAAFFAAPhase 3(TBC Classic)까지 사용할 수 없습니다.|r",
@@ -20741,6 +20754,7 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 4 de WoW Classic.|r",
 	[15] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 5 de WoW Classic.|r",
 	[16] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 6 de WoW Classic.|r",
+	[1610] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 6 de Season of Discovery.|r",
 	[17] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 1 de TBC Classic.|r",
 	[18] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 2 de TBC Classic.|r",
 	[19] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 3 de TBC Classic.|r",
@@ -22526,6 +22540,7 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAA该功能直到 Phase 4 的 WoW Classic 才可用。|r",
 	[15] = "|cFFAAFFAA该功能直到 Phase 5 的 WoW Classic 才可用。|r",
 	[16] = "|cFFAAFFAA该功能直到 Phase 6 的 WoW Classic 才可用。|r",
+	[1610] = "|cFFAAFFAA该功能直到 Phase 6 的 Season of Discovery 才可用。|r",
 	[17] = "|cFFAAFFAA该功能直到 Phase 1 的 TBC Classic 才可用。|r",
 	[18] = "|cFFAAFFAA该功能直到 Phase 2 的 TBC Classic 才可用。|r",
 	[19] = "|cFFAAFFAA该功能直到 Phase 3 的 TBC Classic 才可用。|r",
@@ -22710,6 +22725,7 @@ for key,value in pairs({
 	[5] = "不可學",
 	[6] = "需要召喚物品",
 	[1604] = "大師賽季",
+	[1610] = "第6階段",
 	[17] = "第1階段",
 	[18] = "第2階段",
 	[19] = "第3階段",
@@ -22735,6 +22751,7 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAA該功能直到 Phase 4 的 WoW Classic 才可用。|r",
 	[15] = "|cFFAAFFAA該功能直到 Phase 5 的 WoW Classic 才可用。|r",
 	[16] = "|cFFAAFFAA該功能直到 Phase 6 的 WoW Classic 才可用。|r",
+	[1610] = "|cFFAAFFAA該功能直到 第6階段 的 Season of Discovery 才可用。|r",
 	[17] = "|cFFAAFFAA該功能直到 第1階段 的 TBC Classic 才可用。|r",
 	[18] = "|cFFAAFFAA該功能直到 第2階段 的 TBC Classic 才可用。|r",
 	[19] = "|cFFAAFFAA該功能直到 第3階段 的 TBC Classic 才可用。|r",

@@ -1376,7 +1376,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 										["g"] = {
-											i(183186),	-- Purified Nectar (QI!)
+											o(358297, {	-- Purified Nectar
+												i(183186),	-- Purified Nectar (QI!)
+											}),
 											i(183128),	-- Call Naxx (QI!)
 										},
 									}),

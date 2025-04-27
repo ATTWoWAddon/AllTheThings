@@ -645,7 +645,7 @@
 1368@@@Friendly, Force Reaction 5
 1369@@@Friendly, Force Reaction 6
 1370@@@Friendly, Force Reaction 7
-6.0.1.18179
+5.5.0.60481
 1371@@@Paw'don Village
 1372@@@Honeydew Village
 1374@@@Brawl'gar Arena
@@ -659,15 +659,17 @@
 1435@@@Shado-Pan Assault
 1440@@@Darkspear Rebellion
 1443@@@Kor'kron
-1444@@@Warlords of Draenor
-1445@@@Frostwolf Orcs
 1447@@@Darkspear Trolls
-1457@@@Forelings
-1483@@@Foreling-Eaters
+1457@@@Blades of Eternity
 1491@@@The Timewalkers
 1492@@@Emperor Shaohao
-1496@@@Frostfire Ogres
 1500@@@Red Phantom
+6.0.1.18179
+1444@@@Warlords of Draenor
+1445@@@Frostwolf Orcs
+1457@@@Forelings
+1483@@@Foreling-Eaters
+1496@@@Frostfire Ogres
 1508@@@Shadowmoon Orc
 1509@@@The Pale
 1514@@@Adherents of Arakk

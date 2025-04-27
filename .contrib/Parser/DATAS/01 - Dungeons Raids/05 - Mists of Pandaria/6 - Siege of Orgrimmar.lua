@@ -70,7 +70,7 @@ end
 
 
 root(ROOTS.Instances, expansion(EXPANSION.MOP, {
-	inst(369, {	-- Siege of Orgrimmar
+	applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, inst(369, {	-- Siege of Orgrimmar
 		["isRaid"] = true,
 		["coords"] = {
 			{ 72.3, 44.3, VALE_OF_ETERNAL_BLOSSOMS },	-- old Vale
@@ -78,6 +78,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			{ 72.3, 44.3, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },	-- new Vale
 			-- #endif
 		},
+		["timeline"] = { ADDED_5_4_0 },
 		["mapID"] = 556,
 		["lvl"] = 90,
 		["maps"] = {
@@ -3604,7 +3605,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				})),
 			}),
 		},
-	}),
+	})),
 }));
 
 root(ROOTS.HiddenQuestTriggers, {

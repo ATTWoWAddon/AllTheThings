@@ -43,37 +43,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- Disgrace the Defectors
-							["sourceQuest"] = 27213,	-- The End of the Deserters
-						}),
-						crit(2, {	-- "Swamp Eye" Story
-							["sourceQuests"] = {
-								27190,	-- Cleansing Witch Hill
-								27247,	-- Captain Vimes (definitely required, this is the quest wowhead has attached to the criteria)
-								27191,	-- Hungry as an Ogre! (probably required, picked up and turned in at the same time)
-								27186,	-- Jarl Needs a Blade (definitely required, this quest procced the achievement for me)
-							},
-						}),
-						crit(3, {	-- The Terror of Theramore
-							["sourceQuest"] = 27222,	-- Take Down Tethyr!
-						}),
-						crit(4, {	-- Defias in Dustwallow
-							["sourceQuest"] = 27241,	-- Return to Jaina
-						}),
-						crit(5, {	-- Prisoners of the Grimtotem
-						--	may also require 27243, "Unleash the Raptors," turned in first but at the same time
-							["sourceQuest"] = 27245,	-- Prisoners of the Grimtotems
-						}),
-						crit(6, {	-- The Hyal Family
-							["sourceQuest"] = 27291,	-- Peace at Last
-						}),
-						crit(7, {	-- The Challenge of the Stonemaul
-							["sourceQuest"] = 27411,	-- Challenge to the Black Flight
-						}),
-					},
-					-- #else
 					["sourceQuests"] = {
 						27213,	-- The End of the Deserters
 						27190,	-- Cleansing Witch Hill
@@ -87,57 +56,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						27411,	-- Challenge to the Black Flight
 					},
 					-- #endif
-					-- #endif
 				}),
 				ach(4978, {	-- Dustwallow Marsh Quests (Horde)
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- Wild Threats
-							["sourceQuests"] = {
-								26682,	-- A Shambling Threat
-								25051,	-- Darkmist Extermination
-								27229,	-- Smash Broodqueen
-							},
-						}),
-						crit(2, {	-- Work Left Undone
-							["sourceQuests"] = {
-								1202,	-- The Theramore Docks
-								9437,	-- Twilight of the Dawn Runner
-							},
-						}),
-						crit(3, {	-- "Swamp Eye" Story
-							["sourceQuests"] = {
-								27190,	-- Cleansing Witch Hill
-								27191,	-- Hungry as an Ogre!
-								27186,	-- Jarl Needs a Blade
-								27244,	-- The Lost Report
-							},
-						}),
-						crit(4, {	-- Connection to the Grimtotem
-							["sourceQuests"] = {
-								27297,	-- Justice Dispensed
-								27257,	-- The Black Shield (4/5) [H]
-								27258,	-- The Black Shield (5/5) [H]
-							},
-						}),
-						crit(5, {	-- Onyxia's Brood
-							["sourceQuests"] = {
-								27419,	-- Army of the Black Dragon
-								27417,	-- The Brood of Onyxia (2/3)
-								27415,	-- The Brood of Onyxia (3/3)
-							},
-						}),
-						crit(6, {	-- Challenging the Overlord
-							["sourceQuest"] = 27418,	-- Challenge Overlord Mok'Morokk
-						}),
-						crit(7, {	-- The Challenge of the Stonemaul
-							["sourceQuest"] = 27411,	-- Challenge to the Black Dragonflight
-						}),
-					},
-					-- #else
 					["sourceQuests"] = {
 						26682,	-- A Shambling Threat
 						25051,	-- Darkmist Extermination
@@ -157,7 +80,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						27418,	-- Challenge Overlord Mok'Morokk
 						27411,	-- Challenge to the Black Dragonflight
 					},
-					-- #endif
 					-- #endif
 				}),
 				explorationAch(850),	-- Explore Dustwallow Marsh

@@ -2,7 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
-	expansion(EXPANSION.MOP, {
+	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, {
 		["timeline"] = { ADDED_5_0_4 },
 		["OnUpdate"] = [[function(t)
 			if _.CurrentCharacter.Achievements[7467] or _.CurrentCharacter.Achievements[7468] then
@@ -118,5 +118,5 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				}),
 			}),
 		},
-	}),
+	})),
 }));

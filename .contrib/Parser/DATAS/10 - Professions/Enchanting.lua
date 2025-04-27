@@ -1551,7 +1551,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(74244),	-- Windwalk
 		}),
 	}))),
-	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+	applyclassicphase(MOP_PHASE_LANDFALL, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 		r(110400, {	-- Enchanting (Zen Master)
 			["timeline"]={ ADDED_5_0_4, REMOVED_8_0_1 },
 			["collectible"] = false,

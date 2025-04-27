@@ -1028,11 +1028,12 @@ namespace ATT
                 // Any filter types which should specifically not have a SourceID attached even if Blizzard wants them to
                 if (data.TryGetValue("f", out long f))
                 {
-                    if (!((f > 0 && f < 36) || f == 57))
+                    if (!((f > 0 && f < 36) || f == 57) || f == 51 || f == 52)
                     {
 #pragma warning disable CS0162 // Unreachable code detected
                         if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} Skipped SourceID due to Filter:{(Objects.Filters)f}");
 #pragma warning restore CS0162 // Unreachable code detected
+                        data.Remove("sourceID");
                         return;
                     }
                 }

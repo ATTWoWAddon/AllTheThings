@@ -41,6 +41,34 @@ i(228981, 463869);	-- Conductive Shield Coating
 i(229008, 25081);	-- Enchant Cloak - Greater Fire Resistance
 i(229009, 25082);	-- Enchant Cloak - Greater Nature Resistance
 i(228982, 463871);	-- Enchant Shield - Law of Nature
+
+------------------
+-- PATCH 1.15.5 --
+------------------
+--- ITEM ---
+i(232610, 471400);	-- Magnificent Trollshine
+i(234272, 1213610);	-- Enchanted Repellent
+i(233997, 1213616);	-- Enchant Chest - Living Stats
+i(233998, 1213622);	-- Enchant Gloves - Holy Power
+i(233999, 1213626);	-- Enchant Gloves - Arcane Power
+i(234275, 1213628);	-- Enchanted Prayer Tome
+i(234277, 1213635);	-- Enchanted Mushroom
+i(234269, 1213600);	-- Enchanted Stopwatch
+i(234276, 1213633);	-- Enchanted Totem
+i(235133, 1216005);	-- Libram of Righteousness
+i(235134, 1216007); -- Libram of the Exorcist
+i(235135, 1216010);	-- Libram of Sanctity
+i(235139, 1216020);	-- Idol of Sidereal Wrath
+i(235140, 1216022);	-- Idol of Feline Ferocity
+i(235141, 1216024);	-- Idol of Ursin Power
+i(234268, 1213598);	-- Lodestone of Retaliation
+i(234270, 1213603);	-- Ruby-Encrusted Broach
+i(234271, 1213607);	-- Scroll: Wrath of the Swarm
+i(234266, 1213593);	-- Speedstone
+i(234267, 1213595);	-- Tear of the Dreamer
+i(235136, 1216014);	-- Totem of Pyroclastic Thunder
+i(235137, 1216016);	-- Totem of Thunderous Strikes
+i(235138, 1216018);	-- Totem of Flowing Magma
 -- #endif
 
 -----------------

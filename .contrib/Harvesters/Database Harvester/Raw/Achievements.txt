@@ -45,6 +45,8 @@
 41011@@@Rune Learned - Shared Acquisition - Wild Gods (50)
 1.15.7.60000
 42133@@@[DNT] Balnazzar Defeated
+1.15.7.60277
+42186@@@[DNT] Balnazzar Defeated (Backup Achievement)
 2.5.1.39399
 15018@@@Infernal Gladiator
 15019@@@Gladiator: Season 1
@@ -4438,7 +4440,7 @@
 7501@@@That's a Lot of Pet Food
 7502@@@Savior of Stoneplow
 7509@@@Scenaterday
-6.0.1.18179
+5.5.0.60481
 1260@@@Almost Blind Luck
 1793@@@For the Children
 2144@@@What a Long, Strange Trip It's Been
@@ -4867,7 +4869,6 @@
 8382@@@Grievous Conquest
 8391@@@Tournament Participation 2013
 8392@@@Tournament Glory 2013
-8394@@@The Frostwind Slayer
 8397@@@Crazy for Cats
 8398@@@Ahead of the Curve: Garrosh Hellscream (10 player)
 8399@@@Ahead of the Curve: Garrosh Hellscream (25 player)
@@ -4893,20 +4894,20 @@
 8459@@@Gates of Retribution
 8461@@@The Underhold
 8462@@@Downfall
-8463@@@Mythic: Immerseus
-8465@@@Mythic: Fallen Protectors
-8466@@@Mythic: Norushen
-8467@@@Mythic: Sha of Pride
-8468@@@Mythic: Galakras
-8469@@@Mythic: Iron Juggernaut
-8470@@@Mythic: Kor'kron Dark Shaman
-8471@@@Mythic: General Nazgrim
-8472@@@Mythic: Malkorok
-8478@@@Mythic: Spoils of Pandaria
-8479@@@Mythic: Thok the Bloodthirsty
-8480@@@Mythic: Siegecrafter Blackfuse
-8481@@@Mythic: Paragons of the Klaxxi
-8482@@@Mythic: Garrosh Hellscream
+8463@@@Heroic: Immerseus
+8465@@@Heroic: Fallen Protectors
+8466@@@Heroic: Norushen
+8467@@@Heroic: Sha of Pride
+8468@@@Heroic: Galakras
+8469@@@Heroic: Iron Juggernaut
+8470@@@Heroic: Kor'kron Dark Shaman
+8471@@@Heroic: General Nazgrim
+8472@@@Heroic: Malkorok
+8478@@@Heroic: Spoils of Pandaria
+8479@@@Heroic: Thok the Bloodthirsty
+8480@@@Heroic: Siegecrafter Blackfuse
+8481@@@Heroic: Paragons of the Klaxxi
+8482@@@Heroic: Garrosh Hellscream
 8484@@@Grievous Combatant
 8485@@@Grievous Combatant
 8486@@@Proving Yourself: Bronze Damage
@@ -5057,7 +5058,6 @@
 8668@@@Duelist: Season 15
 8669@@@Rival: Season 15
 8670@@@Challenger: Season 15
-8671@@@You'll Get Caught Up In The... Frostfire!
 8678@@@Tyrannical Gladiator's Cloud Serpent
 8679@@@Conqueror of Orgrimmar
 8680@@@Liberator of Orgrimmar
@@ -5094,6 +5094,25 @@
 8793@@@Murkalot
 8794@@@Friends In Places Even Higher Than That
 8795@@@Collector's Edition: Treasure Goblin
+8913@@@Collector's Edition: Dread Raven
+8915@@@Collector's Edition: Dread Hatchling
+6.0.1.18179
+8394@@@The Frostwind Slayer
+8463@@@Mythic: Immerseus
+8465@@@Mythic: Fallen Protectors
+8466@@@Mythic: Norushen
+8467@@@Mythic: Sha of Pride
+8468@@@Mythic: Galakras
+8469@@@Mythic: Iron Juggernaut
+8470@@@Mythic: Kor'kron Dark Shaman
+8471@@@Mythic: General Nazgrim
+8472@@@Mythic: Malkorok
+8478@@@Mythic: Spoils of Pandaria
+8479@@@Mythic: Thok the Bloodthirsty
+8480@@@Mythic: Siegecrafter Blackfuse
+8481@@@Mythic: Paragons of the Klaxxi
+8482@@@Mythic: Garrosh Hellscream
+8671@@@You'll Get Caught Up In The... Frostfire!
 8820@@@WoW's 10th Anniversary
 8843@@@Spires of Arak
 8844@@@Heroic: Spires of Arak

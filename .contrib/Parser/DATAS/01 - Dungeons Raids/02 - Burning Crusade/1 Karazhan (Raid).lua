@@ -11,7 +11,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		-- #endif
 		["coord"] = { 46.87, 74.69, DEADWIND_PASS },	-- Karazhan, Deadwind Pass
 		["maps"] = {
-			KARAZHAN,	-- Servant's Quarters (350)
+			KARAZHAN,	-- Servant's Quarters
 			351,	-- Upper Livery Stables
 			352,	-- The Banquet Hall
 			353,	-- The Guest Chambers

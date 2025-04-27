@@ -58,42 +58,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["_doautomation"] = true,
 					-- #ENDIF
 					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- Good News, For Once
-							["sourceQuests"] = {
-								27468,	-- Siege Tank Rescue
-								27545,	-- The Way is Open
-							},
-						}),
-						crit(2, {	-- Firebeard
-							["sourceQuest"] = 27817,	-- Dropping the Hammer
-						}),
-						crit(3, {	-- The Dunwalds
-							["sourceQuests"] = {
-								27649,	-- A Steady Supply
-								27651,	-- Doing It Like a Dunwald
-								27642,	-- Sifting Through The Wreckage
-								27641,	-- While Meeting The Family
-							},
-						}),
-						crit(4, {	-- The Eye of Twilight
-							["sourceQuest"] = 28244,	-- Eye Spy
-						}),
-						crit(5, {	-- Wild, Wild, Wildhammer Wedding
-							["sourceQuests"] = {
-								28655,	-- Wild, Wild, Wildhammer Wedding
-								28413,	-- Words and Music By...
-							},
-						}),
-						crit(6, {	-- The Attack Begins
-							["sourceQuest"] = 28247,	-- Last of Her Kind
-						}),
-						crit(7, {	-- Send Them Packing
-							["sourceQuest"] = 27787,	-- Skullcrusher the Mountain
-						}),
-					},
-					-- #else
 					["sourceQuests"] = {
 						27468,	-- Siege Tank Rescue
 						27545,	-- The Way is Open
@@ -109,40 +73,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27787,	-- Skullcrusher the Mountain
 					},
 					-- #endif
-					-- #endif
 				}),
 				ach(5501, {	-- Fading into Twilight (Horde)
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					-- #IF RETAIL
+					["_doautomation"] = true,
+					-- #ENDIF
 					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- Goblin Work Ethic
-							["sourceQuest"] = 26337,	-- Beating the Market
-						}),
-						crit(2, {	-- Returning to the Highlands
-							["sourceQuest"] = 26840,	-- Return to the Highlands
-						}),
-						crit(3, {	-- Krazzworks
-							["sourceQuest"] = 28595,	-- Krazz Works!
-						}),
-						crit(4, {	-- The Dragonmaw
-							["sourceQuests"] = {
-								28133,	-- Fury Unbound
-								27945,	-- Paint it Black
-							},
-						}),
-						crit(5, {	-- The Eye of Twilight
-							["sourceQuest"] = 27955,	-- Eye Spy
-						}),
-						crit(6, {	-- The Attack Begins
-							["sourceQuest"] = 28247,	-- Last of Her Kind
-						}),
-						crit(7, {	-- Send Them Packing
-							["sourceQuest"] = 27788,	-- Skullcrusher the Mountain
-						}),
-					},
-					-- #else
 					["sourceQuests"] = {
 						26337,	-- Beating the Market
 						26840,	-- Return to the Highlands
@@ -153,7 +91,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28247,	-- Last of Her Kind
 						27788,	-- Skullcrusher the Mountain
 					},
-					-- #endif
 					-- #endif
 				}),
 				ach(4960, {	-- Round Three. Fight!

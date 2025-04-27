@@ -4335,7 +4335,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			r(86644),	-- Origami Slime*
 		}),
 	}))),
-	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+	applyclassicphase(MOP_PHASE_LANDFALL, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 		cat(779, {	-- Inks
 			r(111645),	-- Ink of Dreams
 			r(111646),	-- Starlight Ink

@@ -30,6 +30,18 @@ i(0, 446237);		-- Void-Powered Slayer's Vambraces
 -- PATCH 1.15.3 --
 ------------------
 i(228304, 461710);	-- Fiery Core Sharpshooter Rifle
+
+------------------
+-- PATCH 1.15.5 --
+------------------
+i(234261, 1213573);	-- Arcane Megabomb
+i(234264, 1213586);	-- G00 DV-1B3 Generator
+i(234263, 1213578);	-- Obsidian Bomb
+i(234280, 1213646);	-- Obsidian Blasting Powder
+i(234435, 1214145);	-- Obsidian Shotgun
+i(235530, 1217207);	-- Obsidian Scope
+i(234262, 1213576);	-- The Fumigator
+i(234265, 1213588);	-- Tuned Force Reactive Disk
 -- #endif
 
 -----------------

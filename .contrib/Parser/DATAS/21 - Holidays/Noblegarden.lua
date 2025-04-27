@@ -229,6 +229,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		i(7808),	-- Chocolate Square
 		i(7806),	-- Lollipop
 		-- #endif
+		i(155905, {	-- Cursed Rabbit's Foot
+			["timeline"] = { ADDED_7_3_5 },
+		}),
 	}),
 	-- #if AFTER 3.1.0.9733
 	n(ACHIEVEMENTS, {
@@ -729,12 +732,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				199261,	-- Holiday Enthusiast
 				-- #if AFTER TWW
 				220307,	-- Holiday Enthusiast
+				220870,	-- Holiday Enthusiast
 				-- #endif
 			},
 			["coords"] = {
 				{ 31.6, 63.1, VALDRAKKEN },
 				-- #if AFTER TWW
 				{ 45.9, 55.0, DORNOGAL },
+				{ 55.5, 61.2, DORNOGAL },
 				-- #endif
 			},
 			["races"] = ALLIANCE_ONLY,
@@ -744,12 +749,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				199261,	-- Holiday Enthusiast
 				-- #if AFTER TWW
 				220307,	-- Holiday Enthusiast
+				220870,	-- Holiday Enthusiast
 				-- #endif
 			},
 			["coords"] = {
 				{ 31.6, 63.1, VALDRAKKEN },
 				-- #if AFTER TWW
 				{ 45.9, 55.0, DORNOGAL },
+				{ 55.5, 61.2, DORNOGAL },
 				-- #endif
 			},
 			["races"] = HORDE_ONLY,

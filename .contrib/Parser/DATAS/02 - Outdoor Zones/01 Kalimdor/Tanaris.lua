@@ -2790,45 +2790,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4935, {	-- Tanaris Quests
 					["timeline"] = { ADDED_4_0_3 },
 					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- Southsea Pirates (A)
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 25166,	-- Captain Dreadbeard (A)
-						}),
-						crit(1, {	-- Southsea Pirates (H)
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 24950,	-- Captain Dreadbeard (H)
-						}),
-						crit(2, {	-- Bug Free
-							["sourceQuest"] = 24953,	-- Just Trying to Kill Some Bugs
-						}),
-						crit(3, {	-- Advancing Our Interests
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 25065,	-- You Too, Brute?
-						}),
-						crit(3, {	-- Advancing Our Interests
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 25001,	-- Sandscraper
-						}),
-						crit(4, {	-- Grudge Match! (A)
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 25513,	-- Thunderdrome: Grudge Match! (A)
-						}),
-						crit(4, {	-- Grudge Match! (H)
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 25591,	-- Thunderdrome: Grudge Match! (H)
-						}),
-						crit(5, {	-- The Titans (A)
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 25421,	-- The Grand Goblet (A)
-						}),
-						crit(5, {	-- The Titans (H)
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 25107,	-- The Grand Goblet (H)
-						}),
-					},
-					-- #else
 					["sourceQuests"] = {
 						25166,	-- Captain Dreadbeard (A)
 						24950,	-- Captain Dreadbeard (H)
@@ -2840,7 +2801,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25421,	-- The Grand Goblet (A)
 						25107,	-- The Grand Goblet (H)
 					},
-					-- #endif
 					-- #endif
 				}),
 			}),

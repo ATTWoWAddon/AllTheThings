@@ -44,44 +44,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["_doautomation"] = true,
 					-- #ENDIF
 					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- Defense of The Briny Cutter
-							["_quests"] = { 25558 },	-- All or Nothing
-						}),
-						crit(2, {	-- Smuggler's Scar
-							["_quests"] = { 25638 },	-- A Desperate Plea
-						}),
-						crit(3, {	-- A Budding Treasure Hunter
-							["_quests"] = { 25743 },	-- Decisions, Decisions
-						}),
-						crit(4, {	-- The Clutch
-							["sourceQuests"] = {
-								25888,	-- Decompression
-								27708,	-- The Warden's Time
-								25885,	-- What? What? In My Gut...?
-							},
-						}),
-						crit(5, {	-- Silver Tide Hollow
-							["_quests"] = { 25456 },	-- Back in One Piece
-						}),
-						crit(6, {	-- Nespirah
-							["_quests"] = { 25922 },	-- Waking the Beast
-						}),
-						crit(7, {	-- Visions of the Past
-							["_quests"] = { 25626 },	-- Visions of the Past: Rise from the Deep
-						}),
-						crit(8, {	-- The Merciless One
-							["_quests"] = { 25987 },	-- Put It On
-						}),
-						crit(9, {	-- L'ghorek
-							["_quests"] = { 26143 },	-- All That Rises
-						}),
-						crit(10, {	-- The Tidehunter
-							["_quests"] = { 26193 },	-- Defending the Rift
-						}),
-					},
-					-- #else
 					["sourceQuests"] = {
 						25558,	-- All or Nothing
 						25638,	-- A Desperate Plea
@@ -97,49 +59,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26193,	-- Defending the Rift
 					},
 					-- #endif
-					-- #endif
 				}),
 				ach(4982, {	-- Sinking into Vashj'ir (H)
 					["races"] = HORDE_ONLY,
+					-- #IF RETAIL
+					["_doautomation"] = true,
+					-- #ENDIF
 					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- Defense of The Immortal Coil
-							["_quests"] = { 25949 },	-- Blood and Thunder!
-						}),
-						crit(2, {	-- Smuggler's Scar
-							["_quests"] = { 25638 },	-- A Desperate Plea
-						}),
-						crit(3, {	-- A Budding Treasure Hunter
-							["_quests"] = { 25743 },	-- Decisions, Decisions
-						}),
-						crit(4, {	-- The Clutch
-							["sourceQuests"] = {
-								26008,	-- Decompression
-								27708,	-- The Warden's Time
-								26040,	-- What? What? In My Gut...?
-							},
-						}),
-						crit(5, {	-- Silver Tide Hollow
-							["_quests"] = { 25456 },	-- Back in One Piece
-						}),
-						crit(6, {	-- Nespirah
-							["_quests"] = { 25996 },	-- Waking the Beast
-						}),
-						crit(7, {	-- Visions of the Past
-							["_quests"] = { 26135 },	-- Visions of the Past: Rise from the Deep
-						}),
-						crit(8, {	-- The Merciless One
-							["_quests"] = { 25988 },	-- Put It On
-						}),
-						crit(9, {	-- L'ghorek
-							["_quests"] = { 26143 },	-- All That Rises
-						}),
-						crit(10, {	-- The Tidehunter
-							["_quests"] = { 26194 },	-- Defending the Rift
-						}),
-					},
-					-- #else
 					["sourceQuests"] = {
 						25949,	-- Blood and Thunder!
 						25638,	-- A Desperate Plea
@@ -154,7 +80,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26143,	-- All That Rises
 						26194,	-- Defending the Rift
 					},
-					-- #endif
 					-- #endif
 				}),
 				achWithRep(4881, FACTION_THE_EARTHEN_RING, {	-- The Earthen Ring

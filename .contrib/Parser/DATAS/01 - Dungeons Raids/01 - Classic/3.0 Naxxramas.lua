@@ -37,7 +37,7 @@ applyclassicphase(PHASE_SIX,
 		["sharedLockout"] = 1,
 		-- #endif
 		["mapID"] = NAXXRAMAS,
-		["maps"] = { 163, 164, 165, 166, 167 },
+		["maps"] = { NAXXRAMAS_LEVEL2, NAXXRAMAS_LEVEL3, NAXXRAMAS_LEVEL4, NAXXRAMAS_LEVEL5, NAXXRAMAS_LEVEL6 },
 		["isRaid"] = true,
 		-- #if BEFORE WRATH
 		["lvl"] = 60,

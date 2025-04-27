@@ -72,7 +72,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		},
 		-- #endif
 		["mapID"] = GNOMEREGAN,
-		["maps"] = { 227, 228, 229 },
+		["maps"] = { GNOMEREGAN_LEVEL2, GNOMEREGAN_LEVEL3, GNOMEREGAN_LEVEL4 },
 		-- #if SEASON_OF_DISCOVERY
 		["sharedLockout"] = 1,
 		["isRaid"] = true,

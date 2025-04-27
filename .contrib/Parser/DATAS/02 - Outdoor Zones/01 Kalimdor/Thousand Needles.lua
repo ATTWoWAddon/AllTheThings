@@ -16,40 +16,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4938, {	-- Thousand Needles Quests
 					["timeline"] = { ADDED_4_0_3 },
 					-- #if ANYCLASSIC
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(1, {	-- The Treasure Trove [A]
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 25627,	-- Two-Tusk Takedown [A]
-						}),
-						crit(1, {	-- The Treasure Trove [H]
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 25628,	-- Two-Tusk Takedown [H]
-						}),
-						crit(2, {	-- Bugs in the Ice Cream
-							["sourceQuest"] = 28048,	-- That Smart One's Gotta Go
-						}),
-						crit(3, {	-- The Chief of Chiefs [A]
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 27327,	-- Grimtotem Chiefs: The Chief of Chiefs [A]
-						}),
-						crit(3, {	-- The Chief of Chiefs [H]
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 27328,	-- Grimtotem Chiefs: The Chief of Chiefs [H]
-						}),
-						crit(4, {	-- Mind the Drop
-							["sourceQuest"] = 28098,	-- The Twilight Skymaster
-						}),
-						crit(5, {	-- The Evil You Know [A]
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 28160,	-- Spread the Word [A]
-						}),
-						crit(5, {	-- The Evil You Know [H]
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 28161,	-- Spread the Word [H]
-						}),
-					},
-					-- #else
 					["sourceQuests"] = {
 						25627,	-- Two-Tusk Takedown [A]
 						25628,	-- Two-Tusk Takedown [H]
@@ -60,7 +26,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28160,	-- Spread the Word [A]
 						28161,	-- Spread the Word [H]
 					},
-					-- #endif
 					-- #endif
 				}),
 			}),
