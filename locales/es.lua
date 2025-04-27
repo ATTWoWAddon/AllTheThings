@@ -486,7 +486,7 @@ for key,value in pairs({
 
 	-- General Page
 		DEBUG_MODE = app.ccColors.Red.."Modo Depuración|r (Muestra todo)";
-		DEBUG_MODE_TOOLTIP = "Literalmente... TODAS LAS COSAS EN EL JUEGO. PUNTO. SI, TODO DE TODO. Incluso las cosas no coleccionables como bolsas, consumibles, ingredientes, etc aparecerán en las listas. (Incluído tú! No, enserió. Mira.)\n\nEsto es sólo para propósitos de Depuración. No está pensado para ser usado para el rastreo de completado.\n\nEste modo se salta todos los filtros, incluyendo no obtenibles.";
+		DEBUG_MODE_TOOLTIP = "Literalmente... TODAS LAS COSAS EN EL JUEGO. PUNTO. SI, TODO DE TODO. Incluso las cosas no coleccionables como bolsas, consumibles, ingredientes, etc aparecerán en las listas. (Incluído tú! No, en serio. Mira.)\n\nEsto es sólo para propósitos de Depuración. No está pensado para ser usado para el rastreo de completado.\n\nEste modo se salta todos los filtros, incluyendo no obtenibles.";
 		ACCOUNT_MODE = app.ccColors.Account.."Modo Cuenta";
 		ACCOUNT_MODE_TOOLTIP = "Activa este ajuste si quieres rastrear todas las cosas para todos tus personajes independientemente de los filtros de clase o raza.\n\nLos filtros de No obtenible aún se aplican.";
 		FACTION_MODE = "Sólo Facción";
