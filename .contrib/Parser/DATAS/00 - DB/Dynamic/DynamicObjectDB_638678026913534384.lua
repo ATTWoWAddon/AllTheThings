@@ -11,7 +11,7 @@
 			pt = "Armamento da Guarda da Rainha",
 			ru = "Оружие королевской стражи",
 			ko = "여왕 근위병 무기",
-			cn = "Queensguard Weaponry",
+			cn = "女王护卫武器",
 		},
 	},
 })

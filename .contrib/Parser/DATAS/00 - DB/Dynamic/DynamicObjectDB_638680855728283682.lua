@@ -11,7 +11,7 @@
 			pt = "[Enigma Machine]",
 			ru = "[Enigma Machine]",
 			ko = "[Enigma Machine]",
-			cn = "[Enigma Machine]",
+			cn = "谜之机械",
 		},
 	},
 })

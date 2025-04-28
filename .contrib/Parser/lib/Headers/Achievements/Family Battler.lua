@@ -3,5 +3,6 @@ FAMILY_BATTLER = createHeader({
 	icon = 651491,
 	text = {
 		en = "Family Battler",
+		cn = "全谱系宠物斗士",
 	},
 });

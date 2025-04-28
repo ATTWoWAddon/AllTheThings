@@ -11,7 +11,7 @@
 			pt = "[Chest of Acquisitions]",
 			ru = "[Chest of Acquisitions]",
 			ko = "[Chest of Acquisitions]",
-			cn = "[Chest of Acquisitions]",
+			cn = "收藏品宝箱",
 		},
 	},
 	[466960] = {
@@ -26,7 +26,7 @@
 			pt = "[Treasure of the Wardens]",
 			ru = "[Treasure of the Wardens]",
 			ko = "[Treasure of the Wardens]",
-			cn = "[Treasure of the Wardens]",
+			cn = "守望者的珍宝",
 		},
 	},
 })

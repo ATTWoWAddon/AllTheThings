@@ -11,7 +11,7 @@
 			pt = "[Ordinary Pebble]",
 			ru = "[Ordinary Pebble]",
 			ko = "[Ordinary Pebble]",
-			cn = "[Ordinary Pebble]",
+			cn = "普通的卵石",
 		},
 	},
 })

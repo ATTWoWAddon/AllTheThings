@@ -11,7 +11,7 @@
 			pt = "Gratidão do Vizir",
 			ru = "Знак признательности визиря",
 			ko = "재상의 감사 표시",
-			cn = "Vizier's Appreciation",
+			cn = "宰相的感激",
 		},
 	},
 	[455324] = {
@@ -56,7 +56,7 @@
 			pt = "Gratidão do Vizir",
 			ru = "Знак признательности визиря",
 			ko = "Vizier's Appreciation",
-			cn = "Vizier's Appreciation",
+			cn = "宰相的感激",
 		},
 	},
 })

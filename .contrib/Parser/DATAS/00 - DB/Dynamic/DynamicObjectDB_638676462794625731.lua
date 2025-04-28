@@ -11,7 +11,7 @@
 			pt = "[Mysterious Bones]",
 			ru = "[Mysterious Bones]",
 			ko = "[Mysterious Bones]",
-			cn = "[Mysterious Bones]",
+			cn = "神秘的骨头",
 		},
 	},
 	[466118] = {
@@ -26,7 +26,7 @@
 			pt = "[Unfinished Note]",
 			ru = "[Unfinished Note]",
 			ko = "[Unfinished Note]",
-			cn = "[Unfinished Note]",
+			cn = "未写完的纸条",
 		},
 	},
 	[466119] = {
@@ -41,7 +41,7 @@
 			pt = "[Hastily Scrawled Note]",
 			ru = "[Hastily Scrawled Note]",
 			ko = "[Hastily Scrawled Note]",
-			cn = "[Hastily Scrawled Note]",
+			cn = "字迹潦草的字条",
 		},
 	},
 	[466120] = {
@@ -56,7 +56,7 @@
 			pt = "[Water-Resistant Note]",
 			ru = "[Water-Resistant Note]",
 			ko = "[Water-Resistant Note]",
-			cn = "[Water-Resistant Note]",
+			cn = "防水的纸条",
 		},
 	},
 	[466128] = {
@@ -71,7 +71,7 @@
 			pt = "[Peculiar Gem]",
 			ru = "[Peculiar Gem]",
 			ko = "[Peculiar Gem]",
-			cn = "[Peculiar Gem]",
+			cn = "奇异宝石",
 		},
 	},
 	[469327] = {
@@ -86,7 +86,7 @@
 			pt = "[Play Script]",
 			ru = "[Play Script]",
 			ko = "[Play Script]",
-			cn = "[Play Script]",
+			cn = "剧本",
 		},
 	},
 	[469332] = {
@@ -101,7 +101,7 @@
 			pt = "[Prop Sword]",
 			ru = "[Prop Sword]",
 			ko = "[Prop Sword]",
-			cn = "[Prop Sword]",
+			cn = "道具用剑",
 		},
 	},
 	[469334] = {
@@ -116,7 +116,7 @@
 			pt = "[Mask of the Trickster]",
 			ru = "[Mask of the Trickster]",
 			ko = "[Mask of the Trickster]",
-			cn = "[Mask of the Trickster]",
+			cn = "欺诈者的面具",
 		},
 	},
 	[469335] = {
@@ -131,7 +131,7 @@
 			pt = "[Conductor's Baton]",
 			ru = "[Conductor's Baton]",
 			ko = "[Conductor's Baton]",
-			cn = "[Conductor's Baton]",
+			cn = "指挥棒",
 		},
 	},
 })

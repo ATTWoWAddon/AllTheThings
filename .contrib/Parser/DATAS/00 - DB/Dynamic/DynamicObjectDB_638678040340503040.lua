@@ -11,7 +11,7 @@
 			pt = "[Ancient Treasure Note]",
 			ru = "[Ancient Treasure Note]",
 			ko = "[Ancient Treasure Note]",
-			cn = "[Ancient Treasure Note]",
+			cn = "古代宝藏的笔记",
 		},
 	},
 	[477605] = {
@@ -26,7 +26,7 @@
 			pt = "[Ancient Treasure Note]",
 			ru = "[Ancient Treasure Note]",
 			ko = "[Ancient Treasure Note]",
-			cn = "[Ancient Treasure Note]",
+			cn = "古代宝藏的笔记",
 		},
 	},
 	[477609] = {
@@ -41,7 +41,7 @@
 			pt = "[Ancient Treasure Note]",
 			ru = "[Ancient Treasure Note]",
 			ko = "[Ancient Treasure Note]",
-			cn = "[Ancient Treasure Note]",
+			cn = "古代宝藏的笔记",
 		},
 	},
 })

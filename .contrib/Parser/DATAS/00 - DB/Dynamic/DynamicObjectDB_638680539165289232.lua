@@ -11,7 +11,7 @@
 			pt = "[Sentry Statue]",
 			ru = "[Sentry Statue]",
 			ko = "[Sentry Statue]",
-			cn = "[Sentry Statue]",
+			cn = "哨兵雕像",
 		},
 	},
 })

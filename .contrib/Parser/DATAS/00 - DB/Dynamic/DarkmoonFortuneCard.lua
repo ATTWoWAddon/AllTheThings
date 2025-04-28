@@ -11,7 +11,7 @@
 			pt = "[Darkmoon Fortune Card]",
 			ru = "[Darkmoon Fortune Card]",
 			ko = "[Darkmoon Fortune Card]",
-			cn = "[Darkmoon Fortune Card]",
+			cn = "暗月占卜牌",
 		},
 	},
 })

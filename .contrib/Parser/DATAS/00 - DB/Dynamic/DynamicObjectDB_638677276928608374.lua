@@ -11,7 +11,7 @@
 			pt = "[Astral Chest]",
 			ru = "[Astral Chest]",
 			ko = "[Astral Chest]",
-			cn = "[Astral Chest]",
+			cn = "星界宝箱",
 		},
 	},
 	[466400] = {
@@ -26,7 +26,7 @@
 			pt = "[\"Property of Elder Ko'nani\"]",
 			ru = "[\"Property of Elder Ko'nani\"]",
 			ko = "[\"Property of Elder Ko'nani\"]",
-			cn = "[\"Property of Elder Ko'nani\"]",
+			cn = "“长者库纳尼的财物”",
 		},
 	},
 	[466420] = {
@@ -41,7 +41,7 @@
 			pt = "[Rubenstein's Safe]",
 			ru = "[Rubenstein's Safe]",
 			ko = "[Rubenstein's Safe]",
-			cn = "[Rubenstein's Safe]",
+			cn = "鲁布斯坦的保险箱",
 		},
 	},
 	[466479] = {
@@ -56,7 +56,7 @@
 			pt = "[Encrypted Chest]",
 			ru = "[Encrypted Chest]",
 			ko = "[Encrypted Chest]",
-			cn = "[Encrypted Chest]",
+			cn = "加密的宝箱",
 		},
 	},
 	[466484] = {
@@ -71,7 +71,7 @@
 			pt = "[Encrypted Chest]",
 			ru = "[Encrypted Chest]",
 			ko = "[Encrypted Chest]",
-			cn = "[Encrypted Chest]",
+			cn = "加密的宝箱",
 		},
 	},
 	[466489] = {
@@ -86,7 +86,7 @@
 			pt = "[Encrypted Chest]",
 			ru = "[Encrypted Chest]",
 			ko = "[Encrypted Chest]",
-			cn = "[Encrypted Chest]",
+			cn = "加密的宝箱",
 		},
 	},
 	[466495] = {
@@ -101,7 +101,7 @@
 			pt = "[Encrypted Chest]",
 			ru = "[Encrypted Chest]",
 			ko = "[Encrypted Chest]",
-			cn = "[Encrypted Chest]",
+			cn = "加密的宝箱",
 		},
 	},
 	[466497] = {
@@ -116,7 +116,7 @@
 			pt = "[Encrypted Chest]",
 			ru = "[Encrypted Chest]",
 			ko = "[Encrypted Chest]",
-			cn = "[Encrypted Chest]",
+			cn = "加密的宝箱",
 		},
 	},
 })

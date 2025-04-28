@@ -11,7 +11,7 @@
 			pt = "Kul Tiran Lumberer's Hatchet",
 			ru = "Kul Tiran Lumberer's Hatchet",
 			ko = "Kul Tiran Lumberer's Hatchet",
-			cn = "Kul Tiran Lumberer's Hatchet",
+			cn = "库尔提拉斯伐木工的短斧",
 		},
 	},
 })

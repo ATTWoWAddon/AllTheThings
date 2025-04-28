@@ -11,7 +11,7 @@
 			pt = "[Inert Peculiar Key]",
 			ru = "[Inert Peculiar Key]",
 			ko = "[Inert Peculiar Key]",
-			cn = "[Inert Peculiar Key]",
+			cn = "失能奇异钥匙",
 		},
 	},
 	[455310] = {
@@ -101,7 +101,7 @@
 			pt = "Pre-Calibrated Goblin Transport Vessel",
 			ru = "Откалиброванный транспортный корабль гоблинов",
 			ko = "사전 보정된 고블린 수송선",
-			cn = "Pre-Calibrated Goblin Transport Vessel",
+			cn = "提前校准的地精运输船",
 		},
 	},
 	[457156] = {
@@ -116,7 +116,7 @@
 			pt = "Torn Note",
 			ru = "Порванная записка",
 			ko = "찢어진 쪽지",
-			cn = "Torn Note",
+			cn = "撕碎的笔记",
 		},
 	},
 	[457160] = {
@@ -131,7 +131,7 @@
 			pt = "Torn Note",
 			ru = "Порванная записка",
 			ko = "찢어진 쪽지",
-			cn = "Torn Note",
+			cn = "撕碎的笔记",
 		},
 	},
 	[457161] = {
@@ -146,7 +146,7 @@
 			pt = "Torn Note",
 			ru = "Порванная записка",
 			ko = "찢어진 쪽지",
-			cn = "Torn Note",
+			cn = "撕碎的笔记",
 		},
 	},
 	[457197] = {
@@ -161,7 +161,7 @@
 			pt = "Mounted Spyglass",
 			ru = "Закрепленная подзорная труба",
 			ko = "거치식 망원경",
-			cn = "Mounted Spyglass",
+			cn = "架设的望远镜",
 		},
 	},
 	[459333] = {
@@ -206,7 +206,7 @@
 			pt = "Dirt-Caked Celebration Crate",
 			ru = "Грязный ящик с праздника",
 			ko = "Dirt-Caked Celebration Crate",
-			cn = "Dirt-Caked Celebration Crate",
+			cn = "沾满泥土的庆典箱子",
 		},
 	},
 	[465161] = {
@@ -221,7 +221,7 @@
 			pt = "Water-Resistant Receipt of Sale",
 			ru = "Водонепроницаемый товарный чек",
 			ko = "방수 판매 영수증",
-			cn = "Water-Resistant Receipt of Sale",
+			cn = "防水的销售收据",
 		},
 	},
 })

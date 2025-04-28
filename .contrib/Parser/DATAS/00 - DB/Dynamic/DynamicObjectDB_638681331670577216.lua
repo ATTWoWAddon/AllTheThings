@@ -11,7 +11,7 @@
 			pt = "Rune-Seared Spear",
 			ru = "Rune-Seared Spear",
 			ko = "Rune-Seared Spear",
-			cn = "Rune-Seared Spear",
+			cn = "符文灼烧的长矛",
 		},
 	},
 })

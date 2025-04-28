@@ -11,7 +11,7 @@
 			pt = "Minnow's Favorite Blade",
 			ru = "Minnow's Favorite Blade",
 			ko = "Minnow's Favorite Blade",
-			cn = "Minnow's Favorite Blade",
+			cn = "米诺的钟爱之刃",
 		},
 	},
 })

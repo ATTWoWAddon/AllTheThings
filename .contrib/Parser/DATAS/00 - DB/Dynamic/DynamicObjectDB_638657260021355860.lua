@@ -11,7 +11,7 @@
 			pt = "Gratidão do Vizir",
 			ru = "Vizier's Appreciation",
 			ko = "Vizier's Appreciation",
-			cn = "Vizier's Appreciation",
+			cn = "宰相的感激",
 		},
 	},
 	[455329] = {

@@ -8,6 +8,7 @@ EMERALD_BOUNTY = createHeader({
 	text = {
 		en = "Emerald Bounty",
 		ru = "Изумрудный дар",
+		cn = "翡翠奖赏",
 	},
 });
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {

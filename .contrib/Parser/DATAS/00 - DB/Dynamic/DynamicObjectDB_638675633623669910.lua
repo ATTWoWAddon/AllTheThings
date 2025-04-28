@@ -11,7 +11,7 @@
 			pt = "[Jumping Spider]",
 			ru = "[Jumping Spider]",
 			ko = "[Jumping Spider]",
-			cn = "[Jumping Spider]",
+			cn = "跳蛛",
 		},
 	},
 	[464218] = {
@@ -26,7 +26,7 @@
 			pt = "[Summit Kid]",
 			ru = "[Summit Kid]",
 			ko = "[Summit Kid]",
-			cn = "[Summit Kid]",
+			cn = "高山小羊",
 		},
 	},
 	[477139] = {

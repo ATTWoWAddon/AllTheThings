@@ -10,6 +10,6 @@ LORE = createHeader({
 		--	pt = "TODO",
 		--	ru = "TODO",
 		--	ko = "TODO",
-		--	cn = "TODO",
+		cn = "剧情",
 	},
 });

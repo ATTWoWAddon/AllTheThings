@@ -13,7 +13,7 @@ THE_FOUR_HORSEMEN = createHeader({
 		pt = "Os Quatro Cavaleiros",
 		ru = "Четыре Всадника",
 		ko = "4인 기사단",
-		cn = "天啓四骑士",
+		cn = "天启四骑士",
 		tw = "四騎士",
 	},
 });

@@ -8,6 +8,7 @@ DREAM_INFUSION = createHeader({
 	text = {
 		en = "Dream Infusion",
 		ru = "Настой Сна",
+		cn = "梦境注能",
 	},
 });
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {

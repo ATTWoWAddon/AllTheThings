@@ -17,6 +17,7 @@ DELVES_TWW_S1 = createHeader({
 	icon = 1604168,
 	text = {
 		en = "Delves TWW S1"
+		cn = "地心之战地下堡第1季"
 	},
 });
 DELVES_TWW_S2 = createHeader({
@@ -24,6 +25,7 @@ DELVES_TWW_S2 = createHeader({
 	icon = 1604168,
 	text = {
 		en = "Delves TWW S2"
+		cn = "地心之战地下堡第2季"
 	},
 });
 local UNDERCOIN = 2803;

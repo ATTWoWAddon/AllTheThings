@@ -11,7 +11,7 @@
 			pt = "Bag of Stolen Goods",
 			ru = "Bag of Stolen Goods",
 			ko = "Bag of Stolen Goods",
-			cn = "Bag of Stolen Goods",
+			cn = "一袋失窃的货物",
 		},
 	},
 	[456665] = {
@@ -26,7 +26,7 @@
 			pt = "Ore Sample",
 			ru = "Ore Sample",
 			ko = "Ore Sample",
-			cn = "Ore Sample",
+			cn = "矿石样品",
 		},
 	},
 	[457143] = {
@@ -41,7 +41,7 @@
 			pt = "Kaja'Cola Can",
 			ru = "Kaja'Cola Can",
 			ko = "Kaja'Cola Can",
-			cn = "Kaja'Cola Can",
+			cn = "卡亚可乐罐",
 		},
 	},
 	[463539] = {
@@ -56,7 +56,7 @@
 			pt = "Pilfered Earthen Chest",
 			ru = "Pilfered Earthen Chest",
 			ko = "Pilfered Earthen Chest",
-			cn = "Pilfered Earthen Chest",
+			cn = "掠夺的土灵宝箱",
 		},
 	},
 	[464233] = {
@@ -71,7 +71,7 @@
 			pt = "Bilge Rat Supply Chest",
 			ru = "Bilge Rat Supply Chest",
 			ko = "Bilge Rat Supply Chest",
-			cn = "Bilge Rat Supply Chest",
+			cn = "水鼠帮补给箱",
 		},
 	},
 	[465208] = {
@@ -86,7 +86,7 @@
 			pt = "Crystal Chunk",
 			ru = "Crystal Chunk",
 			ko = "Crystal Chunk",
-			cn = "Crystal Chunk",
+			cn = "水晶块",
 		},
 	},
 	[465272] = {
@@ -101,7 +101,7 @@
 			pt = "Empty Kaja'Cola Can",
 			ru = "Empty Kaja'Cola Can",
 			ko = "Empty Kaja'Cola Can",
-			cn = "Empty Kaja'Cola Can",
+			cn = "空卡亚可乐罐",
 		},
 	},
 	[465294] = {
@@ -116,7 +116,7 @@
 			pt = "Antonidas' Introduction to Arcane Magic",
 			ru = "Antonidas' Introduction to Arcane Magic",
 			ko = "Antonidas' Introduction to Arcane Magic",
-			cn = "Antonidas' Introduction to Arcane Magic",
+			cn = "安东尼达斯的奥术魔法导论",
 		},
 	},
 	[465295] = {
@@ -131,7 +131,7 @@
 			pt = "Medivh's Karazhan Schematics",
 			ru = "Medivh's Karazhan Schematics",
 			ko = "Medivh's Karazhan Schematics",
-			cn = "Medivh's Karazhan Schematics",
+			cn = "麦迪文的卡拉赞示意图",
 		},
 	},
 	[465300] = {
@@ -146,7 +146,7 @@
 			pt = "Thalen Songweaver's Notes",
 			ru = "Thalen Songweaver's Notes",
 			ko = "Thalen Songweaver's Notes",
-			cn = "Thalen Songweaver's Notes",
+			cn = "萨伦·织歌者的笔记",
 		},
 	},
 	[475284] = {
@@ -161,7 +161,7 @@
 			pt = "Earthen Prototype",
 			ru = "Earthen Prototype",
 			ko = "Earthen Prototype",
-			cn = "Earthen Prototype",
+			cn = "土灵原型装置",
 		},
 	},
 	[475286] = {
@@ -176,7 +176,7 @@
 			pt = "Overcharged Battery",
 			ru = "Overcharged Battery",
 			ko = "Overcharged Battery",
-			cn = "Overcharged Battery",
+			cn = "超充能电池",
 		},
 	},
 	[487825] = {
@@ -191,7 +191,7 @@
 			pt = "Ruffled Pages",
 			ru = "Ruffled Pages",
 			ko = "Ruffled Pages",
-			cn = "Ruffled Pages",
+			cn = "起皱的纸页",
 		},
 	},
 	[493375] = {
@@ -206,7 +206,7 @@
 			pt = "Rune-Sealed Coffer",
 			ru = "Rune-Sealed Coffer",
 			ko = "Rune-Sealed Coffer",
-			cn = "Rune-Sealed Coffer",
+			cn = "符文封印的宝匣",
 		},
 	},
 	[494923] = {
@@ -221,7 +221,7 @@
 			pt = "Tattered Journal",
 			ru = "Tattered Journal",
 			ko = "Tattered Journal",
-			cn = "Tattered Journal",
+			cn = "破烂的日志",
 		},
 	},
 	[499127] = {
@@ -236,7 +236,7 @@
 			pt = "Runemarked Coffer",
 			ru = "Runemarked Coffer",
 			ko = "Runemarked Coffer",
-			cn = "Runemarked Coffer",
+			cn = "符文标记宝匣",
 		},
 	},
 	[499443] = {
@@ -251,7 +251,7 @@
 			pt = "Faded Journal Page",
 			ru = "Faded Journal Page",
 			ko = "Faded Journal Page",
-			cn = "Faded Journal Page",
+			cn = "褪色的日志书页",
 		},
 	},
 	[499620] = {
@@ -266,7 +266,7 @@
 			pt = "Runed Storm Cache",
 			ru = "Runed Storm Cache",
 			ko = "Runed Storm Cache",
-			cn = "Runed Storm Cache",
+			cn = "符文风暴宝箱",
 		},
 	},
 	[499862] = {
@@ -281,7 +281,7 @@
 			pt = "Runed Storm Cache",
 			ru = "Runed Storm Cache",
 			ko = "Runed Storm Cache",
-			cn = "Runed Storm Cache",
+			cn = "符文风暴宝箱",
 		},
 	},
 	[499863] = {
@@ -296,7 +296,7 @@
 			pt = "Runed Storm Cache",
 			ru = "Runed Storm Cache",
 			ko = "Runed Storm Cache",
-			cn = "Runed Storm Cache",
+			cn = "符文风暴宝箱",
 		},
 	},
 	[500407] = {
@@ -311,7 +311,7 @@
 			pt = "Runed Storm Cache",
 			ru = "Runed Storm Cache",
 			ko = "Runed Storm Cache",
-			cn = "Runed Storm Cache",
+			cn = "符文风暴宝箱",
 		},
 	},
 	[500688] = {
@@ -326,7 +326,7 @@
 			pt = "Seafarer's Cache",
 			ru = "Seafarer's Cache",
 			ko = "Seafarer's Cache",
-			cn = "Seafarer's Cache",
+			cn = "海员的箱子",
 		},
 	},
 	[500689] = {
@@ -341,7 +341,7 @@
 			pt = "Seafarer's Cache",
 			ru = "Seafarer's Cache",
 			ko = "Seafarer's Cache",
-			cn = "Seafarer's Cache",
+			cn = "海员的箱子",
 		},
 	},
 	[500690] = {
@@ -356,7 +356,7 @@
 			pt = "Seafarer's Cache",
 			ru = "Seafarer's Cache",
 			ko = "Seafarer's Cache",
-			cn = "Seafarer's Cache",
+			cn = "海员的箱子",
 		},
 	},
 	[505503] = {
@@ -371,7 +371,7 @@
 			pt = "Ashvane Issued Workboots",
 			ru = "Ashvane Issued Workboots",
 			ko = "Ashvane Issued Workboots",
-			cn = "Ashvane Issued Workboots",
+			cn = "艾什凡工作靴",
 		},
 	},
 })

@@ -11,7 +11,7 @@
 			pt = "[Encrypted Puzzle Box]",
 			ru = "[Encrypted Puzzle Box]",
 			ko = "[Encrypted Puzzle Box]",
-			cn = "[Encrypted Puzzle Box]",
+			cn = "加密的机关盒",
 		},
 	},
 	[467489] = {
@@ -26,7 +26,7 @@
 			pt = "[Ghostly Celebration Crate]",
 			ru = "[Ghostly Celebration Crate]",
 			ko = "[Ghostly Celebration Crate]",
-			cn = "[Ghostly Celebration Crate]",
+			cn = "阴森的庆典箱子",
 		},
 	},
 })
