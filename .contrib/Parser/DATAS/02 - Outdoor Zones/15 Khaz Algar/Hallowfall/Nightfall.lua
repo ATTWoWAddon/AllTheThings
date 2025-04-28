@@ -6,6 +6,7 @@ NIGHTFALL = createHeader({
 	icon = 6694197,
 	text = {
 		en = "Nightfall",
+		cn = "夜幕激斗",
 	},
 });
 
