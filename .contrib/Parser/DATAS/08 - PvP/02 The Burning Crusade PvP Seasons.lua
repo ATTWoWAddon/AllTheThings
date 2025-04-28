@@ -3053,7 +3053,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						}),
 						i(37740, {	-- Brutal Gladiator's Swift Judgement
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-							["timeline"] = { NEVER_IMPLEMENTED },
+							["timeline"] = { ADDED_7_2_0 },
 						}),
 						i(35107, {	-- Brutal Gladiator's Touch of Defeat
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
