@@ -463,9 +463,6 @@ a["Ny'alotha, la Ciudad Despierta"] = "Ny'alotha"	-- ["Ny'alotha, the Waking Cit
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Tier/Dungeon/Event/Holiday Sets
-		-- Artifact Strings
-			[-5202] = "Equilibrio de poderes",						-- Balance of Power
 })
 do a[key] = value; end
 end

@@ -19,14 +19,6 @@ local GetItemClassInfo = app.WOWAPI.GetItemClassInfo;
 for key, value in pairs({
 	-- These need to be localized manually.
 	["HEADER_NAMES"] = {
-	-- Tier/Dungeon/Event/Holiday Sets
-		-- Artifact Strings, These IDs are used in src/Expansion/Legion [Ask Runaway about removing them]
-		[-5200] = "Base Appearance",											-- Base Appearance
-		[-5201] = "Class Hall Campaign",										-- Class Hall Campaign
-		[-5202] = "Balance of Power",											-- Balance of Power
-		[-5203] = "Prestige Rewards",											-- Prestige Rewards
-		[-5204] = "Challenge Appearance",										-- Challenge Appearance
-		[-5205] = "Hidden Appearance",											-- Hidden Appearance
 	};
 
 	["CUSTOM_COLLECTS_REASONS"] = {

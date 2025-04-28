@@ -50,7 +50,7 @@ local BaseAppearance = function(icon, t)
 		t = icon;
 		icon = nil;
 	end
-	local header = n(-5200, t);
+	local header = n(BASE_APPEARANCE, t);
 	if icon then
 		if type(icon) == "string" then
 			header.icon = icon;
@@ -70,7 +70,7 @@ local ClassHallAppearance = function(icon, t)
 		t = icon;
 		icon = nil;
 	end
-	local header = n(-5201, t);
+	local header = n(CLASS_HALL_CAMPAIGN, t);
 	if icon then header.icon = icon; end
 	if header.model then
 		print("Artifacts no longer support model!");
@@ -85,7 +85,7 @@ local BalanceOfPowerAppearance = function(icon, t)
 		t = icon;
 		icon = nil;
 	end
-	local header = n(-5202, t);
+	local header = n(BALANCE_OF_POWER, t);
 	if icon then header.icon = icon; end
 	if header.model then
 		print("Artifacts no longer support model!");
@@ -99,7 +99,7 @@ local PrestigeAppearance = function(icon, t)
 		t = icon;
 		icon = nil;
 	end
-	local header = n(-5203, t);
+	local header = n(PRESTIGE_REWARDS, t);
 	if icon then header.icon = icon; end
 	if header.model then
 		print("Artifacts no longer support model!");
@@ -117,7 +117,7 @@ local ChallengeAppearance = function(icon, t)
 		t = icon;
 		icon = nil;
 	end
-	local header = n(-5204, t);
+	local header = n(CHALLENGE_APPEARANCE, t);
 	if icon then
 		if type(icon) == "string" then
 			header.icon = icon;
@@ -143,7 +143,7 @@ local HiddenAppearance = function(icon, t)
 		t = icon;
 		icon = nil;
 	end
-	local header = n(-5205, t);
+	local header = n(HIDDEN_APPEARANCE, t);
 	if icon then header.icon = icon; end
 	if header.model then
 		print("Artifacts no longer support model!");
