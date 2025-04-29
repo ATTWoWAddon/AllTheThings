@@ -22,7 +22,7 @@ namespace ATT.DB.Types
             return new Dictionary<string, object>
             {
                 { "itemID", ItemID },
-                //{ "modID", ItemAppearanceModifierID },
+                //{ "ItemAppearanceModifierID", ItemAppearanceModifierID },
                 { "sourceID", ID }
             };
         }

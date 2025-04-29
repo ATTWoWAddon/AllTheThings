@@ -1258,6 +1258,7 @@ end");
                         case "npcID":
                         case "bonusID":
                         case "modID":
+                        case "ItemAppearanceModifierID":
                         case "rank":
                         case "gender":
                         case "creatureID":
@@ -1361,6 +1362,7 @@ end");
                         case "itemID":
                         case "npcID":
                         case "modID":
+                        case "ItemAppearanceModifierID":
                         case "rank":
                         case "gender":
                         case "creatureID":
@@ -1691,6 +1693,7 @@ end");
                     case "npcID":
                     case "displayID":
                     case "modID":
+                    case "ItemAppearanceModifierID":
                     case "bonusID":
                     case "runeforgepowerID":
                     case "raceID":

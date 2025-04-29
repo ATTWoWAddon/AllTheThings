@@ -281,6 +281,11 @@ namespace ATT
         private static long NestedHeaderID { get; set; }
 
         /// <summary>
+        /// Represents the nested ItemAppearanceModifierID currently being processed
+        /// </summary>
+        private static long NestedItemAppearanceModifierID { get; set; }
+
+        /// <summary>
         /// Represents the nested ModID currently being processed
         /// </summary>
         private static long NestedModID { get; set; }
@@ -1020,6 +1025,11 @@ namespace ATT
                 case "itemModID":
                     {
                         return "modID";
+                    }
+
+                case "ItemAppearanceModifierID":
+                    {
+                        return "ItemAppearanceModifierID";
                     }
 
                 case "artifactId":

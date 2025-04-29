@@ -8,6 +8,7 @@ call :download CriteriaTree
 call :download GlyphProperties
 call :download Item
 call :download ItemEffect
+call :download ItemModifiedAppearance
 call :download ItemXItemEffect
 call :download ItemSearchName
 call :download ModifierTree

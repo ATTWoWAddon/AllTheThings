@@ -585,6 +585,15 @@ namespace ATT
                     restoreModID = true;
                     //LogDebug($"INFO: New inherited modID {NestedModID}", data);
                 }
+                // Track the hierarchy of ItemAppearanceModifierID
+                bool restoreItemAppearanceModifierID = false;
+                long previousItemAppearanceModifierID = NestedItemAppearanceModifierID;
+                if (data.TryGetValue("ItemAppearanceModifierID", out long nestedItemAppearanceModifierID) && nestedItemAppearanceModifierID != NestedItemAppearanceModifierID)
+                {
+                    NestedItemAppearanceModifierID = nestedItemAppearanceModifierID;
+                    restoreItemAppearanceModifierID = true;
+                    //LogDebug($"INFO: New inherited ItemAppearanceModifierID {NestedItemAppearanceModifierID}", data);
+                }
                 // Track the hierarchy of difficultyID
                 bool restoreDifficulty = false;
                 var previousDifficultyRoot = DifficultyRoot;
@@ -632,6 +641,10 @@ namespace ATT
                 {
                     //LogDebug($"INFO: Restore previous headerID {previousHeaderID} => {NestedHeaderID}", data);
                     NestedHeaderID = previousHeaderID;
+                }
+                if(restoreItemAppearanceModifierID)
+                {
+                    NestedItemAppearanceModifierID = previousItemAppearanceModifierID;
                 }
                 if (restoreModID)
                 {
@@ -749,6 +762,12 @@ namespace ATT
             {
                 //LogDebug($"INFO: Applied inherited modID {NestedModID} for item {data.GetString("itemID")}");
                 data["modID"] = NestedModID;
+            }
+            // Apply the inherited ItemAppearanceModifierID for items which do not specify their own ItemAppearanceModifierID
+            if (NestedItemAppearanceModifierID > 0 && data.ContainsKey("itemID") && !data.ContainsKey("ItemAppearanceModifierID"))
+            {
+                //LogDebug($"INFO: Applied inherited ItemAppearanceModifierID {NestedItemAppearanceModifierID} for item {data.GetString("itemID")}");
+                data["ItemAppearanceModifierID"] = NestedItemAppearanceModifierID;
             }
             if (data.ContainsKey("ignoreBonus"))
             {

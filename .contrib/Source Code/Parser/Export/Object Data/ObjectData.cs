@@ -218,6 +218,7 @@ namespace ATT
                 {
                     fields.Remove("q");
                 }
+                fields.Remove("ItemAppearanceModifierID");
 
                 // Ensure parser-only fields are not exported
                 for (int i = fields.Count - 1; i >= 0; i--)

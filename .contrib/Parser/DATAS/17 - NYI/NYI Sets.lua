@@ -13447,7 +13447,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(229238),	-- Enforcer's Backalley Vestplate
 					}),
 				})),
-				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
+				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898, ["ItemAppearanceModifierID"] = 157 }, {
 					cl(DEATHKNIGHT, {
 						i(229248),	-- Cauldron Champion's Spined Cloak
 						i(229249),	-- Cauldron Champion's Wraps
@@ -13836,7 +13836,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(229769),	-- Prized Gladiator's Plate Wristguards
 					}),
 				})),
-				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107 }, {
+				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107, ["ItemAppearanceModifierID"] = 158 }, {
 					cl(DEATHKNIGHT, {
 						i(229248),	-- Cauldron Champion's Spined Cloak
 						i(229249),	-- Cauldron Champion's Wraps

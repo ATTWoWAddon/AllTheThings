@@ -5,6 +5,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace ATT
@@ -409,6 +410,7 @@ namespace ATT
                     case "sourceID":
                     case "bonusID":
                     case "modID":
+                    case "ItemAppearanceModifierID":
                     case "rank":
                     case "gender":
                     case "artifactID":
@@ -1045,32 +1047,59 @@ namespace ATT
                 }
 
                 // Attempt to get the Source ID for this variant of the item.
-                if (SOURCES.TryGetValue(sourceIDKey, out long sourceID))
+                long? sourceIDFromSourcesDB = null;
+                if (SOURCES.TryGetValue(sourceIDKey, out long s)) sourceIDFromSourcesDB = s;
+
+                // Attempt to get the SourceID from the ItemModifiedAppearanceDB
+                long? ItemModifiedAppearanceID = null;
+                long ItemAppearanceModifierID = NestedItemAppearanceModifierID;
+                if (TryGetTypeDBObjectCollection<ItemModifiedAppearance>((long)sourceIDKey, out var itemModifiedAppearances))
                 {
+                    // this would need to be revised to ever work with modID/bonusID
+                    if(data.TryGetValue("ItemAppearanceModifierID", out var ItemAppearanceModifierIDObj)) ItemAppearanceModifierID = (long)ItemAppearanceModifierIDObj;
+                    var itemModifiedAppearance = itemModifiedAppearances.FirstOrDefault(x => x.ItemAppearanceModifierID == ItemAppearanceModifierID)
+                        ?? itemModifiedAppearances.FirstOrDefault(x => x.ItemAppearanceModifierID == 0);
+                    if (itemModifiedAppearance != null)
+                    {
+                        ItemModifiedAppearanceID = itemModifiedAppearance.ID;
+                    }
+                }
+
+                // Compare the appearance from the ItemModifiedAppearance database and the one from ours.
+                long? sourceID = sourceIDFromSourcesDB ?? ItemModifiedAppearanceID;
+                if (sourceID.HasValue && sourceID > 0)
+                {
+                    if (sourceIDFromSourcesDB.HasValue)
+                    {
+                        long modID = NestedModID;
+                        if (data.TryGetValue("modID", out var modIDObj)) modID = (long)modIDObj;
+                        if (ItemModifiedAppearanceID != sourceIDFromSourcesDB)
+                        {
+                            LogWarn($"Item:{sourceIDKey} SourceID != ItemModifiedAppearanceID ({sourceIDFromSourcesDB}:{ItemModifiedAppearanceID}) [{modID}:{ItemAppearanceModifierID}]");
+                        }
+#pragma warning disable CS0162 // Unreachable code detected
+                        else if(DoSpammyDebugLogging)
+                        {
+                            LogDebug($"INFO: Item:{sourceIDKey} SourceID == ItemModifiedAppearanceID ({sourceIDFromSourcesDB}) [{modID}:{ItemAppearanceModifierID}] :)");
+                        }
+                        else if(ItemAppearanceModifierID > 0)
+                        {
+                            LogWarn($"INFO: Item:{sourceIDKey} SourceID == ItemModifiedAppearanceID ({sourceIDFromSourcesDB}) [{modID}:{ItemAppearanceModifierID}] :)");
+                        }
+#pragma warning restore CS0162 // Unreachable code detected
+                    }
+                    else
+                    {
+                        LogDebug($"INFO: Item:{sourceIDKey} SourceID from ItemModifiedAppearanceID ({sourceIDFromSourcesDB}:{ItemModifiedAppearanceID}) [{ItemAppearanceModifierID}]");
+                    }
+
                     // quite spammmmmy, only enable if needed
 #pragma warning disable CS0162 // Unreachable code detected
-                    if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} ==> s:{sourceID} (SOURCES)");
+                    if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} ==> s:{sourceID} ({sourceIDFromSourcesDB}:{ItemModifiedAppearanceID})");
 #pragma warning restore CS0162 // Unreachable code detected
                     data["sourceID"] = sourceID;
                     CaptureForSOURCED(data, "sourceID", sourceID);
                     return;
-                }
-
-                // Attempt to get the SourceID from the ItemModifiedAppearanceDB
-                if (TryGetTypeDBObjectCollection<ItemModifiedAppearance>((long)sourceIDKey, out var itemModifiedAppearances))
-                {
-                    // this would need to be revised to ever work with modID/bonusID
-                    sourceID = itemModifiedAppearances.FirstOrDefault(x => x.ItemAppearanceModifierID == 0)?.ID ?? 0;
-                    if (sourceID > 0)
-                    {
-                        // quite spammmmmy, only enable if needed
-#pragma warning disable CS0162 // Unreachable code detected
-                        if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} ==> s:{sourceID} (ItemModifiedAppearanceDB)");
-#pragma warning restore CS0162 // Unreachable code detected
-                        data["sourceID"] = sourceID;
-                        CaptureForSOURCED(data, "sourceID", sourceID);
-                        return;
-                    }
                 }
 
                 // quite spammmmmy, only enable if needed
