@@ -3785,10 +3785,11 @@ namespace ATT
                             {
                                 if (CURRENT_RELEASE_VERSION >= entry.LongVersion)
                                 {
-                                    removed = 2;
                                     readded = false;
+                                    removed = 2;
+
                                     // Mark the most recent patch this was removed
-                                    if (removedPatch <= entry.Version)
+                                    if (removedPatch < entry.Version)
                                     {
                                         timeline.CurrentEntry = index;
                                         removedPatch = entry.Version;
@@ -3797,8 +3798,8 @@ namespace ATT
                                 else
                                 {
                                     // Mark the first patch this was removed on (the upcoming patch)
-                                    // We do this by picking the first patch which is both past the most recently applied patch from timeline and CURRENT_RELEASE_VERSION
-                                    if (entry.Version >= addedPatch && removedPatch < CURRENT_RELEASE_VERSION)
+                                    // This should be the first removedPatch which is NOT smaller than CURRENT_RELEASE_VERSION, as well as bigger (or equal to) the current addedPatch
+                                    if (removedPatch < CURRENT_RELEASE_VERSION && addedPatch <= entry.Version)
                                     {
                                         readded = false;
                                         removedPatch = entry.Version;
