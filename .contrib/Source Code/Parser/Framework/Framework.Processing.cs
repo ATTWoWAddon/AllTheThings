@@ -3798,8 +3798,9 @@ namespace ATT
                                 else
                                 {
                                     // Mark the first patch this was removed on (the upcoming patch)
-                                    // This should be the first removedPatch which is NOT smaller than CURRENT_RELEASE_VERSION, as well as bigger (or equal to) the current addedPatch
-                                    if (removedPatch < CURRENT_RELEASE_VERSION && addedPatch <= entry.Version)
+                                    // This should be the FIRST removedPatch number which is bigger than the release version being parsed
+                                    // (i.e. we no longer apply new removed entries after removedPatch is bigger than CURRENT_SHORT_RELEASE_VERSION)
+                                    if (removedPatch < CURRENT_SHORT_RELEASE_VERSION)
                                     {
                                         readded = false;
                                         removedPatch = entry.Version;
