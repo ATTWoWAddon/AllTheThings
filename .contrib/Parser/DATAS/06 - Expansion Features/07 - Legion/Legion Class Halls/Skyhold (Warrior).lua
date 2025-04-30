@@ -285,7 +285,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 58.3, 84.6, SKYHOLD },
 							["g"] = {
 								i(128910, {	-- Strom'kar, the Warbreaker
-									artifact(295),	-- Strom'kar, the Warbreaker
+									["ItemAppearanceModifierID"] = 0,
+									["groups"] = {
+										artifact(295),	-- Strom'kar, the Warbreaker
+									},
 								}),
 							},
 						}),
@@ -302,10 +305,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 58.3, 84.6, SKYHOLD },
 							["g"] = {
 								i(128908, {	-- Warswords of the Valarjar [Main Hand]
-									artifact(296),	-- Warswords of the Valarjar
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(296),	-- Warswords of the Valarjar
+									},
 								}),
 								i(134553, {	-- Warswords of the Valarjar [Off Hand]
-									artifact(296),	-- Warswords of the Valarjar
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(296),	-- Warswords of the Valarjar
+									},
 								}),
 							},
 						}),
@@ -322,10 +331,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 58.3, 84.6, SKYHOLD },
 							["g"] = {
 								i(128288, {	-- Scaleshard
-									artifact(66),	-- Scaleshard
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(66),	-- Scaleshard
+									},
 								}),
 								i(128289, {	-- Scale of the Earth-Warder
-									artifact(66),	-- Scale of the Earth-Warder
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(66),	-- Scale of the Earth-Warder
+									},
 								}),
 							},
 						}),

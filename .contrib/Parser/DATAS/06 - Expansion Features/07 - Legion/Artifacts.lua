@@ -189,42 +189,45 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				cl(WARRIOR, {
 					i(128910, {	-- Strom'kar, the Warbreaker
-						BaseAppearance(1257950, {
-							artifact(295),	-- Standard
-							artifact(791),	-- Recover one of the Pillars
-							artifact(792),	-- Recover Light's Heart
-							artifact(793),	-- Complete first major Order Hall campaign
-						}),
-						ClassHallAppearance(1259945, {
-							artifact(794),	-- Finish Class Campaign
-							artifact(795),	-- Unlock 30 Artifact Traits
-							artifact(796),	-- Reach AK25
-							artifact(797),	-- Complete "This Side Up"
-						}),
-						BalanceOfPowerAppearance(1268724, {
-							artifact(805),	-- Complete Quest Line
-							artifact(803),	-- Complete "Unleashed Monstrosities"
-							artifact(804),	-- Complete a Mythic +15
-							artifact(802),	-- Complete "Glory of the Legion Hero"
-						}),
-						PrestigeAppearance(1260690, {
-							artifact(799),	-- Reach Honor Level 10
-							artifact(798),	-- Reach Honor Level 30
-							artifact(800),	-- Reach Honor Level 50
-							artifact(801),	-- Reach Honor Level 80
-						}),
-						ChallengeAppearance(1270394, {
-							artifact(806),	-- Complete Legionfall: Mage Tower
-							artifact(807),	-- Defeat Heroic Kil'jaeden with appearance
-							artifact(808),	-- Win 10 Rated BG's with appearance
-							artifact(809),	-- Defeat all Legion dungeon bosses with appearance
-						}),
-						HiddenAppearance(1345206, {
-							artifact(908),	-- Find Hidden Artifact Skin
-							artifact(906),	-- Complete 30 Legion Dungeons Hidden
-							artifact(907),	-- Complete 200 WQ Hidden
-							artifact(905),	-- Kill 1,000 Players Hidden
-						}),
+						["ItemAppearanceModifierID"] = 0,
+						["groups"] = {
+							BaseAppearance(1257950, {
+								artifact(295),	-- Standard
+								artifact(791),	-- Recover one of the Pillars
+								artifact(792),	-- Recover Light's Heart
+								artifact(793),	-- Complete first major Order Hall campaign
+							}),
+							ClassHallAppearance(1259945, {
+								artifact(794),	-- Finish Class Campaign
+								artifact(795),	-- Unlock 30 Artifact Traits
+								artifact(796),	-- Reach AK25
+								artifact(797),	-- Complete "This Side Up"
+							}),
+							BalanceOfPowerAppearance(1268724, {
+								artifact(805),	-- Complete Quest Line
+								artifact(803),	-- Complete "Unleashed Monstrosities"
+								artifact(804),	-- Complete a Mythic +15
+								artifact(802),	-- Complete "Glory of the Legion Hero"
+							}),
+							PrestigeAppearance(1260690, {
+								artifact(799),	-- Reach Honor Level 10
+								artifact(798),	-- Reach Honor Level 30
+								artifact(800),	-- Reach Honor Level 50
+								artifact(801),	-- Reach Honor Level 80
+							}),
+							ChallengeAppearance(1270394, {
+								artifact(806),	-- Complete Legionfall: Mage Tower
+								artifact(807),	-- Defeat Heroic Kil'jaeden with appearance
+								artifact(808),	-- Win 10 Rated BG's with appearance
+								artifact(809),	-- Defeat all Legion dungeon bosses with appearance
+							}),
+							HiddenAppearance(1345206, {
+								artifact(908),	-- Find Hidden Artifact Skin
+								artifact(906),	-- Complete 30 Legion Dungeons Hidden
+								artifact(907),	-- Complete 200 WQ Hidden
+								artifact(905),	-- Kill 1,000 Players Hidden
+							}),
+						},
 					}),
 					i(128908, {	-- Warswords of the Valarjar [Main Hand]
 						BaseAppearance(1278409, {
@@ -1341,44 +1344,47 @@ root(ROOTS.ExpansionFeatures,
 						}),
 					}),
 					i(128936, bubbleDown({ ["isOffHand"] = 1 }, {	-- The Highkeeper's Ward
-						BaseAppearance(1308430, {
-							artifact(113),	-- Standard
-							artifact(673),	-- Recover one of the Pillars
-							artifact(674),	-- Recover Light's Heart
-							artifact(675),	-- Complete first major Order Hall campaign
-						}),
-						ClassHallAppearance(1355355, {
-							artifact(676),	-- Finish Class Campaign
-							artifact(677),	-- Unlock 30 Artifact Traits
-							artifact(678),	-- Reach AK25
-							artifact(679),	-- Complete "This Side Up"
-						}),
-						BalanceOfPowerAppearance(1355356, {
-							artifact(682),	-- Complete Quest Line
-							artifact(681),	-- Complete "Unleashed Monstrosities"
-							artifact(680),	-- Complete a Mythic +15
-							artifact(683),	-- Complete "Glory of the Legion Hero"
-						}),
-						PrestigeAppearance(1355358, {
-							artifact(690),	-- Reach Honor Level 10
-							artifact(689),	-- Reach Honor Level 30
-							artifact(688),	-- Reach Honor Level 50
-							artifact(691),	-- Reach Honor Level 80
-						}),
-						ChallengeAppearance(1355357, {
-							artifact(684),	-- Complete Legionfall: Mage Tower
-							artifact(685),	-- Defeat Heroic Kil'jaeden with appearance
-							artifact(686),	-- Win 10 Rated BG's with appearance
-							artifact(687),	-- Defeat all Legion dungeon bosses with appearance
-						}),
-						HiddenAppearance(1369316, {
-							artifact(900, {	-- Find Hidden Artifact Skin
-								["provider"] = { "i", 139572 },	-- Lost Codex of the Amani
+						["ItemAppearanceModifierID"] = 0,
+						["groups"] = {
+							BaseAppearance(1308430, {
+								artifact(113),	-- Standard
+								artifact(673),	-- Recover one of the Pillars
+								artifact(674),	-- Recover Light's Heart
+								artifact(675),	-- Complete first major Order Hall campaign
 							}),
-							artifact(898),	-- Complete 30 Legion Dungeons Hidden
-							artifact(899),	-- Complete 200 WQ Hidden
-							artifact(897),	-- Kill 1,000 Players Hidden
-						}),
+							ClassHallAppearance(1355355, {
+								artifact(676),	-- Finish Class Campaign
+								artifact(677),	-- Unlock 30 Artifact Traits
+								artifact(678),	-- Reach AK25
+								artifact(679),	-- Complete "This Side Up"
+							}),
+							BalanceOfPowerAppearance(1355356, {
+								artifact(682),	-- Complete Quest Line
+								artifact(681),	-- Complete "Unleashed Monstrosities"
+								artifact(680),	-- Complete a Mythic +15
+								artifact(683),	-- Complete "Glory of the Legion Hero"
+							}),
+							PrestigeAppearance(1355358, {
+								artifact(690),	-- Reach Honor Level 10
+								artifact(689),	-- Reach Honor Level 30
+								artifact(688),	-- Reach Honor Level 50
+								artifact(691),	-- Reach Honor Level 80
+							}),
+							ChallengeAppearance(1355357, {
+								artifact(684),	-- Complete Legionfall: Mage Tower
+								artifact(685),	-- Defeat Heroic Kil'jaeden with appearance
+								artifact(686),	-- Win 10 Rated BG's with appearance
+								artifact(687),	-- Defeat all Legion dungeon bosses with appearance
+							}),
+							HiddenAppearance(1369316, {
+								artifact(900, {	-- Find Hidden Artifact Skin
+									["provider"] = { "i", 139572 },	-- Lost Codex of the Amani
+								}),
+								artifact(898),	-- Complete 30 Legion Dungeons Hidden
+								artifact(899),	-- Complete 200 WQ Hidden
+								artifact(897),	-- Kill 1,000 Players Hidden
+							}),
+						},
 					})),
 					i(128911, {	-- Sharas'dal, Scepter of Tides
 						BaseAppearance(1241177, {
@@ -1693,42 +1699,45 @@ root(ROOTS.ExpansionFeatures,
 						}),
 					}),
 					i(128943, {	-- Skull of the Man'ari
-						BaseAppearance(1307173, {
-							artifact(811),	-- Standard
-							artifact(810),	-- Recover one of the Pillars
-							artifact(812),	-- Recover Light's Heart
-							artifact(813),	-- Complete first major Order Hall campaign
-						}),
-						ClassHallAppearance(1325307, {
-							artifact(815),	-- Finish Class Campaign
-							artifact(814),	-- Unlock 30 Artifact Traits
-							artifact(816),	-- Reach AK25
-							artifact(817),	-- Complete "This Side Up"
-						}),
-						BalanceOfPowerAppearance(1325308, {
-							artifact(818),	-- Complete Quest Line
-							artifact(819),	-- Complete "Unleashed Monstrosities"
-							artifact(820),	-- Complete a Mythic +15
-							artifact(821),	-- Complete "Glory of the Legion Hero"
-						}),
-						PrestigeAppearance(1325309, {
-							artifact(824),	-- Reach Honor Level 10
-							artifact(823),	-- Reach Honor Level 30
-							artifact(822),	-- Reach Honor Level 50
-							artifact(825),	-- Reach Honor Level 80
-						}),
-						ChallengeAppearance(1325312, {
-							artifact(828),	-- Complete Legionfall: Mage Tower
-							artifact(827),	-- Defeat Heroic Kil'jaeden with appearance
-							artifact(826),	-- Win 10 Rated BG's with appearance
-							artifact(829),	-- Defeat all Legion dungeon bosses with appearance
-						}),
-						HiddenAppearance(1348647, {
-							artifact(937),	-- Find Hidden Artifact Skin
-							artifact(938),	-- Complete 30 Legion Dungeons Hidden
-							artifact(939),	-- Complete 200 WQ Hidden
-							artifact(940),	-- Kill 1,000 Players Hidden
-						}),
+						["ItemAppearanceModifierID"] = 0,
+						["groups"] = {
+							BaseAppearance(1307173, {
+								artifact(811),	-- Standard
+								artifact(810),	-- Recover one of the Pillars
+								artifact(812),	-- Recover Light's Heart
+								artifact(813),	-- Complete first major Order Hall campaign
+							}),
+							ClassHallAppearance(1325307, {
+								artifact(815),	-- Finish Class Campaign
+								artifact(814),	-- Unlock 30 Artifact Traits
+								artifact(816),	-- Reach AK25
+								artifact(817),	-- Complete "This Side Up"
+							}),
+							BalanceOfPowerAppearance(1325308, {
+								artifact(818),	-- Complete Quest Line
+								artifact(819),	-- Complete "Unleashed Monstrosities"
+								artifact(820),	-- Complete a Mythic +15
+								artifact(821),	-- Complete "Glory of the Legion Hero"
+							}),
+							PrestigeAppearance(1325309, {
+								artifact(824),	-- Reach Honor Level 10
+								artifact(823),	-- Reach Honor Level 30
+								artifact(822),	-- Reach Honor Level 50
+								artifact(825),	-- Reach Honor Level 80
+							}),
+							ChallengeAppearance(1325312, {
+								artifact(828),	-- Complete Legionfall: Mage Tower
+								artifact(827),	-- Defeat Heroic Kil'jaeden with appearance
+								artifact(826),	-- Win 10 Rated BG's with appearance
+								artifact(829),	-- Defeat all Legion dungeon bosses with appearance
+							}),
+							HiddenAppearance(1348647, {
+								artifact(937),	-- Find Hidden Artifact Skin
+								artifact(938),	-- Complete 30 Legion Dungeons Hidden
+								artifact(939),	-- Complete 200 WQ Hidden
+								artifact(940),	-- Kill 1,000 Players Hidden
+							}),
+						},
 					}),
 					i(137246, bubbleDown({ ["isOffHand"] = 1 }, {	-- Spine of Thal'kiel
 						BaseAppearance(1385667, {

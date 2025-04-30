@@ -1255,47 +1255,50 @@ root(ROOTS.NeverImplemented, {
 		}),
 		expansion(EXPANSION.LEGION, {
 			n(ARTIFACTS, {
-				i(137661),	-- Truthguard
-				i(136593),	-- Doomhammer Offhand Appearance Record (referenced by actual item)
-				i(134562),	-- Odyns Fury
-				i(139439),	-- The Highkeeper's Ward
-				i(132474),	-- Scythe of Elune
-				i(132475),	-- Scythe of Elune
-				i(132476),	-- Scythe of Elune
-				i(132477),	-- Scythe of Elune
-				i(132478),	-- Scythe of Elune
-				i(132479),	-- G'Hanir, the Mother Tree
-				i(132480),	-- G'Hanir, the Mother Tree
-				i(132481),	-- G'Hanir, the Mother Tree
-				i(132482),	-- G'Hanir, the Mother Tree
-				i(132483),	-- G'Hanir, the Mother Tree
-				i(118180),	-- Aluneth
-				i(129752),	-- Aluneth
-				i(129753),	-- Aluneth
-				i(129754),	-- Aluneth
-				i(129755),	-- Aluneth
-				i(129967),	-- Sheilun
-				i(129968),	-- Sheilun
-				i(129969),	-- Sheilun
-				i(129970),	-- Sheilun
-				i(136858),	-- Darkened T'uure
-				i(139275),	-- Aluneth
-				i(139891),	-- Aluneth
-				i(137660),	-- The Silver Hand
-				i(137581),	-- Test Artifact 1
-				i(139621),	-- The Watcher's Hammer. Used for Lost Edicts of the Watcher Paladin Appearance, actual appearance is gained via a different item
-				i(137582),	-- Ashbringer
-				i(131738),	-- Ashbringer
-				i(131739),	-- Ashbringer
-				i(131741),	-- Ashbringer
-				i(131742),	-- Ashbringer
-				i(122747),	-- Ashbringer
-				i(129738),	-- Verus
-				i(129735),	-- Verus
-				i(129736),	-- Verus
-				i(129737),	-- Verus
-				i(129899),	-- The Eagle Spear
-				i(128824),	-- Tome of the Silver Hand
+				["ItemAppearanceModifierID"] = 9,
+				["groups"] = {
+					i(137661),	-- Truthguard
+					i(136593),	-- Doomhammer Offhand Appearance Record (referenced by actual item)
+					i(134562),	-- Odyns Fury
+					i(139439),	-- The Highkeeper's Ward
+					i(132474),	-- Scythe of Elune
+					i(132475),	-- Scythe of Elune
+					i(132476),	-- Scythe of Elune
+					i(132477),	-- Scythe of Elune
+					i(132478),	-- Scythe of Elune
+					i(132479),	-- G'Hanir, the Mother Tree
+					i(132480),	-- G'Hanir, the Mother Tree
+					i(132481),	-- G'Hanir, the Mother Tree
+					i(132482),	-- G'Hanir, the Mother Tree
+					i(132483),	-- G'Hanir, the Mother Tree
+					i(118180),	-- Aluneth
+					i(129752),	-- Aluneth
+					i(129753),	-- Aluneth
+					i(129754),	-- Aluneth
+					i(129755),	-- Aluneth
+					i(129967),	-- Sheilun
+					i(129968),	-- Sheilun
+					i(129969),	-- Sheilun
+					i(129970),	-- Sheilun
+					i(136858),	-- Darkened T'uure
+					i(139275),	-- Aluneth
+					i(139891),	-- Aluneth
+					i(137660),	-- The Silver Hand
+					i(137581),	-- Test Artifact 1
+					i(139621),	-- The Watcher's Hammer. Used for Lost Edicts of the Watcher Paladin Appearance, actual appearance is gained via a different item
+					i(137582),	-- Ashbringer
+					i(131738),	-- Ashbringer
+					i(131739),	-- Ashbringer
+					i(131741),	-- Ashbringer
+					i(131742),	-- Ashbringer
+					i(122747),	-- Ashbringer
+					i(129738),	-- Verus
+					i(129735),	-- Verus
+					i(129736),	-- Verus
+					i(129737),	-- Verus
+					i(129899),	-- The Eagle Spear
+					i(128824),	-- Tome of the Silver Hand
+				},
 			}),
 			i(150611),	-- Guardian's Oaken Spear
 			i(150584),	-- Pike of Feral Rage

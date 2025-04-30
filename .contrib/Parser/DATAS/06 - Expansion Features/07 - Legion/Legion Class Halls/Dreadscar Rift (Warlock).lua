@@ -226,7 +226,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 54.0, 47.0, LEGION_DALARAN },
 							["g"] = {
 								i(128943, {	-- Skull of the Man'ari
-									["ItemAppearanceModifierID"] = 9,
+									["ItemAppearanceModifierID"] = 0,
 									["groups"] = {
 										artifact(811),	-- Skull of the Man'ari
 									},
