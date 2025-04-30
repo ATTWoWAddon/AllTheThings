@@ -671,7 +671,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 		})),
-		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }, ["bonusID"] = 7532 }, {
+		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }, ["bonusID"] = 7532, ["ItemAppearanceModifierID"] = 160 }, {
 			n(CLASSES, {
 				cl(DEATHKNIGHT, {
 					i(209275),	-- Verdant Gladiator's Cloak

@@ -1052,13 +1052,40 @@ namespace ATT
 
                 // Attempt to get the SourceID from the ItemModifiedAppearanceDB
                 long? ItemModifiedAppearanceID = null;
+                ItemModifiedAppearance itemModifiedAppearance = null;
+                bool exactMatch = false;
                 long ItemAppearanceModifierID = NestedItemAppearanceModifierID;
                 if (TryGetTypeDBObjectCollection<ItemModifiedAppearance>((long)sourceIDKey, out var itemModifiedAppearances))
                 {
                     // this would need to be revised to ever work with modID/bonusID
                     if(data.TryGetValue("ItemAppearanceModifierID", out var ItemAppearanceModifierIDObj)) ItemAppearanceModifierID = (long)ItemAppearanceModifierIDObj;
-                    var itemModifiedAppearance = itemModifiedAppearances.FirstOrDefault(x => x.ItemAppearanceModifierID == ItemAppearanceModifierID)
-                        ?? itemModifiedAppearances.FirstOrDefault(x => x.ItemAppearanceModifierID == 0);
+
+                    // Try to find the best match for the item appearance modifier ID.
+                    long bestItemAppearanceModifierID = 9999;
+                    foreach (var itemModifiedAppearanceObj in itemModifiedAppearances)
+                    {
+                        if (itemModifiedAppearanceObj is ItemModifiedAppearance appearance)
+                        {
+                            if (appearance.ItemAppearanceModifierID == ItemAppearanceModifierID)
+                            {
+                                itemModifiedAppearance = appearance;
+                                break;
+                            }
+
+                            // Well, we found the sourceID in the database. Let's report it.
+                            if (appearance.ID == sourceIDFromSourcesDB)
+                            {
+                                exactMatch = true;
+                                itemModifiedAppearance = appearance;
+                                break;
+                            }
+                            if (bestItemAppearanceModifierID > appearance.ItemAppearanceModifierID)
+                            {
+                                itemModifiedAppearance = appearance;
+                                bestItemAppearanceModifierID = appearance.ItemAppearanceModifierID;
+                            }
+                        }
+                    }
                     if (itemModifiedAppearance != null)
                     {
                         ItemModifiedAppearanceID = itemModifiedAppearance.ID;
@@ -1069,29 +1096,49 @@ namespace ATT
                 long? sourceID = sourceIDFromSourcesDB ?? ItemModifiedAppearanceID;
                 if (sourceID.HasValue && sourceID > 0)
                 {
+#pragma warning disable CS0162 // Unreachable code detected
+                    string message = $"{ItemModifiedAppearanceID} (ItemModifiedAppearanceID)";
                     if (sourceIDFromSourcesDB.HasValue)
                     {
+                        long bonusID = 0;
+                        if (data.TryGetValue("bonusID", out var obj)) bonusID = (long)obj;
+                        if (bonusID > 0) message = $"{message} [BonusID: {bonusID}]";
+
                         long modID = NestedModID;
-                        if (data.TryGetValue("modID", out var modIDObj)) modID = (long)modIDObj;
+                        if (data.TryGetValue("modID", out obj)) modID = (long)obj;
+                        if (modID > 0) message = $"{message} [ModID: {modID}]";
+
+                        message = $"{message} [ModifierID: {ItemAppearanceModifierID}";
+                        if (exactMatch && itemModifiedAppearance != null && itemModifiedAppearance.ItemAppearanceModifierID != ItemAppearanceModifierID)
+                        {
+                            message = $"{message}, Used Instead: {itemModifiedAppearance.ItemAppearanceModifierID}";
+                        }
+                        message += "]";
+
                         if (ItemModifiedAppearanceID != sourceIDFromSourcesDB)
                         {
-                            LogWarn($"Item:{sourceIDKey} SourceID != ItemModifiedAppearanceID ({sourceIDFromSourcesDB}:{ItemModifiedAppearanceID}) [{modID}:{ItemAppearanceModifierID}]");
+                            LogWarn($"Item:{sourceIDKey} SourceID {sourceIDFromSourcesDB} != {message}");
                         }
-#pragma warning disable CS0162 // Unreachable code detected
-                        else if(DoSpammyDebugLogging)
+                        else if(exactMatch)
                         {
-                            LogDebug($"INFO: Item:{sourceIDKey} SourceID == ItemModifiedAppearanceID ({sourceIDFromSourcesDB}) [{modID}:{ItemAppearanceModifierID}] :)");
+                            LogWarn($"Item:{sourceIDKey} SourceID == {message}");
                         }
-                        else if(ItemAppearanceModifierID > 0)
+                        else if (DoSpammyDebugLogging)
                         {
-                            LogWarn($"INFO: Item:{sourceIDKey} SourceID == ItemModifiedAppearanceID ({sourceIDFromSourcesDB}) [{modID}:{ItemAppearanceModifierID}] :)");
+                            LogDebug($"INFO: Item:{sourceIDKey} SourceID == {message}");
                         }
-#pragma warning restore CS0162 // Unreachable code detected
                     }
                     else
                     {
-                        LogDebug($"INFO: Item:{sourceIDKey} SourceID from ItemModifiedAppearanceID ({sourceIDFromSourcesDB}:{ItemModifiedAppearanceID}) [{ItemAppearanceModifierID}]");
+                        message = $"{message} [ModifierID: {ItemAppearanceModifierID}";
+                        if (exactMatch && itemModifiedAppearance != null && itemModifiedAppearance.ItemAppearanceModifierID != ItemAppearanceModifierID)
+                        {
+                            message = $"{message}, Used Instead: {itemModifiedAppearance.ItemAppearanceModifierID}";
+                        }
+                        message += "]";
+                        LogDebug($"INFO: Item:{sourceIDKey} Using SourceID from {message}");
                     }
+#pragma warning restore CS0162 // Unreachable code detected
 
                     // quite spammmmmy, only enable if needed
 #pragma warning disable CS0162 // Unreachable code detected
