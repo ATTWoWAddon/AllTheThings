@@ -1072,12 +1072,6 @@ namespace ATT
                     {
                         if (itemModifiedAppearanceObj is ItemModifiedAppearance appearance)
                         {
-                            if (appearance.ItemAppearanceModifierID == ItemAppearanceModifierID)
-                            {
-                                itemModifiedAppearance = appearance;
-                                break;
-                            }
-
                             // Well, we found the sourceID in the database. Let's report it.
                             if (appearance.ID == sourceIDFromSourcesDB)
                             {
@@ -1085,7 +1079,13 @@ namespace ATT
                                 itemModifiedAppearance = appearance;
                                 break;
                             }
-                            if (bestItemAppearanceModifierID > appearance.ItemAppearanceModifierID)
+                            if (appearance.ItemAppearanceModifierID == ItemAppearanceModifierID)
+                            {
+                                // Set the selected default one to the matched appearance, but don't forget about the exact match.
+                                itemModifiedAppearance = appearance;
+                                bestItemAppearanceModifierID = -1;
+                            }
+                            else if (bestItemAppearanceModifierID > appearance.ItemAppearanceModifierID)
                             {
                                 itemModifiedAppearance = appearance;
                                 bestItemAppearanceModifierID = appearance.ItemAppearanceModifierID;
@@ -1125,7 +1125,7 @@ namespace ATT
                         {
                             LogWarn($"Item:{sourceIDKey} SourceID {sourceIDFromSourcesDB} != {message}");
                         }
-                        else if(exactMatch)
+                        else if(exactMatch && ItemAppearanceModifierID > 0 && itemModifiedAppearance != null && itemModifiedAppearance.ItemAppearanceModifierID != ItemAppearanceModifierID)
                         {
                             LogWarn($"Item:{sourceIDKey} SourceID == {message}");
                         }
