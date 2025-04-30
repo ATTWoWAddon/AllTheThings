@@ -1124,7 +1124,10 @@ namespace ATT
 
                         if (ItemModifiedAppearanceID != sourceIDFromSourcesDB)
                         {
-                            LogWarn($"Item:{sourceIDKey} SourceID {sourceIDFromSourcesDB} != {message}");
+                            if (itemModifiedAppearance != null)
+                            {
+                                LogWarn($"Item:{sourceIDKey} SourceID {sourceIDFromSourcesDB} != {message}");
+                            }
                         }
                         else if(exactMatch && ItemAppearanceModifierID > 0 && itemModifiedAppearance != null && itemModifiedAppearance.ItemAppearanceModifierID != ItemAppearanceModifierID)
                         {
