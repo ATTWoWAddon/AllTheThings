@@ -196,6 +196,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 		n(PVP_GLADIATOR, {
 			n(168011, {	-- Zo'sorg <Master of Conflict>
 				["coord"] = { 35.0, 57.6, ORIBOS },
+				["ItemAppearanceModifierID"] = 159,
 				["g"] = {
 					i(223640, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {	-- Unburied Gladiator's Cloak Rack
 						["cost"] = {{"i", MOH, 1}},
@@ -221,6 +222,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			}),
 			n(168011, {	-- Zo'sorg <Master of Conflict>
 				["coord"] = { 35.0, 57.6, ORIBOS },
+				["ItemAppearanceModifierID"] = 159,
 				["g"] = bubbleDown({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 					filter(BACK_F, {
 						conquest(525, i(192209)),	-- Eternal Gladiator's Cloak

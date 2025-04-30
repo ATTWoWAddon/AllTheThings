@@ -265,6 +265,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {
 			n(199599, {	-- Calderax
 				["coord"] = { 44.3, 36.6, VALDRAKKEN },
+				["ItemAppearanceModifierID"] = 159,
 				["g"] = {
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {

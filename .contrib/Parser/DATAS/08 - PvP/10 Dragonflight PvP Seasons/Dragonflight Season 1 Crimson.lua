@@ -326,6 +326,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0, ADDED_11_0_5 } }, {
 			n(199599, {	-- Calderax
 				["coord"] = { 44.3, 36.6, VALDRAKKEN },
+				["ItemAppearanceModifierID"] = 159,
 				["g"] = sharedData({
 					["cost"] = {{"i", MOH, 12}},
 					["timeline"] = { ADDED_11_0_5 },
@@ -376,6 +377,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(199599, {	-- Calderax
 				["coord"] = { 44.3, 36.6, VALDRAKKEN },
+				["ItemAppearanceModifierID"] = 159,
 				["g"] = bubbleDownFiltered({
 					["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 				},FILTERFUNC_itemID,{
