@@ -126,35 +126,12 @@ namespace ATT
                             }
                         }
                         break;
-                    case "Items.SOURCES":
-                    case "Items.HARVESTSOURCES":
-                        {
-                            if (pair.Value is Dictionary<decimal, object> db)
-                            {
-                                db.AsParallel().ForAll(Items.AddItemSourceID);
-                            }
-                            else if (pair.Value is Dictionary<long, object> longdb)
-                            {
-                                longdb.AsParallel().ForAll(Items.AddItemSourceID);
-                            }
-                            else
-                            {
-                                ThrowBadFormatDB(pair.Key, pair);
-                            }
-                        }
-                        break;
                     case "RecipeDB":
                         MergeRecipeDB(pair.Value);
                         break;
                     case "SpellDB":
                         MergeSpellDB(pair.Value);
                         break;
-                    case "ItemMountDB":
-                        {
-                            LogError("ItemMountDB not supported. Please use 'ItemDBConditional' to assign Mount objects.");
-                            Log(CurrentFileName);
-                            break;
-                        }
                     case "ItemSpeciesDB":
                         {
                             // The format of the Item Species DB is a dictionary of item ID -> Values.

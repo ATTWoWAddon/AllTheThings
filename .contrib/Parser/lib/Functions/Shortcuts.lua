@@ -2323,7 +2323,3 @@ for key,value in pairs(ItemDBConditional[20769]) do
 end
 ]]--
 end
-
-function Harvest(things)
-	root("Items.HARVESTSOURCES", things);
-end

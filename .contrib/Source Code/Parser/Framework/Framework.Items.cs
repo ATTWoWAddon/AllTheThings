@@ -43,27 +43,6 @@ namespace ATT
             private static IDictionary<decimal, long> SOURCES = new ConcurrentDictionary<decimal, long>();
 
             /// <summary>
-            /// All of the specific ItemIDs and each corresponding SourceID value
-            /// </summary>
-            private static IDictionary<long, ConcurrentDictionary<decimal, long>> SOURCES_PER_ITEMID = new ConcurrentDictionary<long, ConcurrentDictionary<decimal, long>>();
-
-            /// <summary>
-            /// Get all of the sources available for a given itemID.
-            /// </summary>
-            /// <param name="itemID">The itemID.</param>
-            /// <returns>The sources dictionary.</returns>
-            private static ConcurrentDictionary<decimal, long> GetSourcesForItemID(long itemID)
-            {
-                if (SOURCES_PER_ITEMID.TryGetValue(itemID, out var sources)) return sources;
-                return SOURCES_PER_ITEMID[itemID] = new ConcurrentDictionary<decimal, long>();
-            }
-
-            /// <summary>
-            /// A list of fields that have already warned the programmer.
-            /// </summary>
-            private static IDictionary<string, bool> WARNED_FIELDS = new ConcurrentDictionary<string, bool>();
-
-            /// <summary>
             /// Returns whether a specific ItemID has been referenced
             /// </summary>
             public static bool IsItemReferenced(decimal itemID)
@@ -752,25 +731,6 @@ namespace ATT
                     Log($"-- Field Value Overwrite: s:{sourceID} => {newSourceID}");
                 }
                 SOURCES[specificItemID] = newSourceID;
-                GetSourcesForItemID(itemID)[specificItemID] = newSourceID;
-            }
-
-            public static void AddItemSourceID(KeyValuePair<decimal, object> itemSource)
-            {
-                if (itemSource.Value.TryConvert(out long sourceID))
-                {
-                    SOURCES[itemSource.Key] = sourceID;
-                    GetSourcesForItemID((long)Math.Floor(itemSource.Key))[itemSource.Key] = sourceID;
-                }
-            }
-
-            public static void AddItemSourceID(KeyValuePair<long, object> itemSource)
-            {
-                if (itemSource.Value.TryConvert(out long sourceID))
-                {
-                    SOURCES[itemSource.Key] = sourceID;
-                    GetSourcesForItemID(itemSource.Key)[itemSource.Key] = sourceID;
-                }
             }
 
             /// <summary>
@@ -1157,73 +1117,6 @@ namespace ATT
                     data["sourceID"] = sourceID;
                     CaptureForSOURCED(data, "sourceID", sourceID);
                     return;
-                }
-
-                // quite spammmmmy, only enable if needed
-                if (DoSpammyDebugLogging && !data.ContainsKey("sourceID"))
-                    LogDebug($"INFO: Failed to match SourceID for Item {sourceIDKey}");
-
-                // don't "guess" any SourceID's in Retail. This makes it more clear when the harvested data is actually accurate or not
-                if (!Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
-                {
-                    // the base itemID has a Source, but we didn't find one for this sourceIDKey...
-                    if (SOURCES_PER_ITEMID.ContainsKey((long)sourceIDKey) && !data.ContainsKey("_unsorted") && CurrentParseStage != ParseStage.UnsortedGeneration)
-                    {
-                        LogWarn($"Failed to match SourceID for Item {sourceIDKey}", data);
-                    }
-                    return;
-                }
-
-                // Find the best match sourceID for this item. (this is gonna be slow!)
-                if ((long)Math.Floor(sourceIDKey) is long itemID
-                    && itemID == (long)sourceIDKey  // This is only applicable in cases where no modID or bonusID are present.
-                    && SOURCES_PER_ITEMID.TryGetValue(itemID, out ConcurrentDictionary<decimal, long> sources))
-                {
-                    sourceID = sources[sources.Keys.First()];
-                    if (sources.Count == 1)
-                    {
-                        // If there's only one sourceID, then assign it. Probably some dumb missing modID or something.
-                        // quite spammmmmy, only enable if needed
-#pragma warning disable CS0162 // Unreachable code detected
-                        if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} (WATERFALL-SINGLE) ==> s:{sourceID}");
-#pragma warning restore CS0162 // Unreachable code detected
-                        data["sourceID"] = sourceID;
-                        CaptureForSOURCED(data, "sourceID", sourceID);
-                        return;
-                    }
-
-                    // If there is more than one, but they're all the same, just grab the first one.
-                    bool theyAllMatch = true;
-                    foreach (var pair in sources)
-                    {
-                        if (pair.Value == sourceID) continue;
-                        theyAllMatch = false;
-                        break;
-                    }
-                    if (theyAllMatch)
-                    {
-                        // If there's only one unique sourceID, then assign it. Probably some dumb missing modID or something.
-                        // quite spammmmmy, only enable if needed
-#pragma warning disable CS0162 // Unreachable code detected
-                        if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} (WATERFALL-MATCHING) ==> s:{sourceID}");
-#pragma warning restore CS0162 // Unreachable code detected
-                        data["sourceID"] = sourceID;
-                        CaptureForSOURCED(data, "sourceID", sourceID);
-                        return;
-                    }
-
-                    // Lastly, if there are no other matches, then the lowest modID version is the default value, use that.
-                    var keys = sources.Keys.ToList();
-                    keys.Sort();
-                    sourceID = sources[keys.First()];
-
-                    // If there's only one sourceID, then assign it. Probably some dumb missing modID or something.
-                    // Definitely report these assignments since they're likely wrong and require harvesting to fix
-#pragma warning disable CS0162 // Unreachable code detected
-                    if (DoSpammyDebugLogging) LogWarn($"Item:{sourceIDKey} (WATERFALL-GUESS) ==> s:{sourceID}", data);
-#pragma warning restore CS0162 // Unreachable code detected
-                    data["sourceID"] = sourceID;
-                    CaptureForSOURCED(data, "sourceID", sourceID);
                 }
             }
 
