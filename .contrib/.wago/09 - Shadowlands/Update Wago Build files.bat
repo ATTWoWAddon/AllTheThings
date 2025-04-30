@@ -3,11 +3,13 @@ SET BUILD=9.2.7.45745
 
 @REM Download new file versions
 call :download Achievement
+call :download ArtifactAppearance
 call :download Criteria
 call :download CriteriaTree
 call :download GlyphProperties
 call :download Item
 call :download ItemEffect
+call :download ItemModifiedAppearance
 call :download ItemXItemEffect
 call :download ItemSearchName
 call :download ModifierTree
