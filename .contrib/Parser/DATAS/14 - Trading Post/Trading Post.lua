@@ -2985,8 +2985,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["cost"] = {{"c", TRADERS_TENDER, 575}},
 				}),
 			}),
-			filter(BATTLE_PETS, {
-			}),
 			filter(TOYS, {
 				i(212500, {	-- Delicate Silk Parasol (TOY!)
 					["cost"] = {{"c", TRADERS_TENDER, 200}},
@@ -3062,6 +3060,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(234573, {	-- Topsy Turvy Clown's Blade
 					["cost"] = {{"c", TRADERS_TENDER, 140}},
 				}),
+				i(234724, {	-- Topsy Turvy Clown's Cleaver
+					["cost"] = {{"c", TRADERS_TENDER, 140}},
+				}),
 				i(234725, {	-- Topsy Turvy Jester's Cleaver
 					["cost"] = {{"c", TRADERS_TENDER, 140}},
 				}),
@@ -3081,6 +3082,125 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["cost"] = {{"c", TRADERS_TENDER, 50}},
 				}),
 				i(235031, {	-- Vigilante's Plum Mask
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+			}),
+		})),
+		n(MAY, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5, "removed 11.1.5.99999" } }, {	-- TODO: Timeline in/out correctly
+			n(FILLED_TRAVELERS_LOG, {
+				i(238942)	-- Weechi (PET!)
+			}),
+			filter(MOUNTS, {
+				i(210141, {	-- Brown-Furred Spiky Bakar (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 325}},
+				}),
+				i(238897, {	-- Spring Harvesthog (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 550}},
+				}),
+			}),
+			filter(BATTLE_PETS, {
+				i(236409, {	-- Frumpy Softpaw (PET!)
+					["cost"] = {{"c", TRADERS_TENDER, 350}},
+				}),
+			}),
+			filter(COSMETIC, {
+				i(233153, {	-- Banded Azure War Wraps
+					["cost"] = {{"c", TRADERS_TENDER, 20}},
+				}),
+				i(233182, {	-- Banded Violet War Slippers
+					["cost"] = {{"c", TRADERS_TENDER, 20}},
+				}),
+				i(233165, {	-- Banded Violet War Wraps
+					["cost"] = {{"c", TRADERS_TENDER, 20}},
+				}),
+				i(236630, {	-- Deathwarder's Blood Blade
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(237183, {	-- Deathwarder's Blood Fetish
+					["cost"] = {{"c", TRADERS_TENDER, 90}},
+				}),
+				i(237179, {	-- Deathwarder's Blood Fist
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(236405, {	-- Deathwarder's Blood Stave
+					["cost"] = {{"c", TRADERS_TENDER, 175}},
+				}),
+				i(238959, {	-- Deathwarder's Great Blood Blade
+					["cost"] = {{"c", TRADERS_TENDER, 180}},
+				}),
+				iensemble(237224, {	-- Ensemble: Attire of the Swift Fox
+					["cost"] = {{"c", TRADERS_TENDER, 440}},
+				}),
+				iensemble(237222, {	-- Ensemble: Attire of the Woodland Racoon
+					["cost"] = {{"c", TRADERS_TENDER, 440}},
+				}),
+				i(217374,{	-- Frenzied Hat of the Shallows
+					["cost"] = {{"c", TRADERS_TENDER, 175}},
+				}),
+				i(235985, {	-- Heroic Half Shell
+					["cost"] = {{"c", TRADERS_TENDER, 225}},
+				}),
+				i(238252, {	-- Large Renaissance Katana
+					["cost"] = {{"c", TRADERS_TENDER, 130}},
+				}),
+				i(233097, {	-- Long Azure War Skirt
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(233136, {	-- Long Azure War Skirt and Leg Wraps
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(233148, {	-- Long Violet War Skirt and Leg Wraps
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(236627, {	-- Night Hag's Blade
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(237176, {	-- Night Hag's Claw
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(237180, {	-- Night Hag's Fetish
+					["cost"] = {{"c", TRADERS_TENDER, 90}},
+				}),
+				i(238956, {	-- Night Hag's Great Blade
+					["cost"] = {{"c", TRADERS_TENDER, 180}},
+				}),
+				i(236402, {	-- Night Hag's Stave
+					["cost"] = {{"c", TRADERS_TENDER, 175}},
+				}),
+				i(237343, {	-- Nunchuck of the Renaissance
+					["cost"] = {{"c", TRADERS_TENDER, 120}},
+				}),
+				i(238217, {	-- Offhand Renaissance Nunchuck
+					["cost"] = {{"c", TRADERS_TENDER, 120}},
+				}),
+				i(237344, {	-- Renaissance Katana
+					["cost"] = {{"c", TRADERS_TENDER, 110}},
+				}),
+				i(237342, {	-- Renaissance Sai
+					["cost"] = {{"c", TRADERS_TENDER, 120}},
+				}),
+				i(233080, {	-- Short Azure War Skirt
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(233117, {	-- Short Azure War Skirt and Leg Wraps
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(233092, {	-- Short Violet War Skirt
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(233131, {	-- Short Violet War Skirt and Leg Wraps
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(235020, {	-- Vigilante's Azure Mask
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(235029, {	-- Vigilante's Carrot Mask
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(235032, {	-- Vigilante's Crimson Mask
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(235033, {	-- Vigilante's Violet Mask
 					["cost"] = {{"c", TRADERS_TENDER, 50}},
 				}),
 			}),

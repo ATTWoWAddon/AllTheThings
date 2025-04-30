@@ -1399,3 +1399,20 @@ i(0, 445355);		-- Scepter of Radiant Magics
 i(0, 445466);		-- Shatter Essence
 --- NYI ---
 i(0, 455488);		-- Glimmering Haste
+
+------------------
+-- PATCH 11.1.5 --
+------------------
+--- NYI ---
+i(0, 1227288);		-- Greater Rune of Gushing Wound
+i(0, 1227206);		-- Greater Rune of Infinite Stars
+i(0, 1225873);		-- Greater Rune of the Echoing Void
+i(0, 1227294);		-- Greater Rune of the Twisted Appendage
+i(0, 1227311);		-- Greater Rune of the Void Ritual
+i(0, 1225074);		-- Lesser Rune of Twilight Devastation
+i(238683, 0);		-- Formula: Enchant Weapon - Echoing Void
+i(239087, 0);		-- Formula: Enchant Weapon - Gushing Wound
+i(239081, 0);		-- Formula: Enchant Weapon - Infinite Stars
+i(238406, 0);		-- Formula: Enchant Weapon - Twilight Devastation
+i(239091, 0);		-- Formula: Enchant Weapon - Twisted Appendage
+i(239096, 0);		-- Formula: Enchant Weapon - Void Ritual

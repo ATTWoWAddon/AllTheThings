@@ -1176,12 +1176,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				-- q(76674),	-- after buying/loot 'Warmonger's Ripper' (itemID 207015) (spellID 418850)
 				-- q(76644),	-- after buying/loot 'Warmonger's Robe' (itemID 206808) (spellID 418849)
 				-- q(76640),	-- after buying/loot 'Warmonger's Skullcap' (itemID 206816) (spellID 418848)
-
-				q(76705),	-- after buying/loot Ensemble: Decorous Garments (itemID 207049) (spellID 418947)
-				q(76707),	-- after buying/loot Ensemble: Haukbert of Discipline (itemID 207047) (spellID 418946)
-				q(76706),	-- after buying/loot Ensemble: Lifegiver's Garms (itemID 207048) (spellID 418945)
-				q(76708),	-- after buying/loot Ensemble: Valhalas Ceremonial Armor (itemID 207046) (spellID 418944)
-
 				q(77179),	-- Unlock the title Unparalleled on your account (spellID 417360) (after questID 77250)
 			}),
 		}),

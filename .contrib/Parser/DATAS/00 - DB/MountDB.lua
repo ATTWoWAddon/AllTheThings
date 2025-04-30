@@ -38,13 +38,26 @@ i(0, 440915);		-- Auspicious Arborwyrm
 i(0, 423869);		-- Avatar of Flame
 i(0, 446902);		-- Polly Roger
 i(0, 471440);		-- Skybound Spectral Tiger 		(CN Only)
-i(0, 1216542);		-- Blazing Royal Fire Hawk		(CN Only Classic Version)
+i(0, 1217476);		-- Blazing Royal Fire Hawk		(CN Only Classic Version)
 i(0, 459784);		-- Golden Ashes of Al'ar 		(CN Only Classic Version)
 
 -- Cata Classic --
 i(0, 463045);		-- Lava Drake
 i(0, 473487);		-- Sha-Touched Cloud Serpent
 i(0, 473478);		-- Sha-Touched Riding Tiger
+i(0, 466948);	-- Chaos-Born Dreadwing
+i(0, 466983);	-- Chaos-Born Gryphon
+i(0, 466980);	-- Chaos-Born Hippogryph
+i(0, 466977);	-- Chaos-Born Wind Rider
+
+--- MOP CLASSIC ---
+--- NYI? ---
+i(0, 1224647);	-- Meeksi Brewrobber
+i(0, 1224643);	-- Meeksi Gentlepaw
+i(0, 1224645);	-- Meeksi Rufflemane
+i(0, 1224596);	-- Meeksi Teapuff
+i(0, 1224646);	-- Meeksi Wanderpaw
+
 --- NYI ---
 i(0, 388516);		-- Hao-Yue, River Foreseer
 i(198632, 387319);	-- Big Battle Bear
@@ -876,7 +889,7 @@ i(124089, 183889);	-- Vicious War Mechanostrider
 i(128282, 189044);	-- Warmongering Gladiator's Felblood Gronnling
 i(128281, 189043);	-- Wild Gladiator's Felblood Gronnling
 --- NYI ---
-i(128480, 0);	-- Bristling Hellboar
+i(128480, 0);		-- Bristling Hellboar
 
 -----------------
 -- PATCH 6.2.1 --
@@ -1925,9 +1938,7 @@ i(228760, 463133);	-- Coldflame Tempest
 i(231374, 468353);	-- Enchanted Spellweave Carpet
 i(224398, 452643);	-- Frayfeather Hippogryph
 i(211087, 428067);	-- Hateforged Blazecycle
--- #if AFTER 11.0.5
-i(229348, 428013);		-- Incognitro, the Indecipherable Felcycle
--- #endif
+i(229348, 428013);	-- Incognitro, the Indecipherable Felcycle
 i(223471, 449142);	-- Kaldorei War Wolf
 i(212228, 431359);	-- Soaring Sky Fox
 i(229418, 465235);	-- Trader's Gilded Brutosaur
@@ -2000,6 +2011,7 @@ i(229987, 466144);	-- Prized Gladiator's Fel Bat
 i(236960, 1221155);	-- Prototype A.S.M.R.
 i(235657, 1218012);	-- Ruby Butterfly
 i(229953, 466026);	-- Salvaged Goblin Gazillionaire's Flying Machine
+i(235646, 1217965);	-- Shimmermist Free Runner
 i(229943, 466014);	-- Steamwheedle Supplier
 i(235626, 1217760);	-- The Big G
 i(229944, 466016);	-- The Topskimmer Special
@@ -2013,24 +2025,22 @@ i(229947, 466021);	-- Violet Goblin Shredder
 -- TRADING POST TAG
 i(235659, 1218014);	-- Midnight Butterfly
 i(235554, 1217340);	-- Midnight Darkmoon Charger
-i(235646, 1217965);	-- Shimmermist Free Runner
 i(235557, 1217343);	-- Snowy Darkmoon Charger
 i(235658, 1218013);	-- Spring Butterfly
 --- NYI ---
 i(232523, 460013);	-- G-99 Breakneck
-i(0, 466423);	-- Unstable Rocket
-i(0, 466464);	-- Unstable Rocket
 
 ------------------
 -- PATCH 11.1.5 --
 ------------------
---- ITEM ---
-i(0, 1226983);	-- Archmage's Great Raven
+i(238994, 1226983);	-- Archmage's Great Raven
+i(210141, 424601);	-- Brown-Furred Spiky Bakar
 i(235711, 1218316);	-- Corruption of the Aspects
 i(223265, 447189);	-- Nesting Swarmite
 i(235709, 1218314);	-- Ny'alothan Shadow Worm
-i(0, 1226760);	-- Prophet's Great Raven
+i(238943, 1226760);	-- Prophet's Great Raven
 i(238829, 1226421);	-- Radiant Imperial Lynx
+i(238897, 1226511);	-- Spring Harvesthog
 i(239020, 1227076);	-- Tyrannotort
 i(235712, 1218317);	-- Void-Crystal Panther
 i(235705, 1218305);	-- Void-Forged Stallion
@@ -2041,12 +2051,10 @@ i(235707, 1218307);	-- Void-Scarred Windrider
 i(211089, 428068);	-- Voidfire Deathcycle
 --- UNSORTED ---
 i(238902, 1226533);	-- Autumn Harvesthog
-i(210141, 424601);	-- Brown-Furred Spiky Bakar
 i(238941, 1226740);	-- Coldflame Cormaera
 i(238966, 1226851);	-- Felborn Cormaera
 i(238968, 1226856);	-- Lavaborn Cormaera
 i(238967, 1226855);	-- Molten Cormaera
 i(236415, 1219705);	-- Spotted Black Riding Goat
-i(238897, 1226511);	-- Spring Harvesthog
 i(238900, 1226531);	-- Summer Harvesthog
 i(238901, 1226532);	-- Winter Harvesthog

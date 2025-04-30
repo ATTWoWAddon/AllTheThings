@@ -17,11 +17,13 @@ namespace ATT.DB.Types
         }
 
         public bool IsKnownTriggerType() =>
+            TriggerWhenUseSpellID() > 0 ||
             TriggerWhenEquipSpellID() > 0 ||
             TriggerWhenLearnedSpellID() > 0 ||
             TriggerWhenLootedSpellID() > 0 ||
             TriggerWhenPickupSpellID() > 0;
 
+        public int TriggerWhenUseSpellID() => TriggerType == 0 ? SpellID : 0;
         public int TriggerWhenEquipSpellID() => TriggerType == 1 ? SpellID : 0;
         public int TriggerWhenPickupSpellID() => TriggerType == 5 ? SpellID : 0;
         public int TriggerWhenLearnedSpellID() => TriggerType == 6 ? SpellID : 0;

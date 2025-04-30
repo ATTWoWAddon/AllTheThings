@@ -1644,6 +1644,7 @@ ExportDB.AccountWideQuestsDB = {
 	[83702] = true,	-- Sturdy Chest
 	[83826] = true,	-- Luminous Nerubian Catalyst Stone
 	[83831] = true,	-- Completed Guest Relations intro quest finished with (84868) A Whiff of Help.
+	[84006] = true,	-- Queen's Pheromone
 	[84020] = true,	-- A Mech in Need
 	[84021] = true,	-- Machine Without Cogs
 	[84023] = true,	-- Orienting Ourselves

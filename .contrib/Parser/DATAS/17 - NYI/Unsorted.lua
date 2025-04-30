@@ -10,81 +10,13 @@ root(ROOTS.Unsorted, {
 				i(235274),	-- Echo of N'zoth
 				i(235284),	-- Echo of N'zoth
 				i(235285),	-- Echo of N'zoth
-				i(236787),	-- Vision Manipulator's Footwraps
-				i(236788),	-- Vision Manipulator's Handwraps
-				i(236789),	-- Vision Manipulator's Leggings
-				i(236790),	-- Vision Manipulator's Cinch
-				i(236791),	-- Vision Manipulator's Wristwraps
-				i(236792),	-- Footpads of the Insatiable Vision
-				i(236793),	-- Grips of the Insatiable Vision
-				i(236797),	-- Vision Tormentor's Footguards
-				i(236798),	-- Vision Tormentor's Handguards
-				i(236799),	-- Vision Tormentor's Legguards
-				i(236800),	-- Vision Tormentor's Belt
-				i(236801),	-- Vision Tormentor's Vambraces
-				i(236802),	-- Malignant Vision's Stompers
-				i(236803),	-- Malignant Vision's Crushers
-				i(236804),	-- Malignant Vision's Wargreaves
-				i(236805),	-- Malignant Vision's Greatbelt
-				i(236806),	-- Malignant Vision's Armguards
-				i(236807),	-- Vision Manipulator's Gloves
-				i(236808),	-- Gloves of the Insatiable Vision
-				i(236809),	-- Vision Tormentor's Gloves
-				i(236810),	-- Malignant Vision's Gauntlets
-				i(236811),	-- Vision Manipulator's Legwraps
-				i(236813),	-- Vision Tormentor's Greaves
-				i(236814),	-- Malignant Vision's Legguards
-				i(236815),	-- Vision Manipulator's Cuffs
-				i(236816),	-- Armguards of the Insatiable Vision
-				i(236817),	-- Vision Tormentor's Bracers
-				i(236818),	-- Malignant Vision's Vambraces
-				i(236819),	-- Malignant Vision's Warboots
-				i(236820),	-- Vision Tormentor's Boots
-				i(236821),	-- Boots of the Insatiable Vision
-				i(236822),	-- Vision Manipulator's Treads
-				i(236823),	-- Vision Manipulator's Belt
-				i(236825),	-- Vision Tormentor's Chain
-				i(236826),	-- Malignant Vision's Girdle
-				i(236827),	-- Vision Manipulator's Robe
-				i(236828),	-- Vision Manipulator's Cowl
-				i(236829),	-- Vision Manipulator's Mantle
-				i(236830),	-- Chestguard of the Insatiable Vision
-				i(236831),	-- Guise of the Insatiable Vision
-				i(236833),	-- Vision Tormentor's Breastplate
-				i(236834),	-- Vision Tormentor's Mask
-				i(236835),	-- Vision Tormentor's Spaulders
-				i(236836),	-- Malignant Vision's Chestplate
-				i(236837),	-- Malignant Vision's Headguard
-				i(236838),	-- Malignant Vision's Spaulders
-				i(236839),	-- Vision Manipulator's Vestments
-				i(236840),	-- Vision Manipulator's Mask
-				i(236841),	-- Vision Manipulator's Shoulders
-				i(236842),	-- Vest of the Insatiable Vision
-				i(236844),	-- Shoulders of the Insatiable Vision
-				i(236845),	-- Vision Tormentor's Chestplate
-				i(236846),	-- Vision Tormentor's Helmet
-				i(236847),	-- Vision Tormentor's Shoulders
-				i(236848),	-- Malignant Vision's Breastplate
-				i(236849),	-- Malignant Vision's Helm
-				i(236850),	-- Malignant Vision's Pauldrons
-				i(236906),	-- Vision Manipulator's Ring
-				i(236907),	-- Vision Tormentor's Band
-				i(236908),	-- Signet of Malignant Vision
-				i(236909),	-- Loop of Insatiable Vision
-				i(236910),	-- Choker of the Malignant Vision
+				-- Trinkets?
 				i(236914),	-- Unbound Vision Journal
 				i(236915),	-- Book of Dark Visions
 				i(236916),	-- Void-Whittled Spike
 				i(236917),	-- Dark Dreamer's Talisman
 				i(236918),	-- Pulsating Void Disk
 				i(236919),	-- Void Spike
-				i(236968),	-- Malignant Vision's Drape
-				i(236969),	-- Vision Tormentor's Tentacles
-				i(236971),	-- Vision Manipulator's Cloak
-				i(237434),	-- Faceless Mask of the Nemesis
-				i(238260),	-- Faceless Mask of Vengeance
-				i(239157),	-- Nemesis Shard
-				i(239158),	-- Nemesis Shard
 			}),
 			n(SPECIAL, {	-- Duos
 				i(238929),	-- Cloak of Whispering Shells
@@ -113,6 +45,7 @@ root(ROOTS.Unsorted, {
 				i(239489),	-- Radiant Officer's Cache
 			}),
 			n(SPECIAL, {	-- Mysterious???
+				-- Nothing load atm
 				i(235631),	-- [NOT USED] Mysterious Large Satchel of Goodies
 				i(235798),	-- Diluted Potion of Celerity
 				i(235804),	-- Concentrated Potion of Celerity
@@ -131,69 +64,35 @@ root(ROOTS.Unsorted, {
 				i(236946),	-- [NOT USED] Mysterious Accessories Satchel
 				i(236958),	-- [NOT USED] Empty Mysterious Potion
 			}),
-			filter(BATTLE_PETS, {
-				i(236409),	-- Frumpy Softpaw
-				i(238942),	-- Weechi \\ Chihuahua
-			}),
 			filter(COSMETIC, {
-				i(235985),	-- Heroic Half Shell
 				i(235986),	-- Evil King's Half Shell
 				i(235987),	-- Adorned Half Shell
-				i(236402),	-- Night Hag's Stave \\ Deathwarder's Night Stave
 				i(236403),	-- Deathwarder's Grove Stave
 				i(236404),	-- Deathwarder's Twilight Stave
-				i(236405),	-- Deathwarder's Blood Stave
-				i(236627),	-- Night Hag's Blade \\ Deathwarder's Night Blade
 				i(236628),	-- Deathwarder's Grove Blade
 				i(236629),	-- Deathwarder's Twilight Blade
-				i(236630),	-- Deathwarder's Blood Blade
-				i(237176),	-- Night Hag's Claw \\ Deathwarder's Night Fist
 				i(237177),	-- Deathwarder's Grove Fist
 				i(237178),	-- Deathwarder's Twilight Fist
-				i(237179),	-- Deathwarder's Blood Fist
-				i(237180),	-- Night Hag's Fetish \\ Deathwarder's Night Fetish
 				i(237181),	-- Deathwarder's Grove Fetish
 				i(237182),	-- Deathwarder's Twilight Fetish
-				i(237183),	-- Deathwarder's Blood Fetish
-				i(237190),	-- Vestments of the Woodland Racoon \\ Woodland Vestments of the Racoon
 				i(237191),	-- Woodland Vestments of the Grey Wolf
-				i(237192),	-- Vestments of the Swift Fox \\ Woodland Vestments of the Fox
 				i(237193),	-- Woodland Vestments of the Gilneas Fox
-				i(237194),	-- Boots of the Woodland Racoon \\ Woodland Boots of the Racoon
 				i(237195),	-- Woodland Boots of the Grey Wolf
-				i(237197),	-- Boots of the Swift Fox \\ Woodland Boots of the Fox
 				i(237198),	-- Woodland Boots of the Gilneas Fox
-				i(237199),	-- Gloves of the Woodland Racoon \\ Woodland Gloves of the Racoon
 				i(237201),	-- Woodland Gloves of the Grey Wolf
-				i(237202),	-- Gloves of the Swift Fox \\ Woodland Gloves of the Fox
 				i(237203),	-- Woodland Gloves of the Gilneas Fox
-				i(237205),	-- Cowl of the Woodland Racoon \\ Woodland Cowl of the Racoon
 				i(237206),	-- Woodland Cowl of the Grey Wolf
-				i(237207),	-- Cowl of the Swift Fox \\ Woodland Cowl of the Fox
 				i(237208),	-- Woodland Cowl of the Gilneas Fox
-				i(237209),	-- Pants of the Woodland Racoon \\ Woodland Pants of the Racoon
 				i(237210),	-- Woodland Pants of the Grey Wolf
-				i(237211),	-- Pants of the Swift Fox \\ Woodland Pants of the Fox
 				i(237212),	-- Woodland Pants of the Gilneas Fox
-				i(237213),	-- Mantle of the Woodland Racoon \\ Woodland Mantle of the Racoon
 				i(237214),	-- Woodland Mantle of the Grey Wolf
-				i(237215),	-- Mantle of the Swift Fox \\ Woodland Mantle of the Fox
 				i(237216),	-- Woodland Mantle of the Gilneas Fox
-				i(237217),	-- Belt of the Woodland Racoon \\ Woodland Belt of the Racoon
 				i(237218),	-- Woodland Belt of the Grey Wolf
-				i(237219),	-- Belt of the Swift Fox \\ Woodland Belt of the Fox
 				i(237220),	-- Woodland Belt of the Gilneas Fox
-				i(237222),	-- Ensemble: Attire of the Woodland Racoon \\ Ensemble: Woodland Attire of the Racoon
 				i(237223),	-- Ensemble: Woodland Attire of the Grey Wolf
-				i(237224),	-- Ensemble: Attire of the Swift Fox \\ Ensemble: Woodland Attire of the Fox
 				i(237225),	-- Ensemble: Woodland Attire of the Gilneas Fox
-				i(237226),	-- Cloak of the Woodland Racoon \\ Woodland Cloak of the Racoon
 				i(237227),	-- Woodland Cloak of the Grey Wolf
-				i(237228),	-- Cloak of the Swift Fox \\ Woodland Cloak of the Fox
 				i(237229),	-- Woodland Cloak of the Gilneas Fox
-				i(237342),	-- Renaissance Sai \\ Dagger of the Renaissance
-				i(237343),	-- Nunchuck of the Renaissance \\ Flail of the Renaissance
-				i(237344),	-- Renaissance Katana \\ Blade of the Renaissance
 				i(237374),	-- Stormstout's Tunic
 				i(237375),	-- Stormstout's Hat
 				i(237376),	-- Stormstout's Belt
@@ -204,8 +103,6 @@ root(ROOTS.Unsorted, {
 				i(237855),	-- Shadowmoon Flame's Bardiche
 				i(237856),	-- Sunwell Bardiche \\ Hellfire Flame's Bardiche
 				i(237857),	-- Sunwell Flame's Bardiche
-				i(238217),	-- Offhand Renaissance Nunchuck \\ Offhand Flail of the Renaissance
-				i(238252),	-- Large Renaissance Katana \\ Great Blade of the Renaissance
 				i(238397),	-- Coldflame Chopper \\ Lavaborn Azure Choper
 				i(238398),	-- Lavaborn Emerald Chopper \\ Lavaborn Emerald Choper
 				i(238399),	-- Lavaborn Ruby's Edge \\ Lavaborn Ruby Choper
@@ -266,19 +163,15 @@ root(ROOTS.Unsorted, {
 				i(238952),	-- Green Flame Burner
 				i(238953),	-- Red Flame Burner
 				i(238955),	-- Yellow Flame Burner
-				i(238956),	-- Night Hag's Great Blade \\ Deathwarder's Great Night Blade
 				i(238957),	-- Deathwarder's Great Grove Blade
 				i(238958),	-- Deathwarder's Great Twilight Blade
-				i(238959),	-- Deathwarder's Great Blood Blade
 			}),
 			filter(MISC, {
 				i(238896),	-- Macho's Magnificent "Fish" Tacos
 				i(241616),	-- The Underpin
 			}),
 			filter(MOUNTS, {
-				i(235712),	-- Void-Crystal Panther
 				i(236415),	-- Reins of the Spotted Black Riding Goat
-				i(238897),	-- Spring Harvesthog
 				i(238900),	-- Summer Harvesthog
 				i(238901),	-- Winter Harvesthog
 				i(238902),	-- Autumn Harvesthog
@@ -289,20 +182,6 @@ root(ROOTS.Unsorted, {
 
 				-- Mount Parts!
 				i(240187),	-- Refulgent Crystal Shards
-			}),
-			n(PROFESSIONS, {
-				i(238404),	-- Enchant Weapon - Twilight Devastation
-				i(238406),	-- Formula: Enchant Weapon - Twilight Devastation
-				i(238679),	-- Enchant Weapon - Echoing Void
-				i(238683),	-- Formula: Enchant Weapon - Echoing Void
-				i(239079),	-- Enchant Weapon - Infinite Stars
-				i(239081),	-- Formula: Enchant Weapon - Infinite Stars
-				i(239085),	-- Enchant Weapon - Gushing Wound
-				i(239087),	-- Formula: Enchant Weapon - Gushing Wound
-				i(239089),	-- Enchant Weapon - Twisted Appendage
-				i(239091),	-- Formula: Enchant Weapon - Twisted Appendage
-				i(239094),	-- Enchant Weapon - Void Ritual
-				i(239096),	-- Formula: Enchant Weapon - Void Ritual
 			}),
 			n(WEEKLY_HOLIDAYS, {	-- Childrens Week
 				i(241632),	-- Heroic Waxy Figurine

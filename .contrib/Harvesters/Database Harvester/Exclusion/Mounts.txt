@@ -12,6 +12,20 @@
 423869@@@Avatar of Flame [Classic]
 446902@@@Polly Roger [Classic]
 440915@@@Auspicious Arborwyrm [Classic]
+463045@@@Lava Drake [Classic]
+466948@@@Chaos-Born Dreadwing [Classic]
+466977@@@Chaos-Born Wind Rider [Classic]
+466980@@@Chaos-Born Hippogryph [Classic]
+466983@@@Chaos-Born Gryphon [Classic]
+471440@@@Skybound Spectral Tiger [Classic]
+473478@@@Sha-Touched Riding Tiger [Classic]
+473487@@@Sha-Touched Cloud Serpent [Classic]
+1217476@@@Flaming Royal Fire Hawk [Classic]
+1224596@@@Meeksi Teapuff [Classic]
+1224643@@@Meeksi Gentlepaw [Classic]
+1224645@@@Meeksi Rufflemane [Classic]
+1224646@@@Meeksi Wanderpaw [Classic]
+1224647@@@Meeksi Brewrobber [Classic]
 0@@@TEST
 25675@@@Reindeer [Holiday]
 25858@@@Reindeer [Holiday]
@@ -92,3 +106,5 @@
 431049@@@Grotto Netherwing Drake [Cup]
 431050@@@Flourishing Whimsydrake [Cup]
 441313@@@Soar [Dracthyr Abilities]
+466423@@@Unstable Rocket
+466464@@@Unstable Rocket

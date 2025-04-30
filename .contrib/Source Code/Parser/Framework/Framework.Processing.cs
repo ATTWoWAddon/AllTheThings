@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using static ATT.Export;
+using static ATT.Framework;
 
 namespace ATT
 {
@@ -854,8 +855,10 @@ namespace ATT
 
             Incorporate_Achievement(data);
             Incorporate_Criteria(data);
-            // Handles Spell->SpellEffect incorporation
+            // Handles Item->Spell->SpellEffect incorporation
             Incorporate_Item(data);
+            // Handles Spell->SpellEffect incorporation
+            Incorporate_Spell(data);
             Incorporate_Ensemble(data);
 
             bool cloned = Incorporate_DataCloning(data);
@@ -2282,9 +2285,9 @@ namespace ATT
                             else
                             {
                             */
-                                LogDebug($"INFO: Added _exploration to Criteria {achID}:{criteriaID} => {explorationID}");
-                                Objects.Merge(data, "_exploration", explorationID);
-                                incorporated = true;
+                            LogDebug($"INFO: Added _exploration to Criteria {achID}:{criteriaID} => {explorationID}");
+                            Objects.Merge(data, "_exploration", explorationID);
+                            incorporated = true;
                             //}
                         }
                     }
@@ -2764,48 +2767,27 @@ namespace ATT
         {
             if (!data.TryGetValue("type", out string type) || !(type == "ensembleID" || type == "ensembleSpellID")) return;
             if (data.ContainsKey("_noautomation")) return;
+            if (data.ContainsKey("_Incorporate_Ensemble")) return;
 
-            if (!data.TryGetValue("spellID", out long spellID))
+            if (data.TryGetValue("tmogSetID", out long tmogSetID) && TryGetTypeDBObject(tmogSetID, out TransmogSet tmogSet) && tmogSet.TrackingQuestID > 0)
             {
-                LogWarn($"Ensemble Type Item missing linking SpellID", data);
-                return;
-            }
+                Objects.Merge(data, "questID", tmogSet.TrackingQuestID);
+                TrackIncorporationData(data, "questID", tmogSet.TrackingQuestID);
 
-            if (TryGetTypeDBObjectCollection(spellID, out List<SpellEffect> spellEffects))
-            {
-                foreach (SpellEffect spellEffect in spellEffects)
-                {
-                    Incorporate_SpellEffect(data, spellEffect);
-                }
-            }
-            else
-            {
-                data.TryGetValue("itemID", out long itemID);
-                LogWarn($"Ensemble {itemID} with Spell {spellID} missing Wago SpellEffect record(s)", data);
-            }
-
-            if (data.TryGetValue("tmogSetID", out long tmogSetID) && TryGetTypeDBObject(tmogSetID, out TransmogSet tmogSet))
-            {
-                if (tmogSet.TrackingQuestID > 0)
-                {
-                    Objects.Merge(data, "questID", tmogSet.TrackingQuestID);
-                    TrackIncorporationData(data, "questID", tmogSet.TrackingQuestID);
-
-                    // check if other Ensembles have the same name as well. this could be a case where alternate Ensembles are auto-learned via server-side
-                    // spellID triggers which may need to be added into the 'real' Ensemble Item to pull in the proper set of learned Sources
-                    //IEnumerable<TransmogSet> matchingTmogSets = GetTypeDBObjects<TransmogSet>(i => i.Name_lang == tmogSet.Name_lang
-                    //                                                                            && i.TrackingQuestID > 0
-                    //                                                                            && i.TrackingQuestID != tmogSet.TrackingQuestID);
-                    //data.TryGetValue("itemID", out long ensembleID);
-                    //foreach (var matchingTmogSet in matchingTmogSets)
-                    //{
-                    //    long? matchingTmogSetSpellID = GetTypeDBObjects<SpellEffect>(i => i.EffectMiscValue_0 == matchingTmogSet.ID && i.IsLearnedTransmogSet()).FirstOrDefault()?.SpellID;
-                    //    if (matchingTmogSetSpellID != null)
-                    //    {
-                    //        LogDebugWarn($"Matching Transmog Set {matchingTmogSet.Name_lang}:{matchingTmogSet.ID} may need a manual SpellID {matchingTmogSetSpellID} added within existing iensemble({ensembleID}");
-                    //    }
-                    //}
-                }
+                // check if other Ensembles have the same name as well. this could be a case where alternate Ensembles are auto-learned via server-side
+                // spellID triggers which may need to be added into the 'real' Ensemble Item to pull in the proper set of learned Sources
+                //IEnumerable<TransmogSet> matchingTmogSets = GetTypeDBObjects<TransmogSet>(i => i.Name_lang == tmogSet.Name_lang
+                //                                                                            && i.TrackingQuestID > 0
+                //                                                                            && i.TrackingQuestID != tmogSet.TrackingQuestID);
+                //data.TryGetValue("itemID", out long ensembleID);
+                //foreach (var matchingTmogSet in matchingTmogSets)
+                //{
+                //    long? matchingTmogSetSpellID = GetTypeDBObjects<SpellEffect>(i => i.EffectMiscValue_0 == matchingTmogSet.ID && i.IsLearnedTransmogSet()).FirstOrDefault()?.SpellID;
+                //    if (matchingTmogSetSpellID != null)
+                //    {
+                //        LogDebugWarn($"Matching Transmog Set {matchingTmogSet.Name_lang}:{matchingTmogSet.ID} may need a manual SpellID {matchingTmogSetSpellID} added within existing iensemble({ensembleID}");
+                //    }
+                //}
             }
 
             // add additional ensemble spells as sub-groups of the Item Ensemble
@@ -2827,6 +2809,8 @@ namespace ATT
             }
 
             AddPostProcessing(EnsembleCleanup, data);
+            // don't incorporate ensemble again
+            data["_Incorporate_Ensemble"] = true;
         }
 
         private static void Incorporate_Item_TransmogSetItems(IDictionary<string, object> data, long tmogSetID)
@@ -2884,24 +2868,14 @@ namespace ATT
             if (!data.TryGetValue("itemID", out long itemID)) return;
             if (data.ContainsKey("_noautomation")) return;
 
-            // See if there's a Spell and what it links to
-            if (data.TryGetValue("spellID", out long spellID))
-            {
-                if (TryGetTypeDBObjectCollection(spellID, out List<SpellEffect> spellEffects))
-                {
-                    foreach (SpellEffect spellEffect in spellEffects)
-                    {
-                        Incorporate_SpellEffect(data, spellEffect);
-                    }
-                }
-                else
-                {
-                    // quite spammy now with all Items being incorporated
-                    //LogDebugWarn($"Item with Spell {spellID} missing Wago SpellEffect record", data);
-                }
-            }
+            // See if there's a Primary Spell already (can be set via WagoDB/Item/SpellID in AsData() when merging ItemDB)
+            data.TryGetValue("spellID", out long spellID);
 
             // See what direct ItemXItemEffects are linked to this Item
+            // Item X> ItemXItemEffect
+            // ItemXItemEffect 1> ItemEffect
+            // ItemEffect X> SpellEffect
+            // e.g. i:207046 -> 2 ItemXItemEffect -> 2 ItemEffect -> 2 SpellEffect & 4 SpellEffect
             if (TryGetTypeDBObjectCollection(itemID, out List<ItemXItemEffect> itemXItemEffects))
             {
                 foreach (ItemXItemEffect itemXItemEffect in itemXItemEffects)
@@ -2909,11 +2883,41 @@ namespace ATT
                     if (!TryGetTypeDBObject(itemXItemEffect.ItemEffectID, out ItemEffect itemEffect))
                         continue;
 
-                    // we may have already incorporated the specific SpellID above from the direct Item data
+                    // ignore matching spellID effect
                     if (itemEffect.SpellID == spellID)
                         continue;
 
-                    if (TryGetTypeDBObjectCollection(itemEffect.SpellID, out List<SpellEffect> spellEffects))
+                    // Incorporate_Spell will handle any 'extra' spells triggered by secondary ItemEffects
+                    Objects.Merge(data, "_extraSpells", itemEffect.SpellID);
+                }
+            }
+        }
+
+        private static void Incorporate_Spell(IDictionary<string, object> data)
+        {
+            if (!data.TryGetValue("spellID", out long spellID)) return;
+            if (data.ContainsKey("_noautomation")) return;
+
+            // See what the Spell links to
+            if (TryGetTypeDBObjectCollection(spellID, out List<SpellEffect> spellEffects))
+            {
+                foreach (SpellEffect spellEffect in spellEffects)
+                {
+                    Incorporate_SpellEffect(data, spellEffect);
+                }
+            }
+            else
+            {
+                // quite spammy now with all Items being incorporated
+                //LogDebugWarn($"Item with Spell {spellID} missing Wago SpellEffect record", data);
+            }
+
+            // Incorporate any extra spells
+            if (data.TryGetValue("_extraSpells", out List<object> extraSpells))
+            {
+                foreach(long extraSpellID in extraSpells.AsTypedEnumerable<long>())
+                {
+                    if (TryGetTypeDBObjectCollection(extraSpellID, out spellEffects))
                     {
                         foreach (SpellEffect spellEffect in spellEffects)
                         {
@@ -2930,20 +2934,22 @@ namespace ATT
             // ref. /att i:181538 -> SpellID 336988
             if (spellEffect.IsQuest())
             {
+                long questID = spellEffect.EffectMiscValue_0;
                 if (!data.TryGetValue("questID", out long existingQuestID))
                 {
                     // we only want to attach a questID to an Item if that Quest is only linked via 1 ItemEffect...
                     long spellID = spellEffect.SpellID;
                     if (TryGetTypeDBObjectCollection(spellID, out List<ItemEffect> matchingItemEffects) && matchingItemEffects.Count > 1)
                     {
-                        LogDebug($"INFO: Ignored assignment of Item 'questID' {spellEffect.EffectMiscValue_0} due to {matchingItemEffects.Count} shared ItemEffect use", data);
+                        //LogDebug($"INFO: Ignored assignment of data 'questID' {spellEffect.EffectMiscValue_0} due to {matchingItemEffects.Count} shared ItemEffect use", data);
+                        // assign this data as a provider of the questID instead since this data may link to multiple questIDs
+                        Assign_QuestProviderFromData(questID, data);
                     }
                     else
                     {
-                        long questID = spellEffect.EffectMiscValue_0;
                         using (IEnumerator<SpellEffect> spellEffectEnumerator = GetTypeDBObjects<SpellEffect>((se) =>
                         {
-                            // quest spelleffect with either same spellID or same quest (should only be 1 if we aare going to apply it to an Item)
+                            // quest spelleffect with either same spellID or same quest (should only be 1 if we are going to apply it to an Item)
                             return se.IsQuest() && (se.SpellID == spellID || se.EffectMiscValue_0 == questID);
                         }).GetEnumerator())
                         {
@@ -2952,7 +2958,9 @@ namespace ATT
                             // if there's a 2nd (or more) then ignore assigning the questID from a specific Spell
                             if (spellEffectEnumerator.MoveNext())
                             {
-                                LogDebug($"INFO: Ignored assignment of Item 'questID' {questID} due to multiple SpellEffect use", data);
+                                //LogDebug($"INFO: Ignored assignment of data 'questID' {questID} due to multiple SpellEffect use", data);
+                                // assign this data as a provider of the questID instead since this data links to multiple questIDs
+                                Assign_QuestProviderFromData(questID, data);
                             }
                             else
                             {
@@ -2980,9 +2988,10 @@ namespace ATT
                         }
                     }
                 }
-                else
+                else if (questID != existingQuestID)
                 {
-                    LogDebug($"INFO: Ignored assignment of Item 'questID' {spellEffect.EffectMiscValue_0} due to existing 'questID' of {existingQuestID}", data);
+                    // additional spell effects that trigger additional questIDs, we will link the data as a provider of that additional questID's Source if possible
+                    Assign_QuestProviderFromData(questID, data);
                 }
             }
             if (spellEffect.IsLearnedTransmogSet())
@@ -2996,6 +3005,48 @@ namespace ATT
                     LogDebug($"INFO: Assigned 'tmogSetID' {tmogSetID}", data);
                 }
                 Incorporate_Item_TransmogSetItems(data, tmogSetID);
+                // this is repeated later for the same data, yes, but we need to ensure some things happen in the correct order
+                Incorporate_Ensemble(data);
+            }
+        }
+
+        private static void Assign_QuestProviderFromData(long questID, IDictionary<string, object> data)
+        {
+            // additional spell effects that trigger additional questIDs, we will link the data as a provider of that additional questID's Source if possible
+            if (TryGetSOURCED("questID", questID, out var sourcedQuests))
+            {
+                foreach (var sourcedQuestData in sourcedQuests)
+                {
+                    if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue))
+                    {
+                        string providerType = null;
+                        switch (objectData.ConvertedKey ?? objectData.ObjectType)
+                        {
+                            case "itemID":
+                                providerType = "i";
+                                break;
+                            case "npcID":
+                                providerType = "n";
+                                break;
+                            case "objectID":
+                                providerType = "o";
+                                break;
+                            case "spellID":
+                                providerType = "s";
+                                break;
+                        }
+
+                        if (providerType != null)
+                        {
+                            Objects.MergeField_provider(sourcedQuestData, new List<object> { providerType, objKeyValue });
+                            LogDebug($"INFO: Assigning {providerType}:{objKeyValue} as Provider of 'questID' {questID}", sourcedQuestData);
+                        }
+                        else
+                        {
+                            LogDebugWarn($"Unable to determine provider type for data", data);
+                        }
+                    }
+                }
             }
         }
 

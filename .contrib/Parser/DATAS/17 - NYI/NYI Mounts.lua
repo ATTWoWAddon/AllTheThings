@@ -435,13 +435,35 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 				["displayID"] = 46799,
 			}),
 		})),
+
 		-- 5.4.0
 		expansion(EXPANSION.MOP, patch(4,0), bubbleDownSelf({ ["timeline"] = { CREATED_5_4_0 } }, {
 			-- With MountID Attached
-			--i(104011, {	-- Stormcrow (MOUNT!)
-			--	["displayID"] = 51323,
-			--}),
+			i(104011, {	-- Stormcrow (MOUNT!)
+				["displayID"] = 51323,
+			}),
 		})),
+
+		-- #if ANYCLASSIC
+		-- 5.5.0
+		expansion(EXPANSION.MOP, patch(5,0), bubbleDownSelf({ ["timeline"] = { CREATED_5_5_0 } }, {
+			mount(1224647, {	-- Meeksi Brewrobber (MOUNT!)
+				["displayID"] = 124513,
+			}),
+			mount(1224643, {	-- Meeksi Gentlepaw (MOUNT!)
+				["displayID"] = 124510,
+			}),
+			mount(1224645, {	-- Meeksi Rufflemane (MOUNT!)
+				["displayID"] = 124509,
+			}),
+			mount(1224596, {	-- Meeksi Teapuff (MOUNT!)
+				["displayID"] = 124512,
+			}),
+			mount(1224646, {	-- Meeksi Wanderpaw (MOUNT!)
+				["displayID"] = 124511,
+			}),
+		})),
+		-- #endif
 	}),
 	expansion(EXPANSION.WOD, {
 		-- 6.0.2
@@ -758,9 +780,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		-- 10.2.0
 		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			-- With MountID Attached
-			i(210141, {	-- [PH] Brown-Furred Spiky Bakar (MOUNT!)
-				["displayID"] = 111719,
-			}),
 			i(210143, {	-- [PH] White-Furred Bakar (MOUNT!)
 				["displayID"] = 111729,
 			}),
@@ -945,12 +964,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 
 		-- 11.1.0
 		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
-			mount(466423, {	-- Unstable Rocket
-				--["displayID"] = ,
-			}),
-			mount(466464, {	-- Unstable Rocket
-				--["displayID"] = ,
-			}),
 			-- With MountID attached
 			i(232523, {	-- G-99 Breakneck
 				--["displayID"] = ,

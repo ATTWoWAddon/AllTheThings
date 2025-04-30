@@ -309,7 +309,7 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 				["timeline"] = { ADDED_3_4_0, REMOVED_4_4_0 },
 				["description"] = "Can be bought for ¥1888 ($265 USD) or a discounted price of ¥588 ($82 USD) for owners of the original for a limited time in the Ingame Shop.",
 			})),
-			cnONLY(i(235344, {	-- Blazing Royal Fire Hawk (CN Only)
+			cnONLY(mount(1217476, {	-- Blazing Royal Fire Hawk (CN Only)
 				["description"] = "Rewarded from the Treasure Workshop.",
 				["timeline"] = { ADDED_3_4_0, REMOVED_4_4_0 },
 			})),

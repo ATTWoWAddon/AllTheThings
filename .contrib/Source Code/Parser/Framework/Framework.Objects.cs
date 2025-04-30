@@ -1829,6 +1829,7 @@ end");
                     case "_tmogSetIDs":
                     case "_sourceIDs":
                     case "_species":
+                    case "_extraSpells":
                         {
                             MergeIntegerArrayData(item, field, value);
                             break;

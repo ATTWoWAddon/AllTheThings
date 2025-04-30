@@ -328,7 +328,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 						17630,	-- Innkeeper Jovia <Innkeeper>
 					},
 					["groups"] = {
-						i(184865),	-- Reawakened Phase-Hunter
+						i(184865),	-- Reawakened Phase-Hunter (MOUNT!)
 						i(184871),	-- Dark Portal
 						i(38233),	-- Path of Illidan
 					},
@@ -388,7 +388,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			["description"] = "These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",
 			["questID"] = 70448,	-- Elite Northrend Expedition Supplies [Epic]
 			["g"] = {
-				i(192455),	-- Kalu'ak Whalebone Glider
+				i(192455),	-- Kalu'ak Whalebone Glider (MOUNT!)
 			},
 		}),
 	})),
@@ -397,7 +397,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		n(EPIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",
 			["g"] = {
-				mount(370770),	-- Tuskarr Shoreglider
+				mount(370770),	-- Tuskarr Shoreglider (MOUNT!)
 			},
 		}),
 	})),

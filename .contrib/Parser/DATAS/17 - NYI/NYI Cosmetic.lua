@@ -402,7 +402,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 			------ Single Pieces ------
 			i(217373),	-- Frenzied Hat of the Dark Depths
-			i(217374),	-- Frenzied Hat of the Shallows
 		})),
 
 		-- 10.2.7
@@ -606,7 +605,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233183),	-- Banded Aquatic War Slippers
 				i(233166),	-- Banded Aquatic War Wraps
 				i(233170),	-- Banded Azure War Slippers
-				i(233153),	-- Banded Azure War Wraps
 				i(233176),	-- Banded Brick War Slippers
 				i(233159),	-- Banded Brick War Wraps
 				i(233179),	-- Banded Carrot War Slippers
@@ -625,8 +623,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233163),	-- Banded Rosy War Wraps
 				i(233184),	-- Banded Snowy War Slippers
 				i(233167),	-- Banded Snowy War Wraps
-				i(233182),	-- Banded Violet War Slippers
-				i(233165),	-- Banded Violet War Wraps
 				i(234710),	-- Earthen Artisan Kilt
 				i(234712),	-- Earthen Explorer's Kilt
 				i(234711),	-- Earthen Peacekeeper Warkilt
@@ -635,8 +631,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233237),	-- Lively Pack of Lunar Explosives
 				i(233110),	-- Long Aquatic War Skirt
 				i(233149),	-- Long Aquatic War Skirt and Leg Wraps
-				i(233097),	-- Long Azure War Skirt
-				i(233136),	-- Long Azure War Skirt and Leg Wraps
 				i(233103),	-- Long Brick War Skirt
 				i(233142),	-- Long Brick War Skirt and Leg Wraps
 				i(233106),	-- Long Carrot War Skirt
@@ -656,7 +650,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233111),	-- Long Snowy War Skirt
 				i(233150),	-- Long Snowy War Skirt and Leg Wraps
 				i(233109),	-- Long Violet War Skirt
-				i(233148),	-- Long Violet War Skirt and Leg Wraps
 				i(234059),	-- Lunar Festival Attire - Purple
 				i(234060),	-- Lunar Festival Attire - Teal
 				i(234043),	-- Lunar Festival Belt - Purple
@@ -672,8 +665,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(232924),	-- Sailor's Belt
 				i(233093),	-- Short Aquatic War Skirt
 				i(233132),	-- Short Aquatic War Skirt and Leg Wraps
-				i(233080),	-- Short Azure War Skirt
-				i(233117),	-- Short Azure War Skirt and Leg Wraps
 				i(233086),	-- Short Brick War Skirt
 				i(233125),	-- Short Brick War Skirt and Leg Wraps
 				i(233089),	-- Short Carrot War Skirt
@@ -692,8 +683,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233129),	-- Short Rosy War Skirt and Leg Wraps
 				i(233094),	-- Short Snowy War Skirt
 				i(233133),	-- Short Snowy War Skirt and Leg Wraps
-				i(233092),	-- Short Violet War Skirt
-				i(233131),	-- Short Violet War Skirt and Leg Wraps
 				i(234982),	-- Spare Sailor's Short-Sleeved Tunic
 				i(233272),	-- Steam-Powered Cobalt Clock Cloak
 				i(233275),	-- Steam-Powered Violet Clock Cloak
@@ -755,11 +744,8 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			n(ARMOR, {
 				i(231559),	-- [DNT] Experimental Gobbo-Flyer v3
 				i(235034),	-- Vigilante's Aquatic Mask
-				i(235020),	-- Vigilante's Azure Mask
 				i(235026),	-- Vigilante's Brick Mask
-				i(235029),	-- Vigilante's Carrot Mask
 				i(235023),	-- Vigilante's Cloudy Mask
-				i(235032),	-- Vigilante's Crimson Mask
 				i(235028),	-- Vigilante's Faded Mask
 				i(235022),	-- Vigilante's Grassy Mask
 				i(235027),	-- Vigilante's Lively Mask
@@ -767,7 +753,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(235030),	-- Vigilante's Rosy Mask
 				i(235035),	-- Vigilante's Snowy Mask
 				i(235036),	-- Vigilante's Sunny Mask
-				i(235033),	-- Vigilante's Violet Mask
 				i(234601),	-- Wings of the Icy Rose Monarch
 			}),
 			n(SETS, {

@@ -162,8 +162,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					--["sourceQuests"] = { ?? },	-- ??
 					["provider"] = { "i", 232920 },	-- Faceless Mask of the Pained (QI!/QS!)
 				}),
-				q(88652),	-- Faceless Mask of the Nemesis
-				q(88903),	-- Faceless Mask of Vengeance
+				q(88652, {	-- Faceless Mask of the Nemesis
+					--["sourceQuests"] = { ?? },	-- ??
+					["provider"] = { "i", 237434 },	-- Faceless Mask of the Nemesis (QI!/QS!)
+				}),
+				q(88903, {	-- Faceless Mask of Vengeance
+					--["sourceQuests"] = { ?? },	-- ??
+					["provider"] = { "i", 238260 },	-- Faceless Mask of Vengeance (QI!/QS!)
+				}),
 			}),
 			n(RARES, {
 				n(239581, {	-- Nesting Swarmite
@@ -210,28 +216,93 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				n(ARMOR, {
 					filter(BACK_F, {
 						i(236970),	-- Cloak of Insatiable Vision (leathers class only?)
+						i(236968),	-- Malignant Vision's Drape
+						i(236971),	-- Vision Manipulator's Cloak
+						i(236969),	-- Vision Tormentor's Tentacles
 					}),
 					filter(CLOTH, {
+						i(236823),	-- Vision Manipulator's Belt
+						i(236790),	-- Vision Manipulator's Cinch
+						i(236828),	-- Vision Manipulator's Cowl
+						i(236815),	-- Vision Manipulator's Cuffs
+						i(236787),	-- Vision Manipulator's Footwraps
+						i(236807),	-- Vision Manipulator's Gloves
+						i(236788),	-- Vision Manipulator's Handwraps
+						i(236789),	-- Vision Manipulator's Leggings
+						i(236811),	-- Vision Manipulator's Legwraps
+						i(236829),	-- Vision Manipulator's Mantle
+						i(236840),	-- Vision Manipulator's Mask
+						i(236827),	-- Vision Manipulator's Robe
+						i(236841),	-- Vision Manipulator's Shoulders
+						i(236822),	-- Vision Manipulator's Treads
+						i(236839),	-- Vision Manipulator's Vestments
+						i(236791),	-- Vision Manipulator's Wristwraps
 					}),
 					filter(FINGER_F, {
+						i(236909),	-- Loop of Insatiable Vision
+						i(236908),	-- Signet of Malignant Vision
+						i(236906),	-- Vision Manipulator's Ring
+						i(236907),	-- Vision Tormentor's Band
 					}),
 					filter(LEATHER, {
+						i(236816),	-- Armguards of the Insatiable Vision
+						i(236821),	-- Boots of the Insatiable Vision
+						i(236830),	-- Chestguard of the Insatiable Vision
+						i(236792),	-- Footpads of the Insatiable Vision
+						i(236808),	-- Gloves of the Insatiable Vision
 						i(236824),	-- Grasp of the Insatiable Vision
+						i(236793),	-- Grips of the Insatiable Vision
+						i(236831),	-- Guise of the Insatiable Vision
 						i(236812),	-- Leggings of the Insatiable Vision
 						i(236794),	-- Legwraps of the Insatiable Vision
 						i(236843),	-- Mask of the Insatiable Vision
 						i(236832),	-- Shoulderpads of the Insatiable Vision
+						i(236844),	-- Shoulders of the Insatiable Vision
+						i(236842),	-- Vest of the Insatiable Vision
 						i(236795),	-- Waistguard of the Insatiable Vision
 						i(236796),	-- Wristwraps of the Insatiable Vision
 					}),
 					filter(MAIL, {
+						i(236800),	-- Vision Tormentor's Belt
+						i(236820),	-- Vision Tormentor's Boots
+						i(236817),	-- Vision Tormentor's Bracers
+						i(236833),	-- Vision Tormentor's Breastplate
+						i(236825),	-- Vision Tormentor's Chain
+						i(236845),	-- Vision Tormentor's Chestplate
+						i(236797),	-- Vision Tormentor's Footguards
+						i(236809),	-- Vision Tormentor's Gloves
+						i(236813),	-- Vision Tormentor's Greaves
+						i(236798),	-- Vision Tormentor's Handguards
+						i(236846),	-- Vision Tormentor's Helmet
+						i(236799),	-- Vision Tormentor's Legguards
+						i(236834),	-- Vision Tormentor's Mask
+						i(236847),	-- Vision Tormentor's Shoulders
+						i(236835),	-- Vision Tormentor's Spaulders
+						i(236801),	-- Vision Tormentor's Vambraces
 					}),
 					filter(NECK_F, {
-						i(236911),	-- Vision Tormentor's Bone Necklace
-						i(236912),	-- Vision Manipulator's Choker
+						i(236910),	-- Choker of the Malignant Vision
 						i(236913),	-- Pendant of Insatiable Vision
+						i(236912),	-- Vision Manipulator's Choker
+						i(236911),	-- Vision Tormentor's Bone Necklace
 					}),
 					filter(PLATE, {
+						i(236806),	-- Malignant Vision's Armguards
+						i(236848),	-- Malignant Vision's Breastplate
+						i(236836),	-- Malignant Vision's Chestplate
+						i(236803),	-- Malignant Vision's Crushers
+						i(236810),	-- Malignant Vision's Gauntlets
+						i(236826),	-- Malignant Vision's Girdle
+						i(236805),	-- Malignant Vision's Greatbelt
+						i(236837),	-- Malignant Vision's Headguard
+						i(236849),	-- Malignant Vision's Helm
+						i(236814),	-- Malignant Vision's Legguards
+						i(236850),	-- Malignant Vision's Pauldrons
+						i(236838),	-- Malignant Vision's Spaulders
+						i(236802),	-- Malignant Vision's Stompers
+						i(236818),	-- Malignant Vision's Vambraces
+						i(236819),	-- Malignant Vision's Warboots
+						i(236804),	-- Malignant Vision's Wargreaves
 					}),
 					filter(TRINKET_F, {
 					}),
@@ -250,6 +321,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 			}),
 			n(SPECIAL, {
+				i(237434, {	-- Faceless Mask of the Nemesis (QI!/QS!)
+					["providers"] = {
+						{ "i", 239158 },	-- Nemesis Shard (GAMON)
+						{ "i", 239157 },	-- Nemesis Shard (HOGGER)
+					},
+				}),
 				header(HEADERS.Item, 211089, {	-- Voidfire Deathcycle
 					["description"] = "Collect each reagent and craft them together into cycle parts, return the parts to the bike in Dornogal to earn your own.\n\nEach special reagent is available from Visions with at least one mask active.",
 					["sourceQuest"] = 90129,	-- Voidfire Deathcycle Frame Tagged For Extraction
@@ -591,6 +668,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 								i(238924),	-- Void-Bound Orb of Mystery
 							},
 						}),
+						n(241702, {	-- Gamon <Hero of Orgrimmar>
+							["description"] = "Interact with his axe on the table on the right portion of the first floor of the Broken Tusk inn at the Valley of Strength",
+							--["coord"] = { X, Y, RE_HORRIFIC_ORGRIMMAR },
+							["g"] = {
+								i(239158),	-- Nemesis Shard (GAMON)
+							},
+						}),
 						n(238836, {	-- Void-Scarred Wolf
 							["description"] = "Interact with Wolf Rider gear in the Valleys of Honor and Wisdom to gain a stacking buff, then interact with a wolf rug at the Drag's leatherworking shop to spawn the rare.\n\nWolf rider packs are only visible with at least one mask active.",
 							["providers"] = {
@@ -689,6 +773,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 								{ 69.6, 68.2, RE_HORRIFIC_STORMWIND },
 							},
 							["g"] = { i(174926) },	-- Overly Sensitive Void Spectacles (TOY!)
+						}),
+						n(241698, {	-- Hogger
+							["description"] = "Interact with his WANTED poster just to the right of the entrance to the Mage Quarter area",
+							--["coord"] = { X, Y, RE_HORRIFIC_STORMWIND },
+							["g"] = {
+								i(239157),	-- Nemesis Shard (HOGGER)
+							},
+						}),
+						n(241718, {	-- Vengeful Voidspeaker
+							--["coord"] = { X, Y, RE_HORRIFIC_STORMWIND },
+							["g"] = {
+								i(238260, {	-- Faceless Mask of Vengeance (QI!/QS!)
+									["description"] = "Need at least one mask active",
+								}),
+							},
 						}),
 						n(242639, {	-- Voidfire Deathcycle Frame
 							["description"] = "Must be tagged to start progress towards unlocking the mount, will only be visible with at least one mask active.",

@@ -55,7 +55,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 	}),
 	-- #endif
 	filter(MOUNTS, {	-- AVAILABLE --
-		mount(1226983, {	-- Archmage's Great Raven (MOUNT!)
+		i(238994, {	-- Archmage's Great Raven (MOUNT!)
 			["timeline"] = { ADDED_11_1_5 },
 		}),
 		i(190636, {	-- Armored Siege Kodo (MOUNT!)
@@ -85,10 +85,6 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		mount(457485, {	-- Grizzly Hills Packmaster (MOUNT!)
 			["timeline"] = { ADDED_11_0_2 },
 		}),
-		--Maybe later in the Shop
-		--[[mount(315132, {	-- Gargantuan Grrloc (MOUNT!)
-			["timeline"] = { ADDED_10_0_0 },
-		}),--]]
 		-- #if NOT ANYCLASSIC
 		i(78924, {	-- Heart of the Aspects (MOUNT!)
 			["timeline"] = { ADDED_4_3_0 },
@@ -103,23 +99,16 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		mount(369451, {	-- Jade, Bright Foreseer (MOUNT!)
 			["timeline"] = { ADDED_10_0_2 },
 		}),
+		-- #if ANYCLASSIC
+		i(192455, {	-- Kalu'ak Whalebone Glider (MOUNT!)
+			["timeline"] = { ADDED_2_5_4_A },
+		}),
+		-- #endif
 		mount(308087, {	-- Lucky Yun (MOUNT!)
 			["timeline"] = { ADDED_9_0_2 },
 		}),
 		i(147901, {	-- Luminous Starseeker (MOUNT!)
 			["timeline"] = { ADDED_7_3_0 },
-		}),
-		i(233286, {	-- Meeksi Brewthief (MOUNT!)
-			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.99999" },	-- Removed April 28, 2025
-		}),
-		i(233284, {	-- Meeksi Rollingpaw (MOUNT!)
-			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.99999" },	-- Removed April 28, 2025
-		}),
-		i(233282, {	-- Meeksi Rufflefur (MOUNT!)
-			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.99999" },	-- Removed April 28, 2025
-		}),
-		i(233283, {	-- Meeksi Softpaw (MOUNT!)
-			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.99999" },	-- Removed April 28, 2025
 		}),
 		i(233285, {	-- Meeksi Teatuft (MOUNT!)
 			["timeline"] = { ADDED_11_1_0 },
@@ -130,20 +119,19 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(190581, {	-- Nether-Gorged Greatwyrm (MOUNT!)
 			["timeline"] = { ADDED_9_2_5 },
 		}),
-		mount(1226760, {	-- Prophet's Great Raven (MOUNT!)
+		i(238943, {	-- Prophet's Great Raven (MOUNT!)
 			["timeline"] = { ADDED_11_1_5 },
 		}),
+		-- #if ANYCLASSIC
+		i(184865, {	-- Reawakened Phase-Hunter (MOUNT!)
+			["timeline"] = { ADDED_2_5_1 },
+		}),
+		-- #endif
 		mount(347812, {	-- Sapphire Skyblazer (MOUNT!)
 			["timeline"] = { ADDED_9_0_5 },
 		}),
 		i(156564, {	-- Shu-zen, the Divine Sentinel (MOUNT!)
 			["timeline"] = { ADDED_8_0_1 },
-		}),
-		i(233019, {	-- Sky Witch's Sweeper (MOUNT!)
-			["timeline"] = { ADDED_11_0_7, "removed 11.1.5.99999" },	-- Removed March 31, 2025
-		}),
-		i(212228, {	-- Soaring Sky Fox (MOUNT!)
-			["timeline"] = { ADDED_11_0_5, "removed 11.1.5.99999" },	-- Removed March 31, 2025
 		}),
 		mount(308078, {	-- Squeakers, the Trickster (MOUNT!)
 			["timeline"] = { ADDED_8_3_0 },
@@ -157,15 +145,8 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(166776, {	-- Sylverian Dreamer (MOUNT!)
 			["timeline"] = { ADDED_8_2_0 },
 		}),
-		--Maybe later in the Shop
-		--[[mount(381529, {	-- Telix the Stormhorn (MOUNT!)
-			["timeline"] = { ADDED_10_0_0 },
-		}),--]]
 		mount(359843, {	-- Tangled Dreamweaver (MOUNT!)
 			["timeline"] = { ADDED_10_2_0 },
-		}),
-		i(233020, {	-- Twilight Witch's Sweeper (MOUNT!)
-			["timeline"] = { ADDED_11_0_7, "removed 11.1.7.99999" },	-- Removed March 31, 2025
 		}),
 		mount(346136, {	-- Viridian Phase-Hunter (MOUNT!)
 			["timeline"] = { ADDED_10_0_2 },	-- Not sure when exactly it got added to the shop.
@@ -198,15 +179,35 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(54811, {	-- Celestial Steed (MOUNT!)
 			["timeline"] = { ADDED_3_3_3, REMOVED_10_0_2_LAUNCH },	-- Removed from shop on Jan 2 2023, will be offered sometimes in Trading Post
 		}),
+		-- #if ANYCLASSIC
+		mount(466948, {	-- Chaos-Born Dreadwing (MOUNT!)
+			["timeline"] = { ADDED_4_4_1, REMOVED_4_4_2 },
+		}),
+		-- #endif
 		i(230200, {	-- Chaos-Forged Dreadwing (MOUNT!)
 			["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58238" },	-- Available through January 6, 2025
 		}),
+		-- #if ANYCLASSIC
+		mount(466983, {	-- Chaos-Born Gryphon (MOUNT!)
+			["timeline"] = { ADDED_4_4_1, REMOVED_4_4_2 },
+		}),
+		-- #endif
 		i(230184, {	-- Chaos-Forged Gryphon (MOUNT!)
 			["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58238" },	-- Available through January 6, 2025
 		}),
+		-- #if ANYCLASSIC
+		mount(466980, {	-- Chaos-Born Hippogryph (MOUNT!)
+			["timeline"] = { ADDED_4_4_1, REMOVED_4_4_2 },
+		}),
+		-- #endif
 		i(230185, {	-- Chaos-Forged Hippogryph (MOUNT!)
 			["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58238" },	-- Available through January 6, 2025
 		}),
+		-- #if ANYCLASSIC
+		mount(466977, {	-- Chaos-Born Wind Rider (MOUNT!)
+			["timeline"] = { ADDED_4_4_1, REMOVED_4_4_2 },
+		}),
+		-- #endif
 		i(230201, {	-- Chaos-Forged Wind Rider (MOUNT!)
 			["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58238" },	-- Available through January 6, 2025
 		}),
@@ -226,12 +227,30 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(128425, {	-- Illidari Felstalker (MOUNT!)
 			["timeline"] = { ADDED_6_2_2, REMOVED_10_1_7 },	-- Removed Oct 31, 2023
 		}),
+		i(233286, {	-- Meeksi Brewthief (MOUNT!)
+			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.99999" },	-- Removed April 28, 2025
+		}),
+		i(233284, {	-- Meeksi Rollingpaw (MOUNT!)
+			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.99999" },	-- Removed April 28, 2025
+		}),
+		i(233282, {	-- Meeksi Rufflefur (MOUNT!)
+			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.99999" },	-- Removed April 28, 2025
+		}),
+		i(233283, {	-- Meeksi Softpaw (MOUNT!)
+			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.99999" },	-- Removed April 28, 2025
+		}),
 		i(92724, {	-- Swift Windsteed (MOUNT!)
 			["timeline"] = { ADDED_5_1_0, REMOVED_8_1_0 },
 		}),
 		i(153539, {	-- Seabraid Stallion (MOUNT!)
 			["timeline"] = { ADDED_7_3_5, REMOVED_10_1_0 },	-- Removed 17th April 2023
 			["races"] = ALLIANCE_ONLY,
+		}),
+		i(233019, {	-- Sky Witch's Sweeper (MOUNT!)
+			["timeline"] = { ADDED_11_0_7, "removed 11.1.5.99999" },	-- Removed March 31, 2025
+		}),
+		i(212228, {	-- Soaring Sky Fox (MOUNT!)
+			["timeline"] = { ADDED_11_0_5, "removed 11.1.5.99999" },	-- Removed March 31, 2025
 		}),
 		i(229418, {	-- Trader's Gilded Brutosaur (MOUNT!)
 			["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58238" },	-- Removed January 6, 2025
@@ -241,6 +260,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		i(212229, {	-- Twilight Sky Prowler (MOUNT!)
 			["timeline"] = { ADDED_10_2_5, REMOVED_10_2_5 },	-- Removed Feb 29th, 2024
+		}),
+		i(233020, {	-- Twilight Witch's Sweeper (MOUNT!)
+			["timeline"] = { ADDED_11_0_7, "removed 11.1.7.99999" },	-- Removed March 31, 2025
 		}),
 		i(76755, {	-- Tyrael's Charger (MOUNT!)
 			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH },	-- removed from the store again on Jan 2 2023

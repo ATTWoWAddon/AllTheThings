@@ -1951,6 +1951,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			-- Lavish Luxuries
 			FirstCraft(81257, 435391);	-- Beautification Iris
 			FirstCraft(81255, 435389);	-- Remembrance Stone
+			-- Mounts
+			--FirstCraft(XXXXX, 1226650, ADDED_11_1_5);	-- Void-Crystal Panther
 		})),
 		filter(GEMS, {
 			i(213748),	-- Cognitive Bloodstone
@@ -2066,6 +2068,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(213762),	-- Sifted Cave Sand+
 			i(213763),	-- Sifted Cave Sand++
 			i(213764),	-- Sifted Cave Sand+++
+		}),
+		filter(MOUNTS, {
+			i(235712, {["timeline"] = {ADDED_11_1_5}}),	-- Void-Crystal Panther (MOUNT!)
 		}),
 		filter(PROFESSION_EQUIPMENT, {
 			i(215125, {["requireSkill"] = ENCHANTING}),		-- Enchanter's Crystal

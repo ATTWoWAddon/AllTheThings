@@ -4367,6 +4367,7 @@ i(232856, 4633);	-- Scruff
 i(221851, 4466);	-- Argos
 i(212791, 4410);	-- Beetriz
 i(235794, 4747);	-- Eye of Chaos
+i(236409, 4757);	-- Frumpy Softpaw
 i(208446, 4264);	-- Fyrn
 i(232857, 4635);	-- Goggles
 i(241193, 3245);	-- Helpful Workshop Bot
@@ -4375,11 +4376,10 @@ i(235980, 4756);	-- Scourge of the Aspects
 i(235793, 4748);	-- Void-Scarred Parrot
 i(235795, 4749);	-- Void-Scarred Scorpid
 i(235797, 4750);	-- Void-Scarred Tallstrider Chick
+i(238942, 4793);	-- Weechi
 i(223498, 4568);	-- Whoopy
 --- UNSORTED ---
 i(0, 4792);	-- Ada the Sweetest
-i(236409, 4757);	-- Frumpy Softpaw
 i(0, 4761);	-- Pascal the Wonder Pup
 i(239019, 4806);	-- Spicy Mean-Ball
 i(241188, 4804);	-- Swiftpaw
-i(238942, 4793);	-- Weechi

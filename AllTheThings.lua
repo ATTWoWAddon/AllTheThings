@@ -7215,12 +7215,32 @@ local function InitDataCoroutine()
 				end
 				backups[guid] = character;
 				characterData[guid] = nil;
-				-- app.print("Removed & Backed up Duplicate Data of Current Character:",character.text,guid)
+				local count = 0
+				for guid,char in pairs(backups) do
+					count = count + 1
+				end
+				app.print("Removed & Backed up Duplicate Data of Current Character:",character.text,guid,"[You have",count,"total character backups]")
+				app.print("Use '/att remove-deleted-character-backups help' for more info")
 			end
 			for _,guid in ipairs(toClean) do
 				app.FunctionRunner.Run(cleanCharacterFunc, guid);
 			end
 		end
+
+		-- Allows removing the character backups that ATT automatically creates for duplicated characters which are replaced by new ones
+		app.ChatCommands.Add("remove-deleted-character-backups", function(args)
+			local backups = 0
+			for guid,char in pairs(accountWideData._CharacterBackups) do
+				backups = backups + 1
+			end
+			accountWideData._CharacterBackups = nil
+			app.print("Cleaned up",backups,"character backups!")
+			return true
+		end, {
+			"Usage : /att remove-deleted-character-backups",
+			"Allows permanently removing all deleted character backup data",
+			"-- ATT removes and cleans out character-specific cached data which is stored by a character with the same Name-Realm as the logged-in character but a different character GUID. If you find yourself creating and deleting a lot of repeated characters, this will clean up those characters' data backups",
+		})
 	end);
 
 	app.HandleEvent("OnInit")
@@ -7230,10 +7250,6 @@ local function InitDataCoroutine()
 	for questID,completion in pairs(currentQuestsCache) do
 		if completion == 2 then currentQuestsCache[questID] = nil; end
 	end
-
-	-- Let a frame go before hitting the initial refresh to make sure as much time as possible is allowed for the operation
-	-- app.PrintDebug("Yield prior to Refresh")
-	yield();
 
 	-- Setup the use of profiles after a short delay to ensure that the layout window positions are collected
 	if not AllTheThingsProfiles then DelayedCallback(app.SetupProfiles, 5); end

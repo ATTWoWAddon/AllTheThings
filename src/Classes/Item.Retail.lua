@@ -282,7 +282,7 @@ local function RawSetItemInfoFromLink(t, link)
 		return link;
 	elseif t.CanRetry == nil then
 		local _t, id = cache.GetCached(t)
-		local itemName = L.ITEM_NAMES[id] or (t.sourceID and L.SOURCE_NAMES and L.SOURCE_NAMES[t.sourceID])
+		local itemName = t.baselink or L.ITEM_NAMES[id] or (t.sourceID and L.SOURCE_NAMES and L.SOURCE_NAMES[t.sourceID])
 			or "Item #" .. tostring(id) .. "*";
 		_t.title = L.FAILED_ITEM_INFO;
 		_t.link = nil;
