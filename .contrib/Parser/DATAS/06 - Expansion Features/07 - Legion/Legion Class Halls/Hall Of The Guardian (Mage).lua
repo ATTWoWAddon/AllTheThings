@@ -242,7 +242,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["maps"] = { 736 },	-- The Nexus (Scenario Map)
 							["g"] = {
 								i(127857, {	-- Aluneth
-									artifact(126),	-- Aluneth
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(126),	-- Aluneth
+									},
 								}),
 							},
 						}),
@@ -271,10 +274,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["maps"] = { 700 },	-- Icecrown Citadel (Scenario Map)
 							["g"] = {
 								i(128820, {	-- Felo'melorn
-									artifact(124),	-- Felo'melorn
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(124),	-- Felo'melorn
+									},
 								}),
 								i(133959, {	-- Heart of the Phoenix
-									artifact(124),	-- Heart of the Phoenix
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(124),	-- Heart of the Phoenix
+									},
 								}),
 							},
 						}),
@@ -330,7 +339,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 59.1, 43.0, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
 							["g"] = {
 								i(128862, {	-- Ebonchill
-									artifact(168),	-- Ebonchill
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(168),	-- Ebonchill
+									},
 								}),
 							},
 						}),

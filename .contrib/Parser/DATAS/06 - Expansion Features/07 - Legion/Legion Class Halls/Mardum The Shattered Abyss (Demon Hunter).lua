@@ -112,10 +112,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["maps"] = { 723 },	-- Violet Hold
 							["g"] = {
 								i(127829, {	-- Twinblades of the Deceiver [Main Hand]
-									artifact(26),	-- Standard
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(26),	-- Standard
+									},
 								}),
 								i(127830, {	-- Twinblades of the Deceiver [Off Hand]
-									artifact(26),	-- Standard
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(26),	-- Standard
+									},
 								}),
 							},
 						}),
@@ -125,10 +131,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["maps"] = { 723 },	-- Violet Hold
 							["g"] = {
 								i(127829, {	-- Twinblades of the Deceiver [Main Hand]
-									artifact(26),	-- Standard
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(26),	-- Standard
+									},
 								}),
 								i(127830, {	-- Twinblades of the Deceiver [Off Hand]
-									artifact(26),	-- Standard
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(26),	-- Standard
+									},
 								}),
 							},
 						}),
@@ -188,10 +200,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 74.9, 49.0, LEGION_DALARAN },
 							["g"] = {
 								i(128832, {	-- Aldrachi Warblades [Main Hand]
-									artifact(554),	-- Aldrachi Warblades [Main Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(554),	-- Aldrachi Warblades [Main Hand]
+									},
 								}),
 								i(128831, {	-- Aldrachi Warblades [Off Hand]
-									artifact(554),	-- Aldrachi Warblades [Off Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(554),	-- Aldrachi Warblades [Off Hand]
+									},
 								}),
 							},
 						}),
@@ -201,10 +219,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 74.9, 49.0, LEGION_DALARAN },
 							["g"] = {
 								i(128832, {	-- Aldrachi Warblades [Main Hand]
-									artifact(554),	-- Aldrachi Warblades [Main Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(554),	-- Aldrachi Warblades [Main Hand]
+									},
 								}),
 								i(128831, {	-- Aldrachi Warblades [Off Hand]
-									artifact(554),	-- Aldrachi Warblades [Off Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(554),	-- Aldrachi Warblades [Off Hand]
+									},
 								}),
 							},
 						}),

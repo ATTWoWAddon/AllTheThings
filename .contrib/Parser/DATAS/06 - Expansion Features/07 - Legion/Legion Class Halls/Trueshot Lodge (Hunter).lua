@@ -117,7 +117,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							["coord"] = { 43.7, 38.9, 745 },
 							["g"] = {
 								i(128861, {	-- Titanstrike
-									artifact(288),	--  Titanstrike
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(288),	--  Titanstrike
+									},
 								}),
 							},
 						}),
@@ -186,7 +189,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							["coord"] = { 32.3, 32.5, BROKEN_SHORE },
 							["g"] = {
 								i(128826, {	-- Thas'dorah, Legacy of the Windrunners
-									artifact(114),	-- Thas'dorah, Legacy of the Windrunners
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(114),	-- Thas'dorah, Legacy of the Windrunners
+									},
 								}),
 							},
 						}),
@@ -231,7 +237,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							["maps"] = { 694 },	-- Helmouth Shallows (Scenario Map)
 							["g"] = {
 								i(128808, {	-- Talonclaw
-									artifact(125),	-- Talonclaw
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(125),	-- Talonclaw
+									},
 								}),
 							},
 						}),

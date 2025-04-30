@@ -331,7 +331,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["g"] = {
 							title(332),	-- <Name>, Guardian of G'Hanir
 							i(128306, {	-- G'Hanir, the Mother Tree
-								artifact(45),	-- Standard Appearance
+								["ItemAppearanceModifierID"] = 9,
+								["groups"] = {
+									artifact(45),	-- Standard Appearance
+								},
 							}),
 						},
 					}),
@@ -647,7 +650,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 46.9, 69.5, DEADWIND_PASS },
 						["g"] = {
 							i(128858, {	-- Scythe of Elune
-								artifact(244),	-- Standard Appearance
+								["ItemAppearanceModifierID"] = 9,
+								["groups"] = {
+									artifact(244),	-- Standard Appearance
+								},
 							}),
 						},
 					}),
@@ -686,22 +692,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 73.8, 38.4, VALSHARAH },
 						["g"] = {
 							i(128860, {	-- Fangs of Ashamane
-								artifact(426, {	-- Standard Troll
-									["displayID"] = 66779,	-- Rainbow Druid Form
-									["races"] = { TROLL, ZANDALARI },
-								}),
-								artifact(427, {	-- Standard Tauren
-									["displayID"] = 66777,	-- Brown Druid Form
-									["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
-								}),
-								artifact(428, {	-- Standard Worgen / Kultiran
-									["displayID"] = 66778,	-- Light Brown Form
-									["races"] = { WORGEN, KULTIRAN },
-								}),
-								artifact(430, {	-- Standard Night Elf
-									["displayID"] = 66780,	-- Purple Druid Form
-									["races"] = { NIGHTELF },
-								}),
+								["ItemAppearanceModifierID"] = 9,
+								["groups"] = {
+									artifact(426, {	-- Standard Troll
+										["displayID"] = 66779,	-- Rainbow Druid Form
+										["races"] = { TROLL, ZANDALARI },
+									}),
+									artifact(427, {	-- Standard Tauren
+										["displayID"] = 66777,	-- Brown Druid Form
+										["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
+									}),
+									artifact(428, {	-- Standard Worgen / Kultiran
+										["displayID"] = 66778,	-- Light Brown Form
+										["races"] = { WORGEN, KULTIRAN },
+									}),
+									artifact(430, {	-- Standard Night Elf
+										["displayID"] = 66780,	-- Purple Druid Form
+										["races"] = { NIGHTELF },
+									}),
+								},
 							}),
 						},
 					}),
@@ -829,18 +838,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["g"] = {
 							i(128821, {	-- Claws of Ursoc
-								artifact(265, {	-- Standard Troll
-									["races"] = { TROLL, ZANDALARI },
-								}),
-								artifact(264, {	-- Standard Tauren
-									["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
-								}),
-								artifact(266, {	-- Standard Worgen / Kultiran
-									["races"] = { WORGEN, KULTIRAN },
-								}),
-								artifact(121, {	-- Standard Night Elf
-									["races"] = { NIGHTELF },
-								}),
+								["ItemAppearanceModifierID"] = 9,
+								["groups"] = {
+									artifact(265, {	-- Standard Troll
+										["races"] = { TROLL, ZANDALARI },
+									}),
+									artifact(264, {	-- Standard Tauren
+										["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
+									}),
+									artifact(266, {	-- Standard Worgen / Kultiran
+										["races"] = { WORGEN, KULTIRAN },
+									}),
+									artifact(121, {	-- Standard Night Elf
+										["races"] = { NIGHTELF },
+									}),
+								},
 							}),
 						},
 					}),

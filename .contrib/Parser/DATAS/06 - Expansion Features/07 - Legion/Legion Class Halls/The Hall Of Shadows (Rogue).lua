@@ -166,10 +166,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(128870, {	-- The Kingslayers [Main Hand]
-									artifact(228),	-- The Kingslayers [Main Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(228),	-- The Kingslayers [Main Hand]
+									},
 								}),
 								i(128869, {	-- The Kingslayers [Off Hand]
-									artifact(228),	-- The Kingslayers [Off Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(228),	-- The Kingslayers [Off Hand]
+									},
 								}),
 							},
 						}),
@@ -181,10 +187,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(128870, {	-- The Kingslayers [Main Hand]
-									artifact(228),	-- The Kingslayers [Main Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(228),	-- The Kingslayers [Main Hand]
+									},
 								}),
 								i(128869, {	-- The Kingslayers [Off Hand]
-									artifact(228),	-- The Kingslayers [Off Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(228),	-- The Kingslayers [Off Hand]
+									},
 								}),
 							},
 						}),
@@ -211,10 +223,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 40.6, 69.2, THE_CAPE_OF_STRANGLETHORN },
 							["g"] = {
 								i(128872, {	-- The Dreadblades [Main Hand]
-									artifact(692),	-- The Dreadblades [Main Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(692),	-- The Dreadblades [Main Hand]
+									},
 								}),
 								i(134552, {	-- The Dreadblades [Off Hand]
-									artifact(692),	-- The Dreadblades [Off Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(692),	-- The Dreadblades [Off Hand]
+									},
 								}),
 							},
 						}),
@@ -252,10 +270,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["maps"] = { 740, 741 },	-- Shadowgore Citadel (Scenario Map)
 							["g"] = {
 								i(128476, {	-- Fangs of the Devourer [Main Hand]
-									artifact(67),	-- Fangs of the Devourer [Main Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(67),	-- Fangs of the Devourer [Main Hand]
+									},
 								}),
 								i(128479, {	-- Fangs of the Devourer [Off Hand]
-									artifact(67),	-- Fangs of the Devourer [Off Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(67),	-- Fangs of the Devourer [Off Hand]
+									},
 								}),
 							},
 						}),

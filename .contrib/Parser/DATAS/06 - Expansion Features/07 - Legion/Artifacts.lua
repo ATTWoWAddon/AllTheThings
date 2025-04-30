@@ -178,6 +178,7 @@ root(ROOTS.ExpansionFeatures,
 	expansion(EXPANSION.LEGION, {
 		n(ARTIFACTS, {
 			["description"] = "\nPressing |cFFFFD700CTRL + Left Click|r will allow you to preview the appropriate skin and tint.\n\n",
+			["ItemAppearanceModifierID"] = 9,
 			["groups"] = {
 				ach(11143, {		-- Honoring the Past
 					["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
@@ -1059,42 +1060,45 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				cl(DEATHKNIGHT, {
 					i(128402, {	-- Maw of the Damned
-						BaseAppearance(1121487, {
-							artifact(107),	-- Standard
-							artifact(355),	-- Recover one of the Pillars
-							artifact(356),	-- Recover Light's Heart
-							artifact(357),	-- Complete first major Order Hall campaign
-						}),
-						ClassHallAppearance(1122025, {
-							artifact(358),	-- Finish Class Campaign
-							artifact(361),	-- Unlock 30 Artifact Traits
-							artifact(362),	-- Reach AK25
-							artifact(363),	-- Complete "This Side Up"
-						}),
-						BalanceOfPowerAppearance(1126532, {
-							artifact(368),	-- Complete Quest Line
-							artifact(367),	-- Complete "Unleashed Monstrosities"
-							artifact(360),	-- Complete a Mythic +15
-							artifact(369),	-- Complete "Glory of the Legion Hero"
-						}),
-						PrestigeAppearance(1310650, {
-							artifact(576),	-- Reach Honor Level 10
-							artifact(577),	-- Reach Honor Level 30
-							artifact(578),	-- Reach Honor Level 50
-							artifact(579),	-- Reach Honor Level 80
-						}),
-						ChallengeAppearance(1125172, {
-							artifact(364),	-- Complete Legionfall: Mage Tower
-							artifact(359),	-- Defeat Heroic Kil'jaeden with appearance
-							artifact(365),	-- Win 10 Rated BG's with appearance
-							artifact(366),	-- Defeat all Legion dungeon bosses with appearance
-						}),
-						HiddenAppearance(1347280, {
-							artifact(921),	-- Find Hidden Artifact Skin
-							artifact(922),	-- Complete 30 Legion Dungeons Hidden
-							artifact(923),	-- Complete 200 WQ Hidden
-							artifact(924),	-- Kill 1,000 Players Hidden
-						}),
+						["ItemAppearanceModifierID"] = 0,
+						["groups"] = {
+							BaseAppearance(1121487, {
+								artifact(107),	-- Standard
+								artifact(355),	-- Recover one of the Pillars
+								artifact(356),	-- Recover Light's Heart
+								artifact(357),	-- Complete first major Order Hall campaign
+							}),
+							ClassHallAppearance(1122025, {
+								artifact(358),	-- Finish Class Campaign
+								artifact(361),	-- Unlock 30 Artifact Traits
+								artifact(362),	-- Reach AK25
+								artifact(363),	-- Complete "This Side Up"
+							}),
+							BalanceOfPowerAppearance(1126532, {
+								artifact(368),	-- Complete Quest Line
+								artifact(367),	-- Complete "Unleashed Monstrosities"
+								artifact(360),	-- Complete a Mythic +15
+								artifact(369),	-- Complete "Glory of the Legion Hero"
+							}),
+							PrestigeAppearance(1310650, {
+								artifact(576),	-- Reach Honor Level 10
+								artifact(577),	-- Reach Honor Level 30
+								artifact(578),	-- Reach Honor Level 50
+								artifact(579),	-- Reach Honor Level 80
+							}),
+							ChallengeAppearance(1125172, {
+								artifact(364),	-- Complete Legionfall: Mage Tower
+								artifact(359),	-- Defeat Heroic Kil'jaeden with appearance
+								artifact(365),	-- Win 10 Rated BG's with appearance
+								artifact(366),	-- Defeat all Legion dungeon bosses with appearance
+							}),
+							HiddenAppearance(1347280, {
+								artifact(921),	-- Find Hidden Artifact Skin
+								artifact(922),	-- Complete 30 Legion Dungeons Hidden
+								artifact(923),	-- Complete 200 WQ Hidden
+								artifact(924),	-- Kill 1,000 Players Hidden
+							}),
+						},
 					}),
 					i(128292, {	-- Blades of the Fallen Prince [Main Hand]
 						BaseAppearance(1125285, {

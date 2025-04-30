@@ -128,10 +128,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["maps"] = { 698, 700, 701 },	-- Icecrown Citadel (Scenario Map)
 							["g"] = {
 								i(128292, {	-- Blades of the Fallen Prince [Main Hand]
-									artifact(111),	-- Blades of the Fallen Prince [Main Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(111),	-- Blades of the Fallen Prince [Main Hand]
+									},
 								}),
 								i(128293, {	-- Blades of the Fallen Prince [Off Hand]
-									artifact(111),	-- Blades of the Fallen Prince [Off Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(111),	-- Blades of the Fallen Prince [Off Hand]
+									},
 								}),
 								i(127009),	-- Fragment of Frostmourne
 							},
@@ -181,7 +187,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 49.4, 74.6, DEADWIND_PASS },
 							["g"] = {
 								i(128403, {	-- Apocalypse
-									artifact(110),	-- Standard
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(110),	-- Standard
+									},
 								}),
 							},
 						}),
@@ -192,7 +201,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 49.4, 74.6, DEADWIND_PASS },
 							["g"] = {
 								i(128403, {	-- Apocalypse
-									artifact(110),	-- Standard
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(110),	-- Standard
+									},
 								}),
 							},
 						}),

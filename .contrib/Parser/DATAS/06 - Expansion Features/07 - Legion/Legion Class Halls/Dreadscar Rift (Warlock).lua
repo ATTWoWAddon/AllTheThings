@@ -165,7 +165,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 49.4, 74.8, DEADWIND_PASS },
 							["g"] = {
 								i(128942, {	-- Ulthalesh, the Deadwind Harvester
-									artifact(294),	-- Ulthalesh, the Deadwind Harvester
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(294),	-- Ulthalesh, the Deadwind Harvester
+									},
 								}),
 							},
 						}),
@@ -176,7 +179,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 49.4, 74.8, DEADWIND_PASS },
 							["g"] = {
 								i(128942, {	-- Ulthalesh, the Deadwind Harvester
-									artifact(294),	-- Ulthalesh, the Deadwind Harvester
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(294),	-- Ulthalesh, the Deadwind Harvester
+									},
 								}),
 							},
 						}),
@@ -220,10 +226,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 54.0, 47.0, LEGION_DALARAN },
 							["g"] = {
 								i(128943, {	-- Skull of the Man'ari
-									artifact(811),	-- Skull of the Man'ari
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(811),	-- Skull of the Man'ari
+									},
 								}),
 								i(137246, {	-- Spine of Thal'kiel
-									artifact(811),	-- Spine of Thal'kiel
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(811),	-- Spine of Thal'kiel
+									},
 								}),
 							},
 						}),
@@ -260,7 +272,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 73.8, 42.9, LEGION_DALARAN },
 							["g"] = {
 								i(128941, {	-- Scepter of Sargeras
-									artifact(188),	-- Scepter of Sargeras
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(188),	-- Scepter of Sargeras
+									},
 								}),
 							},
 						}),

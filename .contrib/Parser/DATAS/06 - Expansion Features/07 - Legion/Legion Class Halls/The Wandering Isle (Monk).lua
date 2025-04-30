@@ -167,7 +167,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["maps"] = { 791, 792 },	-- Temple of the Jade Serpent (Scenario Map)
 							["g"] = {
 								i(128938, {	-- Fu Zan, the Wanderer's Companion
-									artifact(289),	-- Fu Zan, the Wanderer's Companion
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(289),	-- Fu Zan, the Wanderer's Companion
+									},
 								}),
 							},
 						}),
@@ -185,7 +188,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["maps"] = { 728 },	-- Terrace of Endless Spring (Scenario Map)
 							["g"] = {
 								i(128937, {	-- Sheilun, Staff of the Mists
-									artifact(123),	-- Sheilun, Staff of the Mists
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(123),	-- Sheilun, Staff of the Mists
+									},
 								}),
 							},
 						}),
@@ -220,10 +226,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["g"] = {
 								i(132745),	-- Essence of the Whirlwind (QI!)
 								i(128940, {	-- Fists of the Heavens [Main Hand]
-									artifact(290),	-- Fists of the Heavens [Main Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(290),	-- Fists of the Heavens [Main Hand]
+									},
 								}),
 								i(133948, {	-- Fists of the Heavens [Off Hand]
-									artifact(290),	-- Fists of the Heavens [Off Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(290),	-- Fists of the Heavens [Off Hand]
+									},
 								}),
 							},
 						}),
