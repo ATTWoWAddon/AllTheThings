@@ -471,8 +471,12 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 	}),
 	i(142000),	-- Rhinestone Sunglasses
 	i(14617),	-- Sawbones Shirt
-	i(112935),	-- Tusks of Mannoroth
-	i(141006),	-- The First Satyr's Spaulders
+	i(112935, {	-- Tusks of Mannoroth
+		["ItemAppearanceModifierID"] = 1,
+	}),
+	i(141006, {	-- The First Satyr's Spaulders
+		["ItemAppearanceModifierID"] = 1,
+	}),
 	i(169430, {	--  Unclaimed Black Market Container
 		["sym"] = {
 			{"select", "headerID", BLACK_MARKET_AUCTION_HOUSE },		-- Select BMAH header
