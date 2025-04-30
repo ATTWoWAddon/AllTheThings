@@ -1057,8 +1057,14 @@ namespace ATT
                 long ItemAppearanceModifierID = NestedItemAppearanceModifierID;
                 if (TryGetTypeDBObjectCollection<ItemModifiedAppearance>((long)sourceIDKey, out var itemModifiedAppearances))
                 {
-                    // this would need to be revised to ever work with modID/bonusID
-                    if(data.TryGetValue("ItemAppearanceModifierID", out var ItemAppearanceModifierIDObj)) ItemAppearanceModifierID = (long)ItemAppearanceModifierIDObj;
+                    // Firstly check to see if there's an ArtifactID associated with the data.
+                    if (data.TryGetValue("artifactID", out var artifactIDObj)
+                        && TryGetTypeDBObject((long)artifactIDObj, out ArtifactAppearance artifactAppearance)
+                        && artifactAppearance != null)
+                    {
+                        ItemAppearanceModifierID = artifactAppearance.ItemAppearanceModifierID;
+                    }
+                    else if (data.TryGetValue("ItemAppearanceModifierID", out var ItemAppearanceModifierIDObj)) ItemAppearanceModifierID = (long)ItemAppearanceModifierIDObj;
 
                     // Try to find the best match for the item appearance modifier ID.
                     long bestItemAppearanceModifierID = 9999;

@@ -78,6 +78,7 @@
     <Compile Include="CollectedStatus.cs" />
     <Compile Include="CustomConfiguration.cs" />
     <Compile Include="DataValidator.cs" />
+    <Compile Include="DB\Types\ArtifactAppearance.cs" />
     <Compile Include="DB\Types\WorldMapOverlay.cs" />
     <Compile Include="DB\Types\RaceTypeFlags.cs" />
     <Compile Include="DB\Types\ItemSearchName.cs" />

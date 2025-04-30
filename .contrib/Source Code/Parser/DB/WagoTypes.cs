@@ -15,6 +15,7 @@ namespace ATT.DB
         private static readonly Type[] _knownTypes = new Type[]
         {
             typeof(Achievement),
+            typeof(ArtifactAppearance),
             typeof(Criteria),
             typeof(CriteriaTree),
             typeof(GlyphProperties),
