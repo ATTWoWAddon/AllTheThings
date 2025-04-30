@@ -699,7 +699,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					i(216037),	-- Draconic Gladiator's Silk Amice
 					i(216041),	-- Draconic Gladiator's Silk Armbands
 					i(216039),	-- Draconic Gladiator's Silk Belt
-					i(216027),	-- Draconic Gladiator's Silk Blouse
+					i(216027, {	-- Draconic Gladiator's Silk Blouse
+						["ItemAppearanceModifierID"] = 159,
+					}),
 					i(216033),	-- Draconic Gladiator's Silk Cap
 					i(216038),	-- Draconic Gladiator's Silk Cord
 					i(216030),	-- Draconic Gladiator's Silk Gloves
