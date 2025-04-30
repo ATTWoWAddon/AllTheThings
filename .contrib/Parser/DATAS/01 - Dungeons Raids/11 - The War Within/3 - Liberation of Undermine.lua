@@ -430,32 +430,51 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						}),
 					}),
 				}),
-				n(QUESTS, {
-					q(89016, {	-- Members Only
-						["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
-					}),
-					q(89027, {	-- Fast Food
-						["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
-						["minReputation"] = { FACTION_GLRC, 2 },
-					}),
-					q(89018, {	-- Loyal Customer: Silver
-						["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
-						["minReputation"] = { FACTION_GLRC, 4 },
-						["g"] = { i(234389) },	-- Gallagio Loyalty Rewards Card: Silver
-					}),
-					q(89252, {	-- Need a Jump?
-						["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
-						["minReputation"] = { FACTION_GLRC, 6 },
-					}),
-					q(89024, {	-- Time is Money!
-						["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
-						["minReputation"] = { FACTION_GLRC, 6 },
-					}),
-					q(89019, {	-- Loyal Customer: Gold
-						["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
-						["minReputation"] = { FACTION_GLRC, 7 },
-					}),
-				}),
+				n(QUESTS, bubbleDownRep(FACTION_GLRC, {	-- Gallagio Loyalty Rewards Club
+					{		-- RENOWN 1 --
+						q(89016, {	-- Members Only
+							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
+						}),
+					}, {	-- RENOWN 2 --
+						q(89027, {	-- Fast Food
+							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
+						}),
+					}, {	-- RENOWN 3 --
+					}, {	-- RENOWN 4 --
+						q(89018, {	-- Loyal Customer: Silver
+							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
+							["g"] = { i(234389) },	-- Gallagio Loyalty Rewards Card: Silver
+						}),
+					}, {	-- RENOWN 5 --
+					}, {	-- RENOWN 6 --
+						q(89252, {	-- Need a Jump?
+							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
+						}),
+						q(89024, {	-- Time is Money!
+							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
+						}),
+					}, {	-- RENOWN 7 --
+						q(89019, {	-- Loyal Customer: Gold
+							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
+						}),
+					}, {	-- RENOWN 8 --
+					}, {	-- RENOWN 9 --
+					}, {	-- RENOWN 10 --
+						q(89020, {	-- Loyal Customer: Platinum
+							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
+						}),
+					}, {	-- RENOWN 11 --
+					}, {	-- RENOWN 12 --
+					}, {	-- RENOWN 13 --
+					}, {	-- RENOWN 14 --
+					}, {	-- RENOWN 15 --
+					}, {	-- RENOWN 16 --
+					}, {	-- RENOWN 17 --
+					}, {	-- RENOWN 18 --
+					}, {	-- RENOWN 19 --
+					}, {	-- RENOWN 20 --
+					},
+				})),
 				n(TREASURES, {
 					o(505248, {	-- Rune Dispenser
 						["description"] = "Interact with for a 1 in 10 chance for a free Crystalized Augment Rune.\n\nAt renown 14, you are guaranteed at least one.",
@@ -747,7 +766,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(88867),	-- Trashmaster Blazedump Trash
 			q(88829),	-- Scraps Trash
 			q(88859),	-- Globikus Trash
-			q(88850),	-- Melbo The Magnificent Trash
+			q(88850, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
 			q(88854),	-- The Junkmaker Trash
 			-- Normal
 			q(88833),	-- Guk Boomdog Trash
@@ -757,7 +776,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(88869),	-- Trashmaster Blazedump Trash
 			q(88830),	-- Scraps Trash
 			q(88861),	-- Globikus Trash
-			q(88852),	-- Melbo The Magnificent Trash
+			q(88852, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
 			q(88856),	-- The Junkmaker Trash
 			-- Heroic
 			q(88836),	-- Guk Boomdog Trash
@@ -767,7 +786,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(88866),	-- Trashmaster Blazedump Trash
 			q(88831),	-- Scraps Trash
 			q(88858),	-- Globikus Trash
-			q(88849),	-- Melbo The Magnificent Trash
+			q(88849, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
 			q(88853),	-- The Junkmaker Trash
 			-- Mythic
 			q(88834),	-- Guk Boomdog Trash
@@ -785,7 +804,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(89484),	-- Trashmaster Blazedump Trash first per week any difficulty
 			q(89477),	-- Scraps Trash first per week any difficulty
 			q(89482),	-- Globikus Trash first per week any difficulty
-			q(89480),	-- Melbo The Magnificent Trash first per week any difficulty
+			q(89480, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash first per week any difficulty
 			q(89481),	-- The Junkmaker Trash first per week any difficulty
 
 			q(89452),	-- Vexie Fullthrottle

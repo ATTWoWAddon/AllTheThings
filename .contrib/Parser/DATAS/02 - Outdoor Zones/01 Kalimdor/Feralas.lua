@@ -3390,6 +3390,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 5300,	-- Frayfeather Hippogryph
 				}),
 				-- #endif
+				i(8705, {	-- OOX-22/FE Distress Beacon
+					["description"] = "This item has a chance to drop from any creature in Feralas.",
+				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, i(216645, {	-- Mote of Darkness
 					["provider"] = { "n", 218241 },	-- Shadowy Figure

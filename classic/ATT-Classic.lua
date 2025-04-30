@@ -1526,6 +1526,25 @@ local function SearchForLink(link)
 end
 app.SearchForLink = SearchForLink;
 
+-- Force Bind on Pickup Items to require the profession within the craftables section.
+function ProcessBindOnPickupProfession(profession, requireSkill)
+	if profession.requireSkill then
+		requireSkill = profession.requireSkill;
+	elseif profession.b and profession.itemID then
+		profession.requireSkill = requireSkill;
+	end
+	if profession.g then
+		for i,o in ipairs(profession.g) do
+			ProcessBindOnPickupProfession(o, requireSkill);
+		end
+	end
+end
+function ProcessBindOnPickupProfessions(craftables)
+	for i,profession in ipairs(craftables) do
+		ProcessBindOnPickupProfession(profession, profession.requireSkill);
+	end
+end
+
 -- TODO: Move the generation of this into Parser
 function app:GetDataCache()
 	if app.Categories then
@@ -1602,12 +1621,14 @@ function app:GetDataCache()
 
 		-- Crafted Items
 		if app.Categories.Craftables then
+			local craftables = app.Categories.Craftables;
+			ProcessBindOnPickupProfessions(craftables);
 			tinsert(g, {
 				text = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,
 				icon = app.asset("Category_Crafting"),
 				DontEnforceSkillRequirements = true,
-				g = app.Categories.Craftables,
-				isCraftedCategory = true
+				isCraftedCategory = true,
+				g = craftables,
 			});
 		end
 

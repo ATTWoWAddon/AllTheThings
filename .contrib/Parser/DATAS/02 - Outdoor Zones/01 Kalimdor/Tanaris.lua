@@ -5787,6 +5787,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
+				i(8623, {	-- OOX-17/TN Distress Beacon
+					["description"] = "This item has a chance to drop from any creature in Tanaris and Zul'Farrak.",
+				}),
 				i(72028, {	-- Pattern: Tough Scorpid Boots (RECIPE!)
 					["timeline"] = { ADDED_4_3_0 },
 				}),

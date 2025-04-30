@@ -69,7 +69,7 @@ namespace ATT
             // GlyphGB
             if (TypeDB.TryGetValue("GlyphProperties", out IDictionary<long, IDBType> wagoGlyphDb))
             {
-                foreach(var obj in wagoGlyphDb.Values)
+                foreach (var obj in wagoGlyphDb.Values)
                 {
                     if (obj is GlyphProperties glyph)
                     {
@@ -86,7 +86,7 @@ namespace ATT
                     if (obj is TaxiNodes fp)
                     {
                         string englishName = fp.Name_lang;
-                        if(!string.IsNullOrEmpty(englishName))
+                        if (!string.IsNullOrEmpty(englishName))
                         {
                             if (!FlightPathDB.TryGetValue(fp.ID, out var flightPath))
                             {
@@ -1363,6 +1363,16 @@ namespace ATT
                 {
                     yield return objectSources;
                 }
+            }
+        }
+
+        private static IEnumerable<HashSet<IDictionary<string, object>>> GetAllMatchingSOURCED(string field, object idObj)
+        {
+            if (SOURCED.TryGetValue(field, out Dictionary<long, HashSet<IDictionary<string, object>>> fieldSources)
+                && idObj is long id && id > 0
+                && fieldSources.TryGetValue(id, out HashSet<IDictionary<string, object>> objectSources))
+            {
+                yield return objectSources;
             }
         }
 
@@ -3481,6 +3491,29 @@ namespace ATT
                             LogDebugWarn($"Item {pId} used for both Provider and Cost on same data. Removing 'provider'", data);
                             providers.RemoveAt(i);
                         }
+                    }
+                }
+            }
+
+            // Items with Spells which are themselves directly Sourced as Recipe -- remove that spellID from the Item
+            if (data.TryGetValue("itemID", out long itemID) && data.TryGetValue("spellID", out long spellID))
+            {
+                //foreach (var spellSources in GetAllMatchingSOURCED("spellID", spellID))
+                //{
+                //    if (spellSources.Any(d => !d.ContainsKey("itemID")))
+                //    {
+                //        LogDebug($"INFO: Removed spellID {spellID} from Item {itemID} which is Sourced as a standalone Spell", data);
+                //        data.Remove("spellID");
+                //        break;
+                //    }
+                //}
+                foreach (var recipeSources in GetAllMatchingSOURCED("recipeID", spellID))
+                {
+                    if (recipeSources.Any(d => d.TryGetValue("recipeID", out long recipeID) && recipeID == spellID))
+                    {
+                        LogDebug($"INFO: Removed spellID {spellID} from Item {itemID} which is Sourced as a Recipe", data);
+                        data.Remove("spellID");
+                        break;
                     }
                 }
             }

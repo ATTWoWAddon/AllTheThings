@@ -1981,25 +1981,10 @@ local SpecificSources = {
 		[app.HeaderConstants.COMMON_VENDOR_ITEMS] = true,
 		[app.HeaderConstants.DROPS] = true,
 	},
-};
-local function CleanTop(top, keephash)
-	if top then
-		if top.hash == keephash then return true end
-		local g = top.g;
-		if g then
-			local count, gi, cleaned = #g,nil,nil;
-			for i=count,1,-1 do
-				gi = g[i];
-				if CleanTop(gi, keephash) then
-					cleaned = true;
-				else
-					tremove(g, i);
-				end
-			end
-			return cleaned;
-		end
-	end
-end
+}
+local KeepSourced = {
+	criteriaID = true
+}
 local function GetThingSources(field, value)
 	if field == "achievementID" then
 		return SearchForField(field, value)
@@ -2062,13 +2047,13 @@ local function BuildSourceParent(group)
 						-- only show certain types of parents as sources.. typically 'Game World Things'
 						-- or if the parent is directly tied to an NPC
 						if thingKeys[parentKey] or parent.npcID or parent.creatureID then
-							-- keep the Criteria nested for Achievements, to show proper completion tracking under various Sources
-							if isAchievement then
-								-- app.PrintDebug("isAchieve:keepSource",thing.hash,"under",parent.hash)
-								parent._keepSource = thing.hash;
-							end
 							-- add the parent for display later
-							tinsert(parents, parent);
+							parent = CreateObject(parent, true)
+							parents[#parents + 1] = parent
+							-- achievement criteria can nest inside their Source for clarity
+							if isAchievement and KeepSourced[thing.key] then
+								NestObject(parent, thing, true)
+							end
 							break;
 						end
 						-- TODO: maybe handle mapID/instanceID in a different way as a fallback for things nested under headers within a zone....?
@@ -2078,16 +2063,24 @@ local function BuildSourceParent(group)
 				end
 				-- Things tagged with an npcID should show that NPC as a Source
 				if thing.key ~= "npcID" and (thing.npcID or thing.creatureID) then
-					local parentNPC = SearchForObject("creatureID", thing.npcID or thing.creatureID, "field") or {["npcID"] = thing.npcID or thing.creatureID};
-					tinsert(parents, parentNPC);
+					local parentNPC = CreateObject(SearchForObject("creatureID", thing.npcID or thing.creatureID, "field") or {["npcID"] = thing.npcID or thing.creatureID}, true)
+					parents[#parents + 1] = parentNPC
+					-- achievement criteria can nest inside their Source for clarity
+					if isAchievement and KeepSourced[thing.key] then
+						NestObject(parentNPC, thing, true)
+					end
 				end
 				-- Things tagged with many npcIDs should show all those NPCs as a Source
 				if thing.crs then
 					-- app.PrintDebug("thing.crs",#thing.crs)
 					local parentNPC;
 					for _,npcID in ipairs(thing.crs) do
-						parentNPC = SearchForObject("creatureID", npcID, "field") or {["npcID"] = npcID};
-						tinsert(parents, parentNPC);
+						parentNPC = CreateObject(SearchForObject("creatureID", npcID, "field") or {["npcID"] = npcID}, true)
+						parents[#parents + 1] = parentNPC
+						-- achievement criteria can nest inside their Source for clarity
+						if isAchievement and KeepSourced[thing.key] then
+							NestObject(parentNPC, thing, true)
+						end
 					end
 				end
 				-- Things tagged with providers should show the providers as a Source
@@ -2102,14 +2095,18 @@ local function BuildSourceParent(group)
 								or   (type == "n" and SearchForObject("npcID", id, "field"))
 								or   (type == "s" and SearchForObject("spellID", id, "field"));
 						if pRef then
-							pRef = CreateObject(pRef);
-							tinsert(parents, pRef);
+							pRef = CreateObject(pRef, true);
+							parents[#parents + 1] = pRef
 						else
 							pRef = (type == "i" and app.CreateItem(id))
 								or   (type == "o" and app.CreateObject(id))
 								or   (type == "n" and app.CreateNPC(id))
 								or   (type == "s" and app.CreateSpell(id));
-							tinsert(parents, pRef);
+							parents[#parents + 1] = pRef
+						end
+						-- achievement criteria can nest inside their Source for clarity
+						if isAchievement and thing.key == "criteriaID" then
+							NestObject(pRef, thing, true)
 						end
 					end
 				end
@@ -2119,11 +2116,11 @@ local function BuildSourceParent(group)
 						-- app.PrintDebug("Root Provider",type,id);
 						local pRef = SearchForObject("npcID", id, "field");
 						if pRef then
-							pRef = CreateObject(pRef);
-							tinsert(parents, pRef);
+							pRef = CreateObject(pRef, true);
+							parents[#parents + 1] = pRef
 						else
 							pRef = app.CreateNPC(id);
-							tinsert(parents, pRef);
+							parents[#parents + 1] = pRef
 						end
 					end
 				end
@@ -2137,47 +2134,36 @@ local function BuildSourceParent(group)
 				-- end
 			end
 		end
-		-- Raw Criteria inherently are not directly cached and will not find themselves, so instead
-		-- show their containing Achievement as the Source
+		-- Raw Criteria include their containing Achievement as the Source
 		-- re-popping this Achievement will do normal Sources for all the Criteria and be useful
 		if groupKey == "criteriaID" then
 			local achID = group.achievementID;
-			parent = SearchForObject("achievementID", achID, "key") or { achievementID = achID };
+			parent = CreateObject(SearchForObject("achievementID", achID, "key") or { achievementID = achID }, true)
 			-- app.PrintDebug("add achievement for empty criteria",achID)
-			tinsert(parents, parent);
+			parents[#parents + 1] = parent
 		end
+
+		if #parents == 0 then return end
+
 		-- if there are valid parent groups for sources, merge them into a 'Source(s)' group
-		if #parents > 0 then
-			-- app.PrintDebug("Found parents",#parents)
-			local sourceGroup = app.CreateRawText(L.SOURCES, {
-				description = L.SOURCES_DESC,
-				icon = 134441,
-				OnUpdate = app.AlwaysShowUpdate,
-				sourceIgnored = true,
-				skipFill = true,
-				SortPriority = -3.0,
-				g = {},
-				OnClick = app.UI.OnClick.IgnoreRightClick,
-			})
-			local clonedParent, keepSource;
-			local clones = {};
-			for _,parent in ipairs(parents) do
-				keepSource = parent._keepSource;
-				-- clear the flag from the Source
-				parent._keepSource = nil;
-				-- if keepSource then app.PrintDebug("Keeping Criteria under",parent.hash) end
-				clonedParent = keepSource and CreateObject(parent) or CreateObject(parent, true);
-				clonedParent.collectible = false;
-				if keepSource then
-					CleanTop(clonedParent, keepSource);
-				else
-					clonedParent.OnUpdate = app.AlwaysShowUpdate;	-- TODO: filter actual unobtainable sources...
-				end
-				tinsert(clones, clonedParent);
-			end
-			PriorityNestObjects(sourceGroup, clones, nil, app.RecursiveCharacterRequirementsFilter, app.RecursiveGroupRequirementsFilter);
-			NestObject(group, sourceGroup, nil, 1);
+		-- app.PrintDebug("Found parents",#parents)
+		local sourceGroup = app.CreateRawText(L.SOURCES, {
+			description = L.SOURCES_DESC,
+			icon = 134441,
+			OnUpdate = app.AlwaysShowUpdate,
+			sourceIgnored = true,
+			skipFill = true,
+			SortPriority = -3.0,
+			g = {},
+			OnClick = app.UI.OnClick.IgnoreRightClick,
+		})
+		for _,parent in ipairs(parents) do
+			-- if there's nothing nested under the parent, then force it to be visible
+			-- otherwise the visibility can be driven by the nested thing
+			parent.OnSetVisibility = not parent.g and app.AlwaysShowUpdate or nil	-- TODO: filter actual unobtainable sources...
 		end
+		PriorityNestObjects(sourceGroup, parents, nil, app.RecursiveCharacterRequirementsFilter, app.RecursiveGroupRequirementsFilter);
+		NestObject(group, sourceGroup, nil, 1);
 	end
 end
 app.AddEventHandler("OnNewPopoutGroup", BuildSourceParent)
@@ -6074,44 +6060,45 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 			AfterCombatCallback(self.Update, self);
 		end
 		-- Setup Event Handlers and register for events
-		self:SetScript("OnEvent", function(self, e, ...)
-			-- app.PrintDebug("Tradeskills.event",e,...)
-			if e == "TRADE_SKILL_LIST_UPDATE" then
-				if self:IsVisible() then
-					-- If it's not yours, don't take credit for it.
-					if C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild() then
-						self:SetVisible(false);
-						return false;
-					end
-
-					-- Check to see if ATT has information about this profession.
-					local tradeSkillID = app.GetTradeSkillLine();
-					if not tradeSkillID or #SearchForField("professionID", tradeSkillID) < 1 then
-						self:SetVisible(false);
-						return false;
-					end
+		local EventHandlers = {
+			TRADE_SKILL_SHOW = function(self)
+				-- If it's not yours, don't take credit for it.
+				if C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild() then
+					self:SetVisible(false)
+					return false
 				end
-				self:RefreshRecipes();
-			elseif e == "TRADE_SKILL_SHOW" then
+
+				-- Check to see if ATT has information about this profession.
+				local tradeSkillID = app.GetTradeSkillLine()
+				if not tradeSkillID or #SearchForField("professionID", tradeSkillID) < 1 then
+					self:SetVisible(false)
+					return false
+				end
+
 				if self.TSMCraftingVisible == nil then
-					self:SetTSMCraftingVisible(false);
+					self:SetTSMCraftingVisible(false)
 				end
 				if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
-					-- Check to see if ATT has information about this profession.
-					local tradeSkillID = app.GetTradeSkillLine();
-					if not tradeSkillID or #SearchForField("professionID", tradeSkillID) < 1 then
-						self:SetVisible(false);
-					else
-						self:SetVisible(true);
-					end
+					self:SetVisible(true)
 				end
-				self:RefreshRecipes(true);
-			elseif e == "TRADE_SKILL_CLOSE"
-				or e == "GARRISON_TRADESKILL_NPC_CLOSED" then
-				self:SetVisible(false);
-			end
-		end);
-		return;
+				self:RefreshRecipes(true)
+			end,
+			TRADE_SKILL_CLOSE = function(self)
+				self:SetVisible(false)
+			end,
+		}
+		EventHandlers.GARRISON_TRADESKILL_NPC_CLOSED = EventHandlers.TRADE_SKILL_CLOSE
+
+		self:SetScript("OnEvent", function(self, e, ...)
+			-- app.PrintDebug("Tradeskills.event",e,...)
+			local handler = EventHandlers[e]
+			if not handler then return end
+
+			-- app.PrintDebug("Tradeskills.event.handle",e)
+			handler(self, e, ...)
+			-- app.PrintDebugPrior("Tradeskills.event.done")
+		end)
+		return
 	end
 	if self:IsVisible() then
 		if TSM_API and TSMAPI_FOUR then

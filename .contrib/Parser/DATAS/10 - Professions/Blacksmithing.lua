@@ -9,41 +9,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		ach(18865),	-- Anvil Mastery III
 		ach(18864),	-- Anvil Mastery II
 		ach(18862),	-- Anvil Mastery I
-		ach(18851, {	-- Skeletons in the Lockbox
-			crit(61545, {	-- Silver Skeleton Key
-				["provider"] = { "i", 15869 },	-- Silver Skeleton Key
-			}),
-			crit(61546, {	-- Golden Skeleton Key
-				["provider"] = { "i", 15870 },	-- Golden Skeleton Key
-			}),
-			crit(61547, {	-- Truesilver Skeleton Key
-				["provider"] = { "i", 15871 },	-- Truesilver Skeleton Key
-			}),
-			crit(61548, {	-- Arcanite Skeleton Key
-				["provider"] = { "i", 15872 },	-- Arcanite Skeleton Key
-			}),
-			crit(61549, {	-- Cobalt Skeleton Key
-				["provider"] = { "i", 43854 },	-- Cobalt Skeleton Key
-			}),
-			crit(61550, {	-- Titanium Skeleton Key
-				["provider"] = { "i", 43853 },	-- Titanium Skeleton Key
-			}),
-			crit(61551, {	-- Obsidium Skeleton Key
-				["provider"] = { "i", 55053 },	-- Obsidium Skeleton Key
-			}),
-			crit(61552, {	-- Ghostly Skeleton Key
-				["provider"] = { "i", 82960 },	-- Ghostly Skeleton Key
-			}),
-			crit(61553, {	-- Monelite Skeleton Key
-				["provider"] = { "i", 159826 },	-- Monelite Skeleton Key
-			}),
-			crit(61554, {	-- Laestrite Skeleton Key
-				["provider"] = { "i", 171441 },	-- Laestrite Skeleton Key
-			}),
-			crit(61555, {	-- Serevite Skeleton Key
-				["provider"] = { "i", 191256 },	-- Serevite Skeleton Key
-			}),
-		}),
+		ach(18851),	-- Skeletons in the Lockbox (automated)
 	})),
 	expansion(EXPANSION.CLASSIC, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {

@@ -2105,6 +2105,8 @@ root(ROOTS.HiddenQuestTriggers, {
 		applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, {
 			n(QUESTS, {
 				q(90599),	-- Dialogue after completing The Eager Engineer
+				q(90597),	-- Arsenal: Children's Stormwind Guard Weapon Set
+				q(90598),	-- Arsenal: Children's Orgrimmar Guard Weapon Set
 			}),
 		})),
 	})),

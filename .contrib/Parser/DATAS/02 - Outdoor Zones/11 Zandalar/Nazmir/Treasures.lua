@@ -60,40 +60,64 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["questID"] = 49313,
 				["coord"] = { 35.5, 55.1, NAZMIR },
 			}),
-		}),
-		-- Daily Treasures
-		n(TREASURES, sharedData({["isDaily"] = true},{
-			o(276623, {	-- Treasure Chest	--TODO: this id is wrong
-				["questID"] = 50894,
-				["coord"] = { 34.0, 36.8, NAZMIR },
-			}),
-			o(282721, {	-- Treasure Chest
-				["questID"] = 50893,
-				["coords"] = {
-					{ 73.8, 48.6, NAZMIR },
-					{ 82.1, 48.2, NAZMIR },
-				},
-			}),
-			o(282723, {	-- Treasure Chest
-				["questID"] = 50895,
-				["coord"] = { 28.0, 81.8, NAZMIR },
-			}),
-		})),
-	}),
-})));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
-	m(ZANDALAR, {
-		m(NAZMIR, {
-			n(TREASURES, {
-				q(49904),	-- Nazmir repeatable random chest
-				q(49916),	-- Nazmir repeatable random chest
-				q(49913),	-- Nazmir repeatable random chest
-				q(49914),	-- Nazmir repeatable random chest
-				q(49899),	-- Nazmir repeatable random chest
-				q(49924),	-- Nazmir repeatable random chest
-				q(49925),	-- Nazmir repeatable random chest
-			}),
+			o_repeated(sharedData({	-- Treasure Chest
+				["isDaily"] = true,
+			},{
+				o(282722, {	-- Treasure Chest
+					["questID"] = 50894,
+					["coords"] = {
+						{ 34.0, 36.8, NAZMIR },
+						{ 31.5, 61.5, NAZMIR },
+					},
+				}),
+				o(282721, {	-- Treasure Chest
+					["questID"] = 50893,
+					["coords"] = {
+						{ 66.7, 50.1, NAZMIR },
+						{ 73.8, 48.6, NAZMIR },
+						{ 82.1, 48.2, NAZMIR },
+					},
+				}),
+				o(282723, {	-- Treasure Chest
+					["questID"] = 50895,
+					["coords"] = {
+						{ 28.0, 81.8, NAZMIR },
+						{ 25.1, 78.0, NAZMIR },
+					},
+				}),
+				o(279325, {	-- Treasure Chest
+					["questID"] = 49899,
+					["coords"] = {
+						{ 61.4, 57.6, NAZMIR },
+					},
+				}),
+				o(279373, {	-- Treasure Chest
+					["questID"] = 49916,
+					["coord"] = { 45.3, 48.4, NAZMIR },
+				}),
+				o(279367, {	-- Treasure Chest
+					["questID"] = 49914,
+					["coord"] = { 53.3, 35.4, NAZMIR },
+				}),
+				o(279379, {	-- Treasure Chest
+					["questID"] = 49925,
+					["coord"] = { 61.0, 21.0, NAZMIR },
+				}),
+				o(279366, {	-- Treasure Chest
+					["questID"] = 49913,
+					["coord"] = { 40.4, 27.2, NAZMIR },
+				}),
+				o(279352, {	-- Treasure Chest
+					["questID"] = 49904,
+					["coord"] = { 22.2, 46.5, NAZMIR },
+				}),
+				o(279378, {	-- Treasure Chest
+					["questID"] = 49924,
+					["coords"] = {
+						{ 71.2, 27.2, NAZMIR },
+					},
+				}),
+			})),
 		}),
 	}),
 })));

@@ -73,6 +73,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						{ 55.4, 67.1, NAZMIR },
 						{ 76.3, 61.0, NAZMIR },
 						{ 49.4, 48.9, NAZMIR },
+						{ 51.8, 24.3, NAZMIR },
 					},
 					["icon"] = 134439,
 				}),
