@@ -597,6 +597,30 @@ namespace ATT
                             }
                             break;
                         }
+                    case "ItemAppearanceModifierIDs_BonusID":
+                        {
+                            // The format of the ItemAppearanceModifierIDs table is a dictionary of Bonus ID <-> ItemAppearanceModifierID pairs.
+                            if (pair.Value is Dictionary<long, object> db)
+                            {
+                                foreach (var keyValuePair in db)
+                                {
+                                    ItemAppearanceModifierIDs_BonusID[keyValuePair.Key] = Convert.ToInt64(keyValuePair.Value);
+                                }
+                            }
+                            break;
+                        }
+                    case "ItemAppearanceModifierIDs_ModID":
+                        {
+                            // The format of the ItemAppearanceModifierIDs table is a dictionary of Mod ID <-> ItemAppearanceModifierID pairs.
+                            if (pair.Value is Dictionary<long, object> db)
+                            {
+                                foreach (var keyValuePair in db)
+                                {
+                                    ItemAppearanceModifierIDs_ModID[keyValuePair.Key] = Convert.ToInt64(keyValuePair.Value);
+                                }
+                            }
+                            break;
+                        }
                     case "ObjectDB":
                         {
                             // The format of the Object DB is a dictionary of Object ID <-> Object pairs.

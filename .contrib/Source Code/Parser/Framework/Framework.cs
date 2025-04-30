@@ -644,6 +644,16 @@ namespace ATT
         internal static Dictionary<long, long> GlyphDB { get; private set; } = new Dictionary<long, long>();
 
         /// <summary>
+        /// All of the ItemAppearanceModifierIDs that have been loaded into the database by their assigned bonusID.
+        /// </summary>
+        internal static Dictionary<long, long> ItemAppearanceModifierIDs_BonusID { get; private set; } = new Dictionary<long, long>();
+
+        /// <summary>
+        /// All of the ItemAppearanceModifierIDs that have been loaded into the database by their assigned modID.
+        /// </summary>
+        internal static Dictionary<long, long> ItemAppearanceModifierIDs_ModID { get; private set; } = new Dictionary<long, long>();
+
+        /// <summary>
         /// All of the objects that have been loaded into the database.
         /// </summary>
         internal static Dictionary<long, Dictionary<string, object>> ObjectDB { get; private set; } = new Dictionary<long, Dictionary<string, object>>();

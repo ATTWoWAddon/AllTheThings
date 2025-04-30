@@ -1026,6 +1026,12 @@ namespace ATT
                 long? sourceIDFromSourcesDB = null;
                 if (SOURCES.TryGetValue(sourceIDKey, out long s)) sourceIDFromSourcesDB = s;
 
+                long bonusID = 0;
+                if (data.TryGetValue("bonusID", out var obj)) bonusID = (long)obj;
+
+                long modID = NestedModID;
+                if (data.TryGetValue("modID", out obj)) modID = (long)obj;
+
                 // Firstly check to see if there's an ArtifactID associated with the data.
                 long ItemAppearanceModifierID = NestedItemAppearanceModifierID;
                 if (data.TryGetValue("artifactID", out var artifactIDObj)
@@ -1035,14 +1041,20 @@ namespace ATT
                     ItemAppearanceModifierID = artifactAppearance.ItemAppearanceModifierID;
                 }
                 else if (data.TryGetValue("ItemAppearanceModifierID", out var ItemAppearanceModifierIDObj)) ItemAppearanceModifierID = (long)ItemAppearanceModifierIDObj;
+                else if (bonusID > 0 && ItemAppearanceModifierIDs_BonusID.TryGetValue(bonusID, out long id))
+                {
+                    ItemAppearanceModifierID = id;
+                }
+                else if (ItemAppearanceModifierIDs_ModID.TryGetValue(modID, out id))
+                {
+                    ItemAppearanceModifierID = id;
+                }
 
                 // Attempt to get the SourceID from the ItemModifiedAppearanceDB
                 long? ItemModifiedAppearanceID = null;
                 ItemModifiedAppearance itemModifiedAppearance = null;
-                bool exactMatch = false;
                 if (TryGetTypeDBObjectCollection<ItemModifiedAppearance>((long)sourceIDKey, out var itemModifiedAppearances))
                 {
-
                     // Try to find the best match for the item appearance modifier ID.
                     long bestItemAppearanceModifierID = 9999;
                     foreach (var itemModifiedAppearanceObj in itemModifiedAppearances)
@@ -1052,7 +1064,6 @@ namespace ATT
                             // Well, we found the sourceID in the database. Let's report it.
                             if (appearance.ID == sourceIDFromSourcesDB)
                             {
-                                exactMatch = true;
                                 itemModifiedAppearance = appearance;
                                 break;
                             }
@@ -1072,6 +1083,11 @@ namespace ATT
                     if (itemModifiedAppearance != null)
                     {
                         ItemModifiedAppearanceID = itemModifiedAppearance.ID;
+                        if(itemModifiedAppearances.Count == 1)
+                        {
+                            // If its the only one, ignore it. This is common for old items that don't conform to modID/bonusID.
+                            ItemAppearanceModifierID = itemModifiedAppearance.ItemAppearanceModifierID;
+                        }
                     }
                 }
 
@@ -1082,13 +1098,7 @@ namespace ATT
 #pragma warning disable CS0162 // Unreachable code detected
                     // Details regarding how the selected SourceID was reached.
                     string message = $"{ItemModifiedAppearanceID} (ItemModifiedAppearanceID)";
-
-                    long bonusID = 0;
-                    if (data.TryGetValue("bonusID", out var obj)) bonusID = (long)obj;
                     if (bonusID > 0) message = $"{message} [BonusID: {bonusID}]";
-
-                    long modID = NestedModID;
-                    if (data.TryGetValue("modID", out obj)) modID = (long)obj;
                     if (modID > 0) message = $"{message} [ModID: {modID}]";
 
                     bool substituted = false;

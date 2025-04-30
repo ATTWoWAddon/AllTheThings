@@ -11769,7 +11769,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(211987),	-- Warsculptor's Furred Plastron
 					}),
 				})),
-				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898, ["ItemAppearanceModifierID"] = 157 }, {
+				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
 					cl(DEATHKNIGHT, {
 						i(211997),	-- Exhumed Centurion's Drape
 						i(211998),	-- Exhumed Centurion's Manacles
@@ -12155,7 +12155,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(218706),	-- Forged Gladiator's Shawl
 					}),
 				})),
-				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107, ["ItemAppearanceModifierID"] = 158 }, {
+				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107 }, {
 					cl(DEATHKNIGHT, {
 						i(211997),	-- Exhumed Centurion's Drape
 						i(211998),	-- Exhumed Centurion's Manacles
@@ -13447,7 +13447,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(229238),	-- Enforcer's Backalley Vestplate
 					}),
 				})),
-				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898, ["ItemAppearanceModifierID"] = 157 }, {
+				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
 					cl(DEATHKNIGHT, {
 						i(229248),	-- Cauldron Champion's Spined Cloak
 						i(229249),	-- Cauldron Champion's Wraps
@@ -13836,7 +13836,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(229769),	-- Prized Gladiator's Plate Wristguards
 					}),
 				})),
-				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107, ["ItemAppearanceModifierID"] = 158 }, {
+				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107 }, {
 					cl(DEATHKNIGHT, {
 						i(229248),	-- Cauldron Champion's Spined Cloak
 						i(229249),	-- Cauldron Champion's Wraps
