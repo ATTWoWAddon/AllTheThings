@@ -6,6 +6,7 @@ local WOD_CRAFTED_ITEM = function(id, upgradeItem)
 	return
 	i(id, {	-- Base Item 1/6
 		["bonusID"] = 525,
+		["ItemAppearanceModifierID"] = 0,
 		["g"] = bubbleDown({["cost"] = upgradeItem and { { "i", upgradeItem, 1 } }},{
 			i(id, {	-- Upgrade 1 2/6
 				["bonusID"] = 558,
@@ -77,6 +78,7 @@ local WOD_CRAFTED_ITEM_DF_BASE = function(id)
 	return
 	i(id, {
 		["bonusID"] = 525,
+		["ItemAppearanceModifierID"] = 0,
 	});
 end
 

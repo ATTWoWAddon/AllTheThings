@@ -10,6 +10,7 @@ local TIMEWALKING_DUNGEON_CREATURE_IDS = {};
 local function inst_tw(id, t)
 	t = inst(id, t);
 	t.difficultyID = DIFFICULTY.DUNGEON.TIMEWALKING;
+	t.ItemAppearanceModifierID = 0;
 
 	-- Look for the CreatureID's
 	local groups = t.groups or t.g;

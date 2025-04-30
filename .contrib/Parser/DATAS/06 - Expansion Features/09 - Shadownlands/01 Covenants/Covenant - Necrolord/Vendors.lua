@@ -16,7 +16,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 		n(VENDORS, {
 			n(175310, {	-- Mellisa Fate <Raid Finder Nathrian Warsmith>
 				["coord"] = { 60.8, 44.3, SEAT_OF_THE_PRIMUS },
-				["g"] = bubbleDown({ ["modID"] = 4 }, {	-- LFR
+				["g"] = bubbleDown({ ["modID"] = 4, ["ItemAppearanceModifierID"] = 0, }, {	-- LFR
 					i(184253, {	-- Abdomen Chopper
 						["cost"] = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
@@ -1074,7 +1074,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			n(175312, {	-- Taiya Tacere <Heroic Nathrian Warsmith>
 				["coord"] = { 61.2, 47.4, SEAT_OF_THE_PRIMUS },
-				["g"] = bubbleDown({ ["modID"] = 5 }, {	-- Heroic
+				["g"] = bubbleDown({ ["modID"] = 5, ["ItemAppearanceModifierID"] = 0, }, {	-- Heroic
 					i(184253, {	-- Abdomen Chopper
 						["cost"] = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213

@@ -576,7 +576,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			n(175415, {	-- Harkoth <Heroic Nathrian Weaponsmith>
 				["coord"] = { 49.4, 54.4, THE_ROOTS },
-				["g"] = bubbleDown({ ["modID"] = 5 }, {	-- Heroic
+				["g"] = bubbleDown({ ["modID"] = 5, ["ItemAppearanceModifierID"] = 0, }, {	-- Heroic
 					i(179544, {	-- Ashcarved Sledgehammer
 						["cost"] = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213
@@ -897,7 +897,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			n(175413, {	-- Sparklebreeze <Raid Finder Nathrian Weaponsmith>
 				["coord"] = { 46.9, 54.3, THE_ROOTS },
-				["g"] = bubbleDown({ ["modID"] = 4 }, {	-- LFR
+				["g"] = bubbleDown({ ["modID"] = 4, ["ItemAppearanceModifierID"] = 0, }, {	-- LFR
 					i(179544, {	-- Ashcarved Sledgehammer
 						["cost"] = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
@@ -1098,7 +1098,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			n(175417, {	-- Sulanoom <Mythic Nathrian Weaponsmith>
 				["coord"] = { 49.4, 54.4, THE_ROOTS },
-				["g"] = bubbleDown({ ["modID"] = 6 }, {	-- Mythic
+				["g"] = bubbleDown({ ["modID"] = 6, }, {	-- Mythic
 					i(179544, {	-- Ashcarved Sledgehammer
 						["cost"] = {
 							{ "i", modItemId(183893,06), 1 },	-- Mythic Abominable Anima Spherule - 226

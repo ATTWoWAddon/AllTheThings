@@ -763,18 +763,19 @@ namespace ATT
                 //LogDebug($"INFO: Applied inherited modID {NestedModID} for item {data.GetString("itemID")}");
                 data["modID"] = NestedModID;
             }
-            // Apply the inherited ItemAppearanceModifierID for items which do not specify their own ItemAppearanceModifierID
-            if (NestedItemAppearanceModifierID > 0 && data.ContainsKey("itemID") && !data.ContainsKey("ItemAppearanceModifierID"))
-            {
-                //LogDebug($"INFO: Applied inherited ItemAppearanceModifierID {NestedItemAppearanceModifierID} for item {data.GetString("itemID")}");
-                data["ItemAppearanceModifierID"] = NestedItemAppearanceModifierID;
-            }
             if (data.ContainsKey("ignoreBonus"))
             {
                 // will be removed later
                 data.Remove("modID");
                 data.Remove("bonusID");
+                data["ItemAppearanceModifierID"] = 0L;
                 //Log("Removed ignoreBonus modID", data.GetString("itemID"));
+            }
+            // Apply the inherited ItemAppearanceModifierID for items which do not specify their own ItemAppearanceModifierID
+            else if (NestedItemAppearanceModifierID > 0 && data.ContainsKey("itemID") && !data.ContainsKey("ItemAppearanceModifierID"))
+            {
+                //LogDebug($"INFO: Applied inherited ItemAppearanceModifierID {NestedItemAppearanceModifierID} for item {data.GetString("itemID")}");
+                data["ItemAppearanceModifierID"] = NestedItemAppearanceModifierID;
             }
 
             if (data.TryGetValue("artifactID", out long tempId)

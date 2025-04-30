@@ -460,7 +460,7 @@ root(ROOTS.NeverImplemented, {
 			-- Load In Game
 			i(165266, {["sourceID"] = 101572 }),	-- Fallback Weapon - Bow
 			i(167144, {["sourceID"] = 103291 }),	-- QA Combat Test Hunter Bow
-			i(182563),	-- NPE Weapon Bow
+			i(182563, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon Bow
 			i(182563, {	-- NPE Weapon Bow
 				["bonusID"] = 6895,
 			}),
@@ -479,8 +479,8 @@ root(ROOTS.NeverImplemented, {
 			-- Load In Game
 			i(62329),	-- Dire Slasher (never added)
 			i(115446),	-- Brianium Dagger
-			i(182564),	-- NPE Weapon Dagger AGI
-			i(182573),	-- NPE Weapon Dagger AGI 2
+			i(182564, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon Dagger AGI
+			i(182573, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon Dagger AGI 2
 			-- ItemID/Retrieving
 			i(23422),	-- Engraved Dagger
 			i(38247),	-- Entrail Render
@@ -541,8 +541,8 @@ root(ROOTS.NeverImplemented, {
 			i(117010),	-- Forester's Axe	(Never added in Game)
 			i(164967, {["sourceID"] = 101181 }),	-- Steelforged Axe (CREATURE USE - TIER 2 VISUAL ONLY)
 			i(165264, {["sourceID"] = 101570 }),	-- Fallback Weapon - 1H Axe
-			i(182562),	-- NPE Weapon 1H Axe AGI
-			i(182577),	-- NPE Weapon 1H Axe AGI 2
+			i(182562, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon 1H Axe AGI
+			i(182577, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon 1H Axe AGI 2
 			-- ItemID/Retrieving
 			i(49456),	-- Will of the Earth
 			i(108779),	-- 7.0 PH Weapon - 1H Axe Agi
@@ -556,7 +556,7 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(ONE_HANDED_MACES, {
 			-- Load In Game
-			i(182578),	-- NPE Weapon 1H Mace AGI
+			i(182578, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon 1H Mace AGI
 			-- ItemID/Retrieving
 			i(38468),	-- Kalu'ak Peacebringer
 			i(108791),	-- 7.0 PH Weapon - 1H Mace Agi
@@ -578,9 +578,9 @@ root(ROOTS.NeverImplemented, {
 			i(162447),	-- Marrow Render
 			i(165273, {["sourceID"] = 101578 }),	-- Fallback Weapon - 1H Sword
 			i(167143, {["sourceID"] = 103290 }),	-- QA Combat Test 1h Sword
-			i(182567),	-- NPE Weapon 1H Sword AGI
-			i(182574),	-- NPE Weapon 1H Sword AGI 2
-			i(182575),	-- NPE Weapon 1H Sword AGI 3
+			i(182567, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon 1H Sword AGI
+			i(182574, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon 1H Sword AGI 2
+			i(182575, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon 1H Sword AGI 3
 			-- ItemID/Retrieving
 			i(43922),	-- Honed Lightblade
 			i(47846),	-- Cruel Barb (Glow, Purple - Low)
@@ -662,8 +662,8 @@ root(ROOTS.NeverImplemented, {
 			-- Load In Game
 			i(165276, {["sourceID"] = 101581 }),	-- Fallback Weapon - Shield
 			i(167140, {["sourceID"] = 103287 }),	-- QA Combat Test  Shield 1
-			i(182570),	-- NPE Weapon Shield
-			i(182576),	-- NPE Weapon Shield 2
+			i(182570, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon Shield
+			i(182576, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon Shield 2
 			-- ItemID/Retrieving
 			i(34415),	-- Crystaline Shard Shield
 			i(60220),	-- Theodore's Heirloom Buckler
@@ -678,8 +678,8 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(STAVES, {
 			-- Load In Game
-			i(182566),	-- NPE Weapon Staff AGI
-			i(182572),	-- NPE Weapon Staff INT
+			i(182566, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon Staff AGI
+			i(182572, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon Staff INT
 			i(180491),	-- Wingdancer's Spire
 			-- ItemID/Retrieving
 
@@ -714,7 +714,7 @@ root(ROOTS.NeverImplemented, {
 			i(80984),	-- Expropriator's Greataxe
 			i(165265, {["sourceID"] = 101571 }),	-- Fallback Weapon - 2H Axe
 			i(167142, {["sourceID"] = 103289 }),	-- QA Combat Test 2H Axe
-			i(182568),	-- NPE Weapon 2H Axe STR
+			i(182568, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon 2H Axe STR
 			-- ItemID/Retrieving
 			i(23420),	-- Engraved Axe
 			i(38244),	-- Valorous Exterminator (Never added)
@@ -727,9 +727,9 @@ root(ROOTS.NeverImplemented, {
 			-- Load In Game
 			i(165263, {["sourceID"] = 101569 }),	-- Fallback Weapon - 2H Mace
 			i(169818),	-- Quilboar Club
-			i(182565),	-- NPE Weapon 2H Mace STR
-			i(182569),	-- NPE Weapon 2H Sword STR
-			i(182579),	-- NPE Weapon 2H Sword STR 2
+			i(182565, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon 2H Mace STR
+			i(182569, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon 2H Sword STR
+			i(182579, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon 2H Sword STR 2
 			-- ItemID/Retrieving
 			i(108794),	-- 7.0 PH Weapon - 2H Mace Agi
 			i(108795),	-- 7.0 PH Weapon - 2H Mace Str
@@ -771,7 +771,7 @@ root(ROOTS.NeverImplemented, {
 		filter(WARGLAIVES, {
 			-- Load In Game
 			i(151138),	-- Warglaive of Azzinoth [This version not implemented; was testing for transmog]
-			i(182571),	-- NPE Weapon Warglaive AGI
+			i(182571, { ["ItemAppearanceModifierID"] = 153 }),	-- NPE Weapon Warglaive AGI
 			-- ItemID/Retrieving
 			i(165682),	-- Fallback Weapon - Warglaives
 		}),
