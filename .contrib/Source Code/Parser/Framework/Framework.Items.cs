@@ -733,6 +733,22 @@ namespace ATT
                 SOURCES[specificItemID] = newSourceID;
             }
 
+            public static void AddItemSourceID(KeyValuePair<decimal, object> itemSource)
+            {
+                if (itemSource.Value.TryConvert(out long sourceID))
+                {
+                    SOURCES[itemSource.Key] = sourceID;
+                }
+            }
+
+            public static void AddItemSourceID(KeyValuePair<long, object> itemSource)
+            {
+                if (itemSource.Value.TryConvert(out long sourceID))
+                {
+                    SOURCES[itemSource.Key] = sourceID;
+                }
+            }
+
             /// <summary>
             /// Merge the data into the item database.
             /// NOTE: Only data containing an itemID will merge.<para/>
@@ -1075,23 +1091,21 @@ namespace ATT
                         if (data.TryGetValue("modID", out obj)) modID = (long)obj;
                         if (modID > 0) message = $"{message} [ModID: {modID}]";
 
-                        message = $"{message} [ModifierID: {ItemAppearanceModifierID}";
-                        if (exactMatch && itemModifiedAppearance != null && itemModifiedAppearance.ItemAppearanceModifierID != ItemAppearanceModifierID)
+                        message = $"{message} [ModifierID: {ItemAppearanceModifierID}]";
+                        if (itemModifiedAppearance != null && itemModifiedAppearance.ItemAppearanceModifierID != ItemAppearanceModifierID)
                         {
-                            message = $"{message}, Used Instead: {itemModifiedAppearance.ItemAppearanceModifierID}";
+                            message = $"{message} [Used Instead: {itemModifiedAppearance.ItemAppearanceModifierID}]";
                         }
-                        message += "]";
-
-                        if (ItemModifiedAppearanceID != sourceIDFromSourcesDB)
+                        if (ItemAppearanceModifierID > 0 && (exactMatch || (itemModifiedAppearance != null && itemModifiedAppearance.ItemAppearanceModifierID != ItemAppearanceModifierID)))
+                        {
+                            LogWarn($"Item:{sourceIDKey} SourceID == {message}");
+                        }
+                        else if (ItemModifiedAppearanceID != sourceIDFromSourcesDB)
                         {
                             if (itemModifiedAppearance != null)
                             {
                                 LogWarn($"Item:{sourceIDKey} SourceID {sourceIDFromSourcesDB} != {message}");
                             }
-                        }
-                        else if(exactMatch && ItemAppearanceModifierID > 0 && itemModifiedAppearance != null && itemModifiedAppearance.ItemAppearanceModifierID != ItemAppearanceModifierID)
-                        {
-                            LogWarn($"Item:{sourceIDKey} SourceID == {message}");
                         }
                         else if (DoSpammyDebugLogging)
                         {
@@ -1100,13 +1114,15 @@ namespace ATT
                     }
                     else
                     {
-                        message = $"{message} [ModifierID: {ItemAppearanceModifierID}";
-                        if (exactMatch && itemModifiedAppearance != null && itemModifiedAppearance.ItemAppearanceModifierID != ItemAppearanceModifierID)
+                        bool important = false;
+                        message = $"{message} [ModifierID: {ItemAppearanceModifierID}]";
+                        if (itemModifiedAppearance != null && itemModifiedAppearance.ItemAppearanceModifierID != ItemAppearanceModifierID)
                         {
-                            message = $"{message}, Used Instead: {itemModifiedAppearance.ItemAppearanceModifierID}";
+                            message = $"{message} [Used Instead: {itemModifiedAppearance.ItemAppearanceModifierID}]";
+                            important = true;
                         }
-                        message += "]";
-                        LogDebug($"INFO: Item:{sourceIDKey} Using SourceID from {message}");
+                        if(important) LogWarn($"Item:{sourceIDKey} Using SourceID from {message}");
+                        else LogDebug($"INFO: Item:{sourceIDKey} Using SourceID from {message}");
                     }
 #pragma warning restore CS0162 // Unreachable code detected
 
