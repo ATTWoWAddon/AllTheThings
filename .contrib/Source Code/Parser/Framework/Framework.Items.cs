@@ -1050,21 +1050,22 @@ namespace ATT
                 long? sourceIDFromSourcesDB = null;
                 if (SOURCES.TryGetValue(sourceIDKey, out long s)) sourceIDFromSourcesDB = s;
 
+                // Firstly check to see if there's an ArtifactID associated with the data.
+                long ItemAppearanceModifierID = NestedItemAppearanceModifierID;
+                if (data.TryGetValue("artifactID", out var artifactIDObj)
+                    && TryGetTypeDBObject((long)artifactIDObj, out ArtifactAppearance artifactAppearance)
+                    && artifactAppearance != null)
+                {
+                    ItemAppearanceModifierID = artifactAppearance.ItemAppearanceModifierID;
+                }
+                else if (data.TryGetValue("ItemAppearanceModifierID", out var ItemAppearanceModifierIDObj)) ItemAppearanceModifierID = (long)ItemAppearanceModifierIDObj;
+
                 // Attempt to get the SourceID from the ItemModifiedAppearanceDB
                 long? ItemModifiedAppearanceID = null;
                 ItemModifiedAppearance itemModifiedAppearance = null;
                 bool exactMatch = false;
-                long ItemAppearanceModifierID = NestedItemAppearanceModifierID;
                 if (TryGetTypeDBObjectCollection<ItemModifiedAppearance>((long)sourceIDKey, out var itemModifiedAppearances))
                 {
-                    // Firstly check to see if there's an ArtifactID associated with the data.
-                    if (data.TryGetValue("artifactID", out var artifactIDObj)
-                        && TryGetTypeDBObject((long)artifactIDObj, out ArtifactAppearance artifactAppearance)
-                        && artifactAppearance != null)
-                    {
-                        ItemAppearanceModifierID = artifactAppearance.ItemAppearanceModifierID;
-                    }
-                    else if (data.TryGetValue("ItemAppearanceModifierID", out var ItemAppearanceModifierIDObj)) ItemAppearanceModifierID = (long)ItemAppearanceModifierIDObj;
 
                     // Try to find the best match for the item appearance modifier ID.
                     long bestItemAppearanceModifierID = 9999;
