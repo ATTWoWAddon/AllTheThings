@@ -1080,50 +1080,47 @@ namespace ATT
                 if (sourceID.HasValue && sourceID > 0)
                 {
 #pragma warning disable CS0162 // Unreachable code detected
+                    // Details regarding how the selected SourceID was reached.
                     string message = $"{ItemModifiedAppearanceID} (ItemModifiedAppearanceID)";
+
+                    long bonusID = 0;
+                    if (data.TryGetValue("bonusID", out var obj)) bonusID = (long)obj;
+                    if (bonusID > 0) message = $"{message} [BonusID: {bonusID}]";
+
+                    long modID = NestedModID;
+                    if (data.TryGetValue("modID", out obj)) modID = (long)obj;
+                    if (modID > 0) message = $"{message} [ModID: {modID}]";
+
+                    bool substituted = false;
+                    message = $"{message} [ModifierID: {ItemAppearanceModifierID}]";
+                    if (itemModifiedAppearance != null && itemModifiedAppearance.ItemAppearanceModifierID != ItemAppearanceModifierID)
+                    {
+                        message = $"{message} [Used Instead: {itemModifiedAppearance.ItemAppearanceModifierID}]";
+                        substituted = true;
+                    }
+
                     if (sourceIDFromSourcesDB.HasValue)
                     {
-                        long bonusID = 0;
-                        if (data.TryGetValue("bonusID", out var obj)) bonusID = (long)obj;
-                        if (bonusID > 0) message = $"{message} [BonusID: {bonusID}]";
-
-                        long modID = NestedModID;
-                        if (data.TryGetValue("modID", out obj)) modID = (long)obj;
-                        if (modID > 0) message = $"{message} [ModID: {modID}]";
-
-                        message = $"{message} [ModifierID: {ItemAppearanceModifierID}]";
-                        if (itemModifiedAppearance != null && itemModifiedAppearance.ItemAppearanceModifierID != ItemAppearanceModifierID)
+                        if (ItemModifiedAppearanceID != sourceIDFromSourcesDB)
                         {
-                            message = $"{message} [Used Instead: {itemModifiedAppearance.ItemAppearanceModifierID}]";
-                        }
-                        if (ItemAppearanceModifierID > 0 && (exactMatch || (itemModifiedAppearance != null && itemModifiedAppearance.ItemAppearanceModifierID != ItemAppearanceModifierID)))
-                        {
-                            LogWarn($"Item:{sourceIDKey} SourceID == {message}");
-                        }
-                        else if (ItemModifiedAppearanceID != sourceIDFromSourcesDB)
-                        {
+                            // If we found a modified appearance, then report the difference.
                             if (itemModifiedAppearance != null)
                             {
                                 LogWarn($"Item:{sourceIDKey} SourceID {sourceIDFromSourcesDB} != {message}");
                             }
+                        }
+                        else if (substituted)
+                        {
+                            // Report when we found a matching sourceID to the SourceID database, but 
+                            LogWarn($"Item:{sourceIDKey} SourceID == {message}");
                         }
                         else if (DoSpammyDebugLogging)
                         {
                             LogDebug($"INFO: Item:{sourceIDKey} SourceID == {message}");
                         }
                     }
-                    else
-                    {
-                        bool important = false;
-                        message = $"{message} [ModifierID: {ItemAppearanceModifierID}]";
-                        if (itemModifiedAppearance != null && itemModifiedAppearance.ItemAppearanceModifierID != ItemAppearanceModifierID)
-                        {
-                            message = $"{message} [Used Instead: {itemModifiedAppearance.ItemAppearanceModifierID}]";
-                            important = true;
-                        }
-                        if(important) LogWarn($"Item:{sourceIDKey} Using SourceID from {message}");
-                        else LogDebug($"INFO: Item:{sourceIDKey} Using SourceID from {message}");
-                    }
+                    else if (substituted) LogWarn($"Item:{sourceIDKey} Using SourceID from {message}");
+                    else if(DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} Using SourceID from {message}");
 #pragma warning restore CS0162 // Unreachable code detected
 
                     // quite spammmmmy, only enable if needed
