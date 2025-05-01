@@ -7,8 +7,8 @@ local L = app.L
 -- Encapsulates the functionality for handling and checking Cost information
 
 -- Global locals
-local rawget, ipairs, pairs, type,math_min
-	= rawget, ipairs, pairs, type,math.min
+local rawget, ipairs, pairs, type,math_min,wipe
+	= rawget, ipairs, pairs, type,math.min,wipe
 local PlayerHasToy, C_CurrencyInfo_GetCurrencyInfo
 	= PlayerHasToy, C_CurrencyInfo.GetCurrencyInfo
 
@@ -177,6 +177,14 @@ local CostTotals = {
 	c = {},
 	sp = {},
 }
+local function ResetCostTotals()
+	-- app.PrintDebug("Reset Cost Totals")
+	wipe(CostTotals.i)
+	wipe(CostTotals.ip)
+	wipe(CostTotals.c)
+	wipe(CostTotals.sp)
+	wipe(CurrencyAmounts)
+end
 do
 	local itotals = CostTotals.i
 	local iprovs = CostTotals.ip
@@ -219,15 +227,15 @@ local function SetCostTotals(costs, isCost, refresh)
 			blockedBy = GetRelativeByFunc(parent, BlockedParent)
 			if not blockedBy then
 				c.isCost = isCost;
-				-- app.PrintDebug("Unblocked Cost",app:SearchLink(c))
+				-- PrintDebug("Unblocked Cost",app:SearchLink(c))
 			else
 				c.isCost = nil;
-				-- app.PrintDebug("Skipped cost under locked/saved parent"
+				-- PrintDebug("Skipped cost under locked/saved parent"
 				-- 	,app:SearchLink(c)
 				-- 	,app:SearchLink(blockedBy))
 			end
 		else
-			-- app.PrintDebug("Not a cost",app:SearchLink(c))
+			-- PrintDebug("Not a cost",app:SearchLink(c))
 			c.isCost = nil;
 		end
 		-- regardless of the Cost state, make sure to update this specific cost group for visibility
@@ -491,10 +499,6 @@ local function CostCalcStart()
 	if app.Debugging then
 		app.print("Cost Updates Starting...")
 	end
-	wipe(CostTotals.i)
-	wipe(CostTotals.ip)
-	wipe(CostTotals.c)
-	wipe(CurrencyAmounts)
 end
 local function CostCalcComplete()
 	if app.Debugging then
@@ -676,6 +680,8 @@ app.AddEventHandler("OnLoad", function()
 	UpdateRunner = app.CreateRunner("costs");
 	api.Runner = UpdateRunner
 	UpdateRunner.SetPerFrameDefault(100)
+	UpdateRunner.DefaultOnStart(ResetCostTotals)
+	UpdateRunner.DefaultOnReset(ResetCostTotals)
 	-- UpdateRunner.ToggleDebugFrameTime()
 end)
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)

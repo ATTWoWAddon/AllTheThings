@@ -160,6 +160,7 @@ namespace ATT
         {
             { "achID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "itemID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
+            { "explorationID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "headerID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "factionID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "flightpathID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
@@ -170,6 +171,7 @@ namespace ATT
             { "objectID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "questID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "recipeID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
+            { "speciesID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "spellID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "sourceID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
         };

@@ -2282,7 +2282,7 @@ namespace ATT
             {
                 if (!TryGetSOURCED("achID", achievementID, out _))
                 {
-                    LogDebugWarn($"Achievement {achievementID} linked to Criteria {achID}:{criteriaID}, but it's likely a hidden achievement. Not nesting Criteria.");
+                    LogDebugWarn($"Unsourced Achievement {achievementID} linked to Criteria {achID}:{criteriaID}, but it's likely a hidden achievement. Not nesting Criteria.");
                 }
                 else
                 {
@@ -2302,19 +2302,16 @@ namespace ATT
                         long explorationID = overlay.AreaID_0;
                         if (explorationID > 0)
                         {
-                            // CRIEVE NOTE: This check doesn't work for exploration, Runaway take a look at this when you get a chance.
-                            /*
                             if (!TryGetSOURCED("explorationID", explorationID, out _))
                             {
                                 LogWarn($"Exploration {explorationID} should be sourced for nesting Criteria {achID}:{criteriaID}");
                             }
                             else
                             {
-                            */
-                            LogDebug($"INFO: Added _exploration to Criteria {achID}:{criteriaID} => {explorationID}");
-                            Objects.Merge(data, "_exploration", explorationID);
-                            incorporated = true;
-                            //}
+                                LogDebug($"INFO: Added _exploration to Criteria {achID}:{criteriaID} => {explorationID}");
+                                Objects.Merge(data, "_exploration", explorationID);
+                                incorporated = true;
+                            }
                         }
                     }
                 }
@@ -2941,7 +2938,7 @@ namespace ATT
             // Incorporate any extra spells
             if (data.TryGetValue("_extraSpells", out List<object> extraSpells))
             {
-                foreach(long extraSpellID in extraSpells.AsTypedEnumerable<long>())
+                foreach (long extraSpellID in extraSpells.AsTypedEnumerable<long>())
                 {
                     if (TryGetTypeDBObjectCollection(extraSpellID, out spellEffects))
                     {
@@ -3347,6 +3344,20 @@ namespace ATT
                             Objects.TrackPostProcessMergeKey("spellID", id);
                             Objects.TrackPostProcessMergeKey("mountID", id);
                             Objects.TrackPostProcessMergeKey("recipeID", id);
+                        }
+                    }
+                }
+                // if the Criteria attempts to clone into a Species which is not Sourced, then ignore trying to move the criteria
+                if (data.TryGetValue("_species", out List<object> speciesObjs))
+                {
+                    data.TryGetValue("achID", out long achID);
+                    foreach (long speciesID in speciesObjs.AsTypedEnumerable<long>())
+                    {
+                        if (!TryGetSOURCED("speciesID", speciesID, out var _))
+                        {
+                            LogDebugWarn($"Criteria {achID}:{criteriaID} not nested unsorted SpeciesID {speciesID}. Consider sourcing the SpeciesID");
+                            Objects.TrackPostProcessMergeKey("speciesID", speciesID);
+                            cloned = false;
                         }
                     }
                 }

@@ -2970,7 +2970,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(APRIL, bubbleDownSelf({ ["timeline"] = { "added 11.1.0.60037", "removed 11.1.5.99999" } }, {	-- TODO: Timeline out correctly
+		n(APRIL, bubbleDownSelf({ ["timeline"] = { "added 11.1.0.60037", "removed 11.1.5.60568" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(235664),	-- Ensemble: Topsy Turvy Mask Set
 			}),
@@ -3086,11 +3086,14 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(MAY, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5, "removed 11.1.5.99999" } }, {	-- TODO: Timeline in/out correctly
+		n(MAY, bubbleDownSelf({ ["timeline"] = { "added 11.1.5.60568", "removed 11.1.5.99999" } }, {	-- TODO: Timeline out correctly
 			n(FILLED_TRAVELERS_LOG, {
 				i(238942)	-- Weechi (PET!)
 			}),
 			filter(MOUNTS, {
+				i(192766, {	-- Amber Skitterfly (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 600}},
+				}),
 				i(210141, {	-- Brown-Furred Spiky Bakar (MOUNT!)
 					["cost"] = {{"c", TRADERS_TENDER, 325}},
 				}),
@@ -3101,6 +3104,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			filter(BATTLE_PETS, {
 				i(236409, {	-- Frumpy Softpaw (PET!)
 					["cost"] = {{"c", TRADERS_TENDER, 350}},
+				}),
+				i(34492, {	-- Rocket Chicken (PET!)
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
 				}),
 			}),
 			filter(COSMETIC, {
@@ -3140,8 +3146,17 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(235985, {	-- Heroic Half Shell
 					["cost"] = {{"c", TRADERS_TENDER, 225}},
 				}),
+				i(190860, { -- Initiate's Bo
+					["cost"] = {{"c", TRADERS_TENDER, 60}},
+				}),
 				i(238252, {	-- Large Renaissance Katana
 					["cost"] = {{"c", TRADERS_TENDER, 130}},
+				}),
+				i(213065, {	-- Lavish Floral Edge
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+				i(213068, {	-- Lavish Floral Stalk
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
 				}),
 				i(233097, {	-- Long Azure War Skirt
 					["cost"] = {{"c", TRADERS_TENDER, 40}},
@@ -3173,6 +3188,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(238217, {	-- Offhand Renaissance Nunchuck
 					["cost"] = {{"c", TRADERS_TENDER, 120}},
 				}),
+				i(213062, {	-- Paradise's Golden Axe
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
 				i(237344, {	-- Renaissance Katana
 					["cost"] = {{"c", TRADERS_TENDER, 110}},
 				}),
@@ -3190,6 +3208,12 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(233131, {	-- Short Violet War Skirt and Leg Wraps
 					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(213071, {	-- Sunny Floral Staff
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+				i(213075, {	-- Sunny Bow-quet
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
 				}),
 				i(235020, {	-- Vigilante's Azure Mask
 					["cost"] = {{"c", TRADERS_TENDER, 50}},

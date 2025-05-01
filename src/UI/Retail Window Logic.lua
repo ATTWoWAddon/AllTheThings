@@ -136,10 +136,10 @@ local function UpdateWindow(self, force, got)
 		data.expanded = true;
 		if not self.doesOwnUpdate and force then
 			self:ToggleExtraFilters(true)
-			app.PrintDebug(Colorize("TLUG", app.Colors.Time),self.Suffix)
+			-- app.PrintDebug(Colorize("TLUG", app.Colors.Time),self.Suffix)
 			app.TopLevelUpdateGroup(data);
 			self.HasPendingUpdate = nil;
-			app.PrintDebugPrior("Done")
+			-- app.PrintDebugPrior("Done")
 			self:ToggleExtraFilters()
 		end
 

@@ -412,12 +412,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 							}, {	-- RENOWN 9 --
 							}, {	-- RENOWN 10 --
 							}, {	-- RENOWN 11 --
-								i(237578),			-- Counterfeit Dealer's Chip
 							}, {	-- RENOWN 12 --
 							}, {	-- RENOWN 13 --
 							}, {	-- RENOWN 14 --
 							}, {	-- RENOWN 15 --
-								i(237578),			-- Counterfeit Dealer's Chip
 							}, {	-- RENOWN 16 --
 							}, {	-- RENOWN 17 --
 								i(229924),		-- Darkfuse Chompactor (MOUNT!)
@@ -464,13 +462,33 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
 						}),
 					}, {	-- RENOWN 11 --
+						q(89028, {	-- Chip Service
+							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
+							["g"] = { i(237578) },	-- Counterfeit Dealer's Chip
+						}),
+						q(89025, {	-- Time is Money!!
+							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
+						}),
 					}, {	-- RENOWN 12 --
 					}, {	-- RENOWN 13 --
+						q(89021, {	-- Loyal Customer: Black
+							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
+						}),
 					}, {	-- RENOWN 14 --
 					}, {	-- RENOWN 15 --
+						q(89029, {	-- Chip Service
+							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
+							["g"] = { i(237578) },	-- Counterfeit Dealer's Chip
+						}),
+						q(89022, {	-- Loyal Customer: Diamond
+							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
+						}),
 					}, {	-- RENOWN 16 --
 					}, {	-- RENOWN 17 --
 					}, {	-- RENOWN 18 --
+						q(89026, {	-- Time is Money!!!
+							["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
+						}),
 					}, {	-- RENOWN 19 --
 					}, {	-- RENOWN 20 --
 					},
@@ -492,6 +510,81 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						}),
 						i(232806, {	-- Tiny Torq (PET!)
 							["minReputation"] = { FACTION_GLRC, 9 },
+						}),
+					}),
+					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
+						["minReputation"] = { FACTION_GLRC, 15 },
+						["g"] = sharedData({ ["cost"] = { {"i", 237578, 1} } }, {	-- 1x Counterfeit Dealer's Chip
+							i(238776),	-- Gallagio Raider's Bilgewater Blasthammer
+							i(238697),	-- Gallagio Raider's Bilgewater Boomfist
+							i(238717),	-- Gallagio Raider's Bilgewater Chainsaw
+							i(238693),	-- Gallagio Raider's Bilgewater Coilstaff
+							i(238746),	-- Gallagio Raider's Bilgewater Eelspire
+							i(238750),	-- Gallagio Raider's Bilgewater Exhaustglaive
+							i(238705),	-- Gallagio Raider's Bilgewater Generator
+							i(238754),	-- Gallagio Raider's Bilgewater Gold Digger
+							i(238763),	-- Gallagio Raider's Bilgewater Gyroclub
+							i(238713),	-- Gallagio Raider's Bilgewater Motorshield
+							i(238767),	-- Gallagio Raider's Bilgewater Naval Mine
+							i(238771),	-- Gallagio Raider's Bilgewater Repeater
+							i(238709),	-- Gallagio Raider's Bilgewater Shivlighter
+							i(238701),	-- Gallagio Raider's Bilgewater Shockbow
+							i(238758),	-- Gallagio Raider's Bilgewater Thing-a-ma-tool
+							i(238689),	-- Gallagio Raider's Bilgewater Torchblade
+							i(238742),	-- Gallagio Raider's Bilgewater Zapdagger
+							i(238777),	-- Gallagio Raider's Blackwater Blasthammer
+							i(238698),	-- Gallagio Raider's Blackwater Boomfist
+							i(238718),	-- Gallagio Raider's Blackwater Chainsaw
+							i(238694),	-- Gallagio Raider's Blackwater Coilstaff
+							i(238747),	-- Gallagio Raider's Blackwater Eelspire
+							i(238751),	-- Gallagio Raider's Blackwater Exhaustglaive
+							i(238706),	-- Gallagio Raider's Blackwater Generator
+							i(238755),	-- Gallagio Raider's Blackwater Gold Digger
+							i(238764),	-- Gallagio Raider's Blackwater Gyroclub
+							i(238714),	-- Gallagio Raider's Blackwater Motorshield
+							i(238768),	-- Gallagio Raider's Blackwater Naval Mine
+							i(238772),	-- Gallagio Raider's Blackwater Repeater
+							i(238710),	-- Gallagio Raider's Blackwater Shivlighter
+							i(238702),	-- Gallagio Raider's Blackwater Shockbow
+							i(238759),	-- Gallagio Raider's Blackwater Thing-a-ma-tool
+							i(238690),	-- Gallagio Raider's Blackwater Torchblade
+							i(238743),	-- Gallagio Raider's Blackwater Zapdagger
+							i(238761),	-- Gallagio Raider's Bootleg Lever
+							i(238778),	-- Gallagio Raider's Darkfuse Blasthammer
+							i(238699),	-- Gallagio Raider's Darkfuse Boomfist
+							i(238719),	-- Gallagio Raider's Darkfuse Chainsaw
+							i(238695),	-- Gallagio Raider's Darkfuse Coilstaff
+							i(238748),	-- Gallagio Raider's Darkfuse Eelspire
+							i(238752),	-- Gallagio Raider's Darkfuse Exhaustglaive
+							i(238707),	-- Gallagio Raider's Darkfuse Generator
+							i(238756),	-- Gallagio Raider's Darkfuse Gold Digger
+							i(238765),	-- Gallagio Raider's Darkfuse Gyroclub
+							i(238715),	-- Gallagio Raider's Darkfuse Motorshield
+							i(238769),	-- Gallagio Raider's Darkfuse Naval Mine
+							i(238773),	-- Gallagio Raider's Darkfuse Repeater
+							i(238711),	-- Gallagio Raider's Darkfuse Shivlighter
+							i(238703),	-- Gallagio Raider's Darkfuse Shockbow
+							i(238760),	-- Gallagio Raider's Darkfuse Thing-a-ma-tool
+							i(238691),	-- Gallagio Raider's Darkfuse Torchblade
+							i(238744),	-- Gallagio Raider's Darkfuse Zapdagger
+							i(238774),	-- Gallagio Raider's Knuckle Dusters
+							i(238775),	-- Gallagio Raider's Venture Co. Blasthammer
+							i(238696),	-- Gallagio Raider's Venture Co. Boomfist
+							i(238716),	-- Gallagio Raider's Venture Co. Chainsaw
+							i(238692),	-- Gallagio Raider's Venture Co. Coilstaff
+							i(238745),	-- Gallagio Raider's Venture Co. Eelspire
+							i(238749),	-- Gallagio Raider's Venture Co. Exhaustglaive
+							i(238704),	-- Gallagio Raider's Venture Co. Generator
+							i(238753),	-- Gallagio Raider's Venture Co. Gold Digger
+							i(238762),	-- Gallagio Raider's Venture Co. Gyroclub
+							i(238712),	-- Gallagio Raider's Venture Co. Motorshield
+							i(238766),	-- Gallagio Raider's Venture Co. Naval Mine
+							i(238770),	-- Gallagio Raider's Venture Co. Repeater
+							i(238708),	-- Gallagio Raider's Venture Co. Shivlighter
+							i(238700),	-- Gallagio Raider's Venture Co. Shockbow
+							i(238757),	-- Gallagio Raider's Venture Co. Thing-a-ma-tool
+							i(238688),	-- Gallagio Raider's Venture Co. Torchblade
+							i(238741),	-- Gallagio Raider's Venture Co. Zapdagger
 						}),
 					}),
 					n(235623, {	-- Snix Longpocket
@@ -524,6 +617,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					i(232805,{provider={"i",232526}}),	-- Best-in-Slots
 					i(237578, {	-- Counterfeit Dealer's Chip
 						["description"] = "Has a small chance dropping as Personal Loot once you have reached Renown 15 with the Gallagio Loyalty Rewards Club.",
+						["minReputation"] = { FACTION_GLRC, 15 },
 					}),
 				}),
 				BossOnly(MUGZEE, {

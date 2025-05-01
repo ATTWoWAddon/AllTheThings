@@ -228,16 +228,16 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_6_2_2, REMOVED_10_1_7 },	-- Removed Oct 31, 2023
 		}),
 		i(233286, {	-- Meeksi Brewthief (MOUNT!)
-			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.99999" },	-- Removed April 28, 2025
+			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.60568" },	-- Removed April 28, 2025
 		}),
 		i(233284, {	-- Meeksi Rollingpaw (MOUNT!)
-			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.99999" },	-- Removed April 28, 2025
+			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.60568" },	-- Removed April 28, 2025
 		}),
 		i(233282, {	-- Meeksi Rufflefur (MOUNT!)
-			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.99999" },	-- Removed April 28, 2025
+			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.60568" },	-- Removed April 28, 2025
 		}),
 		i(233283, {	-- Meeksi Softpaw (MOUNT!)
-			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.99999" },	-- Removed April 28, 2025
+			["timeline"] = { ADDED_11_1_0, "removed 11.1.5.60568" },	-- Removed April 28, 2025
 		}),
 		i(92724, {	-- Swift Windsteed (MOUNT!)
 			["timeline"] = { ADDED_5_1_0, REMOVED_8_1_0 },
@@ -247,10 +247,10 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["races"] = ALLIANCE_ONLY,
 		}),
 		i(233019, {	-- Sky Witch's Sweeper (MOUNT!)
-			["timeline"] = { ADDED_11_0_7, "removed 11.1.5.99999" },	-- Removed March 31, 2025
+			["timeline"] = { ADDED_11_0_7, "removed 11.1.0.60037" },	-- Removed March 31, 2025
 		}),
 		i(212228, {	-- Soaring Sky Fox (MOUNT!)
-			["timeline"] = { ADDED_11_0_5, "removed 11.1.5.99999" },	-- Removed March 31, 2025
+			["timeline"] = { ADDED_11_0_5, "removed 11.1.0.60037" },	-- Removed March 31, 2025
 		}),
 		i(229418, {	-- Trader's Gilded Brutosaur (MOUNT!)
 			["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58238" },	-- Removed January 6, 2025
@@ -262,7 +262,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_10_2_5, REMOVED_10_2_5 },	-- Removed Feb 29th, 2024
 		}),
 		i(233020, {	-- Twilight Witch's Sweeper (MOUNT!)
-			["timeline"] = { ADDED_11_0_7, "removed 11.1.7.99999" },	-- Removed March 31, 2025
+			["timeline"] = { ADDED_11_0_7, "removed 11.1.0.60037" },	-- Removed March 31, 2025
 		}),
 		i(76755, {	-- Tyrael's Charger (MOUNT!)
 			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH },	-- removed from the store again on Jan 2 2023
@@ -626,7 +626,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 
 			------ Sky Witch's Attire Set ------
 			iensemble(212221, {	-- Ensemble: Sky Witch's Attire
-				["timeline"] = { ADDED_11_0_5, "removed 11.1.7.99999" },	-- Removed March 31, 2025
+				["timeline"] = { ADDED_11_0_5, "removed 11.1.0.60037" },	-- Removed March 31, 2025
 			}),
 
 			------ Sky-Captain's Masquerade Attire Set ------

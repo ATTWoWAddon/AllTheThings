@@ -128,7 +128,12 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 						}),
 						q(54938, {	-- A Brother's Help
 							-- This was removed during BfA in 8.2 but is now appearing again for characters leveling up during Shadowlands
-							["qg"] = 130216,	-- Magni Bronzebeard
+							["qgs"] = {
+								130216,	-- Magni Bronzebeard
+								-- #if AFTER 8.2.0
+								152206,	-- Magni Bronzebeard
+								-- #endif
+							},
 							["sourceQuest"] = 53406,	-- The Chamber of Heart
 							["description"] = "Once you complete 'The Chamber of Heart' in Silithus, you can pick this quest up from Magni, or it will be automatically offered when you return to your capital city.",
 							["coord"] = { 42.1, 44.3, SILITHUS },

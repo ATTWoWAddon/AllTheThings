@@ -1176,7 +1176,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				-- q(76674),	-- after buying/loot 'Warmonger's Ripper' (itemID 207015) (spellID 418850)
 				-- q(76644),	-- after buying/loot 'Warmonger's Robe' (itemID 206808) (spellID 418849)
 				-- q(76640),	-- after buying/loot 'Warmonger's Skullcap' (itemID 206816) (spellID 418848)
-				q(77179),	-- Unlock the title Unparalleled on your account (spellID 417360) (after questID 77250)
+				-- q(77179),	-- Unlock the title Unparalleled on your account (spellID 417360) (after questID 77250)
 			}),
 		}),
 	}),

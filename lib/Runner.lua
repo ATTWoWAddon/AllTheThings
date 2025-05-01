@@ -176,6 +176,7 @@ app.StartCoroutine = StartCoroutine;
 -- Creates a Function Runner which can execute a sequence of Functions on a set iteration per frame update
 local function CreateRunner(name)
 	local FunctionQueue, ParameterBucketQueue, ParameterSingleQueue, Config = {}, {}, {}, { PerFrame = 1 };
+	local OnStart, OnReset
 	local Name = "Runner:"..name;
 	if app.__perf then
 		app.__perf.AutoCaptureTable(FunctionQueue, Name..".FunctionQueue")
@@ -190,6 +191,7 @@ local function CreateRunner(name)
 	end
 	local function Reset()
 		-- app.PrintDebug("FR:Reset."..name,Pushed and "RUNNING" or "STOPPED","Qi",QueueIndex,"Ri",RunIndex,"@",Config.PerFrame)
+		if OnReset then OnReset() end
 		SetPerFrame(Config.PerFrameDefault or 1)
 		-- when done with all functions in the queue, reset the indexes and clear the queues of data
 		QueueIndex = 1
@@ -215,6 +217,7 @@ local function CreateRunner(name)
 				local params;
 				local func = FunctionQueue[RunIndex];
 				-- app.PrintDebug("FRC.Running."..name)
+				if OnStart then OnStart() end
 				while func do
 					perFrame = perFrame - 1;
 					params = ParameterBucketQueue[RunIndex];
@@ -300,6 +303,16 @@ local function CreateRunner(name)
 		-- Set a function to be run once the queue is empty. This function takes no parameters.
 		OnEnd = function(func)
 			FunctionQueue[0] = func;
+		end,
+		-- Set a function to be run when the Runner attempts to start.
+		-- This function takes no parameters and persists for the duration of the Runner
+		DefaultOnStart = function(func)
+			OnStart = func
+		end,
+		-- Set a function to be run when the Runner is Reset.
+		-- This function takes no parameters and persists for the duration of the Runner
+		DefaultOnReset = function(func)
+			OnReset = func
 		end,
 		-- Return the current PerFrame of the Runner
 		GetPerFrame = function() return Config.PerFrame end,

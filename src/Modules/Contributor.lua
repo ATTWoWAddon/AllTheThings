@@ -307,6 +307,7 @@ MobileDB.Creature = {
 	[150202] = true,	-- Hunter Akana
 	[151300] = true,	-- Neri Sharpfin
 	[153897] = true,	-- Blingtron 7000
+	[155482] = true,	-- Sentinel (Shandris Feathermoon)
 	[156179] = true,	-- Gila Crosswires <Tinkmaster's Assistant>
 	[158544] = true,	-- Lord Herne
 	[158635] = true,	-- Xolartios <Eternal Traveler>
