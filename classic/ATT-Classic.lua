@@ -2803,7 +2803,7 @@ else
 		end
 	end
 	commonAchievementHandlers.LEVEL_OnUpdate = function(t)
-		t:SetAchievementCollected(t.achievementID, app.Level >= t.lvl);
+		t:SetAchievementCollected(t.achievementID, t.lvl and app.Level >= t.lvl or false);
 	end
 	commonAchievementHandlers.LOREMASTER_CONTINENT_OnUpdate = function(t, mapID, ...)
 		if t.collectible and t.parent then
