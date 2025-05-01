@@ -3169,7 +3169,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 								ROGUE,
 							},
 						}),
-						i(112935),	-- Tusks of Mannoroth
+						i(112935, { ["ItemAppearanceModifierID"] = 1 }),	-- Tusks of Mannoroth
 						i(112932),	-- Kor'kron Spire of Supremacy
 						i(112925),	-- Xal'atoh, Desecrated Image of Gorehowl
 						i(112939),	-- Horned Mace of the Old Ones

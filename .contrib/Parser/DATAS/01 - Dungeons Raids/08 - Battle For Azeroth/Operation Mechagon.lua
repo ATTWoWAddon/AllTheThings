@@ -255,13 +255,13 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						},
 						["g"] = {
 							i(235222),	-- Apogee Inventor's Goggles
-							i(235810),	-- Circuit-Linked Chainmail
-							i(235811),	-- Extravagant Epaulets
+							i(235810, { ["ItemAppearanceModifierID"] = 3 }),	-- Circuit-Linked Chainmail
+							i(235811, { ["ItemAppearanceModifierID"] = 1 }),	-- Extravagant Epaulets
 							i(235226),	-- Inventor's Ingenious Trifocals
-							i(235809),	-- Mechanized Plate Chasse
+							i(235809, { ["ItemAppearanceModifierID"] = 1 }),	-- Mechanized Plate Chasse
 							i(235224),	-- Mekgineer's Mindbending Headgear
 							i(235223),	-- Psychogenic Prognosticator's Lenses
-							i(235812),	-- Shoulderguards of Fraying Sanity
+							i(235812, { ["ItemAppearanceModifierID"] = 1 }),	-- Shoulderguards of Fraying Sanity
 						},
 					}),
 				}),

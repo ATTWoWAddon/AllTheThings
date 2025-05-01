@@ -1083,7 +1083,7 @@ namespace ATT
                 {
 #pragma warning disable CS0162 // Unreachable code detected
                     // Details regarding how the selected SourceID was reached.
-                    string message = $"{ItemModifiedAppearanceID} (ItemModifiedAppearanceID)";
+                    string message = ItemModifiedAppearanceID.ToString();
                     if (NestedBonusID > 0) message = $"{message} [BonusID: {NestedBonusID}]";
                     if (NestedModID > 0) message = $"{message} [ModID: {NestedModID}]";
 
@@ -1091,7 +1091,7 @@ namespace ATT
                     message = $"{message} [ModifierID: {ItemAppearanceModifierID}]";
                     if (itemModifiedAppearance != null && itemModifiedAppearance.ItemAppearanceModifierID != ItemAppearanceModifierID)
                     {
-                        message = $"{message} [Used Instead: {itemModifiedAppearance.ItemAppearanceModifierID}]";
+                        message = $"{message} Assign: {{ [\"ItemAppearanceModifierID\"] = {itemModifiedAppearance.ItemAppearanceModifierID} }}";
                         substituted = true;
                     }
 

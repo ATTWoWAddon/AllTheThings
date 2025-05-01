@@ -203,10 +203,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 						["description"] = "|Cffff0000This ensemble may or may not work.  Even if it does work, you may not get every cloak that is listed, its random.|r",	-- Nobody should be interested in playing QA Tester for this bugged cloak ensemble.
 						["g"] = {
 							-- Gladiator
-							i(175888),	-- Sinful Gladiator's Cloak
-							i(178353),	-- Sinful Gladiator's Drape
-							i(178414),	-- Sinful Gladiator's Shawl
-							i(184311),	-- Sinful Gladiator's Greatcloak
+							i(175888, { ["ItemAppearanceModifierID"] = 0 }),	-- Sinful Gladiator's Cloak
+							i(178353, { ["ItemAppearanceModifierID"] = 0 }),	-- Sinful Gladiator's Drape
+							i(178414, { ["ItemAppearanceModifierID"] = 0 }),	-- Sinful Gladiator's Shawl
+							i(184311, { ["ItemAppearanceModifierID"] = 0 }),	-- Sinful Gladiator's Greatcloak
 							i(192209),	-- Eternal Gladiator's Cloak
 							i(192210),	-- Eternal Gladiator's Drape
 							i(192211),	-- Eternal Gladiator's Shawl

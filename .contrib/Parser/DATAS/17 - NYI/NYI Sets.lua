@@ -3931,7 +3931,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(163262),	-- 7th Legionnaire's Guise
 						i(163267),	-- 7th Legionnaire's Shoulderguards
 						i(163274),	-- 7th Legionnaire's Strap
-						i(163255, {["modID"] = 5, }),	-- 7th Legionnaire's Treads
+						i(163255, {["modID"] = 5, ["ItemAppearanceModifierID"] = 0 }),	-- 7th Legionnaire's Treads
 						i(163287),	-- Honorbound Outrider's Treads
 						i(163288),	-- Honorbound Outrider's Grasps
 						i(163294),	-- Honorbound Outrider's Headcover

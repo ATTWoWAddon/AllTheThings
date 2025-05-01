@@ -6,7 +6,7 @@ root(ROOTS.Unsorted, {
 	expansion(EXPANSION.TWW, {
 		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
 			n(SPECIAL, {	-- Horrific Revisited
-				i(232352),	-- Ashjra'kamas, Shroud of Resolve
+				i(232352, { ["ItemAppearanceModifierID"] = 150 }),	-- Ashjra'kamas, Shroud of Resolve
 				i(235274),	-- Echo of N'zoth
 				i(235284),	-- Echo of N'zoth
 				i(235285),	-- Echo of N'zoth

@@ -290,7 +290,6 @@ local EncounterToLoot = {
 		i(113939),	-- Tal'rak, Bloody Skull of the Thunderlords
 		i(113946),	-- Heart of the Clefthoof
 		i(113952),	-- Choker of Bestial Force
-		i(113945),	-- Flame Infusion Drape
 		i(113951),	-- Unrendable Wolfhide Robes
 		i(113943),	-- Bracers of the Wolf's Cunning
 		i(113949),	-- Cannonball Loader's Grips
@@ -380,7 +379,6 @@ local EncounterToLoot = {
 	[BLACKHAND] = {
 		i(113988),	-- Blackhand Doomstaff
 		i(113980),	-- Iron Soldier's Saber
-		i(113979),	-- The Black Hand
 		i(113981),	-- Slagbomber's Hood
 		i(113990),	-- Overdriven Spaulders
 		i(113982),	-- Chestguard of the Siegemaker
@@ -879,9 +877,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				Boss(HANSGAR_AND_FRANZOK),
 				Boss(FLAMEBENDER_KAGRAZ),
 				Boss(KROMOG),
-				Boss(BEASTLORD_DARMAC),
+				Boss(BEASTLORD_DARMAC, {
+					i(113945, { ["ItemAppearanceModifierID"] = 0 }),	-- Flame Infusion Drape
+				}),
 				Boss(OPERATOR_THOGAR),
 				Boss(IRON_MAIDENS),
+				Boss(BLACKHAND, {
+					i(113979, { ["ItemAppearanceModifierID"] = 0 }),	-- The Black Hand
+				}),
 				Boss(BLACKHAND, sharedData({
 					["ignoreBonus"] = true,	-- in-game this drops with no modID
 				},{
@@ -1063,13 +1066,18 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				Boss(HANSGAR_AND_FRANZOK),
 				Boss(FLAMEBENDER_KAGRAZ),
 				Boss(KROMOG),
-				Boss(BEASTLORD_DARMAC),
+				Boss(BEASTLORD_DARMAC, {
+					i(113945, { ["ItemAppearanceModifierID"] = 0 }),	-- Flame Infusion Drape
+				}),
 				Boss(OPERATOR_THOGAR),
 				Boss(IRON_MAIDENS),
 				Boss(BLACKHAND, {	-- Blackhand
 					ach(9444, {	-- Ahead of the Curve: Blackhand's Crucible
 						["u"] = REMOVED_FROM_GAME,
 					}),
+				}),
+				Boss(BLACKHAND, {
+					i(113979, { ["ItemAppearanceModifierID"] = 1 }),	-- The Black Hand
 				}),
 				Boss(BLACKHAND, sharedData({
 					["ignoreBonus"] = true,	-- in-game this drops with no modID
@@ -1265,6 +1273,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				}),
 				Boss(BEASTLORD_DARMAC, {
 					ach(8956),	-- Mythic: Beastlord Darmac
+					i(113945, { ["ItemAppearanceModifierID"] = 3 }),	-- Flame Infusion Drape
 				}),
 				Boss(OPERATOR_THOGAR, {
 					ach(8969),	-- Mythic: Operator Thogar
@@ -1287,6 +1296,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					}),
 					ach(9421),	-- Mythic: Warlord Blackhand Guild Run
 					i(116660),	-- Ironhoof Destroyer (MOUNT!)
+				}),
+				Boss(BLACKHAND, {
+					i(113979, { ["ItemAppearanceModifierID"] = 0 }),	-- The Black Hand
 				}),
 				Boss(BLACKHAND, sharedData({
 					["ignoreBonus"] = true,	-- in-game this drops with no modID

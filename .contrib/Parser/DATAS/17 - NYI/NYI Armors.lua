@@ -3486,9 +3486,9 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225725),	-- Lurking Marauder's Binding
 					}),
 					filter(PLATE, {
-						i(225737, {["bonusID"] = 0, ["modID"] = 4 }),	-- 11.0 Raid Template - Plate - Feet
-						i(225736, {["bonusID"] = 0, ["modID"] = 4 }),	-- 11.0 Raid Template - Plate - Head
-						i(225726, {["bonusID"] = 0, ["modID"] = 4 }),	-- 11.0 Raid Template - Plate - Waist
+						i(225737, {["bonusID"] = 0, ["modID"] = 4, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Feet
+						i(225736, {["bonusID"] = 0, ["modID"] = 4, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Head
+						i(225726, {["bonusID"] = 0, ["modID"] = 4, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Waist
 						i(212418),	-- Black Blood Injectors
 						i(212437),	-- Ravaged Lamplighter's Manacles
 						i(212442),	-- Greatbelt of the Hungerer
@@ -3550,9 +3550,9 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225725),	-- Lurking Marauder's Binding
 					}),
 					filter(PLATE, {
-						i(225737, {["bonusID"] = 0}),	-- 11.0 Raid Template - Plate - Feet
-						i(225736, {["bonusID"] = 0}),	-- 11.0 Raid Template - Plate - Head
-						i(225726, {["bonusID"] = 0}),	-- 11.0 Raid Template - Plate - Waist
+						i(225737, {["bonusID"] = 0, ["ItemAppearanceModifierID"] = 0}),	-- 11.0 Raid Template - Plate - Feet
+						i(225736, {["bonusID"] = 0, ["ItemAppearanceModifierID"] = 0}),	-- 11.0 Raid Template - Plate - Head
+						i(225726, {["bonusID"] = 0, ["ItemAppearanceModifierID"] = 0}),	-- 11.0 Raid Template - Plate - Waist
 						i(212418),	-- Black Blood Injectors
 						i(212437),	-- Ravaged Lamplighter's Manacles
 						i(212442),	-- Greatbelt of the Hungerer
@@ -3614,9 +3614,9 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225725),	-- Lurking Marauder's Binding
 					}),
 					filter(PLATE, {
-						i(225737, {["bonusID"] = 0, ["modID"] = 5 }),	-- 11.0 Raid Template - Plate - Feet
-						i(225736, {["bonusID"] = 0, ["modID"] = 5 }),	-- 11.0 Raid Template - Plate - Head
-						i(225726, {["bonusID"] = 0, ["modID"] = 5 }),	-- 11.0 Raid Template - Plate - Waist
+						i(225737, {["bonusID"] = 0, ["modID"] = 5, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Feet
+						i(225736, {["bonusID"] = 0, ["modID"] = 5, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Head
+						i(225726, {["bonusID"] = 0, ["modID"] = 5, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Waist
 						i(212418),	-- Black Blood Injectors
 						i(212437),	-- Ravaged Lamplighter's Manacles
 						i(212442),	-- Greatbelt of the Hungerer
@@ -3678,9 +3678,9 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(225725),	-- Lurking Marauder's Binding
 					}),
 					filter(PLATE, {
-						i(225737, {["bonusID"] = 0, ["modID"] = 6 }),	-- 11.0 Raid Template - Plate - Feet
-						i(225736, {["bonusID"] = 0, ["modID"] = 6 }),	-- 11.0 Raid Template - Plate - Head
-						i(225726, {["bonusID"] = 0, ["modID"] = 6 }),	-- 11.0 Raid Template - Plate - Waist
+						i(225737, {["bonusID"] = 0, ["modID"] = 6, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Feet
+						i(225736, {["bonusID"] = 0, ["modID"] = 6, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Head
+						i(225726, {["bonusID"] = 0, ["modID"] = 6, ["ItemAppearanceModifierID"] = 0 }),	-- 11.0 Raid Template - Plate - Waist
 						i(212418),	-- Black Blood Injectors
 						i(212437),	-- Ravaged Lamplighter's Manacles
 						i(212442),	-- Greatbelt of the Hungerer
