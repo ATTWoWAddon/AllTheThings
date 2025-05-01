@@ -1026,12 +1026,6 @@ namespace ATT
                 long? sourceIDFromSourcesDB = null;
                 if (SOURCES.TryGetValue(sourceIDKey, out long s)) sourceIDFromSourcesDB = s;
 
-                long bonusID = 0;
-                if (data.TryGetValue("bonusID", out var obj)) bonusID = (long)obj;
-
-                long modID = NestedModID;
-                if (data.TryGetValue("modID", out obj)) modID = (long)obj;
-
                 // Firstly check to see if there's an ArtifactID associated with the data.
                 long ItemAppearanceModifierID = NestedItemAppearanceModifierID;
                 if (data.TryGetValue("artifactID", out var artifactIDObj)
@@ -1041,14 +1035,6 @@ namespace ATT
                     ItemAppearanceModifierID = artifactAppearance.ItemAppearanceModifierID;
                 }
                 else if (data.TryGetValue("ItemAppearanceModifierID", out var ItemAppearanceModifierIDObj)) ItemAppearanceModifierID = (long)ItemAppearanceModifierIDObj;
-                else if (bonusID > 0 && ItemAppearanceModifierIDs_BonusID.TryGetValue(bonusID, out long id))
-                {
-                    ItemAppearanceModifierID = id;
-                }
-                else if (ItemAppearanceModifierIDs_ModID.TryGetValue(modID, out id))
-                {
-                    ItemAppearanceModifierID = id;
-                }
 
                 // Attempt to get the SourceID from the ItemModifiedAppearanceDB
                 long? ItemModifiedAppearanceID = null;
@@ -1098,8 +1084,8 @@ namespace ATT
 #pragma warning disable CS0162 // Unreachable code detected
                     // Details regarding how the selected SourceID was reached.
                     string message = $"{ItemModifiedAppearanceID} (ItemModifiedAppearanceID)";
-                    if (bonusID > 0) message = $"{message} [BonusID: {bonusID}]";
-                    if (modID > 0) message = $"{message} [ModID: {modID}]";
+                    if (NestedBonusID > 0) message = $"{message} [BonusID: {NestedBonusID}]";
+                    if (NestedModID > 0) message = $"{message} [ModID: {NestedModID}]";
 
                     bool substituted = false;
                     message = $"{message} [ModifierID: {ItemAppearanceModifierID}]";

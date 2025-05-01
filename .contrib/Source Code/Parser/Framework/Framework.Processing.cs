@@ -7,6 +7,8 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 using static ATT.Export;
 using static ATT.Framework;
 
@@ -563,104 +565,146 @@ namespace ATT
                 CaptureDebugDBData(data);
             }
 
-            // handle the current processing against the data
-            if (!ProcessingFunction(data, parentData))
-                return false;
+            // Cache the state of values that are inherited from parent objects to their children.
+            var cachedParentGroup = CurrentParentGroup;
+            var cachedDifficultyRoot = DifficultyRoot;
+            long cachedDifficulty = NestedDifficultyID;
+            long cachedHeaderID = NestedHeaderID;
+            long cachedItemAppearanceModifierID = NestedItemAppearanceModifierID;
+            long cachedBonusID = NestedBonusID;
+            long cachedModID = NestedModID;
+            long cachedMinLevel = NestedMinLvl;
 
-            // If this container has an aqd or hqd, then process those objects as well.
-            if (data.TryGetValue("aqd", out IDictionary<string, object> qd)) Process(qd, data);
-            if (data.TryGetValue("hqd", out qd)) Process(qd, data);
+            // Update the Current Parent Group
+            if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue))
+                CurrentParentGroup = new KeyValuePair<string, object>(objectData.ObjectType, objKeyValue);
 
-            // If this container has groups, then process those groups as well.
-            if (data.TryGetValue("g", out List<object> groups))
+            // Track the hierarchy of lvl
+            long dataLvl = GetDataMinLvl(data);
+            if (dataLvl > NestedMinLvl) NestedMinLvl = dataLvl;
+
+            // Track the hierarchy of difficultyID
+            if ((data.TryGetValue("_multiDifficultyID", out long nestedDiffID) || data.TryGetValue("difficultyID", out nestedDiffID)) && nestedDiffID != NestedDifficultyID)
             {
-                var previousParent = CurrentParentGroup;
-                if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue))
-                    CurrentParentGroup = new KeyValuePair<string, object>(objectData.ObjectType, objKeyValue);
-                // Track the hierarchy of modID
-                bool restoreModID = false;
-                long previousMod = NestedModID;
-                if (data.TryGetValue("modID", out long nestedModID) && nestedModID != NestedModID)
-                {
-                    NestedModID = nestedModID;
-                    restoreModID = true;
-                    //LogDebug($"INFO: New inherited modID {NestedModID}", data);
-                }
-                // Track the hierarchy of ItemAppearanceModifierID
-                bool restoreItemAppearanceModifierID = false;
-                long previousItemAppearanceModifierID = NestedItemAppearanceModifierID;
-                if (data.TryGetValue("ItemAppearanceModifierID", out long nestedItemAppearanceModifierID) && nestedItemAppearanceModifierID != NestedItemAppearanceModifierID)
-                {
-                    NestedItemAppearanceModifierID = nestedItemAppearanceModifierID;
-                    restoreItemAppearanceModifierID = true;
-                    //LogDebug($"INFO: New inherited ItemAppearanceModifierID {NestedItemAppearanceModifierID}", data);
-                }
-                // Track the hierarchy of difficultyID
-                bool restoreDifficulty = false;
-                var previousDifficultyRoot = DifficultyRoot;
-                var previousDifficulty = NestedDifficultyID;
-                if ((data.TryGetValue("_multiDifficultyID", out long nestedDiffID) || data.TryGetValue("difficultyID", out nestedDiffID)) && nestedDiffID != NestedDifficultyID)
-                {
-                    DifficultyRoot = data;
-                    NestedDifficultyID = nestedDiffID;
-                    restoreDifficulty = true;
-                    //LogDebug($"INFO: New inherited difficultyID {NestedDifficultyID}", data);
-                }
-                // Track the hierarchy of headerID
-                bool restoreHeader = false;
-                var previousHeaderID = NestedHeaderID;
-                // NOTE: Once autoID no longer clashes with headerID and npcID is no longer dumb, use headerID instead.
-                if (data.TryGetValue("npcID", out long npcID) && npcID < 0 && long.TryParse(npcID.ToString(), out long headerID))
-                {
-                    NestedHeaderID = headerID;
-                    restoreHeader = true;
-                }
-                // Track the hierarchy of lvl
-                bool restoreLvl = false;
-                long previousLvl = NestedMinLvl;
-                long dataLvl = GetDataMinLvl(data);
-                if (dataLvl > NestedMinLvl)
-                {
-                    NestedMinLvl = dataLvl;
-                    restoreLvl = true;
-                    //LogDebug($"INFO: New inherited lvl {NestedMinLvl}", data);
-                }
-
-                Process(groups, data);
-
-                // Parent field consolidation now that groups have been processed
-                if (CurrentParseStage >= ParseStage.Consolidation)
-                    HierarchicalFieldAdjustments.Apply(data, groups);
-
-                if (restoreDifficulty)
-                {
-                    //LogDebug($"INFO: Restore previous difficultyID {previousDifficulty} => {NestedDifficultyID}", data);
-                    DifficultyRoot = previousDifficultyRoot;
-                    NestedDifficultyID = previousDifficulty;
-                }
-                if (restoreHeader)
-                {
-                    //LogDebug($"INFO: Restore previous headerID {previousHeaderID} => {NestedHeaderID}", data);
-                    NestedHeaderID = previousHeaderID;
-                }
-                if(restoreItemAppearanceModifierID)
-                {
-                    NestedItemAppearanceModifierID = previousItemAppearanceModifierID;
-                }
-                if (restoreModID)
-                {
-                    //LogDebug($"INFO: Restore previous modID {previousMod} => {NestedModID}", data);
-                    NestedModID = previousMod;
-                }
-                if (restoreLvl)
-                {
-                    //LogDebug($"INFO: Restore previous lvl {previousLvl} => {NestedMinLvl}", data);
-                    NestedMinLvl = previousLvl;
-                }
-                CurrentParentGroup = previousParent;
+                DifficultyRoot = data;
+                NestedDifficultyID = nestedDiffID;
             }
 
-            return true;
+            // Update the modID and associated ItemAppearanceModifierID
+            if (data.TryGetValue("modID", out long nestedModID) && nestedModID != NestedModID)
+            {
+                NestedModID = nestedModID;
+                if (ItemAppearanceModifierIDs_ModID.TryGetValue(NestedModID, out var id)) NestedItemAppearanceModifierID = id;
+            }
+
+            // Update the bonusID and associated ItemAppearanceModifierID
+            if (data.TryGetValue("bonusID", out long nestedBonusID) && nestedBonusID != NestedBonusID)
+            {
+                NestedBonusID = nestedBonusID;
+                if (ItemAppearanceModifierIDs_BonusID.TryGetValue(NestedBonusID, out var id)) NestedItemAppearanceModifierID = id;
+            }
+
+            // An explicitly defined value trumps the others.
+            if (data.TryGetValue("ItemAppearanceModifierID", out long nestedItemAppearanceModifierID))
+            {
+                NestedItemAppearanceModifierID = nestedItemAppearanceModifierID;
+            }
+
+            // Track the hierarchy of headerID
+            // NOTE: Once autoID no longer clashes with headerID and npcID is no longer dumb, use headerID instead.
+            if (data.TryGetValue("npcID", out long npcID) && npcID < 0 && long.TryParse(npcID.ToString(), out long headerID))
+            {
+                NestedHeaderID = headerID;
+            }
+
+            // Report context changes.
+            bool cachedShouldReportContextChanges = ShouldReportContextChanges;
+            long cachedContextReportDepth = ContextReportDepth;
+            /*
+            if (!cachedShouldReportContextChanges && NestedDifficultyID == 23 && Framework.CurrentParseStage == ParseStage.Consolidation)
+            {
+                ShouldReportContextChanges = true;
+                LogWarn("Report Start: ", data);
+            }
+            */
+            var cachedChangedDetected = NestedHeaderID != cachedHeaderID || NestedDifficultyID != cachedDifficulty
+                    || NestedModID != cachedModID || NestedBonusID != cachedBonusID || NestedItemAppearanceModifierID != cachedItemAppearanceModifierID;
+            if (ShouldReportContextChanges)
+            {
+                ContextReportDepth++;
+                if (cachedChangedDetected)
+                {
+                    var builder = new StringBuilder($">> [Context {NestedDifficultyID}, {NestedModID}, {NestedBonusID}, {NestedItemAppearanceModifierID}]");
+                    for (var i = 0; i < ContextReportDepth; i++) builder.Insert(0, ' ');
+                    LogWarn(builder.ToString());
+                }
+            }
+
+            /*
+            if (NestedMinLvl != cachedMinLevel) LogDebug($"INFO: Entered MinLevel Context: {NestedMinLvl}");
+            if (NestedHeaderID != cachedHeaderID) LogDebug($"INFO: Entered HeaderID Context: {NestedHeaderID}");
+            if (NestedDifficultyID != cachedDifficulty) LogDebug($"INFO: Entered DifficultyID Context: {NestedDifficultyID}");
+            if (NestedModID != cachedModID) LogDebug($"INFO: Entered ModID Context: {NestedModID}");
+            if (NestedBonusID != cachedBonusID) LogDebug($"INFO: Entered BonusID Context: {NestedBonusID}");
+            if (NestedItemAppearanceModifierID != cachedItemAppearanceModifierID) LogDebug($"INFO: Entered ItemAppearanceModifierID Context: {NestedItemAppearanceModifierID}");
+            */
+
+            // handle the current processing against the data
+            bool success = true;
+            if (ProcessingFunction(data, parentData))
+            {
+                // If this container has an aqd or hqd, then process those objects as well.
+                if (data.TryGetValue("aqd", out IDictionary<string, object> qd)) Process(qd, data);
+                if (data.TryGetValue("hqd", out qd)) Process(qd, data);
+
+                // If this container has groups, then process those groups as well.
+                if (data.TryGetValue("g", out List<object> groups))
+                {
+                    // Process all relative groups to this object.
+                    Process(groups, data);
+
+                    // Parent field consolidation now that groups have been processed
+                    if (CurrentParseStage >= ParseStage.Consolidation)
+                        HierarchicalFieldAdjustments.Apply(data, groups);
+
+
+                }
+            }
+            else success = false;
+
+            /*
+            if (NestedItemAppearanceModifierID != cachedItemAppearanceModifierID) LogDebug($"INFO: Left ItemAppearanceModifierID Context: {NestedItemAppearanceModifierID}");
+            if (NestedBonusID != cachedBonusID) LogDebug($"INFO: Left BonusID Context: {NestedBonusID}");
+            if (NestedModID != cachedModID) LogDebug($"INFO: Left ModID Context: {NestedModID}");
+            if (NestedDifficultyID != cachedDifficulty) LogDebug($"INFO: Left DifficultyID Context: {NestedDifficultyID}");
+            if (NestedHeaderID != cachedHeaderID) LogDebug($"INFO: Left HeaderID Context: {NestedHeaderID}");
+            if (NestedMinLvl != cachedMinLevel) LogDebug($"INFO: Left MinLevel Context: {NestedMinLvl}");
+            */
+
+            // Restore the Cached Context of the parent object.
+            NestedMinLvl = cachedMinLevel;
+            NestedModID = cachedModID;
+            NestedBonusID = cachedBonusID;
+            NestedItemAppearanceModifierID = cachedItemAppearanceModifierID;
+            NestedHeaderID = cachedHeaderID;
+            NestedDifficultyID = cachedDifficulty;
+            DifficultyRoot = cachedDifficultyRoot;
+            CurrentParentGroup = cachedParentGroup;
+
+            // Report context changes.
+            if (ShouldReportContextChanges)
+            {
+                if (cachedChangedDetected)
+                {
+                    var builder = new StringBuilder($"<< [Context {NestedDifficultyID}, {NestedModID}, {NestedBonusID}, {NestedItemAppearanceModifierID}]");
+                    for (var i = 0; i < ContextReportDepth; i++) builder.Insert(0, ' ');
+                    LogWarn(builder.ToString());
+                }
+            }
+            ContextReportDepth = cachedContextReportDepth;
+            ShouldReportContextChanges = cachedShouldReportContextChanges;
+
+            return success;
         }
 
         private static void CaptureDebugDBData(IDictionary<string, object> data)
@@ -758,25 +802,24 @@ namespace ATT
                 else MarkPhaseAsRequired(phase);
             }
 
-            // Apply the inherited modID for items which do not specify their own modID
-            if (NestedModID > 0 && data.ContainsKey("itemID") && !data.ContainsKey("modID"))
-            {
-                //LogDebug($"INFO: Applied inherited modID {NestedModID} for item {data.GetString("itemID")}");
-                data["modID"] = NestedModID;
-            }
             if (data.ContainsKey("ignoreBonus"))
             {
                 // will be removed later
                 data.Remove("modID");
                 data.Remove("bonusID");
-                data["ItemAppearanceModifierID"] = 0L;
+                NestedBonusID = 0L;
+                NestedModID = 0L;
+                NestedItemAppearanceModifierID = 0L;
                 //Log("Removed ignoreBonus modID", data.GetString("itemID"));
             }
-            // Apply the inherited ItemAppearanceModifierID for items which do not specify their own ItemAppearanceModifierID
-            else if (NestedItemAppearanceModifierID > 0 && data.ContainsKey("itemID") && !data.ContainsKey("ItemAppearanceModifierID"))
+            else
             {
-                //LogDebug($"INFO: Applied inherited ItemAppearanceModifierID {NestedItemAppearanceModifierID} for item {data.GetString("itemID")}");
-                data["ItemAppearanceModifierID"] = NestedItemAppearanceModifierID;
+                // Apply the inherited modID for items which do not specify their own modID
+                if (NestedModID > 0 && data.ContainsKey("itemID") && !data.ContainsKey("modID"))
+                {
+                    //LogDebug($"INFO: Applied inherited modID {NestedModID} for item {data.GetString("itemID")}");
+                    data["modID"] = NestedModID;
+                }
             }
 
             foreach (KeyValuePair<string, object> value in data.ToList())
