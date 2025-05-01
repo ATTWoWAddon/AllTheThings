@@ -779,23 +779,6 @@ namespace ATT
                 data["ItemAppearanceModifierID"] = NestedItemAppearanceModifierID;
             }
 
-            if (data.TryGetValue("artifactID", out long tempId)
-                && !data.ContainsKey("sourceID")
-                && Objects.ArtifactSources.TryGetValue(tempId, out Dictionary<string, long> sources))
-            {
-                // off-hand artifact source
-                if (data.ContainsKey("isOffHand"))
-                {
-                    if (sources.TryGetValue("offHand", out long s))
-                        data["sourceID"] = s;
-                }
-                else
-                {
-                    if (sources.TryGetValue("mainHand", out long s))
-                        data["sourceID"] = s;
-                }
-            }
-
             foreach (KeyValuePair<string, object> value in data.ToList())
             {
                 // validate any IProcessedField

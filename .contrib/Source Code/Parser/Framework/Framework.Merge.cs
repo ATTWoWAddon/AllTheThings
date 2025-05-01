@@ -307,45 +307,6 @@ namespace ATT
                             }
                             break;
                         }
-                    case "Artifacts":
-                        {
-                            if (pair.Value is Dictionary<long, object> artifactDB)
-                            {
-                                foreach (var itemValuePair in artifactDB)
-                                {
-                                    if (itemValuePair.Value is IDictionary<string, object> artifact)
-                                    {
-                                        long artifactID = itemValuePair.Key;
-                                        if (!Objects.ArtifactSources.TryGetValue(artifactID, out Dictionary<string, long> artifactInfo))
-                                            Objects.ArtifactSources[artifactID] = artifactInfo = new Dictionary<string, long>();
-
-                                        foreach (var hand in artifact)
-                                        {
-                                            artifactInfo[ATT.Export.ToString(hand.Key)] = Convert.ToInt64(hand.Value);
-                                        }
-                                    }
-                                }
-                            }
-                            else if (pair.Value is List<object> artifacts)
-                            {
-                                var artifactID = 0;
-                                foreach (var o in artifacts)
-                                {
-                                    ++artifactID;
-                                    if (o is IDictionary<string, object> artifact)
-                                    {
-                                        if (!Objects.ArtifactSources.TryGetValue(artifactID, out Dictionary<string, long> artifactInfo))
-                                            Objects.ArtifactSources[artifactID] = artifactInfo = new Dictionary<string, long>();
-
-                                        foreach (var hand in artifact)
-                                        {
-                                            artifactInfo[ATT.Export.ToString(hand.Key)] = Convert.ToInt64(hand.Value);
-                                        }
-                                    }
-                                }
-                            }
-                            break;
-                        }
                     case "CategoryDB":
                         {
                             // The format of the Category DB is a dictionary of Category ID <-> Category pairs.
