@@ -232,6 +232,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				["ItemAppearanceModifierID"] = 0,
 				["lvl"] = 110,
 				["g"] = {
 					cr(91003, e(1662, {	-- Rokmora

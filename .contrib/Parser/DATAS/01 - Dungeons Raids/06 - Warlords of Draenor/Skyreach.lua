@@ -133,57 +133,60 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				e(965, {	-- Ranjit
-					["crs"] = { 75964 },
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, HEAD},
-						{"sub", "common_wod_dungeon_drop", 23, WAIST},
-					},
-					["g"] = {
-						i(110030),	-- Chakram-Breaker Greatsword
-					},
-				}),
-				e(966, {	-- Araknath
-					["crs"] = { 76141 },
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, NECK},
-						{"sub", "common_wod_dungeon_drop", 23, FEET},
-					},
-					["g"] = {
-						i(110031),	-- Spire of the Furious Construct
-						i(110016),	-- Solar Containment Unit
-					},
-				}),
-				e(967, {	-- Rukhran
-					["crs"] = { 76143 },
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, WRIST},
-						{"sub", "common_wod_dungeon_drop", 23, HANDS},
-					},
-					["g"] = {
-						i(110032),	-- Beakbreaker Scimitar
-						i(110006),	-- Rukhran's Quill
-					},
-				}),
-				e(968, {	-- High Sage Viryx
-					["crs"] = { 76266 },
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, SHOULDER},
-						{"sub", "common_wod_dungeon_drop", 23, LEGS},
-						{"sub", "common_wod_dungeon_drop", 23, FINGER},
-					},
-					["g"] = {
-						ach(10081),	-- Mythic: Skyreach
-						TempForceMisc(ig(127772, {	-- Gemcutter Module: Haste
-							["requireSkill"] = JEWELCRAFTING,
-							["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
-						})),
-						i(110033),	-- Arcanic of the High Sage
-						i(110034),	-- Viryx's Indomitable Bulwark
-						i(110011),	-- Fires of the Sun
-						un(REMOVED_FROM_GAME, i(114780)),	-- Pure Solium Band
-					},
-				}),
+				["ItemAppearanceModifierID"] = 0,
+				["groups"] = {
+					e(965, {	-- Ranjit
+						["crs"] = { 75964 },
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, HEAD},
+							{"sub", "common_wod_dungeon_drop", 23, WAIST},
+						},
+						["g"] = {
+							i(110030),	-- Chakram-Breaker Greatsword
+						},
+					}),
+					e(966, {	-- Araknath
+						["crs"] = { 76141 },
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, NECK},
+							{"sub", "common_wod_dungeon_drop", 23, FEET},
+						},
+						["g"] = {
+							i(110031),	-- Spire of the Furious Construct
+							i(110016),	-- Solar Containment Unit
+						},
+					}),
+					e(967, {	-- Rukhran
+						["crs"] = { 76143 },
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, WRIST},
+							{"sub", "common_wod_dungeon_drop", 23, HANDS},
+						},
+						["g"] = {
+							i(110032),	-- Beakbreaker Scimitar
+							i(110006),	-- Rukhran's Quill
+						},
+					}),
+					e(968, {	-- High Sage Viryx
+						["crs"] = { 76266 },
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, SHOULDER},
+							{"sub", "common_wod_dungeon_drop", 23, LEGS},
+							{"sub", "common_wod_dungeon_drop", 23, FINGER},
+						},
+						["g"] = {
+							ach(10081),	-- Mythic: Skyreach
+							TempForceMisc(ig(127772, {	-- Gemcutter Module: Haste
+								["requireSkill"] = JEWELCRAFTING,
+								["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
+							})),
+							i(110033),	-- Arcanic of the High Sage
+							i(110034),	-- Viryx's Indomitable Bulwark
+							i(110011),	-- Fires of the Sun
+							un(REMOVED_FROM_GAME, i(114780)),	-- Pure Solium Band
+						},
+					}),
+				},
 			}),
 		},
 	}),

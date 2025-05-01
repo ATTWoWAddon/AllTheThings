@@ -131,54 +131,57 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				e(1139, {	-- Sadana Bloodfury
-					["crs"] = { 75509 },
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, NECK},
-						{"sub", "common_wod_dungeon_drop", 23, BACK},
-					},
-					["g"] = {
-						i(110035),	-- Sadana's Grisly Visage
-					},
-				}),
-				e(1168, {	-- Nhallish
-					["crs"] = { 75829 },
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, WRIST},
-						{"sub", "common_wod_dungeon_drop", 23, CHEST},
-					},
-					["g"] = {
-						i(110036),	-- Nhallish's Bloody Polearm
-						i(110007),	-- Voidmender's Shadowgem
-					},
-				}),
-				e(1140, {	-- Bonemaw
-					["crs"] = { 75452 },
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, WAIST},
-						{"sub", "common_wod_dungeon_drop", 23, HANDS},
-					},
-					["g"] = {
-						i(110037),	-- Bonetooth Longbow
-						i(110012),	-- Bonemaw's Big Toe
-					},
-				}),
-				e(1160, {	-- Ner'zhul
-					["crs"] = { 76407 },
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, HEAD},
-						{"sub", "common_wod_dungeon_drop", 23, FEET},
-						{"sub", "common_wod_dungeon_drop", 23, FINGER},
-					},
-					["g"] = {
-						ach(10084),	-- Mythic: Shadowmoon Burial Grounds
-						i(138806, {	-- Illusion: Mark of Shadowmoon (ILLUSION!)
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(110039),	-- Portal-Ripper's Staff
-						i(110038),	-- Ner'zhul's Ritual Blade
-					},
-				}),
+				["ItemAppearanceModifierID"] = 0,
+				["groups"] = {
+					e(1139, {	-- Sadana Bloodfury
+						["crs"] = { 75509 },
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, NECK},
+							{"sub", "common_wod_dungeon_drop", 23, BACK},
+						},
+						["g"] = {
+							i(110035),	-- Sadana's Grisly Visage
+						},
+					}),
+					e(1168, {	-- Nhallish
+						["crs"] = { 75829 },
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, WRIST},
+							{"sub", "common_wod_dungeon_drop", 23, CHEST},
+						},
+						["g"] = {
+							i(110036),	-- Nhallish's Bloody Polearm
+							i(110007),	-- Voidmender's Shadowgem
+						},
+					}),
+					e(1140, {	-- Bonemaw
+						["crs"] = { 75452 },
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, WAIST},
+							{"sub", "common_wod_dungeon_drop", 23, HANDS},
+						},
+						["g"] = {
+							i(110037),	-- Bonetooth Longbow
+							i(110012),	-- Bonemaw's Big Toe
+						},
+					}),
+					e(1160, {	-- Ner'zhul
+						["crs"] = { 76407 },
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, HEAD},
+							{"sub", "common_wod_dungeon_drop", 23, FEET},
+							{"sub", "common_wod_dungeon_drop", 23, FINGER},
+						},
+						["g"] = {
+							ach(10084),	-- Mythic: Shadowmoon Burial Grounds
+							i(138806, {	-- Illusion: Mark of Shadowmoon (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
+							}),
+							i(110039),	-- Portal-Ripper's Staff
+							i(110038),	-- Ner'zhul's Ritual Blade
+						},
+					}),
+				},
 			}),
 		},
 	}),

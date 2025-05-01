@@ -6,7 +6,6 @@ local WOD_CRAFTED_ITEM = function(id, upgradeItem)
 	return
 	i(id, {	-- Base Item 1/6
 		["bonusID"] = 525,
-		["ItemAppearanceModifierID"] = 0,
 		["g"] = bubbleDown({["cost"] = upgradeItem and { { "i", upgradeItem, 1 } }},{
 			i(id, {	-- Upgrade 1 2/6
 				["bonusID"] = 558,
@@ -74,12 +73,10 @@ local WOD_CRAFTED_IDENTICAL_ITEM = function(id, upgradeItem)
 	});
 end
 
-local WOD_CRAFTED_ITEM_DF_BASE = function(id)
-	return
-	i(id, {
-		["bonusID"] = 525,
-		["ItemAppearanceModifierID"] = 0,
-	});
+local WOD_CRAFTED_ITEM_DF_BASE = function(id, t)
+	if not t then t = {}; end
+	t.bonusID = 525;
+	return i(id, t);
 end
 
 local WOD_CRAFTED_ITEM_DF_IMPRESSIVE = function(id, upgradeItem)
@@ -493,7 +490,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			-- #IF BEFORE 10.0.5
 			WOD_CRAFTED_ITEM(109168, 128017),	-- Shrediron's Shredder + True Iron Trigger
 			-- #ELSE
-			WOD_CRAFTED_ITEM_DF_BASE(109168),	-- Shrediron's Shredder
+			WOD_CRAFTED_ITEM_DF_BASE(109168, { ["ItemAppearanceModifierID"] = 0 }),	-- Shrediron's Shredder
 			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(109168, 202214),	-- Shrediron's Shredder + Impressive True Iron Trigger
 			WOD_CRAFTED_ITEM_DF_REMARKABLE(109168, 202215),	-- Shrediron's Shredder + Remarkable True Iron Trigger
 			-- #ENDIF
@@ -631,7 +628,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			-- #IF BEFORE 10.0.5
 			WOD_CRAFTED_ITEM(113270),	-- Shadowtome
 			-- #ELSE
-			WOD_CRAFTED_ITEM_DF_BASE(113270),	-- Shadowtome
+			WOD_CRAFTED_ITEM_DF_BASE(113270, { ["ItemAppearanceModifierID"] = 0 }),	-- Shadowtome
 			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(113270, 202220),	-- Shadowtome + Impressive Weapon Crystal
 			WOD_CRAFTED_ITEM_DF_REMARKABLE(113270, 202221),	-- Shadowtome + Remarkable Weapon Crystal
 			-- #ENDIF
@@ -649,8 +646,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			WOD_CRAFTED_ITEM(113134),	-- Crystalfire Spellstaff
 			WOD_CRAFTED_ITEM(111526),	-- Etched-Blade Warstaff
 			-- #ELSE
-			WOD_CRAFTED_ITEM_DF_BASE(113134),	-- Crystalfire Spellstaff
-			WOD_CRAFTED_ITEM_DF_BASE(111526),	-- Etched-Blade Warstaff
+			WOD_CRAFTED_ITEM_DF_BASE(113134, { ["ItemAppearanceModifierID"] = 0 }),	-- Crystalfire Spellstaff
+			WOD_CRAFTED_ITEM_DF_BASE(111526, { ["ItemAppearanceModifierID"] = 0 }),	-- Etched-Blade Warstaff
 			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(113134, 202220),	-- Crystalfire Spellstaff+ Impressive Weapon Crystal
 			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(111526, 202220),	-- Etched-Blade Warstaff + Impressive Weapon Crystal
 			WOD_CRAFTED_ITEM_DF_REMARKABLE(113134, 202221),	-- Crystalfire Spellstaff + Remarkable Weapon Crystal
@@ -665,7 +662,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			-- #IF BEFORE 10.0.5
 			WOD_CRAFTED_ITEM(113131),	-- Warmaster's Firestick
 			-- #ELSE
-			WOD_CRAFTED_ITEM_DF_BASE(113131),	-- Warmaster's Firestick
+			WOD_CRAFTED_ITEM_DF_BASE(113131, { ["ItemAppearanceModifierID"] = 0 }),	-- Warmaster's Firestick
 			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(113131, 202220),	-- Warmaster's Firestick + Impressive Weapon Crystal
 			WOD_CRAFTED_ITEM_DF_REMARKABLE(113131, 202221),	-- Warmaster's Firestick + Remarkable Weapon Crystal
 			-- #ENDIF

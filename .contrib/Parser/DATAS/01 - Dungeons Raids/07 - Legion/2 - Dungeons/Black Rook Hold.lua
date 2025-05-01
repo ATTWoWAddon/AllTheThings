@@ -251,6 +251,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				["ItemAppearanceModifierID"] = 0,
 				["lvl"] = 110,
 				["g"] = {
 					e(1518, {	-- Amalgam of Souls

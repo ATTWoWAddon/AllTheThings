@@ -114,48 +114,51 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				e(1138, {	-- Rocketspark and Borka
-					["crs"] = {
-						77816,	-- Borka the Brute
-						77803,	-- Railmaster Rocketspark
-					},
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, WAIST},
-						{"sub", "common_wod_dungeon_drop", 23, FINGER},
-					},
-					["g"] = {
-						i(110051),	-- Overseer's Final Word
-					},
-				}),
-				e(1163, {	-- Nitrogg Thundertower
-					["crs"] = {
-						79548,	-- Assault Cannon
-						79545,	-- Nitrogg Thundertower
-					},
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, NECK},
-						{"sub", "common_wod_dungeon_drop", 23, CHEST},
-					},
-					["g"] = {
-						i(110052),	-- Scepter of Brutality
-						i(109996),	-- Thundertower's Targeting Reticle
-					},
-				}),
-				e(1133, {	-- Skylord Tovra
-					["crs"] = { 80005 },	-- Skylord Tovra
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, WRIST},
-						{"sub", "common_wod_dungeon_drop", 23, HANDS},
-						{"sub", "common_wod_dungeon_drop", 23, LEGS},
-					},
-					["g"] = {
-						ach(10082),	-- Mythic: Grimrail Depot
-						i(110054),	-- Thunderlord Flamestaff
-						i(110053),	-- Arrowbreaker Greatshield
-						i(110001),	-- Tovra's Lightning Repository
-						un(REMOVED_FROM_GAME, i(114107)),	-- Core of Iron
-					},
-				}),
+				["ItemAppearanceModifierID"] = 0,
+				["groups"] = {
+					e(1138, {	-- Rocketspark and Borka
+						["crs"] = {
+							77816,	-- Borka the Brute
+							77803,	-- Railmaster Rocketspark
+						},
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, WAIST},
+							{"sub", "common_wod_dungeon_drop", 23, FINGER},
+						},
+						["g"] = {
+							i(110051),	-- Overseer's Final Word
+						},
+					}),
+					e(1163, {	-- Nitrogg Thundertower
+						["crs"] = {
+							79548,	-- Assault Cannon
+							79545,	-- Nitrogg Thundertower
+						},
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, NECK},
+							{"sub", "common_wod_dungeon_drop", 23, CHEST},
+						},
+						["g"] = {
+							i(110052),	-- Scepter of Brutality
+							i(109996),	-- Thundertower's Targeting Reticle
+						},
+					}),
+					e(1133, {	-- Skylord Tovra
+						["crs"] = { 80005 },	-- Skylord Tovra
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, WRIST},
+							{"sub", "common_wod_dungeon_drop", 23, HANDS},
+							{"sub", "common_wod_dungeon_drop", 23, LEGS},
+						},
+						["g"] = {
+							ach(10082),	-- Mythic: Grimrail Depot
+							i(110054),	-- Thunderlord Flamestaff
+							i(110053),	-- Arrowbreaker Greatshield
+							i(110001),	-- Tovra's Lightning Repository
+							un(REMOVED_FROM_GAME, i(114107)),	-- Core of Iron
+						},
+					}),
+				},
 			}),
 		},
 	}),

@@ -138,61 +138,64 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				e(888, {	-- Slave Watcher Crushto
-					["crs"] = { 74787 },	-- Slave Watcher Crushto
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, WRIST},
-						{"sub", "common_wod_dungeon_drop", 23, LEGS},
-					},
-					["g"] = {
-						i(110040),	-- Crushto's Neck Separator
-						i(110000),	-- Crushto's Runic Alarm
-					},
-				}),
-				n(75242, {	-- Croman (The Barbarian)
-					["description"] = "Click on this manly dude and have him follow you to Magmolatus and allow him to retrieve his weapon. (He has to hit the boss at least one time.)\n\nAfter he has reclaimed his weapon, bring him to the final boss and allow him to hit that boss as well before killing the boss.  Croman must still be alive at the end of the dungeon.",
-					["g"] = {
-						ach(9005, {	-- Come With Me If You Want to Live
-							follower(177),	-- Croman
-						}),
-					},
-				}),
-				e(893, {	-- Magmolatus
-					["crs"] = {
-						74366,	-- Forgemaster Gog'duh
-						74475,	-- Magmolatus
-					},
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, CHEST},
-						{"sub", "common_wod_dungeon_drop", 23, HANDS},
-					},
-				}),
-				e(887, {	-- Roltall
-					["crs"] = { 75786 },	-- Roltall
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, BACK},
-						{"sub", "common_wod_dungeon_drop", 23, FEET},
-					},
-					["g"] = {
-						i(110041),	-- Roltall's Brutal Crescent
-						i(110015),	-- Toria's Unseeing Eye
-					},
-				}),
-				e(889, {	-- Gug'rokk
-					["crs"] = { 74790 },	-- Gug'rokk
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, HEAD},
-						{"sub", "common_wod_dungeon_drop", 23, SHOULDER},
-						{"sub", "common_wod_dungeon_drop", 23, FINGER},
-					},
-					["g"] = {
-						ach(10076),	-- Mythic: Bloodmaul Slag Mines
-						i(110042),	-- Gug'rokk's Smasher
-						i(110044),	-- Ogre Dinner Plate
-						i(110043),	-- Gug'rokk's Grandmother
-						un(REMOVED_FROM_GAME, i(113682)),	-- Core of Flame
-					},
-				}),
+				["ItemAppearanceModifierID"] = 0,
+				["groups"] = {
+					e(888, {	-- Slave Watcher Crushto
+						["crs"] = { 74787 },	-- Slave Watcher Crushto
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, WRIST},
+							{"sub", "common_wod_dungeon_drop", 23, LEGS},
+						},
+						["g"] = {
+							i(110040),	-- Crushto's Neck Separator
+							i(110000),	-- Crushto's Runic Alarm
+						},
+					}),
+					n(75242, {	-- Croman (The Barbarian)
+						["description"] = "Click on this manly dude and have him follow you to Magmolatus and allow him to retrieve his weapon. (He has to hit the boss at least one time.)\n\nAfter he has reclaimed his weapon, bring him to the final boss and allow him to hit that boss as well before killing the boss.  Croman must still be alive at the end of the dungeon.",
+						["g"] = {
+							ach(9005, {	-- Come With Me If You Want to Live
+								follower(177),	-- Croman
+							}),
+						},
+					}),
+					e(893, {	-- Magmolatus
+						["crs"] = {
+							74366,	-- Forgemaster Gog'duh
+							74475,	-- Magmolatus
+						},
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, CHEST},
+							{"sub", "common_wod_dungeon_drop", 23, HANDS},
+						},
+					}),
+					e(887, {	-- Roltall
+						["crs"] = { 75786 },	-- Roltall
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, BACK},
+							{"sub", "common_wod_dungeon_drop", 23, FEET},
+						},
+						["g"] = {
+							i(110041),	-- Roltall's Brutal Crescent
+							i(110015),	-- Toria's Unseeing Eye
+						},
+					}),
+					e(889, {	-- Gug'rokk
+						["crs"] = { 74790 },	-- Gug'rokk
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, HEAD},
+							{"sub", "common_wod_dungeon_drop", 23, SHOULDER},
+							{"sub", "common_wod_dungeon_drop", 23, FINGER},
+						},
+						["g"] = {
+							ach(10076),	-- Mythic: Bloodmaul Slag Mines
+							i(110042),	-- Gug'rokk's Smasher
+							i(110044),	-- Ogre Dinner Plate
+							i(110043),	-- Gug'rokk's Grandmother
+							un(REMOVED_FROM_GAME, i(113682)),	-- Core of Flame
+						},
+					}),
+				},
 			}),
 		},
 	}),
