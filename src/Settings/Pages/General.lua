@@ -164,13 +164,13 @@ modeButton:SetScript("OnClick", function()
 			return MenuResponse.Close
 		end)
 
-		local preset1 = rootDescription:CreateButton(L.TITLE_CORE, OnClick)
-		preset1:SetTooltip(function(tooltip, elementDescription)
+		local preset = rootDescription:CreateButton(L.TITLE_CORE, OnClick)
+		preset:SetTooltip(function(tooltip, elementDescription)
 			GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
 			GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
 			GameTooltip_AddNormalLine(tooltip, L.PRESET_CORE)
 		end)
-		preset1:SetResponder(function()
+		preset:SetResponder(function()
 			-- Account-wide Things
 			settings:Set("Thing:Transmog", true)
 			settings:Set("Completionist", false)
@@ -217,13 +217,13 @@ modeButton:SetScript("OnClick", function()
 			return MenuResponse.Close
 		end)
 
-		local preset2 = rootDescription:CreateButton(L.TITLE_RANKED, OnClick)
-		preset2:SetTooltip(function(tooltip, elementDescription)
+		local preset = rootDescription:CreateButton(L.TITLE_RANKED, OnClick)
+		preset:SetTooltip(function(tooltip, elementDescription)
 			GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
 			GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
 			GameTooltip_AddNormalLine(tooltip, L.PRESET_RANKED)
 		end)
-		preset2:SetResponder(function()
+		preset:SetResponder(function()
 			-- Account-wide Things
 			settings:Set("Thing:Transmog", true)
 			settings:Set("Completionist", true)
@@ -270,13 +270,13 @@ modeButton:SetScript("OnClick", function()
 			return MenuResponse.Close
 		end)
 
-		local preset3 = rootDescription:CreateButton(L.TITLE_INSANE, OnClick)
-		preset3:SetTooltip(function(tooltip, elementDescription)
+		local preset = rootDescription:CreateButton(L.TITLE_INSANE, OnClick)
+		preset:SetTooltip(function(tooltip, elementDescription)
 			GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
 			GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
 			GameTooltip_AddNormalLine(tooltip, L.PRESET_INSANE)
 		end)
-		preset3:SetResponder(function()
+		preset:SetResponder(function()
 			-- Account-wide Things
 			settings:Set("Thing:Transmog", true)
 			-- settings:Set("Completionist", true)
@@ -331,13 +331,41 @@ modeButton:SetScript("OnClick", function()
 			return MenuResponse.Close
 		end)
 
-		local preset4 = rootDescription:CreateButton(L.TITLE_SOLO, OnClick)
-		preset4:SetTooltip(function(tooltip, elementDescription)
+		local preset = rootDescription:CreateButton(L.TITLE_ACCOUNT, OnClick)
+		preset:SetTooltip(function(tooltip, elementDescription)
+			GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
+			GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
+			GameTooltip_AddNormalLine(tooltip, L.PRESET_ACCOUNT)
+		end)
+		preset:SetResponder(function()
+			settings:SetAccountMode(true)
+			
+			-- General Things
+			settings:Set("AccountWide:Achievements", true)
+			settings:Set("AccountWide:CharacterUnlocks", true)
+			settings:Set("AccountWide:DeathTracker", true)
+			settings:Set("AccountWide:Quests", true)
+			settings:Set("AccountWide:Recipes", true)
+			settings:Set("AccountWide:Reputations", true)
+			settings:Set("AccountWide:Titles", true)
+
+			-- Expansion Things
+			settings:Set("AccountWide:Followers", true)
+			settings:Set("AccountWide:AzeriteEssences", true)
+			settings:Set("AccountWide:Conduits", true)
+			
+			-- Close menu after clicking and refresh
+			settings:UpdateMode(1)
+			return MenuResponse.Close
+		end)
+
+		local preset = rootDescription:CreateButton(L.TITLE_SOLO, OnClick)
+		preset:SetTooltip(function(tooltip, elementDescription)
 			GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
 			GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
 			GameTooltip_AddNormalLine(tooltip, L.PRESET_SOLO)
 		end)
-		preset4:SetResponder(function()
+		preset:SetResponder(function()
 			settings:SetAccountMode(false)
 			
 			-- General Things
@@ -359,13 +387,13 @@ modeButton:SetScript("OnClick", function()
 			return MenuResponse.Close
 		end)
 
-		local preset5 = rootDescription:CreateButton(L.TITLE_UNIQUE_APPEARANCE, OnClick)
-		preset5:SetTooltip(function(tooltip, elementDescription)
+		local preset = rootDescription:CreateButton(L.TITLE_UNIQUE_APPEARANCE, OnClick)
+		preset:SetTooltip(function(tooltip, elementDescription)
 			GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
 			GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
 			GameTooltip_AddNormalLine(tooltip, L.PRESET_UNIQUE)
 		end)
-		preset5:SetResponder(function()
+		preset:SetResponder(function()
 			settings:Set("Thing:Transmog", true)
 			settings:Set("Completionist", false)
 
@@ -374,13 +402,13 @@ modeButton:SetScript("OnClick", function()
 			return MenuResponse.Close
 		end)
 
-		local preset6 = rootDescription:CreateButton(L.TITLE_COMPLETIONIST, OnClick)
-		preset6:SetTooltip(function(tooltip, elementDescription)
+		local preset = rootDescription:CreateButton(L.TITLE_COMPLETIONIST, OnClick)
+		preset:SetTooltip(function(tooltip, elementDescription)
 			GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
 			GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
 			GameTooltip_AddNormalLine(tooltip, L.PRESET_COMP)
 		end)
-		preset6:SetResponder(function()
+		preset:SetResponder(function()
 			settings:Set("Thing:Transmog", true)
 			settings:Set("Completionist", true)
 			
