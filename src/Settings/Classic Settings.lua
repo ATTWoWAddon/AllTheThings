@@ -342,6 +342,8 @@ settings.GetModeString = function(self)
 		local solo = true
 		local keyPrefix, thingName, thingActive
 		local insaneTotalCount, insaneCount = 0, 0;
+		local rankedTotalCount, rankedCount = 0, 0;
+		local coreTotalCount, coreCount = 0, 0;
 		local totalThingCount, thingCount, things = 0, 0, {};
 		for key,_ in pairs(GeneralSettingsBase.__index) do
 			keyPrefix = key:sub(1, 6);
@@ -360,8 +362,24 @@ settings.GetModeString = function(self)
 						insaneTotalCount = insaneTotalCount + 1;
 						insaneCount = insaneCount + 1;
 					end
-				elseif self.RequiredForInsaneMode[thingName] then
-					insaneTotalCount = insaneTotalCount + 1;
+					if self.RequiredForRankedMode[thingName] then
+						rankedTotalCount = rankedTotalCount + 1;
+						rankedCount = rankedCount + 1;
+					end
+					if self.RequiredForCoreMode[thingName] then
+						coreTotalCount = coreTotalCount + 1;
+						coreCount = coreCount + 1;
+					end
+				else
+					if self.RequiredForInsaneMode[thingName] then
+						insaneTotalCount = insaneTotalCount + 1;
+					end
+					if self.RequiredForRankedMode[thingName] then
+						rankedTotalCount = rankedTotalCount + 1;
+					end
+					if self.RequiredForCoreMode[thingName] then
+						coreTotalCount = coreTotalCount + 1;
+					end
 				end
 			elseif solo and keyPrefix == "Accoun" and settings:Get(key) then
 				-- TODO: a bit wonky that a disabled Thing with AccountWide checked can make it non-solo...
@@ -375,11 +393,25 @@ settings.GetModeString = function(self)
 		elseif thingCount == 2 then
 			mode = things[1] .. " + " .. things[2] .. " Only " .. mode;
 		elseif insaneCount == insaneTotalCount then
-			-- only insane if not hiding anything!
-			if settings:NonInsane() then
-				-- don't add insane :)
+			-- only Insane if not hiding anything!
+			if settings:NonMode() then
+				-- don't add Insane :)
 			else
 				mode = "Insane " .. mode
+			end
+		elseif rankedCount == rankedTotalCount then
+			-- only Ranked if not hiding anything!
+			if settings:NonMode() then
+				-- don't add Ranked :)
+			else
+				mode = "Ranked " .. mode
+			end
+		elseif coreCount == coreTotalCount then
+			-- only Core if not hiding anything!
+			if settings:NonMode() then
+				-- don't add Core :)
+			else
+				mode = "Core " .. mode
 			end
 		elseif not settings:Get("Thing:Transmog") and self.RequiredForInsaneMode["Transmog"] then
 			mode = "Some of the Things " .. mode

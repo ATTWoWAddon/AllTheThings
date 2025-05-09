@@ -76,6 +76,8 @@ settings.ForceAccountWide = {
 	Transmog = true,
 	--WarbandScene = app.GameBuildVersion >= 110100,
 }
+
+-- INSANE MODE
 settings.RequiredForInsaneMode = {
 	Achievements = true,
 	AzeriteEssences = app.GameBuildVersion >= 80000,
@@ -101,10 +103,35 @@ settings.RequiredForInsaneMode = {
 	--WarbandScene = app.GameBuildVersion >= 110100,
 }
 
+-- RANKED MODE
+settings.RequiredForRankedMode = {
+	Achievements = true,
+	BattlePets = true,
+	Heirlooms = app.GameBuildVersion >= 30000,
+	Illusions = app.GameBuildVersion >= 70000,
+	Mounts = true,
+	Quests = true,
+	Recipes = true,
+	Reputations = true,
+	Titles = true,
+	Toys = true,
+	Transmog = app.GameBuildVersion >= 40000,
+}
+
+-- CORE MODE
+settings.RequiredForCoreMode = {
+	BattlePets = true,
+	Heirlooms = app.GameBuildVersion >= 30000,
+	Illusions = app.GameBuildVersion >= 70000,
+	Mounts = true,
+	Toys = true,
+	Transmog = app.GameBuildVersion >= 40000,
+}
+
 if app.GameBuildVersion >= 90000 then
 	-- In this version, also include Convenants
-	-- Returns true if something is being hidden/filtered and removing Insane status
-	settings.NonInsane = function(self)
+	-- Returns true if something is being hidden/filtered and removing any Mode status
+	settings.NonMode = function(self)
 		-- Non-Account Mode with Covenants filtered
 		if not self:Get("AccountMode") then
 			local currentCharacter = app.CurrentCharacter;
@@ -140,7 +167,7 @@ if app.GameBuildVersion >= 90000 then
 	end
 else
 	-- Returns true if something is being hidden/filtered and removing Insane status
-	settings.NonInsane = function(self)
+	settings.NonMode = function(self)
 		return
 		-- Hiding BoE's
 		self:Get("Hide:BoEs")

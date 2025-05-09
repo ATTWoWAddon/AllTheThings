@@ -554,6 +554,8 @@ settings.GetModeString = function(self)
 		local solo = not app.MODE_DEBUG_OR_ACCOUNT
 		local keyPrefix, thingName, thingActive
 		local insaneTotalCount, insaneCount = 0, 0;
+		local rankedTotalCount, rankedCount = 0, 0;
+		local coreTotalCount, coreCount = 0, 0;
 		local totalThingCount, thingCount, things = 0, 0, {};
 		for key,_ in pairs(GeneralSettingsBase.__index) do
 			keyPrefix, thingName = (":"):split(key)
@@ -571,8 +573,24 @@ settings.GetModeString = function(self)
 						insaneTotalCount = insaneTotalCount + 1;
 						insaneCount = insaneCount + 1;
 					end
-				elseif self.RequiredForInsaneMode[thingName] then
-					insaneTotalCount = insaneTotalCount + 1;
+					if self.RequiredForRankedMode[thingName] then
+						rankedTotalCount = rankedTotalCount + 1;
+						rankedCount = rankedCount + 1;
+					end
+					if self.RequiredForCoreMode[thingName] then
+						coreTotalCount = coreTotalCount + 1;
+						coreCount = coreCount + 1;
+					end
+				else
+					if self.RequiredForInsaneMode[thingName] then
+						insaneTotalCount = insaneTotalCount + 1;
+					end
+					if self.RequiredForRankedMode[thingName] then
+						rankedTotalCount = rankedTotalCount + 1;
+					end
+					if self.RequiredForCoreMode[thingName] then
+						coreTotalCount = coreTotalCount + 1;
+					end
 				end
 			elseif solo and keyPrefix == "AccountWide"
 				and not settings.ForceAccountWide[thingName]
@@ -588,11 +606,25 @@ settings.GetModeString = function(self)
 		elseif thingCount == 2 then
 			mode = things[1] .. " + " .. things[2] .. L.TITLE_ONLY .. mode
 		elseif insaneCount == insaneTotalCount then
-			-- only insane if not hiding anything!
-			if settings:NonInsane() then
-				-- don't add insane :)
+			-- only Insane if not hiding anything!
+			if settings:NonMode() then
+				-- don't add Insane :)
 			else
 				mode = L.TITLE_INSANE .. mode
+			end
+		elseif rankedCount == rankedTotalCount then
+			-- only Ranked if not hiding anything!
+			if settings:NonMode() then
+				-- don't add Ranked :)
+			else
+				mode = L.TITLE_RANKED .. mode
+			end
+		elseif coreCount == coreTotalCount then
+			-- only Core if not hiding anything!
+			if settings:NonMode() then
+				-- don't add Core :)
+			else
+				mode = L.TITLE_CORE .. mode
 			end
 		elseif not settings:Get("Thing:Transmog") and self.RequiredForInsaneMode.Transmog then
 			mode = L.TITLE_SOME_THINGS .. mode
@@ -650,11 +682,25 @@ settings.GetShortModeString = function(self)
 		if thingCount == 0 then
 			style = "N"
 		elseif insaneCount == insaneTotalCount then
-			-- only insane if not hiding anything!
-			if settings:NonInsane() then
-				-- don't add insane :)
+			-- only Insane if not hiding anything!
+			if settings:NonMode() then
+				-- don't add Insane :)
 			else
 				style = "I"
+			end
+		elseif rankedCount == rankedTotalCount then
+			-- only Ranked if not hiding anything!
+			if settings:NonMode() then
+				-- don't add Ranked :)
+			else
+				style = "R"
+			end
+		elseif coreCount == coreTotalCount then
+			-- only Core if not hiding anything!
+			if settings:NonMode() then
+				-- don't add Core :)
+			else
+				style = "C"
 			end
 		else
 			style = ""
