@@ -159,7 +159,8 @@ modeButton:SetScript("OnClick", function()
 			settings:Set("Thing:RuneforgeLegendaries", false)
 			settings:Set("Thing:MountMods", false)
 
-			-- Close menu after clicking
+			-- Close menu after clicking and refresh
+			settings:UpdateMode(1)
 			return MenuResponse.Close
 		end)
 
@@ -211,7 +212,8 @@ modeButton:SetScript("OnClick", function()
 			settings:Set("Thing:RuneforgeLegendaries", false)
 			settings:Set("Thing:MountMods", false)
 
-			-- Close menu after clicking
+			-- Close menu after clicking and refresh
+			settings:UpdateMode(1)
 			return MenuResponse.Close
 		end)
 
@@ -263,7 +265,8 @@ modeButton:SetScript("OnClick", function()
 			settings:Set("Thing:RuneforgeLegendaries", false)
 			settings:Set("Thing:MountMods", false)
 
-			-- Close menu after clicking
+			-- Close menu after clicking and refresh
+			settings:UpdateMode(1)
 			return MenuResponse.Close
 		end)
 
@@ -323,7 +326,8 @@ modeButton:SetScript("OnClick", function()
 			settings:Set("Thing:RuneforgeLegendaries", true)
 			settings:Set("Thing:MountMods", true)
 
-			-- Close menu after clicking
+			-- Close menu after clicking and refresh
+			settings:UpdateMode(1)
 			return MenuResponse.Close
 		end)
 
@@ -350,7 +354,8 @@ modeButton:SetScript("OnClick", function()
 			settings:Set("AccountWide:AzeriteEssences", false)
 			settings:Set("AccountWide:Conduits", false)
 			
-			-- Close menu after clicking
+			-- Close menu after clicking and refresh
+			settings:UpdateMode(1)
 			return MenuResponse.Close
 		end)
 
@@ -364,7 +369,8 @@ modeButton:SetScript("OnClick", function()
 			settings:Set("Thing:Transmog", true)
 			settings:Set("Completionist", false)
 
-			-- Close menu after clicking
+			-- Close menu after clicking and refresh
+			settings:UpdateMode(1)
 			return MenuResponse.Close
 		end)
 
@@ -378,7 +384,8 @@ modeButton:SetScript("OnClick", function()
 			settings:Set("Thing:Transmog", true)
 			settings:Set("Completionist", true)
 			
-			-- Close menu after clicking
+			-- Close menu after clicking and refresh
+			settings:UpdateMode(1)
 			return MenuResponse.Close
 		end)
 	end
