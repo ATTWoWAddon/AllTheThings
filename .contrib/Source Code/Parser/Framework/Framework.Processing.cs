@@ -3056,9 +3056,9 @@ namespace ATT
                     TrackIncorporationData(data, "tmogSetID", tmogSetID);
                     LogDebug($"INFO: Assigned 'tmogSetID' {tmogSetID}", data);
                 }
-                Incorporate_Item_TransmogSetItems(data, tmogSetID);
                 // this is repeated later for the same data, yes, but we need to ensure some things happen in the correct order
                 Incorporate_Ensemble(data);
+                Incorporate_Item_TransmogSetItems(data, tmogSetID);
             }
         }
 

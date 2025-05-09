@@ -1069,7 +1069,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							}),
 							i(27978),	-- Soap on a Rope
 							i(27979),	-- Stone of Stupendous Springing Strides
-							i(27944),	-- Talisman of True Treasure Tracking
+							i(27944, {["classes"] = IGNORED_VALUE}),	-- Talisman of True Treasure Tracking
 						},
 					}),
 					n(99863, {	-- Jenri <Spymaster>

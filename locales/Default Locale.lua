@@ -731,12 +731,13 @@ local L = setmetatable({
 
 	-- Unobtainable Listing (for fellow 100%s out there)
 	UNOBTAINABLE_ITEM_TEXTURES = {
-		[0] = 374225,	-- Available, but not due to Current Character filters
-		app.asset("status-unobtainable"),
-		app.asset("status-prerequisites"),
+		[0] = 374225,	-- 0 Available, but not due to Current Character filters
+		app.asset("status-unobtainable"),	-- 1
+		app.asset("status-prerequisites"),	-- 2
 		"",									-- 3, we want no icon for these
-		app.asset("status-seasonal-unavailable"),	-- Seasonal unavailable
-		app.asset("status-seasonal-available"),	-- Seasonal available
+		app.asset("status-seasonal-unavailable"),	-- 4 Seasonal unavailable
+		app.asset("status-seasonal-available"),	-- 5 Seasonal available
+		app.asset("status-unsorted"), -- 6 Unsorted
 	};
 
 	-- Crieve tested all professions in non-english locales and the following skills were not detected without these.

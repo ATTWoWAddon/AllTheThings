@@ -74,7 +74,7 @@ local function GetUnobtainableTexture(group)
 	end
 	-- any item which is 'missing' will show as unobtainable to differentiate itself (maybe new icon sometime?)
 	if group.itemID and group._missing then
-		return L.UNOBTAINABLE_ITEM_TEXTURES[1]
+		return L.UNOBTAINABLE_ITEM_TEXTURES[6]
 	end
 end
 app.GetUnobtainableTexture = GetUnobtainableTexture
