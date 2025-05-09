@@ -604,15 +604,15 @@ root(ROOTS.Unsorted, {
 				i(244448),	-- Hellfire Blouse
 			}),
 			filter(MOUNTS, {
-				i(243572),	-- Grandmaster's Fire Board
 				i(243590),	-- Grandmaster's Deep Board
+				i(243572),	-- Grandmaster's Prophetic Board
 				i(243591),	-- Grandmaster's Royal Board
 				i(243592),	-- Grandmaster's Smokey Board
 				i(243593),	-- Banshee's Chilling Charger
-				i(243594),	-- Banshee's Grotesque Charger
-				i(243596),	-- Banshee's Putrid Charger
 				i(243597),	-- Banshee's Sickening Charger
+				i(243594),	-- Forsaken' Grotesque Charger
 				i(245936),	-- Unarmored Deathtusk Felboar
+				i(243596),	-- Wailing Banshee's Charger
 			}),
 			-- #if AFTER 7.1.0.22908
 			n(GREEDY_EMISSARY_EVENT, {

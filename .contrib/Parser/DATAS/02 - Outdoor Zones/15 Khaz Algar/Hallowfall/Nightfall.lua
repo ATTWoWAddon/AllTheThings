@@ -736,7 +736,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				q(88885),	-- after turn in Sureki Incursion: The Eastern Assault (87480)
 				-- ^ could be NYI on live cause now it seems like counter for achievementID 41998 (Turning the Venom Tide)
 				-- there new one now or it somehow reset (but flag still return as complete for above?)
-				q(88900),	--
+				q(88900),	-- Baleful Excerpt on Prophetic Death
 				q(88886),	--
 				q(88892),	--
 				q(88897),	--
@@ -747,7 +747,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				q(91163),	-- Daily Rep Flame Radiance for killing Skrimisher Sa'zryk (Ajz Kahet)
 				q(91164),	-- Daily Rep Flame Radiance for killing Umbraclaw Matta (Ajz Kahet)
 				q(91165),	-- Daily Rep Flame Radiance for killing Webspeaker Grik Ik (Ajz Kahet)
-				q(81608),	-- Enter Azj'Kahet post-patch?
+				q(81608),	-- Enter Azj'Kahet post-patch? [DNT] Vizier - Level 4 Unlock / 443686 [DNT] Dummy - Pact Backup / 1231879
 			})),
 		}),
 	}),

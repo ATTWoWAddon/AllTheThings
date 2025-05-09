@@ -227,8 +227,9 @@ root(ROOTS.Character, n(HEIRLOOMS, {
 		un(REMOVED_FROM_GAME, i(93858)),	-- Brawler's Bladed Claws
 		un(REMOVED_FROM_GAME, i(92948)),	-- Brawler's Razor Claws
 		i(122396, {	-- Brawler's Razor Claws
-			-- TODO: more accurate timeline updates
 			["timeline"] = {
+				ADDED_5_1_0, REMOVED_6_0_2,
+				ADDED_6_1_0, REMOVED_7_0_3,
 				ADDED_7_2_0, REMOVED_8_0_1,
 				ADDED_8_2_0, REMOVED_9_0_1,
 			},

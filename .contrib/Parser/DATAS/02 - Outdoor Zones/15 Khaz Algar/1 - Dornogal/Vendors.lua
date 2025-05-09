@@ -70,6 +70,97 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}),
 				},
 			}),
+			n(240481, {	-- Consultant Wrexxle <Undermine Dealer>
+				["coord"] = { 52.0, 46.0, DORNOGAL },
+				["timeline"] = { ADDED_11_1_5 },
+				["g"] = sharedData({
+					["cost"] = {{ "i", 237502, 3 }},	-- 3x Puzzling Cartel Chip
+				}, {
+					-- Vexie
+					i(231268),	-- Blastfurious Machete
+					i(230197),	-- Geargrinder's Spare Keys
+					i(228892),	-- Greasemonkey's Shift-Stick
+					i(230019),	-- Vexie's Pit Whistle
+					-- Cauldron
+					i(228904),	-- Crowd Favorite
+					i(230191),	-- Flarendo's Pilot Light
+					i(228890),	-- Superfan's Beater-Buzzer
+					i(230190),	-- Torq's Big Red Button
+					i(228900),	-- Tournament Arc
+					-- Rik
+					i(231311),	-- Frontman's Wondrous Wall
+					i(228897),	-- Pyrotechnic Needle-Dropper
+					i(228895),	-- Remixed Ignition Saber
+					i(230194),	-- Reverb Radio
+					-- Stix
+					i(228903),	-- Dumpster Diver
+					i(230189),	-- Junkmaestro's Mega Magnet
+					i(230026),	-- Scrapfield 9001
+					i(228896),	-- Stix's Metal Detector
+					-- Sprocket
+					i(228898),	-- Alphacoil Ba-Boom Stick
+					i(228894),	-- GIGADEATH Chainblade
+					i(230193),	-- Mister Lock-N-Stalk
+					i(230186),	-- Mister Pick-Me-Up
+					i(228844),	-- Test Pilot's Go-Pack
+					-- Bandit
+					i(232526,{provider={"i",232805}}),	-- Best-in-Slots
+					i(232805,{provider={"i",232526}}),	-- Best-in-Slots
+					i(230188),	-- Gallagio Bottle Service
+					i(228905),	-- Giga Bank-Breaker
+					i(230027),	-- House of Cards
+					i(228906),	-- Operator's Fraud Detector
+					i(231266),	-- Random Number Perforator
+					-- Mug'Zee
+					i(228893),	-- "Tiny Pal"
+					i(228901),	-- Big Earner's Bludgeon
+					i(232804),	-- Capo's Molten Knuckles
+					i(230192),	-- Mug's Moxie Jug
+					i(228902),	-- Wiseguy's Refused Offer
+					i(230199),	-- Zee's Thug Hotline
+					-- Gallywix
+					i(228891),	-- Capital Punisher
+					i(230029),	-- Chromebustible Bomb Suit
+					i(230198),	-- Eye of Kezan
+					i(228899),	-- Gallywix's Iron Thumb
+					i(231265),	-- The Jastor Diamond
+					i(228889),	-- Titan of Industry
+					-- Motherlode
+					i(159612),	-- Azerokk's Resonating Heart
+					i(159611),	-- Razdunk's Big Red Button
+					-- Operation: Mechagon
+					i(169344),	-- Ingenious Mana Battery
+					i(232546),	-- K.U.-J.0.'s Flame Vents
+					i(168965),	-- Modular Platinum Plating
+					-- Theater of Pain
+					i(178811),	-- Grim Codex
+					i(178809),	-- Soulletting Ruby
+					i(178810),	-- Vial of Vampiric Essence
+					i(178808),	-- Viscera of Coalesced Hatred
+					-- Cinderbrew Meadery
+					i(219297),	-- Cinderbrew Stein
+					i(219298),	-- Ravenous Honey Buzzer
+					i(219299),	-- Synergistic Brewterializer
+					-- Darkflame Cleft
+					i(219306),	-- Burin of the Candle King
+					i(219305),	-- Carved Blazikon Wax
+					i(219304),	-- Conductor's Wax Whistle
+					i(219307),	-- Remnant of Darkness
+					-- Priory
+					i(219310),	-- Bursting Lightshard
+					i(219308),	-- Signet of the Priory
+					i(219309),	-- Tome of Light's Devotion
+					-- The Rookery
+					i(219294),	-- Charged Stormrook Plume
+					i(219296),	-- Entropic Skardyn Core
+					i(219295),	-- Sigil of Algari Concordance
+					-- Operation: Floodgate
+					i(232542),	-- Darkfuse Medichopper
+					i(232545),	-- Gigazap's Zap-Cap
+					i(232541),	-- Improvised Seaforium Pacemaker
+					i(232543),	-- Ringing Ritual Mud
+				}),
+			}),
 			n(219230, {	-- Erani <Pet Charm Trader>
 				["coord"] = { 58.5, 64.9, DORNOGAL },
 				["g"] = {
@@ -399,7 +490,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					iensemble(219118),	-- Peculiar Peddler's Trinkets
 					iensemble(219111),	-- Royal Patron's Elegance
 					iensemble(219130),	-- Saffron Cartographer's Orientation
-					-- iensemble(219105),	-- Sandy Quotidian Wear (this is from Lost and Found ach only...)
 					iensemble(219129),	-- Sooty Artisan's Talent
 					iensemble(219128),	-- Stained Artisan's Talent
 					iensemble(219109),	-- Taupe Quotidian Wear
@@ -421,10 +511,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(230936),	-- Enchanted Runed Undermine Crest
 					i(230935),	-- Enchanted Gilded Undermine Crest
 					i(239146, {	-- Gilded Augmentation Matrix
-						["timeline"] = { ADDED_11_1_7 },
+						["timeline"] = { ADDED_11_1_5 },
 					}),
 					i(239203, {	-- Runed Augmentation Matrix
-						["timeline"] = { ADDED_11_1_7 },
+						["timeline"] = { ADDED_11_1_5 },
 					}),
 				},
 			}),

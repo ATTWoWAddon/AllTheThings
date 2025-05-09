@@ -247,7 +247,7 @@ root(ROOTS.Promotions, {
 			}),
 			iensemble(229822, {	-- Arsenal: Golden Crests of the Kingdom
 				["description"] = "Included as a code in the physical goodie bag given to attendees of 30th Anniversary Live events.",
-				["timeline"] = { ADDED_11_0_7 },
+				["timeline"] = { ADDED_11_0_7, "removed 11.1.5.60568" },
 				["u"] = REAL_MONEY,
 			}),
 			-- Season 2

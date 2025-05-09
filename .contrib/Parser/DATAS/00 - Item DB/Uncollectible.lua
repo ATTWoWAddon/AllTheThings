@@ -2167,6 +2167,7 @@ i(235280);	-- Extra Crispy Laundry
 i(228194);	-- Fully Scrapped Scrap
 i(234197);	-- Gilded Screwdriver
 i(236923);	-- Glorious Cluster of Gilded Harbinger Crests
+i(237036);	-- Golden Valorstone
 i(237334);	-- Half-Eaten Takeout
 i(236680);	-- Imitation Crab Meat
 i(233031);	-- Intact Interlock

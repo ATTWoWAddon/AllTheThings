@@ -510,6 +510,36 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						DELETED_4_2_2
 					},
 				}),
+				-- #if AFTER 4.0.1
+				-- Class Books still drop after 4.0.1 but were converted to Gray items. Added them here so they don't appear as Unsorted as Ruins of AQ is the only source.	- Exo
+				i(21294),	-- Book of Healing Touch XI
+				i(21296),	-- Book of Rejuvenation XI
+				i(21295),	-- Book of Starfire VII
+				i(21284),	-- Codex of Greater Heal V
+				i(21287),	-- Codex of Prayer of Healing V
+				i(21285),	-- Codex of Renew X
+				i(21283),	-- Grimoire of Corruption VII
+				i(21282),	-- Grimoire of Immolate VIII
+				i(21281),	-- Grimoire of Shadow Bolt X
+				i(21307),	-- Guide: Aspect of the Hawk VII
+				i(21304),	-- Guide: Multi-Shot V
+				i(21306),	-- Guide: Serpent Sting IX
+				i(21300),	-- Handbook of Backstab IX
+				i(21302),	-- Handbook of Deadly Poison V
+				i(21303),	-- Handbook of Feint V
+				i(21289),	-- Libram: Blessing of Might VII
+				i(21288),	-- Libram: Blessing of Wisdom VI
+				i(21290),	-- Libram: Holy Light IX
+				i(21298),	-- Manual of Battle Shout VII
+				i(21297),	-- Manual of Heroic Strike IX
+				i(21299),	-- Manual of Revenge VI
+				i(21293),	-- Tablet of Grace of Air Totem III
+				i(21291),	-- Tablet of Healing Wave X
+				i(21292),	-- Tablet of Strength of Earth Totem V
+				i(21280),	-- Tome of Arcane Missiles VIII
+				i(21279),	-- Tome of Fireball XII
+				i(21214),	-- Tome of Frostbolt XI
+				-- #endif
 			}),
 			filter(RECIPES, {
 				["crs"] = {

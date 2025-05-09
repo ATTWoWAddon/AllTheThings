@@ -188,10 +188,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 					--["coord"] = ??
 					["g"] = {
 						--- Gear
+						-- Sorted with D&R Source too
+						i(238990),	-- Necklace of the Chrono-Lord
+						
 						--there are list only with new (unsorted) items
 						i(238984),	-- Baroness Silverlaine's Locket
 						i(239008),	-- Moonchild Leggings
-						i(238990),	-- Necklace of the Chrono-Lord
 						i(238989),	-- Steam-Hinge Chain of Valor
 						--also seems like contain some TW loot from certain bosses (list of them in achievement 41948) that already exist
 						--possibly can be symlinked from each boss, idk?
@@ -201,6 +203,44 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 						--i(157628),	-- Gold-Fiecked Gloves
 						--i(157755),	-- Missing Diplomat's Pauldrons
 						--i(157754),	-- Old Friend's Gloves
+						
+						--[[ Probably all items that drop here too
+						-- The Steamvault (sourced under the dungeon)
+							--i(238929),	-- Cloak of Whispering Shells
+							--i(238930),	-- Scintillating Coral Band
+							--i(238932),	-- Gauntlets of the Bold
+							--i(238988),	-- Earth Mantle Handwraps
+
+							-- Hellfire Ramprats (not yet sourced)
+							i(238934),	-- Boots of the Darkwalker
+							i(238936),	-- Scale Leggings of the Skirmisher
+							i(238937),	-- Light-Touched Breastplate
+
+							-- Deadmines (sourced under the dungeon)
+							i(238938),	-- Vest of the Curious Visitor
+							i(238939),	-- Missing Diplomat's Pauldrons
+							i(238940),	-- Defias Brotherhood Vest
+
+							-- Shadowfang Keeep (sourced under the dungeon)
+							i(238976),	-- Blinders of the Follower
+							i(238977),	-- Iron Will Girdle
+							i(238978),	-- Burden of Lost Humanity
+							i(238979),	-- Phantom Armor
+							i(238980),	-- Pendant of the Keep
+							
+							-- Shadowfang Keeep (not yet sourced)
+							i(238981),	-- Gloves of the Uplifted Cup
+							i(238982),	-- Baron Silverlaine's Greaves
+							i(238983),	-- Boots of Lingering Sorrow
+
+							-- The Culling of Stratholme (sourced under the dungeon)
+							--i(238991),	-- Gloves of Distorted Time
+							--i(238992),	-- Mobius Band
+							--i(238993),	-- Cracked Epoch Grasps
+
+							-- The Blood Furnace (not yet sourced)
+							i(239009),	-- Signet of Repose
+						--]]
 						--- Podium Upgrade?
 						i(240203),	-- Podium Upgrade: Scrappy
 						i(240204),	-- Podium Upgrade: Survival Run

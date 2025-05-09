@@ -1430,7 +1430,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			}),
 			-- New dungeon
 			q(86728, {	-- Operation: Floodgate: Disposing of the Garbage
-				["sourceQuests"] = { 83151 },	-- Down Undermine (TODO: speculation (also up for alts without doing anything in zone))
+				--["sourceQuests"] = { 83151 },	-- Down Undermine
 				["provider"] = { "n", 231045 },	-- Paks Topskimmer
 				["coord"] = { 43.5, 51.7, UNDERMINE },
 			}),

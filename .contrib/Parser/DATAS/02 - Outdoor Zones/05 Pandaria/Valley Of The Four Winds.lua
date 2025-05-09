@@ -1276,7 +1276,7 @@ root(ROOTS.Zones, {
 								},
 							}),
 							q(31521, {	-- To Be a Master
-								["description"] = "You must master all 6 Pandaren cooking ways for this quest to become available.",
+								["description"] = "Becomes available on reaching max Pandaria cooking, but you must master all 6 Pandaren cooking ways for this quest to be completed.",
 								["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 								["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 							}),

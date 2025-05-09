@@ -1452,7 +1452,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					},
 					["sourceQuest"] = 28263,	-- Meet with Maginor Dumas / Meet with Frazzle Frostfingers [SL+]
-					["coord"] = { 49.2, 87.6, STORMWIND_CITY },
+					["coords"] = {
+						-- #if AFTER SHADOWLANDS
+						{ 80.0, 69.6, STORMWIND_CITY },
+						-- #else
+						{ 49.2, 87.6, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },

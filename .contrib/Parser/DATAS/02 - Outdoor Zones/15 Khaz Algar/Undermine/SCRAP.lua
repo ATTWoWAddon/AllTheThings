@@ -263,8 +263,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 	m(UNDERMINE, {
 		n(SCRAP, {
 			n(EVENT_COMPLETION, {
-				-- Scrap related but exact trigger unknown
-				--q(86262),	--
+				q(86262),	-- Scrap related but exact trigger unknown
 				hqt(90471, name(HEADERS.Object, 516167, {	-- Half-Empty Bag (Weekly Flag)
 					["isWeekly"] = true
 				})),

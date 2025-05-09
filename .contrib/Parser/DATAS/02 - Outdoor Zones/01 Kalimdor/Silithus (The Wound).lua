@@ -374,8 +374,14 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(52428, {	-- Infusing the Heart
-							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
-							["coord"] = { 50.3, 54.4, CHAMBER_OF_HEART },
+							["qgs"] = {
+								130216,	-- Magni Bronzebeard
+								136907,	-- Magni Bronzebeard
+							},
+							["coords"] = {
+								{ 42.2, 44.3, SILITHUS },
+								{ 50.3, 54.4, CHAMBER_OF_HEART },
+							},
 							["sourceQuest"] = 51211,	-- The Heart of Azeroth
 							["g"] = {
 								i(159671),	-- Silithus Portal Stone (QI!)

@@ -1232,6 +1232,7 @@ root(ROOTS.NeverImplemented, {
 			i(80982),	-- Scavenger's Shield
 			i(80985),	-- Scavenger's Barrier
 			i(80981),	-- Scavenged Rotor Blade
+			i(93145),	-- Scavenged Pandaren Sword
 		}),
 		expansion(EXPANSION.WOD, {
 			-- 6.0.2

@@ -1786,7 +1786,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(230807),	-- Drill Hands
 			i(237260),	-- Glass of Daylight Dew
 			i(228798),	-- Gob-Glider
-			i(237036),	-- Golden Valorstone
 			i(235559),	-- Hidden Trove
 			i(237259),	-- Kapow Kanapes
 			i(230017),	-- Master Blaster's Insignia

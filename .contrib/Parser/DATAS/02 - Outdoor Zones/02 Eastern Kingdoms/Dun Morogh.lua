@@ -1568,6 +1568,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								i(59052, {	-- Belt of Static Equilibrium
 									["timeline"] = { ADDED_4_0_3 },
+									-- #if BEFORE 7.0.3
+									["classes"] = { WARRIOR },	-- They changed this from PLATE to MAIL when GNOME HUNTERS came out
+									-- #endif
 								}),
 								i(59051, {	-- Bracers of Angular Momentum
 									["timeline"] = { ADDED_4_0_3 },
@@ -1618,6 +1621,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								i(59046, {	-- Friction Gloves
 									["timeline"] = { ADDED_4_0_3 },
+									-- #if BEFORE 7.0.3
+									["classes"] = { WARRIOR },	-- They changed this from PLATE to MAIL when GNOME HUNTERS came out
+									-- #endif
 								}),
 								i(59045, {	-- Acceleration Belt
 									["timeline"] = { ADDED_4_0_3 },
@@ -1787,6 +1793,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								i(59049, {	-- Inertial Bracers
 									["timeline"] = { ADDED_4_0_3 },
+									-- #if BEFORE 7.0.3
+									["classes"] = { WARRIOR },	-- They changed this from PLATE to MAIL when GNOME HUNTERS came out
+									-- #endif
 								}),
 								i(59048, {	-- Torque-Applying Gloves
 									["timeline"] = { ADDED_4_0_3 },

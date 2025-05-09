@@ -603,62 +603,61 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(188256, {	-- Obsidian Wings of Awakening
 			["timeline"] = { ADDED_10_2_0 },
 		}),
-		filter(COSMETIC, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {	-- REMOVED --
-			------ Gladiator's Ragged Armor Set ------
-			iensemble(217029, {	-- Ensemble: Gladiator's Ragged Armor
-				["timeline"] = { ADDED_10_2_6, REMOVED_10_2_6 },
-			}),
-			------ Guardian Set ------
-			i(190216, {	-- Feathered Cowl of the Guardian
-				["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0 },	-- Removed May 31, 2023
-			}),
-			i(190200, {	-- Feathered Drape of the Guardian
-				["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0 },	-- Removed May 31, 2023
-			}),
-			i(190220, {	-- Standard of the Guardian
-				["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0 },	-- Removed May 31, 2023
-			}),
-
-			------ High Scholar's Arcana Set ------
-			iensemble(208412, {	-- High Scholar's Arcana
-				["timeline"] = { ADDED_10_1_5, REMOVED_10_1_7 },	-- Removed Oct 31st, 2023
-			}),
-
-			------ Sky Witch's Attire Set ------
-			iensemble(212221, {	-- Ensemble: Sky Witch's Attire
-				["timeline"] = { ADDED_11_0_5, "removed 11.1.0.60037" },	-- Removed March 31, 2025
-			}),
-
-			------ Sky-Captain's Masquerade Attire Set ------
-			iensemble(210079, {	-- Sky-Captain's Masquerade Attire
-				["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0 },	-- Removed Jan 1st, 2024
-			}),
-
-			------ Sprite Darter Set ------
-			iensemble(200925, {	-- Ensemble: Solemn Watchman's Garb
-				["timeline"] = { ADDED_10_1_5, REMOVED_10_1_7 },
-			}),
-
-			------ Twilight Witch's Attire Set ------
-			iensemble(212222, {	-- Ensemble: Twilight Witch's Attire
-				["timeline"] = { ADDED_10_2_5, REMOVED_10_2_5 },	-- Removed Feb 29th, 2024
-			}),
-
-			------ Single Pieces ------
-			i(97213, {	-- Hood of Hungering Darkness
-				["timeline"] = { ADDED_5_4_0, REMOVED_8_3_0 },
-			}),
-			i(95474, {	-- Jewel of the Firelord
-				["timeline"] = { ADDED_5_4_0, REMOVED_8_3_0 },
-			}),
-			i(95475, {	-- Crown of Eternal Winter
-				["timeline"] = { ADDED_5_4_0, REMOVED_8_3_0 },
-			}),
-			i(231290, {	-- Reven's Comfy Carrier
-				["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58238" },	-- Removed January 7, 2025
-			}),
-		})),
 	}),
+	filter(COSMETIC, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {	-- REMOVED --
+		------ Gladiator's Ragged Armor Set ------
+		iensemble(217029, {	-- Ensemble: Gladiator's Ragged Armor
+			["timeline"] = { ADDED_10_2_6, REMOVED_10_2_6 },
+		}),
+		------ Guardian Set ------
+		i(190216, {	-- Feathered Cowl of the Guardian
+			["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0 },	-- Removed May 31, 2023
+		}),
+		i(190200, {	-- Feathered Drape of the Guardian
+			["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0 },	-- Removed May 31, 2023
+		}),
+		i(190220, {	-- Standard of the Guardian
+			["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0 },	-- Removed May 31, 2023
+		}),
+			------ High Scholar's Arcana Set ------
+		iensemble(208412, {	-- High Scholar's Arcana
+			["timeline"] = { ADDED_10_1_5, REMOVED_10_1_7 },	-- Removed Oct 31st, 2023
+		}),
+
+		------ Sky Witch's Attire Set ------
+		iensemble(212221, {	-- Ensemble: Sky Witch's Attire
+			["timeline"] = { ADDED_11_0_5, "removed 11.1.0.60037" },	-- Removed March 31, 2025
+		}),
+
+		------ Sky-Captain's Masquerade Attire Set ------
+		iensemble(210079, {	-- Sky-Captain's Masquerade Attire
+			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0 },	-- Removed Jan 1st, 2024
+		}),
+
+		------ Sprite Darter Set ------
+		iensemble(200925, {	-- Ensemble: Solemn Watchman's Garb
+			["timeline"] = { ADDED_10_1_5, REMOVED_10_1_7 },
+		}),
+
+		------ Twilight Witch's Attire Set ------
+		iensemble(212222, {	-- Ensemble: Twilight Witch's Attire
+			["timeline"] = { ADDED_10_2_5, REMOVED_10_2_5 },	-- Removed Feb 29th, 2024
+		}),
+
+		------ Single Pieces ------
+		i(97213, {	-- Hood of Hungering Darkness
+			["timeline"] = { ADDED_5_4_0, REMOVED_8_3_0 },
+		}),
+		i(95474, {	-- Jewel of the Firelord
+			["timeline"] = { ADDED_5_4_0, REMOVED_8_3_0 },
+		}),
+		i(95475, {	-- Crown of Eternal Winter
+			["timeline"] = { ADDED_5_4_0, REMOVED_8_3_0 },
+		}),
+		i(231290, {	-- Reven's Comfy Carrier
+			["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58238" },	-- Removed January 7, 2025
+		}),
+	})),
 	-- #endif
 	-- #if AFTER 8.1.5.29737
 	filter(TOYS, {

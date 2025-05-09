@@ -180,7 +180,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["creatureID"] = 26532,	-- Chrono-Lord Epoch
 					["groups"] = {
 						i(37099),	-- Sempiternal Staff
-						i(37096),	-- Necklace of the Chrono-Lord
+						i(37096, {	-- Necklace of the Chrono-Lord
+							["timeline"] = { REMOVED_11_1_5 },
+						}),
+						i(238990, {	-- Necklace of the Chrono-Lord
+							["timeline"] = { ADDED_11_1_5 },
+						}),
 						-- #if AFTER 7.3.5
 						i(37686, {	-- Cracked Epoch Grasps (7.3.5 - Used to be only Heroic Mode)
 							["timeline"] = { REMOVED_11_1_5 },

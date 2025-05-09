@@ -11,7 +11,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 		["g"] = {
 			n(QUESTS, {
 				q(72135, {	-- Neltharus: Secrets Wihtin
-					["provider"] = { "n", 193456 },	-- Archivist Edress
+					["qgs"] = {
+						193456,	-- Archivist Edress
+						205781,	-- Archivist Edress
+					},
 					["coord"] = { 25.1, 56.2, THE_WAKING_SHORES },
 					["g"] = {
 						i(193776),	-- Dragonkin Chestguard

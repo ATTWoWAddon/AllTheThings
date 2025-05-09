@@ -1003,6 +1003,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						i(109769),	-- Slicebinder Loop
 						i(109777),	-- Unsullied Signet
 					})),
+					n(TRINKET, sharedData({ ["crs"] = { AUCH, BSM, RAIL, DOCKS, SBG, SKY, BLOOM, UBRS }, },{
+						un(REMOVED_FROM_GAME, i(133595)),	-- Gronntooth War Horn
+						un(REMOVED_FROM_GAME, i(133585)),	-- Judgment of the Naaru
+						un(REMOVED_FROM_GAME, i(133596)),	-- Orb of Voidsight
+						un(REMOVED_FROM_GAME, i(133598)),	-- Purified Shard of the Third Moon
+						un(REMOVED_FROM_GAME, i(133597)),	-- Infallible Tracking Charm
+					})),
 				},
 			}),
 		},

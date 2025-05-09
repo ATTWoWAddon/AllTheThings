@@ -407,7 +407,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		i(71134),	-- Celebration Package
 	})),
 	n(WOW_ANNIVERSARY_EIGHT, bubbleDownSelf({
-		["timeline"] = { 
+		["timeline"] = {
 			-- #if ANYCLASSIC
 			CREATED_4_3_0, -- 8th anniversary will not happen during Cataclysm version of the game
 			-- #else
@@ -418,7 +418,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 	{
 		ach(6131),	-- 8th Anniversary
 		i(71134),	-- Celebration Package
-	})),							
+	})),
 	n(WOW_ANNIVERSARY_NINE, bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 } }, {
 		ach(7853),	-- 9th Anniversary
 		n(MAILBOX, {
@@ -2384,8 +2384,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				}),
 				n(QUESTS, {
 					q(82817, {	-- Disturbance Detected: Blackrock Depths
-						["provider"] = { "n", 229494 },	-- Moira Thaurissan <Queen of the Dark Iron>
-						["coord"] = { 63.0, 49.7, TANARIS },
+						["qgs"] = {
+							-- #if BEFORE 11.0.7
+							229494,	-- Moira Thaurissan <Queen of the Dark Iron>
+							-- #else
+							234556,	-- Grannadormu
+							-- #endif
+						},
+						["coords"] = {
+							-- #if BEFORE 11.0.7
+							{ 63.0, 49.7, TANARIS },
+							-- #else
+							{ 52.8, 82.8, ORGRIMMAR },
+							{ 56.0, 18.4, STORMWIND_CITY },
+							-- #endif
+						},
 						["isWeekly"] = true,
 						["g"] = {
 							i(232471, {	-- Cache of Dark Iron Treasures
