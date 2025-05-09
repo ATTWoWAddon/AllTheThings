@@ -95,7 +95,6 @@ settings.RequiredForInsaneMode = {
 	Recipes = true,
 	Reputations = true,
 	RuneforgeLegendaries = app.GameBuildVersion >= 90000,
-	Skyriding = app.GameBuildVersion >= 100000,
 	Titles = true,
 	Toys = true,
 	Transmog = app.GameBuildVersion >= 40000,
