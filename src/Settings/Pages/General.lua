@@ -102,288 +102,288 @@ app.AddEventHandler("OnSettingsRefreshed", function()
 	headerMode:SetText(settings:GetModeString() .. " (" .. settings:GetShortModeString() .. ")");
 end);
 
-local function GeneratorFunction(owner, rootDescription)
-	local preset0 = rootDescription:CreateButton(L.TITLE_NONE_THINGS, OnClick)
-	preset0:SetTooltip(function(tooltip, elementDescription)
-		GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
-		GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
-		GameTooltip_AddNormalLine(tooltip, L.PRESET_NONE)
-	end)
-	preset0:SetResponder(function()
-		-- Account-wide Things
-		settings:Set("Thing:Transmog", false)
-		settings:Set("Completionist", false)
-		settings:Set("MainOnly", false)
-		settings:Set("Thing:Heirlooms", false)
-		settings:Set("Thing:HeirloomUpgrades", false)
-		settings:Set("Thing:Illusions", false)
-		settings:Set("Thing:Mounts", false)
-		settings:Set("Thing:BattlePets", false)
-		settings:Set("Thing:Toys", false)
+local modeButton = CreateFrame("Button", nil, child, "UIDropDownMenuButtonScriptTemplate")
+modeButton:SetSize(24, 24)
+modeButton:SetPoint("LEFT", headerMode, "RIGHT", 1, 0)
+modeButton:SetNormalTexture("Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Up")
+modeButton:SetPushedTexture("Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Down")
+modeButton:SetDisabledTexture("Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Disabled")
+modeButton:SetHighlightTexture("Interface\\Buttons\\UI-Common-MouseHilight")
+modeButton:SetScript("OnClick", function()
+	local function GeneratorFunction(owner, rootDescription)
+		local preset0 = rootDescription:CreateButton(L.TITLE_NONE_THINGS, OnClick)
+		preset0:SetTooltip(function(tooltip, elementDescription)
+			GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
+			GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
+			GameTooltip_AddNormalLine(tooltip, L.PRESET_NONE)
+		end)
+		preset0:SetResponder(function()
+			-- Account-wide Things
+			settings:Set("Thing:Transmog", false)
+			settings:Set("Completionist", false)
+			settings:Set("MainOnly", false)
+			settings:Set("Thing:Heirlooms", false)
+			settings:Set("Thing:HeirloomUpgrades", false)
+			settings:Set("Thing:Illusions", false)
+			settings:Set("Thing:Mounts", false)
+			settings:Set("Thing:BattlePets", false)
+			settings:Set("Thing:Toys", false)
 
-		-- General Things
-		settings:Set("Thing:Achievements", false)
-		settings:Set("Thing:CharacterUnlocks", false)
-		settings:Set("Thing:DeathTracker", false)
-		settings:Set("Thing:Exploration", false)
-		settings:Set("Thing:FlightPaths", false)
-		settings:Set("Thing:Quests", false)
-		settings:Set("Thing:QuestsLocked", false)
-		settings:Set("Thing:QuestsHidden", false)
-		settings:Set("Thing:Recipes", false)
-		settings:Set("Thing:Reputations", false)
-		settings:Set("Thing:Titles", false)
-
-		-- General Content
-		settings:Set("Hide:BoEs", true)
-		settings:Set("Filter:BoEs", false)
-		settings:Set("Filter:ByLevel", true)
-		settings:Set("Show:UnavailablePersonalLoot", false)
-		settings:Set("Show:OnlyActiveEvents", true)
-		settings:Set("Show:PetBattles", false)
-		settings:Set("Hide:PvP", true)
-		settings:Set("Show:Skyriding", false)
-
-		-- Expansion Things
-		settings:Set("Thing:Followers", false)
-		settings:Set("Thing:AzeriteEssences", false)
-		settings:Set("Thing:Conduits", false)
-		settings:Set("Thing:RuneforgeLegendaries", false)
-		settings:Set("Thing:MountMods", false)
-
-		-- Close menu after clicking
-		return MenuResponse.Close
-	end)
-
-	local preset1 = rootDescription:CreateButton(L.TITLE_CORE, OnClick)
-	preset1:SetTooltip(function(tooltip, elementDescription)
-		GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
-		GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
-		GameTooltip_AddNormalLine(tooltip, L.PRESET_CORE)
-	end)
-	preset1:SetResponder(function()
-		-- Account-wide Things
-		settings:Set("Thing:Transmog", true)
-		settings:Set("Completionist", false)
-		settings:Set("MainOnly", false)
-		settings:Set("Thing:Heirlooms", true)
-		settings:Set("Thing:HeirloomUpgrades", false)
-		settings:Set("Thing:Illusions", true)
-		settings:Set("Thing:Mounts", true)
-		settings:Set("Thing:BattlePets", true)
-		settings:Set("Thing:Toys", true)
-
-		-- General Things
-		settings:Set("Thing:Achievements", false)
-		settings:Set("Thing:CharacterUnlocks", false)
-		settings:Set("Thing:DeathTracker", false)
-		settings:Set("Thing:Exploration", false)
-		settings:Set("Thing:FlightPaths", false)
-		settings:Set("Thing:Quests", false)
-		settings:Set("Thing:QuestsLocked", false)
-		settings:Set("Thing:QuestsHidden", false)
-		settings:Set("Thing:Recipes", false)
-		settings:Set("Thing:Reputations", false)
-		settings:Set("Thing:Titles", false)
-
-		-- General Content
-		settings:Set("Hide:BoEs", false)
-		settings:Set("Filter:BoEs", true)
-		settings:Set("Filter:ByLevel", false)
-		settings:Set("Show:UnavailablePersonalLoot", true)
-		settings:Set("Show:OnlyActiveEvents", false)
-		settings:Set("Show:PetBattles", true)
-		settings:Set("Hide:PvP", false)
-		settings:Set("Show:Skyriding", true)
-
-		-- Expansion Things
-		settings:Set("Thing:Followers", false)
-		settings:Set("Thing:AzeriteEssences", false)
-		settings:Set("Thing:Conduits", false)
-		settings:Set("Thing:RuneforgeLegendaries", false)
-		settings:Set("Thing:MountMods", false)
-
-		-- Close menu after clicking
-		return MenuResponse.Close
-	end)
-
-	local preset2 = rootDescription:CreateButton(L.TITLE_RANKED, OnClick)
-	preset2:SetTooltip(function(tooltip, elementDescription)
-		GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
-		GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
-		GameTooltip_AddNormalLine(tooltip, L.PRESET_RANKED)
-	end)
-	preset2:SetResponder(function()
-		-- Account-wide Things
-		settings:Set("Thing:Transmog", true)
-		settings:Set("Completionist", true)
-		settings:Set("MainOnly", false)
-		settings:Set("Thing:Heirlooms", true)
-		settings:Set("Thing:HeirloomUpgrades", false)
-		settings:Set("Thing:Illusions", true)
-		settings:Set("Thing:Mounts", true)
-		settings:Set("Thing:BattlePets", true)
-		settings:Set("Thing:Toys", true)
-
-		-- General Things
-		settings:Set("Thing:Achievements", true)
-		settings:Set("Thing:CharacterUnlocks", false)
-		settings:Set("Thing:DeathTracker", false)
-		settings:Set("Thing:Exploration", false)
-		settings:Set("Thing:FlightPaths", false)
-		settings:Set("Thing:Quests", true)
-		settings:Set("Thing:QuestsLocked", false)
-		settings:Set("Thing:QuestsHidden", false)
-		settings:Set("Thing:Recipes", true)
-		settings:Set("Thing:Reputations", true)
-		settings:Set("Thing:Titles", true)
-
-		-- General Content
-		settings:Set("Hide:BoEs", false)
-		settings:Set("Filter:BoEs", true)
-		settings:Set("Filter:ByLevel", false)
-		settings:Set("Show:UnavailablePersonalLoot", true)
-		settings:Set("Show:OnlyActiveEvents", false)
-		settings:Set("Show:PetBattles", true)
-		settings:Set("Hide:PvP", false)
-		settings:Set("Show:Skyriding", true)
-
-		-- Expansion Things
-		settings:Set("Thing:Followers", false)
-		settings:Set("Thing:AzeriteEssences", false)
-		settings:Set("Thing:Conduits", false)
-		settings:Set("Thing:RuneforgeLegendaries", false)
-		settings:Set("Thing:MountMods", false)
-
-		-- Close menu after clicking
-		return MenuResponse.Close
-	end)
-
-	local preset3 = rootDescription:CreateButton(L.TITLE_INSANE, OnClick)
-	preset3:SetTooltip(function(tooltip, elementDescription)
-		GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
-		GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
-		GameTooltip_AddNormalLine(tooltip, L.PRESET_INSANE)
-	end)
-	preset3:SetResponder(function()
-		-- Account-wide Things
-		settings:Set("Thing:Transmog", true)
-		-- settings:Set("Completionist", true)
-		-- settings:Set("MainOnly", true)
-		settings:Set("Thing:Heirlooms", true)
-		settings:Set("Thing:HeirloomUpgrades", true)
-		settings:Set("Thing:Illusions", true)
-		settings:Set("Thing:Mounts", true)
-		settings:Set("Thing:BattlePets", true)
-		settings:Set("Thing:Toys", true)
-
-		-- General Things
-		settings:Set("Thing:Achievements", true)
-		if app.IsRetail then
-			settings:Set("Thing:CharacterUnlocks", true)
-		else
+			-- General Things
+			settings:Set("Thing:Achievements", false)
 			settings:Set("Thing:CharacterUnlocks", false)
-		end
-		settings:Set("Thing:DeathTracker", true)
-		if app.IsClassic then
-			settings:Set("Thing:Exploration", true)
-		else
+			settings:Set("Thing:DeathTracker", false)
 			settings:Set("Thing:Exploration", false)
-		end
-		settings:Set("Thing:FlightPaths", true)
-		settings:Set("Thing:Quests", true)
-		settings:Set("Thing:QuestsLocked", false)
-		settings:Set("Thing:QuestsHidden", false)
-		settings:Set("Thing:Recipes", true)
-		settings:Set("Thing:Reputations", true)
-		settings:Set("Thing:Titles", true)
+			settings:Set("Thing:FlightPaths", false)
+			settings:Set("Thing:Quests", false)
+			settings:Set("Thing:QuestsLocked", false)
+			settings:Set("Thing:QuestsHidden", false)
+			settings:Set("Thing:Recipes", false)
+			settings:Set("Thing:Reputations", false)
+			settings:Set("Thing:Titles", false)
 
-		-- General Content
-		settings:Set("Hide:BoEs", false)
-		settings:Set("Filter:BoEs", true)
-		settings:Set("Filter:ByLevel", false)
-		settings:Set("Show:UnavailablePersonalLoot", true)
-		settings:Set("Show:OnlyActiveEvents", false)
-		settings:Set("Show:PetBattles", true)
-		settings:Set("Hide:PvP", false)
-		settings:Set("Show:Skyriding", true)
+			-- General Content
+			settings:Set("Hide:BoEs", true)
+			settings:Set("Filter:BoEs", false)
+			settings:Set("Filter:ByLevel", true)
+			settings:Set("Show:UnavailablePersonalLoot", false)
+			settings:Set("Show:OnlyActiveEvents", true)
+			settings:Set("Show:PetBattles", false)
+			settings:Set("Hide:PvP", true)
+			settings:Set("Show:Skyriding", false)
 
-		-- Expansion Things
-		settings:Set("Thing:Followers", true)
-		settings:Set("Thing:AzeriteEssences", true)
-		settings:Set("Thing:Conduits", true)
-		settings:Set("Thing:RuneforgeLegendaries", true)
-		settings:Set("Thing:MountMods", true)
+			-- Expansion Things
+			settings:Set("Thing:Followers", false)
+			settings:Set("Thing:AzeriteEssences", false)
+			settings:Set("Thing:Conduits", false)
+			settings:Set("Thing:RuneforgeLegendaries", false)
+			settings:Set("Thing:MountMods", false)
 
-		-- Close menu after clicking
-		return MenuResponse.Close
-	end)
+			-- Close menu after clicking
+			return MenuResponse.Close
+		end)
 
-	local preset4 = rootDescription:CreateButton(L.TITLE_SOLO, OnClick)
-	preset4:SetTooltip(function(tooltip, elementDescription)
-		GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
-		GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
-		GameTooltip_AddNormalLine(tooltip, L.PRESET_SOLO)
-	end)
-	preset4:SetResponder(function()
-		settings:SetAccountMode(false)
-		
-		-- General Things
-		settings:Set("AccountWide:Achievements", false)
-		settings:Set("AccountWide:CharacterUnlocks", false)
-		settings:Set("AccountWide:DeathTracker", false)
-		settings:Set("AccountWide:Quests", false)
-		settings:Set("AccountWide:Recipes", false)
-		settings:Set("AccountWide:Reputations", false)
-		settings:Set("AccountWide:Titles", false)
+		local preset1 = rootDescription:CreateButton(L.TITLE_CORE, OnClick)
+		preset1:SetTooltip(function(tooltip, elementDescription)
+			GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
+			GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
+			GameTooltip_AddNormalLine(tooltip, L.PRESET_CORE)
+		end)
+		preset1:SetResponder(function()
+			-- Account-wide Things
+			settings:Set("Thing:Transmog", true)
+			settings:Set("Completionist", false)
+			settings:Set("MainOnly", false)
+			settings:Set("Thing:Heirlooms", true)
+			settings:Set("Thing:HeirloomUpgrades", false)
+			settings:Set("Thing:Illusions", true)
+			settings:Set("Thing:Mounts", true)
+			settings:Set("Thing:BattlePets", true)
+			settings:Set("Thing:Toys", true)
 
-		-- Expansion Things
-		settings:Set("AccountWide:Followers", false)
-		settings:Set("AccountWide:AzeriteEssences", false)
-		settings:Set("AccountWide:Conduits", false)
-		
-		-- Close menu after clicking
-		return MenuResponse.Close
-	end)
+			-- General Things
+			settings:Set("Thing:Achievements", false)
+			settings:Set("Thing:CharacterUnlocks", false)
+			settings:Set("Thing:DeathTracker", false)
+			settings:Set("Thing:Exploration", false)
+			settings:Set("Thing:FlightPaths", false)
+			settings:Set("Thing:Quests", false)
+			settings:Set("Thing:QuestsLocked", false)
+			settings:Set("Thing:QuestsHidden", false)
+			settings:Set("Thing:Recipes", false)
+			settings:Set("Thing:Reputations", false)
+			settings:Set("Thing:Titles", false)
 
-	local preset5 = rootDescription:CreateButton(L.TITLE_UNIQUE_APPEARANCE, OnClick)
-	preset5:SetTooltip(function(tooltip, elementDescription)
-		GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
-		GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
-		GameTooltip_AddNormalLine(tooltip, L.PRESET_UNIQUE)
-	end)
-	preset5:SetResponder(function()
-		settings:Set("Thing:Transmog", true)
-		settings:Set("Completionist", false)
+			-- General Content
+			settings:Set("Hide:BoEs", false)
+			settings:Set("Filter:BoEs", true)
+			settings:Set("Filter:ByLevel", false)
+			settings:Set("Show:UnavailablePersonalLoot", true)
+			settings:Set("Show:OnlyActiveEvents", false)
+			settings:Set("Show:PetBattles", true)
+			settings:Set("Hide:PvP", false)
+			settings:Set("Show:Skyriding", true)
 
-		-- Close menu after clicking
-		return MenuResponse.Close
-	end)
+			-- Expansion Things
+			settings:Set("Thing:Followers", false)
+			settings:Set("Thing:AzeriteEssences", false)
+			settings:Set("Thing:Conduits", false)
+			settings:Set("Thing:RuneforgeLegendaries", false)
+			settings:Set("Thing:MountMods", false)
 
-	local preset6 = rootDescription:CreateButton(L.TITLE_COMPLETIONIST, OnClick)
-	preset6:SetTooltip(function(tooltip, elementDescription)
-		GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
-		GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
-		GameTooltip_AddNormalLine(tooltip, L.PRESET_COMP)
-	end)
-	preset6:SetResponder(function()
-		settings:Set("Thing:Transmog", true)
-		settings:Set("Completionist", true)
-		
-		-- Close menu after clicking
-		return MenuResponse.Close
-	end)
-end
+			-- Close menu after clicking
+			return MenuResponse.Close
+		end)
 
-local button = CreateFrame("Button", nil, child, "UIDropDownMenuButtonScriptTemplate")
-button:SetSize(24, 24)
-button:SetPoint("LEFT", headerMode, "RIGHT", 5, 1)
-button:SetNormalTexture("Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Up")
-button:SetPushedTexture("Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Down")
-button:SetDisabledTexture("Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Disabled")
-button:SetHighlightTexture("Interface\\Buttons\\UI-Common-MouseHilight")
-button:SetScript("OnClick", function()
-	MenuUtil.CreateContextMenu(button, GeneratorFunction)
+		local preset2 = rootDescription:CreateButton(L.TITLE_RANKED, OnClick)
+		preset2:SetTooltip(function(tooltip, elementDescription)
+			GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
+			GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
+			GameTooltip_AddNormalLine(tooltip, L.PRESET_RANKED)
+		end)
+		preset2:SetResponder(function()
+			-- Account-wide Things
+			settings:Set("Thing:Transmog", true)
+			settings:Set("Completionist", true)
+			settings:Set("MainOnly", false)
+			settings:Set("Thing:Heirlooms", true)
+			settings:Set("Thing:HeirloomUpgrades", false)
+			settings:Set("Thing:Illusions", true)
+			settings:Set("Thing:Mounts", true)
+			settings:Set("Thing:BattlePets", true)
+			settings:Set("Thing:Toys", true)
+
+			-- General Things
+			settings:Set("Thing:Achievements", true)
+			settings:Set("Thing:CharacterUnlocks", false)
+			settings:Set("Thing:DeathTracker", false)
+			settings:Set("Thing:Exploration", false)
+			settings:Set("Thing:FlightPaths", false)
+			settings:Set("Thing:Quests", true)
+			settings:Set("Thing:QuestsLocked", false)
+			settings:Set("Thing:QuestsHidden", false)
+			settings:Set("Thing:Recipes", true)
+			settings:Set("Thing:Reputations", true)
+			settings:Set("Thing:Titles", true)
+
+			-- General Content
+			settings:Set("Hide:BoEs", false)
+			settings:Set("Filter:BoEs", true)
+			settings:Set("Filter:ByLevel", false)
+			settings:Set("Show:UnavailablePersonalLoot", true)
+			settings:Set("Show:OnlyActiveEvents", false)
+			settings:Set("Show:PetBattles", true)
+			settings:Set("Hide:PvP", false)
+			settings:Set("Show:Skyriding", true)
+
+			-- Expansion Things
+			settings:Set("Thing:Followers", false)
+			settings:Set("Thing:AzeriteEssences", false)
+			settings:Set("Thing:Conduits", false)
+			settings:Set("Thing:RuneforgeLegendaries", false)
+			settings:Set("Thing:MountMods", false)
+
+			-- Close menu after clicking
+			return MenuResponse.Close
+		end)
+
+		local preset3 = rootDescription:CreateButton(L.TITLE_INSANE, OnClick)
+		preset3:SetTooltip(function(tooltip, elementDescription)
+			GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
+			GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
+			GameTooltip_AddNormalLine(tooltip, L.PRESET_INSANE)
+		end)
+		preset3:SetResponder(function()
+			-- Account-wide Things
+			settings:Set("Thing:Transmog", true)
+			-- settings:Set("Completionist", true)
+			-- settings:Set("MainOnly", true)
+			settings:Set("Thing:Heirlooms", true)
+			settings:Set("Thing:HeirloomUpgrades", true)
+			settings:Set("Thing:Illusions", true)
+			settings:Set("Thing:Mounts", true)
+			settings:Set("Thing:BattlePets", true)
+			settings:Set("Thing:Toys", true)
+
+			-- General Things
+			settings:Set("Thing:Achievements", true)
+			if app.IsRetail then
+				settings:Set("Thing:CharacterUnlocks", true)
+			else
+				settings:Set("Thing:CharacterUnlocks", false)
+			end
+			settings:Set("Thing:DeathTracker", true)
+			if app.IsClassic then
+				settings:Set("Thing:Exploration", true)
+			else
+				settings:Set("Thing:Exploration", false)
+			end
+			settings:Set("Thing:FlightPaths", true)
+			settings:Set("Thing:Quests", true)
+			settings:Set("Thing:QuestsLocked", false)
+			settings:Set("Thing:QuestsHidden", false)
+			settings:Set("Thing:Recipes", true)
+			settings:Set("Thing:Reputations", true)
+			settings:Set("Thing:Titles", true)
+
+			-- General Content
+			settings:Set("Hide:BoEs", false)
+			settings:Set("Filter:BoEs", true)
+			settings:Set("Filter:ByLevel", false)
+			settings:Set("Show:UnavailablePersonalLoot", true)
+			settings:Set("Show:OnlyActiveEvents", false)
+			settings:Set("Show:PetBattles", true)
+			settings:Set("Hide:PvP", false)
+			settings:Set("Show:Skyriding", true)
+
+			-- Expansion Things
+			settings:Set("Thing:Followers", true)
+			settings:Set("Thing:AzeriteEssences", true)
+			settings:Set("Thing:Conduits", true)
+			settings:Set("Thing:RuneforgeLegendaries", true)
+			settings:Set("Thing:MountMods", true)
+
+			-- Close menu after clicking
+			return MenuResponse.Close
+		end)
+
+		local preset4 = rootDescription:CreateButton(L.TITLE_SOLO, OnClick)
+		preset4:SetTooltip(function(tooltip, elementDescription)
+			GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
+			GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
+			GameTooltip_AddNormalLine(tooltip, L.PRESET_SOLO)
+		end)
+		preset4:SetResponder(function()
+			settings:SetAccountMode(false)
+			
+			-- General Things
+			settings:Set("AccountWide:Achievements", false)
+			settings:Set("AccountWide:CharacterUnlocks", false)
+			settings:Set("AccountWide:DeathTracker", false)
+			settings:Set("AccountWide:Quests", false)
+			settings:Set("AccountWide:Recipes", false)
+			settings:Set("AccountWide:Reputations", false)
+			settings:Set("AccountWide:Titles", false)
+
+			-- Expansion Things
+			settings:Set("AccountWide:Followers", false)
+			settings:Set("AccountWide:AzeriteEssences", false)
+			settings:Set("AccountWide:Conduits", false)
+			
+			-- Close menu after clicking
+			return MenuResponse.Close
+		end)
+
+		local preset5 = rootDescription:CreateButton(L.TITLE_UNIQUE_APPEARANCE, OnClick)
+		preset5:SetTooltip(function(tooltip, elementDescription)
+			GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
+			GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
+			GameTooltip_AddNormalLine(tooltip, L.PRESET_UNIQUE)
+		end)
+		preset5:SetResponder(function()
+			settings:Set("Thing:Transmog", true)
+			settings:Set("Completionist", false)
+
+			-- Close menu after clicking
+			return MenuResponse.Close
+		end)
+
+		local preset6 = rootDescription:CreateButton(L.TITLE_COMPLETIONIST, OnClick)
+		preset6:SetTooltip(function(tooltip, elementDescription)
+			GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
+			GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
+			GameTooltip_AddNormalLine(tooltip, L.PRESET_COMP)
+		end)
+		preset6:SetResponder(function()
+			settings:Set("Thing:Transmog", true)
+			settings:Set("Completionist", true)
+			
+			-- Close menu after clicking
+			return MenuResponse.Close
+		end)
+	end
+
+	MenuUtil.CreateContextMenu(modeButton, GeneratorFunction)
 end)
 
 local textModeExplain = child:CreateTextLabel(L.MODE_EXPLAIN_LABEL)
