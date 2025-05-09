@@ -326,6 +326,12 @@ modeButton:SetScript("OnClick", function()
 			settings:Set("Thing:RuneforgeLegendaries", true)
 			settings:Set("Thing:MountMods", true)
 
+			-- Automated Content
+			settings:Set("CC:SL_COV_KYR", true)
+			settings:Set("CC:SL_COV_NEC", true)
+			settings:Set("CC:SL_COV_NFA", true)
+			settings:Set("CC:SL_COV_VEN", true)
+
 			-- Close menu after clicking and refresh
 			settings:UpdateMode(1)
 			return MenuResponse.Close
