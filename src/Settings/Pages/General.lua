@@ -187,14 +187,14 @@ local function GeneratorFunction(owner, rootDescription)
 		settings:Set("Thing:Titles", false)
 
 		-- General Content
-		settings:Set("Hide:BoEs", true)
-		settings:Set("Filter:BoEs", false)
-		settings:Set("Filter:ByLevel", true)
-		settings:Set("Show:UnavailablePersonalLoot", false)
-		settings:Set("Show:OnlyActiveEvents", true)
-		settings:Set("Show:PetBattles", false)
-		settings:Set("Hide:PvP", true)
-		settings:Set("Show:Skyriding", false)
+		settings:Set("Hide:BoEs", false)
+		settings:Set("Filter:BoEs", true)
+		settings:Set("Filter:ByLevel", false)
+		settings:Set("Show:UnavailablePersonalLoot", true)
+		settings:Set("Show:OnlyActiveEvents", false)
+		settings:Set("Show:PetBattles", true)
+		settings:Set("Hide:PvP", false)
+		settings:Set("Show:Skyriding", true)
 
 		-- Expansion Things
 		settings:Set("Thing:Followers", false)
