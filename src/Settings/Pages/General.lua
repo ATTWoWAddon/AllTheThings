@@ -103,11 +103,11 @@ app.AddEventHandler("OnSettingsRefreshed", function()
 end);
 
 local function GeneratorFunction(owner, rootDescription)
-	local preset0 = rootDescription:CreateButton("None", OnClick)
+	local preset0 = rootDescription:CreateButton(L.TITLE_NONE_THINGS, OnClick)
 	preset0:SetTooltip(function(tooltip, elementDescription)
 		GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
-		GameTooltip_AddInstructionLine(tooltip, "Enable this preset. This will adjust only the relevant tracking options of the current profile.")
-		GameTooltip_AddNormalLine(tooltip, "None of the Things Mode disables the tracking of all collectibles. Way to challenge yourself.")
+		GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
+		GameTooltip_AddNormalLine(tooltip, L.PRESET_NONE)
 	end)
 	preset0:SetResponder(function()
 		-- Account-wide Things
@@ -155,11 +155,11 @@ local function GeneratorFunction(owner, rootDescription)
 		return MenuResponse.Close
 	end)
 
-	local preset1 = rootDescription:CreateButton("Core", OnClick)
+	local preset1 = rootDescription:CreateButton(L.TITLE_CORE, OnClick)
 	preset1:SetTooltip(function(tooltip, elementDescription)
 		GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
-		GameTooltip_AddInstructionLine(tooltip, "Enable this preset. This will adjust only the relevant tracking options of the current profile.")
-		GameTooltip_AddNormalLine(tooltip, "Core Mode enables the collectibles visible in the game's Warband Collections journal.")
+		GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
+		GameTooltip_AddNormalLine(tooltip, L.PRESET_CORE)
 	end)
 	preset1:SetResponder(function()
 		-- Account-wide Things
@@ -207,11 +207,11 @@ local function GeneratorFunction(owner, rootDescription)
 		return MenuResponse.Close
 	end)
 
-	local preset2 = rootDescription:CreateButton("Ranked", OnClick)
+	local preset2 = rootDescription:CreateButton(L.TITLE_RANKED, OnClick)
 	preset2:SetTooltip(function(tooltip, elementDescription)
 		GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
-		GameTooltip_AddInstructionLine(tooltip, "Enable this preset. This will adjust only the relevant tracking options of the current profile.")
-		GameTooltip_AddNormalLine(tooltip, "Ranked Mode enables the collectibles tracked by websites such as Data For Azeroth and WoWthing.")
+		GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
+		GameTooltip_AddNormalLine(tooltip, L.PRESET_RANKED)
 	end)
 	preset2:SetResponder(function()
 		-- Account-wide Things
@@ -259,11 +259,11 @@ local function GeneratorFunction(owner, rootDescription)
 		return MenuResponse.Close
 	end)
 
-	local preset3 = rootDescription:CreateButton("Insane", OnClick)
+	local preset3 = rootDescription:CreateButton(L.TITLE_INSANE, OnClick)
 	preset3:SetTooltip(function(tooltip, elementDescription)
 		GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
-		GameTooltip_AddInstructionLine(tooltip, "Enable this preset. This will adjust only the relevant tracking options of the current profile.")
-		GameTooltip_AddNormalLine(tooltip, "Insane Mode enables all " .. app.ccColors.Insane .. "colored options|R and gives you a real challenge!")
+		GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
+		GameTooltip_AddNormalLine(tooltip, L.PRESET_INSANE)
 	end)
 	preset3:SetResponder(function()
 		-- Account-wide Things
@@ -315,6 +315,61 @@ local function GeneratorFunction(owner, rootDescription)
 		settings:Set("Thing:RuneforgeLegendaries", true)
 		settings:Set("Thing:MountMods", true)
 
+		-- Close menu after clicking
+		return MenuResponse.Close
+	end)
+
+	local preset4 = rootDescription:CreateButton(L.TITLE_SOLO, OnClick)
+	preset4:SetTooltip(function(tooltip, elementDescription)
+		GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
+		GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
+		GameTooltip_AddNormalLine(tooltip, L.PRESET_SOLO)
+	end)
+	preset4:SetResponder(function()
+		settings:SetAccountMode(false)
+		
+		-- General Things
+		settings:Set("AccountWide:Achievements", false)
+		settings:Set("AccountWide:CharacterUnlocks", false)
+		settings:Set("AccountWide:DeathTracker", false)
+		settings:Set("AccountWide:Quests", false)
+		settings:Set("AccountWide:Recipes", false)
+		settings:Set("AccountWide:Reputations", false)
+		settings:Set("AccountWide:Titles", false)
+
+		-- Expansion Things
+		settings:Set("AccountWide:Followers", false)
+		settings:Set("AccountWide:AzeriteEssences", false)
+		settings:Set("AccountWide:Conduits", false)
+		
+		-- Close menu after clicking
+		return MenuResponse.Close
+	end)
+
+	local preset5 = rootDescription:CreateButton(L.TITLE_UNIQUE_APPEARANCE, OnClick)
+	preset5:SetTooltip(function(tooltip, elementDescription)
+		GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
+		GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
+		GameTooltip_AddNormalLine(tooltip, L.PRESET_UNIQUE)
+	end)
+	preset5:SetResponder(function()
+		settings:Set("Thing:Transmog", true)
+		settings:Set("Completionist", false)
+
+		-- Close menu after clicking
+		return MenuResponse.Close
+	end)
+
+	local preset6 = rootDescription:CreateButton(L.TITLE_COMPLETIONIST, OnClick)
+	preset6:SetTooltip(function(tooltip, elementDescription)
+		GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
+		GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
+		GameTooltip_AddNormalLine(tooltip, L.PRESET_COMP)
+	end)
+	preset6:SetResponder(function()
+		settings:Set("Thing:Transmog", true)
+		settings:Set("Completionist", true)
+		
 		-- Close menu after clicking
 		return MenuResponse.Close
 	end)

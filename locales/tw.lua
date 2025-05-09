@@ -288,6 +288,15 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 			L.TITLE_SOLO = "單人 ";
 			L._BETA_LABEL = " |cff4AA7FF[測試]|R";
 
+			--TODO: L.PRESET_TOOLTIP = "Enable this preset. This will adjust only the relevant tracking options of the current profile.";
+			--TODO: L.PRESET_NONE = "None of the Things Mode disables the tracking of all collectibles. Way to challenge yourself.";
+			--TODO: L.PRESET_CORE = "Core Mode enables the collectibles visible in the game's Warband Collections journal.";
+			--TODO: L.PRESET_RANKED = "Ranked Mode enables the collectibles tracked by websites such as Data For Azeroth and WoWthing.";
+			--TODO: L.PRESET_INSANE = "Insane Mode enables all " .. app.ccColors.Insane .. "colored options|R and gives you a real challenge!";
+			--TODO: L.PRESET_SOLO = "Solo Mode disables all account-wide tracking, and will only show progress for your current character.";
+			--TODO: L.PRESET_UNIQUE = "Unique Mode disables Sources, marking gear as collected when you have learned their unique appearance. This will still show gear if you only know a class-locked version of that appearance.";
+			--TODO: L.PRESET_COMP = "Completionist Mode enables Sources, only marking gear as collected when you have learned the appearance from that specific item.";
+
 		L.MINIMAP_SLIDER = "小地圖按鈕尺寸";
 		L.MINIMAP_SLIDER_TOOLTIP = '使用此選項可自訂小地圖按鈕的大小。\n\n預設：36';
 		L.EXTRA_THINGS_LABEL = "其他資源";
