@@ -21,13 +21,13 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.CONTAINS = "包含：";
 	L.FACTIONS = "阵营";
 	L.COORDINATES = "坐标";
-	L.AND_MORE = "和 %s 更多...";	--TODO: check
-	L.AND_OTHER_SOURCES = "和 %s 其他来源...";	--TODO: check
+	L.AND_MORE = "和 %s 更多...";
+	L.AND_OTHER_SOURCES = "和 %s 其他来源...";
 	L.PLAYER_COORDINATES = "玩家坐标";
 	L.NO_COORDINATES_FORMAT = "%s 没有已知坐标";
 	L.TOM_TOM_NOT_FOUND = "必须安装 TomTom 才能绘制坐标。";
 	L.FLIGHT_PATHS = "飞行路线";
-	L.KNOWN_BY = "已知 %s";	--TODO: check
+	L.KNOWN_BY = "已知 %s";
 	L.REQUIRES = "需要";
 	L.RACE_LOCKED = "种族锁定";
 	L.PLEASE_REPORT_MESSAGE = "请把错误报告给 ATT Discord 的 #retail-errors！谢谢！";
@@ -282,22 +282,22 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 			L.TITLE_NONE_THINGS = "一无所有 ";
 			L.TITLE_ONLY = " 仅 ";
 			L.TITLE_INSANE = app.ccColors.Insane.."疯狂|R ";
-			--TODO: L.TITLE_RANKED = "Ranked ";
-			--TODO: L.TITLE_CORE = "Core ";
+			L.TITLE_RANKED = "排名 ";
+			L.TITLE_CORE = "核心 ";
 			L.TITLE_SOME_THINGS = "随随便便 ";
 			L.TITLE_LEVEL = "等级 ";
 			L.TITLE_SOLO = "个人 ";
 			L._BETA_LABEL = " |cff4AA7FF[测试]|R";
 
-			--TODO: L.PRESET_TOOLTIP = "Enable this preset. This will adjust only the relevant tracking options of the current profile.";
-			--TODO: L.PRESET_NONE = "None of the Things Mode disables the tracking of all collectibles. Way to challenge yourself.";
-			--TODO: L.PRESET_CORE = "Core Mode enables the collectibles visible in the game's Warband Collections journal.";
-			--TODO: L.PRESET_RANKED = "Ranked Mode enables the collectibles tracked by websites such as Data For Azeroth and WoWthing.";
-			--TODO: L.PRESET_INSANE = app.ccColors.Insane .. "Insane Mode|R enables all " .. app.ccColors.Insane .. "colored options|R and gives you a real challenge!";
-			--TODO: L.PRESET_ACCOUNT = app.ccColors.Account .. "Account Mode|R enables all account-wide tracking, and will show progress from all of your characters.";
-			--TODO: L.PRESET_SOLO = "Solo Mode disables all account-wide tracking, and will only show progress for your current character.";
-			--TODO: L.PRESET_UNIQUE = "Unique Mode disables Sources, marking gear as collected when you have learned their unique appearance.";
-			--TODO: L.PRESET_COMP = "Completionist Mode enables Sources, only marking gear as collected when you have learned the appearance from that specific item.";
+			L.PRESET_TOOLTIP = "启用此预设。这将仅调整当前配置文件的相关追踪选项。";
+			L.PRESET_NONE = "一无所有模式会禁用所有收藏品的追踪。挑战自己的方式。";
+			L.PRESET_CORE = "核心模式启用游戏战团收藏日志中可见的收藏品。";
+			L.PRESET_RANKED = "排名模式启用由 Data For Azeroth 和 WoWthing 等网站追踪的收藏品。";
+			L.PRESET_INSANE = app.ccColors.Insane .. "疯狂模式|R 启用所有 " .. app.ccColors.Insane .. "彩色选项|R，并给你一个真正的挑战！";
+			L.PRESET_ACCOUNT = app.ccColors.Account .. "账号模式|R 启用所有账号范围的追踪，并显示所有角色的进度。";
+			L.PRESET_SOLO = "单人模式禁用所有账号范围的追踪，仅显示当前角色的进度。";
+			L.PRESET_UNIQUE = "独特外观模式禁用来源，当你学习了它们的独特外观时，将装备标记为已收藏。";
+			L.PRESET_COMP = "完美主义者模式启用来源，仅在你从特定物品中学习了外观时将装备标记为已收藏。";
 
 		L.MINIMAP_SLIDER = "小地图按钮尺寸";
 		L.MINIMAP_SLIDER_TOOLTIP = '使用此选项可自定义小地图按钮的大小。\n\n默认：36';
@@ -335,7 +335,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.AUCTION_TAB_CHECKBOX = "显示拍卖行模块标签";
 		L.AUCTION_TAB_CHECKBOX_TOOLTIP = "如果你想查看 ATT 提供的拍卖行模块请启用此选项。\n\n一些插件很调皮会大量修改这个框架。ATT 并不总是和那些玩具玩得很好。";
 		L.ICON_LEGEND_LABEL = "图标图例";
-		L.ICON_LEGEND_TEXT = app.ccColors.White .. "|T" .. app.asset("status-unobtainable") .. ":0|t " .. "不可获得" .. "\n|T" .. app.asset("status-prerequisites") .. ":0|t " .. "仅在满足先决条件的情况下获得" .. "\n|T" .. app.asset("status-seasonal-available") .. ":0|t " .. AVAILABLE .."季节性内容" .. "\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t " .. UNAVAILABLE .. "季节性内容" .. "\n|T374225:0|t " .. "当前角色不可用";	--TODO: check (un)available seasonal content
+		L.ICON_LEGEND_TEXT = app.ccColors.White .. "|T" .. app.asset("status-unobtainable") .. ":0|t " .. "不可获得" .. "\n|T" .. app.asset("status-prerequisites") .. ":0|t " .. "仅在满足先决条件的情况下可获得" .. "\n|T" .. app.asset("status-seasonal-available") .. ":0|t " .. "当前可用的季节性内容" .. "\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t " .. "当前不可用的季节性内容" .. "\n|T374225:0|t " .. "当前角色不可用";
 		L.CHAT_COMMANDS_LABEL = "聊天命令";
 		L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFF或|R /things |cffFFFFFF或|R /allthethings\n|cffFFFFFF打开主列表。\n\n|R/att mini |cffFFFFFF或|R /attmini\n|cffFFFFFF打开小列表。\n\n|R/att bounty\n|cffFFFFFF打开被出错或未确认的物品列表。\n\n|R/att ra |cffFFFFFF或|R /attra\n|cffFFFFFF打开团队助手。\n\n|R/att wq |cffFFFFFF或|R /attwq\n|cffFFFFFF打开世界任务列表。\n\n|R/att item:1234 |cffFFFFFF或|R /att [物品链接]\n|cffFFFFFF打开一个共享外观的窗口。也适用于其他事物，例如|R quest:1234|cffFFFFFF，|Rnpcid:1234|cffFFFFFF，|Rmapid:1234|cffFFFFFF 或 |Rrecipeid:1234|cffFFFFFF。\n\n|R/att rwp\n|cffFFFFFF显示所有未来用补丁删除的东西。\n\n|R/att random |cffFFFFFF或|R /attrandom |cffFFFFFF或|R /attran\n|cffFFFFFF打开随机列表。\n\n|R/att unsorted\n|cffFFFFFF打开未知源物品列表。最好在调试模式下打开。\n\n|R/rl\n|cffFFFFFF重载魔兽界面。|R";
 
@@ -401,7 +401,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.SECRETS_HEADER = "解密";
 		L.LIMITED_QUANTITY = "此物品有数量限制，在商人处并非总是可见。";
 		L.SOURCE_ID_MISSING = "请在 ATT Discord 的 #retail-errors 中报告此物品及其获取地点！";
-		--TODO: recheck these patch strings
 		L.ADDED_WITH_PATCH_FORMAT = "补丁 %s 中添加";
 		L.WAS_ADDED_WITH_PATCH_FORMAT = "最新补丁 %s 中添加";
 		L.ADDED_BACK_WITH_PATCH_FORMAT = "补丁 %s 中添加回归";
@@ -496,7 +495,7 @@ for key,value in pairs({
 	-- About Page
 		ABOUT_PAGE = "关于";
 		ABOUT_TOP = " |CFFFFFFFF是一个收藏跟踪插件，可以向您展示在游戏中获取所有内容的位置和方式！我们的 Discord 上有大量用户社区（底部链接），您可以在其中提问、提交建议以及报告错误或丢失的物品。如果发现一些收藏品或未记录的任务，可以在 Discord 上告诉我们，或者对于更精通技术的人，我们有一个您可以直接贡献的 Git。\n\n虽然我们努力争取完成，但每个补丁都会添加很多东西，所以如果我们遗漏了什么，请理解我们是一个小团队，试图跟上变化并自己收藏东西。:D\n\n在我直播时随时问我问题，我会尽力回答，即使它与 ATT（一般魔兽插件编程也是如此）没有直接关系。\n\n- |r|Cffff8000Crieve|r";
-		ABOUT_BOTTOM = "活跃贡献者：|CFFFFFFFF（排名不分先后）\n%s！\n|r名人堂：|CFFFFFFFF（排名不分先后）\n%s\n\n特别鸣谢 AmiYuy（CanIMogIt）和 Caerdon（Caerdon Wardrobe）。绝对应该下载他们的插件，以获得包中物品的收藏图标！ %s %s %s\n\n如需在线收集比较，请访问 Shoogen 的 DataForAzeroth.com 和 Freddie 的 WoWthing.org！|r";	--TODO: now in alphabetical order
+		ABOUT_BOTTOM = "活跃贡献者：|CFFFFFFFF（按字母顺序排列）\n%s\n\n|r名人堂：|CFFFFFFFF（按字母顺序排列）\n%s\n\n特别鸣谢 AmiYuy（CanIMogIt）和 Caerdon（Caerdon Wardrobe）。绝对应该下载他们的插件，以便在背包中的物品上显示收藏图标！%s %s %s\n\n如需在线收藏比较，请访问 Shoogen 的 DataForAzeroth.com 和 Freddie 的 WoWthing.org！|r";
 		CLIPBOARDCOPYPASTE = "Ctrl+A, Ctrl+C 复制到剪贴板。";
 		CURSEFORGE_BUTTON_TOOLTIP = "单击按钮复制 URL 到 Curse 的 ALL THE THINGS 插件地址。\n\n您也可以将此链接发送给您的朋友，让他们也毁掉自己的生活！他们最终会原谅你……也许吧。";
 		DISCORD_BUTTON_TOOLTIP = "点击按钮复制 URL 到All The Things Discord 服务器。\n\n可以与其他收藏家分享进步/挫折！";
@@ -559,7 +558,6 @@ for key,value in pairs({
 		GENERAL_THINGS_LABEL = "通用事物";
 		STRANGER_THINGS_LABEL = "陌生事物";
 
-		--TODO: ACHIEVEMENTS_CHECKBOX = ACHIEVEMENTS;
 		ACHIEVEMENTS_CHECKBOX_TOOLTIP = "启用此选项可追踪成就。";
 		APPEARANCES_CHECKBOX = "外观";
 		APPEARANCES_CHECKBOX_TOOLTIP = "启用此选项可追踪外观获取。\n\n注意: 禁用此选项也会禁用所有采集逻辑，你可以使用此切换来防止在执行重要组内容时出现延迟，请牢记，重新启用后将需要进行计算。";
@@ -571,15 +569,12 @@ for key,value in pairs({
 		EXPLORATION_CHECKBOX_TOOLTIP = "启用此选项可以跟踪户外地图的探索完成情况。\n\n目前这个选项所提供的资讯并不准确，需要加强，请谨慎使用。";
 		FLIGHT_PATHS_CHECKBOX = "飞行路径";
 		FLIGHT_PATHS_CHECKBOX_TOOLTIP = "启用此选项以追踪飞行路径和飞艇。\n\n要收藏这些信息，请与每个大陆的飞行点/飞艇船长对话。\n\n注意：由于分阶段技术，你可能必须分阶段到区域的其他敌方，以获得这些兴趣点的开启。";
-		--TODO: HEIRLOOMS_CHECKBOX = HEIRLOOMS;
 		HEIRLOOMS_CHECKBOX_TOOLTIP = "启用此选项可追踪你是否已解锁传家宝及其各自的升级级别。\n\n具有相关外观的传家宝将通过外观过滤进行过滤。（关闭外观仍将显示传家宝本身）\n\n一些出现史诗品质的商品也有助于提升声望，可以通过声望过滤进行过滤。";
 		HEIRLOOMS_UPGRADES_CHECKBOX = "+升级";
 		HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP = "启用此选项可专门追踪单个传家宝升级的收藏情况。\n\n我们都知道暴雪就是喜欢消耗你的金币和灵魂，所以用这个切换来追踪你的金币。";
 		ILLUSIONS_CHECKBOX = "附魔幻象";
 		ILLUSIONS_CHECKBOX_TOOLTIP = "启用此选项以追踪附魔幻象。\n\n这些看起来很酷的幻化效果，你可以应用到你的武器上！\n\n注意：你不是一个幻象，尽管所有的夜之子都这么认为。";
-		--TODO: MOUNTS_CHECKBOX = MOUNTS;
 		MOUNTS_CHECKBOX_TOOLTIP = "启用此选项以追踪坐骑。\n\n你可以骑着它们去比跑步更快的地方。谁知道！";
-		--TODO: QUESTS_CHECKBOX = QUESTS_LABEL;
 		QUESTS_CHECKBOX_TOOLTIP = "启用此选项以追踪任务。\n\n你可以右键单击列表中的任何任务，弹出它们的完整任务链，以显示你的进度和任何先决条件或后续任务。\n\n注意：每日、每周、每年和世界任务的跟踪不包含在此选项中，因为它们会在暴雪数据库中定期重置。";
 		QUESTS_LOCKED_CHECKBOX = "+已锁定";
 		QUESTS_LOCKED_CHECKBOX_TOOLTIP = "启用此选项可专门包括跟踪锁定任务的完成情况。\n\n锁定任务是指玩家无法再通过正常游戏完成的任务（根据已知的 ATT 数据）。\n\n获得这些任务非常依赖于小队同步功能或使用帐号通用内的任务来整合其他角色的进度。";
@@ -589,7 +584,6 @@ for key,value in pairs({
 		REPUTATIONS_CHECKBOX_TOOLTIP = "启用此选项可追踪声望。\n\n一旦你达到了有声望的尊敬或最好的朋友，它将被标记为收藏。\n\n你可能需要手动刷新才能正确更新。";
 		TITLES_CHECKBOX = "头衔";
 		TITLES_CHECKBOX_TOOLTIP = "启用此选项可追踪头衔。\n\n这些可以让你的角色脱颖而出，看起来你已经玩了一段时间。通常只有新玩家没有称号。";
-		--TODO: TOYS_CHECKBOX = TOY_BOX;
 		TOYS_CHECKBOX_TOOLTIP = "启用此选项可追踪玩具。\n\n这些玩具中的大多数玩具都有趣。其他的，如炉石玩具，可以用来代替你的初始炉石，并可以为你节省一个背包！他们也有有趣的效果…很好！";
 
 		-- Expansion Things
@@ -734,16 +728,12 @@ for key,value in pairs({
 		MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "最大顶线长度";
 
 	-- Interface: Accessibility Page
-		--TODO: ACCESSIBILITY_PAGE = ACCESSIBILITY_LABEL;
-		--TODO: ACCESSIBILITY_EXPLAIN = COLORBLIND_MODE_SUBTEXT;
 		COLORS_ICONS = "颜色和图标";
 		LOCKED_QUESTS = "锁定任务";
 		MORE_COLORS_CHECKBOX = "显示颜色";
 		MORE_COLORS_CHECKBOX_TOOLTIP = "如果你想看到使用更多的颜色来帮助区分列表中事物的附加条件，请启用此选项（比如职业颜色，阵营颜色等。）";
 		WINDOW_COLORS = "窗口颜色";
-		--TODO: BACKGROUND = EMBLEM_BACKGROUND;
 		BACKGROUND_TOOLTIP = "设置所有 ATT 窗口的背景颜色和透明度。";
-		--TODO: BORDER = EMBLEM_BORDER;
 		BORDER_TOOLTIP = "设置所有 ATT 窗口的边框颜色和透明度。";
 		RESET_TOOLTIP = "恢复默认设置。";
 		CLASS_BORDER = "边框使用职业颜色";
@@ -814,7 +804,6 @@ for key,value in pairs({
 
 	-- Features: Windows Page
 	-- Classic Only, nothing localizable atm.
-		--TODO: WINDOWS_PAGE = "Windows";
 
 	-- Profiles Page
 		PROFILES_PAGE = "配置文件";
