@@ -8,11 +8,18 @@ local XShift = app.IsRetail and -1 or 0
 local YShift = app.IsRetail and -65 or -32
 local WorldMapButton;
 local function CreateWorldMapButton()
-	local button = CreateFrame("BUTTON", appName .. "-WorldMap", WorldMapFrame:GetCanvasContainer());
+	-- wonder if there's other special world map button addons we need to worry about... thanks Blizzard for no common API for a feature you added
+	local KrowiWorldMapButtons = LibStub and LibStub("Krowi_WorldMapButtons-1.4", true)
+	local button
+	if KrowiWorldMapButtons then
+		button = KrowiWorldMapButtons:Add(nil, "BUTTON")
+	else
+		button = CreateFrame("BUTTON", appName .. "-WorldMap", WorldMapFrame:GetCanvasContainer());
+		button:SetPoint("TOPRIGHT", XShift, YShift);
+		button:SetFrameStrata("HIGH");
+	end
 	button:SetHighlightTexture(app.asset("MinimapHighlight_64x64"));
-	button:SetPoint("TOPRIGHT", XShift, YShift);
 	button:RegisterForClicks("LeftButtonUp", "RightButtonUp");
-	button:SetFrameStrata("HIGH");
 	button:EnableMouse(true);
 	button:SetSize(36, 36);
 	WorldMapButton = button;
