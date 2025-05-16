@@ -261,32 +261,26 @@ settings.Initialize = function(self)
 	self.sliderPercentagePrecision:SetValue(self:GetTooltipSetting("Precision"))
 	self.sliderMinimapButtonSize:SetValue(self:GetTooltipSetting("MinimapSize"))
 
-	app.SetWorldMapButtonSettings(self:GetTooltipSetting("WorldMapButton"));
-	app.SetMinimapButtonSettings(
-		self:GetTooltipSetting("MinimapButton"),
-		self:GetTooltipSetting("MinimapSize"));
 	self:UpdateMode()
 
-	if self:GetTooltipSetting("Auto:MainList") then
-		app.AddEventHandler("OnInit", function()
+	app.AddEventHandler("OnInit", function()
+		if self:GetTooltipSetting("Auto:MainList") then
 			app:GetWindow("Prime"):SetVisible(true)
-		end)
-	end
-	if self:GetTooltipSetting("Auto:MiniList") then
-		app.AddEventHandler("OnInit", function()
+		end
+		if self:GetTooltipSetting("Auto:MiniList") then
 			app:GetWindow("CurrentInstance"):SetVisible(true)
-		end)
-	end
-	if self:GetTooltipSetting("Auto:RaidAssistant") then
-		app.AddEventHandler("OnInit", function()
+		end
+		if self:GetTooltipSetting("Auto:RaidAssistant") then
 			app:GetWindow("RaidAssistant"):SetVisible(true)
-		end)
-	end
-	if self:GetTooltipSetting("Auto:WorldQuestsList") then
-		app.AddEventHandler("OnInit", function()
+		end
+		if self:GetTooltipSetting("Auto:WorldQuestsList") then
 			app:GetWindow("WorldQuests"):SetVisible(true)
-		end)
-	end
+		end
+		app.SetWorldMapButtonSettings(self:GetTooltipSetting("WorldMapButton"));
+		app.SetMinimapButtonSettings(
+			self:GetTooltipSetting("MinimapButton"),
+			self:GetTooltipSetting("MinimapSize"));
+	end)
 
 	if settings.RefreshActiveInformationTypes then
 		settings.RefreshActiveInformationTypes()

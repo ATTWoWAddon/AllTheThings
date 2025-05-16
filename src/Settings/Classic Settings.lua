@@ -279,10 +279,12 @@ settings.Initialize = function(self)
 	end
 	self.sliderMinimapButtonSize:SetValue(self:GetTooltipSetting("MinimapSize"))
 
-	app.SetWorldMapButtonSettings(self:GetTooltipSetting("WorldMapButton"));
-	app.SetMinimapButtonSettings(
-		self:GetTooltipSetting("MinimapButton"),
-		self:GetTooltipSetting("MinimapSize"));
+	app.AddEventHandler("OnInit", function()
+		app.SetWorldMapButtonSettings(self:GetTooltipSetting("WorldMapButton"));
+		app.SetMinimapButtonSettings(
+			self:GetTooltipSetting("MinimapButton"),
+			self:GetTooltipSetting("MinimapSize"));
+	end)
 
 	self:UpdateMode();
 end
