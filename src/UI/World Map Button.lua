@@ -13,11 +13,13 @@ local function CreateWorldMapButton()
 	local button
 	if KrowiWorldMapButtons then
 		button = KrowiWorldMapButtons:Add(nil, "BUTTON")
+		-- this is a non-standard function that Krowi uses when the world map changes to sync updates to the button. it errors if not existing
+		button.Refresh = app.EmptyFunction
 	else
 		button = CreateFrame("BUTTON", appName .. "-WorldMap", WorldMapFrame:GetCanvasContainer());
 		button:SetPoint("TOPRIGHT", XShift, YShift);
-		button:SetFrameStrata("HIGH");
 	end
+	button:SetFrameStrata("HIGH");
 	button:SetHighlightTexture(app.asset("MinimapHighlight_64x64"));
 	button:RegisterForClicks("LeftButtonUp", "RightButtonUp");
 	button:EnableMouse(true);
