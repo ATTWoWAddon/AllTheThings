@@ -33,6 +33,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			i(212491),	-- Sweet Eclipse
 			i(212492),	-- Twilight-Spiced Grouper
+			i(228228),	-- Strange Lump of Wax (QS!/QI!)// World drop or from objectID 419696 (Waxy Lump)
+
 		}),
 	}),
 })));

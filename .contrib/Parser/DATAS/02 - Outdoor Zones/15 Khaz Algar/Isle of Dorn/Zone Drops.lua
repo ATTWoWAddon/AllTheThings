@@ -14,6 +14,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 40.6, 59.9, ISLE_OF_DORN },
 			}),
 			i(225557),	-- Sizzling Cinderpollen
+			i(228228),	-- Strange Lump of Wax (QS!/QI!)// World drop or from objectID 419696 (Waxy Lump)
+
 		}),
 	}),
 })));
