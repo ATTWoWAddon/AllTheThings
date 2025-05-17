@@ -2,23 +2,10 @@
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
 -- Bloodied Crafted Gear was added with Cataclysm and then removed from the game after Firelands was released.
--- #if ANYCLASSIC
-local BLOODIED_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_RAGE_OF_THE_FIRELANDS .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = ]] .. CATA_PHASE_ONE .. [[;
-		t.rwp = 40200;
-	end
-end]];
--- #endif
+-- In Classic, these items were not removed from the game at all.
 local function bloodied(t)
-	-- #if CATA
-	t.timeline = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 };
-		-- #if ANYCLASSIC
-		t.OnUpdate = BLOODIED_ONUPDATE;
-		-- #endif
+	-- #if ANYCLASSIC
+	t.timeline = { ADDED_4_0_3_LAUNCH };
 	-- #else
 	t.timeline = { ADDED_4_0_3_LAUNCH, REMOVED_4_2_0 };
 	-- #endif
@@ -26,23 +13,10 @@ local function bloodied(t)
 end
 
 -- Bloodthirsty Crafted Gear was added with Firelands and then removed from the game after Dragon Soul was released.
--- #if ANYCLASSIC
-local BLOODTHIRSTY_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_HOUR_OF_TWILIGHT .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = ]] .. CATA_PHASE_RAGE_OF_THE_FIRELANDS .. [[;
-		t.rwp = 40300;
-	end
-end]];
--- #endif
+-- In Classic, these items were not removed from the game at all.
 local function bloodthirsty(t)
-	-- #if CATA
-	t.timeline = { ADDED_4_2_0, REMOVED_5_0_4 };
-		-- #if ANYCLASSIC
-		t.OnUpdate = BLOODTHIRSTY_ONUPDATE;
-		-- #endif
+	-- #if ANYCLASSIC
+	t.timeline = { ADDED_4_2_0 };
 	-- #else
 	t.timeline = { ADDED_4_2_0, REMOVED_4_3_0 };
 	-- #endif

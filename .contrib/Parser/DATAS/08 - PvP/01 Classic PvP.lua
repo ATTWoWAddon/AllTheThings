@@ -42,7 +42,14 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 			pvprank(13),	-- Field Marshal / Warlord
 			pvprank(14),	-- Grand Marshal / High Warlord
 		})),
-		n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_1_11_1, REMOVED_2_0_1 }}, {
+		n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({
+			["timeline"] = {
+				ADDED_1_11_1,
+				-- #if NOT ANYCLASSIC
+				REMOVED_2_0_1,
+				-- #endif
+			}
+		}, {
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = sharedData({
 				-- #if AFTER 2.0.1
@@ -519,7 +526,14 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 				}),
 			}),
 		})),
-		n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_1_11_1, REMOVED_2_0_1 }}, {
+		n(FACTION_HEADER_HORDE, bubbleDownSelf({
+			["timeline"] = {
+				ADDED_1_11_1,
+				-- #if NOT ANYCLASSIC
+				REMOVED_2_0_1,
+				-- #endif
+			}
+		}, {
 			["races"] = HORDE_ONLY,
 			["groups"] = sharedData({
 				-- #if AFTER 2.0.1
