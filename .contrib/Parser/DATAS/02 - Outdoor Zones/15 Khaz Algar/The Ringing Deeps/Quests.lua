@@ -806,7 +806,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "i", 228228 },	-- Strange Lump of Wax
 					["coord"] = { 47.7, 35.3, THE_RINGING_DEEPS },
 					["sourceQuestNumRequired"] = 1,
-					["description"] = Strange Lump of Wax is a somewhat rare drop from the continent of Khaz Algar
+					["description"] = "Strange Lump of Wax is a somewhat rare drop from the continent of Khaz Algar",
 				}),
 				q(79683, {	-- Home is Where the Candle Is
 					["sourceQuests"] = {

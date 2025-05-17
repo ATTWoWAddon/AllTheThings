@@ -9,13 +9,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 56.9, 16.3, THE_RINGING_DEEPS },
 				["g"] = {
 					i(212595),	-- Glittering Shard (QS!)/(QI!)
-				},
-			}),
-			i(224772, {	-- Bounty from Gallywix (QS!/QI!)
+				}}),
 			i(228228),	-- Strange Lump of Wax (QS!/QI!)// World drop or from objectID 419696 (Waxy Lump)
+			i(224772, {	-- Bounty from Gallywix (QS!/QI!)
 				-- TODO: from 225681 or 225680
 				["timeline"] = { ADDED_11_1_0 },
 			}),
+			}),
 		}),
-	}),
 })));
