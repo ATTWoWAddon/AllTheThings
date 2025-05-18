@@ -120,7 +120,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				},
 				["cost"] = {{"i", 229823, 1}},	-- Canister of Darkfuse Solution
 				["coord"] = { 41.2, 91.4, UNDERMINE },
-				["questID"] = 90488,
+				["questID"] = 90492,
 				["isWeekly"] = true,
 				["g"] = {
 					i(229955),	-- Darkfuse Spy-Eye (MOUNT!)
@@ -183,7 +183,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["crs"] = {
 					234819,	-- Magno-Scrapper 9000
 				},
-				["questID"] = 90492,
+				["questID"] = 90488,
 				["isWeekly"] = true,
 				["g"] = {
 					i(235835),	-- Braided Wire Wrap
