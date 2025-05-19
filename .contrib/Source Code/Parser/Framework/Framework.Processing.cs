@@ -3959,9 +3959,12 @@ namespace ATT
                             }
                         case "deleted":
                             {
-                                // if deleted entry is before current release, mark the Thing as removed
+                                // If entry is before current release, mark current Thing as removed
                                 if (CURRENT_RELEASE_VERSION >= entry.LongVersion)
                                 {
+                                    removed = 4;
+                                    readded = false;
+
                                     // the last entry in the timeline is this deleted change
                                     if (index == lastIndex)
                                     {
@@ -3972,13 +3975,12 @@ namespace ATT
                                         // so don't remove this. This is how I want it. Thanks!
                                         if (!DebugMode) return false;    // Invalid
                                     }
-
-                                    removed = 4;
-                                    readded = false;
                                 }
 
-                                // Mark the first patch this was removed on. (the upcoming patch)
-                                if (removedPatch <= 10000)
+                                // Set new removed patch value when:
+                                // a) Removed patch is default value OR
+                                // b) Removed patch is smaller than added patch AND added patch value is smaller than current release
+                                if (removedPatch <= 10000 || (removedPatch < addedPatch && addedPatch <= CURRENT_SHORT_RELEASE_VERSION))
                                 {
                                     timeline.CurrentEntry = index;
                                     removedPatch = entry.Version;
@@ -3988,22 +3990,22 @@ namespace ATT
                             }
                         case "removed":
                             {
+                                // If entry is before current release, mark current Thing as removed
                                 if (CURRENT_RELEASE_VERSION >= entry.LongVersion)
                                 {
                                     removed = 2;
                                     readded = false;
-                                    // Mark the most recent patch this was removed
-                                    if (removedPatch <= 10000)
-                                    {
-                                        timeline.CurrentEntry = index;
-                                        removedPatch = entry.Version;
-                                    }
                                 }
-                                else
+
+                                // Set new removed patch value when:
+                                // a) Removed patch is default value OR
+                                // b) Removed patch is smaller than added patch AND added patch is smaller than current release
+                                if (removedPatch <= 10000 || (removedPatch < addedPatch && addedPatch <= CURRENT_SHORT_RELEASE_VERSION))
                                 {
-                                    // Mark the first patch this was removed on. (the upcoming patch)
-                                    if (removedPatch <= 10000) removedPatch = entry.Version;
+                                    timeline.CurrentEntry = index;
+                                    removedPatch = entry.Version;
                                 }
+
                                 break;
                             }
                     }
@@ -4064,7 +4066,7 @@ namespace ATT
                 }
 
                 // Future Unobtainable
-                if (removedPatch > 10000 && !readded)
+                if (removedPatch > 10000)
                 {
                     if (data.TryGetValue("rwp", out long rwp) && rwp != removedPatch)
                     {
