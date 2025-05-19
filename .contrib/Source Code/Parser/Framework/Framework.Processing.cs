@@ -3959,7 +3959,7 @@ namespace ATT
                             }
                         case "deleted":
                             {
-                                // deleted only affects if the parse version has passed the timeline version
+                                // if deleted entry is before current release, mark the Thing as removed
                                 if (CURRENT_RELEASE_VERSION >= entry.LongVersion)
                                 {
                                     // the last entry in the timeline is this deleted change
@@ -3973,16 +3973,17 @@ namespace ATT
                                         if (!DebugMode) return false;    // Invalid
                                     }
 
-                                    // just in case parsing with Debug and verifying in-game... we would want Deleted to show as Removed
                                     removed = 4;
                                     readded = false;
-                                    // Mark the first patch this was removed on. (the upcoming patch)
-                                    if (removedPatch <= 10000)
-                                    {
-                                        timeline.CurrentEntry = index;
-                                        removedPatch = entry.Version;
-                                    }
                                 }
+
+                                // Mark the first patch this was removed on. (the upcoming patch)
+                                if (removedPatch <= 10000)
+                                {
+                                    timeline.CurrentEntry = index;
+                                    removedPatch = entry.Version;
+                                }
+
                                 break;
                             }
                         case "removed":
