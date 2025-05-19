@@ -3910,12 +3910,8 @@ namespace ATT
                         // Note: Adding command options here requires adjusting the filter Regex for 'timeline' entries during MergeStringArrayData
                         case "created":
                             {
-                                if (CURRENT_SHORT_RELEASE_VERSION < entry.Version)
-                                {
-                                    // Not implemented yet and doesn't exist in the database.
-                                    return false;    // Invalid
-                                }
-                                else if (CURRENT_RELEASE_VERSION < entry.LongVersion)
+                                // If it hasn't happened yet, then do a thing.
+                                if (CURRENT_SHORT_RELEASE_VERSION < entry.Version || CURRENT_RELEASE_VERSION < entry.LongVersion)
                                 {
                                     //Console.Write("NOT CREATED: ");
                                     //Console.WriteLine(ToJSON(data));
@@ -3931,17 +3927,7 @@ namespace ATT
                         case "added":
                             {
                                 // If it hasn't happened yet, then do a thing.
-                                if (CURRENT_SHORT_RELEASE_VERSION < entry.Version)
-                                {
-                                    // If this is the first patch the thing was added...
-                                    if (index == 0)
-                                    {
-                                        // Not implemented yet and likely doesn't exist in the database.
-                                        // NOTE: If an item exists in the database but wasn't made available, use "created" instead!
-                                        return false;    // Invalid
-                                    }
-                                }
-                                else if (CURRENT_RELEASE_VERSION < entry.LongVersion)
+                                if (CURRENT_SHORT_RELEASE_VERSION < entry.Version || CURRENT_RELEASE_VERSION < entry.LongVersion)
                                 {
                                     //Console.Write("NOT ADDED: ");
                                     //Console.WriteLine(ToJSON(data));
