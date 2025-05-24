@@ -2983,10 +2983,7 @@ namespace ATT
             // ItemXItemEffect 1> ItemEffect
             // ItemEffect X> SpellEffect
             // e.g. i:207046 -> 2 ItemXItemEffect -> 2 ItemEffect -> 2 SpellEffect & 4 SpellEffect
-            foreach (ItemXItemEffect itemXItemEffect in WagoData.Enumerate<ItemXItemEffect>((si) =>
-            {
-                return si.ItemID == itemID;
-            }))
+            foreach (ItemXItemEffect itemXItemEffect in WagoData.EnumerateForItemID<ItemXItemEffect>(itemID))
             {
                 if (!WagoData.TryGetValue(itemXItemEffect.ItemEffectID, out ItemEffect itemEffect))
                     continue;

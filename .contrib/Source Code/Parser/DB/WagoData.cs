@@ -101,6 +101,20 @@ namespace ATT.DB
         }
 
         /// <summary>
+        /// Enumerate over a collection of elements matching the itemID.
+        /// </summary>
+        /// <typeparam name="T">The element type to search for.</typeparam>
+        /// <param name="itemID">The item ID.</param>
+        /// <returns>An enumerable list.</returns>
+        public static IEnumerable<T> EnumerateForItemID<T>(long itemID) where T : IWagoDBItemExtension, IDBType
+        {
+            return Enumerate<T>((x) =>
+            {
+                return x.ItemID == itemID;
+            });
+        }
+
+        /// <summary>
         /// Get exportable data from the object id.
         /// </summary>
         /// <param name="id">The id of the object to export data for.</param>

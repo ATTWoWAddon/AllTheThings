@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using static ATT.Framework;
 
 namespace ATT.DB.Types
 {
@@ -52,10 +53,7 @@ namespace ATT.DB.Types
                 if (_effects != null) return _effects;
 
                 _effects = new List<ItemEffect>();
-                foreach (var xeffect in WagoData.Enumerate<ItemXItemEffect>((x) =>
-                {
-                    return x.ItemID == ID;
-                }))
+                foreach (var xeffect in WagoData.EnumerateForItemID<ItemXItemEffect>(ID))
                 {
                     if (WagoData.TryGetValue(xeffect.ItemEffectID, out ItemEffect effect) && effect.IsKnownTriggerType())
                     {
