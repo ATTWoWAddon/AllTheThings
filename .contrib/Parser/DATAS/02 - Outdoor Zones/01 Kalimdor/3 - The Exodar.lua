@@ -58,6 +58,159 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				["skipFill"] = true,
 			}),
 			-- #endif
+			n(PROFESSIONS, {
+				prof(ALCHEMY, {
+					n(16705, {	-- Altaa <Alchemy Supplies>
+						["coord"] = { 28.1, 61.9, THE_EXODAR },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(23574, {	-- Recipe: Transmute Primal Might (RECIPE!)
+								["isLimited"] = true,
+							}),
+						},
+					}),
+				}),
+				prof(BLACKSMITHING, {
+					n(16713, {	-- Arras <Blacksmithing Supplies>
+						["coord"] = { 61.3, 89.3, THE_EXODAR },
+						["races"] = ALLIANCE_ONLY,
+						-- #if AFTER 4.3.0
+						["sym"] = {{ "sub", "common_recipes_vendor", 55684 }},	-- Jordan Smith <Blacksmithing Trainer & Supplies>
+						-- #endif
+						["groups"] = {
+							i(23591, {	-- Plans: Adamantite Cleaver (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(23592, {	-- Plans: Adamantite Dagger (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(23590, {	-- Plans: Adamantite Maul (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(23593, {	-- Plans: Adamantite Rapier (RECIPE!)
+								["isLimited"] = true,
+							}),
+						},
+					}),
+				}),
+				prof(COOKING, {
+					n(16718, {	-- Phea <Cooking Supplies>
+						["coord"] = { 54.4, 26.3, THE_EXODAR },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = PHEA_GROUPS,
+					}),
+				}),
+				prof(ENCHANTING, {
+					n(16722, {	-- Egomis <Enchanting Supplies>
+						["coord"] = { 39.9, 40.2, THE_EXODAR },
+						["races"] = ALLIANCE_ONLY,
+						-- #if AFTER CATA
+						["sym"] = { { "sub", "common_recipes_vendor", 1318 } },	-- Jessara Cordell <Enchanting Supplies>
+						-- #endif
+						["groups"] = EGOMIS_GROUPS,
+					}),
+				}),
+				prof(ENGINEERING, {
+					n(16657, {	-- Feera <Engineering Supplies>
+						["coord"] = { 53.6, 90.8, THE_EXODAR },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(4400),	-- Heavy Stock
+							i(23799, {	-- Schematic: Adamantite Rifle (RECIPE!)
+								["isLimited"] = true,
+							}),
+							applyclassicphase(TBC_PHASE_TWO, i(23815, {	-- Schematic: Adamantite Shell Machine (RECIPE!)
+								["isLimited"] = true,
+								["timeline"] = { REMOVED_4_0_1 },
+							})),
+							i(23816, {	-- Schematic: Fel Iron Toolbox (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(23811, {	-- Schematic: White Smoke Flare (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(4399),	-- Wooden Stock
+						},
+					}),
+				}),
+				prof(FISHING, {
+				}),
+				prof(INSCRIPTION, {
+					n(30716, {	-- Thoth <Inscription Trainer>
+						["coord"] = { 40.5, 39.8, THE_EXODAR },
+						["timeline"] = { ADDED_3_0_2 },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(137789, {	-- Technique: Songs of the Legion (RECIPE!)
+								["timeline"] = { ADDED_7_0_3 },
+							}),
+						},
+					}),
+				}),
+				prof(JEWELCRAFTING, {
+					n(17512, {	-- Arred <Jewelcrafting Supplies>
+						["coord"] = { 45.5, 25.3, THE_EXODAR },
+						["races"] = ALLIANCE_ONLY,
+						-- #if AFTER CATA
+						["sym"] = { { "sub", "common_recipes_vendor", 50482 } },	-- Marith Lazuria <Jewelcrafting Supplies>
+						-- #endif
+						["groups"] = {
+							i(20854, {	-- Design: Amulet of the Moon
+								["isLimited"] = true,
+							}),
+							i(20856, {	-- Design: Heavy Golden Necklace of Battle
+								["isLimited"] = true,
+							}),
+							i(21948, {	-- Design: Opal Necklace of Impact
+								["isLimited"] = true,
+							}),
+							i(20975, {	-- Design: The Jade Eye
+								["isLimited"] = true,
+							}),
+						},
+					}),
+				}),
+				prof(LEATHERWORKING, {
+					n(16748, {	-- Haferet <Leatherworking Supplies>
+						["coord"] = { 66.6, 73.7, THE_EXODAR },
+						["races"] = ALLIANCE_ONLY,
+						-- #if AFTER CATA
+						["sym"] = { { "sub", "common_recipes_vendor", 3366 } },	-- Tamar <Leatherworking Supplies>
+						-- #endif
+						["groups"] = {
+							i(25726, {	-- Pattern: Comfortable Insoles (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(25720, {	-- Pattern: Heavy Knothide Leather
+								["timeline"] = { REMOVED_3_2_0},
+								["requireSkill"] = LEATHERWORKING,
+								["isLimited"] = true,
+								["f"] = RECIPES,
+							}),
+						},
+					}),
+				}),
+				prof(TAILORING, {
+					n(16767, {	-- Neii <Tailoring Supplies>
+						["coord"] = { 64.7, 68.5, THE_EXODAR },
+						["races"] = ALLIANCE_ONLY,
+						-- #if AFTER CATA
+						["sym"] = { { "sub", "common_recipes_vendor", 3364 } },	-- Borya <Tailoring Supplies>
+						-- #endif
+						["groups"] = {
+							i(21892),	-- Pattern: Bolt of Imbued Netherweave (RECIPE!)
+							i(21894, {	-- Pattern: Bolt of Soulcloth (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(21896),	-- Pattern: Netherweave Robe (RECIPE!)
+							i(21897),	-- Pattern: Netherweave Tunic (RECIPE!)
+						},
+					}),
+				}),
+			}),
 			n(QUESTS, {
 				q(10356, {	-- A Donation of Mageweave
 					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
@@ -289,60 +442,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 			}),
 			n(VENDORS, {
-				n(16705, {	-- Altaa <Alchemy Supplies>
-					["coord"] = { 28.1, 61.9, THE_EXODAR },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(22900, {	-- Recipe: Elixir of Camouflage (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(23574, {	-- Recipe: Transmute Primal Might (RECIPE!)
-							["isLimited"] = true,
-						}),
-					},
-				}),
-				n(16713, {	-- Arras <Blacksmithing Supplies>
-					["coord"] = { 61.3, 89.3, THE_EXODAR },
-					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER 4.3.0
-					["sym"] = {{ "sub", "common_recipes_vendor", 55684 }},	-- Jordan Smith <Blacksmithing Trainer & Supplies>
-					-- #endif
-					["groups"] = {
-						i(23591, {	-- Plans: Adamantite Cleaver (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(23592, {	-- Plans: Adamantite Dagger (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(23590, {	-- Plans: Adamantite Maul (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(23593, {	-- Plans: Adamantite Rapier (RECIPE!)
-							["isLimited"] = true,
-						}),
-					},
-				}),
-				n(17512, {	-- Arred <Jewelcrafting Supplies>
-					["coord"] = { 45.5, 25.3, THE_EXODAR },
-					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER CATA
-					["sym"] = { { "sub", "common_recipes_vendor", 50482 } },	-- Marith Lazuria <Jewelcrafting Supplies>
-					-- #endif
-					["groups"] = {
-						i(20854, {	-- Design: Amulet of the Moon
-							["isLimited"] = true,
-						}),
-						i(20856, {	-- Design: Heavy Golden Necklace of Battle
-							["isLimited"] = true,
-						}),
-						i(21948, {	-- Design: Opal Necklace of Impact
-							["isLimited"] = true,
-						}),
-						i(20975, {	-- Design: The Jade Eye
-							["isLimited"] = true,
-						}),
-					},
-				}),
 				n(16715, {	-- Avelii
 					["coord"] = { 48.6, 90.2, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
@@ -357,14 +456,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						3026,    -- Reinforced Bow
 						2504,    -- Worn Shortbow
 					}},
-				}),
-				n(16722, {	-- Egomis <Enchanting Supplies>
-					["coord"] = { 39.9, 40.2, THE_EXODAR },
-					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER CATA
-					["sym"] = { { "sub", "common_recipes_vendor", 1318 } },	-- Jessara Cordell <Enchanting Supplies>
-					-- #endif
-					["groups"] = EGOMIS_GROUPS,
 				}),
 				n(16765, {	-- Ellomin
 					["coord"] = { 73.4, 84.6, THE_EXODAR },
@@ -386,25 +477,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						2533,    -- War Maul
 						2535,    -- War Staff
 					}},
-				}),
-				n(16657, {	-- Feera <Engineering Supplies>
-					["coord"] = { 53.6, 90.8, THE_EXODAR },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(23799, {	-- Schematic: Adamantite Rifle (RECIPE!)
-							["isLimited"] = true,
-						}),
-						applyclassicphase(TBC_PHASE_TWO, i(23815, {	-- Schematic: Adamantite Shell Machine (RECIPE!)
-							["isLimited"] = true,
-							["timeline"] = { REMOVED_4_0_1 },
-						})),
-						i(23816, {	-- Schematic: Fel Iron Toolbox (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(23811, {	-- Schematic: White Smoke Flare (RECIPE!)
-							["isLimited"] = true,
-						}),
-					},
 				}),
 				n(20121, {	-- Fingin
 					["coord"] = { 52.2, 84.6, THE_EXODAR },
@@ -478,24 +550,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						8093,    -- Platemail Leggings
 					}},
 				}),
-				n(16748, {	-- Haferet <Leatherworking Supplies>
-					["coord"] = { 66.6, 73.7, THE_EXODAR },
-					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER CATA
-					["sym"] = { { "sub", "common_recipes_vendor", 3366 } },	-- Tamar <Leatherworking Supplies>
-					-- #endif
-					["groups"] = {
-						i(25726, {	-- Pattern: Comfortable Insoles (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(25720, {	-- Pattern: Heavy Knothide Leather
-							["timeline"] = { REMOVED_3_2_0},
-							["requireSkill"] = LEATHERWORKING,
-							["isLimited"] = true,
-							["f"] = RECIPES,
-						}),
-					},
-				}),
 				n(16766, {	-- Issca <Tabard Vendor>
 					["coord"] = { 53.8, 67.2, THE_EXODAR },
 					["sym"] = { { "sub", "common_vendor", 5193 } },	-- Rebecca Laughlin <Tabard Designer>
@@ -561,21 +615,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						2511,    -- Hunter's Boomstick
 					}},
 				}),
-				n(16767, {	-- Neii <Tailoring Supplies>
-					["coord"] = { 64.7, 68.5, THE_EXODAR },
-					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER CATA
-					["sym"] = { { "sub", "common_recipes_vendor", 3364 } },	-- Borya <Tailoring Supplies>
-					-- #endif
-					["groups"] = {
-						i(21892),	-- Pattern: Bolt of Imbued Netherweave (RECIPE!)
-						i(21894, {	-- Pattern: Bolt of Soulcloth (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(21896),	-- Pattern: Netherweave Robe (RECIPE!)
-						i(21897),	-- Pattern: Netherweave Tunic (RECIPE!)
-					},
-				}),
 				n(16632, {	-- Oss
 					["coord"] = { 46.8, 60.4, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
@@ -590,11 +629,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						5208,    -- Smoldering Wand
 					}},
 				}),
-				n(16718, {	-- Phea <Cooking Supplies>
-					["coord"] = { 54.4, 26.3, THE_EXODAR },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = PHEA_GROUPS,
-				}),
 				n(21019, {	-- Sixx <Moth Keeper>
 					["coord"] = { 30.1, 33.8, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
@@ -602,16 +636,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						i(29901),	-- Blue Moth (PET!)
 						i(29904),	-- White Moth (PET!)
 						i(29903),	-- Yellow Moth (PET!)
-					},
-				}),
-				n(30716, {	-- Thoth <Inscription Trainer>
-					["coord"] = { 40.5, 39.8, THE_EXODAR },
-					["timeline"] = { ADDED_3_0_2 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(137789, {	-- Technique: Songs of the Legion (RECIPE!)
-							["timeline"] = { ADDED_7_0_3 },
-						}),
 					},
 				}),
 				n(17584, {	-- Torallius the Pack Handler <Elekk Breeder>

@@ -100,6 +100,7 @@ local GeneralSettingsBase = {
 		["Window:BackgroundColor"] = { r = 0, g = 0, b = 0, a = 1 },
 		["Window:BorderColor"] = { r = 1, g = 1, b = 1, a = 1 },
 		["Window:UseClassForBorder"] = false,
+		["PresetRestore"] = {},
 	},
 };
 local FilterSettingsBase = {

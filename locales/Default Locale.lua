@@ -664,6 +664,8 @@ local L = setmetatable({
 	PRESET_SOLO = "Solo Mode disables all account-wide tracking, and will only show progress for your current character.";
 	PRESET_UNIQUE = "Unique Mode disables Sources, marking gear as collected when you have learned their unique appearance.";
 	PRESET_COMP = "Completionist Mode enables Sources, only marking gear as collected when you have learned the appearance from that specific item.";
+	PRESET_RESTORE = "Restore";
+	PRESET_RESTORE_TOOLTIP = "Restore your tracking options to before applying any presets.";
 
 	EXTRA_THINGS_LABEL = "Additional Resources";	-- unused
 

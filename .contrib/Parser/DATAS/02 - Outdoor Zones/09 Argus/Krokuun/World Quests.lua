@@ -12,7 +12,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			q(47496),	-- Bunker Buster
 			q(47624, {	-- Bury It
 				["g"] = {
-					i(151061),	-- Chewed Eredar Bones (QI!)
+					o(271114, {	-- Eredar Bones
+						i(151061),	-- Chewed Eredar Bones (QI!)
+					}),
 				},
 			}),
 			q(48511, {	-- Commander Endaxis

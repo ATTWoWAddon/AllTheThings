@@ -88,6 +88,90 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if AFTER 4.0.1.12984
 			n(PROFESSIONS, {
+				prof(ALCHEMY, {
+					n(4610, {	-- Algernon <Alchemy Supplies>
+						["coord"] = { 51.8, 74.6, UNDERCITY },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(9301, {	-- Recipe: Elixir of Shadow Power (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(13477, {	-- Recipe: Superior Mana Potion (RECIPE!)
+								["timeline"] = { REMOVED_2_0_1 },	-- Now taught by trainer, recipe removed from the game.
+							}),
+						},
+					}),
+				}),
+				prof(BLACKSMITHING, {
+					n(4597, {	-- Samuel Van Brunt <Blacksmithing Supplies>
+						["sym"] = { {"sub", "common_recipes_vendor", 3356 } },	-- Sumi <Blacksmithing Supplies>
+						["coord"] = { 61.4, 30.1, UNDERCITY },
+						["races"] = HORDE_ONLY,
+					}),
+				}),
+				prof(COOKING, {
+					n(4574, {	-- Lizbeth Cromwell <Fishing Supplies> [TBC+] / Lizbeth Cromwell <Fishing Supplier>
+						["coord"] = { 81.0, 30.8, UNDERCITY },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
+							i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
+							i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+							i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
+						},
+					}),
+					n(4553, {	-- Ronald Burch <Cooking Supplies> [TBC+] / Ronald Burch <Cooking Supplier>
+						["coord"] = { 62.3, 43.1, UNDERCITY },
+						-- #if AFTER CATA
+						["sym"] = {{"sub", "common_recipes_vendor", 49737}},	-- Shazdar <Sous Chef>
+						-- #endif
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+							i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+						},
+					}),
+				}),
+				prof(ENCHANTING, {
+					n(4561, {	-- Daniel Bartlett <Trade Supplies> [TBC+] / Daniel Bartlett <General Trade Supplier>
+						["coord"] = { 64.0, 37.4, UNDERCITY },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(16217, {	-- Formula: Enchant Shield - Greater Stamina (RECIPE!)
+								["isLimited"] = true,
+							}),
+						},
+					}),
+					n(4617, {	-- Thaddeus Webb <Enchanting Supplies>
+						["sym"] = { {"sub", "common_recipes_vendor", 3346 } },	-- Kithas <Enchanting Supplies>
+						["coord"] = { 62.0, 60.8, UNDERCITY },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							-- #if BEFORE CATA
+							i(6342, {	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
+								["isLimited"] = true,
+							}),
+							-- #endif
+							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
+							i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
+							i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
+						},
+					}),
+				}),
+				prof(ENGINEERING, {
+					n(4587, {	-- Elizabeth Van Talen <Engineering Supplies>
+						["coords"] = {
+							{ 75.5, 74.3, UNDERCITY },
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(4400),	-- Heavy Stock
+							i(4399),	-- Wooden Stock
+						},
+					}),
+				}),
 				prof(FISHING, {
 					i(67414, {	-- Bag of Shiny Things
 						["provider"] = { "n", 4573 },	-- Armand Cromwell
@@ -119,6 +203,80 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							i(67388, {	-- String of Alligator Teeth
 								["timeline"] = { ADDED_4_0_1 },
 							}),
+						},
+					}),
+				}),
+				prof(JEWELCRAFTING, {
+					n(4561, {	-- Daniel Bartlett <Trade Supplies> [TBC+] / Daniel Bartlett <General Trade Supplier>
+						["coord"] = { 64.0, 37.4, UNDERCITY },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(20854, {	-- Design: Amulet of the Moon (RECIPE!)
+								["timeline"] = { ADDED_2_0_1 },
+								["isLimited"] = true,
+							}),
+						},
+					}),
+					n(4775, {	-- Felicia Doan <Trade Supplies>
+						["coord"] = { 64.1, 50.6, UNDERCITY },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(20975, {	-- Design: The Jade Eye (RECIPE!)
+								["timeline"] = { ADDED_2_0_1 },
+								["isLimited"] = true,
+							}),
+						},
+					}),
+					n(52588, {	-- Sara Lanner <Jewelcrafting Supplies>
+						["sym"] = { {"sub", "common_recipes_vendor", 50482 } },	-- Marith Lazuria <Jewelcrafting Supplies>
+						["coord"] = { 56.2, 36.6, UNDERCITY },
+						["timeline"] = { ADDED_4_1_0 },
+						["races"] = HORDE_ONLY,
+					}),
+				}),
+				prof(LEATHERWORKING, {
+					n(4589, {	-- Joseph Moore <Leatherworking Supplies>
+						["sym"] = { {"sub", "common_recipes_vendor", 3366 } },	-- Tamar <Leatherworking Supplies>
+						["coord"] = { 70.1, 58.4, UNDERCITY },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(18949, {	-- Pattern: Barbaric Bracers (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(7451, {	-- Pattern: Green Whelp Bracers (RECIPE!)
+								["isLimited"] = true,
+							}),
+						},
+					}),
+				}),
+				prof(TAILORING, {
+					n(4577, {	-- Millie Gregorian <Tailoring Supplies>
+						["sym"] = { {"sub", "common_recipes_vendor", 3364 } },	-- Borya <Tailoring Supplies>
+						["coord"] = { 70.6, 30.1, UNDERCITY },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(6275, {	-- Pattern: Greater Adept's Robe (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(10326, {	-- Pattern: Tuxedo Jacket (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(10323, {	-- Pattern: Tuxedo Pants (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(10321, {	-- Pattern: Tuxedo Shirt (RECIPE!)
+								["isLimited"] = true,
+							}),
+						},
+					}),
+					n(4617, {	-- Thaddeus Webb <Enchanting Supplies>
+						["coord"] = { 62.0, 60.8, UNDERCITY },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 						},
 					}),
 				}),
@@ -1478,18 +1636,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				n(4610, {	-- Algernon <Alchemy Supplies>
-					["coord"] = { 51.8, 74.6, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(9301, {	-- Recipe: Elixir of Shadow Power (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(13477, {	-- Recipe: Superior Mana Potion (RECIPE!)
-							["timeline"] = { REMOVED_2_0_1 },	-- Now taught by trainer, recipe removed from the game.
-						}),
-					},
-				}),
 				n(4602, {	-- Benijah Fenner
 					["coord"] = { 58.6, 32.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
@@ -1571,19 +1717,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2208,	-- Poniad
 						2027,	-- Scimitar
 					}},
-				}),
-				n(4561, {	-- Daniel Bartlett <Trade Supplies> [TBC+] / Daniel Bartlett <General Trade Supplier>
-					["coord"] = { 64.0, 37.4, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(20854, {	-- Design: Amulet of the Moon (RECIPE!)
-							["timeline"] = { ADDED_2_0_1 },
-							["isLimited"] = true,
-						}),
-						i(16217, {	-- Formula: Enchant Shield - Greater Stamina (RECIPE!)
-							["isLimited"] = true,
-						}),
-					},
 				}),
 				-- #if AFTER 6.1.0
 				n(6566, {	-- Estelle Gendry <Heirloom "Curator">
@@ -1757,16 +1890,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						4565,	-- Simple Dagger
 					}},
 				}),
-				n(4775, {	-- Felicia Doan <Trade Supplies>
-					["coord"] = { 64.1, 50.6, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(20975, {	-- Design: The Jade Eye (RECIPE!)
-							["timeline"] = { ADDED_2_0_1 },
-							["isLimited"] = true,
-						}),
-					},
-				}),
 				n(4601, {	-- Francis Eliot
 					["coord"] = { 58.6, 32.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
@@ -1876,19 +1999,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				n(4589, {	-- Joseph Moore <Leatherworking Supplies>
-					["sym"] = { {"sub", "common_recipes_vendor", 3366 } },	-- Tamar <Leatherworking Supplies>
-					["coord"] = { 70.1, 58.4, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(18949, {	-- Pattern: Barbaric Bracers (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(7451, {	-- Pattern: Green Whelp Bracers (RECIPE!)
-							["isLimited"] = true,
-						}),
-					},
-				}),
 				n(4558, {	-- Lauren Newcomb <Light Armor Merchant>
 					["coord"] = { 64.0, 38.0, UNDERCITY },
 					["races"] = HORDE_ONLY,
@@ -1936,16 +2046,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(193),	-- Tattered Cloth Vest
 					},
 				}),
-				n(4574, {	-- Lizbeth Cromwell <Fishing Supplies> [TBC+] / Lizbeth Cromwell <Fishing Supplier>
-					["coord"] = { 81.0, 30.8, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
-						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
-						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
-						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
-					},
-				}),
 				n(4557, {	-- Louis Warren
 					["coord"] = { 62.0, 41.2, UNDERCITY },
 					["races"] = HORDE_ONLY,
@@ -1988,28 +2088,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = { {"sub", "common_vendor", 5188 } },	-- Garyl <Tabard Vendor>
 					["coord"] = { 69.3, 44.8, UNDERCITY },
 					["races"] = HORDE_ONLY,
-				}),
-				n(4577, {	-- Millie Gregorian <Tailoring Supplies>
-					["sym"] = { {"sub", "common_recipes_vendor", 3364 } },	-- Borya <Tailoring Supplies>
-					["coord"] = { 70.6, 30.1, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(6275, {	-- Pattern: Greater Adept's Robe (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(10326, {	-- Pattern: Tuxedo Jacket (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(10323, {	-- Pattern: Tuxedo Pants (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(10321, {	-- Pattern: Tuxedo Shirt (RECIPE!)
-							["isLimited"] = true,
-						}),
-					},
 				}),
 				n(5819, {	-- Mirelle Tremayne
 					["coord"] = { 61.6, 28.4, UNDERCITY },
@@ -2088,30 +2166,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2509,	-- Ornate Blunderbuss
 						2510,	-- Solid Blunderbuss
 					}},
-				}),
-				n(4553, {	-- Ronald Burch <Cooking Supplies> [TBC+] / Ronald Burch <Cooking Supplier>
-					["coord"] = { 62.3, 43.1, UNDERCITY },
-					-- #if AFTER CATA
-					["sym"] = {{"sub", "common_recipes_vendor", 49737}},	-- Shazdar <Sous Chef>
-					-- #endif
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
-						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
-						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-					},
-				}),
-				n(4597, {	-- Samuel Van Brunt <Blacksmithing Supplies>
-					["sym"] = { {"sub", "common_recipes_vendor", 3356 } },	-- Sumi <Blacksmithing Supplies>
-					["coord"] = { 61.4, 30.1, UNDERCITY },
-					["races"] = HORDE_ONLY,
-				}),
-				n(52588, {	-- Sara Lanner <Jewelcrafting Supplies>
-					["sym"] = { {"sub", "common_recipes_vendor", 50482 } },	-- Marith Lazuria <Jewelcrafting Supplies>
-					["coord"] = { 56.2, 36.6, UNDERCITY },
-					["timeline"] = { ADDED_4_1_0 },
-					["races"] = HORDE_ONLY,
 				}),
 				n(5821, {	-- Sheldon Von Croy <Cloth Armor Merchant>
 					["coord"] = { 70.6, 28.8, UNDERCITY },
@@ -2193,22 +2247,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(2391),	-- Rusted Chain Gloves
 						i(2388),	-- Rusted Chain Leggings
 						i(2386),	-- Rusted Chain Vest
-					},
-				}),
-				n(4617, {	-- Thaddeus Webb <Enchanting Supplies>
-					["sym"] = { {"sub", "common_recipes_vendor", 3346 } },	-- Kithas <Enchanting Supplies>
-					["coord"] = { 62.0, 60.8, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						-- #if BEFORE CATA
-						i(6342, {	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-							["isLimited"] = true,
-						}),
-						-- #endif
-						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 					},
 				}),
 				n(4560, {	-- Walter Ellingson

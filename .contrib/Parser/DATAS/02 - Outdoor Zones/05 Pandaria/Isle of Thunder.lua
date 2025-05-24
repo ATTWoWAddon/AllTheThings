@@ -1102,7 +1102,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["time
 			}),
 			n(ZONE_DROPS, {
 				q(32626),	-- Loot Room Key Tracking Quest — triggers when looting "Key to the Palace of Lei Shen"
-				q(32611),	-- Rare Drop Tracking Quest — tracks whether you have looted an Incantation for this week
+				q(32611, {["isWeekly"]=true}),	-- Rare Drop Tracking Quest — tracks whether you have looted an Incantation for this week
 			}),
 		}),
 	}),

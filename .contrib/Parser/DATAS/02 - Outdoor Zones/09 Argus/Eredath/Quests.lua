@@ -235,6 +235,10 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			q(48445, {	-- The Ruins of Oronaar
 				["provider"] = { "n", 121230 },	-- Alleria Windrunner
 				["sourceQuests"] = { 48443 },	-- Supplying Krokuun
+				["coords"] = {
+					{ 45.5, 24.6, THE_VINDICAAR_EREDATH_UPPER },
+					{ 38.8, 25.6, THE_VINDICAAR_KROKUUN_UPPER },
+				},
 			}),
 			q(47218, {	-- The Shadowguard Incursion
 				["sourceQuests"] = { 47203 },	-- Throwing Shade

@@ -131,6 +131,42 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(PROFESSIONS, {
 				prof(ALCHEMY, {
+					n(3335, {	-- Hagrus <Reagents>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 45.6, 39.0, 86 },	-- The Drag
+							-- #else
+							{ 46.2, 46.6, ORGRIMMAR },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(5643, {	-- Recipe: Great Rage Potion (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(5640, {	-- Recipe: Rage Potion (RECIPE!)
+								["isLimited"] = true,
+							}),
+						},
+					}),
+					n(3348, {	-- Kor'geld <Alchemy Supplies>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 55.6, 45.4, ORGRIMMAR },
+							-- #else
+							{ 56.2, 34.2, ORGRIMMAR },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(13478, {	-- Recipe: Elixir of Superior Defense (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(5642, {	-- Recipe: Free Action Potion (RECIPE!)
+								["isLimited"] = true,
+							}),
+						},
+					}),
 					n(3347, {	-- Yelmak <Alchemy Trainer>
 						["coord"] = { 55.6, 46.6, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
@@ -154,6 +190,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["races"] = HORDE_ONLY,
 						["groups"] = CLASSIC_ARMORSMITHING,
 					}),
+					n(46359, {	-- Punra <Blacksmithing Supplies>
+						["coord"] = { 45.0, 77.6, ORGRIMMAR },
+						["timeline"] = { ADDED_4_0_1 },
+						["sym"] = {
+							{"sub", "common_recipes_vendor", 3356},	-- Sumi <Blacksmithing Supplies>
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
+								["isLimited"] = true,
+							}),
+						},
+					}),
 					n(3355, {	-- Saru Steelfury <Blacksmithing Trainer>
 						["coord"] = { 76.4, 34.4, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
@@ -165,8 +214,130 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						),
 					}),
+					n(3356, {	-- Sumi <Blacksmithing Supplies>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 75.8, 35.2, ORGRIMMAR },
+							-- #else
+							{ 82.4, 23.8, ORGRIMMAR },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
+							i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
+								["isLimited"] = true,
+							}),
+						}),
+					}),
+					n(45549, {	-- Zido Helmbreaker <Blacksmithing Supplies>
+						["coord"] = { 36.2, 83.2, ORGRIMMAR },
+						["timeline"] = { ADDED_4_0_1, REMOVED_9_0_1 },
+						["sym"] = {
+							{"sub", "common_recipes_vendor", 3356},	-- Sumi <Blacksmithing Supplies>
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
+								["isLimited"] = true,
+							}),
+						},
+					}),
 				}),
 				prof(COOKING, {
+					n(133261, {	-- Feng Su <Cooking Trainer>
+						["coord"] = { 41.0, 79.4, ORGRIMMAR },
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+						},
+					}),
+					n(45551, {	-- Karizi Porkpatty <Cooking Supplies>
+						["coord"] = { 39.0, 85.6, ORGRIMMAR },
+						["timeline"] = { ADDED_4_0_1 },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+						},
+					}),
+					n(3333, {	-- Shankys <Fishing Supplies>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 70.0, 29.4, ORGRIMMAR },
+							-- #else
+							{ 66.6, 41.6, ORGRIMMAR },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+							i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+							i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
+						},
+					}),
+					n(49737, {	-- Shazdar <Sous Chef>
+						["coord"] = { 56.8, 62.6, ORGRIMMAR },
+						["timeline"] = { ADDED_4_0_3 },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							chefsaward(3, i(65426)),	-- Recipe: Baked Rockfish (RECIPE!)
+							chefsaward(3, i(65427)),	-- Recipe: Basilisk Liverdog (RECIPE!)
+							chefsaward(3, i(65429)),	-- Recipe: Beer-Basted Crocolisk (RECIPE!)
+							chefsaward(3, i(65424)),	-- Recipe: Blackbelly Sushi (RECIPE!)
+							chefsaward(3, i(65411)),	-- Recipe: Broiled Mountain Trout (RECIPE!)
+							chefsaward(3, i(65431)),	-- Recipe: Chocolate Cookie (RECIPE!)
+							chefsaward(3, i(65430)),	-- Recipe: Crocolisk Au Gratin (RECIPE!)
+							chefsaward(3, i(65422)),	-- Recipe: Delicious Sagefish Tail (RECIPE!)
+							chefsaward(3, i(65408)),	-- Recipe: Feathered Lure (RECIPE!)
+							chefsaward(3, i(65423)),	-- Recipe: Fish Fry (RECIPE!)
+							chefsaward(5, i(65432)),	-- Recipe: Fortune Cookie (RECIPE!)
+							chefsaward(3, i(65428)),	-- Recipe: Grilled Dragon (RECIPE!)
+							chefsaward(3, i(65418)),	-- Recipe: Hearty Seafood Soup (RECIPE!)
+							chefsaward(3, i(65415)),	-- Recipe: Highland Spirits (RECIPE!)
+							chefsaward(3, i(65407)),	-- Recipe: Lavascale Fillet (RECIPE!)
+							chefsaward(3, i(65409)),	-- Recipe: Lavascale Minestrone (RECIPE!)
+							chefsaward(3, i(65412)),	-- Recipe: Lightly Fried Lurker (RECIPE!)
+							chefsaward(3, i(65416)),	-- Recipe: Lurker Lunch (RECIPE!)
+							chefsaward(3, i(65420)),	-- Recipe: Mushroom Sauce Mudfish (RECIPE!)
+							chefsaward(3, i(65417)),	-- Recipe: Pickled Guppy (RECIPE!)
+							chefsaward(3, i(65410)),	-- Recipe: Salted Eye (RECIPE!)
+							chefsaward(3, i(68688, {	-- Recipe: Scalding Murglesnout (RECIPE!)
+								["timeline"] = { ADDED_4_0_6 },
+							})),
+							chefsaward(3, i(65413)),	-- Recipe: Seasoned Crab (RECIPE!)
+							chefsaward(3, i(65421)),	-- Recipe: Severed Sagefish Head (RECIPE!)
+							chefsaward(3, i(65425)),	-- Recipe: Skewered Eel (RECIPE!)
+							chefsaward(5, i(65433)),	-- Recipe: South Island Iced Tea (RECIPE!)
+							chefsaward(3, i(65414)),	-- Recipe: Starfire Espresso (RECIPE!)
+							chefsaward(3, i(65419)),	-- Recipe: Tender Baked Turtle (RECIPE!)
+							chefsaward(3, i(65406)),	-- Recipe: Whitecrest Gumbo (RECIPE!)
+						},
+					}),
+					n(46708, {	-- Suja <Cooking Supplies>
+						["coord"] = { 56.6, 61.2, ORGRIMMAR },
+						["timeline"] = { ADDED_4_0_1 },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+						},
+					}),
+					n(3400, {	-- Xen'to <Cooking Supplies>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 32.6, 68.6, ORGRIMMAR },
+							-- #else
+							{ 57.6, 53.2, ORGRIMMAR },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+						},
+					}),
 					n(3399, bubbleDownSelf({ ["timeline"] = { ADDED_1_11_1 }, }, {	-- Zamja <Cooking Trainer>
 						["coord"] = { 32.2, 69.6, ORGRIMMAR },
 						["races"] = HORDE_ONLY,
@@ -191,6 +362,37 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						),
 					}),
+					n(3346, {	-- Kithas <Enchanting Supplies>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 53.2, 48.8, ORGRIMMAR },
+							-- #else
+							{ 53.6, 38.0, ORGRIMMAR },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
+							i(67308, {	-- Formula: Enchanted Lantern (RECIPE!)
+								["races"] = HORDE_ONLY,
+								["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
+								["timeline"] = { ADDED_4_0_3 },
+							}),
+							i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(6346, {	-- Formula: Enchant Chest - Lesser Mana (RECIPE!)
+								["isLimited"] = true,
+							}),
+							-- #if BEFORE CATA
+							i(6342, {	-- Formula: Enchant Chest - Minor Mana
+								["isLimited"] = true,
+							}),
+							-- #endif
+							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
+							i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
+							i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
+						}),
+					}),
 				}),
 				prof(ENGINEERING, {
 					n(11017, {	-- Roxxik <Engineering Trainer>
@@ -203,6 +405,55 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							{}
 							-- #endif
 						),
+					}),
+					n(3413, {	-- Sovik <Engineering Supplies>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 56.0, 56.0, ORGRIMMAR },
+							-- #else
+							{ 75.6, 25.2, ORGRIMMAR },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(39684, { ["timeline"] = { ADDED_3_0_2 }}),	-- Hair Trigger
+							i(4400),	-- Heavy Stock
+							i(18647, {	-- Schematic: Red Firework (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(16041, {	-- Schematic: Thorium Grenade (RECIPE!)
+								["timeline"] = { REMOVED_3_0_2 },	-- Now taught by trainer, schematic removed from the game.
+								-- #if BEFORE 3.0.2
+								["isLimited"] = true,
+								-- #endif
+							}),
+							i(16042, {	-- Schematic: Thorium Widget (RECIPE!)
+								["timeline"] = { REMOVED_3_0_2 },	-- Now taught by trainer, schematic removed from the game.
+								-- #if BEFORE 3.0.2
+								["isLimited"] = true,
+								-- #endif
+							}),
+							i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
+								["timeline"] = { CREATED_1_12_1, ADDED_2_3_0 },
+								["isLimited"] = true,
+							}),
+							i(40533, { ["timeline"] = { ADDED_3_0_2 }}),	-- Walnut Stock
+							i(4399),	-- Wooden Stock
+						},
+					}),
+					n(133127, {	-- Thaluriel <Engineering Supplies>
+						["coord"] = { 36.8, 84.6, ORGRIMMAR },
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(18647, {	-- Schematic: Red Firework (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
+								["timeline"] = { CREATED_1_12_1, ADDED_2_3_0 },
+								["isLimited"] = true,
+							}),
+						},
 					}),
 				}),
 				prof(FIRST_AID, {
@@ -317,7 +568,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						),
 					}),
 				}),
-				-- #if AFTER WRATH
 				prof(INSCRIPTION, {
 					n(30706, {	-- Jo'mah <Inscription Trainer>
 						["coord"] = { 35.6, 69.2, ORGRIMMAR },
@@ -325,10 +575,68 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["races"] = HORDE_ONLY,
 						["groups"] = CLASSIC_INSCRIPTION,
 					}),
+					n(46716, {	-- Nerog <Inscription Trainer>
+						["coord"] = { 55.2, 55.8, ORGRIMMAR },
+						["timeline"] = { ADDED_4_0_1 },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(140565, {	-- Technique: Songs of the Horde
+								["timeline"] = { ADDED_7_0_3 },
+							}),
+						},
+					}),
 				}),
-				-- #endif
-				-- #if AFTER CATA
 				prof(JEWELCRAFTING, {
+					n(3367, {	-- Felika <Trade Supplies>
+						["description"] = "This NPC walks between the Valley of Wisdom and Valley of Strength on the right path.",
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 48.4, 47.8, ORGRIMMAR },
+							{ 52.6, 64.6, ORGRIMMAR },
+							-- #else
+							{ 46.5, 36.6, ORGRIMMAR },
+							{ 50.8, 58.7, ORGRIMMAR },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(20856, {	-- Design: Heavy Golden Necklace of Battle
+								["timeline"] = { ADDED_2_0_1 },
+								["isLimited"] = true,
+							}),
+						},
+					}),
+					n(34043, {	-- Lady Palanseer <Jewelcrafting Quartermaster>
+						["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
+						["races"] = HORDE_ONLY,
+						["groups"] = pvp({
+							-- #if BEFORE 4.0.3
+							-- Moves to Tiffany in Dalaran
+							i(41563),	-- Design: Durable Huge Citrine [WRATH] / Design: Willful Huge Citrine [CATA+]
+							-- #endif
+							i(41564, {	-- Design: Empowered Huge Citrine [WRATH] / Design: Lucent Huge Citrine [CATA+]
+								["timeline"] = { REMOVED_4_0_3 },
+							}),
+							-- #if BEFORE 4.0.3
+							-- These move to Tiffany in Dalaran
+							i(41565),	-- Design: Lucent Huge Citrine
+							i(41575),	-- Design: Mysterious Shadow Crystal
+							i(41559),	-- Design: Mystic Sun Crystal
+							-- #endif
+							i(41573, {	-- Design: Opaque Dark Jade [WRATH] / Design: Turbid Dark Jade [CATA+]
+								["timeline"] = { REMOVED_4_0_3 },
+							}),
+							-- #if BEFORE 4.0.3
+							-- These move to Tiffany in Dalaran
+							i(41566),	-- Design: Resplendent Huge Citrine
+							i(41569),	-- Design: Shattered Dark Jade
+							i(41572),	-- Design: Steady Dark Jade
+							i(41560),	-- Design: Stormy Chalcedony
+							i(41570),	-- Design: Radiant Dark Jade [CATA+] / Design: Tense Dark Jade [WRATH]
+							i(41571),	-- Design: Turbid Dark Jade
+							-- #endif
+						}),
+					}),
 					n(46675, {	-- Lugrah <Jewelcrafting Trainer>
 						["coord"] = { 72.5, 34.3, ORGRIMMAR },
 						["timeline"] = { ADDED_4_0_1 },
@@ -339,8 +647,231 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							}),
 						},
 					}),
+					n(50482, {	-- Marith Lazuria <Jewelcrafting Supplies>
+						["coord"] = { 72.4, 34.6, ORGRIMMAR },
+						["timeline"] = { ADDED_4_0_3 },
+						["races"] = HORDE_ONLY,
+						["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
+					}),
+					applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, n(57922, {	-- Taryssa Lazuria <Jewelcrafting Supplies>
+						["coord"] = { 72.4, 34.6, ORGRIMMAR },
+						["timeline"] = { ADDED_4_3_0 },
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							currency(361, {	-- Illustrious Jewelcrafter's Token
+								["cost"] = { { "i", 204356, 10 }, },	-- 10x Illustrious Gemdust
+								["timeline"] = { ADDED_10_0_7 },
+							}),
+							i(71928, {	-- Design: Accurate Shadow Spinel
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71917, {	-- Design: Adept Lava Coral
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71919, {	-- Design: Artful Lava Coral
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71893, {	-- Design: Balanced Elven Peridot
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71943, {	-- Design: Bold Queen's Garnet
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71941, {	-- Design: Brilliant Queen's Garnet
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71912, {	-- Design: Champion's Lava Coral
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71906, {	-- Design: Crafty Lava Coral
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71905, {	-- Design: Deadly Lava Coral
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71937, {	-- Design: Defender's Shadow Spinel
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71913, {	-- Design: Deft Lava Coral
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71939, {	-- Design: Delicate Queen's Garnet
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71898, {	-- Design: Energized Elven Peridot
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71931, {	-- Design: Etched Shadow Spinel
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71916, {	-- Design: Fierce Lava Coral
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71920, {	-- Design: Fine Lava Coral
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71942, {	-- Design: Flashing Queen's Garnet
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71901, {	-- Design: Forceful Elven Peridot
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71947, {	-- Design: Fractured Lightstone
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71927, {	-- Design: Glinting Shadow Spinel
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71935, {	-- Design: Guardian's Shadow Spinel
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71891, {	-- Design: Infused Elven Peridot
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71908, {	-- Design: Inscribed Lava Coral
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71899, {	-- Design: Jagged Elven Peridot
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71918, {	-- Design: Keen Lava Coral
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71889, {	-- Design: Lightning Elven Peridot
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71922, {	-- Design: Lucent Lava Coral
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71887, {	-- Design: Misty Elven Peridot
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71932, {	-- Design: Mysterious Shadow Spinel
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71948, {	-- Design: Mystic Lightstone
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71902, {	-- Design: Nimble Elven Peridot
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71888, {	-- Design: Piercing Elven Peridot
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71909, {	-- Design: Polished Lava Coral
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71907, {	-- Design: Potent Lava Coral
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71940, {	-- Design: Precise Queen's Garnet
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71903, {	-- Design: Puissant Elven Peridot
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71933, {	-- Design: Purified Shadow Spinel
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71946, {	-- Design: Quick Lightstone
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71896, {	-- Design: Radiant Elven Peridot
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71915, {	-- Design: Reckless Lava Coral
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71900, {	-- Design: Regal Elven Peridot
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71910, {	-- Design: Resolute Lava Coral
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71926, {	-- Design: Resplendent Lava Coral
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71930, {	-- Design: Retaliating Shadow Spinel
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71821, {	-- Design: Rigid Deepholm Iolite
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71890, {	-- Design: Sensei's Elven Peridot
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71897, {	-- Design: Shattered Elven Peridot
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71934, {	-- Design: Shifting Shadow Spinel
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71921, {	-- Design: Skillful Lava Coral
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71944, {	-- Design: Smooth Lightstone
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71886, {	-- Design: Solid Deepholm Iolite
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71938, {	-- Design: Sovereign Shadow Spinel
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71885, {	-- Design: Sparkling Deepholm Iolite
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71925, {	-- Design: Splendid Lava Coral
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71911, {	-- Design: Stalwart Lava Coral
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71904, {	-- Design: Steady Elven Peridot
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71884, {	-- Design: Stormy Deepholm Iolite
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71945, {	-- Design: Subtle Lightstone
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71923, {	-- Design: Tenuous Lava Coral
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71936, {	-- Design: Timeless Shadow Spinel
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71895, {	-- Design: Turbid Elven Peridot
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71929, {	-- Design: Veiled Shadow Spinel
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71894, {	-- Design: Vivid Elven Peridot
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71914, {	-- Design: Wicked Lava Coral
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71924, {	-- Design: Willful Lava Coral
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71892, {	-- Design: Zen Elven Peridot
+								["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
+							}),
+							i(71949, {	-- Tome of Burning Jewels
+								["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
+								["filterID"] = CONSUMABLES,
+								["sym"] = {
+									{"select","creatureID",57922},{"pop"},	-- this NPC
+									{"not","itemID",71949},				-- not this item
+									{"isnt","currencyID"},	-- no currencies
+								},
+							}),
+						},
+					})),
 				}),
-				-- #endif
 				prof(LEATHERWORKING, {
 					n(3365, {	-- Karolek <Leatherworking Trainer>
 						["coords"] = {
@@ -352,6 +883,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 						["races"] = HORDE_ONLY,
 						["groups"] = CLASSIC_CATA_LEGION_LEATHERWORKING,
+					}),
+					n(3366, {	-- Tamar <Leatherworking Supplies>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 60.6, 54.4, ORGRIMMAR },
+							-- #else
+							{ 63.0, 45.2, ORGRIMMAR },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {
+							i(18731, {	-- Pattern: Heavy Leather Ball (RECIPE!)
+								["isLimited"] = true,
+							}),
+						}),
 					}),
 				}),
 				prof(MINING, {
@@ -378,6 +924,113 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							{}
 							-- #endif
 						),
+					}),
+				}),
+				prof(TAILORING, {
+					n(3364, {	-- Borya <Tailoring Supplies>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 60.6, 58.6, ORGRIMMAR },
+							-- #else
+							{ 63.0, 51.2, ORGRIMMAR },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {
+							i(6270, {	-- Pattern: Blue Linen Vest
+								["isLimited"] = true,
+							}),
+							i(6274, {	-- Pattern: Blue Overalls
+								["isLimited"] = true,
+							}),
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_ONE, i(215369)),	-- Pattern: Invoker's Cord
+							applyclassicphase(SOD_PHASE_ONE, i(215370)),	-- Pattern: Invoker's Mantle
+							-- #endif
+							i(10314, {	-- Pattern: Lavender Mageweave Shirt
+								["isLimited"] = true,
+							}),
+							i(10317, {	-- Pattern: Pink Mageweave Shirt
+								["isLimited"] = true,
+							}),
+							i(5772, {	-- Pattern: Red Woolen Bag
+								["isLimited"] = true,
+							}),
+						}),
+					}),
+					n(3346, {	-- Kithas <Enchanting Supplies>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 53.2, 48.8, ORGRIMMAR },
+							-- #else
+							{ 53.6, 38.0, ORGRIMMAR },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(22307),	-- Pattern: Enchanted Mageweave Pouch
+						},
+					}),
+					n(133239, {	-- Leyweaver Aurielle
+						["coord"] = { 38.2, 86.8, ORGRIMMAR },
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["sym"] = {
+							{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
+						},
+						["groups"] = {
+							i(6270, {	-- Pattern: Blue Linen Vest
+								["isLimited"] = true,
+							}),
+							i(6274, {	-- Pattern: Blue Overalls
+								["isLimited"] = true,
+							}),
+							i(10314, {	-- Pattern: Lavender Mageweave Shirt
+								["isLimited"] = true,
+							}),
+							i(10317, {	-- Pattern: Pink Mageweave Shirt
+								["isLimited"] = true,
+							}),
+							i(5772, {	-- Pattern: Red Woolen Bag
+								["isLimited"] = true,
+							}),
+						},
+					}),
+					n(45558, {	-- Lizna Goldweaver <Tailoring Supplies> (removed 7.3.5? when embassy took over)
+						["coord"] = { 41.0, 79.8, ORGRIMMAR },
+						["timeline"] = { ADDED_4_0_1 },
+						-- #if AFTER 7.3.5.25961
+						["description"] = "This NPC is only visible if you have not yet unlocked the allied race Highmountain Tauren.",
+						["OnUpdate"] = [[function(t,parent,defaultUpdate)
+							if _.MODE_DEBUG or (defaultUpdate(t,parent) and not ATTAccountWideData.Achievements[12452]) then
+								t.visible = true;
+							else
+								t.visible = false;
+							end
+							return true;
+						end]],
+						-- #endif
+						["races"] = HORDE_ONLY,
+						["sym"] = {
+							{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
+						},
+						["groups"] = {
+							i(6270, {	-- Pattern: Blue Linen Vest
+								["isLimited"] = true,
+							}),
+							i(6274, {	-- Pattern: Blue Overalls
+								["isLimited"] = true,
+							}),
+							i(10314, {	-- Pattern: Lavender Mageweave Shirt
+								["isLimited"] = true,
+							}),
+							i(10317, {	-- Pattern: Pink Mageweave Shirt
+								["isLimited"] = true,
+							}),
+							i(5772, {	-- Pattern: Red Woolen Bag
+								["isLimited"] = true,
+							}),
+						},
 					}),
 				}),
 			}),
@@ -2304,37 +2957,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 					},
 				}),
-				n(3364, {	-- Borya <Tailoring Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 60.6, 58.6, ORGRIMMAR },
-						-- #else
-						{ 63.0, 51.2, ORGRIMMAR },
-						-- #endif
-					},
-					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {
-						i(6270, {	-- Pattern: Blue Linen Vest
-							["isLimited"] = true,
-						}),
-						i(6274, {	-- Pattern: Blue Overalls
-							["isLimited"] = true,
-						}),
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_ONE, i(215369)),	-- Pattern: Invoker's Cord
-						applyclassicphase(SOD_PHASE_ONE, i(215370)),	-- Pattern: Invoker's Mantle
-						-- #endif
-						i(10314, {	-- Pattern: Lavender Mageweave Shirt
-							["isLimited"] = true,
-						}),
-						i(10317, {	-- Pattern: Pink Mageweave Shirt
-							["isLimited"] = true,
-						}),
-						i(5772, {	-- Pattern: Red Woolen Bag
-							["isLimited"] = true,
-						}),
-					}),
-				}),
 				-- #if NOT ANYCLASSIC
 				-- TODO: Finish this part.
 				n(12793, {	-- Brave Stonehide <Accessories Quartermaster>
@@ -2494,34 +3116,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				-- #endif
-				n(3367, {	-- Felika <Trade Supplies>
-					["description"] = "This NPC walks between the Valley of Wisdom and Valley of Strength on the right path.",
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 48.4, 47.8, ORGRIMMAR },
-						{ 52.6, 64.6, ORGRIMMAR },
-						-- #else
-						{ 46.5, 36.6, ORGRIMMAR },
-						{ 50.8, 58.7, ORGRIMMAR },
-						-- #endif
-					},
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(20856, {	-- Design: Heavy Golden Necklace of Battle
-							["timeline"] = { ADDED_2_0_1 },
-							["isLimited"] = true,
-						}),
-					},
-				}),
-				n(133261, {	-- Feng Su <Cooking Trainer>
-					["coord"] = { 41.0, 79.4, ORGRIMMAR },
-					["timeline"] = { ADDED_7_3_5 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-					},
-				}),
 				-- #if NOT ANYCLASSIC
 				n(12795, {	-- First Sergeant Hola'mahi <Legacy Armor Quartermaster>
 					["coord"] = { 38.2, 72.6, ORGRIMMAR },
@@ -2714,24 +3308,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Sells gear related to Cataclysm raid tier 12 (Firelands) as well as Baradin Hold.",
 					-- #endif
 				}),
-				n(3335, {	-- Hagrus <Reagents>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 45.6, 39.0, 86 },	-- The Drag
-						-- #else
-						{ 46.2, 46.6, ORGRIMMAR },
-						-- #endif
-					},
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(5643, {	-- Recipe: Great Rage Potion (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(5640, {	-- Recipe: Rage Potion (RECIPE!)
-							["isLimited"] = true,
-						}),
-					},
-				}),
 				n(3316, {	-- Handor <Cloth & Leather Armor Merchant>
 					["coords"] = {
 						-- #if AFTER CATA
@@ -2864,15 +3440,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				n(45551, {	-- Karizi Porkpatty <Cooking Supplies>
-					["coord"] = { 39.0, 85.6, ORGRIMMAR },
-					["timeline"] = { ADDED_4_0_1 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-					},
-				}),
 				n(3331, {	-- Kareth
 					["coord"] = { 46.8, 63.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
@@ -2919,38 +3486,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				n(3346, {	-- Kithas <Enchanting Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 53.2, 48.8, ORGRIMMAR },
-						-- #else
-						{ 53.6, 38.0, ORGRIMMAR },
-						-- #endif
-					},
-					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
-						i(67308, {	-- Formula: Enchanted Lantern (RECIPE!)
-							["races"] = HORDE_ONLY,
-							["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(6346, {	-- Formula: Enchant Chest - Lesser Mana (RECIPE!)
-							["isLimited"] = true,
-						}),
-						-- #if BEFORE CATA
-						i(6342, {	-- Formula: Enchant Chest - Minor Mana
-							["isLimited"] = true,
-						}),
-						-- #endif
-						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-					}),
-				}),
 				n(3359, {	-- Kiro <War Harness Maker>
 					["coord"] = { 66.8, 50.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
@@ -2995,53 +3530,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(2026),	-- Rock Hammer
 					},
 				}),
-				n(3348, {	-- Kor'geld <Alchemy Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 55.6, 45.4, ORGRIMMAR },
-						-- #else
-						{ 56.2, 34.2, ORGRIMMAR },
-						-- #endif
-					},
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(13478, {	-- Recipe: Elixir of Superior Defense (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(5642, {	-- Recipe: Free Action Potion (RECIPE!)
-							["isLimited"] = true,
-						}),
-					},
-				}),
 				n(34043, {	-- Lady Palanseer <Jewelcrafting Quartermaster>
 					["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = pvp({
-						-- #if BEFORE 4.0.3
-						-- Moves to Tiffany in Dalaran
-						i(41563),	-- Design: Durable Huge Citrine [WRATH] / Design: Willful Huge Citrine [CATA+]
-						-- #endif
-						i(41564, {	-- Design: Empowered Huge Citrine [WRATH] / Design: Lucent Huge Citrine [CATA+]
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						-- #if BEFORE 4.0.3
-						-- These move to Tiffany in Dalaran
-						i(41565),	-- Design: Lucent Huge Citrine
-						i(41575),	-- Design: Mysterious Shadow Crystal
-						i(41559),	-- Design: Mystic Sun Crystal
-						-- #endif
-						i(41573, {	-- Design: Opaque Dark Jade [WRATH] / Design: Turbid Dark Jade [CATA+]
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						-- #if BEFORE 4.0.3
-						-- These move to Tiffany in Dalaran
-						i(41566),	-- Design: Resplendent Huge Citrine
-						i(41569),	-- Design: Shattered Dark Jade
-						i(41572),	-- Design: Steady Dark Jade
-						i(41560),	-- Design: Stormy Chalcedony
-						i(41570),	-- Design: Radiant Dark Jade [CATA+] / Design: Tense Dark Jade [WRATH]
-						i(41571),	-- Design: Turbid Dark Jade
-						-- #endif
 						moh(1, i(28118, {	-- Brilliant Ornate Ruby
 							["timeline"] = { ADDED_2_0_1 },
 						})),
@@ -3587,73 +4079,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #endif
-				n(133239, {	-- Leyweaver Aurielle
-					["coord"] = { 38.2, 86.8, ORGRIMMAR },
-					["timeline"] = { ADDED_7_3_5 },
-					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
-					},
-					["groups"] = {
-						i(6270, {	-- Pattern: Blue Linen Vest
-							["isLimited"] = true,
-						}),
-						i(6274, {	-- Pattern: Blue Overalls
-							["isLimited"] = true,
-						}),
-						i(10314, {	-- Pattern: Lavender Mageweave Shirt
-							["isLimited"] = true,
-						}),
-						i(10317, {	-- Pattern: Pink Mageweave Shirt
-							["isLimited"] = true,
-						}),
-						i(5772, {	-- Pattern: Red Woolen Bag
-							["isLimited"] = true,
-						}),
-					},
-				}),
-				n(45558, {	-- Lizna Goldweaver <Tailoring Supplies> (removed 7.3.5? when embassy took over)
-					["coord"] = { 41.0, 79.8, ORGRIMMAR },
-					["timeline"] = { ADDED_4_0_1 },
-					-- #if AFTER 7.3.5.25961
-					["description"] = "This NPC is only visible if you have not yet unlocked the allied race Highmountain Tauren.",
-					["OnUpdate"] = [[function(t,parent,defaultUpdate)
-						if _.MODE_DEBUG or (defaultUpdate(t,parent) and not ATTAccountWideData.Achievements[12452]) then
-							t.visible = true;
-						else
-							t.visible = false;
-						end
-						return true;
-					end]],
-					-- #endif
-					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
-					},
-					["groups"] = {
-						i(6270, {	-- Pattern: Blue Linen Vest
-							["isLimited"] = true,
-						}),
-						i(6274, {	-- Pattern: Blue Overalls
-							["isLimited"] = true,
-						}),
-						i(10314, {	-- Pattern: Lavender Mageweave Shirt
-							["isLimited"] = true,
-						}),
-						i(10317, {	-- Pattern: Pink Mageweave Shirt
-							["isLimited"] = true,
-						}),
-						i(5772, {	-- Pattern: Red Woolen Bag
-							["isLimited"] = true,
-						}),
-					},
-				}),
-				n(50482, {	-- Marith Lazuria <Jewelcrafting Supplies>
-					["coord"] = { 72.4, 34.6, ORGRIMMAR },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
-				}),
 				n(3321, {	-- Morgum <Leather Armor Merchant>
 					["coords"] = {
 						-- #if AFTER CATA
@@ -3804,16 +4229,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_10_0_5 }
 						}),
 						-- #endif
-					},
-				}),
-				n(46716, {	-- Nerog <Inscription Trainer>
-					["coord"] = { 55.2, 55.8, ORGRIMMAR },
-					["timeline"] = { ADDED_4_0_1 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(140565, {	-- Technique: Songs of the Horde
-							["timeline"] = { ADDED_7_0_3 },
-						}),
 					},
 				}),
 				n(3362, {	-- Ogunaro Wolfrunner <Kennel Master>
@@ -3981,19 +4396,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(175164),	-- Expeditionary Staff
 					},
 				})),
-				n(46359, {	-- Punra <Blacksmithing Supplies>
-					["coord"] = { 45.0, 77.6, ORGRIMMAR },
-					["timeline"] = { ADDED_4_0_1 },
-					["sym"] = {
-						{"sub", "common_recipes_vendor", 3356},	-- Sumi <Blacksmithing Supplies>
-					},
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
-							["isLimited"] = true,
-						}),
-					},
-				}),
 				n(12796, {	-- Raider Bork <War Mount Quartermaster> [WRATH+] / Raider Bork <Mount Quartermaster>
 					-- #if AFTER WRATH
 					["coord"] = { 41.8, 72.6, ORGRIMMAR },
@@ -4357,52 +4759,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["collectible"] = false,
 							-- #endif
 						}),
-						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
-						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
-						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
 						i(6365, {	-- Strong Fishing Pole
 							-- #if AFTER 10.0.0
 							["collectible"] = false,
 							-- #endif
 						}),
-					},
-				}),
-				n(49737, {	-- Shazdar <Sous Chef>
-					["coord"] = { 56.8, 62.6, ORGRIMMAR },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						chefsaward(3, i(65426)),	-- Recipe: Baked Rockfish (RECIPE!)
-						chefsaward(3, i(65427)),	-- Recipe: Basilisk Liverdog (RECIPE!)
-						chefsaward(3, i(65429)),	-- Recipe: Beer-Basted Crocolisk (RECIPE!)
-						chefsaward(3, i(65424)),	-- Recipe: Blackbelly Sushi (RECIPE!)
-						chefsaward(3, i(65411)),	-- Recipe: Broiled Mountain Trout (RECIPE!)
-						chefsaward(3, i(65431)),	-- Recipe: Chocolate Cookie (RECIPE!)
-						chefsaward(3, i(65430)),	-- Recipe: Crocolisk Au Gratin (RECIPE!)
-						chefsaward(3, i(65422)),	-- Recipe: Delicious Sagefish Tail (RECIPE!)
-						chefsaward(3, i(65408)),	-- Recipe: Feathered Lure (RECIPE!)
-						chefsaward(3, i(65423)),	-- Recipe: Fish Fry (RECIPE!)
-						chefsaward(5, i(65432)),	-- Recipe: Fortune Cookie (RECIPE!)
-						chefsaward(3, i(65428)),	-- Recipe: Grilled Dragon (RECIPE!)
-						chefsaward(3, i(65418)),	-- Recipe: Hearty Seafood Soup (RECIPE!)
-						chefsaward(3, i(65415)),	-- Recipe: Highland Spirits (RECIPE!)
-						chefsaward(3, i(65407)),	-- Recipe: Lavascale Fillet (RECIPE!)
-						chefsaward(3, i(65409)),	-- Recipe: Lavascale Minestrone (RECIPE!)
-						chefsaward(3, i(65412)),	-- Recipe: Lightly Fried Lurker (RECIPE!)
-						chefsaward(3, i(65416)),	-- Recipe: Lurker Lunch (RECIPE!)
-						chefsaward(3, i(65420)),	-- Recipe: Mushroom Sauce Mudfish (RECIPE!)
-						chefsaward(3, i(65417)),	-- Recipe: Pickled Guppy (RECIPE!)
-						chefsaward(3, i(65410)),	-- Recipe: Salted Eye (RECIPE!)
-						chefsaward(3, i(68688, {	-- Recipe: Scalding Murglesnout (RECIPE!)
-							["timeline"] = { ADDED_4_0_6 },
-						})),
-						chefsaward(3, i(65413)),	-- Recipe: Seasoned Crab (RECIPE!)
-						chefsaward(3, i(65421)),	-- Recipe: Severed Sagefish Head (RECIPE!)
-						chefsaward(3, i(65425)),	-- Recipe: Skewered Eel (RECIPE!)
-						chefsaward(5, i(65433)),	-- Recipe: South Island Iced Tea (RECIPE!)
-						chefsaward(3, i(65414)),	-- Recipe: Starfire Espresso (RECIPE!)
-						chefsaward(3, i(65419)),	-- Recipe: Tender Baked Turtle (RECIPE!)
-						chefsaward(3, i(65406)),	-- Recipe: Whitecrest Gumbo (RECIPE!)
 					},
 				}),
 				n(3361, {	-- Shoma <Weapon Vendor>
@@ -4440,41 +4801,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_10_1_7 }
 						}),
 						i(15903),	-- Slicing Claw
-					},
-				}),
-				n(3413, {	-- Sovik <Engineering Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 56.0, 56.0, ORGRIMMAR },
-						-- #else
-						{ 75.6, 25.2, ORGRIMMAR },
-						-- #endif
-					},
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(39684, { ["timeline"] = { ADDED_3_0_2 }}),	-- Hair Trigger
-						i(4400),	-- Heavy Stock
-						i(18647, {	-- Schematic: Red Firework (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(16041, {	-- Schematic: Thorium Grenade (RECIPE!)
-							["timeline"] = { REMOVED_3_0_2 },	-- Now taught by trainer, schematic removed from the game.
-							-- #if BEFORE 3.0.2
-							["isLimited"] = true,
-							-- #endif
-						}),
-						i(16042, {	-- Schematic: Thorium Widget (RECIPE!)
-							["timeline"] = { REMOVED_3_0_2 },	-- Now taught by trainer, schematic removed from the game.
-							-- #if BEFORE 3.0.2
-							["isLimited"] = true,
-							-- #endif
-						}),
-						i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
-							["timeline"] = { CREATED_1_12_1, ADDED_2_3_0 },
-							["isLimited"] = true,
-						}),
-						i(40533, { ["timeline"] = { ADDED_3_0_2 }}),	-- Walnut Stock
-						i(4399),	-- Wooden Stock
 					},
 				}),
 				n(50488, {	-- Stone Guard Nargol <Orgrimmar Quartermaster>
@@ -4515,277 +4841,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #endif
-				n(46708, {	-- Suja <Cooking Supplies>
-					["coord"] = { 56.6, 61.2, ORGRIMMAR },
-					["timeline"] = { ADDED_4_0_1 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-					},
-				}),
-				n(3356, {	-- Sumi <Blacksmithing Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 75.8, 35.2, ORGRIMMAR },
-						-- #else
-						{ 82.4, 23.8, ORGRIMMAR },
-						-- #endif
-					},
-					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
-						i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
-							["isLimited"] = true,
-						}),
-					}),
-				}),
-				n(3366, {	-- Tamar <Leatherworking Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 60.6, 54.4, ORGRIMMAR },
-						-- #else
-						{ 63.0, 45.2, ORGRIMMAR },
-						-- #endif
-					},
-					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {
-						i(18731, {	-- Pattern: Heavy Leather Ball (RECIPE!)
-							["isLimited"] = true,
-						}),
-					}),
-				}),
-				applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, n(57922, {	-- Taryssa Lazuria <Jewelcrafting Supplies>
-					["coord"] = { 72.4, 34.6, ORGRIMMAR },
-					["timeline"] = { ADDED_4_3_0 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						currency(361, {	-- Illustrious Jewelcrafter's Token
-							["cost"] = { { "i", 204356, 10 }, },	-- 10x Illustrious Gemdust
-							["timeline"] = { ADDED_10_0_7 },
-						}),
-						i(71928, {	-- Design: Accurate Shadow Spinel
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71917, {	-- Design: Adept Lava Coral
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71919, {	-- Design: Artful Lava Coral
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71893, {	-- Design: Balanced Elven Peridot
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71943, {	-- Design: Bold Queen's Garnet
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71941, {	-- Design: Brilliant Queen's Garnet
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71912, {	-- Design: Champion's Lava Coral
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71906, {	-- Design: Crafty Lava Coral
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71905, {	-- Design: Deadly Lava Coral
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71937, {	-- Design: Defender's Shadow Spinel
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71913, {	-- Design: Deft Lava Coral
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71939, {	-- Design: Delicate Queen's Garnet
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71898, {	-- Design: Energized Elven Peridot
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71931, {	-- Design: Etched Shadow Spinel
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71916, {	-- Design: Fierce Lava Coral
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71920, {	-- Design: Fine Lava Coral
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71942, {	-- Design: Flashing Queen's Garnet
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71901, {	-- Design: Forceful Elven Peridot
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71947, {	-- Design: Fractured Lightstone
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71927, {	-- Design: Glinting Shadow Spinel
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71935, {	-- Design: Guardian's Shadow Spinel
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71891, {	-- Design: Infused Elven Peridot
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71908, {	-- Design: Inscribed Lava Coral
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71899, {	-- Design: Jagged Elven Peridot
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71918, {	-- Design: Keen Lava Coral
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71889, {	-- Design: Lightning Elven Peridot
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71922, {	-- Design: Lucent Lava Coral
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71887, {	-- Design: Misty Elven Peridot
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71932, {	-- Design: Mysterious Shadow Spinel
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71948, {	-- Design: Mystic Lightstone
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71902, {	-- Design: Nimble Elven Peridot
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71888, {	-- Design: Piercing Elven Peridot
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71909, {	-- Design: Polished Lava Coral
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71907, {	-- Design: Potent Lava Coral
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71940, {	-- Design: Precise Queen's Garnet
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71903, {	-- Design: Puissant Elven Peridot
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71933, {	-- Design: Purified Shadow Spinel
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71946, {	-- Design: Quick Lightstone
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71896, {	-- Design: Radiant Elven Peridot
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71915, {	-- Design: Reckless Lava Coral
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71900, {	-- Design: Regal Elven Peridot
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71910, {	-- Design: Resolute Lava Coral
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71926, {	-- Design: Resplendent Lava Coral
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71930, {	-- Design: Retaliating Shadow Spinel
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71821, {	-- Design: Rigid Deepholm Iolite
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71890, {	-- Design: Sensei's Elven Peridot
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71897, {	-- Design: Shattered Elven Peridot
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71934, {	-- Design: Shifting Shadow Spinel
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71921, {	-- Design: Skillful Lava Coral
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71944, {	-- Design: Smooth Lightstone
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71886, {	-- Design: Solid Deepholm Iolite
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71938, {	-- Design: Sovereign Shadow Spinel
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71885, {	-- Design: Sparkling Deepholm Iolite
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71925, {	-- Design: Splendid Lava Coral
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71911, {	-- Design: Stalwart Lava Coral
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71904, {	-- Design: Steady Elven Peridot
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71884, {	-- Design: Stormy Deepholm Iolite
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71945, {	-- Design: Subtle Lightstone
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71923, {	-- Design: Tenuous Lava Coral
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71936, {	-- Design: Timeless Shadow Spinel
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71895, {	-- Design: Turbid Elven Peridot
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71929, {	-- Design: Veiled Shadow Spinel
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71894, {	-- Design: Vivid Elven Peridot
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71914, {	-- Design: Wicked Lava Coral
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71924, {	-- Design: Willful Lava Coral
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71892, {	-- Design: Zen Elven Peridot
-							["cost"] = { { "c", 361, 5 }, },	-- 5x Illustrious Jewelcrafter's Token
-						}),
-						i(71949, {	-- Tome of Burning Jewels
-							["cost"] = { { "c", 361, 4 }, },	-- 4x Illustrious Jewelcrafter's Token
-							["filterID"] = CONSUMABLES,
-							["sym"] = {
-								{"select","creatureID",57922},{"pop"},	-- this NPC
-								{"not","itemID",71949},				-- not this item
-								{"isnt","currencyID"},	-- no currencies
-							},
-						}),
-					},
-				})),
-				n(133127, {	-- Thaluriel <Engineering Supplies>
-					["coord"] = { 36.8, 84.6, ORGRIMMAR },
-					["timeline"] = { ADDED_7_3_5 },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(18647, {	-- Schematic: Red Firework (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
-							["timeline"] = { CREATED_1_12_1, ADDED_2_3_0 },
-							["isLimited"] = true,
-						}),
-					},
-				}),
 				n(3315, {	-- Tor'phan <Cloth & Leather Armor Merchant>
 					["coords"] = {
 						-- #if AFTER CATA
@@ -5068,20 +5123,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(79740),	-- Plain Wooden Staff
 					},
 				}),
-				n(3400, {	-- Xen'to <Cooking Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 32.6, 68.6, ORGRIMMAR },
-						-- #else
-						{ 57.6, 53.2, ORGRIMMAR },
-						-- #endif
-					},
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-					},
-				}),
 				n(3405, {	-- Zeal'aya
 					["coord"] = { 34.6, 63.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
@@ -5113,21 +5154,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				-- #IF BEFORE SHADOWLANDS
-				n(45549, {	-- Zido Helmbreaker <Blacksmithing Supplies>
-					["coord"] = { 36.2, 83.2, ORGRIMMAR },
-					["timeline"] = { ADDED_4_0_1 },
-					["sym"] = {
-						{"sub", "common_recipes_vendor", 3356},	-- Sumi <Blacksmithing Supplies>
-					},
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
-							["isLimited"] = true,
-						}),
-					},
-				}),
-				-- #ENDIF
 			}),
 			-- #if NOT ANYCLASSIC
 			-- CRIEVE NOTE: I'm going to solve this a different way eventually.

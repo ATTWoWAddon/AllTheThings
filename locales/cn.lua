@@ -298,6 +298,8 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 			L.PRESET_SOLO = "单人模式禁用所有账号范围的追踪，仅显示当前角色的进度。";
 			L.PRESET_UNIQUE = "独特外观模式禁用来源，当你学习了它们的独特外观时，将装备标记为已收藏。";
 			L.PRESET_COMP = "完美主义者模式启用来源，仅在你从特定物品中学习了外观时将装备标记为已收藏。";
+			--TODO: L.PRESET_RESTORE = "Restore";
+			--TODO: L.PRESET_RESTORE_TOOLTIP = "Restore your tracking options to before applying any presets.";
 
 		L.MINIMAP_SLIDER = "小地图按钮尺寸";
 		L.MINIMAP_SLIDER_TOOLTIP = '使用此选项可自定义小地图按钮的大小。\n\n默认：36';

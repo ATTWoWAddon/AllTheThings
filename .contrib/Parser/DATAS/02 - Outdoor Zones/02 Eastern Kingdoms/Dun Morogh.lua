@@ -2580,6 +2580,63 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(417, {	-- A Pilot's Revenge
+					["providers"] = {
+						{ "o", 2059 },	-- A Dwarven Corpse
+						{ "i", 3117 },	-- Hildelve's Journal (PQI!)
+					},
+					["sourceQuest"] = 419,	-- The Lost Pilot
+					["coord"] = { 79.7, 36.2, DUN_MOROGH },
+					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 8,
+					["groups"] = {
+						objective(1, {	-- 0/1 Mangy Claw
+							["provider"] = { "i", 3183 },	-- Mangy Claw (QI!)
+							["coord"] = { 78.34, 37.74, DUN_MOROGH },
+							["cr"] = 1961,	-- Mangeclaw
+						}),
+						i(2218, {	-- Craftsman's Dagger
+							["timeline"] = { REMOVED_4_0_3 },
+						}),
+						i(1009, {	-- Compact Hammer
+							["timeline"] = { REMOVED_4_0_3 },
+						}),
+					},
+				}),
+				q(26855, {	-- A Pilot's Revenge
+					["providers"] = {
+						{ "o", 2059 },	-- A Dwarven Corpse
+						{ "i", 3117 },	-- Hildelve's Journal (PQI!)
+					},
+					["sourceQuest"] = 26854,	-- The Lost Pilot
+					["coord"] = { 87.6, 50.2, DUN_MOROGH },
+					["maps"] = { LOCH_MODAN },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Mangy Claw
+							["provider"] = { "i", 3183 },	-- Mangy Claw (QI!)
+							["coord"] = { 87.4, 49.2, DUN_MOROGH },
+							["cr"] = 1961,	-- Mangeclaw
+						}),
+						i(57560, {	-- Mangy Claw Mitts
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(57566, {	-- Siege Engineer's Belt
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(57562, {	-- Hammerfoot's Plate Leggings
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(57563, {	-- South Gate Blunderbuss
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(131612, {	-- Siege Engineer's Waistband
+							["timeline"] = { ADDED_7_0_3 },
+						}),
+					},
+				}),
 				q(384, {	-- Beer Basted Boar Ribs
 					["qg"] = 1267,	-- Ragnar Thunderbrew
 					["races"] = ALLIANCE_ONLY,
@@ -3684,6 +3741,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(3151, {	-- Siege Brigade Vest
 							["timeline"] = { REMOVED_4_0_3 },
+						}),
+					},
+				}),
+				q(26854, {	-- The Lost Pilot
+					["qg"] = 1960,	-- Pilot Hammerfoot
+					["sourceQuests"] = {
+						26131,	-- Reinforcements for Loch Modan
+						28567,	-- Hero's Call: Loch Modan!
+					},
+					["coord"] = { 14.0, 56.5, LOCH_MODAN },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(58970, {	-- Mori's Cloak
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(58971, {	-- Mori's Compass
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(58972, {	-- Mori's Gear Stick
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(156933, {	-- Mori's Pocketknife
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),

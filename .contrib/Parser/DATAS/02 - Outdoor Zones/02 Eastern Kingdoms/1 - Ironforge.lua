@@ -110,6 +110,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #endif
 			n(PROFESSIONS, {
+				prof(ALCHEMY, {
+					n(5178, {	-- Soolie Berryfizz <Alchemy Supplies>
+						["coord"] = { 66.6, 54.6, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(13478, {	-- Recipe: Elixir of Superior Defense (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(5642, {	-- Recipe: Free Action Potion (RECIPE!)
+								["isLimited"] = true,
+							}),
+						},
+					}),
+				}),
 				prof(BLACKSMITHING, {
 					n(4258, {	-- Bengus Deepforge <Artisan Blacksmith>
 						["coord"] = { 52.6, 40.8, IRONFORGE },
@@ -127,6 +141,90 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 50.8, 43.0, IRONFORGE },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = CLASSIC_WEAPONSMITHING,
+					}),
+					n(4259, {	-- Thurgrum Deepforge <Blacksmithing Supplies>
+						["coord"] = { 51.8, 41.2, IRONFORGE },
+						-- #if AFTER 4.3.0
+						["sym"] = {{ "sub", "common_recipes_vendor", 55684 }},	-- Jordan Smith <Blacksmithing Trainer & Supplies>
+						-- #endif
+						["races"] = ALLIANCE_ONLY,
+					}),
+				}),
+				prof(COOKING, {
+					n(5160, {	-- Emrul Riknussun <Cooking Supplier>
+						["coord"] = { 60.6, 38.2, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						-- #if AFTER CATA
+						["sym"] = {{"sub", "common_recipes_vendor", 49701}},	-- Jon Casper <Sous Chef>
+						-- #endif
+						["groups"] = {
+							i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+						},
+					}),
+					n(5162, {	-- Tansy Puddlefizz <Fishing Supplier>
+						["coord"] = { 47.8, 6.6, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
+							i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
+							i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
+							i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
+						},
+					}),
+				}),
+				prof(ENCHANTING, {
+					n(5158, {	-- Tilli Thistlefuzz <Enchanting Supplies>
+						["coord"] = { 60.8, 44.2, IRONFORGE },
+						-- #if AFTER CATA
+						["sym"] = { { "sub", "common_recipes_vendor", 1318 } },	-- Jessara Cordell <Enchanting Supplies>
+						-- #endif
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							-- #if BEFORE CATA
+							i(6342, {	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
+								["isLimited"] = true,
+							}),
+							-- #endif
+							i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
+							i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
+							i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
+						},
+					}),
+				}),
+				prof(ENGINEERING, {
+					n(5175, {	-- Gearcutter Cogspinner <Engineering Supplies>
+						["coord"] = { 67.8, 43.0, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(4400),	-- Heavy Stock
+							i(18649, {	-- Schematic: Blue Firework (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(7560, {	-- Schematic: Gnomish Universal Remote (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
+								["timeline"] = { CREATED_1_12_1, ADDED_2_3_0 },
+								["isLimited"] = true,
+							}),
+							i(16041, {	-- Schematic: Thorium Grenade (RECIPE!)
+								["timeline"] = { REMOVED_3_0_2 },	-- Now taught by trainer, schematic removed from the game.
+								-- #if BEFORE WRATH
+								["isLimited"] = true,
+								-- #endif
+							}),
+							i(16042, {	-- Schematic: Thorium Widget (RECIPE!)
+								["timeline"] = { REMOVED_3_0_2 },	-- Now taught by trainer, schematic removed from the game.
+								-- #if BEFORE WRATH
+								["isLimited"] = true,
+								-- #endif
+							}),
+							i(4399),	-- Wooden Stock
+						},
 					}),
 				}),
 				prof(FISHING, {
@@ -177,6 +275,79 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["collectible"] = false,  -- remove when Blizzard fix fish collection
 						-- #endif
 						["timeline"] = { ADDED_2_3_0 },
+					}),
+				}),
+				prof(JEWELCRAFTING, {
+					n(5163, {	-- Burbik Gearspanner <Trade Supplies>
+						["coord"] = { 46.6, 27.2, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							-- #if AFTER TBC
+							i(21948, {	-- Design: Opal Necklace of Impact (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(20975, {	-- Design: The Jade Eye (RECIPE!)
+								["isLimited"] = true,
+							}),
+							-- #endif
+						},
+					}),
+					n(52584, {	-- Laida Gembold <Jewelcrafting Supplies>
+						["coord"] = { 50.6, 27.0, IRONFORGE },
+						["timeline"] = { ADDED_4_1_0 },
+						["races"] = ALLIANCE_ONLY,
+						["sym"] = { {"sub", "common_recipes_vendor", 50482} },	-- Marith Lazuria <Jewelcrafting Supplies>
+					}),
+				}),
+				prof(LEATHERWORKING, {
+					n(5128, {	-- Bombus Finespindle <Leatherworking Supplies>
+						["coord"] = { 40.2, 33.4, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						-- #if AFTER CATA
+						["sym"] = { {"sub", "common_recipes_vendor", 3366} },	-- Tamar <Leatherworking Supplies>
+						-- #endif
+						["groups"] = {
+							i(18731, {	-- Pattern: Heavy Leather Ball (RECIPE!)
+								["isLimited"] = true,
+							}),
+						},
+					}),
+				}),
+				prof(TAILORING, {
+					n(8681, {	-- Outfitter Eric <Speciality Tailoring Supplies>
+						["coord"] = { 43.0, 29.2, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(10314, {	-- Pattern: Lavender Mageweave Shirt (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(10317, {	-- Pattern: Pink Mageweave Shirt (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(10326, {	-- Pattern: Tuxedo Jacket (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(10323, {	-- Pattern: Tuxedo Pants (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(10321, {	-- Pattern: Tuxedo Shirt (RECIPE!)
+								["isLimited"] = true,
+							}),
+						},
+					}),
+					n(5154, {	-- Poranna Snowbraid <Tailoring Supplies>
+						["coord"] = { 43.8, 29.6, IRONFORGE },
+						-- #if AFTER CATA
+						["sym"] = { {"sub", "common_recipes_vendor", 3364} },	-- Borya <Tailoring Supplies>
+						-- #endif
+						["races"] = ALLIANCE_ONLY,
+					}),
+					n(5158, {	-- Tilli Thistlefuzz <Enchanting Supplies>
+						["coord"] = { 60.8, 44.2, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
+						},
 					}),
 				}),
 			}),
@@ -1503,18 +1674,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2535,    -- War Staff
 					}},
 				}),
-				n(5128, {	-- Bombus Finespindle <Leatherworking Supplies>
-					["coord"] = { 40.2, 33.4, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER CATA
-					["sym"] = { {"sub", "common_recipes_vendor", 3366} },	-- Tamar <Leatherworking Supplies>
-					-- #endif
-					["groups"] = {
-						i(18731, {	-- Pattern: Heavy Leather Ball (RECIPE!)
-							["isLimited"] = true,
-						}),
-					},
-				}),
 				n(5120, {	-- Brenwyn Wintersteel
 					["coord"] = { 61.8, 88.8, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
@@ -1560,20 +1719,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(1201),	-- Dull Heater Shield
 						i(17186),	-- Small Targe
-					},
-				}),
-				n(5163, {	-- Burbik Gearspanner <Trade Supplies>
-					["coord"] = { 46.6, 27.2, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						-- #if AFTER TBC
-						i(21948, {	-- Design: Opal Necklace of Impact (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(20975, {	-- Design: The Jade Eye (RECIPE!)
-							["isLimited"] = true,
-						}),
-						-- #endif
 					},
 				}),
 				n(50309, {	-- Captain Stonehelm <Ironforge Quartermaster>
@@ -1651,45 +1796,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(2490),	-- Tomahawk
 						i(2489),	-- Two-Handed Sword
 						i(2495),	-- Walking Stick
-					},
-				}),
-				n(5160, {	-- Emrul Riknussun <Cooking Supplier>
-					["coord"] = { 60.6, 38.2, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER CATA
-					["sym"] = {{"sub", "common_recipes_vendor", 49701}},	-- Jon Casper <Sous Chef>
-					-- #endif
-					["groups"] = {
-						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-					},
-				}),
-				n(5175, {	-- Gearcutter Cogspinner <Engineering Supplies>
-					["coord"] = { 67.8, 43.0, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(18649, {	-- Schematic: Blue Firework (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(7560, {	-- Schematic: Gnomish Universal Remote (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
-							["timeline"] = { CREATED_1_12_1, ADDED_2_3_0 },
-							["isLimited"] = true,
-						}),
-						i(16041, {	-- Schematic: Thorium Grenade (RECIPE!)
-							["timeline"] = { REMOVED_3_0_2 },	-- Now taught by trainer, schematic removed from the game.
-							-- #if BEFORE WRATH
-							["isLimited"] = true,
-							-- #endif
-						}),
-						i(16042, {	-- Schematic: Thorium Widget (RECIPE!)
-							["timeline"] = { REMOVED_3_0_2 },	-- Now taught by trainer, schematic removed from the game.
-							-- #if BEFORE WRATH
-							["isLimited"] = true,
-							-- #endif
-						}),
 					},
 				}),
 				n(5103, {	-- Grenil Steelfury
@@ -1967,12 +2073,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
-				n(52584, {	-- Laida Gembold <Jewelcrafting Supplies>
-					["coord"] = { 50.6, 27.0, IRONFORGE },
-					["timeline"] = { ADDED_4_1_0 },
-					["races"] = ALLIANCE_ONLY,
-					["sym"] = { {"sub", "common_recipes_vendor", 50482} },	-- Marith Lazuria <Jewelcrafting Supplies>
-				}),
 				n(5129, {	-- Lissyphus Finespindle
 					["coord"] = { 54.6, 88.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
@@ -2088,34 +2188,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						17188,    -- Ringed Buckler
 					}},
 				}),
-				n(8681, {	-- Outfitter Eric <Speciality Tailoring Supplies>
-					["coord"] = { 43.0, 29.2, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(10314, {	-- Pattern: Lavender Mageweave Shirt (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(10317, {	-- Pattern: Pink Mageweave Shirt (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(10326, {	-- Pattern: Tuxedo Jacket (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(10323, {	-- Pattern: Tuxedo Pants (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(10321, {	-- Pattern: Tuxedo Shirt (RECIPE!)
-							["isLimited"] = true,
-						}),
-					},
-				}),
-				n(5154, {	-- Poranna Snowbraid <Tailoring Supplies>
-					["coord"] = { 43.8, 29.6, IRONFORGE },
-					-- #if AFTER CATA
-					["sym"] = { {"sub", "common_recipes_vendor", 3364} },	-- Borya <Tailoring Supplies>
-					-- #endif
-					["races"] = ALLIANCE_ONLY,
-				}),
 				n(5108, {	-- Raena Flinthammer <Light Armor Merchant>
 					["coord"] = { 32.6, 58.0, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
@@ -2156,28 +2228,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				n(5178, {	-- Soolie Berryfizz <Alchemy Supplies>
-					["coord"] = { 66.6, 54.6, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(13478, {	-- Recipe: Elixir of Superior Defense (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(5642, {	-- Recipe: Free Action Potion (RECIPE!)
-							["isLimited"] = true,
-						}),
-					},
-				}),
-				n(5162, {	-- Tansy Puddlefizz <Fishing Supplier>
-					["coord"] = { 47.8, 6.6, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
-						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
-						i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
-						i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
-					},
-				}),
 				n(7976, {	-- Thalgus Thunderfist
 					["coord"] = { 61.8, 90.0, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
@@ -2202,34 +2252,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(15903),	-- Slicing Claw
-					},
-				}),
-				n(4259, {	-- Thurgrum Deepforge <Blacksmithing Supplies>
-					["coord"] = { 51.8, 41.2, IRONFORGE },
-					-- #if AFTER 4.3.0
-					["sym"] = {{ "sub", "common_recipes_vendor", 55684 }},	-- Jordan Smith <Blacksmithing Trainer & Supplies>
-					-- #endif
-					["races"] = ALLIANCE_ONLY,
-				}),
-				n(5158, {	-- Tilli Thistlefuzz <Enchanting Supplies>
-					["coord"] = { 60.8, 44.2, IRONFORGE },
-					-- #if AFTER CATA
-					["sym"] = { { "sub", "common_recipes_vendor", 1318 } },	-- Jessara Cordell <Enchanting Supplies>
-					-- #endif
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						-- #if BEFORE CATA
-						i(6342, {	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-							["isLimited"] = true,
-						}),
-						-- #endif
-						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 					},
 				}),
 				n(5169, {	-- Tynnus Venomsprout

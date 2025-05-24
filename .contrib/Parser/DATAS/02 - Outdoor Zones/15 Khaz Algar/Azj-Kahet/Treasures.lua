@@ -14,6 +14,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 43.6, 39.8, AZJ_KAHET },
 				},
 				["questID"] = 83772,
+				["isWeekly"] = true,
 			}),
 			o(446097, {	-- Disturbed Soil
 				["coord"] = { 67.4, 90.7, AZJ_KAHET },

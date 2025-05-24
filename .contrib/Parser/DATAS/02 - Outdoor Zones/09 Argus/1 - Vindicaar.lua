@@ -345,7 +345,10 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					["sourceQuests"] = { 48200 },	-- Securing a Foothold
 					["altQuests"] = { 48202 },	-- Reinforce the Veiled Den — you get one of two quests depending on which camp is up at the time
 					["provider"] = { "n", 126954 },	-- High Exarch Turalyon
-					["coord"] = { 34.4, 57.2, THE_VINDICAAR_KROKUUN_UPPER },
+					["coords"] = {
+						{ 33.6, 58.3, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
+						{ 34.4, 57.2, THE_VINDICAAR_KROKUUN_UPPER },
+					},
 				}),
 				q(48202, {	-- Reinforce the Veiled Den
 					["sourceQuests"] = { 48200 },	-- Securing a Foothold
@@ -441,7 +444,11 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				q(48277, {	-- The Speaker Seeks
 					["sourceQuests"] = { 48272 },	-- Visions of Fear
 					["provider"] = { "n", 124312 },	-- High Exarch Turalyon
-					["coord"] = { 40.1, 25.6, THE_VINDICAAR_KROKUUN_UPPER },
+					["coords"] = {
+						{ 33.5, 58.3, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
+						{ 45.9, 24.1, THE_VINDICAAR_EREDATH_UPPER },
+						{ 39.1, 24.9, THE_VINDICAAR_KROKUUN_UPPER },
+					},
 				}),
 				q(47287, {	-- The Vindicaar Matrix Core
 					["sourceQuests"] = { 47743 },	-- Child of Light and Shadow

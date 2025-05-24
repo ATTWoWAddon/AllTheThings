@@ -102,6 +102,66 @@ app.AddEventHandler("OnSettingsRefreshed", function()
 	headerMode:SetText(settings:GetModeString() .. " (" .. settings:GetShortModeString() .. ")");
 end);
 
+local function presetStore()
+	-- Only store our settings if we haven't restored yet, not if we're swapping through presets
+	local next = next
+	if next(settings:Get("PresetRestore")) ~= nil then
+		return
+	end
+
+	local settingsTable = {
+		-- Account-wide Things
+		["Thing:Transmog"] = settings:Get("Thing:Transmog"),
+		["Completionist"] = settings:Get("Completionist"),
+		["MainOnly"] = settings:Get("MainOnly"),
+		["Thing:Heirlooms"] = settings:Get("Thing:Heirlooms"),
+		["Thing:HeirloomUpgrades"] = settings:Get("Thing:HeirloomUpgrades"),
+		["Thing:Illusions"] = settings:Get("Thing:Illusions"),
+		["Thing:Mounts"] = settings:Get("Thing:Mounts"),
+		["Thing:BattlePets"] = settings:Get("Thing:BattlePets"),
+		["Thing:Toys"] = settings:Get("Thing:Toys"),
+		["Thing:Campsites"] = settings:Get("Thing:Campsites"),
+
+		-- General Things
+		["Thing:Achievements"] = settings:Get("Thing:Achievements"),
+		["Thing:CharacterUnlocks"] = settings:Get("Thing:CharacterUnlocks"),
+		["Thing:DeathTracker"] = settings:Get("Thing:DeathTracker"),
+		["Thing:Exploration"] = settings:Get("Thing:Exploration"),
+		["Thing:FlightPaths"] = settings:Get("Thing:FlightPaths"),
+		["Thing:Quests"] = settings:Get("Thing:Quests"),
+		["Thing:QuestsLocked"] = settings:Get("Thing:QuestsLocked"),
+		["Thing:QuestsHidden"] = settings:Get("Thing:QuestsHidden"),
+		["Thing:Recipes"] = settings:Get("Thing:Recipes"),
+		["Thing:Reputations"] = settings:Get("Thing:Reputations"),
+		["Thing:Titles"] = settings:Get("Thing:Titles"),
+
+		-- General Content
+		["Hide:BoEs"] = settings:Get("Hide:BoEs"),
+		["Filter:BoEs"] = settings:Get("Filter:BoEs"),
+		["Filter:ByLevel"] = settings:Get("Filter:ByLevel"),
+		["Show:UnavailablePersonalLoot"] = settings:Get("Show:UnavailablePersonalLoot"),
+		["Show:OnlyActiveEvents"] = settings:Get("Show:OnlyActiveEvents"),
+		["Show:PetBattles"] = settings:Get("Show:PetBattles"),
+		["Hide:PvP"] = settings:Get("Hide:PvP"),
+		["Show:Skyriding"] = settings:Get("Show:Skyriding"),
+
+		-- Expansion Things
+		["Thing:Followers"] = settings:Get("Thing:Followers"),
+		["Thing:AzeriteEssences"] = settings:Get("Thing:AzeriteEssences"),
+		["Thing:Conduits"] = settings:Get("Thing:Conduits"),
+		["Thing:RuneforgeLegendaries"] = settings:Get("Thing:RuneforgeLegendaries"),
+		["Thing:MountMods"] = settings:Get("Thing:MountMods"),
+
+		-- Automated Content
+		["CC:SL_COV_KYR"] = settings:Get("CC:SL_COV_KYR"),
+		["CC:SL_COV_NEC"] = settings:Get("CC:SL_COV_NEC"),
+		["CC:SL_COV_NFA"] = settings:Get("CC:SL_COV_NFA"),
+		["CC:SL_COV_VEN"] = settings:Get("CC:SL_COV_VEN"),
+	}
+
+	settings:Set("PresetRestore", settingsTable)
+end
+
 local modeButton = CreateFrame("Button", nil, child, "UIDropDownMenuButtonScriptTemplate")
 modeButton:SetSize(24, 24)
 modeButton:SetPoint("LEFT", headerMode, "RIGHT", 1, 0)
@@ -111,13 +171,81 @@ modeButton:SetDisabledTexture("Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Disa
 modeButton:SetHighlightTexture("Interface\\Buttons\\UI-Common-MouseHilight")
 modeButton:SetScript("OnClick", function()
 	local function GeneratorFunction(owner, rootDescription)
-		local preset0 = rootDescription:CreateButton(L.TITLE_NONE_THINGS, OnClick)
-		preset0:SetTooltip(function(tooltip, elementDescription)
+		local next = next
+		if next(settings:Get("PresetRestore")) ~= nil then
+			local preset = rootDescription:CreateButton(app.Modules.Color.Colorize(L.PRESET_RESTORE, app.Colors.Default), OnClick)
+			preset:SetTooltip(function(tooltip, elementDescription)
+				GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
+				GameTooltip_AddInstructionLine(tooltip, L.PRESET_RESTORE_TOOLTIP)
+			end)
+			preset:SetResponder(function()
+				-- Account-wide Things
+				settings:Set("Thing:Transmog", settings:Get("PresetRestore")["Thing:Transmog"])
+				settings:Set("Completionist", settings:Get("PresetRestore")["Completionist"])
+				settings:Set("MainOnly", settings:Get("PresetRestore")["MainOnly"])
+				settings:Set("Thing:Heirlooms", settings:Get("PresetRestore")["Thing:Heirlooms"])
+				settings:Set("Thing:HeirloomUpgrades", settings:Get("PresetRestore")["Thing:HeirloomUpgrades"])
+				settings:Set("Thing:Illusions", settings:Get("PresetRestore")["Thing:Illusions"])
+				settings:Set("Thing:Mounts", settings:Get("PresetRestore")["Thing:Mounts"])
+				settings:Set("Thing:BattlePets", settings:Get("PresetRestore")["Thing:BattlePets"])
+				settings:Set("Thing:Toys", settings:Get("PresetRestore")["Thing:Toys"])
+				settings:Set("Thing:Campsites", settings:Get("PresetRestore")["Thing:Campsites"])
+
+				-- General Things
+				settings:Set("Thing:Achievements", settings:Get("PresetRestore")["Thing:Achievements"])
+				settings:Set("Thing:CharacterUnlocks", settings:Get("PresetRestore")["Thing:CharacterUnlocks"])
+				settings:Set("Thing:DeathTracker", settings:Get("PresetRestore")["Thing:DeathTracker"])
+				settings:Set("Thing:Exploration", settings:Get("PresetRestore")["Thing:Exploration"])
+				settings:Set("Thing:FlightPaths", settings:Get("PresetRestore")["Thing:FlightPaths"])
+				settings:Set("Thing:Quests", settings:Get("PresetRestore")["Thing:Quests"])
+				settings:Set("Thing:QuestsLocked", settings:Get("PresetRestore")["Thing:QuestsLocked"])
+				settings:Set("Thing:QuestsHidden", settings:Get("PresetRestore")["Thing:QuestsHidden"])
+				settings:Set("Thing:Recipes", settings:Get("PresetRestore")["Thing:Recipes"])
+				settings:Set("Thing:Reputations", settings:Get("PresetRestore")["Thing:Reputations"])
+				settings:Set("Thing:Titles", settings:Get("PresetRestore")["Thing:Titles"])
+
+				-- General Content
+				settings:Set("Hide:BoEs", settings:Get("PresetRestore")["Hide:BoEs"])
+				settings:Set("Filter:BoEs", settings:Get("PresetRestore")["Filter:BoEs"])
+				settings:Set("Filter:ByLevel", settings:Get("PresetRestore")["Filter:ByLevel"])
+				settings:Set("Show:UnavailablePersonalLoot", settings:Get("PresetRestore")["Show:UnavailablePersonalLoot"])
+				settings:Set("Show:OnlyActiveEvents", settings:Get("PresetRestore")["Show:OnlyActiveEvents"])
+				settings:Set("Show:PetBattles", settings:Get("PresetRestore")["Show:PetBattles"])
+				settings:Set("Hide:PvP", settings:Get("PresetRestore")["Hide:PvP"])
+				settings:Set("Show:Skyriding", settings:Get("PresetRestore")["Show:Skyriding"])
+
+				-- Expansion Things
+				settings:Set("Thing:Followers", settings:Get("PresetRestore")["Thing:Followers"])
+				settings:Set("Thing:AzeriteEssences", settings:Get("PresetRestore")["Thing:AzeriteEssences"])
+				settings:Set("Thing:Conduits", settings:Get("PresetRestore")["Thing:Conduits"])
+				settings:Set("Thing:RuneforgeLegendaries", settings:Get("PresetRestore")["Thing:RuneforgeLegendaries"])
+				settings:Set("Thing:MountMods", settings:Get("PresetRestore")["Thing:MountMods"])
+
+				-- Automated Content
+				settings:Set("CC:SL_COV_KYR", settings:Get("PresetRestore")["CC:SL_COV_KYR"])
+				settings:Set("CC:SL_COV_NEC", settings:Get("PresetRestore")["CC:SL_COV_NEC"])
+				settings:Set("CC:SL_COV_NFA", settings:Get("PresetRestore")["CC:SL_COV_NFA"])
+				settings:Set("CC:SL_COV_VEN", settings:Get("PresetRestore")["CC:SL_COV_VEN"])
+
+				-- Reset our preset storage
+				settings:Set("PresetRestore", {})
+
+				-- Close menu after clicking and refresh
+				settings:UpdateMode(1)
+				return MenuResponse.Close
+			end)
+		end
+
+		local preset = rootDescription:CreateButton(L.TITLE_NONE_THINGS, OnClick)
+		preset:SetTooltip(function(tooltip, elementDescription)
 			GameTooltip_SetTitle(tooltip, MenuUtil.GetElementText(elementDescription))
 			GameTooltip_AddInstructionLine(tooltip, L.PRESET_TOOLTIP)
 			GameTooltip_AddNormalLine(tooltip, L.PRESET_NONE)
 		end)
-		preset0:SetResponder(function()
+		preset:SetResponder(function()
+			-- Store current tracking options
+			presetStore()
+
 			-- Account-wide Things
 			settings:Set("Thing:Transmog", false)
 			settings:Set("Completionist", false)
@@ -172,6 +300,9 @@ modeButton:SetScript("OnClick", function()
 			GameTooltip_AddNormalLine(tooltip, L.PRESET_CORE)
 		end)
 		preset:SetResponder(function()
+			-- Store current tracking options
+			presetStore()
+
 			-- Account-wide Things
 			settings:Set("Thing:Transmog", true)
 			settings:Set("Completionist", false)
@@ -226,6 +357,9 @@ modeButton:SetScript("OnClick", function()
 			GameTooltip_AddNormalLine(tooltip, L.PRESET_RANKED)
 		end)
 		preset:SetResponder(function()
+			-- Store current tracking options
+			presetStore()
+
 			-- Account-wide Things
 			settings:Set("Thing:Transmog", true)
 			settings:Set("Completionist", true)
@@ -280,6 +414,9 @@ modeButton:SetScript("OnClick", function()
 			GameTooltip_AddNormalLine(tooltip, L.PRESET_INSANE)
 		end)
 		preset:SetResponder(function()
+			-- Store current tracking options
+			presetStore()
+
 			-- Account-wide Things
 			settings:Set("Thing:Transmog", true)
 			-- settings:Set("Completionist", true)
@@ -349,6 +486,9 @@ modeButton:SetScript("OnClick", function()
 			GameTooltip_AddNormalLine(tooltip, L.PRESET_ACCOUNT)
 		end)
 		preset:SetResponder(function()
+			-- Store current tracking options
+			presetStore()
+
 			settings:SetAccountMode(true)
 
 			-- General Things
@@ -377,6 +517,9 @@ modeButton:SetScript("OnClick", function()
 			GameTooltip_AddNormalLine(tooltip, L.PRESET_SOLO)
 		end)
 		preset:SetResponder(function()
+			-- Store current tracking options
+			presetStore()
+
 			settings:SetAccountMode(false)
 
 			-- General Things
@@ -405,6 +548,9 @@ modeButton:SetScript("OnClick", function()
 			GameTooltip_AddNormalLine(tooltip, L.PRESET_UNIQUE)
 		end)
 		preset:SetResponder(function()
+			-- Store current tracking options
+			presetStore()
+
 			settings:Set("Thing:Transmog", true)
 			settings:Set("Completionist", false)
 
@@ -420,6 +566,9 @@ modeButton:SetScript("OnClick", function()
 			GameTooltip_AddNormalLine(tooltip, L.PRESET_COMP)
 		end)
 		preset:SetResponder(function()
+			-- Store current tracking options
+			presetStore()
+
 			settings:Set("Thing:Transmog", true)
 			settings:Set("Completionist", true)
 
