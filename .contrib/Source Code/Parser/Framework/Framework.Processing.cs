@@ -1224,7 +1224,11 @@ namespace ATT
                 else
                 {
                     // otherwise it can remain directly listed in the Ensemble
-                    if (TryGetTypeDBObjectCollection(sourceID, out List<TransmogSetItem> tmogSetItems, nameof(TransmogSetItem.ItemModifiedAppearanceID)))
+                    var tmogSetItems = WagoData.Enumerate<TransmogSetItem>((si) =>
+                    {
+                        return si.ItemModifiedAppearanceID == sourceID;
+                    }).ToList();
+                    if (tmogSetItems.Count > 0)
                     {
                         IDictionary<string, object> source = tmogSetItems.FirstOrDefault()?.GetExportableData();
                         if (source == null)
@@ -2900,7 +2904,11 @@ namespace ATT
 
         private static void Incorporate_Item_TransmogSetItems(IDictionary<string, object> data, long tmogSetID)
         {
-            if (!TryGetTypeDBObjectCollection(tmogSetID, out List<TransmogSetItem> transmogSetItems))
+            var transmogSetItems = WagoData.Enumerate<TransmogSetItem>((si) =>
+            {
+                return si.TransmogSetID == tmogSetID;
+            }).ToList();
+            if (transmogSetItems.Count < 1)
             {
                 LogDebugWarn($"Ensemble missing Wago TransmogSetItem record(s) for TransmogSetID {tmogSetID}", data);
                 return;
@@ -2921,7 +2929,10 @@ namespace ATT
                 {
                     if (sameQuestTransmogSet.TrackingQuestID == questID && sameQuestTransmogSet.ID != tmogSetID)
                     {
-                        if (!TryGetTypeDBObjectCollection(sameQuestTransmogSet.ID, out transmogSetItems))
+                        if (!WagoData.Enumerate<TransmogSetItem>((si) =>
+                        {
+                            return si.TransmogSetID == tmogSetID;
+                        }).Any())
                         {
                             LogDebugWarn($"Ensemble {tmogSetID} missing addtional Wago TransmogSetItem record(s) for TransmogSetID {sameQuestTransmogSet.ID}", data);
                         }
@@ -2972,20 +2983,20 @@ namespace ATT
             // ItemXItemEffect 1> ItemEffect
             // ItemEffect X> SpellEffect
             // e.g. i:207046 -> 2 ItemXItemEffect -> 2 ItemEffect -> 2 SpellEffect & 4 SpellEffect
-            if (TryGetTypeDBObjectCollection(itemID, out List<ItemXItemEffect> itemXItemEffects))
+            foreach (ItemXItemEffect itemXItemEffect in WagoData.Enumerate<ItemXItemEffect>((si) =>
             {
-                foreach (ItemXItemEffect itemXItemEffect in itemXItemEffects)
-                {
-                    if (!WagoData.TryGetValue(itemXItemEffect.ItemEffectID, out ItemEffect itemEffect))
-                        continue;
+                return si.ItemID == itemID;
+            }))
+            {
+                if (!WagoData.TryGetValue(itemXItemEffect.ItemEffectID, out ItemEffect itemEffect))
+                    continue;
 
-                    // ignore matching spellID effect
-                    if (itemEffect.SpellID == spellID)
-                        continue;
+                // ignore matching spellID effect
+                if (itemEffect.SpellID == spellID)
+                    continue;
 
-                    // Incorporate_Spell will handle any 'extra' spells triggered by secondary ItemEffects
-                    Objects.Merge(data, "_extraSpells", itemEffect.SpellID);
-                }
+                // Incorporate_Spell will handle any 'extra' spells triggered by secondary ItemEffects
+                Objects.Merge(data, "_extraSpells", itemEffect.SpellID);
             }
         }
 
@@ -2995,7 +3006,11 @@ namespace ATT
             if (data.ContainsKey("_noautomation")) return;
 
             // See what the Spell links to
-            if (TryGetTypeDBObjectCollection(spellID, out List<SpellEffect> spellEffects))
+            var spellEffects = WagoData.Enumerate<SpellEffect>((si) =>
+            {
+                return si.SpellID == spellID;
+            }).ToList();
+            if (spellEffects.Count > 0)
             {
                 foreach (SpellEffect spellEffect in spellEffects)
                 {
@@ -3013,12 +3028,12 @@ namespace ATT
             {
                 foreach (long extraSpellID in extraSpells.AsTypedEnumerable<long>())
                 {
-                    if (TryGetTypeDBObjectCollection(extraSpellID, out spellEffects))
+                    foreach (SpellEffect spellEffect in WagoData.Enumerate<SpellEffect>((si) =>
                     {
-                        foreach (SpellEffect spellEffect in spellEffects)
-                        {
-                            Incorporate_SpellEffect(data, spellEffect);
-                        }
+                        return si.SpellID == extraSpellID;
+                    }))
+                    {
+                        Incorporate_SpellEffect(data, spellEffect);
                     }
                 }
             }

@@ -142,7 +142,6 @@
     <Compile Include="DB\Types\Criteria.cs" />
     <Compile Include="DB\Types\CriteriaTree.cs" />
     <Compile Include="DB\Types\TypeCollection.cs" />
-    <Compile Include="DB\WagoTypes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

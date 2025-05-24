@@ -281,7 +281,9 @@ namespace ATT.DB
                 var data = new Dictionary<string, object>();
                 foreach (var dataPropertyPair in ExportableDataProperties)
                 {
-                    data[dataPropertyPair.Key] = dataPropertyPair.Value.GetValue(o);
+                    var value = dataPropertyPair.Value.GetValue(o);
+                    if (value == null) continue;
+                    data[dataPropertyPair.Key] = value;
                 }
                 return data;
             }
@@ -297,7 +299,9 @@ namespace ATT.DB
                 var data = new Dictionary<string, object>();
                 foreach(var dataPropertyPair in ExportableDataProperties)
                 {
-                    data[dataPropertyPair.Key] = dataPropertyPair.Value.GetValue(o);
+                    var value = dataPropertyPair.Value.GetValue(o);
+                    if (value == null) continue;
+                    data[dataPropertyPair.Key] = value;
                 }
                 return data;
             }

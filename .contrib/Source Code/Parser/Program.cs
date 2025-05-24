@@ -130,14 +130,7 @@ namespace ATT
                             }
                         }
                         filenames.Sort(StringComparer.InvariantCulture);
-                        foreach (var filename in filenames)
-                        {
-                            // TODO: Use this instead.
-                            WagoData.LoadFromCSV(filename);
-
-                            // DEPRECATED: Old parsing style
-                            Framework.ParseWagoCSV(filename);
-                        }
+                        foreach (var filename in filenames) WagoData.LoadFromCSV(filename);
 
                         if (Errored)
                         {
@@ -149,6 +142,7 @@ namespace ATT
                 }
                 while (Errored && !Framework.Automated);
 
+                /*
                 Console.WriteLine($"ALL WAGO DATA MODULES: ");
                 foreach (var modulePair in WagoData.GetAllDataModules())
                 {
@@ -197,6 +191,7 @@ namespace ATT
                     else Console.WriteLine("  NO LOCALIZED DATA FOUND");
                     Console.ReadLine();
                 }
+                */
 
                 // Load all of the Lua files into the database.
                 var mainFileName = $"{databaseRootFolder}\\..\\_main.lua";

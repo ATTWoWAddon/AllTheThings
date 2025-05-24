@@ -16,14 +16,19 @@ namespace ATT.DB
 
         private static class Cache<T> where T : IWagoDBChildType, IDBType
         {
-            public static Dictionary<long, List<T>> Parents;
+            private static Dictionary<long, List<T>> Parents;
 
             public static void Clear()
             {
                 Parents = null;
             }
 
-            public static Dictionary<long, List<T>> Rebuild()
+            public static Dictionary<long, List<T>> GetAllParents()
+            {
+                return Parents ?? (Parents = Rebuild());
+            }
+
+            private static Dictionary<long, List<T>> Rebuild()
             {
                 var parents = new Dictionary<long, List<T>>();
                 foreach(var o in WagoData.GetAll<T>().Values)
@@ -37,18 +42,19 @@ namespace ATT.DB
                         children.Add(o);
                     }
                 }
-                return Parents = parents;
+                return parents;
             }
         }
 
-        public static void ClearGlobalParentCache<T>(this T o) where T : IWagoDBChildType, IDBType
+        public static void ClearParentCache<T>(this T o) where T : IWagoDBChildType, IDBType
         {
-            Cache<T>.Parents = null;
+            Cache<T>.Clear();
         }
 
         public static IEnumerable<T> GetChildren<T>(this T o) where T : IWagoDBChildType, IDBType
         {
-            if (Cache<T>.Parents.TryGetValue(o.ID, out List<T> children))
+            if (o == null) yield break;
+            if (Cache<T>.GetAllParents().TryGetValue(o.ID, out List<T> children))
             {
                 foreach (var crit in children)
                 {

@@ -6,7 +6,6 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Security.Cryptography;
 using System.Text;
 
 namespace ATT
@@ -1041,9 +1040,14 @@ namespace ATT
                 }
 
                 // Attempt to get the SourceID from the ItemModifiedAppearanceDB
+                long longSourceIDKey = (long)sourceIDKey;
                 long? ItemModifiedAppearanceID = null;
                 ItemModifiedAppearance itemModifiedAppearance = null;
-                if (TryGetTypeDBObjectCollection<ItemModifiedAppearance>((long)sourceIDKey, out var itemModifiedAppearances))
+                var itemModifiedAppearances = WagoData.Enumerate<ItemModifiedAppearance>((si) =>
+                {
+                    return si.ItemAppearanceID == longSourceIDKey;
+                }).ToList();
+                if (itemModifiedAppearances.Count > 0)
                 {
                     // Try to find the best match for the item appearance modifier ID.
                     long bestItemAppearanceModifierID = 9999;
