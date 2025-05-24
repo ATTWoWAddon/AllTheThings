@@ -323,8 +323,6 @@ namespace ATT
             }
         }
 
-        internal static IDictionary<string, IDictionary<long, IDBType>> TypeDB { get; } = new Dictionary<string, IDictionary<long, IDBType>>();
-
         private static IDictionary<string, object> Exports { get; } = new Dictionary<string, object>();
 
         private static IDictionary<string, object> IncorporationReferences { get; } = new Dictionary<string, object>();
