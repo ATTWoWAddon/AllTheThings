@@ -39,6 +39,9 @@ root(ROOTS.BlackMarket, {
 		n(219055, {	-- Madam Goya
 			["coord"] = { 64.8, 52.7, DORNOGAL },
 		}),
+		n(100986, {	-- Madam Goya [Underbelly]
+			["coord"] = { 71.37, 17.93, LEGION_THE_UNDERBELLY },
+		}),
 		-- #ENDIF
 		-- n(94829, {	-- Zhang Yeoh [Garrison]
 		-- 	["coords"] = {
