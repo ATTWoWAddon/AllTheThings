@@ -28,9 +28,5 @@ namespace ATT.DB.Types
         public long VisibilityConditionID { get; set; }
         public long MountCreatureID_0 { get; set; }
         public long MountCreatureID_1 { get; set; }
-        public IDictionary<string, object> AsData()
-        {
-            return new Dictionary<string, object>();
-        }
     }
 }

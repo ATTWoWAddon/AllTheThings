@@ -14,10 +14,5 @@ namespace ATT.DB.Types
         public long Asset { get; set; }
         public long SecondaryAsset { get; set; }
         public long TertiaryAsset { get; set; }
-
-        public IDictionary<string, object> AsData()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

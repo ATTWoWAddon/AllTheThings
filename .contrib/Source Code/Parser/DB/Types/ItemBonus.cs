@@ -14,10 +14,5 @@ namespace ATT.DB.Types
         public int Value_1 { get; set; }
         public int ParentItemBonusListID { get; set; }
         public int Type { get; set; }
-
-        public IDictionary<string, object> AsData()
-        {
-            return new Dictionary<string, object>();
-        }
     }
 }

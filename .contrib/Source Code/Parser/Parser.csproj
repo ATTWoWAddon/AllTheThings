@@ -78,6 +78,7 @@
     <Compile Include="CollectedStatus.cs" />
     <Compile Include="CustomConfiguration.cs" />
     <Compile Include="DataValidator.cs" />
+    <Compile Include="DB\Attributes\ExportableDataAttribute.cs" />
     <Compile Include="DB\Attributes\DataModuleAttribute.cs" />
     <Compile Include="DB\Interfaces\IWagoDBItemExtension.cs" />
     <Compile Include="DB\Interfaces\IWagoDBChildType.cs" />

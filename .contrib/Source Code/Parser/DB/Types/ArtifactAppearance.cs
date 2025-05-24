@@ -25,10 +25,5 @@ namespace ATT.DB.Types
         public long Flags { get; set; }
         public long UiCameraID { get; set; }
         public long UsablePlayerConditionID { get; set; }
-
-        public IDictionary<string, object> AsData()
-        {
-            return new Dictionary<string, object>();
-        }
     }
 }

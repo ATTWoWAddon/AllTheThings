@@ -13,10 +13,5 @@ namespace ATT.DB.Types
         public long GlyphType { get; set; }
         public long GlyphExclusiveCategoryID { get; set; }
         public long SpellIconFileDataID { get; set; }
-
-        public IDictionary<string, object> AsData()
-        {
-            return new Dictionary<string, object>();
-        }
     }
 }

@@ -24,10 +24,5 @@ namespace ATT.DB.Types
         public long AreaID_1 { get; set; }
         public long AreaID_2 { get; set; }
         public long AreaID_3 { get; set; }
-
-        public IDictionary<string, object> AsData()
-        {
-            return new Dictionary<string, object>();
-        }
     }
 }

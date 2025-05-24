@@ -9,11 +9,39 @@ namespace ATT.DB.Types
     [DataModule]
     public class Item : IDBType
     {
+        [ExportableData("itemID")]
         public long ID { get; set; }
+        [ExportableData("_class")]
         public long ClassID { get; set; }
+        [ExportableData("_subclass")]
         public long SubclassID { get; set; }
+        [ExportableData("_inventoryType")]
         public long InventoryType { get; set; }
         public long RequiredLevel { get; set; }
+
+
+        [ExportableData("lvl")]
+        public object RequiredLevelHeleper
+        {
+            get
+            {
+                long lvl = RequiredLevel;
+                if (lvl > 1) return lvl;
+                return null;
+            }
+        }
+
+        [ExportableData("spellID")]
+        public object SpellIDHeleper
+        {
+            get
+            {
+                long? spellID = SpellID;
+                if (spellID.HasValue) return spellID.Value;
+                return null;
+            }
+        }
+
         public long? SpellID => Effects.FirstOrDefault(x => x.SpellID != 0)?.SpellID;
 
         private List<ItemEffect> _effects;
@@ -41,27 +69,6 @@ namespace ATT.DB.Types
                 });
                 return _effects;
             }
-        }
-
-        public IDictionary<string, object> AsData()
-        {
-            var data = new Dictionary<string, object>
-            {
-                { "itemID", ID },
-                { "_class", ClassID },
-                { "_subclass", SubclassID },
-                { "_inventoryType", InventoryType },
-            };
-            long lvl = RequiredLevel;
-            if (lvl > 1) data["lvl"] = lvl;
-            long? spellID = SpellID;
-            if (spellID.HasValue)
-            {
-                data["spellID"] = spellID.Value;
-            }
-            // big spam!
-            //Framework.LogDebug("INFO: Using Wago Item Data", data);
-            return data;
         }
     }
 }

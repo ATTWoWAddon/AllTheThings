@@ -52,13 +52,13 @@ namespace ATT
         {
             // Combine DB information
             // Achievements
-            MergeAchievementDB(WagoData.GetAll<Achievement>().Values.Select(i => i.AsData()), true);
+            MergeAchievementDB(WagoData.GetAll<Achievement>().Values.Select(i => i.GetExportableData()), true);
 
             // Items
-            MergeItemDB(WagoData.GetAll<Item>().Values.Select(i => i.AsData()));
+            MergeItemDB(WagoData.GetAll<Item>().Values.Select(i => i.GetExportableData()));
 
             // Item Search Name (Quality, Required Skills, Item Level, Race/Class Requirements)
-            MergeItemDB(WagoData.GetAll<ItemSearchName>().Values.Select(i => i.AsData()));
+            MergeItemDB(WagoData.GetAll<ItemSearchName>().Values.Select(i => i.GetExportableData()));
 
             // GlyphGB
             foreach (var glyph in WagoData.GetAll<GlyphProperties>().Values)
@@ -1226,11 +1226,11 @@ namespace ATT
                     // otherwise it can remain directly listed in the Ensemble
                     if (TryGetTypeDBObjectCollection(sourceID, out List<TransmogSetItem> tmogSetItems, nameof(TransmogSetItem.ItemModifiedAppearanceID)))
                     {
-                        IDictionary<string, object> source = tmogSetItems.FirstOrDefault()?.AsData();
+                        IDictionary<string, object> source = tmogSetItems.FirstOrDefault()?.GetExportableData();
                         if (source == null)
                         {
                             LogWarn($"Ensemble via SpellID {spellID} sourcing SourceID {sourceID} which is not associated with a TransmogSetItem", data);
-                            source = new TransmogSetItem { ItemModifiedAppearanceID = sourceID }.AsData();
+                            source = new TransmogSetItem { ItemModifiedAppearanceID = sourceID }.GetExportableData();
                         }
                         source["_generated"] = true;
                         Items.DetermineItemID(source);
@@ -2488,7 +2488,7 @@ namespace ATT
                 }
                 else
                 {
-                    IDictionary<string, object> criteriaData = criteria.AsData();
+                    IDictionary<string, object> criteriaData = criteria.GetExportableData();
                     criteriaData["achID"] = achID;
                     // capture the parent criteria tree amount multiplier if it exists, so when the criteria data is incorporated we can properly utilize the value
                     if (criteriaTree.Operator == 0 && criteriaTree.Amount > 0)

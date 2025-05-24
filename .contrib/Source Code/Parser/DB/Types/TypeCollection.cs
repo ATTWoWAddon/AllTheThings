@@ -6,17 +6,18 @@ namespace ATT.DB.Types
     public class TypeCollection<T> : IDBType
         where T : IDBType
     {
+        [ExportableData("id")]
         public long ID { get; set; }
 
         public List<T> Collection { get; set; } = new List<T>();
 
-        public IDictionary<string, object> AsData()
+        [ExportableData("g")]
+        public IEnumerable<Dictionary<string, object>> G
         {
-            return new Dictionary<string, object>
+            get
             {
-                { "id", ID },
-                { "g", Collection.Select(i => i.AsData()) },
-            };
+                return Collection.Select(i => i.GetExportableData());
+            }
         }
     }
 }

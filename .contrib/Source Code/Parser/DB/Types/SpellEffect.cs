@@ -14,11 +14,6 @@ namespace ATT.DB.Types
         public long EffectMiscValue_0 { get; set; }
         public long SpellID { get; set; }
 
-        public IDictionary<string, object> AsData()
-        {
-            return new Dictionary<string, object>();
-        }
-
         public bool IsQuest() => Effect == 16;
         public bool IsLearnedTransmogSet() => Effect == 255;
     }

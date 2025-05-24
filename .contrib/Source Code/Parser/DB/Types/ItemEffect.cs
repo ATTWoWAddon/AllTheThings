@@ -12,11 +12,6 @@ namespace ATT.DB.Types
         public int TriggerType { get; set; }
         public int SpellID { get; set; }
 
-        public IDictionary<string, object> AsData()
-        {
-            return new Dictionary<string, object>();
-        }
-
         public bool IsKnownTriggerType() =>
             TriggerWhenUseSpellID() > 0 ||
             TriggerWhenEquipSpellID() > 0 ||

@@ -158,6 +158,47 @@ namespace ATT
                     Console.Write(modulePair.Value.Count);
                     Console.WriteLine(" total entries");
                 }
+
+                if (WagoData.TryGetValue(2336, out Achievement achievement))
+                {
+                    var exportedData = WagoData.GetExportableData<Achievement>(achievement);
+
+                    Console.WriteLine($"EXPORTED DATA [{achievement.ID}]:");
+                    if (exportedData != null)
+                    {
+                        foreach (var pair in exportedData)
+                        {
+                            Console.Write("  ");
+                            Console.Write(pair.Key);
+                            Console.Write(": ");
+                            Console.WriteLine(pair.Value);
+                        }
+                    }
+                    else Console.WriteLine("  NO EXPORTED DATA FOUND");
+
+                    var localizedData = WagoData.GetLocalizedData<Achievement>(achievement.ID);
+
+                    Console.WriteLine($"LOCALIZED DATA [{achievement.ID}]: {achievement.Title_lang}");
+                    if (localizedData != null)
+                    {
+                        foreach (var pair in localizedData)
+                        {
+                            Console.Write("  ");
+                            Console.Write(pair.Key);
+                            Console.WriteLine(": ");
+                            foreach (var localeDataPair in pair.Value)
+                            {
+                                Console.Write("   ");
+                                Console.Write(localeDataPair.Key);
+                                Console.Write(": ");
+                                Console.WriteLine(localeDataPair.Value);
+                            }
+                        }
+                    }
+                    else Console.WriteLine("  NO LOCALIZED DATA FOUND");
+                    Console.ReadLine();
+                }
+
                 // Load all of the Lua files into the database.
                 var mainFileName = $"{databaseRootFolder}\\..\\_main.lua";
                 var luaFiles = Directory.GetFiles(databaseRootFolder, "*.lua", SearchOption.AllDirectories).ToList();

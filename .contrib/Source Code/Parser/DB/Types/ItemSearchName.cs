@@ -11,6 +11,7 @@ namespace ATT.DB.Types
     [DataModule]
     public class ItemSearchName : IDBType, IWagoDBItemExtension
     {
+        [ExportableData("itemID")]
         public long ID { get; set; }
         public long ItemID { get {  return ID; } }
         public long AllowableRace { get; set; }
@@ -32,81 +33,136 @@ namespace ATT.DB.Types
         public long Flags_3 { get; set; }
         public long Flags_4 { get; set; }
 
-        public IDictionary<string, object> AsData()
+        #region Data Transformation Helpers
+        [ExportableData("q")]
+        public object OverallQualityIDHelper
         {
-            var data = new Dictionary<string, object>
+            get
             {
-                { "itemID", ID },
-            };
-
-            // CRIEVE NOTE: Item Quality is used in the addon's logic, despite being something that can be obtained dynamically. (albeit slowly, using an API)
-            // This might be best to include as a base value for that purpose.
-            long q = OverallQualityID;
-            if (q >= 0) data["q"] = q;
-
-            // CRIEVE NOTE: ilvl is dynamically found within the addon's class logic and doesn't need to be built into the DB directly as it has no purpose other than to display information.
-            //long iLvl = ItemLevel;
-            //if (iLvl > 1) data["iLvl"] = iLvl;
-
-            // CRIEVE NOTE: This might be useful...
-            long minFactionID = MinFactionID;
-            if (minFactionID > 0)
-            {
-                // NOTE: This value is between 0 and 7, not a reputation xp number.
-                data["minReputation"] = new List<object> { minFactionID, ConvertReputation(MinReputation) };
+                // CRIEVE NOTE: Item Quality is used in the addon's logic, despite being something that can be obtained dynamically. (albeit slowly, using an API)
+                // This might be best to include as a base value for that purpose.
+                if (OverallQualityID >= 0) return OverallQualityID;
+                return null;
             }
+        }
 
-            // CRIEVE NOTE: This might be useful...
-            long requiredSkill = RequiredSkill;
-            if (requiredSkill > 0)
+        /*
+        [ExportableData("iLvl")]
+        public object ItemLevelHelper
+        {
+            get
             {
-                // This is used to override the skill to be a specialization in most cases where both are specified.
-                long requiredAbility = RequiredAbility;
-                if (requiredAbility > 0) data["requireSkill"] = requiredAbility;
-                else data["requireSkill"] = requiredSkill;
-                long requiredSkillRank = RequiredSkillRank;
-                if (requiredSkillRank > 0)
+                // CRIEVE NOTE: ilvl is dynamically found within the addon's class logic and doesn't need to be built into the DB directly as it has no purpose other than to display information.
+                //long iLvl = ItemLevel;
+                //if (iLvl > 1) data["iLvl"] = iLvl;
+                return null;
+            }
+        }
+        */
+
+        [ExportableData("minReputation")]
+        public object MinFactionIDHelper
+        {
+            get
+            {
+                // CRIEVE NOTE: This might be useful...
+                long minFactionID = MinFactionID;
+                if (minFactionID > 0)
                 {
-                    data["learnedAt"] = requiredSkillRank;
+                    // NOTE: This value is between 0 and 7, not a reputation xp number.
+                    return new List<object> { minFactionID, ConvertReputation(MinReputation) };
                 }
+                return null;
             }
+        }
 
-            // Parse Class Requirements
-            long allowableClass = AllowableClass;
-            if (allowableClass > 0)
+        [ExportableData("requireSkill")]
+        public object RequiredSkillHelper
+        {
+            get
             {
-                var classes = new List<long>();
-                ClassTypeFlags classTypeFlags = (ClassTypeFlags)allowableClass;
-                if (!Has(classTypeFlags, ClassTypeFlags.ALL))
+                // CRIEVE NOTE: This might be useful...
+                long requiredSkill = RequiredSkill;
+                if (requiredSkill > 0)
                 {
-                    bool includedAll = true;
-                    foreach(var o in Framework.ALL_CLASSES)
+                    // This is used to override the skill to be a specialization in most cases where both are specified.
+                    long requiredAbility = RequiredAbility;
+                    if (requiredAbility > 0) return requiredAbility;
+                    return requiredSkill;
+                }
+                return null;
+            }
+        }
+
+        [ExportableData("learnedAt")]
+        public object RequiredSkillRankHelper
+        {
+            get
+            {
+                long requiredSkillRank = RequiredSkillRank;
+                if (requiredSkillRank > 0) return requiredSkillRank;
+                return null;
+            }
+        }
+
+        [ExportableData("c")]
+        public object AllowableClassHelper
+        {
+            get
+            {
+                // Parse Class Requirements
+                long allowableClass = AllowableClass;
+                if (allowableClass > 0)
+                {
+                    var classes = new List<long>();
+                    ClassTypeFlags classTypeFlags = (ClassTypeFlags)allowableClass;
+                    if (!Has(classTypeFlags, ClassTypeFlags.ALL))
                     {
-                        if (o is long classID)
+                        bool includedAll = true;
+                        foreach (var o in Framework.ALL_CLASSES)
                         {
-                            if (Has(classTypeFlags, CLASS_TYPE_FLAGS[classID])) classes.Add(classID);
-                            else includedAll = false;
+                            if (o is long classID)
+                            {
+                                if (Has(classTypeFlags, CLASS_TYPE_FLAGS[classID])) classes.Add(classID);
+                                else includedAll = false;
+                            }
+                        }
+                        if (classes.Count > 0 && !includedAll)
+                        {
+                            classes.Sort();
+                            return classes;
                         }
                     }
-                    if (classes.Count > 0 && !includedAll)
-                    {
-                        classes.Sort();
-                        data["c"] = classes;
-                    }
                 }
+                return null;
             }
+        }
 
-            // Is this Faction Exclusive?
-            if ((Flags_1 & 0x1) == 0x1)  // Horde Only
+        [ExportableData("r")]
+        public object FactionHelper
+        {
+            get
             {
-                data["r"] = 1;  // Horde Only!
+                // Is this Faction Exclusive?
+                if ((Flags_1 & 0x1) == 0x1)  // Horde Only
+                {
+                    return 1;  // Horde Only!
+                }
+                else if ((Flags_1 & 0x2) == 0x2)  // Alliance Only
+                {
+                    return 2;  // Alliance Only!
+                }
+                return null;
             }
-            else if ((Flags_1 & 0x2) == 0x2)  // Alliance Only
+        }
+
+        [ExportableData("races")]
+        public object AllowableRaceHelper
+        {
+            get
             {
-                data["r"] = 2;  // Alliance Only!
-            }
-            else
-            {
+                if(FactionHelper == null) return null;
+
                 // Parse Race Requirements
                 long allowableRace = AllowableRace;
                 if (allowableRace > 0)
@@ -128,14 +184,14 @@ namespace ATT.DB.Types
                         if (races.Count > 0 && !includedAll)
                         {
                             races.Sort();
-                            data["races"] = races;
+                            return races;
                         }
                     }
                 }
+                return null;
             }
-
-            return data;
         }
+        #endregion
 
         private static readonly Dictionary<long, ClassTypeFlags> CLASS_TYPE_FLAGS = new Dictionary<long, ClassTypeFlags>
         {

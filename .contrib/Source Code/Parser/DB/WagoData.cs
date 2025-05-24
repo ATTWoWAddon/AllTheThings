@@ -101,6 +101,26 @@ namespace ATT.DB
         }
 
         /// <summary>
+        /// Get exportable data from the object id.
+        /// </summary>
+        /// <param name="id">The id of the object to export data for.</param>
+        /// <returns>The exportable data.</returns>
+        public static Dictionary<string, object> GetExportableData<T>(long id) where T : IDBType
+        {
+            return Cache<T>.GetExportableData(id);
+        }
+
+        /// <summary>
+        /// Get the exportable data for a given object.
+        /// </summary>
+        /// <param name="o">The object.</param>
+        /// <returns>The exportable data.</returns>
+        public static Dictionary<string, object> GetExportableData<T>(T o) where T : IDBType
+        {
+            return Cache<T>.GetExportableData(o);
+        }
+
+        /// <summary>
         /// The cached generic methods used by the default LoadFromCSV function.
         /// </summary>
         private static readonly Dictionary<string, MethodInfo> CachedGenericMethods = new Dictionary<string, MethodInfo>();
@@ -213,17 +233,28 @@ namespace ATT.DB
             public static readonly Type ParseType = typeof(T);
             public static readonly PropertyInfo[] AllProperties = ParseType.GetProperties();
             public static readonly Dictionary<string, PropertyInfo> AllPropertiesByName = new Dictionary<string, PropertyInfo>();
-            public static readonly List<PropertyInfo> LocalizedProperties = new List<PropertyInfo>();
+            public static readonly Dictionary<string, PropertyInfo> ExportableDataProperties;
+            public static readonly List<PropertyInfo> LocalizedProperties;
             static Cache()
             {
+                var exportableDataProperties = new Dictionary<string, PropertyInfo>();
                 var localizedProperties = new List<PropertyInfo>();
                 foreach (var property in AllProperties)
                 {
                     AllPropertiesByName[property.Name] = property;
+                    var dataAttribute = property.GetCustomAttribute<ExportableDataAttribute>();
+                    if (dataAttribute != null)
+                    {
+                        exportableDataProperties[dataAttribute.Name ?? property.Name] = property;
+                    }
                     if (property.GetCustomAttribute<LocalizeAttribute>() != null)
                     {
                         localizedProperties.Add(property);
                     }
+                }
+                if (exportableDataProperties.Count > 0)
+                {
+                    ExportableDataProperties = exportableDataProperties;
                 }
                 if (localizedProperties.Count > 0)
                 {
@@ -238,6 +269,38 @@ namespace ATT.DB
             /// All of the cached data for this type.
             /// </summary>
             public static readonly Dictionary<long, T> CachedData = new Dictionary<long, T>();
+
+            /// <summary>
+            /// Get exportable data from the object id.
+            /// </summary>
+            /// <param name="id">The id of the object to export data for.</param>
+            /// <returns>The exportable data.</returns>
+            public static Dictionary<string, object> GetExportableData(long id)
+            {
+                if (ExportableDataProperties == null || !TryGetValue(id, out T o)) return null;
+                var data = new Dictionary<string, object>();
+                foreach (var dataPropertyPair in ExportableDataProperties)
+                {
+                    data[dataPropertyPair.Key] = dataPropertyPair.Value.GetValue(o);
+                }
+                return data;
+            }
+
+            /// <summary>
+            /// Get the data fields that get injected directly into the database.
+            /// </summary>
+            /// <param name="o">The object.</param>
+            /// <returns>The data related to the object.</returns>
+            public static Dictionary<string, object> GetExportableData(T o)
+            {
+                if (ExportableDataProperties == null) return null;
+                var data = new Dictionary<string, object>();
+                foreach(var dataPropertyPair in ExportableDataProperties)
+                {
+                    data[dataPropertyPair.Key] = dataPropertyPair.Value.GetValue(o);
+                }
+                return data;
+            }
 
             /// <summary>
             /// Load the data from a CSV content string for the given locale.
@@ -290,16 +353,13 @@ namespace ATT.DB
             /// <returns>The localized property data.</returns>
             public static Dictionary<string, string> CheckLocalizedData(T o)
             {
-                if (LocalizedProperties != null)
+                if (LocalizedProperties == null) return null;
+                Dictionary<string, string> localizedData = new Dictionary<string, string>();
+                foreach (var property in LocalizedProperties)
                 {
-                    Dictionary<string, string> localizedData = new Dictionary<string, string>();
-                    foreach (var property in LocalizedProperties)
-                    {
-                        localizedData[property.Name] = (string)property.GetValue(o);
-                    }
-                    return localizedData;
+                    localizedData[property.Name] = (string)property.GetValue(o);
                 }
-                return null;
+                return localizedData;
             }
 
             /// <summary>
@@ -329,28 +389,26 @@ namespace ATT.DB
             /// <param name="locale">The locale.</param>
             public static void StoreLocalizedData(T o, string locale)
             {
-                if (LocalizedProperties != null)
+                if (LocalizedProperties == null) return;
+                if (!CachedLocalizedPropertyData.TryGetValue(o.ID, out Dictionary<string, Dictionary<string, string>> result))
                 {
-                    if (!CachedLocalizedPropertyData.TryGetValue(o.ID, out Dictionary<string, Dictionary<string, string>> result))
+                    CachedLocalizedPropertyData[o.ID] = result = new Dictionary<string, Dictionary<string, string>>();
+                }
+                foreach (var property in LocalizedProperties)
+                {
+                    var value = (string)property.GetValue(o);
+                    if (!string.IsNullOrWhiteSpace(value))
                     {
-                        CachedLocalizedPropertyData[o.ID] = result = new Dictionary<string, Dictionary<string, string>>();
-                    }
-                    foreach (var property in LocalizedProperties)
-                    {
-                        var value = (string)property.GetValue(o);
-                        if (!string.IsNullOrWhiteSpace(value))
+                        if (result.TryGetValue(property.Name, out Dictionary<string, string> localizedData))
                         {
-                            if (result.TryGetValue(property.Name, out Dictionary<string, string> localizedData))
-                            {
-                                localizedData[locale] = value.Trim();
-                            }
-                            else
-                            {
-                                result[property.Name] = new Dictionary<string, string>
+                            localizedData[locale] = value.Trim();
+                        }
+                        else
+                        {
+                            result[property.Name] = new Dictionary<string, string>
                                 {
                                     { locale, value.Trim() }
                                 };
-                            }
                         }
                     }
                 }
@@ -363,30 +421,28 @@ namespace ATT.DB
             /// <param name="locale">The locale.</param>
             public static void StoreLocalizedData(IDictionary<long, T> db, string locale)
             {
-                if (LocalizedProperties != null)
+                if (LocalizedProperties == null) return;
+                foreach (var updatedWagoDataPair in db)
                 {
-                    foreach (var updatedWagoDataPair in db)
+                    if (!CachedLocalizedPropertyData.TryGetValue(updatedWagoDataPair.Key, out Dictionary<string, Dictionary<string, string>> result))
                     {
-                        if (!CachedLocalizedPropertyData.TryGetValue(updatedWagoDataPair.Key, out Dictionary<string, Dictionary<string, string>> result))
+                        CachedLocalizedPropertyData[updatedWagoDataPair.Key] = result = new Dictionary<string, Dictionary<string, string>>();
+                    }
+                    foreach (var property in LocalizedProperties)
+                    {
+                        var value = (string)property.GetValue(updatedWagoDataPair.Value);
+                        if (!string.IsNullOrWhiteSpace(value))
                         {
-                            CachedLocalizedPropertyData[updatedWagoDataPair.Key] = result = new Dictionary<string, Dictionary<string, string>>();
-                        }
-                        foreach (var property in LocalizedProperties)
-                        {
-                            var value = (string)property.GetValue(updatedWagoDataPair.Value);
-                            if (!string.IsNullOrWhiteSpace(value))
+                            if (result.TryGetValue(property.Name, out Dictionary<string, string> localizedData))
                             {
-                                if (result.TryGetValue(property.Name, out Dictionary<string, string> localizedData))
-                                {
-                                    localizedData[locale] = value.Trim();
-                                }
-                                else
-                                {
-                                    result[property.Name] = new Dictionary<string, string>
+                                localizedData[locale] = value.Trim();
+                            }
+                            else
+                            {
+                                result[property.Name] = new Dictionary<string, string>
                                     {
                                         { locale, value.Trim() }
                                     };
-                                }
                             }
                         }
                     }
