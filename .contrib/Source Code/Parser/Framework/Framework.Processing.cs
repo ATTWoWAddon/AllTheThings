@@ -3930,116 +3930,99 @@ namespace ATT
                     {
                         // Note: Adding command options here requires adjusting the filter Regex for 'timeline' entries during MergeStringArrayData
                         case "created":
+                            // If it hasn't happened yet, then do a thing.
+                            if (CURRENT_SHORT_RELEASE_VERSION < entry.Version || CURRENT_RELEASE_VERSION < entry.LongVersion)
                             {
-                                if (CURRENT_SHORT_RELEASE_VERSION < entry.Version)
-                                {
-                                    // Not implemented yet and doesn't exist in the database.
-                                    return false;    // Invalid
-                                }
-                                else if (CURRENT_RELEASE_VERSION < entry.LongVersion)
-                                {
-                                    //Console.Write("NOT CREATED: ");
-                                    //Console.WriteLine(ToJSON(data));
-                                    // Not implemented yet and doesn't exist in the database.
-                                    return false;    // Invalid
-                                }
-
-                                // Mark this as Never Implemented
-                                if (!ProcessingUnsortedCategory)
-                                    removed = 1;
-                                break;
+                                //Console.Write("NOT CREATED: ");
+                                //Console.WriteLine(ToJSON(data));
+                                // Not implemented yet and doesn't exist in the database.
+                                return false;    // Invalid
                             }
+
+                            // Mark this as Never Implemented
+                            if (!ProcessingUnsortedCategory)
+                                removed = 1;
+                            break;
                         case "added":
+                            // If it hasn't happened yet, then do a thing.
+                            if (CURRENT_SHORT_RELEASE_VERSION < entry.Version || CURRENT_RELEASE_VERSION < entry.LongVersion)
                             {
-                                // If it hasn't happened yet, then do a thing.
-                                if (CURRENT_SHORT_RELEASE_VERSION < entry.Version)
+                                //Console.Write("NOT ADDED: ");
+                                //Console.WriteLine(ToJSON(data));
+                                // If this is the first patch the thing was added...
+                                if (index == 0)
                                 {
-                                    // If this is the first patch the thing was added...
-                                    if (index == 0)
-                                    {
-                                        // Not implemented yet and likely doesn't exist in the database.
-                                        // NOTE: If an item exists in the database but wasn't made available, use "created" instead!
-                                        return false;    // Invalid
-                                    }
+                                    // Not implemented yet and likely doesn't exist in the database.
+                                    // NOTE: If an item exists in the database but wasn't made available, use "created" instead!
+                                    return false;    // Invalid
                                 }
-                                else if (CURRENT_RELEASE_VERSION < entry.LongVersion)
+                            }
+                            else
+                            {
+                                if (removed == 2)
                                 {
-                                    //Console.Write("NOT ADDED: ");
-                                    //Console.WriteLine(ToJSON(data));
-                                    // If this is the first patch the thing was added...
-                                    if (index == 0)
-                                    {
-                                        // Not implemented yet and likely doesn't exist in the database.
-                                        // NOTE: If an item exists in the database but wasn't made available, use "created" instead!
-                                        return false;    // Invalid
-                                    }
-                                }
-                                else
-                                {
-                                    if (removed == 2)
-                                    {
-                                        readded = true;
-                                    }
-                                    // Cancel the Removed tag.
-                                    removed = 0;
+                                    readded = true;
                                 }
 
-                                // Mark the most relevant patch this was added or comes back
-                                if (entry.Version <= CURRENT_SHORT_RELEASE_VERSION || removed > 0)
-                                {
-                                    timeline.CurrentEntry = index;
-                                    addedPatch = entry.Version;
-                                }
-                                break;
+                                // Cancel the Removed tag.
+                                removed = 0;
                             }
+
+                            // Mark the most relevant patch this was added or comes back
+                            if (entry.Version <= CURRENT_SHORT_RELEASE_VERSION || removed > 0)
+                            {
+                                timeline.CurrentEntry = index;
+                                addedPatch = entry.Version;
+                            }
+
+                            break;
                         case "deleted":
+                            // If entry is before current release, mark current Thing as removed
+                            if (CURRENT_RELEASE_VERSION >= entry.LongVersion)
                             {
-                                // deleted only affects if the parse version has passed the timeline version
-                                if (CURRENT_RELEASE_VERSION >= entry.LongVersion)
-                                {
-                                    // the last entry in the timeline is this deleted change
-                                    if (index == lastIndex)
-                                    {
-                                        // We don't want things that got deleted to be in the addon.
-                                        // NOTE: If it's not the last entry, that means it might have been readded later?
-                                        // CRIEVE NOTE: Braghe wanted Debug Mode to not completely delete a thing from the exported Debug files...
-                                        // Deleting it from the actual database is actually expected for the real builds,
-                                        // so don't remove this. This is how I want it. Thanks!
-                                        if (!DebugMode) return false;    // Invalid
-                                    }
+                                removed = 4;
+                                readded = false;
 
-                                    // just in case parsing with Debug and verifying in-game... we would want Deleted to show as Removed
-                                    removed = 4;
-                                    readded = false;
-                                    // Mark the first patch this was removed on. (the upcoming patch)
-                                    if (removedPatch <= 10000)
-                                    {
-                                        timeline.CurrentEntry = index;
-                                        removedPatch = entry.Version;
-                                    }
+                                // the last entry in the timeline is this deleted change
+                                if (index == lastIndex)
+                                {
+                                    // We don't want things that got deleted to be in the addon.
+                                    // NOTE: If it's not the last entry, that means it might have been readded later?
+                                    // CRIEVE NOTE: Braghe wanted Debug Mode to not completely delete a thing from the exported Debug files...
+                                    // Deleting it from the actual database is actually expected for the real builds,
+                                    // so don't remove this. This is how I want it. Thanks!
+                                    if (!DebugMode) return false;    // Invalid
                                 }
-                                break;
                             }
-                        case "removed":
+
+                            // Set new removed patch value when:
+                            // a) Removed patch is default value OR
+                            // b) Removed patch is smaller than added patch AND added patch value is smaller than current release
+                            if (removedPatch <= 10000 || (removedPatch < addedPatch && addedPatch <= CURRENT_SHORT_RELEASE_VERSION))
                             {
-                                if (CURRENT_RELEASE_VERSION >= entry.LongVersion)
-                                {
-                                    removed = 2;
-                                    readded = false;
-                                    // Mark the most recent patch this was removed
-                                    if (removedPatch <= 10000)
-                                    {
-                                        timeline.CurrentEntry = index;
-                                        removedPatch = entry.Version;
-                                    }
-                                }
-                                else
-                                {
-                                    // Mark the first patch this was removed on. (the upcoming patch)
-                                    if (removedPatch <= 10000) removedPatch = entry.Version;
-                                }
-                                break;
+                                timeline.CurrentEntry = index;
+                                removedPatch = entry.Version;
                             }
+
+                            break;
+                        case "removed":
+                            // If entry is before current release, mark current Thing as removed
+                            if (CURRENT_RELEASE_VERSION >= entry.LongVersion)
+                            {
+                                removed = 2;
+                                readded = false;
+                            }
+
+                            // Set new removed patch value when:
+                            // a) Removed patch is default value OR
+                            // b) Removed patch is smaller than added patch AND added patch is smaller than current release
+                            if (removedPatch <= 10000 || (removedPatch < addedPatch && addedPatch <= CURRENT_SHORT_RELEASE_VERSION))
+                            {
+                                timeline.CurrentEntry = index;
+                                removedPatch = entry.Version;
+                            }
+
+                            break;
                     }
                 }
 
@@ -4098,7 +4081,7 @@ namespace ATT
                 }
 
                 // Future Unobtainable
-                if (removedPatch > 10000 && !readded)
+                if (removedPatch > 10000)
                 {
                     if (data.TryGetValue("rwp", out long rwp) && rwp != removedPatch)
                     {
