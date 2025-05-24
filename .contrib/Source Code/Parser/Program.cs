@@ -161,9 +161,8 @@ namespace ATT
 
                 if (WagoData.TryGetValue(2336, out Achievement achievement))
                 {
-                    var exportedData = WagoData.GetExportableData<Achievement>(achievement);
-
                     Console.WriteLine($"EXPORTED DATA [{achievement.ID}]:");
+                    var exportedData = achievement.GetExportableData();
                     if (exportedData != null)
                     {
                         foreach (var pair in exportedData)
