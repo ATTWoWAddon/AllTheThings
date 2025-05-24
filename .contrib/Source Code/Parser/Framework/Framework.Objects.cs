@@ -1068,7 +1068,7 @@ namespace ATT
                 var AllContainerClones = new SortedDictionary<string, List<object>>(AllContainers);
 
                 var filename = Path.Combine(directory, "Categories.lua");
-                var content = ATT.Export.ExportCompressedLuaCategories(AllContainerClones).ToString().Replace("\r\n", "\n").Trim();
+                var content = ATT.Export.ExportCompressedLuaCategories(AllContainerClones).ToString();
                 if (!string.IsNullOrEmpty(DATA_REQUIREMENTS)) content = $"if not ({DATA_REQUIREMENTS}) then return; end \n{content}";
                 WriteIfDifferent(filename, content);
             }

@@ -1040,38 +1040,31 @@ namespace ATT
                 }
 
                 // Attempt to get the SourceID from the ItemModifiedAppearanceDB
-                long longSourceIDKey = (long)sourceIDKey;
                 long? ItemModifiedAppearanceID = null;
                 ItemModifiedAppearance itemModifiedAppearance = null;
-                var itemModifiedAppearances = WagoData.Enumerate<ItemModifiedAppearance>((si) =>
-                {
-                    return si.ItemAppearanceID == longSourceIDKey;
-                }).ToList();
+                var itemModifiedAppearances = WagoData.EnumerateForItemID<ItemModifiedAppearance>((long)sourceIDKey).ToList();
                 if (itemModifiedAppearances.Count > 0)
                 {
                     // Try to find the best match for the item appearance modifier ID.
                     long bestItemAppearanceModifierID = 9999;
-                    foreach (var itemModifiedAppearanceObj in itemModifiedAppearances)
+                    foreach (ItemModifiedAppearance appearance in itemModifiedAppearances)
                     {
-                        if (itemModifiedAppearanceObj is ItemModifiedAppearance appearance)
+                        // Well, we found the sourceID in the database. Let's report it.
+                        if (AssignedItemAppearanceModifierID == 0 && appearance.ID == sourceIDFromSourcesDB)
                         {
-                            // Well, we found the sourceID in the database. Let's report it.
-                            if (AssignedItemAppearanceModifierID == 0 && appearance.ID == sourceIDFromSourcesDB)
-                            {
-                                itemModifiedAppearance = appearance;
-                                break;
-                            }
-                            if (appearance.ItemAppearanceModifierID == ItemAppearanceModifierID)
-                            {
-                                // Set the selected default one to the matched appearance, but don't forget about the exact match.
-                                itemModifiedAppearance = appearance;
-                                bestItemAppearanceModifierID = -1;
-                            }
-                            else if (bestItemAppearanceModifierID > appearance.ItemAppearanceModifierID)
-                            {
-                                itemModifiedAppearance = appearance;
-                                bestItemAppearanceModifierID = appearance.ItemAppearanceModifierID;
-                            }
+                            itemModifiedAppearance = appearance;
+                            break;
+                        }
+                        if (appearance.ItemAppearanceModifierID == ItemAppearanceModifierID)
+                        {
+                            // Set the selected default one to the matched appearance, but don't forget about the exact match.
+                            itemModifiedAppearance = appearance;
+                            bestItemAppearanceModifierID = -1;
+                        }
+                        else if (bestItemAppearanceModifierID > appearance.ItemAppearanceModifierID)
+                        {
+                            itemModifiedAppearance = appearance;
+                            bestItemAppearanceModifierID = appearance.ItemAppearanceModifierID;
                         }
                     }
                     if (itemModifiedAppearance != null)
