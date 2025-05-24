@@ -1,4 +1,5 @@
-﻿using ATT.DB.Types;
+﻿using ATT.DB;
+using ATT.DB.Types;
 using ATT.FieldTypes;
 using System;
 using System.Collections.Concurrent;
@@ -1030,8 +1031,7 @@ namespace ATT
                 long ItemAppearanceModifierID = NestedItemAppearanceModifierID;
                 long AssignedItemAppearanceModifierID = 0;
                 if (data.TryGetValue("artifactID", out var artifactIDObj)
-                    && TryGetTypeDBObject((long)artifactIDObj, out ArtifactAppearance artifactAppearance)
-                    && artifactAppearance != null)
+                    && WagoData.TryGetValue((long)artifactIDObj, out ArtifactAppearance artifactAppearance))
                 {
                     ItemAppearanceModifierID = artifactAppearance.ItemAppearanceModifierID;
                 }

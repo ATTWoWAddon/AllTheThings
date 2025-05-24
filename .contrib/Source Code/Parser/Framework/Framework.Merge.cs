@@ -893,6 +893,7 @@ namespace ATT
             return new List<object>();
         }
 
+        #region Old Style Wago parsing (Deprecated)
         /// <summary>
         /// Parse the Wago CSV database module.
         /// </summary>
@@ -1007,6 +1008,22 @@ namespace ATT
                 }
             }
         }
+
+        internal static bool TryGetTypeDBObjectCollection<T>(long collectionID, out List<T> children, string subname = null)
+            where T : IDBType
+        {
+            if (TypeDB.TryGetValue(typeof(T).Name + (subname ?? nameof(TypeCollection<T>)), out var typeDBCollection) &&
+                typeDBCollection.TryGetValue(collectionID, out IDBType childCollection) &&
+                childCollection is TypeCollection<T> childTrees)
+            {
+                children = childTrees.Collection;
+                return true;
+            }
+
+            children = default;
+            return false;
+        }
+        #endregion
 
         public static Dictionary<TKey, object> ParseAsDictionary<TKey>(LuaTable table)
         {

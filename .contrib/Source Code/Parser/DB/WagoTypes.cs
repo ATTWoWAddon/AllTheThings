@@ -7,6 +7,7 @@ using System.Reflection;
 
 namespace ATT.DB
 {
+    // DEPRECATED, use WagoData now.
     internal static class WagoTypes
     {
         /// <summary>

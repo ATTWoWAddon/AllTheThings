@@ -52,60 +52,42 @@ namespace ATT
         {
             // Combine DB information
             // Achievements
-            if (TypeDB.TryGetValue("Achievement", out IDictionary<long, IDBType> wagoAchDb))
-            {
-                MergeAchievementDB(wagoAchDb.Values.Select(i => i.AsData()), true);
-            }
+            MergeAchievementDB(WagoData.GetAll<Achievement>().Values.Select(i => i.AsData()), true);
 
             // Items
-            if (TypeDB.TryGetValue("Item", out IDictionary<long, IDBType> wagoItemDb))
-            {
-                MergeItemDB(wagoItemDb.Values.Select(i => i.AsData()));
-            }
+            MergeItemDB(WagoData.GetAll<Item>().Values.Select(i => i.AsData()));
 
             // Item Search Name (Quality, Required Skills, Item Level, Race/Class Requirements)
-            if (TypeDB.TryGetValue("ItemSearchName", out IDictionary<long, IDBType> wagoItemSearchDb))
-            {
-                MergeItemDB(wagoItemSearchDb.Values.Select(i => i.AsData()));
-            }
+            MergeItemDB(WagoData.GetAll<ItemSearchName>().Values.Select(i => i.AsData()));
 
             // GlyphGB
-            if (TypeDB.TryGetValue("GlyphProperties", out IDictionary<long, IDBType> wagoGlyphDb))
+            foreach (var glyph in WagoData.GetAll<GlyphProperties>().Values)
             {
-                foreach (var obj in wagoGlyphDb.Values)
-                {
-                    if (obj is GlyphProperties glyph)
-                    {
-                        GlyphDB[glyph.ID] = glyph.SpellID;
-                    }
-                }
+                GlyphDB[glyph.ID] = glyph.SpellID;
             }
 
             // FlightPathNames (FlightPathDB)
-            if (TypeDB.TryGetValue("TaxiNodes", out IDictionary<long, IDBType> wagoFlightPathDB))
+            foreach (var fp in WagoData.GetAll<TaxiNodes>().Values)
             {
-                foreach (var obj in wagoFlightPathDB.Values)
+                string englishName = fp.Name_lang;
+                if (!string.IsNullOrEmpty(englishName))
                 {
-                    if (obj is TaxiNodes fp)
+                    if (!FlightPathDB.TryGetValue(fp.ID, out var flightPath))
                     {
-                        string englishName = fp.Name_lang;
-                        if (!string.IsNullOrEmpty(englishName))
-                        {
-                            if (!FlightPathDB.TryGetValue(fp.ID, out var flightPath))
-                            {
-                                FlightPathDB[fp.ID] = flightPath = new Dictionary<string, object>();
-                            }
-                            flightPath["text"] = new Dictionary<string, object>
-                            {
-                                { "en", englishName.Trim() }
-                            };
-                        }
+                        FlightPathDB[fp.ID] = flightPath = new Dictionary<string, object>();
                     }
+
+                    // TODO: Once the data module is implemented completely, use GetLocalizedData instead.
+                    flightPath["text"] = new Dictionary<string, object>
+                    {
+                        { "en", englishName.Trim() }
+                    };
                 }
             }
 
             // ItemConversionDB
-            if (TypeDB.TryGetValue("ItemBonus", out IDictionary<long, IDBType> wagoItemBonusDb))
+            var ItemConversionDB = WagoData.GetAll<ItemBonus>().Values.Where(i => i.Type == 37).ToArray();
+            if (ItemConversionDB.Length > 0)
             {
                 var itemConversionDB = new Dictionary<long, object>();
                 Exports.Add("ItemConversionDB", itemConversionDB);
@@ -113,7 +95,7 @@ namespace ATT
                 {
                     compressed.Add("ItemConversionDB", true);
                 }
-                foreach (var obj in wagoItemBonusDb.Values.AsTypedEnumerable<ItemBonus>().Where(i => i.Type == 37))
+                foreach (var obj in ItemConversionDB)
                 {
                     itemConversionDB[obj.ParentItemBonusListID] = obj.Value_0;
                 }
@@ -2048,7 +2030,7 @@ namespace ATT
             // Pull in any defined Achievement Criteria/Tree unless we've defined it a 'meta' Achievement
             // TODO: include the WagoDB Achievement Data somehow...
             if (achInfo.TryGetValue("criteriaTreeID", out long criteriaTreeID) &&
-                TryGetTypeDBObject(criteriaTreeID, out CriteriaTree criteriaTree))
+                WagoData.TryGetValue(criteriaTreeID, out CriteriaTree criteriaTree))
             {
                 // Some Achievements we use specific symlinks to show information instead of Criteria (for pre-CATA parses)
                 if (CURRENT_RELEASE_VERSION < FIRST_EXPANSION_PATCH["CATA"].ConvertVersion() && CheckSymlink(data, "meta_achievement"))
@@ -2148,25 +2130,26 @@ namespace ATT
             }
 
             // Grab matching Criteria data
-            if (!TryGetTypeDBObject(criteriaID, out Criteria criteriaData))
+            if (!WagoData.TryGetValue(criteriaID, out Criteria criteriaData))
             {
                 // If it wasn't found by UID, then try to check by ID using Achievement referenced CriteriaTree
                 // Get matching Achievement
-                if (!TryGetTypeDBObject(achID, out Achievement achievementData))
+                if (!WagoData.TryGetValue(achID, out Achievement achievementData))
                 {
                     LogWarn($"Failed to find matching Achievement data (Wago) for ID: {achID}");
                     return;
                 }
 
                 // Get matching CriteriaTree
-                if (!TryGetTypeDBObject(achievementData.Criteria_tree, out CriteriaTree criteriaTreeData))
+                if (!WagoData.TryGetValue(achievementData.Criteria_tree, out CriteriaTree criteriaTreeData))
                 {
                     LogWarn($"Failed to find matching CriteriaTree data (Wago) for ID: {achievementData.Criteria_tree}");
                     return;
                 }
 
                 // Get children of the CriteriaTree
-                if (TryGetTypeDBObjectChildren(criteriaTreeData, out List<CriteriaTree> children))
+                var children = criteriaTreeData.GetChildren().ToList();
+                if (children.Count > 0)
                 {
                     long critIndex = criteriaID - 1;
                     foreach (CriteriaTree child in children)
@@ -2201,7 +2184,7 @@ namespace ATT
                 }
 
                 // See if we didn't end up with a valid UID with nothing nested
-                LogWarn($"Criteria {achID}:{criteriaID} is weird. It uses unsupported CriteriaUID: {ToJSON(GetAllNestedTypeDBObjects(criteriaTreeData).Select(t => t.CriteriaID).Where(id => id > 0).ToList())}");
+                LogWarn($"Criteria {achID}:{criteriaID} is weird. It uses unsupported CriteriaUID: {ToJSON(criteriaTreeData.GetChildren().Select(t => t.CriteriaID).Where(id => id > 0).ToList())}");
                 Log($"--- Please ensure the data is accurate and add [\"_noautomation\"] = true, to the crit() group to remove this warning.");
                 return;
             }
@@ -2337,23 +2320,20 @@ namespace ATT
             long worldMapOverlayID = criteriaData.GetExplorationWorldMapOverlayID();
             if (worldMapOverlayID > 0)
             {
-                if (TypeDB.TryGetValue("WorldMapOverlay", out IDictionary<long, IDBType> WorldMapOverlay))
+                if (WagoData.TryGetValue<WorldMapOverlay>(worldMapOverlayID, out var overlay))
                 {
-                    if (WorldMapOverlay.TryGetValue(worldMapOverlayID, out IDBType obj) && obj is WorldMapOverlay overlay)
+                    long explorationID = overlay.AreaID_0;
+                    if (explorationID > 0)
                     {
-                        long explorationID = overlay.AreaID_0;
-                        if (explorationID > 0)
+                        if (!TryGetSOURCED("explorationID", explorationID, out _))
                         {
-                            if (!TryGetSOURCED("explorationID", explorationID, out _))
-                            {
-                                LogWarn($"Exploration {explorationID} should be sourced for nesting Criteria {achID}:{criteriaID}");
-                            }
-                            else
-                            {
-                                LogDebug($"INFO: Added _exploration to Criteria {achID}:{criteriaID} => {explorationID}");
-                                Objects.Merge(data, "_exploration", explorationID);
-                                incorporated = true;
-                            }
+                            LogWarn($"Exploration {explorationID} should be sourced for nesting Criteria {achID}:{criteriaID}");
+                        }
+                        else
+                        {
+                            LogDebug($"INFO: Added _exploration to Criteria {achID}:{criteriaID} => {explorationID}");
+                            Objects.Merge(data, "_exploration", explorationID);
+                            incorporated = true;
                         }
                     }
                 }
@@ -2474,7 +2454,7 @@ namespace ATT
         {
             if (criteriaTree == null)
             {
-                if (!TryGetTypeDBObject(criteriaTreeID, out CriteriaTree refCriteriaTree))
+                if (!WagoData.TryGetValue(criteriaTreeID, out CriteriaTree refCriteriaTree))
                     return false;
 
                 criteriaTree = refCriteriaTree;
@@ -2483,7 +2463,7 @@ namespace ATT
             bool inGameIgnored = criteriaTree.IsIgnoreFlags() && !data.ContainsKey("_doautomation");
             bool incorporated = false;
             // CriteriaTree itself is linked to a Criteria
-            if (criteriaTree.CriteriaID != 0 && TryGetTypeDBObject(criteriaTree.CriteriaID, out Criteria criteria) && criteria.IsUseful())
+            if (criteriaTree.CriteriaID != 0 && WagoData.TryGetValue(criteriaTree.CriteriaID, out Criteria criteria) && criteria.IsUseful())
             {
                 long criteriaProviderItem = criteria.GetProviderItem();
                 // Don't incorporate ignore-flagged CriteriaTree whose Criteria is simply a provider Item (i.e. Old Crafty has 2 criteria both with same provider)
@@ -2608,7 +2588,7 @@ namespace ATT
             }
 
             // CriteriaTree can be a parent, which means the children should be incorporated as criteria of the data
-            if (criteriaTree.IsUseful() && TryGetTypeDBObjectChildren(criteriaTree, out List<CriteriaTree> childTrees))
+            if (criteriaTree.IsUseful())
             {
                 // Don't incorporate multiple Criteria from an ignored CriteriaTree
                 if (inGameIgnored)
@@ -2617,90 +2597,96 @@ namespace ATT
                     return false;
                 }
 
-                if (criteriaTree.IsAllianceOnlyFlags())
+                var childTrees = criteriaTree.GetChildren().ToList();
+                if (childTrees.Count > 0)
                 {
-                    extraData = extraData ?? new Dictionary<string, object>();
-                    extraData["r"] = 2;
-                    TrackIncorporationData(data, "r", 2);
-                }
-                else if (criteriaTree.IsHordeOnlyFlags())
-                {
-                    extraData = extraData ?? new Dictionary<string, object>();
-                    extraData["r"] = 1;
-                    TrackIncorporationData(data, "r", 1);
-                }
 
-                foreach (CriteriaTree child in childTrees)
-                {
-                    if (level == 0)
+                    if (criteriaTree.IsAllianceOnlyFlags())
                     {
-                        // add level 1 criteriaIndex for proper name retrieval in game
                         extraData = extraData ?? new Dictionary<string, object>();
-                        extraData["id"] = child.OrderIndex + 1;
+                        extraData["r"] = 2;
+                        TrackIncorporationData(data, "r", 2);
+                    }
+                    else if (criteriaTree.IsHordeOnlyFlags())
+                    {
+                        extraData = extraData ?? new Dictionary<string, object>();
+                        extraData["r"] = 1;
+                        TrackIncorporationData(data, "r", 1);
                     }
 
-                    incorporated |= Incorporate_CriteriaTree(achID, data, child.ID, child, childTrees.Count == 1, level + 1, extraData, criteriaTree.UseIndependentCriteria());
-                }
-
-                long criteriaIndex = criteriaTree.OrderIndex + 1;
-                // beyond the first criteriatree split merging into an achievement, we instead want the criteriatree
-                // data to merge directly into criteria index groups if sourced
-                if (level == 1)
-                {
-                    // see if a CriteriaID by OrderIndex exists, and see if we need to warn about extra data that it contains, if we didn't end up incorporating any criteria
-                    if (data.TryGetValue("g", out List<object> datag))
+                    foreach (CriteriaTree child in childTrees)
                     {
-                        // since we're nesting sub-criteria individually, we don't need an indexed-criteria which represents the cumulative value of those nested criteria
-                        for (int i = datag.Count - 1; i >= 0; i--)
+                        if (level == 0)
                         {
-                            IDictionary<string, object> obj = datag[i] as IDictionary<string, object>;
-                            if (obj.TryGetValue("criteriaID", out long objCriteriaID) && objCriteriaID == criteriaIndex)
-                            {
-                                if (obj.TryGetValue("_noautomation", out bool noautomation) && noautomation)
-                                {
-                                    return incorporated;
-                                }
+                            // add level 1 criteriaIndex for proper name retrieval in game
+                            extraData = extraData ?? new Dictionary<string, object>();
+                            extraData["id"] = child.OrderIndex + 1;
+                        }
 
-                                if (incorporated)
+                        incorporated |= Incorporate_CriteriaTree(achID, data, child.ID, child, childTrees.Count == 1, level + 1, extraData, criteriaTree.UseIndependentCriteria());
+                    }
+
+                    long criteriaIndex = criteriaTree.OrderIndex + 1;
+                    // beyond the first criteriatree split merging into an achievement, we instead want the criteriatree
+                    // data to merge directly into criteria index groups if sourced
+                    if (level == 1)
+                    {
+                        // see if a CriteriaID by OrderIndex exists, and see if we need to warn about extra data that it contains, if we didn't end up incorporating any criteria
+                        if (data.TryGetValue("g", out List<object> datag))
+                        {
+                            // since we're nesting sub-criteria individually, we don't need an indexed-criteria which represents the cumulative value of those nested criteria
+                            for (int i = datag.Count - 1; i >= 0; i--)
+                            {
+                                IDictionary<string, object> obj = datag[i] as IDictionary<string, object>;
+                                if (obj.TryGetValue("criteriaID", out long objCriteriaID) && objCriteriaID == criteriaIndex)
                                 {
-                                    LogDebug($"Removing existing Criteria by Index: {achID}:{objCriteriaID}");
-                                    datag.RemoveAt(i);
-                                    // but any other data needs to be preserved somehow, can warn contrib to migrate to new UIDs
-                                    obj.Remove("criteriaID");
-                                    obj.Remove("achID");
-                                    obj.Remove("timeline");
-                                    obj.Remove("awp");
-                                    obj.Remove("r");
-                                    obj.Remove("g");
-                                    if (obj.Keys.Count > 0)
+                                    if (obj.TryGetValue("_noautomation", out bool noautomation) && noautomation)
                                     {
-                                        LogWarn($"Migrate (or remove) extra data from {achID}:{criteriaIndex} into the proper sub-criteria(s): {ToJSON(GetAllNestedTypeDBObjects(criteriaTree).Select(t => t.CriteriaID).Where(id => id > 0).ToList())} <== ", obj);
+                                        return incorporated;
                                     }
+
+                                    if (incorporated)
+                                    {
+                                        LogDebug($"Removing existing Criteria by Index: {achID}:{objCriteriaID}");
+                                        datag.RemoveAt(i);
+                                        // but any other data needs to be preserved somehow, can warn contrib to migrate to new UIDs
+                                        obj.Remove("criteriaID");
+                                        obj.Remove("achID");
+                                        obj.Remove("timeline");
+                                        obj.Remove("awp");
+                                        obj.Remove("r");
+                                        obj.Remove("g");
+                                        if (obj.Keys.Count > 0)
+                                        {
+                                            LogWarn($"Migrate (or remove) extra data from {achID}:{criteriaIndex} into the proper sub-criteria(s): {ToJSON(criteriaTree.GetChildren().Select(t => t.CriteriaID).Where(id => id > 0).ToList())} <== ", obj);
+                                        }
+                                    }
+                                    else
+                                    {
+                                        LogWarn($"Add '_noautomation' to Criteria by Index: {achID}:{objCriteriaID} if it contains accurate data since it failed to incorporate useful data.");
+                                        incorporated = true;
+                                    }
+                                    break;
                                 }
-                                else
-                                {
-                                    LogWarn($"Add '_noautomation' to Criteria by Index: {achID}:{objCriteriaID} if it contains accurate data since it failed to incorporate useful data.");
-                                    incorporated = true;
-                                }
-                                break;
                             }
                         }
+
+                        // more than 1 useful & non-ignored criteria tree to nest, but none had any incorporated data, so add basic criterias by index
+                        if (!incorporated && !data.ContainsKey("achievement_criteria") && childTrees.Any(c => c.IsUseful() && !c.IsIgnoreFlags()))
+                        {
+                            extraData = extraData ?? new Dictionary<string, object>();
+                            if (extraData.TryGetValue("id", out long id) && id == criteriaIndex)
+                            {
+                                extraData.Remove("id");
+                            }
+                            extraData["criteriaID"] = criteriaIndex;
+                            extraData["achID"] = achID;
+                            extraData["_noautomation"] = true;
+                            LogDebug($"Added Criteria by Index {achID}:{criteriaIndex} since data incorporation had no useful criteria", extraData);
+                            Objects.Merge(data, "g", extraData);
+                        }
                     }
 
-                    // more than 1 useful & non-ignored criteria tree to nest, but none had any incorporated data, so add basic criterias by index
-                    if (!incorporated && !data.ContainsKey("achievement_criteria") && childTrees.Any(c => c.IsUseful() && !c.IsIgnoreFlags()))
-                    {
-                        extraData = extraData ?? new Dictionary<string, object>();
-                        if (extraData.TryGetValue("id", out long id) && id == criteriaIndex)
-                        {
-                            extraData.Remove("id");
-                        }
-                        extraData["criteriaID"] = criteriaIndex;
-                        extraData["achID"] = achID;
-                        extraData["_noautomation"] = true;
-                        LogDebug($"Added Criteria by Index {achID}:{criteriaIndex} since data incorporation had no useful criteria", extraData);
-                        Objects.Merge(data, "g", extraData);
-                    }
                 }
             }
 
@@ -2712,7 +2698,7 @@ namespace ATT
             bool incorporated = false;
             if (existingModifierTree == null)
             {
-                if (!TryGetTypeDBObject(id, out ModifierTree modifierTree))
+                if (!WagoData.TryGetValue(id, out ModifierTree modifierTree))
                     return incorporated;
 
                 existingModifierTree = modifierTree;
@@ -2854,12 +2840,9 @@ namespace ATT
             }
 
             // ModifierTree can be a parent, which means the children should be incorporated into the data instead
-            if (TryGetTypeDBObjectChildren(existingModifierTree, out List<ModifierTree> childTrees))
+            foreach (ModifierTree child in existingModifierTree.GetChildren())
             {
-                foreach (ModifierTree child in childTrees)
-                {
-                    incorporated |= Incorporate_ModifierTree(data, child.ID, child);
-                }
+                incorporated |= Incorporate_ModifierTree(data, child.ID, child);
             }
 
             return incorporated;
@@ -2871,7 +2854,7 @@ namespace ATT
             if (data.ContainsKey("_noautomation")) return;
             if (data.ContainsKey("_Incorporate_Ensemble")) return;
 
-            if (data.TryGetValue("tmogSetID", out long tmogSetID) && TryGetTypeDBObject(tmogSetID, out TransmogSet tmogSet) && tmogSet.TrackingQuestID > 0)
+            if (data.TryGetValue("tmogSetID", out long tmogSetID) && WagoData.TryGetValue(tmogSetID, out TransmogSet tmogSet) && tmogSet.TrackingQuestID > 0)
             {
                 Objects.Merge(data, "questID", tmogSet.TrackingQuestID);
                 TrackIncorporationData(data, "questID", tmogSet.TrackingQuestID);
@@ -2932,11 +2915,11 @@ namespace ATT
             List<long> allSourceIDs = transmogSetItems.Select(i => i.ItemModifiedAppearanceID).ToList();
 
             // check if other Ensembles have the same TrackingQuestID -- these seem to additionally be granted without relying on a nested SpellEffect trigger
-            if (data.TryGetValue("questID", out long questID) && TryGetTypeDBObjectCollection(questID, out List<TransmogSet> sameQuestTransmogSets))
+            if (data.TryGetValue("questID", out long questID))
             {
-                foreach (var sameQuestTransmogSet in sameQuestTransmogSets)
+                foreach (var sameQuestTransmogSet in WagoData.GetAll<TransmogSet>().Values)
                 {
-                    if (sameQuestTransmogSet.ID != tmogSetID)
+                    if (sameQuestTransmogSet.TrackingQuestID == questID && sameQuestTransmogSet.ID != tmogSetID)
                     {
                         if (!TryGetTypeDBObjectCollection(sameQuestTransmogSet.ID, out transmogSetItems))
                         {
@@ -2954,7 +2937,7 @@ namespace ATT
             // Remove any added SourceIDs which don't actually exist in the ItemModifiedAppearance DB
             allSourceIDs.RemoveAll(id =>
             {
-                if (!TryGetTypeDBObject<ItemModifiedAppearance>(id, out _))
+                if (!WagoData.ContainsKey<ItemModifiedAppearance>(id))
                 {
                     LogDebugWarn($"Removing SourceID {id} from TransmogSet {tmogSetID} since it does not exist in ItemModifiedAppearanceDB");
                     return true;
@@ -2993,7 +2976,7 @@ namespace ATT
             {
                 foreach (ItemXItemEffect itemXItemEffect in itemXItemEffects)
                 {
-                    if (!TryGetTypeDBObject(itemXItemEffect.ItemEffectID, out ItemEffect itemEffect))
+                    if (!WagoData.TryGetValue(itemXItemEffect.ItemEffectID, out ItemEffect itemEffect))
                         continue;
 
                     // ignore matching spellID effect
@@ -3052,7 +3035,7 @@ namespace ATT
                 {
                     // we only want to attach a questID to an Item if that Quest is only linked via 1 ItemEffect...
                     long spellID = spellEffect.SpellID;
-                    if (TryGetTypeDBObjectCollection(spellID, out List<ItemEffect> matchingItemEffects) && matchingItemEffects.Count > 1)
+                    if (WagoData.Enumerate<ItemEffect>((ef) => { return ef.SpellID == spellID; }).Count() > 1)
                     {
                         //LogDebug($"INFO: Ignored assignment of data 'questID' {spellEffect.EffectMiscValue_0} due to {matchingItemEffects.Count} shared ItemEffect use", data);
                         // assign this data as a provider of the questID instead since this data may link to multiple questIDs
@@ -3060,43 +3043,38 @@ namespace ATT
                     }
                     else
                     {
-                        using (IEnumerator<SpellEffect> spellEffectEnumerator = GetTypeDBObjects<SpellEffect>((se) =>
+                        // if there's a 2nd (or more) then ignore assigning the questID from a specific Spell
+                        if (WagoData.Enumerate<SpellEffect>((se) =>
                         {
                             // quest spelleffect with either same spellID or same quest (should only be 1 if we are going to apply it to an Item)
                             return se.IsQuest() && (se.SpellID == spellID || se.EffectMiscValue_0 == questID);
-                        }).GetEnumerator())
+                        }).Count() > 1)
                         {
-                            // we know there's 1 at least
-                            spellEffectEnumerator.MoveNext();
-                            // if there's a 2nd (or more) then ignore assigning the questID from a specific Spell
-                            if (spellEffectEnumerator.MoveNext())
+                            //LogDebug($"INFO: Ignored assignment of data 'questID' {questID} due to multiple SpellEffect use", data);
+                            // assign this data as a provider of the questID instead since this data links to multiple questIDs
+                            Assign_QuestProviderFromData(questID, data);
+                        }
+                        else
+                        {
+                            // we only want to attach a questID to an item if that Quest is only linked via 1 SpellEffect...
+                            // and not already Sourced as a Quest
+                            if (!TryGetSOURCED("questID", questID, out var sourcedQuests))
                             {
-                                //LogDebug($"INFO: Ignored assignment of data 'questID' {questID} due to multiple SpellEffect use", data);
-                                // assign this data as a provider of the questID instead since this data links to multiple questIDs
-                                Assign_QuestProviderFromData(questID, data);
+                                Objects.Merge(data, "questID", questID);
+                                LogDebug($"INFO: Assigned Item 'questID' {questID}", data);
+                                Objects.MergeQuestData(data);
+                                TrackIncorporationData(data, "questID", questID);
+                            }
+                            else if (sourcedQuests.TryGetAnyMatchingGroup(q => q.ContainsKey("_unsorted"), out var matchedQuest))
+                            {
+                                LogWarn($"Item 'questID' {questID} is currently listed in Unsorted but should be directly linked on the trigger group. Remove Unsorted group so the QuestID is not duplicated", data);
+                                Objects.Merge(data, "questID", questID);
+                                Objects.MergeQuestData(data);
+                                TrackIncorporationData(data, "questID", questID);
                             }
                             else
                             {
-                                // we only want to attach a questID to an item if that Quest is only linked via 1 SpellEffect...
-                                // and not already Sourced as a Quest
-                                if (!TryGetSOURCED("questID", questID, out var sourcedQuests))
-                                {
-                                    Objects.Merge(data, "questID", questID);
-                                    LogDebug($"INFO: Assigned Item 'questID' {questID}", data);
-                                    Objects.MergeQuestData(data);
-                                    TrackIncorporationData(data, "questID", questID);
-                                }
-                                else if (sourcedQuests.TryGetAnyMatchingGroup(q => q.ContainsKey("_unsorted"), out var matchedQuest))
-                                {
-                                    LogWarn($"Item 'questID' {questID} is currently listed in Unsorted but should be directly linked on the trigger group. Remove Unsorted group so the QuestID is not duplicated", data);
-                                    Objects.Merge(data, "questID", questID);
-                                    Objects.MergeQuestData(data);
-                                    TrackIncorporationData(data, "questID", questID);
-                                }
-                                else
-                                {
-                                    LogDebug($"INFO: Ignoring Item 'questID' {questID} since it is already Sourced", data);
-                                }
+                                LogDebug($"INFO: Ignoring Item 'questID' {questID} since it is already Sourced", data);
                             }
                         }
                     }
@@ -4515,75 +4493,6 @@ namespace ATT
             if (difficultyID < 0) return encounterID + ((Math.Abs(difficultyID) - 1000000) / 10000M);
             // expecting difficultyID to be a positive, 100-999 value
             return encounterID + difficultyID / 1000M;
-        }
-
-        internal static bool TryGetTypeDBObject<T>(long id, out T data)
-            where T : IDBType
-        {
-            if (TypeDB.TryGetValue(typeof(T).Name, out IDictionary<long, IDBType> db) &&
-                db.TryGetValue(id, out IDBType obj) &&
-                obj is T dbData)
-            {
-                data = dbData;
-                return true;
-            }
-
-            data = default;
-            return false;
-        }
-
-        private static IEnumerable<T> GetTypeDBObjects<T>(Func<T, bool> check)
-            where T : IDBType
-        {
-            if (!TypeDB.TryGetValue(typeof(T).Name, out IDictionary<long, IDBType> db)) yield break;
-
-            foreach (KeyValuePair<long, IDBType> kvp in db)
-            {
-                if ((kvp.Value is T dbData) && check(dbData))
-                {
-                    yield return dbData;
-                }
-            }
-        }
-
-        internal static bool TryGetTypeDBObjectChildren<T>(IDBType data, out List<T> children)
-            where T : IDBType
-        {
-            return TryGetTypeDBObjectCollection(data.ID, out children);
-        }
-
-        private static bool TryGetTypeDBObjectCollection<T>(long collectionID, out List<T> children, string subname = null)
-            where T : IDBType
-        {
-            if (TypeDB.TryGetValue(typeof(T).Name + (subname ?? nameof(TypeCollection<T>)), out var typeDBCollection) &&
-                typeDBCollection.TryGetValue(collectionID, out IDBType childCollection) &&
-                childCollection is TypeCollection<T> childTrees)
-            {
-                children = childTrees.Collection;
-                return true;
-            }
-
-            children = default;
-            return false;
-        }
-
-        private static IEnumerable<T> GetAllNestedTypeDBObjects<T>(T obj)
-            where T : IDBType
-        {
-            if (TryGetTypeDBObjectChildren(obj, out List<T> nested))
-            {
-                foreach (T child in nested)
-                {
-                    yield return child;
-
-                    foreach (T id in GetAllNestedTypeDBObjects(child))
-                    {
-                        yield return id;
-                    }
-                }
-            }
-
-            yield break;
         }
 
         private class TierList

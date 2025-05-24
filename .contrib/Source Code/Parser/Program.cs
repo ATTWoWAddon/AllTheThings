@@ -1,9 +1,12 @@
-﻿using System;
+﻿using ATT.DB;
+using ATT.DB.Types;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 
 namespace ATT
@@ -127,7 +130,14 @@ namespace ATT
                             }
                         }
                         filenames.Sort(StringComparer.InvariantCulture);
-                        foreach (var filename in filenames) Framework.ParseWagoCSV(filename);
+                        foreach (var filename in filenames)
+                        {
+                            // TODO: Use this instead.
+                            WagoData.LoadFromCSV(filename);
+
+                            // DEPRECATED: Old parsing style
+                            Framework.ParseWagoCSV(filename);
+                        }
 
                         if (Errored)
                         {
@@ -139,6 +149,15 @@ namespace ATT
                 }
                 while (Errored && !Framework.Automated);
 
+                Console.WriteLine($"ALL WAGO DATA MODULES: ");
+                foreach (var modulePair in WagoData.GetAllDataModules())
+                {
+                    Console.Write("  ");
+                    Console.Write(modulePair.Key);
+                    Console.Write(": ");
+                    Console.Write(modulePair.Value.Count);
+                    Console.WriteLine(" total entries");
+                }
                 // Load all of the Lua files into the database.
                 var mainFileName = $"{databaseRootFolder}\\..\\_main.lua";
                 var luaFiles = Directory.GetFiles(databaseRootFolder, "*.lua", SearchOption.AllDirectories).ToList();

@@ -24,14 +24,14 @@ namespace ATT.DB.Types
                 if (_effects != null) return _effects;
 
                 _effects = new List<ItemEffect>();
-                if (Framework.TryGetTypeDBObjectChildren(this, out List<ItemXItemEffect> xeffects))
+                foreach (var xeffect in WagoData.Enumerate<ItemXItemEffect>((x) =>
                 {
-                    foreach (var xeffect in xeffects)
+                    return x.ItemID == ID;
+                }))
+                {
+                    if (WagoData.TryGetValue(xeffect.ItemEffectID, out ItemEffect effect) && effect.IsKnownTriggerType())
                     {
-                        if (Framework.TryGetTypeDBObject(xeffect.ItemEffectID, out ItemEffect effect) && effect.IsKnownTriggerType())
-                        {
-                            _effects.Add(effect);
-                        }
+                        _effects.Add(effect);
                     }
                 }
 
