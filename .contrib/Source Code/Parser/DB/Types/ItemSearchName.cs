@@ -81,11 +81,14 @@ namespace ATT.DB.Types
         {
             get
             {
-                // This is used to override the skill to be a specialization in most cases where both are specified.
-                long requiredAbility = RequiredAbility;
-                if (requiredAbility > 0) return requiredAbility;
                 long requiredSkill = RequiredSkill;
-                if (requiredSkill > 0) return requiredSkill;
+                if (requiredSkill > 0)
+                {
+                    // This is used to override the skill to be a specialization in most cases where both are specified.
+                    long requiredAbility = RequiredAbility;
+                    if (requiredAbility > 0) return requiredAbility;
+                    return requiredSkill;
+                }
                 return null;
             }
         }
