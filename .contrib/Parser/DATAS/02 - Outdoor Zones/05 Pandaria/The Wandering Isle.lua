@@ -168,12 +168,12 @@ root(ROOTS.Zones, {
 					}),
 					un(REMOVED_FROM_GAME, q(29404)),	-- Much to Learn
 					un(REMOVED_FROM_GAME, q(30039)),	-- Much to Learn
-					un(REMOVED_FROM_GAME, q(30040)),	-- Much to Learn
+					un(REMOVED_FROM_GAME, q(30040)),	-- Much to Learn (Mage)
 					un(REMOVED_FROM_GAME, q(30041)),	-- Much to Learn
 					un(REMOVED_FROM_GAME, q(30042)),	-- Much to Learn
 					un(REMOVED_FROM_GAME, q(30043)),	-- Much to Learn
 					un(REMOVED_FROM_GAME, q(30044)),	-- Much to Learn
-					un(REMOVED_FROM_GAME, q(30045)),	-- Much to Learn
+					un(REMOVED_FROM_GAME, q(30045)),	-- Much to Learn (Warrior)
 					q(29800, {	-- New Allies
 						["provider"] = { "n", 57739 },	-- Ji Firepaw
 						["sourceQuests"] = { 29799 },	-- The Healing of Shen-zin Su
