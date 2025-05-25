@@ -81,15 +81,11 @@ namespace ATT.DB.Types
         {
             get
             {
-                // CRIEVE NOTE: This might be useful...
+                // This is used to override the skill to be a specialization in most cases where both are specified.
+                long requiredAbility = RequiredAbility;
+                if (requiredAbility > 0) return requiredAbility;
                 long requiredSkill = RequiredSkill;
-                if (requiredSkill > 0)
-                {
-                    // This is used to override the skill to be a specialization in most cases where both are specified.
-                    long requiredAbility = RequiredAbility;
-                    if (requiredAbility > 0) return requiredAbility;
-                    return requiredSkill;
-                }
+                if (requiredSkill > 0) return requiredSkill;
                 return null;
             }
         }
@@ -99,8 +95,11 @@ namespace ATT.DB.Types
         {
             get
             {
-                long requiredSkillRank = RequiredSkillRank;
-                if (requiredSkillRank > 0) return requiredSkillRank;
+                if (RequiredSkillHelper != null)
+                {
+                    long requiredSkillRank = RequiredSkillRank;
+                    if (requiredSkillRank > 0) return requiredSkillRank;
+                }
                 return null;
             }
         }
