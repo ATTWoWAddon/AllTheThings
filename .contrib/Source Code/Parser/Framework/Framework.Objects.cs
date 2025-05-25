@@ -866,6 +866,9 @@ namespace ATT
                 // Calculate the faction ID. (0 is no faction)
                 if (data.TryGetValue("races", out object racesRef) && racesRef is List<object> races)
                 {
+                    // Neutral Pandas technically get access to both horde and alliance things, the undecisive bastards.
+                    bool hadNeutralPandaren = races.Remove(24);
+
                     // Alliance Only?
                     if (ALLIANCE_ONLY.Matches(races))
                     {
@@ -878,10 +881,16 @@ namespace ATT
                         data["r"] = 1;  // Horde Only!
                         data.Remove("races");   // We do not need to include races for this as it is HORDE_ONLY.
                     }
-                    // All Races?
-                    else if (ALL_RACES.Matches(races))
+                    else
                     {
-                        data.Remove("races");   // We do not need to include races for this as it is ALL_RACES.
+                        // Add back neutral pandaren if we removed them.
+                        if (hadNeutralPandaren) races.Add(24);
+
+                        // All Races?
+                        if (ALL_RACES.Matches(races))
+                        {
+                            data.Remove("races");   // We do not need to include races for this as it is ALL_RACES.
+                        }
                     }
                 }
             }

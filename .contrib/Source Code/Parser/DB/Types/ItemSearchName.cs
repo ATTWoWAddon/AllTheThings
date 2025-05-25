@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Reflection.Emit;
@@ -158,39 +159,57 @@ namespace ATT.DB.Types
             }
         }
 
+        /// <summary>
+        /// This maintains a cache of AllowableRaces <=> Races lists so we don't need to recalculate the same thing twice.
+        /// </summary>
+        private static readonly Dictionary<long, List<long>> CALCULATED_RACES = new Dictionary<long, List<long>>();
+
+        private static Dictionary<long, long> RACE_FLAG_CACHE;
+        private static Dictionary<long, long> GenerateRaceFlags()
+        {
+            var dict = new Dictionary<long, long>();
+            foreach(var pair in RACE_TO_BIT_INDEX)
+            {
+                dict[pair.Key] = (long)Math.Pow(2, (long)pair.Value);
+            }
+            return dict;
+        }
+
         [ExportableData("races")]
         public object AllowableRaceHelper
         {
             get
             {
-                if(FactionHelper == null) return null;
+                if(FactionHelper == null || AllowableRace == -1) return null;
 
                 // Parse Race Requirements
-                long allowableRace = AllowableRace;
-                if (allowableRace > 0)
+                if (!CALCULATED_RACES.TryGetValue(AllowableRace, out var races))
                 {
                     // CRIEVE NOTE: This parsing is busted. AllowableRace is strangely formatted.
-                    var races = new List<long>();
-                    RaceTypeFlags flags = (RaceTypeFlags)allowableRace;
-                    if (!Has(flags, RaceTypeFlags.ALL))
+                    races = new List<long>();
+                    bool includedAll = true;
+                    var flags = RACE_FLAG_CACHE ?? (RACE_FLAG_CACHE = GenerateRaceFlags());
+                    foreach (var o in Framework.ALL_RACES)
                     {
-                        bool includedAll = true;
-                        foreach (var o in Framework.ALL_RACES)
+                        if (o is long raceID)
                         {
-                            if (o is long raceID)
-                            {
-                                if (Has(flags, RACE_TYPE_FLAGS[raceID])) races.Add(raceID);
-                                else includedAll = false;
-                            }
-                        }
-                        if (races.Count > 0 && !includedAll)
-                        {
-                            races.Sort();
-                            return races;
+                            if ((AllowableRace & flags[raceID]) > 0) races.Add(raceID);
+                            else includedAll = false;
                         }
                     }
+
+                    // If we didn't find anything or we included all of them, simply set it to null and return.
+                    if (races.Count < 1 || includedAll)
+                    {
+                        CALCULATED_RACES[AllowableRace] = null;
+                        return null;
+                    }
+
+                    // Cool, let's sort and assign it to the cache.
+                    races.Sort();
+                    CALCULATED_RACES[AllowableRace] = races;
                 }
-                return null;
+                return races;
             }
         }
         #endregion
@@ -212,45 +231,40 @@ namespace ATT.DB.Types
             { 13, ClassTypeFlags.EVOKER },
         };
 
-        private static readonly Dictionary<long, RaceTypeFlags> RACE_TYPE_FLAGS = new Dictionary<long, RaceTypeFlags>
+        private static readonly Dictionary<long, RaceTypeBitIndexes> RACE_TO_BIT_INDEX = new Dictionary<long, RaceTypeBitIndexes>
         {
-            { 1, RaceTypeFlags.HUMAN },
-            { 2, RaceTypeFlags.ORC },
-            { 3, RaceTypeFlags.DWARF },
-            { 4, RaceTypeFlags.NIGHTELF },
-            { 5, RaceTypeFlags.UNDEAD },
-            { 6, RaceTypeFlags.TAUREN },
-            { 7, RaceTypeFlags.GNOME },
-            { 8, RaceTypeFlags.TROLL },
-            { 9, RaceTypeFlags.GOBLIN },
-            { 10, RaceTypeFlags.BLOODELF },
-            { 11, RaceTypeFlags.DRAENEI },
-            { 22, RaceTypeFlags.WORGEN },
-            { 24, RaceTypeFlags.PANDAREN_NEUTRAL },
-            { 25, RaceTypeFlags.PANDAREN_ALLIANCE },
-            { 26, RaceTypeFlags.PANDAREN_HORDE },
-            { 27, RaceTypeFlags.NIGHTBORNE },
-            { 28, RaceTypeFlags.HIGHMOUNTAIN_TAUREN },
-            { 29, RaceTypeFlags.VOIDELF },
-            { 30, RaceTypeFlags.LIGHTFORGED },
-            { 31, RaceTypeFlags.ZANDALARI },
-            { 32, RaceTypeFlags.KULTIRAN },
-            { 34, RaceTypeFlags.DARKIRON },
-            { 35, RaceTypeFlags.VULPERA },
-            { 36, RaceTypeFlags.MAGHAR },
-            { 37, RaceTypeFlags.MECHAGNOME },
-            { 52, RaceTypeFlags.DRACTHYR_ALLIANCE },
-            { 70, RaceTypeFlags.DRACTHYR_HORDE },
-            { 84, RaceTypeFlags.EARTHEN_HORDE },
-            { 85, RaceTypeFlags.EARTHEN_ALLIANCE },
+            { 1, RaceTypeBitIndexes.HUMAN },
+            { 2, RaceTypeBitIndexes.ORC },
+            { 3, RaceTypeBitIndexes.DWARF },
+            { 4, RaceTypeBitIndexes.NIGHTELF },
+            { 5, RaceTypeBitIndexes.UNDEAD },
+            { 6, RaceTypeBitIndexes.TAUREN },
+            { 7, RaceTypeBitIndexes.GNOME },
+            { 8, RaceTypeBitIndexes.TROLL },
+            { 9, RaceTypeBitIndexes.GOBLIN },
+            { 10, RaceTypeBitIndexes.BLOODELF },
+            { 11, RaceTypeBitIndexes.DRAENEI },
+            { 22, RaceTypeBitIndexes.WORGEN },
+            { 24, RaceTypeBitIndexes.PANDAREN_NEUTRAL },
+            { 25, RaceTypeBitIndexes.PANDAREN_ALLIANCE },
+            { 26, RaceTypeBitIndexes.PANDAREN_HORDE },
+            { 27, RaceTypeBitIndexes.NIGHTBORNE },
+            { 28, RaceTypeBitIndexes.HIGHMOUNTAIN_TAUREN },
+            { 29, RaceTypeBitIndexes.VOIDELF },
+            { 30, RaceTypeBitIndexes.LIGHTFORGED },
+            { 31, RaceTypeBitIndexes.ZANDALARI },
+            { 32, RaceTypeBitIndexes.KULTIRAN },
+            { 34, RaceTypeBitIndexes.DARKIRON },
+            { 35, RaceTypeBitIndexes.VULPERA },
+            { 36, RaceTypeBitIndexes.MAGHAR },
+            { 37, RaceTypeBitIndexes.MECHAGNOME },
+            { 52, RaceTypeBitIndexes.DRACTHYR_ALLIANCE },
+            { 70, RaceTypeBitIndexes.DRACTHYR_HORDE },
+            { 84, RaceTypeBitIndexes.EARTHEN_HORDE },
+            { 85, RaceTypeBitIndexes.EARTHEN_ALLIANCE },
         };
 
         public bool Has(ClassTypeFlags flags, ClassTypeFlags c)
-        {
-            return (flags & c) == c;
-        }
-
-        public bool Has(RaceTypeFlags flags, RaceTypeFlags c)
         {
             return (flags & c) == c;
         }

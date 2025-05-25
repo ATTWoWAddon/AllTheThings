@@ -89,7 +89,7 @@
     <Compile Include="DB\Types\ArtifactAppearance.cs" />
     <Compile Include="DB\Types\ItemBonus.cs" />
     <Compile Include="DB\Types\WorldMapOverlay.cs" />
-    <Compile Include="DB\Types\RaceTypeFlags.cs" />
+    <Compile Include="DB\Types\RaceTypeBitIndexes.cs" />
     <Compile Include="DB\Types\ItemSearchName.cs" />
     <Compile Include="DB\Types\TaxiNodes.cs" />
     <Compile Include="DB\Types\ItemEffect.cs" />
