@@ -9,7 +9,7 @@ namespace ATT.DB.Types
     /// https://wago.tools/db2/ItemSearchName
     /// </summary>
     [DataModule]
-    public class ItemSearchName : IDBType, IWagoDBItemExtension
+    public class ItemSearchName : IDBType, IWagoItemID
     {
         [ExportableData("itemID")]
         public long ID { get; set; }

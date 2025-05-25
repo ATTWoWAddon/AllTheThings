@@ -80,8 +80,11 @@
     <Compile Include="DataValidator.cs" />
     <Compile Include="DB\Attributes\ExportableDataAttribute.cs" />
     <Compile Include="DB\Attributes\DataModuleAttribute.cs" />
-    <Compile Include="DB\Interfaces\IWagoDBItemExtension.cs" />
-    <Compile Include="DB\Interfaces\IWagoDBChildType.cs" />
+    <Compile Include="DB\Interfaces\IWagoItemModifiedAppearanceID.cs" />
+    <Compile Include="DB\Interfaces\IWagoTransmogSetID.cs" />
+    <Compile Include="DB\Interfaces\IWagoSpellID.cs" />
+    <Compile Include="DB\Interfaces\IWagoItemID.cs" />
+    <Compile Include="DB\Interfaces\IWagoChild.cs" />
     <Compile Include="DB\Attributes\LocalizeAttribute.cs" />
     <Compile Include="DB\Types\ArtifactAppearance.cs" />
     <Compile Include="DB\Types\ItemBonus.cs" />
@@ -141,7 +144,6 @@
     <Compile Include="DB\Types\Achievement.cs" />
     <Compile Include="DB\Types\Criteria.cs" />
     <Compile Include="DB\Types\CriteriaTree.cs" />
-    <Compile Include="DB\Types\TypeCollection.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

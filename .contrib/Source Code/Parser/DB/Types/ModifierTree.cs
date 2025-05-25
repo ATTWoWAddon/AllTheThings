@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace ATT.DB.Types
 {
     [DataModule]
-    public class ModifierTree : IDBType, IWagoDBChildType
+    public class ModifierTree : IDBType, IWagoChild
     {
         public long ID { get; set; }
         public long Parent { get; set; }

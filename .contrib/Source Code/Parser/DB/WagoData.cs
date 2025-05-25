@@ -1,4 +1,5 @@
-﻿using Csv;
+﻿using ATT.DB.Types;
+using Csv;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace ATT.DB
     /// <summary>
     /// The Wago data class manages the data structures contained within Wago database modules.
     /// </summary>
-    public class WagoData
+    public static class WagoData
     {
         #region Data Caching + Loading
         /// <summary>
@@ -27,19 +28,6 @@ namespace ATT.DB
         public static bool ContainsKey<T>(long id) where T : IDBType
         {
             return Cache<T>.CachedData.ContainsKey(id);
-        }
-
-        /// <summary>
-        /// Get all of the cached data stored for the given class that match the requirements.
-        /// </summary>
-        /// <typeparam name="T">The class to get.</typeparam>
-        /// <returns>The cached data container.</returns>
-        public static IEnumerable<T> Enumerate<T>(Func<T, bool> requirements) where T : IDBType
-        {
-            foreach (var o in Cache<T>.CachedData.Values)
-            {
-                if (requirements(o)) yield return o;
-            }
         }
 
         /// <summary>
@@ -98,20 +86,6 @@ namespace ATT.DB
                 }
             }
             return null;
-        }
-
-        /// <summary>
-        /// Enumerate over a collection of elements matching the itemID.
-        /// </summary>
-        /// <typeparam name="T">The element type to search for.</typeparam>
-        /// <param name="itemID">The item ID.</param>
-        /// <returns>An enumerable list.</returns>
-        public static IEnumerable<T> EnumerateForItemID<T>(long itemID) where T : IWagoDBItemExtension, IDBType
-        {
-            return Enumerate<T>((x) =>
-            {
-                return x.ItemID == itemID;
-            });
         }
 
         /// <summary>
@@ -177,6 +151,491 @@ namespace ATT.DB
         {
             return Cache<T>.CachedData.TryGetValue(id, out value);
         }
+        #endregion
+        #region Enumeration
+        /// <summary>
+        /// Get all of the cached data stored for the given class that match the requirements.
+        /// WARNING: This can be slow as it will enumerate over the entire collection for a match.
+        /// You should use the EnumerateFor* functions instead if you need to get a specific collection.
+        /// </summary>
+        /// <typeparam name="T">The class to get.</typeparam>
+        /// <returns>The cached data container.</returns>
+        public static IEnumerable<T> Enumerate<T>(Func<T, bool> requirements) where T : IDBType
+        {
+            foreach (var o in Cache<T>.CachedData.Values)
+            {
+                if (requirements(o)) yield return o;
+            }
+        }
+
+        #region Children
+        /// <summary>
+        /// The parent hierarchy cache. This is cached per-data module type.
+        /// </summary>
+        /// <typeparam name="T">The data module type stored in the cache.</typeparam>
+        private static class ParentCache<T> where T : IWagoChild, IDBType
+        {
+            private static Dictionary<long, List<T>> Parents;
+
+            public static void Clear()
+            {
+                Parents = null;
+            }
+
+            public static Dictionary<long, List<T>> GetAllParents()
+            {
+                return Parents ?? (Parents = Rebuild());
+            }
+
+            private static Dictionary<long, List<T>> Rebuild()
+            {
+                var parents = new Dictionary<long, List<T>>();
+                foreach (var o in GetAll<T>().Values)
+                {
+                    if (o.Parent > 0)
+                    {
+                        if (!parents.TryGetValue(o.Parent, out List<T> children))
+                        {
+                            parents[o.Parent] = children = new List<T>();
+                        }
+                        children.Add(o);
+                    }
+                }
+                return parents;
+            }
+        }
+
+        /// <summary>
+        /// Clear the values cached in the parent cache.
+        /// </summary>
+        /// <typeparam name="T">The type.</typeparam>
+        public static void ClearParentCache<T>() where T : IWagoChild, IDBType
+        {
+            ParentCache<T>.Clear();
+        }
+
+        /// <summary>
+        /// Enumerate over a list of the children directly associated with the given object.
+        /// </summary>
+        /// <typeparam name="T">The type.</typeparam>
+        /// <param name="o">The object whose legacy is being determined.</param>
+        /// <returns>An enumerator for the children.</returns>
+        public static IEnumerable<T> EnumerateChildren<T>(this T o) where T : IWagoChild, IDBType
+        {
+            if (o == null) yield break;
+            if (ParentCache<T>.GetAllParents().TryGetValue(o.ID, out List<T> children))
+            {
+                foreach (var crit in children)
+                {
+                    yield return crit;
+                }
+            }
+        }
+
+        public static IEnumerable<T> EnumerateDescendents<T>(this T o) where T : IWagoChild, IDBType
+        {
+            if (o == null) yield break;
+            if (ParentCache<T>.GetAllParents().TryGetValue(o.ID, out List<T> children))
+            {
+                foreach (var crit in children)
+                {
+                    yield return crit;
+                    foreach (var child in crit.EnumerateDescendents())
+                    {
+                        yield return child;
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// Get the parent of the object.
+        /// </summary>
+        /// <typeparam name="T">The type of object the parent is.</typeparam>
+        /// <param name="o">The object whose heritage is being acquired.</param>
+        /// <returns>The parent object node or null.</returns>
+        public static T GetParent<T>(this T o) where T : IWagoChild, IDBType
+        {
+            return o.Parent > 0 && TryGetValue<T>(o.Parent, out var parent) ? parent : default;
+        }
+        #endregion
+        #region Item-Keyed Collections
+        private static class ItemKeyedCache<T> where T : IWagoItemID, IDBType
+        {
+            /// <summary>
+            /// The cached collection of elements matching the primary key "ItemID".
+            /// </summary>
+            private static Dictionary<long, List<T>> Collection;
+
+            public static void Clear()
+            {
+                Collection = null;
+            }
+
+            public static Dictionary<long, List<T>> GetCollection()
+            {
+                return Collection ?? (Collection = Rebuild());
+            }
+
+            private static Dictionary<long, List<T>> Rebuild()
+            {
+                var collection = new Dictionary<long, List<T>>();
+                foreach (var o in GetAll<T>().Values)
+                {
+                    if (o.ItemID > 0)
+                    {
+                        if (!collection.TryGetValue(o.ItemID, out List<T> associations))
+                        {
+                            collection[o.ItemID] = associations = new List<T>();
+                        }
+                        associations.Add(o);
+                    }
+                }
+                return collection;
+            }
+
+            public static IEnumerable<T> Enumerate(long key)
+            {
+                if (GetCollection().TryGetValue(key, out var associations))
+                {
+                    foreach (var association in associations)
+                    {
+                        yield return association;
+                    }
+                }
+            }
+
+            /// <summary>
+            /// Retrieve a collection of elements matching the key.
+            /// </summary>
+            /// <typeparam name="T">The element type to search for.</typeparam>
+            /// <param name="key">The key.</param>
+            /// <param name="associations">The list of associated elements or null.</param>
+            /// <returns>Whether or not the associations could be found.</returns>
+            public static bool TryGetAssociations(long key, out List<T> associations)
+            {
+                return GetCollection().TryGetValue(key, out associations);
+            }
+        }
+
+        /// <summary>
+        /// Enumerate over a collection of elements matching the itemID.
+        /// </summary>
+        /// <typeparam name="T">The element type to search for.</typeparam>
+        /// <param name="itemID">The item ID.</param>
+        /// <returns>An enumerable list.</returns>
+        public static IEnumerable<T> EnumerateForItemID<T>(this IWagoItemID o) where T : IWagoItemID, IDBType
+        {
+            return EnumerateForItemID<T>(o.ItemID);
+        }
+
+        /// <summary>
+        /// Enumerate over a collection of elements matching the itemID.
+        /// </summary>
+        /// <typeparam name="T">The element type to search for.</typeparam>
+        /// <param name="itemID">The item ID.</param>
+        /// <returns>An enumerable list.</returns>
+        public static IEnumerable<T> EnumerateForItemID<T>(long itemID) where T : IWagoItemID, IDBType
+        {
+            return ItemKeyedCache<T>.Enumerate(itemID);
+        }
+
+        /// <summary>
+        /// Retrieve a collection of elements matching the key.
+        /// </summary>
+        /// <typeparam name="T">The element type to search for.</typeparam>
+        /// <param name="itemID">The item ID.</param>
+        /// <param name="associations">The list of associated elements or null.</param>
+        /// <returns>Whether or not the associations could be found.</returns>
+        public static bool TryGetItemAssociations<T>(long itemID, out List<T> associations) where T : IWagoItemID, IDBType
+        {
+            return ItemKeyedCache<T>.TryGetAssociations(itemID, out associations);
+        }
+
+        public static Item GetItem(this IWagoItemID o)
+        {
+            return o.ItemID > 0 && TryGetValue<Item>(o.ItemID, out var item) ? item : default;
+        }
+        #endregion
+        #region ItemModifiedAppearanceID-Keyed Collections
+        private static class ItemModifiedAppearanceKeyedCache<T> where T : IWagoItemModifiedAppearanceID, IDBType
+        {
+            /// <summary>
+            /// The cached collection of elements matching the primary key "ItemModifiedAppearanceID".
+            /// </summary>
+            private static Dictionary<long, List<T>> Collection;
+
+            public static void Clear()
+            {
+                Collection = null;
+            }
+
+            public static Dictionary<long, List<T>> GetCollection()
+            {
+                return Collection ?? (Collection = Rebuild());
+            }
+
+            private static Dictionary<long, List<T>> Rebuild()
+            {
+                var collection = new Dictionary<long, List<T>>();
+                foreach (var o in GetAll<T>().Values)
+                {
+                    if (o.ItemModifiedAppearanceID > 0)
+                    {
+                        if (!collection.TryGetValue(o.ItemModifiedAppearanceID, out List<T> associations))
+                        {
+                            collection[o.ItemModifiedAppearanceID] = associations = new List<T>();
+                        }
+                        associations.Add(o);
+                    }
+                }
+                return collection;
+            }
+
+            public static IEnumerable<T> Enumerate(long key)
+            {
+                if (GetCollection().TryGetValue(key, out var associations))
+                {
+                    foreach (var association in associations)
+                    {
+                        yield return association;
+                    }
+                }
+            }
+
+            /// <summary>
+            /// Retrieve a collection of elements matching the key.
+            /// </summary>
+            /// <typeparam name="T">The element type to search for.</typeparam>
+            /// <param name="key">The key.</param>
+            /// <param name="associations">The list of associated elements or null.</param>
+            /// <returns>Whether or not the associations could be found.</returns>
+            public static bool TryGetAssociations(long key, out List<T> associations)
+            {
+                return GetCollection().TryGetValue(key, out associations);
+            }
+        }
+
+        /// <summary>
+        /// Enumerate over a collection of elements matching the itemModifiedAppearanceID.
+        /// </summary>
+        /// <typeparam name="T">The element type to search for.</typeparam>
+        /// <param name="o">The object.</param>
+        /// <returns>An enumerable list.</returns>
+        public static IEnumerable<T> EnumerateForItemModifiedAppearanceID<T>(this IWagoItemModifiedAppearanceID o) where T : IWagoItemModifiedAppearanceID, IDBType
+        {
+            return EnumerateForItemModifiedAppearanceID<T>(o.ItemModifiedAppearanceID);
+        }
+
+        /// <summary>
+        /// Enumerate over a collection of elements matching the key.
+        /// </summary>
+        /// <param name="itemModifiedAppearanceID">The item modified appearance ID.</param>
+        /// <param name="itemModifiedAppearanceID">The transmog set ID.</param>
+        /// <returns>An enumerable list.</returns>
+        public static IEnumerable<T> EnumerateForItemModifiedAppearanceID<T>(long itemModifiedAppearanceID) where T : IWagoItemModifiedAppearanceID, IDBType
+        {
+            return ItemModifiedAppearanceKeyedCache<T>.Enumerate(itemModifiedAppearanceID);
+        }
+
+        /// <summary>
+        /// Retrieve a collection of elements matching the key.
+        /// </summary>
+        /// <typeparam name="T">The element type to search for.</typeparam>
+        /// <param name="itemModifiedAppearanceID">The item modified appearance ID.</param>
+        /// <param name="associations">The list of associated elements or null.</param>
+        /// <returns>Whether or not the associations could be found.</returns>
+        public static bool TryGetItemModifiedAppearanceAssociations<T>(long itemModifiedAppearanceID, out List<T> associations) where T : IWagoItemModifiedAppearanceID, IDBType
+        {
+            return ItemModifiedAppearanceKeyedCache<T>.TryGetAssociations(itemModifiedAppearanceID, out associations);
+        }
+        #endregion
+        #region Spell-Keyed Collections
+        private static class SpellKeyedCache<T> where T : IWagoSpellID, IDBType
+        {
+            /// <summary>
+            /// The cached collection of elements matching the primary key "SpellID".
+            /// </summary>
+            private static Dictionary<long, List<T>> Collection;
+
+            public static void Clear()
+            {
+                Collection = null;
+            }
+
+            public static Dictionary<long, List<T>> GetCollection()
+            {
+                return Collection ?? (Collection = Rebuild());
+            }
+
+            private static Dictionary<long, List<T>> Rebuild()
+            {
+                var collection = new Dictionary<long, List<T>>();
+                foreach (var o in GetAll<T>().Values)
+                {
+                    if (o.SpellID > 0)
+                    {
+                        if (!collection.TryGetValue(o.SpellID, out List<T> associations))
+                        {
+                            collection[o.SpellID] = associations = new List<T>();
+                        }
+                        associations.Add(o);
+                    }
+                }
+                return collection;
+            }
+
+            public static IEnumerable<T> Enumerate(long key)
+            {
+                if (GetCollection().TryGetValue(key, out var associations))
+                {
+                    foreach (var association in associations)
+                    {
+                        yield return association;
+                    }
+                }
+            }
+
+            /// <summary>
+            /// Retrieve a collection of elements matching the key.
+            /// </summary>
+            /// <typeparam name="T">The element type to search for.</typeparam>
+            /// <param name="key">The key.</param>
+            /// <param name="associations">The list of associated elements or null.</param>
+            /// <returns>Whether or not the associations could be found.</returns>
+            public static bool TryGetAssociations(long key, out List<T> associations)
+            {
+                return GetCollection().TryGetValue(key, out associations);
+            }
+        }
+
+        /// <summary>
+        /// Enumerate over a collection of elements matching the spellID.
+        /// </summary>
+        /// <typeparam name="T">The element type to search for.</typeparam>
+        /// <param name="o">The object.</param>
+        /// <returns>An enumerable list.</returns>
+        public static IEnumerable<T> EnumerateForSpellID<T>(this IWagoSpellID o) where T : IWagoSpellID, IDBType
+        {
+            return EnumerateForSpellID<T>(o.SpellID);
+        }
+
+        /// <summary>
+        /// Enumerate over a collection of elements matching the spellID.
+        /// </summary>
+        /// <typeparam name="T">The element type to search for.</typeparam>
+        /// <param name="spellID">The spell ID.</param>
+        /// <returns>An enumerable list.</returns>
+        public static IEnumerable<T> EnumerateForSpellID<T>(long spellID) where T : IWagoSpellID, IDBType
+        {
+            return SpellKeyedCache<T>.Enumerate(spellID);
+        }
+
+        /// <summary>
+        /// Retrieve a collection of elements matching the key.
+        /// </summary>
+        /// <typeparam name="T">The element type to search for.</typeparam>
+        /// <param name="spellID">The spell ID.</param>
+        /// <param name="associations">The list of associated elements or null.</param>
+        /// <returns>Whether or not the associations could be found.</returns>
+        public static bool TryGetSpellAssociations<T>(long spellID, out List<T> associations) where T : IWagoSpellID, IDBType
+        {
+            return SpellKeyedCache<T>.TryGetAssociations(spellID, out associations);
+        }
+        #endregion
+        #region TransmogSetID-Keyed Collections
+        private static class TransmogSetKeyedCache<T> where T : IWagoTransmogSetID, IDBType
+        {
+            /// <summary>
+            /// The cached collection of elements matching the primary key "TransmogSetID".
+            /// </summary>
+            private static Dictionary<long, List<T>> Collection;
+
+            public static void Clear()
+            {
+                Collection = null;
+            }
+
+            public static Dictionary<long, List<T>> GetCollection()
+            {
+                return Collection ?? (Collection = Rebuild());
+            }
+
+            private static Dictionary<long, List<T>> Rebuild()
+            {
+                var collection = new Dictionary<long, List<T>>();
+                foreach (var o in GetAll<T>().Values)
+                {
+                    if (o.TransmogSetID > 0)
+                    {
+                        if (!collection.TryGetValue(o.TransmogSetID, out List<T> associations))
+                        {
+                            collection[o.TransmogSetID] = associations = new List<T>();
+                        }
+                        associations.Add(o);
+                    }
+                }
+                return collection;
+            }
+
+            public static IEnumerable<T> Enumerate(long key)
+            {
+                if (GetCollection().TryGetValue(key, out var associations))
+                {
+                    foreach (var association in associations)
+                    {
+                        yield return association;
+                    }
+                }
+            }
+
+            /// <summary>
+            /// Retrieve a collection of elements matching the key.
+            /// </summary>
+            /// <typeparam name="T">The element type to search for.</typeparam>
+            /// <param name="key">The key.</param>
+            /// <param name="associations">The list of associated elements or null.</param>
+            /// <returns>Whether or not the associations could be found.</returns>
+            public static bool TryGetAssociations(long key, out List<T> associations)
+            {
+                return GetCollection().TryGetValue(key, out associations);
+            }
+        }
+
+        /// <summary>
+        /// Enumerate over a collection of elements matching the transmogSetID.
+        /// </summary>
+        /// <typeparam name="T">The element type to search for.</typeparam>
+        /// <param name="o">The object.</param>
+        /// <returns>An enumerable list.</returns>
+        public static IEnumerable<T> EnumerateForTransmogSetID<T>(this IWagoTransmogSetID o) where T : IWagoTransmogSetID, IDBType
+        {
+            return EnumerateForTransmogSetID<T>(o.TransmogSetID);
+        }
+
+        /// <summary>
+        /// Enumerate over a collection of elements matching the transmogSetID.
+        /// </summary>
+        /// <typeparam name="T">The element type to search for.</typeparam>
+        /// <param name="transmogSetID">The transmog set ID.</param>
+        /// <returns>An enumerable list.</returns>
+        public static IEnumerable<T> EnumerateForTransmogSetID<T>(long transmogSetID) where T : IWagoTransmogSetID, IDBType
+        {
+            return TransmogSetKeyedCache<T>.Enumerate(transmogSetID);
+        }
+
+        /// <summary>
+        /// Retrieve a collection of elements matching the key.
+        /// </summary>
+        /// <typeparam name="T">The element type to search for.</typeparam>
+        /// <param name="transmogSetID">The transmog set ID.</param>
+        /// <param name="associations">The list of associated elements or null.</param>
+        /// <returns>Whether or not the associations could be found.</returns>
+        public static bool TryGetTransmogSetAssociations<T>(long transmogSetID, out List<T> associations) where T : IWagoTransmogSetID, IDBType
+        {
+            return TransmogSetKeyedCache<T>.TryGetAssociations(transmogSetID, out associations);
+        }
+        #endregion
         #endregion
         #region Localized Data Caching + Checking
         /// <summary>

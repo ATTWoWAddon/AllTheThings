@@ -6,7 +6,7 @@ namespace ATT.DB.Types
     /// https://wago.tools/db2/ItemModifiedAppearance
     /// </summary>
     [DataModule]
-    public class ItemModifiedAppearance : IDBType, IWagoDBItemExtension
+    public class ItemModifiedAppearance : IDBType, IWagoItemID
     {
         [ExportableData("sourceID")]
         public long ID { get; set; }

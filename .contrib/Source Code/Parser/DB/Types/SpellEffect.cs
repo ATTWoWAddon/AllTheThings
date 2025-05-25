@@ -7,7 +7,7 @@ namespace ATT.DB.Types
     /// </summary>
     /// <remarks>Any new comparisons by Effect need to update the associated .contrib\.wago\SpellEffect.regex to include the expected Effect value</remarks>
     [DataModule]
-    public class SpellEffect : IDBType
+    public class SpellEffect : IWagoSpellID, IDBType
     {
         public long ID { get; set; }
         public long Effect { get; set; }

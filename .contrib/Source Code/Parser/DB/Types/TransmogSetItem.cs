@@ -6,7 +6,7 @@ namespace ATT.DB.Types
     /// https://wago.tools/db2/TransmogSetItem
     /// </summary>
     [DataModule]
-    public class TransmogSetItem : IDBType
+    public class TransmogSetItem : IWagoTransmogSetID, IWagoItemModifiedAppearanceID, IDBType
     {
         public long ID { get; set; }
         public long TransmogSetID { get; set; }

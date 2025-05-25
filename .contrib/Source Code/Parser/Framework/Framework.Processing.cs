@@ -1224,11 +1224,7 @@ namespace ATT
                 else
                 {
                     // otherwise it can remain directly listed in the Ensemble
-                    var tmogSetItems = WagoData.Enumerate<TransmogSetItem>((si) =>
-                    {
-                        return si.ItemModifiedAppearanceID == sourceID;
-                    }).ToList();
-                    if (tmogSetItems.Count > 0)
+                    if (WagoData.TryGetItemModifiedAppearanceAssociations(sourceID, out List<TransmogSetItem> tmogSetItems))
                     {
                         IDictionary<string, object> source = tmogSetItems.FirstOrDefault()?.GetExportableData();
                         if (source == null)
@@ -2152,7 +2148,7 @@ namespace ATT
                 }
 
                 // Get children of the CriteriaTree
-                var children = criteriaTreeData.GetChildren().ToList();
+                var children = criteriaTreeData.EnumerateChildren().ToList();
                 if (children.Count > 0)
                 {
                     long critIndex = criteriaID - 1;
@@ -2188,7 +2184,7 @@ namespace ATT
                 }
 
                 // See if we didn't end up with a valid UID with nothing nested
-                LogWarn($"Criteria {achID}:{criteriaID} is weird. It uses unsupported CriteriaUID: {ToJSON(criteriaTreeData.GetChildren().Select(t => t.CriteriaID).Where(id => id > 0).ToList())}");
+                LogWarn($"Criteria {achID}:{criteriaID} is weird. It uses unsupported CriteriaUID: {ToJSON(criteriaTreeData.EnumerateChildren().Select(t => t.CriteriaID).Where(id => id > 0).ToList())}");
                 Log($"--- Please ensure the data is accurate and add [\"_noautomation\"] = true, to the crit() group to remove this warning.");
                 return;
             }
@@ -2601,7 +2597,7 @@ namespace ATT
                     return false;
                 }
 
-                var childTrees = criteriaTree.GetChildren().ToList();
+                var childTrees = criteriaTree.EnumerateChildren().ToList();
                 if (childTrees.Count > 0)
                 {
 
@@ -2662,7 +2658,7 @@ namespace ATT
                                         obj.Remove("g");
                                         if (obj.Keys.Count > 0)
                                         {
-                                            LogWarn($"Migrate (or remove) extra data from {achID}:{criteriaIndex} into the proper sub-criteria(s): {ToJSON(criteriaTree.GetChildren().Select(t => t.CriteriaID).Where(id => id > 0).ToList())} <== ", obj);
+                                            LogWarn($"Migrate (or remove) extra data from {achID}:{criteriaIndex} into the proper sub-criteria(s): {ToJSON(criteriaTree.EnumerateChildren().Select(t => t.CriteriaID).Where(id => id > 0).ToList())} <== ", obj);
                                         }
                                     }
                                     else
@@ -2844,7 +2840,7 @@ namespace ATT
             }
 
             // ModifierTree can be a parent, which means the children should be incorporated into the data instead
-            foreach (ModifierTree child in existingModifierTree.GetChildren())
+            foreach (ModifierTree child in existingModifierTree.EnumerateChildren())
             {
                 incorporated |= Incorporate_ModifierTree(data, child.ID, child);
             }
@@ -2904,70 +2900,64 @@ namespace ATT
 
         private static void Incorporate_Item_TransmogSetItems(IDictionary<string, object> data, long tmogSetID)
         {
-            var transmogSetItems = WagoData.Enumerate<TransmogSetItem>((si) =>
+            if (WagoData.TryGetTransmogSetAssociations(tmogSetID, out List<TransmogSetItem> transmogSetItems) && transmogSetItems.Count > 0)
             {
-                return si.TransmogSetID == tmogSetID;
-            }).ToList();
-            if (transmogSetItems.Count < 1)
-            {
-                LogDebugWarn($"Ensemble missing Wago TransmogSetItem record(s) for TransmogSetID {tmogSetID}", data);
-                return;
-            }
-
-            if (!data.TryGetValue("type", out string type) || !(type == "ensembleID" || type == "ensembleSpellID"))
-            {
-                LogDebugWarn($"Valid Ensemble information not set as 'iensemble'/'sensemble'", data);
-                return;
-            }
-
-            List<long> allSourceIDs = transmogSetItems.Select(i => i.ItemModifiedAppearanceID).ToList();
-
-            // check if other Ensembles have the same TrackingQuestID -- these seem to additionally be granted without relying on a nested SpellEffect trigger
-            if (data.TryGetValue("questID", out long questID))
-            {
-                foreach (var sameQuestTransmogSet in WagoData.GetAll<TransmogSet>().Values)
+                if (!data.TryGetValue("type", out string type) || !(type == "ensembleID" || type == "ensembleSpellID"))
                 {
-                    if (sameQuestTransmogSet.TrackingQuestID == questID && sameQuestTransmogSet.ID != tmogSetID)
+                    LogDebugWarn($"Valid Ensemble information not set as 'iensemble'/'sensemble'", data);
+                    return;
+                }
+
+                List<long> allSourceIDs = transmogSetItems.Select(i => i.ItemModifiedAppearanceID).ToList();
+
+                // check if other Ensembles have the same TrackingQuestID -- these seem to additionally be granted without relying on a nested SpellEffect trigger
+                if (data.TryGetValue("questID", out long questID))
+                {
+                    foreach (var sameQuestTransmogSet in WagoData.GetAll<TransmogSet>().Values)
                     {
-                        if (!WagoData.Enumerate<TransmogSetItem>((si) =>
+                        if (sameQuestTransmogSet.TrackingQuestID == questID && sameQuestTransmogSet.ID != tmogSetID)
                         {
-                            return si.TransmogSetID == tmogSetID;
-                        }).Any())
-                        {
-                            LogDebugWarn($"Ensemble {tmogSetID} missing addtional Wago TransmogSetItem record(s) for TransmogSetID {sameQuestTransmogSet.ID}", data);
-                        }
-                        else
-                        {
-                            allSourceIDs.AddRange(transmogSetItems.Select(i => i.ItemModifiedAppearanceID));
-                            LogDebug($"INFO: Ensemble {tmogSetID} has addtional TransmogSetItem record(s) from TransmogSetID {sameQuestTransmogSet.ID}", data);
+                            if (!WagoData.TryGetTransmogSetAssociations(tmogSetID, out List<TransmogSetItem> associations) || associations.Count < 1)
+                            {
+                                LogDebugWarn($"Ensemble {tmogSetID} missing addtional Wago TransmogSetItem record(s) for TransmogSetID {sameQuestTransmogSet.ID}", data);
+                            }
+                            else
+                            {
+                                allSourceIDs.AddRange(transmogSetItems.Select(i => i.ItemModifiedAppearanceID));
+                                LogDebug($"INFO: Ensemble {tmogSetID} has addtional TransmogSetItem record(s) from TransmogSetID {sameQuestTransmogSet.ID}", data);
+                            }
                         }
                     }
                 }
-            }
 
-            // Remove any added SourceIDs which don't actually exist in the ItemModifiedAppearance DB
-            allSourceIDs.RemoveAll(id =>
-            {
-                if (!WagoData.ContainsKey<ItemModifiedAppearance>(id))
+                // Remove any added SourceIDs which don't actually exist in the ItemModifiedAppearance DB
+                allSourceIDs.RemoveAll(id =>
                 {
-                    LogDebugWarn($"Removing SourceID {id} from TransmogSet {tmogSetID} since it does not exist in ItemModifiedAppearanceDB");
-                    return true;
-                }
-                return false;
-            });
+                    if (!WagoData.ContainsKey<ItemModifiedAppearance>(id))
+                    {
+                        LogDebugWarn($"Removing SourceID {id} from TransmogSet {tmogSetID} since it does not exist in ItemModifiedAppearanceDB");
+                        return true;
+                    }
+                    return false;
+                });
 
-            Objects.Merge(data, "_sourceIDs", allSourceIDs);
-            TrackIncorporationData(data, "_sourceIDs", allSourceIDs);
-            LogDebug($"INFO: Ensemble {type} with TransmogSet {tmogSetID} merged {allSourceIDs.Count} SourceIDs", data);
+                Objects.Merge(data, "_sourceIDs", allSourceIDs);
+                TrackIncorporationData(data, "_sourceIDs", allSourceIDs);
+                LogDebug($"INFO: Ensemble {type} with TransmogSet {tmogSetID} merged {allSourceIDs.Count} SourceIDs", data);
 
-            //foreach (long sourceID in )
-            //{
-            //    Items.DetermineItemID(itemData);
-            //    // since we may determine an itemID for this data after the ConditionalMerge phase
-            //    // we need to apply that logic to this data specifically as well
-            //    DataConditionalMerge(itemData);
-            //    Objects.Merge(data, "g", itemData);
-            //}
+                //foreach (long sourceID in )
+                //{
+                //    Items.DetermineItemID(itemData);
+                //    // since we may determine an itemID for this data after the ConditionalMerge phase
+                //    // we need to apply that logic to this data specifically as well
+                //    DataConditionalMerge(itemData);
+                //    Objects.Merge(data, "g", itemData);
+                //}
+            }
+            else
+            {
+                LogDebugWarn($"Ensemble missing Wago TransmogSetItem record(s) for TransmogSetID {tmogSetID}", data);
+            }
         }
 
         private static void Incorporate_Item(IDictionary<string, object> data)
@@ -3003,11 +2993,7 @@ namespace ATT
             if (data.ContainsKey("_noautomation")) return;
 
             // See what the Spell links to
-            var spellEffects = WagoData.Enumerate<SpellEffect>((si) =>
-            {
-                return si.SpellID == spellID;
-            }).ToList();
-            if (spellEffects.Count > 0)
+            if (WagoData.TryGetSpellAssociations(spellID, out List<SpellEffect> spellEffects) && spellEffects.Count > 0)
             {
                 foreach (SpellEffect spellEffect in spellEffects)
                 {
@@ -3025,10 +3011,7 @@ namespace ATT
             {
                 foreach (long extraSpellID in extraSpells.AsTypedEnumerable<long>())
                 {
-                    foreach (SpellEffect spellEffect in WagoData.Enumerate<SpellEffect>((si) =>
-                    {
-                        return si.SpellID == extraSpellID;
-                    }))
+                    foreach (SpellEffect spellEffect in WagoData.EnumerateForSpellID<SpellEffect>(extraSpellID))
                     {
                         Incorporate_SpellEffect(data, spellEffect);
                     }
@@ -3047,7 +3030,7 @@ namespace ATT
                 {
                     // we only want to attach a questID to an Item if that Quest is only linked via 1 ItemEffect...
                     long spellID = spellEffect.SpellID;
-                    if (WagoData.Enumerate<ItemEffect>((ef) => { return ef.SpellID == spellID; }).Count() > 1)
+                    if (WagoData.TryGetSpellAssociations(spellID, out List<ItemEffect> itemEffects) && itemEffects.Count > 1)
                     {
                         //LogDebug($"INFO: Ignored assignment of data 'questID' {spellEffect.EffectMiscValue_0} due to {matchingItemEffects.Count} shared ItemEffect use", data);
                         // assign this data as a provider of the questID instead since this data may link to multiple questIDs
@@ -3056,6 +3039,8 @@ namespace ATT
                     else
                     {
                         // if there's a 2nd (or more) then ignore assigning the questID from a specific Spell
+                        // CRIEVE NOTE: We can't use the spellID Associations collection helper for this since there's an additional logic requirement.
+                        // I'd advise at some point maybe creating a cache class for Quest object types?
                         if (WagoData.Enumerate<SpellEffect>((se) =>
                         {
                             // quest spelleffect with either same spellID or same quest (should only be 1 if we are going to apply it to an Item)
