@@ -3690,7 +3690,7 @@ namespace ATT
                 return;
 
             // if this Thing is marked as removed in the past, but is currently available, drop the 'rwp' value
-            if (awp > rwp && awp <= CURRENT_RELEASE_VERSION)
+            if (awp > rwp && awp <= CURRENT_SHORT_RELEASE_VERSION)
             {
                 data.Remove("rwp");
                 LogDebug($"INFO: Removed RWP:{rwp} which is before AWP:{awp}", data);
