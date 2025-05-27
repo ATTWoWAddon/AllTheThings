@@ -3967,7 +3967,7 @@ namespace ATT
                     break;
             }
 
-            // Mark when this thing was put into (or back into) the game.
+            // Mark when this thing was put into (or back into) the game
             if (addedPatch > 10000)
             {
                 if (data.TryGetValue("awp", out long awp) && awp != addedPatch)

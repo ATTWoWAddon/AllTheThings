@@ -158,7 +158,6 @@ namespace ATT.FieldTypes
 
             if (entryBeforeOrOnReleaseVersion == null)
             {
-
                 // If there is no timeline entry before or on release version, then the first entry is automatically relevant to the release version
                 var firstEntry = entries[0];
 
