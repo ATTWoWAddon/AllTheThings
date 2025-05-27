@@ -41,6 +41,16 @@ namespace ATT.FieldTypes
         public static TimelineEntry AsTimelineEntry(object raw) => new TimelineEntry(raw);
         public static TimelineEntry AsTimelineEntry(string raw) => new TimelineEntry(raw);
 
+        public bool IsBeforeOrOn(long longVersion)
+        {
+            if (LongVersion <= longVersion)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
         public void Validate()
         {
             if (!_validChange.Contains(Change))

@@ -7,11 +7,9 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Security.Cryptography;
 using System.Text;
 using static ATT.Export;
 using static ATT.FieldTypes.TimelineEntry;
-using static ATT.Framework;
 
 namespace ATT
 {
@@ -1168,7 +1166,7 @@ namespace ATT
                             data.TryGetValue("timeline", out object timelineObj);
                             if (timelineObj is Timeline dataTimeline)
                             {
-                                dataTimelineEntry = dataTimeline.Entries[dataTimeline.CurrentEntry];
+                                dataTimelineEntry = dataTimeline.CurrentEntry;
                             }
                         }
 
@@ -3884,187 +3882,107 @@ namespace ATT
         /// </summary>
         private static bool CheckTimeline(IDictionary<string, object> data, IDictionary<string, object> parentData)
         {
-            // Check to see what patch this data was made relevant for.
-            if (data.TryGetValue("timeline", out object timelineRef) && timelineRef is Timeline timeline)
+            // Return early if no timeline exists on the Thing
+            if (!data.TryGetValue("timeline", out object timelineRef) || !(timelineRef is Timeline timeline))
+                return true;
+
+            // Warn if the first entry is a 'removing' change and timeline has more than 1 entry (still over a thousand places where timelines start with a 'removed' change first if not excluding before more recent data)
+            if (CurrentParseStage == ParseStage.Validation && timeline.EntryCount > 1 && ChangeType.IsRemovingChange(timeline.Entries[0].Change))
+                LogWarn($"Timeline contains '{timeline.Entries[0].Change}' change @ earliest patch -> {timeline.Entries[0]}", data);
+
+            // Get the most relevant timeline for the current release version
+            var adaptedTimeline = timeline.GetAdaptedTimeline(CURRENT_RELEASE_VERSION);
+
+            // If there are no relevant entries for this item, then it's not implemented yet and doesn't exist in the database
+            if (adaptedTimeline == null)
+                return false;   // Invalid entry
+
+            // We don't want things that got deleted to be in the addon.
+            // NOTE: If it's not the last entry, that means it might have been readded later?
+            // CRIEVE NOTE: Braghe wanted Debug Mode to not completely delete a thing from the exported Debug files...
+            // Deleting it from the actual database is actually expected for the real builds,
+            // so don't remove this. This is how I want it. Thanks!
+            if (adaptedTimeline.RemovedStatus == RemovedStatus.DELETED_FROM_GAME && !DebugMode)
+                return false;   // Invalid entry
+
+            // Undo NYI status if we're processing an unsorted category
+            if (adaptedTimeline.RemovedStatus == RemovedStatus.NEVER_IMPLEMENTED && ProcessingUnsortedCategory)
+                adaptedTimeline.RemovedStatus = 0;
+
+            // Set current entry for timeline
+            timeline.SetCurrentEntry(adaptedTimeline.Entries[0]);
+
+            long addedPatch = 10000, removedPatch = 10000;
+
+            // Define added/removed patch based on entries in adapted timeline
+            foreach (var entry in adaptedTimeline.Entries)
             {
-                int removed = 0;
-                var lastIndex = timeline.EntryCount - 1;
-                long addedPatch = 10000;
-                long removedPatch = 10000;
-                // we will track if a Thing is specifically 're-added' and consider that a 'force timeline' automatically so the data
-                // doesn't need to be adjusted for every situation
-                bool readded = false;
-
-                // Warn if the first entry is a 'removing' change and timeline has more than 1 entry (still over a thousand places where timelines start with a 'removed' change first if not excluding before more recent data)
-                if (CurrentParseStage == ParseStage.Validation && timeline.EntryCount > 1 && ChangeType.IsRemovingChange(timeline.Entries[0].Change))
-                    LogWarn($"Timeline contains '{timeline.Entries[0].Change}' change @ earliest patch -> {timeline.Entries[0]}", data);
-
-                for (int index = 0; index < timeline.EntryCount; index++)
+                switch (entry.Change)
                 {
-                    var entry = timeline.Entries[index];
-                    switch (entry.Change)
-                    {
-                        // Note: Adding command options here requires adjusting the filter Regex for 'timeline' entries during MergeStringArrayData
-                        case "created":
-                            // If it hasn't happened yet, then do a thing.
-                            if (CURRENT_SHORT_RELEASE_VERSION < entry.Version || CURRENT_RELEASE_VERSION < entry.LongVersion)
-                            {
-                                //Console.Write("NOT CREATED: ");
-                                //Console.WriteLine(ToJSON(data));
-                                // Not implemented yet and doesn't exist in the database.
-                                return false;    // Invalid
-                            }
-
-                            // Mark this as Never Implemented
-                            if (!ProcessingUnsortedCategory)
-                                removed = 1;
-                            break;
-                        case "added":
-                            // If it hasn't happened yet, then do a thing.
-                            if (CURRENT_SHORT_RELEASE_VERSION < entry.Version || CURRENT_RELEASE_VERSION < entry.LongVersion)
-                            {
-                                //Console.Write("NOT ADDED: ");
-                                //Console.WriteLine(ToJSON(data));
-                                // If this is the first patch the thing was added...
-                                if (index == 0)
-                                {
-                                    // Not implemented yet and likely doesn't exist in the database.
-                                    // NOTE: If an item exists in the database but wasn't made available, use "created" instead!
-                                    return false;    // Invalid
-                                }
-                            }
-                            else
-                            {
-                                if (removed == 2)
-                                {
-                                    readded = true;
-                                }
-
-                                // Cancel the Removed tag.
-                                removed = 0;
-                            }
-
-                            // Mark the most relevant patch this was added or comes back
-                            if (entry.Version <= CURRENT_SHORT_RELEASE_VERSION || removed > 0)
-                            {
-                                timeline.CurrentEntry = index;
-                                addedPatch = entry.Version;
-                            }
-
-                            break;
-                        case "deleted":
-                            // If entry is before current release, mark current Thing as removed
-                            if (CURRENT_RELEASE_VERSION >= entry.LongVersion)
-                            {
-                                removed = 4;
-                                readded = false;
-
-                                // the last entry in the timeline is this deleted change
-                                if (index == lastIndex)
-                                {
-                                    // We don't want things that got deleted to be in the addon.
-                                    // NOTE: If it's not the last entry, that means it might have been readded later?
-                                    // CRIEVE NOTE: Braghe wanted Debug Mode to not completely delete a thing from the exported Debug files...
-                                    // Deleting it from the actual database is actually expected for the real builds,
-                                    // so don't remove this. This is how I want it. Thanks!
-                                    if (!DebugMode) return false;    // Invalid
-                                }
-                            }
-
-                            // Set new removed patch value when:
-                            // a) Removed patch is default value OR
-                            // b) Removed patch is smaller than added patch AND added patch value is smaller than current release
-                            if (removedPatch <= 10000 || (removedPatch < addedPatch && addedPatch <= CURRENT_SHORT_RELEASE_VERSION))
-                            {
-                                timeline.CurrentEntry = index;
-                                removedPatch = entry.Version;
-                            }
-
-                            break;
-                        case "removed":
-                            // If entry is before current release, mark current Thing as removed
-                            if (CURRENT_RELEASE_VERSION >= entry.LongVersion)
-                            {
-                                removed = 2;
-                                readded = false;
-                            }
-
-                            // Set new removed patch value when:
-                            // a) Removed patch is default value OR
-                            // b) Removed patch is smaller than added patch AND added patch is smaller than current release
-                            if (removedPatch <= 10000 || (removedPatch < addedPatch && addedPatch <= CURRENT_SHORT_RELEASE_VERSION))
-                            {
-                                timeline.CurrentEntry = index;
-                                removedPatch = entry.Version;
-                            }
-
-                            break;
-                    }
-                }
-
-                // final removed type for the current parser patch
-                switch (removed)
-                {
-                    // Never Implemented
-                    case 1:
-                        data["u"] = 1;
+                    case ChangeType.ADDED  :
+                        addedPatch = entry.Version;
                         break;
-                    case 4: // Deleted
-                    case 2: // Removed From Game
-                        data["u"] = 2;
-                        break;
-                    default:
-                        // if a timeline 'specifically' indicates a Thing is available, we will let that 'bubbleOut' the u value
-                        // as long as the Thing itself isn't specifically also marked with 'u' directly
-                        // as long as the Thing itself isn't an 'objective'
-                        if (data.ContainsAnyKey("u", "objectiveID"))
-                            break;
-
-                        // or inherited a 'timeline' to itself
-                        if (data.TryGetValue("_inherited", out List<string> inheritedFields) && inheritedFields.Contains("timeline"))
-                            break;
-
-                        // ignore this thing being forcibly-obtainable due to an 'added' timeline when the parent group contains a 'rwp' beyond the 'awp' of this group
-                        // if _forcetimeline is specified, then don't let parent's timeline override this timeline
-                        if (!data.ContainsKey("_forcetimeline") && parentData.TryGetValue("rwp", out long parentRwp) && parentRwp >= addedPatch)
-                        {
-                            if (readded)
-                            {
-                                LogDebug($"INFO: timeline indicates available Thing {addedPatch} within removed Parent {parentRwp} => Consider re-added", data);
-                                removedPatch = 10000;
-                            }
-                            else
-                            {
-                                LogDebug($"INFO: timeline indicates available Thing {addedPatch} within removed Parent {parentRwp} => Consider 'removed'", data);
-                                // also inherit the rwp so that further children don't also reverse force-obtainable themselves back over the parent
-                                removedPatch = parentRwp;
-                            }
-                            break;
-                        }
-
-                        data["_u"] = 0;
+                    case ChangeType.DELETED:
+                    case ChangeType.REMOVED:
+                        removedPatch = entry.Version;
                         break;
                 }
+            }
 
-                // Mark when this thing was put into (or back into) the game.
-                if (addedPatch > 10000)
-                {
-                    if (data.TryGetValue("awp", out long awp) && awp != addedPatch)
-                    {
-                        LogDebugWarn($"Field replaced 'awp': {addedPatch} => {awp}", data);
-                    }
-                    data["awp"] = addedPatch; // "Added With Patch"
-                }
+            // Set unobtainable status on the data object
+            switch (adaptedTimeline.RemovedStatus)
+            {
+                case RemovedStatus.NEVER_IMPLEMENTED:
+                    data["u"] = 1;
+                    break;
+                case RemovedStatus.REMOVED_FROM_GAME:
+                case RemovedStatus.DELETED_FROM_GAME:
+                    data["u"] = 2;
+                    break;
+                default:
+                    // if a timeline 'specifically' indicates a Thing is available, we will let that 'bubbleOut' the u value
+                    // as long as the Thing itself isn't specifically also marked with 'u' directly
+                    // as long as the Thing itself isn't an 'objective'
+                    if (data.ContainsAnyKey("u", "objectiveID"))
+                        break;
 
-                // Future Unobtainable
-                if (removedPatch > 10000)
-                {
-                    if (data.TryGetValue("rwp", out long rwp) && rwp != removedPatch)
+                    // or inherited a 'timeline' to itself
+                    if (data.TryGetValue("_inherited", out List<string> inheritedFields) && inheritedFields.Contains("timeline"))
+                        break;
+
+                    // ignore this thing being forcibly-obtainable due to an 'added' timeline when the parent group contains a 'rwp' beyond the 'awp' of this group
+                    // if _forcetimeline is specified, then don't let parent's timeline override this timeline
+                    if (!data.ContainsKey("_forcetimeline")
+                        && parentData.TryGetValue("rwp", out long parentRwp)
+                        && parentRwp >= addedPatch && parentRwp <= CURRENT_SHORT_RELEASE_VERSION)
                     {
-                        LogDebugWarn($"Field replaced 'rwp': {removedPatch} => {rwp}", data);
+                        LogDebug($"INFO: timeline indicates available Thing {addedPatch} within removed Parent {parentRwp} => Consider 'removed'", data);
+                        // inherit the rwp so that further children don't also reverse force-obtainable themselves back over the parent
+                        removedPatch = parentRwp;
+
+                        break;
                     }
-                    data["rwp"] = removedPatch; // "Removed With Patch"
-                }
+
+                    data["_u"] = 0;
+                    break;
+            }
+
+            // Mark when this thing was put into (or back into) the game.
+            if (addedPatch > 10000)
+            {
+                if (data.TryGetValue("awp", out long awp) && awp != addedPatch)
+                    LogDebugWarn($"Field replaced 'awp': {addedPatch} => {awp}", data);
+
+                data["awp"] = addedPatch; // "Added With Patch"
+            }
+
+            // Mark when this item was (or will be) removed from the game
+            if (removedPatch > 10000)
+            {
+                if (data.TryGetValue("rwp", out long rwp) && rwp != removedPatch)
+                    LogDebugWarn($"Field replaced 'rwp': {removedPatch} => {rwp}", data);
+
+                data["rwp"] = removedPatch; // "Removed With Patch"
             }
 
             return true;
