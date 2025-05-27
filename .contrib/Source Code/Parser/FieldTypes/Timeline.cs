@@ -156,7 +156,6 @@ namespace ATT.FieldTypes
                 }
             }
 
-
             if (entryBeforeOrOnReleaseVersion == null)
             {
 
