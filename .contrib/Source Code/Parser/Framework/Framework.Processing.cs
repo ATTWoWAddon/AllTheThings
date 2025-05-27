@@ -10,6 +10,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using static ATT.Export;
+using static ATT.FieldTypes.TimelineEntry;
 using static ATT.Framework;
 
 namespace ATT
@@ -3894,13 +3895,9 @@ namespace ATT
                 // doesn't need to be adjusted for every situation
                 bool readded = false;
 
-                // if the timeline has more than 1 Entry and the earliest entry is not an 'adding' change then warn
-                // still over a thousand places where timelines start with a 'removed' change first if not excluding before more recent data
-                var firstEntry = timeline.Entries[0];
-                if (CurrentParseStage == ParseStage.Validation && timeline.EntryCount > 1 && firstEntry.Version > 80000 && !firstEntry.AddedData)
-                {
-                    LogWarn($"Timeline contains '{firstEntry.Change}' change @ earliest patch -> {firstEntry}", data);
-                }
+                // Warn if the first entry is a 'removing' change and timeline has more than 1 entry (still over a thousand places where timelines start with a 'removed' change first if not excluding before more recent data)
+                if (CurrentParseStage == ParseStage.Validation && timeline.EntryCount > 1 && ChangeType.IsRemovingChange(timeline.Entries[0].Change))
+                    LogWarn($"Timeline contains '{timeline.Entries[0].Change}' change @ earliest patch -> {timeline.Entries[0]}", data);
 
                 for (int index = 0; index < timeline.EntryCount; index++)
                 {
