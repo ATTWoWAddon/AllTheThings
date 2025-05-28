@@ -169,7 +169,6 @@ root(ROOTS.Zones, {
 					un(REMOVED_FROM_GAME, q(29404)),	-- Much to Learn (NYI?)
 					q(30039, {	-- Much to Learn (Monk)
 						["classes"] = { MONK },
-						["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
 					q(30040, {	-- Much to Learn (Mage)
 						["classes"] = { MAGE },
