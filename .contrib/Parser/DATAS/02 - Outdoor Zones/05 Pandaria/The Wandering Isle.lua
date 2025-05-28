@@ -171,27 +171,27 @@ root(ROOTS.Zones, {
 						["classes"] = { MONK },
 						["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
-					q(30039, {	-- Much to Learn (Mage)
+					q(30040, {	-- Much to Learn (Mage)
 						["classes"] = { MAGE },
 						["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
-					q(30039, {	-- Much to Learn (Hunter)
+					q(30041, {	-- Much to Learn (Hunter)
 						["classes"] = { HUNTER },
 						["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
-					q(30039, {	-- Much to Learn (Priest)
+					q(30042, {	-- Much to Learn (Priest)
 						["classes"] = { PRIEST },
 						["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
-					q(30039, {	-- Much to Learn (Rogue)
+					q(30043, {	-- Much to Learn (Rogue)
 						["classes"] = { ROGUE },
 						["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
-					q(30039, {	-- Much to Learn (Shaman)
+					q(30044, {	-- Much to Learn (Shaman)
 						["classes"] = { SHAMAN },
 						["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
-					q(30039, {	-- Much to Learn (Warrior)
+					q(30045, {	-- Much to Learn (Warrior)
 						["classes"] = { WARRIOR },
 						["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE },
 					}),
