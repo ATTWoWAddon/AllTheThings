@@ -259,13 +259,27 @@ root(ROOTS.Zones, {
 						["coord"] = { 51.5, 48.5, STARTER_WANDERING_ISLE },
 					}),
 					un(REMOVED_FROM_GAME, q(29404)),	-- Much to Learn (NYI?)
-					un(REMOVED_FROM_GAME, q(30039)),	-- Much to Learn (Monk)
-					un(REMOVED_FROM_GAME, q(30040)),	-- Much to Learn (Mage)
-					un(REMOVED_FROM_GAME, q(30041)),	-- Much to Learn (Hunter)
-					un(REMOVED_FROM_GAME, q(30042)),	-- Much to Learn (Priest)
-					un(REMOVED_FROM_GAME, q(30043)),	-- Much to Learn (Rogue)
-					un(REMOVED_FROM_GAME, q(30044)),	-- Much to Learn (Shaman)
-					un(REMOVED_FROM_GAME, q(30045)),	-- Much to Learn (Warrior)
+					q(30039, {	-- Much to Learn (Monk)
+						["classes"] = { MONK },
+					}),
+					q(30040, {	-- Much to Learn (Mage)
+						["classes"] = { MAGE },
+					}),
+					q(30041, {	-- Much to Learn (Hunter)
+						["classes"] = { HUNTER },
+					}),
+					q(30042, {	-- Much to Learn (Priest)
+						["classes"] = { PRIEST },
+					}),
+					q(30043, {	-- Much to Learn (Rogue)
+						["classes"] = { ROGUE },
+					}),
+					q(30044, {	-- Much to Learn (Shaman)
+						["classes"] = { SHAMAN },
+					}),
+					q(30045, {	-- Much to Learn (Warrior)
+						["classes"] = { WARRIOR },
+					}),
 					q(29800, {	-- New Allies
 						["provider"] = { "n", 57739 },	-- Ji Firepaw
 						["sourceQuests"] = { 29799 },	-- The Healing of Shen-zin Su
