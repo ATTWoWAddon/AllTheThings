@@ -166,7 +166,6 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 54786 },	-- Master Shang Xi
 						["sourceQuests"] = { 29775 },	-- The Spirit and Body of Shen-zin Su
 					}),
-					un(REMOVED_FROM_GAME, q(29404)),	-- Much to Learn (NYI?)
 					q(30039, {	-- Much to Learn (Monk)
 						["classes"] = { MONK },
 					}),
@@ -645,6 +644,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["time
 	m(PANDARIA, {
 		m(THE_WANDERING_ISLE, {
 			n(QUESTS, {
+				q(29404),	-- Much to Learn [NYI] - completed with quest 30039, 30040, 30041, 30042, 30043, 30044, 30045.
 				q(30454),	-- Pandaren Alliance Tracking Quest - triggers after choosing Alliance faction
 				q(30455),	-- Pandaren Horde Tracking Quest - triggers after choosing Horde faction
 			}),
