@@ -1967,12 +1967,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["description"] = "Former Starter Weapon for Orc, Troll & Worgen Rogues as well as Dwarf, Orc, Tauren & Troll Hunters.",
 			-- #endif
 			-- #endif
-			-- #if ANYCLASSIC
-			-- CRIEVE NOTE: This was not available in Wrath Classic.
-			["timeline"] = { ADDED_1_11_0, REMOVED_3_0_2 },
-			-- #else
-			["timeline"] = { ADDED_1_11_0, REMOVED_7_3_5 },
-			-- #endif
+			["timeline"] = { ADDED_1_11_0, REMOVED_3_0_2, ADDED_4_0_1, REMOVED_7_3_5 },
 		}),
 		i(52532, {	-- Worn Wood Chopper
 		--	["classes"] = { HUNTER },

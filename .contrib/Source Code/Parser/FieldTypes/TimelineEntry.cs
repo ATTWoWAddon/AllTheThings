@@ -8,10 +8,10 @@ namespace ATT.FieldTypes
     {
         private static readonly HashSet<string> _validChange = new HashSet<string>
         {
-            "created",
-            "added",
-            "deleted",
-            "removed",
+            ChangeType.CREATED,
+            ChangeType.ADDED  ,
+            ChangeType.DELETED,
+            ChangeType.REMOVED,
         };
 
         public string Change { get; set; }
@@ -21,8 +21,6 @@ namespace ATT.FieldTypes
         public long Version { get; set; }
 
         public long LongVersion { get; set; }
-
-        public bool AddedData => Change == "created" || Change == "added";
 
         private TimelineEntry(object raw)
         {
@@ -42,6 +40,16 @@ namespace ATT.FieldTypes
 
         public static TimelineEntry AsTimelineEntry(object raw) => new TimelineEntry(raw);
         public static TimelineEntry AsTimelineEntry(string raw) => new TimelineEntry(raw);
+
+        public bool IsBeforeOrOn(long longVersion)
+        {
+            if (LongVersion <= longVersion)
+            {
+                return true;
+            }
+
+            return false;
+        }
 
         public void Validate()
         {
@@ -107,6 +115,19 @@ namespace ATT.FieldTypes
         public override int GetHashCode()
         {
             return GetHashCode(this);
+        }
+
+        public static class ChangeType
+        {
+            public const string CREATED = "created";
+            public const string ADDED = "added";
+            public const string DELETED = "deleted";
+            public const string REMOVED = "removed";
+
+            public static bool IsRemovingChange(string change)
+            {
+                return change == DELETED || change == REMOVED;
+            }
         }
     }
 }
