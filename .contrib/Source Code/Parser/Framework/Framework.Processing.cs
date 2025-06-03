@@ -3910,7 +3910,7 @@ namespace ATT
                 adaptedTimeline.RemovedStatus = 0;
 
             // Set current entry for timeline
-            timeline.SetCurrentEntry(adaptedTimeline.Entries[0]);
+            timeline.SetCurrentEntry(adaptedTimeline.GetCurrentEntry());
 
             long addedPatch = 10000, removedPatch = 10000;
 
@@ -3967,7 +3967,7 @@ namespace ATT
                     break;
             }
 
-            // Mark when this thing was put into (or back into) the game
+            // Mark when this Thing was put into (or back into) the game
             if (addedPatch > 10000)
             {
                 if (data.TryGetValue("awp", out long awp) && awp != addedPatch)
@@ -3976,7 +3976,7 @@ namespace ATT
                 data["awp"] = addedPatch; // "Added With Patch"
             }
 
-            // Mark when this item was (or will be) removed from the game
+            // Mark when this Thing was (or will be) removed from the game
             if (removedPatch > 10000)
             {
                 if (data.TryGetValue("rwp", out long rwp) && rwp != removedPatch)

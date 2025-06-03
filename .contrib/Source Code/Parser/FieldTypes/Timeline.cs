@@ -16,6 +16,7 @@ namespace ATT.FieldTypes
         public const string Field = "timeline";
 
         /// <summary>
+        /// Represents the current state of a Thing in line with the release version that's being parsed.
         /// Can be set when processing the Timeline to denote which <see cref="TimelineEntry"/> applies to the related data for this Parser version
         /// </summary>
         public TimelineEntry CurrentEntry { get; private set; }
@@ -135,6 +136,7 @@ namespace ATT.FieldTypes
         /// <returns>An adapted timeline for a given release version</returns>
         public AdaptedTimeline GetAdaptedTimeline(long releaseVersion)
         {
+            // Early return if there is no timeline to adapt
             if (EntryCount == 0)
                 return null;
 
@@ -273,6 +275,7 @@ namespace ATT.FieldTypes
                         RemovedStatus = RemovedStatus.REMOVED_FROM_GAME,
                     };
                 default:
+                    // Return null by default, but this won't really ever happen
                     return null;
             }
         }
@@ -305,10 +308,22 @@ namespace ATT.FieldTypes
         }
     }
 
+    /// <summary>
+    /// A timeline adapted to the current release version
+    /// </summary>
     public class AdaptedTimeline
     {
         public TimelineEntry[] Entries { get; set; }
         public RemovedStatus RemovedStatus { get; set; }
+
+        public TimelineEntry GetCurrentEntry()
+        {
+            // We only return the second entry if RemovedStatus == REMOVED_FROM_GAME and the second entry is the actual removing change, not the first entry
+            if (RemovedStatus == RemovedStatus.REMOVED_FROM_GAME && Entries.Length == 2 && ChangeType.IsRemovingChange(Entries[1].Change))
+                return Entries[1];
+
+            return Entries[0];
+        }
     }
 
     public enum RemovedStatus
