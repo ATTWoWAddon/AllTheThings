@@ -3954,7 +3954,8 @@ namespace ATT
                     // if _forcetimeline is specified, then don't let parent's timeline override this timeline
                     if (!data.ContainsKey("_forcetimeline")
                         && parentData.TryGetValue("rwp", out long parentRwp)
-                        && parentRwp >= addedPatch && parentRwp <= CURRENT_SHORT_RELEASE_VERSION)
+                        && parentRwp >= addedPatch
+                        && (parentRwp < removedPatch || removedPatch == 10000))
                     {
                         LogDebug($"INFO: timeline indicates available Thing {addedPatch} within removed Parent {parentRwp} => Consider 'removed'", data);
                         // inherit the rwp so that further children don't also reverse force-obtainable themselves back over the parent
