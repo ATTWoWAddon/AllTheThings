@@ -3887,7 +3887,7 @@ namespace ATT
                 return true;
 
             // Warn if the first entry is a 'removing' change and timeline has more than 1 entry (still over a thousand places where timelines start with a 'removed' change first if not excluding before more recent data)
-            if (CurrentParseStage == ParseStage.Validation && timeline.EntryCount > 1 && ChangeType.IsRemovingChange(timeline.Entries[0].Change))
+            if (CurrentParseStage == ParseStage.Validation && timeline.EntryCount > 1 && timeline.Entries[0].Version > 80000 && ChangeType.IsRemovingChange(timeline.Entries[0].Change))
                 LogWarn($"Timeline contains '{timeline.Entries[0].Change}' change @ earliest patch -> {timeline.Entries[0]}", data);
 
             // Get the most relevant timeline for the current release version
