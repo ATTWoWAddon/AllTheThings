@@ -5,6 +5,7 @@ EAST = createHeader({
 		en = "East",
 		es = "Este",
 		fr = "Est",
+		mx = "Este",
 		ru = "Восток",
 		cn = "东部",
 		tw = "東部",

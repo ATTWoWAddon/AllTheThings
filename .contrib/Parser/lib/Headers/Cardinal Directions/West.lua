@@ -5,6 +5,7 @@ WEST = createHeader({
 		en = "West",
 		es = "Oeste",
 		fr = "Ouest",
+		mx = "Oeste",
 		ru = "Запад",
 		cn = "西部",
 	},

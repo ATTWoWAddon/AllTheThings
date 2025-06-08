@@ -5,6 +5,7 @@ NORTH = createHeader({
 		en = "North",
 		es = "Norte",
 		fr = "Nord",
+		mx = "Norte",
 		ru = "Север",
 		cn = "北部",
 	},
