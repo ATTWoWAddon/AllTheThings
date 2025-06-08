@@ -8,6 +8,7 @@ BONUS_ROLL = createHeader({
 		de = "Zusätzliche Beute",
 		fr = "Rouleau Bonus",
 		it = "Tiro Bonus",
+		mx = "Tirada de Bonificación",
 		pt = "Rolo de Bônus",
 		ru = "Бонусный бросок",
 		ko = "보너스 롤",

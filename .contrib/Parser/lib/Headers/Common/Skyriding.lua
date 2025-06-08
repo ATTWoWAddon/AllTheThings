@@ -18,6 +18,8 @@ DRIVE_RACING = createHeader({
 	icon = 1100022,
 	text = {
 		en = "D.R.I.V.E. Racing",
+		es = "Carreras de C.A.R.R.O.",
+		mx = "Carreras de M.O.T.O.R",
 		cn = "疾飙竞速",
 	},
 });
