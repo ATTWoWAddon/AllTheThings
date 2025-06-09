@@ -119,6 +119,7 @@ local MapPrecisionOverrides = {
 	 [886] = 4,	-- The Vindicaar, Antoran Wastes Upper
 	 [887] = 4,	-- The Vindicaar, Antoran Wastes Lower
 	 [940] = 4,	-- The Vindicaar
+	[1021] = 1,	-- Chamber of Heart
 	[1164] = 3,	-- Dazar'alor
 	[1176] = 3,	-- Breath Of Pa'ku
 	[1177] = 3,	-- Breath Of Pa'ku
