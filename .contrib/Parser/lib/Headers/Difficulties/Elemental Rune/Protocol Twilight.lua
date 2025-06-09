@@ -7,6 +7,7 @@ PROTOCOL_TWILIGHT = createHeader({
 		de = "Protokoll Zwielicht",
 		fr = "Protocole Crépuscule",
 		--it = "[Protocol Twilight]",
+		mx = "Protocolo Crepúsculo",
 		pt = "Protocolo Crepúsculo",
 		ru = "Протокол \"Сумерки\"",
 		ko = "프로토콜 황혼",
