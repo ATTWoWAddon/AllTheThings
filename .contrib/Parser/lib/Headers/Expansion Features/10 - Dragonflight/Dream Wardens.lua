@@ -3,8 +3,9 @@ DREAM_WARDENS = createHeader({
 	icon = 5244643,
 	text = {
 		en = "Dream Wardens",
+		es = "Celadores Oníricos",
+		mx = "Celadores Oníricos",
 		ru = "Стражи Сна",
-		-- en = WOWAPI_GetSpellName(370340),
 		cn = "梦境守望者",
 		tw = "夢境守望者",
 	},

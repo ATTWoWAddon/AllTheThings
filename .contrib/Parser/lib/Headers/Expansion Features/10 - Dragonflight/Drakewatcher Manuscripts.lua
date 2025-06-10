@@ -7,6 +7,7 @@ DRAKEWATCHER_MANUSCRIPTS = createHeader({
 		de = "Drachenwächtermanuskript",
 		fr = "Manuscrit guette-drake",
 		it = "Manoscritto del Guardadraghi",
+		mx = "Manuscrito de los vigías dracónicos",
 		pt = "Manuscrito de Vigia-dracos",
 		ru = "Манускрипты наблюдений за драконами",
 		ko = "비룡감시자 필사본",
