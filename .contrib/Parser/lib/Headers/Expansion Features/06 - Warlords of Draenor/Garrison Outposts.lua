@@ -81,7 +81,6 @@ TANKWORKS = createHeader({
 		en = "Tankworks",
 		es = "Tanqueria",
 		mx = "Estación de tanques",
-		
 	},
 });
 
