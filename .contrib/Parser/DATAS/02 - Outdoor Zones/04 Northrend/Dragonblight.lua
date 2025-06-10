@@ -1457,6 +1457,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27060,	-- Courier Lanson
 						["sourceQuest"] = 12157,	-- The Lost Courier
+						["isBreadcrumb"] = true,
 					}),
 					q(12498, {	-- On Ruby Wings
 						["coord"] = { 59.5, 53.3, DRAGONBLIGHT },

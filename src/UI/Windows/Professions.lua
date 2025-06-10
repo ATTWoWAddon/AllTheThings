@@ -106,6 +106,9 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 											if r then recipe.r = r; end
 											local c = GetRelativeValue(mostAccessibleSource, "c");
 											if c then recipe.c = c; end
+											for key,value in pairs(mostAccessibleSource) do
+												recipe[key] = value;
+											end
 											recipe.progress = nil;
 											recipe.total = nil;
 											recipe.itemID = nil;

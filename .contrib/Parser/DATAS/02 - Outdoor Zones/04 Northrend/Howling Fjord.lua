@@ -1619,6 +1619,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 28.8, 44.1, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 11250,	-- All Hail the Conqueror of Skorn!
+						["isBreadcrumb"] = true,
 					}),
 					q(11190, {	-- One Size Does Not Fit All
 						["qg"] = 23770,	-- Cannoneer Ely
