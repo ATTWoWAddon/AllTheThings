@@ -3,6 +3,8 @@ TANK_ROLE = createHeader({
 	icon = 132362,
 	text = {
 		en = "Tanks",
+		es = "Tanque",
+		mx = "Tanque",
 		ru = "Танк",
 		cn = "坦克",
 	},
