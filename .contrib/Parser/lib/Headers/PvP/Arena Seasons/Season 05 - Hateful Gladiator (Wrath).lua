@@ -7,6 +7,7 @@ PRE_SEASON_HATEFUL = createHeader({
 		de = "Hasserfüllten Gladiator",
 		fr = "Gladiateur Haineux",
 		it = "Gladiatore Perfido",
+		mx = "Gladiador Odioso",
 		pt = "Gladiador Odioso",
 		ru = "Злобный гладиатор",
 		ko = "원한에 검투사",
