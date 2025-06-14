@@ -6,6 +6,8 @@ FAITHFUL_DOG = createHeader({
 	icon = 133210,
 	text = {
 		en = "Faithful Dog Secret",
+		es = "Secreto del Perro fiel",
+		mx = "Secreto del Perro fiel",
 		cn = "忠诚的狗",
 		tw = "忠實的狗",
 	},

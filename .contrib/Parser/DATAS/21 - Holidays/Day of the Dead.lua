@@ -20,6 +20,7 @@ DAY_OF_THE_DEAD_HEADER = createHeader({
 		fr = "Jour des morts",
 		it = "Giorno dei Morti",
 		ko = "망자의 날",
+		mx = "Festividad de los Muertos",
 		pt = "Dia dos Mortos",
 		ru = "День мертвых",
 		cn = "悼念日",

@@ -18,6 +18,8 @@ HALLOWS_END_HEADER = createHeader({
 		en = WOWAPI_GetCategoryName(158),
 		-- #else
 		en = "Hallow's End",
+		es = "Halloween",
+		mx = "Halloween",
 		-- #endif
 	},
 });

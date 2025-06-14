@@ -6,7 +6,9 @@ COLLECTORS_EDITION = createHeader({
 	icon = [[~_.asset("Promotion_Collector")]],
 	text = {
 		en = "Collector's Edition",
+		es = "Edición de coleccionista",
 		fr = "Edition Collector",
+		mx = "Edición de coleccionista",
 		ru = "Коллекционное издание",
 		cn = "典藏版",
 		tw = "典藏版",
@@ -17,6 +19,8 @@ HEROIC_EDITION = createHeader({
 	icon = [[~_.asset("Weapon_Type_Heirloom")]],
 	text = {
 		en = "Heroic Edition",
+		es = "Edición Heroica",
+		mx = "Edición Heroica",
 		cn = "英雄礼包",
 		tw = "英雄版",
 	},
@@ -26,6 +30,8 @@ EPIC_EDITION = createHeader({
 	icon = [[~_.asset("Weapon_Type_Legendary")]],
 	text = {
 		en = "Epic Edition",
+		es = "Edición Épica",
+		mx = "Edición Épica",
 		cn = "史诗礼包",
 		tw = "史詩版",
 	},
@@ -35,8 +41,10 @@ TBC_CLASSIC_DELUXE_EDITION = createHeader({
 	icon = [[~_.asset("Expansion_TBC")]],
 	text = {
 		en = "TBC Classic Deluxe Edition",
+		es = "Edición TBC Classic Deluxe",
 		fr = "Édition BC Classic Deluxe",
-		cn = "燃烧的远征经典怀旧服典藏包",
+		mx = "Edición TBC Classic Deluxe",
+		cn = "燃烧的远征经典怀旧服典藏包",	
 		tw = "燃燒的遠征：經典版 - 豪華版",
 	},
 });
@@ -45,6 +53,8 @@ WOTLK_CLASSIC_NORTHREND_UPGRADE = createHeader({
 	icon = [[~_.asset("Expansion_WOTLK")]],
 	text = {
 		en = "WotLK Classic Northrend Upgrade",
+		es = "Pack Heroic Rasganorte WotLK Classic",
+		mx = "Paquete heroico Rasganorte WotLK Classic",
 		tw = "巫妖王之怒：經典版 - 北裂境升級",
 	},
 });
@@ -53,6 +63,8 @@ CATA_CLASSIC_BLAZING_UPGRADE = createHeader({
 	icon = [[~_.asset("Expansion_CATA")]],
 	text = {
 		en = "Cata Classic Blazing Upgrade",
+		es = "Pack Heroic llameante de Cataclysm Classic",
+		mx = "Paquete heroico abrasador de Cataclysm Classic",
 		tw = "浩劫與重生：經典版 - 熾炎升級",
 	},
 });
@@ -61,6 +73,8 @@ MOP_CLASSIC_HEROIC_PACK = createHeader({
 	icon = [[~_.asset("Expansion_MOP")]],
 	text = {
 		en = "MoP Classic Sha-Infused Heroic Pack",
+		es = "Pack Heroic imbuido de sha",
+		mx = "Paquete heroico infundido por los sha",
 		tw = "潘達利亞之謎：經典版 - 煞之灌注英雄版組合包",
 	},
 });
@@ -69,6 +83,8 @@ MIDNIGHT_TEMPORARY = createHeader({
 	icon = [[~_.asset("Expansion_MD")]],
 	text = {
 		en = "Midnight",
+		es = "Midnight",
+		mx = "Midnight",
 		cn = "至暗之夜",
 		-- tw = "至暗之夜",
 	},

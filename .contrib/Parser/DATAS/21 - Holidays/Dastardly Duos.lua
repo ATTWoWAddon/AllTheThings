@@ -7,10 +7,14 @@ DASTARDLY_DUOS = createHeader({
 	eventID = EVENTS.DASTARDLY_DUOS,
 	text = {
 		en = "Dastardly Duos",
+		es = "Dúos despiadados",
+		mx = "Dúos indómitos",
 		cn = "卑鄙双雄",
 	},
 	description = {
 		en = "Hello, fight fans. The world's meanest villains are teamed up and back for revenge! Meet in Stormwind, Orgrimmar or Dornogal to fight against villainous bosses from Azeroth's past.",
+		es = "Saludos, aficionados a la lucha. ¡Los villanos más malvados de Azeroth se han unido y han vuelto para vengarse! Venid a Ventormenta, Orgrimmar o Dornogal y enfrentaos a los malvados jefes del pasado de Azeroth.",
+		mx = "Saludos, fans de la lucha. ¡Los villanos más malvados volvieron en equipos para buscar venganza! Acércate a Ventormenta, Orgrimmar o Dornogal para pelear contra jefes malignos del pasado de Azeroth.",
 	},
 });
 

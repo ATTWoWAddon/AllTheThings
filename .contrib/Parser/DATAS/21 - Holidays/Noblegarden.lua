@@ -18,6 +18,8 @@ NOBLEGARDEN_HEADER = createHeader({
 		en = WOWAPI_GetCategoryName(159),
 		-- #else
 		en = "Noblegarden",
+		es = "Jardín noble",
+		mx = "Jardín noble",
 		-- #endif
 	},
 });

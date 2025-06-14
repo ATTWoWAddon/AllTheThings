@@ -7,6 +7,8 @@ FILLED_TRAVELERS_LOG = createHeader({
 	icon = 4696085,
 	text = {
 		en = "Filled Travelers Log",
+		es = "Llenar el registro del viajero",
+		mx = "Llenar el registro del viajero",
 		cn = "旅行者日志进度",
 		tw = "完成旅行者日誌",
 	},

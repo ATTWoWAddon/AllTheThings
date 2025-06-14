@@ -6,10 +6,14 @@ MINIGAMES_HEADER = createHeader({
 	icon = 134481,
 	text = {
 		en = "Minigames",
+		es = "Minijuegos",
+		mx = "Minijuegos",
 		cn = "小游戏",
 	},
 	description = {
 		en = "The following minigames cost one Darkmoon Game Token to play and have a daily quest that grants you prize tickets as well as a number of associated achievements.",
+		es = "Los siguientes minijuegos cuestan una Ficha de Juego de la Luna Negra y tienen una misión diaria que otorga vale de premio, así como una serie de logros asociados.",
+		mx = "Los siguientes minijuegos cuestan una Ficha de Juego de la Luna Negra y tienen una misión diaria que otorga vale de premio, así como una serie de logros asociados.",
 	},
 });
 DARKMOON_DANCE_HEADER = createHeader({
@@ -17,10 +21,11 @@ DARKMOON_DANCE_HEADER = createHeader({
 	icon = 348567,
 	text = {
 		en = "Darkmoon Dance",
-		es = "Feria de la Luna Negra Juego de Baile",
+		es = "Baile de la Luna Negra",
 		de = "Dunkelmond-Jahrmarkt Tanzspiel",
 		fr = "Foire de Sombrelune Jeu de Danse",
 		it = "Fiera di Lunacupa Gioco della Danza",
+		mx = "Baile bajo la Luna Negra",
 		pt = "Feira de Negraluna Jogo da Dança",
 		ru = "Ярмарка Новолуния состязании танцоров",
 		ko = "다크문 유랑단 춤 게임",
@@ -28,6 +33,8 @@ DARKMOON_DANCE_HEADER = createHeader({
 	},
 	description = {
 		en = "To play the Darkmoon Faire Dance game, talk to Simon Sezdans in front of the South Pavillion. Each attempt at the Darkmoon Faire Dance game costs one Darkmoon Game Token. Talking to Simon will also set the difficulty for your dance game:\n  Just something fun and easygoing! (Easy)\n  I'd like a little challenge! (Medium)\n  Show me your moves, don't hold back! (Hard)\n\nDarkmoon Dance Master is not a rhythm game like most dance games are, but a memory game instead. You will have a dancer next to you in the dancing arena, who will start a sequence of moves highlighted by runes in front of him. Easy games will have a sequence of 3 runes at a time, Medium games 4 runes, and Hard games 5 runes.\n\nThere are three possible runes: Chicken Dance (Yellow), Power Spin (Purple) and Fist Pump (Blue). Once the opponent finishes their sequence, you have 5 seconds to match the exact sequence used by the dancer. There is no punishment for taking your time to complete the sequence, as long as you do it in time and don't miss any steps.\n\nThe game ends after 5 rounds (if you complete all steps successfully), but can end prematurely if you miss too many steps. Missing no steps will grant you a perfect score.",
+		es = "Para jugar al juego de baile de la Feria de la Luna Negra, habla con Simon Sezdans frente al Pabellón Sur. Cada intento cuesta una Ficha de Juego de la Luna Negra. Hablar con Simon también determinará la dificultad de tu juego de baile:\n ¡Algo divertido y relajado! (Fácil)\n ¡Me gustaría un pequeño desafío! (Medio)\n ¡Enséñame tus movimientos, no te contengas! (Difícil)\n\nEl Maestro de Baile de la Luna Negra no es un juego de ritmo como la mayoría de los juegos de baile, sino un juego de memoria. Tendrás un bailarín a tu lado en la pista de baile, que iniciará una secuencia de movimientos resaltados con runas frente a él. Las partidas fáciles tendrán una secuencia de 3 runas a la vez, las partidas medias, 4 runas, y las partidas difíciles, 5 runas.\n\nHay tres runas posibles: Baile del Pollo (Amarillo), Giro enérgico (Morado) y Agitar puño (Azul). Una vez que el oponente termine su secuencia, tienes 5 segundos para igualar la secuencia exacta utilizada por el Bailarín. No hay castigo por tomarse el tiempo para completar la secuencia, siempre y cuando lo hagas a tiempo y no te saltes ningún paso. El juego termina después de 5 rondas (si completas todos los pasos correctamente), pero puede terminar antes de tiempo si te saltas demasiados. Si no te saltas ningún paso, obtendrás una puntuación perfecta.",
+		mx = "Para jugar al juego de baile de la Feria de la Luna Negra, habla con Simon Sezdans frente al Pabellón Sur. Cada intento cuesta una Ficha de Juego de la Luna Negra. Hablar con Simon también determinará la dificultad de tu juego de baile:\n ¡Algo divertido y relajado! (Fácil)\n ¡Me gustaría un pequeño desafío! (Medio)\n ¡Enséñame tus movimientos, no te contengas! (Difícil)\n\nEl Maestro de Baile de la Luna Negra no es un juego de ritmo como la mayoría de los juegos de baile, sino un juego de memoria. Tendrás un bailarín a tu lado en la pista de baile, que iniciará una secuencia de movimientos resaltados con runas frente a él. Las partidas fáciles tendrán una secuencia de 3 runas a la vez, las partidas medias, 4 runas, y las partidas difíciles, 5 runas.\n\nHay tres runas posibles: Danza de la gallina (Amarillo), Vuelta poderosa (Morado) y Agitar puño (Azul). Una vez que el oponente termine su secuencia, tienes 5 segundos para igualar la secuencia exacta utilizada por el Bailarín. No hay castigo por tomarse el tiempo para completar la secuencia, siempre y cuando lo hagas a tiempo y no te saltes ningún paso. El juego termina después de 5 rondas (si completas todos los pasos correctamente), pero puede terminar antes de tiempo si te saltas demasiados. Si no te saltas ningún paso, obtendrás una puntuación perfecta.",
 	},
 });
 FIREBIRDS_CHALLENGE_HEADER = createHeader({
@@ -39,6 +46,7 @@ FIREBIRDS_CHALLENGE_HEADER = createHeader({
 		de = "Herausforderung des Feuervogels",
 		fr = "Défi de l’Oiseau de feu",
 		it = "Sfida dell'Uccello di Fuoco",
+		mx = "Desafío del Pájaro de Fuego",
 		pt = "Desafio da Ave Flamejante",
 		ru = "Вызов огнекрыла",
 		ko = "불새의 도전",
@@ -46,6 +54,8 @@ FIREBIRDS_CHALLENGE_HEADER = createHeader({
 	},
 	description = {
 		en = "Roughly 60 floating rings appear all over the island, but most are not over the Faire area proper and are found in the woods. Players start with ten seconds of flight time and flying through a ring will refresh the buff. Work out a route in such a way that the next ring is always within 10 seconds of the one that is getting flown through, as there are many ways to get cut off.",
+		es = "Aparecen aproximadamente 60 anillos flotantes por toda la isla, pero la mayoría no están sobre la zona de la Feria y se encuentran en el bosque. Los jugadores comienzan con diez segundos de tiempo de vuelo y volar a través de un anillo refrescará la mejora. Planifica una ruta de tal manera que el siguiente anillo esté siempre a menos de 10 segundos del que se está atravesando, ya que hay muchas maneras de cortar el paso.",
+		mx = "Aparecen aproximadamente 60 anillos flotantes por toda la isla, pero la mayoría no están sobre la zona de la Feria y se encuentran en el bosque. Los jugadores comienzan con diez segundos de tiempo de vuelo y volar a través de un anillo refrescará la mejora. Planifica una ruta de tal manera que el siguiente anillo esté siempre a menos de 10 segundos del que se está atravesando, ya que hay muchas maneras de cortar el paso.",
 	},
 });
 SHOOTING_GALLERY_HEADER = createHeader({
@@ -57,6 +67,7 @@ SHOOTING_GALLERY_HEADER = createHeader({
 		de = "Schießbude",
 		fr = "Stand de tir",
 		it = "Tiro a Segno",
+		mx = "Galería de tiro",
 		pt = "Galeria de tiro",
 		ru = "Тир",
 		ko = "사격 연습장",
@@ -64,6 +75,8 @@ SHOOTING_GALLERY_HEADER = createHeader({
 	},
 	description = {
 		en = "In order to maximize your score, wait for the current mark to disappear then aim towards the middle target. As soon as any green mark appear, press 1 immediately and during the short cast time, move your gun to point at the left or right target if necessary.",
+		es = "Para maximizar tu puntuación, espera a que la marca actual desaparezca y luego apunta al objetivo central. En cuanto aparezca una marca verde, presiona 1 inmediatamente y, durante el breve tiempo de lanzamiento, mueve tu arma para apuntar al objetivo izquierdo o derecho si es necesario.",
+		mx = "Para maximizar tu puntuación, espera a que la marca actual desaparezca y luego apunta al objetivo central. En cuanto aparezca una marca verde, presiona 1 inmediatamente y, durante el breve tiempo de lanzamiento, mueve tu arma para apuntar al objetivo izquierdo o derecho si es necesario.",
 	},
 });
 WHACK_A_GNOLL_HEADER = createHeader({
@@ -75,6 +88,7 @@ WHACK_A_GNOLL_HEADER = createHeader({
 		de = "Hau-den-Gnoll",
 		fr = "Cogne-Gnoll",
 		it = "Pesta-lo-Gnoll",
+		mx = "Golpea al gnoll",
 		pt = "Pancada-no-Gnoll",
 		ru = "Гноллобой",
 		ko = "놀 때려잡기",
@@ -82,6 +96,8 @@ WHACK_A_GNOLL_HEADER = createHeader({
 	},
 	description = {
 		en = "Located near the entrance, guests receive a mallet to whack some stuffed gnolls that pop out of nine barrels in the area. Players will have 60 seconds to earn 30 points. The gnolls come in three types: normal, Hogger, and baby, awarding 1 point, 3 points, or a knockdown, respectively.",
+		es = "Cerca de la entrada, los visitantes reciben un mazo para golpear a unos gnolls disecados que salen de nueve barriles en la zona. Los jugadores tendrán 60 segundos para ganar 30 puntos. Los gnolls son de tres tipos: normales, Hogger y bebés, que otorgan 1 punto, 3 puntos o un derribo, respectivamente.",
+		mx = "Cerca de la entrada, los visitantes reciben un mazo para golpear a unos gnolls disecados que salen de nueve barriles en la zona. Los jugadores tendrán 60 segundos para ganar 30 puntos. Los gnolls son de tres tipos: normales, Hogger y bebés, que otorgan 1 punto, 3 puntos o un derribo, respectivamente.",
 	},
 });
 

@@ -11,6 +11,7 @@ STRANGLETHORN_FISHING_EXTRAVAGANZA_HEADER = createHeader({
 		de = "Anglerwettbewerb im Schlingendorntal",
 		fr = "Concours de pêche de Strangleronce",
 		it = "Gara di Pesca a Rovotorto",
+		mx = "Gran espectáculo de pesca de Tuercespina",
 		ko = "가시덤불 골짜기 낚시왕 선발대회",
 		pt = "Festerê de Pesca da Selva do Espinhaço",
 		ru = "Рыбомания Тернистой долины",

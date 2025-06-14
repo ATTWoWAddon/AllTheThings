@@ -19,6 +19,8 @@ BREWFEST_HEADER = createHeader({
 		en = WOWAPI_GetCategoryName(162),
 		-- #else
 		en = "Brewfest",
+		es = "Fiesta de la cerveza",
+		mx = "Fiesta de la cerveza",
 		-- #endif
 	},
 });
