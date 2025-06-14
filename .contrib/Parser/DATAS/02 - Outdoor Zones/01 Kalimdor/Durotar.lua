@@ -1415,6 +1415,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								}),
 							},
 						}),
+						q(25143, {	-- Primal Strike (Orc)
+							["qg"] = 3157,	-- Shikrik <Shaman Trainer>
+							["sourceQuest"] = 3089,	-- Rune-Inscribed Parchment
+							["coord"] = { 42.4, 69, DUROTAR },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+							["races"] = { ORC },
+							["classes"] = { SHAMAN },
+							["groups"] = {
+								i(53385),	-- Rockbitten Gloves
+							},
+						}),
 						q(25133, {	-- Report to Sen'jin Village
 							["qg"] = 3145,	-- Zureetha Fargaze
 							["sourceQuest"] = 25132,	-- Burning Blade Medallion

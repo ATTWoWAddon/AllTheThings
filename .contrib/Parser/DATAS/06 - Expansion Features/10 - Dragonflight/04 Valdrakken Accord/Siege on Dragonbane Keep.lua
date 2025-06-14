@@ -40,18 +40,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}),
 				n(TREASURES, {
-					o(376580, {	-- Djaradin Cache
-						["coords"] = {
-							{ 24.3, 69.5, THE_WAKING_SHORES },
-							{ 69.9, 45.3, THE_WAKING_SHORES },
-							{ 71.3, 46.8, THE_WAKING_SHORES },
-							{ 65.8, 35.1, THE_WAKING_SHORES },
-							{ 63.2, 34.6, THE_WAKING_SHORES },
-						},
-						["g"] = {
-							i(199230),	-- Schematic: Projectile Propulsion Pinion (RECIPE!)
-						},
-					}),
 					o(381357, {	-- Stone Tablet
 						["coord"] = { 27.8, 68.4, THE_WAKING_SHORES },
 						["g"] = {

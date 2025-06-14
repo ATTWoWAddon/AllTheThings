@@ -292,6 +292,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								}),
 							},
 						}),
+						q(27027, {	-- Primal Strike (Tauren)
+							["qg"] = 3062,	-- Meela Dawnstrider <Shaman Trainer>
+							["sourceQuest"] = 3093,	-- Rune-Inscribed Note
+							["coord"] = { 45, 75, CAMP_NARACHE },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+							["races"] = { TAUREN },
+							["classes"] = { SHAMAN },
+						}),
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77648, {	-- Relics of the Tauren
 							["qg"] = 3060,	-- Gart Mistrunner <Druid Trainer>

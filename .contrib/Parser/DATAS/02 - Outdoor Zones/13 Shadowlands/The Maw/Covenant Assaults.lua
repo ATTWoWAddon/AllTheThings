@@ -854,6 +854,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							},
 						}),
 						q(63839, {	-- If Even One is Worthy
+							["qg"] = 178063,	-- The Accuser
 							["coord"] = { 30.9, 16.0, THE_MAW },
 						}),
 						q(63833, {	-- Terrorizing the Tremaculum

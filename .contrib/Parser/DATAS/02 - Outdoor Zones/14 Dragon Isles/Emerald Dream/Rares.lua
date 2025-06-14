@@ -296,7 +296,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			n(209902, {	-- Talthonei Ashwhisper
-				["description"] = "Killing druids of flames can make her spawn in area where they are persist.",
+				["description"] = "Killing Druids of the Flame can make her spawn in areas where they are present.",
 				["questID"] = 77994,
 				["coords"] = {
 					{ 61.5, 67.5, EMERALD_DREAM },

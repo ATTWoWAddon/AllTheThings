@@ -129,7 +129,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						q(9829, {	-- Khadgar
 							["qg"] = 18165,	-- Archmage Cedric
 							["sourceQuest"] = 9826,	-- Contact from Dalaran
-							["coords"] = { 
+							["coords"] = {
 								-- #if AFTER CATA
 								{ 30.8, 30.8, ALTERAC_MOUNTAINS },
 								-- #else
@@ -1011,7 +1011,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				["creatureID"] = 16816,	-- Echo of Medivh
 				["provider"] = { "o", 185119 },	-- Dust Covered Chest
 				-- #if AFTER 9.0.2
-				["description"] = "You have two options with this chess event: Either actively play it through with a higher success rate. Or immediately leave the king vehicle after starting the event and take a 5 minute break from the game, this have a 50% success rate.",
+				["description"] = "You have two options with this chess event: Either actively play it through with a higher success rate, or immediately leave the king vehicle after starting the event and take a 5 minute break from the game, this has a 50% success rate.",
 				-- #endif
 				["groups"] = {
 					i(28749),	-- King's Defender

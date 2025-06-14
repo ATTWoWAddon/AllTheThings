@@ -121,6 +121,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(201432),	-- Obsidian Dragontooth
 					i(201429),	-- Obsidian Fist
 					i(201431),	-- Obsidian Tyrant's Mace
+					i(199230),	-- Schematic: Projectile Propulsion Pinion (RECIPE!)
 				},
 			}),
 			o(385022, {	-- Eroded Fossil

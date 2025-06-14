@@ -160,6 +160,13 @@ root(ROOTS.Zones, {
 							i(54303),	-- Total Disaster Bracers
 						},
 					}),
+					q(14011, {	-- Primal Strike (Goblin)
+						["qg"] = 34695,	-- Maxx Avalanche <Shaman Trainer>
+						["coord"] = { 59.6, 77, KEZAN },
+						["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+						["races"] = { GOBLIN },
+						["classes"] = { SHAMAN },
+					}),
 					q(24567, {	-- Report for Tryouts
 						["coord"] = { 58.3, 76.4, KEZAN },
 						["qg"] = 34874,	-- Megs Dreadshredder

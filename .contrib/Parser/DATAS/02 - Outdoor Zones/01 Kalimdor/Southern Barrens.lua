@@ -1966,6 +1966,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["lockCriteria"] = { 1, "questID", 24934 },	-- Repel Boarders!
 				}),
 				q(25175, {	-- The Bad News
 					["qg"] = 39188,	-- Marley Twinbraid

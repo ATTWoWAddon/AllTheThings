@@ -12,7 +12,7 @@ FAITHFUL_DOG = createHeader({
 });
 
 root(ROOTS.Secrets, n(FAITHFUL_DOG, {
-	["description"] = "Multi-expansion secret to obtaining Dog as a conpanion pet",
+	["description"] = "Multi-expansion secret to obtaining Dog as a companion pet",
 	["timeline"] = { ADDED_5_0_4 },
 	["g"] = {
 		q(30526, {	-- Step 1: Lost and Lonely

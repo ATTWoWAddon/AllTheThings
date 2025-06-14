@@ -6555,9 +6555,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							73.8, 53.4, STORMWIND_CITY
 						-- #endif
 					},
-					["timeline"] = { REMOVED_3_0_2, ADDED_4_0_1, REMOVED_7_0_3 },
+					["timeline"] = { ADDED_1_4_0, REMOVED_3_0_2, ADDED_4_0_1, REMOVED_7_0_3 },
 					["groups"] = {
-						i(18664, { ["timeline"] = { REMOVED_2_0_1 } }),	-- A Treatise on Military Ranks
+						i(18664, { ["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 } }),	-- A Treatise on Military Ranks
 						i(15196, {	-- Private's Tabard
 							["races"] = ALLIANCE_ONLY,
 						}),
