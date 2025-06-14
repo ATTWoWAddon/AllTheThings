@@ -259,24 +259,31 @@ root(ROOTS.Zones, {
 						["coord"] = { 51.5, 48.5, STARTER_WANDERING_ISLE },
 					}),
 					q(30039, {	-- Much to Learn (Monk)
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						["classes"] = { MONK },
 					}),
 					q(30040, {	-- Much to Learn (Mage)
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						["classes"] = { MAGE },
 					}),
 					q(30041, {	-- Much to Learn (Hunter)
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						["classes"] = { HUNTER },
 					}),
 					q(30042, {	-- Much to Learn (Priest)
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						["classes"] = { PRIEST },
 					}),
 					q(30043, {	-- Much to Learn (Rogue)
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						["classes"] = { ROGUE },
 					}),
 					q(30044, {	-- Much to Learn (Shaman)
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						["classes"] = { SHAMAN },
 					}),
 					q(30045, {	-- Much to Learn (Warrior)
+						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						["classes"] = { WARRIOR },
 					}),
 					q(29800, {	-- New Allies
