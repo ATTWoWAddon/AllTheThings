@@ -166,14 +166,14 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 54786 },	-- Master Shang Xi
 						["sourceQuests"] = { 29775 },	-- The Spirit and Body of Shen-zin Su
 					}),
-					un(REMOVED_FROM_GAME, q(29404)),	-- Much to Learn
-					un(REMOVED_FROM_GAME, q(30039)),	-- Much to Learn
-					un(REMOVED_FROM_GAME, q(30040)),	-- Much to Learn
-					un(REMOVED_FROM_GAME, q(30041)),	-- Much to Learn
-					un(REMOVED_FROM_GAME, q(30042)),	-- Much to Learn
-					un(REMOVED_FROM_GAME, q(30043)),	-- Much to Learn
-					un(REMOVED_FROM_GAME, q(30044)),	-- Much to Learn
-					un(REMOVED_FROM_GAME, q(30045)),	-- Much to Learn
+					un(REMOVED_FROM_GAME, q(29404)),	-- Much to Learn (NYI?)
+					un(REMOVED_FROM_GAME, q(30039)),	-- Much to Learn (Monk)
+					un(REMOVED_FROM_GAME, q(30040)),	-- Much to Learn (Mage)
+					un(REMOVED_FROM_GAME, q(30041)),	-- Much to Learn (Hunter)
+					un(REMOVED_FROM_GAME, q(30042)),	-- Much to Learn (Priest)
+					un(REMOVED_FROM_GAME, q(30043)),	-- Much to Learn (Rogue)
+					un(REMOVED_FROM_GAME, q(30044)),	-- Much to Learn (Shaman)
+					un(REMOVED_FROM_GAME, q(30045)),	-- Much to Learn (Warrior)
 					q(29800, {	-- New Allies
 						["provider"] = { "n", 57739 },	-- Ji Firepaw
 						["sourceQuests"] = { 29799 },	-- The Healing of Shen-zin Su
