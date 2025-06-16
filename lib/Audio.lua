@@ -191,6 +191,32 @@ function app.ClearSounds(tableName)
 	end
 end
 
+-- Legend of Zelda sound pack
+local ZeldaTwilightPrincessSoundPack = api:CreateSoundPack("Legend of Zelda", {
+	COMPLETE = {
+		app.asset("Zelda_WiiIntro.wav"),
+	},
+	DEATH = {
+		app.asset("Zelda_Fairy.wav"),
+	},
+	FANFARE = {
+		app.asset("Zelda_FirstRupee.wav"),
+		app.asset("Zelda_Fanfare_SmallItem.wav"),
+		app.asset("Zelda_Fanfare_Item.wav"),
+		app.asset("Zelda_Fanfare_HeartContainer.wav"),
+		app.asset("Zelda_Fanfare_GoldenBug.wav"),
+		app.asset("Zelda_Fanfare_CatchFish.wav"),
+	},
+	MOUNTFANFARE = {
+		app.asset("Zelda_Epona.wav"),
+	},
+	RAREFIND = {
+		app.asset("Zelda_Secret.wav"),
+	},
+	REMOVE = {},
+	REPORT = {},
+});
+
 -- Note that any enabled sound table will completely replace the Default sounds for that table
 local AprilFoolsSoundPack = api:CreateSoundPack("April Fools Sounds", {
 	COMPLETE = {
