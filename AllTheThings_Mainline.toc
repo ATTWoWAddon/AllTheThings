@@ -114,7 +114,6 @@ src\Classes\base.lua
 src\Classes\Achievement Categories.lua
 src\Classes\Achievement Data.lua
 src\Classes\Achievement.lua
-src\Classes\BattlePet.lua
 src\Classes\CharacterClass.lua
 src\Classes\Currency.lua
 src\Classes\Difficulty.lua
@@ -123,6 +122,7 @@ src\Classes\Guild Achievements.lua
 src\Classes\Quests.lua
 src\Classes\Item.Retail.lua
 # src\Classes\Item.Classic.lua
+src\Classes\BattlePet.lua
 src\Classes\Encounter.lua
 src\Classes\Expansion.lua
 src\Classes\FlightPath.lua

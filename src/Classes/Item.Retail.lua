@@ -347,6 +347,7 @@ local function default_link(t)
 		return RawSetItemInfoFromLink(t, itemLink);
 	end
 end
+cache.DefaultFunctions.link = default_link
 local function default_icon(t)
 	return t.itemID and GetItemIcon(t.itemID) or 134400;
 end
@@ -400,7 +401,7 @@ local itemFields = {
 		return cache.GetCachedField(t, "icon", default_icon);
 	end,
 	link = function(t)
-		return cache.GetCachedField(t, "link", default_link);
+		return cache.GetCachedField(t, "link");
 	end,
 	name = function(t)
 		return cache.GetCachedField(t, "name");

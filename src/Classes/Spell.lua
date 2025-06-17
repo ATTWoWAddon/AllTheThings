@@ -8,8 +8,8 @@ local pairs, select, rawget
 	= pairs, select, rawget
 
 -- App locals
-local IsQuestFlaggedCompleted, SearchForFieldContainer, GetFixedItemSpecInfo, SearchForField
-	= app.IsQuestFlaggedCompleted, app.SearchForFieldContainer, app.GetFixedItemSpecInfo, app.SearchForField
+local IsQuestFlaggedCompleted, SearchForFieldContainer, SearchForField
+	= app.IsQuestFlaggedCompleted, app.SearchForFieldContainer, app.SearchForField
 
 -- WoW API Cache
 local GetSpellLink = app.WOWAPI.GetSpellLink;
@@ -141,26 +141,6 @@ local function CacheInfo(t, field)
 	end
 	if field then return _t[field]; end
 end
-local function CacheItemInfo(t, field)
-	app.DirectGroupRefresh(t, true)
-	local _t = cache.GetCached(t);
-	local item = _t._refitem
-	if not item then
-		-- this allows using the Item's cache to cache the Item information for the Recipe properly
-		-- eventually can use some shared ItemDB information cache driectly ideally
-		item = app.CreateItem(t.itemID)
-		_t._refitem = item
-	end
-	if item.link then
-		local itemCache = item._cache.GetCached(item)
-		_t.name = itemCache.name
-		_t.link = itemCache.link
-		_t.icon = itemCache.icon
-	elseif item.name then
-		_t.name = item.name
-	end
-	if field then return _t[field]; end
-end
 
 -- Spell Lib
 do
@@ -196,24 +176,8 @@ do
 		end,
 	},
 	"WithItem", {
-		_cachekey = function(t)
-			return t[KEY] + (t.itemID / 1000000)
-		end,
-		specs = function(t)
-			return GetFixedItemSpecInfo(t.itemID)
-		end,
-		tsm = function(t)
-			return ("i:%d"):format(t.itemID)
-		end,
-		name = function(t)
-			return cache.GetCachedField(t, "name", CacheItemInfo);
-		end,
-		link = function(t)
-			return cache.GetCachedField(t, "link", CacheItemInfo);
-		end,
-		icon = function(t)
-			return cache.GetCachedField(t, "icon", CacheItemInfo) or 136243;	-- Trade_engineering
-		end,
+		ImportFrom = "Item",
+		ImportFields = { "name", "link", "icon", "specs", "tsm", "costCollectibles" },
 	},
 	function(t) return t.itemID end)
 
@@ -301,29 +265,11 @@ do
 		end,
 	},
 	"WithItem", {
+		ImportFrom = "Item",
+		ImportFields = { "name", "link", "icon", "specs", "tsm", "costCollectibles" },
 		b = function(t)
 			-- If not tracking Recipes Account-Wide, then pretend that every Recipe is BoP
 			return app.Settings.AccountWide[SETTING] and 2 or 1;
-		end,
-		-- Extended Classes don't inherit Variant versions of their Base Class automatically
-		-- i.e. RecipeWithItem doesn't extend SpellWithItem, it extends Spell
-		_cachekey = function(t)
-			return t[KEY] + (t.itemID / 1000000)
-		end,
-		specs = function(t)
-			return GetFixedItemSpecInfo(t.itemID)
-		end,
-		tsm = function(t)
-			return ("i:%d"):format(t.itemID)
-		end,
-		name = function(t)
-			return cache.GetCachedField(t, "name", CacheItemInfo);
-		end,
-		link = function(t)
-			return cache.GetCachedField(t, "link", CacheItemInfo);
-		end,
-		icon = function(t)
-			return cache.GetCachedField(t, "icon", CacheItemInfo) or 136243;	-- Trade_engineering
 		end,
 	},
 	function(t) return t.itemID end);

@@ -3,8 +3,8 @@
 local appName, app = ...;
 
 -- Global locals
-local type,ipairs,pairs,setmetatable,rawget,tinsert,unpack,rawset
-	= type,ipairs,pairs,setmetatable,rawget,tinsert,unpack,rawset
+local type,ipairs,pairs,setmetatable,rawget,tinsert,unpack,rawset,select
+	= type,ipairs,pairs,setmetatable,rawget,tinsert,unpack,rawset,select
 
 -- App locals
 local GetRelativeValue = app.GetRelativeValue;
@@ -435,6 +435,43 @@ local function CloneObject(object, ignoreChildren)
 	end
 	return clone;
 end
+-- Allow importing a specific set of Class functions from one Class to another
+local function ImportClassFunctions(baseClassName, copyClassName, ...)
+	-- make sure the base class exists
+	local baseClass = type(baseClassName) == "table" and baseClassName or classDefinitions[baseClassName]
+	if not baseClass then error("ImportClassFunctions - base Class does not exist"..(baseClassName or "")) end
+
+	-- make sure the copy class exists
+	local copyClass = type(copyClassName) == "table" and copyClassName or classDefinitions[copyClassName]
+	if not copyClass then error("ImportClassFunctions - copy Class does not exist"..(copyClassName or "")) end
+
+	local funcName, func
+	local count = select("#", ...)
+	if count > 0 then
+		-- app.PrintDebug("ImportClassFunctions - Explicit Copy",baseClassName,copyClassName,...)
+		-- copy the explicitly-named class functions provided, these can replace the base class functions
+		for i=1,count do
+			funcName = select(i, ...)
+			func = copyClass[funcName]
+			if not func then app.print("ImportClassFunctions - func not found in copy Class",funcName,copyClassName)
+			-- elseif baseClass[funcName] then app.print("ImportClassFunctions - func already exists in base Class",funcName,baseClassName)
+			else
+				baseClass[funcName] = func
+				-- app.PrintDebug("Copied Base Func!",funcName,"from",copyClassName,"into",baseClassName)
+			end
+		end
+	else
+		-- app.PrintDebug("ImportClassFunctions - Soft Copy",baseClassName,copyClassName)
+		-- soft-copy any missing class functions into the provided class
+		for field,func in pairs(baseClass) do
+			if not baseClass[field] then
+				baseClass[field] = func
+				-- app.PrintDebug("Copied Base Func!",funcName,"from",copyClassName,"into",baseClassName)
+			-- else app.PrintDebug("ImportClassFunctions - Ignoring func already existing in base Class",field,baseClassName)
+			end
+		end
+	end
+end
 app.CloneObject = CloneObject;
 app.CloneClassInstance = CloneClassInstance;
 app.CreateClassInstance = CreateClassInstance;
@@ -610,6 +647,9 @@ app.CreateClass = function(className, classKey, fields, ...)
 					CloneDictionary(fields, subfields)
 					subfields.__condition = conditional
 					subfields.base = base;
+					if subfields.ImportFrom then
+						ImportClassFunctions(subfields, subfields.ImportFrom, unpack(subfields.ImportFields))
+					end
 					GenerateSimpleMetaClass(subfields, className, subclassName)
 					local subclass = CreateClassMeta(subfields, className .. subclassName)
 					GenerateVariantClasses(subclass)
@@ -806,11 +846,12 @@ app.WrapObject = function(object, baseObject)
 	});
 end
 
+local ClassDataCaches = {}
 -- Create a local cache table which can be used by a Type class of a Thing to easily store shared
 -- information based on a unique key field for any Thing object of that Type
 app.CreateCache = function(idField, className)
 	local cache, _t, v = {}, nil, nil;
-	cache.DefaultFunctions = {}
+	local DefaultFunctions = {}
 	cache.GetCached = function(t)
 		local id = t[idField];
 		if id then
@@ -846,7 +887,7 @@ app.CreateCache = function(idField, className)
 			v = _t[field];
 			if v ~= nil then return v end
 
-			default_function = default_function or cache.DefaultFunctions[field]
+			default_function = default_function or DefaultFunctions[field]
 			if not default_function then return end
 
 			local defVal = default_function(t, field, _t);
@@ -869,10 +910,21 @@ app.CreateCache = function(idField, className)
 		_t = cache.GetCached(t);
 		if _t then _t[field] = value; end
 	end
+	cache.DefaultFunctions = DefaultFunctions
 	if app.__perf then
 		return app.__perf.AutoCaptureTable(cache, "ClassCache:"..(className or idField))
 	end
+	if className then
+		ClassDataCaches[className] = cache
+	end
 	return cache
+end
+app.GetOrCreateCache = function(idField, className)
+	local cache = ClassDataCaches[className]
+	if cache then return cache end
+
+	app.print("Missing className",className,"for ClassData cache with idField",idField)
+	return app.CreateCache(idField, className)
 end
 
 -- Returns an object which contains no data, but can return values from an overrides table, and be loaded/created when a specific field is attempted to be referenced

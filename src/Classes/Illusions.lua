@@ -1,30 +1,10 @@
 local app = select(2, ...);
-local L = app.L
 
 -- WoW API Cache
-local GetItemInfo = app.WOWAPI.GetItemInfo;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving
 
 -- Illusion Class
 local AccountWideIllusionData = {};
-
-local function GetIllusionItemInfo(t, field)
-	local name, link = GetItemInfo(t.itemID);
-	if link then
-		t.name = name;
-		t.link = link;
-		return t[field];
-	end
-end
-local function GetDefaultItemInfo(t, field)
-	local id = t.itemID
-	local itemName = L.ITEM_NAMES[id] or (t.sourceID and L.SOURCE_NAMES and L.SOURCE_NAMES[t.sourceID])
-		or "Item #" .. tostring(id) .. "*";
-	t.title = L.FAILED_ITEM_INFO;
-	t.link = "|cffff80ff[" .. itemName .. "]|r";
-	t.name = itemName;
-	return t[field]
-end
 
 local CLASSNAME, KEY, CACHE = "Illusion", "illusionID", "Illusions"
 local illusionFields = {
@@ -81,14 +61,14 @@ if C_TransmogCollection then
 end
 app.CreateIllusion = app.CreateClass(CLASSNAME, KEY, illusionFields,
 "WithItem", {
-	link = function(t)
-		return app.TryGetField(t, "link", GetIllusionItemInfo, GetDefaultItemInfo)
-	end,
-	name = function(t)
-		return app.TryGetField(t, "name", GetIllusionItemInfo, GetDefaultItemInfo) or RETRIEVING_DATA
-	end,
+	ImportFrom = "Item",
+	ImportFields = { "name", "link", "icon", "tsm", "costCollectibles" },
 	text = function(t)
-		return "|cffff80ff[" .. t.name .. "]|r";
+		-- triggering the Item's Link logic will ensure it is refreshed properly from server
+		if not t.link then return end
+
+		local name = t.name or RETRIEVING_DATA
+		return "|cffff80ff[" .. name .. "]|r";
 	end
 }, function(t) return t.itemID; end);
 

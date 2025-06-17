@@ -1,5 +1,4 @@
-
--- BattlePet Class (maybe this should move to a MoP Expansion file?)
+-- BattlePet Class
 local _, app = ...
 
 -- Globals
@@ -7,7 +6,6 @@ local wipe, setmetatable, rawget, select,pairs
 	= wipe, setmetatable, rawget, select,pairs
 
 -- WoW API Cache
-local GetItemInfo = app.WOWAPI.GetItemInfo;
 
 -- Module
 
@@ -62,44 +60,6 @@ local function CacheInfo(t, field)
 		end
 	end
 	if field then return _t[field]; end
-end
-local function default_link(t)
-	if t.itemID then
-		local name, link, quality, _, _, _, _, _, _, icon, _, _, _, b = GetItemInfo(t.itemID);
-		if link then
-			--[[ -- Debug Prints
-			local _t, id = cache.GetCached(t);
-			print("rawset item info",id,link,name,quality,b)
-			--]]
-			t = cache.GetCached(t);
-			t.link = link;
-			t.q = quality;
-			if not t.name then
-				t.name = name
-			end
-			if not t.icon then
-				t.icon = icon
-			end
-			if quality > 6 then
-				-- heirlooms return as 1 but are technically BoE for our concern
-				t.b = 2;
-			else
-				t.b = b;
-			end
-			return link;
-		end
-	end
-end
-local function default_costCollectibles(t)
-	local id = t.itemID
-	if not id then return app.EmptyTable end
-	local results = app.GetRawField("itemIDAsCost", id);
-	if results and #results > 0 then
-		-- not sure we need to copy these into another table
-		-- app.PrintDebug("default_costCollectibles",id,#results,app:SearchLink(t))
-		return results;
-	end
-	return app.EmptyTable;
 end
 -- Returns how many of a given speciesID are currently collected
 local CollectedSpeciesHelper = setmetatable({}, {
@@ -157,9 +117,6 @@ app.CreateSpecies = app.CreateClass(CLASSNAME, KEY, {
 			return 1
 		end
 	end,
-	costCollectibles = function(t)
-		return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
-	end,
 	text = function(t)
 		return t.link or cache.GetCachedField(t, "text", CacheInfo);
 	end,
@@ -178,9 +135,6 @@ app.CreateSpecies = app.CreateClass(CLASSNAME, KEY, {
 	name = function(t)
 		return cache.GetCachedField(t, "name", CacheInfo);
 	end,
-	link = function(t)
-		return cache.GetCachedField(t, "link", default_link);
-	end,
 	b = function(t)
 		return cache.GetCachedField(t, "b");
 	end,
@@ -193,7 +147,12 @@ app.CreateSpecies = app.CreateClass(CLASSNAME, KEY, {
 	perCharacter = function(t)
 		return PerCharacterSpecies[t.speciesID]
 	end
-});
+},
+"WithItem", {
+	ImportFrom = "Item",
+	ImportFields = { "name", "link", "tsm", "costCollectibles" },
+},
+function(t) return t.itemID end);
 
 local function RefreshBattlePets()
 	app.PrintDebug("RCBP",C_PetJournal_GetNumPets())

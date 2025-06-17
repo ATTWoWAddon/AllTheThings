@@ -207,9 +207,11 @@ local CreateInformationType = app.CreateClass("InformationType", "informationTyp
 local KnownByIgnoredTypes = {
 	Achievement = app.IsRetail,
 	BattlePet = true,
+	BattlePetWithItem = true,
 	Illusion = true,
 	IllusionWithItem = true,
 	Mount = true,
+	MountWithItem = true,
 }
 local knownBy = {};
 local function BuildKnownByInfoForKind(tooltipInfo, kind)

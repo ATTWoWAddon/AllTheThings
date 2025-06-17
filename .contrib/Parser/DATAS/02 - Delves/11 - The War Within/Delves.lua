@@ -3528,12 +3528,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(90945, {["timeline"]={ADDED_11_1_7}}),	-- Learn 1st and 2nd Durable Information Storage Container Abilities (spellID 1239198)
 			q(90946, {["timeline"]={ADDED_11_1_7}}),	-- Learn 1st and 2nd Durable Information Storage Container Abilities (spellID 1239198)
 			q(90952, {["timeline"]={ADDED_11_1_7}}),	-- Energy Shield ability (spellID 1238258); after learning Titan Force Shield (spellID 1225004) in delve console
-			q(90948, {["timeline"]={ADDED_11_1_7}}),	-- Spark Burst ability (spellID 1238251); after using Miniature Titan Disc: Spark Burst (itemID 244900)
-			q(90953, {["timeline"]={ADDED_11_1_7}}),	-- Charged Crystal ability (spellID 1238259); after using Miniature Titan Disc: Charged Crystal (itemID 244905)
-			q(90947, {["timeline"]={ADDED_11_1_7}}),	-- Critical Chain ability (spellID 1238250); after using Miniature Titan Disc: Critical Chain (itemID 244899)
-			q(90950, {["timeline"]={ADDED_11_1_7}}),	-- Electric Current ability (spellID 1238256); after using Miniature Titan Disc: Electric Current (itemID 244902)
-			q(90951, {["timeline"]={ADDED_11_1_7}}),	-- Charged Touch ability (spellID 1238257); after using Miniature Titan Disc: Charged Touch (itemID 244903)
-			q(90949, {["timeline"]={ADDED_11_1_7}}),	-- Static Charge ability (spellID 1238252); after using Miniature Titan Disc: Statically Charged (itemID 244901)
+			-- q(90948, {["timeline"]={ADDED_11_1_7}}),	-- Spark Burst ability (spellID 1238251); after using Miniature Titan Disc: Spark Burst (itemID 244900)
+			-- q(90953, {["timeline"]={ADDED_11_1_7}}),	-- Charged Crystal ability (spellID 1238259); after using Miniature Titan Disc: Charged Crystal (itemID 244905)
+			-- q(90947, {["timeline"]={ADDED_11_1_7}}),	-- Critical Chain ability (spellID 1238250); after using Miniature Titan Disc: Critical Chain (itemID 244899)
+			-- q(90950, {["timeline"]={ADDED_11_1_7}}),	-- Electric Current ability (spellID 1238256); after using Miniature Titan Disc: Electric Current (itemID 244902)
+			-- q(90951, {["timeline"]={ADDED_11_1_7}}),	-- Charged Touch ability (spellID 1238257); after using Miniature Titan Disc: Charged Touch (itemID 244903)
+			-- q(90949, {["timeline"]={ADDED_11_1_7}}),	-- Static Charge ability (spellID 1238252); after using Miniature Titan Disc: Statically Charged (itemID 244901)
 		})),
 		q(85651),	-- Triggers with 'Delver's Call: The Sinkhole' (questID 83767)
 		q(85719),	-- Unknown. Seems to pop very rarely on completion of a delve
