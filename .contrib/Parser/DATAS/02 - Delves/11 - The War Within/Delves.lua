@@ -17,6 +17,8 @@ DELVES_TWW_S1 = createHeader({
 	icon = 1604168,
 	text = {
 		en = "Delves TWW S1",
+		es = "Profundidades TWW T1",
+		mx = "Abismos TWW T1",
 		cn = "地心之战地下堡第1季",
 	},
 });
@@ -25,6 +27,8 @@ DELVES_TWW_S2 = createHeader({
 	icon = 1604168,
 	text = {
 		en = "Delves TWW S2",
+		es = "Profundidades TWW T2",
+		mx = "Abismos TWW T2",
 		cn = "地心之战地下堡第2季",
 	},
 });
@@ -33,6 +37,8 @@ DELVES_TWW_S3 = createHeader({
 	icon = 1604168,
 	text = {
 		en = "Delves TWW S3",
+		es = "Profundidades TWW T3",
+		mx = "Abismos TWW T3",
 		cn = "地心之战地下堡第3季",
 	},
 });
