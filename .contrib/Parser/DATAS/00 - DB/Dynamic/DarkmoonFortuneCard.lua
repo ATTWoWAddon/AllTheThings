@@ -4,8 +4,8 @@
 		model = 5334402,
 		text = {
 			en = "Darkmoon Fortune Card",
-			es = "Carta de la fortuna de la Luna Negra",
 			de = "Fortunakarte des Dunkelmond-Jahrmarkts",
+			es = "Carta de la fortuna de la Luna Negra",
 			fr = "Carte de bonne aventure de Sombrelune",
 			it = "Carta della Fortuna di Lunacupa",
 			mx = "Naipe de la fortuna de la Luna Negra",
