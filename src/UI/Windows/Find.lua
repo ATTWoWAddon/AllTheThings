@@ -644,7 +644,7 @@ app:CreateWindow("ItemFinder", {
 				progress = 0,
 				total = 0,
 				back = 1,
-				maxItemID = 260000,
+				maxItemID = 248753,
 				minItemID = 1,
 				step = 1000,
 				g = { ClearButton, StartButton }

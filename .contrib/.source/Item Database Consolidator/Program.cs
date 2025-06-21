@@ -136,6 +136,7 @@ namespace ATT
                 {
                     list.Add(ParseObject(table[key]));
                 }
+
                 return list;
             }
 
@@ -145,7 +146,16 @@ namespace ATT
         static Dictionary<T, object> ParseAsObject<T>(LuaTable table)
         {
             var dict = new Dictionary<T, object>();
-            foreach (var key in table.Keys) dict[(T)key] = ParseObject(table[key]);
+            foreach (var key in table.Keys)
+            {
+                string keyString = key.ToString();
+                var o = ParseObject(table[key]);
+                if ((keyString == "races" || keyString == "classes") && o is List<object> list)
+                {
+                    list.Sort();
+                }
+                dict[(T)key] = o;
+            }
             return dict;
         }
 

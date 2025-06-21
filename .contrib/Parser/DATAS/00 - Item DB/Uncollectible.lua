@@ -2443,6 +2443,7 @@ i(241632);	-- Heroic Waxy Figurine
 -- PATCH 11.2.0 --
 ------------------
 i(238874);	-- Congealed Mana
+i(247686);	-- Crystallized Nightshade
 i(238883);	-- Dimly Glowing Scrap
 i(238838);	-- Enlarged Nerve
 i(238886);	-- Faintly Glowing Vellum
@@ -2450,11 +2451,14 @@ i(238833);	-- Flowing Ridge Spikes
 i(238872);	-- Fragmented Fin
 i(238799);	-- Harrowed Ichor
 i(238813);	-- Irridescent Eye
+i(247688);	-- K'arroc Feather Quill
 i(238812);	-- Long Fibrous Tongue
 i(238869);	-- Matted Pelt
 i(238855);	-- Netherclaw
+i(247687);	-- Overly-Preserved K'areshi Preserves
 i(238873);	-- Serrated Scale Shard
 i(238832);	-- Sinuous Wing Membrane
+i(247685);	-- Slightly Used Containment Device
 i(238836);	-- Spindly Flesh
 i(238847);	-- Torn Maw Fragment
 i(238887);	-- Torn Voidscript Page

@@ -590,7 +590,6 @@ root(ROOTS.Unsorted, {
 			i(233193),	-- Shadowguard Weapon
 			i(233194),	-- Shadowguard Weapon
 			i(233195),	-- Pheromone Disperser
-			i(233199),	-- Saturated Entropic Core
 			i(233287),	-- Barrel of Swirling Energy
 			i(233333),	-- Forgecaster Wraps
 			i(233487),	-- Pheromone Disperser
@@ -604,7 +603,6 @@ root(ROOTS.Unsorted, {
 			i(234815),	-- Plague Sample
 			i(234944),	-- Rancor Essence
 			i(235051),	-- Harvested Energy
-			i(235366),	-- Stolen Barrier Projector
 			i(235370),	-- Crate of Food
 			i(235384),	-- Anima Vacuum
 			i(235408),	-- Slateback Fur
@@ -859,39 +857,19 @@ root(ROOTS.Unsorted, {
 			i(237858),	-- Encroaching Void Vestment
 			i(237859),	-- Silent Huntsman's Sandals
 			i(237860),	-- Wastelander's Worn Handwraps
-			i(237861),	-- Cowl of the Lost Trust
-			i(237862),	-- Oathsworn Defender's Leggings
-			i(237863),	-- Eco-Stabilizer's Cord
 			i(237864),	-- Cuffs of the Riftsealer
 			i(237865),	-- Silent Huntsman's Waders
 			i(237866),	-- Wastelander's Worn Gloves
-			i(237867),	-- Oathsworn Defender's Breeches
-			i(237868),	-- Eco-Stabilizer's Sash
 			i(237869),	-- Bindings of the Riftsealer
 			i(237870),	-- Encroaching Void Chainmail
 			i(237871),	-- Silent Huntsman's Striders
 			i(237872),	-- Wastelander's Worn Grips
-			i(237873),	-- Coif of the Lost Trust
-			i(237874),	-- Oathsworn Defender's Greaves
-			i(237875),	-- Tazavesh Guardian's Shoulderguards
-			i(237876),	-- Eco-Stabilizer's Cinch
 			i(237877),	-- Bracers of the Riftsealer
-			i(237878),	-- Helm of the Lost Trust
 			i(237879),	-- Encroaching Void Breastplate
 			i(237880),	-- Silent Huntsman's Sabatons
 			i(237881),	-- Wastelander's Worn Gauntlets
-			i(237882),	-- Oathsworn Defender's Legguards
-			i(237883),	-- Tazavesh Guardian's Mantle
-			i(237884),	-- Eco-Stabilizer's Girdle
 			i(237885),	-- Armplates of the Riftsealer
 			i(237886),	-- Encroaching Void Vest
-			i(237887),	-- Tazavesh Guardian's Epaulets
-			i(237888),	-- Tazavesh Guardian's Shoulderpads
-			i(237890),	-- Band of the Unseen Hand
-			i(237891),	-- Menagerie's Lost Relic
-			i(237892),	-- Hood of the Lost Trust
-			i(237893),	-- Ring of Lingering Shadows
-			i(237894),	-- Pendant of Arcane Havoc
 			i(237898),	-- Hemet's Waterin' Can
 			i(237934),	-- Locket of the Final Purge
 			i(237935),	-- Void-Reckoning Necklace
@@ -972,41 +950,19 @@ root(ROOTS.Unsorted, {
 			i(238045),	-- Pure Chronomatic Fiber
 			i(238046),	-- Pure Energizing Fiber
 			i(238051),	-- Delver's Mana-Skimmer
-			i(238054),	-- Entropic-Shadow Saber
-			i(238055),	-- Entropic-Shadow Dagger
-			i(238056),	-- Entropic-Shadow Staff
-			i(238058),	-- Entropic-Shadow Handaxe
-			i(238059),	-- Entropic-Shadow Gavel
-			i(238060),	-- Entropic-Shadow Greatsword
-			i(238061),	-- Entropic-Shadow Javelin
-			i(238062),	-- Entropic-Shadow Sharpshooter
-			i(238066),	-- Entropic-Shadow Sword
 			i(238177),	-- Delver's Mana-Skimmer Schematic: Emitter
 			i(238178),	-- Delver's Mana-Skimmer Schematic: Canister
 			i(238179),	-- Delver's Mana-Skimmer Schematic: Quad Glider
 			i(238180),	-- Delver's Mana-Skimmer Schematic: Void Paint
 			i(238181),	-- Delver's Mana-Skimmer Schematic: Energy Thrusters
 			i(238182),	-- Delver's Mana-Skimmer Schematic: Hyperdrive
-			i(238184),	-- Stave of Unyielding Will
-			i(238185),	-- Wand of Unyielding Will
-			i(238186),	-- Cudgel of Unyielding Will
-			i(238187),	-- Mace of Unyielding Will
-			i(238188),	-- Greatsword of Unyielding Will
-			i(238189),	-- Dagger of Unyielding Will
-			i(238190),	-- Shield of Unyielding Will
-			i(238191),	-- Relic of Unyielding Will
-			i(238192),	-- Entropic-Shadow Warglaive
-			i(238193),	-- Blade of Unyielding Will
-			i(238194),	-- Blaster of Unyielding Will
 			i(238201),	-- K'areshi Ore
 			i(238212),	-- K'areshi Ore
 			i(238213),	-- K'areshi Ore
 			i(238216),	-- Hemet's Soothin' Flute
 			i(238242),	-- K'arroc Egg
 			i(238254),	-- Nuts and Bolts
-			i(238262),	-- Entropic-Shadow Mace
 			i(238296),	-- Phase Disruptor
-			i(238386),	-- Void-Touched Fragment
 			i(238390),	-- Soulbreaker's Sigil
 			i(238526),	-- Restored Coffer Key
 			i(238527),	-- Restored Coffer Key
@@ -1709,21 +1665,9 @@ root(ROOTS.Unsorted, {
 			i(246997),	-- Felreaver's Legion Wand
 			i(246998),	-- Felreaver's Hellfire Wand
 			i(246999),	-- Felreaver's Arcane Wand
-			i(247685),	-- Slightly Used Containment Device
-			i(247686),	-- Crystallized Nightshade
-			i(247687),	-- Overly-Preserved K'areshi Preserves
-			i(247688),	-- K'arroc Feather Quill
 			i(247689),	-- K'areshi Copper Ingot
 			i(247690),	-- Void-Tainted Lotus
 			i(247691),	-- Slateback Hide
-			i(247692),	-- K'areshi Grain Fluff
-			i(247693),	-- Fermented Warpstalker Niblets
-			i(247694),	-- Snifted Void Essence
-			i(247695),	-- Sparkling Mana Supplement
-			i(247696),	-- Pungent Smelling Salts
-			i(247698),	-- Deep-Fired Devourer Legs
-			i(247699),	-- Coagulated "Milk" Protein
-			i(247700),	-- Genuine K'areshi Honey
 			i(247703),	-- Reshii Hood
 			i(247704),	-- Reshii Mantle
 			i(247705),	-- The Horseman's Chilling Blade
@@ -1759,7 +1703,6 @@ root(ROOTS.Unsorted, {
 			i(247871),	-- Memory of Sylvanas
 			i(247872),	-- Memory of Theotar
 			i(247873),	-- Memory of Thrall
-			i(247882),	-- Phase Regulator
 			i(247897),	-- The Horseman's Chilling Helm
 			i(247898),	-- The Horseman's Chilling Mantle
 			i(247899),	-- The Horseman's Chilling Breastplate
