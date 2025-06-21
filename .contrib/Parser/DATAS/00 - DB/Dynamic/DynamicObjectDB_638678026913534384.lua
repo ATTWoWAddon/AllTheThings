@@ -8,10 +8,12 @@
 			de = "Waffen der Königinnenwache",
 			fr = "Armement de la garde de la reine",
 			it = "Armamenti della Guardia della Regina",
+			mx = "Armas de la guardia de la reina",
 			pt = "Armamento da Guarda da Rainha",
 			ru = "Оружие королевской стражи",
 			ko = "여왕 근위병 무기",
 			cn = "女王护卫武器",
+			tw = "女王護衛武器",
 		},
 	},
 })
