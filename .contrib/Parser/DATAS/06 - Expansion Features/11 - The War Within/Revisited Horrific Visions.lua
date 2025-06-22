@@ -6,7 +6,16 @@ HORRIFIC_VISIONS_REVISITED = createHeader({
 	icon = [[~_.asset("Feature_Horrific Visions")]],
 	text = {
 		en = "Horrific Visions Revisited",
+		de = "Verstörende Visionen erneut erlebt",
+		es = "Regreso a las visiones horripilantes",
+		mx = "Visiones horribles revividas",
+		fr = "Visions horrifiques redécouvertes",
+		it = "Visioni Orripilanti Rivisitate",
+		pt = "Visões Horrendas Revividas",
+		ru = "Возвращение в жуткие видения",
+		ko = "다시 찾은 공포의 환영",
 		cn = "重访惊魂幻象",
+		tw = "重返恐怖幻象",
 	},
 });
 
