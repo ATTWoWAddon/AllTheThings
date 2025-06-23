@@ -6,6 +6,16 @@ LOREWALKING = createHeader({
 	icon = [[~_.asset("Feature_Lorewalking")]], -- TODO Not a real asset file
 	text = {
 		en = "Lorewalking",
+		de = "Lehrensuche",
+		es = "Paseo por la historia",
+		fr = "Chroniques",
+		it = "Cammino della Storia",
+		mx = "Cronoleyenda",
+		pt = "Trilha das Lendas",
+		ru = "Историческая кампания",
+		ko = "전승",
+		cn = "游学探奇",
+		tw = "故事漫遊",
 	},
 });
 
