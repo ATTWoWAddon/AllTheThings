@@ -18,6 +18,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					i(247694),	-- Snifted Void Essence
 				},
 			}),
+			n(241588, {	-- Hashim
+				["coord"] = { 50.3, 36.6, KARESH },
+				["g"] = {
+					i(238039),	-- Chronomatic Fiber
+					i(238041),	-- Dexterous Fiber
+					i(238037),	-- Energizing Fiber
+					i(248955),	-- Ethereal Seam Ripper
+					i(238040),	-- Precise Fiber
+				},
+			}),
 		}),
 	}),
 })));

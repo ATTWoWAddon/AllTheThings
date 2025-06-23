@@ -1327,6 +1327,7 @@ MobileDB.GameObject = {
 	[508366] = true,	-- Pile of Unsorted Trash (q:85888)
 	[508727] = true,	-- Partially-Drained Battery
 	[516163] = true,	-- Half-Empty Bag
+	[516444] = true,	-- Ethereal Pocket-Storage (Tazavesh)
 	[516296] = true,	-- Sureki Cage (Nightfall)
 	[516700] = true,	-- Oasis Animal Leavings (q:87337)
 	[517672] = true,	-- Emergency Exit (qs: 75874, 83121, 83123, 84121)

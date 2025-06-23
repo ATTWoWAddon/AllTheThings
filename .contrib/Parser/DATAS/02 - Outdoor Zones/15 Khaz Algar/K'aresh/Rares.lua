@@ -21,8 +21,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				--["questID"] = ,
 			}),
 			n(238540, {	-- Grubber
-				--["coord"] = { x, y, KARESH },
-				--["questID"] = ,
+				["coord"] = { 71.1, 57.2, TAZAVESH },
+				["questID"] = 90698,
 			}),
 			n(245998, {	-- Heka'tamos <the Elemental Disjunction>
 				["description"] = "You need to interract with Spectral Lantern, Dewminder, Earthy Succulent, and Windcatcher inside The Oasis.\nOnce you have obtained the buffs, you can summon Heka'tamos at the Brazier of Elemental Union near his spawn point.",
@@ -60,8 +60,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				--["questID"] = ,
 			}),
 			n(232127, {	-- Orith the Dreadful
-				--["coord"] = { x, y, KARESH },
-				--["questID"] = ,
+				["description"] = "You need to Phasedive in order to see Orith.",
+				["coord"] = { 58.9, 20.8, KARESH },
+				["questID"] = 90595,
 			}),
 			n(235422, {	-- Phase-Thief Tezra
 				--["coord"] = { x, y, KARESH },
@@ -127,6 +128,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				q(90676, {	-- Weekly reputation: "Chowdar"
 					["name"] = "Chowdar weekly reputation obtained.",
 				}),
+				q(90699, {	-- Weekly reputation: Grubber
+					["name"] = "Grubber weekly reputation obtained.",
+				}),
 				q(91422, {	-- Weekly reputation: Heka'tamos
 					["name"] = "Heka'tamos weekly reputation obtained.",
 				}),
@@ -138,6 +142,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				}),
 				q(91421, {	-- Weekly reputation: Malek'ta
 					["name"] = "Malek'ta weekly reputation obtained.",
+				}),
+				q(90684, {	-- Weekly reputation: Orith the Dreadful
+					["name"] = "Orith the Dreadful weekly reputation obtained.",
 				}),
 				q(90679, {	-- Weekly reputation: Prototype Mk-V
 					["name"] = "Prototype Mk-V weekly reputation obtained.",

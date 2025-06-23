@@ -297,16 +297,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 						["provider"] = { "n", 230288 },	-- Locus-Walker
 						["coord"] = { 70.9, 58.1, KARESH },
 						["g"] = {
-							o(466978, {	-- Om'bera's Clipboard
-								["coord"] = { 70.9, 54.4, KARESH },
-								["g"] = {
-									i(229058),	-- Supply Crates Manifest (QI!)
-								},
-							}),
 							o(466983, {	-- Curved Dagger
 								["coord"] = { 70.0, 53.1, KARESH },
 								["g"] = {
 									i(229060),	-- Curved Dagger (QI!)
+								},
+							}),
+							o(466978, {	-- Om'bera's Clipboard
+								["coord"] = { 70.9, 54.4, KARESH },
+								["g"] = {
+									i(229058),	-- Supply Crates Manifest (QI!)
 								},
 							}),
 						},
@@ -641,7 +641,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				}),
 				q(87337, {	-- Custodian Duties
 					["sourceQuests"] = { 87290 },	-- The Oasis
-					["provider"] = { "n", 238209 },	-- Om'talad
+					["provider"] = { "n", 238209 },	-- Cartel Om Custodian
 					["coord"] = { 75.9, 34.3, KARESH },
 					["g"] = {
 						o(516700, {	-- Oasis Animal Leavings
@@ -812,6 +812,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 								["providers"] = {
 									{ "o", 475321 },	-- Crystalbloom
 									{ "o", 475324 },	-- Firebud
+									{ "o", 475317 },	-- K'aresh Bellflower
 									{ "o", 475314 },	-- Pricklebloom
 								},
 							}),
@@ -874,6 +875,130 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					}),
 				}),
 			}),
+			header(HEADERS.Achievement, 41809, {	-- Ecological Variety (Daily Quests)
+				header(HEADERS.AchCriteria, 41809.02, {	-- Honey Bees
+					q(90545, {	-- A Reel Problem
+						["description"] = "Requires Fishing profession.",
+						["sourceQuests"] = { 85262 },	-- The Royal Procession
+						["provider"] = { "n", 230736 },	-- Om'talad
+						["coord"] = { 75.8, 34.2, KARESH },
+						["isDaily"] = true,
+						["g"] = {
+							i(241352),	-- Hydrobite (QI!)
+						},
+					}),
+					q(85459, {	-- Anima Reclamation Program
+						["sourceQuests"] = { 85262 },	-- The Royal Procession
+						["provider"] = { "n", 231820 },	-- Ve'nari
+						["coord"] = { 75.9, 34.2, KARESH },
+						["isDaily"] = true,
+						["g"] = {
+							i(229412),	-- Devourer Anima (QI!)
+						},
+					}),
+					q(89209, {	-- Bu-zzz
+						["sourceQuests"] = { 85262 },	-- The Royal Procession
+						["provider"] = { "n", 232385 },	-- Botanist Alaenra
+						["coord"] = { 75.8, 33.9, KARESH },
+						["isDaily"] = true,
+					}),
+					q(85461, {	-- Food Run
+						["sourceQuests"] = { 85262 },	-- The Royal Procession
+						["provider"] = { "n", 231820 },	-- Ve'nari
+						["coord"] = { 75.9, 34.2, KARESH },
+						["isDaily"] = true,
+						["g"] = {
+							i(231508),	-- Stolen Food Shipment (QI!)
+						},
+					}),
+				})
+			}),
+			header(HEADERS.Achievement, 42731, {	-- Become a Hero. Become a Phasediver!
+				q(89380, {	-- Another World
+					--["sourceQuests"] = { ??? },	-- According to playthrough, this unlocks after HQT 91812 is Triggered
+					["provider"] = { "n", 241601 },	-- Shad'anis
+					["coord"] = { 75.9, 33.0, KARESH },
+				}),
+				q(89561, {	-- Wrapped Up
+					--["sourceQuests"] = { ??? },	-- According to playthrough, this unlocks after HQT 91812 is Triggered
+					["provider"] = { "n", 241588 },	-- Hashim
+					["coord"] = { 50.3, 36.3, KARESH },
+					["g"] = {
+						i(238039),	-- Chronomatic Fiber
+						i(238041),	-- Dexterous Fiber
+						i(238037),	-- Energizing Fiber
+						i(238040),	-- Precise Fiber
+					},
+				}),
+				q(89343, {	-- The Untethered Void
+					["sourceQuests"] = { 89380 },	-- Another World
+					["provider"] = { "n", 241624 },	-- Shad'anis
+					["coord"] = { 50.4, 36.3, KARESH },
+				}),
+				q(89344, {	-- What Doesn't See You
+					["sourceQuests"] = { 89343 },	-- The Untethered Void
+					["provider"] = { "n", 241624 },	-- Shad'anis
+					["coord"] = { 50.4, 36.3, KARESH },
+					["g"] = {
+						o(543787, {	-- Phase Energy
+							["coord"] = { 49.1, 37.8, KARESH },
+							["g"] = {
+								i(244042),	-- Phase Energy (QI!)
+							},
+						}),
+					},
+				}),
+				q(89345, {	-- The Untethered Horror
+					["sourceQuests"] = { 89344 },	-- What Doesn't See You
+					["provider"] = { "n", 241624 },	-- Shad'anis
+					["coord"] = { 50.4, 36.3, KARESH },
+				}),
+			}),
+			header(HEADERS.Achievement, 42739, {	-- Sojourner of K'aresh
+				header(HEADERS.AchCriteria, 42739.01, {	-- Of Boughs and Bonds
+				}),
+				header(HEADERS.AchCriteria, 42739.02, {	-- On a Technicality
+				}),
+				header(HEADERS.AchCriteria, 42739.03, {	-- In Search of Darkness
+				}),
+				header(HEADERS.AchCriteria, 42739.04, {	-- Untethered Potential
+				}),
+				header(HEADERS.AchCriteria, 42739.05, {	-- Chasing Echoes
+				}),
+				header(HEADERS.AchCriteria, 42739.06, {	-- Avoiding the Void
+				}),
+				header(HEADERS.AchCriteria, 42739.07, {	-- Priest of the Old Ways
+				}),
+				header(HEADERS.AchCriteria, 42739.08, {	-- That Tazavesh Taste
+					q(85383, {	-- Applied Mixology
+						["sourceQuests"] = { 84967 },	-- The Shadowguard Shattered
+						["provider"] = { "n", 232351 },	-- Trader Ba'kril
+						["coord"] = { 43.8, 52.3, TAZAVESH },
+					}),
+					q(85384, {	-- Market Research
+						["sourceQuests"] = { 85383 },	-- Applied Mixology
+						["provider"] = { "n", 232351 },	-- Trader Ba'kril
+						["coord"] = { 43.8, 52.3, TAZAVESH },
+					}),
+					q(85394, {	-- An Eye for Trouble
+						["sourceQuests"] = { 85384 },	-- Market Research
+						["provider"] = { "n", 232351 },	-- Trader Ba'kril
+						["coord"] = { 43.8, 52.3, TAZAVESH },
+						["g"] = {
+							i(245736),	-- Unstable Sample Armplates
+							i(245734),	-- Unstable Sample Bindings
+							i(245735),	-- Unstable Sample Bracers
+							i(245733),	-- Unstable Sample Straps
+						},
+					}),
+				}),
+				header(HEADERS.AchCriteria, 42739.09, {	-- Lost and Found Storage
+				}),
+				header(HEADERS.AchCriteria, 42739.10, {	-- Anyway, Here's Firewall
+				}),
+				header(HEADERS.AchCriteria, 42739.11, {	-- A Stranger's Gift
+				}),
+			}),
 			n(BONUS_OBJECTIVES, {
 				q(84966, {	-- Break the Assault
 					["sourceQuests"] = { 84960 },	-- The Darkness Among Us
@@ -887,11 +1012,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 						i(238664),	-- Crystallized Anima (QS!)
 					},
 				}),
+				q(86465, {	-- Devourer Attack: Tazavesh
+					["isWeekly"] = true,
+					["cr"] = 235104,	-- The Wallbreaker
+					["g"] = {
+						i(246240),	-- Devoured Energy-Pod
+						i(238665),	-- Crystallized Anima (QS!)
+					},
+				}),
 			}),
 			-- Quest (item) obtained during Devourer Attack
-			q(85256, {	-- Botany, Finally
+			q(89062, {	-- Making a Deposit
 				["sourceQuests"] = { 86464 },	-- Devourer Attack: The Atrium
 				["provider"] = { "i", 238664 },	-- Crystallized Anima (QS!)
+				["isWeekly"] = true,
+			}),
+			q(89063, {	-- Making a Deposit
+				["sourceQuests"] = { 86465 },	-- Devourer Attack: Tazavesh
+				["provider"] = { "i", 238665 },	-- Crystallized Anima (QS!)
 				["isWeekly"] = true,
 			}),
 		}),
@@ -908,9 +1046,15 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				q(91812),	-- Triggered after unlocking Renown 2 of The K'aresh Trust right after completing 'The Tabiqa' (84910)
 				-- ??
 				--q(90812),	-- pop randomly at start/intro quest chain (spellID - 1234922 / Warrant)
+				
 				q(91289),	-- Triggered at the completion of 'Devourer Attack: The Atrium' (86464)
+				q(91290),	-- Triggered at the completion of 'Devourer Attack: Tazavesh' (86465)
 				q(91311),	-- Triggered at the completion of 'Devourer Attack: The Atrium' (86464)
+				q(91312),	-- Triggered at the completion of 'Devourer Attack: Tazavesh' (86465)
 				q(91435),	-- Triggered at the completion of 'Devourer Attack: The Atrium' (86464)
+				q(91436),	-- Triggered at the completion of 'Devourer Attack: Tazavesh' (86465)
+				
+				q(90955),	-- Triggered during 'Wrapped Up' (89561) when Reshii Wraps get upgraded (Selecting "Boon of the Reshii" at Hashim
 			}),
 		}),
 	}),

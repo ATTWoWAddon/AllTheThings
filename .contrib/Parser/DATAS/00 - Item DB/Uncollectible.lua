@@ -2475,6 +2475,7 @@ i(238871);	-- Luminous Brushtail
 i(238884);	-- Machine Remnant
 i(238869);	-- Matted Pelt
 i(238855);	-- Netherclaw
+i(238880);	-- Oily Blubber
 i(247687);	-- Overly-Preserved K'areshi Preserves
 i(238873);	-- Serrated Scale Shard
 i(238878);	-- Shadow-Touched Fang
@@ -2482,6 +2483,7 @@ i(238832);	-- Sinuous Wing Membrane
 i(247685);	-- Slightly Used Containment Device
 i(238800);	-- Soggy Bone Splinters
 i(238836);	-- Spindly Flesh
+i(244357);	-- Time-Worn Memento
 i(238847);	-- Torn Maw Fragment
 i(238887);	-- Torn Voidscript Page
 i(238875);	-- Twisted Sediment
@@ -2490,3 +2492,4 @@ i(238814);	-- Vibrantly Colored Crest
 i(238866);	-- Void Dust
 i(238848);	-- Void Tendril
 i(238841);	-- Void-Seeping Eyeball
+i(244355);	-- Voidstorm Obsidian

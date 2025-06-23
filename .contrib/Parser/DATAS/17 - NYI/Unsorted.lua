@@ -176,7 +176,6 @@ root(ROOTS.Unsorted, {
 				i(244486),	-- Worn Shadowguard Blade's Soles
 				i(244487),	-- Worn Shadowguard Blade's Grips
 				i(244488),	-- Worn Shadowguard Blade's Hood
-				i(244489),	-- Worn Shadowguard Blade's Breeches
 				i(244490),	-- Worn Shadowguard Blade's Shoulderpads
 				i(244491),	-- Worn Shadowguard Blade's Belt
 				i(244492),	-- Worn Shadowguard Blade's Bracers
@@ -193,7 +192,6 @@ root(ROOTS.Unsorted, {
 				i(244503),	-- Worn Shadowguard Captain's Handguards
 				i(244504),	-- Worn Shadowguard Captain's Helmet
 				i(244505),	-- Worn Shadowguard Captain's Greaves
-				i(244506),	-- Worn Shadowguard Captain's Epaulettes
 				i(244507),	-- Worn Shadowguard Captain's Greatbelt
 				i(244508),	-- Worn Shadowguard Captain's Vambraces
 				i(244509),	-- Worn Shadowguard Cleaver
@@ -245,10 +243,6 @@ root(ROOTS.Unsorted, {
 				i(245730),	-- Waders of the Endless Hunger
 				i(245731),	-- Striders of the Endless Hunger
 				i(245732),	-- Sabatons of the Endless Hunger
-				i(245733),	-- Unstable Sample Straps
-				i(245734),	-- Unstable Sample Bindings
-				i(245735),	-- Unstable Sample Bracers
-				i(245736),	-- Unstable Sample Armplates
 				i(245737),	-- Ritualbreaker's Band
 				i(245738),	-- Seal of the Shattered Dome
 
@@ -299,7 +293,6 @@ root(ROOTS.Unsorted, {
 				i(241239),	-- Epaulets of Arcing Power
 				i(241240),	-- Type II Bomber Jacket
 				-- Artifact
-				i(235499),	-- Reshii Wraps
 				i(247703),	-- Reshii Hood
 				i(247704),	-- Reshii Mantle
 			}),
@@ -830,7 +823,6 @@ root(ROOTS.Unsorted, {
 				i(238870),	-- Pearly Incisor
 				i(238876),	-- Malicious Mandible
 				i(238879),	-- Cracked Void Carapace
-				i(238880),	-- Oily Blubber
 				i(238881),	-- Barbed Predator Tusk
 				i(238882),	-- Cursed Eyeball Cluster
 				i(238885),	-- Unstable Power Source
@@ -852,8 +844,6 @@ root(ROOTS.Unsorted, {
 				i(243580),	-- Etheric Pylon
 				i(244141),	-- Barley Soup
 				i(244142),	-- Brew Keg
-				i(244355),	-- Voidstorm Obsidian
-				i(244357),	-- Time-Worn Memento
 				i(244358),	-- "Prophecies of the Void"
 				i(244359),	-- Ethereal Pylon Conduit
 				i(244361),	-- Void-Carved Amethyst
@@ -1042,10 +1032,6 @@ root(ROOTS.Unsorted, {
 				i(231774),	-- Nascent Weathered Ethereal Crest
 				i(231775),	-- Nascent Gilded Ethereal Crest
 				i(231776),	-- Nascent Runed Ethereal Crest
-				i(238037),	-- Energizing Fiber
-				i(238039),	-- Chronomatic Fiber
-				i(238040),	-- Precise Fiber
-				i(238041),	-- Dexterous Fiber
 				i(238042),	-- Pure Dexterous Fiber
 				i(238044),	-- Pure Precise Fiber
 				i(238045),	-- Pure Chronomatic Fiber
@@ -1865,7 +1851,6 @@ root(ROOTS.Unsorted, {
 				i(239564),	-- Arcane Runed Sigil
 				i(239566),	-- Arcane Runed Signet
 				i(239607),	-- Charged Cyrstal
-				i(241352),	-- Hydrobite
 				i(241353),	-- Hydrobite
 				i(242535),	-- Missing Imports
 				i(242547),	-- Cracked Keystone

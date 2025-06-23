@@ -166,6 +166,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				}),
 				q(91647),	-- The Facts of K'aresh
 			}),
+			o(516444, {	-- Ethereal Pocket-Storage
+				["description"] = "Spawns at random locations throughout Tazavesh.",
+				["maps"] = { TAZAVESH },
+				-- No quest attached to them.
+				["g"] = {	-- Has a chance to drop following
+					-- 'World Drop' gray equipment and other junk
+					-- Currency, like Gold, Valorstones, Resonance Crystals
+					-- But... Then again... Has a chance to drop something like this:
+					i(244489),	-- Worn Shadowguard Blade's Breeches
+					i(244506),	-- Worn Shadowguard Captain's Epaulettes
+				},
+			}),
 		}),
 	}),
 })));
