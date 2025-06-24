@@ -6,6 +6,8 @@ CAPTAINS = createHeader({
 	icon = 236623,
 	text = {
 		en = "Captains",
+		es = "Capitanes",
+		mx = "Capitanes",
 		fr = "Capitaines",
 		ru = "Капитаны",
 		cn = "船长",
@@ -23,7 +25,7 @@ local KEYL_LOCATION = { 59.4, 14.0, AHNQIRAJ_THE_FALLEN_KINGDOM };
 local WARDEN_LOCATION = { 59.4, 14.0, AHNQIRAJ_THE_FALLEN_KINGDOM };
 local WINDCALLER_LOCATION = { 59.4, 14.0, AHNQIRAJ_THE_FALLEN_KINGDOM };
 -- #endif
-root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE, {
+root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE, { ["timeline"] = { ADDED_1_9_0 } }, {
 	inst(743, {	-- Ruins of Ahn'Qiraj
 		["lore"] = "Deep within the deserts of Silithus lies an ancient and powerful race of beings known as the Qiraji. One thousand years ago, the Night Elves and Bronze Dragonflight combined their considerable powers to seal the Qiraji behind the scarab wall with the help of the children of some of the aspects. This is remembered as the \"War of the Shifting Sands\".\n\nRecently it was discovered that some of the Qiraji were finding ways past the wall. Anachronos, the bronze dragon, helped the adventurers of Azeroth open the Scarab Wall to prevent more incursions. The mortal races have now banded together to confront the evil Qiraji in their own land. A champion has opened the gate and the Horde and Alliance have driven the armies of the Qiraji back into the ruins in retreat. It now falls to heroes to delve into the lair of the Qiraji and put an end to their masters once and for all",
 		-- #if BEFORE WRATH
