@@ -40,7 +40,7 @@ local TOKENS = {
 	}
 };
 -- #endif
-root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE, { ["timeline"] = { ADDED_1_6_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE, bubbleDown({ ["timeline"] = { ADDED_1_6_0 } }, {
 	inst(742, {	-- Blackwing Lair
 		["lore"] = "In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",
 		["provider"] = { "o", 179879 },	-- Orb of Command
@@ -1110,4 +1110,4 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 			-- #endif
 		},
 	}),
-})));
+}))));

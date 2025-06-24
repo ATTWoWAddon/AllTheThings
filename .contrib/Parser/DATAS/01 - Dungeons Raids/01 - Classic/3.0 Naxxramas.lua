@@ -7,6 +7,7 @@ THE_FOUR_HORSEMEN = createHeader({
 	text = {
 		en = "The Four Horsemen",
 		es = "Los Cuatro Jinetes",
+		mx = "Los Cuatro Jinetes",
 		de = "Die Vier Reiter",
 		fr = "Les quatre cavaliers",
 		it = "I Cavalieri dell'Apocalisse",
