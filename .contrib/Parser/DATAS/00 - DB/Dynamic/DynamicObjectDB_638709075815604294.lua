@@ -4,14 +4,16 @@
 		model = 4298558,
 		text = {
 			en = "Quest Journal",
-			es = "Diario de misión",
 			de = "Questtagebuch",
+			es = "Diario de misión",
 			fr = "Journal de quêtes",
 			it = "Diario delle Missioni",
+			mx = "Diario de misiones",
 			pt = "Diário de Missões",
 			ru = "Журнал заданий",
 			ko = "퀘스트 일지",
 			cn = "任务日志",
+			mx = "任務日誌",
 		},
 	},
 })
