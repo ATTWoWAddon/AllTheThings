@@ -132,7 +132,7 @@ local MapPrecisionOverrides = {
 	[1702] = 2,	-- The Roots
 	[1912] = 10,	-- The Runecarver's Oubliette
 	[2328] = 3,	-- The Proscenium
-	[2477] = 2,	-- Voidscar Cavern, K'aresh
+	[2477] = 4,	-- Voidscar Cavern, K'aresh
 }
 
 local function Check_coords(objRef, id, maxCoordDistance)

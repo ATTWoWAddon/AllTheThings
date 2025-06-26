@@ -381,37 +381,40 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			i(117394, {	-- Satchel of Chilled Goods [Epic Quality]
 				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
-					i(224163, {	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor (MM!)
-						["timeline"] = { ADDED_10_2_7 },
-					}),
-					i(244356, {	-- Crown of the Frost Lord (COSMETIC!)
-						["timeline"] = { ADDED_11_1_7 },
-					}),
 					i(117373, {	-- Frostscythe of Lord Ahune
-						["timeline"] = { ADDED_6_0_2 },
-					}),
+							["timeline"] = { ADDED_6_0_2 },
+						}),
 					i(53641, {	-- Frigid Frostling (PET!)
 						["timeline"] = { ADDED_3_3_3 },
-					}),
-					i(244422, {	-- Glazfuris, Scythe of the Deep Chill (COSMETIC!)
-						["timeline"] = { ADDED_11_1_7 },
-					}),
-					i(246571, {	-- Glazfuris, Spire of the Deep Chill (COSMETIC!)
-						["timeline"] = { ADDED_11_1_7 },
 					}),
 					i(138838, {	-- Illusion: Deathfrost (ILLUSION!)
 						["timeline"] = { ADDED_7_0_3 },
 					}),
-					i(244423, {	-- Rethfuras, Scorched Scythe of Cinders (COSMETIC!)
-						["timeline"] = { ADDED_11_1_7 },
-					}),
-					i(246570, {	-- Rethfuras, Scorched Stave of Cinders (COSMETIC!)
-						["timeline"] = { ADDED_11_1_7 },
-					}),
-					hqt(83134, {	-- Increased Midsummer Fire Festival Special Loot Droprate (Daily Accountwide)
-						["name"] = "Increased Midsummer Fire Festival Special Loot Droprate (Daily Accountwide)",
+					hqt(83134, {	-- Has rolled for Ahune Special Loot (Daily Accountwide)
+						["name"] = "Has rolled for Ahune Special Loot (Daily Accountwide)",
+						["description"] = "Items under this group only have a chance to drop on your first kill per day for your warband.",
 						["timeline"] = { ADDED_10_2_7 },
 						["isDaily"] = true,
+						["g"] = {
+							i(224163, {	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor (MM!)
+								["timeline"] = { ADDED_10_2_7 },
+							}),
+							i(244356, {	-- Crown of the Frost Lord (COSMETIC!)
+								["timeline"] = { ADDED_11_1_7 },
+							}),
+							i(244422, {	-- Glazfuris, Scythe of the Deep Chill (COSMETIC!)
+								["timeline"] = { ADDED_11_1_7 },
+							}),
+							i(246571, {	-- Glazfuris, Spire of the Deep Chill (COSMETIC!)
+								["timeline"] = { ADDED_11_1_7 },
+							}),
+							i(244423, {	-- Rethfuras, Scorched Scythe of Cinders (COSMETIC!)
+								["timeline"] = { ADDED_11_1_7 },
+							}),
+							i(246570, {	-- Rethfuras, Scorched Stave of Cinders (COSMETIC!)
+								["timeline"] = { ADDED_11_1_7 },
+							}),
+						},
 					}),
 				},
 			}),

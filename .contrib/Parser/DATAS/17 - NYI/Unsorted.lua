@@ -265,7 +265,6 @@ root(ROOTS.Unsorted, {
 				i(244470),	-- Etheric Victory
 				i(244907),	-- Dread Horrorling
 				i(244909),	-- Impartial Watcher
-				i(244910),	-- Penumbral Terror
 				i(244914),	-- Xanthous Siphonmite
 				i(244916),	-- Cyan Siphonmite
 				i(245212),	-- Vitriolic Inchshifter
@@ -331,40 +330,6 @@ root(ROOTS.Unsorted, {
 				i(246298),	-- Cracked Staff of the Desperate Defender
 				i(246301),	-- Pitted Blade of Lost Hope
 
-
-				-- Vendor Cosmetic?
-				i(244267),	-- Untethered Seer's Vestments
-				i(244268),	-- Untethered Seer's Slippers
-				i(244269),	-- Untethered Seer's Gloves
-				i(244270),	-- Untethered Seer's Crown
-				i(244271),	-- Untethered Seer's Leggings
-				i(244272),	-- Untethered Seer's Spines
-				i(244273),	-- Untethered Seer's Cord
-				i(244274),	-- Untethered Seer's Bands
-				i(244275),	-- Untethered Blade's Jerkin
-				i(244276),	-- Untethered Blade's Soles
-				i(244277),	-- Untethered Blade's Grips
-				i(244278),	-- Untethered Blade's Hood
-				i(244279),	-- Untethered Blade's Breeches
-				i(244280),	-- Untethered Blade's Shoulderpads
-				i(244281),	-- Untethered Blade's Belt
-				i(244282),	-- Untethered Blade's Bracers
-				i(244283),	-- Untethered Striker's Brigandine
-				i(244284),	-- Untethered Striker's Boots
-				i(244285),	-- Untethered Striker's Gauntlets
-				i(244286),	-- Untethered Striker's Cowl
-				i(244287),	-- Untethered Striker's Legguards
-				i(244288),	-- Untethered Striker's Pauldrons
-				i(244289),	-- Untethered Striker's Sash
-				i(244290),	-- Untethered Striker's Armguards
-				i(244291),	-- Untethered Captain's Breastplate
-				i(244292),	-- Untethered Captain's Sollerets
-				i(244293),	-- Untethered Captain's Handguards
-				i(244294),	-- Untethered Captain's Helmet
-				i(244295),	-- Untethered Captain' s Greaves
-				i(244296),	-- Untethered Captain's Epaulettes
-				i(244297),	-- Untethered Captain's Greatbelt
-				i(244298),	-- Untethered Captain's Vambraces
 				-- Undermine??
 				i(237944),	-- Ensemble: Junkreaver's Plates
 				i(237945),	-- Ensemble: Blastborne Loadout
@@ -372,8 +337,6 @@ root(ROOTS.Unsorted, {
 				i(237953),	-- Ensemble: Noxious Injector Apparatus
 				i(237954),	-- Arsenal: Undermine Weaponry
 				-- Reputation Cosmetic
-				i(245968),	-- Tabard of the Trust
-
 				i(248780),	-- Consortium Brute's Cape
 				i(248781),	-- Consortium Skirmisher's Cloak
 				i(248782),	-- Consortium Scout's Serape
@@ -387,7 +350,6 @@ root(ROOTS.Unsorted, {
 				i(248791),	-- Wastelander Skirmisher's Cloak
 				i(248792),	-- Wastelander Magi's Shawl
 				i(248793),	-- Wastelander Brute's Cape
-				i(248916),	-- Untethered Seer's Capelet
 				i(248917),	-- Untethered Blade's Mantle
 				i(248918),	-- Untethered Striker's Shroud
 				i(248919),	-- Untethered Captain's Capote
@@ -790,8 +752,6 @@ root(ROOTS.Unsorted, {
 				i(247820),	-- Cache of K'areshi Treasures
 				i(247821),	-- Cache of K'areshi Treasures
 				i(244300),	-- Phase-Sealed Box
-				i(244335),	-- K'aresh Box of Valorstones
-				i(244336),	-- K'aresh Box of Resonance Crystals
 				i(244354),	-- Ethereal Equipment Chest
 				i(244842),	-- Fabled Veteran's Cache
 				i(244865),	-- Pinnacle Cache
@@ -893,7 +853,6 @@ root(ROOTS.Unsorted, {
 				i(186639),	-- Xy Trustee's Gearglider
 				i(186640),	-- Vandal's Gearglider
 				i(242713),	-- Resplendent K'arroc
-				i(242717),	-- Lavender K'arroc
 				i(242733),	-- Blue Barry
 				i(242734),	-- Curious Slateback
 				i(246067),	-- Pearlescent Krolusk
