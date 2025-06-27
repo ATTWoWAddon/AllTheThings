@@ -10,6 +10,7 @@ local IRON_INVASION = createHeader({
 		de = "Die Eiserne Invasion",
 		fr = "L’invasion de Fer",
 		it = "L'invasione di ferro",
+		mx = "La invasión de Hierro",
 		pt = "A invasão de ferro",
 		ru = "Железное вторжение",
 		ko = "강철의 침략",

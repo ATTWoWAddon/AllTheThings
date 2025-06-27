@@ -21,6 +21,8 @@ SERVICE_ENTRANCE = createHeader({
 	text = {
 		-- #if ANYCLASSIC
 		en = "Service Entrance",
+		es = "Entrada de servicio",
+		mx = "Entrada de servicio",
 		-- #else
 		en = [[~C_Map.GetAreaInfo(5917)]],	-- Stratholme - Service Entrance
 		-- #endif
