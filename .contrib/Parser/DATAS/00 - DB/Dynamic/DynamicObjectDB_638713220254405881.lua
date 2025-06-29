@@ -21,8 +21,8 @@
 		model = 5048188,
 		text = {
 			en = "Hallowfall Farm Supplies",
-			es = "Suministros de granja de Santificación",
 			de = "Landwirtschaftliche Vorräte von Heilsturz",
+			es = "Suministros de granja de Santificación",
 			fr = "Provisions de la ferme de Sainte-Chute",
 			it = "Forniture della Fattoria dei Precipizi Sacri",
 			mx = "Suministros de granja de Cristalia",
@@ -38,8 +38,8 @@
 		model = 1709047,
 		text = {
 			en = "Fallow Corn",
-			es = "Maíz de color pajizo",
 			de = "Gelbbrauner Mais",
+			es = "Maíz de color pajizo",
 			fr = "Maïs de Sainte-Chute",
 			it = "Mais Paglierino",
 			mx = "Maíz pajizo",
@@ -55,8 +55,8 @@
 		model = 5500648,
 		text = {
 			en = "Arathi Toolbox",
-			es = "Caja de herramientas arathi",
 			de = "Arathiwerkzeugkasten",
+			es = "Caja de herramientas arathi",
 			fr = "Boîte à outils arathie",
 			it = "Cassetta degli Attrezzi degli Arathi",
 			mx = "Caja de herramientas arathi",
@@ -72,8 +72,8 @@
 		model = 424389,
 		text = {
 			en = "Rolled Arathi-Rug",
-			es = "Alfombra enrollada arathi",
 			de = "Aufgerollter Arathiteppich",
+			es = "Alfombra enrollada arathi",
 			fr = "Tapis arathi roulé",
 			it = "Tappeto degli Arathi Arrotolato",
 			mx = "Alfombra arathi enrollada",

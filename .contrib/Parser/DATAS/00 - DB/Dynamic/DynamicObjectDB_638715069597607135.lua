@@ -4,8 +4,8 @@
 		model = 4337371,
 		text = {
 			en = "Tattered Kul Tiran Journal",
-			es = "Diario ajado de un ciudadano de Kul Tiras",
 			de = "Zerlumptes Tagebuch aus Kul Tiras",
+			es = "Diario ajado de un ciudadano de Kul Tiras",
 			fr = "Journal kultirassien en lambeaux",
 			it = "Diario Lacero di un Kul Tirano",
 			mx = "Diario kultirano andrajoso",
