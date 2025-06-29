@@ -52,7 +52,9 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 		}, {
 			["races"] = ALLIANCE_ONLY,
 			-- #if AFTER TBC
+			-- #if NOT ANYCLASSIC
 			["sharedDescription"] = "This item can be purchased, but without the original PvP title, it cannot be used for transmogrification and may not grant collection credit.",
+			-- #endif
 			-- #endif
 			["groups"] = {
 				-- Original Classic Gear, only collectable with the original title.
@@ -339,7 +341,9 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 		}, {
 			["races"] = HORDE_ONLY,
 			-- #if AFTER TBC
+			-- #if NOT ANYCLASSIC
 			["sharedDescription"] = "This item can be purchased, but without the original PvP title, it cannot be used for transmogrification and may not grant collection credit.",
+			-- #endif
 			-- #endif
 			["groups"] = {
 				n(WEAPONS, {
