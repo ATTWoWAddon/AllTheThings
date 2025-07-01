@@ -891,7 +891,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Hatecrest Naga killed
 							["providers"] = {
-								{ "n", 39750},	-- Hatecrest Naga Kill Credit Bunny
 								{ "n", 39728},	-- Hatecrest Warrior
 								{ "n", 39733},	-- Hatecrest Sorceress
 							},

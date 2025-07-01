@@ -1757,7 +1757,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/15 Winterfall Furbolg slain
 							["providers"] = {
-								{ "n", 48586},	-- Winterfall Kill Credit
 								{ "n", 7440},	-- Winterfall Den Watcher
 								{ "n", 7441},	-- Winterfall Totemic
 								{ "n", 7442},	-- Winterfall Pathfinder

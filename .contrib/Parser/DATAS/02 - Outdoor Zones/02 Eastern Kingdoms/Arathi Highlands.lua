@@ -2171,17 +2171,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["crs"] = {
 								2554,	-- Witherbark Axe Thrower
 								2558,	-- Witherbark Berserker
+								51631,	-- Witherbark Fisher
 								2556,	-- Witherbark Headhunter
 								2557,	-- Witherbark Shadow Hunter
 								2553,	-- Witherbark Shadowcaster
 								2552,	-- Witherbark Troll
 								2555,	-- Witherbark Witch Doctor
+								51633,	-- Witherbark Witch Doctor
 								2605,	-- Zalas Witherbark <Warband Leader>
 							},
 						}),
 						objective(2, {	-- 0/4 Witherbark Medicine Pouch
 							["provider"] = { "i", 4522 },	-- Witherbark Medicine Pouch
-							["cr"] = 2555,	-- Witherbark Witch Doctor
+							["crs"] = {
+								2555,	-- Witherbark Witch Doctor
+								51633,	-- Witherbark Witch Doctor
+							},
 						}),
 					},
 				}),

@@ -4456,6 +4456,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 			}),
 			-- #endif
+			-- #if AFTER CATA
+			n(TREASURES, {
+				o(207496, {	-- Dark Iron Treasure Chest
+					["coords"] = {
+						{ 46.5, 45.8, DUN_MOROGH },
+						{ 50.6, 47.7, DUN_MOROGH },
+						{ 85.1, 60.6, DUN_MOROGH },
+					},
+					["timeline"] = { ADDED_4_0_3 },
+				}),
+			}),
+			-- #endif
 			n(VENDORS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(208886, {	-- Blackrat

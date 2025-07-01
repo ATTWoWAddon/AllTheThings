@@ -1551,5 +1551,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		filter(REAGENTS, {
 			i(158378),	-- Embroidered Deep Sea Satin
 		}),
+		filter(MISC, {
+			i(154705),	-- Battle Flag: Rallying Swiftness
+			i(154706),	-- Battle Flag: Phalanx Defense
+			i(154707),	-- Battle Flag: Spirit of Freedom
+		}),
 	}),
 }))));

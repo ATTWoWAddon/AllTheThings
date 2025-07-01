@@ -1677,7 +1677,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/15 Deadwood Furbolg slain
 							["providers"] = {
-								{ "n", 47329},	-- Deadwood Kill Credit
 								{ "n", 7153},	-- Deadwood Warrior
 								{ "n", 7154},	-- Deadwood Gardener
 								{ "n", 7155},	-- Deadwood Pathfinder

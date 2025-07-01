@@ -14,6 +14,23 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(225948, {	-- Harbinger's Equipment Chest
 						["timeline"] = { ADDED_11_0_5, REMOVED_11_1_0 },
 						["cost"] = {{ "c", 3008, 350 }},	-- 350x Valorstones
+						["sym"] = {
+							-- All TWW Season 1 dungeons (Normal+ difficulty)
+							{"select", "instanceID"
+								,1271			-- Ara-Kara, City of Echoes
+								,1274			-- City of Threads
+								,71				-- Grim Batol
+								,1184			-- Mists of Tirna Scithe
+								,1023			-- Siege of Boralus
+								,1270			-- The Dawnbreaker
+								,1182			-- The Necrotic Wake
+								,1269			-- The Stonevault
+							},
+							{"pop"},
+							{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS},
+							{"extract", "itemID"},
+							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
+						},
 					}),
 					i(229422, {	-- Undermine Equipment Chest
 						["timeline"] = { ADDED_11_1_5, REMOVED_11_2_0 },
@@ -34,7 +51,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS},
 							{"extract", "itemID"},
 							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
-						}
+						},
 					}),
 				},
 			}),

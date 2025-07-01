@@ -2447,7 +2447,20 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
 				o(325882, {	-- Brass Key
-					["coord"] = { 49.5, 87.2, NAZJATAR },
+					["coords"] = {
+						{ 45.3, 83.9, NAZJATAR },
+						{ 45.4, 84.6, NAZJATAR },
+						{ 46.0, 83.9, NAZJATAR },
+						{ 46.3, 83.3, NAZJATAR },
+						{ 47.2, 83.6, NAZJATAR },
+						{ 47.3, 84.8, NAZJATAR },
+						{ 47.6, 85.4, NAZJATAR },
+						{ 48.1, 85.6, NAZJATAR },
+						{ 48.3, 86.5, NAZJATAR },
+						{ 48.9, 88.3, NAZJATAR },
+						{ 49.5, 87.2, NAZJATAR },
+						{ 49.9, 88.4, NAZJATAR },
+					},
 					["g"] = { i(168167) },	-- Brass Key (QI!)
 				}),
 			},

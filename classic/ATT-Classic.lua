@@ -2673,6 +2673,8 @@ local ADDON_LOADED_HANDLERS = {
 
 		-- Notify Event Handlers that Saved Variable Data is available.
 		app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData, accountWideSettings);
+		-- Event handlers which need Saved Variable data which is added by OnSavedVariablesAvailable handlers into saved variables
+		app.HandleEvent("OnAfterSavedVariablesAvailable", currentCharacter, accountWideData);
 
 		-- Check to see if we have a leftover ItemDB cache
 		if not AllTheThingsAD.GroupQuestsByGUID then

@@ -343,7 +343,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	ATTAccountWideData = accountWideData
 	OneTimeFixes(accountWideData)
 end)
-app.AddEventHandler("OnStartupDone", function()
+app.AddEventHandler("OnAfterSavedVariablesAvailable", function()
 	FixNonOneTimeQuests(ATTAccountWideData)
 end)
 app.RefreshCollections = function()

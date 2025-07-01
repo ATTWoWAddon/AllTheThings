@@ -1663,7 +1663,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 				n(54338, {	-- Anthriss
 					["coord"] = { 54.8, 41.0, THE_MOLTEN_FRONT },
 				}),
-				o(207496, {	-- Dark Iron Treasure Chest
+				o(207507, {	-- Dark Iron Treasure Chest
 					--["modelScale"] = 1.5,
 					["coords"] = {
 						{ 34.3, 48.3, THE_MOLTEN_FRONT },	-- Floating rock on the way to Fireplume Peak?

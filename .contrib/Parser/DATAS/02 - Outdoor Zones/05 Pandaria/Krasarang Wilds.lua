@@ -1283,6 +1283,7 @@ root(ROOTS.Zones, {
 									["provider"] = { "n", 68538 },	-- The Monkey King
 									["coord"] = { 93.8, 27.5, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
+									["g"] = { i(92561) },	-- Mallet Handle (QI!)
 								}),
 								q(32355, {	-- The Harmonic Mallet
 									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, REVERED+14540 },	-- possibly 14530
@@ -1297,6 +1298,7 @@ root(ROOTS.Zones, {
 									["provider"] = { "n", 68538 },	-- The Monkey King
 									["coord"] = { 93.8, 27.5, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
+									["g"] = { i(92562) },	-- Harmonic Ointment (QI!)
 								}),
 								q(32337, {	-- The Head
 									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, REVERED+18500 },	-- maybe 18490
@@ -1304,6 +1306,12 @@ root(ROOTS.Zones, {
 									["provider"] = { "n", 68538 },	-- The Monkey King
 									["coord"] = { 93.8, 27.5, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
+									["g"] = {
+										o(216421, {	-- Mallet Head
+											["coord"] = { 30.7, 92.3, VALE_OF_ETERNAL_BLOSSOMS },
+											["g"] = { i(92560) },	-- Mallet Head (QI!)
+										}),
+									},
 								}),
 								q(32331, {	-- The Kirin Tor
 									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, HONORED+2850 },

@@ -2369,7 +2369,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Mad Magus Tirth's soul extracted
-							["provider"] = { "n", 41130 },	-- The Mad Magus Kill Credit
+							["provider"] = { "n", 41131 },	-- Mad Magus Tirth
+							["coord"] = { 85.2, 91.6, THOUSAND_NEEDLES },
 						}),
 						i(63588, {	-- Magus Tirth's Robe
 							["timeline"] = { ADDED_4_0_3 },

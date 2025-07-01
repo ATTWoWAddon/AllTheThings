@@ -7048,6 +7048,8 @@ app.Startup = function()
 
 	-- Notify Event Handlers that Saved Variable Data is available.
 	app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, ATTAccountWideData);
+	-- Event handlers which need Saved Variable data which is added by OnSavedVariablesAvailable handlers into saved variables
+	app.HandleEvent("OnAfterSavedVariablesAvailable", currentCharacter, ATTAccountWideData);
 
 	-- Update the total account wide death counter.
 	local deaths = 0;

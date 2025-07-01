@@ -503,6 +503,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(139315, {	-- Grimoire of the Wrathguard (CI!)
 				["timeline"] = { ADDED_7_2_0 },
 			}),
+			i(139339),	-- Glyph of Yu'lon's Grace (CI!)
 		}),
 		category(106, {	-- Tarot Cards
 			sp(191659, {	-- Darkmoon Card of the Legion

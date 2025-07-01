@@ -1400,7 +1400,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/15 Palemane Gnolls
 							["providers"] = {
-								{ "n", 42354},	-- Palemane Gnoll Kill Credit
 								{ "n", 2949},	-- Palemane Tanner
 								{ "n", 2950},	-- Palemane Skinner
 								{ "n", 2951},	-- Palemane Poacher

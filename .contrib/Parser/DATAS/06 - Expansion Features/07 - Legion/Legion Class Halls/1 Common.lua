@@ -1111,6 +1111,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					i(147569, { ["timeline"] = { ADDED_7_2_0 } }),	-- Arcane Trap
 					i(152928, { ["timeline"] = { ADDED_7_3_0 } }),	-- Archaic Seerstone
 					i(139802),	-- Auspicious Fetish
+					i(152936, { ["timeline"] = { ADDED_7_3_0 } }),	-- Azurelight Sapphire
 					i(139845),	-- Band of Primordial Strength
 					i(139873),	-- Bottled Sanity
 					i(140582),	-- Bottomless Flask

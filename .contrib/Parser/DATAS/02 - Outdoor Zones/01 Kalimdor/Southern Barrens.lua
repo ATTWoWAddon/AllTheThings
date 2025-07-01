@@ -2615,7 +2615,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["crs"] = {
 						-- #if AFTER 10.1.7
 						37661,	-- Razormane Seer
-						-- #elseif BEFORE 4.0.3
+						-- #else
 						3458,	-- Razormane Seer
 						-- #endif
 					},
@@ -2624,7 +2624,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 41.8, 82.8, SOUTHERN_BARRENS },
 						{ 43.2, 84.4, SOUTHERN_BARRENS },
 						{ 23.4, 35.4, SOUTHERN_BARRENS },
-						-- #elseif BEFORE 4.0.3
+						-- #else
 						{ 42.6, 79.0, THE_BARRENS },
 						{ 43.0, 83.2, THE_BARRENS },
 						-- #endif
@@ -2645,7 +2645,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["crs"] = {
 						-- #if AFTER 10.1.7
 						37560,	-- Razormane Pathfinder
-						-- #elseif BEFORE 4.0.3
+						-- #else
 						3457,	-- Razormane Stalker
 						3456,	-- Razormane Pathfinder
 						-- #endif
@@ -2655,7 +2655,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 43.4, 82.0, SOUTHERN_BARRENS },
 						{ 41.6, 81.4, SOUTHERN_BARRENS },
 						{ 43.6, 86.2, SOUTHERN_BARRENS },
-						-- #elseif BEFORE 4.0.3
+						-- #else
 						{ 41.8, 79.6, THE_BARRENS },
 						{ 43.8, 83.2, THE_BARRENS },
 						-- #endif
@@ -2666,7 +2666,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["crs"] = {
 						-- #if AFTER 10.1.7
 						37660,	-- Razormane Warfrenzy
-						-- #elseif BEFORE 4.0.3
+						-- #else
 						3459,	-- Razormane Warfrenzy
 						-- #endif
 					},
@@ -2675,7 +2675,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 38.0, 81.8, SOUTHERN_BARRENS },
 						{ 43.6, 82.6, SOUTHERN_BARRENS },
 						{ 44.6, 87.8, SOUTHERN_BARRENS },
-						-- #elseif BEFORE 4.0.3
+						-- #else
 						{ 41.6, 79.0, THE_BARRENS },
 						{ 42.2, 81.6, THE_BARRENS },
 						-- #endif

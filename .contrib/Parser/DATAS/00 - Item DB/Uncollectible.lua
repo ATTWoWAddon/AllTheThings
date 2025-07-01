@@ -297,10 +297,11 @@ i(153566);	-- "Shiny" Rock
 i(153567);	-- "Smooth" Rock
 i(158862);	-- Ancient Grave Dust
 i(162634);	-- Ancient Nazmani Coins
-i(158808);	-- Thick Tendon
 i(158811);	-- Ashen Coal
 i(162675);	-- Ashvane Ledger
+i(158871);	-- Autographed Painting of Anduin
 i(162681);	-- Bent Sickle
+i(158820);	-- Blind-Worm Sting
 i(162978);	-- Blood Magic Ritual Dish
 i(158759);	-- Bloodgorged Sac
 i(158750);	-- Bonebreaker Beak
@@ -324,10 +325,12 @@ i(158757);	-- Disquiet Earth
 i(168787);	-- Empty Birdcage
 i(162684);	-- Etched Dock Cleat
 i(162976);	-- Exile's Abandoned Memoirs
+i(161206);	-- Faded Treasure Map
 i(158210);	-- Fearsome Claw
 i(158760);	-- Fin Ray
 i(158801);	-- Finely Serrated Tooth
 i(155603);	-- Flaky Fish Scales
+i(163918);	-- Fleshcarving Knife
 i(158874);	-- Frothing Vapor
 i(158770);	-- Gelatinous Roe
 i(158865);	-- Ghastly Ooze
@@ -360,6 +363,7 @@ i(159140);	-- Lifeless Clay
 i(158745);	-- Luminous Scale
 i(158823);	-- Malfunctioning Rocket Boots
 i(163593);	-- Map of Zandalar Trade Winds
+i(163028);	-- Masterwork Statue of the First Trolls
 i(158751);	-- Matted Pelt
 i(161201);	-- Mermaid's Looking Glass
 i(158778);	-- Mucose Tendril
@@ -387,6 +391,7 @@ i(152099);	-- Shriveled Onion
 i(158783);	-- Silken White Feather
 i(163846);	-- Silver Monkey Head
 i(163845);	-- Silver Statue Base
+i(161199);	-- Silver-Plated Tankard
 i(155635);	-- Sinewy Wing
 i(155620);	-- Singed Sprig of Teldrassil
 i(158788);	-- Sleek Quill
@@ -404,6 +409,7 @@ i(161200);	-- Teardrop Pearl
 i(158861);	-- Tensile Eye Stalk
 i(158839);	-- Thick Crab Claw
 i(158775);	-- Thick Hivewax
+i(158808);	-- Thick Tendon
 i(158747);	-- Thorny Prickle
 i(158754);	-- Trueflight Fletching
 i(155844);	-- Unreliable Lodestone
@@ -2473,6 +2479,7 @@ i(237332);	-- Single-Use Grill
 i(234616);	-- Supreme Mangoro Madness
 i(237313);	-- Totally Legit Samophlange
 i(231899);	-- Trash
+i(236635);	-- Uncut Semi-Smoky Quartz
 i(229809);	-- Weighted Metal Ball
 
 ------------------

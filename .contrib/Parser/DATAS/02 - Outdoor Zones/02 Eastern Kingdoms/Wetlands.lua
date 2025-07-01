@@ -341,7 +341,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/12 Bluegill Murloc slain
 							["providers"] = {
-								{ "n", 42109},	-- Bluegill Murloc Kill Credit
 								{ "n", 41425},	-- Bluegill Murloc
 								{ "n", 41426},	-- Bluegill Oracle
 								{ "n", 42110},	-- Bluegill Puddlejumper
@@ -495,9 +494,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/8 Highland Raptors slain
 							["providers"] = {
-								{ "n", 41414},	-- Highland Raptor Kill Credit
-								{ "n", 41400},	-- Highland Razormaw
-								{ "n", 41401},	-- Highland Scytheclaw
+								{ "n", 41400 },	-- Highland Razormaw
+								{ "n", 41401 },	-- Highland Scytheclaw
 							},
 						}),
 						i(59095, {	-- Swiftgear Belt
@@ -617,6 +615,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/7 Fires Extinguished
+							["provider"] = { "i", 56134 },	-- Blessed Floodlily
+						}),
 						i(59109, {	-- Marsh Fire Legguards
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -676,6 +677,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 26.9, 26.0, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Gnolls Freed
+							["providers"] = {
+								{ "n",  41410 },	-- Captured Mosshide
+								{ "o", 203282 },	-- Gnoll Cage
+							},
+							["cost"] = {{ "i", 56081, 6 }},	-- Trapper's Key
+							["cr"] = 41409,	-- Dark Iron Trapper
+						}),
+					},
 				}),
 				heroscall(q(28565, {	-- Hero's Call: Wetlands!
 					["timeline"] = { ADDED_4_0_3 },
@@ -741,8 +752,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/8 Incendicite Ore
 							["providers"] = {
-								{ "i", 55241 },	-- Incendicite Ore
+								{ "i",  55241 },	-- Incendicite Ore
 								{ "o", 203188 },	-- Incendicite Mineral Vein
+								{ "i",  55240 },	-- Spark-Proof Pick
 							},
 						}),
 						i(59066, {	-- Stabilized Incendicite Legguards
@@ -1154,7 +1166,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						objective(2, {	-- 0/16 Angerfang Dragonmaw slain
 							["providers"] = {
-								{ "n", 42151},	-- Angerfang Dragonmaw Kill Credit
 								{ "n", 1034},	-- Dragonmaw Raider
 								{ "n", 1035},	-- Dragonmaw Swamprunner
 								{ "n", 1036},	-- Dragonmaw Centurion
@@ -1940,7 +1951,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(TREASURES, {
-				o(207496, {	-- Dark Iron Treasure Chest
+				o(207498, {	-- Dark Iron Treasure Chest
 					["timeline"] = { ADDED_4_0_3 },
 					["modelScale"] = 1.5,
 					["coords"] = {
@@ -1975,15 +1986,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(13062),	-- Thunderwood
 						i(13114),	-- Troll's Bane Leggings
 					},
-				}),
-				o(207498, {	-- Dark Iron Treasure Chest
-					["coords"] = {	-- As opposed to 207496, this one spawns exclusively in Wetlands
-						{ 36.6, 61.2, LOCH_MODAN },
-						{ 61.9, 75.0, LOCH_MODAN },
-						{ 80.3, 51.9, LOCH_MODAN },
-					},
-					["timeline"] = { ADDED_4_0_3 },
-					["sym"] = {{ "select", "objectID", 207496 }, {"pop"}},
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(209848, {	-- Goaz Scrolls

@@ -1863,7 +1863,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(TREASURES, {
-				o(207496, {	-- Dark Iron Treasure Chest
+				o(207500, {	-- Dark Iron Treasure Chest
 					["timeline"] = { ADDED_4_0_3 },
 					["modelScale"] = 1.5,
 					["coords"] = {
@@ -1913,24 +1913,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(13112),	-- Winged Helm
 						i(13051),	-- Witchfury
 					},
-				}),
-				o(207500, {	-- Dark Iron Treasure Chest
-					["coords"] = {	-- As opposed to 207496, this one spawns exclusively in Searing Gorge
-						{ 73.6, 82.2, SEARING_GORGE },
-						{ 63.6, 60.5, SEARING_GORGE },
-						{ 49.0, 55.5, SEARING_GORGE },
-						{ 49.4, 39.5, SEARING_GORGE },
-						{ 44.0, 33.5, SEARING_GORGE },
-						{ 37.9, 37.4, SEARING_GORGE },
-						{ 40.4, 50.5, SEARING_GORGE },
-						{ 38.9, 66.3, SEARING_GORGE },
-						{ 36.9, 60.0, SEARING_GORGE },
-						{ 33.2, 54.0, SEARING_GORGE },
-						{ 17.8, 38.3, SEARING_GORGE },
-						{ 14.5, 37.0, SEARING_GORGE },
-					},
-					["timeline"] = { ADDED_4_0_3 },
-					["sym"] = {{ "select", "objectID", 207496 }, {"pop"}},
 				}),
 			}),
 			-- #if AFTER 7.1.5.23360

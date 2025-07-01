@@ -104,7 +104,11 @@ end
 
 local EARTHEN_RING_ELDER_ID = 26221;	-- Earthen Ring Elder
 local EARTHEN_RING_ELDER_COORDS = {
+	-- #if BEFORE DF
 	{ 49.4, 72.0, STORMWIND_CITY },
+	-- #else
+	{ 47.8, 72.1, STORMWIND_CITY },	-- Trading post moved vendor
+	-- #endif
 	{ 47.2, 37.6, ORGRIMMAR },
 	{ 64.8, 27.4, IRONFORGE },
 	{ 21.4, 24.4, THUNDER_BLUFF },
@@ -1726,8 +1730,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			},
 		}),
 		q(82087, {	-- Torch Tossing (A)
-			["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
-			["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
+			["qg"] = FESTIVAL_MASTER_FIRE_EATER_ID,
+			["coords"] = FESTIVAL_MASTER_FIRE_EATER_COORDS,
 			["races"] = ALLIANCE_ONLY,
 			["timeline"] = { ADDED_10_2_7 },
 			["groups"] = { i(23247) },	-- Burning Blossom
@@ -2779,7 +2783,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				honortheflame(28945, {	-- Honor the Flame — Twilight Highlands
 					["qg"] = 51650,	-- Twilight Highlands Flame Warden
-					["coord"] = { 47.0, 28.0, TWILIGHT_HIGHLANDS },
+					["coord"] = { 47.2, 29, TWILIGHT_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				honortheflame(28950, {	-- Honor the Flame — Uldum
