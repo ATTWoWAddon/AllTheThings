@@ -523,9 +523,11 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				n(20121, {	-- Fingin
 					["coord"] = { 52.2, 84.6, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER MOP
 					["sym"] = {{"select","itemID",
-						4565,    -- Simple Dagger
+						4565,	-- Simple Dagger
 					}},
+					-- #endif
 				}),
 				n(221817, {	-- Gaal <Blacksmith>
 					["coord"] = { 56.6, 81.8, THE_EXODAR},

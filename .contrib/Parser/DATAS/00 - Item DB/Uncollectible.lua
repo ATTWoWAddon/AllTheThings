@@ -301,6 +301,7 @@ i(158811);	-- Ashen Coal
 i(162675);	-- Ashvane Ledger
 i(158871);	-- Autographed Painting of Anduin
 i(162681);	-- Bent Sickle
+i(156624);	-- Blemished Pearl
 i(158820);	-- Blind-Worm Sting
 i(162978);	-- Blood Magic Ritual Dish
 i(158759);	-- Bloodgorged Sac
@@ -387,6 +388,7 @@ i(158752);	-- Severed Foot
 i(155598);	-- Severed Mandible
 i(155629);	-- Shaggy Mane
 i(163844);	-- Shredded Alliance Emblem
+i(163843);	-- Shredded Horde Emblem
 i(152099);	-- Shriveled Onion
 i(158783);	-- Silken White Feather
 i(163846);	-- Silver Monkey Head

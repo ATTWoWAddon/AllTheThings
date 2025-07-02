@@ -4548,8 +4548,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3334, {	-- Rekkul
 					["coord"] = { 44.0, 58.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
+					-- #if AFTER MOP
+					["sym"] = {{"select","itemID",
+						4565,	-- Simple Dagger
+					}},
+					-- #endif
 					["groups"] = {
-						i(4565),	-- Simple Dagger
 						i(21835, {	-- Anesthetic Poison
 							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 						}),
@@ -5217,9 +5221,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3405, {	-- Zeal'aya
 					["coord"] = { 34.6, 63.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
+					-- #if AFTER MOP
 					["sym"] = {{"select","itemID",
 						4565,	-- Simple Dagger
 					}},
+					-- #endif
 				}),
 				n(3409, {	-- Zendo'jian <Weapon Vendor>
 					["coord"] = { 75.0, 36.6, ORGRIMMAR },

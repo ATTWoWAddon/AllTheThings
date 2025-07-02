@@ -1918,9 +1918,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(4585, {	-- Ezekiel
 					["coord"] = { 75.6, 51.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
+					-- #if AFTER MOP
 					["sym"] = {{"select","itemID",
 						4565,	-- Simple Dagger
 					}},
+					-- #endif
 				}),
 				n(4601, {	-- Francis Eliot
 					["coord"] = { 58.6, 32.6, UNDERCITY },

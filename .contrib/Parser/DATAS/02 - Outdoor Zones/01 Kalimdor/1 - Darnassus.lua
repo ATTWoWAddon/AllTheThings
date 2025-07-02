@@ -1664,9 +1664,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(3561, {	-- Kyrai
 					["coord"] = { 38.8, 35.4, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER MOP
 					["sym"] = {{"select","itemID",
 						4565,    -- Simple Dagger
 					}},
+					-- #endif
 				}),
 				n(4173, {	-- Landria <Bow Merchant>
 					-- #if AFTER CATA

@@ -721,9 +721,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16683, {	-- Darlia <Poison Supplies>
 					["coord"] = { 80.4, 51.0, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
+					-- #if AFTER MOP
 					["sym"] = {{"select","itemID",
 						4565,    -- Simple Dagger
 					}},
+					-- #endif
 				}),
 				n(16666, {	-- Feledis <Axe Vendor>
 					["coord"] = { 52.6, 63.6, SILVERMOON_CITY },

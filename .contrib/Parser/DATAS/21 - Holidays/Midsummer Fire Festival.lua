@@ -2736,7 +2736,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["qg"] = 25916,	-- Tanaris Flame Warden
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 52.0, 29.0, TANARIS },
+						{ 52.6, 30.3, TANARIS },
 						-- #else
 						{ 52.8, 29.4, TANARIS },
 						-- #endif
@@ -2756,6 +2756,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["qg"] = 25907,	-- Terokkar Forest Flame Warden
 					["coords"] = {
 						-- #if AFTER CATA
+						-- Coords are 54.1, 55.5 in retail currently July 2025
 						{ 55.0, 55.0, TEROKKAR_FOREST },
 						-- #else
 						{ 54.1, 55.5, TEROKKAR_FOREST },

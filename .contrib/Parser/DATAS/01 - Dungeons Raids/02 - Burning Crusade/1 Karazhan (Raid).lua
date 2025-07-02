@@ -625,7 +625,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 			})),
-			n(REAGENTS, {
+			filter(REAGENTS, {
 				i(21882, {	-- Soul Essence
 					["description"] = "Drops from Undead creatures in Karazhan."
 				}),

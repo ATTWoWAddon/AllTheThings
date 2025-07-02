@@ -9929,6 +9929,7 @@ local ObjectNames = {
 	[529289] = "Spore Sample",
 	[529673] = "Unclaimed Auction House Crate",
 	[529677] = "Void-Forged Engine Block",
+	[547529] = "Scorched Poster",
 	[9000000] = "Wind Sculpted Stone",
 	[9000001] = "Ancient Incense Brazier",
 	[9000002] = "Ancient Incense Brazier",

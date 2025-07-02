@@ -2231,9 +2231,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1457, {	-- Samor Festivus <Shady Dealer>
 					["coord"] = { 10.5, 60.2, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER MOP
 					["sym"] = {{"select","itemID",
 						4565,	-- Simple Dagger
 					}},
+					-- #endif
 				}),
 				n(3178, {	-- Stuart Fleming <Fisherman>
 					["coords"] = {

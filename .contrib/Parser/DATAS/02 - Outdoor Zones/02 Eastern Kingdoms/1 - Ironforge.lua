@@ -2292,9 +2292,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(5169, {	-- Tynnus Venomsprout
 					["coord"] = { 52.8, 13.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER MOP
 					["sym"] = {{"select","itemID",
 						4565,    -- Simple Dagger
 					}},
+					-- #endif
 				}),
 				n(8117, {	-- Wizbang Booms
 					["coord"] = { 31.8, 63.4, IRONFORGE },

@@ -2801,6 +2801,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(2163),	-- Shadowblade
 			i(2138),	-- Sharpened Letter Opener
 			i(3786),	-- Shiny Dirk
+			i(4565),	-- Simple Dagger
 			i(2764),	-- Small Dagger
 			i(13822),	-- Spiked Dagger
 			i(24222),	-- The Shadowfoot Stabber

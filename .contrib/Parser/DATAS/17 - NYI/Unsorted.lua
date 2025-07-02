@@ -1810,7 +1810,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(CLASSES, {
 				-- T2 Greedy Emissary Alternative Chest/Offset Pieces?
-				i(244443),	-- Emberwind Blouse
 				i(244444),	-- Staghelm Robe
 				i(244446),	-- Blouse of Searing Radiance
 				i(244448),	-- Hellfire Blouse
@@ -3398,7 +3397,6 @@ root(ROOTS.Unsorted, {
 				i(158857),	-- Untainted Wicker \\ PH Flavor - Porcupine
 				i(158867),	-- Needlepoint Bill \\ PH Flavor - Ranishu
 				i(158873),	-- Crystalline Honeymead \\ PH Flavor - Dire Troll Female - Blood Troll
-				i(156624),	-- Blemished Pearl
 				i(158727),	-- Decayed Equipment
 				i(161198),	-- Old Sailor's Almanac
 				i(161202),	-- Polished Brass Sextant
@@ -3446,7 +3444,6 @@ root(ROOTS.Unsorted, {
 				i(163919),	-- String of Broken Tusks
 				i(163920),	-- Bracelet of Teeth
 				i(163921),	-- Tiny Wicker Effigy
-				i(163843),	-- Shredded Horde Emblem
 				i(160551),	-- Partially Digested Mystery Meat
 				i(160560),	-- Piece of Wreckage
 				i(160579),	-- Digested Krolusk Chitin

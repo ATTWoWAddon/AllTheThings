@@ -1624,9 +1624,11 @@ root(ROOTS.Zones, {
 					}),
 					n(33630, {	-- Aelthin <Alchemy Trainer>
 						["coord"] = { 38.6, 71.8, SHATTRATH_CITY },
+						-- #if AFTER MOP
 						["sym"] = {{"select","itemID",
 							4565,    -- Simple Dagger
 						}},
+						-- #endif
 					}),
 					n(19043, {	-- Ahemen <Staff Vendor>
 						["coord"] = { 34.2, 20.0, SHATTRATH_CITY },
@@ -1641,11 +1643,13 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					n(33674, {	-- Alchemist  Kanhu  <Alchemy Trainer>
+					n(33674, {	-- Alchemist Kanhu  <Alchemy Trainer>
 						["coord"] = { 38.6, 30.0, SHATTRATH_CITY },
+						-- #if AFTER MOP
 						["sym"] = {{"select","itemID",
 							4565,    -- Simple Dagger
 						}},
+						-- #endif
 					}),
 					n(21432, {	-- Almaador <Sha'tari Quartermaster>
 						["coord"] = { 51.6, 41.6, SHATTRATH_CITY },
@@ -2177,11 +2181,13 @@ root(ROOTS.Zones, {
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						},
 					}),
-					n(19049, {	-- Karokka  <Alchemy Trainer>
+					n(19049, {	-- Karokka <Alchemy Trainer>
 						["coord"] = { 45.6, 19.8, SHATTRATH_CITY },
+						-- #if AFTER MOP
 						["sym"] = {{"select","itemID",
 							4565,    -- Simple Dagger
 						}},
+						-- #endif
 					}),
 					n(21906, {	-- Kelara <Keeper of Sha'tari Heirlooms>
 						["coord"] = { 24.8, 27.0, SHATTRATH_CITY },
@@ -2299,7 +2305,9 @@ root(ROOTS.Zones, {
 						["sym"] = {{"select", "itemID",
 							2526,	-- Main Gauche
 							2534,	-- Rondel
+							-- #if AFTER MOP
 							4565,	-- Simple Dagger
+							-- #endif
 						}},
 					}),
 					n(21655, {	-- Nakodu <Lower City Quartermaster>

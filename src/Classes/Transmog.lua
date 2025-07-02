@@ -880,7 +880,7 @@ do
 			return BuildAppearanceLink(t.sourceID)
 		end,
 	});
-	app.CreateItemSource = app.GameBuildVersion < 50000 and ((C_Seasons and C_Seasons.GetActiveSeason() == 2 and function(sourceID, itemID, t)
+	app.CreateItemSource = app.GameBuildVersion < 60000 and ((C_Seasons and C_Seasons.GetActiveSeason() == 2 and function(sourceID, itemID, t)
 		if t and ((not t.q or t.q < 2) or not (t.f and ITEM_FILTERS_WITH_APPEARANCES[t.f])) then
 			t[KEY] = sourceID;
 			return app.CreateItem(itemID, t);

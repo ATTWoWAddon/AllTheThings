@@ -367,20 +367,8 @@ ResolveSymbolicLink = function(o)
 				if #cache > 0 then
 					o.symbolizing = true;
 					for k,result in ipairs(cache) do
-						if not result.symbolizing then
-							local ref = ResolveSymbolicLink(result);
-							if ref then
-								if result.g then
-									for i,m in ipairs(result.g) do
-										tinsert(searchResults, m);
-									end
-								end
-								for i,m in ipairs(ref) do
-									tinsert(searchResults, m);
-								end
-							else
-								tinsert(searchResults, result);
-							end
+						if not result.symbolizing and result ~= o then
+							tinsert(searchResults, result);
 						end
 					end
 					o.symbolizing = nil;
@@ -2425,6 +2413,9 @@ if C_PetJournal and app.GameBuildVersion > 30000 then
 		local count = C_PetJournal.GetNumCollectedInfo(t.speciesID);
 		return SetBattlePetCollected(t, t.speciesID, count and count > 0);
 	end
+	app.AddEventRegistration("NEW_PET_ADDED", function(...)
+		app:RefreshDataQuietly("NEW_PET_ADDED", true);
+	end)
 
 	local C_MountJournal = _G["C_MountJournal"];
 	if C_MountJournal then

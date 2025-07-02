@@ -1899,5 +1899,15 @@ ExportDB.AccountWideQuestsDB = {
 	[90970] = true,	-- Titan Disc-Count
 	[90971] = true,	-- Overcharged Console
 	[91038] = true,	-- Hellhunters Wanted
+	[91079] = true,	-- Hellcaller chest tracker
+	[91080] = true,	-- Hellcaller chest tracker
+	[91081] = true,	-- Hellcaller chest tracker
+	[91082] = true,	-- Hellcaller chest tracker
+	[91083] = true,	-- Hellcaller chest tracker
+	[91166] = true,	-- Hellcaller chest tracker
+	[91167] = true,	-- Hellcaller chest tracker
+	[91168] = true,	-- Hellcaller chest tracker
+	[91169] = true,	-- Hellcaller chest tracker
+	[91170] = true,	-- Hellcaller chest tracker
 	-- #ENDIF
 }

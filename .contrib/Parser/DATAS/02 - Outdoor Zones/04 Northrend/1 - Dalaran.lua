@@ -830,9 +830,11 @@ root(ROOTS.Zones, {
 						n(VENDORS, {
 							n(29535, {	-- Alchemist Cinesra
 								["coord"] = { 63.2, 11.4, NORTHREND_THE_UNDERBELLY },
+								-- #if AFTER MOP
 								["sym"] = {{"select","itemID",
 									4565,	-- Simple Dagger
 								}},
+								-- #endif
 							}),
 							n(30885, {	-- Blazik Fireclaw <Hateful Gladiator> [Legion?] / Blazik Fireclaw <Legacy Arena Armor> [CATA+] / Blazik Fireclaw <Water Vendor> [WRATH]
 								["coord"] = { 59.5, 57.9, NORTHREND_THE_UNDERBELLY },

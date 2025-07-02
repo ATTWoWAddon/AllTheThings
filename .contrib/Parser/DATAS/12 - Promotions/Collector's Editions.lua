@@ -44,7 +44,7 @@ TBC_CLASSIC_DELUXE_EDITION = createHeader({
 		es = "Edición TBC Classic Deluxe",
 		fr = "Édition BC Classic Deluxe",
 		mx = "Edición TBC Classic Deluxe",
-		cn = "燃烧的远征经典怀旧服典藏包",	
+		cn = "燃烧的远征经典怀旧服典藏包",
 		tw = "燃燒的遠征：經典版 - 豪華版",
 	},
 });
@@ -532,8 +532,9 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				i(235287),	-- Sha-Warped Riding Tiger (MOUNT!)
 				i(235358),	-- Merriment (PET!)
 				i(235288),	-- Sha-Warped Tea Set (TOY!)
-				-- Ensemble: Stormstout's Sha-Warped Collection transmog
-				-- TODO: added in MoP Classic Prepatch
+				iensemble(238050, {	-- Ensemble: Stormstout's Sha-Warped Collection
+					["timeline"] = { ADDED_11_1_7 },
+				}),
 			},
 		}),
 	})),

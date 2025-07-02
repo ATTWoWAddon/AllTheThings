@@ -2075,9 +2075,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(3090, {	-- Gerald Crawley <Poison Supplies>
 					["coord"] = { 24.8, 38.3, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER MOP
 					["sym"] = {{"select","itemID",
 						4565,	-- Simple Dagger
 					}},
+					-- #endif
 				}),
 				-- #endif
 				n(3085, {	-- Gloria Femmel <Cooking Supplies>

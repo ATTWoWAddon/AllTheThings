@@ -28,7 +28,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 31917,	-- A Tamer's Homecoming
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31903, {	-- Battle Pet Tamers: Eastern Kingdoms (H)
@@ -37,7 +37,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["coord"] = { 52.6, 59.3, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31889, {	-- Battle Pet Tamers: Kalimdor (A)
@@ -46,7 +46,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31891, {	-- Battle Pet Tamers: Kalimdor (H)
@@ -55,7 +55,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["coord"] = { 52.6, 59.3, ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31919, {	-- Battle Pet Tamers: Outland (A)
@@ -68,7 +68,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 				31976,	-- The Returning Champion (A)
 			},
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31921, {	-- Battle Pet Tamers: Outland (H)
@@ -81,7 +81,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 				31980,	-- The Returning Champion (H)
 			},
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31927, {	-- Battle Pet Tamers: Northrend (A)
@@ -91,7 +91,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 31981,	-- Exceeding Expectations (A)
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31929, {	-- Battle Pet Tamers: Northrend (H)
@@ -101,7 +101,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 31982,	-- Exceeding Expectations (H)
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31966, {	-- Battle Pet Tamers: Cataclysm (A)
@@ -111,7 +111,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 31984,	-- A Brief Reprieve (A)
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31967, {	-- Battle Pet Tamers: Cataclysm (H)
@@ -121,7 +121,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 31983,	-- A Brief Reprieve (H)
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31930, {	-- Battle Pet Tamers: Pandaria (A)
@@ -131,7 +131,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 31985,	-- The Triumphant Return (A)
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31952, {	-- Battle Pet Tamers: Pandaria (H)
@@ -141,7 +141,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 31986,	-- The Triumphant Return (H)
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		-- Pet Battle Starting Quests. Alliance = Audrey, Grady, Lehna, Marcus, Valeena, Will. Horde = Ansel, Jarson, Matty, Naleen, Narzak, Varzok.
@@ -350,10 +350,16 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["sourceQuests"] = { 31589 },	-- On The Mend
 		}),
 		q(31592, {	-- On The Mend (Audrey)
-			["provider"] = { "n", 63596 },	-- Audrey Burnhep
-			["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+			["qg"] = 63596,	-- Audrey Burnhep
 			["sourceQuest"] = 31591,	-- Learning the Ropes
+			["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
+			["groups"] = {
+				objective(1, {	-- Battle Pets Healed
+					["provider"] = { "n", 11069 },	-- Jenova Stoneshield <Stable Master>
+					["coord"] = { 67.0, 37.6, STORMWIND_CITY },
+				}),
+			},
 		}),
 		q(31549, {	-- On The Mend (Grady)
 			["provider"] = { "n", 63075 },	-- Grady Bannson
@@ -528,32 +534,45 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 		}),
 		-- Alliance Questline
 		q(31316, {	-- Julia, The Pet Tamer
-			["provider"] = { "n", 63596 },	-- Audrey Burnhelp
+			["qg"] = 63596,	-- Audrey Burnhelp
+			["sourceQuests"] = { 32008, 31878, 31879, 31880, 31881 },	-- Audrey Burnhep (all breadcrumbs)
 			["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+			["maps"] = { ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
-			["sourceQuests"] = {
-				32008, 31878, 31879, 31880, 31881,	-- Audrey Burnhep (all breadcrumbs)
-			},
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				objective(1, {	-- Defeat Julia Stevens
+					["provider"] = { "n", 64330 },	-- Julia Stevens
+					["coord"] = { 41.6, 83.6, ELWYNN_FOREST },
+				}),
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31724, {	-- Old MacDonald
-			["provider"] = { "n", 64330 },	-- Julia Stevens
-			["coord"] = { 41.6, 83.6, ELWYNN_FOREST },
-			["races"] = ALLIANCE_ONLY,
+			["qg"] = 64330,	-- Julia Stevens
 			["sourceQuest"] = 31316,	-- Julia, The Pet Tamer
+			["coord"] = { 41.6, 83.6, ELWYNN_FOREST },
+			["maps"] = { WESTFALL },
+			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				objective(1, {	-- Defeat Old MacDonald
+					["provider"] = { "n", 65648 },	-- Old MacDonald
+					["coord"] = { 80.6, 18.4, WESTFALL },
+				}),
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31725, {	-- Lindsay
-			["provider"] = { "n", 65648 },	-- Old MacDonald
-			["coord"] = { 80.6, 18.4, WESTFALL },
-			["races"] = ALLIANCE_ONLY,
+			["qg"] = 65648,	-- Old MacDonald
 			["sourceQuest"] = 31724,	-- Old MacDonald
+			["coord"] = { 80.6, 18.4, WESTFALL },
+			["maps"] = { REDRIDGE_MOUNTAINS },
+			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				objective(1, {	-- Defeat Lindsay
+					["provider"] = { "n", 65651 },	-- Lindsay
+					["coord"] = { 33.2, 52.5, REDRIDGE_MOUNTAINS },
+				}),
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31726, {	-- Eric Davidson
@@ -562,7 +581,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 31725,	-- Lindsay
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31729, {	-- Steven Lisbane
@@ -571,7 +590,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 31726,	-- Eric Davidson
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31728, {	-- Bill Buckler
@@ -580,7 +599,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 31729,	-- Steven Lisbane
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31917, {	-- A Tamer's Homecoming (A)
@@ -599,7 +618,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 				32009, 31882, 31883, 31884, 31885,	-- Varzok (all breadcrumbs)
 			},
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31813, {	-- Dagra the Fierce
@@ -608,7 +627,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 31812,	-- Zunta, The Pet Tramer
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31814, {	-- Analynn
@@ -617,7 +636,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 31813,	-- Dagra the Fierce
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31815, {	-- Zonya the Sadist
@@ -626,7 +645,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["races"] = HORDE_ONLY,
 			["sourceQuests"] = { 31814 },	-- Analynn
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31817, {	-- Merda Stronghoof
@@ -635,7 +654,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["races"] = HORDE_ONLY,
 			["sourceQuests"] = { 31815 },	-- Zonya the Sadist
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31870, {	-- Cassandra Kaboom
@@ -644,7 +663,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["races"] = HORDE_ONLY,
 			["sourceQuests"] = { 31817 },	-- Merda Stronghoof
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31918, {	-- A Tamer's Homecoming (H)
@@ -663,7 +682,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 				31918,	-- A Tamer's Homecoming (H)
 			},
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31976, {	-- The Returning Champion (A)
@@ -690,7 +709,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 				31918,	-- A Tamer's Homecoming (H)
 			},
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31975, {	-- The Returning Champion (A)
@@ -718,7 +737,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 				31921,	-- Battle Pet Tamers: Outland (H)
 			},
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31981, {	-- Exceeding Expectations (A)
@@ -744,7 +763,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 				31929,	-- Battle Pet Tamers: Northrend (H)
 			},
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31984, {	-- A Brief Reprieve (A)
@@ -770,7 +789,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 				31967,	-- Battle Pet Tamers: Cataclysm (H)
 			},
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31985, {	-- The Triumphant Return (A)
@@ -795,7 +814,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 				31952,	-- Battle Pet Tamers: Pandaria (H)
 			},
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(32603, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Beasts of Fable
@@ -994,7 +1013,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["coord"] = { 40.0, 76.4, DEADWIND_PASS },
 			["sourceQuest"] = 31915,	-- Grand Master Lydia Accoste
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31909, {	-- Grand Master Trixxy
@@ -1002,7 +1021,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["coord"] = { 65.6, 64.5, WINTERSPRING },
 			["sourceQuests"] = { 31897 },	-- Grand Master Trixxy
 			["g"] = {
-				SACK_OF_PET_SUPPLIES
+				SACK_OF_PET_SUPPLIES,
 			},
 		}),
 		q(31905, {	-- Grazzle the Great

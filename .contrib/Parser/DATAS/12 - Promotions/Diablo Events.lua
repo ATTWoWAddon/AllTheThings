@@ -94,12 +94,14 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 	})),
 	applyevent(A_GREEDY_EMISSARY, n(GREEDY_EMISSARY_EVENT, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0, ADDED_11_1_7, REMOVED_11_2_0 } }, {
 		-- Event begins on May 25, 2023, and ends on June 13, 2023.
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0, } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0, ADDED_11_1_7, REMOVED_11_2_0, } }, {
 			ach(18258, {	--	Little Lord of Lies
 				["provider"] = { "i", 206018 },	-- Baa'lial Soulstone
 			}),
 		})),
+		-- DF Version
 		n(205722, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0, } }, {	-- Demon Portal
+			-- #IF BEFORE 11.0
 			["coords"] = {
 				{ 68.3, 40.8, ORGRIMMAR },
 				{ 50.6, 85.6, STORMWIND_CITY },
@@ -114,10 +116,13 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 				{ 57.5, 20.1, VALDRAKKEN },
 			},
 			["description"] = "Every 30 Minutes a Portal spawns in either a Dragonflight Zone and/or in a Capital, causing a Treasure Goblin to appear after 5 minutes.",
+			-- #ENDIF
 			["groups"] = {
 				n(205490, {	-- Treasure Goblin
+					-- #IF BEFORE 11.0
 					["questID"] = 76215,
 					["isDaily"] = true,
+					-- #ENDIF
 					["groups"] = {
 						i(206018),	-- Baa'lial (PET!)
 						i(206039, {	-- Enmity Bundle
@@ -145,7 +150,8 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 				}),
 			},
 		})),
-		n(246220, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0, } }, {	-- Demon Portal
+		-- TWW Version
+		n(205722, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0, } }, {	-- Demon Portal
 			-- Double CheckID
 			-- July 1st to August 1st 2025
 			--["coords"] = {
@@ -155,16 +161,42 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 			--	{ 54.3, 53.9, ISLE_OF_DORN },
 			-- { UNDERMINE },	-- basically entire map
 			--},
+			-- #IF AFTER 11.0
 			["maps"] = { DORNOGAL, ORGRIMMAR, STORMWIND_CITY, UNDERMINE },	-- TODO: remove once proper coords added, parser will complain
-			["description"] = "Every 60 Minutes a Portal spawns in either Dornogal, Stormwind or Orgrimmar, causing a Treasure Goblin to appear after 5 minutes.\n\nCan also spawn in Undermine after defeating a rare (one portal per rare, per hour)",
+			["description"] = "Every 60 Minutes a Portal spawns in Dornogal, Stormwind and Orgrimmar, causing a Treasure Goblin to appear after 5 minutes.\n\nCan also spawn in Undermine after defeating a rare (one portal per rare, per hour, spawning up to 3x2 sets of Treasure Goblins)",
+			-- #ENDIF
 			["groups"] = {
 				n(205490, {	-- Treasure Goblin
-				--	["questID"] = 76215,
-				--	["isDaily"] = true,
 					["groups"] = {
+						-- directly-looted in 11.1.7
+						i(246264),	-- Inarius' Charger (MOUNT!)
+						i(246242),	-- Blood-Wrapped Treasure Bag (COSMETIC!)
+						-- previous loot
+						-- uncomment if confirmed
+						i(206018),	-- Baa'lial (PET!)
+						--i(206039, {	-- Enmity Bundle
+							i(206004),	-- Enmity Cloak
+							--i(206020),	-- Enmity Hood
+						--}),
+						i(206003),	-- Horadric Haversack (BAG)
+						--i(142548),	-- Large Charm of Dexterity
+						--i(206274),	-- Large Charm of Intelligence
+						--i(142547),	-- Large Charm of Strength
+						i(143327),	-- Lovestock Lochaber Axe
+						i(206008),	-- Nightmare Banner (TOY!)
+						--i(142549),	-- Serpent's Grand Charm
+						--i(142546),	-- Small Charm of Inertia
+						--i(142545),	-- Small Charm of Life
+						--i(142551),	-- Stalwart's Grand Charm
+						i(206007),	-- Treasure Nabbin Bag
+						i(142542),	-- Tome of Town Portal (TOY!)
+						i(143543),	-- Twelve String Guitar (TOY!)
+						--i(76755),	-- Tyrael's Charger (MOUNT!)
+						i(206275),	-- Wirt's Haunted Leg (BOE)
+						i(206276),	-- Wirt's Last Leg (BOE)
+						i(206005),	-- Wirt's Fightin' Leg (BOE)
 						i(245589, {	--	Hellcaller Chest
 							currency(3309),	-- Hellstone Shard
-							i(246264),	-- Inarius' Charger
 							-- Buff Gobo Items
 							i(245639), -- Arcane Elixir
 							i(245642), -- Blistering Elixir
@@ -184,7 +216,6 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 							i(245614), -- Trapper Elixir
 							i(245637), -- Windforce Elixir
 							-- Cosmetic
-							i(246242),	-- Blood-Wrapped Treasure Bag (COSMETIC!)
 							i(206007),	-- Treasure Nabbin' Bag (COSMETIC!)
 							-- Temp Buff Items
 							i(245899), -- Bat's Grand Charm
@@ -215,30 +246,6 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 							i(245598), -- Unknown Spellbook
 							i(245594), -- Worn Rune
 						}),
-						-- previous loot
-						-- uncomment if confirmed
-						i(206018),	-- Baa'lial (PET!)
-						--i(206039, {	-- Enmity Bundle
-							i(206004),	-- Enmity Cloak
-							--i(206020),	-- Enmity Hood
-						--}),
-						i(206003),	-- Horadric Haversack (BAG)
-						--i(142548),	-- Large Charm of Dexterity
-						--i(206274),	-- Large Charm of Intelligence
-						--i(142547),	-- Large Charm of Strength
-						--i(143327),	-- Lovestock Lochaber Axe
-						i(206008),	-- Nightmare Banner (TOY!)
-						--i(142549),	-- Serpent's Grand Charm
-						--i(142546),	-- Small Charm of Inertia
-						--i(142545),	-- Small Charm of Life
-						--i(142551),	-- Stalwart's Grand Charm
-						i(206007),	-- Treasure Nabbin Bag
-						i(142542),	-- Tome of Town Portal (TOY!)
-						i(143543),	-- Twelve String Guitar (TOY!)
-						--i(76755),	-- Tyrael's Charger (MOUNT!)
-						i(206275),	-- Wirt's Haunted Leg (BOE)
-						i(206276),	-- Wirt's Last Leg (BOE)
-						i(206005),	-- Wirt's Fightin' Leg (BOE)
 					},
 				}),
 			},
@@ -309,9 +316,12 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 }));
 
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0} }, {
-	n(DIABLO_EVENTS, {
+root(ROOTS.HiddenQuestTriggers, n(DIABLO_EVENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0} }, {
+	n(GREEDY_EMISSARY_EVENT, {
 		q(76216),	-- 'Bonus loot' if Tyrael's Charger unlearned / first goblin kill per day for account
+		-- #IF AFTER 11.0
+		q(76215,{isDaily=true}),	-- Old daily treasure goblin tracker
+		-- #ENDIF
 		--
 		q(91091, {["timeline"]={ADDED_11_1_7}}),	-- Blood-Wrapped Treasure Bag was looted (itemID 246242)
 		q(91092, {["timeline"]={ADDED_11_1_7}}),	-- Treasure Nabbin' Bag was looted (itemID 206007)
