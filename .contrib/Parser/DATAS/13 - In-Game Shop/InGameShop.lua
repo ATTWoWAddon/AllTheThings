@@ -165,7 +165,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		}),
 		-- #if ANYCLASSIC
 		i(224002, {	-- Swoopy
-			["timeline"] = { ADDED_5_5_0 },
+			["timeline"] = { ADDED_4_4_0 , REMOVED_5_5_0 },
 		}),
 		-- #endif
 		i(231310, {	-- Timbered Sky Snakelet (PET!)
