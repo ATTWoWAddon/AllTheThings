@@ -165,7 +165,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					i(151294),	-- Coalesced Void
 					i(151295),	-- Darkstorm Arrowhead
 				})),
-				cr(124309, e(1981, {	-- Viceroy Nezhar
+				cr(122056, e(1981, {	-- Viceroy Nezhar
 					i(151316),	-- Cinch of the Umbral Lasher
 					i(151333),	-- Crown of the Dark Envoy
 					i(151305),	-- Entropic Wristwraps
@@ -235,7 +235,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						i(151294),	-- Coalesced Void
 						i(151295),	-- Darkstorm Arrowhead
 					})),
-					cr(124309, e(1981, {	-- Viceroy Nezhar
+					cr(122056, e(1981, {	-- Viceroy Nezhar
 						i(151316),	-- Cinch of the Umbral Lasher
 						i(151333),	-- Crown of the Dark Envoy
 						i(151305),	-- Entropic Wristwraps
