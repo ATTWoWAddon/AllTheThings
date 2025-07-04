@@ -1407,8 +1407,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PRIEST },
 							["groups"] = {
 								-- #if BEFORE MOP
-								objective(1, {	-- 0/5 Practice Shadow Word: Pain
-									["provider"] = { "n", 44389 },	-- Training Dummy
+								objective(1, {	-- 0/5 Practice Flash Heal on Wounded Militia
+									["provider"] = { "n", 44405 },	-- Wounded Militia
 								}),
 								-- #else
 								objective(2, {	-- 0/5 Practice Shadow Word: Pain
