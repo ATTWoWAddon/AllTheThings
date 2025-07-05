@@ -239,7 +239,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { ADDED_6_0_2 },
 								}),
 								i(57254, {	-- Runner's Boots
-									["timeline"] = { ADDED_4_0_3, REMOVED_4_0_3 },	-- They were available at some point, but not sure when removed.
+									["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },	-- They were available at some point, but not sure when removed.
 								}),
 							},
 						}),
