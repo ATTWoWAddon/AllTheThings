@@ -1337,7 +1337,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(31142, {	-- Palm of the Tiger
-							["qg"] = 63258,	-- Bao
+							["qg"] = 63258,	-- Bao <Monk Trainer>
 							["sourceQuest"] = 31141,	-- Calligraphed Letter
 							["coord"] = { 41.2, 52.1, NORTHSHIRE_VALLEY },
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
