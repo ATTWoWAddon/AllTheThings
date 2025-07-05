@@ -1207,7 +1207,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(31140, {	-- Lions for Lambs
 							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 31139,	-- Beating Them Back!
-							["coord"] = { 33.5, 53.1, NORTHSHIRE_VALLEY },
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
 							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { HUMAN, KULTIRAN },
 							["classes"] = { DEATHKNIGHT, DRUID, MONK },
