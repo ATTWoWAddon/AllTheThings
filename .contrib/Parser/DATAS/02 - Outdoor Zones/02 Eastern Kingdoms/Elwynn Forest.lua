@@ -1344,7 +1344,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { HUMAN },
 							["classes"] = { MONK },
 							["groups"] = {
-								objective(1, {	-- Practice Tiger Palm
+								objective(2, {	-- Practice Tiger Palm
 									["provider"] = { "n", 44548 },	-- Training Dummy
 								}),
 							},
