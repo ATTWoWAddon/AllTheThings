@@ -36,7 +36,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.2, 42.1, ELWYNN_FOREST },
 								-- #endif
@@ -58,7 +58,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.2, 42.1, ELWYNN_FOREST },
 								-- #endif
@@ -90,7 +90,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.2, 42.1, ELWYNN_FOREST },
 								-- #endif
@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.2, 42.1, ELWYNN_FOREST },
 								-- #endif
@@ -137,7 +137,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.2, 42.1, ELWYNN_FOREST },
 								-- #endif
@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.2, 42.1, ELWYNN_FOREST },
 								-- #endif
@@ -184,7 +184,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.2, 42.1, ELWYNN_FOREST },
 								-- #endif
@@ -206,7 +206,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.2, 42.1, ELWYNN_FOREST },
 								-- #endif
@@ -260,7 +260,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.2, 42.1, ELWYNN_FOREST },
 								-- #endif
@@ -433,7 +433,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.0, 42.0, ELWYNN_FOREST },
 								-- #endif
@@ -926,7 +926,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.0, 42.0, ELWYNN_FOREST },
 								-- #endif
@@ -939,7 +939,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.0, 42.0, ELWYNN_FOREST },
 								-- #endif
@@ -953,7 +953,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.2, 42.1, ELWYNN_FOREST },
 								-- #endif
@@ -967,7 +967,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.0, 42.0, ELWYNN_FOREST },
 								-- #endif
@@ -981,7 +981,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.2, 42.1, ELWYNN_FOREST },
 								-- #endif
@@ -995,7 +995,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.2, 42.1, ELWYNN_FOREST },
 								-- #endif
@@ -1009,7 +1009,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.2, 42.1, ELWYNN_FOREST },
 								-- #endif
@@ -1023,7 +1023,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.2, 42.1, ELWYNN_FOREST },
 								-- #endif
@@ -1035,7 +1035,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(31143, {	-- Join the Battle!
 							["sourceQuest"] = 31140,	-- Lions for Lambs
 							["qg"] = 197,	-- Marshal McBride
-							["coord"] = { 33.5, 53.1, NORTHSHIRE_VALLEY },
+							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
 							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { HUMAN, KULTIRAN },
 							["classes"] = { DRUID, MONK },
@@ -1057,7 +1057,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.0, 42.0, ELWYNN_FOREST },
 								-- #endif
@@ -1080,7 +1080,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.0, 42.0, ELWYNN_FOREST },
 								-- #endif
@@ -1103,7 +1103,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.0, 42.0, ELWYNN_FOREST },
 								-- #endif
@@ -1126,7 +1126,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.2, 42.1, ELWYNN_FOREST },
 								-- #endif
@@ -1149,7 +1149,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.2, 42.1, ELWYNN_FOREST },
 								-- #endif
@@ -1172,7 +1172,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.0, 42.0, ELWYNN_FOREST },
 								-- #endif
@@ -1219,7 +1219,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.2, 42.1, ELWYNN_FOREST },
 								-- #endif
@@ -1242,7 +1242,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
-								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
+								{ 33.5, 53.0
+								, NORTHSHIRE_VALLEY },
 								-- #else
 								{ 48.2, 42.1, ELWYNN_FOREST },
 								-- #endif
