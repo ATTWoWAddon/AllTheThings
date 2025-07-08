@@ -1592,7 +1592,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 					{ "i", 225678, 1 },	-- Spare Key to Shaffar's Stasis Chamber
 					-- #endif
 				},
-				["creatureID"] = 22930,
+				["creatureID"] = 22927,
 				["groups"] = {
 					i(127422),	-- Mistshroud Tunic
 					i(127421),	-- Skystalker's Tunic
