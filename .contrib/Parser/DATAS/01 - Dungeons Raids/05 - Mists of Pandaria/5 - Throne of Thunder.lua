@@ -868,7 +868,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						},
 					}),
 					n(COMMON_BOSS_DROPS, {
-						["description"] = "These can drop from any of the bosses other than Ra-den.",
+						["description"] = "These can drop from any of the bosses.",
 						["crs"] = {
 							69465,	-- Jin'rokh the Breaker
 							68476,	-- Horridon
@@ -880,6 +880,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							70212,	-- Flaming Head
 							70247,	-- Venomous Head
 							70235,	-- Frozen Head
+							68065,	-- Megaera
 							69712,	-- Ji-Kun
 							68036,	-- Durumu the Forgotten
 							69017,	-- Primordius
@@ -1527,7 +1528,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				["ignoreBonus"] = true,
 				["g"] = {
 					n(COMMON_BOSS_DROPS, {
-						["description"] = "These can drop from any of the bosses other than Ra-den.",
+						["description"] = "These can drop from any of the bosses.",
 						["crs"] = {
 							69465,	-- Jin'rokh the Breaker
 							68476,	-- Horridon
