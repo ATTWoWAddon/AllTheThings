@@ -13,8 +13,7 @@ MAPID_MERGE_REPLACEMENTS = {
 	-- #if AFTER CATA
 	[224] = THE_CAPE_OF_STRANGLETHORN,
 	-- #endif
-	-- #if AFTER WOD
-	-- not sure when this map changed?
+	-- #if AFTER 8.1.5
 	[1339] = WARSONG_GULCH,
 	-- #endif
 }
