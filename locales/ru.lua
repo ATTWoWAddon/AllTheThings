@@ -7,6 +7,8 @@ local L = app.L;
 local GetSpellName = app.WOWAPI.GetSpellName;
 
 -- General Text
+	TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
+	SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
 	L.DESCRIPTION = "\"Глупцы! Вы сами нашли свою погибель! Вам никогда не понять, сколь велика сила, потревоженная вами.  Вы сражались отчаянно, чтобы проникнуть в царство Жнеца. Теперь перед вами лежит лишь один путь – путь проклятых.\"";
 	L.THINGS_UNTIL = " ШТУЧЕК ДО ";
 	L.THING_UNTIL = " ШТУЧКА ДО ";

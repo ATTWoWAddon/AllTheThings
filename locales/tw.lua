@@ -7,6 +7,8 @@ local L = app.L;
 local GetSpellName = app.WOWAPI.GetSpellName;
 
 -- General Text
+	TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
+	SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
 	L.DESCRIPTION = "\"你愚昧地尋求自我毀滅，大膽地無視了那些超越你理解的力量。你拼盡全力入侵收藏者的領域，而現在，唯一的出路只剩下 — 踏上那孤獨的詛咒之路\"";
 	L.THINGS_UNTIL = " 事物到 ";
 	L.THING_UNTIL = " 事物到 ";
