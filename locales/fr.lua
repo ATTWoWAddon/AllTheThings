@@ -30,8 +30,40 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	--TODO: L.TRACKING_PROGRESS = "Tracking Progress";
 	--TODO: L.COLLECTION_PROGRESS = "Collection Progress";
 
--- Big new chunk from AllTheThings.lua
+	-- Settings
+	--TODO: L.DATA_TYPE_NOT_SUPPORTED = "This data type is not supported at this time.";
+	--TODO: L.OPEN_MINILIST_FOR = "Open mini list for ";
+	L.REFRESHING_COLLECTION = "Mise à jour de la collection...";
+	L.DONE_REFRESHING = "Collection mise à jour.";
+	--TODO: L.ADDED_WITH_PATCH = "Added With Patch";
+	--TODO: L.REMOVED_WITH_PATCH = "Removed With Patch";
+	--TODO: L.AVAILABILITY = "Availability";
+	--TODO: L.CREATURES_COUNT = "[%s Creatures]";
+	--TODO: L.CREATURES_LIST = "Creatures List";
 	L.PROGRESS = "Progression";
+	L.COMPLETED_BY = "Complété par: %s";
+	L.KNOWN_BY = "Connu par %s";
+	--TODO: L.OWNED_BY = "Owned by %s";
+	--TODO: L.ALIVE = "Alive";
+	--TODO: L.SPAWNED = "Spawned";
+	--TODO: L.LAYER = "Layer";
+	--TODO: L.BINDING = "Binding";
+	--TODO: L.BONUS_ID = "Bonus ID";
+	--TODO: L.CONDUIT_ID = "Conduit ID";
+	--TODO: L.DISPLAY_ID = "Display ID";
+	--TODO: L.PET_BATTLES = "Pet Battles";
+	--TODO: L.EVENT_ID = "Event ID";
+	--TODO: L.ICON_PATH = "Icon Path";
+	--TODO: L.ITEM_LEVEL = "iLvl";
+	--TODO: L.ITEM_STRING = "Item String";
+	--TODO: L.MOD_ID = "Mod ID";
+	--TODO: L.OBJECT_TYPE = "Object Type";
+	--TODO: L.OBJECTIVES = "Objectives";
+	--TODO: L.QUEST_GIVERS = "Quest Givers";
+	--TODO: L.QUEST_ITEMS = "Quest Items";
+	--TODO: L.RUNEFORGE_POWER_ID = "Runeforge Power ID";
+
+-- Big new chunk from AllTheThings.lua
 	L.TRACKING_PROGRESS = "Suivi des progrès";
 	L.COLLECTED_STRING = " Collectionné";
 	L.PROVIDERS = "Fournisseur(s)";
@@ -45,7 +77,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.NO_COORDINATES_FORMAT = "Aucune coordonnée connue pour %s";
 	L.TOM_TOM_NOT_FOUND = "Vous devez avoir installé TomTom pour pouvoir ajouter des coordonnées.";
 	L.FLIGHT_PATHS = "Trajets Aériens";
-	L.KNOWN_BY = "Connu par %s";
 	L.REQUIRES = "Requiert";
 	L.RACE_LOCKED = "Race bloquée";
 	L.PLEASE_REPORT_MESSAGE = "Merci de signaler sur le serveur Discord d’ATT dans le canal #retail-errors ! Merci !";
@@ -110,13 +141,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.MAXIMUM_STANDING_WITH_FACTION = "Il faut avoir obtenu une note inférieure à %s avec %s.";
 	L.MIN_MAX_STANDING_WITH_FACTION = "Il faut avoir obtenu une note entre %s et %s avec %s.";
 
-	--TODO: L.ADDED_WITH_PATCH = "Added With Patch";
-	--TODO: L.REMOVED_WITH_PATCH = "Removed With Patch";
-	--TODO: L.ALIVE = "Alive";
-	--TODO: L.SPAWNED = "Spawned";
-	--TODO: L.OBJECT_TYPE = "Object Type";
-	--TODO: L.OBJECTIVES = "Objectives";
-	--TODO: L.QUEST_GIVERS = "Quest Givers";
 	L.DURING_WQ_ONLY = "Peut être réalisé uniquement lorsque la quête mondiale est active.";
 	L.COMPLETED_DAILY = "Peut être réalisé uniquement quotidiennement.";
 	L.COMPLETED_WEEKLY = "Peut être réalisé uniquement chaque semaine.";
@@ -227,10 +251,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	--TODO: L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop.";
 	--TODO: L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' %s will prevent collection of Breadcrumb Quest '%s' %s";
 	L.QUEST_OBJECTIVE_INVALID = "Objectif de quête invalide.";
-	L.REFRESHING_COLLECTION = "Mise à jour de la collection...";
-	L.DONE_REFRESHING = "Collection mise à jour.";
 	--TODO: L.ADHOC_UNIQUE_COLLECTED_INFO = "This Item is Unique-Collected but failed to be detected due to missing Blizzard API information.\n\nIt will be fixed after the next Force-Refresh.";
-	--TODO: L.AVAILABILITY = "Availability";
 	--TODO: L.REQUIRES_PVP = "|CFF00FFDEThis Thing requires Player vs Player activities or a currency related to those activities.|r";
 	--TODO: L.REQUIRES_PETBATTLES = "|CFF00FFDEThis Thing requires Pet Battling.|r";
 	--TODO: L.REPORT_INACCURATE_QUEST = "Wrong Quest Info! (Click to Report)";
@@ -268,8 +289,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.QUEST_ROW_INSTRUCTIONS = "Clic droit pour afficher les exigences de la chaîne de quêtes";
 	L.SYM_ROW_INFORMATION = "Clic droit afficher du contenu supplémentaire provenant d’un autre endroit.";
 	--TODO: L.QUEST_ONCE_PER_ACCOUNT = "Once-Per-Account Quest";
-	L.COMPLETED_BY = "Complété par : %s";
-	--TODO: L.OWNED_BY = "Owned by %s";
 
 -- Settings.lua
 	L.AFTER_REFRESH = "Après l’actualisation";
@@ -411,10 +430,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		--TODO: L.ADDED_BACK_WITH_PATCH_FORMAT = "Re-added in %s";
 		--TODO: L.WAS_ADDED_BACK_WITH_PATCH_FORMAT = "Added in %s";
 		L.REMOVED_WITH_PATCH_FORMAT = "Ceci a été retiré au patch %s";	--TODO: Removed in %s
-
-	-- Filter Text
-		--TODO: L.CREATURES_COUNT = "[%s Creatures]";
-		--TODO: L.CREATURES_LIST = "Creatures List";
 
 	-- Artifact Relic Completion
 		L.ARTIFACT_RELIC_CACHE = "Ouvre l’interface des Armes prodigieuses pour toutes tes Armes prodigieuses afin de vérifier si c’est une amélioration ou non. Cela est utile pour déterminer si tu peux échanger cet objet à un Twink ou non.";

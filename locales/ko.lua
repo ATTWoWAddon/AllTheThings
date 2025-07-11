@@ -30,8 +30,40 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	--TODO: L.TRACKING_PROGRESS = "Tracking Progress";
 	--TODO: L.COLLECTION_PROGRESS = "Collection Progress";
 
--- Big new chunk from AllTheThings.lua
+	-- Settings
+	--TODO: L.DATA_TYPE_NOT_SUPPORTED = "This data type is not supported at this time.";
+	--TODO: L.OPEN_MINILIST_FOR = "Open mini list for ";
+	--TODO: L.REFRESHING_COLLECTION = "Refreshing collection...";
+	--TODO: L.DONE_REFRESHING = "Done refreshing collection.";
+	--TODO: L.ADDED_WITH_PATCH = "Added With Patch";
+	--TODO: L.REMOVED_WITH_PATCH = "Removed With Patch";
+	--TODO: L.AVAILABILITY = "Availability";
+	--TODO: L.CREATURES_COUNT = "[%s Creatures]";
+	--TODO: L.CREATURES_LIST = "Creatures List";
 	--TODO: L.PROGRESS = "Progress";
+	--TODO: L.COMPLETED_BY = "Completed By: %s";
+	--TODO: L.KNOWN_BY = "Known by %s";
+	--TODO: L.OWNED_BY = "Owned by %s";
+	--TODO: L.ALIVE = "Alive";
+	--TODO: L.SPAWNED = "Spawned";
+	--TODO: L.LAYER = "Layer";
+	--TODO: L.BINDING = "Binding";
+	--TODO: L.BONUS_ID = "Bonus ID";
+	--TODO: L.CONDUIT_ID = "Conduit ID";
+	--TODO: L.DISPLAY_ID = "Display ID";
+	--TODO: L.PET_BATTLES = "Pet Battles";
+	--TODO: L.EVENT_ID = "Event ID";
+	--TODO: L.ICON_PATH = "Icon Path";
+	--TODO: L.ITEM_LEVEL = "iLvl";
+	--TODO: L.ITEM_STRING = "Item String";
+	--TODO: L.MOD_ID = "Mod ID";
+	--TODO: L.OBJECT_TYPE = "Object Type";
+	--TODO: L.OBJECTIVES = "Objectives";
+	--TODO: L.QUEST_GIVERS = "Quest Givers";
+	--TODO: L.QUEST_ITEMS = "Quest Items";
+	--TODO: L.RUNEFORGE_POWER_ID = "Runeforge Power ID";
+
+-- Big new chunk from AllTheThings.lua
 	--TODO: L.TRACKING_PROGRESS = "Tracking Progress";
 	--TODO: L.COLLECTED_STRING = " Collected";
 	--TODO: L.PROVIDERS = "Provider(s)";
@@ -45,7 +77,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	--TODO: L.NO_COORDINATES_FORMAT = "No known coordinates for %s";
 	--TODO: L.TOM_TOM_NOT_FOUND = "You must have TomTom installed to plot coordinates.";
 	--TODO: L.FLIGHT_PATHS = "Flight Paths";
-	--TODO: L.KNOWN_BY = "Known by %s";
 	L.REQUIRES = "필요 전문화";
 	--TODO: L.RACE_LOCKED = "Race Locked";
 	--TODO: L.PLEASE_REPORT_MESSAGE = "Please report this to the ATT Discord in #retail-errors! Thanks!";
@@ -112,13 +143,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	--TODO: L.MAXIMUM_STANDING_WITH_FACTION = "Requires a standing lower than %s with %s.";
 	--TODO: L.MIN_MAX_STANDING_WITH_FACTION = "Requires a standing between %s and %s with %s.";
 
-	--TODO: L.ADDED_WITH_PATCH = "Added With Patch";
-	--TODO: L.REMOVED_WITH_PATCH = "Removed With Patch";
-	--TODO: L.ALIVE = "Alive";
-	--TODO: L.SPAWNED = "Spawned";
-	--TODO: L.OBJECT_TYPE = "Object Type";
-	--TODO: L.OBJECTIVES = "Objectives";
-	--TODO: L.QUEST_GIVERS = "Quest Givers";
 	--TODO: L.DURING_WQ_ONLY = "This can be completed when the world quest is active.";
 	--TODO: L.COMPLETED_DAILY = "This can be completed daily.";
 	--TODO: L.COMPLETED_WEEKLY = "This can be completed weekly.";
@@ -230,10 +254,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	--TODO: L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop.";
 	--TODO: L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' %s will prevent collection of Breadcrumb Quest '%s' %s";
 	--TODO: L.QUEST_OBJECTIVE_INVALID = "Invalid Quest Objective";
-	--TODO: L.REFRESHING_COLLECTION = "Refreshing collection...";
-	--TODO: L.DONE_REFRESHING = "Done refreshing collection.";
 	--TODO: L.ADHOC_UNIQUE_COLLECTED_INFO = "This Item is Unique-Collected but failed to be detected due to missing Blizzard API information.\n\nIt will be fixed after the next Force-Refresh.";
-	--TODO: L.AVAILABILITY = "Availability";
 	--TODO: L.REQUIRES_PVP = "|CFF00FFDEThis Thing requires Player vs Player activities or a currency related to those activities.|r";
 	--TODO: L.REQUIRES_PETBATTLES = "|CFF00FFDEThis Thing requires Pet Battling.|r";
 	--TODO: L.REPORT_INACCURATE_QUEST = "Wrong Quest Info! (Click to Report)";
@@ -271,8 +292,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	--TODO: L.QUEST_ROW_INSTRUCTIONS = "Right Click to see any Quest Chain Requirements";
 	--TODO: L.SYM_ROW_INFORMATION = "Right Click to see additional content which is Sourced in another location";
 	--TODO: L.QUEST_ONCE_PER_ACCOUNT = "Once-Per-Account Quest";
-	--TODO: L.COMPLETED_BY = "Completed By: %s";
-	--TODO: L.OWNED_BY = "Owned by %s";
 
 -- Settings.lua
 	--TODO: L.AFTER_REFRESH = "After Refresh";
@@ -414,10 +433,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		--TODO: L.ADDED_BACK_WITH_PATCH_FORMAT = "Re-added in %s";
 		--TODO: L.WAS_ADDED_BACK_WITH_PATCH_FORMAT = "Added in %s";
 		--TODO: L.REMOVED_WITH_PATCH_FORMAT = "Removed in %s";
-
-	-- Filter Text
-		--TODO: L.CREATURES_COUNT = "[%s Creatures]";
-		--TODO: L.CREATURES_LIST = "Creatures List";
 
 	-- Artifact Relic Completion
 		--TODO: L.ARTIFACT_RELIC_CACHE = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";

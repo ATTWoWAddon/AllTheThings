@@ -30,8 +30,40 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	--TODO: L.TRACKING_PROGRESS = "Tracking Progress";
 	--TODO: L.COLLECTION_PROGRESS = "Collection Progress";
 
--- Big new chunk from AllTheThings.lua
+	-- Settings
+	--TODO: L.DATA_TYPE_NOT_SUPPORTED = "This data type is not supported at this time.";
+	--TODO: L.OPEN_MINILIST_FOR = "Open mini list for ";
+	L.REFRESHING_COLLECTION = "Обновление коллекции...";
+	L.DONE_REFRESHING = "Коллекция обновлена.";
+	L.ADDED_WITH_PATCH = "Добавлено в патче";
+	L.REMOVED_WITH_PATCH = "Убрано в патче";
+	L.AVAILABILITY = "Доступность";
+	L.CREATURES_COUNT = "[%s Существ]";
+	L.CREATURES_LIST = "Список Существ";
 	L.PROGRESS = "Прогресс";
+	L.COMPLETED_BY = "Выполнено На: %s";
+	L.KNOWN_BY = "Изучено на %s";
+	L.OWNED_BY = "Имеется на %s";
+	--TODO: L.ALIVE = "Alive";
+	--TODO: L.SPAWNED = "Spawned";
+	--TODO: L.LAYER = "Layer";
+	--TODO: L.BINDING = "Binding";
+	--TODO: L.BONUS_ID = "Bonus ID";
+	--TODO: L.CONDUIT_ID = "Conduit ID";
+	--TODO: L.DISPLAY_ID = "Display ID";
+	--TODO: L.PET_BATTLES = "Pet Battles";
+	--TODO: L.EVENT_ID = "Event ID";
+	--TODO: L.ICON_PATH = "Icon Path";
+	--TODO: L.ITEM_LEVEL = "iLvl";
+	--TODO: L.ITEM_STRING = "Item String";
+	--TODO: L.MOD_ID = "Mod ID";
+	--TODO: L.OBJECT_TYPE = "Object Type";
+	L.OBJECTIVES = "Цели";
+	L.QUEST_GIVERS = "Квестодатели";
+	--TODO: L.QUEST_ITEMS = "Quest Items";
+	--TODO: L.RUNEFORGE_POWER_ID = "Runeforge Power ID";
+
+-- Big new chunk from AllTheThings.lua
 	L.TRACKING_PROGRESS = "Отслеживание выполнения";
 	L.COLLECTED_STRING = " Собрано";
 	L.PROVIDERS = "Начинает";
@@ -45,7 +77,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.NO_COORDINATES_FORMAT = "Нет координат для %s";
 	L.TOM_TOM_NOT_FOUND = "Нужен TomTom, чтобы ставить Указатели.";
 	L.FLIGHT_PATHS = "Пути Полётов";
-	L.KNOWN_BY = "Изучено на %s";
 	L.REQUIRES = "Требуется";
 	L.RACE_LOCKED = "Ограничено Расой";
 	L.PLEASE_REPORT_MESSAGE = "Пожалуйста, сообщите об этом на Discord-сервере ATT в канале #retail-errors! Спасибо!";
@@ -110,13 +141,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.MAXIMUM_STANDING_WITH_FACTION = "Требуется отношение менее, чем %s с %s.";
 	L.MIN_MAX_STANDING_WITH_FACTION = "Требуется отношение между %s и %s с %s.";
 
-	L.ADDED_WITH_PATCH = "Добавлено в патче";
-	L.REMOVED_WITH_PATCH = "Убрано в патче";
-	--TODO: L.ALIVE = "Alive";
-	--TODO: L.SPAWNED = "Spawned";
-	L.OBJECT_TYPE = "Тип Объекта";
-	L.OBJECTIVES = "Цели";
-	L.QUEST_GIVERS = "Квестодатели";
 	L.DURING_WQ_ONLY = "Может быть выполнено, когда локальное задание активно.";
 	L.COMPLETED_DAILY = "Может быть выполнено ежедневно.";
 	L.COMPLETED_WEEKLY = "Может быть выполнено еженедельно.";
@@ -228,10 +252,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.QUEST_LOOP = "Скорее всего ATT вырвался из цепочки зацикленных заданий.";
 	L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Задание '%s' %s не позволит собрать Хлебную Кроху '%s' %s";
 	L.QUEST_OBJECTIVE_INVALID = "Недействительная Цель Задания";
-	L.REFRESHING_COLLECTION = "Обновление коллекции...";
-	L.DONE_REFRESHING = "Коллекция обновлена.";
 	L.ADHOC_UNIQUE_COLLECTED_INFO = "Этот Предмет сломан в ATT из-за отсутствующей информации от Blizzard. Можно поправить, если вручную обновить коллекцию (Shift+Клик на окне ATT).";
-	L.AVAILABILITY = "Доступность";
 	L.REQUIRES_PVP = "|CFF00FFDEЭта Штучка требует участия в ПвП или ПвП валюту.|r";
 	L.REQUIRES_PETBATTLES = "|CFF00FFDEЭта Штучка требует игру с Боевыми Питомцами.|r";
 	L.REPORT_INACCURATE_QUEST = "Неверная Информация о Задании! (Нажмите для Отчёта)";
@@ -269,8 +290,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.QUEST_ROW_INSTRUCTIONS = "Правый клик - Открыть Цепочку Заданий";
 	L.SYM_ROW_INFORMATION = "Правый клик - Показать дополнительный контент из других источников";
 	L.QUEST_ONCE_PER_ACCOUNT = "Один-Раз-На-Аккаунт Задание";
-	L.COMPLETED_BY = "Выполнено На: %s";
-	L.OWNED_BY = "Имеется на %s";
 
 -- Settings.lua
 	L.AFTER_REFRESH = "После Обновления";
@@ -414,10 +433,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.ADDED_BACK_WITH_PATCH_FORMAT = "Добавлено снова в %s";
 		L.WAS_ADDED_BACK_WITH_PATCH_FORMAT = "Добавлено снова в %s";
 		L.REMOVED_WITH_PATCH_FORMAT = "Удалено в %s";
-
-	-- Filter Text
-		L.CREATURES_COUNT = "[%s Существ]";
-		L.CREATURES_LIST = "Список Существ";
 
 	-- Artifact Relic Completion
 		--TODO: L.ARTIFACT_RELIC_CACHE = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";

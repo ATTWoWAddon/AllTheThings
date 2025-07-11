@@ -30,8 +30,40 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	--TODO: L.TRACKING_PROGRESS = "Tracking Progress";
 	--TODO: L.COLLECTION_PROGRESS = "Collection Progress";
 
--- Big new chunk from AllTheThings.lua
+	-- Settings
+	--TODO: L.DATA_TYPE_NOT_SUPPORTED = "This data type is not supported at this time.";
+	--TODO: L.OPEN_MINILIST_FOR = "Open mini list for ";
+	L.REFRESHING_COLLECTION = "刷新收藏…";
+	L.DONE_REFRESHING = "刷新收藏完成。";
+	L.ADDED_WITH_PATCH = "随补丁添加";
+	L.REMOVED_WITH_PATCH = "随补丁移除";
+	L.AVAILABILITY = "可用性";
+	L.CREATURES_COUNT = "[%s 生物]";
+	L.CREATURES_LIST = "生物列表";
 	L.PROGRESS = "进度";
+	L.COMPLETED_BY = "完成：%s";
+	L.KNOWN_BY = "已知 %s";
+	L.OWNED_BY = "拥有者 %s";
+	L.ALIVE = "存活";
+	L.SPAWNED = "已生成";
+	--TODO: L.LAYER = "Layer";
+	--TODO: L.BINDING = "Binding";
+	--TODO: L.BONUS_ID = "Bonus ID";
+	--TODO: L.CONDUIT_ID = "Conduit ID";
+	--TODO: L.DISPLAY_ID = "Display ID";
+	--TODO: L.PET_BATTLES = "Pet Battles";
+	--TODO: L.EVENT_ID = "Event ID";
+	--TODO: L.ICON_PATH = "Icon Path";
+	L.ITEM_LEVEL = "物品等级";
+	--TODO: L.ITEM_STRING = "Item String";
+	--TODO: L.MOD_ID = "Mod ID";
+	L.OBJECT_TYPE = "目标类型";
+	L.OBJECTIVES = "目标";
+	L.QUEST_GIVERS = "任务给予者";
+	--TODO: L.QUEST_ITEMS = "Quest Items";
+	--TODO: L.RUNEFORGE_POWER_ID = "Runeforge Power ID";
+
+-- Big new chunk from AllTheThings.lua
 	L.TRACKING_PROGRESS = "追踪进度";
 	L.COLLECTED_STRING = " 已收藏";
 	L.PROVIDERS = "供应商";
@@ -45,7 +77,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.NO_COORDINATES_FORMAT = "%s 没有已知坐标";
 	L.TOM_TOM_NOT_FOUND = "必须安装 TomTom 才能绘制坐标。";
 	L.FLIGHT_PATHS = "飞行路线";
-	L.KNOWN_BY = "已知 %s";
 	L.REQUIRES = "需要";
 	L.RACE_LOCKED = "种族锁定";
 	L.PLEASE_REPORT_MESSAGE = "请把错误报告给 ATT Discord 的 #retail-errors！谢谢！";
@@ -108,13 +139,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.MAXIMUM_STANDING_WITH_FACTION = "最高阵营声望等级 %s 和 %s。";
 	L.MIN_MAX_STANDING_WITH_FACTION = "阵营声望等级在 %s 與 %s 之间，和 %s。";
 
-	L.ADDED_WITH_PATCH = "随补丁添加";
-	L.REMOVED_WITH_PATCH = "随补丁移除";
-	L.ALIVE = "存活";
-	L.SPAWNED = "已生成";
-	L.OBJECT_TYPE = "目标类型";
-	L.OBJECTIVES = "目标";
-	L.QUEST_GIVERS = "任务给予者";
 	L.DURING_WQ_ONLY = "可以在世界任务激活时完成";
 	L.COMPLETED_DAILY = "可以每天完成";
 	L.COMPLETED_WEEKLY = "可以每周完成";
@@ -226,10 +250,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.QUEST_LOOP = "可能刚刚从无限源任务循环中爆发出来。";
 	L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "任务 '%s' %s 将阻止收藏无关紧要的任务 '%s' %s";
 	L.QUEST_OBJECTIVE_INVALID = "无效的任务目标";
-	L.REFRESHING_COLLECTION = "刷新收藏…";
-	L.DONE_REFRESHING = "刷新收藏完成。";
 	L.ADHOC_UNIQUE_COLLECTED_INFO = "此物品是唯一收藏但由于缺少暴雪 API 信息而未能检测到。\n\n将在下次强制刷新后修复。";
-	L.AVAILABILITY = "可用性";
 	L.REQUIRES_PVP = "|CFF00FFDE需要 PvP 活动或货币|r";
 	L.REQUIRES_PETBATTLES = "|CFF00FFDE需要宠物对战|r";
 	L.REQUIRES_SKYRIDING = "|CFF00FFDE"..(SPELL_FAILED_CUSTOM_ERROR_1029 or "需要驭空术").."|r";
@@ -270,8 +291,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.QUEST_ROW_INSTRUCTIONS = "右击查看任何任务链要求";
 	L.SYM_ROW_INFORMATION = "右键单击以查看来自其他位置的其它内容";
 	L.QUEST_ONCE_PER_ACCOUNT = "帐号一次性任务";
-	L.COMPLETED_BY = "完成：%s";
-	L.OWNED_BY = "拥有者 %s";
 
 -- Settings.lua
 	L.AFTER_REFRESH = "刷新后";
@@ -418,8 +437,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.ARTIFACT_ID = "神器 ID";
 		L.AZERITE_ESSENCE_ID = "艾泽里特精华 ID";
 		L.CREATURE_ID = "生物 ID";
-		L.CREATURES_COUNT = "[%s 生物]";
-		L.CREATURES_LIST = "生物列表";
 		L.CURRENCY_ID = "货币 ID";
 		L.DIFFICULTY_ID = "难度 ID";
 		L.ENCOUNTER_ID = "首领战斗 ID";
@@ -445,7 +462,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.TITLE_ID = "头衔 ID";
 		L.TOY_ID = "玩具 ID";
 		L.VISUAL_ID = "外观 ID";
-		L.ITEM_LEVEL = "物品等级";
 
 	-- Artifact Relic Completion
 		L.ARTIFACT_RELIC_CACHE = "打开所有神器武器的神器用户界面以缓存这是否是升级。这对于确定您是否可以将此物品交易给小伙伴很有用。 ";

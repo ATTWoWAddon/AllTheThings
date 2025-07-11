@@ -30,8 +30,40 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.TRACKING_PROGRESS = "Seguimiento del progreso";
 	L.COLLECTION_PROGRESS = "Progreso de la colección";
 
--- Big new chunk from AllTheThings.lua
+	-- Settings
+	L.DATA_TYPE_NOT_SUPPORTED = "Este tipo de datos no se admite en este momento.";
+	L.OPEN_MINILIST_FOR = "Abrir Mini lista para";
+	L.REFRESHING_COLLECTION = "Refrescando colección...";
+	L.DONE_REFRESHING = "Refresco de colección acabado.";
+	L.ADDED_WITH_PATCH = "Agregado en el parche";
+	L.REMOVED_WITH_PATCH = "Eliminado en el Parche";
+	L.AVAILABILITY = "Disponibilidad";
+	L.CREATURES_COUNT = "[%s Criaturas]";
+	L.CREATURES_LIST = "Lista de Criaturas";
 	L.PROGRESS = "Progreso";
+	L.COMPLETED_BY = "Completado por: %s";
+	L.KNOWN_BY = "Conocido por %s";
+	L.OWNED_BY = "Poseído por %s";
+	L.ALIVE = "Vivo";
+	L.SPAWNED = "Hace aparición";
+	L.LAYER = "Capa";
+	L.BINDING = "Ligado";
+	L.BONUS_ID = "Bonus ID";
+	L.CONDUIT_ID = "Conducto ID";
+	L.DISPLAY_ID = "Mostrar ID";
+	L.PET_BATTLES = "Duelo de mascotas";
+	L.EVENT_ID = "Evento ID";
+	L.ICON_PATH = "Icono de ruta";
+	L.ITEM_LEVEL = "iLvl (Nivel promedio de objetos)";
+	L.ITEM_STRING = "Cadena de texto de objetos";
+	L.MOD_ID = "Mod ID";
+	L.OBJECT_TYPE = "Tipo de objeto";
+	L.OBJECTIVES = "Objetivos";
+	L.QUEST_GIVERS = "Asignadores de misiones";
+	L.QUEST_ITEMS = "Objetos de misión";
+	L.RUNEFORGE_POWER_ID = "Poder de forja de runas ID";
+
+-- Big new chunk from AllTheThings.lua
 	L.TRACKING_PROGRESS = "Rastreando progreso";
 	L.COLLECTED_STRING = " Recolectado";
 	L.PROVIDERS = "Proveedor(es)";
@@ -45,7 +77,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.NO_COORDINATES_FORMAT = "No hay coordenadas conocidas para %s";
 	L.TOM_TOM_NOT_FOUND = "Debe tener instalado TomTom para poder seguir coordenadas.";
 	L.FLIGHT_PATHS = "Rutas de vuelo";
-	L.KNOWN_BY = "Conocido por %s";
 	L.REQUIRES = "Requiere";
 	L.RACE_LOCKED = "Exclusivo de raza/facción";
 	L.PLEASE_REPORT_MESSAGE = "¡Por favor, reporte esto al Discord de ATT en #retail-errors! ¡gracias!";
@@ -112,12 +143,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.MAXIMUM_STANDING_WITH_FACTION = "Requiere un nivel menor de %s con %s.";
 	L.MIN_MAX_STANDING_WITH_FACTION = "Requiere un nivel entre %s y %s con %s.";
 
-	L.ADDED_WITH_PATCH = "Agregado en el parche";
-	L.REMOVED_WITH_PATCH = "Eliminado en el Parche";
-	L.ALIVE = "Vivo";
-	L.SPAWNED = "Hace aparición";
-	L.OBJECT_TYPE = "Tipo de objeto";
-	L.OBJECTIVES = "Objetivos";
 	L.QUEST_GIVERS = "Asignadores de misiones";
 	L.DURING_WQ_ONLY = "Esto se puede completar cuando la misión de mundo está activa.";
 	L.COMPLETED_DAILY = "Esto se puede completar diariamente.";
@@ -230,10 +255,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.QUEST_LOOP = "Seguramente se ha salido de un bucle infinito de fuentes de misión.";
 	L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "La misión '%s' %s evitará que puedas completar la cadena de misiones '%s' %s";
 	L.QUEST_OBJECTIVE_INVALID = "Objetivo de misión inválido";
-	L.REFRESHING_COLLECTION = "Refrescando colección...";
-	L.DONE_REFRESHING = "Refresco de colección acabado.";
 	L.ADHOC_UNIQUE_COLLECTED_INFO = "Este objeto es Único-Coleccionado pero no se pudo detectar por falta de información de la API de Blizzard.\n\nSe arreglará después de un Refresco Forzado.";
-	L.AVAILABILITY = "Disponibilidad";
 	L.REQUIRES_PVP = "|CFF00FFDEEsta cosa requiere actividades Jugador contra Jugador o una divisa relacionada con esas actividades.|r";
 	L.REQUIRES_PETBATTLES = "|CFF00FFDEEsta cosa requiere duelos de mascota.|r";
 	L.REPORT_INACCURATE_QUEST = "Información de misión errónea! (Clic para Reportar)";
@@ -271,8 +293,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.QUEST_ROW_INSTRUCTIONS = "Clic derecho para ver los requisitos de cualquier cadena de misiones";
 	L.SYM_ROW_INFORMATION = "Clic derecho para ver contenido adicional que su fuente está en otra zona";
 	L.QUEST_ONCE_PER_ACCOUNT = "Misión única por cuenta";
-	L.COMPLETED_BY = "Completado por: %s";
-	L.OWNED_BY = "Poseído por %s";
 
 -- Settings.lua
 	L.AFTER_REFRESH = "Después de refrescar";
@@ -414,10 +434,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.ADDED_BACK_WITH_PATCH_FORMAT = "Reañadido en %s";
 		L.WAS_ADDED_BACK_WITH_PATCH_FORMAT = "Añadido en %s";
 		L.REMOVED_WITH_PATCH_FORMAT = "Eliminado en %s";
-
-	-- Filter Text
-		L.CREATURES_COUNT = "[%s Criaturas]";
-		L.CREATURES_LIST = "Lista de Criaturas";
 
 	-- Artifact Relic Completion
 		L.ARTIFACT_RELIC_CACHE = "Abre la interfaz de Armas de Artefacto para cargar si esto es una mejora o no. Es útil para determinar si puedes comerciar este objeto a un Twink o no.";
