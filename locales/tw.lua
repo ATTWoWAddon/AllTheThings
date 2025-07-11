@@ -7,12 +7,28 @@ local L = app.L;
 local GetSpellName = app.WOWAPI.GetSpellName;
 
 -- General Text
-	TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
-	SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
+	L.TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
+	L.SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
 	L.DESCRIPTION = "\"你愚昧地尋求自我毀滅，大膽地無視了那些超越你理解的力量。你拼盡全力入侵收藏者的領域，而現在，唯一的出路只剩下 — 踏上那孤獨的詛咒之路\"";
 	L.THINGS_UNTIL = " 事物到 ";
 	L.THING_UNTIL = " 事物到 ";
 	L.YOU_DID_IT = "你做到了！";
+
+-- Social Module
+	L.NEW_VERSION_AVAILABLE = "%s 已有更新的版本。請更新插件 %s。";
+	L.NEW_VERSION_FLAVORS = {
+		--TODO: "AllTheThings hungers.",
+		"要不我們給希爾瓦娜斯另一把火炬",
+		"雅立史卓莎很擔心你",
+		"無敵下次|cffffaaaa|肯定|r會掉落",
+		"這只是一個挫折",
+		--TODO:	", Yes Chef!",
+		--TODO:	"and Crieve will help a turtle to make it to the water.",
+		"艾澤拉斯的勇士",
+	};
+	L.SOCIAL_PROGRESS = "社交進度";
+	--TODO: L.TRACKING_PROGRESS = "Tracking Progress";
+	--TODO: L.COLLECTION_PROGRESS = "Collection Progress";
 
 -- Big new chunk from AllTheThings.lua
 	L.PROGRESS = "進度";
@@ -255,19 +271,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.QUEST_ONCE_PER_ACCOUNT = "帳號一次性任務";
 	L.COMPLETED_BY = "完成：%s";
 	L.OWNED_BY = "擁有者 %s";
-
--- Social Module
-	L.NEW_VERSION_AVAILABLE = "%s 已有更新的版本。請更新插件 %s。";
-	L.NEW_VERSION_FLAVORS = {
-		"要不我們給希爾瓦娜斯另一把火炬",
-		"雅立史卓莎很擔心你",
-		"無敵下次|cffffaaaa|肯定|r會掉落",
-		"這只是一個挫折",
-		"是時候降低你的百分比了",
-		"一隻海龜成功入水",
-		"艾澤拉斯的勇士",
-	};
-	L.SOCIAL_PROGRESS = "社交進度";
 
 -- Settings.lua
 	L.AFTER_REFRESH = "刷新後";

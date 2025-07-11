@@ -7,12 +7,28 @@ local L = app.L;
 local GetSpellName = app.WOWAPI.GetSpellName;
 
 -- General Text
-	TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
-	SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
+	L.TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
+	L.SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
 	L.DESCRIPTION = "\"Sottement, vous avez cherché votre propre perte. Effrontément, vous avez ignoré des pouvoirs au-delà de votre compréhension. Vous vous êtes battus pour envahir le royaume du Collectionneur. Maintenant, il n’y a plus qu’une seule issue : emprunter le chemin solitaire... des damnés.\"";
 	--TODO: L.THINGS_UNTIL = " THINGS UNTIL ";
 	--TODO: L.THING_UNTIL = " THING UNTIL ";
 	L.YOU_DID_IT = "VOUS AVEZ RÉUSSI !";
+
+	-- Social Module
+	--TODO: L.NEW_VERSION_AVAILABLE = "A newer version of %s is available. Please update the AddOn %s";
+	--TODO: L.NEW_VERSION_FLAVORS = {
+	--TODO: 	"AllTheThings hungers.",
+	--TODO: 	"or Sylvanas might get another lighter.",
+	--TODO: 	"as Alexstrasza is worried about you.",
+	--TODO: 	"and Invincible will drop |cffffaaaafor sure|r next time.",
+	--TODO: 	"this was merely a setback.",
+	--TODO: 	", Yes Chef!",
+	--TODO: 	"and Crieve will help a turtle to make it to the water.",
+	--TODO: 	"CHAMPYUUN, DE AZURIITE.",
+	--TODO: };
+	--TODO: L.SOCIAL_PROGRESS = "Social Progress";
+	--TODO: L.TRACKING_PROGRESS = "Tracking Progress";
+	--TODO: L.COLLECTION_PROGRESS = "Collection Progress";
 
 -- Big new chunk from AllTheThings.lua
 	L.PROGRESS = "Progression";
@@ -254,19 +270,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	--TODO: L.QUEST_ONCE_PER_ACCOUNT = "Once-Per-Account Quest";
 	L.COMPLETED_BY = "Complété par : %s";
 	--TODO: L.OWNED_BY = "Owned by %s";
-
--- Social Module
-	--TODO: L.NEW_VERSION_AVAILABLE = "A newer version of %s is available. Please update the AddOn, %s.";
-	--TODO: L.NEW_VERSION_FLAVORS = {
-	-- 	"or we'll give Sylvanas another lighter",
-	-- 	"Alexstrasza is worried about you",
-	-- 	"and Invincible will drop |cffffaaaafor sure|r next time",
-	-- 	"this was merely a setback",
-	-- 	"time to drop your % down",
-	-- 	"and a turtle will make it to the water",
-	-- 	"CHAMPYUUN, DE AZURIITE",
-	-- };
-	--TODO: L.SOCIAL_PROGRESS = "Social Progress";
 
 -- Settings.lua
 	L.AFTER_REFRESH = "Après l’actualisation";

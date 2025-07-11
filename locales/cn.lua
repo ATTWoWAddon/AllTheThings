@@ -7,12 +7,28 @@ local L = app.L;
 local GetSpellName = app.WOWAPI.GetSpellName;
 
 -- General Text
-	TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
-	SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
+	L.TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
+	L.SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
 	L.DESCRIPTION = "“你愚蠢地寻求自己的终结，厚颜无耻地无视了你无法理解的力量。你入侵了收藏者的领域并为此努力。现在只有一条路可走了——这条孤独的路……该死的路。”";
 	L.THINGS_UNTIL = " 事物到 ";
 	L.THING_UNTIL = " 事物到 ";
 	L.YOU_DID_IT = "你做到了！";
+
+-- Social Module
+	L.NEW_VERSION_AVAILABLE = "%s 的新版本发布了。去更新插件，%s";
+	L.NEW_VERSION_FLAVORS = {
+		--TODO: "AllTheThings hungers.",
+		"不然希尔瓦娜斯要拿到另一个打火机了。",
+		"阿莱克丝塔萨很担心你。",
+		"下次|cffffaaaa一定|r出无敌！",
+		"这只是一个小挫折。",
+		"是，大厨！",
+		--TODO: "and Crieve will help a turtle to make it to the water.",
+		"艾泽拉斯的勇士。",
+	};
+	L.SOCIAL_PROGRESS = "社交进度";
+	--TODO: L.TRACKING_PROGRESS = "Tracking Progress";
+	--TODO: L.COLLECTION_PROGRESS = "Collection Progress";
 
 -- Big new chunk from AllTheThings.lua
 	L.PROGRESS = "进度";
@@ -256,19 +272,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.QUEST_ONCE_PER_ACCOUNT = "帐号一次性任务";
 	L.COMPLETED_BY = "完成：%s";
 	L.OWNED_BY = "拥有者 %s";
-
--- Social Module
-	L.NEW_VERSION_AVAILABLE = "%s 的新版本发布了。去更新插件，%s";
-	L.NEW_VERSION_FLAVORS = {
-		"不然希尔瓦娜斯要拿到另一个打火机了。",
-		"阿莱克丝塔萨很担心你。",
-		"下次|cffffaaaa一定|r出无敌！",
-		"这只是一个小挫折。",
-		"是，大厨！",
-		"帮助海龟成功入水。",
-		"艾泽拉斯的勇士。",
-	};
-	L.SOCIAL_PROGRESS = "社交进度";
 
 -- Settings.lua
 	L.AFTER_REFRESH = "刷新后";

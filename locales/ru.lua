@@ -7,12 +7,28 @@ local L = app.L;
 local GetSpellName = app.WOWAPI.GetSpellName;
 
 -- General Text
-	TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
-	SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
+	L.TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
+	L.SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
 	L.DESCRIPTION = "\"Глупцы! Вы сами нашли свою погибель! Вам никогда не понять, сколь велика сила, потревоженная вами.  Вы сражались отчаянно, чтобы проникнуть в царство Жнеца. Теперь перед вами лежит лишь один путь – путь проклятых.\"";
 	L.THINGS_UNTIL = " ШТУЧЕК ДО ";
 	L.THING_UNTIL = " ШТУЧКА ДО ";
 	L.YOU_DID_IT = "ВЫ СДЕЛАЛИ ЭТО!";
+
+-- Social Module
+	L.NEW_VERSION_AVAILABLE = "Доступна новая версия %s. Пожалуйста, обновите Аддон, %s.";
+	L.NEW_VERSION_FLAVORS = {
+		--TODO: "AllTheThings hungers.",
+		"или мы дадим Сильване ещё одну зажигалку",
+		"Алекстраза беспокоится о Вас",
+		"и Непобедимый |cffffaaaaточно|r дропнет в следующий раз",
+		"это была всего лишь мелкая помеха",
+		--TODO:	", Yes Chef!",
+		--TODO:	"and Crieve will help a turtle to make it to the water.",
+		--TODO:	"CHAMPYUUN, DE AZURIITE.",
+	};
+	L.SOCIAL_PROGRESS = "Социальный Прогресс";
+	--TODO: L.TRACKING_PROGRESS = "Tracking Progress";
+	--TODO: L.COLLECTION_PROGRESS = "Collection Progress";
 
 -- Big new chunk from AllTheThings.lua
 	L.PROGRESS = "Прогресс";
@@ -255,18 +271,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.QUEST_ONCE_PER_ACCOUNT = "Один-Раз-На-Аккаунт Задание";
 	L.COMPLETED_BY = "Выполнено На: %s";
 	L.OWNED_BY = "Имеется на %s";
-
--- Social Module
-	L.NEW_VERSION_AVAILABLE = "Доступна новая версия %s. Пожалуйста, обновите Аддон, %s.";
-	L.NEW_VERSION_FLAVORS = {
-		"или мы дадим Сильване ещё одну зажигалку",
-		"Алекстраза беспокоится о Вас",
-		"и Непобедимый |cffffaaaaточно|r дропнет в следующий раз",
-		"это была всего лишь мелкая помеха",
-		"время понизить Ваш %",
-		"и черепаха доберётся до воды",
-	};
-	L.SOCIAL_PROGRESS = "Социальный Прогресс";
 
 -- Settings.lua
 	L.AFTER_REFRESH = "После Обновления";

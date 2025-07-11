@@ -7,12 +7,28 @@ local L = app.L;
 local GetSpellName = app.WOWAPI.GetSpellName;
 
 -- General Text
-	TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
-	SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
+	L.TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
+	L.SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
 	L.DESCRIPTION = "\"Insensatamente has buscado tu propia muerte. Descaradamente has ignorado poderes que escapan a tu comprensión. Has luchado con ahínco para invadir el reino del Coleccionista. Ahora solo queda una salida: recorrer el solitario camino... de los condenados.\"";
 	L.THINGS_UNTIL = " COSAS HASTA ";
 	L.THING_UNTIL = " COSAS HASTA ";
 	L.YOU_DID_IT = "¡LO LOGRASTE! ";
+
+-- Social Module
+	L.NEW_VERSION_AVAILABLE = "Hay una nueva versión de %s disponible. Por favor actualiza el AddOn, %s.";
+	L.NEW_VERSION_FLAVORS = {
+		"AllTheThings tiene hambre.",
+		"o le daremos otro mechero a Sylvanas",
+	 	"Alexstrasza está preocupada por ti",
+	 	"e Invencible te caerá |cffffaaaasegurísimo|r la próxima vez",
+	 	"fue solo un mero contratiempo",
+		", Si, Chef"
+	 	"y Crieve ayudará a una tortuga a llegar al agua.",
+	 	"ADALIIID, LA AZERITAAA",
+	};
+	L.SOCIAL_PROGRESS = "Progreso social";
+	L.TRACKING_PROGRESS = "Seguimiento del progreso";
+	L.COLLECTION_PROGRESS = "Progreso de la colección";
 
 -- Big new chunk from AllTheThings.lua
 	L.PROGRESS = "Progreso";
@@ -257,19 +273,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.QUEST_ONCE_PER_ACCOUNT = "Misión única por cuenta";
 	L.COMPLETED_BY = "Completado por: %s";
 	L.OWNED_BY = "Poseído por %s";
-
--- Social Module
-	L.NEW_VERSION_AVAILABLE = "Hay una nueva versión de %s disponible. Por favor actualiza el AddOn, %s.";
-	L.NEW_VERSION_FLAVORS = {
-		"o le daremos otro mechero a Sylvanas",
-	 	"Alexstrasza está preocupada por ti",
-	 	"e Invencible te caerá |cffffaaaasegurísimo|r la próxima vez",
-	 	"fue solo un mero contratiempo",
-	 	"Es hora de bajar tu porcentaje",
-	 	"y una tortuga va a llegar al agua",
-	 	"ADALIIID, LA AZERITAAA",
-	};
-	L.SOCIAL_PROGRESS = "Progreso social";
 
 -- Settings.lua
 	L.AFTER_REFRESH = "Después de refrescar";
