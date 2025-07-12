@@ -7,13 +7,63 @@ local L = app.L;
 local GetSpellName = app.WOWAPI.GetSpellName;
 
 -- General Text
+	L.TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
+	L.SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
 	L.DESCRIPTION = "\"你愚昧地尋求自我毀滅，大膽地無視了那些超越你理解的力量。你拼盡全力入侵收藏者的領域，而現在，唯一的出路只剩下 — 踏上那孤獨的詛咒之路\"";
 	L.THINGS_UNTIL = " 事物到 ";
 	L.THING_UNTIL = " 事物到 ";
 	L.YOU_DID_IT = "你做到了！";
 
--- Big new chunk from AllTheThings.lua
+-- Social Module
+	L.NEW_VERSION_AVAILABLE = "%s 已有更新的版本。請更新插件 %s。";
+	L.NEW_VERSION_FLAVORS = {
+		--TODO: "AllTheThings hungers.",
+		"要不我們給希爾瓦娜斯另一把火炬",
+		"雅立史卓莎很擔心你",
+		"無敵下次|cffffaaaa|肯定|r會掉落",
+		"這只是一個挫折",
+		--TODO:	", Yes Chef!",
+		--TODO:	"and Crieve will help a turtle to make it to the water.",
+		"艾澤拉斯的勇士",
+	};
+	L.SOCIAL_PROGRESS = "社交進度";
+	--TODO: L.TRACKING_PROGRESS = "Tracking Progress";
+	--TODO: L.COLLECTION_PROGRESS = "Collection Progress";
+	
+	-- Settings
+	--TODO: L.DATA_TYPE_NOT_SUPPORTED = "This data type is not supported at this time.";
+	--TODO: L.OPEN_MINILIST_FOR = "Open mini list for ";
+	L.REFRESHING_COLLECTION = "刷新收藏…";
+	L.DONE_REFRESHING = "刷新收藏完成。";
+	L.ADDED_WITH_PATCH = "隨更新加入";
+	L.REMOVED_WITH_PATCH = "隨更新移除";
+	L.AVAILABILITY = "可用性";
+	L.CREATURES_COUNT = "[%s 生物]";
+	L.CREATURES_LIST = "生物列表";
 	L.PROGRESS = "進度";
+	L.COMPLETED_BY = "完成：%s";
+	L.KNOWN_BY = "已知 %s";	--TODO: check
+	L.OWNED_BY = "擁有者 %s";
+	L.ALIVE = "存活";
+	L.SPAWNED = "已生成";
+	--TODO: L.LAYER = "Layer";
+	--TODO: L.BINDING = "Binding";
+	--TODO: L.BONUS_ID = "Bonus ID";
+	--TODO: L.CONDUIT_ID = "Conduit ID";
+	--TODO: L.DISPLAY_ID = "Display ID";
+	--TODO: L.PET_BATTLES = "Pet Battles";
+	--TODO: L.EVENT_ID = "Event ID";
+	--TODO: L.ICON_PATH = "Icon Path";
+	--TODO: L.ITEM_LEVEL = "iLvl";
+	--TODO: L.ITEM_STRING = "Item String";
+	--TODO: L.MOD_ID = "Mod ID";
+	L.OBJECT_TYPE = "目標類型";
+	L.OBJECTIVES
+	L.QUEST_GIVERS = "任務給予者";
+	--TODO: L.QUEST_ITEMS = "Quest Items";
+	--TODO: L.RUNEFORGE_POWER_ID = "Runeforge Power ID";
+
+-- Big new chunk from AllTheThings.lua
 	L.TRACKING_PROGRESS = "追蹤進度";
 	L.COLLECTED_STRING = " 已收藏";
 	L.PROVIDERS = "供應商";
@@ -27,7 +77,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.NO_COORDINATES_FORMAT = "%s 沒有已知座標";
 	L.TOM_TOM_NOT_FOUND = "必須安裝 TomTom 才能繪製座標。";
 	L.FLIGHT_PATHS = "飛行路線";
-	L.KNOWN_BY = "已知 %s";	--TODO: check
 	L.REQUIRES = "需要";
 	L.RACE_LOCKED = "種族限定";
 	L.PLEASE_REPORT_MESSAGE = "請把錯誤回報給 ATT Discord 的 #retail-errors！謝謝！";
@@ -90,13 +139,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.MAXIMUM_STANDING_WITH_FACTION = "最高陣營聲望等級 %s 和 %s。";
 	L.MIN_MAX_STANDING_WITH_FACTION = "陣營聲望等級在 %s 與 %s 之間，和 %s。";
 
-	L.ADDED_WITH_PATCH = "隨更新加入";
-	L.REMOVED_WITH_PATCH = "隨更新移除";
-	L.ALIVE = "存活";
-	L.SPAWNED = "已生成";
-	L.OBJECT_TYPE = "目標類型";
-	L.OBJECTIVES = "目標";
-	L.QUEST_GIVERS = "任務給予者";
 	L.DURING_WQ_ONLY = "可以在世界任務啟動時完成";
 	L.COMPLETED_DAILY = "可以每天完成";
 	L.COMPLETED_WEEKLY = "可以每周完成";
@@ -208,10 +250,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.QUEST_LOOP = "可能剛剛從無限源任務循環中爆發出來。";
 	L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "任務 '%s' %s 將阻止收藏無關緊要的任務 '%s' %s";
 	L.QUEST_OBJECTIVE_INVALID = "無效的任務目標";
-	L.REFRESHING_COLLECTION = "刷新收藏…";
-	L.DONE_REFRESHING = "刷新收藏完成。";
 	L.ADHOC_UNIQUE_COLLECTED_INFO = "此物品是唯一收藏但由於缺少暴雪 API 資訊而未能檢測到。\n\n將在下次強制刷新後修復。";
-	L.AVAILABILITY = "可用性";
 	L.REQUIRES_PVP = "|CFF00FFDE需要 PvP 活動或貨幣|r";
 	L.REQUIRES_PETBATTLES = "|CFF00FFDE需要寵物對戰|r";
 	L.REPORT_INACCURATE_QUEST = "錯誤的任務資訊！（點擊回報）";
@@ -251,21 +290,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.QUEST_ROW_INSTRUCTIONS = "右擊查看任何任務鏈要求";
 	L.SYM_ROW_INFORMATION = "點擊右鍵以查看來自其他位置的其它內容";
 	L.QUEST_ONCE_PER_ACCOUNT = "帳號一次性任務";
-	L.COMPLETED_BY = "完成：%s";
-	L.OWNED_BY = "擁有者 %s";
-
--- Social Module
-	L.NEW_VERSION_AVAILABLE = "%s 已有更新的版本。請更新插件 %s。";
-	L.NEW_VERSION_FLAVORS = {
-		"要不我們給希爾瓦娜斯另一把火炬",
-		"雅立史卓莎很擔心你",
-		"無敵下次|cffffaaaa|肯定|r會掉落",
-		"這只是一個挫折",
-		"是時候降低你的百分比了",
-		"一隻海龜成功入水",
-		"艾澤拉斯的勇士",
-	};
-	L.SOCIAL_PROGRESS = "社交進度";
 
 -- Settings.lua
 	L.AFTER_REFRESH = "刷新後";
@@ -413,8 +437,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.ARTIFACT_ID = "神器 ID";
 		L.AZERITE_ESSENCE_ID = "艾澤拉斯精華 ID";
 		L.CREATURE_ID = "生物 ID";
-		L.CREATURES_COUNT = "[%s 生物]";
-		L.CREATURES_LIST = "生物列表";
 		L.CURRENCY_ID = "貨幣 ID";
 		L.DIFFICULTY_ID = "難度 ID";
 		L.ENCOUNTER_ID = "首領戰鬥 ID";

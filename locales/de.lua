@@ -7,13 +7,63 @@ local L = app.L;
 local GetSpellName = app.WOWAPI.GetSpellName;
 
 -- General Text
+	L.TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
+	L.SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
 	--TODO: L.DESCRIPTION = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
 	L.THINGS_UNTIL = " DINGE BIS ";
 	L.THING_UNTIL = " DING BIS ";
 	--TODO: L.YOU_DID_IT = "YOU DID IT!";
 
--- Big new chunk from AllTheThings.lua
+	-- Social Module
+	--TODO: L.NEW_VERSION_AVAILABLE = "A newer version of %s is available. Please update the AddOn %s";
+	--TODO: L.NEW_VERSION_FLAVORS = {
+	--TODO: 	"AllTheThings hungers.",
+	--TODO: 	"or Sylvanas might get another lighter.",
+	--TODO: 	"as Alexstrasza is worried about you.",
+	--TODO: 	"and Invincible will drop |cffffaaaafor sure|r next time.",
+	--TODO: 	"this was merely a setback.",
+	--TODO: 	", Yes Chef!",
+	--TODO: 	"and Crieve will help a turtle to make it to the water.",
+	--TODO: 	"CHAMPYUUN, DE AZURIITE.",
+	--TODO: };
+	--TODO: L.SOCIAL_PROGRESS = "Social Progress";
+	--TODO: L.TRACKING_PROGRESS = "Tracking Progress";
+	--TODO: L.COLLECTION_PROGRESS = "Collection Progress";
+
+	-- Settings
+	--TODO: L.DATA_TYPE_NOT_SUPPORTED = "This data type is not supported at this time.";
+	--TODO: L.OPEN_MINILIST_FOR = "Open mini list for ";
+	L.REFRESHING_COLLECTION = "Aktualisiere Sammlung...";
+	L.DONE_REFRESHING = "Aktualisierung der Sammlung erfolgreich.";
+	--TODO: L.ADDED_WITH_PATCH = "Added With Patch";
+	--TODO: L.REMOVED_WITH_PATCH = "Removed With Patch";
+	--TODO: L.AVAILABILITY = "Availability";
+	--TODO: L.CREATURES_COUNT = "[%s Creatures]";
+	--TODO: L.CREATURES_LIST = "Creatures List";
 	L.PROGRESS = "Fortschritt";
+	L.COMPLETED_BY = "Vervollständigt von: %s";
+	L.KNOWN_BY = "Bekannt durch %s";
+	--TODO: L.OWNED_BY = "Owned by %s";
+	--TODO: L.ALIVE = "Alive";
+	--TODO: L.SPAWNED = "Spawned";
+	--TODO: L.LAYER = "Layer";
+	--TODO: L.BINDING = "Binding";
+	--TODO: L.BONUS_ID = "Bonus ID";
+	--TODO: L.CONDUIT_ID = "Conduit ID";
+	--TODO: L.DISPLAY_ID = "Display ID";
+	--TODO: L.PET_BATTLES = "Pet Battles";
+	--TODO: L.EVENT_ID = "Event ID";
+	--TODO: L.ICON_PATH = "Icon Path";
+	--TODO: L.ITEM_LEVEL = "iLvl";
+	--TODO: L.ITEM_STRING = "Item String";
+	--TODO: L.MOD_ID = "Mod ID";
+	--TODO: L.OBJECT_TYPE = "Object Type";
+	--TODO: L.OBJECTIVES = "Objectives";
+	--TODO: L.QUEST_GIVERS = "Quest Givers";
+	--TODO: L.QUEST_ITEMS = "Quest Items";
+	--TODO: L.RUNEFORGE_POWER_ID = "Runeforge Power ID";
+
+-- Big new chunk from AllTheThings.lua
 	L.TRACKING_PROGRESS = "Fortschrittsverfolgung";
 	L.COLLECTED_STRING = " Gesammelt";
 	L.PROVIDERS = "Anbieter";
@@ -27,7 +77,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	--TODO: L.NO_COORDINATES_FORMAT = "No known coordinates for %s";
 	--TODO: L.TOM_TOM_NOT_FOUND = "You must have TomTom installed to plot coordinates.";
 	L.FLIGHT_PATHS = "Flugpunkte";
-	L.KNOWN_BY = "Bekannt durch %s";
 	L.REQUIRES = "Benötigt";
 	L.RACE_LOCKED = "Rasse Gesperrt";
 	L.PLEASE_REPORT_MESSAGE = "Bitte melden Sie den Fehler an das ATT Discord in #retail-errors! Danke!";
@@ -90,13 +139,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.MAXIMUM_STANDING_WITH_FACTION = "Erfordert einen niedrigeren Ruf als %s bei %s.";
 	L.MIN_MAX_STANDING_WITH_FACTION = "Erfordert einen Ruf zwischen %s und %s bei %s.";
 
-	--TODO: L.ADDED_WITH_PATCH = "Added With Patch";
-	--TODO: L.REMOVED_WITH_PATCH = "Removed With Patch";
-	--TODO: L.ALIVE = "Alive";
-	--TODO: L.SPAWNED = "Spawned";
-	--TODO: L.OBJECT_TYPE = "Object Type";
-	--TODO: L.OBJECTIVES = "Objectives";
-	--TODO: L.QUEST_GIVERS = "Quest Givers";
 	L.DURING_WQ_ONLY = "Dies kann nur abgeschlossen werden, solange die Weltquest aktiv ist.";
 	L.COMPLETED_DAILY = "Dies kann täglich abgeschlossen werden.";
 	L.COMPLETED_WEEKLY = "Dies kann wöchentlich abgeschlossen werden.";
@@ -208,10 +250,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.QUEST_LOOP = "Wahrscheinlich gerade aus einer unendlichen Quest-Quellensuchschleife ausgebrochen.";
 	L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' %s verhindert die Sammlung von Brotkrumenquests '%s' %s";
 	L.QUEST_OBJECTIVE_INVALID = "Ungültiges Questziel";
-	L.REFRESHING_COLLECTION = "Aktualisiere Sammlung...";
-	L.DONE_REFRESHING = "Aktualisierung der Sammlung erfolgreich.";
 	--TODO: L.ADHOC_UNIQUE_COLLECTED_INFO = "This Item is Unique-Collected but failed to be detected due to missing Blizzard API information.\n\nIt will be fixed after the next Force-Refresh.";
-	--TODO: L.AVAILABILITY = "Availability";
 	L.REQUIRES_PVP = "|CFF00FFDEDies erfordert Spieler gegen Spieler Aktivität oder eine Währung, die damit verbunden ist.|r";
 	L.REQUIRES_PETBATTLES = "|CFF00FFDEDies erfodert Haustierkampf.|r";
 	L.REPORT_INACCURATE_QUEST = "Falsche Quest Informationen! (Klicken um zu melden)";
@@ -249,21 +288,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.QUEST_ROW_INSTRUCTIONS = "Rechtsklicken um Questreihen Anforderungen zu sehen.";
 	--TODO: L.SYM_ROW_INFORMATION = "Right Click to see additional content which is Sourced in another location";
 	L.QUEST_ONCE_PER_ACCOUNT = "Einmalig pro Account Quest";
-	L.COMPLETED_BY = "Vervollständigt von: %s";
-	--TODO: L.OWNED_BY = "Owned by %s";
-
--- Social Module
-	--TODO: L.NEW_VERSION_AVAILABLE = "A newer version of %s is available. Please update the AddOn, %s.";
-	--TODO: L.NEW_VERSION_FLAVORS = {
-	-- 	"or we'll give Sylvanas another lighter",
-	-- 	"Alexstrasza is worried about you",
-	-- 	"and Invincible will drop |cffffaaaafor sure|r next time",
-	-- 	"this was merely a setback",
-	-- 	"time to drop your % down",
-	-- 	"and a turtle will make it to the water",
-	-- 	"CHAMPYUUN, DE AZURIITE",
-	-- };
-	--TODO: L.SOCIAL_PROGRESS = "Social Progress";
 
 -- Settings.lua
 	L.AFTER_REFRESH = "Nach Aktualisierung";
@@ -403,10 +427,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		--TODO: L.ADDED_BACK_WITH_PATCH_FORMAT = "Re-added in %s";
 		--TODO: L.WAS_ADDED_BACK_WITH_PATCH_FORMAT = "Added in %s";
 		L.REMOVED_WITH_PATCH_FORMAT = "Dies wird entfernt mit Patch %s";	--TODO: Removed in %s
-
-	-- Filter Text
-		--TODO: L.CREATURES_COUNT = "[%s Creatures]";
-		--TODO: L.CREATURES_LIST = "Creatures List";
 
 	-- Artifact Relic Completion
 		--TODO: L.ARTIFACT_RELIC_CACHE = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";
