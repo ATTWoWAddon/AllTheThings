@@ -83,6 +83,15 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.REPORT_INACCURATE_QUEST = "錯誤的任務資訊！（點擊回報）";
 	L.ITEM_GIVES_REP = "提供聲望 '";
 
+-- Event Text
+	L.ITEM_ID_ADDED = "%s (%d) 已加入收藏。";
+	L.ITEM_ID_ADDED_RANK = "%s (%d) [等級%d] 已加入收藏。";
+	L.ITEM_ID_ADDED_MISSING = "%s (%d) 已加入收藏。在資料庫中未找到，請向作者提交回報！";
+	L.ITEM_ID_ADDED_SHARED = "%s (%d) [+%d] 已加入收藏。";
+	L.ITEM_ID_ADDED_SHARED_MISSING = "%s (%d) [+%d] 已加入收藏。在資料庫中未找到，請向作者提交回報！";
+	L.ITEM_ID_REMOVED = "%s (%d) 已從收藏中移除。";
+	L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] 已從收藏中移除。";
+
 -- Big new chunk from AllTheThings.lua
 	L.TRACKING_PROGRESS = "追蹤進度";
 	L.COLLECTED_STRING = " 已收藏";
@@ -402,15 +411,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.TOGGLE_RAID_ASSISTANT = "打開/關閉團隊助手";
 		L.TOGGLE_RANDOM = "打開/關閉隨機列表";
 		L.REROLL_RANDOM = "重新生成隨機列表";
-
-	-- Event Text
-		L.ITEM_ID_ADDED = "%s (%d) 已加入收藏。";
-		L.ITEM_ID_ADDED_RANK = "%s (%d) [等級%d] 已加入收藏。";
-		L.ITEM_ID_ADDED_MISSING = "%s (%d) 已加入收藏。在資料庫中未找到，請向作者提交回報！";
-		L.ITEM_ID_ADDED_SHARED = "%s (%d) [+%d] 已加入收藏。";
-		L.ITEM_ID_ADDED_SHARED_MISSING = "%s (%d) [+%d] 已加入收藏。在資料庫中未找到，請向作者提交回報！";
-		L.ITEM_ID_REMOVED = "%s (%d) 已從收藏中移除。";
-		L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] 已從收藏中移除。";
 
 	-- Tooltip Text
 		L.DROP_RATE = "掉落率";

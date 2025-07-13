@@ -83,6 +83,15 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	--TODO: L.REPORT_INACCURATE_QUEST = "Wrong Quest Info! (Click to Report)";
 	L.ITEM_GIVES_REP = "Concede reputação com '";
 
+-- Event Text
+	--TODO: L.ITEM_ID_ADDED = "%s (%d) was added to your collection.";
+	--TODO: L.ITEM_ID_ADDED_RANK = "%s (%d) [Rank %d] was added to your collection.";
+	--TODO: L.ITEM_ID_ADDED_MISSING = "%s (%d) was added to your collection. Not found in the database. Please report to the ATT Discord!";
+	--TODO: L.ITEM_ID_ADDED_SHARED = "%s (%d) [+%d] was added to your collection.";
+	--TODO: L.ITEM_ID_ADDED_SHARED_MISSING = "%s (%d) [+%d] was added to your collection. Not found in the database. Please report to the ATT Discord!";
+	--TODO: L.ITEM_ID_REMOVED = "%s (%d) was removed from your collection.";
+	--TODO: L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] was removed from your collection.";
+
 -- Big new chunk from AllTheThings.lua
 	L.TRACKING_PROGRESS = "Rastreando Progresso";
 	L.COLLECTED_STRING = " Coletado";
@@ -404,15 +413,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		--TODO: L.TOGGLE_RAID_ASSISTANT = "Toggle ATT Raid Assistant";
 		--TODO: L.TOGGLE_RANDOM = "Toggle ATT Random";
 		--TODO: L.REROLL_RANDOM = "Reroll the Random Selection";
-
-	-- Event Text
-		--TODO: L.ITEM_ID_ADDED = "%s (%d) was added to your collection.";
-		--TODO: L.ITEM_ID_ADDED_RANK = "%s (%d) [Rank %d] was added to your collection.";
-		--TODO: L.ITEM_ID_ADDED_MISSING = "%s (%d) was added to your collection. Not found in the database. Please report to the ATT Discord!";
-		--TODO: L.ITEM_ID_ADDED_SHARED = "%s (%d) [+%d] were added to your collection.";
-		--TODO: L.ITEM_ID_ADDED_SHARED_MISSING = "%s (%d) [+%d] were added to your collection. Not found in the database. Please report to the ATT Discord!";
-		--TODO: L.ITEM_ID_REMOVED = "%s (%d) was removed from your collection.";
-		--TODO: L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] were removed from your collection.";
 
 	-- Tooltip Text
 		--TODO: L.DROP_RATE = "Drop Rate";

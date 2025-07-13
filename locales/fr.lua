@@ -83,6 +83,15 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	--TODO: L.REPORT_INACCURATE_QUEST = "Wrong Quest Info! (Click to Report)";
 	L.ITEM_GIVES_REP = "Fournit la réputation avec '";
 
+-- Event Text
+	L.ITEM_ID_ADDED = "%s (%d) a été ajouté à votre collection.";
+	L.ITEM_ID_ADDED_RANK = "%s (%d) [Rang %d] a été ajouté à votre collection.";
+	L.ITEM_ID_ADDED_MISSING = "%s (%d) a été ajouté à cotre collection. Introuvable dans la base de données. Merci de le signaler sur le serveur Discord d’ATT !";
+	L.ITEM_ID_ADDED_SHARED = "%s (%d) [+%d] ont été ajoutés à votre collection.";
+	L.ITEM_ID_ADDED_SHARED_MISSING = "%s (%d) [+%d] ont été ajoutés à votre collection. Introuvable dans la base de données. Merci de le signaler sur le serveur Discord d’ATT !";
+	L.ITEM_ID_REMOVED = "%s (%d) a été supprimé de votre collection.";
+	L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] ont été supprimés de votre collection.";
+
 -- Big new chunk from AllTheThings.lua
 	L.TRACKING_PROGRESS = "Suivi des progrès";
 	L.COLLECTED_STRING = " Collectionné";
@@ -401,15 +410,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.TOGGLE_RAID_ASSISTANT = "Afficher / masquer l’assistant de raid d’ATT";
 		L.TOGGLE_RANDOM = "Afficher / masquer ATT Aléatoire";
 		--TODO: L.REROLL_RANDOM = "Reroll the Random Selection";
-
-	-- Event Text
-		L.ITEM_ID_ADDED = "%s (%d) a été ajouté à votre collection.";
-		L.ITEM_ID_ADDED_RANK = "%s (%d) [Rang %d] a été ajouté à votre collection.";
-		L.ITEM_ID_ADDED_MISSING = "%s (%d) a été ajouté à cotre collection. Introuvable dans la base de données. Merci de le signaler sur le serveur Discord d’ATT !";
-		L.ITEM_ID_ADDED_SHARED = "%s (%d) [+%d] ont été ajoutés à votre collection.";
-		L.ITEM_ID_ADDED_SHARED_MISSING = "%s (%d) [+%d] ont été ajoutés à votre collection. Introuvable dans la base de données. Merci de le signaler sur le serveur Discord d’ATT !";
-		L.ITEM_ID_REMOVED = "%s (%d) a été supprimé de votre collection.";
-		L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] ont été supprimés de votre collection.";
 
 	-- Tooltip Text
 		L.DROP_RATE = "Taux de chance de tomber";

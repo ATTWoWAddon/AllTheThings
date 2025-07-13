@@ -83,6 +83,15 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.REPORT_INACCURATE_QUEST = "Неверная Информация о Задании! (Нажмите для Отчёта)";
 	L.ITEM_GIVES_REP = "Улучшает Репутацию с '";
 
+-- Event Text
+	L.ITEM_ID_ADDED = "%s (%d) добавлен в Вашу коллекцию.";
+	L.ITEM_ID_ADDED_RANK = "%s (%d) [Ранг %d] добавлен в Вашу коллекцию.";
+	L.ITEM_ID_ADDED_MISSING = "%s (%d) добавлен в Вашу коллекцию. Не найден в базе данных. Пожалуйста, сообщите в Discord ATT!";
+	L.ITEM_ID_ADDED_SHARED = "%s (%d) [+%d] были добавлены в Вашу коллекцию.";
+	L.ITEM_ID_ADDED_SHARED_MISSING = "%s (%d) [+%d] были добавлены в Вашу коллекцию. Не найдены в базе данных. Пожалуйста, сообщите в Discord ATT!";
+	L.ITEM_ID_REMOVED = "%s (%d) был удален из Вашей коллекции.";
+	L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] были удалены из Вашей коллекции.";
+
 -- Big new chunk from AllTheThings.lua
 	L.TRACKING_PROGRESS = "Отслеживание выполнения";
 	L.COLLECTED_STRING = " Собрано";
@@ -404,15 +413,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.TOGGLE_RAID_ASSISTANT = "Переключить Рейдового Помощника";
 		L.TOGGLE_RANDOM = "Переключить Рандомизатор";
 		L.REROLL_RANDOM = "Повторный бросок Рандомизатора";
-
-	-- Event Text
-		L.ITEM_ID_ADDED = "%s (%d) добавлен в Вашу коллекцию.";
-		L.ITEM_ID_ADDED_RANK = "%s (%d) [Ранг %d] добавлен в Вашу коллекцию.";
-		L.ITEM_ID_ADDED_MISSING = "%s (%d) добавлен в Вашу коллекцию. Не найден в базе данных. Пожалуйста, сообщите в Discord ATT!";
-		L.ITEM_ID_ADDED_SHARED = "%s (%d) [+%d] были добавлены в Вашу коллекцию.";
-		L.ITEM_ID_ADDED_SHARED_MISSING = "%s (%d) [+%d] были добавлены в Вашу коллекцию. Не найдены в базе данных. Пожалуйста, сообщите в Discord ATT!";
-		L.ITEM_ID_REMOVED = "%s (%d) был удален из Вашей коллекции.";
-		L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] были удалены из Вашей коллекции.";
 
 	-- Tooltip Text
 		L.DROP_RATE = "Шанс Выпадения";

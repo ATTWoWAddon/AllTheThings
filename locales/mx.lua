@@ -23,7 +23,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	 	"e Invencible te caerá |cffffaaaasegurísimo|r la próxima vez",
 	 	"fue solo un mero contratiempo",
 		", Si, Chef"
-	 	"y una tortuga va a llegar al agua",
+	 	"y Crieve ayudará a una tortuga a llegar al agua.",
 	 	"ADALIIID, LA AZERITAAA",
 	};
 	L.SOCIAL_PROGRESS = "Progreso social";
@@ -82,6 +82,15 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "La misión '%s' %s evitará que puedas completar la misión de exploración '%s' %s";
 	L.REPORT_INACCURATE_QUEST = "Información de misión errónea! (click para Reportar)";
 	L.ITEM_GIVES_REP = "Provee reputación con '";
+
+-- Event Text
+	L.ITEM_ID_ADDED = "%s (%d) fue añadido a tu colección.";
+	L.ITEM_ID_ADDED_RANK = "%s (%d) [Rango %d] fue añadido a tu colección.";
+	L.ITEM_ID_ADDED_MISSING = "%s (%d) fue añadido a tu colección. No encontrado en la base de datos. Por favor reportarlo al Discord de ATT!";
+	L.ITEM_ID_ADDED_SHARED = "%s (%d) [+%d] fueron añadidos a tu colección.";
+	L.ITEM_ID_ADDED_SHARED_MISSING = "%s (%d) [+%d] fueron añadidos a tu colección. No encontrado en la base de datos. Por favor reportarlo al Discord de ATT!";
+	L.ITEM_ID_REMOVED = "%s (%d) fue eliminado de tu colección.";
+	L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] fueron eliminados de tu colección.";
 
 -- Big new chunk from AllTheThings.lua
 	L.TRACKING_PROGRESS = "Rastreando progreso";
@@ -404,15 +413,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.TOGGLE_RAID_ASSISTANT = "Activar Asistente de Banda ATT";
 		L.TOGGLE_RANDOM = "Activar ATT Aleatorio";
 		L.REROLL_RANDOM = "Repetir tirada de dados de la selección aleatoria";
-
-	-- Event Text
-		L.ITEM_ID_ADDED = "%s (%d) fue añadido a tu colección.";
-		L.ITEM_ID_ADDED_RANK = "%s (%d) [Rango %d] fue añadido a tu colección.";
-		L.ITEM_ID_ADDED_MISSING = "%s (%d) fue añadido a tu colección. No encontrado en la base de datos. Por favor reportarlo al Discord de ATT!";
-		L.ITEM_ID_ADDED_SHARED = "%s (%d) [+%d] fueron añadidos a tu colección.";
-		L.ITEM_ID_ADDED_SHARED_MISSING = "%s (%d) [+%d] fueron añadidos a tu colección. No encontrado en la base de datos. Por favor reportarlo al Discord de ATT!";
-		L.ITEM_ID_REMOVED = "%s (%d) fue eliminado de tu colección.";
-		L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] fueron eliminados de tu colección.";
 
 	-- Tooltip Text
 		L.DROP_RATE = "Probabilidad de botín";
