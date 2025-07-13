@@ -92,6 +92,52 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.ITEM_ID_REMOVED = "%s (%d) 已從收藏中移除。";
 	L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] 已從收藏中移除。";
 
+-- Tooltip Text
+	L.DROP_RATE = "掉落率";
+	L.QUEST_GIVER = "任務給予者";
+	L.COORDINATES = "座標";
+	L.PLAYER_COORDINATES = "玩家座標";
+	L.EVENT_SCHEDULE = "事件時程表";
+	L.EVENT_ACTIVE = "啟動:";
+	L.EVENT_START = "開始:";
+	L.EVENT_END = "結束:";
+	L.EVENT_WHERE = "地點:";
+	L.REQUIRES_EVENT = "需要事件";
+	L.BREADCRUMBS = "無關緊要";
+	--TODO: L.MAPS = "Maps";
+	L.LOCKOUT = "鎖定";
+	--TODO: L.LOCKOUTS = "Lockouts";
+	L.RESETS = "重置";
+	L.SHARED = "共享";
+	L.SPLIT = "按難度";
+	L.REQUIRES = "需要";
+	L.REQUIRES_LEVEL = "需要等級";
+	L.LIMITED_QUANTITY = "此物品有數量限制，在商人處並非總是可見。";
+	L.ADDED_WITH_PATCH_FORMAT = "更新 %s 中加入";
+	L.ADDED_BACK_WITH_PATCH_FORMAT = "更新 %s 中加入回歸";
+	L.REMOVED_WITH_PATCH_FORMAT = "更新 %s 中被刪除";
+	L.WAS_ADDED_WITH_PATCH_FORMAT = "最新更新 %s 中加入";
+	L.WAS_ADDED_BACK_WITH_PATCH_FORMAT = "最新更新 %s 中加入回歸";
+	--TODO: L.CRITERIA_FORMAT = "|cffffff00[Criteria: %s]|r";
+
+	L.FACTION_SPECIFIC_REP = "並非所有聲望都可以在單個角色上查看。例：聯盟玩家無法看到戰歌騎手，部落玩家無法查看銀翼哨兵。";
+	L.MINUMUM_STANDING_WITH_FACTION = "最低陣營聲望等級 %s 和 %s。";
+	L.MAXIMUM_STANDING_WITH_FACTION = "最高陣營聲望等級 %s 和 %s。";
+	L.MIN_MAX_STANDING_WITH_FACTION = "陣營聲望等級在 %s 與 %s 之間，和 %s。";
+
+	L.HEIRLOOM_TEXT = "解鎖傳家寶";
+	L.HEIRLOOM_TEXT_DESC = "顯示你是否已經獲得或購買了傳家寶。";
+	L.HEIRLOOMS_UPGRADES_DESC = "這表明你是否已經將傳家寶升級到了一定的級別。\n\n安息吧…金幣。\n - Crieve";
+
+	L.LOCK_CRITERIA_LEVEL_LABEL = "玩家等級";
+	L.LOCK_CRITERIA_QUEST_LABEL = "已完成任務";
+	L.LOCK_CRITERIA_SPELL_LABEL = "已學法術/坐騎/配方";
+	L.LOCK_CRITERIA_FACTION_LABEL = "陣營聲望";
+	--TODO: L.LOCK_CRITERIA_SOURCE_LABEL = "Known Appearance";
+	--TODO: L.LOCK_CRITERIA_TOY_LABEL = "Known Toy";
+	L.LOCK_CRITERIA_FACTION_FORMAT = "%s 和 %s（當前：%s）";
+	L.TITLES_DESC = "頭銜會在你的戰隊中被追蹤，但是，你的角色必須符合某些頭銜的條件才能在該角色上使用。";
+
 -- Big new chunk from AllTheThings.lua
 	L.TRACKING_PROGRESS = "追蹤進度";
 	L.COLLECTED_STRING = " 已收藏";
@@ -99,14 +145,11 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.COLLECTION_PROGRESS = "收藏進度";
 	L.CONTAINS = "包含：";
 	L.FACTIONS = "陣營";
-	L.COORDINATES = "座標";
 	L.AND_MORE = "和 %s 更多...";	--TODO: check
 	L.AND_OTHER_SOURCES = "和 %s 其他來源...";	--TODO: check
-	L.PLAYER_COORDINATES = "玩家座標";
 	L.NO_COORDINATES_FORMAT = "%s 沒有已知座標";
 	L.TOM_TOM_NOT_FOUND = "必須安裝 TomTom 才能繪製座標。";
 	L.FLIGHT_PATHS = "飛行路線";
-	L.REQUIRES = "需要";
 	L.RACE_LOCKED = "種族限定";
 	L.NOT_AVAILABLE_IN_PL = "在個人拾取中不可用。";
 	L.MARKS_OF_HONOR_DESC = "榮耀印記必須在彈出視窗中查看才能看到所有正常的'包含'內容。\n(在聊天中輸入'/att' 然後 "..SHIFT_KEY_TEXT.."點擊連接的物品)\n\n|cFFfe040f之後購買和一起使用，重新登入和強制 ATT 刷新（按此順序）\n可能需要正確註冊所有物品。|r";
@@ -121,10 +164,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.ARTIFACT_INTRO_REWARD = "完成該神器的介紹任務後獲得。";
 	L.FLIGHT_PATHS_DESC = "當你與每個大陸上的飛行管理員交談時會快取飛行路線。\n  - Crieve";
 	L.FOLLOWERS_COLLECTION_DESC = "如果您在 ATT 中啟用此設定，則可以在整個帳號範圍內收集追隨者。\n\n必須通過 "..SHIFT_KEY_TEXT.."點擊標題手動刷新插件才能檢測到這一點。";
-	L.HEIRLOOM_TEXT = "解鎖傳家寶";
-	L.HEIRLOOM_TEXT_DESC = "顯示你是否已經獲得或購買了傳家寶。";
 	L.FAILED_ITEM_INFO = "未能獲得物品資訊。該物品可能是無效的或者可能還沒有被快取在你的伺服器上。";
-	L.HEIRLOOMS_UPGRADES_DESC = "這表明你是否已經將傳家寶升級到了一定的級別。\n\n安息吧…金幣。\n - Crieve";
 	L.MUSIC_ROLLS_DESC = "這些是按角色解鎖且目前尚未在戰隊中共享。如果暴雪有人在看，如果能把這些戰隊共享的話那就太好了。\n\n必須通過 "..SHIFT_KEY_TEXT.."點擊要檢測的標題手動刷新插件。";
 	L.MUSIC_ROLLS_DESC_2 = "\n\n必須首先通過在要塞中完成動感低音任務來解鎖要塞點唱機以便掉落此物品。\n\n自拍需要自拍神器玩具。";
 	L.OPPOSITE_FACTION_EQ = "與敵對陣營對應：";
@@ -143,7 +183,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.EXPANSION_DATA[11].lore = "地心之戰是第十個資料片。也是世界之魂戰記三部曲的開端。穿越前所未見的地下世界，那裡充滿了隱藏的奇觀和潛伏的危險，一直到蛛魔帝國的黑暗深處，那裡邪惡的虛空先驅正在聚集蛛魔力量，試圖讓艾澤拉斯屈服。";
 	L.EXPANSION_DATA[12].lore = "至暗之夜是第十一個資料片。也是世界之魂戰記的第二部份。";
 	L.EXPANSION_DATA[13].lore = "最後的泰坦是第十二個資料片。也是世界之魂戰記三部曲終章。";
-	L.TITLES_DESC = "頭銜會在你的戰隊中被追蹤，但是，你的角色必須符合某些頭銜的條件才能在該角色上使用。";
 	L.UPON_COMPLETION = "前置條件";
 	L.UPON_COMPLETION_DESC = "以上任務需要完成後才能夠完成以下的事情。";
 	L.QUEST_CHAIN_REQ = "任務鏈要求";
@@ -159,11 +198,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.TSM4_ERROR = "TSM4 尚未與 ATT 相容。如果你知道如何像我們以前在 TSM3 中那樣創建預設，請在 Discord 上告訴我！";
 	L.QUEST_MAY_BE_REMOVED = "擷取任務資訊失敗。這個任務可能已從遊戲中移除。";
 
-	L.FACTION_SPECIFIC_REP = "並非所有聲望都可以在單個角色上查看。例：聯盟玩家無法看到戰歌騎手，部落玩家無法查看銀翼哨兵。";
-	L.MINUMUM_STANDING_WITH_FACTION = "最低陣營聲望等級 %s 和 %s。";
-	L.MAXIMUM_STANDING_WITH_FACTION = "最高陣營聲望等級 %s 和 %s。";
-	L.MIN_MAX_STANDING_WITH_FACTION = "陣營聲望等級在 %s 與 %s 之間，和 %s。";
-
 	L.DURING_WQ_ONLY = "可以在世界任務啟動時完成";
 	L.COMPLETED_DAILY = "可以每天完成";
 	L.COMPLETED_WEEKLY = "可以每周完成";
@@ -176,7 +210,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.BEST_BONUS_ROLL_CHANCE = "最佳額外投骰機率";
 	L.BEST_PERSONAL_LOOT_CHANCE = "最佳個人拾取機率";
 	L.PREREQUISITE_QUESTS = "必須先完成一些前置任務才有可能獲得：";
-	L.BREADCRUMBS = "無關緊要";
 	L.BREADCRUMBS_WARNING = "完成此任務後可能無法獲得無關緊要的任務：";
 	L.THIS_IS_BREADCRUMB = "這是個無關緊要的任務。";
 	L.BREADCRUMB_PARTYSYNC = "如果先完成這些任務中的任何一個在沒有隊伍同步的情況下可能無法完成：";
@@ -278,11 +311,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.NESTED_QUEST_REQUIREMENTS = "多重任務需要";
 	L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207該組及其內容不參與此視窗的進度，因為它來自另一個位置！|r";
 	L.CURRENCY_NEEDED_TO_BUY = "需要購買物品未收藏的事物";
-	L.LOCK_CRITERIA_LEVEL_LABEL = "玩家等級";
-	L.LOCK_CRITERIA_QUEST_LABEL = "已完成任務";
-	L.LOCK_CRITERIA_SPELL_LABEL = "已學法術/坐騎/配方";
-	L.LOCK_CRITERIA_FACTION_LABEL = "陣營聲望";
-	L.LOCK_CRITERIA_FACTION_FORMAT = "%s 和 %s（當前：%s）";
 	L.FORCE_REFRESH_REQUIRED = "這可能需要強制刷新（"..SHIFT_KEY_TEXT.."點擊）正確已收集。";
 	L.FUTURE_UNOBTAINABLE = "未來無法獲得！";
 	L.FUTURE_UNOBTAINABLE_TOOLTIP = "這是已經確認或極有可能在已知的未來更新中無法獲得的內容。";
@@ -412,29 +440,10 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.TOGGLE_RANDOM = "打開/關閉隨機列表";
 		L.REROLL_RANDOM = "重新生成隨機列表";
 
-	-- Tooltip Text
-		L.DROP_RATE = "掉落率";
-		L.QUEST_GIVER = "任務給予者";
-		L.EVENT_SCHEDULE = "事件時程表";
-		L.EVENT_ACTIVE = "啟動:";
-		L.EVENT_START = "開始:";
-		L.EVENT_END = "結束:";
-		L.EVENT_WHERE = "地點:";
-		L.REQUIRES_EVENT = "需要事件";
-		L.LOCKOUT = "鎖定";
-		L.RESETS = "重置";
-		L.SHARED = "共享";
-		L.SPLIT = "按難度";
-		L.REQUIRES_LEVEL = "需要等級";
 		L.SECRETS_HEADER = "解密";
-		L.LIMITED_QUANTITY = "此物品有數量限制，在商人處並非總是可見。";
 		L.SOURCE_ID_MISSING = "請在 ATT Discord 的 #retail-errors 中回報此物品及其獲得地點！";
 		--TODO: recheck these patch strings
-		L.ADDED_WITH_PATCH_FORMAT = "更新 %s 中加入";
-		L.WAS_ADDED_WITH_PATCH_FORMAT = "最新更新 %s 中加入";
-		L.ADDED_BACK_WITH_PATCH_FORMAT = "更新 %s 中加入回歸";
-		L.WAS_ADDED_BACK_WITH_PATCH_FORMAT = "最新更新 %s 中加入回歸";
-		L.REMOVED_WITH_PATCH_FORMAT = "更新 %s 中被刪除";
+
 
 	-- Filter Text
 		L.ARTIFACT_ID = "神器 ID";

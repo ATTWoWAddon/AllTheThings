@@ -92,6 +92,52 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	--TODO: L.ITEM_ID_REMOVED = "%s (%d) was removed from your collection.";
 	--TODO: L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] was removed from your collection.";
 
+-- Tooltip Text
+	--TODO: L.DROP_RATE = "Drop Rate";
+	--TODO: L.QUEST_GIVER = "Quest Giver";
+	--TODO: L.COORDINATES = "Coordinates";
+	--TODO: L.PLAYER_COORDINATES = "Player Coordinates";
+	--TODO: L.EVENT_SCHEDULE = "Event Schedule";
+	--TODO: L.EVENT_ACTIVE = "Active:";
+	--TODO: L.EVENT_START = "Start:";
+	--TODO: L.EVENT_END = "End:";
+	--TODO: L.EVENT_WHERE = "Where:";
+	--TODO: L.REQUIRES_EVENT = "Requires Event";
+	--TODO: L.BREADCRUMBS = "Breadcrumbs";
+	--TODO: L.MAPS = "Maps";
+	--TODO: L.LOCKOUT = "Lockout";
+	--TODO: L.LOCKOUTS = "Lockouts";
+	--TODO: L.RESETS = "Resets";
+	--TODO: L.SHARED = "Shared";
+	--TODO: L.SPLIT = "Per Difficulty";
+	L.REQUIRES = "Richiede";
+	--TODO: L.REQUIRES_LEVEL = "Requires Level";
+	--TODO: L.LIMITED_QUANTITY = "This has a limited quantity and may not always be present on the vendor.";
+	--TODO: L.ADDED_WITH_PATCH_FORMAT = "This gets added with patch %s";
+	--TODO: L.ADDED_BACK_WITH_PATCH_FORMAT = "This gets added back with patch %s";
+	--TODO: L.REMOVED_WITH_PATCH_FORMAT = "This gets removed with patch %s";
+	--TODO: L.WAS_ADDED_WITH_PATCH_FORMAT = "This was added with patch %s";
+	--TODO: L.WAS_ADDED_BACK_WITH_PATCH_FORMAT = "This was added back with patch %s";
+	--TODO: L.CRITERIA_FORMAT = "|cffffff00[Criteria: %s]|r";
+
+	--TODO: L.FACTION_SPECIFIC_REP = "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
+	--TODO: L.MINUMUM_STANDING_WITH_FACTION = "Requires a minimum standing of %s with %s.";
+	--TODO: L.MAXIMUM_STANDING_WITH_FACTION = "Requires a standing lower than %s with %s.";
+	--TODO: L.MIN_MAX_STANDING_WITH_FACTION = "Requires a standing between %s and %s with %s.";
+
+	--TODO: L.HEIRLOOM_TEXT = "Unlocked Heirloom";
+	--TODO: L.HEIRLOOM_TEXT_DESC = "This indicates whether or not you have acquired or purchased the heirloom yet.";
+	--TODO: L.HEIRLOOMS_UPGRADES_DESC = "This indicates whether or not you have upgraded the heirloom to a certain level.\n\nR.I.P. Gold.\n - Crieve";
+
+	--TODO: L.LOCK_CRITERIA_LEVEL_LABEL = "Player Level";
+	--TODO: L.LOCK_CRITERIA_QUEST_LABEL = "Completed Quest";
+	--TODO: L.LOCK_CRITERIA_SPELL_LABEL = "Learned Spell/Mount/Recipe";
+	--TODO: L.LOCK_CRITERIA_FACTION_LABEL = "Faction Reputation";
+	--TODO: L.LOCK_CRITERIA_SOURCE_LABEL = "Known Appearance";
+	--TODO: L.LOCK_CRITERIA_TOY_LABEL = "Known Toy";
+	--TODO: L.LOCK_CRITERIA_FACTION_FORMAT = "%s with %s (Current: %s)";
+	--TODO: L.TITLES_DESC = "Titles are tracked across your account, however, your individual character must qualify for certain titles to be usable on that character.";
+
 -- Big new chunk from AllTheThings.lua
 	--TODO: L.TRACKING_PROGRESS = "Tracking Progress";
 	--TODO: L.COLLECTED_STRING = " Collected";
@@ -106,7 +152,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	--TODO: L.NO_COORDINATES_FORMAT = "No known coordinates for %s";
 	--TODO: L.TOM_TOM_NOT_FOUND = "You must have TomTom installed to plot coordinates.";
 	--TODO: L.FLIGHT_PATHS = "Flight Paths";
-	L.REQUIRES = "Richiede";
 	--TODO: L.RACE_LOCKED = "Race Locked";
 	--TODO: L.NOT_AVAILABLE_IN_PL = "Not available in Personal Loot.";
 	--TODO: L.MARKS_OF_HONOR_DESC = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then "..SHIFT_KEY_TEXT.." click to link the item)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
@@ -123,10 +168,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	if app.IsRetail then
 	L.FOLLOWERS_COLLECTION_DESC = "Followers can be collected account wide, if you enable this setting in ATT.\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.." clicking the header for this to be detected.";	--TODO
 	end
-	--TODO: L.HEIRLOOM_TEXT = "Unlocked Heirloom";
-	--TODO: L.HEIRLOOM_TEXT_DESC = "This indicates whether or not you have acquired or purchased the heirloom yet.";
 	--TODO: L.FAILED_ITEM_INFO = "Failed to acquire item information. The item may be invalid or may not have been cached on your server yet.";
-	--TODO: L.HEIRLOOMS_UPGRADES_DESC = "This indicates whether or not you have upgraded the heirloom to a certain level.\n\nR.I.P. Gold.\n - Crieve";
 	if app.IsRetail then
 	L.MUSIC_ROLLS_DESC = "These are unlocked per-character and are not currently shared across your account. If someone at Blizzard is reading this, it would be really swell if you made these account wide.\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.." clicking the header for this to be detected.";	--TODO
 	end
@@ -147,7 +189,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	--TODO: L.EXPANSION_DATA[11].lore = "The War Within is the tenth expansion for World of Warcraft and the beginning of the Worldsoul Saga. Journey through never-before-seen subterranean worlds filled with hidden wonders and lurking perils, down to the dark depths of the nerubian empire, where the malicious Harbinger of the Void is gathering arachnid forces to bring Azeroth to its knees.";
 	--TODO: L.EXPANSION_DATA[12].lore = "Midnight is the eleventh expansion for World of Warcraft and the second installment of the Worldsoul Saga.";
 	--TODO: L.EXPANSION_DATA[13].lore = "The Last Titan is the twelfth expansion for World of Warcraft and the final installment of the Worldsoul Saga.";
-	--TODO: L.TITLES_DESC = "Titles are tracked across your account, however, your individual character must qualify for certain titles to be usable on that character.";
 	--TODO: L.UPON_COMPLETION = "Upon Completion";
 	--TODO: L.UPON_COMPLETION_DESC = "The above quests need to be completed before being able to complete the things listed below.";
 	--TODO: L.QUEST_CHAIN_REQ = "Quest Chain Requirements";
@@ -163,11 +204,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	--TODO: L.TSM4_ERROR = "TSM4 is not compatible with ATT yet. If you know how to create Presets like we used to do in TSM3, please whisper Crieve on Discord!";
 	--TODO: L.QUEST_MAY_BE_REMOVED = "Failed to acquire information. This quest may have been removed from the game. ";
 
-	--TODO: L.FACTION_SPECIFIC_REP = "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
-	--TODO: L.MINUMUM_STANDING_WITH_FACTION = "Requires a minimum standing of %s with %s.";
-	--TODO: L.MAXIMUM_STANDING_WITH_FACTION = "Requires a standing lower than %s with %s.";
-	--TODO: L.MIN_MAX_STANDING_WITH_FACTION = "Requires a standing between %s and %s with %s.";
-
 	--TODO: L.DURING_WQ_ONLY = "This can be completed when the world quest is active.";
 	--TODO: L.COMPLETED_DAILY = "This can be completed daily.";
 	--TODO: L.COMPLETED_WEEKLY = "This can be completed weekly.";
@@ -180,7 +216,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	--TODO: L.BEST_BONUS_ROLL_CHANCE = "Best Bonus Roll Chance";
 	--TODO: L.BEST_PERSONAL_LOOT_CHANCE = "Best Personal Loot Chance";
 	--TODO: L.PREREQUISITE_QUESTS = "There are prerequisite quests that must be completed before this may be obtained:";
-	--TODO: L.BREADCRUMBS = "Breadcrumbs";
 	--TODO: L.BREADCRUMBS_WARNING = "There are breadcrumb quests that may not be obtainable after completing this:";
 	--TODO: L.THIS_IS_BREADCRUMB = "This is a breadcrumb quest.";
 	--TODO: L.BREADCRUMB_PARTYSYNC = "This may be unable to be completed without Party Sync if completing any of these quests first:";
@@ -283,11 +318,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	--TODO: L.MAIN_LIST_REQUIRES_REFRESH = "[Open Main list to update progress]";
 	--TODO: L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207This group and its content do not contribute to the progress of this window since it is Sourced in another Location!|r";
 	--TODO: L.CURRENCY_NEEDED_TO_BUY = "Estimated amount needed to obtain remaining Things";
-	--TODO: L.LOCK_CRITERIA_LEVEL_LABEL = "Player Level";
-	--TODO: L.LOCK_CRITERIA_QUEST_LABEL = "Completed Quest";
-	--TODO: L.LOCK_CRITERIA_SPELL_LABEL = "Learned Spell/Mount/Recipe";
-	--TODO: L.LOCK_CRITERIA_FACTION_LABEL = "Faction Reputation";
-	--TODO: L.LOCK_CRITERIA_FACTION_FORMAT = "%s with %s (Current: %s)";
 	--TODO: L.FORCE_REFRESH_REQUIRED = "This may require a Force Refresh ("..SHIFT_KEY_TEXT.." click) to properly be collected.";
 	--TODO: L.FUTURE_UNOBTAINABLE = "Future Unobtainable!";
 	--TODO: L.FUTURE_UNOBTAINABLE_TOOLTIP = "This is content that has been confirmed or is highly-probable to be made unobtainable in a known future patch.";
@@ -415,28 +445,8 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		--TODO: L.TOGGLE_RANDOM = "Toggle ATT Random";
 		--TODO: L.REROLL_RANDOM = "Reroll the Random Selection";
 
-	-- Tooltip Text
-		--TODO: L.DROP_RATE = "Drop Rate";
-		--TODO: L.QUEST_GIVER = "Quest Giver";
-		--TODO: L.EVENT_SCHEDULE = "Event Schedule";
-		--TODO: L.EVENT_ACTIVE = "Active:";
-		--TODO: L.EVENT_START = "Start:";
-		--TODO: L.EVENT_END = "End:";
-		--TODO: L.EVENT_WHERE = "Where:";
-		--TODO: L.REQUIRES_EVENT = "Requires Event";
-		--TODO: L.LOCKOUT = "Lockout";
-		--TODO: L.RESETS = "Resets";
-		--TODO: L.SHARED = "Shared";
-		--TODO: L.SPLIT = "Per Difficulty";
-		--TODO: L.REQUIRES_LEVEL = "Requires Level";
 		--TODO: L.SECRETS_HEADER = "Secrets";
-		--TODO: L.LIMITED_QUANTITY = "This has a limited quantity and may not always be present on the vendor.";
 		--TODO: L.SOURCE_ID_MISSING = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
-		--TODO: L.ADDED_WITH_PATCH_FORMAT = "Added in %s";
-		--TODO: L.WAS_ADDED_WITH_PATCH_FORMAT = "Added in %s";
-		--TODO: L.ADDED_BACK_WITH_PATCH_FORMAT = "Re-added in %s";
-		--TODO: L.WAS_ADDED_BACK_WITH_PATCH_FORMAT = "Added in %s";
-		--TODO: L.REMOVED_WITH_PATCH_FORMAT = "Removed in %s";
 
 	-- Artifact Relic Completion
 		--TODO: L.ARTIFACT_RELIC_CACHE = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";

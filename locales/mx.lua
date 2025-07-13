@@ -92,6 +92,52 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.ITEM_ID_REMOVED = "%s (%d) fue eliminado de tu colección.";
 	L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] fueron eliminados de tu colección.";
 
+-- Tooltip Text
+	L.DROP_RATE = "Probabilidad de botín";
+	L.QUEST_GIVER = "Proveedor de misión";
+	L.COORDINATES = "Coordenadas";
+	L.PLAYER_COORDINATES = "Coordenadas del jugador";
+	L.EVENT_SCHEDULE = "Horario del evento";
+	L.EVENT_ACTIVE = "Activo:";
+	L.EVENT_START = "Inicio:";
+	L.EVENT_END = "Fin:";
+	L.EVENT_WHERE = "Dónde:";
+	L.REQUIRES_EVENT = "Requiere el evento";
+	L.BREADCRUMBS = "Misiones de exploración optativas";
+	L.MAPS = "Mapas";
+	L.LOCKOUT = "Bloqueo";
+	L.LOCKOUTS = "Bloqueos";
+	L.RESETS = "Reinicios";
+	L.SHARED = "Compartido";
+	L.SPLIT = "Por dificultad";
+	L.REQUIRES = "Requiere";
+	L.REQUIRES_LEVEL = "Necesitas ser nivel";
+	L.LIMITED_QUANTITY = "Tiene una cantidad limitada puede que no esté presente siempre en este vendedor.";
+	L.ADDED_WITH_PATCH_FORMAT = "Añadido en %s";
+	L.ADDED_BACK_WITH_PATCH_FORMAT = "Re añadido en el parche %s";
+	L.REMOVED_WITH_PATCH_FORMAT = "Removido en el parche %s";
+	L.WAS_ADDED_WITH_PATCH_FORMAT = "Añadido en el parche %s";
+	L.WAS_ADDED_BACK_WITH_PATCH_FORMAT = "Añadido en el parche %s";
+	L.CRITERIA_FORMAT = "|cffffff00[Criterio: %s]|r";
+
+	L.FACTION_SPECIFIC_REP = "No se pueden ver todas las reputaciones de un mismo personaje. Por ejemplo, los jugadores de la Alianza no pueden ver a los Escoltas Grito de Guerra, y los de la Horda no pueden ver a los Centinelas Ala de Plata.";
+	L.MINUMUM_STANDING_WITH_FACTION = "Requiere un nivel mínimo de %s con %s.";
+	L.MAXIMUM_STANDING_WITH_FACTION = "Requiere un nivel menor de %s con %s.";
+	L.MIN_MAX_STANDING_WITH_FACTION = "Requiere un nivel entre %s y %s con %s.";
+
+	L.HEIRLOOM_TEXT = "Reliquias desbloqueadas";
+	L.HEIRLOOM_TEXT_DESC = "Esto indica si ya ha adquirido o comprado la reliquia.";
+	L.HEIRLOOMS_UPGRADES_DESC = "Esto indica si has mejorado o no la reliquia a un cierto nivel.\n\nD.E.P. Oro.\n - Crieve";
+
+	L.LOCK_CRITERIA_LEVEL_LABEL = "Nivel de personaje";
+	L.LOCK_CRITERIA_QUEST_LABEL = "Misión completada";
+	L.LOCK_CRITERIA_SPELL_LABEL = "Habilidad/Montura/Receta aprendida";
+	L.LOCK_CRITERIA_FACTION_LABEL = "Reputación con facción";
+	L.LOCK_CRITERIA_SOURCE_LABEL = "Apariencia conocida";
+	L.LOCK_CRITERIA_TOY_LABEL = "Juguete conocido";
+	L.LOCK_CRITERIA_FACTION_FORMAT = "%s con %s (Actual: %s)";
+	L.TITLES_DESC = "Los títulos se rastrean en toda tu cuenta, sin embargo, tu personaje individual debe calificar para ciertos títulos para poder usarlos en ese personaje.";
+
 -- Big new chunk from AllTheThings.lua
 	L.TRACKING_PROGRESS = "Rastreando progreso";
 	L.COLLECTED_STRING = " Recolectado";
@@ -99,14 +145,11 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.COLLECTION_PROGRESS = "Progreso de la colección";
 	L.CONTAINS = "Contiene:";
 	L.FACTIONS = "Reputaciones";
-	L.COORDINATES = "Coordenadas";
 	L.AND_MORE = "Y %s más...";
 	L.AND_OTHER_SOURCES = "Y %s otras fuentes...";
-	L.PLAYER_COORDINATES = "Coordenadas del jugador";
 	L.NO_COORDINATES_FORMAT = "No hay coordenadas conocidas para %s";
 	L.TOM_TOM_NOT_FOUND = "Debe tener instalado TomTom para poder seguir coordenadas.";
 	L.FLIGHT_PATHS = "Rutas de vuelo";
-	L.REQUIRES = "Requiere";
 	L.RACE_LOCKED = "Exclusivo de raza/facción";
 	L.NOT_AVAILABLE_IN_PL = "No disponible en botín personal.";
 	L.MARKS_OF_HONOR_DESC = "Las Marcas de Honor deben visualizarse en una ventana emergente para ver todo el contenido normal de \"Contiene\".\n(Escribe '/att ' en el chat entonces "..SHIFT_KEY_TEXT.." click para linkear el item)\n\n|cFFfe040fDespués de comprar y usar un conjunto, vuelve a iniciar sesión y realizar una actualización forzada de ATT (en este orden)\npuede ser necesario para registrar todos los artículos correctamente.|r";
@@ -123,10 +166,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	if app.IsRetail then
 	L.FOLLOWERS_COLLECTION_DESC = "Se pueden recopilar seguidores en toda la cuenta si habilita esta configuración en ATT.\n\nDebes actualizar manualmente el addon con "..SHIFT_KEY_TEXT.." click en el encabezado para que esto se detecte.";
 	end
-	L.HEIRLOOM_TEXT = "Reliquias desbloqueadas";
-	L.HEIRLOOM_TEXT_DESC = "Esto indica si ya ha adquirido o comprado la reliquia.";
 	L.FAILED_ITEM_INFO = "No se pudo obtener la información del objeto. Es posible que el objeto no sea válido o que aún no se haya almacenado en caché en el servidor.";
-	L.HEIRLOOMS_UPGRADES_DESC = "Esto indica si has mejorado o no la reliquia a un cierto nivel.\n\nR.I.P. Oro.\n - Crieve";
 	if app.IsRetail then
 	L.MUSIC_ROLLS_DESC = "Estos se desbloquean por personaje y actualmente no se comparten entre cuentas. Si alguien de Blizzard está leyendo esto, sería genial que los hicieran accesibles para toda la cuenta.\n\nDebes actualizar manualmente el addon "..SHIFT_KEY_TEXT.." click en el encabezado para que esto se detecte.";
 	end
@@ -147,7 +187,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.EXPANSION_DATA[11].lore = "The War Within es la décima expansión de World of Warcraft y el inicio de la Saga Worldsoul. Viaja a través de mundos subterráneos nunca antes vistos, repletos de maravillas ocultas y peligros acechantes, hasta las oscuras profundidades del imperio nerubiano, donde la maligna Emisaria del Vacío reúne fuerzas arácnidas para doblegar a Azeroth.";
 	L.EXPANSION_DATA[12].lore = "Midnight es la undécima expansión de World of Warcraft y la segunda entrega de la saga Worldsoul.";
 	L.EXPANSION_DATA[13].lore = "The Last Titan es la duodécima expansión de World of Warcraft y la última entrega de la saga Worldsoul.";
-	L.TITLES_DESC = "Los títulos se rastrean en toda tu cuenta, sin embargo, tu personaje individual debe calificar para ciertos títulos para poder usarlos en ese personaje.";
 	L.UPON_COMPLETION = "Al finalizar";
 	L.UPON_COMPLETION_DESC = "Las misiones anteriores deben completarse antes de poder completar las cosas que se enumeran a continuación.";
 	L.QUEST_CHAIN_REQ = "Requisitos de la cadena de misiones";
@@ -163,11 +202,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.TSM4_ERROR = "TSM4 aún no es compatible con ATT. Si sabes cómo crear presets como en TSM3, ¡Susurrale a Crieve en Discord!";
 	L.QUEST_MAY_BE_REMOVED = "No se pudo obtener información. Es posible que esta misión haya sido eliminada del juego. ";
 
-	L.FACTION_SPECIFIC_REP = "No se pueden ver todas las reputaciones de un mismo personaje. Por ejemplo, los jugadores de la Alianza no pueden ver a los Escoltas Grito de Guerra, y los de la Horda no pueden ver a los Centinelas Ala de Plata.";
-	L.MINUMUM_STANDING_WITH_FACTION = "Requiere un nivel mínimo de %s con %s.";
-	L.MAXIMUM_STANDING_WITH_FACTION = "Requiere un nivel menor de %s con %s.";
-	L.MIN_MAX_STANDING_WITH_FACTION = "Requiere un nivel entre %s y %s con %s.";
-
 	L.DURING_WQ_ONLY = "Esto se puede completar cuando la misión de mundo está activa.";
 	L.COMPLETED_DAILY = "Esto se puede completar diariamente.";
 	L.COMPLETED_WEEKLY = "Esto se puede completar semanalmente.";
@@ -180,7 +214,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.BEST_BONUS_ROLL_CHANCE = "Mejor probabilidad de lanzamiento de dados de bonus";
 	L.BEST_PERSONAL_LOOT_CHANCE = "Mejor probabilidad de botín personal";
 	L.PREREQUISITE_QUESTS = "Hay misiones previas que deben completarse antes de poder obtener esto:";
-	L.BREADCRUMBS = "Exploraciones optativas";
 	L.BREADCRUMBS_WARNING = "Hay misiones de exploración optativa que pueden no estar disponibles después de completar esto:";
 	L.THIS_IS_BREADCRUMB = "Esta es una misión de exploración optativa.";
 	L.BREADCRUMB_PARTYSYNC = "Es posible que esto no se pueda completar sin Sincronización de grupo si primero se completa alguna de estas misiones:";
@@ -282,11 +315,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.NESTED_QUEST_REQUIREMENTS = "Requisitos de Misión anidados";
 	L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207Este grupo y su contenido no contribuyen al progreso de esta ventana porque sus fuentes están en otra zona!|r";
 	L.CURRENCY_NEEDED_TO_BUY = "Cantidad estimada necesaria para obtener las cosas restantes";
-	L.LOCK_CRITERIA_LEVEL_LABEL = "Nivel de personaje";
-	L.LOCK_CRITERIA_QUEST_LABEL = "Misión completada";
-	L.LOCK_CRITERIA_SPELL_LABEL = "Habilidad/Montura/Receta aprendida";
-	L.LOCK_CRITERIA_FACTION_LABEL = "Reputación con facción";
-	L.LOCK_CRITERIA_FACTION_FORMAT = "%s con %s (Actual: %s)";
 	L.FORCE_REFRESH_REQUIRED = "Esto puede requerir una actualización forzada ("..SHIFT_KEY_TEXT.." + click) para detectarlo correctamente.";
 	L.FUTURE_UNOBTAINABLE = "No obtenible en un futuro!";
 	L.FUTURE_UNOBTAINABLE_TOOLTIP = "Esto es contenido que se ha confirmado o es muy probable que no se pueda conseguir en un futuro parche conocido.";
@@ -414,28 +442,8 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.TOGGLE_RANDOM = "Activar ATT Aleatorio";
 		L.REROLL_RANDOM = "Repetir tirada de dados de la selección aleatoria";
 
-	-- Tooltip Text
-		L.DROP_RATE = "Probabilidad de botín";
-		L.QUEST_GIVER = "Proveedor de misión";
-		L.EVENT_SCHEDULE = "Horario del evento";
-		L.EVENT_ACTIVE = "Activo:";
-		L.EVENT_START = "Inicio:";
-		L.EVENT_END = "Fin:";
-		L.EVENT_WHERE = "Dónde:";
-		L.REQUIRES_EVENT = "Requiere el evento";
-		L.LOCKOUT = "Bloqueo";
-		L.RESETS = "Reinicios";
-		L.SHARED = "Compartido";
-		L.SPLIT = "Por dificultad";
-		L.REQUIRES_LEVEL = "Necesitas ser nivel";
 		L.SECRETS_HEADER = "Secretos";
-		L.LIMITED_QUANTITY = "Tiene una cantidad limitada puede que no esté presente siempre en este vendedor.";
 		L.SOURCE_ID_MISSING = "Por favor, reporta este objeto y dónde fue obtenido al Discord de ATT en #retail-errors!";
-		L.ADDED_WITH_PATCH_FORMAT = "Añadido en %s";
-		L.WAS_ADDED_WITH_PATCH_FORMAT = "Añadido en %s";
-		L.ADDED_BACK_WITH_PATCH_FORMAT = "Re añadido en %s";
-		L.WAS_ADDED_BACK_WITH_PATCH_FORMAT = "Añadido en %s";
-		L.REMOVED_WITH_PATCH_FORMAT = "Eliminado en %s";
 
 	-- Artifact Relic Completion
 		L.ARTIFACT_RELIC_CACHE = "Abre la interfaz de Armas de Artefacto para cargar si esto es una mejora o no. Es útil para determinar si puedes comerciar este objeto a un alter o no.";
