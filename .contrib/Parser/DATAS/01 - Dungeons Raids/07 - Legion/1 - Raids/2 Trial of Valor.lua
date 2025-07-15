@@ -2,7 +2,6 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-
 ------ Encounter Constants ------
 local ODYN = 1819;
 local GUARM = 1830;
@@ -171,7 +170,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroups({
 				ZoneDrops({
 				}),
-				header(HEADERS.LFGDungeon, 1411, {	-- Shock and Awesome
+				header(HEADERS.LFGDungeon, 1411, {	-- Trial of Valor
 					Boss(ODYN),
 					Boss(GUARM),
 					Boss(HELYA),
@@ -271,8 +270,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 		},
 	}),
 })));
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 } }, {
-	inst(861, {
+	inst(861, {	-- Trial of Valor
 		q(46661),	-- Odyn LFR
 		q(46662),	-- Odyn Normal
 		q(46663),	-- Odyn Heroic
