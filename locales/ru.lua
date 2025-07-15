@@ -218,6 +218,19 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.WORLDMAP_BUTTON_CHECKBOX = "Показывать Кнопку на Карте";
 	L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите кнопку ATT на Вашей карте. Эта кнопка позволяет открыть Мини список ATT для открытой зоны на карте. В обычной ситуации Вам требуется физически быть в зоне, чтобы набрать '/att mini' в чате.";
 
+-- Icons and Collection Text
+	L.COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
+	L.COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
+	L.COMPLETE_ICON = "|T" .. app.asset("known_green") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
+	L.NOT_COLLECTED_ICON = "|T" .. app.asset("unknown") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
+	L.COLLECTED = "|T" .. app.asset("known") .. ":0|t |cff15abffСобрано|r";	-- Acquired the colors and icon from CanIMogIt.
+	L.COLLECTED_APPEARANCE = "|T" .. app.asset("known_circle") .. ":0|t |cff15abffСобрано*|r";	-- Acquired the colors and icon from CanIMogIt.
+	L.NOT_COLLECTED = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Не Собрано|r";	-- Acquired the colors and icon from CanIMogIt.
+	L.COMPLETE = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Выполнено|r";	-- Acquired the colors and icon from CanIMogIt.
+	L.COMPLETE_OTHER = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Выполнено*|r";	-- Acquired the colors and icon from CanIMogIt.
+	L.INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |cff15abffНе Выполнено|r";	-- Acquired the colors and icon from CanIMogIt.
+	L.INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
+
 -- Big new chunk from AllTheThings.lua
 	L.TRACKING_PROGRESS = "Отслеживание выполнения";
 	L.COLLECTED_STRING = " Собрано";
@@ -509,12 +522,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		--TODO: L.DISABLED = "disabled";
 
 	-- Icons and Collection Text
-		L.COLLECTED = "|T" .. app.asset("known") .. ":0|t |cff15abffСобрано|r";	-- Acquired the colors and icon from CanIMogIt.
-		L.COLLECTED_APPEARANCE = "|T" .. app.asset("known_circle") .. ":0|t |cff15abffСобрано*|r";	-- Acquired the colors and icon from CanIMogIt.
-		L.NOT_COLLECTED = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Не Собрано|r";	-- Acquired the colors and icon from CanIMogIt.
-		L.COMPLETE = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Выполнено|r";	-- Acquired the colors and icon from CanIMogIt.
-		L.COMPLETE_OTHER = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Выполнено*|r";	-- Acquired the colors and icon from CanIMogIt.
-		L.INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |cff15abffНе Выполнено|r";	-- Acquired the colors and icon from CanIMogIt.
 		L.SAVED = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Сохранено|r";	-- Acquired the colors and icon from CanIMogIt.
 		L.COST_TEXT = "|T" .. app.asset("Currency") .. ":0|t |cff0891ffВалюта|r";
 

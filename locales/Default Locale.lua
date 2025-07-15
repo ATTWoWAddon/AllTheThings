@@ -235,7 +235,6 @@ local L = setmetatable({
 	INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |c" .. app.Colors.Completed .. "Incomplete|r";		-- Acquired the colors and icon from CanIMogIt.
 	INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
 
-
 	-- temporary move
 	COLLECTED_STRING = " Collected";
 	CONTAINS = "Contains:";
