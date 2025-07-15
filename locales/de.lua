@@ -138,6 +138,86 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.LOCK_CRITERIA_FACTION_FORMAT = "%s mit %s (Current: %s)";
 	L.TITLES_DESC = "Titel werden zwar auf dem ganzen Account verfolgt, aber Euer Charakter muss sich für bestimmte Titel selbst qualifizieren, um diese nutzen zu können.";
 
+-- Filter Text
+	--TODO: L.ARTIFACT_ID = "Artifact ID";
+	--TODO: L.AZERITE_ESSENCE_ID = "Azerite Essence ID";
+	--TODO: L.ART_ID = "Art ID";
+	--TODO: L.CAMPSITE_ID = "Campsite ID";
+	--TODO: L.CREATURE_ID = "Creature ID";
+	--TODO: L.CURRENCY_ID = "Currency ID";
+	L.DESCRIPTIONS = "Beschreibungen";
+	--TODO: L.DIFFICULTY_ID = "Difficulty ID";
+	--TODO: L.ENCOUNTER_ID = "Encounter ID";
+	--TODO: L.EXPANSION_ID = "Expansion ID";
+	--TODO: L.EXPLORATION_ID = "Exploration ID";
+	--TODO: L.FILTER_ID = "Filter ID";
+	--TODO: L.FOLLOWER_ID = "Follower ID";
+	--TODO: L.GUID = "Global ID";
+	--TODO: L.HEADER_ID = "Header ID";
+	--TODO: L.ILLUSION_ID = "Illusion ID";
+	--TODO: L.INSTANCE_ID = "Instance ID";
+	--TODO: L.SAVED_INSTANCE_ID = "Saved Instance ID";
+	--TODO: L.ITEM_ID = "Item ID";
+	--TODO: L.FACTION_ID = "Faction ID";
+	--TODO: L.FLIGHT_PATH_ID = "Flight Path ID";
+	L.LORE = "Geschichte";
+	--TODO: L.MAP_ID = "Map ID";
+	--TODO: L.MISSION_ID = "Mission ID";
+	--TODO: L.MOUNT_ID = "Mount ID";
+	--TODO: L.MUSIC_ROLL_ID = "Music Roll ID";
+	--TODO: L.NPC_ID = "NPC ID";
+	--TODO: L.OBJECT_ID = "Object ID";
+	--TODO: L.PROVIDERS = "Provider(s)";
+	--TODO: L.QUEST_ID = "Quest ID";
+	--TODO: L.SET_ID = "Gear Set ID";
+	--TODO: L.SOURCE_ID = "Source ID";
+	--TODO: L.SPELL_ID = "Spell ID";
+	--TODO: L.SPELL_NAME = "Spell Name";
+	--TODO: L.SPECIES_ID = "Species ID";
+	--TODO: L.TITLE_ID = "Title ID";
+	--TODO: L.TOY_ID = "Toy ID";
+	--TODO: L.VISUAL_ID = "Visual ID";
+	--TODO: L.AND_MORE = "And %s more...";
+	--TODO: L.SYM_ROW_INFORMATION = "Right Click to see additional content which is Sourced in another location";
+	--TODO: L.SYM_ROW_SKIP_DESC = "Linked content is only displayed in the tooltip for this object.";
+	--TODO: L.ACHIEVEMENT_PRE_WRATH_SOURCE_QUEST_INFO = "This achievement has associated quests that can be completed before the introduction of the Achievement system coming with the Wrath Prepatch. Not all achievements can be tracked this way, but for those that can, they will be displayed. All other non-trackable achievements will be activated with the prepatch.";
+	L.CLASSES = "Klassen";
+
+	L.ADDITIONAL_LABEL = "Zusätzliche Information";
+	L.CRITERIA_FOR = "Kriterium für";
+	L.CURRENCY_FOR = "Währung für";
+
+	L.CHAT_COMMANDS_LABEL = "Chat Befehle";
+	--TODO: L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/attbounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items.\n\n|R/attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances.\nAlso works with other things, such as|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/attrwp\n|cffFFFFFFShows all future Removed With Patch things.\n\n|R/attnwp\n|cffFFFFFFShows all current New With Patch things.\n\n|R/attrandom\n|cffFFFFFFOpens the Random List.\n\n|R/attunsorted\n|cffFFFFFFOpens a list of unsourced items.\nBest opened in Debug Mode.\n\n|R/rl\n|cffFFFFFFReload your WoW interface.|R";
+	--TODO: L.ICON_LEGEND_STATUS_LABEL = "Status Icons Legend";
+	--TODO: L.ICON_LEGEND_STATUS_TEXT = app.ccColors.White ..
+	--TODO:		"|T" .. app.asset("status-unobtainable") .. ":0|t " .. "Unobtainable" ..
+	--TODO:		"\n|T" .. app.asset("status-prerequisites") .. ":0|t " .. "Obtainable only with prerequisites" ..
+	--TODO:		"\n|T" .. app.asset("status-seasonal-available") .. ":0|t " .. "Available seasonal content" ..
+	--TODO:		"\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t " .. "Unavailable seasonal content" ..
+	--TODO:		"\n|T374225:0|t " .. "Unavailable on current character" ..
+	--TODO:		"\n|T" .. app.asset("status-unsorted") .. ":0|t " .. "Unsorted in ATT";
+	--TODO: L.ICON_LEGEND_MISC_LABEL = "Miscellaneous Icons Legend";
+	--TODO: L.ICON_LEGEND_MISC_TEXT = app.ccColors.White ..
+	--TODO:		"|T" .. app.asset("Currency") .. ":0|t " .. "Used as a currency" ..
+	--TODO:		"\n|T" .. app.asset("Interface_Reagent") .. ":0|t " .. "Used as a crafting reagent" ..
+	--TODO:		"\n|T" .. app.asset("Interface_Catalyst") .. ":0|t " .. "Convertible at the Catalyst for a new appearance" ..
+	--TODO:		"\n|T" .. app.asset("Interface_Upgrade") .. ":0|t " .. "Can be upgraded for a new appearance";
+	L.KEYBINDINGS = SETTINGS_KEYBINDINGS_LABEL;
+	--TODO: L.KEYBINDINGS_TEXT = "You can set keybindings for ATT in the game's options.";
+	L.MINIMAP_LABEL = "Minimap Knopf";
+	--TODO: L.MODULES_LABEL = "Modules & Mini Lists";
+	L.AUTO_PROF_LIST_CHECKBOX = "Berufs Liste automatisch öffnen";
+	--TODO: L.AUTO_PROF_LIST_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to open and refresh the profession list when you open your professions. Due to an API limitation imposed by Blizzard, the only time an addon can interact with your profession data is when it is open. The list will automatically switch when you change to a different profession.\n\nWe don't recommend disabling this option as it may prevent recipes from tracking correctly.\n\nYou can also bind this setting to a Key. (only works when a profession is open)\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Profession Mini List";
+	L.SKIP_CUTSCENES_CHECKBOX = "Zwischensequenzen automatisch überspringen";
+	L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "Aktiviere diese Option, wenn ATT automatisch alle Zwischensequenzen für Euch überspringen soll.";
+	L.MINIMAP_BUTTON_CHECKBOX = "Zeig den Minimap Knopf";
+	--TODO: L.MINIMAP_BUTTON_CHECKBOX_TOOLTIP = "Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.";
+	L.MINIMAP_SLIDER = "Minimap Knopf Größe";
+	L.MINIMAP_SLIDER_TOOLTIP = 'Nutze dies um die Größe des Minmimap Knopfes zu verändern.\n\nDefault: 36';
+	--TODO: L.WORLDMAP_BUTTON_CHECKBOX = "Show the World Map Button";
+	--TODO: L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "Enable this option if you want to see the ATT button on your world map. This button allows you to quickly access the Mini List for the currently displayed zone. Regularly, you'd need to physically travel to the zone in order to see the content on the mini list that you can access by typing '/att mini' in your chatbox.";
+
 -- Big new chunk from AllTheThings.lua
 	L.TRACKING_PROGRESS = "Fortschrittsverfolgung";
 	L.COLLECTED_STRING = " Gesammelt";
@@ -204,8 +284,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.COMPLETED_MONTHLY = "Dies kann monatlich abgeschlossen werden.";
 	L.COMPLETED_YEARLY = "Dies kann jährlich abgeschlossen werden.";
 	L.COMPLETED_MULTIPLE = "Dies kann mehrfach abgeschlossen werden.";
-	L.CRITERIA_FOR = "Kriterium für";
-	L.CURRENCY_FOR = "Währung für";
 	L.LOOT_TABLE_CHANCE = "Beute Chance";
 	L.BEST_BONUS_ROLL_CHANCE = "Beste Zusätzliche Beute Chance";
 	L.BEST_PERSONAL_LOOT_CHANCE = "Beste Persönliche Beute Chance";
@@ -326,7 +404,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.." Klick um das Fenster zu fixieren";
 	L.TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.." Klick um das Fenster freizugeben";
 	L.QUEST_ROW_INSTRUCTIONS = "Rechtsklicken um Questreihen Anforderungen zu sehen.";
-	--TODO: L.SYM_ROW_INFORMATION = "Right Click to see additional content which is Sourced in another location";
 	L.QUEST_ONCE_PER_ACCOUNT = "Einmalig pro Account Quest";
 
 -- Settings.lua
@@ -362,43 +439,22 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 			--TODO: L.PRESET_RESTORE = "Restore";
 			--TODO: L.PRESET_RESTORE_TOOLTIP = "Restore your tracking options to before applying any presets.";
 
-		L.MINIMAP_SLIDER = "Minimap Knopf Größe";
-		L.MINIMAP_SLIDER_TOOLTIP = 'Nutze dies um die Größe des Minmimap Knopfes zu verändern.\n\nDefault: 36';
 		--TODO: L.EXTRA_THINGS_LABEL = "Additional Resources";
-		L.MINIMAP_BUTTON_CHECKBOX = "Zeig den Minimap Knopf";
-		--TODO: L.MINIMAP_BUTTON_CHECKBOX_TOOLTIP = "Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.";
 		--TODO: L.CLICK_TO_CREATE_FORMAT = "Click to Create %s";
-		--TODO: L.KEYBINDINGS_TEXT = "You can set keybindings for ATT in the game's options.";
-
-	-- Interface tab
-		L.ADDITIONAL_LABEL = "Zusätzliche Information";
-		L.DESCRIPTIONS = "Beschreibungen";
-		L.LORE = "Geschichte";
-		L.CLASSES = "Klassen";
 
 	-- Features tab
-		L.MINIMAP_LABEL = "Minimap Knopf";
-		--TODO: L.MODULES_LABEL = "Modules & Mini Lists";
-		L.SKIP_CUTSCENES_CHECKBOX = "Zwischensequenzen automatisch überspringen";
-		L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "Aktiviere diese Option, wenn ATT automatisch alle Zwischensequenzen für Euch überspringen soll.";
 		L.AUTO_BOUNTY_CHECKBOX = "Preisgeld Liste automatisch öffnen";
 		--TODO: L.AUTO_BOUNTY_CHECKBOX_TOOLTIP = "Enable this option if you want to see the items that have an outstanding collection bounty. If you manage to snag one of the items posted on this list, you could make a good sum of gold.\n\nShortcut Command: /attbounty";
 		L.AUTO_MAIN_LIST_CHECKBOX = "Hauptliste automatisch öffnen";
 		L.AUTO_MAIN_LIST_CHECKBOX_TOOLTIP = "Aktiviere diese Option, um die Hauptliste automatisch beim Login zu öffnen.\n\nIhr könnt diese Einstellung auch auf der Tastatur belegen:\n\nTastaturbelegung -> Addons -> ALL THE THINGS -> Hauptliste ein/aus\n\nShortcut Command: /att";
 		L.AUTO_MINI_LIST_CHECKBOX = "Mini Liste automatisch öffnen";
 		L.AUTO_MINI_LIST_CHECKBOX_TOOLTIP = "Aktiviere diese Option, um alles zu sehen was Ihr in eurer derzeitigen Zone sammeln könnt. Die Liste ändert sich automatisch, wenn Ihr die Zone wechselt. Einige Leute mögen diese Funktion nicht, aber wenn Ihr alleine sammelt, ist sie äußerst nützlich.\n\nIhr könnt diese Einstellung auch auf der Tastatur belegen.\n\nTastaturbelegung -> Addons -> ALL THE THINGS -> Mini Liste ein/aus\n\nShortcut Command: /att mini";
-		L.AUTO_PROF_LIST_CHECKBOX = "Berufs Liste automatisch öffnen";
-		--TODO: L.AUTO_PROF_LIST_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to open and refresh the profession list when you open your professions. Due to an API limitation imposed by Blizzard, the only time an addon can interact with your profession data is when it is open. The list will automatically switch when you change to a different profession.\n\nWe don't recommend disabling this option as it may prevent recipes from tracking correctly.\n\nYou can also bind this setting to a Key. (only works when a profession is open)\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Profession Mini List";
 		L.AUTO_RAID_ASSISTANT_CHECKBOX = "Raid Assistent automatisch öffnen";
 		--TODO: L.AUTO_RAID_ASSISTANT_CHECKBOX_TOOLTIP = "Enable this option if you want to see an alternative group/party/raid settings manager called the 'Raid Assistant'. The list will automatically update whenever group settings change.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Raid Assistant\n\nShortcut Command: /attra";
 		L.AUTO_WQ_LIST_CHECKBOX = "Weltquests Liste automatisch öffnen";
 		--TODO: L.AUTO_WQ_LIST_CHECKBOX_TOOLTIP = "Enable this option if you want the 'World Quests' list to appear automatically. The list will automatically update whenever you switch zones.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle World Quests List\n\nShortcut Command: /attwq";
 		--TODO: L.AUCTION_TAB_CHECKBOX = "Show the Auction House Module Tab";
 		--TODO: L.AUCTION_TAB_CHECKBOX_TOOLTIP = "Enable this option if you want to see the Auction House Module provided with ATT.\n\nSome addons are naughty and modify this frame extensively. ATT doesn't always play nice with those toys.";
-		--TODO: L.ICON_LEGEND_STATUS_LABEL = "Icon Legend";
-		--TODO: L.ICON_LEGEND_STATUS_TEXT = app.ccColors.White .. "|T" .. app.asset("status-unobtainable") .. ":0|t " .. "Unobtainable" .. "\n|T" .. app.asset("status-prerequisites") .. ":0|t " .. "Obtainable only with prerequisites" .. "\n|T" .. app.asset("status-seasonal-available") .. ":0|t " .. "Available seasonal content" .. "\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t " .. "Unavailable seasonal content" .. "\n|T374225:0|t " .. "Unavailable on current character";
-		L.CHAT_COMMANDS_LABEL = "Chat Befehle";
-		--TODO: L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFFor|R /things |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/att mini |cffFFFFFFor|R /attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/att bounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items.\n\n|R/att ra |cffFFFFFFor|R /attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/att wq |cffFFFFFFor|R /attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances. Also works with other things, such as|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/att rwp\n|cffFFFFFFShows all future Removed With Patch things.\n\n|R/att random |cffFFFFFFor|R /attrandom |cffFFFFFFor|R /attran\n|cffFFFFFFOpens the Random List.\n\n|R/att unsorted\n|cffFFFFFFOpens a list of unsourced items. Best opened in Debug Mode.\n\n|R/rl\n|cffFFFFFFReload your WoW interface.|R";
 
 	-- Sync Window
 		L.ACCOUNT_MANAGEMENT = "Accountverwaltung";

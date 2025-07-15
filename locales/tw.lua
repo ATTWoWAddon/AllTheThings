@@ -138,14 +138,92 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.LOCK_CRITERIA_FACTION_FORMAT = "%s 和 %s（當前：%s）";
 	L.TITLES_DESC = "頭銜會在你的戰隊中被追蹤，但是，你的角色必須符合某些頭銜的條件才能在該角色上使用。";
 
+-- Filter Text
+	L.ARTIFACT_ID = "神器 ID";
+	L.AZERITE_ESSENCE_ID = "艾澤拉斯精華 ID";
+	--TODO: L.ART_ID = "Art ID";
+	--TODO: L.CAMPSITE_ID = "Campsite ID";
+	L.CREATURE_ID = "生物 ID";
+	L.CURRENCY_ID = "貨幣 ID";
+	L.DESCRIPTIONS = "描述";
+	L.DIFFICULTY_ID = "難度 ID";
+	L.ENCOUNTER_ID = "首領戰鬥 ID";
+	L.EXPANSION_ID = "資料片 ID";
+	--TODO: L.EXPLORATION_ID = "Exploration ID";
+	L.FILTER_ID = "濾鏡 ID";
+	L.FOLLOWER_ID = "追隨者 ID";
+	--TODO: L.GUID = "Global ID";
+	L.HEADER_ID = "標頭 ID";
+	L.ILLUSION_ID = "幻象 ID";
+	L.INSTANCE_ID = "副本 ID";
+	--TODO: L.SAVED_INSTANCE_ID = "Saved Instance ID";
+	L.ITEM_ID = "物品 ID";
+	L.FACTION_ID = "陣營 ID";
+	L.FLIGHT_PATH_ID = "飛行路線 ID";
+	L.LORE = "傳言";
+	L.MAP_ID = "地圖 ID";
+	--TODO: L.MISSION_ID = "Mission ID";
+	L.MOUNT_ID = "坐騎 ID";
+	L.MUSIC_ROLL_ID = "樂譜 ID";
+	L.NPC_ID = "NPC ID";
+	L.OBJECT_ID = "道具 ID";
+	L.PROVIDERS = "供應商";
+	L.QUEST_ID = "任務 ID";
+	L.SET_ID = "套裝 ID";
+	L.SOURCE_ID = "來源 ID";
+	L.SPELL_ID = "法術 ID";
+	--TODO: L.SPELL_NAME = "Spell Name";
+	L.SPECIES_ID = "品種 ID";
+	L.TITLE_ID = "頭銜 ID";
+	L.TOY_ID = "玩具 ID";
+	L.VISUAL_ID = "外觀 ID";
+	L.AND_MORE = "和 %s 更多...";	--TODO: check
+	L.SYM_ROW_INFORMATION = "點擊右鍵以查看來自其他位置的其它內容";
+	--TODO: L.SYM_ROW_SKIP_DESC = "Linked content is only displayed in the tooltip for this object.";
+	--TODO: L.ACHIEVEMENT_PRE_WRATH_SOURCE_QUEST_INFO = "This achievement has associated quests that can be completed before the introduction of the Achievement system coming with the Wrath Prepatch. Not all achievements can be tracked this way, but for those that can, they will be displayed. All other non-trackable achievements will be activated with the prepatch.";
+	L.CLASSES = "職業";
+
+	L.ADDITIONAL_LABEL = "附加資訊";
+	L.CRITERIA_FOR = "準則";
+	L.CURRENCY_FOR = "貨幣";
+
+	L.CHAT_COMMANDS_LABEL = "聊天命令";
+	L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFF或|R /things |cffFFFFFF或|R /allthethings\n|cffFFFFFF打開主列表。\n\n|R/att mini |cffFFFFFF或|R /attmini\n|cffFFFFFF打開小列表。\n\n|R/att bounty\n|cffFFFFFF打開被出錯或未確認的物品列表。\n\n|R/att ra |cffFFFFFF或|R /attra\n|cffFFFFFF打開團隊助手。\n\n|R/att wq |cffFFFFFF或|R /attwq\n|cffFFFFFF打開世界任務列表。\n\n|R/att item:1234 |cffFFFFFF或|R /att [物品連接]\n|cffFFFFFF打開一個共享外觀的視窗。也適用於其他事物，例如|R quest:1234|cffFFFFFF，|Rnpcid:1234|cffFFFFFF，|Rmapid:1234|cffFFFFFF 或 |Rrecipeid:1234|cffFFFFFF。\n\n|R/att rwp\n|cffFFFFFF顯示所有未來用更新刪除的東西。\n\n|R/att random |cffFFFFFF或|R /attrandom |cffFFFFFF或|R /attran\n|cffFFFFFF打開隨機列表。\n\n|R/att unsorted\n|cffFFFFFF打開未知來源物品列表。最好在偵錯模式下打開。\n\n|R/rl\n|cffFFFFFF重載魔獸介面。|R";
+	L.ICON_LEGEND_STATUS_LABEL = "圖標圖例";
+	L.ICON_LEGEND_STATUS_TEXT = app.ccColors.White ..
+			"|T" .. app.asset("status-unobtainable") .. ":0|t " .. "無法獲得" ..
+			"\n|T" .. app.asset("status-prerequisites") .. ":0|t " .. "僅在滿足先決條件的情況下獲得" ..
+			"\n|T" .. app.asset("status-seasonal-available") .. ":0|t " .. "季節性內容" ..
+			"\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t " .. "季節性內容" ..
+			"\n|T374225:0|t " .. "當前角色不可用" ..
+	--TODO:		"\n|T" .. app.asset("status-unsorted") .. ":0|t " .. "Unsorted in ATT";
+	--TODO: L.ICON_LEGEND_MISC_LABEL = "Miscellaneous Icons Legend";
+	--TODO: L.ICON_LEGEND_MISC_TEXT = app.ccColors.White ..
+	--TODO:		"|T" .. app.asset("Currency") .. ":0|t " .. "Used as a currency" ..
+	--TODO:		"\n|T" .. app.asset("Interface_Reagent") .. ":0|t " .. "Used as a crafting reagent" ..
+	--TODO:		"\n|T" .. app.asset("Interface_Catalyst") .. ":0|t " .. "Convertible at the Catalyst for a new appearance" ..
+	--TODO:		"\n|T" .. app.asset("Interface_Upgrade") .. ":0|t " .. "Can be upgraded for a new appearance";
+	L.KEYBINDINGS = SETTINGS_KEYBINDINGS_LABEL;
+	L.KEYBINDINGS_TEXT = "可以在遊戲選項中設定 ATT 的按鍵綁定。";
+	L.MINIMAP_LABEL = "小地圖按鈕";
+	L.MODULES_LABEL = "模組和小列表";
+	L.AUTO_PROF_LIST_CHECKBOX = "自動打開專業列表";
+	L.AUTO_PROF_LIST_CHECKBOX_TOOLTIP = "如果你希望 ATT 在你打開專業技能時打開並刷新專業技能列表請啟用此選項。由於暴雪 API 限制，只有在打開專業技能介面時，插件才能與專業技能資料進行互動。當你換成其他專業技能時列表會自動切換。\n\n我們不建議停用此選項，因為它可能會阻止配方的正確追蹤。\n\n你也可以將此設定綁定到一個按鍵上。（僅在打開專業技能時工作）\n\n按鍵設定 -> 插件 -> ALL THE THINGS -> 打開/關閉專業技能列表";
+	L.SKIP_CUTSCENES_CHECKBOX = "自動跳過過場動畫";
+	L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "如果想讓 ATT 代替你自動跳過所有過場動畫請啟用此選項。";
+	L.MINIMAP_BUTTON_CHECKBOX = "顯示小地圖按鈕";
+	L.MINIMAP_BUTTON_CHECKBOX_TOOLTIP = "如果要查看小地圖按鈕，請啟用此選項。使用此按鈕可以快速拜訪主列表，顯示總體收藏進度，並通過點擊右鍵拜訪設定菜單。\n\n有些人不喜歡混亂。或者，你可以通過在聊天框中鍵入'/att'來拜訪主列表。從那里，你可以點擊右鍵標題以進入設定菜單。";
+	L.MINIMAP_SLIDER = "小地圖按鈕尺寸";
+	L.MINIMAP_SLIDER_TOOLTIP = '使用此選項可自訂小地圖按鈕的大小。\n\n預設：36';
+	L.WORLDMAP_BUTTON_CHECKBOX = "顯示世界地圖按鈕";
+	L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "如果要在世界地圖上看到 ATT 按鈕，請啟用此選項。使用此按鈕可以快速拜訪當前顯示區域的迷你列表。通常情況下，你需要親自前往該區域才能看到迷你列表上的內容，你可以通過在聊天框中鍵入'/att mini'來拜訪迷你列表。";
+
 -- Big new chunk from AllTheThings.lua
 	L.TRACKING_PROGRESS = "追蹤進度";
 	L.COLLECTED_STRING = " 已收藏";
-	L.PROVIDERS = "供應商";
 	L.COLLECTION_PROGRESS = "收藏進度";
 	L.CONTAINS = "包含：";
 	L.FACTIONS = "陣營";
-	L.AND_MORE = "和 %s 更多...";	--TODO: check
 	L.AND_OTHER_SOURCES = "和 %s 其他來源...";	--TODO: check
 	L.NO_COORDINATES_FORMAT = "%s 沒有已知座標";
 	L.TOM_TOM_NOT_FOUND = "必須安裝 TomTom 才能繪製座標。";
@@ -204,8 +282,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.COMPLETED_MONTHLY = "可以每月完成";
 	L.COMPLETED_YEARLY = "可以每年完成";
 	L.COMPLETED_MULTIPLE = "可以重複多次";
-	L.CRITERIA_FOR = "準則";
-	L.CURRENCY_FOR = "貨幣";
 	L.LOOT_TABLE_CHANCE = "拾取列表機率";
 	L.BEST_BONUS_ROLL_CHANCE = "最佳額外投骰機率";
 	L.BEST_PERSONAL_LOOT_CHANCE = "最佳個人拾取機率";
@@ -328,7 +404,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.."點擊鎖定視窗";
 	L.TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.."點擊解鎖視窗";
 	L.QUEST_ROW_INSTRUCTIONS = "右擊查看任何任務鏈要求";
-	L.SYM_ROW_INFORMATION = "點擊右鍵以查看來自其他位置的其它內容";
 	L.QUEST_ONCE_PER_ACCOUNT = "帳號一次性任務";
 
 -- Settings.lua
@@ -364,45 +439,22 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 			--TODO: L.PRESET_RESTORE = "Restore";
 			--TODO: L.PRESET_RESTORE_TOOLTIP = "Restore your tracking options to before applying any presets.";
 
-		L.MINIMAP_SLIDER = "小地圖按鈕尺寸";
-		L.MINIMAP_SLIDER_TOOLTIP = '使用此選項可自訂小地圖按鈕的大小。\n\n預設：36';
 		L.EXTRA_THINGS_LABEL = "其他資源";
-		L.MINIMAP_BUTTON_CHECKBOX = "顯示小地圖按鈕";
-		L.MINIMAP_BUTTON_CHECKBOX_TOOLTIP = "如果要查看小地圖按鈕，請啟用此選項。使用此按鈕可以快速拜訪主列表，顯示總體收藏進度，並通過點擊右鍵拜訪設定菜單。\n\n有些人不喜歡混亂。或者，你可以通過在聊天框中鍵入'/att'來拜訪主列表。從那里，你可以點擊右鍵標題以進入設定菜單。";
-		L.WORLDMAP_BUTTON_CHECKBOX = "顯示世界地圖按鈕";
-		L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "如果要在世界地圖上看到 ATT 按鈕，請啟用此選項。使用此按鈕可以快速拜訪當前顯示區域的迷你列表。通常情況下，你需要親自前往該區域才能看到迷你列表上的內容，你可以通過在聊天框中鍵入'/att mini'來拜訪迷你列表。";
 		L.CLICK_TO_CREATE_FORMAT = "點擊創建 %s";
-		L.KEYBINDINGS_TEXT = "可以在遊戲選項中設定 ATT 的按鍵綁定。";
-
-	-- Interface tab
-		L.DESCRIPTIONS = "描述";
-		L.LORE = "傳言";
-		L.CLASSES = "職業";
-		L.ADDITIONAL_LABEL = "附加資訊";
 
 	-- Features tab
-		L.MINIMAP_LABEL = "小地圖按鈕";
-		L.MODULES_LABEL = "模組和小列表";
-		L.SKIP_CUTSCENES_CHECKBOX = "自動跳過過場動畫";
-		L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "如果想讓 ATT 代替你自動跳過所有過場動畫請啟用此選項。";
 		L.AUTO_BOUNTY_CHECKBOX = "自動打開獎勵列表";
 		L.AUTO_BOUNTY_CHECKBOX_TOOLTIP = "如果想查看具有傑出收藏獎勵的物品，請啟用此選項。如果設法抓住顯示在此列表中的物品之一，可以賺到一筆不錯的金幣。\n\n快捷命令：/attbounty";
 		L.AUTO_MAIN_LIST_CHECKBOX = "自動打開主列表";
 		L.AUTO_MAIN_LIST_CHECKBOX_TOOLTIP = "如果你想在登錄時自動打開主列表請啟用此選項。\n\n你也可以將此設定綁定到一個鍵上：\n\n按鍵設定 -> 插件 -> ALL THE THINGS -> 打開/關閉主列表\n\n快捷命令：/att";
 		L.AUTO_MINI_LIST_CHECKBOX = "自動打開小列表";
 		L.AUTO_MINI_LIST_CHECKBOX_TOOLTIP = "如果你想查看在當前區域內可以收藏的所有資訊請啟用此選項。當改變區域時列表將自動切換。有些人不喜歡這個功能，但是當你單刷的時候這個功能是非常有用的。\n\n你也可以將此設定綁定到一個按鍵上。\n\n按鍵設定 -> 插件 -> ALL THE THINGS -> 打開/關閉小列表\n\n快捷命令：/att mini";
-		L.AUTO_PROF_LIST_CHECKBOX = "自動打開專業列表";
-		L.AUTO_PROF_LIST_CHECKBOX_TOOLTIP = "如果你希望 ATT 在你打開專業技能時打開並刷新專業技能列表請啟用此選項。由於暴雪 API 限制，只有在打開專業技能介面時，插件才能與專業技能資料進行互動。當你換成其他專業技能時列表會自動切換。\n\n我們不建議停用此選項，因為它可能會阻止配方的正確追蹤。\n\n你也可以將此設定綁定到一個按鍵上。（僅在打開專業技能時工作）\n\n按鍵設定 -> 插件 -> ALL THE THINGS -> 打開/關閉專業技能列表";
 		L.AUTO_RAID_ASSISTANT_CHECKBOX = "自動打開團隊助手";
 		L.AUTO_RAID_ASSISTANT_CHECKBOX_TOOLTIP = "如果你想看到一個名為'團隊助手'的替代組/隊伍/團隊設定管理器請啟用此選項。每當隊伍設定改變時列表會自動更新。\n\n你也可以將此設定綁定到一個按鍵上。\n\n按鍵設定 -> 插件 -> ALL THE THINGS -> 打開/關閉團隊助手\n\n快捷命令：/attra";
 		L.AUTO_WQ_LIST_CHECKBOX = "自動打開世界任務列表";
 		L.AUTO_WQ_LIST_CHECKBOX_TOOLTIP = "如果你想讓'世界任務'列表自動出現請啟用此選項。每當你切換區域時列表將自動更新。\n\n你也可以將此設定綁定到一個按鍵上。\n\n按鍵設定 -> 插件 -> ALL THE THINGS -> 打開/關閉世界任務列表\n\n快捷命令：/attwq";
 		L.AUCTION_TAB_CHECKBOX = "顯示拍賣行模組標籤";
 		L.AUCTION_TAB_CHECKBOX_TOOLTIP = "如果你想查看 ATT 提供的拍賣行模組請啟用此選項。\n\n一些插件很調皮會大量修改這個框架。ATT 並不總是和那些玩具玩得很好。";
-		L.ICON_LEGEND_STATUS_LABEL = "圖標圖例";
-		L.ICON_LEGEND_STATUS_TEXT = app.ccColors.White .. "|T" .. app.asset("status-unobtainable") .. ":0|t " .. "無法獲得" .. "\n|T" .. app.asset("status-prerequisites") .. ":0|t " .. "僅在滿足先決條件的情況下獲得" .. "\n|T" .. app.asset("status-seasonal-available") .. ":0|t " .. AVAILABLE .."季節性內容" .. "\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t " .. UNAVAILABLE .. "季節性內容" .. "\n|T374225:0|t " .. "當前角色不可用";	--TODO: check (un)available seasonal content
-		L.CHAT_COMMANDS_LABEL = "聊天命令";
-		L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFF或|R /things |cffFFFFFF或|R /allthethings\n|cffFFFFFF打開主列表。\n\n|R/att mini |cffFFFFFF或|R /attmini\n|cffFFFFFF打開小列表。\n\n|R/att bounty\n|cffFFFFFF打開被出錯或未確認的物品列表。\n\n|R/att ra |cffFFFFFF或|R /attra\n|cffFFFFFF打開團隊助手。\n\n|R/att wq |cffFFFFFF或|R /attwq\n|cffFFFFFF打開世界任務列表。\n\n|R/att item:1234 |cffFFFFFF或|R /att [物品連接]\n|cffFFFFFF打開一個共享外觀的視窗。也適用於其他事物，例如|R quest:1234|cffFFFFFF，|Rnpcid:1234|cffFFFFFF，|Rmapid:1234|cffFFFFFF 或 |Rrecipeid:1234|cffFFFFFF。\n\n|R/att rwp\n|cffFFFFFF顯示所有未來用更新刪除的東西。\n\n|R/att random |cffFFFFFF或|R /attrandom |cffFFFFFF或|R /attran\n|cffFFFFFF打開隨機列表。\n\n|R/att unsorted\n|cffFFFFFF打開未知來源物品列表。最好在偵錯模式下打開。\n\n|R/rl\n|cffFFFFFF重載魔獸介面。|R";
 
 	-- Sync Window
 		L.ACCOUNT_MANAGEMENT = "帳號管理";
@@ -442,38 +494,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 
 		L.SECRETS_HEADER = "解密";
 		L.SOURCE_ID_MISSING = "請在 ATT Discord 的 #retail-errors 中回報此物品及其獲得地點！";
-		--TODO: recheck these patch strings
 
-
-	-- Filter Text
-		L.ARTIFACT_ID = "神器 ID";
-		L.AZERITE_ESSENCE_ID = "艾澤拉斯精華 ID";
-		L.CREATURE_ID = "生物 ID";
-		L.CURRENCY_ID = "貨幣 ID";
-		L.DIFFICULTY_ID = "難度 ID";
-		L.ENCOUNTER_ID = "首領戰鬥 ID";
-		L.EXPANSION_ID = "資料片 ID";
-		L.FILTER_ID = "濾鏡 ID";
-		L.FOLLOWER_ID = "追隨者 ID";
-		L.HEADER_ID = "標頭 ID";
-		L.ILLUSION_ID = "幻象 ID";
-		L.INSTANCE_ID = "副本 ID";
-		L.ITEM_ID = "物品 ID";
-		L.FACTION_ID = "陣營 ID";
-		L.FLIGHT_PATH_ID = "飛行路線 ID";
-		L.MAP_ID = "地圖 ID";
-		L.MOUNT_ID = "坐騎 ID";
-		L.MUSIC_ROLL_ID = "樂譜 ID";
-		L.NPC_ID = "NPC ID";
-		L.OBJECT_ID = "道具 ID";
-		L.QUEST_ID = "任務 ID";
-		L.SET_ID = "套裝 ID";
-		L.SOURCE_ID = "來源 ID";
-		L.SPECIES_ID = "品種 ID";
-		L.SPELL_ID = "法術 ID";
-		L.TITLE_ID = "頭銜 ID";
-		L.TOY_ID = "玩具 ID";
-		L.VISUAL_ID = "外觀 ID";
 		L.ITEM_LEVEL = "物品等級";
 
 	-- Artifact Relic Completion

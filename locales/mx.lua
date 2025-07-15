@@ -138,6 +138,86 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.LOCK_CRITERIA_FACTION_FORMAT = "%s con %s (Actual: %s)";
 	L.TITLES_DESC = "Los títulos se rastrean en toda tu cuenta, sin embargo, tu personaje individual debe calificar para ciertos títulos para poder usarlos en ese personaje.";
 
+-- Filter Text
+	L.ARTIFACT_ID = "Artefacto ID";
+	L.AZERITE_ESSENCE_ID = "Esencia de Azerita ID";
+	L.ART_ID = "Arte ID";
+	L.CAMPSITE_ID = "Sitios de acampado ID";
+	L.CREATURE_ID = "Criatura ID";
+	L.CURRENCY_ID = "Moneda ID";
+	L.DESCRIPTIONS = "Descripciones";
+	L.DIFFICULTY_ID = "Dificultad ID";
+	L.ENCOUNTER_ID = "Encuentro ID";
+	L.EXPANSION_ID = "Expansión ID";
+	L.EXPLORATION_ID = "Exploración ID";
+	L.FILTER_ID = "Filtro ID";
+	L.FOLLOWER_ID = "Seguidores ID";
+	L.GUID = "Global ID";
+	L.HEADER_ID = "Encabezado ID";
+	L.ILLUSION_ID = "Ilusión ID";
+	L.INSTANCE_ID = "Calabozo ID";
+	L.SAVED_INSTANCE_ID = "Calabozos guardados ID";
+	L.ITEM_ID = "Objeto ID";
+	L.FACTION_ID = "Facción ID";
+	L.FLIGHT_PATH_ID = "Ruta de vuelo ID";
+	L.LORE = "Historia";
+	L.MAP_ID = "Mapa ID";
+	L.MISSION_ID = "Misión ID";
+	L.MOUNT_ID = "Montura ID";
+	L.MUSIC_ROLL_ID = "Rollo musical ID";
+	L.NPC_ID = "Pnj ID";
+	L.OBJECT_ID = "Objeto ID";
+	L.PROVIDERS = "Proveedor(es)";
+	L.QUEST_ID = "Misión ID";
+	L.SET_ID = "Set de equipo ID";
+	L.SOURCE_ID = "Fuente ID";
+	L.SPELL_ID = "Hechizo ID";
+	L.SPELL_NAME = "Nombre del hechizo";
+	L.SPECIES_ID = "Especies ID";
+	L.TITLE_ID = "Titulo ID";
+	L.TOY_ID = "Juguete ID";
+	L.VISUAL_ID = "Visual ID";
+	L.AND_MORE = "y %s mas...";
+	L.SYM_ROW_INFORMATION = "Click derecho para ver contenido adicional que su fuente está en otra zona";
+	L.SYM_ROW_SKIP_DESC = "El contenido vinculado solo se muestra en la información sobre la ventana emergente de este objeto.";
+	L.ACHIEVEMENT_PRE_WRATH_SOURCE_QUEST_INFO = "Este logro tiene misiones asociadas que pueden completarse antes de la introducción del sistema de logros que viene con el pre parche de Wrath. No todos los logros se pueden rastrear de esta manera, pero los que sí se puedan, se mostrarán. Los demás logros no rastreables se activarán con el pre parche.";
+	L.CLASSES = "Clases";
+
+	L.ADDITIONAL_LABEL = "Información adicional";
+	L.CRITERIA_FOR = "Criterio para";
+	L.CURRENCY_FOR = "Moneda para";
+
+	L.CHAT_COMMANDS_LABEL = "Comandos de Chat";
+	L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFFor|R /things |cffFFFFFFor|R /allthethings\n|cffFFFFFFAbre la lista principal.\n\n|R/att mini |cffFFFFFFor|R /attmini\n|cffFFFFFFAbre la Mini Lista.\n\n|R/att bounty\n|cffFFFFFFAbre una lista de objetos con errores o no confirmados.\n\n|R/att ra |cffFFFFFFor|R /attra\n|cffFFFFFFAbre el Asistente de Banda.\n\n|R/att wq |cffFFFFFFor|R /attwq\n|cffFFFFFFAbre la lista de Misiones de Mundo.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Enlace del objeto]\n|cffFFFFFFAbre una lista con las apariencias compartidas. También funciona con otras cosas, como|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/att rwp\n|cffFFFFFFMuestra todas las cosas con 'Removido en el parche' en un futuro.\n\n|R/att random |cffFFFFFFor|R /attrandom |cffFFFFFFor|R /attran\n|cffFFFFFFAbre la lista Aleatoria.\n\n|R/att unsorted\n|cffFFFFFFAbre la lista de objetos sin fuente. Mejor abrir en Modo Depuración.\n\n|R/rl\n|cffFFFFFFRecarga tu interfaz de WoW.|R";
+	L.ICON_LEGEND_STATUS_LABEL = "Texto de los iconos de estado";
+	L.ICON_LEGEND_STATUS_TEXT = app.ccColors.White ..
+			"|T" .. app.asset("status-unobtainable") .. ":0|t " .. "No conseguible" ..
+			"\n|T" .. app.asset("status-prerequisites") .. ":0|t " .. "Conseguible solo con requisitos" ..
+			"\n|T" .. app.asset("status-seasonal-available") .. ":0|t " .. "Contenido de temporada disponible" ..
+			"\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t " .. "Contenido de temporada no disponible" ..
+			"\n|T374225:0|t " .. "No disponible en el personaje actual" ..
+			"\n|T" .. app.asset("status-unsorted") .. ":0|t " .. "Sin listar en ATT";
+	L.ICON_LEGEND_MISC_LABEL = "Iconos para textos varios";
+	L.ICON_LEGEND_MISC_TEXT = app.ccColors.White ..
+			"|T" .. app.asset("Currency") .. ":0|t " .. "Usado como una moneda" ..
+			"\n|T" .. app.asset("Interface_Reagent") .. ":0|t " .. "Usado como un componente de fabricación" ..
+			"\n|T" .. app.asset("Interface_Catalyst") .. ":0|t " .. "Convertible en el Catalyst para una nueva apariencia" ..
+			"\n|T" .. app.asset("Interface_Upgrade") .. ":0|t " .. "Se puede mejorar para una nueva apariencia.";
+	L.KEYBINDINGS = SETTINGS_KEYBINDINGS_LABEL;
+	L.KEYBINDINGS_TEXT = "Puedes definir atajos de teclado para ATT en las opciones del juego.";
+	L.MINIMAP_LABEL = "Botón del minimapa";
+	L.MODULES_LABEL = "Módulos y Mini Listas";
+	L.AUTO_PROF_LIST_CHECKBOX = "Abre automáticamente la Lista de Profesiones";
+	L.AUTO_PROF_LIST_CHECKBOX_TOOLTIP = "Activa esta opción si quieres que ATT abra y refresque la lista de profesiones cuando abres tus profesiones. Debido a limitaciones en la API impuestas por Blizzard, el único momento en el que un addon puede interactuar con los datos de profesión es cuando son abiertas. La lista cambia automáticamente cuando cambias a una profesión diferente.\n\nNo recomendamos desactivar esta opción porque pude que prevenir que se rastreen recetas correctamente.\n\nTambién puedes configurar este ajuste a un atajo. (sólo funciona cuando una profesión es abierta)\n\nAtajos de teclado -> Addons -> ALL THE THINGS -> Activar Lista de Profesiones ATT";
+	L.SKIP_CUTSCENES_CHECKBOX = "Omitir automáticamente cinemáticas";
+	L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "Activa esta opción si quieres que ATT omita todas las cinemáticas automáticamente por ti.";
+	L.MINIMAP_BUTTON_CHECKBOX = "Muestra el botón del minimapa";
+	L.MINIMAP_BUTTON_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver el botón del minimapa. Este botón te permite acceder rápidamente a la Lista Principal, que muestra tu progreso total de colección, y acceder a los Ajustes haciendo clic derecho.\n\nA algunas personas no les gusta el desorden. Como alternativa, puedes acceder a la Lista Principal escribiendo '/att' en el chat. Desde allí, puedes hacer clic derecho en el título para ir al menú de ajustes.";
+	L.MINIMAP_SLIDER = "Tamaño del botón del minimapa";
+	L.MINIMAP_SLIDER_TOOLTIP = 'Usa esto para personalizar el tamaño del botón del Minimapa.\n\nPredeterminado: 36';
+	L.WORLDMAP_BUTTON_CHECKBOX = "Muestra el botón del mapa de mundo";
+	L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "Activa esta opción si quiere ver el botón de ATT en tu mapa del mundo. Este botón te permite acceder rápidamente a la Mini Lista de la zona mostrada actualmente. Aunque deberás viajar físicamente a la zona para poder ver el contenido en la Mini Lista a la que puedes acceder cuando escribes '/att mini' en tu chat.";
+
 -- Big new chunk from AllTheThings.lua
 	L.TRACKING_PROGRESS = "Rastreando progreso";
 	L.COLLECTED_STRING = " Recolectado";

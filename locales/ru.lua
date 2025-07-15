@@ -138,6 +138,86 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.LOCK_CRITERIA_FACTION_FORMAT = "%s с %s (Текущее: %s)";
 	L.TITLES_DESC = "Звания отслеживаются по всей учётной записи, однако, некоторые Ваши персонажи могут иметь звания, доступные только им.";
 
+-- Filter Text
+	--TODO: L.ARTIFACT_ID = "Artifact ID";
+	--TODO: L.AZERITE_ESSENCE_ID = "Azerite Essence ID";
+	--TODO: L.ART_ID = "Art ID";
+	--TODO: L.CAMPSITE_ID = "Campsite ID";
+	--TODO: L.CREATURE_ID = "Creature ID";
+	--TODO: L.CURRENCY_ID = "Currency ID";
+	L.DESCRIPTIONS = "Описания";
+	--TODO: L.DIFFICULTY_ID = "Difficulty ID";
+	--TODO: L.ENCOUNTER_ID = "Encounter ID";
+	--TODO: L.EXPANSION_ID = "Expansion ID";
+	--TODO: L.EXPLORATION_ID = "Exploration ID";
+	--TODO: L.FILTER_ID = "Filter ID";
+	--TODO: L.FOLLOWER_ID = "Follower ID";
+	--TODO: L.GUID = "Global ID";
+	--TODO: L.HEADER_ID = "Header ID";
+	--TODO: L.ILLUSION_ID = "Illusion ID";
+	--TODO: L.INSTANCE_ID = "Instance ID";
+	--TODO: L.SAVED_INSTANCE_ID = "Saved Instance ID";
+	--TODO: L.ITEM_ID = "Item ID";
+	--TODO: L.FACTION_ID = "Faction ID";
+	--TODO: L.FLIGHT_PATH_ID = "Flight Path ID";
+	L.LORE = "Лор";
+	--TODO: L.MAP_ID = "Map ID";
+	--TODO: L.MISSION_ID = "Mission ID";
+	--TODO: L.MOUNT_ID = "Mount ID";
+	--TODO: L.MUSIC_ROLL_ID = "Music Roll ID";
+	--TODO: L.NPC_ID = "NPC ID";
+	--TODO: L.OBJECT_ID = "Object ID";
+	--TODO: L.PROVIDERS = "Provider(s)";
+	--TODO: L.QUEST_ID = "Quest ID";
+	--TODO: L.SET_ID = "Gear Set ID";
+	--TODO: L.SOURCE_ID = "Source ID";
+	--TODO: L.SPELL_ID = "Spell ID";
+	--TODO: L.SPELL_NAME = "Spell Name";
+	--TODO: L.SPECIES_ID = "Species ID";
+	--TODO: L.TITLE_ID = "Title ID";
+	--TODO: L.TOY_ID = "Toy ID";
+	--TODO: L.VISUAL_ID = "Visual ID";
+	L.AND_MORE = "И ещё %s...";
+	L.SYM_ROW_INFORMATION = "Правый клик - Показать дополнительный контент из других источников";
+	--TODO: L.SYM_ROW_SKIP_DESC = "Linked content is only displayed in the tooltip for this object.";
+	--TODO: L.ACHIEVEMENT_PRE_WRATH_SOURCE_QUEST_INFO = "This achievement has associated quests that can be completed before the introduction of the Achievement system coming with the Wrath Prepatch. Not all achievements can be tracked this way, but for those that can, they will be displayed. All other non-trackable achievements will be activated with the prepatch.";
+	L.CLASSES = "Классы";
+
+	L.ADDITIONAL_LABEL = "Дополнительная Информация";
+	L.CRITERIA_FOR = "Критерий для";
+	L.CURRENCY_FOR = "Валюта для";
+
+	L.CHAT_COMMANDS_LABEL = "Команды Чата";
+	L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFFили|R /things |cffFFFFFFиои|R /allthethings\n|cffFFFFFFОткрыть Главный Список.\n\n|R/att mini |cffFFFFFFиои|R /attmini\n|cffFFFFFFОткрыть Мини Список.\n\n|R/att bounty\n|cffFFFFFFОткрыть список забагованных или неподтверждённых предметов.\n\n|R/att ra |cffFFFFFFили|R /attra\n|cffFFFFFFОткрыть Рейдовый Помощник.\n\n|R/att wq |cffFFFFFFили|R /attwq\n|cffFFFFFFОткрыть Список Локальных Заданий.\n\n|R/att item:1234 |cffFFFFFFили|R /att [Ссылка на Предмет]\n|cffFFFFFFОткрыть окно общих моделей. Также работает с другими Штучками, например, |R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF или |Rrecipeid:1234|cffFFFFFF.\n\n|R/att rwp\n|cffFFFFFFПоказать все Штучки, которые будет невозможно получить в будущем.\n\n|R/att nwp\n|cffFFFFFFПоказать все Штучки, добавленные в последнем патче.\n\n|R/att random |cffFFFFFFили|R /attrandom |cffFFFFFFили|R /attran\n|cffFFFFFFОткрыть Случайный Список.\n\n|R/att unsorted\n|cffFFFFFFОткрыть список несортированных Штучек. Лучше в Режиме Отладки.\n\n|R/rl\n|cffFFFFFFПерезагрузить интерфейс WoW.|R";
+	L.ICON_LEGEND_STATUS_LABEL = "Аннотация иконок";
+	L.ICON_LEGEND_STATUS_TEXT = app.ccColors.White ..
+			"|T" .. app.asset("status-unobtainable") .. ":0|t " .. "Недоступно" ..
+			"\n|T" .. app.asset("status-prerequisites") .. ":0|t " .. "Доступно с условием" ..
+			"\n|T" .. app.asset("status-seasonal-available") .. ":0|t " .. "Доступная Праздничная Штучка" ..
+			"\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t " .. "Недоступная Праздничная Штучка" ..
+			"\n|T374225:0|t " .. "Недоступно на текущем персонаже" ..
+	--TODO:		"\n|T" .. app.asset("status-unsorted") .. ":0|t " .. "Unsorted in ATT";
+	--TODO: L.ICON_LEGEND_MISC_LABEL = "Miscellaneous Icons Legend";
+	--TODO: L.ICON_LEGEND_MISC_TEXT = app.ccColors.White ..
+	--TODO:		"|T" .. app.asset("Currency") .. ":0|t " .. "Used as a currency" ..
+	--TODO:		"\n|T" .. app.asset("Interface_Reagent") .. ":0|t " .. "Used as a crafting reagent" ..
+	--TODO:		"\n|T" .. app.asset("Interface_Catalyst") .. ":0|t " .. "Convertible at the Catalyst for a new appearance" ..
+	--TODO:		"\n|T" .. app.asset("Interface_Upgrade") .. ":0|t " .. "Can be upgraded for a new appearance";
+	L.KEYBINDINGS = SETTINGS_KEYBINDINGS_LABEL;
+	L.KEYBINDINGS_TEXT = "Вы можете назначить клавиши для ATT в настройках игры.";
+	L.MINIMAP_LABEL = "Кнопка у Миникарты";
+	L.MODULES_LABEL = "Модули и Мини Списки";
+	L.AUTO_PROF_LIST_CHECKBOX = "Авто Открывать Список Профессии";
+	L.AUTO_PROF_LIST_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите, чтобы ATT автоматически открывал и обновлял список профессии, когда Вы открываете Ваши профессии. Из-за навязанных ограничений API, аддоны могут взаимодействовать с профессиями только, когда они открыты. Этот список будет автоматически переключаться, когда Вы открываете другую профессию.\n\nМы не рекомедуем отключать данную опцию, поскольку она может предотватить некорректное отслеживание рецептов.\n\nВы также можете назначить клавишу для данной настройки (работает только при открытой профессии):\n\nНазначение Клавиш -> Модификации -> ALL THE THINGS -> Переключить Список Профессии";
+	L.SKIP_CUTSCENES_CHECKBOX = "Авто Пропуск Сцен";
+	L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите, чтобы ATT автоматичски пропускал все внутриигровые сцены.";
+	L.MINIMAP_BUTTON_CHECKBOX = "Показывать Кнопку у Миникарты";
+	L.MINIMAP_BUTTON_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите кнопку у миникарты. Эта кнопка позволяет Вам быстро открыть Основной список, показать Ваш общий прогресс и открыть Меню Настроек по Правому Клику.\n\nНекоторые люди не любят захламленность. Альтернативно, Вы можете открыть Основной список командой '/att' в чате. Оттуда Правым Кликом по заголовку открыть Меню Настроек.";
+	L.MINIMAP_SLIDER = "Размер Кнопки Миникарты";
+	L.MINIMAP_SLIDER_TOOLTIP = 'Используйте для установления желаемого размера Кнопки Миникарты.\n\nПо умолчанию: 36';
+	L.WORLDMAP_BUTTON_CHECKBOX = "Показывать Кнопку на Карте";
+	L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите кнопку ATT на Вашей карте. Эта кнопка позволяет открыть Мини список ATT для открытой зоны на карте. В обычной ситуации Вам требуется физически быть в зоне, чтобы набрать '/att mini' в чате.";
+
 -- Big new chunk from AllTheThings.lua
 	L.TRACKING_PROGRESS = "Отслеживание выполнения";
 	L.COLLECTED_STRING = " Собрано";
@@ -145,7 +225,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.COLLECTION_PROGRESS = "Прогресс Коллекции";
 	L.CONTAINS = "Содержит:";
 	L.FACTIONS = "Фракции";
-	L.AND_MORE = "И ещё %s...";
 	L.AND_OTHER_SOURCES = "И %s других источников...";
 	L.NO_COORDINATES_FORMAT = "Нет координат для %s";
 	L.TOM_TOM_NOT_FOUND = "Нужен TomTom, чтобы ставить Указатели.";
@@ -205,8 +284,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.COMPLETED_MONTHLY = "Может быть выполнено ежемесячно.";
 	L.COMPLETED_YEARLY = "Может быть выполнено ежегодно.";
 	L.COMPLETED_MULTIPLE = "Может быть выполнено несколько раз.";
-	L.CRITERIA_FOR = "Критерий для";
-	L.CURRENCY_FOR = "Валюта для";
 	L.LOOT_TABLE_CHANCE = "Общий шанс получения";
 	L.BEST_BONUS_ROLL_CHANCE = "Наилучший шанс бонусного броска";
 	L.BEST_PERSONAL_LOOT_CHANCE = "Наилучший шанс Персональной добычи";
@@ -327,7 +404,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.." клик - Закрепить это Окно";
 	L.TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.." клик - Открепить это Окно";
 	L.QUEST_ROW_INSTRUCTIONS = "Правый клик - Открыть Цепочку Заданий";
-	L.SYM_ROW_INFORMATION = "Правый клик - Показать дополнительный контент из других источников";
 	L.QUEST_ONCE_PER_ACCOUNT = "Один-Раз-На-Аккаунт Задание";
 
 -- Settings.lua
@@ -363,47 +439,25 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 			--TODO: L.PRESET_RESTORE = "Restore";
 			--TODO: L.PRESET_RESTORE_TOOLTIP = "Restore your tracking options to before applying any presets.";
 
-		L.MINIMAP_SLIDER = "Размер Кнопки Миникарты";
-		L.MINIMAP_SLIDER_TOOLTIP = 'Используйте для установления желаемого размера Кнопки Миникарты.\n\nПо умолчанию: 36';
 		L.EXTRA_THINGS_LABEL = "Дополнительные Штучки";
-		L.MINIMAP_BUTTON_CHECKBOX = "Показывать Кнопку у Миникарты";
-		L.MINIMAP_BUTTON_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите кнопку у миникарты. Эта кнопка позволяет Вам быстро открыть Основной список, показать Ваш общий прогресс и открыть Меню Настроек по Правому Клику.\n\nНекоторые люди не любят захламленность. Альтернативно, Вы можете открыть Основной список командой '/att' в чате. Оттуда Правым Кликом по заголовку открыть Меню Настроек.";
-		L.WORLDMAP_BUTTON_CHECKBOX = "Показывать Кнопку на Карте";
-		L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите кнопку ATT на Вашей карте. Эта кнопка позволяет открыть Мини список ATT для открытой зоны на карте. В обычной ситуации Вам требуется физически быть в зоне, чтобы набрать '/att mini' в чате.";
 		L.CLICK_TO_CREATE_FORMAT = "Нажмите, чтобы создать %s";
 		L.LOADING_FORMAT = "%s загружаются...";
 		L.READY_FORMAT = "%s загрузились";
-		L.KEYBINDINGS_TEXT = "Вы можете назначить клавиши для ATT в настройках игры.";
-
-	-- Interface tab
-		L.ADDITIONAL_LABEL = "Дополнительная Информация";
-		L.DESCRIPTIONS = "Описания";
-		L.LORE = "Лор";
-		L.CLASSES = "Классы";
 
 	-- Features tab
-		L.MINIMAP_LABEL = "Кнопка у Миникарты";
-		L.MODULES_LABEL = "Модули и Мини Списки";
-		L.SKIP_CUTSCENES_CHECKBOX = "Авто Пропуск Сцен";
-		L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите, чтобы ATT автоматичски пропускал все внутриигровые сцены.";
 		L.AUTO_BOUNTY_CHECKBOX = "Авто Открывать Список Пропаж";
 		L.AUTO_BOUNTY_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите, чтобы ATT автоматически открывал список предметов, которые считаются крайне важными для нахождения. Если у Вас получится стащить один из перечисленных здесь предметов, Вы можете сделать получить хорошую сумку золотых.\n\nБыстрая Команда: /attbounty";
 		L.AUTO_MAIN_LIST_CHECKBOX = "Авто Открывать Основной Список";
 		L.AUTO_MAIN_LIST_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите, чтобы ATT автоматически открывал Основной Список при входе в игру.\n\nВы также можете назначить клавишу для данной настройки:\n\nНазначение Клавиш -> Модификации -> ALL THE THINGS -> Переключить Основной Список\n\nБыстрая Команда: /att";
 		L.AUTO_MINI_LIST_CHECKBOX = "Авто Открывать Мини Список";
 		L.AUTO_MINI_LIST_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть всё, что можно собрать в текущей локации. Этот список будет автоматически изменяться при смене зоны. Некоторым людям не нравится данная особенность, но когда Вы играете соло, данная опция крайне полезна.\n\nВы также можете назначить клавишу для данной настройки:\n\nНазначение Клавиш -> Модификации -> ALL THE THINGS -> Переключить Мини Список\n\nБыстрая Команда: /att mini";
-		L.AUTO_PROF_LIST_CHECKBOX = "Авто Открывать Список Профессии";
-		L.AUTO_PROF_LIST_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите, чтобы ATT автоматически открывал и обновлял список профессии, когда Вы открываете Ваши профессии. Из-за навязанных ограничений API, аддоны могут взаимодействовать с профессиями только, когда они открыты. Этот список будет автоматически переключаться, когда Вы открываете другую профессию.\n\nМы не рекомедуем отключать данную опцию, поскольку она может предотватить некорректное отслеживание рецептов.\n\nВы также можете назначить клавишу для данной настройки (работает только при открытой профессии):\n\nНазначение Клавиш -> Модификации -> ALL THE THINGS -> Переключить Список Профессии";
 		L.AUTO_RAID_ASSISTANT_CHECKBOX = "Авто Открывать Рейдового Помощника";
 		L.AUTO_RAID_ASSISTANT_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите, чтобы ATT автоматически открывал альтернативное окно для управления настройками группы/рейда под названием 'Рейдовый Помощник'. Список автоматически обновляется, когда настройки группы меняются.\n\nВы также можете назначить клавишу для данной настройки:\n\nНазначение Клавиш -> Модификации -> ALL THE THINGS -> Переключить Рейдового Помощника\n\nБыстрая Команда: /attra";
 		L.AUTO_WQ_LIST_CHECKBOX = "Авто Открывать Локальные Задания";
 		L.AUTO_WQ_LIST_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите, чтобы ATT автоматически открывал Список 'Локальных Заданий'. Этот список автоматически обновляется, когда Вы меняете локацию.\n\nВы также можете назначить клавишу для данной настройки:\n\nНазначение Клавиш -> Модификации -> ALL THE THINGS -> Переключить Локальные Задания\n\nБыстрая Команда: /attwq";
 		L.AUCTION_TAB_CHECKBOX = "Показать Модуль Ауциона";
 		L.AUCTION_TAB_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть Модуль Аукциона ATT.\n\nНекоторые модификации - плохие ребята, и значительно изменяют это окно. ATT не всегда хорошо играет с такими игрушками.";
-		L.ICON_LEGEND_STATUS_LABEL = "Аннотация иконок";
 		L.ICON_LEGEND_STATUS_TEXT = app.ccColors.White .. "|T" .. app.asset("status-unobtainable") .. ":0|t " .. "Недоступно" .. "\n|T" .. app.asset("status-prerequisites") .. ":0|t " .. "Доступно с условием" .. "\n|T" .. app.asset("status-seasonal-available") .. ":0|t " .. "Доступная Праздничная Штучка" .. "\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t " .. "Недоступная Праздничная Штучка" .. "\n|T374225:0|t " .. "Недоступно на текущем персонаже";
-		L.CHAT_COMMANDS_LABEL = "Команды Чата";
-		L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFFили|R /things |cffFFFFFFиои|R /allthethings\n|cffFFFFFFОткрыть Главный Список.\n\n|R/att mini |cffFFFFFFиои|R /attmini\n|cffFFFFFFОткрыть Мини Список.\n\n|R/att bounty\n|cffFFFFFFОткрыть список забагованных или неподтверждённых предметов.\n\n|R/att ra |cffFFFFFFили|R /attra\n|cffFFFFFFОткрыть Рейдовый Помощник.\n\n|R/att wq |cffFFFFFFили|R /attwq\n|cffFFFFFFОткрыть Список Локальных Заданий.\n\n|R/att item:1234 |cffFFFFFFили|R /att [Ссылка на Предмет]\n|cffFFFFFFОткрыть окно общих моделей. Также работает с другими Штучками, например, |R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF или |Rrecipeid:1234|cffFFFFFF.\n\n|R/att rwp\n|cffFFFFFFПоказать все Штучки, которые будет невозможно получить в будущем.\n\n|R/att nwp\n|cffFFFFFFПоказать все Штучки, добавленные в последнем патче.\n\n|R/att random |cffFFFFFFили|R /attrandom |cffFFFFFFили|R /attran\n|cffFFFFFFОткрыть Случайный Список.\n\n|R/att unsorted\n|cffFFFFFFОткрыть список несортированных Штучек. Лучше в Режиме Отладки.\n\n|R/rl\n|cffFFFFFFПерезагрузить интерфейс WoW.|R";
 
 	-- Sync Window
 		L.ACCOUNT_MANAGEMENT = "Управление Аккаунтами";
