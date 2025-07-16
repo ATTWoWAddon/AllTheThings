@@ -555,7 +555,6 @@ for key,value in pairs({
 		SKIP_AUTO_REFRESH_TOOLTIP = "默认情况下(未勾选)，任何可能影响可见数据的设置变化都会导致自动刷新。\n\n通过启用该选项设置的变化将不会生效，直到玩家 "..SHIFT_KEY_TEXT.."点击 ATT 窗口执行全部刷新。";
 
 	-- About Page
-		ABOUT_PAGE = "关于";
 		ABOUT_TOP = " |CFFFFFFFF是一个收藏跟踪插件，可以向您展示在游戏中获取所有内容的位置和方式！我们的 Discord 上有大量用户社区（底部链接），您可以在其中提问、提交建议以及报告错误或丢失的物品。如果发现一些收藏品或未记录的任务，可以在 Discord 上告诉我们，或者对于更精通技术的人，我们有一个您可以直接贡献的 Git。\n\n虽然我们努力争取完成，但每个补丁都会添加很多东西，所以如果我们遗漏了什么，请理解我们是一个小团队，试图跟上变化并自己收藏东西。:D\n\n在我直播时随时问我问题，我会尽力回答，即使它与 ATT（一般魔兽插件编程也是如此）没有直接关系。\n\n- |r|Cffff8000Crieve|r";
 		ABOUT_BOTTOM = "活跃贡献者：|CFFFFFFFF（按字母顺序排列）\n%s\n\n|r名人堂：|CFFFFFFFF（按字母顺序排列）\n%s\n\n特别鸣谢 AmiYuy（CanIMogIt）和 Caerdon（Caerdon Wardrobe）。绝对应该下载他们的插件，以便在背包中的物品上显示收藏图标！%s %s %s\n\n如需在线收藏比较，请访问 Shoogen 的 DataForAzeroth.com 和 Freddie 的 WoWthing.org！|r";
 		CLIPBOARDCOPYPASTE = "Ctrl+A, Ctrl+C 复制到剪贴板。";

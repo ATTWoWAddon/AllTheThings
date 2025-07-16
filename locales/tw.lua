@@ -560,7 +560,6 @@ for key,value in pairs({
 		SKIP_AUTO_REFRESH_TOOLTIP = "預設情況下(未勾選)，任何可能影響可見資料的設定變化都會導致自動刷新。\n\n通過啟用該選項設定的變化將不會生效，直到玩家 "..SHIFT_KEY_TEXT.."點擊 ATT 視窗執行全部刷新。";
 
 	-- About Page
-		ABOUT_PAGE = "關於";
 		ABOUT_TOP = " |CFFFFFFFF是一個收藏追蹤插件，可以向您展示在遊戲中獲得所有內容的位置和方式！我們的 Discord 上有大量用戶社群（底部連結），您可以在其中提問、提交建議以及回報錯誤或丟失的物品。如果發現一些收藏品或未記錄的任務，可以在 Discord 上告訴我們，或者對於更精通技術的人，我們有一個您可以直接貢獻的 Git。\n\n雖然我們努力爭取完成，但每次更新都會加入很多東西，所以如果我們遺漏了什麼，請理解我們是一個小團隊，試圖跟上變化並自己收藏東西。:D\n\n在我直播時隨時問我問題，我會盡力回答，即使它與 ATT（一般魔獸插件程式也是如此）沒有直接關係。\n\n- |r|Cffff8000Crieve|r";
 		ABOUT_BOTTOM = "活躍貢獻者：|CFFFFFFFF（排名不分先後）\n%s！\n|r名人堂：|CFFFFFFFF（排名不分先後）\n%s\n\n特別鳴謝 AmiYuy（CanIMogIt）和 Caerdon（Caerdon Wardrobe）。絕對應該下載他們的插件，以獲得背包中物品的收藏圖標！ %s %s %s\n\n如需線上收藏比較，請拜訪 Shoogen 的 DataForAzeroth.com 和 Freddie 的 WoWthing.org！|r";	--TODO: now in alphabetical order
 		CLIPBOARDCOPYPASTE = "Ctrl+A, Ctrl+C 複製到剪貼簿。";
