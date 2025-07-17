@@ -19,13 +19,6 @@ NEW_VERSION_FLAVORS = {
 };
 
 
-MINIMAP_MOUSEOVER_TEXT = "Right Click to change settings.\nLeft Click to open the Main List.\n"..CTRL_KEY_TEXT.." Click to open the Mini List.\n"..SHIFT_KEY_TEXT.." Click to Refresh Collections.";
-TOP_ROW_INSTRUCTIONS = "|cff3399ffLeft Click and Drag to Move\nRight Click to Open the Settings Menu\n"..CTRL_KEY_TEXT.." Click to Expand/Collapse Recursively\n"..SHIFT_KEY_TEXT.." Click to Refresh Collections\n"..SHIFT_KEY_TEXT.." Right Click to Sort Groups/Popout Lists|r";
-OTHER_ROW_INSTRUCTIONS = "|cff3399ffLeft Click to Expand/Collapse\nRight Click to Pop Out to Mini List\n"..CTRL_KEY_TEXT.." Click to Expand/Collapse Recursively\n"..SHIFT_KEY_TEXT.." Click to Refresh Collections\n"..SHIFT_KEY_TEXT.." Right Click to Sort Groups/Popout Lists\n"..ALT_KEY_TEXT.." Right Click to Plot Waypoints|r";
-TOP_ROW_INSTRUCTIONS_AH = "|cff3399ffLeft Click and Drag to Move\nRight Click to Open the Settings Menu\n"..SHIFT_KEY_TEXT.." Click to Search the Auction House|r";
-OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffLeft Click to Expand/Collapse\nRight Click to Pop Out to Mini List\n"..SHIFT_KEY_TEXT.." Click to Search the Auction House|r";
-REQUIRES_SKYRIDING = "|CFF00FFDE"..(SPELL_FAILED_CUSTOM_ERROR_1029 or "Requires Skyriding").."|r";
-REPORT_TIP = "\n("..CTRL_KEY_TEXT.."+C to copy multiline report to your clipboard)";
 
 
 
@@ -50,17 +43,9 @@ INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |c" .. app.Colors.Complete
 INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";	
 
 
-BOUND_ON = "Bound on %s |T" .. app.asset("known_circle_yellow") .. ":0|t";
-
-MARKS_OF_HONOR_DESC = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then "..SHIFT_KEY_TEXT.." click to link the item)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
-MOP_REMIX_BRONZE_DESC = "Bronze must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then "..SHIFT_KEY_TEXT.." click to link the currency)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
-REQUIRED_ACHIEVEMENTS = ITEM_REQ_SKILL:format(ACHIEVEMENTS);
-FOLLOWERS_COLLECTION_DESC = "Followers can be collected account wide, if you enable this setting in ATT.\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.." clicking the header for this to be detected.";
-MUSIC_ROLLS_DESC = "These are unlocked per-character and are not currently shared across your account. If someone at Blizzard is reading this, it would be really swell if you made these account wide.\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.." clicking the header for this to be detected.";
 
 
-RESET_INSTANCES_DESC = "Click here to reset your instances.\n\n"..ALT_KEY_TEXT.." click to toggle automatically resetting your instances when you leave a dungeon.\n\nWARNING: BE CAREFUL WITH THIS!";
-UPDATE_WORLD_QUESTS_DESC = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!\n\n"..ALT_KEY_TEXT.." click to include currently-available Things which may not be time-limited";
+
 
 
 TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.." click to Lock this Window";
@@ -172,9 +157,7 @@ ABBREVIATIONS = {
 
 
 
-FORCE_REFRESH_REQUIRED = "This may require a Force Refresh ("..SHIFT_KEY_TEXT.." click) to properly be collected.";
 
-UNSORTED_DESC = "This thing hasn't been Sourced yet within ATT " .. app.Version .. ".";
 
 
 EXPANSION_DATA = {
@@ -243,8 +226,6 @@ PRESET_INSANE = "|c" .. app.DefaultColors.Insane .. "Insane Mode|R enables all |
 PRESET_ACCOUNT = "|c" .. app.DefaultColors.Account .. "Account Mode|R enables all account-wide tracking, and will show progress from all of your characters.";
 
 
-LOADING_FORMAT = "%s "..LFG_LIST_LOADING;	-- %s Loading...	-- unused
-READY_FORMAT = "%s "..READY;	-- %s Ready	-- unused
 
 
 
@@ -310,14 +291,12 @@ SPELL_NAME_TO_SPELL_ID = {
 	["Cнятие шкур"] = 8613,	-- Skinning		-- Required for RU
 };
 
-SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by "..SHIFT_KEY_TEXT.." clicking on an ATT window.";
 
 
 DEBUG_MODE = "|c" .. app.DefaultColors.Red.."Debug Mode|r (Show Everything)";
 ACCOUNT_MODE = "|c" .. app.DefaultColors.Account.."Account Mode";
 MODE_EXPLAIN_LABEL = "|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all |c" .. app.DefaultColors.Insane .. "colored options|cffFFFFFF to unlock ".. "|c" .. app.DefaultColors.Insane .. "Insane Mode|cffFFFFFF.";
 
-SHOW_SKYRIDING_CHECKBOX = DYNAMIC_FLIGHT or "Skyriding";
 
 ACC_WIDE_DEFAULT = "Tracked ".. "|c" .. app.DefaultColors.Account .. "Account-Wide|R by default.";
 TRACK_ACC_WIDE = "|c" .. app.DefaultColors.Account .. "Track Account-Wide|R";
@@ -331,14 +310,12 @@ SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Conduits";
 
 
 
-ITEM_FILTER_LABEL = ARMOR .." & ".. AUCTION_CATEGORY_WEAPONS;
 ITEM_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if you are in ".."|c" .. app.DefaultColors.Account.."Account Mode|cffFFFFFF.|r";
 
 
 CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in ".."|c" .. app.DefaultColors.Account.."Account Mode|cffFFFFFF.|r";
 
 
-SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "Enable this option if you want the 'Sort' operation ("..SHIFT_KEY_TEXT.." Right Click) to sort by the total progress of each group (instead of by Name)";
 
 
 
@@ -348,8 +325,6 @@ SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "Enable this option if you want the 'Sort' o
 
 
 
-PROFILE_INITIALIZE_TOOLTIP = "This will enable your Saved Variables for ATT to support and contain Profile data. Your current Settings and Window information will be copied into the '"..DEFAULT.."' Profile, which cannot be deleted, but may be modified and will be used as the initial Profile for all characters.\n\nPlease be sure to report any unusual behavior or bugs with Profiles to the ATT Discord!";
-PROFILE_SWITCH_TOOLTIP = "Set the Selected Profile as the Current Profile\n\nA Profile can also be "..SHIFT_KEY_TEXT.." clicked to Switch to it";
 
 L.TOOLTIP_MODULE = {
 	RANKS = {

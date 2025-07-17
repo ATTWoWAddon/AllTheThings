@@ -18,12 +18,6 @@ L.NEW_VERSION_FLAVORS = {
 	"艾澤拉斯的勇士",
 };
 
-L.MINIMAP_MOUSEOVER_TEXT = "右鍵改變設定。\n左鍵打開主列表。\n"..CTRL_KEY_TEXT.."左鍵打開小列表。\n"..SHIFT_KEY_TEXT.."左鍵刷新收藏。";
-L.TOP_ROW_INSTRUCTIONS = "|cff3399ff按住左鍵並拖拽移動\n右鍵打開設定\n"..SHIFT_KEY_TEXT.."左鍵刷新收藏\n"..CTRL_KEY_TEXT.."左鍵展開/折疊列表\n"..SHIFT_KEY_TEXT.."點擊右鍵排序組/彈出列表|r";
-L.OTHER_ROW_INSTRUCTIONS = "|cff3399ff左鍵展開/折疊\n右鍵彈出小列表\n"..SHIFT_KEY_TEXT.."左鍵刷新收藏\n"..CTRL_KEY_TEXT.."左鍵展開/折疊列表\n"..SHIFT_KEY_TEXT.."點擊右鍵排序組/彈出列表\n"..ALT_KEY_TEXT.."右鍵設定路線點|r";
-L.TOP_ROW_INSTRUCTIONS_AH = "|cff3399ff左鍵按住並拖拽移動\n右鍵打開設定\n"..SHIFT_KEY_TEXT.."左鍵搜尋拍賣行|r";
-L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ff左鍵展開/折疊\n右鍵彈出小列表\n"..SHIFT_KEY_TEXT.."左鍵搜尋拍賣行|r";
-L.REPORT_TIP = "\n（"..CTRL_KEY_TEXT.."+C 將多行報告複製到剪貼簿）";
 
 L.ICON_LEGEND_STATUS_TEXT = "|c" .. app.DefaultColors.White .. "|T" .. app.asset("status-unobtainable") .. ":0|t 無法獲得\n|T" .. app.asset("status-prerequisites") .. ":0|t 僅在滿足先決條件的情況下獲得\n|T" .. app.asset("status-seasonal-available") .. ":0|t 季節性內容\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t 季節性內容\n|T374225:0|t 當前角色不可用\n|T" .. app.asset("status-unsorted") .. ":0|t Unsorted in ATT";
 
@@ -39,10 +33,6 @@ L.COMPLETE_OTHER = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已完成
 L.INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |cffff9333未完成|r";
 L.INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";	
 
-L.MARKS_OF_HONOR_DESC = "榮耀印記必須在彈出視窗中查看才能看到所有正常的'包含'內容。\n(在聊天中輸入'/att' 然後 "..SHIFT_KEY_TEXT.."點擊連接的物品)\n\n|cFFfe040f之後購買和一起使用，重新登入和強制 ATT 刷新（按此順序）\n可能需要正確註冊所有物品。|r";
-L.MOP_REMIX_BRONZE_DESC = "青铜幣必須在彈出視窗中查看才能看到所有正常的'包含'內容。\n(在聊天中輸入'/att' 然後 "..SHIFT_KEY_TEXT.."點擊連接的物品)\n\n|cFFfe040f之後購買和一起使用，重新登入和強制 ATT 刷新（按此順序）\n可能需要正確註冊所有物品。|r";
-L.FOLLOWERS_COLLECTION_DESC = "如果您在 ATT 中啟用此設定，則可以在整個帳號範圍內收集追隨者。\n\n必須通過 "..SHIFT_KEY_TEXT.."點擊標題手動刷新插件才能檢測到這一點。";
-L.MUSIC_ROLLS_DESC = "這些是按角色解鎖且目前尚未在戰隊中共享。如果暴雪有人在看，如果能把這些戰隊共享的話那就太好了。\n\n必須通過 "..SHIFT_KEY_TEXT.."點擊要檢測的標題手動刷新插件。";
 L.EXPANSION_DATA[1].lore = "海加爾山之戰的四年後，聯盟和部落之間的關係又一次緊張了起來。在貧瘠之地杜洛塔，由索爾所領導的部落安頓定居下來並繼續擴充軍隊的規模，他們邀請被遺忘者加入獸人、牛頭人和食人妖的行列。同時，矮人、地精和古老的夜精靈也發誓效忠由人類王國暴風城所領導的聯盟。在暴風城國王瓦里安·烏瑞恩神秘失蹤後，大領主伯瓦爾‧弗塔根擔任攝政王一職，但是偽裝成人類女貴族的黑龍軍團的奧妮克希亞控制他的心智，從幕後操控整個王國。正當英雄們探查奧妮克希亞的陰謀時，古老的強敵卻現身世界各地，威脅著部落和聯盟。";
 L.EXPANSION_DATA[2].lore = "燃燒的遠征是第一個資料片。它的主要內容包括將等級上限提高到70，將血精靈和德萊尼作為可玩的種族引入，以及外域世界的加入，以及許多新區域、地城、物品、任務和怪物。";
 L.EXPANSION_DATA[3].lore = "巫妖王之怒是第二個資料片。大部分資料片內容都發生在諾森德，並以巫妖王的計劃為中心。內容亮點包括將等級上限從70增加到80，引入英雄職業死亡騎士，以及新的 PvP/世界 PvP 內容。";
@@ -57,10 +47,6 @@ L.EXPANSION_DATA[11].lore = "地心之戰是第十個資料片。也是世界之
 L.EXPANSION_DATA[12].lore = "至暗之夜是第十一個資料片。也是世界之魂戰記的第二部份。";
 L.EXPANSION_DATA[13].lore = "最後的泰坦是第十二個資料片。也是世界之魂戰記三部曲終章。";
 
-L.UNSORTED_DESC = "此資料尚未在 ATT 中獲得 " .. app.Version .. "。";
-L.RESET_INSTANCES_DESC = "點擊此處重置所有副本。\n\n"..ALT_KEY_TEXT.."點擊可在離開地城時自動重置副本。\n\n警告：小心使用！";
-L.UPDATE_WORLD_QUESTS_DESC = "有時世界任務 API 很慢或無法返回新資料。如果希望在不更改區域的情況下強制刷新資料，請立即點擊此按鈕！\n\n"..ALT_KEY_TEXT.."點擊以包括當前可用的事物，可能不受時間限制";
-L.FORCE_REFRESH_REQUIRED = "這可能需要強制刷新（"..SHIFT_KEY_TEXT.."點擊）正確已收集。";
 L.TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.."點擊鎖定視窗";
 L.TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.."點擊解鎖視窗";
 L.TITLE_DEBUG = "|c" .. app.DefaultColors.Red .. "偵錯|R ";
@@ -94,7 +80,6 @@ if app.IsRetail then
 	do a[key] = value; end
 end
 
-SKIP_AUTO_REFRESH_TOOLTIP = "預設情況下(未勾選)，任何可能影響可見資料的設定變化都會導致自動刷新。\n\n通過啟用該選項設定的變化將不會生效，直到玩家 "..SHIFT_KEY_TEXT.."點擊 ATT 視窗執行全部刷新。";
 
 
 DEBUG_MODE = "|c" .. app.DefaultColors.Red.."偵錯模式|r（顯示所有）";
@@ -108,9 +93,6 @@ RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 符文銘
 SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 導靈器";
 ITEM_EXPLAIN_LABEL = "|cffFFFFFF始終顯示此內容如果位於 ".."|c" .. app.DefaultColors.Account.."帳號模式|cffFFFFFF。|r";
 CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF如果當前角色可以使用此內容，或者位於 ".."|c" .. app.DefaultColors.Account.."帳號模式|cffFFFFFF。|r";
-SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "如果你希望'排序'操作（"..SHIFT_KEY_TEXT.."右鍵）按每個組的總進度排序（而不是按名稱）請啟用此選項";
-PROFILE_INITIALIZE_TOOLTIP = "這將使您的 ATT 保存變數能夠支援和包含設定檔資料。您當前的設定和視窗資訊將被複製到 '"..DEFAULT.."' 設定檔中，該設定檔無法刪除，但可以修改並使用作為所有角色的初始設定檔。\n\n請務必必將設定檔的任何異常行為或錯誤回報給 ATT Discord！";
-PROFILE_SWITCH_TOOLTIP = "將選定的設定檔設定為當前設定檔\n\n一個設定檔也可以通過 "..SHIFT_KEY_TEXT.."點擊切換到它";
 
 if app.IsRetail then
 	local a = L.CUSTOM_COLLECTS_REASONS;

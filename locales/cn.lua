@@ -19,13 +19,6 @@ L.NEW_VERSION_FLAVORS = {
 };
 
 
-L.MINIMAP_MOUSEOVER_TEXT = "右键改变设置。\n左键打开主列表。\n"..CTRL_KEY_TEXT.."左键打开小列表。\n"..SHIFT_KEY_TEXT.."左键刷新收藏。";
-L.TOP_ROW_INSTRUCTIONS = "|cff3399ff按住并拖拽左键移动\n右键打开设置\n"..SHIFT_KEY_TEXT.."左键刷新收藏\n"..CTRL_KEY_TEXT.."左键展开/折叠列表\n"..SHIFT_KEY_TEXT.."右键单击排序组/弹出列表|r";
-L.OTHER_ROW_INSTRUCTIONS = "|cff3399ff左键展开/折叠\n右键弹出小列表\n"..SHIFT_KEY_TEXT.."左键刷新收藏\n"..CTRL_KEY_TEXT.."左键展开/折叠列表\n"..SHIFT_KEY_TEXT.."右键单击排序组/弹出列表\n"..ALT_KEY_TEXT.."右键设置路径点|r";
-L.TOP_ROW_INSTRUCTIONS_AH = "|cff3399ff按住并拖拽左键移动\n右键打开设置\n"..SHIFT_KEY_TEXT.."左键搜索拍卖行|r";
-L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ff左键展开/折叠\n右键弹出小列表\n"..SHIFT_KEY_TEXT.."左键搜索拍卖行|r";
-L.REQUIRES_SKYRIDING = "|CFF00FFDE"..(SPELL_FAILED_CUSTOM_ERROR_1029 or "需要驭空术").."|r";
-L.REPORT_TIP = "\n（"..CTRL_KEY_TEXT.."+C 将多行报告复制到剪贴板）";
 
 L.ICON_LEGEND_STATUS_TEXT = "|c" .. app.DefaultColors.White ..     "\n|T374225:0|t 当前角色不可用|T" .. app.asset("status-unobtainable") .. ":0|t 不可获得\n|T" .. app.asset("status-prerequisites") .. ":0|t 仅在满足先决条件的情况下可获得\n|T" .. app.asset("status-seasonal-available") .. ":0|t 当前可用的季节性内容\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t 当前不可用的季节性内容\n|T374225:0|t Unavailable on current character\n|T" .. app.asset("status-unsorted") .. ":0|t Unsorted in ATT";
 
@@ -41,10 +34,6 @@ L.COMPLETE_OTHER = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已完成
 L.INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |cffff9333未完成|r";
 L.INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";	
 
-L.MARKS_OF_HONOR_DESC = "荣耀印记必须在弹出窗口中查看才能看到所有正常的'包含'内容。\n(在聊天中输入'/att' 然后 "..SHIFT_KEY_TEXT.."点击链接的物品)\n\n|cFFfe040f之后购买和一起使用，重新登录和强制 ATT 刷新（按此顺序）\n可能需要正确注册所有物品。|r";
-L.MOP_REMIX_BRONZE_DESC = "青铜必须在弹出窗口中查看才能看到所有正常的'包含'内容。\n(在聊天中输入'/att' 然后 "..SHIFT_KEY_TEXT.."点击链接的物品)\n\n|cFFfe040f之后购买和一起使用，重新登录和强制 ATT 刷新（按此顺序）\n可能需要正确注册所有物品。|r";
-L.FOLLOWERS_COLLECTION_DESC = "如果您在 ATT 中启用此设置，则可以在整个帐号范围内收集追随者。\n\n必须通过 "..SHIFT_KEY_TEXT.."点击标题手动刷新插件才能检测到这一点。";
-L.MUSIC_ROLLS_DESC = "这些是按角色解锁且目前尚未在战网中共享。如果暴雪有人在看，如果能把这些战网共享的话那就太好了。\n\n必须通过 "..SHIFT_KEY_TEXT.."点击要检测的标题手动刷新插件。";
 L.EXPANSION_DATA[1].lore = "海加尔山之战的四年后，联盟和部落之间的关系又一次紧张了起来。为了能在贫瘠之地杜隆塔尔立足，萨尔邀请亡灵被遗忘者加入到兽人、牛头人和巨魔中，以扩大他的部落。与此同时，在另一边矮人、侏儒和古暗夜精灵则发誓它们将效忠人类暴风城王国所领导的新的联盟。当暴风城的国王瓦里安·乌瑞恩神秘消失之后，领主伯瓦尔·弗塔根担任摄政王，但是伯瓦尔的所做的一切被伪装成人类贵妇的黑龙奥尼克希亚通过意识控制所破坏。当英雄们正在研究对抗奥克尼希亚的手法时，古代的敌人出现在大陆上，并威胁着部落和联盟的生存。";
 L.EXPANSION_DATA[2].lore = "燃烧的远征是第一个资料片。它的主要内容包括将等级上限提高到70，将血精灵和德莱尼作为可玩的种族引入，以及外域世界的加入，以及许多新区域、地下城、物品、任务和怪物。";
 L.EXPANSION_DATA[3].lore = "巫妖王之怒是第二个资料片。大部分资料片内容都发生在诺森德，并以巫妖王的计划为中心。内容亮点包括将等级上限从70增加到80，引入英雄职业死亡骑士，以及新的 PvP/世界 PvP 内容。";
@@ -59,10 +48,6 @@ L.EXPANSION_DATA[11].lore = "地心之战是第十个资料片。也是世界之
 L.EXPANSION_DATA[12].lore = "至暗之夜是第十一个资料片。也是世界之魂传说的第二部份。";
 L.EXPANSION_DATA[13].lore = "最后的泰坦是第十二个资料片。也是世界之魂传说三部曲终章。";
 
-L.UNSORTED_DESC = "此数据尚未在 ATT 中获取 " .. app.Version .. "。";
-L.RESET_INSTANCES_DESC = "点击此处重置副本。\n\n"..ALT_KEY_TEXT.."点击可在离开地下城时自动重置副本。\n\n警告：小心使用！";
-L.UPDATE_WORLD_QUESTS_DESC = "有时世界任务 API 很慢或无法返回新数据。如果希望在不更改区域的情况下强制刷新数据，请立即点击此按钮！\n\n"..ALT_KEY_TEXT.."点击以包括当前可用的事物，可能不受时间限制";
-L.FORCE_REFRESH_REQUIRED = "这可能需要强制刷新（"..SHIFT_KEY_TEXT.."点击）正确已收集。";
 
 L.TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.."点击锁定窗口";
 L.TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.."点击解锁窗口";
@@ -104,11 +89,9 @@ for key,value in pairs({
 do a[key] = value; end
 end
 
-SKIP_AUTO_REFRESH_TOOLTIP = "默认情况下(未勾选)，任何可能影响可见数据的设置变化都会导致自动刷新。\n\n通过启用该选项设置的变化将不会生效，直到玩家 "..SHIFT_KEY_TEXT.."点击 ATT 窗口执行全部刷新。";
 DEBUG_MODE = "|c" .. app.DefaultColors.Red.."调试模式|r（显示所有）";
 ACCOUNT_MODE = "|c" .. app.DefaultColors.Account.."帐号模式";
 MODE_EXPLAIN_LABEL = "|cffFFFFFF您收藏的内容汇总在这里。启用所有 ".."|c" .. app.DefaultColors.Insane.."彩色选项|cffFFFFFF 解锁 ".."|c" .. app.DefaultColors.Insane.."疯狂模式|cffFFFFFF。";
-SHOW_SKYRIDING_CHECKBOX = DYNAMIC_FLIGHT or "驭空术";
 ACC_WIDE_DEFAULT = "已追踪 ".. "|c" .. app.DefaultColors.Account .. "账号通用|R 默认。";
 TRACK_ACC_WIDE = "|c" .. app.DefaultColors.Account .. "追踪 账号通用|R";
 AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t 艾泽拉斯之心精华";
@@ -118,9 +101,6 @@ RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 符文铭
 SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 导灵器";
 ITEM_EXPLAIN_LABEL = "|c" .. app.DefaultColors.Account.."帐号模式|r|cffFFFFFF下，这些内容始终显示。|r";
 CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF如果当前角色可以使用此内容，或者位于 ".."|c" .. app.DefaultColors.Account.."账号模式|cffFFFFFF。|r";
-SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "如果你希望'排序'操作（"..SHIFT_KEY_TEXT.."右键）按每个组的总进度排序（而不是按名称）请启用此选项";
-PROFILE_INITIALIZE_TOOLTIP = "这将使您的 ATT 保存变量能够支持和包含配置文件数据。您当前的设置和窗口信息将被复制到 '"..DEFAULT.."' 配置文件中，该配置文件无法删除，但可以修改并使用作为所有角色的初始配置文件。\n\n请务必将配置文件的任何异常行为或错误报告给 ATT Discord！";
-PROFILE_SWITCH_TOOLTIP = "将选定的配置文件设置为当前配置文件\n\n一个配置文件也可以通过 "..SHIFT_KEY_TEXT.."点击切换到它";
 
 if app.IsRetail then
 local a = L.CUSTOM_COLLECTS_REASONS;

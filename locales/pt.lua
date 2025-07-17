@@ -6,7 +6,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 
 L.TITLE = "|c" .. app.DefaultColors.ATT .. "ALL THE THINGS|r";
 L.SHORTTITLE = "|c" .. app.DefaultColors.ATT .. "ATT|r";
-L.REPORT_TIP = "\n("..CTRL_KEY_TEXT.."+C para copiar o texto completo do report para sua área de transferência)";
 L.COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";
 L.COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";	
 L.COMPLETE_ICON = "|T" .. app.asset("known_green") .. ":0|t";	
@@ -14,10 +13,8 @@ L.NOT_COLLECTED_ICON = "|T" .. app.asset("unknown") .. ":0|t";
 L.INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";	
 
 if app.IsRetail then
-L.FOLLOWERS_COLLECTION_DESC = "Followers can be collected account wide, if you enable this setting in ATT.\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.." clicking the header for this to be detected.";	--TODO
 end
 if app.IsRetail then
-L.MUSIC_ROLLS_DESC = "Estes são desbloqueados por personagem e não são atualmente compartilhados pela conta. Se alguém da Blizzard está lendo isso, seria muito interessante se fizesse isso em toda a conta.\n\nVocê precisa manualmente atualizar o addon apertando "..SHIFT_KEY_TEXT.." e clicando no cabeçalho para isso ser detectado.";	--TODO
 end
 L.EXPANSION_DATA[10].lore = "Dragonflight is the ninth expansion. As revoadas dragônicas de Azeroth retornaram, convocadas a defender seu lar ancestral, as Ilhas do Dragão. Repletas de magia elemental e das energias vitais de Azeroth, as Ilhas despertam uma vez mais. Cabe a você explorar suas maravilhas primordiais e revelar segredos há muito esquecidos.";	--TODO: First sentence
 

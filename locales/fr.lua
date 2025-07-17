@@ -6,12 +6,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 
 L.TITLE = "|c" .. app.DefaultColors.ATT .. "ALL THE THINGS|r";
 L.SHORTTITLE = "|c" .. app.DefaultColors.ATT .. "ATT|r";
-L.MINIMAP_MOUSEOVER_TEXT = "Clic droit pour ouvrir le menu des options\nClic gauche pour afficher la liste principale\n"..CTRL_KEY_TEXT.." + clic gauche pour afficher la liste de zone\n"..SHIFT_KEY_TEXT.." + clic gauche pour rafraîchir les collections.";
-L.TOP_ROW_INSTRUCTIONS = "|cff3399ffClic gauche et faites glisser pour déplacer la fenêtre\nClic droit pour ouvrir le menu des options\n"..SHIFT_KEY_TEXT.." + clic pour rafraîchir les collections\n"..CTRL_KEY_TEXT.." + clic pour afficher / masquer toutes les listes\n"..SHIFT_KEY_TEXT.." + clic droit pour trier les listes de A à Z|r";
-L.OTHER_ROW_INSTRUCTIONS = "|cff3399ffClic gauche pour afficher / masquer\nClic droit pour afficher la mini-liste\n"..SHIFT_KEY_TEXT.." + clic pour rafraîchir les collections\n"..CTRL_KEY_TEXT.." + clic pour afficher / masquer toutes les listes\n"..SHIFT_KEY_TEXT.." + clic droit pour trier les listes de A à Z\n"..ALT_KEY_TEXT.." + clic droit pour tracer des points de repère|r";
-L.TOP_ROW_INSTRUCTIONS_AH = "|cff3399ffClic gauche et faites glisser pour déplacer la fenêtre\nClic droit pour ouvrir le menu des options\n"..SHIFT_KEY_TEXT.." + clic pour rechercher dans l’hôtel des ventes|r";
-L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffClic gauche pour afficher / masquer\nClic droit pour afficher la mini-liste\n"..SHIFT_KEY_TEXT.." + clic pour rechercher dans l’hôtel des ventes|r";
-L.REPORT_TIP = "\n("..CTRL_KEY_TEXT.." + C pour copier le rapport multiligne dans votre presse-papiers)";
 L.COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";
 L.COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";	
 L.COMPLETE_ICON = "|T" .. app.asset("known_green") .. ":0|t";	
@@ -23,9 +17,7 @@ L.COMPLETE = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Complet|r";
 L.COMPLETE_OTHER = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Complet*|r";
 L.INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |cff15abffIncomplet|r";
 L.INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";	
-L.MARKS_OF_HONOR_DESC = "Les Marques d’honneur doivent être affichées dans une fenêtre contextuelle pour afficher tout le contenu 'normal'.\n(Tapez '/att' dans le chat puis faites "..SHIFT_KEY_TEXT.." + clic pour pour afficher l’objet)\n\n|cFFfe040fAprès l’achat et l’utilisation d’un ensemble, une nouvelle connexion et une actualisation forcée d’ATT (dans cet ordre)\npeuvent être nécessaires pour enregistrer correctement tous les objets.|r";
 if app.IsRetail then
-	L.MUSIC_ROLLS_DESC = "Ils sont débloqués par personnage et ne sont actuellement pas partagés sur l’ensemble de votre compte. Si une personne de chez Blizzard lit ceci, ce serait vraiment bien si vous les rendiez à l'échelle du compte. Vous devez rafraîchir manuellement l’addon via "..SHIFT_KEY_TEXT.." + clic sur l’en-tête pour que ce soit détecté.";
 end
 L.EXPANSION_DATA[1].lore = "Déterminée à s’installer dans la région aride de Durotar, la nouvelle Horde de Thrall étoffa ses rangs, en invitant les Réprouvés morts-vivants à rejoindre les orcs, les taurens et les trolls. De leur côté, les nains, les gnomes et les anciens elfes de la nuit jurèrent fidélité à l’Alliance revigorée, sous la houlette du royaume humain de Hurlevent. Après la mystérieuse disparition du roi de Hurlevent Varian Wrynn, le généralissime Bolvar Fordragon assura le rôle de régent. Mais son autorité fut contrariée par les manipulations et le contrôle mental du dragon noir Onyxia, qui tirait les ficelles sous l’apparence d’une humaine appartenant à la noblesse. Tandis que des héros enquêtaient sur les manipulations d’Onyxia, d’anciens adversaires refirent surface un peu partout dans le monde, menaçant tout aussi bien la Horde que l’Alliance.";
 L.EXPANSION_DATA[2].lore = "The Burning Crusade est la 1ère extension. Le seigneur funeste Kazzak étant parvenu à rouvrir la Porte des ténèbres en Outreterre, il fit déferler sur Azeroth les démons enragés de la Légion ardente. Des expéditions de la Horde et de l’Alliance, respectivement renforcées par les elfes de sang et les draeneï, franchirent le portail afin de stopper l’invasion à sa source. En Outreterre, dans l’aride péninsule des Flammes infernales, l’Alliance retrouva plusieurs de ses héros qui avaient franchi le portail bien des années auparavant, tandis que la Horde put entrer en contact avec les Mag’har, des orcs non-corrompus qui n’avaient pas pris part à la première invasion d’Azeroth par ceux de leur race. L’expédition en Outreterre plongea les armées de la Horde et de l’Alliance dans un intense conflit contre les agents de la Légion et les lieutenants d’Illidan Hurlorage, qui s’était approprié ce monde brisé.";
@@ -38,8 +30,6 @@ L.EXPANSION_DATA[8].lore = "Battle for Azeroth est la 7ème extension. Les bless
 L.EXPANSION_DATA[9].lore = "Shadowlands est la 8ème extension. Après avoir fui Orgrimmar, Sylvanas Coursevent met le cap vers la citadelle de la Couronne de glace. Là, elle affronte Bolvar, le roi-liche, et s’empare du Heaume de domination. Par un simple acte de destruction, Sylvanas ouvre le passage vers le royaume de l’au-delà : l’Ombreterre, un monde entre les mondes dont l’équilibre délicat préserve aussi bien la vie que la mort. Anduin, Baine, Jaina, Thrall et les héros d’Azeroth suivent Sylvanas en Ombreterre, mais se retrouvent pris au piège dans l’Antre, un royaume effroyable réservé aux âmes malfaisantes au-delà de toute rédemption. Après avoir réussi à s’échapper envers et contre tout, nos héros finissent par se rendre à Oribos, la cité éternelle qui accueille habituellement toutes les âmes fraîchement arrivées en Ombreterre. Ils découvrent alors que l’impassible Arbitre, chargée d’aiguiller les défunts vers leur dernière demeure, est en sommeil et incapable d’honorer ses devoirs. Pire encore, les quatre congrégations de l’Ombreterre ont plongé dans le chaos, et se livrent bataille pour s’approprier une ressource aussi rare que vitale : l’anima. Les héros d’Azeroth décident de venir en aide aux habitants de l’Ombreterre, espérant lever le voile sur les agissements de Sylvanas. Ils finissent par découvrir un traître au sein des congrégations : Denathrius, fondateur et dirigeant de Revendreth, foyer des Venthyrs. Ce dernier assiste secrètement Sylvanas dans son projet de libérer leur mystérieux bienfaiteur commun : une entité surnommée le Geôlier, qui règne sur tout l’Antre. L’infâme seigneur de Revendreth est mis en déroute dans son propre domaine, le château Nathria, mais Sylvanas et le Geôlier ont déjà mis leur plan à exécution : utiliser Anduin contre son gré pour servir leurs terribles desseins.";
 L.EXPANSION_DATA[10].lore = "Dragonflight est la 9ème extension. Les Vols draconiques d’Azeroth sont de retour pour défendre leur foyer ancestral, les îles aux Dragons. Débordantes de magie élémentaire et de l’essence vitale d’Azeroth, les îles s’éveillent de nouveau et vous invitent à découvrir leurs merveilles primordiales et leurs secrets longtemps oubliés.";
 
-L.UNSORTED_DESC = "Ces données n’ont pas encore été ajoutées. ATT " .. app.Version;
-L.RESET_INSTANCES_DESC = "Cliquer ici pour réinitialiser les insatnces.\n\n"..ALT_KEY_TEXT.." + clic pour activer la réinitialisation automatique de vos instances lorsque vous quittez un donjon.\n\nATTENTION : SOYEZ PRUDENT AVEC CETTE OPTION !";
 
 L.TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.." + clic pour bloquer cette fenêtre";
 L.TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.." + clic pour débloquer cette fenêtre";
@@ -97,7 +87,6 @@ for key,value in pairs({
 do a[key] = value; end
 end
 
-SKIP_AUTO_REFRESH_TOOLTIP = "Par défaut (non coché), toute modification des paramètres susceptible d’affecter les données visibles entraînera un rafraîchissement automatique.\n\nEn activant cette option, les modifications des paramètres ne prendront effet dès que l’utilisateur effectuera un rafraîchissement complet en faisant "..SHIFT_KEY_TEXT.." + clic droit sur une fenêtre d’ATT.";
 
 
 ACCOUNT_MODE = "|c" .. app.DefaultColors.Account.."Mode Compte";
@@ -108,9 +97,6 @@ RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Pouvoirs 
 SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Intermédiaires";
 ITEM_EXPLAIN_LABEL = "|cffFFFFFFCe contenu est toujours affiché si vous êtes en ".."|c" .. app.DefaultColors.Account.."Mode Compte|cffFFFFFF.|r";
 CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFCe contenu est toujours affiché s’il est disponible pour votre personnage actuel ou si vous vous trouvez dans la section ".."|c" .. app.DefaultColors.Account.."Mode Compte|cffFFFFFF.|r";
-SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "Activer cette option si vous souhaitez trier les groupes ("..SHIFT_KEY_TEXT.." + clic droit) par % de progression au lieu de les trier par leur nom.";
-PROFILE_INITIALIZE_TOOLTIP = "Cela permettra à vos variables sauvegardées pour ATT de supporter et de contenir des données de profil. Vos paramètres et informations de fenêtre actuels seront copiés dans le profil '"..DEFAULT.."'. Ce profil ne peut pas être supprimé, mais peut être modifié et sera utilisé comme profil initial pour tous les personnages. N’oubliez pas de signaler tout comportement inhabituel ou tout bogue lié aux profils sur le Discord d’ATT !";
-PROFILE_SWITCH_TOOLTIP = "Définir le profil sélectionné comme le profil actuel\n\n"..SHIFT_KEY_TEXT.." + clic pour accéder au profil sélectionné";
 
 if app.IsRetail then
 local a = L.CUSTOM_COLLECTS_REASONS;
