@@ -136,8 +136,6 @@ TRACK_ACC_WIDE = "|c" .. app.DefaultColors.Account .. "Rastrear para toda la cue
 
 
 AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Esencias del Corazón de Azeroth";
-DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t Manuscrito de dracovigía";
-DRAKEWATCHERMANUSCRIPTS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear Manuscrito de dracovigía de Dragonflight";
 FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t Seguidores y Campeones";
 RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Poder de talla de runas";
 SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Conductos";

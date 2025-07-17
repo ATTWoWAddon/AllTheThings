@@ -118,8 +118,6 @@ TRACK_ACC_WIDE = "|c" .. app.DefaultColors.Account.."Отслеживать на
 
 
 AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Азеритовые сущности";
-DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t Манускрипты наблюдений за драконами";
-DRAKEWATCHERMANUSCRIPTS_CHECKBOX_TOOLTIP = "Включите для отслеживания Манускриптов наблюдений за драконами Dragonflight";
 FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t Соратники & Спутники";
 RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Легендарки ТЗ";
 SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Проводники";

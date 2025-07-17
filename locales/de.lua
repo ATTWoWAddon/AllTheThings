@@ -82,7 +82,6 @@ end
 DEBUG_MODE = "|c" .. app.DefaultColors.Red.."Debug Modus|r (Zeig alles)";
 ACCOUNT_MODE = "|c" .. app.DefaultColors.Account.."Account Modus";
 AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Herzensessenzen";
-DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t Drachenwächtermanuskript";
 FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t Anhänger & Gefährten";
 RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Runenschnitzmacht";
 SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Medien";

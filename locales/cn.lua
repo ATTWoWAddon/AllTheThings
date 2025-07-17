@@ -114,7 +114,6 @@ ACC_WIDE_DEFAULT = "已追踪 ".. "|c" .. app.DefaultColors.Account .. "账号�
 TRACK_ACC_WIDE = "|c" .. app.DefaultColors.Account .. "追踪 账号通用|R";
 AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t 艾泽拉斯之心精华";
 MOUNTMODS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t 坐骑定制";
-DRAKEWATCHERMANUSCRIPTS_CHECKBOX_TOOLTIP = "启用此选项追踪坐骑定制选项";
 FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t 追随者 & 伙伴";
 RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 符文铭刻之力";
 SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 导灵器";

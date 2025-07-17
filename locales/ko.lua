@@ -30,7 +30,6 @@ do a[key] = value; end
 end
 
 AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t 아제로스의 심장 정수";
-DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t 비룡감시자 필사본";
 FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t 추종자 및 동료";
 RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 룬조각 능력";
 SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 도관";

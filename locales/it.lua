@@ -30,7 +30,6 @@ do a[key] = value; end
 end
 
 AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Essenze del Cuore di Azeroth";
-DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t Manoscritto del Guardadraghi";
 FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t Seguaci & Avventurieri";
 RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Abilità dell'Incisione Runica";
 SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Condotti";

@@ -104,7 +104,6 @@ SKIP_AUTO_REFRESH_TOOLTIP = "Par défaut (non coché), toute modification des pa
 ACCOUNT_MODE = "|c" .. app.DefaultColors.Account.."Mode Compte";
 ACC_WIDE_DEFAULT = "Par défaut, suivi sur ".."|c" .. app.DefaultColors.Account.."l’ensemble du compte|R.";
 AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Essences du Cœur d’Azeroth";
-DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t Manuscrit guette-drake";
 FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t Sujets & Compagnons";
 RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Pouvoirs de gravure runique";
 SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Intermédiaires";
