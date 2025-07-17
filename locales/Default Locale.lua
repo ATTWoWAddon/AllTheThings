@@ -189,7 +189,6 @@ ABBREVIATIONS = {
 	["Toy Box"] = TOY,
 };
 
--- Binding Localizations
 TOGGLE_ACCOUNT_MODE = "Toggle Account Mode";
 TOGGLE_COMPLETIONIST_MODE = "Toggle Completionist Mode";
 TOGGLE_DEBUG_MODE = "Toggle Debug Mode";
@@ -209,10 +208,8 @@ TOGGLE_RANDOM = "Toggle ATT Random";
 REROLL_RANDOM = "Reroll the Random Selection";
 MODULES = "Modules";
 
--- Features
 NEARBY = "Nearby:";
 
--- Tooltips
 AND_OTHER_SOURCES = "And %s other sources...";
 FORCE_REFRESH_REQUIRED = "This may require a Force Refresh ("..SHIFT_KEY_TEXT.." click) to properly be collected.";
 RELOG_REQUIRED = "After using this, it is typically required to logout & login to collect all the items correctly on the game servers.";
@@ -221,7 +218,6 @@ ENSEMBLE_LEARNED = "This Ensemble has already been used by one of your character
 HOLIDAY_DROP = "Only your first daily attempt per Battle.net account has a chance to drop the unique rewards, such as mounts, pets, toys, and manuscripts. The drop chance increases with every failed attempt.\nBlizzard have not specified which items are subject to this system.";
 ADHOC_UNIQUE_COLLECTED_INFO = "This Item is Unique-Collected but failed to be detected due to missing Blizzard API information.\n\nIt will be fixed after the next Force-Refresh.";
 
--- Windows
 HIDDEN_ACHIEVEMENT_TRIGGERS = "Hidden Achievement Triggers";
 HIDDEN_ACHIEVEMENT_TRIGGERS_DESC = "These are Achievements which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes";
 HIDDEN_CURRENCY_TRIGGERS = "Hidden Currency Triggers";
@@ -236,7 +232,6 @@ UNSORTED = "Unsorted";
 UNSORTED_DESC = "This thing hasn't been Sourced yet within ATT " .. app.Version .. ".";
 UNSORTED_DESC_2 = "Items here exist within the game and may be available to players, but have not yet been sourced into the accurate location in ATT";
 
--- Module Localizations
 PVP_RANK_DESCRIPTION = "There are a total of 14 ranks for both factions. Each rank requires a minimum amount of Rating Points to be calculated every week, then calculated in comparison to other players on your server.\n\nEach rank grants access to different rewards, from PvP consumables to Epic Mounts that do not require Epic Riding Skill and Epic pieces of gear at the highest ranks. Each rank is also applied to your character as a Title.";
 
 EXPANSION_DATA = {
@@ -413,14 +408,9 @@ PRECISION_SLIDER_TOOLTIP = 'Use this to customize your desired level of precisio
 
 
 FILLERS_EXPLANATION = "|cffFFFFFFFillers are mechanisms by which extra Data is 'filled' into/beneath other ATT content within various UI elements to show further use or purpose of a given Thing. For example, showing the resulting Purchases of an Item would be provided by a 'Filler'.\nThis tab allows you to modify your preferences of which Fillers will be active throughout ATT.|r";
-TOOLTIP = "Tooltip";
 LIST = "Mini List";
 POPOUT = "Popout List";
-UPGRADE = "Upgrade";
-CATALYST = "Catalyst";
-SYMLINK = "Sym-Link";
 NPC = "NPC";
-REAGENT = "Reagent";
 
 
 
@@ -436,6 +426,18 @@ L.TOOLTIP_MODULE = {
 		AUTHOR = " |T"..app.asset("logo_32x32")..":0|t" .. " Author";
 		CONTRIBUTOR = " |T"..app.asset("logo_32x32")..":0|t" .. " Contributor";
 		COLLECTOR = "Collector";
+	},
+	TITLES = {
+		XX_BRINGER_OF_FLAMES = "%s, Bringer of Flames";
+		XX_OF_THE_ASYLUM = "%s, King of the Asylum";
+		XX_THE_COMPLETIONIST = "%s the Completionist";
+		XX_THE_CONTRIBUTOR = "%s";	-- NOTE: Contributors didn't want a different title.
+		XX_THE_EXTERMINATOR = "%s the Exterminator";
+		XX_THE_GOLD_TYCOON = "Gold Tycoon %s";
+		XX_THE_LORD_KING = "Lord King %s";
+		XX_THE_LORD_QUEEN = "Lord Queen %s";
+		XX_THE_SCARAB_LORD = "Scarab Lord %s";
+		XX_THE_HUGGLER = "%s the Huggler";
 	},
 };
 
