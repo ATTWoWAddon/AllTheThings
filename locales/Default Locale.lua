@@ -35,18 +35,8 @@ REPORT_TIP = "\n("..CTRL_KEY_TEXT.."+C to copy multiline report to your clipboar
 
 
 
-ICON_LEGEND_STATUS_TEXT = "|c" .. app.DefaultColors.White ..
-		"|T" .. app.asset("status-unobtainable") .. ":0|t Unobtainable" ..
-		"\n|T" .. app.asset("status-prerequisites") .. ":0|t Obtainable only with prerequisites" ..
-		"\n|T" .. app.asset("status-seasonal-available") .. ":0|t Available seasonal content" ..
-		"\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t Unavailable seasonal content" ..
-		"\n|T374225:0|t Unavailable on current character" ..
-		"\n|T" .. app.asset("status-unsorted") .. ":0|t Unsorted in ATT";
-ICON_LEGEND_MISC_TEXT = "|c" .. app.DefaultColors.White ..
-		"|T" .. app.asset("Currency") .. ":0|t Used as a currency" ..
-		"\n|T" .. app.asset("Interface_Reagent") .. ":0|t Used as a crafting reagent" ..
-		"\n|T" .. app.asset("Interface_Catalyst") .. ":0|t Convertible at the Catalyst for a new appearance" ..
-		"\n|T" .. app.asset("Interface_Upgrade") .. ":0|t Can be upgraded for a new appearance";
+ICON_LEGEND_STATUS_TEXT = "|c" .. app.DefaultColors.White .. "|T" .. app.asset("status-unobtainable") .. ":0|t Unobtainable" .. "\n|T" .. app.asset("status-prerequisites") .. ":0|t Obtainable only with prerequisites" .. "\n|T" .. app.asset("status-seasonal-available") .. ":0|t Available seasonal content" .. "\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t Unavailable seasonal content" .. "\n|T374225:0|t Unavailable on current character" .. "\n|T" .. app.asset("status-unsorted") .. ":0|t Unsorted in ATT";
+ICON_LEGEND_MISC_TEXT = "|c" .. app.DefaultColors.White .. "|T" .. app.asset("Currency") .. ":0|t Used as a currency" .. "\n|T" .. app.asset("Interface_Reagent") .. ":0|t Used as a crafting reagent" .. "\n|T" .. app.asset("Interface_Catalyst") .. ":0|t Convertible at the Catalyst for a new appearance" .. "\n|T" .. app.asset("Interface_Upgrade") .. ":0|t Can be upgraded for a new appearance";
 
 COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";
 COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";	
@@ -65,8 +55,8 @@ BOUND_ON = "Bound on %s |T" .. app.asset("known_circle_yellow") .. ":0|t";
 
 MARKS_OF_HONOR_DESC = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then "..SHIFT_KEY_TEXT.." click to link the item)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
 MOP_REMIX_BRONZE_DESC = "Bronze must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then "..SHIFT_KEY_TEXT.." click to link the currency)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
-REQUIRED_ACHIEVEMENTS = ITEM_REQ_SKILL:format(ACHIEVEMENTS),
-REQUIRED_ACHIEVEMENTS_DESC = "Shows any Achievements which must be obtained before this Thing is available",
+REQUIRED_ACHIEVEMENTS = ITEM_REQ_SKILL:format(ACHIEVEMENTS);
+REQUIRED_ACHIEVEMENTS_DESC = "Shows any Achievements which must be obtained before this Thing is available";
 FOLLOWERS_COLLECTION_DESC = "Followers can be collected account wide, if you enable this setting in ATT.\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.." clicking the header for this to be detected.";
 MUSIC_ROLLS_DESC = "These are unlocked per-character and are not currently shared across your account. If someone at Blizzard is reading this, it would be really swell if you made these account wide.\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.." clicking the header for this to be detected.";
 
