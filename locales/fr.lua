@@ -4,19 +4,6 @@ local L = app.L;
 
 local GetSpellName = app.WOWAPI.GetSpellName;
 
-L.TITLE = "|c" .. app.DefaultColors.ATT .. "ALL THE THINGS|r";
-L.SHORTTITLE = "|c" .. app.DefaultColors.ATT .. "ATT|r";
-L.COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";
-L.COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";	
-L.COMPLETE_ICON = "|T" .. app.asset("known_green") .. ":0|t";	
-L.NOT_COLLECTED_ICON = "|T" .. app.asset("unknown") .. ":0|t";	
-L.COLLECTED = "|T" .. app.asset("known") .. ":0|t |cff15abffCollecté|r";
-L.COLLECTED_APPEARANCE = "|T" .. app.asset("known_circle") .. ":0|t |cff15abffCollecté*|r";
-L.NOT_COLLECTED = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Pas Collecté|r";
-L.COMPLETE = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Complet|r";
-L.COMPLETE_OTHER = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Complet*|r";
-L.INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |cff15abffIncomplet|r";
-L.INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";	
 if app.IsRetail then
 end
 L.EXPANSION_DATA[1].lore = "Déterminée à s’installer dans la région aride de Durotar, la nouvelle Horde de Thrall étoffa ses rangs, en invitant les Réprouvés morts-vivants à rejoindre les orcs, les taurens et les trolls. De leur côté, les nains, les gnomes et les anciens elfes de la nuit jurèrent fidélité à l’Alliance revigorée, sous la houlette du royaume humain de Hurlevent. Après la mystérieuse disparition du roi de Hurlevent Varian Wrynn, le généralissime Bolvar Fordragon assura le rôle de régent. Mais son autorité fut contrariée par les manipulations et le contrôle mental du dragon noir Onyxia, qui tirait les ficelles sous l’apparence d’une humaine appartenant à la noblesse. Tandis que des héros enquêtaient sur les manipulations d’Onyxia, d’anciens adversaires refirent surface un peu partout dans le monde, menaçant tout aussi bien la Horde que l’Alliance.";
@@ -31,12 +18,6 @@ L.EXPANSION_DATA[9].lore = "Shadowlands est la 8ème extension. Après avoir fui
 L.EXPANSION_DATA[10].lore = "Dragonflight est la 9ème extension. Les Vols draconiques d’Azeroth sont de retour pour défendre leur foyer ancestral, les îles aux Dragons. Débordantes de magie élémentaire et de l’essence vitale d’Azeroth, les îles s’éveillent de nouveau et vous invitent à découvrir leurs merveilles primordiales et leurs secrets longtemps oubliés.";
 
 
-L.TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.." + clic pour bloquer cette fenêtre";
-L.TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.." + clic pour débloquer cette fenêtre";
-L.TITLE_DEBUG = "|c" .. app.DefaultColors.Red .. "Debug|R ";
-L.TITLE_ACCOUNT = "|c" .. app.DefaultColors.Account.."Compte|R ";
-L.TITLE_INSANE = "|c" .. app.DefaultColors.Insane.."Insensé|R ";
-L.COST_TEXT = "|T" .. app.asset("Currency") .. ":0|t |cff0891ffMonnaie|r";
 
 local a = L.ABBREVIATIONS;
 for key,value in pairs({
@@ -89,14 +70,6 @@ end
 
 
 
-ACCOUNT_MODE = "|c" .. app.DefaultColors.Account.."Mode Compte";
-ACC_WIDE_DEFAULT = "Par défaut, suivi sur ".."|c" .. app.DefaultColors.Account.."l’ensemble du compte|R.";
-AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Essences du Cœur d’Azeroth";
-FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t Sujets & Compagnons";
-RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Pouvoirs de gravure runique";
-SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Intermédiaires";
-ITEM_EXPLAIN_LABEL = "|cffFFFFFFCe contenu est toujours affiché si vous êtes en ".."|c" .. app.DefaultColors.Account.."Mode Compte|cffFFFFFF.|r";
-CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFCe contenu est toujours affiché s’il est disponible pour votre personnage actuel ou si vous vous trouvez dans la section ".."|c" .. app.DefaultColors.Account.."Mode Compte|cffFFFFFF.|r";
 
 if app.IsRetail then
 local a = L.CUSTOM_COLLECTS_REASONS;

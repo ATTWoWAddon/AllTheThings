@@ -4,8 +4,6 @@ local L = app.L;
 
 local GetSpellName = app.WOWAPI.GetSpellName;
 
-L.TITLE = "|c" .. app.DefaultColors.ATT .. "ALL THE THINGS|r";
-L.SHORTTITLE = "|c" .. app.DefaultColors.ATT .. "ATT|r";
 
 L.NEW_VERSION_FLAVORS = {
 	--TODO: "AllTheThings hungers.",
@@ -19,18 +17,6 @@ L.NEW_VERSION_FLAVORS = {
 };
 
 
-L.ICON_LEGEND_STATUS_TEXT = "|c" .. app.DefaultColors.White .. "|T" .. app.asset("status-unobtainable") .. ":0|t Недоступно\n|T" .. app.asset("status-prerequisites") .. ":0|t Доступно с условием\n|T" .. app.asset("status-seasonal-available") .. ":0|t Доступная Праздничная Штучка\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t Недоступная Праздничная Штучка\n|T374225:0|t Недоступно на текущем персонаже\n|T" .. app.asset("status-unsorted") .. ":0|t Unsorted in ATT";
-L.COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";
-L.COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";	
-L.COMPLETE_ICON = "|T" .. app.asset("known_green") .. ":0|t";	
-L.NOT_COLLECTED_ICON = "|T" .. app.asset("unknown") .. ":0|t";	
-L.COLLECTED = "|T" .. app.asset("known") .. ":0|t |cff15abffСобрано|r";
-L.COLLECTED_APPEARANCE = "|T" .. app.asset("known_circle") .. ":0|t |cff15abffСобрано*|r";
-L.NOT_COLLECTED = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Не Собрано|r";
-L.COMPLETE = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Выполнено|r";
-L.COMPLETE_OTHER = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Выполнено*|r";
-L.INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |cff15abffНе Выполнено|r";
-L.INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";	
 
 L.EXPANSION_DATA[1].name = "Classic";
 L.EXPANSION_DATA[1].lore = "Полный решимости заселить засушливые земли Дуротара, Тралл позволил Отрекшимся присоединиться к Орде, состоявшей из орков, тауренов и троллей. В то же время дворфы, гномы и древние ночные эльфы присягнули Альянсу, управляемому королевством людей. После таинственного исчезновения короля Штормграда Вариана Ринна, регентом был назначен Верховный лорд Болвар Фордрагон, но истинная власть находилась в руках черного дракона Ониксии, скрывавшейся под личиной дворянки и подчинившей Фордрагона своей воле. По мере того как герои узнавали новые подробности страшного заговора, во всех концах мира пробуждались древние силы, представлявшие угрозу как для Альянса, так и для Орды.";
@@ -44,14 +30,6 @@ L.EXPANSION_DATA[8].lore = "Когда Саргерас нанес Азерот 
 L.EXPANSION_DATA[9].lore = "Одним отчаянным ударом Сильвана Ветрокрылая разрушила границу между миром живых и загробным царством. Храбрейших защитников Азерота затянула всепожирающая тьма. Несущая смерть древняя сила грозит сбросить оковы и уничтожить саму реальность.\n\nТех, кто осмелится сделать шаг в царство мертвых, ждут чудесные и пугающие неизведанные миры. Темные земли — это царство, в котором обитают души умерших. Это мир между мирами, от хрупкого баланса в котором зависит само существование жизни и смерти.\n\nКак одного из величайших защитников Азерота, вас наделили способностью пребывать в этом мире, не теряя своей телесной оболочки. Теперь вам предстоит раскрыть заговор, грозящий уничтожением Вселенной, и помочь легендарным героям всех эпох Warcraft вернуться в Азерот... или окончательно покинуть этот мир.";
 L.EXPANSION_DATA[10].lore = "Драконы Азерота откликнулись на зов и вернулись, чтобы защитить свою родину, Драконьи острова. Магия стихий и энергия жизни Азерота наполняют вновь пробудившиеся Драконьи острова, и теперь вам предстоит исследовать их первобытные чудеса и раскрыть давно забытые тайны.";
 
-L.TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.." клик - Закрепить это Окно";
-L.TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.." клик - Открепить это Окно";
-L.TITLE_DEBUG = "|c" .. app.DefaultColors.Red .. "Отладка|R ";
-L.TITLE_ACCOUNT = "|c" .. app.DefaultColors.Account.."Учётная Запись|R ";
-L.TITLE_INSANE = "|c" .. app.DefaultColors.Insane.."Безумный|R ";
-L.ICON_LEGEND_STATUS_TEXT = "|c" .. app.DefaultColors.White .. "|T" .. app.asset("status-unobtainable") .. ":0|t Недоступно\n|T" .. app.asset("status-prerequisites") .. ":0|t Доступно с условием\n|T" .. app.asset("status-seasonal-available") .. ":0|t Доступная Праздничная Штучка\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t Недоступная Праздничная Штучка\n|T374225:0|t Недоступно на текущем персонаже";
-L.SAVED = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Сохранено|r";
-L.COST_TEXT = "|T" .. app.asset("Currency") .. ":0|t |cff0891ffВалюта|r";
 
 local a = L.ABBREVIATIONS;
 for key,value in pairs({
@@ -91,26 +69,15 @@ end
 
 
 
-DEBUG_MODE = "|c" .. app.DefaultColors.Red.."Режим Отладки|r (Показать Всё)";
-ACCOUNT_MODE = "|c" .. app.DefaultColors.Account.."Режим Аккаунта";
-MODE_EXPLAIN_LABEL = "|cffFFFFFFЗдесь кратко изложено то, что Вы собираете. Включите все ".."|c" .. app.DefaultColors.Insane.."цветные параметры|cffFFFFFF, чтобы разблокировать ".."|c" .. app.DefaultColors.Insane.."Безумный Режим|cffFFFFFF.";
-
-
-ACC_WIDE_DEFAULT = "Отслеживается на ".."|c" .. app.DefaultColors.Account.."Весь Аккаунт|R по умолчанию.";
-TRACK_ACC_WIDE = "|c" .. app.DefaultColors.Account.."Отслеживать на весь аккаунт|R";
-
-
-AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Азеритовые сущности";
-FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t Соратники & Спутники";
-RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Легендарки ТЗ";
-SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Проводники";
 
 
 
-ITEM_EXPLAIN_LABEL = "|cffFFFFFFЭти предметы всегда видимы в ".."|c" .. app.DefaultColors.Account.."Режиме Аккаунта|cffFFFFFF.|r";
 
 
-CUSTOM_FILTERS_EXPLAIN_LABEL = "|CFFFFFFFFЭти Штучки всегда показываются, если они доступны текущему персонажу или в ".."|c" .. app.DefaultColors.Account.."Режиме Аккаунта|cffFFFFFF.|r";
+
+
+
+
 
 
 

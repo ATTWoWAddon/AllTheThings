@@ -4,8 +4,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 local GetItemClassInfo = app.WOWAPI.GetItemClassInfo;
 
 
-TITLE = "|c" .. app.DefaultColors.ATT .. "ALL THE THINGS|r";
-SHORTTITLE = "|c" .. app.DefaultColors.ATT .. "ATT|r";
 
 NEW_VERSION_FLAVORS = {
 	"AllTheThings hungers.",
@@ -27,20 +25,6 @@ NEW_VERSION_FLAVORS = {
 
 
 
-ICON_LEGEND_STATUS_TEXT = "|c" .. app.DefaultColors.White .. "|T" .. app.asset("status-unobtainable") .. ":0|t Unobtainable" .. "\n|T" .. app.asset("status-prerequisites") .. ":0|t Obtainable only with prerequisites" .. "\n|T" .. app.asset("status-seasonal-available") .. ":0|t Available seasonal content" .. "\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t Unavailable seasonal content" .. "\n|T374225:0|t Unavailable on current character" .. "\n|T" .. app.asset("status-unsorted") .. ":0|t Unsorted in ATT";
-ICON_LEGEND_MISC_TEXT = "|c" .. app.DefaultColors.White .. "|T" .. app.asset("Currency") .. ":0|t Used as a currency" .. "\n|T" .. app.asset("Interface_Reagent") .. ":0|t Used as a crafting reagent" .. "\n|T" .. app.asset("Interface_Catalyst") .. ":0|t Convertible at the Catalyst for a new appearance" .. "\n|T" .. app.asset("Interface_Upgrade") .. ":0|t Can be upgraded for a new appearance";
-
-COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";
-COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";	
-COMPLETE_ICON = "|T" .. app.asset("known_green") .. ":0|t";	
-NOT_COLLECTED_ICON = "|T" .. app.asset("unknown") .. ":0|t";	
-COLLECTED = "|T" .. app.asset("known") .. ":0|t |c" .. app.Colors.Completed .. "Collected|r";	
-COLLECTED_APPEARANCE = "|T" .. app.asset("known_circle") .. ":0|t |c" .. app.Colors.Completed .. "Collected*|r";
-NOT_COLLECTED = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Not Collected|r";	
-COMPLETE = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Complete|r";	
-COMPLETE_OTHER = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Complete*|r";	
-INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |c" .. app.Colors.Completed .. "Incomplete|r";	
-INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";	
 
 
 
@@ -48,8 +32,7 @@ INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";
 
 
 
-TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.." click to Lock this Window";
-TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.." click to Unlock this Window";
+
 
 
 ABBREVIATIONS = {
@@ -216,14 +199,6 @@ EXPANSION_DATA = {
 };
 
 
-TITLE_DEBUG = "|c" .. app.DefaultColors.Red .. "Debug|R ";
-TITLE_ACCOUNT = "|c" .. app.DefaultColors.Account .. "Account|R ";
-TITLE_ALLIANCE = "|c" .. app.DefaultColors.Alliance .. FACTION_ALLIANCE .. "|R";
-TITLE_HORDE = "|c" .. app.DefaultColors.Horde .. FACTION_HORDE .. "|R";
-TITLE_INSANE = "|c" .. app.DefaultColors.Insane .. "Insane|R ";
-
-PRESET_INSANE = "|c" .. app.DefaultColors.Insane .. "Insane Mode|R enables all |c" .. app.DefaultColors.Insane .. "colored options|R and gives you a real challenge!";
-PRESET_ACCOUNT = "|c" .. app.DefaultColors.Account .. "Account Mode|R enables all account-wide tracking, and will show progress from all of your characters.";
 
 
 
@@ -232,17 +207,7 @@ PRESET_ACCOUNT = "|c" .. app.DefaultColors.Account .. "Account Mode|R enables al
 
 
 
-SAVED = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Saved|r";
-COST_ICON = "|T" .. app.asset("Currency") .. ":0|t";
-COST_TEXT = "|T" .. app.asset("Currency") .. ":0|t |cffdedade"..CURRENCY.."|r";
-COLLECTED_WARBAND_ICON = "|T" .. app.asset("known_circle_yellow") .. ":0|t";
-COLLECTED_WARBAND = "|T" .. app.asset("known_circle_yellow") .. ":0|t |cfff0e341Future Warband Collected|r";
-UPGRADE_ICON = "|T" .. app.asset("Interface_Upgrade") .. ":0|t";
-UPGRADE_TEXT = "|T" .. app.asset("Interface_Upgrade") .. ":0|t |cff62e37e"..UPGRADE.."|r";
-REAGENT_ICON = "|T" .. app.asset("Interface_Reagent") .. ":0|t";
-REAGENT_TEXT = "|T" .. app.asset("Interface_Reagent") .. ":0|t |cffdedade"..GetItemClassInfo(5).."|r";
-CATALYST_ICON = "|T" .. app.asset("Interface_Catalyst") .. ":0|t";
-CATALYST_TEXT = "|T" .. app.asset("Interface_Catalyst") .. ":0|t |cffffd900Catalyst|r";
+
 
 UNOBTAINABLE_ITEM_TEXTURES = {
 	[0] = 374225,	-- 0 Available, but not due to Current Character filters
@@ -293,27 +258,15 @@ SPELL_NAME_TO_SPELL_ID = {
 
 
 
-DEBUG_MODE = "|c" .. app.DefaultColors.Red.."Debug Mode|r (Show Everything)";
-ACCOUNT_MODE = "|c" .. app.DefaultColors.Account.."Account Mode";
-MODE_EXPLAIN_LABEL = "|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all |c" .. app.DefaultColors.Insane .. "colored options|cffFFFFFF to unlock ".. "|c" .. app.DefaultColors.Insane .. "Insane Mode|cffFFFFFF.";
-
-
-ACC_WIDE_DEFAULT = "Tracked ".. "|c" .. app.DefaultColors.Account .. "Account-Wide|R by default.";
-TRACK_ACC_WIDE = "|c" .. app.DefaultColors.Account .. "Track Account-Wide|R";
-
-AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Azerite Essences";
-MOUNTMODS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t Mount Modifications";
-FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t Followers & Companions";
-RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Runecarving Powers";
-SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Conduits";
 
 
 
 
-ITEM_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if you are in ".."|c" .. app.DefaultColors.Account.."Account Mode|cffFFFFFF.|r";
 
 
-CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in ".."|c" .. app.DefaultColors.Account.."Account Mode|cffFFFFFF.|r";
+
+
+
 
 
 

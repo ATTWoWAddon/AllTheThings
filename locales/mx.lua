@@ -4,8 +4,6 @@ local L = app.L;
 
 local GetSpellName = app.WOWAPI.GetSpellName;
 
-L.TITLE = "|c" .. app.DefaultColors.ATT .. "ALL THE THINGS|r";
-L.SHORTTITLE = "|c" .. app.DefaultColors.ATT .. "ATT|r";
 
 L.NEW_VERSION_FLAVORS = {
 	"AllTheThings tiene hambre.",
@@ -27,20 +25,7 @@ L.NEW_VERSION_FLAVORS = {
 
 
 
-L.ICON_LEGEND_STATUS_TEXT = "|c" .. app.DefaultColors.White .. "|T" .. app.asset("status-unobtainable") .. ":0|t No conseguible\n|T" .. app.asset("status-prerequisites") .. ":0|t Conseguible solo con requisitos\n|T" .. app.asset("status-seasonal-available") .. ":0|t Contenido de temporada disponible\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t Contenido de temporada no disponible\n|T374225:0|t No disponible en el personaje actual\n|T" .. app.asset("status-unsorted") .. ":0|t Sin listar en ATT";
-L.ICON_LEGEND_MISC_TEXT = "|c" .. app.DefaultColors.White .. "|T" .. app.asset("Currency") .. ":0|t Usado como una moneda\n|T" .. app.asset("Interface_Reagent") .. ":0|t Usado como un componente de fabricación\n|T" .. app.asset("Interface_Catalyst") .. ":0|t Convertible en el Catalyst para una nueva apariencia\n|T" .. app.asset("Interface_Upgrade") .. ":0|t Se puede mejorar para una nueva apariencia.";
 
-L.COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";
-L.COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";	
-L.COMPLETE_ICON = "|T" .. app.asset("known_green") .. ":0|t";	
-L.NOT_COLLECTED_ICON = "|T" .. app.asset("unknown") .. ":0|t";	
-L.COLLECTED = "|T" .. app.asset("known") .. ":0|t |cff15abffAprendido|r";
-L.COLLECTED_APPEARANCE = "|T" .. app.asset("known_circle") .. ":0|t |cff15abffAprendido*|r";
-L.NOT_COLLECTED = "|T" .. app.asset("unknown") .. ":0|t |cffff9333No aprendido|r";
-L.COMPLETE = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Completado|r";
-L.COMPLETE_OTHER = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Completado*|r";
-L.INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |cff15abffIncompleto|r";
-L.INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";	
 
 if app.IsRetail then
 end
@@ -62,26 +47,18 @@ L.EXPANSION_DATA[13].lore = "The Last Titan es la duodécima expansión de World
 
 
 
-L.TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.." + click para bloquear esta ventana";
-L.TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.." + click para desbloquear esta ventana";
-
-
-L.TITLE_DEBUG = "|c" .. app.DefaultColors.Red .. "Depuración|R ";
-L.TITLE_ACCOUNT = "|c" .. app.DefaultColors.Account .. "Cuenta|R ";
-L.TITLE_INSANE = "|c" .. app.DefaultColors.Insane.."Enfermo|R ";
-
-
-
-
-L.ICON_LEGEND_STATUS_TEXT = "|c" .. app.DefaultColors.White .. "|T" .. app.asset("status-unobtainable") .. ":0|t No obtenible\n|T" .. app.asset("status-prerequisites") .. ":0|t Obtenible sólo con prerequisitos\n|T" .. app.asset("status-seasonal-available") .. ":0|t Contenido temporal disponible\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t Contenido temporal no disponible\n|T374225:0|t No disponible en tu personaje actual";
 
 
 
 
 
 
-L.SAVED = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Conocido|r";
-L.COST_TEXT = "|T" .. app.asset("Currency") .. ":0|t |cff0891ffMoneda|r";
+
+
+
+
+
+
 
 local a = L.ABBREVIATIONS;
 for key,value in pairs({
@@ -128,17 +105,6 @@ end
 
 
 
-DEBUG_MODE = "|c" .. app.DefaultColors.Red.."Modo Depuración|r (Muestra todo)";
-ACCOUNT_MODE = "|c" .. app.DefaultColors.Account.."Modo Cuenta";
-MODE_EXPLAIN_LABEL = "|cffFFFFFFLo que coleccionas se resume en un modo específico. Activa todas las opciones |c" .. app.DefaultColors.Insane .. "coloreadas|cffFFFFFF para desbloquear el ".. "|c" .. app.DefaultColors.Insane .. "Modo Demente|cffFFFFFF.";
-ACC_WIDE_DEFAULT = "Rastreado ".. "|c" .. app.DefaultColors.Account .. "Para toda la cuenta|R por defecto.";
-TRACK_ACC_WIDE = "|c" .. app.DefaultColors.Account .. "Rastrear para toda la cuenta|R";
-AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Esencias del Corazón de Azeroth";
-FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t Seguidores y Campeones";
-RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Poder de talla de runas";
-SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Conductos";
-ITEM_EXPLAIN_LABEL = "|cffFFFFFFEste contenido se muestra siempre si estás en ".."|c" .. app.DefaultColors.Account.."Modo Cuenta|cffFFFFFF.|r";
-CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFEste contenido siempre está visible si está disponible para tu personaje actual o si estás en ".."|c" .. app.DefaultColors.Account.."Modo Cuenta|cffFFFFFF.|r";
 
 if app.IsRetail then
 

@@ -4,8 +4,6 @@ local L = app.L;
 
 local GetSpellName = app.WOWAPI.GetSpellName;
 
-L.TITLE = "|c" .. app.DefaultColors.ATT .. "ALL THE THINGS|r";
-L.SHORTTITLE = "|c" .. app.DefaultColors.ATT .. "ATT|r";
 
 L.NEW_VERSION_FLAVORS = {
 	--TODO: "AllTheThings hungers.",
@@ -19,19 +17,7 @@ L.NEW_VERSION_FLAVORS = {
 };
 
 
-L.ICON_LEGEND_STATUS_TEXT = "|c" .. app.DefaultColors.White .. "|T" .. app.asset("status-unobtainable") .. ":0|t 無法獲得\n|T" .. app.asset("status-prerequisites") .. ":0|t 僅在滿足先決條件的情況下獲得\n|T" .. app.asset("status-seasonal-available") .. ":0|t 季節性內容\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t 季節性內容\n|T374225:0|t 當前角色不可用\n|T" .. app.asset("status-unsorted") .. ":0|t Unsorted in ATT";
 
-L.COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";
-L.COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";	
-L.COMPLETE_ICON = "|T" .. app.asset("known_green") .. ":0|t";	
-L.NOT_COLLECTED_ICON = "|T" .. app.asset("unknown") .. ":0|t";	
-L.COLLECTED = "|T" .. app.asset("known") .. ":0|t |cff15abff已收藏|r";
-L.COLLECTED_APPEARANCE = "|T" .. app.asset("known_circle") .. ":0|t |cff15abff已收藏*|r";
-L.NOT_COLLECTED = "|T" .. app.asset("unknown") .. ":0|t |cffff9333未收藏|r";
-L.COMPLETE = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已完成|r";
-L.COMPLETE_OTHER = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已完成*|r";
-L.INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |cffff9333未完成|r";
-L.INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";	
 
 L.EXPANSION_DATA[1].lore = "海加爾山之戰的四年後，聯盟和部落之間的關係又一次緊張了起來。在貧瘠之地杜洛塔，由索爾所領導的部落安頓定居下來並繼續擴充軍隊的規模，他們邀請被遺忘者加入獸人、牛頭人和食人妖的行列。同時，矮人、地精和古老的夜精靈也發誓效忠由人類王國暴風城所領導的聯盟。在暴風城國王瓦里安·烏瑞恩神秘失蹤後，大領主伯瓦爾‧弗塔根擔任攝政王一職，但是偽裝成人類女貴族的黑龍軍團的奧妮克希亞控制他的心智，從幕後操控整個王國。正當英雄們探查奧妮克希亞的陰謀時，古老的強敵卻現身世界各地，威脅著部落和聯盟。";
 L.EXPANSION_DATA[2].lore = "燃燒的遠征是第一個資料片。它的主要內容包括將等級上限提高到70，將血精靈和德萊尼作為可玩的種族引入，以及外域世界的加入，以及許多新區域、地城、物品、任務和怪物。";
@@ -47,13 +33,6 @@ L.EXPANSION_DATA[11].lore = "地心之戰是第十個資料片。也是世界之
 L.EXPANSION_DATA[12].lore = "至暗之夜是第十一個資料片。也是世界之魂戰記的第二部份。";
 L.EXPANSION_DATA[13].lore = "最後的泰坦是第十二個資料片。也是世界之魂戰記三部曲終章。";
 
-L.TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.."點擊鎖定視窗";
-L.TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.."點擊解鎖視窗";
-L.TITLE_DEBUG = "|c" .. app.DefaultColors.Red .. "偵錯|R ";
-L.TITLE_ACCOUNT = "|c" .. app.DefaultColors.Account.."帳號|R ";
-L.TITLE_INSANE = "|c" .. app.DefaultColors.Insane.."瘋狂|R ";
-L.SAVED = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已保存|r";
-L.COST_TEXT = "|T" .. app.asset("Currency") .. ":0|t |cff0891ff貨幣|r";
 
 local a = L.ABBREVIATIONS;
 for key,value in pairs({
@@ -82,17 +61,6 @@ end
 
 
 
-DEBUG_MODE = "|c" .. app.DefaultColors.Red.."偵錯模式|r（顯示所有）";
-ACCOUNT_MODE = "|c" .. app.DefaultColors.Account.."帳號模式";
-MODE_EXPLAIN_LABEL = "|cffFFFFFF您收藏的內容總結在這裡。啟用所有 ".."|c" .. app.DefaultColors.Insane.."彩色選項|cffFFFFFF 解鎖 ".."|c" .. app.DefaultColors.Insane.."瘋狂模式|cffFFFFFF。";
-ACC_WIDE_DEFAULT = "已追蹤 ".. "|c" .. app.DefaultColors.Account .. "帳號通用|R 預設。";
-TRACK_ACC_WIDE = "|c" .. app.DefaultColors.Account .. "追蹤 帳號通用|R";
-AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t 艾澤拉斯精華";
-FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t 追隨者 & 伙伴";
-RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 符文銘刻之力";
-SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 導靈器";
-ITEM_EXPLAIN_LABEL = "|cffFFFFFF始終顯示此內容如果位於 ".."|c" .. app.DefaultColors.Account.."帳號模式|cffFFFFFF。|r";
-CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF如果當前角色可以使用此內容，或者位於 ".."|c" .. app.DefaultColors.Account.."帳號模式|cffFFFFFF。|r";
 
 if app.IsRetail then
 	local a = L.CUSTOM_COLLECTS_REASONS;
