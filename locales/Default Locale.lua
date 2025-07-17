@@ -635,14 +635,6 @@ if localeString == "zhCN" or localeString == "zhTW" then
 end
 
 if app.IsRetail then
-	L.HEADER_NAMES = {
-		[-5200] = "Base Appearance",											-- Base Appearance
-		[-5201] = "Class Hall Campaign",										-- Class Hall Campaign
-		[-5202] = "Balance of Power",											-- Balance of Power
-		[-5203] = "Prestige Rewards",											-- Prestige Rewards
-		[-5204] = "Challenge Appearance",										-- Challenge Appearance
-		[-5205] = "Hidden Appearance",											-- Hidden Appearance
-	};
 	L.CUSTOM_COLLECTS_REASONS = {
 		["NPE"] = { icon = "|T"..(3567434)..":0|t", color = "ff5bc41d", text = "New Player Experience", desc = "Only a New Character can Collect this." },
 		["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "Threads of Fate", desc = "Only a Character who chose to skip the Shadowlands Storyline can Collect this." },
@@ -655,13 +647,6 @@ if app.IsRetail then
 	};
 	
 	if localeString == "deDE" then
-		local a = L.HEADER_NAMES;
-		for key,value in pairs({
-			[-5201] = "Ordenskampagne",								-- Class Hall Campaign
-			[-5202] = "Gleichgewicht der Kräfte",					-- Balance of Power
-		})
-		do a[key] = value; end
-
 		local a = L.CUSTOM_COLLECTS_REASONS;
 		for key,value in pairs({
 			["NPE"] = { icon = "|T"..(3567434)..":0|t", color = "ff5bc41d", text = "New Player Experience", desc = "Only a New Character can Collect this." },
@@ -672,12 +657,6 @@ if app.IsRetail then
 		do a[key] = value; end
 	end
 	if localeString == "esES" then
-		local a = L.HEADER_NAMES;
-		for key,value in pairs({
-			[-5202] = "Equilibrio de poderes",						-- Balance of Power
-		})
-		do a[key] = value; end
-
 		local a = L.CUSTOM_COLLECTS_REASONS;
 		for key,value in pairs({
 			["NPE"] = { icon = "|T"..(3567434)..":0|t", color = "ff5bc41d", text = "Experiencia de los jugadores nuevos", desc = "Sólo un personaje nuevo puede coleccionar esto." },
@@ -688,12 +667,6 @@ if app.IsRetail then
 		do a[key] = value; end
 		
 		if localeString == "esMX" then
-			local a = L.HEADER_NAMES;
-			for key,value in pairs({
-				[-5202] = "Balance de poder",						-- Balance of Power
-			})
-			do a[key] = value; end
-
 			local a = L.CUSTOM_COLLECTS_REASONS;
 			for key,value in pairs({
 				["NPE"] = { icon = "|T"..(3567434)..":0|t", color = "ff5bc41d", text = "Experiencia de los jugadores nuevos", desc = "Sólo un personaje nuevo puede coleccionar esto." },
@@ -705,17 +678,6 @@ if app.IsRetail then
 		end
 	end
 	if localeString == "frFR" then
-		local a = L.HEADER_NAMES;
-		for key,value in pairs({
-			[-5200] = "Apparence de base",							-- Base Appearance
-			[-5201] = "Campagne du Domaine de classe",				-- Class Hall Campaign
-			[-5202] = "L’équilibre de la puissance",				-- Balance of Power
-			[-5203] = "Récompenses préstigieuses",					-- Prestige Rewards
-			[-5204] = "Apparence de Challenge",						-- Challenge Appearance
-			[-5205] = "Apparence Cachée",							-- Hidden Appearance
-		})
-		do a[key] = value; end
-
 		local a = L.CUSTOM_COLLECTS_REASONS;
 		for key,value in pairs({
 			["NPE"] = { icon = "|T"..(3567434)..":0|t", color = "ff5bc41d", text = "Expérience Nouveau Joueur", desc = "Seul un nouveau personnage peut collecter ceci." },
@@ -726,12 +688,6 @@ if app.IsRetail then
 		do a[key] = value; end
 	end
 	if localeString == "itIT" then
-		local a = L.HEADER_NAMES;
-		for key,value in pairs({
-			[-5202] = "Equilibrio di potere",						-- Balance of Power
-		})
-		do a[key] = value; end
-
 		local a = L.CUSTOM_COLLECTS_REASONS;
 		for key,value in pairs({
 			["NPE"] = { icon = "|T"..(3567434)..":0|t", color = "ff5bc41d", text = "New Player Experience", desc = "Only a New Character can Collect this." },
@@ -742,12 +698,6 @@ if app.IsRetail then
 		do a[key] = value; end
 	end
 	if localeString == "ptBR" then
-		local a = L.HEADER_NAMES;
-		for key,value in pairs({
-			[-5202] = "Equilíbrio de poder",						-- Balance of Power
-		})
-		do a[key] = value; end
-
 		local a = L.CUSTOM_COLLECTS_REASONS;
 		for key,value in pairs({
 			["NPE"] = { icon = "|T"..(3567434)..":0|t", color = "ff5bc41d", text = "New Player Experience", desc = "Only a New Character can Collect this." },
@@ -758,17 +708,6 @@ if app.IsRetail then
 		do a[key] = value; end
 	end
 	if localeString == "ruRU" then
-		local a = L.HEADER_NAMES;
-		for key,value in pairs({
-			[-5200] = "Основной облик",								-- Base Appearance
-			[-5201] = "Кампания оплота",							-- Class Hall Campaign
-			[-5202] = "Баланс Сил",									-- Balance of Power
-			[-5203] = "Награды за Престиж",							-- Prestige Rewards
-			[-5204] = "Облик Испытаний",							-- Challenge Appearance
-			[-5205] = "Скрытый облик",								-- Hidden Appearance
-		})
-		do a[key] = value; end
-
 		local a = L.CUSTOM_COLLECTS_REASONS;
 		for key,value in pairs({
 			["NPE"] = { icon = "|T"..(3567434)..":0|t", color = "ff5bc41d", text = "Новый Персонаж", desc = "Только Новый Персонаж может собрать эти предметы." },
@@ -779,12 +718,6 @@ if app.IsRetail then
 		do a[key] = value; end
 	end
 	if localeString == "koKR" then
-		local a = L.HEADER_NAMES;
-		for key,value in pairs({
-			[-5202] = "힘의 균형",										-- Balance of Power
-		})
-		do a[key] = value; end
-
 		local a = L.CUSTOM_COLLECTS_REASONS;
 		for key,value in pairs({
 			["NPE"] = { icon = "|T"..(3567434)..":0|t", color = "ff5bc41d", text = "New Player Experience", desc = "Only a New Character can Collect this." },
@@ -795,17 +728,6 @@ if app.IsRetail then
 		do a[key] = value; end
 	end
 	if localeString == "zhCN" or localeString == "zhTW" then
-		local a = L.HEADER_NAMES;
-		for key,value in pairs({
-			[-5200] = "基础外观",										-- Base Appearance
-			[-5201] = "职业大厅战役",										-- Class Hall Campaign
-			[-5202] = "能量的平衡",										-- Balance of Power
-			[-5203] = "荣誉奖励",										-- Prestige Rewards
-			[-5204] = "挑战外观",										-- Challenge Appearance
-			[-5205] = "隐藏外观",										-- Hidden Appearance
-		})
-		do a[key] = value; end
-
 		local a = L.CUSTOM_COLLECTS_REASONS;
 		for key,value in pairs({
 			["NPE"] = { icon = "|T"..(3567434)..":0|t", color = "ff5bc41d", text = "新玩家体验", desc = "只有新角色可以收藏这个。" },
@@ -816,17 +738,6 @@ if app.IsRetail then
 		do a[key] = value; end
 		
 		if localeString == "zhTW" then
-			local a = L.HEADER_NAMES;
-			for key,value in pairs({
-				[-5200] = "基礎外觀",										-- Base Appearance
-				[-5201] = "職業大廳戰役",									-- Class Hall Campaign
-				[-5202] = "能量的平衡",										-- Balance of Power
-				[-5203] = "榮譽獎勵",										-- Prestige Rewards
-				[-5204] = "挑戰外觀",										-- Challenge Appearance
-				[-5205] = "隱藏外觀",										-- Hidden Appearance
-			})
-			do a[key] = value; end
-			
 			local a = L.CUSTOM_COLLECTS_REASONS;
 			for key,value in pairs({
 				["NPE"] = { icon = "|T"..(3567434)..":0|t", color = "ff5bc41d", text = "新玩家體驗", desc = "只有新角色可以收藏這個。" },
