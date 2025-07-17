@@ -40,8 +40,8 @@ L.CRITERIA_FORMAT = "|cffffff00[Criterio: %s]|r";
 
 
 
-L.ICON_LEGEND_STATUS_TEXT = app.ccColors.White .. "|T" .. app.asset("status-unobtainable") .. ":0|t " .. "No conseguible" .. "\n|T" .. app.asset("status-prerequisites") .. ":0|t " .. "Conseguible solo con requisitos" .. "\n|T" .. app.asset("status-seasonal-available") .. ":0|t " .. "Contenido de temporada disponible" .. "\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t " .. "Contenido de temporada no disponible" .. "\n|T374225:0|t " .. "No disponible en el personaje actual" .. "\n|T" .. app.asset("status-unsorted") .. ":0|t " .. "Sin listar en ATT";
-L.ICON_LEGEND_MISC_TEXT = app.ccColors.White .. "|T" .. app.asset("Currency") .. ":0|t " .. "Usado como una moneda" .. "\n|T" .. app.asset("Interface_Reagent") .. ":0|t " .. "Usado como un componente de fabricación" .. "\n|T" .. app.asset("Interface_Catalyst") .. ":0|t " .. "Convertible en el Catalyst para una nueva apariencia" .. "\n|T" .. app.asset("Interface_Upgrade") .. ":0|t " .. "Se puede mejorar para una nueva apariencia.";
+L.ICON_LEGEND_STATUS_TEXT = "|c" .. app.DefaultColors.White .. "|T" .. app.asset("status-unobtainable") .. ":0|t No conseguible\n|T" .. app.asset("status-prerequisites") .. ":0|t Conseguible solo con requisitos\n|T" .. app.asset("status-seasonal-available") .. ":0|t Contenido de temporada disponible\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t Contenido de temporada no disponible\n|T374225:0|t No disponible en el personaje actual\n|T" .. app.asset("status-unsorted") .. ":0|t Sin listar en ATT";
+L.ICON_LEGEND_MISC_TEXT = "|c" .. app.DefaultColors.White .. "|T" .. app.asset("Currency") .. ":0|t Usado como una moneda\n|T" .. app.asset("Interface_Reagent") .. ":0|t Usado como un componente de fabricación\n|T" .. app.asset("Interface_Catalyst") .. ":0|t Convertible en el Catalyst para una nueva apariencia\n|T" .. app.asset("Interface_Upgrade") .. ":0|t Se puede mejorar para una nueva apariencia.";
 L.MINIMAP_SLIDER_TOOLTIP = "Usa esto para personalizar el tamaño del botón del Minimapa.\n\nPredeterminado: 36";
 
 L.COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";
@@ -94,9 +94,9 @@ L.FORCE_REFRESH_REQUIRED = "Esto puede requerir un refresco forzado ("..SHIFT_KE
 L.TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.." + clic para bloquear esta ventana";
 L.TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.." + clic para desbloquear esta ventana";
 
-L.TITLE_DEBUG = app.ccColors.Red .. "Depuración|R ";
-L.TITLE_ACCOUNT = app.ccColors.Account .. "Cuenta|R ";
-L.TITLE_INSANE = app.ccColors.Insane.."Demente|R ";
+L.TITLE_DEBUG = "|c" .. app.DefaultColors.Red .. "Depuración|R ";
+L.TITLE_ACCOUNT = "|c" .. app.DefaultColors.Account .. "Cuenta|R ";
+L.TITLE_INSANE = "|c" .. app.DefaultColors.Insane.."Demente|R ";
 L._BETA_LABEL = " |cff4AA7FF[Beta]|R";
 
 L.TOGGLE_ACCOUNT_MODE = "Activar Modo Cuenta";
@@ -161,13 +161,13 @@ SKIP_AUTO_REFRESH_TOOLTIP = "Por defecto (desactivado), cualquier cambio de Ajus
 
 ABOUT_TOP = " |CFFFFFFFF es un addon de rastreo de colecciones que te muestra dónde y cómo conseguirlo tódo en el juego! Tenemos una gran comunidad de usuarios en nuestro Discord (enlace el final) donde puedes preguntar, enviar sugerencias y también reportar errores o objetos que falten. Si encuentras algún coleccionable que no está documentado, puedes decirnoslo en el Discord, o para los que tengan más conocimiento técnico, tenemos un Git donde puedes contribuir directamente.\n\nSi bien nos esforzamos mucho por el completado, hay muchas cosas que se añaden al juego en cada parche, así que si nos dejamos algo, por favor entiende que somos un equipo pequeño intentando seguir el ritmo de cambios e intentando coleccionar cosas nosotros también. :D\n\nPuedes preguntarme dudas cuando esté haciendo directos e intentaré responderte lo mejor que pueda, incluso si no está relacionado directamente con ATT (programación de addons del WoW también).\n\n- |r|Cffff8000Crieve|r";
 
-DEBUG_MODE = app.ccColors.Red.."Modo Depuración|r (Muestra todo)";
-ACCOUNT_MODE = app.ccColors.Account.."Modo Cuenta";
-MODE_EXPLAIN_LABEL = "|cffFFFFFFLo que coleccionas se resume en un modo específico. Activa todas las opciones " .. app.ccColors.Insane .. "coloreadas|cffFFFFFF para desbloquear el ".. app.ccColors.Insane .. "Modo Demente|cffFFFFFF.";
+DEBUG_MODE = "|c" .. app.DefaultColors.Red.."Modo Depuración|r (Muestra todo)";
+ACCOUNT_MODE = "|c" .. app.DefaultColors.Account.."Modo Cuenta";
+MODE_EXPLAIN_LABEL = "|cffFFFFFFLo que coleccionas se resume en un modo específico. Activa todas las opciones |c" .. app.DefaultColors.Insane .. "coloreadas|cffFFFFFF para desbloquear el ".. "|c" .. app.DefaultColors.Insane .. "Modo Demente|cffFFFFFF.";
 
 
-ACC_WIDE_DEFAULT = "Rastreado ".. app.ccColors.Account .. "Para toda la cuenta|R por defecto.";
-TRACK_ACC_WIDE = app.ccColors.Account .. "Rastrear para toda la cuenta|R";
+ACC_WIDE_DEFAULT = "Rastreado ".. "|c" .. app.DefaultColors.Account .. "Para toda la cuenta|R por defecto.";
+TRACK_ACC_WIDE = "|c" .. app.DefaultColors.Account .. "Rastrear para toda la cuenta|R";
 
 
 AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Esencias del Corazón de Azeroth";
@@ -179,10 +179,10 @@ SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Conductos";
 
 
 
-ITEM_EXPLAIN_LABEL = "|cffFFFFFFEste contenido se muestra siempre si estás en "..app.ccColors.Account.."Modo Cuenta|cffFFFFFF.|r";
+ITEM_EXPLAIN_LABEL = "|cffFFFFFFEste contenido se muestra siempre si estás en ".."|c" .. app.DefaultColors.Account.."Modo Cuenta|cffFFFFFF.|r";
 
 
-CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFEste contenido siempre está visible si está disponible para tu personaje actual o si estás en "..app.ccColors.Account.."Modo Cuenta|cffFFFFFF.|r";
+CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFEste contenido siempre está visible si está disponible para tu personaje actual o si estás en ".."|c" .. app.DefaultColors.Account.."Modo Cuenta|cffFFFFFF.|r";
 
 CONTAINS_SLIDER_TOOLTIP = "Usa esto para personalizar el número de cosas resumidas a mostrar en la ventana emergente.\n\nPor defecto: 25";
 LOCATIONS_SLIDER_TOOLTIP = "Usa esto para personalizar el numero de ubicaciones de origen a mostrar en la ventana emergente.\n\nNOTA: También mostrará "X" numero de otras opciones basándose en cuántas, si el total es equivalente al número total de elementos mostrados, sino simplemente mostrará la última fuente.\n\nPor defecto: 5";

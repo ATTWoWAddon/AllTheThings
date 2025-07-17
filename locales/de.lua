@@ -46,9 +46,9 @@ L.RESET_INSTANCES_DESC = "Hier klicken um Eure Instanzen zurückzusetzen.\n\n"..
 L.FORCE_REFRESH_REQUIRED = "Dies benötigt möglicherweise eine erzwungene Aktualisierung ("..SHIFT_KEY_TEXT.." click) um ordnungsgemäß als gesammelt zu zählen.";
 L.TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.." Klick um das Fenster zu fixieren";
 L.TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.." Klick um das Fenster freizugeben";
-L.TITLE_DEBUG = app.ccColors.Red .. "Debug|R ";
-L.TITLE_ACCOUNT = app.ccColors.Account.."Account|R ";
-L.TITLE_INSANE = app.ccColors.Insane.."Wahnsinn|R ";
+L.TITLE_DEBUG = "|c" .. app.DefaultColors.Red .. "Debug|R ";
+L.TITLE_ACCOUNT = "|c" .. app.DefaultColors.Account.."Account|R ";
+L.TITLE_INSANE = "|c" .. app.DefaultColors.Insane.."Wahnsinn|R ";
 L._BETA_LABEL = " |cff4AA7FF[Beta]|R";
 L.TOGGLE_ACCOUNT_MODE = "Account Modus ein/aus";
 L.TOGGLE_COMPLETIONIST_MODE = "Completionist Modus ein/aus";
@@ -107,8 +107,8 @@ for key,value in pairs({
 do a[key] = value; end
 end
 
-DEBUG_MODE = app.ccColors.Red.."Debug Modus|r (Zeig alles)";
-ACCOUNT_MODE = app.ccColors.Account.."Account Modus";
+DEBUG_MODE = "|c" .. app.DefaultColors.Red.."Debug Modus|r (Zeig alles)";
+ACCOUNT_MODE = "|c" .. app.DefaultColors.Account.."Account Modus";
 AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Herzensessenzen";
 DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t Drachenwächtermanuskript";
 FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t Anhänger & Gefährten";

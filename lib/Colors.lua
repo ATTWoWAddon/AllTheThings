@@ -47,11 +47,6 @@ end
 
 app.SetCustomColors()
 
-app.ccColors = {};
-for k,v in pairs (app.DefaultColors) do
-	app.ccColors[k] = "|c"..v;
-end;
-
 -- Blizzard colours
 
 -- Poor					#9D9D9D

@@ -40,18 +40,18 @@ CRITERIA_FORMAT = "|cffffff00[Criteria: %s]|r";
 
 
 
-ICON_LEGEND_STATUS_TEXT = app.ccColors.White ..
-		"|T" .. app.asset("status-unobtainable") .. ":0|t " .. "Unobtainable" ..
-		"\n|T" .. app.asset("status-prerequisites") .. ":0|t " .. "Obtainable only with prerequisites" ..
-		"\n|T" .. app.asset("status-seasonal-available") .. ":0|t " .. "Available seasonal content" ..
-		"\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t " .. "Unavailable seasonal content" ..
-		"\n|T374225:0|t " .. "Unavailable on current character" ..
-		"\n|T" .. app.asset("status-unsorted") .. ":0|t " .. "Unsorted in ATT";
-ICON_LEGEND_MISC_TEXT = app.ccColors.White ..
-		"|T" .. app.asset("Currency") .. ":0|t " .. "Used as a currency" ..
-		"\n|T" .. app.asset("Interface_Reagent") .. ":0|t " .. "Used as a crafting reagent" ..
-		"\n|T" .. app.asset("Interface_Catalyst") .. ":0|t " .. "Convertible at the Catalyst for a new appearance" ..
-		"\n|T" .. app.asset("Interface_Upgrade") .. ":0|t " .. "Can be upgraded for a new appearance";
+ICON_LEGEND_STATUS_TEXT = "|c" .. app.DefaultColors.White ..
+		"|T" .. app.asset("status-unobtainable") .. ":0|t Unobtainable" ..
+		"\n|T" .. app.asset("status-prerequisites") .. ":0|t Obtainable only with prerequisites" ..
+		"\n|T" .. app.asset("status-seasonal-available") .. ":0|t Available seasonal content" ..
+		"\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t Unavailable seasonal content" ..
+		"\n|T374225:0|t Unavailable on current character" ..
+		"\n|T" .. app.asset("status-unsorted") .. ":0|t Unsorted in ATT";
+ICON_LEGEND_MISC_TEXT = "|c" .. app.DefaultColors.White ..
+		"|T" .. app.asset("Currency") .. ":0|t Used as a currency" ..
+		"\n|T" .. app.asset("Interface_Reagent") .. ":0|t Used as a crafting reagent" ..
+		"\n|T" .. app.asset("Interface_Catalyst") .. ":0|t Convertible at the Catalyst for a new appearance" ..
+		"\n|T" .. app.asset("Interface_Upgrade") .. ":0|t Can be upgraded for a new appearance";
 
 COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";
 COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";	
@@ -251,15 +251,15 @@ EXPANSION_DATA = {
 };
 
 
-TITLE_DEBUG = app.ccColors.Red .. "Debug|R ";
-TITLE_ACCOUNT = app.ccColors.Account .. "Account|R ";
-TITLE_ALLIANCE = app.ccColors.Alliance .. FACTION_ALLIANCE .. "|R";
-TITLE_HORDE = app.ccColors.Horde .. FACTION_HORDE .. "|R";
-TITLE_INSANE = app.ccColors.Insane .. "Insane|R ";
+TITLE_DEBUG = "|c" .. app.DefaultColors.Red .. "Debug|R ";
+TITLE_ACCOUNT = "|c" .. app.DefaultColors.Account .. "Account|R ";
+TITLE_ALLIANCE = "|c" .. app.DefaultColors.Alliance .. FACTION_ALLIANCE .. "|R";
+TITLE_HORDE = "|c" .. app.DefaultColors.Horde .. FACTION_HORDE .. "|R";
+TITLE_INSANE = "|c" .. app.DefaultColors.Insane .. "Insane|R ";
 _BETA_LABEL = " |cff4AA7FF[Beta]|R";	-- unused
 
-PRESET_INSANE = app.ccColors.Insane .. "Insane Mode|R enables all " .. app.ccColors.Insane .. "colored options|R and gives you a real challenge!";
-PRESET_ACCOUNT = app.ccColors.Account .. "Account Mode|R enables all account-wide tracking, and will show progress from all of your characters.";
+PRESET_INSANE = "|c" .. app.DefaultColors.Insane .. "Insane Mode|R enables all |c" .. app.DefaultColors.Insane .. "colored options|R and gives you a real challenge!";
+PRESET_ACCOUNT = "|c" .. app.DefaultColors.Account .. "Account Mode|R enables all account-wide tracking, and will show progress from all of your characters.";
 
 
 LOADING_FORMAT = "%s "..LFG_LIST_LOADING;	-- %s Loading...	-- unused
@@ -333,14 +333,14 @@ SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which m
 
 ABOUT_TOP = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|r";
 
-DEBUG_MODE = app.ccColors.Red.."Debug Mode|r (Show Everything)";
-ACCOUNT_MODE = app.ccColors.Account.."Account Mode";
-MODE_EXPLAIN_LABEL = "|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all " .. app.ccColors.Insane .. "colored options|cffFFFFFF to unlock ".. app.ccColors.Insane .. "Insane Mode|cffFFFFFF.";
+DEBUG_MODE = "|c" .. app.DefaultColors.Red.."Debug Mode|r (Show Everything)";
+ACCOUNT_MODE = "|c" .. app.DefaultColors.Account.."Account Mode";
+MODE_EXPLAIN_LABEL = "|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all |c" .. app.DefaultColors.Insane .. "colored options|cffFFFFFF to unlock ".. "|c" .. app.DefaultColors.Insane .. "Insane Mode|cffFFFFFF.";
 
 SHOW_SKYRIDING_CHECKBOX = DYNAMIC_FLIGHT or "Skyriding";
 
-ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. "Account-Wide|R by default.";
-TRACK_ACC_WIDE = app.ccColors.Account .. "Track Account-Wide|R";
+ACC_WIDE_DEFAULT = "Tracked ".. "|c" .. app.DefaultColors.Account .. "Account-Wide|R by default.";
+TRACK_ACC_WIDE = "|c" .. app.DefaultColors.Account .. "Track Account-Wide|R";
 
 AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Azerite Essences";
 MOUNTMODS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t Mount Modifications";
@@ -352,10 +352,10 @@ SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Conduits";
 
 
 ITEM_FILTER_LABEL = ARMOR .." & ".. AUCTION_CATEGORY_WEAPONS;
-ITEM_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
+ITEM_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if you are in ".."|c" .. app.DefaultColors.Account.."Account Mode|cffFFFFFF.|r";
 
 
-CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
+CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in ".."|c" .. app.DefaultColors.Account.."Account Mode|cffFFFFFF.|r";
 
 
 SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "Enable this option if you want the 'Sort' operation ("..SHIFT_KEY_TEXT.." Right Click) to sort by the total progress of each group (instead of by Name)";
@@ -374,8 +374,8 @@ PROFILE_SWITCH_TOOLTIP = "Set the Selected Profile as the Current Profile\n\nA P
 
 L.TOOLTIP_MODULE = {
 	RANKS = {
-		AUTHOR = " |T"..app.asset("logo_32x32")..":0|t" .. " Author";
-		CONTRIBUTOR = " |T"..app.asset("logo_32x32")..":0|t" .. " Contributor";
+		AUTHOR = " |T"..app.asset("logo_32x32")..":0|t Author";
+		CONTRIBUTOR = " |T"..app.asset("logo_32x32")..":0|t Contributor";
 		COLLECTOR = "Collector";
 	},
 	TITLES = {

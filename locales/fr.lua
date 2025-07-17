@@ -51,9 +51,9 @@ L.RESET_INSTANCES_DESC = "Cliquer ici pour réinitialiser les insatnces.\n\n"..A
 
 L.TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.." + clic pour bloquer cette fenêtre";
 L.TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.." + clic pour débloquer cette fenêtre";
-L.TITLE_DEBUG = app.ccColors.Red .. "Debug|R ";
-L.TITLE_ACCOUNT = app.ccColors.Account.."Compte|R ";
-L.TITLE_INSANE = app.ccColors.Insane.."Insensé|R ";
+L.TITLE_DEBUG = "|c" .. app.DefaultColors.Red .. "Debug|R ";
+L.TITLE_ACCOUNT = "|c" .. app.DefaultColors.Account.."Compte|R ";
+L.TITLE_INSANE = "|c" .. app.DefaultColors.Insane.."Insensé|R ";
 L._BETA_LABEL = " |cff4AA7FF[Bêta]|R";
 L.TOGGLE_ACCOUNT_MODE = "Afficher / masquer le mode Compte";
 L.TOGGLE_COMPLETIONIST_MODE = "Afficher / masquer le mode Complétionniste";
@@ -122,15 +122,15 @@ SKIP_AUTO_REFRESH_TOOLTIP = "Par défaut (non coché), toute modification des pa
 
 ABOUT_TOP = " |CFFFFFFFFest un addon de suivi de collection qui vous montre où et comment obtenir tout ce qui se trouve dans le jeu ! Nous avons une grande communtauté d’utilisateurs sur notre serveur Discord (le lien se trouve ci-dessous), vous pouvez venir nous poser des questions, soumettre des suggestions, signaler des bogues ou des éléments manquants. Si vous trouvez des objets à collectionner ou une quête qui n’est pas documentée, vous pouvez nous le faire savoir sur Discord. Pour ceux qui connaissent GitHub, nous avons un dépôt auquel vous pouvez contribuer directement.\n\nBien que nous nous efforcions d’être complets, il y a beaucoup de choses qui sont ajoutées au jeu à chaque patch, donc si nous manquons quelque chose, comprenez que nous sommes une petite équipe qui essaie de suivre les changements ainsi que de collecter des choses nous-mêmes. :D\n\nN’hésitez pas à me poser des questions lorsque je suis en session de diffusion et je ferai de mon mieux pour y répondre, même si ce n’est pas directement lié à ATT (également le développement des addons de WoW).\n\n- |r|Cffff8000Crieve|r";
 
-ACCOUNT_MODE = app.ccColors.Account.."Mode Compte";
-ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’ensemble du compte|R.";
+ACCOUNT_MODE = "|c" .. app.DefaultColors.Account.."Mode Compte";
+ACC_WIDE_DEFAULT = "Par défaut, suivi sur ".."|c" .. app.DefaultColors.Account.."l’ensemble du compte|R.";
 AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Essences du Cœur d’Azeroth";
 DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t Manuscrit guette-drake";
 FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t Sujets & Compagnons";
 RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Pouvoirs de gravure runique";
 SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Intermédiaires";
-ITEM_EXPLAIN_LABEL = "|cffFFFFFFCe contenu est toujours affiché si vous êtes en "..app.ccColors.Account.."Mode Compte|cffFFFFFF.|r";
-CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFCe contenu est toujours affiché s’il est disponible pour votre personnage actuel ou si vous vous trouvez dans la section "..app.ccColors.Account.."Mode Compte|cffFFFFFF.|r";
+ITEM_EXPLAIN_LABEL = "|cffFFFFFFCe contenu est toujours affiché si vous êtes en ".."|c" .. app.DefaultColors.Account.."Mode Compte|cffFFFFFF.|r";
+CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFCe contenu est toujours affiché s’il est disponible pour votre personnage actuel ou si vous vous trouvez dans la section ".."|c" .. app.DefaultColors.Account.."Mode Compte|cffFFFFFF.|r";
 MAIN_LIST_SCALE_TOOLTIP = "Utilisez cette option pour personnaliser l’échelle de la liste principale.\n\nDéfaut : 1";
 MINI_LIST_SCALE_TOOLTIP = "Utilisez cette option pour personnaliser l’échelle des mini-listes.\n\nDéfaut : 1";
 SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "Activer cette option si vous souhaitez trier les groupes ("..SHIFT_KEY_TEXT.." + clic droit) par % de progression au lieu de les trier par leur nom.";

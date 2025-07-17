@@ -426,7 +426,7 @@ local function CHAT_MSG_ADDON_HANDLER(prefix, text, channel, sender, target)
 						return false;
 					else
 						local softReserve = SoftReserves[app.GUID];
-						response = "sr" .. "\t" .. app.GUID .. "\t" .. (softReserve and ((softReserve[1] or 0) .. "\t" .. (softReserve[2] or 0)) or "0\t0");
+						response = "sr\t" .. app.GUID .. "\t" .. (softReserve and ((softReserve[1] or 0) .. "\t" .. (softReserve[2] or 0)) or "0\t0");
 					end
 				elseif a == "srml" then -- Soft Reserve (Master Looter) Command
 					QuerySoftReserve(UnitGUID(target), a, target);

@@ -32,7 +32,7 @@ L.REQUIRES_PETBATTLES = "|CFF00FFDE需要宠物对战|r";
 L.REQUIRES_SKYRIDING = "|CFF00FFDE"..(SPELL_FAILED_CUSTOM_ERROR_1029 or "需要驭空术").."|r";
 L.REPORT_TIP = "\n（"..CTRL_KEY_TEXT.."+C 将多行报告复制到剪贴板）";
 
-L.ICON_LEGEND_STATUS_TEXT = app.ccColors.White ..     "\n|T374225:0|t " .. "当前角色不可用" .. "|T" .. app.asset("status-unobtainable") .. ":0|t " .. "不可获得" .. "\n|T" .. app.asset("status-prerequisites") .. ":0|t " .. "仅在满足先决条件的情况下可获得" .. "\n|T" .. app.asset("status-seasonal-available") .. ":0|t " .. "当前可用的季节性内容" .. "\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t " .. "当前不可用的季节性内容" .. "\n|T374225:0|t " .. "Unavailable on current character" .. "\n|T" .. app.asset("status-unsorted") .. ":0|t " .. "Unsorted in ATT";
+L.ICON_LEGEND_STATUS_TEXT = "|c" .. app.DefaultColors.White ..     "\n|T374225:0|t 当前角色不可用|T" .. app.asset("status-unobtainable") .. ":0|t 不可获得\n|T" .. app.asset("status-prerequisites") .. ":0|t 仅在满足先决条件的情况下可获得\n|T" .. app.asset("status-seasonal-available") .. ":0|t 当前可用的季节性内容\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t 当前不可用的季节性内容\n|T374225:0|t Unavailable on current character\n|T" .. app.asset("status-unsorted") .. ":0|t Unsorted in ATT";
 
 L.COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";
 L.COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";	
@@ -73,13 +73,13 @@ L.FORCE_REFRESH_REQUIRED = "这可能需要强制刷新（"..SHIFT_KEY_TEXT.."�
 L.TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.."点击锁定窗口";
 L.TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.."点击解锁窗口";
 
-L.TITLE_DEBUG = app.ccColors.Red .. "调试|R ";
-L.TITLE_ACCOUNT = app.ccColors.Account.."帐号|R ";
-L.TITLE_INSANE = app.ccColors.Insane.."疯狂|R ";
+L.TITLE_DEBUG = "|c" .. app.DefaultColors.Red .. "调试|R ";
+L.TITLE_ACCOUNT = "|c" .. app.DefaultColors.Account.."帐号|R ";
+L.TITLE_INSANE = "|c" .. app.DefaultColors.Insane.."疯狂|R ";
 L._BETA_LABEL = " |cff4AA7FF[测试]|R";
 
-L.PRESET_INSANE = app.ccColors.Insane .. "疯狂模式|R 启用所有 " .. app.ccColors.Insane .. "彩色选项|R，并给你一个真正的挑战！";
-L.PRESET_ACCOUNT = app.ccColors.Account .. "账号模式|R 启用所有账号范围的追踪，并显示所有角色的进度。";
+L.PRESET_INSANE = "|c" .. app.DefaultColors.Insane .. "疯狂模式|R 启用所有 |c" .. app.DefaultColors.Insane .. "彩色选项|R，并给你一个真正的挑战！";
+L.PRESET_ACCOUNT = "|c" .. app.DefaultColors.Account .. "账号模式|R 启用所有账号范围的追踪，并显示所有角色的进度。";
 
 
 L.SAVED = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已保存|r";
@@ -113,20 +113,20 @@ end
 
 SKIP_AUTO_REFRESH_TOOLTIP = "默认情况下(未勾选)，任何可能影响可见数据的设置变化都会导致自动刷新。\n\n通过启用该选项设置的变化将不会生效，直到玩家 "..SHIFT_KEY_TEXT.."点击 ATT 窗口执行全部刷新。";
 ABOUT_TOP = " |CFFFFFFFF是一个收藏跟踪插件，可以向您展示在游戏中获取所有内容的位置和方式！我们的 Discord 上有大量用户社区（底部链接），您可以在其中提问、提交建议以及报告错误或丢失的物品。如果发现一些收藏品或未记录的任务，可以在 Discord 上告诉我们，或者对于更精通技术的人，我们有一个您可以直接贡献的 Git。\n\n虽然我们努力争取完成，但每个补丁都会添加很多东西，所以如果我们遗漏了什么，请理解我们是一个小团队，试图跟上变化并自己收藏东西。:D\n\n在我直播时随时问我问题，我会尽力回答，即使它与 ATT（一般魔兽插件编程也是如此）没有直接关系。\n\n- |r|Cffff8000Crieve|r";
-DEBUG_MODE = app.ccColors.Red.."调试模式|r（显示所有）";
-ACCOUNT_MODE = app.ccColors.Account.."帐号模式";
-MODE_EXPLAIN_LABEL = "|cffFFFFFF您收藏的内容汇总在这里。启用所有 "..app.ccColors.Insane.."彩色选项|cffFFFFFF 解锁 "..app.ccColors.Insane.."疯狂模式|cffFFFFFF。";
+DEBUG_MODE = "|c" .. app.DefaultColors.Red.."调试模式|r（显示所有）";
+ACCOUNT_MODE = "|c" .. app.DefaultColors.Account.."帐号模式";
+MODE_EXPLAIN_LABEL = "|cffFFFFFF您收藏的内容汇总在这里。启用所有 ".."|c" .. app.DefaultColors.Insane.."彩色选项|cffFFFFFF 解锁 ".."|c" .. app.DefaultColors.Insane.."疯狂模式|cffFFFFFF。";
 SHOW_SKYRIDING_CHECKBOX = DYNAMIC_FLIGHT or "驭空术";
-ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. "账号通用|R 默认。";
-TRACK_ACC_WIDE = app.ccColors.Account .. "追踪 账号通用|R";
+ACC_WIDE_DEFAULT = "已追踪 ".. "|c" .. app.DefaultColors.Account .. "账号通用|R 默认。";
+TRACK_ACC_WIDE = "|c" .. app.DefaultColors.Account .. "追踪 账号通用|R";
 AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t 艾泽拉斯之心精华";
 MOUNTMODS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t 坐骑定制";
 DRAKEWATCHERMANUSCRIPTS_CHECKBOX_TOOLTIP = "启用此选项追踪坐骑定制选项";
 FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t 追随者 & 伙伴";
 RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 符文铭刻之力";
 SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 导灵器";
-ITEM_EXPLAIN_LABEL = app.ccColors.Account.."帐号模式|r|cffFFFFFF下，这些内容始终显示。|r";
-CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF如果当前角色可以使用此内容，或者位于 "..app.ccColors.Account.."账号模式|cffFFFFFF。|r";
+ITEM_EXPLAIN_LABEL = "|c" .. app.DefaultColors.Account.."帐号模式|r|cffFFFFFF下，这些内容始终显示。|r";
+CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF如果当前角色可以使用此内容，或者位于 ".."|c" .. app.DefaultColors.Account.."账号模式|cffFFFFFF。|r";
 SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "如果你希望'排序'操作（"..SHIFT_KEY_TEXT.."右键）按每个组的总进度排序（而不是按名称）请启用此选项";
 PROFILE_INITIALIZE_TOOLTIP = "这将使您的 ATT 保存变量能够支持和包含配置文件数据。您当前的设置和窗口信息将被复制到 '"..DEFAULT.."' 配置文件中，该配置文件无法删除，但可以修改并使用作为所有角色的初始配置文件。\n\n请务必将配置文件的任何异常行为或错误报告给 ATT Discord！";
 PROFILE_SWITCH_TOOLTIP = "将选定的配置文件设置为当前配置文件\n\n一个配置文件也可以通过 "..SHIFT_KEY_TEXT.."点击切换到它";

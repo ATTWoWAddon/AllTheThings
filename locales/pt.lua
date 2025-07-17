@@ -23,8 +23,8 @@ L.MUSIC_ROLLS_DESC = "Estes são desbloqueados por personagem e não são atualm
 end
 L.EXPANSION_DATA[10].lore = "Dragonflight is the ninth expansion. As revoadas dragônicas de Azeroth retornaram, convocadas a defender seu lar ancestral, as Ilhas do Dragão. Repletas de magia elemental e das energias vitais de Azeroth, as Ilhas despertam uma vez mais. Cabe a você explorar suas maravilhas primordiais e revelar segredos há muito esquecidos.";	--TODO: First sentence
 
-L.TITLE_ACCOUNT = app.ccColors.Account .. "Conta|R ";
-L.TITLE_INSANE = app.ccColors.Insane.."Insano|R ";
+L.TITLE_ACCOUNT = "|c" .. app.DefaultColors.Account .. "Conta|R ";
+L.TITLE_INSANE = "|c" .. app.DefaultColors.Insane.."Insano|R ";
 			
 local a = L.ABBREVIATIONS;
 for key,value in pairs({
