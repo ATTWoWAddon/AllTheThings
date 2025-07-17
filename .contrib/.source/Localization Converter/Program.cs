@@ -4,6 +4,8 @@ using System.Text;
 
 internal class Program
 {
+    private const bool DEBUG_LOCALES = false;
+    private const bool PRINT_LINES = false;
     private static Dictionary<string, string> LocalizeRemapper = new()
     {
         { "Default Locale", "en" }
@@ -74,6 +76,13 @@ internal class Program
             GlobalStrings[variableName] = localeData.Substring(1, localeData.Length - 3);
         }
 
+        // Acquire a list of all successfully built localization strings. (We will purge these strings from the locale files)
+        Dictionary<string, bool> SuccessfulLocalizationStrings = new();
+        foreach (var localeFile in Directory.EnumerateFiles("../Parser/lib/Strings", "*.lua"))
+        {
+            SuccessfulLocalizationStrings[Path.GetFileNameWithoutExtension(localeFile)] = true;
+        }
+
         // Parse the Locale files
         Dictionary<string, Dictionary<string, string>> LocalizationStrings = [];
         Console.WriteLine("PARSING LOCALE FILES...");
@@ -87,34 +96,100 @@ internal class Program
 
             // Parse each of the files.
             var lines = File.ReadAllLines(localeFile);
-            for (int lineIndex = 0; lineIndex < lines.Length; ++lineIndex)
+            int length = lines.Length;
+
+            List<string> whiteListedLines = new();
+            for (int lineIndex = 0; lineIndex < length; ++lineIndex)
             {
                 string line = lines[lineIndex];
                 string trimmedLine = line.Trim();
-                if (trimmedLine.StartsWith('-')) continue;      // Ignore comments
+                if (trimmedLine.StartsWith('-') || trimmedLine.StartsWith("local "))
+                {
+                    whiteListedLines.Add(line);
+                    continue;
+                }
+                string[] splitString = trimmedLine.Split('=');
+                if (splitString.Length == 1)
+                {
+                    whiteListedLines.Add(line);
+                    continue;
+                }
+                string variableName = splitString[0].Trim().ToUpper();
+                if (variableName.Contains(' ') || variableName.Contains("__INDEX") || variableName.Contains("EXPANSION_DATA") || variableName.StartsWith('['))
+                {
+                    whiteListedLines.Add(line);
+                    continue;
+                }
+                if (variableName.StartsWith("L.")) variableName = variableName[2..];
+
+                if (SuccessfulLocalizationStrings.ContainsKey(variableName))
+                {
+                    string localeData = splitString[1].Trim();
+                    if (localeData.Length > 0 && localeData[0] == '{')   // Is this an array of locale strings?
+                    {
+                        whiteListedLines.Add(line);
+                        for (++lineIndex; lineIndex < length; ++lineIndex)
+                        {
+                            line = lines[lineIndex];
+                            whiteListedLines.Add(line);
+                            if (trimmedLine.Contains('}')) break;
+                        }
+                    }
+                    else whiteListedLines.Add(line);
+                }
+                else
+                {
+                    string localeData = splitString[1].Trim();
+                    if (localeData.Length > 0 && localeData[0] == '{')   // Is this an array of locale strings?
+                    {
+                        whiteListedLines.Add(line);
+                        for (++lineIndex; lineIndex < length; ++lineIndex)
+                        {
+                            line = lines[lineIndex];
+                            whiteListedLines.Add(line);
+                            if (trimmedLine.Contains('}'))
+                            {
+
+                                break;
+                            }
+                        }
+                        continue;
+                    }
+                    else whiteListedLines.Add(line);
+                }
+            }
+
+            File.WriteAllLines(localeFile, whiteListedLines);
+            length = whiteListedLines.Count;
+            for (int lineIndex = 0; lineIndex < length; ++lineIndex)
+            {
+                string line = whiteListedLines[lineIndex];
+                string trimmedLine = line.Trim();
+                if (trimmedLine.StartsWith('-') || trimmedLine.StartsWith("local ")) continue;      // Ignore comments
                 string[] splitString = trimmedLine.Split('=');
                 if (splitString.Length == 1) continue;          // Ignore lines without assignments
                 string variableName = splitString[0].Trim().ToUpper();    // Simplify the Variable Name
-                if (variableName.Contains(' ')) continue;       // Ignore if-statements.
+                if (variableName.Contains(' ') || variableName.Contains("__INDEX")) continue;       // Ignore if-statements.
                 if (variableName.StartsWith("L.")) variableName = variableName[2..];
                 if (variableName.Contains("EXPANSION_DATA")) continue;  // Ignore Expansion Data
                 if (variableName.StartsWith('[')) continue;     // Ignore Array Data (Custom Collects)
+                if (SuccessfulLocalizationStrings.ContainsKey(variableName)) continue;
                 string localeData = splitString[1].Trim();
                 if (localeData.Length == 0) continue;           // Ignore empty strings
                 localeData = localeData.Split("-- ")[0].Split("--TODO")[0].Trim();
-                //Console.WriteLine(trimmedLine);
+                if (PRINT_LINES) Console.WriteLine(trimmedLine);
 
 
                 if (localeData[0] == '{')   // Is this an array of locale strings?
                 {
-                    for (++lineIndex; lineIndex < lines.Length; ++lineIndex)
+                    for (++lineIndex; lineIndex < length; ++lineIndex)
                     {
-                        line = lines[lineIndex];
+                        line = whiteListedLines[lineIndex];
                         trimmedLine = line.Trim();
                         if (trimmedLine.Length == 0) continue;          // Ignore empty strings
                         if (trimmedLine.StartsWith('-')) continue;      // Ignore comments
                         trimmedLine = line.Split("-- ")[0].Split("--TODO")[0].Trim();
-                        //Console.WriteLine(trimmedLine);
+                        if (PRINT_LINES) Console.WriteLine(trimmedLine);
                         if (trimmedLine.StartsWith('}'))
                         {
                             localeData += "\n\t\t}";
@@ -122,6 +197,7 @@ internal class Program
                         }
                         else localeData += "\n\t\t\t" + trimmedLine;
                     }
+                    continue;
                 }
 
                 // Clean up the locale data
@@ -136,14 +212,15 @@ internal class Program
                 else if (localeData.Contains(" .. ")) localeData = $"[[~{localeData}]]";
                 while (localeData.Contains("\\\"")) localeData = localeData.Replace("\\\"", "\"");
 
-                /*
-                Console.Write(locale);
-                Console.Write(": ");
-                Console.Write(variableName);
-                Console.Write(" = ");
-                Console.Write(localeData);
-                Console.ReadLine();
-                */
+                if (DEBUG_LOCALES && locale == "en")
+                {
+                    Console.Write(locale);
+                    Console.Write(": ");
+                    Console.Write(variableName);
+                    Console.Write(" = ");
+                    Console.Write(localeData);
+                    Console.ReadLine();
+                }
 
                 // Attempt to record the localization string for the variable name constant to the localization strings table.
                 if (!LocalizationStrings.TryGetValue(variableName, out Dictionary<string, string>? stringsByLocale))
@@ -152,11 +229,12 @@ internal class Program
                 }
                 stringsByLocale[locale] = localeData;
             }
+
+            if (DEBUG_LOCALES && locale == "en")
+            {
+                Console.ReadLine();
+            }
         }
-
-
-        File.WriteAllText("Localization Strings.lua", Newtonsoft.Json.JsonConvert.SerializeObject(LocalizationStrings, Newtonsoft.Json.Formatting.Indented));
-        Console.WriteLine("All done!");
 
         DirectoryInfo StringsDirectory = Directory.CreateDirectory("../Parser/lib/Strings");
         Dictionary<string, Dictionary<string, string>> BrokenStrings = [];
