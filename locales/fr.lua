@@ -7,14 +7,8 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
 	L.SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
 	L.DESCRIPTION = "\"Sottement, vous avez cherché votre propre perte. Effrontément, vous avez ignoré des pouvoirs au-delà de votre compréhension. Vous vous êtes battus pour envahir le royaume du Collectionneur. Maintenant, il n’y a plus qu’une seule issue : emprunter le chemin solitaire... des damnés.\"";
-	L.YOU_DID_IT = "VOUS AVEZ RÉUSSI !";
 
 
-	L.REFRESHING_COLLECTION = "Mise à jour de la collection...";
-	L.DONE_REFRESHING = "Collection mise à jour.";
-	L.PROGRESS = "Progression";
-	L.COMPLETED_BY = "Complété par: %s";
-	L.KNOWN_BY = "Connu par %s";
 
 	L.MINIMAP_MOUSEOVER_TEXT = "Clic droit pour ouvrir le menu des options\nClic gauche pour afficher la liste principale\n"..CTRL_KEY_TEXT.." + clic gauche pour afficher la liste de zone\n"..SHIFT_KEY_TEXT.." + clic gauche pour rafraîchir les collections.";
 	L.TOP_ROW_INSTRUCTIONS = "|cff3399ffClic gauche et faites glisser pour déplacer la fenêtre\nClic droit pour ouvrir le menu des options\n"..SHIFT_KEY_TEXT.." + clic pour rafraîchir les collections\n"..CTRL_KEY_TEXT.." + clic pour afficher / masquer toutes les listes\n"..SHIFT_KEY_TEXT.." + clic droit pour trier les listes de A à Z|r";
@@ -22,58 +16,15 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.TOP_ROW_INSTRUCTIONS_AH = "|cff3399ffClic gauche et faites glisser pour déplacer la fenêtre\nClic droit pour ouvrir le menu des options\n"..SHIFT_KEY_TEXT.." + clic pour rechercher dans l’hôtel des ventes|r";
 	L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffClic gauche pour afficher / masquer\nClic droit pour afficher la mini-liste\n"..SHIFT_KEY_TEXT.." + clic pour rechercher dans l’hôtel des ventes|r";
 	L.RECENTLY_MADE_OBTAINABLE_PT2 = "|CFFFF0000La meilleure source d’information ! Merci =)|r";
-	L.MAIN_LIST_REQUIRES_REFRESH = "[Ouvrir la liste principale pour mettre à jour la progression]";
-	L.VISIT_FLIGHT_MASTER = "Rendez visite au Maître de vol pour mettre en cache.";
-	L.PLEASE_REPORT_MESSAGE = "Merci de signaler sur le serveur Discord d’ATT dans le canal #retail-errors ! Merci !";
 	L.REPORT_TIP = "\n("..CTRL_KEY_TEXT.." + C pour copier le rapport multiligne dans votre presse-papiers)";
-	L.ITEM_GIVES_REP = "Fournit la réputation avec '";
 
-	L.ITEM_ID_ADDED = "%s (%d) a été ajouté à votre collection.";
-	L.ITEM_ID_ADDED_RANK = "%s (%d) [Rang %d] a été ajouté à votre collection.";
-	L.ITEM_ID_ADDED_MISSING = "%s (%d) a été ajouté à cotre collection. Introuvable dans la base de données. Merci de le signaler sur le serveur Discord d’ATT !";
-	L.ITEM_ID_ADDED_SHARED = "%s (%d) [+%d] ont été ajoutés à votre collection.";
-	L.ITEM_ID_ADDED_SHARED_MISSING = "%s (%d) [+%d] ont été ajoutés à votre collection. Introuvable dans la base de données. Merci de le signaler sur le serveur Discord d’ATT !";
-	L.ITEM_ID_REMOVED = "%s (%d) a été supprimé de votre collection.";
-	L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] ont été supprimés de votre collection.";
 
-	L.DROP_RATE = "Taux de chance de tomber";
-	L.QUEST_GIVER = "Donneur de quête";
-	L.COORDINATES = "Coordonnées";
-	L.LOCKOUT = "Verrouillage";
-	L.SHARED = "Partagé";
-	L.SPLIT = "Par difficulté";
-	L.REQUIRES = "Requiert";
-	L.REQUIRES_LEVEL = "Niveau requis";
-	L.LIMITED_QUANTITY = "Il s’agit d’une quantité limitée qui n’est pas toujours disponible chez le vendeur.";
-	L.ADDED_WITH_PATCH_FORMAT = "Ceci a été ajouté au patch %s";	--TODO: Added in %s
-	L.REMOVED_WITH_PATCH_FORMAT = "Ceci a été retiré au patch %s";	--TODO: Removed in %s
 
-	L.MINUMUM_STANDING_WITH_FACTION = "Il faut avoir obtenu une note minimale de %s avec %s.";
-	L.MAXIMUM_STANDING_WITH_FACTION = "Il faut avoir obtenu une note inférieure à %s avec %s.";
-	L.MIN_MAX_STANDING_WITH_FACTION = "Il faut avoir obtenu une note entre %s et %s avec %s.";
 
-	L.HEIRLOOM_TEXT = "Objet Héritage déverrouillé";
-	L.HEIRLOOM_TEXT_DESC = "Indique si vous avez ou non déjà acquis ou acheté l’objet d’héritage.";
-	L.HEIRLOOMS_UPGRADES_DESC = "Indique si vous avez ou non amélioré l’objet d’héritage à un certain niveau.\n\nBye bye votre Or.\n- Crieve";
 
-	L.TITLES_DESC = "Les titres sont suivis sur l’ensemble de votre compte, mais votre personnage principal doit être qualifié pour que certains titres soient utilisables sur ce personnage.";
 
-	L.DESCRIPTIONS = "Descriptions";
-	L.PROVIDERS = "Fournisseur(s)";
-	L.AND_MORE = "Et %s plus...";
-	L.SYM_ROW_INFORMATION = "Clic droit afficher du contenu supplémentaire provenant d’un autre endroit.";
 
-	L.ADDITIONAL_LABEL = "Informations complémentaires";
-	L.CRITERIA_FOR = "Critères de";
 
-	L.CHAT_COMMANDS_LABEL = "Commandes du chat";
-	L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFFou|R /things |cffFFFFFFou|R /allthethings\n|cffFFFFFFOuvre la liste principale.\n\n|R/att mini |cffFFFFFFou|R /attmini\n|cffFFFFFFOuvre la mini-liste.\n\n|R/att bounty\n|cffFFFFFFOuvre la liste des éléments non confirmés ou buggés.\n\n|R/att ra |cffFFFFFFou|R /attra\n|cffFFFFFFOuvre l’assistant de raid.\n\n|R/att wq |cffFFFFFFou|R /attwq\n|cffFFFFFFOuvre la liste des quêtes mondiales.\n\n|R/att item:1234 |cffFFFFFFou|R /att [lien objet]\n|cffFFFFFFOuvre une fenêtre des apparences partagées. Fonctionne aussi avec d’autres éléments, tel que|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/att rwp\n|cffFFFFFFAffiche tous les éléments futurs qui seront supprimés lors d’un patch.\n\n|R/att random |cffFFFFFFou|R /attrandom |cffFFFFFFou|R /attran\n|cffFFFFFFOuvre une liste aléatoire.\n\n|R/att unsorted\n|cffFFFFFFOuvre une liste d’éléments non sourcés. Il est préférable d'ouvrir en mode débogage.\n\n|R/rl\n|cffFFFFFFRecharge votre interface WoW.|R";
-	L.KEYBINDINGS = SETTINGS_KEYBINDINGS_LABEL;
-	L.KEYBINDINGS_TEXT = "Vous pouvez définir les raccourcis clavier pour ATT dans les options du jeu.";
-	L.MINIMAP_LABEL = "Bouton de la mini-carte.";
-	L.MODULES_LABEL = "Modules & mini-listes";
-	L.MINIMAP_BUTTON_CHECKBOX = "Afficher le bouton sur la mini-carte";
-	L.MINIMAP_SLIDER = "Taille du bouton de la mini-carte";
 	L.MINIMAP_SLIDER_TOOLTIP = "Utilisez cette option pour personnaliser la taille du bouton de la mini-carte.\n\nDéfaut: 36";
 
 	L.COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
@@ -88,31 +39,12 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |cff15abffIncomplet|r";	-- Acquired the colors and icon from CanIMogIt.
 	L.INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
 
-	L.TRACKING_PROGRESS = "Suivi des progrès";
-	L.COLLECTED_STRING = " Collectionné";
-	L.COLLECTION_PROGRESS = "Progression de la collection";
-	L.CONTAINS = "Contient :";
-	L.FACTIONS = "Factions";
 	L.AND_OTHER_SOURCES = "Et %s sources différentes...";
-	L.NO_COORDINATES_FORMAT = "Aucune coordonnée connue pour %s";
-	L.TOM_TOM_NOT_FOUND = "Vous devez avoir installé TomTom pour pouvoir ajouter des coordonnées.";
-	L.FLIGHT_PATHS = "Trajets Aériens";
 	L.RACE_LOCKED = "Race bloquée";
-	L.NOT_AVAILABLE_IN_PL = "Non disponible pour le butin personnel.";
 	L.MARKS_OF_HONOR_DESC = "Les Marques d’honneur doivent être affichées dans une fenêtre contextuelle pour afficher tout le contenu 'normal'.\n(Tapez '/att' dans le chat puis faites "..SHIFT_KEY_TEXT.." + clic pour pour afficher l’objet)\n\n|cFFfe040fAprès l’achat et l’utilisation d’un ensemble, une nouvelle connexion et une actualisation forcée d’ATT (dans cet ordre)\npeuvent être nécessaires pour enregistrer correctement tous les objets.|r";
-	L.COST = "Coût";
-	L.SOURCES = "Source(s)";
-	L.WRONG_FACTION = "Il se peut que vous deviez être dans la faction adverse pour afficher cela.";
-	L.ARTIFACT_INTRO_REWARD = "Attribué après avoir terminé la quête d’introduction de cet artefact.";
-	L.FLIGHT_PATHS_DESC = "Les trajets de vol sont mis en cache lorsque vous parlez au Maître de vol sur chaque continent.\n- Crieve";
-	L.FAILED_ITEM_INFO = "Échec de l’acquisition des informations pour cet objet. Il se peut que l’objet soit pas valide ou qu’il n’ait pas encore été mis en cache sur votre serveur.";
 	if app.IsRetail then
 	L.MUSIC_ROLLS_DESC = "Ils sont débloqués par personnage et ne sont actuellement pas partagés sur l’ensemble de votre compte. Si une personne de chez Blizzard lit ceci, ce serait vraiment bien si vous les rendiez à l'échelle du compte. Vous devez rafraîchir manuellement l’addon via "..SHIFT_KEY_TEXT.." + clic sur l’en-tête pour que ce soit détecté.";
 	end
-	L.MUSIC_ROLLS_DESC_2 = "\n\nVous devez d’abord débloquer les rouleaux de musique en accomplissant la quête À fond les basses ! dans votre garnison de fief pour pouvoir avoir cet objet.\n\nLes selfies nécessitent le jouet Appareil photo P.R.O.F.I.L.";
-	L.OPPOSITE_FACTION_EQ = "Équivalent de la faction opposée : ";
-	L.SELFIE_DESC = "Prenez un selfie en utilisant votre ";
-	L.SELFIE_DESC_2 = " avec |cffff8000";
 	L.EXPANSION_DATA[1].lore = "Déterminée à s’installer dans la région aride de Durotar, la nouvelle Horde de Thrall étoffa ses rangs, en invitant les Réprouvés morts-vivants à rejoindre les orcs, les taurens et les trolls. De leur côté, les nains, les gnomes et les anciens elfes de la nuit jurèrent fidélité à l’Alliance revigorée, sous la houlette du royaume humain de Hurlevent. Après la mystérieuse disparition du roi de Hurlevent Varian Wrynn, le généralissime Bolvar Fordragon assura le rôle de régent. Mais son autorité fut contrariée par les manipulations et le contrôle mental du dragon noir Onyxia, qui tirait les ficelles sous l’apparence d’une humaine appartenant à la noblesse. Tandis que des héros enquêtaient sur les manipulations d’Onyxia, d’anciens adversaires refirent surface un peu partout dans le monde, menaçant tout aussi bien la Horde que l’Alliance.";
 	L.EXPANSION_DATA[2].lore = "The Burning Crusade est la 1ère extension. Le seigneur funeste Kazzak étant parvenu à rouvrir la Porte des ténèbres en Outreterre, il fit déferler sur Azeroth les démons enragés de la Légion ardente. Des expéditions de la Horde et de l’Alliance, respectivement renforcées par les elfes de sang et les draeneï, franchirent le portail afin de stopper l’invasion à sa source. En Outreterre, dans l’aride péninsule des Flammes infernales, l’Alliance retrouva plusieurs de ses héros qui avaient franchi le portail bien des années auparavant, tandis que la Horde put entrer en contact avec les Mag’har, des orcs non-corrompus qui n’avaient pas pris part à la première invasion d’Azeroth par ceux de leur race. L’expédition en Outreterre plongea les armées de la Horde et de l’Alliance dans un intense conflit contre les agents de la Légion et les lieutenants d’Illidan Hurlorage, qui s’était approprié ce monde brisé.";
 	L.EXPANSION_DATA[3].lore = "Wrath of the Lich King est la 2ème extension. À la suite de la purification du Puits de soleil, le monde connut une période d’accalmie étrangement suspecte. Puis, subitement, le Fléau mort-vivant lança un assaut massif contre les cités et les villes d’Azeroth, frappant cette fois bien au-delà des royaumes de l’Est. Poussé à réagir vigoureusement, le chef de guerre Thrall déploya une force expéditionnaire dans le Norfendre sous les ordres du suzerain Garrosh Hurlenfer. Pendant ce temps, le roi humain disparu Varian Wrynn regagnait la cité de Hurlevent et récupérait sa couronne. Il envoya alors une armée de l’Alliance de puissance équivalente, sous les ordres de Bolvar Fordragon, à l’assaut du roi-liche… et de toutes les forces de la Horde qui se dresseraient en travers de sa route.";
@@ -123,110 +55,27 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.EXPANSION_DATA[8].lore = "Battle for Azeroth est la 7ème extension. Les blessures ouvertes en Azeroth par Sargeras, le titan noir, ont fait apparaître une substance instable : l’azérite, le sang de la planète elle-même. Les tensions entre la Horde et l’Alliance ont redoublé d’intensité depuis que les deux factions ont découvert le véritable pouvoir de l’azérite, marquant le début d’une guerre totale qui a mené à la chute de Teldrassil et Fossoyeuse. Affaiblies et à la recherche de nouveaux alliés, l’Alliance et la Horde ont sollicité l’aide de leurs plus valeureux héros pour étayer leurs rangs. Jaina Portvaillant s’est rendue dans son royaume natal, Kul Tiras, dans l’espoir de convaincre les siens de revenir dans l’Alliance. Elle y a rencontré des nobles querelleurs et un peuple amer, unis dans leur mépris à l’égard de ses actions passées. De son côté, la Horde a fait sortir la princesse zandalari Talanji de la prison de Hurlevent. En retour, celle-ci s’est efforcée de convaincre les Trolls zandalari de prêter main-forte à la Horde malgré la réticence de son père, le roi Rastakhan. Ces efforts diplomatiques ont porté leurs fruits, et avec l’appui de leurs nouveaux alliés, les deux factions ont pu établir de nouveaux avant-postes en Zandalar et en Kul Tiras. Aux côtés de leurs nouveaux frères d’armes, l’Alliance et la Horde se tiennent une fois de plus sur les rives de la guerre, alors que les flots de la vengeance menacent à l’horizon…";
 	L.EXPANSION_DATA[9].lore = "Shadowlands est la 8ème extension. Après avoir fui Orgrimmar, Sylvanas Coursevent met le cap vers la citadelle de la Couronne de glace. Là, elle affronte Bolvar, le roi-liche, et s’empare du Heaume de domination. Par un simple acte de destruction, Sylvanas ouvre le passage vers le royaume de l’au-delà : l’Ombreterre, un monde entre les mondes dont l’équilibre délicat préserve aussi bien la vie que la mort. Anduin, Baine, Jaina, Thrall et les héros d’Azeroth suivent Sylvanas en Ombreterre, mais se retrouvent pris au piège dans l’Antre, un royaume effroyable réservé aux âmes malfaisantes au-delà de toute rédemption. Après avoir réussi à s’échapper envers et contre tout, nos héros finissent par se rendre à Oribos, la cité éternelle qui accueille habituellement toutes les âmes fraîchement arrivées en Ombreterre. Ils découvrent alors que l’impassible Arbitre, chargée d’aiguiller les défunts vers leur dernière demeure, est en sommeil et incapable d’honorer ses devoirs. Pire encore, les quatre congrégations de l’Ombreterre ont plongé dans le chaos, et se livrent bataille pour s’approprier une ressource aussi rare que vitale : l’anima. Les héros d’Azeroth décident de venir en aide aux habitants de l’Ombreterre, espérant lever le voile sur les agissements de Sylvanas. Ils finissent par découvrir un traître au sein des congrégations : Denathrius, fondateur et dirigeant de Revendreth, foyer des Venthyrs. Ce dernier assiste secrètement Sylvanas dans son projet de libérer leur mystérieux bienfaiteur commun : une entité surnommée le Geôlier, qui règne sur tout l’Antre. L’infâme seigneur de Revendreth est mis en déroute dans son propre domaine, le château Nathria, mais Sylvanas et le Geôlier ont déjà mis leur plan à exécution : utiliser Anduin contre son gré pour servir leurs terribles desseins.";
 	L.EXPANSION_DATA[10].lore = "Dragonflight est la 9ème extension. Les Vols draconiques d’Azeroth sont de retour pour défendre leur foyer ancestral, les îles aux Dragons. Débordantes de magie élémentaire et de l’essence vitale d’Azeroth, les îles s’éveillent de nouveau et vous invitent à découvrir leurs merveilles primordiales et leurs secrets longtemps oubliés.";
-	L.QUEST_MAY_BE_REMOVED = "Impossible d’obtenir des informations. Cette quête a peut-être été supprimée du jeu. ";
 
-	L.DURING_WQ_ONLY = "Peut être réalisé uniquement lorsque la quête mondiale est active.";
-	L.COMPLETED_DAILY = "Peut être réalisé uniquement quotidiennement.";
-	L.COMPLETED_WEEKLY = "Peut être réalisé uniquement chaque semaine.";
-	L.COMPLETED_MONTHLY = "Peut être réalisé uniquement chaque mois.";
-	L.COMPLETED_YEARLY = "Peut être réalisé uniquement chaque année.";
-	L.COMPLETED_MULTIPLE = "Peut être réalisé plusieurs fois.";
-	L.NO_ENTRIES = "Aucune entrée correspondant à vos filtres n’a été trouvée.";
-	L.NO_ENTRIES_DESC = "Si vous pensez qu’il s’agit d’une erreur, essayez d’activer le 'mode débogage'. Il se peut que l’un de vos filtres limite la visibilité du groupe.";
-	L.DEBUG_LOGIN = "Récompensé pour s’être connecté.\nBon travail ! VOUS L’AVEZ FAIT !\nSeulement visible en mode débogage.";
 	L.UNSORTED = "Non trié";
 	L.UNSORTED_DESC = "Ces données n’ont pas encore été ajoutées. ATT " .. app.Version;
 	L.NEVER_IMPLEMENTED = "Jamais mis en place";
 	L.NEVER_IMPLEMENTED_DESC = "Ces objets existent techniquement dans le jeu mais n’ont jamais été mis à la disposition des joueurs";
-	L.OPEN_AUTOMATICALLY = "Ouvrir automatiquement";
-	L.OPEN_AUTOMATICALLY_DESC = "Si vous n’êtes pas un développeur de chez Blizzard, il peut être judicieux de décocher cela. Ceci a été fait pour forcer Blizzard à corriger et / ou reconnaître ces bugs.";
-	L.MINI_LIST = "Mini Liste";
-	L.MINI_LIST_DESC = "Cette liste contient les informations pertinentes pour la zone actuelle, qui ne peuvent être trouvées dans la base de données d’ATT.";
-	L.UPDATE_LOCATION_NOW = "Mettre à jour l’emplacement maintenant";
-	L.LOOT_SPEC = "Spécialisation du butin";
-	L.DUNGEON_DIFF = "Difficulté du donjon";
-	L.RAID_DIFF = "Difficulté du raid";
-	L.LEGACY_RAID_DIFF = "Difficulté du raid héritage";
-	L.RESET_INSTANCES = "Réinitiialiser les instances";
 	L.RESET_INSTANCES_DESC = "Cliquer ici pour réinitialiser les insatnces.\n\n"..ALT_KEY_TEXT.." + clic pour activer la réinitialisation automatique de vos instances lorsque vous quittez un donjon.\n\nATTENTION : SOYEZ PRUDENT AVEC CETTE OPTION !";
-	L.LEAVE_GROUP = "Quitter le groupe";
-	L.LEAVE_GROUP_DESC = "Cliquer ici pour quitter le groupe. Dans la plupart des cas, cela vous conduira également au cimetière le plus proche au bout de 60 secondes environ.\n\nREMARQUE : ne fonctionne que si vous êtes dans un groupe ou si le jeu pense que vous êtes dans un groupe.";
-	L.CURRENT_SPEC = "Spécialisation actuelle";
-	L.CURRENT_SPEC_DESC = "Si vous changez de talent, votre spécialisation en matière de butin change également.";
-	L.CLICK_TO_CHANGE = "Cliquez pour changer maintenant. (si disponible)";
-	L.REROLL = "Reroll";
-	L.REROLL_2 = "Reroll :";
-	L.APPLY_SEARCH_FILTER = "Appliquer un filtre à la recherche";
-	L.APPLY_SEARCH_FILTER_DESC = "Veuillez sélectionner une option de filtre pour la recherche.";
-	L.SEARCH_EVERYTHING_BUTTON_OF_DOOM = "Cliquez sur ce bouton pour cherchez... TOUT.";
-	L.ACHIEVEMENT_DESC = "Cliquez sur ce bouton pour sélectionner un haut fait aléatoire basé sur ce qu’il vous manque..";
-	L.ITEM_DESC = "Cliquez sur ce bouton pour sélectionner un objet aléatoire basé sur ce qu’il vous manque.";
-	L.INSTANCE_DESC = "Cliquez sur ce bouton pour sélectionner une instance aléatoire basé sur ce qu’il vous manque.";
-	L.DUNGEON_DESC = "Cliquez sur ce bouton pour sélectionner un donjon aléatoire basé sur ce qu’il vous manque.";
-	L.RAID_DESC = "Cliquez sur ce bouton pour sélectionner un raid aléatoire basé sur ce qu’il vous manque.";
-	L.MOUNT_DESC = "Cliquez sur ce bouton pour sélectionner une monture aléatoire basé sur ce qu’il vous manque.";
-	L.PET_DESC = "Cliquez sur ce bouton pour sélectionner une mascotte aléatoire basé sur ce qu’il vous manque.";
-	L.QUEST_DESC = "Cliquez sur ce bouton pour sélectionner une quête aléatoire basé sur ce qu’il vous manque.";
-	L.TOY_DESC = "Cliquez sur ce bouton pour sélectionner un jouet aléatoire basé sur ce qu’il vous manque.";
-	L.ZONE_DESC = "Cliquez sur ce bouton pour sélectionner une zone aléatoire basé sur ce qu’il vous manque.";
-	L.GO_GO_RANDOM = "Random - Go Get 'Em!";
-	L.CHANGE_SEARCH_FILTER = "Changer le filtre de la recherche";
-	L.CHANGE_SEARCH_FILTER_DESC = "Cliquer pour changher le filtre de la recherche.";
-	L.NO_SEARCH_METHOD = "Aucune méthode de recherche n’est spécifiée.";
-	L.PROFESSION_LIST = "Liste des métiers";
-	L.CACHED_RECIPES_2 = " recettes connues !";
-	L.UPDATE_WORLD_QUESTS = "Mettre à jour les quêtes mondiales";
-	L.CLEAR_WORLD_QUESTS = "Nettoyer les quêtes mondiales";
-	L.CLEAR_WORLD_QUESTS_DESC = "Cliquez pour nettoyer les informations actuelles dans le cadre des quêtes mondiales.";
-	L.AH_SCAN_SUCCESSFUL_1 = ": Analyser avec succès ";
-	L.AH_SCAN_SUCCESSFUL_2 = " objet(s).";
-	L.QUEST_OBJECTIVE_INVALID = "Objectif de quête invalide.";
-	L.TRADING_POST = "Comptoir";
 
-		L.ITEM_FILTER_TEXT = "Filtres des objets";
-		L.ITEM_FILTER_DESCRIPTION = "Vous pouvez effectuer une recherche dans la base de données d’ATT en utilisant un filtre.";
-		L.ITEM_FILTER_BUTTON_TEXT = "Définir le filtre des objets";
-		L.ITEM_FILTER_BUTTON_DESCRIPTION = "Cliquez sur ce bouton pour modifier le filtre des objets que vous souhaitez rechercher dans ATT.";
-		L.ITEM_FILTER_POPUP_TEXT = "Quel filtre d’objet souhaitez-vous rechercher ?";
 
 	L.TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.." + clic pour bloquer cette fenêtre";
 	L.TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.." + clic pour débloquer cette fenêtre";
-	L.QUEST_ROW_INSTRUCTIONS = "Clic droit pour afficher les exigences de la chaîne de quêtes";
 
-	L.AFTER_REFRESH = "Après l’actualisation";
 
-			L.MODE = "Mode";
-			L.TITLE_COMPLETIONIST = "Complétionniste ";
-			L.TITLE_UNIQUE_APPEARANCE = "Unique ";
 			L.TITLE_DEBUG = app.ccColors.Red .. "Debug|R ";
 			L.TITLE_ACCOUNT = app.ccColors.Account.."Compte|R ";
-			L.TITLE_MAIN_ONLY = " (Joueur principal seulement)";
-			L.TITLE_ONLY = " Seulement ";
 			L.TITLE_INSANE = app.ccColors.Insane.."Insensé|R ";
-			L.TITLE_LEVEL = "Niveau ";
-			L.TITLE_SOLO = "Solo ";
 			L._BETA_LABEL = " |cff4AA7FF[Bêta]|R";
 
 
-		L.CLICK_TO_CREATE_FORMAT = "Cliquez pour créer %s";
 
 
 
-		L.ACCOUNT_MANAGEMENT = "Gestion des comptes";
-		L.ACCOUNT_MANAGEMENT_TOOLTIP = "Cette liste affiche toutes les fonctionnalités liées à la synchronisation des données du compte.";
-		L.ADD_LINKED_CHARACTER_ACCOUNT = "Ajouter un personnage / compte lié";
-		L.ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP = "Cliquez ici pour lier un compte ou un personnage à votre compte.";
-		L.ADD_LINKED_POPUP = "Veuillez saisir le nom du personnage ou du compte Battle.net vers lequel vous souhaitez établir un lien.";
-		L.SYNC_CHARACTERS_TOOLTIP = "Affiche tous les personnages de votre compte.";
-		L.NO_CHARACTERS_FOUND = "Aucun personnage trouvé.";
-		L.LINKED_ACCOUNTS = "Comptes liés";
-		L.LINKED_ACCOUNTS_TOOLTIP = "Affiche tous les comptes liés que vous avez définis jusqu’à présent.";
-		L.NO_LINKED_ACCOUNTS = "Aucun compte lié n’a été trouvé.";
-		L.LINKED_ACCOUNT_TOOLTIP = "Le compte de ce personnage sera synchronisé automatiquement lorsqu’il se connectera. Pour un jeu optimal, vous devriez mettre sur la liste blanche un « personnage banque » et probablement pas votre personnage principal afin de ne pas affecter votre capacité à jouer votre personnage lors de la synchronisation des données du compte.";
-		L.DELETE_LINKED_CHARACTER = "Clic droit pour supprimer ce personnage lié";
-		L.DELETE_LINKED_ACCOUNT = "Clic droit pour supprimer ce compte lié";
-		L.DELETE_CHARACTER = "Clic droit pour supprimer ce personnage";
-		L.CONFIRM_DELETE = "\n\nÊtes-vous sûr de vouloir supprimer ce personnage ?";
 
 		L.TOGGLE_ACCOUNT_MODE = "Afficher / masquer le mode Compte";
 		L.TOGGLE_COMPLETIONIST_MODE = "Afficher / masquer le mode Complétionniste";
@@ -241,13 +90,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.TOGGLE_RAID_ASSISTANT = "Afficher / masquer l’assistant de raid d’ATT";
 		L.TOGGLE_RANDOM = "Afficher / masquer ATT Aléatoire";
 
-		L.SECRETS_HEADER = "Secrets";
-		L.SOURCE_ID_MISSING = "Veuillez signaler cet objet et le lieu où il a été acquis sur le Discord d’ATT, dans le salon #retail-errors !";
 
-		L.ARTIFACT_RELIC_CACHE = "Ouvre l’interface des Armes prodigieuses pour toutes tes Armes prodigieuses afin de vérifier si c’est une amélioration ou non. Cela est utile pour déterminer si tu peux échanger cet objet à un Twink ou non.";
-		L.ARTIFACT_RELIC_COMPLETION = "Complétion des Armes prodigieuses";
-		L.NOT_TRADEABLE = "Non échangeable";
-		L.TRADEABLE = "Échangeable";
 
 
 		L.COST_TEXT = "|T" .. app.asset("Currency") .. ":0|t |cff0891ffMonnaie|r";

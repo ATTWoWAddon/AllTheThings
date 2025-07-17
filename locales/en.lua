@@ -1,11 +1,7 @@
 local name, app = ...;
 local L = app.L;
 
-local GetAchievementInfo, select, sformat = GetAchievementInfo, select, string.format;
-local GetRealZoneText = GetRealZoneText;
-
 local GetSpellName = app.WOWAPI.GetSpellName;
-local GetItemClassInfo = app.WOWAPI.GetItemClassInfo;
 
 for key, value in pairs({
 	["HEADER_NAMES"] = {

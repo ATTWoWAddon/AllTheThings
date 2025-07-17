@@ -11,14 +11,12 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 
 
 
-	L.REQUIRES = "Richiede";
 
 
 
 
 
 
-	L.KEYBINDINGS = SETTINGS_KEYBINDINGS_LABEL;
 
 	L.COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
 	L.COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
@@ -34,7 +32,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	end
 	L.EXPANSION_DATA[10].lore = "Dragonflight is the ninth expansion. Gli Stormi dei Draghi di Azeroth sono tornati, richiamati a difendere la loro dimora ancestrale, le Isole dei Draghi. Ricche di magia elementale e delle energie vitali di Azeroth, le isole si sono risvegliate, e starà a te esplorare le loro meraviglie primordiali e i loro segreti dimenticati da tempo immemore.";	--TODO: First sentence
 
-	L.TRADING_POST = "Emporio";
 
 
 

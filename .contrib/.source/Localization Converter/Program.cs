@@ -131,11 +131,9 @@ internal class Program
                     string localeData = splitString[1].Trim();
                     if (localeData.Length > 0 && localeData[0] == '{')   // Is this an array of locale strings?
                     {
-                        whiteListedLines.Add(line);
                         for (++lineIndex; lineIndex < length; ++lineIndex)
                         {
                             line = lines[lineIndex];
-                            whiteListedLines.Add(line);
                             trimmedLine = line.Trim();
                             if (trimmedLine.Length == 0) continue;          // Ignore empty strings
                             if (trimmedLine.StartsWith('-')) continue;      // Ignore comments
@@ -143,7 +141,6 @@ internal class Program
                             if (trimmedLine.Contains('}')) break;
                         }
                     }
-                    else whiteListedLines.Add(line);
                 }
                 else
                 {

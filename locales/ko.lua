@@ -11,14 +11,12 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 
 
 
-	L.REQUIRES = "필요 전문화";
 
 
 
 
 
 
-	L.KEYBINDINGS = SETTINGS_KEYBINDINGS_LABEL;
 
 	L.COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
 	L.COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
@@ -34,7 +32,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	end
 	L.EXPANSION_DATA[10].lore = "용군단 is the ninth expansion. 아제로스의 용군단이 부름을 받들어 선조의 보금자리인 용의 섬을 수호하고자 귀환했습니다. 섬 전역에서 정령 마력과 아제로스의 생명력이 넘쳐흐르는 지금, 용의 섬이 다시 한번 기지개를 켜며 깨어나고 있습니다. 여러분은 이제 태고의 경이를 모험하며 아득히 먼 옛날 잊힌 비밀을 탐구해야 합니다.";	--TODO: First sentence
 
-	L.TRADING_POST = "교역소";
 
 
 
