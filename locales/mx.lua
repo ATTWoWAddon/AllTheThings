@@ -42,7 +42,6 @@ L.CRITERIA_FORMAT = "|cffffff00[Criterio: %s]|r";
 
 L.ICON_LEGEND_STATUS_TEXT = "|c" .. app.DefaultColors.White .. "|T" .. app.asset("status-unobtainable") .. ":0|t No conseguible\n|T" .. app.asset("status-prerequisites") .. ":0|t Conseguible solo con requisitos\n|T" .. app.asset("status-seasonal-available") .. ":0|t Contenido de temporada disponible\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t Contenido de temporada no disponible\n|T374225:0|t No disponible en el personaje actual\n|T" .. app.asset("status-unsorted") .. ":0|t Sin listar en ATT";
 L.ICON_LEGEND_MISC_TEXT = "|c" .. app.DefaultColors.White .. "|T" .. app.asset("Currency") .. ":0|t Usado como una moneda\n|T" .. app.asset("Interface_Reagent") .. ":0|t Usado como un componente de fabricación\n|T" .. app.asset("Interface_Catalyst") .. ":0|t Convertible en el Catalyst para una nueva apariencia\n|T" .. app.asset("Interface_Upgrade") .. ":0|t Se puede mejorar para una nueva apariencia.";
-L.MINIMAP_SLIDER_TOOLTIP = "Usa esto para personalizar el tamaño del botón del Minimapa.\n\nPredeterminado: 36";
 
 L.COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";
 L.COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";	
@@ -56,8 +55,6 @@ L.COMPLETE_OTHER = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Completad
 L.INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |cff15abffIncompleto|r";
 L.INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";	
 
-L.AND_OTHER_SOURCES = "Y %s otras fuentes...";
-L.RACE_LOCKED = "Exclusivo de raza/facción";
 L.MARKS_OF_HONOR_DESC = "Las Marcas de Honor deben visualizarse en una ventana emergente para ver todo el contenido normal de \"Contiene\".\n(Escribe '/att ' en el chat entonces "..SHIFT_KEY_TEXT.." click para linkear el item)\n\n|cFFfe040fDespués de comprar y usar un conjunto, vuelve a iniciar sesión y realizar una actualización forzada de ATT (en este orden)\npuede ser necesario para registrar todos los artículos correctamente.|r";
 L.MOP_REMIX_BRONZE_DESC = "El bronce debe visualizarse en una ventana emergente para ver todo el contenido normal de \"Contiene\".\n(Escribe '/att ' en el chat entonces "..SHIFT_KEY_TEXT.." click para linkear la moneda)\n\n|cFFfe040fDespués de comprar y usar un conjunto, vuelve a iniciar sesión y realizar una actualización forzada de ATT (en este orden)\npuede ser necesario para registrar todos los artículos correctamente.|r";
 if app.IsRetail then
@@ -80,16 +77,9 @@ L.EXPANSION_DATA[11].lore = "The War Within es la décima expansión de World of
 L.EXPANSION_DATA[12].lore = "Midnight es la undécima expansión de World of Warcraft y la segunda entrega de la saga Worldsoul.";
 L.EXPANSION_DATA[13].lore = "The Last Titan es la duodécima expansión de World of Warcraft y la última entrega de la saga Worldsoul.";
 
-L.UNSORTED = "Sin listar";
 L.UNSORTED_DESC = "Esta cosa aún no ha sido listada dentro de ATT " .. app.Version .. ".";
-L.UNSORTED_DESC_2 = "Los objetos aquí existen dentro del juego y pueden estar disponibles para los jugadores, pero aún no se han obtenido en la ubicación precisa en ATT.";
-L.NEVER_IMPLEMENTED = "Nunca Implementado";
-L.NEVER_IMPLEMENTED_DESC = "Los objetos aquí técnicamente existen dentro del juego, pero nunca han estado disponibles para los jugadores.";
-L.HIDDEN_QUEST_TRIGGERS = "Disparadores de misiones ocultas";
-L.HIDDEN_QUEST_TRIGGERS_DESC = "Se trata de misiones que se han determinado manualmente para que se activen según criterios específicos y que el juego utiliza principalmente de forma interna con fines de seguimiento.";
 L.RESET_INSTANCES_DESC = "Haz click aquí para reiniciar tus instancias.\n\n"..ALT_KEY_TEXT.." +`click para activar el reinicio automático de tus instancias cuando salgas de un calabozo.\n\nAVISO: TEN CUIDADO CON ESTO!";
 L.UPDATE_WORLD_QUESTS_DESC = "A veces la API de misiones de mundo es lenta o no devuelve nuevos datos. Si deseas forzar la actualización de los datos sin cambiar de zona, haz click en este botón ahora!\n\n"..ALT_KEY_TEXT.." + click para incluir cosas disponibles actualmente que puede que no estén limitadas en el tiempo";
-L.ADHOC_UNIQUE_COLLECTED_INFO = "Este objeto es Único-Coleccionado pero no se pudo detectar por falta de información de la API de Blizzard.\n\nSe arreglará después de una actualización forzada.";
 L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207Este grupo y su contenido no contribuyen al progreso de esta ventana porque sus fuentes están en otra zona!|r";
 L.FORCE_REFRESH_REQUIRED = "Esto puede requerir una actualización forzada ("..SHIFT_KEY_TEXT.." + click) para detectarlo correctamente.";
 
@@ -104,29 +94,11 @@ L.TITLE_INSANE = "|c" .. app.DefaultColors.Insane.."Enfermo|R ";
 L._BETA_LABEL = " |cff4AA7FF[Beta]|R";
 
 
-L.MINIMAP_SLIDER_TOOLTIP = "Usa esto para personalizar el tamaño del botón del Minimapa.\n\nPredeterminado: 36";
 
 
 L.ICON_LEGEND_STATUS_TEXT = "|c" .. app.DefaultColors.White .. "|T" .. app.asset("status-unobtainable") .. ":0|t No obtenible\n|T" .. app.asset("status-prerequisites") .. ":0|t Obtenible sólo con prerequisitos\n|T" .. app.asset("status-seasonal-available") .. ":0|t Contenido temporal disponible\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t Contenido temporal no disponible\n|T374225:0|t No disponible en tu personaje actual";
 
 
-L.TOGGLE_ACCOUNT_MODE = "Activar Modo Cuenta";
-L.TOGGLE_COMPLETIONIST_MODE = "Activar Modo Completista";
-L.TOGGLE_DEBUG_MODE = "Activar Modo Depuración";
-L.TOGGLE_FACTION_MODE = "Activar Modo Facción";
-L.TOGGLE_COMPLETEDTHINGS = "Activar Cosas Completadas (Ambas)";
-L.TOGGLE_COMPLETEDGROUPS = "Activar Grupos Completados";
-L.TOGGLE_COLLECTEDTHINGS = "Activar Cosas Coleccionadas";
-L.TOGGLE_BOEITEMS = "Activar objetos Ligados al equipar/Ligados a la cuenta";
-L.TOGGLE_SOURCETEXT = "Activar fuentes / ubicaciones de procedencia";
-L.MODULES = "Módulos";
-L.TOGGLE_MAINLIST = "Activar Lista Principal ATT";
-L.TOGGLE_MINILIST = "Activar Mini Lista ATT";
-L.TOGGLE_PROFESSION_LIST = "Activar Lista de Profesiones ATT";
-L.TOGGLE_WORLD_QUESTS_LIST = "Activar Misiones de Mundo ATT";
-L.TOGGLE_RAID_ASSISTANT = "Activar Asistente de Banda ATT";
-L.TOGGLE_RANDOM = "Activar ATT Aleatorio";
-L.REROLL_RANDOM = "Repetir tirada de dados de la selección aleatoria";
 
 
 
@@ -194,12 +166,7 @@ RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Poder de 
 SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Conductos";
 ITEM_EXPLAIN_LABEL = "|cffFFFFFFEste contenido se muestra siempre si estás en ".."|c" .. app.DefaultColors.Account.."Modo Cuenta|cffFFFFFF.|r";
 CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFEste contenido siempre está visible si está disponible para tu personaje actual o si estás en ".."|c" .. app.DefaultColors.Account.."Modo Cuenta|cffFFFFFF.|r";
-CONTAINS_SLIDER_TOOLTIP = "Usa esto para personalizar el número de cosas resumidas a mostrar en la ventana emergente.\n\nPor defecto: 25";
-LOCATIONS_SLIDER_TOOLTIP = "Usa esto para personalizar el numero de ubicaciones de origen a mostrar en la ventana emergente.\n\nNOTA: También mostrará \"X\" numero de otras opciones basándose en cuántas, si el total es equivalente al número total de elementos mostrados, sino simplemente mostrará la última fuente.\n\nPor defecto: 5";
-MAIN_LIST_SCALE_TOOLTIP = "Usa esto para personalizar la escala de la Lista Principal.\n\nPor defecto: 1";
-MINI_LIST_SCALE_TOOLTIP = "Usa esto para personalizar la escala de todas las Mini Listas.\n\nPor defecto: 1";
 SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "Activa esta opción si quieres la operación de 'Ordenar' ("..SHIFT_KEY_TEXT.." + click derecho) para ordenar sobre el total de progreso de cada grupo (en vez de por nombre)";
-PRECISION_SLIDER_TOOLTIP = "Usa esto para personalizar el nivel de precisión deseado en los cálculos de porcentajes.\n\nPor defecto: 2";
 PROFILE_INITIALIZE_TOOLTIP = "Esto permite que ATT admita y guarde la información del Perfil en las Saved Variables. Tus ajustes actuales y la información de la ventana van a ser copiadas en el perfil '"..DEFAULT.."', que no puede ser borrado, pero podría ser modificado y será usado como el Perfil inicial para todos los personajes.\n\nAsegúrate de informar de cualquier comportamiento inesperado o error con los Perfiles en el Discord de ATT!";
 PROFILE_SWITCH_TOOLTIP = "Establece el Perfil seleccionado como el Perfil actual\n\nUn Perfil también puede ser clickado con "..SHIFT_KEY_TEXT.." para cambiar a él";
 
