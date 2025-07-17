@@ -3,7 +3,7 @@ local appName, app = ...;
 local GetSpellName = app.WOWAPI.GetSpellName;
 local GetItemClassInfo = app.WOWAPI.GetItemClassInfo;
 
-local L = setmetatable({
+
 	TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
 	SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
 	DESCRIPTION = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
@@ -384,19 +384,10 @@ local L = setmetatable({
 		["Desollar"] = 8613,	-- Skinning		-- Required for ES (EU)
 		["Cнятие шкур"] = 8613,	-- Skinning		-- Required for RU
 	};
-}, {
-	__index = function(t, key)
-		print("L", key, "missing reference");
-	end
-});
-app.L = L;
 
-L.SETTINGS_MENU = {
-	-- Common Header
 		SKIP_AUTO_REFRESH = "Skip Settings-Toggle Data Refreshes!";
 		SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by "..SHIFT_KEY_TEXT.." clicking on an ATT window.";
 
-	-- About Page
 		ABOUT_TOP = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|r";
 		ABOUT_BOTTOM = "Active Contributors: |CFFFFFFFF(Alphabetical Order)\n%s\n\n|rHall of Fame: |CFFFFFFFF(Alphabetical Order)\n%s\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe). You should absolutely download their addons to get the collection icons on items in your bags! %s %s %s\n\nFor online collection comparing check out DataForAzeroth.com from Shoogen and WoWthing.org from Freddie!|r";
 		CLIPBOARDCOPYPASTE = "Ctrl+A, Ctrl+C to Copy to your Clipboard.";
@@ -415,7 +406,6 @@ L.SETTINGS_MENU = {
 		WAGO_BUTTON_LABEL = "Wago.io";
 		WAGO_BUTTON_TOOLTIP = "Click this button to copy the url to get the ALL THE THINGS addon from Wago.io.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
 
-	-- General Page
 		DEBUG_MODE = app.ccColors.Red.."Debug Mode|r (Show Everything)";
 		DEBUG_MODE_TOOLTIP = "Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
 		ACCOUNT_MODE = app.ccColors.Account.."Account Mode";
@@ -435,7 +425,6 @@ L.SETTINGS_MENU = {
 		ONLY_NOT_TRASH_TOOLTIP = "Enable this option to ignore white/grey items. Blizzard does not yet provide API for it in Classic.";
 		UNOFFICIAL_SUPPORT_TOOLTIP = "NOTE: At this time, official support is not provided by WoW's API, but ATT can track items or quest completion to make it functional in the addon.";
 
-		-- General Content
 		GENERAL_CONTENT = "General Content";
 		SHOW_INCOMPLETE_THINGS_CHECKBOX = "Show Repeatable/Trackable Things";
 		SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP = "Enable this option if you want to see incomplete repeatable content without forcing it to be considered 'collectible'.\n\nNOTE: Non-saved Rare Spawns, Treasures, and Vignettes also appear in the listing with this setting turned on.";
@@ -462,7 +451,6 @@ L.SETTINGS_MENU = {
 		SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX = "All Learnable Quest Rewards";
 		SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX_TOOLTIP = "Disable this option to hide items that are listed as \"Not Available in Personal Loot\" for quests.\n\nThis is useful for tracking items that your class can't use in World Drops, but still marking quests as completed.\n\nSome items can be marked incorrectly: this setting WILL hide items that you can obtain!";
 
-		-- Collectible Things
 		ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. "Account-Wide|R by default.";
 		TRACK_ACC_WIDE = app.ccColors.Account .. "Track Account-Wide|R";
 		ACCOUNT_THINGS_LABEL = "Account-Wide Things";
@@ -505,7 +493,6 @@ L.SETTINGS_MENU = {
 		TOYS_CHECKBOX = TOY_BOX;
 		TOYS_CHECKBOX_TOOLTIP = "Enable this option to track Toys.\n\nMost of these toys have a fun thing that they do. Others, like the Hearthstone Toys, can be used in place of your actual Hearthstone and can save you a bag slot! They also have interesting effects... Nice!";
 
-		-- Expansion Things
 		EXPANSION_THINGS_LABEL = "Expansion Things";
 		AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Azerite Essences";
 		AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "Enable this option to track Azerite Essences.\n\nTracked per character by default.";
@@ -518,11 +505,9 @@ L.SETTINGS_MENU = {
 		SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Conduits";
 		SOULBINDCONDUITS_CHECKBOX_TOOLTIP = "Enable this option to track Shadowlands Conduits.";
 
-		-- TODO: Crieve doesn't think this one is necessary, going to investigate later. (A lot of these things could be classified as non-profession recipes, when the profession checkboxes are added, this could be a simple "Character" checkbox in that context instead of a new class)
 		CHARACTERUNLOCKS_CHECKBOX = "Character Unlocks";
 		CHARACTERUNLOCKS_CHECKBOX_TOOLTIP = "Enable this option to track Character Unlocks. These are various character-based unlocks which aren't clearly able to be categorized as another type (e.g. Hex variants, Polymorph variants, Hunter species taming unlocks, Pocopoc customizations, etc.)\n\nTracked per character by default.";
 
-		-- Account-Wide Checkboxes
 		ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "Achievement tracking is usually Account-Wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";
 		ACCOUNT_WIDE_APPEARANCES_TOOLTIP = "Transmog should be collected account wide. Certain items cannot be learned by every class, so ATT will do its best to only show you things that you can collect on your current character.";
 		ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = "Azerite Essences cannot technically be collected and used Account-Wide, but if you only care about collecting them on your main character then you may prefer tracking them Account-Wide.";
@@ -539,7 +524,6 @@ L.SETTINGS_MENU = {
 		ACCOUNT_WIDE_TITLES_TOOLTIP = "Most titles are tracked Account-Wide, but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.";
 
 
-	-- General: Filters Page
 		ITEM_FILTER_LABEL = ARMOR .." & ".. AUCTION_CATEGORY_WEAPONS;
 		ITEM_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
 		CLASS_DEFAULTS_BUTTON = "Class Defaults";
@@ -551,18 +535,13 @@ L.SETTINGS_MENU = {
 		STORE_IN_PROFILE_BUTTON = "Store in Profile",
 		STORE_IN_PROFILE_BUTTON_TOOLTIP = "By default, ATT stores these Filters on a per-character basis.\n\nCheck this option to store these Filter selections in the current Profile rather than per-character.",
 
-	-- General: Phases Page
-	-- Classic Only, fully dynamic from within parser.
 
-	-- General: Unobtainables Page
 		UNOBTAINABLES_PAGE = "Unobtainables";
 		UNOBTAINABLE_LABEL = "Unobtainable Content";
 		CUSTOM_FILTERS_LABEL = "Automated Content";
 		CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
 		CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
-		-- CUSTOM_COLLECTS_REASONS [These are defined in a different section]
 
-	-- Interface Page
 		INTERFACE_PAGE = UIOPTIONS_MENU;
 		TOOLTIP_LABEL = "Tooltips";
 		TOOLTIP_HELP_CHECKBOX = "Show Tooltip Help";
@@ -662,7 +641,6 @@ L.SETTINGS_MENU = {
 		DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000Applied when Generated|r";
 		MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "Maximum Top Line Length";
 
-	-- Interface: Accessibility Page
 		ACCESSIBILITY_PAGE = ACCESSIBILITY_LABEL;
 		ACCESSIBILITY_EXPLAIN = COLORBLIND_MODE_SUBTEXT;
 		COLORS_ICONS = "Colors and Icons";
@@ -678,31 +656,24 @@ L.SETTINGS_MENU = {
 		CLASS_BORDER = "Use Class Color For Border";
 		CLASS_BORDER_TOOLTIP = "Use your class color for the borders. This updates when you log onto another class.";
 
-	-- Interface: Fillers Page
 		FILLERS_LABEL = "Fillers";
 		FILLERS_EXPLANATION = "|cffFFFFFFFillers are mechanisms by which extra Data is 'filled' into/beneath other ATT content within various UI elements to show further use or purpose of a given Thing. For example, showing the resulting Purchases of an Item would be provided by a 'Filler'.\nThis tab allows you to modify your preferences of which Fillers will be active throughout ATT.|r",
-		-- Filler Scopes
 		TOOLTIP = "Tooltip",
 		LIST = "Mini List",
 		POPOUT = "Popout List",
-		-- Filler Names
 		UPGRADE = "Upgrade",
 		CATALYST = "Catalyst",
 		SYMLINK = "Sym-Link",
-		COST = "Cost",
 		NPC = "NPC",
 		REAGENT = "Reagent",
 
-	-- Interface: Information Page
 		ACHIEVEMENT_ID = "Achievement ID";
 		ACHIEVEMENT_CATEGORY_ID = "Achievement Category ID";
 		READDED_WITH_PATCH_CLASSIC_FORMAT = "This gets readded with patch %s";
 		REMOVED_WITH_PATCH_CLASSIC_FORMAT = "This gets removed with patch %s";
 
-	-- Features Page
 		FEATURES_PAGE = FEATURES_LABEL;
 
-	-- Features: Audio Page
 		CELEBRATIONS_LABEL = "Celebrations & Sound Effects";
 		AUDIO_CHANNEL = "Audio Channel";
 		CHANNEL_MASTER = MASTER;
@@ -720,7 +691,6 @@ L.SETTINGS_MENU = {
 		SCREENSHOT_COLLECTED_CHECKBOX = "Collected Things Trigger a Screenshot";
 		SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "Enable this option if you want to take a screenshot for every Thing you collect.";
 
-	-- Features: Reporting Page
 		REPORTING_LABEL = "Reporting";
 		REPORT_COLLECTED_THINGS_CHECKBOX = "Report Collected Things";
 		REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "Enable this option if you want to see a message in chat detailing which items you have collected or removed from your collection.\n\nNOTE: This is present because Blizzard silently adds appearances and other collectible items and neglects to notify you of the additional items available to you.\n\nWe recommend you keep this setting on. You will still hear the fanfare with it off assuming you have that option turned on.";
@@ -747,18 +717,13 @@ L.SETTINGS_MENU = {
 		REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX = "Play a Sound Effect";
 		REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to also play a notification sound effect when nearby content is detected.";
 
-	-- Features: Sync Page
-	-- Retail Only, deprecated.
 		SYNC_PAGE = "Sync";
 		ACCOUNT_SYNCHRONIZATION = "Account Synchronization";
 		AUTO_SYNC_ACC_DATA_CHECKBOX = "Automatically Sync Account Data";
 		AUTO_SYNC_ACC_DATA_TOOLTIP = "Enable this option if you want ATT to attempt to automatically synchronize account data between accounts when logging in or reloading the UI.";
 
-	-- Features: Windows Page
-	-- Classic Only, nothing localizable atm.
 		WINDOWS_PAGE = "Windows";
 
-	-- Profiles Page
 		PROFILES_PAGE = "Profiles";
 		PROFILE = "Profile";
 		PROFILE_INITIALIZE = "Initialize Profiles";
@@ -769,7 +734,6 @@ L.SETTINGS_MENU = {
 		PROFILE_DELETE_TOOLTIP = "Delete the Selected Profile";
 		PROFILE_SWITCH_TOOLTIP = "Set the Selected Profile as the Current Profile\n\nA Profile can also be "..SHIFT_KEY_TEXT.." clicked to Switch to it";
 		SHOW_PROFILE_LOADED = "Show which profile loads during login or when switching between profiles";
-};
 
 L.TOOLTIP_MODULE = {
 	RANKS = {
