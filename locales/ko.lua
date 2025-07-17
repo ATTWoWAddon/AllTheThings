@@ -15,9 +15,9 @@ L.EXPANSION_DATA[10].lore = "용군단 is the ninth expansion. 아제로스의 �
 
 local a = L.ABBREVIATIONS;
 for key,value in pairs({
-		["안토러스 - 불타는 왕좌"] = "안토러스",	-- ["Antorus, the Burning Throne"] = "Antorus"
-		["깨어난 도시 나이알로사"] = "나이알로사",	-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
-		["미지의 시장 타자베쉬"] = "타자베쉬",	-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
+	["안토러스 - 불타는 왕좌"] = "안토러스",	-- ["Antorus, the Burning Throne"] = "Antorus"
+	["깨어난 도시 나이알로사"] = "나이알로사",	-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
+	["미지의 시장 타자베쉬"] = "타자베쉬",	-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
 })
 do a[key] = value; end
 
@@ -29,12 +29,11 @@ for key,value in pairs({
 do a[key] = value; end
 end
 
-
-		AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t 아제로스의 심장 정수";
-		DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t 비룡감시자 필사본";
-		FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t 추종자 및 동료";
-		RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 룬조각 능력";
-		SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 도관";
+AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t 아제로스의 심장 정수";
+DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t 비룡감시자 필사본";
+FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t 추종자 및 동료";
+RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 룬조각 능력";
+SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 도관";
 
 if app.IsRetail then
 local a = L.CUSTOM_COLLECTS_REASONS;
