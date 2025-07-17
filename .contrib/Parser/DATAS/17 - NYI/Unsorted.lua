@@ -1309,9 +1309,6 @@ root(ROOTS.Unsorted, {
 			i(237511),	-- Vial of Healing
 			i(243245),	-- Gears Grabbed
 			i(243249),	-- Khaz Algar Adventurer Pack \\ Khaz Algar Gift Pack
-			i(241633),	-- Tiny Decorative Rocket
-			i(241635),	-- Patchy Spider-Silk Square
-			i(241636),	-- Storm Glass and Feather Necklace
 		})),
 		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
 			n(ARMOR, {

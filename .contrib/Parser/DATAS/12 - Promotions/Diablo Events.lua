@@ -99,7 +99,7 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 		})),
 		-- DF Version
 		n(205722, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0, } }, {	-- Demon Portal
-			-- #IF BEFORE 11.0
+			-- #if BEFORE 11.0
 			["coords"] = {
 				{ 68.3, 40.8, ORGRIMMAR },
 				{ 50.6, 85.6, STORMWIND_CITY },
@@ -114,13 +114,13 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 				{ 57.5, 20.1, VALDRAKKEN },
 			},
 			["description"] = "Every 30 Minutes a Portal spawns in either a Dragonflight Zone and/or in a Capital, causing a Treasure Goblin to appear after 5 minutes.",
-			-- #ENDIF
+			-- #endif
 			["groups"] = {
 				n(205490, {	-- Treasure Goblin
-					-- #IF BEFORE 11.0
+					-- #if BEFORE 11.0
 					["questID"] = 76215,
 					["isDaily"] = true,
-					-- #ENDIF
+					-- #endif
 					["groups"] = {
 						i(206018),	-- Baa'lial (PET!)
 						i(206039, {	-- Enmity Bundle
@@ -150,17 +150,15 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 		})),
 		-- TWW Version
 		n(205722, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0, } }, {	-- Demon Portal
-			--["coords"] = {
-			--	{ 68.3, 40.8, ORGRIMMAR },
-			--	{ 50.6, 85.6, STORMWIND_CITY },
-			--	{ 54.7, 54.4, STORMWIND_CITY },
-			--	{ 54.3, 53.9, ISLE_OF_DORN },
-			-- { UNDERMINE },	-- basically entire map
-			--},
-			-- #IF AFTER 11.0
-			["maps"] = { DORNOGAL, ORGRIMMAR, STORMWIND_CITY, UNDERMINE },	-- TODO: remove once proper coords added, parser will complain
+			-- #if AFTER 11.0
+			["coords"] = {
+				{ 44.1, 19.3, DUROTAR },
+				{ 33.8, 35.3, STORMWIND_CITY },
+				{ 54.6, 54.8, ISLE_OF_DORN },
+			},
+			["maps"] = { UNDERMINE },	-- Depends on the coordinate of a killed rare
 			["description"] = "Every 60 Minutes a Portal spawns in Dornogal, Stormwind and Orgrimmar, causing a Treasure Goblin to appear after 5 minutes.\n\nCan also spawn in Undermine after defeating a rare.",
-			-- #ENDIF
+			-- #endif
 			["groups"] = {
 				n(205490, {	-- Treasure Goblin
 					["groups"] = {
@@ -284,7 +282,7 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 	}))),
 	i(206007, {	-- Treasure Nabbin' Bag
 		-- #if BEFORE 11.1.7
-		["description"] = "Can be earned by logging into Diablo Immortal on a level 10+ character during the 'Eternal War' crossover event between November 13, 3:00 a.m. & December 11, 2:59 a.m. local server time.",
+		["description"] = "Can be earned by logging into Diablo Immortal on a level 10+ character during the 'Eternal War' crossover event between 13 November 2024, 3:00 a.m. & 11 December 2024, 2:59 a.m. local server time.",
 		-- #endif
 		["timeline"] = { "added 11.0.5.57388", "removed 11.0.5.57689" },
 	}),
@@ -316,23 +314,23 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 root(ROOTS.HiddenQuestTriggers, n(DIABLO_EVENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0} }, {
 	n(GREEDY_EMISSARY_EVENT, {
 		q(76216),	-- 'Bonus loot' if Tyrael's Charger unlearned / first goblin kill per day for account
-		-- #IF AFTER 11.0
+		-- #if AFTER 11.0
 		q(76215,{isDaily=true}),	-- Old daily treasure goblin tracker
-		-- #ENDIF
+		-- #endif
 		--
 		q(91091, {["timeline"]={ADDED_11_1_7}}),	-- Blood-Wrapped Treasure Bag was looted (itemID 246242)
 		q(91092, {["timeline"]={ADDED_11_1_7}}),	-- Treasure Nabbin' Bag was looted (itemID 206007)
-		-- Hellcaller chest questID after being opened, daily?
-		q(91079, {["timeline"]={ADDED_11_1_7}}),	-- 01
-		q(91080, {["timeline"]={ADDED_11_1_7}}),	-- 02
-		q(91081, {["timeline"]={ADDED_11_1_7}}),	-- 03
-		q(91082, {["timeline"]={ADDED_11_1_7}}),	-- 04
-		q(91083, {["timeline"]={ADDED_11_1_7}}),	-- 05
-		q(91166, {["timeline"]={ADDED_11_1_7}}),	-- 06
-		q(91167, {["timeline"]={ADDED_11_1_7}}),	-- 07
-		q(91168, {["timeline"]={ADDED_11_1_7}}),	-- 08
-		q(91169, {["timeline"]={ADDED_11_1_7}}),	-- 09
-		q(91170, {["timeline"]={ADDED_11_1_7}}),	-- 10
+		-- Hellcaller Chest triggers following HQTs after being opened. First ten account-wide per week contain 6x Hellstone Shard guaranteed, afterwards 1 shard guaranteed or a chance of 5.
+		q(91079, {["timeline"]={ADDED_11_1_7}}),	-- 1st
+		q(91080, {["timeline"]={ADDED_11_1_7}}),	-- 2nd
+		q(91081, {["timeline"]={ADDED_11_1_7}}),	-- 3rd
+		q(91082, {["timeline"]={ADDED_11_1_7}}),	-- 4th
+		q(91083, {["timeline"]={ADDED_11_1_7}}),	-- 5th
+		q(91166, {["timeline"]={ADDED_11_1_7}}),	-- 6th
+		q(91167, {["timeline"]={ADDED_11_1_7}}),	-- 7th
+		q(91168, {["timeline"]={ADDED_11_1_7}}),	-- 8th
+		q(91169, {["timeline"]={ADDED_11_1_7}}),	-- 9th
+		q(91170, {["timeline"]={ADDED_11_1_7}}),	-- 10th
 	}),
 })));
 -- #endif

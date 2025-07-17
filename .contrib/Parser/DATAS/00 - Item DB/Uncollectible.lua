@@ -2532,7 +2532,10 @@ i(229809);	-- Weighted Metal Ball
 -- PATCH 11.1.5 --
 ------------------
 i(241632);	-- Heroic Waxy Figurine
+i(241635);	-- Patchy Spider-Silk Square
+i(241636);	-- Storm Glass and Feather Necklace
 i(241616);	-- The Underpin
+i(241633);	-- Tiny Decorative Rocket
 
 ------------------
 -- PATCH 11.2.0 --
