@@ -228,7 +228,7 @@ internal class Program
 
                 // Check to see if the locale data is encased in a color string or constant.
                 string trimmedLocaleData = localeData.Trim();
-                if (trimmedLocaleData.StartsWith("\"|c") && trimmedLocaleData.EndsWith("|r\""))
+                if (trimmedLocaleData.StartsWith("\"|c"))
                 {
                     // We got ourselves a color folks! Let's parse that out.
                     if (trimmedLocaleData.StartsWith("\"|c\""))
@@ -242,7 +242,7 @@ internal class Program
                         // Example: "|cFF00FFDE I am a different color |r"
                         string colorString = trimmedLocaleData.Substring(1, 10);
                         localeData = localeData.Remove(localeData.IndexOf(colorString), colorString.Length);
-                        localeData = localeData.Remove(localeData.LastIndexOf("|r"), 2);
+                        if (trimmedLocaleData.EndsWith("|r\"")) localeData = localeData.Remove(localeData.LastIndexOf("|r"), 2);
                         LocalizationStringColors[variableName] = colorString[2..];
                     }
                 }
