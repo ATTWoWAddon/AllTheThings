@@ -209,7 +209,7 @@ internal class Program
         }
         if (BrokenStrings.Any())
         {
-            File.WriteAllText($"{StringsDirectory.FullName}/__BROKEN_STRINGS.lua", Newtonsoft.Json.JsonConvert.SerializeObject(BrokenStrings));
+            File.WriteAllText($"{StringsDirectory.FullName}/__BROKEN_STRINGS.lua", Newtonsoft.Json.JsonConvert.SerializeObject(BrokenStrings, Newtonsoft.Json.Formatting.Indented));
         }
     }
 }
