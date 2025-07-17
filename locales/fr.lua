@@ -134,18 +134,16 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-			[-5200] = "Apparence de base",							-- Base Appearance
-			[-5201] = "Campagne du Domaine de classe",				-- Class Hall Campaign
-			[-5202] = "L’équilibre de la puissance",				-- Balance of Power
-			[-5203] = "Récompenses préstigieuses",					-- Prestige Rewards
-			[-5204] = "Apparence de Challenge",						-- Challenge Appearance
-			[-5205] = "Apparence Cachée",							-- Hidden Appearance
+	[-5200] = "Apparence de base",							-- Base Appearance
+	[-5201] = "Campagne du Domaine de classe",				-- Class Hall Campaign
+	[-5202] = "L’équilibre de la puissance",				-- Balance of Power
+	[-5203] = "Récompenses préstigieuses",					-- Prestige Rewards
+	[-5204] = "Apparence de Challenge",						-- Challenge Appearance
+	[-5205] = "Apparence Cachée",							-- Hidden Appearance
 })
 do a[key] = value; end
 end
 
-local a = L.SETTINGS_MENU;
-for key,value in pairs({
 		SKIP_AUTO_REFRESH = "Ne pas rafraîchir les données !";
 		SKIP_AUTO_REFRESH_TOOLTIP = "Par défaut (non coché), toute modification des paramètres susceptible d’affecter les données visibles entraînera un rafraîchissement automatique.\n\nEn activant cette option, les modifications des paramètres ne prendront effet dès que l’utilisateur effectuera un rafraîchissement complet en faisant "..SHIFT_KEY_TEXT.." + clic droit sur une fenêtre d’ATT.";
 
@@ -270,8 +268,6 @@ for key,value in pairs({
 		PROFILE_DELETE_TOOLTIP = "Supprimer le profil sélectionné";
 		PROFILE_SWITCH_TOOLTIP = "Définir le profil sélectionné comme le profil actuel\n\n"..SHIFT_KEY_TEXT.." + clic pour accéder au profil sélectionné";
 		SHOW_PROFILE_LOADED = "Afficher le profil qui se charge lors de la connexion ou lors du passage d’un profil à l’autre";
-})
-do a[key] = value; end
 
 if app.IsRetail then
 local a = L.CUSTOM_COLLECTS_REASONS;

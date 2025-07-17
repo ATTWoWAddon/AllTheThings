@@ -166,8 +166,6 @@ for key,value in pairs({
 do a[key] = value; end
 end
 
-local a = L.SETTINGS_MENU;
-for key,value in pairs({
 		SKIP_AUTO_REFRESH = "Не авто обновлять при изменении настроек!";
 		SKIP_AUTO_REFRESH_TOOLTIP = "По умолчанию (выключено) любое изменение Настроек, которое меняет отображаемую информацию, будет авто обновлять коллекцию.\n\nПосле включения этой опции, изменения Настроек не будут менять отображение, пока Вы не произведёте Полное Обновление коллекции, сделав "..SHIFT_KEY_TEXT.." клик на окне ATT.";
 
@@ -412,8 +410,6 @@ for key,value in pairs({
 		PROFILE_DELETE_TOOLTIP = "Удалить Выделенный Профиль";
 		PROFILE_SWITCH_TOOLTIP = "Установить Выделенный Профиль как Текущий Профиль\n\nИли кликните на Профиль с зажатым "..SHIFT_KEY_TEXT;
 		SHOW_PROFILE_LOADED = "Показывать Текущий Профиль после загрузки и после смены Профиля";
-})
-do a[key] = value; end
 
 if app.IsRetail then
 local a = L.CUSTOM_COLLECTS_REASONS;

@@ -173,13 +173,11 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-			[-5202] = "Equilibrio de poderes",						-- Balance of Power
+	[-5202] = "Equilibrio de poderes",						-- Balance of Power
 })
 do a[key] = value; end
 end
 
-local a = L.SETTINGS_MENU;
-for key,value in pairs({
 		SKIP_AUTO_REFRESH = "Saltar Ajustes-Conmutador de los refrescos de datos!";
 		SKIP_AUTO_REFRESH_TOOLTIP = "Por defecto (desactivado), cualquier cambio de Ajustes que pueda afectar los datos visibles causará un refresco automático.\n\nActivando esta opción, los cambios de Ajustes no tendrán efecto hasta que el Usuario ejecute un Refresco Completo con "..SHIFT_KEY_TEXT.." + clic en una ventana de ATT.";
 
@@ -480,8 +478,6 @@ for key,value in pairs({
 		PROFILE_DELETE_TOOLTIP = "Elimina el Perfil seleccionado";
 		PROFILE_SWITCH_TOOLTIP = "Establece el Perfil seleccionado como el Perfil actual\n\nUn Perfil también puede ser clicado con "..SHIFT_KEY_TEXT.." para cambiar a él";
 		SHOW_PROFILE_LOADED = "Muestra qué perfil se carga durante el inicio de sesión o cuando se cambia entre perfiles";
-})
-do a[key] = value; end
 
 if app.IsRetail then
 

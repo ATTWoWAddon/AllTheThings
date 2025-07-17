@@ -148,18 +148,16 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-			[-5200] = "基础外观",										-- Base Appearance
-			[-5201] = "职业大厅战役",										-- Class Hall Campaign
-			[-5202] = "能量的平衡",										-- Balance of Power
-			[-5203] = "荣誉奖励",										-- Prestige Rewards
-			[-5204] = "挑战外观",										-- Challenge Appearance
-			[-5205] = "隐藏外观",										-- Hidden Appearance
+	[-5200] = "基础外观",										-- Base Appearance
+	[-5201] = "职业大厅战役",										-- Class Hall Campaign
+	[-5202] = "能量的平衡",										-- Balance of Power
+	[-5203] = "荣誉奖励",										-- Prestige Rewards
+	[-5204] = "挑战外观",										-- Challenge Appearance
+	[-5205] = "隐藏外观",										-- Hidden Appearance
 })
 do a[key] = value; end
 end
 
-local a = L.SETTINGS_MENU;
-for key,value in pairs({
 		SKIP_AUTO_REFRESH = "不自动刷新！";
 		SKIP_AUTO_REFRESH_TOOLTIP = "默认情况下(未勾选)，任何可能影响可见数据的设置变化都会导致自动刷新。\n\n通过启用该选项设置的变化将不会生效，直到玩家 "..SHIFT_KEY_TEXT.."点击 ATT 窗口执行全部刷新。";
 
@@ -463,8 +461,6 @@ for key,value in pairs({
 		PROFILE_DELETE_TOOLTIP = "删除已选配置文件";
 		PROFILE_SWITCH_TOOLTIP = "将选定的配置文件设置为当前配置文件\n\n一个配置文件也可以通过 "..SHIFT_KEY_TEXT.."点击切换到它";
 		SHOW_PROFILE_LOADED = "显示在登录期间或在配置文件之间切换时加载的配置文件";
-})
-do a[key] = value; end
 
 if app.IsRetail then
 local a = L.CUSTOM_COLLECTS_REASONS;

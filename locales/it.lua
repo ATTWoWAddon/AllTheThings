@@ -64,13 +64,6 @@ for key,value in pairs({
 do a[key] = value; end
 end
 
-local a = L.SETTINGS_MENU;
-for key,value in pairs({
-
-
-
-
-
 		APPEARANCES_CHECKBOX = "Aspetto";
 		BATTLE_PETS_CHECKBOX = "Mascotte da combattimento";
 		RECIPES_CHECKBOX = "Ricette";
@@ -81,23 +74,6 @@ for key,value in pairs({
 		FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t Seguaci & Avventurieri";
 		RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Abilità dell'Incisione Runica";
 		SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Condotti";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-})
-do a[key] = value; end
 
 if app.IsRetail then
 local a = L.CUSTOM_COLLECTS_REASONS;

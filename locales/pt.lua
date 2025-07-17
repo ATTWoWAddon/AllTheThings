@@ -63,17 +63,10 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-			[-5202] = "Equilíbrio de poder",						-- Balance of Power
+	[-5202] = "Equilíbrio de poder",						-- Balance of Power
 })
 do a[key] = value; end
 end
-
-local a = L.SETTINGS_MENU;
-for key,value in pairs({
-
-
-
-
 
 		APPEARANCES_CHECKBOX = "Aparências";
 		BATTLE_PETS_CHECKBOX = "Mascotes de Batalha";
@@ -85,23 +78,6 @@ for key,value in pairs({
 		FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t Seguidores & Companheiros";
 		RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Poder de Runogravura";
 		SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Conduítes";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-})
-do a[key] = value; end
 
 
 if app.IsRetail then

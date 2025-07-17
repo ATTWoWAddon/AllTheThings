@@ -145,18 +145,16 @@ do a[key] = value; end
 if app.IsRetail then
 	local a = L.HEADER_NAMES;
 	for key,value in pairs({
-			[-5200] = "基礎外觀",										-- Base Appearance
-			[-5201] = "職業大廳戰役",									-- Class Hall Campaign
-			[-5202] = "能量的平衡",										-- Balance of Power
-			[-5203] = "榮譽獎勵",										-- Prestige Rewards
-			[-5204] = "挑戰外觀",										-- Challenge Appearance
-			[-5205] = "隱藏外觀",										-- Hidden Appearance
+		[-5200] = "基礎外觀",										-- Base Appearance
+		[-5201] = "職業大廳戰役",									-- Class Hall Campaign
+		[-5202] = "能量的平衡",										-- Balance of Power
+		[-5203] = "榮譽獎勵",										-- Prestige Rewards
+		[-5204] = "挑戰外觀",										-- Challenge Appearance
+		[-5205] = "隱藏外觀",										-- Hidden Appearance
 	})
 	do a[key] = value; end
 end
 
-local a = L.SETTINGS_MENU;
-for key,value in pairs({
 		SKIP_AUTO_REFRESH = "不自動刷新！";
 		SKIP_AUTO_REFRESH_TOOLTIP = "預設情況下(未勾選)，任何可能影響可見資料的設定變化都會導致自動刷新。\n\n通過啟用該選項設定的變化將不會生效，直到玩家 "..SHIFT_KEY_TEXT.."點擊 ATT 視窗執行全部刷新。";
 
@@ -450,8 +448,6 @@ for key,value in pairs({
 		PROFILE_DELETE_TOOLTIP = "刪除已選設定檔";
 		PROFILE_SWITCH_TOOLTIP = "將選定的設定檔設定為當前設定檔\n\n一個設定檔也可以通過 "..SHIFT_KEY_TEXT.."點擊切換到它";
 		SHOW_PROFILE_LOADED = "顯示在登錄期間或在設定檔之間切換時載入的設定檔";
-})
-do a[key] = value; end
 
 if app.IsRetail then
 	local a = L.CUSTOM_COLLECTS_REASONS;

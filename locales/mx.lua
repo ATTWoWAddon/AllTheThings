@@ -187,8 +187,6 @@ for key,value in pairs({
 do a[key] = value; end
 end
 
-local a = L.SETTINGS_MENU;
-for key,value in pairs({
 		SKIP_AUTO_REFRESH = "Saltar Ajustes-switch de las actualizaciones de datos!";
 		SKIP_AUTO_REFRESH_TOOLTIP = "Por defecto (desactivado), cualquier cambio de Ajustes que pueda afectar los datos visibles causará una actualización automática.\n\nActivando esta opción, los cambios de Ajustes no tendrán efecto hasta que el Usuario ejecute una actualización completa con "..SHIFT_KEY_TEXT.." + click en una ventana de ATT.";
 
@@ -489,8 +487,6 @@ for key,value in pairs({
 		PROFILE_DELETE_TOOLTIP = "Elimina el Perfil seleccionado";
 		PROFILE_SWITCH_TOOLTIP = "Establece el Perfil seleccionado como el Perfil actual\n\nUn Perfil también puede ser clickado con "..SHIFT_KEY_TEXT.." para cambiar a él";
 		SHOW_PROFILE_LOADED = "Muestra qué perfil se carga durante el inicio de sesión o cuando se cambia entre perfiles";
-})
-do a[key] = value; end
 
 if app.IsRetail then
 

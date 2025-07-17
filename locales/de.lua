@@ -127,14 +127,12 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-			[-5201] = "Ordenskampagne",								-- Class Hall Campaign
-			[-5202] = "Gleichgewicht der Kräfte",					-- Balance of Power
+	[-5201] = "Ordenskampagne",								-- Class Hall Campaign
+	[-5202] = "Gleichgewicht der Kräfte",					-- Balance of Power
 })
 do a[key] = value; end
 end
 
-local a = L.SETTINGS_MENU;
-for key,value in pairs({
 
 		DISCORD_BUTTON_TOOLTIP = "Klicke auf diese Schaltfläche, um den Link für das ATT Discord zu kopieren.\n\nIhr könnt Eure Fortschritte/Frustrationen mit anderen Sammlern teilen!";
 		PATREON_BUTTON_TOOLTIP = "Klicke auf diese Schaltfläche, um den Link für das ATT Patreon zu kopieren.\n\nHier könnt Ihr sehen, wie Ihr das Addon Finanziell unterstützen könnt!";
@@ -210,8 +208,6 @@ for key,value in pairs({
 		PROFILE_COPY_TOOLTIP = "Kopieren des ausgewählten Profils in das derzeitig aktive Profil";
 		PROFILE_DELETE_TOOLTIP = "Lösche das ausgewählte Profil";
 		PROFILE_SWITCH_TOOLTIP = "Setzt das ausgewählte Profil als das derzeitig aktive Profil\n\nEin Profil kann auch mit "..SHIFT_KEY_TEXT.."-geklickt werden, um dazu zu wechseln";
-})
-do a[key] = value; end
 
 if app.IsRetail then
 local a = L.CUSTOM_COLLECTS_REASONS;
