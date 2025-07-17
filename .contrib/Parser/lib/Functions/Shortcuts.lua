@@ -1741,6 +1741,9 @@ end
 (function()
 local localizationStringsByConstant = {};
 LocalizationStrings = localizationStringsByConstant;	-- This is global, so that it can be found by Parser!
+function isTextProgrammatic(str)
+	return str:sub(1, 1) == '~';
+end
 createLocalizationString = function(data)
 	if not data then
 		print("INVALID LOCALIZATION STRING: You must pass data into the createLocalizationString function.");
@@ -1758,12 +1761,36 @@ createLocalizationString = function(data)
 			-- Build the text using icon and color, if supplied.
 			if data.color then
 				-- Include the color first!
-				-- TODO
+				if isTextProgrammatic(data.color) then
+					
+				else
+					
+				end
 			end
 			if data.icon then
 				-- Prefix the string with the texture.
-				--local textureString = "|T" .. data.icon .. ":0|t";
-				-- TODO
+				if isTextProgrammatic(data.icon) then
+					for key,value in pairs(textData) do
+						if value == "" then
+							textData[key] = "~\"|T\" .. " .. data.icon:sub(2) .. " .. \":0|t\"";
+						elseif isTextProgrammatic(value) then
+							textData[key] = "~\"|T\" .. " .. data.icon:sub(2) .. " .. \":0|t \" .. " .. value:sub(2);
+						else
+							textData[key] = "~\"|T\" .. " .. data.icon:sub(2) .. " .. \":0|t " .. value .. "\"";
+						end
+					end
+				else
+					-- Simple texture prefixing (this is very infrequent)
+					for key,value in pairs(textData) do
+						if value == "" then
+							textData[key] = "|T" .. data.icon .. ":0|t";
+						elseif isTextProgrammatic(value) then
+							textData[key] = "~\"|T" .. data.icon .. ":0|t \" .. " .. value:sub(2);
+						else
+							textData[key] = "|T" .. data.icon .. ":0|t " .. value;
+						end
+					end
+				end
 			end
 		end
 	end
