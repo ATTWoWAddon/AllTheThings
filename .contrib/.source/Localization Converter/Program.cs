@@ -38,7 +38,7 @@ internal class Program
     static void AppendLocalePair(StringBuilder builder, string key, string value)
     {
         builder.Append("\t\t").Append(key).Append(" = ");
-        if (value.StartsWith('[')) builder.Append(value).AppendLine(",");
+        if (value.StartsWith("[[")) builder.Append(value).AppendLine(",");
         else builder.AppendLine($"\"{value.Replace("\"", "\\\"")}\",");
     }
 
