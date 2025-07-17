@@ -189,17 +189,6 @@ ABBREVIATIONS = {
 	["Toy Box"] = TOY,
 };
 
-EVENT_REMAPPING = {};
-EVENT_TIMERUNNING_SEASONS = {};
-HEADER_DESCRIPTIONS = {};
-HEADER_EVENTS = {};
-HEADER_ICONS = {};
-HEADER_LORE = {};
-HEADER_NAMES = {};
-QUEST_NAMES = {};
-
-MAP_ID_TO_ZONE_TEXT = {};
-
 -- Binding Localizations
 TOGGLE_ACCOUNT_MODE = "Toggle Account Mode";
 TOGGLE_COMPLETIONIST_MODE = "Toggle Completionist Mode";

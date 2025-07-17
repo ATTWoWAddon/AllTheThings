@@ -212,7 +212,8 @@ internal class Program
                 // Clean up the locale data
                 if (localeData.EndsWith(';')) localeData = localeData[..^1];
                 localeData = localeData.Replace("..", " .. ").Replace(". .", "..").Replace("  ..  ", " .. ").Replace("app.", "_.");
-                if (localeData.StartsWith('{') || !localeData.Contains('"')) localeData = $"[[~{localeData}]]";
+                if (localeData.StartsWith('\'') && localeData.EndsWith('\'')) localeData = localeData[1..^1];
+                else if (localeData.StartsWith('{') || !localeData.Contains('"')) localeData = $"[[~{localeData}]]";
                 else if (localeData.StartsWith('"') && localeData.EndsWith('"'))
                 {
                     localeData = localeData[1..^1];
