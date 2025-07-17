@@ -1,12 +1,9 @@
--- Localization for Spanish (Mexico) Clients.
 if GetLocale() ~= "esMX" then return; end
 local app = select(2, ...);
 local L = app.L;
 
--- WoW API Cache
 local GetSpellName = app.WOWAPI.GetSpellName;
 
--- General Text
 	L.TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
 	L.SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
 	L.DESCRIPTION = "\"Insensatamente has buscado tu propia muerte. Descaradamente has ignorado poderes que escapan a tu comprensión. Has luchado con ahínco para invadir el reino del Coleccionista. Ahora solo queda una salida: recorrer el solitario camino... de los condenados.\"";
@@ -14,7 +11,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.THING_UNTIL = " COSAS HASTA ";
 	L.YOU_DID_IT = "¡LO LOGRASTE! ";
 
--- Social Module
 	L.NEW_VERSION_AVAILABLE = "Hay una nueva versión de %s disponible. Por favor actualiza el AddOn, %s.";
 	L.NEW_VERSION_FLAVORS = {
 		"AllTheThings tiene hambre.",

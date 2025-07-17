@@ -1,26 +1,14 @@
---------------------------------------------------------------------------------
---						L O C A L I Z A T I O N  F I L E					  --
---------------------------------------------------------------------------------
---						English / United States (default)					  --
---------------------------------------------------------------------------------
--- This file has been deprecated. All custom headers in this file MUST be moved into the proper addon database.
--- All shared locales will be moved to the Default Locale file.
 local name, app = ...;
 local L = app.L;
 
--- Global locals
 local GetAchievementInfo, select, sformat = GetAchievementInfo, select, string.format;
 local GetRealZoneText = GetRealZoneText;
 
--- WoW API Cache
 local GetSpellName = app.WOWAPI.GetSpellName;
 local GetItemClassInfo = app.WOWAPI.GetItemClassInfo;
 
 for key, value in pairs({
-	-- These need to be localized manually.
 	["HEADER_NAMES"] = {
-	-- Tier/Dungeon/Event/Holiday Sets
-		-- Artifact Strings, These IDs are used in src/Expansion/Legion [Ask Runaway about removing them]
 		[-5200] = "Base Appearance",											-- Base Appearance
 		[-5201] = "Class Hall Campaign",										-- Class Hall Campaign
 		[-5202] = "Balance of Power",											-- Balance of Power

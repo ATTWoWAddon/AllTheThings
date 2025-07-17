@@ -103,7 +103,11 @@ internal class Program
             {
                 string line = lines[lineIndex];
                 string trimmedLine = line.Trim();
-                if (trimmedLine.StartsWith('-') || trimmedLine.StartsWith("local "))
+                if (trimmedLine.StartsWith("--"))
+                {
+                    continue;
+                }
+                if (trimmedLine.StartsWith("local "))
                 {
                     whiteListedLines.Add(line);
                     continue;

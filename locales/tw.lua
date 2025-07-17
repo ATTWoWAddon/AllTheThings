@@ -1,12 +1,9 @@
--- Localization for Chinese (Traditional, Taiwan) Clients.
 if GetLocale() ~= "zhTW" then return; end
 local app = select(2, ...);
 local L = app.L;
 
--- WoW API Cache
 local GetSpellName = app.WOWAPI.GetSpellName;
 
--- General Text
 	L.TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
 	L.SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
 	L.DESCRIPTION = "\"你愚昧地尋求自我毀滅，大膽地無視了那些超越你理解的力量。你拼盡全力入侵收藏者的領域，而現在，唯一的出路只剩下 — 踏上那孤獨的詛咒之路\"";
@@ -14,7 +11,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.THING_UNTIL = " 事物到 ";
 	L.YOU_DID_IT = "你做到了！";
 
--- Social Module
 	L.NEW_VERSION_AVAILABLE = "%s 已有更新的版本。請更新插件 %s。";
 	L.NEW_VERSION_FLAVORS = {
 		--TODO: "AllTheThings hungers.",

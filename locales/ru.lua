@@ -1,12 +1,9 @@
--- Localization for Russian Clients.
 if GetLocale() ~= "ruRU" then return; end
 local app = select(2, ...);
 local L = app.L;
 
--- WoW API Cache
 local GetSpellName = app.WOWAPI.GetSpellName;
 
--- General Text
 	L.TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
 	L.SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
 	L.DESCRIPTION = "\"Глупцы! Вы сами нашли свою погибель! Вам никогда не понять, сколь велика сила, потревоженная вами.  Вы сражались отчаянно, чтобы проникнуть в царство Жнеца. Теперь перед вами лежит лишь один путь – путь проклятых.\"";
@@ -14,7 +11,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.THING_UNTIL = " ШТУЧКА ДО ";
 	L.YOU_DID_IT = "ВЫ СДЕЛАЛИ ЭТО!";
 
--- Social Module
 	L.NEW_VERSION_AVAILABLE = "Доступна новая версия %s. Пожалуйста, обновите Аддон, %s.";
 	L.NEW_VERSION_FLAVORS = {
 		--TODO: "AllTheThings hungers.",

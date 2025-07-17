@@ -1,16 +1,9 @@
---------------------------------------------------------------------------------
---						L O C A L I Z A T I O N  F I L E					  --
---------------------------------------------------------------------------------
---						English / United States (default)					  --
---------------------------------------------------------------------------------
 local appName, app = ...;
 
--- WoW API Cache
 local GetSpellName = app.WOWAPI.GetSpellName;
 local GetItemClassInfo = app.WOWAPI.GetItemClassInfo;
 
 local L = setmetatable({
-	-- General Text
 	TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
 	SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
 	DESCRIPTION = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
@@ -18,7 +11,6 @@ local L = setmetatable({
 	THING_UNTIL = " THING UNTIL ";
 	YOU_DID_IT = "YOU DID IT!";
 
-	-- Social Module
 	NEW_VERSION_AVAILABLE = "A newer version of %s is available. Please update the AddOn %s";
 	NEW_VERSION_FLAVORS = {
 		"AllTheThings hungers.",
