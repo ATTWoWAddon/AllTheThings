@@ -84,6 +84,7 @@ internal class Program
         }
 
         // Parse the Locale files
+        Dictionary<string, string> LocalizationStringColors = [];
         Dictionary<string, Dictionary<string, string>> LocalizationStrings = [];
         Console.WriteLine("PARSING LOCALE FILES...");
         foreach (var localeFile in Directory.EnumerateFiles("../../locales/", "*.lua"))
@@ -186,8 +187,8 @@ internal class Program
                 string localeData = splitString[1].Trim();
                 if (localeData.Length == 0) continue;           // Ignore empty strings
                 localeData = localeData.Split("-- ")[0].Split("--TODO")[0].Trim();
+                localeData = localeData.Replace("|C", "|c").Replace("|R", "|r");
                 if (PRINT_LINES) Console.WriteLine(trimmedLine);
-
 
                 if (localeData[0] == '{')   // Is this an array of locale strings?
                 {
@@ -221,6 +222,26 @@ internal class Program
                 }
                 else if (localeData.Contains(" .. ")) localeData = $"[[~{localeData}]]";
                 while (localeData.Contains("\\\"")) localeData = localeData.Replace("\\\"", "\"");
+
+                // Check to see if the locale data is encased in a color string or constant.
+                string trimmedLocaleData = localeData.Trim();
+                if (trimmedLocaleData.StartsWith("|c") && trimmedLocaleData.EndsWith("|r"))
+                {
+                    // We got ourselves a color folks! Let's parse that out.
+                    if (trimmedLocaleData.StartsWith("|c\" .. "))
+                    {
+                        // Looks like we have a constant following this value.
+                    }
+                    else
+                    {
+                        // Oh goody, a simple color string.
+                        // Example: |cFF00FFDE I am a different color |r
+                        string colorString = trimmedLocaleData[..10];
+                        localeData = localeData.Remove(localeData.IndexOf(colorString), colorString.Length);
+                        localeData = localeData.Remove(localeData.LastIndexOf("|r"), 2);
+                        LocalizationStringColors[variableName] = colorString[2..];
+                    }
+                }
 
                 if (DEBUG_LOCALES && locale == "en")
                 {
@@ -274,6 +295,7 @@ internal class Program
                 }
                 builder.Append("\treadable = \"").Append(readable).AppendLine("\",");
                 builder.Append("\tconstant = \"").Append(key).AppendLine("\",");
+                if (LocalizationStringColors.TryGetValue(key, out string? colorString)) builder.Append("\tcolor = \"").Append(colorString).AppendLine("\",");
                 builder.AppendLine("\texport = true,"); // Export all keys until determined otherwise
                 builder.AppendLine("\ttext = {");
 
