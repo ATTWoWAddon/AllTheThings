@@ -39,7 +39,6 @@ L.ICON_LEGEND_STATUS_TEXT = app.ccColors.White ..     "\n|T374225:0|t " .. "当�
 	"\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t " .. "当前不可用的季节性内容" ..
 	"\n|T374225:0|t " .. "Unavailable on current character" ..
 	"\n|T" .. app.asset("status-unsorted") .. ":0|t " .. "Unsorted in ATT";
-L.MINIMAP_SLIDER_TOOLTIP = '使用此选项可自定义小地图按钮的大小。\n\n默认：36';
 
 L.COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
 L.COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
@@ -53,8 +52,6 @@ L.COMPLETE_OTHER = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已完成
 L.INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |cffff9333未完成|r";	-- Acquired the colors and icon from CanIMogIt.
 L.INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
 
-L.AND_OTHER_SOURCES = "和 %s 其他来源...";
-L.RACE_LOCKED = "种族锁定";
 L.MARKS_OF_HONOR_DESC = "荣耀印记必须在弹出窗口中查看才能看到所有正常的'包含'内容。\n(在聊天中输入'/att' 然后 "..SHIFT_KEY_TEXT.."点击链接的物品)\n\n|cFFfe040f之后购买和一起使用，重新登录和强制 ATT 刷新（按此顺序）\n可能需要正确注册所有物品。|r";
 L.MOP_REMIX_BRONZE_DESC = "青铜必须在弹出窗口中查看才能看到所有正常的'包含'内容。\n(在聊天中输入'/att' 然后 "..SHIFT_KEY_TEXT.."点击链接的物品)\n\n|cFFfe040f之后购买和一起使用，重新登录和强制 ATT 刷新（按此顺序）\n可能需要正确注册所有物品。|r";
 L.FOLLOWERS_COLLECTION_DESC = "如果您在 ATT 中启用此设置，则可以在整个帐号范围内收集追随者。\n\n必须通过 "..SHIFT_KEY_TEXT.."点击标题手动刷新插件才能检测到这一点。";
@@ -73,16 +70,9 @@ L.EXPANSION_DATA[11].lore = "地心之战是第十个资料片。也是世界之
 L.EXPANSION_DATA[12].lore = "至暗之夜是第十一个资料片。也是世界之魂传说的第二部份。";
 L.EXPANSION_DATA[13].lore = "最后的泰坦是第十二个资料片。也是世界之魂传说三部曲终章。";
 
-L.UNSORTED = "未分类";
 L.UNSORTED_DESC = "此数据尚未在 ATT 中获取 " .. app.Version .. "。";
-L.UNSORTED_DESC_2 = "这里的物品存在于游戏中，玩家可能会获得，但 ATT 还没有找到准确位置";
-L.NEVER_IMPLEMENTED = "从未生效";
-L.NEVER_IMPLEMENTED_DESC = "这里的物品在技术上存在于游戏内，但从未向玩家开放过";
-L.HIDDEN_QUEST_TRIGGERS = "隐藏任务触发";
-L.HIDDEN_QUEST_TRIGGERS_DESC = "这些任务是根据特定的标准手动确定触发的任务，主要用于游戏内部的追踪目的";
 L.RESET_INSTANCES_DESC = "点击此处重置副本。\n\n"..ALT_KEY_TEXT.."点击可在离开地下城时自动重置副本。\n\n警告：小心使用！";
 L.UPDATE_WORLD_QUESTS_DESC = "有时世界任务 API 很慢或无法返回新数据。如果希望在不更改区域的情况下强制刷新数据，请立即点击此按钮！\n\n"..ALT_KEY_TEXT.."点击以包括当前可用的事物，可能不受时间限制";
-L.ADHOC_UNIQUE_COLLECTED_INFO = "此物品是唯一收藏但由于缺少暴雪 API 信息而未能检测到。\n\n将在下次强制刷新后修复。";
 L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207该组及其内容不参与此窗口的进度，因为它算在另一个位置！|r";
 L.FORCE_REFRESH_REQUIRED = "这可能需要强制刷新（"..SHIFT_KEY_TEXT.."点击）正确已收集。";
 
@@ -97,23 +87,6 @@ L._BETA_LABEL = " |cff4AA7FF[测试]|R";
 L.PRESET_INSANE = app.ccColors.Insane .. "疯狂模式|R 启用所有 " .. app.ccColors.Insane .. "彩色选项|R，并给你一个真正的挑战！";
 L.PRESET_ACCOUNT = app.ccColors.Account .. "账号模式|R 启用所有账号范围的追踪，并显示所有角色的进度。";
 
-L.TOGGLE_ACCOUNT_MODE = "切换账号模式";
-L.TOGGLE_COMPLETIONIST_MODE = "切换完美主义者模式";
-L.TOGGLE_DEBUG_MODE = "切换调试模式";
-L.TOGGLE_FACTION_MODE = "切换阵营模式";
-L.TOGGLE_COMPLETEDTHINGS = "隐藏/显示已完成组和项";
-L.TOGGLE_COMPLETEDGROUPS = "隐藏/显示已完成组";
-L.TOGGLE_COLLECTEDTHINGS = "隐藏/显示已收藏项";
-L.TOGGLE_BOEITEMS = "切换装备绑定/拾取绑定物品";
-L.TOGGLE_SOURCETEXT = "隐藏/显示来源地点";
-L.MODULES = "模块";
-L.TOGGLE_MAINLIST = "打开/关闭主列表";
-L.TOGGLE_MINILIST = "打开/关闭小列表";
-L.TOGGLE_PROFESSION_LIST = "打开/关闭专业技能列表";
-L.TOGGLE_WORLD_QUESTS_LIST = "打开/关闭世界任务列表";
-L.TOGGLE_RAID_ASSISTANT = "打开/关闭团队助手";
-L.TOGGLE_RANDOM = "打开/关闭随机列表";
-L.REROLL_RANDOM = "重新生成随机列表";
 
 L.SAVED = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已保存|r";	-- Acquired the colors and icon from CanIMogIt.
 L.COST_TEXT = "|T" .. app.asset("Currency") .. ":0|t |cff0891ff货币|r";
@@ -159,15 +132,8 @@ FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t 追随者 & 伙伴"
 RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 符文铭刻之力";
 SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 导灵器";
 ITEM_EXPLAIN_LABEL = app.ccColors.Account.."帐号模式|r|cffFFFFFF下，这些内容始终显示。|r";
-STORE_IN_PROFILE_BUTTON = "储存在配置文件中";
-STORE_IN_PROFILE_BUTTON_TOOLTIP = "默认情况下，ATT按每个角色存储这些过滤器。\n\n选择此选项可将这些“过滤器”存储在当前配置文件中，而不是按角色存储。";
 CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF如果当前角色可以使用此内容，或者位于 "..app.ccColors.Account.."账号模式|cffFFFFFF。|r";
-CONTAINS_SLIDER_TOOLTIP = '使用该功能可以自定义鼠标提示中显示的摘要事项的数量。\n\n默认：25';
-LOCATIONS_SLIDER_TOOLTIP = '使用该功能可以自定义鼠标提示中显示的来源位置数量。\n\n注意：这也会根据其他来源的多少来显示“X”个数量，如果这个总数等于显示的元素总数，那么就会简单地显示最后一个来源。\n\n默认：5';
-MAIN_LIST_SCALE_TOOLTIP = '使用此功能可以自定义主列表的缩放。\n\n默认：1';
-MINI_LIST_SCALE_TOOLTIP = '使用此功能可以自定义所有小和小列表的缩放。\n\n默认：1';
 SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "如果你希望'排序'操作（"..SHIFT_KEY_TEXT.."右键）按每个组的总进度排序（而不是按名称）请启用此选项";
-PRECISION_SLIDER_TOOLTIP = '使用此选项可自定义百分比计算中所需的精度级别。\n\n默认：2';
 PROFILE_INITIALIZE_TOOLTIP = "这将使您的 ATT 保存变量能够支持和包含配置文件数据。您当前的设置和窗口信息将被复制到 '"..DEFAULT.."' 配置文件中，该配置文件无法删除，但可以修改并使用作为所有角色的初始配置文件。\n\n请务必将配置文件的任何异常行为或错误报告给 ATT Discord！";
 PROFILE_SWITCH_TOOLTIP = "将选定的配置文件设置为当前配置文件\n\n一个配置文件也可以通过 "..SHIFT_KEY_TEXT.."点击切换到它";
 

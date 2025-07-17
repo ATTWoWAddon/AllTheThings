@@ -7,14 +7,12 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 L.TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
 L.SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
 L.REPORT_TIP = "\n("..CTRL_KEY_TEXT.."+C para copiar o texto completo do report para sua área de transferência)";
-L.MINIMAP_SLIDER_TOOLTIP = 'Use isso para customizar o tamanho do Botão no Minimapa.\n\nPadrão: 36';
 L.COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
 L.COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
 L.COMPLETE_ICON = "|T" .. app.asset("known_green") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
 L.NOT_COLLECTED_ICON = "|T" .. app.asset("unknown") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
 L.INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
 
-L.RACE_LOCKED = "Travado por raça";
 if app.IsRetail then
 L.FOLLOWERS_COLLECTION_DESC = "Followers can be collected account wide, if you enable this setting in ATT.\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.." clicking the header for this to be detected.";	--TODO
 end

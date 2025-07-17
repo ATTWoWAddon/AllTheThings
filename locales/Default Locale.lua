@@ -52,7 +52,6 @@ ICON_LEGEND_MISC_TEXT = app.ccColors.White ..
 		"\n|T" .. app.asset("Interface_Reagent") .. ":0|t " .. "Used as a crafting reagent" ..
 		"\n|T" .. app.asset("Interface_Catalyst") .. ":0|t " .. "Convertible at the Catalyst for a new appearance" ..
 		"\n|T" .. app.asset("Interface_Upgrade") .. ":0|t " .. "Can be upgraded for a new appearance";
-MINIMAP_SLIDER_TOOLTIP = 'Use this to customize the size of the Minimap Button.\n\nDefault: 36';
 
 COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
 COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
@@ -189,50 +188,12 @@ ABBREVIATIONS = {
 	["Toy Box"] = TOY,
 };
 
-TOGGLE_ACCOUNT_MODE = "Toggle Account Mode";
-TOGGLE_COMPLETIONIST_MODE = "Toggle Completionist Mode";
-TOGGLE_DEBUG_MODE = "Toggle Debug Mode";
-TOGGLE_FACTION_MODE = "Toggle Faction Mode";
-TOGGLE_LOOT_MODE = "Toggle Loot Mode";
-TOGGLE_COMPLETEDTHINGS = "Toggle Completed Things (Both)";
-TOGGLE_COMPLETEDGROUPS = "Toggle Completed Groups";
-TOGGLE_COLLECTEDTHINGS = "Toggle Collected Things";
-TOGGLE_BOEITEMS = "Toggle BoE/BoA Items";
-TOGGLE_SOURCETEXT = "Toggle Source Locations";
-TOGGLE_MAINLIST = "Toggle ATT Main List";
-TOGGLE_MINILIST = "Toggle ATT Mini List";
-TOGGLE_PROFESSION_LIST = "Toggle ATT Profession List";
-TOGGLE_WORLD_QUESTS_LIST = "Toggle ATT World Quests";
-TOGGLE_RAID_ASSISTANT = "Toggle ATT Raid Assistant";
-TOGGLE_RANDOM = "Toggle ATT Random";
-REROLL_RANDOM = "Reroll the Random Selection";
-MODULES = "Modules";
 
-NEARBY = "Nearby:";
 
-AND_OTHER_SOURCES = "And %s other sources...";
 FORCE_REFRESH_REQUIRED = "This may require a Force Refresh ("..SHIFT_KEY_TEXT.." click) to properly be collected.";
-RELOG_REQUIRED = "After using this, it is typically required to logout & login to collect all the items correctly on the game servers.";
-RACE_LOCKED = "Race Locked";
-ENSEMBLE_LEARNED = "This Ensemble has already been used by one of your characters.\n\n|cFFA0A0A0Unfortunately, Blizzard’s system can sometimes fail to grant every item.|r";
-HOLIDAY_DROP = "Only your first daily attempt per Battle.net account has a chance to drop the unique rewards, such as mounts, pets, toys, and manuscripts. The drop chance increases with every failed attempt.\nBlizzard have not specified which items are subject to this system.";
-ADHOC_UNIQUE_COLLECTED_INFO = "This Item is Unique-Collected but failed to be detected due to missing Blizzard API information.\n\nIt will be fixed after the next Force-Refresh.";
 
-HIDDEN_ACHIEVEMENT_TRIGGERS = "Hidden Achievement Triggers";
-HIDDEN_ACHIEVEMENT_TRIGGERS_DESC = "These are Achievements which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes";
-HIDDEN_CURRENCY_TRIGGERS = "Hidden Currency Triggers";
-HIDDEN_CURRENCY_TRIGGERS_DESC = "These are Currencies which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes";
-HIDDEN_QUEST_TRIGGERS = "Hidden Quest Triggers";
-HIDDEN_QUEST_TRIGGERS_DESC = "These are Quests which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes";
-NEVER_IMPLEMENTED = "Never Implemented";
-NEVER_IMPLEMENTED_DESC = "Items here technically exist within the game but have never been made available to players";
-SOURCELESS = "Sourceless";
-SOURCELESS_DESC = "These things are confirmed to be obtainable, but there is currently no known source of where it comes from or if it is even still obtainable";
-UNSORTED = "Unsorted";
 UNSORTED_DESC = "This thing hasn't been Sourced yet within ATT " .. app.Version .. ".";
-UNSORTED_DESC_2 = "Items here exist within the game and may be available to players, but have not yet been sourced into the accurate location in ATT";
 
-PVP_RANK_DESCRIPTION = "There are a total of 14 ranks for both factions. Each rank requires a minimum amount of Rating Points to be calculated every week, then calculated in comparison to other players on your server.\n\nEach rank grants access to different rewards, from PvP consumables to Epic Mounts that do not require Epic Riding Skill and Epic pieces of gear at the highest ranks. Each rank is also applied to your character as a Title.";
 
 EXPANSION_DATA = {
 	{	-- Classic
@@ -392,25 +353,15 @@ SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Conduits";
 
 ITEM_FILTER_LABEL = ARMOR .." & ".. AUCTION_CATEGORY_WEAPONS;
 ITEM_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
-STORE_IN_PROFILE_BUTTON = "Store in Profile";
-STORE_IN_PROFILE_BUTTON_TOOLTIP = "By default, ATT stores these Filters on a per-character basis.\n\nCheck this option to store these Filter selections in the current Profile rather than per-character.";
 
 
 CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
 
-CONTAINS_SLIDER_TOOLTIP = 'Use this to customize the number of Summarized Things to show in the tooltip.\n\nDefault: 25';
-LOCATIONS_SLIDER_TOOLTIP = 'Use this to customize the number of source locations to show in the tooltip.\n\nNOTE: This will also show "X" number of other sources based on how many, if that total is equivalent to the total number of displayed elements, then that will simply display the last source.\n\nDefault: 5';
 
-MAIN_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
-MINI_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
 SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "Enable this option if you want the 'Sort' operation ("..SHIFT_KEY_TEXT.." Right Click) to sort by the total progress of each group (instead of by Name)";
-PRECISION_SLIDER_TOOLTIP = 'Use this to customize your desired level of precision in percentage calculations.\n\nDefault: 2';
 
 
 FILLERS_EXPLANATION = "|cffFFFFFFFillers are mechanisms by which extra Data is 'filled' into/beneath other ATT content within various UI elements to show further use or purpose of a given Thing. For example, showing the resulting Purchases of an Item would be provided by a 'Filler'.\nThis tab allows you to modify your preferences of which Fillers will be active throughout ATT.|r";
-LIST = "Mini List";
-POPOUT = "Popout List";
-NPC = "NPC";
 
 
 

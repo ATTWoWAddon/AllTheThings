@@ -37,7 +37,6 @@ L.ICON_LEGEND_STATUS_TEXT = app.ccColors.White ..
 		"\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t " .. "季節性內容" ..
 		"\n|T374225:0|t " .. "當前角色不可用" ..
 		"\n|T" .. app.asset("status-unsorted") .. ":0|t " .. "Unsorted in ATT";
-L.MINIMAP_SLIDER_TOOLTIP = '使用此選項可自訂小地圖按鈕的大小。\n\n預設：36';
 
 L.COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
 L.COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
@@ -51,8 +50,6 @@ L.COMPLETE_OTHER = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已完成
 L.INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |cffff9333未完成|r";	-- Acquired the colors and icon from CanIMogIt.
 L.INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
 
-L.AND_OTHER_SOURCES = "和 %s 其他來源...";	--TODO: check
-L.RACE_LOCKED = "種族限定";
 L.MARKS_OF_HONOR_DESC = "榮耀印記必須在彈出視窗中查看才能看到所有正常的'包含'內容。\n(在聊天中輸入'/att' 然後 "..SHIFT_KEY_TEXT.."點擊連接的物品)\n\n|cFFfe040f之後購買和一起使用，重新登入和強制 ATT 刷新（按此順序）\n可能需要正確註冊所有物品。|r";
 L.MOP_REMIX_BRONZE_DESC = "青铜幣必須在彈出視窗中查看才能看到所有正常的'包含'內容。\n(在聊天中輸入'/att' 然後 "..SHIFT_KEY_TEXT.."點擊連接的物品)\n\n|cFFfe040f之後購買和一起使用，重新登入和強制 ATT 刷新（按此順序）\n可能需要正確註冊所有物品。|r";
 L.FOLLOWERS_COLLECTION_DESC = "如果您在 ATT 中啟用此設定，則可以在整個帳號範圍內收集追隨者。\n\n必須通過 "..SHIFT_KEY_TEXT.."點擊標題手動刷新插件才能檢測到這一點。";
@@ -71,16 +68,9 @@ L.EXPANSION_DATA[11].lore = "地心之戰是第十個資料片。也是世界之
 L.EXPANSION_DATA[12].lore = "至暗之夜是第十一個資料片。也是世界之魂戰記的第二部份。";
 L.EXPANSION_DATA[13].lore = "最後的泰坦是第十二個資料片。也是世界之魂戰記三部曲終章。";
 
-L.UNSORTED = "未分類";
 L.UNSORTED_DESC = "此資料尚未在 ATT 中獲得 " .. app.Version .. "。";
-L.UNSORTED_DESC_2 = "這裡的物品存在於遊戲中，玩家可能會獲得，但 ATT 還沒有找到準確位置";
-L.NEVER_IMPLEMENTED = "從未實裝";
-L.NEVER_IMPLEMENTED_DESC = "這裡的物品在技術上存在於遊戲內，但從未向玩家開放過";
-L.HIDDEN_QUEST_TRIGGERS = "隱藏任務觸發";
-L.HIDDEN_QUEST_TRIGGERS_DESC = "這些任務是依據特定的標準手動確定觸發的任務，主要用於遊戲內部的追蹤目的";
 L.RESET_INSTANCES_DESC = "點擊此處重置所有副本。\n\n"..ALT_KEY_TEXT.."點擊可在離開地城時自動重置副本。\n\n警告：小心使用！";
 L.UPDATE_WORLD_QUESTS_DESC = "有時世界任務 API 很慢或無法返回新資料。如果希望在不更改區域的情況下強制刷新資料，請立即點擊此按鈕！\n\n"..ALT_KEY_TEXT.."點擊以包括當前可用的事物，可能不受時間限制";
-L.ADHOC_UNIQUE_COLLECTED_INFO = "此物品是唯一收藏但由於缺少暴雪 API 資訊而未能檢測到。\n\n將在下次強制刷新後修復。";
 L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207該組及其內容不參與此視窗的進度，因為它來自另一個位置！|r";
 L.FORCE_REFRESH_REQUIRED = "這可能需要強制刷新（"..SHIFT_KEY_TEXT.."點擊）正確已收集。";
 L.TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.."點擊鎖定視窗";
@@ -89,23 +79,6 @@ L.TITLE_DEBUG = app.ccColors.Red .. "偵錯|R ";
 L.TITLE_ACCOUNT = app.ccColors.Account.."帳號|R ";
 L.TITLE_INSANE = app.ccColors.Insane.."瘋狂|R ";
 L._BETA_LABEL = " |cff4AA7FF[測試]|R";
-L.TOGGLE_ACCOUNT_MODE = "切換帳號模式";
-L.TOGGLE_COMPLETIONIST_MODE = "切換完美主義者模式";
-L.TOGGLE_DEBUG_MODE = "切換偵錯模式";
-L.TOGGLE_FACTION_MODE = "切換陣營模式";
-L.TOGGLE_COMPLETEDTHINGS = "隱藏/顯示已完成組和項目";
-L.TOGGLE_COMPLETEDGROUPS = "隱藏/顯示已完成組";
-L.TOGGLE_COLLECTEDTHINGS = "隱藏/顯示已收藏項目";
-L.TOGGLE_BOEITEMS = "切換裝備綁定/拾取綁定物品";
-L.TOGGLE_SOURCETEXT = "隱藏/顯示來源地點";
-L.MODULES = "模組";
-L.TOGGLE_MAINLIST = "打開/關閉主列表";
-L.TOGGLE_MINILIST = "打開/關閉小列表";
-L.TOGGLE_PROFESSION_LIST = "打開/關閉專業技能列表";
-L.TOGGLE_WORLD_QUESTS_LIST = "打開/關閉世界任務列表";
-L.TOGGLE_RAID_ASSISTANT = "打開/關閉團隊助手";
-L.TOGGLE_RANDOM = "打開/關閉隨機列表";
-L.REROLL_RANDOM = "重新生成隨機列表";
 L.SAVED = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已保存|r";	-- Acquired the colors and icon from CanIMogIt.
 L.COST_TEXT = "|T" .. app.asset("Currency") .. ":0|t |cff0891ff貨幣|r";
 
@@ -151,12 +124,7 @@ RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 符文銘
 SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 導靈器";
 ITEM_EXPLAIN_LABEL = "|cffFFFFFF始終顯示此內容如果位於 "..app.ccColors.Account.."帳號模式|cffFFFFFF。|r";
 CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF如果當前角色可以使用此內容，或者位於 "..app.ccColors.Account.."帳號模式|cffFFFFFF。|r";
-CONTAINS_SLIDER_TOOLTIP = '使用該功能可以自訂指標提示中顯示的摘要事項的數量。\n\n預設：25';
-LOCATIONS_SLIDER_TOOLTIP = '使用該功能可以自訂指標提示中顯示的來源位置數量。\n\n注意：這也會依據其他來源的多少來顯示“X”個數量，如果這個總數等於顯示的元素總數，那麼就會簡單地顯示最後一個來源。\n\n預設：5';
-MAIN_LIST_SCALE_TOOLTIP = '使用此功能可以自訂主列表的縮放。\n\n預設：1';
-MINI_LIST_SCALE_TOOLTIP = '使用此功能可以自訂所有小和小列表的縮放。\n\n預設：1';
 SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "如果你希望'排序'操作（"..SHIFT_KEY_TEXT.."右鍵）按每個組的總進度排序（而不是按名稱）請啟用此選項";
-PRECISION_SLIDER_TOOLTIP = '使用此選項可自訂百分比計算中所需的精度級別。\n\n預設：2';
 PROFILE_INITIALIZE_TOOLTIP = "這將使您的 ATT 保存變數能夠支援和包含設定檔資料。您當前的設定和視窗資訊將被複製到 '"..DEFAULT.."' 設定檔中，該設定檔無法刪除，但可以修改並使用作為所有角色的初始設定檔。\n\n請務必必將設定檔的任何異常行為或錯誤回報給 ATT Discord！";
 PROFILE_SWITCH_TOOLTIP = "將選定的設定檔設定為當前設定檔\n\n一個設定檔也可以通過 "..SHIFT_KEY_TEXT.."點擊切換到它";
 
