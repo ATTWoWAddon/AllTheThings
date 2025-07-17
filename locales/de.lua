@@ -5,8 +5,6 @@ local L = app.L;
 local GetSpellName = app.WOWAPI.GetSpellName;
 L.TITLE = "|c" .. app.DefaultColors.ATT .. "ALL THE THINGS|r";
 L.SHORTTITLE = "|c" .. app.DefaultColors.ATT .. "ATT|r";
-L.REQUIRES_PVP = "|CFF00FFDEDies erfordert Spieler gegen Spieler Aktivität oder eine Währung, die damit verbunden ist.|r";
-L.REQUIRES_PETBATTLES = "|CFF00FFDEDies erfodert Haustierkampf.|r";
 L.REPORT_TIP = "\n("..CTRL_KEY_TEXT.."+C um mehrere Linien zu kopieren.)";
 L.COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";
 L.COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";	
@@ -40,7 +38,6 @@ L.TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.." Klick um das Fenster freizug
 L.TITLE_DEBUG = "|c" .. app.DefaultColors.Red .. "Debug|R ";
 L.TITLE_ACCOUNT = "|c" .. app.DefaultColors.Account.."Account|R ";
 L.TITLE_INSANE = "|c" .. app.DefaultColors.Insane.."Wahnsinn|R ";
-L._BETA_LABEL = " |cff4AA7FF[Beta]|R";
 L.COST_TEXT = "|T" .. app.asset("Currency") .. ":0|t |cff0891ffWährung|r";
 
 local a = L.ABBREVIATIONS;

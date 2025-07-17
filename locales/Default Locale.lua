@@ -25,15 +25,10 @@ TOP_ROW_INSTRUCTIONS = "|cff3399ffLeft Click and Drag to Move\nRight Click to Op
 OTHER_ROW_INSTRUCTIONS = "|cff3399ffLeft Click to Expand/Collapse\nRight Click to Pop Out to Mini List\n"..CTRL_KEY_TEXT.." Click to Expand/Collapse Recursively\n"..SHIFT_KEY_TEXT.." Click to Refresh Collections\n"..SHIFT_KEY_TEXT.." Right Click to Sort Groups/Popout Lists\n"..ALT_KEY_TEXT.." Right Click to Plot Waypoints|r";
 TOP_ROW_INSTRUCTIONS_AH = "|cff3399ffLeft Click and Drag to Move\nRight Click to Open the Settings Menu\n"..SHIFT_KEY_TEXT.." Click to Search the Auction House|r";
 OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffLeft Click to Expand/Collapse\nRight Click to Pop Out to Mini List\n"..SHIFT_KEY_TEXT.." Click to Search the Auction House|r";
-RECENTLY_MADE_OBTAINABLE = "|CFFFF0000If this recently dropped for you (anywhere but Salvage\nCrates), please post in Discord where you got it to drop!|r";
-RECENTLY_MADE_OBTAINABLE_PT2 = "|CFFFF0000The more information, the better. Thanks!|r";
-REQUIRES_PVP = "|CFF00FFDERequires PvP Activities or Currencies|r";
-REQUIRES_PETBATTLES = "|CFF00FFDERequires Pet Battling|r";
 REQUIRES_SKYRIDING = "|CFF00FFDE"..(SPELL_FAILED_CUSTOM_ERROR_1029 or "Requires Skyriding").."|r";
 REPORT_TIP = "\n("..CTRL_KEY_TEXT.."+C to copy multiline report to your clipboard)";
 
 
-CRITERIA_FORMAT = "|cffffff00[Criteria: %s]|r";
 
 
 
@@ -78,7 +73,6 @@ MUSIC_ROLLS_DESC = "These are unlocked per-character and are not currently share
 
 RESET_INSTANCES_DESC = "Click here to reset your instances.\n\n"..ALT_KEY_TEXT.." click to toggle automatically resetting your instances when you leave a dungeon.\n\nWARNING: BE CAREFUL WITH THIS!";
 UPDATE_WORLD_QUESTS_DESC = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!\n\n"..ALT_KEY_TEXT.." click to include currently-available Things which may not be time-limited";
-DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207This group and its content do not contribute to the progress of this window since it is Sourced in another Location!|r";
 
 
 TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.." click to Lock this Window";
@@ -256,7 +250,6 @@ TITLE_ACCOUNT = "|c" .. app.DefaultColors.Account .. "Account|R ";
 TITLE_ALLIANCE = "|c" .. app.DefaultColors.Alliance .. FACTION_ALLIANCE .. "|R";
 TITLE_HORDE = "|c" .. app.DefaultColors.Horde .. FACTION_HORDE .. "|R";
 TITLE_INSANE = "|c" .. app.DefaultColors.Insane .. "Insane|R ";
-_BETA_LABEL = " |cff4AA7FF[Beta]|R";	-- unused
 
 PRESET_INSANE = "|c" .. app.DefaultColors.Insane .. "Insane Mode|R enables all |c" .. app.DefaultColors.Insane .. "colored options|R and gives you a real challenge!";
 PRESET_ACCOUNT = "|c" .. app.DefaultColors.Account .. "Account Mode|R enables all account-wide tracking, and will show progress from all of your characters.";
@@ -331,7 +324,6 @@ SPELL_NAME_TO_SPELL_ID = {
 
 SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by "..SHIFT_KEY_TEXT.." clicking on an ATT window.";
 
-ABOUT_TOP = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|r";
 
 DEBUG_MODE = "|c" .. app.DefaultColors.Red.."Debug Mode|r (Show Everything)";
 ACCOUNT_MODE = "|c" .. app.DefaultColors.Account.."Account Mode";
@@ -361,7 +353,6 @@ CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if it is 
 SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "Enable this option if you want the 'Sort' operation ("..SHIFT_KEY_TEXT.." Right Click) to sort by the total progress of each group (instead of by Name)";
 
 
-FILLERS_EXPLANATION = "|cffFFFFFFFillers are mechanisms by which extra Data is 'filled' into/beneath other ATT content within various UI elements to show further use or purpose of a given Thing. For example, showing the resulting Purchases of an Item would be provided by a 'Filler'.\nThis tab allows you to modify your preferences of which Fillers will be active throughout ATT.|r";
 
 
 

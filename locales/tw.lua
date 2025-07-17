@@ -24,10 +24,6 @@ L.TOP_ROW_INSTRUCTIONS = "|cff3399ff按住左鍵並拖拽移動\n右鍵打開設
 L.OTHER_ROW_INSTRUCTIONS = "|cff3399ff左鍵展開/折疊\n右鍵彈出小列表\n"..SHIFT_KEY_TEXT.."左鍵刷新收藏\n"..CTRL_KEY_TEXT.."左鍵展開/折疊列表\n"..SHIFT_KEY_TEXT.."點擊右鍵排序組/彈出列表\n"..ALT_KEY_TEXT.."右鍵設定路線點|r";
 L.TOP_ROW_INSTRUCTIONS_AH = "|cff3399ff左鍵按住並拖拽移動\n右鍵打開設定\n"..SHIFT_KEY_TEXT.."左鍵搜尋拍賣行|r";
 L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ff左鍵展開/折疊\n右鍵彈出小列表\n"..SHIFT_KEY_TEXT.."左鍵搜尋拍賣行|r";
-L.RECENTLY_MADE_OBTAINABLE = "|CFFFF0000如果你掉落了此項（除回收箱外的\n任何地方），請去 Discord 告訴我們從哪掉的！|r";
-L.RECENTLY_MADE_OBTAINABLE_PT2 = "|CFFFF0000提供越多資訊越好，謝謝！|r";
-L.REQUIRES_PVP = "|CFF00FFDE需要 PvP 活動或貨幣|r";
-L.REQUIRES_PETBATTLES = "|CFF00FFDE需要寵物對戰|r";
 L.REPORT_TIP = "\n（"..CTRL_KEY_TEXT.."+C 將多行報告複製到剪貼簿）";
 
 L.ICON_LEGEND_STATUS_TEXT = "|c" .. app.DefaultColors.White .. "|T" .. app.asset("status-unobtainable") .. ":0|t 無法獲得\n|T" .. app.asset("status-prerequisites") .. ":0|t 僅在滿足先決條件的情況下獲得\n|T" .. app.asset("status-seasonal-available") .. ":0|t 季節性內容\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t 季節性內容\n|T374225:0|t 當前角色不可用\n|T" .. app.asset("status-unsorted") .. ":0|t Unsorted in ATT";
@@ -65,14 +61,12 @@ L.EXPANSION_DATA[13].lore = "最後的泰坦是第十二個資料片。也是世
 L.UNSORTED_DESC = "此資料尚未在 ATT 中獲得 " .. app.Version .. "。";
 L.RESET_INSTANCES_DESC = "點擊此處重置所有副本。\n\n"..ALT_KEY_TEXT.."點擊可在離開地城時自動重置副本。\n\n警告：小心使用！";
 L.UPDATE_WORLD_QUESTS_DESC = "有時世界任務 API 很慢或無法返回新資料。如果希望在不更改區域的情況下強制刷新資料，請立即點擊此按鈕！\n\n"..ALT_KEY_TEXT.."點擊以包括當前可用的事物，可能不受時間限制";
-L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207該組及其內容不參與此視窗的進度，因為它來自另一個位置！|r";
 L.FORCE_REFRESH_REQUIRED = "這可能需要強制刷新（"..SHIFT_KEY_TEXT.."點擊）正確已收集。";
 L.TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.."點擊鎖定視窗";
 L.TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.."點擊解鎖視窗";
 L.TITLE_DEBUG = "|c" .. app.DefaultColors.Red .. "偵錯|R ";
 L.TITLE_ACCOUNT = "|c" .. app.DefaultColors.Account.."帳號|R ";
 L.TITLE_INSANE = "|c" .. app.DefaultColors.Insane.."瘋狂|R ";
-L._BETA_LABEL = " |cff4AA7FF[測試]|R";
 L.SAVED = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已保存|r";
 L.COST_TEXT = "|T" .. app.asset("Currency") .. ":0|t |cff0891ff貨幣|r";
 
@@ -103,7 +97,6 @@ end
 
 SKIP_AUTO_REFRESH_TOOLTIP = "預設情況下(未勾選)，任何可能影響可見資料的設定變化都會導致自動刷新。\n\n通過啟用該選項設定的變化將不會生效，直到玩家 "..SHIFT_KEY_TEXT.."點擊 ATT 視窗執行全部刷新。";
 
-ABOUT_TOP = " |CFFFFFFFF是一個收藏追蹤插件，可以向您展示在遊戲中獲得所有內容的位置和方式！我們的 Discord 上有大量用戶社群（底部連結），您可以在其中提問、提交建議以及回報錯誤或丟失的物品。如果發現一些收藏品或未記錄的任務，可以在 Discord 上告訴我們，或者對於更精通技術的人，我們有一個您可以直接貢獻的 Git。\n\n雖然我們努力爭取完成，但每次更新都會加入很多東西，所以如果我們遺漏了什麼，請理解我們是一個小團隊，試圖跟上變化並自己收藏東西。:D\n\n在我直播時隨時問我問題，我會盡力回答，即使它與 ATT（一般魔獸插件程式也是如此）沒有直接關係。\n\n- |r|Cffff8000Crieve|r";
 
 DEBUG_MODE = "|c" .. app.DefaultColors.Red.."偵錯模式|r（顯示所有）";
 ACCOUNT_MODE = "|c" .. app.DefaultColors.Account.."帳號模式";

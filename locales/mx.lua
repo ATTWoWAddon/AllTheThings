@@ -25,15 +25,10 @@ L.TOP_ROW_INSTRUCTIONS = "|cff3399ffclick izquierdo y arrastra para mover\nclick
 L.OTHER_ROW_INSTRUCTIONS = "|cff3399ffclick izquierdo para Expandir/Contraer\nclick derecho para abrir una mini lista\n"..SHIFT_KEY_TEXT.." + click para actualizar las Colecciones\n"..CTRL_KEY_TEXT.." + click para Expandir/Contraer recursivamente\n"..SHIFT_KEY_TEXT.." + click derecho para ordenar grupos o listas emergentes\n"..ALT_KEY_TEXT.." + click derecho para marcar puntos de referencia|r";
 L.TOP_ROW_INSTRUCTIONS_AH = "|cff3399ffclick izquierdo y arrastra para mover\nclick derecho para abrir el menú de ajustes\n"..SHIFT_KEY_TEXT.." + click para buscar en la Casa de Subastas|r";
 L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffclick izquierdo para Expandir/Contraer\nclick derecho para abrir una mini lista\n"..SHIFT_KEY_TEXT.." + click para buscar en la Casa de Subastas|r";
-L.RECENTLY_MADE_OBTAINABLE = "|CFFFF0000Si conseguiste esto (cualquier sitio excepto de Cajones\nde rescate), por favor avisa en nuestro Discord dónde lo conseguiste!|r";
-L.RECENTLY_MADE_OBTAINABLE_PT2 = "|CFFFF0000Cuanta más información, mejor. Gracias!|r";
-L.REQUIRES_PVP = "|CFF00FFDEEsta cosa requiere actividades Jugador contra Jugador o una divisa relacionada con esas actividades.|r";
-L.REQUIRES_PETBATTLES = "|CFF00FFDEEsta cosa requiere duelos de mascota.|r";
 L.REQUIRES_SKYRIDING = "|CFF00FFDE"..(SPELL_FAILED_CUSTOM_ERROR_1029 or "Requiere Cielonautica").."|r";
 L.REPORT_TIP = "\n("..CTRL_KEY_TEXT.."+C para copiar un informe de varias líneas al portapapeles)";
 
 
-L.CRITERIA_FORMAT = "|cffffff00[Criterio: %s]|r";
 
 
 
@@ -80,7 +75,6 @@ L.EXPANSION_DATA[13].lore = "The Last Titan es la duodécima expansión de World
 L.UNSORTED_DESC = "Esta cosa aún no ha sido listada dentro de ATT " .. app.Version .. ".";
 L.RESET_INSTANCES_DESC = "Haz click aquí para reiniciar tus instancias.\n\n"..ALT_KEY_TEXT.." +`click para activar el reinicio automático de tus instancias cuando salgas de un calabozo.\n\nAVISO: TEN CUIDADO CON ESTO!";
 L.UPDATE_WORLD_QUESTS_DESC = "A veces la API de misiones de mundo es lenta o no devuelve nuevos datos. Si deseas forzar la actualización de los datos sin cambiar de zona, haz click en este botón ahora!\n\n"..ALT_KEY_TEXT.." + click para incluir cosas disponibles actualmente que puede que no estén limitadas en el tiempo";
-L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207Este grupo y su contenido no contribuyen al progreso de esta ventana porque sus fuentes están en otra zona!|r";
 L.FORCE_REFRESH_REQUIRED = "Esto puede requerir una actualización forzada ("..SHIFT_KEY_TEXT.." + click) para detectarlo correctamente.";
 
 
@@ -91,7 +85,6 @@ L.TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.." + click para desbloquear est
 L.TITLE_DEBUG = "|c" .. app.DefaultColors.Red .. "Depuración|R ";
 L.TITLE_ACCOUNT = "|c" .. app.DefaultColors.Account .. "Cuenta|R ";
 L.TITLE_INSANE = "|c" .. app.DefaultColors.Insane.."Enfermo|R ";
-L._BETA_LABEL = " |cff4AA7FF[Beta]|R";
 
 
 
@@ -151,7 +144,6 @@ end
 
 SKIP_AUTO_REFRESH_TOOLTIP = "Por defecto (desactivado), cualquier cambio de Ajustes que pueda afectar los datos visibles causará una actualización automática.\n\nActivando esta opción, los cambios de Ajustes no tendrán efecto hasta que el Usuario ejecute una actualización completa con "..SHIFT_KEY_TEXT.." + click en una ventana de ATT.";
 
-ABOUT_TOP = " |CFFFFFFFF es un addon de rastreo de colecciones que te muestra dónde y cómo conseguirlo tódo en el juego! Tenemos una gran comunidad de usuarios en nuestro Discord (enlace el final) donde puedes preguntar, enviar sugerencias y también reportar errores o objetos que falten. Si encuentras algún coleccionable que no está documentado, puedes decirnos en el Discord, o para los que tengan más conocimiento técnico, tenemos un Git donde puedes contribuir directamente.\n\nSi bien nos esforzamos mucho por el completado, hay muchas cosas que se añaden al juego en cada parche, así que si nos dejamos algo, por favor entiende que somos un equipo pequeño intentando seguir el ritmo de cambios e intentando coleccionar cosas nosotros también. :D\n\nPuedes preguntarme dudas cuando esté haciendo directos e intentaré responderte lo mejor que pueda, incluso si no está relacionado directamente con ATT (programación de addons del WoW también).\n\n- |r|Cffff8000Crieve|r";
 
 DEBUG_MODE = "|c" .. app.DefaultColors.Red.."Modo Depuración|r (Muestra todo)";
 ACCOUNT_MODE = "|c" .. app.DefaultColors.Account.."Modo Cuenta";

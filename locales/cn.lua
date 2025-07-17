@@ -25,10 +25,6 @@ L.TOP_ROW_INSTRUCTIONS = "|cff3399ff按住并拖拽左键移动\n右键打开设
 L.OTHER_ROW_INSTRUCTIONS = "|cff3399ff左键展开/折叠\n右键弹出小列表\n"..SHIFT_KEY_TEXT.."左键刷新收藏\n"..CTRL_KEY_TEXT.."左键展开/折叠列表\n"..SHIFT_KEY_TEXT.."右键单击排序组/弹出列表\n"..ALT_KEY_TEXT.."右键设置路径点|r";
 L.TOP_ROW_INSTRUCTIONS_AH = "|cff3399ff按住并拖拽左键移动\n右键打开设置\n"..SHIFT_KEY_TEXT.."左键搜索拍卖行|r";
 L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ff左键展开/折叠\n右键弹出小列表\n"..SHIFT_KEY_TEXT.."左键搜索拍卖行|r";
-L.RECENTLY_MADE_OBTAINABLE = "|CFFFF0000如果你掉落了此项（除回收箱外的\n任何地方），请去 Discord 告诉我们从哪掉的！|r";
-L.RECENTLY_MADE_OBTAINABLE_PT2 = "|CFFFF0000提供越多信息越好，谢谢！|r";
-L.REQUIRES_PVP = "|CFF00FFDE需要 PvP 活动或货币|r";
-L.REQUIRES_PETBATTLES = "|CFF00FFDE需要宠物对战|r";
 L.REQUIRES_SKYRIDING = "|CFF00FFDE"..(SPELL_FAILED_CUSTOM_ERROR_1029 or "需要驭空术").."|r";
 L.REPORT_TIP = "\n（"..CTRL_KEY_TEXT.."+C 将多行报告复制到剪贴板）";
 
@@ -67,7 +63,6 @@ L.EXPANSION_DATA[13].lore = "最后的泰坦是第十二个资料片。也是世
 L.UNSORTED_DESC = "此数据尚未在 ATT 中获取 " .. app.Version .. "。";
 L.RESET_INSTANCES_DESC = "点击此处重置副本。\n\n"..ALT_KEY_TEXT.."点击可在离开地下城时自动重置副本。\n\n警告：小心使用！";
 L.UPDATE_WORLD_QUESTS_DESC = "有时世界任务 API 很慢或无法返回新数据。如果希望在不更改区域的情况下强制刷新数据，请立即点击此按钮！\n\n"..ALT_KEY_TEXT.."点击以包括当前可用的事物，可能不受时间限制";
-L.DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207该组及其内容不参与此窗口的进度，因为它算在另一个位置！|r";
 L.FORCE_REFRESH_REQUIRED = "这可能需要强制刷新（"..SHIFT_KEY_TEXT.."点击）正确已收集。";
 
 L.TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.."点击锁定窗口";
@@ -76,7 +71,6 @@ L.TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.."点击解锁窗口";
 L.TITLE_DEBUG = "|c" .. app.DefaultColors.Red .. "调试|R ";
 L.TITLE_ACCOUNT = "|c" .. app.DefaultColors.Account.."帐号|R ";
 L.TITLE_INSANE = "|c" .. app.DefaultColors.Insane.."疯狂|R ";
-L._BETA_LABEL = " |cff4AA7FF[测试]|R";
 
 L.PRESET_INSANE = "|c" .. app.DefaultColors.Insane .. "疯狂模式|R 启用所有 |c" .. app.DefaultColors.Insane .. "彩色选项|R，并给你一个真正的挑战！";
 L.PRESET_ACCOUNT = "|c" .. app.DefaultColors.Account .. "账号模式|R 启用所有账号范围的追踪，并显示所有角色的进度。";
@@ -112,7 +106,6 @@ do a[key] = value; end
 end
 
 SKIP_AUTO_REFRESH_TOOLTIP = "默认情况下(未勾选)，任何可能影响可见数据的设置变化都会导致自动刷新。\n\n通过启用该选项设置的变化将不会生效，直到玩家 "..SHIFT_KEY_TEXT.."点击 ATT 窗口执行全部刷新。";
-ABOUT_TOP = " |CFFFFFFFF是一个收藏跟踪插件，可以向您展示在游戏中获取所有内容的位置和方式！我们的 Discord 上有大量用户社区（底部链接），您可以在其中提问、提交建议以及报告错误或丢失的物品。如果发现一些收藏品或未记录的任务，可以在 Discord 上告诉我们，或者对于更精通技术的人，我们有一个您可以直接贡献的 Git。\n\n虽然我们努力争取完成，但每个补丁都会添加很多东西，所以如果我们遗漏了什么，请理解我们是一个小团队，试图跟上变化并自己收藏东西。:D\n\n在我直播时随时问我问题，我会尽力回答，即使它与 ATT（一般魔兽插件编程也是如此）没有直接关系。\n\n- |r|Cffff8000Crieve|r";
 DEBUG_MODE = "|c" .. app.DefaultColors.Red.."调试模式|r（显示所有）";
 ACCOUNT_MODE = "|c" .. app.DefaultColors.Account.."帐号模式";
 MODE_EXPLAIN_LABEL = "|cffFFFFFF您收藏的内容汇总在这里。启用所有 ".."|c" .. app.DefaultColors.Insane.."彩色选项|cffFFFFFF 解锁 ".."|c" .. app.DefaultColors.Insane.."疯狂模式|cffFFFFFF。";
