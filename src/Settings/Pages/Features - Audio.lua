@@ -1,5 +1,5 @@
 local _, app = ...;
-local L, settings = app.L.SETTINGS_MENU, app.Settings;
+local L, settings = app.L, app.Settings;
 
 -- Settings: Features Page
 local child = settings:CreateOptionsPage("Audio", L.FEATURES_PAGE)

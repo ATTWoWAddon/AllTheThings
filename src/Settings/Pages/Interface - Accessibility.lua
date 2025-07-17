@@ -1,5 +1,5 @@
 local _, app = ...;
-local L, settings = app.L.SETTINGS_MENU, app.Settings;
+local L, settings = app.L, app.Settings;
 local Colorize = app.Modules.Color.Colorize
 local HexToARGB = app.Modules.Color.HexToARGB
 local RGBToHex = app.Modules.Color.RGBToHex

@@ -204,7 +204,7 @@ end
 
 local function dynamic_title(t)
 	if t.__filled then return end
-	return app.L.CLICK_TO_CREATE_FORMAT:format((t.name or UNKNOWN).." "..app.L.SETTINGS_MENU.DYNAMIC_CATEGORY_LABEL)
+	return app.L.CLICK_TO_CREATE_FORMAT:format((t.name or UNKNOWN).." "..app.L.DYNAMIC_CATEGORY_LABEL)
 end
 local function dynamic_back()
 	return 0.3

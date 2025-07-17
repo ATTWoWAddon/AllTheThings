@@ -2764,7 +2764,7 @@ function app:GetDataCache()
 	app.HandleEvent("OnAddExtraMainCategories", g)
 
 	-- Create Dynamic Groups Button
-	tinsert(g, app.CreateRawText(L.CLICK_TO_CREATE_FORMAT:format(L.SETTINGS_MENU.DYNAMIC_CATEGORY_LABEL), {
+	tinsert(g, app.CreateRawText(L.CLICK_TO_CREATE_FORMAT:format(L.DYNAMIC_CATEGORY_LABEL), {
 		icon = app.asset("Interface_CreateDynamic"),
 		OnUpdate = app.AlwaysShowUpdate,
 		sourceIgnored = true,
@@ -4053,7 +4053,7 @@ customWindowUpdates.NWP = function(self, force)
 			local searchResults = app:BuildSearchResponse("awp", app.GameBuildVersion)
 
 			-- Create the dynamic category
-			local dynamicCategory = app.CreateRawText(L.CLICK_TO_CREATE_FORMAT:format(L.SETTINGS_MENU.DYNAMIC_CATEGORY_LABEL), {
+			local dynamicCategory = app.CreateRawText(L.CLICK_TO_CREATE_FORMAT:format(L.DYNAMIC_CATEGORY_LABEL), {
 				icon = app.asset("Interface_CreateDynamic"),
 				OnUpdate = OnUpdate_RemoveEmptyDynamic,
 				g = {}
@@ -4244,7 +4244,7 @@ customWindowUpdates.awp = function(self, force)	-- TODO: Change this to remember
 				NestObjects(patchHeader, searchResults)
 
 				-- Create the dynamic category
-				local dynamicCategory = app.CreateRawText(L.CLICK_TO_CREATE_FORMAT:format(L.SETTINGS_MENU.DYNAMIC_CATEGORY_LABEL), {
+				local dynamicCategory = app.CreateRawText(L.CLICK_TO_CREATE_FORMAT:format(L.DYNAMIC_CATEGORY_LABEL), {
 					icon = app.asset("Interface_CreateDynamic"),
 					OnUpdate = OnUpdate_RemoveEmptyDynamic,
 					g = {}

@@ -1,5 +1,5 @@
 local appName, app = ...;
-local L = app.L.SETTINGS_MENU;
+local L = app.L;
 local settings = app.Settings;
 
 -- Settings Class

@@ -29,8 +29,6 @@ for key,value in pairs({
 do a[key] = value; end
 end
 
-local a = L.SETTINGS_MENU;
-for key,value in pairs({
 		APPEARANCES_CHECKBOX = "형상";
 		BATTLE_PETS_CHECKBOX = "전투 애완동물";
 		RECIPES_CHECKBOX = "제조법";
@@ -41,8 +39,6 @@ for key,value in pairs({
 		FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t 추종자 및 동료";
 		RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 룬조각 능력";
 		SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 도관";
-})
-do a[key] = value; end
 
 if app.IsRetail then
 local a = L.CUSTOM_COLLECTS_REASONS;

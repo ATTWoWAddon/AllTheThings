@@ -314,7 +314,7 @@ for scope,priority in pairs(ScopeFillPriority) do
 	end
 end
 app.AddEventHandler("OnStartup", function()
-	FillSettings.Tooltips.NPC = app.L.SETTINGS_MENU.FILL_NPC_DATA_CHECKBOX_TOOLTIP
+	FillSettings.Tooltips.NPC = app.L.FILL_NPC_DATA_CHECKBOX_TOOLTIP
 	FillSettings.Tooltips.SYMLINK = "Fills content which has alternate & notable availability under additional Sources.\nThis concept is generally utilized to help show content which may be Sourced under a general 'Rewards' (or similar) group in the Main list but can more-clearly be shown under specific Sources (multiple Vendors,etc.) when within the Mini list or Tooltips.\n\nNOTE: Tooltips where a Symlink is available will show this text:\n"..app.Modules.Color.Colorize(app.L.SYM_ROW_INFORMATION, app.Colors.SymLink)
 	FillSettings.Col = ArrayAppend({NAME}, Scopes)
 	local names = {"[]"}

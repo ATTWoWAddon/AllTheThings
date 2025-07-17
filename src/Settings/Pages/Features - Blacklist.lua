@@ -1,5 +1,5 @@
 local _, app = ...;
-local L, settings = app.L.SETTINGS_MENU, app.Settings;
+local L, settings = app.L, app.Settings;
 
 -- Only display this tab on April Fool's Day.
 local today = C_DateAndTime.GetCurrentCalendarTime();

@@ -1,6 +1,6 @@
 local _, app = ...;
 if not app.IsClassic then return; end	-- This is only available in Classic!
-local L, settings = app.L.SETTINGS_MENU, app.Settings;
+local L, settings = app.L, app.Settings;
 
 -- Settings: General Page
 local child = settings:CreateOptionsPage("Phases", appName)

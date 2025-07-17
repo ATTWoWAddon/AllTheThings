@@ -1,5 +1,5 @@
 local _, app = ...;
-local L, settings = app.L.SETTINGS_MENU, app.Settings;
+local L, settings = app.L, app.Settings;
 
 -- Global locals
 local pairs, ipairs, tonumber, math_floor, select, type, tostring, tinsert, tremove, RETRIEVING_DATA
