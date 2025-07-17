@@ -5,6 +5,6 @@ createLocalizationString({
 	color = "ffdedade",
 	export = true,
 	text = {
-		en = [[~GetItemClassInfo(5)]],
+		en = [[~_.WOWAPI.GetItemClassInfo(5)]],
 	},
 })

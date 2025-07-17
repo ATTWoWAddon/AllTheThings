@@ -3,7 +3,7 @@ createLocalizationString({
 	constant = "SHOW_SKYRIDING_CHECKBOX",
 	export = true,
 	text = {
-		-- #if AFTER DRAGONFLIGHT
+		-- #if AFTER DF
 		en = [[~DYNAMIC_FLIGHT]],
 		-- #else
 		en = "Skyriding",

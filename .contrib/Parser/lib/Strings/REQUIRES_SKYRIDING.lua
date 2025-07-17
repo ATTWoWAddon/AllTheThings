@@ -4,7 +4,7 @@ createLocalizationString({
 	color = "FF00FFDE",
 	export = true,
 	text = {
-		-- #if AFTER DRAGONFLIGHT
+		-- #if AFTER DF
 		en = [[~SPELL_FAILED_CUSTOM_ERROR_1029]],
 		-- #else
 		en = "Requires Skyriding",
