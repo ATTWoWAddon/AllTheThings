@@ -223,37 +223,40 @@ internal class Program
                 }
 
                 // Clean up the locale data
+                localeData = localeData.Replace("app.", "_.");
                 if (localeData.EndsWith(';')) localeData = localeData[..^1];
-                localeData = localeData.Replace("..", " .. ").Replace(". .", "..").Replace("  ..  ", " .. ").Replace("app.", "_.");
-                if (localeData.StartsWith('{')) localeData = $"[[~{localeData}]]";
-                else if (localeData.StartsWith('"') && localeData.EndsWith('"'))
-                {
-                    localeData = localeData[1..^1];
-                    if (localeData.EndsWith(" .. ")) localeData = localeData[..^4] + ".";
-                }
-                else if (localeData.Contains(" .. ")) localeData = $"[[~{localeData}]]";
-                while (localeData.Contains("\\\"")) localeData = localeData.Replace("\\\"", "\"");
 
                 // Check to see if the locale data is encased in a color string or constant.
                 string trimmedLocaleData = localeData.Trim();
-                if (trimmedLocaleData.StartsWith("|c") && trimmedLocaleData.EndsWith("|r"))
+                if (trimmedLocaleData.StartsWith("\"|c") && trimmedLocaleData.EndsWith("|r\""))
                 {
                     // We got ourselves a color folks! Let's parse that out.
-                    if (trimmedLocaleData.StartsWith("|c\""))
-                    { 
+                    if (trimmedLocaleData.StartsWith("\"|c\""))
+                    {
                         // Looks like we have a constant following this value.
-                        // Example: |c" .. _.DefaultColors.Account .. "Account Mode"
+                        // Example: "|c" .. _.DefaultColors.Account .. "Account Mode|r"
                     }
                     else
                     {
                         // Oh goody, a simple color string.
-                        // Example: |cFF00FFDE I am a different color |r
-                        string colorString = trimmedLocaleData[..10];
+                        // Example: "|cFF00FFDE I am a different color |r"
+                        string colorString = trimmedLocaleData.Substring(1, 10);
                         localeData = localeData.Remove(localeData.IndexOf(colorString), colorString.Length);
                         localeData = localeData.Remove(localeData.LastIndexOf("|r"), 2);
                         LocalizationStringColors[variableName] = colorString[2..];
                     }
                 }
+                localeData = string.Join(" .. ", localeData
+                    .Replace("..", " .. ").Replace(". .", "..")
+                    .Replace("  ..  ", " .. ").Replace("\" .. \"", "")
+                    .Split(" .. ", StringSplitOptions.RemoveEmptyEntries));
+                if (localeData.StartsWith('{') || localeData.Contains(" .. ") || !localeData.Contains('"')) localeData = $"[[~{localeData}]]";
+                else if (localeData.StartsWith('"') && localeData.EndsWith('"'))
+                {
+                    localeData = localeData[1..^1];
+                    if (localeData.EndsWith(" .. ")) localeData = localeData[..^4] + ".";
+                }
+                while (localeData.Contains("\\\"")) localeData = localeData.Replace("\\\"", "\"");
 
                 if (DEBUG_LOCALES && locale == "en")
                 {
