@@ -136,6 +136,10 @@ internal class Program
                         {
                             line = lines[lineIndex];
                             whiteListedLines.Add(line);
+                            trimmedLine = line.Trim();
+                            if (trimmedLine.Length == 0) continue;          // Ignore empty strings
+                            if (trimmedLine.StartsWith('-')) continue;      // Ignore comments
+                            trimmedLine = line.Split("-- ")[0].Split("--TODO")[0].Trim();
                             if (trimmedLine.Contains('}')) break;
                         }
                     }
@@ -151,6 +155,10 @@ internal class Program
                         {
                             line = lines[lineIndex];
                             whiteListedLines.Add(line);
+                            trimmedLine = line.Trim();
+                            if (trimmedLine.Length == 0) continue;          // Ignore empty strings
+                            if (trimmedLine.StartsWith('-')) continue;      // Ignore comments
+                            trimmedLine = line.Split("-- ")[0].Split("--TODO")[0].Trim();
                             if (trimmedLine.Contains('}'))
                             {
 

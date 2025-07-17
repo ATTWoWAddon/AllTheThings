@@ -26,7 +26,6 @@ local L = setmetatable({
 	TRACKING_PROGRESS = "Tracking Progress";
 	COLLECTION_PROGRESS = "Collection Progress";
 
-	-- Settings
 	DATA_TYPE_NOT_SUPPORTED = "This data type is not supported at this time.";
 	OPEN_MINILIST_FOR = "Open mini list for ";
 	REFRESHING_COLLECTION = "Refreshing collection...";
@@ -59,7 +58,6 @@ local L = setmetatable({
 	QUEST_ITEMS = "Quest Items";
 	RUNEFORGE_POWER_ID = "Runeforge Power ID";
 
-	-- Instructional Text
 	MINIMAP_MOUSEOVER_TEXT = "Right Click to change settings.\nLeft Click to open the Main List.\n"..CTRL_KEY_TEXT.." Click to open the Mini List.\n"..SHIFT_KEY_TEXT.." Click to Refresh Collections.";
 	TOP_ROW_INSTRUCTIONS = "|cff3399ffLeft Click and Drag to Move\nRight Click to Open the Settings Menu\n"..CTRL_KEY_TEXT.." Click to Expand/Collapse Recursively\n"..SHIFT_KEY_TEXT.." Click to Refresh Collections\n"..SHIFT_KEY_TEXT.." Right Click to Sort Groups/Popout Lists|r";
 	OTHER_ROW_INSTRUCTIONS = "|cff3399ffLeft Click to Expand/Collapse\nRight Click to Pop Out to Mini List\n"..CTRL_KEY_TEXT.." Click to Expand/Collapse Recursively\n"..SHIFT_KEY_TEXT.." Click to Refresh Collections\n"..SHIFT_KEY_TEXT.." Right Click to Sort Groups/Popout Lists\n"..ALT_KEY_TEXT.." Right Click to Plot Waypoints|r";
@@ -79,7 +77,6 @@ local L = setmetatable({
 	REPORT_INACCURATE_QUEST = "Wrong Quest Info! (Click to Report)";
 	ITEM_GIVES_REP = "Provides Reputation with '";
 
-	-- Event Text
 	ITEM_ID_ADDED = "%s (%d) was added to your collection.";
 	ITEM_ID_ADDED_RANK = "%s (%d) [Rank %d] was added to your collection.";
 	ITEM_ID_ADDED_MISSING = "%s (%d) was added to your collection. Not found in the database. Please report to the ATT Discord!";
@@ -88,7 +85,6 @@ local L = setmetatable({
 	ITEM_ID_REMOVED = "%s (%d) was removed from your collection.";
 	ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] was removed from your collection.";
 
-	-- Tooltip Text
 	DROP_RATE = "Drop Rate";
 	QUEST_GIVER = "Quest Giver";
 	COORDINATES = "Coordinates";
@@ -134,7 +130,6 @@ local L = setmetatable({
 	LOCK_CRITERIA_FACTION_FORMAT = "%s with %s (Current: %s)";
 	TITLES_DESC = "Titles are tracked across your account, however, your individual character must qualify for certain titles to be usable on that character.";
 
-	-- Filter Text
 	ARTIFACT_ID = "Artifact ID";
 	AZERITE_ESSENCE_ID = "Azerite Essence ID";
 	ART_ID = "Art ID";
@@ -214,7 +209,6 @@ local L = setmetatable({
 	WORLDMAP_BUTTON_CHECKBOX = "Show the World Map Button";
 	WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "Enable this option if you want to see the ATT button on your world map. This button allows you to quickly access the Mini List for the currently displayed zone. Regularly, you'd need to physically travel to the zone in order to see the content on the mini list that you can access by typing '/att mini' in your chatbox.";
 
-	-- Icons and Collection Text
 	COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
 	COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
 	COMPLETE_ICON = "|T" .. app.asset("known_green") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
@@ -227,7 +221,6 @@ local L = setmetatable({
 	INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |c" .. app.Colors.Completed .. "Incomplete|r";		-- Acquired the colors and icon from CanIMogIt.
 	INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
 
-	-- temporary move
 	COLLECTED_STRING = " Collected";
 	CONTAINS = "Contains:";
 	FACTIONS = "Factions";
@@ -398,14 +391,12 @@ local L = setmetatable({
 	ADDED_WITH_PATCH_TOOLTIP = "This shows you all of the content that has been added with each patch of the expansion.";
 	TRADING_POST = "Trading Post";
 
-	-- Item Filter Window
 	ITEM_FILTER_TEXT = "Item Filters";
 	ITEM_FILTER_DESCRIPTION = "You can search the ATT Database by using a item filter.";
 	ITEM_FILTER_BUTTON_TEXT = "Set Item Filter";
 	ITEM_FILTER_BUTTON_DESCRIPTION = "Click this to change the item filter you want to search for within ATT.";
 	ITEM_FILTER_POPUP_TEXT = "Which Item Filter would you like to search for?";
 
-	-- Instructional Text
 	TOP_ROW_TO_LOCK = "|cff3399ff"..ALT_KEY_TEXT.." click to Lock this Window";
 	TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.." click to Unlock this Window";
 	QUEST_ROW_INSTRUCTIONS = "Right Click to see any Quest Chain Requirements";
@@ -413,7 +404,6 @@ local L = setmetatable({
 	GARRISON_BUILDINGS_REQUIRE_GARRISON = "Due to a Blizzard API issue/restriction, this can only be properly cached as collected while within your Garrison";
 
 
-	-- These are solely used to condense the length of Source strings within Tooltips
 	ABBREVIATIONS = {
 		["ALL THE THINGS"] = "ATT",
 		["Expansion Pre"] = "Pre",
@@ -517,7 +507,6 @@ local L = setmetatable({
 		["Toy Box"] = TOY,
 	};
 
-	-- These are populated by the LocalizationDB.
 	EVENT_REMAPPING = {};
 	EVENT_TIMERUNNING_SEASONS = {};
 	HEADER_DESCRIPTIONS = {};
@@ -527,7 +516,6 @@ local L = setmetatable({
 	HEADER_NAMES = {};
 	QUEST_NAMES = {};
 
-	-- If there is a name provided in the table above, it will prefer that name association.
 	MAP_ID_TO_ZONE_TEXT = {};
 
 	-- Binding Localizations
@@ -635,11 +623,8 @@ local L = setmetatable({
 		},
 	};
 
-	-- Settings.lua
 	AFTER_REFRESH = "After Refresh";
 
-	-- General tab
-	-- Mode Title
 	MODE = "Mode";
 	TITLE_COMPLETIONIST = "Completionist ";
 	TITLE_UNIQUE_APPEARANCE = "Unique ";
@@ -677,7 +662,6 @@ local L = setmetatable({
 	LOADING_FORMAT = "%s "..LFG_LIST_LOADING;	-- %s Loading...	-- unused
 	READY_FORMAT = "%s "..READY;	-- %s Ready	-- unused
 
-	-- Features tab
 	AUTO_BOUNTY_CHECKBOX = "Automatically Open the Bounty List";
 	AUTO_BOUNTY_CHECKBOX_TOOLTIP = "Enable this option if you want to see the items that have an outstanding collection bounty. If you manage to snag one of the items posted on this list, you could make a good sum of gold.\n\nShortcut Command: /attbounty";
 	AUTO_MAIN_LIST_CHECKBOX = "Automatically Open the Main List";
@@ -693,7 +677,6 @@ local L = setmetatable({
 	AUCTION_TAB_CHECKBOX = "Show the Auction House Module Tab";
 	AUCTION_TAB_CHECKBOX_TOOLTIP = "Enable this option if you want to see the Auction House Module provided with ATT.\n\nSome addons are naughty and modify this frame extensively. ATT doesn't always play nice with those toys.";
 
-	-- Sync Window
 	ACCOUNT_MANAGEMENT = "Account Management";
 	ACCOUNT_MANAGEMENT_TOOLTIP = "This list shows you all of the functionality related to syncing account data.";
 	ADD_LINKED_CHARACTER_ACCOUNT = "Add Linked Character / Account";
@@ -711,21 +694,17 @@ local L = setmetatable({
 	DELETE_CHARACTER = "Right Click to Delete this Character";
 	CONFIRM_DELETE = "\n \nAre you sure you want to delete this?";
 
-	-- Tooltip Text
 	SECRETS_HEADER = "Secrets";	-- unused
 	SOURCE_ID_MISSING = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
 
-	-- Artifact Relic Completion
 	ARTIFACT_RELIC_CACHE = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";
 	ARTIFACT_RELIC_COMPLETION = "Artifact Relic Completion";
 	NOT_TRADEABLE = "Not Tradeable";
 	TRADEABLE = "Tradeable";
 
-	-- Keybind usage
 	ENABLED = "enabled";
 	DISABLED = "disabled";
 
-	-- Icons and Collection Text
 	SAVED = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Saved|r";	-- Acquired the colors and icon from CanIMogIt.
 	COST_ICON = "|T" .. app.asset("Currency") .. ":0|t";
 	COST_TEXT = "|T" .. app.asset("Currency") .. ":0|t |cffdedade"..CURRENCY.."|r";
@@ -738,7 +717,6 @@ local L = setmetatable({
 	CATALYST_ICON = "|T" .. app.asset("Interface_Catalyst") .. ":0|t";
 	CATALYST_TEXT = "|T" .. app.asset("Interface_Catalyst") .. ":0|t |cffffd900Catalyst|r";
 
-	-- Unobtainable Listing (for fellow 100%s out there)
 	UNOBTAINABLE_ITEM_TEXTURES = {
 		[0] = 374225,	-- 0 Available, but not due to Current Character filters
 		app.asset("status-unobtainable"),	-- 1
@@ -749,7 +727,6 @@ local L = setmetatable({
 		app.asset("status-unsorted"), -- 6 Unsorted
 	};
 
-	-- Crieve tested all professions in non-english locales and the following skills were not detected without these.
 	SPELL_NAME_TO_SPELL_ID = {
 		-- Riding
 		["Riding"] = 33388,
@@ -793,7 +770,6 @@ local L = setmetatable({
 });
 app.L = L;
 
--- All of the locales related to the settings menu.
 L.SETTINGS_MENU = {
 	-- Common Header
 		SKIP_AUTO_REFRESH = "Skip Settings-Toggle Data Refreshes!";
@@ -1174,7 +1150,6 @@ L.SETTINGS_MENU = {
 		SHOW_PROFILE_LOADED = "Show which profile loads during login or when switching between profiles";
 };
 
--- All of the locales related to the Player Tooltips module.
 L.TOOLTIP_MODULE = {
 	RANKS = {
 		AUTHOR = " |T"..app.asset("logo_32x32")..":0|t" .. " Author";
@@ -1195,7 +1170,6 @@ L.TOOLTIP_MODULE = {
 	},
 };
 
--- Icon Selectors based on Collection State
 app.GetCollectionIcon = function(state)
 	return L[(state and (state == 2 and "COLLECTED_APPEARANCE_ICON" or "COLLECTED_ICON")) or "NOT_COLLECTED_ICON"];
 end

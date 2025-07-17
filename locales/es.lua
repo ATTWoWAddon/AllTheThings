@@ -26,7 +26,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.TRACKING_PROGRESS = "Seguimiento del progreso";
 	L.COLLECTION_PROGRESS = "Progreso de la colección";
 
-	-- Settings
 	L.DATA_TYPE_NOT_SUPPORTED = "Este tipo de datos no se admite en este momento.";
 	L.OPEN_MINILIST_FOR = "Abrir Mini lista para";
 	L.REFRESHING_COLLECTION = "Refrescando colección...";
@@ -59,7 +58,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.QUEST_ITEMS = "Objetos de misión";
 	L.RUNEFORGE_POWER_ID = "Poder de forja de runas ID";
 
--- Instructional Text
 	L.MINIMAP_MOUSEOVER_TEXT = "Clic derecho para cambiar ajustes.\nClic izquierdo para abrir la Lista Principal.\n"..CTRL_KEY_TEXT.." + clic para abrir la Mini Lista.\n"..SHIFT_KEY_TEXT.." + clic para Refrescar las Colecciones.";
 	L.TOP_ROW_INSTRUCTIONS = "|cff3399ffClic izquierdo y arrastra para mover\nClic derecho para abrir el menú de ajustes\n"..SHIFT_KEY_TEXT.." + clic para Refrescar las Colecciones\n"..CTRL_KEY_TEXT.." + clic para Expandir/Contraer recursivamente\n"..SHIFT_KEY_TEXT.." + clic derecho para ordenar grupos o listas emergentes|r";
 	L.OTHER_ROW_INSTRUCTIONS = "|cff3399ffClic izquierdo para Expandir/Contraer\nClic derecho para abrir una mini lista\n"..SHIFT_KEY_TEXT.." + clic para Refrescar las Colecciones\n"..CTRL_KEY_TEXT.." + clic para Expandir/Contraer recursivamente\n"..SHIFT_KEY_TEXT.." + clic derecho para ordenar grupos o listas emergentes\n"..ALT_KEY_TEXT.." + clic derecho para marcar puntos de referencia|r";
@@ -79,7 +77,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.REPORT_INACCURATE_QUEST = "Información de misión errónea! (Clic para Reportar)";
 	L.ITEM_GIVES_REP = "Provee reputación con '";
 
--- Event Text
 	L.ITEM_ID_ADDED = "%s (%d) fue añadido a tu colección.";
 	L.ITEM_ID_ADDED_RANK = "%s (%d) [Rango %d] fue añadido a tu colección.";
 	L.ITEM_ID_ADDED_MISSING = "%s (%d) fue añadido a tu colección. No encontrado en la base de datos. Por favor reportarlo al Discord de ATT!";
@@ -88,7 +85,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.ITEM_ID_REMOVED = "%s (%d) fue eliminado de tu colección.";
 	L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] fueron eliminados de tu colección.";
 
--- Tooltip Text
 	L.DROP_RATE = "Probabilidad de botín";
 	L.QUEST_GIVER = "Asignador de misión";
 	L.COORDINATES = "Coordenadas";
@@ -134,7 +130,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.LOCK_CRITERIA_FACTION_FORMAT = "%s con %s (Actual: %s)";
 	L.TITLES_DESC = "Los títulos se rastrean en toda tu cuenta, sin embargo, tu personaje individual debe calificar para ciertos títulos para poder usarse en ese personaje.";
 
--- Filter Text
 	L.ARTIFACT_ID = "Artefacto ID";
 	L.AZERITE_ESSENCE_ID = "Esencia de Azerita ID";
 	L.ART_ID = "Arte ID";
@@ -214,7 +209,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.WORLDMAP_BUTTON_CHECKBOX = "Muestra el botón del mapa de mundo";
 	L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "Activa esta opción si quiere ver el botón de ATT en tu mapa del mundo. Este botón te permite acceder rápidamente a la Mini Lista de la zona mostrada actualmente. Aunque deberás viajar físicamente a la zona para poder ver el contenido en la Mini Lista a la que puedes acceder cuando escribes '/att mini' en tu chat.";
 
--- Icons and Collection Text
 	L.COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
 	L.COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
 	L.COMPLETE_ICON = "|T" .. app.asset("known_green") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
@@ -227,7 +221,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |cff15abffIncompleto|r";	-- Acquired the colors and icon from CanIMogIt.
 	L.INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
 
--- Big new chunk from AllTheThings.lua
 	L.TRACKING_PROGRESS = "Rastreando progreso";
 	L.COLLECTED_STRING = " Recolectado";
 	L.PROVIDERS = "Proveedor(es)";
@@ -408,7 +401,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.FUTURE_UNOBTAINABLE_TOOLTIP = "Esto es contenido que se ha confirmado o es muy probable que no se pueda conseguir en un futuro parche conocido.";
 	L.TRADING_POST = "Puesto Comercial";
 
-	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "Filtros de objetos";
 		L.ITEM_FILTER_DESCRIPTION = "Puedes buscar en la base de datos de ATT usando un filtro de objetos.";
 		L.ITEM_FILTER_BUTTON_TEXT = "Establecer un filtro de objeto";
@@ -420,11 +412,8 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.QUEST_ROW_INSTRUCTIONS = "Clic derecho para ver los requisitos de cualquier cadena de misiones";
 	L.QUEST_ONCE_PER_ACCOUNT = "Misión única por cuenta";
 
--- Settings.lua
 	L.AFTER_REFRESH = "Después de refrescar";
 
-	-- General tab
-		-- Mode Title
 			L.MODE = "Modo";
 			L.TITLE_COMPLETIONIST = "Completista ";
 			L.TITLE_UNIQUE_APPEARANCE = "Único ";
@@ -434,29 +423,15 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 			L.TITLE_NONE_THINGS = "Ninguna de las cosas ";
 			L.TITLE_ONLY = " Sólo ";
 			L.TITLE_INSANE = app.ccColors.Insane.."Demente|R ";
-			--TODO: L.TITLE_RANKED = "Ranked ";
-			--TODO: L.TITLE_CORE = "Core ";
 			L.TITLE_SOME_THINGS = "Algunas de las cosas ";
 			L.TITLE_LEVEL = "Nivel ";
 			L.TITLE_SOLO = "Solo ";
 			L._BETA_LABEL = " |cff4AA7FF[Beta]|R";
 
-			--TODO: L.PRESET_TOOLTIP = "Enable this preset. This will adjust only the relevant tracking options of the current profile.";
-			--TODO: L.PRESET_NONE = "None of the Things Mode disables the tracking of all collectibles. Way to challenge yourself.";
-			--TODO: L.PRESET_CORE = "Core Mode enables the collectibles visible in the game's Warband Collections journal.";
-			--TODO: L.PRESET_RANKED = "Ranked Mode enables the collectibles tracked by websites such as Data For Azeroth and WoWthing.";
-			--TODO: L.PRESET_INSANE = app.ccColors.Insane .. "Insane Mode|R enables all " .. app.ccColors.Insane .. "colored options|R and gives you a real challenge!";
-			--TODO: L.PRESET_ACCOUNT = app.ccColors.Account .. "Account Mode|R enables all account-wide tracking, and will show progress from all of your characters.";
-			--TODO: L.PRESET_SOLO = "Solo Mode disables all account-wide tracking, and will only show progress for your current character.";
-			--TODO: L.PRESET_UNIQUE = "Unique Mode disables Sources, marking gear as collected when you have learned their unique appearance.";
-			--TODO: L.PRESET_COMP = "Completionist Mode enables Sources, only marking gear as collected when you have learned the appearance from that specific item.";
-			--TODO: L.PRESET_RESTORE = "Restore";
-			--TODO: L.PRESET_RESTORE_TOOLTIP = "Restore your tracking options to before applying any presets.";
 
 		L.EXTRA_THINGS_LABEL = "Recursos adicionales";
 		L.CLICK_TO_CREATE_FORMAT = "Haz clic para crear%s";
 
-	-- Features tab
 		L.AUTO_BOUNTY_CHECKBOX = "Abre automáticamente la Lista de Recompensas";
 		L.AUTO_BOUNTY_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver los objetos que tienen una recompensa extraordinaria de colección. Si consigues uno de los objetos de esta lista, puedes conseguir una buena cantidad de oro.\n\nComando corto: /attbounty";
 		L.AUTO_MAIN_LIST_CHECKBOX = "Abre automáticamente la Lista Principal";
@@ -471,7 +446,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.AUCTION_TAB_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver el módulo de la Casa de Subastas que viene con ATT.\n\nAlgunos addons son traviesos y modifican esta ventana extensamente. ATT no funciona muy bien con algunos de estos juguetitos.";
 		L.ICON_LEGEND_STATUS_LABEL = "Leyenda de iconos";
 
-	-- Sync Window
 		L.ACCOUNT_MANAGEMENT = "Administración de Cuenta";
 		L.ACCOUNT_MANAGEMENT_TOOLTIP = "Esta lista te muestra todas las funcionalidades relacionadas con la sincronización de datos de cuentas.";
 		L.ADD_LINKED_CHARACTER_ACCOUNT = "Añadir personaje / cuenta conectado/a ";
@@ -488,7 +462,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.DELETE_CHARACTER = "Botón derecho para eliminar este personaje";
 		L.CONFIRM_DELETE = "\n \nEstás seguro de que quieres eliminar esto?";
 
-	-- Binding Localizations
 		L.TOGGLE_ACCOUNT_MODE = "Activar Modo Cuenta";
 		L.TOGGLE_COMPLETIONIST_MODE = "Activar Modo Completista";
 		L.TOGGLE_DEBUG_MODE = "Activar Modo Depuración";
@@ -510,17 +483,14 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.SECRETS_HEADER = "Secretos";
 		L.SOURCE_ID_MISSING = "Por favor, reporta este objeto y dónde fue obtenido al discord de ATT en #retail-errors!";
 
-	-- Artifact Relic Completion
 		L.ARTIFACT_RELIC_CACHE = "Abre la interfaz de Armas de Artefacto para cargar si esto es una mejora o no. Es útil para determinar si puedes comerciar este objeto a un Twink o no.";
 		L.ARTIFACT_RELIC_COMPLETION = "Completado de reliquias de Artefacto";
 		L.NOT_TRADEABLE = "No comerciable";
 		L.TRADEABLE = "Comerciable";
 
-	-- Keybind usage
 		L.ENABLED = "activado";
 		L.DISABLED = "desactivado";
 
-	-- Icons and Collection Text
 		L.SAVED = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Conocido|r";	-- Acquired the colors and icon from CanIMogIt.
 		L.COST_TEXT = "|T" .. app.asset("Currency") .. ":0|t |cff0891ffDivisa|r";
 
@@ -535,13 +505,9 @@ for key,value in pairs({
 		["The BC"] = "BC",
 		["Wrath of the Lich King"] = "WotLK",
 		["Cataclismo "] = "Cata ",
-		--TODO: ["Mists of Pandaria"] = "MoP",
-		--TODO: ["Warlords of Draenor"] = "WoD",
-		--TODO: ["Battle for Azeroth"] = "BFA",
 		["Las Tierras Sombrías"] = "SL",
 		["Shadowlands"] = "SL",
 		["Jugador contra Jugador"] = "JcJ",
-		--TODO: ["Raid Finder"] = "LFR",
 		["Buscador de bandas"] = "LFR",
 		["Normal"] = "N",
 		["Heroica"] = "H",
@@ -552,9 +518,7 @@ for key,value in pairs({
 		["10 jugadores (Heroico)"] = "10M (H)",
 		["25 jugadores"] = "25M",
 		["25 jugadores (Heroico)"] = "25M (H)",
-		--TODO: ["Emissary Quests"] = "Emissary",
 		[TRACKER_HEADER_WORLD_QUESTS] = "WQ",	-- ["World Quests"] = "WQ"
-		--TODO: ["WoW Anniversary"] = "Anniversary",
 		["Curia:"] = "Curia:",
 })
 do a[key] = value; end
@@ -562,8 +526,6 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Tier/Dungeon/Event/Holiday Sets
-		-- Artifact Strings
 			[-5202] = "Equilibrio de poderes",						-- Balance of Power
 })
 do a[key] = value; end
@@ -571,11 +533,9 @@ end
 
 local a = L.SETTINGS_MENU;
 for key,value in pairs({
-	-- Common Header
 		SKIP_AUTO_REFRESH = "Saltar Ajustes-Conmutador de los refrescos de datos!";
 		SKIP_AUTO_REFRESH_TOOLTIP = "Por defecto (desactivado), cualquier cambio de Ajustes que pueda afectar los datos visibles causará un refresco automático.\n\nActivando esta opción, los cambios de Ajustes no tendrán efecto hasta que el Usuario ejecute un Refresco Completo con "..SHIFT_KEY_TEXT.." + clic en una ventana de ATT.";
 
-	-- About Page
 		ABOUT_TOP = " |CFFFFFFFF es un addon de rastreo de colecciones que te muestra dónde y cómo conseguirlo tódo en el juego! Tenemos una gran comunidad de usuarios en nuestro Discord (enlace el final) donde puedes preguntar, enviar sugerencias y también reportar errores o objetos que falten. Si encuentras algún coleccionable que no está documentado, puedes decirnoslo en el Discord, o para los que tengan más conocimiento técnico, tenemos un Git donde puedes contribuir directamente.\n\nSi bien nos esforzamos mucho por el completado, hay muchas cosas que se añaden al juego en cada parche, así que si nos dejamos algo, por favor entiende que somos un equipo pequeño intentando seguir el ritmo de cambios e intentando coleccionar cosas nosotros también. :D\n\nPuedes preguntarme dudas cuando esté haciendo directos e intentaré responderte lo mejor que pueda, incluso si no está relacionado directamente con ATT (programación de addons del WoW también).\n\n- |r|Cffff8000Crieve|r";
 		ABOUT_BOTTOM = "Colaboradores activos: |CFFFFFFFF(Órden alfabético)\n%s\n\n|rSalón de la Fama: |CFFFFFFFF(Órden alfabético)\n%s\n\nMención especial para AmiYuy (CanIMogIt) y Caerdon (Caerdon Wardrobe). Tienes que descargarte sus addons para tener los iconos de colección de objetos en tus bolsas! %s %s %s\n\nPara comparar en línea la colección deberías visitar DataForAzeroth.com de Shoogen y WoWthing.org de Freddie!|r";
 		CLIPBOARDCOPYPASTE = "Ctrl+A, Ctrl+C para Copiar a tu Portapapeles.";
@@ -587,7 +547,6 @@ for key,value in pairs({
 		TWITCH_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace a mi canal de Twitch.\n\nPuedes preguntarme dudas cuando esté haciendo directos e intentaré responderte lo mejor que pueda!";
 		WAGO_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace del addon ALL THE THINGS en Wago.io.\n\nPuedes dar este enlace a tus amigos para que arruinen sus vidas también! Te van a perdonar en un futuro...o no.";
 
-	-- General Page
 		DEBUG_MODE = app.ccColors.Red.."Modo Depuración|r (Muestra todo)";
 		DEBUG_MODE_TOOLTIP = "Literalmente... TODAS LAS COSAS EN EL JUEGO. PUNTO. SI, TODO DE TODO. Incluso las cosas no coleccionables como bolsas, consumibles, ingredientes, etc aparecerán en las listas. (Incluído tú! No, en serio. Mira.)\n\nEsto es sólo para propósitos de Depuración. No está pensado para ser usado para el rastreo de completado.\n\nEste modo se salta todos los filtros, incluyendo no obtenibles.";
 		ACCOUNT_MODE = app.ccColors.Account.."Modo Cuenta";
@@ -605,7 +564,6 @@ for key,value in pairs({
 		ONLY_RWP_TOOLTIP = "Activa esta opción para rastrear sólamente las transfiguraciones que serán eliminadas del juego en un futuro. Sólo los objetos etiquetados con 'Eliminado en el Parche' ('removed with patch' o 'RWP') cuentan. Si encuentras un objeto sin etiquetar que debería estarlo, dímelo por favor!\n\nPuedes cambiar el tipo de botín que se muestra en la pestaña de Filtros.";
 		UNOFFICIAL_SUPPORT_TOOLTIP = "NOTA: Actualmente, no hay soporte oficial por parte de la API del WoW, pero ATT puede rastrear objetos o el completado de misiones para hacerlo funcional en el addon.";
 
-	-- General Content
 		GENERAL_CONTENT = "Contenido General";
 		SHOW_INCOMPLETE_THINGS_CHECKBOX = "Muestra todas las cosas rastreables";
 		SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver los objetos, PNJs y cabeceras que se pueden rastrear en el juego sin que se consideren 'coleccionables' necesariamente.\n\nPuedes usarlo para ayudarte a conseguir el logro Maestro cultural si aún no lo tienes.\n\nNOTA: Los enemigos Raros y las aventuras también apareceran en el listado con este ajuste activado.";
@@ -628,7 +586,6 @@ for key,value in pairs({
 		SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX = "Todas las recompensas de misión que se pueden aprender";
 		SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX_TOOLTIP = "Desactiva esta opción para esconder objetos marcados como \"No disponible en Botín Personal\" en misiones.\n\nEsto es útil para rastrear objetos que tu clase no puede usar de Botín de mundo, pero marcando las misiones como completadas.\n\nAlgunos objetos pueden marcarse incorrectamente: este ajuste ESCONDERÁ objetos que puedes obtener!";
 
-		-- Collectible Things
 		ACC_WIDE_DEFAULT = "Rastreado ".. app.ccColors.Account .. "Para toda la cuenta|R por defecto.";
 		TRACK_ACC_WIDE = app.ccColors.Account .. "Rastrear para toda la cuenta|R";
 		ACCOUNT_THINGS_LABEL = "Cosas para toda la cuenta";
@@ -668,7 +625,6 @@ for key,value in pairs({
 		TOYS_CHECKBOX = "Juguetes";
 		TOYS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrar juguetes.\n\nLa mayoría de juguetes hacen algo divertido. Otros, como los juguetes de Piedra de Hogar, pueden usarse en vez de tu Piedra de Hogar y ahorrarte un hueco en tus bolsas! También tienen efectos interesantes... Mola!";
 
-		-- Expansion Things
 		EXPANSION_THINGS_LABEL = "Cosas de expansión";
 		AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Esencias del Corazón de Azeroth";
 		AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear Esencias de azerita.\n\nRastreados por personaje por defecto.";
@@ -684,7 +640,6 @@ for key,value in pairs({
 		CHARACTERUNLOCKS_CHECKBOX = "Desbloqueos de personaje";
 		CHARACTERUNLOCKS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrar los Desbloqueos de personaje. Son varios debloqueos de personaje que no son claramente categorizables en otro sitio (e.g. variantes de Maleficio, variantes de Polimorfia, especies domables desbloqueadas de cazador, personalizaciones de Pocopoc, etc.)\n\nRastreado por personaje por defecto.";
 
-		-- Account-Wide Checkboxes
 		ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "El rastreo de Logros normalmente es a nivel de toda la Cuenta, pero hay un numero de logros exclusivos de clases y razas que no puedes conseguir con tu personaje principal.";
 		ACCOUNT_WIDE_APPEARANCES_TOOLTIP = "Las transfiguraciones deben ser coleccionadas en toda la cuenta. Algunos objetos no pueden ser aprendidos por todas las clases, así que ATT hará lo posible para sólo mostrarte cosas que puedas coleccionar con tu personaje actual.";
 		ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = "Las Esencia de azerita técnicamente no pueden ser coleccionadas y usadas a nivel de Cuenta, pero si sólo te importa coleccionarlas en tu personaje principal entonces puede que prefieras rastrearlas a nivel de toda la cuenta.";
@@ -700,24 +655,19 @@ for key,value in pairs({
 		ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = "Activa esto para considerar los conductos de nexo de almas como coleccionados en todos los personajes si almenos uno de ellos los ha aprendido.";
 		ACCOUNT_WIDE_TITLES_TOOLTIP = "La mayoría de títulos son rastreados a nivel de toda la cuenta, pero algunos títulos prestigiosos en el WoW estan bloqueados al personaje que los ganó.\n\nActiva esto si no te importa eso y quieres ver esos títulos marcados como Completados en tus personajes secundarios.";
 
-	-- General: Filters Page
 		ITEM_EXPLAIN_LABEL = "|cffFFFFFFEste contenido se muestra siempre si estás en "..app.ccColors.Account.."Modo Cuenta|cffFFFFFF.|r";
 		CLASS_DEFAULTS_BUTTON = "Predeterminados de Clase";
 		CLASS_DEFAULTS_BUTTON_TOOLTIP = "Haz clic en este botón para restaurar todos los filtros a tus predeterminados de clase.\n\nNOTA: Sólo pueden activarse los filtros que son conseguibles por tu clase.";
 		ALL_BUTTON_TOOLTIP = "Haz clic en este botón para activar todas las opciones a la vez.";
 		UNCHECK_ALL_BUTTON_TOOLTIP = "Haz clic en este botón para desactivar todas las opciones a la vez.";
 
-	-- General: Phases Page
-	-- Classic Only, fully dynamic from within parser.
 
-	-- General: Unobtainables Page
 		UNOBTAINABLES_PAGE = "No conseguibles";
 		UNOBTAINABLE_LABEL = "Contenido no conseguible";
 		CUSTOM_FILTERS_LABEL = "Contenido automatizado";
 		CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFEste contenido siempre está visible si está disponible para tu personaje actual o si estás en "..app.ccColors.Account.."Modo Cuenta|cffFFFFFF.|r";
 		CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Activa este ajuste para mostrar forzosamente %s contenido incluso si no está disponible para tu personaje actual.";
 
-	-- Interface Page
 		TOOLTIP_LABEL = "Descripciones emergentes";
 		TOOLTIP_HELP_CHECKBOX = "Muestra la ayuda de las descripciones emergentes";
 		TOOLTIP_HELP_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver la información de ayuda en las ventanas emergentes de la ventana de ATT que indica varias combinaciones de tecla/clics de funcionalidades de la ventana de ATT.\nSi ya conoces todas las combinaciones tecla/clics, puede interesarte ahorrar espacio en la ventana emergente y desactivar esta opción.";
@@ -812,7 +762,6 @@ for key,value in pairs({
 		DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000Aplicado cuando se genera|r";
 		MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "Largo máximo de línea superior";
 
-	-- Interface: Accessibility Page
 		ACCESSIBILITY_PAGE = ACCESSIBILITY_LABEL;
 		ACCESSIBILITY_EXPLAIN = COLORBLIND_MODE_SUBTEXT;
 		COLORS_ICONS = "Colores e Iconos";
@@ -828,11 +777,8 @@ for key,value in pairs({
 		CLASS_BORDER = "Usa el color de tu clase para los bordes";
 		CLASS_BORDER_TOOLTIP = "Usa el color de tu clase para los bordes. Se actualiza cuando entras al juego con otra clase.";
 
-	-- Interface: Information Page
 
-	-- Features Page
 
-	-- Features: Audio Page
 		CELEBRATIONS_LABEL = "Celebraciones y Efectos de Sonido Sound Effects";
 		AUDIO_CHANNEL = "Canal de audio";
 		CELEBRATE_COLLECTED_CHECKBOX = "Coleccionar cosas dispara una Celebración";
@@ -845,7 +791,6 @@ for key,value in pairs({
 		SCREENSHOT_COLLECTED_CHECKBOX = "Coleccionar cosas dispara una Captura de pantalla";
 		SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "Activa esta opción si quieres hacer una captura de pantalla cada vez que coleccionas alguna cosa.";
 
-	-- Features: Reporting Page
 		REPORTING_LABEL = "Notificaciones";
 		REPORT_COLLECTED_THINGS_CHECKBOX = "Notificar cosas coleccionadas";
 		REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "Activa esta opción si quieres to see a message in chat detailing which items you have collected or removed from your collection.\n\nNOTA: This is present because Blizzard silently adds appearances and other collectible items and neglects to notify you of the additional items available to you.\n\nWe recommend you keep this setting on. You will still hear the fanfare with it off assuming you have that option turned on.";
@@ -872,18 +817,12 @@ for key,value in pairs({
 		REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX = "Reproduce un efecto de sonido";
 		REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX_TOOLTIP = "Activa esta opción si quieres que ATT también reproduzca un efecto de sonido cuando se detecta contenido cercano.";
 
-	-- Features: Sync Page
-	-- Retail Only, deprecated.
 		SYNC_PAGE = "Sincronización";
 		ACCOUNT_SYNCHRONIZATION = "Sincronización de cuenta";
 		AUTO_SYNC_ACC_DATA_CHECKBOX = "Sincroniza automáticamente los datos de cuenta";
 		AUTO_SYNC_ACC_DATA_TOOLTIP = "Activa esta opción si quieres que ATT intente actualizar los datos de cuenta entre cuentas cuando entras al juego o recargas la Interfaz.";
 
-	-- Features: Windows Page
-	-- Classic Only, nothing localizable atm.
-		--TODO: WINDOWS_PAGE = "Windows";
 
-	-- Profiles Page
 		PROFILES_PAGE = "Perfiles";
 		PROFILE = "Perfil";
 		PROFILE_INITIALIZE = "Inicializar Perfiles";

@@ -23,12 +23,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		"艾澤拉斯的勇士",
 	};
 	L.SOCIAL_PROGRESS = "社交進度";
-	--TODO: L.TRACKING_PROGRESS = "Tracking Progress";
-	--TODO: L.COLLECTION_PROGRESS = "Collection Progress";
 	
-	-- Settings
-	--TODO: L.DATA_TYPE_NOT_SUPPORTED = "This data type is not supported at this time.";
-	--TODO: L.OPEN_MINILIST_FOR = "Open mini list for ";
 	L.REFRESHING_COLLECTION = "刷新收藏…";
 	L.DONE_REFRESHING = "刷新收藏完成。";
 	L.ADDED_WITH_PATCH = "隨更新加入";
@@ -42,24 +37,9 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.OWNED_BY = "擁有者 %s";
 	L.ALIVE = "存活";
 	L.SPAWNED = "已生成";
-	--TODO: L.LAYER = "Layer";
-	--TODO: L.BINDING = "Binding";
-	--TODO: L.BONUS_ID = "Bonus ID";
-	--TODO: L.CONDUIT_ID = "Conduit ID";
-	--TODO: L.DISPLAY_ID = "Display ID";
-	--TODO: L.PET_BATTLES = "Pet Battles";
-	--TODO: L.EVENT_ID = "Event ID";
-	--TODO: L.ICON_PATH = "Icon Path";
-	--TODO: L.ITEM_LEVEL = "iLvl";
-	--TODO: L.ITEM_STRING = "Item String";
-	--TODO: L.MOD_ID = "Mod ID";
 	L.OBJECT_TYPE = "目標類型";
-	--TODO: L.OBJECTIVES = "Objectives";
 	L.QUEST_GIVERS = "任務給予者";
-	--TODO: L.QUEST_ITEMS = "Quest Items";
-	--TODO: L.RUNEFORGE_POWER_ID = "Runeforge Power ID";
 
--- Instructional Text
 	L.MINIMAP_MOUSEOVER_TEXT = "右鍵改變設定。\n左鍵打開主列表。\n"..CTRL_KEY_TEXT.."左鍵打開小列表。\n"..SHIFT_KEY_TEXT.."左鍵刷新收藏。";
 	L.TOP_ROW_INSTRUCTIONS = "|cff3399ff按住左鍵並拖拽移動\n右鍵打開設定\n"..SHIFT_KEY_TEXT.."左鍵刷新收藏\n"..CTRL_KEY_TEXT.."左鍵展開/折疊列表\n"..SHIFT_KEY_TEXT.."點擊右鍵排序組/彈出列表|r";
 	L.OTHER_ROW_INSTRUCTIONS = "|cff3399ff左鍵展開/折疊\n右鍵彈出小列表\n"..SHIFT_KEY_TEXT.."左鍵刷新收藏\n"..CTRL_KEY_TEXT.."左鍵展開/折疊列表\n"..SHIFT_KEY_TEXT.."點擊右鍵排序組/彈出列表\n"..ALT_KEY_TEXT.."右鍵設定路線點|r";
@@ -68,18 +48,15 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.RECENTLY_MADE_OBTAINABLE = "|CFFFF0000如果你掉落了此項（除回收箱外的\n任何地方），請去 Discord 告訴我們從哪掉的！|r";
 	L.RECENTLY_MADE_OBTAINABLE_PT2 = "|CFFFF0000提供越多資訊越好，謝謝！|r";
 	L.MAIN_LIST_REQUIRES_REFRESH = "[打開主列表更新進度 ]";
-	--TODO: L.UPDATES_PAUSED = "Updates Paused";
 	L.VISIT_FLIGHT_MASTER = "拜訪飛行管理員快取。";
 	L.REQUIRES_PVP = "|CFF00FFDE需要 PvP 活動或貨幣|r";
 	L.REQUIRES_PETBATTLES = "|CFF00FFDE需要寵物對戰|r";
-	--TODO: L.REQUIRES_SKYRIDING = "|CFF00FFDE"..(SPELL_FAILED_CUSTOM_ERROR_1029 or "Requires Skyriding").."|r";
 	L.PLEASE_REPORT_MESSAGE = "請把錯誤回報給 ATT Discord 的 #retail-errors！謝謝！";
 	L.REPORT_TIP = "\n（"..CTRL_KEY_TEXT.."+C 將多行報告複製到剪貼簿）";
 	L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "任務 '%s' %s 將阻止收藏無關緊要的任務 '%s' %s";
 	L.REPORT_INACCURATE_QUEST = "錯誤的任務資訊！（點擊回報）";
 	L.ITEM_GIVES_REP = "提供聲望 '";
 
--- Event Text
 	L.ITEM_ID_ADDED = "%s (%d) 已加入收藏。";
 	L.ITEM_ID_ADDED_RANK = "%s (%d) [等級%d] 已加入收藏。";
 	L.ITEM_ID_ADDED_MISSING = "%s (%d) 已加入收藏。在資料庫中未找到，請向作者提交回報！";
@@ -88,7 +65,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.ITEM_ID_REMOVED = "%s (%d) 已從收藏中移除。";
 	L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] 已從收藏中移除。";
 
--- Tooltip Text
 	L.DROP_RATE = "掉落率";
 	L.QUEST_GIVER = "任務給予者";
 	L.COORDINATES = "座標";
@@ -100,9 +76,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.EVENT_WHERE = "地點:";
 	L.REQUIRES_EVENT = "需要事件";
 	L.BREADCRUMBS = "無關緊要";
-	--TODO: L.MAPS = "Maps";
 	L.LOCKOUT = "鎖定";
-	--TODO: L.LOCKOUTS = "Lockouts";
 	L.RESETS = "重置";
 	L.SHARED = "共享";
 	L.SPLIT = "按難度";
@@ -114,7 +88,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.REMOVED_WITH_PATCH_FORMAT = "更新 %s 中被刪除";
 	L.WAS_ADDED_WITH_PATCH_FORMAT = "最新更新 %s 中加入";
 	L.WAS_ADDED_BACK_WITH_PATCH_FORMAT = "最新更新 %s 中加入回歸";
-	--TODO: L.CRITERIA_FORMAT = "|cffffff00[Criteria: %s]|r";
 
 	L.FACTION_SPECIFIC_REP = "並非所有聲望都可以在單個角色上查看。例：聯盟玩家無法看到戰歌騎手，部落玩家無法查看銀翼哨兵。";
 	L.MINUMUM_STANDING_WITH_FACTION = "最低陣營聲望等級 %s 和 %s。";
@@ -129,36 +102,27 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.LOCK_CRITERIA_QUEST_LABEL = "已完成任務";
 	L.LOCK_CRITERIA_SPELL_LABEL = "已學法術/坐騎/配方";
 	L.LOCK_CRITERIA_FACTION_LABEL = "陣營聲望";
-	--TODO: L.LOCK_CRITERIA_SOURCE_LABEL = "Known Appearance";
-	--TODO: L.LOCK_CRITERIA_TOY_LABEL = "Known Toy";
 	L.LOCK_CRITERIA_FACTION_FORMAT = "%s 和 %s（當前：%s）";
 	L.TITLES_DESC = "頭銜會在你的戰隊中被追蹤，但是，你的角色必須符合某些頭銜的條件才能在該角色上使用。";
 
--- Filter Text
 	L.ARTIFACT_ID = "神器 ID";
 	L.AZERITE_ESSENCE_ID = "艾澤拉斯精華 ID";
-	--TODO: L.ART_ID = "Art ID";
-	--TODO: L.CAMPSITE_ID = "Campsite ID";
 	L.CREATURE_ID = "生物 ID";
 	L.CURRENCY_ID = "貨幣 ID";
 	L.DESCRIPTIONS = "描述";
 	L.DIFFICULTY_ID = "難度 ID";
 	L.ENCOUNTER_ID = "首領戰鬥 ID";
 	L.EXPANSION_ID = "資料片 ID";
-	--TODO: L.EXPLORATION_ID = "Exploration ID";
 	L.FILTER_ID = "濾鏡 ID";
 	L.FOLLOWER_ID = "追隨者 ID";
-	--TODO: L.GUID = "Global ID";
 	L.HEADER_ID = "標頭 ID";
 	L.ILLUSION_ID = "幻象 ID";
 	L.INSTANCE_ID = "副本 ID";
-	--TODO: L.SAVED_INSTANCE_ID = "Saved Instance ID";
 	L.ITEM_ID = "物品 ID";
 	L.FACTION_ID = "陣營 ID";
 	L.FLIGHT_PATH_ID = "飛行路線 ID";
 	L.LORE = "傳言";
 	L.MAP_ID = "地圖 ID";
-	--TODO: L.MISSION_ID = "Mission ID";
 	L.MOUNT_ID = "坐騎 ID";
 	L.MUSIC_ROLL_ID = "樂譜 ID";
 	L.NPC_ID = "NPC ID";
@@ -168,15 +132,12 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.SET_ID = "套裝 ID";
 	L.SOURCE_ID = "來源 ID";
 	L.SPELL_ID = "法術 ID";
-	--TODO: L.SPELL_NAME = "Spell Name";
 	L.SPECIES_ID = "品種 ID";
 	L.TITLE_ID = "頭銜 ID";
 	L.TOY_ID = "玩具 ID";
 	L.VISUAL_ID = "外觀 ID";
 	L.AND_MORE = "和 %s 更多...";	--TODO: check
 	L.SYM_ROW_INFORMATION = "點擊右鍵以查看來自其他位置的其它內容";
-	--TODO: L.SYM_ROW_SKIP_DESC = "Linked content is only displayed in the tooltip for this object.";
-	--TODO: L.ACHIEVEMENT_PRE_WRATH_SOURCE_QUEST_INFO = "This achievement has associated quests that can be completed before the introduction of the Achievement system coming with the Wrath Prepatch. Not all achievements can be tracked this way, but for those that can, they will be displayed. All other non-trackable achievements will be activated with the prepatch.";
 	L.CLASSES = "職業";
 
 	L.ADDITIONAL_LABEL = "附加資訊";
@@ -193,12 +154,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 			"\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t " .. "季節性內容" ..
 			"\n|T374225:0|t " .. "當前角色不可用" ..
 			"\n|T" .. app.asset("status-unsorted") .. ":0|t " .. "Unsorted in ATT";
-	--TODO: L.ICON_LEGEND_MISC_LABEL = "Miscellaneous Icons Legend";
-	--TODO: L.ICON_LEGEND_MISC_TEXT = app.ccColors.White ..
-	--TODO:		"|T" .. app.asset("Currency") .. ":0|t " .. "Used as a currency" ..
-	--TODO:		"\n|T" .. app.asset("Interface_Reagent") .. ":0|t " .. "Used as a crafting reagent" ..
-	--TODO:		"\n|T" .. app.asset("Interface_Catalyst") .. ":0|t " .. "Convertible at the Catalyst for a new appearance" ..
-	--TODO:		"\n|T" .. app.asset("Interface_Upgrade") .. ":0|t " .. "Can be upgraded for a new appearance";
 	L.KEYBINDINGS = SETTINGS_KEYBINDINGS_LABEL;
 	L.KEYBINDINGS_TEXT = "可以在遊戲選項中設定 ATT 的按鍵綁定。";
 	L.MINIMAP_LABEL = "小地圖按鈕";
@@ -214,7 +169,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.WORLDMAP_BUTTON_CHECKBOX = "顯示世界地圖按鈕";
 	L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "如果要在世界地圖上看到 ATT 按鈕，請啟用此選項。使用此按鈕可以快速拜訪當前顯示區域的迷你列表。通常情況下，你需要親自前往該區域才能看到迷你列表上的內容，你可以通過在聊天框中鍵入'/att mini'來拜訪迷你列表。";
 
--- Icons and Collection Text
 	L.COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
 	L.COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
 	L.COMPLETE_ICON = "|T" .. app.asset("known_green") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
@@ -227,7 +181,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |cffff9333未完成|r";	-- Acquired the colors and icon from CanIMogIt.
 	L.INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
 
--- Big new chunk from AllTheThings.lua
 	L.TRACKING_PROGRESS = "追蹤進度";
 	L.COLLECTED_STRING = " 已收藏";
 	L.COLLECTION_PROGRESS = "收藏進度";
@@ -403,7 +356,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.NEW_WITH_PATCH_TOOLTIP = "這會顯示遊戲最新更新中加入的所有內容。";
 	L.TRADING_POST = "貿易站";
 
-	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "物品篩選";
 		L.ITEM_FILTER_DESCRIPTION = "你可以通過使用物品篩選來搜尋 ATT 資料庫。";
 		L.ITEM_FILTER_BUTTON_TEXT = "設定物品篩選";
@@ -415,11 +367,8 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.QUEST_ROW_INSTRUCTIONS = "右擊查看任何任務鏈要求";
 	L.QUEST_ONCE_PER_ACCOUNT = "帳號一次性任務";
 
--- Settings.lua
 	L.AFTER_REFRESH = "刷新後";
 
-	-- General tab
-		-- Mode Title
 			L.MODE = "模式";
 			L.TITLE_COMPLETIONIST = "完美主義者 ";
 			L.TITLE_UNIQUE_APPEARANCE = "獨特外觀 ";
@@ -429,29 +378,15 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 			L.TITLE_NONE_THINGS = "一無所有 ";
 			L.TITLE_ONLY = " 僅 ";
 			L.TITLE_INSANE = app.ccColors.Insane.."瘋狂|R ";
-			--TODO: L.TITLE_RANKED = "Ranked ";
-			--TODO: L.TITLE_CORE = "Core ";
 			L.TITLE_SOME_THINGS = "隨隨便便 ";
 			L.TITLE_LEVEL = "等級 ";
 			L.TITLE_SOLO = "單人 ";
 			L._BETA_LABEL = " |cff4AA7FF[測試]|R";
 
-			--TODO: L.PRESET_TOOLTIP = "Enable this preset. This will adjust only the relevant tracking options of the current profile.";
-			--TODO: L.PRESET_NONE = "None of the Things Mode disables the tracking of all collectibles. Way to challenge yourself.";
-			--TODO: L.PRESET_CORE = "Core Mode enables the collectibles visible in the game's Warband Collections journal.";
-			--TODO: L.PRESET_RANKED = "Ranked Mode enables the collectibles tracked by websites such as Data For Azeroth and WoWthing.";
-			--TODO: L.PRESET_INSANE = app.ccColors.Insane .. "Insane Mode|R enables all " .. app.ccColors.Insane .. "colored options|R and gives you a real challenge!";
-			--TODO: L.PRESET_ACCOUNT = app.ccColors.Account .. "Account Mode|R enables all account-wide tracking, and will show progress from all of your characters.";
-			--TODO: L.PRESET_SOLO = "Solo Mode disables all account-wide tracking, and will only show progress for your current character.";
-			--TODO: L.PRESET_UNIQUE = "Unique Mode disables Sources, marking gear as collected when you have learned their unique appearance.";
-			--TODO: L.PRESET_COMP = "Completionist Mode enables Sources, only marking gear as collected when you have learned the appearance from that specific item.";
-			--TODO: L.PRESET_RESTORE = "Restore";
-			--TODO: L.PRESET_RESTORE_TOOLTIP = "Restore your tracking options to before applying any presets.";
 
 		L.EXTRA_THINGS_LABEL = "其他資源";
 		L.CLICK_TO_CREATE_FORMAT = "點擊創建 %s";
 
-	-- Features tab
 		L.AUTO_BOUNTY_CHECKBOX = "自動打開獎勵列表";
 		L.AUTO_BOUNTY_CHECKBOX_TOOLTIP = "如果想查看具有傑出收藏獎勵的物品，請啟用此選項。如果設法抓住顯示在此列表中的物品之一，可以賺到一筆不錯的金幣。\n\n快捷命令：/attbounty";
 		L.AUTO_MAIN_LIST_CHECKBOX = "自動打開主列表";
@@ -465,7 +400,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.AUCTION_TAB_CHECKBOX = "顯示拍賣行模組標籤";
 		L.AUCTION_TAB_CHECKBOX_TOOLTIP = "如果你想查看 ATT 提供的拍賣行模組請啟用此選項。\n\n一些插件很調皮會大量修改這個框架。ATT 並不總是和那些玩具玩得很好。";
 
-	-- Sync Window
 		L.ACCOUNT_MANAGEMENT = "帳號管理";
 		L.ACCOUNT_MANAGEMENT_TOOLTIP = "此列表顯示了與同步帳號資料相關的所有功能。";
 		L.ADD_LINKED_CHARACTER_ACCOUNT = "加入關聯角色/帳號";
@@ -482,7 +416,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.DELETE_CHARACTER = "右擊刪除此角色";
 		L.CONFIRM_DELETE = "\n \n確定刪除此項？";
 
-	-- Binding Localizations
 		L.TOGGLE_ACCOUNT_MODE = "切換帳號模式";
 		L.TOGGLE_COMPLETIONIST_MODE = "切換完美主義者模式";
 		L.TOGGLE_DEBUG_MODE = "切換偵錯模式";
@@ -506,30 +439,22 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 
 		L.ITEM_LEVEL = "物品等級";
 
-	-- Artifact Relic Completion
 		L.ARTIFACT_RELIC_CACHE = "打開所有神器武器的用戶介面以快取這是否是升級。這對於確定您是否可以將此物品交易給小伙伴很有用。 ";
 		L.ARTIFACT_RELIC_COMPLETION = "神器聖物完成度";
 		L.NOT_TRADEABLE = "不可交易";
 		L.TRADEABLE = "可交易";
 
-	-- Icons and Collection Text
 		L.SAVED = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已保存|r";	-- Acquired the colors and icon from CanIMogIt.
 		L.COST_TEXT = "|T" .. app.asset("Currency") .. ":0|t |cff0891ff貨幣|r";
 
 local a = L.ABBREVIATIONS;
 for key,value in pairs({
-	-- Events
 	["資料片前夕"] = "前夕",
-	-- Legion
 	["安托洛斯，燃燒王座"] = "安托洛斯",		-- ["Antorus, the Burning Throne"] = "Antorus"
-	-- BfA
 	["奈奧羅薩，甦醒之城"] = "奈奧羅薩",		-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
-	-- SL
 	["『帷幕市集』塔札維許"] = "塔札維許",		-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
-	-- DF
 	["『朧影實驗場』亞貝魯斯"] = "亞貝魯斯",	-- ["Aberrus, the Shadowed Crucible"] = "Aberrus"
 	["『夢境希望』埃達希爾"] = "埃達希爾",		-- ["Amirdrassil, the Dream's Hope"] = "Amirdrassil"
-	-- TWW
 	["『回音之城』厄拉卡拉"] = "厄拉卡拉",		-- ["Ara-Kara, City of Echoes"] = "Ara-Kara"
 })
 do a[key] = value; end
@@ -537,8 +462,6 @@ do a[key] = value; end
 if app.IsRetail then
 	local a = L.HEADER_NAMES;
 	for key,value in pairs({
-	-- Tier/Dungeon/Event/Holiday Sets
-		-- Artifact Strings
 			[-5200] = "基礎外觀",										-- Base Appearance
 			[-5201] = "職業大廳戰役",									-- Class Hall Campaign
 			[-5202] = "能量的平衡",										-- Balance of Power
@@ -551,11 +474,9 @@ end
 
 local a = L.SETTINGS_MENU;
 for key,value in pairs({
-	-- Common Header
 		SKIP_AUTO_REFRESH = "不自動刷新！";
 		SKIP_AUTO_REFRESH_TOOLTIP = "預設情況下(未勾選)，任何可能影響可見資料的設定變化都會導致自動刷新。\n\n通過啟用該選項設定的變化將不會生效，直到玩家 "..SHIFT_KEY_TEXT.."點擊 ATT 視窗執行全部刷新。";
 
-	-- About Page
 		ABOUT_TOP = " |CFFFFFFFF是一個收藏追蹤插件，可以向您展示在遊戲中獲得所有內容的位置和方式！我們的 Discord 上有大量用戶社群（底部連結），您可以在其中提問、提交建議以及回報錯誤或丟失的物品。如果發現一些收藏品或未記錄的任務，可以在 Discord 上告訴我們，或者對於更精通技術的人，我們有一個您可以直接貢獻的 Git。\n\n雖然我們努力爭取完成，但每次更新都會加入很多東西，所以如果我們遺漏了什麼，請理解我們是一個小團隊，試圖跟上變化並自己收藏東西。:D\n\n在我直播時隨時問我問題，我會盡力回答，即使它與 ATT（一般魔獸插件程式也是如此）沒有直接關係。\n\n- |r|Cffff8000Crieve|r";
 		ABOUT_BOTTOM = "活躍貢獻者：|CFFFFFFFF（排名不分先後）\n%s！\n|r名人堂：|CFFFFFFFF（排名不分先後）\n%s\n\n特別鳴謝 AmiYuy（CanIMogIt）和 Caerdon（Caerdon Wardrobe）。絕對應該下載他們的插件，以獲得背包中物品的收藏圖標！ %s %s %s\n\n如需線上收藏比較，請拜訪 Shoogen 的 DataForAzeroth.com 和 Freddie 的 WoWthing.org！|r";	--TODO: now in alphabetical order
 		CLIPBOARDCOPYPASTE = "Ctrl+A, Ctrl+C 複製到剪貼簿。";
@@ -567,7 +488,6 @@ for key,value in pairs({
 		TWITCH_BUTTON_TOOLTIP = "點擊按鈕複製 URL 到我的 Twitch 頻道。\n\n可以在我直播的時候問問題，我會盡力回答！";
 		WAGO_BUTTON_TOOLTIP = "點擊按鈕複製 URL 到 Wago.io 的 ALL THE THINGS 插件頁面。\n\n您也可以將此連接發送給您的朋友，讓他們也毀掉自己的生活！他們最終會原諒你……也許吧。";
 
-	-- General Page
 		DEBUG_MODE = app.ccColors.Red.."偵錯模式|r（顯示所有）";
 		DEBUG_MODE_TOOLTIP = "就字面意思…遊戲中的所有事情。時間。點滴。是的，所有的一切。即使是不可收藏的事物，如袋子、消耗品、試劑等也會出現在列表中。（甚至你自己！不，是真的。看。）\n\n這僅用於偵錯目的。不用於完成追蹤。\n\n此模式將忽略所有篩選，包括無法獲得的。";
 		ACCOUNT_MODE = app.ccColors.Account.."帳號模式";
@@ -587,7 +507,6 @@ for key,value in pairs({
 		ONLY_NOT_TRASH_TOOLTIP = "啟用此選項可忽略白色/灰色物品。暴雪尚未在經典懷舊服中提供 API。";
 		UNOFFICIAL_SUPPORT_TOOLTIP = "注意：目前，WoW 的 API 不提供官方支援，但 ATT 可以追蹤物品或任務完成情況，以使其在插件中發揮作用。";
 
-	-- General Content
 		GENERAL_CONTENT = "通用內容";
 		SHOW_INCOMPLETE_THINGS_CHECKBOX = "顯示所有可追蹤事物";
 		SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP = "如果想看到可以在遊戲中追蹤的物品、道具、NPC 等但不一定要被認為是'可收藏的'，請啟用此選項。\n\n如果你還沒有獲得博學者成就可以用這個來幫助你獲得它。\n\n注意：開啟此設定後，稀有刷新和事件也會出現在列表中。";
@@ -610,14 +529,12 @@ for key,value in pairs({
 		SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX = "所有可學的任務獎勵";
 		SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX_TOOLTIP = "停用此選項可隱藏任務中列為“在個人拾取中不可用”的物品。\n\n這對於追蹤您的職業無法在世界掉落中使用的物品很有用，但仍會將任務標記為已完成。\n\n某些物品可能被錯誤標記：此設定將隱藏您可以獲得的物品！";
 
-		-- Collectible Things
 		ACC_WIDE_DEFAULT = "已追蹤 ".. app.ccColors.Account .. "帳號通用|R 預設。";
 		TRACK_ACC_WIDE = app.ccColors.Account .. "追蹤 帳號通用|R";
 		ACCOUNT_THINGS_LABEL = "帳號通用事物";
 		GENERAL_THINGS_LABEL = "通用事物";
 		STRANGER_THINGS_LABEL = "陌生事物";
 
-		--TODO: ACHIEVEMENTS_CHECKBOX = ACHIEVEMENTS;
 		ACHIEVEMENTS_CHECKBOX_TOOLTIP = "啟用此選項可追蹤成就。";
 		APPEARANCES_CHECKBOX = "外觀";
 		APPEARANCES_CHECKBOX_TOOLTIP = "啟用此選項可追蹤外觀獲得。\n\n注意: 停用此選項也會停用所有採集邏輯，你可以使用此切換來防止在執行重要組內容時出現延遲，請牢記，重新啟用後將需要進行計算。";
@@ -629,15 +546,12 @@ for key,value in pairs({
 		EXPLORATION_CHECKBOX_TOOLTIP = "啟用此選項可以追蹤戶外地圖的探索完成情況。\n\n目前這個選項所提供的資訊並不準確，需要加強，請謹慎使用。";
 		FLIGHT_PATHS_CHECKBOX = "飛行路線";
 		FLIGHT_PATHS_CHECKBOX_TOOLTIP = "啟用此選項以追蹤飛行路線和飛艇。\n\n要收藏這些資訊，請與每個大陸的飛行點/飛艇船長對話。\n\n注意：由於分階段技術，你可能必須分階段到區域的其他敵方，以獲得這些興趣點的開啟。";
-		--TODO: HEIRLOOMS_CHECKBOX = HEIRLOOMS;
 		HEIRLOOMS_CHECKBOX_TOOLTIP = "啟用此選項可追蹤你是否已解鎖傳家寶及其各自的升級級別。\n\n具有相關外觀的傳家寶將通過外觀篩選進行篩選。（關閉外觀仍將顯示傳家寶本身）\n\n一些出現史詩品質的商品也有助於提升聲望，可以通過聲望篩選進行篩選。";
 		HEIRLOOMS_UPGRADES_CHECKBOX = "+升級";
 		HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP = "啟用此選項可專門追蹤單個傳家寶升級的收藏情況。\n\n我們都知道暴雪就是喜歡消耗你的金幣和靈魂，所以用這個切換來追蹤你的金幣。";
 		ILLUSIONS_CHECKBOX = "附魔幻象";
 		ILLUSIONS_CHECKBOX_TOOLTIP = "啟用此選項以追蹤附魔幻象。\n\n這些看起來很酷的幻化效果，你可以套用到你的武器上！\n\n注意：你不是一個幻象，儘管所有的夜裔精靈都這麼認為。";
-		--TODO: MOUNTS_CHECKBOX = MOUNTS;
 		MOUNTS_CHECKBOX_TOOLTIP = "啟用此選項以追蹤坐騎。\n\n你可以騎著它們比跑步更快去別的地方。誰知道！";
-		--TODO: QUESTS_CHECKBOX = QUESTS_LABEL;
 		QUESTS_CHECKBOX_TOOLTIP = "啟用此選項以追蹤任務。\n\n你可以點擊右鍵列表中的任何任務，彈出它們的完整任務鏈，以顯示你的進度和任何先決條件或後續任務。\n\n注意：每日、每周、每年和世界任務的追蹤不包含在此選項中，因為它們會在暴雪資料庫中定期重置。";
 		QUESTS_LOCKED_CHECKBOX = "+已鎖定";
 		QUESTS_LOCKED_CHECKBOX_TOOLTIP = "啟用此選項可專門包括追蹤鎖定任務的完成情況。\n\n鎖定任務是指玩家無法再通過正常遊戲完成的任務（依據已知的 ATT 資料）。\n\n獲得這些任務非常依賴於隊伍同步功能或使用帳號通用內的任務來整合其他角色的進度。";
@@ -647,10 +561,8 @@ for key,value in pairs({
 		REPUTATIONS_CHECKBOX_TOOLTIP = "啟用此選項可追蹤聲望。\n\n一旦你達到了尊敬或最好的朋友，它將被標記為收藏。\n\n你可能需要手動刷新才能正確更新。";
 		TITLES_CHECKBOX = "頭銜";
 		TITLES_CHECKBOX_TOOLTIP = "啟用此選項可追蹤頭銜。\n\n這些可以讓你的角色脫穎而出，看起來你已經玩了一段時間。通常只有新玩家沒有頭銜。";
-		--TODO: TOYS_CHECKBOX = TOY_BOX;
 		TOYS_CHECKBOX_TOOLTIP = "啟用此選項可追蹤玩具。\n\n這些玩具中的大多數玩具都有趣。其他的，如爐石玩具，可以用來代替你的初始爐石，並可以為你節省一個背包！他們也有有趣的效果…很好！";
 
-		-- Expansion Things
 		EXPANSION_THINGS_LABEL = "資料片事物";
 		AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t 艾澤拉斯精華";
 		AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "啟用此選項以追蹤艾澤拉斯精華。\n\n預設情況下每個角色都會被追蹤。";
@@ -666,7 +578,6 @@ for key,value in pairs({
 		CHARACTERUNLOCKS_CHECKBOX = "角色解鎖";
 		CHARACTERUNLOCKS_CHECKBOX_TOOLTIP = "啟用此選項可追蹤角色解鎖。這些是基於角色的各種解鎖，無法明確歸類為其他類型（例如 妖術變體、變形術變體、獵人物種馴服解鎖、波可波克自訂等）。\n\n預設情況下按角色追蹤。";
 
-		-- Account-Wide Checkboxes
 		ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "成就追蹤通常是在整個帳號通用內進行的，但有一些特定職業和種族的專屬成就，你無法在你的主要角色上獲得。";
 		ACCOUNT_WIDE_APPEARANCES_TOOLTIP = "外觀應該在整個帳號範圍內收集。某些物品並非每個職業都能學會，因此 ATT 將盡力只向您展示你當前角色可以收集的物品。";
 		ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = "艾澤拉斯精華在技術上不能在整個戰隊內收藏和使用，但如果你只關心收藏你的主要角色那麼你可能更喜歡在整個戰隊上追蹤它們。";
@@ -682,24 +593,19 @@ for key,value in pairs({
 		ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = "啟用此功能後如果至少有一個角色學會了靈魂羈絆的導靈器，則將所有角色的靈魂羈絆的導靈器視為收藏。";
 		ACCOUNT_WIDE_TITLES_TOOLTIP = "大多數頭銜都是在帳號通用內進行追蹤，但是魔獸世界中一些著名的頭銜被鎖定在贏得他們的角色上。\n\n如果你不關心這個並希望看到那些標記為收藏的頭銜是你的小號，請切換此選項。";
 
-	-- General: Filters Page
 		ITEM_EXPLAIN_LABEL = "|cffFFFFFF始終顯示此內容如果位於 "..app.ccColors.Account.."帳號模式|cffFFFFFF。|r";
 		CLASS_DEFAULTS_BUTTON = "職業預設";
 		CLASS_DEFAULTS_BUTTON_TOOLTIP = "點擊此按鈕可將所有篩選重置為職業預設。\n\n注意：只能打開可為職業收藏的篩選。";
 		ALL_BUTTON_TOOLTIP = "點擊此按鈕一次啟用所有裝備篩選。";
 		UNCHECK_ALL_BUTTON_TOOLTIP = "點擊此按鈕一次停用所有裝備篩選。";
 
-	-- General: Phases Page
-	-- Classic Only, fully dynamic from within parser.
 
-	-- General: Unobtainables Page
 		UNOBTAINABLES_PAGE = "無法獲得";
 		UNOBTAINABLE_LABEL = "無法獲得的內容";
 		CUSTOM_FILTERS_LABEL = "自動化內容";
 		CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF如果當前角色可以使用此內容，或者位於 "..app.ccColors.Account.."帳號模式|cffFFFFFF。|r";
 		CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "啟用此設定可強行顯示%s內容，即使該內容對當前角色不可用。";
 
-	-- Interface Page
 		TOOLTIP_LABEL = "指標提示";
 		TOOLTIP_HELP_CHECKBOX = "顯示指標提示幫助";
 		TOOLTIP_HELP_CHECKBOX_TOOLTIP = "如果你想在 ATT 視窗指標提示中看到幫助資訊，即顯示 ATT 視窗功能的各種鍵/點擊組合，請啟用此選項。\n如果你已經知道所有的鍵/點擊組合，你可能希望節省工具提示空間並停用此選項。";
@@ -789,32 +695,24 @@ for key,value in pairs({
 		DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000生成時套用|r";
 		MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "最大頂線長度";
 
-	-- Interface: Accessibility Page
-		--TODO: ACCESSIBILITY_PAGE = ACCESSIBILITY_LABEL;
-		--TODO: ACCESSIBILITY_EXPLAIN = COLORBLIND_MODE_SUBTEXT;
 		COLORS_ICONS = "顏色和圖標";
 		LOCKED_QUESTS = "鎖定任務";
 		MORE_COLORS_CHECKBOX = "顯示顏色";
 		MORE_COLORS_CHECKBOX_TOOLTIP = "如果你想看到使用更多的顏色來幫助區分列表中事物的附加條件，請啟用此選項（比如職業顏色，陣營顏色等。）";
 		WINDOW_COLORS = "視窗顏色";
-		--TODO: BACKGROUND = EMBLEM_BACKGROUND;
 		BACKGROUND_TOOLTIP = "設定所有 ATT 視窗的背景顏色和透明度。";
-		--TODO: BORDER = EMBLEM_BORDER;
 		BORDER_TOOLTIP = "設定所有 ATT 視窗的邊框顏色和透明度。";
 		RESET_TOOLTIP = "恢復預設設定。";
 		CLASS_BORDER = "邊框使用職業顏色";
 		CLASS_BORDER_TOOLTIP = "使用職業顏色作為邊框。當登錄到另一個職業時，此資訊會更新。";
 
-	-- Interface: Information Page
 		ACHIEVEMENT_ID = "成就 ID";
 		ACHIEVEMENT_CATEGORY_ID = "成就類別 ID";
 		READDED_WITH_PATCH_CLASSIC_FORMAT = "該物品是隨更新 %s 重新加入的";
 		REMOVED_WITH_PATCH_CLASSIC_FORMAT = "該物品是隨更新 %s 移除的";
 
 
-	-- Features Page
 
-	-- Features: Audio Page
 		CELEBRATIONS_LABEL = "慶祝和音效";
 		AUDIO_CHANNEL = "聲音通道";
 		CELEBRATE_COLLECTED_CHECKBOX = "收藏事物觸發慶祝音效";
@@ -827,7 +725,6 @@ for key,value in pairs({
 		SCREENSHOT_COLLECTED_CHECKBOX = "收藏物品後觸發截圖";
 		SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "如果你想為你收藏的每件物品進行截圖請啟用此選項。";
 
-	-- Features: Reporting Page
 		REPORTING_LABEL = "回報";
 		REPORT_COLLECTED_THINGS_CHECKBOX = "回報已收藏事物";
 		REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "如果想在聊天中看到一條訊息，詳細說明收藏了哪些物品或從收藏中刪除了哪些物品，請啟用此選項。\n\n注意：這是因為暴雪默默的加入了外觀和其他收藏品並且忽略了通知你可用的其他物品。\n\n我們建議你保持此設定。如果你打開了這個選項，你會聽到警告聲。";
@@ -854,18 +751,12 @@ for key,value in pairs({
 		REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX = "播放音效";
 		REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX_TOOLTIP = "如果你希望 ATT 在檢測到附近內容時也播放通知音效，請啟用此選項。";
 
-	-- Features: Sync Page
-	-- Retail Only, deprecated.
 		SYNC_PAGE = "同步";
 		ACCOUNT_SYNCHRONIZATION = "帳號同步";
 		AUTO_SYNC_ACC_DATA_CHECKBOX = "自動同步帳號資料";
 		AUTO_SYNC_ACC_DATA_TOOLTIP = "如果您希望 ATT 在登錄或重新載入用戶介面時嘗試在帳號之間自動同步帳號資料，請啟用此選項。";
 
-	-- Features: Windows Page
-	-- Classic Only, nothing localizable atm.
-		--TODO: WINDOWS_PAGE = "Windows";
 
-	-- Profiles Page
 		PROFILES_PAGE = "設定檔";
 		PROFILE = "設定檔";
 		PROFILE_INITIALIZE = "初始化設定檔";

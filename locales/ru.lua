@@ -23,12 +23,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		--TODO:	"CHAMPYUUN, DE AZURIITE.",
 	};
 	L.SOCIAL_PROGRESS = "Социальный Прогресс";
-	--TODO: L.TRACKING_PROGRESS = "Tracking Progress";
-	--TODO: L.COLLECTION_PROGRESS = "Collection Progress";
 
-	-- Settings
-	--TODO: L.DATA_TYPE_NOT_SUPPORTED = "This data type is not supported at this time.";
-	--TODO: L.OPEN_MINILIST_FOR = "Open mini list for ";
 	L.REFRESHING_COLLECTION = "Обновление коллекции...";
 	L.DONE_REFRESHING = "Коллекция обновлена.";
 	L.ADDED_WITH_PATCH = "Добавлено в патче";
@@ -40,26 +35,9 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.COMPLETED_BY = "Выполнено На: %s";
 	L.KNOWN_BY = "Изучено на %s";
 	L.OWNED_BY = "Имеется на %s";
-	--TODO: L.ALIVE = "Alive";
-	--TODO: L.SPAWNED = "Spawned";
-	--TODO: L.LAYER = "Layer";
-	--TODO: L.BINDING = "Binding";
-	--TODO: L.BONUS_ID = "Bonus ID";
-	--TODO: L.CONDUIT_ID = "Conduit ID";
-	--TODO: L.DISPLAY_ID = "Display ID";
-	--TODO: L.PET_BATTLES = "Pet Battles";
-	--TODO: L.EVENT_ID = "Event ID";
-	--TODO: L.ICON_PATH = "Icon Path";
-	--TODO: L.ITEM_LEVEL = "iLvl";
-	--TODO: L.ITEM_STRING = "Item String";
-	--TODO: L.MOD_ID = "Mod ID";
-	--TODO: L.OBJECT_TYPE = "Object Type";
 	L.OBJECTIVES = "Цели";
 	L.QUEST_GIVERS = "Квестодатели";
-	--TODO: L.QUEST_ITEMS = "Quest Items";
-	--TODO: L.RUNEFORGE_POWER_ID = "Runeforge Power ID";
 
--- Instructional Text
 	L.MINIMAP_MOUSEOVER_TEXT = "Правый клик - Меню Настроек.\nЛевый клик - Основной список.\n"..CTRL_KEY_TEXT.." клик - открыть Мини список.\n"..SHIFT_KEY_TEXT.." клик - Обновить Коллекцию.";
 	L.TOP_ROW_INSTRUCTIONS = "|cff3399ffЗажатая Левая кнопка - Перемещение\nПравый клик - Меню Настроек\n"..SHIFT_KEY_TEXT.." клик - Обновить Коллекцию\n"..CTRL_KEY_TEXT.." клик - Свернуть/Развернуть Рекурсивно\n"..SHIFT_KEY_TEXT.." правый клик - Отсортировать список|r";
 	L.OTHER_ROW_INSTRUCTIONS = "|cff3399ffКлик - Свернуть/Развернуть\nПравый клик - Открыть Мини список\n"..SHIFT_KEY_TEXT.." клик - Обновить Коллекцию\n"..CTRL_KEY_TEXT.." клик - Свернуть/Развернуть Рекурсивно\n"..SHIFT_KEY_TEXT.." правый клик - Отсортировать список\n"..ALT_KEY_TEXT.." правый клик - Расставить Указатели|r";
@@ -68,18 +46,15 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.RECENTLY_MADE_OBTAINABLE = "|CFFFF0000Если это недавно выпало для Вас (везде, кроме Утиля/Ящиков), пожалуйста, напишите в Discord, где Вы получили предмет!|r";
 	L.RECENTLY_MADE_OBTAINABLE_PT2 = "|CFFFF0000Чем больше информации, тем лучше. Спасибо!|r";
 	L.MAIN_LIST_REQUIRES_REFRESH = "[Откройте Основной список, чтобы обновить прогресс]";
-	--TODO: L.UPDATES_PAUSED = "Updates Paused";
 	L.VISIT_FLIGHT_MASTER = "Посетите Распорядителя Полётов для добавления в кэш.";
 	L.REQUIRES_PVP = "|CFF00FFDEЭта Штучка требует участия в ПвП или ПвП валюту.|r";
 	L.REQUIRES_PETBATTLES = "|CFF00FFDEЭта Штучка требует игру с Боевыми Питомцами.|r";
-	--TODO: L.REQUIRES_SKYRIDING = "|CFF00FFDE"..(SPELL_FAILED_CUSTOM_ERROR_1029 or "Requires Skyriding").."|r";
 	L.PLEASE_REPORT_MESSAGE = "Пожалуйста, сообщите об этом на Discord-сервере ATT в канале #retail-errors! Спасибо!";
 	L.REPORT_TIP = "\n("..CTRL_KEY_TEXT.."+C, чтобы скопировать многострочный отчёт в буфер обмена)";
 	L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Задание '%s' %s не позволит собрать Хлебную Кроху '%s' %s";
 	L.REPORT_INACCURATE_QUEST = "Неверная Информация о Задании! (Нажмите для Отчёта)";
 	L.ITEM_GIVES_REP = "Улучшает Репутацию с '";
 
--- Event Text
 	L.ITEM_ID_ADDED = "%s (%d) добавлен в Вашу коллекцию.";
 	L.ITEM_ID_ADDED_RANK = "%s (%d) [Ранг %d] добавлен в Вашу коллекцию.";
 	L.ITEM_ID_ADDED_MISSING = "%s (%d) добавлен в Вашу коллекцию. Не найден в базе данных. Пожалуйста, сообщите в Discord ATT!";
@@ -88,7 +63,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.ITEM_ID_REMOVED = "%s (%d) был удален из Вашей коллекции.";
 	L.ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] были удалены из Вашей коллекции.";
 
--- Tooltip Text
 	L.DROP_RATE = "Шанс Выпадения";
 	L.QUEST_GIVER = "Начинает Задание";
 	L.COORDINATES = "Координаты";
@@ -100,10 +74,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.EVENT_WHERE = "Когда:";
 	L.REQUIRES_EVENT = "Требуется Событие";
 	L.BREADCRUMBS = "Задания-\"хлебные крохи\"";
-	--TODO: L.MAPS = "Maps";
 	L.LOCKOUT = "Сохранение";
-	--TODO: L.LOCKOUTS = "Lockouts";
-	--TODO: L.RESETS = "Resets";
 	L.SHARED = "Все Сложности";
 	L.SPLIT = "Отдельные Сложности";
 	L.REQUIRES = "Требуется";
@@ -114,7 +85,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.REMOVED_WITH_PATCH_FORMAT = "Удалено в %s";
 	L.WAS_ADDED_WITH_PATCH_FORMAT = "Добавлено в %s";
 	L.WAS_ADDED_BACK_WITH_PATCH_FORMAT = "Добавлено снова в %s";
-	--TODO: L.CRITERIA_FORMAT = "|cffffff00[Criteria: %s]|r";
 
 	L.FACTION_SPECIFIC_REP = "Не все репутации видны одному персонажу. Например, Всадники Песни Войны не видны Игрокам Альянса, а Среброкрылые Часовые - Игрокам Орды.";
 	L.MINUMUM_STANDING_WITH_FACTION = "Требуется отношение не менее, чем %s с %s.";
@@ -129,54 +99,13 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.LOCK_CRITERIA_QUEST_LABEL = "Выполненное Задание";
 	L.LOCK_CRITERIA_SPELL_LABEL = "Выученный Навык/Транспорт/Рецепт";
 	L.LOCK_CRITERIA_FACTION_LABEL = "Репутация";
-	--TODO: L.LOCK_CRITERIA_SOURCE_LABEL = "Known Appearance";
-	--TODO: L.LOCK_CRITERIA_TOY_LABEL = "Known Toy";
 	L.LOCK_CRITERIA_FACTION_FORMAT = "%s с %s (Текущее: %s)";
 	L.TITLES_DESC = "Звания отслеживаются по всей учётной записи, однако, некоторые Ваши персонажи могут иметь звания, доступные только им.";
 
--- Filter Text
-	--TODO: L.ARTIFACT_ID = "Artifact ID";
-	--TODO: L.AZERITE_ESSENCE_ID = "Azerite Essence ID";
-	--TODO: L.ART_ID = "Art ID";
-	--TODO: L.CAMPSITE_ID = "Campsite ID";
-	--TODO: L.CREATURE_ID = "Creature ID";
-	--TODO: L.CURRENCY_ID = "Currency ID";
 	L.DESCRIPTIONS = "Описания";
-	--TODO: L.DIFFICULTY_ID = "Difficulty ID";
-	--TODO: L.ENCOUNTER_ID = "Encounter ID";
-	--TODO: L.EXPANSION_ID = "Expansion ID";
-	--TODO: L.EXPLORATION_ID = "Exploration ID";
-	--TODO: L.FILTER_ID = "Filter ID";
-	--TODO: L.FOLLOWER_ID = "Follower ID";
-	--TODO: L.GUID = "Global ID";
-	--TODO: L.HEADER_ID = "Header ID";
-	--TODO: L.ILLUSION_ID = "Illusion ID";
-	--TODO: L.INSTANCE_ID = "Instance ID";
-	--TODO: L.SAVED_INSTANCE_ID = "Saved Instance ID";
-	--TODO: L.ITEM_ID = "Item ID";
-	--TODO: L.FACTION_ID = "Faction ID";
-	--TODO: L.FLIGHT_PATH_ID = "Flight Path ID";
 	L.LORE = "Лор";
-	--TODO: L.MAP_ID = "Map ID";
-	--TODO: L.MISSION_ID = "Mission ID";
-	--TODO: L.MOUNT_ID = "Mount ID";
-	--TODO: L.MUSIC_ROLL_ID = "Music Roll ID";
-	--TODO: L.NPC_ID = "NPC ID";
-	--TODO: L.OBJECT_ID = "Object ID";
-	--TODO: L.PROVIDERS = "Provider(s)";
-	--TODO: L.QUEST_ID = "Quest ID";
-	--TODO: L.SET_ID = "Gear Set ID";
-	--TODO: L.SOURCE_ID = "Source ID";
-	--TODO: L.SPELL_ID = "Spell ID";
-	--TODO: L.SPELL_NAME = "Spell Name";
-	--TODO: L.SPECIES_ID = "Species ID";
-	--TODO: L.TITLE_ID = "Title ID";
-	--TODO: L.TOY_ID = "Toy ID";
-	--TODO: L.VISUAL_ID = "Visual ID";
 	L.AND_MORE = "И ещё %s...";
 	L.SYM_ROW_INFORMATION = "Правый клик - Показать дополнительный контент из других источников";
-	--TODO: L.SYM_ROW_SKIP_DESC = "Linked content is only displayed in the tooltip for this object.";
-	--TODO: L.ACHIEVEMENT_PRE_WRATH_SOURCE_QUEST_INFO = "This achievement has associated quests that can be completed before the introduction of the Achievement system coming with the Wrath Prepatch. Not all achievements can be tracked this way, but for those that can, they will be displayed. All other non-trackable achievements will be activated with the prepatch.";
 	L.CLASSES = "Классы";
 
 	L.ADDITIONAL_LABEL = "Дополнительная Информация";
@@ -193,12 +122,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 			"\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t " .. "Недоступная Праздничная Штучка" ..
 			"\n|T374225:0|t " .. "Недоступно на текущем персонаже" ..
 			"\n|T" .. app.asset("status-unsorted") .. ":0|t " .. "Unsorted in ATT";
-	--TODO: L.ICON_LEGEND_MISC_LABEL = "Miscellaneous Icons Legend";
-	--TODO: L.ICON_LEGEND_MISC_TEXT = app.ccColors.White ..
-	--TODO:		"|T" .. app.asset("Currency") .. ":0|t " .. "Used as a currency" ..
-	--TODO:		"\n|T" .. app.asset("Interface_Reagent") .. ":0|t " .. "Used as a crafting reagent" ..
-	--TODO:		"\n|T" .. app.asset("Interface_Catalyst") .. ":0|t " .. "Convertible at the Catalyst for a new appearance" ..
-	--TODO:		"\n|T" .. app.asset("Interface_Upgrade") .. ":0|t " .. "Can be upgraded for a new appearance";
 	L.KEYBINDINGS = SETTINGS_KEYBINDINGS_LABEL;
 	L.KEYBINDINGS_TEXT = "Вы можете назначить клавиши для ATT в настройках игры.";
 	L.MINIMAP_LABEL = "Кнопка у Миникарты";
@@ -214,7 +137,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.WORLDMAP_BUTTON_CHECKBOX = "Показывать Кнопку на Карте";
 	L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите кнопку ATT на Вашей карте. Эта кнопка позволяет открыть Мини список ATT для открытой зоны на карте. В обычной ситуации Вам требуется физически быть в зоне, чтобы набрать '/att mini' в чате.";
 
--- Icons and Collection Text
 	L.COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
 	L.COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
 	L.COMPLETE_ICON = "|T" .. app.asset("known_green") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
@@ -227,7 +149,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |cff15abffНе Выполнено|r";	-- Acquired the colors and icon from CanIMogIt.
 	L.INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
 
--- Big new chunk from AllTheThings.lua
 	L.TRACKING_PROGRESS = "Отслеживание выполнения";
 	L.COLLECTED_STRING = " Собрано";
 	L.PROVIDERS = "Начинает";
@@ -241,7 +162,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.RACE_LOCKED = "Ограничено Расой";
 	L.NOT_AVAILABLE_IN_PL = "Недоступно в Персональной добыче.";
 	L.MARKS_OF_HONOR_DESC = "Почётные знаки должны быть рассмотрены во всплывающем окне, чтобы видеть всё их 'Содержимое'.\n(Введите '/att' в чат и затем "..SHIFT_KEY_TEXT.." клик для ссылки на предмет)\n\n|cFFfe040fПосле покупки и использования Набора может потребоваться полностью выйти из игры и вручную обновить коллекцию (в таком порядке),\nчтобы корректно зарегистрировать все предметы.|r";
-	--TODO: L.MOP_REMIX_BRONZE_DESC = "Bronze must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then "..SHIFT_KEY_TEXT.." click to link the currency)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
 	L.COST = "Стоимость";
 	L.COST_DESC = "Содержит визуальную справку о предметах, необходимых для покупки или получения данной Штучки";
 	L.COST_TOTAL = "Полная Стоимость";
@@ -269,9 +189,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.EXPANSION_DATA[8].lore = "Когда Саргерас нанес Азерот страшную рану, из недр планеты поднялась нестабильная субстанция, прозванная азеритом — кровь самого спящего титана. Вскоре Альянс и Орда поняли, какой потенциал сокрыт в этом веществе, и взаимная неприязнь перешла в открытую конфронтацию. В стремлении завладеть как можно большим количеством азерита, Орда сожгла Тельдрассил, а затем Альянс осадил Подгород.\n\nОбе фракции были ослаблены и нуждались в новых союзниках и в героях, которые бы помогли их найти. Так Джайна Праудмур отправилась на свою родину, Кул-Тирас, в надежде уговорить морскую державу вновь присоединиться к Альянсу. Однако местные дворянские дома погрязли в конфликтах и проявили единодушие лишь в ненависти к Джайне за ее прошлые поступки. В то же время герои Орды вызволили зандаларскую принцессу Таланджи из тюрьмы Штормграда. И, хотя сперва ее отец, король Растахан, не был настроен слушать послов, со временем Таланджи все-таки уговорила зандаларских троллей присоединиться к Орде. Дипломатия помогла обеим фракциям, и в результате успешных военных кампаний они основали надежные базы в Зандаларе и Кул-Тирасе.\n\nДобившись доверия со стороны своих новых союзников, Альянс и Орда вновь скрестили клинки, не замечая, что над ними нависли грозные волны возмездия…";
 	L.EXPANSION_DATA[9].lore = "Одним отчаянным ударом Сильвана Ветрокрылая разрушила границу между миром живых и загробным царством. Храбрейших защитников Азерота затянула всепожирающая тьма. Несущая смерть древняя сила грозит сбросить оковы и уничтожить саму реальность.\n\nТех, кто осмелится сделать шаг в царство мертвых, ждут чудесные и пугающие неизведанные миры. Темные земли — это царство, в котором обитают души умерших. Это мир между мирами, от хрупкого баланса в котором зависит само существование жизни и смерти.\n\nКак одного из величайших защитников Азерота, вас наделили способностью пребывать в этом мире, не теряя своей телесной оболочки. Теперь вам предстоит раскрыть заговор, грозящий уничтожением Вселенной, и помочь легендарным героям всех эпох Warcraft вернуться в Азерот... или окончательно покинуть этот мир.";
 	L.EXPANSION_DATA[10].lore = "Драконы Азерота откликнулись на зов и вернулись, чтобы защитить свою родину, Драконьи острова. Магия стихий и энергия жизни Азерота наполняют вновь пробудившиеся Драконьи острова, и теперь вам предстоит исследовать их первобытные чудеса и раскрыть давно забытые тайны.";
-	--TODO: L.EXPANSION_DATA[11].lore = "The War Within is the tenth expansion for World of Warcraft and the beginning of the Worldsoul Saga. Journey through never-before-seen subterranean worlds filled with hidden wonders and lurking perils, down to the dark depths of the nerubian empire, where the malicious Harbinger of the Void is gathering arachnid forces to bring Azeroth to its knees.";
-	--TODO: L.EXPANSION_DATA[12].lore = "Midnight is the eleventh expansion for World of Warcraft and the second installment of the Worldsoul Saga.";
-	--TODO: L.EXPANSION_DATA[13].lore = "The Last Titan is the twelfth expansion for World of Warcraft and the final installment of the Worldsoul Saga.";
 	L.UPON_COMPLETION = "По выполнении";
 	L.UPON_COMPLETION_DESC = "Задания выше должны быть выполнены прежде, чем Вы сможете выполнить штучки, указанные ниже.";
 	L.QUEST_CHAIN_REQ = "Требования для Цепочки Заданий";
@@ -403,7 +320,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.FUTURE_UNOBTAINABLE_TOOLTIP = "Это контент, который точно или очень вероятно будет недоступен в будущем патче.";
 	L.TRADING_POST = "Торговая лавка";
 
-	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "Фильтровать предметы";
 		L.ITEM_FILTER_DESCRIPTION = "Вы можете отфильтровать предметы в ATT при помощи фильтра.";
 		L.ITEM_FILTER_BUTTON_TEXT = "Задать фильтр";
@@ -415,11 +331,8 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.QUEST_ROW_INSTRUCTIONS = "Правый клик - Открыть Цепочку Заданий";
 	L.QUEST_ONCE_PER_ACCOUNT = "Один-Раз-На-Аккаунт Задание";
 
--- Settings.lua
 	L.AFTER_REFRESH = "После Обновления";
 
-	-- General tab
-		-- Mode Title
 			L.MODE = "Режим";
 			L.TITLE_COMPLETIONIST = "Коллекционер ";
 			L.TITLE_UNIQUE_APPEARANCE = "Уникальный ";
@@ -429,31 +342,17 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 			L.TITLE_NONE_THINGS = "Без Штучек ";
 			L.TITLE_ONLY = "";
 			L.TITLE_INSANE = app.ccColors.Insane.."Безумный|R ";
-			--TODO: L.TITLE_RANKED = "Ranked ";
-			--TODO: L.TITLE_CORE = "Core ";
 			L.TITLE_SOME_THINGS = "Некоторые Штучки ";
 			L.TITLE_LEVEL = "Уровень ";
 			L.TITLE_SOLO = "Соло ";
 			L._BETA_LABEL = " |cff4AA7FF[Бета]|R";
 
-			--TODO: L.PRESET_TOOLTIP = "Enable this preset. This will adjust only the relevant tracking options of the current profile.";
-			--TODO: L.PRESET_NONE = "None of the Things Mode disables the tracking of all collectibles. Way to challenge yourself.";
-			--TODO: L.PRESET_CORE = "Core Mode enables the collectibles visible in the game's Warband Collections journal.";
-			--TODO: L.PRESET_RANKED = "Ranked Mode enables the collectibles tracked by websites such as Data For Azeroth and WoWthing.";
-			--TODO: L.PRESET_INSANE = app.ccColors.Insane .. "Insane Mode|R enables all " .. app.ccColors.Insane .. "colored options|R and gives you a real challenge!";
-			--TODO: L.PRESET_ACCOUNT = app.ccColors.Account .. "Account Mode|R enables all account-wide tracking, and will show progress from all of your characters.";
-			--TODO: L.PRESET_SOLO = "Solo Mode disables all account-wide tracking, and will only show progress for your current character.";
-			--TODO: L.PRESET_UNIQUE = "Unique Mode disables Sources, marking gear as collected when you have learned their unique appearance.";
-			--TODO: L.PRESET_COMP = "Completionist Mode enables Sources, only marking gear as collected when you have learned the appearance from that specific item.";
-			--TODO: L.PRESET_RESTORE = "Restore";
-			--TODO: L.PRESET_RESTORE_TOOLTIP = "Restore your tracking options to before applying any presets.";
 
 		L.EXTRA_THINGS_LABEL = "Дополнительные Штучки";
 		L.CLICK_TO_CREATE_FORMAT = "Нажмите, чтобы создать %s";
 		L.LOADING_FORMAT = "%s загружаются...";
 		L.READY_FORMAT = "%s загрузились";
 
-	-- Features tab
 		L.AUTO_BOUNTY_CHECKBOX = "Авто Открывать Список Пропаж";
 		L.AUTO_BOUNTY_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите, чтобы ATT автоматически открывал список предметов, которые считаются крайне важными для нахождения. Если у Вас получится стащить один из перечисленных здесь предметов, Вы можете сделать получить хорошую сумку золотых.\n\nБыстрая Команда: /attbounty";
 		L.AUTO_MAIN_LIST_CHECKBOX = "Авто Открывать Основной Список";
@@ -468,7 +367,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.AUCTION_TAB_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть Модуль Аукциона ATT.\n\nНекоторые модификации - плохие ребята, и значительно изменяют это окно. ATT не всегда хорошо играет с такими игрушками.";
 		L.ICON_LEGEND_STATUS_TEXT = app.ccColors.White .. "|T" .. app.asset("status-unobtainable") .. ":0|t " .. "Недоступно" .. "\n|T" .. app.asset("status-prerequisites") .. ":0|t " .. "Доступно с условием" .. "\n|T" .. app.asset("status-seasonal-available") .. ":0|t " .. "Доступная Праздничная Штучка" .. "\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t " .. "Недоступная Праздничная Штучка" .. "\n|T374225:0|t " .. "Недоступно на текущем персонаже";
 
-	-- Sync Window
 		L.ACCOUNT_MANAGEMENT = "Управление Аккаунтами";
 		L.ACCOUNT_MANAGEMENT_TOOLTIP = "Данный список отображает весь функционал относительно синхронизации данных учётной записи.";
 		L.ADD_LINKED_CHARACTER_ACCOUNT = "Прикрепить Персонажа / Аккаунт";
@@ -485,7 +383,6 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.DELETE_CHARACTER = "Правый Клик - Удалить этого Персонажа";
 		L.CONFIRM_DELETE = "\n \nВы точно хотите удалить это?";
 
-	-- Binding Localizations
 		L.TOGGLE_ACCOUNT_MODE = "Переключить режим Аккаунта";
 		L.TOGGLE_COMPLETIONIST_MODE = "Переключить режим Собирателя";
 		L.TOGGLE_DEBUG_MODE = "Переключить режим Отладки";
@@ -507,17 +404,8 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.SECRETS_HEADER = "Секреты";
 		L.SOURCE_ID_MISSING = "Пожалуйста, сообщите в канале #retail-errors на нашем сервере Discord, где Вы нашли эту вещь!";
 
-	-- Artifact Relic Completion
-		--TODO: L.ARTIFACT_RELIC_CACHE = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";
-		--TODO: L.ARTIFACT_RELIC_COMPLETION = "Artifact Relic Completion";
-		--TODO: L.NOT_TRADEABLE = "Not Tradeable";
-		--TODO: L.TRADEABLE = "Tradeable";
 
-	-- Keybind usage
-		--TODO: L.ENABLED = "enabled";
-		--TODO: L.DISABLED = "disabled";
 
-	-- Icons and Collection Text
 		L.SAVED = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Сохранено|r";	-- Acquired the colors and icon from CanIMogIt.
 		L.COST_TEXT = "|T" .. app.asset("Currency") .. ":0|t |cff0891ffВалюта|r";
 
@@ -547,8 +435,6 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Tier/Dungeon/Event/Holiday Sets
-		-- Artifact Strings
 			[-5200] = "Основной облик",								-- Base Appearance
 			[-5201] = "Кампания оплота",							-- Class Hall Campaign
 			[-5202] = "Баланс Сил",									-- Balance of Power
@@ -561,11 +447,9 @@ end
 
 local a = L.SETTINGS_MENU;
 for key,value in pairs({
-	-- Common Header
 		SKIP_AUTO_REFRESH = "Не авто обновлять при изменении настроек!";
 		SKIP_AUTO_REFRESH_TOOLTIP = "По умолчанию (выключено) любое изменение Настроек, которое меняет отображаемую информацию, будет авто обновлять коллекцию.\n\nПосле включения этой опции, изменения Настроек не будут менять отображение, пока Вы не произведёте Полное Обновление коллекции, сделав "..SHIFT_KEY_TEXT.." клик на окне ATT.";
 
-	-- About Page
 		ABOUT_TOP = " |CFFFFFFFF- модификация для отслеживания коллекции, которая показывает Вам где и как получить всё в игре! У нас большое сообщество в Discord (ссылка внизу), где Вы можете спрашивать, оставлять предложения, а также сообщать об ошибках и пропавших предметах. Если Вы нашли предмет или задание, которые не задокументированы, Вы можете сказать нам в Discord, для более технически подкованных у нас Git, в котором Вы можете участвовать.\n\nПока мы стремимся к выполнению, есть множество вещей, что добавляются в игру с каждым патчем, и если что-то отсутствует, пожалуйста, поймите, у нас небольшая команда, пытающаяся держать темп с изменениями, в то же время собирая Штучки. :D\n\nНе стесняйтесь спрашивать меня во время трансляций, даже если вопрос не связан напрямую с ATT (стандартное программирование аддонов WoW тоже).\nПримечание переводчика: на английском языке.\n\n- |r|Cffff8000Crieve|r";
 		ABOUT_BOTTOM = "Активные Участники: |CFFFFFFFF(в алфавитном порядке)\n%s!\n|rЗал Славы: |CFFFFFFFF(в алфавитном порядке)\n%s\n\nОсобая Благодарность AmiYuy (CanIMogIt) и Caerdon (Caerdon Wardrobe). Вы просто обязаны загрузить их аддоны для иконок коллекций в Ваших сумках! %s %s %s\n\nДля онлайн-сравнения коллекций посетите DataForAzeroth.com от Shoogen и WoWthing.org от Freddie!|r";
 		CLIPBOARDCOPYPASTE = "Ctrl+A, Ctrl+C, чтобы скопировать в буфер обмена.";
@@ -577,7 +461,6 @@ for key,value in pairs({
 		TWITCH_BUTTON_TOOLTIP = "Нажмите, чтобы скопировать ссылку на мой канал Twitch.\n\nВы можете задавать вопросы, когда трансляция онлайн, и я постараюсь на них ответить!\n\nПримечание переводчика: на английском языке.";
 		WAGO_BUTTON_TOOLTIP = "Нажмите, чтобы скопировать ссылку на ALL THE THINGS на Wago.io.\n\nВы можете дать эту ссылку своим друзьям, чтобы они тоже разрушили свою жизнь! В конце концов они Вас простят...может быть.";
 
-	-- General Page
 		DEBUG_MODE = app.ccColors.Red.."Режим Отладки|r (Показать Всё)";
 		DEBUG_MODE_TOOLTIP = "Буквально... ВСЕ ШТУКИ В ИГРЕ. ОКОНЧАТЕЛЬНО. ТОЧКА. АГА, ВСЕ ОНИ. Даже Несобираемые штуки, как сумки, расходуемые, реагенты и прочие, появятся в списках. (Даже Вы сами! Нет, серьёзно. Смотрите.)\n\nДанный режим только для отладки. Не предназначен для отслеживания выполнения.\n\nЭтот режим игнорирует все фильтры, включая Несобираемые.";
 		ACCOUNT_MODE = app.ccColors.Account.."Режим Аккаунта";
@@ -591,11 +474,7 @@ for key,value in pairs({
 		COMPLETIONIST_MODE_TOOLTIP = "Включите данный режим, чтобы считать все Предметы Собранными только тогда, когда определённый Предмет был открыт для данного Облика.\n\nЭто означает, что Вы должны получить каждый общий Облик для Предмета.\n\nПримечание: По умолчанию, игра перестаёт сообщать Вам о Предметах, которые Вы собрали после получения общего Источника, поэтому данный режим позволит отслеживать несобранные Предметы.";
 		MAIN_ONLY = "Только основной персонаж";
 		MAIN_ONLY_TOOLTIP = "Включите данную функцию, если Вы также хотите ATT *притворяться*, что Вы собрали все общие облики, непривязанные к определённому классу или расе.\n\nНапример, если Вы собрали набор Охотника из ЦЛК, и у него есть общие облики без ограничения по классу/расе, ATT *притворится*, что Вы также собрали этот источник облика.\n\nПримечание: Переключение на другую расу/класс некорректно сообщит, что Вы собрали источники обликов, которые на самом деле не собраны для этого персонажа.";
-		--TODO: ONLY_RWP = "Only RWP";
-		--TODO: ONLY_RWP_TOOLTIP = "Enable this option to only track transmog that get removed from the game in the future. Only Items tagged with 'removed with patch' data count toward this. If you find an item not tagged that should be tagged, please let me know!\n\nYou can change which sort of loot displays for you based on the Filters tab.";
-		--TODO: UNOFFICIAL_SUPPORT_TOOLTIP = "NOTE: At this time, official support is not provided by WoW's API, but ATT can track items or quest completion to make it functional in the addon.";
 
-	-- General Content
 		GENERAL_CONTENT = "Общее содержимое";
 		SHOW_INCOMPLETE_THINGS_CHECKBOX = "Все Отслеживаемые Штучки";
 		SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть все предметы, объекты, НИПов и заголовки, которые могут отслеживаться внутри игры и не обязательно считаться 'собираемыми'.\n\nВы можете использовать эту функцию для помощи в выполнении достижения Хранитель Мудрости, если Вы ещё не получили его.\n\nПримечание: Редкие или Виньетки также появляются в списках при включении этой настройки.";
@@ -605,8 +484,6 @@ for key,value in pairs({
 		SHOW_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "Включите данную опцию, чтобы видеть Штучки, которые уже были Собраны.\n\nМы рекомендуем Вам отключить эту настройку, поскольку будет занимать место в Мини списке и мешать быстро определить, что доступно в текущей зоне.";
 		FILTER_THINGS_BY_LEVEL_CHECKBOX = "Без Фильтра по Уровню";
 		FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть контент, который может быть недоступен Вам по уровню.\n\nПримечание: Особенно полезно выключать на пробных учётных записях.";
-		--TODO: FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX = "No Skill Level Restrictions";
-		--TODO: FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX_TOOLTIP = "Disable this setting if you only want to see content available to the maximum possible skill level available to the game environment.";
 		SHOW_BOE_CHECKBOX = "БоЕ/БоА Предметы";
 		SHOW_BOE_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите отслеживать Персональные при Надевании/Привязанные к аккаунту предметы.\n\nПолезно выключить, когда Вы пытаетесь закончить Классические Подземелья для персонажа и не хотите специально фармить предметы, которые могут быть получены на альтах или Аукционе.\n\nТо есть: Не лишитесь рассудка во время гринда Маятника Рока.";
 		IGNORE_FILTERS_FOR_BOES_CHECKBOX = "Игнорировать Фильтры БоЕ/БоА";
@@ -618,34 +495,24 @@ for key,value in pairs({
 		SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX = "Недоступный Персональный Лут";	-- TODO: All Learnable Quest Rewards
 		SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX_TOOLTIP = "Выключите данную опцию, что спрятать вещи, которые являются \"Недоступными в Персональном Луте\" в заданиях.\n\nУдобно для отслеживания вещей, которые Ваш класс не может получить в Мировых Дропах, но в то же время помечая задания как выполненные.\n\nНекоторые вещи могут быть помечены неверно: данная настройка СПРЯЧЕТ часть вещей, которые вы можете получить!";
 
-		-- Collectible Things
 		ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Account.."Весь Аккаунт|R по умолчанию.";
 		TRACK_ACC_WIDE = app.ccColors.Account.."Отслеживать на весь аккаунт|R";
 		ACCOUNT_THINGS_LABEL = "Штучки для всего аккаунта";
 		GENERAL_THINGS_LABEL = "Общие Штучки";
 		STRANGER_THINGS_LABEL = "Очень Странные Штучки";
 
-		--TODO: ACHIEVEMENTS_CHECKBOX = ACHIEVEMENTS;
 		ACHIEVEMENTS_CHECKBOX_TOOLTIP = "Включите для отслеживания достижений.";
 		APPEARANCES_CHECKBOX = "Внешний вид";
 		APPEARANCES_CHECKBOX_TOOLTIP = "Включите для отслеживания получения обликов.\n\nПримечание: Отключение данной опции также отключит все фанфары и рассчёты о получении. Вы можете отключить для избежания лагов во время занятия важным групповым контентом, но держите в уме, что рассчёты будут произведены при обратном включении.";
 		BATTLE_PETS_CHECKBOX = "Боевые питомцы";
 		BATTLE_PETS_CHECKBOX_TOOLTIP = "Включите для отслеживания боевых питомцев и спутников. Могут быть обнаружены в открытом мире или в качестве добычи с боссов в различных Подземельях или Рейдах, равно как у торговцев и различных фракций.";
-		--TODO: DEATHS_CHECKBOX = "Deaths";
-		--TODO: DEATHS_CHECKBOX_TOOLTIP = "Enable this option to track each time one of your characters die and show it as a Collectible section within the addon.\n\nNOTE: If you turn this off, we'll still track it, but we simply will not show the statistic unless you're in Debug Mode.";
-		--TODO: EXPLORATION_CHECKBOX = "Exploration";
-		--TODO: EXPLORATION_CHECKBOX_TOOLTIP = "Enable this option to track exploration completion for outdoor maps.";
 		FLIGHT_PATHS_CHECKBOX = "Полёты & Паромные Станции";
 		FLIGHT_PATHS_CHECKBOX_TOOLTIP = "Включите для отслеживания путей полётов и паромных станций.\n\nЧтобы *собрать* их, начните разговор с распорядителем полётов/паромной станции на каждом континенте.\n\nПримечание: Из-за технологии фазирования, Вам может потребоваться перейти в другую версию локации, чтобы засчитать эти достопримечательности.";
-		--TODO: HEIRLOOMS_CHECKBOX = HEIRLOOMS;
 		HEIRLOOMS_CHECKBOX_TOOLTIP = "Включите для отслеживания разблокирования Наследства и его соответствующих Уровней Улучшения.\n\nНаследство, которое ассоциируется с Облком, фильтруется фильтром Обликов. (отключение обликов всё также отобразит Наследство)\n\nНекоторые предметы, имеющие качество Наследства, также помогают улучшать репутации и могут быть отфильтрованы фильтром Репутации.";
 		HEIRLOOMS_UPGRADES_CHECKBOX = "+Улучшения";
 		HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP = "Включите для отслеживания индивидуальных улучшений для Наследства.\n\nМы все знаем, что Blizzard любит высасывать Ваше золото и душу, так что следите за ними с данным переключателем.";
-		--TODO: ILLUSIONS_CHECKBOX = "Illusions";
 		ILLUSIONS_CHECKBOX_TOOLTIP = "Включите для отслеживания чар для оружия.\n\nЭто круто выглядящие эффекты, которые можно применить к Вашему оружию!\n\nПримечание: Вы не иллюзия, невзирая на то, как считают все Ночнорождённые.";
-		--TODO: MOUNTS_CHECKBOX = MOUNTS;
 		MOUNTS_CHECKBOX_TOOLTIP = "Включите для отслеживания транспорта.\n\nВы можете ездить на них, чтобы перемещаться из точки А в точку Б быстрее, чем бегом. Кто бы мог подумать!";
-		--TODO: QUESTS_CHECKBOX = QUESTS_LABEL;
 		QUESTS_CHECKBOX_TOOLTIP = "Включите для отслеживания обычных Заданий.\n\nПри помощи правого клика на любое задание в списках Вы можете открыть полную цепочку заданий, чтобы отобразить Ваш прогресс и любые предшествующие Задания.\n\nПримечание: Задания не отслеживаются перманентно из-за природы отслеживания Ежедневных, Еженедельных, Ежегодных и Локальных заданий в базе данных Blizzard.";
 		QUESTS_LOCKED_CHECKBOX = "+Ограниченные";
 		QUESTS_LOCKED_CHECKBOX_TOOLTIP = "Включите для специального отслеживания выполнения Ограниченных Заданий.\n\nОграниченные Задания - это те, которые игрок не может выполнить (исходя из известных ATT данных) при обычной игре.\n\nПолучение этих Заданий полагается на Синхронизацию группы или отслеживание заданий для Всего Аккаунта";
@@ -655,10 +522,8 @@ for key,value in pairs({
 		REPUTATIONS_CHECKBOX_TOOLTIP = "Включите для отслеживания репутаций.\n\nПосле достижения Превознесения или статуса Лучший друг, будет отмечено как Собрано.\n\nМожет потребоваться ручное обновление коллекции, чтобы засчитать их корректно.";
 		TITLES_CHECKBOX = "Звания";
 		TITLES_CHECKBOX_TOOLTIP = "Включите для отслеживания званий.\n\nОни выделяют Вашего персонажа и показывают, как давно Вы играете. Обычно только у новых игроков нет выбранного звания.";
-		--TODO: TOYS_CHECKBOX = TOY_BOX;
 		TOYS_CHECKBOX_TOOLTIP = "Включите для отслеживания игрушек.\n\nБольшинство из них имеют забавные эффекты. Другие же, как игрушечные Камни возвращения, могут быть использованы вместо обычного Камня возвращения и сохранить Вам место в сумке! Они также имеют интересные эффекты... Здорово!";
 
-		-- Expansion Things
 		EXPANSION_THINGS_LABEL = "Штучки Дополнений";
 		AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Азеритовые сущности";
 		AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "Включите для отслеживания Азеритовых Сущностей.\n\nПо умолчанию отслеживается на каждом персонаже отдельно.";
@@ -674,14 +539,9 @@ for key,value in pairs({
 		CHARACTERUNLOCKS_CHECKBOX = "Разблокирования Персонажа";
 		CHARACTERUNLOCKS_CHECKBOX_TOOLTIP = "Включите для отслеживания Разблокирований Персонажа. Это различные разблокирования, которые не могут быть отнесены к другим типам (например, варианты Сглазов и Превращений, разблокирования питомцев для Охотников, кастомизации Покопока и прочее).\n\nПо умолчанию отслеживается на каждом персонаже отдельно.";
 
-		-- Account-Wide Checkboxes
 		ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "Достижения обычно отслеживаются на всю учётную запись, но есть некоторые эксклюзивные для определённых классов или рас достижения, которые Вы не сможете получить на основном персонаже.";
-		--TODO: ACCOUNT_WIDE_APPEARANCES_TOOLTIP = "Transmog should be collected account wide. Certain items cannot be learned by every class, so ATT will do its best to only show you things that you can collect on your current character.";
 		ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = "Азеритовые Сущности технически не могут быть собраны и использованы на всю учётную запись, но если Вам важно только собрать их на основном персонаже, то Вам предпочтительнее отслеживать их на всю учётную запись.";
-		--TODO: ACCOUNT_WIDE_BATTLE_PETS_TOOLTIP = "Companion pets can be collected on multiple characters and realistically would require that you have an insane amount of bag space in order to collect them all on one character.\n\nWe recommend you keep this turned on, but you do you fam.";
 		ACCOUNT_WIDE_CHARACTERUNLOCKS_TOOLTIP = "Включите, чтобы считать Разблокирования Персонажа собранными, если хотя бы один персонаж имеет к ним доступ.";
-		--TODO: ACCOUNT_WIDE_DEATHS_TOOLTIP = "Death tracking really only exists for pre-Wrath Classic where a statistic wasn't available to know this information. Once achievements were implemented, this feature instead acquires data directly from the statistics API. You can use the tooltip on the Death Tracker to se";
-		--TODO: ACCOUNT_WIDE_EXPLORATION_TOOLTIP = "Exploration tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?";
 		ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = "Отслеживание Путей Полётов отдельное на каждого персонажа, но Вы действительно хотите собирать их на всех Ваших 50 персонажах?";
 		ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = "Спутники обычно считаются по персонажу, но Вы же не хотите собирать 243 спутника в Таверне Гарнизона по одному в неделю?\n\nОчень сомневаюсь.";
 		ACCOUNT_WIDE_QUESTS_TOOLTIP = "Выполнение заданий чаще всего считается отдельно для каждого персонажа, но с этой настройкой будет засчитываться, если хоть один персонаж выполнил задание.";
@@ -690,24 +550,19 @@ for key,value in pairs({
 		ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = "Включите, чтобы считать Проводники Медиумов собранными, если хотя бы один персонаж имеет к ним доступ.";
 		ACCOUNT_WIDE_TITLES_TOOLTIP = "Большинство званий отслеживается на всю учётную запись, но некоторые престижные звания в WoW закреплены за персонажем, получившим их.\n\nПереключите эту опцию, если они Вам не важны, и Вы хотите видеть эти звания Собранными на Ваших альтах.";
 
-	-- General: Filters Page
 		ITEM_EXPLAIN_LABEL = "|cffFFFFFFЭти предметы всегда видимы в "..app.ccColors.Account.."Режиме Аккаунта|cffFFFFFF.|r";
 		CLASS_DEFAULTS_BUTTON = "Классовые";
 		CLASS_DEFAULTS_BUTTON_TOOLTIP = "Нажмите на эту кнопку, чтобы сбросить все фильтры к стандартным для Вашего класса.\n\nПримечание: Только фильтры, которые могут быть собраны Вашим классом, будут включены.";
 		ALL_BUTTON_TOOLTIP = "Нажмите на эту кнопку, чтобы включить все фильтры сразу.";
 		UNCHECK_ALL_BUTTON_TOOLTIP = "Нажмите на эту кнопку, чтобы отключить все фильтры.";
 
-	-- General: Phases Page
-	-- Classic Only, fully dynamic from within parser.
 
-	-- General: Unobtainables Page
 		UNOBTAINABLES_PAGE = "Недоступные";
 		UNOBTAINABLE_LABEL = "Недоступный контент";
 		CUSTOM_FILTERS_LABEL = "Автоматический контент";
 		CUSTOM_FILTERS_EXPLAIN_LABEL = "|CFFFFFFFFЭти Штучки всегда показываются, если они доступны текущему персонажу или в "..app.ccColors.Account.."Режиме Аккаунта|cffFFFFFF.|r";
 		CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Включите данную настройку, чтобы всегда показывать %s, даже если это недоступно на данном персонаже.";
 
-	-- Interface Page
 		TOOLTIP_LABEL = "Подсказки";
 		TOOLTIP_HELP_CHECKBOX = "Показать Помощь в Подсказке";
 		TOOLTIP_HELP_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть вспомогательную информацию в подсказке над окнами ATT, показывающую различные комбинации клавиш для управления.\nЕсли Вы уже знаете все комбинации, вполне резонно отключить их, чтобы уменьшить размер подсказок.";
@@ -725,12 +580,6 @@ for key,value in pairs({
 		KNOWN_BY_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть в подсказке полный список персонажей на всех серверах, которые изучили данный рецепт.";
 		COMPLETED_BY_CHECKBOX = "Выполнено";
 		COMPLETED_BY_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть в подсказке полный список персонажей на всех серверах, которые выполнили данное Задание.";
-		--TODO: SHOW_CRAFTED_ITEMS_CHECKBOX = "Show Crafted Items";
-		--TODO: SHOW_CRAFTED_ITEMS_CHECKBOX_TOOLTIP = "Enable this option if you want to see a list of all of the items that can be crafted by any of your characters for a reagent in its tooltip.";
-		--TODO: SHOW_RECIPES_CHECKBOX = "Show Recipes";
-		--TODO: SHOW_RECIPES_CHECKBOX_TOOLTIP = "Enable this option if you want to see a list of all of the recipes that can be crafted by any of your characters for a reagent in its tooltip.";
-		--TODO: SHOW_ONLY_NON_TRIVIAL_RECIPES_CHECKBOX = "Only Non-Trivial";
-		--TODO: SHOW_ONLY_NON_TRIVIAL_RECIPES_CHECKBOX_TOOLTIP = "Enable this option if you only want to see non-trivial recipes in the recipe list.";
 		SHOW_CURRENCY_CALCULATIONS_CHECKBOX = "Рассчет покупок";
 		SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть в подсказке приблизительное количество Предметов/Валюты, необходимое для покупки Штучек.\n\nДля Контейнеров, которые не гарантируют получение всего содержимого за раз, оценка затрат будет ниже.";
 		SHARED_APPEARANCES_CHECKBOX = "Общие Облики";
@@ -769,10 +618,6 @@ for key,value in pairs({
 		ADHOC_UPDATES_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите обновлять только открытые окна ATT.\n\nЭта опция может серьёзно ускорить загрузку и предотвратить фризы в некоторых ситуациях.";
 		EXPAND_DIFFICULTY_CHECKBOX = "Развернуть Текущую Сложность";
 		EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите автоматически минимизировать заголовки в мини списке, которые не активны, когда Вы входите в подземелье или рейд.\n\nПример: Минимизировать Героический заголовок, когда в Обычной сложности подземелья.";
-		--TODO: SHOW_ICON_PORTRAIT_CHECKBOX = "Icon Portraits";
-		--TODO: SHOW_ICON_PORTRAIT_CHECKBOX_TOOLTIP = "Enable this option if you want to see creature icon portraits instead of the default icons for non-quest object types.\n\nIE: When looking at bosses, this option will show the face of the boss instead of the difficulty icon.\n\nDefault: On";
-		--TODO: SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX = "For Quests";
-		--TODO: SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX_TOOLTIP = "Enable this option if you want to see creature icon portraits instead of the default icons for quest object types.\n\nIE: When looking at quests, this option will show the face of the quest giver instead of the quest type icon.\n\nDefault: On";
 		SHOW_MODELS_CHECKBOX = "Предпоказ";
 		SHOW_MODELS_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть в подсказке модель вместо иконки.\n\nДанная настройка может помочь идентифицировать Редкого монстра или Торговца по внешнему виду. Возможно, Вы захотите оставить опцию включенной по этой причине.";
 		FILL_DYNAMIC_QUESTS_CHECKBOX = "Считать Валюту собираемой";
@@ -795,17 +640,12 @@ for key,value in pairs({
 		DYNAMIC_CATEGORY_NESTED = "Вложенные";
 		DYNAMIC_CATEGORY_NESTED_TOOLTIP = "Генерировать Динамические Категории на основе точного Источника. Это приводит к повторам Штучек, которые имеют несколько Источников.";
 		DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000Применяется при Генерации|r";
-		--TODO: MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "Maximum Top Line Length";
 
-	-- Interface: Accessibility Page
-		--TODO: ACCESSIBILITY_PAGE = ACCESSIBILITY_LABEL;
-		--TODO: ACCESSIBILITY_EXPLAIN = COLORBLIND_MODE_SUBTEXT;
 		COLORS_ICONS = "Цвета и Иконки";
 		LOCKED_QUESTS = "Ограниченные задания";
 		MORE_COLORS_CHECKBOX = "Использовать Цвета";
 		MORE_COLORS_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть больше использованных цветов, помогающих различать дополнительные условия для Штучек в списках (то есть цвета классов, фракций и т.п.)";
 		WINDOW_COLORS = "Цвет окна";
-		--TODO: BACKGROUND = EMBLEM_BACKGROUND;
 		BACKGROUND_TOOLTIP = "Установка фонового цвета для всех окон ATT.";
 		BORDER = "Рамка";
 		BORDER_TOOLTIP = "Установка цвета рамки для всех окон ATT.";
@@ -813,11 +653,8 @@ for key,value in pairs({
 		CLASS_BORDER = "Использовать цвет класса для рамки";
 		CLASS_BORDER_TOOLTIP = "Использовать цвет вашего класса для рамки. Цвет также обновляется, когда Вы на другом классе.";
 
-	-- Interface: Information Page
 
-	-- Features Page
 
-	-- Features: Audio Page
 		CELEBRATIONS_LABEL = "Поздравления и Звуковые Эффекты";
 		AUDIO_CHANNEL = "Канал звука";
 		CELEBRATE_COLLECTED_CHECKBOX = "Собранная Штучка заслуживает Поздравления";
@@ -830,7 +667,6 @@ for key,value in pairs({
 		SCREENSHOT_COLLECTED_CHECKBOX = "Собранная Штучка заслуживает Скриншота";
 		SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите делать скриншот, когда Вы получаете новую Штучку.";
 
-	-- Features: Reporting Page
 		REPORTING_LABEL = "Сообщения";
 		REPORT_COLLECTED_THINGS_CHECKBOX = "Сообщать о Собранных Штучках";
 		REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть сообщение в чате, объясняющее, какие предметы Вы получили или удалили из коллекции.\n\nПримечание: Эта настройка присутствует потому, что Blizzard бесшумно добавляет облики и другие собираемые предметы и не считает нужным оповещать Вас о дополнительных предметах, доступных Вам.\n\nМы рекомендуем оставить эту опцию включенной. Вы будете всё также слышать фанфары, если отключите её, если они включены.";
@@ -838,37 +674,13 @@ for key,value in pairs({
 		REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть QuestID для каждого задания, которое Вы приняли или выполнили. (Для сообщения об ошибках, для отслеживания и т.п)";
 		REPORT_UNSORTED_CHECKBOX = "Только 'Без Источника'";
 		REPORT_UNSORTED_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть QuestID задания, только если у него обозначен Источник.";
-		--TODO: REPORT_NEARBY_CONTENT_CHECKBOX = "Report Nearby Content";
-		--TODO: REPORT_NEARBY_CONTENT_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content such as vignettes to the chat. This feature provides popouts and waypoints when used.";
-		--TODO: REPORT_NEARBY_CONTENT_AUTOMATICALLY_PLOT_WAYPOINTS_CHECKBOX = "Automatically Plot Waypoints";
-		--TODO: REPORT_NEARBY_CONTENT_AUTOMATICALLY_PLOT_WAYPOINTS_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to automatically plot waypoints for nearby content.";
-		--TODO: REPORT_NEARBY_CONTENT_CLEAR_WAYPOINTS_CHECKBOX = "Automatically Clear";
-		--TODO: REPORT_NEARBY_CONTENT_CLEAR_WAYPOINTS_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to automatically clear the waypoint plotted by the nearby content feature when the content itself becomes unavailable or you go out of range.";
-		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_CREATURES_CHECKBOX = "Include Creatures";
-		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_CREATURES_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications for things that are considered creatures. (Rares, World Bosses, NPCs)";
-		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_TREASURES_CHECKBOX = "Include Treasures";
-		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_TREASURES_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications for things that are considered treasures. (Chests, Statues, Satchels in the world)";
-		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_COMPLETED_CHECKBOX = "Include Completed";
-		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_COMPLETED_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications from things that completed based on your filters in ATT.";
-		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_UNKNOWN_CHECKBOX = "Include Unknown/Unsourced";
-		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_UNKNOWN_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications from things that are not sourced in ATT.";
-		--TODO: REPORT_NEARBY_CONTENT_FLASH_THE_TASKBAR_CHECKBOX = "Flash the Taskbar";
-		--TODO: REPORT_NEARBY_CONTENT_FLASH_THE_TASKBAR_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to flash the taskbar when nearby content is detected.";
-		--TODO: REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX = "Play a Sound Effect";
-		--TODO: REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to also play a notification sound effect when nearby content is detected.";
 
-	-- Features: Sync Page
-	-- Retail Only, deprecated.
 		SYNC_PAGE = "Синхронизация";
 		ACCOUNT_SYNCHRONIZATION = "Сихронизация Аккаунтов";
 		AUTO_SYNC_ACC_DATA_CHECKBOX = "Автоматически Синхронизировать Данные Аккаунтов";
 		AUTO_SYNC_ACC_DATA_TOOLTIP = "Включите данную опцию, если Вы хотите, чтобы ATT пытался автоматически синхронизировать данные между учётными записями во время перезахода в игру или перезагрузки интерфейса.";
 
-	-- Features: Windows Page
-	-- Classic Only, nothing localizable atm.
-		--TODO: WINDOWS_PAGE = "Windows";
 
-	-- Profiles Page
 		PROFILES_PAGE = "Профили";
 		PROFILE = "Профиль";
 		PROFILE_INITIALIZE = "Инициализировать Профили";
