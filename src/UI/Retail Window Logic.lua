@@ -130,7 +130,7 @@ local function UpdateWindow(self, force, got)
 		self.HasPendingUpdate = true;
 		force = nil;
 	end
-	-- app.PrintDebug(Colorize("Update:", app.Colors.ATT),self.Suffix,
+	-- app.PrintDebug(Colorize("Update:", app.DefaultColors.ATT),self.Suffix,
 	-- 	force and "FORCE" or "SOFT",
 	-- 	visible and "VISIBLE" or "HIDDEN",
 	-- 	got and "COLLECTED" or "PASSIVE",

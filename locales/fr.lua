@@ -4,8 +4,8 @@ local L = app.L;
 
 local GetSpellName = app.WOWAPI.GetSpellName;
 
-L.TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
-L.SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
+L.TITLE = "|c" .. app.DefaultColors.ATT .. "ALL THE THINGS|r";
+L.SHORTTITLE = "|c" .. app.DefaultColors.ATT .. "ATT|r";
 L.DESCRIPTION = "\"Sottement, vous avez cherché votre propre perte. Effrontément, vous avez ignoré des pouvoirs au-delà de votre compréhension. Vous vous êtes battus pour envahir le royaume du Collectionneur. Maintenant, il n’y a plus qu’une seule issue : emprunter le chemin solitaire... des damnés.\"";
 L.MINIMAP_MOUSEOVER_TEXT = "Clic droit pour ouvrir le menu des options\nClic gauche pour afficher la liste principale\n"..CTRL_KEY_TEXT.." + clic gauche pour afficher la liste de zone\n"..SHIFT_KEY_TEXT.." + clic gauche pour rafraîchir les collections.";
 L.TOP_ROW_INSTRUCTIONS = "|cff3399ffClic gauche et faites glisser pour déplacer la fenêtre\nClic droit pour ouvrir le menu des options\n"..SHIFT_KEY_TEXT.." + clic pour rafraîchir les collections\n"..CTRL_KEY_TEXT.." + clic pour afficher / masquer toutes les listes\n"..SHIFT_KEY_TEXT.." + clic droit pour trier les listes de A à Z|r";

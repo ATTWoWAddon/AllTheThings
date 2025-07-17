@@ -3,8 +3,8 @@ local app = select(2, ...);
 local L = app.L;
 
 local GetSpellName = app.WOWAPI.GetSpellName;
-L.TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
-L.SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
+L.TITLE = "|c" .. app.DefaultColors.ATT .. "ALL THE THINGS|r";
+L.SHORTTITLE = "|c" .. app.DefaultColors.ATT .. "ATT|r";
 L.REQUIRES_PVP = "|CFF00FFDEDies erfordert Spieler gegen Spieler Aktivität oder eine Währung, die damit verbunden ist.|r";
 L.REQUIRES_PETBATTLES = "|CFF00FFDEDies erfodert Haustierkampf.|r";
 L.REPORT_TIP = "\n("..CTRL_KEY_TEXT.."+C um mehrere Linien zu kopieren.)";

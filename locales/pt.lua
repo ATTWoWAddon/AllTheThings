@@ -4,8 +4,8 @@ local L = app.L;
 
 local GetSpellName = app.WOWAPI.GetSpellName;
 
-L.TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
-L.SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
+L.TITLE = "|c" .. app.DefaultColors.ATT .. "ALL THE THINGS|r";
+L.SHORTTITLE = "|c" .. app.DefaultColors.ATT .. "ATT|r";
 L.REPORT_TIP = "\n("..CTRL_KEY_TEXT.."+C para copiar o texto completo do report para sua área de transferência)";
 L.MINIMAP_SLIDER_TOOLTIP = "Use isso para customizar o tamanho do Botão no Minimapa.\n\nPadrão: 36";
 L.COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";

@@ -4,8 +4,8 @@ local L = app.L;
 
 local GetSpellName = app.WOWAPI.GetSpellName;
 
-L.TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
-L.SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
+L.TITLE = "|c" .. app.DefaultColors.ATT .. "ALL THE THINGS|r";
+L.SHORTTITLE = "|c" .. app.DefaultColors.ATT .. "ATT|r";
 L.DESCRIPTION = "\"Глупцы! Вы сами нашли свою погибель! Вам никогда не понять, сколь велика сила, потревоженная вами.  Вы сражались отчаянно, чтобы проникнуть в царство Жнеца. Теперь перед вами лежит лишь один путь – путь проклятых.\"";
 
 L.NEW_VERSION_FLAVORS = {

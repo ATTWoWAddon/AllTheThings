@@ -4,8 +4,8 @@ local L = app.L;
 
 local GetSpellName = app.WOWAPI.GetSpellName;
 
-L.TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
-L.SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
+L.TITLE = "|c" .. app.DefaultColors.ATT .. "ALL THE THINGS|r";
+L.SHORTTITLE = "|c" .. app.DefaultColors.ATT .. "ATT|r";
 L.COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";
 L.COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";	
 L.COMPLETE_ICON = "|T" .. app.asset("known_green") .. ":0|t";	

@@ -4,8 +4,8 @@ local L = app.L;
 
 local GetSpellName = app.WOWAPI.GetSpellName;
 
-L.TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
-L.SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
+L.TITLE = "|c" .. app.DefaultColors.ATT .. "ALL THE THINGS|r";
+L.SHORTTITLE = "|c" .. app.DefaultColors.ATT .. "ATT|r";
 L.DESCRIPTION = "\"Insensatamente has buscado tu propia muerte. Descaradamente has ignorado poderes que escapan a tu comprensión. Has luchado con ahínco para invadir el reino del Coleccionista. Ahora solo queda una salida: recorrer el solitario camino... de los condenados.\"";
 
 L.NEW_VERSION_FLAVORS = {

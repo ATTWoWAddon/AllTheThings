@@ -4,8 +4,8 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 local GetItemClassInfo = app.WOWAPI.GetItemClassInfo;
 
 
-TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
-SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
+TITLE = "|c" .. app.DefaultColors.ATT .. "ALL THE THINGS|r";
+SHORTTITLE = "|c" .. app.DefaultColors.ATT .. "ATT|r";
 DESCRIPTION = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
 
 NEW_VERSION_FLAVORS = {
