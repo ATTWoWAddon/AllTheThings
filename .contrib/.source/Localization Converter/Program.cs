@@ -39,9 +39,20 @@ internal class Program
 
     static void AppendLocalePair(StringBuilder builder, string key, string value)
     {
-        builder.Append("\t\t").Append(key).Append(" = ");
-        if (value.StartsWith("[[")) builder.Append(value).AppendLine(",");
-        else builder.AppendLine($"\"{value.Replace("\"", "\\\"")}\",");
+        builder.Append("\t");
+        AppendKeyValue(builder, key, value);
+    }
+
+    static void AppendKeyValue(StringBuilder builder, string key, string value)
+    {
+        builder.Append("\t").Append(key).Append(" = ");
+        AppendString(builder, value).AppendLine(",");
+    }
+
+    static StringBuilder AppendString(StringBuilder builder, string value)
+    {
+        if (value.StartsWith("[[")) return builder.Append(value);
+        else return builder.Append($"\"{value.Replace("\"", "\\\"")}\"");
     }
 
     static void AppendLocalePair(StringBuilder builder, string enValue, string key, string value)
@@ -84,6 +95,7 @@ internal class Program
         }
 
         // Parse the Locale files
+        Dictionary<string, string> LocalizationStringIcons = [];
         Dictionary<string, string> LocalizationStringColors = [];
         Dictionary<string, Dictionary<string, string>> LocalizationStrings = [];
         Console.WriteLine("PARSING LOCALE FILES...");
@@ -213,8 +225,7 @@ internal class Program
                 // Clean up the locale data
                 if (localeData.EndsWith(';')) localeData = localeData[..^1];
                 localeData = localeData.Replace("..", " .. ").Replace(". .", "..").Replace("  ..  ", " .. ").Replace("app.", "_.");
-                if (localeData.StartsWith('\'') && localeData.EndsWith('\'')) localeData = localeData[1..^1];
-                else if (localeData.StartsWith('{') || !localeData.Contains('"')) localeData = $"[[~{localeData}]]";
+                if (localeData.StartsWith('{')) localeData = $"[[~{localeData}]]";
                 else if (localeData.StartsWith('"') && localeData.EndsWith('"'))
                 {
                     localeData = localeData[1..^1];
@@ -228,9 +239,10 @@ internal class Program
                 if (trimmedLocaleData.StartsWith("|c") && trimmedLocaleData.EndsWith("|r"))
                 {
                     // We got ourselves a color folks! Let's parse that out.
-                    if (trimmedLocaleData.StartsWith("|c\" .. "))
-                    {
+                    if (trimmedLocaleData.StartsWith("|c\""))
+                    { 
                         // Looks like we have a constant following this value.
+                        // Example: |c" .. _.DefaultColors.Account .. "Account Mode"
                     }
                     else
                     {
@@ -293,9 +305,10 @@ internal class Program
                         Console.WriteLine(readable);
                     }
                 }
-                builder.Append("\treadable = \"").Append(readable).AppendLine("\",");
-                builder.Append("\tconstant = \"").Append(key).AppendLine("\",");
-                if (LocalizationStringColors.TryGetValue(key, out string? colorString)) builder.Append("\tcolor = \"").Append(colorString).AppendLine("\",");
+                AppendKeyValue(builder, "readable", readable);
+                AppendKeyValue(builder, "constant", key);
+                if (LocalizationStringIcons.TryGetValue(key, out string? iconString)) AppendKeyValue(builder, "icon", iconString);
+                if (LocalizationStringColors.TryGetValue(key, out string? colorString)) AppendKeyValue(builder, "color", colorString);
                 builder.AppendLine("\texport = true,"); // Export all keys until determined otherwise
                 builder.AppendLine("\ttext = {");
 
