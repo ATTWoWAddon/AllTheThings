@@ -1,5 +1,5 @@
 createLocalizationString({
-	readable = "Left Click to Expand/Collapse\nRight Click to Pop Out to Mini List\nCTRL Click to Expand/Collapse Recursively\nSHIFT Click to Refresh Collections\n" .. SHIFT_KEY_TEXT .. " Right Click to Sort Groups/Popout Lists\nALT Right Click to Plot Waypoints",
+	readable = "Left Click to Expand/Collapse\nRight Click to Pop Out to Mini List\nCTRL Click to Expand/Collapse Recursively\nSHIFT Click to Refresh Collections\nSHIFT Right Click to Sort Groups/Popout Lists\nALT Right Click to Plot Waypoints",
 	constant = "OTHER_ROW_INSTRUCTIONS",
 	color = "ff3399ff",
 	export = true,

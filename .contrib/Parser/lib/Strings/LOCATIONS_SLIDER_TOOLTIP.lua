@@ -1,5 +1,5 @@
 createLocalizationString({
-	readable = "Use this to customize the number of source locations to show in the tooltip.\n\nNOTE: This will also show "X" number of other sources based on how many, if that total is equivalent to the total number of displayed elements, then that will simply display the last source.\n\nDefault: 5",
+	readable = "Use this to customize the number of source locations to show in the tooltip.\n\nNOTE: This will also show 'X' number of other sources based on how many, if that total is equivalent to the total number of displayed elements, then that will simply display the last source.\n\nDefault: 5",
 	constant = "LOCATIONS_SLIDER_TOOLTIP",
 	export = true,
 	text = {

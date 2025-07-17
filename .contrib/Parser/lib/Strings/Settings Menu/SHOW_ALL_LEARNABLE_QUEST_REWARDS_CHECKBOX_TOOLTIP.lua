@@ -1,5 +1,5 @@
 createLocalizationString({
-	readable = "Disable this option to hide items that are listed as "Not Available in Personal Loot" for quests.\n\nThis is useful for tracking items that your class can't use in World Drops, but still marking quests as completed.\n\nSome items can be marked incorrectly: this setting WILL hide items that you can obtain!",
+	readable = "Disable this option to hide items that are listed as \"Not Available in Personal Loot\" for quests.\n\nThis is useful for tracking items that your class can't use in World Drops, but still marking quests as completed.\n\nSome items can be marked incorrectly: this setting WILL hide items that you can obtain!",
 	constant = "SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX_TOOLTIP",
 	export = true,
 	text = {

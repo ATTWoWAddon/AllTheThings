@@ -1,5 +1,5 @@
 createLocalizationString({
-	readable = "Enable this option if you want to see completed source locations in the tooltip.\n\nAs an example, if you complete the quest "Bathran's Hair" in Ashenvale, the tooltip for Evenar Stillwhisper will no longer show that quest when hovering over him.",
+	readable = "Enable this option if you want to see completed source locations in the tooltip.\n\nAs an example, if you complete the quest \"Bathran's Hair\" in Ashenvale, the tooltip for Evenar Stillwhisper will no longer show that quest when hovering over him.",
 	constant = "COMPLETED_SOURCES_CHECKBOX_TOOLTIP",
 	export = true,
 	text = {
