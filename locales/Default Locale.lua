@@ -14,6 +14,43 @@ local L = {
     QUEST_NAMES = {};
     MAP_ID_TO_ZONE_TEXT = {};
 	
+	SPELL_NAME_TO_SPELL_ID = {
+		-- Riding
+		["Riding"] = 33388,
+		["Equitación"] = 33388,
+		["Reiten"] = 33388,
+		["Monte"] = 33388,
+		["Montaria"] = 33388,
+		["Верховая езда"] = 33388,
+		["탈것 타기"] = 33388,
+		["骑术"] = 33388,
+		["騎術"] = 33388,
+
+		-- Herb Gathering
+		-- The skill name is "Herbalism", not "Herb Gathering"
+		["Herbalism"] = 2366,
+		["Herboristería"] = 2366,
+		["Kräuterkunde"] = 2366,
+		["Herboristerie"] = 2366,
+		["Herborismo"] = 2366,
+		["Травничество"] = 2366,
+		["약초채집"] = 2366,
+		["草药学"] = 2366,
+		["草藥學"] = 2366,
+
+		-- French (Classic Era)
+		["Ingénierie"] = 4036,    -- Engineering
+		["Secourisme"] = 3273,    -- First Aid
+
+		-- Spanish (Classic Era)
+		["Costura"] = 3908,    -- Tailoring
+		["Marroquinería"] = 2108,    -- Leatherworking
+
+		["Ganzúa"] = 1809,        -- Lock Pick    -- Required for ES (EU)
+		["Desollar"] = 8613,    -- Skinning        -- Required for ES (EU)
+		["Cнятие шкур"] = 8613,    -- Skinning        -- Required for RU
+	},
+	
 	NEW_VERSION_FLAVORS = {
 		"AllTheThings hungers.",
 		"or Sylvanas might get another lighter.",

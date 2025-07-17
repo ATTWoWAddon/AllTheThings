@@ -2594,7 +2594,7 @@ namespace ATT
                 // Export the Localization Strings file.
                 if (LocalizationStrings != null && LocalizationStrings.Any())
                 {
-                    CurrentParseStage = ParseStage.ExportCustomHeaders;
+                    CurrentParseStage = ParseStage.ExportLocalizationStrings;
 
                     // Now export it based on what we know.
                     var builder = new StringBuilder("-- Localization Strings").AppendLine();

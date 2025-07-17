@@ -422,11 +422,20 @@ namespace ATT
                 Framework.CurrentFileName = mainFileName;
                 luaFiles.Sort(StringComparer.InvariantCulture);
                 lua.State.Encoding = Encoding.UTF8;
-                // link the Lua 'print' function to instead perform a Trace print
-                lua.RegisterFunction("print", typeof(Program).GetMethod(nameof(LuaPrintAsTrace), BindingFlags.NonPublic | BindingFlags.Static));
-                lua.RegisterFunction("error", typeof(Program).GetMethod(nameof(LuaErrorAsTrace), BindingFlags.NonPublic | BindingFlags.Static));
-                lua.DoString($"CurrentFileName = [[{mainFileName.Replace("\\", "/")}]];CurrentSubFileName = nil;");
-                lua.DoString(ProcessContent(File.ReadAllText(mainFileName, Encoding.UTF8)));
+                string content = "";
+                try
+                {
+                    // link the Lua 'print' function to instead perform a Trace print
+                    lua.RegisterFunction("print", typeof(Program).GetMethod(nameof(LuaPrintAsTrace), BindingFlags.NonPublic | BindingFlags.Static));
+                    lua.RegisterFunction("error", typeof(Program).GetMethod(nameof(LuaErrorAsTrace), BindingFlags.NonPublic | BindingFlags.Static));
+                    lua.DoString($"CurrentFileName = [[{mainFileName.Replace("\\", "/")}]];CurrentSubFileName = nil;");
+                    lua.DoString(content = ProcessContent(File.ReadAllText(mainFileName, Encoding.UTF8)));
+                }
+                catch
+                {
+                    File.WriteAllText("./ATT-ERROR-FILE.txt", content, Encoding.UTF8);
+                    throw;
+                }
                 Framework.IgnoredValue = lua.GetString("IGNORED_VALUE");
                 Framework.Validator = new DataValidator(lua, Framework.Config);
                 Framework.CurrentFileName = null;
@@ -996,6 +1005,7 @@ namespace ATT
                 }
                 catch (NLua.Exceptions.LuaScriptException e)
                 {
+                    File.WriteAllText("./ATT-ERROR-FILE.txt", content, Encoding.UTF8);
                     Framework.LogException(e);
                     if (e.Data != null)
                     {
@@ -1028,6 +1038,7 @@ namespace ATT
                 }
                 catch (Exception e)
                 {
+                    File.WriteAllText("./ATT-ERROR-FILE.txt", content, Encoding.UTF8);
                     Framework.LogException(e);
                     var line = GetLineNumber(e);
                     if (line > -1)
