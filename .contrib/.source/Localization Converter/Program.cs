@@ -78,7 +78,7 @@ internal class Program
 
         // Acquire a list of all successfully built localization strings. (We will purge these strings from the locale files)
         Dictionary<string, bool> SuccessfulLocalizationStrings = new();
-        foreach (var localeFile in Directory.EnumerateFiles("../Parser/lib/Strings", "*.lua"))
+        foreach (var localeFile in Directory.EnumerateFiles("../Parser/lib/Strings", "*.lua", SearchOption.AllDirectories))
         {
             SuccessfulLocalizationStrings[Path.GetFileNameWithoutExtension(localeFile)] = true;
         }

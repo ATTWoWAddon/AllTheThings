@@ -68,9 +68,6 @@ for key,value in pairs({
 do a[key] = value; end
 end
 
-		APPEARANCES_CHECKBOX = "Aparências";
-		BATTLE_PETS_CHECKBOX = "Mascotes de Batalha";
-		RECIPES_CHECKBOX = "Receitas";
 
 		AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Essências do Coração de Azeroth";
 		DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t Manuscrito de Vigia-dracos";

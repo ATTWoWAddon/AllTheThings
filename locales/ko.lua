@@ -29,9 +29,6 @@ for key,value in pairs({
 do a[key] = value; end
 end
 
-		APPEARANCES_CHECKBOX = "형상";
-		BATTLE_PETS_CHECKBOX = "전투 애완동물";
-		RECIPES_CHECKBOX = "제조법";
 
 		AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t 아제로스의 심장 정수";
 		DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t 비룡감시자 필사본";

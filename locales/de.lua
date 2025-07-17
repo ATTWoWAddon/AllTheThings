@@ -138,18 +138,8 @@ end
 		DEBUG_MODE = app.ccColors.Red.."Debug Modus|r (Zeig alles)";
 		ACCOUNT_MODE = app.ccColors.Account.."Account Modus";
 
-		SHOW_INCOMPLETE_THINGS_CHECKBOX = "Zeig alle verfolgbaren Dinge";
-		SHOW_COLLECTED_THINGS_CHECKBOX = "Zeig gesammelte Dinge";
 
-		ACCOUNT_THINGS_LABEL = "Accountweite Dinge";
 
-		ACHIEVEMENTS_CHECKBOX_TOOLTIP = "Aktiviere diese Option, um Erfolge zu verfolgen.";
-		APPEARANCES_CHECKBOX = "Vorlagen";
-		BATTLE_PETS_CHECKBOX = "Kampfhaustiere";
-		FLIGHT_PATHS_CHECKBOX = "Flugpunkte";
-		HEIRLOOMS_UPGRADES_CHECKBOX = "+Aufwertungen";
-		RECIPES_CHECKBOX = "Rezepte";
-		REPUTATIONS_CHECKBOX = "Ruffraktionen";
 
 		AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Herzensessenzen";
 		DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t Drachenwächtermanuskript";
@@ -162,21 +152,11 @@ end
 
 
 
-		DISPLAY_IN_COMBAT_CHECKBOX = "Im Kampf";
-		SPEC_CHECKBOX = "Spezialisierungen";
-		FOR_CREATURES_CHECKBOX = "Für Kreaturen";
-		FOR_THINGS_CHECKBOX = "Für Dinge";
-		FOR_UNSORTED_CHECKBOX = "Für Unsortiert";
-
-		SHOW_MODELS_CHECKBOX = "Modell Vorschau";
 
 
 
 
-		CELEBRATE_COLLECTED_CHECKBOX = "Gesammelte Dinge lösen eine Feierlichkeit aus";
-		WARN_REMOVED_CHECKBOX = "Entfernte Dinge lösen eine Warnung aus";
-		SCREENSHOT_COLLECTED_CHECKBOX = "Gesammelte Dinge lösen einen Screenshot aus";
-		SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "Aktiviere diese Option, um bei gesammelten Dingen automatisch einen Screenshot zu erstellen.";
+
 
 
 
