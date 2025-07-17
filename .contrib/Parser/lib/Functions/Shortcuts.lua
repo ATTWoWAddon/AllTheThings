@@ -1762,9 +1762,22 @@ createLocalizationString = function(data)
 			if data.color then
 				-- Include the color first!
 				if isTextProgrammatic(data.color) then
-					
+					for key,value in pairs(textData) do
+						if isTextProgrammatic(value) then
+							textData[key] = "~\"|c\" .. " .. data.color:sub(2) .. " .. " .. value:sub(2) .. " .. \"|r\"";
+						else
+							textData[key] = "~\"|c\" .. " .. data.color:sub(2) .. " .. \"" .. value .. "|r\"";
+						end
+					end
 				else
-					
+					-- Simple color prefixing
+					for key,value in pairs(textData) do
+						if isTextProgrammatic(value) then
+							textData[key] = "~\"|c" .. data.color .. "\" .. " .. value:sub(2) .. " .. \"|r\"";
+						else
+							textData[key] = "|c" .. data.color .. value .. "|r";
+						end
+					end
 				end
 			end
 			if data.icon then
@@ -1791,6 +1804,9 @@ createLocalizationString = function(data)
 						end
 					end
 				end
+			end
+			for key,value in pairs(textData) do
+				textData[key] = textData[key]:gsub("\" .. \"", "");
 			end
 		end
 	end
