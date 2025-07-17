@@ -112,8 +112,9 @@ root(ROOTS.Zones, {
 							69993,	-- Young Primal Devilsaur [West - Red]
 						},
 					}),
-					i(94295, {	-- Primal Egg
-						["provider"] = { "i", 94296 },	-- Cracked Primal Egg
+					i(94295),	-- Primal Egg
+					i(94296, {	-- Cracked Primal Egg
+						["provider"] = { "i", 94295 },	-- Primal Egg
 						["crs"] = {
 							69991,	-- Primal Devilsaur [East - Blue]
 							70010,	-- Primal Devilsaur [East - Tan]

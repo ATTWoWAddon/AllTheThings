@@ -10,6 +10,7 @@ FYRAKK_ASSAULTS = createHeader({
 		de = "Angriffe von Fyrakk",
 		fr = "Assauts de Fyrakk",
 		it = "Assalti di Fyrakk",
+		mx = "Asaltos de Fyrakk",
 		pt = "Ofensivas de Fyrakk",
 		ru = "Налеты Фиракка",
 		ko = "피락의 습격",

@@ -2,7 +2,7 @@
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
-	m(519, {	-- Deepwind Gorge
+	applyclassicphase(MOP_PHASE_ESCALATION, m(519, {	-- Deepwind Gorge
 		["icon"] = 879931,
 		["timeline"] = { ADDED_5_2_0 },
 		["maps"] = {
@@ -74,5 +74,5 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				ach(14188),		-- Well Gorged
 			}),
 		},
-	}),
+	})),
 })));

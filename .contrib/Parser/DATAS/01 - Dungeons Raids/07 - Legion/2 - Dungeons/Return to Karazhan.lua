@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
+root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { ADDED_7_1_0 } }, {
 	inst(860, {	-- Return to Karazhan
 		["coord"] = { 46.7, 70.1, DEADWIND_PASS },
 		["maps"] = {
@@ -374,7 +374,12 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				n(ACHIEVEMENTS, {
 					ach(11433, {	-- Burn After Reading
-						["provider"] = { "o", 265602 },	-- Sealed Tome
+						["providers"] = {
+							{ "o", 265597 },	-- Sealed Tome
+							{ "o", 265599 },	-- Sealed Tome
+							{ "o", 265600 },	-- Sealed Tome
+							{ "o", 265602 },	-- Sealed Tome
+						},
 						["groups"] = {
 							crit(34852, {	-- Legacy of the Mountain King
 								["provider"] = { "i", 142049 },	-- Legacy of the Mountain King
@@ -602,7 +607,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 		},
 	}),
-}));
+})));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {
 	inst(860, {

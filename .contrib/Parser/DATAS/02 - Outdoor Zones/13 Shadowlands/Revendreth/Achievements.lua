@@ -92,7 +92,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 64.0, 62.0, REVENDRETH },
 				},
 			}),
-			explorationAch(14306),	-- Explore Revendreth
+			achWithRep(14338, FACTION_COURT_OF_HARVESTERS),	-- Court of Harvesters
+			ach(14306),	-- Explore Revendreth
 			ach(14798, {	-- Sojourner of Revendreth
 				crit(50317, {	-- The Duelist's Debt
 					["sourceQuests"] = { 59726 },	-- It's a Trap

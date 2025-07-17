@@ -1,0 +1,10 @@
+11.2.0.61476
+fp(3026),	-- Quest Path 10254: 11.2 Raid - Manaforge - Zone - Traversal - Gateway Taxi 01 - Pipes to Hub - TJS
+fp(3029),	-- Tazavesh, K'aresh
+fp(3030),	-- Eco-Dome: Rhovan, K'aresh
+fp(3031),	-- The Oasis, K'aresh
+fp(3032),	-- Shan'dorah, K'aresh
+fp(3033),	-- Shadow Point, K'aresh
+fp(3034),	-- Overlook Zo'shuul, K'aresh
+fp(3035),	-- Hosaas Rest, K'aresh
+fp(3111),	-- Quest Path 10562: 11.2 Raid - Manaforge - Zone - Traversal - Dimensius Forward Left (Quest/Event) - SRC

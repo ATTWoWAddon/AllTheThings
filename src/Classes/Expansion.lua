@@ -81,8 +81,7 @@ setmetatable(ExpansionInfoByID, {
 });
 
 app.CreateExpansion = app.CreateClassWithInfo("Expansion", "expansionID", ExpansionInfoByID, {
-	["ignoreSourceLookup"] = function(t)
-		return true;
-	end,
+	["ignoreSourceLookup"] = app.ReturnTrue,
+	["ShouldShowEventSchedule"] = app.ReturnTrue,
 });
 end

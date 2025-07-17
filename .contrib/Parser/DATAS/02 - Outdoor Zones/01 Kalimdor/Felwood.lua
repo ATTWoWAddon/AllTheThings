@@ -7,10 +7,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["icon"] = 236763,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(853),	-- Explore Felwood
+				ach(853),	-- Explore Felwood
 				ach(4931, {	-- Felwood Quests
 					["timeline"] = { ADDED_4_0_3},
-					-- #if ANYCLASSIC
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
+					-- #else
 					["sourceQuests"] = {
 						27997,	-- The Corruption of the Jadefire
 						28148,	-- Culling the Corrupted
@@ -132,6 +134,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #endif
+			petbattles({
+				n(66442, {	-- Zoltan <Master Pet Tamer>
+					["coord"] = { 40.0, 56.6, FELWOOD },
+					["description"] = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nZoltan's pets are level 16 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Magic - see above.",
+					["timeline"] = { ADDED_5_0_4 },
+					["petBattleLvl"] = 16,
+					["groups"] = {
+						q(31907, {	-- Zoltan
+							["sourceAchievement"] = 6602,	-- Taming Kalimdor
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
+				}),
+			}),
 			n(QUESTS, {
 				q(28340, {	-- A Bomb Deal
 					["qg"] = 48333,	-- Foreman Pikwik
@@ -982,6 +1000,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(65337, {	-- Emerald Orb
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						--
+						i(12906),	-- Purified Moonwell Water (QI!)
 					},
 				}),
 				q(5165, {	-- Dousing the Flames of Protection
@@ -1582,6 +1602,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28116,	-- Crying Violet
 					["coord"] = { 36.3, 58.2, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						i(12907),	-- Corrupt Moonwell Water (QI!)
+						i(12922),	-- Empty Canteen (QI!)
+					},
 				}),
 				q(28228, {	-- Rejoining the Forest
 					["qg"] = 48044,	-- Flourishing Protector
@@ -1666,7 +1690,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/15 Deadwood Furbolg slain
 							["providers"] = {
-								{ "n", 47329},	-- Deadwood Kill Credit
 								{ "n", 7153},	-- Deadwood Warrior
 								{ "n", 7154},	-- Deadwood Gardener
 								{ "n", 7155},	-- Deadwood Pathfinder

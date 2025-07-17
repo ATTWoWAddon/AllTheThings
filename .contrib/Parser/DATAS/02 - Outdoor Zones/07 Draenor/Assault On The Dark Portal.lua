@@ -212,6 +212,12 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 78569 },	-- Hansel Heavyhands
 						["coord"] = { 44.0, 29.5, 577 },
 						["sourceQuest"] = 34439,	-- The Battle of the Forge
+						["g"] = {
+							o(231119, {	-- Blackrock Powder Keg
+								["coord"] = { 46.9, 32.0, 577 },
+								["g"] = { i(112323) },	-- Blackrock Powder Keg (QI!)
+							}),
+						},
 					}),
 					q(35884, {	-- The Home Stretch (A)
 						["provider"] = { "n", 80521 },	-- Thaelin Darkanvil

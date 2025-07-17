@@ -4,33 +4,15 @@
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		n(TREASURES, {
-			i(199061, {	-- A Guide to Rare Fish
-				["questID"] = 70527,
-			}),
-			i(198852, {	-- Bear Termination Orders
-				["questID"] = 70407,
-			}),
-			i(198843, {	-- Emerald Gardens Explorer's Notes
-				["questID"] = 70392,
-			}),
-			i(199066, {	-- Letter of Caution
-				["questID"] = 70535,
-			}),
-			i(194540, {	-- Nokhud Armorer's Notes
-				["questID"] = 67046,
-			}),
-			i(199067, {	-- Precious Plans
-				["questID"] = 70536,
-			}),
-			i(199062, {	-- Ruby Gem Cluster Map
-				["questID"] = 70528,
-			}),
-			i(199065, {	-- Sorrowful Letter
-				["questID"] = 70534,
-			}),
-			i(199068, {	-- Time-Lost Memo
-				["questID"] = 70537,
-			}),
+			i(199061),	-- A Guide to Rare Fish (CI!)
+			i(198852),	-- Bear Termination Orders (CI!)
+			i(198843),	-- Emerald Gardens Explorer's Notes (CI!)
+			i(199066),	-- Letter of Caution (CI!)
+			i(194540),	-- Nokhud Armorer's Notes (CI!)
+			i(199067),	-- Precious Plans (CI!)
+			i(199062),	-- Ruby Gem Cluster Map (CI!)
+			i(199065),	-- Sorrowful Letter (CI!)
+			i(199068),	-- Time-Lost Memo (CI!)
 			n(WEEKLY_PROFESSION_KNOWLEDGE, {
 				i(193891, {  -- Experimental Substance
 					["requireSkill"] = ALCHEMY,

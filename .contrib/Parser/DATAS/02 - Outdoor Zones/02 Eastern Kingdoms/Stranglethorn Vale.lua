@@ -131,25 +131,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				applyclassicphase(PHASE_ONE, ach(871, {	-- Avast Ye, Admiral!
-					["sourceQuest"] = 4621,	-- Avast Ye, Admiral!
-					["groups"] = {
-						title(111, {	-- Bloodsail Admiral <Name>
-							["timeline"] = { ADDED_3_0_2 },
-						}),
-					},
+					title(111, {	-- Bloodsail Admiral <Name>
+						["timeline"] = { ADDED_3_0_2 },
+					}),
 				})),
-				explorationAch(781),	-- Explore Stranglethorn Vale
-				ach(940, {	-- The Green Hills of Stranglethorn
-					["sourceQuests"] = {
-						208,	-- Big Game Hunter
-						-- #if BEFORE CATA
-						338,	-- The Green Hills of Stranglethorn
-						-- #endif
-					},
-					-- #if BEFORE WRATH
-					["AllSourceQuestsRequiredForAchievement"] = true,
-					-- #endif
-				}),
+				ach(781),	-- Explore Stranglethorn Vale
+				ach(940),	-- The Green Hills of Stranglethorn
 			}),
 			pvp(o(179697, {	-- Arena Treasure Chest
 				["description"] = "Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",
@@ -161,14 +148,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				},
 				["groups"] = {
-					ach(389, {	-- Gurubashi Arena Master
-						["provider"] = { "i", 18706 },	-- Arena Master
+					ach(389),	-- Gurubashi Arena Master
+					i(18706, {	-- Arena Master
 						-- #if BEFORE WRATH
-						["lore"] = "Keep it in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",
-						["OnUpdate"] = [[function(t) t:SetAchievementCollected(t.achievementID, ]] .. WOWAPI_GetItemCount(18706) .. [[ > 0 or ]] .. WOWAPI_GetItemCount(19024) .. [[ > 0); end]],
+						["lore"] = "Keep this in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",
 						-- #endif
 					}),
-					i(18706),	-- Arena Master
 					i(18711),	-- Arena Bands
 					i(18710),	-- Arena Bracers
 					i(18712),	-- Arena Vambraces
@@ -309,12 +294,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["g"] = ALL_GNOMISH_ENGINEERING,
 					}),
 				}),
-				prof(FISHING, {
-					-- #if BEFORE CATA
-					o(180685),	-- Waterlogged Wreckage
-					-- #endif
-					o(180901),	-- Bloodsail Wreckage
-				}),
 				prof(LEATHERWORKING, {
 					n(7871, {	-- Se'Jib <Master Tribal Leatherworker>
 						["coord"] = { 36.6, 34.2, STRANGLETHORN_VALE },
@@ -450,11 +429,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						ach(396, {	-- Arena Grandmaster
 							["provider"] = { "i", 19024 },	-- Arena Grand Master
+						}),
+						i(19024, {	-- Arena Grand Master
 							-- #if BEFORE WRATH
 							["lore"] = "Keep it in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",
 							-- #endif
 						}),
-						i(19024),	-- Arena Grand Master
 					},
 				})),
 				pvp(q(7810, {	-- Arena Master
@@ -2681,6 +2661,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}))),
 			-- #endif
+			n(TREASURES, {
+				o(2744, {	-- Giant Clam
+					["coords"] = {
+						{ 28.1, 45.9, NORTHERN_STRANGLETHORN },	-- The Vile Reef
+					},
+					["nomerge"] = true,
+					["groups"] = {
+						i(4611),	-- Blue Pearl
+						i(4655),	-- Giant Clam Meat
+					},
+				}),
+			}),
 			n(VENDORS, {
 				n(2846, {	-- Blixrez Goodstitch <Leatherworking Supplies>
 					["coords"] = {
@@ -3225,6 +3217,63 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}))),
 				-- #endif
+				n(2849, {	-- Qixdi Goodstitch <Cloth Armor & Accessories>
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 42.7, 74.2, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 28.2, 77.6, STRANGLETHORN_VALE },
+						-- #endif
+					},
+					["sym"] = {{"select","itemID",
+						2435,	-- Embroidered Armor
+						3587,	-- Embroidered Belt
+						2438,	-- Embroidered Boots
+						3588,	-- Embroidered Bracers
+						2440,	-- Embroidered Gloves
+						3892,	-- Embroidered Hat
+						2437,	-- Embroidered Pants
+						2160,	-- Padded Armor
+						3591,	-- Padded Belt
+						2156,	-- Padded Boots
+						3592,	-- Padded Bracers
+						2158,	-- Padded Gloves
+						2159,	-- Padded Pants
+						3593,	-- Russet Belt
+						2432,	-- Russet Boots
+						3594,	-- Russet Bracers
+						2434,	-- Russet Gloves
+						3889,	-- Russet Hat
+						2431,	-- Russet Pants
+						2429,	-- Russet Vest
+						3597,	-- Thick Cloth Belt
+						3598,	-- Thick Cloth Bracers
+						203,	-- Thick Cloth Gloves
+						201,	-- Thick Cloth Pants
+						202,	-- Thick Cloth Shoes
+						200,	-- Thick Cloth Vest
+					}},
+					["groups"] = sharedData({
+						["collectible"] = false,
+						["providers"] = {
+							{ "n", 2849},	-- Qixdi Goodstitch <Cloth Armor & Accessories>
+							-- #if AFTER TBC
+							{ "n", 17512},	-- Arred <Jewelcrafting Supplies>
+							{ "n", 16624},	-- Gelanthis <Jewelcrafting Supplies>
+							-- #endif
+							-- #if AFTER CATA
+							{ "n", 49887}, 	-- Gappy Silvertooth <Bling Merchant>
+							-- #endif
+						},
+					}, {
+						i(7341),	-- Cubic Zirconia Ring
+						i(7340),	-- Flawless Diamond Solitaire
+						i(7339),	-- Miniscule Diamond Ring
+						i(7338),	-- Mood Ring
+						i(7342),	-- Silver Piffeny Band
+						i(7337),	-- The Rock
+					}),
+				}),
 				n(2699, {	-- Rikqiz <Leatherworking Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
@@ -3464,16 +3513,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 697,	-- Bloodscalp Shaman
 				}),
+				-- #if BEFORE CATA
 				i(4611, {	-- Blue Pearl
-					["provider"] = { "o", 2744 },	-- Giant Clam
-					-- #if BEFORE CATA
 					["crs"] = {
 						877,	-- Saltscale Forager
 						879,	-- Saltscale Hunter
 						871,	-- Saltscale Warrior
 					},
-					-- #endif
 				}),
+				-- #endif
 				i(5079, {	-- Cold Basilisk Eye
 					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 690,	-- Cold Eye Basilisk

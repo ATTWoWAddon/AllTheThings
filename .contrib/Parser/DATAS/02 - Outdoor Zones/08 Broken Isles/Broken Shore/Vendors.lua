@@ -10,7 +10,7 @@ root(ROOTS.Zones, {
 					["description"] = "/kiss her during the Where There is a Whip... WQ.",
 					["coord"] = { 49.0, 55.8, BROKEN_SHORE },
 					["g"] = {
-						i(147120, {	-- Technique: Grimoire of the Shadow Succubus
+						i(147120, {	-- Technique: Grimoire of the Shadow Succubus (RECIPE!)
 							["timeline"] = { ADDED_7_2_0 },
 						}),
 					},
@@ -256,11 +256,11 @@ root(ROOTS.Zones, {
 							i(156630, {	-- Relinquished Armor Set
 								["cost"] = { { "c", 1226, 400 }, },		-- 1,000x Nethershard
 							}),
-							i(151541, {	-- Technique: Glyph of Floating Shards
+							i(151541, {	-- Technique: Glyph of Floating Shards (RECIPE!)
 								["cost"] = { { "c", 1226, 2500 }, },	-- 2,500x Nethershard
 								["timeline"] = { ADDED_7_2_5 },
 							}),
-							i(141067, {	-- Technique: Grimoire of the Wrathguard
+							i(141067, {	-- Technique: Grimoire of the Wrathguard (RECIPE!)
 								["cost"] = { { "c", 1226, 2500 }, },	-- 2,500x Nethershard
 								["timeline"] = { ADDED_7_2_0 },
 							}),

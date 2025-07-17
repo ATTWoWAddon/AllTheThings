@@ -72,7 +72,7 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 			end
 		end
 		-- default object icon
-		return 133639
+		return app.asset("Interface_Tchest")
 	end,
 	model = function(t)
 		return app.ObjectModels[t.objectID];

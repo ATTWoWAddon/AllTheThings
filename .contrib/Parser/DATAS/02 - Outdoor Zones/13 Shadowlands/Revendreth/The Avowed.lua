@@ -5,11 +5,14 @@ local SINSTONE_FRAGMENTS = 1816;
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(REVENDRETH, {
 		n(FACTIONS, {
-			faction(FACTION_THE_AVOWED, {	-- The Avowed
+			header(HEADERS.Faction, FACTION_THE_AVOWED, {	-- The Avowed
 				["icon"] = 458226,
 				["description"] = "To unlock this faction, you must complete |cFFFFD700The Final Atonement|r questline in Revendreth.\n\nReputation with The Avowed is gained first by killing Depraved mobs outside the Halls of Atonement.  Once you reach Friendly, use your |cFFFFFFFFSinstone Fragments|r to complete daily quests and summon Inquisitors, High Inquisitors, and Grand Inquisitors.\n\nMembers of the |cFFfe040fVenthyr Covenant|r can purchase a special mount and cosmetic cloak from the Avowed quartermaster that are unavailable to other covenants.",
 				["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor (unlocks ability to collect Sinstone Fragments + gain reputation)
 				["g"] = {
+					faction(FACTION_THE_AVOWED, {	-- The Avowed
+						["icon"] = 458226,
+					}),
 					n(ACHIEVEMENTS, {
 						ach(14274, {	-- Absolution For All
 							["description"] = "Fugitive Souls are friendly NPCs that can be found all over the Court of Harvesters.  Find them and bring them to an Avowed Ritualist to perform a ritual of absolution.\n\nOnly one soul can be picked up at a time.",
@@ -237,8 +240,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								{		-- Neutral
 								}, {	-- Friendly
 								}, {	-- Honored
-									i(184222, {	-- Lemet's Requisition Orders
-										["questID"] = 62822,
+									i(184222, {	-- Lemet's Requisition Orders (CI!)
 										["cost"] = { { "c", SINSTONE_FRAGMENTS, 350 } },
 									}),
 									i(182660, {	-- Recipe: Shadestone (RECIPE!)
@@ -253,16 +255,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 									i(182890, {	-- Rapid Recitation Quill (TOY!)
 										["cost"] = { { "c", SINSTONE_FRAGMENTS, 500 } },
 									}),
-									i(184219, {	-- Treatise on Sinstone Fragment Acquisition
-										["questID"] = 62821,
+									i(184219, {	-- Treatise on Sinstone Fragment Acquisition (CI!)
 										["cost"] = { { "c", SINSTONE_FRAGMENTS, 600 } },
 									}),
 								}, {	-- Exalted
 									i(184221, {	-- Archivist's Quill
 										["cost"] = { { "c", SINSTONE_FRAGMENTS, 1000 } },
 									}),
-									i(184220, {	-- Encyclopedia of Sinstone Fragment Recovery
-										["questID"] = 62821,	-- same spell / quest trigger as Treatise but this is BoA version that can be mailed to alts
+									i(184220, {	-- Encyclopedia of Sinstone Fragment Recovery (CI!)
 										["cost"] = { { "c", SINSTONE_FRAGMENTS, 1200 } },
 									}),
 									n(VENTHYR, sharedData({["customCollect"] = "SL_COV_VEN" }, {
@@ -281,7 +281,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
 							["g"] = {
 								i(177231, {	-- Crown of Honor (EC!)
-									["questID"] = 59682,
+									["customCollect"] = "SL_COV_VEN",
 									["cost"] = 1000000,	-- 100g
 								}),
 								i(180780, {	-- Recipe: Red Noggin Candle (RECIPE!)

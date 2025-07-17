@@ -1,0 +1,116 @@
+2.0.0.6080
+fp(24),	-- -- \\ Generic, World Target 002 \\ Generic, World target for Zeppelin Paths \\ Badlands - Kargath - Bat - UNUSED \\ Badlands - Kargath - Bat
+fp(34),	-- -- \\ Transport, Booty Bay \\ Transport, Booty Bay - Ratchet \\ The Barrens, Ratchet to Booty Bay Boat \\ The Barrens - Ratchet to Booty Bay Boat \\ The Barrens - Ratchet Boat Return TEST
+fp(35),	-- -- \\ Transport, Orgrimmar \\ Transport, Orgrimmar Zepplins \\ Durotar, Orgrimmar & Grom'Gol to Undercity Zeppelins \\ Durotar - Orgrimmar to Underzity Zepplin \\ The Barrens - Ratchet Boat TEST
+fp(36),	-- -- \\ Generic, World Target 001 \\ Generic, World target \\ TEST
+fp(46),	-- -- \\ Transport, Southshore \\ Southshore Ferry, Hillsbrad
+fp(47),	-- -- \\ Transport, Grom'gol \\ Transport, Grom'gol - Orgrimmar \\ Stranglethorn, Grom'Gol to Orgrimmar Zeppelin \\ Stranglethorn - Grom'Gol to Orgrimmar Zeppelin
+fp(50),	-- -- \\ Transport, Menethil Harbor \\ Transport, Menethil Ships \\ Menethil to Theramore Boat Path
+fp(51),	-- -- \\ Transport, Auberdine \\ Transport, Rut'theran - Auberdine \\ Rut'theran to Auberdine Boat
+fp(54),	-- -- \\ Transport, Feathermoon \\ Transport, Feathermoon - Feralas \\ Feralas, Feathermoon Stronghold - Boat
+fp(81),	-- -- \\ Filming
+fp(82),	-- -- \\ Silvermoon City
+fp(83),	-- -- \\ Tranquillien, Ghostlands
+fp(88),	-- -- \\ Transport, Exodar
+fp(89),	-- -- \\ Transport, Theramore
+fp(90),	-- -- \\ Transport, Undercity
+fp(91),	-- -- \\ Quest - Azuremyst Shaman Target
+fp(92),	-- -- \\ Quest - Azuremyst Shaman Start
+fp(93),	-- -- \\ Blood Watch, Bloodmyst Isle
+fp(94),	-- -- \\ The Exodar
+fp(95),	-- -- \\ Zangarmarsh - Quest - As the Crow Flies
+fp(96),	-- -- \\ Zangarmarsh - Quest - As the Crow Flies - End
+fp(97),	-- -- \\ Quest - Elekk Path to Kessel
+fp(98),	-- -- \\ Quest - Elekk to Kessel Target
+fp(99),	-- -- \\ Thrallmar, Hellfire Peninsula
+fp(100),	-- -- \\ Honor Hold, Hellfire Peninsula
+fp(101),	-- -- \\ Temple of Telhamat, Hellfire Peninsula
+fp(102),	-- -- \\ Falcon Watch, Hellfire Peninsula
+fp(103),	-- -- \\ Nagrand - PvP - Attack Run Start 1 \\ Nagrand - PvP - Attack Run Start 1
+fp(104),	-- -- \\ Nagrand - PvP - Attack Run End 1
+fp(105),	-- -- \\ Nagrand - PvP - Attack Run Start 2
+fp(106),	-- -- \\ Nagrand - PvP - Attack Run End 2
+fp(107),	-- -- \\ Nagrand - PvP - Attack Run Start 3
+fp(108),	-- -- \\ Nagrand - PvP - Attack Run End 3
+fp(109),	-- -- \\ Nagrand - PvP - Attack Run Start 4
+fp(110),	-- -- \\ Nagrand - PvP - Attack Run End 4
+fp(111),	-- -- \\ Eversong - Duskwither Teleport
+fp(112),	-- -- \\ Eversong - Duskwither Teleport End
+fp(113),	-- -- \\ Quest - Nethrandamus Start
+fp(114),	-- -- \\ Quest - Nethrandamus End Target
+fp(115),	-- -- \\ Quest - Caverns of Time OH - Begin
+fp(116),	-- -- \\ Quest - Caverns of Time OH - End
+fp(117),	-- -- \\ Telredor, Zangarmarsh
+fp(118),	-- -- \\ Zabra'jin, Zangarmarsh
+fp(119),	-- -- \\ Telaar, Nagrand
+fp(120),	-- -- \\ Garadar, Nagrand
+fp(121),	-- -- \\ Allerian Stronghold, Terokkar Forest
+fp(122),	-- -- \\ Area 52, Netherstorm
+fp(123),	-- -- \\ Shadowmoon Village, Shadowmoon Valley
+fp(124),	-- -- \\ Wildhammer Stronghold, Shadowmoon Valley
+fp(125),	-- -- \\ Sylvanaar, Blade's Edge Mountains \\ Sylvannar, Blade's Edge Mountains
+fp(126),	-- -- \\ Thunderlord Stronghold, Blade's Edge Mountains
+fp(127),	-- -- \\ Stonebreaker Hold, Terokkar Forest
+fp(128),	-- -- \\ Shattrath, Terokkar Forest
+fp(129),	-- -- \\ Hellfire Peninsula, The Dark Portal \\ Hellfire Peninsula, The Dark Portal, Alliance
+fp(130),	-- -- \\ Hellfire Peninsula, The Dark Portal \\ Hellfire Peninsula, The Dark Portal, Horde
+fp(131),	-- -- \\ Quest - Horde Hellfire Start
+fp(132),	-- -- \\ Quest - Horde Hellfire End
+fp(133),	-- -- \\ Quest - Hellfire Peninsula (Alliance Path) Start
+fp(134),	-- -- \\ Quest - Hellfire Peninsula (Alliance) End
+fp(135),	-- -- \\ Quest - Hellfire, Aerial Mission (Horde) Start
+fp(136),	-- -- \\ Quest - Hellfire, Aerial Mission (Horde) End
+fp(137),	-- -- \\ Quest - Hellfire, Aerial Mission (Alliance) Start
+fp(138),	-- -- \\ Quest - Hellfire, Aerial Mission (Alliance) End
+fp(139),	-- -- \\ The Stormspire, Netherstorm
+fp(140),	-- -- \\ Altar of Sha'tar, Shadowmoon Valley \\ Altar of Shattra, Shadowmoon Valley
+fp(141),	-- -- \\ Spinebreaker Ridge, Hellfire Peninsula
+fp(142),	-- -- \\ Hellfire Peninsula - Reaver's Fall
+fp(143),	-- -- \\ Quest - Caverns of Time (Intro Flight Path) (End)
+fp(144),	-- -- \\ Quest - Caverns of Time (Intro Flight Path) (Start)
+fp(145),	-- -- \\ Quest - Netherstorm - Stealth Flight - Begin \\ Netherstorm - Stealth Flight - Begin
+fp(146),	-- -- \\ Quest - Netherstorm - Stealth Flight - End \\ Netherstorm - Stealth Flight End
+fp(147),	-- -- \\ Hellfire Peninsula - Force Camp Beach Head
+fp(148),	-- -- \\ Shatter Point, Hellfire Peninsula (Beach Assault)
+fp(149),	-- -- \\ Shatter Point, Hellfire Peninsula
+fp(150),	-- -- \\ Cosmowrench, Netherstorm
+fp(151),	-- -- \\ Swamprat Post, Zangarmarsh
+2.4.3.8606
+fp(152),	-- -- \\ Quest - Netherstorm - Manaforge Ultris (Start)
+fp(153),	-- -- \\ Quest - Netherstorm - Manaforge Ultris (End)
+fp(154),	-- -- \\ Quest - Netherstorm - Manaforge Ultris (Second Pass) Start
+fp(155),	-- -- \\ Quest - Netherstorm - Manaforge Ultris (Second Pass) End
+fp(156),	-- -- \\ Toshley's Station, Blade's Edge Mountains
+fp(157),	-- -- \\ Quest - Blade's Edge - Vision Guide - Start
+fp(158),	-- -- \\ Quest - Blade's Edge - Vision Guide - End
+fp(159),	-- -- \\ Sanctum of the Stars, Shadowmoon Valley
+fp(160),	-- -- \\ Evergrove, Blade's Edge Mountains
+fp(161),	-- -- \\ Quest - Nether Dragon Ally - Start
+fp(162),	-- -- \\ Quest - Nether Dragon Ally - End
+fp(163),	-- -- \\ Mok'Nathal Village, Blade's Edge Mountains
+fp(164),	-- -- \\ Orebor Harborage, Zangarmarsh
+fp(166),	-- -- \\ Emerald Sanctuary, Felwood
+fp(167),	-- -- \\ Forest Song, Ashenvale
+fp(168),	-- -- \\ Filming
+fp(169),	-- -- \\ Quest - Netherwing Ledge - Mine Cart Ride - South - Start
+fp(170),	-- -- \\ Quest - Netherwing Ledge - Mine Cart Ride - South - End
+fp(171),	-- -- \\ Skettis
+fp(172),	-- -- \\ Ogri'La
+fp(173),	-- -- \\ Quest - Yarzill Flight Start
+fp(174),	-- -- \\ Quest - Yarzill Flight Start End
+fp(179),	-- -- \\ Mudsprocket, Dustwallow Marsh
+fp(180),	-- -- \\ Quest - Dustwallow - Alcaz Survey Start
+fp(181),	-- -- \\ Quest - Dustwallow - Alcaz Survey End
+fp(195),	-- -- \\ Rebel Camp, Stranglethorn Vale
+fp(197),	-- -- \\ Test SP2
+fp(198),	-- -- \\ Test SP1
+fp(201),	-- -- \\ Development Land - Kyle Radue Start
+fp(202),	-- -- \\ Development Land - Kyle Radue End
+fp(205),	-- -- \\ Zul'Aman, Ghostlands
+fp(206),	-- -- \\ Transport, Feathermoon (NE Ship)
+fp(209),	-- -- \\ Quest - Sunwell Daily - Dead Scar Bombing - Start
+fp(210),	-- -- \\ Quest - Sunwell Daily - Dead Scar Bombing - End
+fp(211),	-- -- \\ Quest - Sunwell Daily - Ship Bombing - Start
+fp(212),	-- -- \\ Quest - Sunwell Daily - Ship Bombing - End
+fp(213),	-- -- \\ Shattered Sun Staging Area
+fp(220),	-- 

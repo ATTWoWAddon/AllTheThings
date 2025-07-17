@@ -45,6 +45,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 						["description"] = "Can be caught near Danielle, though it's likely they can be caught anywhere along the coast of the island.",
 					}),
 					i(167562),	-- Ionized Minnow
+					i(168262),	-- Sentry Fish
 					i(167662, {	-- Solarsprocket Barbel
 						["description"] = "Can be caught anywhere on the island.",
 					}),

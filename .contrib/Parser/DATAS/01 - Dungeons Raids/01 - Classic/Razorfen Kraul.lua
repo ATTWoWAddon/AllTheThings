@@ -138,6 +138,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
+				q(26908, {	-- Feeling Thorny
+					["qg"] = 37812,	-- Mahka
+					["coord"] = { 45.1, 85.4, SOUTHERN_BARRENS },
+					["timeline"] = { ADDED_4_0_3 },
+					["lvl"] = 30,
+				}),
 				q(1109, {	-- Going, Going, Guano!
 					["qg"] = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
 					["coord"] = { 49.0, 69.8, UNDERCITY },
@@ -490,15 +496,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			e(901, {	-- Charlga Razorflank
 				["creatureID"] = 4421,	-- Charlga Razorflank
 				["groups"] = {
-					ach(635, {	-- Razorfen Kraul
-						-- #if BEFORE WRATH
-						["sourceQuests"] = {
-							1102,	-- A Vengeful Fate
-							6522,	-- An Unholy Alliance
-							1101,	-- The Crone of the Kraul
-						},
-						-- #endif
-					}),
+					ach(635),	-- Razorfen Kraul
 					ach(5043, {	-- Razorfen Kraul Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),

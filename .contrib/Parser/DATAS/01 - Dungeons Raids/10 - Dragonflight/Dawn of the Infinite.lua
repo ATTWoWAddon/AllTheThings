@@ -500,6 +500,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(3222),	-- Wicked Dagger						(NYI)
 
 		ig(14151),	-- Chanting Blade						(Removed)
+		ig(134725),	-- Cold-Touched Mageblade				(Removed)
 		ig(134718),	-- Cold-Touched Shanker					(Removed)
 		ig(134748),	-- Covert Shanker						(Removed)
 		ig(37597),	-- Direbrew's Shanker					(Removed)
@@ -507,6 +508,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(49120),	-- Direbrew's Bloody Shanker			(Removed)
 		ig(93625),	-- Miniature Winter Veil Tree			(Removed)(MOP Version)
 		ig(66540),	-- Miniature Winter Veil Tree			(Removed)
+		ig(117371),	-- Miniature Winter Veil Tree			(Removed)(WOD Version)
 		ig(2941),	-- Prison Shank							(Removed)
 		ig(134610),	-- Scorching Shanker					(Removed)
 		ig(134779),	-- Seasoned Shanker						(Removed)
@@ -607,7 +609,6 @@ local QUANTUM_GROUP = sharedData({
 
 		ig(68195),	-- Bazzalan's Blade						(Removed)
 		ig(19110),	-- Cold Forged Blade					(Removed)
-		ig(134725),	-- Cold-Touched Mageblade				(Removed)
 		ig(134726),	-- Cold-Touched Sword					(Removed)
 		ig(134758),	-- Covert Mageblade						(Removed)
 		ig(14145),	-- Cursed Felblade						(Removed)
@@ -617,6 +618,10 @@ local QUANTUM_GROUP = sharedData({
 	i(208123, {	-- Quantum Wand
 		hqt(77610, {	-- when you learn everything from Quantum Wand
 			["name"] = "Quantum Wand completed.",
+		}),
+		ig(161926, {	-- Talanji's Salutary Scepter 		(NYI)
+			["description"] = "Likely possible to also get from completing Quests in Tirisgarde as Alliance and relogging. We dont know which quest",
+			["races"] = HORDE_ONLY,
 		}),
 		ig(134728),	-- Cold-Touched Wand					(Removed)
 		ig(134590),	-- Vanguard Baton of Light				(Removed)

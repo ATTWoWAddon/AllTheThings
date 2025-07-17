@@ -1,0 +1,13 @@
+1.14.1.40666
+ach(15329),	-- Has Died
+1.14.1.40688
+ach(15330),	-- Survivor of the Firelord (Season of Mastery) \\ Survivor of the Firelord \\ Survivor of the Flames
+ach(15332),	-- [DNT] Survivor (Season of Mastery) (hidden) \\ Survivor
+1.14.1.40800
+ach(15333),	-- Survivor of the Shadow Flame (Season of Mastery) \\ Survivor of the Shadow Flame
+ach(15334),	-- Survivor of the Old God (Season of Mastery) \\ Survivor of the Old God
+ach(15335),	-- Survivor of the Damned (Season of Mastery) \\ Survivor of the Damned
+1.14.2.42597
+ach(15578),	-- <Hidden> Adventure Awaits - Hit 60 with Buff Adventure Awaits
+1.14.3.42770
+ach(15637),	-- The Immortal (Season of Mastery) \\ The Immortal

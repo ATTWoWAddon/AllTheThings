@@ -61,7 +61,12 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			q(49052),	-- Mar'cuus
 			q(47828, {	-- Memories of the Fallen
 				["g"] = {
-					i(151555),	-- Crystallized Memory (QI!)
+					o(272009, {	-- Preserved Crystal Collection
+						i(151555),	-- Crystallized Memory (QI!)
+					}),
+					o(272010, {	-- Crystalized Memory
+						i(151555),	-- Crystallized Memory (QI!)
+					}),
 				},
 			}),
 			q(48106),	-- No Love Lost

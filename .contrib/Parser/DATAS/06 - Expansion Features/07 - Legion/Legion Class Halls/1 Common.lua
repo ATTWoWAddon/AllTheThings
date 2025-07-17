@@ -1093,7 +1093,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					un(REMOVED_FROM_GAME, i(143329)),	-- Dire Summons
 					i(140362),	-- Dust from the Shadowlands
 					un(REMOVED_FROM_GAME, i(143479)),	-- Frayed Banner
-					un(REMOVED_FROM_GAME, i(142522)),	-- Rude Letter (removed until Brawler's Guild comes back someday)
+					un(REMOVED_FROM_GAME, i(142522)),	-- Rude Letter (CI!) (removed until Brawler's Guild comes back someday)
 					i(116415, { ["timeline"] = { REMOVED_10_2_5 } }),	-- Shiny Pet Charm
 					-- Dungeons
 					un(REMOVED_FROM_GAME, i(139471)),	-- Black Rook Missive -> Black Rook Hold: The Lord of Black Rook Hold -> Black Rook Hold
@@ -1108,8 +1108,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					un(REMOVED_FROM_GAME, i(139473)),	-- Vial of Poisoned Blood -> Darkheart Thicket: Into Darkheart Thicket -> Darkheart Thicket
 					un(REMOVED_FROM_GAME, i(139475)),	-- Waterlogged Letter -> Maw of Souls: Into the Maw of Souls -> Maw of Souls
 					-- Follower Equipments
+					i(147569, { ["timeline"] = { ADDED_7_2_0 } }),	-- Arcane Trap
 					i(152928, { ["timeline"] = { ADDED_7_3_0 } }),	-- Archaic Seerstone
 					i(139802),	-- Auspicious Fetish
+					i(152936, { ["timeline"] = { ADDED_7_3_0 } }),	-- Azurelight Sapphire
+					i(139845),	-- Band of Primordial Strength
 					i(139873),	-- Bottled Sanity
 					i(140582),	-- Bottomless Flask
 					i(139827),	-- Brooch of Endless Dreams
@@ -1131,7 +1134,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					i(139804),	-- Glacial Fang
 					i(139419),	-- Golden Banana
 					i(147554, { ["timeline"] = { ADDED_7_2_0 } }),	-- Harpy Feather
+					i(152442, { ["timeline"] = { ADDED_7_3_0 } }),	-- Impervious Shadoweave Hood
 					i(147350, { ["timeline"] = { ADDED_7_2_0 } }),	-- Invincible Armor Set
+					i(151842, { ["timeline"] = { ADDED_7_3_0 } }),	-- Krokul Armor Set
 					i(152438, { ["timeline"] = { ADDED_7_3_0 } }),	-- Krokul Sledgehammer
 					i(139824),	-- Light's Haven
 					i(152447, { ["timeline"] = { ADDED_7_3_0 } }),	-- Lightburst Charge
@@ -1170,6 +1175,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					i(152935, { ["timeline"] = { ADDED_7_3_0 } }),	-- Wakener's Bauble
 					i(147559, { ["timeline"] = { ADDED_7_2_0 } }),	-- Ward of Infinite Fury
 					i(139816),	-- Well-Worn Stone
+					i(139849),	-- Windrunner's Gift
 					i(152446, { ["timeline"] = { ADDED_7_3_0 } }),	-- Writ of Holy Orders
 					i(151844, { ["timeline"] = { ADDED_7_3_0 } }),	-- Xenedar Armor Set
 					i(152931, { ["timeline"] = { ADDED_7_3_0 } }),	-- Xenic Tincture

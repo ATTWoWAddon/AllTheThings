@@ -1,0 +1,4 @@
+1.15.1.53009
+fp(2913),	-- Quest Path 9571: S03 - Runecarving - Shaman - Level 40 Quest - 6 - KJA
+fp(2914),	-- Quest Path 9574: S03 - Runecarving - Shaman - Level 40 Quest - 6 - Flight Back - KJA
+fp(2930),	-- Quest Path 9620: S03 - Runecarving - Shaman - Level 40 Rune - Corrupted Fire Totem - Tal Taxi Path - KJA

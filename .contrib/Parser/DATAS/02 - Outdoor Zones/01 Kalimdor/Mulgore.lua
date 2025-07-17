@@ -158,7 +158,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["races"] = HORDE_ONLY,
 							["classes"] = { SHAMAN },
 							["lvl"] = 4,
-							-- #if BEFORE 4.0.3
+							-- #if BEFORE CATA
 							["groups"] = {
 								recipe(8071),	-- Stoneskin Totem
 								i(5175, {	-- Earth Totem
@@ -177,7 +177,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(27015, {	-- Consecrated Note
 							["qg"] = 44927,	-- Rohaku Stonehoof
-							["coord"] = { 34.0, 54.0, CAMP_NARACHE },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 34.0, 54.0, CAMP_NARACHE },
+								-- #else
+								{ 46.2, 82.4, MULGORE },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { TAUREN },
 							["classes"] = { PALADIN },
@@ -192,7 +198,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["classes"] = { SHAMAN },
 							["repeatable"] = true,
 							["lvl"] = 4,
-							-- #if BEFORE 4.0.3
+							-- #if BEFORE CATA
 							["groups"] = {
 								i(6635),	-- Earth Sapta
 							},
@@ -204,7 +210,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 9565 },	-- Etched Note
 							},
 							["sourceQuest"] = 747,	-- The Hunt Begins
-							["coord"] = { 44.9, 77.1, MULGORE },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 39.4, 37.0, CAMP_NARACHE },
+								-- #elseif AFTER CATA
+								{ 49, 78.2, MULGORE },
+								-- #else
+								{ 44.9, 77.1, MULGORE },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { TAUREN },
 							["classes"] = { HUNTER },
@@ -215,7 +229,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								14456,	-- Rite of Courage
 								14455,	-- Stop the Thorncallers
 							},
-							["coord"] = { 31.0, 50.6, CAMP_NARACHE },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 31.0, 50.6, CAMP_NARACHE },
+								-- #else
+								{ 46.2, 82.6, MULGORE },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = { i(49539) },	-- Adana's Torch (QI!)
@@ -223,13 +243,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(14458, {	-- Go to Adana
 							["qg"] = 2980,	-- Grull Hawkwind
 							["sourceQuest"] = 24852,	-- Our Tribe, Imprisoned
-							["coord"] = { 39.4, 37.0, CAMP_NARACHE },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 39.4, 37.0, CAMP_NARACHE },
+								-- #else
+								{ 49, 78.2, MULGORE },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 						}),
 						q(27014, {	-- Hallowed Note
 							["qg"] = 44927,	-- Rohaku Stonehoof
-							["coord"] = { 34.0, 54.0, CAMP_NARACHE },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 34.0, 54.0, CAMP_NARACHE },
+								-- #else
+								{ 46.2, 82.4, MULGORE },
+								-- #endif
+							},
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+							["races"] = { TAUREN },
+							["classes"] = { PRIEST },
+						}),
+						q(27066, {	-- Healing in a Flash [Cata] / Learning the Word [MoP+] (Tauren)
+							["qg"] = 37724,	-- Seer Ravenfeather <Priest Trainer>
+							["sourceQuest"] = 27014,	-- Hallowed Note
+							-- #if BEFORE MOP
+							["coord"] = { 45, 75.2, MULGORE },
+							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { TAUREN },
 							["classes"] = { PRIEST },
@@ -269,7 +311,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(24861, {	-- Last Rites, First Rites
 							["qg"] = 2981,	-- Chief Hawkwind
 							["sourceQuest"] = 14460,	-- Rite of Honor
-							["coord"] = { 27.6, 28.4, CAMP_NARACHE },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 27.6, 28.4, CAMP_NARACHE },
+								-- #else
+								{ 45.2, 75.6, MULGORE },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = { i(50465) },	-- Water Pitcher (QI!)
@@ -277,7 +325,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(24852, {	-- Our Tribe, Imprisoned
 							["qg"] = 2980,	-- Grull Hawkwind
 							["sourceQuest"] = 14452,	-- Rite of Strength
-							["coord"] = { 39.4, 37.0, CAMP_NARACHE },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 39.4, 37.0, CAMP_NARACHE },
+								-- #else
+								{ 49, 78.2, MULGORE },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -291,6 +345,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									["timeline"] = { ADDED_4_0_3 },
 								}),
 							},
+						}),
+						q(27027, {	-- Primal Strike (Tauren)
+							["qg"] = 3062,	-- Meela Dawnstrider <Shaman Trainer>
+							["sourceQuest"] = 3093,	-- Rune-Inscribed Note
+							-- #if AFTER MOP
+							["coord"] = { 45, 75, CAMP_NARACHE },
+							-- #else
+							["coord"] = { 45, 76, MULGORE },
+							-- #endif
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+							["races"] = { TAUREN },
+							["classes"] = { SHAMAN },
+						}),
+						q(27067, {	-- Rejuvenating Touch [Cata] / Moonfire [MoP+] (Tauren)
+							["qg"] = 3060,	-- Gart Mistrunner <Druid Trainer>
+							["sourceQuest"] = 3094,	-- Verdant Note
+							-- #if BEFORE MOP
+							["coord"] = { 45.2, 75.2, MULGORE },
+							-- #endif
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+							["races"] = { TAUREN },
+							["classes"] = { DRUID },
 						}),
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77648, {	-- Relics of the Tauren
@@ -312,7 +388,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(14456, {	-- Rite of Courage
 							["qg"] = 36694,	-- Adana Thunderhorn
 							["sourceQuest"] = 14458,	-- Go To Adana
-							["coord"] = { 31.0, 50.6, CAMP_NARACHE },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 31.0, 50.6, CAMP_NARACHE },
+								-- #else
+								{ 46.2, 82.6, MULGORE },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -338,7 +420,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								14461,	-- Feed of Evil
 								14459,	-- The Battleboars
 							},
-							["coord"] = { 31.0, 50.6, CAMP_NARACHE },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 31.0, 50.6, CAMP_NARACHE },
+								-- #else
+								{ 46.2, 82.6, MULGORE },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -361,7 +449,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(14452, {	-- Rite of Strength
 							["qg"] = 2980,	-- Grull Hawkwind
 							["sourceQuest"] = 14449,	-- The First Step
-							["coord"] = { 39.4, 37.0, CAMP_NARACHE },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 39.4, 37.0, CAMP_NARACHE },
+								-- #else
+								{ 49, 78.2, MULGORE },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -414,9 +508,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						q(24215, {	-- Rite of the Winds
-							["qg"] = 36803,	-- Rite of the Winds
+							["qg"] = 36803,	-- Dyami Windsoar
 							["sourceQuest"] = 23733,	-- Rites of the Earthmother
+							-- #if AFTER MOP
 							["coord"] = { 15.4, 30.4, CAMP_NARACHE },
+							-- #else
+							["coord"] = { 41.2, 76, MULGORE },
+							-- #endif
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = { i(49652) },	-- Water of Vision (QI!)
@@ -424,7 +522,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(23733, {	-- Rites of the Earthmother
 							["qg"] = 2981,	-- Chief Hawkwind
 							["sourceQuest"] = 24861,	-- Last Rites, First Rites
-							["coord"] = { 27.6, 28.4, CAMP_NARACHE },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 27.6, 28.4, CAMP_NARACHE },
+								-- #else
+								{ 45.2, 75.6, MULGORE },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 						}),
@@ -451,7 +555,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 9552 },	-- Rune-Inscribed Note
 							},
 							["sourceQuest"] = 747,	-- The Hunt Begins
-							["coord"] = { 44.9, 77.1, MULGORE },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 39.4, 37.0, CAMP_NARACHE },
+								-- #elseif AFTER CATA
+								{ 49, 78.2, MULGORE },
+								-- #else
+								{ 44.9, 77.1, MULGORE },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { TAUREN },
 							["classes"] = { SHAMAN },
@@ -462,7 +574,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 9547 },	-- Simple Note
 							},
 							["sourceQuest"] = 747,	-- The Hunt Begins
-							["coord"] = { 44.9, 77.1, MULGORE },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 39.4, 37.0, CAMP_NARACHE },
+								-- #elseif AFTER CATA
+								{ 49, 78.2, MULGORE },
+								-- #else
+								{ 44.9, 77.1, MULGORE },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { TAUREN },
 							["classes"] = { WARRIOR },
@@ -470,7 +590,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(14455, {	-- Stop the Thorncallers
 							["qg"] = 36694,	-- Adana Thunderhorn
 							["sourceQuest"] = 14458,	-- Go To Adana
-							["coord"] = { 31.0, 50.6, CAMP_NARACHE },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 31.0, 50.6, CAMP_NARACHE },
+								-- #else
+								{ 46.2, 82.6, MULGORE },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -494,7 +620,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								14456,	-- Rite of Courage
 								14455,	-- Stop the Thorncallers
 							},
-							["coord"] = { 31.0, 50.6, CAMP_NARACHE },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 31.0, 50.6, CAMP_NARACHE },
+								-- #else
+								{ 46.2, 82.6, MULGORE },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -535,9 +667,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								}),
 							},
 						}),
+						q(27020, {	-- The First Lesson (Tauren)
+							["qg"] = 3059,	-- Harutt Thunderhorn <Warrior Trainer>
+							["sourceQuest"] = 3091,	-- Simple Note
+							-- #if BEFORE MOP
+							["coord"] = { 45, 75.6, MULGORE },
+							-- #endif
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+							["races"] = { TAUREN },
+							["classes"] = { WARRIOR },
+						}),
 						q(14449, {	-- The First Step
 							["qg"] = 2981,	-- Chief Hawkwind
-							["coord"] = { 27.7, 28.5, CAMP_NARACHE },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 27.6, 28.4, CAMP_NARACHE },
+								-- #else
+								{ 45.2, 75.6, MULGORE },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 						}),
@@ -582,6 +730,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								}),
 							},
 						}),
+						q(27021, {	-- The Hunter's Path (Tauren)
+							["qg"] = 3061,	-- Lanka Farshot <Hunter Trainer>
+							["sourceQuest"] = 3092,	-- Etched Note
+							-- #if BEFORE MOP
+							["coord"] = { 45.2, 75.4, MULGORE },
+							-- #endif
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+							["races"] = { TAUREN },
+							["classes"] = { HUNTER },
+						}),
+						q(27023, {	-- The Way of the Sunwalkers (Tauren)
+							["qg"] = 37737,	-- Sunwalker Helaku <Paladin Trainer>
+							["sourceQuest"] = 27015,	-- Consecrated Note
+							-- #if BEFORE MOP
+							["coord"] = { 45, 75.6, MULGORE },
+							-- #endif
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+							["races"] = { TAUREN },
+							["classes"] = { PALADIN },
+						}),
 						q(31166, {	-- Tiger Palm
 							["qg"] = 63327,	-- Shoyu
 							["coord"] = { 27.8, 28.6, CAMP_NARACHE },
@@ -595,7 +763,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 9581 },	-- Verdant Note
 							},
 							["sourceQuest"] = 747,	-- The Hunt Begins
-							["coord"] = { 44.9, 77.1, MULGORE },
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 39.4, 37.0, CAMP_NARACHE },
+								-- #elseif AFTER CATA
+								{ 49, 78.2, MULGORE },
+								-- #else
+								{ 44.9, 77.1, MULGORE },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { TAUREN },
 							["classes"] = { DRUID },
@@ -648,7 +824,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			n(ACHIEVEMENTS, {
-				explorationAch(736),	-- Explore Mulgore
+				ach(736),	-- Explore Mulgore
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",
@@ -693,6 +869,41 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #endif
+			petbattles({
+				q(31575, {	-- Got one! (Naleen)
+					["qg"] = 63067,	-- Naleen
+					["sourceQuest"] = 31831,	-- Level Up!
+					["coord"] = { 49.2, 56.1, MULGORE },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(31573, {	-- Learning the Ropes (Naleen)
+					["qg"] = 63067,	-- Naleen
+					["coord"] = { 49.2, 56.1, MULGORE },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(31831, {	-- Level Up! (Naleen)
+					["qg"] = 63067,	-- Naleen
+					["sourceQuest"] = 31574,	-- On The Mend
+					["coord"] = { 49.2, 56.1, MULGORE },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(31574, {	-- On The Mend (Naleen)
+					["qg"] = 63067,	-- Naleen
+					["sourceQuest"] = 31573,	-- Learning the Ropes
+					["coord"] = { 49.2, 56.1, MULGORE },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Battle Pets Healed
+							["provider"] = { "n", 10050 },	-- Seikwa <Stable Master>
+							["coord"] = { 47.0, 59.6, MULGORE },
+						}),
+					},
+				}),
+			}),
 			n(QUESTS, {
 				q(833, {	-- A Sacred Burial
 					["qg"] = 3233,	-- Lorekeeper Raintotem
@@ -790,7 +1001,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["lvl"] = 10,
-					-- #if BEFORE 3.0.2
+					-- #if BEFORE WRATH
 					["groups"] = {
 						{
 							["recipeID"] = 9035,	-- Hex of Weakness (Rank 1)
@@ -1224,7 +1435,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/15 Palemane Gnolls
 							["providers"] = {
-								{ "n", 42354},	-- Palemane Gnoll Kill Credit
 								{ "n", 2949},	-- Palemane Tanner
 								{ "n", 2950},	-- Palemane Skinner
 								{ "n", 2951},	-- Palemane Poacher
@@ -1591,7 +1801,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = 10,
-					-- #if BEFORE 3.0.2
+					-- #if BEFORE WRATH
 					["groups"] = {
 						{
 							["recipeID"] = 2652,	-- Touch of Weakness (Rank 1)

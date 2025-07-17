@@ -89,7 +89,7 @@ root(ROOTS.Zones, {
 					ach(9548, {		-- Buried Treasures (Mok'gol Watchpost)
 						["sym"] = {{ "achievement_criteria" }},
 					}),
-					explorationAch(8942),	-- Explore Nagrand
+					ach(8942),	-- Explore Nagrand
 					ach(9610, {	-- History of Violence (Broken Precipice)
 						["description"] = "In order to get the relics, except the Bust, use Jewel of Transformation in the area and then break boulder piles.",
 						["groups"] = {
@@ -446,9 +446,25 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
-				petbattles({ ADDED_6_0_2 }, {
+				petbattles({
 					n(87110, {	-- Tarr the Terrible <Grand Master Pet Tamer>
 						["coord"] = { 56.2, 9.80, DRAENOR_NAGRAND },
+						["timeline"] = { ADDED_6_0_2 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(37206, {	-- Tarr the Terrible
+								["timeline"] = { ADDED_6_0_2 },
+								["isDaily"] = true,
+								["_drop"] = { "g" },	-- Drops Polished Pet Charm
+								["groups"] = {
+									-- #if BEFORE 10.2.5
+									i(116415, {	-- Shiny Pet Charm
+										["timeline"] = { REMOVED_10_2_5 },
+									}),
+									-- #endif
+								},
+							}),
+						},
 					}),
 				}),
 				n(QUESTS, {
@@ -1445,8 +1461,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34964, {	-- The Farseer Awaits
-						["provider"] = { "n", 80003 },	-- Thrall
-						["coord"] = { 82.8, 45.0, DRAENOR_NAGRAND },
+						["qgs"] = {
+							80003,	-- Thrall
+							81419,	-- Thrall
+						},
+						["coords"] = {
+							{ 82.8, 45.0, DRAENOR_NAGRAND },
+							{ 67.0, 33.7, DRAENOR_NAGRAND },
+						},
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34918,	-- Shields Down!
 						["isBreadcrumb"] = true,
@@ -2549,6 +2571,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 64.6, 65.8, DRAENOR_NAGRAND },
 						["g"] = {
 							i(118253),	-- Trophy Band of Telaar
+						},
+					}),
+					o(230725, {	-- Treasure of Kull'krosh
+						["questID"] = 34760,	-- triggers together with questID 34276 (another treasure)
+						["coord"] = { 37.7, 70.6, DRAENOR_NAGRAND },
+						["g"] = {
+							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(243282, {	-- Viking Pepe

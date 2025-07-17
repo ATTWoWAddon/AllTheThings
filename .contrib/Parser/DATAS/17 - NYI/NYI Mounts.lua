@@ -435,13 +435,35 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 				["displayID"] = 46799,
 			}),
 		})),
+
 		-- 5.4.0
 		expansion(EXPANSION.MOP, patch(4,0), bubbleDownSelf({ ["timeline"] = { CREATED_5_4_0 } }, {
 			-- With MountID Attached
-			--i(104011, {	-- Stormcrow (MOUNT!)
-			--	["displayID"] = 51323,
-			--}),
+			i(104011, {	-- Stormcrow (MOUNT!)
+				["displayID"] = 51323,
+			}),
 		})),
+
+		-- #if ANYCLASSIC
+		-- 5.5.0
+		expansion(EXPANSION.MOP, patch(5,0), bubbleDownSelf({ ["timeline"] = { CREATED_5_5_0 } }, {
+			mount(1224647, {	-- Meeksi Brewrobber (MOUNT!)
+				["displayID"] = 124513,
+			}),
+			mount(1224643, {	-- Meeksi Gentlepaw (MOUNT!)
+				["displayID"] = 124510,
+			}),
+			mount(1224645, {	-- Meeksi Rufflemane (MOUNT!)
+				["displayID"] = 124509,
+			}),
+			mount(1224596, {	-- Meeksi Teapuff (MOUNT!)
+				["displayID"] = 124512,
+			}),
+			mount(1224646, {	-- Meeksi Wanderpaw (MOUNT!)
+				["displayID"] = 124511,
+			}),
+		})),
+		-- #endif
 	}),
 	expansion(EXPANSION.WOD, {
 		-- 6.0.2
@@ -621,9 +643,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(186639, {	-- Pilfered Gearglider (MOUNT!)
 				["displayID"] = 100052,
 			}),
-			i(186640, {	-- Silver Gearglider (MOUNT!)
-				["displayID"] = 100053,
-			}),
 			i(186491, {	-- Spring Wilderling (MOUNT!)
 				["displayID"] = 101004,
 			}),
@@ -656,7 +675,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			mount(371571, {	-- Dragon Isles Drake Model Test (MOUNT!)
 				["displayID"] = 102924,
 			}),
@@ -758,9 +777,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		-- 10.2.0
 		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			-- With MountID Attached
-			i(210141, {	-- [PH] Brown-Furred Spiky Bakar (MOUNT!)
-				["displayID"] = 111719,
-			}),
 			i(210143, {	-- [PH] White-Furred Bakar (MOUNT!)
 				["displayID"] = 111729,
 			}),
@@ -805,9 +821,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(223282, {	-- [PH] Blue Old God Fish Mount (MOUNT!)
 				["displayID"] = 119505,
 			}),
-			i(221270, {	-- [PH] Goblin Surfboard (MOUNT!)
-				["displayID"] = 119192,
-			}),
 			i(223460, {	-- [PH] Nightsaber Horde Mount White (MOUNT!)
 				["displayID"] = 119658,
 			}),
@@ -818,7 +831,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			mount(405623, {	-- Armadillo Roller
 				["displayID"] = 91633,
 			}),
@@ -944,16 +957,22 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
-			mount(466423, {	-- Unstable Rocket
-				--["displayID"] = ,
-			}),
-			mount(466464, {	-- Unstable Rocket
-				--["displayID"] = ,
-			}),
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			-- With MountID attached
 			i(232523, {	-- G-99 Breakneck
 				--["displayID"] = ,
+			}),
+			i(235659, {	-- Midnight Butterfly (MOUNT!)
+				--["displayID"] = 126175,
+			}),
+			i(235554, {	-- Midnight Darkmoon Charger (MOUNT!)
+				--["displayID"] = 126058,
+			}),
+			i(235557, {	-- Snowy Darkmoon Charger (MOUNT!)
+				--["displayID"] = 126061,
+			}),
+			i(235658, {	-- Spring Butterfly (MOUNT!)
+				--["displayID"] = 126174,
 			}),
 		})),
 	}),

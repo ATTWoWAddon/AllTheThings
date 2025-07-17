@@ -4,5 +4,7 @@ YEAR2023 = createHeader({
 	text = {
 		en = "Year 2023",
 		cn = "2023年",
+		es = "Año 2023",
+		mx = "Año 2023",
 	},
 });

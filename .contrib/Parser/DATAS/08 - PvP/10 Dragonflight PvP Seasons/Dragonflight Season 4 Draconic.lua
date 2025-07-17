@@ -265,6 +265,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {
 			n(199599, {	-- Calderax
 				["coord"] = { 44.3, 36.6, VALDRAKKEN },
+				["ItemAppearanceModifierID"] = 159,
 				["g"] = {
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
@@ -698,7 +699,21 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					i(216037),	-- Draconic Gladiator's Silk Amice
 					i(216041),	-- Draconic Gladiator's Silk Armbands
 					i(216039),	-- Draconic Gladiator's Silk Belt
-					i(216027),	-- Draconic Gladiator's Silk Blouse
+					-- (changed in 11.0.2 when Blizzard deleted s:197334 and replaced with s:227796 and they didn't fix the Ensemble)
+					-- New: https://wago.tools/db2/ItemModifiedAppearance?build=11.0.2.56110&filter%5BItemAppearanceModifierID%5D=0&filter%5BItemID%5D=216027&page=1
+					-- Old: https://wago.tools/db2/ItemModifiedAppearance?build=11.0.2.56071&filter%5BItemAppearanceModifierID%5D=0&filter%5BItemID%5D=216027&page=1
+					-- #IF BEFORE 11.0.2
+					i(216027, {	-- Draconic Gladiator's Silk Blouse
+						["ItemAppearanceModifierID"] = 160,
+						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "deleted 11.0.2.56110" },
+					}),
+					-- #ELSE
+					i(216027, {	-- Draconic Gladiator's Silk Blouse
+						["bonusID"] = 1,
+						["ItemAppearanceModifierID"] = 1,
+						["timeline"] = { "created 11.0.2.56110" },	-- only obtainable via Ensemble, which is not currently accurate
+					}),
+					-- #ENDIF
 					i(216033),	-- Draconic Gladiator's Silk Cap
 					i(216038),	-- Draconic Gladiator's Silk Cord
 					i(216030),	-- Draconic Gladiator's Silk Gloves

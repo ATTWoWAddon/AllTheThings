@@ -111,6 +111,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 81634,
 				["g"] = {
 					i(221214),	-- Chitin Chain Headpiece
+					i(221252),	-- Nerubian Slayer's Claymore
 				},
 			}),
 			n(216047, {	-- The One Left
@@ -118,6 +119,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 63.5, 95.2, AZJ_KAHET },
 				["g"] = {
 					i(221251),	-- Bestial Underground Cleaver
+					i(221247),	-- Cavernous Critter Shooter
 					i(221265),	-- Charm of the Underground Beast
 					i(225998),	-- Earthen Adventurer's Cloak
 					i(221246),	-- Fierce Beast Staff

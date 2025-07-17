@@ -178,12 +178,15 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			q(44895),	-- Sharptalon Swarm!
 			q(41553, {	-- Slab of Bacon
 				["requireSkill"] = COOKING,
+				["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 			}),
 			q(41554, {	-- Slab of Bacon
 				["requireSkill"] = COOKING,
+				["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 			}),
 			q(41260, {	-- Slab of Bacon
 				["requireSkill"] = COOKING,
+				["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 			}),
 			petbattle(q(41855)),	-- Stand Up to Bullies
 			q(41441, {	-- Superior Leystone Deposits

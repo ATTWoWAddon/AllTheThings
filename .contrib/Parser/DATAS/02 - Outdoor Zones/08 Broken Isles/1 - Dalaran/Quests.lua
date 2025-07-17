@@ -373,6 +373,7 @@ root(ROOTS.Zones, {
 				q(45160, {	-- Cubic Currents
 					["sourceQuests"] = { 45159 },	-- Cubic Conundrum
 					["provider"] = { "n", 93538 },	-- Dariness the Learned
+					["coord"] = { 41, 26.2, LEGION_DALARAN },
 				}),
 				q(45125, {	-- Dabbling in the Demonic
 					["sourceQuests"] = { 45916 },	-- The Acolyte Imperiled
@@ -1056,7 +1057,10 @@ root(ROOTS.Zones, {
 						PRIEST,		-- Shadow
 						WARLOCK,	-- Affliction
 					},
-					["lvl"] = 110,
+					["lvl"] = 45,
+					["g"] = {
+						i(143496),	-- Nethersworn Manifesto (QI!)
+					},
 				}),
 				q(47042, {	-- Shadow: The Twisted Twin
 					["sourceQuests"] = {
@@ -1189,7 +1193,10 @@ root(ROOTS.Zones, {
 						PRIEST,		-- Shadow
 						WARLOCK,	-- Affliction
 					},
-					["lvl"] = 110,
+					["lvl"] = 45,
+					["g"] = {
+						i(143496),	-- Nethersworn Manifesto (QI!)
+					},
 				}),
 				q(43331, {	-- Time to Collect
 					["sourceQuests"] = { 42483 },	-- Put It All on Red

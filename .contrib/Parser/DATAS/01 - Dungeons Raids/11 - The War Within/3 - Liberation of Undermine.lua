@@ -171,7 +171,8 @@ local EncounterToLoot = {
 		i(230186),	-- Mister Pick-Me-Up
 		i(228882),	-- Refiner's Conveyor Belt
 		i(228888),	-- Rushed Beta Launchers
-		i(228844, {up=IGNORED_VALUE}),	-- Test Pilot's Go-Pack [drops pre-upgraded with lower appearance]
+		-- Has differing ItemAppearanceModifierID associations
+		-- i(228844, {up=IGNORED_VALUE}),	-- Test Pilot's Go-Pack [drops pre-upgraded with lower appearance]
 		i(228884),	-- Test Subject's Clasps
 	};
 	[BANDIT] = {
@@ -388,18 +389,82 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						41337,	-- Sleep with the Fishes
 						41347,	-- Scheming on a Thing
 					}},
-					["g"] = {
-						i(231173),		-- Junkmaestro's Magnetomech (MOUNT!)
-					},
+					["g"] = { i(231173) },		-- Junkmaestro's Magnetomech (MOUNT!)
 				}),
 				ach(41525),	-- Can You Please Spell "Gobanna?"
 				ach(41289),	-- Liberation of Undermine Guild Run
 				ach(41290),	-- Heroic: Liberation of Undermine Guild Run
 			}),
-			n(FACTIONS, {
-				faction(FACTION_GLRC, {	-- Gallagio Loyalty Rewards Club
+			header(HEADERS.Faction, FACTION_GALLAGIO, {	-- Gallagio Loyalty Rewards Club
+				n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } },{
+					ach(60939),	-- Bringing Down the House
+				})),
+				faction(FACTION_GALLAGIO),
+				n(QUESTS, sharedData({
+					["qg"] = 235617,	-- Paula Piranha <Renown Quartermaster>
+				},bubbleDownRep(FACTION_GALLAGIO, {	-- Gallagio Loyalty Rewards Club
+					{		-- RENOWN 1 --
+						q(89016),	-- Members Only
+					}, {	-- RENOWN 2 --
+						q(89027),	-- Fast Food
+					}, {	-- RENOWN 3 --
+					}, {	-- RENOWN 4 --
+						q(89018, {	-- Loyal Customer: Silver
+							["g"] = { i(234389) },	-- Gallagio Loyalty Rewards Card: Silver
+						}),
+					}, {	-- RENOWN 5 --
+					}, {	-- RENOWN 6 --
+						q(89252),	-- Need a Jump?
+						q(89024),	-- Time is Money!
+					}, {	-- RENOWN 7 --
+						q(89019),	-- Loyal Customer: Gold
+					}, {	-- RENOWN 8 --
+					}, {	-- RENOWN 9 --
+					}, {	-- RENOWN 10 --
+						q(89020),	-- Loyal Customer: Platinum
+					}, {	-- RENOWN 11 --
+						q(89028, {	-- Chip Service
+							["g"] = { i(237578) },	-- Counterfeit Dealer's Chip
+						}),
+						q(89025),	-- Time is Money!!
+					}, {	-- RENOWN 12 --
+						q(89251, {	-- Running Hot!
+							["qg"] = 235616,	-- Mickey Junkfeast <Trash Connoisseur>
+						}),
+					}, {	-- RENOWN 13 --
+						q(89021),	-- Loyal Customer: Black
+					}, {	-- RENOWN 14 --
+					}, {	-- RENOWN 15 --
+						q(89029, {	-- Chip Service
+							["g"] = { i(237578) },	-- Counterfeit Dealer's Chip
+						}),
+						q(89022),	-- Loyal Customer: Diamond
+					}, {	-- RENOWN 16 --
+					}, {	-- RENOWN 17 --
+					}, {	-- RENOWN 18 --
+						q(89026),	-- Time is Money!!!
+					}, {	-- RENOWN 19 --
+						q(89023),	-- Loyal Customer: GOLDEN LEGENDARY!!!
+					}, {	-- RENOWN 20 --
+						------ Paragon ------
+						q(85471, {	-- Renowned with the Gallagio Loyalty Rewards Club
+							["isRepeatable"] = true,
+							["g"] = { i(232463) },	-- Overflowing Undermine Trove
+						}),
+					},
+				}))),
+				n(TREASURES, {
+					o(505248, {	-- Rune Dispenser
+						["description"] = "Interact with for a 10% chance for a free Crystalized Augment Rune.\n\nAt renown 14, you are guaranteed at least one.",
+						["questID"]	= 89350,
+						["minReputation"] = { FACTION_GALLAGIO, 2 },
+						["isWeekly"] = true,
+						["g"] = { i(224572) },	-- Crystallized Augment Rune
+					}),
+				}),
+				n(VENDORS, {
 					n(235621, {	-- Ando the Gat <Black Market Broker>
-						["g"] = bubbleDownRep(FACTION_GLRC, {	-- Gallagio Loyalty Rewards Club
+						["g"] = bubbleDownRep(FACTION_GALLAGIO, {	-- Gallagio Loyalty Rewards Club
 							{		-- RENOWN 1 --
 							}, {	-- RENOWN 2 --
 							}, {	-- RENOWN 3 --
@@ -408,83 +473,174 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 							}, {	-- RENOWN 6 --
 							}, {	-- RENOWN 7 --
 							}, {	-- RENOWN 8 --
-								i(229945),			-- Thunderdrum Misfire (MOUNT!)
+								i(229945),		-- Thunderdrum Misfire (MOUNT!)
 							}, {	-- RENOWN 9 --
 							}, {	-- RENOWN 10 --
 							}, {	-- RENOWN 11 --
-								i(237578),			-- Counterfeit Dealer's Chip
 							}, {	-- RENOWN 12 --
 							}, {	-- RENOWN 13 --
 							}, {	-- RENOWN 14 --
 							}, {	-- RENOWN 15 --
-								i(237578),			-- Counterfeit Dealer's Chip
 							}, {	-- RENOWN 16 --
 							}, {	-- RENOWN 17 --
 								i(229924),		-- Darkfuse Chompactor (MOUNT!)
 							}, {	-- RENOWN 18 --
 							}, {	-- RENOWN 19 --
 							}, {	-- RENOWN 20 --
-								i(229940),			-- Flarendo the Furious (MOUNT!)
-								title(602),			-- High Roller <Name>
+								i(229940),		-- Flarendo the Furious (MOUNT!)
+								title(602),		-- High Roller <Name>
+								spell(1226482),	-- Path of the Full House
 							},
 						}),
 					}),
-				}),
-				n(QUESTS, {
-					q(89016, {	-- Members Only
-						["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
-					}),
-					q(89027, {	-- Fast Food
-						["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
-						["minReputation"] = { FACTION_GLRC, 2 },
-					}),
-					q(89018, {	-- Loyal Customer: Silver
-						["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
-						["minReputation"] = { FACTION_GLRC, 4 },
-						["g"] = { i(234389) },	-- Gallagio Loyalty Rewards Card: Silver
-					}),
-					q(89252, {	-- Need a Jump?
-						["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
-						["minReputation"] = { FACTION_GLRC, 6 },
-					}),
-					q(89024, {	-- Time is Money!
-						["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
-						["minReputation"] = { FACTION_GLRC, 6 },
-					}),
-					q(89019, {	-- Loyal Customer: Gold
-						["provider"] = { "n", 235617 },	-- Paula Piranha <Renown Quartermaster>
-						["minReputation"] = { FACTION_GLRC, 7 },
-					}),
-				}),
-				n(TREASURES, {
-					o(505248, {	-- Rune Dispenser
-						["description"] = "Interact with for a 1 in 10 chance for a free Crystalized Augment Rune.\n\nAt renown 14, you are guaranteed at least one.",
-						["questID"]	= 89350,
-						["minReputation"] = { FACTION_GLRC, 2 },
-						["isWeekly"] = true,
-						["g"] = { i(224572) },	-- Crystallized Augment Rune
-					}),
-				}),
-				n(VENDORS, {
 					n(235624, {	-- Skitto Screwjack
 						i(236413),	-- "Shockproof" Soda
 						i(236749, {	-- Take-Home Torq (TOY!)
-							["minReputation"] = { FACTION_GLRC, 9 },
+							["minReputation"] = { FACTION_GALLAGIO, 9 },
 						}),
 						i(232806, {	-- Tiny Torq (PET!)
-							["minReputation"] = { FACTION_GLRC, 9 },
+							["minReputation"] = { FACTION_GALLAGIO, 9 },
+						}),
+					}),
+					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
+						["minReputation"] = { FACTION_GALLAGIO, 11 },
+						["g"] = sharedData({
+							["cost"] = { {"i", 237578, 1 }}, -- 1x Counterfeit Dealer's Chip
+							["sharedDescription"] = "Shared Transmog with |cFFFFFFFFNormal|r.",
+						}, {
+							i(238776),	-- Gallagio Raider's Bilgewater Blasthammer
+							i(238697),	-- Gallagio Raider's Bilgewater Boomfist
+							i(238717),	-- Gallagio Raider's Bilgewater Chainsaw
+							i(238693),	-- Gallagio Raider's Bilgewater Coilstaff
+							i(238746),	-- Gallagio Raider's Bilgewater Eelspire
+							i(238750),	-- Gallagio Raider's Bilgewater Exhaustglaive
+							i(238705),	-- Gallagio Raider's Bilgewater Generator
+							i(238754),	-- Gallagio Raider's Bilgewater Gold Digger
+							i(238763),	-- Gallagio Raider's Bilgewater Gyroclub
+							i(238713),	-- Gallagio Raider's Bilgewater Motorshield
+							i(238767),	-- Gallagio Raider's Bilgewater Naval Mine
+							i(238771),	-- Gallagio Raider's Bilgewater Repeater
+							i(238709),	-- Gallagio Raider's Bilgewater Shivlighter
+							i(238701),	-- Gallagio Raider's Bilgewater Shockbow
+							i(238758),	-- Gallagio Raider's Bilgewater Thing-a-ma-tool
+							i(238689),	-- Gallagio Raider's Bilgewater Torchblade
+							i(238742),	-- Gallagio Raider's Bilgewater Zapdagger
+						}),
+					}),
+					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
+						["minReputation"] = { FACTION_GALLAGIO, 11 },
+						["g"] = sharedData({
+							["cost"] = { {"i", 237578, 1 }}, -- 1x Counterfeit Dealer's Chip
+							["sharedDescription"] = "Shared Transmog with |cFFA330C9Heroic|r.",
+						}, {
+							i(238777),	-- Gallagio Raider's Blackwater Blasthammer
+							i(238698),	-- Gallagio Raider's Blackwater Boomfist
+							i(238718),	-- Gallagio Raider's Blackwater Chainsaw
+							i(238694),	-- Gallagio Raider's Blackwater Coilstaff
+							i(238747),	-- Gallagio Raider's Blackwater Eelspire
+							i(238751),	-- Gallagio Raider's Blackwater Exhaustglaive
+							i(238706),	-- Gallagio Raider's Blackwater Generator
+							i(238755),	-- Gallagio Raider's Blackwater Gold Digger
+							i(238764),	-- Gallagio Raider's Blackwater Gyroclub
+							i(238714),	-- Gallagio Raider's Blackwater Motorshield
+							i(238768),	-- Gallagio Raider's Blackwater Naval Mine
+							i(238772),	-- Gallagio Raider's Blackwater Repeater
+							i(238710),	-- Gallagio Raider's Blackwater Shivlighter
+							i(238702),	-- Gallagio Raider's Blackwater Shockbow
+							i(238759),	-- Gallagio Raider's Blackwater Thing-a-ma-tool
+							i(238690),	-- Gallagio Raider's Blackwater Torchblade
+							i(238743),	-- Gallagio Raider's Blackwater Zapdagger
+						}),
+					}),
+					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
+						["minReputation"] = { FACTION_GALLAGIO, 11 },
+						["g"] = sharedData({
+							["cost"] = { {"i", 237578, 1 }}, -- 1x Counterfeit Dealer's Chip
+							["sharedDescription"] = "Shared Transmog with |cFFED7014Mythic|r.",
+						}, {
+							i(238778),	-- Gallagio Raider's Darkfuse Blasthammer
+							i(238699),	-- Gallagio Raider's Darkfuse Boomfist
+							i(238719),	-- Gallagio Raider's Darkfuse Chainsaw
+							i(238695),	-- Gallagio Raider's Darkfuse Coilstaff
+							i(238748),	-- Gallagio Raider's Darkfuse Eelspire
+							i(238752),	-- Gallagio Raider's Darkfuse Exhaustglaive
+							i(238707),	-- Gallagio Raider's Darkfuse Generator
+							i(238756),	-- Gallagio Raider's Darkfuse Gold Digger
+							i(238765),	-- Gallagio Raider's Darkfuse Gyroclub
+							i(238715),	-- Gallagio Raider's Darkfuse Motorshield
+							i(238769),	-- Gallagio Raider's Darkfuse Naval Mine
+							i(238773),	-- Gallagio Raider's Darkfuse Repeater
+							i(238711),	-- Gallagio Raider's Darkfuse Shivlighter
+							i(238703),	-- Gallagio Raider's Darkfuse Shockbow
+							i(238760),	-- Gallagio Raider's Darkfuse Thing-a-ma-tool
+							i(238691),	-- Gallagio Raider's Darkfuse Torchblade
+							i(238744),	-- Gallagio Raider's Darkfuse Zapdagger
+						}),
+					}),
+					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
+						["minReputation"] = { FACTION_GALLAGIO, 11 },
+						["g"] = sharedData({
+							["cost"] = { {"i", 237578, 1 }}, -- 1x Counterfeit Dealer's Chip
+							["sharedDescription"] = "Shared Transmog with |cFFAEF359Looking for Raid|r.",
+						}, {
+							i(238775),	-- Gallagio Raider's Venture Co. Blasthammer
+							i(238696),	-- Gallagio Raider's Venture Co. Boomfist
+							i(238716),	-- Gallagio Raider's Venture Co. Chainsaw
+							i(238692),	-- Gallagio Raider's Venture Co. Coilstaff
+							i(238745),	-- Gallagio Raider's Venture Co. Eelspire
+							i(238749),	-- Gallagio Raider's Venture Co. Exhaustglaive
+							i(238704),	-- Gallagio Raider's Venture Co. Generator
+							i(238753),	-- Gallagio Raider's Venture Co. Gold Digger
+							i(238762),	-- Gallagio Raider's Venture Co. Gyroclub
+							i(238712),	-- Gallagio Raider's Venture Co. Motorshield
+							i(238766),	-- Gallagio Raider's Venture Co. Naval Mine
+							i(238770),	-- Gallagio Raider's Venture Co. Repeater
+							i(238708),	-- Gallagio Raider's Venture Co. Shivlighter
+							i(238700),	-- Gallagio Raider's Venture Co. Shockbow
+							i(238757),	-- Gallagio Raider's Venture Co. Thing-a-ma-tool
+							i(238688),	-- Gallagio Raider's Venture Co. Torchblade
+							i(238741),	-- Gallagio Raider's Venture Co. Zapdagger
+						}),
+					}),
+					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
+						["minReputation"] = { FACTION_GALLAGIO, 11 },
+						["g"] = sharedData({
+							["cost"] = { {"i", 237578, 1 }}, -- 1x Counterfeit Dealer's Chip
+						}, {
+							i(238774),	-- Gallagio Raider's Knuckle Dusters
+							i(238761),	-- Gallagio Raider's Bootleg Lever
 						}),
 					}),
 					n(235623, {	-- Snix Longpocket
 						i(236412),	-- "Fireproof" Punch
 						i(232844, {	-- Fuz-Size Flarendo (PET!)
-							["minReputation"] = { FACTION_GLRC, 9 },
+							["minReputation"] = { FACTION_GALLAGIO, 9 },
 						}),
 						i(236751, {	-- Take-Home Flarendo (TOY!)
-							["minReputation"] = { FACTION_GLRC, 9 },
+							["minReputation"] = { FACTION_GALLAGIO, 9 },
 						}),
 					}),
 				}),
+			}),
+			o(456208, {	-- The Catalyst
+				["description"] = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
+				["coord"] = { 50.0, 54.2, DORNOGAL },
+				["modelScale"] = 4,
+				["catalystID"] = 10,	-- ItemBonus.Value_0 TWW:S2
+				["g"] = {
+					Difficulty(DIFFICULTY.RAID.LFR, {["upgradeTrackID"]=UPGRADETRACKS.VETERAN}).AddGroups(
+						ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.LFR)
+					),
+					Difficulty(DIFFICULTY.RAID.NORMAL, {["upgradeTrackID"]=UPGRADETRACKS.CHAMPION}).AddGroups(
+						ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.NORMAL)
+					),
+					Difficulty(DIFFICULTY.RAID.HEROIC, {["upgradeTrackID"]=UPGRADETRACKS.HERO}).AddGroups(
+						ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.HEROIC)
+					),
+					Difficulty(DIFFICULTY.RAID.MYTHIC, {["upgradeTrackID"]=UPGRADETRACKS.MYTH}).AddGroups(
+						ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.MYTHIC)
+					),
+				},
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				BossOnly(VEXIE, {
@@ -504,7 +660,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					i(232526,{provider={"i",232805}}),	-- Best-in-Slots
 					i(232805,{provider={"i",232526}}),	-- Best-in-Slots
 					i(237578, {	-- Counterfeit Dealer's Chip
-						["description"] = "Has a small chance dropping as Personal Loot once you have reached Renown 15 with the Gallagio Loyalty Rewards Club.",
+						["description"] = "Has a small chance dropping as Personal Loot from One-Armed Bandit once you have reached Renown 15 with the Gallagio Loyalty Rewards Club.",
+						["minReputation"] = { FACTION_GALLAGIO, 15 },
 					}),
 				}),
 				BossOnly(MUGZEE, {
@@ -530,7 +687,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 				header(HEADERS.LFGDungeon, 2781, {	-- Maniacle Machinist
 					Boss(STIX),
-					Boss(LOCKENSTOCK),
+					Boss(LOCKENSTOCK, {
+						i(228844, {up=IGNORED_VALUE, ["ItemAppearanceModifierID"] = 0}),	-- Test Pilot's Go-Pack [drops pre-upgraded with lower appearance]
+					}),
 				}),
 				header(HEADERS.LFGDungeon, 2782, {	-- Two Heads Are Better
 					Boss(VEXIE),
@@ -594,7 +753,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				n(QUESTS, {
 					q(89351, {	-- Liberation of Undermine: Splitting Pairs [N]
 						["qg"] = 235619,	-- Lentil Sprocket <Gallagio "Chauffeur">
-						["minReputation"] = { FACTION_GLRC, 5 },
+						["minReputation"] = { FACTION_GALLAGIO, 5 },
 					}),
 				}),
 				ZoneDrops({
@@ -603,7 +762,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				Boss(CARNAGE),
 				Boss(RIK),
 				Boss(STIX),
-				Boss(LOCKENSTOCK),
+				Boss(LOCKENSTOCK, {
+					i(228844, {up=IGNORED_VALUE, ["ItemAppearanceModifierID"] = 1}),	-- Test Pilot's Go-Pack [drops pre-upgraded with lower appearance]
+				}),
 				Boss(BANDIT),
 				Boss(MUGZEE),
 				Boss(GALLYWIX, {
@@ -619,7 +780,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				BossOnly(CARNAGE),
 				BossOnly(RIK),
 				BossOnly(STIX),
-				BossOnly(LOCKENSTOCK),
+				BossOnly(LOCKENSTOCK, {
+					i(228844, {up=IGNORED_VALUE, modID=5, ["ItemAppearanceModifierID"] = 3}),	-- Test Pilot's Go-Pack [drops pre-upgraded with lower appearance]
+				}),
 				BossOnly(BANDIT),
 				BossOnly(MUGZEE),
 				BossOnly(GALLYWIX, {
@@ -635,7 +798,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				n(QUESTS, {
 					q(89352, {	-- Liberation of Undermine: Splitting Pairs [H]
 						["qg"] = 235619,	-- Lentil Sprocket <Gallagio "Chauffeur">
-						["minReputation"] = { FACTION_GLRC, 5 },
+						["minReputation"] = { FACTION_GALLAGIO, 5 },
 					}),
 				}),
 				ZoneDrops({
@@ -664,7 +827,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				n(QUESTS, {
 					q(89353, {	-- Liberation of Undermine: Splitting Pairs [M]
 						["qg"] = 235619,	-- Lentil Sprocket <Gallagio "Chauffeur">
-						["minReputation"] = { FACTION_GLRC, 5 },
+						["minReputation"] = { FACTION_GALLAGIO, 5 },
 					}),
 				}),
 				ZoneDrops({
@@ -728,65 +891,64 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART } }, {
 	inst(1296, {	-- Liberation of Undermine
 		n(FACTIONS, {
-			header(HEADERS.Faction, FACTION_GLRC, {
+			header(HEADERS.Faction, FACTION_GALLAGIO, {
 				n(QUESTS, {
 					q(86468),	-- Triggered with Members Only (89016)
 					q(89017),	-- Triggered with Members Only (89016)
 				}),
 			}),
 		}),
-
 		inst(1296, bubbleDown({	-- Liberation of Undermine
 			["isWeekly"] = true,
 		},{
 			-- LFR
-			q(88835),	-- Guk Boomdog Trash
-			q(88838),	-- Professor Boomspark Trash
-			q(88842),	-- King Flamespite Trash
-			q(88846),	-- Skiggy Muckheimer Trash
-			q(88867),	-- Trashmaster Blazedump Trash
-			q(88829),	-- Scraps Trash
-			q(88859),	-- Globikus Trash
-			q(88850),	-- Melbo The Magnificent Trash
-			q(88854),	-- The Junkmaker Trash
+			q(88835, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
+			q(88838, name(HEADERS.NPC, 229287)),	-- Professor Boomspark Trash
+			q(88842, name(HEADERS.NPC, 229288)),	-- King Flamespite Trash
+			q(88846, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
+			q(88867, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
+			q(88829, name(HEADERS.NPC, 229283)),	-- Scraps Trash
+			q(88859, name(HEADERS.NPC, 234640)),	-- Globikus Trash
+			q(88850, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
+			q(88854, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
 			-- Normal
-			q(88833),	-- Guk Boomdog Trash
+			q(88833, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
 			q(88840),	-- King Flamespite/Professor Boomspark Trash
 			q(88844),	-- King Flamespite/Professor Boomspark Trash
-			q(88848),	-- Skiggy Muckheimer Trash
-			q(88869),	-- Trashmaster Blazedump Trash
-			q(88830),	-- Scraps Trash
-			q(88861),	-- Globikus Trash
-			q(88852),	-- Melbo The Magnificent Trash
-			q(88856),	-- The Junkmaker Trash
+			q(88848, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
+			q(88869, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
+			q(88830, name(HEADERS.NPC, 229283)),	-- Scraps Trash
+			q(88861, name(HEADERS.NPC, 234640)),	-- Globikus Trash
+			q(88852, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
+			q(88856, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
 			-- Heroic
-			q(88836),	-- Guk Boomdog Trash
-			q(88837),	-- Professor Boomspark Trash
-			q(88841),	-- King Flamespite Trash
-			q(88845),	-- Skiggy Muckheimer Trash
-			q(88866),	-- Trashmaster Blazedump Trash
-			q(88831),	-- Scraps Trash
-			q(88858),	-- Globikus Trash
-			q(88849),	-- Melbo The Magnificent Trash
-			q(88853),	-- The Junkmaker Trash
+			q(88836, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
+			q(88837, name(HEADERS.NPC, 229287)),	-- Professor Boomspark Trash
+			q(88841, name(HEADERS.NPC, 229288)),	-- King Flamespite Trash
+			q(88845, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
+			q(88866, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
+			q(88831, name(HEADERS.NPC, 229283)),	-- Scraps Trash
+			q(88858, name(HEADERS.NPC, 234640)),	-- Globikus Trash
+			q(88849, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
+			q(88853, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
 			-- Mythic
-			q(88834),	-- Guk Boomdog Trash
+			q(88834, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
 			q(88839),	-- King Flamespite/Professor Boomspark Trash
 			q(88843),	-- King Flamespite/Professor Boomspark Trash
-			q(88847),	-- Skiggy Muckheimer Trash
-			q(88868),	-- Trashmaster Blazedump Trash
-			q(88832),	-- Scraps Trash
-			q(88860),	-- Globikus Trash
-			--q(),	-- Melbo The Magnificent Trash
-			--q(),	-- The Junkmaker Trash
+			q(88847, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
+			q(88868, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
+			q(88832, name(HEADERS.NPC, 229283)),	-- Scraps Trash
+			q(88860, name(HEADERS.NPC, 234640)),	-- Globikus Trash
+			q(88851, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
+			q(88855, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
 			-- All
-			q(89478),	-- Guk Boomdog Trash first per week any difficulty
-			q(89479),	-- Skiggy Muckheimer Trash first per week any difficulty
-			q(89484),	-- Trashmaster Blazedump Trash first per week any difficulty
-			q(89477),	-- Scraps Trash first per week any difficulty
-			q(89482),	-- Globikus Trash first per week any difficulty
-			q(89480),	-- Melbo The Magnificent Trash first per week any difficulty
-			q(89481),	-- The Junkmaker Trash first per week any difficulty
+			q(89478, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash first per week any difficulty
+			q(89479, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash first per week any difficulty
+			q(89484, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash first per week any difficulty
+			q(89477, name(HEADERS.NPC, 229283)),	-- Scraps Trash first per week any difficulty
+			q(89482, name(HEADERS.NPC, 234640)),	-- Globikus Trash first per week any difficulty
+			q(89480, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash first per week any difficulty
+			q(89481, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash first per week any difficulty
 
 			q(89452),	-- Vexie Fullthrottle
 			q(89453),	-- Cauldron of Carnage

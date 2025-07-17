@@ -1,0 +1,106 @@
+2.5.1.38043
+q(8344),	-- Windows to the Source	 TBC:Windows to the Source	 WOTLK:Windows to the Source	 CATA:Windows to the Source	 MOP:Windows to the Source
+q(9347),	-- Voidwalkers Gone Wild	 TBC:Voidwalkers Gone Wild	 WOTLK:Voidwalkers Gone Wild	 CATA:Voidwalkers Gone Wild
+q(9348),	-- Ravager Roundup	 TBC:Ravager Roundup	 WOTLK:Ravager Roundup	 CATA:Ravager Roundup
+q(9350),	-- A Peon's Work is Never Done	 TBC:A Peon's Work is Never Done	 WOTLK:A Peon's Work is Never Done	 CATA:A Peon's Work is Never Done	 MOP:A Peon's Work is Never Done
+q(9354),	-- Searching for New Materials	 TBC:Searching for New Materials	 WOTLK:Searching for New Materials	 CATA:Searching for New Materials	 MOP:Searching for New Materials
+q(9379),	-- Fortifying the Felhunter	 TBC:Fortifying the Felhunter	 WOTLK:Fortifying the Felhunter	 CATA:Fortifying the Felhunter	 MOP:Fortifying the Felhunter
+q(9432),	-- Travel to Astranaar	 TBC:Travel to Astranaar	 WOTLK:Travel to Astranaar	 CATA:Travel to Astranaar	 MOP:Travel to Astranaar
+q(9497),	-- Emblem of the Fel Horde	 TBC:Emblem of the Fel Horde	 WOTLK:Emblem of the Fel Horde	 CATA:Emblem of the Fel Horde	 MOP:Emblem of the Fel Horde
+q(9546),	-- Fulfilling a Promise	 CATA:Fulfilling a Promise	 MOP:Fulfilling a Promise
+q(9712),	-- The Thalassian Warhorse	 TBC:The Thalassian Warhorse	 WOTLK:The Thalassian Warhorse	 CATA:The Thalassian Warhorse	 MOP:The Thalassian Warhorse
+q(9713),	-- Glowcap Harvesting Enabling Flag
+q(9767),	-- Know Your Enemy	 TBC:Know Your Enemy	 WOTLK:Know Your Enemy	 CATA:Know Your Enemy	 MOP:Know Your Enemy
+q(9768),	-- Coilfang Spellbooks	 TBC:Coilfang Spellbooks	 WOTLK:Coilfang Spellbooks	 CATA:Coilfang Spellbooks
+q(10080),	-- Forge Camps of the Legion	 TBC:Forge Camps of the Legion	 WOTLK:Forge Camps of the Legion	 CATA:Forge Camps of the Legion
+q(10083),	-- The Legion's Plans	 TBC:The Legion's Plans	 WOTLK:The Legion's Plans	 CATA:The Legion's Plans
+q(10217),	-- Fossil Fuel
+q(10219),	-- Walk the Dog
+q(10364),	-- Caedmos	 TBC:Caedmos	 WOTLK:Caedmos	 CATA:Caedmos	 MOP:Caedmos
+q(10376),	-- Symbol of Hope	 WOTLK:Symbol of Hope	 CATA:Symbol of Hope	 MOP:Symbol of Hope
+q(10377),	-- Nothing to Fear	 TBC:Nothing to Fear	 WOTLK:Nothing to Fear	 CATA:Nothing to Fear	 MOP:Nothing to Fear
+q(10378),	-- Consume Magic	 WOTLK:Consume Magic	 CATA:Consume Magic	 MOP:Consume Magic
+q(10379),	-- Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness	 CATA:Touch of Weakness	 MOP:Touch of Weakness
+q(10383),	-- This is a Breadcrumb!	 TBC:This is a Breadcrumb!	 WOTLK:This is a Breadcrumb!	 CATA:This is a Breadcrumb!	 MOP:This is a Breadcrumb!
+q(10529),	-- The Hunter's Path	 TBC:The Hunter's Path	 WOTLK:The Hunter's Path	 CATA:The Hunter's Path	 MOP:The Hunter's Path
+q(10530),	-- The Hunter's Path	 TBC:The Hunter's Path	 WOTLK:The Hunter's Path	 CATA:The Hunter's Path	 MOP:The Hunter's Path
+q(10532),	-- Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines	 CATA:Cut Arathor Supply Lines	 MOP:Cut Arathor Supply Lines
+q(10535),	-- Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!	 CATA:Arathi Basin Resources!	 MOP:Arathi Basin Resources!
+q(10605),	-- Carendin Summons	 TBC:Carendin Summons	 WOTLK:Carendin Summons	 CATA:Carendin Summons	 MOP:Carendin Summons
+q(10631),	-- Back In Business	 TBC:Back In Business	 WOTLK:Back In Business	 CATA:Back In Business
+q(10779),	-- The Hunter's Path	 TBC:The Hunter's Path	 WOTLK:The Hunter's Path	 CATA:The Hunter's Path	 MOP:The Hunter's Path
+q(10789),	-- Return to Carendin Halgar	 TBC:Return to Carendin Halgar	 WOTLK:Return to Carendin Halgar	 CATA:Return to Carendin Halgar	 MOP:Return to Carendin Halgar
+q(10790),	-- Return to Mordak Darkfist	 TBC:Return to Gan'rul Bloodeye	 WOTLK:Return to Gan'rul Bloodeye	 CATA:Return to Gan'rul Bloodeye	 MOP:Return to Gan'rul Bloodeye
+q(10931),	-- Return to the Exodar	 TBC:Return to the Exodar	 WOTLK:Return to the Exodar	 CATA:Return to the Exodar	 MOP:Return to the Exodar
+q(10932),	-- Return to the Exodar	 TBC:Return to the Exodar	 WOTLK:Return to the Exodar	 CATA:Return to the Exodar	 MOP:Return to the Exodar
+q(10933),	-- Return to Silvermoon	 TBC:Return to Silvermoon	 WOTLK:Return to Silvermoon	 CATA:Return to Silvermoon	 MOP:Return to Silvermoon
+q(10934),	-- Return to Silvermoon	 TBC:Return to Silvermoon	 WOTLK:Return to Silvermoon	 CATA:Return to Silvermoon	 MOP:Return to Silvermoon
+q(10999),	-- One Shot, One Kill	 TBC:One Shot, One Kill	 WOTLK:One Shot, One Kill	 CATA:One Shot, One Kill	 MOP:One Shot, One Kill
+q(11196),	-- Warlord of the Amani	 TBC:TEMP X	 WOTLK:TEMP X	 CATA:Warlord of the Amani	 MOP:Warlord of the Amani
+q(11335),	-- Call to Arms: Arathi Basin	 TBC:Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin	 CATA:Call to Arms: Arathi Basin	 MOP:Call to Arms: Arathi Basin
+q(11336),	-- Call to Arms: Alterac Valley	 TBC:Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley	 CATA:Call to Arms: Alterac Valley	 MOP:Call to Arms: Alterac Valley
+q(11337),	-- Call to Arms: Eye of the Storm	 TBC:Call to Arms: Eye of the Storm	 WOTLK:Call to Arms: Eye of the Storm	 CATA:Call to Arms: Eye of the Storm	 MOP:Call to Arms: Eye of the Storm
+q(11338),	-- Call to Arms: Warsong Gulch	 TBC:Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch	 CATA:Call to Arms: Warsong Gulch	 MOP:Call to Arms: Warsong Gulch
+q(11339),	-- Call to Arms: Arathi Basin	 TBC:Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin	 CATA:Call to Arms: Arathi Basin	 MOP:Call to Arms: Arathi Basin
+q(11340),	-- Call to Arms: Alterac Valley	 TBC:Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley	 CATA:Call to Arms: Alterac Valley	 MOP:Call to Arms: Alterac Valley
+q(11341),	-- Call to Arms: Eye of the Storm	 TBC:Call to Arms: Eye of the Storm	 WOTLK:Call to Arms: Eye of the Storm	 CATA:Call to Arms: Eye of the Storm	 MOP:Call to Arms: Eye of the Storm
+q(11342),	-- Call to Arms: Warsong Gulch	 TBC:Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch	 CATA:Call to Arms: Warsong Gulch	 MOP:Call to Arms: Warsong Gulch
+q(11558),	-- Dangerous Love	 TBC:Dangerous Love	 WOTLK:Dangerous Love	 CATA:Dangerous Love	 MOP:Dangerous Love
+q(11883),	-- Fire Dancing?	 TBC:Fire Dancing?	 WOTLK:Fire Dancing?	 CATA:Fire Dancing?	 MOP:Fire Dancing?
+q(12420),	-- Brew of the Month Club	 TBC:Brew of the Month Club	 WOTLK:Brew of the Month Club	 CATA:Brew of the Month Club	 MOP:Brew of the Month Club
+q(12421),	-- Brew of the Month Club	 TBC:Brew of the Month Club	 WOTLK:Brew of the Month Club	 CATA:Brew of the Month Club	 MOP:Brew of the Month Club
+q(63448),	-- TBC:A Deluxe Delivery	 WOTLK:A Deluxe Delivery	 CATA:A Deluxe Delivery	 MOP:A Deluxe Delivery
+q(63546),	-- TBC:[NEVER USED]	 WOTLK:[NEVER USED]	 CATA:[NEVER USED]	 MOP:[NEVER USED]
+q(63547),	-- TBC:[NEVER USED]	 WOTLK:[NEVER USED]	 CATA:[NEVER USED]	 MOP:[NEVER USED]
+q(63767),	-- TBC:Imp in a Ball	 WOTLK:Imp in a Ball	 CATA:Imp in a Ball	 MOP:Imp in a Ball
+q(63770),	-- TBC:A Special Thanks	 WOTLK:A Special Thanks	 CATA:A Special Thanks	 MOP:A Special Thanks
+q(63865),	-- TBC:A Special Thanks	 WOTLK:A Special Thanks	 CATA:A Special Thanks	 MOP:A Special Thanks
+q(63866),	-- TBC:Claiming the Light	 WOTLK:Claiming the Light	 CATA:Claiming the Light	 MOP:Claiming the Light
+2.5.1.38119
+q(63978),	-- TBC:Cloak and Daggers	 WOTLK:Cloak and Daggers	 CATA:Cloak and Daggers	 MOP:Cloak and Daggers
+2.5.1.38225
+q(64028),	-- TBC:A New Beginning	 WOTLK:A New Beginning	 CATA:A New Beginning	 MOP:A New Beginning
+q(64031),	-- TBC:Tools for Survival	 WOTLK:Tools for Survival	 CATA:Tools for Survival	 MOP:Tools for Survival
+q(64032),	--
+q(64033),	--
+q(64034),	-- TBC:Combat Training	 WOTLK:Combat Training	 CATA:Combat Training	 MOP:Combat Training
+q(64035),	-- TBC:Talented	 WOTLK:Talented	 CATA:Talented	 MOP:Talented
+q(64036),	--
+q(64037),	-- TBC:Eastern Plaguelands	 WOTLK:Eastern Plaguelands	 CATA:Eastern Plaguelands	 MOP:Eastern Plaguelands
+q(64038),	-- TBC:The Dark Portal	 WOTLK:The Dark Portal	 CATA:The Dark Portal	 MOP:The Dark Portal
+q(64046),	-- TBC:A New Beginning	 WOTLK:A New Beginning	 CATA:A New Beginning	 MOP:A New Beginning
+q(64047),	-- TBC:A New Beginning	 WOTLK:A New Beginning	 CATA:A New Beginning	 MOP:A New Beginning
+q(64048),	-- TBC:Tools for Survival	 WOTLK:Tools for Survival	 CATA:Tools for Survival	 MOP:Tools for Survival
+q(64049),	-- TBC:Tools for Survival	 WOTLK:Tools for Survival	 CATA:Tools for Survival	 MOP:Tools for Survival
+q(64050),	-- TBC:Combat Training	 WOTLK:Combat Training	 CATA:Combat Training	 MOP:Combat Training
+q(64051),	-- TBC:Combat Training	 WOTLK:Combat Training	 CATA:Combat Training	 MOP:Combat Training
+q(64052),	-- TBC:Talented	 WOTLK:Talented	 CATA:Talented	 MOP:Talented
+q(64053),	-- TBC:Talented	 WOTLK:Talented	 CATA:Talented	 MOP:Talented
+q(64054),	-- TBC:Unused	 WOTLK:Unused	 CATA:Unused	 MOP:Unused
+q(64062),	-- TBC:Unused	 WOTLK:Unused	 CATA:Unused	 MOP:Unused
+q(64063),	-- TBC:The Dark Portal	 WOTLK:The Dark Portal	 CATA:The Dark Portal	 MOP:The Dark Portal
+q(64064),	-- TBC:Eastern Plaguelands	 WOTLK:Eastern Plaguelands	 CATA:Eastern Plaguelands	 MOP:Eastern Plaguelands
+q(64071),	--
+2.5.1.38285
+q(64095),	--
+q(64128),	-- TBC:Eastern Plaguelands	 WOTLK:Eastern Plaguelands	 CATA:Eastern Plaguelands	 MOP:Eastern Plaguelands
+q(64139),	-- TBC:A Summons from Lady Liadrin	 WOTLK:A Summons from Lady Liadrin	 CATA:A Summons from Lady Liadrin	 MOP:A Summons from Lady Liadrin
+q(64140),	-- TBC:The Master's Path	 WOTLK:The Master's Path	 CATA:The Master's Path	 MOP:The Master's Path
+q(64141),	-- TBC:A Gesture of Commitment	 WOTLK:A Gesture of Commitment	 CATA:A Gesture of Commitment	 MOP:A Gesture of Commitment
+q(64142),	-- TBC:A Demonstration of Loyalty	 WOTLK:A Demonstration of Loyalty	 CATA:A Demonstration of Loyalty	 MOP:A Demonstration of Loyalty
+q(64143),	-- TBC:True Masters of the Light	 WOTLK:True Masters of the Light	 CATA:True Masters of the Light	 MOP:True Masters of the Light
+q(64144),	-- TBC:True Masters of the Light	 WOTLK:True Masters of the Light	 CATA:True Masters of the Light	 MOP:True Masters of the Light
+2.5.1.38453
+q(64217),	-- TBC:The Dark Portal	 WOTLK:The Dark Portal	 CATA:The Dark Portal	 MOP:The Dark Portal
+2.5.1.38502
+q(64275),	--
+2.5.1.38548
+q(64319),	-- TBC:A Study in Power	 WOTLK:A Study in Power	 CATA:A Study in Power	 MOP:A Study in Power
+2.5.1.39399
+q(10549),	-- REUSE
+2.5.3.41402
+q(65284),	-- TBC:Goblin Gumbo Kettle	 WOTLK:Goblin Gumbo Kettle	 CATA:Goblin Gumbo Kettle	 MOP:Goblin Gumbo Kettle
+q(65561),	-- TBC:Tabard of Flame	 WOTLK:Tabard of Flame	 CATA:Tabard of Flame	 MOP:Tabard of Flame
+2.5.4.44833
+q(66990),	--
+q(66991),	--

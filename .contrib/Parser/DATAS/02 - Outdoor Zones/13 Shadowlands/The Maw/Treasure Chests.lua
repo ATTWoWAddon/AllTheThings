@@ -117,6 +117,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 50.8, 84.0, THE_MAW },
 					{ 56.2, 63.2, THE_MAW },
 					{ 61.4, 50.7, THE_MAW },
+					{ 40.1, 80.6, 1820 },	-- Pit of Anguish
 				},
 			}),
 			n(173811, {	-- Subject 638

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Reflection.Emit;
@@ -8,10 +9,14 @@ namespace ATT.DB.Types
     /// <summary>
     /// https://wago.tools/db2/ItemSearchName
     /// </summary>
-    internal class ItemSearchName : IDBType
+    [DataModule]
+    public class ItemSearchName : IDBType, IWagoItemID
     {
+        [ExportableData("itemID")]
         public long ID { get; set; }
+        public long ItemID { get {  return ID; } }
         public long AllowableRace { get; set; }
+        [Localize]
         public string Display_lang { get; set; }
         public long OverallQualityID { get; set; }
         public long ExpansionID { get; set; }
@@ -29,99 +34,187 @@ namespace ATT.DB.Types
         public long Flags_3 { get; set; }
         public long Flags_4 { get; set; }
 
-        public IDictionary<string, object> AsData()
+        #region Data Transformation Helpers
+        [ExportableData("q")]
+        public object OverallQualityIDHelper
         {
-            var data = new Dictionary<string, object>
+            get
             {
-                { "itemID", ID },
-            };
-
-            // CRIEVE NOTE: Item Quality is used in the addon's logic, despite being something that can be obtained dynamically. (albeit slowly, using an API)
-            // This might be best to include as a base value for that purpose.
-            long q = OverallQualityID;
-            if (q >= 0) data["q"] = q;
-
-            // CRIEVE NOTE: ilvl is dynamically found within the addon's class logic and doesn't need to be built into the DB directly as it has no purpose other than to display information.
-            //long iLvl = ItemLevel;
-            //if (iLvl > 1) data["iLvl"] = iLvl;
-
-            // CRIEVE NOTE: This might be useful...
-            long minFactionID = MinFactionID;
-            if (minFactionID > 0)
-            {
-                // NOTE: This value is between 0 and 7, not a reputation xp number.
-                data["minReputation"] = new List<object> { minFactionID, ConvertReputation(MinReputation) };
+                // CRIEVE NOTE: Item Quality is used in the addon's logic, despite being something that can be obtained dynamically. (albeit slowly, using an API)
+                // This might be best to include as a base value for that purpose.
+                if (OverallQualityID >= 0) return OverallQualityID;
+                return null;
             }
+        }
 
-            // CRIEVE NOTE: This might be useful...
-            long requiredSkill = RequiredSkill;
-            if (requiredSkill > 0)
+        /*
+        [ExportableData("iLvl")]
+        public object ItemLevelHelper
+        {
+            get
             {
-                // This is used to override the skill to be a specialization in most cases where both are specified.
-                long requiredAbility = RequiredAbility;
-                if (requiredAbility > 0) data["requireSkill"] = requiredAbility;
-                else data["requireSkill"] = requiredSkill;
-                long requiredSkillRank = RequiredSkillRank;
-                if (requiredSkillRank > 0)
+                // CRIEVE NOTE: ilvl is dynamically found within the addon's class logic and doesn't need to be built into the DB directly as it has no purpose other than to display information.
+                //long iLvl = ItemLevel;
+                //if (iLvl > 1) data["iLvl"] = iLvl;
+                return null;
+            }
+        }
+        */
+
+        [ExportableData("minReputation")]
+        public object MinFactionIDHelper
+        {
+            get
+            {
+                // CRIEVE NOTE: This might be useful...
+                long minFactionID = MinFactionID;
+                if (minFactionID > 0)
                 {
-                    data["learnedAt"] = requiredSkillRank;
+                    // NOTE: This value is between 0 and 7, not a reputation xp number.
+                    return new List<object> { minFactionID, ConvertReputation(MinReputation) };
                 }
+                return null;
             }
+        }
 
-            // Parse Class Requirements
-            long allowableClass = AllowableClass;
-            if (allowableClass > 0)
+        [ExportableData("requireSkill")]
+        public object RequiredSkillHelper
+        {
+            get
             {
-                var classes = new List<long>();
-                ClassTypeFlags classTypeFlags = (ClassTypeFlags)allowableClass;
-                if (!Has(classTypeFlags, ClassTypeFlags.ALL))
+                long requiredSkill = RequiredSkill;
+                if (requiredSkill > 0)
                 {
-                    bool includedAll = true;
-                    foreach(var o in Framework.ALL_CLASSES)
+                    // This is used to override the skill to be a specialization in most cases where both are specified.
+                    long requiredAbility = RequiredAbility;
+                    if (requiredAbility > 0) return requiredAbility;
+                    return requiredSkill;
+                }
+                return null;
+            }
+        }
+
+        [ExportableData("learnedAt")]
+        public object RequiredSkillRankHelper
+        {
+            get
+            {
+                if (RequiredSkillHelper != null)
+                {
+                    long requiredSkillRank = RequiredSkillRank;
+                    if (requiredSkillRank > 0) return requiredSkillRank;
+                }
+                return null;
+            }
+        }
+
+        [ExportableData("c")]
+        public object AllowableClassHelper
+        {
+            get
+            {
+                // Parse Class Requirements
+                long allowableClass = AllowableClass;
+                if (allowableClass > 0)
+                {
+                    var classes = new List<long>();
+                    ClassTypeFlags classTypeFlags = (ClassTypeFlags)allowableClass;
+                    if (!Has(classTypeFlags, ClassTypeFlags.ALL))
                     {
-                        if (o is long classID)
+                        bool includedAll = true;
+                        foreach (var o in Framework.ALL_CLASSES)
                         {
-                            if (Has(classTypeFlags, CLASS_TYPE_FLAGS[classID])) classes.Add(classID);
-                            else includedAll = false;
+                            if (o is long classID)
+                            {
+                                if (Has(classTypeFlags, CLASS_TYPE_FLAGS[classID])) classes.Add(classID);
+                                else includedAll = false;
+                            }
+                        }
+                        if (classes.Count > 0 && !includedAll)
+                        {
+                            classes.Sort();
+                            return classes;
                         }
                     }
-                    if (classes.Count > 0 && !includedAll)
-                    {
-                        classes.Sort();
-                        data["c"] = classes;
-                    }
                 }
+                return null;
             }
+        }
 
-            // Parse Race Requirements
-            long allowableRace = AllowableRace;
-            if (allowableRace > 0)
+        [ExportableData("r")]
+        public object FactionHelper
+        {
+            get
             {
-                var races = new List<long>();
-                RaceTypeFlags flags = (RaceTypeFlags)allowableRace;
-                if (!Has(flags, RaceTypeFlags.ALL))
+                // Is this Faction Exclusive?
+                if ((Flags_1 & 0x1) == 0x1)  // Horde Only
                 {
+                    return 1;  // Horde Only!
+                }
+                else if ((Flags_1 & 0x2) == 0x2)  // Alliance Only
+                {
+                    return 2;  // Alliance Only!
+                }
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// This maintains a cache of AllowableRaces <=> Races lists so we don't need to recalculate the same thing twice.
+        /// </summary>
+        private static readonly Dictionary<long, List<long>> CALCULATED_RACES = new Dictionary<long, List<long>>();
+
+        private static Dictionary<long, long> RACE_FLAG_CACHE;
+        private static Dictionary<long, long> GenerateRaceFlags()
+        {
+            var dict = new Dictionary<long, long>();
+            foreach(var pair in RACE_TO_BIT_INDEX)
+            {
+                dict[pair.Key] = (long)Math.Pow(2, (long)pair.Value);
+            }
+            return dict;
+        }
+
+        [ExportableData("races")]
+        public object AllowableRaceHelper
+        {
+            get
+            {
+                if(FactionHelper == null || AllowableRace == -1) return null;
+
+                // Parse Race Requirements
+                if (!CALCULATED_RACES.TryGetValue(AllowableRace, out var races))
+                {
+                    // CRIEVE NOTE: This parsing is busted. AllowableRace is strangely formatted.
+                    races = new List<long>();
                     bool includedAll = true;
+                    var flags = RACE_FLAG_CACHE ?? (RACE_FLAG_CACHE = GenerateRaceFlags());
                     foreach (var o in Framework.ALL_RACES)
                     {
                         if (o is long raceID)
                         {
-                            if (Has(flags, RACE_TYPE_FLAGS[raceID])) races.Add(raceID);
+                            if ((AllowableRace & flags[raceID]) > 0) races.Add(raceID);
                             else includedAll = false;
                         }
                     }
-                    if (races.Count > 0 && !includedAll)
+
+                    // If we didn't find anything or we included all of them, simply set it to null and return.
+                    if (races.Count < 1 || includedAll)
                     {
-                        races.Sort();
-                        data["races"] = races;
+                        CALCULATED_RACES[AllowableRace] = null;
+                        return null;
                     }
+
+                    // Cool, let's sort and assign it to the cache.
+                    races.Sort();
+                    CALCULATED_RACES[AllowableRace] = races;
                 }
+                return races;
             }
-
-            return data;
         }
+        #endregion
 
-        private static Dictionary<long, ClassTypeFlags> CLASS_TYPE_FLAGS = new Dictionary<long, ClassTypeFlags>
+        private static readonly Dictionary<long, ClassTypeFlags> CLASS_TYPE_FLAGS = new Dictionary<long, ClassTypeFlags>
         {
             { 1, ClassTypeFlags.WARRIOR },
             { 2, ClassTypeFlags.PALADIN },
@@ -138,45 +231,40 @@ namespace ATT.DB.Types
             { 13, ClassTypeFlags.EVOKER },
         };
 
-        private static Dictionary<long, RaceTypeFlags> RACE_TYPE_FLAGS = new Dictionary<long, RaceTypeFlags>
+        private static readonly Dictionary<long, RaceTypeBitIndexes> RACE_TO_BIT_INDEX = new Dictionary<long, RaceTypeBitIndexes>
         {
-            { 1, RaceTypeFlags.HUMAN },
-            { 2, RaceTypeFlags.ORC },
-            { 3, RaceTypeFlags.DWARF },
-            { 4, RaceTypeFlags.NIGHTELF },
-            { 5, RaceTypeFlags.UNDEAD },
-            { 6, RaceTypeFlags.TAUREN },
-            { 7, RaceTypeFlags.GNOME },
-            { 8, RaceTypeFlags.TROLL },
-            { 9, RaceTypeFlags.GOBLIN },
-            { 10, RaceTypeFlags.BLOODELF },
-            { 11, RaceTypeFlags.DRAENEI },
-            { 22, RaceTypeFlags.WORGEN },
-            { 24, RaceTypeFlags.PANDAREN_NEUTRAL },
-            { 25, RaceTypeFlags.PANDAREN_ALLIANCE },
-            { 26, RaceTypeFlags.PANDAREN_HORDE },
-            { 27, RaceTypeFlags.NIGHTBORNE },
-            { 28, RaceTypeFlags.HIGHMOUNTAIN_TAUREN },
-            { 29, RaceTypeFlags.VOIDELF },
-            { 30, RaceTypeFlags.LIGHTFORGED },
-            { 31, RaceTypeFlags.ZANDALARI },
-            { 32, RaceTypeFlags.KULTIRAN },
-            { 34, RaceTypeFlags.DARKIRON },
-            { 35, RaceTypeFlags.VULPERA },
-            { 36, RaceTypeFlags.MAGHAR },
-            { 37, RaceTypeFlags.MECHAGNOME },
-            { 52, RaceTypeFlags.DRACTHYR_ALLIANCE },
-            { 70, RaceTypeFlags.DRACTHYR_HORDE },
-            { 84, RaceTypeFlags.EARTHEN_HORDE },
-            { 85, RaceTypeFlags.EARTHEN_ALLIANCE },
+            { 1, RaceTypeBitIndexes.HUMAN },
+            { 2, RaceTypeBitIndexes.ORC },
+            { 3, RaceTypeBitIndexes.DWARF },
+            { 4, RaceTypeBitIndexes.NIGHTELF },
+            { 5, RaceTypeBitIndexes.UNDEAD },
+            { 6, RaceTypeBitIndexes.TAUREN },
+            { 7, RaceTypeBitIndexes.GNOME },
+            { 8, RaceTypeBitIndexes.TROLL },
+            { 9, RaceTypeBitIndexes.GOBLIN },
+            { 10, RaceTypeBitIndexes.BLOODELF },
+            { 11, RaceTypeBitIndexes.DRAENEI },
+            { 22, RaceTypeBitIndexes.WORGEN },
+            { 24, RaceTypeBitIndexes.PANDAREN_NEUTRAL },
+            { 25, RaceTypeBitIndexes.PANDAREN_ALLIANCE },
+            { 26, RaceTypeBitIndexes.PANDAREN_HORDE },
+            { 27, RaceTypeBitIndexes.NIGHTBORNE },
+            { 28, RaceTypeBitIndexes.HIGHMOUNTAIN_TAUREN },
+            { 29, RaceTypeBitIndexes.VOIDELF },
+            { 30, RaceTypeBitIndexes.LIGHTFORGED },
+            { 31, RaceTypeBitIndexes.ZANDALARI },
+            { 32, RaceTypeBitIndexes.KULTIRAN },
+            { 34, RaceTypeBitIndexes.DARKIRON },
+            { 35, RaceTypeBitIndexes.VULPERA },
+            { 36, RaceTypeBitIndexes.MAGHAR },
+            { 37, RaceTypeBitIndexes.MECHAGNOME },
+            { 52, RaceTypeBitIndexes.DRACTHYR_ALLIANCE },
+            { 70, RaceTypeBitIndexes.DRACTHYR_HORDE },
+            { 84, RaceTypeBitIndexes.EARTHEN_HORDE },
+            { 85, RaceTypeBitIndexes.EARTHEN_ALLIANCE },
         };
 
         public bool Has(ClassTypeFlags flags, ClassTypeFlags c)
-        {
-            return (flags & c) == c;
-        }
-
-        public bool Has(RaceTypeFlags flags, RaceTypeFlags c)
         {
             return (flags & c) == c;
         }

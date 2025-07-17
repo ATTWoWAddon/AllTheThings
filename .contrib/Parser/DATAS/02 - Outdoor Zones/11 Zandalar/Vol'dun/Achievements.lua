@@ -56,7 +56,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					12849,	-- Treasures of Vol'dun
 				}},
 			}),
-			explorationAch(12560),	-- Explore Vol'dun
+			ach(12560),	-- Explore Vol'dun
 			ach(13016, {	-- Scavenger of the Sands
 				crit(41342, {	-- Jason's Rusty Blade
 					["_quests"] = { 53132 },

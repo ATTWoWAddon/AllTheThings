@@ -14,8 +14,6 @@
 -- #IMPORT: 00 - DB\\ObjectDB_Conditionals.lua
 -- #IMPORT: 00 - DB\\PetDB.lua
 -- #IMPORT: 00 - DB\\PetTypeDB.lua
--- #IMPORT: 00 - DB\\Pre-Cata Achievement Data.lua
--- #IMPORT: 00 - DB\\Pre-Wrath Achievement Data.lua
 -- #IMPORT: 00 - DB\\ToyDB.lua
 -- #IMPORT: 00 - Item DB\\.dynamic\\
 -- #IMPORT: 00 - Item DB\\Build NYI.lua

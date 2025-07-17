@@ -79,11 +79,12 @@ root(ROOTS.Zones, {
 			["icon"] = 236778,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					explorationAch(862),	-- Explore Hellfire Peninsula
+					ach(862),	-- Explore Hellfire Peninsula
 					ach(1189, {	-- To Hellfire and Back [Alliance Version]
 						["races"] = ALLIANCE_ONLY,
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							-- Disrupt the Burning Legion
 							10397,	-- Invasion Point: Annihilator
@@ -117,61 +118,13 @@ root(ROOTS.Zones, {
 							10351,	-- Natural Remedies
 							10255,	-- Testing the Antidote
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_OnUpdate(t, 9587, 9575, 9607, 9589, 10754, 10762, 10763, 10764, 9492, 9493, 9494, 11002); end]],
-						["rank"] = 80,
-						-- #endif
-						-- #else
-						-- ["groups"] = {
-						-- 	crit(1, {	-- Disrupt the Burning Legion
-						-- 		["sourceQuest"] = 10397,	-- Invasion Point: Annihilator
-						-- 	}),
-						-- 	crit(2, {	-- Overthrow the Overlord
-						-- 		["sourceQuests"] = {
-						-- 			10400,	-- Overlord
-						-- 			10399,	-- The Heart of Darkness
-						-- 		},
-						-- 	}),
-						-- 	crit(3, {	-- In Search of Sedai
-						-- 		["sourceQuest"] = 9545,	-- The Seer's Relic
-						-- 	}),
-						-- 	crit(4, {	-- The Exorcism of Colonel Jules
-						-- 		["sourceQuest"] = 10935,	-- The Exorcism of Colonel Jules
-						-- 	}),
-						-- 	crit(5, {	-- Drill the Drillmaster
-						-- 		["sourceQuest"] = 10937,	-- Drill the Drillmaster
-						-- 	}),
-						-- 	crit(6, {	-- Temple of Telhamat
-						-- 		["sourceQuests"] = {
-						-- 			9383,	-- An Ambitious Plan
-						-- 			9490,	-- The Rock Flayer Matriarch
-						-- 			-- all quests below need to be confirmed
-						-- 			9427,	-- Cleaning the Waters
-						-- 			9398,	-- Deadly Predators
-						-- 		},
-						-- 	}),
-						-- 	crit(7, {	-- Green, But Not Orcs
-						-- 		["sourceQuests"] = {
-						-- 			10630,	-- Beneath Thrallmar
-						-- 			9356,	-- Smooth as Butter
-						-- 			9351,	-- Voidwalkers Gone Wild
-						-- 		},
-						-- 	}),
-						-- 	crit(8, {	-- Cenarion Post
-						-- 		["sourceQuests"] = {
-						-- 			10351,	-- Natural Remedies
-						-- 			10255,	-- Testing the Antidote
-						-- 		},
-						-- 	}),
-						-- },
 						-- #endif
 					}),
 					ach(1271, {	-- To Hellfire and Back [Horde Version]
 						["races"] = HORDE_ONLY,
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							-- Disrupt the Burning Legion
 							10388,	-- Return to Thrallmar
@@ -211,63 +164,6 @@ root(ROOTS.Zones, {
 							10351,	-- Natural Remedies
 							10255,	-- Testing the Antidote
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_OnUpdate(t, 9588, 9572, 9608, 9590, 10755, 10756, 10757, 10758, 9495, 9496, 11003); end]],
-						["rank"] = 90,
-						-- #endif
-						-- #else
-						-- ["groups"] = {
-						-- 	crit(1, {	-- Disrupt the Burning Legion
-						-- 		["sourceQuest"] = 10388,	-- Return to Thrallmar
-						-- 	}),
-						-- 	crit(2, {	-- Cruel's Intentions
-						-- 		["sourceQuests"] = {
-						-- 			10136,	-- Cruel's Intentions
-						-- 			10389,	-- The Agony and the Darkness
-						-- 			10393,	-- Vile Plans
-						-- 		},
-						-- 	}),
-						-- 	crit(3, {	-- The Hand of Kargath
-						-- 		["sourceQuest"] = 10876,	-- The Foot of the Citadel
-						-- 	}),
-						-- 	crit(4, {	-- Spinebreaker Post
-						-- 		["sourceQuests"] = {
-						-- 			10295,	-- From the Abyss
-						-- 			10834,	-- Grillok "Darkeye"
-						-- 			10258,	-- Honor the Fallen (probably)
-						-- 			10220,	-- Make Them listen
-						-- 			9345,	-- Preparing the Salve
-						-- 		},
-						-- 	}),
-						-- 	crit(5, {	-- The Mag'har
-						-- 		["sourceQuest"] = 9406,	-- The Mag'har
-						-- 	}),
-						-- 	crit(6, {	-- Falcon Watch
-						-- 		["sourceQuests"] = {
-						-- 			9397,	-- Birds of a Feather
-						-- 			9370,	-- The Cleansing Must Be Stopped
-						-- 			-- all quests below need to be confirmed
-						-- 			9472,	-- Arelion's Mistress
-						-- 			9391,	-- Marking the Path
-						-- 			9387,	-- Source of the Corruption
-						-- 		},
-						-- 	}),
-						-- 	crit(7, {	-- Green, But Not Orcs
-						-- 		["sourceQuests"] = {
-						-- 			10630,	-- Beneath Thrallmar
-						-- 			9356,	-- Smooth as Butter
-						-- 			9351,	-- Voidwalkers Gone Wild
-						-- 		},
-						-- 	}),
-						-- 	crit(8, {	-- Cenarion Post
-						-- 		["sourceQuests"] = {
-						-- 			10351,	-- Natural Remedies
-						-- 			10255,	-- Testing the Antidote
-						-- 		},
-						-- 	}),
-						-- },
 						-- #endif
 					}),
 				}),
@@ -381,6 +277,21 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 				}),
+				petbattles({
+					n(66550, {	-- Nicki Tinytech <Master Pet Tamer>
+						["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
+						["description"] = "Nicki's pets are level 20 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Mechanical - see above.\n3. Mechanical - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
+						["timeline"] = { ADDED_5_0_4 },
+						["petBattleLvl"] = 20,
+						["groups"] = {
+							q(31922, {	-- Nicki Tinytech
+								["sourceAchievement"] = 6604,	-- Taming Outland
+								["timeline"] = { ADDED_5_0_4 },
+								["isDaily"] = true,
+							}),
+						},
+					}),
+				}),
 				n(PROFESSIONS, {
 					prof(ALCHEMY, {
 						["crs"] = {
@@ -469,6 +380,17 @@ root(ROOTS.Zones, {
 							{ 55.4, 37.6, HELLFIRE_PENINSULA },
 						},
 						["groups"] = TBC_MINING,
+					}),
+					prof(TAILORING, {
+						["crs"] = {
+							18772,	-- Hama <Tailoring Trainer> (A)
+							18749,	-- Dalinna <Tailoring Trainer> (H)
+						},
+						["coords"] = {
+							{ 54.6, 63.6, HELLFIRE_PENINSULA },
+							{ 56.6, 37.2, HELLFIRE_PENINSULA },
+						},
+						["g"] = TBC_TAILORING,
 					}),
 				}),
 				n(QUESTS, {
@@ -1059,7 +981,6 @@ root(ROOTS.Zones, {
 						["qg"] = 22430,	-- Assistant Klatu
 						["sourceQuest"] = 10903,	-- Return to Honor Hold
 						["coord"] = { 54.3, 63.6, HELLFIRE_PENINSULA },
-						["cost"] = { { "i", 31795, 1 } },	-- Draenei Prayer Beads
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
@@ -1068,8 +989,11 @@ root(ROOTS.Zones, {
 									{ "i", 31795 },	-- Draenei Prayer Beads
 									{ "o", 185302 },	-- Fei Fei's Cache
 								},
+								["coord"] = { 54.1, 63.3, HELLFIRE_PENINSULA },
 							}),
+							i(31799),	-- Fei Fei Doggy Treat
 						},
+						["description"] = "You can forego interacting with Warrant Officer Tracy Proudwell and go directly to the given coordinates.",
 					}),
 					q(10144, {	-- Disrupt Their Reinforcements [Alliance]
 						["qg"] = 19310,	-- Forward Commander Kingston
@@ -2559,6 +2483,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
+							-- Danny Donkey: o(181582),	-- Kaliri Nest should be linked to this quest as a provider of Kaliri Feather.
 							objective(1, {	-- 0/8 Kaliri Feather
 								["provider"] = { "i", 23588 },	-- Kaliri Feather
 								["crs"] = {
@@ -3260,9 +3185,12 @@ root(ROOTS.Zones, {
 							i(30747, {	-- Gem Pouch
 								["isLimited"] = true,
 							}),
+							-- Danny Donkey: Although this vendor will keep offer a limited supply of Mining Sack after Cata, we will have more practical vendors offering unlimited supply of this bag.
+							-- #if BEFORE CATA
 							i(30746, {	-- Mining Sack
 								["isLimited"] = true,
 							}),
+							-- #endif
 							i(30745, {	-- Heavy Toolbox
 								["isLimited"] = true,
 							}),
@@ -3667,9 +3595,9 @@ appendGroups({
 	i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 	i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 	i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-	i(22307),	-- Pattern: Enchanted Mageweave Pouch
+	i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 	-- #if BEFORE CATA
-	i(6342),	-- Formula: Enchant Chest - Minor Mana
+	i(6342),	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
 	-- #endif
 }, FELANNIA_JOHAN_GROUPS);
 

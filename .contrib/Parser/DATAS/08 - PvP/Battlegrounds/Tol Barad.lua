@@ -57,6 +57,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 			n(QUESTS, {
 				TolBaradDailyQuest(28882, {	-- Victory in Tol Barad [A]
 					["qg"] = 51288,	-- Major Marsden
+					["coord"] = { 74.4, 60.8, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
@@ -64,6 +65,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_L
 				}),
 				TolBaradDailyQuest(28884, {	-- Victory in Tol Barad [H]
 					["qg"] = 51287,	-- Colonel Karzag
+					["coord"] = { 54.2, 80.6, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isWeekly"] = true,

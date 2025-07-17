@@ -30,7 +30,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 				["coord"] = { 35.6, 69.65, THE_FORBIDDEN_REACH_DRACTHYR },
 				["questID"] = 66876,
 				["g"] = {
-					i(195885),	-- Black Dragon's Scale Cloak
+					i(195885, {["races"]=IGNORED_VALUE}),	-- Black Dragon's Scale Cloak
 				},
 			}),
 			o(377466, {	-- Lost Draconic Hourglass

@@ -82,6 +82,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					}),
 				})),
 				n(TREASURES, {
+					o(463539, {	-- Pilfered Earthen Chest
+						["coord"] = { 68.4, 94.4, SIREN_ISLE },
+						["questID"] = 84527,
+						["isWeekly"] = true,
+						["g"] = { i(229181) },	-- Ordained Forge Maul
+					}),
 				}),
 				n(WORLD_QUESTS, {
 					["sourceQuests"] = {
@@ -99,7 +105,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(233499, {	-- Royal Snapdragon Treat
+					i(233499, {	-- Royal Snapdragon Treat (CI!)
 						["description"] = "You must have the Prismatic Snapdragon Mount before this can drop.\n\nCan be looted from Naga.",
 						-- n: 229851 (debugger)
 					}),

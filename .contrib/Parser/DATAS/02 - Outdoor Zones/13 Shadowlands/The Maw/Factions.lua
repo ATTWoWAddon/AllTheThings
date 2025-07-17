@@ -4,9 +4,7 @@
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(THE_MAW, {
 		n(FACTIONS, {
-			faction(FACTION_VENARI, {	-- Ve'nari
-				ach(14656),	-- Trading Partners
-			}),
+			faction(FACTION_VENARI),	-- Ve'nari
 		}),
 	}),
 })));

@@ -295,20 +295,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			n(QUESTS, {
 				header(HEADERS.Object, 142487, {	-- The Sparklematic 5200
-					n(REWARDS, {
-						i(9363, {	-- Sparklematic-Wrapped Box
-							["description"] = "Kill hostile creatures for [Grime-Encrusted Object], clean them at the Sparklematic 5200 to receive this box.",
-							["groups"] = {
-								i(122207, {	-- Music Roll: Tinkertown
-									["timeline"] = { ADDED_6_1_0 },
-									["races"] = ALLIANCE_ONLY,
-								}),
-								i(9280),	-- Yellow Punch Card
-								i(10299),	-- Gnomeregan Amulet
-								i(10298),	-- Gnomeregan Band
-							},
-						}),
-					}),
 					q(2951, {	-- The Sparklematic 5200!
 						["provider"] = { "o", 142487 },	-- The Sparklematic 5200
 						["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
@@ -338,7 +324,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["sourceQuest"] = 2951,	-- The Sparklematic 5200!
 						["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
 						["groups"] = {
-							i(9363, {["sym"] = {{"fill"}}}),	-- Sparklematic-Wrapped Box
+							i(9363),	-- Sparklematic-Wrapped Box
 						},
 					}),
 					q(4605, {	-- The Sparklematic 5200!
@@ -352,7 +338,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["sourceQuest"] = 4601,	-- The Sparklematic 5200!
 						["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
 						["groups"] = {
-							i(9363, {["sym"] = {{"fill"}}}),	-- Sparklematic-Wrapped Box
+							i(9363),	-- Sparklematic-Wrapped Box
 						},
 					}),
 					q(4606, {	-- The Sparklematic 5200!
@@ -366,7 +352,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["sourceQuest"] = 4602,	-- The Sparklematic 5200!
 						["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
 						["groups"] = {
-							i(9363, {["sym"] = {{"fill"}}}),	-- Sparklematic-Wrapped Box
+							i(9363),	-- Sparklematic-Wrapped Box
 						},
 					}),
 					q(2953, {	-- More Sparklematic Action
@@ -375,7 +361,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
 						["repeatable"] = true,
 						["groups"] = {
-							i(9363, {["sym"] = {{"fill"}}}),	-- Sparklematic-Wrapped Box
+							i(9363),	-- Sparklematic-Wrapped Box
 						},
 					}),
 					q(4603, {	-- More Sparklematic Action
@@ -390,7 +376,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
 						["repeatable"] = true,
 						["groups"] = {
-							i(9363, {["sym"] = {{"fill"}}}),	-- Sparklematic-Wrapped Box
+							i(9363),	-- Sparklematic-Wrapped Box
 						},
 					}),
 					q(4604, {	-- More Sparklematic Action
@@ -405,7 +391,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
 						["repeatable"] = true,
 						["groups"] = {
-							i(9363, {["sym"] = {{"fill"}}}),	-- Sparklematic-Wrapped Box
+							i(9363),	-- Sparklematic-Wrapped Box
 						},
 					}),
 				}),
@@ -833,6 +819,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 20,
 				}),
 			}),
+			n(REWARDS, {
+				container(9363, {	-- Sparklematic-Wrapped Box
+					["description"] = "Kill hostile creatures for [Grime-Encrusted Object], clean them at the Sparklematic 5200 to receive this box.",
+					["groups"] = {
+						i(122207, {	-- Music Roll: Tinkertown
+							["timeline"] = { ADDED_6_1_0 },
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(9280),	-- Yellow Punch Card
+						i(10299),	-- Gnomeregan Amulet
+						i(10298),	-- Gnomeregan Band
+					},
+				}),
+			}),
 			-- #if NOT SEASON_OF_DISCOVERY
 			MATRIX_PUNCHOGRAPH_A,
 			-- #endif
@@ -939,14 +939,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			e(422, {	-- Mekgineer Thermaplugg
 				["creatureID"] = 7800,
 				["groups"] = {
-					ach(634, {	-- Gnomeregan
-						-- #if BEFORE WRATH
-						["sourceQuests"] = {
-							2929,	-- The Grand Betrayal
-							2841,	-- Rig Wars
-						},
-						-- #endif
-					}),
+					ach(634),	-- Gnomeregan
 					ach(5044, {	-- Gnomeregan Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),

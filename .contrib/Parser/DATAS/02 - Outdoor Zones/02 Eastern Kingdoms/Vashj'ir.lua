@@ -14,6 +14,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26193,	-- Defending the Rift (A)
 						-- TODO: There are a lot more source quests than just this, but no good info on what they are
 					},
+					["maps"] = { VASHJIR_ABYSSAL_DEPTHS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(5319, {	-- 20,000 Leagues Under the Sea (H)
@@ -21,9 +22,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26194,	-- Defending the Rift (H)
 						-- TODO: There are a lot more source quests than just this, but no good info on what they are
 					},
+					["maps"] = { VASHJIR_ABYSSAL_DEPTHS },
 					["races"] = HORDE_ONLY,
 				}),
-				explorationAch(4825, {	-- Explore Vashj'ir
+				ach(4825, {	-- Explore Vashj'ir
 					["maps"] = {
 						VASHJIR_KELPTHAR_FOREST,
 						VASHJIR_ABYSSAL_DEPTHS,
@@ -40,10 +42,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				ach(4869, {	-- Sinking into Vashj'ir (A)
 					["races"] = ALLIANCE_ONLY,
-					-- #IF RETAIL
+					-- #if AFTER 7.3.5
 					["_doautomation"] = true,
-					-- #ENDIF
-					-- #if ANYCLASSIC
+					-- #else
 					["sourceQuests"] = {
 						25558,	-- All or Nothing
 						25638,	-- A Desperate Plea
@@ -62,10 +63,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				ach(4982, {	-- Sinking into Vashj'ir (H)
 					["races"] = HORDE_ONLY,
-					-- #IF RETAIL
+					-- #if AFTER 7.3.5
 					["_doautomation"] = true,
-					-- #ENDIF
-					-- #if ANYCLASSIC
+					-- #else
 					["sourceQuests"] = {
 						25949,	-- Blood and Thunder!
 						25638,	-- A Desperate Plea
@@ -1681,7 +1681,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["coord"] = { 45.0, 23.2, VASHJIR_KELPTHAR_FOREST },
 								["races"] = ALLIANCE_ONLY,
 								["sym"] = {
-									{ "select", "npcID", 71304 },	-- Iris Moondreamer <Quartermaster> },
+									{ "select", "npcID", 71304 },	-- Iris Moondreamer <Quartermaster>
 									{ "pop" },						-- Pop the Headers
 								},
 							}),
@@ -1689,7 +1689,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["coord"] = { 38.8, 31.6, VASHJIR_KELPTHAR_FOREST },
 								["races"] = HORDE_ONLY,
 								["sym"] = {
-									{ "select", "npcID", 71304 },	-- Iris Moondreamer <Quartermaster> },
+									{ "select", "npcID", 71304 },	-- Iris Moondreamer <Quartermaster>
 									{ "pop" },						-- Pop the Headers
 								},
 							}),
@@ -3126,9 +3126,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									i(62358),	-- Leggings of Clutching Roots
 									i(62366, {	-- Arcanum of the Earthen Ring
 										["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+										["timeline"] = { REMOVED_5_0_4 },
 										["filterID"] = CONSUMABLES,
 									}),
 									i(68764, {	-- Arcanum of the Earthen Ring
+										["timeline"] = { REMOVED_5_0_4 },
 										["filterID"] = CONSUMABLES,
 									}),
 								},

@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["icon"] = 236717,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(750),	-- Explore The Barrens
+				ach(750),	-- Explore The Barrens
 			}),
 			explorationHeader({
 				exploration(1700),	-- Agama'gor
@@ -85,7 +85,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			spell(921, {	-- Pickpocketing
+			header(HEADERS.Spell, 921, {	-- Pickpocketing
 				["classes"] = { ROGUE },
 				["groups"] = {
 					applyclassicphase(SOD_PHASE_ONE, i(208768, {	-- Buccaneer's Matchbox
@@ -2477,7 +2477,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 78908,	--  Speak to N'ora
 					["coord"] = { 62.0, 39.4, THE_BARRENS },
 					["timeline"] = { REMOVED_2_0_1 },
-					["OnUpdate"] = [[_.OnUpdateForCrafter]],
+					["OnUpdate"] = [[_.OnUpdateDB.FOR_CRAFTER]],
 					["cost"] = {
 						{ "i", 10940, 40 },	-- Strange Dust
 						{ "i", 10939, 5 },	-- Greater Magic Essence
@@ -2582,7 +2582,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.0, 39.4, THE_BARRENS },
 					["description"] = "You need to loot the Handful of Shifting Scales before this quest will be displayed to you.",
 					["timeline"] = { REMOVED_2_0_1 },
-					["OnUpdate"] = [[_.OnUpdateForCrafter]],
+					["OnUpdate"] = [[_.OnUpdateDB.FOR_CRAFTER]],
 					["lvl"] = 20,
 				})),
 				-- #endif
@@ -4437,7 +4437,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(5772, {	-- Pattern: Red Woolen Bag
+						i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(4782, {	-- Solstice Robe
@@ -4547,10 +4547,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_2_0_1 },
 							["isLimited"] = true,
 						}),
-						i(6272, {	-- Pattern: Blue Linen Robe
+						i(6272, {	-- Pattern: Blue Linen Robe (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(6275, {	-- Pattern: Greater Adept's Robe
+						i(6275, {	-- Pattern: Greater Adept's Robe (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(5640, {	-- Recipe: Rage Potion (RECIPE!)
@@ -4658,13 +4658,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6272, {	-- Pattern: Blue Linen Robe
+						i(6272, {	-- Pattern: Blue Linen Robe (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(6270, {	-- Pattern: Blue Linen Vest
+						i(6270, {	-- Pattern: Blue Linen Vest (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5772, {	-- Pattern: Red Woolen Bag
+						i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -4674,10 +4674,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.0, 59.2, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6274, {	-- Pattern: Blue Overalls
+						i(6274, {	-- Pattern: Blue Overalls (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5772, {	-- Pattern: Red Woolen Bag
+						i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -4697,11 +4697,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(ZONE_DROPS, {
 				i(5075, {	-- Blood Shard
-					["crs"] = {
-						3261,	-- Bristleback Thornweaver
-						3263,	-- Bristleback Geomancer
-						3260,	-- Bristleback Water Seeker
-						3258,	-- Bristleback Hunter
+					["providers"] = {
+						{ "n", 3261 },	-- Bristleback Thornweaver
+						{ "n", 3263 },	-- Bristleback Geomancer
+						{ "n", 3260 },	-- Bristleback Water Seeker
+						{ "n", 3258 },	-- Bristleback Hunter
+						-- #if ANYCLASSIC
+						{ "o", 3763 },	-- Copper Vein (The Barrens - Blood Shard)
+						{ "o", 3764 },	-- Tin Vein (The Barrens - Blood Shard)
+						-- #endif
 					},
 				}),
 				i(5092, {	-- Charred Razormane Wand
@@ -4726,8 +4730,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Incredibly rare drop from Fray Island.",
 					-- #else
 					["description"] = "While technically this shirt does still drop in retail, the drop rate is reduced from fairly common to 1 in 12k with the Cataclysm. For the purposes of collecting, get it now and stock up on extras!",
-					["timeline"] = { REMOVED_4_0_3 },
 					-- #endif
+					["timeline"] = { REMOVED_4_0_3 },	-- Likely Removed -- 13th May 2025 -- Goldenshacal
+														-- If somebody gets it, we can remove the timeline & set a note here since people are asking every couple months
 					["crs"] = {
 						-- #if BEFORE 4.0.3
 						3381,	-- Southsea Brigand
@@ -4738,8 +4743,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(5051, {	-- Dig Rat
-					["coord"] = { 48.8, 84.8, THE_BARRENS },
+					["coord"] = { 48.8, 84.8, THE_BARRENS },	-- Bael Modan Excavation
 					["cr"] = 3444,	-- Dig Rat
+					["description"] = "Only drops from Dig Rats in The Barrens."
 				}),
 				i(5020, {	-- Kolkar Booty Key
 					["coords"] = {
@@ -4838,6 +4844,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 3445,	-- Supervisor Lugwizzle
 				})),
 				-- #endif
+				i(5052, {	-- Unconscious Dig Rat
+					["cr"] = 3444,	-- Dig Rat
+				}),
 			}),
 		},
 	}),

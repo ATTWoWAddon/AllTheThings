@@ -825,3 +825,23 @@
 627@@@Radiant Officer %s
 628@@@Sacred Templar %s
 631@@@%s the Mad
+11.1.5.61122
+636@@@%s the Triple Threat
+11.1.7.60520
+629@@@%s of Hammerfall
+630@@@%s of Stromgarde
+11.2.0.61476
+453@@@%s the Unbound
+598@@@Flickering %s
+614@@@%s, Famed Slayer of Dimensius
+615@@@Void Vanquisher %s
+632@@@Astral Warlord %s
+633@@@Astral Gladiator %s
+634@@@Astral Legend %s
+635@@@Astral Marshal %s
+637@@@%s the Unbound Hero
+638@@@%s the Delver Within
+639@@@Contract Killer %s
+640@@@Star Savior %s
+641@@@%s Bronzebeard
+644@@@%s of the Twilight Star

@@ -495,7 +495,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 48,
 				}),
 				-- Crieve NOTE: If a Blizzard Dev ever reads this, please know that this is why I have trust issues.
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28258, {	-- Meet with Ander Germaine / Meet with Signilda Hardforge / [SL+]
 					["qgs"] = {
 						17120,	-- Behomat
@@ -513,7 +513,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28302, {	-- Meet with Avaros Dawnglaive [SL+] / Meet with Sunwalker Atohmo
 					["qgs"] = {
 						43795,	-- Aponi Brightmane
@@ -547,7 +547,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28260, {	-- Meet with Dalgrun Steelpine [SL+] / Meet with Wulf Hansreim
 					["qgs"] = {
 						17122,	-- Vord
@@ -577,7 +577,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28268, {	-- Meet with Ezul'aan [SL+] / Meet with Lord Grayson Shadowbreaker
 					["qgs"] = {
 						16761,	-- Baatun
@@ -597,7 +597,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28287, {	-- Meet with Farseer Umbrua / Meet with Mulric Boldrock [SL+]
 					["qgs"] = {
 						52292,	-- Droha
@@ -615,7 +615,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28300, {	-- Meet with Feenix Arcshine [SL+] / Meet with Ureda
 					["qgs"] = {
 						3047,	-- Archmage Shymm
@@ -634,7 +634,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28263, {	-- Meet with Frazzle Frostfingers [SL+] / Meet with Maginor Dumas
 					["qgs"] = {
 						16749,	-- Edirah
@@ -654,7 +654,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28285, {	-- Meet with High Priestess Laurena / Meet with Patrice Lancaster [SL+]
 					["qgs"] = {
 						11401,	-- Priestess Alathea
@@ -674,7 +674,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28301, {	-- Meet with Hretar Riverspeaker [SL+] / Meet with Terga Earthbreaker
 					["qgs"] = {
 						51639,	-- Kador Cloudsong
@@ -710,7 +710,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28268, {	-- Meet with Lord Grayson Shadowbreaker / Meet with Ezul'aan [SL+]
 					["qgs"] = {
 						16761,	-- Baatun
@@ -730,7 +730,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28262, {	-- Meet with Lord Tony Romano / Meet with Veruca Darkstream [SL+]
 					["qgs"] = {
 						4214,	-- Erion Shadewhisper
@@ -748,7 +748,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28263, {	-- Meet with Maginor Dumas / Meet with Frazzle Frostfingers [SL+]
 					["qgs"] = {
 						16749,	-- Edirah
@@ -768,7 +768,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28303, {	-- Meet with Master Pyreanor / Meet With Avaros Dawnglaive [SL+]
 					["qgs"] = {
 						43795,	-- Aponi Brightmane
@@ -787,7 +787,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28287, {	-- Meet with Mulric Boldrock [SL+] / Meet with Farseer Umbrua
 					["qgs"] = {
 						52292,	-- Droha
@@ -805,7 +805,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28297, {	-- Meet with Ormak Grimshot / Meet with Tamanji [SL+]
 					["qgs"] = {
 						39116,	-- Apolos
@@ -824,7 +824,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28285, {	-- Meet with Patrice Lancaster [SL+] / Meet with High Priestess Laurena
 					["qgs"] = {
 						11401,	-- Priestess Alathea
@@ -844,7 +844,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28258, {	-- Meet with Signilda Hardforge [SL+] / Meet with Ander Germaine
 					["qgs"] = {
 						17120,	-- Behomat
@@ -862,7 +862,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28302, {	-- Meet with Sunwalker Atohmo / Meet with Avaros Dawnglaive [SL+]
 					["qgs"] = {
 						43795,	-- Aponi Brightmane
@@ -879,7 +879,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28297, {	-- Meet with Tamanji [SL+] / Meet with Ormak Grimshot
 					["qgs"] = {
 						39116,	-- Apolos
@@ -898,7 +898,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28301, {	-- Meet with Terga Earthbreaker / Meet with Hretar Riverspeaker [SL+]
 					["qgs"] = {
 						51639,	-- Kador Cloudsong
@@ -915,7 +915,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28300, {	-- Meet with Ureda / Meet with Feenix Arcshine [SL+]
 					["qgs"] = {
 						3047,	-- Archmage Shymm
@@ -934,7 +934,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28262, {	-- Meet with Veruca Darkstream [SL+] / Meet with Lord Tony Romano
 					["qgs"] = {
 						4214,	-- Erion Shadewhisper
@@ -952,7 +952,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28260, {	-- Meet with Wulf Hansreim / Meet with Dalgrun Steelpine [SL+]
 					["qgs"] = {
 						17122,	-- Vord
@@ -1079,7 +1079,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(28401, {	-- Slaves of the Firelord (A)
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						164945,	-- Mulric Boldrock
 						-- #else
 						20407,	-- Farseer Umbrua
@@ -1087,7 +1087,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 28287,	-- Meet with Farseer Umbrua / Meet with Mulric Boldrock [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 78.2, 70.9, STORMWIND_CITY },
 						-- #else
 						{ 64.6, 33.0, STORMWIND_CITY },
@@ -1109,7 +1109,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 72939,	-- Terga Earthbreaker
 					["sourceQuest"] = 28301,	-- Meet with Terga Earthbreaker / Meet with Hretar Riverspeaker [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 73.6, 43.3, ORGRIMMAR },
 						-- #else
 						{ 39.0, 47.4, ORGRIMMAR },
@@ -1129,7 +1129,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(28399, {	-- Stones of Binding (A)
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						164942,	-- Evelyn Thorn
 						-- #else
 						461,	-- Demisette Cloyce
@@ -1137,7 +1137,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 28259,	-- Meet with Demisette Cloyce / Meet with Evelyn Thorn [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 79.5, 69.9, STORMWIND_CITY },
 						-- #else
 						{ 39.4, 84.8, STORMWIND_CITY },
@@ -1154,7 +1154,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(28459, {	-- Stones of Binding (H)
 					["qgs"] = {
-						-- #IF AFTER SHADOWLANDS
+						-- #if AFTER SL
 						168623,	-- Kazak Darkscream
 						-- #ELSE
 						88705,	-- Kranosh
@@ -1162,7 +1162,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 28299,	-- Meet with Zevrost / Meet with Kranosh [WOD+] / Meet with Kazak Darkscream [SL+]
 					["coords"] = {
-						-- #IF AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 74.6, 47.4, ORGRIMMAR },
 						-- #ELSE
 						{ 49.0, 55.2, ORGRIMMAR },
@@ -1194,7 +1194,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(28406, {	-- The Dark Iron Army (A)
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						164946,	-- Veruca Darkstream
 						-- #else
 						13283,	-- Lord Tony Romano
@@ -1202,7 +1202,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 28262,	-- Meet with Lord Tony Romano / Meet with Veruca Darkstream [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 78.7, 70.6, STORMWIND_CITY },
 						-- #else
 						{ 79.6, 60.8, STORMWIND_CITY },
@@ -1219,7 +1219,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(28463, {	-- The Dark Iron Army (H)
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						168598,	-- Thega Graveblade
 						-- #else
 						47233,	-- Gordul
@@ -1227,7 +1227,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 28298,	-- Meet with Gordul (Cata+) / Meet with Thega Graveblade (SL+)
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 75.4, 47.4, ORGRIMMAR },
 						-- #else
 						{ 44.6, 61.4, ORGRIMMAR },
@@ -1290,7 +1290,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(28394, {	-- The Golem Lord's Creations (A)
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						164960,	-- Dalgrun Steelpine <Hunter Trainer>
 						-- #else
 						44247,	-- Wulf Hansreim
@@ -1298,7 +1298,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 28260,	-- Meet with Wulf Hansreim / Meet with Dalgrun Steelpine [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 79.2, 71.2, STORMWIND_CITY },
 						-- #else
 						{ 79.0, 71.0, STORMWIND_CITY },
@@ -1315,7 +1315,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(28461, {	-- The Golem Lord's Creations (H)
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						168551,	-- Tamanji
 						-- #else
 						3352,	-- Ormak Grimshot
@@ -1323,7 +1323,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 28297,	-- Meet with Ormak Grimshot / Meet with Tamanji [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 73.8, 43.8, ORGRIMMAR },
 						-- #else
 						{ 63.8, 32.8, ORGRIMMAR },
@@ -1445,14 +1445,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(28398, {	-- The Pyromancer's Grimoire (A)
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						164955,	-- Frazzle Frostfingers
 						-- #else
 						331,	-- Maginor Dumas
 						-- #endif
 					},
 					["sourceQuest"] = 28263,	-- Meet with Maginor Dumas / Meet with Frazzle Frostfingers [SL+]
-					["coord"] = { 49.2, 87.6, STORMWIND_CITY },
+					["coords"] = {
+						-- #if AFTER SL
+						{ 80.0, 69.6, STORMWIND_CITY },
+						-- #else
+						{ 49.2, 87.6, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
@@ -1464,7 +1470,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(28458, {	-- The Pyromancer's Grimoire (H)
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						168626,	-- Feenix Arcshine
 						-- #else
 						47246,	-- Ureda
@@ -1472,7 +1478,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 28300,	-- Meet with Ureda / Meet with Feenix Arcshine [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 74.6, 43.5, ORGRIMMAR },
 						-- #else
 						{ 48.4, 62.6, ORGRIMMAR },
@@ -1674,7 +1680,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(28405, {	-- Weapons of Darkness (A)
 					["qgs"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						164952,	-- Ezul'aan <Paladin Trainer>
 						-- #else
 						928,	-- Lord Grayson Shadowbreaker
@@ -1682,7 +1688,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 28268,	-- Meet with Lord Grayson Shadowbreaker
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						{ 79.2, 69.6, STORMWIND_CITY },
 						-- #else
 						{ 52.6, 45.0, STORMWIND_CITY },
@@ -1793,7 +1799,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(28393, {	-- A Dangerous Alliance [A]
 					["qgs"] = {
-						-- #if BEFORE SHADOWLANDS
+						-- #if BEFORE SL
 						914,	-- Ander Germaine
 						-- #else
 						164939,	-- Signilda Hardforge <Warrior Trainer>
@@ -1801,8 +1807,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["sourceQuest"] = 28258,	-- Meet with Ander Germaine / Meet with Signilda Hardforge / [SL+]
 					["coords"] = {
-						-- #if AFTER SHADOWLANDS
-						{ 80.2, 70.2, STORMWIND_CITY },
+						-- #if AFTER SL
+						{ 80.3, 70.4, STORMWIND_CITY },
 						-- #else
 						{ 79.4, 69.0, STORMWIND_CITY },
 						-- #endif
@@ -1837,7 +1843,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28304, {	-- Journey to Orgrimmar [Undead] (SL+) / Meet with Dark Cleric Cecille (Cata+)
 					["qgs"] = {
 						16658,	-- Aldrae <Priest Trainer>
@@ -1934,7 +1940,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28323, {	-- Meet with Brother Silverhallow (Cata+) / Journey to Orgrimmar [Goblin] (SL+)
 					["qgs"] = {
 						16658,	-- Aldrae <Priest Trainer>
@@ -1989,7 +1995,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28290, {	-- Meet with Gormok Ogrefist (SL+) / Meet with Grezz Ragefist (Cata+)
 					["qgs"] = {
 						43009,	-- Alsudar the Bastion
@@ -2008,7 +2014,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28290, {	-- Meet with Grezz Ragefist (Cata+) / Meet with Gormok Ogrefist (SL+)
 					["qgs"] = {
 						43009,	-- Alsudar the Bastion
@@ -2065,7 +2071,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28298, {	-- Meet with Thega Graveblade (SL+) / Meet with Gordul (Cata+)
 					["qgs"] = {
 						16684,	-- Zelanis <Rogue Trainer>
@@ -2082,7 +2088,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 				}),
 				-- #endif
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28307, {	-- Meet with Tyelis (Cata+) / Journey to Orgrimmar [Blood Elf] (SL+)
 					["qgs"] = {
 						16658,	-- Aldrae <Priest Trainer>
@@ -2304,13 +2310,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				n(12944, bubbleDownClassicRep(FACTION_THORIUM_BROTHERHOOD, {	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
 					{	-- Neutral
 						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_FOUR, i(20754, {	-- Lesser Mana Oil
+						applyclassicphase(SOD_PHASE_FOUR, i(20754, {	-- Lesser Mana Oil (RECIPE!)
 							["timeline"] = { ADDED_1_15_3 },
 						})),
-						applyclassicphase(SOD_PHASE_FOUR, i(20755, {	-- Formula: Wizard Oil
+						applyclassicphase(SOD_PHASE_FOUR, i(20755, {	-- Formula: Wizard Oil (RECIPE!)
 							["timeline"] = { ADDED_1_15_3 },
 						})),
-						applyclassicphase(SOD_PHASE_FOUR, i(22308, {	-- Pattern: Enchanted Runecloth Bag
+						applyclassicphase(SOD_PHASE_FOUR, i(22308, {	-- Pattern: Enchanted Runecloth Bag (RECIPE!)
 							["timeline"] = { ADDED_1_15_3 },
 						})),
 						-- #endif
@@ -2318,27 +2324,27 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					{	-- Friendly
 						applyclassicphase(PHASE_THREE_ENCHANTS, i(19444)),	-- Formula: Enchant Weapon - Strength (RECIPE!)
 						i(17022),	-- Pattern: Corehound Boots (RECIPE!)
-						i(17018),	-- Pattern: Flarecore Gloves
+						i(17018),	-- Pattern: Flarecore Gloves (RECIPE!)
 						i(17023),	-- Pattern: Molten Helm (RECIPE!)
 						i(17051),	-- Plans: Dark Iron Bracers (RECIPE!)
 						applyclassicphase(PHASE_FIVE, i(20761)),	-- Recipe: Transmute Elemental Fire (RECIPE!)
 					},
 					{	-- Honored
 						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_FOUR, i(228981, {	-- Formula: Conductive Shield Coating
+						applyclassicphase(SOD_PHASE_FOUR, i(228981, {	-- Formula: Conductive Shield Coating (RECIPE!)
 							["timeline"] = { ADDED_1_15_3 },
 						})),
-						applyclassicphase(SOD_PHASE_FOUR, i(229008, {	-- Formula: Enchant Cloak - Greater Fire Resistance
+						applyclassicphase(SOD_PHASE_FOUR, i(229008, {	-- Formula: Enchant Cloak - Greater Fire Resistance (RECIPE!)
 							["timeline"] = { ADDED_1_15_3 },
 						})),
-						applyclassicphase(SOD_PHASE_FOUR, i(229009, {	-- Formula: Enchant Cloak - Greater Nature Resistance
+						applyclassicphase(SOD_PHASE_FOUR, i(229009, {	-- Formula: Enchant Cloak - Greater Nature Resistance (RECIPE!)
 							["timeline"] = { ADDED_1_15_3 },
 						})),
 						-- #endif
 						applyclassicphase(PHASE_THREE_ENCHANTS, i(19448)),	-- Formula: Enchant Weapon - Mighty Versatility / CLASSIC: Formula: Enchant Weapon - Mighty Spirit (RECIPE!)
 						i(17025),	-- Pattern: Black Dragonscale Boots (RECIPE!)
-						i(17017),	-- Pattern: Flarecore Mantle
-						applyclassicphase(PHASE_THREE_RECIPES, i(19219)),	-- Pattern: Flarecore Robe
+						i(17017),	-- Pattern: Flarecore Mantle (RECIPE!)
+						applyclassicphase(PHASE_THREE_RECIPES, i(19219)),	-- Pattern: Flarecore Robe (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19330)),	-- Pattern: Lava Belt (RECIPE!)
 						i(17060),	-- Plans: Dark Iron Destroyer (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19206)),	-- Plans: Dark Iron Helm (RECIPE!)
@@ -2585,7 +2591,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						applyclassicphase(PHASE_THREE_ENCHANTS, i(19449)),	-- Formula: Enchant Weapon - Mighty Intellect (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19331)),	-- Pattern: Chromatic Gauntlets (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19332)),	-- Pattern: Corehound Belt (RECIPE!)
-						applyclassicphase(PHASE_THREE_RECIPES, i(19220)),	-- Pattern: Flarecore Leggings
+						applyclassicphase(PHASE_THREE_RECIPES, i(19220)),	-- Pattern: Flarecore Leggings (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19333)),	-- Pattern: Molten Belt (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19208)),	-- Plans: Black Amnesty (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19209)),	-- Plans: Blackfury (RECIPE!)
@@ -3507,14 +3513,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				e(387, {	-- Emperor Dagran Thaurissan
 					["creatureID"] = 9019,
 					["groups"] = {
-						ach(642, {	-- Blackrock Depths
-							-- #if BEFORE WRATH
-							["sourceQuests"] = {
-								4362,	-- The Fate of the Kingdom
-								4003,	-- The Royal Rescue
-							},
-							-- #endif
-						}),
+						ach(642),	-- Blackrock Depths
 						ach(5051, {	-- Blackrock Depths Guild Run
 							["timeline"] = { ADDED_4_0_3 },
 						}),

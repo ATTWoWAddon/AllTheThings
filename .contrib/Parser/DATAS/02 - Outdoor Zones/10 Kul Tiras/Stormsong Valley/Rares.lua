@@ -164,6 +164,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					n(EVENT_COMPLETION, {
 						i(172491),	-- Papi (PET!)
 						i(172492),	-- Sunsoaked Flitter (PET!)
+						i(172448),	-- Super Sticky Honey
 						i(170175),	-- Technique: Glyph of Dire Bees (RECIPE!)
 					}),
 				},
@@ -176,6 +177,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					{ 62.0, 15.4, STORMSONG_VALLEY },
 				},
 				["g"] = {
+					i(169858),	-- "Bee Bee" Gun
 					i(169133, {	-- Crystallized Jelly
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -185,6 +187,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(172493),	-- Crimson Skipper (PET!)
+					i(169152),	-- Empty Beehive
 					i(169110),	-- Jelly Magnet
 					i(172405),	-- Tome of Hex: Living Honey (CI!)
 				},

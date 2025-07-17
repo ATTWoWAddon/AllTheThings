@@ -9,10 +9,11 @@ root(ROOTS.Zones, {
 			["maps"] = { 170 },	-- Hrothgar's Landing
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					explorationAch(1270),	-- Explore Icecrown
+					ach(1270),	-- Explore Icecrown
 					ach(40, {	-- Icecrown: The Final Goal
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							13083,	-- Light Within the Darkness
 							13219,	-- Battle at Valhalas: Final Challenge
@@ -29,82 +30,6 @@ root(ROOTS.Zones, {
 							13346,	-- No Rest For The Wicked (A)
 							13367,	-- No Rest For The Wicked (H)
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 140,
-						-- #endif
-						-- #else
-						crit(39139, {	-- Crusader Bridenbrad
-							["sourceQuest"] = 13083,	-- Light Within the Darkness
-						}),
-						crit(39135, {	-- The Unthinkable
-							["sourceQuest"] = 13219,	-- Battle at Valhalas: Final Challenge
-						}),
-						crit(39136, {	-- Teaching the Meaning of Fear
-							["sourceQuest"] = 13235,	-- The Flesh Giant Champion
-						}),
-						crit(39137, {	-- The Heart of the Lich King
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 13403,	-- Tirion's Gambit (A)
-						}),
-						crit(39138, {	-- The Heart of the Lich King
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 13364,	-- Tirion's Gambit (H)
-						}),
-						crit(39130, {	-- What's Yours Is Mine
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 12898,	-- The Shadow Vault (A)
-						}),
-						crit(39131, {	-- What's Yours Is Mine
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 12899,	-- The Shadow Vault (H)
-						}),
-						crit(39132, {	-- Seizing Saronite
-							["sourceQuest"] = 13172,	-- Seeds of Chaos
-						}),
-						crit(39133, {	-- Seizing Saronite
-							["sourceQuest"] = 13174,	-- Amidst the Confusion
-						}),
-						crit(39134, {	-- Malykriss: The Vile Hold
-							["sourceQuest"] = 13164,	-- The Fate of Bloodbane
-						}),
-						crit(39119, {	-- In Defiance of the Scourge
-							["sourceQuest"] = 13157,	-- The Crusaders' Pinnacle
-						}),
-						crit(39120, {	-- Mord'rethar: The Death Gate
-							["races"] = ALLIANCE_ONLY,
-						}),
-						crit(39121, {	-- Mord'rethar: The Death Gate
-							["races"] = ALLIANCE_ONLY,
-						}),
-						crit(39122, {	-- Mord'rethar: The Death Gate
-							["races"] = HORDE_ONLY,
-						}),
-						crit(39123, {	-- Mord'rethar: The Death Gate
-							["races"] = HORDE_ONLY,
-						}),
-						crit(39124, {	-- Aldur'thar: The Desolation Gate
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 13346,	-- No Rest For The Wicked (A)
-						}),
-						crit(39125, {	-- Aldur'thar: The Desolation Gate
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 13367,	-- No Rest For The Wicked (H)
-						}),
-						crit(39126, {	-- Corp'rethar: The Horror Gate
-							["races"] = ALLIANCE_ONLY,
-						}),
-						crit(39127, {	-- Corp'rethar: The Horror Gate
-							["races"] = ALLIANCE_ONLY,
-						}),
-						crit(39128, {	-- Corp'rethar: The Horror Gate
-							["races"] = HORDE_ONLY,
-						}),
-						crit(39129, {	-- Corp'rethar: The Horror Gate
-							["races"] = HORDE_ONLY,
-						}),
 						-- #endif
 					}),
 					achWithReps(945, { FACTION_ARGENT_DAWN, FACTION_ARGENT_CRUSADE }, {	-- The Argent Champion
@@ -213,8 +138,55 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				petbattles({
-					n(66675, {	-- Major Payne
+					n(66675, {	-- Major Payne <Grand Master Pet Tamer>
 						["coord"] = { 77.4, 19.6, ICECROWN },
+						["description"] = "Major Payne's pets are level 25 of epic quality and exceptionally powerful of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Mechanical - use Elemental (powerful and tanky) pet.\n3. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Cogblade Raptor (Batter/Overtune/Exposed Wounds) and Flayer Youngling (Blitz/Focus/Kick).",
+						["timeline"] = { ADDED_5_0_4 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(31935, {	-- Grand Master Payne
+								["sourceAchievement"] = 6605,	-- Taming Northrend
+								["timeline"] = { ADDED_5_0_4 },
+								["isDaily"] = true,
+								["groups"] = {
+									i(89125),	-- Sack of Pet Supplies
+								},
+							}),
+						},
+					}),
+					q(31928, {	-- Grand Master Payne
+						["qg"] = 66675,	-- Major Payne
+						["sourceQuests"] = {
+							31927,	-- Battle Pet Tamers: Northrend (A)
+							31929,	-- Battle Pet Tamers: Northrend (H)
+						},
+						["coord"] = { 77.4, 19.6, ICECROWN },
+						["timeline"] = { ADDED_5_0_4 },
+						["groups"] = {
+							objective(1, {	-- Defeat Major Payne
+								["provider"] = { "n", 66675 },	-- Major Payne
+								["coord"] = { 77.4, 19.6, ICECROWN },
+							}),
+							i(89125),	-- Sack of Pet Supplies
+						},
+					}),
+					q(31984, {	-- A Brief Reprieve (A)
+						["qg"] = 66675,	-- Major Payne
+						["sourceQuest"] = 31928,	-- Grand Master Payne
+						["coord"] = { 77.4, 19.6, ICECROWN },
+						["timeline"] = { ADDED_5_0_4 },
+						["maps"] = { STORMWIND_CITY },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+					}),
+					q(31983, {	-- A Brief Reprieve (H)
+						["qg"] = 66675,	-- Major Payne
+						["sourceQuest"] = 31928,	-- Grand Master Payne
+						["coord"] = { 77.4, 19.6, ICECROWN },
+						["timeline"] = { ADDED_5_0_4 },
+						["maps"] = { ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 				}),
 				n(QUESTS, {
@@ -2376,7 +2348,7 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(ZONE_DROPS, {
-					-- #if AFTER SHADOWLANDS
+					-- #if AFTER SL
 					i(50379),	-- Battered Hilt (Alliance) - These are dropping zone-wide during Shadowlands Prepatch Event; remains to be seen whether they will permanently drop from here.
 					i(50380),	-- Battered Hilt (Horde)
 					-- #endif

@@ -101,7 +101,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["sym"] = {{ "achievement_criteria" }},
 					}),
-					explorationAch(8940),		-- Explore Talador
+					ach(8940),		-- Explore Talador
 					ach(9486),		-- Goodness Gracious
 					ach(9638, {		-- Heralds of the Legion (Shattrath City)
 						["sym"] = {{ "achievement_criteria" }},
@@ -285,9 +285,25 @@ root(ROOTS.Zones, {
 						["coord"] = { 80.4, 25.4, TALADOR },
 					}),
 				}),
-				petbattles({ ADDED_6_0_2 }, {
+				petbattles({
 					n(87125, {	-- Taralune <Grand Master Pet Tamer>
 						["coord"] = { 49.0, 80.4, TALADOR },
+						["timeline"] = { ADDED_6_0_2 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(37208, {	-- Taralune
+								["timeline"] = { ADDED_6_0_2 },
+								["isDaily"] = true,
+								["_drop"] = { "g" },	-- Drops Polished Pet Charm
+								["groups"] = {
+									-- #if BEFORE 10.2.5
+									i(116415, {	-- Shiny Pet Charm
+										["timeline"] = { REMOVED_10_2_5 },
+									}),
+									-- #endif
+								},
+							}),
+						},
 					}),
 				}),
 				n(QUESTS, {
@@ -2628,7 +2644,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(228483, {	-- Rusted Lockbox
-						["questID"] = 34276,
+						["questID"] = 34276,	-- triggers together with questID 34760 (another treasure)
 						["description"] = "Inside Deathweb Hollow. Swim down to the bottom of the cavern.",
 						["coords"] = {
 							{ 61.1, 83.9, TALADOR },	-- Deathweb Hollow Cave Entrance

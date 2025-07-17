@@ -28,10 +28,8 @@ root(ROOTS.Zones, {
 			["icon"] = 236847,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					explorationAch(867),	-- Explore Terokkar Forest
-					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, achWithRep(894, FACTION_SHATARI_SKYGUARD, {	-- Flying High Over Skettis
-
-					})),
+					ach(867),	-- Explore Terokkar Forest
+					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, achWithRep(894, FACTION_SHATARI_SKYGUARD)),	-- Flying High Over Skettis
 					ach(726, {	-- Mr. Pinchy's Magical Crawdad Box
 						["provider"] = { "i", 27445 },	-- Magical Crawdad Box
 						["requireSkill"] = FISHING,
@@ -39,33 +37,12 @@ root(ROOTS.Zones, {
 					ach(905, {	-- Old Man Barlowned
 						["timeline"] = { ADDED_3_0_2 },
 						["requireSkill"] = FISHING,
-						["groups"] = {
-							crit(5706, {	-- Crocolisks in the City
-								["timeline"] = { ADDED_3_0_2 },
-								["_quests"] = { 11665 },
-							}),
-							crit(5707, {	-- Bait Bandits
-								["timeline"] = { ADDED_3_0_2 },
-								["_quests"] = { 11666 },
-							}),
-							crit(5708, {	-- Felblood Fillet
-								["timeline"] = { ADDED_3_0_2 },
-								["_quests"] = { 11669 },
-							}),
-							crit(5709, {	-- The One That Got Away
-								["timeline"] = { ADDED_3_0_2 },
-								["_quests"] = { 11667 },
-							}),
-							crit(5710, {	-- Shrimpin' Ain't Easy
-								["timeline"] = { ADDED_3_0_2 },
-								["_quests"] = { 11668 },
-							}),
-						},
 					}),
 					ach(1191, {	-- Terror of Terokkar (A)
 						["races"] = ALLIANCE_ONLY,
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							-- The Skettis Offensive
 							10879,	-- The Skettis Offensive
@@ -101,63 +78,13 @@ root(ROOTS.Zones, {
 							9986,	-- Stymying the Arakkoa
 							10028,	-- Vessels of Power
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 63,
-						-- #endif
-						-- #else
-						-- ["groups"] = {
-						-- 	crit(1, {	-- The Skettis Offensive
-						-- 		["sourceQuest"] = 10879,	-- The Skettis Offensive
-						-- 	}),
-						-- 	crit(2, {	-- Refugee Caravan
-						-- 		["sourceQuests"] = {
-						-- 			10878,	-- Before Darkness Falls
-						-- 			10031,	-- Helping the Lost Find Their Way
-						-- 			10852,	-- Missing Friends
-						-- 			10896,	-- The Infested Protectors
-						-- 			10881,	-- The Shadow Tomb
-						-- 			10842,	-- Vengeful Souls
-						-- 		},
-						-- 	}),
-						-- 	crit(3, {	-- Sha'tari Base Camp
-						-- 		["sourceQuests"] = {
-						-- 			10915,	-- The Fallen Exarch
-						-- 			10926,	-- Return to Sha'tari Base Camp
-						-- 			10930,	-- The Big Bone Worm
-						-- 			-- TODO: verify below:
-						-- 			10923,	-- Evil Draws Near
-						-- 			10873,	-- Taken in the Night
-						-- 		},
-						-- 	}),
-						-- 	crit(4, {	-- The Warden's Secret
-						-- 		["sourceQuests"] = {
-						-- 			9951,	-- It's Watching You!
-						-- 			10005,	-- Letting Earthbinder Tavgren Know
-						-- 		},
-						-- 	}),
-						-- 	crit(5, {	-- Allerian Stronghold
-						-- 		["sourceQuests"] = {
-						-- 			10042,	-- Kill the Shadow Council!
-						-- 			10035,	-- Torgos!
-						-- 			10022,	-- The Elusive Ironjaw
-						-- 			-- TODO: not 100% sure if every quest below is required
-						-- 			10012,	-- Fel Orc Plans
-						-- 			10007,	-- Thinning the Ranks
-						-- 			10869,	-- Thin the Flock
-						-- 			9986,	-- Stymying the Arakkoa
-						-- 			10028,	-- Vessels of Power
-						-- 		},
-						-- 	}),
-						-- },
 						-- #endif
 					}),
 					ach(1272, {	-- Terror of Terokkar (H)
 						["races"] = HORDE_ONLY,
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							-- The Skettis Offensive
 							10879,	-- The Skettis Offensive
@@ -192,56 +119,6 @@ root(ROOTS.Zones, {
 							9987,	-- Stymying the Arakkoa
 							10036,	-- Torgos!
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 68,
-						-- #endif
-						-- #else
-						-- ["groups"] = {
-						-- 	crit(1, {	-- The Skettis Offensive
-						-- 		["sourceQuest"] = 10879,	-- The Skettis Offensive
-						-- 	}),
-						-- 	crit(2, {	-- Refugee Caravan
-						-- 		["sourceQuests"] = {
-						-- 			10878,	-- Before Darkness Falls
-						-- 			10031,	-- Helping the Lost Find Their Way
-						-- 			10852,	-- Missing Friends
-						-- 			10896,	-- The Infested Protectors
-						-- 			10881,	-- The Shadow Tomb
-						-- 			10842,	-- Vengeful Souls
-						-- 		},
-						-- 	}),
-						-- 	crit(3, {	-- Sha'tari Base Camp
-						-- 		["sourceQuests"] = {
-						-- 			10915,	-- The Fallen Exarch
-						-- 			10926,	-- Return to Sha'tari Base Camp
-						-- 			10930,	-- The Big Bone Worm
-						-- 			-- TODO: verify below:
-						-- 			10923,	-- Evil Draws Near
-						-- 			10873,	-- Taken in the Night
-						-- 		},
-						-- 	}),
-						-- 	crit(4, {	-- The Warden's Secret
-						-- 		["sourceQuests"] = {
-						-- 			9951,	-- It's Watching You!
-						-- 			10005,	-- Letting Earthbinder Tavgren Know
-						-- 		},
-						-- 	}),
-						-- 	crit(5, {	-- Stonebreaker Hold
-						-- 		["sourceQuests"] = {
-						-- 			10013,	-- An Unseen Hand
-						-- 			10043,	-- Kill the Shadow Council
-						-- 			10791,	-- Welcoming the Wolf Spirit
-						-- 			-- TODO: Verify below:
-						-- 			10201,	-- And Now, the Moment of Truth
-						-- 			10868,	-- Arakkoa War Path
-						-- 			9987,	-- Stymying the Arakkoa
-						-- 			10036,	-- Torgos!
-						-- 		},
-						-- 	}),
-						-- },
 						-- #endif
 					}),
 				}),
@@ -1067,7 +944,6 @@ root(ROOTS.Zones, {
 					q(10908, {	-- Speak with Rilak the Redeemed
 						["qg"] = 22272,	-- Kirrik the Awakened
 						["coord"] = { 37.6, 51.6, TEROKKAR_FOREST },
-						["altQuests"] = { 10862, },	-- Surrender to the Horde
 						["isBreadcrumb"] = true,
 					}),
 					q(10039, {	-- Speak with Scout Neftis
@@ -1146,7 +1022,6 @@ root(ROOTS.Zones, {
 						["qg"] = 18386,	-- Rokag
 						["coord"] = { 49.0, 44.6, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
-						["altQuests"] = { 10908 },	-- Speak with Rilak the Redeemed
 						["isBreadcrumb"] = true,
 					}),
 					q(10873, {	-- Taken in the Night -- aa
@@ -1677,36 +1552,6 @@ root(ROOTS.Zones, {
 							i(31238),	-- Dragonbone Ring
 						},
 					}),
-					n(23161, {	-- Darkscreecher Akkarai
-						["description"] = "Summoned at skull piles with 10 Time-Lost Scrolls. See Terokk's description for more info.",
-						["coords"] = {
-							{ 69.7, 74.7, TEROKKAR_FOREST },
-							{ 70.1, 79.4, TEROKKAR_FOREST },
-							{ 73.5, 80.7, TEROKKAR_FOREST },
-							{ 75.2, 81.2, TEROKKAR_FOREST },
-							{ 74.8, 87.5, TEROKKAR_FOREST },
-							{ 72.2, 88.2, TEROKKAR_FOREST },
-							{ 70.2, 83.3, TEROKKAR_FOREST },
-							{ 61.4, 78.1, TEROKKAR_FOREST },
-							{ 62.0, 74.7, TEROKKAR_FOREST },
-						},
-						["cost"] = {
-							{ "i", 32620, 10 },	-- Time-Lost Scroll
-						},
-						["groups"] = {
-							i(32529),	-- Heretic's Gauntlets
-							i(31571),	-- Mistshroud Belt
-							i(31574),	-- Mistshroud Bracers
-							i(32514),	-- Skettis Band
-							i(31566),	-- Skystalker's Bracers
-							i(31582),	-- Slatesteel Bracers
-							i(31579),	-- Slatesteel Girdle
-							i(31558),	-- Windchanneller's Bindings
-							i(31555),	-- Windchanneller's Ceinture
-							i(31563),	-- Skystalker's Cord
-							i(32715),	-- Akkarai's Talons
-						},
-					}),
 					n(18686, {	-- Doomsayer Jurim
 						["coords"] = {
 							{ 55.4, 19.8, TEROKKAR_FOREST },
@@ -1732,69 +1577,9 @@ root(ROOTS.Zones, {
 							i(31236),	-- Grim Slippers
 						},
 					}),
-					n(23163, {	-- Gezzarak the Huntress
-						["description"] = "Summoned at skull piles with 10 Time-Lost Scrolls. See Terokk's description for more info.",
-						["coords"] = {
-							{ 69.7, 74.7, TEROKKAR_FOREST },
-							{ 70.1, 79.4, TEROKKAR_FOREST },
-							{ 73.5, 80.7, TEROKKAR_FOREST },
-							{ 75.2, 81.2, TEROKKAR_FOREST },
-							{ 74.8, 87.5, TEROKKAR_FOREST },
-							{ 72.2, 88.2, TEROKKAR_FOREST },
-							{ 70.2, 83.3, TEROKKAR_FOREST },
-							{ 61.4, 78.1, TEROKKAR_FOREST },
-							{ 62.0, 74.7, TEROKKAR_FOREST },
-						},
-						["cost"] = {
-							{ "i", 32620, 10 },	-- Time-Lost Scroll
-						},
-						["groups"] = {
-							i(32531),	-- Gezzarak's Fang
-							i(31571),	-- Mistshroud Belt
-							i(31574),	-- Mistshroud Bracers
-							i(32514),	-- Skettis Band
-							i(31566),	-- Skystalker's Bracers
-							i(31563),	-- Skystalker's Cord
-							i(31582),	-- Slatesteel Bracers
-							i(31579),	-- Slatesteel Girdle
-							i(31558),	-- Windchanneller's Bindings
-							i(31555),	-- Windchanneller's Ceinture
-							i(32716),	-- Gazzarak's Claws
-						},
-					}),
 					n(21724, {	-- Hawkbane
 						["description"] = "This is a tameable hunter pet that has no notable drops.",
 						["coord"] = { 76.2, 81.2, TEROKKAR_FOREST },
-					}),
-					n(23165, {	-- Karrog
-						["description"] = "Summoned at skull piles with 10 Time-Lost Scrolls. See Terokk's description for more info.",
-						["coords"] = {
-							{ 69.7, 74.7, TEROKKAR_FOREST },
-							{ 70.1, 79.4, TEROKKAR_FOREST },
-							{ 73.5, 80.7, TEROKKAR_FOREST },
-							{ 75.2, 81.2, TEROKKAR_FOREST },
-							{ 74.8, 87.5, TEROKKAR_FOREST },
-							{ 72.2, 88.2, TEROKKAR_FOREST },
-							{ 70.2, 83.3, TEROKKAR_FOREST },
-							{ 61.4, 78.1, TEROKKAR_FOREST },
-							{ 62.0, 74.7, TEROKKAR_FOREST },
-						},
-						["cost"] = {
-							{ "i", 32620, 10 },	-- Time-Lost Scroll
-						},
-						["groups"] = {
-							i(32533),	-- Karrog's Shard
-							i(31571),	-- Mistshroud Belt
-							i(31574),	-- Mistshroud Bracers
-							i(32514),	-- Skettis Band
-							i(31566),	-- Skystalker's Bracers
-							i(31563),	-- Skystalker's Cord
-							i(31582),	-- Slatesteel Bracers
-							i(31579),	-- Slatesteel Girdle
-							i(31558),	-- Windchanneller's Bindings
-							i(31555),	-- Windchanneller's Ceinture
-							i(32717),	-- Karro's Spine
-						},
 					}),
 					n(18685, {	-- Okrek
 						["coords"] = {
@@ -1818,8 +1603,63 @@ root(ROOTS.Zones, {
 							i(31229),	-- Feathered Waistband
 						},
 					}),
+					o(185913, {	-- Skull Pile
+						["description"] = "Summons one of 4 Rares using 10 Time-Lost Scrolls. See Terokk's description for more info.",
+						["coords"] = {
+							{ 69.7, 74.7, TEROKKAR_FOREST },
+							{ 70.1, 79.4, TEROKKAR_FOREST },
+							{ 73.5, 80.7, TEROKKAR_FOREST },
+							{ 75.2, 81.2, TEROKKAR_FOREST },
+							{ 74.8, 87.5, TEROKKAR_FOREST },
+							{ 72.2, 88.2, TEROKKAR_FOREST },
+							{ 70.2, 83.3, TEROKKAR_FOREST },
+							{ 61.4, 78.1, TEROKKAR_FOREST },
+							{ 62.0, 74.7, TEROKKAR_FOREST },
+						},
+						["cost"] = {
+							{ "i", 32620, 10 },	-- Time-Lost Scroll
+						},
+						["groups"] = {
+							n(COMMON_BOSS_DROPS, {
+								["crs"] = {
+									23161,	-- Darkscreecher Akkarai
+									23163,	-- Gezzarak the Huntress
+									23165,	-- Karrog
+									23162,	-- Vakkiz the Windrager
+								},
+								["groups"] = {
+									i(31571),	-- Mistshroud Belt
+									i(31574),	-- Mistshroud Bracers
+									i(32514),	-- Skettis Band
+									i(31566),	-- Skystalker's Bracers
+									i(31582),	-- Slatesteel Bracers
+									i(31579),	-- Slatesteel Girdle
+									i(31558),	-- Windchanneller's Bindings
+									i(31555),	-- Windchanneller's Ceinture
+									i(31563),	-- Skystalker's Cord
+								},
+							}),
+							n(23161, {	-- Darkscreecher Akkarai
+								i(32529),	-- Heretic's Gauntlets
+								i(32715),	-- Akkarai's Talons
+							}),
+							n(23163, {	-- Gezzarak the Huntress
+								i(32531),	-- Gezzarak's Fang
+								i(32716),	-- Gazzarak's Claws
+							}),
+							n(23165, {	-- Karrog
+								i(32533),	-- Karrog's Shard
+								i(32717),	-- Karro's Spine
+							}),
+							n(23162, {	-- Vakkiz the Windrager
+								i(32532),	-- Windrager's Coils
+								i(32718),	-- Vakkiz's Scale
+							}),
+						},
+					}),
 					n(21838, {	-- Terokk
 						["description"] = "The process to summon this boss is as follows.\n\n1. Collect Shadow Dust from mobs in Skettis.\n2. Turn in 6 Shadow Dust to Severin for the quest More Shadow Dust to obtain Elixir of Shadows.\n3. Drink the elixir to gain a 20-minute buff that allows you to see Time-Lost mobs around Skettis.\n4. Kill these mobs to obtain Time-Lost Scrolls (40 required per summon).\n5. Make sure you are on the Adversarial Blood quest if this is your first time; it begins with the quest Ishaal's Almanac.\n6. Go to a skull pile and use 10 Time-Lost Scrolls to summon boss. (Darkscreecher Akkarai [Akkarai's Talons], Karrog [Karrog's Spine], Gezzarak the Huntress [Gezzarak's Claws], Vakkiz the Windrager [Vakkiz's Scale]).\n7. Take these 4 items to Hazzik to complete Adversarial Blood which rewards a Time-Lost Offering.\n8. Use the Time-Lost Offering at the Ancient Skull Pile on middle island to summon Terokk. (It has about a 15-minute spawn timer)",
+						["provider"] = { "o", 185928 },	-- Ancient Skull Pile
 						["coord"] = { 66.2, 77.5, TEROKKAR_FOREST },
 						["cost"] = {
 							{ "i", 32720, 1 },	-- Time-Lost Offering
@@ -1838,39 +1678,9 @@ root(ROOTS.Zones, {
 							i(32541),	--	Terokk's Wisdom
 						},
 					}),
-					n(23162, {	-- Vakkiz the Windrager
-						["description"] = "Summoned at skull piles with 10 Time-Lost Scrolls. See Terokk's description for more info.",
-						["coords"] = {
-							{ 69.7, 74.7, TEROKKAR_FOREST },
-							{ 70.1, 79.4, TEROKKAR_FOREST },
-							{ 73.5, 80.7, TEROKKAR_FOREST },
-							{ 75.2, 81.2, TEROKKAR_FOREST },
-							{ 74.8, 87.5, TEROKKAR_FOREST },
-							{ 72.2, 88.2, TEROKKAR_FOREST },
-							{ 70.2, 83.3, TEROKKAR_FOREST },
-							{ 61.4, 78.1, TEROKKAR_FOREST },
-							{ 62.0, 74.7, TEROKKAR_FOREST },
-						},
-						["cost"] = {
-							{ "i", 32620, 10 },	-- Time-Lost Scroll
-						},
-						["groups"] = {
-							i(32532),	-- Windrager's Coils
-							i(31571),	-- Mistshroud Belt
-							i(31574),	-- Mistshroud Bracers
-							i(32514),	-- Skettis Band
-							i(31566),	-- Skystalker's Bracers
-							i(31582),	-- Slatesteel Bracers
-							i(31579),	-- Slatesteel Girdle
-							i(31558),	-- Windchanneller's Bindings
-							i(31555),	-- Windchanneller's Ceinture
-							i(31563),	-- Skystalker's Cord
-							i(32718),	-- Vakkiz's Scale
-						},
-					}),
 				}),
 				n(REWARDS, {
-					i(35348, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
+					container(35348, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
 						["description"] = "This bag is exclusive to the daily quest 'Crocolisk in the City'.",
 						["groups"] = {
 							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
@@ -1888,7 +1698,7 @@ root(ROOTS.Zones, {
 							i(34109),	-- Weather-Beaten Journal (RECIPE!)
 						},
 					})),
-					i(34863, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
+					container(34863, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
 						["description"] = "Shared reward bag for all the non-Croc dailies.",
 						["groups"] = {
 							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)

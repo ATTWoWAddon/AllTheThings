@@ -3931,7 +3931,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(163262),	-- 7th Legionnaire's Guise
 						i(163267),	-- 7th Legionnaire's Shoulderguards
 						i(163274),	-- 7th Legionnaire's Strap
-						i(163255, {["modID"] = 5, }),	-- 7th Legionnaire's Treads
+						i(163255, {["modID"] = 5, ["ItemAppearanceModifierID"] = 0 }),	-- 7th Legionnaire's Treads
 						i(163287),	-- Honorbound Outrider's Treads
 						i(163288),	-- Honorbound Outrider's Grasps
 						i(163294),	-- Honorbound Outrider's Headcover
@@ -6078,7 +6078,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			cl(EVOKER, {
 				i(187651),	-- Evoker Tunic
 				i(187652),	-- Evoker Boots
@@ -11127,7 +11127,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
 				-- Extra Head Tierpieces
 				cl(DEATHKNIGHT, {
@@ -12688,14 +12688,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(211987),	-- Warsculptor's Furred Plastron
 					}),
 				})),
-			}),
-			-- For some reason, they made 1 item in TWW too.
-			n(SEASON_DRACONIC_PVP, {
-				n(PVP_GLADIATOR, {
-					cl(MAGE, {
-						i(216027, { ["bonusID"] = 1, ["modID"] = 0 }),	-- Draconic Gladiator's Silk Blouse [sourceID 227796]
-					}),
-				}),
 			}),
 			n(SEASON_FORGED, {
 				n(PVP_ELITE, bubbleDownSelf({ ["bonusID"] = 7532 }, {
@@ -14370,6 +14362,166 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(229236),	-- Enforcer's Backalley Crushers
 						i(229237),	-- Enforcer's Backalley Stompers
 						i(229238),	-- Enforcer's Backalley Vestplate
+					}),
+				})),
+			}),
+			n(SEASON_PRIZED, {
+				n(PVP_ELITE, bubbleDownSelf({ ["bonusID"] = 7532 }, {
+					cl(DEATHKNIGHT, {
+						i(229726),	-- Prized Gladiator's Plate Pauldrons
+						i(229722),	-- Prized Gladiator's Plate Helmet
+						i(229730),	-- Prized Gladiator's Plate Vambraces
+						i(229717),	-- Prized Gladiator's Plate Stompers
+						i(229724),	-- Prized Gladiator's Plate Wargreaves
+						i(229719),	-- Prized Gladiator's Plate Handguards
+						i(229732),	-- Prized Gladiator's Drape
+						i(229728),	-- Prized Gladiator's Plate Greatbelt
+						i(229733),	-- Prized Gladiator's Shawl
+						i(229715),	-- Prized Gladiator's Chestplate
+					}),
+					cl(DEMONHUNTER, {
+						i(229610),	-- Prized Gladiator's Leather Shoulderpads
+						i(229606),	-- Prized Gladiator's Leather Mask
+						i(229608),	-- Prized Gladiator's Leather Legwraps
+						i(229612),	-- Prized Gladiator's Leather Strap
+						i(229602),	-- Prized Gladiator's Leather Treads
+						i(229600),	-- Prized Gladiator's Leather Jerkin
+						i(229614),	-- Prized Gladiator's Leather Wristguards
+						i(229616),	-- Prized Gladiator's Drape
+						i(229604),	-- Prized Gladiator's Leather Grips
+						i(229617),	-- Prized Gladiator's Shawl
+					}),
+					cl(DRUID, {
+						i(229590),	-- Prized Gladiator's Leather Shoulderpads
+						i(229586),	-- Prized Gladiator's Leather Mask
+						i(229588),	-- Prized Gladiator's Leather Legwraps
+						i(229592),	-- Prized Gladiator's Leather Strap
+						i(229582),	-- Prized Gladiator's Leather Treads
+						i(229580),	-- Prized Gladiator's Leather Vestments
+						i(229595),	-- Prized Gladiator's Leather Wristguards
+						i(229597),	-- Prized Gladiator's Drape
+						i(229584),	-- Prized Gladiator's Leather Grips
+						i(229598),	-- Prized Gladiator's Shawl
+					}),
+					cl(EVOKER, {
+						i(229661),	-- Prized Gladiator's Chain Handguards
+						i(229669),	-- Prized Gladiator's Chain Girdle
+						i(229667),	-- Prized Gladiator's Chain Shoulderguard
+						i(229663),	-- Prized Gladiator's Chain Faceguard
+						i(229671),	-- Prized Gladiator's Chain Bracers
+						i(229673),	-- Prized Gladiator's Drape
+						i(229665),	-- Prized Gladiator's Chain Breeches
+						i(229674),	-- Prized Gladiator's Shawl
+						i(229659),	-- Prized Gladiator's Chain Boots
+						i(229657),	-- Prized Gladiator's Scaleguard
+					}),
+					cl(HUNTER, {
+						i(229680),	-- Prized Gladiator's Chain Handguards
+						i(229688),	-- Prized Gladiator's Chain Girdle
+						i(229686),	-- Prized Gladiator's Chain Shoulderguard
+						i(229676),	-- Prized Gladiator's Chain Tunic
+						i(229684),	-- Prized Gladiator's Chain Breeches
+						i(229692),	-- Prized Gladiator's Drape
+						i(229682),	-- Prized Gladiator's Chain Faceguard
+						i(229693),	-- Prized Gladiator's Shawl
+						i(229678),	-- Prized Gladiator's Chain Boots
+						i(229690),	-- Prized Gladiator's Chain Bracers
+					}),
+					cl(MAGE, {
+						i(229527),	-- Prized Gladiator's Silk Handwraps
+						i(229523),	-- Prized Gladiator's Silk Gown
+						i(229525),	-- Prized Gladiator's Silk Treads
+						i(229531),	-- Prized Gladiator's Silk Trousers
+						i(229529),	-- Prized Gladiator's Silk Cap
+						i(229539),	-- Prized Gladiator's Drape
+						i(229540),	-- Prized Gladiator's Shawl
+						i(229537),	-- Prized Gladiator's Silk Armbands
+						i(229533),	-- Prized Gladiator's Silk Amice
+						i(229535),	-- Prized Gladiator's Silk Belt
+					}),
+					cl(MONK, {
+						i(229629),	-- Prized Gladiator's Leather Shoulderpads
+						i(229625),	-- Prized Gladiator's Leather Mask
+						i(229627),	-- Prized Gladiator's Leather Legwraps
+						i(229631),	-- Prized Gladiator's Leather Strap
+						i(229621),	-- Prized Gladiator's Leather Treads
+						i(229619),	-- Prized Gladiator's Leather Jerkin
+						i(229633),	-- Prized Gladiator's Leather Wristguards
+						i(229635),	-- Prized Gladiator's Drape
+						i(229623),	-- Prized Gladiator's Leather Grips
+						i(229636),	-- Prized Gladiator's Shawl
+					}),
+					cl(PALADIN, {
+						i(229745),	-- Prized Gladiator's Plate Pauldrons
+						i(229741),	-- Prized Gladiator's Plate Helmet
+						i(229743),	-- Prized Gladiator's Plate Tasses
+						i(229737),	-- Prized Gladiator's Plate Stompers
+						i(229750),	-- Prized Gladiator's Plate Vambraces
+						i(229739),	-- Prized Gladiator's Plate Handguards
+						i(229752),	-- Prized Gladiator's Drape
+						i(229747),	-- Prized Gladiator's Plate Greatbelt
+						i(229753),	-- Prized Gladiator's Shawl
+						i(229735),	-- Prized Gladiator's Chestplate
+					}),
+					cl(PRIEST, {
+						i(229546),	-- Prized Gladiator's Silk Handwraps
+						i(229548),	-- Prized Gladiator's Silk Guise
+						i(229544),	-- Prized Gladiator's Silk Treads
+						i(229550),	-- Prized Gladiator's Silk Trousers
+						i(229542),	-- Prized Gladiator's Silk Vest
+						i(229558),	-- Prized Gladiator's Drape
+						i(229559),	-- Prized Gladiator's Shawl
+						i(229556),	-- Prized Gladiator's Silk Armbands
+						i(229552),	-- Prized Gladiator's Silk Amice
+						i(229554),	-- Prized Gladiator's Silk Belt
+					}),
+					cl(ROGUE, {
+						i(229648),	-- Prized Gladiator's Leather Shoulderpads
+						i(229644),	-- Prized Gladiator's Leather Mask
+						i(229646),	-- Prized Gladiator's Leather Legwraps
+						i(229650),	-- Prized Gladiator's Leather Strap
+						i(229640),	-- Prized Gladiator's Leather Treads
+						i(229638),	-- Prized Gladiator's Leather Jerkin
+						i(229652),	-- Prized Gladiator's Leather Wristguards
+						i(229654),	-- Prized Gladiator's Drape
+						i(229642),	-- Prized Gladiator's Leather Grips
+						i(229655),	-- Prized Gladiator's Shawl
+					}),
+					cl(SHAMAN, {
+						i(229699),	-- Prized Gladiator's Chain Handguards
+						i(229707),	-- Prized Gladiator's Chain Girdle
+						i(229705),	-- Prized Gladiator's Chain Shoulderguard
+						i(229695),	-- Prized Gladiator's Chain Tunic
+						i(229703),	-- Prized Gladiator's Chain Breeches
+						i(229711),	-- Prized Gladiator's Drape
+						i(229701),	-- Prized Gladiator's Chain Faceguard
+						i(229712),	-- Prized Gladiator's Shawl
+						i(229697),	-- Prized Gladiator's Chain Boots
+						i(229709),	-- Prized Gladiator's Chain Bracers
+					}),
+					cl(WARLOCK, {
+						i(229565),	-- Prized Gladiator's Silk Handwraps
+						i(229563),	-- Prized Gladiator's Silk Treads
+						i(229569),	-- Prized Gladiator's Silk Trousers
+						i(229561),	-- Prized Gladiator's Silk Vestments
+						i(229567),	-- Prized Gladiator's Silk Guise
+						i(229577),	-- Prized Gladiator's Drape
+						i(229578),	-- Prized Gladiator's Shawl
+						i(229575),	-- Prized Gladiator's Silk Armbands
+						i(229571),	-- Prized Gladiator's Silk Amice
+						i(229573),	-- Prized Gladiator's Silk Belt
+					}),
+					cl(WARRIOR, {
+						i(229766),	-- Prized Gladiator's Plate Pauldrons
+						i(229761),	-- Prized Gladiator's Plate Helmet
+						i(229770),	-- Prized Gladiator's Plate Vambraces
+						i(229757),	-- Prized Gladiator's Plate Stompers
+						i(229763),	-- Prized Gladiator's Plate Wargreaves
+						i(229759),	-- Prized Gladiator's Plate Handguards
+						i(229772),	-- Prized Gladiator's Drape
+						i(229768),	-- Prized Gladiator's Plate Greatbelt
+						i(229773),	-- Prized Gladiator's Shawl
+						i(229755),	-- Prized Gladiator's Chestplate
 					}),
 				})),
 			}),

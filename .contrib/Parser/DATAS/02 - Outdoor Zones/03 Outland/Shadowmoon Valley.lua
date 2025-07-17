@@ -8,10 +8,11 @@ root(ROOTS.Zones, {
 			["icon"] = 236816,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					explorationAch(864),	-- Explore Shadowmoon Valley
+					ach(864),	-- Explore Shadowmoon Valley
 					ach(1195, {	-- Shadow of the Betrayer
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							-- Wildhammer Stronghold
 							10776,	-- Dissension Amongst the Ranks...
@@ -46,58 +47,6 @@ root(ROOTS.Zones, {
 							-- The Dark Conclave
 							10808,	-- Thwart the Dark Conclave
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 90,
-						-- #endif
-						-- #else
-						-- crit(1, {	-- Wildhammer Stronghold
-						-- 	["races"] = ALLIANCE_ONLY,
-						-- 	["sourceQuests"] = {
-						-- 		10776,	-- Dissension Amongst the Ranks...
-						-- 		10678,	-- The Main Course!
-						-- 		10744,	-- News of Victory (A)
-						-- 	},
-						-- }),
-						-- crit(1, {	-- Shadowmoon Village
-						-- 	["races"] = HORDE_ONLY,
-						-- 	["sourceQuests"] = {
-						-- 		10673,	-- Felspine the Greater (H)
-						-- 		10769,	-- Dissension Amongst the Ranks... (H)
-						-- 		10745,	-- News of Victory (H)
-						-- 	},
-						-- }),
-						-- crit(2, {	-- Netherwing Ledge
-						-- 	["sourceQuest"] = 11041,	-- A Job Unfinished...
-						-- }),
-						-- crit(3, {	-- The First Death Knight (A)
-						-- 	["races"] = ALLIANCE_ONLY,
-						-- 	["sourceQuest"] = 10645,	-- Teron Gorefiend, I Am...
-						-- }),
-						-- crit(3, {	-- The First Death Knight (H)
-						-- 	["races"] = HORDE_ONLY,
-						-- 	["sourceQuest"] = 10639,	-- Teron Gorefiend, I Am...
-						-- }),
-						-- crit(4, {	-- Borrowed Power
-						-- 	["sourceQuests"] = {
-						-- 		10651,	-- Varedis Must Be Stopped (Exarch Onaala, Altar of Sha'tar)
-						-- 		10692,	-- Varedis Must Be Stopped (Larissa Sunstrike, Sanctum of the Stars)
-						-- 	},
-						-- }),
-						-- crit(5, {	-- Akama's Promise
-						-- 	["sourceQuest"] = 10708,	-- Akama's Promise
-						-- }),
-						-- crit(6, {	-- The Cipher of Damnation
-						-- 	["sourceQuest"] = 10588,	-- The Cipher of Damnation
-						-- }),
-						-- crit(7, {	-- Anti-Demon Weapons
-						-- 	["sourceQuest"] = 10679,	-- Quenching the Blade
-						-- }),
-						-- crit(8, {	-- The Dark Conclave
-						-- 	["sourceQuest"] = 10808,	-- Thwart the Dark Conclave
-						-- }),
 						-- #endif
 					}),
 				}),
@@ -173,6 +122,58 @@ root(ROOTS.Zones, {
 						["cr"] = 18939,	-- Brubeck Stormfoot <Gryphon Master>
 						["coord"] = { 37.6, 55.4, SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
+					}),
+				}),
+				petbattles({
+					n(66557, {	-- Bloodknight Antari <Grand Master Pet Tamer>
+						["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
+						["description"] = "Antari's pets are level 24 of the following consecutive pet classes:\n1. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n2. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n3. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Crystal Spider (Strike/Brittle Webbing/Leech Life) and Sporeling Sprout (Jab/Leech Seed/Crouch).",
+						["timeline"] = { ADDED_5_0_4 },
+						["petBattleLvl"] = 24,
+						["groups"] = {
+							q(31926, {	-- Grand Master Antari
+								["sourceAchievement"] = 6604,	-- Taming Outland
+								["timeline"] = { ADDED_5_0_4 },
+								["isDaily"] = true,
+								["groups"] = {
+									i(89125),	-- Sack of Pet Supplies
+								},
+							}),
+						},
+					}),
+					q(31920, {	-- Grand Master Antari
+						["qg"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
+						["sourceQuests"] = {
+							31919,	-- Battle Pet Tamers: Outland (A)
+							31921,	-- Battle Pet Tamers: Outland (H)
+						},
+						["coord"] = { 30.4, 41.8, SHADOWMOON_VALLEY },
+						["timeline"] = { ADDED_5_0_4 },
+						["groups"] = {
+							objective(1, {	-- Defeat Grand Master Antari
+								["provider"] = { "n", 66557 },	-- Bloodknight Antari
+								["coord"] = { 30.4, 41.8, SHADOWMOON_VALLEY },
+							}),
+							i(89125),	-- Sack of Pet Supplies
+						},
+					}),
+					q(31981, {	-- Exceeding Expectations (A)
+						["qg"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
+						["sourceQuest"] = 31920,	-- Grand Master Antari
+						["coord"] = { 30.4, 41.8, SHADOWMOON_VALLEY },
+						["timeline"] = { ADDED_5_0_4 },
+						["maps"] = { STORMWIND_CITY },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+					}),
+					q(31982, {	-- Exceeding Expectations (H)
+						["qg"] = 66557,	-- Bloodknight Antari <Grand Master Pet Tamer>
+						["sourceQuest"] = 31920,	-- Grand Master Antari
+						["coord"] = { 30.4, 41.8, SHADOWMOON_VALLEY },
+						["timeline"] = { ADDED_5_0_4 },
+						["maps"] = { ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 				}),
 				n(PROFESSIONS, {

@@ -6,9 +6,8 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 		ach(10876, {	-- Battle on the Broken Isles
 			["sym"] = {{ "achievement_criteria" }},
 			["g"] = {
-				i(139003, {	-- Pocket Pet Portal
-					["questID"] = 43016,
-					["u"] = REMOVED_FROM_GAME,
+				i(139003, {	-- Pocket Pet Portal (CI!)
+					["timeline"] = { REMOVED_9_1_0 },
 				}),
 			},
 		}),
@@ -86,6 +85,10 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			crit(33140),		-- Blind Rat (Dalaran)
 			crit(33141),		-- Stormstruck Beaver (Stormheim)
 		})),
+		ach(42114, {	-- Broken Memories
+			["timeline"] = { CREATED_11_1_7 },
+			-- TODO: No criteria yet, ingame description implies there will be
+		}),
 		header(HEADERS.Achievement, 9696, {	-- Family Familiar
 			petbattle(ach(9696, {	-- Family Familiar
 				-- Meta Achievement should symlink the contained Achievements from Source

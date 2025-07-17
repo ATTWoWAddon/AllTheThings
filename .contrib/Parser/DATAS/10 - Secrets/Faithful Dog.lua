@@ -6,13 +6,15 @@ FAITHFUL_DOG = createHeader({
 	icon = 133210,
 	text = {
 		en = "Faithful Dog Secret",
+		es = "Secreto del Perro fiel",
+		mx = "Secreto del Perro fiel",
 		cn = "忠诚的狗",
 		tw = "忠實的狗",
 	},
 });
 
 root(ROOTS.Secrets, n(FAITHFUL_DOG, {
-	["description"] = "Multi-expansion secret to obtaining Dog as a conpanion pet",
+	["description"] = "Multi-expansion secret to obtaining Dog as a companion pet",
 	["timeline"] = { ADDED_5_0_4 },
 	["g"] = {
 		q(30526, {	-- Step 1: Lost and Lonely

@@ -24,7 +24,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(228340),	-- Unmelting Ice Girdle
 				i(228345),	-- Leggings of Arcane Supremacy
 				i(228384),	-- Snowblind Shoes
-				i(228316),	-- Pattern: Incandescent Mooncloth Vest
+				i(228316),	-- Pattern: Incandescent Mooncloth Vest (RECIPE!)
 				i(228250),	-- Plans: Stronger-hold Gauntlets
 			}),
 			n(6109, {	-- Azuregos

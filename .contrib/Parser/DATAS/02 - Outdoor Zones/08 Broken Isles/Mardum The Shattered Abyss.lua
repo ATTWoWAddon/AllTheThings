@@ -447,7 +447,7 @@ root(ROOTS.Zones, {
 								},
 							}),
 							q(39694, {	-- Between Us and Freedom / Blood Elf [Havoc]
-								["coord"] = { 24.4, 55.7, 679 },	-- Vault of the Wardens
+								["coord"] = { 24.5, 56.2, 679 },	-- Vault of the Wardens
 								["provider"] = { "n", 97644 },	-- Kor'vas Bloodthorn
 								["races"] = { BLOODELF },
 								["sourceQuests"] = { 40373 },	-- A New Direction
@@ -458,7 +458,7 @@ root(ROOTS.Zones, {
 								},
 							}),
 							q(40256, {	-- Between Us and Freedom / Blood Elf [Vengeance]
-								--["coord"] = { 24.4, 55.7, 679 },	-- Vault of the Wardens
+								["coord"] = { 24.5, 56.2, 679 },	-- Vault of the Wardens
 								["provider"] = { "n", 97644 },	-- Kor'vas Bloodthorn
 								["races"] = { BLOODELF },
 								["sourceQuests"] = { 40373 },	-- A New Direction

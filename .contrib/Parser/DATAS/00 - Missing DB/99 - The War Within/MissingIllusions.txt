@@ -1,0 +1,10 @@
+11.2.0.61476
+ill(7641),	-- Arcane
+
+
+
+
+Missing in IllusionDB.lua
+
+11.2.0.61476
+ill(7641),	-- Arcane

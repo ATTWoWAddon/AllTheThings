@@ -1051,7 +1051,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 		["icon"] = 236806,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(868),	-- Explore Isle of Quel'Danas
+				ach(868),	-- Explore Isle of Quel'Danas
 				achWithRep(897, FACTION_SHATTERED_SUN_OFFENSIVE),	-- You're So Offensive
 			}),
 			explorationHeader({

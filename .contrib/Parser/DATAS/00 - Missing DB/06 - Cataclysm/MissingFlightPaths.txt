@@ -1,0 +1,195 @@
+4.0.1.12911
+fp(25),	-- -- \\ The Crossroads, Northern Barrens \\ Crossroads, Northern Barrens \\ Crossroads, The Barrens \\ Crossroads - The Barrens \\ The Barrens - Crossroads
+fp(26),	-- -- \\ Lor'danel, Darkshore \\ Auberdine, Darkshore \\ Teldrassil - Darnassus
+fp(30),	-- -- \\ Westreach Summit, Thousand Needles \\ Freewind Post, Thousand Needles \\ Freewind Post - Thousand Needles \\ Thousand Needles - Freewind Post
+fp(31),	-- -- \\ Shadebough, Feralas \\ Thalanaar, Feralas \\ Thalanaar, Thousand Needles \\ Thalanaar - Thousand Needles \\ Thousand Needles - Thalanaar
+fp(33),	-- -- \\ Thal'darah Overlook, Stonetalon Mountains \\ Stonetalon Peak, Stonetalon Mountains \\ Stonetalon Peak - Stonetalon Mountains \\ Stonetalon Mtns. - Stonetalon Peak
+fp(44),	-- -- \\ Bilgewater Harbor, Azshara \\ Valormok, Azshara
+fp(48),	-- -- \\ Bloodvenom Post, Felwood [DISABLED in 4.x] \\ Bloodvenom Post, Felwood \\ Bloodvenom River, Felwood
+fp(64),	-- -- \\ Talrendis Point, Azshara (NEVER in 4.x) \\ Talrendis Point, Azshara
+fp(77),	-- -- \\ Vendetta Point, Southern Barrens \\ AA Fields of Blood, The Barrens \\ Camp Taurajo, The Barrens
+fp(79),	-- -- \\ Marshal's Stand, Un'Goro Crater \\ Marshal's Refuge, Un'Goro Crater
+fp(322),	-- -- \\ Dun Niffelem, The Storm Peaks \\ Dun Nifflelem, The Storm Peaks \\ AAA Brann's Base Camp, The Storm Peaks
+fp(338),	-- -- \\ Blackfathom Camp, Ashenvale
+fp(339),	-- -- \\ Grove of the Ancients, Darkshore
+fp(343),	-- -- \\ Splintertree, Ashenvale
+fp(344),	-- -- \\ Quest - Splintertree  Post -> Zoramgar
+fp(345),	-- -- \\ Quest - Zoramgar, Ashenvale
+fp(346),	-- -- \\ Ashenvale 4.x, Azshara to Mor'shan Ramparts
+fp(347),	-- -- \\ Ashenvale 4.x, Mor'shan Landing
+fp(349),	-- -- \\ Andruk, Zoram'gar
+fp(350),	-- -- \\ Hellscream's Watch, Ashenvale
+fp(351),	-- -- \\ Stardust Spire, Ashenvale
+fp(354),	-- -- \\ The Mor'Shan Ramparts, Ashenvale
+fp(356),	-- -- \\ Silverwind Refuge, Ashenvale
+fp(360),	-- -- \\ Cliffwalker Post, Stonetalon Mountains
+fp(361),	-- -- \\ Windshear Hold, Stonetalon Mountains \\ Windshear Fortress, Stonetalon Mountains
+fp(362),	-- -- \\ Krom'gar Fortress, Stonetalon Mountains
+fp(363),	-- -- \\ Malaka'jin, Stonetalon Mountains
+fp(364),	-- -- \\ Northwatch Expedition Base Camp, Stonetalon Mountains
+fp(365),	-- -- \\ Farwatcher's Glen, Stonetalon Mountains
+fp(366),	-- -- \\ Furien's Post, Desolace
+fp(367),	-- -- \\ Thargad's Camp, Desolace
+fp(368),	-- -- \\ Karnum's Glade, Desolace
+fp(369),	-- -- \\ Thunk's Abode, Desolace
+fp(370),	-- -- \\ Ethel Rethor, Desolace
+fp(371),	-- -- \\ Vashj'ir - Alliance Start
+fp(372),	-- -- \\ Vashj'ir - Alliance End
+fp(373),	-- -- \\ Mulgore - Red Cloud Mesa: To Bloodhoof
+fp(374),	-- -- \\ Mulgore - Red Cloud Mesa: To Bloodhoof (End)
+fp(375),	-- -- \\ Transport, Gadgetzan \\ REUSEME
+fp(376),	-- -- \\ Icecrown Raid - Airship Battle Taxi Paths \\ AAAIcecrown Raid - Airship Battle Taxi Paths
+fp(378),	-- -- \\ Quest - Dun Morogh - Coldridge Valley - Pack Your Bags End
+fp(379),	-- -- \\ Icecrown Raid - Saurfang's Ship (End) \\ AAAAIcecrown Raid - Saurfang's Ship (End)
+fp(380),	-- -- \\ Icecrown Raid - Saurfang's Ship (Start) \\ AAAAIcecrown Raid - Saurfang's Ship (Start)
+fp(381),	-- -- \\ Quest [Transport] Icecrown Raid - Saurfang Ship (START) \\ AAAAQuest [Transport] Icecrown Raid - Saurfang Ship (START)
+fp(383),	-- -- \\ Thondroril River, Eastern Plaguelands \\ Thondoril River, Eastern Plaguelands \\ Thondoril River, Western Plaguelands
+fp(386),	-- -- \\ Mossy Pile, Un'Goro Crater
+fp(387),	-- -- \\ Honor's Stand, Southern Barrens
+fp(388),	-- -- \\ Northwatch Hold, Southern Barrens
+fp(389),	-- -- \\ Fort Triumph, Southern Barrens
+fp(390),	-- -- \\ Hunter's Hill, Southern Barrens
+fp(391),	-- -- \\ Desolation Hold, Southern Barrens
+fp(402),	-- -- \\ Bloodhoof Village, Mulgore
+fp(413),	-- -- \\ Quest - "To The Summit" - Westreach Summit - End
+fp(414),	-- -- \\ Quest - "To The Summit" - Camp Mojache -> Westreach Summit - Begin
+fp(429),	-- -- \\ Quest - "To The Summit" - Mudsprocket -> Westreach Summit - Begin
+fp(433),	-- -- \\ Quest - "To New Thalanaar" - Mudsprocket -> New Thalanaar - Begin
+fp(434),	-- -- \\ Quest - "To New Thalanaar" - New Thalanaar - End
+fp(436),	-- -- \\ Quest - "To New Thalanaar" - Shadebough -> New Thalanaar - Begin
+fp(456),	-- -- \\ Dolanaar, Teldrassil
+fp(457),	-- -- \\ Darnassus, Teldrassil
+fp(458),	-- -- \\ Nozzlepot's Outpost, Northern Barrens
+fp(460),	-- -- \\ Brill, Tirisfal Glades
+fp(509),	-- -- \\ Quest Path 2063: Brian's 4.0 Test Path \\ Quest Path 2063: Brian's 4.0 Test Path
+fp(513),	-- -- \\ Fizzle & Pozzik's Speedbarge, Thousand Needles \\ Fizzle Pozzik's Speedbarge, Thousand Needles
+fp(521),	-- -- \\ Smuggler's Scar, Vashj'ir \\ Smuggler's Cove, Vashj'ir
+fp(522),	-- -- \\ Silver Tide Hollow, Vashj'ir
+fp(523),	-- -- \\ Tranquil Wash, Vashj'ir
+fp(524),	-- -- \\ Darkbreak Cove, Vashj'ir
+fp(525),	-- -- \\ Legion's Rest, Vashj'ir
+fp(526),	-- -- \\ Tenebrous Cavern, Vashj'ir
+fp(531),	-- -- \\ Dawnrise Expedition, Tanaris
+fp(532),	-- -- \\ Gunstan's Dig, Tanaris
+fp(536),	-- -- \\ Sen'jin Village, Durotar
+fp(537),	-- -- \\ Razor Hill, Durotar
+fp(538),	-- -- \\ test - JZB - Orgrim's Hammer
+fp(539),	-- -- \\ Bootlegger Outpost, Tanaris
+fp(540),	-- -- \\ The Sludgewerks, Stonetalon Mountains
+fp(541),	-- -- \\ Mirkfallon Post, Stonetalon Mountains
+fp(551),	-- -- \\ Whelgar's Retreat, Wetlands
+fp(552),	-- -- \\ Greenwarden's Grove, Wetlands
+fp(553),	-- -- \\ Dun Modr, Wetlands
+fp(554),	-- -- \\ Slabchisel's Survey, Wetlands
+fp(555),	-- -- \\ Farstrider Lodge, Loch Modan
+fp(557),	-- -- \\ Shrine of Aviana, Hyjal
+fp(558),	-- -- \\ Grove of Aessina, Hyjal \\ Shrine of Aessina, Hyjal
+fp(559),	-- -- \\ Nordrassil, Hyjal
+fp(560),	-- -- \\ Quest Path 2171: [3.x] Transport, Org -> Undercity (Thundercaller)
+fp(561),	-- -- \\ Quest Path 2172: [3.x] Transport, Thunder Bluff -> Org (Zephyr)
+fp(562),	-- -- \\ Quest Path 2173: [3.x] Transport, Borean Tundra -> Org (Mighty Wind)
+fp(563),	-- -- \\ Quest Path 2174: [3.x] Transport, Grom'gol -> Orgrimmar (The Iron Eagle)
+fp(564),	-- -- \\ Quest Path 2175: Stonetalon 4.x - Taxi to Thal'darah Overlook Start
+fp(565),	-- -- \\ Dreamer's Rest, Feralas
+fp(567),	-- -- \\ Tower of Estulan, Feralas
+fp(568),	-- -- \\ Camp Ataya, Feralas
+fp(569),	-- -- \\ Stonemaul Hold, Feralas
+fp(574),	-- -- \\ Quest Path 2201: Dun Morogh - Quest - Flight to Ironforge Airfield
+fp(575),	-- -- \\ Quest Path 2203: Dun Morogh - Quest - Striking Back (Bombing Run)
+fp(577),	-- -- \\ Quest Path 2206: Ironforge, Dun Morogh - Quest - Breadcrumb to Loch Modan
+fp(578),	-- -- \\ Quest Path 2207: Dun Morogh - Quest - Flight to Gol'Bolar from Ironforge Airfield
+fp(582),	-- -- \\ Goldshire, Elwynn
+fp(583),	-- -- \\ Moonbrook, Westfall
+fp(584),	-- -- \\ Furlbrow's Pumpkin Farm, Westfall
+fp(585),	-- -- \\ Quest Path 293: Transport, Auberdine -> Rut'theran Village, Teldrassil (NO LONGER USED in 4.x)
+fp(586),	-- -- \\ Justin Test Node 1
+fp(587),	-- -- \\ Justin Test Node 2
+fp(589),	-- -- \\ Eastvale Logging Camp, Elwynn
+fp(590),	-- -- \\ Fort Livingston, Stranglethorn
+fp(591),	-- -- \\ Explorers' League Digsite, Stranglethorn
+fp(592),	-- -- \\ Hardwrench Hideaway, Stranglethorn
+fp(593),	-- -- \\ Bambala, Stranglethorn
+fp(594),	-- -- \\ Whisperwind Grove, Felwood
+fp(595),	-- -- \\ Wildheart Point, Felwood
+fp(596),	-- -- \\ Shalewind Canyon, Redridge
+fp(597),	-- -- \\ Irontree Clearing, Felwood
+fp(598),	-- -- \\ Marshtide Watch, Swamp of Sorrows \\ Alliance Hub, Swamp of Sorrows
+fp(599),	-- -- \\ Bogpaddle, Swamp of Sorrows \\ Neutral Hub, Swamp of Sorrows
+fp(600),	-- -- \\ The Harborage, Swamp of Sorrows
+fp(601),	-- -- \\ Galen's Fall, Arathi
+fp(602),	-- -- \\ Surwich, Blasted Lands
+fp(603),	-- -- \\ Sunveil Excursion, Blasted Lands \\ Blood Elf Camp, Blasted Lands
+fp(604),	-- -- \\ Dreadmaul Hold, Blasted Lands \\ Orc Camp, Blasted Lands
+fp(605),	-- -- \\ Voldrin's Hold, Vashj'ir
+fp(606),	-- -- \\ Sandy Beach, Vashj'ir \\ Sandy Beach (A) Air, Vashj'ir
+fp(607),	-- -- \\ Sandy Beach, Vashj'ir \\ Sandy Beach (A) Swim, Vashj'ir
+fp(608),	-- -- \\ Sandy Beach, Vashj'ir \\ Sandy Beach (H) Air, Vashj'ir
+fp(609),	-- -- \\ Sandy Beach, Vashj'ir \\ Sandy Beach (H) Swim, Vashj'ir
+fp(610),	-- -- \\ Stygian Bounty, Vashj'ir
+fp(611),	-- -- \\ Voldrin's Hold, Vashj'ir
+fp(612),	-- -- \\ Stygian Bounty, Vashj'ir
+fp(613),	-- -- \\ Southern Rocketway, Azshara
+fp(614),	-- -- \\ Northern Rocketway, Azshara
+fp(615),	-- -- \\ Camp Everstill, Redridge
+fp(616),	-- -- \\ Gates of Sothann, Hyjal \\ Gates of Southann, Hyjal
+fp(617),	-- -- \\ Hiri'watha Research Station, The Hinterlands
+fp(618),	-- -- \\ Stormfeather Outpost, The Hinterlands
+fp(619),	-- -- \\ Kharanos, Dun Morogh
+fp(620),	-- -- \\ Gol'Bolar Quarry, Dun Morogh
+fp(621),	-- -- \\ Quest Path 2367: QA's Test Path 1
+fp(622),	-- -- \\ Raven Hill, Duskwood
+fp(623),	-- -- \\ Quest Path 2374: Deeopholm Test Copy
+fp(624),	-- -- \\ Azure Watch, Azuremyst Isle
+fp(625),	-- -- \\ Fairbreeze Village, Eversong Woods
+fp(626),	-- -- \\ Quest Path 508: zzzThe Exodar -> Blood Watch, Bloodmyst Isle
+fp(627),	-- -- \\ Quest Path 2376: zzzThe Exodar -> Azure Watch, Azuremyst Isle
+fp(628),	-- -- \\ Quest Path 507: zzzBlood Watch, Bloodmyst Isle -> The Exodar
+fp(629),	-- -- \\ Quest Path 2375: zzzAzure Watch, Azuremyst Isle -> The Exodar
+fp(630),	-- -- \\ Light's Shield Tower, Eastern Plaguelands
+fp(631),	-- -- \\ Falconwing Square, Eversong Woods
+fp(632),	-- -- \\ Bloodwatcher Point, Badlands
+fp(633),	-- -- \\ Dustwind Dig, Badlands
+fp(634),	-- -- \\ Dragon's Mouth, Badlands
+fp(635),	-- -- \\ Fuselight, Badlands
+fp(645),	-- -- \\ Forsaken High Command, Silverpine Forest
+fp(646),	-- -- \\ Forsaken Forward Command, Gilneas
+fp(649),	-- -- \\ Andorhal, Western Plaguelands
+fp(650),	-- -- \\ Andorhal, Western Plaguelands
+fp(651),	-- -- \\ The Menders' Stead, Western Plaguelands
+fp(652),	-- -- \\ Ramkahen, Uldum \\ Center Uldum, Uldum
+fp(653),	-- -- \\ Oasis of Vir'sar, Uldum \\ North Western Uldum, Uldum
+fp(654),	-- -- \\ The Forsaken Front, Silverpine Forest
+fp(656),	-- -- \\ Crushblow, Twilight Highlands
+fp(657),	-- -- \\ The Gullet, Twilight Highlands
+fp(658),	-- -- \\ Vermillion Redoubt, Twilight Highlands
+fp(659),	-- -- \\ Bloodgulch, Twilight Highlands
+fp(660),	-- -- \\ The Krazzworks, Twilight Highlands
+fp(661),	-- -- \\ Dragonmaw Port, Twilight Highlands
+fp(662),	-- -- \\ Highbank, Twilight Highlands \\ High Bank, Twilight Highlands
+fp(663),	-- -- \\ Victor's Point, Twilight Highlands \\ Victory Point, Twilight Highlands
+fp(664),	-- -- \\ Firebeard's Patrol, Twilight Highlands
+fp(665),	-- -- \\ Thundermar, Twilight Highlands
+fp(666),	-- -- \\ Kirthaven, Twilight Highlands
+fp(667),	-- -- \\ Ruins of Southshore, Hillsbrad
+fp(668),	-- -- \\ Southpoint Gate, Hillsbrad
+fp(669),	-- -- \\ Eastpoint Tower, Hillsbrad
+fp(670),	-- -- \\ Strahnbrad, Alterac Mountains
+fp(672),	-- -- \\ Hearthglen, Western Plaguelands
+fp(673),	-- -- \\ Iron Summit, Searing Gorge
+4.3.4.15595
+fp(21),	-- -- \\ New Kargath, Badlands \\ Kargath, Badlands \\ Kargath - Badlands \\ Badlands - Kargath - Windrider
+fp(80),	-- -- \\ Ratchet, Northern Barrens \\ Ratchet, The Barrens
+fp(129),	-- -- \\ Hellfire Peninsula, The Dark Portal \\ Hellfire Peninsula, The Dark Portal, Alliance
+fp(130),	-- -- \\ Hellfire Peninsula, The Dark Portal \\ Hellfire Peninsula, The Dark Portal, Horde
+fp(260),	-- -- \\ Kor'kron Vanguard, Dragonblight \\ Kor'koron Vanguard, Dragonblight
+fp(674),	-- -- \\ Schnottz's Landing, Uldum
+fp(675),	-- -- \\ Flamestar Post, Burning Steppes
+fp(676),	-- -- \\ Chiselgrip, Burning Steppes
+fp(681),	-- -- \\ Forsaken Rear Guard, Silverpine Forest
+fp(682),	-- -- \\ Quest Path 1843: Transport - Gadgetzan to ??? JZB RVM Test [DISABLED]
+fp(683),	-- -- \\ Valormok, Azshara
+fp(728),	-- -- \\ Quest Path 2653: 4.1 - ZG Event - Rebel Camp -> Explorers' League
+fp(757),	-- -- \\ Quest Path 2695: PattyMac Taxi Path Speed Test
+fp(781),	-- -- \\ Sanctuary of Malorne, Hyjal
+fp(906),	-- -- \\ Dragon Soul Raid - Wyrmrest Temple Base
+fp(907),	-- -- \\ Dragon Soul Raid - East Sarlac

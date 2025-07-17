@@ -5,7 +5,7 @@
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 	m(STORMSONG_VALLEY, {
 		n(FACTIONS, {
-			faction(FACTION_HONEYBACK_HIVE, {	-- Honeyback Hive
+			header(HEADERS.Faction, FACTION_HONEYBACK_HIVE, {	-- Honeyback Hive
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = 3066348,
 				-- Possible to use HQT's to track unlock
@@ -20,6 +20,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 						faction(FACTION_HONEYBACK_HARVESTER, {	-- Honeyback Harvester
 							["races"] = ALLIANCE_ONLY,
 						}),
+						faction(FACTION_HONEYBACK_HIVE, {	-- Honeyback Hive
+							["races"] = ALLIANCE_ONLY,
+							["icon"] = 3066348,
+						}),
 					}),
 					n(QUESTS, {
 						q(56473, {	-- Envenomed Spider Fang
@@ -27,18 +31,27 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 						--	["cr"] = 155172,	-- Trapdoor Bee Hunter
+							["g"] = {
+								i(172145),	-- Unremarkable Spider-Fang
+							},
 						}),
 						q(56474, {	-- Hivekiller Stinger
 							["provider"] = { "i", 169655 },	-- Hivekiller Stinger
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 						--	["cr"] = 155171,	-- The Hivekiller
+							["g"] = {
+								i(172144),	-- Glittering Stinger
+							},
 						}),
 						q(56092, {	-- Hivethief's Jelly Stash
 							["provider"] = { "i", 169657 },	-- Hivethief's Jelly Stash
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 						--	["cr"] = 155055,	-- Gurg the Hivethief
+							["g"] = {
+								i(172147),	-- Nugget Honey
+							},
 						}),
 						q(56108, {	-- Leaving the Hive
 							["provider"] = { "n", 155745 },	-- Honeyback Harvester
@@ -55,12 +68,18 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 						--	["cr"] = 155176,	-- Old Nasha
+							["g"] = {
+								i(172146),	-- Glazed Bear Meat
+							},
 						}),
 						q(56475, {	-- Spiral Yeti Horn
 							["provider"] = { "i", 169654 },	-- Spiral Yeti Horn
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 						--	["cr"] = 155059,	-- Yorag the Jelly Feaster
+							["g"] = {
+								i(172143),	-- Perforated Spiral Horn
+							},
 						}),
 						q(57670, {	-- Unbeelievable Quality
 							["providers"] = {
@@ -75,6 +94,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 						--	["cr"] = 155173,	-- Honeyback Usurper
+							["g"] = {
+								i(172142),	-- Pilfered Beeswax
+							},
 						}),
 					}),
 					o(327230, {	-- Jelly Deposit
@@ -193,6 +215,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 						},
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
+							i(169152),	-- Empty Beehive
 							i(168822),	-- Thin Jelly
 						},
 					}),
@@ -258,6 +281,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 								i(169395),	-- Summit Zephyr
 							},
 						}),
+						n(155176, {	-- Honeyback Hivemother
+							i(169862, {	-- Alluring Bloom
+								["minReputation"] = { FACTION_HONEYBACK_HIVE, FRIENDLY },	-- Honeyback Hive, Friendly
+								["cost"] = {
+									{ "i", 168822, 5 },	-- Thin Jelly x5
+								},
+							}),
+						}),
 					}),
 				},
 			}),
@@ -296,6 +327,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 						q(57701),	-- same as above
 						q(56107),	-- when nascent bee changed into Juvenile Harvester
 						q(56879),	-- when Juvenile Harvester changed into Honeyback Harvester (max bee friendship)
+						q(56169),	-- On finishing Harvester event
 					}),
 				}),
 			}),

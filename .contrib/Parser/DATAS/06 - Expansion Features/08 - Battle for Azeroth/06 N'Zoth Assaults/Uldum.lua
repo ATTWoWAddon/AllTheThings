@@ -1,22 +1,6 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-VISIONS_OF_NZOTH = createHeader({
-	readable = "Visions of Nzoth",
-	icon = 535594,
-	text = {
-		-- #if AFTER 10.1.5
-		en = WOWAPI_GetSpellName(417520),
-		-- #else
-		en = "Visions of N'Zoth",
-		de = "Visionen von N'Zoth",
-		fr = "Visions de N'Zoth",
-		ru = "Видения Н'Зота",
-		cn = "恩佐斯的幻象",
-		-- #endif
-	},
-});
-
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	m(NZOTH_ASSAULT_ULDUM, {	-- Uldum (under assault)
 		["icon"] = 3196264,
@@ -737,6 +721,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						}),
 					})),
 					n(ZONE_DROPS, {
+						i(171208),	-- Suntouched Amulet
+						i(168267),	-- Suntouched Figurine
 						i(174765, {	-- Tol'vir Relic
 							["cost"] = { { "i", 174764, 6 } },	-- 6x Tol'vir Relic Fragment
 						}),
@@ -1202,6 +1188,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							58809,	-- A Shocking Technique
 							58806,	-- Warmth of the Sun
 							58807,	-- Wrapping Up
+						},
+						["g"] = {
+							i(175002),	-- Amber Incubator (QI!)
 						},
 					}),
 					q(58806, {	-- Warmth of the Sun (Amathet assault)
@@ -1710,6 +1699,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["coord"] = { 57.6, 43.6, NZOTH_ASSAULT_ULDUM },
 					})),
 				})),
+			}),
+			n(ZONE_REWARDS, {
+				i(173376),	-- Uldum Accord Insignia
+				i(173377),	-- Uldum Accord Insignia
 			}),
 		},
 	}),

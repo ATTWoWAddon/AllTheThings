@@ -5,7 +5,7 @@
 root(ROOTS.NeverImplemented, n(MOUNT_MODS, {
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			-- With QuestID attached
 			i(196984),	-- Cliffside Wylderdrake: Finned Jaw (MM!)
 			i(196993),	-- Cliffside Wylderdrake: Sleek Horns (MM!)
@@ -49,8 +49,27 @@ root(ROOTS.NeverImplemented, n(MOUNT_MODS, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			i(223510),	-- Delver's Dirigible Schematic: Template (MM!)
+		})),
+
+		-- 11.1.0
+		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
+			i(232980),	-- Axel Sneakfoot (MM!)
+			i(232979),	-- Jaks Jabberjaw (MM!)
+			i(232978),	-- Louie Firehands (MM!)
+			i(232930),	-- Zaps Leadfoot (MM!)
+			i(235697),	-- Delver's Dirigible Schematic: Alliance Decal (MM!)
+			i(235694),	-- Delver's Dirigible Schematic: Blue Paint (MM!)
+			i(235696),	-- Delver's Dirigible Schematic: Explorer Decal (MM!)
+			i(235688),	-- Delver's Dirigible Schematic: Fan (MM!)
+			i(235690),	-- Delver's Dirigible Schematic: Harpoon (MM!)
+			i(235698),	-- Delver's Dirigible Schematic: Horde Decal (MM!)
+			i(235689),	-- Delver's Dirigible Schematic: Kite (MM!)
+			i(235695),	-- Delver's Dirigible Schematic: Red Paint (MM!)
+			i(235693),	-- Delver's Dirigible Schematic: Rocket (MM!)
+			i(235692),	-- Delver's Dirigible Schematic: Thrusters (MM!)
+			i(235691),	-- Delver's Dirigible Schematic: Yellow Paint (MM!)
 		})),
 	}),
 }));

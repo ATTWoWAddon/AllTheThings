@@ -10,7 +10,7 @@ SCENARIOS = createHeader({
 		en = [[~SCENARIOS]],
 	},
 });
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_1_0 } }, {
 	applyclassicphase(MOP_PHASE_LANDFALL, n(SCENARIOS, {
 		["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 		["g"] = {
@@ -18,51 +18,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				ach(6943),	-- Queuing Spree
 				a(ach(6874, {	-- Scenaturday (A)
 					title(206),	-- <Name> the Scenaturdist
-					crit(21499, {	-- A Brewing Storm
-						["maps"] = { 447 },
-					}),
-					crit(21500, {	-- Greenstone Village
-						["maps"] = { 448 },
-					}),
-					crit(21501, {	-- Unga Ingoo
-						["maps"] = { 450 },
-					}),
-					crit(21502, {	-- Brewmoon Festival
-						["maps"] = { 452 },
-					}),
-					crit(21503, {	-- Crypt of Forgotten Kings
-						["maps"] = { 481 },
-					}),
-					crit(21504, {	-- Arena of Annihilation
-						["maps"] = { 480 },
-					}),
-					crit(21023, {	-- Theramore's Fall
-						["maps"] = { 483 },
-					}),
 				})),
 				h(ach(7509, {	-- Scenaturday (H)
 					title(206),	-- <Name> the Scenaturdist
-					crit(21499, {	-- A Brewing Storm
-						["maps"] = { 447 },
-					}),
-					crit(21500, {	-- Greenstone Village
-						["maps"] = { 448 },
-					}),
-					crit(21501, {	-- Unga Ingoo
-						["maps"] = { 450 },
-					}),
-					crit(21502, {	-- Brewmoon Festival
-						["maps"] = { 452 },
-					}),
-					crit(21503, {	-- Crypt of Forgotten Kings
-						["maps"] = { 481 },
-					}),
-					crit(21504, {	-- Arena of Annihilation
-						["maps"] = { 480 },
-					}),
-					crit(21506, {	-- Theramore's Fall
-						["maps"] = { 483 },
-					}),
 				})),
 			}),
 			-- Scenario Maps
@@ -77,6 +35,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						ach(8310),	-- Heroic: A Brewing Storm
 						ach(7261),	-- The Perfect Pour
 						ach(7258),	-- Party of Six
+						crit(21499, {	-- A Brewing Storm
+							["achievementID"] = 6874,	-- Scenaturday (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						crit(21499, {	-- A Brewing Storm
+							["achievementID"] = 7509,	-- Scenaturday (H)
+							["races"] = HORDE_ONLY,
+						}),
 					}),
 				},
 			}),
@@ -98,6 +64,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						crit(19342),	-- Kill Cloudbender Kobo
 						crit(20432),	-- Kill Maki Waterblade
 						crit(20433),	-- Kill Satay Byu
+					}),
+					crit(21504, {	-- Arena of Annihilation
+						["achievementID"] = 6874,	-- Scenaturday (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					crit(21504, {	-- Arena of Annihilation
+						["achievementID"] = 7509,	-- Scenaturday (H)
+						["races"] = HORDE_ONLY,
 					}),
 				}),
 			}),
@@ -149,6 +123,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						},
 					}),
 					ach(6930),	-- Yaungolian Barbecue
+					crit(21502, {	-- Brewmoon Festival
+						["achievementID"] = 6874,	-- Scenaturday (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					crit(21502, {	-- Brewmoon Festival
+						["achievementID"] = 7509,	-- Scenaturday (H)
+						["races"] = HORDE_ONLY,
+					}),
 				}),
 			}),
 			m(523, {	-- Blood in the Snow
@@ -176,6 +158,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						ach(8368),	-- Fight Anger with Anger
 						ach(8311),	-- Heroic: Crypt of Forgotten Kings
 						ach(7275),	-- It's a Trap!
+						crit(21503, {	-- Crypt of Forgotten Kings
+							["achievementID"] = 6874,	-- Scenaturday (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						crit(21503, {	-- Crypt of Forgotten Kings
+							["achievementID"] = 7509,	-- Scenaturday (H)
+							["races"] = HORDE_ONLY,
+						}),
 					}),
 				},
 			}),
@@ -237,6 +227,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					ach(7265),	-- Greenstone Village
 					ach(7267),	-- Perfect Delivery
 					ach(7266),	-- Save it for Later
+					crit(21500, {	-- Greenstone Village
+						["achievementID"] = 6874,	-- Scenaturday (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					crit(21500, {	-- Greenstone Village
+						["achievementID"] = 7509,	-- Scenaturday (H)
+						["races"] = HORDE_ONLY,
+					}),
 				}),
 			}),
 			m(522, {	-- The Secrets of Ragefire
@@ -251,15 +249,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					}),
 				},
 			}),
-			m(483, {	-- Theramore's Fall
-				n(ACHIEVEMENTS, {
-					a(ach(7526)),	-- Kite Flight (A)
-					h(ach(7529)),	-- Kite Fight (H)
-					a(ach(7527)),	-- No Tank You (A)
-					h(ach(7530)),	-- No Tank You (H)
-					a(ach(7523)),	-- Theramore's Fall (A)
-					h(ach(7524)),	-- Theramore's Fall (H)
-				}),
+			n(THERAMORES_FALL, {
+				["maps"] = { 483 },	-- Theramore's Fall
+				["groups"] = {
+					n(ACHIEVEMENTS, bubbleDown({ ["lvl"] = lvlsquish(90, 90, 35), }, {
+						a(ach(7526)),	-- Kite Flight (A)
+						h(ach(7529)),	-- Kite Fight (H)
+						a(ach(7527)),	-- No Tank You (A)
+						h(ach(7530)),	-- No Tank You (H)
+						a(ach(7523)),	-- Theramore's Fall (A)
+						h(ach(7524)),	-- Theramore's Fall (H)
+						crit(21023, {	-- Theramore's Fall
+							["achievementID"] = 6874,	-- Scenaturday (A)
+							["races"] = ALLIANCE_ONLY,
+						}),
+						crit(21506, {	-- Theramore's Fall
+							["achievementID"] = 7509,	-- Scenaturday (H)
+							["races"] = HORDE_ONLY,
+						}),
+					})),
+				},
 			}),
 			m(450, {	-- Unga Ingoo
 				n(ACHIEVEMENTS, {
@@ -268,6 +277,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					ach(7231),	-- Spill No Evil
 					ach(7232),	-- The Keg Runner
 					ach(7249),	-- Unga Ingoo
+					crit(21501, {	-- Unga Ingoo
+						["achievementID"] = 6874,	-- Scenaturday (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					crit(21501, {	-- Unga Ingoo
+						["achievementID"] = 7509,	-- Scenaturday (H)
+						["races"] = HORDE_ONLY,
+					}),
 				}),
 				n(TREASURES, {
 					o(212278),	-- Protected Unga Keg
@@ -279,8 +296,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					VALE_OF_ETERNAL_BLOSSOMS,
 				},
 				["g"] = {
-					i(98133, {	-- Greater Cache of Treasures
+					container(98133, {	-- Greater Cache of Treasures
 						["description"] = "Rewarded for completing |cFFFFD700The King and the Council|r and |cFFFFD700The Warchief and the Darkness|r quests.\nSee Rewards Tab description for a detailed farming guide.",
+						["providers"] = {
+							{ "i", 92813 },	-- Greater Cache of Treasures [Looks like this was deprecated in favor of #98133]
+							{ "i", 89613 },	-- Greater Cache of Treasures [Looks like this was deprecated in favor of #98133]
+						},
 						["g"] = {
 							n(BACK, {
 								i(92881),	-- Bladesnap Drape
@@ -289,10 +310,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 								i(93102),	-- Brewfather Cloak
 								i(89501),	-- Brewmoon Cloak
 								i(92879),	-- Bubblebrew Cloak
-								i(93067),	-- Firebinder Cloak						— 2019-03-05
+								i(93067, {	-- Firebinder Cloak						— 2019-03-05//
+									["timeline"] = { REMOVED_6_0_2 },				-- While it maybe was obtainable during MoP, I would like proof of somebody obtaining it since 11.0 -- Gold 8th May 2025
+								--	["description"] = "Extremely Rare",
+								}),
 								i(89500),	-- Fireheart Cloak
 								i(92878),	-- Lavasoul Cloak
-								i(93113),	-- Lightning Rod Drape					— 2022-03-24
+								i(93113, {	-- Lightning Rod Drape					— 2022-03-24
+									["timeline"] = { REMOVED_6_0_2 },				-- While it maybe was obtainable during MoP, I would like proof of somebody obtaining it since 11.0 -- Gold 8th May 2025
+								--	["description"] = "Extremely Rare",
+								}),
 								i(89502),	-- Stormbound Cloak
 								i(92880),	-- Stormcrier Cloak
 							}),
@@ -566,12 +593,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 								i(93126),	-- Scavenged Pandaren Staff
 								i(93129),	-- Scavenged Pandaren Staff
 								i(93136),	-- Scavenged Pandaren Sword
-								i(93145),	-- Scavenged Pandaren Sword
+							--	i(93145),	-- Scavenged Pandaren Sword (Nobody has it, not even with Quantum -- Gold 8th May 2025)
 								i(93133),	-- Scavenged Pandaren Wand
 							}),
 						},
 					}),
-					i(98546, {	-- Bulging Heroic Cache of Treasures
+					container(98546, {	-- Bulging Heroic Cache of Treasures
 						["description"] = "Rewarded for completing |cFFFFD700Heroic Deeds|r quest.\nMouseover the Rewards Tab located ATT > Expansion Features > MoP > Scenarios > Rewards for a detailed farming guide.",
 						["g"] = {
 							n(BACK, {
@@ -737,9 +764,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["maps"] = { 523 },	-- Dun Morogh (Blood in the Snow scenario)
 						["g"] = {
-							i(98133, {	-- Greater Cache of Treasures
-								["sym"] = { {"fill"} },
-							}),
+							i(98133),	-- Greater Cache of Treasures
 						},
 					}),
 					q(32807, {	-- The Warchief and the Darkness
@@ -748,9 +773,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["maps"] = { 520, 521 },	-- Vale of Eternal Blossoms (Dark Heart of Pandaria scenario)
 						["g"] = {
-							i(98133, {	-- Greater Cache of Treasures
-								["sym"] = { {"fill"} },
-							}),
+							i(98133),	-- Greater Cache of Treasures
 						},
 					}),
 					q(32901, {	-- Heroic Deeds
@@ -758,9 +781,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						["coord"] = { 46.6, 56.5, 392 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(98546, {  -- Bulging Heroic Cache of Treasures
-								["sym"] = { {"fill"} },
-							}),
+							i(98546),  -- Bulging Heroic Cache of Treasures
 						},
 					}),
 					q(32900, {	-- Heroic Deeds
@@ -768,9 +789,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						["coord"] = { 47.23, 49.71, 393 },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							i(98546, {  -- Bulging Heroic Cache of Treasures
-								["sym"] = { {"fill"} },
-							}),
+							i(98546),  -- Bulging Heroic Cache of Treasures
 						},
 					}),
 				},

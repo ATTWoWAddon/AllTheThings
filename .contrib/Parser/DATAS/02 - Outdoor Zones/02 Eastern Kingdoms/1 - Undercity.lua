@@ -86,8 +86,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-			-- #if AFTER 4.0.1.12984
 			n(PROFESSIONS, {
+				-- #if AFTER CATA
 				prof(FISHING, {
 					i(67414, {	-- Bag of Shiny Things
 						["provider"] = { "n", 4573 },	-- Armand Cromwell
@@ -122,8 +122,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 				}),
+				-- #endif
+				prof(TAILORING, {
+					n(4578, {	-- Josephine Lister <Master Shadoweave Tailor>
+						["coord"] = { 87.0, 20.8, UNDERCITY },
+						["races"] = HORDE_ONLY,
+						["groups"] = SHADOWEAVE_TAILORING,
+					}),
+				}),
 			}),
-			-- #endif
 			n(QUESTS, {
 				q(4294, {	-- ... and a Batch of Ooze
 					["qg"] = 10136,	-- Chemist Fuely
@@ -176,7 +183,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(122339, {	-- Ancient Heirloom Scabbard
-							["sym"] = { { "fill" } },	-- simply fill this item
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 					},
 				}),
@@ -309,7 +316,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(122340, {	-- Timeworn Heirloom Armor Casing
-							["sym"] = { { "fill" } },	-- simply fill this item
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 					},
 				}),
@@ -782,7 +789,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(122338, {	-- Ancient Heirloom Armor Casing
-							["sym"] = { { "fill" } },	-- simply fill this item
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 					},
 				}),
@@ -1275,7 +1282,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(122341, {	-- Timeworn Heirloom Scabbard
-							["sym"] = { { "fill" } },	-- simply fill this item
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 					},
 				}),
@@ -1481,6 +1488,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(4610, {	-- Algernon <Alchemy Supplies>
 					["coord"] = { 51.8, 74.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
+					["sym"] = {{ "sub", "common_vendor", 3010 }},	-- Mani Winterhoof <Alchemy Supplies>
 					["groups"] = {
 						i(9301, {	-- Recipe: Elixir of Shadow Power (RECIPE!)
 							["isLimited"] = true,
@@ -1585,6 +1593,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(4555, {	-- Eleanor Rusk <General Goods>
+					["coord"] = { 69.2, 48.9, UNDERCITY },	-- Trade Quarter
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(1179),	-- Ice Cold Milk
+					},
+				}),
+				n(4587, {	-- Elizabeth Van Talen <Engineering Supplies>
+					["coords"] = {
+						{ 75.5, 74.3, UNDERCITY },
+					},
+					["races"] = HORDE_ONLY,
+					["groups"] = appendGroups(VANILLA_ENGINEERING_SUPPLIES, {
+						i(5956),	-- Blacksmith Hammer
+					}),
+				}),
 				-- #if AFTER 6.1.0
 				n(6566, {	-- Estelle Gendry <Heirloom "Curator">
 					["coords"] = {
@@ -1593,6 +1617,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 						{ 78.2, 76.6, UNDERCITY },
 					},
+					["timeline"] = { ADDED_6_1_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						n(ARMOR, {
@@ -1645,48 +1670,40 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						n(HEIRLOOMS, {
 							gold(500, i(122338, {	-- Ancient Heirloom Armor Casing
-								["sym"] = { { "fill" } },	-- simply fill this item
+								["timeline"] = { ADDED_6_1_0 },
 							})),
 							gold(750, i(122339, {	-- Ancient Heirloom Scabbard
-								["sym"] = { { "fill" } },	-- simply fill this item
+								["timeline"] = { ADDED_6_1_0 },
 							})),
 							gold(1000, i(122340, {	-- Timeworn Heirloom Armor Casing
-								["sym"] = { { "fill" } },	-- simply fill this item
+								["timeline"] = { ADDED_6_1_0 },
 							})),
 							gold(1500, i(122341, {	-- Timeworn Heirloom Scabbard
-								["sym"] = { { "fill" } },	-- simply fill this item
+								["timeline"] = { ADDED_6_1_0 },
 							})),
 							gold(2000, i(151614, {	-- Weathered Heirloom Armor Casing
 								["timeline"] = { ADDED_7_2_5 },
-								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(3000, i(151615, {	-- Weathered Heirloom Scabbard
 								["timeline"] = { ADDED_7_2_5 },
-								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(5000, i(167731, {	-- Battle-Hardened Heirloom Armor Casing
 								["timeline"] = { ADDED_8_1_5 },
-								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(7500, i(167732, {	-- Battle-Hardened Heirloom Scabbard
 								["timeline"] = { ADDED_8_1_5 },
-								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(5000, i(187997, {	-- Eternal Heirloom Armor Casing
 								["timeline"] = { ADDED_9_1_5 },
-								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(7500, i(187998, {	-- Eternal Heirloom Scabbard
 								["timeline"] = { ADDED_9_1_5 },
-								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(5000, i(204336, {	-- Awakened Heirloom Armor Casing
 								["timeline"] = { ADDED_10_0_7 },
-								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(7500, i(204337, {	-- Awakened Heirloom Scabbard
 								["timeline"] = { ADDED_10_0_7 },
-								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 						}),
 						filter(TOYS, {
@@ -1753,9 +1770,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(4585, {	-- Ezekiel
 					["coord"] = { 75.6, 51.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
+					-- #if AFTER MOP
 					["sym"] = {{"select","itemID",
 						4565,	-- Simple Dagger
 					}},
+					-- #endif
 				}),
 				n(4775, {	-- Felicia Doan <Trade Supplies>
 					["coord"] = { 64.1, 50.6, UNDERCITY },
@@ -1867,6 +1886,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2493,	-- Wooden Mallet
 					}},
 				}),
+				n(30729, {	-- Ickabod Pimlen <Inscription Supplies>
+					["coord"] = { 61.83, 57.53, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_3_0_2 },
+					["groups"] = INSCRIPTION_SUPPLIES,
+				}),
 				n(8403, {	-- Jeremiah Payson <Cockroach Vendor>
 					["coord"] = { 67.6, 44.1, UNDERCITY },
 					["races"] = HORDE_ONLY,
@@ -1877,15 +1902,39 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(4589, {	-- Joseph Moore <Leatherworking Supplies>
-					["sym"] = { {"sub", "common_recipes_vendor", 3366 } },	-- Tamar <Leatherworking Supplies>
 					["coord"] = { 70.1, 58.4, UNDERCITY },
 					["races"] = HORDE_ONLY,
+					["sym"] = { {"sub", "common_vendor", 5565} },	-- Jillian Tanner <Leatherworking Supplies>
 					["groups"] = {
 						i(18949, {	-- Pattern: Barbaric Bracers (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(7451, {	-- Pattern: Green Whelp Bracers (RECIPE!)
 							["isLimited"] = true,
+						}),
+					},
+				}),
+				n(4615, {	-- Katrina Alliestar <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
+					["coord"] = { 54.73, 48.9, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(22250, {	-- Herb Pouch
+							["description"] = "Only select Herbalism Suppliers sells this pouch.",
+							["providers"] = {
+								{ "n", 4216},	-- Chardryn <Herbalism Supplies>
+								{ "n", 5503},	-- Eldraeith <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
+								{ "n", 5138},	-- Gwina Stonebranch <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
+								{ "n", 4615},	-- Katrina Alliestar <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
+								{ "n", 3548},	-- Selina Weston <Alchemy & Herbalism Supplies>
+								-- #if AFTER TBC
+								{ "n", 16367},	-- Botanist Tyniarrel <Herbalism Trainer & Supplies>
+								-- #endif
+								-- #if AFTER CATA
+								{ "n", 46742},	-- Brunda <Herbalism Supplies>
+								-- #else
+								{ "n", 3405},	-- Zeal'aya <Herbalism Supplies>
+								-- #endif
+							},
 						}),
 					},
 				}),
@@ -1939,6 +1988,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(4574, {	-- Lizbeth Cromwell <Fishing Supplies> [TBC+] / Lizbeth Cromwell <Fishing Supplier>
 					["coord"] = { 81.0, 30.8, UNDERCITY },
 					["races"] = HORDE_ONLY,
+					["sym"] = {{ "sub", "common_vendor", 3333 }},	-- Shankys <Fishing Supplies>
 					["groups"] = {
 						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
 						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
@@ -1993,7 +2043,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = { {"sub", "common_recipes_vendor", 3364 } },	-- Borya <Tailoring Supplies>
 					["coord"] = { 70.6, 30.1, UNDERCITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
+					["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {
 						i(6275, {	-- Pattern: Greater Adept's Robe (RECIPE!)
 							["isLimited"] = true,
 						}),
@@ -2009,7 +2059,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(10321, {	-- Pattern: Tuxedo Shirt (RECIPE!)
 							["isLimited"] = true,
 						}),
-					},
+					}),
 				}),
 				n(5819, {	-- Mirelle Tremayne
 					["coord"] = { 61.6, 28.4, UNDERCITY },
@@ -2091,10 +2141,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(4553, {	-- Ronald Burch <Cooking Supplies> [TBC+] / Ronald Burch <Cooking Supplier>
 					["coord"] = { 62.3, 43.1, UNDERCITY },
-					-- #if AFTER CATA
-					["sym"] = {{"sub", "common_recipes_vendor", 49737}},	-- Shazdar <Sous Chef>
-					-- #endif
 					["races"] = HORDE_ONLY,
+					["sym"] = {
+						-- #if AFTER CATA
+						{"sub", "common_recipes_vendor", 49737},	-- Shazdar <Sous Chef>
+						-- #endif
+						{ "select","itemID",
+							159,	-- Refreshing Spring Water
+							-- #if AFTER TBC
+							30817,	-- Simple Flour
+							-- #endif
+							2678,	-- Mild Spices
+							-- #if BEFORE WRATH
+							2692,	-- Hot Spices
+							3713,	-- Soothing Spices
+							-- #endif
+						},
+					},
 					["groups"] = {
 						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
@@ -2103,15 +2166,49 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(4597, {	-- Samuel Van Brunt <Blacksmithing Supplies>
-					["sym"] = { {"sub", "common_recipes_vendor", 3356 } },	-- Sumi <Blacksmithing Supplies>
+					["sym"] = {{"sub", "common_recipes_vendor", 46359}},	-- Punra <Blacksmithing Supplies>
 					["coord"] = { 61.4, 30.1, UNDERCITY },
 					["races"] = HORDE_ONLY,
+					["groups"] = appendGroups(VANILLA_BLACKSMITHING_SUPPLIES, {
+						i(5956),	-- Blacksmith Hammer
+					}),
 				}),
 				n(52588, {	-- Sara Lanner <Jewelcrafting Supplies>
-					["sym"] = { {"sub", "common_recipes_vendor", 50482 } },	-- Marith Lazuria <Jewelcrafting Supplies>
 					["coord"] = { 56.2, 36.6, UNDERCITY },
 					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{ "sub", "common_recipes_vendor", 50482 },	-- Marith Lazuria <Jewelcrafting Supplies>
+						{ "select","itemID",
+						52188,	-- Jeweler's Setting
+						20815,	-- Jeweler's Toolset/-Kit
+						-- #if BEFORE MOP
+						20824,	-- Simple Grinder
+						-- #endif
+						},
+					},
+				}),
+				n(4599, {	-- Sarah Killan <Mining Supplies>
+					["coord"] = { 56.6, 37.3, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(2901),	-- Mining Pick
+						-- #if AFTER CATA
+						i(30746, {	-- Mining Sack
+							["providers"] = {
+								{ "n", 5514 },	-- Brooke Stonebraid <Mining Supplies>
+								{ "n", 4256 },	-- Golnir Bouldertoe <Mining Supplies>
+								{ "n", 3358 },	-- Gorina <Mining Supplies>
+								{ "n", 3002 },	-- Kurm Stonehoof <Mining Supplies>
+								{ "n", 16751 },	-- Merran <Mining Supplies>
+								{ "n", 52643 },	-- Rissa Halding <Mining Supplies>
+								{ "n", 4599 },	-- Sarah Killan <Mining Supplies>
+								{ "n", 16664 },	-- Zelan <Mining Supplies>
+							},
+							["timeline"] = { ADDED_2_0_1 },
+						}),
+						-- #endif
+					},
 				}),
 				n(5821, {	-- Sheldon Von Croy <Cloth Armor Merchant>
 					["coord"] = { 70.6, 28.8, UNDERCITY },
@@ -2169,6 +2266,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2535,	-- War Staff
 					}},
 				}),
+				n(4617, {	-- Thaddeus Webb <Enchanting Supplies>
+					["sym"] = { {"sub", "common_recipes_vendor", 3346 } },	-- Kithas <Enchanting Supplies>
+					["coord"] = { 62.0, 60.8, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["groups"] = appendGroups(ENCHANTING_SUPPLIES, VANILLA_ENCHANTING_SUPPLIES, {
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
+					}),
+				}),
 				n(4559, {	-- Timothy Weldon
 					["coord"] = { 63.6, 39.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
@@ -2176,39 +2281,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						17187,	-- Banded Buckler
 						17183,	-- Dented Buckler
 						1200,	-- Large Wooden Shield
-						2398,	-- Light Chain Armor
-						2399,	-- Light Chain Belt
-						2401,	-- Light Chain Boots
-						2402,	-- Light Chain Bracers
-						2403,	-- Light Chain Gloves
-						2400,	-- Light Chain Leggings
 						17185,	-- Round Buckler
 						1202,	-- Wall Shield
 						2376,	-- Worn Heater Shield
 					}},
 					["groups"] = {
+						i(2398),	-- Light Chain Armor
+						i(2399),	-- Light Chain Belt
+						i(2401),	-- Light Chain Boots
+						i(2402),	-- Light Chain Bracers
+						i(2403),	-- Light Chain Gloves
+						i(2400),	-- Light Chain Leggings
 						i(2387),	-- Rusted Chain Belt
 						i(2389),	-- Rusted Chain Boots
 						i(2390),	-- Rusted Chain Bracers
 						i(2391),	-- Rusted Chain Gloves
 						i(2388),	-- Rusted Chain Leggings
 						i(2386),	-- Rusted Chain Vest
-					},
-				}),
-				n(4617, {	-- Thaddeus Webb <Enchanting Supplies>
-					["sym"] = { {"sub", "common_recipes_vendor", 3346 } },	-- Kithas <Enchanting Supplies>
-					["coord"] = { 62.0, 60.8, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						-- #if BEFORE CATA
-						i(6342, {	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-							["isLimited"] = true,
-						}),
-						-- #endif
-						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 					},
 				}),
 				n(4560, {	-- Walter Ellingson

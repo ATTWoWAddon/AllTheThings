@@ -424,6 +424,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(158973),	-- Band of Destiny
+					i(153058),	-- Scroll of Fate's Hand (PQI!)
 				},
 			}),
 			q(48492, {	-- Getting a Leg Up
@@ -462,6 +463,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 129378 },	-- Jo'chunga
 				["coord"] = { 33.3, 45.8, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(153694),	-- Poisoned Dagger (PQI!)
+				},
 			}),
 			q(48890, {	-- How to Be a Blood Troll
 				["sourceQuests"] = { 48699 },	-- Sneaking into Zalamar

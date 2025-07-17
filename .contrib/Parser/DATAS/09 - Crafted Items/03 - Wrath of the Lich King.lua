@@ -679,6 +679,17 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		i(44703, {	-- Dark Herring
 			["maps"] = { HOWLING_FJORD },
 			["provider"] = { "o", 192049 },	-- Fangtooth Herring School
+			["description"] =
+				-- #if BEFORE LEGION
+				"Keep this in your bank until Transmog is added, otherwise you'll need to obtain it again. Fair warning!",
+				-- #elseif AFTER TWW
+				"Keep this in your bank until the appearance can be learned again, otherwise you'll need to obtain it again. Fair warning!",
+				-- #else
+				nil,
+				-- #endif
+				-- #if AFTER TWW
+				["collectible"] = false,  -- remove when Blizzard fix fish collection
+				-- #endif
 		}),
 		i(44505, {	-- Dustbringer
 			["description"] = "Can be caught in schools or open water in Northrend.",
@@ -1094,8 +1105,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(40919, {	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+] / Mark of the Orca[SL+] (CI!)
 				["timeline"]={ ADDED_3_0_2 },
 			}),
-
 			i(167539, {["timeline"] = {ADDED_8_1_5}}),	-- Glyph of Dalaran Brilliance
+			i(44922, {	-- Glyph of Typhoon / Glyph of Stars[WOD?+]
+				["timeline"]={ ADDED_3_0_2 },
+			}),
 		}),
 		-- #endif
 		category(106, {	-- Tarot Cards
@@ -1537,118 +1550,110 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		},
 	}),
 	prof(TAILORING, {
+		n(ARMOR, {
+			i(42096),	-- Aurora Slippers
+			applyclassicphase(WRATH_PHASE_THREE, i(47585, {["timeline"] = {ADDED_3_2_0}})),	-- Bejeweled Wizard's Bracers [A]
+			applyclassicphase(WRATH_PHASE_THREE, i(47586, {["timeline"] = {ADDED_3_2_0}})),	-- Bejeweled Wizard's Bracers [H]
+			i(41553),	-- Black Duskweave Leggings
+			i(41554),	-- Black Duskweave Robe
+			i(41555),	-- Black Duskweave Wristwraps
+			i(41249),	-- Blue Lumberjack Shirt
+			i(41253),	-- Blue Workman's Shirt
+			i(45810, {["timeline"] = {ADDED_3_1_0}}),	-- Cloak of Crimson Snow
+			i(41608),	-- Cloak of Frozen Spirits
+			i(41607),	-- Cloak of the Moon
+			applyclassicphase(WRATH_PHASE_TWO, i(45558, {["timeline"] = {ADDED_3_1_0}})),	-- Cord of the White Dawn
+			i(41986),	-- Deep Frozen Cord
+			i(41610),	-- Deathchill Cloak
+			applyclassicphase(WRATH_PHASE_FOUR, i(49890, {["timeline"] = {ADDED_3_3_0}})),	-- Deathfrost Boots
+			i(41543),	-- Duskweave Belt
+			i(41544),	-- Duskweave Boots
+			i(41546),	-- Duskweave Cowl
+			i(41545),	-- Duskweave Gloves
+			i(41548),	-- Duskweave Leggings
+			i(41549),	-- Duskweave Robe
+			i(41550),	-- Duskweave Shoulders
+			i(41551),	-- Duskweave Wristwraps
+			i(42111),	-- Ebonweave Gloves
+			i(42101),	-- Ebonweave Robe
+			i(45811, {["timeline"] = {ADDED_3_1_0}}),	-- Frostguard Drape
+			i(42093),	-- Frostmoon Pants
+			i(43969),	-- Frostsavage Belt
+			i(43970),	-- Frostsavage Boots
+			i(43974),	-- Frostsavage Bracers
+			i(43971),	-- Frostsavage Cowl
+			i(41516),	-- Frostsavage Gloves
+			i(43975),	-- Frostsavage Leggings
+			i(43972),	-- Frostsavage Robe
+			i(43973),	-- Frostsavage Shoulders
+			i(41522),	-- Frostwoven Belt
+			i(41520),	-- Frostwoven Boots
+			i(41521),	-- Frostwoven Cowl
+			i(44211),	-- Frostwoven Gloves
+			i(41519),	-- Frostwoven Leggings
+			i(41515),	-- Frostwoven Robe
+			i(41513),	-- Frostwoven Shoulders
+			i(41512),	-- Frostwoven Wristwraps
+			i(43583),	-- Glacial Robe
+			i(43585),	-- Glacial Slippers
+			i(43584),	-- Glacial Waistband
+			i(41250),	-- Green Lumberjack Shirt
+			i(41255),	-- Green Workman's Shirt
+			i(41984),	-- Hat of Wintry Doom
+			applyclassicphase(WRATH_PHASE_FOUR, i(49891, {["timeline"] = {ADDED_3_3_0}})),	-- Leggings of Woven Death
+			i(42095),	-- Light Blessed Mittens
+			applyclassicphase(WRATH_PHASE_FOUR, i(49892, {["timeline"] = {ADDED_3_3_0}})),	-- Lightweave Leggings
+			applyclassicphase(WRATH_PHASE_THREE, i(47603, {["timeline"] = {ADDED_3_2_0}})),	-- Merlin's Robe [A]
+			applyclassicphase(WRATH_PHASE_THREE, i(47604, {["timeline"] = {ADDED_3_2_0}})),	-- Merlin's Robe [H]
+			i(42103),	-- Moonshroud Gloves
+			i(42100),	-- Moonshroud Robe
+			i(41525),	-- Mystic Frostwoven Robe
+			i(41523),	-- Mystic Frostwoven Shoulders
+			i(41528),	-- Mystic Frostwoven Wristwraps
+			i(41248),	-- Red Lumberjack Shirt
+			i(41252),	-- Red Workman's Shirt
+			applyclassicphase(WRATH_PHASE_THREE, i(47587, {["timeline"] = {ADDED_3_2_0}})),	-- Royal Moonshroud Bracers [A]
+			applyclassicphase(WRATH_PHASE_THREE, i(47588, {["timeline"] = {ADDED_3_2_0}})),	-- Royal Moonshroud Bracers [H]
+			applyclassicphase(WRATH_PHASE_THREE, i(47605, {["timeline"] = {ADDED_3_2_0}})),	-- Royal Moonshroud Robe [A]
+			applyclassicphase(WRATH_PHASE_THREE, i(47606, {["timeline"] = {ADDED_3_2_0}})),	-- Royal Moonshroud Robe [H]
+			i(41254),	-- Rustic Workman's Shirt
+			applyclassicphase(WRATH_PHASE_FOUR, i(49893, {["timeline"] = {ADDED_3_3_0}})),	-- Sandals of Consecration
+			applyclassicphase(WRATH_PHASE_TWO, i(45557, {["timeline"] = {ADDED_3_1_0}})),	-- Sash of Ancient Power
+			applyclassicphase(WRATH_PHASE_TWO, i(45567, {["timeline"] = {ADDED_3_1_0}})),	-- Savior's Slippers
+			i(41985),	-- Silky Iceshard Boots
+			applyclassicphase(WRATH_PHASE_TWO, i(45566, {["timeline"] = {ADDED_3_1_0}})),	-- Spellslinger's Slippers
+			i(42113),	-- Spellweave Gloves
+			i(42102),	-- Spellweave Robe
+			i(41609),	-- Wispcloak
+			i(41251),	-- Yellow Lumberjack Shirt
+		}),
+		n(ARMOR_ENCHANTMENTS, {
+			i(41603),	-- Azure Spellthread
+			i(41602),	-- Brilliant Spellthread
+			i(41604),	-- Sapphire Spellthread
+			i(41601),	-- Shining Spellthread
+		}),
 		filter(BAGS, {
 			i(41597),	-- Abyssal Bag
-			i(45773),	-- Emerald Bag
+			i(45773, {["timeline"] = {ADDED_3_1_0}}),	-- Emerald Bag
 			i(41599),	-- Frostweave Bag
 			i(41600),	-- Glacial Bag
 			i(41598),	-- Mysterious Bag
 		}),
-		filter(CONSUMABLES, {
-			i(41601),	-- Shining Spellthread
-			i(41602),	-- Brilliant Spellthread
-			i(41603),	-- Azure Spellthread
-			i(41604),	-- Sapphire Spellthread
-		}),
-		n(CHEST, {
-			i(41554),	-- Black Duskweave Robe
-			i(41549),	-- Duskweave Robe
-			i(42101),	-- Ebonweave Robe
-			i(43972),	-- Frostsavage Robe
-			i(41515),	-- Frostwoven Robe
-			i(43583),	-- Glacial Robe
-			i(47603),	-- Merlin's Robe (alliance)
-			i(47604),	-- Merlin's Robe (horde)
-			i(42100),	-- Moonshroud Robe
-			i(41525),	-- Mystic Frostwoven Robe
-			i(47605),	-- Royal Moonshroud Robe (alliance)
-			i(47606),	-- Royal Moonshroud Robe (horde)
-			i(42102),	-- Spellweave Robe
-		}),
-		n(BACK, {
-			i(45810),	-- Cloak of Crimson Snow
-			i(41608),	-- Cloak of Frozen Spirits
-			i(41607),	-- Cloak of the Moon
-			i(41610),	-- Deathchill Cloak
-			i(45811),	-- Frostguard Drape
-			i(41609),	-- Wispcloak
-		}),
-		n(FEET, {
-			i(42096),	-- Aurora Slippers
-			i(49890),	-- Deathfrost Boots
-			i(41544),	-- Duskweave Boots
-			i(43970),	-- Frostsavage Boots
-			i(41520),	-- Frostwoven Boots
-			i(43585),	-- Glacial Slippers
-			i(49893),	-- Sandals of Consecration
-			i(45567),	-- Savior's Slippers
-			i(41985),	-- Silky Iceshard Boots
-			i(45566),	-- Spellslinger's Slippers
-		}),
-		n(HANDS, {
-			i(41545),	-- Duskweave Gloves
-			i(42111),	-- Ebonweave Gloves
-			i(41516),	-- Frostsavage Gloves
-			i(44211),	-- Frostwoven Gloves
-			i(42095),	-- Light Blessed Mittens
-			i(42103),	-- Moonshroud Gloves
-			i(42113),	-- Spellweave Gloves
-		}),
-		n(HEAD, {
-			i(41546),	-- Duskweave Cowl
-			i(43971),	-- Frostsavage Cowl
-			i(41521),	-- Frostwoven Cowl
-			i(41984),	-- Hat of Wintry Doom
-		}),
-		n(LEGS, {
-			i(41553),	-- Black Duskweave Leggings
-			i(41548),	-- Duskweave Leggings
-			i(42093),	-- Frostmoon Pants
-			i(43975),	-- Frostsavage Leggings
-			i(41519),	-- Frostwoven Leggings
-			i(49891),	-- Leggings of Woven Death
-			i(49892),	-- Lightweave Leggings
+		filter(MISC, {
+			i(41509),	-- Frostweave Net
 		}),
 		filter(MOUNTS, {
 			i(44554),	-- Flying Carpet (MOUNT!)
-			applyclassicphase(WRATH_PHASE_FOUR, i(54797)),	-- Frosty Flying Carpet (MOUNT!)
+			applyclassicphase(WRATH_PHASE_FOUR, i(54797, {["timeline"] = {ADDED_3_3_3}})),	-- Frosty Flying Carpet (MOUNT!)
 			i(44558),	-- Magnificent Flying Carpet (MOUNT!)
 		}),
-		n(SHOULDER, {
-			i(41550),	-- Duskweave Shoulders
-			i(43973),	-- Frostsavage Shoulders
-			i(41513),	-- Frostwoven Shoulders
-			i(41523),	-- Mystic Frostwoven Shoulders
-		}),
-		filter(SHIRTS, {
-			i(41249),	-- Blue Lumberjack Shirt
-			i(41253),	-- Blue Workman's Shirt
-			i(41250),	-- Green Lumberjack Shirt
-			i(41255),	-- Green Workman's Shirt
-			i(41248),	-- Red Lumberjack Shirt
-			i(41252),	-- Red Workman's Shirt
-			i(41254),	-- Rustic Workman's Shirt
-			i(41251),	-- Yellow Lumberjack Shirt
-		}),
-		n(WAIST, {
-			i(45558),	-- Cord of the White Dawn
-			i(41986),	-- Deep Frozen Cord
-			i(41543),	-- Duskweave Belt
-			i(43969),	-- Frostsavage Belt
-			i(41522),	-- Frostwoven Belt
-			i(43584),	-- Glacial Waistband
-			i(45557),	-- Sash of Ancient Power
-		}),
-		n(WRIST, {
-			i(47585),	-- Bejeweled Wizard's Bracers (alliance)
-			i(47586),	-- Bejeweled Wizard's Bracers (horde)
-			i(41555),	-- Black Duskweave Wristwraps
-			i(41551),	-- Duskweave Wristwraps
-			i(43974),	-- Frostsavage Bracers
-			i(41512),	-- Frostwoven Wristwraps
-			i(41528),	-- Mystic Frostwoven Wristwraps
-			i(47587),	-- Royal Moonshroud Bracers (alliance)
-			i(47588),	-- Royal Moonshroud Bracers (horde)
+		filter(REAGENTS, {
+			i(41510),	-- Bolt of Frostweave
+			i(41511),	-- Bolt of Imbued Frostweave
+			i(41593),	-- Ebonweave
+			i(41594),	-- Moonshroud
+			i(41595),	-- Spellweave
 		}),
 	}),
 }))));

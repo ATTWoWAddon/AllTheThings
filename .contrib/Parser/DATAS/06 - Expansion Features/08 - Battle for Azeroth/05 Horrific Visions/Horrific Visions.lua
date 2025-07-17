@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 HORRIFIC_VISIONS = createHeader({
 	readable = "Horrific Visions",
-	icon = 609893,
+	icon = [[~_.asset("Feature_Horrific Visions")]],
 	text = {
 		en = [[~SPLASH_BATTLEFORAZEROTH_8_3_0_FEATURE1_TITLE]],
 	},
@@ -298,7 +298,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 					o(343698, {	-- Void-Touched Skull
 						["description"] = "Behind the orphanage in Cathedral Square.  It's on the ground next to some crates, is very small, and doesn't have the typical interactable sparkle.",
 						["coord"] = { 58.9, 52.9, HORRIFIC_STORMWIND },
-						["g"] = { i(174921) },	-- Void-Touched Skull (TOY!)
+						["g"] = {
+							i(174921, {	-- Void-Touched Skull (TOY!)
+								i(174922),	-- Void-Touched Skull
+							}),
+						},
 					}),
 					n(CORRUPTED_AREA, {
 						n(156577, {	-- Therum Deepforge

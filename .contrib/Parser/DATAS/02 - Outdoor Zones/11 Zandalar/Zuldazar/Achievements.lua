@@ -12,7 +12,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			ach(12944, {	-- Adventurer of Zuldazar
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			explorationAch(12559),	-- Explore Zuldazar
+			ach(12559),	-- Explore Zuldazar
 			ach(13542, {	-- How to Train your Direhorn
 				["races"] = HORDE_ONLY,
 				["g"] = {

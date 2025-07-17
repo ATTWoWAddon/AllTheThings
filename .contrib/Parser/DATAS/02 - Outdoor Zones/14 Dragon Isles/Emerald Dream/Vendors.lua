@@ -120,22 +120,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			})),
 			n(211328, {	-- Vaskarn <Dreaming Crest Exchange>
 				["coord"] = { 49.8, 62.9, EMERALD_DREAM },
-				-- #if BEFORE 10.2.6.54358
 				["g"] = {
 					-- Trade Up
 					i(210756, {	-- Gleaming Satchel of Drake's Dreaming Crests
+						["timeline"] = { REMOVED_10_2_6_SEASON_FOUR },
 						["cost"] = {{ "c", ASPECTS_DREAMING_CREST, 90 }},
 						["g"] = {
 							currency(DRAKES_DREAMING_CREST),
 						},
 					}),
 					i(210762, {	-- Shimmering Clutch of Wyrm's Dreaming Crests
+						["timeline"] = { REMOVED_10_2_6_SEASON_FOUR },
 						["cost"] = {{ "c", ASPECTS_DREAMING_CREST, 50 }},
 						["g"] = {
 							currency(WYRMS_DREAMING_CREST),
 						},
 					}),
 					i(210768, {	-- Viridescent Bouquet of Aspect's Dreaming Crests
+						["timeline"] = { REMOVED_10_2_6_SEASON_FOUR },
 						["cost"] = {{ "c", ASPECTS_DREAMING_CREST, 30 }},
 						["g"] = {
 							currency(ASPECTS_DREAMING_CREST),
@@ -143,25 +145,27 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					}),
 					-- Trade Down
 					i(210923, {	-- Clutch of Wyrm's Dreaming Crests
+						["timeline"] = { REMOVED_10_2_6_SEASON_FOUR },
 						["cost"] = {{ "c", ASPECTS_DREAMING_CREST, 15 }},
 						["g"] = {
 							currency(WYRMS_DREAMING_CREST),
 						},
 					}),
 					i(210917, {	-- Pouch of Whelpling's Dreaming Crests
+						["timeline"] = { REMOVED_10_2_6_SEASON_FOUR },
 						["cost"] = {{ "c", DRAKES_DREAMING_CREST, 15 }},
 						["g"] = {
 							currency(WHELPLINGS_DREAMING_CREST),
 						},
 					}),
 					i(210770, {	-- Satchel of Drake's Dreaming Crests
+						["timeline"] = { REMOVED_10_2_6_SEASON_FOUR },
 						["cost"] = {{ "c", WYRMS_DREAMING_CREST, 15 }},
 						["g"] = {
 							currency(DRAKES_DREAMING_CREST),
 						},
 					}),
 				},
-				-- #endif
 			}),
 		}),
 	}),

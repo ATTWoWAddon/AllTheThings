@@ -8,8 +8,8 @@ local _, app = ...;
 -- Encapsulates the functionality concerning consistent and complex operations on Lua Tables
 
 -- Global locals
-local ipairs, pairs, tinsert, select, table_concat
-	= ipairs, pairs, tinsert, select, table.concat;
+local ipairs, pairs, select, table_concat
+	= ipairs, pairs, select, table.concat;
 
 -- App locals
 
@@ -47,6 +47,11 @@ app.indexOf = function(arr, value)
 	for i=1,count,1 do
 		if arr[i] == value then return i; end
 	end
+end
+-- Simply wipes the array portion of a table
+-- NOTE: compared to base wipe() this is giga-fast
+app.wipearray = function(t)
+	for i=1,#t do t[i] = nil end
 end
 -- Performs table.concat(tbl, sep, i, j) on the given table, but uses the specified field of table values if provided,
 -- with a default fallback value if the field does not exist on the table entry

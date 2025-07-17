@@ -157,33 +157,24 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 		ach(126, {	-- Journeyman Fisherman
 			-- #if NOT ANYCLASSIC
 			["timeline"] = { ADDED_3_0_2 },
-			-- #else
-			["spellID"] = 7731,	-- Fishing (Journeyman)
 			-- #endif
-			["rank"] = 2,
 		}),
 		ach(127, {	-- Expert Fisherman
 			-- #if NOT ANYCLASSIC
 			["timeline"] = { ADDED_3_0_2 },
-			-- #else
-			["spellID"] = 7732,	-- Fishing (Expert)
 			-- #endif
-			["rank"] = 3,
 		}),
 		ach(128, {	-- Artisan Fisherman
 			-- #if NOT ANYCLASSIC
 			["timeline"] = { ADDED_3_0_2 },
-			-- #else
-			["spellID"] = 18248,	-- Fishing (Artisan)
 			-- #endif
-			["rank"] = 4,
 		}),
 		ach(150, {	-- The Fishing Diplomat
 			["timeline"] = { ADDED_3_0_2 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
 	}),
-	expansion(EXPANSION.TBC, {
+	applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, {
 		["timeline"] = {
 			-- #if NOT ANYCLASSIC
 			ADDED_3_0_2,
@@ -192,51 +183,17 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			-- #endif
 		},
 		["groups"] = {
-			applyclassicphase(TBC_PHASE_ONE, ach(129, {	-- Master Fisherman / Outland Fisherman
-				-- #if ANYCLASSIC
-				["spellID"] = 33095,	-- Fishing (Master)
-				-- #endif
-				["rank"] = 5,
-			})),
+			ach(129),	-- Master Fisherman / Outland Fisherman
 			ach(1225, {	-- Outland Angler
 				["maps"] = { NAGRAND, TEROKKAR_FOREST, ZANGARMARSH },
 				["timeline"] = { ADDED_3_0_2 },
-				-- #if ANYCLASSIC
-				["sym"] = {{ "achievement_criteria" }},
-				-- #else
-				["g"] = {
-					crit(3623),	-- Brackish Mixed School
-					crit(3624),	-- Bluefish School
-					crit(3625),	-- Mudfish School
-					crit(3626),	-- School of Darter
-					crit(3627),	-- Highland Mixed School
-					crit(3628),	-- Sporefish School
-				},
-				-- #endif
 			}),
 		},
-	}),
+	})),
 	expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 } }, {
-		ach(130, {	-- Grand Master Fisherman
-			-- #if ANYCLASSIC
-			["spellID"] = 51294,	-- Fishing (Grand Master)
-			-- #endif
-			["rank"] = 6,
-		}),
+		ach(130),	-- Grand Master Fisherman
 		ach(1517, {	-- Northrend Angler
 			["maps"] = { BOREAN_TUNDRA, DRAGONBLIGHT, HOWLING_FJORD, GRIZZLY_HILLS, CRYSTALSONG_FOREST, SHOLAZAR_BASIN },
-			["g"] = {
-				crit(5278),	-- Borean Man O' War School
-				crit(5279),	-- Deep Sea Monsterbelly School
-				crit(5280),	-- Dragonfin Angelfish School
-				crit(5281),	-- Fangtooth Herring School
-				crit(5282),	-- Glacial Salmon School
-				crit(5283),	-- Glassfin Minnow School
-				crit(5284),	-- Imperial Manta Ray School
-				crit(5285),	-- Moonglow Cuttlefish School
-				crit(5286),	-- Musselback Sculpin School
-				crit(5287),	-- Nettlefish School
-			}
 		}),
 	}))),
 	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
@@ -257,17 +214,17 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				-- #endif
 			}},
 		}),
+		-- #if BEFORE 5.0.4
 		ach(5852, {	-- Gone Fishin' (H)
 			["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
 			["races"] = HORDE_ONLY,
-			-- #if BEFORE 5.0.4
 			["sym"] = {{"meta_achievement",
 				5850,	-- Fish or Cut Bait: Undercity
 				5849,	-- Fish or Cut Bait: Thunder Bluff
 				5477,	-- Fish or Cut Bait: Orgrimmar
 			}},
-			-- #endif
 		}),
+		-- #endif
 	})),
 	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 		ach(6839),	-- Zen Master Fisherman
@@ -377,7 +334,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			ach(11725, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Fisherfriend of the Isles
 				["description"] = "The Fishing Masters are on a daily rotation, so only one is up at a time.  The order is:\n\n1. Sha'leth\n2. Impus\n3. Ilyssia of the Waters\n4. Keeper Raynae\n5. Akule Riverhorn\n6. Corbyn\n\nMake sure you're close enough to the Fishing Master to get the |cFFFFD700Something's Fishy|r buff, or you won't be able to fish up the items (the buff may not show up until you dismount).\n\nThe quickest way to reach Best Friend is to fish in a group.\n",
 				["g"] = {
-					i(152583),	-- Underlight Emerald
+					i(152583),	-- Underlight Emerald (CI!)
 					crit(36343, {	-- Ilyssia of the Waters
 						["_npcs"] = { 120266 },
 					}),

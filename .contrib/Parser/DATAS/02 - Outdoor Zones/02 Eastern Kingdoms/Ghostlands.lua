@@ -17,11 +17,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		["lvl"] = lvlsquish(10, 10, 1),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(858),	-- Explore Ghostlands
+				ach(858),	-- Explore Ghostlands
 				ach(4908, {	-- Ghostlands Quests
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					-- #if ANYCLASSIC
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
+					-- #else
 					["sourceQuests"] = {
 						-- Citizens of Tranquillien
 						9315,	-- Anok'suten (verify)
@@ -1182,6 +1184,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["groups"] = {
 						objective(1, {	-- 0/6 Underlight Ore
 							["provider"] = { "i", 22634 },	-- Underlight Ore
+							-- Danny Donkey: Copper Vein (o:181248) and Tin Vein (o:181249) is also a provider of Underlight Ore.
 							["crs"] = {
 								16334,	-- Blackpaw Gnoll
 								16335,	-- Blackpaw Scavenger
@@ -1323,6 +1326,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
+				o(19017),	-- Giant Clam
 				o(184793, {	-- Primitive Chest
 					["coords"] = {
 						{ 81.5, 36.6, GHOSTLANDS },
@@ -1395,6 +1399,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 			}),
 			n(ZONE_DROPS, {
+				i(27669, {	-- Bat Flesh
+					["coords"] = {
+						{ 68.1, 42.5, GHOSTLANDS },	-- Farstrider Enclave, south of.
+						{ 33.8, 64.6, GHOSTLANDS },	-- Deatholme Gate, east of
+						{ 40.3, 71.1, GHOSTLANDS },	-- Deatholme Gate, west of
+					},
+					["crs"] = {
+						16355,	-- Lesser Scourgebat
+						16354,	-- Vampiric Mistbat
+					},
+					["description"] = "Only drops from given bats in Ghostlands.",
+				}),
 				i(22641, {	-- Rotting Heart
 					["crs"] = {
 						16301,	-- Risen Hungerer
@@ -1431,7 +1447,7 @@ for i,o in ipairs({
 
 -- Add the recipes to Rathis' loot table, these were available long before TBC.
 for i,o in ipairs({
-	i(5771, {	-- Pattern: Red Linen Bag
+	i(5771, {	-- Pattern: Red Linen Bag (RECIPE!)
 		["isLimited"] = true,
 	}),
 }) do table.insert(RATHIS_TOMBER_GROUPS, o); end

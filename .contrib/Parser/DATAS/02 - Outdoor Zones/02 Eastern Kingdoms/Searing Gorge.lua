@@ -7,27 +7,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["icon"] = 236815,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(774),	-- Explore Searing Gorge
+				ach(774),	-- Explore Searing Gorge
 				ach(4910, {	-- Searing Gorge Quests
 					["timeline"] = { ADDED_4_0_1 },
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(38257, {	-- Thorium Advance
-							["sourceQuest"] = 27964,	-- Dig-Boss Dinwhisker
-						}),
-						crit(38264, {	-- The Seat of the Brotherhood 1/2
-							["sourceQuest"] = 27979,	-- Dark Ministry
-						}),
-						crit(38261, {	-- The Seat of the Brotherhood 2/2
-							["sourceQuest"] = 28099,	-- Rasha'krak
-						}),
-						crit(38266, {	-- In the Hall of the Mountain-Lord
-							["sourceQuest"] = 28035,	-- The Mountain-Lord's Support
-						}),
-						crit(38267, {	-- Into the Gorge
-							["sourceQuest"] = 28064,	-- Welcome to the Brotherhood
-						}),
-					},
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
 					-- #else
 					["sourceQuests"] = {
 						27964,	-- Dig-Boss Dinwhisker
@@ -306,6 +290,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 3305,	-- Grisha <Wind Rider Master>
 					["coord"] = { 34.8, 30.6, SEARING_GORGE },
 					["races"] = HORDE_ONLY,
+				}),
+			}),
+			petbattles({
+				n(66515, {	-- Kortas Darkhammer <Master Pet Tamer>
+					["coord"] = { 35.4, 27.8, SEARING_GORGE },
+					["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nKortas' pets are level 15 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Dragonkin - see above.\n3. Dragonkin - see above.",
+					["timeline"] = { ADDED_5_0_4 },
+					["petBattleLvl"] = 15,
+					["groups"] = {
+						q(31912, {	-- Kortas Darkhammer
+							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
 				}),
 			}),
 			n(PROFESSIONS, {
@@ -1858,7 +1858,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(TREASURES, {
-				o(207496, {	-- Dark Iron Treasure Chest
+				o(207500, {	-- Dark Iron Treasure Chest
 					["timeline"] = { ADDED_4_0_3 },
 					["modelScale"] = 1.5,
 					["coords"] = {
@@ -1908,24 +1908,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(13112),	-- Winged Helm
 						i(13051),	-- Witchfury
 					},
-				}),
-				o(207500, {	-- Dark Iron Treasure Chest
-					["coords"] = {	-- As opposed to 207496, this one spawns exclusively in Searing Gorge
-						{ 73.6, 82.2, SEARING_GORGE },
-						{ 63.6, 60.5, SEARING_GORGE },
-						{ 49.0, 55.5, SEARING_GORGE },
-						{ 49.4, 39.5, SEARING_GORGE },
-						{ 44.0, 33.5, SEARING_GORGE },
-						{ 37.9, 37.4, SEARING_GORGE },
-						{ 40.4, 50.5, SEARING_GORGE },
-						{ 38.9, 66.3, SEARING_GORGE },
-						{ 36.9, 60.0, SEARING_GORGE },
-						{ 33.2, 54.0, SEARING_GORGE },
-						{ 17.8, 38.3, SEARING_GORGE },
-						{ 14.5, 37.0, SEARING_GORGE },
-					},
-					["timeline"] = { ADDED_4_0_3 },
-					["sym"] = {{ "select", "objectID", 207496 }, {"pop"}},
 				}),
 			}),
 			-- #if AFTER 7.1.5.23360

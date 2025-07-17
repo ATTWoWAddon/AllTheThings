@@ -66,7 +66,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(16071, {	-- Dragon Glyphs: Zelthrak Outpost
 				["coord"] = { 52.9, 49.0, THE_AZURE_SPAN },
 			}),
-			explorationAch(16460),	-- Explore the Azure Span
+			ach(16460),		-- Explore the Azure Span
 			ach(16580, {	-- Lend a Helping Span
 				["sym"] = {{ "achievement_criteria" }},
 			}),

@@ -118,6 +118,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["qg"] = 57777,	-- Wrathion <The Black Prince>
 						["description"] = "This quest requires you to turn in 60 unopened Elementium Gem Clusters.",
 						["sourceQuest"] = 30113,	-- Victory in the Depths
+						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
 						["cost"] = {
 							{ "i", 77952, 60 },	-- Elementium Gem Cluster
 						},
@@ -276,7 +277,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			-----------------------------------------------------------------------------------------------------------------------------
 			-- CRIEVE TODO: After I add the vendor data for Protocol Twilight, this section can likely be excluded for Cataclysm Classic.
 			-----------------------------------------------------------------------------------------------------------------------------
-			d(DIFFICULTY.RAID.FINDER, {
+			d(DIFFICULTY.LEGACY_RAID.FINDER, {
 				-- #if AFTER 6.0.1.18322
 				["crs"] = { 80675 },	-- Auridormi <Raid Finder Guardian>
 				["coord"] = { 63.0, 27.6, CAVERNS_OF_TIME },
@@ -286,7 +287,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				["timeline"] = { CREATED_4_4_2 },
 				-- #endif
 				["ignoreBonus"] = true,
-				["groups"] = 
+				["groups"] =
 				-- #if ANYCLASSIC
 				bubbleDown({ ["timeline"] = { CREATED_4_4_2 }, },
 				-- #endif
@@ -481,14 +482,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(72010),	-- Pattern: Bladeshadow Wristguards (RECIPE!)
 						i(72008),	-- Pattern: Bracers of Flowing Serenity (RECIPE!)
 						i(72011),	-- Pattern: Bracers of the Hunter-Killer (RECIPE!)
-						i(72004),	-- Pattern: Bracers of Unconquered Power
+						i(72004),	-- Pattern: Bracers of Unconquered Power (RECIPE!)
 						i(72005),	-- Pattern: Deathscale Leggings (RECIPE!)
-						i(72003),	-- Pattern: Dreamwraps of the Light
-						i(72002),	-- Pattern: Lavaquake Legwraps
+						i(72003),	-- Pattern: Dreamwraps of the Light (RECIPE!)
+						i(72002),	-- Pattern: Lavaquake Legwraps (RECIPE!)
 						i(71999),	-- Pattern: Leggings of Nature's Champion (RECIPE!)
 						i(72007),	-- Pattern: Rended Earth Leggings (RECIPE!)
 						i(72009),	-- Pattern: Thundering Deathscale Wristguards (RECIPE!)
-						i(72000),	-- Pattern: World Mender's Pants
+						i(72000),	-- Pattern: World Mender's Pants (RECIPE!)
 						i(72015),	-- Plans: Bracers of Destructive Strength (RECIPE!)
 						i(72013),	-- Plans: Foundations of Courage (RECIPE!)
 						i(72001),	-- Plans: Pyrium Legplates of Purified Evil (RECIPE!)
@@ -640,10 +641,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(78884),	-- Girdle of Fungal Dreams
 						i(78887),	-- Girdle of Soulful Mending
 						i(78882),	-- Nightblind Cinch
-						i(72004),	-- Pattern: Bracers of Unconquered Power
-						i(72003),	-- Pattern: Dreamwraps of the Light
-						i(72002),	-- Pattern: Lavaquake Legwraps
-						i(72000),	-- Pattern: World Mender's Pants
+						i(72004),	-- Pattern: Bracers of Unconquered Power (RECIPE!)
+						i(72003),	-- Pattern: Dreamwraps of the Light (RECIPE!)
+						i(72002),	-- Pattern: Lavaquake Legwraps (RECIPE!)
+						i(72000),	-- Pattern: World Mender's Pants (RECIPE!)
 						i(77192),	-- Ruinblaster Shotgun
 						i(78879),	-- Sash of Relentless Truth
 						i(78878),	-- Spine of the Thousand Cuts

@@ -11,7 +11,7 @@ DF_RARE_ROTATION = createHeader({
 		en = "DF Rare Rotation",
 		fr = "Rotation Rare de DF",
 		ru = "Редкие DF по расписанию",
-		cn = "每30分钟稀有",
+		cn = "巨龙时代稀有轮换",
 	},
 });
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {

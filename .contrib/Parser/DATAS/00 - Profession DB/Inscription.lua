@@ -39,7 +39,7 @@ i(0, 48121);	-- Glyph of Entangling Roots
 i(0, 57119);	-- Glyph of Evasion
 i(0, 57120);	-- Glyph of Eviscerate / Glyph of Debilitation[MOP-5.4.0] / Glyph of Recovery[5.4.0+]
 i(0, 56974);	-- Glyph of Evocation
-i(0, 57156);	-- Glyph of Execution
+i(0, 57156);	-- Glyph of Execution / Glyph of Bloodthirst [CATA+]
 i(0, 57025);	-- Glyph of Exorcism / Glyph of Blinding Light[MOP+]
 i(0, 57121);	-- Glyph of Expose Armor
 i(0, 57262);	-- Glyph of Fear
@@ -53,11 +53,11 @@ i(0, 57216);	-- Glyph of Frost Strike / Glyph of Shifting Presences[MOP+]
 i(0, 57123);	-- Glyph of Garrote
 i(0, 57125);	-- Glyph of Gouge
 i(0, 57027);	-- Glyph of Hammer of Justice / Glyph of Holy Wrath[MOP+]
-i(0, 57157);	-- Glyph of Hamstring
+i(0, 57157);	-- Glyph of Hamstring / Glyph of Piercing Howl [CATA] / Glyph of Rude Interruption [MOP+]
 i(0, 56945);	-- Glyph of Healing Touch
 i(0, 57265);	-- Glyph of Health Funnel
 i(0, 57266);	-- Glyph of Healthstone
-i(0, 57158);	-- Glyph of Heroic Strike
+i(0, 57158);	-- Glyph of Heroic Strike / Glyph of Heroic Throw [CATA] / Glyph of Gag Order [MOP+]
 i(0, 57029);	-- Glyph of Holy Light / Glyph of Divine Favor[CATA] / Glyph of Illumination[MOP]
 i(0, 57004);	-- Glyph of Hunter's Mark / Glyph of Misdirection[CATA+]
 i(0, 56978);	-- Glyph of Ice Armor / Glyph of Pyroblast[CATA] / Glyph of Momentum[MOP+]
@@ -70,7 +70,7 @@ i(0, 57030);	-- Glyph of Judgement / Glyph of Double Jeopardy[MOP+]
 i(0, 57244);	-- Glyph of Lesser Healing Wave / Glyph of Totemic Recall[CATA+]
 i(0, 57245);	-- Glyph of Lightning Bolt / Glyph of Telluric Currents[MOP+]
 i(0, 57246);	-- Glyph of Lightning Shield / Glyph of the Lakestrider[MOP+]
-i(0, 56985);	-- Glyph of Mana Gem
+i(0, 56985);	-- Glyph of Mana Gem (Deleted with Cata - re-added in MoP using Glyph of Mage Armor spell ID)
 i(0, 56961);	-- Glyph of Maul
 i(0, 57200);	-- Glyph of Mind Flay / Glyph of Dispel Magic[MOP+]
 i(0, 56951);	-- Glyph of Moonfire / Glyph of Savagery[MOP+]
@@ -79,12 +79,12 @@ i(0, 57161);	-- Glyph of Overpower / Glyph of Die by the Sword[5.2.0+]
 i(0, 57162);	-- Glyph of Rapid Charge / Glyph of Enraged Speed[MOP+]
 i(0, 56953);	-- Glyph of Rebirth
 i(0, 56955);	-- Glyph of Rejuvenation
-i(0, 57163);	-- Glyph of Rending
+i(0, 57163);	-- Glyph of Rending / Glyph of Slam [CATA] / Glyph of Hamstring [MOP+]
 i(0, 57165);	-- Glyph of Revenge / Glyph of Hold the Line[MOP+]
 i(0, 56956);	-- Glyph of Rip / Glyph of Prowl[MOP+]
 i(0, 57129);	-- Glyph of Sap / Glyph of Hemorrhaging Veins[5.4.0+]
 i(0, 56982);	-- Glyph of Scorch
-i(0, 57270);	-- Glyph of Searing Pain
+i(0, 57270);	-- Glyph of Searing Pain / Glyph of Soul Swap [CATA] / Glyph of Havoc [MOP+]
 i(0, 57009);	-- Glyph of Serpent Sting / Glyph of Tame Beast[MOP+]
 i(0, 57271);	-- Glyph of Shadow Bolt
 i(0, 57272);	-- Glyph of Shadowburn
@@ -157,15 +157,15 @@ i(0, 58332);	-- Glyph of Water Shield / Glyph of the Arctic Wolf[CATA] / Glyph o
 i(0, 58303);	-- Glyph of Arcane Intellect / Glyph of the Porcupine[MOP+]
 i(0, 58342);	-- Glyph of Battle / Glyph of Mystic Shout[MOP+]
 i(0, 58314);	-- Glyph of Blessing of Might / Glyph of the Mounted King[MOP+]
-i(0, 58312);	-- Glyph of Blessing of Wisdom / Glyph of Insight[CATA] /Glyph of Winged Vengeance[MOP+]
-i(0, 58343);	-- Glyph of Bloodrage
+i(0, 58312);	-- Glyph of Blessing of Wisdom / Glyph of Insight [CATA] /Glyph of Winged Vengeance [MOP+]
+i(0, 58343);	-- Glyph of Bloodrage / Glyph of Berserker Rage [CATA] / Glyph of Bloodcurdling Shout [MOP+]
 i(0, 58323);	-- Glyph of Blurred Speed
-i(0, 58344);	-- Glyph of Charge
+i(0, 58344);	-- Glyph of Charge / Glyph of Long Charge [CATA+]
 i(0, 58337);	-- Glyph of Drain Soul / Glyph of Soul Consumption[MOP+]
 i(0, 58306);	-- Glyph of Frost Armor / Glyph of Conjuring[CATA] / Glyph of Conjure Familiar[MOP+]
 i(0, 58313);	-- Glyph of Lay on Hands / Glyph of Flash of Light[MOP+]
 i(0, 58301);	-- Glyph of Mend Pet / Glyph of Lesser Proportion[4.1.0+]
-i(0, 58345);	-- Glyph of Mocking Blow / REMOVED[CATA] / Glyph of Gushing Wound[MOP+]
+i(0, 58345);	-- Glyph of Mocking Blow / Glyph of Demoralizing Shout [CATA] / Glyph of Gushing Wound [MOP+]
 i(0, 58326);	-- Glyph of Pick Pocket
 i(0, 58300);	-- Glyph of Possessed Strength
 i(0, 58299);	-- Glyph of Revive Pet
@@ -395,7 +395,7 @@ i(0, 57035);	--
 i(0, 57028);	--
 i(0, 57153);	--
 i(0, 56988);	--
-i(0, 56984);	--
+i(0, 56984);	-- Glyph of Mage Armor / Glyph of Mana Gem [MOP+]
 i(0, 57227);	--
 i(0, 64276);	--
 i(0, 64268);	--
@@ -439,7 +439,7 @@ i(0, 59339);	--
 i(0, 57003);	--
 i(0, 57223);	--
 i(0, 59500);	--
-i(0, 57124);	--
+i(0, 57124);	-- Glyph of Ghostly Strike / Glyph of Revealing Strike [CATA] / Glyph of Detection [MOP+]
 i(0, 57190);	--
 i(0, 64283);	--
 i(0, 57192);	--
@@ -1689,5 +1689,10 @@ i(234230, 1213512);	-- Glyph of the Twilight Pistol Shot
 ------------------
 -- PATCH 11.1.0 --
 ------------------
-i(233022, 471132);	-- Contract: The Cartels of Undermine
-i(232535, 472951);	-- Vantus Rune: Undermine
+i(232535, 471132);	-- Contract: The Cartels of Undermine
+i(233022, 472951);	-- Vantus Rune: Undermine
+
+------------------
+-- PATCH 11.1.7 --
+------------------
+i(243052, 1234336);	-- Technique: Glyph of the Strix

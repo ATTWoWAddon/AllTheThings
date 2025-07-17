@@ -186,15 +186,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					applyclassicphase(SOD_PHASE_SEVEN, i(235139, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Idol of Sidereal Wrath
 					applyclassicphase(SOD_PHASE_SEVEN, i(235140, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Idol of Feline Ferocity
 					applyclassicphase(SOD_PHASE_SEVEN, i(235141, { ["timeline"] = { ADDED_1_15_6 }, })), -- Formula: Idol of Ursin Power
+					applyclassicphase(SOD_PHASE_SEVEN, i(234483, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Dreamscale Bracers (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234486, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Dreamscale Mitts (RECIPE!)
 					applyclassicphase(SOD_PHASE_SEVEN, i(234235, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Glowing Chitin Armor Kit
 					applyclassicphase(SOD_PHASE_SEVEN, i(234236, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Sharpened Chitin Armor Kit
 					applyclassicphase(SOD_PHASE_SEVEN, i(234237, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Razorbramble Cowl
 					applyclassicphase(SOD_PHASE_SEVEN, i(234239, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Razorbramble Leathers
 					applyclassicphase(SOD_PHASE_SEVEN, i(234238, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Razorbramble Shoulderpads
-					applyclassicphase(SOD_PHASE_SEVEN, i(234244, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Qiraji Silk Scarf
-					applyclassicphase(SOD_PHASE_SEVEN, i(234249, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Qiraji Silk Cape
-					applyclassicphase(SOD_PHASE_SEVEN, i(234250, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Qiraji Silk Cloak
-					applyclassicphase(SOD_PHASE_SEVEN, i(234251, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Qiraji Silk Drape
+					applyclassicphase(SOD_PHASE_SEVEN, i(234249, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Qiraji Silk Cape (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234250, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Qiraji Silk Cloak (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234251, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Qiraji Silk Drape (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234244, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Qiraji Silk Scarf (RECIPE!)
 					applyclassicphase(SOD_PHASE_SEVEN, i(234240, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Vampiric Cowl
 					applyclassicphase(SOD_PHASE_SEVEN, i(234241, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Vampiric Shawl
 					applyclassicphase(SOD_PHASE_SEVEN, i(234242, { ["timeline"] = { ADDED_1_15_6 }, })), -- Pattern: Vampiric Robe
@@ -205,10 +207,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					applyclassicphase(SOD_PHASE_SEVEN, i(234228, { ["timeline"] = { ADDED_1_15_6 }, })), -- Plans: Obsidian Defender
 					applyclassicphase(SOD_PHASE_SEVEN, i(234227, { ["timeline"] = { ADDED_1_15_6 }, })), -- Plans: Obsidian Sageblade
 					applyclassicphase(SOD_PHASE_SEVEN, i(234429, { ["timeline"] = { ADDED_1_15_6 }, })), -- Plans: Obsidian Heartseeker
-					applyclassicphase(SOD_PHASE_SEVEN, i(234252, { ["timeline"] = { ADDED_1_15_6 }, })), -- Recipe: Flask of Unyielding Sorrow
-					applyclassicphase(SOD_PHASE_SEVEN, i(234253, { ["timeline"] = { ADDED_1_15_6 }, })), -- Recipe: Flask of Ancient Knowledge
-					applyclassicphase(SOD_PHASE_SEVEN, i(234255, { ["timeline"] = { ADDED_1_15_6 }, })), -- Recipe: Flask of the Old Gods
-					applyclassicphase(SOD_PHASE_SEVEN, i(234256, { ["timeline"] = { ADDED_1_15_6 }, })), -- Recipe: Flask of Madness
+					applyclassicphase(SOD_PHASE_SEVEN, i(234253, { ["timeline"] = { ADDED_1_15_6 }, })), -- Recipe: Flask of Ancient Knowledge (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234256, { ["timeline"] = { ADDED_1_15_6 }, })), -- Recipe: Flask of Madness (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234252, { ["timeline"] = { ADDED_1_15_6 }, })), -- Recipe: Flask of Unyielding Sorrow (RECIPE!)
+					applyclassicphase(SOD_PHASE_SEVEN, i(234255, { ["timeline"] = { ADDED_1_15_6 }, })), -- Recipe: Flask of the Old Gods (RECIPE!)
 					applyclassicphase(SOD_PHASE_SEVEN, i(234264, { ["timeline"] = { ADDED_1_15_6 }, })), -- Schematic: G00 DV-1B3 Generator
 					applyclassicphase(SOD_PHASE_SEVEN, i(234265, { ["timeline"] = { ADDED_1_15_6 }, })), -- Schematic: Tuned Force Reactive Disk
 					applyclassicphase(SOD_PHASE_SEVEN, i(234435, { ["timeline"] = { ADDED_1_15_6 }, })), -- Schematic: Obsidian Shotgun
@@ -220,7 +222,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(234159, {	-- Polished Ironwood Crossbow
 					["description"] = "If you get this to drop, @crieve on Discord!",
 				}),
-				
+
 				-- Confirmed Drops:
 				i(234157),	-- Circlet of Restless Dreams
 				i(234158),	-- Dragonheart Necklace

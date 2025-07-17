@@ -1,6 +1,6 @@
 local _, app = ...;
 if app.IsClassic then return; end	-- Disable this in Classic
-local L, settings = app.L.SETTINGS_MENU, app.Settings;
+local L, settings = app.L, app.Settings;
 
 -- Settings: Commands Page
 local child = settings:CreateOptionsPage("Commands", L.FEATURES_PAGE)

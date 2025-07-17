@@ -125,7 +125,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				explorationAch(857),	-- Explore Winterspring
+				ach(857),	-- Explore Winterspring
 				-- #if AFTER CATA
 				ach(3356, {	-- Winterspring Frostsaber
 					["provider"] = { "i", 13086 },	-- Reins of the Winterspring Frostsaber
@@ -135,7 +135,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				ach(4940, {	-- Winterspring Quests
 					["timeline"] = { ADDED_4_0_3 },
-					-- #if ANYCLASSIC
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
+					-- #else
 					["sourceQuests"] = {
 						28472,	-- Words of the High Chief
 						28848,	-- Trailing the Spiritspeaker
@@ -225,6 +227,66 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 60.4, 36.4, WINTERSPRING },
 					-- #endif
 					["races"] = HORDE_ONLY,
+				}),
+			}),
+			petbattles({
+				n(66466, {	-- Stone Cold Trixxy <Grand Master Pet Tamer>
+					["coord"] = { 65.6, 64.6, WINTERSPRING },
+					["description"] = "Trixxy's pets are level 19 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Blighted Squarrel and Turkey.",
+					["timeline"] = { ADDED_5_0_4 },
+					["petBattleLvl"] = 19,
+					["groups"] = {
+						q(31909, {	-- Grand Master Trixxy
+							["sourceAchievement"] = 6602,	-- Taming Kalimdor
+							["timeline"] = { ADDED_5_0_4 },
+							["isDaily"] = true,
+							["groups"] = {
+								i(89125),	-- Sack of Pet Supplies
+							},
+						}),
+					},
+				}),
+				q(31897, {	-- Grand Master Trixxy
+					["qg"] = 66466,	-- Grand Master Trixxy
+					["sourceQuests"] = {
+						31917,	-- A Tamer's Homecoming (A)
+						31918,	-- A Tamer's Homecoming (H)
+					},
+					["coord"] = { 65.6, 64.5, WINTERSPRING },
+					["timeline"] = { ADDED_5_0_4 },
+					["groups"] = {
+						objective(1, {	-- Defeat Grand Master Trixxy
+							["provider"] = { "n", 66466 },	-- Grand Master Trixxy
+							["coord"] = { 65.6, 64.5, WINTERSPRING },
+						}),
+						i(89125),	-- Sack of Pet Supplies
+					},
+				}),
+				q(31975, {	-- The Returning Champion (A)
+					["qg"] = 66466,	-- Stone Cold Trixxy
+					["sourceQuests"] = {
+						31915,	-- Grand Master Lydia Accoste
+						31897,	-- Grand Master Trixxy
+					},
+					["altQuests"] = { 31976 },	-- The Returning Champion (Deadwind Pass)
+					["coord"] = { 65.6, 64.4, WINTERSPRING },
+					["timeline"] = { ADDED_5_0_4 },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				q(31977, {	-- The Returning Champion (H)
+					["qg"] = 66466,	-- Stone Cold Trixxy
+					["sourceQuests"] = {
+						31915,	-- Grand Master Lydia Accoste
+						31897,	-- Grand Master Trixxy
+					},
+					["altQuests"] = { 31980 },	-- The Returning Champion (Deadwind Pass)
+					["coord"] = { 65.6, 64.4, WINTERSPRING },
+					["timeline"] = { ADDED_5_0_4 },
+					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 			}),
 			n(QUESTS, {
@@ -463,6 +525,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(142357, {	-- Plans: Dawn's Edge (RECIPE!)
 							["timeline"] = { ADDED_7_1_5 },
 						}),
+						i(142351),	-- Blackrock Ruby (QI!)
+						i(142352),	-- Core of Bael'Gar (QI!)
+						i(142353),	-- Core of Roccor (QI!)
+						i(142354),	-- Essence of Incendius (QI!)
+						i(142355),	-- Essence of Magmus (QI!)
 					},
 				}),
 				q(28618, {	-- Boulder Delivery
@@ -1747,7 +1814,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/15 Winterfall Furbolg slain
 							["providers"] = {
-								{ "n", 48586},	-- Winterfall Kill Credit
 								{ "n", 7440},	-- Winterfall Den Watcher
 								{ "n", 7441},	-- Winterfall Totemic
 								{ "n", 7442},	-- Winterfall Pathfinder
@@ -2295,7 +2361,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #if BEFORE 4.0.3
-						i(7091),	-- Pattern: Truefaith Gloves
+						i(7091),	-- Pattern: Truefaith Gloves (RECIPE!)
 						-- #endif
 						i(18679, {	-- Frigid Ring
 							["timeline"] = { REMOVED_4_0_3 },
@@ -2351,13 +2417,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #if BEFORE 3.1.0
 			prof(SKINNING, {
-				i(15423, {	-- Chimera Leather
-					["timeline"] = { REMOVED_3_1_0 },
-					["crs"] = {
-						10807,	-- Brumeran
-						7449,	-- Chillwind Ravager
-					},
-				}),
 				i(15422, {	-- Frostsaber Leather
 					["timeline"] = { REMOVED_3_1_0 },
 					["crs"] = {
@@ -2457,11 +2516,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(15740, {	-- Pattern: Frostsaber Boots (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(14526),	-- Pattern: Mooncloth
-						i(14468, {	-- Pattern: Runecloth Bag
+						i(14526),	-- Pattern: Mooncloth (RECIPE!)
+						i(14468, {	-- Pattern: Runecloth Bag (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(14481, {	-- Pattern: Runecloth Gloves
+						i(14481, {	-- Pattern: Runecloth Gloves (RECIPE!)
 							["timeline"] = { REMOVED_2_0_1 },	-- Moved to Trainers
 							-- #if BEFORE TBC
 							["isLimited"] = true,
@@ -2696,7 +2755,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
-				i(14493, {	-- Pattern: Robe of Winter Night
+				i(14493, {	-- Pattern: Robe of Winter Night (RECIPE!)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 7437,	-- Cobalt Mageweaver
 					-- Wont return, its on timewalking vendor

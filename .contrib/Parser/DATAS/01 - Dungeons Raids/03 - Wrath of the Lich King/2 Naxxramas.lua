@@ -13,9 +13,32 @@ local WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE = [[function(t)
 		t.rwp = 30100;
 	end
 end]];
+ExportDB.OnUpdateDB.DEDICATED_10M = [[~function(t)
+	rawset(t, "collectible", nil);
+	if _.MODE_DEBUG_OR_ACCOUNT then
+		return false;
+	elseif IsInGroup() and GetNumGroupMembers() >= 9 then
+		rawset(t, "collectible", false);
+		return true;
+	end
+end]];
+ExportDB.OnUpdateDB.DEDICATED_25M = [[~function(t)
+	rawset(t, "collectible", nil);
+	if _.MODE_DEBUG_OR_ACCOUNT then
+		return false;
+	elseif IsInGroup() and GetNumGroupMembers() >= 21 then
+		rawset(t, "collectible", false);
+		return true;
+	end
+end]];
 -- #endif
+local CLASSIC_ONLY_DB_FUNC = function(func)
+	-- #IF ANYCLASSIC
+	return func
+	-- #ENDIF
+end
 local DEATHS_BARGAINING_CHIP = 206576;
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 	inst(754, {	-- Naxxramas
 		["mapID"] = NAXXRAMAS,
 		["maps"] = { NAXXRAMAS_LEVEL2, NAXXRAMAS_LEVEL3, NAXXRAMAS_LEVEL4, NAXXRAMAS_LEVEL5, NAXXRAMAS_LEVEL6 },
@@ -242,14 +265,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 			})),
 			n(SPECIAL, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
-				i(206473, {	-- Makeshift Grappling Hook
+				i(206473, {	-- Makeshift Grappling Hook (CI!)
 					["sourceQuests"] = {
 						76263,	-- The Dread Citadel - Naxxramas [Honored]
 						76264,	-- The Dread Citadel - Naxxramas [Revered]
 						76265,	-- The Dread Citadel - Naxxramas [Exalted]
 					},
 					["sourceQuestNumRequired"] = 1,
-					["questID"] = 76307,
 					["cost"] = {
 						{ "i", 206471, 1 },	-- 1x Abomination's Chain
 						{ "i", 206470, 1 },	-- 1x Construct's Hook
@@ -1013,27 +1035,21 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["description"] = "Pages 1 and 2 of Omarion's Notes can be found in the Outer Ring of Naxxramas, inside the slime pool that separates the Construct and Arachnid Quarters, to the north of the instance. It will be at the bottom of the pool.",
 					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
 					["g"] = {
-						i(206450, {	-- Omarion's Notes - Pages 1 & 2
-							["questID"] = 76291,
-						}),
+						i(206450),	-- Omarion's Notes - Pages 1 & 2 (CI!)
 					},
 				}),
 				o(403703, {	-- Lost Page
 					["description"] = "Pages 3 and 4 of Omarion's notes can be found in the first room of the Arachnid Quarter, hidden within the ruined structure by the slime pool.",
 					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
 					["g"] = {
-						i(206451, {	-- Omarion's Notes - Pages 3 & 4
-							["questID"] = 76292,
-						}),
+						i(206451),	-- Omarion's Notes - Pages 3 & 4 (CI!)
 					},
 				}),
 				o(403704, {	-- Lost Page
 					["description"] = "Pages 5 and 6 of Omarion's Notes can be found just before entering Faerlina's room - Instead of taking a left to enter the boss room, take a right. Page is hidden beneath some spider eggs.",
 					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
 					["g"] = {
-						i(206452, {	-- Omarion's Notes - Pages 5 & 6
-							["questID"] = 76293,
-						}),
+						i(206452),	-- Omarion's Notes - Pages 5 & 6 (CI!)
 					},
 				}),
 				o(403705, {	-- Lost Page
@@ -1043,9 +1059,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						76290,	-- Omarion's Second Handbook
 					},
 					["g"] = {
-						i(206453, {	-- Omarion's Notes - Pages 7 & 8
-							["questID"] = 76294,
-						}),
+						i(206453),	-- Omarion's Notes - Pages 7 & 8 (CI!)
 					},
 				}),
 				o(403706, {	-- Lost Page
@@ -1055,9 +1069,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						76290,	-- Omarion's Second Handbook
 					},
 					["g"] = {
-						i(206454, {	-- Omarion's Notes - Pages 9 & 10
-							["questID"] = 76295,
-						}),
+						i(206454),	-- Omarion's Notes - Pages 9 & 10 (CI!)
 					},
 				}),
 				o(403707, {	-- Lost Page
@@ -1067,9 +1079,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						76290,	-- Omarion's Second Handbook
 					},
 					["g"] = {
-						i(206455, {	-- Omarion's Notes - Pages 11 & 12
-							["questID"] = 76296,
-						}),
+						i(206455),	-- Omarion's Notes - Pages 11 & 12 (CI!)
 					},
 				}),
 				o(403708, {	-- Lost Page
@@ -1079,9 +1089,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						76290,	-- Omarion's Second Handbook
 					},
 					["g"] = {
-						i(206456, {	-- Omarion's Notes - Pages 13 & 14
-							["questID"] = 76297,
-						}),
+						i(206456),	-- Omarion's Notes - Pages 13 & 14 (CI!)
 					},
 				}),
 				o(403709, {	-- Lost Page
@@ -1091,45 +1099,35 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						76290,	-- Omarion's Second Handbook
 					},
 					["g"] = {
-						i(206457, {	-- Omarion's Notes - Pages 15 & 16
-							["questID"] = 76298,
-						}),
+						i(206457),	-- Omarion's Notes - Pages 15 & 16 (CI!)
 					},
 				}),
 				o(403710, {	-- Lost Page
 					["description"] = "Pages 17 and 18 of Omarion's Notes can be found in the first room of the Plague Quarter, sitting by a meat wagon just to the left of the entrance. The page does blend in well with the wagon so it can be easy to miss.",
 					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
 					["g"] = {
-						i(206458, {	-- Omarion's Notes - Pages 17 & 18
-							["questID"] = 76299,
-						}),
+						i(206458),	-- Omarion's Notes - Pages 17 & 18 (CI!)
 					},
 				}),
 				o(403711, {	-- Lost Page
 					["description"] = "Pages 19 and 20 of Omarion's Notes can be found by the corridor between Noth and Heigan in the Plague Quarter. On the mob gauntlet on the left side, there will be a slime pool covered by a sewer lid, and some mushrooms in the area. The note will be on top of one of the mushrooms.",
 					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
 					["g"] = {
-						i(206459, {	-- Omarion's Notes - Pages 19 & 20
-							["questID"] = 76300,
-						}),
+						i(206459),	-- Omarion's Notes - Pages 19 & 20 (CI!)
 					},
 				}),
 				o(403712, {	-- Lost Page
 					["description"] = "Pages 21 and 22 of Omarion's Notes can be found in Loatheb's room, by a gate to the left of where the boss is standing (when looking from the boss's room entrance).",
 					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
 					["g"] = {
-						i(206460, {	-- Omarion's Notes - Pages 21 & 22
-							["questID"] = 76301,
-						}),
+						i(206460),	-- Omarion's Notes - Pages 21 & 22 (CI!)
 					},
 				}),
 				o(403713, {	-- Lost Page
 					["description"] = "Pages 23 and 24 of Omarion's Notes can be found by the platform overlooking Noth's room. The platform is accessible by reaching it via the Outer Ring.",
 					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
 					["g"] = {
-						i(206461, {	-- Omarion's Notes - Pages 23 & 24
-							["questID"] = 76302,
-						}),
+						i(206461),	-- Omarion's Notes - Pages 23 & 24 (CI!)
 					},
 				}),
 				o(403714, {	-- Lost Page
@@ -1139,18 +1137,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						76290,	-- Omarion's Second Handbook
 					},
 					["g"] = {
-						i(206462, {	-- Omarion's Notes - Pages 25 & 26
-							["questID"] = 76303,
-						}),
+						i(206462),	-- Omarion's Notes - Pages 25 & 26 (CI!)
 					},
 				}),
 				o(403715, {	-- Lost Page
 					["description"] = "Pages 27 and 28 of Omarion's Notes can be found in the Four Horsemen room, by a sewer pipe to the left as you enter the room.",
 					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
 					["g"] = {
-						i(206463, {	-- Omarion's Notes - Pages 27 & 28
-							["questID"] = 76304,
-						}),
+						i(206463),	-- Omarion's Notes - Pages 27 & 28 (CI!)
 					},
 				}),
 				o(403716, {	-- Lost Page
@@ -1160,18 +1154,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						76290,	-- Omarion's Second Handbook
 					},
 					["g"] = {
-						i(206464, {	-- Omarion's Notes - Pages 29 & 30
-							["questID"] = 76305,
-						}),
+						i(206464),	-- Omarion's Notes - Pages 29 & 30 (CI!)
 					},
 				}),
 				o(403717, {	-- Lost Page
 					["description"] = "Pages 31 and 32 of Omarion's Notes can be found in the room after Razuvious with all the enchanted weapons. By the right, next to the corner, by one of the window frames.",
 					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
 					["g"] = {
-						i(206465, {	-- Omarion's Notes - Pages 31 & 32
-							["questID"] = 76306,
-						}),
+						i(206465),	-- Omarion's Notes - Pages 31 & 32 (CI!)
 					},
 				}),
 				o(403962, {	-- Omarion's Second Handbook
@@ -1395,9 +1385,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7146,	-- Anub'Rehkan slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(39140),	-- Knife of Incision
 								i(39146),	-- Collar of Dissolution
@@ -1428,9 +1416,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								-- #endif
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7147,	-- Grand Widow Faerlina slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(206472, {	-- Faerlina's Sewing Kit
 									["sourceQuests"] = {
@@ -1463,9 +1449,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7148,	-- Maexxna slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(93030, {	-- Giant Bone Spider (PET!)
 									["timeline"] = { ADDED_5_1_0 },
@@ -1493,9 +1477,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7153,	-- Noth the Plaguebringer slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(39240),	-- Noth's Curse
 								i(39237),	-- Spaulders of Resumed Battle
@@ -1526,9 +1508,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								-- #endif
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7154,	-- Heigan the Unclean slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(39245),	-- Demise
 								i(39255),	-- Staff of the Plague Beast
@@ -1569,9 +1549,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								-- #endif
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7155,	-- Loatheb slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(93032, {	-- Fungal Abomination (PET!)
 									["timeline"] = { ADDED_5_1_0 },
@@ -1604,9 +1582,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								-- #endif
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7156,	-- Instructor Razuvious slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(39296),	-- Accursed Bow of the Elite
 								i(39311),	-- Scepter of Murmuring Spirits
@@ -1636,9 +1612,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								-- #endif
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7157,	-- Gothik the Harvester slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(39344),	-- Slayer of the Lifeless
 								i(39392),	-- Veiled Amulet of Life
@@ -1688,9 +1662,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7149,	-- Patchwerk slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(39271),	-- Blade of Dormant Memories
 								i(39270),	-- Hatestrike
@@ -1735,9 +1707,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								-- #endif
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7150,	-- Grobbulus slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(39281),	-- Infection Repulser
 								i(39276),	-- The Skull of Ruin
@@ -1784,9 +1754,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								-- #endif
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7151,	-- Gluth slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(93029, {	-- Stitched Pup (PET!)
 									["timeline"] = { ADDED_5_1_0 },
@@ -1946,9 +1914,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7152,	-- Thaddius slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(40619),	-- Leggings of the Lost Conqueror
 								i(40620),	-- Leggings of the Lost Protector
@@ -1970,9 +1936,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								ach(2146),	-- The Hundred Club (10 player)
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 7158,	-- Sapphiron slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(44569, {	-- Key to the Focusing Iris (Item)
 									-- #if ANYCLASSIC
@@ -2007,9 +1971,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 6802,	-- Kel'Thuzad slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_10M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_10M]]),
 								}),
 								i(40616),	-- Helm of the Lost Conqueror
 								i(40617),	-- Helm of the Lost Protector
@@ -2091,9 +2053,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7159,	-- Anub'Rekhan slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(39714),	-- Webbed Death
 								i(39712),	-- Gemmed Wand of the Nerubians
@@ -2130,9 +2090,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7160,	-- Grand Widow Faerlina slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(206472, {	-- Faerlina's Sewing Kit
 									["sourceQuests"] = {
@@ -2183,9 +2141,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7161,	-- Maexxna slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(93030, {	-- Giant Bone Spider (PET!)
 									["timeline"] = { ADDED_5_1_0 },
@@ -2227,9 +2183,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7166,	-- Noth the Plaguebringer slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(40189),	-- Angry Dread
 								i(40192),	-- Accursed Spine
@@ -2271,9 +2225,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7167,	-- Heigan the Unclean slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(40208),	-- Cryptfiend's Bite
 								i(40233),	-- The Undeath Carrier
@@ -2320,9 +2272,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								-- #endif
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7168,	-- Loatheb slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(93032, {	-- Fungal Abomination (PET!)
 									["timeline"] = { ADDED_5_1_0 },
@@ -2353,9 +2303,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7169,	-- Instructor Razuvious slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(40071),	-- Chains of Adoration
 								i(40065),	-- Fool's Trial
@@ -2396,9 +2344,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7170,	-- Gothik the Harvester slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(40336),	-- Life and Death
 								i(40335),	-- Touch of Horror
@@ -2482,9 +2428,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								-- #endif
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7162,	-- Patchwerk slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(40264),	-- Split Greathammer
 								i(40265),	-- Arrowsong
@@ -2525,9 +2469,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7163,	-- Grobbulus slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(40280),	-- Origin of Nightmares
 								i(40281),	-- Twilight Mist
@@ -2581,9 +2523,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7164,	-- Gluth slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(93029, {	-- Stitched Pup (PET!)
 									["timeline"] = { ADDED_5_1_0 },
@@ -2780,9 +2720,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7165,	-- Thaddius slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(40634),	-- Legplates of the Lost Conqueror
 								i(40635),	-- Legplates of the Lost Protector
@@ -2809,9 +2747,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								ach(2147),	-- The Hundred Club (25 player)
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7171,	-- Sapphiron slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(44577),	-- Heroic Key to the Focusing Iris (Item)
 								i(40368),	-- Murder
@@ -2860,9 +2796,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7172,	-- Kel'Thuzad slain
-									-- #if ANYCLASSIC
-									["OnUpdate"] = [[_.CommonAchievementHandlers.DEDICATED_25M_OnUpdate]],
-									-- #endif
+									["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.DEDICATED_25M]]),
 								}),
 								i(40631),	-- Crown of the Lost Conqueror
 								i(40632),	-- Crown of the Lost Protector
@@ -2892,4 +2826,4 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			}),
 		},
 	}),
-})));
+}))));

@@ -210,78 +210,81 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				e(1226, {	-- Orebender Gor'ashan
-					["crs"] = { 76413 },	-- Orebender Gor'ashan
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, BACK},
-						{"sub", "common_wod_dungeon_drop", 23, FEET},
-					},
-					["g"] = {
-						i(118719),	-- Petrified Willow
-						i(109998),	-- Gor'ashan's Lodestone Spike
-					},
-				}),
-				e(1227, {	-- Kyrak
-					["crs"] = { 76021 },	-- Kyrak
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, SHOULDER},
-						{"sub", "common_wod_dungeon_drop", 23, FINGER},
-					},
-					["g"] = {
-						i(118724),	-- Pip's Flenser
-						i(110018),	-- Kyrak's Vileblood Serum
-					},
-				}),
-				n(77081, {	-- The Lanticore
-					["description"] = "This rare spawns to the right of Kyrak, the second boss.",
-					["g"] = {
-						i(117528),	-- Lanticore Spawnling (PET!)
-					},
-				}),
-				e(1228, {	-- Commander Tharbek
-					["crs"] = {
-						79912,	-- Commander Tharbek
-						80098,	-- Ironbarb Skyreaver
-					},
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, CHEST},
-						{"sub", "common_wod_dungeon_drop", 23, HANDS},
-					},
-					["g"] = {
-						i(118726),	-- Tharbek's Brutal Possessor
-						i(118725),	-- Tharbek's Unholy Charge
-						i(110008),	-- Tharbek's Lucky Pebble
-					},
-				}),
-				n(77927, {	-- Son of the Beast
-					i(120340),	-- Son of the Beast's Bloody Paw
-				}),
-				e(1229, {	-- Ragewing the Untamed
-					["crs"] = { 76585 },	-- Ragewing the Untamed
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, NECK},
-						{"sub", "common_wod_dungeon_drop", 23, LEGS},
-					},
-					["g"] = {
-						i(118737),	-- Blackhand Doomcutter
-						i(110003),	-- Ragewing's Firefang
-					},
-				}),
-				e(1234, {	-- Warlord Zaela
-					["crs"] = { 77120 },	-- Warlord Zaela
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, HEAD},
-						{"sub", "common_wod_dungeon_drop", 23, WRIST},
-						{"sub", "common_wod_dungeon_drop", 23, WAIST},
-					},
-					["g"] = {
-						ach(10085),	-- Mythic: Upper Blackrock Spire
-						i(118740),	-- Bleakblade of Shahram
-						i(118738),	-- Felshanker
-						i(118739),	-- Draconian Doomshield
-						i(110013),	-- Emberscale Talisman
-					},
-				}),
+				["ItemAppearanceModifierID"] = 0,
+				["groups"] = {
+					e(1226, {	-- Orebender Gor'ashan
+						["crs"] = { 76413 },	-- Orebender Gor'ashan
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, BACK},
+							{"sub", "common_wod_dungeon_drop", 23, FEET},
+						},
+						["g"] = {
+							i(118719),	-- Petrified Willow
+							i(109998),	-- Gor'ashan's Lodestone Spike
+						},
+					}),
+					e(1227, {	-- Kyrak
+						["crs"] = { 76021 },	-- Kyrak
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, SHOULDER},
+							{"sub", "common_wod_dungeon_drop", 23, FINGER},
+						},
+						["g"] = {
+							i(118724),	-- Pip's Flenser
+							i(110018),	-- Kyrak's Vileblood Serum
+						},
+					}),
+					n(77081, {	-- The Lanticore
+						["description"] = "This rare spawns to the right of Kyrak, the second boss.",
+						["g"] = {
+							i(117528),	-- Lanticore Spawnling (PET!)
+						},
+					}),
+					e(1228, {	-- Commander Tharbek
+						["crs"] = {
+							79912,	-- Commander Tharbek
+							80098,	-- Ironbarb Skyreaver
+						},
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, CHEST},
+							{"sub", "common_wod_dungeon_drop", 23, HANDS},
+						},
+						["g"] = {
+							i(118726),	-- Tharbek's Brutal Possessor
+							i(118725),	-- Tharbek's Unholy Charge
+							i(110008),	-- Tharbek's Lucky Pebble
+						},
+					}),
+					n(77927, {	-- Son of the Beast
+						i(120340),	-- Son of the Beast's Bloody Paw
+					}),
+					e(1229, {	-- Ragewing the Untamed
+						["crs"] = { 76585 },	-- Ragewing the Untamed
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, NECK},
+							{"sub", "common_wod_dungeon_drop", 23, LEGS},
+						},
+						["g"] = {
+							i(118737),	-- Blackhand Doomcutter
+							i(110003),	-- Ragewing's Firefang
+						},
+					}),
+					e(1234, {	-- Warlord Zaela
+						["crs"] = { 77120 },	-- Warlord Zaela
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, HEAD},
+							{"sub", "common_wod_dungeon_drop", 23, WRIST},
+							{"sub", "common_wod_dungeon_drop", 23, WAIST},
+						},
+						["g"] = {
+							ach(10085),	-- Mythic: Upper Blackrock Spire
+							i(118740),	-- Bleakblade of Shahram
+							i(118738),	-- Felshanker
+							i(118739),	-- Draconian Doomshield
+							i(110013),	-- Emberscale Talisman
+						},
+					}),
+				},
 			}),
 		},
 	}),

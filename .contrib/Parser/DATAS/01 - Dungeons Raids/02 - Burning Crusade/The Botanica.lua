@@ -141,11 +141,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(562, {	-- Warp Splinter
 					["creatureID"] = 17977,
 					["groups"] = {
-						ach(659, {	-- The Botanica
-							-- #if BEFORE WRATH
-							["sourceQuest"] = 10704,	-- How to Break Into the Arcatraz
-							-- #endif
-						}),
+						ach(659),	-- The Botanica
 						i(28370),	-- Bangle of Endless Blessings
 						-- #if BEFORE 7.3.5
 						i(28228),	-- Beast Lord Cuirass (7.3.5 - Moved to High Botanist Freywinn)
@@ -270,9 +266,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(562, {	-- Warp Splinter
 						["creatureID"] = 17977,
 						["groups"] = {
-							ach(680, {	-- Heroic: The Botanica
-								["timeline"] = { ADDED_3_0_2 },
-							}),
+							ach(680),	-- Heroic: The Botanica
 							ach(5080, {	-- Heroic: The Botanica Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),

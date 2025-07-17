@@ -3,6 +3,8 @@ YEAR2027 = createHeader({
 	icon = 134282,
 	text = {
 		en = "Year 2027",
+		es = "Año 2027",
+		mx = "Año 2027",
 		cn = "2027年",
 	},
 });

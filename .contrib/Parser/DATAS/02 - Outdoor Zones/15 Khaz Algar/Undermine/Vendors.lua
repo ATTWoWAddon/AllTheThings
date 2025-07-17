@@ -85,6 +85,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					}),
 				},
 			}),
+			n(231066, {	-- Gallagio Caterer
+				["sourceQuest"] = 87297,	-- Cashing the Check
+				["g"] = {
+					i(237259),	-- Kapow Kanapes
+					i(237260),	-- Glass of Daylight Dew
+				},
+			}),
 			n(239166, {	-- Geeves
 				["coord"] = { 29.2, 25.8, UNDERMINE },
 				["g"] = {

@@ -5,10 +5,11 @@
 
 local appName, app = ...
 
-local pairs,ipairs,rawget,tinsert,tonumber,GetTimePreciseSec,tremove,select,setmetatable,getmetatable,type
-	= pairs,ipairs,rawget,tinsert,tonumber,GetTimePreciseSec,tremove,select,setmetatable,getmetatable,type
+local pairs,rawget,tinsert,tonumber,GetTimePreciseSec,tremove,select,setmetatable,getmetatable,type
+	= pairs,rawget,tinsert,tonumber,GetTimePreciseSec,tremove,select,setmetatable,getmetatable,type
 
 local DelayedCallback = app.CallbackHandlers.DelayedCallback
+local Callback = app.CallbackHandlers.Callback
 local Runner = app.CreateRunner("update")
 app.UpdateRunner = Runner
 
@@ -184,9 +185,10 @@ local function UpdateGroup(group, parent)
 	-- Determine if this user can enter the instance or acquire the item and item is equippable/usable
 	-- Things which are determined to be a cost for something else which meets user filters will
 	-- be shown anyway, so don't need to undergo a filtering pass
-	local valid = group.isCost or group.forceShow
+	local isCost = group.isCost
+	local valid = isCost or group.forceShow or group.wasFilled
 	-- if valid then
-		-- app.PrintDebug("Pre-valid group as from cost/upgrade",group.isCost,group.isUpgrade,app:SearchLink(group))
+	-- 	app.PrintDebug("Pre-valid group as from cost/forceShow/wasFilled/upgrade",group.isCost,group.forceShow,group.wasFilled,group.isUpgrade,app:SearchLink(group))
 	-- end
 	-- A group with a source parent means it has a different 'real' heirarchy than in the current window
 	-- so need to verify filtering based on that instead of only itself
@@ -220,7 +222,7 @@ local function UpdateGroup(group, parent)
 		-- if debug then print("UG.prog",progress,total,group.collectible) end
 		group.progress = progress
 		group.total = total
-		group.costTotal = group.isCost and 1 or 0
+		group.costTotal = isCost and 1 or 0
 		group.upgradeTotal = group.isUpgrade and 1 or 0
 
 		-- Check if this is a group
@@ -292,25 +294,33 @@ app.UpdateGroups = UpdateGroups
 local function AdjustParentProgress(group, progChange, totalChange, costChange, upgradeChange)
 	-- rawget, .parent will default to sourceParent in some cases
 	local parent = group and not group.sourceIgnored and rawget(group, "parent")
-	if parent then
-		-- app.PrintDebug("APP:",parent.text)
-		-- app.PrintDebug("CUR:",parent.progress,parent.total)
-		-- app.PrintDebug("CHG:",progChange,totalChange)
-		parent.total = (parent.total or 0) + totalChange
-		parent.progress = (parent.progress or 0) + progChange
-		parent.costTotal = (parent.costTotal or 0) + costChange
-		parent.upgradeTotal = (parent.upgradeTotal or 0) + upgradeChange
-		-- Assign cost cache
-		-- app.PrintDebug("END:",parent.progress,parent.total)
-		-- verify visibility of the group, always a 'group' since it is already a parent of another group, as long as it's not the root window data
-		if not parent.window then
-			parent.visible = nil
-			SetGroupVisibility(rawget(parent, "parent"), parent)
-		end
-		AdjustParentProgress(parent, progChange, totalChange, costChange, upgradeChange)
-	end
-end
+	if not parent then return end
 
+	-- app.PrintDebug("APP:",parent.progress,progChange,parent.total,totalChange,costChange,upgradeChange,app:SearchLink(parent))
+	parent.total = (parent.total or 0) + totalChange
+	parent.progress = (parent.progress or 0) + progChange
+	parent.costTotal = (parent.costTotal or 0) + costChange
+	parent.upgradeTotal = (parent.upgradeTotal or 0) + upgradeChange
+	-- Assign cost cache
+	-- app.PrintDebug("END:",parent.progress,parent.total)
+	-- verify visibility of the group, always a 'group' since it is already a parent of another group, as long as it's not the root window data
+	if not parent.window then
+		parent.visible = nil
+		SetGroupVisibility(rawget(parent, "parent"), parent)
+	end
+	AdjustParentProgress(parent, progChange, totalChange, costChange, upgradeChange)
+end
+local function AdjustParentVisibility(group)
+	local parent = group and rawget(group, "parent")
+	if not parent then return end
+
+	-- app.PrintDebug("APV:",app:SearchLink(group),"->",app:SearchLink(parent))
+	if not parent.window then
+		group.visible = nil
+		SetGroupVisibility(parent, group)
+	end
+	AdjustParentVisibility(parent)
+end
 
 -- For directly applying the full Update operation for the top-level data group within a window
 local function TopLevelUpdateGroup(group)
@@ -336,7 +346,7 @@ local function TopLevelUpdateGroup(group)
 	else
 		UpdateGroup(group)
 	end
-	-- app.PrintDebugPrior("TLUG",group.hash)
+	-- app.PrintDebugPrior("TLUG",group.hash,group.visible)
 end
 app.TopLevelUpdateGroup = TopLevelUpdateGroup
 local DGUDelay = 0.5
@@ -409,11 +419,21 @@ local function DirectGroupUpdate(group, got)
 end
 app.DirectGroupUpdate = DirectGroupUpdate
 -- Trigger a soft-Update of the window containing the specific group, regardless of Filtering/Visibility of the group
-local function DirectGroupRefresh(group)
+local function DirectGroupRefresh(group, immediate)
+	local isForceShown = group.forceShow
+	-- Allow adjusting visibility only if needed
+	if isForceShown then
+		AdjustParentVisibility(group)
+	end
 	local window = app.GetRelativeRawWithField(group, "window")
 	if window then
-		-- app.PrintDebug("DGR:Refresh",group.hash,">",DGUDelay,window.Suffix,window.Refresh)
-		DelayedCallback(window.Update, DGUDelay, window)
+		if immediate then
+			-- app.PrintDebug("DGR:Refresh:Now",group.hash,window.Suffix)
+			Callback(window.Update, window)
+		else
+			-- app.PrintDebug("DGR:Refresh:Delay",group.hash,window.Suffix)
+			DelayedCallback(window.Update, DGUDelay, window)
+		end
 	else
 		-- app.PrintDebug("DGR:Refresh",group.hash,">",DGUDelay,"No window!")
 		-- app.PrintTable(group)
@@ -755,8 +775,8 @@ local function CreateObject(t, rootOnly)
 		local result = {};
 		-- array
 		-- app.PrintDebug("CO.[]","=>",result);
-		for i,o in ipairs(t) do
-			result[i] = CreateObject(o, rootOnly);
+		for i=1,#t do
+			result[i] = CreateObject(t[i], rootOnly);
 		end
 		return result;
 	-- use the highest-priority piece of data which exists in the table to turn it into an object
@@ -772,8 +792,9 @@ local function CreateObject(t, rootOnly)
 			if not rootOnly and t.g then
 				local newg = {}
 				result.g = newg
-				for i,o in ipairs(t.g) do
-					newg[#newg+1] = CreateObject(o)
+				local g = t.g
+				for i=1,#g do
+					newg[#newg+1] = CreateObject(g[i])
 				end
 			end
 			setmetatable(result, meta);
@@ -884,8 +905,8 @@ local function CreateObject(t, rootOnly)
 		local g = t.g;
 		if g then
 			local gNew = {};
-			for i,o in ipairs(g) do
-				gNew[i] = CreateObject(o)
+			for i=1,#g do
+				gNew[i] = CreateObject(g[i])
 			end
 			t.g = gNew;
 		end
@@ -906,7 +927,9 @@ local NestObjects
 local function MergeObject(g, t, index, newCreate)
 	if g and t then
 		local hash = t.hash or GetHash(t);
-		for i,o in ipairs(g) do
+		local o
+		for i=1,#g do
+			o = g[i]
 			if (o.hash or GetHash(o)) == hash then
 				MergeProperties(o, t, true);
 				NestObjects(o, t.g, newCreate);
@@ -941,7 +964,9 @@ local function MergeObjects(g, g2, newCreate)
 	if #g2 > 25 then
 		local t, hash, hashObj
 		local hashTable = {}
-		for i,o in ipairs(g) do
+		local o
+		for i=1,#g do
+			o = g[i]
 			local hash = o.hash;
 			if hash then
 				-- are we merging the same object multiple times from one group?
@@ -955,7 +980,8 @@ local function MergeObjects(g, g2, newCreate)
 			end
 		end
 		if newCreate then
-			for i,o in ipairs(g2) do
+			for i=1,#g2 do
+				o = g2[i]
 				hash = o.hash;
 				-- print("_",hash);
 				if hash then
@@ -973,7 +999,8 @@ local function MergeObjects(g, g2, newCreate)
 				end
 			end
 		else
-			for i,o in ipairs(g2) do
+			for i=1,#g2 do
+				o = g2[i]
 				hash = o.hash;
 				-- print("_",hash);
 				if hash then
@@ -991,8 +1018,8 @@ local function MergeObjects(g, g2, newCreate)
 			end
 		end
 	else
-		for i,o in ipairs(g2) do
-			MergeObject(g, o, nil, newCreate);
+		for i=1,#g2 do
+			MergeObject(g, g2[i], nil, newCreate)
 		end
 	end
 end
@@ -1017,15 +1044,17 @@ local function PriorityNestObjects(p, g, newCreate, ...)
 		-- app.PrintDebug("PriorityNestObjects",#pFuncs,"Priorities",#g,"Objects")
 		-- setup containers for the priority buckets
 		local pBuckets, pBucket, skipped = {}, nil, nil;
-		for i,_ in ipairs(pFuncs) do
-			pBuckets[i] = {};
+		for i=1,#pFuncs do
+			pBuckets[i] = {}
 		end
 		-- check each object
-		for _,o in ipairs(g) do
+		local o
+		for i=1,#g do
+			o = g[i]
 			-- check each priority function
-			for i,pFunc in ipairs(pFuncs) do
+			for i=1,#pFuncs do
 				-- if the function matches, put the object in the bucket
-				if pFunc(o) then
+				if pFuncs[i](o) then
 					-- app.PrintDebug("Matched Priority Function",i,o.hash)
 					pBucket = pBuckets[i];
 					pBucket[#pBucket + 1] = o
@@ -1042,9 +1071,9 @@ local function PriorityNestObjects(p, g, newCreate, ...)
 			pBucket = nil;
 		end
 		-- then nest each bucket in order of priority
-		for i,pBucket in ipairs(pBuckets) do
+		for i=1,#pBuckets do
 			-- app.PrintDebug("Nesting Priority Bucket",i,#pBucket)
-			NestObjects(p, pBucket, newCreate);
+			NestObjects(p, pBuckets[i], newCreate);
 			-- app.PrintDebug(".g",p.g and #p.g)
 		end
 		-- and nest anything skipped

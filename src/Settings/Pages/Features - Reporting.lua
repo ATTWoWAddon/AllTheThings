@@ -1,5 +1,5 @@
 local _, app = ...;
-local L, settings, ipairs = app.L.SETTINGS_MENU, app.Settings, ipairs;
+local L, settings, ipairs = app.L, app.Settings, ipairs;
 
 -- Settings: Interface Page
 local child = settings:CreateOptionsPage(L.REPORTING_LABEL, L.FEATURES_PAGE)

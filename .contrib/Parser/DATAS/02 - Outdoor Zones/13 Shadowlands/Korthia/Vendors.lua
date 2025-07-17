@@ -28,12 +28,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						i(186984, {	-- Korthite Crystal Key
 							["cost"] = { { "c", CATALOGED_RESEARCH, 25 } },
 						}),
-						i(186714, {	-- Research Report: All-Seeing Crystal
-							["questID"] = 64339,
+						i(186714, {	-- Research Report: All-Seeing Crystal (CI!)
 							["cost"] = { { "c", CATALOGED_RESEARCH, 100 } },
 						}),
-						i(187145, {	-- Treatise: Recognizing Stygia and its Uses
-							["questID"] = 64307,
+						i(187145, {	-- Treatise: Recognizing Stygia and its Uses (CI!)
 							["cost"] = { { "c", CATALOGED_RESEARCH, 800 } },
 						}),
 					}, {	-- Tier 3
@@ -75,20 +73,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						i(186731, {	-- Repaired Riftkey
 							["cost"] = { { "c", CATALOGED_RESEARCH, 100 } },
 						}),
-						i(187706, {	-- Treatise: Bonds of Stygia in Mortals
-							["questID"] = 64828,
+						i(187706, {	-- Treatise: Bonds of Stygia in Mortals (CI!)
 							["cost"] = { { "c", CATALOGED_RESEARCH, 1000 } },
 						}),
 					}, {	-- Tier 5
 						i(187409, {	-- Cloak of the Korthian Scholar
 							["cost"] = { { "c", CATALOGED_RESEARCH, 500 } },
 						}),
-						i(186716, {	-- Research Report: Ancient Shrines
-							["questID"] = 64348,
+						i(186716, {	-- Research Report: Ancient Shrines (CI!)
 							["cost"] = { { "c", CATALOGED_RESEARCH, 1000 } },
 						}),
-						i(186722, {	-- Treatise: The Study of Anima and Harnessing Every Drop
-							["questID"] = 64027,
+						i(186722, {	-- Treatise: The Study of Anima and Harnessing Every Drop (CI!)
 							["cost"] = { { "c", CATALOGED_RESEARCH, 1500 } },
 						}),
 					}, {	-- Tier 6
@@ -108,16 +103,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						i(187536, {	-- Prototype Guardian Grips
 							["cost"] = { { "c", CATALOGED_RESEARCH, 4000 } },
 						}),
-						i(186717, {	-- Research Report: Adaptive Alloys
-							["questID"] = 64300,
+						i(186717, {	-- Research Report: Adaptive Alloys (CI!)
 							["cost"] = { { "c", CATALOGED_RESEARCH, 4000 } },
 						}),
-						i(187138, {	-- Research Report: First Alloys
-							["questID"] = 64303,
+						i(187138, {	-- Research Report: First Alloys (CI!)
 							["cost"] = { { "c", CATALOGED_RESEARCH, 8000 } },
 						}),
-						i(187136, {	-- Research Report: Relic Examination Techniques
-							["questID"] = 64367,
+						i(187136, {	-- Research Report: Relic Examination Techniques (CI!)
 							["cost"] = { { "c", CATALOGED_RESEARCH, 2500 } },
 						}),
 						i(186648, {	-- Soaring Razorwing (MOUNT!)
@@ -126,8 +118,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						i(187537, {	-- Subtle Mortality Manipulators
 							["cost"] = { { "c", CATALOGED_RESEARCH, 4000 } },
 						}),
-						i(186721, {	-- Treatise: Relics Abound in the Shadowlands
-							["questID"] = 64366,
+						i(186721, {	-- Treatise: Relics Abound in the Shadowlands (CI!)
 							["cost"] = { { "c", CATALOGED_RESEARCH, 2000 } },
 						}),
 					},
@@ -362,8 +353,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 								{"pop"},							-- Discard Header
 							},
 						}),
-						i(186453, {	-- Vault Anima Tracker
-							["questID"] = 64061,
+						i(186453, {	-- Vault Anima Tracker (CI!)
 							["cost"] = { { "c", STYGIA, 1000 } },
 						}),
 					}, {	-- Honored

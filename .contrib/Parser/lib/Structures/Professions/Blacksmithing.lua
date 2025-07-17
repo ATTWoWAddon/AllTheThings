@@ -205,6 +205,28 @@ ARTISAN_BLACKSMITHING
 	{}
 -- #endif
 );
+VANILLA_BLACKSMITHING_SUPPLIES = sharedData({
+	["description"] = "Can be bought from Blacksmithing Suppliers, as well as some Trade vendors around the world.",
+	["providers"] = {
+		{ "n", 5512},	-- Kaita Deepforge <Blacksmithing Supplies>
+		{ "n", 4597},	-- Samuel Van Brunt <Blacksmithing Supplies>
+		{ "n", 3356},	-- Sumi <Blacksmithing Supplies>
+		{ "n", 2999},	-- Taur Stonehoof <Blacksmithing Supplies>
+		{ "n", 4259},	-- Thurgrum Deepforge <Blacksmithing Supplies>
+		-- #if AFTER TBC
+		{ "n", 16713},	-- Arras <Blacksmithing Supplies>
+		{ "n", 16670},	-- Eriden <Blacksmithing Supplies>
+		-- #endif
+		-- #if AFTER 4.1.0
+		{ "n", 52641},	-- Layna Karner <Blacksmithing Supplies>
+		-- #endif
+	},
+},{
+	i(2880),	-- Weak Flux
+	i(3466),	-- Strong Flux
+	i(18567),	-- Elemental Flux
+	i(3857),	-- Coal
+});
 TBC_BLACKSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
 	r(29844, {	-- Blacksmithing (Master)
 		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
@@ -1075,7 +1097,7 @@ NAZJATAR_BLACKSMITHING = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ ["timel
 		r(294772),	-- Notorious Combatant's Spellblade [Rank 1]
 	}),
 }));
-SL_BLACKSMITHING = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_BLACKSMITHING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(309827),	-- Shadowlands Blacksmithing
 	n(ARMOR, {
 		r(307670),	-- Ceremonious Armguards

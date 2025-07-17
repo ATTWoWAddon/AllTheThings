@@ -15,15 +15,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				-- #if AFTER CATA
-				explorationAch(760, {	-- Explore Alterac Mountains
-					["timeline"] = { REMOVED_4_0_3 },
+				ach(760, {	-- Explore Alterac Mountains
+					["timeline"] = { DELETED_4_0_3 },
 				}),
 				-- #endif
-				explorationAch(772),	-- Explore Hillsbrad Foothills
+				ach(772),	-- Explore Hillsbrad Foothills
 				ach(4895, {	-- Hillsbrad Foothills Quests
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					-- #if ANYCLASSIC
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
+					-- #else
 					["sourceQuests"] = {
 						28237,	-- A Blight Upon the Land
 						28616,	-- Stormpike Apocalypse
@@ -198,6 +200,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				prof(FISHING, {
 					o(180662),	-- Schooner Wreckage
 				}),
+				prof(TAILORING, {
+					n(2399, {	-- Daryl Stack <Master Tailor>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 58.0, 47.8, HILLSBRAD_FOOTHILLS },
+							-- #else
+							{ 63.6, 20.8, HILLSBRAD_FOOTHILLS },
+							-- #endif
+						},
+						["races"] = HORDE_ONLY,
+						-- #if BEFORE 2.1.0
+						["g"] = ARTISAN_TAILORING,
+						-- #endif
+					}),
+				}),
 			}),
 			n(QUESTS, {
 				q(28345, {	-- *Gurgle* HELP! *Gurgle*
@@ -259,7 +276,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(28206, {	-- A Lost Lad [Shadowlands+] / Little Girl Lost
 					["qg"] = 47781,	-- Warden Stillwater
 					["sourceQuests"] = {
@@ -1839,8 +1856,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 49687,	-- Brazie the Botanist
 					["sourceQuest"] = 28747,	-- Someone Setup the Pumpkin Bomb
 					["coord"] = { 33.5, 49.3, HILLSBRAD_FOOTHILLS },
+					-- #if BEFORE 6.0.2
+					["description"] = [[WARNING: If you want the achievements, you'll need to follow this step-by-step guide: (Credit: Toasts-Atiesh)
+
+1. Track bloom and doom progress using /script AddTrackedAchievement(5365)
+2. Make this a macro
+  /script SelectGossipAvailableQuest(1)
+  /script SelectGossipActiveQuest(1)
+  /script CompleteQuest()
+  /script SelectGossipOption(1)
+  /script AcceptQuest()
+  /click StaticPopup1Button1
+3. Start Quest and then click leave vehicle immediately. (Quest should fail)
+4. Click abandon quest (DO NOT CONFIRM YET!) and then speak to the quest giver.
+5. Use the macro while the abandon quest popup is still open while the npc's Accept Quest dialog is displayed.
+Game should start with a 0/7 wave counter below and u have no plant quest in log.
+Click orbs till zombies spawn 6-8. Then plant NOTHING. (Part of the achievement is to not plant certain types.)
+3 zombies walk to end trigger lawn mower and die. You should now be +1 on your FoS tracker.
+Now a Dk ghoul spawns randomly if it lands in a lane with lawnmower wait and u will get another +1 to FoS tracker.
+Click Leave vehicle and repeat steps 3-8"]],
+					-- #endif
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
+						ach(5365, {	-- Bloom and Doom
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4, DELETED_6_0_2 },
+						}),
+						ach(5364, {	-- Don't Want No Zombies on My Lawn
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4, DELETED_6_0_2 },
+						}),
 						i(65689, {	-- Brazie's Plant Light
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1881,7 +1924,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(28206, {	-- Little Girl Lost / A Lost Lad [Shadowlands+]
 					["qg"] = 47781,	-- Warden Stillwater
 					["sourceQuests"] = {
@@ -2097,7 +2140,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28230, {	-- Protocol
-					["qg"] = 48020,	-- Master Apothecary Lydon
+					["qgs"] = {
+						47900,	-- Master Apothecary Lydon
+						48020,	-- Master Apothecary Lydon
+					},
 					["sourceQuest"] = 28209,	-- Freedom for Lydon
 					["coord"] = { 40.2, 59.3, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
@@ -2473,7 +2519,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 49687,	-- Brazie the Botanist
 					["sourceQuest"] = 28748,	-- Lawn of the Dead
 					["coord"] = { 33.5, 49.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { ADDED_4_0_1 },
+					["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3, ADDED_5_0_4 },
 					["isDaily"] = true,
 				}),
 				q(28355, {	-- Terrible Little Creatures
@@ -3368,10 +3414,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6274, {	-- Pattern: Blue Overalls
+						i(6274, {	-- Pattern: Blue Overalls (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(6401, {	-- Pattern: Dark Silk Shirt
+						i(6401, {	-- Pattern: Dark Silk Shirt (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -3418,7 +3464,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						-- #if BEFORE 4.0.3
-						i(4355, {	-- Pattern: Icy Cloak
+						i(4355, {	-- Pattern: Icy Cloak (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
@@ -3518,10 +3564,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER CATA
 				n(6779, {	-- Smudge Thunderwood <Poison Supplies> (Alterac Mountains)
 					["coord"] = { 71.0, 45.8, HILLSBRAD_FOOTHILLS },
-					["classes"] = { ROGUE },
 					["groups"] = {
 						i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
 							["timeline"] = { ADDED_1_3_0, REMOVED_6_0_2, ADDED_7_1_0 },
+							["classes"] = { ROGUE },
 						}),
 					},
 				}),
@@ -3577,7 +3623,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(7362, {	-- Pattern: Earthen Leather Shoulders (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5772, {	-- Pattern: Red Woolen Bag
+						i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
 							["isLimited"] = true,
 						}),
 						-- #if SEASON_OF_DISCOVERY
@@ -3795,7 +3841,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				-- #if AFTER CATA
-				i(5775, {	-- Pattern: Black Silk Pack
+				i(5775, {	-- Pattern: Black Silk Pack (RECIPE!)
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if AFTER 10.1.7
 					["description"] = "This pattern is very rare. Expect 1000+ of kills before looting it.",
@@ -3814,7 +3860,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				-- #if BEFORE CATA
-				i(5772, {	-- Pattern: Red Woolen Bag
+				i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
 					["cr"] = 2264,	-- Hillsbrad Tailor
 				}),
 				-- #endif

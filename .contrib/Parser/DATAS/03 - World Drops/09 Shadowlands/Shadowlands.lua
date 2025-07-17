@@ -2,6 +2,19 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 root(ROOTS.WorldDrops, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	filter(MISC, {
+		i(158932, { -- Secretest Fish
+			["description"] = "Can be found in any Shadowlands zone when wearing the googles.",
+			["provider"] = {"i", 167698},	-- Secret Fish Goggles
+			["maps"] = {
+				ARDENWEALD,
+				BASTION,
+				MALDRAXXUS,
+				REVENDRETH,
+				ORIBOS,
+			},
+		}),
+	}),
 	filter(REAGENTS, {
 		i(172052),	-- Aethereal Meat
 		i(179314),	-- Creeping Crawler Meat

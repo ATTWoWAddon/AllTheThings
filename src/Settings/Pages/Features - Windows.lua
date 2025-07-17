@@ -1,7 +1,7 @@
 local _, app = ...;
 if app.IsRetail then return; end
 
-local L, settings = app.L.SETTINGS_MENU, app.Settings;
+local L, settings = app.L, app.Settings;
 
 -- Settings: Windows Page
 local child = settings:CreateOptionsPage(L.WINDOWS_PAGE, L.FEATURES_PAGE)

@@ -113,6 +113,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["qg"] = 52382,	-- Ziradormi
 						["sourceQuest"] = 29452,	-- Your Time Has Come [H]
 						["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
+						["coord"] = { 48.8, 70.1, ORGRIMMAR },
 						["maps"] = { CAVERNS_OF_TIME },
 					})),
 					q(29134, {	-- A Wrinkle in Time
@@ -159,6 +160,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					q(29194, {	-- Through a Glass, Darkly
 						["qg"] = 52835,	-- Tarecgosa
 						["sourceQuest"] = 29193,	-- On a Wing and a Prayer
+						["coord"] = { 34.5, 25.3, BOREAN_TUNDRA },
 						["maps"] = { 370 },		-- The Nexus (Scenario Map)
 					}),
 					q(29225, {	-- Actionable Intelligence
@@ -309,6 +311,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(71086),	-- Dragonwrath, Tarecgosa's Rest
 							ach(5839, {	-- Dragonwrath, Tarecgosa's Rest
 								["provider"] = { "i", 71086 },	-- Dragonwrath, Tarecgosa's Rest
+								["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID, EVOKER },
 							}),
 						},
 					},
@@ -396,10 +399,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(69976),	-- Pattern: Boots of the Black Flame
-				i(69966),	-- Pattern: Don Tayo's Inferno Mittens
-				i(69975),	-- Pattern: Endless Dream  Walkers
-				i(69965),	-- Pattern: Grips of Altered Reality
+				i(69976),	-- Pattern: Boots of the Black Flame (RECIPE!)
+				i(69966),	-- Pattern: Don Tayo's Inferno Mittens (RECIPE!)
+				i(69975),	-- Pattern: Endless Dream Walkers (RECIPE!)
+				i(69965),	-- Pattern: Grips of Altered Reality (RECIPE!)
 				i(69962),	-- Pattern: Clutches of Evil (RECIPE!)
 				i(69960),	-- Pattern: Dragonfire Gloves (RECIPE!)
 				i(69971),	-- Pattern: Earthen Scale Sabatons (RECIPE!)

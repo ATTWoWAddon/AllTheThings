@@ -6,6 +6,8 @@ DRAGONFLIGHT_SEASONAL_PROMOTIONS = createHeader({
 	icon = [[~_.asset("Expansion_DF")]],
 	text = {
 		en = "Dragonflight Seasonal Promotions",
+		es = "Promociones temporada Dragonflight",
+		mx = "Promociones temporada Dragonflight",
 		ru = "Промо Dragonflight",
 		cn = "巨龙时代季节性促销",
 		tw = "《巨龍崛起》季節性促銷",
@@ -113,7 +115,7 @@ root(ROOTS.Promotions, {
 			}),
 			i(206167, {	-- Wonderous Wavewhisker (MOUNT!)
 				["description"] = "Obtained if you set up a 6-Month WoW Subscription. Promotion valid through January 9, 2024.",
-				["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0  },
+				["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 			}),
 			i(32566, {	-- Picnic Basket (TOY!)
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between July 11th, 10:00 a.m. & July 18th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",

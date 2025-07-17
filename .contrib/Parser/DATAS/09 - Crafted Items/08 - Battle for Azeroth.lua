@@ -738,6 +738,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		i(152544),	-- Slimy Mackerel
 		i(152548),	-- Tiragarde Perch
 		i(168302, {["timeline"] = {ADDED_8_2_0}}),	-- Viper Fish
+		spell(273293, {	-- Aromatic Fish Oil
+			i(160711),	-- Aromatic Fish Oil
+		}),
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
 				["description"] = "Can be fished from schools.",
@@ -766,6 +769,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		}),
 	}),
 	prof(INSCRIPTION, {
+		header(HEADERS.Spell, 382984, {	-- Kul Tiras and Zandalar Milling
+			i(153636),	-- Crimson Pigment
+			i(153635),	-- Ultramarine Pigment
+			i(153669),	-- Viridescent Pigment
+		}),
 		filter(GLYPHS, {
 			i(170173, {["timeline"] = {ADDED_8_2_5}}),	-- Glyph of Dire Bees
 			i(172449, {["timeline"] = {ADDED_8_2_5}}),	-- Glyph of Lavish Servings
@@ -904,6 +912,22 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			spell(305982, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unbound Leviathan's Eye Loop
 				i(171083),	-- Design: Awakened Leviathan's Eye Loop (RECIPE!)
 			})),
+		}),
+		header(HEADERS.Spell, 382973, {	-- Kul Tiras and Zandalar Prospecting
+			i(154123),	-- Amberblaze
+			i(168189, { ["timeline"] = { ADDED_8_2_0 } }),	-- Dark Opal
+			i(153700),	-- Golden Beryl
+			i(153706),	-- Kraken's Eye
+			i(153702),	-- Kubiline
+			i(153705),	-- Kyanite
+			i(154124),	-- Laribole
+			i(154120),	-- Owlseye
+			i(154125),	-- Royal Quartz
+			i(153701),	-- Rubellite
+			i(154121),	-- Scarlet Diamond
+			i(153703),	-- Solstone
+			i(154122),	-- Tidal Amethyst
+			i(153704),	-- Viridium
 		}),
 		filter(FINGER_F, {
 			i(153686),	-- Amberblaze Loop
@@ -1279,6 +1303,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(154168),	-- Shimmerscale Diving Suit
 			i(165747),	-- Tempest Hide Pouch
 		}),
+		filter(REAGENTS, {
+			i(152542),	-- Hardened Tempest Hide
+		}),
 		n(WEAPONS, {
 			i(161970),	-- Coarse Leather Cestus [A]
 			i(154161),	-- Coarse Leather Cestus [H]
@@ -1315,6 +1342,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		i(152513),	-- Platinum Ore
 		i(152579),	-- Storm Silver Ore
 		i(161085),	-- Tattered Map
+	}),
+	prof(SKINNING, {
+		i(154164),	-- Blood-Stained Bone
+		i(154165),	-- Calcified Bone
+		i(152541),	-- Coarse Leather
+		i(168650, {["timeline"] = {ADDED_8_2_0}}),	-- Cragscale
+		i(168649, {["timeline"] = {ADDED_8_2_0}}),	-- Dredged Leather
+		i(153051),	-- Mistscale
+		i(153050),	-- Shimmerscale
+		i(154722),	-- Tempest Hide
 	}),
 	prof(TAILORING, {
 		n(DISCOVERY, {
@@ -1529,6 +1566,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		}),
 		filter(REAGENTS, {
 			i(158378),	-- Embroidered Deep Sea Satin
+		}),
+		filter(MISC, {
+			i(154705),	-- Battle Flag: Rallying Swiftness
+			i(154706),	-- Battle Flag: Phalanx Defense
+			i(154707),	-- Battle Flag: Spirit of Freedom
 		}),
 	}),
 }))));

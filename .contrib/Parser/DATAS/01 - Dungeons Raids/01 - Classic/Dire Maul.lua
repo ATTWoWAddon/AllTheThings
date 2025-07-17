@@ -124,11 +124,12 @@ local OnTooltipForSteamweedle = [[function(t, tooltipInfo)
 	end
 end]];
 -- #endif
-root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_DIREMAUL, {
+root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_DIREMAUL, bubbleDown({ ["timeline"] = { ADDED_1_2_0 } }, {
 	inst(230, {	-- Dire Maul
 		-- #if BEFORE MOP
 		["lore"] = "Dire Maul is a three-wing instance found in north-central Feralas. It was once a proud Highborne city called Eldre'Thalas, but now lies in ruins, overrun by ogres, satyrs, and undead. Only a tiny remnant of the original Highborne population remains in the form of a murderous sect called the Shen'dralar.",
 		-- #endif
+		-- #if BEFORE MOP
 		["zone-text-areas"] = {
 			2557,	-- Dire Maul
 			3217,	-- "The Maul" now points to Dire Maul.
@@ -137,6 +138,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 			4992,	-- "Broken Commons" now points to Dire Maul.
 			-- #endif
 		},
+		-- #endif
 		["maps"] = {
 			DIRE_MAUL,
 			DIRE_MAUL_SHRINE_OF_ELDRETHARR,
@@ -145,29 +147,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				achWithRep(5788, FACTION_SHENDRALAR, {	-- Agent of the Shen'dralar [Shen'dralar Exalted]
+					-- #if BEFORE WRATH
+					["icon"] = 133736,	-- CRIEVE NOTE: The other icon doesn't exist in the game files yet
+					-- #endif
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
-				ach(644, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 }, }, {	-- King of Dire Maul
+				ach(644, {	-- King of Dire Maul
 					["maps"] = merge(WARPWOOD_QUARTER_MAPS, GORDOK_COMMONS_MAPS, CAPITAL_GARDENS_MAPS),
-					["groups"] = {
-						crit(545, {	-- Alzzin the Wildshaper
-							["_npcs"] = { 11492 },	-- Alzzin the Wildshaper
-						}),
-						crit(546, {	-- Immol'thar
-							["_npcs"] = { 11496 },	-- Immol'thar
-						}),
-						-- #if ANYCLASSIC
-						crit(547, {	-- King Gordok
-							["_npcs"] = { 11501 },	-- King Gordok
-						}),
-						-- #else
-						crit(18535, {	-- King Gordok
-							["_npcs"] = { 11501 },	-- King Gordok
-						}),
-						-- #endif
-					},
-				})),
+				}),
 				ach(5053, {	-- King of Dire Maul Guild Run
 					["timeline"] = { ADDED_4_0_3 },
 				}),
@@ -1124,6 +1112,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 			}),
+			n(TREASURES, {
+				o(179526, {	-- Warpwood Pod
+					i(18255),	-- Runn Tum Tuber
+					i(18297),	-- Thornling Seed
+				}),
+			}),
 			n(ZONE_DROPS, {
 				["maps"] = ALL_DIREMAUL_MAPS,
 				["groups"] = {
@@ -1343,6 +1337,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 								["timeline"] = { ADDED_10_1_5 },
 							}),
 							i(18267),	-- Recipe: Runn Tum Tuber Surprise (RECIPE!)
+							i(18255),	-- Runn Tum Tuber
 						},
 					}),
 					n(14349, {	-- Pimgib
@@ -2078,7 +2073,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 								["timeline"] = { ADDED_1_15_3 },
 							})),
 							-- #endif
-							i(18487, {	-- Pattern: Mooncloth Robe
+							i(18487, {	-- Pattern: Mooncloth Robe (RECIPE!)
 								-- #if SEASON_OF_DISCOVERY
 								["timeline"] = { REMOVED_1_15_3 },
 								-- #endif
@@ -2125,11 +2120,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 								11459,	-- Ironbark Protector
 								14303,	-- Petrified Guardian
 								11458,	-- Petrified Treant
-							},
-						}),
-						i(4402, {	-- Small Flame Sac
-							["crs"] = {
-								14398,	-- Eldreth Darter
 							},
 						}),
 						i(18344, {	-- Stonebark Gauntlets
@@ -2347,7 +2337,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 			}),
 		},
 	}),
-})));
+}))));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 	inst(230, {
 		q(35890),	-- Dire Maul (Warpwood Quarter) Reward Quest - Normal completion

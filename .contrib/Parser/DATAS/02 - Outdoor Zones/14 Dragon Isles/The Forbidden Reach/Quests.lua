@@ -344,8 +344,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["provider"] = { "n", 200727 },	-- Volethi
 				["coord"] = { 32.4, 52.9, THE_FORBIDDEN_REACH },
 				["g"] = {
-					i(202619),	-- Mender Supplies (QI!)
+					o(385990, {	-- Mender Supplies
+						["coord"] = { 33.8, 56.2, 2101 },	-- The Support Creche
+						["g"] = { i(202619) },	-- Mender Supplies (QI!)
+					}),
 					i(202620),	-- Toxin Antidote (QI!)
+					i(203657),	-- Toxin Antidote (QI!)
 				},
 			}),
 			q(73139, {	-- Deep Sea Supplies
@@ -370,7 +374,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["provider"] = { "n", 199204 },	-- Scalecommander Azurathel
 				["coord"] = { 35.4, 58.6, THE_FORBIDDEN_REACH },
 				["g"] = {
-					i(202647),	-- Stolen Goods (QI!)
+					o(385999, {	-- Stolen Booty
+						i(202647),	-- Stolen Goods (QI!)
+					}),
 				},
 			}),
 			q(73191, {	-- Snake Wrangling

@@ -5,6 +5,9 @@
 root(ROOTS.Zones, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(ZANDALAR, {
 		n(ZONE_REWARDS, {
+			i(163856, {	-- Ancient Pilgrimage Scrollcasing
+				["description"] = "Can drop from any of the repeatable Treasures in the various BFA zones.",
+			}),
 			i(163857, {	-- Azerite Armor Cache
 				["sym"] = {
 					{"sub", "bfa_azerite_armor_chest" },
@@ -27,7 +30,7 @@ root(ROOTS.Zones, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			i(158120),	-- Salt Coast Headcracker
 			i(158117),	-- Salt Coast Knuckles
 			i(158134),	-- Salt Coast Piercers
-			i(158122),	-- Spirit Bog Scepter		
+			i(158122),	-- Spirit Bog Scepter
 			i(158108, {	-- Whisperfen Chopper
 				["races"] = HORDE_ONLY,
 			}),

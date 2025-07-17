@@ -1393,7 +1393,7 @@ i(228789);	-- Coldflame Ring
 i(232305);	-- Forged Champion's Prestigious Banner
 i(224192);	-- Practice Ravager
 i(232301);	-- Tempered Banner of the Algari
---- UNSORTED ---
+--- NYI ---
 i(232303);	-- Unknown
 i(232304);	-- Unknown
 i(232307);	-- Unknown
@@ -1413,8 +1413,6 @@ i(228966);	-- Starry-Eyed Goggles
 -- #endif
 i(234473);	-- Soweezi's Comfy Lawn Chair
 i(218308);	-- Winter Veil Cracker
---- NYI ---
-i(235016);	-- Redeployment Module
 
 ------------------
 -- PATCH 11.1.0 --
@@ -1460,4 +1458,31 @@ i(232302);	-- Prized Banner of the Algari
 i(232306);	-- Prized Champion's Prestigious Banner
 i(239693);	-- Radiant Lynx Whistle
 i(239018);	-- Winner's Podium
+
+------------------
+-- PATCH 11.1.7 --
+------------------
+i(244888);	-- Echo of Xal'atath, Blade of the Black Empire
+i(245567);	-- K'aresh Memory Crystal
+i(246227);	-- Lightning-Blessed Spire
+i(235016);	-- Redeployment Module
+i(245631);	-- Royal Visage
+i(245942);	-- Sea-Blessed Shrine
+
+------------------
+-- PATCH 11.2.0 --
+------------------
+i(246907);	-- Broker Supply Crate
+i(242323);	-- Chowdar's Favorite Ribbon
+i(246565);	-- Cosmic Hearthstone
+i(243056);	-- Delver's Mana-Bound Ethergate
+i(244792);	-- Etheric Brannmorpher
+i(250722);	-- Ethereal Stall
+i(244470);	-- Etheric Victory
+i(246903);	-- Guise of the Phase Diver
+i(246908);	-- K'areshi Supply Crate
+i(246905);	-- Overtuned K'areshi Goggles
+i(245970);	-- P.O.S.T. Master's Express Hearthstone
 --- UNSORTED ---
+i(245946);	-- Brewer's Balloon
+i(249713);	-- Cartel Transmorpher

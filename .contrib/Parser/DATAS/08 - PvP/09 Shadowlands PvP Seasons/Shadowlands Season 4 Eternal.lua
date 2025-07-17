@@ -196,16 +196,17 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 		n(PVP_GLADIATOR, {
 			n(168011, {	-- Zo'sorg <Master of Conflict>
 				["coord"] = { 35.0, 57.6, ORIBOS },
+				["ItemAppearanceModifierID"] = 159,
 				["g"] = {
 					i(223640, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {	-- Unburied Gladiator's Cloak Rack
 						["cost"] = {{"i", MOH, 1}},
 						["description"] = "|Cffff0000This ensemble may or may not work.  Even if it does work, you may not get every cloak that is listed, its random.|r",	-- Nobody should be interested in playing QA Tester for this bugged cloak ensemble.
 						["g"] = {
 							-- Gladiator
-							i(175888),	-- Sinful Gladiator's Cloak
-							i(178353),	-- Sinful Gladiator's Drape
-							i(178414),	-- Sinful Gladiator's Shawl
-							i(184311),	-- Sinful Gladiator's Greatcloak
+							i(175888, { ["ItemAppearanceModifierID"] = 0 }),	-- Sinful Gladiator's Cloak
+							i(178353, { ["ItemAppearanceModifierID"] = 0 }),	-- Sinful Gladiator's Drape
+							i(178414, { ["ItemAppearanceModifierID"] = 0 }),	-- Sinful Gladiator's Shawl
+							i(184311, { ["ItemAppearanceModifierID"] = 0 }),	-- Sinful Gladiator's Greatcloak
 							i(192209),	-- Eternal Gladiator's Cloak
 							i(192210),	-- Eternal Gladiator's Drape
 							i(192211),	-- Eternal Gladiator's Shawl
@@ -221,6 +222,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			}),
 			n(168011, {	-- Zo'sorg <Master of Conflict>
 				["coord"] = { 35.0, 57.6, ORIBOS },
+				["ItemAppearanceModifierID"] = 159,
 				["g"] = bubbleDown({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 					filter(BACK_F, {
 						conquest(525, i(192209)),	-- Eternal Gladiator's Cloak

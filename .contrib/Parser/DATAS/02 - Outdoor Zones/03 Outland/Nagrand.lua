@@ -49,17 +49,16 @@ root(ROOTS.Zones, {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					achWithRep(902, FACTION_THE_CONSORTIUM),	-- Chief Exalted Officer
-					explorationAch(866),	-- Explore Nagrand
-					ach(939, {	-- Hills Like White Elekk
-						["sourceQuest"] = 9852,	-- The Ultimate Bloodsport
-					}),
+					ach(866),	-- Explore Nagrand
+					ach(939),	-- Hills Like White Elekk
 					achWithRep(901, FACTION_THE_MAGHAR, {	-- Mag'har of Draenor
 						["races"] = HORDE_ONLY,
 					}),
 					ach(1273, {	-- Nagrand Slam (Horde)
 						["races"] = HORDE_ONLY,
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							-- Birth of a Warchief
 							10172,	-- There Is No Hope
@@ -97,67 +96,13 @@ root(ROOTS.Zones, {
 							9900,	-- Gava'xi
 							9925,	-- Matters of Security
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 87,
-						-- #endif
-						-- #else
-						-- ["groups"] = {
-						-- 	crit(1, {	-- Birth of a Warchief
-						-- 		["sourceQuest"] = 10172,	-- There Is No Hope
-						-- 	}),
-						-- 	crit(2,	{	-- The Ring of Blood
-						-- 		["sourceQuest"] = 9977,	-- The Ring of Blood: The Final Challenge
-						-- 	}),
-						-- 	crit(3,	{	-- Throne of the Elements
-						-- 		["sourceQuests"] = {
-						-- 			9853,	-- Gurok the Usurper
-						-- 			9815,	-- Muck Diving
-						-- 			9862,	-- Murkblood Corrupters
-						-- 			9810,	-- The Spirit Polluted
-						-- 		},
-						-- 	}),
-						-- 	crit(4, {	-- Lantresor of the Blade
-						-- 		["sourceQuests"] = {
-						-- 			9907,	-- An Audacious Advance
-						-- 			9916,	-- Bleeding Hollow Supply Crates
-						-- 			9934,	-- Message to Garadar
-						-- 		},
-						-- 	}),
-						-- 	crit(5, {	-- The Murkblood
-						-- 		["sourceQuests"] = {
-						-- 			9946,	-- Cho'war the Pillager
-						-- 			9948,	-- Finding the Survivors
-						-- 			9866,	-- He Will Walk The Earth...
-						-- 			9867,	-- Murkblood Leaders..
-						-- 			9868,	-- The Totem of Kar'dash
-						-- 			9863,	-- Vile Idolatry
-						-- 		},
-						-- 	}),
-						-- 	crit(6,	{	-- Threats to Nagrand
-						-- 		["sourceQuests"] = {
-						-- 			10011,	-- Forge Camp: Annihilated
-						-- 			9937,	-- WANTED: Durn the Hungerer
-						-- 		},
-						-- 	}),
-						-- 	crit(7,	{	-- The Ultimate Bloodsport
-						-- 		["sourceQuest"] = 9852,	-- The Ultimate Bloodsport
-						-- 	}),
-						-- 	crit(8,	{	-- Encountering the Ethereals
-						-- 		["sourceQuests"] = {
-						-- 			9900,	-- Gava'xi
-						-- 			9925,	-- Matters of Security
-						-- 		},
-						-- 	}),
-						-- },
 						-- #endif
 					}),
 					ach(1192, {	-- Nagrand Slam (Alliance)
 						["races"] = ALLIANCE_ONLY,
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							-- The Adventures of Corki
 							9955,	-- Cho'war the Pillager
@@ -192,56 +137,6 @@ root(ROOTS.Zones, {
 							9900,	-- Gava'xi
 							9925,	-- Matters of Security
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 75,
-						-- #endif
-						-- #else
-						-- ["groups"] = {
-						-- 	crit(1,	{	-- The Adventures of Corki
-						-- 		["sourceQuest"] = 9955,	-- Cho'war the Pillager
-						-- 	}),
-						-- 	crit(2,	{	-- The Ring of Blood
-						-- 		["sourceQuest"] = 9977,	-- The Ring of Blood: The Final Challenge
-						-- 	}),
-						-- 	crit(3, {	-- Throne of the Elements
-						-- 		["sourceQuests"] = {
-						-- 			9853,	-- Gurok the Usurper
-						-- 			9815,	-- Muck Diving
-						-- 			9862,	-- Murkblood Corrupters
-						-- 			9810,	-- The Spirit Polluted
-						-- 		},
-						-- 	}),
-						-- 	crit(4,	{	-- Lantresor of the Blade
-						-- 		["sourceQuest"] = 9933,	-- Message to Telaar
-						-- 	}),
-						-- 	crit(5,	{	-- The Murkblood
-						-- 		["sourceQuests"] = {
-						-- 			9873,	-- Ortor My Old Friend...
-						-- 			9878,	-- Solving the Problem
-						-- 			9874,	-- Stopping the Spread
-						-- 			9879,	-- The Totem of Kar'dash
-						-- 			9956,	-- The Ravaged Caravan
-						-- 		},
-						-- 	}),
-						-- 	crit(6,	{	-- Threats to Nagrand
-						-- 		["sourceQuests"] = {
-						-- 			10011,	-- Forge Camp: Annihilated
-						-- 			9938,	-- WANTED: Durn the Hungerer
-						-- 		},
-						-- 	}),
-						-- 	crit(7,	{	-- The Ultimate Bloodsport
-						-- 		["sourceQuest"] = 9852,	-- The Ultimate Bloodsport
-						-- 	}),
-						-- 	crit(8,	{	-- Encountering the Ethereals
-						-- 		["sourceQuests"] = {
-						-- 			9900,	-- Gava'xi
-						-- 			9925,	-- Matters of Security
-						-- 		},
-						-- 	}),
-						-- },
 						-- #endif
 					}),
 					achWithRep(899, FACTION_KURENAI, {	-- Oh My, Kurenai
@@ -325,6 +220,21 @@ root(ROOTS.Zones, {
 						["cr"] = 18789,	-- Furgu <Hippogryph Master>
 						["coord"] = { 54.2, 75.0, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
+					}),
+				}),
+				petbattles({
+					n(66552, {	-- Narrok <Master Pet Tamer>
+						["coord"] = { 61.0, 49.4, NAGRAND },
+						["description"] = "Narrok's pets are level 22 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Anubisath Idol (Demolish/Sandstorm/Deflection) and Turkey (Peck/Squawk/Food Coma).",
+						["timeline"] = { ADDED_5_0_4 },
+						["petBattleLvl"] = 22,
+						["groups"] = {
+							q(31924, {	-- Narrok
+								["sourceAchievement"] = 6604,	-- Taming Outland
+								["timeline"] = { ADDED_5_0_4 },
+								["isDaily"] = true,
+							}),
+						},
 					}),
 				}),
 				n(QUESTS, {
@@ -531,7 +441,7 @@ root(ROOTS.Zones, {
 					q(9955, {	-- Cho'war the Pillager (A)
 						["qg"] = 18445,	-- Corki
 						["sourceQuest"] = 9954,	-- Corki's Ransom
-						["coord"] = { 31.4, 44.0, NAGRAND },
+						["coord"] = { 29.5, 26, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Corki Freed
@@ -1320,9 +1230,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10004, {	-- Patience and Understanding
-						["qg"] = 18417,	-- Altruis the Sufferer
+						["providers"] = {
+							{ "n", 18417 },	-- Altruis the Sufferer
+							{ "i", 25751 },	-- The Master Planner's Blueprints (PQI!)
+						},
 						["sourceQuest"] = 10001,	-- The Master Planner
 						["coord"] = { 27.4, 42.0, NAGRAND },
+						["maps"] = { SHATTRATH_CITY },
 					}),
 					q(9797, {	-- Reinforcements for Garadar
 						["qg"] = 18091,	-- Messenger Gazgrigg
@@ -1931,14 +1845,6 @@ root(ROOTS.Zones, {
 						["timeline"] = { ADDED_6_2_0 },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
-						["groups"] = {
-							objective(1, {	-- 0/8 Warmaul Brute slain
-								["provider"] = { "n", 18065 },	-- Warmaul Brute
-							}),
-							objective(2, {	-- 0/8 Warmaul Warlock slain
-								["provider"] = { "n", 18037 },	-- Warmaul Warlock
-							}),
-						},
 					})),
 					q(10101, {	-- When Spirits Speak
 						["qg"] = 18687,	-- Mother Kashur
@@ -2216,7 +2122,7 @@ root(ROOTS.Zones, {
 						["sym"] = {{"sub","common_vendor",20242}},	-- Karaaz <Consortium Quartermaster>
 					}),
 					n(20241, {	-- Provisioner Nasela <Mag'har Quartermaster>
-						["coord"] = { 53.8, 36.8, NAGRAND },
+						["coord"] = { 53.5, 37.0, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["groups"] = bubbleDownClassicRep(FACTION_THE_MAGHAR, {
 							{		-- Neutral

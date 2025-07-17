@@ -3345,7 +3345,9 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 					i(152629),	-- Crate of Non-Tainted Meat Products (QI!)
 				},
 			}),
-			q(48653, {
+			q(48653, {	-- A Bejeweled Prison
+				["provider"] = { "i", 152655 },	-- Restored Eye of Obsidian (QS!)
+				["cost"] = {{ "i", 152656, 5 },},	-- Eye of Obsidian Fragment
 				["description"] = "Area: |cFFf09f26Nazmir|r",
 				["lvl"] = 20,
 				["races"] = HORDE_ONLY,
@@ -4862,7 +4864,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(55189),	--
 			q(55190),	--
 			q(55191),	--
-			q(55239),	--
 			-- 8.1.5.29220
 			-- 8.1.5.29281
 			-- 8.1.5.29310
@@ -5295,7 +5296,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			-- 8.2.0.30329
 			q(56666),	--
 			q(56691),	--
-			q(56709),	--
 			q(56717),	--
 			q(56718),	--
 			q(56736),	--
@@ -5413,7 +5413,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			}),
 			-- tools
 			-- 8.2.5.31337
-			q(56169),	--
 			q(56646),	--
 			q(56878),	--
 			q(56880),	--
@@ -7350,7 +7349,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			q(70390),	-- (DNT) Chloe's Onboarding Kill Quest
 			q(65894),	-- [DNT] - Removed - Eggs Benediction
 			q(65897),	-- [DNT] - Removed - Focus Locus
@@ -8100,7 +8099,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(72359),	--
 			q(72361),	--
 			q(72368),	--
-			q(72370),	--
 			q(72491),	--
 			q(72492),	--
 			q(72493),	--
@@ -8410,9 +8408,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(75536),	--
 			q(75605),	--
 			q(76198),	--
-			q(76220),	--
 			q(76226),	--
-			q(76231),	--
 			q(76237),	--
 			q(76245),	--
 			q(76289),	--
@@ -8656,7 +8652,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			q(80950),	-- First Craft: Deepfury Hide
 			q(81114),	-- First Craft: Vicious Flask of Manifested Fury
 			q(81651),	-- Delver's Guide to Delves
@@ -8683,6 +8679,20 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
 			q(83447),
 			q(86651),	-- [DNT] Test (causes Bolt of Silk Cloth to be Sourced when not under NYI)
+		})),
+
+		-- 11.1.5
+		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
+			q(90504), -- Dastardly Duos Weekly Wins
+			q(90503), -- Dastardly Duos Weekly Wins
+			q(90502), -- Dastardly Duos Weekly Wins
+			q(90501), -- Dastardly Duos Weekly Wins
+			q(90500), -- Dastardly Duos Weekly Wins
+			q(90499), -- Dastardly Duos Weekly Wins
+			q(90498), -- Dastardly Duos Weekly Wins
+			q(90497), -- Dastardly Duos Weekly Wins
+			q(90496), -- Dastardly Duos Weekly Wins
+			q(90495), -- Dastardly Duos Weekly Wins
 		})),
 	}),
 }));

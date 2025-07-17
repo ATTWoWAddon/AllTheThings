@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(48522, {	-- A Revealing Missive
-				["provider"] = {"i",152587},	-- Levae's Missive
+				["provider"] = { "i", 152587 },	-- Levae's Missive (QS!)
 				["races"] = ALLIANCE_ONLY,
 				["description"] = "This quest appears to drop from whichever Sister you kill last.",
 				["sourceQuests"] = { 48520 },	-- The Three Sisters
@@ -584,23 +584,22 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 131879 },	-- Inquisitor Cleardawn
 				["g"] = {
-					i(158623),	-- Wickerwoven Cinch
-					i(158624),	-- Banisher Strap
-					i(158625),	-- Crone-Seeker's Girdle
-					i(158626),	-- Waycrest Militia Cinch
-					i(160201),	-- Wickerwoven Wristwraps
-					i(160202),	-- Banisher Bands
-					i(160203),	-- Crone-Seeker's Bands
-					i(160204),	-- Waycrest Militia Bindings
-					-- Horde sourceid's(not actual reward)
-					i(159067),	-- Loa Speaker's Waistwrap
-					i(159070),	-- Loa Speaker's Cuffs
-					i(159068),	-- Death-Pledged Waistguard
-					i(159072),	-- Death-Pledged Armguards
-					i(159069),	-- Ritual Flayer's Cord
-					i(159073),	-- Ritual Flayer's Bracers
+					i(160202), -- Banisher Bands
+					i(158624), -- Banisher Strap
+					i(160203), -- Crone-Seeker's Bands
+					i(158625), -- Crone-Seeker's Girdle
+					i(160204), -- Waycrest Militia Bindings
+					i(158626), -- Waycrest Militia Cinch
+					i(158623), -- Wickerwoven Cinch
+					i(160201), -- Wickerwoven Wristwraps
+					--
+					h(i(159072)), -- Death-Pledged Armguards
+					h(i(159068)), -- Death-Pledged Waistguard
+					h(i(159070)), -- Loa Speaker's Cuffs
+					h(i(159067)), -- Loa Speaker's Waistwrap
+					h(i(159073)), -- Ritual Flayer's Bracers
+					h(i(159069)), -- Ritual Flayer's Cord
 				},
-
 			}),
 			q(48517, {	-- Honorable Discharge
 				["provider"] = { "n", 129983 },	-- Inquisitor Cleardawn
@@ -617,11 +616,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					48518,	-- Save Who We Can
 				},
 				["g"] = {
-					i(155118),	-- Wickerwoven Sash
-					i(155120),	-- Banisher Belt
-					i(155119),	-- Crone-Seeker's Belt
-					i(155117),	-- Waycrest Militia Girdle
-					i(155158),	-- Alderwood Loop
+					i(155158), -- Alderwood Loop
+					i(155120), -- Banisher Belt
+					i(155119), -- Crone-Seeker's Belt
+					i(155117), -- Waycrest Militia Girdle
+					i(155118), -- Wickerwoven Sash
 				},
 			}),
 			q(53109, {	-- House Waycrest
@@ -729,10 +728,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(155469),	-- Banisher Grips
 					i(155477),	-- Crone-Seeker's Strikers
 					i(155485),	-- Waycrest Militia Crushers
-					-- Horde Sourceid's(not actual reward)
-					i(155316),	-- Loa Speaker's Treads
-					i(155318),	-- Ritual Flayer's Boots
-					i(155315),	-- Nazmani Warboots
+					--
+					h(i(155317)),	-- Death-Pledged Sabatons
+					h(i(155316)),	-- Loa Speaker's Treads
+					h(i(155318)),	-- Ritual Flayer's Boots
+					h(i(155315)),	-- Nazmani Warboots
 				},
 			}),
 			q(48477, {	-- Looking for One More
@@ -805,8 +805,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(158593),	-- Drust-Speaker's Pathfinder
 					i(160196),	-- Waycrest Militia Grips
 					i(160193),	-- Wickerwoven Mittens
-					-- Horde sourceid's(not actual reward)
-					i(155373),	-- Golden Lilypad
+					--
+					h(i(155373)),	-- Golden Lilypad
 				},
 			}),
 			q(48170, {	-- Once Bitten, Twice Shy
@@ -852,6 +852,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(158643),	-- Anyport Repeater
 					i(158648),	-- Boss Cesi's Gavel
 					i(158645),	-- Smuggler's Pass
+					--
+					h(i(161303)),	-- Scorching Sands Bludgeon
 				},
 			}),
 			q(53430, {	-- Order Of Embers Crossbow
@@ -1325,6 +1327,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50457 },	-- Break on Through
 				["provider"] = {"o",281673},	-- Corlain Citizen's Journal
+				["g"] = { i(160109) },	-- The Fall of Corlain
 			}),
 			q(47982, {	-- The Final Effigy
 				["coord"] = { 55.8, 35.0, DRUSTVAR },
@@ -1562,16 +1565,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 48110, 48109 },	-- In Case of Ambush & The Woods Have Eyes
 			}),
 			q(50897, {	-- Turn the Heat Around
-				["providers"] = {
-					{"n",135541},	-- Bilgewater Incinerator
-					{"i",158918},	-- Bilgewater Patented Flamethrower
-				},
+				["provider"] = { "i", 158918 },	-- Bilgewater Patented Flamethrower (QS!)
+				["cr"] = 135541,	-- Bilgewater Incinerator
+				["coord"] = { 38.5, 35.5, DRUSTVAR },	-- General area where QS! can be looted
 				["races"] = ALLIANCE_ONLY,
-				["sourceQuests"] = { 50911 },	-- One Man Against the Horde
 				["g"] = {
 					i(158928),	-- Bilgewater Patented Flamethrower (QI!)
 				},
-				-- May have earlier sourceQuest or no prerequisite; needs confirmation.
 				-- Not required for "Drust Do It."
 			}),
 			q(48944, {	-- Unlocking History

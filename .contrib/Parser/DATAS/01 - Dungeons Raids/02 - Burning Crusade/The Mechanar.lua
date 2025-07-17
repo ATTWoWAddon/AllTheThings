@@ -28,7 +28,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29659, {	-- Lost Treasure
 					["qg"] = 18481,	-- A'dal
-					-- #if ANYCLASSIC
+					-- #if BEFORE MOP
 					["description"] = "Blizzard broke the cache of the legion with Cataclysm Classic by removing the keys and not adding the automatic unlock from killing the mini bosses.",
 					["isBounty"] = true,
 					-- #else
@@ -40,9 +40,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					-- #endif
 					["timeline"] = {
 						ADDED_4_3_0,
-						-- #if ANYCLASSIC
 						REMOVED_4_3_0,
-						-- #endif
+						ADDED_5_0_4,
 					},
 					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
@@ -98,8 +97,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 			}),
 			o(184465, bubbleDownSelf({
-				-- #if ANYCLASSIC
-				["timeline"] = { REMOVED_4_0_3 },
+				-- #if BEFORE MOP
+				["timeline"] = { REMOVED_4_0_3, ADDED_5_0_4 },
 				["isBounty"] = true,
 				-- #endif
 			}, {	-- Cache of the Legion
@@ -107,8 +106,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				-- #if BEFORE 4.3.0.14942
 				["cost"] = {{ "i", 30438, 1 }},	-- Cache of the Legion Key
 				-- #endif
-				-- #if ANYCLASSIC
+				-- #if BEFORE MOP
+				-- #if AFTER WRATH
 				["sharedDescription"] = "Blizzard broke the cache of the legion with Cataclysm Classic by removing the keys and not adding the automatic unlock from killing the mini bosses.",
+				-- #endif
 				-- #endif
 				["groups"] = {
 					i(28252),	-- Bloodfyre Robes of Annihilation
@@ -163,11 +164,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(565, {	-- Pathaleon the Calculator
 					["creatureID"] = 19220,
 					["groups"] = {
-						ach(658, {	-- The Mechanar
-							-- #if BEFORE WRATH
-							["sourceQuest"] = 10704,	-- How to Break Into the Arcatraz
-							-- #endif
-						}),
+						ach(658),	-- The Mechanar
 						i(28288),	-- Abacus of Violent Odds
 						i(28269),	-- Baba's Cloak of Arcanistry
 						-- #if BEFORE 7.3.5
@@ -262,9 +259,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(565, {	-- Pathaleon the Calculator
 						["creatureID"] = 19220,
 						["groups"] = {
-							ach(679, {	-- Heroic: The Mechanar
-								["timeline"] = { ADDED_3_0_2 },
-							}),
+							ach(679),	-- Heroic: The Mechanar
 							ach(5079, {	-- Heroic: The Mechanar Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),

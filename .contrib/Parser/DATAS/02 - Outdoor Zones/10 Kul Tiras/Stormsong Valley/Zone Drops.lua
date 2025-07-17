@@ -25,6 +25,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					131663,	-- Flowing Honey
 				},
 			}),
+			i(155838),	-- Briarback Quills
 			i(163573, {	-- Goldenmane (MOUNT!)
 				["crs"] = {
 					132226,	-- Briarback Kraultender

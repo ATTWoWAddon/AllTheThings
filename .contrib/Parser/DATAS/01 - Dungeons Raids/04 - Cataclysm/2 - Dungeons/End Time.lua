@@ -52,7 +52,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 				q(30095, {	-- The End Time
 					["qg"] = 52408,	-- Coridormi
-					["coord"] = { 49.4, 87.4, STORMWIND_CITY },
+					["coords"] = {
+						-- #if BEFORE 8.1.5
+						{ 49.4, 87.4, STORMWIND_CITY },
+						-- #else
+						{ 47.3, 91.3, STORMWIND_CITY },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,

@@ -138,7 +138,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				q(54995),					-- A Savage Path Through Time
 				q(53037),					-- Emissary of War
 				-- #IF AFTER BFA
-				-- #IF BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				pvp(q(47148)),				-- Something Different
 				-- #ENDIF
 				-- #ENDIF

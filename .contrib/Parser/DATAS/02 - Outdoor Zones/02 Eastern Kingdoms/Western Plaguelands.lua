@@ -11,10 +11,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["icon"] = 236851,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(770),	-- Explore Western Plaguelands
+				ach(770),	-- Explore Western Plaguelands
 				ach(4893, {	-- Western Plaguelands Quests
 					["timeline"] = { ADDED_4_0_3 },
-					-- #if ANYCLASSIC
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
+					-- #else
 					["sourceQuests"] = {
 						27165,	-- Victory, For Now (A)
 						26926,	-- Victory, For Now (H)
@@ -137,29 +139,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_3_3_0 },
 				}),
 				-- #endif
-			}),
-			n(PROFESSIONS, {
-				prof(FISHING, {
-					-- #if AFTER CATA
-					o(180685),	-- Waterlogged Wreckage
-					-- #endif
-					o(180684, {	-- Greater Sagefish School
-						["maps"] = {
-							WESTERN_PLAGUELANDS,
-							EASTERN_PLAGUELANDS,
-							UNGORO_CRATER,
-							FERALAS,
-							THE_HINTERLANDS,
-							DUSTWALLOW_MARSH,
-							BLASTED_LANDS,
-							DESOLACE,
-							ARATHI_HIGHLANDS,
-							MOONGLADE,
-							STONETALON_MOUNTAINS,
-							THOUSAND_NEEDLES
-						},
-					})
-				}),
 			}),
 			n(QUESTS, {
 				q(5066, {	-- A Call to Arms: The Plaguelands! [Stormwind City]
@@ -3097,26 +3076,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				n(11936, {	-- Artist Renfray
-					["description"] = "Only visible if you have the Spectral Essence equipped.",
 					-- #IF AFTER 10.1.5
 					["provider"] = {"i",13544},	-- Spectral Essence
+					["description"] = "Only visible if you have the Spectral Essence equipped.",
 					-- #ENDIF
 					["coord"] = { 65.8, 75.4, WESTERN_PLAGUELANDS },
 					["groups"] = {
 						i(206358, {	-- Imported Candle
 							["cost"] = {{ "i", 206363, 1 }},	-- The Road Ahead
+							["timeline"] = { ADDED_10_1_5 },
 						}),
 					},
 				}),
 				n(11316, {	-- Joseph Dirte
-					["description"] = "Only visible if you have the Spectral Essence equipped.",
 					-- #IF AFTER 10.1.5
 					["provider"] = {"i",13544},	-- Spectral Essence
+					["description"] = "Only visible if you have the Spectral Essence equipped.",
 					-- #ENDIF
 					["coord"] = { 68.0, 74.8, WESTERN_PLAGUELANDS },
 					["groups"] = {
 						i(206354, {	-- Stinky Candle
 							["cost"] = {{ "i", 206359, 1 }},	-- Caer Darrow Fountain Water
+							["timeline"] = { ADDED_10_1_5 },
 						}),
 					},
 				}),
@@ -3133,22 +3114,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(11286, {	-- Magistrate Marduke
-					["description"] = "Only visible if you have the Spectral Essence equipped.",
 					-- #IF AFTER 10.1.5
 					["provider"] = {"i",13544},	-- Spectral Essence
+					["description"] = "Only visible if you have the Spectral Essence equipped.",
 					-- #ENDIF
 					["coord"] = { 70.5, 74.0, WESTERN_PLAGUELANDS },
 					["groups"] = {
 						i(206357, {	-- Authentic Andorhal Candle
 							["cost"] = {{ "i", 206362, 1 }},	-- The Deed to Andorhal
+							["timeline"] = { ADDED_10_1_5 },
 						}),
 					},
 				}),
 				n(11278, {	-- Magnus Frostwake
-					["coord"] = { 68.0, 77.6, WESTERN_PLAGUELANDS },
 					-- #if BEFORE CATA
 					["cost"] = { { "i", 13544, 1 } },	-- Spectral Essence
+					["description"] = "Only visible if you have the Spectral Essence equipped.",
 					-- #endif
+					["coord"] = { 68.0, 77.6, WESTERN_PLAGUELANDS },
 					["groups"] = {
 						i(8030),	-- Plans: Ebon Shiv (RECIPE!)
 						i(12823),	-- Plans: Huge Thorium Battleaxe (RECIPE!)
@@ -3168,26 +3151,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(11285, {	-- Rory
-					["description"] = "Only visible if you have the Spectral Essence equipped.",
 					-- #IF AFTER 10.1.5
 					["provider"] = {"i",13544},	-- Spectral Essence
+					["description"] = "Only visible if you have the Spectral Essence equipped.",
 					-- #ENDIF
 					["coord"] = { 63.4, 75.6, WESTERN_PLAGUELANDS },
 					["groups"] = {
 						i(206355, {	-- Tobacco-Filled Candle
 							["cost"] = {{ "i", 206360, 1 }},	-- Undelivered Shipment of Smokes
+							["timeline"] = { ADDED_10_1_5 },
 						}),
 					},
 				}),
 				n(11283, {	-- Sammy
-					["description"] = "Only visible if you have the Spectral Essence equipped.",
 					-- #IF AFTER 10.1.5
 					["provider"] = {"i",13544},	-- Spectral Essence
+					["description"] = "Only visible if you have the Spectral Essence equipped.",
 					-- #ENDIF
 					["coord"] = { 69.1, 78.7, WESTERN_PLAGUELANDS },
 					["groups"] = {
 						i(206356, {	-- Ghost-Warding Candle
 							["cost"] = {{ "i", 206361, 1 }},	-- Trampled Doll
+							["timeline"] = { ADDED_10_1_5 },
 						}),
 					},
 				}),

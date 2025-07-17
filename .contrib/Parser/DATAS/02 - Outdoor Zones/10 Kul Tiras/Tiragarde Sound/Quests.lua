@@ -25,7 +25,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 125922 },	-- Brother Therold
 				["g"] = {
-					i(152401),	-- Bunch of Seaweed (QI!)
+					o(273270, {	-- Harbor Seaweed
+						i(152401),	-- Bunch of Seaweed (QI!) (QI!)
+					}),
 					i(160098),	-- Freebooter Bands
 					i(158258),	-- Freebooter Handwraps
 					i(158260),	-- Navigator's Grips
@@ -149,8 +151,18 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 125922 },	-- Brother Therold
 				["g"] = {
-					i(152586),	-- Bundle of Vellum (QI!)
-					i(152585),	-- Seal Blubber (QI!)
+					o(273799, {	-- Bundle of Vellum
+						["coord"] = { 43.2, 29.7, TIRAGARDE_SOUND },
+						["g"] = {
+							i(152586),	-- Bundle of Vellum (QI!)
+						},
+					}),
+					o(273798, {	-- Jar of Blubber
+						["coord"] = { 41.8, 30.0, TIRAGARDE_SOUND },
+						["g"] = {
+							i(152585),	-- Seal Blubber (QI!)
+						},
+					}),
 				},
 			}),
 			q(49737, {	-- Air Raid
@@ -169,7 +181,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 125922 },	-- Brother Therold
 				["g"] = {
-					i(153513),	-- Cleansing Tonic (QI!)
+					i(153513),	-- Cleansing Tonic (PQI!)
 				},
 			}),
 			q(48080, {	-- An Element of Danger
@@ -210,7 +222,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(49260, {	-- Backup While I Pack Up
 				["sourceQuests"] = { 49225 },	-- Chasing the Leader
-				["coord"] = { 59.3, 38.9, 1171 },	-- Gol Thovas
+				["coord"] = { 58.7, 37.7, 1171 },	-- Gol Thovas
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 128349 },	-- Hilde Firebreaker
 			}),
@@ -295,7 +307,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 48070 },	-- The Norwington Festival
 				["coord"] = { 55.4, 24.6, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
-				["provider"] = { "n", 125398 },	-- Harold Beckett
+				["providers"] = {
+					{ "n", 125398 },	-- Harold Beckett
+					{ "i", 152643 },	-- Bola Launcher (PQI!)
+				},
 			}),
 			q(49439, {	-- Boss' Revenge
 				["sourceQuests"] = { 49435 },	-- Where'd They Go?
@@ -663,11 +678,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(49233, {	-- I'm a Druid, Not a Priest
-				["coord"] = { 50.8, 69.4, 1171 },	-- Gol Thovas
+				["coord"] = { 50.4, 70.2, 1171 },	-- Gol Thovas
 				["races"] = ALLIANCE_ONLY,
-				["provider"] = { "n", 128349 },	-- Hilde Firebreaker
+				["provider"] = { "n", 128354 },	-- Birch Tomlin
 				["g"] = {
-					i(153350),	-- Repurposed Gilnean Staff (QI!)
+					i(153350),	-- Repurposed Gilnean Staff (PQI!)
 				},
 			}),
 			q(49450, {	-- Incident Reports
@@ -840,6 +855,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 52.5, 28.5, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 125042 },	-- Gora Layton
+				["g"] = {
+					i(153357),	-- Battlehorn of the Mountain (PQI!)
+				},
 			}),
 			q(49178, {	-- My Favorite Things (A)
 				["sourceQuests"] = { 49218 },	-- The Castaways
@@ -1115,15 +1133,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 127492 },	-- Majo
 				["g"] = {
-					i(152847),	-- Durable Seashell (QI!)
+					o(276496, {	-- Durable Seashell
+						i(152847),	-- Durable Seashell (QI!)
+					}),
 				},
 			}),
 			q(49232, {	-- Salvaging a Disaster
-				["coord"] = { 50.8, 69.4, 1171 },	-- Gol Thovas
+				["coord"] = { 51.2, 70.6, 1171 },	-- Gol Thovas
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 128353 },	-- Pendi Cranklefuse
 				["g"] = {
-					i(153349),	-- Drust Relic (QI!)
+					o(277427, {	-- Packaged Relics
+						i(153349),	-- Drust Relic (QI!)
+					}),
 				},
 			}),
 			q(53041, {	-- Sampling the Goods
@@ -1164,7 +1186,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 140752 },	-- Jenny Swiftbrook
 				["g"] = {
 					i(161439),	-- Gleaming Spiral (QI!)
-					i(161440),	-- Sparkling Tidescale (QI!)
+					o(292917, {	-- Sparkling Tidescale
+						i(161440),	-- Sparkling Tidescale (QI!)
+					}),
 				},
 			}),
 			q(48939, {	-- Show Me What You've Got
@@ -1207,14 +1231,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(48778, {	-- Stone Soup
-				["provider"] = { "o", 276837 },	-- Recipe Rock
+				["providers"] = {
+					{ "i", 152666 },	-- Recipe Rock (QS!)
+					{ "o", 276837 },	-- Recipe Rock
+				},
 				["coord"] = { 56.1, 17.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					i(152675),	-- Saurolisk Scale (QI!)
-					i(152670),	-- Soup Stone (QI!)
-					i(152678),	-- Stirring Bone (QI!)
 					i(152671),	-- Unidentifiable Meat (QI!)
+					o(276270, {	-- Soup Stone
+						i(152670),	-- Soup Stone (QI!)
+					}),
+					o(276838, {	-- Stirring Bone
+						["coord"] = { 58.1, 14.6, TIRAGARDE_SOUND },
+						["g"] = {
+							i(152678),	-- Stirring Bone (QI!)
+						},
+					}),
 				},
 			}),
 			q(47489, {	-- Stow and Go
@@ -1230,9 +1264,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122671 },	-- Cagney
 			}),
 			q(52311, {	-- Sweete's Strongbox
-			--	coords depend on where you finish the previous quest
+				--	Coordinates depend on where you finish the previous quest
 				["sourceQuests"] = { 52253 },	-- The Keys to Success in Freehold
-				["provider"] = { "n", 141032 },	-- Flynn Fairwind
+				["provider"] = { "n", 141032 },	-- Flynn Fairwind (mobileNPC)
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(48354, {	-- Tainted Shipments
@@ -1408,7 +1442,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(49393, {	-- The Roughnecks
 				["provider"] = { "o", 278252 },	-- Job Flyer
-				["coord"] = { 42.4, 27.2, TIRAGARDE_SOUND },
+				["coords"] = {
+					{ 42.4, 27.2, TIRAGARDE_SOUND },
+					{ 51.7, 29.7, TIRAGARDE_SOUND },
+				},
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(49229, {	-- The Ruins Fought Back

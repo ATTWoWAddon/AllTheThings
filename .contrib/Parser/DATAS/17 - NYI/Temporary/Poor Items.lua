@@ -1115,11 +1115,8 @@ root(ROOTS.NeverImplemented, {
 				filter(MISC, {
 					i(32322),	-- Monster - Crystal Offhand, Blood Elf - Green
 					i(49935),	-- Monster - Dagger, Blood Elf A01 Blue (Frost Enchantment)
-					i(21796),	-- Monster - Item, Ahn'Qiraj Held Scepter
 					i(28648),	-- Monster - Item, Book - Book of the Dead (Skull)
 					i(25587),	-- Monster - Item, Broom (On Fire)
-					i(21121),	-- Monster - Item, Flower - Purple
-					i(21123),	-- Monster - Item, Flower - White
 					i(34881),	-- Monster - Item, Offhand Outland Raid D01
 					i(33963),	-- Monster - Item, Tankard Brewfest (Year 1 Yellow)
 					i(37059),	-- Monster - Item, Tankard Brewfest (Year 2 Blue)
@@ -2532,10 +2529,7 @@ root(ROOTS.NeverImplemented, {
 					i(49722),	-- Monster - Caster Offhand, Icecrown Citadel
 					i(49160),	-- Monster - Item, Book - C01 Silver
 					i(52359),	-- Monster - Item, Potion Purple Offhand
-					i(33162),	-- Monster - Item, Tankard Gold Offhand (Yellow Glow)
-					i(36761),	-- Monster - Item, Tankard Metal Offhand (Red Glow)
 					i(61295),	-- Monster - Item, Ulduar Raid D03 Red (Offhand)
-					i(34717),	-- Monster - Item, Vial Green Offhand
 					i(49016),	-- Monster - Rod, Horde Purple Orb
 				}),
 				filter(ONE_HANDED_MACES, {
@@ -2968,14 +2962,6 @@ root(ROOTS.NeverImplemented, {
 					i(80007),	-- Monster - PVP_320_C_01, Dark
 					i(80290),	-- Monster - PVP_320_C_01, Dark (Scholomance Acolyte)
 					i(93368),	-- Monster - Staff_2h_PVP400_C_01 - Blue
-					i(79720),	-- Monster - Staff, Panda A01
-					i(79721),	-- Monster - Staff, Panda A01 - Blue
-					i(79722),	-- Monster - Staff, Panda A01 - Green
-					i(79723),	-- Monster - Staff, Panda A01 - Purple
-					i(79716),	-- Monster - Staff, Panda B01 - Blue
-					i(79717),	-- Monster - Staff, Panda B01 - Gold
-					i(79718),	-- Monster - Staff, Panda B01 - Jade
-					i(79719),	-- Monster - Staff, Panda B01 - Red
 					i(79980),	-- Monster - Stave_2h_430Future_C_01 - Test
 					i(97562),	-- Monster - Stave_2h_deathwingraid_d_03 Red
 					i(80292),	-- Monster, Malevolence (Scholomance Neophyte)

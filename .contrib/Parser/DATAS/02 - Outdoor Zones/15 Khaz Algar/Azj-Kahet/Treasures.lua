@@ -14,6 +14,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 43.6, 39.8, AZJ_KAHET },
 				},
 				["questID"] = 83772,
+				["isWeekly"] = true,
 			}),
 			o(446097, {	-- Disturbed Soil
 				["coord"] = { 67.4, 90.7, AZJ_KAHET },
@@ -99,9 +100,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 35.7, 39.2, AZJ_KAHET },
 					{ 50.1, 50.7, AZJ_KAHET },
 					{ 51.8, 29.9, AZJ_KAHET },
-				},
-				["g"] = {
-					i(220504),	-- Deep-Dweller's Orb of the Harmonious
 				},
 			}),
 			o(444797, {	-- Threadspun Cache

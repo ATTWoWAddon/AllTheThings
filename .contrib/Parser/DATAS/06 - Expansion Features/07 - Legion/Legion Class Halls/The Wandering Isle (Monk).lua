@@ -167,7 +167,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["maps"] = { 791, 792 },	-- Temple of the Jade Serpent (Scenario Map)
 							["g"] = {
 								i(128938, {	-- Fu Zan, the Wanderer's Companion
-									artifact(289),	-- Fu Zan, the Wanderer's Companion
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(289),	-- Fu Zan, the Wanderer's Companion
+									},
 								}),
 							},
 						}),
@@ -185,7 +188,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["maps"] = { 728 },	-- Terrace of Endless Spring (Scenario Map)
 							["g"] = {
 								i(128937, {	-- Sheilun, Staff of the Mists
-									artifact(123),	-- Sheilun, Staff of the Mists
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(123),	-- Sheilun, Staff of the Mists
+									},
 								}),
 							},
 						}),
@@ -220,10 +226,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["g"] = {
 								i(132745),	-- Essence of the Whirlwind (QI!)
 								i(128940, {	-- Fists of the Heavens [Main Hand]
-									artifact(290),	-- Fists of the Heavens [Main Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(290),	-- Fists of the Heavens [Main Hand]
+									},
 								}),
 								i(133948, {	-- Fists of the Heavens [Off Hand]
-									artifact(290),	-- Fists of the Heavens [Off Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(290),	-- Fists of the Heavens [Off Hand]
+									},
 								}),
 							},
 						}),
@@ -643,6 +655,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 117305 },	-- Brewmaster Almai
 						["coord"] = { 53.6, 53.3, BROKEN_SHORE },
 						["timeline"] = { ADDED_7_2_0 },
+						["g"] = {
+							i(146312),	-- Demonic Ash (QI!)
+							i(146311),	-- Flask of Fel Blood (QI!)
+							i(146310),	-- Vial of Liquid Felflame (QI!)
+						},
 					}),
 					q(45545, {	-- Barrel Toss
 						["sourceQuests"] = { 45459 },	-- Storming the Legion
@@ -716,6 +733,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 120744 },	-- Smelly Mountaintop
 						["coord"] = { 47.9, 49.0, KUN_LAI_SUMMIT },
 						["timeline"] = { ADDED_7_2_0 },
+						["g"] = {
+							i(147314),	-- Part of Smelly's Luckydo (QI!)
+						},
 					}),
 					q(46346, {	-- The Shadow of Ban-Lu
 						["sourceQuests"] = { 46344 },	-- Smelly's Luckydo
@@ -740,6 +760,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
 						["coord"] = { 74.4, 88.7, KUN_LAI_SUMMIT },
 						["timeline"] = { ADDED_7_2_0 },
+						["g"] = {
+							i(147313),	-- Moon Lily (QI!)
+						},
 					}),
 					q(46350, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Trial of Ban-Lu
 						["sourceQuests"] = { 46349 },	-- Lilies for Ryuli

@@ -13,12 +13,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			crit(61200, {	-- Place a Gnoll Tent
 				["provider"] = { "i", 193476 },	-- Place a Gnoll Tent
 			}),
-			crit(61203, {	-- Cured Rugged Hide
-				["provider"] = { "i", 15407 },	-- Cured Rugged Hide
-			}),
-			crit(61204, {	-- Stitch a Magnificent Hide Pack
-				["provider"] = { "i", 95536 },	-- Stitch a Magnificent Hide Pack
-			}),
+			crit(61203),	-- Cured Rugged Hide (automated)
+			crit(61204),	-- Stitch a Magnificent Hide Pack (automated)
 			crit(61207, {	-- Eat Dirge's Kickin' Chimaerok Chops
 				["provider"] = { "i", 21023 },	-- Eat Dirge's Kickin' Chimaerok Chops
 			}),
@@ -27,47 +23,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["provider"] = { "i", 122674 },	-- S.E.L.F.I.E. Camera MkII
 			}),
 		}),
-		ach(18900, {	-- Budget Bard
-			crit(61660, {	-- Drums of Panic
-				["provider"] = { "i", 29532 },	-- Drums of Panic
-			}),
-			crit(61661, {	-- Drums of Restoration
-				["provider"] = { "i", 29531 },	-- Drums of Restoration
-			}),
-			crit(61662, {	-- Drums of War
-				["provider"] = { "i", 29528 },	-- Drums of War
-			}),
-			crit(61663, {	-- Drums of Battle
-				["provider"] = { "i", 29529 },	-- Drums of Battle
-			}),
-			crit(61664, {	-- Drums of Speed
-				["provider"] = { "i", 29530 },	-- Drums of Speed
-			}),
-			crit(61665, {	-- Drums of Forgotten Kings
-				["provider"] = { "i", 49633 },	-- Drums of Forgotten Kings
-			}),
-			crit(61666, {	-- Drums of the Wild
-				["provider"] = { "i", 49634 },	-- Drums of the Wild
-			}),
-			crit(61667, {	-- Drums of Rage
-				["provider"] = { "i", 102351 },	-- Drums of Rage
-			}),
-			crit(61668, {	-- Drums of Fury
-				["provider"] = { "i", 120257 },	-- Drums of Fury
-			}),
-			crit(61669, {	-- Drums of the Mountain
-				["provider"] = { "i", 142406 },	-- Drums of the Mountain
-			}),
-			crit(61672, {	-- Drums of the Maelstrom
-				["provider"] = { "i", 154167 },	-- Drums of the Maelstrom
-			}),
-			crit(61673, {	-- Drums of Deathly Ferocity
-				["provider"] = { "i", 172233 },	-- Drums of Deathly Ferocity
-			}),
-			crit(61675, {	-- Feral Hide Drums
-				["provider"] = { "i", 193470 },	-- Feral Hide Drums
-			}),
-		}),
+		ach(18900),	-- Budget Bard (automated)
 	})),
 	expansion(EXPANSION.CLASSIC, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
@@ -198,20 +154,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 	}),
 	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
-			ach(18894, {	-- Free Stylin'
-				crit(61631, {	-- Stylin' Purple Hat
-					["provider"] = { "i", 25680 },	-- Stylin' Purple Hat
-				}),
-				crit(61632, {	-- Stylin' Adventure Hat
-					["provider"] = { "i", 25681 },	-- Stylin' Adventure Hat
-				}),
-				crit(61633, {	-- Stylin' Crimson Hat
-					["provider"] = { "i", 25683 },	-- Stylin' Crimson Hat
-				}),
-				crit(61634, {	-- Stylin' Jungle Hat
-					["provider"] = { "i", 25682 },	-- Stylin' Jungle Hat
-				}),
-			}),
+			ach(18894),	-- Free Stylin' (automated)
 		})),
 	})),
 	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
@@ -766,7 +709,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["g"] = {
 					i(147116),	-- Captured Spirit of the Father of Owls (QI!)
 					i(147075),	-- Spirit Net (QI!)
-				}
+				},
 			}),
 			q(46694, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Mail of the Ancients
 				["sourceQuests"] = { 46690 },	-- The Legend of the Wardenscale
@@ -1519,38 +1462,6 @@ local function bloodied(t)
 	return t;
 end
 
--- Bloodthirsty Crafted Gear was added with Firelands and then removed from the game after Dragon Soul was released.
--- #if ANYCLASSIC
-local BLOODTHIRSTY_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_HOUR_OF_TWILIGHT .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = ]] .. CATA_PHASE_RAGE_OF_THE_FIRELANDS .. [[;
-		t.rwp = 40300;
-	end
-end]];
--- #endif
-local function bloodthirsty(t)
-	-- #if CATA
-	t.timeline = { ADDED_4_2_0, REMOVED_5_0_4 };
-		-- #if ANYCLASSIC
-		t.OnUpdate = BLOODTHIRSTY_ONUPDATE;
-		-- #endif
-	-- #else
-	t.timeline = { ADDED_4_2_0, REMOVED_4_3_0 };
-	-- #endif
-	return applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, t);
-end
-
-local function moltenfront(t)
-	t.timeline = { ADDED_4_2_0 };
-	return applyclassicphase(CATA_PHASE_MOLTEN_FRONT, t);
-end
-local function firelands(t)
-	t.timeline = { ADDED_4_2_0 };
-	return applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, t);
-end
 local function dragonsoul(t)
 	t.timeline = { ADDED_4_3_0 };
 	return applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, t);
@@ -4015,7 +3926,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Fur Lining - Arcane Resist",
-					["timeline"] = { REMOVED_6_0_2 },
+					["timeline"] = { DELETED_5_5_0 },
 					["recipeID"] = 57701
 				},
 				{
@@ -4025,17 +3936,17 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Fur Lining - Fire Resist",
-					["timeline"] = { REMOVED_6_0_2 },
+					["timeline"] = { DELETED_5_5_0 },
 					["recipeID"] = 57692
 				},
 				{
 					["name"] = "Fur Lining - Frost Resist",
-					["timeline"] = { REMOVED_6_0_2 },
+					["timeline"] = { DELETED_5_5_0 },
 					["recipeID"] = 57694
 				},
 				{
 					["name"] = "Fur Lining - Nature Resist",
-					["timeline"] = { REMOVED_6_0_2 },
+					["timeline"] = { DELETED_5_5_0 },
 					["recipeID"] = 57699
 				},
 				{
@@ -4045,7 +3956,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Fur Lining - Shadow Resist",
-					["timeline"] = { REMOVED_6_0_2 },
+					["timeline"] = { DELETED_5_5_0 },
 					["recipeID"] = 57696
 				},
 				{
@@ -4071,7 +3982,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Jormungar Leg Reinforcements",
-					["timeline"] = { REMOVED_6_0_2 },
+					["timeline"] = { DELETED_5_5_0 },
 					["recipeID"] = 60583
 				},
 				{
@@ -4080,7 +3991,7 @@ profession(LEATHERWORKING, {
 				},
 				{
 					["name"] = "Nerubian Leg Reinforcements",
-					["timeline"] = { REMOVED_6_0_2 },
+					["timeline"] = { DELETED_5_5_0 },
 					["recipeID"] = 60584
 				},
 			},
@@ -9371,7 +9282,7 @@ profession(LEATHERWORKING, {
 			},
 		},
 	})),
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, expansion(EXPANSION.SL, {
+	applyclassicphase(SL_PHASE_ONE, expansion(EXPANSION.SL, {
 		applytraining({
 			["name"] = "Quest Recipes",
 			["categoryID"] = 1531,

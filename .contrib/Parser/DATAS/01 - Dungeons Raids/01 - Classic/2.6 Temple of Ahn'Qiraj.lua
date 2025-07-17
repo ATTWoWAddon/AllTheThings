@@ -14,11 +14,13 @@ SILITHID_ROYALTY_SHARED_DROPS = createHeader({
 	icon = 133575,
 	text = {
 		en = "Silithid Royalty",
+		es = "Realeza Silitida",
+		mx = "Realeza Silitida",
 	},
 });
 -- #endif
 
-root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE, {
+root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE, bubbleDown({ ["timeline"] = { ADDED_1_9_0 } }, {
 	inst(744, {	-- Temple of Ahn'Qiraj
 		["lore"] = "Dark whispers ride on the winds of Silithus desert. An old god stirs in his wretched lair and the entire world shall soon be the target of his wrath.\n\nAfter thousands of years of slumber, the old god, C'thun has awakened and is quickly regenerating his power. Once he has reached full potential nothing will be able to stop him. The dragons that so humbly sacrificed themselves so long ago to imprison C'thun are weakened or enslaved in the temple, so the charge of protecting the land falls to other heroes.\n\nHeroes must enter Temple of Ahn'Qiraj, challenge C'thun's most wicked servants, and slay a god. The road will not be easy and it is wrought with peril at every turn. Will the heroes turn back now or face C'thun in his mighty lair and put an end to him once and for all?",
 		-- #if BEFORE WRATH
@@ -49,7 +51,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					["maps"] = { CAVERNS_OF_TIME, SILITHUS },
 				}),
 			}),
-			n(QUESTS, {
+			n(QUESTS,
+			-- #if SEASON_OF_DISCOVERY
+			bubbleDown({ ["timeline"] = { REMOVED_1_15_5 } },
+			-- #endif
+			{
 				cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
 					q(8667, {	-- Genesis Helm
 						["qg"] = 15502,	-- Andorgos
@@ -1062,7 +1068,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				q(8802, {	-- The Savior of Kalimdor
-					["provider"] = { "i", 21221 },	-- Eye of C'Thun
+					["providers"] = {
+						{ "n", 15379 },	-- Caelestrasz (QG!)
+						{ "i", 21221 },	-- Eye of C'Thun (QI!)
+					},
 					["sourceQuest"] = 8801,	-- C'Thun's Legacy
 					["groups"] = {
 						i(21712),	-- Amulet of the Fallen God
@@ -1070,7 +1079,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						i(21709),	-- Ring of the Fallen God
 					},
 				}),
-			}),
+			}
+			-- #if SEASON_OF_DISCOVERY
+			)
+			-- #endif
+			),
 			filter(RECIPES, {
 				["crs"] = {
 					15516,	-- Battleguard Sartura
@@ -1548,11 +1561,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 			e(1551, {	-- C'Thun
 				["creatureID"] = 15727,
 				["groups"] = {
-					ach(687, {	-- Temple of Ahn'Qiraj
-						-- #if BEFORE WRATH
-						["sourceQuest"] = 8801,	-- C'Thun's Legacy
-						-- #endif
-					}),
+					ach(687),	-- Temple of Ahn'Qiraj
 					ach(5058, {	-- Temple of Ahn'Qiraj Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),
@@ -1696,10 +1705,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 							i(234237), -- Pattern: Razorbramble Cowl
 							i(234239), -- Pattern: Razorbramble Leathers
 							i(234238), -- Pattern: Razorbramble Shoulderpads
-							i(234244), -- Pattern: Qiraji Silk Scarf
-							i(234249), -- Pattern: Qiraji Silk Cape
-							i(234250), -- Pattern: Qiraji Silk Cloak
-							i(234251), -- Pattern: Qiraji Silk Drape
+							i(234249), -- Pattern: Qiraji Silk Cape (RECIPE!)
+							i(234250), -- Pattern: Qiraji Silk Cloak (RECIPE!)
+							i(234251), -- Pattern: Qiraji Silk Drape (RECIPE!)
+							i(234244), -- Pattern: Qiraji Silk Scarf (RECIPE!)
 							i(234240), -- Pattern: Vampiric Cowl
 							i(234241), -- Pattern: Vampiric Shawl
 							i(234242), -- Pattern: Vampiric Robe
@@ -1713,10 +1722,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 							i(234220), -- Plans: Razorspike Headcage
 							i(234221), -- Plans: Razorspike Shoulderplates
 							i(234222), -- Plans: Razorspike Battleplate
-							i(234252), -- Recipe: Flask of Unyielding Sorrow
-							i(234253), -- Recipe: Flask of Ancient Knowledge
-							i(234255), -- Recipe: Flask of the Old Gods
-							i(234256), -- Recipe: Flask of Madness
+							i(234253), -- Recipe: Flask of Ancient Knowledge (RECIPE!)
+							i(234256), -- Recipe: Flask of Madness (RECIPE!)
+							i(234255), -- Recipe: Flask of the Old Gods (RECIPE!)
+							i(234252), -- Recipe: Flask of Unyielding Sorrow (RECIPE!)
 							i(234264), -- Schematic: G00 DV-1B3 Generator
 							i(234265), -- Schematic: Tuned Force Reactive Disk
 							i(234435), -- Schematic: Obsidian Shotgun
@@ -1724,373 +1733,414 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						},
 					}),
 				}),
-				n(15503, {	-- Kandrostrasz (LEGS AND BOOTS)
+				n(15502, {	-- Anachronos (RINGS)
+					["coord"] = { 65.2, 50.0, TANARIS },
+					["groups"] = {
+						-- NEUTRAL
+						i(234016, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						}),
+						i(234017, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						}),
+						i(234018, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						}),
+						i(234019, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						}),
+						i(234020, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						}),
+						i(234440, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+							["classes"] = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
+						}),
+						i(234968, {	-- Signet Ring of the Bronze Dragonflight SHAMAN/WARLOCK TANK
+						--	["cost"] = { { "i", 00000, 1 }, },	-- Replace with the actual cost if needed
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+							["classes"] = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
+						}),
+
+						-- FRIENDLY
+						i(234021, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						}),
+						i(234022, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						}),
+						i(234023, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						}),
+						i(234024, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						}),
+						i(234025, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						}),
+						i(234439, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+							["classes"] = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
+						}),
+						i(234967, {	-- Signet Ring of the Bronze Dragonflight SHAMAN/WARLOCK TANK
+						--	["cost"] = { { "i", 00000, 1 }, },	-- Replace with the actual cost if needed
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+							["classes"] = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
+						}),
+
+						-- HONORED
+						i(234026, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+						}),
+						i(234027, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+						}),
+						i(234028, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+						}),
+						i(234029, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+						}),
+						i(234030, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+						}),
+						i(234438, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+							["classes"] = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
+						}),
+						i(234966, {	-- Signet Ring of the Bronze Dragonflight SHAMAN/WARLOCK TANK
+						--	["cost"] = { { "i", 00000, 1 }, },	-- Replace with the actual cost if needed
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+							["classes"] = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
+						}),
+
+						-- REVERED
+						i(234031, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
+						}),
+						i(234032, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
+						}),
+						i(234033, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
+						}),
+						i(234034, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
+						}),
+						i(234035, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
+						}),
+						i(234437, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
+							["classes"] = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
+						}),
+						i(234965, {	-- Signet Ring of the Bronze Dragonflight SHAMAN/WARLOCK TANK
+						--	["cost"] = { { "i", 00000, 1 }, },	-- Replace with the actual cost if needed
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
+							["classes"] = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
+						}),
+
+						-- Exalted
+						i(234198, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+						}),
+						i(234199, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+						}),
+						i(234200, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+						}),
+						i(234201, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+						}),
+						i(234202, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+						}),
+						i(234436, {	-- Signet Ring of the Bronze Dragonflight
+						--	["cost"] = { { "i", 00000, 1 }, },	--
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+							["classes"] = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
+						}),
+						i(234964, {	-- Signet Ring of the Bronze Dragonflight SHAMAN/WARLOCK TANK
+						--	["cost"] = { { "i", 00000, 1 }, },	-- Replace with the actual cost if needed
+							["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+							["classes"] = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
+						}),
+					},
+				}),
+				n(15502, {	-- Andorgos <Brood of Malygos> (HEAD & SHOULDER)
 					["groups"] = {
 						cl(DRUID, {
-							i(233710, {    -- Genesis Leather Pants
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
-							i(233712, {    -- Genesis Stompers
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
+							-- DPS (AGILITY)
+							i(233709),	-- Genesis Cowl
+							i(233713),	-- Genesis Spaulders
 							-- DPS (Intellect)
-							i(233714, {    -- Genesis Leggings
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
-							i(233716, {    -- Genesis Treads
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
+							i(233717),	-- Genesis Mantle
+							i(233718),	-- Genesis Headdress
 							-- Healer
-							i(233719, {    -- Genesis Breeches
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
-							i(233721, {    -- Genesis Greaves
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
+							i(233722),	-- Genesis Pauldrons
+							i(233723),	-- Genesis Mask
 							-- Tank
-							i(233414, {    -- Genesis Boots
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
-							i(233416, {    -- Genesis Trousers
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
+							i(233412),	-- Genesis Helm
+							i(233413),	-- Genesis Shoulderpads
 						}),
 						cl(HUNTER, {
 							-- Melee
-							i(233665, {    -- Striker's Treads
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
-							i(233667, {    -- Striker's Chain Legplates
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
+							i(233666),	-- Striker's Visor
+							i(233668),	-- Striker's Spaulders
 							-- Ranged
-							i(233407, {    -- Striker's Footguards
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
-							i(233408, {    -- Striker's Leggings
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
+							i(233409),	-- Striker's Pauldrons
+							i(233410),	-- Striker's Diadem
 						}),
 						cl(MAGE, {
 							-- DPS
-							i(233405, {    -- Enigma Boots
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
-							i(233406, {    -- Enigma Leggings
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
+							i(233403),	-- Enigma Shoulderpads
+							i(233404),	-- Enigma Circlet
 							-- Healer
-							i(233674, {    -- Enigma Pants
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
-							i(233675, {    -- Enigma Slippers
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
+							i(233676),	-- Enigma Diadem
+							i(233677),	-- Enigma Mantle
 						}),
 						cl(PALADIN, {
 							-- DPS
-							i(233399, {    -- Avengers' Greaves
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
-							i(233400, {    -- Avengers' Legguards
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
+							i(233398),	-- Avengers Crown
+							i(233401),	-- Avengers Pauldrons
 							-- Healer
-							i(233685, {    -- Avengers' Plate Pants
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
-							i(233686, {    -- Avengers' Treads
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
+							i(233684),	-- Avengers Mantle
+							i(233687),	-- Avengers Helm
 							-- Tank
-							i(233690, {    -- Avengers' Tassets
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
-							i(233691, {    -- Avengers' Sabatons
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
+							i(233689),	-- Avengers Spaulders
+							i(233692),	-- Avengers Great Helm
 						}),
 						cl(PRIEST, {
 							-- DPS
-							i(233392, {    -- Footwraps of the Oracle
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
-							i(233396, {    -- Trousers of the Oracle
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
+							i(233393),	-- Tiara of the Oracle
+							i(233394),	-- Mantle of the Oracle
 							-- Healer
-							i(233679, {    -- Leggings of the Oracle
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
-							i(233683, {    -- Slippers of the Oracle
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
+							i(233681),	-- Shoulderpads of the Oracle
+							i(233682),	-- Crown of the Oracle
 						}),
 						cl(ROGUE, {
 							-- DPS
-							i(233390, {    -- Deathdealer's Leggings
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
-							i(233391, {    -- Deathdealer's Boots
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
+							i(233387),	-- Deathdealer's Spaulders
+							i(233388),	-- Deathdealer's Helm
 							-- Tank
-							i(233660, {    -- Deathdealer's Treads
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
-							i(233662, {    -- Deathdealer's Pants
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
+							i(233661),	-- Deathdealer's Visor
+							i(233663),	-- Deathdealer's Pauldrons
 						}),
 						cl(SHAMAN, {
-							-- DPS (Agility)
-							i(233701, {    -- Stormcaller's Treads
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
-							i(233703, {    -- Stormcaller's Chain Leggings
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
+							i(233700),	-- Stormcaller's Crown
+							i(233702),	-- Stormcaller's Mantle
 							-- DPS (Intellect)
-							i(233706, {    -- Stormcaller's Greaves
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
-							i(233708, {    -- Stormcaller's Mail Leggings
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
-
+							i(233705),	-- Stormcaller's Headdress
+							i(233707),	-- Stormcaller's Epaulets
 							-- Healer
-							i(233382, {    -- Stormcaller's Leggings
-								["cost"] = {	
-									-- { "i", 231797, 1 },	-- 	-- 
-									-- { "i", 231797, 1 },	-- 	-- 
-									-- { "i", 231797, 1 },	-- 	-- 
-								},
-							}),
-							i(233384, {    -- Stormcaller's Footguards
-								["cost"] = {	
-									-- { "i", 231797, 1 },	-- 	-- 
-									-- { "i", 231797, 1 },	-- 	-- 
-									-- { "i", 231797, 1 },	-- 	-- 
-								},
-							}),
-
+							i(233383),	-- Stormcaller's Pauldrons
+							i(233385),	-- Stormcaller's Diadem
 							-- Tank
-							i(233698, {    -- Stormcaller's Legplates
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
-							i(233701, {    -- Stormcaller's Treads
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
+							i(233695),	-- Stormcaller's Faceguard
+							i(233697),	-- Stormcaller's Spaulders
 						}),
 						cl(WARLOCK, {
 							-- DPS
-							i(233377, {    -- Doomcaller's Footwraps
-								["cost"] = {	
-									-- { "i", 231797, 1 },	-- 	-- 
-									-- { "i", 231797, 1 },	-- 	-- 
-									-- { "i", 231797, 1 },	-- 	-- 
-								},
-							}),
-							i(233378, {    -- Doomcaller's Trousers
-								["cost"] = {	
-									-- { "i", 231797, 1 },	-- 	-- 
-									-- { "i", 231797, 1 },	-- 	-- 
-									-- { "i", 231797, 1 },	-- 	-- 
-								},
-							}),
-
+							i(233379),	-- Doomcaller's Mantle
+							i(233381),	-- Doomcaller's Circlet
 							-- Tank
-							i(233377, {    -- Doomcaller's Footwraps
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
-							i(233378, {    -- Doomcaller's Trousers
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
+							i(233669),	-- Doomcaller's Headguard
+							i(233671),	-- Doomcaller's Shoulderpads
 						}),
 						cl(WARRIOR, {
 							-- DPS
-							i(233652, {    -- Conqueror's Sabatons
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
-							i(233654, {    -- Conqueror's Tassets
-								["cost"] = {
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-									-- { "i", 231797, 1 },	-- 
-								},
-							}),
-
+							i(233653),	-- Conqueror's Helm
+							i(233658),	-- Conqueror's Pauldrons
 							-- Tank
-							i(233372, {    -- Conqueror's Greaves
-								["cost"] = {	
-									-- { "i", 231797, 1 },	-- 	-- 
-									-- { "i", 231797, 1 },	-- 	-- 
-									-- { "i", 231797, 1 },	-- 	-- 
-								},
-							}),
-							i(233374, {    -- Conqueror's Legguards
-								["cost"] = {	
-									-- { "i", 231797, 1 },	-- 	-- 
-									-- { "i", 231797, 1 },	-- 	-- 
-									-- { "i", 231797, 1 },	-- 	-- 
-								},
-							}),
+							i(233375),	-- Conqueror's Crown
+							i(233376),	-- Conqueror's Spaulders
+						}),
+					},
+				}),
+				n(15503, {	-- Kandrostrasz (LEGS AND BOOTS)
+					["groups"] = {
+						cl(DRUID, {
+							i(233710),	-- Genesis Leather Pants
+							i(233712),	-- Genesis Stompers
+							-- DPS (Intellect)
+							i(233714),	-- Genesis Leggings
+							i(233716),	-- Genesis Treads
+							-- Healer
+							i(233719),	-- Genesis Breeches
+							i(233721),	-- Genesis Greaves
+							-- Tank
+							i(233414),	-- Genesis Boots
+							i(233416),	-- Genesis Trousers
+						}),
+						cl(HUNTER, {
+							-- Melee
+							i(233665),	-- Striker's Treads
+							i(233667),	-- Striker's Chain Legplates
+							-- Ranged
+							i(233407),	-- Striker's Footguards
+							i(233408),	-- Striker's Leggings
+						}),
+						cl(MAGE, {
+							-- DPS
+							i(233405),	-- Enigma Boots
+							i(233406),	-- Enigma Leggings
+							-- Healer
+							i(233674),	-- Enigma Pants
+							i(233675),	-- Enigma Slippers
+						}),
+						cl(PALADIN, {
+							-- DPS
+							i(233399),	-- Avengers' Greaves
+							i(233400),	-- Avengers' Legguards
+							-- Healer
+							i(233685),	-- Avengers' Plate Pants
+							i(233686),	-- Avengers' Treads
+							-- Tank
+							i(233690),	-- Avengers' Tassets
+							i(233691),	-- Avengers' Sabatons
+						}),
+						cl(PRIEST, {
+							-- DPS
+							i(233392),	-- Footwraps of the Oracle
+							i(233396),	-- Trousers of the Oracle
+							-- Healer
+							i(233679),	-- Leggings of the Oracle
+							i(233683),	-- Slippers of the Oracle
+						}),
+						cl(ROGUE, {
+							-- DPS
+							i(233390),	-- Deathdealer's Leggings
+							i(233391),	-- Deathdealer's Boots
+							-- Tank
+							i(233660),	-- Deathdealer's Treads
+							i(233662),	-- Deathdealer's Pants
+						}),
+						cl(SHAMAN, {
+							-- DPS (Agility)
+							i(233701),	-- Stormcaller's Treads
+							i(233703),	-- Stormcaller's Chain Leggings
+							-- DPS (Intellect)
+							i(233706),	-- Stormcaller's Greaves
+							i(233708),	-- Stormcaller's Mail Leggings
+							-- Healer
+							i(233382),	-- Stormcaller's Leggings
+							i(233384),	-- Stormcaller's Footguards
+							-- Tank
+							i(233698),	-- Stormcaller's Legplates
+							i(233701),	-- Stormcaller's Treads
+						}),
+						cl(WARLOCK, {
+							-- DPS
+							i(233377),	-- Doomcaller's Footwraps
+							i(233378),	-- Doomcaller's Trousers
+							-- Tank
+							i(233377),	-- Doomcaller's Footwraps
+							i(233378),	-- Doomcaller's Trousers
+						}),
+						cl(WARRIOR, {
+							-- DPS
+							i(233652),	-- Conqueror's Sabatons
+							i(233654),	-- Conqueror's Tassets
+							-- Tank
+							i(233372),	-- Conqueror's Greaves
+							i(233374),	-- Conqueror's Legguards
+						}),
+					},
+				}),
+				n(15504, {	-- Vethsera <Brood of Ysera> (CHEST)
+					["groups"] = {
+						cl(DRUID, {
+							i(233711),	-- Genesis Armor
+							-- DPS (Intellect)
+							i(233715),	-- Genesis Leathers
+							-- Healer
+							i(233415),	-- Genesis Vest
+							-- Tank
+							i(233720),	-- Genesis Chestguard
+						}),
+						cl(HUNTER, {
+							-- Melee
+							i(233664),	-- Striker's Ringmail
+							-- Ranged
+							i(233411),	-- Striker's Hauberk
+						}),
+						cl(MAGE, {
+							-- DPS
+							i(233402),	-- Enigma Robes
+							-- Healer
+							i(233678),	-- Enigma Garb
+						}),
+						cl(PALADIN, {
+							-- DPS
+							i(233397),	-- Avengers Breastplate
+							-- Healer
+							i(233688),	-- Avengers Cuirass
+							-- Tank
+							i(233693),	-- Avengers Chestguard
+						}),
+						cl(PRIEST, {
+							-- DPS
+							i(233395),	-- Vestments of the Oracle
+							-- Healer
+							i(233680),	-- Robes of the Oracle
+						}),
+						cl(ROGUE, {
+							-- DPS
+							i(233389),	-- Deathdealer's Vest
+							-- Tank
+							i(233659),	-- Deathdealer's Chestguard
+						}),
+						cl(SHAMAN, {
+							-- DPS (Agility)
+							i(233699),	-- Stormcaller's Breastplate
+							-- DPS (Intellect)
+							i(233704),	-- Stormcaller's Embrace
+							-- Healer
+							i(233386),	-- Stormcaller's Hauberk
+							-- Tank
+							i(233694),	-- Stormcaller's Chestguard
+						}),
+						cl(WARLOCK, {
+							-- DPS
+							i(233380),	-- Doomcaller's Robes
+							-- Tank
+							i(233670),	-- Doomcaller's Garb
+						}),
+						cl(WARRIOR, {
+							-- DPS
+							i(233651),	-- Conqueror's Cuirass
+							-- Tank
+							i(233373),	-- Conqueror's Breastplate
 						}),
 					},
 				}),
@@ -2124,95 +2174,95 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				n(SILITHID_ROYALTY_SHARED_DROPS, {
-						["description"] = "These items can drop from killing the Silithid Royalty bosses regardless of order. For the other items, refer to their individual listings.",
-						["providers"] = {
-							{ "n", 15511 },	-- Lord Kri
-							{ "n", 15543 },	-- Princess Yauj
-							{ "n", 15544 },	-- Vem
-						},
-						["groups"] = {
-							i(233519), -- Cape of the Trinity
-							i(233520), -- Robes of the Triumvirate
-							i(233521), -- Ternary Mantle
-							i(233522), -- Guise of the Devourer
-							i(233523), -- Triad Girdle
-							i(233524), -- Angelista's Touch
-						},
-						n(15511, {	-- Lord Kri
-							["description"] = "Killing this boss last can drop the following items.",
-							["groups"] = {
-								i(233568), -- Vest of Swift Execution
-								i(233569), -- Ring of the Devoured
-								i(233570), -- Petrified Scarab
-								i(233571), -- Wand of Qiraji Nobility
-							},
-						}),
-						n(15543, {	-- Princess Yauj
-							["description"] = "Killing this boss last can drop the following items.",
-							["groups"] = {
-								i(233563), -- Mantle of Phrenic Power
-								i(233564), -- Bile-Covered Gauntlets
-								i(233565), -- Ukko's Ring of Darkness
-								i(233566), -- Mantle of the Desert's Fury
-								i(233567), -- Mantle of the Desert Crusade
-							},
-						}),
-						n(15544, {	-- Vem
-							["description"] = "Killing this boss last can drop the following items.",
-							["groups"] = {
-								i(233559), -- Gloves of Ebru
-								i(233560), -- Ooze-Ridden Gauntlets
-								i(233561), -- Boots of the Fallen Hero
-								i(233562), -- Angelista's Charm
-							},
-						}),
-				}),
-				e(1544, {	-- Battleguard Sartura
-					["creatureID"] = 15516,
+					["description"] = "These items can drop from killing the Silithid Royalty bosses regardless of order. For the other items, refer to their individual listings.",
+					["providers"] = {
+						{ "n", 15511 },	-- Lord Kri
+						{ "n", 15543 },	-- Princess Yauj
+						{ "n", 15544 },	-- Vem
+					},
 					["groups"] = {
-						i(233572), -- Necklace of Purity
-						i(233573), -- Recomposed Boots
-						i(233574), -- Leggings of the Festering Swarm
-						i(233575), -- Robes of the Battleguard
-						i(233576), -- Silithid Claw
-						i(233577), -- Thick Qirajihide Belt
-						i(233578), -- Creeping Vine Helm
-						i(233579), -- Gloves of Enforcement
-						i(233580), -- Badge of the Swarmguard
-						i(233581), -- Sartura's Might
-						i(233582), -- Gauntlets of Steadfast Determination
-						i(233583), -- Legplates of Blazing Light
-						i(233584), -- Scaled Leggings of Qiraji Fury
-						i(233643), -- Anubisath Warhammer
-						i(233644), -- Garb of Royal Ascension
-						i(233645), -- Gloves of the Immortal
-						i(233646), -- Gloves of the Redeemed Prophecy
-						i(233647), -- Neretzek, the Blood Drinker
-						i(233648), -- Ritssyn's Ring of Chaos
-						i(233649), -- Shard of the Fallen Star
-						i(235047), -- Gloves of the Fallen Prophet
+						i(233519), -- Cape of the Trinity
+						i(233520), -- Robes of the Triumvirate
+						i(233521), -- Ternary Mantle
+						i(233522), -- Guise of the Devourer
+						i(233523), -- Triad Girdle
+						i(233524), -- Angelista's Touch
 					},
 				}),
-				e(1545, {	-- Fankriss the Unyielding
-					["creatureID"] = 15510,
+				n(15511, {	-- Lord Kri
+					["description"] = "Killing this boss last can drop the following items.",
 					["groups"] = {
-						i(233369), -- Qiraji Bindings of Dominance
-						i(233370), -- Qiraji Bindings of Command
-						i(233371), -- Qiraji Bindings of Sovereignty
-						i(233585), -- Ancient Qiraji Ripper
-						i(233586), -- Jaw of the Sand Reaver
-						i(233587), -- Barbed Choker
-						i(233588), -- Cloak of Untold Secrets
-						i(233589), -- Fetish of the Sand Reaver
-						i(233590), -- Hive Tunneler's Boots
-						i(233591), -- Silithid Carapace Chestguard
-						i(233592), -- Mantle of Wicked Revenge
-						i(233593), -- Pauldrons of the Unrelenting
-						i(233594), -- Robes of the Guardian Saint
-						i(233595), -- Scaled Sand Reaver Leggings
+						i(233568), -- Vest of Swift Execution
+						i(233569), -- Ring of the Devoured
+						i(233570), -- Petrified Scarab
+						i(233571), -- Wand of Qiraji Nobility
 					},
 				}),
-				e(1548, {	-- Viscidus
+				n(15543, {	-- Princess Yauj
+					["description"] = "Killing this boss last can drop the following items.",
+					["groups"] = {
+						i(233563), -- Mantle of Phrenic Power
+						i(233564), -- Bile-Covered Gauntlets
+						i(233565), -- Ukko's Ring of Darkness
+						i(233566), -- Mantle of the Desert's Fury
+						i(233567), -- Mantle of the Desert Crusade
+					},
+				}),
+				n(15544, {	-- Vem
+					["description"] = "Killing this boss last can drop the following items.",
+					["groups"] = {
+						i(233559), -- Gloves of Ebru
+						i(233560), -- Ooze-Ridden Gauntlets
+						i(233561), -- Boots of the Fallen Hero
+						i(233562), -- Angelista's Charm
+					},
+				}),
+			e(1544, {	-- Battleguard Sartura
+				["creatureID"] = 15516,
+				["groups"] = {
+					i(233572), -- Necklace of Purity
+					i(233573), -- Recomposed Boots
+					i(233574), -- Leggings of the Festering Swarm
+					i(233575), -- Robes of the Battleguard
+					i(233576), -- Silithid Claw
+					i(233577), -- Thick Qirajihide Belt
+					i(233578), -- Creeping Vine Helm
+					i(233579), -- Gloves of Enforcement
+					i(233580), -- Badge of the Swarmguard
+					i(233581), -- Sartura's Might
+					i(233582), -- Gauntlets of Steadfast Determination
+					i(233583), -- Legplates of Blazing Light
+					i(233584), -- Scaled Leggings of Qiraji Fury
+					i(233643), -- Anubisath Warhammer
+					i(233644), -- Garb of Royal Ascension
+					i(233645), -- Gloves of the Immortal
+					i(233646), -- Gloves of the Redeemed Prophecy
+					i(233647), -- Neretzek, the Blood Drinker
+					i(233648), -- Ritssyn's Ring of Chaos
+					i(233649), -- Shard of the Fallen Star
+					i(235047), -- Gloves of the Fallen Prophet
+				},
+			}),
+			e(1545, {	-- Fankriss the Unyielding
+				["creatureID"] = 15510,
+				["groups"] = {
+					i(233369), -- Qiraji Bindings of Dominance
+					i(233370), -- Qiraji Bindings of Command
+					i(233371), -- Qiraji Bindings of Sovereignty
+					i(233585), -- Ancient Qiraji Ripper
+					i(233586), -- Jaw of the Sand Reaver
+					i(233587), -- Barbed Choker
+					i(233588), -- Cloak of Untold Secrets
+					i(233589), -- Fetish of the Sand Reaver
+					i(233590), -- Hive Tunneler's Boots
+					i(233591), -- Silithid Carapace Chestguard
+					i(233592), -- Mantle of Wicked Revenge
+					i(233593), -- Pauldrons of the Unrelenting
+					i(233594), -- Robes of the Guardian Saint
+					i(233595), -- Scaled Sand Reaver Leggings
+				},
+			}),
+			e(1548, {	-- Viscidus
 					["description"] = "This boss requires 200 frost hits to freeze. Once frozen, you need 75 melee hits to shatter him. Equipping barov peasant caller trinket and using it after boss freezes will help to do this.",
 					["creatureID"] = 15299,
 					["groups"] = {
@@ -2320,7 +2370,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				n(AQ_TEMPLE_HARDMODE, {
-					["description"] = "When players enter Ahn'Qiraj (both Ruins and Temple), and arrive at the first boss, they will see an obelisk. By interacting with the obelisk (deactivating it), they add additional mechanics to the raid, and the raid will have a finite number of attempts to defeat the next 3 bosses. Each boss has an individual obelisk that must be deactivated to continue. Doing so will give you bonus loot chests & and you also receive a Void-Touched Emblem which turns Temple of Ahn'Qiraj Weapons into a 'Voidtouched' varient of the weapon. They have a neat void appearance despite providing no difference in quality. (Cosmetic only!)",
+					["description"] = "Descent into Madness!\n\nWhen players enter Ahn'Qiraj (both Ruins and Temple), and arrive at the first boss, they will see an obelisk. By interacting with the obelisk (deactivating it), they add additional mechanics to the raid, and the raid will have a finite number of attempts to defeat the next 3 bosses. Each boss has an individual obelisk that must be deactivated to continue. Doing so will give you bonus loot chests & and you also receive a Void-Touched Emblem which turns Temple of Ahn'Qiraj Weapons into a 'Voidtouched' varient of the weapon. They have a neat void appearance despite providing no difference in quality. (Cosmetic only!)",
 					["groups"] = {
 						i(233351), -- Light Green Qiraji Resonating Crystal
 						i(233352), -- Dark Blue Qiraji Resonating Crystal
@@ -2376,4 +2426,4 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 			-- #endif
 		},
 	}),
-})));
+}))));

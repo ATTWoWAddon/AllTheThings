@@ -390,11 +390,23 @@ local function GetNextItemUnlockBonusIDByString(item)
 	end
 end
 local function GetNextItemUnlockBonusIDByTable(item)
-	local upgrades = BonusIDNextUnlock[item.bonusID or 0]
-	if upgrades then return upgrades end
+	if not item.sourceID then return end
 
-	upgrades = GetFirstValueAndKey(BonusIDNextUnlock, item.bonuses)
-	if upgrades then return upgrades end
+	local upgrades = BonusIDNextUnlock[item.bonusID or 0]
+	if upgrades then
+		-- app.PrintDebug("upgrade.bonusID",upgrades,app:SearchLink(item))
+		return upgrades
+	end
+
+	local bonuses = item.bonuses
+	if bonuses then
+		upgrades = GetFirstValueAndKey(BonusIDNextUnlock, bonuses)
+		if upgrades then
+			-- app.PrintDebug("upgrade.bonuses",upgrades,app:SearchLink(item))
+			return upgrades
+		end
+		return
+	end
 
 	local link = item.link or item.rawlink or item.silentLink
 	if link then
@@ -451,6 +463,8 @@ local function GetUpgrade(t, up)
 		-- app.PrintDebug("GU:upgrade is same",t.hash,t.modItemID,"=+>",itemSource.__type,itemSource.modItemID)
 		return;
 	end
+
+	itemSource.filledType = "UPGRADE"
 
 	-- cache the upgrade within the item itself
 	t._up = itemSource;
@@ -574,7 +588,7 @@ local function UpdateUpgrades()
 end
 
 -- Returns the different and upgraded version of 't' (via item link/bonuses or 'up' field)
-api.NextUpgrade = function(t)
+local function NextUpgrade(t)
 
 	-- app.PrintDebug("NU:",t.modItemID)
 	-- try basic upgrade logic first (checking 'up' field)
@@ -610,4 +624,28 @@ api.CollectibleAsUpgrade = function(t)
 	return upgrade and not upgrade.collected;
 end
 
+-- Event Handling
 app.AddEventHandler("OnRecalculate_NewSettings", UpdateUpgrades)
+
+app.AddEventHandler("OnLoad", function()
+	local Fill = app.Modules.Fill
+	if not Fill then return end
+
+	local CreateObject = app.__CreateObject
+	Fill.AddFiller("UPGRADE",
+	function(group, FillData)
+		local nextUpgrade = NextUpgrade(group)
+		if not nextUpgrade then return end
+
+		if not nextUpgrade.collected then
+			group.filledUpgrade = true
+		end
+		-- app.PrintDebug("filledUpgrade=",nextUpgrade.modItemID,nextUpgrade.collected,"<",group.modItemID)
+		local o = CreateObject(nextUpgrade)
+		return { o }
+	end,
+	{
+		SettingsIcon = app.asset("Interface_Upgrade"),
+		SettingsTooltip = "Fills any Upgrade |T"..app.asset("Interface_Upgrade")..":0|t which is available to the given Item\n\nFor an ATT List this is typically shown if available for the default state of an Item as Sourced, whereas in Tooltips it is based on the raw Item data when shown."
+	})
+end)

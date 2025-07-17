@@ -247,48 +247,48 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(208052),	-- Grimoire of the Voracious Felmaw (CI!)
 					},
 				}),
-				n(FACTIONS, {
+				header(HEADERS.Faction, FACTION_SORIDORMI, {
 					faction(FACTION_SORIDORMI, {
 						["cost"] = {{ "c", SORIDORMIS_RECOGNITION, 42000 }},
-						["g"] = {
-							ach(18615,	-- Legend of the Multiverse
-							bubbleDownSelf({ ["minReputation"] = { FACTION_SORIDORMI, 5 } }, {
-								title(513),	-- <Name> Unparalleled
-							})),
-							q(77241, {	-- A Foreseeable Friendship
-								["provider"] = { "n", 204450 },	-- Soridormi
-								["coord"] = { 51.0, 57.0, THALDRASZUS },
-								["minReputation"] = { FACTION_SORIDORMI, 2 },
-								["g"] = {
-									i(208058),	-- Minute Glass (TOY!)
-								},
-							}),
-							q(77248, {	-- A Recognition of Skill
-								["provider"] = { "n", 204450 },	-- Soridormi
-								["coord"] = { 51.0, 57.0, THALDRASZUS },
-								["minReputation"] = { FACTION_SORIDORMI, 3 },
-								["g"] = {
-									iensemble(207020),	-- Ensemble: Rift-Mender's Vestments
-								},
-							}),
-							q(77249, {	-- One of Us
-								["provider"] = { "n", 204450 },	-- Soridormi
-								["coord"] = { 51.0, 57.0, THALDRASZUS },
-								["minReputation"] = { FACTION_SORIDORMI, 4 },
-								["g"] = {
-									i(207027),	-- Greater Encapsulated Destiny
-								},
-							}),
-							q(77250, {	-- Realized Potentional
-								["provider"] = { "n", 204450 },	-- Soridormi
-								["coord"] = { 51.0, 57.0, THALDRASZUS },
-								["minReputation"] = { FACTION_SORIDORMI, 5 },
-								["g"] = {
-									i(208006),	-- Greater Paracausal Chest / it also could contain vendor stuff, was Ensemble: Hauberk of Discipline - Alex
-									spell(417360),	-- Unparalleled (TITLE!)
-								},
-							}),
-						},
+					}),
+					ach(18615,	-- Legend of the Multiverse
+					bubbleDownSelf({ ["minReputation"] = { FACTION_SORIDORMI, 5 } }, {
+						title(513),	-- <Name> Unparalleled
+					})),
+					n(QUESTS, {
+						q(77241, {	-- A Foreseeable Friendship
+							["provider"] = { "n", 204450 },	-- Soridormi
+							["coord"] = { 51.0, 57.0, THALDRASZUS },
+							["minReputation"] = { FACTION_SORIDORMI, 2 },
+							["g"] = {
+								i(208058),	-- Minute Glass (TOY!)
+							},
+						}),
+						q(77248, {	-- A Recognition of Skill
+							["provider"] = { "n", 204450 },	-- Soridormi
+							["coord"] = { 51.0, 57.0, THALDRASZUS },
+							["minReputation"] = { FACTION_SORIDORMI, 3 },
+							["g"] = {
+								iensemble(207020),	-- Ensemble: Rift-Mender's Vestments
+							},
+						}),
+						q(77249, {	-- One of Us
+							["provider"] = { "n", 204450 },	-- Soridormi
+							["coord"] = { 51.0, 57.0, THALDRASZUS },
+							["minReputation"] = { FACTION_SORIDORMI, 4 },
+							["g"] = {
+								i(207027),	-- Greater Encapsulated Destiny
+							},
+						}),
+						q(77250, {	-- Realized Potentional
+							["provider"] = { "n", 204450 },	-- Soridormi
+							["coord"] = { 51.0, 57.0, THALDRASZUS },
+							["minReputation"] = { FACTION_SORIDORMI, 5 },
+							["g"] = {
+								i(208006),	-- Greater Paracausal Chest / it also could contain vendor stuff, was Ensemble: Hauberk of Discipline - Alex
+								spell(417360),	-- Unparalleled (TITLE!)
+							},
+						}),
 					}),
 				}),
 				n(QUESTS, {
@@ -1097,27 +1097,27 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				q(76709),	-- after buying/loot 'Jeepers' (itemID 208010) (spellID 418931)
 				-- q(76655),	-- after buying/loot 'Jingoist's Breastplate' (itemID 206878) (spellID 418930)
 				-- q(76651),	-- after buying/loot 'Jingoist's Casque' (itemID 206865) (spellID 418929)
-				q(76623),	-- after buying/loot 'Jingoist's Cloth Armor Bag' (itemID 207082) (spellID 418928)
-				q(76622),	-- after buying/loot 'Jingoist's Cloth Equipment Bag' (itemID 207072) (spellID 418927)
-				q(76624),	-- after buying/loot 'Jingoist's Cloth Gear Bag' (itemID 207071) (spellID 418926)
+				q(76623, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Cloth Armor Bag' (itemID 207082) (spellID 418928)
+				q(76622, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Cloth Equipment Bag' (itemID 207072) (spellID 418927)
+				q(76624, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Cloth Gear Bag' (itemID 207071) (spellID 418926)
 				-- q(76645),	-- after buying/loot 'Jingoist's Cuirass' (itemID 206839) (spellID 418925)
 				-- q(76657),	-- after buying/loot 'Jingoist's Greathelm' (itemID 206873) (spellID 418924)
 				-- q(76646),	-- after buying/loot 'Jingoist's Headcover' (itemID 206834) (spellID 418923)
 				-- q(76639),	-- after buying/loot 'Jingoist's Hood' (itemID 206826) (spellID 418922)
-				q(76626),	-- after buying/loot 'Jingoist's Leather Armor Bag' (itemID 207080) (spellID 418921)
-				q(76625),	-- after buying/loot 'Jingoist's Leather Equipment Bag' (itemID 207068) (spellID 418920)
-				q(76627),	-- after buying/loot 'Jingoist's Leather Gear Bag' (itemID 207067) (spellID 418919)
+				q(76626, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Leather Armor Bag' (itemID 207080) (spellID 418921)
+				q(76625, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Leather Equipment Bag' (itemID 207068) (spellID 418920)
+				q(76627, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Leather Gear Bag' (itemID 207067) (spellID 418919)
 				-- q(76641),	-- after buying/loot 'Jingoist's Leggings' (itemID 206825) (spellID 418918)
 				-- q(76653),	-- after buying/loot 'Jingoist's Legguards' (itemID 206864) (spellID 418917)
 				-- q(76659),	-- after buying/loot 'Jingoist's Legplates' (itemID 206874) (spellID 418916)
-				q(76630),	-- after buying/loot 'Jingoist's Mail Armor Bag' (itemID 207078) (spellID 418915)
-				q(76629),	-- after buying/loot 'Jingoist's Mail Equipment Bag' (itemID 207063) (spellID 418914)
-				q(76631),	-- after buying/loot 'Jingoist's Mail Gear Bag' (itemID 207064) (spellID 418913)
-				q(76628),	-- after buying/loot 'Jingoist's Mail Suit Bag' (itemID 207093) (spellID 418912)
-				q(76648),	-- after buying/loot 'Jingoist's Pantaloons' (itemID ) (spellID 418911)
-				q(76633),	-- after buying/loot 'Jingoist's Plate Armor Bag' (itemID 207075) (spellID 418910)
-				q(76632),	-- after buying/loot 'Jingoist's Plate Equipment Bag' (itemID 207052) (spellID 418909)
-				q(76634),	-- after buying/loot 'Jingoist's Plate Gear Bag' (itemID 207053) (spellID 418908)
+				q(76630, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Mail Armor Bag' (itemID 207078) (spellID 418915)
+				q(76629, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Mail Equipment Bag' (itemID 207063) (spellID 418914)
+				q(76631, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Mail Gear Bag' (itemID 207064) (spellID 418913)
+				q(76628, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Mail Suit Bag' (itemID 207093) (spellID 418912)
+				q(76648, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Pantaloons' (itemID ) (spellID 418911)
+				q(76633, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Plate Armor Bag' (itemID 207075) (spellID 418910)
+				q(76632, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Plate Equipment Bag' (itemID 207052) (spellID 418909)
+				q(76634, {["collectible"]=false}),	-- after buying/loot 'Jingoist's Plate Gear Bag' (itemID 207053) (spellID 418908)
 				-- q(76643),	-- after buying/loot 'Jingoist's Robe' (itemID 206821) (spellID 418907)
 				-- q(76635),	-- after buying/loot 'Jingoist's Slicer' (itemID 207014) (spellID 418905)
 				q(76712),	-- after buying/loot 'Killbot 9000' (itemID 208013) (spellID 418905)
@@ -1154,35 +1154,29 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 				-- q(76656),	-- after buying/loot 'Warmonger's Breastplate' (itemID 206879) (spellID 418874)
 				-- q(76652),	-- after buying/loot 'Warmonger's Casque' (itemID 206853) (spellID 418872)
 				-- q(76650),	-- after buying/loot 'Warmonger's Chainmail' (itemID 206858) (spellID 418871)
-				q(76662),	-- after buying/loot 'Warmonger's Cloth Armor Bag' (itemID 207081) (spellID 418870)
-				q(76663),	-- after buying/loot 'Warmonger's Cloth Equipment Bag' (itemID 207073) (spellID 418869)
-				q(76661),	-- after buying/loot 'Warmonger's Cloth Gear Bag' (itemID 207074) (spellID 418868)
+				q(76662, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Cloth Armor Bag' (itemID 207081) (spellID 418870)
+				q(76663, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Cloth Equipment Bag' (itemID 207073) (spellID 418869)
+				q(76661, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Cloth Gear Bag' (itemID 207074) (spellID 418868)
 				-- q(76658),	-- after buying/loot 'Warmonger's Greathelm' (itemID 206884) (spellID 418867)
 				-- q(76647),	-- after buying/loot 'Warmonger's Headcover' (itemID 206846) (spellID 418866)
-				q(76666),	-- after buying/loot 'Warmonger's Leather Armor Bag' (itemID 207079) (spellID 418865)
-				q(76667),	-- after buying/loot 'Warmonger's Leather Equipment Bag' (itemID 207069) (spellID 418864)
-				q(76664),	-- after buying/loot 'Warmonger's Leather Gear Bag' (itemID 207070) (spellID 418863)
-				q(76665),	-- after buying/loot 'Warmonger's Leather Suit Bag' (itemID 207094) (spellID 418862)
+				q(76666, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Leather Armor Bag' (itemID 207079) (spellID 418865)
+				q(76667, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Leather Equipment Bag' (itemID 207069) (spellID 418864)
+				q(76664, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Leather Gear Bag' (itemID 207070) (spellID 418863)
+				q(76665, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Leather Suit Bag' (itemID 207094) (spellID 418862)
 				-- q(76642),	-- after buying/loot 'Warmonger's Leggings' (itemID 206814) (spellID 418861)
 				-- q(76654),	-- after buying/loot 'Warmonger's Legguards' (itemID 206854) (spellID 418860)
 				-- q(76660),	-- after buying/loot 'Warmonger's Legplates' (itemID 206883) (spellID 418859)
-				q(76669),	-- after buying/loot 'Warmonger's Mail Armor Bag' (itemID 207077) (spellID 418858)
-				q(76670),	-- after buying/loot 'Warmonger's Mail Equipment Bag' (itemID 207066) (spellID 418856)
-				q(76668),	-- after buying/loot 'Warmonger's Mail Gear Bag' (itemID 207065) (spellID 418855)
-				q(76649),	-- after buying/loot 'Warmonger's Pantaloons' (itemID 206845) (spellID 418854)
-				q(76672),	-- after buying/loot 'Warmonger's Plate Armor Bag' (itemID 207076) (spellID 418853)
-				q(76673),	-- after buying/loot 'Warmonger's Plate Equipment Bag' (itemID 207051) (spellID 418852)
-				q(76671),	-- after buying/loot 'Warmonger's Plate Gear Bag' (itemID 207050) (spellID 418851)
+				q(76669, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Mail Armor Bag' (itemID 207077) (spellID 418858)
+				q(76670, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Mail Equipment Bag' (itemID 207066) (spellID 418856)
+				q(76668, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Mail Gear Bag' (itemID 207065) (spellID 418855)
+				q(76649, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Pantaloons' (itemID 206845) (spellID 418854)
+				q(76672, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Plate Armor Bag' (itemID 207076) (spellID 418853)
+				q(76673, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Plate Equipment Bag' (itemID 207051) (spellID 418852)
+				q(76671, {["collectible"]=false}),	-- after buying/loot 'Warmonger's Plate Gear Bag' (itemID 207050) (spellID 418851)
 				-- q(76674),	-- after buying/loot 'Warmonger's Ripper' (itemID 207015) (spellID 418850)
 				-- q(76644),	-- after buying/loot 'Warmonger's Robe' (itemID 206808) (spellID 418849)
 				-- q(76640),	-- after buying/loot 'Warmonger's Skullcap' (itemID 206816) (spellID 418848)
-
-				q(76705),	-- after buying/loot Ensemble: Decorous Garments (itemID 207049) (spellID 418947)
-				q(76707),	-- after buying/loot Ensemble: Haukbert of Discipline (itemID 207047) (spellID 418946)
-				q(76706),	-- after buying/loot Ensemble: Lifegiver's Garms (itemID 207048) (spellID 418945)
-				q(76708),	-- after buying/loot Ensemble: Valhalas Ceremonial Armor (itemID 207046) (spellID 418944)
-
-				q(77179),	-- Unlock the title Unparalleled on your account (spellID 417360) (after questID 77250)
+				-- q(77179),	-- Unlock the title Unparalleled on your account (spellID 417360) (after questID 77250)
 			}),
 		}),
 	}),

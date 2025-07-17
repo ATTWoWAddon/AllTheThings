@@ -1,7 +1,7 @@
 ---------------------------------------------------------------
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
--- #if AFTER SHADOWLANDS
+-- #if AFTER SL
 root(ROOTS.NeverImplemented, n(CONDUITS, {
 	expansion(EXPANSION.SL, {
 		-- 9.0.1

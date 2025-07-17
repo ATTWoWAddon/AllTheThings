@@ -3,5 +3,7 @@ SOURCEID_NYI = createHeader({
 	icon = 134400,
 	text = {
 		en = "Source IDs",
+		es = "Fuente IDs",
+		mx = "Fuente IDs",
 	},
 });

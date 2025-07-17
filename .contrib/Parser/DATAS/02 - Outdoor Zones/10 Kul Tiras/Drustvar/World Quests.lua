@@ -545,9 +545,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 -- 		m(DRUSTVAR, {
 -- 			n(WORLD_QUESTS, {
 -- 				q(54772),	-- triggered when turning in #54137, "In Every Dark Corner".
--- 				q(52000),	-- Matron Morana killID
--- 				q(52002),	-- Soul Goliath killID
--- 				q(51999),	-- Stone Golem killID
 -- 			}),
 -- 		}),
 -- 	}),

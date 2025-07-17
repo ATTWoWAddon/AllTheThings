@@ -179,7 +179,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 					i(159062),	-- Ritual Flayer's Mantle
 				}),
 				filter(MAIL, {
-					i(155317),	-- Death-Pledged Sabatons
 					i(159020),	-- Death-Pledged Handguards
 					i(159023),	-- Death-Pledged Helmet
 					i(159033),	-- Death-Pledged Mantle
@@ -358,14 +357,13 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				i(158509),	-- Tideshaper Staff
 				i(158506),	-- Scalawags Claymore
 				i(161924),	-- Seapriest's Wand (A) (never addedd)
-				i(161926),	-- Talanji's Salutary Scepter (A) (never added)
 
 				-- Nazmir items = Drustvar quest rewards
 
 				-- Vol'dun items = Stormsong Valley quest rewards
 				i(161295),	-- Scorching Sands Battleaxe
 				i(161302),	-- Scorching Sands Mace
-				i(161303),	-- Scorching Sands Bludgeon
+
 
 				-- Zuldazar items = Tiragarde Sound quest rewards
 				i(154985),	-- Golden Protectorate
@@ -543,7 +541,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(54974),	--
 				q(56065),	--
 				q(56127),	--
-				q(56607),	--
+				q(56607),	-- Killed Sandcastle?
 				q(56618),	-- killed Tidelord Aquatus (153898)?
 				q(56667),	--
 				q(56742),	--
@@ -618,7 +616,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 		}),
 		expansion(EXPANSION.DF, {
 			-- 10.0.0
-			expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {
+			expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {
 				q(66034),	-- On Fail, Reset Player [DNT] (spellID 374750) / MDI Quest Trigger
 				q(67045),	--
 				q(71054),	--
@@ -627,6 +625,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			-- 10.0.2
 			expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2 } }, {
 				q(72379),	--
+				q(72370),	-- "riding the airship to the dragon isles for the intro quest."
 				q(74047),	--
 				q(74064),	--
 			})),
@@ -674,6 +673,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			-- 11.0.2
 			expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 				q(84255),	-- Received item 'The Warband Map to Everywhere All At Once' (itemID 212174) - Not for me, it has to be something else - Darkal
+				i(228580),	-- Brute Force Idol
 			})),
 		}),
 	}),

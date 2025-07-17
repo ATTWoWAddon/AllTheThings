@@ -28,12 +28,33 @@ root(ROOTS.Zones, {
 				petbattle(m(571, {	-- Celestial Tournament
 					["icon"] = 645227,
 					["groups"] = {
-						n(PET_BATTLE, {
+						n(ACHIEVEMENTS, {
+							ach(8519, {	-- Celestial Family
+								crit(23600, {	-- Xu-Fu, Cub of Xuen
+									["provider"] = { "i", 101771 },
+								}),
+								crit(23719, {	-- Chi-Chi, Hatchling of Chi-Ji
+									["provider"] = { "i", 102145 },
+								}),
+								crit(23720, {	-- Yu'la, Broodling of Yu'lon
+									["provider"] = { "i", 102147 },
+								}),
+								crit(23721, {	-- Zao, Calfling of Niuzao
+									["provider"] = { "i", 102146 },
+								}),
+							}),
+							petbattle(ach(8518)),	-- Master of the Master
+							ach(8410),	-- The Celestial Tournament
+						}),
+						petbattles({
 							n(71933, {	-- Blingtron 4000
 								["coord"] = { 34.8, 59.6, 571 },
 							}),
 							n(71927, {	-- Chen Stormstout
 								["coord"] = { 34.8, 59.6, 571 },
+							}),
+							n(72285, {	-- Chi-Chi, Hatchling of Chi-Ji
+								["coord"] = { 38.0, 55.2, 571 },
 							}),
 							n(71934, {	-- Dr. Ion Goldbloom <Jurassic Expedition>
 								["coord"] = { 34.8, 59.6, 571 },
@@ -55,6 +76,15 @@ root(ROOTS.Zones, {
 							}),
 							n(71924, {	-- Wrathion <The Black Prince>
 								["coord"] = { 37.8, 57.2, 571 },
+							}),
+							n(72009, {	-- Xu-Fu, Cub of Xuen
+								["coord"] = { 39.8, 55.2, 571 },
+							}),
+							n(72291, {	-- Yu'la, Broodling of Yu'lon
+								["coord"] = { 39.0, 56.4, 571 },
+							}),
+							n(72290, {	-- Zao, Calfling of Niuzao
+								["coord"] = { 39.0, 53.8, 571 },
 							}),
 						}),
 						n(QUESTS, {
@@ -119,141 +149,9 @@ root(ROOTS.Zones, {
 					}),
 					ach(8715),	-- Emperor Shaohao
 					ach(8726),	-- Extreme Treasure Hunter (automated)
-					ach(8725, {	-- Eyes On The Ground
-						crit(24011, {	-- Giant Clam
-							["provider"] = {"o",223193},
-							["coords"] = {
-								{ 16.8, 62.4, TIMELESS_ISLE },
-								{ 16.8, 62.5, TIMELESS_ISLE },
-								{ 18.4, 53.9, TIMELESS_ISLE },
-								{ 18.5, 53.8, TIMELESS_ISLE },
-								{ 18.7, 20.3, TIMELESS_ISLE },
-								{ 25.5, 14.7, TIMELESS_ISLE },
-								{ 25.6, 14.4, TIMELESS_ISLE },
-								{ 29.7, 21.8, TIMELESS_ISLE },
-								{ 47.8, 87.9, TIMELESS_ISLE },
-							},
-						}),
-						crit(24012, {	-- Glinting Sand
-							["provider"] = {"o",222684},
-						}),
-						crit(24013, {	-- Crane Nest
-							["provider"] = {"o",222685},
-						}),
-						crit(24014, {	-- Eerie Crystal
-							["provider"] = {"o",222686},
-						}),
-						crit(24015, {	-- Ordon Supplies
-							["provider"] = {"o",222687},
-						}),
-						crit(24016, {	-- Firestorm Egg
-							["provider"] = {"o",222688},
-						}),
-						crit(24017, {	-- Fiery Altar of Ordos
-							["provider"] = {"o",222689},
-						}),
-					}),
-					ach(8728, {	-- Going to Need a Bigger Bag
-						["sym"] = {{ "achievement_criteria" }},
-					}),
-					ach(8712, {	-- Killing Time
-						crit(23940, {	-- Spotted Swarmer
-							["cr"] = 72908,	-- Spotted Swarmer
-						}),
-						crit(23941, {	-- Windfeather Chick
-							["cr"] = 71143,	-- Windfeather Chick
-						}),
-						crit(23942, {	-- Great Turtle Hatchling
-							["cr"] = 72763,	-- Great Turtle Hatchling
-						}),
-						crit(23943, {	-- Ironfur Herdling
-							["cr"] = 72842,	-- Ironfur Herdling
-						}),
-						crit(23938, {	-- Windfeather Nestkeeper
-							["cr"] = 72761,	-- Windfeather Nestkeeper
-						}),
-						crit(23939, {	-- Ironfur Grazer
-							["cr"] = 72843,	-- Ironfur Grazer
-						}),
-						crit(23935, {	-- Spectral Brewmaster
-							["cr"] = 73018,	-- Spectral Brewmaster
-						}),
-						crit(23936, {	-- Spectral Mistweaver
-							["cr"] = 73025,	-- Spectral Mistweaver
-						}),
-						crit(23937, {	-- Spectral Windwalker
-							["cr"] = 73021,	-- Spectral Windwalker
-						}),
-						crit(23944, {	-- Crag Stalker
-							["cr"] = 72807,	-- Crag Stalker
-						}),
-						crit(23945, {	-- Ashleaf Sprite
-							["cr"] = 72877,	-- Ashleaf Sprite
-						}),
-						crit(23966, {	-- Ordon Candlekeeper
-							["cr"] = 72875,	-- Ordon Candlekeeper
-						}),
-						crit(23946, {	-- Foreboding Flame
-							["cr"] = 73162,	-- Foreboding Flame
-						}),
-						crit(23947, {	-- Jademist Dancer
-							["cr"] = 72767,	-- Jademist Dancer
-						}),
-						crit(23948, {	-- Brilliant Windfeather
-							["cr"] = 72762,	-- Brilliant Windfeather
-						}),
-						crit(23949, {	-- Great Turtle
-							["cr"] = 72764,	-- Great Turtle
-						}),
-						crit(23950, {	-- Ironfur Great Bull
-							["cr"] = 72844,	-- Ironfur Great Bull
-						}),
-						crit(23951, {	-- Damp Shambler
-							["cr"] = 72771,	-- Damp Shambler
-						}),
-						crit(23952, {	-- Primal Stalker
-							["cr"] = 72805,	-- Primal Stalker
-						}),
-						crit(23953, {	-- Ancient Spineclaw
-							["cr"] = 72766,	-- Ancient Spineclaw
-						}),
-						crit(23954, {	-- Gulp Frog
-							["cr"] = 72777,	-- Gulp Frog
-						}),
-						crit(23955, {	-- Death Adder
-							["cr"] = 72841,	-- Death Adder
-						}),
-						crit(23956, {	-- Ordon Fire Watcher
-							["cr"] = 72894,	-- Ordon Fire Watcher
-						}),
-						crit(23957, {	-- Ordon Oathguard
-							["cr"] = 72892,	-- Ordon Oathguard
-						}),
-						crit(23958, {	-- Burning Berserker
-							["cr"] = 72895,	-- Burning Berserker
-						}),
-						crit(23959, {	-- Molten Guardian
-							["cr"] = 72888,	-- Molten Guardian
-						}),
-						crit(23960, {	-- Crimsonscale Firestorm
-							["cr"] = 72876,	-- Crimsonscale Firestorm
-						}),
-						crit(23961, {	-- Elder Great Turtle
-							["cr"] = 72765,	-- Elder Great Turtle
-						}),
-						crit(23962, {	-- Eroded Cliffdweller
-							["cr"] = 72809,	-- Eroded Cliffdweller
-						}),
-						crit(23696, {	-- Blazebound Chanter
-							["cr"] = 72897,	-- Blazebound Chanter
-						}),
-						crit(23964, {	-- Eternal Kilnmaster
-							["cr"] = 72896,	-- Eternal Kilnmaster
-						}),
-						crit(23965, {	-- High Priest of Ordos
-							["cr"] = 72898,	-- High Priest of Ordos
-						}),
-					}),
+					ach(8725),	-- Eyes On The Ground (automated)
+					ach(8728),	-- Going to Need a Bigger Bag (automated)
+					ach(8712),	-- Killing Time (automated)
 					ach(8724, {	-- Pilgrimage
 						["provider"] = { "o", 222776 },	-- Time-Lost Shrine
 						["coords"] = {
@@ -278,104 +176,9 @@ root(ROOTS.Zones, {
 							crit(24010),	-- Xuen's Blessing Obtained
 						},
 					}),
-					ach(8714, {	-- Timeless Champion (Timeless Isle)
-						crit(23967, {	-- Emerald Gander
-							["_quests"] = { 33295 },
-						}),
-						crit(23968, {	-- Ironfur Steelhorn
-							["_quests"] = { 33296 },
-						}),
-						crit(23969, {	-- Great Turtle Furyshell
-							["_quests"] = { 33297 },
-						}),
-						crit(23970, {	-- Gu'chi the Swarmbringer
-							["_quests"] = { 33294 },
-						}),
-						crit(23971, {	-- Zesqua
-							["_quests"] = { 33316 },
-						}),
-						crit(23972, {	-- Zhu-Gon the Sour
-							["_quests"] = { 32959 },
-						}),
-						crit(23973, {	-- Karkanos
-							["_quests"] = { 33292 },
-						}),
-						crit(23974, {	-- Chelon
-							["_quests"] = { 32966 },
-						}),
-						crit(23975, {	-- Spelurk
-							["_quests"] = { 32960 },
-						}),
-						crit(23976, {	-- Cranegnasher
-							["_quests"] = { 32967 },
-						}),
-						crit(23977, {	-- Rattleskew
-							["_npcs"] = { 72048 },
-						}),
-						crit(23978, {	-- Spirit of Jadefire
-							["_quests"] = { 33293 },
-						}),
-						crit(23979, {	-- Leafmender
-							["_quests"] = { 33298 },
-						}),
-						crit(23986, {	-- Bufo
-							["_quests"] = { 33301 },
-						}),
-						crit(23982, {	-- Garnia
-							["_quests"] = { 33300 },
-						}),
-						crit(23983, {	-- Tsavo'ka
-							["_quests"] = { 33304 },
-						}),
-						crit(23985, {	-- Monstrous Spineclaw
-							["_quests"] = { 33302 },
-						}),
-						crit(23989, {	-- Imperial Python
-							["_quests"] = { 33303 },
-						}),
-						crit(24144, {	-- Stinkbraid
-							["_quests"] = { 33305 },
-						}),
-						crit(23980, {	-- Rock Moss
-							["_quests"] = { 33307 },
-						}),
-						crit(23992, {	-- Watcher Osu
-							["_quests"] = { 33322 },
-						}),
-						crit(23994, {	-- Jakur of Ordon
-							["_quests"] = { 33306 },
-						}),
-						crit(23996, {	-- Champion of the Black Flame
-							["_quests"] = { 33299 },
-						}),
-						crit(23981, {	-- Cinderfall
-							["_quests"] = { 33310 },
-						}),
-						crit(23993, {	-- Urdur the Cauterizer
-							["_quests"] = { 33308 },
-						}),
-						crit(23995, {	-- Flintlord Gairan
-							["_quests"] = { 33309 },
-						}),
-						crit(23984, {	-- Huolon
-							["_quests"] = { 33311 },
-						}),
-						crit(23988, {	-- Golganarr
-							["_quests"] = { 33315 },
-						}),
-						crit(23990, {	-- Evermaw
-							["_quests"] = { 33313 },
-						}),
-						crit(23987, {	-- Dread Ship Vazuvius
-							["_quests"] = { 33314 },
-						}),
-						crit(24139, {	-- Archiereus of Flame
-							["_quests"] = { 33312 },
-							["_npcs"] = { 73174 },
-						}),
-						crit(23991, {	-- Archiereus of Flame
-							["_npcs"] = { 73666 },
-						}),
+					ach(8714),	-- Timeless Champion (automated)
+					ach(8723, {	-- Legend of the Past
+						["sym"] = {{"partial_achievement",8784}},	-- Timeless Legends
 					}),
 					ach(8784, {	-- Timeless Legends
 						["coords"] = {
@@ -399,159 +202,9 @@ root(ROOTS.Zones, {
 							{ 65.4, 51.7, TIMELESS_ISLE },
 							{ 68.4, 60.4, TIMELESS_ISLE },
 						},
-						["g"] = {
-							crit(24006, {	-- Cloudstrike Family Helm
-								["provider"] = { "o", 222796 },	-- Cloudstrike Family Helm
-							}),
-							crit(24140, {	-- Flameheart Shawl
-								["provider"] = { "o", 223537 },	-- Flameheart Shawl
-							}),
-							crit(24141, {	-- Riverspeaker's Trident
-								["provider"] = { "o", 223538 },	-- Riverspeaker's Trident
-							}),
-							crit(24142, {	-- Snowdrift Tiger Talons
-								["provider"] = { "o", 223539 },	-- Snowdrift Tiger Talons
-							}),
-							ach(8723),	-- Legend of the Past
-						},
 					}),
-					ach(8722, {	-- Timeless Nutriment
-						crit(24000),	-- Ripe Crispfruit
-						crit(24001),	-- Sand-Covered Egg
-						crit(24002),	-- Charged Crystal
-						crit(24003),	-- Huge Yak Roast
-						crit(24005),	-- Roasted Seed
-						crit(24004),	-- Fire Poppy
-						crit(24129),	-- Southsea Firebrew
-					}),
-					ach(8729, {	-- Treasure, Treasure Everywhere
-						crit(24083, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223204 },
-						}),
-						crit(24084, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223115 },
-						}),
-						crit(24085, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223114 },
-						}),
-						crit(24086, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223113 },
-						}),
-						crit(24087, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223112 },
-						}),
-						crit(24088, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223111 },
-						}),
-						crit(24089, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223110 },
-						}),
-						crit(24090, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223109 },
-						}),
-						crit(24091, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223108 },
-						}),
-						crit(24092, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223107 },
-						}),
-						crit(24093, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223106 },
-						}),
-						crit(24094, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223105 },
-						}),
-						crit(24095, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223104 },
-						}),
-						crit(24096, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223103 },
-						}),
-						crit(24097, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223102 },
-						}),
-						crit(24098, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223101 },
-						}),
-						crit(24099, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223100 },
-						}),
-						crit(24100, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223099 },
-						}),
-						crit(24101, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223098 },
-						}),
-						crit(24102, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223097 },
-						}),
-						crit(24103, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223096 },
-						}),
-						crit(24104, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223095 },
-						}),
-						crit(24105, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223094 },
-						}),
-						crit(24106, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223093 },
-						}),
-						crit(24107, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223092 },
-						}),
-						crit(24108, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223091 },
-						}),
-						crit(24109, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223090 },
-						}),
-						crit(24110, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223089 },
-						}),
-						crit(24111, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223088 },
-						}),
-						crit(24112, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223087 },
-						}),
-						crit(24113, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223086 },
-						}),
-						crit(24114, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223085 },
-						}),
-						crit(24115, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 223084 },
-						}),
-						crit(24116, {	-- 17/17 Moss-Covered Chests
-							["provider"] = { "o", 221670 },
-						}),
-						crit(24117, {	-- 1/1 Skull-Covered Chest
-							["provider"] = { "o", 221617 },
-						}),
-						crit(24118, {	-- 1/1 Blazing Chest
-							["provider"] = { "o", 221673 },
-						}),
-						crit(24119, {	-- 4/4 Sturdy Chests
-							["provider"] = { "o", 223118 },
-						}),
-						crit(24120, {	-- 4/4 Sturdy Chests
-							["provider"] = { "o", 223117 },
-						}),
-						crit(24121, {	-- 4/4 Sturdy Chests
-							["provider"] = { "o", 223116 },
-						}),
-						crit(24122, {	-- 4/4 Sturdy Chests
-							["provider"] = { "o", 221671 },
-						}),
-						crit(24123, {	-- 2/2 Smoldering Chests
-							["provider"] = { "o", 223119 },
-						}),
-						crit(24124, {	-- 2/2 Smoldering Chests
-							["provider"] = { "o", 221672 },
-						}),
-					}),
+					ach(8722),	-- Timeless Nutriment
+					ach(8729),	-- Treasure, Treasure Everywhere
 					ach(8727),	-- Where There's Pirates, There's Booty
 				}),
 				battlepets({
@@ -561,7 +214,9 @@ root(ROOTS.Zones, {
 					["groups"] = {
 						pet(1324),	-- Ashwing Moth (PET!)
 						pet(1325),	-- Flamering Moth (PET!)
-						pet(1326),	-- Skywisp Moth (PET!)
+						pet(1326, {	-- Skywisp Moth (PET!)
+							["description"] = "Found on the tallest peaks of the isle, accessible easiest from an Albatross ride.",
+						}),
 					},
 				}),
 				n(BURDEN_OF_ETERNITY, {
@@ -1896,7 +1551,12 @@ root(ROOTS.Zones, {
 					}),
 					o(221725),	-- Charged Crystal
 					o(222796),	-- Cloudstrike Family Helm
-					o(222685),	-- Crane Nest
+					o(222685, {	-- Crane Nest
+						["modelScale"] = 2.3,
+						["g"] = {
+							i(104157),	-- Azure Crane Chick (PET!)
+						},
+					}),
 					o(222686),	-- Eerie Crystal
 					o(222689),	-- Fiery Altar of Ordos
 					o(221763),	-- Fire Poppy
@@ -2643,12 +2303,6 @@ root(ROOTS.Zones, {
 					n(72895, {	-- Burning Berserker
 						i(86566),	-- Forager's Gloves
 						i(106130),	-- Big Bag of Herbs
-					}),
-					o(222685, {	-- Crane Nest
-						["modelScale"] = 2.3,
-						["g"] = {
-							i(104157),	-- Azure Crane Chick (PET!)
-						},
 					}),
 					n(72876, {	-- Crimsonscale Firestorm
 						i(104286),	-- Quivering Firestorm Egg

@@ -309,7 +309,7 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 				["timeline"] = { ADDED_3_4_0, REMOVED_4_4_0 },
 				["description"] = "Can be bought for ¥1888 ($265 USD) or a discounted price of ¥588 ($82 USD) for owners of the original for a limited time in the Ingame Shop.",
 			})),
-			cnONLY(i(235344, {	-- Blazing Royal Fire Hawk (CN Only)
+			cnONLY(mount(1217476, {	-- Blazing Royal Fire Hawk (CN Only)
 				["description"] = "Rewarded from the Treasure Workshop.",
 				["timeline"] = { ADDED_3_4_0, REMOVED_4_4_0 },
 			})),
@@ -332,13 +332,27 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 	expansion(EXPANSION.CATA, {
 		["timeline"] = { ADDED_4_4_0 },
 		["groups"] = {
+			i(224002, {	-- Swoopy
+				["description"] = "Obtained if you set up a 12 Month WoW Subscription after 9th July 2024.",
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			mount(463045, {	-- Lava Drake
 				["description"] = "Obtained if you set up a 12 Month WoW Subscription after 15th October 2024.",
+				["u"] = REMOVED_FROM_GAME,
 			}),
-			i(224002, {	-- Swoopy
-				["description"] = "Obtained if you set up a 12 Month WoW Subscription after 15th October 2024.",
+			i(231312, {	-- Timbered Air Snakelet
+				["description"] = "Obtained if you set up a 6/12 Month WoW Subscription after 31st January 2025.",
+				["u"] = REMOVED_FROM_GAME,
 			}),
 		},
 	}),
+	expansion(EXPANSION.MOP, {
+		["timeline"] = { ADDED_5_5_0 },
+		["groups"] = {
+			pet(4850, {	-- Sa'bak's Blessed
+				["description"] = "Obtained if you set up a 6/12 Month WoW Subscription after 15th July 2025.",
+			}),
+		},
+	})
 	-- #endif
 }));

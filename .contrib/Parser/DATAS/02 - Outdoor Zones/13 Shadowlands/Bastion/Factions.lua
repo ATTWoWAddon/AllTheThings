@@ -4,9 +4,7 @@
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(BASTION, {
 		n(FACTIONS, {
-			faction(FACTION_THE_ASCENDED, {
-				ach(14335),	-- The Ascended
-			}),
+			faction(FACTION_THE_ASCENDED),
 		}),
 	}),
 })));

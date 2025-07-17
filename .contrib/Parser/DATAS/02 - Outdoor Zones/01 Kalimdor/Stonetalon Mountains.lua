@@ -12,11 +12,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["icon"] = 236831,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(847),	-- Explore Stonetalon Mountains
+				ach(847),	-- Explore Stonetalon Mountains
 				ach(4936, {	-- Stonetalon Mountains Quests (A)
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					-- #if ANYCLASSIC
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
+					-- #else
 					["sourceQuests"] = {
 						25642,	-- Don't Look Them in the Eyes
 						25646,	-- Windshear Mine Cleanup
@@ -28,7 +30,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4980, {	-- Stonetalon Mountains Quests (H)
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					-- #if ANYCLASSIC
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
+					-- #else
 					["sourceQuests"] = {
 						26010,	-- Ashes to Ashes
 						26058,	-- In Defense of Krom'Gar Fortress
@@ -163,8 +167,40 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(66137, {	-- Zonya the Sadist <Master Pet Tamer>
+					["coord"] = { 59.6, 71.6, STONETALON_MOUNTAINS },
+					["description"] = "This pet tamer is Horde only.\n\nZonya's pets are level 7 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Beast - see above.",
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = HORDE_ONLY,
+					["petBattleLvl"] = 7,
+					["groups"] = {
+						q(31862, {	-- Zonya the Sadist
+							["sourceAchievement"] = 6602,	-- Taming Kalimdor
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
+				}),
+				q(31817, {	-- Merda Stronghoof
+					["qg"] = 66137,	-- Zonya the Sadist
+					["sourceQuest"] = 31815,	-- Zonya the Sadist
+					["coord"] = { 59.6, 71.6, STONETALON_MOUNTAINS },
+					["timeline"] = { ADDED_5_0_4 },
+					["maps"] = { DESOLACE },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Defeat Merda Stronghoof
+							["provider"] = { "n", 66372 },	-- Merda Stronghoof
+							["coord"] = { 57.2, 45.8, DESOLACE },
+						}),
+						i(89125),	-- Sack of Pet Supplies
+					},
+				}),
+			}),
 			-- #if SEASON_OF_DISCOVERY
-			spell(921, {	-- Pickpocketing
+			header(HEADERS.Spell, 921, {	-- Pickpocketing
 				["classes"] = { ROGUE },
 				["groups"] = {
 					applyclassicphase(SOD_PHASE_ONE, i(210187, {	-- Venture Co. Work Order
@@ -1540,6 +1576,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26068, {	-- Kobold Fury!
 					["qg"] = 42023,	-- Subjugator Devo
 					["sourceQuest"] = 26066,	-- Reinforcements...
+					["coord"] = { 71.2, 91.1, STONETALON_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {

@@ -15,7 +15,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(167381, {	-- Notorious Gladiator's Cloak [H]
-					["races"] = ALLIANCE_ONLY,
+					["races"] = HORDE_ONLY,
 				}),
 			}),
 			ach(13676, {	-- Elite: Battle for Azeroth Season 3
@@ -23,7 +23,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(167362, {	-- Notorious Gladiator's Tabard [H]
-					["races"] = ALLIANCE_ONLY,
+					["races"] = HORDE_ONLY,
 				}),
 			}),
 			ach(13647, {	-- Gladiator: Battle for Azeroth Season 3

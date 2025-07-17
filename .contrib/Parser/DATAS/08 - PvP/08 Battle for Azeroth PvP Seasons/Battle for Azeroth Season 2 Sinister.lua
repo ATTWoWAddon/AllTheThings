@@ -314,6 +314,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 					i(164831),	-- Sinister Gladiator's Leather Spaulders [A]
 					i(164815),	-- Sinister Gladiator's Leather Tunic [A]
 					i(164879),	-- Sinister Gladiator's Leather Vest [A]
+					i(164902),	-- Sinister Gladiator's Leather Waistband [A]
 				}),
 				filter(MAIL, {
 					i(164841),	-- Sinister Gladiator's Chain Armbands [A]
@@ -432,7 +433,6 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 					i(166614),	-- Sinister Gladiator's Silk Vestments [H]
 				}),
 				filter(LEATHER, {
-					i(164902),	-- Sinister Gladiator's Leather Waistband [A]
 					i(164858),	-- Sinister Gladiator's Leather Armwraps [H]
 					i(164793),	-- Sinister Gladiator's Leather Belt [H]
 					i(164794),	-- Sinister Gladiator's Leather Bindings [H]

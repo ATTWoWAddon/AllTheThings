@@ -34,16 +34,7 @@
 -- #IMPORT: 06 - Expansion Features\\05 - Mists of Pandaria\\
 
 -- World Events
--- #IMPORT: 07 - Events\\Brawler's Guild\\
--- #IMPORT: 07 - Events\\Elemental Unrest\\
--- #IMPORT: 07 - Events\\Operation Gnomeregan\\
--- #IMPORT: 07 - Events\\Plunderstorm\\
--- #IMPORT: 07 - Events\\The Ahn'Qiraj War Effort\\
--- #IMPORT: 07 - Events\\The Opening of the Dark Portal\\
--- #IMPORT: 07 - Events\\The Scepter of the Shifting Sands\\
--- #IMPORT: 07 - Events\\The Scourge Invasion\\
--- #IMPORT: 07 - Events\\The Silithyst Must Flow\\
--- #IMPORT: 07 - Events\\Zalazane's Fall\\
+-- #IMPORT: 07 - Events\\
 
 -- Craftables
 -- #IMPORT: 09 - Crafted Items\\01 - Classic.lua
@@ -60,10 +51,12 @@
 
 -- Promotions & In-Game Shop
 -- #IMPORT: 12 - Promotions\\
+-- #IMPORT: 13 - Black Market Auction House\\
 -- #IMPORT: 13 - In-Game Shop\\
 
 -- PvP
 -- #IMPORT: 08 - PvP\\00 Achievements.lua
+-- #IMPORT: 08 - PvP\\Arena.lua
 -- #IMPORT: 08 - PvP\\Battlegrounds\\
 -- #IMPORT: 08 - PvP\\01 Classic PvP.lua
 -- #IMPORT: 08 - PvP\\02 The Burning Crusade PvP Seasons.lua
@@ -73,6 +66,8 @@
 
 -- Character
 -- #IMPORT: 11 - Character\\Achievements.lua
+-- #IMPORT: 11 - Character\\Class Trials\\03 - Wrath of the Lich King
+-- #IMPORT: 11 - Character\\Class Trials\\04 - Cataclysm
 -- #IMPORT: 11 - Character\\Factions.lua
 -- #IMPORT: 11 - Character\\Guild.lua
 -- #IMPORT: 11 - Character\\Lore.lua

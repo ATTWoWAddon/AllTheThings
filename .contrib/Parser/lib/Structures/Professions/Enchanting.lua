@@ -169,6 +169,40 @@ EXPERT_ARTISAN_ENCHANTING
 	{}
 -- #endif
 );
+VANILLA_ENCHANTING_SUPPLIES = {
+	-- #if BEFORE CATA
+	i(6342, {	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
+		["isLimited"] = true,
+	}),
+	-- #endif
+	i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
+	i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
+	i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
+	i(10938, { ["isLimited"] = true, }),	-- Lesser Magic Essence
+	i(10940, { ["isLimited"] = true, }),	-- Strange Dust
+};
+ENCHANTING_SUPPLIES = sharedData({
+	["description"] = "Can be bought from Enchanting Suppliers, as well as some Trade vendors around the world.",
+	["providers"] = {
+		{ "n", 1318},	-- Jessara Cordell <Enchanting Supplies>
+		{ "n", 3346},	-- Kithas <Enchanting Supplies>
+		{ "n", 3012},	-- Nata Dawnstrider <Enchanting Supplies>
+		{ "n", 4617},	-- Thaddeus Webb <Enchanting Supplies>
+		{ "n", 5158},	-- Tilli Thistlefuzz <Enchanting Supplies>
+		{ "n", 4228},	-- Vaean <Enchanting Supplies>
+		-- #if AFTER TBC
+		{ "n", 16722},	-- Egomis <Enchanting Supplies>
+		{ "n", 16635},	-- Lyna <Enchanting Supplies>
+		-- #endif
+	},
+},{
+	i(6217),	-- Copper Rod
+	i(4470),	-- Simple Wood
+	i(11291),	-- Star Wood
+	-- #if AFTER CATA
+	i(38682),	-- Enchanting Vellum
+	-- #endif
+});
 TBC_ENCHANTING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
 	r(28029, {	-- Enchanting (Master)
 		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
@@ -649,7 +683,7 @@ NAZJATAR_ENCHANTING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timeline
 		r(298437),	-- Oceanic Restoration [Rank 2]
 	}),
 }));
-SL_ENCHANTING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_ENCHANTING = applyclassicphase(SL_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(309832),	-- Shadowlands Enchanting
 	r(324750, {["collectible"] = false}),	-- Disenchant
 	n(ARMOR_ENCHANTMENTS, {

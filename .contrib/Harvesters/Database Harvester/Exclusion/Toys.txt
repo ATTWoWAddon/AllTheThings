@@ -1,8 +1,3 @@
-38233@@@Path of Illidan [Classic]
-38506@@@Don Carlos' Famous Hat [Classic]
-184871@@@Dark Portal [Classic]
-198647@@@Fishspeaker's Lucky Lure [Classic]
-216893@@@Goblin Town-in-a-Box [Classic]
 8.0.1.26624
 163213@@@Ghostly Explorer's Skull
 8.0.1.26788

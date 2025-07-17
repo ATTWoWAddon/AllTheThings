@@ -6,6 +6,8 @@ FLIGHT_PATHS = createHeader({
 	text = {
 		-- #if ANYCLASSIC
 		en = "Flight Paths",
+		es = "Rutas de vuelo",
+		mx = "Rutas de vuelo",
 		-- #else
 		en = WOWAPI_GetSpellName(218950),
 		-- #endif

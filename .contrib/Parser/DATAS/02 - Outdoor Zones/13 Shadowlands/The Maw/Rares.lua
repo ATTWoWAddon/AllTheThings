@@ -179,6 +179,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			})),
 			n(170711, {	-- Dolos
+				["description"] = "Will not spawn during Necrolord assault.",
 				["coord"] = { 28.6, 60.6, THE_MAW },
 				["questID"] = 60909,
 				["g"] = {
@@ -197,7 +198,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			n(170774, {	-- Eketra <The Impaler>
-				["coord"] = { 22.8, 52.4, THE_MAW },
+				["coord"] = { 23.8, 53.6, THE_MAW },
 				["questID"] = 60915,
 				["g"] = {
 					i(186563),	-- Spear of the Impaler
@@ -518,8 +519,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(187393),	-- Sterling Hound-Handler's Gauntlets
 					i(186217),	-- Supple Helhound Leather Pants
 					i(187359),	-- Ylva's Water Dish
-					i(186970, {	-- Feeder's Hand and Key
-						["questID"] = 62683,
+					i(186970, {	-- Feeder's Hand and Key (CI!)
 						["g"] = {
 							i(186727),	-- Seal Breaker Key
 						},

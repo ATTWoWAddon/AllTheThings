@@ -1,0 +1,28 @@
+3.0.1.8303
+r(45357),	-- Inscription
+r(45358),	-- Inscription
+r(45359),	-- Inscription
+r(45360),	-- Inscription
+r(45361),	-- Inscription
+r(45363),	-- Inscription
+r(45381),	-- Silver Quill
+r(45383),	--
+r(48118),	--
+3.0.1.8622
+r(52175),	-- Decipher
+r(52183),	--
+3.1.0.9767
+r(57231),	-- Death Knight Glyph 25
+r(64301),	-- Glyph of Envenom
+
+
+
+
+Missing in Inscription
+
+3.4.1.49822
+r(405005),	-- Glyph of Reckoning
+3.4.2.49442
+r(413897),	-- Glyph of Omen of Clarity
+3.4.2.49563
+r(414814),	-- Glyph of Shattering Throw

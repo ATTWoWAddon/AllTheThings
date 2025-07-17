@@ -22,10 +22,11 @@ UNIQUE_APPEARANCE = createHeader({
 	},
 	description = {
 		en = "This item has a Unique Appearance. You must collect this item specifically to earn the appearance.",
-		es = "Este artículo tiene una apariencia única. Debes recolectar este artículo específicamente para ganar la apariencia.",
+		es = "Este objeto tiene una apariencia única. Debes obtener este objeto específicamente para ganar la apariencia.",
 		de = "Dieser Gegenstand hat eine einzigartige Vorlage. Ihr müsst diesen Gegenstand erhalten, um die Vorlage eurer Sammlung hinzuzufügen.",
 		fr = "Cet article a une apparence unique. Vous devez collecter cet objet spécifiquement pour gagner l’apparence.",
 		it = "Questo oggetto ha un aspetto unico. Devi raccogliere questo oggetto appositamente per guadagnare l'aspetto.",
+		mx = "Este objeto tiene una apariencia única. Debes obtener este objeto específicamente para ganar la apariencia.",
 		pt = "Este item tem uma aparência única. Você deve coletar este item especificamente para ganhar a aparência.",
 		ru = "Этот предмет имеет Уникальный Облик. Вы должны получить именно этот предмет для открытия Облика.",
 		ko = "이 아이템은 독특한 외형을 가지고 있습니다. 외형을 획득하려면 이 아이템을 특별히 수집해야 합니다.",

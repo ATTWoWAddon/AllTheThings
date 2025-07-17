@@ -58,7 +58,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					q(37083, {	-- Fight, Kill, Salute!
 						["sourceQuest"] = 37082,	-- Call of the Gladiator
 						["qg"] = 87311,	-- Kharg
-						["coord"] = { 33.0, 38.6, NAGRAND },
+						["coord"] = { 33.0, 38.6, DRAENOR_NAGRAND },
 						["g"] = {
 							ach(9639),	-- Fight, Kill, Salute!
 							i(119219, {	-- Warlord's Flag of Victory (TOY!)

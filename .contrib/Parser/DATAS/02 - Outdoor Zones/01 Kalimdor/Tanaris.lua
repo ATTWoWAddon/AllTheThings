@@ -2786,10 +2786,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		},
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(851),	-- Explore Tanaris
+				ach(851),	-- Explore Tanaris
 				ach(4935, {	-- Tanaris Quests
 					["timeline"] = { ADDED_4_0_3 },
-					-- #if ANYCLASSIC
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
+					-- #else
 					["sourceQuests"] = {
 						25166,	-- Captain Dreadbeard (A)
 						24950,	-- Captain Dreadbeard (H)
@@ -2928,9 +2930,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 52.2, 28.2, TANARIS },
 						["g"] = ALL_GOBLIN_ENGINEERING,
 					}),
-				}),
-				prof(FISHING, {
-					o(180751),	-- Floating Wreckage
 				}),
 			}),
 			n(QUESTS, {
@@ -4358,6 +4357,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 41.8, 57.4, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(52047) },	-- Sandscraper's Scarab (QI!)
 				}),
 				q(25091, {	-- Sandsorrow Watch
 					["qg"] = 39178,	-- Driz Plunkbow
@@ -4530,7 +4530,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_8_1_5 },
 					["lvl"] = 50,
 					["g"] = {
-						i(167232),	-- Mechanical Parts (QI!)
+						objective(1, {	-- 0/100 Mechanical Parts
+							["provider"] = { "i", 167232 },	-- Mechanical Parts (QI!)
+							["coord"] = { 62.6, 45.0, TANARIS },
+							["crs"] = {
+								151150,	-- Venture Salvager <Venture Co.>
+								151152,	-- Venture Overseer <Venture Co.>
+								151151,	-- Venture Oaf <Venture Co.>
+							},
+						}),
 					},
 				}),
 				q(8366, {	-- Southsea Shakedown
@@ -4735,7 +4743,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25421, {	-- The Grand Tablet (A)
-					["provider"] = { "o", 202474 },	-- Antediluvean Chest
+					["providers"] = {
+						{ "o", 202474 },	-- Antediluvean Chest
+						{ "i",  52470 },	-- The Grand Tablet (QI!)
+					},
 					["coord"] = { 37.8, 84.1, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -4752,7 +4763,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25107, {	-- The Grand Tablet (H)
-					["provider"] = { "o", 202474 },	-- Antediluvean Chest
+					["providers"] = {
+						{ "o", 202474 },	-- Antediluvean Chest
+						{ "i",  52470 },	-- The Grand Tablet (QI!)
+					},
 					["coord"] = { 37.8, 84.1, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -5086,6 +5100,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 72.2, 45.2, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = { i(51547) },	-- Burning Rum (QI!)
 				}),
 				q(24928, {	-- To The Ground! (H)
 					["qg"] = 38703,	-- Megs Dreadshredder
@@ -5093,6 +5108,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 71.8, 45.4, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(51547) },	-- Burning Rum (QI!)
 				}),
 				q(1560, {	-- Tooga's Quest
 					["qg"] = 5955,	-- Tooga
@@ -5125,6 +5141,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 44.5, 52.6, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(52038) },	-- Refurbished Ogre Suit (QI!)
 				}),
 				q(2875, {	-- WANTED: Andre Firebeard
 					["providers"] = {
@@ -5182,7 +5199,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				warchiefscommand(q(28509, {	-- Warchief's Command: Tanaris!
-					["timeline"] = { ADDED_4_0_3, REMOVED_10_2_6 },	-- possibly earlier, but currently unable to be obtained
+					["timeline"] = { ADDED_4_0_3, REMOVED_10_2_6, ADDED_11_1_0 },	-- possibly earlier, but currently unable to be obtained
 					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
@@ -5786,6 +5803,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						7805,	-- Wastewander Scofflaw
 					},
 					-- #endif
+				}),
+				i(8623, {	-- OOX-17/TN Distress Beacon
+					["description"] = "This item has a chance to drop from any creature in Tanaris and Zul'Farrak.",
 				}),
 				i(72028, {	-- Pattern: Tough Scorpid Boots (RECIPE!)
 					["timeline"] = { ADDED_4_3_0 },

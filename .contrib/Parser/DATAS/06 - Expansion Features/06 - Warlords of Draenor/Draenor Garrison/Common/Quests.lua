@@ -7,6 +7,8 @@ local GARRISON_CAMPAIGN = createHeader({
 	text = {
 		en = "Garrison Campaign",
 		de = "Garnisonskampagne",
+		es = "Campaña de la ciudadela",
+		mx = "Campaña de la fortaleza",
 		ru = "Гарнизонная кампания",
 		cn = "要塞战役",
 		tw = "要塞戰役",
@@ -173,10 +175,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 			-- Awakening
 				q(36134, {	-- Garrison Campaign: Awakening
 					["provider"] = { "n", 81492 },	-- Bodrick Grey
+					["coord"] = { 37.8, 36.8, LUNARFALL },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(36136, {	-- Garrison Campaign: Awakening
 					["provider"] = { "n", 78487 },	-- Rokhan
+					["coord"] = { 45.7, 43.2, FROSTWALL },
 					["races"] = HORDE_ONLY,
 				}),
 				q(36341, {	-- Primal Fury (A)
@@ -397,9 +401,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 
 			-- Deep Recon
 				q(35837, {	-- Garrison Campaign: Deep Recon
+					["qg"] = 81492,	-- Bodrick Grey <SI:7>
+					["coord"] = { 38.0, 37.6, LUNARFALL },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(35843, {	-- Garrison Campaign: Deep Recon
+					["qg"] = 78487,	-- Rokhan
+					["coord"] = { 45.8, 43.1, FROSTWALL },
 					["races"] = HORDE_ONLY,
 				}),
 				q(35838, {	-- The Warlord's Council
@@ -490,9 +498,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				q(38274, {	-- The Eye of Kilrogg
 					["provider"] = { "n", 91324 },	-- Braknoth
 					["g"] = {
-						i(124553, {	-- Baleful Gauntlets
-							["sym"] = { { "fill" } },
-						}),
+						i(124553),	-- Baleful Gauntlets
 					},
 				}),
 
@@ -534,9 +540,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["coord"] = { 16.1, 44.3, TANAAN_JUNGLE },
 					["sourceQuest"] = 38213,	-- Get a Clue
 					["g"] = {
-						i(124557, {	-- Baleful Girdle
-							["sym"] = { { "fill" } },
-						}),
+						i(124557),	-- Baleful Girdle
 					},
 				}),
 
@@ -607,9 +611,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["sourceQuest"] = 38462,	-- Breaching the Barrier
 					["g"] = {
 						i(128225),	-- Empowered Apexis Fragment
-						i(124551, {	-- Baleful Tunic
-							["sym"] = { { "fill" } },
-						}),
+						i(124551),	-- Baleful Tunic
 					},
 				}),
 				q(38463, {	-- The Cipher of Damnation (H)
@@ -618,9 +620,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["sourceQuest"] = 38462,	-- Breaching the Barrier
 					["g"] = {
 						i(128225),	-- Empowered Apexis Fragment
-						i(124551, {	-- Baleful Tunic
-							["sym"] = { { "fill" } },
-						}),
+						i(124551),	-- Baleful Tunic
 					},
 				}),
 
@@ -1068,7 +1068,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				}),
 			}),
 			n(SPECIAL, {
-				i(123975, {	-- Greater Bounty Spoils
+				container(123975, {	-- Greater Bounty Spoils
 					["description"] = "This satchel is an award from some of the weekly garrison raid quests that can be picked up from High Overlord Saurfang and Muradin Bronzebeard.",
 					["g"] = {
 						i(114111, {	-- Formidable Armament
@@ -1235,9 +1235,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["crs"] = { 91196 },	-- Muradin Bronzebeard
 					["races"] = ALLIANCE_ONLY,
 					["g"] = bubbleDownFiltered({ ["coord"] = { 34.1, 32.6, LUNARFALL }, ["races"] = ALLIANCE_ONLY, ["qgs"] = { 91196, 89763 }},FILTERFUNC_questID,{
-						i(123975, {	-- Greater Bounty Spoils
-							["sym"] = { { "fill" } },	-- simply fill this item
-						}),
+						i(123975),	-- Greater Bounty Spoils
 						q(39255, {	-- Amphitheater of the Eternal
 							["isWeekly"] = true,
 							["u"] = REMOVED_FROM_GAME,
@@ -1396,10 +1394,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["description"] = "High Overlord Saurfang has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which will either have Greater Bounty Spoils or Apexis Crystals as a reward.",
 					["crs"] = { 91195 },	-- High Overlord Saurfang
 					["races"] = HORDE_ONLY,
-					["g"] = bubbleDownFiltered({ ["coord"] = { 40.2, 56.7, FROSTWALL }, ["races"] = HORDE_ONLY, ["qg"] = 91195 },FILTERFUNC_questID,{
-						i(123975, {	-- Greater Bounty Spoils
-							["sym"] = { { "fill" } },	-- simply fill this item
-						}),
+					["g"] = bubbleDownFiltered({ ["coord"] = { 40.2, 56.7, FROSTWALL }, ["races"] = HORDE_ONLY, ["qgs"] = { 91195, 89753 }},FILTERFUNC_questID,{
+						i(123975),	-- Greater Bounty Spoils
 						q(39227, {	-- Amphitheater of the Eternal
 							["isWeekly"] = true,
 							["u"] = REMOVED_FROM_GAME,
@@ -2666,6 +2662,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					crit(27579, {
 						["achievementID"] = 9825,	-- Master Relic Hunter (A)
 					}),
+					i(122103),	-- Empowered Gronnsbane (QI!)
 				},
 			}),
 			q(37995, {	-- Gronnsbane: The Blessing of Beasts (H)
@@ -2685,6 +2682,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 				["isDaily"] = true,
+				["g"] = {
+					i(122102),	-- Gronnsbane (QI!)
+					i(122096),	-- Gronnsbane's Blade (QI!)
+					i(122098),	-- Gronnsbane's Haft (QI!)
+					i(122099),	-- Gronnsbane's Weight (QI!)
+				},
 			}),
 			q(37799, {	-- Gutrek's Cleaver: The Final Piece
 				["sourceQuest"] = 37798,	-- Gutrek's Cleaver: The Second Piece
@@ -2945,6 +2948,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["providers"] = {
 					{ "n", 91033 },	-- Zeezu (Horde)
 					{ "n", 91024 },	-- Jake the Fox (Alliance)
+				},
+				["coords"] = {
+					{ 40.4, 56.2, FROSTWALL },
+					{ 34.6, 33.0, LUNARFALL },
 				},
 				["isDaily"] = true,
 				["cost"] = { { "i", 110609, 50 } },	-- 50x Raw Beast Hide
@@ -3507,9 +3514,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["time
 			q(39409, { ["timeline"] = { ADDED_6_2_0 } }),	-- Tracking Quest - after completing the WoD mission "Ghost Wrangler" (mission ID: 305), although not sure why that would be tracked.
 			q(39410, { ["timeline"] = { ADDED_6_2_0 } }),	-- Tracking Quest - first interaction with the Garrison Mission Table this week. Completed a bunch of mission + one of the followers leveled up
 			q(39709, { ["timeline"] = { ADDED_6_2_0 } }),	-- Tracking Quest - first time this quest popped in WoD Garrison after opening some salvage crates. Then it unflagged on fresh toon, after I walked a little it got completed again
-			q(39609, { ["timeline"] = { ADDED_6_2_2 } }),	-- Hallow's End Active
+			q(39609, { ["timeline"] = { ADDED_6_2_2 }, repeatable=true }),	-- Hallow's End Active
 			q(39828, { ["timeline"] = { ADDED_6_2_2 } }),	-- Horseman and Guards Shared Criteria - Hallow's End
-			q(39610, { ["timeline"] = { ADDED_6_2_2 } }),	-- Winter Veil Active
+			q(39610, { ["timeline"] = { ADDED_6_2_2 }, repeatable=true }),	-- Winter Veil Active
 			q(39829, { ["timeline"] = { ADDED_6_2_2 } }),	-- Sleigh and Guards Shared Criteria - Winter Veil
 		}),
 	}),

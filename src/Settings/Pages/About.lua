@@ -1,5 +1,5 @@
 local appName, app = ...;
-local L, settings = app.L.SETTINGS_MENU, app.Settings;
+local L, settings = app.L, app.Settings;
 
 -- Settings: About Page
 local child = settings:CreateOptionsPage(appName)

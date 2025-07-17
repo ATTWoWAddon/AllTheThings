@@ -100,6 +100,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["g"] = {
 					i(223921),	-- Ever-Oozing Signet
 					i(223929),	-- Honey Sweetener's Squeezers
+					i(223920),	-- Slime Deflecting Stopper
 				},
 			}),
 			n(219269, {	-- Tempest Lord Incarnus

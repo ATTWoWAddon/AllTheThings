@@ -7,6 +7,7 @@ COVENANT_ASSAULTS = createHeader({
 		de = "Paktangriffe",
 		fr = "Assauts de congrégation",
 		it = "Assalti delle Congreghe",
+		mx = "Asaltos de los pactos",
 		pt = "Ataques Pactos",
 		ru = "Нападения Ковенантов",
 		ko = "성약의 습격",

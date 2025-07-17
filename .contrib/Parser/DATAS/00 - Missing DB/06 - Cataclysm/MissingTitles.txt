@@ -1,0 +1,39 @@
+4.0.1.12911
+title(144),	-- Warbringer %s \\ Guardian of %s \\ %s, Survivor of the Firelord
+title(145),	-- Warbound %s \\ Veteran of %s
+4.3.4.15595
+title(152),	-- %s, Veteran of the Alliance
+title(153),	-- %s, Veteran of the Horde
+title(154),	-- Private %s
+title(155),	-- Corporal %s
+title(156),	-- Sergeant %s
+title(157),	-- Master Sergeant %s
+title(158),	-- Sergeant Major %s
+title(159),	-- Knight %s
+title(160),	-- Knight-Lieutenant %s
+title(161),	-- Knight-Captain %s
+title(162),	-- Knight-Champion %s
+title(163),	-- Lieutenant Commander %s
+title(164),	-- Commander %s
+title(165),	-- Marshal %s
+title(166),	-- Field Marshal %s
+title(167),	-- Grand Marshal %s
+title(168),	-- Scout %s
+title(169),	-- Grunt %s
+title(170),	-- Sergeant %s
+title(171),	-- Senior Sergeant %s
+title(172),	-- First Sergeant %s
+title(173),	-- Stone Guard %s
+title(174),	-- Blood Guard %s
+title(175),	-- Legionnaire %s
+title(176),	-- Centurion %s
+title(177),	-- Champion %s
+title(178),	-- Lieutenant General %s
+title(179),	-- General %s
+title(180),	-- Warlord %s
+title(181),	-- High Warlord %s
+title(182),	-- %s, Hero of the Alliance
+title(183),	-- %s, Hero of the Horde
+title(193),	-- Cataclysmic Gladiator %s
+4.4.0.53627
+title(217),	-- Warbringer %s

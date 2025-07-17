@@ -14,7 +14,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(ACHIEVEMENTS, {
 				ach(4930, {	-- Desolace Quests
 					["timeline"] = { ADDED_4_0_3 },
-					-- #if ANYCLASSIC
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
+					-- #else
 					["sourceQuests"] = {
 						14302,	-- Official Assessment
 						14309,	-- Calming the Kodo
@@ -32,7 +34,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
-				explorationAch(848),	-- Explore Desolace
+				ach(848),	-- Explore Desolace
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",
@@ -185,9 +187,36 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 			}),
-			n(PROFESSIONS, {
-				prof(FISHING, {
-					o(180685),	-- Waterlogged Wreckage
+			petbattles({
+				n(66372, {	-- Merda Stronghoof <Master Pet Tamer>
+					["coord"] = { 57.2, 45.8, DESOLACE },
+					["description"] = "This pet tamer is Horde only.\n\nMerda's pets are level 9 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = HORDE_ONLY,
+					["petBattleLvl"] = 9,
+					["groups"] = {
+						q(31872, {	-- Merda Stronghoof
+							["sourceAchievement"] = 6602,	-- Taming Kalimdor
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
+				}),
+				q(31870, {	-- Cassandra Kaboom
+					["qg"] = 66372,	-- Merda Stronghoof
+					["sourceQuest"] = 31817,	-- Merda Stronghoof
+					["coord"] = { 57.2, 45.8, DESOLACE },
+					["timeline"] = { ADDED_5_0_4 },
+					["maps"] = { SOUTHERN_BARRENS },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Defeat Cassandra Kaboom
+							["provider"] = { "n", 66422 },	-- Cassandra Kaboom
+							["coord"] = { 39.5, 79.1, SOUTHERN_BARRENS },
+						}),
+						i(89125),	-- Sack of Pet Supplies
+					},
 				}),
 			}),
 			n(QUESTS, {
@@ -340,11 +369,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
+					["groups"] = { i(48857) },	-- Satyr Flesh (QI!)
 				}),
 				q(14304, {	-- Blood Theory
 					["providers"] = {
 						{ "n", 36048 },	-- Thressa Amberglen
-						{ "i", 49138 },	-- Bottle of Leeches
+						{ "i", 49138 },	-- Bottle of Leeches (QI!) not prov
 					},
 					["coord"] = { 58.8, 46.4, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
@@ -358,6 +388,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14334, {	-- Blubbergut
+					["description"] = "Blubbergut will only spawn if you walk to the end of the dock to trigger the spawn event.",
 					["qg"] = 12031,	-- Mai'Lahii
 					["sourceQuest"] = 14337,	-- Shadowprey Village
 					["coord"] = { 22.6, 71.9, DESOLACE },
@@ -774,6 +805,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(55911, {	-- Stubborn Legguards
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						--
+						i(49166),	-- Spear of the Kolkar Khan (QI!)
 					},
 				}),
 				q(14339, {	-- Delivery Device
@@ -918,6 +951,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 74.8, 13.2, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(48110) },	-- Vortex Gem (QI!)
 				}),
 				q(5421, {	-- Fish in a Bucket
 					["qg"] = 11317,	-- Jinar'Zillen
@@ -977,6 +1011,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 69.2, 29.2, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(47833) },	-- Furien's Journal (QI!)
 				}),
 				q(1368, {	-- Gelkis Alliance
 					["qg"] = 5412,	-- Gurda Wildmane
@@ -1211,6 +1246,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Jugkar Grim'rod Slain
 							["provider"] = { "n", 5771 },	-- Jugkar Grim'rod
 						}),
+						i(49199),	-- Infernal Power Core (QI!)
 					},
 				}),
 				q(14344, {	-- Jugkar's Undoing (H)
@@ -1223,6 +1259,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Jugkar Grim'rod Slain
 							["provider"] = { "n", 5771 },	-- Jugkar Grim'rod
 						}),
+						i(49199),	-- Infernal Power Core (QI!)
 					},
 				}),
 				q(1365, {	-- Khan Dez'hepah
@@ -1358,6 +1395,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.2, 53.4, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(49197) },	-- Maurin's Concoction (QI!)
 				}),
 				q(14184, {	-- My Time Has Passed
 					["qg"] = 35286,	-- Furien
@@ -1373,7 +1411,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14327, {	-- My Word is My Bond
 					["qg"] = 36163,	-- Khan Kammah
 					["sourceQuest"] = 14325,	-- Will Work For Food
-					["coord"] = { 73.3, 41.6, DESOLACE },
+					["coords"] = {
+						{ 71.6, 45.6, DESOLACE },
+						{ 73.3, 41.6, DESOLACE },
+					},
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(14282, {	-- Mystery Solved
@@ -1427,6 +1468,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 77.0, 18.1, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						o(195440, {	-- Melonfruit
+							i(48106),	-- Melonfruit (QI!)
+						}),
+					},
 				}),
 				q(14360, {	-- Nothing a Couple of Melons Won't Fix (H)
 					["provider"] = { "o", 195433 },	-- Ancient Tablets
@@ -1434,6 +1480,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 77.0, 18.1, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						o(195440, {	-- Melonfruit
+							i(48106),	-- Melonfruit (QI!)
+						}),
+					},
 				}),
 				q(14302, {	-- Official Assessment
 					["qg"] = 35773,	-- Cenarion Researcher Korrah
@@ -1616,6 +1667,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Nazargen slain
 							["provider"] = { "n", 35647 },	-- Nazargen
+						}),
+						o(195535, {	-- Bleached Skullpile
+							i(48953),	-- Bleached Skull (QI!)
 						}),
 						i(55924, {	-- Ring of Vigorous Interruption
 							["timeline"] = { ADDED_4_0_3 },
@@ -1886,6 +1940,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(55964, {	-- Flashfire Collar
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						--
+						i(48249),	-- Raging Vortex Gem (QI!)
 					},
 				}),
 				q(14379, {	-- Rock Lobstrock!
@@ -1914,6 +1970,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
+					["groups"] = { i(48857) },	-- Satyr Flesh (QI!)
 				}),
 				q(5741, {	-- Sceptre of Light
 					["qg"] = 11863,	-- Azore Aldamort <The Argent Dawn>
@@ -1976,6 +2033,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.4, 55.8, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(49196) },	-- Smeed's Harnesses (QI!)
 				}),
 				q(1370, {	-- Stealing Supplies
 					["qg"] = 5397,	-- Uthek the Wise
@@ -2044,12 +2102,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 58.6, 48.7, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = { i(49150) },	-- Cenarion Seeds (QI!)
 				}),
 				q(14358, {	-- Ten Pounds of Flesh (A)
 					["provider"] = { "o", 195497 },	-- Elune's Brazier
 					["coord"] = { 78.7, 23.2, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = { i(48857) },	-- Satyr Flesh (QI!)
 				}),
 				q(14213, {	-- Ten Pounds of Flesh (H)
 					["provider"] = { "o", 195497 },	-- Elune's Brazier
@@ -2057,6 +2117,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 78.7, 23.2, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(48857) },	-- Satyr Flesh (QI!)
 				}),
 				q(14372, {	-- Thargad's Camp
 					["qg"] = 36034,	-- Karnum Marshweaver
@@ -2368,6 +2429,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(131350, {	-- Gleaming Link Hauberk
 							["timeline"] = { ADDED_7_0_3 },
 						}),
+						--
+						i(48943),	-- Satyr Saber (QI!)
 					},
 				}),
 				q(14219, {	-- To the Hilt! (H)
@@ -2389,6 +2452,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(131335, {	-- Gleaming Link Hauberk
 							["timeline"] = { ADDED_7_0_3 },
 						}),
+						--
+						i(48943),	-- Satyr Saber (QI!)
 					},
 				}),
 				q(14189, {	-- Translation
@@ -2397,6 +2462,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 44.9, 29.5, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(47833) },	-- Furien's Journal (QI!)
 				}),
 				q(1437, {	-- Vahlarriel's Search (1/3)
 					["qg"] = 5642,	-- Vahlarriel Demonslayer
@@ -2636,8 +2702,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				o(176582, {	-- Shellfish Trap
+					-- #if AFTER CATA
 					["sourceQuest"] = 14334,	-- Blubbergut
-					["description"] = "You can interract with Shellfish Traps only during the quest |cFFE50D12Fish in a Bucket|r (5421).\n\nIf you want to obtain the |cFFFFFFFFBig Iron Fishing Pole|r, |cFFFFFFFFDO NOT|r turn in the quest until you do.",
+					-- #endif
+					["description"] = "You can interact with Shellfish Traps only during the quest |cFFE50D12Fish in a Bucket|r (5421).\n\nIf you want to obtain the |cFFFFFFFFBig Iron Fishing Pole|r, |cFFFFFFFFDO NOT|r turn in the quest until you do.",
 					["coords"] = {
 						{ 20.3, 71.3, DESOLACE },
 						{ 23.4, 77.1, DESOLACE },

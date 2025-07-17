@@ -121,17 +121,23 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 							["g"] = {
 								i(169292),	-- Charged Scale of the Blue Aspect (QI!)
-								i(168614, {	-- Charged Scale of the Blue Aspect
-									["u"] = REMOVED_FROM_GAME,
-								}),
+								i(168614), 	-- Charged Scale of the Blue Aspect
 							},
 						}),
 						q(54938, {	-- A Brother's Help
 							-- This was removed during BfA in 8.2 but is now appearing again for characters leveling up during Shadowlands
-							["qg"] = 130216,	-- Magni Bronzebeard
+							["qgs"] = {
+								130216,	-- Magni Bronzebeard
+								-- #if AFTER 8.2.0
+								152206,	-- Magni Bronzebeard
+								-- #endif
+							},
 							["sourceQuest"] = 53406,	-- The Chamber of Heart
 							["description"] = "Once you complete 'The Chamber of Heart' in Silithus, you can pick this quest up from Magni, or it will be automatically offered when you return to your capital city.",
-							["coord"] = { 42.1, 44.3, SILITHUS },
+							["coords"] = {
+								{ 42.1, 44.3, SILITHUS },
+								{ 50.5, 59.9, REPAIRED_CHAMBER_OF_HEART },
+							},
 							["timeline"] = { ADDED_8_1_5 },
 						}),
 						q(55374, {	-- A Disturbance Beneath the Earth
@@ -224,7 +230,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 						q(55739, {	-- Back to the Chamber (H)
 							["provider"] = { "n", 154465 },	-- Earthen Guardian
 							["coords"] = {
-								-- #if BEFORE SHADOWLANDS
+								-- #if BEFORE SL
 								{ 51.0, 88.8, DAZARALOR },
 								-- #else
 								{ 50.4, 41.7, DAZARALOR },
@@ -264,6 +270,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 							["g"] = {
 								i(170483),	-- Torn Journal Page #16 (QI!)
+								i(171348),	-- Torn Scroll of Unearthly Rituals
 							},
 						}),
 						q(55407, {	-- Calming the Spine
@@ -369,8 +376,14 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(52428, {	-- Infusing the Heart
-							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
-							["coord"] = { 50.3, 54.4, CHAMBER_OF_HEART },
+							["qgs"] = {
+								130216,	-- Magni Bronzebeard
+								136907,	-- Magni Bronzebeard
+							},
+							["coords"] = {
+								{ 42.2, 44.3, SILITHUS },
+								{ 50.3, 54.4, CHAMBER_OF_HEART },
+							},
 							["sourceQuest"] = 51211,	-- The Heart of Azeroth
 							["g"] = {
 								i(159671),	-- Silithus Portal Stone (QI!)
@@ -470,8 +483,10 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 								ADDED_9_2_0,	-- Reported available again 2022-03-21
 							},
 							["g"] = {
+								i(169652),	-- Bolt of Embroidered Cloth
 								i(170490),	-- Torn Journal Page #58 (QI!)
 								i(170491),	-- Burnt Journal Page
+								i(169651),	-- The Ways of the Old Gods
 							},
 						}),
 						q(58634, {	-- Opening the Gateway
@@ -483,6 +498,17 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },
 							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["sourceQuest"] = 58737,	-- Magni's Findings
+							["g"] = {
+								o(341445, {	-- Chamber of Heart Relay
+									["coord"] = { 56.9, 64.7, REPAIRED_CHAMBER_OF_HEART },
+								}),
+								o(341449, {	-- Engine of Nalak'sha Relay
+									["coord"] = { 50.1, 74.7, REPAIRED_CHAMBER_OF_HEART },
+								}),
+								o(341450, {	-- Forge of Origination Relay
+									["coord"] = { 43.4, 64.8, REPAIRED_CHAMBER_OF_HEART },
+								}),
+							},
 						}),
 						q(57221, {	-- Re-Origination
 							["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },
@@ -600,6 +626,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 						q(56261, {	-- Return to the Heart (A)
 							["provider"] = { "n", 154464 },	-- Earthen Guardian <Messenger of the Speaker>
 							["coord"] = { 74.8, 15.2, BORALUS },
+							["sourceQuest"] = 57010,	-- Harnessing the Power
 							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = ALLIANCE_ONLY,
@@ -608,12 +635,13 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 						q(55522, {	-- Return to the Heart (H)
 							["provider"] = { "n", 154465 },	-- Earthen Guardian <Messenger of the Speaker>
 							["coords"] = {
-								-- #if BEFORE SHADOWLANDS
+								-- #if BEFORE SL
 								{ 51.0, 88.8, DAZARALOR },
 								-- #else
 								{ 50.4, 41.7, DAZARALOR },
 								-- #endif
 							},
+							["sourceQuest"] = 57010,	-- Harnessing the Power
 							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = HORDE_ONLY,
@@ -727,6 +755,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["coord"] = { 50.1, 53.6, CHAMBER_OF_HEART },
 							["sourceQuest"] = 52428,	-- Infusing the Heart
 							["races"] = ALLIANCE_ONLY,
+							["timeline"] = { ADDED_8_0_1, REMOVED_10_1_5 },
 						}),
 						q(53031, {	-- The Speaker's Imperative (H)
 							-- was unable to enter the chamber to acquire this quest once i left the chamber of heart after receiving my neck
@@ -735,6 +764,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["coord"] = { 50.1, 53.6, CHAMBER_OF_HEART },
 							["sourceQuest"] = 52428,	-- Infusing the Heart
 							["races"] = HORDE_ONLY,
+							["timeline"] = { ADDED_8_0_1, REMOVED_10_1_5 },
 						}),
 						q(55396, {	-- The Stuff Dreams Are Made Of
 							["provider"] = { "n", 151825 },	-- Merithra of the Dream
@@ -796,9 +826,9 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["DisablePartySync"] = true,
 						}),
 						q(56260, {	-- Unlocking the Power (H)
-							["provider"] = { "n", 154464 },	-- Earthen Guardian
+							["provider"] = { "n", 154465 },	-- Earthen Guardian
 							["coords"] = {
-								-- #if BEFORE SHADOWLANDS
+								-- #if BEFORE SL
 								{ 51.0, 88.8, DAZARALOR },
 								-- #else
 								{ 50.4, 41.7, DAZARALOR },
@@ -869,6 +899,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["coords"] = {
 								-- #IF AFTER 9.2
 								{ 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
+								{ 85.3, 32.3, STORMWIND_CITY },
 								-- #ELSE
 								{ 74.9, 15.1, BORALUS },
 								-- #ENDIF

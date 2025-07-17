@@ -12,49 +12,18 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 		r(53123, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}, ["rank"] = 4 }),	-- Toughness [Rank 4]
 		r(53124, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}, ["rank"] = 5 }),	-- Toughness [Rank 5]
 		r(53040, {["timeline"] = {ADDED_3_0_3, REMOVED_6_0_2}, ["rank"] = 6 }),	-- Toughness [Rank 6]
-		r(74496, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}}),	-- Toughness [Rank 7]
-		r(102163, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Toughness [Rank 8]
+		r(74496, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}, ["rank"] = 7 }),	-- Toughness [Rank 7]
+		r(102163, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}, ["rank"] = 8 }),	-- Toughness [Rank 8]
 	}),
 	-- #endif
 	expansion(EXPANSION.CLASSIC, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		n(ACHIEVEMENTS, {
-			ach(18841, {	-- Doing Your Share
-				["cost"] = {{ "i", 17771, 5 }},	-- 5x Enchanted Elementium Bar
-			}),
+			ach(18841),	-- Doing Your Share (automated)
 		}),
 	})),
 	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
-			ach(18839, {	-- Broken Isles Mining Techniques
-				-- Parser handles this automatically more cleanly now [the criteria are from learning the Recipes themselves]
-				-- crit(61523, {	-- Empyrium Deposit
-				-- 	["sourceQuests"] = { 48036 },	-- Precision Perfected
-				-- }),
-				-- crit(61524, {	-- Empyrium Seam
-				-- 	["sourceQuests"] = { 48039 },	-- Balancing the Break
-				-- }),
-				-- crit(61516, {	-- Leystone Deposit
-				-- 	["sourceQuests"] = { 38792 },	-- Rethu's Lesson
-				-- }),
-				-- crit(61517, {	-- Leystone Seam
-				-- 	["sourceQuests"] = { 38793 },	-- Rethu's Experience
-				-- }),
-				-- crit(61518, {	-- Living Leystone
-				-- 	["sourceQuests"] = { 38794 },	-- Rethu's Sacrifice
-				-- }),
-				-- crit(61519, {	-- Felslate Deposit
-				-- 	["sourceQuests"] = { 38803 },	-- Rin'thissa
-				-- }),
-				-- crit(61520, {	-- Felslate Seam
-				-- 	["sourceQuests"] = { 38804 },	-- Lyrelle
-				-- }),
-				-- crit(61521, {	-- Living Felslate
-				-- 	["sourceQuests"] = { 38805 },	-- Ondri
-				-- }),
-				-- crit(61522, {	-- Infernal Brimstone
-				-- 	["sourceQuests"] = { 39830 },	-- Hellfire Citadel: Hellfire and Brimstone
-				-- }),
-			}),
+			ach(18839),	-- Broken Isles Mining Techniques (automated)
 		})),
 		header(HEADERS.Spell, 247850, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Empyrium Deposit [Rank 3]
 			["providers"] = {
@@ -1341,6 +1310,17 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 				["coord"] = { 52.6, 52.6, DORNOGAL },
 			}),
 		})),
+		n(QUESTS, {
+			q(91420, {	-- Swap Meet
+				["description"] = "Obtained the first time you harvest Desolate Deposit.",
+				["providers"] = {
+					{ "i", 246504 },	-- Inscrutable Ore
+					{ "o", 523491 },	-- Desolate Deposit
+					{ "o", 523512 },	-- Rich Desolate Deposit
+				},
+				["timeline"] = { ADDED_11_2_0 }
+			}),
+		}),
 		n(TREASURES, {
 			o(455957, {	-- Arathi Precision Drill
 				["coord"] = { 46.1, 64.4, HALLOWFALL },

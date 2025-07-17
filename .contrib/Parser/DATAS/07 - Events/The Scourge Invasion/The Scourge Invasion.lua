@@ -19,12 +19,17 @@ local MAJOR_HEALING_POTION = i(13446);	-- Major Healing Potion
 local MAJOR_MANA_POTION = i(13444);	-- Major Mana Potion
 local REMOVED_WITH_NAXX_RELEASE = REMOVED_2_0_1;
 local ADDED_WITH_WRATH_PREPATCH = ADDED_3_0_2;
+local REMOVED_WITH_NAXX_RELEASE_OR_SOD = REMOVED_WITH_NAXX_RELEASE;
 -- #if ANYCLASSIC
 local REMOVED_AFTER_WRATH_PREPATCH = REMOVED_3_0_3;
 local BUBBLE_DOWN_FILTER = function(t)
 	-- Do not apply the bubble down data to things removed with the first invasion.
-	if t.timeline and t.timeline[#t.timeline] == REMOVED_WITH_NAXX_RELEASE then
-		return false;
+	local timeline = t.timeline;
+	if timeline then
+		local phase = timeline[#timeline];
+		if phase == REMOVED_WITH_NAXX_RELEASE or phase == REMOVED_WITH_NAXX_RELEASE_OR_SOD then
+			return false;
+		end
 	end
 	return not t.u or t.u ~= PHASE_SIX_SCOURGE_INVASION;
 end;
@@ -107,108 +112,73 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				["races"] = { GNOME },
 				["lvl"] = 65,
 			}),
-			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, q(9094, {	-- Argent Dawn Gloves
-				["qg"] = 16787,	-- Argent Outfitter <The Argent Dawn>
+			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, {	-- Argent Dawn Gloves
+				["allianceQuestData"] = q(9094, {	-- Argent Dawn Gloves [A]
+					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
+					["coords"] = {
+						{ 54.7, 62.2, STORMWIND_CITY },
+						{ 34.0, 66.4, IRONFORGE },
+						{ 64.3, 44.5, DARNASSUS },
+						{ 81.0, 59.8, EASTERN_PLAGUELANDS },
+					},
+				}),
+				["hordeQuestData"] = q(9333, {	-- Argent Dawn Gloves [H]
+					["qg"] = 16787,	-- Argent Outfitter <The Argent Dawn>
+					["coords"] = {
+						{ 43.7, 52.6, THUNDER_BLUFF },
+						{ 52.5, 73.7, ORGRIMMAR },
+						{ 49.9, 29.4, UNDERCITY },
+						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
+					},
+				}),
 				["sourceQuest"] = 9153,	-- Under the Shadow
-				["coords"] = {
-					{ 54.3, 62.8, STORMWIND_CITY },
-					{ 34.0, 66.4, IRONFORGE },
-					{ 42.6, 53.4, THUNDER_BLUFF },
-					{ 53.4, 73.4, ORGRIMMAR },
-					{ 49.6, 30.0, UNDERCITY },
-					{ 64.5, 42.8, DARNASSUS },
-					{ 80.8, 59.5, EASTERN_PLAGUELANDS },
-				},
-				["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
+				["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
 				["cost"] = { { "i", 22484, 30 } },	-- Necrotic Rune
 				["repeatable"] = true,
 				["lvl"] = 50,
 				["groups"] = {
 					i(23084, {	-- Gloves of Undead Cleansing
-						["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
+						["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
 					}),
 					i(23081, {	-- Handwraps of Undead Slaying
-						["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
+						["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
 					}),
 					i(23082, {	-- Handguards of Undead Slaying
-						["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
+						["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
 					}),
 					i(23078, {	-- Gauntlets of Undead Slaying
-						["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
+						["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
 					}),
 				},
-			})),
-			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, q(9333, {	-- Argent Dawn Gloves
-				["qg"] = 16787,	-- Argent Outfitter <The Argent Dawn>
-				["sourceQuest"] = 9094,	-- Argent Dawn Gloves
-				["coords"] = {
-					{ 54.3, 62.8, STORMWIND_CITY },
-					{ 34.0, 66.4, IRONFORGE },
-					{ 42.6, 53.4, THUNDER_BLUFF },
-					{ 53.4, 73.4, ORGRIMMAR },
-					{ 49.6, 30.0, UNDERCITY },
-					{ 64.5, 42.8, DARNASSUS },
-					{ 80.8, 59.5, EASTERN_PLAGUELANDS },
-				},
-				["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
-				["cost"] = { { "i", 22484, 30 } },	-- Necrotic Rune
-				["repeatable"] = true,
-				["lvl"] = 50,
-				["groups"] = {
-					i(23084, {	-- Gloves of Undead Cleansing
-						["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
-					}),
-					i(23081, {	-- Handwraps of Undead Slaying
-						["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
-					}),
-					i(23082, {	-- Handguards of Undead Slaying
-						["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
-					}),
-					i(23078, {	-- Gauntlets of Undead Slaying
-						["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
-					}),
-				},
-			})),
-			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, q(9334, {	-- Blessed Wizard Oil
-				["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
+			}),
+			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, {	-- Blessed Wizard Oil
+				["allianceQuestData"] = q(9318, {	-- Blessed Wizard Oil [A]
+					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
+					["coords"] = {
+						{ 54.7, 62.2, STORMWIND_CITY },
+						{ 34.0, 66.4, IRONFORGE },
+						{ 64.3, 44.5, DARNASSUS },
+						{ 81.0, 59.8, EASTERN_PLAGUELANDS },
+					},
+				}),
+				["hordeQuestData"] = q(9334, {	-- Blessed Wizard Oil [H]
+					["qg"] = 16787,	-- Argent Outfitter <The Argent Dawn>
+					["coords"] = {
+						{ 43.7, 52.6, THUNDER_BLUFF },
+						{ 52.5, 73.7, ORGRIMMAR },
+						{ 49.9, 29.4, UNDERCITY },
+						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
+					},
+				}),
 				["sourceQuest"] = 9153,	-- Under the Shadow
-				["coords"] = {
-					{ 54.7, 62.2, STORMWIND_CITY },
-					{ 34.0, 66.4, IRONFORGE },
-					{ 43.7, 52.6, THUNDER_BLUFF },
-					{ 52.5, 73.7, ORGRIMMAR },
-					{ 49.9, 29.4, UNDERCITY },
-					{ 64.3, 44.5, DARNASSUS },
-					{ 80.9, 59.6, EASTERN_PLAGUELANDS },
-				},
-				["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
+				["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
 				["cost"] = { { "i", 22484, 8 } },	-- Necrotic Rune
 				["repeatable"] = true,
 				["lvl"] = 50,
 				["groups"] = {
 					i(23123),	-- Blessed Wizard Oil
 				},
-			})),
-			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, q(9318, {	-- Blessed Wizard Oil
-				["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
-				["sourceQuest"] = 9334,	-- Blessed Wizard Oil
-				["coords"] = {
-					{ 54.7, 62.2, STORMWIND_CITY },
-					{ 34.0, 66.4, IRONFORGE },
-					{ 43.7, 52.6, THUNDER_BLUFF },
-					{ 52.5, 73.7, ORGRIMMAR },
-					{ 49.9, 29.4, UNDERCITY },
-					{ 64.3, 44.5, DARNASSUS },
-					{ 80.9, 59.6, EASTERN_PLAGUELANDS },
-				},
-				["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
-				["cost"] = { { "i", 22484, 8 } },	-- Necrotic Rune
-				["repeatable"] = true,
-				["lvl"] = 50,
-				["groups"] = {
-					i(23123),	-- Blessed Wizard Oil
-				},
-			})),
+			}),
 			q(12616, {	-- Chamber of Secrets
 				["qg"] = 16285,	-- Argent Emissary <The Argent Dawn>
 				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
@@ -220,46 +190,34 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					}),
 				},
 			}),
-			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, q(9335, {	-- Consecrated Sharpening Stones
-				["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
+			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, {	-- Consecrated Sharpening Stones
+				["allianceQuestData"] = q(9317, {	-- Consecrated Sharpening Stones [A]
+					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
+					["coords"] = {
+						{ 54.7, 62.2, STORMWIND_CITY },
+						{ 34.0, 66.4, IRONFORGE },
+						{ 64.3, 44.5, DARNASSUS },
+						{ 81.0, 59.8, EASTERN_PLAGUELANDS },
+					},
+				}),
+				["hordeQuestData"] = q(9335, {	-- Consecrated Sharpening Stones [H]
+					["qg"] = 16787,	-- Argent Outfitter <The Argent Dawn>
+					["coords"] = {
+						{ 43.7, 52.6, THUNDER_BLUFF },
+						{ 52.5, 73.7, ORGRIMMAR },
+						{ 49.9, 29.4, UNDERCITY },
+						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
+					},
+				}),
 				["sourceQuest"] = 9153,	-- Under the Shadow
-				["coords"] = {
-					{ 54.7, 62.2, STORMWIND_CITY },
-					{ 34.0, 66.4, IRONFORGE },
-					{ 43.7, 52.6, THUNDER_BLUFF },
-					{ 52.5, 73.7, ORGRIMMAR },
-					{ 49.9, 29.4, UNDERCITY },
-					{ 64.3, 44.5, DARNASSUS },
-					{ 80.9, 59.6, EASTERN_PLAGUELANDS },
-				},
-				["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
+				["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
 				["cost"] = { { "i", 22484, 8 } },	-- Necrotic Rune
 				["repeatable"] = true,
 				["lvl"] = 50,
 				["groups"] = {
 					i(23122),	-- Consecrated Sharpening Stone
 				},
-			})),
-			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, q(9317, {	-- Consecrated Sharpening Stones
-				["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
-				["sourceQuest"] = 9335,	-- Consecrated Sharpening Stones
-				["coords"] = {
-					{ 54.7, 62.2, STORMWIND_CITY },
-					{ 34.0, 66.4, IRONFORGE },
-					{ 43.7, 52.6, THUNDER_BLUFF },
-					{ 52.5, 73.7, ORGRIMMAR },
-					{ 49.9, 29.4, UNDERCITY },
-					{ 64.3, 44.5, DARNASSUS },
-					{ 80.9, 59.6, EASTERN_PLAGUELANDS },
-				},
-				["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
-				["cost"] = { { "i", 22484, 8 } },	-- Necrotic Rune
-				["repeatable"] = true,
-				["lvl"] = 50,
-				["groups"] = {
-					i(23122),	-- Consecrated Sharpening Stone
-				},
-			})),
+			}),
 			q(9292, {	-- Cracked Necrotic Crystal
 				["providers"] = {
 					{ "n", 16431 },	-- Cracked Necrotic Crystal
@@ -506,18 +464,26 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				["isYearly"] = true,
 				["lvl"] = 50,
 			}),
-			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, q(9336, {	-- Major Healing Potion
-				["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
+			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, {	-- Major Healing Potion
+				["allianceQuestData"] = q(9321, {	-- Major Healing Potion [A]
+					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
+					["coords"] = {
+						{ 54.7, 62.2, STORMWIND_CITY },
+						{ 34.0, 66.4, IRONFORGE },
+						{ 64.3, 44.5, DARNASSUS },
+						{ 81.0, 59.8, EASTERN_PLAGUELANDS },
+					},
+				}),
+				["hordeQuestData"] = q(9336, {	-- Major Healing Potion [H]
+					["qg"] = 16787,	-- Argent Outfitter <The Argent Dawn>
+					["coords"] = {
+						{ 43.7, 52.6, THUNDER_BLUFF },
+						{ 52.5, 73.7, ORGRIMMAR },
+						{ 49.9, 29.4, UNDERCITY },
+						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
+					},
+				}),
 				["sourceQuest"] = 9153,	-- Under the Shadow
-				["coords"] = {
-					{ 54.7, 62.2, STORMWIND_CITY },
-					{ 34.0, 66.4, IRONFORGE },
-					{ 43.7, 52.6, THUNDER_BLUFF },
-					{ 52.5, 73.7, ORGRIMMAR },
-					{ 49.9, 29.4, UNDERCITY },
-					{ 64.3, 44.5, DARNASSUS },
-					{ 80.9, 59.6, EASTERN_PLAGUELANDS },
-				},
 				["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
 				["cost"] = { { "i", 22484, 15 } },	-- Necrotic Rune
 				["repeatable"] = true,
@@ -525,39 +491,27 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				["groups"] = {
 					MAJOR_HEALING_POTION,	-- Major Healing Potion
 				},
-			})),
-			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, q(9321, {	-- Major Healing Potion
-				["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
-				["sourceQuest"] = 9336,	-- Major Healing Potion
-				["coords"] = {
-					{ 54.7, 62.2, STORMWIND_CITY },
-					{ 34.0, 66.4, IRONFORGE },
-					{ 43.7, 52.6, THUNDER_BLUFF },
-					{ 52.5, 73.7, ORGRIMMAR },
-					{ 49.9, 29.4, UNDERCITY },
-					{ 64.3, 44.5, DARNASSUS },
-					{ 80.9, 59.6, EASTERN_PLAGUELANDS },
-				},
-				["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
-				["cost"] = { { "i", 22484, 15 } },	-- Necrotic Rune
-				["repeatable"] = true,
-				["lvl"] = 50,
-				["groups"] = {
-					MAJOR_HEALING_POTION,	-- Major Healing Potion
-				},
-			})),
-			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, q(9337, {	-- Major Mana Potion
-				["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
+			}),
+			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, {	-- Major Mana Potion
+				["allianceQuestData"] = q(9337, {	-- Major Mana Potion [A]
+					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
+					["coords"] = {
+						{ 54.7, 62.2, STORMWIND_CITY },
+						{ 34.0, 66.4, IRONFORGE },
+						{ 64.3, 44.5, DARNASSUS },
+						{ 81.0, 59.8, EASTERN_PLAGUELANDS },
+					},
+				}),
+				["hordeQuestData"] = q(9320, {	-- Major Mana Potion [H]
+					["qg"] = 16787,	-- Argent Outfitter <The Argent Dawn>
+					["coords"] = {
+						{ 43.7, 52.6, THUNDER_BLUFF },
+						{ 52.5, 73.7, ORGRIMMAR },
+						{ 49.9, 29.4, UNDERCITY },
+						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
+					},
+				}),
 				["sourceQuest"] = 9153,	-- Under the Shadow
-				["coords"] = {
-					{ 54.7, 62.2, STORMWIND_CITY },
-					{ 34.0, 66.4, IRONFORGE },
-					{ 43.7, 52.6, THUNDER_BLUFF },
-					{ 52.5, 73.7, ORGRIMMAR },
-					{ 49.9, 29.4, UNDERCITY },
-					{ 64.3, 44.5, DARNASSUS },
-					{ 80.9, 59.6, EASTERN_PLAGUELANDS },
-				},
 				["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
 				["cost"] = { { "i", 22484, 15 } },	-- Necrotic Rune
 				["repeatable"] = true,
@@ -565,27 +519,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				["groups"] = {
 					MAJOR_MANA_POTION,	-- Major Mana Potion
 				},
-			})),
-			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, q(9320, {	-- Major Mana Potion
-				["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
-				["sourceQuest"] = 9337,	-- Major Mana Potion
-				["coords"] = {
-					{ 54.7, 62.2, STORMWIND_CITY },
-					{ 34.0, 66.4, IRONFORGE },
-					{ 43.7, 52.6, THUNDER_BLUFF },
-					{ 52.5, 73.7, ORGRIMMAR },
-					{ 49.9, 29.4, UNDERCITY },
-					{ 64.3, 44.5, DARNASSUS },
-					{ 80.9, 59.6, EASTERN_PLAGUELANDS },
-				},
-				["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
-				["cost"] = { { "i", 22484, 15 } },	-- Necrotic Rune
-				["repeatable"] = true,
-				["lvl"] = 50,
-				["groups"] = {
-					MAJOR_MANA_POTION,	-- Major Mana Potion
-				},
-			})),
+			}),
 			q(9302, {	-- Missive from the Front
 				["providers"] = {
 					{ "i", 22973 },	-- A Crumpled Missive
@@ -664,37 +598,26 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				["races"] = { HUMAN },
 				["lvl"] = 65,
 			}),
-			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, q(9343, {	-- Tabard of the Argent Dawn
-				["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
+			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, {	-- Tabard of the Argent Dawn
+				["allianceQuestData"] = q(9341, {	-- Tabard of the Argent Dawn [A]
+					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
+					["coords"] = {
+						{ 54.7, 62.2, STORMWIND_CITY },
+						{ 34.0, 66.4, IRONFORGE },
+						{ 64.3, 44.5, DARNASSUS },
+						{ 81.0, 59.8, EASTERN_PLAGUELANDS },
+					},
+				}),
+				["hordeQuestData"] = q(9343, {	-- Tabard of the Argent Dawn [H]
+					["qg"] = 16787,	-- Argent Outfitter <The Argent Dawn>
+					["coords"] = {
+						{ 43.7, 52.6, THUNDER_BLUFF },
+						{ 52.5, 73.7, ORGRIMMAR },
+						{ 49.9, 29.4, UNDERCITY },
+						{ 80.8, 59.6, EASTERN_PLAGUELANDS },
+					},
+				}),
 				["sourceQuest"] = 9153,	-- Under the Shadow
-				["coords"] = {
-					{ 54.7, 62.2, STORMWIND_CITY },
-					{ 34.0, 66.4, IRONFORGE },
-					{ 43.7, 52.6, THUNDER_BLUFF },
-					{ 52.5, 73.7, ORGRIMMAR },
-					{ 49.9, 29.4, UNDERCITY },
-					{ 64.3, 44.5, DARNASSUS },
-					{ 80.9, 59.6, EASTERN_PLAGUELANDS },
-				},
-				["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
-				["cost"] = { { "i", 22484, 10 } },	-- Necrotic Rune
-				["lvl"] = 50,
-				["groups"] = {
-					i(22999),	-- Tabard of the Argent Dawn
-				},
-			})),
-			applyclassicphase(PHASE_SIX_SCOURGE_INVASION, q(9341, {	-- Tabard of the Argent Dawn
-				["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
-				["sourceQuest"] = 9343,	-- Tabard of the Argent Dawn
-				["coords"] = {
-					{ 54.7, 62.2, STORMWIND_CITY },
-					{ 34.0, 66.4, IRONFORGE },
-					{ 43.7, 52.6, THUNDER_BLUFF },
-					{ 52.5, 73.7, ORGRIMMAR },
-					{ 49.9, 29.4, UNDERCITY },
-					{ 64.3, 44.5, DARNASSUS },
-					{ 80.9, 59.6, EASTERN_PLAGUELANDS },
-				},
 				["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
 				["cost"] = { { "i", 22484, 10 } },	-- Necrotic Rune
 				["repeatable"] = true,
@@ -702,7 +625,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				["groups"] = {
 					i(22999),	-- Tabard of the Argent Dawn
 				},
-			})),
+			}),
 			q(12776, {	-- The Exodar
 				["providers"] = {
 					{ "n", 29087 },	-- Bishop Lazaril
@@ -832,16 +755,16 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 				}),
 				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(23087, {	-- Breastplate of Undead Slaying
-					["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
+					["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
 				})),
 				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(23088, {	-- Chestguard of Undead Slaying
-					["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
+					["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
 				})),
 				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(23085, {	-- Robe of Undead Cleansing
-					["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
+					["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
 				})),
 				applyclassicphase(PHASE_SIX_SCOURGE_INVASION, i(23089, {	-- Tunic of Undead Slaying
-					["timeline"] = { REMOVED_WITH_NAXX_RELEASE },
+					["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
 				})),
 			},
 		}),

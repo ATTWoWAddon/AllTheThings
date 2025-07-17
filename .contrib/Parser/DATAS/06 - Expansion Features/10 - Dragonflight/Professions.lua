@@ -229,8 +229,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			header(HEADERS.Achievement, 16683, {	-- In Tyr's Footsteps
 				------ Chapter 1 ------
 				q(72773, {	-- Learning Ingenuity
-					["provider"] = { "n", 196499 },	-- Therazal
-					["coord"] = { 50.2, 55.9, VALDRAKKEN },
+					["qgs"] = {
+						196499,	-- Therazal <Dragon Isles Emissary>
+						199336,	-- Kerazal  <Dragon Isles Emissary>
+						-- #if AFTER 10.2.0
+						213930,	-- Koszaru
+						-- #endif
+					},
+					["coords"] = {
+						{ 50.2, 55.9, VALDRAKKEN },
+						{ 76.6, 34.2, THE_WAKING_SHORES },
+						-- #if AFTER 10.2.0
+						{ 48.0, 58.8, VALDRAKKEN },
+						-- #endif
+					},
 					["isBreadcrumb"] = true,	-- unconfirmed
 				}),
 				q(70180, {	-- Jump-Start? Jump-Starting!

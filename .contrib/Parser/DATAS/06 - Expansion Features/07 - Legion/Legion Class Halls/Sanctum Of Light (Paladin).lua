@@ -583,6 +583,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 46259 },	-- Darkbinder Dilemma
 						["provider"] = { "n", 119209 },	-- Erelyn Moonfang
 						["coord"] = { 66.8, 53.4, VALSHARAH },
+						["g"] = {
+							i(143330),	-- Felstone Pendant (QI!)
+							i(143331),	-- Nerus' Journal (QI!)
+							i(143332),	-- Blank Scroll (QI!)
+						},
 					}),
 					q(45146, {	-- Runic Reading
 						["sourceQuests"] = { 45145 },	-- Moonfang Family Relics
@@ -691,6 +696,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 46083 },	-- A Few Things First
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
+						["g"] = {
+							i(144294),	-- Plated Barding (QI!)
+						},
 					}),
 					q(45567, {	-- My Kingdom for a Horse
 						["sourceQuests"] = { 45562 },	-- Kneel and Be Squired!

@@ -6,8 +6,10 @@ PET_BATTLE_DUNGEONS = createHeader({
 	icon = [[~_.asset("Pet_Dungeon")]],
 	text = {
 		en = "Pet Battle Dungeons",
+		es = "Mazmorras de duelo de mascotas",
 		de = "Haustierkampf Instanzen",
 		fr = "Mascotte des combat des donjons",
+		mx = "Calabozos de duelo de mascotas",
 		ru = "Подземелья Боевых питомцев",
 		cn = "宠物对战地下城",
 		tw = "寵物對戰挑戰",
@@ -80,6 +82,9 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_7_2_0 } }, {
 						}),
 						i(174828, {	-- Experiment 13 (PET!)
 							["cost"] = { { "i", 174360, 3 }, },	-- 3x Shadowy Gem
+						}),
+						i(174358, {	-- Unopened Blackrock Supply Crate
+							["cost"] = { { "i", 174360, 1 }, },	-- 1x Shadowy Gem
 						}),
 						i(174827, {	-- Wailing Lasher (PET!)
 							["cost"] = { { "i", 174360, 1 }, },	-- 1x Shadowy Gem

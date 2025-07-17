@@ -444,17 +444,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(569, {	-- Warchief Kargath Bladefist
 					["creatureID"] = 16808,
 					["groups"] = {
-						ach(657, {	-- The Shattered Halls
-							-- #if BEFORE WRATH
-							["sourceQuests"] = {
-								10884,	-- Trial of the Naaru: Mercy
-								9492,	-- Turning the Tide
-								9524,	-- Imprisoned in the Citadel
-								9525,	-- Imprisoned in the Citadel
-								9495,	-- The Will of the Warchief
-							},
-							-- #endif
-						}),
+						ach(657),	-- The Shattered Halls
 						i(27533),	-- Demonblood Eviscerator
 						i(27538),	-- Lightsworn Hammer
 						i(27540),	-- Nexus Torch
@@ -571,15 +561,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(569, {	-- Warchief Kargath Bladefist
 						["creatureID"] = 16808,
 						["groups"] = {
-							ach(678, {	-- Heroic: The Shattered Halls
-								-- #if BEFORE WRATH
-								["sourceQuests"] = {
-									10884,	-- Trial of the Naaru: Mercy
-									9524,	-- Imprisoned in the Citadel
-									9525,	-- Imprisoned in the Citadel
-								},
-								-- #endif
-							}),
+							ach(678),	-- Heroic: The Shattered Halls
 							ach(5078, {	-- Heroic: The Shattered Halls Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),

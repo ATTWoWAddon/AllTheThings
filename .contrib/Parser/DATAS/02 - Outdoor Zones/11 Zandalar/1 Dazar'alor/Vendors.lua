@@ -97,8 +97,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(163620, {	-- Island Flotsam
 						["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
 					}),
-					i(166749, {	-- Lyrics: Song of the Sea
-						["questID"] = 54859,
+					i(166749, {	-- Lyrics: Song of the Sea (CI!)
 						["cost"] = { { "c", 1710, 25 }, },	-- 25x Seaferer's Dubloon
 					}),
 					i(160290, {	-- Red Tricorne Hat
@@ -181,6 +180,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(130901, {	-- Chronicler Grazzul <Inscription Trainer>
 				["coord"] = { 42.3, 39.7, DAZARALOR },
 				["g"] = {
+					i(158205),	-- Acacia Powder
 					TempForceMisc(i(168026)),	-- Book of Techniques: Sanguine Feather Quill of Lana'thel
 				},
 			}),
@@ -219,6 +219,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 43.4, 38.3, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
+					i(160298),	-- Durable Flux
 					i(168022, {	-- Plans: Khaz'gorian Smithing Hammer (RECIPE!)
 						["sourceQuests"] = { 50279 },	-- Anvil's Away (H)
 						["timeline"] = { ADDED_8_1_5 },
@@ -271,12 +272,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(163705, {	-- Imaginary Gun (TOY!)
 						["cost"] = { { "i", POLISHED_PET_CHARM, 250 }, },
 					}),
-					i(165840, {	-- Interdimensional Pet Portal
-						["questID"] = 54264,
+					i(165840, {	-- Shattered Pet Portal (CI!)
 						-- #if BEFORE 9.0.2
 						["cost"] = { { "i", POLISHED_PET_CHARM, 1000 }, },
 						-- #endif
-						["u"] = REMOVED_FROM_GAME,
+						["timeline"] = { REMOVED_9_1_0 },
 					}),
 					i(163502, {	-- Lil' Ben'fon (PET!)
 						["sourceQuests"] = { 50297 },	-- The Head of Her Enemy
@@ -288,10 +288,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["races"] = HORDE_ONLY,	-- Note!! We are only marking the item that learns it as Horde.  Alliance can use it so we don't mark the actual species.
 						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
 					}),
-					i(139003, {	-- Pocket Pet Portal
-						["questID"] = 43016,
+					i(139003, {	-- Pocket Pet Portal (CI!)
 						["cost"] = { { "i", POLISHED_PET_CHARM, 1000 }, },
-						["u"] = REMOVED_FROM_GAME,
+						["timeline"] = { REMOVED_9_1_0 },
 					}),
 					i(163499, {	-- Zandalari Shinchomper (PET!)
 						["cost"] = { { "i", POLISHED_PET_CHARM, 50 }, },
@@ -462,6 +461,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 44.5, 33.9, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
+					i(159959),	-- Nylon Thread
 					i(168029, {	-- Pattern: Synchronous Thread
 						["description"] = "This recipe is for relearning the Synchronous Thread after you have completed the Tools of the Trade questline.",
 						["sourceQuests"] = {
@@ -559,7 +559,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(161521, {	-- Goblin Sapper's Legguards
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(166444),	-- Honorbound Scouting Map
+					i(166444),	-- Honorbound Scouting Map (CI!)
 					i(163779, {	-- Lil' War Machine (PET!)
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
@@ -649,10 +649,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					39987,	-- Tuskarr Fishing Spear
 				}},
 			}),
-			n(143138, {	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
-				["coord"] = { 55.0, 86.8, DAZARALOR },
-				["sym"] = {{ "fill" }},	--
-			}),
 			n(122695, {	-- Seshuli <Jewelcrafting Trainer>
 				["coord"] = { 47.0, 37.8, DAZARALOR },
 				["races"] = HORDE_ONLY,
@@ -675,6 +671,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							r(283401),	-- Ub3r-Module: Ub3r S3ntry Mk. X8.0 (RECIPE!)
 						},
 					}),
+					i(160502),	-- Chemical Blasting Cap
+					i(163569),	-- Insulated Wiring
 				},
 			}),
 			n(125879, {	-- Talutu <Mount Vendor>

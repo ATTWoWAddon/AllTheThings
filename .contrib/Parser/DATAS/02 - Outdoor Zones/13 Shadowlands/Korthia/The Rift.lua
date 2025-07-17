@@ -4,7 +4,11 @@
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
 	m(KORTHIA, {
 		header(HEADERS.Spell, 354778, {	-- The Rift
-			["description"] = "The things in this section are only accessible when you are in The Rift, a version of the Maw populated by shades.\n\nThis phase can be accessed by using a |cFF1eff00Repaired Riftkey|r on a |cFFFFFFFFMaw Rift|r in Korthia or by using a |cFF0070ddCollapsing Riftstone|r.",
+			["description"] = "The things in this section are only accessible when you are in The Rift, a version of the Maw populated by shades.",
+			["cost"] = {
+				{"i",186969,1},	-- Collapsing Riftstone
+				{"i",186731,1},	-- Repaired Riftkey
+			},
 			["g"] = {
 				n(QUESTS, {
 					q(64522, {	-- Stolen Korthian Supplies

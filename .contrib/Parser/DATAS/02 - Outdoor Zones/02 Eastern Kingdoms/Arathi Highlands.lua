@@ -9,52 +9,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(ACHIEVEMENTS, {
 				ach(4896, {	-- Arathi Highlands Quests
 					["timeline"] = { ADDED_4_0_3 },
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(38274, {	-- Faldir's Cove
-							["sourceQuest"] = 26628,	-- Death From Below
-						}),
-						crit(38275, {	-- Refuge Pointe (A)
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								26117,	-- For Southshore
-							},
-						}),
-						crit(38276, {	-- Refuge Pointe (A)
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								26038,	-- Attack on the Tower
-							},
-						}),
-						crit(38277, {	-- Myzrael's Tale (A)
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 26049,	-- The Princess Unleashed (A)
-						}),
-						crit(38270, {	-- Galen's Fall (H)
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26081,	-- Alina's Reward
-							},
-						}),
-						crit(38271, {	-- Galen's Fall (H)
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26029,	-- The Real Threat
-							},
-						}),
-						crit(38272, {	-- Hammerfall (H)
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26912,	-- The Princess Unleashed (H)
-							},
-						}),
-						crit(38273, {	-- Hammerfall (H)
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26108,	-- Guile of the Raptor
-							},
-						}),
-					},
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
 					-- #else
 					["sourceQuests"] = {
 						26628,	-- Death From Below
@@ -68,7 +24,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				explorationAch(761),	-- Explore Arathi Highlands
+				ach(761),	-- Explore Arathi Highlands
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",
@@ -2171,17 +2127,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["crs"] = {
 								2554,	-- Witherbark Axe Thrower
 								2558,	-- Witherbark Berserker
+								51631,	-- Witherbark Fisher
 								2556,	-- Witherbark Headhunter
 								2557,	-- Witherbark Shadow Hunter
 								2553,	-- Witherbark Shadowcaster
 								2552,	-- Witherbark Troll
 								2555,	-- Witherbark Witch Doctor
+								51633,	-- Witherbark Witch Doctor
 								2605,	-- Zalas Witherbark <Warband Leader>
 							},
 						}),
 						objective(2, {	-- 0/4 Witherbark Medicine Pouch
 							["provider"] = { "i", 4522 },	-- Witherbark Medicine Pouch
-							["cr"] = 2555,	-- Witherbark Witch Doctor
+							["crs"] = {
+								2555,	-- Witherbark Witch Doctor
+								51633,	-- Witherbark Witch Doctor
+							},
 						}),
 					},
 				}),
@@ -2442,7 +2403,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						i(11150, {	-- Formula: Enchant Gloves - Mining (RECIPE!)
-							["timeline"] = { ADDED_4_0_3 },
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 						i(4833, {	-- Glorious Shoulders
 							["isLimited"] = true,
@@ -2559,7 +2520,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(7089, {	-- Pattern: Azure Silk Cloak
+						i(7089, {	-- Pattern: Azure Silk Cloak (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -2714,6 +2675,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(1297, {	-- Robes of the Shadowcaster
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["crs"] = {
 						2553,	-- Witherbark Shadowcaster
 						-- #if BEFORE CATA

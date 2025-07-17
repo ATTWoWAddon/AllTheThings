@@ -48,7 +48,7 @@ hooksecurefunc("SetItemRef", function(link, text)
 		if data1 == "search" then
 			local cmd = data2 .. ":" .. data3;
 			app.SetSkipLevel(2);
-			local group = app.GetCachedSearchResults(app.SearchForLink, cmd);
+			local group = app.GetCachedSearchResults(app.SearchForLink, cmd, nil, {IgnoreCache=true})
 			app.SetSkipLevel(0);
 
 			if IsShiftKeyDown() then
@@ -77,8 +77,7 @@ function app:Linkify(text, color, operation)
 end
 function app:SearchLink(group)
 	if not group then return end
-	local key = group.key
-	return app:Linkify(group.text or group.hash or UNKNOWN, app.Colors.ChatLink, "search:"..(key or "?")..":"..(group[key] or "?"))
+	return app:Linkify(group.text or group.hash or UNKNOWN, app.Colors.ChatLink, "search:"..(group.searchKey or group.key or "?")..":"..(group[group.key] or "?"))
 end
 function app:RawSearchLink(field,id)
 	return app:SearchLink(app.SearchForObject(field, id, "field"))
@@ -90,6 +89,16 @@ end
 
 -- Define Chat Commands handling
 app.ChatCommands = { Help = {} }
+local function ChatCommand_Add(cmd, func, help)
+	app.ChatCommands[cmd:lower()] = func
+	if help then
+		if type(help) ~= "table" then
+			app.print("Attempted to add a non-table Help for a Chat Command: "..cmd)
+		else
+			app.ChatCommands.Help[cmd:lower()] = help
+		end
+	end
+end
 -- Adds a handled chat command for ATT
 -- cmd : The lowercase string to trigger the command handler
 -- func : The function which is run with provided 'args' from chat input when 'cmd' is used
@@ -97,15 +106,14 @@ app.ChatCommands = { Help = {} }
 app.ChatCommands.Add = function(cmd, func, help)
 	if not cmd or cmd == "" then error("Must supply an Add Chat Command name") end
 	if type(func) ~= "function" then error("Attempted to add a non-function handler for a Chat Command: "..cmd) end
-		app.ChatCommands[cmd:lower()] = func
-		if help then
-			if type(help) ~= "table" then
-				app.print("Attempted to add a non-table Help for a Chat Command: "..cmd)
-			else
-				app.ChatCommands.Help[cmd:lower()] = help
-			end
+	if type(cmd) == "table" then
+		for _,alias in ipairs(cmd) do
+			ChatCommand_Add(alias, func, help)
 		end
+	else
+		ChatCommand_Add(cmd, func, help)
 	end
+end
 -- Removes a handled chat command for ATT
 -- cmd : The lowercase string command whose handler will be removed
 app.ChatCommands.Remove = function(cmd)
@@ -227,22 +235,39 @@ function(cmd)
 	app:GetWindow("list"):Toggle();
 end)
 
+local function ParseCommand(msg)
+    local itemLinks = {}
+    local function StoreLinks(link)
+        itemLinks[#itemLinks + 1] = link
+        return "\x1F" .. #itemLinks
+    end
+
+    -- Step 1: Replace links with tokens
+    msg = msg:gsub("|c[%xnIQ:]+|H[a-z]+:%d+:.-|h%[.-%]|h|r", StoreLinks)
+	-- app.PrintDebug("tokenized",msg)
+    -- Step 2: Split by spaces
+    local args = { (" "):split(msg) }
+
+    -- Step 3: Replace tokens with original item links
+	local index
+    for i, v in ipairs(args) do
+		index = tonumber(v:match("\x1F(%d+)"))
+        if index then
+            args[i] = itemLinks[index]
+        end
+    end
+
+    return args
+end
+
 -- Default /att support
 AddSlashCommands({"allthethings","things","att"},
 function(cmd)
 	if cmd then
 		-- app.PrintDebug(cmd)
-		local args = { (" "):split(cmd:lower()) };
+		local args = ParseCommand(cmd)
 		cmd = args[1];
 		-- app.PrintTable(args)
-		-- first arg is always the window/command to execute
-		app.ResetCustomWindowParam(cmd);
-		for k=2,#args do
-			local customArg, customValue = args[k], nil;
-			customArg, customValue = ("="):split(customArg);
-			-- app.PrintDebug("Split custom arg:",customArg,customValue)
-			app.SetCustomWindowParam(cmd, customArg, customValue or true);
-		end
 
 		-- Eventually will migrate known Chat Commands to their respective creators
 		local commandFunc = app.ChatCommands[cmd]
@@ -250,6 +275,15 @@ function(cmd)
 			local help = args[2] == "help"
 			if help then return app.ChatCommands.PrintHelp(cmd) end
 			return commandFunc(args)
+		end
+
+		-- first arg is always the window/command to execute
+		app.ResetCustomWindowParam(cmd);
+		for k=2,#args do
+			local customArg, customValue = args[k], nil;
+			customArg, customValue = ("="):split(customArg);
+			-- app.PrintDebug("Split custom arg:",customArg,customValue)
+			app.SetCustomWindowParam(cmd, customArg, customValue or true);
 		end
 
 		if not cmd or cmd == "" or cmd == "main" or cmd == "mainlist" then
@@ -326,12 +360,18 @@ function(cmd)
 
 		-- Search for the Link in the database
 		app.SetSkipLevel(2);
-		local group = app.GetCachedSearchResults(app.SearchForLink, cmd, nil, {SkipFill = true});
+		local group = app.GetCachedSearchResults(app.SearchForLink, cmd, nil, {SkipFill=true,IgnoreCache=true});
 		app.SetSkipLevel(0);
 		-- make sure it's 'something' returned from the search before throwing it into a window
-		if group and (group.link or group.name or group.text or group.key) then
-			app:CreateMiniListForGroup(group);
-			return true;
+		if group then
+			if group.criteriaID and not group.achievementID then
+				app.print("Unsourced Criteria",group.criteriaID,"Use /att criteriaID:achievementID to view unsourced Criteria info")
+				return true
+			end
+			if group.link or group.name or group.text or group.key then
+				app:CreateMiniListForGroup(group);
+				return true;
+			end
 		end
 		app.print("Unknown Command: ", cmd);
 	else

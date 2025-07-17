@@ -759,8 +759,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(ACHIEVEMENTS, {
 				ach(4892, {	-- Eastern Plaguelands Quests
 					["timeline"] = { ADDED_4_0_3 },
-					-- #if AFTER MOP
-					["sym"] = {{ "achievement_criteria" }},
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
 					-- #else
 					["sourceQuests"] = {
 						27373,    -- Onward, to Light's Hope Chapel
@@ -771,7 +771,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				explorationAch(771),	-- Explore Eastern Plaguelands
+				ach(771),	-- Explore Eastern Plaguelands
 				ach(5442, {	-- Full Caravan
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -959,13 +959,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 			}),
-			-- #if AFTER CATA
-			n(PROFESSIONS, {
-				prof(FISHING, {
-					o(180751),	-- Floating Wreckage
+			petbattles({
+				n(66512, {	-- Deiza Plaguehorn <Master Pet Tamer>
+					["coord"] = { 67.0, 52.4, EASTERN_PLAGUELANDS },
+					["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDeiza's pets are level 14 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Undead - use Critter (powerful) or Aquatic (tanky) pet.",
+					["timeline"] = { ADDED_5_0_4 },
+					["petBattleLvl"] = 14,
+					["groups"] = {
+						q(31911, {	-- Deiza Plaguehorn
+							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
 				}),
 			}),
-			-- #endif
 			n(QUESTS, {
 				q(27463, {	-- A Boyhood Dream
 					["qg"] = 45431,	-- Gidwin Goldbraids
@@ -4996,10 +5005,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 						{	-- Honored
 							applyclassicphase(PHASE_THREE_ENCHANTS, i(19446)),	-- Formula: Enchant Bracer - Argent Versatility / CLASSIC: Formula: Enchant Bracer - Mana Regeneration (RECIPE!)
-							i(19216),	-- Pattern: Argent Boots
+							applyclassicphase(PHASE_THREE_RECIPES, i(19216)),	-- Pattern: Argent Boots (RECIPE!)
 							applyclassicphase(PHASE_THREE_RECIPES, i(19328)),	-- Pattern: Dawn Treaders (RECIPE!)
 							applyclassicphase(PHASE_THREE_RECIPES, i(19203)),	-- Plans: Girdle of the Dawn (RECIPE!)
-							i(19442),	-- Recipe: Powerful Anti-Venom (RECIPE!)
+							applyclassicphase(PHASE_THREE_RECIPES, i(19442)),	-- Recipe: Powerful Anti-Venom (RECIPE!)
 							i(13482),	-- Recipe: Transmute Air to Fire (RECIPE!)
 							i(22014, {	-- Hallowed Brazier
 								["timeline"] = { REMOVED_4_0_3 },
@@ -5126,7 +5135,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							applyclassicphase(PHASE_THREE_ENCHANTS, i(19447)),	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
-							i(19217),	-- Pattern: Argent Shoulders
+							applyclassicphase(PHASE_THREE_RECIPES, i(19217)),	-- Pattern: Argent Shoulders (RECIPE!)
 							applyclassicphase(PHASE_THREE_RECIPES, i(19329)),	-- Pattern: Golden Mantle of the Dawn (RECIPE!)
 							-- #if SEASON_OF_DISCOVERY
 							-- CRIEVE NOTE: With SOD phase 4, they put this recipe directly on the vendor. Interesting.

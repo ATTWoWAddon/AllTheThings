@@ -8,6 +8,7 @@ local CERULEAN_PIGMENT = 114931;
 local LUMINOUS_SHARD = 111245;
 local RAW_BEAST_HIDE = 110609;
 local STARFLOWER = 109127;
+local SUMPTUOUS_FUR = 111557;
 local TRUE_IRON_ORE = 109119;
 local PRIMAL_SPIRIT = i(120945, {	-- Primal Spirit
 	["cost"] = {
@@ -30,6 +31,28 @@ local DUST_TRADER = {
 	PRIMAL_SPIRIT,
 	i(122711, {	-- Formula: Temporal Binding (RECIPE!)
 		["cost"] = {{ "i", LUMINOUS_SHARD, 5 }},
+	}),
+};
+local FUR_TRADER = {
+	PRIMAL_SPIRIT,
+	i(122716, {	-- Pattern: Primal Weaving (RECIPE!)
+		["cost"] = {{ "i", SUMPTUOUS_FUR, 60 }},
+	}),
+	i(127724, {	-- Pattern: Mighty Hexweave Essence (RECIPE!)
+		["description"] = WOD_REMOVED_RECIPE_STR,
+		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		["cost"] = {{ "i", SUMPTUOUS_FUR, 60 }},
+		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
+	}),
+	i(122549, {	-- Pattern: Powerful Hexweave Essence (RECIPE!)
+		["cost"] = {{ "i", SUMPTUOUS_FUR, 60 }},
+		["timeline"] = { ADDED_6_1_0, REMOVED_6_2_0 },
+	}),
+	i(127742, {	-- Pattern: Savage Hexweave Essence (RECIPE!)
+		["description"] = WOD_REMOVED_RECIPE_STR,
+		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		["cost"] = {{ "i", SUMPTUOUS_FUR, 60 }},
+		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
 	}),
 };
 local HERB_TRADER = {
@@ -264,38 +287,10 @@ root(ROOTS.ExpansionFeatures,
 					}),
 					i(119212),	-- Winning Hand (TOY!)
 				}),
-				n(91034, {	-- Calvo Klyne <Fur Trader>
+				n(91034, bubbleDownSelf({["timeline"] = { ADDED_6_1_0 } }, {	-- Calvo Klyne <Fur Trader>
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(122716, {	-- Pattern: Primal Weaving
-							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
-						}),
-						i(120945, {	-- Primal Spirit
-							["cost"] = {
-								{ "i", 109118, 5 },					-- 5x Blackrock Ore
-								{ "i", 109693, 5 },					-- 5x Draenic Dust
-								{ "i", 109125, 5 },					-- 5x Fireweed
-								{ "i", 110609, 5 },					-- 5x Raw Beast Hide
-								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
-							},
-						}),
-						i(127724, {	-- Pattern: Mighty Hexweave Essence
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
-							["timeline"] = { REMOVED_10_0_5 },
-						}),
-						i(122549, {	-- Pattern: Powerful Hexweave Essence (RECIPE!)
-							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
-						}),
-						i(127742, {	-- Pattern: Savage Hexweave Essence
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
-							["timeline"] = { REMOVED_10_0_5 },
-						}),
-					},
-				}),
+					["g"] = FUR_TRADER,
+				})),
 				n(88633, {	-- Deluwin Whisperfield <Contracts>
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Sells contracts for followers not chosen during zone quests.",
@@ -371,38 +366,10 @@ root(ROOTS.ExpansionFeatures,
 						}),
 					},
 				}),
-				n(91025, {	-- Dorothy "Two" <Fur Trader>
+				n(91025, bubbleDownSelf({["timeline"] = { ADDED_6_1_0 } }, {	-- Dorothy "Two" <Fur Trader>
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(122716, {	-- Pattern: Primal Weaving
-							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
-						}),
-						i(120945, {	-- Primal Spirit
-							["cost"] = {
-								{ "i", 109118, 5 },					-- 5x Blackrock Ore
-								{ "i", 109693, 5 },					-- 5x Draenic Dust
-								{ "i", 109125, 5 },					-- 5x Fireweed
-								{ "i", 110609, 5 },					-- 5x Raw Beast Hide
-								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
-							},
-						}),
-						i(127724, {	-- Pattern: Mighty Hexweave Essence
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
-							["timeline"] = { REMOVED_10_0_5 },
-						}),
-						i(122549, {	-- Pattern: Powerful Hexweave Essence (RECIPE!)
-							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
-						}),
-						i(127742, {	-- Pattern: Savage Hexweave Essence
-							["description"] = WOD_REMOVED_RECIPE_STR,
-							["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
-							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
-							["timeline"] = { REMOVED_10_0_5 },
-						}),
-					},
-				}),
+					["g"] = FUR_TRADER,
+				})),
 				n(91020, bubbleDownSelf({["timeline"] = { ADDED_6_1_0 } }, {	-- Enchantress Ismae <Dust Trader>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = DUST_TRADER,

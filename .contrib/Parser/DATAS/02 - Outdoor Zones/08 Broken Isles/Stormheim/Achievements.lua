@@ -9,7 +9,7 @@ root(ROOTS.Zones, {
 				ach(11263, {	-- Adventurer of Stormheim
 					["sym"] = {{ "achievement_criteria" }},
 				}),
-				explorationAch(10668),	-- Explore Stormheim
+				ach(10668),	-- Explore Stormheim
 				ach(10627),	-- Going Up (Stormheim)
 				ach(11232, {	-- Lock, Stock and Two Smoking Goblins
 					title(343),		-- the Gullible

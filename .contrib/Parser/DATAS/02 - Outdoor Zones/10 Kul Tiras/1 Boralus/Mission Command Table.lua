@@ -84,7 +84,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 	m(KUL_TIRAS, {
 		m(BORALUS, {
 			n(138704, {
-				-- q(54422),	-- Won PVP pet battle, [A Shady Character] has been added to your Mission Table. [A]
 				q(54423),	-- Completing A Shady Character (Mission), accepting A Shady Character (Quest) [A]
 			}),
 		}),

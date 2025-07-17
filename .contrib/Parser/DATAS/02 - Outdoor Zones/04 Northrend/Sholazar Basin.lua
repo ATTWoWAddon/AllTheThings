@@ -106,40 +106,13 @@ root(ROOTS.Zones, {
 			["icon"] = 236817,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					explorationAch(1268),	-- Explore Sholazar Basin
+					ach(1268),	-- Explore Sholazar Basin
 					achWithRep(950, FACTION_FRENZYHEART_TRIBE),	-- Frenzyheart Tribe
-					ach(961, {	-- Honorary Frenzyheart
-						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-						["groups"] = {
-							crit(2061, {	-- A Hero's Headgear
-								["_quests"] = { 12758 },
-							}),
-							crit(2054, {	-- Chicken Party!
-								["_quests"] = { 12702 },
-							}),
-							crit(2055, {	-- Kartak's Rampage
-								["_quests"] = { 12703 },
-							}),
-							crit(2060, {	-- Rejek: First Blood
-								["_quests"] = { 12734 },
-							}),
-							crit(2057, {	-- Secret Strength of the Frenzyheart
-								["_quests"] = { 12760 },
-							}),
-							crit(2059, {	-- Strength of the Tempest
-								["_quests"] = { 12741 },
-							}),
-							crit(2058, {	-- The Heartblood's Strength
-								["_quests"] = { 12732 },
-							}),
-							crit(2056, {	-- Tools of War
-								["_quests"] = { 12759 },
-							}),
-						},
-					}),
+					ach(961),	-- Honorary Frenzyheart (automated)
 					ach(39, {	-- Into the Basin
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							12595,	-- In Search of Bigger Game
 							12614,	-- Post-partum Aggression
@@ -148,69 +121,10 @@ root(ROOTS.Zones, {
 							12805,	-- Salvaging Life's Strength
 							12546,	-- Reclamation
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 75,
-						-- #endif
-						-- #else
-						crit(39053, {	-- Hunting Bigger Game
-							["sourceQuest"] = 12595,	-- In Search of Bigger Game
-						}),
-						crit(2004, {	-- Teeth, Spikes, and Talons
-							["sourceQuest"] = 12614,	-- Post-partum Aggression
-						}),
-						crit(39054, {	-- The Wolvar
-							["sourceQuest"] = 12540,	-- Just Following Orders
-						}),
-						crit(39055, {	-- The Oracles
-							["sourceQuest"] = 12581,	-- A Hero's Burden
-						}),
-						crit(39056, {	-- The Lifewarden
-							["sourceQuest"] = 12805,	-- Salvaging Life's Strength
-						}),
-						crit(39726, {	-- Watching Over the Basin
-							["sourceQuest"] = 12546,	-- Reclamation
-						}),
 						-- #endif
 					}),
-					ach(952, {	-- Mercenary of Sholazar
-						-- Meta Achievement
-						["sym"] = {{"meta_achievement",
-							950,	-- Frenzyheart Tribe
-							951,	-- The Oracles
-						}},
-					}),
-					ach(962, {	-- Savior of the Oracles
-						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-						["groups"] = {
-							crit(2068, {	-- A Cleansing Song
-								["_quests"] = { 12735 },
-							}),
-							crit(2062, {	-- Appeasing the Great Rain Stone
-								["_quests"] = { 12704 },
-							}),
-							crit(2064, {	-- Mastery of the Crystals
-								["_quests"] = { 12761 },
-							}),
-							crit(2065, {	-- Power of the Great Ones
-								["_quests"] = { 12762 },
-							}),
-							crit(2069, {	-- Song of Fecundity
-								["_quests"] = { 12737 },
-							}),
-							crit(2066, {	-- Song of Reflection
-								["_quests"] = { 12736 },
-							}),
-							crit(2067, {	-- Song of Wind and Water
-								["_quests"] = { 12726 },
-							}),
-							crit(2063, {	-- Will of the Titans
-								["_quests"] = { 12705 },
-							}),
-						},
-					}),
+					ach(952),	-- Mercenary of Sholazar (automated)
+					ach(962),	-- Savior of the Oracles (automated)
 					achWithRep(951, FACTION_THE_ORACLES),	-- The Oracles
 				}),
 				battlepets({
@@ -1296,8 +1210,9 @@ root(ROOTS.Zones, {
 								i(44112),	-- Glimmershell Shoulder Protectors
 								i(44106),	-- Glitterscale Wrap
 								i(44111),	-- Gold Star Spaulders
-								i(39878, {	-- Mysterious Egg
-									["provider"] = { "i", 39883 },	-- Cracked Egg
+								i(39878),	-- Mysterious Egg
+								i(39883, {	-- Cracked Egg
+									["provider"] = { "i", 39878 },	-- Mysterious Egg
 									["groups"] = {
 										i(44707),	-- Green Proto-Drake (MOUNT!)
 										i(39898, {	-- Cobra Hatchling (PET!)
@@ -1349,8 +1264,9 @@ root(ROOTS.Zones, {
 								i(44117),	-- Azure Strappy Pants
 								i(41723),	-- Design: Jagged Forest Emerald (RECIPE!)
 								i(44123),	-- Discarded Titanium Legplates
-								i(44717, {	-- Disgusting Jar
-									["provider"] = { "i", 44718 },	-- Ripe Disgusting Jar
+								i(44717),	-- Disgusting Jar
+								i(44718, {	-- Ripe Disgusting Jar
+									["provider"] = { "i", 44717 },	-- Disgusting Jar
 									["groups"] = {
 										i(44719),	-- Frenzyheart Brew (TOY!)
 									},

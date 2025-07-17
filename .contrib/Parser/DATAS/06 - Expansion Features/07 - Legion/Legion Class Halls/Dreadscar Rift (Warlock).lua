@@ -9,7 +9,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 			["g"] = {
 				n(ARTIFACTS, {
 					cl(WARLOCK, AFFLICTION, {
-						i(140764, {	-- Grimoire of the First Necrolyte
+						i(140764, {	-- Grimoire of the First Necrolyte (QS!)
 							["description"] = "Any demon can drop this.",
 						}),
 						q(44083, {	-- The Grimoire of the First Necrolyte
@@ -165,7 +165,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 49.4, 74.8, DEADWIND_PASS },
 							["g"] = {
 								i(128942, {	-- Ulthalesh, the Deadwind Harvester
-									artifact(294),	-- Ulthalesh, the Deadwind Harvester
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(294),	-- Ulthalesh, the Deadwind Harvester
+									},
 								}),
 							},
 						}),
@@ -176,7 +179,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 49.4, 74.8, DEADWIND_PASS },
 							["g"] = {
 								i(128942, {	-- Ulthalesh, the Deadwind Harvester
-									artifact(294),	-- Ulthalesh, the Deadwind Harvester
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(294),	-- Ulthalesh, the Deadwind Harvester
+									},
 								}),
 							},
 						}),
@@ -220,10 +226,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 54.0, 47.0, LEGION_DALARAN },
 							["g"] = {
 								i(128943, {	-- Skull of the Man'ari
-									artifact(811),	-- Skull of the Man'ari
+									["ItemAppearanceModifierID"] = 0,
+									["groups"] = {
+										artifact(811),	-- Skull of the Man'ari
+									},
 								}),
 								i(137246, {	-- Spine of Thal'kiel
-									artifact(811),	-- Spine of Thal'kiel
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(811),	-- Spine of Thal'kiel
+									},
 								}),
 							},
 						}),
@@ -260,7 +272,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 73.8, 42.9, LEGION_DALARAN },
 							["g"] = {
 								i(128941, {	-- Scepter of Sargeras
-									artifact(188),	-- Scepter of Sargeras
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(188),	-- Scepter of Sargeras
+									},
 								}),
 							},
 						}),
@@ -691,12 +706,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["coord"] = { 35.3, 38.5, DREADSCAR_RIFT },
 						["timeline"] = { ADDED_7_2_0 },
+						["g"] = {
+							i(144443),	-- Overcharged Fel Core (QI!)
+						},
 					}),
 					q(46240, {	-- Give Me Fuel, Give Me Fire
 						["sourceQuest"] = 46237,	-- Bloodbringer's Missive
 						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["coord"] = { 35.3, 38.5, DREADSCAR_RIFT },
 						["timeline"] = { ADDED_7_2_0 },
+						["g"] = {
+							i(144444),	-- Owlbeast Blood (QI!)
+						},
 					}),
 					q(46238, {	-- If You Build It
 						["sourceQuest"] = 46237,	-- Bloodbringer's Missive
@@ -723,6 +744,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 46241 },	-- The Minions of Hel'nurath
 						["maps"] = { BROKEN_SHORE },
 						["timeline"] = { ADDED_7_2_0 },
+						["g"] = {
+							i(144445),	-- Xorothian Calling Stone (QI!)
+						},
 					}),
 					q(46243, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Wrathsteed of Xoroth
 						["sourceQuests"] = { 46242 },	-- The Dreadlord's Calling

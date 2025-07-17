@@ -18,6 +18,8 @@ NOBLEGARDEN_HEADER = createHeader({
 		en = WOWAPI_GetCategoryName(159),
 		-- #else
 		en = "Noblegarden",
+		es = "Jardín noble",
+		mx = "Jardín noble",
 		-- #endif
 	},
 });
@@ -518,6 +520,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				}),
 				i(44802, {	-- Borrowed Egg Basket
 					["timeline"] = { ADDED_3_1_0 },
+					-- #if BEFORE 10.0.5
+					-- #if NOT COMMON_QUALITY_TRANSMOGS
+					-- NOTE: This is an event item that disappears after the end of the event. After common quality transmog, this no longer requires any event.
+					-- To collect it, it needs to be in your inventory after common quality transmog is added officially.
+					["ignoreSource"] = true,
+					-- #endif
+					-- #endif
 				}),
 				i(188698, {	-- Eagger Basket (TOY!)
 					["timeline"] = { ADDED_9_1_5 },
@@ -560,6 +569,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				}),
 				i(44802, {	-- Borrowed Egg Basket
 					["timeline"] = { ADDED_3_1_0 },
+					-- #if BEFORE 10.0.5
+					-- #if NOT COMMON_QUALITY_TRANSMOGS
+					-- NOTE: This is an event item that disappears after the end of the event. After common quality transmog, this no longer requires any event.
+					-- To collect it, it needs to be in your inventory after common quality transmog is added officially.
+					["ignoreSource"] = true,
+					-- #endif
+					-- #endif
 				}),
 				i(188698, {	-- Eagger Basket (TOY!)
 					["timeline"] = { ADDED_9_1_5 },

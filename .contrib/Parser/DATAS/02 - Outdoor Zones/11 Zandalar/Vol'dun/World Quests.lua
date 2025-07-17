@@ -203,9 +203,17 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51228, {	-- Instant Meat, Ready to Eat
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(159794),	-- Broiled Buzzard Meat (QI!)
+					o_repeated({	-- Bonebeak Scavenger Meat
+						o(288189),	-- Bonebeak Scavenger Meat
+						o(288190),	-- Bonebeak Scavenger Meat
+						i(159794),	-- Broiled Buzzard Meat (QI!)
+					}),
+					o_repeated({	-- Brineclaw Meat
+						o(288191),	-- Brineclaw Meat
+						o(288192),	-- Brineclaw Meat
+						i(159795),	-- Steaming Crab Meat (QI!)
+					}),
 					i(159796),	-- Meatification Potion (QI!)
-					i(159795),	-- Steaming Crab Meat (QI!)
 				},
 			}),
 			q(51239),	-- Instructions Not Included

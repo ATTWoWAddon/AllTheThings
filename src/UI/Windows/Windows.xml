@@ -20,6 +20,7 @@
 	<Script file="Hidden Achievement Triggers.lua"/>
 	<Script file="Hidden Quest Triggers.lua"/>
 	<Script file="Illusions.lua"/>
+	<Script file="Local List.lua"/>
 	<Script file="Locked.lua"/>
 	<Script file="Maps.lua"/>
 	<Script file="Mini List.lua"/>
@@ -29,6 +30,7 @@
 	<Script file="Never Implemented.lua"/>
 	<Script file="New With Patch.lua"/>
 	<Script file="Objects.lua"/>
+	<Script file="Pet Battles.lua"/>
 	<Script file="Professions.lua"/>
 	<Script file="Quests.lua"/>
 	<Script file="Race Specific Things.lua"/>

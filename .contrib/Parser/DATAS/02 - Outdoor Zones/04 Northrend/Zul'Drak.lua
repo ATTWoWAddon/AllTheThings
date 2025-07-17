@@ -8,18 +8,12 @@ root(ROOTS.Zones, {
 			["icon"] = 236858,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					explorationAch(1267),	-- Explore Zul'Drak
-					ach(1596, {	-- Guru of Drakuru
-						crit(5805, {	-- Betrayal
-							["_quests"] = { 12713 },	-- Betrayal
-						}),
-						crit(5804, {	-- Cleansing Drak'Tharon
-							["_quests"] = { 12238 },	-- Cleansing Drak'Tharon
-						}),
-					}),
+					ach(1267),	-- Explore Zul'Drak
+					ach(1596),	-- Guru of Drakuru (automated)
 					ach(36, {	-- The Empire of Zul'Drak
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							12516,	-- Too Much of a Good Thing
 							12685,	-- You Reap What You Sow
@@ -45,67 +39,6 @@ root(ROOTS.Zones, {
 							12554,	-- Malas the Corrupter
 							12508,	-- Mopping Up
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 100,
-						-- #endif
-						-- #else
-						crit(39098, {	-- Sseratus
-							["sourceQuest"] = 12516,	-- Too Much of a Good Thing
-						}),
-						crit(39099, {	-- Quetz'lun
-							["sourceQuest"] = 12685,	-- You Reap What You Sow
-						}),
-						crit(39100, {	-- Akali
-							["sourceQuest"] = 12730,	-- Convocation at Zol'Heb
-						}),
-						crit(5799, {	-- The Amphitheater of Anguish
-							["sourceQuest"] = 12948,	-- The Champion of Anguish
-						}),
-						crit(39083, {	-- Finding Allies
-							["sourceQuest"] = 12859,	-- This Just In: Fire Still Hot!
-						}),
-						crit(39084, {	-- Finding Allies
-							["sourceQuest"] = 12861,	-- Trolls Is Gone Crazy!
-						}),
-						crit(39086, {	-- The Storm King's Crusade
-							["sourceQuest"] = 12903,	-- That's What Friends Are For...
-						}),
-						crit(39087, {	-- The Storm King's Crusade
-							["sourceQuest"] = 12901,	-- Making Something Out Of Nothing
-						}),
-						crit(39088, {	-- The Storm King's Crusade
-							["sourceQuest"] = 12904,	-- Light Won't Grant Me Vengeance
-						}),
-						crit(39089, {	-- The Storm King's Crusade
-							["sourceQuest"] = 12919,	-- The Storm King's Crusade
-						}),
-						crit(5805, {	-- Betrayal
-							["sourceQuest"] = 12713,	-- Betrayal
-						}),
-						crit(39090, {	-- The Argent Patrol
-							["sourceQuest"] = 12504,	-- Argent Crusade, We Are Leaving!
-						}),
-						crit(39091, {	-- The Argent Patrol
-							["sourceQuest"] = 12508,	-- Mopping Up
-						}),
-						crit(39092, {	-- The Argent Patrol
-							["sourceQuest"] = 12584,	-- Pure Evil
-						}),
-						crit(39093, {	-- The Argent Patrol
-							["sourceQuest"] = 12554,	-- Malas the Corrupter
-						}),
-						crit(39094, {	-- The Argent Patrol
-							["sourceQuest"] = 12555,	-- A Tangled Skein
-						}),
-						crit(39095, {	-- The Argent Patrol
-							["sourceQuest"] = 12506,	-- Trouble at the Altar of Sseratus
-						}),
-						crit(39096, {	-- The Argent Patrol
-							["sourceQuest"] = 12512,	-- Leave No One Behind
-						}),
 						-- #endif
 					}),
 				}),
@@ -187,6 +120,16 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66639, {	-- Gutretch <Master Pet Tamer>
 						["coord"] = { 13.2, 66.8, ZULDRAK },
+						["description"] = "Gutretch's pets are level 25 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Anodized Robo Cub (Demolish/Maul) and Anubisath Idol (Demolish/Sandstorm/Deflection).",
+						["timeline"] = { ADDED_5_0_4 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(31934, {	-- Gutretch
+								["sourceAchievement"] = 6605,	-- Taming Northrend
+								["timeline"] = { ADDED_5_0_4 },
+								["isDaily"] = true,
+							}),
+						},
 					}),
 				}),
 				n(QUESTS, {

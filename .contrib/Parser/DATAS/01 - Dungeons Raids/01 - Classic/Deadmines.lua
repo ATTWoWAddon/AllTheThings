@@ -668,10 +668,6 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					-- #if BEFORE 4.0.3
 					ach(628, {	-- Deadmines
 						-- #if BEFORE WRATH
-						["sourceQuests"] = {
-							166,	-- The Defias Brotherhood (7/7)
-							373,	-- The Unsent Letter
-						},
 						["races"] = ALLIANCE_ONLY,
 						-- #endif
 					}),
@@ -780,10 +776,25 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					["groups"] = {
 						ach(5366),	-- Ready for Raiding
 						i(65163),	-- Buzzer Blade
-						i(63470),	-- Missing Diplomat's Pauldrons
+						i(63470, {	-- Missing Diplomat's Pauldrons
+							["timeline"] = { REMOVED_11_1_5 },
+						}),
+						i(238939, {	-- Missing Diplomat's Pauldrons
+							["timeline"] = { ADDED_11_1_5 },
+						}),
 						i(63467),	-- Shadow of the Past
-						i(63468),	-- Defias Brotherhood Vest
-						i(63471),	-- Vest of the Curious Visitor
+						i(63468, {	-- Defias Brotherhood Vest
+							["timeline"] = { REMOVED_11_1_5 },
+						}),
+						i(238940, {	-- Defias Brotherhood Vest
+							["timeline"] = { ADDED_11_1_5 },
+						}),
+						i(63471, {	-- Vest of the Curious Visitor
+							["timeline"] = { REMOVED_11_1_5 },
+						}),
+						i(238938, {	-- Vest of the Curious Visitor
+							["timeline"] = { ADDED_11_1_5 },
+						}),
 						i(157628, {	-- Gold-Flecked Gloves
 							["timeline"] = { ADDED_7_3_5 },
 						}),

@@ -665,43 +665,33 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					}),
 					i(163616, {	-- Dented Coin (A)
 						["description"] = "|CFFFF0000Turn in to Cyrus Crestfall in Boralus for Proudmoore Admiralty rep.|r",
-						["races"] = ALLIANCE_ONLY,
 					}),
 					i(163614, {	-- Exotic Spices (A)
 						["description"] = "|CFFFF0000Turn in to Xun Xun Sweetflower in Drustvar for Order of Embers rep.|r",
-						["races"] = ALLIANCE_ONLY,
 					}),
 					i(173947, {	-- Glittering Abyssal Conch (A)
-						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { ADDED_8_3_0 },
 					}),
 					i(173948, {	-- Glittering Abyssal Conch (H)
-						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_8_3_0 },
 					}),
 					i(163619, {	-- Golden Beetle (H)
 						["description"] = "|CFFFF0000Turn in to Krag'wa the Huge in Nazmir for Talanji's Expedition rep.|r",
-						["races"] = HORDE_ONLY,
 					}),
 					i(163620, {	-- Island Flotsam (H)
 						["description"] = "|CFFFF0000Turn in to Jani in Dazar'alor for Zandalari Empire rep.|r",
-						["races"] = HORDE_ONLY,
 					}),
 					i(163615, {	-- Lost Sea Scroll (A)
 						["description"] = "|CFFFF0000Turn in to Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
-						["races"] = ALLIANCE_ONLY,
 					}),
 					i(163617, {	-- Rusted Alliance Insignia (A)
 						["description"] = "|CFFFF0000Turn in to Vindicator Jaelaana in Boralus for 7th Legion rep.|r",
-						["races"] = ALLIANCE_ONLY,
 					}),
 					i(163621, {	-- Rusted Horde Insignia (H)
 						["description"] = "|CFFFF0000Turn in to Ransa Greyfeather in Zuldazar for Honorbound rep.|r",
-						["races"] = HORDE_ONLY,
 					}),
 					i(163618, {	-- Shimmering Shell (H)
 						["description"] = "|CFFFF0000Turn in to Hoarder Jena in Vol'dun for Voldunai rep.|r",
-						["races"] = HORDE_ONLY,
 					}),
 					i(166501, {	-- Soggy Page
 						["description"] = "|CFFFF0000Turn in to Collector Kojo in Stormsong Valley (Alliance) or Zuldazar (Horde) for Tortollan Seekers rep.|r",

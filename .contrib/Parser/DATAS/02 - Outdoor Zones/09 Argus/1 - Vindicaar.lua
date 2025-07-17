@@ -264,8 +264,10 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					},
 					["isWeekly"] = true,
 					["coords"] = {
-						{ 46.7, 24.6, THE_VINDICAAR_KROKUUN_UPPER },
+						{ 59.1, 20.2, EREDATH },
 						{ 33.5, 58.3, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
+						{ 45.8, 23.9, THE_VINDICAAR_EREDATH_UPPER },
+						{ 46.7, 24.6, THE_VINDICAAR_KROKUUN_UPPER },
 					},
 					["g"] = {
 						i(153014),	-- Pristine Argunite (QI!)
@@ -315,8 +317,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 						127057,	-- Illidan Stormrage
 					},
 					["coords"] = {
-						{ 40.2, 21.4, THE_VINDICAAR_KROKUUN_UPPER },
 						{ 31.4, 59.1, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
+						{ 46.8, 20.5, THE_VINDICAAR_EREDATH_UPPER },
+						{ 40.2, 21.4, THE_VINDICAAR_KROKUUN_UPPER },
 					},
 				}),
 				q(47182, {	-- Long Overdue
@@ -345,7 +348,10 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					["sourceQuests"] = { 48200 },	-- Securing a Foothold
 					["altQuests"] = { 48202 },	-- Reinforce the Veiled Den — you get one of two quests depending on which camp is up at the time
 					["provider"] = { "n", 126954 },	-- High Exarch Turalyon
-					["coord"] = { 34.4, 57.2, THE_VINDICAAR_KROKUUN_UPPER },
+					["coords"] = {
+						{ 33.6, 58.3, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
+						{ 34.4, 57.2, THE_VINDICAAR_KROKUUN_UPPER },
+					},
 				}),
 				q(48202, {	-- Reinforce the Veiled Den
 					["sourceQuests"] = { 48200 },	-- Securing a Foothold
@@ -397,7 +403,13 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				q(49014, {	-- The Burning Throne
 					["sourceQuests"] = { 48559 },	-- An Oferring of Light
 					["provider"] = { "n", 124312 },	-- High Exarch Turalyon
-					["coord"] = { 40.1, 25.2, THE_VINDICAAR_KROKUUN_UPPER },
+					["coords"] = {
+						{ 59.1, 20.2, EREDATH },
+						{ 46.2, 23.5, THE_VINDICAAR_EREDATH_UPPER },
+						{ 51.0, 23.4, THE_VINDICAAR_EREDATH_UPPER },
+						{ 56.4, 61.4, THE_VINDICAAR_EREDATH_UPPER },
+						{ 40.1, 25.2, THE_VINDICAAR_KROKUUN_UPPER },
+					},
 				}),
 				q(48203, {	-- The Burning Throne
 					["sourceQuests"] = { 47654 },	-- An Oferring of Light
@@ -441,7 +453,11 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				q(48277, {	-- The Speaker Seeks
 					["sourceQuests"] = { 48272 },	-- Visions of Fear
 					["provider"] = { "n", 124312 },	-- High Exarch Turalyon
-					["coord"] = { 40.1, 25.6, THE_VINDICAAR_KROKUUN_UPPER },
+					["coords"] = {
+						{ 33.5, 58.3, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
+						{ 45.9, 24.1, THE_VINDICAAR_EREDATH_UPPER },
+						{ 39.1, 24.9, THE_VINDICAAR_KROKUUN_UPPER },
+					},
 				}),
 				q(47287, {	-- The Vindicaar Matrix Core
 					["sourceQuests"] = { 47743 },	-- Child of Light and Shadow
@@ -451,12 +467,18 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				q(48344, {	-- We Have a Problem
 					["sourceQuests"] = { 48461 },	-- Where They Least Expect It
 					["provider"] = { "n", 124312 },	-- High Exarch Turalyon
-					["coord"] = { 44.9, 24.0, THE_VINDICAAR_KROKUUN_UPPER },
+					["coords"] = {
+						{ 50.9, 23.1, THE_VINDICAAR_EREDATH_UPPER },
+						{ 44.9, 24.0, THE_VINDICAAR_KROKUUN_UPPER },
+					},
 				}),
 				q(48461, {	-- Where They Least Expect It
 					["sourceQuests"] = { 48107 },	-- The Sigil of Awakening
 					["provider"] = { "n", 126408 },	-- Illidan Stormrage
-					["coord"] = { 47.0, 21.7, THE_VINDICAAR_KROKUUN_UPPER },
+					["coords"] = {
+						{ 46.7, 21.0, THE_VINDICAAR_EREDATH_UPPER },
+						{ 47.0, 21.7, THE_VINDICAAR_KROKUUN_UPPER },
+					},
 				}),
 				q(40761, {	-- Whispers from Oronaar
 					["sourceQuests"] = { 47238 },	-- The Seat of the Triumvirate

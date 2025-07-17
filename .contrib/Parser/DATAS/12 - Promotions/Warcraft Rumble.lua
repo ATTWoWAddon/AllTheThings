@@ -11,6 +11,8 @@ WARCRAFT_RUMBLE = createHeader({
 	},
 	description = {
 		en = "Promotion for mobile game Warcraft Rumble.",
+		es = "Promoción del juego móvil Warcraft Rumble.",
+		mx = "Promoción del juego para celulares Warcraft Rumble.",
 		cn = "魔兽大作战手游的促销活动。",
 		tw = "手遊《魔獸兵團》的促銷活動",
 	},

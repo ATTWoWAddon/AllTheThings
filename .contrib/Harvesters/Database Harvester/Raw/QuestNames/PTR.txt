@@ -2329,3 +2329,167 @@
 90775@@@--
 90899@@@--
 90900@@@--
+86328@@@--
+86329@@@--
+90877@@@--
+90878@@@--
+91155@@@--
+91156@@@--
+91158@@@--
+84371@@@Lorewalking: The Blade and the High Priest
+84638@@@Trouble in the Highlands
+84639@@@Torches and Tar
+84640@@@Emblematic of Things to Come
+84641@@@Ill Tidings
+84643@@@Curfew Kerfuffle
+84645@@@Deputy Delivery
+84649@@@Marran Trollbane
+84650@@@Finding Refuge at Refuge Pointe
+84651@@@A Familiar Face
+84652@@@Supply Run
+84653@@@DEPRECATED
+84654@@@--
+84655@@@--
+84656@@@Onward to Hammerfall
+84657@@@Return to Stromgarde
+84658@@@Finding Family
+84659@@@The Search for Faerin
+84660@@@--
+84704@@@A Different Point of View
+84705@@@Withering the Witherbark
+84706@@@Crime Family
+84707@@@To See a Troll
+84708@@@The Syndicate Strikes Back
+84709@@@Hammerfall Down
+84710@@@Once Bitten Twice Shy
+84711@@@Danath's Disappearance
+84712@@@False Flag
+84713@@@Fallen Fortress
+84714@@@From Ironforge With Love
+84715@@@The Search for Danath
+84716@@@--
+84717@@@Rise of the Red Dawn
+84779@@@Lorewalking: The Blade's Gambit
+84782@@@Lorewalking: The Blade's Past
+84784@@@Lorewalking: The Blade's Nemeses
+84789@@@Lorewalking: The Blade's Downfall
+84790@@@--
+85027@@@Lorewalking: The Protectorate
+85028@@@Lorewalking: The Brokers
+85029@@@Lorewalking: Locus-Walker
+85035@@@Locus-Walker, Telogrus Ranger
+85036@@@Veni Vidi Ve'nari
+85235@@@--
+85252@@@--
+85253@@@--
+85254@@@--
+85451@@@The Burning of Hammerfall
+85529@@@Past Glory
+85678@@@--
+85679@@@Repair Yourself
+85862@@@A Prince's Duty
+85871@@@Lorewalking: The Blade's Forces
+85875@@@Ascent of the Lich King
+85878@@@O' Thanagor
+85884@@@Lorewalking: The Prince Who Would Be King
+85885@@@Lorewalking: No King Rules Forever
+86469@@@--
+86470@@@--
+86854@@@--
+87299@@@How Old Are These Things?
+87547@@@--
+87555@@@--
+87560@@@--
+87562@@@--
+88805@@@--
+88808@@@--
+89039@@@--
+89211@@@--
+89222@@@--
+89223@@@--
+89382@@@--
+89566@@@--
+90607@@@--
+90608@@@--
+90609@@@--
+90610@@@--
+90639@@@--
+90640@@@--
+90641@@@--
+90642@@@--
+90643@@@--
+90644@@@--
+90645@@@--
+90646@@@--
+90648@@@--
+90649@@@--
+90650@@@--
+90651@@@--
+90652@@@--
+90653@@@--
+90654@@@--
+90655@@@--
+90656@@@--
+90657@@@--
+90705@@@Lorewalking
+90757@@@--
+90784@@@--
+90853@@@--
+90855@@@--
+90856@@@--
+90857@@@--
+90909@@@--
+90925@@@--
+90926@@@--
+90927@@@--
+90928@@@--
+90929@@@--
+90939@@@--
+90940@@@--
+90945@@@--
+90946@@@--
+90947@@@--
+90948@@@--
+90949@@@--
+90950@@@--
+90951@@@--
+90952@@@--
+90953@@@--
+90968@@@Titanic Rumblings
+90969@@@Titan Consoles
+90970@@@Titan Disc-Count
+90971@@@Overcharged Console
+91009@@@--
+91025@@@--
+91026@@@--
+91027@@@--
+91028@@@--
+91029@@@--
+91030@@@--
+91031@@@--
+91033@@@--
+91035@@@--
+91038@@@--
+91039@@@Faerin's Request
+91052@@@Worldsoul: Overcharged Delves
+91079@@@--
+91080@@@--
+91081@@@--
+91082@@@--
+91083@@@--
+91091@@@--
+91092@@@--
+91166@@@--
+91167@@@--
+91168@@@--
+91169@@@--
+91170@@@--
+91171@@@--
+91172@@@--
+91202@@@--
+91205@@@--
+91306@@@--
+87512@@@--
+87513@@@--
+87514@@@--
+87515@@@--

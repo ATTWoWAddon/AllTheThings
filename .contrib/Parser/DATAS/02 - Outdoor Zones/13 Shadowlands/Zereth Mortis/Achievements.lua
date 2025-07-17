@@ -144,7 +144,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["_npcs"] = { 182158 },	-- Reanimatrox Marzan
 				}),
 			}),
-			explorationAch(15224),	-- Explore Zereth Mortis
+			ach(15224),	-- Explore Zereth Mortis
 			ach(15336, {	-- From A to Zereth
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
@@ -169,6 +169,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			ach(15259, {	-- Secrets of the First Ones
 				["sym"] = {{ "achievement_criteria" }},
 			}),
+			achWithRep(15220, FACTION_THE_ENLIGHTENED),	-- The Enlightened
 			ach(15229, {	-- Traversing the Spheres
 				["_noautomation"] = true,
 				["groups"] = {

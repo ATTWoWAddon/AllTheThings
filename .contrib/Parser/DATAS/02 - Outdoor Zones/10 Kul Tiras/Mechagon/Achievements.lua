@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				crit(44307),	-- Rustbolt Armory
 				crit(44308),	-- Reclamation Rig
 			}),
-			explorationAch(13776),	-- Explore Mechagon
+			ach(13776),	-- Explore Mechagon
 			ach(13482),	-- Head Financier of Mechagon
 			ach(13555, {	-- Junkyard Tinkmaster
 				-- Meta Achievement should symlink the contained Achievements from Source
@@ -513,7 +513,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 						-- #if BEFORE 11.1.5
 						["description"] = "This becomes a toy in 11.1.5.",
 						-- #endif
-						["g"] = { i(158932) },	-- Secretest Fish
 					}),
 					crit(44737, {	-- Bottom Feeding Stinkfish
 						["_quests"] = { 55299 },

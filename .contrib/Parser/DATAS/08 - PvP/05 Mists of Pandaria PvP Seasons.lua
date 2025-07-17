@@ -4,7 +4,7 @@
 
 root(ROOTS.PVP, {
 	pvp(expansion(EXPANSION.MOP, {
-		n(SEASON_MALEVOLENT, {
+		n(SEASON_MALEVOLENT, applyclassicphase(MOP_PHASE_LANDFALL, {
 			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 }, }, {
 				ach(8243, {	-- Hero of the Alliance: Malevolent
 					["races"] = ALLIANCE_ONLY,
@@ -2336,8 +2336,8 @@ root(ROOTS.PVP, {
 					}),
 				},
 			}),
-		}),
-		n(SEASON_TYRANNICAL, {
+		})),
+		n(SEASON_TYRANNICAL, applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {
 			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 }, }, {
 				ach(8652, {	-- Hero of the Alliance: Tyrannical
 					["races"] = ALLIANCE_ONLY,
@@ -5452,8 +5452,9 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(98162)),	-- Tyrannical Gladiator's Tabard
 				}),
 			}),
-		}),
-		n(SEASON_GRIEVOUS, {
+		})),
+		-- Wouter NOTE: temporarily tied this to SoO phase release for MoP Classic, but this will likely be different
+		n(SEASON_GRIEVOUS, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, {
 			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_5_4_0, REMOVED_5_4_7 }, }, {
 				ach(8649),	-- Challenger: Mists of Pandaria Season 3/Season 14
 				ach(8645, {	-- Duelist: Mists of Pandaria Season 3/Season 14
@@ -8591,8 +8592,9 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(101697)),	-- Grievous Gladiator's Tabard
 				}),
 			}),
-		}),
-		n(SEASON_PRIDEFUL, {
+		})),
+		-- Wouter NOTE: temporarily tied this to SoO phase release for MoP Classic, but this will likely be different
+		n(SEASON_PRIDEFUL, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, {
 			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_5_4_7, REMOVED_6_0_2 }, }, {
 				ach(8670),	-- Challenger: Mists of Pandaria Season 4/Season 15
 				ach(8668, {	-- Duelist: Mists of Pandaria Season 4/Season 15
@@ -10274,7 +10276,7 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(103636)),	-- Prideful Gladiator's Tabard
 				}),
 			}),
-		}),
+		})),
 	})),
 });
 

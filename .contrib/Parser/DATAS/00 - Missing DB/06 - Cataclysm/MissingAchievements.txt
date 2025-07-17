@@ -1,0 +1,53 @@
+4.0.1.12911
+ach(4912),	-- Guild Reputation: Exalted \\ Guild Level 25
+ach(4943),	-- Guild Reputation: Neutral \\ Guild Level 5
+ach(4944),	-- Guild Reputation: Friendly \\ Guild Level 10
+ach(4945),	-- Guild Reputation: Honored \\ Guild Level 15
+ach(4946),	-- Guild Reputation: Revered \\ Guild Level 20
+4.3.4.15595
+ach(5268),	-- In Service of the Alliance
+ach(5269),	-- In Service of the Horde
+ach(5322),	-- In Service of the Alliance
+ach(5323),	-- In Service of the Horde
+ach(5324),	-- In Service of the Horde
+ach(5325),	-- Veteran of the Horde
+ach(5326),	-- Warbringer of the Horde
+ach(5327),	-- In Service of the Alliance
+ach(5328),	-- Veteran of the Alliance
+ach(5329),	-- Warbound Veteran of the Alliance
+ach(5330),	-- Private
+ach(5331),	-- Corporal
+ach(5332),	-- Sergeant
+ach(5333),	-- Master Sergeant
+ach(5334),	-- Sergeant Major
+ach(5335),	-- Knight
+ach(5336),	-- Knight-Lieutenant
+ach(5337),	-- Knight-Captain
+ach(5338),	-- Centurion
+ach(5339),	-- Lieutenant Commander
+ach(5340),	-- Commander
+ach(5341),	-- Marshal
+ach(5342),	-- Warlord
+ach(5343),	-- Grand Marshal
+ach(5345),	-- Scout
+ach(5346),	-- Grunt
+ach(5347),	-- Sergeant
+ach(5348),	-- Senior Sergeant
+ach(5349),	-- First Sergeant
+ach(5350),	-- Stone Guard
+ach(5351),	-- Blood Guard
+ach(5352),	-- Legionnaire
+ach(5353),	-- Champion
+ach(5354),	-- Lieutenant General
+ach(5355),	-- General
+ach(5356),	-- High Warlord
+ach(5357),	-- Field Marshal
+ach(5359),	-- Knight-Champion
+ach(5407),	-- Realm First! Guild Level 25
+ach(5492),	-- Guild Reputation: Exalted \\ Guild Level 25
+ach(5823),	-- Veteran of the Alliance II
+ach(5824),	-- Veteran of the Horde II
+4.4.1.59069
+ach(41713),	-- [DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden) (copy)
+4.4.2.60895
+ach(42242),	-- [DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden) \\ [DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden) (copy) (copy)

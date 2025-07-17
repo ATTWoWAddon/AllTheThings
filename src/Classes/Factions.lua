@@ -26,10 +26,6 @@ local GetFactionCurrentReputation = app.WOWAPI.GetFactionCurrentReputation;
 local GetFactionReputationCeiling = app.WOWAPI.GetFactionReputationCeiling;
 
 -- Faction API Implementation
-app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
-	ATTAccountWideData = accountWideData
-end)
-
 
 -- 10.0 Blizz does some weird stuff with Friendship functions now, so let's try to wrap the functionality to work with what we expected before... at least for now
 local C_GossipInfo_GetFriendshipReputation;
@@ -360,6 +356,11 @@ C_MajorFactions_GetMajorFactionData and "WithRenown" or false, {
 	end,
 },
 function(t) return C_MajorFactions_GetMajorFactionData(t[KEY]) end);
+app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+	if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
+	if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
+	ATTAccountWideData = accountWideData
+end)
 
 if app.IsRetail then
 	app.AddEventHandler("OnRefreshCollections", function()

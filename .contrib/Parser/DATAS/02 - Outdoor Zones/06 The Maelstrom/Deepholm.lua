@@ -63,25 +63,8 @@ root(ROOTS.Zones, {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(4871, {	-- Deep into Deepholm
-						-- #if AFTER MOP
-						crit(39584, {	-- The Middle World Pillar Fragment
-							["sourceQuest"] = 27938,	-- The Middle Fragment
-						}),
-						crit(39588, {	-- The Upper World Pillar Fragment
-							["sourceQuest"] = 26876,	-- The World Pillar Fragment
-						}),
-						crit(39595, {	-- The Stone Lords
-							["sourceQuest"] = 26583,	-- Wrath of the Fungalmancer
-						}),
-						crit(39594, {	-- The Stone Lords
-							["sourceQuest"] = 26584,	-- Shaken and Stirred
-						}),
-						crit(39596, {	-- The Stone Lords
-							["sourceQuest"] = 26585,	-- Corruption Destruction
-						}),
-						crit(39597, {	-- Mending the Wound
-							["sourceQuest"] = 26971,	-- The Binding
-						}),
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
 						-- #else
 						["sourceQuests"] = {
 							27938,	-- The Middle Fragment
@@ -93,7 +76,7 @@ root(ROOTS.Zones, {
 						},
 						-- #endif
 					}),
-					explorationAch(4864),	-- Explore Deepholm
+					ach(4864),	-- Explore Deepholm
 					achWithRep(4883, FACTION_THERAZANE),	-- Therazane
 				}),
 				battlepets({
@@ -177,6 +160,15 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66815, {	-- Bordin Steadyfist <Master Pet Tamer>
 						["coord"] = { 49.8, 57.0, DEEPHOLM },
+						["timeline"] = { ADDED_5_0_4 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(31973, {	-- Bordin Steadyfist
+								["sourceAchievement"] = 7525,	-- Taming Cataclysm
+								["timeline"] = { ADDED_5_0_4 },
+								["isDaily"] = true,
+							}),
+						},
 					}),
 				}),
 				-- #if ANYCLASSIC

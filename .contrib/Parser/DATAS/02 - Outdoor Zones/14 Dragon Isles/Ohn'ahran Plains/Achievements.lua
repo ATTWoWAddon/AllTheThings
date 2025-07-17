@@ -46,7 +46,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(16063, {	-- Dragon Glyphs: Windsong Rise
 				["coord"] = { 61.6, 64.4, OHNAHRAN_PLAINS },
 			}),
-			explorationAch(16457),	-- Explore the Ohn'ahran Plains
+			ach(16457),	-- Explore the Ohn'ahran Plains
 			ach(16423, {	-- Honor Our Ancestors
 				["provider"] = { "i", 201323 },	-- 1x Essence of Awakening
 				["g"] = {

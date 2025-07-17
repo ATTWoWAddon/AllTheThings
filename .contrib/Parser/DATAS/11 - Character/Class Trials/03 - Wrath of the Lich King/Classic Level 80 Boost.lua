@@ -1,48 +1,201 @@
+-------------------------------------------
+--    C H A R A C T E R   M O D U L E    --
+-------------------------------------------
+
+-- #if ANYCLASSIC
+-- Wouter NOTE: level 80 boosts became available in Classic shortly after the launch of Icecrown Citadel, with the Blazing Heroic Pack for Cata
 root(ROOTS.Character, n(CLASS_TRIAL, {
-	expansion(EXPANSION.WRATH, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
-		-- #if ANYCLASSIC
+	-- Wouter NOTE: these are 187 boosted items made for Classic, they eventually got replaced in Cata by the 232 gear that was originally from Scroll of Resurrection
+	expansion(EXPANSION.WRATH, bubbleDown({ ["u"] = REAL_MONEY, ["timeline"] = { ADDED_3_4_3, REMOVED_4_4_0 } }, {
 		["groups"] = {
-			--[[cl(DEATHKNIGHT, {
-				i(72994),	-- Ebonsoul Blade
-				i(72990),	-- Ebonsoul Hammer
-				i(72991),	-- Ebonsoul Maul
-				i(72932),	-- Ebonsoul Faceguard
-				i(72921),	-- Ebonsoul Helm
-				i(72923),	-- Ebonsoul Pauldrons
-				i(72934),	-- Ebonsoul Shoulderguards
-				i(73156),	-- Ebonsoul Amulet
-				i(73151),	-- Ebonsoul Pendant
-				i(73315),	-- Ebonsoul Cloak of Battle
-				i(73316),	-- Ebonsoul Cloak of Stoicism
-				i(72918),	-- Ebonsoul Breastplate
-				i(72929),	-- Ebonsoul Chestguard
-				i(72936),	-- Ebonsoul Armguards
-				i(72925),	-- Ebonsoul Vambraces
-				i(72920),	-- Ebonsoul Gauntlets
-				i(72931),	-- Ebonsoul Handguards
-				i(72924),	-- Ebonsoul Girdle
-				i(72935),	-- Ebonsoul Waistband
-				i(72933),	-- Ebonsoul Legguards
-				i(72922),	-- Ebonsoul Legplates
-				i(72930),	-- Ebonsoul Greaves
-				i(72919),	-- Ebonsoul Sabatons
-				i(73152),	-- Ebonsoul Band of Might
-				i(73159),	-- Ebonsoul Band of Stoicism
-				i(73153),	-- Ebonsoul Ring of Might
-				i(73158),	-- Ebonsoul Ring of Stoicism
-				i(73157),	-- Ebonsoul Defender's Idol
-				i(73160),	-- Ebonsoul Defender's Stone
-				i(73155),	-- Ebonsoul Idol of Battle
-				i(73154),	-- Ebonsoul Stone of Battle
+			cl(DRUID, {
+				i(209529),	-- Secondhand Crown
+				i(209530),	-- Secondhand Crown
+				i(209584),	-- Secondhand Pads
+				i(209587),	-- Secondhand Pads
+				i(209607),	-- Secondhand Tunic
+				i(209627),	-- Secondhand Tunic
+				i(209632),	-- Secondhand Bindings
+				i(209633),	-- Secondhand Bindings
+				i(209638),	-- Secondhand Gloves
+				i(209639),	-- Secondhand Gloves
+				i(209645),	-- Secondhand Belt
+				i(209646),	-- Secondhand Belt
+				i(209651),	-- Secondhand Legguards
+				i(209652),	-- Secondhand Legguards
+				i(209657),	-- Secondhand Boots
+				i(209658),	-- Secondhand Boots
 				-- #if BEFORE MOP
-				i(73343, {	-- Ebonsoul Sigil of Battle
-					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+				i(209814, {	-- Secondhand Idol of Life
+					["timeline"] = { ADDED_3_4_3, REMOVED_5_0_4 },
 				}),
-				i(73346, {	-- Ebonsoul Sigil of Stoicism
-					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+				i(209813, {	-- Secondhand Idol of the Wild
+					["timeline"] = { ADDED_3_4_3, REMOVED_5_0_4 },
+				}),
+				i(209809, {	-- Secondhand Idol of Wrath
+					["timeline"] = { ADDED_3_4_3, REMOVED_5_0_4 },
 				}),
 				-- #endif
-			}),--]]
+			}),
+			cl(HUNTER, {
+				i(209531),	-- Secondhand Headguard
+				i(209585),	-- Secondhand Spaulders
+				i(209628),	-- Secondhand Armor
+				i(209634),	-- Secondhand Armguards
+				i(209640),	-- Secondhand Gauntlets
+				i(209647),	-- Secondhand Belt
+				i(209653),	-- Secondhand Leggings
+				i(209659),	-- Secondhand Boots
+			}),
+			cl(MAGE, {
+				i(209804),	-- Secondhand Wand
+				i(209532),	-- Secondhand Cowl
+				i(209589),	-- Secondhand Mantle
+				i(209606),	-- Secondhand Armor
+				i(209631),	-- Secondhand Bracers
+				i(209637),	-- Secondhand Gloves
+				i(209644),	-- Secondhand Sash
+				i(209650),	-- Secondhand Pants
+				i(209656),	-- Secondhand Boots
+			}),
+			cl(PALADIN, {
+				i(209787),	-- Secondhand Buckler
+				i(209515),	-- Secondhand Faceguard
+				i(209528),	-- Secondhand Faceguard
+				i(209586),	-- Secondhand Pauldrons
+				i(209588),	-- Secondhand Pauldrons
+				i(209518),	-- Secondhand Chestguard
+				i(209630),	-- Secondhand Chestguard
+				i(209516),	-- Secondhand Plate Vambraces
+				i(209636),	-- Secondhand Plate Vambraces
+				i(209517),	-- Secondhand Plate Gauntlets
+				i(209642),	-- Secondhand Plate Gauntlets
+				i(209521),	-- Secondhand Plate Girdle
+				i(209649),	-- Secondhand Plate Girdle
+				i(209522),	-- Secondhand Plate Leggings
+				i(209655),	-- Secondhand Plate Leggings
+				i(209519),	-- Secondhand Plate Greaves
+				i(209661),	-- Secondhand Plate Greaves
+				-- #if BEFORE MOP
+				i(209807, {	-- Secondhand Book of Healing
+					["timeline"] = { ADDED_3_4_3, REMOVED_5_0_4 },
+				}),
+				i(209810, {	-- Secondhand Book of Protection
+					["timeline"] = { ADDED_3_4_3, REMOVED_5_0_4 },
+				}),
+				i(209808, {	-- Secondhand Book of Righteousness
+					["timeline"] = { ADDED_3_4_3, REMOVED_5_0_4 },
+				}),
+				-- #endif
+			}),
+			cl(PRIEST, {
+				i(209804),	-- Secondhand Wand
+				i(209532),	-- Secondhand Cowl
+				i(209589),	-- Secondhand Mantle
+				i(209606),	-- Secondhand Armor
+				i(209631),	-- Secondhand Bracers
+				i(209637),	-- Secondhand Gloves
+				i(209644),	-- Secondhand Sash
+				i(209650),	-- Secondhand Pants
+				i(209656),	-- Secondhand Boots
+			}),
+			cl(ROGUE, {
+				i(209783),	-- Secondhand Shiv
+				i(209530),	-- Secondhand Crown
+				i(209587),	-- Secondhand Pads
+				i(209607),	-- Secondhand Tunic
+				i(209632),	-- Secondhand Bindings
+				i(209638),	-- Secondhand Gloves
+				i(209645),	-- Secondhand Belt
+				i(209651),	-- Secondhand Legguards
+				i(209657),	-- Secondhand Boots
+			}),
+			cl(SHAMAN, {
+				i(209801),	-- Secondhand Left Claw
+				i(209793),	-- Secondhand Right Claw
+				i(209531),	-- Secondhand Headguard
+				i(209533),	-- Secondhand Headguard
+				i(209583),	-- Secondhand Spaulders
+				i(209585),	-- Secondhand Spaulders
+				i(209628),	-- Secondhand Armor
+				i(209629),	-- Secondhand Armor
+				i(209634),	-- Secondhand Armguards
+				i(209635),	-- Secondhand Armguards
+				i(209640),	-- Secondhand Gauntlets
+				i(209641),	-- Secondhand Gauntlets
+				i(209647),	-- Secondhand Belt
+				i(209648),	-- Secondhand Belt
+				i(209653),	-- Secondhand Leggings
+				i(209654),	-- Secondhand Leggings
+				i(209659),	-- Secondhand Boots
+				i(209660),	-- Secondhand Boots
+				-- #if BEFORE MOP
+				i(209815, {	-- Secondhand Totem of Lightning
+					["timeline"] = { ADDED_3_4_3, REMOVED_5_0_4 },
+				}),
+				i(209811, {	-- Secondhand Totem of Restoration
+					["timeline"] = { ADDED_3_4_3, REMOVED_5_0_4 },
+				}),
+				i(209812, {	-- Secondhand Totem of the Storm
+					["timeline"] = { ADDED_3_4_3, REMOVED_5_0_4 },
+				}),
+				-- #endif
+			}),
+			cl(WARLOCK, {
+				i(209804),	-- Secondhand Wand
+				i(209532),	-- Secondhand Cowl
+				i(209589),	-- Secondhand Mantle
+				i(209606),	-- Secondhand Armor
+				i(209631),	-- Secondhand Bracers
+				i(209637),	-- Secondhand Gloves
+				i(209644),	-- Secondhand Sash
+				i(209650),	-- Secondhand Pants
+				i(209656),	-- Secondhand Boots
+			}),
+			cl(WARRIOR, {
+				i(209515),	-- Secondhand Faceguard
+				i(209586),	-- Secondhand Pauldrons
+				i(209518),	-- Secondhand Chestguard
+				i(209516),	-- Secondhand Plate Vambraces
+				i(209517),	-- Secondhand Plate Gauntlets
+				i(209521),	-- Secondhand Plate Girdle
+				i(209522),	-- Secondhand Plate Leggings
+				i(209519),	-- Secondhand Plate Greaves
+			}),
+			-- Wouter NOTE: I have no clue to which classes some of these got assigned so I'm leaving them unsorted  (it's been 2 years and I don't have data)
+			i(209785),	-- Secondhand Blade
+			i(209789),	-- Secondhand Bow
+			i(209796),	-- Secondhand Dagger
+			i(209782),	-- Secondhand Guardian
+			-- #if BEFORE MOP
+			i(209803, {	-- Secondhand Knives
+				["timeline"] = { ADDED_3_4_3, REMOVED_5_0_4 },
+			}),
+			-- #endif
+			i(209794),	-- Secondhand Smasher
+			i(209792),	-- Secondhand Staff
+			i(209791),	-- Secondhand Stave
+			i(209784),	-- Secondhand Sword
+			i(209790),	-- Secondhand Warmaul
+			i(209556),	-- Secondhand Necklace
+			i(209557),	-- Secondhand Necklace
+			i(209558),	-- Secondhand Necklace
+			i(209599),	-- Secondhand Cloak
+			i(209600),	-- Secondhand Cloak
+			i(209602),	-- Secondhand Cloak
+			i(209603),	-- Secondhand Cloak
+			i(209665),	-- Secondhand Band of Defense
+			i(209662),	-- Secondhand Band of Devastation
+			i(209663),	-- Secondhand Band of Durability
+			i(209664),	-- Secondhand Band of Wisdom
+			i(209695),	-- Secondhand Stone of Durability
+			i(209780),	-- Secondhand Stone of Onslaught
+			i(209697),	-- Secondhand Stone of Stoicism
+			i(209696),	-- Secondhand Stone of Wisdom
+		},
+	})),
+	expansion(EXPANSION.CATA, bubbleDown({ ["u"] = REAL_MONEY, ["timeline"] = { ADDED_4_4_0, REMOVED_4_4_2 } }, {
+		["groups"] = {
 			cl(DRUID, {
 				i(73012),	-- Wildsoul Spear
 				i(73011),	-- Wildsoul Staff
@@ -375,6 +528,6 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 				-- #endif
 			}),
 		},
-		-- #endif
 	})),
 }));
+-- #endif

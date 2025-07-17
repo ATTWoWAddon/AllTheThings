@@ -305,11 +305,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 					-- #endif
 					["hideText"] = true,
 					["groups"] = {
-						ach(691, {	-- Zul'Aman: Defeat Zul'jin in the Zul'Aman raid.
-							-- #if BEFORE WRATH
-							["sourceQuest"] = 11178,	-- Blood of the Warlord
-							-- #endif
-						}),
+						ach(691),	-- Zul'Aman: Defeat Zul'jin in the Zul'Aman raid.
 						i(33102),	-- Blood of Zul'jin
 						i(33474),	-- Ancient Amani Longbow
 						i(33467),	-- Blade of Twisted Visions

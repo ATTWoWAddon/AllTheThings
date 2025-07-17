@@ -906,7 +906,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 13841,	-- Lieutenant Haggerdin
 					["sourceQuest"] = 7171,	-- Legendary Heroes
 					["coord"] = { 39.6, 81.0, ALTERAC_MOUNTAINS },
-					-- #if AFTER SHADOWLANDS
+					-- #if AFTER SL
 					["minReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted
 					-- #else
 					["minReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED + 998 },    -- Stormpike Guard, 999/1000 Exalted
@@ -923,7 +923,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 13840,	-- Warmaster Laggrond
 					["sourceQuest"] = 7166,	-- Legendary Heroes
 					["coord"] = { 62.2, 59.0, ALTERAC_MOUNTAINS },
-					-- #if AFTER SHADOWLANDS
+					-- #if AFTER SL
 					["minReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED },    -- Frostwolf Clan, Exalted
 					-- #else
 					["minReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED + 998 },    -- Frostwolf Clan, 999/1000 Exalted

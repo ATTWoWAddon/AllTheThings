@@ -975,7 +975,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			n(175522, {	-- Kelli Hoo <Raid Finder Nathrian Weaponsmith>
 				["coord"] = { 55.0, 82.9, ARCHONS_RISE },
-				["g"] = bubbleDown({ ["modID"] = 4 }, {	-- LFR
+				["g"] = bubbleDown({ ["modID"] = 4, ["ItemAppearanceModifierID"] = 0, }, {	-- LFR
 					i(177872, {	-- Archon's Guiding Glaive
 						["modID"] = 83,
 						["cost"] = {
@@ -1210,7 +1210,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			n(175523, {	-- Provisioner Prothos <Heroic Nathrian Weaponsmith>
 				["coord"] = { 57.0, 79.8, ARCHONS_RISE },
-				["g"] = bubbleDown({ ["modID"] = 5 }, {	-- Heroic
+				["g"] = bubbleDown({ ["modID"] = 5, ["ItemAppearanceModifierID"] = 0, }, {	-- Heroic
 					i(177872, {	-- Archon's Guiding Glaive
 						["modID"] = 84,
 						["cost"] = {

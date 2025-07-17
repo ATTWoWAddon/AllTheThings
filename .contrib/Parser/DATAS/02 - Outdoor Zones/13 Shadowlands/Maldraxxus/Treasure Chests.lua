@@ -197,9 +197,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 62.4, 76.5, MALDRAXXUS },
 				["questID"] = 61514,
 				["g"] = {
-					i(183517, {	-- Page 76 of the Necronom-i-nom
-						["questID"] = 62372,
-					}),
+					i(183517),	-- Page 76 of the Necronom-i-nom (CI!)
 				},
 			}),
 			o(355037, {		-- Runebound Coffer

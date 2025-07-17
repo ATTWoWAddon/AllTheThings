@@ -118,7 +118,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["minReputation"] = { FACTION_COURT_OF_HARVESTERS, FRIENDLY },	-- Court of Harvesters, Friendly
 				["g"] = bubbleDownClassicRep(FACTION_COURT_OF_HARVESTERS, {
 					{		-- Neutral
-						i(190644, {	-- Vessel of Profound Possibilities
+						i(190644, {	-- Vessel of Profound Possibilities (CI!)
 							["cost"] = {{"c",2009,10000}},	-- 10,000 Cosmic Flux
 							["timeline"] = { ADDED_9_2_0 },
 							["sym"] = {

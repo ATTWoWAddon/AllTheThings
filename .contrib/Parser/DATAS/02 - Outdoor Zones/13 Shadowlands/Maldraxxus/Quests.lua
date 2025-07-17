@@ -890,7 +890,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}, bubbleDown({
 				["timeline"] = { ADDED_9_0_2 },
 			}, {
-				q(62742, {	-- Avoid 'Em Like the P	lague
+				q(62742, {	-- Avoid 'Em Like the Plague
 					["coord"] = { 58.0, 63.6, MALDRAXXUS },
 					["g"] = {
 						i(181638),	-- Gorewrought Drape

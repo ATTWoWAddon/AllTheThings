@@ -3,7 +3,12 @@
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
 	inst(1194, {	-- Tazavesh, the Veiled Market
-		["coord"] = { 88.9, 44.3, TAZAVESH_THE_VEILED_MARKET_WORLD },
+		["coords"] = {
+			{ 88.9, 44.3, TAZAVESH_THE_VEILED_MARKET_WORLD },
+			-- #if AFTER 11.2.0
+			{ 36.3, 12.2, KARESH_TAZAVESH },
+			-- #endif
+		},
 		["maps"] = {
 			TAZAVESH_THE_VEILED_MARKET,
 			TAZAVESH_THE_MENAGERIE,
@@ -63,12 +68,12 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				q(63977, {	-- Insider Trading
 					["sourceQuests"] = { 63976 },	-- The Al'ley Cat of Oribos
 					["provider"] = { "n", 178908 },	-- Al'dalil
-					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
+					["coord"] = { 57.1, 31.1, 1672 },	-- Broker's Den
 				}),
 				q(63979, {	-- Things Best Kept Dark
 					["sourceQuests"] = { 63976 },	-- The Al'ley Cat of Oribos
 					["provider"] = { "n", 178908 },	-- Al'dalil
-					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
+					["coord"] = { 57.1, 31.1, 1672 },	-- Broker's Den
 					["g"] = {
 						i(186182),	-- Cartel So Shipping Manifest (QI!)
 					},
@@ -79,7 +84,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						63979,	-- Things Best Kept Dark
 					},
 					["provider"] = { "n", 178908 },	-- Al'dalil
-					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
+					["coord"] = { 57.1, 31.1, 1672 },	-- Broker's Den
 				}),
 				q(63982, {	-- Above My Station
 					["sourceQuests"] = { 63980 },	-- Seeking Smugglers
@@ -132,6 +137,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					n(180130, {	-- Antique Vendor
 						i(34828),	-- Antique Silver Cufflinks
 						i(187179),	-- Glow Sticks
+						i(161208),	-- Pirate's Snuff Box
 					}),
 					n(180750, {	-- Au'manal <Master Forger>
 						["description"] = "Requires |cFFFFFFFFFraudulent Credentials|r to be equipped to be able to trade for the new neck.",
@@ -141,10 +147,21 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 							}),
 						},
 					}),
-					n(177239, {	-- Collector of Worth <Banker>
-						i(34828),	-- Antique Silver Cufflinks
-						i(187179),	-- Glow Sticks
+					n(180571, {	-- Beeyuh
+						i(162573),	-- Amani Mule
+						i(162574),	-- Mojo'ito
+						i(163132),	-- Bijou on the Beach
+						i(163136),	-- Grotto Punch
+						i(162551),	-- Jani Juice
+						i(162552),	-- Zul's Gin
+						i(162575),	-- Bwonzombie
+						i(162572),	-- Trolwhip
 					}),
+					-- This NPC is just a bank... ?
+					-- n(177239, {	-- Collector of Worth <Banker>
+					-- 	i(34828),	-- Antique Silver Cufflinks
+					-- 	i(187179),	-- Glow Sticks
+					-- }),
 					n(180114, {	-- Fruit Vendor
 						i(187171),	-- Organic Melon
 					}),
@@ -180,7 +197,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					}),
 				},
 			}),
-			spell(921, {	-- Pickpocketing
+			header(HEADERS.Spell, 921, {	-- Pickpocketing
 				i(186161),	-- Stygian Lockbox
 			}),
 			-- #if AFTER 9.2.0

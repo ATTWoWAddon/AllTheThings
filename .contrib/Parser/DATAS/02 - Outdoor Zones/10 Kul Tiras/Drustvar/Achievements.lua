@@ -220,7 +220,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			ach(13064),		-- Drust the Facts, Ma'am (automated)
-			explorationAch(12557),	-- Explore Drustvar
+			ach(12557),	-- Explore Drustvar
 			ach(13082, {	-- Everything Old Is New Again
 				["races"] = ALLIANCE_ONLY,
 				["description"] = "Turn in all items at 44.90, 27.41.",

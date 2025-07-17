@@ -18,6 +18,8 @@ CHILDRENS_WEEK_HEADER = createHeader({
 		en = WOWAPI_GetCategoryName(163),
 		-- #else
 		en = "Children's Week",
+		es = "Semana de los niños",
+		mx = "Semana de los niños",
 		-- #endif
 	},
 });
@@ -80,6 +82,9 @@ local BACK_AT_THE_OUTLAND_ORPHANAGE_GROUPS = {
 		["timeline"] = { ADDED_2_1_0 },
 	}),
 	PET_CARE_PACKAGE,
+	i(241215, {	-- Well-loved Figurine
+		["timeline"]  = { ADDED_11_1_5 },
+	}),
 };
 local RETURN_TO_THE_BFA_ORPHANAGE_GROUPS = {
 	i(167010, {	-- Beakbert (PET!)
@@ -96,6 +101,9 @@ local RETURN_TO_THE_BFA_ORPHANAGE_GROUPS = {
 	}),
 	PET_CARE_PACKAGE,
 	i(23022),	-- Curmudgeon's Payoff
+	i(241215, {	-- Well-loved Figurine
+		["timeline"]  = { ADDED_11_1_5 },
+	}),
 };
 local WARDEN_OF_THE_GROUPS = {
 	i(23007, {	-- Mr. Wiggles (PET!)
@@ -112,6 +120,40 @@ local WARDEN_OF_THE_GROUPS = {
 	}),
 	PET_CARE_PACKAGE,
 	i(23022),	-- Curmudgeon's Payoff
+	i(241215, {	-- Well-loved Figurine
+		["timeline"]  = { ADDED_11_1_5 },
+	}),
+};
+local A_BRIGHTER_TOMORROW_GROUPS = {
+	iensemble(242265),	-- Arsenal: Children's Orgrimmar Guard Weapon Set
+	iensemble(242260),	-- Arsenal: Children's Stormwind Guard Weapon Set
+	i(221851),	-- Argos (PET!)
+	i(232857),	-- Goggles (PET!)
+	i(241193),	-- Helpful Workshop Bot (PET!)
+	i(241215),	-- Well-loved Figurine
+	--
+	i(242242),	-- Khaz Algar Orphan Whistle
+};
+local WELL_LOVED_FIGURINE_VENDOR_GROUP = {
+	iensemble(242265),	-- Arsenal: Children's Orgrimmar Guard Weapon Set
+	iensemble(242260),	-- Arsenal: Children's Stormwind Guard Weapon Set
+	i(221851),	-- Argos (PET!)
+	i(167010),	-- Beakbert (PET!)
+	i(46544),	-- Curious Oracle Hatchling (PET!)
+	i(46544),	-- Curious Wolvar Pup (PET!)
+	i(32616),	-- Egbert (PET!)
+	i(167011),	-- Froglet (PET!)
+	i(232857),	-- Goggles (PET!)
+	i(241193),	-- Helpful Workshop Bot (PET!)
+	i(69648),	-- Legs (PET!)
+	i(167008),	-- Mr. Crabs (PET!)
+	i(23007),	-- Mr. Wiggles (PET!)
+	i(32622),	-- Peanut (PET!)
+	i(167009),	-- Scaley (PET!)
+	i(66073),	-- Scooter the Snail (PET!)
+	i(23002),	-- Speedy (PET!)
+	i(23015),	-- Whiskers the Rat (PET!)
+	i(32617),	-- Willy (PET!)
 };
 
 root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, {
@@ -240,7 +282,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 		ach(1791, {	-- Home Alone
 			["timeline"] = { ADDED_3_0_2 },
 		}),
-		ach(1786, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- School of Hard Knocks
+		pvp(ach(1786, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- School of Hard Knocks
 			crit(6643, {	-- Assault a flag in Arathi Basin
 				["maps"] = {
 					ARATHI_BASIN,
@@ -267,7 +309,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 					1339,	-- Warsong Gulch
 				},
 			}),
-		})),
+		}))),
 		ach(275, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- Veteran Nanny
 			["maps"] = { SHATTRATH_CITY },
 			["groups"] = {
@@ -297,14 +339,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 	}),
 	-- #endif
 	n(QUESTS, {
-		-- ATTACH ME TO A QUEST WHEN FOUND
-		i(232857, {	-- Goggle's Favorite Chew-Wrench
-			["timeline"] = { ADDED_11_1_0 },
-		}),
-		i(241193, {	-- Threadis's Workshopbot 2.0
-			["timeline"] = { ADDED_11_1_0 },
-		}),
-		--
 		q(10952, {	-- A Trip to the Dark Portal [Alliance - Draenei]
 			["providers"] = {
 				{ "i", 31881 },	-- Draenei Orphan Whistle
@@ -561,6 +595,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				}),
 				PET_CARE_PACKAGE,
 				i(23022),	-- Curmudgeon's Payoff
+				i(241215, {	-- Well-loved Figurine
+					["timeline"]  = { ADDED_11_1_5 },
+				}),
 			},
 		}),
 		q(28880, {	-- Back To The Orphanage [Neutral - Wolvar - FINAL]
@@ -580,6 +617,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				}),
 				PET_CARE_PACKAGE,
 				i(23022),	-- Curmudgeon's Payoff
+				i(241215, {	-- Well-loved Figurine
+					["timeline"]  = { ADDED_11_1_5 },
+				}),
 			},
 		}),
 		q(53863, {	-- Bird Friends [Alliance - Kul Tiran]
@@ -629,12 +669,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 		}),
 		q(10968, {	-- Call on the Farseer [Alliance - Draenei]
 			["providers"] = {
+				{ "n", 17538 },	-- O'ros
 				{ "i", 31881 },	-- Draenei Orphan Whistle
 				{ "n", 22818 },	-- Draenei Orphan
 			},
 			["sourceQuest"] = 10956,	-- The Seat of the Naaru
 			["timeline"] = { ADDED_2_0_1 },
-			["maps"] = { SHATTRATH_CITY, THE_EXODAR },
+			["coord"] = { 57.6, 41.2, THE_EXODAR },
+			["maps"] = { SHATTRATH_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
@@ -686,6 +728,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(110, 110, 10),
+			["groups"] = {
+				i(164772),	-- Kul Tiran Orphan Whistle
+			},
 		}),
 		q(10942, {	-- Children's Week [Horde - Blood Elf - START]
 			["qg"] = 22819,	-- Orphan Matron Mercy
@@ -694,6 +739,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
+			["groups"] = {
+				i(31880),	-- Blood Elf Orphan Whistle
+			},
 		}),
 		q(172, {	-- Children's Week [Horde - Orc - START]
 			["providers"] = {
@@ -718,6 +766,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
+			["groups"] = {
+				i(18597),	-- Orcish Orphan Whistle
+			},
 		}),
 		q(53965, {	-- Children's Week [Horde - Zandalari - START]
 			["qg"] = 131346,	-- Caretaker Padae
@@ -733,6 +784,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(110, 110, 10),
+			["groups"] = {
+				i(164965),	-- Casteless Zandalari Whistle
+			},
 		}),
 		q(29093, {	-- Cruisin' the Chasm [Alliance - Human]
 			["providers"] = {
@@ -1002,6 +1056,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["timeline"] = { ADDED_3_0_2 },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
+			["groups"] = {
+				i(46396),	-- Wolvar Orphan Whistle
+			},
 		}),
 		q(13926, {	-- Little Orphan Roo Of The Oracles [Neutral - Oracles - START]
 			["providers"] = {
@@ -1013,6 +1070,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["timeline"] = { ADDED_3_0_2 },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
+			["groups"] = {
+				i(46397),	-- Oracle Orphan Whistle
+			},
 		}),
 		q(53966, {	-- Loa of Winds [Horde - Zandalari]
 			["providers"] = {
@@ -1905,6 +1965,68 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 		}),
 	}),
+	n(QUESTS, bubbleDown({ ["timeline"] = { ADDED_11_1_5 } }, {
+		{	-- What About the Children?
+			["allianceQuestData"] = q(81609),	-- What About the Children? [A]
+			["hordeQuestData"] = q(81610),	-- What About the Children? [H]
+			["qgs"] = {
+				220865,	-- Holiday Enthusiast
+				220870,	-- Holiday Enthusiast
+				220307,	-- Holiday Enthusiast
+			},
+			["coords"] = {
+				{ 31.4, 60.6, DORNOGAL },
+				{ 31.5, 56.8, DORNOGAL },
+				{ 46.1, 55.0, DORNOGAL },
+				{ 55.6, 61.0, DORNOGAL },
+				{ 56.8, 28.6, DORNOGAL },
+			},
+			["isYearly"] = true,
+		},
+		q(89317, {	-- Children's Week in Dornogal
+			["qgs"] = {
+				240696, -- Ullna <Matron in Training>
+				241732,	-- Ullna <Matron in Training>
+			},
+			["coord"] = { 55.2, 27.0, DORNOGAL },
+			["isYearly"] = true,
+		}),
+		q(89318, {	-- Bold for a Kobold
+			["sourceQuests"] = 89317,	-- Children's Week in Dornogal
+			["qg"] = 241593,	-- Skibbles
+			["maps"] = { DORNOGAL },
+			["isYearly"] = true,
+			["g"] = { i(239689) },	-- Khaz Algar Orphan Whistle (QI!)
+		}),
+		q(89319, {	-- The Wondrous Weave
+			["sourceQuest"] = 89318,	-- Bold for a Kobold
+			["qg"] = 241604,	-- Destien
+			["maps"] = { HALLOWFALL },
+			["isYearly"] = true,
+			["g"] = { i(240196) },	-- Khaz Algar Orphan Whistle (QI!)
+		}),
+		q(89320, {	-- The Eager Engineer
+			["sourceQuest"] = 89319,	-- The Wondrous Weave
+			["qg"] = 241603,	-- Threadis
+			["maps"] = { AZJ_KAHET },
+			["isYearly"] = true,
+			["g"] = { i(240197) },	-- Khaz Algar Orphan Whistle (QI!)
+		}),
+		q(89321, {	-- Recreation for Rooks
+			["sourceQuest"] = 89320,	-- The Eager Engineer
+			["qg"] = 241605,	-- Kitzy
+			["maps"] = { UNDERMINE },
+			["isYearly"] = true,
+			["g"] = { i(240198) },	-- Khaz Algar Orphan Whistle (QI!)
+		}),
+		q(89322, {	-- A Brighter Tomorrow
+			["sourceQuest"] = 89321,	-- Recreation for Rooks
+			["qg"] = 241732,	-- Ullna <Matron in Training>
+			["coord"] = { 55.2, 27.0, DORNOGAL },
+			["isYearly"] = true,
+			["g"] = A_BRIGHTER_TOMORROW_GROUPS,
+		}),
+	})),
 	-- #if AFTER 4.1.0.13682
 	n(VENDORS, {
 		n(52809, {	-- Blax Bottlerocket <Toys and Novelties>
@@ -1972,6 +2094,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 		}),
 	}),
 	-- #endif
+	n(VENDORS, bubbleDown({ ["timeline"] = { ADDED_11_1_5 } }, {
+		n(242651, {	-- Brundia Braidhammer <Toy and Pet Seller>
+			["coord"] = { 58.0, 56.8, STORMWIND_CITY },
+			["g"] = sharedData({ ["cost"] = { {"i", 241215, 1} } }, WELL_LOVED_FIGURINE_VENDOR_GROUP), -- 1x Well-loved Figurine
+		}),
+		n(243031, {	-- Clockwork Assistant
+			["coord"] = { 55.8, 26.6, DORNOGAL },
+			["g"] = {
+				i(140309, {	-- Prismatic Bauble (TOY!) (More accessible than Mad Merchant)
+					["cost"] = 2500000000,	-- 250,000g
+				}),
+			},
+		}),
+		n(243032, {	-- Jepetto Joybuzz
+			["coord"] = { 55.8, 26.4, DORNOGAL },
+			["g"] = sharedData({ ["cost"] = { {"i", 241215, 1} } }, WELL_LOVED_FIGURINE_VENDOR_GROUP), -- 1x Well-loved Figurine
+		}),
+		n(242676, {	-- Leial Knitterton <Toy and Pet Seller>
+			["coord"] = { 58.0, 56.8, ORGRIMMAR },
+			["g"] = sharedData({ ["cost"] = { {"i", 241215, 1} } }, WELL_LOVED_FIGURINE_VENDOR_GROUP), -- 1x Well-loved Figurine
+		}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
@@ -1988,6 +2132,13 @@ root(ROOTS.HiddenQuestTriggers, {
 			n(QUESTS, {
 				q(55376),	-- completing Hunting for Gold (53969)
 				q(55377),	-- completing Hunting for Gold (53969)
+			}),
+		})),
+	})),
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
+		applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, {
+			n(QUESTS, {
+				q(90599),	-- Dialogue after completing The Eager Engineer
 			}),
 		})),
 	})),

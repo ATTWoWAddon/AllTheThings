@@ -169,71 +169,74 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				e(1214, {	-- Witherbark
-					["crs"] = { 81522 },	-- Witherbark
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, BACK},
-						{"sub", "common_wod_dungeon_drop", 23, HANDS},
-					},
-					["g"] = {
-						i(119175),	-- Leafhide Penetrator
-						i(109999),	-- Witherbark's Branch
-					},
-				}),
-				e(1207, {	-- Ancient Protectors
-					["crs"] = {
-						83894,	-- Dulhu
-						83893,	-- Earthshaper Telu
-						83892,	-- Life Warden Gola
-					},
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, WAIST},
-						{"sub", "common_wod_dungeon_drop", 23, LEGS},
-					},
-					["g"] = {
-						i(119176),	-- Interloper's Mossy Skull
-						i(110009),	-- Leaf of the Ancient Protectors
-					},
-				}),
-				e(1209, {	-- Xeri'tac
-					["crs"] = {
-						84666,	-- Xeri'tac (before pulling)
-						84550,	-- Xeri'tac
-					},
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, CHEST},
-						{"sub", "common_wod_dungeon_drop", 23, FEET},
-					},
-					["g"] = {
-						i(119173),	-- Dessicated Husk Shield
-						i(110019),	-- Xeri'tac's Unhatched Egg Sac
-					},
-				}),
-				e(1208, {	-- Archmage Sol
-					["crs"] = { 82682 },	-- Archmage Sol
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, HEAD},
-						{"sub", "common_wod_dungeon_drop", 23, WRIST},
-					},
-					["g"] = {
-						i(119174),	-- Sol's Magestaff
-						i(110014),	-- Spores of Alacrity
-					},
-				}),
-				e(1210, {	-- Yalnu
-					["crs"] = { 83846 },	-- Yalnu
-					["sym"] = {
-						{"sub", "common_wod_dungeon_drop", 23, NECK},
-						{"sub", "common_wod_dungeon_drop", 23, SHOULDER},
-						{"sub", "common_wod_dungeon_drop", 23, FINGER},
-					},
-					["g"] = {
-						ach(10083),	-- Mythic: The Everbloom
-						i(119181),	-- Hoof of Yalnu
-						i(110004),	-- Coagulated Genesaur Blood
-						un(REMOVED_FROM_GAME, i(114138)),	-- Core of Life
-					},
-				}),
+				["ItemAppearanceModifierID"] = 0,
+				["groups"] = {
+					e(1214, {	-- Witherbark
+						["crs"] = { 81522 },	-- Witherbark
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, BACK},
+							{"sub", "common_wod_dungeon_drop", 23, HANDS},
+						},
+						["g"] = {
+							i(119175),	-- Leafhide Penetrator
+							i(109999),	-- Witherbark's Branch
+						},
+					}),
+					e(1207, {	-- Ancient Protectors
+						["crs"] = {
+							83894,	-- Dulhu
+							83893,	-- Earthshaper Telu
+							83892,	-- Life Warden Gola
+						},
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, WAIST},
+							{"sub", "common_wod_dungeon_drop", 23, LEGS},
+						},
+						["g"] = {
+							i(119176),	-- Interloper's Mossy Skull
+							i(110009),	-- Leaf of the Ancient Protectors
+						},
+					}),
+					e(1209, {	-- Xeri'tac
+						["crs"] = {
+							84666,	-- Xeri'tac (before pulling)
+							84550,	-- Xeri'tac
+						},
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, CHEST},
+							{"sub", "common_wod_dungeon_drop", 23, FEET},
+						},
+						["g"] = {
+							i(119173),	-- Dessicated Husk Shield
+							i(110019),	-- Xeri'tac's Unhatched Egg Sac
+						},
+					}),
+					e(1208, {	-- Archmage Sol
+						["crs"] = { 82682 },	-- Archmage Sol
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, HEAD},
+							{"sub", "common_wod_dungeon_drop", 23, WRIST},
+						},
+						["g"] = {
+							i(119174),	-- Sol's Magestaff
+							i(110014),	-- Spores of Alacrity
+						},
+					}),
+					e(1210, {	-- Yalnu
+						["crs"] = { 83846 },	-- Yalnu
+						["sym"] = {
+							{"sub", "common_wod_dungeon_drop", 23, NECK},
+							{"sub", "common_wod_dungeon_drop", 23, SHOULDER},
+							{"sub", "common_wod_dungeon_drop", 23, FINGER},
+						},
+						["g"] = {
+							ach(10083),	-- Mythic: The Everbloom
+							i(119181),	-- Hoof of Yalnu
+							i(110004),	-- Coagulated Genesaur Blood
+							un(REMOVED_FROM_GAME, i(114138)),	-- Core of Life
+						},
+					}),
+				},
 			}),
 		},
 	}),

@@ -186,12 +186,15 @@ root(ROOTS.Zones, {
 				petbattle(q(42063)),	-- Size Doesn't Matter
 				q(41551, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
+					["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41259, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
+					["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41552, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
+					["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41435, {	-- Smooth Leystone Deposits
 					["requireSkill"] = MINING,

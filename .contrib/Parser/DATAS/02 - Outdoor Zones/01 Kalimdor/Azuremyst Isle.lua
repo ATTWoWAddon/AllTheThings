@@ -136,7 +136,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["classes"] = { SHAMAN },
 							["races"] = { DRAENEI },
 							["lvl"] = 4,
-							-- #if BEFORE 4.0.3
+							-- #if BEFORE CATA
 							["groups"] = {
 								recipe(8071),	-- Stoneskin Totem
 								i(5175, {	-- Earth Totem
@@ -146,16 +146,16 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							},
 							-- #endif
 						}),
-						q(26968, {	-- Frost Nova
-							["qg"] = 16500,	-- Valaatu
+						q(26968, {	-- Arcane Missiles [Cata] / Frost Nova [MoP+] (Draenei)
+							["qg"] = 16500,	-- Valaatu <Mage Trainer>
 							-- #if AFTER MOP
 							["coord"] = { 51.0, 43.0, AMMEN_VALE },
 							-- #else
 							["coord"] = { 79.6, 48.8, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
-							["classes"] = { MAGE },
 							["races"] = { DRAENEI },
+							["classes"] = { MAGE },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9294, {	-- Healing the Lake
@@ -231,7 +231,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 								}),
 							},
 						}),
-						q(26970, {	-- Learning the Word
+						q(26970, {	-- Aiding the Injured [Cata] / Learning the Word [MoP+]
 							["qg"] = 16502,	-- Zalduun
 							-- #if AFTER MOP
 							["coord"] = { 52.1, 42.4, AMMEN_VALE },
@@ -632,7 +632,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				},
 			}),
 			n(ACHIEVEMENTS, {
-				explorationAch(860),	-- Explore Azuremyst Isle
+				ach(860),	-- Explore Azuremyst Isle
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",
@@ -679,6 +679,41 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 			}),
 			-- #endif
+			petbattles({
+				q(31569, {	-- Got one! (Lehna)
+					["qg"] = 63077,	-- Lehna
+					["sourceQuest"] = 31825,	-- Level Up!
+					["coord"] = { 49.2, 52.0, AZUREMYST_ISLE },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31556, {	-- Learning the Ropes (Lehna)
+					["qg"] = 63077,	-- Lehna
+					["coord"] = { 49.2, 52.0, AZUREMYST_ISLE },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31825, {	-- Level Up! (Lehna)
+					["qg"] = 63077,	-- Lehna
+					["sourceQuest"] = 31568,	-- On The Mend
+					["coord"] = { 49.2, 52.0, AZUREMYST_ISLE },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31568, {	-- On The Mend (Lehna)
+					["qg"] = 63077,	-- Lehna
+					["sourceQuest"] = 31556,	-- Learning the Ropes
+					["coord"] = { 49.2, 52.0, AZUREMYST_ISLE },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Battle Pets Healed
+							["provider"] = { "n", 17485 },	-- Esbina <Stable Master>
+							["coord"] = { 49.0, 49.8, AZUREMYST_ISLE },
+						}),
+					},
+				}),
+			}),
 			n(QUESTS, {
 				q(9528, {	-- A Cry For Help
 					["qg"] = 17312,	-- Magwin
@@ -1586,6 +1621,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						17201,	-- Moongraze Buck
 						17200,	-- Moongraze Stag
 					},
+					["description"] = "Only drops from stags on Azuremyst Isle.",
 				}),
 				i(23759, {	-- Rune Covered Tablet
 					["coords"] = {

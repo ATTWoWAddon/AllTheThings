@@ -58,6 +58,43 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 181217 },	-- Sansok Khan
 					["coord"] = { 85.7, 25.3, OHNAHRAN_PLAINS },
 					["g"] = {
+						o(377119, {	-- Basket of Dried Fish
+							["coord"] = { 84.3, 27.2, OHNAHRAN_PLAINS },
+							["g"] = { i(192810) },	-- Basket of Dried Fish (QI!)
+						}),
+						o(376085, {	-- Bundle of Pelts
+							["coord"] = { 86.1, 25.3, OHNAHRAN_PLAINS },
+							["g"] = { i(191054) },	-- Bundle of Pelts (QI!)
+						}),
+						o(376083, {	-- Crate of Horseshoes
+							["coord"] = { 84.4, 24.9, OHNAHRAN_PLAINS },
+							["g"] = { i(191048) },	-- Crate of Horseshoes (QI!)
+						}),
+						o(377122, {	-- Medicinal Feralbloom
+							["coords"] = {
+								{ 83.4, 25.9, OHNAHRAN_PLAINS },
+								{ 83.7, 23.4, OHNAHRAN_PLAINS },
+								{ 83.7, 25.1, OHNAHRAN_PLAINS },
+								{ 84.3, 25.8, OHNAHRAN_PLAINS },
+								{ 84.6, 27.1, OHNAHRAN_PLAINS },
+								{ 84.8, 22.7, OHNAHRAN_PLAINS },
+								{ 84.9, 22.3, OHNAHRAN_PLAINS },
+								{ 85.2, 23.9, OHNAHRAN_PLAINS },
+								{ 85.4, 24.6, OHNAHRAN_PLAINS },
+								{ 85.5, 26.8, OHNAHRAN_PLAINS },
+								{ 86.4, 26.3, OHNAHRAN_PLAINS },
+								{ 86.5, 25.3, OHNAHRAN_PLAINS },
+								{ 86.5, 26.3, OHNAHRAN_PLAINS },
+								{ 86.8, 26.7, OHNAHRAN_PLAINS },
+							},
+							["g"] = { i(192812) },	-- Feralbloom Pod (QI!)
+						}),
+						o(377120, {	-- Weapon Rack
+							["coord"] = { 84.5, 23.1, OHNAHRAN_PLAINS },
+							["g"] = { i(192811) },	-- Shikaar Weaponry (QI!)
+						}),
+						i(191055),	-- Camp Provisions (QI!)
+						--
 						i(197657),	-- Nokhud Reaver Waistguard
 						i(197658),	-- Ohn'ir Initiate Sash
 						i(197659),	-- Shikaar Scount Buckle
@@ -69,7 +106,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						65801,	-- Making Introductions
 						65802,	-- Supplies for the Journey
 					},
-					["provider"] = { "n", 181217 },	-- Sansok Khan
+					["provider"] = { "n", 185882 },	-- Scout Tomul
 					["coord"] = { 84.7, 22.9, OHNAHRAN_PLAINS },
 				}),
 				q(65804, {	-- For Food and Rivalry
@@ -102,6 +139,25 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 65940 },	-- By Broken Road
 					["provider"] = { "n", 184595 },	-- Ohn Seshteng
 					["coord"] = { 70.0, 38.0, OHNAHRAN_PLAINS },
+					["g"] = {
+						o(376152, { -- River Reeds
+							["coords"] = {
+								{ 68.4, 41.1, OHNAHRAN_PLAINS },
+								{ 68.8, 39.4, OHNAHRAN_PLAINS },
+								{ 69.4, 37.9, OHNAHRAN_PLAINS },
+								{ 70.1, 39.1, OHNAHRAN_PLAINS },
+								{ 70.1, 41.6, OHNAHRAN_PLAINS },
+								{ 70.2, 37.0, OHNAHRAN_PLAINS },
+								{ 70.3, 35.7, OHNAHRAN_PLAINS },
+								{ 70.4, 39.7, OHNAHRAN_PLAINS },
+								{ 70.5, 37.7, OHNAHRAN_PLAINS },
+								{ 70.5, 39.6, OHNAHRAN_PLAINS },
+							},
+							["g"] = { i(191101) },	-- River Reeds (QI!)
+						}),
+						i(191103),	-- Salamanther Heart (QI!)
+						i(191102),	-- Fowl Tailfeathers (QI!)
+					},
 				}),
 				q(66848, {	-- Omens on the Wind
 					["sourceQuests"] = { 65805 },	-- Connection To Ohn'ahra
@@ -1359,6 +1415,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					-- ["sourceQuests"] = {  },	--
 					["coord"] = { 64.0, 17.8, OHNAHRAN_PLAINS },
 					["description"] = "You must be at least level 62 for this to pop up.\nIt does not appear there are any pre-requisite quests.\nThis became available at 70 during TWW pre-patch.",
+					["lockCriteria"] = { 1, "lvl", 71 },
 				}),
 				q(66421, {	-- The Storm Scar
 					["sourceQuests"] = { 66331 },	-- The Primalist Front

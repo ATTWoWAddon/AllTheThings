@@ -8,11 +8,20 @@ local XShift = app.IsRetail and -1 or 0
 local YShift = app.IsRetail and -65 or -32
 local WorldMapButton;
 local function CreateWorldMapButton()
-	local button = CreateFrame("BUTTON", appName .. "-WorldMap", WorldMapFrame:GetCanvasContainer());
-	button:SetHighlightTexture(app.asset("MinimapHighlight_64x64"));
-	button:SetPoint("TOPRIGHT", XShift, YShift);
-	button:RegisterForClicks("LeftButtonUp", "RightButtonUp");
+	-- wonder if there's other special world map button addons we need to worry about... thanks Blizzard for no common API for a feature you added
+	local KrowiWorldMapButtons = LibStub and LibStub("Krowi_WorldMapButtons-1.4", true)
+	local button
+	if KrowiWorldMapButtons then
+		button = KrowiWorldMapButtons:Add(nil, "BUTTON")
+		-- this is a non-standard function that Krowi uses when the world map changes to sync updates to the button. it errors if not existing
+		button.Refresh = app.EmptyFunction
+	else
+		button = CreateFrame("BUTTON", appName .. "-WorldMap", WorldMapFrame:GetCanvasContainer());
+		button:SetPoint("TOPRIGHT", XShift, YShift);
+	end
 	button:SetFrameStrata("HIGH");
+	button:SetHighlightTexture(app.asset("MinimapHighlight_64x64"));
+	button:RegisterForClicks("LeftButtonUp", "RightButtonUp");
 	button:EnableMouse(true);
 	button:SetSize(36, 36);
 	WorldMapButton = button;

@@ -65,6 +65,7 @@ if C_TooltipInfo_GetHyperlink then
 else
 	---@class ATTNPCHarvesterForRetail: GameTooltip
 	local ATTCNPCHarvester = CreateFrame("GameTooltip", "ATTCNPCHarvester", UIParent, "GameTooltipTemplate")
+	ATTCNPCHarvester.AllTheThingsIgnored = true;
 	setmetatable(NPCNameFromID, { __index = function(t, id)
 		if id > 0 then
 			ATTCNPCHarvester:SetOwner(UIParent,"ANCHOR_NONE")
@@ -93,9 +94,16 @@ app.NPCTitlesFromID = NPCTitlesFromID
 local CreateNPC
 do
 	local KEY = "npcID"
+	local cache = app.CreateCache(KEY, "NPC")
+	cache.DefaultFunctions.name = function(t)
+		local _t, id = cache.GetCached(t)
+		local name = NPCNameFromID[id]
+		_t.name = name
+		return name
+	end
 	CreateNPC = app.CreateClass("NPC", KEY, {
 		name = function(t)
-			return NPCNameFromID[t[KEY]]
+			return cache.GetCachedField(t, "name")
 		end,
 		title = function(t)
 			return NPCTitlesFromID[t[KEY]]
@@ -115,9 +123,7 @@ do
 		or function() return "QuestsHidden" end,
 		collectible = app.GlobalVariants.AndLockCriteria.collectible or app.CollectibleAsQuest,
 		locked = app.GlobalVariants.AndLockCriteria.locked,
-		collected = function(t)
-			return IsQuestFlaggedCompletedForObject(t)
-		end,
+		collected = IsQuestFlaggedCompletedForObject,
 		trackable = function(t)
 			-- raw repeatable quests can't really be tracked since they immediately unflag
 			return not rawget(t, "repeatable") and t.repeatable

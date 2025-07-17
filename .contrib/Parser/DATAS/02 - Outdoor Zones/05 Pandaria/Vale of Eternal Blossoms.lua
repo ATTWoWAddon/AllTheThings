@@ -13,43 +13,26 @@ root(ROOTS.Zones, {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(7318),	-- A Taste of History
+					ach(6856),	-- Ballad of Liu Lang (automated)
+					ach(6716),	-- Between a Saurok and a Hard Place (automated)
 					ach(7323),	-- Collateral Damage
 					ach(7320),	-- Dog Pile
 					ach(7315, {	-- Eternally in the Vale
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 					}),
-					explorationAch(6979),	-- Explore Vale of Eternal Blossoms
-					ach(7317, {		-- One Many Army
-						crit(20517),		-- Cracklefang
-						crit(20518),		-- Vicejaw
-						crit(20519),		-- General Temuja
-						crit(20520),		-- Shadowmaster Sydow
-						crit(20521, {		-- Aetha
-							["crs"] = { 58778 },
-						}),
-						crit(20522, {		-- Quid
-							["crs"] = { 58771 },
-						}),
-						crit(20523),		-- Spirit of Lao-Fe
-						crit(20524),		-- Baolai the Immolator
-						crit(20525),		-- Gaohun the Soul-Severer
-						crit(20526),		-- Bloodtip
-						crit(20527),		-- Wulon
-						crit(20528),		-- Gochao the Ironfist
-						crit(20529),		-- Huo-Shuang
-						crit(20530),		-- Bai-Jin the Butcher
-						crit(20531),		-- Kri'chon
-						crit(20532),		-- Vyraxxis
-					}),
-					ach(7324, {	-- One Step at a Time
-						["sym"] = {{ "achievement_criteria" }},
-					}),
-					ach(7319, {	-- Ready for Raiding III
-						["sym"] = {{ "achievement_criteria" }},
-					}),
+					ach(6979),	-- Explore Vale of Eternal Blossoms
+					ach(6846),	-- Fish Tales (automated)
+					ach(6850),	-- Hozen in the Mist (automated)
+					ach(7230),	-- Legend of the Brewfathers (automated)
+					ach(7317),	-- One Many Army
+					ach(7324),	-- One Step at a Time
+					ach(7319),	-- Ready for Raiding III
 					ach(7322),	-- Roll Club
+					ach(6754),	-- The Dark Heart of the Mogu (automated)
 					ach(6546),	-- The Golden Lotus
 					ach(6548),	-- The Lorewalkers
+					ach(6855),	-- The Seven Burdens of Shaohao (automated)
+					ach(6847),	-- The Song of the Yaungol (automated)
 				}),
 				battlepets({
 					pet(751),	-- Dancing Water Skimmer (PET!)
@@ -110,10 +93,348 @@ root(ROOTS.Zones, {
 						-- ["sourceQuests"] = {  },	-- TODO: likely requires some 8.3 quest chain before becoming available?
 					}),
 				}),
+				n(MAILBOX, {
+					["description"] = "The following will be mailed to you upon completion of respective achievements.",
+					["groups"] = {
+						q(31055, {	-- Between a Saurok and a Hard Place
+							["sourceAchievement"] = 6716,	-- Between a Saurok and a Hard Place
+							["providers"] = {
+								{ "i", 83769 },	-- Between a Saurok and a Hard Place
+								{ "i", 83076 },	-- Between a Saurok and a Hard Place
+							},
+						}),
+						q(31094, {	-- Fish Tales
+							["sourceAchievement"] = 6846,	-- Fish Tales
+							["provider"] = { "i", 83771 },	-- Fish Tales
+						}),
+						q(32602, {	-- Gods and Monsters
+							["sourceAchievement"] = 8051,	-- Gods and Monsters
+							["provider"] = { "i", 94199 },	-- Gods and Monsters
+						}),
+						q(31097, {	-- Heart of the Mantid Swarm
+							["sourceAchievement"] = 6857,	-- Heart of the Mantid Swarm
+							["provider"] = { "i", 83773 },	-- Heart of the Mantid Swarm
+						}),
+						q(31093, {	-- Hozen in the Mist
+							["sourceAchievement"] = 6850,	-- Hozen in the Mist
+							["provider"] = { "i", 83770 },	-- Hozen in the Mist
+						}),
+						q(32601, {	-- Rumbles of Thunder
+							["sourceAchievement"] = 8050,	-- Rumbles of Thunder
+							["provider"] = { "i", 94198 },	-- Rumbles of Thunder
+						}),
+						q(31103, {	-- The Ballad of Liu Lang
+							["sourceAchievement"] = 6856,	-- Ballad of Liu Lang
+							["provider"] = { "i", 83780 },	-- The Ballad of Liu Lang
+						}),
+						q(31095, {	-- The Dark Heart of the Mogu
+							["sourceAchievement"] = 6754,	-- The Dark Heart of the Mogu
+							["provider"] = { "i", 83772 },	-- The Dark Heart of the Mogu
+						}),
+						q(31102, {	-- The Seven Burdens of Shaohao
+							["sourceAchievement"] = 6855,	-- The Seven Burdens of Shaohao
+							["provider"] = { "i", 83779 },	-- The Seven Burdens of Shaohao
+						}),
+						q(31100, {	-- The Song of the Yaungol
+							["sourceAchievement"] = 6847,	-- The Song of the Yaungol
+							["provider"] = { "i", 83777 },	-- The Song of the Yaungol
+						}),
+						q(32600, {	-- The Zandalari Prophecy
+							["sourceAchievement"] = 8049,	-- The Zandalari Prophecy
+							["provider"] = { "i", 94197 },	-- The Zandalari Prophecy
+						}),
+						q(31096, {	-- What is Worth Fighting For
+							["sourceAchievement"] = 6858,	-- What Is Worth Fighting For
+							["provider"] = { "i", 83774 },	-- What is Worth Fighting For
+						}),
+					},
+				}),
 				petbattles({
 					n(66741, {	-- Aki the Chosen <Grand Master Pet Tamer>
-						["coord"] = { 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
+						["coords"] = {
+							{ 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
+							-- #if AFTER 8.3.0
+							{ 84.1, 28.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							-- #endif
+						},
+						["timeline"] = { ADDED_5_1_0 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(31958, {	-- Grand Master Aki
+								["sourceAchievement"] = 6606,	-- Taming Pandaria
+								["timeline"] = { ADDED_5_1_0 },
+								["isDaily"] = true,
+								["groups"] = {
+									i(89125),	-- Sack of Pet Supplies
+								},
+							}),
+						},
 					}),
+					q(31951, {	-- Grand Master Aki
+						["qg"] = 66741,	-- Aki the Chosen
+						["sourceQuests"] = {
+							31930,	-- Battle Pet Tamers: Pandaria (A)
+							31952,	-- Battle Pet Tamers: Pandaria (H)
+						},
+						["coords"] = {
+							{ 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
+							-- #if AFTER 8.3.0
+							{ 84.1, 28.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							-- #endif
+						},
+						["timeline"] = { ADDED_5_0_4 },
+						["groups"] = {
+							objective(1, {	-- Defeat Aki the Chosen
+								["provider"] = { "n", 66741 },	-- Aki the Chosen
+								["coords"] = {
+									{ 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
+									-- #if AFTER 8.3.0
+									{ 84.1, 28.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+									-- #endif
+								},
+							}),
+							i(89125),	-- Sack of Pet Supplies
+						},
+					}),
+					q(32603, {	-- Beasts of Fable
+						["aqd"] = {
+							["qg"] = 64572,	-- Sara Finkleswitch
+							["coord"] = { 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
+							["maps"] = { 393 },	-- Shrine of Seven Stars
+						},
+						["hqd"] = {
+							["qg"] = 64582,	-- Gentle San
+							["coord"] = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
+							["maps"] = { 391 },	-- Shrine of Two Moons
+						},
+						["sourceAchievement"] = 7499,	-- Taming the World
+						["timeline"] = { ADDED_5_2_0 },
+						["maps"] = { THE_JADE_FOREST, DREAD_WASTES, VALLEY_OF_THE_FOUR_WINDS, TOWNLONG_STEPPES, KUN_LAI_SUMMIT, KRASARANG_WILDS },
+						["groups"] = {
+							objective(1, {	-- Defeat Ka'wi the Gorger
+								["provider"] = { "n", 68555 },	-- Ka'wi the Gorger
+								["coord"] = { 48.4, 71.0, THE_JADE_FOREST },
+							}),
+							objective(2, {	-- Defeat Gorespine
+								["provider"] = { "n", 68558 },	-- Gorespine
+								["coord"] = { 26.2, 50.2, DREAD_WASTES },
+							}),
+							objective(3, {	-- Defeat No-No
+								["provider"] = { "n", 68559 },	-- No-No
+								["coord"] = { 11.0, 70.6, VALE_OF_ETERNAL_BLOSSOMS },
+							}),
+							objective(4, {	-- Defeat Greyhoof
+								["provider"] = { "n", 68560 },	-- Greyhoof <Calf of Darkhide>
+								["coord"] = { 25.2, 78.6, VALLEY_OF_THE_FOUR_WINDS },
+							}),
+							objective(5, {	-- Defeat Lucky Yi
+								["provider"] = { "n", 68561 },	-- Lucky Yi
+								["coord"] = { 40.4, 43.8, VALLEY_OF_THE_FOUR_WINDS },
+							}),
+							objective(6, {	-- Defeat Ti'un the Wanderer
+								["provider"] = { "n", 68562 },	-- Ti'un the Wanderer
+								["coord"] = { 72.2, 79.8, TOWNLONG_STEPPES },
+							}),
+							objective(7, {	-- Defeat Kafi
+								["provider"] = { "n", 68563 },	-- Kafi
+								["coord"] = { 35.2, 56.0, KUN_LAI_SUMMIT },
+							}),
+							objective(8, {	-- Defeat Dos-Ryga
+								["provider"] = { "n", 68564 },	-- Dos-Ryga
+								["coord"] = { 67.8, 84.6, KUN_LAI_SUMMIT },
+							}),
+							objective(9, {	-- Defeat Nitun
+								["provider"] = { "n", 68565 },	-- Nitun <The Midnight Plunderer>
+								["coord"] = { 57.0, 29.2, THE_JADE_FOREST },
+							}),
+							objective(10, {	-- Defeat Skitterer Xi'a
+								["provider"] = { "n", 68566 },	-- Skitterer Xi'a
+								["coord"] = { 36.2, 37.2, KRASARANG_WILDS },
+							}),
+							i(94025, {	-- Red Panda (PET!)
+								["timeline"] = { ADDED_5_2_0 },
+							}),
+						},
+					}),
+					q(32604, {	-- Beasts of Fable Book I
+						["aqd"] = {
+							["qg"] = 64572,	-- Sara Finkleswitch
+							["coord"] = { 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
+							["maps"] = { THE_JADE_FOREST, KUN_LAI_SUMMIT, 393 },	-- Shrine of Seven Stars
+						},
+						["hqd"] = {
+							["qg"] = 64582,	-- Gentle San
+							["coord"] = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
+							["maps"] = { THE_JADE_FOREST, KUN_LAI_SUMMIT, 391 },	-- Shrine of Two Moons
+						},
+						["sourceQuest"] = 32603,	-- Beasts of Fable
+						["description"] = "Account-Wide Daily Quest. Must have completed the quest |cffffff00Beasts of Fable.|r",
+						["timeline"] = { ADDED_5_2_0 },
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- Defeat Ka'wi the Gorger
+								["provider"] = { "n", 68555 },	-- Ka'wi the Gorger
+								["coord"] = { 48.4, 71.0, THE_JADE_FOREST },
+							}),
+							objective(2, {	-- Defeat Kafi
+								["provider"] = { "n", 68563 },	-- Kafi
+								["coord"] = { 35.2, 56.0, KUN_LAI_SUMMIT },
+							}),
+							objective(3, {	-- Defeat Dos-Ryga
+								["provider"] = { "n", 68564 },	-- Dos-Ryga
+								["coord"] = { 67.8, 84.6, KUN_LAI_SUMMIT },
+							}),
+							objective(4, {	-- Defeat Nitun
+								["provider"] = { "n", 68565 },	-- Nitun <The Midnight Plunderer>
+								["coord"] = { 57.0, 29.2, THE_JADE_FOREST },
+							}),
+							i(94207),	-- Fabled Pandaren Pet Supplies
+						},
+					}),
+					q(32868, {	-- Beasts of Fable Book II
+						["aqd"] = {
+							["qg"] = 64572,	-- Sara Finkleswitch
+							["coord"] = { 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
+							["maps"] = { VALLEY_OF_THE_FOUR_WINDS, KRASARANG_WILDS, 393 },	-- Shrine of Seven Stars
+						},
+						["hqd"] = {
+							["qg"] = 64582,	-- Gentle San
+							["coord"] = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
+							["maps"] = { VALLEY_OF_THE_FOUR_WINDS, KRASARANG_WILDS, 391 },	-- Shrine of Two Moons
+						},
+						["sourceQuest"] = 32603,	-- Beasts of Fable
+						["description"] = "Account-Wide Daily Quest. Must have completed the quest |cffffff00Beasts of Fable.|r",
+						["timeline"] = { ADDED_5_2_0 },
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- Defeat Greyhoof
+								["provider"] = { "n", 68560 },	-- Greyhoof <Calf of Darkhide>
+								["coord"] = { 25.2, 78.6, VALLEY_OF_THE_FOUR_WINDS },
+							}),
+							objective(2, {	-- Defeat Lucky Yi
+								["provider"] = { "n", 68561 },	-- Lucky Yi
+								["coord"] = { 40.4, 43.8, VALLEY_OF_THE_FOUR_WINDS },
+							}),
+							objective(3, {	-- Defeat Skitterer Xi'a
+								["provider"] = { "n", 68566 },	-- Skitterer Xi'a
+								["coord"] = { 36.2, 37.2, KRASARANG_WILDS },
+							}),
+							i(94207),	-- Fabled Pandaren Pet Supplies
+						},
+					}),
+					q(32869, {	-- Beasts of Fable Book III
+						["aqd"] = {
+							["qg"] = 64572,	-- Sara Finkleswitch
+							["coord"] = { 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
+							["maps"] = { DREAD_WASTES, TOWNLONG_STEPPES, 393 },	-- Shrine of Seven Stars
+						},
+						["hqd"] = {
+							["qg"] = 64582,	-- Gentle San
+							["coord"] = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
+							["maps"] = { DREAD_WASTES, TOWNLONG_STEPPES, 391 },	-- Shrine of Two Moons
+						},
+						["sourceQuest"] = 32603,	-- Beasts of Fable
+						["description"] = "Account-Wide Daily Quest. Must have completed the quest |cffffff00Beasts of Fable.|r",
+						["timeline"] = { ADDED_5_2_0 },
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- Defeat Gorespine
+								["provider"] = { "n", 68558 },	-- Gorespine
+								["coord"] = { 26.2, 50.2, DREAD_WASTES },
+							}),
+							objective(2, {	-- Defeat No-No
+								["provider"] = { "n", 68559 },	-- No-No
+								["coord"] = { 11.0, 70.6, VALE_OF_ETERNAL_BLOSSOMS },
+							}),
+							objective(3, {	-- Defeat Ti'un the Wanderer
+								["provider"] = { "n", 68562 },	-- Ti'un the Wanderer
+								["coord"] = { 72.2, 79.8, TOWNLONG_STEPPES },
+							}),
+							i(94207),	-- Fabled Pandaren Pet Supplies
+						},
+					}),
+					q(32428, {	-- Pandaren Spirit Tamer
+						["aqd"] = {
+							["qg"] = 64572,	-- Sara Finkleswitch
+							["coord"] = { 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
+							["maps"] = { TOWNLONG_STEPPES, KUN_LAI_SUMMIT, THE_JADE_FOREST, DREAD_WASTES, 393 },	-- Shrine of Seven Stars
+						},
+						["hqd"] = {
+							["qg"] = 64582,	-- Gentle San
+							["coord"] = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
+							["maps"] = { TOWNLONG_STEPPES, KUN_LAI_SUMMIT, THE_JADE_FOREST, DREAD_WASTES, 391 },	-- Shrine of Two Moons
+						},
+						["sourceAchievement"] = 7499,	-- Taming the World
+						["description"] = "These pets can be found in the Pandaren Spirit Pet Supplies received from the four Pandaren Spirit Tamers in their individual Daily Quests once you complete this quest.",
+						["timeline"] = { ADDED_5_0_4 },
+						["groups"] = {
+							objective(1, {	-- Defeat Burning Pandaren Spirit
+								["provider"] = { "n", 68463 },	-- Burning Pandaren Spirit <Grand Master Pet Tamer>
+								["coord"] = { 57.0, 42.2, TOWNLONG_STEPPES },
+							}),
+							objective(2, {	-- Defeat Thundering Pandaren Spirit
+								["provider"] = { "n", 68465 },	-- Thundering Pandaren Spirit <Grand Master Pet Tamer>
+								["coord"] = { 64.8, 93.6, KUN_LAI_SUMMIT },
+							}),
+							objective(3, {	-- Defeat Whispering Pandaren Spirit
+								["provider"] = { "n", 68464 },	-- Whispering Pandaren Spirit <Grand Master Pet Tamer>
+								["coord"] = { 28.8, 36.0, THE_JADE_FOREST },
+							}),
+							objective(4, {	-- Defeat Flowing Pandaren Spirit
+								["provider"] = { "n", 68462 },	-- Flowing Pandaren Spirit <Grand Master Pet Tamer>
+								["coord"] = { 61.2, 87.6, DREAD_WASTES },
+							}),
+							i(92799),	-- Pandaren Air Spirit (PET!)
+							i(92798),	-- Pandaren Fire Spirit (PET!)
+							i(92800),	-- Pandaren Earth Spirit (PET!)
+							i(90173),	-- Pandaren Water Spirit (PET!)
+						},
+					}),
+					pvp(q(32863, {	-- What We've Been Training For
+						["aqd"] = {
+							["qgs"] = {
+								64572,	-- Sara Finkleswitch
+								63596,	-- Audrey Burnhelp
+							},
+							["coords"] = {
+								{ 86.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
+								{ 69.2, 25.0, STORMWIND_CITY },
+							},
+							["maps"] = { 393 },	-- Shrine of Seven Stars
+						},
+						["hqd"] = {
+							["qgs"] = {
+								64582,	-- Gentle San
+								63626,	-- Varzok
+							},
+							["coords"] = {
+								{ 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
+								{ 52.6, 59.3, ORGRIMMAR },
+							},
+							["maps"] = { 391 },	-- Shrine of Two Moons
+						},
+						["description"] = "Account-Wide Weekly Quest.",
+						["timeline"] = { ADDED_5_3_0 },
+						["isWeekly"] = true,
+						["groups"] = {
+							i(98095, {	-- Brawler's Pet Supplies
+								["sym"] = {{"select","itemID",
+									89139,	-- Chain Pet Leash
+									44820,	-- Red Ribbon Pet Leash
+									37460,	-- Rope Pet Leash
+									92679,	-- Flawless Aquatic Battle-Stone
+									92675,	-- Flawless Beast Battle-Stone
+									92676,	-- Flawless Critter Battle-Stone
+									92665,	-- Flawless Elemental Battle-Stone
+									92677,	-- Flawless Flying Battle-Stone
+									92682,	-- Flawless Humanoid Battle-Stone
+									92678,	-- Flawless Magic Battle-Stone
+									92680,	-- Flawless Mechanical Battle-Stone
+									92681,	-- Flawless Undead Battle-Stone
+								}},
+							})
+						},
+					})),
 				}),
 				n(QUESTS, {
 					q(32011, {	-- A Celestial Task (A)
@@ -418,10 +739,6 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					q(31097, {	-- Heart of the Mantid Swarm
-						["description"] = "The item that starts this quest is mailed to you after you finish the |cffefef01Heart of the Mantid Swarm|r achievement.",
-						["provider"] = { "i", 83773 },	-- Heart of the Mantid Swarm
-					}),
 					q(31756, {	-- High Chance of Rain
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["provider"] = { "n", 58471 },	-- Kun Autumnlight
@@ -459,8 +776,6 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							33229,	-- A Flash of Bronze...	(Alliance)
 							33230,	-- A Flash of Bronze...	(Horde)
-							37188,	-- A Flash of Bronze...	(NYI)
-							37194,	-- A Flash of Bronze...	(NYI)
 						},
 					}),
 					q(33232, {	-- Journey to the Timeless Isle
@@ -470,8 +785,6 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							33229,	-- A Flash of Bronze...	(Alliance)
 							33230,	-- A Flash of Bronze...	(Horde)
-							37188,	-- A Flash of Bronze...	(NYI)
-							37194,	-- A Flash of Bronze...	(NYI)
 						},
 						["groups"] = {
 							i(104110),	-- Curious Bronze Timepiece (QI!)
@@ -816,10 +1129,6 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					q(31103, {	-- The Ballad of Liu Lang
-						["description"] = "The item that starts this quest is mailed to you after you finish the |cffefef01Ballad of Liu Lang|r achievement.",
-						["provider"] = { "i", 83780 },	-- The Ballad of Liu Lang
-					}),
 					q(30306, {	-- The Battle Ring
 						["coord"] = { 19.0, 75.4, VALE_OF_ETERNAL_BLOSSOMS },
 						["isDaily"] = true,
@@ -838,10 +1147,6 @@ root(ROOTS.Zones, {
 						["g"] = {
 							i(87790),	-- Ancient Guo-Lai Artifact (QI!)
 						},
-					}),
-					q(31095, {	-- The Dark Heart of the Mogu
-						["provider"] = { "i", 83772 },	-- The Dark Heart of the Mogu
-						["description"] = "Complete achievement with the same name and you will get the item that starts the quest in the mail.",
 					}),
 					q(30314, {	-- The Displaced Paleblade
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
@@ -1445,6 +1750,57 @@ root(ROOTS.Zones, {
 					}),
 					--n(50843, {	-- Portent	}),
 				}),
+				n(REWARDS, {
+					petbattle(container(94207, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Fabled Pandaren Pet Supplies
+						i(94210),	-- Mountain Panda (PET!)
+						i(94209),	-- Snowy Panda (PET!)
+						i(94208),	-- Sunfur Panda (PET!)
+						i(89139),	-- Chain Pet Leash
+						i(44820),	-- Red Ribbon Pet Leash
+						i(37460),	-- Rope Pet Leash
+						i(92679),	-- Flawless Aquatic Battle-Stone
+						i(92675),	-- Flawless Beast Battle-Stone
+						i(92676),	-- Flawless Critter Battle-Stone
+						i(92665),	-- Flawless Elemental Battle-Stone
+						i(92677),	-- Flawless Flying Battle-Stone
+						i(92682),	-- Flawless Humanoid Battle-Stone
+						i(92678),	-- Flawless Magic Battle-Stone
+						i(92680),	-- Flawless Mechanical Battle-Stone
+						i(92681),	-- Flawless Undead Battle-Stone
+					}))),
+				}),
+				n(TREASURES, {
+					o(213414, {	-- Always Remember
+						["coords"] = {
+							{ 53.0, 68.3, VALE_OF_ETERNAL_BLOSSOMS },
+							-- #if AFTER BFA
+							{ 53.0, 68.3, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },	-- BFA alternate zone
+							-- #endif
+						},
+					}),
+					o(213456, {	-- The Emperor's Burden - Part 8
+						-- #if AFTER BFA
+						["description"] = "This can only be found in the non-N'zoth phase. Speak to Zidormi atop the Seat of Knowledge to travel to the past.",
+						-- #endif
+						["coord"] = { 67.7, 44.2, VALE_OF_ETERNAL_BLOSSOMS },
+					}),
+					o(213334, {	-- The Thunder King
+						["coords"] = {
+							{ 40.1, 75.6, VALE_OF_ETERNAL_BLOSSOMS },
+							-- #if AFTER BFA
+							{ 40.1, 75.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },	-- BFA alternate zone
+							-- #endif
+						},
+					}),
+					o(213416, {	-- Together, We Are Strong
+						["coords"] = {
+							{ 26.6, 20.8, VALE_OF_ETERNAL_BLOSSOMS },
+							-- #if AFTER BFA
+							{ 26.6, 20.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },	-- BFA alternate zone
+							-- #endif
+						},
+					}),
+				}),
 				n(VENDORS, {
 					n(61650, {	-- Big Keech <Rare Antiquities>
 						["coord"] = { 62.6, 41.8, VALE_OF_ETERNAL_BLOSSOMS },
@@ -1716,19 +2072,19 @@ root(ROOTS.Zones, {
 							}, {	-- Honored
 								i(86235),	-- Pattern: Angerhide Leg Armor (RECIPE!)
 								i(86237),	-- Pattern: Chestguard of Earthen Harmony (RECIPE!)
-								i(86371),	-- Pattern: Gloves of Creation
+								i(86371),	-- Pattern: Gloves of Creation (RECIPE!)
 								i(86273),	-- Pattern: Gloves of Earthen Harmony (RECIPE!)
-								i(86376),	-- Pattern: Greater Cerulean Spellthread
-								i(86375),	-- Pattern: Greater Pearlescent Spellthread
+								i(86376),	-- Pattern: Greater Cerulean Spellthread (RECIPE!)
+								i(86375),	-- Pattern: Greater Pearlescent Spellthread (RECIPE!)
 								i(86274),	-- Pattern: Greyshadow Chestguard (RECIPE!)
 								i(86275),	-- Pattern: Greyshadow Gloves (RECIPE!)
 								i(86276),	-- Pattern: Ironscale Leg Armor (RECIPE!)
 								i(86277),	-- Pattern: Lifekeeper's Gloves (RECIPE!)
 								i(86278),	-- Pattern: Lifekeeper's Robe (RECIPE!)
-								i(86370),	-- Pattern: Robes of Creation
+								i(86370),	-- Pattern: Robes of Creation (RECIPE!)
 								i(86295),	-- Pattern: Shadowleather Leg Armor (RECIPE!)
-								i(86369),	-- Pattern: Spelltwister's Gloves
-								i(86368),	-- Pattern: Spelltwister's Grand Robe
+								i(86369),	-- Pattern: Spelltwister's Gloves (RECIPE!)
+								i(86368),	-- Pattern: Spelltwister's Grand Robe (RECIPE!)
 								i(86308),	-- Pattern: Wildblood Gloves (RECIPE!)
 								i(86309),	-- Pattern: Wildblood Vest (RECIPE!)
 							}, {	-- Revered
@@ -1935,7 +2291,7 @@ root(ROOTS.Zones, {
 								i(93224),	-- Grand Commendation of the August Celestials
 							}, {	-- Exalted
 								i(89799),	-- August Celestials Tabard
-								i(86377),	-- Pattern: Royal Satchel
+								i(86377),	-- Pattern: Royal Satchel (RECIPE!)
 								i(89304, {	-- Reins of the Thundering August Cloud Serpent (MOUNT!)
 									["cost"] = 100000000,	-- 10,000g
 								}),
@@ -1997,7 +2353,7 @@ root(ROOTS.Zones, {
 								i(93224),	-- Grand Commendation of the August Celestials
 							}, {	-- Exalted
 								i(89799),	-- August Celestials Tabard
-								i(86377),	-- Pattern: Royal Satchel
+								i(86377),	-- Pattern: Royal Satchel (RECIPE!)
 								i(89304, {	-- Reins of the Thundering August Cloud Serpent (MOUNT!)
 									["cost"] = 100000000,	-- 10,000g
 								}),

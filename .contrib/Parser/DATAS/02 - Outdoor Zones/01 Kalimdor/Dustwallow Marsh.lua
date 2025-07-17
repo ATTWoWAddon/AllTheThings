@@ -42,7 +42,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4929, {	-- Dustwallow Marsh Quests (Alliance)
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					-- #if ANYCLASSIC
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
+					-- #else
 					["sourceQuests"] = {
 						27213,	-- The End of the Deserters
 						27190,	-- Cleansing Witch Hill
@@ -60,7 +62,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4978, {	-- Dustwallow Marsh Quests (Horde)
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					-- #if ANYCLASSIC
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
+					-- #else
 					["sourceQuests"] = {
 						26682,	-- A Shambling Threat
 						25051,	-- Darkmist Extermination
@@ -82,7 +86,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
-				explorationAch(850),	-- Explore Dustwallow Marsh
+				ach(850),	-- Explore Dustwallow Marsh
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",
@@ -133,18 +137,36 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 				fp(179, {	-- Mudsprocket, Dustwallow Marsh
-					-- #if AFTER CATA
-					["cr"] = 40358,	-- Dyslix Silvergrub <Flight Master>
-					-- #else
-					["cr"] = 23612,	-- Dyslix Silvergrub <Flight Master>
-					-- #endif
+					["crs"] = {
+						-- #if AFTER CATA
+						40358,	-- Dyslix Silvergrub <Flight Master>
+						-- #else
+						23612,	-- Dyslix Silvergrub <Flight Master>
+						-- #endif
+					},
 					["coord"] = { 42.8, 72.4, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_2_3_0 },
 				}),
 				fp(32, {	-- Theramore, Dustwallow Marsh
 					["cr"] = 4321,	-- Baldruc <Gryphon Master>
-					["coord"] = { 67.4, 51.2, DUSTWALLOW_MARSH },
+					["coord"] = { 67.5, 51.3, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
+				}),
+			}),
+			petbattles({
+				n(66436, {	-- Grazzle the Great <Master Pet Tamer>
+					["coord"] = { 53.8, 74.8, DUSTWALLOW_MARSH },
+					["description"] = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nGrazzle's pets are level 14 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Dragonkin - see above.\n3. Dragonkin - see above.",
+					["timeline"] = { ADDED_5_0_4 },
+					["petBattleLvl"] = 14,
+					["groups"] = {
+						q(31905, {	-- Grazzle the Great
+							["sourceAchievement"] = 6602,	-- Taming Kalimdor
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
 				}),
 			}),
 			n(PROFESSIONS, {
@@ -161,13 +183,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					o(207724),	-- Shipwreck Debris
 					o(180685),	-- Waterlogged Wreckage
 				}),
+				prof(TAILORING, {
+					n(11052, {	-- Timothy Worthington <Master Tailor>
+						["coord"] = { 66.2, 51.6, DUSTWALLOW_MARSH },
+						["races"] = ALLIANCE_ONLY,
+						-- #if BEFORE 2.1.0
+						["g"] = ARTISAN_TAILORING,
+						-- #endif
+					}),
+				}),
 			}),
 			n(QUESTS, {
 				q(1258, {	-- ... and Bugs
 					["qg"] = 4794,	-- Morgan Stern
 					["sourceQuest"] = 1204,	-- Mudrock Soup and Bugs
-					["coord"] = { 66.4, 45.4, DUSTWALLOW_MARSH },
-					-- #if BEFORE 4.0.3.13277
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 68.3, 48.7, DUSTWALLOW_MARSH },
+						-- #else
+						{ 66.4, 45.4, DUSTWALLOW_MARSH },
+						-- #endif
+					},
+					-- #if BEFORE CATA
 					["maps"] = { SWAMP_OF_SORROWS },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
@@ -175,15 +212,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/12 Pristine Crawler Leg
 							["provider"] = { "i", 5938 },	-- Pristine Crawler Leg
-							-- #if AFTER 4.0.3.13277
-							["cr"] = 44390,	-- Spiny Rock Crab
-							-- #else
 							["crs"] = {
+								-- #if AFTER CATA
+								44390,	-- Spiny Rock Crab
+								-- #else
 								1088,	-- Monstrous Crawler
 								922,	-- Silt Crawler
+								-- #endif
 							},
-							-- #endif
-
 						}),
 						i(57843, {	-- Baroque Shield
 							["timeline"] = { ADDED_4_0_3 },
@@ -225,7 +261,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						27262,	-- Suspicious Hoofprints [A]
 						27285,	-- The Black Shield (3/3) [A]
 					},
-					["coord"] = { 68.1, 48.5, DUSTWALLOW_MARSH },
+					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -249,8 +285,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/7 Withervine slain
 							["providers"] = {
-								{ "n", 4382},	-- Withervine Creeper
-								{ "n", 4385},	-- Withervine Rager
+								{ "n", 4382 },	-- Withervine Creeper
+								{ "n", 4385 },	-- Withervine Rager
 							},
 						}),
 					},
@@ -258,13 +294,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6625, {	-- Alliance Trauma
 					["qg"] = 5150,	-- Nissa Firestone
 					["coord"] = { 54.8, 58.6, IRONFORGE },
-					-- #if AFTER BFA
-					["description"] = "Needs a minimum of 225 skill in Tailoring.",
-					["requireSkill"] = TAILORING,
-					-- #else
-					["description"] = "Needs a minimum of 225 skill in First Aid.",
-					["requireSkill"] = FIRST_AID,
-					-- #endif
+					["description"] =
+						-- #if AFTER BFA
+						"Needs a minimum of 225 skill in Tailoring.",
+						-- #else
+						"Needs a minimum of 225 skill in First Aid.",
+						-- #endif
+					["requireSkill"] =
+						-- #if AFTER BFA
+						TAILORING,
+						-- #else
+						FIRST_AID,
+						-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(35, 35, 10),
@@ -409,11 +450,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 65.0, 47.0, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = { i(5917) },	-- Spy's Report (QI!)
 				}),
 				q(1220, {	-- Captain Vimes
 					["providers"] = {
 						{ "n", 4947 },	-- Theramore Lieutenant
-						{ "i", 5917 },	-- Spy's Report
+						{ "i", 5917 },	-- Spy's Report (QI!) not prov
 					},
 					["sourceQuest"] = 1219,	-- The Orc Report
 					["coords"] = {
@@ -629,6 +671,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 46.6, 24.6, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(33051),	-- Grimtotem Battle Plan (QI!)
+						i(33050),	-- Grimtotem Note (QI!)
+					},
 				}),
 				q(11144, {	-- Confirming the Suspicion
 					["qg"] = 23568,	-- Captain Darill
@@ -702,7 +748,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(27286, {	-- Daelin's Men
 					["qg"] = 4948,	-- Adjutant Tesoran
 					["sourceQuest"] = 27264,	-- Lieutenant Paval Reethe (2/2) [A]
-					["coord"] = { 67.9, 48.1, DUSTWALLOW_MARSH },
+					["coord"] = { 68.1, 48.1, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -726,7 +772,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(27218, {	-- Dastardly Denizens of the Deep
-					["qg"] = 23892,	-- Babs Fizzletorque
+					["providers"] = {
+						{ "n", 23892 },	-- Babs Fizzletorque
+						{ "i", 33127 },	-- Dastardly Denizens of the Deep
+					},
 					["sourceQuest"] = 27217,	-- Thresher Oil
 					["coord"] = { 72.1, 47.1, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
@@ -776,14 +825,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 23797 },	-- Moxie Steelgrille
 						{ "i", 33163 },	-- Zeppelin Cargo
 					},
-					-- #if AFTER CATA
 					["sourceQuests"] = {
+						-- #if AFTER CATA
 						27347,	-- Corrosion Prevention
 						27348,	-- Secure the Cargo!
+						-- #else
+						11207,	-- Secure the Cargo!
+						-- #endif
 					},
-					-- #else
-					["sourceQuest"] = 11207,	-- Secure the Cargo!
-					-- #endif
 					["coord"] = { 53.6, 56.9, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_2_3_0 },
 					["lvl"] = lvlsquish(35, 35, 15),
@@ -795,8 +844,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/12 Direhorn Grimtotems killed
 							["providers"] = {
-								{ "n", 23594},	-- Grimtotem Destroyer
-								{ "n", 23595},	-- Grimtotem Earthbinder
+								{ "n", 23594 },	-- Grimtotem Destroyer
+								{ "n", 23595 },	-- Grimtotem Earthbinder
 							},
 						}),
 						i(33240, {	-- Grimtotem Earthbinder's Tunic
@@ -842,7 +891,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(27212, {	-- Discrediting the Deserters
 					["qg"] = 23566,	-- Calia Hastings
 					["sourceQuest"] = 27211,	-- Propaganda War
-					["coord"] = { 68.3, 51.1, DUSTWALLOW_MARSH },
+					["coord"] = { 68.4, 51.0, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -884,11 +933,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1222,	-- Stinky's Escape
 					},
 					["description"] = "Don't forget to loot all the food and drinks off the tables.",
-					-- #if AFTER WRATH
-					["coord"] = { 51.8, 93.7, STORMWIND_CITY },
-					-- #else
-					["coord"] = { 41.4, 89.2, STORMWIND_CITY },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 51.8, 93.7, STORMWIND_CITY },
+						-- #else
+						{ 41.4, 89.2, STORMWIND_CITY },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(30, 30, 15),
 					["groups"] = {
@@ -925,7 +976,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 34. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 38 (TODO: Test max level between 36 and 44)
+					-- Cataclysm: Maximum is level 38. (TODO: Test max level between 36 and 44)
 					["lvl"] = { 34, 38 },
 					-- #endif
 				})),
@@ -1076,7 +1127,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(27249, {	-- Inspecting the Ruins [A]
 					["qg"] = 4944,	-- Captain Garran Vimes
 					["sourceQuest"] = 27251,	-- The Call Him Smiling Jim
-					["coord"] = { 68.1, 48.5, DUSTWALLOW_MARSH },
+					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1104,7 +1155,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(27219, {	-- Is it Real?
 					["qg"] = 23896,	-- "Dirty" Michael Crowe
 					["sourceQuest"] = 27218,	-- Dastardly Denizens of the Deep
-					["coord"] = { 69.3, 51.9, DUSTWALLOW_MARSH },
+					["coord"] = { 69.2, 51.9, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1369,7 +1420,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(27264, {	-- Lieutenant Paval Reethe (2/2) [A]
 					["qg"] = 4944,	-- Captain Garran Vimes
 					["sourceQuest"] = 27263,	-- Lieutenant Paval Reethe (1/2) [A]
-					["coord"] = { 68.1, 48.5, DUSTWALLOW_MARSH },
+					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1396,11 +1447,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 29.8, 48.2, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(5950) },	-- Reethe's Badge (QI!)
 				}),
 				q(1269, {	-- Lieutenant Paval Reethe [H]
 					["providers"] = {
 						{ "o", 21042 },	-- Theramore Guard Badge
-						{ "i", 5950 },	-- Reethe's Badge
+						{ "i", 5950 },	-- Reethe's Badge (QI!) not prov
 					},
 					["coord"] = { 29.8, 48.2, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1506,7 +1558,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				q(27248, {	-- Mission to Mudsprocket
 					["qg"] = 23951,	-- Lieutenant Aden
-					["coord"] = { 65.0, 47.0, DUSTWALLOW_MARSH },
+					["coord"] = { 65.1, 47.1, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1562,11 +1614,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1260, {	-- Morgan Stern
 					["qg"] = 1141,	-- Angus Stern
-					-- #if AFTER WRATH
-					["coord"] = { 51.8, 93.7, STORMWIND_CITY },
-					-- #else
-					["coord"] = { 41.4, 89.2, STORMWIND_CITY },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 51.8, 93.7, STORMWIND_CITY },
+						-- #else
+						{ 41.4, 89.2, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1575,11 +1629,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1204, {	-- Mudrock Soup and Bugs
 					["qg"] = 4794,	-- Morgan Stern
 					["sourceQuest"] = 1260,	-- Morgan Stern
-					-- #if AFTER CATA
-					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
-					-- #else
-					["coord"] = { 66.4, 45.4, DUSTWALLOW_MARSH },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 68.3, 48.7, DUSTWALLOW_MARSH },
+						-- #else
+						{ 66.4, 45.4, DUSTWALLOW_MARSH },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(33, 33, 15),
 					["groups"] = {
@@ -1767,7 +1823,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(27291, {	-- Peace at Last
 					["qg"] = 4944,	-- Captain Garran Vimes
 					["sourceQuest"] = 27430,	-- Justice for the Hyals
-					["coord"] = { 68.2, 48.4, DUSTWALLOW_MARSH },
+					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1868,7 +1924,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(27211, {	-- Propaganda War
 					["qg"] = 23566,	-- Calia Hastings
 					["sourceQuest"] = 27210,	-- Traitors Among Us
-					["coord"] = { 68.3, 51.1, DUSTWALLOW_MARSH },
+					["coord"] = { 68.4, 51.0, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1922,6 +1978,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 46.5, 22.9, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = { i(33069) },	-- Sturdy Rope (QI!)
 				}),
 				q(11146, {	-- Raptor Captor
 					["qg"] = 23723,	-- Sergeant Lukas
@@ -1945,6 +2002,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.9, 57.1, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = { i(33072) },	-- Tabetha's Torch (QI!)
 				}),
 				q(11150, {	-- Raze Direhorn Post! [A]
 					["qg"] = 6546,	-- Tabetha
@@ -1977,6 +2035,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(33072) },	-- Tabetha's Torch (QI!)
 				}),
 				q(11205, {	-- Raze Direhorn Post! [H]
 					["qg"] = 6546,	-- Tabetha
@@ -2088,11 +2147,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(11223, {	-- Return to Jaina
 					["qg"] = 1748,	-- Highlord Bolvar Fordragon
 					["sourceQuest"] = 11222,	-- Warn Bolvar! / Proof of Treachery [WRATH+]
-					-- #if AFTER WRATH
-					["coord"] = { 38.6, 44.8, STORMWIND_CITY },
-					-- #else
-					["coord"] = { 78.2, 18.1, STORMWIND_CITY },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 38.6, 44.8, STORMWIND_CITY },
+						-- #else
+						{ 78.2, 18.1, STORMWIND_CITY },
+						-- #endif
+					},
 					["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 33,
@@ -2472,7 +2533,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(27284, {	-- The Black Shield (2/3) [A]
 					["qg"] = 4944,	-- Captain Garran Vimes
 					["sourceQuest"] = 27252,	-- The Black Shield (1/3) [A]
-					["coord"] = { 68.1, 48.5, DUSTWALLOW_MARSH },
+					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2486,7 +2547,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1253, {	-- The Black Shield (1/3) [A]
 					["providers"] = {
 						{ "o", 20992 },	-- Black Shield
-						{ "i", 5919 },	-- Blackened Iron Shield
+						{ "i", 5919 },	-- Blackened Iron Shield (QI!) not prov
 					},
 					["coord"] = { 29.6, 48.5, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2496,7 +2557,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1319, {	-- The Black Shield (2/3) [A]
 					["providers"] = {
 						{ "n", 4944 },	-- Captain Garran Vimes
-						{ "i", 5919 },	-- Blackened Iron Shield
+						{ "i", 5919 },	-- Blackened Iron Shield (QI!) not prov
 					},
 					["sourceQuest"] = 1253,	-- The Black Shield (1/3) [A]
 					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
@@ -2560,7 +2621,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1251, {	-- The Black Shield (1/5) [H]
 					["providers"] = {
 						{ "o", 20992 },	-- Black Shield
-						{ "i", 5919 },	-- Blackened Iron Shield
+						{ "i", 5919 },	-- Blackened Iron Shield (QI!) not prov
 					},
 					["coord"] = { 29.6, 48.5, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2570,7 +2631,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1321, {	-- The Black Shield (2/5) [H]
 					["providers"] = {
 						{ "n", 4926 },	-- Krog
-						{ "i", 5919 },	-- Blackened Iron Shield
+						{ "i", 5919 },	-- Blackened Iron Shield (QI!) not prov
 					},
 					["sourceQuest"] = 1251,	-- The Black Shield (1/5) [H]
 					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
@@ -2613,7 +2674,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1276, {	-- The Black Shield (5/5) [H]
 					["providers"] = {
 						{ "n", 4926 },	-- Krog
-						{ "i", 5919 },	-- Blackened Iron Shield
+						{ "i", 5919 },	-- Blackened Iron Shield (QI!) not prov
 					},
 					["sourceQuest"] = 1323,	-- The Black Shield (4/5) [H]
 					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
@@ -2713,7 +2774,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(27287, {	-- The Deserters (1/2)
 					["qg"] = 4944,	-- Captain Garran Vimes
 					["sourceQuest"] = 27286,	-- Daelin's Men
-					["coord"] = { 68.1, 48.5, DUSTWALLOW_MARSH },
+					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2743,7 +2804,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(27213, {	-- The End of the Deserters
 					["qg"] = 23566,	-- Calia Hastings
 					["sourceQuest"] = 27212,	-- Discrediting the Deserters
-					["coord"] = { 68.3, 51.1, DUSTWALLOW_MARSH },
+					["coord"] = { 68.4, 51.0, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2832,6 +2893,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(33051),	-- Grimtotem Battle Plan (QI!)
+						i(33050),	-- Grimtotem Note (QI!)
+					},
 				}),
 				q(11201, {	-- The Grimtotem Plot
 					["qg"] = 4926,	-- Krog
@@ -2868,7 +2933,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(27215, {	-- The Hermit of Swamplight Manor
 					["qg"] = 23835,	-- Sergeant Amelyn
 					["sourceQuest"] = 27213,	-- The End of the Deserters
-					["coord"] = { 68.3, 51.9, DUSTWALLOW_MARSH },
+					["coord"] = { 68.2, 51.7, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -2918,11 +2983,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.4, 25.9, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(5917) },	-- Spy's Report (QI!)
 				}),
 				q(1238, {	-- The Lost Report
 					["providers"] = {
 						{ "o", 20985 },	-- Loose Dirt
-						{ "i", 5917 },	-- Spy's Report
+						{ "i", 5917 },	-- Spy's Report (QI!) not prov
 					},
 					["coord"] = { 55.4, 26, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2987,11 +3053,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.4, 25.9, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = { i(5917) },	-- Spy's Report (QI!)
 				}),
 				q(1219, {	-- The Orc Report
 					["providers"] = {
 						{ "o", 20985 },	-- Loose Dirt
-						{ "i", 5917 },	-- Spy's Report
+						{ "i", 5917 },	-- Spy's Report (QI!) not prov
 					},
 					["coord"] = { 55.4, 26, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3139,7 +3206,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(27251, {	-- They Call Him Smiling Jim
 					["qg"] = 4921,	-- Guard Byron
-					["coord"] = { 66.0, 46.0, DUSTWALLOW_MARSH },
+					["coord"] = { 66.2, 46.1, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -3157,7 +3224,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(27216, {	-- This Old Lighthouse
 					["qg"] = 23835,	-- Sergeant Amelyn
-					["coord"] = { 68.3, 51.9, DUSTWALLOW_MARSH },
+					["coord"] = { 68.2, 51.7, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -3201,7 +3268,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28552,	-- Hero's Call: Dustwallow Marsh
 						26702,	-- Flight to Theramore
 					},
-					["coord"] = { 68.3, 51.1, DUSTWALLOW_MARSH },
+					["coord"] = { 68.4, 51.0, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3227,13 +3294,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 6625,	-- Alliance Trauma
 					["coord"] = { 67.7, 48.9, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER BFA
-					["description"] = "Needs a minimum of 225 skill in Tailoring.",
-					["requireSkill"] = TAILORING,
-					-- #else
-					["description"] = "Needs a minimum of 225 skill in First Aid.",
-					["requireSkill"] = FIRST_AID,
-					-- #endif
+					["description"] =
+						-- #if AFTER BFA
+						"Needs a minimum of 225 skill in Tailoring.",
+						-- #else
+						"Needs a minimum of 225 skill in First Aid.",
+						-- #endif
+					["requireSkill"] =
+						-- #if AFTER BFA
+						TAILORING,
+						-- #else
+						FIRST_AID,
+						-- #endif
 					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
 						objective(1, {	-- 0/15 Patients Saved
@@ -3304,6 +3376,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(131662, {	-- Crested Chain Epaulets
 							["timeline"] = { ADDED_7_0_3 },
 						}),
+						--
+						i(33070),	-- Raptor Bait (QI!)
 					},
 				}),
 				q(11147, {	-- Unleash the Raptors
@@ -3424,53 +3498,53 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(4339, {	-- Brimgore
-					-- #if AFTER CATA
-					["coord"] = { 50.2, 75.8, DUSTWALLOW_MARSH },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 50.2, 75.8, DUSTWALLOW_MARSH },
+						-- #else
 						{ 41.2, 75.2, DUSTWALLOW_MARSH },
 						{ 43.6, 77.4, DUSTWALLOW_MARSH },
 						{ 45.2, 81.8, DUSTWALLOW_MARSH },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(14230, {	-- Burgle Eye
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 57.8, 16.2, DUSTWALLOW_MARSH },
 						{ 59.0, 8.4, DUSTWALLOW_MARSH },
 						{ 62.8, 7.8, DUSTWALLOW_MARSH },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 63.0, 7.2, DUSTWALLOW_MARSH },
 						{ 59.6, 10.6, DUSTWALLOW_MARSH },
 						{ 57.6, 17.6, DUSTWALLOW_MARSH },
 						{ 62.8, 18.4, DUSTWALLOW_MARSH },
 						{ 64.4, 28.6, DUSTWALLOW_MARSH },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(4380, {	-- Darkmist Widow
-					-- #if AFTER CATA
-					["coord"] = { 33.6, 22.8, DUSTWALLOW_MARSH },
-					-- #else
-					["coord"] = { 31.0, 20.6, DUSTWALLOW_MARSH },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 33.6, 22.8, DUSTWALLOW_MARSH },
+						-- #else
+						{ 31.0, 20.6, DUSTWALLOW_MARSH },
+						-- #endif
+					},
 				}),
 				n(14232, {	-- Dart
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 48.2, 14.2, DUSTWALLOW_MARSH },
 						{ 47.4, 16.2, DUSTWALLOW_MARSH },
 						{ 46.8, 17.6, DUSTWALLOW_MARSH },
 						{ 48.0, 19.6, DUSTWALLOW_MARSH },
 						{ 49.0, 18.4, DUSTWALLOW_MARSH },
 						{ 49.0, 17.2, DUSTWALLOW_MARSH },
+						-- #else
+						{ 47.6, 18.6, DUSTWALLOW_MARSH },
+						-- #endif
 					},
-					-- #else
-					["coord"] = { 47.6, 18.6, DUSTWALLOW_MARSH },
-					-- #endif
 				}),
 				o(202080, {	-- Dart's Nest
 					["coords"] = {
@@ -3487,39 +3561,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(14231, {	-- Drogoth the Roamer
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 39.8, 19.8, DUSTWALLOW_MARSH },
 						{ 38.8, 19.8, DUSTWALLOW_MARSH },
 						{ 39.6, 19.4, DUSTWALLOW_MARSH },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 36.2, 13.6, DUSTWALLOW_MARSH },
 						{ 39.4, 14.4, DUSTWALLOW_MARSH },
 						{ 39.6, 21.2, DUSTWALLOW_MARSH },
 						{ 42.2, 18.8, DUSTWALLOW_MARSH },
 						{ 42.8, 22.0, DUSTWALLOW_MARSH },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(14234, {	-- Hayoc
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 48.0, 62.6, DUSTWALLOW_MARSH },
 						{ 47.6, 61.6, DUSTWALLOW_MARSH },
 						{ 48.8, 60.0, DUSTWALLOW_MARSH },
 						{ 49.0, 61.6, DUSTWALLOW_MARSH },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 54.8, 60.0, DUSTWALLOW_MARSH },
 						{ 52.0, 63.6, DUSTWALLOW_MARSH },
 						{ 52.0, 65.4, DUSTWALLOW_MARSH },
 						{ 53.6, 66.2, DUSTWALLOW_MARSH },
 						{ 55.6, 67.8, DUSTWALLOW_MARSH },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(50342, {	-- Heronis
 					["coords"] = {
@@ -3533,53 +3603,51 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(14236, {	-- Lord Angler
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 56.6, 62.2, DUSTWALLOW_MARSH },
 						{ 56.6, 63.6, DUSTWALLOW_MARSH },
 						{ 55.4, 63.6, DUSTWALLOW_MARSH },
+						-- #else
+						{ 55.8, 64.6, DUSTWALLOW_MARSH },
+						-- #endif
 					},
-					-- #else
-					["coord"] = { 55.8, 64.6, DUSTWALLOW_MARSH },
-					-- #endif
 				}),
 				n(50875, {	-- Nychus
 					["coord"] = { 34.3, 70.6, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(14237, {	-- Oozeworm
-					-- #if AFTER CATA
-					["coord"] = { 37.0, 62.6, DUSTWALLOW_MARSH },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 37.0, 62.6, DUSTWALLOW_MARSH },
+						-- #else
 						{ 39.8, 62.6, DUSTWALLOW_MARSH },
 						{ 36.6, 62.6, DUSTWALLOW_MARSH },
 						{ 36.0, 68.4, DUSTWALLOW_MARSH },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(50764, {	-- Paraliss
 					["coord"] = { 38.6, 74.6, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(14233, {	-- Ripscale
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 37.8, 50.4, DUSTWALLOW_MARSH },
 						{ 43.8, 50.0, DUSTWALLOW_MARSH },
 						{ 42.0, 54.8, DUSTWALLOW_MARSH },
 						{ 47.6, 55.8, DUSTWALLOW_MARSH },
 						{ 49.2, 57.2, DUSTWALLOW_MARSH },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 37.8, 50.4, DUSTWALLOW_MARSH },
 						{ 43.8, 50.2, DUSTWALLOW_MARSH },
 						{ 42.6, 55.4, DUSTWALLOW_MARSH },
 						{ 47.6, 54.8, DUSTWALLOW_MARSH },
 						{ 50.0, 57.6, DUSTWALLOW_MARSH },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(51061, {	-- Roth-Salam
 					["coord"] = { 50.2, 84.6, DUSTWALLOW_MARSH },
@@ -3605,21 +3673,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(14235, {	-- The Rot
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 51.6, 59.4, DUSTWALLOW_MARSH },
 						{ 51.6, 60.0, DUSTWALLOW_MARSH },
 						{ 51.6, 61.0, DUSTWALLOW_MARSH },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 51.2, 50.8, DUSTWALLOW_MARSH },
 						{ 52.6, 51.6, DUSTWALLOW_MARSH },
 						{ 53.6, 54.2, DUSTWALLOW_MARSH },
 						{ 52.2, 57.4, DUSTWALLOW_MARSH },
 						{ 52.0, 60.4, DUSTWALLOW_MARSH },
+						-- #endif
 					},
-					-- #endif
 				}),
 			}),
 			n(VENDORS, {
@@ -3664,7 +3730,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 35.2, 30.8, DUSTWALLOW_MARSH, },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(4355, {	-- Pattern: Icy Cloak
+						i(4355, {	-- Pattern: Icy Cloak (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -3706,11 +3772,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 66.4, 51.4, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(21941, {	-- Design: Black Pearl Panther
+						i(21941, {	-- Design: Black Pearl Panther (RECIPE!)
 							["timeline"] = { ADDED_2_0_1 },
 							["isLimited"] = true,
 						}),
-						i(21943, {	-- Design: Truesilver Crab
+						i(21943, {	-- Design: Truesilver Crab (RECIPE!)
 							["timeline"] = { ADDED_2_0_1 },
 							["isLimited"] = true,
 						}),
@@ -3739,7 +3805,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 					},
 				}),
 				-- #if BEFORE CATA
@@ -3775,7 +3841,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(4890, {	-- Piter Verance <Weaponsmith & Armorer>
-					["coord"] = { 67.4, 47.8, DUSTWALLOW_MARSH },
+					["coord"] = { 67.4, 47.9, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4817, {	-- Blessed Claymore
@@ -3846,28 +3912,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(4639, {	-- Enchanted Sea Kelp
 					["cr"] = 4363,	-- Mirefin Oracle
 				}),
-				i(5775, {	-- Pattern: Black Silk Pack
+				i(5775, {	-- Pattern: Black Silk Pack (RECIPE!)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cr"] = 4834,	-- Theramore Infiltrator
 				}),
 				i(12718, {	-- Plans: Runic Breastplate (RECIPE!)
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
-					-- #if BEFORE 4.0.3
+					-- #if AFTER 10.1.7
+					["description"] = "This recipe has a very low droprate & is recommend to farm from Spiny Rock Crabs, but can also drop from any other creature in the zone. |cFFE50D12WARNING:|r This recipe binds to your character when looted.",
+					-- #endif
 					["crs"] = {
+						-- #if AFTER 10.1.7
+						44390,	-- Spiny Rock Crab
+						-- #else
 						4368,	-- Strashaz Myrmidon
 						16072,	-- Tidelord Rrurgaz
+						-- #endif
 					},
-					-- #elseif AFTER 10.1.7
-					["description"] = "This recipe has a very low droprate & is recommend to farm from Spiny Rock Crabs, but can also drop from any other creature in the zone. Warning: This recipe binds to your character when looted.",
+					-- #if AFTER 10.1.7
 					["coords"] = {
 						{ 70.2, 50.0, DUSTWALLOW_MARSH },
 						{ 69.0, 47.0, DUSTWALLOW_MARSH },
 						{ 67.6, 44.4, DUSTWALLOW_MARSH },
 						{ 66.4, 43.4, DUSTWALLOW_MARSH },
 						{ 65.4, 44.4, DUSTWALLOW_MARSH },
-					},
-					["crs"] = {
-						44390,	-- Spiny Rock Crab
 					},
 					-- #endif
 				}),

@@ -1012,10 +1012,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 			q(60541),	--
 			q(60511),	-- Icecrown story - Advancing the effort (phase 2?). triggered after completing "Only Shadows Remain"
 			q(62808),	-- triggered when logging into a previously-120 character
-			q(62849),	-- \
-			q(62850),	--  \ triggered when logging into my 50 main during week 2 of the prepatch
-			q(62851),	--  / nothing else done, quests were not there during week 1
-			q(62852),	-- /
 		}),
 		n(WORLD_QUESTS, {
 			q(62480),	-- triggered along with the Nathanos Blightcaller world quest (for killing Nathanos)

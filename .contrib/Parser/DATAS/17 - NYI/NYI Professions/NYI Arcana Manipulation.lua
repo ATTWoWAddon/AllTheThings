@@ -7,7 +7,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		filter(RECIPES, {
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					r(364624),	-- Arcane-Infused Trinket
 					r(364632),	-- Enchanted Staff
 				})),

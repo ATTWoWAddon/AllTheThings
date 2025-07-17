@@ -11,10 +11,13 @@ WORLDSOUL_MEMORY = createHeader({
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(WORLDSOUL_MEMORY, {
 		["providers"] = {
-			-- #if BEFORE 11.1.0.59490
-			{ "i", 220520 },	-- Radiant Echo
-			-- #else
+			-- TODO set preprocessor to season start timeline specifically
+			-- #if AFTER 11.2.0
+			{ "i", 246771 },	-- Radiant Echo
+			-- #elseif AFTER 11.1.0.59490
 			{ "i", 235897 },	-- Radiant Echo
+			-- #else
+			{ "i", 220520 },	-- Radiant Echo
 			-- #endif
 			{ "n", 222165 },	-- Worldsoul Memory
 		},
@@ -41,11 +44,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			n(QUESTS, {
 				q(84542, {	-- A Radiant Echo
 					["provider"] = { "i", 228958 },	-- Radiant Echo
-					["timeline"] = { REMOVED_11_1_0 },
+					["timeline"] = { REMOVED_11_1_0_SEASONSTART },
 				}),
 				q(87284, {	-- A Radiant Echo
 					["provider"] = { "i", 235896 },	-- Radiant Echo
-					["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
+					["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
+				}),
+				q(91539, {	-- A Radiant Echo
+					["provider"] = { "i", 246772 },	-- Radiant Echo
+					["timeline"] = { ADDED_11_2_0_SEASONSTART },
 				}),
 				q(82285, {	-- Worldsoul Memory: A Wounded Soul
 					["coord"] = { 65.2, 56.1, AZJ_KAHET },

@@ -370,7 +370,7 @@ root(ROOTS.Zones, {
 				q(39983, {	-- Huln's War - The Arrival
 					["sourceQuests"] = { 40520 },	-- To See the Past
 					["provider"] = { "n", 98825 },	-- Spiritwalker Ebonhorn
-					["coord"] = { 73.9, 74.5, 652 },	-- Thunder Totem
+					["coord"] = { 74.8, 75.0, 652 },	-- Thunder Totem
 					["maps"] = { 697 },	-- Azshara (scenario)
 				}),
 				q(39992, {	-- Huln's War - The Nathrezim
@@ -636,7 +636,7 @@ root(ROOTS.Zones, {
 				}),
 				q(38916, {	-- Secrets of Highmountain
 					["sourceQuests"] = { 39992 },	-- Huln's War - The Nathrezim
-					["coord"] = { 73.4, 74.3, 652 },	-- Thunder Totem
+					["coord"] = { 74.8, 75.0, 652 },	-- Thunder Totem
 					["provider"] = { "n", 98825 },	-- Spiritwalker Ebonhorn
 				}),
 				q(39764, {	-- Shiny, But Deadly
@@ -807,7 +807,7 @@ root(ROOTS.Zones, {
 				}),
 				q(40167, {	-- The Story of Huln
 					["sourceQuests"] = { 40515 },	-- A Walk With the Spirits
-					["coord"] = { 53.9, 63.9, 652 },	-- Thunder Totem
+					["coord"] = { 74.8, 75.0, 652 },	-- Thunder Totem
 					["provider"] = { "n", 98825 },	-- Spiritwalker Ebonhorn
 				}),
 				q(45726, {	-- The Tainted Marsh
@@ -821,6 +821,9 @@ root(ROOTS.Zones, {
 					},
 					["coord"] = { 31.3, 25.1, HIGHMOUNTAIN },
 					["provider"] = { "n", 117249 },	-- Navarrogg
+					["g"] = {
+						i(143863),	-- Fel Exfoliator (QI!)
+					},
 				}),
 				q(39321, {	-- The Three
 					["sourceQuests"] = { 38910 },	-- Rocs vs Eagles
@@ -920,7 +923,7 @@ root(ROOTS.Zones, {
 				}),
 				q(40520, {	-- To See the Past
 					["sourceQuests"] = { 40167 },	-- The Story of Huln
-					["coord"] = { 53.9, 63.9, 652 },	-- Thunder Totem
+					["coord"] = { 74.8, 75.0, 652 },	-- Thunder Totem
 					["provider"] = { "n", 98825 },	-- Spiritwalker Ebonhorn
 				}),
 				q(39316, {	-- Trapped Tauren
@@ -983,7 +986,11 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 95799 },	-- Damrul the Stronk
 				}),
 				n(BONUS_OBJECTIVES, sharedData({
+					-- #if BEFORE DF
 					["lockCriteria"] = { 1, "lvl", 45 },
+					-- #else
+					["lockCriteria"] = { 1, "lvl", 60 },
+					-- #endif
 					["sharedDescription"] = "This can be completed in party-sync with a character who is in Chromie Time for Legion.",
 				},{
 					-- TODO: Check SQ, also probably can't do after a certain level

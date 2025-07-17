@@ -57,19 +57,13 @@ root(ROOTS.ExpansionFeatures,
 							ach(9145),	-- Treasure Mission Specialist
 						}),
 						mi(463, {	-- Bird Watching
-							i(118731, {	-- Spires of Arak Treasure Map
-								["questID"] = 36467,
-							}),
+							i(118731),	-- Spires of Arak Treasure Map (CI!)
 						}),
 						mi(460, {	-- Fickle Loyalty
-							i(118727, {	-- Frostfire Treasure Map
-								["questID"] = 34557,
-							}),
+							i(118727),	-- Frostfire Treasure Map (CI!)
 						}),
 						mi(462, {	-- Fields of Sorrow
-							i(118730, {	-- Talador Treasure Map
-								["questID"] = 36466,
-							}),
+							i(118730),	-- Talador Treasure Map (CI!)
 						}),
 						mi(2,   {	-- Gronnlings Abound
 							i(112737, {	-- Contract: Ka'la of the Frostwolves
@@ -79,22 +73,16 @@ root(ROOTS.ExpansionFeatures,
 							}),
 						}),
 						mi(464, {	-- Highplains Robbery
-							i(118732, {	-- Nagrand Treasure Map
-								["questID"] = 36468,
-							}),
+							i(118732),	-- Nagrand Treasure Map (CI!)
 						}),
 						mi(461, {	-- It's a Jungle Out There
-							i(118729, {	-- Gorgrond Treasure Map
-								["questID"] = 36465,
-							}),
+							i(118729),	-- Gorgrond Treasure Map (CI!)
 						}),
 						mi(335, {	-- The Bloodmane Scrolls
 							i(117492),	-- Relic of Rukhmar
 						}),
 						mi(465, {	-- Tomb Raider
-							i(118728, {	-- Shadowmoon Valley Treasure Map
-								["questID"] = 36464,
-							}),
+							i(118728),	-- Shadowmoon Valley Treasure Map (CI!)
 						}),
 						mi(467),	-- Mushroom Mystery
 						mi(468),	-- I See Dead Orcs

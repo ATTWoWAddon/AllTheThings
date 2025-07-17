@@ -143,8 +143,8 @@ local BubbleDownKeyWarnings = {
 applyData = function(data, t)
 	if data and t then
 		for key, value in pairs(data) do
-			if t[key] == nil then	-- don't replace existing data
-				if SharedKeyWarnings[key] then
+			if t[key] == nil and key ~= "IgnoreWarnings" then	-- don't replace existing data
+				if SharedKeyWarnings[key] and not data.IgnoreWarnings then
 					print(SharedKeyWarnings[key],"[",value,"]")
 				end
 				t[key] = clone(value)
@@ -274,9 +274,11 @@ bubbleDown = function(data, t)
 	if not t then
 		print("ERROR: bubbleDown: No Source 't'")
 	end
-	for key,val in pairs(data) do
-		if BubbleDownKeyWarnings[key] then
-			print(BubbleDownKeyWarnings[key],"[",val,"]")
+	if not data.IgnoreWarnings then
+		for key,val in pairs(data) do
+			if BubbleDownKeyWarnings[key] then
+				print(BubbleDownKeyWarnings[key],"[",val,"]")
+			end
 		end
 	end
 	if t then
@@ -574,7 +576,7 @@ lvlsquish = function(originalLvl, cataLvl, shadowlandsLvl)
 		end
 	end
 	local lvl;
-	-- #if AFTER SHADOWLANDS
+	-- #if AFTER SL
 	lvl = shadowlandsLvl;
 	-- #elseif AFTER CATA
 	lvl = cataLvl;
@@ -767,89 +769,24 @@ ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 	else
 		t = struct("achievementID", id, altID);
 	end
-	if t then
-		-- #if BEFORE WRATH
-		-- These are helper variables (capitalized for a reason)
-		local AllProvidersRequiredForAchievement = t.AllProvidersRequiredForAchievement;
-		t.AllProvidersRequiredForAchievement = nil;
-		local AllSourceQuestsRequiredForAchievement = t.AllSourceQuestsRequiredForAchievement;
-		t.AllSourceQuestsRequiredForAchievement = nil;
-		if not t.OnUpdate then
-			if t.provider or t.providers then
-				-- A lot of achievements are proc'd by having an item, quests with providers on them pretty much guarantee it works.
-				t.OnUpdate = AllProvidersRequiredForAchievement and [[_.CommonAchievementHandlers.ALL_ITEM_PROVIDERS]] or [[_.CommonAchievementHandlers.ANY_ITEM_PROVIDER]];
-			elseif t.sourceQuest or t.sourceQuests then
-				-- For Classic, we can detect if you've completed an achievement if there's a quest that involves killing the mob in question.
-				t.OnUpdate = AllSourceQuestsRequiredForAchievement and [[_.CommonAchievementHandlers.ALL_SOURCE_QUESTS]] or [[_.CommonAchievementHandlers.ANY_SOURCE_QUEST]];
-			end
-		end
-		-- #else
-			-- Apply a default timeline of 3.0.2 to Achievements
-			if not t.timeline then
-				t._defaulttimeline = { ADDED_3_0_2 }
-			end
-		-- #endif
+	-- #if AFTER WRATH
+	-- Apply a default timeline of 3.0.2 to Achievements
+	if not t.timeline then
+		t._defaulttimeline = { ADDED_3_0_2 }
 	end
+	-- #endif
 	return t;
 end
 achWithRep = function(id, factionID, t)					-- Create an ACHIEVEMENT Object with getting Exalted with a Faction as a requirement.
 	t = ach(id, t);
-	if t then
-		-- #if ANYCLASSIC
-		-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
-		t.OnInit = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnInit(t, ]] .. factionID ..[[); end]];
-		if not t.OnUpdate then
-			-- #if AFTER 3.0.1
-			if id == 5788 then	-- Agent of Shen'dralar still needs this until after 4.1.0
-			-- #endif
-				t.OnUpdate = [[_.CommonAchievementHandlers.EXALTED_REP_OnUpdate]];
-			-- #if AFTER 3.0.1
-			end
-			-- #endif
-		end
-		t.OnClick = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]];
-		t.OnTooltip = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]];
-		-- #endif
-	end
+	t.minReputation = { factionID, EXALTED }
 	return t;
 end
 achWithReps = function(id, factions, t)					-- Create an ACHIEVEMENT Object with getting Exalted with seveneral Factions as a requirement.
-	t = ach(id, t);
-	if t then
-		-- #if ANYCLASSIC
-		-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
-		local init = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnInit(t, ]] .. factions[1];
-		for i=2,#factions,1 do init = init .. "," .. factions[i]; end
-		t.OnInit = init ..[[); end]];
-		-- #if BEFORE 3.0.1
-		if not t.OnUpdate then
-			t.OnUpdate = [[_.CommonAchievementHandlers.EXALTED_REPS_OnUpdate]];
-		end
-		-- #endif
-		t.OnClick = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]];
-		t.OnTooltip = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]];
-		-- #endif
-	end
-	return t;
+	return ach(id, t);
 end
 achWithAnyReps = function(id, factions, t)				-- Create an ACHIEVEMENT Object with getting Exalted with seveneral Factions as a requirement.
-	t = ach(id, t);
-	if t then
-		-- #if ANYCLASSIC
-		-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
-		local init = [[function(t) return _.CommonAchievementHandlers.EXALTED_REPS_OnInit(t, ]] .. factions[1];
-		for i=2,#factions,1 do init = init .. "," .. factions[i]; end
-		t.OnInit = init ..[[); end]];
-		-- #if BEFORE 3.0.1
-		if not t.OnUpdate then
-			t.OnUpdate = [[_.CommonAchievementHandlers.EXALTED_REPS_ANY_OnUpdate]];
-		end
-		-- #endif
-		t.OnClick = [[_.CommonAchievementHandlers.EXALTED_REPS_OnClick]];
-		t.OnTooltip = [[_.CommonAchievementHandlers.EXALTED_REPS_OnTooltip]];
-		-- #endif
-	end
-	return t;
+	return ach(id, t);
 end
 achraw = function(id, altID, t)							-- Create an ACHIEVEMENT Object whose Criteria will not be adjusted by AchievementDB info
 	t = ach(id, altID, t);
@@ -862,16 +799,6 @@ achraw = function(id, altID, t)							-- Create an ACHIEVEMENT Object whose Crit
 		-- but for now prevent the Criteria from disappearing into the Unsorted window
 		bubbleDown({ _noautomation = true }, t);
 	end
-	return t;
-end
-explorationAch = function(id, t)						-- Create an EXPLORATION ACHIEVEMENT Object
-	t = struct("achievementID", id, t or {});
-	-- #if ANYCLASSIC
-	t.OnClick = [[_.CommonAchievementHandlers.EXPLORATION_OnClick]];
-	t.OnUpdate = [[_.CommonAchievementHandlers.EXPLORATION_OnUpdate]];
-	-- #else
-	t.sym = {{ "achievement_criteria" }};
-	-- #endif
 	return t;
 end
 
@@ -903,8 +830,8 @@ azewrongItem = function(id, t)							-- Create an Item which is marked as having
 	t.customCollect = { "!HOA" };
 	return t;
 end
-ws = function(id, t)
-	return struct("warbandSceneID", id, t);
+campsite = function(id, t)
+	return struct("campsiteID", id, t);
 end
 battlepet = function(id, t)								-- Create a BATTLE PET Object (Battle Pet == Species == Pet)
 	return struct("speciesID", id, t);
@@ -924,23 +851,23 @@ category = function(id, t)								-- Create a CATEGORY Object.
 	return struct("categoryID", id, t);
 end
 cat = category
-cl = function(id, specc, t)								-- Create a CHARACTER CLASS Object
-	-- specc is optional
+cl = function(id, spec, t)								-- Create a CHARACTER CLASS Object
+	-- spec is optional
 	if not t then
-		t = specc;
+		t = spec;
 	else
-		if specc == FROST or specc == RESTORATION or specc == HOLY or specc == PROTECTION then
+		if spec == FROST or spec == RESTORATION or spec == HOLY or spec == PROTECTION then
 			if id == MAGE then
-				specc = 64;
+				spec = 64;
 			elseif id == SHAMAN then
-				specc = 264;
+				spec = 264;
 			elseif id == PRIEST then
-				specc = 257
+				spec = 257
 			elseif id == WARRIOR then
-				specc = 73;
+				spec = 73;
 			end
 		end
-		id = id + (specc / 1000)
+		id = id + (spec / 1000)
 		t = togroups(t)
 	end;
 	return struct("classID", id, t);
@@ -994,7 +921,7 @@ d = function(id, t)										-- Create a DIFFICULTY Object
 		local db = DifficultyDB[difficultyID];
 		if db then
 			if db.simplify then
-				-- must preserve the multi-difficultyID for parser, since changing the difficultyID secretly
+				-- must preserve the multi-difficultyID for parser/instance helper, since changing the difficultyID secretly
 				-- inside a shortcut function is anything but 'simple'
 				-- TODO: clean this up and make it Parser logic instead to change the id values
 				t._multiDifficultyID = difficultyID
@@ -1226,6 +1153,20 @@ iexact = function(itemID, modID, bonusID, t)			-- Create an exact ITEM Object (s
 	end
 	return i;
 end
+container = function(id, t)								-- This function helps build an item container for a "sack" or "bag" or some other type of reward structure.
+	local bag = header(HEADERS.Item, id, t);
+	local providers = bag.providers;
+	if not providers then
+		providers = {};
+		bag.providers = providers;
+	end
+	providers[#providers + 1] = { "i", id };
+	if bag.provider then
+		providers[#providers + 1] = bag.provider;
+		bag.provider = nil;
+	end
+	return bag;
+end
 
 ---@param id number
 ---@param t? table
@@ -1376,15 +1317,9 @@ o_repeated = function(t, o)								-- Create a group which represents the shared
 	end
 	print("Could not find a group with an objectID value");
 end
--- #if ANYCLASSIC
-petbattle = function(t)									-- Pet Battle (ignored in Classic)
-	return t;
-end
--- #else
 petbattle = function(t)									-- Pet Battle (bubbleDown pb filter)
 	return bubbleDown({ ["pb"] = true }, t);
 end
--- #endif
 prof = function(skillID, t)								-- Create a PROFESSION Object
 	return struct("professionID", skillID, t);
 end
@@ -1444,7 +1379,11 @@ recipe = function(id, t)								-- Create a RECIPE Object
 end
 r = recipe;												-- Create a RECIPE Object (alternative shortcut)
 local function HQTCleanup(data)
-	if data.questID then return end
+	if data.questID then
+		-- force quests under the HQT section to be the HQT type
+		data.type = "hqt"
+		return
+	end
 	data.timeline = nil
 	data.u = nil
 end
@@ -1587,12 +1526,12 @@ battlepets = function(timeline, t)						-- Creates a BATTLE_PETS header with pet
 	end
 	return petbattle(filter(BATTLE_PETS, bubbleDownSelf({ ["timeline"] = timeline }, t)));
 end
-petbattles = function(timeline, t)						-- Creates a PET_BATTLE header with pet battle filter on it. Use this with Outdoor Zones.
+petbattles = function(timeline, t)						-- Creates a PET_BATTLES header with pet battle filter on it. Use this with Outdoor Zones.
 	if not t then
 		t = timeline;
 		timeline = { ADDED_5_0_4 };
 	end
-	return petbattle(n(PET_BATTLE, bubbleDownSelf({ ["timeline"] = timeline }, t)));
+	return petbattle(n(PET_BATTLES, bubbleDownSelf({ ["timeline"] = timeline }, t)));
 end
 
 -- SHORTCUTS for Field Modifiers (not objects, you can apply these anywhere)
@@ -1707,10 +1646,10 @@ patch = function(major, minor, build)
 	if minor >= RevShift then
 		print("Using a Minor Patch with too many digits! It will not be represented properly in-game",minor)
 	end
-	if build > 0 then
-		print("WARN: Not currently supporting Build within a Patch",build)
+	if build > 99999 then
+		print("WARN: Not currently supporting Build > 99999 within a Patch",build)
 	end
-	return major + minor / RevShift
+	return major + (minor / RevShift) + (build / 100000)
 end
 un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
 
@@ -1798,6 +1737,82 @@ TempForceMisc = function(t)
 	return t
 end
 
+-- Create a String.
+(function()
+local localizationStringsByConstant = {};
+LocalizationStrings = localizationStringsByConstant;	-- This is global, so that it can be found by Parser!
+function isTextProgrammatic(str)
+	return str:sub(1, 1) == '~';
+end
+createLocalizationString = function(data)
+	if not data then
+		print("INVALID LOCALIZATION STRING: You must pass data into the createLocalizationString function.");
+	elseif not data.constant then
+		print("INVALID LOCALIZATION STRING (missing 'constant')", data.readable);
+	elseif localizationStringsByConstant[data.constant] then
+		error("ERROR: LOCALIZATION STRING CONSTANT " .. data.constant .. " ALREADY ASSIGNED TO " .. localizationStringsByConstant[data.constant].readable .. ". Please double check that the localization definitions are unique or reuse the same localization.");
+	else
+		local textData = data.text;
+		if (not (textData and (type(textData) == "string" or (type(textData) == "table" and textData.en)))) and not data.icon then
+			print("INVALID LOCALIZATION STRING", data.readable, textData);
+		else
+			localizationStringsByConstant[data.constant] = data;
+			
+			-- Build the text using icon and color, if supplied.
+			if data.color then
+				-- Include the color first!
+				if isTextProgrammatic(data.color) then
+					for key,value in pairs(textData) do
+						if isTextProgrammatic(value) then
+							textData[key] = "~\"|c\" .. " .. data.color:sub(2) .. " .. " .. value:sub(2) .. " .. \"|r\"";
+						else
+							textData[key] = "~\"|c\" .. " .. data.color:sub(2) .. " .. \"" .. value .. "|r\"";
+						end
+					end
+				else
+					-- Simple color prefixing
+					for key,value in pairs(textData) do
+						if isTextProgrammatic(value) then
+							textData[key] = "~\"|c" .. data.color .. "\" .. " .. value:sub(2) .. " .. \"|r\"";
+						else
+							textData[key] = "|c" .. data.color .. value .. "|r";
+						end
+					end
+				end
+			end
+			if data.icon then
+				-- Prefix the string with the texture.
+				if isTextProgrammatic(data.icon) then
+					for key,value in pairs(textData) do
+						if value == "" then
+							textData[key] = "~\"|T\" .. " .. data.icon:sub(2) .. " .. \":0|t\"";
+						elseif isTextProgrammatic(value) then
+							textData[key] = "~\"|T\" .. " .. data.icon:sub(2) .. " .. \":0|t \" .. " .. value:sub(2);
+						else
+							textData[key] = "~\"|T\" .. " .. data.icon:sub(2) .. " .. \":0|t " .. value .. "\"";
+						end
+					end
+				else
+					-- Simple texture prefixing (this is very infrequent)
+					for key,value in pairs(textData) do
+						if value == "" then
+							textData[key] = "|T" .. data.icon .. ":0|t";
+						elseif isTextProgrammatic(value) then
+							textData[key] = "~\"|T" .. data.icon .. ":0|t \" .. " .. value:sub(2);
+						else
+							textData[key] = "|T" .. data.icon .. ":0|t " .. value;
+						end
+					end
+				end
+			end
+			for key,value in pairs(textData) do
+				textData[key] = textData[key]:gsub("\" .. \"", "");
+			end
+		end
+	end
+end
+end)();
+
 -- Create a Header. Returns a UNIQUE ID, starting at 0.
 (function()
 if not NextHeaderID then
@@ -1828,11 +1843,12 @@ local getTimestamp = function(t)
 	return os.time({
 		year=t.year,
 		month=t.month,
-		day=t.monthDay,
+		day=t.monthDay or t.day,
 		hour=t.hour,
 		minute=t.minute,
 	});
 end
+local SECONDS_IN_A_DAY = 86400;
 local SECONDS_IN_A_WEEK = 604800;
 createHeader = function(data)
 	if not data then
@@ -1972,7 +1988,7 @@ createHeader = function(data)
 						hour=0,
 						minute=0,
 					};
-					local startTimeStamp = getTimestamp(startTime);
+					local startTimeStamp = getTimestamp(startTime) + 30;	-- Add a 30 second offset to prevent bad imprecision from causing problems.
 
 					-- Find the first Sunday of the Month
 					for dayOffset = 1,14,1 do
@@ -2028,10 +2044,9 @@ createHeader = function(data)
 					--weekday=7,	-- generated below
 					hour=0,
 					minute=0,
-				});
+				}) + 30;	-- Add a 30 second offset to prevent bad imprecision from causing problems.
 
 				-- Calculate the difference between the first recorded event to now.
-				local currentYear, currentMonth = currentDate.year, currentDate.month;
 				local currentTimeStamp = os.time(currentDate);
 				local totalOffset, SECONDS_IN_TWO_WEEKS = 0, SECONDS_IN_A_WEEK * 2;
 				while true do
@@ -2079,12 +2094,87 @@ createHeader = function(data)
 					startTimeStamp = startTimeStamp + SECONDS_IN_TWO_WEEKS;
 					totalOffset = totalOffset + 1;
 				end
+			elseif data.eventSchedule[1] == 4 then	-- Recurring every week between specific weekdays and times
+				-- START: WEEKDAY, HOUR, MINUTE, DURATION (in minutes)
+				-- Example: 1, 21, 0, 120,	-- Sunday at 09:00 PM (21:00) until 11:00 AM (23:00)
+				-- Calculate the Duration of the Event (in seconds)
+				local durationOfEvent = data.eventSchedule[5] * 60;
+
+				-- Find the first timestamp matching the desired weekday.
+				local weekday = data.eventSchedule[2];
+				local startTimeStamp = getTimestamp({
+					year=currentDate.year,
+					month=currentDate.month,
+					monthDay=currentDate.day,
+					hour=data.eventSchedule[3],
+					minute=data.eventSchedule[4],
+				}) + 30;	-- Add a 30 second offset to prevent bad imprecision from causing problems.
+				while os.date("*t", startTimeStamp).wday ~= weekday do
+					startTimeStamp = startTimeStamp - SECONDS_IN_A_DAY;
+				end
+
+				-- Calculate the difference between the first recorded event to now.
+				local currentTimeStamp = os.time(currentDate);
+				local totalOffset = 0;
+				while true do
+					startTimeStamp = startTimeStamp + SECONDS_IN_A_WEEK;
+					if startTimeStamp < currentTimeStamp then
+						totalOffset = totalOffset + 1;
+					else
+						-- We want at least one event behind us if it is still active.
+						startTimeStamp = startTimeStamp - SECONDS_IN_A_WEEK;
+						break;
+					end
+				end
+
+				-- Hour and minute don't change per week, so make sure these persist since there's randomly rounding errors in time?
+				local eventHour, eventMinute = data.eventSchedule[3], data.eventSchedule[4]
+
+				-- Now generate a full years worth of events going forward.
+				local veryfirst = true;
+				for week = 0,52,1 do
+					if veryfirst then
+						veryfirst = false;
+					else
+						schedule = schedule .. ",";
+					end
+
+					-- Determine when the event is supposed to end.
+					local startTime = os.date("*t", startTimeStamp);
+					startTime.hour = eventHour ~= 0 and eventHour or nil
+					startTime.minute = eventMinute ~= 0 and eventMinute or nil
+					local endTime = os.date("*t", getTimestamp(startTime) + durationOfEvent);
+
+					-- Append the schedule
+					schedule = schedule .. "\n\t_.Modules.Events.CreateSchedule(" .. concatKeyPairs({
+						year=startTime.year,
+						month=startTime.month,
+						monthDay=startTime.day,
+						weekday=startTime.wday,
+						hour=startTime.hour,
+						minute=startTime.minute,
+					}) .. "," .. concatKeyPairs({
+						year=endTime.year,
+						month=endTime.month,
+						monthDay=endTime.day,
+						weekday=endTime.wday,
+						hour=endTime.hour,
+						minute=endTime.minute,
+					}) .. ")";
+
+					-- Adjust by 1 week.
+					startTimeStamp = startTimeStamp + SECONDS_IN_A_WEEK;
+					totalOffset = totalOffset + 1;
+				end
 			else
 				print("INVALID HEADER", data.readable, " INVALID SCHEDULE TYPE", data.eventSchedule[1]);
 				return;
 			end
 			data.eventSchedule = schedule .. "\n}";
 		end
+
+		-- Whether or not to allow empty headers for this type (Default: No)
+		if not data.standalone then data.standalone = false; end
 
 		-- Try to find the headerID assignment from the readable table.
 		local headerID = HeaderAssignments[data.readable];
@@ -2253,8 +2343,4 @@ for key,value in pairs(ItemDBConditional[20769]) do
 	print(" " .. key .. ": " .. value);
 end
 ]]--
-end
-
-function Harvest(things)
-	root("Items.HARVESTSOURCES", things);
 end

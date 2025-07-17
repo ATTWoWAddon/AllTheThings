@@ -35,7 +35,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					}),
 				}),
 				n(QUESTS, sharedData({["repeatable"]=true,}, {
-				-- TODO: unless there will be a better place?
 					q(85888),	-- Artistic License
 					q(87588),	-- Bash that Trash
 					q(86317),	-- Black Blood by Sea

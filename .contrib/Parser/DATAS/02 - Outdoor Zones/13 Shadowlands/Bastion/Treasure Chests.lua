@@ -167,15 +167,22 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ "i", 180797, 1 },	-- Memorial Offering Key (QI!)
 				},
 			}),
+			o(339587, {	-- Purians
+				["coords"] = {
+					{ 54.4, 81.8, BASTION },
+					{ 54.4, 82.7, BASTION },
+				},
+				["g"] = { i(173973) },	-- Purian
+			}),
 			o(339601, {	-- Scroll of Aeons
 				["description"] = "Take the |cFFFFFFFFPurian|r from the bench at |cFFFFFFFF54.3, 81.8|r, place them in the tribute bowls at |cFFFFFFFF54.4, 83.8|r and |cFFFFFFFF56.1, 83.0|r, and follow the light to the treasure at |cFFFFFFFF53.5, 80.4|r.",
 				["coords"] = {
-					{ 54.3, 81.8, BASTION },	-- Purian
 					{ 54.4, 83.8, BASTION },	-- Tribute
 					{ 56.1, 83.0, BASTION },	-- Tribute
 					{ 53.5, 80.4, BASTION },	-- Treasure
 				},
 				["questID"] = 58298,	-- triggers 58292, 58293 and 58294 too
+				["cost"] = {{"i", 173973, 2}},	-- 2x Purian
 				["g"] = {
 					i(173984),	-- Scroll of Aeons (TOY!)
 				},

@@ -18,31 +18,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4928, {	-- Darkshore Quests
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(38792, {	-- The Great Animal Spirit
-							["sourceQuests"] = {
-								13568,	-- Spirit of the Moonstalker
-								13567,	-- Spirit of the Stag
-								13597,	-- Spirit of the Thistle Bear
-							},
-						}),
-						crit(38791, {	-- The Shatterspear
-							["sourceQuest"] = 13515,	-- Ending the Threat
-						}),
-						crit(38793, {	-- The Eye of All Storms
-							["sourceQuest"] = 13588,	-- The Eye of All Storms
-						}),
-						crit(38794, {	-- The Devourer
-							["sourceQuest"] = 13891,	-- The Devourer of Darkshore
-						}),
-						crit(38795, {	-- Consumed by Madness
-							["sourceQuest"] = 13546,	-- The Defiler
-						}),
-						crit(38796, {	-- The Battle for Darkshore
-							["sourceQuest"] = 13897,	-- The Battle for Darkshore
-						}),
-					},
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
 					-- #else
 					["sourceQuests"] = {
 						13568,	-- Spirit of the Moonstalker
@@ -56,7 +33,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
-				explorationAch(844),	-- Explore Darkshore
+				ach(844),	-- Explore Darkshore
 				ach(13251, {	-- In Teldrassil's Shadow
 					["timeline"] = { ADDED_8_1_0 },
 					["races"] = ALLIANCE_ONLY,
@@ -133,53 +110,44 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			petbattles({
+				q(31584, {	-- Got one! (Will)
+					["qg"] = 63083,	-- Will Larsons
+					["sourceQuest"] = 31832,	-- Level Up!
+					["coord"] = { 50.1, 20.2, DARKSHORE },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31582, {	-- Learning the Ropes (Will)
+					["qg"] = 63083,	-- Will Larsons
+					["coord"] = { 50.1, 20.2, DARKSHORE },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31832, {	-- Level Up! (Will)
+					["qg"] = 63083,	-- Will Larsons
+					["sourceQuest"] = 31583,	-- On The Mend
+					["coord"] = { 50.1, 20.2, DARKSHORE },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31583, {	-- On The Mend (Will)
+					["qg"] = 63083,	-- Will Larsons
+					["sourceQuest"] = 31582,	-- Learning the Ropes
+					["coord"] = { 50.1, 20.2, DARKSHORE },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Battle Pets Healed
+							["provider"] = { "n", 10085 },	-- Jaelysia <Stable Master>
+							["coord"] = { 50.4, 19.2, DARKSHORE },
+						}),
+					},
+				}),
+			}),
 			n(PROFESSIONS, {
 				prof(FISHING, {
 					i(12238),	-- Darkshore Grouper
-					o(180682, {	-- Oily Blackmouth School
-						["maps"]= {
-							DARKSHORE,
-							AZSHARA,
-							SWAMP_OF_SORROWS,
-							WETLANDS,
-							TANARIS,
-							BLASTED_LANDS,
-							WESTFALL,
-							DUSTWALLOW_MARSH,
-							FERALAS,
-							HILLSBRAD_FOOTHILLS,
-							DESOLACE,
-							NORTHERN_BARRENS,
-							THE_HINTERLANDS,
-							ASHENVALE,
-							THOUSAND_NEEDLES,
-							ARATHI_HIGHLANDS,
-							SILVERPINE_FOREST,
-							SOUTHERN_BARRENS,
-						},
-					}),
-					o(180712, {	-- Firefin Snapper School
-						["maps"] = {
-							DARKSHORE,
-							AZSHARA,
-							SWAMP_OF_SORROWS,
-							WETLANDS,
-							TANARIS,
-							BLASTED_LANDS,
-							WESTFALL,
-							DUSTWALLOW_MARSH,
-							FERALAS,
-							HILLSBRAD_FOOTHILLS,
-							DESOLACE,
-							NORTHERN_BARRENS,
-							THE_HINTERLANDS,
-							ASHENVALE,
-							THOUSAND_NEEDLES,
-							ARATHI_HIGHLANDS,
-							SILVERPINE_FOREST,
-							SOUTHERN_BARRENS,
-						},
-					})
 				}),
 			}),
 			n(QUESTS, {
@@ -3137,15 +3105,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				-- #if ANYCLASSIC
-				i(3173, {	-- Bear Meat
-					["coord"] = { 48.6, 31.8, DARKSHORE },
-					["crs"] = {
-						2164,	-- Rabid Thistle Bear
-						2163,	-- Thistle Bear
-						2165,	-- Grizzled Thistle Bear
-					},
-				}),
+				-- #if BEFORE 4.0.3
+				i(3173),	-- Bear Meat
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(211471, {	-- Cliffspring Key
@@ -3239,14 +3200,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2157,	-- Stone Behemoth
 					},
 				}),
-				i(5469, {	-- Strider Meat
-					["crs"] = {
-						2322,	-- Foreststrider
-						2321,	-- Foreststrider Fledgling
-						2323,	-- Giant Foreststrider
-						2172,	-- Strider Clutchmother
-					},
-				}),
+				i(5469),	-- Strider Meat
 				-- #endif
 			}),
 		},

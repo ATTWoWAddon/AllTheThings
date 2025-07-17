@@ -20,6 +20,7 @@
         UnsortedGeneration,
         DataIntegrityAnalysis,
         ExportDebugData,
+        ExportLocalizationStrings,
         ExportCategoryDB,
         ExportCustomHeaders,
         ExportFilterDB,

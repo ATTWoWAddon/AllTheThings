@@ -89,7 +89,7 @@ root(ROOTS.Zones, {
 						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(9667),		-- Burn It to the Ground (Everbloom Wilds)
-					explorationAch(8939),		-- Explore Gorgrond
+					ach(8939),		-- Explore Gorgrond
 					ach(9655, {		-- Fight the Power (The Pit)
 						["sym"] = {{ "achievement_criteria" }},
 					}),
@@ -313,9 +313,25 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
-				petbattles({ ADDED_6_0_2 }, {
+				petbattles({
 					n(83837, {	-- Cymre Brightblade <Grand Master Pet Tamer>
 						["coord"] = { 51.0, 70.6, GORGROND },
+						["timeline"] = { ADDED_6_0_2 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(37201, {	-- Cymre Brightblade
+								["timeline"] = { ADDED_6_0_2 },
+								["isDaily"] = true,
+								["_drop"] = { "g" },	-- Drops Polished Pet Charm
+								["groups"] = {
+									-- #if BEFORE 10.2.5
+									i(116415, {	-- Shiny Pet Charm
+										["timeline"] = { REMOVED_10_2_5 },
+									}),
+									-- #endif
+								},
+							}),
+						},
 					}),
 				}),
 				n(QUESTS, {
@@ -2346,14 +2362,12 @@ root(ROOTS.Zones, {
 						q(36603, {	-- Brimstone Springs
 							["coord"] = { 40.4, 54.6, GORGROND },
 						}),
-						q(37921, {	-- Clearing the Docks (A)
+						q(37921, {	-- Clearing the Docks
 							["lvl"] = 100,
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 36615 },	-- My Very Own Castle (A)
 						}),
-						q(38569, {	-- Clearing the Docks (H)
+						q(38569, {	-- Clearing the Docks
 							["lvl"] = 100,
-							["races"] = HORDE_ONLY,
 							["sourceQuests"] = { 36614 },	-- My Very Own Fortress (H)
 						}),
 						q(36571, {	-- Iyun Weald
@@ -2563,9 +2577,10 @@ root(ROOTS.Zones, {
 					n(86574, {	-- Inventor Blammo
 						["questID"] = 37367,
 						["isDaily"] = true,
-						["coord"] = { 47.6, 30.8, GORGROND },	-- **Coords unconfirmed, relied on wowhead**
+						["coord"] = { 47.6, 30.8, GORGROND },
 						["lvl"] = 100,
 						["g"] = {
+							i(119438),	-- Automated Critter Defense Cannon
 							i(119226),	-- Blammo's Blammer
 						},
 					}),

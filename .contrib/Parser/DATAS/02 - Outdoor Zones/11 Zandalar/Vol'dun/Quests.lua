@@ -345,6 +345,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 43.5, 59.8, VOLDUN },
 				["races"] = HORDE_ONLY,
 				["g"] = {
+					i(153593),	-- Bloodcrest's Giant Rib (QI!)
 					i(160021),	-- Exiled Veteran's Waistplate
 					i(160022),	-- Lastwind Cincture
 					i(160023),	-- Scorching Sands Waistwrap
@@ -763,12 +764,27 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 56.7, 50.5, VOLDUN },	-- Vulpera Hideaway
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(151277),	-- Coiled Idol (QI!)
-					i(150752),	-- Heavy Coin Pouch (QI!)
-					i(151273),	-- Knickknacks (QI!)
-					i(151278),	-- Roaring Idol (QI!)
-					i(144322),	-- Torn Painting (QI!)
-					i(144300),	-- Unstrung Bowstaff (QI!)
+					i(151273, {    -- Knickknacks (QI!)
+						-- All the items in this list are counted as "Knickknacks" when looted
+						i(144299),	-- Chipped Statuette (QI!)
+						i(151276),	-- Cloudy Potion (QI!)
+						i(151277),	-- Coiled Idol (QI!)
+						i(144325),	-- Crystalline Dagger (QI!)
+						i(150761),	-- Crystalline Spear (QI!)
+						i(144302),	-- Gem-Studded Chalice (QI!)
+						i(150752),	-- Heavy Coin Pouch (QI!)
+						i(144301),	-- Ornate Brooch (QI!)
+						i(151278),	-- Roaring Idol (QI!)
+						i(151274),	-- Salted Meats (QI!)
+						i(144323),	-- Silken Slippers (QI!)
+						i(150763),	-- Spiked Pauldrons (QI!)
+						i(144324),	-- Tarnished Band (QI!)
+						i(151279),	-- Thundering Idol (QI!)
+						i(144322),	-- Torn Painting (QI!)
+						i(144300),	-- Unstrung Bowstaff (QI!)
+						i(151275),	-- Worn Leather Satchel (QI!)
+						i(150762),	-- Woven Basket (QI!)
+					}),
 				},
 			}),
 			q(48896, {	-- Knowledge of the Past
@@ -884,6 +900,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(155420),	-- Xombo's Prized Greataxe
 					i(161308, { ["races"] = ALLIANCE_ONLY }),	-- Ashvane Captain's Quickblade
 					i(161297, { ["races"] = ALLIANCE_ONLY }),	-- Hacksaw Skinning Knife
+					--
+					i(158879),	-- Bloodstained Message
+					i(160525),	-- Tongo's Head (QI!)
 				},
 			}),
 			q(50980, {	-- My Hungry Neighbor
@@ -1585,6 +1604,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 128422 },	-- Keerin
 				["coord"] = { 47.5, 86.1, VOLDUN },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(153420),	-- Morrison's Master Key (QI!)
+				},
 			}),
 			q(49662, {	-- The Missing Key
 				["sourceQuests"] = { 49340 },	-- The Keepers' Key

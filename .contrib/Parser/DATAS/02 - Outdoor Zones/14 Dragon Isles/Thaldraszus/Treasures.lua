@@ -154,9 +154,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(381108, {	-- Yennu's Map
 				["coord"] = { 54.9, 75.4, THALDRASZUS },
 				["g"] = {
-					i(199069, {	-- Yennu's Map
-						["questID"] = 70538,
-					}),
+					i(199069),	-- Yennu's Map (CI!)
 				},
 			}),
 		}),

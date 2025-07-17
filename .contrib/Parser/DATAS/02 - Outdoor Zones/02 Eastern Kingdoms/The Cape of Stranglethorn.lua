@@ -14,16 +14,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				applyclassicphase(PHASE_ONE, ach(871, {	-- Avast Ye, Admiral!
-					["sourceQuest"] = 4621,	-- Avast Ye, Admiral!
-					["groups"] = {
-						title(111, {	-- Bloodsail Admiral <Name>
-							["timeline"] = { ADDED_3_0_2 },
-						}),
-					},
+					title(111, {	-- Bloodsail Admiral <Name>
+						["timeline"] = { ADDED_3_0_2 },
+					}),
 				})),
 				ach(4905, {	-- Cape of Stranglethorn Quests
 					["timeline"] = { ADDED_4_0_3 },
-					-- #if ANYCLASSIC
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
+					-- #else
 					["sourceQuests"] = {
 						26814, 26555,	-- High Priest Venoxis (A, H)
 						26612,	-- Details of the Attack
@@ -33,7 +32,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				explorationAch(4995, {	-- Explore the Cape of Stranglethorn
+				ach(4995, {	-- Explore the Cape of Stranglethorn
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 			}),
@@ -41,9 +40,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["description"] = "WARNING: FREE-FOR-ALL PVP EVENT\n\nChest is dropped in arena every 3 hours, starting at midnight.\n\n00:00/12PM, 03:00/3AM, 06:00/6AM, 09:00/9AM,\n12:00/12AM, 15:00/3PM, 18:00/6PM, 21:00/9PM",
 				["coord"] = { 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
 				["groups"] = {
-					ach(389, {	-- Gurubashi Arena Master
-						["provider"] = { "i", 18706 },	-- Arena Master
-					}),
+					ach(389),	-- Gurubashi Arena Master
 					i(18706),	-- Arena Master
 					i(18711),	-- Arena Bands
 					i(18710),	-- Arena Bracers
@@ -75,7 +72,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					pet(401),	-- Strand Crab (PET!)
 					pet(410, {	-- Wharf Rat (PET!)
-						["description"] = "Can be found relaibly as secondary pets alongside Baby Apes, but also found in Booty Bay.",
+						["description"] = "Can be found reliably as secondary pets alongside Baby Apes, but also found in Booty Bay.",
 					}),
 				},
 			}),
@@ -127,15 +124,38 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(65656, {	-- Bill Buckler <Master Pet Tamer>
+					["coord"] = { 51.4, 73.2, THE_CAPE_OF_STRANGLETHORN },
+					["description"] = "This pet tamer is Alliance only.\n\nBill's pets are level 11 of the following consecutive pet classes:\n1. Humanonoid - use Undead (powerful) or Beast (tanky) pet.\n2. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n3. Flying - see above.",
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+					["petBattleLvl"] = 11,
+					["groups"] = {
+						q(31851, {	-- Bill Buckler
+							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
+				}),
+				q(31917, {	-- A Tamer's Homecoming (A)
+					["qg"] = 65656,	-- Bill Buckler
+					["sourceQuest"] = 31728,	-- Bill Buckler
+					["altQuests"] = { 31918 },	-- A Tamer's Homecoming (H) -- CRIEVE NOTE: Check this on MOP Classic
+					["coord"] = { 51.4, 73.2, THE_CAPE_OF_STRANGLETHORN },
+					["timeline"] = { ADDED_5_0_4 },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+				}),
+			}),
 			n(PROFESSIONS, {
 				prof(ENGINEERING, {
 					n(7406, {	-- Oglethorpe Obnoticus <Gnomish Engineering Trainer>
 						["coord"] = { 43.0, 72.0, THE_CAPE_OF_STRANGLETHORN },
 						["g"] = ALL_GNOMISH_ENGINEERING,
 					}),
-				}),
-				prof(FISHING, {
-					o(180901),	-- Bloodsail Wreckage
 				}),
 			}),
 			n(QUESTS, {
@@ -2881,6 +2901,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						202,	-- Thick Cloth Shoes
 						200,	-- Thick Cloth Vest
 					}},
+					["groups"] = sharedData({
+						["collectible"] = false,
+						["providers"] = {
+							{ "n", 17512},	-- Arred <Jewelcrafting Supplies>
+							{ "n", 49887}, 	-- Gappy Silvertooth <Bling Merchant>
+							{ "n", 16624},	-- Gelanthis <Jewelcrafting Supplies>
+							{ "n", 2849},	-- Qixdi Goodstitch <Cloth Armor & Accessories>
+						},
+					}, {
+						i(7341),	-- Cubic Zirconia Ring
+						i(7340),	-- Flawless Diamond Solitaire
+						i(7339),	-- Miniscule Diamond Ring
+						i(7338),	-- Mood Ring
+						i(7342),	-- Silver Piffeny Band
+						i(7337),	-- The Rock
+					}),
 				}),
 				n(2699, {	-- Rikqiz <Leatherworking Supplies>
 					["coord"] = { 43.2, 71.7, THE_CAPE_OF_STRANGLETHORN },

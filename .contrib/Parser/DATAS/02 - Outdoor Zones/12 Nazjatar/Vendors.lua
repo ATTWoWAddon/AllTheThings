@@ -15,39 +15,30 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				i(170276, { ["timeline"] = { CREATED_8_2_0 }}),	-- Greater Azerite Pearling Reinforcement
 				i(169478, {	-- Benthic Bracers
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169480, {	-- Benthic Chestguard
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169481, {	-- Benthic Cloak
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169485, {	-- Benthic Gauntlets
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169477, {	-- Benthic Girdle
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169479, {	-- Benthic Helm
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169482, {	-- Benthic Leggings
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169484, {	-- Benthic Spaulders
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169483, {	-- Benthic Treads
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 			},
 		}),
@@ -154,7 +145,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 						},
 					}),
 					i(174523, {	-- Waveswept Abyssal Conch
-						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1721, 20 }, },	-- 20x Prismatic Manapearl
 					}),
 				}, {	-- Exalted
@@ -251,39 +241,30 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				i(170276, { ["timeline"] = { CREATED_8_2_0 }}),	-- Greater Azerite Pearling Reinforcement
 				i(169478, {	-- Benthic Bracers
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169480, {	-- Benthic Chestguard
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169481, {	-- Benthic Cloak
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169485, {	-- Benthic Gauntlets
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169477, {	-- Benthic Girdle
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169479, {	-- Benthic Helm
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169482, {	-- Benthic Leggings
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169484, {	-- Benthic Spaulders
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(169483, {	-- Benthic Treads
 					["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 			},
 		}),
@@ -545,7 +526,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 						},
 					}),
 					i(174522, {	-- Waveswept Abyssal Conch
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1721, 20 }, },	-- 20x Prismatic Manapearl
 					}),
 				}, {	-- Exalted

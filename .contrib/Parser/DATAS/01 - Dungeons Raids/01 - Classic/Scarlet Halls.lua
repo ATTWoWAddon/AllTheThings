@@ -8,6 +8,31 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["maps"] = { SCARLET_MONASTERY_HALLS_LEVEL1, SCARLET_MONASTERY_HALLS_LEVEL2 },
 		["lvl"] = lvlsquish(21, 21, 10),
 		["groups"] = {
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
+				e(654, {	-- Armsmaster Harlan
+					["creatureID"] = 58632,	-- Armsmaster Harlan
+					["groups"] = {
+						i(23192, {	-- Tabard of the Scarlet Crusade
+							["timeline"] = { ADDED_5_3_0 },
+						}),
+					},
+				}),
+				e(656, {	-- Flameweaver Koegler
+					["creatureID"] = 59150,	-- Flameweaver Koegler
+					["groups"] = {
+						ach(7413),	-- Scarlet Halls
+						ach(7434),	-- Scarlet Halls Guild Run
+						o(212968, {	-- Ancient Tome
+							["coord"] = { 48.4, 14.6, SCARLET_MONASTERY_HALLS_LEVEL2 },
+							["groups"] = {
+								i(82469, {	-- Ancient Tome of Teleport: Dalaran (CI!)
+									["description"] = "Can be looted from a bookshelf if the boss didn't burn them.",
+								}),
+							},
+						}),
+					},
+				}),
+			}),
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				n(QUESTS, {
 					q(31493, {	-- Just for Safekeeping, Of Course
@@ -15,6 +40,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Codex of the Crusade
 								["provider"] = { "i", 87267 },	-- Codex of the Crusade
+								["cr"] = 59150,	-- Flameweaver Koegler
 							}),
 						},
 					}),
@@ -42,9 +68,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				e(654, {	-- Armsmaster Harlan
 					["creatureID"] = 58632,	-- Armsmaster Harlan
 					["groups"] = {
-						i(23192, {	-- Tabard of the Scarlet Crusade
-							["timeline"] = { REMOVED_5_0_4, ADDED_5_3_0 },
-						}),
 						i(88272),	-- The Gleaming Ravager
 						i(88273),	-- Armsmaster's Sealed Locket
 						i(88271),	-- Harlan's Shoulders
@@ -58,11 +81,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				e(656, {	-- Flameweaver Koegler
 					["creatureID"] = 59150,	-- Flameweaver Koegler
 					["groups"] = {
-						ach(7413),	-- Scarlet Halls
-						ach(7434),	-- Scarlet Halls Guild Run
-						i(82469, {	-- Ancient Tome of Teleport: Dalaran (CI!)
-							["description"] = "Can be looted from a bookshelf if the boss didn't burn them.",
-						}),
 						i(88278),	-- Mograine's Immaculate Might
 						i(88274),	-- Koegler's Ritual Knife
 						i(88280),	-- Melted Hypnotic Blade
@@ -73,7 +91,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(88276),	-- Bindburner Belt
 						i(88283),	-- Bradbury's Entropic Legguards
 						i(88277),	-- Pyretic Legguards
-						i(87267),	-- Codex of the Crusade
 					},
 				}),
 			}),
@@ -86,6 +103,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["groups"] = {
 								objective(1, {	-- 0/1 Codex of the Crusade
 									["provider"] = { "i", 87268 },	-- Codex of the Crusade
+									["cr"] = 59150,	-- Flameweaver Koegler
 								}),
 								i(87370),	-- Waistguard of the Phalanx
 								i(87371),	-- Scarlet Champion's Belt
@@ -142,10 +160,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["creatureID"] = 58632,	-- Armsmaster Harlan
 						["groups"] = {
 							ach(6427),	-- Mosh Pit
-							i(23192, {	-- Tabard of the Scarlet Crusade
-								["timeline"] = { REMOVED_5_0_4, ADDED_5_3_0 },
-							}),
-							i(23192),	-- Tabard of the Scarlet Crusade
 							i(144193, {	-- The Gleaming Ravager
 								["timeline"] = { ADDED_7_1_5 },
 							}),
@@ -181,12 +195,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					e(656, {	-- Flameweaver Koegler
 						["creatureID"] = 59150,	-- Flameweaver Koegler
 						["groups"] = {
-							ach(7413),	-- Scarlet Halls
 							ach(6760),	-- Heroic: Scarlet Halls
 							ach(6769),	-- Heroic: Scarlet Halls Guild Run
-							i(82469, {	-- Ancient Tome of Teleport: Dalaran (CI!)
-								["description"] = "Can be looted from a bookshelf if the boss didn't burn them.",
-							}),
 							i(144196, {	-- Mograine's Immaculate Might
 								["timeline"] = { ADDED_7_1_5 },
 							}),
@@ -254,11 +264,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(87550, {	-- Vithrak, Gaze of the Deadman
 								["timeline"] = { REMOVED_7_1_5 },
 							}),
-							i(87268),	-- Codex of the Crusade
 						},
 					}),
 				},
 			}),
+			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 } }, {
+				ach(8436, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Scarlet Halls
+					title(243),	-- Flameweaver <Name>
+				})),
+				ach(6895),	-- Scarlet Halls Challenger
+				ach(6908),	-- Scarlet Halls: Bronze
+				ach(6909),	-- Scarlet Halls: Silver
+				ach(6910, {	-- Scarlet Halls: Gold
+					spell(131231),	-- Path of the Scarlet Blade
+				}),
+			})),
 		},
 	}),
 }));

@@ -7,31 +7,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["icon"] = 236830,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(769),	-- Explore Silverpine Forest
+				ach(769),	-- Explore Silverpine Forest
 				ach(4894, {	-- Silverpine Forest Quests
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(38361, {	-- Forsaken High Command
-							["sourceQuest"] = 27056,	-- Belmont's Report
-						}),
-						crit(38362, {	-- Forsaken Rear Guard
-							["sourceQuest"] = 27096,	-- Orcs are in Order
-						}),
-						crit(38363, {	-- The Sepulcher
-							["sourceQuest"] = 27290,	-- To Forsaken Forward Command
-						}),
-						crit(38364, {	-- The Ruins of Gilneas
-							["sourceQuest"] = 27438,	-- The Great Escape
-						}),
-						crit(38365, {	-- Ambermill
-							["sourceQuest"] = 27518,	-- Transdimensional Warfare: Chapter III
-						}),
-						crit(38366, {	-- On the Battlefront
-							["sourceQuest"] = 27601,	-- Cities in Dust
-						}),
-					},
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
 					-- #else
 					["sourceQuests"] = {
 						27056,	-- Belmont's Report
@@ -700,6 +681,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 44.9, 41.6, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(60862) },	-- Forsaken Insignia (QI!)
 				}),
 				q(27574, {	-- I Never Forget a Face
 					["provider"] = { "i", 61505 },	-- Partially Digested Head
@@ -1454,9 +1436,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(27513, {	-- Transdimensional Warfare: Chapter II
-					["qg"] = 45617,	-- Lady Sylvanas Windrunner
+					["qg"] = 45752,	-- Ambermill Dimensional Portal
 					["sourceQuest"] = 27512,	-- Transdimensional Warfare: Chapter I
-					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
+					["coord"] = { 58.0, 69.9, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1955,7 +1937,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 43.2, 40.6, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6272, {	-- Pattern: Blue Linen Robe
+						i(6272, {	-- Pattern: Blue Linen Robe (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(5786, {	-- Pattern: Murloc Scale Belt (RECIPE!)
@@ -1964,7 +1946,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(5787, {	-- Pattern: Murloc Scale Breastplate (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(5771, {	-- Pattern: Red Linen Bag
+						i(5771, {	-- Pattern: Red Linen Bag (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(6892),	-- Recipe: Smoked Bear Meat (RECIPE!)
@@ -2005,7 +1987,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 					},
 				}),
 				n(5757, {	-- Lilly <Enchanting Supplies>
@@ -2027,7 +2009,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 					},
 				}),
 				n(9553, {	-- Nadia Vernon <Bowyer>
@@ -2137,7 +2119,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #if BEFORE CATA
-				i(5771, {	-- Pattern: Red Linen Bag
+				i(5771, {	-- Pattern: Red Linen Bag (RECIPE!)
 					["crs"] = {
 						3531,	-- Moonrage Tailor
 						3530,	-- Pyrewood Tailor

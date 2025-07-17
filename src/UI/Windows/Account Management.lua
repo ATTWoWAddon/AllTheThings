@@ -163,7 +163,7 @@ local function ReceiveChunk(method, sender, uid, chunkIndex, chunkCount, chunk)
 		end
 		pending[uid] = nil;
 		
-		-- Check to see if there are any pending recieves remaining
+		-- Check to see if there are any pending receives remaining
 		local any = false;
 		for uid,chunks in pairs(pending) do
 			if chunks then

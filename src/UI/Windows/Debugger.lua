@@ -350,10 +350,12 @@ app.LoadDebugger = function()
 				costTotal = 1,
 				upgradeTotal = 1,
 				icon = 1,
+				HasRetried = 1,
 				_OnUpdate = 1,
 				_SettingsRefresh = 1,
 				_coord = 1,
 				__merge = 1,
+				__canretry = 1,
 			};
 			local function CleanObject(obj)
 				if obj == nil then return end

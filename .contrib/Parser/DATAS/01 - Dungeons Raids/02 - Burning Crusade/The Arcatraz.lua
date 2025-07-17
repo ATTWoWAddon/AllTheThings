@@ -211,14 +211,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(551, {	-- Harbinger Skyriss
 					["creatureID"] = 20912,
 					["groups"] = {
-						ach(660, {	-- The Arcatraz
-							-- #if BEFORE WRATH
-							["sourceQuests"] = {
-								10882,	-- Harbinger of Doom
-								10886,	-- Trial of the Naaru: Tenacity
-							},
-							-- #endif
-						}),
+						ach(660),	-- The Arcatraz
 						-- #if BEFORE 7.3.5
 						i(28416),	-- Hungering Spineripper (7.3.5 - Moved to Dalliah)
 						-- #endif
@@ -337,11 +330,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(551, {	-- Harbinger Skyriss
 						["creatureID"] = 20912,
 						["groups"] = {
-							ach(681, {	-- Heroic: The Arcatraz
-								-- #if BEFORE WRATH
-								["sourceQuest"] = 10886,	-- Trial of the Naaru: Tenacity
-								-- #endif
-							}),
+							ach(681),	-- Heroic: The Arcatraz
 							ach(5081, {	-- Heroic: The Arcatraz Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),

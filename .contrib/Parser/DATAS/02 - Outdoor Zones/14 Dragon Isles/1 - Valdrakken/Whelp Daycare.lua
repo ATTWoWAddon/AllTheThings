@@ -107,7 +107,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				------ Introduction ------
 				q(72664, {	-- Eggs in Abundance
 					["provider"] = { "n", 197478 },	-- Herald Flaps
-					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, ZARALEK_CAVERN },
+					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN, ZARALEK_CAVERN },
 					["g"] = {
 						spell(419215),	-- Unlock the Whelp Daycare
 					},

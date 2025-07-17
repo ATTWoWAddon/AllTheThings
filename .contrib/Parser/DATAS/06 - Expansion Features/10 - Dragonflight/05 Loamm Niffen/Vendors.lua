@@ -59,68 +59,57 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 					}, {	-- RENOWN 12 --
-						i(205353, {	-- Niffen Notebook of Alchemy Knowledge
-							["questID"] = 75756,
+						i(205353, {	-- Niffen Notebook of Alchemy Knowledge (CI!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 300 },
 							},
 						}),
-						i(205352, {	-- Niffen Notebook of Blacksmithing Knowledge
-							["questID"] = 75755,
+						i(205352, {	-- Niffen Notebook of Blacksmithing Knowledge (CI!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 300 },
 							},
 						}),
-						i(205351, {	-- Niffen Notebook of Enchanting Knowledge
-							["questID"] = 75752,
+						i(205351, {	-- Niffen Notebook of Enchanting Knowledge (CI!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 300 },
 							},
 						}),
-						i(205349, {	-- Niffen Notebook of Engineering Knowledge
-							["questID"] = 75759,
+						i(205349, {	-- Niffen Notebook of Engineering Knowledge (CI!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 300 },
 							},
 						}),
-						i(205358, {	-- Niffen Notebook of Herbalism Knowledge
-							["questID"] = 75753,
+						i(205358, {	-- Niffen Notebook of Herbalism Knowledge (CI!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 300 },
 							},
 						}),
-						i(205354, {	-- Niffen Notebook of Inscription Knowledge
-							["questID"] = 75761,
+						i(205354, {	-- Niffen Notebook of Inscription Knowledge (CI!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 300 },
 							},
 						}),
-						i(205348, {	-- Niffen Notebook of Jewelcrafting Knowledge
-							["questID"] = 75754,
+						i(205348, {	-- Niffen Notebook of Jewelcrafting Knowledge (CI!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 300 },
 							},
 						}),
-						i(205350, {	-- Niffen Notebook of Leatherworking Knowledge
-							["questID"] = 75751,
+						i(205350, {	-- Niffen Notebook of Leatherworking Knowledge (CI!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 300 },
 							},
 						}),
-						i(205356, {	-- Niffen Notebook of Mining Knowledge
-							["questID"] = 75758,
+						i(205356, {	-- Niffen Notebook of Mining Knowledge (CI!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 300 },
 							},
 						}),
-						i(205357, {	-- Niffen Notebook of Skinning Knowledge
-							["questID"] = 75760,
+						i(205357, {	-- Niffen Notebook of Skinning Knowledge (CI!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 300 },
 							},
 						}),
-						i(205355, {	-- Niffen Notebook of Tailoring Knowledge
-							["questID"] = 75757,
+						i(205355, {	-- Niffen Notebook of Tailoring Knowledge (CI!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 300 },
 							},

@@ -246,11 +246,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(537, {	-- Nexus-Prince Shaffar
 					["creatureID"] = 18344,
 					["groups"] = {
-						ach(651, {	-- Mana-Tombs
-							-- #if BEFORE WRATH
-							["sourceQuest"] = 10165,	-- Undercutting the Competition
-							-- #endif
-						}),
+						ach(651),	-- Mana-Tombs
 						-- #if AFTER 7.3.5
 						i(27829),	-- Axe of the Nexus-Kings
 						i(27842),	-- Grand Scepter of the Nexus-Kings
@@ -398,9 +394,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(537, {	-- Nexus-Prince Shaffar
 						["creatureID"] = 18344,
 						["groups"] = {
-							ach(671, {	-- Heroic: Mana-Tombs
-								["timeline"] = { ADDED_3_0_2 },
-							}),
+							ach(671),	-- Heroic: Mana-Tombs
 							ach(5071, {	-- Heroic: Mana-Tombs Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),

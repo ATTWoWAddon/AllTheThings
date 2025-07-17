@@ -8,11 +8,12 @@ root(ROOTS.Zones, {
 			["icon"] = 236722,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					explorationAch(1264),	-- Explore Borean Tundra
+					ach(1264),	-- Explore Borean Tundra
 					ach(33, {	-- Nothing Boring About Borean (A)
 						["races"] = ALLIANCE_ONLY,
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							11794,	-- The Hunt is On
 							11965,	-- Call to Arms!
@@ -36,78 +37,13 @@ root(ROOTS.Zones, {
 							12088,	-- Thassarian, the Death Knight
 							12019,	-- Last Rites
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 130,
-						-- #endif
-						-- #else
-						["groups"] = {
-							crit(39025, {	-- Hiding in Plain Sight
-								["sourceQuest"] = 11794,	-- The Hunt is On
-							}),
-							crit(39026, {	-- To the Aid of the Farshire
-								["sourceQuest"] = 11913,	-- Take No Chances
-							}),
-							crit(39027, {	-- To the Aid of the Farshire
-								["sourceQuest"] = 12035,	-- Repurposed Technology
-							}),
-							crit(39028, {	-- To the Aid of the Farshire
-								["sourceQuest"] = 11965,	-- Call to Arms!
-							}),
-							crit(347, {	-- D.E.H.T.A.
-								["sourceQuest"] = 11892,	-- The Assassination of Harold Lane
-							}),
-							crit(39029, {	-- The Blue Dragonflight
-								["sourceQuest"] = 12728,	-- Monitoring the Rift: Winterfin Cavern
-							}),
-							crit(39030, {	-- The Blue Dragonflight
-								["sourceQuest"] = 11733,	-- Traversing the Rift
-							}),
-							crit(39031, {	-- The Blue Dragonflight
-								["sourceQuest"] = 11969,	-- Springing the Trap
-							}),
-							crit(39032, {	-- The Blue Dragonflight
-								["sourceQuest"] = 11931,	-- Cracking the Code
-							}),
-							crit(39033, {	-- The Blue Dragonflight
-								["sourceQuest"] = 11914,	-- Keep the Secret Safe
-							}),
-							crit(39034, {	-- Friends from the Sea
-								["sourceQuest"] = 11626,	-- The Emissary
-							}),
-							crit(39035, {	-- Friends from the Sea
-								["sourceQuest"] = 11968,	-- The Tides Turn
-							}),
-							crit(39036, {	-- Participant Observation
-								["sourceQuest"] = 11570,	-- Escape from the Winterfin Caverns
-							}),
-							crit(39037, {	-- Participant Observation
-								["sourceQuest"] = 11569,	-- Keymaster Urmgrgl
-							}),
-							crit(39038, {	-- Participant Observation
-								["sourceQuest"] = 11566,	-- Surrender... Not!
-							}),
-							crit(39039, {	-- Participant Observation
-								["sourceQuest"] = 11564,	-- Succulent Orca Stew
-							}),
-							crit(39040, {	-- Participant Observation
-								["sourceQuest"] = 11561,	-- Them!
-							}),
-							crit(39041, {	-- A Family Reunion
-								["sourceQuest"] = 12088,	-- Thassarian, the Death Knight
-							}),
-							crit(39042, {	-- Last Rites
-								["sourceQuest"] = 12019,	-- Last Rites
-							}),
-						},
 						-- #endif
 					}),
 					ach(1358, {	-- Nothing Boring About Borean (H)
 						["races"] = HORDE_ONLY,
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							11638,	-- Return My Remains
 							11652,	-- The Plains of Nasam
@@ -135,84 +71,6 @@ root(ROOTS.Zones, {
 							11706,	-- The Collapse
 							11907,	-- The Sub-Chieftains
 							11930,	-- Across Transborea
-						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 150,
-						-- #endif
-						-- #else
-						["groups"] = {
-							crit(39043, {	-- The Fate of Farseer Grimwalker
-								["sourceQuest"] = 11638,	-- Return My Remains
-							}),
-							crit(39044, {	-- Return of the Dread Citadel
-								["sourceQuest"] = 11652,	-- The Plains of Nasam
-							}),
-							crit(39045, {	-- The Scourge Necrolord
-								["sourceQuest"] = 11705,	-- Foolish Endeavors
-							}),
-							crit(347, {	-- D.E.H.T.A.
-								["sourceQuest"] = 11892,	-- The Assassination of Harold Lane
-							}),
-							crit(39029, {	-- The Blue Dragonflight
-								["sourceQuest"] = 12728,	-- Monitoring the Rift: Winterfin Cavern
-							}),
-							crit(39030, {	-- The Blue Dragonflight
-								["sourceQuest"] = 11733,	-- Traversing the Rift
-							}),
-							crit(39031, {	-- The Blue Dragonflight
-								["sourceQuest"] = 11969,	-- Springing the Trap
-							}),
-							crit(39032, {	-- The Blue Dragonflight
-								["sourceQuest"] = 11931,	-- Cracking the Code
-							}),
-							crit(39033, {	-- The Blue Dragonflight
-								["sourceQuest"] = 11914,	-- Keep the Secret Safe
-							}),
-							crit(39034, {	-- Friends from the Sea
-								["sourceQuest"] = 11626,	-- The Emissary
-							}),
-							crit(39035, {	-- Friends from the Sea
-								["sourceQuest"] = 11968,	-- The Tides Turn
-							}),
-							crit(39036, {	-- Participant Observation
-								["sourceQuest"] = 11570,	-- Escape from the Winterfin Caverns
-							}),
-							crit(39037, {	-- Participant Observation
-								["sourceQuest"] = 11569,	-- Keymaster Urmgrgl
-							}),
-							crit(39038, {	-- Participant Observation
-								["sourceQuest"] = 11566,	-- Surrender... Not!
-							}),
-							crit(39039, {	-- Participant Observation
-								["sourceQuest"] = 11564,	-- Succulent Orca Stew
-							}),
-							crit(39040, {	-- Participant Observation
-								["sourceQuest"] = 11561,	-- Them!
-							}),
-							crit(39046, {	-- Hellscream's Champion
-								["sourceQuest"] = 11916,	-- Hellscream's Champion
-							}),
-							crit(39047, {	-- To the Aid of the Taunka
-								["sourceQuest"] = 11689,	-- Return with the Bad News
-							}),
-							crit(39048, {	-- To the Aid of the Taunka
-								["sourceQuest"] = 11906,	-- Cleaning Up the Pools
-							}),
-							crit(39049, {	-- To the Aid of the Taunka
-								["sourceQuest"] = 11907,	-- The Sub-Chieftains
-							}),
-							crit(39050, {	-- To the Aid of the Taunka
-								["sourceQuest"] = 11909,	-- Defeat the Gearmaster
-							}),
-							crit(39051, {	-- To the Aid of the Taunka
-								["sourceQuest"] = 11706,	-- The Collapse
-							}),
-							crit(39052, {	-- Somber Realization
-								["sourceQuest"] = 11930,	-- Across Transborea
-							}),
 						},
 						-- #endif
 					}),
@@ -1040,7 +898,7 @@ root(ROOTS.Zones, {
 					q(11705, {	-- Foolish Endeavors
 						["qgs"] = {
 							25729,	-- Shadowstalker Getry
-							-- #if AFTER SHADOWLANDS
+							-- #if AFTER SL
 							176304,	-- Shadowstalker Getry
 							-- #endif
 						},
@@ -1262,7 +1120,9 @@ root(ROOTS.Zones, {
 						},
 						["altQuests"] = { 11586 },	-- Hellscream's Vigil
 						["sourceQuests"] = {
+							-- #if AFTER CATA
 							28711,	-- Warchief's Command: Borean Tundra! [7.3.5+] / Warchief's Command: Northrend!
+							-- #endif
 							10172,	-- There Is No Hope
 						},
 					}),
@@ -1276,7 +1136,9 @@ root(ROOTS.Zones, {
 						["altQuests"] = { 11585 },	-- Hellscream's Vigil
 						["lockCriteria"] = { 1, "questID", 10172 },	-- There Is No Hope
 						["description"] = "This version of the quest is only available if you have NOT completed the quest 'There Is No Hope' from Greatmother Geyah in Nagrand (Outland). However, it seems that everyone is receiving this version curently.",
+						-- #if AFTER CATA
 						["sourceQuest"] = 28711,	-- Warchief's Command: Borean Tundra! [7.3.5+] / Warchief's Command: Northrend!
+						-- #endif
 					}),
 					q(11876, {	-- Help Those That Cannot Help Themselves
 						["qg"] = 25809,	-- Archdruid Lathorius
@@ -3199,7 +3061,7 @@ root(ROOTS.Zones, {
 							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 							i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 							i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-							i(22307),	-- Pattern: Enchanted Mageweave Pouch
+							i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 						},
 					}),
 					n(27139, {	-- Librarian Whitley <Wands>

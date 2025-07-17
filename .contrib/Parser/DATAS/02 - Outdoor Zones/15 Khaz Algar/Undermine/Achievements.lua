@@ -232,7 +232,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					41217,	-- Treasures of Undermine
 					41708,	-- You're My Friend Now
 				}},
-				["g"] = { ws(25) },	-- Gallagio Grand Gallery (WS!)
+				["g"] = { campsite(25) },	-- Gallagio Grand Gallery (CS!)
 			}),
 			ach(40948),	-- Nine-Tenths of the Law
 			ach(40894),	-- Sojourner of Undermine (automated)

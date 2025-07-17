@@ -62,17 +62,29 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				ach(16495),	-- Obsidian Keymaster
 			}),
 			n(FACTIONS, {
-				faction(FACTION_SABELLIAN, {
-					ach(16532),	-- Friends with Sabellian
+				header(HEADERS.Faction, FACTION_SABELLIAN, {
+					faction(FACTION_SABELLIAN),
 					ach(16760, {	-- The Obsidian Bloodline
-						title(483),	-- <Name>, Paragon of the Obsidian Brood
+						["minReputation"] = { FACTION_SABELLIAN, 5 },
+						["g"] = {
+							title(483),	-- <Name>, Paragon of the Obsidian Brood
+						},
+					}),
+					ach(16532, {	-- True Friends with Sabellian
+						["minReputation"] = { FACTION_SABELLIAN, 5 },
 					}),
 				}),
-				faction(FACTION_WRATHION, {
+				header(HEADERS.Faction, FACTION_WRATHION, {
+					faction(FACTION_WRATHION),
 					ach(16494, {	-- Loyalty to the Prince
-						title(484),	-- <Name>, Agent of the Black Prince
+						["minReputation"] = { FACTION_WRATHION, 5 },
+						["g"] = {
+							title(484),	-- <Name>, Agent of the Black Prince
+						},
 					}),
-					ach(16536),	-- True Friends with Wrathion
+					ach(16536, {	-- True Friends with Wrathion
+						["minReputation"] = { FACTION_WRATHION, 5 },
+					}),
 				}),
 			}),
 			n(QUESTS, {

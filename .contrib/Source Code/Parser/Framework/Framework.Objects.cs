@@ -27,6 +27,16 @@ namespace ATT
             private static IDictionary<string, bool> WARNED_FIELDS = new ConcurrentDictionary<string, bool>();
 
             /// <summary>
+            /// A mapping of singular fields to their pluralized equivalents
+            /// </summary>
+            public static Dictionary<string, string> SINGULAR_PLURAL_FIELDS_LONG;
+
+            /// <summary>
+            /// A mapping of fields which should not be sorted because their order is utilized
+            /// </summary>
+            public static HashSet<string> NON_SORTED_FIELDS;
+
+            /// <summary>
             /// All of the containers that are in the database.
             /// </summary>
             public static IDictionary<string, List<object>> AllContainers { get; } = new ConcurrentDictionary<string, List<object>>();
@@ -88,11 +98,6 @@ namespace ATT
             /// Used to track what actual key/keyValues were used to merge data
             /// </summary>
             private static IDictionary<string, HashSet<decimal>> PostProcessMergedKeyValues { get; } = new Dictionary<string, HashSet<decimal>>();
-
-            /// <summary>
-            /// All of the SourceID's harvested for Legion Artifacts
-            /// </summary>
-            public static IDictionary<long, Dictionary<string, long>> ArtifactSources { get; } = new Dictionary<long, Dictionary<string, long>>();
             #endregion
 
             #region Filters
@@ -581,77 +586,96 @@ namespace ATT
                 {
                     string key = mergeKvp.Key;
                     // merge into anything that's not an Achievement, or into Achievements which are not within the Achievements category
-                    if (!ProcessingAchievementCategory || key != "achID")
+                    if (ProcessingAchievementCategory && key == "achID")
+                        continue;
+
+                    // does this data contain the key? and never merge into a Criteria directly
+                    if (!data.TryGetValue(key, out decimal keyValue) || data.ContainsKey("criteriaID"))
+                        continue;
+
+                    // for 'factionID' merge into, make sure it does not also have 'itemID' (commendations etc.)
+                    if (key == "factionID" && data.ContainsKey("itemID"))
+                        continue;
+
+                    var typeObjects = mergeKvp.Value;
+                    //LogDebug($"Post Process MergeInto Matched: {key}:{keyValue}");
+                    // get the container for objects of this key
+                    if (!typeObjects.TryGetValue(keyValue, out List<IDictionary<string, object>> mergeObjects))
+                        continue;
+
+                    // probably cleaner way to make this chunk re-usable if other merge-filtering is required in future... can't think atm
+
+                    // for '_encounterHash' merge into, make sure the merged Encounter matches the specific EventID
+                    if (key == "_encounterHash")
                     {
-                        // does this data contain the key? and never merge into a Criteria directly
-                        if (data.TryGetValue(key, out decimal keyValue) && !data.ContainsKey("criteriaID"))
+                        if (data.TryGetValue("e", out long eventID))
                         {
-                            // for 'factionID' merge into, make sure it does not also have 'itemID' (commendations etc.)
-                            if (key == "factionID" && data.ContainsKey("itemID"))
+                            // merge the objects into the data object
+                            foreach (IDictionary<string, object> mergeObject in mergeObjects)
                             {
-                                continue;
+                                if (!mergeObject.TryGetValue("e", out long mergingEventID) || mergingEventID != eventID)
+                                    continue;
+
+                                // track the data which is actually being merged into another group
+                                TrackPostProcessMergeKey(key, keyValue);
+
+                                // match EventID when merging
+                                // copy the actual object when merging under another Source, since it may merge into multiple Sources
+                                Merge(data, "g", mergeObject);
                             }
-
-                            var typeObjects = mergeKvp.Value;
-                            //LogDebug($"Post Process MergeInto Matched: {key}:{keyValue}");
-                            // get the container for objects of this key
-                            if (typeObjects.TryGetValue(keyValue, out List<IDictionary<string, object>> mergeObjects))
+                        }
+                        else
+                        {
+                            // merge the objects into the data object
+                            foreach (IDictionary<string, object> mergeObject in mergeObjects)
                             {
-                                // probably cleaner way to make this chunk re-usable if other merge-filtering is required in future... can't think atm
+                                if (mergeObject.ContainsKey("e"))
+                                    continue;
 
-                                // for '_encounterHash' merge into, make sure the merged Encounter matches the specific EventID
-                                if (key == "_encounterHash")
+                                // track the data which is actually being merged into another group
+                                TrackPostProcessMergeKey(key, keyValue);
+
+                                // copy the actual object when merging under another Source, since it may merge into multiple Sources
+                                Merge(data, "g", mergeObject);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        // merge the objects into the data object
+                        foreach (IDictionary<string, object> mergeObject in mergeObjects)
+                        {
+                            // If we're relative to a map object
+                            if (mergeObject.ContainsKey("criteriaID") && data.ContainsKey("mapID"))
+                            {
+                                // (and not under NYI or Unsorted)
+                                if (data.ContainsKey("_nyi") || data.ContainsKey("_unsorted"))
                                 {
-                                    if (data.TryGetValue("e", out long eventID))
-                                    {
-                                        // merge the objects into the data object
-                                        foreach (IDictionary<string, object> mergeObject in mergeObjects)
-                                        {
-                                            if (!mergeObject.TryGetValue("e", out long mergingEventID) || mergingEventID != eventID)
-                                            {
-                                                continue;
-                                            }
-
-                                            // track the data which is actually being merged into another group
-                                            TrackPostProcessMergeKey(key, keyValue);
-
-                                            // match EventID when merging
-                                            // copy the actual object when merging under another Source, since it may merge into multiple Sources
-                                            Merge(data, "g", mergeObject);
-                                        }
-                                    }
-                                    else
-                                    {
-                                        // merge the objects into the data object
-                                        foreach (IDictionary<string, object> mergeObject in mergeObjects)
-                                        {
-                                            if (mergeObject.ContainsKey("e"))
-                                            {
-                                                continue;
-                                            }
-
-                                            // track the data which is actually being merged into another group
-                                            TrackPostProcessMergeKey(key, keyValue);
-
-                                            // copy the actual object when merging under another Source, since it may merge into multiple Sources
-                                            Merge(data, "g", mergeObject);
-                                        }
-
-                                    }
+                                    // the sourced map is under NYI/Unsorted, so just 'pretend' we merged into it to bypass warnings
+                                    TrackPostProcessMergeKey(key, keyValue);
+                                    continue;
                                 }
-                                else
+
+                                var isPetBattleHeader = mergeObject.ContainsKey("pb");
+                                if (CUSTOM_HEADER_CONSTANTS.TryGetValue(isPetBattleHeader ? "PET_BATTLES" : "ACHIEVEMENTS", out long headerID))
                                 {
+                                    var header = new Dictionary<string, object>
+                                                {
+                                                    { "npcID", headerID },
+                                                    { "g", new List<object>{ mergeObject } }
+                                                };
+                                    if (isPetBattleHeader) header["pb"] = mergeObject["pb"];
                                     // track the data which is actually being merged into another group
                                     TrackPostProcessMergeKey(key, keyValue);
-
-                                    // merge the objects into the data object
-                                    foreach (IDictionary<string, object> mergeObject in mergeObjects)
-                                    {
-                                        // copy the actual object when merging under another Source, since it may merge into multiple Sources
-                                        Merge(data, "g", mergeObject);
-                                    }
+                                    Merge(data, "g", header);
+                                    continue;
                                 }
                             }
+
+                            // track the data which is actually being merged into another group
+                            TrackPostProcessMergeKey(key, keyValue);
+                            // copy the actual object when merging under another Source, since it may merge into multiple Sources
+                            Merge(data, "g", mergeObject);
                         }
                     }
                 }
@@ -871,6 +895,9 @@ namespace ATT
                 // Calculate the faction ID. (0 is no faction)
                 if (data.TryGetValue("races", out object racesRef) && racesRef is List<object> races)
                 {
+                    // Neutral Pandas technically get access to both horde and alliance things, the undecisive bastards.
+                    bool hadNeutralPandaren = races.Remove(24);
+
                     // Alliance Only?
                     if (ALLIANCE_ONLY.Matches(races))
                     {
@@ -883,10 +910,16 @@ namespace ATT
                         data["r"] = 1;  // Horde Only!
                         data.Remove("races");   // We do not need to include races for this as it is HORDE_ONLY.
                     }
-                    // All Races?
-                    else if (ALL_RACES.Matches(races))
+                    else
                     {
-                        data.Remove("races");   // We do not need to include races for this as it is ALL_RACES.
+                        // Add back neutral pandaren if we removed them.
+                        if (hadNeutralPandaren) races.Add(24);
+
+                        // All Races?
+                        if (ALL_RACES.Matches(races))
+                        {
+                            data.Remove("races");   // We do not need to include races for this as it is ALL_RACES.
+                        }
                     }
                 }
             }
@@ -1073,7 +1106,7 @@ namespace ATT
                 var AllContainerClones = new SortedDictionary<string, List<object>>(AllContainers);
 
                 var filename = Path.Combine(directory, "Categories.lua");
-                var content = ATT.Export.ExportCompressedLuaCategories(AllContainerClones).ToString().Replace("\r\n", "\n").Trim();
+                var content = ATT.Export.ExportCompressedLuaCategories(AllContainerClones).ToString();
                 if (!string.IsNullOrEmpty(DATA_REQUIREMENTS)) content = $"if not ({DATA_REQUIREMENTS}) then return; end \n{content}";
                 WriteIfDifferent(filename, content);
             }
@@ -1229,6 +1262,7 @@ end");
                         case "sym":
                         case "f":
                         case "learnedAt":
+                        case "petBattleLvl":
                         case "filterForRWP":
                             itemData[pair.Key] = pair.Value;
                             break;
@@ -1258,6 +1292,7 @@ end");
                         case "npcID":
                         case "bonusID":
                         case "modID":
+                        case "ItemAppearanceModifierID":
                         case "rank":
                         case "gender":
                         case "creatureID":
@@ -1325,6 +1360,7 @@ end");
                         case "sr":
                         case "factionID":
                         case "requireSkill":
+                        case "petBattleLvl":
                         case "followerID":
                         case "isRaid":
                         case "mapID":
@@ -1361,6 +1397,7 @@ end");
                         case "itemID":
                         case "npcID":
                         case "modID":
+                        case "ItemAppearanceModifierID":
                         case "rank":
                         case "gender":
                         case "creatureID":
@@ -1478,7 +1515,7 @@ end");
                 }
 
                 // Sort the old list to ensure that the order is consistent, but not for difficulties
-                if (field != "difficulties" && field != "zone-text-areas")
+                if (!NON_SORTED_FIELDS.Contains(field))
                     oldList.Sort();
 
                 if (oldList.Count == 0)
@@ -1523,6 +1560,18 @@ end");
                 if (oldList.Count == 0)
                 {
                     Log($"string-array field: '{field}' contained no data after merge.{Environment.NewLine}{ToJSON(item)}");
+                }
+            }
+
+            public static void MergeSingularFieldAsArray<T>(IDictionary<string, object> item, string field, object value)
+            {
+                try
+                {
+                    Merge(item, field, value);
+                }
+                catch
+                {
+                    LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
                 }
             }
 
@@ -1691,6 +1740,7 @@ end");
                     case "npcID":
                     case "displayID":
                     case "modID":
+                    case "ItemAppearanceModifierID":
                     case "bonusID":
                     case "runeforgepowerID":
                     case "raceID":
@@ -1703,6 +1753,7 @@ end");
                     case "rank":
                     case "gender":
                     case "ilvl":
+                    case "petBattleLvl":
                     case "q":
                     case "e":
                     case "r":
@@ -1722,6 +1773,8 @@ end");
                     case "uid":
                     case "tmogSetID":
                     case "_multiDifficultyID":
+                    case "trackID":
+                    case "catalystID":
                         {
                             try
                             {
@@ -1735,71 +1788,7 @@ end");
                         }
 
                     // Integer -> Integer-Array Data Type conversion
-                    case "sourceAchievement":
-                        {
-                            try
-                            {
-                                // Convert a single sourceAchievement to a sourceAchievements list.
-                                Merge(item, "sourceAchievements", Convert.ToInt64(value));
-                            }
-                            catch
-                            {
-                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
-                            }
-                            break;
-                        }
-                    case "sourceQuest":
-                        {
-                            try
-                            {
-                                // Convert a single sourceQuest to a sourceQuests list.
-                                Merge(item, "sourceQuests", Convert.ToInt64(value));
-                            }
-                            catch
-                            {
-                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
-                            }
-                            break;
-                        }
-                    case "altQuestID":
-                        {
-                            try
-                            {
-                                // Convert a single altQuestID into an altQuests list.
-                                Merge(item, "altQuests", Convert.ToInt64(value));
-                            }
-                            catch
-                            {
-                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
-                            }
-                            break;
-                        }
-                    case "qg":
-                        {
-                            try
-                            {
-                                // Convert a single qg to a qgs list.
-                                Merge(item, "qgs", Convert.ToInt64(value));
-                            }
-                            catch
-                            {
-                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
-                            }
-                            break;
-                        }
-                    case "cr":
-                        {
-                            try
-                            {
-                                // Convert a single cr to a crs list.
-                                Merge(item, "crs", Convert.ToInt64(value));
-                            }
-                            catch
-                            {
-                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
-                            }
-                            break;
-                        }
+                    // now handled via root.config
 
                     // Integer-Array Data Type Fields (stored as List<object> for usability reasons)
                     case "c":
@@ -1820,10 +1809,15 @@ end");
                     case "_npcs":
                     case "_objects":
                     case "_achievements":
+                    case "_exploration":
                     case "_factions":
+                    case "_maps":
                     case "extraTransmogSetSpells":
                     case "_tmogSetIDs":
                     case "_sourceIDs":
+                    case "_species":
+                    case "_extraSpells":
+                    case "qis":
                         {
                             MergeIntegerArrayData(item, field, value);
                             break;
@@ -2032,6 +2026,13 @@ end");
                     // Report all other fields.
                     default:
                         {
+                            // Config-defined fields
+                            if (SINGULAR_PLURAL_FIELDS_LONG.TryGetValue(field, out string pluarlFieldName))
+                            {
+                                MergeSingularFieldAsArray<long>(item, pluarlFieldName, value);
+                                return;
+                            }
+
                             // Integer Data Type Fields
                             if (ATT.Export.ObjectData.ContainsObjectType(field))
                             {
@@ -2552,15 +2553,20 @@ end");
                     found = true;
                     list = new List<object> { vallng };
                 }
-                else if (value is double valdbl)
+                else if (value is decimal valDec)
                 {
                     found = true;
-                    list = new List<object> { valdbl };
+                    list = new List<object> { valDec };
                 }
                 else if (value is float valflt)
                 {
                     found = true;
                     list = new List<object> { valflt };
+                }
+                else if (value is double valdbl)
+                {
+                    found = true;
+                    list = new List<object> { valdbl };
                 }
                 else if (value is bool valbol)
                 {

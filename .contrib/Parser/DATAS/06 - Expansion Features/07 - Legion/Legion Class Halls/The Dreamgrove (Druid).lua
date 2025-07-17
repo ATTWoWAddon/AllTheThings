@@ -3,6 +3,7 @@
 -------------------------------------------------------------------
 DAILY_DREAMWAY_EVENT_ROLL = createHeader({
 	readable = "Daily Dreamway Event Roll",
+	standalone = true,
 	icon = 1128042,
 	text = {
 		en = "Event Roll",
@@ -21,6 +22,7 @@ DAILY_DREAMWAY_EVENT_ROLL = createHeader({
 });
 DUSKWOOD_ACTIVE = createHeader({
 	readable = "Duskwood Active",
+	standalone = true,
 	icon = 236757,
 	text = {
 		en = [[~DUNGEON_FLOOR_NIGHTMARERAID8.." "..]] .. WOWAPI_GetSpellName(133137),
@@ -32,6 +34,7 @@ DUSKWOOD_ACTIVE = createHeader({
 });
 FERALAS_ACTIVE = createHeader({
 	readable = "Feralas Active",
+	standalone = true,
 	icon = 236764,
 	text = {
 		en = [[~DUNGEON_FLOOR_NIGHTMARERAID9.." "..]] .. WOWAPI_GetSpellName(133137),
@@ -43,6 +46,7 @@ FERALAS_ACTIVE = createHeader({
 });
 THE_HINTERLANDS_ACTIVE = createHeader({
 	readable = "The Hinterlands Active",
+	standalone = true,
 	icon = 236780,
 	text = {
 		en = [[~DUNGEON_FLOOR_NIGHTMARERAID7.." "..]] .. WOWAPI_GetSpellName(133137),
@@ -54,6 +58,7 @@ THE_HINTERLANDS_ACTIVE = createHeader({
 });
 DUSKWOOD_ACTIVATED = createHeader({
 	readable = "Duskwood Activated",
+	standalone = true,
 	icon = 236757,
 	text = {
 		en = [[~DUNGEON_FLOOR_NIGHTMARERAID8.." "..]] .. WOWAPI_GetSpellName(78741),
@@ -65,6 +70,7 @@ DUSKWOOD_ACTIVATED = createHeader({
 });
 FERALAS_ACTIVATED = createHeader({
 	readable = "Feralas Activated",
+	standalone = true,
 	icon = 236764,
 	text = {
 		en = [[~DUNGEON_FLOOR_NIGHTMARERAID9.." "..]] .. WOWAPI_GetSpellName(78741),
@@ -77,6 +83,7 @@ FERALAS_ACTIVATED = createHeader({
 THE_HINTERLANDS_ACTIVATED = createHeader({
 	readable = "The Hinterlands Activated",
 	icon = 236780,
+	standalone = true,
 	text = {
 		en = [[~DUNGEON_FLOOR_NIGHTMARERAID7.." "..]] .. WOWAPI_GetSpellName(78741),
 		ru = "Внутренние земли - активирован",
@@ -331,7 +338,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["g"] = {
 							title(332),	-- <Name>, Guardian of G'Hanir
 							i(128306, {	-- G'Hanir, the Mother Tree
-								artifact(45),	-- Standard Appearance
+								["ItemAppearanceModifierID"] = 9,
+								["groups"] = {
+									artifact(45),	-- Standard Appearance
+								},
 							}),
 						},
 					}),
@@ -647,7 +657,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 46.9, 69.5, DEADWIND_PASS },
 						["g"] = {
 							i(128858, {	-- Scythe of Elune
-								artifact(244),	-- Standard Appearance
+								["ItemAppearanceModifierID"] = 9,
+								["groups"] = {
+									artifact(244),	-- Standard Appearance
+								},
 							}),
 						},
 					}),
@@ -686,22 +699,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 73.8, 38.4, VALSHARAH },
 						["g"] = {
 							i(128860, {	-- Fangs of Ashamane
-								artifact(426, {	-- Standard Troll
-									["displayID"] = 66779,	-- Rainbow Druid Form
-									["races"] = { TROLL, ZANDALARI },
-								}),
-								artifact(427, {	-- Standard Tauren
-									["displayID"] = 66777,	-- Brown Druid Form
-									["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
-								}),
-								artifact(428, {	-- Standard Worgen / Kultiran
-									["displayID"] = 66778,	-- Light Brown Form
-									["races"] = { WORGEN, KULTIRAN },
-								}),
-								artifact(430, {	-- Standard Night Elf
-									["displayID"] = 66780,	-- Purple Druid Form
-									["races"] = { NIGHTELF },
-								}),
+								["ItemAppearanceModifierID"] = 9,
+								["groups"] = {
+									artifact(426, {	-- Standard Troll
+										["displayID"] = 66779,	-- Rainbow Druid Form
+										["races"] = { TROLL, ZANDALARI },
+									}),
+									artifact(427, {	-- Standard Tauren
+										["displayID"] = 66777,	-- Brown Druid Form
+										["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
+									}),
+									artifact(428, {	-- Standard Worgen / Kultiran
+										["displayID"] = 66778,	-- Light Brown Form
+										["races"] = { WORGEN, KULTIRAN },
+									}),
+									artifact(430, {	-- Standard Night Elf
+										["displayID"] = 66780,	-- Purple Druid Form
+										["races"] = { NIGHTELF },
+									}),
+								},
 							}),
 						},
 					}),
@@ -803,6 +819,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["coord"] = { 43.5, 58.3, BROKEN_SHORE },
 						["sourceQuests"] = { 46674 },	-- The Preservation of Nature
+						["g"] = {
+							i(147282),	-- Impsorrow Missive (QI!)
+						},
 					}),
 					q(42035, {	-- Tracking the Enemy
 						["lvl"] = 103,
@@ -829,18 +848,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["g"] = {
 							i(128821, {	-- Claws of Ursoc
-								artifact(265, {	-- Standard Troll
-									["races"] = { TROLL, ZANDALARI },
-								}),
-								artifact(264, {	-- Standard Tauren
-									["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
-								}),
-								artifact(266, {	-- Standard Worgen / Kultiran
-									["races"] = { WORGEN, KULTIRAN },
-								}),
-								artifact(121, {	-- Standard Night Elf
-									["races"] = { NIGHTELF },
-								}),
+								["ItemAppearanceModifierID"] = 9,
+								["groups"] = {
+									artifact(265, {	-- Standard Troll
+										["races"] = { TROLL, ZANDALARI },
+									}),
+									artifact(264, {	-- Standard Tauren
+										["races"] = { TAUREN, HIGHMOUNTAIN_TAUREN },
+									}),
+									artifact(266, {	-- Standard Worgen / Kultiran
+										["races"] = { WORGEN, KULTIRAN },
+									}),
+									artifact(121, {	-- Standard Night Elf
+										["races"] = { NIGHTELF },
+									}),
+								},
 							}),
 						},
 					}),
@@ -909,6 +931,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					},
 					["achievementID"] = 11217,
 					["modelScale"] = 2.25,
+				}),
+				n(TREASURES, {
+					o_repeated({	-- Spirit Berries
+						["coord"] = { 45.6, 63.7, THE_DREAMGROVE },
+						["g"] = {
+							o(253157),	-- Spirit Berries
+							o(253183),	-- Spirit Berries
+							i(140347),	-- Spirit Berries
+							i(140351),	-- Sunfruit
+						},
+					}),
 				}),
 				n(VENDORS, {
 					n(112323, {	-- Amurra Thistledew <Proprietor>

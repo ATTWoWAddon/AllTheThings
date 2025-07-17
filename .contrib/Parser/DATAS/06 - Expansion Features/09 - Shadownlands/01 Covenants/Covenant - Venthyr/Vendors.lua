@@ -700,7 +700,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			n(178176, {	-- Night Guardian Jethraasa <Raid Finder Nathrian Weaponsmith>
 				["coord"] = { 55.1, 46.1, SINFALL_DEPTHS },
 				["cr"] = 174183,	-- Solivane <Raid Finder Nathrian Weaponsmith> (no longer the vendor for anyone who has progressed through Chapter 5/9 of Chains of Domination)
-				["g"] = bubbleDown({ ["modID"] = 4 }, {	-- LFR
+				["g"] = bubbleDown({ ["modID"] = 4, ["ItemAppearanceModifierID"] = 0, }, {	-- LFR
 					i(182421, {	-- Barbed-Edge of the Stone Legion
 						["cost"] = {
 							{ "i", modItemId(183893,04), 1 },	-- LFR Abominable Anima Spherule - 187
@@ -908,7 +908,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			n(174709, {	-- Stoneweaver McConnell <Heroic Nathrian Weaponsmith>
 				["coord"] = { 45.4, 65.0, SINFALL_DEPTHS },
-				["g"] = bubbleDown({ ["modID"] = 5 }, {	-- Heroic
+				["g"] = bubbleDown({ ["modID"] = 5, ["ItemAppearanceModifierID"] = 0, }, {	-- Heroic
 					i(182421, {	-- Barbed-Edge of the Stone Legion
 						["cost"] = {
 							{ "i", modItemId(183893,05), 1 },	-- Heroic Abominable Anima Spherule - 213

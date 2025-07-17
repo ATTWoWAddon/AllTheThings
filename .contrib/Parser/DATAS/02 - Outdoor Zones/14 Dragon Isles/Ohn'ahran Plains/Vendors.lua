@@ -34,9 +34,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["description"] = "Pet!",
 				["coord"] = { 61.7, 41.0, OHNAHRAN_PLAINS },
 				["g"] = {
-					i(195453, {	-- Ludo's Stash Map
-						["questID"] = 67718,
-					}),
+					i(195453),	-- Ludo's Stash Map (CI!)
 				},
 			}),
 			n(190015, {	-- Ohn Meluun
@@ -81,17 +79,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(199342, {	-- Weighted Sac of Swog Treasures
 						["cost"] = { { "i", 199339, 1}, },	-- 1xSilver Coin of the Isles
 						["groups"] = {
-							i(198438, {	-- Draconic Recipe in a Bottle
-								["sym"] = {{ "fill" }},	-- simply fill this item
-							}),
+							i(198438),	-- Draconic Recipe in a Bottle
 						},
 					}),
 					i(202102, {	-- Immaculate Sac of Swog Treasures
 						["cost"] = { { "i", 199340, 1}, },	-- 1x Gold Coin of the Isles
 						["groups"] = {
-							i(198438, {	-- Draconic Recipe in a Bottle
-								["sym"] = {{ "fill" }},	-- simply fill this item
-							}),
+							i(198438),	-- Draconic Recipe in a Bottle
 							i(199234),	-- Schematic: Khaz'gorite Fisherfriend (RECIPE!)
 							i(201736),	-- Technique: Cliffside Wylderdrake: Steel and Yellow Armor (RECIPE!)
 							i(201737),	-- Technique: Highland Drake: Steel and Yellow Armor (RECIPE!)

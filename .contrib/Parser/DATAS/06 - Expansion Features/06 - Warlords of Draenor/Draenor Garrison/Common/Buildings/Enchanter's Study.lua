@@ -14,17 +14,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"]
 						["isDaily"] = true,
 						["cost"] = {{ "i", 109693, 50 }},	-- 50x Draenic Dust
 					}),
-					q(36310, {	-- The Arakkoan Enchanter
+					q(36310, {	-- The Arakkoan Enchanter [A]
 						["requireSkill"] = ENCHANTING,
 						["sourceQuests"] = { 36308 },	-- Enchanted Highmaul Bracer
 						["provider"] = { "n", 83491 },	-- Eileese Shadowsong
+						["coord"] = { 45.4, 53.4, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
+						["g"] = { i(115350) },	-- Enchanted Highmaul Bracer (QI!)
 					}),
-					q(36256, {	-- The Arakkoan Enchanter
+					q(36256, {	-- The Arakkoan Enchanter [H]
 						["requireSkill"] = ENCHANTING,
 						["sourceQuests"] = { 36255 },	-- Enchanted Highmaul Bracer
 						["provider"] = { "n", 83482 },	-- Yu'rina the Mystic
+						["coord"] = { 47.6, 38.7, FROSTWALL },
 						["races"] = HORDE_ONLY,
+						["g"] = { i(115350) },	-- Enchanted Highmaul Bracer (QI!)
 					}),
 					q(36645, {	-- Your First Enchanting Work Order
 						["provider"] = { "n", 77354 },	-- Ayada the White

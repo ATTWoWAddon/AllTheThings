@@ -1,6 +1,6 @@
 local _, app = ...;
 if not app.IsClassic then return; end	-- This is only available in Classic!
-local L, settings = app.L.SETTINGS_MENU, app.Settings;
+local L, settings = app.L, app.Settings;
 
 -- Settings: General Page
 local child = settings:CreateOptionsPage("Phases", appName)
@@ -22,12 +22,7 @@ local phases = L.PHASES;
 local UnobtainableFilterOnClick = function(self)
 	local checked = self:GetChecked();
 	if checked then
-		-- If the phase is active, fall through to the base setting.
-		if UnobtainableSettingsBase.__index[self.u] then
-			settings:SetUnobtainableFilter(self.u, nil);
-		else
-			settings:SetUnobtainableFilter(self.u, true);
-		end
+		settings:SetUnobtainableFilter(self.u, true);
 	else
 		settings:SetUnobtainableFilter(self.u, false);
 	end

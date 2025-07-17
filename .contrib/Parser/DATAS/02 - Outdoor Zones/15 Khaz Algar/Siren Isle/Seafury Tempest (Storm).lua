@@ -97,7 +97,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					["coord"] = { 37.9, 76.1, 2375 },
 					["questID"] = 85406,
 					["g"] = {
-						i(235017),	-- Glittering Vault Shard (TOY!)
+						i(235017, {	-- Glittering Vault Shard (TOY!)
+							["description"] = "The toy can drop on every kill and is unaffected by daily lockout.",
+						}),
 						i(232571),	-- Whirling Runekey
 					},
 				}),
@@ -111,8 +113,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					},
 				}),
 				o(499127, {	-- Runemarked Coffer
-					-- TODO: The Forgotten Vault + storm phase
-					-- TODO: I don't make screenshot for this one, so I'm unsure if it something in loot or it is related to treasure chest)
 					["description"] = "In the back of the left room of the Forgotten Vault during a storm.",
 					["coord"] = { 26.6, 23.9, 2375 },
 					["questID"] = 85859,
@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				i(234379, {	-- Crackleroar (PET!)
 					["crs"] = { 230827 },	-- Stormtouched Pridetalon
 				}),
-				i(233498, {	-- Storminfused Snapdragon Treat
+				i(233498, {	-- Storminfused Snapdragon Treat (CI!)
 					["description"] = "You must have the Prismatic Snapdragon Mount before this can drop.\n\nCan be looted from crab mobs during tempest.",
 					["crs"] = {
 						231986,	-- Deepwater Matriarch

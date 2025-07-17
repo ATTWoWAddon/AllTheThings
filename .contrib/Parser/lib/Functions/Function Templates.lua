@@ -88,6 +88,16 @@ FUNCTION_TEMPLATES = {
 			end]];
 			return [[_.OnInitDB.]]..OnInitName..[[]]
 		end,
+		ClassORRaceRequirements = [[function(t)
+			if _.indexOf(t.races, _.RaceIndex) then
+				t.c_disp = t.c
+				t.c = nil;
+			elseif _.indexOf(t.c, _.ClassIndex) then
+				t.r_disp = t.races
+				t.races = nil;
+			end
+			return t;
+		end]],
 	},
 	-- TODO: use _.IsSpellKnownHelper once Classic uses Classes/Spell.lua
 	-- Generates an OnTooltip function into ExportDB.OnTooltipDB to return the cooldown status of a

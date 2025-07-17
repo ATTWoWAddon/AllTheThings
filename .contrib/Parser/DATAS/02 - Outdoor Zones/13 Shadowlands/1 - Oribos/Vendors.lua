@@ -162,14 +162,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					i(187997, {	-- Eternal Heirloom Armor Casing
 						["cost"] = 50000000,	-- 5000g
-						["sym"] = { { "fill" } },	-- simply fill this item
 					}),
 					i(187998, {	-- Eternal Heirloom Scabbard
 						["cost"] = 75000000,	-- 7500g
-						["sym"] = { { "fill" } },	-- simply fill this item
 					}),
-					i(190184, {	-- Incense of Infinity
-						["questID"] = 65623,
+					i(190184, {	-- Incense of Infinity (CI!)
 						["cost"] = 5000000,	-- 500g
 						["sym"] = {
 							{"select","expansionID",EXPANSION.SL},	-- Select Shadowlands
@@ -406,7 +403,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				--]]
 			}),
 			n(167881, {	-- Ta'lan the Antiquary <Cartel Ta>
-				["coord"] = { 51.3, 43.0, 1672 },
+				["coord"] = { 51.3, 43.0, 1672 },	-- Broker's Den
 				["g"] = {
 					i(180971, {	-- Aquamarine Cartel Chit
 						["description"] = "Take this to Acquirer Ta'gosh in Oribos |cffffffff(61.7, 72.3)|r.",

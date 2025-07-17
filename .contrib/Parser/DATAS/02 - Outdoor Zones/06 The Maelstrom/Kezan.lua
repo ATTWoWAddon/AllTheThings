@@ -49,6 +49,21 @@ root(ROOTS.Zones, {
 						["qg"] = 35222,	-- Trady Prince Gallywix
 						["sourceQuest"] = 14116,	-- The Uninvited Guest
 					}),
+					q(14008, {	-- Arcane Missiles [Cata] / Frost Nova [MoP+] (Goblin)
+						["qg"] = 34689,	-- Fizz Lighter <Mage Trainer>
+						["coord"] = { 59.6, 73.8, KEZAN },
+						["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+						["races"] = { GOBLIN },
+						["classes"] = { MAGE },
+					}),
+					q(14013, {	-- Charge (Goblin)
+						["qg"] = 34697,	-- Warrior-Matic NX-01 <Warrior Trainer>
+						["coord"] = { 60.6, 77.4, KEZAN },
+						["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+						["classes"] = { WARRIOR },
+						["races"] = { GOBLIN },
+						["lvl"] = lvlsquish(3, 3, 1),
+					}),
 					q(14070, {	-- Do it Yourself
 						["coord"] = { 56.4, 76.9, KEZAN },
 						["qg"] = 34668,	-- Sassy Hardwrench
@@ -60,6 +75,14 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_7_0_3 },
 							}),
 						},
+					}),
+					q(14010, {	-- Eviscerate (Goblin)
+						["qg"] = 34693,	-- Slinky Sharpshiv <Rogue Trainer>
+						["coord"] = { 59.2, 76.2, KEZAN },
+						["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+						["classes"] = { ROGUE },
+						["races"] = { GOBLIN },
+						["lvl"] = lvlsquish(3, 3, 1),
 					}),
 					q(24503, {	-- Fourth and Goal [Auto-Given in Mech]
 						["qg"] = 37106,	-- Coach Crosscheck
@@ -88,6 +111,22 @@ root(ROOTS.Zones, {
 						["coord"] = { 60.2, 74.5, KEZAN },
 						["qg"] = 34872,	-- Foreman Dampwick
 						["sourceQuest"] = 14138,	-- Taking Care of Business
+					}),
+					q(14009, {	-- Flash Heal [Cata] / Learning the Word [MoP+] (Goblin)
+						["qg"] = 34692,	-- Sister Goldskimmer <Priest Trainer>
+						["coord"] = { 58.8, 76.8, KEZAN },
+						["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+						["classes"] = { PRIEST },
+						["races"] = { GOBLIN },
+						["lvl"] = lvlsquish(3, 3, 1),
+					}),
+					q(14012, {	-- Immolate [Cata] / Corruption [MoP+] (Goblin)
+						["qg"] = 34696,	-- Evol Fingers <Warlock Trainer>
+						["coord"] = { 58.2, 74.2, KEZAN },
+						["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+						["classes"] = { WARLOCK },
+						["races"] = { GOBLIN },
+						["lvl"] = lvlsquish(3, 3, 1),
 					}),
 					q(25473, {	-- Kaja'Cola
 						["coord"] = { 60.2, 74.5, KEZAN },
@@ -160,6 +199,13 @@ root(ROOTS.Zones, {
 							i(54303),	-- Total Disaster Bracers
 						},
 					}),
+					q(14011, {	-- Primal Strike (Goblin)
+						["qg"] = 34695,	-- Maxx Avalanche <Shaman Trainer>
+						["coord"] = { 59.6, 77, KEZAN },
+						["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+						["races"] = { GOBLIN },
+						["classes"] = { SHAMAN },
+					}),
 					q(24567, {	-- Report for Tryouts
 						["coord"] = { 58.3, 76.4, KEZAN },
 						["qg"] = 34874,	-- Megs Dreadshredder
@@ -182,6 +228,14 @@ root(ROOTS.Zones, {
 							i(54298),	-- Skyrocket Gun
 							i(54300),	-- Tight-Fitting Leather Leggings
 						},
+					}),
+					q(14007, {	-- Steady Shot (Goblin)
+						["qg"] = 34673,	-- Bamm Megabomb <Hunter Trainer>
+						["coord"] = { 60.6, 77.8, KEZAN },
+						["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+						["classes"] = { HUNTER },
+						["races"] = { GOBLIN },
+						["lvl"] = lvlsquish(3, 3, 1),
 					}),
 					q(14138, {	-- Taking Care of Business
 						["coord"] = { 56.4, 76.9, KEZAN },
@@ -259,6 +313,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CATA, bubbleDownSelf({ ["tim
 	m(THE_MAELSTROM, {
 		m(KEZAN, {
 			n(QUESTS, {
+				q(14137, { ["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 } }),	-- Class Training (Tracking Event). Triggers after doing one of your class skill quests
 				q(14114),	-- Kezan - The New You tracking event. Triggers after you complete "The New You"
 				q(14139),	-- Kezan - Phase 1 complete. Triggers after turning in "Do it Yourself"
 				q(14158),	-- Kezan - Phase 6 complete. Triggers when quest "447" becomes available

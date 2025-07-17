@@ -98,22 +98,22 @@ root(ROOTS.Zones, {
 								i(128625, {	-- Formula: Leylight Brazier (RECIPE!)
 									["cost"] = { { "c", 1149, 250 }, },	-- 250x Sightless Eye
 								}),
-								i(138031, {	-- Portal Key: Abandoned Shack
+								i(138031, {	-- Portal Key: Abandoned Shack (CI!)
 									["cost"] = { { "c", 1149, 100 }, },	-- 100x Sightless Eye
 								}),
-								i(138030, {	-- Portal Key: Alchemists' Lair
+								i(138030, {	-- Portal Key: Alchemists' Lair (CI!)
 									["cost"] = { { "c", 1149, 100 }, },	-- 100x Sightless Eye
 								}),
-								i(138028, {	-- Portal Key: Black Market
+								i(138028, {	-- Portal Key: Black Market (CI!)
 									["cost"] = { { "c", 1149, 100 }, },	-- 100x Sightless Eye
 								}),
-								i(138029, {	-- Portal Key: Inn Entrance
+								i(138029, {	-- Portal Key: Inn Entrance (CI!)
 									["cost"] = { { "c", 1149, 100 }, },	-- 100x Sightless Eye
 								}),
-								i(138032, {	-- Portal Key: Rear Entrance
+								i(138032, {	-- Portal Key: Rear Entrance (CI!)
 									["cost"] = { { "c", 1149, 100 }, },	-- 100x Sightless Eye
 								}),
-								i(138027, {	-- Portal Key: Sewer Guard Station
+								i(138027, {	-- Portal Key: Sewer Guard Station (CI!)
 									["cost"] = { { "c", 1149, 50 }, },	-- 50x Sightless Eye
 								}),
 								i(141058, {	-- Technique: Glyph of Critterhex (RECIPE!)
@@ -284,18 +284,3 @@ root(ROOTS.Zones, {
 		}),
 	}),
 });
-
--- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
--- 	m(BROKEN_ISLES, {
--- 		m(LEGION_DALARAN, {
--- 			m(LEGION_THE_UNDERBELLY, {
--- 				q(42527),	-- FLAG - Portal - Guard Station - using "Portal Key: Sewer Guard Station" (itemID 138027)
--- 				q(42528),	-- FLAG - Portal - Black Market - using "Portal Key: Black Market" (itemID 138028)
--- 				q(42529),	-- FLAG - Portal - Inn Entrance - using "Portal Key: Inn Entrance" (itemID 138029)
--- 				q(42530),	-- FLAG - Portal - Alchemy Room - using "Portal Key: Alchemists' Lair" (itemID 138030)
--- 				q(42531),	-- FLAG - Portal - Abandoned Shack - using "Portal Key: Abandoned Shack" (itemID 138031)
--- 				q(42532),	-- FLAG - Portal - Rear Entrance - using "Portal Key: Rear Entrance" (itemID 138032)
--- 			}),
--- 		}),
--- 	}),
--- })));

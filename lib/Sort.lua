@@ -287,6 +287,44 @@ app.SortDefaults = setmetatable({
 	Accessibility = function(a, b)
 		return calculateAccessibility(a) < calculateAccessibility(b);
 	end,
+	MapClassSortType = function(a, b)
+		-- If either object doesn't exist
+		if a then
+			if not b then
+				return true;
+			end
+		elseif b then
+			return false;
+		else
+			-- neither a or b exists, equality returns false
+			return false;
+		end
+		if a.mapID or a.maps then
+			if not (b.mapID or b.maps) then
+				return true;
+			end
+		elseif b.mapID or b.maps then
+			return false;
+		end
+		if a.isRaid then
+			if not b.isRaid then
+				return true;
+			end
+		elseif b.isRaid then
+			return false;
+		end
+		if a.isBreadcrumb then
+			if not b.isBreadcrumb then
+				return true;
+			end
+		elseif b.isBreadcrumb then
+			return false;
+		end
+		-- Any two similar-type groups with text
+		a = toLowerString(a.text);
+		b = toLowerString(b.text);
+		return a < b;
+	end,
 	name = function(a,b)
 		-- If either object doesn't exist
 		if a then

@@ -117,8 +117,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(163615, {	-- Lost Sea Scroll (A)
 						["description"] = "|CFFFF0000Turn in to Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
 					}),
-					i(166749, {	-- Lyrics: Song of the Sea
-						["questID"] = 54859,
+					i(166749, {	-- Lyrics: Song of the Sea (CI!)
 						["cost"] = { { "c", 1710, 25 }, },	-- 25x Seaferer's Dubloon
 					}),
 					i(160290, {	-- Red Tricorne Hat
@@ -231,6 +230,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 76.8, 11.2, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
+					i(159959),	-- Nylon Thread
 					i(168029, {	-- Pattern: Synchronous Thread
 						["description"] = "This recipe is for relearning the Synchronous Thread after you have completed the Tools of the Trade questline.",
 						["sourceQuests"] = {
@@ -292,13 +292,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 73.5, 8.57, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
+					i(160298),	-- Durable Flux
 					i(168022, {	-- Plans: Khaz'gorian Smithing Hammer (RECIPE!)
 						["sourceQuests"] = { 50275 },	-- Anvil's Away (A)
 						["timeline"] = { ADDED_8_1_5 },
 					}),
 				},
 			}),
-			n(136059, {	-- Layla Evenkeel
+			n(136059, {	-- Layla Evenkeel <Engineering Trainer>
 				["coord"] = { 77.6, 14.3, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
@@ -311,6 +312,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							r(283401),	-- Ub3r-Module: Ub3r S3ntry Mk. X8.0 (RECIPE!)
 						},
 					}),
+					i(160502),	-- Chemical Blasting Cap
+					i(163569),	-- Insulated Wiring
 				},
 			}),
 			n(142564, {	-- Leedan Gustaf <Profession Liason> [NOTE: PvP Craftable Recipes]
@@ -443,6 +446,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					}, {	-- Revered
 						i(161976, {	-- Admiralty Marine's Duffel
 							["cost"] = 30000000,	-- 3,000g
+							["g"] = { h(i(166700)) },	-- Durable Sailor's Duffel (xfer only)
 						}),
 						i(163200, {	-- Cursed Spyglass (TOY!)
 							["cost"] = 18000000,	-- 1,800g
@@ -633,7 +637,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["g"] = bubbleDownClassicRep(FACTION_7TH_LEGION, {
 					{		-- Neutral
-						i(166445),	-- 7th Legion Scouting Map
+						i(166445),	-- 7th Legion Scouting Map (CI!)
 					}, {	-- Friendly
 					}, {	-- Honored
 						i(160536, {	-- 7th Legionnaire's Cloak
@@ -736,6 +740,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(130399, {	-- Zooey Inksprocket <Inscription Trainer>
 				["coord"] = { 73.4, 6.3, BORALUS },
 				["g"] = {
+					i(158205),	-- Acacia Powder
 					TempForceMisc(i(168026)),	-- Book of Techniques: Sanguine Feather Quill of Lana'thel
 				},
 			}),

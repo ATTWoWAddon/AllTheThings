@@ -55,10 +55,8 @@ root(ROOTS.Zones, {
 					ach(8120),	-- Direhorn in a China Shop
 					ach(8117),	-- For the Ward!
 					ach(8051),	-- Gods and Monsters (automated)
-					ach(8099, {		-- Isle of Thunder
-						["sym"] = {{ "achievement_criteria" }},
-					}),
-					ach(8101, {	-- It Was Worth Every Ritual Stone
+					ach(8099),	-- Isle of Thunder [TODO: This looks weird]
+					ach(8101, {	-- It Was Worth Every Ritual Stone [TODO: This looks weird]
 						crit(22814),	-- Spirit of Warlord Teng
 						crit(22815),	-- Kor'dok and Tinzo the Emberkeeper
 						crit(22812),	-- Echo of Kros
@@ -73,24 +71,17 @@ root(ROOTS.Zones, {
 						crit(22844),	-- All four blessings active
 						crit(22845),	-- No blessings active
 					}),
-					ach(8100),	-- Pay to Slay
+					ach(8100),	-- Pay to Slay [TODO: This looks weird]
 					ach(8114),	-- Platform Hero
 					ach(8107),	-- Ready for RAAAAIIIIDDD?!?ing
 					ach(8050),	-- Rumbles of Thunder (automated)
 					ach(8115),	-- Speed Metal
 					ach(8049),	-- The Zandalari Prophecy (automated)
-					ach(8110, {	-- These Mogu Have Gotta Go-gu
-						ach(8109),	-- The Mogu Below-gu
-						crit(22836, {	-- Haqin of the Hundred Spears slain
-							["_npcs"] = { 69800 },
-						}),
-						crit(22837, {	-- Forgemaster Deng slain
-							["_npcs"] = { 69809 },
-						}),
-						crit(22838, {	-- Sparkmancer Vu slain
-							["_npcs"] = { 69961 },
-						}),
+					ach(8109, {	-- The Mogu Below-gu
+						["_noautomation"] = true,	-- Glorious! shows them all anyways
+						["sym"] = {{"partial_achievement",8110}},	-- These Mogu Have Gotta Go-gu
 					}),
+					ach(8110),	-- These Mogu Have Gotta Go-gu (automated)
 					ach(8111, {	-- This Isn't Even My Final Form
 						["description"] = "Kill Drakkari God-Hulk patrolling on foot path near coord, then drink a Zandalari Potion nearby.",
 						["coord"] = { 36.6, 70.2, ISLE_OF_THUNDER },
@@ -109,9 +100,7 @@ root(ROOTS.Zones, {
 					ach(8116, {	-- You Made Me Bleed My Own Blood
 						["provider"] = { "n", 69435 },	-- Fleshcrafter Hoku
 					}),
-					ach(8212, {	-- Zandalari Library Card
-						["sym"] = {{ "achievement_criteria" }},
-					}),
+					ach(8212),	-- Zandalari Library Card
 				}),
 				petbattle(filter(BATTLE_PETS, {
 					pet(1181),	-- Elder Python (PET!)
@@ -208,7 +197,10 @@ root(ROOTS.Zones, {
 									["coord"] = { 63.3, 72.3, ISLE_OF_THUNDER },
 								}),
 								q(32644, {	-- The Assault on Shaol'mara
-									["provider"] = { "n", 67992 },	-- Lady Jaina Proudmoore
+									["providers"] = {
+										{ "n", 67992 },	-- Lady Jaina Proudmoore <Leader of the Kirin Tor>
+										{ "n", 70370 },	-- Lady Jaina Proudmoore <Leader of the Kirin Tor>
+									},
 									["coord"] = { 34.7, 89.5, ISLE_OF_THUNDER },
 								}),
 								q(32656),	-- The Fall of Shan Bu (A)
@@ -444,7 +436,10 @@ root(ROOTS.Zones, {
 								["isWeekly"] = true,
 								["races"] = HORDE_ONLY,
 							},{
-								q(32641),	-- Champions of the Thunder King (H)
+								q(32641, {	-- Champions of the Thunder King (H)
+									["qg"] = 70160,	-- Taran Zhu
+									["coord"] = { 51.4, 46.1, ISLE_OF_THUNDER },
+								}),
 							})),
 							-- Daily
 							n(QUESTS, sharedData({
@@ -587,29 +582,47 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(QUESTS, {
-					q(32505, {	-- The Crumbled Chamberlain
-						["isWeekly"] = true,
-						["g"] = {
-							ach(8105),	-- The Crumble Bundle
+					q(32621, {	-- Lightning Steel
+						["provider"] = { "i", 94721 },	-- Strange Metal Ingot
+						["coord"] = { 57.6, 33.8, ISLE_OF_THUNDER },
+						["requireSkill"] = BLACKSMITHING,
+						["groups"] = {
+							i(94553, {	-- Notes on Lightning Steel
+								i(94568),	-- Plans: Drakefist Hammer, Reborn (RECIPE!)
+								i(94572),	-- Plans: Fireguard, Reborn (RECIPE!)
+								i(94552),	-- Plans: Lightning Steel Ingot (RECIPE!)
+								i(94571),	-- Plans: Lionheart Blade, Reborn (RECIPE!)
+								i(94569),	-- Plans: Lunar Crescent, Reborn (RECIPE!)
+								i(94570),	-- Plans: Planar Edge, Reborn (RECIPE!)
+								i(94567),	-- Plans: Thunder, Reborn (RECIPE!)
+							}),
 						},
 					}),
-					q(32708, {	-- Setting the Trap
-						["coord"] = { 51.4, 46.0, ISLE_OF_THUNDER },
-						["qg"] = 70160,	-- Taran Zhu <Lord of the Shado-Pan>
-					}),
 					q(32707, {	-- Secrets in the Isle of Thunder
-						["coord"] = { 51.4, 46.0, ISLE_OF_THUNDER },
 						["provider"] = { "n", 70160 },	-- Taran Zhu <Lord of the Shado-Pan>
 						["sourceQuests"] = {
 							32709,	-- Allies in the Shadows [Horde]
 							32706,	-- Allies in the Shadows [Alliance]
 						},
+						["coord"] = { 51.4, 46.0, ISLE_OF_THUNDER },
+					}),
+					q(32708, {	-- Setting the Trap
+						["qg"] = 70160,	-- Taran Zhu <Lord of the Shado-Pan>
+						["coord"] = { 51.4, 46.0, ISLE_OF_THUNDER },
+					}),
+					q(32505, {	-- The Crumbled Chamberlain
+						["provider"] = { "o", 218072 },	-- Head of the Chamberlain
+						["isWeekly"] = true,
+						["g"] = {
+							ach(8105),	-- The Crumble Bundle
+							i(94221),	-- Shan'ze Ritual Stone
+						},
 					}),
 					q(32296, {	-- Treasures of the Thunder King
-						["isWeekly"] = true,
-						["cost"] = { { "i", 94222, 1} },	-- 1x Key to the Palace of Lei Shen
 						["qg"] = 70316,	-- Taoshi
+						["cost"] = { { "i", 94222, 1} },	-- 1x Key to the Palace of Lei Shen
 						["_drop"] = { "g" },	-- unnecessary API data
+						["isWeekly"] = true,
 						["g"] = {
 							m(518, {	-- Thunder King's Citadel
 								ach(8106, {				-- In the Hall of the Thunder King
@@ -1102,7 +1115,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["time
 			}),
 			n(ZONE_DROPS, {
 				q(32626),	-- Loot Room Key Tracking Quest — triggers when looting "Key to the Palace of Lei Shen"
-				q(32611),	-- Rare Drop Tracking Quest — tracks whether you have looted an Incantation for this week
+				q(32611, {["isWeekly"]=true}),	-- Rare Drop Tracking Quest — tracks whether you have looted an Incantation for this week
 			}),
 		}),
 	}),

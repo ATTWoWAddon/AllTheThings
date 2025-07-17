@@ -251,14 +251,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(547, {	-- Murmur
 					["creatureID"] = 18708,
 					["groups"] = {
-						ach(654, {	-- Shadow Labyrinth
-							-- #if BEFORE WRATH
-							["sourceQuests"] = {
-								10095,	-- Into the Heart of the Labyrinth
-								10885,	-- Trial of the Naaru: Strength
-							},
-							-- #endif
-						}),
+						ach(654),	-- Shadow Labyrinth
 						i(27903),	-- Sonic Spear
 						i(27905),	-- Greatsword of Horrid Dreams
 						-- #if AFTER 7.3.5
@@ -356,11 +349,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(547, {	-- Murmur
 						["creatureID"] = 18708,
 						["groups"] = {
-							ach(675, {	-- Heroic: Shadow Labyrinth
-								-- #if BEFORE WRATH
-								["sourceQuest"] = 10885,	-- Trial of the Naaru: Strength
-								-- #endif
-							}),
+							ach(675),	-- Heroic: Shadow Labyrinth
 							ach(5075, {	-- Heroic: Shadow Labyrinth Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),

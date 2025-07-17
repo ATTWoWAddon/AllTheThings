@@ -1,0 +1,30 @@
+1.15.6.58185
+r(1221012),	-- Creepy Censor Sensors
+1.15.7.59706
+r(1226206),	-- Tinkerbox
+r(1226207),	-- Tinkerbox: Teleport
+r(1226208),	-- Tinkerbox: Nitro Boosts
+r(1226209),	-- Tinkerbox: Magnetic Displacement
+r(1226210),	-- Tinker: Teleport
+r(1226211),	-- Tinker: Nitro Boosts
+r(1226212),	-- Tinker: Magnetic Displacement
+r(1226213),	-- Semisafe Transporter: New Avalon
+r(1228088),	-- Pop-Up Shrub
+
+
+
+
+Missing in Engineering
+
+1.15.6.58185
+r(1221012),	-- Creepy Censor Sensors
+1.15.7.59706
+r(1226206),	-- Tinkerbox
+r(1226207),	-- Tinkerbox: Teleport
+r(1226208),	-- Tinkerbox: Nitro Boosts
+r(1226209),	-- Tinkerbox: Magnetic Displacement
+r(1226210),	-- Tinker: Teleport
+r(1226211),	-- Tinker: Nitro Boosts
+r(1226212),	-- Tinker: Magnetic Displacement
+r(1226213),	-- Semisafe Transporter: New Avalon
+r(1228088),	-- Pop-Up Shrub

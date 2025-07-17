@@ -83,6 +83,13 @@ local CLASSIC_ONLY_DB_FUNC = function(func)
 	-- #ENDIF
 end
 
+local FORCE_ITEM_FACTION = function(item, faction) -- Overwrite bad "races" Blizzard API data and force set it to faction only
+	return i(item , {
+		["_drop"] = { "races" },
+		["races"] = faction,
+	});
+end
+
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_TWO, bubbleDown({ ["timeline"] = { ADDED_3_2_0 } }, {
 	n(ARGENT_TOURNAMENT, {
 		["maps"] = { ICECROWN, 170 },
@@ -4310,16 +4317,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				n(33853, {	-- Broxel Goldgrasp <Souvenirs>
 					["coord"] = { 73.0, 23.0, ICECROWN },
 					["groups"] = {
-						i(45670),	-- Darnassus Doublet
-						i(45668),	-- Exodar Doublet
-						i(45671),	-- Gnomeregan Doublet
-						i(45666),	-- Ironforge Doublet
-						i(45672),	-- Orgrimmar Doublet
-						i(45669),	-- Sen'jin Doublet
-						i(45664),	-- Silvermoon Doublet
-						i(45667),	-- Stormwind Doublet
-						i(45673),	-- Thunder Bluff Doublet
-						i(45674),	-- Undercity Doublet
+						FORCE_ITEM_FACTION(45670, ALLIANCE_ONLY), -- Darnassus Doublet
+						FORCE_ITEM_FACTION(45668, ALLIANCE_ONLY), -- Exodar Doublet
+						FORCE_ITEM_FACTION(45671, ALLIANCE_ONLY), -- Gnomeregan Doublet
+						FORCE_ITEM_FACTION(45666, ALLIANCE_ONLY), -- Ironforge Doublet
+						FORCE_ITEM_FACTION(45672, HORDE_ONLY),	  -- Orgrimmar Doublet
+						FORCE_ITEM_FACTION(45669, HORDE_ONLY),	  -- Sen'jin Doublet
+						FORCE_ITEM_FACTION(45664, HORDE_ONLY),	  -- Silvermoon Doublet
+						FORCE_ITEM_FACTION(45667, ALLIANCE_ONLY), -- Stormwind Doublet
+						FORCE_ITEM_FACTION(45673, HORDE_ONLY),	  -- Thunder Bluff Doublet
+						FORCE_ITEM_FACTION(45674, HORDE_ONLY),	  -- Undercity Doublet
 					},
 				}),
 				n(33307, {	-- Corporal Arthur Flew <Stormwind Quartermaster>
@@ -4354,11 +4361,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["groups"] = {
 						champ(55, i(122338, {	-- Ancient Heirloom Armor Casing
 							["timeline"] = { ADDED_6_1_0 },
-							["sym"] = { { "fill" } },	-- simply fill this item
 						})),
 						champ(65, i(122339, {	-- Ancient Heirloom Scabbard
 							["timeline"] = { ADDED_6_1_0 },
-							["sym"] = { { "fill" } },	-- simply fill this item
 						})),
 						champ(100, i(47179, {	-- Argent Charger (MOUNT!)
 							["classes"] = { PALADIN },
@@ -4369,94 +4374,97 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						champ(100, i(47180)),	-- Argent Warhorse (MOUNT!)
 
 						-- Old Heirlooms
-						-- NOTE: The champion seal costs might be different prior to 6.2, double check when the vendor becomes available
-						champ(25, i(42944, {	-- Balanced Heartseeker
+						champ(60, i(42944, {	-- Balanced Heartseeker
 							["timeline"] = { REMOVED_6_1_0 },
 						})),
-						champ(40, i(42943, {	-- Bloodied Arcanite Reaper
+						champ(95, i(42943, {	-- Bloodied Arcanite Reaper
 							["timeline"] = { REMOVED_6_1_0 },
 						})),
-						champ(25, i(69893, {	-- Bloodsoaked Skullforge Reaver
+						champ(60, i(69893, {	-- Bloodsoaked Skullforge Reaver
 							["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 						})),
-						champ(25, i(69889, {	-- Burnished Breastplate of Might
+						champ(60, i(69889, {	-- Burnished Breastplate of Might
 							["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 						})),
-						champ(25, i(69890, {	-- Burnished Pauldrons of Might
+						champ(60, i(69890, {	-- Burnished Pauldrons of Might
 							["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 						})),
-						champ(40, i(79131, {	-- Burnished Warden Staff
+						champ(95, i(79131, {	-- Burnished Warden Staff
 							["timeline"] = { ADDED_5_0_4, REMOVED_6_1_0 },
 						})),
-						champ(25, i(42950, {	-- Champion Herod's Shoulder
+						champ(60, i(42950, {	-- Champion Herod's Shoulder
 							["timeline"] = { REMOVED_6_1_0 },
 						})),
-						champ(25, i(48677, {	-- Champion's Deathdealer Breastplate
+						champ(60, i(48677, {	-- Champion's Deathdealer Breastplate
 							["timeline"] = { REMOVED_6_1_0 },
 						})),
-						champ(40, i(42946, {	-- Charmed Ancient Bone Bow
+						champ(95, i(42946, {	-- Charmed Ancient Bone Bow
 							["timeline"] = { REMOVED_6_1_0 },
 						})),
-						champ(25, i(42948, {	-- Devout Aurastone Hammer
+						champ(60, i(42948, {	-- Devout Aurastone Hammer
 							["timeline"] = { REMOVED_6_1_0 },
 						})),
-						champ(40, i(42947, {	-- Dignified Headmaster's Charge
+						champ(95, i(42947, {	-- Dignified Headmaster's Charge
 							["timeline"] = { REMOVED_6_1_0 },
 						})),
-						champ(35, i(42992, {	-- Discerning Eye of the Beast
+						champ(75, i(42992, {	-- Discerning Eye of the Beast
 							["timeline"] = { REMOVED_6_1_0 },
 						})),
-						champ(25, i(93902, {	-- Flamescarred Draconian Deflector
+						-- #if NOT ANYCLASSIC
+						champ(60, i(93902, {	-- Flamescarred Draconian Deflector
 							["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
 						})),
-						champ(25, i(93904, {	-- Musty Tome of the Lost
+						champ(60, i(93904, {	-- Musty Tome of the Lost
 							["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
 						})),
-						champ(25, i(42951, {	-- Mystical Pauldrons of Elements
+						-- #endif
+						champ(60, i(42951, {	-- Mystical Pauldrons of Elements
 							["timeline"] = { REMOVED_6_1_0 },
 						})),
-						champ(25, i(48683, {	-- Mystical Vest of Elements
+						champ(60, i(48683, {	-- Mystical Vest of Elements
 							["timeline"] = { REMOVED_6_1_0 },
 						})),
-						champ(25, i(48685, {	-- Polished Breastplate of Valor
+						champ(60, i(48685, {	-- Polished Breastplate of Valor
 							["timeline"] = { REMOVED_6_1_0 },
 						})),
-						champ(25, i(42949, {	-- Polished Spaulders of Valor
+						champ(60, i(42949, {	-- Polished Spaulders of Valor
 							["timeline"] = { REMOVED_6_1_0 },
 						})),
-						champ(25, i(48687, {	-- Preened Ironfeather Breastplate
+						champ(60, i(48687, {	-- Preened Ironfeather Breastplate
 							["timeline"] = { REMOVED_6_1_0 },
 						})),
-						champ(25, i(42984, {	-- Preened Ironfeather Shoulders
+						champ(60, i(42984, {	-- Preened Ironfeather Shoulders
 							["timeline"] = { REMOVED_6_1_0 },
 						})),
-						champ(40, i(48718, {	-- Repurposed Lava Dredger
+						champ(95, i(48718, {	-- Repurposed Lava Dredger
 							["timeline"] = { REMOVED_6_1_0 },
 						})),
-						champ(25, i(42952, {	-- Stained Shadowcraft Spaulders
+						champ(60, i(42952, {	-- Stained Shadowcraft Spaulders
 							["timeline"] = { REMOVED_6_1_0 },
 						})),
-						champ(25, i(48689, {	-- Stained Shadowcraft Tunic
+						champ(60, i(48689, {	-- Stained Shadowcraft Tunic
 							["timeline"] = { REMOVED_6_1_0 },
 						})),
-						champ(35, i(42991, {	-- Swift Hand of Justice
+						champ(75, i(42991, {	-- Swift Hand of Justice
 							["timeline"] = { REMOVED_6_1_0 },
 						})),
-						champ(25, i(42985, {	-- Tattered Dreadmist Mantle
+						champ(60, i(42985, {	-- Tattered Dreadmist Mantle
 							["timeline"] = { REMOVED_6_1_0 },
 						})),
-						champ(25, i(48691, {	-- Tattered Dreadmist Robe
+						champ(60, i(48691, {	-- Tattered Dreadmist Robe
 							["timeline"] = { REMOVED_6_1_0 },
 						})),
-						champ(25, i(42945, {	-- Venerable Dal'Rend's Sacred Charge
+						champ(60, i(42945, {	-- Venerable Dal'Rend's Sacred Charge
 							["timeline"] = { REMOVED_6_1_0 },
 						})),
-						champ(25, i(48716, {	-- Venerable Mass of McGowan
+						champ(60, i(48716, {	-- Venerable Mass of McGowan
 							["timeline"] = { REMOVED_6_1_0 },
 						})),
-						champ(25, i(93903, {	-- Weathered Observer's Shield
+						-- #if NOT ANYCLASSIC
+						champ(60, i(93903, {	-- Weathered Observer's Shield
 							["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
 						})),
+						-- #endif
 
 						-- New Heirlooms
 						champ(25, i(122350, {	-- Balanced Heartseeker

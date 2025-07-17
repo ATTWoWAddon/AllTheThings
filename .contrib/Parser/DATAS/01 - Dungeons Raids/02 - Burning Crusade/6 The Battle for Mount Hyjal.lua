@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE, {
+root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {
 	inst(750, {	-- The Battle for Mount Hyjal
 		["lore"] = "The Battle of Mount Hyjal was the final bloody conflict that concluded the Third War. The battle was the culmination of years of fighting between the various mortal forces of Azeroth and the demonic and undead armies of the Burning Legion, and saw the demons' invasion end in decisive failure.\n\nSpecifically, the event took place as part of the invasion of Kalimdor phase of the war, where Archimonde struck directly at the World Tree Nordrassil on Mount Hyjal as part of his endgame. The battle began when a mortal coalition of night elves, Alliance, and New Horde elements arrayed themselves before the World Tree to halt Archimonde's advance. Though they were unable to stand against the Legion indefinitely, they aimed to buy time for Malfurion Stormrage to prepare a proper defense.",
 		-- #if BEFORE MOP
@@ -960,9 +960,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 			n(ZONE_DROPS, {
 				i(32748),	-- Pattern: Bindings of Lightning Reflexes (RECIPE!)
 				i(32751),	-- Pattern: Living Earth Shoulders (RECIPE!)
-				i(32755),	-- Pattern: Mantle of Nimble Thought
+				i(32755),	-- Pattern: Mantle of Nimble Thought (RECIPE!)
 				i(32745),	-- Pattern: Shoulderpads of Renewed Life (RECIPE!)
-				i(32752),	-- Pattern: Swiftheal Wraps
+				i(32752),	-- Pattern: Swiftheal Wraps (RECIPE!)
 				i(32746),	-- Pattern: Swiftstrike Bracers (RECIPE!)
 				i(32736),	-- Plans: Swiftsteel Bracers (RECIPE!)
 				i(32739),	-- Plans: Dawnsteel Shoulders (RECIPE!)
@@ -1060,7 +1060,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 				["creatureID"] = 17968,
 				["groups"] = {
 					ach(695, {	-- The Battle for Mount Hyjal
+						-- #if NOT ANYCLASSIC
+						-- CRIEVE NOTE: This achievement can be earned ahead of time by having an item from Archimonde in your bags.
 						["timeline"] = { ADDED_3_0_2 },
+						-- #endif
 					}),
 					ach(5090, {	-- The Battle for Mount Hyjal Guild Run
 						["timeline"] = { ADDED_4_0_3 },
@@ -1093,7 +1096,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 			})
 		},
 	}),
-})));
+}))));
 -- #if AFTER TBC
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.TBC, {

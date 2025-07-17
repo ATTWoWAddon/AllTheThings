@@ -2,6 +2,21 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	n(ZONE_DROPS, {
+		i(228963, {	-- Unfamiliar Emblem (QS!)
+			["timeline"] = { ADDED_11_1_7 },
+			["maps"] = { 2372 },	-- Arathi Highlands
+			["crs"] = {
+				230199,	-- Defias Bandit
+				230021,	-- Defias Lookout
+				230020,	-- Defias Ringleader
+			},
+		}),
+		i(231757, {	-- Fractured Spark of Starlight
+			-- TODO: need more data for more sources. During ptr was looted from one of delve run.
+			["timeline"] = { ADDED_11_2_0 },
+		}),
+	}),
 	n(ZONE_REWARDS, {
 		n(ARMOR, {
 			filter(BACK_F, {
@@ -72,7 +87,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 		}),
 		filter(MISC, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
-			i(237014),	-- Severed Threads Commendation
+			i(237014),	-- Severed Threads Commendation [1500 Rep]
+			i(244848, { ["timeline"] = { ADDED_11_1_7 } }),	-- Severed Threads Commendation [100 Rep]
 		})),
 		n(WEAPONS, {
 			i(224702),	-- Ancient Forged Blade
@@ -103,6 +119,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		i(239118, {	-- Pinnacle Cache (S2)
 			["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
 			["timeline"] = { ADDED_11_1_0_SEASONSTART },
+		}),
+		i(244865, {	-- Pinnacle Cache (S3)
+			["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
+			["timeline"] = { ADDED_11_2_0_SEASONSTART },
 		}),
 		i(228361, {	-- Seasoned Adventurer's Cache (S1)
 			["sym"] = { -- [Khaz Algar Zone Rewards content]
@@ -137,6 +157,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		i(235610, {	-- Seasoned Adventurer's Cache (Undermine)
 			["sym"] = {{"select","itemID",235639},{"pop"}},	-- Seasoned Adventurer's Cache [Undermine Zone Rewards content]
 			["timeline"] = { ADDED_11_1_0_SEASONSTART },
+		}),
+		i(245280, {	-- Seasoned Khaz Algar Adventurer's Cache
+			["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
+			["timeline"] = { ADDED_11_2_0_SEASONSTART },
+		}),
+		i(244883, {	-- Seasoned Undermine Adventurer's Cache
+			["sym"] = {{"select","itemID",235639},{"pop"}},	-- Seasoned Adventurer's Cache [Undermine Zone Rewards content]
+			["timeline"] = { ADDED_11_2_0_SEASONSTART },
 		}),
 	}),
 })));

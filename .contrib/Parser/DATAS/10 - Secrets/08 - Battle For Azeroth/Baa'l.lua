@@ -14,6 +14,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED
 					de = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
 					fr = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
 					it = "|cFFFFFFFFStep 1:|r Nota Vistosa",
+					mx = "|cFFFFFFFFStep 1:|rNota sospechosa",
 					pt = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
 					ru = "|cFFFFFFFFШаг 1:|r Примечательная записка",
 					ko = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",

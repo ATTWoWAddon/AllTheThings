@@ -469,6 +469,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			["description"] = "Rewarded for completing a random mop dungeon during leveling or completing a random mop timewalking dungeon.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
 			-- #endif
 			["g"] = {
+				i(113757),	-- Band of Directed Fury
 				i(113788),	-- Blossoming Belt*
 				i(113764),	-- Blossoming Cap*
 				i(113766),	-- Blossoming Gloves*
@@ -567,21 +568,18 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				ADDED_5_3_0,
 				REMOVED_9_0_1,	-- no longer available to queue random scenarios post 9.0 squish
 			},
-			["sym"] = {{"fill"}},
 		}),
 		i(92813, {	-- Greater Cache of Treasures [Looks like this was deprecated in favor of #98133)
 			["timeline"] = {
 				ADDED_5_1_0,
 				REMOVED_5_3_0,
 			},
-			["sym"] = {{"select","itemID",98133},{"pop"}},
 		}),
 		i(89613, {	-- Cache of Treasures [Looks like this was deprecated in favor of #92813)
 			["timeline"] = {
 				ADDED_5_0_4,
 				REMOVED_5_1_0,
 			},
-			["sym"] = {{"select","itemID",98133},{"pop"}},
 		}),
 		i(98134, {	-- Heroic Cache of Treasures
 			["timeline"] = {
@@ -591,8 +589,8 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			["sym"] = {{"select","itemID",98546},{"pop"}},
 		}),
 		i(69903, {	-- Satchel of Exotic Mysteries
-			["u"] = REMOVED_FROM_GAME,
-			["sym"] = {MOP_SYM_PETS, {"select", "itemID",
+			["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
+			["sym"] = { MOP_SYM_PETS, {"select", "itemID",
 				13335,	-- Deathcharger's Reins
 				43953,	-- Reins of the Blue Drake
 				44151,	-- Reins of the Blue Proto-Drake
@@ -603,7 +601,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			}},
 		}),
 		i(90818, {	-- Misty Satchel of Exotic Mysteries
-			["u"] = REMOVED_FROM_GAME,
+			["timeline"] = { ADDED_5_0_4, REMOVED_6_1_0 },
 			["sym"] = {
 				{"select", "itemID", 69903},{"pop"},	-- Satchel of Exotic Mysteries
 			},
@@ -611,13 +609,13 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 	}),
 	expansion(EXPANSION.WOD, {
 		i(120334, {	-- Satchel of Cosmic Mysteries
-			["timeline"] = { ADDED_5_4_0, REMOVED_6_0_3 },
+			["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
 			["sym"] = {
 				{"select", "itemID", 69903},{"pop"},	-- Satchel of Exotic Mysteries
 			},
 		}),
 		i(104260, {	-- Satchel of Savage Mysteries
-			["timeline"] = { ADDED_6_0_3, REMOVED_6_1_0 },
+			["timeline"] = { ADDED_6_0_2, REMOVED_6_1_0 },
 			["sym"] = {
 				{"select", "itemID", 69903},{"pop"},	-- Satchel of Exotic Mysteries
 			},

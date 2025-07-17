@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 52130 },	-- Deadliest Cache: Carpe Diem
 				["races"] = ALLIANCE_ONLY,
 			}),
-			explorationAch(12558),	-- Explore Stormsong Valley
+			ach(12558),	-- Explore Stormsong Valley
 			ach(13045),		-- Every Day I'm Truffling
 			ach(13051),		-- Legends of the Tidesages (automated)
 			ach(13054, {	-- Sabertron Assemble

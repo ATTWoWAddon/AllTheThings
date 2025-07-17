@@ -1119,3 +1119,10 @@
 11.1.5.59571
 2688@@@Flame's Radiance
 2689@@@Flame's Radiance (Paragon)
+11.2.0.61476
+2657@@@11.2 Ethereum
+2658@@@The K'aresh Trust
+2659@@@The K'aresh Trust (Paragon)
+2722@@@Delves: Season 3
+2736@@@Manaforge Vandals
+2739@@@Delves: Coffer Key Shards Conversion

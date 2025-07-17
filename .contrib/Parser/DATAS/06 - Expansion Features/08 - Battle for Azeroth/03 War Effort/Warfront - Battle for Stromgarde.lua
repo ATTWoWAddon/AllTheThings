@@ -775,7 +775,7 @@ root(ROOTS.ExpansionFeatures,
 							131752,	-- War Table (Horde)
 						},
 						["lvl"] = {
-							-- #if AFTER SHADOWLANDS
+							-- #if AFTER SL
 							50,
 							-- #else
 							120,
@@ -1468,7 +1468,7 @@ root(ROOTS.ExpansionFeatures,
 									["u"] = REMOVED_FROM_GAME,
 									["_drop"] = { "g" },	-- bnet api has horde box
 									["g"] = {
-										-- #IF BEFORE SHADOWLANDS
+										-- #if BEFORE SL
 										-- this is distorting actual live rewards
 										i(164578, {	-- Warfronts Equipment Cache (A)
 											["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 5),	-- iLvl 340
@@ -1497,7 +1497,7 @@ root(ROOTS.ExpansionFeatures,
 									["races"] = HORDE_ONLY,
 									["repeatable"] = true,
 									["g"] = {
-										-- #IF BEFORE SHADOWLANDS
+										-- #if BEFORE SL
 										-- this is distorting actual live rewards
 										i(164577, {	-- Warfronts Equipment Cache (H)
 											["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_HORDE, 5),	-- iLvl 340

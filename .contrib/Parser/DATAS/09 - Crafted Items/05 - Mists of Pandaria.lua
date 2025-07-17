@@ -545,7 +545,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_LAND
 	}),
 	prof(ENCHANTING, {
 		spell(13262, {	-- Disenchant
+			i(80433, {	-- Blood Spirit
+				["description"] = "Can be obtained by disenchanting epics from Mogu'shan Vaults, Heart of Fear, or Terrace of the Eternal Spring",
+			}),
 			i(74247),	-- Ethereal Shard
+			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94289, {	-- Haunting Spirit
+				["description"] = "Can be obtained by disenchanting epics from Throne of Thunder",
+				["timeline"] = { ADDED_5_2_0 },
+			})),
 			i(74250),	-- Mysterious Essence
 			i(74248),	-- Sha Crystal
 			i(105718, {["timeline"] = {ADDED_5_4_0}}),	-- Sha Crystal Fragment
@@ -703,6 +710,45 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_LAND
 		i(46109),	-- Sea Turtle (MOUNT!)
 		i(86544),	-- Spinefish Alpha
 		i(74861),	-- Tiger Gourami
+		i(94933, {	-- Tiny Blue Carp (PET!)
+			["description"] = "Can be fished from:\n\n|cFFFfffff— Schools:|r Jewel Danio & Redbelly Mandarin\n\n|cFFFfffff— Fish of the Day:|r Townlong Steppes & Vale of Eternal Blossoms\n\n|cFFFfffff— Inland open water:|r Townlong Steppes & Vale of Eternal Blossoms\n",
+			["maps"] = {
+				TIMELESS_ISLE,
+				TOWNLONG_STEPPES,
+				VALE_OF_ETERNAL_BLOSSOMS,
+			},
+		}),
+		i(94934, {	-- Tiny Green Carp (PET!)
+			["description"] = "Can be fished from:\n\n|cFFFfffff— Schools:|r Emperor Salmon, Jade Lungfish, & Krasarang Paddlefish\n\n|cFFFfffff— Fish of the Day:|r Jade Forest, Krasarang Wilds, & Valley of the Four Winds\n\n|cFFFfffff— Inland open water:|r Jade Forest, Krasarang Wilds, & Valley of the Four Winds\n",
+			["maps"] = {
+				KRASARANG_WILDS,
+				THE_JADE_FOREST,
+				TOWNLONG_STEPPES,
+				VALLEY_OF_THE_FOUR_WINDS,
+			},
+		}),
+		i(94932, {	-- Tiny Red Carp (PET!)
+			["description"] = "Can be fished from:\n\n|cFFFfffff— Schools:|r Spinefish\n\n|cFFFfffff— Fish of the Day:|r Kun-Lai Summit\n\n|cFFFfffff— Sha-Touched water:|r Dread Wastes, Kun-Lai Summit & Townlong Steppes\n",
+			["maps"] = {
+				DREAD_WASTES,
+				KUN_LAI_SUMMIT,
+				TOWNLONG_STEPPES,
+			},
+		}),
+		i(94935, {	-- Tiny White Carp (PET!)
+			["description"] = "Can be fished from:\n\n|cFFFfffff— Schools:|r Giant Mantis Shrimp, Reef Octopus, & Tiger Gourami\n\n|cFFFfffff— Fish of the Day:|r Dread Wastes, Jade Forest, & Kun-Lai Summit\n\n|cFFFfffff— Inland open water:|r Kun-Lai Summit & The Veiled Stair\n\nIt can also be caught in most coastal open water.\n",
+			["maps"] = {
+				DREAD_WASTES,
+				ISLE_OF_GIANTS,
+				ISLE_OF_THUNDER,
+				KRASARANG_WILDS,
+				KUN_LAI_SUMMIT,
+				THE_JADE_FOREST,
+				THE_VEILED_STAIR,
+				TIMELESS_ISLE,
+				TOWNLONG_STEPPES,
+			},
+		}),
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
 				["description"] = "Can be fished from schools.",
@@ -1328,153 +1374,239 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_LAND
 		}),
 	}),
 	prof(TAILORING, {
+		n(DISCOVERY, {
+			spell(143011, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Celestial Cloth
+				["cost"] = ClassicCost({{ "i", 82441, 10 }}),	-- 10x Bolt of Windwool Cloth
+				["g"] = {
+					r(142964),	-- Belt of the Night Sky
+					r(143053),	-- Crafted Malevolent Gladiator's Cape of Cruelty
+					r(143054),	-- Crafted Malevolent Gladiator's Cape of Prowess
+					r(143082),	-- Crafted Malevolent Gladiator's Cloak of Alacrity
+					r(143083),	-- Crafted Malevolent Gladiator's Cloak of Prowess
+					r(143056),	-- Crafted Malevolent Gladiator's Cord of Accuracy
+					r(143055),	-- Crafted Malevolent Gladiator's Cord of Cruelty
+					r(143057),	-- Crafted Malevolent Gladiator's Cord of Meditation
+					r(143061),	-- Crafted Malevolent Gladiator's Cuffs of Accuracy
+					r(143063),	-- Crafted Malevolent Gladiator's Cuffs of Meditation
+					r(143062),	-- Crafted Malevolent Gladiator's Cuffs of Prowess
+					r(143064),	-- Crafted Malevolent Gladiator's Drape of Cruelty
+					r(143066),	-- Crafted Malevolent Gladiator's Drape of Meditation
+					r(143065),	-- Crafted Malevolent Gladiator's Drape of Prowess
+					r(143088),	-- Crafted Malevolent Gladiator's Felweave Amice
+					r(143085),	-- Crafted Malevolent Gladiator's Felweave Cowl
+					r(143084),	-- Crafted Malevolent Gladiator's Felweave Handguards
+					r(143087),	-- Crafted Malevolent Gladiator's Felweave Raiment
+					r(143086),	-- Crafted Malevolent Gladiator's Felweave Trousers
+					r(143072),	-- Crafted Malevolent Gladiator's Mooncloth Gloves
+					r(143073),	-- Crafted Malevolent Gladiator's Mooncloth Helm
+					r(143074),	-- Crafted Malevolent Gladiator's Mooncloth Leggings
+					r(143076),	-- Crafted Malevolent Gladiator's Mooncloth Mantle
+					r(143075),	-- Crafted Malevolent Gladiator's Mooncloth Robe
+					r(143077),	-- Crafted Malevolent Gladiator's Satin Gloves
+					r(143078),	-- Crafted Malevolent Gladiator's Satin Hood
+					r(143079),	-- Crafted Malevolent Gladiator's Satin Leggings
+					r(143081),	-- Crafted Malevolent Gladiator's Satin Mantle
+					r(143080),	-- Crafted Malevolent Gladiator's Satin Robe
+					r(143071),	-- Crafted Malevolent Gladiator's Silk Amice
+					r(143068),	-- Crafted Malevolent Gladiator's Silk Cowl
+					r(143067),	-- Crafted Malevolent Gladiator's Silk Handguards
+					r(143070),	-- Crafted Malevolent Gladiator's Silk Robe
+					r(143069),	-- Crafted Malevolent Gladiator's Silk Trousers
+					r(143059),	-- Crafted Malevolent Gladiator's Treads of Alacrity
+					r(143058),	-- Crafted Malevolent Gladiator's Treads of Cruelty
+					r(143060),	-- Crafted Malevolent Gladiator's Treads of Meditation
+					r(142955),	-- Leggings of the Night Sky
+					r(142960),	-- White Cloud Belt
+					r(142951),	-- White Cloud Leggings
+				},
+			})),
+			spell(125557, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Imperial Silk
+				["cost"] = ClassicCost({{ "i", 82441, 8 }}),	-- 8x Bolt of Windwool Cloth
+				["g"] = {
+					r(137907),	-- Crafted Dreadful Gladiator's Cape of Cruelty
+					r(137908),	-- Crafted Dreadful Gladiator's Cape of Prowess
+					r(137936),	-- Crafted Dreadful Gladiator's Cloak of Alacrity
+					r(137937),	-- Crafted Dreadful Gladiator's Cloak of Prowess
+					r(137910),	-- Crafted Dreadful Gladiator's Cord of Accuracy
+					r(137909),	-- Crafted Dreadful Gladiator's Cord of Cruelty
+					r(137911),	-- Crafted Dreadful Gladiator's Cord of Meditation
+					r(137915),	-- Crafted Dreadful Gladiator's Cuffs of Accuracy
+					r(137917),	-- Crafted Dreadful Gladiator's Cuffs of Meditation
+					r(137916),	-- Crafted Dreadful Gladiator's Cuffs of Prowess
+					r(137918),	-- Crafted Dreadful Gladiator's Drape of Cruelty
+					r(137920),	-- Crafted Dreadful Gladiator's Drape of Meditation
+					r(137919),	-- Crafted Dreadful Gladiator's Drape of Prowess
+					r(137942),	-- Crafted Dreadful Gladiator's Felweave Amice
+					r(137939),	-- Crafted Dreadful Gladiator's Felweave Cowl
+					r(137938),	-- Crafted Dreadful Gladiator's Felweave Handguards
+					r(137941),	-- Crafted Dreadful Gladiator's Felweave Raiment
+					r(137940),	-- Crafted Dreadful Gladiator's Felweave Trousers
+					r(137926),	-- Crafted Dreadful Gladiator's Mooncloth Gloves
+					r(137927),	-- Crafted Dreadful Gladiator's Mooncloth Helm
+					r(137928),	-- Crafted Dreadful Gladiator's Mooncloth Leggings
+					r(137930),	-- Crafted Dreadful Gladiator's Mooncloth Mantle
+					r(137929),	-- Crafted Dreadful Gladiator's Mooncloth Robe
+					r(137931),	-- Crafted Dreadful Gladiator's Satin Gloves
+					r(137932),	-- Crafted Dreadful Gladiator's Satin Hood
+					r(137933),	-- Crafted Dreadful Gladiator's Satin Leggings
+					r(137935),	-- Crafted Dreadful Gladiator's Satin Mantle
+					r(137934),	-- Crafted Dreadful Gladiator's Satin Robe
+					r(137925),	-- Crafted Dreadful Gladiator's Silk Amice
+					r(137922),	-- Crafted Dreadful Gladiator's Silk Cowl
+					r(137921),	-- Crafted Dreadful Gladiator's Silk Handguards
+					r(137924),	-- Crafted Dreadful Gladiator's Silk Robe
+					r(137923),	-- Crafted Dreadful Gladiator's Silk Trousers
+					r(137913),	-- Crafted Dreadful Gladiator's Treads of Alacrity
+					r(137912),	-- Crafted Dreadful Gladiator's Treads of Cruelty
+					r(137914),	-- Crafted Dreadful Gladiator's Treads of Meditation
+					r(138598),	-- Falling Blossom Cowl
+					r(138600),	-- Falling Blossom Hood
+					r(138599),	-- Falling Blossom Sandals
+					r(138597),	-- Falling Blossom Treads
+				},
+			})),
+		}),
+		n(ARMOR, {
+			i(98612, {["timeline"] = {ADDED_5_4_0}}),	-- Belt of the Night Sky
+			i(92726),	-- Bipsi's Gloves
+			i(82430),	-- Contender's Satin Amice
+			i(82436),	-- Contender's Satin Belt
+			i(82429),	-- Contender's Satin Cowl
+			i(82434),	-- Contender's Satin Cuffs
+			i(82435),	-- Contender's Satin Footwraps
+			i(82432),	-- Contender's Satin Handwraps
+			i(82433),	-- Contender's Satin Pants
+			i(82431),	-- Contender's Satin Raiment
+			i(82422),	-- Contender's Silk Amice
+			i(82428),	-- Contender's Silk Belt
+			i(82421),	-- Contender's Silk Cowl
+			i(82426),	-- Contender's Silk Cuffs
+			i(82427),	-- Contender's Silk Footwraps
+			i(82424),	-- Contender's Silk Handwraps
+			i(82425),	-- Contender's Silk Pants
+			i(82423),	-- Contender's Silk Raiment
+			i(93420, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Cape of Cruelty
+			i(93421, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Cape of Prowess
+			i(93607, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Cloak of Alacrity
+			i(93608, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Cloak of Prowess
+			i(93429, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Cord of Accuracy
+			i(93428, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Cord of Cruelty
+			i(93430, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Cord of Meditation
+			i(93434, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Cuffs of Accuracy
+			i(93436, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Cuffs of Meditation
+			i(93435, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Cuffs of Prowess
+			i(93437, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Drape of Cruelty
+			i(93439, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Drape of Meditation
+			i(93438, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Drape of Prowess
+			i(93619, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Felweave Amice
+			i(93616, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Felweave Cowl
+			i(93615, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Felweave Handguards
+			i(93618, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Felweave Raiment
+			i(93617, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Felweave Trousers
+			i(93550, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Mooncloth Gloves
+			i(93551, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Mooncloth Helm
+			i(93552, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Mooncloth Leggings
+			i(93554, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Mooncloth Mantle
+			i(93553, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Mooncloth Robe
+			i(93555, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Satin Gloves
+			i(93556, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Satin Hood
+			i(93557, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Satin Leggings
+			i(93559, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Satin Mantle
+			i(93558, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Satin Robe
+			i(93503, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Silk Amice
+			i(93500, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Silk Cowl
+			i(93499, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Silk Handguards
+			i(93502, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Silk Robe
+			i(93501, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Silk Trousers
+			i(93432, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Treads of Alacrity
+			i(93431, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Treads of Cruelty
+			i(93433, {["timeline"] = {ADDED_5_2_0}}),	-- Crafted Dreadful Gladiator's Treads of Meditation
+			i(98756, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Cape of Cruelty
+			i(98757, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Cape of Prowess
+			i(98913, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Cloak of Alacrity
+			i(98914, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Cloak of Prowess
+			i(98764, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Cord of Accuracy
+			i(98763, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Cord of Cruelty
+			i(98765, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Cord of Meditation
+			i(98769, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Cuffs of Accuracy
+			i(98771, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Cuffs of Meditation
+			i(98770, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Cuffs of Prowess
+			i(98772, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Drape of Cruelty
+			i(98774, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Drape of Meditation
+			i(98773, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Drape of Prowess
+			i(98925, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Felweave Amice
+			i(98922, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Felweave Cowl
+			i(98921, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Felweave Handguards
+			i(98924, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Felweave Raiment
+			i(98923, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Felweave Trousers
+			i(98865, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Mooncloth Gloves
+			i(98866, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Mooncloth Helm
+			i(98867, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Mooncloth Leggings
+			i(98869, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Mooncloth Mantle
+			i(98868, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Mooncloth Robe
+			i(98870, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Satin Gloves
+			i(98871, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Satin Hood
+			i(98872, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Satin Leggings
+			i(98874, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Satin Mantle
+			i(98873, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Satin Robe
+			i(98829, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Silk Amice
+			i(98826, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Silk Cowl
+			i(98825, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Silk Handguards
+			i(98828, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Silk Robe
+			i(98827, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Silk Trousers
+			i(98767, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Treads of Alacrity
+			i(98766, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Treads of Cruelty
+			i(98768, {["timeline"] = {ADDED_5_4_0}}),	-- Crafted Malevolent Gladiator's Treads of Meditation
+			i(94279, {["timeline"] = {ADDED_5_2_0}}),	-- Falling Blossom Sandals
+			i(94277, {["timeline"] = {ADDED_5_2_0}}),	-- Falling Blossom Treads
+			i(94278, {["timeline"] = {ADDED_5_2_0}}),	-- Falling Blossom Cowl
+			i(94280, {["timeline"] = {ADDED_5_2_0}}),	-- Falling Blossom Hood
+			i(82440),	-- Gloves of Creation
+			i(86313),	-- Imperial Silk Gloves
+			i(86312),	-- Legacy of the Emperor
+			i(98603, {["timeline"] = {ADDED_5_4_0}}),	-- Leggings of the Night Sky
+			i(86311),	-- Robe of Eternal Rule
+			i(82439),	-- Robes of Creation
+			i(82438),	-- Spelltwister's Gloves
+			i(82437),	-- Spelltwister's Grand Robe
+			i(86314),	-- Touch of the Light
+			i(98608, {["timeline"] = {ADDED_5_4_0}}),	-- White Cloud Belt
+			i(98599, {["timeline"] = {ADDED_5_4_0}}),	-- White Cloud Leggings
+			i(90472),	-- Windwool Belt [Rare]
+			i(82404),	-- Windwool Belt
+			i(90473),	-- Windwool Boots [Rare]
+			i(82403),	-- Windwool Boots
+			i(90474),	-- Windwool Bracers [Rare]
+			i(82402),	-- Windwool Bracers
+			i(90476),	-- Windwool Gloves [Rare]
+			i(82400),	-- Windwool Gloves
+			i(90479),	-- Windwool Hood [Rare]
+			i(82397),	-- Windwool Hood
+			i(90475),	-- Windwool Pants [Rare]
+			i(82401),	-- Windwool Pants
+			i(90478),	-- Windwool Shoulders [Rare]
+			i(82398),	-- Windwool Shoulders
+			i(90477),	-- Windwool Tunic [Rare]
+			i(82399),	-- Windwool Tunic
+		}),
+		n(ARMOR_ENCHANTMENTS, {
+			i(82443),	-- Cerulean Spellthread
+			i(82444),	-- Greater Pearlescent Spellthread
+			i(82445),	-- Greater Cerulean Spellthread
+			i(82442),	-- Pearlescent Spellthread
+		}),
+		filter(BAGS, {
+			i(82446),	-- Royal Satchel
+		}),
 		filter(BATTLE_PETS, {
 			i(92960, bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0 } }, {	-- Silkworm Cocoon
 				i(90900),	-- Imperial Moth (PET!)
 				i(90902),	-- Imperial Silkworm (PET!)
 			})),
 		}),
-		filter(BAGS, {
-			i(82446),	-- Royal Satchel
-		}),
-		n(CHEST, {
-			i(82431),	-- Contender's Satin Raiment
-			i(82423),	-- Contender's Silk Raiment
-			i(93618),	-- Crafted Dreadful Gladiator's Felweave Raiment
-			i(93553),	-- Crafted Dreadful Gladiator's Mooncloth Robe
-			i(93558),	-- Crafted Dreadful Gladiator's Satin Robe
-			i(93502),	-- Crafted Dreadful Gladiator's Silk Robe
-			i(98924),	-- Crafted Malevolent Gladiator's Felweave Raiment
-			i(98868),	-- Crafted Malevolent Gladiator's Mooncloth Robe
-			i(98873),	-- Crafted Malevolent Gladiator's Satin Robe
-			i(98828),	-- Crafted Malevolent Gladiator's Silk Robe
-			i(86312),	-- Legacy of the Emperor
-			i(86311),	-- Robe of Eternal Rule
-			i(82439),	-- Robes of Creation
-			i(82437),	-- Spelltwister's Grand Robe
-			i(90477),	-- Windwool Tunic
-			i(82399),	-- Windwool Tunic
-		}),
-		n(BACK, {
-			i(93420),	-- Crafted Dreadful Gladiator's Cape of Cruelty
-			i(93421),	-- Crafted Dreadful Gladiator's Cape of Prowess
-			i(93607),	-- Crafted Dreadful Gladiator's Cloak of Alacrity
-			i(93608),	-- Crafted Dreadful Gladiator's Cloak of Prowess
-			i(93437),	-- Crafted Dreadful Gladiator's Drape of Cruelty
-			i(93439),	-- Crafted Dreadful Gladiator's Drape of Meditation
-			i(93438),	-- Crafted Dreadful Gladiator's Drape of Prowess
-			i(98756),	-- Crafted Malevolent Gladiator's Cape of Cruelty
-			i(98757),	-- Crafted Malevolent Gladiator's Cape of Prowess
-			i(98913),	-- Crafted Malevolent Gladiator's Cloak of Alacrity
-			i(98914),	-- Crafted Malevolent Gladiator's Cloak of Prowess
-			i(98772),	-- Crafted Malevolent Gladiator's Drape of Cruelty
-			i(98774),	-- Crafted Malevolent Gladiator's Drape of Meditation
-			i(98773),	-- Crafted Malevolent Gladiator's Drape of Prowess
-		}),
-		n(FEET, {
-			i(82435),	-- Contender's Satin Footwraps
-			i(82427),	-- Contender's Silk Footwraps
-			i(93432),	-- Crafted Dreadful Gladiator's Treads of Alacrity
-			i(93431),	-- Crafted Dreadful Gladiator's Treads of Cruelty
-			i(93433),	-- Crafted Dreadful Gladiator's Treads of Meditation
-			i(98767),	-- Crafted Malevolent Gladiator's Treads of Alacrity
-			i(98766),	-- Crafted Malevolent Gladiator's Treads of Cruelty
-			i(98768),	-- Crafted Malevolent Gladiator's Treads of Meditation
-			i(94279),	-- Falling Blossom Sandals
-			i(94277),	-- Falling Blossom Treads
-			i(90473),	-- Windwool Boots
-			i(82403),	-- Windwool Boots
-		}),
-		n(HANDS, {
-			i(92726),	-- Bipsi's Gloves
-			i(82432),	-- Contender's Satin Handwraps
-			i(82424),	-- Contender's Silk Handwraps
-			i(93615),	-- Crafted Dreadful Gladiator's Felweave Handguards
-			i(93550),	-- Crafted Dreadful Gladiator's Mooncloth Gloves
-			i(93555),	-- Crafted Dreadful Gladiator's Satin Gloves
-			i(93499),	-- Crafted Dreadful Gladiator's Silk Handguards
-			i(98921),	-- Crafted Malevolent Gladiator's Felweave Handguards
-			i(98865),	-- Crafted Malevolent Gladiator's Mooncloth Gloves
-			i(98870),	-- Crafted Malevolent Gladiator's Satin Gloves
-			i(98825),	-- Crafted Malevolent Gladiator's Silk Handguards
-			i(82440),	-- Gloves of Creation
-			i(86313),	-- Imperial Silk Gloves
-			i(82438),	-- Spelltwister's Gloves
-			i(86314),	-- Touch of the Light
-			i(90476),	-- Windwool Gloves
-			i(82400),	-- Windwool Gloves
-		}),
-		n(HEAD, {
-			i(82429),	-- Contender's Satin Cowl
-			i(82421),	-- Contender's Silk Cowl
-			i(93616),	-- Crafted Dreadful Gladiator's Felweave Cowl
-			i(93551),	-- Crafted Dreadful Gladiator's Mooncloth Helm
-			i(93556),	-- Crafted Dreadful Gladiator's Satin Hood
-			i(93500),	-- Crafted Dreadful Gladiator's Silk Cowl
-			i(98922),	-- Crafted Malevolent Gladiator's Felweave Cowl
-			i(98866),	-- Crafted Malevolent Gladiator's Mooncloth Helm
-			i(98871),	-- Crafted Malevolent Gladiator's Satin Hood
-			i(98826),	-- Crafted Malevolent Gladiator's Silk Cowl
-			i(94278),	-- Falling Blossom Cowl
-			i(94280),	-- Falling Blossom Hood
-			i(90479),	-- Windwool Hood
-			i(82397),	-- Windwool Hood
-		}),
-		n(LEGS, {
-			i(82433),	-- Contender's Satin Pants
-			i(82425),	-- Contender's Silk Pants
-			i(93617),	-- Crafted Dreadful Gladiator's Felweave Trousers
-			i(93552),	-- Crafted Dreadful Gladiator's Mooncloth Leggings
-			i(93557),	-- Crafted Dreadful Gladiator's Satin Leggings
-			i(93501),	-- Crafted Dreadful Gladiator's Silk Trousers
-			i(98923),	-- Crafted Malevolent Gladiator's Felweave Trousers
-			i(98867),	-- Crafted Malevolent Gladiator's Mooncloth Leggings
-			i(98872),	-- Crafted Malevolent Gladiator's Satin Leggings
-			i(98827),	-- Crafted Malevolent Gladiator's Silk Trousers
-			i(98603),	-- Leggings of the Night Sky
-			i(98599),	-- White Cloud Leggings
-			i(90475),	-- Windwool Pants
-			i(82401),	-- Windwool Pants
-		}),
-		n(SHOULDER, {
-			i(82430),	-- Contender's Satin Amice
-			i(82422),	-- Contender's Silk Amice
-			i(93619),	-- Crafted Dreadful Gladiator's Felweave Amice
-			i(93554),	-- Crafted Dreadful Gladiator's Mooncloth Mantle
-			i(93559),	-- Crafted Dreadful Gladiator's Satin Mantle
-			i(93503),	-- Crafted Dreadful Gladiator's Silk Amice
-			i(98925),	-- Crafted Malevolent Gladiator's Felweave Amice
-			i(98869),	-- Crafted Malevolent Gladiator's Mooncloth Mantle
-			i(98874),	-- Crafted Malevolent Gladiator's Satin Mantle
-			i(98829),	-- Crafted Malevolent Gladiator's Silk Amice
-			i(90478),	-- Windwool Shoulders
-			i(82398),	-- Windwool Shoulders
-		}),
-		n(WAIST, {
-			i(98612),	-- Belt of the Night Sky
-			i(82436),	-- Contender's Satin Belt
-			i(82428),	-- Contender's Silk Belt
-			i(93429),	-- Crafted Dreadful Gladiator's Cord of Accuracy
-			i(93428),	-- Crafted Dreadful Gladiator's Cord of Cruelty
-			i(93430),	-- Crafted Dreadful Gladiator's Cord of Meditation
-			i(98764),	-- Crafted Malevolent Gladiator's Cord of Accuracy
-			i(98763),	-- Crafted Malevolent Gladiator's Cord of Cruelty
-			i(98765),	-- Crafted Malevolent Gladiator's Cord of Meditation
-			i(98608),	-- White Cloud Belt
-			i(90472),	-- Windwool Belt
-			i(82404),	-- Windwool Belt
-		}),
-		n(WRIST, {
-			i(82434),	-- Contender's Satin Cuffs
-			i(82426),	-- Contender's Silk Cuffs
-			i(93434),	-- Crafted Dreadful Gladiator's Cuffs of Accuracy
-			i(93436),	-- Crafted Dreadful Gladiator's Cuffs of Meditation
-			i(93435),	-- Crafted Dreadful Gladiator's Cuffs of Prowess
-			i(98769),	-- Crafted Malevolent Gladiator's Cuffs of Accuracy
-			i(98771),	-- Crafted Malevolent Gladiator's Cuffs of Meditation
-			i(98770),	-- Crafted Malevolent Gladiator's Cuffs of Prowess
-			i(90474),	-- Windwool Bracers
-			i(82402),	-- Windwool Bracers
+		filter(REAGENTS, {
+			i(82441),	-- Bolt of Windwool Cloth
+			i(82447),	-- Imperial Silk
 		}),
 	}),
 }))));

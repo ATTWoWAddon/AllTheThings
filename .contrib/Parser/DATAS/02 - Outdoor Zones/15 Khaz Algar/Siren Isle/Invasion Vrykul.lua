@@ -77,6 +77,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					}),
 				})),
 				n(TREASURES, {
+					o(493375, {	-- Rune-Sealed Coffer
+						["coord"] = { 67.8, 73.5, SIREN_ISLE },
+						["questID"] = 86171,
+						["isWeekly"] = true,
+					}),
 				}),
 				n(WORLD_QUESTS, {
 					["sourceQuests"] = {
@@ -92,7 +97,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(233494, {	-- Muddy Snapdragon Treat
+					i(233494, {	-- Muddy Snapdragon Treat (CI!)
 						["description"] = "You must have the Prismatic Snapdragon Mount before this can drop.\n\nCan be looted from Vrykul.",
 						-- n: 232324 / n: 232323
 					}),

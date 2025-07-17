@@ -12,11 +12,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["icon"] = 236853,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(841),	-- Explore Wetlands
+				ach(841),	-- Explore Wetlands
 				ach(4898, {	-- Wetlands Quests
 					-- In 5.0.4, this was merged into the Loch Modan quests achievement for some stupid reason no one knows the answer to.
-					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-					-- #if ANYCLASSIC
+					["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+					-- #if BEFORE 5.0.4
 					["sourceQuests"] = {
 						25734,	-- Down in Thelgen Rock
 						25733,	-- Get Out of Here, Stalkers
@@ -45,34 +45,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(12429, {	-- Wetlands Quests
+					["_doautomation"] = true,
 					["timeline"] = { ADDED_7_3_5 },
 					["races"] = ALLIANCE_ONLY,
-					-- #if ANYCLASSIC
-					["sourceQuests"] = {
-						25734,	-- Down in Thelgen Rock
-						25733,	-- Get Out of Here, Stalkers
-						25735,	-- Incendicite Ore
-						25780,	-- Assault on Menethil Keep
-						25801,	-- Claws from the Deep
-						25805,	-- Return the Statuette
-						25819,	-- The Eye of Paleth
-						25857,	-- Hunting Horrorjaw
-						26189,	-- The Angerfang Menace
-						25868,	-- Yorla Darksnare
-						--[[	TODO: possibly required -- first two from same hub as Yorla Darksnare, second two from same hub as The Angerfang Menace
-						25855,	-- Gizmos and Gadgets
-						25850,	-- Strike the Earth!
-						25853,	-- Tooling Around
-						--]]
-						26128,	-- The Battle of Thandol Span
-						26120,	-- The Crazed Dragonmaw
-						--[[ TODO: possibly needed
-						25939,	-- For Peat's Sake
-						26196,	-- Longbraid the Grim
-						25927,	-- The Threat of Flame
-						]]--
-					},
-					-- #endif
 				}),
 			}),
 			battlepets({
@@ -173,17 +148,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				prof(SKINNING, {
+					-- #if AFTER 4.0.3
 					i(7286, {	-- Black Whelp Scale
+						["coord"] = { 62.1, 47.5, WETLANDS },	-- Greenwarden's Grove, southeast of.
 						["cr"] = 42042,	-- Ebon Whelp
 					}),
-					-- #if BEFORE 4.0.3
+					-- #endif
 					i(7287, {	-- Red Whelp Scale
+						["coord"] = { 62.1, 47.5, WETLANDS },	-- Greenwarden's Grove, southeast of it's future location.
 						["crs"] = {
 							1069,	-- Crimson Whelp
 							1044,	-- Flamesnorting Whelp
 						},
+						["timeline"] = { REMOVED_3_1_0 },
 					}),
-					-- #endif
 				}),
 			}),
 			n(QUESTS, {
@@ -341,7 +319,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/12 Bluegill Murloc slain
 							["providers"] = {
-								{ "n", 42109},	-- Bluegill Murloc Kill Credit
 								{ "n", 41425},	-- Bluegill Murloc
 								{ "n", 41426},	-- Bluegill Oracle
 								{ "n", 42110},	-- Bluegill Puddlejumper
@@ -495,9 +472,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/8 Highland Raptors slain
 							["providers"] = {
-								{ "n", 41414},	-- Highland Raptor Kill Credit
-								{ "n", 41400},	-- Highland Razormaw
-								{ "n", 41401},	-- Highland Scytheclaw
+								{ "n", 41400 },	-- Highland Razormaw
+								{ "n", 41401 },	-- Highland Scytheclaw
 							},
 						}),
 						i(59095, {	-- Swiftgear Belt
@@ -617,6 +593,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/7 Fires Extinguished
+							["provider"] = { "i", 56134 },	-- Blessed Floodlily
+						}),
 						i(59109, {	-- Marsh Fire Legguards
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -676,6 +655,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 26.9, 26.0, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Gnolls Freed
+							["providers"] = {
+								{ "n",  41410 },	-- Captured Mosshide
+								{ "o", 203282 },	-- Gnoll Cage
+							},
+							["cost"] = {{ "i", 56081, 6 }},	-- Trapper's Key
+							["cr"] = 41409,	-- Dark Iron Trapper
+						}),
+					},
 				}),
 				heroscall(q(28565, {	-- Hero's Call: Wetlands!
 					["timeline"] = { ADDED_4_0_3 },
@@ -741,8 +730,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/8 Incendicite Ore
 							["providers"] = {
-								{ "i", 55241 },	-- Incendicite Ore
+								{ "i",  55241 },	-- Incendicite Ore
 								{ "o", 203188 },	-- Incendicite Mineral Vein
+								{ "i",  55240 },	-- Spark-Proof Pick
 							},
 						}),
 						i(59066, {	-- Stabilized Incendicite Legguards
@@ -1154,7 +1144,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						objective(2, {	-- 0/16 Angerfang Dragonmaw slain
 							["providers"] = {
-								{ "n", 42151},	-- Angerfang Dragonmaw Kill Credit
 								{ "n", 1034},	-- Dragonmaw Raider
 								{ "n", 1035},	-- Dragonmaw Swamprunner
 								{ "n", 1036},	-- Dragonmaw Centurion
@@ -1905,9 +1894,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(6198, {	-- Jurassic Wristguards
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						}),
+						-- #if BEFORE 3.3.0
 						i(48124, {	-- Razormaw Hatchling (PET!)
-							["timeline"] = { ADDED_3_2_0, REMOVED_3_3_0 },
+							["timeline"] = { ADDED_3_1_0, REMOVED_3_3_0 },
 						}),
+						-- #endif
 					},
 				}),
 				n(44225, {	-- Rufus Darkshot
@@ -1938,7 +1929,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(TREASURES, {
-				o(207496, {	-- Dark Iron Treasure Chest
+				o(207498, {	-- Dark Iron Treasure Chest
 					["timeline"] = { ADDED_4_0_3 },
 					["modelScale"] = 1.5,
 					["coords"] = {
@@ -1959,7 +1950,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(12987),	-- Darkweave Breeches
 						i(2194),	-- Diamond Hammer
 						i(1717),	-- Double Link Tunic
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						i(2098),	-- Double-Barreled Shotgun
 						-- #endif
 						i(12999),	-- Drakewing Bands
@@ -1973,15 +1964,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(13062),	-- Thunderwood
 						i(13114),	-- Troll's Bane Leggings
 					},
-				}),
-				o(207498, {	-- Dark Iron Treasure Chest
-					["coords"] = {	-- As opposed to 207496, this one spawns exclusively in Wetlands
-						{ 36.6, 61.2, LOCH_MODAN },
-						{ 61.9, 75.0, LOCH_MODAN },
-						{ 80.3, 51.9, LOCH_MODAN },
-					},
-					["timeline"] = { ADDED_4_0_3 },
-					["sym"] = {{ "select", "objectID", 207496 }, {"pop"}},
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(209848, {	-- Goaz Scrolls
@@ -2227,9 +2209,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1457, {	-- Samor Festivus <Shady Dealer>
 					["coord"] = { 10.5, 60.2, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER MOP
 					["sym"] = {{"select","itemID",
 						4565,	-- Simple Dagger
 					}},
+					-- #endif
 				}),
 				n(3178, {	-- Stuart Fleming <Fisherman>
 					["coords"] = {
@@ -2297,7 +2281,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 25.6, 25.8, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(7114, {	-- Pattern: Azure Silk Gloves
+						i(7114, {	-- Pattern: Azure Silk Gloves (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(7613, {	-- Pattern: Green Leather Armor (RECIPE!)
@@ -2470,9 +2454,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 				}),
-				-- #if BEFORE 4.0.3
-				-- Moved to a Vendor, Dark Iron Entrepreneur after 4.0.3
+				-- #if BEFORE 6.1.0
+				-- Moved to a Vendor, Dark Iron Entrepreneur after 6.1.0
 				i(11150, {	-- Formula: Enchant Gloves - Mining (RECIPE!)
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						1364,	-- Balgaras the Foul
 						1054,	-- Dark Iron Demolitionist

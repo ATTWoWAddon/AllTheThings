@@ -19,6 +19,8 @@ BREWFEST_HEADER = createHeader({
 		en = WOWAPI_GetCategoryName(162),
 		-- #else
 		en = "Brewfest",
+		es = "Fiesta de la cerveza",
+		mx = "Fiesta de la cerveza",
 		-- #endif
 	},
 });
@@ -325,6 +327,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["_quests"] = { 77095 },
 				}),
 			})),
+			ach(41212, {	-- A Round on the House in Khaz Algar (automated)
+				["timeline"] = { ADDED_11_2_0 }
+			}),
 			ach(1684, {	-- Brewmaster (A)
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {{"meta_achievement",
@@ -599,7 +604,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			-- #endif
 			["timeline"] = { ADDED_2_0_1 },
 			["isDaily"] = true,
-			-- #if AFTER SHADOWLANDS
+			-- #if AFTER SL
 			["lvl"] = 20,
 			-- #elseif AFTER WRATH
 			["lvl"] = 75,
@@ -1678,7 +1683,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["timeline"] = { ADDED_2_2_2 },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
-					-- #if AFTER SHADOWLANDS
+					-- #if AFTER SL
 					["lvl"] = 20,
 					-- #elseif AFTER WRATH
 					["lvl"] = 75,
@@ -1692,7 +1697,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["timeline"] = { ADDED_2_2_2 },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
-					-- #if AFTER SHADOWLANDS
+					-- #if AFTER SL
 					["lvl"] = 20,
 					-- #elseif AFTER WRATH
 					["lvl"] = 75,
@@ -2220,27 +2225,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						i(122339, {	-- Ancient Heirloom Scabbard
 							["cost"] = BREWFEST_TOKEN_COST(300),
 							["timeline"] = { ADDED_6_1_0 },
-							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(167732, {	-- Battle-Hardened Heirloom Scabbard
 							["cost"] = BREWFEST_TOKEN_COST(500),
 							["timeline"] = { ADDED_8_1_5 },
-							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(187998, {	-- Eternal Heirloom Scabbard
 							["cost"] = BREWFEST_TOKEN_COST(500),
 							["timeline"] = { ADDED_9_1_5 },
-							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(122341, {	-- Timeworn Heirloom Scabbard
 							["cost"] = BREWFEST_TOKEN_COST(500),
 							["timeline"] = { ADDED_6_1_0 },
-							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(151615, {	-- Weathered Heirloom Scabbard
 							["timeline"] = { ADDED_7_2_5 },
 							["cost"] = BREWFEST_TOKEN_COST(500),
-							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(37571, {	-- "Brew of the Month" Club Membership Form (current)
 							["timeline"] = { CREATED_2_2_2, ADDED_3_0_2 },	-- NOTE: Not used in 2007
@@ -2410,27 +2410,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						i(122339, {	-- Ancient Heirloom Scabbard
 							["cost"] = BREWFEST_TOKEN_COST(300),
 							["timeline"] = { ADDED_6_1_0 },
-							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(167732, {	-- Battle-Hardened Heirloom Scabbard
 							["cost"] = BREWFEST_TOKEN_COST(500),
 							["timeline"] = { ADDED_8_1_5 },
-							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(187998, {	-- Eternal Heirloom Scabbard
 							["cost"] = BREWFEST_TOKEN_COST(500),
 							["timeline"] = { ADDED_9_1_5 },
-							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(122341, {	-- Timeworn Heirloom Scabbard
 							["cost"] = BREWFEST_TOKEN_COST(500),
 							["timeline"] = { ADDED_6_1_0 },
-							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(151615, {	-- Weathered Heirloom Scabbard
 							["timeline"] = { ADDED_7_2_5 },
 							["cost"] = BREWFEST_TOKEN_COST(500),
-							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						i(37599, {	-- "Brew of the Month" Club Membership Form (current)
 							["timeline"] = { CREATED_2_2_2, ADDED_3_0_2 },	-- NOTE: Not used in 2007

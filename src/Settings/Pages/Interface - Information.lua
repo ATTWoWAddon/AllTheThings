@@ -1,9 +1,9 @@
 local _, app = ...;
-local L, settings = app.L.SETTINGS_MENU, app.Settings;
+local L, settings = app.L, app.Settings;
 
 -- Global locals
-local pairs, ipairs, tonumber, math_floor, select, tostring, tinsert, RETRIEVING_DATA
-	= pairs, ipairs, tonumber, math.floor, select, tostring, tinsert, RETRIEVING_DATA;
+local pairs, ipairs, tonumber, math_floor, select, type, tostring, tinsert, tremove, RETRIEVING_DATA
+	= pairs, ipairs, tonumber, math.floor, select, type, tostring, tinsert, tremove, RETRIEVING_DATA;
 local Colorize = app.Modules.Color.Colorize;
 local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
@@ -13,7 +13,9 @@ local GetRealmName = GetRealmName
 -- WoW API Cache
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetItemCount = app.WOWAPI.GetItemCount;
+local GetItemSpecInfo = app.WOWAPI.GetItemSpecInfo;
 local GetSpellName = app.WOWAPI.GetSpellName;
+local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 local IsQuestFlaggedCompletedOnAccount = app.WOWAPI.IsQuestFlaggedCompletedOnAccount;
 
 -- Settings: Interface Page
@@ -62,11 +64,22 @@ local ConversionMethods = setmetatable({
 	awp = function(val) return Colorize(GetPatchString(val), app.Colors.AddedWithPatch) end,
 	rwp = function(val) return Colorize(GetPatchString(val), app.Colors.RemovedWithPatch) end,
 	spellID = function(spellID, reference)
+		local name = tostring(spellID);
 		if app.Settings:GetTooltipSetting("spellName") then
-			return tostring(spellID) .. " (" .. (app.GetSpellName(spellID, reference.rank) or "??") .. ")";
-		else
-			return tostring(spellID);
+			name = name .. " (" .. (app.GetSpellName(spellID, reference.rank) or "??") .. ")";
 		end
+		return name;
+	end,
+	spellIDAndIcon = function(spellID, reference)
+		local name = tostring(spellID);
+		if app.Settings:GetTooltipSetting("spellName") then
+			name = name .. " (" .. (app.GetSpellName(spellID, reference.rank) or "??") .. ")";
+		end
+		local icon = GetSpellIcon(spellID);
+		if icon then
+			name = "|T" .. icon .. ":0|t" .. name;
+		end
+		return name;
 	end,
 	creatureName = function(creatureID, reference)
 		if app.Settings:GetTooltipSetting("creatureID") then
@@ -110,7 +123,7 @@ local ConversionMethods = setmetatable({
 		end
 	end,
 	professionName = function(spellID, reference)
-		return IsRetrievingConversionMethod(GetSpellName(app.SkillIDToSpellID[spellID] or 0), reference)
+		return IsRetrievingConversionMethod(GetSpellName(app.SkillDB.SkillToSpell[spellID] or 0), reference)
 	end,
 }, {
 	__index = function(t, key)
@@ -127,7 +140,7 @@ ConversionMethods.provider = function(provider, reference)
 	elseif providerType == "i" then
 		return ConversionMethods.itemNameAndIcon(providerID, reference);
 	elseif providerType == "s" then
-		return ConversionMethods.spellID(providerID, reference);
+		return ConversionMethods.spellIDAndIcon(providerID, reference);
 	end
 	return UNKNOWN;
 end;
@@ -142,9 +155,19 @@ end
 local function GetRecursiveValueForInformationType(t, reference)
 	local rowReference = app.ActiveRowReference
 	local informationTypeID = t.informationTypeID
+	-- app.PrintDebug("IT-recur",informationTypeID,rowReference,rowReference and rowReference[informationTypeID],
+	-- 				reference,reference[informationTypeID],GetRelativeValue(rowReference or reference, informationTypeID),
+	-- 				app:SearchLink(app.GetRelativeGroup((rowReference and rowReference.sourceParent)
+						-- or reference.sourceParent
+						-- or (not reference.sourceIgnored and reference.parent)
+						-- or nil, informationTypeID)))
 	return rowReference and rowReference[informationTypeID]
 		or reference[informationTypeID]
-		or GetRelativeValue(rowReference or reference, informationTypeID)
+		-- prioritize sourceParent for recursive values, and only allow parent when not a sourceIgnored group
+		or GetRelativeValue((rowReference and rowReference.sourceParent)
+						or reference.sourceParent
+						or (not reference.sourceIgnored and reference.parent)
+						or nil, informationTypeID)
 end
 local function ProcessInformationType(t, reference, tooltipInfo)
 	local val = t.GetValue(t, reference);
@@ -185,9 +208,11 @@ local CreateInformationType = app.CreateClass("InformationType", "informationTyp
 local KnownByIgnoredTypes = {
 	Achievement = app.IsRetail,
 	BattlePet = true,
+	BattlePetWithItem = true,
 	Illusion = true,
 	IllusionWithItem = true,
 	Mount = true,
+	MountWithItem = true,
 }
 local knownBy = {};
 local function BuildKnownByInfoForKind(tooltipInfo, kind)
@@ -221,7 +246,7 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 				end
 			end
 			if #knownBy == 0 and IsQuestFlaggedCompletedOnAccount(id) then
-				tinsert(knownBy, {text=ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE or "Account-Wide"});
+				tinsert(knownBy, {text=ACCOUNT_COMPLETED_QUEST_NOTICE or "Previously completed on your Account"});
 			end
 		end
 		BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
@@ -238,8 +263,8 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 		BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
 	end
 
-	-- Pre-MOP Known By types
-	if app.GameBuildVersion < 50000 then
+	-- Pre-WOD Known By types
+	if app.GameBuildVersion < 60000 then
 		id = reference.achievementID;
 		if id then
 			-- Prior to Cata, Achievements were not tracked account wide
@@ -363,6 +388,134 @@ local function ProcessForKnownBy(t, reference, tooltipInfo)
 	end
 end
 
+-- Specialization Requirements
+local GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID
+	= GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID
+-- Filters a specs table to only those which the current Character class can choose
+local function FilterSpecs(specs)
+	if specs and #specs > 0 then
+		local name, class, _;
+		for i=#specs,1,-1 do
+			_, name, _, _, _, class = GetSpecializationInfoByID(specs[i]);
+			if class ~= app.Class or not name or name == "" then
+				tremove(specs, i);
+			end
+		end
+		app.Sort(specs, app.SortDefaults.Values);
+	end
+end
+local GetFixedItemSpecInfo = GetSpecializationInfo and function(itemID)
+	if itemID then
+		local specs = GetItemSpecInfo(itemID);
+		if not specs or #specs < 1 then
+			specs = {};
+			-- Starting with Legion items, the API seems to return no spec information when the item is in fact lootable by ANY spec
+			local _, _, _, _, _, _, _, _, itemEquipLoc, _, _, itemClassID, itemSubClassID, _, expacID, _, _ = GetItemInfo(itemID);
+			-- only Armor items
+			if itemClassID and itemClassID == 4 then
+				-- unable to distinguish between Trinkets usable by all specs (Font of Power) and Role-Specific trinkets which do not apply to any Role of the current Character
+				if expacID >= 6 and (itemEquipLoc == "INVTYPE_NECK" or itemEquipLoc == "INVTYPE_FINGER") then
+					local numSpecializations = GetNumSpecializations();
+					if numSpecializations and numSpecializations > 0 then
+						for i=1,numSpecializations,1 do
+							local specID = GetSpecializationInfo(i);
+							tinsert(specs, specID);
+						end
+					end
+				end
+			end
+			app.Sort(specs, app.SortDefaults.Values);
+		else
+			FilterSpecs(specs);
+		end
+		if #specs > 0 then
+			return specs;
+		end
+	end
+end or function(itemID)
+	if itemID then
+		local specs = GetItemSpecInfo(itemID);
+		if specs then
+			FilterSpecs(specs);
+		else
+			return;
+		end
+		if #specs > 0 then
+			return specs;
+		end
+	end
+end
+app.GetFixedItemSpecInfo = GetFixedItemSpecInfo
+-- Returns a string containing the spec icons, followed by their respective names if desired
+local function GetSpecsString(specs, includeNames, trim)
+	local icons, name, icon, _ = {}, nil, nil, nil;
+	if includeNames then
+		for i=#specs,1,-1 do
+			_, name, _, icon, _, _ = GetSpecializationInfoByID(specs[i]);
+			icons[i * 4 - 3] = "  |T";
+			icons[i * 4 - 2] = icon;
+			icons[i * 4 - 1] = ":0|t ";
+			icons[i * 4] = name;
+		end
+	else
+		for i=#specs,1,-1 do
+			_, _, _, icon, _, _ = GetSpecializationInfoByID(specs[i]);
+			icons[i * 3 - 2] = "|T";
+			icons[i * 3 - 1] = icon;
+			icons[i * 3] = ":0|t ";
+		end
+	end
+	if trim then
+		return app.TableConcat(icons):match('^%s*(.*%S)');
+	end
+	return app.TableConcat(icons);
+end
+app.GetSpecsString = GetSpecsString
+
+-- Cost Helper Functions
+local function formatNumericWithCommas(amount)
+    local k
+    while true do
+        amount, k = tostring(amount):gsub("^(-?%d+)(%d%d%d)", '%1,%2')
+        if k == 0 then
+            break
+        end
+    end
+    return amount
+end
+local function GetMoneyString(amount)
+    if amount > 0 then
+        local formatted
+        local gold, silver, copper = math_floor(amount / 100 / 100), math_floor((amount / 100) % 100),
+            math_floor(amount % 100)
+        if gold > 0 then
+            formatted = formatNumericWithCommas(gold) .. "|T237618:0|t"
+        end
+        if silver > 0 then
+            formatted = (formatted or "") .. silver .. "|T237620:0|t"
+        end
+        if copper > 0 then
+            formatted = (formatted or "") .. copper .. "|T237617:0|t"
+        end
+        return formatted
+    end
+    return amount
+end
+local CostCurrencyCache = setmetatable({}, {
+	__index = function(t, id)
+		local o = app.CreateCurrencyClass(id);
+		t[id] = o;
+		return o;
+	end
+});
+local CostItemCache = setmetatable({}, {
+	__index = function(t, id)
+		local o = app.CreateItem(id);
+		t[id] = o;
+		return o;
+	end
+});
+
 -- The post processor uses a dynamic list to append additional entries as needed.
 local AppendedInformationTextEntries = {};
 local PostProcessor = CreateInformationType("__postprocessor", {
@@ -468,6 +621,17 @@ local InformationTypes = {
 			end
 		end,
 	}),
+	CreateInformationType("petBattleLvl", { text = LEVEL .. " (" .. L.PET_BATTLES .. ")", priority = 2.01, ShouldDisplayInExternalTooltips = false,
+		Process = function(t, reference, tooltipInfo)
+			local petBattleLvl = reference.petBattleLvl;
+			if petBattleLvl then
+				tinsert(tooltipInfo, {
+					left = LEVEL .. " (" .. L.PET_BATTLES .. ")",
+					right = tostring(petBattleLvl),
+				});
+			end
+		end,
+	}),
 
 	-- Quest Fields
 	CreateInformationType("qgs", { text = L.QUEST_GIVERS, priority = 2.05, ShouldDisplayInExternalTooltips = false,
@@ -479,6 +643,19 @@ local InformationTypes = {
 						left = (i == 1 and L.QUEST_GIVER),
 						right = ConversionMethods.creatureName(creatureID, reference),
 					});
+				end
+			end
+		end,
+	}),
+	CreateInformationType("qis", { text = L.QUEST_ITEMS, priority = 2.06, ShouldDisplayInExternalTooltips = false,
+		Process = function(t, reference, tooltipInfo)
+			local qis = reference.qis
+			if qis then
+				for i=1,#qis do
+					tinsert(tooltipInfo, {
+						left = (i == 1 and L.QUEST_ITEMS),
+						right = ConversionMethods.itemNameAndIcon(qis[i], reference),
+					})
 				end
 			end
 		end,
@@ -723,13 +900,11 @@ local InformationTypes = {
 		Process = app.IsRetail and ProcessInformationType or function(t, reference, tooltipInfo)
 			local awp = t.GetValue(t, reference);
 			if awp then
-				local formatter = L.WAS_ADDED_WITH_PATCH_CLASSIC_FORMAT;
 				if awp > app.GameBuildVersion then
-					-- Current build is before the awp.
-					local rwp = reference.rwp;
-					formatter = (rwp and rwp < awp and L.READDED_WITH_PATCH_CLASSIC_FORMAT) or L.ADDED_WITH_PATCH_CLASSIC_FORMAT;
+					tinsert(tooltipInfo, { left = Colorize(L.READDED_WITH_PATCH_CLASSIC_FORMAT:format(GetPatchString(awp)), app.Colors.AddedWithPatch)});
+				else
+					tinsert(tooltipInfo, { left = t.text, right = Colorize(GetPatchString(awp), app.Colors.AddedWithPatch)});
 				end
-				tinsert(tooltipInfo, { left = Colorize(formatter:format(GetPatchString(awp)), app.Colors.AddedWithPatch)});
 			end
 		end,
 	}),
@@ -738,7 +913,11 @@ local InformationTypes = {
 		Process = app.IsRetail and ProcessInformationType or function(t, reference, tooltipInfo)
 			local rwp = reference.rwp;	-- NOTE: For Retail, namely pre-Cata, this can't be recursive!
 			if rwp then
-				tinsert(tooltipInfo, { left = Colorize(L.REMOVED_WITH_PATCH_CLASSIC_FORMAT:format(GetPatchString(rwp)), app.Colors.RemovedWithPatch)});
+				if app.GameBuildVersion < rwp then
+					tinsert(tooltipInfo, { left = Colorize(L.REMOVED_WITH_PATCH_CLASSIC_FORMAT:format(GetPatchString(rwp)), app.Colors.RemovedWithPatch)});
+				else
+					tinsert(tooltipInfo, { left = t.text, right = Colorize(GetPatchString(rwp), app.Colors.RemovedWithPatch)});
+				end
 			end
 		end,
 	}),
@@ -767,6 +946,7 @@ local InformationTypes = {
 	CreateInformationType("bonusID", { text = L.BONUS_ID, priority = 6 }),
 	CreateInformationType("modID", { text = L.MOD_ID, priority = 6 }),
 	CreateInformationType("artID", { text = L.ART_ID, priority = 7 }),
+	CreateInformationType("campsiteID", { text = L.CAMPSITE_ID, priority = 7 }),
 	CreateInformationType("iconPath", { text = L.ICON_PATH, ShouldDisplayInExternalTooltips = false, priority = 7 }),
 	CreateInformationType("visualID", { text = L.VISUAL_ID, priority = 7 }),
 
@@ -850,7 +1030,7 @@ local InformationTypes = {
 		end,
 	}),
 	CreateInformationType("criteriaID", { text = "Criteria ID" }),
-	CreateInformationType("currencyID", { text = "Currency ID" }),
+	CreateInformationType("currencyID", { text = L.CURRENCY_ID }),
 	CreateInformationType("difficultyID", { text = L.DIFFICULTY_ID }),
 	CreateInformationType("displayID", { text = L.DISPLAY_ID }),
 	CreateInformationType("encounterID", { text = L.ENCOUNTER_ID }),
@@ -968,6 +1148,52 @@ local InformationTypes = {
 	CreateInformationType("b", { text = L.BINDING, priority = 9000, ShouldDisplayInExternalTooltips = false, }),
 	CreateInformationType("iLvl", { text = L.ITEM_LEVEL, priority = 9000 }),
 	CreateInformationType("__type", { text = L.OBJECT_TYPE, priority = 9001, ShouldDisplayInExternalTooltips = false, }),
+	CreateInformationType("Cost", { text = L.COST, priority = 9002,
+		Process = function(t, reference, tooltipInfo)
+			if reference.cost then
+				if type(reference.cost) == "table" then
+					local _, name, icon, amount;
+					for k,v in pairs(reference.cost) do
+						_ = v[1];
+						if _ == "g" then
+							tooltipInfo[#tooltipInfo + 1] = {
+								left = (k == 1 and t.text),
+								right = GetMoneyString(v[2]),
+							};
+						else
+							if _ == "i" then
+								local item = CostItemCache[v[2]];
+								name = item.text;
+								icon = item.icon;
+							elseif _ == "c" then
+								local currency = CostCurrencyCache[v[2]];
+								name = currency.text;
+								icon = currency.icon;
+							end
+							if not name then
+								reference.working = true;
+								name = RETRIEVING_DATA;
+							end
+							name = (icon and ("|T" .. icon .. ":0|t") or "") .. name;
+							_ = (v[3] or 1);
+							if _ > 1 then
+								name = _ .. "x  " .. name;
+							end
+							tooltipInfo[#tooltipInfo + 1] = {
+								left = (k == 1 and t.text),
+								right = name,
+							};
+						end
+					end
+				else
+					tooltipInfo[#tooltipInfo + 1] = {
+						left = t.text,
+						right = GetMoneyString(reference.cost),
+					};
+				end
+			end
+		end,
+	});
 
 	-- Summary Information Types
 	CreateInformationType("Repeatables", { text = "Repeatables", priority = 10999, ShouldDisplayInExternalTooltips = false,
@@ -1044,18 +1270,29 @@ local InformationTypes = {
 	}),
 
 	CreateInformationType("SpecializationRequirements", {
-		priority = 9002,
-		text = "SpecializationRequirements",
-		Process = function(t, reference, tooltipInfo)
-			local itemID = reference.itemID
-			-- Currently excluded for Classic versions
-			if not itemID or not app.IsRetail then return end
-			local specs = app.GetFixedItemSpecInfo(itemID);
+		priority = 9003,
+		text = "Specializations",
+		Process = app.GameBuildVersion >= 50000 and function(t, reference, tooltipInfo)
+			local specs = reference.specs;
+			if not specs then
+				local itemID = reference.itemID
+				if itemID then
+					specs = app.GetFixedItemSpecInfo(itemID);
+				else
+					return;
+				end
+			end
+
 			-- specs is already filtered/sorted to only current class
 			if specs and #specs > 0 then
 				tinsert(tooltipInfo, { right = app.GetSpecsString(specs, true, true) });
 			elseif reference.sourceID then
 				tinsert(tooltipInfo, { right = L.NOT_AVAILABLE_IN_PL });
+			end
+		end or function(t, reference, tooltipInfo)
+			local specs = reference.specs;
+			if specs and #specs > 0 then
+				tinsert(tooltipInfo, { right = app.GetSpecsString(specs, true, true) });
 			end
 		end,
 	});
@@ -1149,10 +1386,9 @@ settings.RefreshActiveInformationTypes = function()
 	local last
 	local totalTypes = #SortedInformationTypesByName;
 	local perRow, offset, scale = 24, 250, 0.8;
-	if totalTypes > 75 then
-		offset = 225;
-		scale = 0.7;
-		perRow = 28;
+	if totalTypes > 72 then
+		scale = 0.75;
+		perRow = 26;
 	end
 	local split1 = perRow
 	local split2 = perRow * 2;
@@ -1225,7 +1461,8 @@ settings.CreateInformationType("LinkSourceID", {
 	text = "DEBUG: Link SourceID",
 	HideCheckBox = not app.Debugging,
 	Process = function(t, data, tooltipInfo)
-		local link, source = data.link or data.silentLink, data.sourceID;
+		local link, source = data.link or data.silentLink, data.sourceID
+		local rowSource = app.ActiveRowReference and app.ActiveRowReference.sourceID
 		if not link then return; end
 		local itemName = GetItemInfo(link)
 		-- If it doesn't, the source ID will need to be harvested.
@@ -1239,10 +1476,17 @@ settings.CreateInformationType("LinkSourceID", {
 				app.SaveHarvestSource(data);
 			end
 		end
+		local matchingSourceIDs = true
+		if rowSource and source and sourceID then
+			if rowSource ~= source or source ~= sourceID or rowSource ~= sourceID then
+				matchingSourceIDs = false
+			end
+		end
 		tinsert(tooltipInfo, {
 			left = Colorize("Link Source", success and app.Colors.ChatLinkHQT or app.Colors.ChatLinkError).." / "
 				..Colorize("Item Info", itemName and app.Colors.ChatLinkHQT or app.Colors.ChatLinkError),
-			right = "Sourced:"..(source or "?").." / Checked:"..(sourceID or "?")
+			right = Colorize("RowSource:"..(rowSource or "?").." / Sourced:"..(source or "?").." / Checked:"..(sourceID or "?"),
+				matchingSourceIDs and app.Colors.ChatLinkHQT or app.Colors.ChatLinkError)
 		});
 	end
 })
@@ -1267,5 +1511,37 @@ settings.CreateInformationType("bonuses", {
 			left = "Item Bonuses",
 			right = app.TableConcat(bonuses, nil, nil, " | ")
 		});
+	end
+})
+settings.CreateInformationType("rawfields", {
+	priority = 99999,
+	text = "DEBUG: Raw Fields",
+	HideCheckBox = not app.Debugging,
+	Process = function(t, data, tooltipInfo)
+		tinsert(tooltipInfo, {
+			left = "Self:",
+			right = tostring(data)
+		});
+		for k, v in pairs(data) do
+			tinsert(tooltipInfo, {
+				left = tostring(k),
+				right = tostring(v)
+			});
+		end
+		if app.ActiveRowReference then
+			tinsert(tooltipInfo, {
+				left = "----"
+			});
+			tinsert(tooltipInfo, {
+				left = "Row:",
+				right = tostring(app.ActiveRowReference)
+			});
+			for k, v in pairs(app.ActiveRowReference) do
+				tinsert(tooltipInfo, {
+					left = tostring(k),
+					right = tostring(v)
+				});
+			end
+		end
 	end
 })

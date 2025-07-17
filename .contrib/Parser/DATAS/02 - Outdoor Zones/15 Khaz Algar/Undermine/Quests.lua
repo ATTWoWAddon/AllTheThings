@@ -1430,7 +1430,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			}),
 			-- New dungeon
 			q(86728, {	-- Operation: Floodgate: Disposing of the Garbage
-				["sourceQuests"] = { 83151 },	-- Down Undermine (TODO: speculation (also up for alts without doing anything in zone))
+				--["sourceQuests"] = { 83151 },	-- Down Undermine
 				["provider"] = { "n", 231045 },	-- Paks Topskimmer
 				["coord"] = { 43.5, 51.7, UNDERMINE },
 			}),
@@ -1440,7 +1440,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["provider"] = { "n", 225531 },	-- Gas Grimeshank
 				["coord"] = { 42.6, 51.1, UNDERMINE },
 				["g"] = {
-					--i(232523),	-- G-99 Breakneck (MOUNT!) // TODO: it is only spellID and not actually an item, does not go to mount journal
+					--i(232523),	-- G-99 Breakneck (MOUNT!) // It is only spellID and not actually an item, does not go to mount journal
 				},
 			}),
 			q(87581, {	-- No More Walkin' Here
@@ -1448,7 +1448,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["provider"] = { "n", 238946 },	-- Gas Grimeshank
 				["coord"] = { 43.2, 59.4, UNDERMINE },
 				["g"] = {
-					--i(232523),	-- G-99 Breakneck (MOUNT!) // TODO: it is only spellID and not actually an item, does not go to mount journal
+					--i(232523),	-- G-99 Breakneck (MOUNT!) // It is only spellID and not actually an item, does not go to mount journal
 				},
 			}),
 			q(86618, {	-- License Not Required

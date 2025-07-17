@@ -8,11 +8,12 @@ root(ROOTS.Zones, {
 			["icon"] = 236766,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					explorationAch(1266),	-- Explore Grizzly Hills
+					ach(1266),	-- Explore Grizzly Hills
 					ach(37, {	-- Fo' Grizzle My Shizzle (A)
 						["races"] = ALLIANCE_ONLY,
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							12249,	-- Ursoc, the Bear God
 							12153,	-- The Iron Thane and His Anvil
@@ -21,39 +22,13 @@ root(ROOTS.Zones, {
 							12164,	-- Hour of the Worg
 							12152,	-- Jin'arrak's End
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 85,
-						-- #endif
-						-- #else
-						["groups"] = {
-							crit(39108, {	-- Ursoc, the Bear God
-								["sourceQuest"] = 12249,	-- Ursoc, the Bear God
-							}),
-							crit(39109, {	-- The Iron Thane
-								["sourceQuest"] = 12153,	-- The Iron Thane and His Anvil
-							}),
-							crit(39110, {	-- Loken's Orders
-								["sourceQuest"] = 12185,	-- Put on Your Best Face for Loken
-							}),
-							crit(39111, {	-- Revelation!
-								["sourceQuest"] = 12068,	-- Voices From the Dust
-							}),
-							crit(39112, {	-- Hour of the Worg
-								["sourceQuest"] = 12164,	-- Hour of the Worg
-							}),
-							crit(39113, {	-- Eons of Misery
-								["sourceQuest"] = 12152,	-- Jin'arrak's End
-							}),
-						},
 						-- #endif
 					}),
 					ach(1357, {	-- Fo' Grizzle My Shizzle (H)
 						["races"] = HORDE_ONLY,
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							12236,	-- Ursoc, the Bear God
 							12431,	-- The Conquest Pit: Final Showdown
@@ -63,101 +38,13 @@ root(ROOTS.Zones, {
 							12068,	-- Voices From the Dust
 							12152,	-- Jin'arrak's End
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 75,
-						-- #endif
-						-- #else
-						["groups"] = {
-							crit(39114, {	-- Ursoc, the Bear God
-								["sourceQuest"] = 12236,	-- Ursoc, the Bear God
-							}),
-							crit(39115, {	-- The Final Showdown
-								["sourceQuest"] = 12431,	-- The Conquest Pit: Final Showdown
-							}),
-							crit(39116, {	-- The Iron Thane
-								["sourceQuest"] = 12199,	-- Bringing Down the Iron Thane
-							}),
-							crit(39117, {	-- Loken's Orders
-								["sourceQuest"] = 12203,	-- Loken's Orders
-							}),
-							crit(39112, {	-- Hour of the Worg
-								["sourceQuest"] = 12164,	-- Hour of the Worg
-							}),
-							crit(39111, {	-- Revelation!
-								["sourceQuest"] = 12068,	-- Voices From the Dust
-							}),
-							crit(39113, {	-- Eons of Misery
-								["sourceQuest"] = 12152,	-- Jin'arrak's End
-							}),
-						},
 						-- #endif
 					}),
 					pvp(ach(2016, {	-- Grizzled Veteran (A)
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							crit(7278, {	-- Blackriver Skirmish
-								["_quests"] = { 12444 },	-- Blackriver Skirmish
-							}),
-							crit(7284, {	-- Down With Captain Zorna!
-								["_quests"] = { 12314 },	-- Down With Captain Zorna!
-							}),
-							crit(7283, {	-- Keep Them at Bay!
-								["_quests"] = { 12316 },	-- Keep Them at Bay!
-							}),
-							crit(7282, {	-- Kick 'Em While They're Down
-								["_quests"] = { 12289 },	-- Kick 'Em While They're Down
-							}),
-							crit(7280, {	-- Life or Death
-								["_quests"] = { 12296 },	-- Life or Death
-							}),
-							crit(7279, {	-- Pieces Parts
-								["_quests"] = { 12268 },	-- Pieces Parts
-							}),
-							crit(7286, {	-- Riding the Red Rocket
-								["_quests"] = { 12437 },	-- Riding the Red Rocket
-							}),
-							crit(7281, {	-- Shredder Repair
-								["_quests"] = { 12244 },	-- Shredder Repair
-							}),
-							crit(7285, {	-- Smoke 'Em Out
-								["_quests"] = { 12323 },	-- Smoke 'Em Out
-							}),
-						},
 					})),
 					pvp(ach(2017, {	-- Grizzled Veteran (H)
 						["races"] = HORDE_ONLY,
-						["groups"] = {
-							crit(7287, {	-- Blackriver Brawl
-								["_quests"] = { 12170 },	-- Blackriver Brawl
-							}),
-							crit(7293, {	-- Crush Captain Brightwater!
-								["_quests"] = { 12315 },	-- Crush Captain Brightwater!
-							}),
-							crit(7290, {	-- Keep 'Em on Their Heels
-								["_quests"] = { 12284 },	-- Keep 'Em on Their Heels
-							}),
-							crit(7294, {	-- Keep Them at Bay
-								["_quests"] = { 12317 },	-- Keep Them at Bay
-							}),
-							crit(7289, {	-- Making Repairs
-								["_quests"] = { 12280 },	-- Making Repairs
-							}),
-							crit(7291, {	-- Overwhelmed!
-								["_quests"] = { 12288 },	-- Overwhelmed!
-							}),
-							crit(7292, {	-- Riding the Red Rocket
-								["_quests"] = { 12432 },	-- Riding the Red Rocket
-							}),
-							crit(7288, {	-- Shred the Alliance
-								["_quests"] = { 12270 },	-- Shred the Alliance
-							}),
-							crit(7295, {	-- Smoke 'Em Out
-								["_quests"] = { 12324 },	-- Smoke 'Em Out
-							}),
-						},
 					})),
 				}),
 				battlepets({

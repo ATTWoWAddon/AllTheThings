@@ -35,7 +35,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			o(504096, {	-- Crumpled Schematics
 				["coord"] = { 42.3, 82.2, UNDERMINE },
 				["questID"] = 86487,
-				["g"] = { i(235037) },	-- Crumpled Schematic: Wormhole Generator: Undermine
+				["g"] = { i(235037) },	-- Crumpled Schematic: Wormhole Generator: Undermine (CI!)
 			}),
 			o(493305, {	-- Exploded Plunger
 				["coord"] = { 49.6, 90.2, UNDERMINE },
@@ -80,6 +80,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			o(493307, {	-- Inert Plunger?
 				["coord"] = { 49.7, 90.2, UNDERMINE },
 				["questID"] = 85694,
+			}),
+			i(236961, {	-- Inoperative Gorillion (QS!)
+				["cost"] = {
+					{ "i", 234431, 1 },	-- Gorillion Batteries
+					{ "i", 234433, 1 },	-- Gorillion Chasis
+					{ "i", 234432, 1 },	-- Gorillion Engine
+					{ "i", 234427, 1 },	-- Gorillion Fork
+					{ "i", 234430, 1 },	-- Gorillion Grease
+				},
 			}),
 			o(499119, {	-- Lonely Tub
 				["coord"] = { 59.3, 19.0, UNDERMINE },

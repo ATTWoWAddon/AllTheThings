@@ -1122,6 +1122,9 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					objective(3, {	-- 0/1 Overlord Wyrmthalak slain
 						["provider"] = { "n", 9568 },	-- Overlord Wyrmthalak
 					}),
+					i(66000, {  -- Band of the Spire
+						["timeline"] = { ADDED_4_0_3 },
+					}),
 					i(65933, {	-- Highlord's Chestpiece
 						["timeline"] = { ADDED_4_0_3 },
 					}),
@@ -1427,8 +1430,12 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				i(16250, {	-- Formula: Enchant Weapon - Superior Striking (RECIPE!)
 					["cr"] = 9216,	-- Spirestone Warlord
 				}),
-				i(14513, {	-- Pattern: Robe of the Archmage
+				i(14513, {	-- Pattern: Robe of the Archmage (RECIPE!)
 					["cr"] = 9264,	-- Firebrand Pyromancer
+					-- #if TBC
+					-- During TBC this was made exclusively usable by Mages, then that change was reverted with Wrath.
+					["classes"] = { MAGE },
+					-- #endif
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, i(227906, {	-- Pattern: Masterwork Volcanic Breastplate (RECIPE!)
@@ -2130,16 +2137,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			e(396, {	-- Overlord Wyrmthalak
 				["creatureID"] = 9568,	-- Overlord Wyrmthalak
 				["groups"] = {
-					ach(643, {	-- Lower Blackrock Spire
-						-- #if BEFORE WRATH
-						["sourceQuests"] = {
-							5089,	-- General Drakkisath's Command
-							5081,	-- Maxwell's Mission
-							4742,	-- Seal of Ascension
-							4903,	-- Warlord's Command
-						},
-						-- #endif
-					}),
+					ach(643),	-- Lower Blackrock Spire
 					ach(5052, {	-- Lower Blackrock Spire Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),
@@ -2277,6 +2275,14 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				}),
 				-- #endif
 				n(ZONE_DROPS, {
+					i(12607, {	-- Brilliant Chromatic Scale
+						-- Danny Donkey: This is an ordinary drop from these mobs, not from Skinning.
+						["crs"] = {
+							10447,	-- Chromatic Dragonspawn
+							10814,	-- Chromatic Elite Guard
+							10442,	-- Chromatic Whelp
+						},
+					}),
 					i(16247, {	-- Formula: Enchant 2H Weapon - Superior Impact (RECIPE!)
 						["timeline"] = { REMOVED_6_0_2 },
 						["cr"] = 10317,	-- Blackhand Elite <Blackhand Legion>
@@ -2308,16 +2314,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						-- #endif
 					}),
 					-- #endif
-				}),
-				prof(SKINNING, {
-					["crs"] = {
-						10447,	-- Chromatic Dragonspawn
-						10814,	-- Chromatic Elite Guard
-						10442,	-- Chromatic Whelp
-					},
-					["groups"] = {
-						i(12607),	-- Brilliant Chromatic Scale
-					},
 				}),
 				n(9816, {	-- Pyroguard Emberseer
 					["timeline"] = { REMOVED_6_0_2 },
@@ -3012,13 +3008,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					["groups"] = {
 						ach(1307, {	-- Upper Blackrock Spire
 							["timeline"] = { REMOVED_6_0_2 },
-							-- #if BEFORE WRATH
-							["sourceQuests"] = {
-								6602,	-- Blood of the Black Dragon Champion
-								6502,	-- Drakefire Amulet
-								5102,	-- General Drakkisath's Demise
-							},
-							-- #endif
 						}),
 						i(16663, {	-- Blood of the Black Dragon Champion
 							["timeline"] = { REMOVED_4_0_3 },

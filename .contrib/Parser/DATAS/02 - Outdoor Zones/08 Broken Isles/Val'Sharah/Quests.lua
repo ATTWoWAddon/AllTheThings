@@ -761,8 +761,12 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 
 				n(BONUS_OBJECTIVES, sharedData({
 					["sharedDescription"] = "This can be completed in party-sync with a character who is in Chromie Time for Legion.",
+					-- #if BEFORE DF
 					["lockCriteria"] = { 1, "lvl", 45 },
-				},{
+					-- #else
+					["lockCriteria"] = { 1, "lvl", 60 },
+					-- #endif
+					},{
 					-- TODO: Check SQ, also probably can't do after a certain level
 					q(38716),	-- Black Rook Hold
 					q(39029),	-- Defend the Temple

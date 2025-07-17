@@ -129,7 +129,7 @@ BFA_HERBALISM = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 NAZJATAR_HERBALISM = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 	r(298142),	-- Zin'anthid [Rank 1]
 }));
-SL_HERBALISM = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_HERBALISM = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(309780),	-- Herb Gathering (Shadowlands)
 	r(193290),	-- Herbalism Journal
 }));

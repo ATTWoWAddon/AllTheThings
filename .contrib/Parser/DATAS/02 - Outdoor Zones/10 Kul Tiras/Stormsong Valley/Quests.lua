@@ -872,9 +872,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(160367),	-- Stormchaser Greaves
 					i(158690),	-- Tidespeaker Cord
 					i(160361),	-- Tidespeaker Pants
-					-- Horde sourceid's(not actual reward)
-					i(161276),	-- Lastwind Legguards
-					i(161278),	-- Resilient Outcast's Leggings
+					--
+					h(i(161276)),	-- Lastwind Legguards
+					h(i(161278)),	-- Resilient Outcast's Leggings
 				},
 			}),
 			q(52068, {	-- Helping Out, Somewhere Else
@@ -1280,8 +1280,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 78.3, 28.8, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					i(162456),	-- Ritual of Safe Passage (QI!)
-					i(162462),	-- Staff of Storms (QI!)
+					i(162462),	-- Staff of Storms (PQI!)
+					o(293699, {	-- Scroll of Safe Passage
+						i(162456),	-- Ritual of Safe Passage (QI!)
+					}),
 				},
 			}),
 			q(50825, {	-- Shrine of the Storm: Whispers Below
@@ -1456,8 +1458,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(155218),	-- Kraulguard Poleaxe
 					i(155203),	-- Needleshot Repeater
 					i(155200),	-- Thornmatron's Vinecaller
-					-- Horde sourceid's(not actual reward)
-					i(161310),	-- Glaive of Zak'rajan
+					--
+					h(i(161310)),	-- Glaive of Zak'rajan
 				},
 			}),
 			q(50783, {	-- The Abyssal Council
@@ -1780,7 +1782,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(51222, {	-- What's Yours is Mined
 				["sourceQuests"] = { 51427 },	-- I Like Turtles
-				["provider"] = { "n", 137453 },
+				["qgs"] = {
+					137554,	-- Toki
+					137677,	-- Toki
+				},
 				["coord"] = { 35.7, 31.2, STORMSONG_VALLEY },
 				["g"] = {
 					i(160429),	-- Rope and Hook (QI!)

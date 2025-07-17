@@ -141,7 +141,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 75417 },	-- Symbol of Hope
 				}),
 			}),
-			explorationAch(17766),	-- Explore Zaralek Cavern
+			ach(17766),		-- Explore Zaralek Cavern
 			header(HEADERS.Achievement, 17934, {	-- Family Battler of Zaralek Cavern
 				petbattle(ach(17934, {	-- Family Battler of Zaralek Cavern
 					-- Meta Achievement

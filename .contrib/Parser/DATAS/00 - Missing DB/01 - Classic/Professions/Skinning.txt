@@ -1,0 +1,18 @@
+0.5.5.3494
+r(8613),	-- Skinning
+r(8617),	-- Skinning
+r(8618),	-- Skinning
+0.7.0.3694
+r(10768),	-- Skinning
+
+
+
+
+Missing in Skinning
+
+0.5.5.3494
+r(8613),	-- Skinning
+r(8617),	-- Skinning
+r(8618),	-- Skinning
+0.7.0.3694
+r(10768),	-- Skinning

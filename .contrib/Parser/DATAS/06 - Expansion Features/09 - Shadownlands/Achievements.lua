@@ -60,7 +60,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 			},
 		})),
 		ach(14763, {	-- Crypt Couture
-			i(183693),	-- Plague Doctor's Mask
+			i(183693),	-- Plague Doctor's Mask (CI!)
 			crit(49929, {	-- Ashen Ink
 				["provider"] = {"i",183690},
 			}),
@@ -103,7 +103,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"
 		-- q(62266),	-- using "Discarded Grimoire"
 		-- q(62408),	-- using "Jagged Bonesaw"
 		-- q(62405),	-- using "Mucosal Pigment"
-		-- q(62409),	-- using "Plague Doctor's Mask"
 		-- q(62311),	-- using "Ritualist's Mantle"
 		-- q(62306),	-- using "Sorcerer's Blade"
 	}),

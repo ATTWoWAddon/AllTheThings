@@ -190,11 +190,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(540, {	-- Epoch Hunter
 					["creatureID"] = 18096,
 					["groups"] = {
-						ach(652, {	-- The Escape From Durnholde
-							-- #if BEFORE WRATH
-							["sourceQuest"] = 10284,	-- Escape from Durnholde
-							-- #endif
-						}),
+						ach(652),	-- The Escape From Durnholde
 						-- #if AFTER 7.3.5
 						i(28222),	-- Reaver of the Infinites
 						-- #endif
@@ -314,9 +310,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(540, {	-- Epoch Hunter
 						["creatureID"] = 18096,
 						["groups"] = {
-							ach(673, {	-- Heroic: The Escape From Durnholde
-								["timeline"] = { ADDED_3_0_2 },
-							}),
+							ach(673),	-- Heroic: The Escape From Durnholde
 							ach(5073, {	-- Heroic: The Escape From Durnholde Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),

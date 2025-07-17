@@ -275,6 +275,24 @@ root(ROOTS.Zones, {
 						["g"] = {
 							recipe(185920),	-- Silkweave Epaulets
 							recipe(185919),	-- Silkweave Cinch
+							--
+							i(127294),	-- Handcrafted Silkweave Robe (QI!)
+							o(242636, {	-- Tanithria's Purple Dye
+								["coord"] = { 35.5, 34.5, LEGION_DALARAN },
+								["g"] = { i(127289) },	-- Tanithria's Purple Dye (QI!)
+							}),
+							o(242638, {	-- Tanithria's Red Dye
+								["coord"] = { 35.5, 34.5, LEGION_DALARAN },
+								["g"] = { i(127291) },	-- Tanithria's Red Dye (QI!)
+							}),
+							o(242633, {	-- Tanithria's Silkweave
+								["coord"] = { 35.5, 34.0, LEGION_DALARAN },
+								["g"] = { i(127286) },	-- Tanithria's Silkweave (QI!)
+							}),
+							o(242634, {	-- Tanithria's Thread
+								["coord"] = { 35.5, 34.5, LEGION_DALARAN },
+								["g"] = { i(127287) },	-- Tanithria's Thread (QI!)
+							}),
 						},
 					}),
 					q(38946, {	-- Consult the Locals

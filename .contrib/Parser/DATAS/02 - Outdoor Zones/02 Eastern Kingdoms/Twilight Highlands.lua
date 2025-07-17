@@ -48,16 +48,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				explorationAch(4866, {	-- Explore Twilight Highlands
+				ach(4866, {	-- Explore Twilight Highlands
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				ach(4873, {	-- Fading into Twilight (Alliance)
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					-- #IF RETAIL
+					-- #if AFTER 7.3.5
 					["_doautomation"] = true,
-					-- #ENDIF
-					-- #if ANYCLASSIC
+					-- #else
 					["sourceQuests"] = {
 						27468,	-- Siege Tank Rescue
 						27545,	-- The Way is Open
@@ -77,10 +76,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(5501, {	-- Fading into Twilight (Horde)
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					-- #IF RETAIL
+					-- #if AFTER 7.3.5
 					["_doautomation"] = true,
-					-- #ENDIF
-					-- #if ANYCLASSIC
+					-- #else
 					["sourceQuests"] = {
 						26337,	-- Beating the Market
 						26840,	-- Return to the Highlands
@@ -94,17 +92,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				ach(4960, {	-- Round Three. Fight!
-					["sourceQuest"] = 27868,	-- The Crucible of Carnage: The Twilight Terror!
 					["timeline"] = { ADDED_4_0_3 },
-				}),
-				ach(4958, {	-- The First Rule of Ring of Blood is You Don't Talk About Ring of Blood
-					["timeline"] = { ADDED_4_0_3 },
-					["collectible"] = false,	-- not all criteria are available in this zone, so the header shouldn't be collectible here.
-					["groups"] = {
-						crit(13918, {	-- Crucible of Carnage in Twilight Highlands
-							["sourceQuest"] = 27868,	-- The Crucible of Carnage: The Twilight Terror!
-						}),
-					},
 				}),
 				achWithRep(4885, FACTION_WILDHAMMER_CLAN, {	-- Wildhammer Clan
 					["races"] = ALLIANCE_ONLY,
@@ -333,6 +321,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			petbattles({
 				n(66822, {	-- Goz Banefury <Master Pet Tamer>
 					["coord"] = { 56.6, 56.8, TWILIGHT_HIGHLANDS },
+					["timeline"] = { ADDED_5_0_4 },
+					["petBattleLvl"] = 25,
+					["groups"] = {
+						q(31974, {	-- Goz Banefury
+							["sourceAchievement"] = 7525,	-- Taming Cataclysm
+							["timeline"] = { ADDED_5_0_4 },
+							["isDaily"] = true,
+						}),
+					},
 				}),
 			}),
 			-- #if ANYCLASSIC
@@ -2671,10 +2668,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 46935,	-- Gurgthock
 				}),
 				q(27868, {	-- The Crucible of Carnage: The Twilight Terror!
+					["qg"] = 46935,	-- Gurgthock
 					["sourceQuest"] = 27867,	-- The Crucible of Carnage: The Earl of Evisceration!
 					["coord"] = { 50.6, 58.3, TWILIGHT_HIGHLANDS },
-					["qg"] = 46935,	-- Gurgthock
 					["groups"] = {
+						ach(4960, {	-- Round Three. Fight!
+							["timeline"] = { ADDED_4_0_3 },
+						}),
 						i(63790),	-- Gurgthock's Garish Gorebat
 						i(63792),	-- Laquered Lung-Leak Longknife
 						i(63788),	-- Calder's Coated Carrion Carver
@@ -3279,9 +3279,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							i(62427),	-- Band of Singing Grass
 							i(62422, {	-- Arcanum of the Wildhammer
 								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(68767, {	-- Arcanum of the Wildhammer
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 						},
@@ -3315,9 +3317,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							i(62418),	-- Boots of Sullen Rock
 							i(62368, {	-- Arcanum of the Dragonmaw
 								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(68763, {	-- Arcanum of the Dragonmaw
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 						},

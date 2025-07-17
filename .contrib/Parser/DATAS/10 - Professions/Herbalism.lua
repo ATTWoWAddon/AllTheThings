@@ -1443,6 +1443,17 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 			q(82965),	-- Light and Shadow
 			q(82958),	-- Little Blessings
 		})),
+		n(QUESTS, {
+			q(91451, {	-- Stalk Market
+				["description"] = "Obtained the first time you harvest Phantom Bloom.",
+				["providers"] = {
+					{ "i", 246582 },	-- Inscrutable Flora
+					{ "o", 527489 },	-- Lush Phantom Bloom
+					{ "o", 527488 },	-- Phantom Bloom
+				},
+				["timeline"] = { ADDED_11_2_0 }
+			}),
+		}),
 		n(TREASURES, {
 			o(455993, {	-- Ancient Flower
 				["coord"] = { 57.5, 61.5, ISLE_OF_DORN },

@@ -887,41 +887,41 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					}),
 					n(ZONE_DROPS, {
-						i(20483, {	-- Tainted Arcane Sliver
-							["cr"] = 15298,	-- Tainted Arcane Wraith
-						}),
+						["sym"] = {
+							{ "select","itemID",
+								21002,	-- Unkempt Belt
+								21003,	-- Unkempt Bracers
+								21004,	-- Unkempt Cloak
+								21005,	-- Unkempt Gloves
+								21006,	-- Unkempt Pants
+								21007,	-- Unkempt Robe
+								21008,	-- Unkempt Shoes
+								21009,	-- Scraggy Leather Belt
+								21010,	-- Scraggy Leather Boots
+								21011,	-- Scraggy Leather Bracers
+								21012,	-- Scraggy Leather Gloves
+								21013,	-- Scraggy Leather Pants
+								21014,	-- Scraggy Leather Vest
+								21015,	-- Shoddy Chain Belt
+								21020,	-- Shoddy Chain Boots
+								21019,	-- Shoddy Chain Bracers
+								21018,	-- Shoddy Chain Gloves
+								21017,	-- Shoddy Chain Pants
+								21016,	-- Shoddy Chain Vest
+								21021,	-- Battered Shield
+								21022,	-- Weather Beaten Buckler
+							},
+						},
+						["groups"] = {
+							i(20483, {	-- Tainted Arcane Sliver
+								["cr"] = 15298,	-- Tainted Arcane Wraith
+							}),
+						},
 					}),
-					n(ZONE_DROPS, sharedData({
-						-- #if AFTER 9.0.3
-						["sharedDescription"] = "This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",
-						-- #endif
-					}, {
-						i(21002),	-- Unkempt Belt
-						i(21003),	-- Unkempt Bracers
-						i(21004),	-- Unkempt Cloak
-						i(21005),	-- Unkempt Gloves
-						i(21006),	-- Unkempt Pants
-						i(21007),	-- Unkempt Robe
-						i(21008),	-- Unkempt Shoes
-						i(21009),	-- Scraggy Leather Belt
-						i(21010),	-- Scraggy Leather Boots
-						i(21011),	-- Scraggy Leather Bracers
-						i(21012),	-- Scraggy Leather Gloves
-						i(21013),	-- Scraggy Leather Pants
-						i(21014),	-- Scraggy Leather Vest
-						i(21015),	-- Shoddy Chain Belt
-						i(21020),	-- Shoddy Chain Boots
-						i(21019),	-- Shoddy Chain Bracers
-						i(21018),	-- Shoddy Chain Gloves
-						i(21017),	-- Shoddy Chain Pants
-						i(21016),	-- Shoddy Chain Vest
-						i(21021),	-- Battered Shield
-						i(21022),	-- Weather Beaten Buckler
-					})),
 				},
 			}),
 			n(ACHIEVEMENTS, {
-				explorationAch(859),	-- Explore Eversong Woods
+				ach(859),	-- Explore Eversong Woods
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",
@@ -992,6 +992,41 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 54.4, 50.8, EVERSONG_WOODS },
 					["timeline"] = { ADDED_2_0_1 },
 					["races"] = HORDE_ONLY,
+				}),
+			}),
+			petbattles({
+				q(31581, {	-- Got one! (Jarson)
+					["qg"] = 63080,	-- Jarson Everlong
+					["sourceQuest"] = 31830,	-- Level Up!
+					["coord"] = { 47.2, 47.2, EVERSONG_WOODS },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(31579, {	-- Learning the Ropes (Jarson)
+					["qg"] = 63080,	-- Jarson Everlong
+					["coord"] = { 47.2, 47.2, EVERSONG_WOODS },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(31824, {	-- Level Up! (Jarson)
+					["qg"] = 63080,	-- Jarson Everlong
+					["sourceQuest"] = 31572,	-- On The Mend
+					["coord"] = { 47.2, 47.2, EVERSONG_WOODS },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(31580, {	-- On The Mend (Jarson)
+					["qg"] = 63080,	-- Jarson Everlong
+					["sourceQuest"] = 31571,	-- Learning the Ropes
+					["coord"] = { 47.2, 47.2, EVERSONG_WOODS },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Battle Pets Healed
+							["provider"] = { "n", 16185 },	-- Anathos <Stable Master>
+							["coord"] = { 47.6, 47.2, EVERSONG_WOODS },
+						}),
+					},
 				}),
 			}),
 			n(QUESTS, {
@@ -1995,6 +2030,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 			}),
 			n(VENDORS, {
+				n(16367, {	-- Botanist Tyniarrel <Herbalism Trainer & Supplies>
+					["coord"] = { 37.4, 71.96, EVERSONG_WOODS },
+					["races"] = HORDE_ONLY,
+					["sym"] = {{ "sub", "common_vendor", 4615 }},	-- Katrina Alliestar <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
+				}),
 				n(18951, {	-- Erilia <Enchanting Vendor>
 					["coord"] = { 56.2, 54.6, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
@@ -2120,8 +2160,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 			n(ZONE_DROPS, sharedData({
 				-- #if AFTER 9.0.3
-				["sharedDescription"] = "This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",
+				["description"] = "This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",
 				-- #endif
+				["maps"] = {
+					EVERSONG_WOODS,
+					SUNSTRIDER_ISLE,
+				},
 			}, {
 				i(21002),	-- Unkempt Belt
 				i(21003),	-- Unkempt Bracers
@@ -2157,5 +2201,5 @@ for i,o in ipairs({
 	i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 	i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 	i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-	i(22307),	-- Pattern: Enchanted Mageweave Pouch
+	i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 }) do table.insert(ENCHANTING_VENDOR_GROUPS, o); end

@@ -52,6 +52,12 @@ root(ROOTS.Zones, {
 							["g"] = appendGroups(COMMON_DRAENOR_LEATHERWORKING_RECIPES, {DRAENOR_LEATHERWORKING}),
 						}),
 					}),
+					prof(TAILORING, {
+						n(87049, {	-- Steven Cochrane <Tailoring Patterns>
+							["coord"] = { 51.0, 37.0, STORMSHIELD },
+							["g"] = appendGroups(COMMON_DRAENOR_TAILORING_RECIPES, {DRAENOR_TAILORING}),
+						}),
+					}),
 				}),
 				n(QUESTS, {
 					q(36630, {	-- A Surly Dwarf
@@ -2154,20 +2160,19 @@ root(ROOTS.Zones, {
 								i(117390, {	-- Draenor Archaeologist's Map
 									["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
 								}),
-								i(118729, {	-- Gorgrond Treasure Map
-									["questID"] = 36465,
+								i(118729, {	-- Gorgrond Treasure Map (CI!)
 									["cost"] = { { "g", 1000000 } }	-- 100g
 								}),
-								i(118732, {	-- Nagrand Treasure Map
-									["questID"] = 36468,
+								i(118732, {	-- Nagrand Treasure Map (CI!)
 									["cost"] = { { "g", 1000000 } }	-- 100g
 								}),
-								i(118731, {	-- Spires of Arak Treasure Map
-									["questID"] = 36467,
+								i(118728, {	-- Shadowmoon Valley Treasure Map (CI!)
 									["cost"] = { { "g", 1000000 } }	-- 100g
 								}),
-								i(118730, {	-- Talador Treasure Map
-									["questID"] = 36466,
+								i(118731, {	-- Spires of Arak Treasure Map (CI!)
+									["cost"] = { { "g", 1000000 } }	-- 100g
+								}),
+								i(118730, {	-- Talador Treasure Map (CI!)
 									["cost"] = { { "g", 1000000 } }	-- 100g
 								}),
 							},
@@ -4642,70 +4647,6 @@ root(ROOTS.Zones, {
 									i(124992, {	-- Wild Combatant's Warboots of Prowess (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
-								}),
-							},
-						}),
-						n(87049, {	-- Steven Cochrane <Tailoring Patterns>
-							["coord"] = { 51.0, 37.0, STORMSHIELD },
-							["groups"] = {
-								i(114863, {	-- Pattern: Brilliant Hexweave Cloak
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114866, {	-- Pattern: Creeping Carpet
-									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
-								}),
-								i(114865, {	-- Pattern: Elekk Plushie
-									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
-								}),
-								i(114864, {	-- Pattern: Hexweave Bag
-									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
-								}),
-								i(114860, {	-- Pattern: Hexweave Belt
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114858, {	-- Pattern: Hexweave Bracers
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114854, {	-- Pattern: Hexweave Cowl
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114852, {	-- Pattern: Hexweave Embroidery
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114856, {	-- Pattern: Hexweave Gloves
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114855, {	-- Pattern: Hexweave Leggings
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114853, {	-- Pattern: Hexweave Mantle
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114857, {	-- Pattern: Hexweave Robe
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114859, {	-- Pattern: Hexweave Slippers
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(202234, {	-- Pattern: Impressive Hexweave Essence
-									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
-									["timeline"] = { ADDED_10_0_5 },
-								}),
-								i(114862, {	-- Pattern: Nimble Hexweave Cloak
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(114861, {	-- Pattern: Powerful Hexweave Cloak
-									["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
-								}),
-								i(202235, {	-- Pattern: Remarkable Hexweave Essence
-									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
-									["timeline"] = { ADDED_10_0_5 },
-								}),
-								i(114871, {	-- Pattern: Hexweave Essence
-									["collectible"] = false,
-									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
-									["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
-									["timeline"] = { REMOVED_10_0_5 },
 								}),
 							},
 						}),

@@ -4,6 +4,7 @@
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(1478, {	-- Ashran
 		["description"] = "Ashran is a 40v40 epic battleground found in eastern Draenor.",
+		["icon"] = 1031537,
 		["timeline"] = { ADDED_6_0_2 },
 		["maps"] = { 588, 589 },	-- Ashran & Ashran Mine
 		["lvl"] = { 25 },
@@ -237,16 +238,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 			}),
 			n(FACTIONS, {
-				faction(FACTION_VOLJINS_SPEAR, sharedDataSelf({ -- Vol'jin's Spear
-					["races"] = HORDE_ONLY,
-				},{
+				h(header(HEADERS.Faction, FACTION_VOLJINS_SPEAR, { -- Vol'jin's Spear
+					faction(FACTION_VOLJINS_SPEAR),
 					ach(9473, {	-- Vol'jin's Spear
 						un(REMOVED_FROM_GAME, title(285)),	-- <Name>, Spear of Vol'jin
 					}),
 				})),
-				faction(FACTION_WRYNNS_VANGUARD, sharedDataSelf({ -- Wyrnn's Vanguard
-					["races"] = ALLIANCE_ONLY,
-				},{
+				a(header(HEADERS.Faction, FACTION_WRYNNS_VANGUARD, { -- Wyrnn's Vanguard
+					faction(FACTION_WRYNNS_VANGUARD),
 					ach(9474, {	-- Wrynn's Vanguard
 						un(REMOVED_FROM_GAME, title(286)),	-- <Name>, Sword of Wrynn
 					}),
@@ -375,18 +374,16 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36065, {	-- A TON of Artifact Fragments (H)
+					["provider"] = { "n", 83995 },	-- Fura
 					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(38925, {	-- Ashran Dominance (A)
 					["repeatable"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						i(135546, {	-- Fel-Touched Crate of Battlefield Goods
-							["sym"] = {{"fill"}},
-						}),
+						i(135546),	-- Fel-Touched Crate of Battlefield Goods
 					},
 				}),
 				q(38923, {	-- Ashran Dominance (H)
@@ -394,9 +391,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						i(135546, {	-- Fel-Touched Crate of Battlefield Goods
-							["sym"] = {{"fill"}},
-						}),
+						i(135546),	-- Fel-Touched Crate of Battlefield Goods
 					},
 				}),
 				q(37483, {	-- Captian's Whistle (A)
@@ -443,6 +438,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["coord"] = { 44.2, 74.2, 1478 },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
+					["g"] = { i(114124) },	-- Phantom Potion
 				}),
 				q(36935, {	-- Phantom Potion (H)
 					["repeatable"] = true,
@@ -450,15 +446,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["coord"] = { 45.6, 28.6, 1478 },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
+					["g"] = { i(114124) },	-- Phantom Potion
 				}),
 				q(39096, {	-- Slay Them All! (A)
 					["repeatable"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						i(135546, {	-- Fel-Touched Crate of Battlefield Goods
-							["sym"] = {{"fill"}},
-						}),
+						i(135546),	-- Fel-Touched Crate of Battlefield Goods
 					},
 				}),
 				q(39090, {	-- Slay Them All! (H)
@@ -466,9 +461,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						i(135546, {	-- Fel-Touched Crate of Battlefield Goods
-							["sym"] = {{"fill"}},
-						}),
+						i(135546),	-- Fel-Touched Crate of Battlefield Goods
 					},
 				}),
 				q(36133, {	-- Uncovering the Artifact Fragments (A)
@@ -537,6 +530,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["coord"] = { 44.2, 74.2, 1478 },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
+					["g"] = { i(116925) },	-- Vintage Free Action Potion
 				}),
 				q(36742, {	-- Vintage Free Action Potion (H)
 					["repeatable"] = true,
@@ -544,6 +538,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["coord"] = { 45.6, 28.6, 1478 },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
+					["g"] = { i(116925) },	-- Vintage Free Action Potion
 				}),
 				q(36119, {	-- Welcome to Ashran (A)
 					["races"] = ALLIANCE_ONLY,
@@ -566,7 +561,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(35937, {	-- Blood Elf Ear
-					["provider"] = { "i", 112128 },	-- Blood Elf Ear
+					["qgs"] = {
+						-- #if AFTER DF
+						199583,	-- Hudson Davor
+						-- #else
+						82909,	-- Chris Clarkie <SI:7 Operative>
+						-- #endif
+					},
+					["cost"] = { { "i", 112128, 1 } },	-- Blood Elf Ear
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["g"] = {
@@ -579,7 +581,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				q(36041, {	-- Draenei Tail
-					["provider"] = { "i", 112121 },	-- Draenei Tail
+					["qg"] = 83869,	-- Angry Zurge
+					["cost"] = { { "i", 112121, 1 } },	-- Draenei Tail
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["g"] = {
@@ -591,7 +594,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				q(36034, {	-- Dwarf Spine
-					["provider"] = { "i", 112126 },	-- Dwarf Spine
+					["qg"] = 83869,	-- Angry Zurge
+					["cost"] = { { "i", 112126, 1 } },	-- Dwarf Spine
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["g"] = {
@@ -603,7 +607,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				q(35927, {	-- Forsaken Brains
-					["provider"] = { "i", 112015 },	-- Forsaken Brains
+					["qgs"] = {
+						-- #if AFTER DF
+						199583,	-- Hudson Davor
+						-- #else
+						82909,	-- Chris Clarkie <SI:7 Operative>
+						-- #endif
+					},
+					["cost"] = { { "i", 112015, 1 } },	-- Forsaken Brains
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["g"] = {
@@ -616,7 +627,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				q(35938, {	-- Goblin Nose
-					["provider"] = { "i", 112125 },	-- Goblin Nose
+					["qgs"] = {
+						-- #if AFTER DF
+						199583,	-- Hudson Davor
+						-- #else
+						82909,	-- Chris Clarkie <SI:7 Operative>
+						-- #endif
+					},
+					["cost"] = { { "i", 112125, 1 } },	-- Goblin Nose
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["g"] = {
@@ -629,7 +647,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				q(36042, {	-- Human Bone Chip
-					["provider"] = { "i", 112131 },	-- Human Bone Chip
+					["qg"] = 83869,	-- Angry Zurge
+					["cost"] = { { "i", 112131, 1 } },	-- Human Bone Chip
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["g"] = {
@@ -641,7 +660,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				q(35940, {	-- Orc Tooth
-					["provider"] = { "i", 112122 },	-- Orc Tooth
+					["qgs"] = {
+						-- #if AFTER DF
+						199583,	-- Hudson Davor
+						-- #else
+						82909,	-- Chris Clarkie <SI:7 Operative>
+						-- #endif
+					},
+					["cost"] = { { "i", 112122, 1 } },	-- Orc Tooth
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["g"] = {
@@ -654,7 +680,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				q(35942, {	-- Pandaren Hide [A]
-					["provider"] = { "i", 112113 },	-- Pandaren Hide
+					["qgs"] = {
+						-- #if AFTER DF
+						199583,	-- Hudson Davor
+						-- #else
+						82909,	-- Chris Clarkie <SI:7 Operative>
+						-- #endif
+					},
+					["cost"] = { { "i", 112113, 1 } },	-- Pandaren Hide
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["g"] = {
@@ -667,7 +700,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				q(36038, {	-- Pandaren Hide [H]
-					["provider"] = { "i", 112113 },	-- Pandaren Hide
+					["qg"] = 83869,	-- Angry Zurge
+					["cost"] = { { "i", 112113, 1 } },	-- Pandaren Hide
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["g"] = {
@@ -680,7 +714,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				q(36033, {	-- Severed Night Elf Head
-					["provider"] = { "i", 112124 },	-- Severed Night Elf Head
+					["qg"] = 83869,	-- Angry Zurge
+					["cost"] = { { "i", 112124, 1 } },	-- Severed Night Elf Head
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["g"] = {
@@ -692,7 +727,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				q(35939, {	-- Tauren Hoof
-					["provider"] = { "i", 112123 },	-- Tauren Hoof
+					["qgs"] = {
+						-- #if AFTER DF
+						199583,	-- Hudson Davor
+						-- #else
+						82909,	-- Chris Clarkie <SI:7 Operative>
+						-- #endif
+					},
+					["cost"] = { { "i", 112123, 1 } },	-- Tauren Hoof
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["g"] = {
@@ -705,7 +747,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				q(35941, {	-- Troll Feet
-					["provider"] = { "i", 112120 },	-- Troll Feet
+					["qgs"] = {
+						-- #if AFTER DF
+						199583,	-- Hudson Davor
+						-- #else
+						82909,	-- Chris Clarkie <SI:7 Operative>
+						-- #endif
+					},
+					["cost"] = { { "i", 112120, 1 } },	-- Troll Feet
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["g"] = {
@@ -718,7 +767,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				q(36040, {	-- Tuft of Gnome Hair
-					["provider"] = { "i", 112127 },	-- Tuft of Gnome Hair
+					["qg"] = 83869,	-- Angry Zurge
+					["cost"] = { { "i", 112127, 1 } },	-- Tuft of Gnome Hair
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["g"] = {
@@ -730,7 +780,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				q(36884, {	-- Worgen Snout
-					["provider"] = { "i", 112119 },	-- Worgen Snout
+					["qg"] = 83869,	-- Angry Zurge
+					["cost"] = { { "i", 112119, 1 } },	-- Worgen Snout
 					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -759,6 +810,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 					["isRepeatable"] = true,
 				}),
+			}),
+			filter(MISC, {
+				i(115345),	-- Alliance Supply Chest Key
+				i(115346),	-- Horde Supply Chest Key
+				i(114982),	-- Song Flower
+				i(111842),	-- Star Root Tuber
 			}),
 			n(VENDORS, {
 				n(80882, {	-- Tomas Riogain <Stormshield Quartermaster>
@@ -2014,10 +2071,32 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["description"] = "Can be looted from enemy Worgen players.",
 					["races"] = HORDE_ONLY,
 				}),
-
+				i(114842),	-- Book of Flight Form [Druid]
+				i(111926),	-- Codex of Ascension [Priest]
+				i(168326, { ["timeline"] = { ADDED_8_2_0 } }),	-- Eye of Theras [Demon Hunter]
+				i(116984),	-- Frost Wyrm Egg
+				i(114848),	-- Grimoire Of Convert Demon [Warlock]
+				i(112154),	-- Guide: Disengage [Hunter]
+				i(120327),	-- Guide: Sharpshooting [Hunter]
+				i(114843),	-- Handbook: Pick Pocket [Rogue]
+				i(114849),	-- Manual Of Heroic Leap [Warrior]
+				i(118425),	-- Nesingwary's Lost Horn
+				i(118426),	-- Scroll of Invoke Yu'Lon, the Jade Serpent
+				i(116411),	-- Scroll of Protection
+				i(119183),	-- Scroll of Risky Recall
+				i(116410),	-- Scroll of Speed
+				i(114844),	-- Scroll of Touch of Fatality [Monk]
+				i(114846),	-- Sigil of Death Grip [Death Knight]
+				i(116140),	-- Stormshield Prison Key
+				i(114847),	-- Tablet of Ghost Wolf [Shaman]
+				i(112005),	-- The Jailer's Libram [Paladin]
+				i(114845),	-- Tome of Blink [Mage]
 				i(118333),	-- Universal Language Compensator [Part 1 of 3]
 				i(118334),	-- Universal Language Filter [Part 2 of 3]
 				i(118335),	-- Universal Language Repository [Part 3 of 3]
+				i(117016),	-- Wand of Arcane Imprisonment
+				i(117013),	-- Wand of Lightning Shield
+				i(116141),	-- Warspear Prison Key
 			}),
 			i(118093),	-- Dented Ashmaul Strongbox A
 			i(118094),	-- Dented Ashmaul Strongbox H

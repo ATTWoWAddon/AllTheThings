@@ -118,7 +118,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["_npcs"] = { 168147 },
 				}),
 			}),
-			explorationAch(14305),	-- Explore Maldraxxus
+			ach(14305),	-- Explore Maldraxxus
 			ach(14721, {	-- It's in the Mix
 				i(183903),	-- Smelly Jelly (TOY!)
 				crit(48854, {
@@ -204,6 +204,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58794 },	-- Stabbing Wasteward
 				}),
 			}),
+			achWithRep(14336, FACTION_THE_UNDYING_ARMY),	-- The Undying Army
 			ach(14513, {	-- Tour of Duty: Maldraxxus
 				["pvp"] = true,
 			}),

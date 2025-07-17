@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 20142,	-- Steward of Time <Keepers of Time>
 					["coords"] = {
 						-- #if AFTER CATA
-						{ 55.3, 27.9, CAVERNS_OF_TIME },
+						{ 55.3, 27.9, 74 },	-- Caverns of Time Entrance
 						-- #else
 						{ 66.0, 49.6, TANARIS },
 						-- #endif

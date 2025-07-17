@@ -554,7 +554,7 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 103568 },	-- Mayruna Moonwing
 				}),
 				q(41575, {	-- Felsoul Teleporter Online!
-					["coord"] = { 53.6, 36.7, SURAMAR },
+					["coord"] = { 53.6, 36.7, 682 },	-- Felsoul Hold
 					["provider"] = { "o", 252107 },	-- Unpowered Telemancy Beacon
 				}),
 				q(41474, {	-- Fertilizing the Future
@@ -614,8 +614,8 @@ root(ROOTS.Zones, {
 					},
 				}),
 				q(42722, {  -- Friends in Cages
-					["coord"] = { 48.2, 83.2, SURAMAR },
-					["provider"] = { "n", 107997 },	-- Silgryn
+					["coord"] = { 44.2, 73.0, SURAMAR },
+					["provider"] = { "n", 108063 },	-- Korine
 					["sourceQuest"] = 40745,	-- Shift Change
 					["g"] = {
 						i(130209),	-- Never Ending Toy Chest (TOY!)
@@ -1161,6 +1161,11 @@ root(ROOTS.Zones, {
 					["coord"] = { 36.4, 22.3, SURAMAR },
 					["provider"] = { "n", 101768 },	-- Lothrius Mooncaller
 					["sourceQuest"] = 40964,	-- The Rift Between
+					["g"] = {
+						i(133900),	-- Aftermath of the Well (QI!)
+						i(133898),	-- Anthology of the Guard (QI!)
+						i(133899),	-- Magical Manifest of the Moon (QI!)
+					},
 				}),
 				q(41475, {	-- Prongs and Fangs
 					["coord"] = { 28.3, 29.7, SURAMAR },
@@ -1347,6 +1352,9 @@ root(ROOTS.Zones, {
 					["coord"] = { 46.4, 58.1, SURAMAR },
 					["provider"] = { "n", 115517 },	-- Magus Sendath
 					["sourceQuest"] = 44834,	-- Nullified
+					["g"] = {
+						i(142260),	-- Arcane Nullifier (QI!)
+					},
 				}),
 				q(40745, {	-- Shift Change
 					["coord"] = { 48.2, 83.2, SURAMAR },
@@ -1448,6 +1456,9 @@ root(ROOTS.Zones, {
 					["coord"] = { 36.6, 45.0, SURAMAR },
 					["provider"] = { "n", 115710 },	-- Chief Telemancer Oculeth
 					["sourceQuest"] = 45067,	-- Telemantic Expanse
+					["g"] = {
+						i(142405),	-- Advanced Telemancy Beacon (QI!)
+					},
 				}),
 				q(41216, {	-- Survival of the Fittest
 					["coord"] = { 50.6, 56.5, SURAMAR },
@@ -1679,6 +1690,9 @@ root(ROOTS.Zones, {
 					["coord"] = { 32.2, 12.7, SURAMAR },
 					["provider"] = { "n", 101765 },	-- Syrana Starweaver
 					["sourceQuest"] = 40969,	-- Starweaver's Fate
+					["g"] = {
+						i(133924),	-- Astromancer's Keystone (QI!)
+					},
 				}),
 				q(43309, {	-- The Perfect Opportunity
 					["coord"] = { 36.8, 46.6, SURAMAR },
@@ -1923,8 +1937,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 				q(43707),	-- Hub Mana Tree Tracking - Stage 04 - triggered after turning in "Make Your Mark" (questID 42792)
 				q(43708),	-- Hub Mana Tree Tracking - Stage 05 - triggered after turning in "Make Your Mark" (questID 42792)
 				q(43589),	-- Leyline 03
-				-- q(43840),	-- Treasure 008 - Collapse Depths - secondary trigger for Small Treasure Chest (questID 43839)
-				-- q(43857),	-- Treasure 022 - Crimson Thicket Cave - secondary trigger for Small Treasure Chest (questID 43855)
+				--q(43840),	-- Treasure 008 - Collapse Depths - secondary trigger for Small Treasure Chest (questID 43839)
+				--q(43857),	-- Treasure 022 - Crimson Thicket Cave - secondary trigger for Small Treasure Chest (questID 43855)
 				q(40317),	-- Tree Destroyed
 				q(41212),	-- Triggered when turning in "Scattered Memories". Maybe a quest from beta?
 				q(44071),	-- Vignette: Maia the White Wolf - secondary trigger for Maia the White rare

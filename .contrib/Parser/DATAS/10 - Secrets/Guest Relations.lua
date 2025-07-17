@@ -680,7 +680,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["provider"] = { "n", 231433 },	-- Raenie Fizzlebog
 				["coord"] = { 63.1, 52.0, TANARIS },
 				["g"] = {
-					i(226241),	-- Shredded Green Hills of Stranglethorn (QI!)
+					i(226241),	-- Shredded Green Hills of Stranglethorn (QI!/CI!)
 					i(226362),	-- Torn Note (Black Market)
 					i(226364),	-- Torn Note (Fiona Caravan)
 					o(456039, {	-- Crumpled Letter
@@ -1617,7 +1617,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(85420),	-- Acquire 2 Nettlefish for (85195) Pirate Gastronomy.
 		q(85421),	-- Acquire 3 Furious Crawdads for (85195) Pirate Gastronomy.
 		q(84617, name(HEADERS.Achievement, 40873)),	-- Accepting Harder Puzzles from Alyx. This unlocks notes on the bulletin board next to Alyx.
-		-- q(83824, name(HEADERS.Item, 226242)),	-- Triggered when restoring the 'Green Hills of Stranglethorn' by gathering all the missing pages. (automated)
 		-- Felcycle HQTs
 		q(84718),	-- Flags and unflags CONSTANTLY all over the catacombs.
 		q(85169),	-- Triggered on interacting with an ordinary pebble in the catacombs. Doesn't reliably trigger on first click, or from specific pebble locations, can unflag.

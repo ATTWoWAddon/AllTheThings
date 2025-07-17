@@ -121,7 +121,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 					q(52746, {	-- The War Cache
 						["sourceQuests"] = { 52749 },	-- The War Campaign
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-						["coord"] = { 51.2, 100.8, ZULDAZAR },
+						["coord"] = { 58.4, 62.6, ZULDAZAR },
 						["races"] = HORDE_ONLY,
 					}),
 					q(53333, {	-- Time for War
@@ -436,7 +436,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 							53064,	-- A Mission of Unity
 						},
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-						["coord"] = { 58.4, 62.6, THE_GREAT_SEAL },
+						["coord"] = { 58.4, 62.6, ZULDAZAR },
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(141605, {	-- Flight Master Whistle
@@ -447,7 +447,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 					q(52451, {	-- Uniting Zandalar		(Also grants credit for the two Alliance Quests "Uniting Kul Tiras" (ID 51918 & ID 52450))
 						["description"] = "This version of the quest is offered to alts that share an account with a character that already completed the original 'Uniting Zandalar.' All characters get credit for both quests.",
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-						["coord"] = { 58.4, 62.6, THE_GREAT_SEAL },
+						["coord"] = { 58.4, 62.6, ZULDAZAR },
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(141605, {	-- Flight Master Whistle

@@ -12,8 +12,6 @@ if not C_Garrison then
 end
 
 -- WoW API Cache
-local GetItemInfo = app.WOWAPI.GetItemInfo;
-local GetItemIcon = app.WOWAPI.GetItemIcon;
 
 local select, setmetatable, pairs
 	= select, setmetatable, pairs
@@ -52,22 +50,11 @@ do
 			return t.info.lore;
 		end,
 	},
-	"Recipe", {
+	"RecipeItem", {
+		ImportFrom = "Item",
+		ImportFields = { "name", "link", "icon", "specs", "tsm", "costCollectibles", "AsyncRefreshFunc" },
 		description = function()
 			return L.GARRISON_BUILDINGS_REQUIRE_GARRISON
-		end,
-		icon = function(t)
-			return GetItemIcon(t.itemID) or t.info.icon;
-		end,
-		link = function(t)
-			return select(2, GetItemInfo(t.itemID)) or RETRIEVING_DATA;
-		end,
-		name = function(t)
-			return GetItemInfo(t.itemID) or t.info.name;
-		end,
-		tsm = function(t)
-			---@diagnostic disable-next-line: undefined-field
-			return ("i:%d"):format(t.itemID);
 		end,
 		-- we collect the "Recipes" to know how to build the buildings
 		collectible = function(t) return app.Settings.Collectibles.Recipes; end,

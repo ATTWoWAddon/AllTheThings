@@ -44,10 +44,11 @@ root(ROOTS.Zones, {
 			["icon"] = 236855,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					explorationAch(863),	-- Explore Zangarmarsh
+					ach(863),	-- Explore Zangarmarsh
 					ach(1190, {	-- Mysteries of the Marsh
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							-- Draenei Diplomacy (A)
 							9803,	-- Messenger to the Feralfen
@@ -104,88 +105,6 @@ root(ROOTS.Zones, {
 							9919,	-- Sporeggar
 							9729,	-- Fhwoor Smash!
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 54,
-						-- #endif
-						-- #else
-						-- crit(1, {	-- Draenei Diplomacy (A)
-						-- 	["races"] = ALLIANCE_ONLY,
-						-- 	["sourceQuest"] = 9803,	-- Messenger to the Feralfen
-						-- }),
-						-- crit(1, {	-- Swamprat Post (H)
-						-- 	["races"] = HORDE_ONLY,
-						-- 	["sourceQuests"] = {
-						-- 		9899,	-- A Job Undone
-						-- 		9772,	-- Jyoba's Report
-						-- 		9898,	-- The Respect of Another
-						-- 		9769,	-- There's No Explanation for Fashion
-						-- 	},
-						-- }),
-						-- crit(2, {	-- Telredor (A)
-						-- 	["races"] = ALLIANCE_ONLY,
-						-- 	["sourceQuests"] = {
-						-- 		9783,	-- An Unnatural Drought
-						-- 		-- TODO:: verify below
-						-- 		9896,	-- Blacksting's Bane
-						-- 		9790,	-- Diaphanous Wings
-						-- 		9777,	-- Fulgor Spores
-						-- 		9780,	-- Umbrafen Eel Filets
-						-- 	},
-						-- }),
-						-- crit(2, {	-- Zabra'jin (H)
-						-- 	["races"] = HORDE_ONLY,
-						-- 	["sourceQuests"] = {
-						-- 		9816,	-- Have You Ever Seen One of These?
-						-- 		9904,	-- Pursuing Terrorclaw
-						-- 		-- TODO:: verify below
-						-- 		9847,	-- A Spirit Ally? (probably)
-						-- 		9903,	-- The Biggest of Them All (probably)
-						-- 		9842,	-- The Sharpest Blades (probably)
-						-- 	},
-						-- }),
-						-- crit(3, {	-- Orebor Harborage (A)
-						-- 	["races"] = ALLIANCE_ONLY,
-						-- 	["sourceQuests"] = {
-						-- 		9902,	-- The Terror of Marshlight Lake
-						-- 		-- TODO:: verify below
-						-- 		10115,	-- Daggerfen Deviance
-						-- 		9905,	-- Maktu's Revenge
-						-- 		9839,	-- Overlord Gorefist
-						-- 		9848,	-- Secrets of the Daggerfen
-						-- 		9830,	-- Stinger Venom
-						-- 		9833,	-- Lines of Communication
-						-- 	},
-						-- }),
-						-- crit(3, {	-- The Defense of Zabra'jin (H)
-						-- 	["races"] = HORDE_ONLY,
-						-- 	["sourceQuests"] = {
-						-- 		10118,	-- Message to the Daggerfen
-						-- 		9823,	-- Us or Them
-						-- 	},
-						-- }),
-						-- crit(4, {	-- Don't Eat THOSE Mushrooms!
-						-- 	["sourceQuest"] = 9709,	-- Stealing Back the Mushrooms
-						-- }),
-						-- crit(5, {	-- Draining the Marsh
-						-- 	["sourceQuest"] = 9732,	-- Return to the Marsh
-						-- }),
-						-- crit(6, {	-- Saving the Sporeloks
-						-- 	["sourceQuests"] = {
-						-- 		9788,	-- A Damp, Dark Place
-						-- 		9894,	-- Safeguarding the Watchers
-						-- 		10096,	-- Saving the Sporeloks
-						-- 	},
-						-- }),
-						-- crit(7, {	-- A Trip With the Sporelings
-						-- 	["sourceQuests"] = {
-						-- 		9726,	-- Now That We're Friends...
-						-- 		9919,	-- Sporeggar
-						-- 		9729,	-- Fhwoor Smash!
-						-- 	},
-						-- }),
 						-- #endif
 					}),
 					applyclassicphase(TBC_PHASE_ONE, achWithReps(953, { FACTION_CENARION_CIRCLE, FACTION_CENARION_EXPEDITION }, {	-- Guardian of Cenarius
@@ -273,6 +192,21 @@ root(ROOTS.Zones, {
 						["cr"] = 18791,	-- Du'ga <Wind Rider Master>
 						["coord"] = { 33.0, 51.0, ZANGARMARSH },
 						["races"] = HORDE_ONLY,
+					}),
+				}),
+				petbattles({
+					n(66551, {	-- Ras'an <Master Pet Tamer>
+						["coord"] = { 17.2, 50.6, ZANGARMARSH },
+						["description"] = "Ras'an's pets are level 21 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Humanonoid - use Undead (powerful) or Beast (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Ageless Bronze Drake and Blighted Squirrel.",
+						["timeline"] = { ADDED_5_0_4 },
+						["petBattleLvl"] = 21,
+						["groups"] = {
+							q(31923, {	-- Ras'an
+								["sourceAchievement"] = 6604,	-- Taming Outland
+								["timeline"] = { ADDED_5_0_4 },
+								["isDaily"] = true,
+							}),
+						},
 					}),
 				}),
 				n(PROFESSIONS, {
@@ -564,7 +498,10 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 9765,	-- Preparing for War
 						["maxReputation"] = { FACTION_CENARION_EXPEDITION, EXALTED },	-- Cenarion Expedition, Exalted.
 						["timeline"] = { REMOVED_4_3_0 },
+						-- #if BEFORE 4.3.0
+						-- This way it doesnt display as currency once the quest got removed
 						["cost"] = { { "i", 24368, 1 } },	-- Coilfang Armaments
+						-- #endif
 						["maps"] = { COILFANG_RESERVOIR_STEAMVAULT },
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(67, 67, 20),
@@ -2188,7 +2125,7 @@ root(ROOTS.Zones, {
 								i(29150, {	-- Hardened Stone Shard
 									["cost"] = { { "i", 24245, 45 }, },	-- 45x Glowcap
 								}),
-								i(38229, {	-- Pattern: Mycah's Botanical Bag
+								i(38229, {	-- Pattern: Mycah's Botanical Bag (RECIPE!)
 									["cost"] = { { "i", 24245, 25 }, },	-- 25x Glowcap
 								}),
 								i(22916, {	-- Recipe: Transmute Primal Earth to Water (RECIPE!)

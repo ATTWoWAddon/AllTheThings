@@ -1180,18 +1180,21 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(41787),	-- Design: Thundering Skyflare Diamond
 		}),
 		prof(TAILORING, {
-			i(43876, {	-- A Guide to Northern Cloth Scavenging
-				["filterID"] = MISC,	-- temporarily collectible apparently, but becomes unlearned at some point
+			i(43876, {	-- A Guide to Northern Cloth Scavenging (RECIPE!)
+				-- #if NOT ANYCLASSIC
+				["filterID"] = MISC,	-- temporarily collectible apparently, but becomes unlearned at some
+				["collectible"] = false,
+				-- #endif
 			}),
 			-- #if AFTER 8.0.1
 			i(39152),	-- Manual: Heavy Frostweave Bandage (RECIPE!)
 			-- #endif
-			i(42173),	-- Pattern: Blue Lumberjack Shirt
-			i(42176),	-- Pattern: Blue Workman's Shirt
-			i(42175),	-- Pattern: Green Lumberjack Shirt
-			i(42172),	-- Pattern: Red Lumberjack Shirt
-			i(42177),	-- Pattern: Red Workman's Shirt
-			i(42178),	-- Pattern: Rustic Workman's Shirt
+			i(42173),	-- Pattern: Blue Lumberjack Shirt (RECIPE!)
+			i(42176),	-- Pattern: Blue Workman's Shirt (RECIPE!)
+			i(42175),	-- Pattern: Green Lumberjack Shirt (RECIPE!)
+			i(42172),	-- Pattern: Red Lumberjack Shirt (RECIPE!)
+			i(42177),	-- Pattern: Red Workman's Shirt (RECIPE!)
+			i(42178),	-- Pattern: Rustic Workman's Shirt (RECIPE!)
 		}),
 	}),
 	filter(REAGENTS, sharedData({	-- Air

@@ -620,7 +620,15 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["provider"] = { "n", 198883 },	-- Vanessa VanCleef
 				["coord"] = { 44.3, 66.0, ELWYNN_FOREST },
 				["g"] = {
-					i(202106),	-- Chewed Piece of Journal (QI!)
+					o(384644, {	-- Hoarded Debris
+						["coords"] = {
+							{ 60.4, 66.3, BURNING_STEPPES },
+							{ 61.1, 67.1, BURNING_STEPPES },
+							{ 61.2, 65.5, BURNING_STEPPES },
+							{ 61.7, 66.6, BURNING_STEPPES },
+						},
+						["g"] = { i(202106) },	-- Chewed Piece of Journal (QI!)
+					}),
 				},
 			}),
 			q(72424, {	-- Looking for Something Specific
@@ -654,7 +662,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(72453, {	-- Betrayal of the Brotherhood
 				["sourceQuests"] = { 72431 },	-- Misdeeds in Moonbrook
 				["provider"] = { "n", 199598 },	-- Vanessa VanCleef
-				["coord"] = { 59.5, 59.7, WESTFALL },
+				["coord"] = { 59.5, 59.7, DEADMINES_OUTDOORS },
 			}),
 			q(72445, {	-- To Northshire
 				["sourceQuests"] = {
@@ -996,12 +1004,11 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = { 72467 },	-- The Blessing of the Clan
 				["providers"] = {
 					{ "n", 199173 },	-- Thrall
-					-- maybe given by who you chose in previous quest?
-					-- { "n", TODO },	-- Eitrigg
-					-- { "n", TODO },	-- Jorin Deadeye
-					-- { "n", TODO },	-- Gorgonna
-					-- { "n", TODO },	-- Gorfax Angerfang
-					-- { "n", TODO },	-- Thega Graveblade
+					{ "n", 199152 },	-- Eitrigg
+					{ "n", 200616 },	-- Jorin Deadeye
+					{ "n", 199154 },	-- Gorgonna
+					{ "n", 199156 },	-- Gorfax Angerfang
+					{ "n", 199151 },	-- Thega Graveblade
 				},
 				["coord"] = { 52.3, 42.9, DUROTAR },
 			}),
@@ -1135,7 +1142,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(54759, {	-- When Spirits Whisper
 				["provider"] = { "n", 149088 },	-- Spiritwalker Isahi
 				["coord"] = { 39.1, 79.0, ORGRIMMAR },
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				["sourceQuest"] = 55779,	-- Stay of Execution (after the Baine Rescue Scenario)
 				-- #endif
 			}),
@@ -1300,10 +1307,8 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					77903,	-- De Power of Death
 				},
 				["provider"] = { "n", 213638 },	-- Rokhan
-				["coord"] = { 56.9, 56.4, NORTHERN_STRANGLETHORN },
-				["g"] = {
-					i(211133),	-- Jani's Blessing (QI!)
-				},
+				["coord"] = { 58.5, 65.5, ECHO_ISLES },
+				["g"] = { i(211133) },	-- Jani's Blessing (QI!)
 			}),
 			q(77906, {	-- De Darkspear Loa
 				["sourceQuests"] = { 77905 },	-- Avatar of Mueh'zala
@@ -1331,27 +1336,41 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(72854, {	-- Our Enemies Abound
 				["sourceQuests"] = { 76530 },	-- Unliving Summons
 				["provider"] = { "n", 186091 },	-- Lilian Voss
-				["coord"] = { 63.8, 68.2, TIRISFAL_GLADES },
+				["coord"] = { 63.8, 68.2, 2070 },	-- Tirisfal Glades
 			}),
 			q(72855, {	-- To the Sepulcher
 				["sourceQuests"] = { 72854 },	-- Our Enemies Abound
 				["provider"] = { "n", 199761 },	-- Deathstalker Commander Belmont
-				["coord"] = { 61.2, 82.6, TIRISFAL_GLADES },
+				["coord"] = { 61.2, 82.6, 2070 },	-- Tirisfal Glades
 			}),
 			q(72858, {	-- Acid Beats Paper
 				["sourceQuests"] = { 72855 },	-- To the Sepulcher
 				["provider"] = { "n", 199768 },	-- Dark Ranger Velonara
 				["coord"] = { 45.4, 42, SILVERPINE_FOREST },
-				["g"] = {
-					i(202182),	-- Acid Rifle (QI!)
-				},
+				["g"] = { i(202182) },	-- Acid Rifle (QI!)
 			}),
 			q(72857, {	-- Boom Weed
 				["sourceQuests"] = { 72855 },	-- To the Sepulcher
 				["provider"] = { "n", 199767 },	-- Master Apothecary Faranell
 				["coord"] = { 45.5, 41.9, SILVERPINE_FOREST },
 				["g"] = {
-					i(202186),	-- Boom Weed (QI!)
+					o(385373, {	-- Boom Weed
+						["coords"] = {
+							{ 45.4, 48.4, SILVERPINE_FOREST },
+							{ 45.4, 49.6, SILVERPINE_FOREST },
+							{ 45.4, 51.4, SILVERPINE_FOREST },
+							{ 45.5, 49.0, SILVERPINE_FOREST },
+							{ 45.8, 47.7, SILVERPINE_FOREST },
+							{ 45.9, 50.1, SILVERPINE_FOREST },
+							{ 46.6, 50.9, SILVERPINE_FOREST },
+							{ 47.1, 48.7, SILVERPINE_FOREST },
+							{ 47.3, 47.8, SILVERPINE_FOREST },
+							{ 47.3, 49.8, SILVERPINE_FOREST },
+							{ 47.8, 49.0, SILVERPINE_FOREST },
+							{ 48.0, 50.6, SILVERPINE_FOREST },
+						},
+						["g"] = { i(202186) },	-- Boom Weed (QI!)
+					}),
 				},
 			}),
 			q(72856, {	-- Nothing Like the Classic
@@ -1421,8 +1440,11 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			}),
 			q(72867, {	-- I Am Forsaken
 				["sourceQuests"] = { 72866 },	-- Return to Lordaeron
-				["provider"] = { "n", 199893 },	-- Lilian Voss
-				["coord"] = { 61.8, 69.4, TIRISFAL_GLADES },
+				["qgs"] = {
+					199893,	-- Lilian Voss
+					199922,	-- Lilian Voss
+				},
+				["coord"] = { 61.8, 69.4, 2070 },	-- Tirisfal Glades
 				["g"] = {
 					iensemble(208475, {	-- Ensemble: Forsaken Champion's Attire
 						["extraTransmogSetSpells"] = {

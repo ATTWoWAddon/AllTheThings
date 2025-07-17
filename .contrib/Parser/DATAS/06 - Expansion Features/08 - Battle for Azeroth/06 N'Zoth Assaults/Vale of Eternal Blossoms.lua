@@ -320,8 +320,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						}),
 					})),
 					n(ZONE_DROPS, {
+						i(172494),	-- Baruk Idol
+						i(173937, {	-- Severed Oculus
+							i(174041),	-- Eyeball Jelly
+						}),
 						i(170553, {	-- Void Focus Splinter
-							["description"] = "The fastest way is to farm them inside Lesser Vision.",
+							["description"] = "The fastest way is to farm them inside Lesser Vision. To unlock these and the related recipes, you need to complete the Descending Into Madness quest.",
 						}),
 						-- #IF BEFORE TWW
 						i(174768, {	-- Cursed Relic
@@ -360,6 +364,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 							["coord"] = { 38.4, 75.1, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 							["provider"] = { "n", 158673 },	-- Kun Autumnlight
 							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+							["g"] = {
+								i(170497),	-- Stoneshaper Rod
+							},
 						}),
 						q(58485, {	-- Built to Fall
 							["coord"] = { 44.7, 73.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
@@ -538,6 +545,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						n(156083, {	-- Sanguifang
 							["questID"] = 56954,
 							["coord"] = { 46.4, 57.2, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+							["g"] = {
+								i(174071),	-- Sanguifang's Pulsating Canine
+							},
 						}),
 						n(157291, {	-- Spymaster Hul'ach
 							["questID"] = 57351,
@@ -615,10 +625,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 						}),
 					})),
 					n(ZONE_DROPS, {
+						i(172495),	-- Anima Orb
 						i(174767, {	-- Mogu Relic
 							["cost"] = { { "i", 174759, 6 } },	-- 6x Mogu Relic Fragment
 						}),
 						i(174759),	-- Mogu Relic Fragment
+						i(170497),	-- Stoneshaper Rod
 						i(174927, {	-- Zan-Tien Lasso
 							["description"] = "The lasso is a zone drop from various Mogu mobs.",
 							["crs"] = {
@@ -632,7 +644,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 					i(174958),	-- Cache of the Fallen Mogu
 				},
 			}),
-			q(57728, {	-- Assault: The Endless Swarm
+			q(57728, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_0 } }, {	-- Assault: The Endless Swarm
 				["isWeekly"] = true,
 				["isWorldQuest"] = true,
 				["g"] = {
@@ -886,7 +898,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeli
 					}),
 					i(174959),	-- Cache of the Mantid Swarm
 				},
-			}),
+			})),
 			n(EMISSARY_QUESTS, {
 				q(58096, bubbleDownSelf({ ["minReputation"] = { FACTION_RAJANI, EXALTED } }, {	-- Supplies from the Rajani
 					["repeatable"] = true,

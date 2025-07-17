@@ -40,7 +40,11 @@ root(ROOTS.Zones, {
 				}),
 				q(41938),	-- Brothers of Skovald
 				q(46011),	-- Colossal Infernal (Invasion wq)
-				q(46216),	-- Congealed Corruption (Invasion WQ)
+				q(46216, {	-- Congealed Corruption (Invasion WQ)
+					["g"] = {
+						i(144402),	-- Fel Reaver Core Fragment (QI!)
+					},
+				}),
 				q(41950),	-- Cry More Thunder!
 				q(46179),	-- Crushing the Legion (Invasion WQ)
 				q(43745),	-- Culling the Storm
@@ -173,12 +177,15 @@ root(ROOTS.Zones, {
 				}),
 				q(41555, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
+					["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41556, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
+					["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41261, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
+					["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41278, {	-- Slippery Stormrays
 					["requireSkill"] = FISHING,

@@ -69,7 +69,7 @@ root(ROOTS.Zones, {
 					crit(36668),	-- The Creeping Grotto
 				}),
 				ach(11737),	-- Disrupting the Nether
-				explorationAch(11543),	-- Explore Broken Shore
+				ach(11543),	-- Explore Broken Shore
 				ach(11738),	-- It'll Nether Happen
 				ach(11545),	-- Legionfall Commander
 				ach(11841),	-- Naxt Victim

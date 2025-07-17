@@ -1,5 +1,5 @@
 local _, app = ...;
-local L, settings = app.L.SETTINGS_MENU, app.Settings;
+local L, settings = app.L, app.Settings;
 local Colorize = app.Modules.Color.Colorize
 local HexToARGB = app.Modules.Color.HexToARGB
 local RGBToHex = app.Modules.Color.RGBToHex
@@ -104,7 +104,6 @@ function(self)
 end,
 function(self)
 	settings:SetTooltipSetting("UseMoreColors", self:GetChecked())
-	app.CallbackEvent("OnRenderDirty")
 end)
 checkboxUseMoreColors:SetATTTooltip(L.MORE_COLORS_CHECKBOX_TOOLTIP)
 checkboxUseMoreColors:SetPoint("TOPLEFT", textHeader, "BOTTOMLEFT", 0, -5)

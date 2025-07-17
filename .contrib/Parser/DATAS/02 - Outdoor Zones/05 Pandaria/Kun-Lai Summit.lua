@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(KUN_LAI_SUMMIT, {
@@ -21,235 +20,8 @@ root(ROOTS.Zones, {
 				843,	-- Shadow-Pan Showdown
 			},
 			["groups"] = {
-				n(PEAK_OF_SERENITY, bubbleDownSelf({
-					["classes"] = { MONK },
-				},{
-					["description"] = "This area phases once you have begun the Monk Class Hall Campaign and may not be accessible again until you complete it.",
-					["g"] = {
-						n(QUESTS, {
-							q(31834, {	-- Begin Your Training: Master Cheng
-								["sourceQuest"] = 31856,	-- The Peak of Serenity - Begin Your Training
-								["coord"] = { 48.6, 42.7, KUN_LAI_SUMMIT },
-								["g"] = {
-									i(89551),	-- Aspirant's Staff of Harmony
-									i(89553),	-- Aspirant's Staff of Grace
-								},
-							}),
-							q(31837, {	-- Continue Your Training: Master Cheng
-								["sourceQuests"] = {
-									31836,	-- Continue Your Training: Master Yoon
-									31859,	-- The Peak of Serenity - Continue Your Training
-								},
-								["g"] = {
-									i(89564),	-- Red Belt of Gentle Persuasion
-									i(89565),	-- Red Belt of Unspoken Warning
-								},
-							}),
-							q(31839, {	-- Continue Your Training: Master Hsu
-								["sourceQuests"] = {
-									31838,	-- Continue Your Training: Master Tsang
-									31861,	-- The Peak of Serenity - Continue Your Training
-								},
-								["g"] = {
-									i(89606),	-- Bladed Staff of the Echoing Gong
-									i(89576),	-- Bladed Staff of the Frozen Mountain
-									i(89577),	-- Bladed Staff of the Summit's Breeze
-								},
-							}),
-							q(31835, {	-- Continue Your Training: Master Kistane
-								["sourceQuests"] = {
-									-- #if BEFORE 8.0.1
-									31833,	-- Continue Your Training: Master Woo
-									31857,	-- The Peak of Serenity - Continue Your Training
-									-- #else
-									31834,	-- Begin Your Training: Master Cheng
-									31857,	-- The Peak of Serenity - Continue Your Training
-									-- #endif
-								},
-								["g"] = {
-									i(89562),	-- Green Belt of Hushed Wisdom
-									i(89561),	-- Green Belt of Quiet Understanding
-								},
-							}),
-							q(31838, {	-- Continue Your Training: Master Tsang
-								["sourceQuests"] = {
-									31837,	-- Continue Your Training: Master Cheng
-									31860,	-- The Peak of Serenity - Continue Your Training
-								},
-								["g"] = {
-									i(89569),	-- Brown Belt of Humbling Gravity
-									i(89567),	-- Brown Belt of Precarious Balance
-								},
-							}),
-							q(31833, bubbleDownSelf({	-- Continue Your Training: Master Woo
-								["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },
-							},{
-								["sourceQuests"] = {
-									31834,	-- Begin Your Training: Master Cheng
-									31855,	-- The Peak of Serenity - Continue Your Training
-								},
-								["g"] = {
-									i(89555),	-- Biting Yellow Belt
-									i(89556),	-- Formidable Yellow Belt
-									i(89558),	-- Serene Yellow Belt
-								},
-							})),
-							q(31836, {	-- Continue Your Training: Master Yoon
-								["sourceQuests"] = {
-									31835,	-- Continue Your Training: Master Kistane
-									31858,	-- The Peak of Serenity - Continue Your Training
-								},
-								["g"] = {
-									i(89550),	-- Headband of the Coiled Serpent
-									i(89548),	-- Headband of the Pouncing Tiger
-									i(89549),	-- Headband of the Stampedeing Ox
-								},
-							}),
-							q(31944, {	-- Complete Your Training: The Final Test
-								["sourceQuests"] = {
-									31839,	-- Continue Your Training: Master Hsu
-									31989,	-- The Peak of Serenity - Complete Your Training
-								},
-								["g"] = {
-									i(90010),	-- Cranedancer's Staff
-									i(90012),	-- Staff of Ox-Hoof Thunder
-									i(90011),	-- Staff of the White Tigerlord
-								},
-							}),
-							q(31844, {	-- Practice Makes Perfect: Master Cheng /lvl 20
-								["isDaily"] = true,
-								["sourceQuest"] = 31837,	-- Continue Your Training: Master Cheng
-							}),
-							q(31840, {	-- Practice Makes Perfect: Master Cheng /lvl 10
-								["isDaily"] = true,
-								["sourceQuest"] = 31834,	-- Continue Your Training: Master Cheng
-							}),
-							q(31846, {	-- Practice Makes Perfect: Master Hsu /lvl 30
-								["isDaily"] = true,
-								["sourceQuest"] = 31839,	-- Continue Your Training: Master Hsu
-							}),
-							q(31842, {	-- Practice Makes Perfect: Master Kistane /lvl 10
-								["isDaily"] = true,
-								["sourceQuest"] = 31835,	-- Continue Your Training: Master Kistane
-							}),
-							q(31845, {	-- Practice Makes Perfect: Master Tsang /lvl 25
-								["isDaily"] = true,
-								["sourceQuest"] = 31838,	-- Continue Your Training: Master Tsang
-							}),
-							q(31841, {	-- Practice Makes Perfect: Master Woo /lvl 10
-								["isDaily"] = true,
-								["sourceQuest"] = 31833,	-- Continue Your Training: Master Woo
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							q(31843, {	-- Practice Makes Perfect: Master Yoon /lvl 15
-								["isDaily"] = true,
-								["sourceQuest"] = 31836,	-- Continue Your Training: Master Yoon
-							}),
-							q(31856, {	-- The Peak of Serenity - Begin Your Training
-								["isBreadcrumb"] = true,
-							}),
-							q(31855, {	-- The Peak of Serenity - Continue Your Training /lvl 10
-								["isBreadcrumb"] = true,
-								["sourceQuest"] = 31834,	-- Begin Your Training: Master Cheng
-								["u"] = REMOVED_FROM_GAME,
-							}),
-							q(31857, {	-- The Peak of Serenity - Continue Your Training /lvl 10
-								["isBreadcrumb"] = true,
-								["sourceQuests"] = {
-								-- #if BEFORE 8.0.1
-									31833,	-- Continue Your Training: Master Woo
-								-- #else
-									31834,	-- Begin Your Training: Master Cheng
-								-- #endif
-								},
-								["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
-							}),
-							q(31858, {	-- The Peak of Serenity - Continue Your Training /lvl 15
-								["isBreadcrumb"] = true,
-								["sourceQuest"] = 31835,	-- Continue Your Training: Master Kistane
-								["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
-							}),
-							q(31859, {	-- The Peak of Serenity - Continue Your Training /lvl 20
-								["isBreadcrumb"] = true,
-								["sourceQuest"] = 31836,	-- Continue Your Training: Master Yoon
-								["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
-							}),
-							q(31860, {	-- The Peak of Serenity - Continue Your Training /lvl 25
-								["isBreadcrumb"] = true,
-								["sourceQuest"] = 31837,	-- Continue Your Training: Master Cheng
-								["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
-							}),
-							q(31861, {	-- The Peak of Serenity - Continue Your Training /lvl 30
-								["isBreadcrumb"] = true,
-								["sourceQuest"] = 31838,	-- Continue Your Training: Master Tsang
-								["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
-							}),
-							q(31989, {	-- The Peak of Serenity - Complete Your Training /lvl 35
-								["isBreadcrumb"] = true,
-								["sourceQuest"] = 31839,	-- Continue Your Training: Master Hsu
-								["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
-							}),
-						}),
-						n(VENDORS, {
-							n(66354, {	-- Master Cannon <Tanner>
-								["description"] = "All items on this vendor are quest rewards. You must have completed the respective quests to purchase the rewards.",
-								["sym"] = {	-- Select the quests directly to view on the vendor that way they filter properly based on visibility of the quest
-									{"select","questID",
-										31837,	-- Continue Your Training: Master Cheng
-										31835,	-- Continue Your Training: Master Kistane
-										31838,	-- Continue Your Training: Master Tsang
-										31833,	-- Continue Your Training: Master Woo
-										31836,	-- Continue Your Training: Master Yoon
-									},
-								},
-							}),
-							n(66356, {	-- Master Hwang <Staff Vendor>
-								["description"] = "The blue-quality staves on this vendor are quest rewards. You must have completed the respective quests to purchase the rewards.",
-								["coord"] = { 50.44, 42.61, KUN_LAI_SUMMIT },
-								["sym"] = {	-- Select the quests directly to view on the vendor that way they filter properly based on visibility of the quest
-									{"select","questID",
-										31834,	-- Begin Your Training: Master Cheng
-										31839,	-- Continue Your Training: Master Hsu
-										31944,	-- Complete Your Training: The Final Test
-									},
-								},
-								["g"] = {
-									i(89580),	-- Novice's Staff
-									i(89581),	-- Initiate's Staff
-									i(89582),	-- Sparring Staff
-									i(89584),	-- Staff of Meditation
-									i(89583),	-- Staff of Pilgrimage
-									i(89585),	-- Staff of Fallen Blossoms
-									i(89586),	-- Staff of Serenity
-									i(136800),	-- Meditation Manual: Zen Flight (CI!)
-								},
-							}),
-							n(66359, {	-- Master Tan <Fist Weapon Vendor>
-								["description"] = "The blue-quality fist weapons on this vendor require that you have completed the level 30 Monk quest 'Continue Your Training: Master Hsu' (31839)",
-								["coord"] = { 50.02, 38.53, KUN_LAI_SUMMIT },
-								["g"] = {
-									i(89579),	-- Tiger Lord's Bladed Claws
-									i(89578),	-- Tiger Lord's Razor Claws
-									i(89566),	-- Novice's Handwraps
-									i(89570),	-- Initiate's Handwraps
-									i(89571),	-- Grappling Handwraps
-									i(89572),	-- Handwraps of Pilgrimage
-									i(89573),	-- Handwraps of Meditation
-									i(89574),	-- Handwraps of Fallen Blossoms
-									i(89575),	-- Handwraps of Serenity
-								},
-							}),
-							n(64978, {	-- Number Nine Jia <Monk Trainer - Master Crane>
-								["coord"] = { 45.2, 43.2, KUN_LAI_SUMMIT },
-								["g"] = {
-									i(232491, { ["timeline"] = { ADDED_11_0_5 } }),	-- Glyph of Jab
-								},
-							}),
-						}),
-					},
-				})),
 				n(ACHIEVEMENTS, {
-					explorationAch(6976),	-- Explore Kun-Lai Summit
+					ach(6976),	-- Explore Kun-Lai Summit
 					ach(7286, {	-- Finish Them! (Temple of the White Tiger)
 						crit(20440),	-- Brewmaster Chani
 						crit(20442),	-- Lun-Chi
@@ -268,11 +40,9 @@ root(ROOTS.Zones, {
 					}),
 					ach(6537, {	-- Slum It in the Summit (A)
 						["races"] = ALLIANCE_ONLY,
-						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(6538, {	-- Slum It in the Summit (H)
 						["races"] = HORDE_ONLY,
-						["sym"] = {{ "achievement_criteria" }},
 					}),
 				}),
 				battlepets({
@@ -361,7 +131,7 @@ root(ROOTS.Zones, {
 						["description"] = "Each day, the August Celestials require your aid at one of their temples.  Speak to the representative in your faction's Vale of Eternal Blossoms shrine to find out where your help is needed (|cff3f48ccSage Whiteheart for Alliance|r and |cff880015Sage Lotusbloom for Horde|r).\n\nThe dailies will be in one of these locations:\nJade Forest - Temple of the Jade Serpent\nKrasarang Wilds - Cradle of Chi-Ji\nKun-Lai Summit - Temple of the White Tiger\nTownlong Steppes - Niuzao Temple\n\n",
 						["collectible"] = false,
 						["icon"] = 645203,
-						["g"] = {
+						["groups"] = {
 							n(QUESTS, {
 								q(31394, {	-- A Celestial Experience (A)
 									["sourceQuests"] = { 31392 },	-- Temple of the White Tiger
@@ -489,16 +259,61 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66738, {	-- Courageous Yon <Grand Master Pet Tamer>
 						["coord"] = { 35.8, 73.6, KUN_LAI_SUMMIT },
+						["timeline"] = { ADDED_5_1_0 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(31956, {	-- Grand Master Yon
+								["sourceAchievement"] = 6606,	-- Taming Pandaria
+								["timeline"] = { ADDED_5_1_0 },
+								["isDaily"] = true,
+								["groups"] = {
+									i(89125),	-- Sack of Pet Supplies
+								},
+							}),
+							q(63435, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Temple Throwdown
+								["qg"] = 176655,	-- Anthea <Carefree Pet Tamer>
+								["coord"] = { 70.4, 51.4, KUN_LAI_SUMMIT },
+								["timeline"] = { ADDED_9_1_0 },
+								["isDaily"] = true,
+								["groups"] = {
+									i(184866, {	-- Grummlepouch
+										i(89587),	-- Porcupette (PET!)
+										i(184867),	-- Squibbles (PET!)
+									}),
+								},
+							})),
+						},
 					}),
 					n(68465, {	-- Thundering Pandaren Spirit <Grand Master Pet Tamer>
 						["coord"] = { 64.8, 93.6, KUN_LAI_SUMMIT },
+						["timeline"] = { ADDED_5_1_0 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(32441, {	-- Thundering Pandaren Spirit
+								["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer
+								["timeline"] = { ADDED_5_1_0 },
+								["isDaily"] = true,
+								["groups"] = {
+									i(93149, {	-- Pandaren Spirit Pet Supplies
+										["sym"] = {{"select","itemID",
+											89139,	-- Chain Pet Leash
+											44820,	-- Red Ribbon Pet Leash
+											37460,	-- Rope Pet Leash
+										}},
+										["groups"] = {
+											i(92800),	-- Pandaren Earth Spirit (PET!)
+										},
+									}),
+								},
+							}),
+						},
 					}),
 				}),
 				n(PROFESSIONS, {
 					prof(LEATHERWORKING, {
 						n(65121, {	-- Clean Pelt <Leatherworking Trainer>
 							["coord"] = { 64.6, 60.8, KUN_LAI_SUMMIT },
-							["g"] = MOP_LEATHERWORKING,
+							["groups"] = MOP_LEATHERWORKING,
 						}),
 					}),
 				}),
@@ -535,7 +350,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 63.1, 29.3, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 60436 },	-- Li Hai
 						["sourceQuest"] = 30819,	-- Preparing the Remains
-						["g"] = {
+						["groups"] = {
 							i(82496),	-- Waterfall Mantle
 							i(82497),	-- Mushan Hide Spaulders
 							i(82498),	-- Dreaming Spirit Spaulder
@@ -571,7 +386,7 @@ root(ROOTS.Zones, {
 							30603,	-- The Broketooth Ravage
 							30602,	-- The Rabbitsfoot
 						},
-						["g"] = {
+						["groups"] = {
 							i(80428),	-- Corpse of Dak Dak (QI!)
 							i(80429),	-- Corpse of Ko Ko (QI!)
 							i(80430),	-- Corpse of Tak Tak (QI!)
@@ -651,7 +466,7 @@ root(ROOTS.Zones, {
 							30491,	-- At the Yak Wash
 							30587,	-- Yakity Yak
 						},
-						["g"] = {
+						["groups"] = {
 							i(82574),	-- Coin of Blessings
 							i(82575),	-- Coin of Serendipity
 							i(82576),	-- Coin of Luck
@@ -689,7 +504,7 @@ root(ROOTS.Zones, {
 							30583,	-- Blue Dwarf Needs Food Badly
 							30575,	-- Round 'Em Up
 						},
-						["g"] = {
+						["groups"] = {
 							i(88577),	-- Explosive Barrel
 						},
 					}),
@@ -701,7 +516,7 @@ root(ROOTS.Zones, {
 							31253,	-- Back to Eastwind Rest
 							30620,	-- Mogu?! Oh No-gu!
 						},
-						["g"] = {
+						["groups"] = {
 							o(211312, {	-- Explosives Barrel
 								i(80528),	-- Explosives Barrel (QI!)
 							}),
@@ -771,7 +586,7 @@ root(ROOTS.Zones, {
 							30604,	-- Breaking Broketooth
 							30600,	-- No Pack Left Behind
 						},
-						["g"] = {
+						["groups"] = {
 							i(88379),	-- Grummlecake
 						},
 					}),
@@ -788,7 +603,7 @@ root(ROOTS.Zones, {
 					q(30457, {	-- Call Out Their Leader
 						["coord"] = { 72.2, 91.8, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59073 },	-- Mayor Bramblestaff
-						["g"] = {
+						["groups"] = {
 							i(84542),	-- Bataari Hatchet
 							i(84539),	-- Bataari Warshield
 							i(84538),	-- Binan Blade
@@ -815,7 +630,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 33.8, 63.1, 385 },
 						["provider"] = { "n", 61297 },	-- Image of Lorewalker Cho
 						["sourceQuest"] = 30801,	-- Lessons from History
-						["g"] = {
+						["groups"] = {
 							i(81890),	-- Blood-Revealed Map (QI!)
 							i(82579),	-- Lorewalker's Mark
 							i(82580),	-- Lorewalker's Emblem
@@ -872,6 +687,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 60.0, 75.6, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 156391 },	-- Li Li Stormstout
+						["timeline"] = { ADDED_8_3_0 },
 						["sourceQuest"] = 57068,	-- Kite Surveillance
 					}),
 					q(30593, {	-- Deanimate the Reanimated (A)
@@ -893,7 +709,7 @@ root(ROOTS.Zones, {
 							30751,	-- A Terrible Sacrifice
 							30994,	-- Lao-Chin's Gambit
 						},
-						["g"] = {
+						["groups"] = {
 							i(88531),	-- Lao Chin's Last Mug (TOY!)
 						},
 					}),
@@ -925,7 +741,7 @@ root(ROOTS.Zones, {
 					q(30468, {	-- Enraged Vengeance
 						["coord"] = { 74.7, 88.6, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59273 },	-- Swordmistress Mei
-						["g"] = {
+						["groups"] = {
 							i(84535),	-- Bodyguard's Dagger
 							i(84529),	-- Bodyguard's Halberd
 							i(84532),	-- Bodyguard's Rifle
@@ -1049,7 +865,7 @@ root(ROOTS.Zones, {
 					q(30682, {	-- Holed Up
 						["coord"] = { 42.9, 88.3, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 60178 },	-- Sya Zhong
-						["g"] = {
+						["groups"] = {
 							i(88579),	-- Jin Warmkeg's Brew (TOY!)
 						},
 					}),
@@ -1099,19 +915,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(80308),	-- Fire Lotus Incense (QI!)
 						},
-					}),
-					q(31030, {	-- Into the Monastery
-						["coord"] = { 36.6, 47.7, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 62227 },	-- Ban Bearheart
-						["sourceQuest"] = 30752,	-- Unbelievable!
-						["isBreadcrumb"] = true,
-					}),
-					q(31031, {	-- Into the Monastery
-						["coord"] = { 35.3, 49.5, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 62227 },	-- Ban Bearheart
-						["description"] = "This version is available if you abandon the other version.",
-						["sourceQuest"] = 30752,	-- Unbelievable!
-						["isBreadcrumb"] = true,
 					}),
 					q(30944, {	-- It Takes A Village
 						["coord"] = { 62.3, 29.0, KUN_LAI_SUMMIT },
@@ -1164,13 +967,14 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 55.5, 91.1, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 156938 },	-- Li Li Stormstout
+						["timeline"] = { ADDED_8_3_0 },
 						["sourceQuest"] = 57074,	-- Our Backs to the Gate
 					}),
 					q(30942, {	-- Make A Fighter Out of Me
 						["coord"] = { 63.7, 30.7, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 61503 },	-- Shomi
 						["sourceQuest"] = 30935,	-- Fisherman's Tale
-						["g"] = {
+						["groups"] = {
 							i(82599),	-- Shomi's Greatsword
 							i(82600),	-- Shomi's Mace
 							i(82601),	-- Shomi's Shield
@@ -1186,7 +990,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 63542 },	-- Elder Tsulan
 						["sourceQuest"] = 30514,	-- Challenge Accepted
-						["g"] = {
+						["groups"] = {
 							i(82489),	-- Dreaming Spirit Helm
 							i(82491),	-- Mindbender Cowl
 							i(82488),	-- Mushan Hide Helm
@@ -1203,7 +1007,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 63535 },	-- Elder Shiao
 						["sourceQuest"] = 30515,	-- Challenge Accepted
-						["g"] = {
+						["groups"] = {
 							i(82489),	-- Dreaming Spirit Helm
 							i(82491),	-- Mindbender Cowl
 							i(82488),	-- Mushan Hide Helm
@@ -1219,6 +1023,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 60.0, 75.6, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 156391 },	-- Li Li Stormstout
+						["timeline"] = { ADDED_8_3_0 },
 						["sourceQuest"] = 57068,	-- Kite Surveillance
 					}),
 					q(31456, {	-- Muskpaw Ranch (A)
@@ -1264,6 +1069,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 59.9, 75.5, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 156390 },	-- Chen Stormstout
+						["timeline"] = { ADDED_8_3_0 },
 						["sourceQuest"] = 57068,	-- Kite Surveillance
 					}),
 					q(30600, {	-- No Pack Left Behind
@@ -1295,7 +1101,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 48.1, 49.0, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 60175 },	-- Lucky Bluestring
 						["sourceQuest"] = 30487,	-- Comin' Round the Mountain
-						["g"] = {
+						["groups"] = {
 							i(82505),	-- Waterfall Robe
 							i(82506),	-- Mushan Hide Tunic
 							i(82507),	-- Dreaming Spirit Armor
@@ -1311,6 +1117,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 59.9, 75.5, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 156390 },	-- Chen Stormstout
+						["timeline"] = { ADDED_8_3_0 },
 						["sourceQuests"] = {
 							57069,	-- Cut Off the Heads
 							57070,	-- Mogu Massacre
@@ -1350,7 +1157,7 @@ root(ROOTS.Zones, {
 					q(32816, {	-- Path of the Last Emperor
 						["provider"] = { "n", 70980 },	-- Seer Hao Pham Roo
 						["sourceQuest"] = 32815,	-- The Old Seer
-						["g"] = {
+						["groups"] = {
 							i(98137),	-- Treads of Reticence
 							i(98138),	-- Unpretentious Boots
 							i(98139),	-- Treads of Respect
@@ -1396,7 +1203,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 62.3, 29.0, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 63784 },	-- Lorewalker Cho
 						["sourceQuest"] = 30946,	-- Revelations
-						["g"] = {
+						["groups"] = {
 							i(82514),	-- Waterfall Leggings
 							i(82515),	-- Mushan Hide Legguards
 							i(82516),	-- Dreaming Spirit Kilt
@@ -1410,7 +1217,7 @@ root(ROOTS.Zones, {
 					}),
 					q(31809, {	-- Remnants of Anger
 						["provider"] = { "i", 89317 },	-- Claw of Anger
-						["g"] = {
+						["groups"] = {
 							i(90912),	-- Angerforged Stompers
 							i(90914),	-- Boots of Raging Haze
 							i(90907),	-- Boots of Unbreakable Umbrage
@@ -1426,7 +1233,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 57.7, 61.7, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59695 },	-- Big Sal
 						["sourceQuest"] = 30999,	-- Path Less Traveled
-						["g"] = {
+						["groups"] = {
 							o_repeated({
 								i(80315),	-- Stolen Supplies (QI!)
 								o(211266),	-- Stolen Supplies
@@ -1449,6 +1256,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 55.4, 91.1, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 156937 },	-- Chen Stormstout
+						["timeline"] = { ADDED_8_3_0 },
 						["sourceQuest"] = 57075,	-- Liquid Courage
 					}),
 					q(30946, {	-- Revelations
@@ -1460,7 +1268,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 64.8, 60.4, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59597 },	-- Smokey Sootassle
 						["sourceQuest"] = 30616,	-- Traffic Issues
-						["g"] = {
+						["groups"] = {
 							i(88381),	-- Silversage Incence (TOY!)
 						},
 					}),
@@ -1469,7 +1277,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 59441 },	-- Admiral Taylor
 						["sourceQuest"] = 30514,	-- Challenge Accepted
-						["g"] = {
+						["groups"] = {
 							i(84511),	-- Dreaming Spirit Monnion
 							i(84517),	-- Kafa Armored Shoulders
 							i(84512),	-- Kafa Burnished Spaulders
@@ -1486,7 +1294,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 59442 },	-- General Nazgrim
 						["sourceQuest"] = 30515,	-- Challenge Accepted
-						["g"] = {
+						["groups"] = {
 							i(84511),	-- Dreaming Spirit Monnion
 							i(84517),	-- Kafa Armored Shoulders
 							i(84512),	-- Kafa Burnished Spaulders
@@ -1585,7 +1393,7 @@ root(ROOTS.Zones, {
 						["maps"] = { 480 },	-- Arena of Annihilation
 						["coord"] = { 68.6, 48.3, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 63315 },	-- Gurgthock
-						["g"] = {
+						["groups"] = {
 							i(90466),	-- Maki's Mashing Mace
 							i(90465),	-- Scar-Shell's Scintillating Staff
 							i(90464),	-- Satay's Stabbing Sword
@@ -1608,7 +1416,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 42.5, 69.3, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 60679 },	-- Nephew Burrberry
 						["sourceQuest"] = 30746,	-- A Fair Trade
-						["g"] = {
+						["groups"] = {
 							i(81183),	-- Flask of Kafa (QI!)
 							i(82525),	-- Dreaming Spirit Sabatons
 							i(82527),	-- Mindbender Treads
@@ -1630,7 +1438,7 @@ root(ROOTS.Zones, {
 					q(30592, {	-- The Burlap Trail: To Burlap Waystation
 						["coord"] = { 58.0, 61.4, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59701 },	-- Brother Lintpocket
-						["g"] = {
+						["groups"] = {
 							i(88384),	-- Burlap Ritual Bag
 						},
 					}),
@@ -1638,7 +1446,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 51.6, 67.8, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59703 },	-- Brother Trailscenter
 						["sourceQuest"] = 30612,	-- The Leader Hozen
-						["g"] = {
+						["groups"] = {
 							i(82584),	-- Snowfall Shawl
 							i(82585),	-- Snowdrift Drape
 							i(82586),	-- Snowblind Cape
@@ -1659,7 +1467,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 74.9, 88.5, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 61065 },	-- Waterspeaker Gorai
 						["sourceQuest"] = 30828,	-- Cleansing the Mere
-						["g"] = {
+						["groups"] = {
 							i(82552),	-- Dreaming Spirit Armbands
 							i(82554),	-- Mindbender Cuffs
 							i(82551),	-- Mushan Hide Bindings
@@ -1675,7 +1483,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 71.0, 69.1, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59353 },	-- Lao Muskpaw
 						["sourceQuest"] = 30582,	-- The Late Mrs. Muskpaw
-						["g"] = {
+						["groups"] = {
 							i(84520),	-- Dreaming Spirit Boots
 							i(84526),	-- Kafa Armored Warboots
 							i(84521),	-- Kafa Burnished Greaves
@@ -1691,7 +1499,7 @@ root(ROOTS.Zones, {
 						["cr"] = 59335,	-- Burilgi Despoiler
 						["coord"] = { 70.3, 71.9, KUN_LAI_SUMMIT },
 						["provider"] = { "i", 80241 },	-- Muskpaw's Keepsake
-						["g"] = {
+						["groups"] = {
 							i(80241),	-- Muskpaw's Keepsake (QI!)
 						},
 					}),
@@ -1702,7 +1510,7 @@ root(ROOTS.Zones, {
 							30610,	-- Grummel! Grummle! Grummle!
 							30611,	-- Unleash The Yeti!
 						},
-						["g"] = {
+						["groups"] = {
 							i(82541),	-- Waterfall Gloves
 							i(82542),	-- Mushan Hide Gloves
 							i(82543),	-- Dreaming Spirit Guantlets
@@ -1750,7 +1558,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 30652,	-- In Tents Channeling
 						["description"] = "Automatically granted after completing the criteria for |cFFFFD700In Tents Channeling|r.",
-						["g"] = {
+						["groups"] = {
 							i(82590),	-- Blazecaster's Wand
 							i(82598),	-- Fireblaze Clobberer
 							i(82594),	-- Fireblaze Rifle
@@ -1769,7 +1577,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 59441 },	-- Admiral Taylor
 						["sourceQuest"] = 30652,	-- In Tents Channeling
 						["description"] = "Only available if you abandon the original version of the quest.",
-						["g"] = {
+						["groups"] = {
 							i(82590),	-- Blazecaster's Wand
 							i(82598),	-- Fireblaze Clobberer
 							i(82594),	-- Fireblaze Rifle
@@ -1786,7 +1594,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 30657,	-- In Tents Channeling
 						["description"] = "Automatically granted after completing the criteria for |cFFFFD700In Tents Channeling|r.",
-						["g"] = {
+						["groups"] = {
 							i(82590),	-- Blazecaster's Wand
 							i(82598),	-- Fireblaze Clobberer
 							i(82594),	-- Fireblaze Rifle
@@ -1805,7 +1613,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 59442 },	-- General Nazgrim
 						["sourceQuest"] = 30657,	-- In Tents Channeling
 						["description"] = "Only available if you abandon the original version of the quest.",
-						["g"] = {
+						["groups"] = {
 							i(82590),	-- Blazecaster's Wand
 							i(82598),	-- Fireblaze Clobberer
 							i(82594),	-- Fireblaze Rifle
@@ -1868,7 +1676,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 60.6, 21.3, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 60785 },	-- Sage Liao
 						["sourceQuest"] = 30794,	-- Emergency Care
-						["g"] = {
+						["groups"] = {
 							i(80907),	-- Opalescent Blue Crab Shell (QI!)
 							i(81261),	-- Stolen Pandaren Spices (QI!)
 						},
@@ -1883,7 +1691,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 50.5, 64.0, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59894 },	-- Brother Yakshoe
 						["sourceQuest"] = 30605,	-- Bros Before Hozen
-						["g"] = {
+						["groups"] = {
 							i(82532),	-- Waterfall Cord
 							i(82533),	-- Mushan Hide Belt
 							i(82534),	-- Dreaming SPirit Waistguard
@@ -1929,7 +1737,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 57.1, 47.8, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 61297 },	-- Image of Lorewalker Cho
 						["sourceQuest"] = 30797,	-- It Was Almost Alive
-						["g"] = {
+						["groups"] = {
 							o(211770, {	-- Shen Dynasty Tablet
 								i(82393),	-- Shen Dynasty Rubbbing (QI!)
 							}),
@@ -1976,7 +1784,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 50.5, 64.0, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59894 },	-- Brother Yakshoe
 						["sourceQuest"] = 30605,	-- Bros Before Hozen
-						["g"] = {
+						["groups"] = {
 							i(88086),	-- Mushan Hide Vest
 							i(88085),	-- Dreaming Spirit Vest
 							i(88084),	-- Serenity Vest
@@ -2002,7 +1810,7 @@ root(ROOTS.Zones, {
 					q(30616, {	-- Traffic Issues
 						["coord"] = { 64.8, 60.4, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59597 },	-- Smokey Sootassle
-						["g"] = {
+						["groups"] = {
 							i(82571),	-- Burlap Loop
 							i(82572),	-- Fire Camp Ring
 							i(82570),	-- Grummle Bazaar Keepsake
@@ -2043,7 +1851,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 35.3, 49.5, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 61819 },	-- Ban Bearheart
 						["sourceQuest"] = 30993,	-- Where are My Reinforcements?
-						["g"] = {
+						["groups"] = {
 							i(82559),	-- Growthtender Locket
 							i(82560),	-- Brewdrinker Amulet
 							i(82561),	-- Bearheart Necklace
@@ -2067,7 +1875,7 @@ root(ROOTS.Zones, {
 							30665,	-- The Defense of Shado-Pan Fallback
 							30670,	-- Turnabout
 						},
-						["g"] = {
+						["groups"] = {
 							i(81741),	-- Blinding Rage Trap (QI!)
 							i(88079),	-- Waterfall Cap
 							i(88078),	-- Mushan Hide Cap
@@ -2113,6 +1921,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 58.5, 83.9, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 157180 },	-- Abandoned Stormstout Kegs
+						["timeline"] = { ADDED_8_3_0 },
 						["sourceQuest"] = 57071,	-- No Brew Left Behind
 					}),
 					q(30587, {	-- Yakity Yak
@@ -2133,7 +1942,7 @@ root(ROOTS.Zones, {
 							50733,	-- Ski'thik
 							50769,	-- Zai the Outcast
 						},
-						["g"] = {
+						["groups"] = {
 							i(87620),	-- Bracers of the Frozen Summit
 							i(87617),	-- Bracers of the Serene Mountaintop
 							i(87613),	-- Frozen Zandalari Bracer
@@ -2148,13 +1957,13 @@ root(ROOTS.Zones, {
 					}),
 					n(50817, {	-- Ahone the Wanderer
 						["coord"] = { 40.8, 42.5, KUN_LAI_SUMMIT },
-						["g"] = {
+						["groups"] = {
 							i(86588),	-- Pandaren Firework Launcher (TOY!)
 						},
 					}),
 					n(50341, {	-- Borginn Darkfist
 						["coord"] = { 55.7, 43.4, KUN_LAI_SUMMIT },
-						["g"] = {
+						["groups"] = {
 							i(86570),	-- Crate of Kidnapped Puppies
 						},
 					}),
@@ -2164,7 +1973,7 @@ root(ROOTS.Zones, {
 							{ 57.5, 74.7, KUN_LAI_SUMMIT },
 							{ 57.0, 76.0, KUN_LAI_SUMMIT },
 						},
-						["g"] = {
+						["groups"] = {
 							i(86573),	-- Shard of Archstone (TOY!)
 						},
 					}),
@@ -2175,7 +1984,7 @@ root(ROOTS.Zones, {
 							{ 54.32, 21.65, KUN_LAI_SUMMIT },
 							{ 49.38, 18.54, KUN_LAI_SUMMIT },
 						},
-						["g"] = {
+						["groups"] = {
 							i(90168, {	-- Kishak's Clamshell
 								i(90172),	-- Clamshell Band
 								i(90087),	-- Lobstmourne
@@ -2189,7 +1998,7 @@ root(ROOTS.Zones, {
 							{ 51.60, 80.80, KUN_LAI_SUMMIT },
 							{ 51.23, 79.59, KUN_LAI_SUMMIT },
 						},
-						["g"] = {
+						["groups"] = {
 							i(86566),	-- Forager's Gloves
 						},
 					}),
@@ -2203,7 +2012,7 @@ root(ROOTS.Zones, {
 					}),
 					n(50789, {	-- Nessos the Oracle
 						["coord"] = { 63.8, 13.7, KUN_LAI_SUMMIT },
-						["g"] = {
+						["groups"] = {
 							i(86584),	-- Hardened Shell (TOY!)
 						},
 					}),
@@ -2214,13 +2023,13 @@ root(ROOTS.Zones, {
 							{ 47.2, 63.0, KUN_LAI_SUMMIT },
 							{ 46.2, 61.5, KUN_LAI_SUMMIT },
 						},
-						["g"] = {
+						["groups"] = {
 							i(86592),	-- Hozen Peace Pipe
 						},
 					}),
 					n(50733, {	-- Ski'thik
 						["coord"] = { 36.71, 79.76, KUN_LAI_SUMMIT },
-						["g"] = {
+						["groups"] = {
 							i(86577),	-- Rod of Ambershaping
 						},
 					}),
@@ -2230,7 +2039,7 @@ root(ROOTS.Zones, {
 							{ 74.41, 79.34, KUN_LAI_SUMMIT },
 							{ 73.86, 77.21, KUN_LAI_SUMMIT },
 						},
-						["g"] = {
+						["groups"] = {
 							i(86581),	-- Farwater Conch (TOY!)
 						},
 					}),
@@ -2241,7 +2050,7 @@ root(ROOTS.Zones, {
 							{ 52.56, 18.85, THE_JADE_FOREST },
 							{ 36.58, 85.67, TOWNLONG_STEPPES },
 						},
-						["g"] = {
+						["groups"] = {
 							i(94230),	-- Amber Primordial Direhorn (MOUNT!)
 						},
 					}),
@@ -2252,7 +2061,7 @@ root(ROOTS.Zones, {
 							{ 52.56, 18.85, THE_JADE_FOREST },
 							{ 36.58, 85.67, TOWNLONG_STEPPES },
 						},
-						["g"] = {
+						["groups"] = {
 							i(94231),	-- Jade Primordial Direhorn (MOUNT!)
 						},
 					}),
@@ -2264,16 +2073,158 @@ root(ROOTS.Zones, {
 							{ 52.56, 18.85, THE_JADE_FOREST },
 							{ 36.58, 85.67, TOWNLONG_STEPPES },
 						},
-						["g"] = {
+						["groups"] = {
 							i(94229),	-- Slate Primordial Direhorn (MOUNT!)
 						},
 					}),
 				}),
 				n(TREASURES, {
+					o(214438, {	-- Ancient Mogu Tablet
+						["description"] = "Entrance is at |cFFFFD70063.94 49.84|r.",
+						["questID"] = 31420,
+						["coord"] = { 64.2, 45.2, KUN_LAI_SUMMIT },
+						["groups"] = {
+							i(86471),	-- Ancient Mogu Tablet
+						},
+					}),
+					o(213769, {	-- Hozen Treasure Cache
+						["questID"] = 31414,	-- Hozen Treasure Cache
+						["coord"] = { 49.5, 59.4, KUN_LAI_SUMMIT },
+					}),
+					o(213768, {	-- Hozen Warrior Spear
+						["description"] = "Cave entrance is at |cFFFFD70052.8 71.3|r, go down and to the section with water, it is in a rock. Might take some time to spawn.",
+						["questID"] = 31413,
+						["coords"] = {
+							{ 52.8, 71.3, KUN_LAI_SUMMIT },	-- Cave entrance
+							{ 23.9, 68.1, 384 },	-- The Deeper
+						},
+						["groups"] = {
+							i(86394),	-- Hozen Warrior Spear
+						},
+					}),
+					n(64227, {	-- Frozen Trail Packer
+						["coords"] = {
+							{ 37.4, 77.9, KUN_LAI_SUMMIT },	-- Cave entrance
+							{ 35.2, 76.4, KUN_LAI_SUMMIT },
+						},
+						["questID"] = 31304,
+						["groups"] = {
+							i(86125),	-- Kafa Press
+						},
+					}),
+					o(213774, {	-- Lost Adventurer's Belongings
+						["questID"] = 31418,	-- Lost Adventurer's Belongings
+						["coord"] = { 36.7, 79.8, KUN_LAI_SUMMIT },
+					}),
 					o(214407, {	-- Mo-Mo's Treasure Chest
-						["questID"] = 31868,
 						["coord"] = { 47.8, 73.5, KUN_LAI_SUMMIT },
 						["description"] = "Inside Mo-Mo's Cave",
+						["questID"] = 31868,
+					}),
+					o(213438, {	-- Ren Yun the Blind
+						["coord"] = { 44.7, 52.5, KUN_LAI_SUMMIT },
+					}),
+					o(213793, {	-- Rikktik's Tiny Chest
+						["questID"] = 31419,
+						["coord"] = { 52.5, 51.5, KUN_LAI_SUMMIT },
+						["groups"] = {
+							i(86430),	-- Rikktik's Tiny Chest
+						},
+					}),
+					o(215783, {	-- Role Call
+						["coord"] = { 74.5, 83.5, KUN_LAI_SUMMIT },
+					}),
+					o(213751, {	-- Sprite's Cloth Chest
+						["description"] = "Cave entrance is at 73.2, 73.6.  This chest might be personal loot and obey rules based on your current Spec, NOT your Loot Spec.",
+						["coord"] = { 74.6, 74.8, 381 },
+						["modelScale"] = 1.5,
+						["questID"] = 31412,
+						["groups"] = {
+							i(86223, {	-- Agile Sprite Cloak
+								["description"] = "Recommended to be an Agility DPS Spec (Hunter/Rogue) to guarantee this item.", -- verified 2021-10-21 Hunter(Surv)
+							}),
+							i(86222, {	-- Precise Sprite Cloak
+								["description"] = "Recommended to be in an Intellect DPS Spec (Mage/Warlock) to guarantee this item.", -- verified 2021-10-18 Mage(Frost)
+							}),
+							i(86225, {	-- Strong Sprite Cloak
+								["description"] = "Recommended to be in a Strength DPS Spec to guarantee this item.", -- verified 2021-10-22 DK(Unholy)
+							}),
+							i(86221, {	-- Wise Sprite Cloak
+								["description"] = "Recommended to be in a Healer Spec to guarantee this item.", -- verified ?? Shaman(Resto)
+							}),
+							i(86224, {	-- Steadfast Sprite Cape
+								["description"] = "Recommended to be in a Strength Tank Spec to guarantee this item.", -- verified 2021-10-18 Paladin(Prot)
+							}),
+						},
+					}),
+					o(213842, {	-- Stash of Yaungol Weapons
+						["coords"] = {
+							{ 70.1, 63.9, KUN_LAI_SUMMIT },
+							{ 71.1, 62.6, KUN_LAI_SUMMIT },
+						},
+						["modelScale"] = 3.2,
+						["questID"] = 31421,
+						["groups"] = {
+							i(88723),	-- Sturdy Yaungol Spear
+						},
+					}),
+					o(213771, {	-- Statue of Xuen
+						["questID"] = 31416,	-- Statue of Xuen
+						["coord"] = { 72.0, 33.9, KUN_LAI_SUMMIT },
+						["groups"] = {
+							i(86422),	-- Statue of Xuen
+						},
+					}),
+					o(213770, {	-- Stolen Sprite Treasure
+						["description"] = "Entrance is at |cFFFFD70059.5 52.9|r.",
+						["questID"] = 31415,	-- Stolen Sprite Treasure
+						["coord"] = { 41.6, 44.1, 380 },	-- Howlingwind Cavern
+					}),
+					o(213765, {	-- Tablet of Ren Yun
+						["coord"] = { 44.7, 52.5, KUN_LAI_SUMMIT },
+						["questID"] = 31417,	-- FLAG - Tablet of Ren Yun
+						["groups"] = {
+							i(86393),	-- Tablet of Ren Yun (RECIPE!)
+						},
+					}),
+					o(213782, {	-- Terracotta Head
+						["questID"] = 31422,
+						["coord"] = { 59.2, 73.0, KUN_LAI_SUMMIT },
+						["groups"] = {
+							i(86427),	-- Terracotta Head
+						},
+					}),
+					o(213328, {	-- The Defiant
+						["description"] = "At the north end of the circular room at the back of the cave.",
+						["coords"] = {
+							{ 73.2, 94.6, KUN_LAI_SUMMIT },	-- entrance
+							{ 54.9, 16.9, 434 },	-- actual object
+						},
+					}),
+					o(215797, {	-- The Emperor's Burden - Part 2
+						["coord"] = { 43.8, 51.2, KUN_LAI_SUMMIT },
+					}),
+					o(213443, {	-- The Emperor's Burden - Part 6
+						["coord"] = { 67.7, 48.3, KUN_LAI_SUMMIT },
+					}),
+					o(213455, {	-- The Emperor's Burden - Part 7
+						["coord"] = { 40.9, 42.3, KUN_LAI_SUMMIT },
+					}),
+					o(211994, {	-- The Hozen Ravage
+						["coord"] = { 45.7, 61.9, KUN_LAI_SUMMIT },
+					}),
+					o(213331, {	-- Valley of the Emperors (Kun-Lai Summit)
+						["coord"] = { 53.0, 46.58, KUN_LAI_SUMMIT },
+						["description"] = "The scroll is in the first big room."
+					}),
+					o(213511, {	-- Victory in Kun-Lai
+						["coord"] = { 63.1, 40.8, KUN_LAI_SUMMIT },
+					}),
+					o(213417, {	-- Yaungol Tactics
+						["coord"] = { 50.5, 79.3, KUN_LAI_SUMMIT },
+					}),
+					o(215798, {	-- Yaungoil
+						["coord"] = { 71.7, 63.0, KUN_LAI_SUMMIT },
 					}),
 				}),
 				n(VENDORS, {
@@ -2284,7 +2235,7 @@ root(ROOTS.Zones, {
 					n(75695, {	-- Acon Deathwielder
 						["coord"] = { 35.4, 83.2, KUN_LAI_SUMMIT },
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							n(WEAPONS, {
 								i(144251, {	-- Arsenal: Grievous Gladiator's Weapons (H)
 									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -3100,13 +3051,13 @@ root(ROOTS.Zones, {
 					n(73145, {	-- Acon Deathwielder (5.4.7 Elite and removed Version)	-- Link for all the Items https://www.wowhead.com/npc=73145/acon-deathwielder#comments
 						["races"] = HORDE_ONLY,
 						["u"] = REMOVED_FROM_GAME,
-						["g"] = {
+						["groups"] = {
 						},
 					}),
 					n(75693, {	-- Doris Chiltonius Season 12: Malevolent Gladiator Vendor. Items are tagged as S13
 						["coord"] = { 35.4, 83.2, KUN_LAI_SUMMIT },
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							n(WEAPONS, {
 								i(144243, {	-- Arsenal: Malevolent Gladiator's Weapons
 									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -3269,7 +3220,7 @@ root(ROOTS.Zones, {
 											91508,	-- Malevolent Gladiator's Dreadplate Shoulders
 										},
 									},
-									["g"] = {
+									["groups"] = {
 										i(84795),	-- Malevolent Gladiator's Dreadplate Chestpiece
 										i(84835),	-- Malevolent Gladiator's Dreadplate Gauntlets
 										i(84853),	-- Malevolent Gladiator's Dreadplate Helm
@@ -3328,7 +3279,7 @@ root(ROOTS.Zones, {
 											91550,	-- Malevolent Gladiator's Wyrmhide Spaulders
 										},
 									},
-									["g"] = {
+									["groups"] = {
 										i(84832),	-- Malevolent Gladiator's Dragonhide Gloves
 										i(84852),	-- Malevolent Gladiator's Dragonhide Helm
 										i(84871),	-- Malevolent Gladiator's Dragonhide Legguards
@@ -3417,7 +3368,7 @@ root(ROOTS.Zones, {
 											91583,	-- Malevolent Gladiator's Chain Spaulders
 										},
 									},
-									["g"] = {
+									["groups"] = {
 										i(84796),	-- Malevolent Gladiator's Chain Armor
 										i(84841),	-- Malevolent Gladiator's Chain Gauntlets
 										i(84858),	-- Malevolent Gladiator's Chain Helm
@@ -3472,7 +3423,7 @@ root(ROOTS.Zones, {
 											97841,	-- Malevolent Gladiator's Silk Trousers
 										},
 									},
-									["g"] = {
+									["groups"] = {
 										i(84917),	-- Malevolent Gladiator's Silk Amice
 										i(84855),	-- Malevolent Gladiator's Silk Cowl
 										i(84837),	-- Malevolent Gladiator's Silk Handguards
@@ -3520,7 +3471,7 @@ root(ROOTS.Zones, {
 											91608,	-- Malevolent Gladiator's Ironskin Tunic
 										},
 									},
-									["g"] = {
+									["groups"] = {
 										i(84836),	-- Malevolent Gladiator's Copperskin Gloves
 										i(84854),	-- Malevolent Gladiator's Copperskin Helm
 										i(84873),	-- Malevolent Gladiator's Copperskin Legguards
@@ -3594,7 +3545,7 @@ root(ROOTS.Zones, {
 											91628,	-- Malevolent Gladiator's Scaled Shoulders
 										},
 									},
-									["g"] = {
+									["groups"] = {
 										i(84793),	-- Malevolent Gladiator's Ornamented Chestguard
 										i(84831),	-- Malevolent Gladiator's Ornamented Gloves
 										i(84849),	-- Malevolent Gladiator's Ornamented Headcover
@@ -3669,7 +3620,7 @@ root(ROOTS.Zones, {
 											97520,	-- Malevolent Gladiator's Satin Robe
 										},
 									},
-									["g"] = {
+									["groups"] = {
 										i(84846),	-- Malevolent Gladiator's Mooncloth Gloves
 										i(84863),	-- Malevolent Gladiator's Mooncloth Helm
 										i(84883),	-- Malevolent Gladiator's Mooncloth Leggings
@@ -3732,7 +3683,7 @@ root(ROOTS.Zones, {
 											91693,	-- Malevolent Gladiator's Leather Tunic
 										},
 									},
-									["g"] = {
+									["groups"] = {
 										i(84830),	-- Malevolent Gladiator's Leather Gloves
 										i(84848),	-- Malevolent Gladiator's Leather Helm
 										i(84868),	-- Malevolent Gladiator's Leather Legguards
@@ -3791,7 +3742,7 @@ root(ROOTS.Zones, {
 											91719,	-- Malevolent Gladiator's Ringmail Spaulders
 										},
 									},
-									["g"] = {
+									["groups"] = {
 										i(84799),	-- Malevolent Gladiator's Linked Armor
 										i(84844),	-- Malevolent Gladiator's Linked Gauntlets
 										i(84862),	-- Malevolent Gladiator's Linked Helm
@@ -3874,7 +3825,7 @@ root(ROOTS.Zones, {
 											91777,	-- Malevolent Gladiator's Felweave Trousers
 										},
 									},
-									["g"] = {
+									["groups"] = {
 										i(84923),	-- Malevolent Gladiator's Felweave Amice
 										i(84859),	-- Malevolent Gladiator's Felweave Cowl
 										i(84842),	-- Malevolent Gladiator's Felweave Handguards
@@ -3917,7 +3868,7 @@ root(ROOTS.Zones, {
 											91791,	-- Malevolent Gladiator's Plate Shoulders
 										},
 									},
-									["g"] = {
+									["groups"] = {
 										i(84797),	-- Malevolent Gladiator's Plate Chestpiece
 										i(84840),	-- Malevolent Gladiator's Plate Gauntlets
 										i(84856),	-- Malevolent Gladiator's Plate Helm
@@ -4114,19 +4065,19 @@ root(ROOTS.Zones, {
 					n(69965, {	-- Doris Chiltonius (Removed Season 14 Vendor)
 						["races"] = HORDE_ONLY,
 						["u"] = REMOVED_FROM_GAME,
-						["g"] = {
+						["groups"] = {
 						},
 					}),
 					n(69982, {	-- Lok'nor Bloodfist  <Honor Quartermaster>
 						["races"] = HORDE_ONLY,
 						["u"] = REMOVED_FROM_GAME,
-						["g"] = {
+						["groups"] = {
 						},
 					}),
 					n(75690, {	-- Lok'nor Bloodfist <Dreadful Gladiator>
 						["coord"] = { 35.4, 83.2, KUN_LAI_SUMMIT },
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							cl(DEATHKNIGHT, {
 								i(138715, {	-- Ensemble: Dreadful Gladiator's Dreadplate Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
@@ -4721,13 +4672,13 @@ root(ROOTS.Zones, {
 					n(70108, {	-- Roo Desvin >S13</Tyrannical Elite
 						["races"] = HORDE_ONLY,
 						["u"] = REMOVED_FROM_GAME,
-						["g"] = {
+						["groups"] = {
 						},
 					}),
 					n(75688, {	-- Roo Desvin S13 Tyrannical Vendor
 						["coord"] = { 35.4, 83.2, KUN_LAI_SUMMIT },
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							n(WEAPONS, {
 								i(144245, {	-- Arsenal: Tyrannical Gladiator's Weapons
 									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -5559,7 +5510,7 @@ root(ROOTS.Zones, {
 					n(78461, {	-- Shonn Su (Prideful Gladiator Vendor)
 						["coord"] = { 35.4, 83.2, KUN_LAI_SUMMIT },
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							elitepvp(i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
 								["timeline"] = { ADDED_6_0_2 },
 							})),
@@ -6251,7 +6202,7 @@ root(ROOTS.Zones, {
 					}),
 					n(61749, {	-- The Metal Paw <Adventuring Supplies>
 						["coord"] = { 71.4, 92.1, KUN_LAI_SUMMIT },
-						["g"] = {
+						["groups"] = {
 							i(82690),	-- Mountainscaler Amulet
 							i(82685),	-- Mountainscaler Armored Bracers
 							i(82640),	-- Mountainscaler Armored Chestpiece
@@ -6364,7 +6315,7 @@ root(ROOTS.Zones, {
 					}),
 					n(64518, {	-- Uncle Bigpocket <Used Yak Salesgrummle>
 						["coord"] = { 65.4, 61.6, KUN_LAI_SUMMIT },
-						["g"] = {
+						["groups"] = {
 							i(87789, {	-- Blonde Riding Yak (MOUNT!)
 								["cost"] = 30000000,	-- 3,000g
 							}),

@@ -59,12 +59,19 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["provider"] = { "n", 121597 },	-- Locus-Walker
 				["coord"] = { 32.0, 37.4, EREDATH },
 				["g"] = {
-					i(151088),	-- Heart of Nhal'athoth (QI!)
+					o(273833, {	-- Heart of Nhal'athoth
+						["coord"] = { 26.6, 45.0, EREDATH },
+						["g"] = { i(151088) },	-- Heart of Nhal'athoth (QI!)
+					}),
 				},
 			}),
 			q(48654, {	-- Beneath Oronaar
 				["provider"] = { "n", 121230 },	-- Alleria Windrunner
 				["sourceQuests"] = { 48445 },	-- The Ruins of Oronaar
+				["coords"] = {
+					{ 45.6, 24.5, THE_VINDICAAR_EREDATH_UPPER },
+					{ 38.8, 25.5, THE_VINDICAAR_KROKUUN_UPPER },
+				},
 			}),
 			q(47066, {	-- Consecrating Ground
 				["sourceQuests"] = {
@@ -137,8 +144,8 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				},
 			}),
 			q(48635, {	-- More Void Inoculation
-				["coord"] = { 43.8, 60.8, EREDATH },
-				["isWeekly"] = true,
+				["coord"] = { 44.0, 60.9, EREDATH },
+				["repeatable"] = true,
 				["provider"] = { "n", 127037 },	-- Nabiru
 				["sourceQuest"] = 48911,	-- Void Inoculation
 				["groups"] = {
@@ -167,7 +174,10 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			q(48446, {	-- Relics of the Ancient Eredar
 				["sourceQuests"] = { 48445 },	-- The Ruins of Oronaar
 				["provider"] = { "n", 121230 },	-- Alleria Windrunner
-				["coord"] = { 39.1, 25.8, THE_VINDICAAR_KROKUUN_UPPER },
+				["coords"] = {
+					{ 45.6, 24.5, THE_VINDICAAR_EREDATH_UPPER },
+					{ 38.8, 25.5, THE_VINDICAAR_KROKUUN_UPPER },
+				},
 			}),
 			q(47416, {	-- Shadow of the Triumvirate
 				["sourceQuests"] = { 47856 },	-- Across the Universe
@@ -235,6 +245,10 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			q(48445, {	-- The Ruins of Oronaar
 				["provider"] = { "n", 121230 },	-- Alleria Windrunner
 				["sourceQuests"] = { 48443 },	-- Supplying Krokuun
+				["coords"] = {
+					{ 45.5, 24.6, THE_VINDICAAR_EREDATH_UPPER },
+					{ 38.8, 25.6, THE_VINDICAAR_KROKUUN_UPPER },
+				},
 			}),
 			q(47218, {	-- The Shadowguard Incursion
 				["sourceQuests"] = { 47203 },	-- Throwing Shade
@@ -252,11 +266,10 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["coord"] = { 35.4, 59.6, EREDATH },
 			}),
 			q(48911, {	-- Void Inoculation
-				["coord"] = { 43.8, 60.8, EREDATH },
+				["coord"] = { 44.0, 60.9, EREDATH },
 				["isWeekly"] = true,
 				["provider"] = { "n", 127037 },	-- Nabiru
 				["sourceQuests"] = {
-					48446,	-- Relics of the Ancient Eredar
 					48654,	-- Beneath Oronaar
 				},
 				["groups"] = {

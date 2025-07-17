@@ -136,14 +136,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(554, {	-- Aeonus
 					["creatureID"] = 17881,
 					["groups"] = {
-						ach(655, {	-- Opening of the Dark Portal
-							-- #if BEFORE WRATH
-							["sourceQuests"] = {
-								9836,	-- The Master's Touch
-								10297,	-- The Opening of the Dark Portal
-							},
-							-- #endif
-						}),
+						ach(655),	-- Opening of the Dark Portal
 						i(28188),	-- Bloodfire Greatstaff
 						i(28189),	-- Latro's Shifting Sword
 						i(28206),	-- Cowl of the Guiltless
@@ -232,9 +225,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(554, {	-- Aeonus
 						["creatureID"] = 17881,
 						["groups"] = {
-							ach(676, {	-- Heroic: Opening of the Dark Portal
-								["timeline"] = { ADDED_3_0_2 },
-							}),
+							ach(676),	-- Heroic: Opening of the Dark Portal
 							ach(5076, {	-- Heroic: Opening of the Dark Portal Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),

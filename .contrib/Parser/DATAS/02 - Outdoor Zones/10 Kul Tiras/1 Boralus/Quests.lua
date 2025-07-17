@@ -191,7 +191,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(OUTPOSTS, {
 				["description"] = "Alliance Outposts allow you to set up additional bases in Zandalar.  You can buy Scouting Reports from Vindicator Jaelaana, the vendor next to Wind's Redemption.  Each one will start a mission on your Mission Command Table.  After you complete the initial questline, you'll be offered additional missions to upgrade your outposts.",
 				["g"] = {
-					i(165880, {	-- Outpost Upgrade: Arom's Stand
+					i(165880, {	-- Outpost Upgrade: Arom's Stand (CI!)
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
@@ -214,7 +214,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							}),
 						},
 					}),
-					i(165836, {	-- Outpost Upgrade: Brennadam
+					i(165836, {	-- Outpost Upgrade: Brennadam (CI!)
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
@@ -237,7 +237,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							}),
 						},
 					}),
-					i(165873, {	-- Outpost Upgrade: Castaway Point
+					i(165873, {	-- Outpost Upgrade: Castaway Point (CI!)
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
@@ -579,7 +579,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					o_repeated({
 						i(161438),	-- Large Azerite Grenade (QI!)
 						o(296252),	-- Box of Lare Azerite Grenades
-						o(293134),	-- Lare Azerite Grenade
+						o(293134),	-- Large Azerite Grenade
 					}),
 				},
 			}),
@@ -587,7 +587,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 51487 },	-- Searching for Answers
 				["provider"] = { "n", 137871 },	-- Taelia
 				["races"] = ALLIANCE_ONLY,
-				-- NOTE: This might have to move to a different map. - Crieve
+				["coord"] = { 60.1, 85.4, BORALUS },
+				["maps"] = { STORMSONG_VALLEY },
 			}),
 			q(50789, {	-- Clear the Air
 				["sourceQuests"] = { 50787 },	-- Make Our Case
@@ -755,7 +756,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(49223, {	-- The Long Con
 				["sourceQuests"] = { 49523 },	-- A Bad Deal
-				["provider"] = { "n", 129940 },	-- Roko <Wandering Merchant>
+				["provider"] = { "n", 129940 },	-- Roko <Wandering Merchant> (mobileNPC)
 				["coord"] = { 70.3, 8.4, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -870,12 +871,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 				q(53751),	-- Grimwatt's Crash completed
 				-- Outpost Upgrades
 				q(54292),	-- Brennadam completed
-				-- q(54261),	-- Upgrade: Brennadam started
 				q(54296),	-- Castaway Point completed
 				q(54305),	-- Mission Report: Arom's Stand
 				q(54293),	-- Mission Report: Castaway Point
-				-- q(54283),	-- Upgrade: Castaway Point started
-				-- q(54304),	-- Upgrade: Arom's Stand started
 				------ Stay awhile and listen ------ (TODO upgrade to proper HQT in Boralus)
 				hqt(54870),	-- "Stay a while and listen" type conversation between Jaina and Katherine Proudmoore next to the flight master. Available during the war campaign after Clearing Out the Cache.
 				hqt(55464),	-- "Stay a while and listen" type conversation between Jaina and Tandred Proudmoore in Proudmoore Keep at 48, 60. Obtainable after Sail with the Tides completed.

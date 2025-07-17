@@ -51,7 +51,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["isDaily"] = IGNORED_VALUE,
 			}),
 			n(193157, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_5, ADDED_11_0_7 } }, {	-- Dragonhunter Gorund
-				["coord"] = { 27.8, 45.8, THE_AZURE_SPAN },
+				["coords"] = {
+					-- #if AFTER 11.0.7
+					{ 24.5, 47.3, THE_AZURE_SPAN },
+					-- #else
+					{ 27.8, 45.8, THE_AZURE_SPAN },
+					-- #endif
+				},
 				["questID"] = 73873,
 				["g"] = {
 					i(200302),	-- Magmaforged Scimitar

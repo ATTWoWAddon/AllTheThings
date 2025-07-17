@@ -180,12 +180,15 @@ root(ROOTS.Zones, {
 				q(41692),	-- Shipwreck Scavengers
 				q(41242, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
+					["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41549, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
+					["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41550, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
+					["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				petbattle(q(41687)),	-- Snail Fight!
 				q(44892),	-- Snowfeather Swarm!

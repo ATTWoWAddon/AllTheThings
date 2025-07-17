@@ -200,11 +200,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(543, {	-- Talon King Ikiss
 					["creatureID"] = 18473,
 					["groups"] = {
-						ach(653, {	-- Sethekk Halls
-							-- #if BEFORE WRATH
-							["sourceQuest"] = 10098,	-- Terokk's Legacy
-							-- #endif
-						}),
+						ach(653),	-- Sethekk Halls
 						i(27986),	-- Crow Wing Reaper
 						-- #if AFTER 7.3.5
 						i(29355),	-- Terokk's Shadowstaff (7.3.5 - Used to be only Heroic Mode)
@@ -308,9 +304,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(543, {	-- Talon King Ikiss
 						["creatureID"] = 18473,
 						["groups"] = {
-							ach(674, {	-- Heroic: Sethekk Halls
-								["timeline"] = { ADDED_3_0_2 },
-							}),
+							ach(674),	-- Heroic: Sethekk Halls
 							ach(5074, {	-- Heroic: Sethekk Halls Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),

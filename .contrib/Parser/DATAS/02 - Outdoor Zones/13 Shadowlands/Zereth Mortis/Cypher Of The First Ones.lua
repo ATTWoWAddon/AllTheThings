@@ -593,8 +593,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 							["cost"] = { { "c", CYPHER, 25 }, },
 							["timeline"] = {  ADDED_9_2_7 },
 						}),
-						i(188793, {	-- Improvised Cypher Analysis Tool
-							["questID"] = 65282,
+						i(188793, {	-- Improvised Cypher Analysis Tool (CI!)
 							["cost"] = { { "c", CYPHER, 150 }, },
 						}),
 						i(189980, {	-- Brutosaur Soul (SOUL!)

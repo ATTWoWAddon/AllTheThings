@@ -54,6 +54,7 @@ namespace ATT
         {
             if (!File.Exists(filepath))
             {
+                Framework.LogWarn($"Config file not found!", filepath);
                 return;
             }
 
@@ -187,6 +188,28 @@ namespace ATT
             catch { }
 
             throw new InvalidOperationException($"CustomConfigurationNode cannot convert to object[] type: {(string)value}");
+        }
+
+        public static implicit operator Dictionary<string, string>(CustomConfigurationNode value)
+        {
+            try
+            {
+                return value?._dict.ToDictionary(k => k.Key, v => (string)v.Value);
+            }
+            catch { }
+
+            throw new InvalidOperationException($"CustomConfigurationNode cannot convert to Dictionary<string, string> type: {(string)value}");
+        }
+
+        public static implicit operator HashSet<string>(CustomConfigurationNode value)
+        {
+            try
+            {
+                return new HashSet<string>((string[])value);
+            }
+            catch { }
+
+            throw new InvalidOperationException($"CustomConfigurationNode cannot convert to HashSet<string> type: {(string)value}");
         }
 
         /// <summary>

@@ -20,6 +20,7 @@ timeFormatter:Init(1, SecondsFormatter.Abbreviation.Truncate);
 -- App locals
 local GetRelativeValue, SearchForField, SearchForObject = app.GetRelativeValue, app.SearchForField, app.SearchForObject
 local distance = app.distance
+local Callback = app.CallbackHandlers.Callback
 
 -- Module locals (can be set via OnLoad if they do not change during Session but are not yet defined)
 local SearchForLink, GetPlayerPosition
@@ -29,6 +30,7 @@ local objectNamesToIDs = {};
 local function OnLoad_CacheObjectNames()
 	local o
 	for objectID,name in pairs(app.ObjectNames) do
+		name = name:lower()
 		o = objectNamesToIDs[name];
 		if not o then
 			o = { objectID };
@@ -38,13 +40,17 @@ local function OnLoad_CacheObjectNames()
 		end
 	end
 end
+local function GetObjectIDsByName(name)
+	if not name then return end
+	return objectNamesToIDs[name:trim():lower()]
+end
 local GetBestObjectIDForName;
 if app.IsRetail then
 	local InGame = app.Modules.Filter.Filters.InGame
 	GetBestObjectIDForName = function(name)
 		-- Uses a provided 'name' and scans the ObjectDB to find potentially matching ObjectID's,
 		-- then correlate those search results by closest distance to the player's current position
-		local o = objectNamesToIDs[name];
+		local o = GetObjectIDsByName(name)
 		if o and #o > 0 then
 			local mapID, px, py = GetPlayerPosition();
 			-- if we don't know where the player is, we have literally no way to reduce the set of matching objects by name
@@ -118,7 +124,7 @@ else
 		-- Uses a provided 'name' and scans the ObjectDB to find potentially matching ObjectID's,
 		-- then correlate those search results by closest distance to the player's current position
 		--print("GetBestObjectIDForName:", "'" .. (name or RETRIEVING_DATA) .. "'");
-		local o = objectNamesToIDs[name and name:trim()];
+		local o = GetObjectIDsByName(name)
 		if o and #o > 0 then
 			local objects = {};
 			local mapID, px, py = GetPlayerPosition();
@@ -497,6 +503,23 @@ for i,guid in ipairs({
 	PLAYER_TOOLTIPS[guid] = tooltipFunction;
 end
 
+-- OF_THE_ASYLUM GUIDs
+local OF_THE_ASYLUM_TITLE = app.Modules.Color.Colorize(L.TOOLTIP_MODULE.TITLES.XX_OF_THE_ASYLUM, "ffa335ee");
+tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
+	local leftSide = _G[self:GetName() .. "TextLeft1"];
+	if leftSide then leftSide:SetText(OF_THE_ASYLUM_TITLE:format(name)); end
+end
+for i,guid in ipairs({
+	"Player-4372-03E56CDC",	-- Slorche-Atiesh
+	"Player-4372-03F46784",	-- Bankmänfried-Atiesh
+	"Player-4372-03E57EE7",	-- Slorchey-Atiesh
+	"Player-4372-03E57EE6",	-- Slorchejr-Atiesh
+	"Player-4372-03E57EFD",	-- Slorpp-Atiesh
+	"Player-4372-03E57EE4",	-- Slorloko-Atiesh
+}) do
+	PLAYER_TOOLTIPS[guid] = tooltipFunction;
+end
+
 -- Pinkey GUID
 tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
@@ -690,6 +713,21 @@ local function ClearTooltip(tooltip)
 	tooltip.AllTheThingsProcessing = nil;
 	tooltip.ATT_AttachComplete = nil;
 end
+local function ReshowGametooltip()
+	if GameTooltip and GameTooltip:IsVisible() then
+		-- app.PrintDebug("Auto-refresh tooltip",GameTooltip.AllTheThingsProcessing)
+		-- Make sure the tooltip will try to re-attach the data if it's from an ATT row
+		---@diagnostic disable-next-line: inject-field
+		GameTooltip.ATT_AttachComplete = nil
+		GameTooltip:Show()
+	end
+end
+app.ReshowGametooltip = function()
+	Callback(ReshowGametooltip)
+end
+app.AddEventHandler("OnRefreshComplete", function()
+	Callback(ReshowGametooltip)
+end);
 
 -- Stores a cache of the 'tooltipInfo' for a given group
 -- TODO: this isnt too effective right now since we have to clear the search cache as well
@@ -750,42 +788,42 @@ local function AttachTooltipSearchResults(tooltip, method, ...)
 		app.PrintDebug("pcall tooltip failed",group)
 	end
 	tooltip.ATT_AttachComplete = not (working or (group and group.working));
-	-- app.PrintDebug("ATT_AttachComplete",tooltip.ATT_AttachComplete,working,group.working)
+	-- app.PrintDebug("ATT_AttachComplete",group.hash,tooltip.ATT_AttachComplete,working,group.working)
 end
 
--- Battle Pet Tooltips
-local function AttachBattlePetTooltip(tooltip, data, quantity, detail)
-	if not data or data.att or not data.speciesID then return end
-	data.att = 1;
+local AttachTypicalSearchResults
+do
+	local DefaultSearchOptions = { AppendSearchParams = { "field", true }}
+	local NPCSearchOptions = { AppendSearchParams = { "none", true }}
+	local SearchOptionByField = setmetatable({
+		-- TODO: still need this for provider-types which don't translate into Cost...
+		-- will have to adjust how NPC-linked data is Filled so we can consistently
+		-- perform our logic in the future
+		npcID = NPCSearchOptions,
+		objectID = NPCSearchOptions,
+	}, { __index = function() return DefaultSearchOptions end})
 
-	-- GameTooltip_ShowCompareItem
-	-- local searchResults = SearchForField("speciesID", data.speciesID);
-	local owned = C_PetJournal.GetOwnedBattlePetString(data.speciesID);
-	tooltip.Owned:SetText(owned);
-	if owned == nil then
-		if tooltip.Delimiter then
-			-- if .Delimiter is present it requires special handling (FloatingBattlePetTooltip)
-			tooltip:SetSize(260,150 + h)
-			tooltip.Delimiter:ClearAllPoints()
-			tooltip.Delimiter:SetPoint("TOPLEFT",tooltip.SpeedTexture,"BOTTOMLEFT",-6,-5)
-		else
-			tooltip:SetSize(260,122)
-		end
-	else
-		local h = tooltip.Owned:GetHeight() or 0;
-		if tooltip.Delimiter then
-			tooltip:SetSize(260,150 + h)
-			tooltip.Delimiter:ClearAllPoints()
-			tooltip.Delimiter:SetPoint("TOPLEFT",tooltip.SpeedTexture,"BOTTOMLEFT",-6,-(5 + h))
-		else
-			tooltip:SetSize(260,122 + h)
-		end
+	AttachTypicalSearchResults = app.IsRetail and
+	-- In Retail, we want to put the Thing being searched into the tooltip. Whether other content should be included
+	-- is based on Fillers and other logic based on that Thing and is not always included based on caching
+	function(self, field, id)
+		AttachTooltipSearchResults(self, SearchForObject, field, tonumber(id), SearchOptionByField[field])
 	end
-	tooltip:Show()
-	return true;
+or
+	function(self, field, id)
+		AttachTooltipSearchResults(self, SearchForField, field, tonumber(id))
+	end
 end
---hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
 
+-- For some reason, Blizzard puts some secure access functionality within the GetOwner() call on certain
+-- tooltips, which means when ATT checks the Owner via this function, a secure code taint error is thrown
+local function SafeGetOwner(tooltip)
+	local ok, owner = pcall(tooltip.GetOwner,tooltip)
+	if ok then
+		return owner
+	else app.PrintDebug("Bad GetOwner on tooltip",tooltip:GetName())
+	end
+end
 -- Tooltip API Differences between Modern and Legacy APIs.
 if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 	-- 10.0.2
@@ -851,7 +889,7 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 		-- self:Show();
 
 		-- Does the tooltip have an owner?
-		local owner = self:GetOwner();
+		local owner = SafeGetOwner(self)
 		if owner then
 			if owner.SpellHighlightTexture	-- Action bars
 			or owner.TrainBook		-- Spellbook spell tooltips
@@ -881,7 +919,7 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 
 			local encounterID = owner.encounterID;
 			if encounterID and not owner.itemID then
-				AttachTooltipSearchResults(self, SearchForField, "encounterID", tonumber(encounterID));
+				AttachTypicalSearchResults(self, "encounterID", encounterID)
 				return true;
 			end
 		end
@@ -976,14 +1014,14 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 				if server_id and zone_uid and app.Settings:GetTooltipSetting("Layer") then
 					self:AddDoubleLine(L.LAYER, app.Modules.Color.Colorize((ServerUID ~= server_id and (server_id .. "-") or "") .. zone_uid, app.Colors.White));
 				end
-				AttachTooltipSearchResults(self, SearchForField, "creatureID", tonumber(npc_id));
+				AttachTypicalSearchResults(self, "npcID", npc_id)
 			end
 			return true;
 		end
 
 		-- Does the tooltip have a spell? [Mount Journal, Action Bars, etc]
 		if self.AllTheThingsProcessing and spellID then
-			AttachTooltipSearchResults(self, SearchForField, "spellID", spellID);
+			AttachTypicalSearchResults(self, "spellID", spellID)
 			return true;
 		end
 
@@ -1040,9 +1078,13 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 			end
 			if knownSearchField and ttId then
 				-- app.PrintDebug("TT Search",knownSearchField,ttId)
-				AttachTooltipSearchResults(self, SearchForField, knownSearchField, tonumber(ttId));
-				if knownSearchField == "currencyID" and self.ATT_AttachComplete == false then
-					app.CallbackHandlers.DelayedCallback(RerenderCurrency, 0.05, self, ttId);
+				AttachTypicalSearchResults(self, knownSearchField, ttId)
+				if self.ATT_AttachComplete == false then
+					if knownSearchField == "currencyID" then
+						app.CallbackHandlers.DelayedCallback(RerenderCurrency, 0.05, self, ttId)
+					else
+						app.ReshowGametooltip()
+					end
 				end
 				return true;
 			end
@@ -1050,18 +1092,8 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 		-- app.PrintDebug("AttachTooltip-Return");
 	end
 
-	local Callback = app.CallbackHandlers.Callback
-	local function ReshowGametooltip()
-		if GameTooltip and GameTooltip:IsVisible() then
-			-- app.PrintDebug("Auto-refresh tooltip")
-			-- Make sure the tooltip will try to re-attach the data if it's from an ATT row
-			---@diagnostic disable-next-line: inject-field
-			GameTooltip.ATT_AttachComplete = nil;
-			GameTooltip:Show();
-		end
-	end
 	app.AddEventRegistration("TOOLTIP_DATA_UPDATE", function(...)
-		Callback(ReshowGametooltip)
+		app.ReshowGametooltip()
 	end);
 	app.AddEventHandler("OnReady", function()
 		TooltipDataProcessor.AddTooltipPostCall(TooltipDataProcessor.AllTypes, AttachTooltip)
@@ -1102,9 +1134,6 @@ else
 				self:AddDoubleLine("GetUnit", tostring(select(2, self:GetUnit()) or "nil"));
 				--]]--
 
-				-- Does the tooltip have an owner?
-				local owner = self:GetOwner();
-
 				-- Does the tooltip have a target?
 				local target = select(2, self:GetUnit());
 				if target then
@@ -1144,10 +1173,13 @@ else
 					end
 				end
 
+				-- Does the tooltip have an owner?
+				local owner = SafeGetOwner(self)
+
 				-- Does the tooltip have a spell? [Mount Journal, Action Bars, etc]
 				local spellID = select(2, self:GetSpell());
 				if spellID then
-					if owner.SpellHighlightTexture then
+					if owner and owner.SpellHighlightTexture then
 						-- Actionbars, don't want that.
 						return true;
 					end
@@ -1320,8 +1352,81 @@ app.AddEventHandler("OnLoad", function()
 	OnLoad_CacheObjectNames();
 end);
 
+
 -- TODO: This is referenced in addon database code in classic, refactor this.
 -- Don't worry about optimizing it for now.
+local function PrepareShoppingTooltips(owner, count)
+	if not owner then owner = GameTooltip; end
+	
+	-- Quick maths
+	-- Taken from https://github.com/Ennie/wow-ui-source/blob/master/FrameXML/GameTooltip.lua
+	---@diagnostic disable-next-line: undefined-field
+	local shoppingTooltip1, shoppingTooltip2, shoppingTooltip3 = unpack(GameTooltip.shoppingTooltips);
+	local leftPos, rightPos = (owner:GetLeft() or 0), (owner:GetRight() or 0);
+	if GetScreenWidth() - rightPos < leftPos then
+		side = "left";
+	else
+		side = "right";
+	end
+
+	if owner == GameTooltip then
+		-- see if we should slide the tooltip
+		local anchorType = owner:GetAnchorType();
+		if anchorType and anchorType ~= "ANCHOR_PRESERVE" then
+			local totalWidth = shoppingTooltip1:GetWidth();
+			if count > 1 then totalWidth = totalWidth + shoppingTooltip2:GetWidth(); end
+			if count > 2 then totalWidth = totalWidth + shoppingTooltip3:GetWidth(); end
+			if ( (side == "left") and (totalWidth > leftPos) ) then
+				owner:SetAnchorType(anchorType, (totalWidth - leftPos), 0);
+			elseif ( (side == "right") and (rightPos + totalWidth) > GetScreenWidth() ) then
+				owner:SetAnchorType(anchorType, -((rightPos + totalWidth) - GetScreenWidth()), 0);
+			end
+		end
+	end
+
+	-- anchor the compare tooltips
+	if count > 2 then
+		shoppingTooltip3:SetOwner(owner, "ANCHOR_NONE");
+		shoppingTooltip3:ClearAllPoints();
+		if side == "left" then
+			shoppingTooltip3:SetPoint("TOPRIGHT", owner, "TOPLEFT", 0, -10);
+		else
+			shoppingTooltip3:SetPoint("TOPLEFT", owner, "TOPRIGHT", 0, -10);
+		end
+		if shoppingTooltip3.attHelper then shoppingTooltip3:attHelper(); end
+		shoppingTooltip1:SetOwner(shoppingTooltip3, "ANCHOR_NONE");
+	else
+		shoppingTooltip1:SetOwner(owner, "ANCHOR_NONE");
+	end
+	shoppingTooltip1:ClearAllPoints();
+	if side == "left" then
+		if count > 2 then
+			shoppingTooltip1:SetPoint("TOPRIGHT", shoppingTooltip3, "TOPLEFT", 0, 0);
+		else
+			shoppingTooltip1:SetPoint("TOPRIGHT", owner, "TOPLEFT", 0, -10);
+		end
+	else
+		if count > 2 then
+			shoppingTooltip1:SetPoint("TOPLEFT", shoppingTooltip3, "TOPRIGHT", 0, 0);
+		else
+			shoppingTooltip1:SetPoint("TOPLEFT", owner, "TOPRIGHT", 0, -10);
+		end
+	end
+	if shoppingTooltip1.attHelper then shoppingTooltip1:attHelper(); end
+
+	if count > 1 then
+		shoppingTooltip2:SetOwner(shoppingTooltip1, "ANCHOR_NONE");
+		shoppingTooltip2:ClearAllPoints();
+		if side == "left" then
+			shoppingTooltip2:SetPoint("TOPRIGHT", shoppingTooltip1, "TOPLEFT", 0, 0);
+		else
+			shoppingTooltip2:SetPoint("TOPLEFT", shoppingTooltip1, "TOPRIGHT", 0, 0);
+		end
+		if shoppingTooltip2.attHelper then shoppingTooltip2:attHelper(); end
+	end
+
+	return shoppingTooltip1, shoppingTooltip2, shoppingTooltip3;
+end
 local function ShowItemCompareTooltips(...)
 	local items = { ... };
 	local count = #items;
@@ -1330,82 +1435,81 @@ local function ShowItemCompareTooltips(...)
 			---@diagnostic disable-next-line: undefined-field
 			local shoppingTooltip = GameTooltip.shoppingTooltips[i];
 			if shoppingTooltip then
-				shoppingTooltip.attItem = type(item) == "number" and select(2, GetItemInfo(item)) or item;
-				pcall(shoppingTooltip.SetHyperlink, shoppingTooltip, shoppingTooltip.attItem);
+				shoppingTooltip.attItemData = type(item) == "number" and select(2, GetItemInfo(item)) or item;
+				shoppingTooltip.attHelper = function(tooltip)
+					pcall(tooltip.SetHyperlink, tooltip, tooltip.attItemData);
+					tooltip.attItemData = nil;
+					tooltip.attHelper = nil;
+					tooltip:Show();
+				end
 			else
 				break;
 			end
 		end
-
-		-- Quick maths
-		-- Taken from https://github.com/Ennie/wow-ui-source/blob/master/FrameXML/GameTooltip.lua
-		---@diagnostic disable-next-line: undefined-field
-		local shoppingTooltip1, shoppingTooltip2, shoppingTooltip3 = unpack(GameTooltip.shoppingTooltips);
-		local leftPos, rightPos = (GameTooltip:GetLeft() or 0), (GameTooltip:GetRight() or 0);
-		if GetScreenWidth() - rightPos < leftPos then
-			side = "left";
-		else
-			side = "right";
-		end
-
-		-- see if we should slide the tooltip
-		local anchorType = GameTooltip:GetAnchorType();
-		if anchorType and anchorType ~= "ANCHOR_PRESERVE" then
-			local totalWidth = shoppingTooltip1:GetWidth();
-			if count > 1 then totalWidth = totalWidth + shoppingTooltip2:GetWidth(); end
-			if count > 2 then totalWidth = totalWidth + shoppingTooltip3:GetWidth(); end
-			if ( (side == "left") and (totalWidth > leftPos) ) then
-				GameTooltip:SetAnchorType(anchorType, (totalWidth - leftPos), 0);
-			elseif ( (side == "right") and (rightPos + totalWidth) > GetScreenWidth() ) then
-				GameTooltip:SetAnchorType(anchorType, -((rightPos + totalWidth) - GetScreenWidth()), 0);
-			end
-		end
-
-		-- anchor the compare tooltips
-		if count > 2 then
-			shoppingTooltip3:SetOwner(GameTooltip, "ANCHOR_NONE");
-			shoppingTooltip3:ClearAllPoints();
-			if side == "left" then
-				shoppingTooltip3:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, -10);
-			else
-				shoppingTooltip3:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, -10);
-			end
-			pcall(shoppingTooltip3.SetHyperlink, shoppingTooltip3, shoppingTooltip3.attItem);
-			shoppingTooltip3:Show();
-			shoppingTooltip1:SetOwner(shoppingTooltip3, "ANCHOR_NONE");
-		else
-			shoppingTooltip1:SetOwner(GameTooltip, "ANCHOR_NONE");
-		end
-		shoppingTooltip1:ClearAllPoints();
-		if side == "left" then
-			if count > 2 then
-				shoppingTooltip1:SetPoint("TOPRIGHT", shoppingTooltip3, "TOPLEFT", 0, 0);
-			else
-				shoppingTooltip1:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, -10);
-			end
-		else
-			if count > 2 then
-				shoppingTooltip1:SetPoint("TOPLEFT", shoppingTooltip3, "TOPRIGHT", 0, 0);
-			else
-				shoppingTooltip1:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, -10);
-			end
-		end
-		pcall(shoppingTooltip1.SetHyperlink, shoppingTooltip1, shoppingTooltip1.attItem);
-		shoppingTooltip1:Show();
-
-		if count > 1 then
-			shoppingTooltip2:SetOwner(shoppingTooltip1, "ANCHOR_NONE");
-			shoppingTooltip2:ClearAllPoints();
-			if side == "left" then
-				shoppingTooltip2:SetPoint("TOPRIGHT", shoppingTooltip1, "TOPLEFT", 0, 0);
-			else
-				shoppingTooltip2:SetPoint("TOPLEFT", shoppingTooltip1, "TOPRIGHT", 0, 0);
-			end
-			pcall(shoppingTooltip2.SetHyperlink, shoppingTooltip2, shoppingTooltip2.attItem);
-			shoppingTooltip2:Show();
-		end
-
-		return shoppingTooltip1, shoppingTooltip2, shoppingTooltip3;
+		return PrepareShoppingTooltips(GameTooltip, count);
 	end
 end
 app.ShowItemCompareTooltips = ShowItemCompareTooltips;
+
+-- Battle Pet Tooltip Integration with TSM (if available)
+if BattlePetTooltip then
+	function UpdateBattlePetTooltip(tooltip)
+		if not tooltip.attBattlePetOnUpdateHooked then
+			tooltip.attBattlePetOnUpdateHooked = 1;
+			tooltip:HookScript("OnUpdate", UpdateBattlePetTooltip)
+		end
+		if tooltip:IsShown() and app.Settings:GetTooltipSetting("EnablePetCageTooltips") then
+			if CanAttachTooltips() then
+				local shoppingTooltip = TSMExtraTooltip3;
+				if shoppingTooltip then
+					if not shoppingTooltip.attBattlePetAttached then
+						shoppingTooltip.attBattlePetAttached = 1;
+						shoppingTooltip:AddLine(" ");
+						AttachTooltipSearchResults(shoppingTooltip, SearchForField, "speciesID", tooltip.attSpeciesID);
+						shoppingTooltip:Show();
+						if not tooltip.attBattlePetOnHideForTSMHooked then
+							tooltip.attBattlePetOnHideForTSMHooked = 1;
+							tooltip:HookScript("OnHide", function()
+								shoppingTooltip.attBattlePetAttached = nil;
+							end)
+						end
+					end
+					return;
+				end
+				
+				---@diagnostic disable-next-line: undefined-field
+				shoppingTooltip = GameTooltip.shoppingTooltips[1];
+				if shoppingTooltip then
+					shoppingTooltip.attHelper = function(t)
+						t:ClearLines();
+						AttachTooltipSearchResults(t, SearchForField, "speciesID", tooltip.attSpeciesID);
+						t.attHelper = nil;
+						t:Show();
+					end
+					if not tooltip.attBattlePetOnHideHooked then
+						tooltip.attBattlePetOnHideHooked = 1;
+						tooltip:HookScript("OnHide", function()
+							shoppingTooltip:Hide();
+						end)
+					end
+					PrepareShoppingTooltips(tooltip, 1);
+				end
+			else
+				---@diagnostic disable-next-line: undefined-field
+				local shoppingTooltip = GameTooltip.shoppingTooltips[1];
+				if shoppingTooltip and shoppingTooltip:IsShown() then
+					shoppingTooltip:Hide();
+				end
+			end
+		end
+	end
+	function BattlePetTooltipTemplate_SetBattlePetHook(tooltip, data)
+		if data and data.speciesID then
+			tooltip.attSpeciesID = data.speciesID;
+			C_Timer.After(0.01, function()
+				UpdateBattlePetTooltip(tooltip);
+			end);
+		end
+	end
+	hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", BattlePetTooltipTemplate_SetBattlePetHook);
+end

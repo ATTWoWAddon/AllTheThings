@@ -1058,6 +1058,7 @@ i(0, 4532);			-- Pinchy the Plunderer (WOTLK)
 i(220620, 446105);	-- Skeletal Wind Serpent (SOD) [Sunken Temple]
 -- #endif
 i(224002, 4585);	-- Swoopy (Cata)
+i(231312, 4685);	-- Timbered Air Snakelet (MOP)
 -- #endif
 
 -----------------
@@ -4291,11 +4292,11 @@ n(236041, 4732);	-- Scavenging Snapdragon
 n(234369, 4711);	-- Snapdragon Pup
 n(236040, 4731);	-- Storminfused Snapdragon
 n(230394, 4628);	-- Tidal Kroling
---- UNSORTED ---
-i(234905, 4730);	-- Mech-Friend Maya
-i(233057, 4709);	-- Rock Hound Mica
 --- NYI ---
 i(0, 4725);			-- Titan Orb
+i(234905, 4730);	-- Mech-Friend Maya
+i(233057, 4709);	-- Rock Hound Mica
+i(235988, 0);		-- Parley
 
 ------------------
 -- PATCH 11.1.0 --
@@ -4355,31 +4356,86 @@ i(0, 4745);	-- Rusty Croach
 i(0, 4746);	-- Sooty Croach
 i(0, 4738);	-- Status Symbol
 i(0, 4743);	-- Swabbie
---- UNSORTED ---
+--- NYI ---
+i(231628, 4676);	-- Bawkinator 2000
+i(231627, 4677);	-- Black Cave Crab
+i(231757, 4671);	-- Cauldrone
+i(231760, 4673);	-- Crunchy
+i(231762, 4674);	-- Dosh
+i(231758, 4672);	-- Finnity
+i(231763, 4675);	-- FO-MO Mark II
 i(235909, 4755);	-- Gleam
 i(232854, 4634);	-- Grinner
+i(231756, 4670);	-- Hermes
 i(232856, 4633);	-- Scruff
+i(231613, 4665);	-- Yellow Tropical Frog
 
 ------------------
 -- PATCH 11.1.5 --
 ------------------
 --- ITEM ---
+i(221851, 4466);	-- Argos
 i(212791, 4410);	-- Beetriz
 i(235794, 4747);	-- Eye of Chaos
+i(236409, 4757);	-- Frumpy Softpaw
 i(208446, 4264);	-- Fyrn
+i(232857, 4635);	-- Goggles
+i(241193, 3245);	-- Helpful Workshop Bot
 i(238986, 4794);	-- Mister Mans
 i(235980, 4756);	-- Scourge of the Aspects
+i(239019, 4806);	-- Spicy Mean-Ball
+i(241188, 4804);	-- Swiftpaw
 i(235793, 4748);	-- Void-Scarred Parrot
 i(235795, 4749);	-- Void-Scarred Scorpid
 i(235797, 4750);	-- Void-Scarred Tallstrider Chick
+i(238942, 4793);	-- Weechi
 i(223498, 4568);	-- Whoopy
 --- UNSORTED ---
 i(0, 4792);	-- Ada the Sweetest
-i(221851, 4466);	-- Argos
-i(236409, 4757);	-- Frumpy Softpaw
-i(232857, 4635);	-- Goggles
-i(241193, 3245);	-- Helpful Workshop Bot
 i(0, 4761);	-- Pascal the Wonder Pup
-i(239019, 4806);	-- Spicy Mean-Ball
-i(241188, 4804);	-- Swiftpaw
-i(238942, 4793);	-- Weechi
+
+------------------
+-- PATCH 11.1.7 --
+------------------
+i(245543, 4849);	-- Flotsam Harvester
+i(245574, 4852);	-- Lil' Daz'ti
+i(239082, 4796);	-- Sa'bak's Blessed
+
+------------------
+-- PATCH 11.2.0 --
+------------------
+--- ITEM ---
+i(245252, 4840);	-- Graceful Cosmic Ray Pup
+i(245272, 4846);	-- Heka'Tarnos, Bringer of Discord
+i(245253, 4844);	-- Inquisitive Cosmic Ray Pup
+i(243158, 4813);	-- Ixthal the Observling
+i(244915, 4834);	-- Jimmy
+i(245214, 4838);	-- Palek'ti, the Mouth of Nothingness
+i(244910, 4829);	-- Penumbral Terror
+--- NPC ---
+--- UNSORTED ---
+i(0, 4824);	-- Baby Karesh Fox - Orange
+i(245274, 4848);	-- Cerulean Lapbug
+i(245273, 4847);	-- Copper Lapbug
+i(244916, 4835);	-- Cyan Siphonmite
+i(244907, 4827);	-- Dread Horrorling
+i(246339, 4854);	-- Duskytooth Fel Snooter
+i(245254, 4842);	-- Duskthief
+i(244909, 4828);	-- Impartial Watcher
+i(0, 4832);	-- Looker Gaz'kreth Jr.
+i(245269, 4845);	-- Mr. Long-Legs
+i(246342, 4855);	-- Mustyfur Fel Snooter
+i(0, 4830);	-- Observer, Baby (Green) - no icon
+i(246337, 4853);	-- Rustyroot Fel Snooter
+i(245256, 4843);	-- Sao'rhon
+i(244468, 4826);	-- Scrappy Thorntail
+i(246343, 4856);	-- Scruffyhorn Fel Snooter
+i(246451, 4858);	-- Shadefur Brewthief
+i(245215, 4839);	-- Shimmering Inchshifter
+i(0, 4841);	-- Starlight
+i(246723, 4860);	-- Unfazed Diver
+i(244467, 4825);	-- Veridian Thorntail
+i(245212, 4836);	-- Vitriolic Inchshifter
+i(0, 4837);	-- Worm, Cosmic - Critter (Red)
+i(244914, 4833);	-- Xanthous Siphonmite
+i(246694, 4859);	-- Zo'ya

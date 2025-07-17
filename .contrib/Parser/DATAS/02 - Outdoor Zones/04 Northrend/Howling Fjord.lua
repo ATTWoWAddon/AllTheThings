@@ -8,7 +8,7 @@ root(ROOTS.Zones, {
 			["icon"] = 236781,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					explorationAch(1263),	-- Explore Howling Fjord
+					ach(1263),	-- Explore Howling Fjord
 					ach(1254, {	-- Friend or Fowl?
 						["coords"] = {
 							{ 69.6, 65.8, HOWLING_FJORD },
@@ -23,8 +23,9 @@ root(ROOTS.Zones, {
 					}),
 					ach(34, {	-- I've Toured the Fjord (A)
 						["races"] = ALLIANCE_ONLY,
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							11291,	-- To Westguard Keep!
 							-- TODO:: confirm the quest below
@@ -46,75 +47,13 @@ root(ROOTS.Zones, {
 							11348,	-- The Rune of Command
 							11326,	-- Alpha Worg
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 130,
-						-- #endif
-						-- #else
-						["groups"] = {
-							crit(38976, {	-- The Ill-Equipped Port
-								["sourceQuest"] = 11291,	-- To Westguard Keep!
-							}),
-							crit(38977, {	-- The Ill-Equipped Port
-								["sourceQuest"] = 11436,	-- Let's Go Surfing Now
-							}),
-							crit(38975, {	-- Descendants of the Vrykul
-								["sourceQuest"] = 11344,	-- Anguish of Nifflevar
-							}),
-							crit(38978, {	-- Iron Rune Constructs
-								["sourceQuest"] = 11501,	-- News From the East
-							}),
-							crit(38979, {	-- Doom Approaches
-								["sourceQuest"] = 11572,	-- Return to Atuik
-							}),
-							crit(38980, {	-- The End of Jonah Sterling
-								["sourceQuest"] = 11471,	-- The Jig is Up
-							}),
-							crit(38981, {	-- The Debt Collector
-								["sourceQuest"] = 11467,	-- Dead Man's Debt
-							}),
-							crit(38982, {	-- A New Plague
-								["sourceQuest"] = 11332,	-- Mission: Plague This!
-							}),
-							crit(38983, {	-- The Conqueror of Skorn
-								["sourceQuest"] = 11250,	-- All Hail the Conqueror of Skorn!
-							}),
-							crit(38984, {	-- The Scourge and the Vrykul
-								["sourceQuest"] = 11452,	-- The Slumbering King
-							}),
-							crit(38985, {	-- The Scourge and the Vrykul
-								["sourceQuest"] = 11236,	-- Necro Overlord Mezhen
-							}),
-							crit(38986, {	-- The Scourge and the Vrykul
-								["sourceQuest"] = 11239,	-- In Service of the Light
-							}),
-							crit(38987, {	-- The Scourge and the Vrykul
-								["sourceQuest"] = 11432,	-- Sleeping Giants
-							}),
-							crit(38988, {	-- The Scourge and the Vrykul
-								["sourceQuest"] = 11238,	-- The Frost Wyrm and its Master
-							}),
-							crit(38989, {	-- Sisters of the Fjord
-								["sourceQuest"] = 11428,	-- Keeper Witherleaf
-							}),
-							crit(38991, {	-- The Iron Dwarves
-								["sourceQuest"] = 11359,	-- Demolishing Megalith
-							}),
-							crit(38990, {	-- The Iron Dwarves
-								["sourceQuest"] = 11348,	-- The Rune of Command
-							}),
-							crit(38992, {	-- Alpha Worg
-								["sourceQuest"] = 11326,	-- Alpha Worg
-							}),
-						},
 						-- #endif
 					}),
 					ach(1356, {	-- I've Toured the Fjord (H)
 						["races"] = HORDE_ONLY,
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							11234,	-- Report to Anselm
 							12481,	-- Adding Injury to Insult
@@ -133,66 +72,6 @@ root(ROOTS.Zones, {
 							11453,	-- The Slumbering King
 							11268,	-- The Walking Dead
 							11324,	-- Alpha Worg
-						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 105,
-						-- #endif
-						-- #else
-						["groups"] = {
-							crit(38993, {	-- Visitors from the Keep
-								["sourceQuest"] = 11234,	-- Report to Anselm
-							}),
-							crit(38994, {	-- Assassinating Bjorn Halgurdsson
-								["sourceQuest"] = 12481,	-- Adding Injury to Insult
-							}),
-							crit(38995, {	-- A New Plague
-								["sourceQuest"] = 11307,	-- Field Test
-							}),
-							crit(38979, {	-- Doom Approaches
-								["sourceQuest"] = 11572,	-- Return to Atuik
-							}),
-							crit(38980, {	-- The End of Jonah Sterling
-								["sourceQuest"] = 11471,	-- The Jig is Up
-							}),
-							crit(38981, {	-- The Debt Collector
-								["sourceQuest"] = 11467,	-- Dead Man's Debt
-							}),
-							crit(38996, {	-- Volatile Viscera
-								["sourceQuest"] = 11310,	-- Warning: Some Assembly Required
-							}),
-							crit(38989, {	-- Sisters of the Fjord
-								["sourceQuest"] = 11428,	-- Keeper Witherleaf
-							}),
-							crit(38997, {	-- The Iron Dwarves
-								["sourceQuest"] = 11352,	-- The Rune of Command
-							}),
-							crit(38998, {	-- The Iron Dwarves
-								["sourceQuest"] = 11367,	-- Demolishing Megalith
-							}),
-							crit(38999, {	-- The Conqueror of Skorn
-								["sourceQuest"] = 11261,	-- The Conqueror of Skorn!
-							}),
-							crit(39001, {	-- The Scourge and the Vrykul
-								["sourceQuest"] = 11264,	-- Necro Overlord Mezhen
-							}),
-							crit(39002, {	-- The Scourge and the Vrykul
-								["sourceQuest"] = 11268,	-- The Walking Dead
-							}),
-							crit(39003, {	-- The Scourge and the Vrykul
-								["sourceQuest"] = 11433,	-- Sleeping Giants
-							}),
-							crit(39004, {	-- The Scourge and the Vrykul
-								["sourceQuest"] = 11453,	-- The Slumbering King
-							}),
-							crit(39005, {	-- The Scourge and the Vrykul
-								["sourceQuest"] = 11267,	-- The Frost Wyrm and its Master
-							}),
-							crit(39000, {	-- Alpha Worg
-								["sourceQuest"] = 11324,	-- Alpha Worg
-							}),
 						},
 						-- #endif
 					}),
@@ -233,12 +112,6 @@ root(ROOTS.Zones, {
 						}),
 					},
 				}),
-				-- #if AFTER 10.2.7
-				n(26540, {	-- Drenk Spannerspark <Tirisfal Glades Zeppelin Master>
-					["description"] = "Seems like blizzard neglected to actually provide a portal back to Tirisfal Glades."
-					-- This have probably been broken for multiple expansions.
-				}),
-				-- #endif
 				explorationHeader({
 					exploration(4062),	-- Apothecary Camp
 					exploration(3996),	-- Baelgun's Excavation Site
@@ -346,6 +219,16 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66635, {	-- Beegle Blastfuse <Master Pet Tamer>
 						["coord"] = { 28.6, 33.8, HOWLING_FJORD },
+						["description"] = "Beegle's pets are level 25 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Flying - see above.\n3. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Ageless Bronze Drake (Tail Sweap/Ancient Blessing/Rewind Time) and Abyssius (Crush/Flamethrower/Metero Strike).",
+						["timeline"] = { ADDED_5_0_4 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(31931, {	-- Beegle Blastfuse
+								["sourceAchievement"] = 6605,	-- Taming Northrend
+								["timeline"] = { ADDED_5_0_4 },
+								["isDaily"] = true,
+							}),
+						},
 					}),
 				}),
 				n(QUESTS, {
@@ -1633,6 +1516,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 28.8, 44.1, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 11250,	-- All Hail the Conqueror of Skorn!
+						["isBreadcrumb"] = true,
 					}),
 					q(11190, {	-- One Size Does Not Fit All
 						["qg"] = 23770,	-- Cannoneer Ely

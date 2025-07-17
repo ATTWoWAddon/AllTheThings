@@ -391,6 +391,101 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					["cost"] = { { "i", 174288, 3 } },	-- 3x Breath of Everlasting Spirit
 				}),
 			}),
+			n(VISIONS_OF_NZOTH, {
+				n(QUESTS, sharedData({
+					["isDaily"] = true,
+				}, {
+					-- Lesser Visions dailies
+					q(58168, {	-- A Dark, Glaring Reality
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["coords"] = {
+							{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
+							{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+						},
+						["maps"] = {
+							1570,	-- Vale of Eternal Blossoms, Vision
+							1571,	-- Uldum, Vision
+						},
+						["g"] = {
+							i(173810),	-- Darksight Potion (QI!)
+							i(174288, {	-- Breath of Everlasting Spirit (once a week)
+								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+							}),
+						},
+					}),
+					q(58151, {	-- Minions of N'Zoth
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["coords"] = {
+							{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
+							{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+						},
+						["maps"] = {
+							1570,	-- Vale of Eternal Blossoms, Vision
+							1571,	-- Uldum, Vision
+						},
+						["g"] = {
+							i(174288, {	-- Breath of Everlasting Spirit (once a week)
+								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+							}),
+						},
+					}),
+					q(58167, {	-- Preventative Measures
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["coords"] = {
+							{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
+							{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+						},
+						["maps"] = {
+							1570,	-- Vale of Eternal Blossoms, Vision
+							1571,	-- Uldum, Vision
+						},
+						["g"] = {
+							i(174288, {	-- Breath of Everlasting Spirit (once a week)
+								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+							}),
+						},
+					}),
+					q(58156, {	-- Vanquishing the Darkness
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors (is it really a prereq? should it be on all lesser visions quest?)
+						["coords"] = {
+							{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
+							{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+						},
+						["maps"] = {
+							1570,	-- Vale of Eternal Blossoms, Vision
+							1571,	-- Uldum, Vision
+						},
+						["g"] = {
+							i(174288, {	-- Breath of Everlasting Spirit (once a week)
+								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+							}),
+						},
+					}),
+					q(58155, {	-- A Hand in the Dark
+						["provider"] = { "n", 160252 },
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors (is it really a prereq? should it be on all lesser visions quest?)
+						["coords"] = {
+							{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
+							{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
+						},
+						["maps"] = {
+							1570,	-- Vale of Eternal Blossoms, Vision
+							1571,	-- Uldum, Vision
+						},
+						["g"] = {
+							i(174288, {	-- Breath of Everlasting Spirit (once a week)
+								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+							}),
+						},
+					}),
+				})),
+				n(ZONE_DROPS, {
+					i(169294),	-- Resilient Soul
+					i(173888),	-- Shard of Self Sacrifice \\ Lingering Soul
+					i(173293),	-- Vial of Self Preservation
+				}),
+			}),
 			n(PROFESSIONS, {
 				prof(FISHING, {
 					i(174456, {	-- Gloop (PET!)
@@ -398,94 +493,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					}),
 				}),
 			}),
-			n(QUESTS, sharedData({
-				["isDaily"] = true,
-			}, {
-				-- Lesser Visions dailies
-				q(58168, {	-- A Dark, Glaring Reality
-					["provider"] = { "n", 160252 },	-- Blacktalon Agent
-					["coords"] = {
-						{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
-						{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
-					},
-					["maps"] = {
-						1570,	-- Vale of Eternal Blossoms, Vision
-						1571,	-- Uldum, Vision
-					},
-					["g"] = {
-						i(173810),	-- Darksight Potion (QI!)
-						i(174288, {	-- Breath of Everlasting Spirit (once a week)
-							["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
-						}),
-					},
-				}),
-				q(58151, {	-- Minions of N'Zoth
-					["provider"] = { "n", 160252 },	-- Blacktalon Agent
-					["coords"] = {
-						{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
-						{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
-					},
-					["maps"] = {
-						1570,	-- Vale of Eternal Blossoms, Vision
-						1571,	-- Uldum, Vision
-					},
-					["g"] = {
-						i(174288, {	-- Breath of Everlasting Spirit (once a week)
-							["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
-						}),
-					},
-				}),
-				q(58167, {	-- Preventative Measures
-					["provider"] = { "n", 160252 },	-- Blacktalon Agent
-					["coords"] = {
-						{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
-						{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
-					},
-					["maps"] = {
-						1570,	-- Vale of Eternal Blossoms, Vision
-						1571,	-- Uldum, Vision
-					},
-					["g"] = {
-						i(174288, {	-- Breath of Everlasting Spirit (once a week)
-							["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
-						}),
-					},
-				}),
-				q(58156, {	-- Vanquishing the Darkness
-					["provider"] = { "n", 160252 },	-- Blacktalon Agent
-					["sourceQuest"] = 56771,	-- Time-Lost Warriors (is it really a prereq? should it be on all lesser visions quest?)
-					["coords"] = {
-						{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
-						{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
-					},
-					["maps"] = {
-						1570,	-- Vale of Eternal Blossoms, Vision
-						1571,	-- Uldum, Vision
-					},
-					["g"] = {
-						i(174288, {	-- Breath of Everlasting Spirit (once a week)
-							["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
-						}),
-					},
-				}),
-				q(58155, {	-- A Hand in the Dark
-					["provider"] = { "n", 160252 },
-					["sourceQuest"] = 56771,	-- Time-Lost Warriors (is it really a prereq? should it be on all lesser visions quest?)
-					["coords"] = {
-						{ 56.6, 31.7, NZOTH_ASSAULT_ULDUM },
-						{ 84.2, 51.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
-					},
-					["maps"] = {
-						1570,	-- Vale of Eternal Blossoms, Vision
-						1571,	-- Uldum, Vision
-					},
-					["g"] = {
-						i(174288, {	-- Breath of Everlasting Spirit (once a week)
-							["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
-						}),
-					},
-				}),
-			})),
 			n(SPECIAL, {
 				i(175140, {	-- All-Seeing Eyes (TOY!)
 					["cost"] = {

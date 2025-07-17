@@ -45,11 +45,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(89514, {	-- Worldsoul: Horrific Visions Revisited
 					["timeline"] = { ADDED_11_1_5 },
 				}),
+				q(91855, {	-- Worldsoul: K'aresh World Quests
+					["timeline"] = { ADDED_11_2_0 },
+				}),
 				q(82509),	-- Worldsoul: Nerub-ar Palace [LFR]
 				q(82659),	-- Worldsoul: Nerub-ar Palace [N]
 				q(82510),	-- Worldsoul: Nerub-ar Palace [H]
 				q(89502, {	-- Worldsoul: Nightfall
 					["timeline"] = { ADDED_11_1_5 },
+				}),
+				q(91052, {	-- Worldsoul: Overcharged Delves
+					["timeline"] = { ADDED_11_1_7 },
 				}),
 				q(82490),	-- Worldsoul: Priory of the Sacred Flame [N]
 				q(82499),	-- Worldsoul: Priory of the Sacred Flame [H]

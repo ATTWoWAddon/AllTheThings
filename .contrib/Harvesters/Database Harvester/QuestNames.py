@@ -6,6 +6,7 @@ from packaging import version
 from ThingTypes import (
     DATAS_FOLDER,
     DELIMITER,
+    FLAVOR_FOLDERS
 )
 
 
@@ -101,23 +102,23 @@ def get_available_expansions(patch: str) -> dict[str, str]:
             "Retail": "",
         }
         print("WoD-DF :", patch)
-    elif version.parse(patch) < version.parse("11.1.5.99999"):
+    elif version.parse(patch) < version.parse("11.1.7.99999"):
         expansion_dict = {
             "Retail": "",
             "PTR": "ptr",
             "PTR2": "ptr-2",
             #"BETA": "beta",
         }
-        print("11.0.0-11.1.0 :", patch)
-    elif version.parse(patch) < version.parse("11.1.7.99999"):
+        print("11.0.0-11.1.7 :", patch)
+    elif version.parse(patch) < version.parse("11.2.0.99999"):
         expansion_dict = {
             #"PTR": "ptr",
             "PTR2": "ptr-2",
         }
-        print("11.1.5 :", patch)
+        print("11.2.0 :", patch)
     return expansion_dict
 
-def get_quest_names() -> None:
+def get_quest_names(flavor: str) -> None:
     """This function gives questIDs names based on wowhead"""
     expansion_dict: dict[str, str] = {
         "Retail": "",
@@ -141,6 +142,7 @@ def get_quest_names() -> None:
     missing_path = Path(
         DATAS_FOLDER,
         "00 - Missing DB",
+        f"{FLAVOR_FOLDERS[flavor]}",
         "MissingQuests.txt",
     )
     with open(missing_path, "r") as missing_file:

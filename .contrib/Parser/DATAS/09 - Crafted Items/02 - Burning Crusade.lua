@@ -1874,7 +1874,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		},
 	}),
 	prof(TAILORING, {
-		-- #if BEFORE 4.0.1.12984
+		-- #if BEFORE CATA
 		prof(26798, {	-- Mooncloth Tailoring
 			["description"] = "These items can only be crafted by Tailorings that have completed the Becoming a Mooncloth Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
 			["groups"] = {
@@ -1900,7 +1900,98 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			},
 		}),
 		-- #endif
-		category(1000, {	-- Materials
+		n(ARMOR, {
+			i(21867),	-- Arcanoweave Boots
+			i(21866),	-- Arcanoweave Bracers
+			i(21868),	-- Arcanoweave Robe
+			i(24267),	-- Battlecast Hood
+			i(24263),	-- Battlecast Pants
+			applyclassicphase(TBC_PHASE_TWO, i(30038, {["timeline"] = {ADDED_2_1_0}})),	-- Belt of Blasting
+			applyclassicphase(TBC_PHASE_TWO, i(30036, {["timeline"] = {ADDED_2_1_0}})),	-- Belt of the Long Road
+			i(24257),	-- Black Belt of Knowledge
+			i(24251),	-- Blackstrike Bracers
+			applyclassicphase(TBC_PHASE_TWO, i(30037, {["timeline"] = {ADDED_2_1_0}})),	-- Boots of Blasting
+			applyclassicphase(TBC_PHASE_TWO, i(30035, {["timeline"] = {ADDED_2_1_0}})),	-- Boots of the Long Road
+			i(24250),	-- Bracers of Havok
+			applyclassicphase(TBC_PHASE_THREE, i(32586, {["timeline"] = {ADDED_2_1_0}})),	-- Bracers of Nimble Thought
+			i(30831),	-- Cloak of Arcane Evasion
+			i(24253),	-- Cloak of Eternity
+			i(24252),	-- Cloak of the Black Void
+			i(30837),	-- Flameheart Bracers
+			i(30838),	-- Flameheart Gloves
+			i(30839),	-- Flameheart Vest
+			-- #if AFTER CATA
+			i(21870),	-- Frozen Shadoweave Boots
+			i(21871),	-- Frozen Shadoweave Robe
+			i(21869),	-- Frozen Shadoweave Shoulders
+			-- #endif
+			i(24256),	-- Girdle of Ruination
+			applyclassicphase(TBC_PHASE_FIVE, i(34367, {["timeline"] = {ADDED_2_4_0}})),	-- Hands of Eternal Light
+			i(21860),	-- Imbued Netherweave Boots
+			i(21859),	-- Imbued Netherweave Pants
+			i(21861),	-- Imbued Netherweave Robe
+			i(21862),	-- Imbued Netherweave Tunic
+			i(24260),	-- Manaweave Cloak
+			applyclassicphase(TBC_PHASE_THREE, i(32587, {["timeline"] = {ADDED_2_1_0}})),	-- Mantle of Nimble Thought
+			i(21850),	-- Netherweave Belt
+			i(21853),	-- Netherweave Boots
+			i(21849),	-- Netherweave Bracers
+			i(21851),	-- Netherweave Gloves
+			i(21852),	-- Netherweave Pants
+			i(21854),	-- Netherweave Robe
+			i(21855),	-- Netherweave Tunic
+			applyclassicphase(TBC_PHASE_THREE, i(32420, {["timeline"] = {ADDED_2_1_0}})),	-- Night's End
+			-- #if AFTER CATA
+			i(21873),	-- Primal Mooncloth Belt
+			i(21875),	-- Primal Mooncloth Robe
+			i(21874),	-- Primal Mooncloth Shoulders
+			-- #endif
+			i(24258),	-- Resolute Cape
+			applyclassicphase(TBC_PHASE_FIVE, i(34365, {["timeline"] = {ADDED_2_4_0}})),	-- Robe of Eternal Light
+			i(21863),	-- Soulcloth Gloves
+			i(21864),	-- Soulcloth Shoulders
+			i(21865),	-- Soulcloth Vest
+			applyclassicphase(TBC_PHASE_THREE, i(32392, {["timeline"] = {ADDED_2_1_0}})),	-- Soulguard Bracers
+			applyclassicphase(TBC_PHASE_THREE, i(32390, {["timeline"] = {ADDED_2_1_0}})),	-- Soulguard Girdle
+			applyclassicphase(TBC_PHASE_THREE, i(32389, {["timeline"] = {ADDED_2_1_0}})),	-- Soulguard Leggings
+			applyclassicphase(TBC_PHASE_THREE, i(32391, {["timeline"] = {ADDED_2_1_0}})),	-- Soulguard Slippers
+			-- #if AFTER CATA
+			i(21846),	-- Spellfire Belt
+			i(21847),	-- Spellfire Gloves
+			i(21848),	-- Spellfire Robe
+			-- #endif
+			i(24266),	-- Spellstrike Hood
+			i(24262),	-- Spellstrike Pants
+			applyclassicphase(TBC_PHASE_FIVE, i(34366, {["timeline"] = {ADDED_2_4_0}})),	-- Sunfire Handwraps
+			applyclassicphase(TBC_PHASE_FIVE, i(34364, {["timeline"] = {ADDED_2_4_0}})),	-- Sunfire Robe
+			applyclassicphase(TBC_PHASE_THREE, i(32585, {["timeline"] = {ADDED_2_1_0}})),	-- Swiftheal Mantle
+			applyclassicphase(TBC_PHASE_THREE, i(32584, {["timeline"] = {ADDED_2_1_0}})),	-- Swiftheal Wraps
+			i(24249),	-- Unyielding Bracers
+			i(24255),	-- Unyielding Girdle
+			i(24259),	-- Vengeance Wrap
+			i(24254),	-- White Remedy Cape
+			i(24264),	-- Whitemend Hood
+			i(24261),	-- Whitemend Pants
+		}),
+		n(ARMOR_ENCHANTMENTS, {
+			i(24276),	-- Golden Spellthread
+			i(24273),	-- Mystic Spellthread
+			i(24274),	-- Runic Spellthread
+			i(24275),	-- Silver Spellthread
+		}),
+		filter(BAGS, {
+			i(24270),	-- Bag of Jewels
+			i(21872),	-- Ebon Shadowbag
+			i(21843),	-- Imbued Netherweave Bag
+			i(38225, {["timeline"] = {ADDED_2_4_3}}),	-- Mycah's Botanical Bag
+			i(21841),	-- Netherweave Bag
+			i(21876),	-- Primal Mooncloth Bag
+			i(21858),	-- Spellfire Bag
+		}),
+		filter(MISC, {
+			i(24268),	-- Netherweave Net
+		}),
+		filter(REAGENTS, {
 			i(21842),	-- Bolt of Imbued Netherweave
 			i(21840),	-- Bolt of Netherweave
 			i(21844),	-- Bolt of Soulcloth
@@ -1929,125 +2020,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(24271, {	-- Spellcloth
 				["maps"] = { NETHERSTORM },
 			}),
-		}),
-		category(1001, {	-- Spellthreads
-			i(24276),	-- Golden Spellthread
-			i(24273),	-- Mystic Spellthread
-			i(24274),	-- Runic Spellthread
-			i(24275),	-- Silver Spellthread
-		}),
-		category(1002, {	-- Bags
-			i(24270),	-- Bag of Jewels
-			i(21872),	-- Ebon Shadowbag
-			i(21843),	-- Imbued Netherweave Bag
-			i(38225),	-- Mycah's Botanical Bag
-			i(21841),	-- Netherweave Bag
-			i(21876),	-- Primal Mooncloth Bag
-			i(21858),	-- Spellfire Bag
-		}),
-		category(1003, {	-- Hats & Hoods
-			i(24267),	-- Battlecast Hood
-			i(24266),	-- Spellstrike Hood
-			i(24264),	-- Whitemend Hood
-		}),
-		category(1004, {	-- Shoulders
-			-- #if AFTER 4.0.1.12984
-			i(21869),	-- Frozen Shadoweave Shoulders
-			-- #endif
-			applyclassicphase(TBC_PHASE_THREE, i(32587)),	-- Mantle of Nimble Thought
-			-- #if AFTER 4.0.1.12984
-			i(21874),	-- Primal Mooncloth Shoulders
-			-- #endif
-			i(21864),	-- Soulcloth Shoulders
-			applyclassicphase(TBC_PHASE_THREE, i(32585)),	-- Swiftheal Mantle
-		}),
-		category(1005, {	-- Robes & Tunics
-			i(21868),	-- Arcanoweave Robe
-			i(30839),	-- Flameheart Vest
-			-- #if AFTER 4.0.1.12984
-			i(21871),	-- Frozen Shadoweave Robe
-			-- #endif
-			i(21861),	-- Imbued Netherweave Robe
-			i(21862),	-- Imbued Netherweave Tunic
-			i(21854),	-- Netherweave Robe
-			i(21855),	-- Netherweave Tunic
-			-- #if AFTER 4.0.1.12984
-			i(21875),	-- Primal Mooncloth Robe
-			-- #endif
-			applyclassicphase(TBC_PHASE_FIVE, i(34365)),	-- Robe of Eternal Light
-			i(21865),	-- Soulcloth Vest
-			-- #if AFTER 4.0.1.12984
-			i(21848),	-- Spellfire Robe
-			-- #endif
-			applyclassicphase(TBC_PHASE_FIVE, i(34364)),	-- Sunfire Robe
-		}),
-		category(1006, {	-- Bracers
-			i(21866),	-- Arcanoweave Bracers
-			i(24251),	-- Blackstrike Bracers
-			i(24250),	-- Bracers of Havok
-			applyclassicphase(TBC_PHASE_THREE, i(32586)),	-- Bracers of Nimble Thought
-			i(30837),	-- Flameheart Bracers
-			i(21849),	-- Netherweave Bracers
-			applyclassicphase(TBC_PHASE_THREE, i(32392)),	-- Soulguard Bracers
-			applyclassicphase(TBC_PHASE_THREE, i(32584)),	-- Swiftheal Wraps
-			i(24249),	-- Unyielding Bracers
-		}),
-		category(1008, {	-- Gloves
-			i(30838),	-- Flameheart Gloves
-			applyclassicphase(TBC_PHASE_FIVE, i(34367)),	-- Hands of Eternal Light
-			i(21851),	-- Netherweave Gloves
-			i(21863),	-- Soulcloth Gloves
-			-- #if AFTER 4.0.1.12984
-			i(21847),	-- Spellfire Gloves
-			-- #endif
-			applyclassicphase(TBC_PHASE_FIVE, i(34366)),	-- Sunfire Handwraps
-		}),
-		category(1007, {	-- Belts
-			applyclassicphase(TBC_PHASE_TWO, i(30038)),	-- Belt of Blasting
-			applyclassicphase(TBC_PHASE_TWO, i(30036)),	-- Belt of the Long Road
-			i(24257),	-- Black Belt of Knowledge
-			i(24256),	-- Girdle of Ruination
-			i(21850),	-- Netherweave Belt
-			-- #if AFTER 4.0.1.12984
-			i(21873),	-- Primal Mooncloth Belt
-			-- #endif
-			applyclassicphase(TBC_PHASE_THREE, i(32390)),	-- Soulguard Girdle
-			-- #if AFTER 4.0.1.12984
-			i(21846),	-- Spellfire Belt
-			-- #endif
-			i(24255),	-- Unyielding Girdle
-		}),
-		category(1009, {	-- Pants
-			i(24263),	-- Battlecast Pants
-			i(21859),	-- Imbued Netherweave Pants
-			i(21852),	-- Netherweave Pants
-			applyclassicphase(TBC_PHASE_THREE, i(32389)),	-- Soulguard Leggings
-			i(24262),	-- Spellstrike Pants
-			i(24261),	-- Whitemend Pants
-		}),
-		category(1010, {	-- Boots
-			i(21867),	-- Arcanoweave Boots
-			applyclassicphase(TBC_PHASE_TWO, i(30037)),	-- Boots of Blasting
-			applyclassicphase(TBC_PHASE_TWO, i(30035)),	-- Boots of the Long Road
-			-- #if AFTER 4.0.1.12984
-			i(21870),	-- Frozen Shadoweave Boots
-			-- #endif
-			i(21860),	-- Imbued Netherweave Boots
-			i(21853),	-- Netherweave Boots
-			applyclassicphase(TBC_PHASE_THREE, i(32391)),	-- Soulguard Slippers
-		}),
-		category(1011, {	-- Cloaks
-			i(30831),	-- Cloak of Arcane Evasion
-			i(24253),	-- Cloak of Eternity
-			i(24252),	-- Cloak of the Black Void
-			i(24260),	-- Manaweave Cloak
-			applyclassicphase(TBC_PHASE_THREE, i(32420)),	-- Night's End
-			i(24258),	-- Resolute Cape
-			i(24259),	-- Vengeance Wrap
-			i(24254),	-- White Remedy Cape
-		}),
-		category(1012, {	-- Nets
-			i(24268),	-- Netherweave Net
 		}),
 	}),
 }))));

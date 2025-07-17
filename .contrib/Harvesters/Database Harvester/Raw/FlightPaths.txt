@@ -2744,3 +2744,16 @@
 2998@@@Demolition Dome
 2999@@@The Gallagio
 3000@@@Gutterville, The Ringing Deeps
+11.1.7.60520
+3005@@@Quest Path 10165: 0.x Generic - Taxi - Cross Continent Load Spline Test (LAS)
+3122@@@Quest Path 10677: 11.1.7 Lorewalking - Xal - Q2 - Vehicle - Summon - stormsong to drustvar - Quest Taxi Version (LAS)
+11.2.0.61476
+3026@@@Quest Path 10254: 11.2 Raid - Manaforge - Zone - Traversal - Gateway Taxi 01 - Pipes to Hub - TJS
+3029@@@Tazavesh, K'aresh
+3030@@@Eco-Dome: Rhovan, K'aresh
+3031@@@The Oasis, K'aresh
+3032@@@Shan'dorah, K'aresh
+3033@@@Shadow Point, K'aresh
+3034@@@Overlook Zo'shuul, K'aresh
+3035@@@Hosaas Rest, K'aresh
+3111@@@Quest Path 10562: 11.2 Raid - Manaforge - Zone - Traversal - Dimensius Forward Left (Quest/Event) - SRC

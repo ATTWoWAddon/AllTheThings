@@ -47,7 +47,9 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 46804,	-- Fashion History and a Philosophy of Style
 						["repeatable"] = true,
 						["requireSkill"] = TAILORING,
-						["cost"] = { { "i", 147281, 1 }, },	-- 1x Nights with the Nightborne
+						["g"] = {
+							i(147281),	-- Nights with the Nightborne (QI!)
+						},
 					}),
 					q(46682, {	-- Drapings of the Ancients
 						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
@@ -55,7 +57,10 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 46678,	-- The Legend of the Threads
 						["repeatable"] = true,
 						["requireSkill"] = TAILORING,
-						["cost"] = { { "i", 146684, 100 }, },	-- 100x Ancient Imbued Silkweave Armor
+						["g"] = {
+							i(146685), -- Ancient Imbued Silkweave (QI!)
+							i(146684), -- Ancient Imbued Silkweave Armor (QI!)
+						},
 					}),
 					q(46680, {	-- The Thread of Starlight
 						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
@@ -74,7 +79,10 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 46678,	-- The Legend of the Threads
 						["repeatable"] = true,
 						["requireSkill"] = TAILORING,
-						["cost"] = { { "i", 146678, 1 }, },	-- 1x Vandros' Shadoweave Robes
+						["g"] = {
+							i(146679),	-- Shadow Thread (QI!)
+							i(146678),	-- Vandros' Shadoweave Robes (QI!)
+						},
 					}),
 					q(46681, {	-- The Thread of Souls
 						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard

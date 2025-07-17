@@ -97,6 +97,8 @@ root(ROOTS.ExpansionFeatures,
 									i(118598),	-- Sun Sproutling (PET!)
 									i(113558),	-- Weebomination (PET!)
 								}),
+								--
+								i(116378),	-- Mark of Pet MAstery (QI!)
 							},
 						}),
 						q(37645, {	-- Mastering the Menagerie (H)
@@ -114,6 +116,8 @@ root(ROOTS.ExpansionFeatures,
 									i(113558),	-- Weebomination (PET!)
 									i(119434),	-- Albino Chimaeraling (PET!)
 								}),
+								--
+								i(116378),	-- Mark of Pet MAstery (QI!)
 							},
 						}),
 						q(36423, {	-- Pets Versus Pests

@@ -687,17 +687,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["groups"] = {
 			-- #endif
 					n(10184, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- Onyxia
-						ach(684, {	-- Onyxia's Lair (Level 60)
-							-- #if BEFORE WRATH
-							["sourceQuests"] = {
-								7635,	-- A Proper String
-								7509,	-- The Forging of Quel'Serrar
-								8620,	-- The Only Prescription
-								7495,	-- Victory for the Alliance
-								7490,	-- Victory for the Horde
-							},
-							-- #endif
-						}),
+						ach(684),	-- Onyxia's Lair (Level 60)
 						i(18423, {	-- Head of Onyxia (A)
 							["races"] = ALLIANCE_ONLY,
 						}),

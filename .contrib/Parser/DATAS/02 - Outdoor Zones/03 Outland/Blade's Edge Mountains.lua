@@ -42,10 +42,12 @@ root(ROOTS.Zones, {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, achWithRep(896, FACTION_ORGILA)),	-- A Quest a Day Keeps the Ogres at Bay
-					explorationAch(865),	-- Explore Blade's Edge Mountains
+					ach(865),	-- Explore Blade's Edge Mountains
 					ach(1193, {	-- On the Blade's Edge
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- CRIEVE NOTE: The storyline criteria doesn't appear to exist in Retail anymore? [TODO: Add them or fix automation?]
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							-- Sylvanaar (A)
 							10518,	-- Planting the Banner
@@ -71,47 +73,6 @@ root(ROOTS.Zones, {
 							-- Ruuan Weald (A+H)
 							10748,	-- Maxnar Must Die!
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 86,
-						-- #endif
-						-- #else
-						-- crit(1, {	-- Sylvanaar (A)
-						-- 	["races"] = ALLIANCE_ONLY,
-						-- 	["sourceQuests"] = {
-						-- 		10518,	-- Planting the Banner
-						-- 		10504,	-- The Bladespire Ogres
-						-- 	},
-						-- }),
-						-- crit(1, {	-- Thunderlord Stronghold (H)
-						-- 	["races"] = HORDE_ONLY,
-						-- 	["sourceQuest"] = 10505,	-- The Bloodmaul Ogres (need to verify horde quests, might be more needed)
-						-- }),
-						-- crit(2, {	-- Toshley's Station (A)
-						-- 	["races"] = ALLIANCE_ONLY,
-						-- 	["sourceQuests"] = {
-						-- 		10594,	-- Gauging the Resonant Frequency
-						-- 		10671,	-- More than a Pound of Flesh
-						-- 		10675,	-- Show Them Gnome Mercy!
-						-- 	},
-						-- }),
-						-- crit(2, {	-- Reunion (H)
-						-- 	["races"] = HORDE_ONLY,
-						-- 	["sourceQuest"] = 10742,	-- Showdown
-						-- }),
-						-- crit(3, {	-- The Gronn Threat (A)
-						-- 	["races"] = ALLIANCE_ONLY,
-						-- 	["sourceQuest"] = 10806,	-- Showdown
-						-- }),
-						-- crit(3, {	-- The Mok'Nathal (H)
-						-- 	["races"] = HORDE_ONLY,
-						-- 	["sourceQuest"] = 10867,	-- There Can Be Only One Response
-						-- }),
-						-- crit(4, {	-- Ruuan Weald (A+H)
-						-- 	["sourceQuest"] = 10748,	-- Maxnar Must Die!
-						-- }),
 						-- #endif
 					}),
 				}),
@@ -1532,10 +1493,13 @@ root(ROOTS.Zones, {
 								["provider"] = { "i", 31656 },	-- Lesser Nether Drake Spirit
 								["cr"] = 21004,	-- Lesser Nether Drake
 							}),
+							i(31437),	-- Medicinal Drake Essence
 							i(31712),	-- Mok'Nathal Champion's Shoulderguards
 							i(31711),	-- Nether-Empowered Footgear
 							i(31714),	-- Nether Drake Wristguards
 							i(31713),	-- Ritualist's Helm
+							--
+							i(31663),	-- Spirit Calling Totems (QI!)
 						},
 					}),
 					q(10511, {	-- Strange Brew
@@ -2108,7 +2072,13 @@ root(ROOTS.Zones, {
 							i(31441),	-- Clocktock's Jumpers
 							i(31440),	-- Devolved Drake Girdle
 							i(31438),	-- Fizit's Mantle of Drake Hunting
+							i(31437),	-- Medicinal Drake Essence
 							i(31439),	-- Precise Gloves of Alacrity
+							--
+							i(30782),	-- Adolescent Nether Drake Essence (QI!)
+							i(30783),	-- Mature Nether Drake Essence (QI!)
+							i(30743),	-- Proto-Nether Drake Essence (QI!)
+							i(30742),	-- Temporal Phase Modulator (QI!)
 						},
 					}),
 					q(10747, {	-- Whelps of the Wyrmcult
@@ -3085,7 +3055,7 @@ root(ROOTS.Zones, {
 							{ "i", 32569, 50 },	-- Apexis Shard
 						},
 					})),
-					n(20889, {	-- Ethereum Prisoner (Group Energy Ball)
+					o(184595, {	-- Ethereum Stasis Chamber
 						["description"] = "You can use either of the listed keys to open an Ethereum Stasis Chamber.",
 						["coords"] = {
 							{ 51.2, 11.6, BLADES_EDGE_MOUNTAINS },	-- Ethereum Prisoner (Group Energy Ball)
@@ -3093,6 +3063,7 @@ root(ROOTS.Zones, {
 							{ 49.6, 21.2, BLADES_EDGE_MOUNTAINS },	-- Ethereum Prisoner (Group Energy Ball)
 							{ 52.6, 20.0, BLADES_EDGE_MOUNTAINS },	-- Ethereum Prisoner (Group Energy Ball)
 						},
+						["cr"] = 20889,	-- Ethereum Prisoner (Group Energy Ball)
 						["cost"] = {
 							{ "i", 32773, 1 },	-- Bash'ir's Skeleton Key
 							{ "i", 29750, 1 },	-- Ethereum Stasis Chamber Key

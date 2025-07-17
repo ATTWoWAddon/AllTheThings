@@ -11,6 +11,7 @@ KALUAK_FISHING_DERBY_HEADER = createHeader({
 		de = "Angelwettstreit der Kalu'ak",
 		fr = "Le tournoi de pêche kalu'ak",
 		it = "La gara di pesca dei Kalu'ak",
+		mx = "Competición de pesca Kalu'ak",
 		ko = "칼루아크 낚시 대회",
 		pt = "Campeonato de Pesca dos Kalu'ak",
 		ru = "Калуакское рыбоборье",

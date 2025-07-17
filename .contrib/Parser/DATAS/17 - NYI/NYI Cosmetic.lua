@@ -86,7 +86,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			i(194318),	-- Book of Ancient Lore
 			i(193069),	-- Climber's Pack
 			i(198385),	-- Draconian Garden Pick
@@ -293,20 +293,10 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(206285),	-- Vagabond's Grassy Cape
 				i(206296),	-- Vagabond's Grassy Hood
 
-				------ Vagabond's Plum Threads ------
-				iensemble(206323),	-- Ensemble: Vagabond's Plum Threads
-				i(206279),	-- Vagabond's Plum Cape
-				i(206290),	-- Vagabond's Plum Hood
-
 				------ Wanderer's Grassy Trappings ------
 				iensemble(206340),	-- Ensemble: Wanderer's Grassy Trappings
 				i(206318),	-- Wanderer's Grassy Cloak
 				i(206307),	-- Wanderer's Grassy Scarf
-
-				------ Wanderer's Plum Trappings ------
-				iensemble(206334),	-- Ensemble: Wanderer's Plum Trappings
-				i(206312),	-- Wanderer's Plum Cloak
-				i(206301),	-- Wanderer's Plum Scarf
 			}),
 			n(WEAPONS, {
 				i(190561),	-- Crystalblade of Shifting Magic
@@ -319,7 +309,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			n(ARMOR, {
 				i(210856),	-- Trader's Faded Sarong
 				i(210851),	-- Trader's Grassy Sarong
-				i(210859),	-- Trader's Plum Sarong
 			}),
 			n(WEAPONS, {
 				i(190875),	-- Chilled Touch of the Condemned
@@ -339,7 +328,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190847),	-- Deathmantle Assassin's Barb
 				i(190090),	-- Dessicated Bouquet
 				i(212625),	-- Dueler's Grassy Shoulder Cape
-				i(212618),	-- Dueler's Plum Shoulder Cape
 				i(190893),	-- Jeweled Valkyrion Cape
 				i(190688),	-- Silvered Helm of Righteousness
 				i(212705),	-- Spring Reveler's Cornsilk Attire
@@ -380,11 +368,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			}),
 		})),
 
-		-- 10.2.5
-		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
-			i(213155),	-- Dark Ranger General's Quiver
-		})),
-
 		-- 10.2.6
 		expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_6 } }, {
 			i(217635),	-- Dream Raider's Azure Razor
@@ -402,7 +385,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 			------ Single Pieces ------
 			i(217373),	-- Frenzied Hat of the Dark Depths
-			i(217374),	-- Frenzied Hat of the Shallows
 		})),
 
 		-- 10.2.7
@@ -415,22 +397,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				q(82270),	-- Ensemble: Copper Diver Suit
 				i(222959),	-- Ensemble: Tropical Sunrise Swimwear
 				q(82231),	-- Ensemble: Tropical Sunrise Swimwear
-				------ Black Tropical Set ------
-				i(221540),	-- Ensemble: Black Tropical
-				q(82137),	-- Ensemble: Black Tropical
-				i(221847),	-- Ensemble: Black Tropical Swimwear
-				q(82198),	-- Ensemble: Black Tropical Swimwear
-				i(221826),	-- Black Tropical Airy Sandals
-				i(221825),	-- Black Tropical Beads
-				i(221524),	-- Black Tropical Floater
-				i(221822),	-- Black Tropical Halter Top
-				i(221523),	-- Black Tropical Sandals
-				i(221827),	-- Black Tropical Sash
-				i(221520),	-- Black Tropical Shirt
-				i(221824),	-- Black Tropical Skirt
-				i(221828),	-- Black Tropical Sunshade
-				i(221521),	-- Black Tropical Trunks
-				i(221522),	-- Black Tropical Wristwraps
 
 				------ Green Diver Set ------
 				i(223245),	-- Ensemble: Green Diver Suit
@@ -458,7 +424,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			n(ARMOR, {
 				i(224869),	-- Earthen Drape
 				i(224169),	-- Stonebound Tabard
@@ -550,12 +516,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(230091),	-- Prowler's Aquatic Mask
 				i(230050),	-- Prowler's Aquatic Shoulder Cape
 
-				------ Prowler's Brick Set ------
-				i(230171),	-- Ensemble: Prowler's Brick Headgear
-				i(230061),	-- Prowler's Brick Cowl
-				i(230081),	-- Prowler's Brick Mask
-				i(230039),	-- Prowler's Brick Shoulder Cape
-
 				------ Prowler's Cloudy Set ------
 				i(230168),	-- Ensemble: Prowler's Cloudy Headgear
 				i(230058),	-- Prowler's Cloudy Cowl
@@ -605,10 +565,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233238),	-- Azure Pack of Lunar Explosives
 				i(233183),	-- Banded Aquatic War Slippers
 				i(233166),	-- Banded Aquatic War Wraps
-				i(233170),	-- Banded Azure War Slippers
-				i(233153),	-- Banded Azure War Wraps
-				i(233176),	-- Banded Brick War Slippers
-				i(233159),	-- Banded Brick War Wraps
 				i(233179),	-- Banded Carrot War Slippers
 				i(233162),	-- Banded Carrot War Wraps
 				i(233173),	-- Banded Cloudy War Slippers
@@ -625,8 +581,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233163),	-- Banded Rosy War Wraps
 				i(233184),	-- Banded Snowy War Slippers
 				i(233167),	-- Banded Snowy War Wraps
-				i(233182),	-- Banded Violet War Slippers
-				i(233165),	-- Banded Violet War Wraps
 				i(234710),	-- Earthen Artisan Kilt
 				i(234712),	-- Earthen Explorer's Kilt
 				i(234711),	-- Earthen Peacekeeper Warkilt
@@ -635,10 +589,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233237),	-- Lively Pack of Lunar Explosives
 				i(233110),	-- Long Aquatic War Skirt
 				i(233149),	-- Long Aquatic War Skirt and Leg Wraps
-				i(233097),	-- Long Azure War Skirt
-				i(233136),	-- Long Azure War Skirt and Leg Wraps
-				i(233103),	-- Long Brick War Skirt
-				i(233142),	-- Long Brick War Skirt and Leg Wraps
 				i(233106),	-- Long Carrot War Skirt
 				i(233145),	-- Long Carrot War Skirt and Leg Wraps
 				i(233100),	-- Long Cloudy War Skirt
@@ -655,8 +605,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233146),	-- Long Rosy War Skirt and Leg Wraps
 				i(233111),	-- Long Snowy War Skirt
 				i(233150),	-- Long Snowy War Skirt and Leg Wraps
-				i(233109),	-- Long Violet War Skirt
-				i(233148),	-- Long Violet War Skirt and Leg Wraps
 				i(234059),	-- Lunar Festival Attire - Purple
 				i(234060),	-- Lunar Festival Attire - Teal
 				i(234043),	-- Lunar Festival Belt - Purple
@@ -672,10 +620,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(232924),	-- Sailor's Belt
 				i(233093),	-- Short Aquatic War Skirt
 				i(233132),	-- Short Aquatic War Skirt and Leg Wraps
-				i(233080),	-- Short Azure War Skirt
-				i(233117),	-- Short Azure War Skirt and Leg Wraps
-				i(233086),	-- Short Brick War Skirt
-				i(233125),	-- Short Brick War Skirt and Leg Wraps
 				i(233089),	-- Short Carrot War Skirt
 				i(233128),	-- Short Carrot War Skirt and Leg Wraps
 				i(233083),	-- Short Cloudy War Skirt
@@ -692,8 +636,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(233129),	-- Short Rosy War Skirt and Leg Wraps
 				i(233094),	-- Short Snowy War Skirt
 				i(233133),	-- Short Snowy War Skirt and Leg Wraps
-				i(233092),	-- Short Violet War Skirt
-				i(233131),	-- Short Violet War Skirt and Leg Wraps
 				i(234982),	-- Spare Sailor's Short-Sleeved Tunic
 				i(233272),	-- Steam-Powered Cobalt Clock Cloak
 				i(233275),	-- Steam-Powered Violet Clock Cloak
@@ -755,11 +697,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			n(ARMOR, {
 				i(231559),	-- [DNT] Experimental Gobbo-Flyer v3
 				i(235034),	-- Vigilante's Aquatic Mask
-				i(235020),	-- Vigilante's Azure Mask
-				i(235026),	-- Vigilante's Brick Mask
-				i(235029),	-- Vigilante's Carrot Mask
 				i(235023),	-- Vigilante's Cloudy Mask
-				i(235032),	-- Vigilante's Crimson Mask
 				i(235028),	-- Vigilante's Faded Mask
 				i(235022),	-- Vigilante's Grassy Mask
 				i(235027),	-- Vigilante's Lively Mask
@@ -767,7 +705,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(235030),	-- Vigilante's Rosy Mask
 				i(235035),	-- Vigilante's Snowy Mask
 				i(235036),	-- Vigilante's Sunny Mask
-				i(235033),	-- Vigilante's Violet Mask
 				i(234601),	-- Wings of the Icy Rose Monarch
 			}),
 			n(SETS, {
@@ -884,6 +821,14 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(234376),	-- Vessel of Sacred Flame
 				i(234362),	-- Visage of Hidden Stars
 				i(234368),	-- Worshipper's Poniard
+			}),
+		})),
+
+		-- 11.1.5
+		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
+			n(ARMOR, {
+				-- 11.1.5.60568
+				i(239003),	-- Feathered Mantle of the Guardian
 			}),
 		})),
 	}),

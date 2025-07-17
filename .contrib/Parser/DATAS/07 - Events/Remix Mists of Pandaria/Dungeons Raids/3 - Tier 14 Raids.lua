@@ -25,7 +25,7 @@ end
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	n(RAIDS, {
 		n(TIER_14_RAIDS, {
-			mapped(d(DIFFICULTY.RAID.FINDER, bubbleDown({ ["modID"] = 0 }, {
+			mapped(d(DIFFICULTY.LEGACY_RAID.FINDER, bubbleDown({ ["modID"] = 0 }, {
 				n(ARMOR, {
 					filter(CLOTH, {
 						-- MAGE
@@ -493,22 +493,22 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					n(ACHIEVEMENTS, {
 						ach(19946, {	-- Raid Finder: Mogu'shan Vaults
 							crit(65677, {	-- The Stone Guard
-								["_encounter"] = { 679, DIFFICULTY.RAID.FINDER },
+								["_encounter"] = { 679, DIFFICULTY.LEGACY_RAID.FINDER },
 							}),
 							crit(65678, {	-- Feng the Accursed
-								["_encounter"] = { 689, DIFFICULTY.RAID.FINDER },
+								["_encounter"] = { 689, DIFFICULTY.LEGACY_RAID.FINDER },
 							}),
 							crit(65679, {	-- Gara'jal the Spiritbinder
-								["_encounter"] = { 682, DIFFICULTY.RAID.FINDER },
+								["_encounter"] = { 682, DIFFICULTY.LEGACY_RAID.FINDER },
 							}),
 							crit(65681, {	-- The Spirit Kings
-								["_encounter"] = { 687, DIFFICULTY.RAID.FINDER },
+								["_encounter"] = { 687, DIFFICULTY.LEGACY_RAID.FINDER },
 							}),
 							crit(65680, {	-- Elegon
-								["_encounter"] = { 726, DIFFICULTY.RAID.FINDER },
+								["_encounter"] = { 726, DIFFICULTY.LEGACY_RAID.FINDER },
 							}),
 							crit(65682, {	-- Will of the Emperor
-								["_encounter"] = { 677, DIFFICULTY.RAID.FINDER },
+								["_encounter"] = { 677, DIFFICULTY.LEGACY_RAID.FINDER },
 							}),
 						}),
 						ach(19947, {	-- Mogu'shan Vaults
@@ -552,7 +552,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							}),
 						}),
 					}),
-					d(DIFFICULTY.RAID.FINDER, {
+					d(DIFFICULTY.LEGACY_RAID.FINDER, {
 						header(HEADERS.Achievement, 6458, {	-- Guardians of Mogu'shan
 							e(679, {	-- The Stone Guard
 								["crs"] = {
@@ -668,22 +668,22 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					n(ACHIEVEMENTS, {
 						ach(19949, {	-- Raid Finder: Heart of Fear
 							crit(65696, {	-- Imperial Vizier Zor'lok
-								["_encounter"] = { 745, DIFFICULTY.RAID.FINDER },
+								["_encounter"] = { 745, DIFFICULTY.LEGACY_RAID.FINDER },
 							}),
 							crit(65695, {	-- Blade Lord Ta'yak
-								["_encounter"] = { 744, DIFFICULTY.RAID.FINDER },
+								["_encounter"] = { 744, DIFFICULTY.LEGACY_RAID.FINDER },
 							}),
 							crit(65697, {	-- Garalon
-								["_encounter"] = { 713, DIFFICULTY.RAID.FINDER },
+								["_encounter"] = { 713, DIFFICULTY.LEGACY_RAID.FINDER },
 							}),
 							crit(65698, {	-- Wind Lord Mel'jarak
-								["_encounter"] = { 741, DIFFICULTY.RAID.FINDER },
+								["_encounter"] = { 741, DIFFICULTY.LEGACY_RAID.FINDER },
 							}),
 							crit(65699, {	-- Amber-Shaper Un'sok
-								["_encounter"] = { 737, DIFFICULTY.RAID.FINDER },
+								["_encounter"] = { 737, DIFFICULTY.LEGACY_RAID.FINDER },
 							}),
 							crit(65700, {	-- Grand Empress Shek'zeer
-								["_encounter"] = { 743, DIFFICULTY.RAID.FINDER },
+								["_encounter"] = { 743, DIFFICULTY.LEGACY_RAID.FINDER },
 							}),
 						}),
 						ach(19950, {	-- Heart of Fear
@@ -727,7 +727,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							}),
 						}),
 					}),
-					d(DIFFICULTY.RAID.FINDER, {
+					d(DIFFICULTY.LEGACY_RAID.FINDER, {
 						header(HEADERS.Achievement, 6718, {	-- The Dread Approach
 							e(745, {	-- Imperial Vizier Zor'lok
 								["crs"] = { 62980 },	-- Imperial Vizier Zor'lok
@@ -804,16 +804,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					n(ACHIEVEMENTS, {
 						ach(19952, {	-- Raid Finder: Terrace of Endless Spring
 							crit(65713, {	-- Protectors of the Endless
-								["_encounter"] = { 683, DIFFICULTY.RAID.FINDER },
+								["_encounter"] = { 683, DIFFICULTY.LEGACY_RAID.FINDER },
 							}),
 							crit(65714, {	-- Tsulong
-								["_encounter"] = { 742, DIFFICULTY.RAID.FINDER },
+								["_encounter"] = { 742, DIFFICULTY.LEGACY_RAID.FINDER },
 							}),
 							crit(65715, {	-- Lei Shi
-								["_encounter"] = { 729, DIFFICULTY.RAID.FINDER },
+								["_encounter"] = { 729, DIFFICULTY.LEGACY_RAID.FINDER },
 							}),
 							crit(65716, {	-- Sha of Fear
-								["_encounter"] = { 709, DIFFICULTY.RAID.FINDER },
+								["_encounter"] = { 709, DIFFICULTY.LEGACY_RAID.FINDER },
 							}),
 						}),
 						ach(19953, {	-- Terrace of Endless Spring
@@ -845,7 +845,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							}),
 						}),
 					}),
-					d(DIFFICULTY.RAID.FINDER, {
+					d(DIFFICULTY.LEGACY_RAID.FINDER, {
 						header(HEADERS.Achievement, 6689, {	-- Terrace of Endless Spring
 							e(683, {	-- Protectors of the Endless
 								["crs"] = {

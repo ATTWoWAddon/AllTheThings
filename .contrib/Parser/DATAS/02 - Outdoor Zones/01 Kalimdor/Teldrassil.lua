@@ -47,12 +47,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 2079,	-- Ilthalaine
 							["sourceQuest"] = 28714,	-- Fel Moss Corruption
 							["coords"] = {
-								-- #if AFTER 5.0.4
+								-- #if AFTER MOP
 								-- Every once in a while he changes the location, stays in place for an undisclosed amount of time and changes back.
 								{ 45.6, 74.5, SHADOWGLEN },
 								{ 46.3, 73.5, SHADOWGLEN },
 								-- #else
-								{ 58.6, 44.2, TELDRASSIL },
+								{ 58.0, 39.2, TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -73,6 +73,50 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
+						}),
+						q(26946, {	-- A Rogue's Advantage (Night Elf)
+							["qg"] = 3594,	-- Frahun Shadewhisper <Rogue Trainer>
+							["sourceQuest"] = 3118,	-- Encrypted Sigil
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 49.2, 53.2, SHADOWGLEN },
+								-- #else
+								{ 58.9, 33.9, TELDRASSIL },
+								-- #endif
+							},
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+							["races"] = { NIGHTELF },
+							["classes"] = { ROGUE },
+							["groups"] = {
+								-- #if BEFORE MOP
+								-- #else
+								objective(2, {	-- 0/3 Practice using Eviscerate
+									["provider"] = { "n", 44614 },	-- Training Dummy
+								}),
+								-- #endif
+							},
+						}),
+						q(26947, {	-- A Woodman's Training (Night Elf)
+							["qg"] = 3596,	-- Ayanna Everstride <Hunter Trainer>
+							["sourceQuest"] = 3117,	-- Etched Sigil
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 49.2, 60.5, SHADOWGLEN },
+								-- #else
+								{ 58.9, 35.7, TELDRASSIL },
+								-- #endif
+							},
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+							["races"] = { NIGHTELF },
+							["classes"] = { HUNTER },
+							["groups"] = {
+								-- #if BEFORE MOP
+								-- #else
+								objective(2, {	-- 0/5 Practice Steady Shot
+									["provider"] = { "n", 44614 },	-- Training Dummy
+								}),
+								-- #endif
+							},
 						}),
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77568, {	-- A Hunter's Strength
@@ -110,6 +154,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						})),
 						-- #endif
+						q(26940, {	-- Arcane Missiles [Cata] / Frost Nova [MoP+] (Night Elf)
+							["qg"] = 43006, -- Rhyanda <Mage Trainer>
+							["sourceQuest"] = 26841,	-- Forbidden Sigil
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 47.4, 59.7, SHADOWGLEN },
+								-- #else
+								{ 58.4, 35.5, TELDRASSIL },
+								-- #endif
+							},
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+							["races"] = { NIGHTELF },
+							["classes"] = { MAGE },
+							["groups"] = {
+								-- #if BEFORE MOP
+								-- #else
+								objective(2, {	-- 0/2 Practice using Frost Nova [MoP+]
+									["provider"] = { "n", 44614 },	-- Training Dummy
+								}),
+								-- #endif
+							},
+						}),
 						q(31168, {	-- Calligraphed Sigil
 							["providers"] = {
 								{ "n", 2077 },	-- Melithar Staghelm
@@ -154,7 +220,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								28713,	-- The Balance of Nature
 							},
 							["coords"] = {
-								-- #if AFTER 5.0.4
+								-- #if AFTER MOP
 								{ 45.9, 72.9, SHADOWGLEN },
 								-- #else
 								{ 58.0, 38.8, TELDRASSIL },
@@ -169,7 +235,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 										{ "o", 195074 },	-- Melithar's Stolen Bags
 									},
 									["coords"] = {
-										-- #if AFTER 5.0.4
+										-- #if AFTER MOP
 										{ 33.3, 77.4, SHADOWGLEN },
 										-- #else
 										{ 54.4, 39.5, TELDRASSIL },
@@ -187,7 +253,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 7627 },	-- Dolanaar Delivery
 							},
 							["coords"] = {
-								-- #if AFTER 5.0.4
+								-- #if AFTER MOP
 								{ 54.6, 84.7, SHADOWGLEN },
 								-- #elseif AFTER CATA
 								{ 60.2, 41.6, TELDRASSIL },
@@ -201,9 +267,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["providers"] = {
 								-- #if AFTER CATA
 								{ "n", 2077 },	-- Melithar Staghelm
-								-- #else
-								{ "n", 2079 },	-- Conservator Ilthalaine
 								-- #endif
+								{ "n", 2079 },	-- Conservator Ilthalaine
 								{ "i", 9551 },	-- Encrypted Sigil
 							},
 							["sourceQuests"] = {
@@ -214,7 +279,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #endif
 							},
 							["coords"] = {
-								-- #if AFTER 5.0.4
+								-- #if AFTER MOP
 								{ 45.8, 73, SHADOWGLEN },
 								-- #elseif AFTER CATA
 								{ 58, 38.8, TELDRASSIL },
@@ -230,9 +295,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["providers"] = {
 								-- #if AFTER CATA
 								{ "n", 2077 },	-- Melithar Staghelm
-								-- #else
-								{ "n", 2079 },	-- Conservator Ilthalaine
 								-- #endif
+								{ "n", 2079 },	-- Conservator Ilthalaine
 								{ "i", 9567 },	-- Etched Sigil
 							},
 							["sourceQuests"] = {
@@ -243,7 +307,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #endif
 							},
 							["coords"] = {
-								-- #if AFTER 5.0.4
+								-- #if AFTER MOP
 								{ 45.8, 73, SHADOWGLEN },
 								-- #elseif AFTER CATA
 								{ 58, 38.8, TELDRASSIL },
@@ -259,12 +323,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 2079,	-- Ilthalaine
 							["sourceQuest"] = 28713,	-- The Balance of Nature
 							["coords"] = {
-								-- #if AFTER 5.0.4
+								-- #if AFTER MOP
 								-- Every once in a while he changes the location, stays in place for an undisclosed amount of time and changes back.
 								{ 45.6, 74.5, SHADOWGLEN },
 								{ 46.3, 73.5, SHADOWGLEN },
 								-- #else
-								{ 58.6, 44.2, TELDRASSIL },
+								{ 58.0, 39.2, TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -285,13 +349,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								}),
 							},
 						}),
+						q(26841, {	-- Forbidden Sigil
+							["providers"] = {
+								{ "n", 2077 },	-- Melithar Staghelm
+								{ "n", 2079 },	-- Conservator Ilthalaine
+								{ "i", 60400 },	-- Forbidden Sigil
+							},
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 45.9, 72.9, SHADOWGLEN },
+								-- #else
+								{ 58.0, 38.8, TELDRASSIL },
+								-- #endif
+							},
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+							["races"] = { NIGHTELF },
+							["classes"] = { MAGE },
+						}),
 						q(3119, {	-- Hallowed Sigil
 							["providers"] = {
 								-- #if AFTER CATA
 								{ "n", 2077 },	-- Melithar Staghelm
-								-- #else
-								{ "n", 2079 },	-- Conservator Ilthalaine
 								-- #endif
+								{ "n", 2079 },	-- Conservator Ilthalaine
 								{ "i", 9557 },	-- Hallowed Sigil
 							},
 							["sourceQuests"] = {
@@ -302,7 +382,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #endif
 							},
 							["coords"] = {
-								-- #if AFTER 5.0.4
+								-- #if AFTER MOP
 								{ 45.8, 73, SHADOWGLEN },
 								-- #elseif AFTER CATA
 								{ 58, 38.8, TELDRASSIL },
@@ -316,7 +396,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(5622, {	-- In Favor of Elune
 							["qg"] = 3595,	-- Shanda <Priest Trainer>
-							["coord"] = { 59.2, 40.6, TELDRASSIL },
+							["coord"] = { 59.2, 40.4, TELDRASSIL },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = { NIGHTELF },
 							["classes"] = { PRIEST },
@@ -327,7 +407,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 49479,	-- Dentaria Silverglade
 							["sourceQuest"] = 28723,	-- Priestess of the Moon
 							["coords"] = {
-								-- #if AFTER 5.0.4
+								-- #if AFTER MOP
 								{ 42.5, 50.5, SHADOWGLEN },
 								-- #else
 								{ 57.2, 33.2, TELDRASSIL },
@@ -391,18 +471,49 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								i(10656),	-- Barkmail Vest
 							},
 						}),
-						q(26949, {	-- Learning the Word
-							["qg"] = 3595,	-- Shanda
+						q(26945, {	-- Learning New Techniques (Night Elf)
+							["qg"] = 3593,	-- Alyissia <Warrior Trainer>
+							["sourceQuest"] = 3116,	-- Simple Sigil
 							["coords"] = {
-								-- #if AFTER 5.0.4
-								{ 47.6, 59.6, SHADOWGLEN },
+								-- #if AFTER MOP
+								{ 49.2, 52.4, SHADOWGLEN },
 								-- #else
-								{ 59.2, 40.4, TELDRASSIL },
+								{ 58.8, 33.7, TELDRASSIL },
+								-- #endif
+							},
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+							["races"] = { NIGHTELF },
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								-- #if BEFORE MOP
+								-- #else
+								objective(2, {	-- 0/1 Practice Charge
+									["provider"] = { "n", 44614 },	-- Training Dummy
+								}),
+								-- #endif
+							},
+						}),
+						q(26949, {	-- Healing for the Wounded [Cata] / Learning the Word [MoP+] (Night Elf)
+							["qg"] = 3595,	-- Shanda <Priest Trainer>
+							["sourceQuest"] = 3119,	-- Hallowed Sigil
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 47.6, 59.4, SHADOWGLEN },
+								-- #else
+								{ 58.4, 35.5, TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { NIGHTELF },
 							["classes"] = { PRIEST },
+							["groups"] = {
+								-- #if BEFORE MOP
+								-- #else
+								objective(2, {	-- 0/5 Practice Shadow Word: Pain [MoP+]
+									["provider"] = { "n", 44614 },	-- Training Dummy
+								}),
+								-- #endif
+							},
 						}),
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77574, {	-- Meditation on Elune
@@ -430,7 +541,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["sourceQuest"] = 28729,	-- Teldrassil: Crown of Azeroth
 							["coords"] = {
-								-- #if AFTER 5.0.4
+								-- #if AFTER MOP
 								{ 42.5, 50.5, SHADOWGLEN },
 								-- #else
 								{ 57.2, 33.2, TELDRASSIL },
@@ -454,7 +565,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								28715,	-- Demonic Thieves
 							},
 							["coords"] = {
-								-- #if AFTER 5.0.4
+								-- #if AFTER MOP
 								-- Every once in a while he changes the location, stays in place for an undisclosed amount of time and changes back.
 								{ 45.6, 74.5, SHADOWGLEN },
 								{ 46.3, 73.5, SHADOWGLEN },
@@ -483,6 +594,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						})),
 						-- #endif
+						q(26948, {	-- Rejuvenating Touch [Cata] / Moonfire [MoP+] (Night Elf)
+							["qg"] = 3597,	-- Mardant Strongoak <Druid Trainer>
+							["sourceQuest"] = 3120,	-- Verdant Sigil
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 46.6, 56.6, SHADOWGLEN },
+								-- #else
+								{ 58.2, 34.8, TELDRASSIL },
+								-- #endif
+							},
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+							["races"] = { NIGHTELF },
+							["classes"] = { DRUID },
+							["groups"] = {
+								-- #if BEFORE MOP
+								-- #else
+								objective(2, {	-- 0/1 Practice Moonfire [MoP+]
+									["provider"] = { "n", 44614 },	-- Training Dummy
+								}),
+								-- #endif
+							},
+						}),
 						-- #if NOT ANYCLASSIC
 						q(5629, {	-- Returning Home [Teldrassil]
 							["qg"] = 3600,	-- Laurna Morninglight <Priest Trainer>
@@ -534,7 +667,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 49480,	-- Tarindrella (mobileNPC)
 							["sourceQuest"] = 28727,	-- Vile Touch
 							["coords"] = {
-								-- #if AFTER 5.0.4
+								-- #if AFTER MOP
 								{ 38.8, 10.4, SHADOWGLEN },
 								{ 45.2, 29.0, 58 },	-- Shadowthread Cave
 								-- #else
@@ -548,9 +681,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["providers"] = {
 								-- #if AFTER CATA
 								{ "n", 2077 },	-- Melithar Staghelm
-								-- #else
-								{ "n", 2079 },	-- Conservator Ilthalaine
 								-- #endif
+								{ "n", 2079 },	-- Conservator Ilthalaine
 								{ "i", 9545 },	-- Simple Sigil
 							},
 							["sourceQuests"] = {
@@ -561,7 +693,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #endif
 							},
 							["coords"] = {
-								-- #if AFTER 5.0.4
+								-- #if AFTER MOP
 								{ 45.8, 73, SHADOWGLEN },
 								-- #elseif AFTER CATA
 								{ 58, 38.8, TELDRASSIL },
@@ -577,7 +709,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 49479,	-- Dentaria Silverglade
 							["sourceQuest"] = 28728,	-- Signs of Things to Come
 							["coords"] = {
-								-- #if AFTER 5.0.4
+								-- #if AFTER MOP
 								{ 42.5, 50.5, SHADOWGLEN },
 								-- #else
 								{ 57.2, 33.2, TELDRASSIL },
@@ -592,7 +724,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 										{ "i", 5185 },	-- Crystal Phial
 									},
 									["coords"] = {
-										-- #if AFTER 5.0.4
+										-- #if AFTER MOP
 										{ 50, 28, SHADOWGLEN },
 										-- #else
 										{ 59, 28, TELDRASSIL },
@@ -608,7 +740,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["sourceQuest"] = 28730,	-- Precious Waters
 							["coords"] = {
-								-- #if AFTER 5.0.4
+								-- #if AFTER MOP
 								{ 47.2, 55.9, SHADOWGLEN },
 								-- #else
 								{ 58.4, 34.4, TELDRASSIL },
@@ -635,12 +767,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(28713, {	-- The Balance of Nature
 							["qg"] = 2079,	-- Ilthalaine
 							["coords"] = {
-								-- #if AFTER 5.0.4
+								-- #if AFTER MOP
 								-- Every once in a while he changes the location, stays in place for an undisclosed amount of time and changes back.
 								{ 45.6, 74.5, SHADOWGLEN },
 								{ 46.3, 73.5, SHADOWGLEN },
 								-- #else
-								{ 58.6, 44.2, TELDRASSIL },
+								{ 58.0, 39.2, TELDRASSIL },
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3 },
@@ -693,7 +825,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 49479,	-- Dentaria Silverglade
 							["sourceQuest"] = 28724,	-- Iverron's Antidote
 							["coords"] = {
-								-- #if AFTER 5.0.4
+								-- #if AFTER MOP
 								{ 42.5, 50.5, SHADOWGLEN },
 								-- #else
 								{ 57.2, 33.2, TELDRASSIL },
@@ -731,9 +863,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["providers"] = {
 								-- #if AFTER CATA
 								{ "n", 2077 },	-- Melithar Staghelm
-								-- #else
-								{ "n", 2079 },	-- Conservator Ilthalaine
 								-- #endif
+								{ "n", 2079 },	-- Conservator Ilthalaine
 								{ "i", 9580 },	-- Verdant Sigil
 							},
 							["sourceQuests"] = {
@@ -744,7 +875,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #endif
 							},
 							["coords"] = {
-								-- #if AFTER 5.0.4
+								-- #if AFTER MOP
 								{ 45.8, 73, SHADOWGLEN },
 								-- #elseif AFTER CATA
 								{ 58, 38.8, TELDRASSIL },
@@ -760,7 +891,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 49480,	-- Tarindrella (mobileNPC)
 							["sourceQuest"] = 28726,	-- Webwood Corruption
 							["coords"] = {
-								-- #if AFTER 5.0.4
+								-- #if AFTER MOP
 								-- Approximate center location of the cave. Real location on the quest being offered to you depends on where you killed the last creature of previous quest.
 								{ 39.7, 15.1, SHADOWGLEN },
 								{ 46.8, 44.4, 58 },	-- Shadowthread Cave
@@ -774,7 +905,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								objective(1, {	-- 0/12 Webwood Spider slain
 									["provider"] = { "n", 1994 },	-- Githyiss the Vile
 									["coords"] = {
-										-- #if AFTER 5.0.4
+										-- #if AFTER MOP
 										{ 45.8, 91.0, SHADOWGLEN },
 										-- #else
 										{ 56.8, 26.6, TELDRASSIL },
@@ -792,7 +923,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["qg"] = 49480,	-- Tarindrella (mobileNPC)
 							["sourceQuest"] = 28725,	-- The Woodland Protector
 							["coords"] = {
-								-- #if AFTER 5.0.4
+								-- #if AFTER MOP
 								-- Although Shadowglen is technically correct, Tarindrella appears only after you enter the Cave at which point she becomes a companion and starts following you around. If you walk out of it, she disappears.
 								{ 38.9, 30.4, SHADOWGLEN },
 								{ 44.5, 92.0, 58 },	-- Shadowthread Cave
@@ -806,7 +937,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								objective(1, {	-- 0/12 Webwood Spider slain
 									["provider"] = { "n", 1986 },	-- Webwood Spider
 									["coords"] = {
-										-- #if AFTER 5.0.4
+										-- #if AFTER MOP
 										{ 45.8, 91.0, SHADOWGLEN },
 										-- #else
 										{ 57.6, 29.0, TELDRASSIL },
@@ -862,7 +993,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			n(ACHIEVEMENTS, {
-				explorationAch(842),	-- Explore Teldrassil
+				ach(842),	-- Explore Teldrassil
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",
@@ -913,8 +1044,43 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			petbattles({
+				q(31555, {	-- Got one! (Valeena)
+					["qg"] = 63070,	-- Valeena
+					["sourceQuest"] = 31826,	-- Level Up!
+					["coord"] = { 55.2, 51.2, TELDRASSIL },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31552, {	-- Learning the Ropes (Valeena)
+					["qg"] = 63070,	-- Valeena
+					["coord"] = { 55.2, 51.2, TELDRASSIL },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31826, {	-- Level Up! (Valeena)
+					["qg"] = 63070,	-- Valeena
+					["sourceQuest"] = 31553,	-- On The Mend
+					["coord"] = { 55.2, 51.2, TELDRASSIL },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31553, {	-- On The Mend (Valeena)
+					["qg"] = 63070,	-- Valeena
+					["sourceQuest"] = 31552,	-- Learning the Ropes
+					["coord"] = { 55.2, 51.2, TELDRASSIL },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Battle Pets Healed
+							["provider"] = { "n", 10051 },	-- Seriadne <Stable Master>
+							["coord"] = { 56.2, 52.0, TELDRASSIL },
+						}),
+					},
+				}),
+			}),
 			-- #if SEASON_OF_DISCOVERY
-			spell(921, {	-- Pickpocketing
+			header(HEADERS.Spell, 921, {	-- Pickpocketing
 				["classes"] = { ROGUE },
 				["groups"] = {
 					applyclassicphase(SOD_PHASE_ONE, i(208749, {	-- Gnarlpine Stash Key

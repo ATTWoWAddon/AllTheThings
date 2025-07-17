@@ -65,6 +65,87 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				i(165694),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 2] (RECIPE!)
 				i(165695),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 3] (RECIPE!)
 			}),
+			d(DIFFICULTY.RAID.MULTI.ALL, {
+				-- e(2344, {	-- Champion of the Light	-- 2333 Horde
+				-- 	["crs"] = {
+				-- 		144683,	-- Ra'wani Kanae (A)
+				-- 		144680,	-- Frida Ironbellows (H)
+				-- 	},
+				-- 	["g"] = {
+				-- 	},
+				-- }),
+				-- e(2323, {	-- Jadefire Masters	-- 2341 Horde
+				-- 	["crs"] = {
+				-- 		144692,	-- Anathos Firecaller (A)
+				-- 		144691,	-- Ma'ra Grimfang (A)
+				-- 		144693,	-- Manceroy Flamefist (H)
+				-- 		144690,	-- Mestrah <The Illuminated> (H)
+				-- 	},
+				-- 	["g"] = {
+				-- 	},
+				-- }),
+				-- e(2340, {	-- Grong, the Revenant	-- 2325 Horde
+				-- 	["crs"] = {
+				-- 		144638,	-- Grong the Revenant (A)
+				-- 		148117,	-- Grong the Revenant (H)
+				-- 	},
+				-- 	["g"] = {
+				-- 	},
+				-- }),
+				-- e(2342, {	-- Opulence
+				-- 	["crs"] = {
+				-- 		145261,	-- Opulence
+				-- 		145274,	-- Yalat's Bulwark
+				-- 		145273,	-- The Hand of In'zashi
+				-- 	},
+				-- 	["g"] = {
+				-- 	},
+				-- }),
+				e(2330, {	-- Loa Council / Conclave of the Chosen
+					["crs"] = {
+						144941,	-- Akunda's Aspect
+						144767,	-- Gonk's Aspect
+						144963,	-- Kimbul's Aspect
+						144747,	-- Pa'ku's Aspect
+					},
+					["g"] = {
+						i(165846),	-- Child of Pa'ku (PET!)
+						i(165847),	-- Thunder Lizard Runt (PET!)
+					},
+				}),
+				e(2335, {	-- King Rastakhan
+					["crs"] = {
+						145644,	-- Bwonsamdi
+						145616,	-- King Rastakhan
+						146492,	-- Phantom of Rage
+						146322,	-- Siegebreaker Roka
+					},
+					["g"] = {
+						i(165696),	-- Formula: Enchanted Tiki Mask (RECIPE!)
+						ig(168129),	-- Essence of the Troll Dynasty
+					},
+				}),
+				e(2334, {	-- High Tinker Mekkatorque
+					["crs"] = { 144796 },	-- High Tinker Mekkatorque
+					["g"] = {
+						i(166276),	-- Schematic: Unstable Temporal Time Shifter (RECIPE!)
+					},
+				}),
+				-- e(2337, cr(146256, {	-- Stormwall Blockade / Laminaria
+				-- 	["crs"] = {
+				-- 		146253,	-- Brother Joseph
+				-- 		146251,	-- Sister Katherine
+				-- 	},
+				-- 	["g"] = {
+				-- 	},
+				-- })),
+				e(2343, {	-- Lady Jaina Proudmoore
+					["crs"] = { 146409 },	-- Lady Jaina Proudmoore
+					["g"] = {
+						i(166582),	-- Technique: Glyph of the Tides (RECIPE!)
+					},
+				}),
+			}),
 			d(DIFFICULTY.RAID.LFR, {	-- Queue NPC
 				["crs"] = {
 					177193,	-- Kiku
@@ -241,8 +322,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							a(i(166418)),	-- Crest of Pa'ku (Alliance)
 							h(i(165581)),	-- Crest of Pa'ku (Horde)
 							i(165579),	-- Kimbul's Razor Claw
-							i(165846),	-- Child of Pa'ku (PET!)
-							i(165847),	-- Thunder Lizard Runt (PET!)
 						},
 					}),
 					e(2335, {	-- King Rastakhan
@@ -272,8 +351,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							i(165567),	-- Seal of the Zandalari Empire
 							i(165577),	-- Bwonsamdi's Bargain
 							i(165578),	-- Mirror of Entwined Fate
-							i(165696),	-- Formula: Enchanted Tiki Mask (RECIPE!)
-							i(168129),	-- Essence of the Troll Dynasty
 						},
 					}),
 				}),
@@ -300,7 +377,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							i(165522),	-- Mech-Jockey Grips
 							i(165580),	-- Ramping Amplitude Gigavolt Engine
 							i(165572),	-- Variable Intensity Gigavolt Oscillating Reactor
-							i(166276),	-- Schematic: Unstable Temporal Time Shifter (RECIPE!)
 						},
 					}),
 					e(2337, cr(146256, {	-- Stormwall Blockade / Laminaria
@@ -344,7 +420,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 								["achievementID"] = 13291,	-- Victory of Death
 							}),
 							i(166518),	-- G.M.O.D. (MOUNT!  Moved from High Tinker Mekkatorque in 2.26.19 hotfix, change to LFR only)
-							i(166582),	-- Technique: Glyph of the Tides (RECIPE!)
 							i(165604),	-- Daelin Proudmoore's Saber
 							i(165583),	-- Fogbreaker, Light of the Sea
 							i(165823),	-- Glaciercrest Helm
@@ -410,8 +485,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 					["g"] = {
 						ach(13325),	-- Walk the Dinosaur
-						i(165846),	-- Child of Pa'ku (PET!)
-						i(165847),	-- Thunder Lizard Runt (PET!)
 					},
 				}),
 				e(2335, {	-- King Rastakhan
@@ -430,7 +503,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					["g"] = {
 						ach(13401),	-- I Got Next!
 						i(166518),	-- G.M.O.D. (MOUNT!)
-						i(166276),	-- Schematic: Unstable Temporal Time Shifter (RECIPE!)
 					},
 				}),
 				e(2337, cr(146256, {	-- Stormwall Blockade / Laminaria
@@ -446,7 +518,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					["crs"] = { 146409 },	-- Lady Jaina Proudmoore
 					["g"] = {
 						ach(13410),	-- Snow Fun Allowed
-						i(166582),	-- Technique: Glyph of the Tides (RECIPE!)
 					},
 				}),
 			}),
@@ -593,8 +664,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						i(165567),	-- Seal of the Zandalari Empire
 						i(165577),	-- Bwonsamdi's Bargain
 						i(165578),	-- Mirror of Entwined Fate
-						i(165696),	-- Formula: Enchanted Tiki Mask (RECIPE!)
-						i(168129),	-- Essence of the Troll Dynasty
 					},
 				}),
 				e(2334, {	-- High Tinker Mekkatorque
@@ -795,8 +864,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						i(165567),	-- Seal of the Zandalari Empire
 						i(165577),	-- Bwonsamdi's Bargain
 						i(165578),	-- Mirror of Entwined Fate
-						i(165696),	-- Formula: Enchanted Tiki Mask (RECIPE!)
-						i(168129),	-- Essence of the Troll Dynasty
 					},
 				}),
 				e(2334, {	-- High Tinker Mekkatorque
@@ -1012,8 +1079,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						i(165567),	-- Seal of the Zandalari Empire
 						i(165577),	-- Bwonsamdi's Bargain
 						i(165578),	-- Mirror of Entwined Fate
-						i(165696),	-- Formula: Enchanted Tiki Mask (RECIPE!)
-						i(168129),	-- Essence of the Troll Dynasty
 					},
 				}),
 				e(2334, {	-- High Tinker Mekkatorque

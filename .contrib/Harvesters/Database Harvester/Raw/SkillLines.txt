@@ -349,6 +349,8 @@
 999@@@NO PLAYERS
 5.5.0.60481
 1305@@@Direhorn
+5.5.0.61411
+183@@@Skills
 6.0.1.18179
 101@@@Racial - Dwarf
 124@@@Racial - Tauren

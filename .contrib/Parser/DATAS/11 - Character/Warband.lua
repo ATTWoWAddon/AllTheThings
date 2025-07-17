@@ -9,9 +9,9 @@ WARBAND = createHeader({
 	},
 });
 
-WARBAND_SCENES = createHeader({
-	readable = "Warband Scenes",
-	icon = 6124644,
+CAMPSITES = createHeader({
+	readable = "Campsites",
+	icon = [[~_.asset("Category_Campsites")]],
 	text = {
 		en = [[~ACCOUNT_LEVEL_SCENE]],
 	},
@@ -67,14 +67,14 @@ root(ROOTS.Character, n(WARBAND, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 
 			},
 		}),
 	})),
-	n(WARBAND_SCENES, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
-		ws(1, {	-- Adventurer's Rest (WS!)
+	n(CAMPSITES, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
+		campsite(1, {	-- Adventurer's Rest (CS!)
 			["description"] = "Granted to all warbands as default.",
 		}),
-		ws(4, {	-- Ohn'ahran Overlook (WS!)
+		campsite(4, {	-- Ohn'ahran Overlook (CS!)
 			["description"] = "Granted to all warbands.",
 		}),
-		ws(29, {	-- Randomize From Favorites (WS!)
+		campsite(29, {	-- Randomize From Favorites (CS!)
 			["description"] = "Granted to all warbands.",
 		}),
 	})),

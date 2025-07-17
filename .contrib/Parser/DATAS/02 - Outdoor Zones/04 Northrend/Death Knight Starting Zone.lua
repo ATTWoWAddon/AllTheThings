@@ -43,7 +43,7 @@ root(ROOTS.Zones, {
 						58902,	-- Defender of Azeroth (A)
 						58903,	-- Defender of Azeroth (H)
 					},
-					["coord"] = { 82.0, 46.3, 648 },	-- Acherus: The Ebon Hold (Lower Level)
+					["coord"] = { 82.0, 46.3, EASTERN_PLAGUELANDS },	-- Acherus: The Ebon Hold (Lower Level)
 					["description"] = "Use your Death Gate after finishing previous quest, Darion will be in Acherus.",
 					["timeline"] = { ADDED_8_3_0 },
 					["classes"] = { DEATHKNIGHT },

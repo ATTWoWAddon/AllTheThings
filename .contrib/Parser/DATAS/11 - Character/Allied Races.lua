@@ -53,10 +53,12 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		["u"] = REMOVED_FROM_GAME,
 	}),
 	race(DARKIRON, {
+
+		["description"] =
 		-- #if BEFORE 10.1.5
-		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Ready for War|r, The 8.0 War Campaign.",
+		"To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Ready for War|r, The 8.0 War Campaign.",
 		-- #else
-		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
+		"To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
 		-- #endif
 		["races"] = ALLIANCE_ONLY,
 		["g"] = {
@@ -405,10 +407,11 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		}),
 	})),
 	race(HIGHMOUNTAIN_TAUREN, {
+		["description"] =
 		-- #if BEFORE 10.1.5
-		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Ain't No Mountain High Enough|r, The Highmountain Storyline.",
+		"To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Ain't No Mountain High Enough|r, The Highmountain Storyline.",
 		-- #else
-		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
+		"To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
 		-- #endif
 		["races"] = HORDE_ONLY,
 		["g"] = {
@@ -542,10 +545,11 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		},
 	}),
 	race(KULTIRAN, {
+		["description"] =
 		-- #if BEFORE 10.1.5
-		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700A Nation United|r, The Kul Tiran Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",
+		"To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700A Nation United|r, The Kul Tiran Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",
 		-- #else
-		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
+		"To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
 		-- #endif
 		["races"] = ALLIANCE_ONLY,
 		["g"] = {
@@ -723,16 +727,23 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		},
 	}),
 	race(LIGHTFORGED, {
+		["description"] =
 		-- #if BEFORE 10.1.5
-		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700You Are Now Prepared!|r, The Argus Campaign.",
+		"To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700You Are Now Prepared!|r, The Argus Campaign.",
 		-- #else
-		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
+		"To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
 		-- #endif
 		["races"] = ALLIANCE_ONLY,
 		["g"] = {
 			q(49698, {	-- The Lightforged
 				["sourceQuests"] = { 50239 },	-- A Choice of Allies (A)
-				["provider"] = { "n", 126319 },	-- High Exarch Turalyon
+				["qgs"] = {
+					-- #if BEFORE 10.1.5
+					126319,	-- High Exarch Turalyon
+					-- #else
+					126332,	-- Aysa Cloudsinger
+					-- #endif
+				},
 				["coord"] = { 52.2, 13.6, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -774,10 +785,11 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		},
 	}),
 	race(MAGHAR, {
+		["description"] =
 		-- #if BEFORE 10.1.5
-		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Ready for War|r, The 8.0 War Campaign.",
+		"To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Ready for War|r, The 8.0 War Campaign.",
 		-- #else
-		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
+		"To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
 		-- #endif
 		["races"] = HORDE_ONLY,
 		["g"] = {
@@ -868,10 +880,11 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		},
 	}),
 	race(MECHAGNOME, {
+		["description"] =
 		-- #if BEFORE 10.1.5
-		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700The Mechagonian Threat|r, The Mechagon Storyline.",
+		"To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700The Mechagonian Threat|r, The Mechagon Storyline.",
 		-- #else
-		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
+		"To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
 		-- #endif
 		["races"] = ALLIANCE_ONLY,
 		["g"] = {
@@ -996,10 +1009,11 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		},
 	}),
 	race(NIGHTBORNE, {
+		["description"] =
 		-- #if BEFORE 10.1.5
-		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Insurrection|r, The 7.2 Suramar Campaign.",
+		"To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Insurrection|r, The 7.2 Suramar Campaign.",
 		-- #else
-		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
+		"To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
 		-- #endif
 		["races"] = HORDE_ONLY,
 		["g"] = {
@@ -1052,16 +1066,23 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		},
 	}),
 	race(VOIDELF, {
+		["description"] =
 		-- #if BEFORE 10.1.5
-		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700You Are Now Prepared!|r, The Argus Campaign.",
+		"To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700You Are Now Prepared!|r, The Argus Campaign.",
 		-- #else
-		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
+		"To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
 		-- #endif
 		["races"] = ALLIANCE_ONLY,
 		["maps"] = { TELOGRUS_RIFT },
 		["g"] = {
 			q(49787, {	-- The Ghostlands
-				["provider"] = { "n", 126321 },	-- Alleria Windrunner
+				["qgs"] = {
+					-- #if BEFORE 10.1.5
+					126321,	-- Alleria Windrunner
+					-- #else
+					126332,	-- Aysa Cloudsinger
+					-- #endif
+				},
 				["coord"] = { 52.2, 13.6, STORMWIND_CITY },
 				["sourceQuests"] = { 50239 },	-- A Choice of Allies (A)
 				["races"] = ALLIANCE_ONLY,
@@ -1098,10 +1119,11 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		},
 	}),
 	race(VULPERA, {
+		["description"] =
 		-- #if BEFORE 10.1.5
-		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Secrets in the Sands|r, The Vol'dun Storyline.",
+		"To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Secrets in the Sands|r, The Vol'dun Storyline.",
 		-- #else
-		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
+		"To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
 		-- #endif
 		["races"] = HORDE_ONLY,
 		["g"] = {
@@ -1209,6 +1231,11 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["coord"] = { 74.8, 63.0, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
+					i(171970),	-- Nazeshi Trident (QI!)
+					i(171971),	-- Nazeshi Mace (QI!)
+					i(171972),	-- Nazeshi Spear (QI!)
+					i(171973),	-- Nazeshi Staff (QI!)
+					i(171974),	-- Nazeshi Sword (QI!)
 					i(171968),	-- Nazeshi Weaponry (QI!)
 				},
 			}),
@@ -1309,10 +1336,11 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		},
 	}),
 	race(ZANDALARI, {
+		["description"] =
 		-- #if BEFORE 10.1.5
-		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700Zandalar Forever!|r, The Zandalari Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",
+		"To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700Zandalar Forever!|r, The Zandalari Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",
 		-- #else
-		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
+		"To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
 		-- #endif
 		["races"] = HORDE_ONLY,
 		["g"] = {

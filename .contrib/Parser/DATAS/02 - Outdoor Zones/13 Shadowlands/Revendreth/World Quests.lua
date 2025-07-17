@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(59643, {	-- It's Race Day in the Ramparts!
 				i(177239, {	-- Racing Permit (EC!)
-					["questID"] = 59690,
+					["customCollect"] = "SL_COV_VEN",
 				}),
 				ach(14765),	-- Ramparts Racer
 			}),
@@ -313,7 +313,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(59852, {	-- Tea Tales: Gubbins and Tubbins
 				i(177235, {	-- Tubbins's Lucky Teapot (EC!)
-					["questID"] = 59686,
+					["customCollect"] = "SL_COV_VEN",
 				}),
 			}),
 			q(59853),	-- Tea Tales: Lost Sybille

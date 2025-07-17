@@ -35,7 +35,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			o_repeated({	-- Seafarer's Cache
 				-- ["description"] = "Requires a character to have completed the Dipping a Toe quest at least once in order for chests to spawn on the map.",
 				["g"] = {
-					i(233501, {	-- Sandy Snapdragon Treat
+					i(233501, {	-- Sandy Snapdragon Treat (CI!)
 						["description"] = "You must have the Prismatic Snapdragon Mount before this can drop.",
 					}),
 					i(234231),	-- Technique: Glyph of the Admiral's Pistol Shot (RECIPE!)
@@ -92,21 +92,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["g"] = {
 					i(233831),	-- Minnow's Favorite Blade (COSMETIC!)
 				},
-			}),
-			o(463539, {	-- Pilfered Earthen Chest
-				-- Naga
-				["coord"] = { 68.4, 94.4, SIREN_ISLE },
-				["questID"] = 84527,
-				["isWeekly"] = true,
-				["g"] = {
-					i(229181),	-- Ordained Forge Maul
-				},
-			}),
-			o(493375, {	-- Rune-Sealed Coffer
-				-- Vrykul
-				["coord"] = { 67.8, 73.5, SIREN_ISLE },
-				["questID"] = 86171,
-				["isWeekly"] = true,
 			}),
 			o(494475, {	-- Rune-Speared Spear
 				["coord"] = { 57.9, 78.5, SIREN_ISLE },

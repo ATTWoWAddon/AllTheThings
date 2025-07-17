@@ -317,8 +317,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 47.8, 46.6, VALDRAKKEN },
 			}),
 			q(72585, {	-- Open Orientation
-				["provider"] = { "n", 196499 },	-- Therazal
-				["coord"] = { 50.2, 55.9, VALDRAKKEN },
+					["qgs"] = {
+						196499,	-- Therazal <Dragon Isles Emissary>
+						199336,	-- Kerazal  <Dragon Isles Emissary>
+						-- #if AFTER 10.2.0
+						213930,	-- Koszaru
+						-- #endif
+					},
+					["coords"] = {
+						{ 50.2, 55.9, VALDRAKKEN },
+						{ 76.6, 34.2, THE_WAKING_SHORES },
+						-- #if AFTER 10.2.0
+						{ 48.0, 58.8, VALDRAKKEN },
+						-- #endif
+					},
 			}),
 			q(72354, {	-- The Great Vault
 				["provider"] = { "n", 196499 },	-- Therazal

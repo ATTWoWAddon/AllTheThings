@@ -1,6 +1,29 @@
 -------------------
 -- JEWELCRAFTING --
 -------------------
+JEWELCRAFTING_SUPPLIES = sharedData({
+	["description"] = "Can be bought from Jewelcrafting Suppliers, as well as some Trade vendors around the world.",
+	["providers"] = {
+		{ "n", 17512},	-- Arred <Jewelcrafting Supplies>
+		{ "n", 16624},	-- Gelanthis <Jewelcrafting Supplies>
+		-- #if AFTER CATA
+		{ "n", 52584},	-- Laida Gembold <Jewelcrafting Supplies>
+		{ "n", 50482},	-- Marith Lazuria <Jewelcrafting Supplies>
+		{ "n", 52658},	-- Paku Cloudchaser <Jewelcrafting Supplies>
+		{ "n", 52588},	-- Sara Lanner <Jewelcrafting Supplies>
+		{ "n", 52644},	-- Tarien Silverdew <Jewelcrafting Supplies>
+		{ "n", 44583},	-- Terrance Denman <Jewelcrafting Supplies>
+		-- #endif
+	},
+}, {
+	i(52188, {	-- Jeweler's Setting
+		["timeline"] = { ADDED_4_0_3 },
+	}),
+	i(20815),	-- Jeweler's Toolset/-Kit
+	i(20824, {	-- Simple Grinder
+		["timeline"] = { REMOVED_5_0_4 },
+	}),
+});
 COMMON_CATACLYSM_JEWELCRAFTING_RECIPES = {
 	i(52409, {	-- Design: Accurate Demonseye
 		["cost"] = { { "c", 361, 3 }, },	-- 3x Illustrious Jewelcrafter's Token
@@ -608,7 +631,7 @@ NAZJATAR_JEWELCRAFTING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timel
 		r(294793),	-- Notorious Combatant's Intuitive Staff
 	}),
 }));
-SL_JEWELCRAFTING = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_JEWELCRAFTING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(311967),	-- Shadowlands Jewelcrafting
 	r(325248),	-- Shadowlands Prospecting \\ Prospecting
 	r(311953),	-- Mass Prospect Elethium

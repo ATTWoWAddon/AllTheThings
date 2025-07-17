@@ -16,8 +16,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						i(190935),	-- Distinguished Blade of Cartel Al
 						i(190929),	-- Ebony Protocloak
 						i(190937),	-- Edge of the Enlightened
-						i(190234, {	-- Enlightened Portal Research
-							["questID"] = 65617,
+						i(190234, {	-- Enlightened Portal Research (CI!)
 							["requireSkill"] = ENGINEERING,
 						}),
 						i(190933),	-- Majestic Oracle's Drape

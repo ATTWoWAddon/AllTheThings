@@ -6,7 +6,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 	inst(745, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- Karazhan (Raid)
 		["lore"] = "Karazhan is an abandoned citadel located on a nexus of ley lines in southern Deadwind Pass. The tower is best known for its last known occupant - Medivh, the last Guardian of Tirisfal. After Medivh was killed by Khadgar, Anduin Lothar, and Garona, the tower sealed itself off from the rest of the world. But recently, Karazhan has reawakened - an evil presence has taken the tower as its own, its halls crawling with spirits and demons, and Medivh's presence is still alive and well, even decades after his death.",
 		["description"] = "The best route for a fuil clear:\n1. Turn right immediately after going through the Gatehouse Door and enter the Servant's Quarters.\n2. From the western bat room goes a passage up to the Guest Chambers. Ignore the passage to the right until this section is cleared.\n3. Ignore the Opera Hall, go downstairs through the ballroom to Moroes and further through the kitchen and stables for Attumen the Huntsman. Here you will also find the practical vendor Koren (requires Honored with The Violet Eye).\n4. Back to the Gatehouse and upstairs to the Opera Hall, from here is the raid linear to last boss.",
-		-- #if BEFORE LEGION
+		-- #if BEFORE CATA
 		["zone-text-areaID"] = 2562,	-- Karazhan
 		-- #endif
 		["coord"] = { 46.87, 74.69, DEADWIND_PASS },	-- Karazhan, Deadwind Pass
@@ -129,7 +129,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						q(9829, {	-- Khadgar
 							["qg"] = 18165,	-- Archmage Cedric
 							["sourceQuest"] = 9826,	-- Contact from Dalaran
-							["coords"] = { 
+							["coords"] = {
 								-- #if AFTER CATA
 								{ 30.8, 30.8, ALTERAC_MOUNTAINS },
 								-- #else
@@ -625,7 +625,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 			})),
-			n(REAGENTS, {
+			filter(REAGENTS, {
 				i(21882, {	-- Soul Essence
 					["description"] = "Drops from Undead creatures in Karazhan."
 				}),
@@ -680,7 +680,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			e(1552, {	-- Servant's Quarters
 				["description"] = "One of the following rares will spawn after clearing 90% of the mobs in the Servant's Quarters. An emote will appear in the General Chat when one of the spawns. This is not a boss encounter, thus you can leave the raid, reset the instance and repeat the process as many times as you want as long as no bosses are killed.",
-				-- #if BEFORE MOP
+				-- #if BEFORE WOD
 				["npcID"] = RARES,
 				-- #endif
 				["groups"] = {
@@ -1011,7 +1011,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				["creatureID"] = 16816,	-- Echo of Medivh
 				["provider"] = { "o", 185119 },	-- Dust Covered Chest
 				-- #if AFTER 9.0.2
-				["description"] = "You have two options with this chess event: Either actively play it through with a higher success rate. Or immediately leave the king vehicle after starting the event and take a 5 minute break from the game, this have a 50% success rate.",
+				["description"] = "You have two options with this chess event: Either actively play it through with a higher success rate, or immediately leave the king vehicle after starting the event and take a 5 minute break from the game, this has a 50% success rate.",
 				-- #endif
 				["groups"] = {
 					i(28749),	-- King's Defender
@@ -1032,8 +1032,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				["creatureID"] = 15690,
 				["groups"] = {
 					ach(690, {	-- Karazhan
-						-- #if BEFORE WRATH
-						["sourceQuest"] = 9844,	-- A Demonic Presence
+						-- #if NOT ANYCLASSIC
+						-- CRIEVE NOTE: This achievement can be earned ahead of time by having completing 'A Demonic Presence'
+						["timeline"] = { ADDED_3_0_2 },
 						-- #endif
 					}),
 					ach(5084, {	-- Karazhan Guild Run

@@ -467,8 +467,12 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.RAID.NORMAL, {
 				n(QUESTS, {
-					q(58373, {	-- Ny'alotha: MOTHER's Guidance
+					q(58373, {	-- Ny'alotha: MOTHER's Guidance [N]
 						["provider"] = { "n", 160177 },	-- Wrathion
+						["lockCriteria"] = { 1,
+							"questID", 58374,	-- Ny'alotha: MOTHER's Guidance [H]
+							"questID", 58375,	-- Ny'alotha: MOTHER's Guidance [M]
+						},
 						["cost"] = {
 							{ "i", 174910, 4 },	-- 4x Dragon Heart
 							{ "i", 174913, 4 },	-- 4x Prophetic Eye
@@ -660,8 +664,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.RAID.HEROIC, {
 				n(QUESTS, {
-					q(58374, {	-- Ny'alotha: MOTHER's Guidance
+					q(58374, {	-- Ny'alotha: MOTHER's Guidance [H]
 						["provider"] = { "n", 160177 },	-- Wrathion
+						["lockCriteria"] = { 1,
+							"questID", 58375,	-- Ny'alotha: MOTHER's Guidance [M]
+						},
 						["cost"] = {
 							{ "i", 174909, 4 },	-- Dragon Heart x4
 							{ "i", 174911, 4 },	-- Prophetic Eye x4
@@ -859,7 +866,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.RAID.MYTHIC, {
 				n(QUESTS, {
-					q(58375, {	-- Ny'alotha: MOTHER's Guidance
+					q(58375, {	-- Ny'alotha: MOTHER's Guidance [M]
 						["provider"] = { "n", 160177 },	-- Wrathion
 						["cost"] = {
 							{ "i", 174908, 4 },	-- 4x Dragon Heart

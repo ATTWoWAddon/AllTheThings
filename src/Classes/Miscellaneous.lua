@@ -185,7 +185,6 @@ local function NestDynamicValueCategories(group)
 	for id,_ in pairs(cache) do
 		-- create a cloned version of the cached object, or create a new object from the Creator
 		cat = CreateObject(SearchForObject(field, id, "key") or { [field] = id }, true);
-		cat.parent = group;
 		cat.dynamic_withsubgroups = group.dynamic_withsubgroups;
 		-- don't copy maps into dynamic headers, since when the dynamic content is cached it can be weird
 		cat.maps = nil;
@@ -195,6 +194,7 @@ local function NestDynamicValueCategories(group)
 		if not cat.collectible then
 			cat = app.CreateVisualHeaderWithGroups(cat)
 		end
+		cat.parent = group
 		NestObject(group, FillDynamicCategory(cat, dynamicvalue_field or field, id));
 	end
 	-- Make sure the Dynamic Category group is sorted when opened since order isn't guaranteed by the table
@@ -204,7 +204,7 @@ end
 
 local function dynamic_title(t)
 	if t.__filled then return end
-	return app.L.CLICK_TO_CREATE_FORMAT:format((t.name or UNKNOWN).." "..app.L.SETTINGS_MENU.DYNAMIC_CATEGORY_LABEL)
+	return app.L.CLICK_TO_CREATE_FORMAT:format((t.name or UNKNOWN).." "..app.L.DYNAMIC_CATEGORY_LABEL)
 end
 local function dynamic_back()
 	return 0.3
@@ -305,8 +305,7 @@ local VisualHeaderFields = {
 	hash = BaseClass__class.hash,
 	text = BaseClass__class.text,
 }
-local CreateVisualHeader, CreateVisualHeader__class
-CreateVisualHeader, CreateVisualHeader__class = app.CreateClass("VisualHeader", "noKey-VisualHeader", VisualHeaderFields);
+local CreateVisualHeader, CreateVisualHeader__class = app.CreateClass("VisualHeader", "noKey-VisualHeader", VisualHeaderFields);
 app.CreateVisualHeader = CreateVisualHeader
 local Wrap = app.WrapObject;
 app.CreateVisualHeaderWithGroups = function(base, groups)
@@ -348,7 +347,6 @@ for _,field in ipairs({
 	"progress",
 	"total",
 	"visible",
-	"modItemID",
 	"rawlink",
 	"sourceIgnored",
 	"costTotal",

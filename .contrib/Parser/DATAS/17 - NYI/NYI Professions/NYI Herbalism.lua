@@ -25,7 +25,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 
 				expansion(EXPANSION.TWW, {
 					-- 11.0.0
-					expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+					expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 						i(217105),	-- Refine Khaz Algar Herbs
 					})),
 				}),
@@ -48,7 +48,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					r(382582),	-- Opening
 				})),
 			}),

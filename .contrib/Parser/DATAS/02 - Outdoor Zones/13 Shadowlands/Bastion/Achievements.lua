@@ -29,7 +29,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["coord"] = { 34.7, 30.0, BASTION },
 				}),
 			}),
-			explorationAch(14303),	-- Explore Bastion
+			ach(14303),	-- Explore Bastion
 			ach(14735, {	-- Flight School Graduate
 				crit(49820, {		-- Flight School: Falling With Style
 					["_quests"] = { 60844 },	-- Flight School: Falling With Style
@@ -383,6 +383,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60296 },   -- Pride or Unit (Nemea - Larion)
 				}),
 			}),
+			achWithRep(14335, FACTION_THE_ASCENDED),	-- The Ascended
 			ach(14281, {	-- The Path to Ascension
 				crit(48148, {	-- Eternity's Call
 					["sourceQuests"] = { 57677 },	-- A Soulbind In Need

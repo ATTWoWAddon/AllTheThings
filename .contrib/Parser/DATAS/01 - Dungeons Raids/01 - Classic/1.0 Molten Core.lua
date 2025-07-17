@@ -289,7 +289,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #else
 						"This quest is no longer required to enter Molten Core - you can now speak to Lothos and have him transport you inside without doing the attunement.",
 						-- #endif
-					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN },
+					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN_LEVEL3 },
 					["maps"] = { BLACKROCK_DEPTHS },
 					["lvl"] = 55,
 					["groups"] = {
@@ -342,11 +342,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(4, {	-- 0/1 Hand of Sulfuron
 							["provider"] = { "i", 17330 },	-- Hand of Sulfuron
 						}),
-						ach(2496, {	-- The Fifth Element
-							-- #if BEFORE WRATH
-							["sourceQuest"] = 6824,	-- Hands of the Enemy
-							-- #endif
-						}),
+						ach(2496),	-- The Fifth Element
 					},
 				})),
 				q(6804, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Poisoned Water
@@ -452,8 +448,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(18260),	-- Formula: Enchant Weapon - Healing Power (RECIPE!)
 					i(18259),	-- Formula: Enchant Weapon - Spellpower (RECIPE!)
 					i(18252),	-- Pattern: Core Armor Kit (RECIPE!)
-					i(21371),	-- Pattern: Core Felcloth Bag
-					i(18265),	-- Pattern: Flarecore Wraps
+					i(21371),	-- Pattern: Core Felcloth Bag (RECIPE!)
+					i(18265),	-- Pattern: Flarecore Wraps (RECIPE!)
 					i(18264),	-- Plans: Elemental Sharpening Stone (RECIPE!)
 					i(18257),	-- Recipe: Major Rejuvenation Potion (RECIPE!)
 					i(18290),	-- Schematic: Biznicks 247x128 Accurascope (RECIPE!)
@@ -472,14 +468,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			prof(MINING, {
 				i(11382),	-- Blood of the Mountain
-			}),
-			prof(SKINNING, {
-				i(17012, {	-- Core Leather
-					["crs"] = {
-						11673,	-- Ancient Core Hound
-						11982,	-- Magmadar
-					},
-				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
@@ -787,14 +775,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["creatureID"] = 11502,
 				["groups"] = {
 					-- #if NOT SEASON_OF_DISCOVERY
-					ach(686, {	-- Molten Core
-						-- #if BEFORE WRATH
-						["sourceQuests"] = {
-							7787,	-- Rise, Thunderfury!
-							8620,	-- The Only Prescription
-						},
-						-- #endif
-					}),
+					ach(686),	-- Molten Core
 					ach(5056, {	-- Molten Core Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),
@@ -1606,14 +1587,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				n(228438, {	-- Ragnaros
-					ach(686, {	-- Molten Core
-						-- #if BEFORE WRATH
-						["sourceQuests"] = {
-							85443,	-- Rise, Thunderfury!
-							8620,	-- The Only Prescription
-						},
-						-- #endif
-					}),
+					ach(686),	-- Molten Core
 					i(227728),	-- Eye of Sulfuras
 					i(17203),	-- Sulfuron Ingot
 					i(227532),	-- Incandescent Hood

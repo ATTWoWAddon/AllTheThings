@@ -857,15 +857,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			e(473, {	-- Archaedas
 				["creatureID"] = 2748,
 				["groups"] = {
-					ach(638, {	-- Uldaman
-						-- #if BEFORE WRATH
-						["sourceQuests"] = {
-							2278,	-- The Platinum Discs
-							2204,	-- Restoring the Necklace
-							2339,	-- Find the Gems and Power Source
-						},
-						-- #endif
-					}),
+					ach(638),	-- Uldaman
 					ach(5047, {	-- Uldaman Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),

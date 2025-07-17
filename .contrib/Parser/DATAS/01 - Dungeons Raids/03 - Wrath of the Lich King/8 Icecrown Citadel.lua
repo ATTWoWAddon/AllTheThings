@@ -175,7 +175,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						["sourceQuest"] = 24548,	-- The Splintered Throne
 						["groups"] = {
 							i(49623),	-- Shadowmourne
-							ach(4623),	-- Shadowmourne
+							ach(4623, { ["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT } }),	-- Shadowmourne
 						},
 					}),
 					q(24748, {	-- The Lich King's Last Stand
@@ -915,7 +915,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					i(49958, {	-- Pattern: Blessed Cenarion Boots (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
-					i(49954, {	-- Pattern: Deathfrost Boots
+					i(49954, {	-- Pattern: Deathfrost Boots (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
 					i(49965, {	-- Pattern: Draconic Bonesplinter Legguards (RECIPE!)
@@ -927,7 +927,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					i(49961, {	-- Pattern: Footpads of Impending Death (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
-					i(49953, {	-- Pattern: Leggings of Woven Death
+					i(49953, {	-- Pattern: Leggings of Woven Death (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
 					i(49957, {	-- Pattern: Legwraps of Unleashed Nature (RECIPE!)
@@ -936,13 +936,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					i(49962, {	-- Pattern: Lightning-Infused Leggings (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
-					i(49955, {	-- Pattern: Lightweave Leggings
+					i(49955, {	-- Pattern: Lightweave Leggings (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
 					i(49966, {	-- Pattern: Rock-Steady Treads (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
-					i(49956, {	-- Pattern: Sandals of Consecration
+					i(49956, {	-- Pattern: Sandals of Consecration (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
 					i(49974, {	-- Plans: Boots of Kingly Upheaval (RECIPE!)
@@ -2554,10 +2554,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_0 } }, {
 	inst(758, {
-		q(24808),	-- Tank Ring Flag - doing "A Change of Heart" in ICC and choosing strength ring
-		q(24809),	-- Healer Ring Flag - doing "A Change of Heart" in ICC and choosing intellect haste/versa ring
-		q(24810),	-- Melee Ring Flag - doing "A Change of Heart" in ICC and choosing agility ring
-		q(24811),	-- Caster Ring Flag - doing "Choose Your Path" in ICC and choosing intellect crit/haste ring
-		q(25238),	-- Strength Ring Flag - doing "A Change of Heart" in ICC and choosing strength ring
+		q(24808, {["isRepeatable"]=true}),	-- Tank Ring Flag - doing "A Change of Heart" in ICC and choosing strength ring
+		q(24809, {["isRepeatable"]=true}),	-- Healer Ring Flag - doing "A Change of Heart" in ICC and choosing intellect haste/versa ring
+		q(24810, {["isRepeatable"]=true}),	-- Melee Ring Flag - doing "A Change of Heart" in ICC and choosing agility ring
+		q(24811, {["isRepeatable"]=true}),	-- Caster Ring Flag - doing "Choose Your Path" in ICC and choosing intellect crit/haste ring
+		q(25238, {["isRepeatable"]=true}),	-- Strength Ring Flag - doing "A Change of Heart" in ICC and choosing strength ring
 	}),
 })));

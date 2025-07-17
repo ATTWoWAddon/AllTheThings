@@ -1,4 +1,4 @@
-root(ROOTS.WorldEvents, applyevent(EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE, n(WINDS_OF_MYSTERIOUS_FORTUNE_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE, n(WINDS_OF_MYSTERIOUS_FORTUNE_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5, REMOVED_11_1_5, ADDED_11_1_7 } }, {
 	["maps"] = {
 		DRAGON_ISLES,
 		EMERALD_DREAM,
@@ -85,11 +85,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.WINDS_OF_MYSTERIOUS_FORTUNE, n(WINDS_O
 					i(239142),	-- Bottle of Mysterious Wisdom
 					i(235701),	-- Decaying Mecha-Scrapper Construction Kit
 					i(236959),	-- Empty Mysterious Potion
-					i(170177),	-- Exposed Fish
 					i(240995),	-- Fortuitous Satchel
-					i(124640),	-- Inky Black Potion
 					i(200886),	-- Lemon Silverleaf Tea
-					i(225378),	-- Mohawk Grenade
 					i(235803),	-- Potion of Mysterious Celerity
 					i(236854),	-- Potion of Mysterious Conflagration
 					i(236857),	-- Potion of Mysterious Frostbound

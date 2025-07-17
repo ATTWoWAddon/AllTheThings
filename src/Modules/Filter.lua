@@ -9,8 +9,8 @@ local _, app = ...;
 -- Encapsulates the functionality for all filtering logic which is used to check if a given Object meets the applicable filters via User Settings
 
 -- Global locals
-local ipairs, select, pairs, type, rawget, wipe
-	= ipairs, select, pairs, type, rawget, wipe;
+local select, pairs, type, rawget, wipe
+	= select, pairs, type, rawget, wipe
 
 -- WoW API Cache
 local GetFactionCurrentReputation = app.WOWAPI.GetFactionCurrentReputation;
@@ -147,7 +147,7 @@ function(item)
 		return true;
 	end
 
-	local specs = app.GetFixedItemSpecInfo(item.itemID);
+	local specs = item.specs
 	return specs and #specs > 0;
 end);
 
@@ -260,7 +260,7 @@ app.IsRetail and function(item)
 end or function(item)
 	local requireSkill = item.requireSkill;
 	if requireSkill and (not item.professionID or not GetRelativeValue(item, "DontEnforceSkillRequirements") or FilterBind(item)) then
-		requireSkill = app.SkillIDToSpellID[requireSkill];
+		requireSkill = app.SkillDB.SkillToSpell[requireSkill];
 		return requireSkill and ActiveSkills[requireSkill];
 	else
 		return true;
@@ -329,10 +329,8 @@ DefineToggleFilter("CustomCollect", CharacterFilters,
 function(item)
 	local customCollect = item.customCollect;
 	if customCollect then
-		for _,c in ipairs(customCollect) do
-			if not ActiveCustomCollects[c] then
-				return;
-			end
+		for i=1,#customCollect do
+			if not ActiveCustomCollects[customCollect[i]] then return end
 		end
 	end
 	return true;

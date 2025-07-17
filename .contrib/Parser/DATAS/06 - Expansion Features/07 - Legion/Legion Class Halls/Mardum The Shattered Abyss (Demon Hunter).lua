@@ -112,10 +112,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["maps"] = { 723 },	-- Violet Hold
 							["g"] = {
 								i(127829, {	-- Twinblades of the Deceiver [Main Hand]
-									artifact(26),	-- Standard
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(26),	-- Standard
+									},
 								}),
 								i(127830, {	-- Twinblades of the Deceiver [Off Hand]
-									artifact(26),	-- Standard
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(26),	-- Standard
+									},
 								}),
 							},
 						}),
@@ -125,10 +131,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["maps"] = { 723 },	-- Violet Hold
 							["g"] = {
 								i(127829, {	-- Twinblades of the Deceiver [Main Hand]
-									artifact(26),	-- Standard
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(26),	-- Standard
+									},
 								}),
 								i(127830, {	-- Twinblades of the Deceiver [Off Hand]
-									artifact(26),	-- Standard
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(26),	-- Standard
+									},
 								}),
 							},
 						}),
@@ -188,10 +200,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 74.9, 49.0, LEGION_DALARAN },
 							["g"] = {
 								i(128832, {	-- Aldrachi Warblades [Main Hand]
-									artifact(554),	-- Aldrachi Warblades [Main Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(554),	-- Aldrachi Warblades [Main Hand]
+									},
 								}),
 								i(128831, {	-- Aldrachi Warblades [Off Hand]
-									artifact(554),	-- Aldrachi Warblades [Off Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(554),	-- Aldrachi Warblades [Off Hand]
+									},
 								}),
 							},
 						}),
@@ -201,10 +219,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 74.9, 49.0, LEGION_DALARAN },
 							["g"] = {
 								i(128832, {	-- Aldrachi Warblades [Main Hand]
-									artifact(554),	-- Aldrachi Warblades [Main Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(554),	-- Aldrachi Warblades [Main Hand]
+									},
 								}),
 								i(128831, {	-- Aldrachi Warblades [Off Hand]
-									artifact(554),	-- Aldrachi Warblades [Off Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(554),	-- Aldrachi Warblades [Off Hand]
+									},
 								}),
 							},
 						}),
@@ -636,6 +660,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 45385 },	-- We Must be Prepared!
 						["provider"] = { "n", 117709 },	-- Lady S'theno
 						["coord"] = { 52.1, 21.3, BROKEN_SHORE },
+						["g"] = {
+							i(143918),	-- Stabilizing Crystal (QI!)
+						},
 					}),
 					q(46266, {	-- Return of the Slayer
 						["sourceQuests"] = {
@@ -863,7 +890,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				}),
 				n(SPECIAL, {
 					cl(DEMONHUNTER, HAVOC, {
-						i(141409, {	-- Candrael's Charm
+						i(141409, {	-- Candrael's Charm (CI!)
 							["description"] = "Find this item on mobs in Suramar.",
 							["maps"] = { SURAMAR },
 						}),
@@ -974,11 +1001,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					n(112407, {	-- Falara Nightsong <Illidari Provisioner>
-						["description"] = "|c808080FAIn order to purchase the toy|r |c00FF96AFTiny Set of Warglaives|r|c808080FA, you must have completed the class mount quest|r |cFFFFD700To Fel and Back|r|c808080FA.\n|c808080FAOnce completed you have to unlock all 52 traits on either spec to be able purchase it.|r",
 						["coord"] = { 57.8, 43.5, 720 },
 						["sym"] = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
 						["g"] = {
 							i(147537, {	-- A Tiny Set of Warglaives (TOY!)
+								["description"] = "|c808080FAIn order to purchase the toy|r |c00FF96AFTiny Set of Warglaives|r|c808080FA, you must have completed the class mount quest|r |cFFFFD700To Fel and Back|r|c808080FA.\n|c808080FAOnce completed you have to unlock all 52 traits on either spec to be able purchase it.|r",
 								["cost"] = { { "c", 1220, 10000 }, },	-- 10,000x Order Resources
 							}),
 							i(139721, {	-- Belt of the Shattered Abyss

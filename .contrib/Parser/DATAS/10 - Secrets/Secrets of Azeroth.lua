@@ -8,6 +8,8 @@ SECRETS_OF_AZEROTH_HEADER = createHeader({
 --	eventID = EVENTS.SECRETS_OF_AZEROTH,	-- No longer needed as the event is always active now.
 	text = {
 		en = "Secrets of Azeroth",
+		es = "Secretos de Azeroth",
+		mx = "Secretos de Azeroth",
 		ru = "Тайны Азерота",
 		cn = "艾泽拉斯之秘",
 		tw = "艾澤拉斯秘聞",
@@ -598,7 +600,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 							{ 59.3, 78.8, THALDRASZUS },
 						},
 						["groups"] = {
-							i(208191),	-- Time Lost Fragment
+							i(208191),	-- Time Lost Fragment (CI!)
 						},
 					}),
 					i(208146, {	-- Incomplete Tablet (QI!)
@@ -1175,7 +1177,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 		-- q(77524),	-- completed 'Using the Idol' (questID 76456) (account-wide completion)
 		q(78008),	-- completed 'A Proper Burial' (questID 77865)
 		q(77854),	-- Upon completion of Into the Sands (questID 76509) (account-wide completion)
-		-- q(77421),	-- accepted 'Out of the Sands' (questID 77305)
 		-- q(76508),	-- Upon completion of Out of the Sands (questID 77305) (account-wide completion)
 		-- q(77576),	-- Upon completion of A Titanic Mold (QuestID 77822) (account-wide completion)
 		-- q(77577),	-- Upon completion of A Key To Reforging (QuestID 77831) (account-wide completion)

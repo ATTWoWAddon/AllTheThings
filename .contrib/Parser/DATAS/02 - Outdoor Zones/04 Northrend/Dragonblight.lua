@@ -34,11 +34,12 @@ root(ROOTS.Zones, {
 			["icon"] = 236743,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					explorationAch(1265),	-- Explore Dragonblight
+					ach(1265),	-- Explore Dragonblight
 					ach(35, {	-- Might of Dragonblight (A)
 						["races"] = ALLIANCE_ONLY,
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							12169,	-- The High Cultist
 							12107,	-- The End of the Line
@@ -55,57 +56,13 @@ root(ROOTS.Zones, {
 							12078,	-- Worm Wrangler
 							12032,	-- Conversing With the Depths
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 115,
-						-- #endif
-						-- #else
-						["groups"] = {
-							crit(39007, {	-- The Warden's Task
-								["sourceQuest"] = 12169,	-- The High Cultist
-							}),
-							crit(39008, {	-- Redirecting the Ley Lines
-								["sourceQuest"] = 12107,	-- The End of the Line
-							}),
-							crit(39009, {	-- Informing the Queen
-								["sourceQuest"] = 12123,	-- Informing the Queen
-							}),
-							crit(39010, {	-- The Dragonflights
-								["sourceQuest"] = 12266,	-- Tales of Destruction
-							}),
-							crit(39011, {	-- The Dragonflights
-								["sourceQuest"] = 12459,	-- That Which Creates Can Also Destroy
-							}),
-							crit(39012, {	-- The Dragonflights
-								["sourceQuest"] = 12456,	-- The Plume of Alystros
-							}),
-							crit(39013, {	-- The Dragonflights
-								["sourceQuest"] = 13343,	-- Mystery of the Infinite, Redux
-							}),
-							crit(285, {	-- Angrathar the Wrathgate
-								["sourceQuest"] = 12499,	-- Return to Angrathar
-							}),
-							crit(39014, {	-- Frostmourne
-								["sourceQuest"] = 12478,	-- Frostmourne Cavern
-							}),
-							crit(39016, {	-- "Strategic Alliance"
-								["sourceQuest"] = 12078,	-- Worm Wrangler
-							}),
-							crit(39017, {	-- "Strategic Alliance"
-								["sourceQuest"] = 12080,	-- Really Big Worm
-							}),
-							crit(39024, {	-- Oacha'noa
-								["sourceQuest"] = 12032,	-- Conversing With the Depths
-							}),
-						},
 						-- #endif
 					}),
 					ach(1359, {	-- Might of Dragonblight (H)
 						["races"] = HORDE_ONLY,
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							12008,	-- Agmar's Hammer
 							12136,	-- The Translated Tome
@@ -124,57 +81,6 @@ root(ROOTS.Zones, {
 							12285,	-- Do Unto Others
 							12032,	-- Conversing With the Depths
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 130,
-						-- #endif
-						-- #else
-						["groups"] = {
-							crit(39018, {	-- The Taunka
-								["sourceQuest"] = 12008,	-- Agmar's Hammer
-							}),
-							crit(39021, {	-- Traitors to the Horde
-								["sourceQuest"] = 12136,	-- The Translated Tome
-							}),
-							crit(39019, {	-- Redirecting the Ley Lines
-								["sourceQuest"] = 12110,	-- The End of the Line
-							}),
-							crit(39022, {	-- Containing the Rot
-								["sourceQuest"] = 12111,	-- Where the Wild Things Roam
-							}),
-							crit(286, {	-- Angrathar the Wrathgate
-								["sourceQuest"] = 12500,	-- Return To Angrathar
-							}),
-							crit(39020, {	-- Informing the Queen
-								["sourceQuest"] = 12124,	-- Informing the Queen
-							}),
-							crit(39010, {	-- The Dragonflights
-								["sourceQuest"] = 12266,	-- Tales of Destruction
-							}),
-							crit(39011, {	-- The Dragonflights
-								["sourceQuest"] = 12459,	-- That Which Creates Can Also Destroy
-							}),
-							crit(39012, {	-- The Dragonflights
-								["sourceQuest"] = 12456,	-- The Plume of Alystros
-							}),
-							crit(39013, {	-- The Dragonflights
-								["sourceQuest"] = 13343,	-- Mystery of the Infinite, Redux
-							}),
-							crit(39016, {	-- "Strategic Alliance"
-								["sourceQuest"] = 12078,	-- Worm Wrangler
-							}),
-							crit(39017, {	-- "Strategic Alliance"
-								["sourceQuest"] = 12080,	-- Really Big Worm
-							}),
-							crit(39023, {	-- The Scarlet Onslaught
-								["sourceQuest"] = 12285,	-- Do Unto Others
-							}),
-							crit(39024, {	-- Oacha'noa
-								["sourceQuest"] = 12032,	-- Conversing With the Depths
-							}),
-						},
 						-- #endif
 					}),
 					achWithRep(1007, FACTION_THE_WYRMREST_ACCORD, {	-- The Wyrmrest Accord
@@ -183,12 +89,7 @@ root(ROOTS.Zones, {
 					achWithRep(949, FACTION_THE_KALUAK, {	-- Tuskarrmageddon
 						["maps"] = { BOREAN_TUNDRA, HOWLING_FJORD },
 					}),
-					ach(547, {	-- Veteran of the Wrathgate
-						["sourceQuests"] = {
-							12499,	-- Return to Angrathar (A)
-							12500,	-- Return to Angrathar (H)
-						},
-					}),
+					ach(547),	-- Veteran of the Wrathgate
 				}),
 				battlepets({
 					["sym"] = {{"select","speciesID",
@@ -319,9 +220,19 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66638, {	-- Okrut Dragonwaste <Master Pet Tamer>
 						["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
+						["description"] = "Okrut's pets are level 25 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Undead - use Critter (powerful) or Aquatic (tanky) pet.\n3. Undead - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Anubisath Idol (Crush/Deflection) and Alpine Hare (Flurry/Dodge/Burrow).",
+						["timeline"] = { ADDED_5_0_4 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(31933, {	-- Okrut Dragonwaste
+								["sourceAchievement"] = 6605,	-- Taming Northrend
+								["timeline"] = { ADDED_5_0_4 },
+								["isDaily"] = true,
+							}),
+						},
 					}),
 				}),
-				spell(921, {	-- Pickpocketing
+				header(HEADERS.Spell, 921, {	-- Pickpocketing
 					["classes"] = { ROGUE },
 					["groups"] = {
 						i(38268, {	-- Spare Hand
@@ -920,7 +831,10 @@ root(ROOTS.Zones, {
 					q(12478, {	-- Frostmourne Cavern
 						["coord"] = { 79.1, 47.1, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 27314,	-- Zelig the Visionary
+						["providers"] = {
+							{ "n", 27314 },	-- Zelig the Visionary
+							{ "i", 37933 },	-- Zelig's Scrying Orb (PQI!)
+						},
 						["sourceQuest"] = 12475,	-- What Secrets Men Hide
 						["groups"] = {
 							i(38532),	-- Belt of Vengeful Purification
@@ -1471,6 +1385,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27060,	-- Courier Lanson
 						["sourceQuest"] = 12157,	-- The Lost Courier
+						["isBreadcrumb"] = true,
 					}),
 					q(12498, {	-- On Ruby Wings
 						["coord"] = { 59.5, 53.3, DRAGONBLIGHT },
@@ -2380,7 +2295,10 @@ root(ROOTS.Zones, {
 					q(12291, {	-- The Forgotten Tale
 						["coord"] = { 87.1, 57.4, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 27347,	-- Orik Trueheart
+						["providers"] = {
+							{ "n", 27347 },	-- Orik Trueheart
+							{ "i", 37570 },	-- Murkweed Elixir (PQI!)
+						},
 						["sourceQuest"] = 12290,	-- The Murkweek Elixir
 					}),
 					q(12221, {	-- The Forsaken Blight
@@ -2658,7 +2576,10 @@ root(ROOTS.Zones, {
 					q(12301, {	-- The Truth Shall Set Us Free
 						["coord"] = { 87.1, 57.4, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 27347,	-- Orik Trueheart
+						["providers"] = {
+							{ "n", 27347 },	-- Orik Trueheart
+							{ "i", 37577 },	-- Orik's Crystalline Orb (PQI!)
+						},
 						["sourceQuest"] = 12291,	-- The Forgotten Tale
 					}),
 					q(12283, {	-- The Truth Will Out
@@ -3052,7 +2973,7 @@ root(ROOTS.Zones, {
 							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 							i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 							i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-							i(22307),	-- Pattern: Enchanted Mageweave Pouch
+							i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 						},
 					}),
 					n(27030, {	-- Bradley Towns <Reagents & Enchanting Supplies>
@@ -3062,7 +2983,7 @@ root(ROOTS.Zones, {
 							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 							i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 							i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-							i(22307),	-- Pattern: Enchanted Mageweave Pouch
+							i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 						},
 					}),
 					n(32533, {	-- Cielstrasza <Wyrmrest Accord Quartermaster>
@@ -3121,7 +3042,7 @@ root(ROOTS.Zones, {
 							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 							i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 							i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-							i(22307),	-- Pattern: Enchanted Mageweave Pouch
+							i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 						},
 					}),
 					n(32763, {	-- Sairuk <Kalu'ak Quartermaster>
@@ -3145,7 +3066,9 @@ root(ROOTS.Zones, {
 								i(44055),	-- Whale-Skin Vest
 								i(44058),	-- Whalebone Carapace
 							}, {	-- Revered
-								i(45774),	-- Pattern: Emerald Bag
+								i(45774, {	-- Pattern: Emerald Bag (RECIPE!)
+									["timeline"] = { ADDED_3_1_0 },
+								}),
 								i(44509),	-- Pattern: Trapper's Traveling Pack (RECIPE!)
 								i(44052),	-- Totemic Purification Rod
 								i(44051),	-- Traditional Flensing Knife

@@ -106,6 +106,24 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 		}),
 	})),
+	-- #if SEASON_OF_DISCOVERY
+	expansion(EXPANSION.CLASSIC, applyclassicphase(SOD_PHASE_EIGHT, bubbleDownSelf({ ["timeline"] = { ADDED_1_15_7 } }, {
+		q(90116, {	-- Holy Threads
+			["provider"] = { "n", 240631 },	-- Taylor Stitchings <Tailoring Supplies>
+			["coord"] = { 94.6, 83.6, EASTERN_PLAGUELANDS },
+			["g"] = {
+				i(239149),	-- Pattern: Crusader's Knapsack (RECIPE!)
+			},
+		}),
+		q(90120, {	-- Red is Not Dead
+			["provider"] = { "n", 240631 },	-- Taylor Stitchings <Tailoring Supplies>
+			["coord"] = { 94.6, 83.6, EASTERN_PLAGUELANDS },
+			["g"] = {
+				i(239150),	-- Pattern: Crimson Dawnwoven Bag (RECIPE!)
+			},
+		}),
+	}))),
+	-- #endif
 	expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
 			ach(17499, {	-- Renowned Tailoring Specialist
@@ -139,6 +157,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 							{ "i", 31525, 1 },	-- Vial of Primal Reagents
 						},
 					}),
+					r(26798),	-- Mooncloth Tailoring
 					i(31522, {	-- Primal Mooncloth Supplies
 						i(31524),	-- Square of Imbued Netherweave
 						i(31525),	-- Vial of Primal Reagents
@@ -162,6 +181,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 						["provider"] = { "i", 31736 },	-- Crystal of Deep Shadows
 						["coord"] = { 58.0, 71.0, SHADOWMOON_VALLEY },
 					}),
+					r(26801),	-- Shadoweave Tailoring
 				},
 			}),
 			q(10832, {	-- Becoming a Spellfire Tailor
@@ -183,6 +203,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 							{ "i", 31742, 1 },	-- Nether-wraith Beacon
 						},
 					}),
+					r(26797),	-- Spellfire Tailoring
 				},
 			}),
 		})),
@@ -934,21 +955,30 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 	})),
 })));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
-	n(PROFESSIONS, {
-		prof(TAILORING, {
-			q(38976),	-- FLAG: Undying Silkweave Bracers
-			q(38977),	-- FLAG: Undying Silkweave Cinch Crafted
-			q(38978),	-- FLAG: Undying Silkweave Epaulets Crafted
-			q(38979),	-- FLAG: Undying Silkweave Slippers Crafted
-			q(38980),	-- FLAG: Undying Silkweave Gloves Crafted
-			q(38981),	-- FLAG: Undying Silkweave Hood Crafted
-			q(38982),	-- FLAG: Undying Silkweave Pantaloons Crafted
-			q(38983),	-- FLAG: Undying Silkweave Robe Crafted
-			q(47093),	-- Broken Shore - Choice: Tailoring
+root(ROOTS.HiddenQuestTriggers, {
+	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+		n(PROFESSIONS, {
+			prof(TAILORING, {
+				q(38976),	-- FLAG: Undying Silkweave Bracers
+				q(38977),	-- FLAG: Undying Silkweave Cinch Crafted
+				q(38978),	-- FLAG: Undying Silkweave Epaulets Crafted
+				q(38979),	-- FLAG: Undying Silkweave Slippers Crafted
+				q(38980),	-- FLAG: Undying Silkweave Gloves Crafted
+				q(38981),	-- FLAG: Undying Silkweave Hood Crafted
+				q(38982),	-- FLAG: Undying Silkweave Pantaloons Crafted
+				q(38983),	-- FLAG: Undying Silkweave Robe Crafted
+				q(47093),	-- Broken Shore - Choice: Tailoring
+			}),
 		}),
-	}),
-})));
+	})),
+	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {
+		n(PROFESSIONS, {
+			prof(TAILORING, {
+				q(55239),	-- During quest objective of Seam Stress (55214)
+			}),
+		}),
+	})),
+});
 
 -- #if ANYCLASSIC
 local applytraining = function(g)
@@ -983,34 +1013,6 @@ local function bloodied(t)
 	return t;
 end
 
--- Bloodthirsty Crafted Gear was added with Firelands and then removed from the game after Dragon Soul was released.
--- #if ANYCLASSIC
-local BLOODTHIRSTY_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_HOUR_OF_TWILIGHT .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = ]] .. CATA_PHASE_RAGE_OF_THE_FIRELANDS .. [[;
-		t.rwp = 40300;
-	end
-end]];
--- #endif
-local function bloodthirsty(t)
-	-- #if CATA
-	t.timeline = { ADDED_4_2_0, REMOVED_5_0_4 };
-		-- #if ANYCLASSIC
-		t.OnUpdate = BLOODTHIRSTY_ONUPDATE;
-		-- #endif
-	-- #else
-	t.timeline = { ADDED_4_2_0, REMOVED_4_3_0 };
-	-- #endif
-	return applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, t);
-end
-
-local function moltenfront(t)
-	t.timeline = { ADDED_4_2_0 };
-	return applyclassicphase(CATA_PHASE_MOLTEN_FRONT, t);
-end
 local function firelands(t)
 	t.timeline = { ADDED_4_2_0 };
 	return applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, t);
@@ -1024,7 +1026,7 @@ end
 profession(TAILORING, {
 	-- #if BEFORE 4.0.1.12984
 	applyclassicphase(TBC_PHASE_ONE, prof(26798, {	-- Mooncloth Tailoring
-		["description"] = "These items can only be crafted by Tailorings that have completed the Becoming a Mooncloth Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
+		["description"] = "These items can only be crafted by Tailors that have completed the Becoming a Mooncloth Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
 		["sourceQuest"] = 10831,	-- Becoming a Mooncloth Tailor
 		["groups"] = {
 			recipe(26760),	-- Primal Mooncloth Belt
@@ -1033,7 +1035,7 @@ profession(TAILORING, {
 		},
 	})),
 	applyclassicphase(TBC_PHASE_ONE, prof(26801, {	-- Shadoweave Tailoring
-		["description"] = "These items can only be crafted by Tailorings that have completed the Becoming a Shadoweave Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
+		["description"] = "These items can only be crafted by Tailors that have completed the Becoming a Shadoweave Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
 		["sourceQuest"] = 10833,	-- Becoming a Shadoweave Tailor
 		["groups"] = {
 			recipe(26756),	-- Frozen Shadoweave Shoulders
@@ -1042,7 +1044,7 @@ profession(TAILORING, {
 		},
 	})),
 	applyclassicphase(TBC_PHASE_ONE, prof(26797, {	-- Spellfire Tailoring
-		["description"] = "These items can only be crafted by Tailorings that have completed the Becoming a Spellfire Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
+		["description"] = "These items can only be crafted by Tailors that have completed the Becoming a Spellfire Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
 		["sourceQuest"] = 10832,	-- Becoming a Spellfire Tailor
 		["groups"] = {
 			recipe(26752),	-- Spellfire Belt
@@ -1052,7 +1054,7 @@ profession(TAILORING, {
 	})),
 	-- #endif
 	expansion(EXPANSION.CLASSIC, {
-		-- #if AFTER SHADOWLANDS
+		-- #if AFTER SL
 		{
 			["name"] = "Optional Reagents",
 			["categoryID"] = 1504,
@@ -1782,6 +1784,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Felcloth Gloves",
+					["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 },
 					["recipeID"] = 22867,
 				}),
 				{
@@ -1823,10 +1826,12 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Inferno Gloves",
+					["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 },
 					["recipeID"] = 22868,
 				}),
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Mooncloth Gloves",
+					["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 },
 					["recipeID"] = 22869,
 				}),
 				{
@@ -2097,6 +2102,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Cloak of Warding",
+					["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 },
 					["recipeID"] = 22870,
 				}),
 				{
@@ -2295,7 +2301,7 @@ profession(TAILORING, {
 		-- #endif
 	}),
 	applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, {
-		-- #if AFTER SHADOWLANDS
+		-- #if AFTER SL
 		{
 			["name"] = "Optional Reagents",
 			["categoryID"] = 1505,
@@ -2776,7 +2782,7 @@ profession(TAILORING, {
 		-- #endif
 	})),
 	applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRATH, {
-		-- #if AFTER SHADOWLANDS
+		-- #if AFTER SL
 		{
 			["name"] = "Optional Reagents",
 			["categoryID"] = 1506,
@@ -3320,7 +3326,7 @@ profession(TAILORING, {
 		-- #endif
 	})),
 	applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA, {
-		-- #if AFTER SHADOWLANDS
+		-- #if AFTER SL
 		{
 			["name"] = "Optional Reagents",
 			["categoryID"] = 1507,
@@ -3510,7 +3516,6 @@ profession(TAILORING, {
 					["recipeID"] = 75251
 				},
 				-- #if ANYCLASSIC
-				-- CRIEVE NOTE: In Cata Classic, these don't appear to exist.
 				{
 					["name"] = "Emberfire Shoulders",
 					["recipeID"] = 1224211
@@ -3997,7 +4002,7 @@ profession(TAILORING, {
 		-- #endif
 	})),
 	applyclassicphase(MOP_PHASE_LANDFALL, expansion(EXPANSION.MOP, {
-		-- #if AFTER SHADOWLANDS
+		-- #if AFTER SL
 		{
 			["name"] = "Optional Reagents",
 			["categoryID"] = 1508,
@@ -4709,7 +4714,7 @@ profession(TAILORING, {
 	applyclassicphase(WOD_PHASE_ONE, expansion(EXPANSION.WOD, {
 		n(DROPS, {
 		}),
-		-- #if AFTER SHADOWLANDS
+		-- #if AFTER SL
 		{
 			["name"] = "Optional Reagents",
 			["categoryID"] = 1509,
@@ -4922,7 +4927,7 @@ profession(TAILORING, {
 		-- #endif
 	})),
 	applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, {
-		-- #if AFTER SHADOWLANDS
+		-- #if AFTER SL
 		{
 			["name"] = "Optional Reagents",
 			["categoryID"] = 1510,
@@ -6252,7 +6257,7 @@ profession(TAILORING, {
 			},
 		}),
 	})),
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, expansion(EXPANSION.SL, {
+	applyclassicphase(SL_PHASE_ONE, expansion(EXPANSION.SL, {
 		applytraining({
 			-- All Quest Recipes marked unobtainable(training) because they are only learned temporarily
 			-- for world quests then disappear from the spellbook after the quest is completed.
@@ -6787,10 +6792,10 @@ itemrecipe("Pattern: Soul Pouch", 21358, 26085);
 itemrecipe("Pattern: Enchanted Mageweave Pouch", 22307, 27658);
 
 itemrecipe("Pattern: Belt of the Archmage", 18414, 22866, PHASE_ONE_DIREMAUL);
-itemrecipe("Pattern: Felcloth Gloves", 18415, 22867, PHASE_ONE_DIREMAUL);
-itemrecipe("Pattern: Inferno Gloves", 18416, 22868, PHASE_ONE_DIREMAUL);
-itemrecipe("Pattern: Mooncloth Gloves", 18417, 22869, PHASE_ONE_DIREMAUL);
-itemrecipe("Pattern: Cloak of Warding", 18418, 22870, PHASE_ONE_DIREMAUL);
+itemrecipe("Pattern: Felcloth Gloves", 18415, 22867, PHASE_ONE_DIREMAUL, { REMOVED_4_0_3 });
+itemrecipe("Pattern: Inferno Gloves", 18416, 22868, PHASE_ONE_DIREMAUL, { REMOVED_4_0_3 });
+itemrecipe("Pattern: Mooncloth Gloves", 18417, 22869, PHASE_ONE_DIREMAUL, { REMOVED_4_0_3 });
+itemrecipe("Pattern: Cloak of Warding", 18418, 22870, PHASE_ONE_DIREMAUL, { REMOVED_4_0_3 });
 itemrecipe("Pattern: Mooncloth Robe", 18487, 22902, PHASE_ONE_DIREMAUL);
 
 itemrecipe("Pattern: Wisdom of the Timbermaw", 19215, 23662, PHASE_THREE_RECIPES);
@@ -7127,7 +7132,7 @@ neverimplemented(i(162428));	-- Pattern: Embroidered Deep Sea Gloves (Rank 3)
 neverimplemented(i(162430));	-- Pattern: Embroidered Deep Sea Breeches (Rank 3)
 -- #endif
 
--- #if AFTER SHADOWLANDS
+-- #if AFTER SL
 
 -- #endif
 -- #endif

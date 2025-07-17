@@ -1,159 +1,24 @@
-1.14.1.40666
-15329@@@Has Died
-1.14.1.40688
-15330@@@Survivor of the Flames
-15332@@@Survivor
-1.14.1.40800
-15330@@@Survivor of the Firelord
-15333@@@Survivor of the Shadow Flame
-15334@@@Survivor of the Old God
-15335@@@Survivor of the Damned
-1.14.2.42597
-15578@@@<Hidden> Adventure Awaits - Hit 60 with Buff Adventure Awaits
-1.14.3.42770
-15637@@@The Immortal
-1.15.1.53009
-19563@@@Unbroken Self-Found Soul
-20129@@@[DNT] Discoverer's Delight - Reach Level 25 in Phase 2 (hidden)
-20130@@@[DNT] Discoverer's Delight - Reach Level 40 in Phase 3 (hidden)
-20131@@@[DNT] Discoverer's Delight - Reach Level 50 in Phase 4 (hidden)
-20132@@@[DNT] Discoverer's Delight - Reach Level 60 in Phase 5 (hidden)
-20133@@@[DNT] Self-Found Soul (Level 1)
-20134@@@[DNT] Self-Found Soul (Level 10)
-20135@@@[DNT] Self-Found Soul (Level 20)
-20136@@@[DNT] Self-Found Soul (Level 30)
-20137@@@[DNT] Self-Found Soul (Level 40)
-20138@@@[DNT] Self-Found Soul (Level 50)
-20139@@@[DNT] Self-Found Soul (Level 60)
-20193@@@[DNT] Self-Found Soul (Removed Self-Found)
-1.15.2.53941
-40131@@@[DNT] Discoverer's Delight - Reach Level 40 in Phase 3 - Update (hidden)
-40132@@@[DNT] Discoverer's Delight - Reach Level 50 in Phase 3 (hidden)
-40133@@@[DNT] Discoverer's Delight - Reach Level 40 in Phase 3.5 - Update (hidden)
-40135@@@[DNT] Discoverer's Delight - Reach Level 50 in Phase 3.5 (hidden)
-40137@@@[DNT] Discoverer's Delight - Reach Level 50 in Phase 4 - Update (hidden)
-1.15.4.56573
-41008@@@Rune Learned - Shared Acquisition - Illari Duskfeather (40)
-41009@@@Rune Learned - Shared Acquisition - Dark Riders (40)
-41010@@@Rune Learned - Shared Acquisition - Ley Lines (50)
-41011@@@Rune Learned - Shared Acquisition - Wild Gods (50)
-2.5.1.39399
-15018@@@Infernal Gladiator
-15019@@@Gladiator: Season 1
-15020@@@Duelist: Season 1
-15021@@@Rival: Season 1
-15022@@@Challenger: Season 1
-15198@@@[DNT] BCC Arena Tournament - Vanquisher Title
-2.5.2.39570
-15199@@@Gladiator: Season 2
-15200@@@Gladiator: Season 4
-15201@@@Duelist: Season 4
-15202@@@Rival: Season 4
-15203@@@Challenger: Season 4
-15204@@@Gladiator: Season 3
-15205@@@Duelist: Season 3
-15206@@@Rival: Season 3
-15207@@@Challenger: Season 3
-15208@@@Duelist: Season 2
-15209@@@Rival: Season 2
-15210@@@Challenger: Season 2
-2.5.4.44833
-15853@@@<Hidden> Joyous Journeys - Hit 70 with Buff Joyous Journeys
-3.4.0.46158
-16313@@@Rival: Season 5
-16314@@@Gladiator: Season 5
-16315@@@Duelist: Season 5
-16316@@@Challenger: Season 5
-16332@@@The Perfect Pebble
-16397@@@[DNT] Heirloom Tracking - Bloodied Arcanite Reaper (Hidden)
-16433@@@Soul of Iron (Season of Mastery)
-16437@@@[DNT] Soul of Iron Tracker (Season of Mastery) (hidden)
-3.4.1.47966
-17213@@@Defense Protocol Alpha: Utgarde Keep
-17283@@@Defense Protocol Alpha: The Nexus
-17285@@@Defense Protocol Alpha: Azjol-Nerub
-17291@@@Defense Protocol Alpha: Ahn'kahet: The Old Kingdom
-17292@@@Defense Protocol Alpha: Drak'Tharon Keep
-17293@@@Defense Protocol Alpha: The Violet Hold
-17295@@@Defense Protocol Alpha: Gundrak
-17297@@@Defense Protocol Alpha: Halls of Stone
-17299@@@Defense Protocol Alpha: Halls of Lightning
-17300@@@Defense Protocol Alpha: The Oculus
-17301@@@Defense Protocol Alpha: Utgarde Pinnacle
-17302@@@Defense Protocol Alpha: The Culling of Stratholme
-17304@@@Defense Protocol Alpha: Terminated
-17328@@@[DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
-17340@@@Ahead of the Curve: Yogg-Saron
-17341@@@Cutting Edge: Ulduar
-3.4.2.49311
-17415@@@Rival: Season 6
-17416@@@Gladiator: Season 6
-17417@@@Duelist: Season 6
-17418@@@Challenger: Season 6
-18375@@@[DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
-18376@@@[DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
-3.4.2.49658
-18544@@@Rival: Season 7
-18545@@@Gladiator: Season 7
-18546@@@Duelist: Season 7
-18547@@@Challenger: Season 7
-18548@@@Rival: Season 8
-18549@@@Duelist: Season 8
-18550@@@Challenger: Season 8
-18551@@@Gladiator: Season 8
-3.4.2.49794
-18590@@@Defense Protocol Beta: Utgarde Keep
-18591@@@Defense Protocol Beta: The Nexus
-18592@@@Defense Protocol Beta: Azjol-Nerub
-18593@@@Defense Protocol Beta: Ahn'kahet: The Old Kingdom
-18594@@@Defense Protocol Beta: Drak'Tharon Keep
-18595@@@Defense Protocol Beta: The Violet Hold
-18596@@@Defense Protocol Beta: Gundrak
-18597@@@Defense Protocol Beta: Halls of Stone
-18598@@@Defense Protocol Beta: Halls of Lightning
-18599@@@Defense Protocol Beta: The Oculus
-18600@@@Defense Protocol Beta: Utgarde Pinnacle
-18601@@@Defense Protocol Beta: The Culling of Stratholme
-3.4.2.49871
-18614@@@Defense Protocol Beta: Terminated
-3.4.2.49979
-18677@@@Defense Protocol Beta: Trial of the Champion
-18678@@@Defense Protocol Beta: Trial of the Champion
-18688@@@Defense Protocol Beta: Terminated
-3.4.3.51470
-19425@@@Defense Protocol Gamma: Trial of the Champion
-19426@@@Defense Protocol Gamma: Trial of the Champion
-19427@@@Defense Protocol Gamma: Utgarde Keep
-19428@@@Defense Protocol Gamma: The Nexus
-19429@@@Defense Protocol Gamma: Azjol-Nerub
-19430@@@Defense Protocol Gamma: Ahn'kahet: The Old Kingdom
-19431@@@Defense Protocol Gamma: Drak'Tharon Keep
-19432@@@Defense Protocol Gamma: The Violet Hold
-19433@@@Defense Protocol Gamma: Gundrak
-19434@@@Defense Protocol Gamma: Halls of Stone
-19435@@@Defense Protocol Gamma: Halls of Lightning
-19436@@@Defense Protocol Gamma: The Oculus
-19437@@@Defense Protocol Gamma: Utgarde Pinnacle
-19438@@@Defense Protocol Gamma: The Culling of Stratholme
-19439@@@Defense Protocol Gamma: Terminated
-19440@@@Defense Protocol Gamma: Terminated
-3.4.3.55417
-40821@@@Successfully Stress Test CN Realms
-40841@@@[DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden) (copy)
-4.4.1.56464
-40968@@@Rival: Season 9
-40969@@@Gladiator: Season 9
-40970@@@ Duelist: Season 9
-40971@@@Challenger: Season 9
-4.4.1.56859
-41134@@@[DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden)
-41139@@@Protocol Inferno: Blackrock Caverns
-41140@@@Protocol Inferno: Throne of the Tides
-41141@@@Protocol Inferno: The Stonecore
-41142@@@Protocol Inferno: The Vortex Pinnacle
-41143@@@Protocol Inferno: Grim Batol
-41144@@@Protocol Inferno: Halls of Origination
-41145@@@Protocol Inferno: Lost City of the Tol'vir
-41146@@@Protocol Inferno: Deadmines
-41147@@@Protocol Inferno: Shadowfang Keep
-41148@@@Protocol Inferno: Terminated
+3.0.1.8874
+1274@@@Loremaster of Outland \\ Champion of Outland
+1360@@@Loremaster of Northrend \\ Champion of Northrend
+3.1.0.9767
+1677@@@Loremaster of Eastern Kingdoms
+1680@@@Loremaster of Kalimdor
+1681@@@The Loremaster
+1682@@@The Loremaster
+1784@@@Hail to the Chef
+3.3.5.12340
+3838@@@Dungeon & Raid Emblem
+3839@@@25 Dungeon & Raid Emblems
+3840@@@50 Dungeon & Raid Emblems
+3841@@@100 Dungeon & Raid Emblems
+3842@@@250 Dungeon & Raid Emblems
+3843@@@500 Dungeon & Raid Emblems
+3876@@@1500 Dungeon & Raid Emblems
+4784@@@Emblematic
+4785@@@Emblematic
+4.0.1.12911
+4983@@@Loremaster of Cataclysm
+4.3.4.15595
+5846@@@A Bunch of Lunch
+5852@@@Gone Fishin'

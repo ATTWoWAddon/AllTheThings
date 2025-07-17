@@ -6,7 +6,9 @@ COLLECTORS_EDITION = createHeader({
 	icon = [[~_.asset("Promotion_Collector")]],
 	text = {
 		en = "Collector's Edition",
+		es = "Edición de coleccionista",
 		fr = "Edition Collector",
+		mx = "Edición de coleccionista",
 		ru = "Коллекционное издание",
 		cn = "典藏版",
 		tw = "典藏版",
@@ -17,6 +19,8 @@ HEROIC_EDITION = createHeader({
 	icon = [[~_.asset("Weapon_Type_Heirloom")]],
 	text = {
 		en = "Heroic Edition",
+		es = "Edición Heroica",
+		mx = "Edición Heroica",
 		cn = "英雄礼包",
 		tw = "英雄版",
 	},
@@ -26,6 +30,8 @@ EPIC_EDITION = createHeader({
 	icon = [[~_.asset("Weapon_Type_Legendary")]],
 	text = {
 		en = "Epic Edition",
+		es = "Edición Épica",
+		mx = "Edición Épica",
 		cn = "史诗礼包",
 		tw = "史詩版",
 	},
@@ -35,7 +41,9 @@ TBC_CLASSIC_DELUXE_EDITION = createHeader({
 	icon = [[~_.asset("Expansion_TBC")]],
 	text = {
 		en = "TBC Classic Deluxe Edition",
+		es = "Edición TBC Classic Deluxe",
 		fr = "Édition BC Classic Deluxe",
+		mx = "Edición TBC Classic Deluxe",
 		cn = "燃烧的远征经典怀旧服典藏包",
 		tw = "燃燒的遠征：經典版 - 豪華版",
 	},
@@ -45,6 +53,8 @@ WOTLK_CLASSIC_NORTHREND_UPGRADE = createHeader({
 	icon = [[~_.asset("Expansion_WOTLK")]],
 	text = {
 		en = "WotLK Classic Northrend Upgrade",
+		es = "Pack Heroic Rasganorte WotLK Classic",
+		mx = "Paquete heroico Rasganorte WotLK Classic",
 		tw = "巫妖王之怒：經典版 - 北裂境升級",
 	},
 });
@@ -53,6 +63,8 @@ CATA_CLASSIC_BLAZING_UPGRADE = createHeader({
 	icon = [[~_.asset("Expansion_CATA")]],
 	text = {
 		en = "Cata Classic Blazing Upgrade",
+		es = "Pack Heroic llameante de Cataclysm Classic",
+		mx = "Paquete heroico abrasador de Cataclysm Classic",
 		tw = "浩劫與重生：經典版 - 熾炎升級",
 	},
 });
@@ -61,6 +73,8 @@ MOP_CLASSIC_HEROIC_PACK = createHeader({
 	icon = [[~_.asset("Expansion_MOP")]],
 	text = {
 		en = "MoP Classic Sha-Infused Heroic Pack",
+		es = "Pack Heroic imbuido de sha",
+		mx = "Paquete heroico infundido por los sha",
 		tw = "潘達利亞之謎：經典版 - 煞之灌注英雄版組合包",
 	},
 });
@@ -69,6 +83,8 @@ MIDNIGHT_TEMPORARY = createHeader({
 	icon = [[~_.asset("Expansion_MD")]],
 	text = {
 		en = "Midnight",
+		es = "Midnight",
+		mx = "Midnight",
 		cn = "至暗之夜",
 		-- tw = "至暗之夜",
 	},
@@ -328,7 +344,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 						17630,	-- Innkeeper Jovia <Innkeeper>
 					},
 					["groups"] = {
-						i(184865),	-- Reawakened Phase-Hunter
+						i(184865),	-- Reawakened Phase-Hunter (MOUNT!)
 						i(184871),	-- Dark Portal
 						i(38233),	-- Path of Illidan
 					},
@@ -388,7 +404,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			["description"] = "These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",
 			["questID"] = 70448,	-- Elite Northrend Expedition Supplies [Epic]
 			["g"] = {
-				i(192455),	-- Kalu'ak Whalebone Glider
+				i(192455),	-- Kalu'ak Whalebone Glider (MOUNT!)
 			},
 		}),
 	})),
@@ -397,7 +413,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		n(EPIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",
 			["g"] = {
-				mount(370770),	-- Tuskarr Shoreglider
+				mount(370770),	-- Tuskarr Shoreglider (MOUNT!)
 			},
 		}),
 	})),
@@ -516,17 +532,33 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				i(235287),	-- Sha-Warped Riding Tiger (MOUNT!)
 				i(235358),	-- Merriment (PET!)
 				i(235288),	-- Sha-Warped Tea Set (TOY!)
-				-- Ensemble: Stormstout's Sha-Warped Collection transmog
-				-- TODO: added in MoP Classic Prepatch
+				iensemble(238050, {	-- Ensemble: Stormstout's Sha-Warped Collection
+					["timeline"] = { ADDED_11_1_7 },
+				}),
 			},
 		}),
 	})),
 	-- #endif
-	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_7, REMOVED_6_2_2 } }, {
+	expansion(EXPANSION.WOD, bubbleDownSelf({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_5_4_7,
+			-- #else
+			ADDED_5_4_7,
+			-- #endif
+			REMOVED_6_2_2,
+		}
+	}, {
 		["description"] = "These rewards were made available to anyone who purchased a Collector's Edition of Warlords of Draenor.",
 		["groups"] = {
-			ach(8917),	-- Collector's Edition: Dread Hatchling
-			ach(8916),	-- Collector's Edition: Dread Raven
+			-- #if BEFORE 10.1.0
+			ach(8917, {	-- Collector's Edition: Dread Hatchling
+				["provider"] = { "i", 109014 },	-- Dread Hatchling
+			}),
+			ach(8916, {	-- Collector's Edition: Dread Raven
+				["provider"] = { "i", 109013 },	-- Dread Raven
+			}),
+			-- #endif
 			i(109014),	-- Dread Hatchling (PET!)
 			i(109013),	-- Dread Raven (MOUNT!)
 		},
@@ -845,16 +877,39 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 	})),
 
 	-- Other Blizzard Games
-	n(DIABLO_III, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_5_4_7 } }, {
+	n(DIABLO_III, bubbleDownSelf({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_5_0_4,
+			-- #else
+			ADDED_5_0_4,
+			REMOVED_5_4_7,
+			-- #endif
+		},
+	}, {
 		["description"] = "These rewards are available to anyone who purchases Diablo 3 Collection.",
 		["groups"] = {
 			ach(7412),	-- Collector's Edition: Fetish Shaman
 			i(76062, {	-- Fetish Shaman (PET!)
-				["timeline"] = { CREATED_4_3_0, ADDED_5_0_4 },
+				["timeline"] = {
+					CREATED_4_3_0,
+					-- #if NOT ANYCLASSIC
+					ADDED_5_0_4,
+					REMOVED_5_4_7,
+					-- #endif
+				},
 			}),
 		},
 	})),
-	n(DIABLO_III_REAPER_OF_SOULS, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_2 } }, {
+	n(DIABLO_III_REAPER_OF_SOULS, bubbleDownSelf({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_5_4_2,
+			-- #else
+			ADDED_5_4_2,
+			-- #endif
+		},
+	}, {
 		["description"] = "These rewards are available to anyone who purchases Diablo 3: Reaper of Souls Collection.",
 		["groups"] = {
 			ach(8795),	-- Collector's Edition: Treasure Goblin
@@ -875,14 +930,30 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 			i(134047),	-- Baby Winston (PET!)
 		},
 	})),
-	n(STARCRAFT_II_WINGS_OF_LIBERTY, bubbleDownSelf({ ["timeline"] = { ADDED_3_3_5 } }, {
+	n(STARCRAFT_II_WINGS_OF_LIBERTY, bubbleDownSelf({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_3_3_5,
+			-- #else
+			ADDED_3_3_5,
+			-- #endif
+		},
+	}, {
 		["description"] = "These rewards are available to anyone who purchases Starcraft 2: Wings of Liberty Collection.",
 		["groups"] = {
 			ach(4824),	-- Collector's Edition: Mini Thor
 			i(56806),	-- Mini Thor (PET!)
 		},
 	})),
-	n(STARCRAFT_II_HEART_OF_THE_SWARM, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+	n(STARCRAFT_II_HEART_OF_THE_SWARM, bubbleDownSelf({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_5_0_4,
+			-- #else
+			ADDED_5_0_4,
+			-- #endif
+		},
+	}, {
 		["description"] = "These rewards are available to anyone who purchases Starcraft 2: Heart of the Swarm Collection.",
 		["groups"] = {
 			ach(7842),	-- Collector's Edition: Baneling

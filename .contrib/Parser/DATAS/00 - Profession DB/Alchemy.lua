@@ -35,6 +35,12 @@ i(234252, 1213544);	-- Flask of Unyielding Sorrow
 i(234253, 1213546);	-- Flask of Ancient Knowledge
 i(234255, 1213548);	-- Flask of the Old Gods
 i(234256, 1213552);	-- Flask of Madness
+
+------------------
+-- PATCH 1.15.7 --
+------------------
+--- QUEST ---
+i(241651, 1231583);	-- Major Discolored Healing Potion
 -- #endif
 
 -----------------

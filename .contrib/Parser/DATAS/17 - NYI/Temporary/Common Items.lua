@@ -314,9 +314,6 @@ root(ROOTS.NeverImplemented, {
 					n(WRIST, {
 						i(53356),	-- Beast Tracker's Bracers
 					}),
-					n(HANDS, {
-						i(53385),	-- Rockbitten Gloves
-					}),
 					n(WAIST, {
 						i(49534),	-- Goblin Primitive's Belt
 					}),
@@ -414,10 +411,6 @@ root(ROOTS.NeverImplemented, {
 					i(90145),	-- Fillet Knife
 					i(72036),	-- Placeholder Dagger 1
 					i(72037),	-- Placeholder Dagger 2
-				}),
-				filter(FIST_WEAPONS, {
-					i(77278),	-- Trainee's Handwrap
-					i(77279),	-- Trainee's Handwrap
 				}),
 				filter(HELD_IN_OFF_HAND, {
 					i(72034),	-- Placeholder Offhand 1

@@ -12,7 +12,9 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				ach(4926, {	-- Bloodmyst Isle Quests
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					-- #if ANYCLASSIC
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
+					-- #else
 					["sourceQuests"] = {
 						9700,	-- I Shoot Magic Into the Darkness
 						9711,	-- Matis the Cruel
@@ -28,7 +30,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					-- #endif
 				}),
-				explorationAch(861),	-- Explore Bloodmyst Isle
+				ach(861),	-- Explore Bloodmyst Isle
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",
@@ -1319,6 +1321,9 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						i(31256),	-- Silvermoon Armor
 					},
 				}),
+			}),
+			n(TREASURES, {
+				o(19017),	-- Giant Clam
 			}),
 			n(VENDORS, {
 				n(18427, {	-- Fazu <Tradesman>

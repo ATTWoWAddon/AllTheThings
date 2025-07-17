@@ -7,6 +7,8 @@ FILLED_TRAVELERS_LOG = createHeader({
 	icon = 4696085,
 	text = {
 		en = "Filled Travelers Log",
+		es = "Llenar el registro del viajero",
+		mx = "Llenar el registro del viajero",
 		cn = "旅行者日志进度",
 		tw = "完成旅行者日誌",
 	},
@@ -137,24 +139,21 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			["isYearly"] = true,
 			["maps"] = { DORNOGAL },
 		}),
-		-- Future trading post quests - unknown timeline
-		--[[
 		q(81719, {	-- Report to the Trading Post -- May 2025
-			["timeline"] = { TODO },
+			["timeline"] = { ADDED_11_1_5 },
 			["isYearly"] = true,
 			["maps"] = { DORNOGAL },
 		}),
 		q(81720, {	-- Report to the Trading Post -- June 2025
-			["timeline"] = { TODO },
+			["timeline"] = { ADDED_11_1_5 },
 			["isYearly"] = true,
 			["maps"] = { DORNOGAL },
 		}),
 		q(81721, {	-- Report to the Trading Post -- July 2025
-			["timeline"] = { TODO },
+			["timeline"] = { ADDED_11_1_7 },
 			["isYearly"] = true,
 			["maps"] = { DORNOGAL },
 		}),
-		]]--
 	}),
 	n(YEAR2023, {
 		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5, REMOVED_10_0_5 } }, {
@@ -2970,7 +2969,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(APRIL, bubbleDownSelf({ ["timeline"] = { "added 11.1.0.60037", "removed 11.1.5.99999" } }, {	-- TODO: Timeline out correctly
+		n(APRIL, bubbleDownSelf({ ["timeline"] = { "added 11.1.0.60037", "removed 11.1.5.60568" } }, {
 			n(FILLED_TRAVELERS_LOG, {
 				iensemble(235664),	-- Ensemble: Topsy Turvy Mask Set
 			}),
@@ -2984,8 +2983,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(235556, {	-- Violet Darkmoon Charger (MOUNT!)
 					["cost"] = {{"c", TRADERS_TENDER, 575}},
 				}),
-			}),
-			filter(BATTLE_PETS, {
 			}),
 			filter(TOYS, {
 				i(212500, {	-- Delicate Silk Parasol (TOY!)
@@ -3026,7 +3023,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				iensemble(212940, {	-- Ensemble: Spring Reveler's Lavender Collection
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
 				}),
-				i(230170, {	-- Ensemble: Prowler's Camo Headgear
+				iensemble(230170, {	-- Ensemble: Prowler's Camo Headgear
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 				}),
 				i(212787, {	-- Gloves of the Violet Gala
@@ -3062,6 +3059,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(234573, {	-- Topsy Turvy Clown's Blade
 					["cost"] = {{"c", TRADERS_TENDER, 140}},
 				}),
+				i(234724, {	-- Topsy Turvy Clown's Cleaver
+					["cost"] = {{"c", TRADERS_TENDER, 140}},
+				}),
 				i(234725, {	-- Topsy Turvy Jester's Cleaver
 					["cost"] = {{"c", TRADERS_TENDER, 140}},
 				}),
@@ -3082,6 +3082,367 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(235031, {	-- Vigilante's Plum Mask
 					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+			}),
+		})),
+		n(MAY, bubbleDownSelf({ ["timeline"] = { "added 11.1.5.60568", "removed 11.1.5.61122" } }, {
+			n(FILLED_TRAVELERS_LOG, {
+				i(238942)	-- Weechi (PET!)
+			}),
+			filter(MOUNTS, {
+				i(192766, {	-- Amber Skitterfly (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 600}},
+				}),
+				i(210141, {	-- Brown-Furred Spiky Bakar (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 325}},
+				}),
+				i(238897, {	-- Spring Harvesthog (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 550}},
+				}),
+			}),
+			filter(BATTLE_PETS, {
+				i(236409, {	-- Frumpy Softpaw (PET!)
+					["cost"] = {{"c", TRADERS_TENDER, 350}},
+				}),
+				i(34492, {	-- Rocket Chicken (PET!)
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+			}),
+			filter(COSMETIC, {
+				i(233170, {	-- Banded Azure War Slippers
+					["cost"] = {{"c", TRADERS_TENDER, 20}},
+				}),
+				i(233153, {	-- Banded Azure War Wraps
+					["cost"] = {{"c", TRADERS_TENDER, 20}},
+				}),
+				i(233182, {	-- Banded Violet War Slippers
+					["cost"] = {{"c", TRADERS_TENDER, 20}},
+				}),
+				i(233165, {	-- Banded Violet War Wraps
+					["cost"] = {{"c", TRADERS_TENDER, 20}},
+				}),
+				i(236630, {	-- Deathwarder's Blood Blade
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(237183, {	-- Deathwarder's Blood Fetish
+					["cost"] = {{"c", TRADERS_TENDER, 90}},
+				}),
+				i(237179, {	-- Deathwarder's Blood Fist
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(236405, {	-- Deathwarder's Blood Stave
+					["cost"] = {{"c", TRADERS_TENDER, 175}},
+				}),
+				i(238959, {	-- Deathwarder's Great Blood Blade
+					["cost"] = {{"c", TRADERS_TENDER, 180}},
+				}),
+				iensemble(237224, {	-- Ensemble: Attire of the Swift Fox
+					["cost"] = {{"c", TRADERS_TENDER, 440}},
+				}),
+				iensemble(237222, {	-- Ensemble: Attire of the Woodland Racoon
+					["cost"] = {{"c", TRADERS_TENDER, 440}},
+				}),
+				i(217374,{	-- Frenzied Hat of the Shallows
+					["cost"] = {{"c", TRADERS_TENDER, 175}},
+				}),
+				i(235985, {	-- Heroic Half Shell
+					["cost"] = {{"c", TRADERS_TENDER, 225}},
+				}),
+				i(190860, { -- Initiate's Bo
+					["cost"] = {{"c", TRADERS_TENDER, 60}},
+				}),
+				i(238252, {	-- Large Renaissance Katana
+					["cost"] = {{"c", TRADERS_TENDER, 130}},
+				}),
+				i(213065, {	-- Lavish Floral Edge
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+				i(213068, {	-- Lavish Floral Stalk
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+				i(233097, {	-- Long Azure War Skirt
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(233136, {	-- Long Azure War Skirt and Leg Wraps
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(233148, {	-- Long Violet War Skirt and Leg Wraps
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(233109, {	-- Long Violet War Skirt
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(236627, {	-- Night Hag's Blade
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(237176, {	-- Night Hag's Claw
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(237180, {	-- Night Hag's Fetish
+					["cost"] = {{"c", TRADERS_TENDER, 90}},
+				}),
+				i(238956, {	-- Night Hag's Great Blade
+					["cost"] = {{"c", TRADERS_TENDER, 180}},
+				}),
+				i(236402, {	-- Night Hag's Stave
+					["cost"] = {{"c", TRADERS_TENDER, 175}},
+				}),
+				i(237343, {	-- Nunchuck of the Renaissance
+					["cost"] = {{"c", TRADERS_TENDER, 120}},
+				}),
+				i(238217, {	-- Offhand Renaissance Nunchuck
+					["cost"] = {{"c", TRADERS_TENDER, 120}},
+				}),
+				i(213062, {	-- Paradise's Golden Axe
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+				i(237344, {	-- Renaissance Katana
+					["cost"] = {{"c", TRADERS_TENDER, 110}},
+				}),
+				i(237342, {	-- Renaissance Sai
+					["cost"] = {{"c", TRADERS_TENDER, 120}},
+				}),
+				i(233080, {	-- Short Azure War Skirt
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(233117, {	-- Short Azure War Skirt and Leg Wraps
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(233092, {	-- Short Violet War Skirt
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(233131, {	-- Short Violet War Skirt and Leg Wraps
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(213071, {	-- Sunny Floral Staff
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+				i(213075, {	-- Sunny Bow-quet
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+				i(235020, {	-- Vigilante's Azure Mask
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(235029, {	-- Vigilante's Carrot Mask
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(235032, {	-- Vigilante's Crimson Mask
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(235033, {	-- Vigilante's Violet Mask
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+			}),
+		})),
+		n(JUNE, bubbleDownSelf({ ["timeline"] = { "added 11.1.5.61122", "removed 11.1.7.61609" } }, {
+			n(FILLED_TRAVELERS_LOG, {
+				i(238967),	-- Molten Cormaera (MOUNT!)
+			}),
+			filter(MOUNTS, {
+				i(238941, {	-- Coldflame Cormaera (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 700}},
+				}),
+				i(221814, {	-- Pearlescent Goblin Wave Shredder (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 700}},
+				}),
+				i(236415, {	-- Reins of the Spotted Black Riding Goat (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 325}},
+				}),
+			}),
+			filter(BATTLE_PETS, {
+				i(223145, {	-- Marrlok (PET!)
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+				}),
+			}),
+			filter(TOYS, {
+				i(218112, {	-- Colorful Beach Chair (TOY!)
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+			}),
+			filter(COSMETIC, {
+				i(238947, {	-- Arcano-Stone Greathelm
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+				i(233176, {	-- Banded Brick War Slippers
+					["cost"] = {{"c", TRADERS_TENDER, 20}},
+				}),
+				i(233159, {	-- Banded Brick War Wraps
+					["cost"] = {{"c", TRADERS_TENDER, 20}},
+				}),
+				i(238397, {	-- Coldflame Chopper
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(238892, {	-- Coldflame's Bite
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(238951, {	-- Coldflame Burner
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				iensemble(238418, {	-- Ensemble: Coldflame Battlegear
+					["cost"] = {{"c", TRADERS_TENDER, 550}},
+				}),
+				iensemble(238438, {	-- Ensemble: Lavaborn Battleplate
+					["cost"] = {{"c", TRADERS_TENDER, 550}},
+				}),
+				iensemble(230171, {	-- Ensemble: Prowler's Brick Headgear
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				iensemble(221542, {	-- Ensemble: Sunny Tropical Beachwear
+					["cost"] = {{"c", TRADERS_TENDER, 650}},
+				}),
+				iensemble(222961, {	-- Ensemble: Sunny Tropical Swimwear
+					["cost"] = {{"c", TRADERS_TENDER, 650}},
+				}),
+				i(238894, {	-- Lavaborn Barb
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(238399, {	-- Lavaborn Ruby's Edge
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(233103, {	-- Long Brick War Skirt
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(233142, {	-- Long Brick War Skirt and Leg Wraps
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(238950, {	-- Molten Inferno Helm
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+				i(230039, {	-- Prowler's Brick Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				i(238953, {	-- Red Flame Burner
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(233086, {	-- Short Brick War Skirt
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(233125, {	-- Short Brick War Skirt and Leg Wraps
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(237856, {	-- Sunwell Bardiche
+					["cost"] = {{"c", TRADERS_TENDER, 245}},
+				}),
+				i(235026, {	-- Vigilante's Brick Mask
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(237854, {	-- Voidstorm Bardiche
+					["cost"] = {{"c", TRADERS_TENDER, 245}},
+				}),
+			}),
+		})),
+		n(JULY, bubbleDownSelf({ ["timeline"] = { "added 11.1.7.61609", "removed 11.1.7.99999" } }, {	-- TODO: Timeline /out correctly
+			n(FILLED_TRAVELERS_LOG, {
+				i(242522, {	-- Forsaken's Grotesque Cauldron
+					-- #if BEFORE 11.2.0
+					["description"] = "Rewarded when reaching 600 points in the Travelers Log."
+					-- #endif
+				}),
+				iensemble(244225, {	-- Ensemble: Forsaken's Grotesque Collection
+					-- #if BEFORE 11.2.0
+					["description"] = "Rewarded when reaching 1000 points in the Travelers Log."
+					-- #endif
+				}),
+				i(243594, {	-- Forsaken's Grotesque Charger (MOUNT!)
+					-- #if BEFORE 11.2.0
+					["description"] = "Rewarded when reaching 1400 points in the Travelers Log."
+					-- #endif
+				}),
+			}),
+			filter(MOUNTS, {
+				i(245936, {	-- Unarmored Deathtusk Felboar (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 325}},
+				}),
+				i(243596, {	-- Wailing Banshee's Charger (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 575}},
+				}),
+			}),
+			filter(BATTLE_PETS, {
+				i(206174, {	-- Blub (PET!)
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+				}),
+			}),
+			filter(COSMETIC, {
+				i(245745, {	-- Classic Plum Tabard
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(213155, {	-- Dark Ranger General's Quiver
+					["cost"] = {{"c", TRADERS_TENDER, 175}},
+				}),
+				i(223166, {	-- Deepsea Treasure Pack
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+				i(212618, {	-- Dueler's Plum Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				iensemble(223244, {	-- Ensemble: Deepest Depths Diver Suit
+					["cost"] = {{"c", TRADERS_TENDER, 800}},
+				}),
+				iensemble(242466, {	-- Ensemble: Lively Sweatsuit
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				iensemble(242474, {	-- Ensemble: Plum Sweatsuit
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				iensemble(206323, {	-- Ensemble: Vagabond's Plum Threads
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				iensemble(244226, {	-- Ensemble: Wailing Banshee's Collection
+					["cost"] = {{"c", TRADERS_TENDER, 700}},
+				}),
+				iensemble(206334, {	-- Ensemble: Wanderer's Plum Trappings
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(242628, {	-- Forsaken's Grotesque Blade
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(242632, {	-- Forsaken's Grotesque Great Blade
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(242377, {	-- Forsaken's Grotesque Longbow
+					["cost"] = {{"c", TRADERS_TENDER, 175}},
+				}),
+				i(242349, {	-- Forsaken's Grotesque Mace
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(242382, {	-- Forsaken's Grotesque Quiver
+					["cost"] = {{"c", TRADERS_TENDER, 175}},
+				}),
+				i(242387, {	-- Forsaken's Grotesque Wand
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(242353, {	-- Forsaken's Grotesque Warglaives
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(210859, {	-- Trader's Plum Sarong
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(223165, {	-- Vengeful Crusader's Helm
+					["cost"] = {{"c", TRADERS_TENDER, 225}},
+				}),
+				i(242629, {	-- Wailing Banshee's Blade
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(242523, {	-- Wailing Banshee's Cauldron
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(242633, {	-- Wailing Banshee's Great Blade
+					["cost"] = {{"c", TRADERS_TENDER, 245}},
+				}),
+				i(242378, {	-- Wailing Banshee's Longbow
+					["cost"] = {{"c", TRADERS_TENDER, 175}},
+				}),
+				i(242350, {	-- Wailing Banshee's Mace
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(242383, {	-- Wailing Banshee's Quiver
+					["cost"] = {{"c", TRADERS_TENDER, 175}},
+				}),
+				i(242388, {	-- Wailing Banshee's Wand
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(242354, {	-- Wailing Banshee's Warglaives
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
 				}),
 			}),
 		})),
@@ -3108,7 +3469,7 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(COSMETIC, {
 			-- 10.0.0
-			expansion(EXPANSION.DF, patch(0,01), bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+			expansion(EXPANSION.DF, patch(0,0,1), bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 				n(SETS, {
 					------ Honored Valarjar Set [Mail] ------
 					i(190563),	-- Armbands of the Honored Valarjar
@@ -3298,11 +3659,6 @@ root(ROOTS.NeverImplemented, {
 					i(206285),	-- Vagabond's Grassy Cape
 					i(206296),	-- Vagabond's Grassy Hood
 
-					------ Vagabond's Plum Threads ------
-					i(206323),	-- Ensemble: Vagabond's Plum Threads
-					i(206279),	-- Vagabond's Plum Cape
-					i(206290),	-- Vagabond's Plum Hood
-
 					------ Wanderer's Deep Trappings ------
 					i(206316),	-- Wanderer's Deep Cloak
 					i(206305),	-- Wanderer's Deep Scarf
@@ -3312,10 +3668,6 @@ root(ROOTS.NeverImplemented, {
 					i(206318),	-- Wanderer's Grassy Cloak
 					i(206307),	-- Wanderer's Grassy Scarf
 
-					------ Wanderer's Plum Trappings ------
-					i(206334),	-- Ensemble: Wanderer's Plum Trappings
-					i(206312),	-- Wanderer's Plum Cloak
-					i(206301),	-- Wanderer's Plum Scarf
 				}),
 				n(WEAPONS, {
 					i(190561),	-- Crystalblade of Shifting Magic
@@ -3327,7 +3679,6 @@ root(ROOTS.NeverImplemented, {
 				n(ARMOR, {
 					i(210856),	-- Trader's Faded Sarong
 					i(210851),	-- Trader's Grassy Sarong
-					i(210859),	-- Trader's Plum Sarong
 				}),
 				n(WEAPONS, {
 					i(190875),	-- Chilled Touch of the Condemned
@@ -3343,7 +3694,6 @@ root(ROOTS.NeverImplemented, {
 					i(190847),	-- Deathmantle Assassin's Barb
 					i(190090),	-- Dessicated Bouquet
 					i(212625),	-- Dueler's Grassy Shoulder Cape
-					i(212618),	-- Dueler's Plum Shoulder Cape
 					i(190893),	-- Jeweled Valkyrion Cape
 					i(190688),	-- Silvered Helm of Righteousness
 					i(212705),	-- Spring Reveler's Cornsilk Attire

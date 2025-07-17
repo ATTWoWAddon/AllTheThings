@@ -432,9 +432,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["provider"] = { "n", 177569 },	-- The Primus
 					["coord"] = { 50.2, 58.4, 1912 },	-- The Runecarver's Oubliette
 					["g"] = {
-						i(185965, {	-- Memories of Sunless Skies
-							["questID"] = 63893,
-						}),
+						i(185965),	-- Memories of Sunless Skies (CI!)
 					},
 				}),
 				------ Chapter 5 ------
@@ -893,7 +891,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["isBreadcrumb"] = true,
 			}),
 			q(64567, {	-- The Missing Scholar
-				["sourceQuests"] = { 64106 },	-- A Unified Effort
 				["provider"] = { "n", 177927 },	-- Tal-Galan
 				["coord"] = { 62.7, 24.8, KORTHIA },
 				["altQuests"] = { 63731 },	-- Researching Korthian Relics
@@ -965,7 +962,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 
 				-- They Could Be Anyone --
 			q(63755, {	-- A Matter of Urgency
-				["sourceQuests"] = { 64106 },	-- A Unified Effort
 				["provider"] = { "n", 177155 },	-- Pathscribe Roh-Vess
 				["coord"] = { 65.1, 23.1, KORTHIA },
 			}),
@@ -1047,7 +1043,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			q(63899, {	-- Book of Binding: The Mad Witch
 				["description"] = "At the end of the top level of the cave.",
 				["sourceQuests"] = { 64506 },	-- What Must Be Found
-				["provider"] = { "i", 187206 },	-- Book of Binding: The Mad Witch
+				["provider"] = { "o", 368432 },	-- Whispering Book Binding
 				["coord"] = { 27.2, 56.8, KORTHIA },
 				["g"] = {
 					i(187206),	-- Book of Binding: The Mad Witch (QI!)
@@ -1056,7 +1052,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			}),
 			q(63912, {	-- Celestial Shadowlands Chart
 				["sourceQuests"] = { 64506 },	-- What Must Be Found
-				["provider"] = { "i", 187201 },	-- Celestial Shadowlands Chart
+				["provider"] = { "o", 369257 },	-- Celestial Shadowlands Chart
 				["coord"] = { 45.5, 56.0, KORTHIA },
 				["g"] = {
 					i(185757),	-- Afterlife Navigation Research (QI!)
@@ -1076,7 +1072,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			}),
 			q(63911, {	-- Singing Steel Ingot
 				["sourceQuests"] = { 64506 },	-- What Must Be Found
-				["provider"] = { "i", 187200 },	-- Singing Steel Ingot
+				["provider"] = { "o", 369254 },	-- Singing Steel Ingot
 				["coord"] = { 62.1, 56.8, KORTHIA },
 				["g"] = {
 					i(187200),	-- Singing Steel Ingot (QI!)
@@ -1084,7 +1080,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			}),
 			q(63860, {	-- Talisman of the Eternal Scholar
 				["sourceQuests"] = { 64506 },	-- What Must Be Found
-				["provider"] = { "i", 185914 },	-- Damaged Talisman
+				["provider"] = { "o", 368302 },	-- Talisman of the Eternal Scholar
 				["coord"] = { 40.6, 41.3, KORTHIA },
 				["g"] = {
 					i(185914),	-- Damaged Talisman (QI!)
@@ -1132,7 +1128,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 3 },	-- Tier 3
 			}),
 			q(63915, {	-- Drum of the Death Loa
-				["provider"] = { "i", 187204 },	-- Drum of the Death Loa
+				["provider"] = { "o", 369287 },	-- Drum of the Death Loa
 				["coord"] = { 39.3, 52.4, KORTHIA },
 				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
 				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 3 },	-- Tier 3
@@ -1147,8 +1143,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 3 },	-- Tier 3
 			}),
 			q(63916, {	-- Sack of Strange Soil
-				["provider"] = { "i", 187205 },	-- Sack of Strange Soil
-				["coord"] = { 45.0, 35.5, KORTHIA },
+				["provider"] = { "o", 369288 },	-- Sack of Strange Soil
+				["coord"] = { 55.3, 28.6, KORTHIA },
 				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
 				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 3 },	-- Tier 3
 				["g"] = {
@@ -1169,9 +1165,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			}),
 			q(63919, {	-- Book of Binding: The Tormented Sorceror
 				["sourceQuests"] = { 64526 },	-- Mysterious Rifts
-				["provider"] = { "i", 187210 },	-- Book of Binding: The Tormented Sorceror
+				["provider"] = { "n", 179956 },	-- Blue Book
 				["coord"] = { 60.8, 34.8, KORTHIA },
-				["cr"] = 179956,	-- Blue Book
 				["g"] = {
 					i(187117),	-- Azure Pages (QI!)
 					i(187210),	-- Book of Binding: The Tormented Sorcerer (QI!)
@@ -1179,27 +1174,24 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			}),
 			q(63914, {	-- Cipher of Understanding
 				["sourceQuests"] = { 64526 },	-- Mysterious Rifts
-				["provider"] = { "i", 187203 },	-- Cipher of Understanding
+				["provider"] = { "n", 179922 },	-- Cipher of Understanding
 				["coord"] = { 28.9, 54.2, KORTHIA },
-				["cr"] = 179922,	-- Cipher of Understanding
 				["g"] = {
 					i(187203),	-- Cipher of Understanding (QI!)
 				},
 			}),
 			q(63920, {	-- Enigmatic Decrypting Device
 				["sourceQuests"] = { 64526 },	-- Mysterious Rifts
-				["provider"] = { "i", 187207 },	-- Enigmatic Decrypting Device
+				["provider"] = { "n", 179968 },	-- Enigmatic Decrypting Device
 				["coord"] = { 51.9, 52.6, KORTHIA },
-				["cr"] = 179968,	-- Enigmatic Decrypting Device
 				["g"] = {
 					i(187207),	-- Enigmatic Decrypting Device (QI!)
 				},
 			}),
 			q(63913, {	-- Unstable Sin'dorei Explosive
 				["sourceQuests"] = { 64526 },	-- Mysterious Rifts
-				["provider"] = { "i", 187202 },	-- Unstable Sin'dorei Explosive
+				["provider"] = { "n", 179902 },	-- Unstable Sin'dorei Explosive
 				["coord"] = { 51.4, 20.1, KORTHIA },
-				["cr"] = 179902,	-- Unstable Sin'dorei Explosive
 				["g"] = {
 					i(187202),	-- Unstable Explosive Orb (QI!)
 				},
@@ -1213,7 +1205,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			q(63908, {	-- Bulwark of Divine Intent
 				["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
 				["sourceQuests"] = { 64532 },	-- The Final Relics
-				["provider"] = { "i", 186014 },	-- Bulwark of Divine Intent
+				["provider"] = { "o", 368438 },	-- Glowing Shield
 				["coord"] = { 18.5, 38.0, KORTHIA },
 				["g"] = {
 					i(186014),	-- Bulwark of Divine Intent (QI!)
@@ -1222,7 +1214,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			q(63923, {	-- Lang Family Wood-Carving
 				["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
 				["sourceQuests"] = { 64532 },	-- The Final Relics
-				["provider"] = { "i", 187209 },	-- Lang Family Wood-Carving
+				["provider"] = { "o", 369342 },	-- Pandaren Wood Carving
 				["coord"] = { 24.3, 56.6, KORTHIA },
 				["g"] = {
 					i(187209),	-- Lang Family Wood-Carving (QI!)
@@ -1231,7 +1223,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			q(63922, {	-- Shadow Slicing Shortsword
 				["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
 				["sourceQuests"] = { 64532 },	-- The Final Relics
-				["provider"] = { "i", 187208 },	-- Shadow Slicing Shortsword
+				["provider"] = { "o", 369319 },	-- Shadow Slicing Shortsword
 				["coord"] = { 39.4, 42.6, KORTHIA },
 				["g"] = {
 					i(187208),	-- Shadow Slicing Shortsword (QI!)
@@ -1299,21 +1291,27 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			})),
 			q(65020, {	-- Practical Applications
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-				["coord"] = { 62.8, 22.6, KORTHIA },
+				["coords"] = {
+					{ 62.8, 22.6, KORTHIA },
+					{ 61.6, 21.8, KORTHIA },	-- prior to RP finished after 63738 completion
+				},
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			q(64289, {	-- Picking Up the Pieces
 				["sourceQuests"] = { 63738 },	-- Establishing the Archive
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coords"] = {
-					{ 62.7, 22.5, KORTHIA },
-					{ 61.6, 21.8, KORTHIA },
+					{ 62.8, 22.6, KORTHIA },
+					{ 61.6, 21.8, KORTHIA },	-- prior to RP finished after 63738 completion
 				},
 			}),
 			q(65145, {	-- Relic Clues
 				["sourceQuest"] = 63861,	-- Beginning the Collection
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-				["coord"] = { 62.8, 22.6, KORTHIA },
+				["coords"] = {
+					{ 62.8, 22.6, KORTHIA },
+					{ 61.6, 21.8, KORTHIA },	-- prior to RP finished after 63738 completion
+				},
 				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 3 },	-- Tier 3
 				["timeline"] = { ADDED_9_1_5 },
 			}),
@@ -1694,8 +1692,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			q(65266, {	-- Lost Research
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coords"] = {
-					{ 62.7, 22.5, KORTHIA },
-					{ 61.6, 21.8, KORTHIA },
+					{ 62.8, 22.6, KORTHIA },
+					{ 61.6, 21.8, KORTHIA },	-- prior to RP finished after 63738 completion
 				},
 				["timeline"] = { ADDED_9_1_5 },
 				["isWeekly"] = true,

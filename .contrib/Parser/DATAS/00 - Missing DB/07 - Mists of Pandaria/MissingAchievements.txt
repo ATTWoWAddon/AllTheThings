@@ -1,0 +1,33 @@
+5.0.3.15882
+ach(6941),	-- Hero of the Horde
+ach(6942),	-- Hero of the Alliance
+5.5.0.60481
+ach(7274),	-- Learning from the Best
+5.5.0.60700
+ach(42242),	-- [DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden) \\ [DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden) (copy) (copy)
+5.5.0.61217
+ach(42762),	-- Challenger: Season 12
+ach(42763),	-- Duelist: Season 12
+ach(42764),	-- Rival: Season 12
+ach(42765),	-- Gladiator: Season 12
+ach(42772),	-- Rival: Season 11
+ach(42774),	-- Duelist: Season 11
+ach(42775),	-- Challenger: Season 11
+ach(42776),	-- Cataclysmic Gladiator
+ach(42777),	-- Gladiator: Season 11
+5.5.0.61411
+ach(60892),	-- Celestial: Temple of the Jade Serpent
+ach(60893),	-- Celestial: Stormstout Brewery
+ach(60894),	-- Celestial: Mogu'shan Palace
+ach(60895),	-- Celestial: Shado-Pan Monastery
+ach(60896),	-- Celestial: Gate of the Setting Sun
+ach(60897),	-- Celestial: Scarlet Halls
+ach(60898),	-- Celestial: Scarlet Monastery
+ach(60899),	-- Celestial: Scholomance
+ach(60900),	-- Celestial: Siege of Niuzao Temple
+ach(60901),	-- Pandaria Celestial Hero
+5.5.0.61496
+ach(60907),	-- Realm First! Will of the Emperor (10 player)
+ach(60908),	-- Realm First! Grand Empress Shek'zeer (10 player)
+ach(60909),	-- Realm First! Sha of Fear (10 player)
+ach(60910),	-- Realm First! Ra-den (10 player)

@@ -11,6 +11,7 @@ STRANGLETHORN_FISHING_EXTRAVAGANZA_HEADER = createHeader({
 		de = "Anglerwettbewerb im Schlingendorntal",
 		fr = "Concours de pêche de Strangleronce",
 		it = "Gara di Pesca a Rovotorto",
+		mx = "Gran espectáculo de pesca de Tuercespina",
 		ko = "가시덤불 골짜기 낚시왕 선발대회",
 		pt = "Festerê de Pesca da Selva do Espinhaço",
 		ru = "Рыбомания Тернистой долины",
@@ -236,7 +237,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					i(19803),	-- Brownell's Blue Striped Racer
 					i(19806),	-- Dezian Queenfish
 					i(19805),	-- Keefer's Angelfish
-					i(19808),	-- Rockhide Strongfish
+					i(19808, {	-- Rockhide Strongfish
+						["description"] = 
+							-- #if BEFORE LEGION
+							"Keep this in your bank until Transmog is added, otherwise you'll need to obtain it again. Fair warning!",
+							-- #elseif AFTER TWW
+							"Keep this in your bank until the appearance can be learned again, otherwise you'll need to obtain it again. Fair warning!",
+							-- #else
+							nil,
+							-- #endif
+						-- #if AFTER TWW
+						["collectible"] = false,  -- remove when Blizzard fix fish collection
+						-- #endif
+					}),
 					i(19807),	-- Speckled Tastyfish
 				}
 			}),

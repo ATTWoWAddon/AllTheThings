@@ -478,7 +478,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							applyclassicphase(PHASE_THREE_ENCHANTS, i(19445)),	-- Formula: Enchant Weapon - Agility (RECIPE!)
 							applyclassicphase(PHASE_THREE_RECIPES, i(19202)),	-- Plans: Heavy Timbermaw Belt (RECIPE!)
 							applyclassicphase(PHASE_THREE_RECIPES, i(19326)),	-- Pattern: Might of the Timbermaw (RECIPE!)
-							applyclassicphase(PHASE_THREE_RECIPES, i(19215)),	-- Pattern: Wisdom of the Timbermaw
+							applyclassicphase(PHASE_THREE_RECIPES, i(19215)),	-- Pattern: Wisdom of the Timbermaw (RECIPE!)
 							-- #if SEASON_OF_DISCOVERY
 							-- EPIC CRAFTED ITEMS UPGRADES
 							applyclassicphase(SOD_PHASE_FOUR, i(227807, {	-- Dense Timbermaw Belt
@@ -579,7 +579,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								["timeline"] = { ADDED_1_15_3 },
 							})),
 							-- #endif
-							applyclassicphase(PHASE_THREE_RECIPES, i(19218)),	-- Pattern: Mantle of the Timbermaw
+							applyclassicphase(PHASE_THREE_RECIPES, i(19218)),	-- Pattern: Mantle of the Timbermaw (RECIPE!)
 							applyclassicphase(PHASE_THREE_RECIPES, i(19204)),	-- Plans: Heavy Timbermaw Boots (RECIPE!)
 							applyclassicphase(PHASE_THREE_RECIPES, i(19327)),	-- Pattern: Timbermaw Brawlers (RECIPE!)
 						},

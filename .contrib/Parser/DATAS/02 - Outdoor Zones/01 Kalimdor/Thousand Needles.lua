@@ -12,10 +12,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["icon"] = 236848,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(846),	-- Explore Thousand Needles
+				ach(846),	-- Explore Thousand Needles
 				ach(4938, {	-- Thousand Needles Quests
 					["timeline"] = { ADDED_4_0_3 },
-					-- #if ANYCLASSIC
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
+					-- #else
 					["sourceQuests"] = {
 						25627,	-- Two-Tusk Takedown [A]
 						25628,	-- Two-Tusk Takedown [H]
@@ -99,6 +101,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
+				}),
+			}),
+			petbattles({
+				n(66452, {	-- Kela Grimtotem <Master Pet Tamer>
+					["coord"] = { 31.8, 32.8, THOUSAND_NEEDLES },
+					["description"] = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nKela's pets are level 15 of the following consecutive pet classes:\n1. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n2. Critter - see above.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.",
+					["timeline"] = { ADDED_5_0_4 },
+					["petBattleLvl"] = 15,
+					["groups"] = {
+						q(31906, {	-- Kela Grimtotem
+							["sourceAchievement"] = 6602,	-- Taming Kalimdor
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
 				}),
 			}),
 			-- #if AFTER CATA
@@ -410,6 +428,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25661,	-- With a Little Help...
 					["coord"] = { 96.8, 72.5, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = { i(55226) },	-- Creature Carcass (QI!)
 				}),
 				q(25542, {	-- Circle the Wagons... er, Boats [A]
 					["qg"] = 40475,	-- Jinky Twizzlefixxit
@@ -586,6 +605,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 91.4, 57.8, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = { i(56011) },	-- Oil Drilling Rig (QI!)
 				}),
 				q(25799, {	-- Defend the Drill [H]
 					["qg"] = 41184,	-- Riznek
@@ -593,6 +613,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 88.5, 54.8, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(56011) },	-- Oil Drilling Rig (QI!)
 				}),
 				q(25825, {	-- Deliver the Goods [A]
 					["qg"] = 41190,	-- Crazzle Sprysprocket
@@ -965,6 +986,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 88.5, 54.8, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(55807) },	-- Alliance's Proposal (QI!)
 				}),
 				q(1120, {	-- Get the Gnomes Drunk
 					["providers"] = {
@@ -1474,6 +1496,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(63643, {	-- Ring of the Subduer
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						--
+						i(61043),	-- Shu'halo Artifacts (QI!)
 					},
 				}),
 				q(27330, {	-- Invoking the Serpent [H]
@@ -1498,6 +1522,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(63647, {	-- Ring of the Subduer
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						--
+						i(61043),	-- Shu'halo Artifacts (QI!)
 					},
 				}),
 				q(1190, {	-- Keeping Pace
@@ -2356,7 +2382,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Mad Magus Tirth's soul extracted
-							["provider"] = { "n", 41130 },	-- The Mad Magus Kill Credit
+							["provider"] = { "n", 41131 },	-- Mad Magus Tirth
+							["coord"] = { 85.2, 91.6, THOUSAND_NEEDLES },
 						}),
 						i(63588, {	-- Magus Tirth's Robe
 							["timeline"] = { ADDED_4_0_3 },
@@ -2373,6 +2400,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(63587, {	-- Discarded Wedding Band
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						--
+						i(55230),	-- Soul Stick (QI!)
 					},
 				}),
 				q(3843, {	-- The Newest Member of the Family
@@ -2396,6 +2425,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 43.3, 43.4, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = { i(60959) },	-- The Rattle of Bones (QI!)
 				}),
 				q(27317, {	-- The Rattle of Bones [H]
 					["qg"] = 48208,	-- The Rattle of Bones
@@ -2406,6 +2436,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 43.4, 43.4, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(60959) },	-- The Rattle of Bones (QI!)
 				}),
 				q(1115, {	-- The Rumormonger
 					["qg"] = 4452,	-- Kravel Koalbeard
@@ -2655,6 +2686,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(63627, {	-- Drinker's Bracers
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						--
+						i(55158),	-- Fake Treasure (QI!)
 					},
 				}),
 				q(25628, {	-- Two-Tusk Takedown [H]
@@ -2680,6 +2713,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(63631, {	-- Drinker's Bracers
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						--
+						i(55158),	-- Fake Treasure (QI!)
 					},
 				}),
 				q(28158, {	-- Unbound
@@ -2778,7 +2813,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 				}),
 				q(28284, {	-- What's that Rattle? [H]
-					["qg"] = 45278,	-- Freewind Brave
+					["qg"] = 45278,	-- Freewind Brave (mobileNPC)
 					["sourceQuest"] = 27315,	-- Grimtotem Chiefs: Isha Gloomaxe (only pops up if you complete "Grimtotem Chiefs: Isha Gloomaxe" and haven't picked up "The Rattle of Bones")
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,

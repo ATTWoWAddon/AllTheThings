@@ -6,6 +6,7 @@ NIGHTFALL = createHeader({
 	icon = 6694197,
 	text = {
 		en = "Nightfall",
+		cn = "夜幕激斗",
 	},
 });
 
@@ -17,23 +18,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				n(ACHIEVEMENTS, {
 					ach(41999),	-- Fighter of the Nightman
 					ach(41996),	-- I'm Doing My Part
-					ach(41997),	-- Owner of a Radiant Heart
 					ach(41998),	-- Turning the Venom Tide
 				}),
 				n(QUESTS, {
 					q(85005, {	-- A Radiant Call
-						--["sourceQuests"] = { xxx },	-- ??
 						["provider"] = { "n", 242126 },	-- Flame's Radiance Recruiter
 						["coord"] = { 45.9, 49.3, DORNOGAL },
-						["isBreadcrumb"] = true,	-- TODO: unsure
 					}),
 					q(89332, {	-- Boot Camp
-						["sourceQuests"] = { 85005 },	-- A Radiant Call (TODO: unsure)
 						["provider"] = { "n", 234774 },	-- Mylton Wyldbraun
 						["coord"] = { 28.3, 56.1, HALLOWFALL },
 					}),
 					q(89331, {	-- Flame Fortification
-						["sourceQuests"] = { 85005 },	-- A Radiant Call (TODO: unsure)
 						["provider"] = { "n", 234774 },	-- Mylton Wyldbraun
 						["coord"] = { 28.3, 56.1, HALLOWFALL },
 					}),
@@ -42,9 +38,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["provider"] = { "n", 234774 },	-- Mylton Wyldbraun
 						["coord"] = { 28.3, 56.1, HALLOWFALL },
 						["isWeekly"] = true,
-						["sym"] = {{"select","itemID",
-							239546,	-- Confiscated Cultist's Bag
-						}},
+						["g"] = {
+							i(239546),	-- Confiscated Cultist's Bag
+						},
 				}, {
 					q(88945),	-- Radiant Incursion: Rak-Zakaz
 					q(88916),	-- Radiant Incursion: Sureki's End
@@ -53,6 +49,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							o(529289, {	-- Spore Sample
 								i(240215),	-- Fungal Sample (QI!)
 							}),
+							i(239546),	-- Confiscated Cultist's Bag
 						},
 					}),
 					q(87475),	-- Sureki Incursion: Hold the Wall
@@ -66,7 +63,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							}),
 						},
 					}),
-					q(91173),	-- The Flame Burns Eternal
+					q(91173, {	-- The Flame Burns Eternal
+						["g"] = {
+							i(239004, {	-- Radiant Service Satchel
+								i(RADIANT_EMBLEM),
+							}),
+						},
+					}),
 				})),
 				n(RARES, {
 					n(COMMON_BOSS_DROPS, {
@@ -153,6 +156,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							{ 61.9, 30.1, AZJ_KAHET },
 							{ 62.6, 26.7, AZJ_KAHET },
 							{ 64.1, 30.1, AZJ_KAHET },
+							{ 66.5, 28.2, AZJ_KAHET },
 							{ 67.4, 27.6, AZJ_KAHET },
 						},
 					}),
@@ -167,6 +171,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["description"] = "Within the Rak-Zakaz assault.",
 						["provider"] = { "o", 527416 },	-- Suspicious Document
 						["maps"] = { AZJ_KAHET },
+						["questID"] = 91156,
+						["isDaily"] = true,
 					}),
 					-- Sureki's End
 					o(527415, {	-- Suspicious Document (Dissenter Tailtrek/Whisperer Hillhelm)
@@ -211,6 +217,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["description"] = "Within the Toxins and Pheromones assault.",
 						["provider"] = { "o", 527413 },	-- Suspicious Document
 						["maps"] = { AZJ_KAHET },
+						["questID"] = 91160,
+						["isDaily"] = true,
 					}),
 					-- HALLOWFALL
 					-- Hold the Wall --
@@ -249,6 +257,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					n(241229, {	-- Dissenter Fervormyt
 						["description"] = "Within the Southern Swarm assault.",
 						["provider"] = { "o", 527409 },	-- Suspicious Document
+						["questID"] = 91153,
+						["isDaily"] = true,
 					}),
 					n(241238, {	-- Whisperer Siegesage
 						["description"] = "Within the Southern Swarm assault.",
@@ -257,17 +267,31 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["isDaily"] = true,
 					}),
 					-- The Eastern Assault
-					--o() TODO
+					o(527411, {	-- Suspicious Document (Dissenter Troosilver/Whisperer Bravefort)
+						["coords"] = {
+							{ 71.8, 43.0, HALLOWFALL },
+							{ 72.4, 47.5, HALLOWFALL },
+							{ 72.7, 41.5, HALLOWFALL },
+							{ 73.0, 44.8, HALLOWFALL },
+							{ 74.7, 42.9, HALLOWFALL },
+						},
+					}),
 					n(241232, {	-- Dissenter Troosilver
 						["description"] = "Within The Eastern Assault.",
+						["provider"] = { "o", 527411 },	-- Suspicious Document
+						["questID"] = 91158,
+						["isDaily"] = true,
 					}),
 					n(241236, {	-- Whisperer Bravefort
 						["description"] = "Within The Eastern Assault.",
+						["provider"] = { "o", 527411 },	-- Suspicious Document
+						["questID"] = 91155,
+						["isDaily"] = true,
 					}),
 				}),
 				n(REWARDS, {
 					-- Special Single List Item:
-					i(239546, {	-- Confiscated Cultist's Bag
+					container(239546, {	-- Confiscated Cultist's Bag
 						["description"] = "Rewarded by completing Radiant Incursion or Sureki Incursion Dailies.",
 						["g"] = {
 							i(239563),	-- Shadowbound Leash (MOUNT!)
@@ -351,7 +375,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						},
 					}),
 					i(237743, {	-- Arathi Soldier's Coffer (Uncommon) Only Green Cosmetics
-						["description"] = "Granted for achieving 33% during the Nightfall Event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe Event always starts on the hour.\n\nBest time to fill the bar is the 90seconds before the Boss spawns & the Boss itself also gives 42%.",
+						["description"] = "Granted for achieving 33% during the Nightfall event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe event always starts on the hour.\n\nThe Boss itself gives 41%.",
 						["groups"] = {
 							i(241019),	-- Arathi Camper's Knife (COSMETIC!)
 							i(241016),	-- Arathi Lancer's Polearm (COSMETIC!)
@@ -359,7 +383,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						},
 					}),
 					i(237759, {	-- Arathi Cleric's Chest (Rare) Only Weapons
-						["description"] = "Granted for achieving 66% during the Nightfall Event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe Event always starts on the hour.\n\nBest time to fill the bar is the 90seconds before the Boss spawns & the Boss itself also gives 42%.",
+						["description"] = "Granted for achieving 66% during the Nightfall event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe event always starts on the hour.\n\nThe Boss itself gives 41%.",
 						["groups"] = {
 							n(WEAPONS, {
 								i(237795), -- Arathi Abbot's Gavel
@@ -385,28 +409,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						},
 					}),
 					i(237760, {	-- Arathi Champion's Spoils (Epic)
-						["description"] = "Granted for achieving 100% during the Nightfall Event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe Event always starts on the hour.\n\nBest time to fill the bar is the 90seconds before the Boss spawns & the Boss itself also gives 42%.",
-						["sym"] = {{"select","itemID",
-							237795, -- Arathi Abbot's Gavel
-							237799, -- Arathi Abbot's Greatstaff
-							237801, -- Arathi Abbot's Implement
-							237803, -- Arathi Abbot's Kris
-							237806, -- Arathi Abbot's Wand
-							241036, -- Arathi Anointer's Wand
-							237800, -- Arathi Cleric's Rod
-							237802, -- Arathi Cleric's Blunderbuss
-							237792, -- Arathi Crusader's Halberd
-							237793, -- Arathi Crusader's Bulwark
-							237794, -- Arathi Crusader's Greatsword
-							241035, -- Arathi Soldier's Morningstar
-							241033, -- Arathi Templar's Claymore
-							237791, -- Arathi Zealot's Cleaver
-							237796, -- Arathi Zealot's Cudgel
-							237797, -- Arathi Zealot's Dagger
-							237798, -- Arathi Zealot's Knife
-							237804, -- Arathi Zealot's Shotgun
-							237805, -- Arathi Zealot's Warglaive
-						}},
+						["description"] = "Granted for achieving 100% during the Nightfall event.\nThe bar is increased by killing Sureki mobs and completing objectives in Nightfall.\n\nThe event always starts on the hour.\n\nThe Boss itself gives 41%.",
+						["sym"] = {	-- Arathi Cleric's Chest (Rare)
+							{"select","itemID",237759},{"pop"},
+							{"where","headerID",WEAPONS},
+						},
 						["groups"] = {
 							filter(CLOAKS, {
 								i(237394),	-- Arathi Abbot's Cloak
@@ -471,7 +478,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						},
 					}),
 					-- Crafting reagent?
-					i(238407),	-- Black Blood Residue
 					n(EVENT_COMPLETION, {
 						["description"] = "The Boss spawns at the end of the Nightfall Event.\nThe Event always starts on the hour.",
 						["coord"] = { 25.2, 55.6, HALLOWFALL },
@@ -554,7 +560,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}),
 					n(240979, {	-- Vesper Churnmoat
 						["coord"] = { 28.2, 56.0, HALLOWFALL },
-						["g"] = sharedData({ ["cost"] = {{"i", RADIANT_EMBLEM, 1}} }, {
+						["g"] = bubbleDownFiltered({ ["cost"] = {{"i", RADIANT_EMBLEM, 1}} },FILTERFUNC_itemID,{
 							filter(FINGER_F, {
 								i(237471),	-- Band of the Voidmancer
 								i(237472),	-- Seal of Cosmic Embrace
@@ -589,7 +595,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}),
 					n(227797, {	-- Raen Dawncavalyr
 						["coord"] = { 28.3, 56.0, HALLOWFALL },
-						["g"] = sharedData({ ["cost"] = {{"i", RADIANT_EMBLEM, 1}} }, {
+						["g"] = bubbleDownFiltered({ ["cost"] = {{"i", RADIANT_EMBLEM, 1}} },FILTERFUNC_itemID,{
 							filter(CLOAKS, {
 								i(237394),	-- Arathi Abbot's Cloak
 								i(237403),	-- Arathi Zealot's Cape
@@ -648,25 +654,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								i(238391),	-- Arathi Minister's Receptacle
 								i(237494),	-- Hallowed Tome of the Abbot
 							}),
-							--[[	-- No Weapons on Vendor
 							n(WEAPONS, {
+								i(237795),	-- Arathi Abbot's Gavel
+								i(237799),	-- Arathi Abbot's Greatstaff
+								i(237801),	-- Arathi Abbot's Implement
+								i(237803),	-- Arathi Abbot's Kris
+								i(237806),	-- Arathi Abbot's Wand
+								i(237802),	-- Arathi Cleric's Blunderbuss
+								i(237800),	-- Arathi Cleric's Rod
+								i(237793),	-- Arathi Crusader's Bulwark
+								i(237794),	-- Arathi Crusader's Greatsword
+								i(237792),	-- Arathi Crusader's Halberd
 								i(237791),	-- Arathi Zealot's Cleaver
+								i(237796),	-- Arathi Zealot's Cudgel
 								i(237797),	-- Arathi Zealot's Dagger
 								i(237798),	-- Arathi Zealot's Knife
-								i(237803),	-- Arathi Abbot's Kris
-								i(237802),	-- Arathi Cleric's Blunderbuss
 								i(237804),	-- Arathi Zealot's Shotgun
-								i(237795),	-- Arathi Abbot's Gavel
-								i(237796),	-- Arathi Zealot's Cudgel
-								i(237801),	-- Arathi Abbot's Implement
-								i(237792),	-- Arathi Crusader's Halberd
-								i(237793),	-- Arathi Crusader's Bulwark
-								i(237800),	-- Arathi Cleric's Rod
-								i(237799),	-- Arathi Abbot's Greatstaff
-								i(237794),	-- Arathi Crusader's Greatsword
-								i(237806),	-- Arathi Abbot's Wand
 								i(237805),	-- Arathi Zealot's Warglaive
-							}),--]]
+							}),
 						}),
 					}),
 				}),
@@ -694,11 +699,17 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				q(88692, {	-- Arathi Crusader Set Chest Unlock
 					["name"] = "Unlocked Chest Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
 				}),
+				q(88689, {	-- Arathi Crusader Set Belt Unlock
+					["name"] = "Unlocked Belt Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
+				}),
 				q(88691, {	-- Arathi Crusader Set Feet Unlock
 					["name"] = "Unlocked Feet Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
 				}),
 				q(88690, {	-- Arathi Crusader Set Hands Unlock
 					["name"] = "Unlocked Hands Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
+				}),
+				q(88695, {	-- Arathi Crusader Set Head Unlock
+					["name"] = "Unlocked Head Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
 				}),
 				q(88693, {	-- Arathi Crusader Set Legs Unlock
 					["name"] = "Unlocked Legs Slot for the Arathi Set. RELOG to get them automatically for every Armor Type!",
@@ -729,7 +740,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				q(88885),	-- after turn in Sureki Incursion: The Eastern Assault (87480)
 				-- ^ could be NYI on live cause now it seems like counter for achievementID 41998 (Turning the Venom Tide)
 				-- there new one now or it somehow reset (but flag still return as complete for above?)
-				q(88900),	--
+				q(88900),	-- Baleful Excerpt on Prophetic Death
 				q(88886),	--
 				q(88892),	--
 				q(88897),	--
@@ -740,6 +751,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				q(91163),	-- Daily Rep Flame Radiance for killing Skrimisher Sa'zryk (Ajz Kahet)
 				q(91164),	-- Daily Rep Flame Radiance for killing Umbraclaw Matta (Ajz Kahet)
 				q(91165),	-- Daily Rep Flame Radiance for killing Webspeaker Grik Ik (Ajz Kahet)
+				q(81608),	-- Enter Azj'Kahet post-patch? [DNT] Vizier - Level 4 Unlock / 443686 [DNT] Dummy - Pact Backup / 1231879
 			})),
 		}),
 	}),

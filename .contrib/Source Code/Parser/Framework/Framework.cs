@@ -1,4 +1,5 @@
 using ATT.DB;
+using ATT.DB.Types;
 using ATT.FieldTypes;
 using System;
 using System.Collections.Concurrent;
@@ -7,6 +8,7 @@ using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading;
 using static ATT.Export;
@@ -68,7 +70,7 @@ namespace ATT
             { "TRANSMOG", 69 }, // Transmog came out sometime after WOD.
             { "LEGION", 70 },   // LEGION_PHASE_ONE
             { "BFA", 80 },      // BFA_PHASE_ONE
-            { "SHADOWLANDS", 90 },      // SHADOWLANDS_PHASE_ONE
+            { "SL", 90 },      // SL_PHASE_ONE
             { "DF", 100 },      // DF_PHASE_ONE
             { "TWW", 110 },     // TWW_PHASE_ONE
             { "MID", 120 },     // MID_PHASE_ONE
@@ -92,7 +94,7 @@ namespace ATT
             { "TRANSMOG", 69 }, // Transmog came out sometime after WOD.
             { "LEGION", 79 },   // LEGION_PHASE_SIX?
             { "BFA", 89 },      // BFA_PHASE_SIX?
-            { "SHADOWLANDS", 99 },      // SHADOWLANDS_PHASE_SIX?
+            { "SL", 99 },      // SL_PHASE_SIX?
             { "DF", 99 },      // DF_PHASE_SIX?
             { "TWW", 99 },      // TWW_PHASE_SIX?
             { "MID", 99 },      // MID_PHASE_SIX?
@@ -103,6 +105,8 @@ namespace ATT
         /// The very first patch used by each content expansion.
         /// </summary>
         public static Dictionary<string, int[]> FIRST_EXPANSION_PATCH { get; set; }
+
+        public static Dictionary<long,long> MAPID_MERGE_REPLACEMENTS { get; set; }
 
         /// <summary>
         /// Represents the function to use when performing a processing pass against the data
@@ -160,16 +164,19 @@ namespace ATT
         {
             { "achID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "itemID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
+            { "explorationID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "headerID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "factionID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "flightpathID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "followerID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
+            { "mapID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "missionID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "mountID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "npcID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "objectID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "questID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "recipeID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
+            { "speciesID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "spellID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
             { "sourceID", new Dictionary<long, HashSet<IDictionary<string, object>>>() },
         };
@@ -178,62 +185,57 @@ namespace ATT
         /// <summary>
         /// All of the Category IDs that have been referenced somewhere in the database.
         /// </summary>
-        private static Dictionary<long, bool> CATEGORIES_WITH_REFERENCES = new Dictionary<long, bool>();
+        private static IDictionary<long, bool> CATEGORIES_WITH_REFERENCES = new ConcurrentDictionary<long, bool>();
 
         /// <summary>
         /// All of the Custom Header Constants listed by their constant name and id value.
         /// </summary>
-        private static Dictionary<string, long> CUSTOM_HEADER_CONSTANTS = new Dictionary<string, long>();
+        private static IDictionary<string, long> CUSTOM_HEADER_CONSTANTS = new ConcurrentDictionary<string, long>();
 
         /// <summary>
         /// All of the Custom Header IDs that have been referenced somewhere in the database.
         /// </summary>
-        private static Dictionary<long, bool> CUSTOM_HEADERS_WITH_REFERENCES = new Dictionary<long, bool>();
+        private static IDictionary<long, bool> CUSTOM_HEADERS_WITH_REFERENCES = new ConcurrentDictionary<long, bool>();
 
         /// <summary>
         /// All of the Filter IDs that have been referenced somewhere in the database.
         /// </summary>
-        private static Dictionary<long, bool> FILTERS_WITH_REFERENCES = new Dictionary<long, bool>();
+        private static IDictionary<long, bool> FILTERS_WITH_REFERENCES = new ConcurrentDictionary<long, bool>();
 
         /// <summary>
         /// All of the Flight Path IDs that have been referenced somewhere in the database.
         /// </summary>
-        private static IDictionary<long, bool> FLIGHTPATHS_WITH_REFERENCES = new Dictionary<long, bool>();
+        private static IDictionary<long, bool> FLIGHTPATHS_WITH_REFERENCES = new ConcurrentDictionary<long, bool>();
 
         /// <summary>
         /// All of the NPC IDs that have been referenced somewhere in the database.
         /// </summary>
-        private static IDictionary<long, bool> NPCS_WITH_REFERENCES = new Dictionary<long, bool>();
+        private static IDictionary<long, bool> NPCS_WITH_REFERENCES = new ConcurrentDictionary<long, bool>();
 
         /// <summary>
         /// All of the Object IDs that have been referenced somewhere in the database.
         /// </summary>
-        private static IDictionary<long, bool> OBJECTS_WITH_REFERENCES = new Dictionary<long, bool>();
+        private static IDictionary<long, bool> OBJECTS_WITH_REFERENCES = new ConcurrentDictionary<long, bool>();
 
         /// <summary>
         /// All of thePhase Constants listed by their constant name and id value.
         /// </summary>
-        private static Dictionary<string, long> PHASE_CONSTANTS = new Dictionary<string, long>();
+        private static IDictionary<string, long> PHASE_CONSTANTS = new Dictionary<string, long>();
 
         /// <summary>
         /// All of the Phase IDs that have been referenced somewhere in the database.
         /// </summary>
-        private static Dictionary<long, bool> PHASES_WITH_REFERENCES = new Dictionary<long, bool>();
+        private static IDictionary<long, bool> PHASES_WITH_REFERENCES = new ConcurrentDictionary<long, bool>();
 
         /// <summary>
         /// All of the Quest IDs that have been referenced somewhere in the database.
         /// </summary>
-        private static IDictionary<long, bool> QUESTS_WITH_REFERENCES = new Dictionary<long, bool>();
+        private static IDictionary<long, bool> QUESTS_WITH_REFERENCES = new ConcurrentDictionary<long, bool>();
 
         /// <summary>
         /// All of the Export Data Keys that have been referenced somewhere in the database.
         /// </summary>
-        private static IDictionary<string, List<string>> EXPORTDATA_WITH_REFERENCES = new Dictionary<string, List<string>>();
-
-        /// <summary>
-        /// All of the species that have been parsed sorted by Species ID.
-        /// </summary>
-        private static IDictionary<long, IDictionary<string, object>> SPECIES = new Dictionary<long, IDictionary<string, object>>();
+        private static IDictionary<string, List<string>> EXPORTDATA_WITH_REFERENCES = new ConcurrentDictionary<string, List<string>>();
 
         /// <summary>
         /// All of the quests that have been parsed sorted by Quest ID.
@@ -281,6 +283,16 @@ namespace ATT
         private static long NestedHeaderID { get; set; }
 
         /// <summary>
+        /// Represents the nested ItemAppearanceModifierID currently being processed
+        /// </summary>
+        private static long NestedItemAppearanceModifierID { get; set; }
+
+        /// <summary>
+        /// Represents the nested BonusID currently being processed
+        /// </summary>
+        private static long NestedBonusID { get; set; }
+
+        /// <summary>
         /// Represents the nested ModID currently being processed
         /// </summary>
         private static long NestedModID { get; set; }
@@ -289,6 +301,16 @@ namespace ATT
         /// Represents the nested min lvl currently being processed
         /// </summary>
         private static long NestedMinLvl { get; set; } = 1;
+
+        /// <summary>
+        /// Whether or not to report changes to the context.
+        /// </summary>
+        private static bool ShouldReportContextChanges { get; set; }
+
+        /// <summary>
+        /// The depth of the report context.
+        /// </summary>
+        private static long ContextReportDepth { get; set; }
 
         private static HashSet<string> _inhertingFields;
         private static HashSet<string> InheritingFields
@@ -305,8 +327,6 @@ namespace ATT
                 return _inhertingFields;
             }
         }
-
-        private static IDictionary<string, IDictionary<long, IDBType>> TypeDB { get; } = new Dictionary<string, IDictionary<long, IDBType>>();
 
         private static IDictionary<string, object> Exports { get; } = new Dictionary<string, object>();
 
@@ -352,6 +372,16 @@ namespace ATT
                     }
                 }
             }
+        }
+
+        /// <summary>
+        /// Assign the localization strings to the Framework's internal reference.
+        /// </summary>
+        /// <param name="localizationStrings">The localization strings.</param>
+        public static void AssignLocalizationStrings(Dictionary<string, object> localizationStrings)
+        {
+            LocalizationStrings = localizationStrings;
+            Trace.WriteLine($"Found {localizationStrings.Count} Localization Strings...");
         }
 
         /// <summary>
@@ -599,6 +629,13 @@ namespace ATT
         /// </summary>
         internal static Dictionary<long, Dictionary<string, object>> AchievementCategoryData { get; private set; } = new Dictionary<long, Dictionary<string, object>>();
 
+
+        /// <summary>
+        /// All of the achievement criteria data that has been loaded into the database.
+        /// NOTE: This is used only for Pre-Wrath Builds of LocalizationDB.
+        /// </summary>
+        internal static Dictionary<long, Dictionary<string, object>> AchievementCriteriaData { get; private set; } = new Dictionary<long, Dictionary<string, object>>();
+
         /// <summary>
         /// All of the categories that have been loaded into the database.
         /// </summary>
@@ -639,6 +676,23 @@ namespace ATT
         internal static Dictionary<long, long> GlyphDB { get; private set; } = new Dictionary<long, long>();
 
         /// <summary>
+        /// All of the ItemAppearanceModifierIDs that have been loaded into the database by their assigned bonusID.
+        /// </summary>
+        internal static Dictionary<long, long> ItemAppearanceModifierIDs_BonusID { get; private set; } = new Dictionary<long, long>();
+
+        /// <summary>
+        /// All of the ItemAppearanceModifierIDs that have been loaded into the database by their assigned modID.
+        /// </summary>
+        internal static Dictionary<long, long> ItemAppearanceModifierIDs_ModID { get; private set; } = new Dictionary<long, long>();
+
+        //
+
+        /// <summary>
+        /// The LocalizationStrings table from main.lua that is used to generate localization strings.
+        /// </summary>
+        internal static Dictionary<string, object> LocalizationStrings { get; private set; } = new Dictionary<string, object>();
+
+        /// <summary>
         /// All of the objects that have been loaded into the database.
         /// </summary>
         internal static Dictionary<long, Dictionary<string, object>> ObjectDB { get; private set; } = new Dictionary<long, Dictionary<string, object>>();
@@ -672,6 +726,7 @@ namespace ATT
                 "instanceID",
                 "heirloomUnlockID",
                 "heirloomLevelID",
+                "mapID",
                 "questID",
                 "questIDA",
                 "questIDH",
@@ -1022,6 +1077,11 @@ namespace ATT
                         return "modID";
                     }
 
+                case "ItemAppearanceModifierID":
+                    {
+                        return "ItemAppearanceModifierID";
+                    }
+
                 case "artifactId":
                 case "artifactID":
                     {
@@ -1168,6 +1228,11 @@ namespace ATT
                 case "reqLvls":
                     {
                         return "lvl";
+                    }
+
+                case "petBattleLvl":
+                    {
+                        return "petBattleLvl";
                     }
 
                 case "rank":
@@ -1400,6 +1465,10 @@ namespace ATT
                 case "autoname":
                     return "an";
 
+                case "trackID":
+                case "upgradeTrackID":
+                    return "trackID";
+
                 // tags which are accurate already
                 case "azeriteessenceID":
                 case "buildingID":
@@ -1500,11 +1569,14 @@ namespace ATT
                 case "_quests":
                 case "_objects":
                 case "_achievements":
-                case "_factions":
                 case "_encounter":
+                case "_exploration":
+                case "_factions":
+                case "_flightpath":
+                case "_maps":
+                case "_species":
                 case "_text":
                 case "_type":
-                case "_flightpath":
 
                     return field;
 
@@ -1720,7 +1792,7 @@ namespace ATT
 
             // Clone this and calculate most significant.
             bool hasG = false;
-            VALUE g = default(VALUE);    // Look for the G Field.
+            VALUE g = default;    // Look for the G Field.
             var data2 = new Dictionary<object, object>();
             var keys = data.Keys.ToList();
             for (int i = 0, count = keys.Count; i < count; ++i)
@@ -1843,13 +1915,13 @@ namespace ATT
 #if TLT
             return "TLT/";
 #elif MID
-            return "Midnight/";
+            return "MID/";
 #elif TWW
             return "TWW/";
 #elif DF
-            return "Dragonflight/";
-#elif SHADOWLANDS
-            return "Shadowlands/";
+            return "DF/";
+#elif SL
+            return "SL/";
 #elif BFA
             return "BFA/";
 #elif LEGION
@@ -1869,7 +1941,7 @@ namespace ATT
 #endif
         }
 
-        private static void CleanLocalizedField(long key, string field, IDictionary<string, object> data, Dictionary<string, Dictionary<long, string>> localizationData)
+        private static void CleanLocalizedField<T>(T key, string field, IDictionary<string, object> data, Dictionary<string, Dictionary<T, string>> localizationData)
         {
             if (data.TryGetValue(field, out var value))
             {
@@ -1883,9 +1955,9 @@ namespace ATT
                 TryColorizeDictionary(localeData);
                 if (localeData.TryGetValue("en", out string englishValue))
                 {
-                    if (!localizationData.TryGetValue("en", out Dictionary<long, string> sublocale))
+                    if (!localizationData.TryGetValue("en", out Dictionary<T, string> sublocale))
                     {
-                        localizationData["en"] = sublocale = new Dictionary<long, string>();
+                        localizationData["en"] = sublocale = new Dictionary<T, string>();
                     }
                     sublocale[key] = englishValue;
 
@@ -1907,7 +1979,7 @@ namespace ATT
                         {
                             if (!localizationData.TryGetValue(locale.Key, out sublocale))
                             {
-                                localizationData[locale.Key] = sublocale = new Dictionary<long, string>();
+                                localizationData[locale.Key] = sublocale = new Dictionary<T, string>();
                             }
                             sublocale[key] = localizedValue;
                         }
@@ -2235,10 +2307,9 @@ namespace ATT
 
                                 // Attempt to get the text locale data object.
                                 flightPathData.TryGetValue("text", out object textLocaleObject);
-                                Dictionary<string, object> textLocales = textLocaleObject as Dictionary<string, object>;
 
                                 // Export the complex "text" locales field.
-                                if (textLocales != null)
+                                if (textLocaleObject is Dictionary<string, object> textLocales)
                                 {
                                     // Sort and then ensure es comes after en, to match previous convention.
                                     var supportedLocales = textLocales.Keys.ToList();
@@ -2520,6 +2591,65 @@ namespace ATT
                     localizationByLocale[language] = new StringBuilder();
                 }
 
+                // Export the Localization Strings file.
+                if (LocalizationStrings != null && LocalizationStrings.Any())
+                {
+                    CurrentParseStage = ParseStage.ExportLocalizationStrings;
+
+                    // Now export it based on what we know.
+                    var builder = new StringBuilder("-- Localization Strings").AppendLine();
+                    var constants = new Dictionary<string, bool>();
+                    var localizationForText = new Dictionary<string, Dictionary<string, string>>();
+                    foreach (var localizationPair in LocalizationStrings)
+                    {
+                        var key = localizationPair.Key;
+                        if (localizationPair.Value is IDictionary<string, object> localization && localization.TryGetValue("export", out bool export) && export)
+                        {
+                            constants[key] = true;
+                            CleanLocalizedField(key, "text", localization, localizationForText);
+                        }
+                    }
+
+                    // Sort the header constants!
+                    var headerKeys = constants.Keys.ToList();
+                    headerKeys.Sort(Framework.Compare);
+
+                    // Get all of the english translations and always write them to the file.
+                    if (localizationForText.TryGetValue("en", out var data))
+                    {
+                        localizationForText.Remove("en");
+                        foreach (var key in headerKeys)
+                        {
+                            if (data.TryGetValue(key, out string name))
+                            {
+                                builder.Append("L.").Append(key).Append(" = ");
+                                ExportStringValue(builder, name).AppendLine(";");
+                            }
+                        }
+                    }
+
+                    // Now grab the non-english localizations and conditionally write them to the file.
+                    foreach (var localePair in localizationForText)
+                    {
+                        data = localePair.Value;
+                        if (data.Any())
+                        {
+                            var localeBuilder = localizationByLocale[localePair.Key];
+                            foreach (var key in headerKeys)
+                            {
+                                if (data.TryGetValue(key, out string name))
+                                {
+                                    localeBuilder.Append("L.").Append(key).Append(" = ");
+                                    ExportStringValue(localeBuilder, name).AppendLine(";");
+                                }
+                            }
+                        }
+                    }
+
+                    // Append the file content to our localization database.
+                    localizationDatabase.AppendLine(builder.ToString());
+                }
+
                 // Export the Category DB file.
                 if (CATEGORIES_WITH_REFERENCES.Any())
                 {
@@ -2643,6 +2773,8 @@ namespace ATT
                             if (CustomHeaders.TryGetValue(key, out object o) && o is IDictionary<string, object> header)
                             {
                                 keys.Add(key);
+
+                                // EventID is stored as HolidayNameID to keep things simple
                                 if (header.TryGetValue("eventID", out object value))
                                 {
                                     long eventID = Convert.ToInt64(value);
@@ -2661,6 +2793,27 @@ namespace ATT
                                     if (header.TryGetValue("timerunningSeasonID", out value))
                                     {
                                         timerunningSeasonIDs[eventID] = Convert.ToInt64(value);
+                                    }
+
+                                    // Remap the HolidayNameID to EventID
+                                    // Ignore 161 (Kalu'ak Fishing Derby)
+                                    // https://wago.tools/db2/Holidays?filter%5BHolidayNameID%5D=exact%3A161&page=1
+                                    if (eventID != 161 && WagoData.TryGetHolidayNameIDAssociations<Holiday>(eventID, out var associations))
+                                    {
+                                        foreach (var association in associations)
+                                        {
+                                            eventRemaps[association.ID] = eventID;
+                                        }
+                                    }
+
+                                    // Update the text localization to use Wago data, but only if we're not ignoring wago holiday names
+                                    if (!header.ContainsKey("IgnoreWagoHolidayNames"))
+                                    {
+                                        var localizedHolidayNames = WagoData.GetLocalizedData<HolidayNames>(eventID);
+                                        if (localizedHolidayNames != null && localizedHolidayNames.TryGetValue("Name_lang", out var names))
+                                        {
+                                            header["text"] = names;
+                                        }
                                     }
                                 }
                                 if (header.TryGetValue("icon", out value))
@@ -2783,9 +2936,11 @@ namespace ATT
                     if (eventRemaps.Any())
                     {
                         builder.AppendLine("localize(L.EVENT_REMAPPING, {");
-                        foreach (var pair in eventRemaps)
+                        var remappedKeys = eventRemaps.Keys.ToList();
+                        remappedKeys.Sort();
+                        foreach (var remappedKey in remappedKeys)
                         {
-                            ExportObjectKeyValue(builder, pair.Key, pair.Value).AppendLine();
+                            ExportObjectKeyValue(builder, remappedKey, eventRemaps[remappedKey]).AppendLine();
                         }
                         builder.AppendLine("});").AppendLine();
                     }
@@ -3410,6 +3565,7 @@ namespace ATT
                         var localizationForDescriptions = new Dictionary<string, Dictionary<long, string>>();
                         var localizationForLore = new Dictionary<string, Dictionary<long, string>>();
                         var referencedCategoryIDs = new Dictionary<long, bool>();
+                        var referencedCriteriaIDs = new Dictionary<long, bool>();
                         allAchievementKeys.Sort();
                         foreach (var key in allAchievementKeys)
                         {
@@ -3468,6 +3624,19 @@ namespace ATT
                                     builder.Append(category);
                                 }
                                 else builder.Append(-1);
+                                if (achievement.TryGetValue("operator", out var op))
+                                {
+                                    builder.AppendLine(",").Append("\t\toperator = ").Append(op);
+                                }
+                                if (achievement.TryGetValue("amount", out var amount))
+                                {
+                                    builder.AppendLine(",").Append("\t\tamount = ").Append(amount);
+                                }
+                                if (achievement.TryGetValue("criteria", out List<object> criteria))
+                                {
+                                    foreach (var criteriaID in criteria) referencedCriteriaIDs[(long)criteriaID] = true;
+                                    builder.AppendLine(",").Append("\t\tcriteria = ").Append(ExportCompressedLua(criteria));
+                                }
                                 builder.AppendLine(",").AppendLine("\t},");
                             }
                         }
@@ -3527,7 +3696,7 @@ namespace ATT
                         localizationDatabase.AppendLine(builder.ToString());
 
 
-                        // Achievement Criteria
+                        // Achievement Categories
                         builder.Clear();
                         keys.Clear();
                         localizationForText.Clear();
@@ -3549,7 +3718,7 @@ namespace ATT
                         }
                         foreach (var key in allAchievementKeys)
                         {
-                            // Include Only Referenced Achievements!
+                            // Include Only Referenced Categories!
                             if (referencedCategoryIDs.ContainsKey(key))
                             {
                                 if (AchievementCategoryData.TryGetValue(key, out var achievement))
@@ -3618,6 +3787,140 @@ namespace ATT
                                     }
                                 }
                                 localeBuilder.AppendLine("})\ndo achievementCategories[key].name = value; end");
+                            }
+                        }
+
+                        // Append the file content to our localization database.
+                        localizationDatabase.AppendLine(builder.ToString());
+
+                        // Achievement Criteria
+                        builder.Clear();
+                        keys.Clear();
+                        localizationForText.Clear();
+                        localizationForDescriptions.Clear();
+                        Dictionary<long, bool> referencedWorldMapOverlays = new Dictionary<long, bool>();
+                        allAchievementKeys = AchievementCriteriaData.Keys.ToList();
+                        allAchievementKeys.Sort();
+                        foreach (var key in allAchievementKeys)
+                        {
+                            // Include Only Referenced Criteria!
+                            if (referencedCriteriaIDs.ContainsKey(key))
+                            {
+                                if (AchievementCriteriaData.TryGetValue(key, out var criteria))
+                                {
+                                    keys.Add(key);
+                                    if (criteria.TryGetValue("text", out var value))
+                                    {
+                                        if (!(value is IDictionary<string, object> localeData))
+                                        {
+                                            localeData = new Dictionary<string, object>
+                                            {
+                                                ["en"] = value
+                                            };
+                                        }
+                                        TryColorizeDictionary(localeData);
+                                        foreach (var locale in localeData)
+                                        {
+                                            if (!localizationForText.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
+                                            {
+                                                localizationForText[locale.Key] = sublocale = new Dictionary<long, string>();
+                                            }
+                                            sublocale[key] = locale.Value.ToString();
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        // Get all of the english translations and always write them to the file.
+                        builder.AppendLine("local achievementCriterias = {");
+                        localizationForText.TryGetValue("en", out localizationForTextByKey);
+                        localizationForText.Remove("en");
+                        foreach (var key in keys)
+                        {
+                            if (AchievementCriteriaData.TryGetValue(key, out var criteriaData))
+                            {
+                                builder.Append("\t[").Append(key).AppendLine("] = {");
+                                builder.Append("\t\tname = ");
+                                if (localizationForTextByKey.TryGetValue(key, out string name))
+                                {
+                                    ExportStringValue(builder, name);
+                                }
+                                else builder.Append("nil");
+                                if (criteriaData.TryGetValue("operator", out var op))
+                                {
+                                    builder.AppendLine(",").Append("\t\toperator = ").Append(op);
+                                }
+                                if (criteriaData.TryGetValue("amount", out var amount))
+                                {
+                                    builder.AppendLine(",").Append("\t\tamount = ").Append(amount);
+                                }
+                                if (criteriaData.TryGetValue("type", out var t))
+                                {
+                                    builder.AppendLine(",").Append("\t\ttype = ").Append(t);
+                                }
+                                if (criteriaData.TryGetValue("asset", out var asset))
+                                {
+                                    builder.AppendLine(",").Append("\t\tasset = ").Append(asset);
+                                    if (t != null && (long)t == 43) // Exploration Criteria
+                                    {
+                                        referencedWorldMapOverlays[(long)asset] = true;
+                                    }
+                                }
+                                if (criteriaData.TryGetValue("criteria", out List<object> criteria))
+                                {
+                                    foreach (var criteriaID in criteria)
+                                    {
+                                        long crit = (long)criteriaID;
+                                        if (!referencedCriteriaIDs.ContainsKey(crit))
+                                        {
+                                            referencedCriteriaIDs[crit] = true;
+                                            keys.Add(crit);
+                                        }
+                                    }
+                                    builder.AppendLine(",").Append("\t\tcriteria = ").Append(ExportCompressedLua(criteria));
+                                }
+                                builder.AppendLine(",").AppendLine("\t},");
+                            }
+                        }
+                        builder.AppendLine("};\nL.ACHIEVEMENT_CRITERIA_DATA = achievementCriterias;");
+
+                        // Write out the World Map Overlay explorationIDs that are referenced.
+                        if (referencedWorldMapOverlays.Count > 0)
+                        {
+                            builder.AppendLine("local worldMapOverlayData = {");
+                            var worldMapOverlayIDs = referencedWorldMapOverlays.Keys.ToList();
+                            worldMapOverlayIDs.Sort();
+                            foreach (var worldMapOverlayID in worldMapOverlayIDs)
+                            {
+                                if (WagoData.TryGetValue(worldMapOverlayID, out WorldMapOverlay worldMapOverlay))
+                                {
+                                    builder.Append("\t[").Append(worldMapOverlayID).Append("] = { ");
+                                    if (worldMapOverlay.AreaID_0 > 0) builder.Append(worldMapOverlay.AreaID_0);
+                                    if (worldMapOverlay.AreaID_1 > 0) builder.Append(",").Append(worldMapOverlay.AreaID_1);
+                                    if (worldMapOverlay.AreaID_2 > 0) builder.Append(",").Append(worldMapOverlay.AreaID_2);
+                                    if (worldMapOverlay.AreaID_3 > 0) builder.Append(",").Append(worldMapOverlay.AreaID_3);
+                                    builder.AppendLine(" },");
+                                }
+                            }
+                            builder.AppendLine("};\nL.WORLD_MAP_OVERLAY_DATA = worldMapOverlayData;");
+                        }
+
+                        // Now grab the non-english localizations and conditionally write them to the file.
+                        foreach (var localePair in localizationForText)
+                        {
+                            if (localePair.Value.Any())
+                            {
+                                var localeBuilder = localizationByLocale[localePair.Key];
+                                localeBuilder.AppendLine("for key,value in pairs({");
+                                foreach (var key in keys)
+                                {
+                                    if (localePair.Value.TryGetValue(key, out string name) && !string.IsNullOrWhiteSpace(name))
+                                    {
+                                        ExportStringKeyValue(localeBuilder, key, name).AppendLine();
+                                    }
+                                }
+                                localeBuilder.AppendLine("})\ndo achievementCriterias[key].name = value; end");
                             }
                         }
 
@@ -3731,8 +4034,7 @@ setmetatable(_.HeaderConstants, {
 
                 // Check to make sure the content is different since Diff tools are dumb as hell.
                 var filename = Path.Combine(addonRootFolder, $"db/{dbRootFolder}LocalizationDB.lua");
-                var localizationDatabaseContent = localizationDatabase.ToString().Replace("\r\n", "\n").Trim();
-                WriteIfDifferent(filename, localizationDatabaseContent);
+                WriteIfDifferent(filename, localizationDatabase.ToString());
 
                 // General ExportDBs
                 var referenceDB = AutoGeneratedTag(new StringBuilder());
@@ -3820,8 +4122,7 @@ setmetatable(_.HeaderConstants, {
 
                     incorporationDB.Append("_=").Append(ExportPureLua(incorporationData.Value));
 
-                    var incorporationDBFilename = Path.Combine(incorporationFolder, $"{incorporationData.Key}.lua");
-                    WriteIfDifferent(incorporationDBFilename, incorporationDB.ToString());
+                    WriteIfDifferent(Path.Combine(incorporationFolder, $"{incorporationData.Key}.lua"), incorporationDB.ToString());
                 }
 
                 CurrentParseStage = ParseStage.ExportAddonData;
@@ -3869,7 +4170,8 @@ setmetatable(_.HeaderConstants, {
 
         public static void WriteIfDifferent(string filename, string content)
         {
-            if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8).Replace("\r\n", "\n").Trim() != content)
+            content = content.Replace("\r\n", "\n").Trim();
+            if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8) != content)
             {
                 File.WriteAllText(filename, content, Encoding.UTF8);
             }

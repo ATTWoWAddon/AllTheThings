@@ -92,16 +92,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				i(233537),	-- Gold-Plated Sword
 				i(233536),	-- Gold-Plated Rifle
 			}),
-			-- unsure where to put it atm
-			i(236961, {	-- Inoperative Gorillion (QS!)
-				["cost"] = {
-					{ "i", 234431, 1 },	-- Gorillion Batteries
-					{ "i", 234433, 1 },	-- Gorillion Chasis
-					{ "i", 234432, 1 },	-- Gorillion Engine
-					{ "i", 234427, 1 },	-- Gorillion Fork
-					{ "i", 234430, 1 },	-- Gorillion Grease
-				},
-			}),
 		}),
 	}),
 })));

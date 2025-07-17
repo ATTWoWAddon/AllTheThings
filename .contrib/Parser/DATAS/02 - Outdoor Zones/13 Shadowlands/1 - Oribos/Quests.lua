@@ -220,7 +220,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",
 				["provider"] = { "i", 158932 },	-- Secretest Fish
 				["crs"] = { 151583 },	-- Secret Fish
-				["cost"] = { { "i", 167698, 1 } },	-- Secret Fish Goggles
 				["maps"] = {
 					ARDENWEALD,
 					BASTION,
@@ -228,6 +227,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					REVENDRETH,
 				},
 				["_drop"] = { "isDaily" },
+				["g"] = { i(161475) },	-- Secret Fish Lure
 			}),
 			q(62457, {	-- The Great Vault
 				["provider"] = { "n", 173350 },	-- Ba'vol
@@ -260,7 +260,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		}),
 		n(QUESTS, sharedData({
 			["customCollect"] = "SL_SKIP",
-			-- TODO: post-DF is threads of fate still a thing, or are these quests available to a first-time/storyline character as well?
 		}, {
 			------ Skip Quests ------
 			q(62704, {	-- The Threads of Fate
@@ -278,7 +277,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 62704 },	-- The Threads of Fate
 				["altQuests"] = { 62713 },	-- Becoming a Skip character will exclude this Quest from being available
 				["isBreadcrumb"] = true,
-				["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2 },
+				["timeline"] = { ADDED_9_0_5, REMOVED_10_0_2, ADDED_11_1_0 },
 				["lockCriteria"] = { 1, "lvl", 60 },
 			}),
 			q(62716, {	-- Re-Introductions
@@ -347,7 +346,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 38.8, 69.9, ORIBOS },
 				["isBreadcrumb"] = true,
-				["timeline"] = { REMOVED_10_0_0 },
+				["timeline"] = { ADDED_9_0_5, REMOVED_10_0_0, ADDED_11_1_0 },
 				["lockCriteria"] = { 4,	-- Completing 4 Zone Meta Quest
 					"questID", 62763,	-- Support the Court
 					"questID", 62723,	-- Bolstering Bastion
@@ -389,13 +388,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 40.5, 65.9, ORIBOS },
 				["isBreadcrumb"] = true,
 				["lockCriteria"] = { 1, "questID", 65030 },	-- accepting this Quest
-				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2 },
+				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2, ADDED_11_1_0 },
 			}),
 			q(64846, {	-- Torghast
 				["provider"] = { "n", 167486 },	-- Tal-Inara
 				["coord"] = { 40.5, 65.9, ORIBOS },
 				["isBreadcrumb"] = true,
-				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2 },
+				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2, ADDED_11_1_0 },
 			}),
 			------ Zone Travel Breadcrumbs ------
 			------ Ardenweald ------
@@ -468,7 +467,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "n", 167486 },	-- Tal-Inara
 				["coord"] = { 40.5, 65.9, ORIBOS },
 				["isBreadcrumb"] = true,
-				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2 },
+				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2, ADDED_11_1_0 },
 			}),
 			------ Torghast ------
 			q(64849, {	-- Tower of the Damned
@@ -476,7 +475,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "n", 167486 },	-- Tal-Inara
 				["coord"] = { 40.5, 65.9, ORIBOS },
 				["isBreadcrumb"] = true,
-				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2 },
+				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2, ADDED_11_1_0 },
 			}),
 			------ Zone Meta Quests (keep in Oribos for visibility to players who may skip storyline I suppose) ------
 			------ Ardenweald ------
@@ -682,7 +681,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 65033 },	-- Observing Victory
 				["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 				["coord"] = { 34.7, 56.5, ORIBOS },
-				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2 },
+				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2, ADDED_11_1_0 },
 				["lvl"] = { 48, 60 },
 			})),
 			------ Torghast ------
@@ -690,7 +689,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 64850 },	-- Traversing Torghast
 				["provider"] = { "n", 181328 },	-- Ve'nish
 				["coord"] = { 35.5, 46.9, 1911 },	-- Torghast - Entrance
-				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2 },
+				["timeline"] = { ADDED_9_1_5, REMOVED_10_0_2, ADDED_11_1_0 },
 				["lvl"] = { 48, 60 },
 			}),
 		})),
@@ -956,7 +955,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 				q(65756, {["timeline"] = {ADDED_9_2_0}}),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Echoing Resolve'
 				q(65757, {["timeline"] = {ADDED_9_2_0}}),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Fastidious Resolve'
 				q(66047, {["timeline"] = {ADDED_9_2_0}}),	-- Solo Shuffle Completion? /First win
-				-- q(70704, {["timeline"] = {ADDED_9_2_0}}),	-- Tracking quest for Vessel of Profound Possibilities (spellID 367898)
 				------ Stay awhile and listen ------ (TODO upgrade to proper HQT in Oribos)
 				hqt(65511, {	-- Stay awhile and listen with Vareesa Windrunner (spellID 366650)
 					["timeline"] = {ADDED_9_2_0},

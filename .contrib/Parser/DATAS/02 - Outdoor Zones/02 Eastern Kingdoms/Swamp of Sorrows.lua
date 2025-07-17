@@ -7,10 +7,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["icon"] = 236845,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(782),	-- Explore Swamp of Sorrows
+				ach(782),	-- Explore Swamp of Sorrows
 				ach(4904, {	-- Swamp of Sorrows Quests
 					["timeline"] = { ADDED_4_0_3 },
-					-- #if ANYCLASSIC
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
+					-- #else
 					["sourceQuests"] = {
 						27600,	-- In With a Bang
 						27849,	-- Assault on Stonard
@@ -94,6 +96,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(66518, {	-- Everessa <Master Pet Tamer>
+					["coord"] = { 76.6, 41.6, SWAMP_OF_SORROWS },
+					["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nEveressa's pets are level 16 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.",
+					["timeline"] = { ADDED_5_0_4 },
+					["petBattleLvl"] = 16,
+					["groups"] = {
+						q(31913, {	-- Everessa
+							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
+				}),
+			}),
 			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					n(1386, {	-- Rogvar <Alchemy Trainer>
@@ -104,22 +122,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					}),
 				}),
-				prof(FISHING, {
-					-- #if AFTER CATA
-					o(180751),	-- Floating Wreckage
-					-- #endif
-					o(180712, {	-- Stonescale Eel Swarm
-						["maps"] ={
-							SWAMP_OF_SORROWS,
-							TANARIS,
-							BLASTED_LANDS,
-							THOUSAND_NEEDLES,
-						},
-					}),
-				}),
 				-- #if BEFORE CATA
 				prof(SKINNING, {
 					i(7392, {	-- Green Whelp Scale
+						["coord"] = { 15.0, 59.0, SWAMP_OF_SORROWS },
 						["crs"] = {
 							740,	-- Adolescent Whelp
 							741,	-- Dreaming Whelp

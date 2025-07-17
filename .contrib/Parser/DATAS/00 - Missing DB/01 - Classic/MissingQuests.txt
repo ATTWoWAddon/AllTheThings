@@ -1,0 +1,41 @@
+1.13.0.28211
+q(934),	-- Crown of the Earth	 CLASSIC:Crown of the Earth	 TBC:Crown of the Earth	 WOTLK:Crown of the Earth	 CATA:Crown of the Earth	 MOP:Crown of the Earth
+q(5628),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	 CATA:Returning Home	 MOP:Returning Home
+q(5629),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	 CATA:Returning Home	 MOP:Returning Home
+q(5630),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	 CATA:Returning Home	 MOP:Returning Home
+q(5631),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	 CATA:Returning Home	 MOP:Returning Home
+q(5632),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	 CATA:Returning Home	 MOP:Returning Home
+q(5633),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	 CATA:Returning Home	 MOP:Returning Home
+q(5635),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WOTLK:Desperate Prayer	 CATA:Desperate Prayer	 MOP:Desperate Prayer
+q(5636),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WOTLK:Desperate Prayer	 CATA:Desperate Prayer	 MOP:Desperate Prayer
+q(5637),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WOTLK:Desperate Prayer	 CATA:Desperate Prayer	 MOP:Desperate Prayer
+q(5638),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WOTLK:Desperate Prayer	 CATA:Desperate Prayer	 MOP:Desperate Prayer
+q(5639),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WOTLK:Desperate Prayer	 CATA:Desperate Prayer	 MOP:Desperate Prayer
+q(5640),	-- Desperate Prayer	 CLASSIC:Desperate Prayer	 TBC:Desperate Prayer	 WOTLK:Desperate Prayer	 CATA:Desperate Prayer	 MOP:Desperate Prayer
+q(5642),	-- Shadowguard	 CLASSIC:Shadowguard	 TBC:Shadowguard	 WOTLK:Shadowguard	 CATA:Shadowguard	 MOP:Shadowguard
+q(5643),	-- Shadowguard	 CLASSIC:Shadowguard	 TBC:Shadowguard	 WOTLK:Shadowguard	 CATA:Shadowguard	 MOP:Shadowguard
+q(5644),	-- Devouring Plague	 CLASSIC:Devouring Plague	 TBC:Devouring Plague	 WOTLK:Devouring Plague	 CATA:Devouring Plague	 MOP:Devouring Plague
+q(5646),	-- Devouring Plague	 CLASSIC:Devouring Plague	 TBC:Devouring Plague	 WOTLK:Devouring Plague	 CATA:Devouring Plague	 MOP:Devouring Plague
+q(5654),	-- Hex of Weakness	 CLASSIC:Hex of Weakness	 TBC:Hex of Weakness	 WOTLK:Hex of Weakness	 CATA:Hex of Weakness	 MOP:Hex of Weakness
+q(5655),	-- Hex of Weakness	 CLASSIC:Hex of Weakness	 TBC:Hex of Weakness	 WOTLK:Hex of Weakness	 CATA:Hex of Weakness	 MOP:Hex of Weakness
+q(5656),	-- Hex of Weakness	 CLASSIC:Hex of Weakness	 TBC:Hex of Weakness	 WOTLK:Hex of Weakness	 CATA:Hex of Weakness	 MOP:Hex of Weakness
+q(5657),	-- Hex of Weakness	 CLASSIC:Hex of Weakness	 TBC:Hex of Weakness	 WOTLK:Hex of Weakness	 CATA:Hex of Weakness	 MOP:Hex of Weakness
+q(5660),	-- Touch of Weakness	 CLASSIC:Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness	 CATA:Touch of Weakness	 MOP:Touch of Weakness
+q(5661),	-- Touch of Weakness	 CLASSIC:Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness	 CATA:Touch of Weakness	 MOP:Touch of Weakness
+q(5662),	-- Touch of Weakness	 CLASSIC:Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness	 CATA:Touch of Weakness	 MOP:Touch of Weakness
+q(5663),	-- Touch of Weakness	 CLASSIC:Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness	 CATA:Touch of Weakness	 MOP:Touch of Weakness
+q(5673),	-- Elune's Grace	 CLASSIC:Elune's Grace	 TBC:Elune's Grace	 WOTLK:Elune's Grace	 CATA:Elune's Grace	 MOP:Elune's Grace
+q(5675),	-- Elune's Grace	 CLASSIC:Elune's Grace	 TBC:Elune's Grace	 WOTLK:Elune's Grace	 CATA:Elune's Grace	 MOP:Elune's Grace
+q(5677),	-- Arcane Feedback	 CLASSIC:Arcane Feedback	 TBC:Arcane Feedback	 WOTLK:Arcane Feedback	 CATA:Arcane Feedback	 MOP:Arcane Feedback
+q(5678),	-- Arcane Feedback	 CLASSIC:Arcane Feedback	 TBC:Arcane Feedback	 WOTLK:Arcane Feedback	 CATA:Arcane Feedback	 MOP:Arcane Feedback
+q(8237),	-- In the Blink of an Eye Tracking Quest	 CLASSIC:REUSE	 TBC:REUSE	 WOTLK:REUSE	 CATA:REUSE	 MOP:REUSE
+1.13.5.34713
+q(60860),	-- WOTLK:Your Reward has Arrived!	 CATA:Your Reward has Arrived!	 MOP:Your Reward has Arrived!
+q(60863),	-- CLASSIC:[Never used]	 TBC:[Never used]	 WOTLK:[Never used]	 CATA:[Never used]	 MOP:[Never used]
+q(60864),	-- CLASSIC:[Never used]	 TBC:[Never used]	 WOTLK:[Never used]	 CATA:[Never used]	 MOP:[Never used]
+q(60865),	-- CLASSIC:[Never used]	 TBC:[Never used]	 WOTLK:[Never used]	 CATA:[Never used]	 MOP:[Never used]
+q(60866),	-- CLASSIC:[Never used]	 TBC:[Never used]	 WOTLK:[Never used]	 CATA:[Never used]	 MOP:[Never used]
+q(60868),	-- CLASSIC:[Never used]	 TBC:[Never used]	 WOTLK:[Never used]	 CATA:[Never used]	 MOP:[Never used]
+q(60870),	--
+1.13.6.36149
+q(61547),	--

@@ -149,8 +149,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(15986, {	-- Dragon Glyphs: Wingrest Embassy
 				["coord"] = { 74.9, 37.4, THE_WAKING_SHORES },
 			}),
-			explorationAch(16400),	-- Explore the Waking Shores
-			ach(16736),	-- Grand Theft Mammoth
+			ach(16400),		-- Explore the Waking Shores
+			ach(16736),		-- Grand Theft Mammoth
 			ach(16493, {	-- Petty Theft Mammoth
 				["description"] = "Find Mammoths to ride from the individual locations to the location specified on this achievement.",
 				["cr"] = 198163,	-- Mammoth-Tamer Tavok

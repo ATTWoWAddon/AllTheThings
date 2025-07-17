@@ -322,9 +322,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 		-- 4.x.x
 		n(P4xx, {
 			ach(5133),	-- Active Duty
-			ach(5365),	-- Bloom and Doom
 			ach(4783),	-- Cataclysm Dungeon Explorer
-			ach(5364),	-- Don't Want No Zombies on My Lawn
 			ach(4876),	-- Eastern Kingdoms Dungeon Explorer
 			ach(4867),	-- Explore Tol Barad NYI
 			ach(4953),	-- Guild Gladiator
@@ -363,6 +361,9 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 			ach(6549),	-- The Brewmasters
 			ach(8394),	-- The Frostwind Slayer
 			ach(7277),	-- Zero Bug Count
+			-- 5.5.0.60481
+			ach(8913),	-- Collector's Edition: Dread Raven
+			ach(8915),	-- Collector's Edition: Dread Hatchling
 		}),
 	}),
 	expansion(EXPANSION.WOD, {
@@ -583,7 +584,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			ach(15517),	-- Solo Shuffle rounds participated in
 			ach(15516),	-- Solo Shuffle rounds won
 			ach(15798),	-- Winding Slitherdrake
@@ -629,7 +630,6 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 
 		-- 10.2.5
 		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
-			ach(19031),	-- Fyrn
 			ach(19696),	-- Hearthstone Anniversary Mail
 		})),
 
@@ -641,7 +641,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- CREATED_11_0_0
-		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			ach(18830),	-- Level 2
 			ach(20512),	-- Herding Cats
 			ach(40099),	-- That Extra Push Over the Cliff
@@ -681,6 +681,13 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
 			-- 11.1.5.60008
 			ach(15558),	-- Survey Bot (Added in 11.1.5.60008, removed in 11.1.5.60067)
+			ach(41700),	-- Dastardly Duos Weekly Wins
+		})),
+
+		-- CREATED_11_1_7
+		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_7 } }, {
+			--11.1.7.60520
+			ach(42028),	-- Ashes to Ashes (Temporary home as this will likely return / is planned for Legion Remix, but missing files keeps picking up the commented version)
 		})),
 	}),
 }));

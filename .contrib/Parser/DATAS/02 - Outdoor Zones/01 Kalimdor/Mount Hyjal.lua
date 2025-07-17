@@ -15,10 +15,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Requires the regrowth phase of Mount Hyjal.",
 				}),
 				ach(4870, {	-- Coming Down the Mountain
-					-- #IF RETAIL
+					-- #if AFTER 7.3.5
 					["_doautomation"] = true,
-					-- #ENDIF
-					-- #if ANYCLASSIC
+					-- #else
 					["sourceQuests"] = {
 						25584,	-- The Return of the Ancients
 						25298,	-- Free Your Mind, the Rest Follows
@@ -35,7 +34,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
-				explorationAch(4863),	-- Explore Hyjal
+				ach(4863),	-- Explore Hyjal
 				ach(5860, {		-- The 'Unbeatable?' Pterodactyl: BEATEN.
 					["description"] = "The daily quest 'Vigilance on Wings' is offered in Firelands Hatchery after completing the intial quests as part of the questline in Shrine of Aviana.",
 					["groups"] = {
@@ -169,14 +168,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #if ANYCLASSIC
-			prof(FISHING, {
-				o(202776, {	-- Mountain Trout School
-					i(22739),	-- Tome of Polymorph: Turtle (CI!)
-				}),
-				i(68050, {	-- Shatterscale Mightfish
-					["provider"] = { "i", 68049 },	-- Heat-Treated Spinning Lure
-					["coord"] = { 52.4, 77.0, MOUNT_HYJAL },	-- The Throne of Flame
-					["description"] = "Can be caught by fishing in lava using a special lure.",
+			n(PROFESSIONS, {
+				prof(FISHING, {
+					o(202776, {	-- Mountain Trout School
+						i(22739),	-- Tome of Polymorph: Turtle (CI!)
+					}),
+					i(68050, {	-- Shatterscale Mightfish
+						["provider"] = { "i", 68049 },	-- Heat-Treated Spinning Lure
+						["coord"] = { 52.4, 77.0, MOUNT_HYJAL },	-- The Throne of Flame
+						["description"] = "Can be caught by fishing in lava using a special lure.",
+					}),
 				}),
 			}),
 			-- #endif
@@ -2072,6 +2073,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			petbattles({
 				n(66819, {	-- Brok <Master Pet Tamer>
 					["coord"] = { 61.4, 32.8, MOUNT_HYJAL },
+					["timeline"] = { ADDED_5_0_4 },
+					["petBattleLvl"] = 25,
+					["groups"] = {
+						q(31972, {	-- Brok
+							["sourceAchievement"] = 7525,	-- Taming Cataclysm
+							["timeline"] = { ADDED_5_0_4 },
+							["isDaily"] = true,
+						}),
+					},
 				}),
 			}),
 			n(RARES, {
@@ -2175,9 +2185,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(62382),	-- Waywatcher's Boots
 							i(62367, {	-- Arcanum of Hyjal
 								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(68765, {	-- Arcanum of Hyjal
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(138803, {	-- Illusion: Mending (ILLUSION!)

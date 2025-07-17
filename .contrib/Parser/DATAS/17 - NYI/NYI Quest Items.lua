@@ -86,6 +86,15 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(169832),	-- The Infinity Tube
 			i(169575),	-- Worthless data
 		})),
+
+		-- 8.3.0
+		expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_3_0 } }, {
+			-- 8.3.0.32044
+			i(170543),	-- Strange Stone
+			i(172515),	-- Writhing Prison Cage Rune
+			-- 8.3.0.32712
+			i(175057),	-- H'partho's Whistle
+		})),
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
@@ -227,7 +236,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(172453),	-- Prisoner Transfer Orders
 			i(178467),	-- Profane Shadestone
 			i(180828),	-- Promissory Note
-			i(173973),	-- Purian
 			i(177963),	-- Purified Armor Fragments
 			i(183733),	-- Purified Nectar
 			i(175973),	-- Ravager Talon
@@ -388,7 +396,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			i(194445),	-- [DNT] Ceremonial Necklace
 			i(191633),	-- A Shard of Crystallized Mana
 			i(191023),	-- Mudcaked Necklace
@@ -451,7 +459,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(191117),	-- Enchanted Claws
 			i(193858),	-- Enchanted Tools
 			i(191551),	-- Encrusted Key [DNT]
-			i(194426),	-- Enriched Soil
 			i(191308),	-- Envenomed Spear
 			i(192496),	-- Exhumed Hunter's Spear
 			i(193839),	-- Explosive Ash
@@ -621,7 +628,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			i(219939),	-- Alleria's Crystal
 			i(213193),	-- Arathi Army Medallion
 			i(223638),	-- Arathi Trade Goods

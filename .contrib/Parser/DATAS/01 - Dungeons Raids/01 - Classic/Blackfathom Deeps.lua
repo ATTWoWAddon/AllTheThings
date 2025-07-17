@@ -488,8 +488,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(56699, {	-- Aluwyn's Legguards
 							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 						}),
+						i(7000, {	-- Heartwood Girdle
+							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+						}),
+						i(6998, {	-- Nimbus Boots
+							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+						}),
 					},
 				}),
+			}),
+			n(TREASURES, {
+				o(19018),	-- Giant Clam
 			}),
 			n(4887, {	-- Ghamoo-ra
 				["timeline"] = { REMOVED_6_0_2 },
@@ -569,9 +578,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["timeline"] = { REMOVED_6_0_2 },
 				-- #if BEFORE 6.0.1.18322
 				["groups"] = {
-					ach(632, {	-- Blackfathom Deeps
-						["timeline"] = { ADDED_3_0_2 },
-					}),
+					ach(632),	-- Blackfathom Deeps
 					ach(5041, {	-- Blackfathom Deeps Guild Run
 						["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 					}),
@@ -898,7 +905,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					n(PROFESSIONS, {
 						n(212159, {	-- Old Serra'kis <The Devoured>
 							["sourceQuest"] = 78907,	-- Speak to the Dead
-							["OnUpdate"] = [[_.OnUpdateForCrafter]],
+							["OnUpdate"] = [[_.OnUpdateDB.FOR_CRAFTER]],
 							["groups"] = {
 								i(211419),	-- Handful of Shifting Scales
 							},
@@ -907,7 +914,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 211420 },	-- Shifting Scale Talisman
 							["sourceQuest"] = 78909,	-- Shifting Scale Talisman
 							["timeline"] = { REMOVED_2_0_1 },
-							["OnUpdate"] = [[_.OnUpdateForCrafter]],
+							["OnUpdate"] = [[_.OnUpdateDB.FOR_CRAFTER]],
 							["groups"] = {
 								i(211421),	-- The Box
 							},

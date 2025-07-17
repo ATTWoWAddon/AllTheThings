@@ -50,7 +50,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				15984,	-- Elite: Dragonflight Season 1
 			}},
 			["groups"] = {
-				i(202047, {	-- Gleaming Incarnate Thunderstone
+				i(202047, {	-- Gleaming Incarnate Thunderstone (CI!)
 					d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894 }, {
 						cl(DEATHKNIGHT, {
 							i(200408),	-- Maw of the Haunted Frostbrood
@@ -391,7 +391,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				17831,	-- Elite: Dragonflight Season 2
 			}},
 			["g"] = {
-				i(205878, {	-- Obsidian Aspectral Earthstone
+				i(205878, {	-- Obsidian Aspectral Earthstone (CI!)
 					d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
 						cl(DEATHKNIGHT, {
 							i(202461),	-- Lingering Phantom's Dreadhorns
@@ -732,7 +732,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				19090,	-- Elite: Dragonflight Season 3
 			}},
 			["g"] = {
-				i(210468, {	-- Emerald Blossom Dreamstone
+				i(210468, {	-- Emerald Blossom Dreamstone (CI!)
 					d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
 						cl(DEATHKNIGHT, {	-- HEAD, SHOULDERS
 							i(207200),	-- Piercing Gaze of the Risen Nightmare
@@ -1098,7 +1098,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				18867,	-- Through the Ashes and Flames
 			}},
 			["groups"] = {
-				i(208551, {	-- Ambrosial Sporestone
+				i(208551, {	-- Ambrosial Sporestone (CI!)
 					filter(CLOTH, {
 						i(207927,{["bonusID"] = 6894,}),	-- Crown of the Infinite Lord
 						i(204786,{["bonusID"] = 6895,}),	-- Suffused Cowl
@@ -1226,12 +1226,3 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		}),
 	}),
 })));
-
--- root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
--- 	n(ACHIEVEMENTS, {
--- 		q(72248),	-- Triggered when using 'Gleaming Incarnate Thunderstone' (itemID 202047) (spellID 396597)
--- 		q(75968, {["timeline"] = {ADDED_10_1_0}}),	-- Triggered when using 'Obsidian Aspectral Earthstone' (itemID 205878) (spellID 410792)
--- 		q(77678, {["timeline"] = {ADDED_10_1_7}}),	-- Triggered when using 'Ambrosial Sporestone' (itemID 208551) (spellID 420046)
--- 		q(78422, {["timeline"] = {ADDED_10_2_0}}),	-- Triggered when using 'Emerald Blossom Dreamstone' (itemID 210468) (spellID 425847)
--- 	}),
--- })));

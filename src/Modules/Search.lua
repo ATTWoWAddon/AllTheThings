@@ -17,7 +17,7 @@ local floor, 	  type, tonumber,pairs,wipe
 local SearchForObject, GetRelativeRawWithField
 	= app.SearchForObject, app.GetRelativeRawWithField
 
--- Upgrade API Implementation
+-- Search API Implementation
 -- Access via AllTheThings.Modules.Search
 local api = {};
 app.Modules.Search = api;
@@ -59,20 +59,24 @@ local KeyMaps = setmetatable({
 	azessence = "azeriteessenceID",
 	battlepet = "speciesID",
 	c = "currencyID",
+	camp = "campsiteID",
 	currency = "currencyID",
+	crit = "criteriaID",
 	enchant = "spellID",
 	fp = "flightpathID",
 	follower = "followerID",
 	garrbuilding = "garrisonbuildingID",
 	garrfollower = "followerID",
+	["journal:0"] = "instanceID",
+	["journal:1"] = "encounterID",
 	i = "modItemID",
 	item = "modItemID",
-	itemid = "modItemID",
+	m = "spellID",
 	mount = "spellID",
-	mountid = "spellID",
-	n = "creatureID",
-	npc = "creatureID",
-	npcid = "creatureID",
+	mm = "itemID",
+	mountmod = "itemID",
+	n = "npcID",
+	npc = "npcID",
 	o = "objectID",
 	object = "objectID",
 	r = "spellID",
@@ -85,7 +89,7 @@ local KeyMaps = setmetatable({
 	talent = "spellID",
 	q = "questID",
 	quest = "questID",
-}, { __index = function(t,key) return key:gsub("id", "ID") end})
+}, { __index = function(t,key) return key.."ID" end})
 
 local function SearchByItemLink(link)
 	-- Parse the link and get the itemID and bonus ids.
@@ -152,15 +156,21 @@ end
 local function SearchByKindLink(link)
 	-- app.PrintDebug("SearchByKindLink",link)
 	local kind, id, id2, id3 = (":"):split(link)
-	kind = kind:lower()
+	kind = kind:lower():gsub("id", "")
 	if id then id = tonumber(id) end
 	if not id or not kind then
 		-- can't search for nothing!
 		return;
 	end
+	-- special case for 'journal' since it can split to instance or encounter
+	if kind == "journal" then
+		kind = kind..":"..id
+		id = id2
+		id = tonumber(id)
+	end
 	--print(link:gsub("|c", "c"):gsub("|h", "h"));
-	-- app.PrintDebug("SFL",itemString,kind,">",KeyMaps[kind],id,id2,id3)
-	kind = (KeyMaps[kind].."ID"):gsub("IDID", "ID")
+	-- app.PrintDebug("SFL",kind,">",KeyMaps[kind],id,id2,id3)
+	kind = KeyMaps[kind]
 	if kind == "modItemID" then
 		if not id2 and not id3 then
 			id, id2, id3 = GetItemIDAndModID(id)
@@ -168,10 +178,24 @@ local function SearchByKindLink(link)
 		id = GetGroupItemIDWithModID(nil, id, id2, id3)
 	end
 	-- app.PrintDebug("Search",kind,id,#SearchForObject(kind, id, nil, true))
-	return SearchForObject(kind, id, nil, true), kind, id
+	local results = SearchForObject(kind, id, "key", true)
+	-- field search if nothing found
+	if #results == 0 then
+		results = SearchForObject(kind, id, "field", true)
+		-- lenient search if nothing found
+		if #results == 0 then
+			results = SearchForObject(kind, id, nil, true)
+		end
+		-- special case for missing criteria
+		if #results == 0 and kind == "criteriaID" then
+			return results, kind, id..":"..(id2 or "")
+		end
+	end
+	return results, kind, id
 end
 
 local function SearchForLink(link)
+	if not link then return end
 	local cleanlink = CleanLink(link)
 
 	-- real item links we should use the search by item link
@@ -183,6 +207,48 @@ local function SearchForLink(link)
 	return SearchByKindLink(cleanlink)
 end
 app.SearchForLink = SearchForLink;
+
+local SourceSearcher
+do
+	local GetRawField = app.GetRawField
+	-- A table which provides a function based on Thing-Key to return the Searches or Sources of that Thing
+	SourceSearcher = setmetatable({
+		itemID = function(field, id)
+			local results = SearchForObject("itemID", id, "field", true)
+			if results and #results > 0 then return results end
+			local baseItemID = GetItemIDAndModID(id)
+			results = SearchForObject("itemID", baseItemID, "field", true)
+			if results and #results > 0 then return results end
+			results = SearchForObject("qItemID", baseItemID, "none", true)
+			return results, true
+		end,
+		currencyID = function(field, id)
+			local results = SearchForObject(field, id, "field", true)
+			return results
+		end,
+		LinkSources = function(link)
+			local cleanlink = CleanLink(link)
+			local kind, id = (":"):split(cleanlink)
+			if id then id = tonumber(id) end
+			if not id or not kind then
+				-- can't search for nothing!
+				return
+			end
+			kind = KeyMaps[kind]
+			local searcher = SourceSearcher[kind]
+			return searcher(kind, id)
+		end,
+	},{
+		__index = function(t, field)
+			return GetRawField
+		end
+	})
+	-- Some key-based Searches should simply use a different field
+	SourceSearcher.mountmodID = SourceSearcher.itemID
+	SourceSearcher.heirloomID = SourceSearcher.itemID
+	SourceSearcher.modItemID = SourceSearcher.itemID
+	app.SourceSearcher = SourceSearcher
+end
 
 -- Search Results
 local IncludeUnavailableRecipes, IgnoreBoEFilter;
@@ -439,3 +505,64 @@ function app:BuildTargettedSearchResponse(groups, field, value, drop, criteria)
 	end
 	return ClonedHierarchyGroups;
 end
+
+-- Allows a user to use /att search|? [link]
+-- to enable Debug Printing of Event messages
+app.ChatCommands.Add({"search","?"}, function(args)
+	local search = args[2]
+	if not search then
+		local guid = UnitGUID("target");
+		if guid then
+			search = "n:" .. select(6, ("-"):split(guid));
+		end
+	end
+
+	local results = SearchForLink(search)
+	if not results or #results == 0 then
+		results = SourceSearcher.LinkSources(search)
+	end
+	if not results or #results == 0 then
+		app.print("No results found for",search)
+		return
+	end
+
+	-- expand the hierarchy to each search result
+	local DGR = app.DirectGroupRefresh
+	local GetRelative = app.GetRelativeRawWithField
+	local window
+	local o
+	for i = 1,#results do
+		o = results[i]
+		if not window then
+			-- find the containing window
+			window = GetRelative(o, "window")
+
+			-- open the containing Window
+			window:SetVisible(true)
+
+			-- collapse all the groups
+			app.ExpandGroupsRecursively(window.data, false, true)
+		end
+		-- force the search results to be visible
+		o.forceShow = true
+		-- DGU them to chain visibility
+		DGR(o)
+		o = o.parent
+		while o do
+			o.expanded = true
+			o = o.parent
+		end
+	end
+
+	-- report results
+	local firstResult = results[1]
+	app.print("Found",#results,"results for",app:SearchLink(firstResult),"within",window.Suffix)
+
+	-- mark the window to scroll to the first result
+	window:ScrollTo(firstResult.key, firstResult[firstResult.key])
+
+	return true
+end, {
+	"Usage : /att [search|?] [link]",
+	"Allows performing a search against ATT data and navigating to the found result(s)",
+})

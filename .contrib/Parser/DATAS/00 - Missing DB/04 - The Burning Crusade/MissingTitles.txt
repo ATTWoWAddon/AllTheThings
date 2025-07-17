@@ -1,0 +1,36 @@
+2.5.1.38043
+title(1),	-- Private %s
+title(2),	-- Corporal %s
+title(3),	-- Sergeant %s
+title(4),	-- Master Sergeant %s
+title(5),	-- Sergeant Major %s
+title(6),	-- Knight %s
+title(7),	-- Knight-Lieutenant %s
+title(8),	-- Knight-Captain %s
+title(9),	-- Knight-Champion %s
+title(10),	-- Lieutenant Commander %s
+title(11),	-- Commander %s
+title(12),	-- Marshal %s
+title(13),	-- Field Marshal %s
+title(14),	-- Grand Marshal %s
+title(15),	-- Scout %s
+title(16),	-- Grunt %s
+title(17),	-- Sergeant %s
+title(18),	-- Senior Sergeant %s
+title(19),	-- First Sergeant %s
+title(20),	-- Stone Guard %s
+title(21),	-- Blood Guard %s
+title(22),	-- Legionnaire %s
+title(23),	-- Centurion %s
+title(24),	-- Champion %s
+title(25),	-- Lieutenant General %s
+title(26),	-- General %s
+title(27),	-- Warlord %s
+title(28),	-- High Warlord %s
+title(29),	-- Gladiator %s
+title(30),	-- Duelist %s
+title(31),	-- Rival %s
+title(32),	-- Challenger %s
+title(41),	-- Battlemaster %s \\ Infernal Gladiator %s
+2.5.1.39399
+title(128),	-- Vanquisher %s

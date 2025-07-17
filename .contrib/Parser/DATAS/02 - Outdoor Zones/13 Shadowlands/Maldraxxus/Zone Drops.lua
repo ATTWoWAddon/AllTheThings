@@ -102,7 +102,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					165960,	-- Blazing Forgehound
 					161390,	-- Darkhound Hunter
 				},
-				["questID"] = 59687,
 			}),
 			i(180532),	-- Oxxein Lockbox
 			i(181777, {	-- Phaeton's Key

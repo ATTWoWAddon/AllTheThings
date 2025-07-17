@@ -33,7 +33,7 @@ local function RefreshSkills()
 				local spellID = app.SpellNameToSpellID[skillName];
 				if spellID then
 					local spellName = GetSpellName(spellID);
-					for skillID,sp in pairs(app.SkillIDToSpellID) do
+					for skillID,sp in pairs(app.SkillDB.SkillToSpell) do
 						if GetSpellName(sp) == spellName then
 							spellID = sp;
 							break;
@@ -41,7 +41,7 @@ local function RefreshSkills()
 					end
 					activeSkills[spellID] = { skillRank, skillMaxRank };
 				else
-					for skillID,sp in pairs(app.SkillIDToSpellID) do
+					for skillID,sp in pairs(app.SkillDB.SkillToSpell) do
 						if GetSpellName(sp) == skillName then
 							spellID = sp;
 							break;
@@ -63,7 +63,7 @@ local function RefreshSkills()
 	end
 
 	-- Clone the data for the specializations.
-	for specID,spellID in pairs(app.SpecializationSpellIDs) do
+	for specID,spellID in pairs(app.SkillDB.SpecializationSpells) do
 		local baseSpell = activeSkills[spellID];
 		if baseSpell and (app.CurrentCharacter.Spells[specID] or IsSpellKnown(specID)) then
 			activeSkills[specID] = baseSpell;
@@ -172,7 +172,7 @@ app:CreateWindow("Tradeskills", {
 
 				if craftSkillID ~= 0 then
 					local spellName = GetSpellName(craftSkillID);
-					for skillID,spellID in pairs(app.SkillIDToSpellID) do
+					for skillID,spellID in pairs(app.SkillDB.SkillToSpell) do
 						if GetSpellName(spellID) == spellName then
 							craftSkillID = spellID;
 							break;
@@ -231,7 +231,7 @@ app:CreateWindow("Tradeskills", {
 
 				if tradeSkillID ~= 0 then
 					local spellName = GetSpellName(tradeSkillID);
-					for skillID,spellID in pairs(app.SkillIDToSpellID) do
+					for skillID,spellID in pairs(app.SkillDB.SkillToSpell) do
 						if GetSpellName(spellID) == spellName then
 							tradeSkillID = spellID;
 							break;

@@ -8,10 +8,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["icon"] = 236844,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(781),	-- Explore Northern Stranglethorn
+				ach(781),	-- Explore Northern Stranglethorn
 				ach(4906, {	-- Northern Stranglethorn Quests
 					["timeline"] = { ADDED_4_0_3 },
-					-- #if ANYCLASSIC
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
+					-- #else
 					["sourceQuests"] = {
 						26775,	-- Be Raptor (A)
 						26362,	-- Be Raptor (H)
@@ -26,19 +28,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				ach(940, {	-- The Green Hills of Stranglethorn
-					-- #if AFTER CATA
-					["sourceQuest"] = 208,	-- Big Game Hunter
-					-- #else
-					["sourceQuests"] = {
-						208,	-- Big Game Hunter
-						338,	-- The Green Hills of Stranglethorn
-					},
-					-- #endif
-					-- #if BEFORE WRATH
-					["AllSourceQuestsRequiredForAchievement"] = true,
-					-- #endif
-				}),
+				ach(940),	-- The Green Hills of Stranglethorn
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",
@@ -124,10 +114,39 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
-			n(PROFESSIONS, {
-				prof(FISHING, {
-					o(180901),	-- Bloodsail Wreckage
+			petbattles({
+				n(63194, {	-- Steven Lisbane <Master Pet Tamer>
+					["coord"] = { 46.0, 40.4, NORTHERN_STRANGLETHORN },
+					["description"] = "This pet tamer is Alliance only.\n\nSteven's pets are level 9 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.",
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+					["petBattleLvl"] = 9,
+					["groups"] = {
+						q(31852, {	-- Steven Lisbane
+							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
 				}),
+				q(31728, {	-- Bill Buckler
+					["qg"] = 63194,	-- Steven Lisbane
+					["sourceQuest"] = 31729,	-- Steven Lisbane
+					["coord"] = { 46.0, 40.4, NORTHERN_STRANGLETHORN },
+					["timeline"] = { ADDED_5_0_4 },
+					["maps"] = { THE_CAPE_OF_STRANGLETHORN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Defeat Bill Buckler
+							["provider"] = { "n", 65656 },	-- Bill Buckler
+							["coord"] = { 51.4, 73.2, THE_CAPE_OF_STRANGLETHORN },
+						}),
+						i(89125),	-- Sack of Pet Supplies
+					},
+				}),
+			}),
+			n(PROFESSIONS, {
 				prof(LEATHERWORKING, {
 					n(7871, {	-- Se'Jib <Master Tribal Leatherworker>
 						["coord"] = { 45.2, 58.6, NORTHERN_STRANGLETHORN },
@@ -3102,6 +3121,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(51661, {	-- Tsul'Kalu
 					["coord"] = { 47.0, 32.3, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_6 },
+				}),
+			}),
+			n(TREASURES, {
+				o(2744, {	-- Giant Clam
+					["coords"] = {
+						{ 28.1, 45.9, NORTHERN_STRANGLETHORN },	-- The Vile Reef
+					},
+					["nomerge"] = true,
+					["groups"] = {
+						i(4611),	-- Blue Pearl
+						i(4655),	-- Giant Clam Meat
+					},
 				}),
 			}),
 			n(VENDORS, {

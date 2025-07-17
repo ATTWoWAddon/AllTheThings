@@ -34,7 +34,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						i(159636),	-- Staff of the Lightning Serpent
 						i(158370),	-- Twin-Strike Polearm
 						i(159380),	-- Arc-Glass Bindings
-						i(159263),	-- Bindings of the Slither Current
+						i(159263),	-- Bindings of the Slithering Current
 						i(159425),	-- Shard-Tipped Vambraces
 						i(159317),	-- Whirling Dervish Sash
 						i(159329),	-- Leggings of the Galeforce Viper
@@ -102,7 +102,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							i(159636),	-- Staff of the Lightning Serpent
 							i(158370),	-- Twin-Strike Polearm
 							i(159380),	-- Arc-Glass Bindings
-							i(159263),	-- Bindings of the Slither Current
+							i(159263),	-- Bindings of the Slithering Current
 							i(159425),	-- Shard-Tipped Vambraces
 							i(159317),	-- Whirling Dervish Sash
 							i(159329),	-- Leggings of the Galeforce Viper
@@ -173,7 +173,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							i(159636),	-- Staff of the Lightning Serpent
 							i(158370),	-- Twin-Strike Polearm
 							i(159380),	-- Arc-Glass Bindings
-							i(159263),	-- Bindings of the Slither Current
+							i(159263),	-- Bindings of the Slithering Current
 							i(159425),	-- Shard-Tipped Vambraces
 							i(159317),	-- Whirling Dervish Sash
 							i(159329),	-- Leggings of the Galeforce Viper

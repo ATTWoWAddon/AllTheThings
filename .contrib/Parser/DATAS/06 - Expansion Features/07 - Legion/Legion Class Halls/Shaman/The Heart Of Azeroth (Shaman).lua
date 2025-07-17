@@ -610,6 +610,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["provider"] = { "n", 120244 },	-- Magatha Grimtotem
 						["coord"] = { 42.2, 45.2, THOUSAND_NEEDLES },
 						["timeline"] = { ADDED_7_2_0 },
+						["g"] = {
+							i(143860),	-- The Doomstone (QI!)
+						},
 					}),
 					q(45723, {	-- The Crone's Wrath
 						["sourceQuests"] = { 45706 },	-- The Power of Thousands

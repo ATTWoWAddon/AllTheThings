@@ -1343,7 +1343,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 			-- Misc
 			q(65531),	-- Starts pocopoc fashion (spellID 366694 & 366695 & 366696 & 366697 & 366698 & 366699 & 366700 & 366718 & 366735 & 366883)
 			q(65724),	-- Daily Bufonid Quest Trigger
-			q(65539),	-- Zereth Mortis Flying unlock (spellID 366736)
+			-- q(65539),	-- Zereth Mortis Flying unlock (spellID 366736)
 			q(66014),	-- Flight Path Backup / Skip Zereth Mortis Intro / Teleport (spellID 367677 & 365316 & 360195)
 
 			--q(63766),	-- Triggered when Exploring (Might have to do with The Matriarch(183505))

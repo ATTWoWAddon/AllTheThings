@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["icon"] = 236741,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(777),	-- Explore Deadwind Pass
+				ach(777),	-- Explore Deadwind Pass
 			}),
 			battlepets({
 				pet(1160, {	-- Arcane Eye (PET!)
@@ -40,6 +40,66 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				visit_exploration(7971,{coord={46.7,69.0,DEADWIND_PASS}}),	-- Karazhan Catacombs
 				exploration(2938),	-- Sleeping Gorge
 				exploration(2561),	-- The Vice
+			}),
+			petbattles({
+				n(66522, {	-- Lydia Accoste <Grand Master Pet Tamer>
+					["coord"] = { 40.2, 76.6, DEADWIND_PASS },
+					["description"] = "Lydia's pets are level 19 of the following consecutive pet classes:\n1. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n2. Undead - use Critter (powerful) or Aquatic (tanky) pet.\n3. Undead - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Alpine Chipmunk and Alpine Hare.",
+					["timeline"] = { ADDED_5_0_4 },
+					["petBattleLvl"] = 19,
+					["groups"] = {
+						q(31916, {	-- Grand Master Lydia Accoste
+							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
+							["timeline"] = { ADDED_5_0_4 },
+							["isDaily"] = true,
+							["groups"] = {
+								i(89125),	-- Sack of Pet Supplies
+							},
+						}),
+					},
+				}),
+				q(31915, {	-- Grand Master Lydia Accoste
+					["qg"] = 66522,	-- Lydia Accoste
+					["sourceQuests"] = {
+						31917,	-- A Tamer's Homecoming (A)
+						31918,	-- A Tamer's Homecoming (H)
+					},
+					["coord"] = { 40.0, 76.4, DEADWIND_PASS },
+					["timeline"] = { ADDED_5_0_4 },
+					["groups"] = {
+						objective(1, {	-- Defeat Lydia Accoste
+							["provider"] = { "n", 66522 },	-- Lydia Accoste
+							["coord"] = { 40.0, 76.4, DEADWIND_PASS },
+						}),
+						i(89125),	-- Sack of Pet Supplies
+					},
+				}),
+				q(31976, {	-- The Returning Champion (A)
+					["qg"] = 66522,	-- Lydia Accoste
+					["sourceQuests"] = {
+						31915,	-- Grand Master Lydia Accoste
+						31897,	-- Grand Master Trixxy
+					},
+					["altQuests"] = { 31975 },	-- The Returning Champion (Winterspring)
+					["coord"] = { 40.0, 76.4, DEADWIND_PASS },
+					["timeline"] = { ADDED_5_0_4 },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				q(31980, {	-- The Returning Champion (H)
+					["qg"] = 66522,	-- Lydia Accoste
+					["sourceQuests"] = {
+						31915,	-- Grand Master Lydia Accoste
+						31897,	-- Grand Master Trixxy
+					},
+					["altQuests"] = { 31977 },	-- The Returning Champion (Winterspring)
+					["coord"] = { 40.0, 76.4, DEADWIND_PASS },
+					["timeline"] = { ADDED_5_0_4 },
+					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
 			}),
 			-- #if AFTER 7.0.3.21796
 			n(QUESTS, {

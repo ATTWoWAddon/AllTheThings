@@ -6,19 +6,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 		n(WORLD_QUESTS, {
 			["g"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
 				petbattle(q(86952, {	-- Approach the Croach
-					--["cr"] = 237718,	-- Creech
+					["provider"] = { "n", 237718 },	-- Creech
 					["coord"] = { 31.8, 79.6, UNDERMINE },
 				})),
 				petbattle(q(86943, {	-- Drilling Down
-					--["cr"] = 237701,	-- Precision Powerdrill
+					["provider"] = { "n", 237701 },	-- Precision Powerdrill
 					["coord"] = { 53.4, 71.2, UNDERMINE },
 				})),
 				petbattle(q(86949, {	-- Loyal Crewmates
-					--["cr"] = 237712,	-- Prezly Wavecutter
+					["provider"] = { "n", 237712 },	-- Prezly Wavecutter
 					["coord"] = { 58.2, 28.4, UNDERMINE },
 				})),
 				petbattle(q(86947, {	-- Tiny, Expensive, and Deadly
-					--["cr"] = 237703,	-- Baxx the Purveyor
+					["provider"] = { "n", 237703 },	-- Baxx the Purveyor
 					["coord"] = { 40.1, 18.6, UNDERMINE },
 				})),
 				pvp(q(85479, {	-- Rock 'Em, Explode 'Em
@@ -153,7 +153,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["coord"] = { 56.6, 32.7, UNDERMINE },
 				}),
 				q(85474, {	-- Rat Pack Attack
-					["coord"] = { 36.6, 59.2, UNDERMINE },	-- TODO: one of it is wrong
+					["coord"] = { 36.6, 59.2, UNDERMINE },
 				}),
 				q(85499, {	-- One Goblin's Trash
 					["coord"] = { 68.5, 63.5, UNDERMINE },
@@ -168,7 +168,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["coord"] = { 39.5, 45.8, UNDERMINE },
 				}),
 				q(85400, {	-- Reduce, Re-ooze, Recycle
-					["coord"] = { 36.6, 59.2, UNDERMINE },	-- TODO: one of it is wrong
+					["coord"] = { 36.6, 59.2, UNDERMINE },
 				}),
 				q(85512, {	-- Rooting Out Counterfeits
 					["coord"] = { 26.9, 71.8, UNDERMINE },

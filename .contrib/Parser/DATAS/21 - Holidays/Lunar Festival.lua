@@ -19,6 +19,8 @@ LUNAR_FESTIVAL_HEADER = createHeader({
 		en = WOWAPI_GetCategoryName(160),
 		-- #else
 		en = "Lunar Festival",
+		es = "Festival Lunar",
+		mx = "Festival Lunar",
 		-- #endif
 	},
 });
@@ -354,10 +356,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				-- #if BEFORE 3.0.8.9464
 				i(21640),	-- Lunar Festival Fireworks Pack
 				-- #endif
-				i(21722, {	-- Pattern: Festival Dress
+				i(21722, {	-- Pattern: Festival Dress (RECIPE!)
 					["timeline"] = { REMOVED_3_0_8 },
 				}),
-				i(21723, {	-- Pattern: Festival Suit
+				i(21723, {	-- Pattern: Festival Suit (RECIPE!)
 					["timeline"] = { REMOVED_3_0_8 },
 				}),
 			},
@@ -1475,37 +1477,32 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["coord"] = { 53.8, 35.3, MOONGLADE },
 			["groups"] = {
 				i(122338, {	-- Ancient Heirloom Armor Casing
-					["timeline"] = { ADDED_6_1_0 },
 					["cost"] = { { "i", 21100, 40 } },	-- 40x Coin of Ancestry
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(167731, {	-- Battle-Hardened Heirloom Armor Casing
-					["timeline"] = { ADDED_8_1_5 },
 					["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["timeline"] = { ADDED_8_1_5 },
 				}),
 				i(187997, {	-- Eternal Heirloom Armor Casing
-					["timeline"] = { ADDED_9_1_5 },
 					["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["timeline"] = { ADDED_9_1_5 },
 				}),
 				i(122340, {	-- Timeworn Heirloom Armor Casing
-					["timeline"] = { ADDED_6_1_0 },
 					["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(151614, {	-- Weathered Heirloom Armor Casing
-					["timeline"] = { ADDED_7_2_5 },
 					["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
-					["sym"] = { { "fill" } },	-- simply fill this item
+					["timeline"] = { ADDED_7_2_5 },
 				}),
-				i(44916, {	-- Pattern: Festival Dress
-					["timeline"] = { ADDED_3_0_8 },
+				i(44916, {	-- Pattern: Festival Dress (RECIPE!)
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
+					["timeline"] = { ADDED_3_0_8 },
 				}),
-				i(44917, {	-- Pattern: Festival Suit
-					["timeline"] = { ADDED_3_0_8 },
+				i(44917, {	-- Pattern: Festival Suit (RECIPE!)
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
+					["timeline"] = { ADDED_3_0_8 },
 				}),
 				i(21740, {	-- Small Rocket Recipes
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry

@@ -1,78 +1,78 @@
 ARCHAEOLOGY_ARAKKOA = createHeader({
-	readable = "Archaeology: PH1",
-	--icon = "PH",
+	readable = "Archaeology: Arakkoa",
+	icon = 441139,
 	text = {
-		en = "Archaeology: PH1",
+		en = "Archaeology: Arakkoa",
 	},
 });
 ARCHAEOLOGY_DEMONIC = createHeader({
-	readable = "Archaeology: PH2",
-	--icon = "PH",
+	readable = "Archaeology: Demonic",
+	icon = 441139,
 	text = {
-		en = "Archaeology: PH2",
+		en = "Archaeology: Demonic",
 	},
 });
 ARCHAEOLOGY_DRAENORCLANS = createHeader({
-	readable = "Archaeology: PH3",
-	--icon = "PH",
+	readable = "Archaeology: Draenor Clans",
+	icon = 441139,
 	text = {
-		en = "Archaeology: PH3",
+		en = "Archaeology: Draenor Clans",
 	},
 });
 ARCHAEOLOGY_DRUST = createHeader({
-	readable = "Archaeology: PH4",
-	--icon = "PH",
+	readable = "Archaeology: Drust",
+	icon = 441139,
 	text = {
-		en = "Archaeology: PH4",
+		en = "Archaeology: Drust",
 	},
 });
 ARCHAEOLOGY_HIGHBORNE = createHeader({
-	readable = "Archaeology: PH5",
-	--icon = "PH",
+	readable = "Archaeology: Highborne",
+	icon = 441139,
 	text = {
-		en = "Archaeology: PH5",
+		en = "Archaeology: Highborne",
 	},
 });
 ARCHAEOLOGY_HIGHMOUNTAIN = createHeader({
-	readable = "Archaeology: PH6",
-	--icon = "PH",
+	readable = "Archaeology: Highmountain",
+	icon = 441139,
 	text = {
-		en = "Archaeology: PH6",
+		en = "Archaeology: Highmountain",
 	},
 });
 ARCHAEOLOGY_MANTID = createHeader({
-	readable = "Archaeology: PH7",
-	--icon = "PH",
+	readable = "Archaeology: Mantid",
+	icon = 441139,
 	text = {
-		en = "Archaeology: PH7",
+		en = "Archaeology: Mantid",
 	},
 });
 ARCHAEOLOGY_MOGU = createHeader({
-	readable = "Archaeology: PH8",
-	--icon = "PH",
+	readable = "Archaeology: Mogu",
+	icon = 441139,
 	text = {
-		en = "Archaeology: PH8",
+		en = "Archaeology: Mogu",
 	},
 });
 ARCHAEOLOGY_OGRE = createHeader({
-	readable = "Archaeology: PH9",
-	--icon = "PH",
+	readable = "Archaeology: Ogre",
+	icon = 441139,
 	text = {
-		en = "Archaeology: PH9",
+		en = "Archaeology: Ogre",
 	},
 });
 ARCHAEOLOGY_PANDAREN = createHeader({
-	readable = "Archaeology: PH10",
-	--icon = "PH",
+	readable = "Archaeology: Pandaren",
+	icon = 441139,
 	text = {
-		en = "Archaeology: PH10",
+		en = "Archaeology: Pandaren",
 	},
 });
 ARCHAEOLOGY_ZANDALARI = createHeader({
-	readable = "Archaeology: PH11",
-	--icon = "PH",
+	readable = "Archaeology: Zandalari",
+	icon = 441139,
 	text = {
-		en = "Archaeology: PH11",
+		en = "Archaeology: Zandalari",
 	},
 });
 local RESTORED_ARTIFACT = 87399;
@@ -1392,11 +1392,9 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 				}),
 			}),
 			ach(10601, {	-- Surveying the Land
-				-- identical criteria as full achievement
 				["sym"] = {{"partial_achievement",10603}},	-- A Keen Eye
 			}),
 			ach(10602, {	-- This Side Up (gets filled with class-wrapped artifacts from Artifacts file)
-				-- identical criteria as full achievement
 				["sym"] = {{"partial_achievement",10603}},	-- A Keen Eye
 			}),
 			ach(10605, {	-- Handle With Care
@@ -1635,7 +1633,10 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 						["coord"] = { 38.8, 81.6, VALSHARAH },
 						["g"] = {
 							i(136383, {	-- Ravencrest Cache
-								i(131745),	-- Key of Kalyndras
+								i(131745, {	-- Key of Kalyndras
+									["questID"] = 41805,
+									["isWeekly"] = true,
+								}),
 							}),
 						},
 					}),
@@ -1910,7 +1911,6 @@ root(ROOTS.HiddenQuestTriggers, {
 				q(41869),	-- FLAG - Brann Week 3
 				q(41870),	-- FLAG - Brann Week 4
 				q(41871),	-- FLAG - Brann Week 5
-				-- q(41805),	-- Key of Kalyndras
 				q(45775),	-- Completion of 'Sifting Through the Rubble' [41176] for A Keen Eye [10603] - Crown Jewels of Suramar
 			}),
 		}),

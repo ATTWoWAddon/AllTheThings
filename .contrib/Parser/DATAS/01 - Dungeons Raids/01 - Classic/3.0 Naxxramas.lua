@@ -7,22 +7,38 @@ THE_FOUR_HORSEMEN = createHeader({
 	text = {
 		en = "The Four Horsemen",
 		es = "Los Cuatro Jinetes",
+		mx = "Los Cuatro Jinetes",
 		de = "Die Vier Reiter",
 		fr = "Les quatre cavaliers",
 		it = "I Cavalieri dell'Apocalisse",
 		pt = "Os Quatro Cavaleiros",
 		ru = "Четыре Всадника",
 		ko = "4인 기사단",
-		cn = "天啓四骑士",
+		cn = "天启四骑士",
 		tw = "四騎士",
 	},
 });
+ExportDB.OnUpdateDB.OMARIONS_HANDBOOK = [[~function(t)
+	t.visible = true;
+	t.collectible = nil;
+	if _.MODE_DEBUG_OR_ACCOUNT or _.IsQuestFlaggedCompleted(9233) or C_QuestLog.IsOnQuest(9233) then
+		return false;
+	else
+		for spellID,skills in pairs(_.CurrentCharacter.ActiveSkills) do
+			if (spellID == 2018 or spellID == 2108 or spellID == 3908) and skills[1] > 270 then
+				t.collectible = false;
+				t.visible = false;
+				return true;
+			end
+		end
+	end
+end]];
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC,
 -- #if BEFORE WRATH
 applyclassicphase(PHASE_SIX,
 -- #endif
 {
-	inst(754, bubbleDownSelf({ ["timeline"] = { REMOVED_3_0_2 } }, {	-- Naxxramas
+	inst(754, bubbleDownSelf({ ["timeline"] = { ADDED_1_11_0, REMOVED_3_0_2 } }, {	-- Naxxramas
 		-- #if BEFORE MOP
 		["lore"] = "An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",
 		-- #endif
@@ -147,7 +163,7 @@ applyclassicphase(PHASE_SIX,
 					n(ACHIEVEMENTS, {
 						applyclassicphase(SOM_PHASE_ONE, i(191481, {	-- Tabard of Mastery
 							["description"] = "This was obtained from killing Kel'Thuzad in Naxxramas40 on 'Season of Mastery' realms, while entire raid having the buff Undying Vanquisher that meant no one died before killing Kel'Thuzad in that raid lockout, (you could obtain Rune of Teleportation: Frostwyrm's Lair to bypass most of the raid making it so you only had to kill Sapphiron and Kel'Thuzad to obtain this aswell)\n\nSince 'Season of Mastery' servers are no longer available, this tabard is now unobtainable in classic, maybe it comes back in 'Season of Discovery?' who knows.",
-							["timeline"] = { ADDED_1_14_3, REMOVED_1_15_0 },	-- Might not be available in SOD.
+							["timeline"] = { ADDED_1_14_3, REMOVED_1_15_0 },	-- Not be available in SOD.
 						})),
 					}),
 					-- #endif
@@ -1353,7 +1369,9 @@ applyclassicphase(PHASE_SIX,
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
-							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["cost"] = {
 								{ "i", 22682, 5 },	-- Frozen Rune
 								{ "i",  7080, 2 },	-- Essence of Water
@@ -1371,7 +1389,9 @@ applyclassicphase(PHASE_SIX,
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 							["classes"] = { PRIEST, MAGE, WARLOCK },
-							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["cost"] = {
 								{ "i", 22682, 5 },	-- Frozen Rune
 								{ "i",  7080, 4 },	-- Essence of Water
@@ -1390,7 +1410,9 @@ applyclassicphase(PHASE_SIX,
 							["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 							["classes"] = { PRIEST, MAGE, WARLOCK },
-							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["cost"] = {
 								{ "i", 22682, 8 },	-- Frozen Rune
 								{ "i",  7080, 6 },	-- Essence of Water
@@ -1408,7 +1430,9 @@ applyclassicphase(PHASE_SIX,
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 							["classes"] = { PRIEST, MAGE, WARLOCK },
-							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["cost"] = {
 								{ "i", 22682, 4 },	-- Frozen Rune
 								{ "i",  7080, 2 },	-- Essence of Water
@@ -1426,7 +1450,9 @@ applyclassicphase(PHASE_SIX,
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 							["classes"] = { WARRIOR, PALADIN },
-							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["cost"] = {
 								{ "i", 22682, 4 },	-- Frozen Rune
 								{ "i", 7080, 2 },	-- Essence of Water
@@ -1445,7 +1471,9 @@ applyclassicphase(PHASE_SIX,
 							["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 							["classes"] = { WARRIOR, PALADIN },
-							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["cost"] = {
 								{ "i", 22682, 8 },	-- Frozen Rune
 								{ "i", 7080, 4 },	-- Essence of Water
@@ -1463,7 +1491,9 @@ applyclassicphase(PHASE_SIX,
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 							["classes"] = { WARRIOR, PALADIN },
-							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["cost"] = {
 								{ "i", 22682, 5 },	-- Frozen Rune
 								{ "i", 7080, 2 },	-- Essence of Water
@@ -1481,7 +1511,9 @@ applyclassicphase(PHASE_SIX,
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 							["classes"] = { HUNTER, SHAMAN },
-							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["cost"] = {
 								{ "i", 22682, 4 },	-- Frozen Rune
 								{ "i",  7080, 5 },	-- Essence of Water
@@ -1500,7 +1532,9 @@ applyclassicphase(PHASE_SIX,
 							["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 							["classes"] = { HUNTER, SHAMAN },
-							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["cost"] = {
 								{ "i", 22682, 8 },	-- Frozen Rune
 								{ "i",  7080, 7 },	-- Essence of Water
@@ -1518,7 +1552,9 @@ applyclassicphase(PHASE_SIX,
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 							["classes"] = { HUNTER, SHAMAN },
-							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["cost"] = {
 								{ "i", 22682, 5 },	-- Frozen Rune
 								{ "i",  7080, 5 },	-- Essence of Water
@@ -1535,7 +1571,9 @@ applyclassicphase(PHASE_SIX,
 							["provider"] = { "i", 22719 },	-- Omarion's Handbook
 							["description"] = "You must not have a profession above 270 skill for you to get this item from Omarion.",
 							["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
-							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["lvl"] = 60,
 						}),
 						q(9241, {	-- Polar Bracers
@@ -1543,7 +1581,9 @@ applyclassicphase(PHASE_SIX,
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 							["classes"] = { ROGUE, DRUID },
-							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["cost"] = {
 								{ "i", 22682, 4 },	-- Frozen Rune
 								{ "i",  7080, 3 },	-- Essence of Water
@@ -1561,7 +1601,9 @@ applyclassicphase(PHASE_SIX,
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 							["classes"] = { ROGUE, DRUID },
-							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["cost"] = {
 								{ "i", 22682, 5 },	-- Frozen Rune
 								{ "i",  7080, 3 },	-- Essence of Water
@@ -1580,7 +1622,9 @@ applyclassicphase(PHASE_SIX,
 							["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 							["classes"] = { ROGUE, DRUID },
-							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["cost"] = {
 								{ "i", 22682, 8 },	-- Frozen Rune
 								{ "i",  7080, 5 },	-- Essence of Water
@@ -1911,22 +1955,22 @@ applyclassicphase(PHASE_SIX,
 										["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 										["description"] = "Non-crafters can take his handbook to Craftsman Wilhelm at Light's Hope Chapel who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",
 									}),
-									{
-										["itemID"] = 22685,	-- Pattern: Glacial Cloak
-										["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
-									},
-									{
-										["itemID"] = 22684,	-- Pattern: Glacial Gloves
+									r(28208, {	-- Glacial Cloak (RECIPE!)
+										["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Revered.
+										["requireSkill"] = TAILORING,
+									}),
+									r(28205, {	-- Glacial Gloves (RECIPE!)
 										["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
-									},
-									{
-										["itemID"] = 22686,	-- Pattern: Glacial Vest
-										["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
-									},
-									{
-										["itemID"] = 22687,	-- Pattern: Glacial Wrists
+										["requireSkill"] = TAILORING,
+									}),
+									r(28207, {	-- Glacial Vest (RECIPE!)
+										["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Revered.
+										["requireSkill"] = TAILORING,
+									}),
+									r(28209, {	-- Glacial Wrists (RECIPE!)
 										["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
-									},
+										["requireSkill"] = TAILORING,
+									}),
 									r(28244, {	-- Icebane Bracers (RECIPE!)
 										["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 										["requireSkill"] = BLACKSMITHING,

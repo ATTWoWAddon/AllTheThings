@@ -89,7 +89,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					explorationAch(8938),	-- Explore Shadowmoon Valley
+					ach(8938),	-- Explore Shadowmoon Valley
 					ach(9436, {	-- It's the Stones! (Socrethar's Rise)
 						["description"] = "Must be on the daily quest Assault on Socrethar's Rise.",
 						["coords"] = {
@@ -266,9 +266,25 @@ root(ROOTS.Zones, {
 					-- This FlightPath is not collectible, but is faked on the map by Blizzard
 					fp(1567, {["collectible"] = false}),	-- Temple of Karabor, Shadowmoon Valley
 				}),
-				petbattles({ ADDED_6_0_2 }, {
+				petbattles({
 					n(87124, {	-- Ashlei <Grand Master Pet Tamer>
 						["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
+						["timeline"] = { ADDED_6_0_2 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(37203, {	-- Ashlei
+								["timeline"] = { ADDED_6_0_2 },
+								["isDaily"] = true,
+								["_drop"] = { "g" },	-- Drops Polished Pet Charm
+								["groups"] = {
+									-- #if BEFORE 10.2.5
+									i(116415, {	-- Shiny Pet Charm
+										["timeline"] = { REMOVED_10_2_5 },
+									}),
+									-- #endif
+								},
+							}),
+						},
 					}),
 				}),
 				n(QUESTS, {
@@ -673,19 +689,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 84523 },	-- Ameeka
 						["coord"] = { 58.2, 26.6, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							i(115357, {	-- Draenor Tailoring
-								["description"] = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at the Tailoring Emporium for 100 gold.",
-								["g"] = {
-									recipe(168835),	-- Hexweave Cloth
-									recipe(176058),	-- Secrets of Draenor Tailoring
-									recipe(168852),	-- Sumptuous Cowl
-									recipe(168854),	-- Sumptuous Leggings
-									recipe(168853),	-- Sumptuous Robes
-								},
-							}),
+						["g"] = appendGroups(DRAENOR_TAILORING, {
 							i(111816),	-- Tailoring Emporium, Level 1
-						},
+						}),
 					}),
 					q(33813, {	-- In Need of a Hero
 						["sourceQuests"] = { 33070 },	-- Think of the Children! (must have picked up)

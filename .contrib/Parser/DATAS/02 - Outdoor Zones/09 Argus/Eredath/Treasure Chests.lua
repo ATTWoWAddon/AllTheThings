@@ -174,7 +174,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 							{ 36.3, 66.4, EREDATH },
 							{ 38.5, 66.9, EREDATH },
 							{ 42.4, 61.3, EREDATH },
-							{ 43.5, 60.1, EREDATH },
+							{ 43.5, 59.9, EREDATH },
 							{ 41.1, 68.9, EREDATH },
 							{ 43.8, 68.5, EREDATH },
 							{ 44.6, 68.6, EREDATH },

@@ -202,6 +202,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 		n(PVP_GLADIATOR, {
 			n(168011, {	-- Zo'sorg <Master of Conflict>
 				["coord"] = { 35.0, 57.6, ORIBOS },
+				["ItemAppearanceModifierID"] = 159,
 				["g"] = sharedData({
 					["cost"] = {{"i", MOH, 12}},
 					["timeline"] = { ADDED_10_0_2_LAUNCH },
@@ -249,6 +250,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			}),
 			n(168011, {	-- Zo'sorg <Master of Conflict>
 				["coord"] = { 35.0, 57.6, ORIBOS },
+				["ItemAppearanceModifierID"] = 159,
 				["g"] = bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 					filter(BACK_F, {
 						conquest(525, i(186780)),	-- Cosmic Gladiator's Cloak

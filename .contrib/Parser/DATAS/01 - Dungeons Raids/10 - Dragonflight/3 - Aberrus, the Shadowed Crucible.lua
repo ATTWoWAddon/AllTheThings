@@ -258,7 +258,8 @@ local EncounterToLoot = {
 		i(204399),	-- Oblivion's Immortal Coil
 		i(202599),	-- Sarkareth's Abyssal Embrace
 		i(202584),	-- Scalecommander's Ebon Schynbalds
-		i(204465),	-- Voice of the Silent Star
+		-- Has special ItemAppearanceModifierID assignments
+		-- i(204465),	-- Voice of the Silent Star
 		i(217408, {	-- Awakened Tempostone
 			["sym"] = GET_SYM_DF_S4_TIER_TOKENS(),
 			["up"] = IGNORED_VALUE,
@@ -749,7 +750,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					i(206955),	-- Highland Drake: Embodiment of the Hellforged (MM!) [LFR, Normal, Heroic]
 				}),
 			}),
-			Difficulty(DIFFICULTY.RAID.LFR).AddGroups(bubbleDown({ ["timeline"] = { REMOVED_11_0_2 } }, {
+			Difficulty(DIFFICULTY.RAID.LFR).AddGroups(bubbleDown({ ["timeline"] = { ADDED_10_1_0, REMOVED_11_0_2 } }, {
 				-- #if AFTER TWW
 				o(382621, {	-- Revival Catalyst Console	-- LFR --
 					["description"] = "The Revival Catalyst is a system that lets you convert Zaralek Cavern's Weekly Event Zone Items (Researchers & A Worthy Ally: Niffen) & LFR Mode Non-set items from the Aberrus Raid into your class' LFR Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
@@ -902,6 +903,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 							["sym"] = {{"sub","instance_tier",1208,DIFFICULTY.RAID.LFR}},
 							["up"] = IGNORED_VALUE,
 						}),
+						i(204465, {ItemAppearanceModifierID=0}),	-- Voice of the Silent Star
 					}),
 				}),
 			})),
@@ -1120,6 +1122,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						["sym"] = {{"sub","instance_tier",1208,DIFFICULTY.RAID.NORMAL}},
 						["up"] = IGNORED_VALUE,
 					}),
+					i(204465, {ItemAppearanceModifierID=1}),	-- Voice of the Silent Star
 				}),
 			}),
 			-- This is needed for Achievement distribution
@@ -1132,7 +1135,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				BossOnly(ZSKARN),
 				BossOnly(MAGMORAX),
 				BossOnly(NELTHARION),
-				BossOnly(SARKARETH),
+				BossOnly(SARKARETH, {
+					i(204465, {up=IGNORED_VALUE, modID=5, ItemAppearanceModifierID=3}),	-- Voice of the Silent Star
+				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
 				n(QUESTS, {

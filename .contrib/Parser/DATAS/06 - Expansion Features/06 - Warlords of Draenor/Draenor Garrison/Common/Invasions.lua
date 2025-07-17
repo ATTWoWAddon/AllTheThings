@@ -125,72 +125,84 @@ root(ROOTS.ExpansionFeatures,
 					q(36171, {	-- Botani Invasion!
 						["repeatable"] = true,
 						["provider"] = { "n", 78564 },	-- Sergeant Crowler
+						["coord"] = { 38.2, 32.0, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 100,
 					}),
 					q(36653, {	-- Botani Invasion!
 						["repeatable"] = true,
 						["provider"] = { "n", 79774 },	-- Sergeant Grimjaw
+						["coord"] = { 44.1, 47.3, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 100,
 					}),
 					q(36376, {	-- Goren Invasion!
 						["repeatable"] = true,
 						["provider"] = { "n", 78564 },	-- Sergeant Crowler
+						["coord"] = { 38.2, 32.0, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 100,
 					}),
 					q(35142, {	-- Goren Invasion!
 						["repeatable"] = true,
 						["provider"] = { "n", 79774 },	-- Sergeant Grimjaw
+						["coord"] = { 44.1, 47.3, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 100,
 					}),
 					q(36655, {	-- Iron Horde Invasion!
 						["repeatable"] = true,
 						["provider"] = { "n", 78564 },	-- Sergeant Crowler
+						["coord"] = { 38.2, 32.0, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 100,
 					}),
 					q(35935, {	-- Iron Horde Invasion!
 						["repeatable"] = true,
 						["provider"] = { "n", 79774 },	-- Sergeant Grimjaw
+						["coord"] = { 44.1, 47.3, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 100,
 					}),
 					q(36650, {	-- Ogre Invasion!
 						["repeatable"] = true,
 						["provider"] = { "n", 78564 },	-- Sergeant Crowler
+						["coord"] = { 38.2, 32.0, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 100,
 					}),
 					q(36623, {	-- Ogre Invasion!
 						["repeatable"] = true,
 						["provider"] = { "n", 79774 },	-- Sergeant Grimjaw
+						["coord"] = { 44.1, 47.3, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 100,
 					}),
 					q(36830, {	-- Shadow Council Invasion!
 						["repeatable"] = true,
 						["provider"] = { "n", 78564 },	-- Sergeant Crowler
+						["coord"] = { 38.2, 32.0, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 100,
 					}),
 					q(36831, {	-- Shadow Council Invasion!
 						["repeatable"] = true,
 						["provider"] = { "n", 79774 },	-- Sergeant Grimjaw
+						["coord"] = { 44.1, 47.3, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 100,
 					}),
 					q(36412, {	-- Shadowmoon Invasion!
 						["repeatable"] = true,
 						["provider"] = { "n", 78564 },	-- Sergeant Crowler
+						["coord"] = { 38.2, 32.0, LUNARFALL },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 100,
 					}),
 					q(36414, {	-- Shadowmoon Invasion!
 						["repeatable"] = true,
 						["provider"] = { "n", 79774 },	-- Sergeant Grimjaw
+						["coord"] = { 44.1, 47.3, FROSTWALL },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 100,
 					}),

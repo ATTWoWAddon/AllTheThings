@@ -61,6 +61,11 @@ end
 
 -- Load Quest Lib
 local RequestLoadQuestByID, ResetQuestName, QuestNameFromID;
+local RefreshQuestIDs = {}
+local function QuestAsyncRefreshFunc(t)
+	RefreshQuestIDs[t.questID] = t
+	return true
+end
 local C_QuestLog_RequestLoadQuestByID = C_QuestLog.RequestLoadQuestByID;
 if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA_LOAD_RESULT") then
 	local QuestsRequested = {};
@@ -73,11 +78,11 @@ if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA
 
 		local name = GetTitleForQuestID(id);
 		if not IsRetrieving(name) then
-			t[id] = name;
-			return name;
+			t[id] = name
+			return name
 		end
 
-		RequestLoadQuestByID(id);
+		RequestLoadQuestByID(id)
 	end});
 	local QuestNameDefault = setmetatable({}, { __index = function(t, id)
 		if not id or rawget(QuestNameFromServer, id) == nil then return end
@@ -152,12 +157,20 @@ if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA
 			-- app.PrintDebug("No Server QuestData",questID)
 			QuestNameFromServer[questID] = false;
 		end
+		app.ReshowGametooltip()
 
 		-- see if this Quest is awaiting Reward population & Updates
 		local questObject = QuestsToPopulate[questID];
 		if questObject then
 			QuestsToPopulate[questID] = nil;
 			app.TryPopulateQuestRewards(questObject);
+		end
+
+		-- see if this quest has an object to refresh
+		questObject = RefreshQuestIDs[questID]
+		if questObject then
+			RefreshQuestIDs[questID] = nil
+			app.DirectGroupRefresh(questObject, true)
 		end
 
 		-- see if this Quest is awaiting a callback, call it with the questID and success from the server
@@ -258,7 +271,7 @@ GetQuestLinkForObject = function(t)
 	local questID = t.questID;
 	if questID then return GetQuestLink(questID)
 		-- technically the second number value is some other value to make the link actually usable
-		or CustomQuestLinkFormat:format(questID,app.Level,t.name,questID) end
+		or CustomQuestLinkFormat:format(questID,app.Level,t.name or t.hash,questID) end
 end
 end
 
@@ -302,7 +315,12 @@ end
 -- DirtyQuests became a table instead of an array like before, so it broke a lot of things... I'll make one for each version to keep it working
 local ClassicDirtyQuests, RetailDirtyQuests = {}, {}
 local CollectibleAsQuest, IsQuestFlaggedCompletedForObject;
+local CACHE = "Quests"
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+	if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
+	if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
+	if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {} end
+
 	OneTimeQuests = accountWideData.OneTimeQuests
 	local userignored = accountWideData.IGNORE_QUEST_PRINT
 	-- add user ignored to the list if any, don't save our hardcoded quests for everyone...
@@ -776,6 +794,18 @@ local function BuildDiscordQuestInfoTable(id, infoText, questChange, questRef, c
 	tinsert(info, "```");	-- discord fancy box end
 	return info;
 end
+local function SearchForQuestData(questID)
+	-- Retail: This is too fine grained and ignores altQuests, which are perfectly valid.
+	local questRef = Search("questID", questID, "field");
+	if not questRef then
+		-- This should find altQuests.
+		local searchResults = SearchForField("questID", questID);
+		if searchResults and #searchResults > 0 then
+			return searchResults[1];
+		end
+	end
+	return questRef;
+end
 PrintQuestInfo = function(questID, new)
 	if not DoQuestPrints then return end
 	-- Users can manually set certain QuestIDs to be ignored because Blizzard decides to toggle them on and off constantly forever
@@ -783,7 +813,7 @@ PrintQuestInfo = function(questID, new)
 
 	local text
 	local questChange = (new == true and "accepted") or (new == false and "unflagged") or "completed";
-	local questRef = Search("questID", questID, "field")
+	local questRef = SearchForQuestData(questID)
 	if questRef then
 
 		local nyi = GetRelativeField(questRef, "u", 1)
@@ -1588,6 +1618,9 @@ end
 
 -- Quest Lib
 local createQuest = app.CreateClass("Quest", "questID", {
+	AsyncRefreshFunc = function()
+		return QuestAsyncRefreshFunc
+	end,
 	CollectibleType = function() return "Quests" end,
 	text = app.IsClassic and function(t)
 		if t.repeatable then return "|cff0070DD" .. t.name .. "|r"; end
@@ -1595,7 +1628,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	end or nil,
 	name = function(t)
 		-- TODO: need app.GetAutomaticHeaderData to provide name if not returned from server prior to using QuestNameDefault
-		return QuestNameFromID[t.questID] or RETRIEVING_DATA;
+		return QuestNameFromID[t.questID] or RETRIEVING_DATA
 	end,
 	icon = function(t)
 		-- TODO: need app.GetAutomaticHeaderData to provide icon
@@ -1650,6 +1683,18 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	end,
 	timeRemaining = function(t)
 		return t.isWorldQuest and GetQuestTimeLeftMinutes(t.questID) or nil;
+	end,
+
+	-- Defaults (Mostly used for nesting quests under their npcs for Pet Battles)
+	qgParent = function(t)
+		local parent = t.parent
+		if not parent then return end
+
+		local qg = parent.creatureID or parent.npcID;
+		if qg and qg > 0 then return qg; end
+	end,
+	coords = function(t)
+		if t.qgParent then return t.parent.coords; end
 	end,
 
 	-- These are Retail fields that aren't used in Classic... yet?
@@ -2014,7 +2059,6 @@ else
 	app.AddEventRegistration("CRITERIA_UPDATE", RefreshAllQuestInfo)
 end
 app.AddEventRegistration("BAG_NEW_ITEMS_UPDATED", softRefresh)
-app.AddEventRegistration("QUEST_REMOVED", softRefresh)
 app.AddEventRegistration("QUEST_WATCH_UPDATE", softRefresh)
 app.AddEventRegistration("QUEST_ACCEPTED", function(questLogIndex, questID)
 	if not questID then questID = questLogIndex; end	-- NOTE: In Classic there's an extra parameter.
@@ -2024,6 +2068,15 @@ app.AddEventRegistration("QUEST_ACCEPTED", function(questLogIndex, questID)
 	ResetQuestName(questID)
 	PrintQuestInfoViaCallback(questID, true);
 	CheckFollowupQuests(questID);
+	-- TODO: could figure a way to basically do UpdateRawID but simply DirectGroupRefresh the results instead
+	app.HandleEvent("OnRefreshWindows")
+end)
+app.AddEventRegistration("QUEST_REMOVED", function(questID)
+	if not questID then return end
+	softRefresh();
+	-- app.PrintDebug("QUEST_REMOVED",questID)
+	-- TODO: could figure a way to basically do UpdateRawID but simply DirectGroupRefresh the results instead
+	app.HandleEvent("OnRefreshWindows")
 end)
 app.AddEventRegistration("QUEST_TURNED_IN", function(questID)
 	if not questID then return end
@@ -2041,6 +2094,29 @@ app.AddEventRegistration("QUEST_TURNED_IN", function(questID)
 end)
 app.AddEventHandler("OnRefreshCollections", RefreshAllQuestInfo);
 
+-- popout handler for Quest Items group
+local function AddQuestItems(group)
+	local qis = group.qis
+	if not qis then return end
+
+	local g = {}
+	for i=1,#qis do
+		g[#g + 1] = app.CreateItem(qis[i], {OnSetVisibility=app.AlwaysShowUpdate})
+	end
+
+	-- Show Quest Items
+	local questItems = app.CreateRawText(L.QUEST_ITEMS, {
+		icon = 133736,
+		OnUpdate = app.AlwaysShowUpdate,
+		OnClick = app.UI.OnClick.IgnoreRightClick,
+		skipFull = true,
+		skipContains = true,
+		SortPriority = -2.95,
+		g = g,
+	})
+	app.NestObject(group, questItems);
+end
+app.AddEventHandler("OnNewPopoutGroup", AddQuestItems)
 
 
 
@@ -2365,7 +2441,7 @@ if app.IsRetail then
 	local function BuildSourceQuestChain(group)
 		if not ((group.key == "questID" and group.questID) or group.sourceQuests) then return end
 
-		group.isQuestChain = true;
+		GetRelativeValue(group, "window").isQuestChain = true
 
 		-- if the group was created from a popout and thus contains its own pre-req quests already, then clean out direct quest entries from the group
 		if group.g then
@@ -2406,7 +2482,7 @@ if app.IsRetail then
 				OnUpdate = app.AlwaysShowUpdate,
 				OnClick = app.UI.OnClick.IgnoreRightClick,
 				-- sourceIgnored = true,
-				skipFill = true,
+				skipFull = true,
 				skipContains = true,
 				SortPriority = 1.0,	-- follow any raw content in group
 				SortType = "Total",
@@ -2441,6 +2517,7 @@ if app.IsRetail then
 
 	-- Quest Harvesting Lib (http://www.wowinterface.com/forums/showthread.php?t=46934)
 	local QuestHarvester = CreateFrame("GameTooltip", "AllTheThingsQuestHarvester", UIParent, "GameTooltipTemplate");
+	QuestHarvester.AllTheThingsIgnored = true;
 
 	local GetNumQuestLogRewards,HaveQuestRewardData =
 		  GetNumQuestLogRewards,HaveQuestRewardData;

@@ -24,7 +24,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 37204,	-- Rekindling an Old Flame
 					}),
 					ach(9534),	-- Delectable Ogre Delicacies (Bloodmaul Stronghold)
-					explorationAch(8937),	-- Explore Frostfire Ridge
+					ach(8937),	-- Explore Frostfire Ridge
 					ach(9606, {	-- Frostfire Fridge
 						["races"] = HORDE_ONLY,
 						["sym"] = {{ "achievement_criteria" }},
@@ -198,9 +198,25 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 				}),
-				petbattles({ ADDED_6_0_2 }, {
+				petbattles({
 					n(87122, {	-- Gargra <Grand Master Pet Tamer>
 						["coord"] = { 68.6, 64.6, FROSTFIRE_RIDGE },
+						["timeline"] = { ADDED_6_0_2 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(37205, {	-- Gargra
+								["timeline"] = { ADDED_6_0_2 },
+								["isDaily"] = true,
+								["_drop"] = { "g" },	-- Drops Polished Pet Charm
+								["groups"] = {
+									-- #if BEFORE 10.2.5
+									i(116415, {	-- Shiny Pet Charm
+										["timeline"] = { REMOVED_10_2_5 },
+									}),
+									-- #endif
+								},
+							}),
+						},
 					}),
 				}),
 				n(QUESTS, {
@@ -348,6 +364,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 33526,	-- These Colors Don't Run
 						["coord"] = { 43.5, 23.2, 526 },
 						["races"] = HORDE_ONLY,
+						["g"] = {
+							o(225681, {	-- Barrel of Frostwolf Oil
+								i(107361),	-- Frostwolf Oil (QI!)
+							}),
+						},
 					}),
 					q(35341, {	-- Defection of Gronnstalker Rokash
 						["provider"] = { "n", 79229 },	-- Gronnstalker Rokash
@@ -387,19 +408,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 84689 },	-- Trega
 						["coord"] = { 20.4, 60.6, FROSTFIRE_RIDGE },
 						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(115357, {	-- Draenor Tailoring
-								["description"] = "This is a reward for completing the introductory Tailoring questline that can drop from any Draenor mob. Also sold at the Tailoring Emporium for 100 gold.",
-								["g"] = {
-									recipe(168835),	-- Hexweave Cloth
-									recipe(176058),	-- Secrets of Draenor Tailoring
-									recipe(168852),	-- Sumptuous Cowl
-									recipe(168854),	-- Sumptuous Leggings
-									recipe(168853),	-- Sumptuous Robes
-								},
-							}),
+						["g"] = appendGroups(DRAENOR_TAILORING, {
 							i(111816),	-- Tailoring Emporium, Level 1
-						},
+						}),
 					}),
 					q(34292, {	-- Eliminate the Shadow Council
 						["provider"] = { "n", 72836 },	-- Cordana Felsong
@@ -420,6 +431,17 @@ root(ROOTS.Zones, {
 						["coord"] = { 60.9, 65.0, FROSTFIRE_RIDGE },
 						["sourceQuest"] = 33826,	-- Where's My Wolf?!
 						["races"] = HORDE_ONLY,
+						["g"] = {
+							o(230262, {	-- Blackrock Blasting Powder
+								["coords"] = {
+									{ 60.8, 73.0, FROSTFIRE_RIDGE },
+									{ 62.4, 75.2, FROSTFIRE_RIDGE },
+									{ 63.1, 75.7, FROSTFIRE_RIDGE },
+									{ 64.2, 73.4, FROSTFIRE_RIDGE },
+								},
+								["g"] = { i(104039) },	-- Blackrock Blasting Powder (QI!)
+							}),
+						},
 					}),
 					q(34230, {	-- Eye Need That
 						["provider"] = { "n", 72874 },	-- Archmage Khadgar
@@ -1124,10 +1146,7 @@ root(ROOTS.Zones, {
 					}),
 					q(32796, {	-- To the Garrison
 						["provider"] = { "n", 70941 },	-- Ga'nar
-						["coords"] = {
-							{ 51.3, 64.3, 532 },	-- Grulloc's Grotto
-							{ 52.6, 66.9, 532 },	-- Grulloc's Grotto
-						},
+						["coord"] = { 49.7, 51.5, 532 },	-- Grulloc's Grotto
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 32795,	-- The Eldest
 					}),

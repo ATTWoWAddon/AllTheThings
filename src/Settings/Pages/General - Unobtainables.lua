@@ -1,5 +1,5 @@
 local _, app = ...;
-local L, settings = app.L.SETTINGS_MENU, app.Settings;
+local L, settings = app.L, app.Settings;
 
 -- Settings: General Page
 local child = settings:CreateOptionsPage(L.UNOBTAINABLES_PAGE, "General")

@@ -1410,8 +1410,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			header(HEADERS.Achievement, 17773, bubbleDownSelf({ ["timeline"] = ADDED_10_1_0 }, {	-- A Blue Dawn
 				q(72900, {	-- Keeper of the Ossuary
-					["provider"] = { "n", 187676 },	-- Kalecgos
-					["coord"] = { 61.4, 36.2, VALDRAKKEN },
+					["qgs"] = {
+						187676,	-- Kalecgos
+						190000,	-- Kalecgos
+					},
+					["coords"] = {
+						{ 61.4, 36.2, VALDRAKKEN },
+						{ 39.4, 63.0, THE_AZURE_SPAN },
+					},
 				}),
 				q(72921, {	-- On the Trail Again
 					["provider"] = { "n", 199923 },	-- Senegos

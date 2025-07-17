@@ -355,9 +355,15 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 25213,	-- The Slave Pits
 						["groups"] = {
 							i(52920),	-- Cardio-Extractor Gloves
+							i(131835, {	-- Cardio-Extractor Handguards
+								["timeline"] = { ADDED_7_0_3 }
+							}),
 							i(52937),	-- Chip's Cloak
-							i(131835),	-- Cardio-Extractor Handguards
+							-- #if ANYCLASSIC
+							i(52969),	-- Heartache Dagger (this ID is used in Classic [we'll probably find out sometime])
+							-- #else
 							i(52965),	-- Heartache Dagger
+							-- #endif
 						},
 					}),
 					q(25200, {	-- Shredder Shutdown
@@ -415,10 +421,12 @@ root(ROOTS.Zones, {
 							25201,	-- The Ultimate Footbomb Uniform
 						},
 						["groups"] = {
-							i(52965),	-- Heartache Dagger
-							i(52937),	-- Chip's Cloak
 							i(52920),	-- Cardio-Extractor Gloves
-							i(131835),	-- Cardio-Extractor Handguards
+							i(131835, {	-- Cardio-Extractor Handguards
+								["timeline"] = { ADDED_7_0_3 }
+							}),
+							i(52937),	-- Chip's Cloak
+							i(52965),	-- Heartache Dagger
 						},
 					}),
 					q(25109, {	-- The Gallywix Labor Mine

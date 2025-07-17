@@ -170,14 +170,14 @@ local function BuildGearSetInformationForGroup(group)
 				OnUpdate = app.AlwaysShowUpdate,
 				OnClick = app.UI.OnClick.IgnoreRightClick,
 				sourceIgnored = true,
-				skipFill = true,
+				skipFull = true,
 				SortPriority = -2.1,
 				g = g }) }
 			else tinsert(group.g, app.CreateGearSet(setID, {
 				OnUpdate = app.AlwaysShowUpdate,
 				OnClick = app.UI.OnClick.IgnoreRightClick,
 				sourceIgnored = true,
-				skipFill = true,
+				skipFull = true,
 				SortPriority = -2.1,
 				g = g })) end
 		end

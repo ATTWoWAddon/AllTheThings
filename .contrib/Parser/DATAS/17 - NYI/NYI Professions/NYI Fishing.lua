@@ -6,13 +6,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		n(CRAFTABLES, {
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					i(198439),	-- Aged Recipe in a Bottle
 				})),
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 					i(222094),	-- Arathor Hammerfish
 					i(222531),	-- Arathor Hammerfish
 					i(222095),	-- Azj-Kahet Slum Shark
@@ -90,9 +90,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(46054),	-- Journeyman Fishing - Fishing for Dummies
 				})),
 			}),
-			expansion(EXPANSION.WOD, {
-				-- 6.0.2
-				expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+			expansion(EXPANSION.MOP, {
+				-- 5.0.4
+				expansion(EXPANSION.MOP, patch(0,4), bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
 					r(131474),	-- Fishing
 					r(131476),	-- Fishing
 					r(131490),	-- Fishing

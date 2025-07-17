@@ -43,7 +43,7 @@ namespace ATT
             ObjectData.Create("followerID",         "follower",     "_.CreateFollower", "f");
             ObjectData.Create("missionID",          "gm",           "_.CreateGarrisonMission", "f");
             ObjectData.Create("talentID",           "gt",           "_.CreateGarrisonTalent", "f");
-            ObjectData.Create("mapID",              "m",            "_.CreateMap", "f");
+            ObjectData.Create<MapData>("mapID",     "m",            "_.CreateMap", "f");
             ObjectData.Create("illusionID",         "ill",          "_.CreateIllusion", "f", "spellID", "type");
             ObjectData.Create<RecipeData>("recipeID",   "r",        "_.CreateRecipe", "f", "spellID", "modID");
             ObjectData.Create("azeriteessenceID",   "aze",          "_.CreateAzeriteEssence", "f");
@@ -125,11 +125,6 @@ namespace ATT
             {
                 builder.Replace("_.Settings", "settings");
                 FUNCTION_SHORTCUTS["settings"] = "_.Settings";
-            }
-            if (builder.ToString().Contains("_.CommonAchievementHandlers"))
-            {
-                builder.Replace("_.CommonAchievementHandlers", "handlers");
-                FUNCTION_SHORTCUTS["handlers"] = "_.CommonAchievementHandlers";
             }
             var keys = FUNCTION_SHORTCUTS.Keys.ToList();
             keys.Sort(Framework.Compare);

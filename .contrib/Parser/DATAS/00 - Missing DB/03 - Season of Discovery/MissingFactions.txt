@@ -1,0 +1,14 @@
+1.15.3.55112
+faction(2650),	-- S03 - 60 - Western Plaguelands - Mage Runecarving
+1.15.3.55391
+faction(2660),	-- Elemental (The Molten Core Adds)
+faction(2661),	-- Hydraxian (The Molten Core Adds)
+1.15.4.56400
+faction(2679),	-- Order of the Silver Hand
+faction(2686),	-- S03 - Scourge Disguise
+faction(2687),	-- Hunter Quest Boss (Tamed Beast)
+1.15.6.58658
+faction(2721),	-- S03 - Scarlet Crusade
+1.15.7.59706
+faction(2723),	-- S03 - New Avalon - Scarlet Crusade - Disguise
+faction(2724),	-- S03 - New Avalon - Scarlet Crusade - Patrollers

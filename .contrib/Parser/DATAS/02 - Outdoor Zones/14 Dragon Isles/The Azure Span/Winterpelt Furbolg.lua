@@ -1,11 +1,23 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
+root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_AZURE_SPAN, {
-		faction(FACTION_WINTERPELT_FURBOLG, {
+		header(HEADERS.Faction, FACTION_WINTERPELT_FURBOLG, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
+			faction(FACTION_WINTERPELT_FURBOLG, {
+				-- completing the whole quest chain will always give exactly exalted
+				["sourceQuest"] = 73031,	-- Champion of the Winterpelt
+			}),
 			n(ACHIEVEMENTS, {
-				ach(17427),	-- Winterpelt Conversationalist
+				ach(17427, {	-- Winterpelt Conversationalist
+					-- 'cost' isn't "really" accurate here, but via the repeatable quests below (which aren't really reputation-based)
+					-- we can't track the required "skill" increase as a collectible to grant this achievement
+					-- so for now at least show the items are needed until this achievement is earned
+					["cost"] = {
+						{ "i", 202017, 500 },	-- Liberated Furbolg Artifacts
+						{ "i", 202018, 100 },	-- Intact Scribe Stick
+					},
+				}),
 			}),
 			n(MAILBOX, {
 				i(204254),	-- Sonova's Request
@@ -47,8 +59,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 						72588,	-- Primalist Pillagers
 					},
 					["minReputation"] = { FACTION_WINTERPELT_FURBOLG, UNFRIENDLY+2050 },
-					["provider"] = { "n", 201065 },	-- Sonova Snowden
-					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
+					["qgs"] = {
+						189401,	-- Sonova Snowden
+						201065,	-- Sonova Snowden
+					},
+					["coords"] = {
+						{ 65.4, 15.9, THE_AZURE_SPAN },
+						{ 66.9, 12.7, THE_AZURE_SPAN },
+					},
 					["cost"] = { { "i", 202017, 5 } },	-- 5x Liberated Furbolg Artifacts
 				}),
 				q(72586, {	-- Additional Academic Acquisitions
@@ -157,9 +175,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 50
 					["provider"] = { "i", 203651 },	-- Saza's Blade
 					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
-					["g"] = {
-						i(202283),	-- Reading Glasses (TOY!)
-					},
 				}),
 
 				-- Language Furbolg 75
@@ -298,13 +313,26 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(202017),	-- Liberated Furbolg Artifacts
-				i(202018),	-- Intact Scribe Stick
+				i(202017, {	-- Liberated Furbolg Artifacts
+					["crs"] = {
+						189851,	-- Ritual Scout
+						186787,	-- Ritual Guardian
+					},
+					["coord"] = { 77.6, 39.0, THE_AZURE_SPAN },
+				}),
+				i(202018, {	-- Intact Scribe Stick
+					["crs"] = {
+						189851,	-- Ritual Scout
+						186787,	-- Ritual Guardian
+					},
+					["coord"] = { 77.6, 39.0, THE_AZURE_SPAN },
+				}),
 				i(203651, {	-- Saza's Blade
 					["crs"] = { 199279 },	-- Icebreaker
+					["coord"] = { 55.1, 19.7, THE_AZURE_SPAN },
 				}),
 			}),
-		}),
+		})),
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {

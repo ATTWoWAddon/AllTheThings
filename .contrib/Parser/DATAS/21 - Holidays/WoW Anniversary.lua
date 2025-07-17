@@ -13,12 +13,16 @@ WOW_ANNIVERSARY_ROOT = createHeader({
 	},
 	text = {
 		en = "WoW's Anniversary",
+		es = "Aniversario de WoW",
+		mx = "Aniversario de WoW",
 		ru = "Годовщина WoW",
 		cn = "魔兽世界周年庆",
 		tw = "《魔獸世界》週年紀念",
 	},
 	description = {
 		en = "This is a yearly recurring event that occurs between the beginning of November and the end of the year.",
+		es = "Es el aniversario de World of Warcraft! Desde el equipo de desarrollo de WoW, te damos las gracias por disfrutar del mundo de Azeroth y más allá junto a nosotros.",
+		mx = "¡Es el aniversario de World of Warcraft! Desde el equipo de desarrollo de WoW, te damos las gracias por disfrutar del mundo de Azeroth y más allá junto a nosotros.",
 		tw = "這是一個每年重複的活動，發生在十一月初到年底之間。",
 	},
 });
@@ -213,6 +217,21 @@ WOW_ANNIVERSARY_TWENTY = createHeader({
 		en = WOWAPI_GetAchievementName(41220),
 	},
 });
+--[[
+WOW_ANNIVERSARY_TWENTYONE = createHeader({
+	readable = "WoW's 21st Anniversary",
+	icon = 133783,
+	eventID = 1501,
+	eventSchedule = {
+		0, -- November 16th through December 7th
+		2025, 11, 16,	-- 11/16/2025
+		2025, 12, 07,	-- 12/07/2025
+	},
+	-- text = {
+	-- 	en = WOWAPI_GetAchievementName(41220),
+	-- },
+});
+]]--
 local BRONZE_TOKEN = 3100;
 
 ------ Encounter Constants ------
@@ -391,41 +410,95 @@ end
 
 root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, {
 	-- Stuff that's completely gone.
-	n(WOW_ANNIVERSARY_FOUR, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3, REMOVED_3_1_0 } }, {
+	n(WOW_ANNIVERSARY_FOUR, bubbleDownSelf({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_3_0_3,	-- 4th anniversary will not happen during Classic
+			-- #else
+			ADDED_3_0_3, REMOVED_3_1_0,
+			-- #endif
+		}
+	},
+	{
 		ach(2398),	-- 4th Anniversary
 		i(44819),	-- Baby Blizzard Bear (PET!)
 	})),
-	n(WOW_ANNIVERSARY_FIVE, bubbleDownSelf({ ["timeline"] = { ADDED_3_2_2, REMOVED_3_3_2 } }, {
+	n(WOW_ANNIVERSARY_FIVE, bubbleDownSelf({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_3_2_2,	-- 5th anniversary will not happen during Classic
+			-- #else
+			ADDED_3_2_2, REMOVED_3_3_2,
+			-- #endif
+		}
+	},
+	{
 		ach(4400),	-- 5th Anniversary
 		i(49362),	-- Onyxian Whelpling (PET!)
 	})),
-	n(WOW_ANNIVERSARY_SIX, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_1, REMOVED_4_2_2 } }, {
+	n(WOW_ANNIVERSARY_SIX, bubbleDownSelf({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_4_0_1,	-- 6th anniversary will not happen during Classic
+			-- #else
+			ADDED_4_0_1, REMOVED_4_2_2,
+			-- #endif
+		}
+	},
+	{
 		ach(5512),	-- 6th Anniversary
 	})),
-	n(WOW_ANNIVERSARY_SEVEN, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_2, REMOVED_4_3_0 } }, {
+	n(WOW_ANNIVERSARY_SEVEN, bubbleDownSelf({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_4_2_2,	-- 7th anniversary will not happen during Classic
+			-- #else
+			ADDED_4_2_2, REMOVED_4_3_0,
+			-- #endif
+		},
+	},
+	{
 		ach(5863),	-- 7th Anniversary
 		i(71134),	-- Celebration Package
 	})),
 	n(WOW_ANNIVERSARY_EIGHT, bubbleDownSelf({
-		["timeline"] = { 
+		["timeline"] = {
 			-- #if ANYCLASSIC
-			CREATED_4_3_0, -- 8th anniversary will not happen during Cataclysm version of the game
+			CREATED_4_3_0,	-- 8th anniversary will not happen during Classic
 			-- #else
-			ADDED_4_3_0, REMOVED_5_1_0
+			ADDED_4_3_0, REMOVED_5_1_0,
 			-- #endif
 		},
 	},
 	{
 		ach(6131),	-- 8th Anniversary
 		i(71134),	-- Celebration Package
-	})),							
-	n(WOW_ANNIVERSARY_NINE, bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 } }, {
+	})),
+	n(WOW_ANNIVERSARY_NINE, bubbleDownSelf({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_5_1_0,	-- 9th anniversary will not happen during Classic
+			-- #else
+			ADDED_5_1_0, REMOVED_6_0_2,
+			-- #endif
+		}
+	},
+	{
 		ach(7853),	-- 9th Anniversary
 		n(MAILBOX, {
 			i(90918),	-- Celebration Package
 		}),
 	})),
-	n(WOW_ANNIVERSARY_TEN, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2, REMOVED_6_2_0 } },{
+	n(WOW_ANNIVERSARY_TEN, bubbleDownSelf({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_6_0_2,	-- 10th anniversary will not happen during Classic
+			-- #else
+			ADDED_6_0_2, REMOVED_6_2_0,
+			-- #endif
+		}
+	},
+	{
 		ach(8820, {	-- 10th Anniversary
 			i(115301),	-- Molten Corgi (PET!)
 		}),
@@ -459,7 +532,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			},
 		}),
 	})),
-	n(WOW_ANNIVERSARY_ELEVEN, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_0, REMOVED_6_2_0 } },{
+	n(WOW_ANNIVERSARY_ELEVEN, bubbleDownSelf({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_6_2_0,	-- 11th anniversary will not happen during Classic
+			-- #else
+			ADDED_6_2_0, REMOVED_6_2_0,
+			-- #endif
+		}
+	},
+	{
 		ach(10058),	-- 11th Anniversary
 		n(MAILBOX, {
 			i(128513, {	-- Anniversary Gift
@@ -474,7 +556,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	})),
-	n(WOW_ANNIVERSARY_TWELVE, bubbleDown({ ["timeline"] = { ADDED_7_0_3, REMOVED_7_2_5 } },{
+	n(WOW_ANNIVERSARY_TWELVE, bubbleDown({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_7_0_3,	-- 12th anniversary will not happen during Classic
+			-- #else
+			ADDED_7_0_3, REMOVED_7_2_5,
+			-- #endif
+		}
+	},
+	{
 		ach(10741),	-- 12th Anniversary
 		n(MAILBOX, {
 			i(139284, {	-- Anniversary Gift
@@ -498,7 +589,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	})),
-	n(WOW_ANNIVERSARY_THIRTEEN, bubbleDown({ ["timeline"] = { ADDED_7_2_5, REMOVED_7_2_5 } },{
+	n(WOW_ANNIVERSARY_THIRTEEN, bubbleDown({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_7_2_5,	-- 13th anniversary will not happen during Classic
+			-- #else
+			ADDED_7_2_5, REMOVED_7_2_5,
+			-- #endif
+		}
+	},
+	{
 		ach(11848),	-- 13th Anniversary
 		n(MAILBOX, {
 			i(147876, {	-- Anniversary Gift
@@ -522,7 +622,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	})),
-	n(WOW_ANNIVERSARY_FOURTEEN, bubbleDown({ ["timeline"] = { ADDED_8_0_1, REMOVED_8_2_5 } },{
+	n(WOW_ANNIVERSARY_FOURTEEN, bubbleDown({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_8_0_1,	-- 14th anniversary will not happen during Classic
+			-- #else
+			ADDED_8_0_1, REMOVED_8_2_5,
+			-- #endif
+		}
+	},
+	{
 		ach(12827),	-- 14th Anniversary
 		n(MAILBOX, {
 			i(162637, {	-- Anniversary Gift
@@ -534,7 +643,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	})),
-	n(WOW_ANNIVERSARY_FIFTEEN, bubbleDown({ ["timeline"] = { ADDED_8_2_5, REMOVED_9_0_1 } },{
+	n(WOW_ANNIVERSARY_FIFTEEN, bubbleDown({
+		["timeline"] = {
+			-- #if ANYCLASSIC
+			CREATED_8_2_5,	-- 15th anniversary will not happen during Classic
+			-- #else
+			ADDED_8_2_5, REMOVED_9_0_1,
+			-- #endif
+		}
+	},
+	{
 		ach(13917),	-- 15th Anniversary
 		n(157113, {	-- Chromie
 			--	inst(2235, {	-- doesn't show up in-game
@@ -2227,6 +2345,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					}),
 				},
 			}),
+			n(158192, {	-- Leeroy Jenkins
+				i(232378),	-- Jenkins' No Nonsense Fried Chicken
+				i(172091),	-- Leeroy's Spicy Fried Chicken
+			}),
+			n(158067, {	-- Persnip Goodup <Balloon Vendor>
+				["coord"] = { 53.2, 55.6, CAVERNS_OF_TIME },
+				["groups"] = {
+					i(172019),	-- Blue Anniversary Balloons
+					i(172018),	-- Red Anniversary Balloons
+					i(172017),	-- Sharpened Pin
+				},
+			}),
+			n(157756, {	-- Waiter <Food & Drink>
+				["coord"] = { 53.8, 39.0, CAVERNS_OF_TIME },
+				["groups"] = {
+					i(171199),	-- Ookerdooker Elixir
+					i(171196),	-- Spellstone Delight
+					i(171195),	-- Sugary Soul Shard
+				},
+			}),
 		}),
 	})),
 	n(WOW_ANNIVERSARY_SIXTEEN, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } },{
@@ -2384,8 +2522,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				}),
 				n(QUESTS, {
 					q(82817, {	-- Disturbance Detected: Blackrock Depths
-						["provider"] = { "n", 229494 },	-- Moira Thaurissan <Queen of the Dark Iron>
-						["coord"] = { 63.0, 49.7, TANARIS },
+						["qgs"] = {
+							-- #if BEFORE 11.0.7
+							229494,	-- Moira Thaurissan <Queen of the Dark Iron>
+							-- #else
+							234556,	-- Grannadormu
+							-- #endif
+						},
+						["coords"] = {
+							-- #if BEFORE 11.0.7
+							{ 63.0, 49.7, TANARIS },
+							-- #else
+							{ 52.8, 82.8, ORGRIMMAR },
+							{ 56.0, 18.4, STORMWIND_CITY },
+							-- #endif
+						},
 						["isWeekly"] = true,
 						["g"] = {
 							i(232471, {	-- Cache of Dark Iron Treasures
@@ -2909,67 +3060,53 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						i(224561),	-- Commendation of the Hydraxian Waterlords
 						i(224571),	-- Commendation of the Thorium Brotherhood
 						i(224566),	-- Commendation of the Timbermaw Hold
-						i(224565, {	-- Commendation of the Wintersaber Trainers
-							["races"] = ALLIANCE_ONLY,
-						}),
+						i(224565),	-- Commendation of the Wintersaber Trainers
 						i(224570),	-- Commendation of the Zandalar Tribe
 					})),
 					filter(MISC, {	-- Might be unecessary..
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 750 }},
-							["sym"] = {{ "fill" }},
 						}),
 						i(122339, {	-- Ancient Heirloom Scabbard
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 900 }},
-							["sym"] = {{ "fill" }},
 						}),
 						i(204336, {	-- Awakened Heirloom Armor Casing
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
 							["timeline"] = { ADDED_10_0_7 },
-							["sym"] = {{ "fill" }},
 						}),
 						i(204337, {	-- Awakened Heirloom Scabbard
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
 							["timeline"] = { ADDED_10_0_7 },
-							["sym"] = {{ "fill" }},
 						}),
 						i(167731, {	-- Battle-Hardened Heirloom Armor Casing
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
 							["timeline"] = { ADDED_8_1_5 },
-							["sym"] = {{ "fill" }},
 						}),
 						i(167732, {	-- Battle-Hardened Heirloom Scabbard
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
 							["timeline"] = { ADDED_8_1_5 },
-							["sym"] = {{ "fill" }},
 						}),
 						i(187997, {	-- Eternal Heirloom Armor Casing
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
 							["timeline"] = { ADDED_9_1_5 },
-							["sym"] = {{ "fill" }},
 						}),
 						i(187998, {	-- Eternal Heirloom Scabbard
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
 							["timeline"] = { ADDED_9_1_5 },
-							["sym"] = {{ "fill" }},
 						}),
 						i(122340, {	-- Timeworn Heirloom Armor Casing
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
-							["sym"] = {{ "fill" }},
 						}),
 						i(122341, {	-- Timeworn Heirloom Scabbard
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
-							["sym"] = {{ "fill" }},
 						}),
 						i(151614, {	-- Weathered Heirloom Armor Casing
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
 							["timeline"] = { ADDED_7_2_5 },
-							["sym"] = {{ "fill" }},
 						}),
 						i(151615, {	-- Weathered Heirloom Scabbard
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
 							["timeline"] = { ADDED_7_2_5 },
-							["sym"] = {{ "fill" }},
 						}),
 					}),
 					filter(MISC, {
@@ -3093,91 +3230,91 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			n(231352, {	-- Notary Grably <Titles of Olde>
 				["coord"] = { 63.3, 50.7, TANARIS },
 				["g"] = {
-					i(230264, {	-- Bronze Celebration Titles: Broken Isles Enthusiast
+					i(230264, {	-- Bronze Celebration Titles: Broken Isles Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(587),	-- Broken Isles Enthusiast <Name> (TITLE!)
 						},
 					}),
-					i(230261, {	-- Bronze Celebration Titles: Cataclysm Enthusiast
+					i(230261, {	-- Bronze Celebration Titles: Cataclysm Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(584),	-- Cataclsym Enthusiast <Name> (TITLE!)
 						},
 					}),
-					i(230258, {	-- Bronze Celebration Titles: Classic Enthusiast
+					i(230258, {	-- Bronze Celebration Titles: Classic Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(581),	-- Classic Enthusiast <Name> (TITLE!)
 						},
 					}),
-					i(230263, {	-- Bronze Celebration Titles: Draenor Enthusiast
+					i(230263, {	-- Bronze Celebration Titles: Draenor Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(586),	-- Draenor Enthusias <Name> (TITLE!)
 						},
 					}),
-					i(230268, {	-- Bronze Celebration Titles: Dragon Isles Enthusiast
+					i(230268, {	-- Bronze Celebration Titles: Dragon Isles Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(591),	-- Dragon Isles Enthusiast <Name> (TITLE!)
 						},
 					}),
-					i(229826, {	-- Bronze Celebration Titles: Grizzly Hills Hiker
+					i(229826, {	-- Bronze Celebration Titles: Grizzly Hills Hiker (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(577),	-- Grizzly Hills Hiker <Name> (TITLE!)
 						},
 					}),
-					i(231833, {	-- Bronze Celebration Titles: Karazhan Graduate
+					i(231833, {	-- Bronze Celebration Titles: Karazhan Graduate (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(596),	-- Karazhan Graduate <Name> (TITLE!)
 						},
 					}),
-					i(230266, {	-- Bronze Celebration Titles: Kul Tiras Enthusiast
+					i(230266, {	-- Bronze Celebration Titles: Kul Tiras Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(589),	-- Kul Tiras Enthusiast <Name> (TITLE!)
 						},
 					}),
-					i(231832, {	-- Bronze Celebration Titles: Molten Core Prospector
+					i(231832, {	-- Bronze Celebration Titles: Molten Core Prospector (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(595),	-- Molten Core Prospector <Name> (TITLE!)
 						},
 					}),
-					i(230260, {	-- Bronze Celebration Titles: Northrend Enthusiast
+					i(230260, {	-- Bronze Celebration Titles: Northrend Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(583),	-- Northrend Enthusiast <Name> (TITLE!)
 						},
 					}),
-					i(230259, {	-- Bronze Celebration Titles: Outland Enthusiast
+					i(230259, {	-- Bronze Celebration Titles: Outland Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(582),	-- Outland Enthusiast <Name> (TITLE!)
 						},
 					}),
-					i(230262, {	-- Bronze Celebration Titles: Pandaria Enthusiast
+					i(230262, {	-- Bronze Celebration Titles: Pandaria Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(585),	-- Pandaria Enthusiast <Name> (TITLE!)
 						},
 					}),
-					i(229827, {	-- Bronze Celebration Titles: Plaguelands Survivor
+					i(229827, {	-- Bronze Celebration Titles: Plaguelands Survivor (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(578),	-- Plaguelands Survivor <Name> (TITLE!)
 						},
 					}),
-					i(230267, {	-- Bronze Celebration Titles: Shadowlands Enthusiast
+					i(230267, {	-- Bronze Celebration Titles: Shadowlands Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(590),	-- Shadowlands Enthusiast <Name> (TITLE!)
 						},
 					}),
-					i(230265, {	-- Bronze Celebration Titles: Zuldazar Enthusiast
+					i(230265, {	-- Bronze Celebration Titles: Zuldazar Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
 							title(588),	-- Zuldazar Enthusiast <Name> (TITLE!)
@@ -3496,7 +3633,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(84312),	-- Bonus chance for Grand Black War Mammoth from Doomwalker/Archavon on first kill per day
 		q(86398),	-- Bonus chance for Illidary Doomhawk from Doomwalker on first kill per day
 		q(85723),	-- first WB kill of day/event or maybe Doomwalker
-		q(85168),	-- fourth WB kill of day/event or mayba Kazzak
+		q(85168),	-- fourth WB kill of day/event or maybe Kazzak
 		q(84878),	-- triggered with turnin of 'Chromie's Codex' [82783] (Bronze Cel Cache lockout?)
 		q(84665),	-- triggered with turnin of 'Timely Gate Crashers' [60215] (Bronze Cel Cache lockout?)
 		q(86202, name(HEADERS.Item, 233014)),	-- opening first Bronze Celebration Cache of week

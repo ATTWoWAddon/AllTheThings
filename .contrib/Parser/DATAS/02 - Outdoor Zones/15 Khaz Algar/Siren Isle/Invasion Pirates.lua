@@ -110,6 +110,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 						},
 					}),
 				}),
+				header(HEADERS.Spell, 921, {	-- Pickpocketing
+					i(234232, {	-- Technique: Glyph of the Ashvane Pistol Shot (RECIPE!)
+						["description"] = "Can be pickpocketed from Pirates.",
+					}),
+				}),
 				n(RARES, sharedData({
 					["isDaily"] = true,
 				},{
@@ -150,13 +155,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(233500, {	-- Crimson Snapdragon Treat
+					i(233500, {	-- Crimson Snapdragon Treat (CI!)
 						["description"] = "You must have the Prismatic Snapdragon Mount before this can drop.\n\nCan be looted from Pirates.",
 					}),
 					i(166358, {	-- Proper Parrot (PET!)
-						["description"] = "Can be looted from Pirates.",
-					}),
-					i(234232, {	-- Technique: Glyph of the Ashvane Pistol Shot (RECIPE!)
 						["description"] = "Can be looted from Pirates.",
 					}),
 					n(228582, {	-- First Mate Shellshock

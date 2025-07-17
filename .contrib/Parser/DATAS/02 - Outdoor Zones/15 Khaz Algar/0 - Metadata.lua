@@ -10,6 +10,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 		m(AZJ_KAHET, {["timeline"] = {ADDED_11_0_2}}),
 		m(HALLOWFALL, {["timeline"] = {ADDED_11_0_2}}),
 		m(ISLE_OF_DORN, {["timeline"] = {ADDED_11_0_2}}),
+		m(KARESH, {["timeline"] = {ADDED_11_2_0}}),
 		m(SIREN_ISLE, {["timeline"] = {ADDED_11_0_7}}),
 		m(THE_RINGING_DEEPS, {["timeline"] = {ADDED_11_0_2}}),
 		m(UNDERMINE, {["timeline"] = {ADDED_11_1_0}}),

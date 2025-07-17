@@ -22,7 +22,7 @@ APPRENTICE_JOURNEYMAN_LEATHERWORKING = {
 		-- #endif
 		["rank"] = 2,
 	}),
-	applyclassicphase(BFA_PHASE_ONE, r(264577, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Leatherworking
+	applyclassicphase(BFA_PHASE_ONE, r(264577, {["timeline"] = { ADDED_8_0_1_LAUNCH }})),	-- Leatherworking
 	r(330180, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [CLASSIC]
 	r(330181, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [CLASSIC]
 	r(330183, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [CLASSIC]
@@ -77,14 +77,14 @@ APPRENTICE_JOURNEYMAN_LEATHERWORKING = {
 		r(3817),	-- Cured Medium Hide
 		r(3780),	-- Heavy Armor Kit
 		r(20649),	-- Heavy Leather
-		r(9194, {["timeline"] = {REMOVED_4_0_1}}),	-- Heavy Leather Ammo Pouch
-		r(9193, {["timeline"] = {REMOVED_4_0_1}}),	-- Heavy Quiver
+		r(9194, {["timeline"] = { REMOVED_4_0_1 }}),	-- Heavy Leather Ammo Pouch
+		r(9193, {["timeline"] = { REMOVED_4_0_1 }}),	-- Heavy Quiver
 		r(2152),	-- Light Armor Kit
 		r(2881),	-- Light Leather
-		r(9060, {["timeline"] = {REMOVED_4_0_1}}),	-- Light Leather Quiver
+		r(9060, {["timeline"] = { REMOVED_4_0_1 }}),	-- Light Leather Quiver
 		r(2165),	-- Medium Armor Kit
 		r(20648),	-- Medium Leather
-		r(9062, {["timeline"] = {REMOVED_4_0_1}}),	-- Small Leather Ammo Pouch
+		r(9062, {["timeline"] = { REMOVED_4_0_1 }}),	-- Small Leather Ammo Pouch
 	}),
 };
 EXPERT_ARTISAN_LEATHERWORKING = {
@@ -157,12 +157,12 @@ EXPERT_ARTISAN_LEATHERWORKING = {
 		r(3818),	-- Cured Heavy Hide
 		r(19047),	-- Cured Rugged Hide
 		r(10482),	-- Cured Thick Hide
-		r(14930, {["timeline"] = {REMOVED_4_0_1}}),	-- Quickdraw Quiver
+		r(14930, {["timeline"] = { REMOVED_4_0_1 }}),	-- Quickdraw Quiver
 		r(19058),	-- Rugged Armor Kit
 		r(22331),	-- Rugged Leather
 		r(10487),	-- Thick Armor Kit
 		r(20650),	-- Thick Leather
-		r(14932, {["timeline"] = {REMOVED_4_0_1}}),	-- Thick Leather Ammo Pouch
+		r(14932, {["timeline"] = { REMOVED_4_0_1 }}),	-- Thick Leather Ammo Pouch
 	}),
 };
 CLASSIC_DRAGONSCALE = sharedData({ ["timeline"] = { REMOVED_4_0_3_LAUNCH } }, {
@@ -201,6 +201,74 @@ EXPERT_ARTISAN_LEATHERWORKING
 	{}
 -- #endif
 );
+VANILLA_LEATHERWORKING_VENDOR_REAGENTS = {	-- This group will be gone soon.
+	i(2325),	-- Black Dye
+	i(6260),	-- Blue Dye
+	i(2605),	-- Green Dye
+	i(4340),	-- Grey Dye
+	i(4342),	-- Purple Dye
+	i(2604),	-- Red Dye
+	i(2320),	-- Coarse Thread
+	i(2321),	-- Fine Thread
+	i(4291),	-- Silken Thread
+	i(8343),	-- Heavy Silken Thread
+	i(14341),	-- Rune Thread
+	-- Only Tailoring:
+	i(6261),	-- Orange Dye
+	i(10290),	-- Pink Dye
+	i(4341),	-- Yellow Dye
+};
+SALT = {
+	i(4289, {	-- Salt
+		["description"] = "Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",
+		["providers"] = {
+			{ "n", 5128},	-- Bombus Finespindle <Leatherworking Supplies>
+			{ "n", 5565},	-- Jillian Tanner <Leatherworking Supplies>
+			{ "n", 4589},	-- Joseph Moore <Leatherworking Supplies>
+			{ "n", 4225},	-- Saenorion <Leatherworking Supplies>
+			{ "n", 3366},	-- Tamar <Leatherworking Supplies>
+			-- #if AFTER TBC
+			{ "n", 16748},	-- Haferet <Leatherworking Supplies>
+			{ "n", 16689},	-- Zaralda <Leatherworking Supplies>
+			-- #endif
+			-- #if AFTER CATA
+			{ "n", 3008},	-- Mak <Leatherworking Supplies> [CATA+] / <Journeyman Leatherworker>
+			-- #else
+			{ "n", 3005},	-- Mahu <Tailoring Supplies> [CATA+] / <Leatherworking & Tailoring Supplies>
+			-- #endif
+		},
+	}),
+};
+VANILLA_COMMON_LEATHERWORKING_TAILORING_SUPPLIES = sharedData({
+	["description"] = "Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",
+	["providers"] = {
+		{ "n", 5128},	-- Bombus Finespindle <Leatherworking Supplies>
+		{ "n", 5565},	-- Jillian Tanner <Leatherworking Supplies>
+		{ "n", 4589},	-- Joseph Moore <Leatherworking Supplies>
+		{ "n", 3005},	-- Mahu <Tailoring Supplies> [CATA+] / <Leatherworking & Tailoring Supplies>
+		{ "n", 4225},	-- Saenorion <Leatherworking Supplies>
+		{ "n", 3366},	-- Tamar <Leatherworking Supplies>
+		-- #if AFTER TBC
+		{ "n", 16748},	-- Haferet <Leatherworking Supplies>
+		{ "n", 16689},	-- Zaralda <Leatherworking Supplies>
+		-- #endif
+		-- #if AFTER CATA
+		{ "n", 3008},	-- Mak <Leatherworking Supplies> [CATA+] / <Journeyman Leatherworker>
+		-- #endif
+	},
+}, {
+	i(2325),	-- Black Dye
+	i(6260),	-- Blue Dye
+	i(2605),	-- Green Dye
+	i(4340),	-- Grey Dye
+	i(4342),	-- Purple Dye
+	i(2604),	-- Red Dye
+	i(2320),	-- Coarse Thread
+	i(2321),	-- Fine Thread
+	i(4291),	-- Silken Thread
+	i(8343),	-- Heavy Silken Thread
+	i(14341),	-- Rune Thread
+});
 TBC_LEATHERWORKING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
 	r(32549, {	-- Leatherworking (Master)
 		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
@@ -1139,7 +1207,7 @@ NAZJATAR_LEATHERWORKING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["time
 		r(294826),	-- Notorious Combatant's Bow [Rank 1]
 	}),
 }));
-SL_LEATHERWORKING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_LEATHERWORKING = applyclassicphase(SL_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(309038),	-- Shadowlands Leatherworking
 	n(ARMOR, {
 		r(309213, {	-- Boneshatter Armguards [Rank 1]

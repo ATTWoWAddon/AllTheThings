@@ -21,10 +21,10 @@ local ATTAccountWideData
 
 -- TODO: try making a NonCollectibleQuest wrapper, and wrapping un-completable quests in the wrapper
 
-local function CacheAccountWideCompleteViaAchievement(accountWideData)
+local function CacheAccountWideCompleteViaAchievement()
 	-- Cache some collection states for account wide quests that aren't actually granted account wide and can be flagged using an achievementID. (Allied Races)
 	local collected;
-	local acctQuests, oneTimeQuests = accountWideData.Quests, accountWideData.OneTimeQuests;
+	local acctQuests, oneTimeQuests = ATTAccountWideData.Quests, ATTAccountWideData.OneTimeQuests;
 	local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted;
 	-- achievement collection state isn't readily available when ADDON_LOADED fires, so we do it here to ensure we get a valid state for matching
 	for _,achievementQuests in ipairs({
@@ -72,8 +72,8 @@ local function CacheAccountWideCompleteViaAchievement(accountWideData)
 	end
 end
 
-local function CacheAccountWideMiscQuests(accountWideData)
-	local acctQuests, oneTimeQuests = accountWideData.Quests, accountWideData.OneTimeQuests;
+local function CacheAccountWideMiscQuests()
+	local acctQuests, oneTimeQuests = ATTAccountWideData.Quests, ATTAccountWideData.OneTimeQuests;
 	local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted;
 
 	-- Cache some collection states for misc. once-per-account quests
@@ -156,6 +156,9 @@ local function CacheAccountWideMiscQuests(accountWideData)
 		-- Account Unlocks
 		74576,	-- Restored Hakkari Bijou [Zul'Gurub]
 
+		-- No additional HQT on completion, and once per account
+		88947,	-- Undermined Delves
+
 	}) do
 		-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
 		if not oneTimeQuests[questID] and IsQuestFlaggedCompleted(questID) then
@@ -171,8 +174,8 @@ local function CacheAccountWideMiscQuests(accountWideData)
 	end
 end
 
-local function CacheAccountWideSharedQuests(accountWideData)
-	local acctQuests = accountWideData.Quests;
+local function CacheAccountWideSharedQuests()
+	local acctQuests = ATTAccountWideData.Quests;
 	local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted;
 	local anyComplete;
 	-- Check for fixing Blizzard's incompetence in consistency for shared account-wide quest eligibility which is only granted to some of the shared account-wide quests
@@ -224,8 +227,8 @@ local function CacheAccountWideSharedQuests(accountWideData)
 	end
 end
 
-local function FixNonOneTimeQuests(accountWideData)
-	local oneTimeQuests = accountWideData.OneTimeQuests;
+local function FixNonOneTimeQuests()
+	local oneTimeQuests = ATTAccountWideData.OneTimeQuests;
 
 	-- if we ever erroneously add an account-wide quest and find out it isn't put it here so it reverts back to being handled as a normal quest
 	-- quests in AccountWideQuestsDB will automatically be removed from OneTimeQuests
@@ -283,23 +286,23 @@ local OneTimeFixFunctions = {
 	end,
 }
 
-local function OneTimeFixes(accountWideData)
-	if not accountWideData.OneTimeFixes then accountWideData.OneTimeFixes = {} end
-	local appliedFixes = accountWideData.OneTimeFixes
+local function OneTimeFixes()
+	if not ATTAccountWideData.OneTimeFixes then ATTAccountWideData.OneTimeFixes = {} end
+	local appliedFixes = ATTAccountWideData.OneTimeFixes
 
 	for fix,func in pairs(OneTimeFixFunctions) do
 		if not appliedFixes[fix] then
 			appliedFixes[fix] = 1
-			func(accountWideData)
+			func(ATTAccountWideData)
 		end
 	end
 
 	OneTimeFixFunctions = nil
 end
 
-local function CheckOncePerAccountQuestsForCharacter(accountWideData)
+local function CheckOncePerAccountQuestsForCharacter()
 	-- Double check if any once-per-account quests which haven't been detected as being completed are completed by this character
-	local acctQuests, oneTimeQuests = accountWideData.Quests, accountWideData.OneTimeQuests;
+	local acctQuests, oneTimeQuests = ATTAccountWideData.Quests, ATTAccountWideData.OneTimeQuests;
 	local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted;
 	local charGuid = app.GUID;
 	for questID,questGuid in pairs(oneTimeQuests) do
@@ -324,7 +327,7 @@ app.AddEventHandler("OnRefreshCollections", CheckOncePerAccountQuestsForCharacte
 
 local RefreshCollections = function()
 	-- Execute the OnRefreshCollections handlers.
-	app.HandleEvent("OnRefreshCollections", ATTAccountWideData)
+	app.HandleEvent("OnRefreshCollections")
 end
 -- [Event]Done is called automatically when processed by a Runner and it completes the set of functions
 app.AddEventHandler("OnRefreshCollectionsDone", function()
@@ -338,8 +341,10 @@ app.AddEventHandler("OnRefreshCollectionsDone", function()
 end)
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 	ATTAccountWideData = accountWideData
-	FixNonOneTimeQuests(accountWideData)
-	OneTimeFixes(accountWideData)
+	OneTimeFixes()
+end)
+app.AddEventHandler("OnAfterSavedVariablesAvailable", function()
+	FixNonOneTimeQuests()
 end)
 app.RefreshCollections = function()
 	if IsRefreshing then return end
@@ -362,6 +367,7 @@ local RefreshCollections = function()
 	else
 		print(app.L.REFRESHING_COLLECTION);
 	end
+	coroutine.yield();
 
 	-- Execute the OnRefreshCollections handlers.
 	app.HandleEvent("OnRefreshCollections");

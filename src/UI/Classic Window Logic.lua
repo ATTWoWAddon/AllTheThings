@@ -1,8 +1,8 @@
 -- App locals
 local appName, app = ...;
 local contains = app.contains;
-local AssignChildren, CloneClassInstance, CloneReference
-	= app.AssignChildren, app.CloneClassInstance, app.CloneReference;
+local AssignChildren, CloneClassInstance, CloneReference, wipearray
+	= app.AssignChildren, app.CloneClassInstance, app.CloneReference, app.wipearray;
 local IsQuestFlaggedCompleted, IsQuestReadyForTurnIn = app.IsQuestFlaggedCompleted, app.IsQuestReadyForTurnIn;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 local GetDeepestRelativeValue = app.GetDeepestRelativeValue;
@@ -18,6 +18,8 @@ local L = app.L;
 local ipairs, pairs, pcall, tinsert, tremove, math_floor
 	= ipairs, pairs, pcall, tinsert, tremove, math.floor;
 local C_QuestLog_IsOnQuest, GetTimePreciseSec = C_QuestLog.IsOnQuest, GetTimePreciseSec;
+local GetTradeSkillTexture = app.WOWAPI.GetTradeSkillTexture;
+local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 local IsModifierKeyDown = IsModifierKeyDown;
 
 ---@class ATTGameTooltip: GameTooltip
@@ -190,6 +192,33 @@ local function HasExpandedSubgroup(group)
 end
 app.ExpandGroupsRecursively = ExpandGroupsRecursively;
 
+local __Summary = {}
+local function BuildDataSummary(data)
+	-- NOTE: creating a new table is *slightly* (0-0.5%) faster but generates way more garbage memory over time
+	wipearray(__Summary)
+	local requireSkill = data.requireSkill
+	if requireSkill then
+		local profIcon = GetTradeSkillTexture(requireSkill) or GetSpellIcon(requireSkill)
+		if profIcon then
+			__Summary[#__Summary + 1] = "|T"
+			__Summary[#__Summary + 1] = profIcon
+			__Summary[#__Summary + 1] = ":0|t "
+		end
+	end
+	-- TODO: races
+	local specs = data.specs;
+	if specs and #specs > 0 then
+		__Summary[#__Summary + 1] = app.GetSpecsString(specs, false, false)
+	else
+		local classes = data.c
+		if classes and #classes > 0 then
+			__Summary[#__Summary + 1] = app.GetClassesString(classes, false, false)
+		end
+	end
+	__Summary[#__Summary + 1] = GetProgressTextForRow(data) or "---"
+	return app.TableConcat(__Summary, nil, "", "")
+end
+
 local IconPortraitTooltipExtraSettings = {
 	questID = "IconPortraitsForQuests",
 };
@@ -302,7 +331,7 @@ local function SetRowData(self, row, data)
 	end
 
 	-- Update the Summary Text (this will be the thing that updates the most)
-	local summary = data.summary or GetProgressTextForRow(data);
+	local summary = data.summary or BuildDataSummary(data);
 	local oldSummary = row.summaryText;
 	if oldSummary then
 		if summary then
@@ -779,45 +808,6 @@ local function RowOnEnter(self)
 		});
 	end
 
-	if reference.cost then
-		if type(reference.cost) == "table" then
-			local _, name, icon, amount;
-			for k,v in pairs(reference.cost) do
-				_ = v[1];
-				if _ == "g" then
-					tinsert(tooltipInfo, {
-						left = (k == 1 and "Cost"),
-						right = GetCoinTextureString(v[2]),
-					});
-				else
-					if _ == "i" then
-						local item = app.CreateItem(v[2]);
-						name = item.name;
-						icon = item.icon;
-					elseif _ == "c" then
-						local currency = app.CreateCurrencyClass(v[2]);
-						name = currency.text;
-						icon = currency.icon;
-					end
-					name = (icon and ("|T" .. icon .. ":0|t") or "") .. (name or RETRIEVING_DATA);
-					_ = (v[3] or 1);
-					if _ > 1 then
-						name = _ .. "x  " .. name;
-					end
-					tinsert(tooltipInfo, {
-						left = (k == 1 and "Cost"),
-						right = name,
-					});
-				end
-			end
-		else
-			tinsert(tooltipInfo, {
-				left = "Cost",
-				right = GetCoinTextureString(reference.cost),
-			});
-		end
-	end
-
 	-- Process all Information Types
 	if tooltip.ATT_AttachComplete == nil then
 		app.ProcessInformationTypes(tooltipInfo, reference);
@@ -900,7 +890,7 @@ local function RowOnEnter(self)
 				if #sas > 0 then
 					local bestMatch = nil;
 					for j,sa in ipairs(sas) do
-						if sa.achievementID == sourceAchievementID then
+						if sa.achievementID == sourceAchievementID and sa.key == "achievementID" then
 							if isDebugMode or (app.RecursiveCharacterRequirementsFilter(sa) and not sa.collected) then
 								bestMatch = sa;
 							end
@@ -2065,7 +2055,7 @@ function app:BuildFlatSearchResponse(groups, field, value, t)
 		for i,group in ipairs(groups) do
 			if not group.IgnoreBuildRequests then
 				local v = group[field];
-				if v and (v == value or (field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value)) then
+				if v and (v == value or (field == "requireSkill" and app.SkillDB.SpellToSkill[app.SkillDB.SpecializationSpells[v] or 0] == value)) then
 					tinsert(t, CloneReferenceForBuildRequests(group));
 				elseif group.g then
 					app:BuildFlatSearchResponse(group.g, field, value, t);
@@ -2113,7 +2103,7 @@ function app:BuildSearchResponse(groups, field, value)
 		for i,group in ipairs(groups) do
 			if not group.IgnoreBuildRequests then
 				local v = group[field];
-				if v and (v == value or (field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value)) then
+				if v and (v == value or (field == "requireSkill" and app.SkillDB.SpellToSkill[app.SkillDB.SpecializationSpells[v] or 0] == value)) then
 					if not t then t = {}; end
 					tinsert(t, CloneReferenceForBuildRequests(group));
 				else
@@ -2378,21 +2368,6 @@ local function OnInitForPopout(self, questID, group)
 		app.Sort(self.data.g, app.SortDefaults.Global)
 	end
 
-	-- If this is an achievement, build the criteria within it if possible.
-	local achievementID = group.achievementID;
-	if achievementID then
-		local searchResults = SearchForField("achievementID", achievementID);
-		if #searchResults > 0 then
-			for i=1,#searchResults,1 do
-				local searchResult = searchResults[i];
-				if searchResult.achievementID == achievementID and searchResult.criteriaID then
-					if not self.data.g then self.data.g = {}; end
-					MergeObject(self.data.g, CloneReference(searchResult));
-				end
-			end
-		end
-	end
-
 	--[[
 	local currencyID = group.currencyID;
 	if currencyID and not self.data.usedtobuy then
@@ -2484,7 +2459,6 @@ local function OnInitForPopout(self, questID, group)
 				["text"] = "Cost",
 				["description"] = "The following contains all of the relevant items or currencies needed to acquire this.",
 				["icon"] = 133785,
-				["OnUpdate"] = app.AlwaysShowUpdate,
 				["g"] = {},
 			};
 			local costItem;
@@ -2556,14 +2530,50 @@ local function OnInitForPopout(self, questID, group)
 			end
 		end
 
-		if not (self.data.ignoreSourceLookup or (self.data.g and #self.data.g > 0)) then
-			local results = app:BuildSearchResponse(app:GetDataCache().g, dataKey, self.data[dataKey]);
+		if not self.data.ignoreSourceLookup then
+			local searchID = self.data[dataKey];
+			if self.data.sym and self.data.sym[1][1] == "partial_achievement" then
+				searchID = self.data.sym[1][2];
+			end
+			local results = app:BuildSearchResponse(app:GetDataCache().g, dataKey, searchID);
 			if results and #results > 0 then
 				if not self.data.g then self.data.g = {}; end
 				for i,result in ipairs(results) do
 					tinsert(self.data.g, result);
 				end
 			end
+		else
+			-- If this is an achievement, build the criteria within it if possible.
+			local achievementID = group.achievementID;
+			if achievementID then
+				local searchResults = SearchForField("achievementID", achievementID);
+				if #searchResults > 0 then
+					for i=1,#searchResults,1 do
+						local searchResult = searchResults[i];
+						if searchResult.achievementID == achievementID and searchResult.criteriaID then
+							if not self.data.g then self.data.g = {}; end
+							MergeObject(self.data.g, CloneReference(searchResult));
+						end
+					end
+				end
+			end
+		end
+	end
+	if group.GetRelatedThings then
+		local relatedThingsGroup = {
+			["text"] = "Related Things",
+			["description"] = "The following contains things that may be related or relevant to the content.",
+			["icon"] = 133785,
+			["g"] = {},
+		};
+		local relatedThings = {};
+		group.GetRelatedThings(group, relatedThings);
+		for i,o in ipairs(relatedThings) do
+			MergeObject(relatedThingsGroup.g, CloneReference(o));
+		end
+		if #relatedThingsGroup.g > 0 then
+			if not self.data.g then self.data.g = {}; end
+			MergeObject(self.data.g, relatedThingsGroup);
 		end
 	end
 

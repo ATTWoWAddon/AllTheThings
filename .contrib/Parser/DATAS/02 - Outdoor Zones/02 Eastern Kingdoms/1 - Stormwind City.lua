@@ -29,45 +29,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						crit(15812, {	-- Hitting a Walleye
-							["_quests"] = { 26414 },
-						}),
-						crit(15813, {	-- Diggin' for Worms
-							["_quests"] = { 26420 },
-						}),
-						crit(15814, {	-- Rock Lobster
-							["_quests"] = { 26442 },
-						}),
-						crit(15815, {	-- Big Gulp
-							["_quests"] = { 26488 },
-						}),
-						crit(15816, {	-- Thunder Falls
-							["_quests"] = { 26536 },
-						}),
-					},
 				})),
 				applyclassicphase(CATA_PHASE_ONE, ach(5474, {	-- Let's Do Lunch: Stormwind
 					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						crit(15802, {	-- A Fisherman's Feast
-							["_quests"] = { 26190 },
-						}),
-						crit(15803, {	-- Feeling Crabby?
-							["_quests"] = { 26177 },
-						}),
-						crit(15804, {	-- Orphans Like Cookies Too!
-							["_quests"] = { 26192 },
-						}),
-						crit(15805, {	-- Penny's Pumpkin Pancakes
-							["_quests"] = { 26153 },
-						}),
-						crit(15806, {	-- The King's Cider
-							["_quests"] = { 26183 },
-						}),
-					},
 				})),
 			}),
 			battlepets({
@@ -101,9 +67,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(2, {	-- Stormwind City, Elwynn
 					["cr"] = 352,	-- Dungar Longdrink <Gryphon Master>
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 71.0, 72.6, STORMWIND_CITY },
-						-- #elseif AFTER WRATH
+						-- #if AFTER WRATH
 						{ 71.0, 72.5, STORMWIND_CITY },
 						-- #else
 						{ 66.2, 62.4, STORMWIND_CITY },
@@ -131,6 +95,314 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["skipFill"] = true,
 			}),
 			-- #endif
+			petbattles({
+				n(63596, {	-- Audrey Burnheap <Battle Pet Tamer>
+					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["timeline"] = { ADDED_5_0_4 },
+					["description"] =
+						-- #if BEFORE 9.0.3
+						"Provides the Alliance Battle Pet questline, the quests are given in the following order:\n\n1. The inital quests touring southern Eastern Kingdoms\n2. 'Battle Pet Tamers: Eastern Kingdoms' + 'Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n7. 'Grand Master Payne'\n8. 'Battle Pet Tamers: Cataclysm'\n9. 'Grand Master Obalis'\n10. 'Battle Pet Tamers: Pandaria'\n11. 'Grand Master Aki'\n\nNew quest might not be given until daily reset.",
+						-- #else
+						"Provides the Alliance Battle Pet questline, the quests are given in the following order:\n\n1. The inital quests touring southern Eastern Kingdoms\n2. 'Battle Pet Tamers: Eastern Kingdoms' + 'Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n7. 'Grand Master Payne'\n8. 'Battle Pet Tamers: Cataclysm'\n9. 'Grand Master Obalis'\n10. 'Battle Pet Tamers: Pandaria'\n11. 'Grand Master Aki'\n\nYou might have to tinker with Chromie time on low-level character to obtain these account-wide quests, and new quest might not be given until daily reset.",
+						-- #endif
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						-- #if ANYCLASSIC
+						r(119467),	-- Battle Pet Training
+						-- #else
+						spell(119467),	-- Battle Pet Training
+						-- #endif
+					}
+				}),
+				-- Infamous Breadcrumbs, these are offered at the end of the training quests in each of the starter zones. Can't find any info on which one is appropriate to which map, so this is going to need to be something figured out on an entirely new account that has done none of the pet battle quests
+				q(32008, {	-- Audrey Burnhep
+					["qg"] = 63596,	-- Audrey Burnhelp
+					["altQuests"] = {
+						-- Horde Shared Account-Wide Pet Battle Intro Quests
+						32009,	-- Varzok (Will be marked completed if any Varzok quest is completed)
+					},
+					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["description"] = "|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.|r",
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
+				}),
+				q(31878, {	-- Audrey Burnhep
+					["altQuests"] = {
+						-- Horde Shared Account-Wide Pet Battle Intro Quests
+						32009,	-- Varzok (Will be marked completed if any Varzok quest is completed)
+					},
+					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
+				}),
+				q(31879, {	-- Audrey Burnhep
+					["altQuests"] = {
+						-- Horde Shared Account-Wide Pet Battle Intro Quests
+						32009,	-- Varzok (Will be marked completed if any Varzok quest is completed)
+					},
+					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
+				}),
+				q(31880, {	-- Audrey Burnhep
+					["altQuests"] = {
+						-- Horde Shared Account-Wide Pet Battle Intro Quests
+						32009,	-- Varzok (Will be marked completed if any Varzok quest is completed)
+					},
+					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
+				}),
+				q(31881, {	-- Audrey Burnhep
+					["altQuests"] = {
+						-- Horde Shared Account-Wide Pet Battle Intro Quests
+						32009,	-- Varzok (Will be marked completed if any Varzok quest is completed)
+					},
+					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
+				}),
+				q(31966, {	-- Battle Pet Tamers: Cataclysm (A)
+					["qg"] = 63596,	-- Audrey Burnhelp
+					["sourceQuest"] = 31984,	-- A Brief Reprieve (A)
+					-- ["altQuests"] = { 31967 },
+					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["timeline"] = { ADDED_5_0_4 },
+					["maps"] = { MOUNT_HYJAL, DEEPHOLM, TWILIGHT_HIGHLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Defeat Brok
+							["provider"] = { "n", 66819 },	-- Brok <Master Pet Tamer>
+							["coord"] = { 61.4, 32.8, MOUNT_HYJAL },
+						}),
+						objective(2, {	-- Defeat Bordin Steadyfist
+							["provider"] = { "n", 66815 },	-- Bordin Steadyfist <Master Pet Tamer>
+							["coord"] = { 49.8, 57.0, DEEPHOLM },
+						}),
+						objective(3, {	-- Defeat Goz Banefury
+							["provider"] = { "n", 66822 },	-- Goz Banefury <Master Pet Tamer>
+							["coord"] = { 56.6, 56.8, TWILIGHT_HIGHLANDS },
+						}),
+						i(89125),	-- Sack of Pet Supplies
+					},
+				}),
+				q(31902, {	-- Battle Pet Tamers: Eastern Kingdoms (A)
+					["qg"] = 63596,	-- Audrey Burnhelp
+					["sourceQuest"] = 31917,	-- A Tamer's Homecoming (A)
+					-- ["altQuests"] = { 31903 },	-- Battle Pet Tamers: Eastern Kingdoms (Horde version, since only one can be completed per account and Blizz doesn't check it off, apparently)
+					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["maps"] = { THE_HINTERLANDS, EASTERN_PLAGUELANDS, SEARING_GORGE, SWAMP_OF_SORROWS, BURNING_STEPPES },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Defeat David Kosse
+							["provider"] = { "n", 66478 },	-- David Kosse <Master Pet Tamer>
+							["coord"] = { 62.8, 54.6, THE_HINTERLANDS },
+						}),
+						objective(2, {	-- Defeat Deiza Plaguehorn
+							["provider"] = { "n", 66512 },	-- Deiza Plaguehorn <Master Pet Tamer>
+							["coord"] = { 67.0, 52.4, EASTERN_PLAGUELANDS },
+						}),
+						objective(3, {	-- Defeat Kortas Darkhammer
+							["provider"] = { "n", 66515 },	-- Kortas Darkhammer <Master Pet Tamer>
+							["coord"] = { 35.4, 27.8, SEARING_GORGE },
+						}),
+						objective(4, {	-- Defeat Everessa
+							["provider"] = { "n", 66518 },	-- Everessa <Master Pet Tamer>
+							["coord"] = { 76.6, 41.6, SWAMP_OF_SORROWS },
+						}),
+						objective(5, {	-- Defeat Durin Darkhammer
+							["provider"] = { "n", 66520 },	-- Durin Darkhammer <Master Pet Tamer>
+							["coord"] = { 25.6, 47.6, BURNING_STEPPES },
+						}),
+						i(89125),	-- Sack of Pet Supplies
+					},
+				}),
+				q(31889, {	-- Battle Pet Tamers: Kalimdor (A)
+					["qg"] = 63596,	-- Audrey Burnhelp
+					["sourceQuest"] = 31917,	-- A Tamer's Homecoming (A)
+					-- ["altQuests"] = { 31891 },
+					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["timeline"] = { ADDED_5_0_4 },
+					["maps"] = { FERALAS, DUSTWALLOW_MARSH, THOUSAND_NEEDLES, FELWOOD, MOONGLADE },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Defeat Traitor Gluk
+							["provider"] = { "n", 66352 },	-- Traitor Gluk <Master Pet Tamer>
+							["coord"] = { 59.6, 49.6, FERALAS },
+						}),
+						objective(2, {	-- Defeat Grazzle the Great
+							["provider"] = { "n", 66436 },	-- Grazzle the Great <Master Pet Tamer>
+							["coord"] = { 53.8, 74.8, DUSTWALLOW_MARSH },
+						}),
+						objective(3, {	-- Defeat Kela Grimtotem
+							["provider"] = { "n", 66452 },	-- Kela Grimtotem <Master Pet Tamer>
+							["coord"] = { 31.8, 32.8, THOUSAND_NEEDLES },
+						}),
+						objective(4, {	-- Defeat Zoltan
+							["provider"] = { "n", 66442 },	-- Zoltan <Master Pet Tamer>
+							["coord"] = { 40.0, 56.6, FELWOOD },
+						}),
+						objective(5, {	-- Defeat Elena Flutterfly
+							["provider"] = { "n", 66412 },	-- Elena Flutterfly <Master Pet Tamer>
+							["coord"] = { 46.0, 60.6, MOONGLADE },
+						}),
+						i(89125),	-- Sack of Pet Supplies
+					},
+				}),
+				q(31927, {	-- Battle Pet Tamers: Northrend (A)
+					["qg"] = 63596,	-- Audrey Burnhelp
+					["sourceQuest"] = 31981,	-- Exceeding Expectations (A)
+					-- ["altQuests"] = { 31929 },
+					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["timeline"] = { ADDED_5_0_4 },
+					["maps"] = { HOWLING_FJORD, CRYSTALSONG_FOREST, DRAGONBLIGHT, ZULDRAK },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Defeat Beegle Blastfuse
+							["provider"] = { "n", 66635 },	-- Beegle Blastfuse <Master Pet Tamer>
+							["coord"] = { 28.6, 33.8, HOWLING_FJORD },
+						}),
+						objective(2, {	-- Defeat Nearly Headless Jacob
+							["provider"] = { "n", 66636 },	-- Nearly Headless Jacob <Master Pet Tamer>
+							["coord"] = { 50.2, 59.0, CRYSTALSONG_FOREST },
+						}),
+						objective(3, {	-- Defeat Okrut Dragonwaste
+							["provider"] = { "n", 66638 },	-- Okrut Dragonwaste <Master Pet Tamer>
+							["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
+						}),
+						objective(4, {	-- Defeat Gutretch
+							["provider"] = { "n", 66639 },	-- Gutretch <Master Pet Tamer>
+							["coord"] = { 13.2, 66.8, ZULDRAK },
+						}),
+						i(89125),	-- Sack of Pet Supplies
+					},
+				}),
+				q(31919, {	-- Battle Pet Tamers: Outland (A)
+					["qg"] = 63596,	-- Audrey Burnhelp
+					["sourceQuests"] = {
+						31975,	-- The Returning Champion (A)
+						31976,	-- The Returning Champion (A)
+					},
+					-- ["altQuests"] = { 31921 },
+					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["timeline"] = { ADDED_5_0_4 },
+					["maps"] = { HELLFIRE_PENINSULA, ZANGARMARSH, NAGRAND, SHATTRATH_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Defeat Nicki Tinytech
+							["provider"] = { "n", 66550 },	-- Nicki Tinytech <Master Pet Tamer>
+							["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
+						}),
+						objective(2, {	-- Defeat Ras'an
+							["provider"] = { "n", 66551 },	-- Ras'an <Master Pet Tamer>
+							["coord"] = { 17.2, 50.6, ZANGARMARSH },
+						}),
+						objective(3, {	-- Defeat Narrok
+							["provider"] = { "n", 66552 },	-- Narrok <Master Pet Tamer>
+							["coord"] = { 61.0, 49.4, NAGRAND },
+						}),
+						objective(4, {	-- Defeat Morulu The Elder
+							["provider"] = { "n", 66553 },	-- Morulu The Elder <Master Pet Tamer>
+							["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
+						}),
+						i(89125),	-- Sack of Pet Supplies
+					},
+				}),
+				q(31930, {	-- Battle Pet Tamers: Pandaria (A)
+					["qg"] = 63596,	-- Audrey Burnhelp
+					["sourceQuest"] = 31985,	-- The Triumphant Return (A)
+					-- ["altQuests"] = { 31952 },
+					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["timeline"] = { ADDED_5_0_4 },
+					["maps"] = { THE_JADE_FOREST, VALLEY_OF_THE_FOUR_WINDS, KRASARANG_WILDS, KUN_LAI_SUMMIT, TOWNLONG_STEPPES, DREAD_WASTES },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Defeat Hyuna of the Shrines
+							["provider"] = { "n", 66730 },	-- Hyuna of the Shrines <Grand Master Pet Tamer>
+							["coord"] = { 48.0, 54.0, THE_JADE_FOREST },
+						}),
+						objective(2, {	-- Defeat Farmer Nishi
+							["provider"] = { "n", 66734 },	-- Farmer Nishi <Grand Master Pet Tamer>
+							["coord"] = { 46.0, 43.6, VALLEY_OF_THE_FOUR_WINDS },
+						}),
+						objective(3, {	-- Defeat Mo'ruk
+							["provider"] = { "n", 66733 },	-- Mo'ruk <Grand Master Pet Tamer>
+							["coord"] = { 65.0, 42.6, KRASARANG_WILDS },
+						}),
+						objective(4, {	-- Defeat Courageous Yon
+							["provider"] = { "n", 66738 },	-- Courageous Yon <Grand Master Pet Tamer>
+							["coord"] = { 35.8, 73.6, KUN_LAI_SUMMIT },
+						}),
+						objective(5, {	-- Defeat Seeker Zusshi
+							["provider"] = { "n", 66918 },	-- Seeker Zusshi <Grand Master Pet Tamer>
+							["coord"] = { 36.2, 52.2, TOWNLONG_STEPPES },
+						}),
+						objective(6, {	-- Defeat Wastewalker Shu
+							["provider"] = { "n", 66739 },	-- Wastewalker Shu <Grand Master Pet Tamer>
+							["coord"] = { 55.0, 37.6, DREAD_WASTES },
+						}),
+						i(89125),	-- Sack of Pet Supplies
+					},
+				}),
+				q(31593, {	-- Got one! (Audrey)
+					["qg"] = 63596,	-- Audrey Burnhep
+					["sourceQuest"] = 31821,	-- Level Up!
+					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31316, {	-- Julia, The Pet Tamer
+					["qg"] = 63596,	-- Audrey Burnhelp
+					["sourceQuests"] = { 32008, 31878, 31879, 31880, 31881 },	-- Audrey Burnhep (all breadcrumbs)
+					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["timeline"] = { ADDED_5_0_4 },
+					["maps"] = { ELWYNN_FOREST },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Defeat Julia Stevens
+							["provider"] = { "n", 64330 },	-- Julia Stevens
+							["coord"] = { 41.6, 83.6, ELWYNN_FOREST },
+						}),
+						i(89125),	-- Sack of Pet Supplies
+					},
+				}),
+				q(31591, {	-- Learning the Ropes (Audrey)
+					["qg"] = 63596,	-- Audrey Burnhep
+					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31821, {	-- Level Up! (Audrey)
+					["qg"] = 63596,	-- Audrey Burnhep
+					["sourceQuest"] = 31592,	-- On The Mend
+					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31592, {	-- On The Mend (Audrey)
+					["qg"] = 63596,	-- Audrey Burnhep
+					["sourceQuest"] = 31591,	-- Learning the Ropes
+					["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Battle Pets Healed
+							["provider"] = { "n", 11069 },	-- Jenova Stoneshield <Stable Master>
+							["coord"] = { 67.0, 37.6, STORMWIND_CITY },
+						}),
+					},
+				}),
+			}),
 			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					n(5499, {	-- Lilyssia Nightbreeze <Alchemy Trainer>
@@ -336,7 +608,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						),
 					}),
 				}),
-				-- #if NOT ANYCLASSIC
+				-- #if AFTER WRATH
 				prof(INSCRIPTION, {
 					n(30713, {	-- Catarina Stanford <Inscription Trainer>
 						["coords"] = {
@@ -348,10 +620,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 						["timeline"] = { ADDED_3_0_2 },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = CLASSIC_INSCRIPTION,
+						["groups"] = appendGroups(CLASSIC_INSCRIPTION, {
+							i(140566, {	-- Technique: Songs of the Alliance (RECIPE!)
+								["timeline"] = { ADDED_7_0_3 },
+							}),
+						}),
 					}),
 				}),
 				-- #endif
+				-- #if AFTER CATA
 				prof(JEWELCRAFTING, {
 					n(44582, {	-- Theresa Denman <Jewelcrafting Trainer>
 						["coord"] = { 63.6, 61.6, STORMWIND_CITY },
@@ -364,6 +641,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 					}),
 				}),
+				-- #endif
 				prof(LEATHERWORKING, {
 					n(5564, {	-- Simon Tanner <Expert Leatherworker>
 						["coords"] = {
@@ -410,6 +688,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							{}
 							-- #endif
 						),
+					}),
+				}),
+				prof(TAILORING, {
+					n(1346, {	-- Georgio Bolero <Tailoring Trainer>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 53.2, 81.6, STORMWIND_CITY },
+							-- #else
+							{ 43.6, 73.8, STORMWIND_CITY },
+							-- #endif
+						},
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = appendGroups(CLASSIC_TAILORING,
+							-- #if AFTER CATA
+							CATA_TAILORING
+							-- #else
+							{}
+							-- #endif
+						),
+					}),
+					n(9584, {	-- Jalane Ayrole <Master Shadoweave Tailor>
+						["coords"] = {
+							-- #if AFTER CATA
+							{ 40.6, 83.8, STORMWIND_CITY },
+							-- #else
+							{ 26.6, 77.6, STORMWIND_CITY },
+							-- #endif
+						},
+						["races"] = ALLIANCE_ONLY,
+						["groups"] = SHADOWEAVE_TAILORING,
 					}),
 				}),
 			}),
@@ -776,7 +1084,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 30988,	-- The Alliance Way
 					["coord"] = { 82.6, 28.2, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
-					["races"] = { PANDAREN_ALLIANCE },
+					["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE },
 				}),
 				q(58496, {	-- An Unwelcome Advisor
 					["provider"] = { "o", 369893 },	-- Urgent Missive
@@ -1055,7 +1363,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(29412, {	-- Blown Away
 					["qg"] = 54117,	-- Vin
-					["coord"] = { 58.8, 52.8, STORMWIND_CITY },
+					["coord"] = { 58.9, 52.7, STORMWIND_CITY },
 					["timeline"] = { ADDED_4_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1387,7 +1695,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(6261, {	-- Dungar Longdrink
 					["providers"] = {
 						{ "n", 1323 },	-- Osric Strang
-						{ "i", 16115 },	-- Osric's Crate
+						{ "i", 16115 },	-- Osric's Crate (PQI!)
 					},
 					["sourceQuest"] = 6281,	-- Continue to Stormwind
 					["coords"] = {
@@ -1407,12 +1715,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26395, {	-- Dungar Longdrink
 					["providers"] = {
 						{ "n", 1323 },	-- Osric Strang
-						{ "i", 16115 },	-- Osric's Crate
+						{ "i", 16115 },	-- Osric's Crate (PQI!)
 					},
 					["sourceQuest"] = 26394,	-- Continue to Stormwind
 					["coords"] = {
 						-- #if AFTER WRATH
-						{ 77.0, 61.2, STORMWIND_CITY },
+						{ 77.2, 61.0, STORMWIND_CITY },
 						-- #else
 						{ 74.2, 47.6, STORMWIND_CITY },
 						-- #endif
@@ -1632,7 +1940,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				q(27271, {	-- Frazzle's Request [SL+] / Journey to the Wizard's Sanctum
 					["qgs"] = {
 						16749,	-- Edirah
@@ -1828,12 +2136,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(333, {	-- Harlan Needs a Resupply
 					["providers"] = {
 						{ "n", 1427 },	-- Harlan Bagley
-						{ "i", 2724 },	-- Cloth Request
+						{ "i", 2724 },	-- Cloth Request (PQI!)
 					},
 					["coords"] = {
-						-- #if AFTER CATA
-						{ 62.2, 67.8, STORMWIND_CITY },
-						-- #elseif AFTER WRATH
+						-- #if AFTER WRATH
 						{ 62.3, 67.9, STORMWIND_CITY },
 						-- #else
 						{ 55.1, 56.0, STORMWIND_CITY },
@@ -2096,9 +2402,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 60566,	-- Aysa Cloudsinger
 					["coord"] = { 74.2, 92.4, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4 },
-					["races"] = { PANDAREN_NEUTRAL },
+					["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE },
 				}),
-				-- #if BEFORE SHADOWLANDS
+				-- #if BEFORE SL
 				q(27271, {	-- Journey to the Wizard's Sanctum / Frazzle's Request [SL+]
 					["qgs"] = {
 						16749,	-- Edirah
@@ -2531,9 +2837,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 2760 },	-- Thurman's Sewing Kit
 					},
 					["coords"] = {
-						-- #if AFTER LEGION
-						{ 58.0, 67.2, STORMWIND_CITY },
-						-- #elseif AFTER WRATH
+						-- #if AFTER WRATH
 						{ 58.1, 67.5, STORMWIND_CITY },
 						-- #else
 						{ 49.5, 55.3, STORMWIND_CITY },
@@ -2648,7 +2952,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26396, {	-- Return to Argus
 					["providers"] = {
 						{ "n", 352 },	-- Dungar Longdrink <Gryphon Master>
-						{ "i", 16115 },	-- Osric's Crate
+						{ "i", 16115 },	-- Osric's Crate (PQI!)
 					},
 					["sourceQuest"] = 26395,	-- Dungar Longdrink
 					["coord"] = { 71.0, 72.6, STORMWIND_CITY },
@@ -2659,7 +2963,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(6285, {	-- Return to Lewis
 					["providers"] = {
 						{ "n", 352 },	-- Dungar Longdrink <Gryphon Master>
-						{ "i", 16115 },	-- Osric's Crate
+						{ "i", 16115 },	-- Osric's Crate (PQI!)
 					},
 					["sourceQuest"] = 6261,	-- Dungar Longdrink
 					["coords"] = {
@@ -2907,7 +3211,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(353, {	-- Stormpike's Delivery
 					["providers"] = {
 						{ "n", 1416 },	-- Grimand Elmore
-						{ "i", 2806 },	-- Package for Stormpike
+						{ "i", 2806 },	-- Package for Stormpike (PQI!)
 					},
 					["sourceQuest"] = 1097,	-- Elmore's Task
 					["coords"] = {
@@ -2980,7 +3284,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 30987,	-- Joining the Alliance
 					["coord"] = { 82.6, 28.2, STORMWIND_CITY },
 					["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
-					["races"] = { PANDAREN_ALLIANCE },
+					["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE },
 				}),
 				q(434, {	-- The Attack!
 					["qg"] = 7766,	-- Tyrion
@@ -4181,15 +4485,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(332, {	-- Wine Shop Advert
 					["providers"] = {
 						{ "n", 1432 },	-- Renato Gallina
-						{ "i", 2722 },	-- Wine Ticket
+						{ "i", 2722 },	-- Wine Ticket (PQI!)
 					},
 					-- #if BEFORE CATA
 					["sourceQuest"] = 61,	-- Shipment to Stormwind
 					-- #endif
 					["coords"] = {
-						-- #if AFTER LEGION
-						{ 63.8, 73.4, STORMWIND_CITY },
-						-- #elseif AFTER WRATH
+						-- #if AFTER WRATH
 						{ 63.8, 73.6, STORMWIND_CITY },
 						-- #else
 						{ 57.0, 63.4, STORMWIND_CITY },
@@ -4319,7 +4621,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(112958, {	-- Soulare of Andorhal
 					["description"] = "Emote |cFFFFFFFF/tired|r at him to get the toy.  Horde players can do this, too!",
-					["coord"] = { 38.2, 64.6, STORMWIND_CITY },
+					["coord"] = { 38.1, 64.4, STORMWIND_CITY },
 					["timeline"] = { ADDED_7_0_3 },
 					["groups"] = {
 						i(117573, {	-- Wayfarer's Bonfire (TOY!)
@@ -4379,24 +4681,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				n(1347, {	-- Alexandra Bolero <Tailoring Supplies>
-					["coords"] = {
-						-- #if AFTER WRATH
-						{ 53.2, 81.6, STORMWIND_CITY },
-						-- #else
-						{ 43.4, 74.0, STORMWIND_CITY },
-						-- #endif
-					},
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {
-						i(6274, {	-- Pattern: Blue Overalls (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(10325, {	-- Pattern: White Wedding Dress (RECIPE!)
-							["isLimited"] = true,
-						}),
-					}),
-				}),
 				-- #if AFTER 10.0.5
 				n(1294, {	-- Aldric Moore <Mail Armor Merchant>
 					["coord"] = { 62.2, 67.6, STORMWIND_CITY },
@@ -4436,6 +4720,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 				-- #endif
+				n(1347, {	-- Alexandra Bolero <Tailoring Supplies>
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 53.2, 81.6, STORMWIND_CITY },
+						-- #else
+						{ 43.4, 74.0, STORMWIND_CITY },
+						-- #endif
+					},
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, VANILLA_TAILORING_VENDOR_REAGENTS, {
+						i(6274, {	-- Pattern: Blue Overalls (RECIPE!)
+							["isLimited"] = true,
+						}),
+						i(10325, {	-- Pattern: White Wedding Dress (RECIPE!)
+							["isLimited"] = true,
+						}),
+					}),
+				}),
 				n(1315, {	-- Allan Hafgan <Staves Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
@@ -4531,9 +4833,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(5208),	-- Smoldering Wand
 					},
 				}),
-				-- #if AFTER 8.0.1
 				n(55285, {	-- Astrid Langstrump <Mountain Horse Handler>
-					["description"] = "Appears in Stormwind after War of Thorns.",
 					["coord"] = { 52.4, 8.2, STORMWIND_CITY },
 					-- Available to Worgen without faction requirements.
 					["minReputation"] = { FACTION_GILNEAS, EXALTED },	-- Gilneas, Exalted.
@@ -4544,6 +4844,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						return t;
 					end]],
 					["races"] = ALLIANCE_ONLY,
+					-- Astrid can only be found in Darnassus after 10.2.5: Reclamation of Gilneas.
+					["timeline"] = { ADDED_8_0_1, REMOVED_10_2_5 },
 					["groups"] = {
 						i(73838, {	-- Mountain Horse (MOUNT!)
 							["timeline"] = { ADDED_4_3_0 },
@@ -4553,7 +4855,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				-- #endif
 				n(1349, {	-- Agustus Moulaine <Mail Armor Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
@@ -4601,13 +4902,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(1302, {	-- Bernard Gump <Florist>
 					["coords"] = {
-						-- #if AFTER WRATH
+						-- #if AFTER CATA
+						{ 69.2, 71.8, STORMWIND_CITY },
+						-- #elseif AFTER WRATH
 						{ 69.6, 71.4, STORMWIND_CITY },
 						-- #else
 						{ 64.2, 61.0, STORMWIND_CITY },
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{ "select","itemID",
+							2453,	-- Bruiseweed
+							2449,	-- Earthroot
+							3356,	-- Kingsblood
+							3357,	-- Liferoot
+							785,	-- Mageroyal
+							3355,	-- Wild Steelbloom
+						},
+					},
 					["groups"] = {
 						i(3422),	-- Beautiful Wildflowers
 						i(3420),	-- Black Rose
@@ -4626,12 +4939,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(39684, { ["timeline"] = { ADDED_3_0_2 }}),	-- Hair Trigger
-						i(4400),	-- Heavy Stock
-						i(40533, { ["timeline"] = { ADDED_3_0_2 }}),	-- Walnut Stock
-						i(4399),	-- Wooden Stock
+					["sym"] = {
+						{ "select","itemID",
+							5956,	-- Blacksmith Hammer
+							4400,	-- Heavy Stock
+							4399,	-- Wooden Stock
+							-- #if AFTER CATA
+							39684,	-- Hair Trigger
+							40533,	-- Walnut Stock
+							-- #endif
+						},
 					},
+				}),
+				n(5514, {	-- Brooke Stonebraid <Mining Supplies>
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 59.15, 37.5, STORMWIND_CITY },
+						-- #else
+						{ 51.6, 16.8, STORMWIND_CITY },
+						-- #endif
+					},
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{ "sub", "common_vendor", 4256 }},	-- Golnir Bouldertoe <Mining Supplies>
 				}),
 				n(1319, {	-- Bryan Cross <Shield Merchant>
 					["coords"] = {
@@ -4777,9 +5106,44 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(32379, {	-- Captain O'Neal <Jewelcrafting Quartermaster>
+					["coord"] = { 75.0, 66.7, STORMWIND_CITY },
+					["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = pvp({
+						moh(1, i(28118, {	-- Brilliant Ornate Ruby
+							["timeline"] = { ADDED_2_0_1 },
+						})),
+						moh(1, i(28119, {	-- Smooth Ornate Dawnstone
+							["timeline"] = { ADDED_2_0_1 },
+						})),
+						moh(1, i(28120, {	-- Gleaming Ornate Dawnstone
+							["timeline"] = { ADDED_2_0_1, REMOVED_4_0_1 },
+						})),
+						moh(1, i(28123, {	-- Potent Ornate Topaz
+							["timeline"] = { ADDED_2_0_1 },
+						})),
+						moh(1, i(28362, {	-- Delicate Ornate Ruby
+							["timeline"] = { ADDED_2_0_1 },
+						})),
+						moh(1, i(28363, {	-- Deadly Ornate Topaz
+							["timeline"] = { ADDED_2_0_1 },
+						})),
+					}),
+				}),
 				-- 34081: Captain O'Neal <Jewelcrafting Quartermaster> (Wrath season 4?)
 				-- 34080: Captain O'Neal <Jewelcrafting Quartermaster> (Wrath season 3?)
 				-- 34079: Captain O'Neal <Jewelcrafting Quartermaster> (Wrath season 2?)
+				n(12782, {	-- Captain O'Neal <Weapons Quartermaster>
+					-- #if BEFORE WRATH
+					["description"] = "Found within the Champion's Hall.",
+					-- #endif
+					["timeline"] = { REMOVED_3_0_2 },
+					-- #if BEFORE 3.0.2.8970
+					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CLASSIC, FACTION_HEADER_ALLIANCE, WEAPONS },{ "pop" }},	-- Grand Marshal Weapons
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
+				}),
 				n(32379, {	-- Captain O'Neal <Jewelcrafting Quartermaster>
 					["coord"] = { 75.0, 66.7, STORMWIND_CITY },
 					["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
@@ -4810,35 +5174,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(41570),	-- Design: Radiant Dark Jade [CATA+] / Design: Tense Dark Jade [WRATH] (RECIPE!)
 						i(41571),	-- Design: Turbid Dark Jade (RECIPE!)
 						-- #endif
-						moh(1, i(28118, {	-- Brilliant Ornate Ruby
-							["timeline"] = { ADDED_2_0_1 },
-						})),
-						moh(1, i(28119, {	-- Smooth Ornate Dawnstone
-							["timeline"] = { ADDED_2_0_1 },
-						})),
-						moh(1, i(28120, {	-- Gleaming Ornate Dawnstone
-							["timeline"] = { ADDED_2_0_1, REMOVED_4_0_1 },
-						})),
-						moh(1, i(28123, {	-- Potent Ornate Topaz
-							["timeline"] = { ADDED_2_0_1 },
-						})),
-						moh(1, i(28362, {	-- Delicate Ornate Ruby
-							["timeline"] = { ADDED_2_0_1 },
-						})),
-						moh(1, i(28363, {	-- Deadly Ornate Topaz
-							["timeline"] = { ADDED_2_0_1 },
-						})),
 					}),
-				}),
-				n(12782, {	-- Captain O'Neal <Weapons Quartermaster>
-					-- #if BEFORE WRATH
-					["description"] = "Found within the Champion's Hall.",
-					-- #endif
-					["timeline"] = { REMOVED_3_0_2 },
-					-- #if BEFORE 3.0.2.8970
-					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CLASSIC, FACTION_HEADER_ALLIANCE, WEAPONS },{ "pop" }},	-- Grand Marshal Weapons
-					-- #endif
-					["races"] = ALLIANCE_ONLY,
 				}),
 				n(1291, {	-- Carla Granger <Cloth Armor Merchant>
 					["coords"] = {
@@ -4946,17 +5282,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 				}),
-				-- #if AFTER 7.0.3
-				n(30713, {	-- Catarina Stanford <Inscription Trainer>
-					["coord"] = { 49.8, 74.6, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(140566, {	-- Technique: Songs of the Alliance (RECIPE!)
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-					},
-				}),
-				-- #endif
 				n(5494, {	-- Catherine Leland <Fishing Supplier>
 					["coords"] = {
 						-- #if AFTER WRATH
@@ -4966,21 +5291,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					["sym"] = {{ "sub", "common_vendor", 4222 }},	-- Voloren <Fishing Supplies>
+					["groups"] = appendGroups(SHINY_BAUBLE, {
 						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
 						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
-						i(6256, {	-- Fishing Pole
-							-- #if AFTER 10.0.0
-							["collectible"] = false,
-							-- #endif
-						}),
 						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
-						i(6365, {	-- Strong Fishing Pole
-							-- #if AFTER 10.0.0
-							["collectible"] = false,
-							-- #endif
-						}),
-					},
+					}),
 				}),
 				n(1307, {	-- Charys Yserian <Arcane Trinkets Vendor>
 					["coords"] = {
@@ -5037,6 +5353,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyevent(EVENTS.CHILDRENS_WEEK, i(69895, {	-- Green Balloon Toy (TOY!)
 							["timeline"] = { ADDED_4_1_0 },
 						})),
+						i(48601, {	-- Red Rider Air Rifle Ammo
+							["timeline"] = { ADDED_4_0_3 },
+						}),
 						i(137663, {	-- Soft Foam Sword (TOY!)
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -5064,6 +5383,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 51.4, 18.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_7_3_5 },
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{ "select","itemID",
+							159,	-- Refreshing Spring Water
+							30817,	-- Simple Flour
+							2678,	-- Mild Spices
+						},
+					},
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
@@ -5192,9 +5518,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(20856, {	-- Design: Heavy Golden Necklace of Battle (RECIPE!)
 							["isLimited"] = true,
+							["timeline"] = { ADDED_2_0_1 },
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				n(213077, {	-- Elaine Compton <Supply Officer>
+					["coord"] = { 54.8, 62.0, STORMWIND_CITY },
+					["groups"] = bubbleDownClassicRep(AZEROTH_COMMERCE_AUTHORITY, {
+						{	-- Neutral
+						},
+						{	-- Friendly
+						},
+						{	-- Honored
+							i(211247),	-- Pattern: Phoenix Bindings (RECIPE!)
+						},
+						{	-- Revered
+						},
+						{	-- Exalted
+						},
+					}),
+				}),
+				-- #endif
 				n(5503, {	-- Eldraeith <Herbalism Supplies> [TBC+] / Eldraeith <Herbalism Supplier>
 					["coords"] = {
 						-- #if AFTER WRATH
@@ -5204,8 +5549,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{ "sub", "common_vendor", 4216 }},	-- Chardryn <Herbalism Supplies>
+				}),
+				n(1328, {	-- Elly Langston <Barmaid>
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 76.0, 53.4, STORMWIND_CITY },	-- Pig and Whistle Tavern
+						-- #else
+						{ 73.0, 37.0, STORMWIND_CITY },	-- Pig and Whistle Tavern
+						-- #endif
+					},
+					["description"] = "Elly is walking around in the Tavern.",
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(22250),	-- Herb Pouch
+						i(2594),	-- Flagon of Dwarven Honeymead/Mead
+						i(2593),	-- Flask of Stormwind Tawny
+						i(1179),	-- Ice Cold Milk
+						i(2596),	-- Skin of Dwarven Stout
 					},
 				}),
 				n(5483, {	-- Erika Tate <Cooking Supplies> [TBC+] / Erika Tate <Cooking Supplier>
@@ -5217,6 +5577,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{ "select","itemID",
+							159,	-- Refreshing Spring Water
+							-- #if AFTER TBC
+							30817,	-- Simple Flour
+							-- #endif
+							2678,	-- Mild Spices
+							-- #if BEFORE WRATH
+							2692,	-- Hot Spices
+							3713,	-- Soothing Spices
+							-- #endif
+						},
+					},
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
@@ -5463,7 +5836,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				n(1303, {	-- Felicia Gump <Herbalism Supplier>
 					["coords"] = {
-						-- #if AFTER WRATH
+						-- #if AFTER CATA
+						{ 69.3, 71.4, STORMWIND_CITY },
+						-- #elseif AFTER WRATH
 						{ 64.2, 60.6, STORMWIND_CITY },
 						-- #else
 						{ 64.2, 60.6, STORMWIND_CITY },
@@ -5483,7 +5858,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(179896, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Finn
-					["coord"] = { 61.0, 65.0, STORMWIND_CITY },
+					["coord"] = { 61.6, 65.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(187009),	-- Dazzling Spectacles
@@ -5677,8 +6052,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(50480, {	-- Isabel Jones <Jewelcrafting Design Vendor>
 					["coord"] = { 63.8, 61.3, STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3 },
-					["sym"] = {{ "sub", "common_recipes_vendor", 50482 }},	-- Marith Lazuria <Jewelcrafting Supplies>
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
 				}),
 				n(1325, {	-- Jasper Fel <Shady Dealer>
 					["coords"] = {
@@ -5691,9 +6066,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER MOP
 					["sym"] = {{"select","itemID",
 						4565,	-- Simple Dagger
 					}},
+					-- #endif
 				}),
 				n(1318, {	-- Jessara Cordell <Enchanting Supplies>
 					["coords"] = {
@@ -5704,30 +6081,38 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{ "select","itemID",
+							6217,	-- Copper Rod
+							4470,	-- Simple Wood
+							11291,	-- Star Wood
+							10938,	-- Lesser Magic Essence
+							10940,	-- Strange Dust
+							20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
+							20752,	-- Formula: Minor Mana Oil (RECIPE!)
+							20758,	-- Formula: Minor Wizard Oil (RECIPE!)
+							-- #if BEFORE CATA
+							6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
+							-- #else
+							38682,	-- Enchanting Vellum
+							-- #endif
+						},
+					},
 					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
-						-- #if BEFORE CATA
-						i(6342, {	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-							["isLimited"] = true,
-						}),
-						-- #endif
-						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 						i(67312, {	-- Formula: Magic Lamp (RECIPE!)
 							["timeline"] = { ADDED_4_0_3 },
 							["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
 							["races"] = ALLIANCE_ONLY,
 						}),
-						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 					}),
 				}),
-				-- #if AFTER CATA
 				n(5565, {	-- Jillian Tanner <Leatherworking Supplies>
 					["coord"] = { 71.7, 62.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {}),
+					["sym"] = {{ "select","itemID", 7005 }},	-- Skinning Knife
+					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, SALT, VANILLA_COMMON_LEATHERWORKING_TAILORING_SUPPLIES, {}),
 				}),
-				-- #endif
 				n(49701, {	-- Jon Casper <Sous Chef>
 					["coords"] = {
 						-- #if AFTER 9.2.5
@@ -5786,10 +6171,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 56.3, 17.2, STORMWIND_CITY },
 						-- #endif
 					},
-					-- #if AFTER 4.3.0
-					["sym"] = {{ "sub", "common_recipes_vendor", 55684 }},	-- Jordan Smith <Blacksmithing Trainer & Supplies>
-					-- #endif
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						-- #if AFTER 4.3.0
+						{ "sub", "common_recipes_vendor", 55684 },	-- Jordan Smith <Blacksmithing Trainer & Supplies>
+						-- #endif
+						{ "select","itemID",
+							2880,	-- Weak Flux
+							3466,	-- Strong Flux
+							18567,	-- Elemental Flux
+							3857,	-- Coal
+							5956,	-- Blacksmith Hammer
+						},
+					},
 					["groups"] = {
 						i(12162, {	-- Plans: Hardened Iron Shortsword (RECIPE!)
 							["isLimited"] = true,
@@ -5834,6 +6228,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(2522),	-- Crescent Axe
 						i(2530),	-- Francisca
+					},
+				}),
+				n(1257, {	-- Keldric Boucher <Alchemy Supplies & Reagents>/<Arcane Goods Vendor>
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 62.8, 75.0, STORMWIND_CITY },
+						-- #else
+						{ 55.6, 65.8, STORMWIND_CITY },
+						-- #endif
+					},
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{ "select","itemID",
+						3371,	-- Empty-/Crystal Vial
+						-- #if BEFORE CATA
+						3372,	-- Leaded Vial
+						8925,	-- Crystal Vial
+						18256,	-- Imbued Vial
+						-- #endif
+						},
 					},
 				}),
 				n(340, {	-- Kendor Kabonka <Master of Cooking Recipes>
@@ -5959,9 +6373,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(845),		-- Tanned Leather Pants
 					},
 				}),
-				-- #if AFTER 8.0.1
+				n(52027, {	-- Larisse Pembraux <Justice Heirlooms>
+					["coord"] = { 79.4, 69.7, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_4_0_6, REMOVED_6_0_2 },
+					["sym"] = {
+						{ "select", "npcID", 32509 },	-- Brammold Deepmine <Antiques & Heirlooms>
+						{ "pop" },						-- Pop the Headers
+					},
+				}),
 				n(4730, {	-- Lelanai <Saber Handler>
-					["description"] = "Appears in Stormwind after War of Thorns.",
 					["coord"] = { 55.0, 12.6, STORMWIND_CITY },
 					-- Available to Night Elves without faction requirements.
 					["minReputation"] = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
@@ -5972,6 +6393,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						return t;
 					end]],
 					["races"] = ALLIANCE_ONLY,
+					-- Lelanai can only be found in Darnassus after 10.2.5: Reclamation of Gilneas.
+					["timeline"] = { ADDED_8_0_1, REMOVED_10_2_5 },
 					["groups"] = {
 						i(8632),	-- Spotted Frostsaber (MOUNT!)
 						i(47100),	-- Striped Dawnsaber (MOUNT!)
@@ -5982,14 +6405,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(18902),	-- Swift Stormsaber (MOUNT!)
 					},
 				}),
-				-- #endif
-				-- #if AFTER 5.3.0.16767
+				-- #if AFTER 7.0.3
 				n(2795, {	-- Lenny "Fingers" McCoy
 					["coord"] = { 72.8, 58.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(97921, {	-- Bom'bay's Color-Seein'Sauce (TOY!)
-							["timeline"] = { ADDED_5_3_0 },
+							["timeline"] = { ADDED_7_1_0 },
 						}),
 						i(138382, {	-- Lucky Rat's Tooth
 							["timeline"] = { ADDED_7_0_3 },
@@ -6201,7 +6623,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(8624),	-- Red Sparkler
 					},
 				}),
-				n(52030, {	-- Liliana Emberfrost <Honor Heirlooms>
+				n(52030, pvp({	-- Liliana Emberfrost <Honor Heirlooms>
 					["coord"] = { 74.4, 67.6, STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_6 },
 					["races"] = ALLIANCE_ONLY,
@@ -6211,11 +6633,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						moh(12, i(122338, {	-- Ancient Heirloom Armor Casing
 							["timeline"] = { ADDED_6_1_0 },
-							["sym"] = {{ "fill" }},	-- simply fill this item
 						})),
 						moh(14, i(122339, {	-- Ancient Heirloom Scabbard
 							["timeline"] = { ADDED_6_1_0 },
-							["sym"] = {{ "fill" }},	-- simply fill this item
 						})),
 						moh(10, i(122369, {	-- Battleworn Thrash Blade
 							["timeline"] = { ADDED_6_1_0 },
@@ -6256,11 +6676,106 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						moh(10, i(122367, {	-- The Blessed Hammer of Grace
 							["timeline"] = { ADDED_6_1_0 },
 						})),
-						moh(10, i(122366, {	-- Unpgraded Dwarven Hand Cannon
+						moh(10, i(122366, {	-- Upgraded Dwarven Hand Cannon
 							["timeline"] = { ADDED_6_1_0 },
 						})),
+
+						-- Old Heirlooms
+						i(93886, {	-- Adorned Beastmaster's Mantle
+							["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+						}),
+						i(44102, {	-- Aged Pauldrons of The Five Thunders
+							["timeline"] = { REMOVED_6_1_0 },
+						}),
+						i(93851, {	-- Battle-Forged Truesilver Champion
+							["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+						}),
+						i(93848, {	-- Battle-Hardened Thrash Blade
+							["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+						}),
+						i(44096, {	-- Battleworn Thrash Blade
+							["timeline"] = { REMOVED_6_1_0 },
+						}),
+						i(93899, {	-- Bequeathed Insignia of the Alliance
+							["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+						}),
+						i(93898, {	-- Bequeathed Insignia of the Horde
+							["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+						}),
+						i(93852, {	-- Deadly Scarlet Kris
+							["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+						}),
+						i(93849, {	-- Elder Staff of Jordan
+							["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+						}),
+						i(44103, {	-- Exceptional Stormshroud Shoulders
+							["timeline"] = { REMOVED_6_1_0 },
+						}),
+						i(44107, {	-- Exquisite Sunderseer Mantle
+							["timeline"] = { REMOVED_6_1_0 },
+						}),
+						i(93894, {	-- Immaculate Lightforge Spaulders
+							["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+						}),
+						i(44098, {	-- Inherited Insignia of the Alliance
+							["timeline"] = { REMOVED_6_1_0 },
+						}),
+						i(44097, {	-- Inherited Insignia of the Horde
+							["timeline"] = { REMOVED_6_1_0 },
+						}),
+						i(93900, {	-- Inherited Mark of Tyranny
+							["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+						}),
+						i(44095, {	-- Grand Staff of Jordan
+							["timeline"] = { REMOVED_6_1_0 },
+						}),
+						i(44105, {	-- Lasting Feralheart Spaulders
+							["timeline"] = { REMOVED_6_1_0 },
+						}),
+						i(93861, {	-- Prestigious Sunderseer Mantle
+							["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+						}),
+						i(44100, {	-- Pristine Lightforge Spaulders
+							["timeline"] = { REMOVED_6_1_0 },
+						}),
+						i(44101, {	-- Prized Beastmaster's Mantle
+							["timeline"] = { REMOVED_6_1_0 },
+						}),
+						i(44092, {	-- Reforged Truesilver Champion
+							["timeline"] = { REMOVED_6_1_0 },
+						}),
+						i(93895, {	-- Reinforced Stockade Pauldrons
+							["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+						}),
+						i(44091, {	-- Sharpened Scarlet Kris
+							["timeline"] = { REMOVED_6_1_0 },
+						}),
+						i(93841, {	-- Smoothbore Dwarven Hand Cannon
+							["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+						}),
+						i(44099, {	-- Strengthened Stockade Pauldrons
+							["timeline"] = { REMOVED_6_1_0 },
+						}),
+						i(93867, {	-- Superior Stormshroud Shoulders
+							["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+						}),
+						i(44094, {	-- The Blessed Hammer of Grace
+							["timeline"] = { REMOVED_6_1_0 },
+						}),
+						i(93850, {	-- The Sanctified Hammer of Grace
+							["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+						}),
+						i(44093, {	-- Upgraded Dwarven Hand Cannon
+							["timeline"] = { REMOVED_6_1_0 },
+						}),
+						i(93889, {	-- Venerated Pauldrons of The Five Thunders
+							["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+						}),
+						i(93866, {	-- Wild Feralheart Spaulders
+							["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+						}),
 					},
-				}),
+				})),
 				n(1297, {	-- Lina Stover <Bow & Gun Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
@@ -6344,21 +6859,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Sells gear related to Cataclysm raid tier 12 (Firelands) as well as Baradin Hold.",
 					-- #endif
 				}),
-				n(1313, {	-- Maria Lumere <Alchemy Supplies>
-					["coords"] = {
-						-- #if AFTER WRATH
-						{ 55.6, 85.6, STORMWIND_CITY },
-						-- #else
-						{ 46.6, 78.8, STORMWIND_CITY },
-						-- #endif
-					},
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(9301, {	-- Recipe: Elixir of Shadow Power (RECIPE!)
-							["isLimited"] = true,
-						}),
-					},
-				}),
 				n(1287, {	-- Marda Weller <Weapons Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH
@@ -6410,6 +6910,39 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(1313, {	-- Maria Lumere <Alchemy Supplies>
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 55.6, 85.6, STORMWIND_CITY },
+						-- #else
+						{ 46.6, 78.8, STORMWIND_CITY },
+						-- #endif
+					},
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{ "select","itemID",
+						3371,	-- Empty-/Crystal Vial
+						-- #if BEFORE CATA
+						3372,	-- Leaded Vial
+						8925,	-- Crystal Vial
+						18256,	-- Imbued Vial
+						-- #endif
+						},
+					},
+					["groups"] = sharedData({
+						["isLimited"] = true,
+					}, {
+						i(2453),	-- Bruiseweed
+						i(2449),	-- Earthroot
+						i(3356),	-- Kingsblood
+						i(3357),	-- Liferoot
+						i(785),	-- Mageroyal
+						i(2447),	-- Peacebloom
+						i(765),	-- Silverleaf
+						i(3355),	-- Wild Steelbloom
+						i(9301),	-- Recipe: Elixir of Shadow Power (RECIPE!)
+					}),
+				}),
 				n(12781, {	-- Master Sergeant Biggins <Accessories Quartermaster> [WRATH+] / Master Sergeant Biggins <Officer Accessories Quartermaster>
 					-- #if BEFORE TBC
 					["description"] = "Found within the Champion's Hall.",
@@ -6455,8 +6988,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 74.2, 58.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER MOP
+					["sym"] = {{"select","itemID",
+						4565,	-- Simple Dagger
+					}},
+					-- #endif
 					["groups"] = {
-						i(4565),	-- Simple Dagger
 						i(38579, {	-- Venomous Tome
 							["timeline"] = { ADDED_3_0_2 },
 							["isLimited"] = true,
@@ -6465,9 +7002,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if AFTER 8.0.1
 				n(50305, {	-- Moon Priestess Lasara <Darnassus Quartermaster>
-					["description"] = "Appears in Stormwind after War of Thorns.",
 					["coord"] = { 56.6, 13.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					-- Moon Priestess Lasara can only be found in Darnassus after 10.2.5: Reclamation of Gilneas.
+					["timeline"] = { ADDED_8_0_1, REMOVED_10_2_5 },
 					["groups"] = {
 						i(45579, {	-- Darnassus Tabard
 							["timeline"] = { ADDED_3_1_0 },
@@ -6492,15 +7030,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				-- #if ANYCLASSIC
-				-- Crieve NOTE: I haven't confirmed this on Live, so not gonna pop it in until I can check it.
 				n(12805, {	-- Officer Areyn <Accessories Quartermaster>
-					["coord"] = { 73.8, 53.4, STORMWIND_CITY },
-					["timeline"] = { REMOVED_3_0_2, ADDED_4_0_1, REMOVED_7_0_3 },
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 76.8, 65.8, STORMWIND_CITY },
+						-- #else
+						{ 73.8, 53.4, STORMWIND_CITY },
+						-- #endif
+					},
+					["timeline"] = { ADDED_1_4_0, REMOVED_3_0_2, ADDED_4_0_1, REMOVED_7_0_3 },
 					["groups"] = {
-						i(18664),	-- A Treatise on Military Ranks
+						i(18664, { ["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 } }),	-- A Treatise on Military Ranks
 						i(15196, {	-- Private's Tabard
 							["races"] = ALLIANCE_ONLY,
 						}),
+						-- #if AFTER CATA
+						i(15198),	-- Knight's Colors
+						-- #endif
 						i(18854, {	-- Insignia of the Alliance
 							["classes"] = { WARRIOR },
 						}),
@@ -6525,6 +7071,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(18856, {	-- Insignia of the Alliance
 							["classes"] = { HUNTER },
 						}),
+						-- #if BEFORE CATA
 						i(16342),	-- Sergeant's Cape (58)
 						i(18440),	-- Sergeant's Cape (45)
 						i(18441),	-- Sergeant's Cape (30)
@@ -6561,6 +7108,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(18456, {	-- Sergeant Major's Silk Cuffs (58)
 							["classes"] = { MAGE, PRIEST, WARLOCK },
 						}),
+						-- #endif
+						-- #if AFTER CATA
+						i(18606),	-- Alliance Battle Standard
+						-- #endif
 					},
 				}),
 				-- #endif
@@ -6679,7 +7230,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["timeline"] = { ADDED_6_0_2 },
 				},{
-					["coord"] = { 73.0, 59.3, STORMWIND_CITY },
+					["coord"] = { 73.0, 59.5, STORMWIND_CITY },
 					["groups"] = {
 						i(116789, {	-- Champion's Treadblade (MOUNT!)
 							["cost"] = 1000000000,	-- 100,000g
@@ -6797,6 +7348,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(5976),	-- Guild Tabard
+						i(210469, {	-- Personal Tabard
+							["timeline"] = { ADDED_10_2_7 },
+						}),
 					},
 				}),
 				n(277, {	-- Roberto Pupellyverbos <Merlot Connoisseur>
@@ -6862,9 +7416,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if AFTER 8.0.1
 				n(8665, {	-- Shylenai <Owl Trainer>
-					["description"] = "Appears in Stormwind after War of Thorns.",
 					["coord"] = { 56.0, 3.22, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					-- Shylenai can only be found in Darnassus after 10.2.5: Reclamation of Gilneas.
+					["timeline"] = { ADDED_8_0_1, REMOVED_10_2_5 },
 					["groups"] = {
 						i(8500),	-- Great Horned Owl (PET!)
 						i(8501),	-- Hawk Owl (PET!)
@@ -6882,9 +7437,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER MOP
 					["sym"] = {{"select","itemID",
 						4565,	-- Simple Dagger
 					}},
+					-- #endif
 					["groups"] = {
 						i(21835, {	-- Anesthetic Poison
 							["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
@@ -6995,12 +7552,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.6, 74.6, STORMWIND_CITY },
 					["timeline"] = { ADDED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					["groups"] = appendGroups(INSCRIPTION_SUPPLIES, {
 						i(79740),	-- Plain Wooden Staff
-						i(39489, {	-- Scribe's Satchel
-							["isLimited"] = true,
-						}),
-					},
+						i(1515),	-- Rough Wooden Staff
+					}),
 				}),
 				n(43768, {	-- Tannec Stonebeak <Gryphon Keeper>
 					["coord"] = { 71.4, 72.0, STORMWIND_CITY },
@@ -7020,7 +7575,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 63.1, 61.5, STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
+					["sym"] = {
+						{ "sub", "common_recipes_vendor", 50480 },	-- Isabel Jones <Jewelcrafting Supplies>
+						{ "select","itemID",
+						52188,	-- Jeweler's Setting
+						20815,	-- Jeweler's Toolset/-Kit
+						-- #if BEFORE MOP
+						20824,	-- Simple Grinder
+						-- #endif
+						},
+					},
 				}),
 				n(1350, {	-- Theresa Moulaine <Robe Vendor>
 					["coords"] = {

@@ -493,9 +493,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			e(489, {	-- Chief Ukorz Sandscalp
 				["creatureID"] = 7267,
 				["groups"] = {
-					ach(639, {	-- Zul'Farrak
-						["timeline"] = { ADDED_3_0_2 },
-					}),
+					ach(639),	-- Zul'Farrak
 					ach(5048, {	-- Zul'Farrak Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),

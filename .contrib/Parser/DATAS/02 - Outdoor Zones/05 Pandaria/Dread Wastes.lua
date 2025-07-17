@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(DREAD_WASTES, {
@@ -9,13 +8,9 @@ root(ROOTS.Zones, {
 			["icon"] = 624970,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					ach(7312, {	-- Amber is the Color of My Energy
-						["sym"] = {{ "achievement_criteria" }},
-					}),
-					ach(6540, {	-- Dread Haste Makes Dread Waste
-						["sym"] = {{ "achievement_criteria" }},
-					}),
-					explorationAch(6978),	-- Explore Dread Wastes
+					ach(7312),	-- Amber is the Color of My Energy
+					ach(6540),	-- Dread Haste Makes Dread Waste
+					ach(6978),	-- Explore Dread Wastes
 					ach(6857),	-- Heart of the Mantid Swarm (automated)
 					ach(7316, {	-- Over Their Heads
 						crit(20511, {		-- Garalon
@@ -85,14 +80,7 @@ root(ROOTS.Zones, {
 					ach(7321),	-- Spreading the Warmth
 					ach(7314),	-- Test Drive
 					ach(8023, {		-- Wakener
-						-- Meta Achievement
-						["sym"] = {{"meta_achievement",
-							7312,		-- Amber is the Color of My Energy
-							6545,		-- Klaxxi
-						}},
-						["g"] = {
-							title(218),		-- <Name> the Wakener
-						},
+						title(218),		-- <Name> the Wakener
 					}),
 				}),
 				battlepets({
@@ -183,9 +171,42 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(68462, {	-- Flowing Pandaren Spirit <Grand Master Pet Tamer>
 						["coord"] = { 61.2, 87.6, DREAD_WASTES },
+						["timeline"] = { ADDED_5_1_0 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(32439, {	-- Flowing Pandaren Spirit
+								["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer
+								["timeline"] = { ADDED_5_1_0 },
+								["isDaily"] = true,
+								["groups"] = {
+									i(93147, {	-- Pandaren Spirit Pet Supplies
+										["sym"] = {{"select","itemID",
+											89139,	-- Chain Pet Leash
+											44820,	-- Red Ribbon Pet Leash
+											37460,	-- Rope Pet Leash
+										}},
+										["groups"] = {
+											i(90173),	-- Pandaren Water Spirit (PET!)
+										},
+									})
+								},
+							}),
+						},
 					}),
 					n(66739, {	-- Wastewalker Shu <Grand Master Pet Tamer>
 						["coord"] = { 55.0, 37.6, DREAD_WASTES },
+						["timeline"] = { ADDED_5_1_0 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(31957, {	-- Grand Master Shu
+								["sourceAchievement"] = 6606,	-- Taming Pandaria
+								["timeline"] = { ADDED_5_1_0 },
+								["isDaily"] = true,
+								["groups"] = {
+									i(89125),	-- Sack of Pet Supplies
+								},
+							}),
+						},
 					}),
 				}),
 				n(PROFESSIONS, {
@@ -271,6 +292,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 45.3, 16.4, DREAD_WASTES },
 						["provider"] = { "n", 155582 },	-- Taoshi
+						["timeline"] = { ADDED_8_3_0 },
 						["sourceQuest"] = 56616,	-- Old Faces, New Problems
 						["groups"] = {
 							objective(1, {	-- 0/5 Corrupted Amber Destroyed
@@ -304,6 +326,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 45.3, 16.4, DREAD_WASTES },
 						["provider"] = { "n", 155582 },	-- Taoshi
+						["timeline"] = { ADDED_8_3_0 },
 						["sourceQuests"] = {
 							56577,	-- Crippling the Hive
 							56575,	-- Once More Into Kor'vess
@@ -437,6 +460,7 @@ root(ROOTS.Zones, {
 					q(31682, {	-- By the Sea, Nevermore
 						["coord"] = { 48.1, 49.6, DREAD_WASTES },
 						["provider"] = { "n", 65975 },	-- Zer'ik
+						["timeline"] = { ADDED_5_0_4, REMOVED_10_2_7 },
 						["altQuests"] = { 31089 },	-- By the Sea, Nevermore
 						["description"] = "This version is only available if Kor'ik has been killed & you did not complete the other version yet. If you did the alt version of this quest, there is no chance you will ever complete this quest on your current character.",
 						["DisablePartySync"] = true,
@@ -449,7 +473,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 48.1, 49.6, DREAD_WASTES },
 						["provider"] = { "n", 65365 },	-- Kor'ik
 						["altQuests"] = { 31682 },	-- By the Sea, Nevermore
+						-- #if BEFORE 10.2.7
 						["description"] = "This version is available if Kor'ik has not been killed yet.",
+						-- #endif
 						["sourceQuests"] = {
 							31090,	-- Better With Age
 							31088,	-- Crime and Punishment
@@ -504,6 +530,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 44.8, 19.1, DREAD_WASTES },
 						["provider"] = { "n", 155562 },	-- Shado-Pan Master (Taoshi follower)
+						["timeline"] = { ADDED_8_3_0 },
 						["description"] = "Must be on or have completed |cFFFFD700Once More Into Kor'vess|r to get this quest.",
 						["sourceQuest"] = 56574,	-- Reflections in Amber
 					}),
@@ -797,6 +824,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 53.2, 39.5, DREAD_WASTES },
 						["provider"] = { "n", 155707 },	-- Taoshi
+						["timeline"] = { ADDED_8_3_0 },
 						["sourceQuest"] = 56617,	-- A Unified Swarm
 					}),
 					heroscall(q(49561, {	-- Hero's Call: Dread Wastes!
@@ -989,6 +1017,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 45.3, 16.4, DREAD_WASTES },
 						["provider"] = { "n", 155582 },	-- Taoshi
+						["timeline"] = { ADDED_8_3_0 },
 						["sourceQuests"] = {
 							56580,	-- Amber Secrets
 							56578,	-- Rotten at the Roots
@@ -1148,6 +1177,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 120,
 						["coord"] = { 43.1, 13.0, DREAD_WASTES },	-- can really be picked up anywhere
 						["provider"] = { "n", 155562 },	-- Shadow-Pan Master (Taoshi follower)
+						["timeline"] = { ADDED_8_3_0 },
 						["sourceQuests"] = {
 							56577,	-- Crippling the Hive
 							56575,	-- Once More Into Kor'vess
@@ -1675,14 +1705,90 @@ root(ROOTS.Zones, {
 					o(213411, {	-- Amber
 						["coord"] = { 52.5, 10.1, DREAD_WASTES },
 					}),
+					o(213972, {	-- Blade of the Poisoned Mind
+						["coord"] = { 28.9, 41.9, DREAD_WASTES },
+						["questID"] = 31438,
+						["g"] = {
+							i(86527),	-- Blade of the Poisoned Mind
+						},
+					}),
+					o(213967, {	-- Blade of the Prime
+						["coords"] = {
+							{ 66.3, 66.5, DREAD_WASTES },	-- Blade
+							{ 66.7, 63.7, DREAD_WASTES },	-- Cave
+						},
+						["questID"] = 31433,
+						["g"] = {
+							i(86522),	-- Blade of the Prime
+						},
+					}),
+					o(213970, {	-- Bloodsoaked Chitin Fragment
+						["coord"] = { 26.0, 50.3, DREAD_WASTES },
+						["questID"] = 31436,
+						["g"] = {
+							i(86525),	-- Blood Soaked Chiten Fragment
+						},
+					}),
 					o(213409, {	-- Cycle of the Mantid
 						["coord"] = { 48.5, 32.8, DREAD_WASTES },
+					}),
+					o(213969, {	-- Dissector's Staff of Mutation
+						["coord"] = { 30.2, 90.8, DREAD_WASTES },
+						["questID"] = 31435,
+						["g"] = {
+							i(86524),	-- Dissector's Staff of Mutation
+						},
+					}),
+					n(65552, {	-- Glinting Rapana Whelk
+						["coord"] = { 42.2, 63.8, DREAD_WASTES },
+						["questID"] = 31432,
+						["groups"] = {
+							i(86529),	-- Manipulator's Talisman
+						},
+					}),
+					o(213966, {	-- Lucid Amulet
+						["coord"] = { 33.0, 30.1, DREAD_WASTES },
+						["questID"] = 31431,
+						["g"] = {
+							i(86521),	-- Lucid Amulet of the Agile Mind
+						},
+					}),
+					o(213964, {	-- Malik's Stalwart Spear
+						["coord"] = { 48.8, 30.0, DREAD_WASTES },
+						["questID"] = 31430,
+						["g"] = {
+							i(86520),	-- Malik's Stalwart Spear
+						},
 					}),
 					o(213410, {	-- Mantid Society
 						["coord"] = { 59.9, 55.0, DREAD_WASTES },
 					}),
+					o(213968, {	-- Swarming Cleaver of Ka'roz
+						["coord"] = { 56.7, 77.7, DREAD_WASTES },
+						["questID"] = 31434,
+						["g"] = {
+							i(86523),	-- Swarming Cleaver of Ka'roz
+						},
+					}),
+					o(213971, {	-- Swarmkeeper's Medallion
+						["coord"] = { 54.3, 56.5, DREAD_WASTES },
+						["questID"] = 31437,
+						["g"] = {
+							i(86526),	-- Swarmkeeper's Medallion
+						},
+					}),
+					o(213329, {	-- The Deserters
+						["coord"] = { 67.4, 60.8, DREAD_WASTES },
+					}),
 					o(213412, {	-- The Empress
 						["coord"] = { 29.1, 62.1, DREAD_WASTES },
+					}),
+					o(213962, {	-- Wind-Reaver's Dagger of Quick Strikes
+						["coord"] = { 71.8, 36.1, DREAD_WASTES },
+						["questID"] = 31429,
+						["g"] = {
+							i(86519),	-- Wind-Reaver's Dagger of Quick Strikes
+						},
 					}),
 				}),
 				n(VENDORS, {

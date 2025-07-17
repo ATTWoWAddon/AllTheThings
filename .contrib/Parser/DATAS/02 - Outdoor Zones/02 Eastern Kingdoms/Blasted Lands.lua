@@ -12,7 +12,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(ACHIEVEMENTS, {
 				ach(4909, {	-- Blasted Lands Quests
 					["timeline"] = { ADDED_4_0_3 },
-					-- #if ANYCLASSIC
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
+					-- #else
 					["sourceQuests"] = {
 						26171,	-- You Are Rakh'likh, Demon (alliance)
 						25701,	-- You Are Rakh'likh, Demon (horde)
@@ -23,7 +25,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				explorationAch(766),	-- Explore Blasted Lands
+				ach(766),	-- Explore Blasted Lands
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",
@@ -99,13 +101,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
-			-- #if AFTER CATA
-			n(PROFESSIONS, {
-				prof(FISHING, {
-					o(180751),	-- Floating Wreckage
-				}),
-			}),
-			-- #endif
 			n(QUESTS, {
 				q(26172, {	-- A Bloodmage's Gotta Eat Too (A)
 					["qg"] = 42298,	-- Kasim Sharim
@@ -262,8 +257,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(28865, {	-- Call of the Warmatron
-					["qg"] = 50587,	-- Okril'on Mage
-					["coord"] = { 53.2, 33.4, SILITHUS },
+					["qg"] = 50587,	-- Okril'lon Mage
+					["coord"] = { 53.3, 33.5, SILITHUS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -635,7 +630,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(28867, {	-- Nethergarde Needs You!
 					["qg"] = 50588,	-- Nethergarde Mage
-					["coord"] = { 53.4, 33.4, SILITHUS },
+					["coord"] = { 53.6, 33.3, SILITHUS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1871,7 +1866,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 					},
 				}),
 			}),

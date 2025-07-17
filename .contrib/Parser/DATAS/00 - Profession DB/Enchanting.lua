@@ -177,7 +177,9 @@ i(11204, 13846);	-- Greater Versatility / CLASSIC: Greater Spirit [Bracers]
 i(19447, 23802);	-- Healing Power [Bracers]
 i(20730, 25079);	-- Healing Power [Golves]
 i(18260, 22750);	-- Healing Power [Weapon]
+-- #IF BEFORE 4.3
 i(11151, 13617);	-- Herbalism [REMOVED:4.3.0, See new version]
+-- #ENDIF
 i(16223, 20029);	-- Icy Chill
 i(11206, 13882);	-- Lesser Agility [Cloak] [REMOVED:4.0.3, See new version]
 i(11164, 13653);	-- Lesser Beastslayer
@@ -1399,3 +1401,20 @@ i(0, 445355);		-- Scepter of Radiant Magics
 i(0, 445466);		-- Shatter Essence
 --- NYI ---
 i(0, 455488);		-- Glimmering Haste
+
+------------------
+-- PATCH 11.1.5 --
+------------------
+--- NYI ---
+i(0, 1227288);		-- Greater Rune of Gushing Wound
+i(0, 1227206);		-- Greater Rune of Infinite Stars
+i(0, 1225873);		-- Greater Rune of the Echoing Void
+i(0, 1227294);		-- Greater Rune of the Twisted Appendage
+i(0, 1227311);		-- Greater Rune of the Void Ritual
+i(0, 1225074);		-- Lesser Rune of Twilight Devastation
+i(238683, 0);		-- Formula: Enchant Weapon - Echoing Void
+i(239087, 0);		-- Formula: Enchant Weapon - Gushing Wound
+i(239081, 0);		-- Formula: Enchant Weapon - Infinite Stars
+i(238406, 0);		-- Formula: Enchant Weapon - Twilight Devastation
+i(239091, 0);		-- Formula: Enchant Weapon - Twisted Appendage
+i(239096, 0);		-- Formula: Enchant Weapon - Void Ritual

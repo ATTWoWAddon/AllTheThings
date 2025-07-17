@@ -14,16 +14,13 @@ root(ROOTS.Zones, {
 			},
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					explorationAch(6975),	-- Explore Krasarang Wilds
+					ach(6975),	-- Explore Krasarang Wilds
 					ach(6535, {	-- Mighty Roamin' Krasaranger (Alliance)
 						["races"] = ALLIANCE_ONLY,
-						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(6536, {	-- Mighty Roamin' Krasaranger (Horde)
 						["races"] = HORDE_ONLY,
-						["sym"] = {{ "achievement_criteria" }},
 					}),
-					ach(7518),	-- Wanderers, Dreamers, and You
 				}),
 				battlepets({
 					["sym"] = {{"select","speciesID",
@@ -39,9 +36,6 @@ root(ROOTS.Zones, {
 						pet(717),	-- Savory Beetle (PET!)
 						pet(712),	-- Sifang Otter Pup (PET!)
 						pet(723),	-- Spiny Terrapin (PET!)
-						pet(1013, {	-- Wanderer's Festival Hatchling (PET!)
-							["description"] = "This wild pet can be found on Turtle Beach in Krasarang Wilds. It only spawns during the Wanderer's Festival. The festival is held only on Sunday night from 9 PM to 11 PM (PST(US)/CEST(EU)/AEST(OCE). During the festival, floating lanterns appear on the surface of the water and Pandaren NPCs wander onto the beach to set up bonfires and shoot off fireworks. Shortly after, the Wanderer's Festival Hatchlings appear.",
-						}),
 					},
 				}),
 				explorationHeader({
@@ -1287,6 +1281,7 @@ root(ROOTS.Zones, {
 									["provider"] = { "n", 68538 },	-- The Monkey King
 									["coord"] = { 93.8, 27.5, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
+									["g"] = { i(92561) },	-- Mallet Handle (QI!)
 								}),
 								q(32355, {	-- The Harmonic Mallet
 									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, REVERED+14540 },	-- possibly 14530
@@ -1301,6 +1296,7 @@ root(ROOTS.Zones, {
 									["provider"] = { "n", 68538 },	-- The Monkey King
 									["coord"] = { 93.8, 27.5, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
+									["g"] = { i(92562) },	-- Harmonic Ointment (QI!)
 								}),
 								q(32337, {	-- The Head
 									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, REVERED+18500 },	-- maybe 18490
@@ -1308,6 +1304,12 @@ root(ROOTS.Zones, {
 									["provider"] = { "n", 68538 },	-- The Monkey King
 									["coord"] = { 93.8, 27.5, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
+									["g"] = {
+										o(216421, {	-- Mallet Head
+											["coord"] = { 30.7, 92.3, VALE_OF_ETERNAL_BLOSSOMS },
+											["g"] = { i(92560) },	-- Mallet Head (QI!)
+										}),
+									},
 								}),
 								q(32331, {	-- The Kirin Tor
 									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, HONORED+2850 },
@@ -1858,6 +1860,18 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66733, {	-- Mo'ruk <Grand Master Pet Tamer>
 						["coord"] = { 65.0, 42.7, KRASARANG_WILDS },
+						["timeline"] = { ADDED_5_1_0 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(31954, {	-- Grand Master Mo'ruk
+								["sourceAchievement"] = 6606,	-- Taming Pandaria
+								["timeline"] = { ADDED_5_1_0 },
+								["isDaily"] = true,
+								["groups"] = {
+									i(89125),	-- Sack of Pet Supplies
+								},
+							}),
+						},
 					}),
 				}),
 				n(QUESTS, {
@@ -2990,12 +3004,96 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(TREASURES, {
-					o(214403, {	-- Stack of Papers
-						["questID"] = 31863,
-						["coord"] = { 52.16, 73.42, KRASARANG_WILDS },
-						["g"] = {
-							i(87798),	-- Stack of Papers
+					o(214439, {	-- Barrel of Banana Infused Rum
+						["questID"] = 31411,	-- Barrel of Banana Infused Rum Quest Tracker
+						["coords"] = {
+							-- coords vary due to zone phasing
+							{ 52.3, 88.7, KRASARANG_WILDS },
+							{ 54.0, 88.0, KRASARANG_WILDS },
 						},
+						["g"] = {
+							i(87266),	-- Recipe: Banana-Infused Rum (RECIPE!)
+						},
+					}),
+					o(213651, {	-- Equipment Locker
+						["coord"] = { 43.7, 92.3, KRASARANG_WILDS },
+						["icon"] = 985959,
+						["questID"] = 31410,
+						["description"] = "On the bottom level of the ship. You will have to go down two sets of stairs.\nThis chest may follow the personal loot rule and be based on your current spec, NOT your Loot Spec.",
+						["g"] = {
+							i(86122, {	-- Plankwalking Greaves
+								["description"] = "Recommended to be in a Strength DPS Spec to guarantee this item.",
+							}),
+							i(86115, {	-- Swashbuckling Boots
+								["description"] = "Recommended to be in a Leather Agility Spec (Rogue/Feral/Guardian/Brewmaster/Windwalker) to guarantee this item.",
+							}),
+							i(86117, {	-- Seafarer's Treads of Precision
+								["description"] = "Recommended to be in a Cloth DPS Spec (Mage/Warlock) to guarantee this item.",
+							}),
+							i(86116, {	-- Agile Seafarer's Jackboots
+								["description"] = "Recommended to be in a Mail Agility Spec (Hunter/Enhancement) to guarantee this item.",
+							}),
+							i(86123, {	-- Seafarer's Sturdy Boots
+								["description"] = "Recommended to be in a Strength Tank Spec to guarantee this item.",
+							}),
+							i(86118, {	-- Seafaring Advisor's Slippers
+								["description"] = "Recommended to be a Priest (ingame class) to guarantee this item.",
+							}),
+							i(86119, {	-- Seafarer's Boots of Meditation
+								["description"] = "Recommended to be in a Leather Intellect Spec (Mistweaver/Balance/Restoration) to guarantee this item.",
+							}),
+							i(86120, {	-- Seafaring Sabatons of Meditation
+								["description"] = "Recommended to be in a Mail Intellect Spec (Elemental/Restoration) to guarantee this item.",
+							}),
+							i(86121, {	-- Radiant Seafarer's Boots
+								["description"] = "Recommended to be a Paladin in Holy Spec to guarantee this item.",
+							}),
+						},
+					}),
+					o(211993, {	-- Hozen Maturity
+						["coord"] = { 52.4, 87.6, KRASARANG_WILDS },
+					}),
+					o(215782, {	-- Origins
+						["coord"] = { 30.6, 38.5, KRASARANG_WILDS },
+					}),
+					o(213653, {	-- Pandaren Fishing Spear
+						["coord"] = { 50.8, 49.3, KRASARANG_WILDS },
+						["questID"] = 31409,
+						["g"] = {
+							i(86124),	-- Pandaren Fishing Spear
+						},
+					}),
+					o(213407, {	-- Quan Tou Kuo the Two Fisted
+						["coord"] = { 81.4, 11.4, KRASARANG_WILDS },
+					}),
+					o(213750, {	-- Saurok Stone Tablet
+						["questID"] = 31408,
+						["coord"] = { 71.0, 9.0, KRASARANG_WILDS },
+						["description"] = "Located at the back of the cave, to the right of the junk pile.",
+						["g"] = {
+							i(86220),	-- Saurok Stone Tablet
+						},
+					}),
+					o(214403, {	-- Stack of Papers
+						["provider"] = { "i", 87798 },	-- Stack of Papers
+						["coord"] = { 52.16, 73.42, KRASARANG_WILDS },
+						["questID"] = 31863,
+					}),
+					o(213422, {	-- The Emperor's Burden - Part 4
+						["coord"] = { 40.4, 56.6, KRASARANG_WILDS },
+					}),
+					o(213330, {	-- The Last Stand
+						["coord"] = { 33.3, 25.0, KRASARANG_WILDS },
+					}),
+					o(213332, {	-- The Lost Dynasty
+						["coords"] = {
+							-- not sure correctness of these based on phasing maybe?
+							{ 50.90, 31.67, KRASARANG_WILDS },
+							{ 52.96, 27.42, KRASARANG_WILDS },
+						},
+					}),
+					o(215765, {	-- Waiting for the Turtle
+						["coord"] = { 72.2, 31.1, KRASARANG_WILDS },
 					}),
 				}),
 			},
@@ -3040,7 +3138,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["time
 			}),
 			n(QUESTS, {
 				q(30087),	-- FLAG - Kung Fu Intro — triggers either when flying close to the magical barrier or after accepting The "Arcanic Oubliette" (questID 30274)
-				q(55163),	-- Throw a lantern into the water during the Wanderer's Festival
 				q(32477, { ["timeline"] = { ADDED_5_1_0 } }),	-- Tracking Event: Player is Back in Time - going back and forth in time via Taradormi
 			}),
 		}),

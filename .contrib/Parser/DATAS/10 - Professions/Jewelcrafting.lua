@@ -63,95 +63,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 			-- #ENDIF
 		}),
-		ach(18909, {	-- Fantastic Figurines
-			crit(61827, {	-- Figurine - Jade Owl
-				["provider"] = { "i", 21748 },	-- Figurine - Jade Owl
-			}),
-			crit(61828, {	-- Figurine - Golden Hare
-				["provider"] = { "i", 21756 },	-- Figurine - Golden Hare
-			}),
-			crit(61829, {	-- Figurine - Black Pearl Panther
-				["provider"] = { "i", 21758 },	-- Figurine - Black Pearl Panther
-			}),
-			crit(61830, {	-- Figurine - Truesilver Crab
-				["provider"] = { "i", 21760 },	-- Figurine - Truesilver Crab
-			}),
-			crit(61831, {	-- Figurine - Truesilver Boar
-				["provider"] = { "i", 21763 },	-- Figurine - Truesilver Boar
-			}),
-			crit(61832, {	-- Figurine - Ruby Serpent
-				["provider"] = { "i", 21769 },	-- Figurine - Ruby Serpent
-			}),
-			crit(61833, {	-- Figurine - Emerald Owl
-				["provider"] = { "i", 21777 },	-- Figurine - Emerald Owl
-			}),
-			crit(61834, {	-- Figurine - Black Diamond Crab
-				["provider"] = { "i", 21784 },	-- Figurine - Black Diamond Crab
-			}),
-			crit(61836, {	-- Figurine - Felsteel Boar
-				["provider"] = { "i", 24124 },	-- Figurine - Felsteel Boar
-			}),
-			crit(61837, {	-- Figurine - Dawnstone Crab
-				["provider"] = { "i", 24125 },	-- Figurine - Dawnstone Crab
-			}),
-			crit(61835, {	-- Figurine - Dark Iron Scorpid
-				["provider"] = { "i", 21789 },	-- Figurine - Dark Iron Scorpid
-			}),
-			crit(61838, {	-- Figurine - Living Ruby Serpent
-				["provider"] = { "i", 24126 },	-- Figurine - Living Ruby Serpent
-			}),
-			crit(61839, {	-- Figurine - Talasite Owl
-				["provider"] = { "i", 24127 },	-- Figurine - Talasite Owl
-			}),
-			crit(61840, {	-- Figurine - Nightseye Panther
-				["provider"] = { "i", 24128 }	-- Figurine - Nightseye Panther
-			}),
-			crit(61841, {	-- Figurine - Empyrean Tortoise
-				["provider"] = { "i", 35693 },	-- Figurine - Empyrean Tortoise
-			}),
-			crit(61842, {	-- Figurine - Khorium Boar
-				["provider"] = { "i", 35694 },	-- Figurine - Khorium Boar
-			}),
-			crit(61843, {	-- Figurine - Crimson Serpent
-				["provider"] = { "i", 35700 },	-- Figurine - Crimson Serpent
-			}),
-			crit(61844, {	-- Figurine - Shadowsong Panther
-				["provider"] = { "i", 35702 },	-- Figurine - Shadowsong Panther
-			}),
-			crit(61845, {	-- Figurine - Seaspray Albatross
-				["provider"] = { "i", 35703 },	-- Figurine - Seaspray Albatross
-			}),
-			crit(61846, {	-- Figurine - Ruby Hare
-				["provider"] = { "i", 42341 },	-- Figurine - Ruby Hare
-			}),
-			crit(61847, {	-- Figurine - Twilight Serpent
-				["provider"] = { "i", 42395 },	-- Figurine - Twilight Serpent
-			}),
-			crit(61848, {	-- Figurine - Sapphire Owl
-				["provider"] = { "i", 42413 },	-- Figurine - Sapphire Owl
-			}),
-			crit(61849, {	-- Figurine - Emerald Boar
-				["provider"] = { "i", 42418 },	-- Figurine - Emerald Boar
-			}),
-			crit(61850, {	-- Figurine - Monarch Crab
-				["provider"] = { "i", 44063 },	-- Figurine - Monarch Crab
-			}),
-			crit(61851, {	-- Figurine - King of Boars
-				["_quests"] = { 28778 },	-- Broken Boar Figurine
-			}),
-			crit(61852, {	-- Figurine - Demon Panther
-				["_quests"] = { 25047 },	-- Broken Panther Figurine
-			}),
-			crit(61853, {	-- Figurine - Earthen Guardian
-				["_quests"] = { 28776 },	-- Broken Earthen Figurine
-			}),
-			crit(61854, {	-- Figurine - Jeweled Serpent
-				["_quests"] = { 28775 },	-- Broken Serpent Figurine
-			}),
-			crit(61855, {	-- Figurine - Dream Owl
-				["_quests"] = { 28777 },	-- Broken Owl Figurine
-			}),
-		}),
+		ach(18909),	-- Fantastic Figurines (automated)
 		ach(18893),	-- Plentiful Prospects
 		ach(18727),	-- Rave Leader
 	})),
@@ -977,34 +889,6 @@ local function bloodied(t)
 	return t;
 end
 
--- Bloodthirsty Crafted Gear was added with Firelands and then removed from the game after Dragon Soul was released.
--- #if ANYCLASSIC
-local BLOODTHIRSTY_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_HOUR_OF_TWILIGHT .. [[) then
-		t.u = ]] .. REMOVED_FROM_GAME .. [[;
-		t.rwp = nil;
-	else
-		t.u = ]] .. CATA_PHASE_RAGE_OF_THE_FIRELANDS .. [[;
-		t.rwp = 40300;
-	end
-end]];
--- #endif
-local function bloodthirsty(t)
-	-- #if CATA
-	t.timeline = { ADDED_4_2_0, REMOVED_5_0_4 };
-		-- #if ANYCLASSIC
-		t.OnUpdate = BLOODTHIRSTY_ONUPDATE;
-		-- #endif
-	-- #else
-	t.timeline = { ADDED_4_2_0, REMOVED_4_3_0 };
-	-- #endif
-	return applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, t);
-end
-
-local function moltenfront(t)
-	t.timeline = { ADDED_4_2_0 };
-	return applyclassicphase(CATA_PHASE_MOLTEN_FRONT, t);
-end
 local function firelands(t)
 	t.timeline = { ADDED_4_2_0 };
 	return applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, t);
@@ -6359,7 +6243,7 @@ itemrecipe("Design: Stalwart Monarch Topaz", 41779, 53992, 53992, REMOVED_WITH_C
 
 -- #endif
 
--- #if AFTER SHADOWLANDS
+-- #if AFTER SL
 
 -- #endif
 

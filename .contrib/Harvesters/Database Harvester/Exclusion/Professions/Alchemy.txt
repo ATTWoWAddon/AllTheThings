@@ -1,10 +1,3 @@
-426607@@@Elixir of Coalesced Regret [Classic]
-435969@@@Insulating Gniodine [Classic]
-439960@@@Lesser Arcane Elixir [Classic]
-435971@@@Mildly Irradiated Rejuvenation Potion [Classic]
-446226@@@Flask of Everlasting Nightmares [Classic]
-446851@@@Flask of Nightmarish Mojo [Classic]
-448085@@@Flask of Restless Dreams [Classic]
 11454@@@Inlaid Mithril Cylinder
 110955@@@Release Spirit
 251824@@@9.0 Blacksmithing - Modified Crafting Reagent 07

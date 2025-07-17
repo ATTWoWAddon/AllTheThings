@@ -488,7 +488,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(52879, {	-- Stiff Policy
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					i(162599),	-- Treated Shipwood (QI!)
+					o_repeated({	-- Treated Shipwood
+						o(294017),	-- Treated Shipwood
+						o(294018),	-- Treated Shipwood
+						o(294019),	-- Treated Shipwood
+						o(294022),	-- Treated Shipwood
+						--
+						i(162599),	-- Treated Shipwood (QI!)
+					}),
 				},
 			}),
 			q(53042, {	-- Stormcaller

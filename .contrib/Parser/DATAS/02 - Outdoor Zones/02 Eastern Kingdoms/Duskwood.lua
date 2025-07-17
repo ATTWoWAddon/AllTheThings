@@ -7,11 +7,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["icon"] = 236757,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(778),	-- Explore Duskwood
+				ach(778),	-- Explore Duskwood
 				ach(4907, {	-- Duskwood Quests
-					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+					["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
-					-- #if ANYCLASSIC
+					-- #if BEFORE 5.0.4
 					["sourceQuests"] = {
 						26674,	-- Mistmantle's Revenge
 						26754,	-- Morbent's Bane
@@ -25,20 +25,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				ach(12430, {	-- Duskwood Quests
+					["_doautomation"] = true,
 					["timeline"] = { ADDED_7_3_5 },
 					["races"] = ALLIANCE_ONLY,
-					-- #if ANYCLASSIC
-					["sourceQuests"] = {
-						26674,	-- Mistmantle's Revenge
-						26754,	-- Morbent's Bane
-						26727,	-- The Embalmer's Revenge
-						26797,	-- A Daughter's Love
-						26686,	-- Bones That Walk
-						26623,	-- Dusky Crab Cakes
-						26620,	-- Seasoned Wolf Kabobs
-						26691,	-- Worgen in the Woods
-					},
-					-- #endif
 				}),
 			}),
 			battlepets({
@@ -98,8 +87,40 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(65655, {	-- Eric Davidson <Master Pet Tamer>
+					["coord"] = { 19.8, 44.8, DUSKWOOD },
+					["description"] = "This pet tamer is Alliance only.\n\nEric's pets are level 7 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Beast - see above.",
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
+					["petBattleLvl"] = 7,
+					["groups"] = {
+						q(31850, {	-- Eric Davidson
+							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
+				}),
+				q(31729, {	-- Steven Lisbane
+					["qg"] = 65655,	-- Eric Davidson
+					["sourceQuest"] = 31726,	-- Eric Davidson
+					["coord"] = { 19.8, 44.8, DUSKWOOD },
+					["timeline"] = { ADDED_5_0_4 },
+					["maps"] = { NORTHERN_STRANGLETHORN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Defeat Steven Lisbane
+							["provider"] = { "n", 63194 },	-- Steven Lisbane
+							["coord"] = { 46.0, 40.4, NORTHERN_STRANGLETHORN },
+						}),
+						i(89125),	-- Sack of Pet Supplies
+					},
+				}),
+			}),
 			-- #if SEASON_OF_DISCOVERY
-			spell(921, {	-- Pickpocketing
+			header(HEADERS.Spell, 921, {	-- Pickpocketing
 				["classes"] = { ROGUE },
 				["groups"] = {
 					applyclassicphase(SOD_PHASE_ONE, i(210250, {	-- Engraved Gold Ring

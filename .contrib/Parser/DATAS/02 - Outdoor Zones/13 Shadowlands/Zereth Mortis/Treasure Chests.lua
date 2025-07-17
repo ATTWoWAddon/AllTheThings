@@ -604,12 +604,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					185265,	-- Pulp-Covered Relic
 				},
 				["coords"] = {
-					{ 42, 34.2, ZERETH_MORTIS },
-					{ 53.4, 25.8, ZERETH_MORTIS },
-					{ 52.8, 45.8, ZERETH_MORTIS },
+					{ 42.0, 34.2, ZERETH_MORTIS },
+					{ 42.0, 34.2, ZERETH_MORTIS },
 					{ 50.4, 41.2, ZERETH_MORTIS },
+					{ 52.8, 45.8, ZERETH_MORTIS },
+					{ 53.4, 25.8, ZERETH_MORTIS },
 					{ 64.4, 63.4, ZERETH_MORTIS },
-					{ 42, 34.2, ZERETH_MORTIS },
 				},
 				["questID"] = 65501,
 				["g"] = {
@@ -619,13 +619,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			o(375404, {	-- Sandworn Chest
 				["description"] = "Key fragements drops in the area from mobs Sandworn Chest Key Fragment(190198)",
 				["coords"] = {
-					{ 64.8, 33.7, ZERETH_MORTIS },
-					{ 63.2, 26.0, ZERETH_MORTIS },
-					{ 60.9, 37.9, ZERETH_MORTIS },
 					{ 60.0, 25.8, ZERETH_MORTIS },
-					{ 63.2, 26.0, ZERETH_MORTIS },
 					{ 60.9, 37.9, ZERETH_MORTIS },
 					{ 61.4, 17.6, ZERETH_MORTIS },
+					{ 63.2, 26.0, ZERETH_MORTIS },
+					{ 64.8, 33.7, ZERETH_MORTIS },
+					{ 66.0, 26.9, ZERETH_MORTIS },
 				},
 				["questID"] = 65611,
 				["cost"] = { { "i", 190197, 1 } },	-- Sandworn Chest Key

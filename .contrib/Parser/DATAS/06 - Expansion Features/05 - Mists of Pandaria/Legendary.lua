@@ -6,10 +6,11 @@ LEGENDARY_THE_BLACK_PRINCE = createHeader({
 	icon = 656543,
 	text = {
 		en = "Legendary: The Black Prince",
+		cn = "传说：黑王子",
 		tw = "傳奇：黑龍王子",
 	},
 });
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 } }, {
 	n(LEGENDARY_THE_BLACK_PRINCE, {
 		["isRaid"] = true,
 		["g"] = {
@@ -62,6 +63,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					471, 472, 473,	-- Mogu'shan Vaults
 					474, 475,		-- Heart of Fear
 					456,			-- Terrace of Endless Spring
+				},
+				["groups"] = {
+					objective(1, {	-- 0/10 Sigil of Power
+						["provider"] = { "i", 87208 },	-- Sigil of Power
+					}),
+					objective(2, {	-- 0/10 Sigil of Wisdom
+						["provider"] = { "i", 87209 },	-- Sigil of Wisdom
+					}),
 				},
 			}),
 			q(31481, {	-- Fear Itself

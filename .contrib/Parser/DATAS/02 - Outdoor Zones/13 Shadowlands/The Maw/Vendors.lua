@@ -126,24 +126,3 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		}),
 	}),
 })));
-
--- automated to the items which grant them
--- root(ROOTS.HiddenQuestTriggers, {
--- 	m(SHADOWLANDS, {
--- 		m(THE_MAW, {
--- 			q(61600, name(HEADERS.Spell, 341097)),	-- Animaflow Stabilizer (spellID 341097)
--- 			q(63217, name(HEADERS.Spell, 347241)),	-- Animated Levitating Chain (spellID 347241)
--- 			q(63193, name(HEADERS.Spell, 347108)),	-- Bangle of Seniority (spellID 347108)
--- 			q(63523, name(HEADERS.Spell, 349397)),	-- Broker Traversal Enhancer (spellID 349397)
--- 			q(63177, name(HEADERS.Spell, 347080)),	-- Encased Riftwalker Essence (spellID 347080)
--- 			q(63183, name(HEADERS.Spell, 347107)),	-- Extradimensional Pockets (spellID 347107)
--- 			q(63201, name(HEADERS.Spell, 347109)),	-- Loupe of Unusual Charm (spellID 347109)
--- 			q(61144, name(HEADERS.Spell, 342815)),	-- Possibility Matrix (spellID 342815)
--- 			q(63200, name(HEADERS.Spell, 347110)),	-- Rank Insignia: Acquisitionist (spellID 347110)
--- 			q(63204, name(HEADERS.Spell, 347113)),	-- Ritual Prism of Fortune (spellID 347113)
--- 			q(63092, name(HEADERS.Spell, 347020)),	-- Sigil of the Unseen (spellID 347020)
--- 			q(63091, name(HEADERS.Spell, 346917)),	-- Soul-Stabilizing Talisman (spellID 346917)
--- 			q(63202, name(HEADERS.Spell, 347111)),	-- Vessel of Unfortunate Spirits (spellID 347111)
--- 		}),
--- 	}),
--- });

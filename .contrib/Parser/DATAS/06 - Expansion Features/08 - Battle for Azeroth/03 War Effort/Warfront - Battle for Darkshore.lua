@@ -727,7 +727,7 @@ root(ROOTS.ExpansionFeatures,
 							131752,	-- War Table (Horde)
 						},
 						["lvl"] = {
-							-- #if AFTER SHADOWLANDS
+							-- #if AFTER SL
 							50,
 							-- #else
 							120,
@@ -1243,10 +1243,7 @@ root(ROOTS.ExpansionFeatures,
 												i(165629),	-- Sentinel's Spellblade
 												i(166483),	-- Sentinel's Tomahawk
 												i(165625),	-- Sentinel's Warhammer
-												i(166758, {	-- Moonpriest's Cloak
-												--	["classes"] = { MAGE, PRIEST, WARLOCK },
-													["description"] = "This might be only available as Cloth class.",
-												}),
+												i(166758),	-- Moonpriest's Cloak
 												i(166759),	-- Darkwood Sentinel's Drape
 												i(166760, {	-- Kaldorei Archer's Greatcloak
 													["description"] = "This might be only available as Mail class.",
@@ -1320,10 +1317,7 @@ root(ROOTS.ExpansionFeatures,
 												i(165629),	-- Sentinel's Spellblade
 												i(166483),	-- Sentinel's Tomahawk
 												i(165625),	-- Sentinel's Warhammer
-												i(166758, {	-- Moonpriest's Cloak
-												--	["classes"] = { MAGE, PRIEST, WARLOCK },
-													["description"] = "This might be only available as Cloth class.",
-												}),
+												i(166758),	-- Moonpriest's Cloak
 												i(166759, {	-- Darkwood Sentinel's Drape
 													["description"] = "This might be only available as Leather class.",
 												}),

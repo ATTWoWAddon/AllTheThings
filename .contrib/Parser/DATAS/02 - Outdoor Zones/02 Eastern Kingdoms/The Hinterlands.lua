@@ -7,192 +7,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["icon"] = 236780,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(773),	-- Explore The Hinterlands
+				ach(773),	-- Explore The Hinterlands
 				ach(4897, {	-- Hinterlands Quests
 					["timeline"] = { ADDED_4_0_3 },
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(38375, {	-- Quel'Danil Lodge
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								26532,	-- Shadra the Venom Queen
-							},
-						}),
-						crit(38376, {	-- Quel'Danil Lodge
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								26643,	-- Starvation Diet
-							},
-						}),
-						crit(38371, {	-- Jintha'Alor
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								26525,	-- Venomous Secrets
-							},
-						}),
-						crit(38370, {	-- Jintha'Alor
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								26526,	-- Hunt the Keeper
-							},
-						}),
-						crit(38372, {	-- Jintha'Alor
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								26516,	-- It's Ours Now
-							},
-						}),
-						crit(38374, {	-- Jintha'Alor
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								26521,	-- Faces of Evil
-							},
-						}),
-						crit(38373, {	-- Jintha'Alor
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								26524,	-- Dark Vessels
-							},
-						}),
-						crit(38377, {	-- Stormfeather Outpost
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								26492,	-- Skulk Rock Supplies
-							},
-						}),
-						crit(38378, {	-- Stormfeather Outpost
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								26491,	-- Skulk Rock Clean-Up
-							},
-						}),
-						crit(38379, {	-- Stormfeather Outpost
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								26490,	-- Prime Slime
-							},
-						}),
-						crit(38380, {	-- Stormfeather Outpost
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								26486,	-- 99 Bottles of Booze on the Beach
-							},
-						}),
-						crit(38381, {	-- Stormfeather Outpost
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								26485,	-- Snapjaws, Lad!
-							},
-						}),
-						crit(38382, {	-- Stormfeather Outpost
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								26462,	-- The Wicked Revantusk
-							},
-						}),
-						crit(38384, {	-- Hiri'watha
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26387,	-- Starvation Diet
-							},
-						}),
-						crit(38383, {	-- Hiri'watha
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26419,	-- Shadra the Venom Queen
-							},
-						}),
-						crit(38385, {	-- Jintha'Alor
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26308,	-- It's Ours Now
-							},
-						}),
-						crit(38386, {	-- Jintha'Alor
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26369,	-- Hunt the Keeper
-							},
-						}),
-						crit(38387, {	-- Jintha'Alor
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26357,	-- Faces of Evil
-							},
-						}),
-						crit(38388, {	--	Jintha'Alor
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26368,	-- Venomous Secrets
-							},
-						}),
-						crit(45292, {	-- Jintha'Alor
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26309,	-- Dark Vessels
-							},
-						}),
-						crit(38390, {	-- Revantusk Village
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26238,	-- The Savage Dwarves
-							},
-						}),
-						crit(38391, {	-- Revantusk Village
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26240,	-- Stomp To My Beat
-							},
-						}),
-						crit(38392, {	-- Revantusk Village
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26212,	-- Lard Lost His Lunch
-							},
-						}),
-						crit(38393, {	-- Revantusk Village
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26225,	-- Pupellyverbos Port
-							},
-						}),
-						crit(38389, {	-- Revantusk Village
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26224,	-- Hunt the Savages
-							},
-						}),
-						crit(38394, {	-- Revantusk Village
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26211,	-- Snapjaws, Mon!
-							},
-						}),
-						crit(38395, {	-- Revantusk Village
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26210,	-- Gammerita, Mon!
-							},
-						}),
-						crit(38396, {	-- Revantusk Village
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26267,	-- Skulk Rock Clean-Up
-							},
-						}),
-						crit(38397, {	-- Revantusk Village
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26283,	-- Prime Slime
-							},
-						}),
-						crit(38398, {	-- Revantusk Village
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								26268,	-- Skulk Rock Supplies
-							},
-						}),
-					},
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
 					-- #else
 					["sourceQuests"] = {
 						26532,	-- Shadra the Venom Queen
@@ -280,7 +99,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #else
 						"This faction gets removed completely with the TBC prepatch, so grinding this to Exalted makes no sense.\n\nYou can grind to 11999/12000 by just killing trolls and then you can *technically* grind to Exalted by turning in Troll Necklaces at a rate of 2 Reputation per 5 necklaces, but rather than encourage you to totally waste your life on a Reputation that gets ultimately removed from the game after the season is over, I'll artificially cap the goal in ATT to Revered.\n\nGodspeed.",
 						-- #endif
-					-- #if CLASSICERA
+					-- #if NOT CLASSICERA
 					["minReputation"] = { 471, REVERED },	-- Wildhammer Clan, Revered.
 					-- #endif
 					["OnTooltip"] = [[function(t, tooltipInfo)
@@ -325,6 +144,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 65.6, 44.8, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+			}),
+			petbattles({
+				n(66478, {	-- David Kosse <Master Pet Tamer>
+					["coord"] = { 62.8, 54.6, THE_HINTERLANDS },
+					["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDavid's pets are level 13 of the following consecutive pet classes:\n1. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.",
+					["timeline"] = { ADDED_5_0_4 },
+					["petBattleLvl"] = 13,
+					["groups"] = {
+						q(31910, {	-- David Kosse
+							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
 				}),
 			}),
 			n(PROFESSIONS, {
@@ -591,6 +426,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(59253, {	-- Sandrene's Invisible Vest
 							["description"] = "You will not be able to transmog this item.",
+							["collectible"] = false,	-- Cant be collected, not even with the source tracking we use for fishing poles and stuff
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59254, {	-- Spider Venom Leggings
@@ -601,6 +437,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(131544, {	-- Sandrene's Invisible Hauberk
 							["description"] = "You will not be able to transmog this item.",
+							["collectible"] = false,	-- Cant be collected, not even with the source tracking we use for fishing poles and stuff
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131545, {	-- Spider Venom Legguards
@@ -626,6 +463,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(59295, {	-- Sandrene's Invisible Vest
 							["description"] = "You will not be able to transmog this item.",
+							["collectible"] = false,	-- Cant be collected, not even with the source tracking we use for fishing poles and stuff
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(59296, {	-- Spider Venom Leggings
@@ -636,6 +474,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(131510, {	-- Sandrene's Invisible Hauberk
 							["description"] = "You will not be able to transmog this item.",
+							["collectible"] = false,	-- Cant be collected, not even with the source tracking we use for fishing poles and stuff
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131511, {	-- Spider Venom Legguards

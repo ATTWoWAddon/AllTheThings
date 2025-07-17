@@ -680,6 +680,21 @@ root(ROOTS.Zones, {
 						["coord"] = { 64.08, 41.12, SHATTRATH_CITY },
 					}),
 				}),
+				petbattles({
+					n(66553, {	-- Morulu The Elder <Master Pet Tamer>
+						["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
+						["description"] = "Morulu's pets are level 23 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Aquatic - see above.\n3. Aquatic - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
+						["timeline"] = { ADDED_5_0_4 },
+						["petBattleLvl"] = 23,
+						["groups"] = {
+							q(31925, {	-- Morulu The Elder
+								["sourceAchievement"] = 6604,	-- Taming Outland
+								["timeline"] = { ADDED_5_0_4 },
+								["isDaily"] = true,
+							}),
+						},
+					}),
+				}),
 				n(PROFESSIONS, {
 					prof(BLACKSMITHING, {
 						n(20124, {	-- Kradu Grimblade <Weaponsmith Trainer>
@@ -755,6 +770,9 @@ root(ROOTS.Zones, {
 							i(142279),	-- Plans: Windforged Rapier (RECIPE!)
 							i(142283),	-- Plans: Skyforged Great Axe (RECIPE!)
 							i(142282),	-- Plans: Stormforged Axe (RECIPE!)
+							i(142272),	-- Cardinal Sky Core (QI!)
+							i(142271),	-- Cardinal Storm Core (QI!)
+							i(142270),	-- Cardinal Wind Core (QI!)
 						},
 					})),
 					applyclassicphase(TBC_PHASE_FIVE, q(11481, {	-- Crisis at the Sunwell
@@ -780,6 +798,9 @@ root(ROOTS.Zones, {
 							i(142284),	-- Plans: Stoneforged Claymore (RECIPE!)
 							i(142287),	-- Plans: Great Earthforged Hammer (RECIPE!)
 							i(142286),	-- Plans: Lavaforged Warhammer (RECIPE!)
+							i(142269),	-- Cardinal Earth Core (QI!)
+							i(142268),	-- Cardinal Lava Core (QI!)
+							i(142267),	-- Cardinal Stone Core (QI!)
 						},
 					})),
 					q(10421, {	-- Fel Armaments
@@ -928,9 +949,7 @@ root(ROOTS.Zones, {
 						["lockCriteria"] = { 1, "factionID", 1011.6 },	-- Lower City, Honored
 						-- #endif
 						["groups"] = {
-							i(31800, {  -- Outcasts Cache
-								["sym"] = {{"fill"}},	-- fill with Sourced content for this Item since reward of repeatable quest
-							}),
+							i(31800),  -- Outcasts Cache
 						},
 					}),
 					q(10415, {	-- More Firewing Signets
@@ -986,9 +1005,7 @@ root(ROOTS.Zones, {
 						["cost"] = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
 						["repeatable"] = true,
 						["groups"] = {
-							i(31800, {  -- Outcasts Cache
-								["sym"] = {{"fill"}},	-- fill with Sourced content for this Item since reward of repeatable quest
-							}),
+							i(31800),  -- Outcasts Cache
 						},
 					}),
 					q(10037, {	-- Rather Be Fishin'
@@ -1218,16 +1235,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 47.7, 18.8, SHATTRATH_CITY },
 						["cost"] = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
 						["groups"] = {
-							i(31800, {  -- Outcasts Cache
-								i(28495),	-- Windwalker's Sash
-								i(28496),	-- Talonite's Belt
-								i(28497),	-- Dreadhawk's Girdle
-								i(28498),	-- Ravenguard's Baldric
-								i(28491),	-- Windwalker's Footwraps
-								i(28493),	-- Dreadhawk's Schynbald
-								i(28492),	-- Talonite's Boots
-								i(28494),	-- Ravenguard's Greaves
-							}),
+							i(31800),  -- Outcasts Cache
 						},
 					}),
 					q(10883, {	-- The Tempest Key
@@ -1567,7 +1575,7 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(REWARDS, bubbleDownSelf({ ["timeline"] = { ADDED_2_3_0 } }, {
-					i(33844, {	-- Barrel of Fish
+					container(33844, {	-- Barrel of Fish
 						i(33869),	-- Recipe: Broiled Bloodfin (RECIPE!)
 						i(34834, {	-- Recipe: Captain Rumsey's Lager (RECIPE!)
 							["timeline"] = { ADDED_3_2_0 },
@@ -1577,7 +1585,7 @@ root(ROOTS.Zones, {
 						i(33870),	-- Recipe: Skullfish Soup (RECIPE!)
 						i(33871),	-- Recipe: Stormchops (RECIPE!)
 					}),
-					i(33857, {	-- Crate of Meat
+					container(33857, {	-- Crate of Meat
 						i(34834, {	-- Recipe: Captain Rumsey's Lager (RECIPE!)
 							["timeline"] = { ADDED_3_2_0 },
 						}),
@@ -1586,6 +1594,16 @@ root(ROOTS.Zones, {
 						i(33873),	-- Recipe: Spicy Hot Talbuk (RECIPE!)
 						i(33871),	-- Recipe: Stormchops (RECIPE!)
 						i(33855),	-- Tarnished Silver Ring
+					}),
+					container(31800, {  -- Outcasts Cache
+						i(28495),	-- Windwalker's Sash
+						i(28496),	-- Talonite's Belt
+						i(28497),	-- Dreadhawk's Girdle
+						i(28498),	-- Ravenguard's Baldric
+						i(28491),	-- Windwalker's Footwraps
+						i(28493),	-- Dreadhawk's Schynbald
+						i(28492),	-- Talonite's Boots
+						i(28494),	-- Ravenguard's Greaves
 					}),
 				})),
 				n(VENDORS, {
@@ -1613,9 +1631,11 @@ root(ROOTS.Zones, {
 					}),
 					n(33630, {	-- Aelthin <Alchemy Trainer>
 						["coord"] = { 38.6, 71.8, SHATTRATH_CITY },
+						-- #if AFTER MOP
 						["sym"] = {{"select","itemID",
 							4565,    -- Simple Dagger
 						}},
+						-- #endif
 					}),
 					n(19043, {	-- Ahemen <Staff Vendor>
 						["coord"] = { 34.2, 20.0, SHATTRATH_CITY },
@@ -1630,11 +1650,13 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					n(33674, {	-- Alchemist  Kanhu  <Alchemy Trainer>
+					n(33674, {	-- Alchemist Kanhu  <Alchemy Trainer>
 						["coord"] = { 38.6, 30.0, SHATTRATH_CITY },
+						-- #if AFTER MOP
 						["sym"] = {{"select","itemID",
 							4565,    -- Simple Dagger
 						}},
+						-- #endif
 					}),
 					n(21432, {	-- Almaador <Sha'tari Quartermaster>
 						["coord"] = { 51.6, 41.6, SHATTRATH_CITY },
@@ -2166,11 +2188,13 @@ root(ROOTS.Zones, {
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						},
 					}),
-					n(19049, {	-- Karokka  <Alchemy Trainer>
+					n(19049, {	-- Karokka <Alchemy Trainer>
 						["coord"] = { 45.6, 19.8, SHATTRATH_CITY },
+						-- #if AFTER MOP
 						["sym"] = {{"select","itemID",
 							4565,    -- Simple Dagger
 						}},
+						-- #endif
 					}),
 					n(21906, {	-- Kelara <Keeper of Sha'tari Heirlooms>
 						["coord"] = { 24.8, 27.0, SHATTRATH_CITY },
@@ -2288,7 +2312,9 @@ root(ROOTS.Zones, {
 						["sym"] = {{"select", "itemID",
 							2526,	-- Main Gauche
 							2534,	-- Rondel
+							-- #if AFTER MOP
 							4565,	-- Simple Dagger
+							-- #endif
 						}},
 					}),
 					n(21655, {	-- Nakodu <Lower City Quartermaster>
@@ -2656,7 +2682,7 @@ local COMMON_ENCHANTING_RECIPES = {
 	i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 	i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 	i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-	i(22307),	-- Pattern: Enchanted Mageweave Pouch
+	i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 };
 appendGroups(COMMON_ENCHANTING_RECIPES, ZURII_YURIAL_GROUPS);
 appendGroups(COMMON_ENCHANTING_RECIPES, MADAME_RUBY_GROUPS);

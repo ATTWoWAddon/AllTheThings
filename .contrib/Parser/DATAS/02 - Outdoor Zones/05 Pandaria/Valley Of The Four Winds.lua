@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(VALLEY_OF_THE_FOUR_WINDS, {
@@ -13,7 +12,7 @@ root(ROOTS.Zones, {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(7294),	-- A Taste of Things to Come (Halfhill)
-					explorationAch(6969),	-- Explore Valley of the Four Winds
+					ach(6969),	-- Explore Valley of the Four Winds
 					ach(7295, {	-- Listen to the Drunk Fish (Halfhill)
 						crit(20536),	-- Juicycrunch Carrot
 						crit(21034),	-- Green Cabbage
@@ -23,9 +22,7 @@ root(ROOTS.Zones, {
 						crit(21038),	-- Pink Turnip
 						crit(21039),	-- White Turnip
 					}),
-					ach(6301, {	-- Rally the Valley
-						["sym"] = {{ "achievement_criteria" }},
-					}),
+					ach(6301),	-- Rally the Valley
 					ach(7293),	-- Till the Break of Dawn (Halfhill)
 				}),
 				battlepets({
@@ -1094,6 +1091,18 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66734, {	-- Farmer Nishi <Grand Master Pet Tamer>
 						["coord"] = { 46.0, 43.6, VALLEY_OF_THE_FOUR_WINDS },
+						["timeline"] = { ADDED_5_1_0 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(31955, {	-- Grand Master Nishi
+								["sourceAchievement"] = 6606,	-- Taming Pandaria
+								["timeline"] = { ADDED_5_1_0 },
+								["isDaily"] = true,
+								["groups"] = {
+									i(89125),	-- Sack of Pet Supplies
+								},
+							}),
+						},
 					}),
 				}),
 				n(PROFESSIONS, {
@@ -1131,6 +1140,12 @@ root(ROOTS.Zones, {
 						n(55143, {	-- Sally Fizzlefury <Engineering Trainer>
 							["coord"] = { 16.0, 83.0, VALLEY_OF_THE_FOUR_WINDS },
 							["g"] = MOP_ENGINEERING
+						}),
+					}),
+					prof(TAILORING, {
+						n(57405, {	-- Silkmaster Tsai <"The Tailor of Pandaria">
+							["coord"] = { 62.6, 59.6, VALLEY_OF_THE_FOUR_WINDS },
+							["g"] = MOP_TAILORING,
 						}),
 					}),
 				}),
@@ -1277,7 +1292,7 @@ root(ROOTS.Zones, {
 								},
 							}),
 							q(31521, {	-- To Be a Master
-								["description"] = "You must master all 6 Pandaren cooking ways for this quest to become available.",
+								["description"] = "Becomes available on reaching max Pandaria cooking, but you must master all 6 Pandaren cooking ways for this quest to be completed.",
 								["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 								["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 							}),
@@ -2379,14 +2394,40 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(TREASURES, {
-					o(210582,	{	-- Dark Soil
+					o(213460, { -- A Most Famous Bill of Sale
+						["coord"] = { 55.0, 47.3, VALLEY_OF_THE_FOUR_WINDS },
+					}),
+					o(214340, {	-- Boat-Building Instructions
+						["questID"] = 31869,
+						["coord"] = { 92.2, 39.2, VALLEY_OF_THE_FOUR_WINDS },
+						["g"] = {
+							i(87524),	-- Boat-Building Instructions
+						},
+					}),
+					o(213649, {	-- Cache of Pilfered Goods
+						["coord"] = { 43.61, 37.48, VALLEY_OF_THE_FOUR_WINDS },
+						["questID"] = 31406,
+						["g"] = {
+							i(86110),	-- Stolen Necklace of Precision
+							i(86111),	-- Stolen Necklace of Accuracy
+							i(86112),	-- Stolen Amulet of Wisdom
+							i(86113),	-- Stolen Amulet of Might
+							i(86114),	-- Stolen Necklace of Fortitude
+						},
+					}),
+					o(210582, {	-- Dark Soil
 						["coord"] = { 52.8, 48.1, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(79269),	-- Marsh Lily (QI!)
 						},
 					}),
-					o(210565,	{	-- Dark Soil
-						["description"] = "Can be found around the Tillers area",
+					o(210565, {	-- Dark Soil
+						["description"] = "Can be found all around the Tillers area",
+						["coords"] = {
+							{ 42.5, 33.9, VALLEY_OF_THE_FOUR_WINDS },
+							{ 39.5, 49.9, VALLEY_OF_THE_FOUR_WINDS },
+							{ 50.4, 28.5, VALLEY_OF_THE_FOUR_WINDS },
+						},
 						["g"] = {
 							i(79265),	-- Blue Feather
 							i(79266),	-- Jade Cat
@@ -2396,12 +2437,63 @@ root(ROOTS.Zones, {
 							i(79264),	-- Ruby Shard
 						},
 					}),
+					o(215785, {	-- Embracing the Passions
+						["coord"] = { 83.22, 21.16, VALLEY_OF_THE_FOUR_WINDS },
+					}),
+					n(64191, {	-- Ghostly Pandaren Craftsman
+						["coord"] = { 45.4, 38.2, VALLEY_OF_THE_FOUR_WINDS },
+						["questID"] = 31292,
+						["g"] = {
+							i(86079),	-- Ancient Pandaren Woodcutter
+						},
+					}),
+					n(64004, {	-- Ghostly Pandaren Fisherman
+						["coord"] = { 46.8, 24.6, VALLEY_OF_THE_FOUR_WINDS },
+						["description"] = "Speak with the Ghostly Pandaren Fisherman to get the toy.",
+						["questID"] = 31284,
+						["g"] = {
+							i(85973),	-- Ancient Pandaren Fishing Charm (TOY!)
+						},
+					}),
 					o(226956, {	-- Mysterious Fruit Pile
-						["questID"] = 37246,
 						["coord"] = { 52.1, 64.0, VALLEY_OF_THE_FOUR_WINDS },
+						["questID"] = 37246,
 						["g"] = {
 							i(110505),	-- Mesmerizing Fruit Hat [Not a toy, but should be.]
 						},
+					}),
+					o(213413, {	-- Pandaren Fighting Tactics
+						["coord"] = { 18.8, 31.8, VALLEY_OF_THE_FOUR_WINDS },
+					}),
+					o(213749, {	-- Staff of the Hidden Master
+						["coords"] = {
+							{ 15.4, 29.1, VALLEY_OF_THE_FOUR_WINDS },
+							{ 17.5, 35.7, VALLEY_OF_THE_FOUR_WINDS },
+							{ 19.1, 37.9, VALLEY_OF_THE_FOUR_WINDS },
+							{ 15.0, 33.7, VALLEY_OF_THE_FOUR_WINDS },
+							{ 19.0, 42.5, VALLEY_OF_THE_FOUR_WINDS },
+						},
+						["questID"] = 31407,
+						["g"] = {
+							i(86218),	-- Staff of the Hidden Master
+						},
+					}),
+					o(213459, {	-- The Birthplace of Liu Lang
+						["coord"] = { 20.3, 55.9, VALLEY_OF_THE_FOUR_WINDS },
+					}),
+					o(213461, {	-- The Wandering Widow
+						["coord"] = { 34.6, 64.0, VALLEY_OF_THE_FOUR_WINDS },
+					}),
+					o(213650, {	-- Virmen Treasure Cache
+						["description"] = "Has a respawn timer of approx 7 minutes.",
+						["questID"] = 31405,
+						["coords"] = {
+							{ 23.2, 30.8, VALLEY_OF_THE_FOUR_WINDS },
+							{ 23.8, 28.4, VALLEY_OF_THE_FOUR_WINDS },
+						},
+					}),
+					o(215780, {	-- Waterspeakers
+						["coord"] = { 61.52, 34.88, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 				}),
 				n(VENDORS, {

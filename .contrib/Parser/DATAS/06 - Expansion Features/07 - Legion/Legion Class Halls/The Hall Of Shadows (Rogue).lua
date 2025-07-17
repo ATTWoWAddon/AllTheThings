@@ -166,10 +166,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(128870, {	-- The Kingslayers [Main Hand]
-									artifact(228),	-- The Kingslayers [Main Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(228),	-- The Kingslayers [Main Hand]
+									},
 								}),
 								i(128869, {	-- The Kingslayers [Off Hand]
-									artifact(228),	-- The Kingslayers [Off Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(228),	-- The Kingslayers [Off Hand]
+									},
 								}),
 							},
 						}),
@@ -181,10 +187,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(128870, {	-- The Kingslayers [Main Hand]
-									artifact(228),	-- The Kingslayers [Main Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(228),	-- The Kingslayers [Main Hand]
+									},
 								}),
 								i(128869, {	-- The Kingslayers [Off Hand]
-									artifact(228),	-- The Kingslayers [Off Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(228),	-- The Kingslayers [Off Hand]
+									},
 								}),
 							},
 						}),
@@ -211,10 +223,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["coord"] = { 40.6, 69.2, THE_CAPE_OF_STRANGLETHORN },
 							["g"] = {
 								i(128872, {	-- The Dreadblades [Main Hand]
-									artifact(692),	-- The Dreadblades [Main Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(692),	-- The Dreadblades [Main Hand]
+									},
 								}),
 								i(134552, {	-- The Dreadblades [Off Hand]
-									artifact(692),	-- The Dreadblades [Off Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(692),	-- The Dreadblades [Off Hand]
+									},
 								}),
 							},
 						}),
@@ -252,10 +270,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["maps"] = { 740, 741 },	-- Shadowgore Citadel (Scenario Map)
 							["g"] = {
 								i(128476, {	-- Fangs of the Devourer [Main Hand]
-									artifact(67),	-- Fangs of the Devourer [Main Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(67),	-- Fangs of the Devourer [Main Hand]
+									},
 								}),
 								i(128479, {	-- Fangs of the Devourer [Off Hand]
-									artifact(67),	-- Fangs of the Devourer [Off Hand]
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(67),	-- Fangs of the Devourer [Off Hand]
+									},
 								}),
 							},
 						}),
@@ -638,6 +662,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 57.7, 63.5, AZSUNA },
 						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { ADDED_7_2_0 },
+						["g"] = {
+							i(142116),	-- Fel-Infused Gunpowder Cache (QI!)
+						},
 					}),
 					q(46323, {	-- What's the Cache? (H)
 						["sourceQuest"] = 46322,	-- The Pirate's Bay
@@ -645,6 +672,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["coord"] = { 57.7, 63.5, AZSUNA },
 						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_7_2_0 },
+						["g"] = {
+							i(142116),	-- Fel-Infused Gunpowder Cache (QI!)
+						},
 					}),
 					q(45835, {	-- False Orders (A)
 						["sourceQuest"] = 45833,	-- The Pirate's Bay
@@ -1045,7 +1075,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							}),
 							i(27978),	-- Soap on a Rope
 							i(27979),	-- Stone of Stupendous Springing Strides
-							i(27944),	-- Talisman of True Treasure Tracking
+							i(27944, {["classes"] = IGNORED_VALUE}),	-- Talisman of True Treasure Tracking
 						},
 					}),
 					n(99863, {	-- Jenri <Spymaster>
@@ -1155,7 +1185,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 			q(44871, { ["timeline"] = { ADDED_7_1_0 } }),	-- 7.1 World - 850 - Special - Moroes 1
 			q(44872, { ["timeline"] = { ADDED_7_1_0 } }),	-- 7.1 World - 850 - Special - Moroes 2
 			q(42061),	-- Charge Trigger Hit - triggered after leaving the citadel during the Fangs of the Devourer scenario
-			q(43634),	-- Looted Rogue Vault
+			q(43634,{isDaily=true}),	-- Looted Rogue Vault
 			q(50804),	-- Opened the way to the order hall for the first time during "Call of The Uncrowned" (questID 40832)
 			q(43716),	-- Rogue Vault Rare Triggered
 			-- q(43719),	-- Rare Item One Obtained - looted the "Suspicious Crate" toy (itemID 139587)

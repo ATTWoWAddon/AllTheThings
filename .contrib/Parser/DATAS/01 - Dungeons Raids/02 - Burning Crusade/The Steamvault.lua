@@ -145,7 +145,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(27787),	-- Chestguard of No Remorse (7.3.5 - Moved to Mekgineer Steamrigger)
 						-- #endif
 						i(27783),	-- Moonrage Girdle
-						i(27784),	-- Scintillating Coral Band
+						i(27784, {	-- Scintillating Coral Band
+							["timeline"] = { REMOVED_11_1_5 },
+						}),
+						i(238930, {	-- Scintillating Coral Band
+							["timeline"] = { ADDED_11_1_5 },
+						}),
 						i(29673, {	-- Pattern: Frost Armor Kit (RECIPE!)
 							["timeline"] = { REMOVED_5_0_4 },
 						}),
@@ -180,14 +185,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(575, {	-- Warlord Kalithresh
 					["creatureID"] = 17798,
 					["groups"] = {
-						ach(656, {	-- The Steamvault
-							-- #if BEFORE WRATH
-							["sourceQuests"] = {
-								9763,	-- The Warlord's Hideout
-								10885,	-- Trial of the Naaru: Strength
-							},
-							-- #endif
-						}),
+						ach(656),	-- The Steamvault
 						-- #if AFTER 7.3.5
 						i(29351),	-- Wrathtide Longbow
 						-- #endif
@@ -305,11 +303,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(575, {	-- Warlord Kalithresh
 						["creatureID"] = 17798,
 						["groups"] = {
-							ach(677, {	-- Heroic: The Steamvault
-								-- #if BEFORE WRATH
-								["sourceQuest"] = 10885,	-- Trial of the Naaru: Strength
-								-- #endif
-							}),
+							ach(677),	-- Heroic: The Steamvault
 							ach(5077, {	-- Heroic: The Steamvault Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),

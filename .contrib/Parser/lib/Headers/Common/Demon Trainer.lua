@@ -6,6 +6,7 @@ DEMON_TRAINER = createHeader({
 		es = "Instructor de demonios",
 		de = "Dämonenausbilderin",
 		fr = "Maître des démons",
+		mx = "Instructor de demonios",
 		pt = "Treinamento de Demônios",
 		ru = "Наставник демонов",
 		ko = "악마 훈련사",

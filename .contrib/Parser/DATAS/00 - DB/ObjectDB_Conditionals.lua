@@ -292,3 +292,23 @@ for i,objectID in pairs({
 	ObjectDB[objectID].icon = 134328;
 	-- #endif
 end
+
+-- Objects which currently do not resolve on Wowhead
+local MissingObjects = {
+	[176693] = "Dreamfoil",
+	[207103] = "Elemental Gate",
+	[211129] = "Signal Flame",
+	[495146] = "Semi-Deluxe Noggenfogger Elixirs",
+}
+
+for id,enName in pairs(MissingObjects) do
+	local text = ObjectDB[id].text
+	if not text or not text.en then
+		ObjectDB[id] = {
+			text = {
+				en = enName,
+				readable = enName,
+			},
+		}
+	end
+end

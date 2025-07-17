@@ -114,7 +114,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								}),
 								q(61552, {	-- The Hunt Watches
 									["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-									["coord"] = { 39.7, 55.7, THE_TRUNK },
+									["coord"] = { 39.7, 55.7, THE_ROOTS },
 								}),
 							}),
 							n(REWARDS, {

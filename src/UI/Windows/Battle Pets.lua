@@ -3,8 +3,8 @@ local appName, app = ...;
 local contains, MergeClone = app.contains, app.MergeClone;
 
 -- Global locals
-local ipairs, pairs, tinsert, tremove =
-	  ipairs, pairs, tinsert, tremove;
+local ipairs, pairs, tinsert =
+	  ipairs, pairs, tinsert;
 
 -- App locals
 local GetRelativeValue = app.GetRelativeValue;
@@ -21,7 +21,7 @@ app:CreateWindow("Battle Pets", {
 		self.data = {
 			text = AUCTION_CATEGORY_BATTLE_PETS,
 			icon = app.asset("Category_PetJournal"),
-			description = "This list shows you all of the battle pets that you can collect.",
+			description = "This list shows you all of the battle pets that you can collect listed by type.",
 			visible = true,
 			expanded = true,
 			back = 1,

@@ -62,6 +62,13 @@ jobs:
           "Parser.exe" auto config=".config/classic/04 - Cataclysm.config"
         shell: cmd
 
+      - name: Database Parser for Mists of Pandaria
+        timeout-minutes: 5
+        run: |
+          cd .contrib/Parser
+          "Parser.exe" auto config=".config/classic/05 - Mists of Pandaria.config"
+        shell: cmd
+
       - uses: actions/upload-artifact@v4
         with:
             name: db  # Artifact name

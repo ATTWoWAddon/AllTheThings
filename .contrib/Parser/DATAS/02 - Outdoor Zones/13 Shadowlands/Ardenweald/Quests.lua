@@ -519,7 +519,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			header(HEADERS.AchCriteria, 14800.01, {	-- Thread of Hope
 				q(57661, {	-- Silk Shortage
 					["provider"] = { "n", 158556 },	-- Aithlyn
-					["coord"] = { 59.5, 31.5, ARDENWEALD },
+					["coord"] = { 59.5, 31.5, THE_TRUNK },
 				}),
 				q(60062, {	-- The Shattered Harp
 					["sourceQuests"] = { 57661 },	-- Silk Shortage

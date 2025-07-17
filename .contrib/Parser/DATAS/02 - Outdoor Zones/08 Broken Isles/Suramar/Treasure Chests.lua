@@ -10,9 +10,19 @@ root(ROOTS.Zones, {
 					["questID"] = 42827,
 					["coord"] = { 26.4, 41.3, SURAMAR },
 				}),
+				o(254023, {	-- Arcane Power Unit
+					--["sourceQuest"] = TODO,
+					["coord"] = { 35.6, 12.1, SURAMAR },
+					["groups"] = { i(140329) } -- Infinite Stone (CI!)
+				}),
 				o(246254, {	-- Dusty Coffer
 					["questID"] = 40767,
 					["coord"] = { 52.7, 31.3, SURAMAR },
+				}),
+				o(254006, {	-- Enchanted Burial Urn
+					--["sourceQuest"] = TODO,
+					["coord"] = { 44.8, 31.0, SURAMAR },
+					["groups"] = { i(140326) } -- Enchanted Burial Urn (CI!)
 				}),
 				o(252822, {	-- Glimmering Treasure Chest
 					["questID"] = 43849,
@@ -29,6 +39,16 @@ root(ROOTS.Zones, {
 				o(252884, {	-- Glimmering Treasure Chest
 					["questID"] = 43876,
 					["coord"] = { 60.4, 68.5, SURAMAR },
+				}),
+				o(248407, {	-- Kel'danath's Manaflask
+					--["sourceQuest"] = TODO,
+					["coord"] = { 58.6, 33.8, SURAMAR },
+					["groups"] = { i(136269) } -- Kel'danath's Manaflask (CI!)
+				}),
+				o(254008, {	-- Kyrtos's Research Notes
+					--["sourceQuest"] = TODO,
+					["coord"] = { 26.9, 70.7, SURAMAR },
+					["groups"] = { i(140327) } -- Krytos's Research Notes (CI!)
 				}),
 				o(257291, {	-- Nightborne Treasure Chest
 					["description"] = "These repeatable chests spawn all over the map in Suramar."
@@ -214,6 +234,11 @@ root(ROOTS.Zones, {
 				o(252844, {	-- Treasure Chest
 					["questID"] = 43868,
 					["coord"] = { 51.9, 82.2, SURAMAR },
+				}),
+				o(254009, {	-- Volatile Leyline Crystal
+					--["sourceQuest"] = TODO,
+					["coord"] = { 35.5, 52.7, 684 },
+					["groups"] = { i(140328) } -- Volatile Leyline Crystal (CI!)
 				}),
 				o(245941, {	-- Warp Cache
 					["questID"] = 40692,

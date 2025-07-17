@@ -9,46 +9,11 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		ach(18865),	-- Anvil Mastery III
 		ach(18864),	-- Anvil Mastery II
 		ach(18862),	-- Anvil Mastery I
-		ach(18851, {	-- Skeletons in the Lockbox
-			crit(61545, {	-- Silver Skeleton Key
-				["provider"] = { "i", 15869 },	-- Silver Skeleton Key
-			}),
-			crit(61546, {	-- Golden Skeleton Key
-				["provider"] = { "i", 15870 },	-- Golden Skeleton Key
-			}),
-			crit(61547, {	-- Truesilver Skeleton Key
-				["provider"] = { "i", 15871 },	-- Truesilver Skeleton Key
-			}),
-			crit(61548, {	-- Arcanite Skeleton Key
-				["provider"] = { "i", 15872 },	-- Arcanite Skeleton Key
-			}),
-			crit(61549, {	-- Cobalt Skeleton Key
-				["provider"] = { "i", 43854 },	-- Cobalt Skeleton Key
-			}),
-			crit(61550, {	-- Titanium Skeleton Key
-				["provider"] = { "i", 43853 },	-- Titanium Skeleton Key
-			}),
-			crit(61551, {	-- Obsidium Skeleton Key
-				["provider"] = { "i", 55053 },	-- Obsidium Skeleton Key
-			}),
-			crit(61552, {	-- Ghostly Skeleton Key
-				["provider"] = { "i", 82960 },	-- Ghostly Skeleton Key
-			}),
-			crit(61553, {	-- Monelite Skeleton Key
-				["provider"] = { "i", 159826 },	-- Monelite Skeleton Key
-			}),
-			crit(61554, {	-- Laestrite Skeleton Key
-				["provider"] = { "i", 171441 },	-- Laestrite Skeleton Key
-			}),
-			crit(61555, {	-- Serevite Skeleton Key
-				["provider"] = { "i", 191256 },	-- Serevite Skeleton Key
-			}),
-		}),
+		ach(18851),	-- Skeletons in the Lockbox (automated)
 	})),
 	expansion(EXPANSION.CLASSIC, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
-			ach(18765, {	-- Destined to be Legendary
-				["provider"] = { "i", 17193 },	-- Sulfuron Hammer
+			ach(18765, {	-- Destined to be Legendary (automated)
 				["timeline"] = { ADDED_10_1_7 },
 			}),
 			ach(17497, {	-- Renowned Armorsmith
@@ -221,23 +186,6 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				}),
 			}),
 		})),
-		n(QUESTS, {
-			q(32621, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Lightning Steel
-				["provider"] = { "i", 94721 },	-- Strange Metal Ingot
-				["coord"] = { 57.6, 33.8, ISLE_OF_THUNDER },
-				["g"] = {
-					i(94553, {	-- Notes on Lightning Steel
-						i(94568),	-- Plans: Drakefist Hammer, Reborn (RECIPE!)
-						i(94572),	-- Plans: Fireguard, Reborn (RECIPE!)
-						i(94552),	-- Plans: Lightning Steel Ingot (RECIPE!)
-						i(94571),	-- Plans: Lionheart Blade, Reborn (RECIPE!)
-						i(94569),	-- Plans: Lunar Crescent, Reborn (RECIPE!)
-						i(94570),	-- Plans: Planar Edge, Reborn (RECIPE!)
-						i(94567),	-- Plans: Thunder, Reborn (RECIPE!)
-					}),
-				},
-			})),
-		}),
 	})),
 	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 		q(38499, {	-- Strange New Ores
@@ -660,6 +608,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["maps"] = { 703, 704, 705 },	-- Halls of Valor
 			["repeatable"] = true,
 			["g"] = {
+				i(146703),	-- Godfighter Hammer (QI!)
 				i(146702),	-- White Lightningsteel (QI!)
 			},
 		})),
@@ -670,6 +619,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["maps"] = { 806, 807, 808 },	-- Trial of Valor
 			["repeatable"] = true,
 			["g"] = {
+				i(146707),	-- Hellslayer Hammer (QI!)
 				i(146706),	-- Frostveined Shale (QI!)
 			},
 		})),
@@ -684,9 +634,9 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["coord"] = { 41.1, 59.3, BROKEN_SHORE },
 			["repeatable"] = true,
 			["g"] = {
-				i(146714),	-- Hammer of Forgotten Heroes
 				i(147443),	-- Carrying Case For Hammer of Forgotten Heroes (QI!)
 				i(147207),	-- Legendary Blacksmithing Supplies (QI!)
+				i(146714),	-- Hammer of Forgotten Heroes
 			},
 		})),
 		------ 7.3.0 ------
@@ -1561,7 +1511,7 @@ profession(BLACKSMITHING, {
 			["groups"] = {
 				{
 					["name"] = "Arcanite Rod",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 20201,
 				},
 				{
@@ -1574,7 +1524,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Golden Rod",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 14379,
 				},
 				{
@@ -1595,7 +1545,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Silver Rod",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 7818,
 				},
 				{
@@ -1604,7 +1554,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Truesilver Rod",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 14380,
 				},
 			},
@@ -3032,27 +2982,29 @@ profession(BLACKSMITHING, {
 			},
 		},
 		-- #endif
+		-- #if BEFORE 5.0.4
 		{
 			["name"] = "Materials",
 			["categoryID"] = 215,
 			["groups"] = {
 				{
 					["name"] = "Adamantite Rod",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 32656,
 				},
 				{
 					["name"] = "Eternium Rod",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 32657,
 				},
 				{
 					["name"] = "Fel Iron Rod",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 32655,
 				},
 			},
 		},
+		-- #endif
 		{
 			["name"] = "Weapon Mods",
 			["categoryID"] = 216,
@@ -3583,17 +3535,19 @@ profession(BLACKSMITHING, {
 			},
 		},
 		-- #endif
+		-- #if BEFORE 5.0.4
 		{
 			["name"] = "Materials",
 			["categoryID"] = 215,
 			["groups"] = {
 				{
 					["name"] = "Titanium Rod",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 55732,
 				},
 			},
 		},
+		-- #endif
 		{
 			["name"] = "Equipment Mods",
 			["categoryID"] = 578,
@@ -3834,12 +3788,14 @@ profession(BLACKSMITHING, {
 					["name"] = "Righteous Greaves",
 					["recipeID"] = 55304,
 				},
-				applyclassicphase(WRATH_PHASE_THREE, {	-- Saronite Swordbreakers [Alliance],
-					["recipeID"] = 67092--[[Saronite Swordbreakers]],
+				applyclassicphase(WRATH_PHASE_THREE, {
+					["name"] = "Saronite Swordbreakers [Alliance]",
+					["recipeID"] = 67092,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				applyclassicphase(WRATH_PHASE_THREE, {	-- Saronite Swordbreakers [Horde],
-					["recipeID"] = 67131--[[Saronite Swordbreakers]],
+				applyclassicphase(WRATH_PHASE_THREE, {
+					["name"] = "Saronite Swordbreakers [Horde]",
+					["recipeID"] = 67131,
 					["races"] = HORDE_ONLY,
 				}),
 				{
@@ -3918,20 +3874,24 @@ profession(BLACKSMITHING, {
 					["name"] = "Spiked Titansteel Treads",
 					["recipeID"] = 55375,
 				},
-				applyclassicphase(WRATH_PHASE_THREE, {	-- Sunforged Bracers [Alliance],
-					["recipeID"] = 67096--[[Sunforged Bracers]],
+				applyclassicphase(WRATH_PHASE_THREE, {
+					["name"] = "Sunforged Bracers [Alliance]",
+					["recipeID"] = 67096,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				applyclassicphase(WRATH_PHASE_THREE, {	-- Sunforged Bracers [Horde],
-					["recipeID"] = 67135--[[Sunforged Bracers]],
+				applyclassicphase(WRATH_PHASE_THREE, {
+					["name"] = "Sunforged Bracers [Horde]",
+					["recipeID"] = 67135,
 					["races"] = HORDE_ONLY,
 				}),
-				applyclassicphase(WRATH_PHASE_THREE, {	-- Sunforged Breastplate [Alliance],
-					["recipeID"] = 67095--[[Sunforged Breastplate]],
+				applyclassicphase(WRATH_PHASE_THREE, {
+					["name"] = "Sunforged Breastplate [Alliance]",
+					["recipeID"] = 67095,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				applyclassicphase(WRATH_PHASE_THREE, {	-- Sunforged Breastplate [Horde],
-					["recipeID"] = 67134--[[Sunforged Breastplate]],
+				applyclassicphase(WRATH_PHASE_THREE, {
+					["name"] = "Sunforged Breastplate [Horde]",
+					["recipeID"] = 67134,
 					["races"] = HORDE_ONLY,
 				}),
 				{
@@ -4086,7 +4046,7 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Sure-Fire Shuriken",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 55202,
 				},
 				{

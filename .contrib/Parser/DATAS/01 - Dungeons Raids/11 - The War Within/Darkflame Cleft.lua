@@ -6,7 +6,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 		["coord"] = { 59.6, 21.6, THE_RINGING_DEEPS },
 		["maps"] = { 2303 },	-- Darkflame Cleft
 		["g"] = {
-			i(223061),	-- Technique: Inscribed Rolling Pin (RECIPE!) [Wax-Encrusted Chest?]
 			n(QUESTS, {
 				q(83154, {	-- Knicknack's Knickknacks
 					--["sourceQuests"] = { x },	-- ?
@@ -57,6 +56,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					["crs"] = { 208747 },	-- The Darkness
 					["g"] = {
 						ach(40427),	-- Darkflame Cleft
+						i(223061),	-- Technique: Inscribed Rolling Pin (RECIPE!)
 						i(221112),	-- Caliginous Claspers
 						i(221110),	-- Crepuscular Carver
 						i(221113),	-- Gloaming Visage

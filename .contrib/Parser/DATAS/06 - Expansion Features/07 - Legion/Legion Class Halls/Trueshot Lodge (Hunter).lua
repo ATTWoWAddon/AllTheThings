@@ -117,7 +117,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							["coord"] = { 43.7, 38.9, 745 },
 							["g"] = {
 								i(128861, {	-- Titanstrike
-									artifact(288),	--  Titanstrike
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(288),	--  Titanstrike
+									},
 								}),
 							},
 						}),
@@ -186,7 +189,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							["coord"] = { 32.3, 32.5, BROKEN_SHORE },
 							["g"] = {
 								i(128826, {	-- Thas'dorah, Legacy of the Windrunners
-									artifact(114),	-- Thas'dorah, Legacy of the Windrunners
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(114),	-- Thas'dorah, Legacy of the Windrunners
+									},
 								}),
 							},
 						}),
@@ -231,7 +237,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							["maps"] = { 694 },	-- Helmouth Shallows (Scenario Map)
 							["g"] = {
 								i(128808, {	-- Talonclaw
-									artifact(125),	-- Talonclaw
+									["ItemAppearanceModifierID"] = 9,
+									["groups"] = {
+										artifact(125),	-- Talonclaw
+									},
 								}),
 							},
 						}),
@@ -796,20 +805,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					-- Hunter Hati Reborn Questline (BfA)
-					q(55516, {	-- Spark of Genius
-						["provider"] = { "n", 152002 },	-- Image of Mimiron
-						["coord"] = { 72.8, 14.0, BORALUS },
-						["timeline"] = { ADDED_8_1_5 },
-					}),
 					q(54913, {	-- Spark of Genius
 						["provider"] = { "n", 152002 },	-- Image of Mimiron
-						["coord"] = { 47.8, 89.4, DAZARALOR },
+						["coords"] = {
+							{ 72.8, 14.0, BORALUS },
+							{ 47.8, 89.4, DAZARALOR },
+						},
+						["timeline"] = { ADDED_8_1_5 },
+					}),
+					q(55516, {	-- Spark of Genius
+						["provider"] = { "n", 152002 },	-- Image of Mimiron
+						["coords"] = {
+							{ 72.8, 14.0, BORALUS },
+							{ 47.8, 89.4, DAZARALOR },
+						},
 						["timeline"] = { ADDED_8_1_5 },
 					}),
 					q(54915, {	-- Telemetry Online
 						["sourceQuests"] = {
-							54913,	-- Spark of Genius (H)
-							55516,	-- Spark of Genius (A)
+							54913,	-- Spark of Genius
+							55516,	-- Spark of Genius
 						},
 						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 149736 },	-- Image of Mimiron

@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["timeline"] = { ADDED_4_0_3 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(4865),	-- Explore Uldum
+				ach(4865),	-- Explore Uldum
 				ach(4888, {	-- One Hump or Two? (Uldum)
 					["providers"] = {
 						{ "i", 63044 },	-- Brown Riding Camel
@@ -28,10 +28,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				ach(4872, {	-- Unearthing Uldum
-					-- #IF RETAIL
+					-- #if AFTER 7.3.5
 					["_doautomation"] = true,
-					-- #ENDIF
-					-- #if ANYCLASSIC
+					-- #else
 					["sourceQuests"] = {
 						28112,	-- Escape From the Lost City
 						28533,	-- The High Council's Decision
@@ -183,6 +182,56 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 22.2, 64.8, ULDUM },
 				}),
 			}),
+			petbattles({
+				n(66824, {	-- Obalis <Grand Master Pet Tamer>
+					["coord"] = { 56.6, 41.8, ULDUM },
+					["timeline"] = { ADDED_5_0_4 },
+					["petBattleLvl"] = 25,
+					["groups"] = {
+						q(31971, {	-- Grand Master Obalis
+							["sourceAchievement"] = 7525,	-- Taming Cataclysm
+							["timeline"] = { ADDED_5_0_4 },
+							["isDaily"] = true,
+							["groups"] = {
+								i(89125),	-- Sack of Pet Supplies
+							},
+						}),
+					},
+				}),
+				q(31970, {	-- Grand Master Obalis
+					["qg"] = 66824,	-- Obalis
+					["sourceQuests"] = {
+						31966,	-- Battle Pet Tamers: Cataclysm (A)
+						31967,	-- Battle Pet Tamers: Cataclysm (H)
+					},
+					["coord"] = { 56.6, 41.8, ULDUM },
+					["timeline"] = { ADDED_5_0_4 },
+					["groups"] = {
+						objective(1, {	-- Defeat Obalis
+							["provider"] = { "n", 66824 },	-- Obalis
+							["coord"] = { 56.6, 41.8, ULDUM },
+						}),
+						i(89125),	-- Sack of Pet Supplies
+					},
+				}),
+				q(31985, {	-- The Triumphant Return (A)
+					["qg"] = 66824,	-- Obalis
+					["sourceQuest"] = 31970,	-- Grand Master Obalis
+					["coord"] = { 56.6, 41.8, ULDUM },
+					["timeline"] = { ADDED_5_0_4 },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				q(31986, {	-- The Triumphant Return (H)
+					["qg"] = 66824,	-- Obalis
+					["coord"] = { 56.6, 41.8, ULDUM },
+					["timeline"] = { ADDED_5_0_4 },
+					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+			}),
 			-- #if ANYCLASSIC
  			n(PROFESSIONS, {
 				prof(FISHING, {
@@ -201,11 +250,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #endif
-			petbattles({
-				n(66824, {	-- Obalis <Grand Master Pet Tamer>
-					["coord"] = { 56.6, 41.8, ULDUM },
-				}),
-			}),
 			n(QUESTS, {
 				q(27761, {	-- A Disarming Distraction
 					["coord"] = { 74.1, 64.4, ULDUM },
@@ -1612,9 +1656,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(62440),	-- Red Rock Band
 							i(62369, {	-- Arcanum of the Ramkahen
 								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(68766, {	-- Arcanum of the Ramkahen
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 						},

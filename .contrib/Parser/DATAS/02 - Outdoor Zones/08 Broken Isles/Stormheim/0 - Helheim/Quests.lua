@@ -92,7 +92,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(BONUS_OBJECTIVES, sharedData({
+						-- #if BEFORE DF
 						["lockCriteria"] = { 1, "lvl", 45 },
+						-- #else
+						["lockCriteria"] = { 1, "lvl", 60 },
+						-- #endif
 					},{
 						q(38343),	-- Raze Hel
 					})),

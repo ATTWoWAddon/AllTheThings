@@ -163,10 +163,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(34484, {	-- Old Ironjaw
-						-- #if BEFORE WRATH
-						["description"] = "Keep this in your bank until Achievements are added otherwise you'll need to fish it up again. Fair warning!",
-						-- #elseif BEFORE LEGION
-						["description"] = "Keep this in your bank until Transmog is added otherwise you'll need to fish it up again. Fair warning!",
+						["description"] = 
+							-- #if BEFORE WRATH
+							"Keep this in your bank until Achievements are added, otherwise you'll need to obtain it again. Fair warning!",
+							-- #elseif BEFORE LEGION
+							"Keep this in your bank until Transmog is added, otherwise you'll need to obtain it again. Fair warning!",
+							-- #elseif AFTER TWW
+							"Keep this in your bank until the appearance can be learned again, otherwise you'll need to obtain it again. Fair warning!",
+							-- #else
+							nil,
+							-- #endif
+						-- #if AFTER TWW
+						["collectible"] = false,  -- remove when Blizzard fix fish collection
 						-- #endif
 						["timeline"] = { ADDED_2_3_0 },
 					}),
@@ -184,7 +192,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(122339, {	-- Ancient Heirloom Scabbard
-							["sym"] = { { "fill" } },	-- simply fill this item
 							["timeline"] = { ADDED_6_1_0 },
 						}),
 					},
@@ -606,7 +613,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(122340, {	-- Timeworn Heirloom Armor Casing
-							["sym"] = { { "fill" } },	-- simply fill this item
 							["timeline"] = { ADDED_6_1_0 },
 						}),
 					},
@@ -920,7 +926,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5144,	-- Bink <Mage Trainer>
 					["sourceQuest"] = 1879,	-- Speak with Bink
 					["altQuests"] = { 1861 },	-- Mirror Lake
-					["coord"] = { 27, 8.2, IRONFORGE },
+					["coord"] = { 27.3, 8.3, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DUN_MOROGH },
 					["classes"] = { MAGE },
@@ -932,7 +938,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",   7226 },	-- Mage-tastic Gizmonitor
 								{ "o", 102984 },	-- Bink's Toolbox
 							},
-							["coord"] = { 27.7, 36.5, DUN_MOROGH },
+							["coord"] = { 27.7, 36.4, DUN_MOROGH },
 						}),
 						i(7507, {	-- Arcane Orb
 							["timeline"] = { REMOVED_4_0_3 },
@@ -953,7 +959,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(122338, {	-- Ancient Heirloom Armor Casing
-							["sym"] = { { "fill" } },	-- simply fill this item
 							["timeline"] = { ADDED_6_1_0 },
 						}),
 					},
@@ -1098,18 +1103,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 25,
 				}),
 				applyclassicphase(CATA_PHASE_ONE, q(26118, {	-- Seize the Ambassador
-					["qg"] = 42129,	-- Moira Thaurissan
+					["providers"] = {
+						{ "n", 42129 },	-- Moira Thaurissan
+						{ "i", 56837 },	-- Sturdy Manacles (PQI!)
+					},
 					["sourceQuest"] = 26112,	-- Demanding Answers
-					["coord"] = { 39.7, 57.3, IRONFORGE },
+					["coord"] = { 39.8, 57.2, IRONFORGE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Arrest Ambassador Slaghammer and bring him to the High Seat
 							["providers"] = {
-								{ "i", 56837 },	-- Sturdy Manacles
 								{ "n", 42146 },	-- Ambassador Slaghammer <Dark Iron Ambassador>
 							},
-							["coord"] = { 36.6, 43.6, IRONFORGE },
+							["coord"] = { 36.6, 43.2, IRONFORGE },
 						}),
 						i(57583, {	-- The Slaghammer
 							["timeline"] = { ADDED_4_0_3 },
@@ -1240,7 +1247,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(122341, {	-- Timeworn Heirloom Scabbard
-							["sym"] = { { "fill" } },	-- simply fill this item
+							["timeline"] = { ADDED_6_1_0 },
 						}),
 					},
 				}),
@@ -1496,9 +1503,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(5128, {	-- Bombus Finespindle <Leatherworking Supplies>
 					["coord"] = { 40.2, 33.4, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER CATA
-					["sym"] = { {"sub", "common_recipes_vendor", 3366} },	-- Tamar <Leatherworking Supplies>
-					-- #endif
+					["sym"] = {
+						{"sub", "common_vendor", 5565},	-- Jillian Tanner <Leatherworking Supplies>
+					},
 					["groups"] = {
 						i(18731, {	-- Pattern: Heavy Leather Ball (RECIPE!)
 							["isLimited"] = true,
@@ -1552,20 +1559,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(17186),	-- Small Targe
 					},
 				}),
+				-- #if AFTER TBC
 				n(5163, {	-- Burbik Gearspanner <Trade Supplies>
 					["coord"] = { 46.6, 27.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						-- #if AFTER TBC
 						i(21948, {	-- Design: Opal Necklace of Impact (RECIPE!)
 							["isLimited"] = true,
+							["timeline"] = { ADDED_2_0_1 },
 						}),
 						i(20975, {	-- Design: The Jade Eye (RECIPE!)
 							["isLimited"] = true,
+							["timeline"] = { ADDED_2_0_1 },
 						}),
-						-- #endif
 					},
 				}),
+				-- #endif
 				n(50309, {	-- Captain Stonehelm <Ironforge Quartermaster>
 					["coord"] = { 55.8, 47.8, IRONFORGE },
 					["timeline"] = { ADDED_4_0_3 },
@@ -1649,15 +1658,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if AFTER CATA
 					["sym"] = {{"sub", "common_recipes_vendor", 49701}},	-- Jon Casper <Sous Chef>
 					-- #endif
-					["groups"] = {
+					["groups"] = appendGroups(VANILLA_COOKING_SUPPLIES, {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-					},
+					}),
 				}),
 				n(5175, {	-- Gearcutter Cogspinner <Engineering Supplies>
 					["coord"] = { 67.8, 43.0, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					["groups"] = appendGroups(VANILLA_ENGINEERING_SUPPLIES, {
+						i(5956),	-- Blacksmith Hammer
 						i(18649, {	-- Schematic: Blue Firework (RECIPE!)
 							["isLimited"] = true,
 						}),
@@ -1680,6 +1690,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 							-- #endif
 						}),
+					}),
+				}),
+				n(4256, {	-- Golnir Bouldertoe <Mining Supplies>
+					["coord"] = { 51.5, 26.3, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(2901),	-- Mining Pick
+						-- #if AFTER CATA
+						i(30746, {	-- Mining Sack
+							["providers"] = {
+								{ "n", 5514 },	-- Brooke Stonebraid <Mining Supplies>
+								{ "n", 4256 },	-- Golnir Bouldertoe <Mining Supplies>
+								{ "n", 3358 },	-- Gorina <Mining Supplies>
+								{ "n", 3002 },	-- Kurm Stonehoof <Mining Supplies>
+								{ "n", 16751 },	-- Merran <Mining Supplies>
+								{ "n", 52643 },	-- Rissa Halding <Mining Supplies>
+								{ "n", 4599 },	-- Sarah Killan <Mining Supplies>
+								{ "n", 16664 },	-- Zelan <Mining Supplies>
+							},
+							["timeline"] = { ADDED_2_0_1 },
+						}),
+						-- #endif
 					},
 				}),
 				n(5103, {	-- Grenil Steelfury
@@ -1703,6 +1735,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2027,    -- Scimitar
 						1196,    -- Tabar
 					}},
+				}),
+				n(5112, {	-- Gwenna Firebrew <Barmaid>
+					["coord"] = { 18.6, 51.9, IRONFORGE },	-- The Stonefire Tavern
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(2594),	-- Flagon of Dwarven Honeymead/Mead
+						i(2593),	-- Flask of Stormwind Tawny
+						i(1179),	-- Ice Cold Milk
+						i(2596),	-- Skin of Dwarven Stout
+					},
+				}),
+				n(5138, {	-- Gwina Stonebranch <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
+					["coord"] = { 55.08, 59.51, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{ "sub", "common_vendor", 4216 }},	-- Chardryn <Herbalism Supplies>
 				}),
 				n(5133, {	-- Harick Boulderdrum
 					["coord"] = { 22.8, 16.6, IRONFORGE },
@@ -1800,6 +1847,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER 6.1.0
 				n(6294, {	-- Krom Stoutarm <Heirloom Curator>
 					["coord"] = { 74.6, 9.8, IRONFORGE },
+					["timeline"] = { ADDED_6_1_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						n(ARMOR, {
@@ -1852,48 +1900,40 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						n(HEIRLOOMS, {
 							gold(500, i(122338, {	-- Ancient Heirloom Armor Casing
-								["sym"] = { { "fill" } },	-- simply fill this item
+								["timeline"] = { ADDED_6_1_0 },
 							})),
 							gold(750, i(122339, {	-- Ancient Heirloom Scabbard
-								["sym"] = { { "fill" } },	-- simply fill this item
+								["timeline"] = { ADDED_6_1_0 },
 							})),
 							gold(1000, i(122340, {	-- Timeworn Heirloom Armor Casing
-								["sym"] = { { "fill" } },	-- simply fill this item
+								["timeline"] = { ADDED_6_1_0 },
 							})),
 							gold(1500, i(122341, {	-- Timeworn Heirloom Scabbard
-								["sym"] = { { "fill" } },	-- simply fill this item
+								["timeline"] = { ADDED_6_1_0 },
 							})),
 							gold(2000, i(151614, {	-- Weathered Heirloom Armor Casing
 								["timeline"] = { ADDED_7_2_5 },
-								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(3000, i(151615, {	-- Weathered Heirloom Scabbard
 								["timeline"] = { ADDED_7_2_5 },
-								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(5000, i(167731, {	-- Battle-Hardened Heirloom Armor Casing
 								["timeline"] = { ADDED_8_1_5 },
-								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(7500, i(167732, {	-- Battle-Hardened Heirloom Scabbard
 								["timeline"] = { ADDED_8_1_5 },
-								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(5000, i(187997, {	-- Eternal Heirloom Armor Casing
 								["timeline"] = { ADDED_9_1_5 },
-								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(7500, i(187998, {	-- Eternal Heirloom Scabbard
 								["timeline"] = { ADDED_9_1_5 },
-								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(5000, i(204336, {	-- Awakened Heirloom Armor Casing
 								["timeline"] = { ADDED_10_0_7 },
-								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 							gold(7500, i(204337, {	-- Awakened Heirloom Scabbard
 								["timeline"] = { ADDED_10_0_7 },
-								["sym"] = { { "fill" } },	-- simply fill this item
 							})),
 						}),
 						filter(TOYS, {
@@ -1961,7 +2001,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 50.6, 27.0, IRONFORGE },
 					["timeline"] = { ADDED_4_1_0 },
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = { {"sub", "common_recipes_vendor", 50482} },	-- Marith Lazuria <Jewelcrafting Supplies>
+					["sym"] = {
+						-- #if AFTER CATA
+						{ "sub", "common_recipes_vendor", 50480 },	-- Isabel Jones <Jewelcrafting Supplies>
+						-- #endif
+						{ "select","itemID",
+						52188,	-- Jeweler's Setting
+						20815,	-- Jeweler's Toolset/-Kit
+						-- #if BEFORE MOP
+						20824,	-- Simple Grinder
+						-- #endif
+						},
+					},
 				}),
 				n(5129, {	-- Lissyphus Finespindle
 					["coord"] = { 54.6, 88.2, IRONFORGE },
@@ -2081,7 +2132,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(8681, {	-- Outfitter Eric <Speciality Tailoring Supplies>
 					["coord"] = { 43.0, 29.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {
 						i(10314, {	-- Pattern: Lavender Mageweave Shirt (RECIPE!)
 							["isLimited"] = true,
 						}),
@@ -2097,7 +2148,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(10321, {	-- Pattern: Tuxedo Shirt (RECIPE!)
 							["isLimited"] = true,
 						}),
-					},
+					}),
 				}),
 				n(5154, {	-- Poranna Snowbraid <Tailoring Supplies>
 					["coord"] = { 43.8, 29.6, IRONFORGE },
@@ -2105,6 +2156,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = { {"sub", "common_recipes_vendor", 3364} },	-- Borya <Tailoring Supplies>
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {}),
 				}),
 				n(5108, {	-- Raena Flinthammer <Light Armor Merchant>
 					["coord"] = { 32.6, 58.0, IRONFORGE },
@@ -2149,6 +2201,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(5178, {	-- Soolie Berryfizz <Alchemy Supplies>
 					["coord"] = { 66.6, 54.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{ "select","itemID",
+						3371,	-- Empty-/Crystal Vial
+						-- #if BEFORE CATA
+						3372,	-- Leaded Vial
+						8925,	-- Crystal Vial
+						18256,	-- Imbued Vial
+						-- #endif
+						},
+					},
 					["groups"] = {
 						i(13478, {	-- Recipe: Elixir of Superior Defense (RECIPE!)
 							["isLimited"] = true,
@@ -2161,6 +2223,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(5162, {	-- Tansy Puddlefizz <Fishing Supplier>
 					["coord"] = { 47.8, 6.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{ "sub", "common_vendor", 4222 }},	-- Voloren <Fishing Supplies>
 					["groups"] = {
 						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
 						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
@@ -2194,40 +2257,45 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(15903),	-- Slicing Claw
 					},
 				}),
+				-- #if AFTER WRATH
+				n(30733, {	-- Thargen Heavyquilll <Inscription Supplies>
+					["coord"] = { 60.55, 43.65, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_3_0_2 },
+					["sym"] = {{ "sub", "common_vendor", 30730 }},	-- Stanly McCormick <Inscription Supplies>
+				}),
+				-- #endif
 				n(4259, {	-- Thurgrum Deepforge <Blacksmithing Supplies>
 					["coord"] = { 51.8, 41.2, IRONFORGE },
 					-- #if AFTER 4.3.0
 					["sym"] = {{ "sub", "common_recipes_vendor", 55684 }},	-- Jordan Smith <Blacksmithing Trainer & Supplies>
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = appendGroups(VANILLA_BLACKSMITHING_SUPPLIES, {
+						i(5956),	-- Blacksmith Hammer
+					}),
 				}),
 				n(5158, {	-- Tilli Thistlefuzz <Enchanting Supplies>
 					["coord"] = { 60.8, 44.2, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER CATA
 					["sym"] = { { "sub", "common_recipes_vendor", 1318 } },	-- Jessara Cordell <Enchanting Supplies>
 					-- #endif
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						-- #if BEFORE CATA
-						i(6342, {	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-							["isLimited"] = true,
-						}),
-						-- #endif
+					["groups"] = appendGroups(ENCHANTING_SUPPLIES, VANILLA_ENCHANTING_SUPPLIES, {
 						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-						i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-						i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-					},
+					}),
 				}),
 				n(5169, {	-- Tynnus Venomsprout
 					["coord"] = { 52.8, 13.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER MOP
 					["sym"] = {{"select","itemID",
 						4565,    -- Simple Dagger
 					}},
+					-- #endif
 				}),
 				n(8117, {	-- Wizbang Booms
 					["coord"] = { 31.8, 63.4, IRONFORGE },

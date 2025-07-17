@@ -5,116 +5,8 @@ local DF_ENGINEERING_KNOWLEDGE = 2027;
 local TWW_ENGINEERING_KNOWLEDGE = 2788;
 root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = ENGINEERING }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
-		ach(18901, {	-- Chromatic Calibration: Holo-Gogs
+		ach(18901, {	-- Chromatic Calibration: Holo-Gogs (automated)
 			iensemble(209062),	-- Ensemble: Chromatically Calibrated Holo-Gogs
-			crit(61677, {	-- Gnomish Power Goggles
-				["provider"] = { "i", 23828 },	-- Gnomish Power Goggles
-			}),
-			crit(61678, {	-- Deathblow X11 Goggles
-				["provider"] = { "i", 32478 },	-- Deathblow X11 Goggles
-			}),
-			crit(61679, {	-- Quad Deathblow X44 Goggles
-				["provider"] = { "i", 34353 },	-- Quad Deathblow X44 Goggles
-			}),
-			crit(61680, {	-- Visage Liquification Goggles
-				["provider"] = { "i", 42553 },	-- Visage Liquification Goggles
-			}),
-			crit(61681, {	-- Ultra-Spectropic Detection Goggles
-				["provider"] = { "i", 23762 },	-- Ultra-Spectropic Detection Goggles
-			}),
-			crit(61682, {	-- Cogspinner Goggles
-				["provider"] = { "i", 23758 },	-- Cogspinner Goggles
-			}),
-			crit(61683, {	-- Justicebringer 2000 Specs
-				["provider"] = { "i", 32472 },	-- Justicebringer 2000 Specs
-			}),
-			crit(61684, {	-- Justicebringer 3000 Specs
-				["provider"] = { "i", 35185 },	-- Justicebringer 3000 Specs
-			}),
-			crit(61685, {	-- Living Replicator Specs
-				["provider"] = { "i", 32475 },	-- Living Replicator Specs
-			}),
-			crit(61686, {	-- Primal-Attuned Goggles
-				["provider"] = { "i", 35184 },	-- Primal-Attuned Goggles
-			}),
-			crit(61687, {	-- Greensight Gogs
-				["provider"] = { "i", 42554 },	-- Greensight Gogs
-			}),
-			crit(61688, {	-- Surestrike Goggles v2.0
-				["provider"] = { "i", 32474 },	-- Surestrike Goggles v2.0
-			}),
-			crit(61689, {	-- Surestrike Goggles v3.0
-				["provider"] = { "i", 34356 },	-- Surestrike Goggles v3.0
-			}),
-			crit(61690, {	-- Hyper-Vision Goggles
-				["provider"] = { "i", 23763 },	-- Hyper-Vision Goggles
-			}),
-			crit(61691, {	-- Destruction Holo-Gogs
-				["provider"] = { "i", 32494 },	-- Destruction Holo-Gogs
-			}),
-			crit(61692, {	-- Annihilator Holo-Gogs
-				["provider"] = { "i", 34847 },	-- Annihilator Holo-Gogs
-			}),
-			crit(61693, {	-- Gnomish Battle Goggles
-				["provider"] = { "i", 23829 },	-- Gnomish Battle Goggles
-			}),
-			crit(61694, {	-- Tankatronic Goggles
-				["provider"] = { "i", 32473 },	-- Tankatronic Goggles
-			}),
-			crit(61695, {	-- Magnified Moon Specs
-				["provider"] = { "i", 32480 },	-- Magnified Moon Specs
-			}),
-			crit(61696, {	-- Hyper-Magnified Moon Specs
-				["provider"] = { "i", 35182 },	-- Hyper-Magnified Moon Specs
-			}),
-			crit(61697, {	-- Hard Khorium Goggles
-				["provider"] = { "i", 34357 },	-- Hard Khorium Goggles
-			}),
-			crit(61698, {	-- Armored Titanium Goggles
-				["provider"] = { "i", 42549 },	-- Armored Titanium Goggles
-			}),
-			crit(61699, {	-- Charged Titanium Specs
-				["provider"] = { "i", 42552 },	-- Charged Titanium Specs
-			}),
-			crit(61700, {	-- Wonderheal XT40 Shades
-				["provider"] = { "i", 32479 },	-- Wonderheal XT40 Shades
-			}),
-			crit(61701, {	-- Wonderheal XT68 Shades
-				["provider"] = { "i", 35183 },	-- Wonderheal XT68 Shades
-			}),
-			crit(61706, {	-- Unbreakable Healing Amplifiers
-				["provider"] = { "i", 44949 },	-- Unbreakable Healing Amplifiers
-			}),
-			crit(61702, {	-- Mechanized Snow Goggles
-				["providers"] = {
-					-- TODO: Check This when doing Engi
-					{ "i", 41112 },	-- Mechanized Snow Goggles
-					{ "i", 44740 },	-- Mechanized Snow Goggles
-					{ "i", 44741 },	-- Mechanized Snow Goggles
-					{ "i", 44742 },	-- Mechanized Snow Goggles
-				},
-			}),
-			crit(61707, {	-- Furious Gizmatic Goggles
-				["provider"] = { "i", 32461 },	-- Furious Gizmatic Goggles
-			}),
-			crit(61708, {	-- Mayhem Projection Goggles
-				["provider"] = { "i", 34354 },	-- Mayhem Projection Goggles
-			}),
-			crit(61709, {	-- Weakness Spectralizers
-				["provider"] = { "i", 42550 },	-- Weakness Spectralizers
-			}),
-			crit(61710, {	-- Gadgetstorm Goggles
-				["provider"] = { "i", 32476 },	-- Gadgetstorm Goggles
-			}),
-			crit(61711, {	-- Lightning Etched Specs
-				["provider"] = { "i", 34355 },	-- Lightning Etched Specs
-			}),
-			crit(61712, {	-- Truesight Ice Blinders
-				["provider"] = { "i", 42551 },	-- Truesight Ice Blinders
-			}),
-			crit(61713, {	-- Electroflux Sight Enhancers
-				["provider"] = { "i", 42555 },	-- Electroflux Sight Enhancers
-			}),
 		}),
 		ach(18875),	-- Dangerous Devices IV
 		ach(18874),	-- Dangerous Devices III
@@ -550,55 +442,13 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		-- #endif
 	}),
 	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
-		ach(18908, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Bio-Optic Killshades
+		ach(18908, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Bio-Optic Killshades (automated)
 			iensemble(209063),	-- Ensemble: Chromatically Calibrated Bio-Optic Killshades
-			crit(61820, {	-- Reinforced Bio-Optic Killshades
-				["provider"] = { "i", 59359 },	-- Reinforced Bio-Optic Killshades
-			}),
-			crit(61821, {	-- Specialized Bio-Optic Killshades
-				["provider"] = { "i", 59448 },	-- Specialized Bio-Optic Killshades
-			}),
-			crit(61822, {	-- Deadly Bio-Optic Killshades
-				["provider"] = { "i", 59456 },	-- Deadly Bio-Optic Killshades
-			}),
-			crit(61823, {	-- Energized Bio-Optic Killshades
-				["provider"] = { "i", 59458 },	-- Energized Bio-Optic Killshades
-			}),
-			crit(61824, {	-- Agile Bio-Optic Killshades
-				["provider"] = { "i", 59455 },	-- Agile Bio-Optic Killshades
-			}),
-			crit(61825, {	-- Camouflage Bio-Optic Killshades
-				["provider"] = { "i", 59453 },	-- Camouflage Bio-Optic Killshades
-			}),
-			crit(61826, {	-- Lightweight Bio-Optic Killshades
-				["provider"] = { "i", 59449 },	-- Lightweight Bio-Optic Killshades
-			}),
 		})),
 	})),
 	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
-		ach(18905, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Retinal Armor
+		ach(18905, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Retinal Armor (automated)
 			iensemble(209064),	-- Ensemble: Chromatically Calibrated Retinal Armor
-			crit(61781, {	-- Lightweight Retinal Armor
-				["provider"] = { "i", 77533 },	-- Lightweight Retinal Armor
-			}),
-			crit(61782, {	-- Agile Retinal Armor
-				["provider"] = { "i", 77534 },	-- Agile Retinal Armor
-			}),
-			crit(61783, {	-- Camouflage Retinal Armor
-				["provider"] = { "i", 77535 },	-- Camouflage Retinal Armor
-			}),
-			crit(61784, {	-- Deadly Retinal Armor
-				["provider"] = { "i", 77536 },	-- Deadly Retinal Armor
-			}),
-			crit(61785, {	-- Energized Retinal Armor
-				["provider"] = { "i", 77537 },	-- Energized Retinal Armor
-			}),
-			crit(61786, {	-- Specialized Retinal Armor
-				["provider"] = { "i", 77538 },	-- Specialized Retinal Armor
-			}),
-			crit(61787, {	-- Reinforced Retinal Armor
-				["provider"] = { "i", 77539 },	-- Reinforced Retinal Armor
-			}),
 		})),
 	})),
 	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
@@ -607,44 +457,8 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		}),
 	})),
 	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
-		ach(18906, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Cranial Cannons
+		ach(18906, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Cranial Cannons (automated)
 			iensemble(209066),	-- Ensemble: Chromatically Calibrated Cranial Cannons
-			crit(61789, {	-- Blink-Trigger Headgun
-				["provider"] = { "i", 132500 },	-- Blink-Trigger Headgun
-			}),
-			crit(61791, {	-- Tactical Headgun
-				["provider"] = { "i", 132501 },	-- Tactical Headgun
-			}),
-			crit(61794, {	-- Bolt-Action Headgun
-				["provider"] = { "i", 132502 },	-- Bolt-Action Headgun
-			}),
-			crit(61797, {	-- Reinforced Headgun
-				["provider"] = { "i", 132503 },	-- Reinforced Headgun
-			}),
-			crit(61800, {	-- Semi-Automagic Cranial Cannon
-				["provider"] = { "i", 132504 },	-- Semi-Automagic Cranial Cannon
-			}),
-			crit(61803, {	-- Sawed-Off Cranial Cannon
-				["provider"] = { "i", 132505 },	-- Sawed-Off Cranial Cannon
-			}),
-			crit(61806, {	-- Double-Barreled Cranial Cannon
-				["provider"] = { "i", 132506 },	-- Double-Barreled Cranial Cannon
-			}),
-			crit(61809, {	-- Ironsight Cranial Cannon
-				["provider"] = { "i", 132507 },	-- Ironsight Cranial Cannon
-			}),
-			crit(61812, {	-- Tailored Skullblasters
-				["provider"] = { "i", 144331 },	-- Tailored Skullblasters
-			}),
-			crit(61813, {	-- Rugged Skullblasters
-				["provider"] = { "i", 144332 },	-- Rugged Skullblasters
-			}),
-			crit(61814, {	-- Chain Skullblasters
-				["provider"] = { "i", 144333 },	-- Chain Skullblasters
-			}),
-			crit(61815, {	-- Heavy Skullblasters
-				["provider"] = { "i", 144334 },	-- Heavy Skullblasters
-			}),
 		})),
 		n(QUESTS, {
 			q(40545, {	-- Aww Scrap!
@@ -1086,20 +900,8 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		}),
 	})),
 	expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
-		ach(18907, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Ectoplasmic Specs
+		ach(18907, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Chromatic Calibration: Ectoplasmic Specs (automated)
 			iensemble(209067),	-- Ensemble: Chromatically Calibrated Ectoplasmic Specs
-			crit(61816, {	-- Flexible Ectoplasmic Specs
-				["provider"] = { "i", 172905 },	-- Flexible Ectoplasmic Specs
-			}),
-			crit(61817, {	-- Grounded Ectoplasmic Specs
-				["provider"] = { "i", 172906 },	-- Grounded Ectoplasmic Specs
-			}),
-			crit(61818, {	-- Articulated Ectoplasmic Specs
-				["provider"] = { "i", 172907 },	-- Articulated Ectoplasmic Specs
-			}),
-			crit(61819, {	-- Reinforced Ectoplasmic Specs
-				["provider"] = { "i", 172908 },	-- Reinforced Ectoplasmic Specs
-			}),
 		})),
 	})),
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
@@ -1373,9 +1175,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["questID"] = 75186,
 				["g"] = {
 					i(204475),	-- Busted Wyrmhole Generator
-					i(205954, {	-- Three-Dimensional Compass
-						["questID"] = 76017,
-					}),
+					i(205954),	-- Three-Dimensional Compass (CI!)
 				},
 			})),
 			o(392582,	-- Defective Survival Pack
@@ -2780,7 +2580,7 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Springy Arachnoweave",
-					["timeline"] = { ADDED_3_0_3, REMOVED_4_0_1 },
+					["timeline"] = { ADDED_3_0_3, DELETED_4_0_1 },
 					["recipeID"] = 63765,
 				},
 			},

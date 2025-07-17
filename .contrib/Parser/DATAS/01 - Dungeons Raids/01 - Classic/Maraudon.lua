@@ -505,14 +505,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["creatureID"] = 12201,
 						["modelScale"] = 2,
 						["groups"] = {
-							ach(640, {	-- Maraudon
-								-- #if BEFORE WRATH
-								["sourceQuests"] = {
-									7065,	-- Corruption of Earth and Seed
-									7064,	-- Corruption of Earth and Seed
-								},
-								-- #endif
-							}),
+							ach(640),	-- Maraudon
 							ach(5049, {	-- Maraudon Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),

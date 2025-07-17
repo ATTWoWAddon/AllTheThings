@@ -7,31 +7,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["icon"] = 236764,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(849),	-- Explore Feralas
+				ach(849),	-- Explore Feralas
 				ach(4932, {	-- Feralas Quests
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(38913, {	-- The Fate of Taerar
-							["sourceQuest"] = 25398,	-- Sealing the Dream
-						}),
-						crit(38914, {	-- The Twilight Sermon
-							["sourceQuest"] = 25333,	-- Might of the Sentinels
-						}),
-						crit(38915, {	-- Freed
-							["sourceQuest"] = 26401,	-- Return to Vestia
-						}),
-						crit(38916, {	-- Forces of Nature
-							["sourceQuest"] = 25468,	-- Forces of Nature: Faerie Dragons
-						}),
-						crit(38917, {	-- Forces of Nature
-							["sourceQuest"] = 25469,	-- Forces of Nature: Mountain Giants
-						}),
-						crit(38918, {	-- The Dragons of Nightmare
-							["sourceQuest"] = 25438,	-- Ysondre's Farewell
-						}),
-					},
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
 					-- #else
 					["sourceQuests"] = {
 						25398,	-- Sealing the Dream
@@ -46,24 +27,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4979, {	-- Feralas Quests
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					-- #if AFTER MOP
-					["groups"] = {
-						crit(38919, {	-- The Fate of Taerar
-							["sourceQuest"] = 25250,	-- Sealing the Dream
-						}),
-						crit(38920, {	-- The Twilight Sermon
-							["sourceQuest"] = 25329,	-- Might of the Stonemaul
-						}),
-						crit(38921, {	-- Muisek
-							["sourceQuest"] = 25391,	-- Weapons of Spirit
-						}),
-						crit(38922, {	-- Freed
-							["sourceQuest"] = 25645,	-- Return to Sage Palerunner
-						}),
-						crit(38923, {	-- The Dragons of Nightmare
-							["sourceQuest"] = 25383,	-- Ysondre's Farewell
-						}),
-					},
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
 					-- #else
 					["sourceQuests"] = {
 						25250,	-- Sealing the Dream
@@ -191,6 +156,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			petbattles({
+				n(66352, {	-- Traitor Gluk <Master Pet Tamer>
+					["coord"] = { 59.6, 49.6, FERALAS },
+					["description"] = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nGluk's pets are level 13 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
+					["timeline"] = { ADDED_5_0_4 },
+					["petBattleLvl"] = 13,
+					["groups"] = {
+						q(31871, {	-- Traitor Gluk
+							["sourceAchievement"] = 6602,	-- Taming Kalimdor
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
+				}),
+			}),
 			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					n(7948, {	-- Kylanna Windwhisper <Alchemy Trainer>
@@ -202,18 +183,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 				}),
 				prof(FISHING, {
-					-- #if ANYCLASSIC
 					i(16967, {	-- Feralas Ahi
-						["coord"] = { 62.0, 52.0, FERALAS },
-						["description"] = "Best fished at 62.0 52.0",
+						["coords"] = {
+							-- #if BEFORE 4.0.3
+							{ 62.0, 52.0, FERALAS },	-- Verdantis River
+							-- #else
+							{ 62.9, 51.5, FERALAS },	-- Verdantis River
+							-- #endif
+						},
+						["description"] = "Best fished at the given coords.",
 					}),
-					-- #endif
-					-- #if BEFORE CATA
-					o(180751),	-- Floating Wreckage
-					-- #endif
-					-- #if AFTER CATA
-					o(180685),	-- Waterlogged Wreckage
-					-- #endif
 				}),
 				prof(LEATHERWORKING, {
 					n(7870, {	-- Caryssia Moonhunter <Tribal Leatherworking Trainer>
@@ -233,6 +212,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER CATA
 				prof(SKINNING, {
 					i(7392, {	-- Green Whelp Scale
+						["coord"] = { 47.8, 8.1, FERALAS },
 						["cr"] = 39384,	-- Noxious Whelp
 					}),
 				}),
@@ -686,6 +666,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 74.4, 43.3, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(9596),	-- Faerie Dragon Muisek (QI!)
+						i(9620),	-- Faerie Dragon Muisek Vessel (QI!)
+					},
 				}),
 				q(3125, {	-- Faerie Dragon Muisek
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
@@ -815,7 +799,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26402, {	-- General Shandris Feathermoon
 					["qg"] = 40032,	-- Telaron Windflight
 					["sourceQuest"] = 25398,	-- Sealing the Dream
-					["description"] = "If you picked up or done any quest at Feathermoon Stronghold, this quest stops being available",
+					-- TODO: ideally figure out proper lockCriteria instead of description
+					["description"] = "If you completed or currently have active any quest at Feathermoon Stronghold, this quest stops being available",
 					["coord"] = { 50.7, 17.2, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -883,7 +868,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Hatecrest Naga killed
 							["providers"] = {
-								{ "n", 39750},	-- Hatecrest Naga Kill Credit Bunny
 								{ "n", 39728},	-- Hatecrest Warrior
 								{ "n", 39733},	-- Hatecrest Sorceress
 							},
@@ -906,6 +890,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.2, 48.0, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(9595),	-- Hippogryph Muisek (QI!)
+						i(9619),	-- Hippogryph Muisek Vessel (QI!)
+					},
 				}),
 				q(3124, {	-- Hippogryph Muisek
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
@@ -1215,6 +1203,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 74.4, 43.3, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(9597),	-- Mountain Giant Muisek (QI!)
+						i(9621),	-- Mountain Giant Muisek Vessel (QI!)
+					},
 				}),
 				q(3127, {	-- Mountain Giant Muisek
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
@@ -1314,6 +1306,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(131423, {	-- Spaulders of the Ogre-Nabber
 							["timeline"] = { ADDED_7_0_3 },
 						}),
+						--
+						i(52833),	-- Modified Soul Orb (QI!)
 					},
 				}),
 				q(25344, {	-- Ogre Abduction [H]
@@ -1341,6 +1335,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(131418, {	-- Spaulders of the Ogre-Nabber
 							["timeline"] = { ADDED_7_0_3 },
 						}),
+						--
+						i(52833),	-- Modified Soul Orb (QI!)
 					},
 				}),
 				q(27134, {	-- Ogre in the Field
@@ -1561,7 +1557,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25398, {	-- Sealing the Dream [A]
 					["providers"] = {
 						{ "n", 40032 },	-- Telaron Windflight
-						{ "i", 52576 },	-- Ysondre's Tear
+						{ "i", 52576 },	-- Ysondre's Tear (QI!) not prov
 					},
 					["sourceQuests"] = {
 						25396,	-- Tears of Stone
@@ -1585,7 +1581,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25250, {	-- Sealing the Dream [H]
 					["providers"] = {
 						{ "n", 39377 },	-- Konu Runetotem
-						{ "i", 52576 },	-- Ysondre's Tear
+						{ "i", 52576 },	-- Ysondre's Tear (QI!) not prov
 					},
 					["sourceQuests"] = {
 						25237,	-- Tears of Stone
@@ -1806,6 +1802,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.2, 48.0, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(9594),	-- Beast Muisek (QI!)
+						i(9618),	-- Beast Muisek Vessel (QI!)
+					},
 				}),
 				q(3123, {	-- Testing the Vessel
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
@@ -1851,6 +1851,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(54950, {	-- Swiftstride Boots
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						--
+						i(9266),	-- Woodpaw Battle Plans (QI!)
 					},
 				}),
 				q(2903, {	-- The Battle Plans
@@ -1902,6 +1904,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.2, 48.0, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = { i(55175) },	-- Hippogryph Muisek Vessel (QI!)
 				}),
 				q(2844, {	-- The Giant Guardian
 					["qg"] = 7765,	-- Rockbiter
@@ -2379,6 +2382,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 74.4, 43.3, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(9593),	-- Treant Muisek (QI!)
+						i(9606),	-- Treant Muisek Vessel (QI!)
+					},
 				}),
 				q(3126, {	-- Treant Muisek
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
@@ -3193,7 +3200,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(7089, {	-- Pattern: Azure Silk Cloak
+						i(7089, {	-- Pattern: Azure Silk Cloak (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -3390,6 +3397,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 5300,	-- Frayfeather Hippogryph
 				}),
 				-- #endif
+				i(8705, {	-- OOX-22/FE Distress Beacon
+					["description"] = "This item has a chance to drop from any creature in Feralas.",
+				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, i(216645, {	-- Mote of Darkness
 					["provider"] = { "n", 218241 },	-- Shadowy Figure

@@ -1,0 +1,108 @@
+1.15.1.53247
+r(439105),	-- Big Voodoo Mask
+r(439108),	-- Big Voodoo Robe
+r(439110),	-- Guardian Leather Bracers
+r(439112),	-- Guardian Belt
+r(439118),	-- Turtle Scale Gloves
+1.15.3.55348
+r(461645),	-- Honed Blue Dragonscale Shoulders
+r(461649),	-- Living Green Dragonscale Leggings
+r(461673),	-- Honed Blue Dragonscale Breastplate
+r(461677),	-- Living Green Dragonscale Gauntlets \\ Living Green Dragonscale Leggings
+r(461692),	-- Synthetic Gordok Ogre Suit
+r(461720),	-- Living Green Dragonscale Breastplate
+r(461722),	-- Devilcore Gauntlets
+r(461724),	-- Devilcore Leggings
+r(462227),	-- Honed Blue Dragonscale Leggings
+1.15.5.57537
+r(1213717),	-- Sandstalker Bracers
+r(1213720),	-- Sandstalker Gauntlets
+r(1213723),	-- Sandstalker Breastplate
+r(1213726),	-- Spitfire Bracers
+r(1213728),	-- Spitfire Gauntlets
+r(1213731),	-- Spitfire Breastplate
+r(1213734),	-- Bramblewood Belt
+r(1213736),	-- Bramblewood Boots
+r(1213738),	-- Bramblewood Helm
+r(1213751),	-- Dreamscale Breastplate
+r(1214303),	-- Dreamscale Kilt
+1.15.6.58725
+r(1223774),	-- Icy Scale Breastplate
+r(1223776),	-- Icy Scale Gauntlets
+r(1223778),	-- Icy Scale Bracers
+r(1223780),	-- Polar Tunic
+r(1223782),	-- Polar Gloves
+r(1223784),	-- Polar Bracers
+1.15.7.59706
+r(1224615),	-- Scarlet Infiltrator's Bandana
+r(1224616),	-- Scarlet Infiltrator's Shoulderpads
+r(1224617),	-- Scarlet Infiltrator's Vest
+r(1224618),	-- Scarlet Infiltrator's Bracers
+r(1224619),	-- Scarlet Infiltrator's Gloves
+r(1224620),	-- Scarlet Infiltrator's Belt
+r(1224621),	-- Scarlet Infiltrator's Trousers
+r(1224622),	-- Scarlet Infiltrator's Shoes
+r(1224623),	-- Scarlet Huntsman's Coif
+r(1224624),	-- Scarlet Huntsman's Pauldrons
+r(1224625),	-- Scarlet Huntsman's Chain
+r(1224626),	-- Scarlet Huntsman's Wristguards
+r(1224627),	-- Scarlet Huntsman's Handguards
+r(1224628),	-- Scarlet Huntsman's Clasp
+r(1224629),	-- Scarlet Huntsman's Legguards
+r(1224630),	-- Scarlet Huntsman's Boots
+r(1226689),	-- Scarlet Quiver
+r(1226690),	-- Scarlet Ammo Pouch
+
+
+
+
+Missing in Leatherworking
+
+1.15.3.55348
+r(461645),	-- Honed Blue Dragonscale Shoulders
+r(461649),	-- Living Green Dragonscale Leggings
+r(461673),	-- Honed Blue Dragonscale Breastplate
+r(461677),	-- Living Green Dragonscale Gauntlets \\ Living Green Dragonscale Leggings
+r(461692),	-- Synthetic Gordok Ogre Suit
+r(461720),	-- Living Green Dragonscale Breastplate
+r(461722),	-- Devilcore Gauntlets
+r(461724),	-- Devilcore Leggings
+r(462227),	-- Honed Blue Dragonscale Leggings
+1.15.5.57537
+r(1213717),	-- Sandstalker Bracers
+r(1213720),	-- Sandstalker Gauntlets
+r(1213723),	-- Sandstalker Breastplate
+r(1213726),	-- Spitfire Bracers
+r(1213728),	-- Spitfire Gauntlets
+r(1213731),	-- Spitfire Breastplate
+r(1213734),	-- Bramblewood Belt
+r(1213736),	-- Bramblewood Boots
+r(1213738),	-- Bramblewood Helm
+r(1213751),	-- Dreamscale Breastplate
+r(1214303),	-- Dreamscale Kilt
+1.15.6.58725
+r(1223774),	-- Icy Scale Breastplate
+r(1223776),	-- Icy Scale Gauntlets
+r(1223778),	-- Icy Scale Bracers
+r(1223780),	-- Polar Tunic
+r(1223782),	-- Polar Gloves
+r(1223784),	-- Polar Bracers
+1.15.7.59706
+r(1224615),	-- Scarlet Infiltrator's Bandana
+r(1224616),	-- Scarlet Infiltrator's Shoulderpads
+r(1224617),	-- Scarlet Infiltrator's Vest
+r(1224618),	-- Scarlet Infiltrator's Bracers
+r(1224619),	-- Scarlet Infiltrator's Gloves
+r(1224620),	-- Scarlet Infiltrator's Belt
+r(1224621),	-- Scarlet Infiltrator's Trousers
+r(1224622),	-- Scarlet Infiltrator's Shoes
+r(1224623),	-- Scarlet Huntsman's Coif
+r(1224624),	-- Scarlet Huntsman's Pauldrons
+r(1224625),	-- Scarlet Huntsman's Chain
+r(1224626),	-- Scarlet Huntsman's Wristguards
+r(1224627),	-- Scarlet Huntsman's Handguards
+r(1224628),	-- Scarlet Huntsman's Clasp
+r(1224629),	-- Scarlet Huntsman's Legguards
+r(1224630),	-- Scarlet Huntsman's Boots
+r(1226689),	-- Scarlet Quiver
+r(1226690),	-- Scarlet Ammo Pouch

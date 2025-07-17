@@ -7,6 +7,7 @@ DEFENSE_PROTOCOL_GAMMA = createHeader({
 		de = "Verteidigungsprotokoll Gamma",
 		fr = "Protocole de défense Gamma",
 		-- it = "[Defense Protocol Gamma]",
+		mx = "Protocolo de defensa Gamma",
 		pt = "Protocolo de Defesa Gama",
 		ru = "Защитный протокол \"Гамма\"",
 		ko = "방어 프로토콜 감마",

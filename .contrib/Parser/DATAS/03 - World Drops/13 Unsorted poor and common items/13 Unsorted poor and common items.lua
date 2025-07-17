@@ -78,14 +78,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["sharedDescrip
 			filter(MISC, {
 			--	i(43486),	-- Mohawk Mask	-- something removed
 			}),
-			filter(FINGER_F, {
-				i(7341),	-- Cubic Zirconia Ring	-- sold by many vendors
-				i(7340),	-- Flawless Diamond Solitaire	-- sold by many vendors
-				i(7339),	-- Miniscule Diamond Ring	-- sold by many vendors
-				i(7338),	-- Mood Ring	-- sold by many vendors
-				i(7342),	-- Silver Piffeny Band	-- sold by many vendors
-				i(7337),	-- The Rock	-- sold by many vendors
-			}),
 		}),
 	}),
 }));

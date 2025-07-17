@@ -364,6 +364,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					["qg"] = 23149,	-- Mistress of the Mines
 					["sourceQuest"] = 11081,	-- The Great Murkblood Revolt
 					["coord"] = { 63.0, 87.8, SHADOWMOON_VALLEY },
+					["groups"] = {
+						objective(1, {	-- 0/1 Hand of the Overseer
+							["provider"] = { "i", 32734 },	-- Hand of the Overseer
+						}),
+						objective(2, {	-- 0/1 Murkblood Information Gathered
+							["provider"] = { "n", 23309 },	-- Murkblood Overseer
+						}),
+					},
 				}),
 				q(11084, {	-- Stand Tall, Captain!
 					["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
@@ -378,7 +386,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					["qg"] = 23427,	-- Illidari Lord Balthas
 					["sourceQuest"] = 11089,	-- The Soul Cannon of Reth'hedron
 					["coord"] = { 66.2, 85.6, SHADOWMOON_VALLEY },
+					["maps"] = { NAGRAND },
 					["groups"] = {
+						objective(1, {	-- Subdue Reth'hedron the Subduer
+							["providers"] = {
+								{ "n", 22357 },	-- Reth'hedron the Subduer
+								{ "i", 32825 },	-- Soul Cannon
+							},
+							["coord"] = { 10.6, 41.4, NAGRAND },
+						}),
 						i(32871),	-- Horns of the Illidari
 						i(32869),	-- Illidari Lord's Tunic
 						i(32872),	-- Illidari Rod of Discipline
@@ -456,6 +472,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					["qg"] = 23427,	-- Illidari Lord Balthas
 					["sourceQuest"] = 11084,	-- Stand Tall, Captain!
 					["coord"] = { 66.2, 85.6, SHADOWMOON_VALLEY },
+					["maps"] = { TEROKKAR_FOREST },
 					["groups"] = {
 						objective(1, {	-- 0/2 Felsteel Bar
 							["providers"] = {
@@ -474,7 +491,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 						}),
 						objective(4, {	-- 0/1 Flawless Arcane Essence
 							["provider"] = { "i", 32822 },	-- Flawless Arcane Essence
-							["cr"] = 23100,	-- Flawless Arcane Elemental
+							["coord"] = { 44.0, 41.0, TEROKKAR_FOREST },
+							["crs"] = {
+								23100,	-- Flawless Arcane Elemental
+								23093,	-- Sar'this
+							},
 						}),
 					},
 				}),

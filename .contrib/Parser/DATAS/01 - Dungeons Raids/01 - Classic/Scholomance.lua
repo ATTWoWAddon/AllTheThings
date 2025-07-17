@@ -8,7 +8,7 @@ local ignoreTimeline = function(item)	-- Items applied with this were never actu
 	return item;
 end
 local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4, ADDED_10_1_5 } }, {
-	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4, ADDED_10_1_5 } }, {
 		ach(18368, {	-- Memory of Scholomance
 			["sourceQuest"] = 76249,	-- Memory of Scholomance
 			["maps"] = { EASTERN_PLAGUELANDS, STRATHOLME, WESTERN_PLAGUELANDS },
@@ -22,14 +22,9 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				["_npcs"] = { 10506 },
 			}),
 		})),
-		ach(645, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 } }, {	-- Scholomance
-			crit(548, {	-- Ras Frostwhisper
-				["_npcs"] = { 10508 },	-- Ras Frostwhisper
-			}),
-			crit(549, {	-- Darkmaster Gandling
-				["_npcs"] = { 1853 },	-- Darkmaster Gandling
-			}),
-		})),
+		-- #if BEFORE 5.0.4
+		ach(645),	-- Scholomance (automated)
+		-- #endif
 		ach(5054, {	-- Scholomance Guild Run
 			["timeline"] = { ADDED_4_0_3 },
 		}),
@@ -1742,7 +1737,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				["description"] = "Drops only with equipped Argent Dawn Commission",
 				["timeline"] = { ADDED_10_1_5 },
 			}),
-			i(14514, {	-- Pattern: Robe of the Void
+			i(14514, {	-- Pattern: Robe of the Void (RECIPE!)
 				-- #if TBC
 				-- During TBC this was made exclusively usable by Warlocks, then that change was reverted with Wrath.
 				["classes"] = { WARLOCK },
@@ -2008,45 +2003,73 @@ table.insert(SCHOLOMANCE_GROUPS, n(createHeader({
 }));
 -- #endif
 
+-- #if AFTER 5.0.4
 table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
-	n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
-		o(403552, {	-- Eva's Femur
-			["description"] = "To start unlocking old Scholomance, you must first do a normal run of the MoP-Revamped Scholomance all the way to the final boss, Darkmaster Gandling. Once you complete the run, you must go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room), and at the top left portion of the room, you will be able to loot the first item of the secret, Eva's Femur.",
-			["sourceQuests"] = { 76248 },	-- Eva Sarkhoff
+	["timeline"] = { ADDED_5_0_4 },
+	["groups"] = {
+		n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+			o(403552, {	-- Eva's Femur
+				["description"] = "To start unlocking old Scholomance, you must first do a normal run of the MoP-Revamped Scholomance all the way to the final boss, Darkmaster Gandling. Once you complete the run, you must go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room), and at the top left portion of the room, you will be able to loot the first item of the secret, Eva's Femur.",
+				["sourceQuests"] = { 76248 },	-- Eva Sarkhoff
+				["groups"] = {
+					i(206364),	-- Eva's Femur
+				},
+			}),
+			o(403498, {	-- Eva's Journal
+				["description"] = "Located in new Scholomance, on a bookshelf in the Viewing Room (the room right before Darkmaster Gandling), to the right of the entrance of the corridor that leads to Darkmaster Gandling. The book is very hard to see and click, hidden behind other books on the middle shelf. The book is noticeably brighter than other books in the shelf.\n\nLook at the back of the bookshelf.",
+				["sourceQuests"] = { 76248 },	-- Eva Sarkhoff
+				["groups"] = {
+					i(206346, {	-- Eva's Journal
+						["description"] = "Use at 69.7, 71.7 outside the Scholomance Dungeon",
+					}),
+				},
+			}),
+		})),
+		n(206014, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Eva Sarkhoff
+			["description"] = "Go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (Upper level, South (center) room).\nAt the South-East area of the room, use the Krastinov's Bag of Horrors toy to spawn Eva, then click off the buff so you can talk with her.\nShe will give you the Inert Spectral Essence.",
+			["provider"] = {"i",88566},	-- Krastinov's Bag of Horrors
+			["questID"] = 76248,
 			["groups"] = {
-				i(206364),	-- Eva's Femur
+				i(206365),	-- Inert Spectral Essence
+				hqt(76250, name(HEADERS.Item, 13544, {	-- Spectral Essence
+					["cost"] = {
+						{ "i", 20520, 3 },	-- 3x Dark Rune
+						{ "i", 12808, 5 },	-- 5x Essence of Undeath
+						{ "i", 206365, 1 },	-- 1x Inert Spectral Essence
+					},
+					-- ["lockCriteria"] = {},	-- cannot be triggered if Spectral Essence already in player inventory from Vanilla
+					["g"] = {
+						i(13544),	-- Spectral Essence
+					},
+				})),
 			},
+		})),
+		n(59613, {	-- Professor Slate <Potions Master>
+			["timeline"] = { ADDED_5_0_4 },
+			["groups"] = bubbleDown({["ignoreBonus"] = true},{
+				i(85580, {	-- Empty Polyformic Acid Vial
+					["description"] = "Use this at the table nearby to apply the appearance, or to store the appearance once appiled.",
+					["groups"] = {
+						i(85589),	-- Nearly Full Vial of Polyformic Acid
+						i(85592),	-- Half Full Vial of Polyformic Acid
+						i(85593),	-- Nearly Empty Vial of Polyformic Acid
+					},
+				}),
+			}),
 		}),
-		o(403498, {	-- Eva's Journal
-			["description"] = "Located in new Scholomance, on a bookshelf in the Viewing Room (the room right before Darkmaster Gandling), to the right of the entrance of the corridor that leads to Darkmaster Gandling. The book is very hard to see and click, hidden behind other books on the middle shelf. The book is noticeably brighter than other books in the shelf.\n\nLook at the back of the bookshelf.",
-			["sourceQuests"] = { 76248 },	-- Eva Sarkhoff
+		e(684, {	-- Darkmaster Gandling
+			["creatureID"] = 59080,	-- Darkmaster Gandling
+			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
-				i(206346, {	-- Eva's Journal
-					["description"] = "Use at 69.7, 71.7 outside the Scholomance Dungeon",
+				ach(645),	-- Scholomance
+				ach(5054, {	-- Scholomance Guild Run
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 			},
 		}),
-	})),
-	n(206014, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Eva Sarkhoff
-		["description"] = "Go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (Upper level, South (center) room).\nAt the South-East area of the room, use the Krastinov's Bag of Horrors toy to spawn Eva, then click off the buff so you can talk with her.\nShe will give you the Inert Spectral Essence.",
-		["provider"] = {"i",88566},	-- Krastinov's Bag of Horrors
-		["questID"] = 76248,
-		["groups"] = {
-			i(206365),	-- Inert Spectral Essence
-			hqt(76250, name(HEADERS.Item, 13544, {	-- Spectral Essence
-				["cost"] = {
-					{ "i", 20520, 3 },	-- 3x Dark Rune
-					{ "i", 12808, 5 },	-- 5x Essence of Undeath
-					{ "i", 206365, 1 },	-- 1x Inert Spectral Essence
-				},
-				-- ["lockCriteria"] = {},	-- cannot be triggered if Spectral Essence already in player inventory from Vanilla
-				["g"] = {
-					i(13544),	-- Spectral Essence
-				},
-			})),
-		},
-	})),
-}))
+	},
+}));
+-- #endif
 table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.NORMAL, {
 	n(QUESTS, sharedData({["modID"] = 0},{
 		q(28756, {	-- Aberrations of Bone
@@ -2146,27 +2169,10 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.NORMAL, {
 			i(88350),	-- Leggings of Unleashed Anguish
 		},
 	}),
-	n(59613, {	-- Professor Slate <Potions Master>
-		["timeline"] = { ADDED_5_0_4 },
-		["groups"] = bubbleDown({["ignoreBonus"] = true},{
-			i(85580, {	-- Empty Polyformic Acid Vial
-				["description"] = "Use this at the table nearby to apply the appearance, or to store the appearance once appiled.",
-				["groups"] = {
-					i(85589),	-- Nearly Full Vial of Polyformic Acid
-					i(85592),	-- Half Full Vial of Polyformic Acid
-					i(85593),	-- Nearly Empty Vial of Polyformic Acid
-				},
-			}),
-		}),
-	}),
 	e(684, {	-- Darkmaster Gandling
 		["creatureID"] = 59080,
 		["timeline"] = { ADDED_5_0_4 },
 		["groups"] = {
-			ach(645),	-- Scholomance
-			ach(5054, {	-- Scholomance Guild Run
-				["timeline"] = { ADDED_5_0_4 },
-			}),
 			i(88362),	-- Shoulderguards of Painful Lessons
 			i(88357),	-- Vigorsteel Spaulders
 			i(88361),	-- Gloves of Explosive Pain
@@ -2182,6 +2188,40 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 	["timeline"] = { ADDED_5_0_4 },
 	["lvl"] = 90,
 	["groups"] = {
+		n(ACHIEVEMENTS, {
+			ach(6715, {	-- Polyformic Acid Science
+				["timeline"] = { ADDED_5_1_0 },
+				["groups"] = sharedData({
+					["cost"] = {
+						{ "i", 85589, 1 },	-- Nearly Full Vial of Polyformic Acid
+						{ "i", 85592, 1 },	-- Half Full Vial of Polyformic Acid
+						{ "i", 85593, 1 },	-- Nearly Empty Vial of Polyformic Acid
+					},
+				},{
+					crit(19603, {	-- Commander Ri'mok
+						["_encounter"] = { 676, DIFFICULTY.DUNGEON.HEROIC },
+					}),
+					crit(19605, {	-- Liu Flameheart
+						["_encounter"] = { 658, DIFFICULTY.DUNGEON.HEROIC },
+					}),
+					crit(19606, {	-- Gu Cloudstrike
+						["_encounter"] = { 673, DIFFICULTY.DUNGEON.HEROIC },
+					}),
+					crit(19609, {	-- Trial of the King
+						["_encounter"] = { 708, DIFFICULTY.DUNGEON.HEROIC },
+					}),
+					crit(19604, {	-- Vizier Jin'bak
+						["_encounter"] = { 693, DIFFICULTY.DUNGEON.HEROIC },
+					}),
+					crit(19608, {	-- Yan-Zhu the Uncasked
+						["_encounter"] = { 670, DIFFICULTY.DUNGEON.HEROIC },
+					}),
+				}),
+			}),
+			ach(6396, {	-- Sanguinarian
+				["crs"] = { 59368 },	-- Krastinovian Carver
+			}),
+		}),
 		n(QUESTS, sharedData({["modID"] = 0},{
 			q(31448, {	-- An End to the Suffering
 				["qg"] = 64563,	-- Talking Skull
@@ -2324,7 +2364,6 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 			["description"] = "This is a Rare Creature and, as such, is not always present.\nThe only way to find out if you will encounter him is right after Rattlegore is killed.\nHe will make his presence known...",
 			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
-				ach(6396),	-- Sanguinarian
 				i(88566, {	-- Krastinov's Bag of Horrors (TOY!)
 					["timeline"] = { ADDED_5_0_4 },
 				}),
@@ -2367,19 +2406,6 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 				}),
 			},
 		}),
-		n(59613, {	-- Professor Slate <Potions Master>
-			["timeline"] = { ADDED_5_0_4 },
-			["groups"] = bubbleDown({["ignoreBonus"] = true},{
-				i(85580, {	-- Empty Polyformic Acid Vial
-					["description"] = "Use this at the table nearby to apply the appearance, or to store the appearance once appiled.",
-					["groups"] = {
-						i(85589),	-- Nearly Full Vial of Polyformic Acid
-						i(85592),	-- Half Full Vial of Polyformic Acid
-						i(85593),	-- Nearly Empty Vial of Polyformic Acid
-					},
-				}),
-			}),
-		}),
 		e(684, {	-- Darkmaster Gandling
 			["creatureID"] = 59080,	-- Darkmaster Gandling
 			["timeline"] = { ADDED_5_0_4 },
@@ -2387,10 +2413,6 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 				ach(6762),	-- Heroic: Scholomance
 				ach(6771),	-- Heroic: Scholomance Guild Run
 				ach(6821),	-- School's Out Forever
-				ach(645),	-- Scholomance
-				ach(5054, {	-- Scholomance Guild Run
-					["timeline"] = { ADDED_5_0_4 },
-				}),
 				i(144211, {	-- Headmaster's Will
 					["timeline"] = { ADDED_7_1_5 },
 				}),
@@ -2450,6 +2472,19 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 		}),
 	},
 }));
+-- #if AFTER 5.0.4
+table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 } }, {
+	ach(8438, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Scholomance
+		title(245),	-- Darkmaster <Name>
+	})),
+	ach(6897),	-- Scholomance Challenger
+	ach(6914),	-- Scholomance: Bronze
+	ach(6915),	-- Scholomance: Silver
+	ach(6916, {	-- Scholomance: Gold
+		spell(131232),	-- Path of the Necromancer
+	}),
+})));
+-- #endif
 -- #endif
 
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {

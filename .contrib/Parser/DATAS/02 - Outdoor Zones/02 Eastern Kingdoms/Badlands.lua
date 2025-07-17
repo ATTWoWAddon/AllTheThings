@@ -14,7 +14,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(ACHIEVEMENTS, {
 				ach(4900, {	-- Badlands Quests
 					["timeline"] = { ADDED_4_0_3 },
-					-- #if ANYCLASSIC
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
+					-- #else
 					["sourceQuests"] = {
 						27769,	-- Rhea Revealed
 						27930,	-- Devastation
@@ -24,7 +26,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				explorationAch(765),	-- Explore Badlands
+				ach(765),	-- Explore Badlands
 				ach(5444, {	-- Ready, Set, Goat!
 					["timeline"] = { ADDED_4_0_3 },
 					["cr"] = 46393,	-- Billy Goat

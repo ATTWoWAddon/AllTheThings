@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(OUTPOSTS, {
 				["description"] = "Horde Outposts allow you to set up additional bases in Kul Tiras.  You can buy Scouting Reports from Ransa, the vendor next to The Banshee's Wail.  Each one will start a mission on your Mission Command Table.  After you complete the initial questline, you'll be offered additional missions to upgrade your outposts.",
 				["g"] = {
-					i(165728, {	-- Outpost Upgrade: The Great Seal
+					i(165728, {	-- Outpost Upgrade: The Great Seal (CI!)
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 						["filterID"] = CONSUMABLES,
@@ -36,7 +36,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							}),
 						},
 					}),
-					i(165804, {	-- Outpost Upgrade: Vulpera Hideaway
+					i(165804, {	-- Outpost Upgrade: Vulpera Hideaway (CI!)
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
@@ -59,7 +59,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							}),
 						},
 					}),
-					i(165750, {	-- Outpost Upgrade: Zul'jan Ruins
+					i(165750, {	-- Outpost Upgrade: Zul'jan Ruins (CI!)
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
@@ -1064,11 +1064,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 				q(53744),	-- Swiftwind Post completed
 				-- q(53745),	-- Mudfisher Cove completed
 				-- Outpost Upgrades
-				-- q(54226),	-- Upgrade: The Great Seal started
 				q(54294),	-- Upgrade: The Great Seal completed
-				-- q(54259),	-- Upgrade: Vulpera Hideaway started
 				q(54296),	-- Upgrade: Vulpera Hideaway completed
-				-- q(54238),	-- Upgrade: Zul'jan Ruins started
 				q(54297),	-- Upgrade: Zul'jan Ruins completed
 				-- Misc
 				q(54767),	-- Correctly answer 8 riddles from Rid'lah

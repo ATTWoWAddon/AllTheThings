@@ -10,7 +10,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4925, {	-- Ashenvale Quests
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					-- #if ANYCLASSIC
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
+					-- #else
 					["sourceQuests"] = {
 						13626,	-- Respect for the Fallen
 						13853,	-- Return Fire
@@ -30,7 +32,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4976, {	-- Ashenvale Quests
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					-- #if ANYCLASSIC
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
+					-- #else
 					["sourceQuests"] = {
 						13653,	-- Crisis at Splintertree
 						13619,	-- Final Report
@@ -49,7 +53,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
-				explorationAch(845),	-- Explore Ashenvale
+				ach(845),	-- Explore Ashenvale
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",
@@ -185,6 +189,38 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
+				}),
+			}),
+			petbattles({
+				n(66136, {	-- Analynn <Master Pet Tamer>
+					["coord"] = { 20.2, 29.6, ASHENVALE },
+					["description"] = "This pet tamer is Horde only.\n\nAnalynn's pets are level 5 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.",
+					["timeline"] = { ADDED_5_0_4 },
+					["races"] = HORDE_ONLY,
+					["petBattleLvl"] = 5,
+					["groups"] = {
+						q(31854, {	-- Analynn
+							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
+				}),
+				q(31815, {	-- Zonya the Sadist
+					["qg"] = 66136,	-- Analynn
+					["sourceQuest"] = 31814,	-- Analynn
+					["coord"] = { 20.2, 29.5, ASHENVALE },
+					["timeline"] = { ADDED_5_0_4 },
+					["maps"] = { STONETALON_MOUNTAINS },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Defeat Zonya the Sadist
+							["provider"] = { "n", 66137 },	-- Zonya the Sadist
+							["coord"] = { 59.6, 71.6, STONETALON_MOUNTAINS },
+						}),
+						i(89125),	-- Sack of Pet Supplies
+					},
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY
@@ -2360,6 +2396,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 83.8, 63.1, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = { i(23776) },	-- Warsong Lumber (QI!)
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, pvp(q(79090, {	-- Repelling Invaders
@@ -2790,7 +2827,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 17.3, 26.7, ASHENVALE },
 					["cost"] = {{ "i", 210708, 1 }},	-- Elixir of Coalesced Regret
 					["timeline"] = { REMOVED_2_0_1 },
-					["OnUpdate"] = [[_.OnUpdateForCrafter]],
+					["OnUpdate"] = [[_.OnUpdateDB.FOR_CRAFTER]],
 				})),
 				-- #endif
 				q(13962, {	-- Stalemate

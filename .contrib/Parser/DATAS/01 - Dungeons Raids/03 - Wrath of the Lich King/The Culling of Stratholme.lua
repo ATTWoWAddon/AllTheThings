@@ -91,7 +91,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			}),
 			n(QUESTS, {
 				q(13151, {	-- A Royal Escort
-					["qg"] = 26527,	-- Chromie
+					["qg"] = 27915,	-- Chromie
 					["sourceQuest"] = 13149,	-- Dispelling Illusions
 					["lvl"] = lvlsquish(78, 78, 25),
 					["groups"] = {
@@ -180,7 +180,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["creatureID"] = 26532,	-- Chrono-Lord Epoch
 					["groups"] = {
 						i(37099),	-- Sempiternal Staff
-						i(37096),	-- Necklace of the Chrono-Lord
+						i(37096, {	-- Necklace of the Chrono-Lord
+							["timeline"] = { REMOVED_11_1_5 },
+						}),
+						i(238990, {	-- Necklace of the Chrono-Lord
+							["timeline"] = { ADDED_11_1_5 },
+						}),
 						-- #if AFTER 7.3.5
 						i(37686, {	-- Cracked Epoch Grasps (7.3.5 - Used to be only Heroic Mode)
 							["timeline"] = { REMOVED_11_1_5 },
@@ -201,8 +206,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						-- #endif
 						i(37105),	-- Treads of Altered History
 						-- #if AFTER 7.3.5
-						i(37685),	-- Mobius Band (7.3.5 - Used to be only Heroic Mode)
+						i(37685, {	-- Mobius Band (7.3.5 - Used to be only Heroic Mode)
+							["timeline"] = { REMOVED_11_1_5 },
+						}),
 						-- #endif
+						i(238992, {	-- Mobius Band
+							["timeline"] = { ADDED_11_1_5 },
+						}),
 					},
 				}),
 				e(614, {	-- Mal'Ganis
@@ -321,7 +331,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							-- #if AFTER 7.3.5
 							i(37105),	-- Treads of Altered History (7.3.5 - Used to be only Normal Mode)
 							-- #endif
-							i(37685),	-- Mobius Band
+							i(37685, {	-- Mobius Band
+								["timeline"] = { REMOVED_11_1_5 },
+							}),
+							i(238992, {	-- Mobius Band
+								["timeline"] = { ADDED_11_1_5 },
+							}),
 						},
 					}),
 					n(32273, {	-- Infinite Corruptor

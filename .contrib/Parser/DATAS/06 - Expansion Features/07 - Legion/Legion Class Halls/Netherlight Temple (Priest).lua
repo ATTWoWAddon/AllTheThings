@@ -172,13 +172,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					q(40710, {	-- Blade in Twilight
 						["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
 						["providers"] = {
-							{ "n", 101314 },	-- Alonsus Faol
 							{ "n", 110564 },	-- Alonsus Faol
+							{ "n", 101314 },	-- Alonsus Faol
+							-- #if AFTER 11.1.7
+							{ "n", 231472 },	-- Alonsus Faol
+							-- #endif
 						},
-						["coord"] = { 51.5, 47.6, NETHERLIGHT_TEMPLE },
-						["g"] = {
-							i(173523),	-- Tirisfal Camp Scroll (QI!)
+						["coords"] = {
+							{ 51.5, 47.6, NETHERLIGHT_TEMPLE },
+							{ 79.0, 41.0, TIRISFAL_GLADES },
+							-- #if AFTER 11.1.7
+							{ 12.8, 59.1, TIRISFAL_GLADES },
+							-- #endif
 						},
+						["g"] = { i(173523) },	-- Tirisfal Camp Scroll (QI!)
 					}),
 					-- Holy
 					q(41957, {	-- The Vindicator's Plea
@@ -496,6 +503,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["sourceQuests"] = { 45343 },	-- A Curious Contagion
 						["provider"] = { "n", 118528 },	-- Aelthalyste
 						["coord"] = { 30.0, 55.9, HIGHMOUNTAIN },
+						["g"] = {
+							i(143678),	-- Shimmering Dust (QI!)
+						},
 					}),
 					q(45347, {	-- Crafting a Cure
 						["sourceQuests"] = {

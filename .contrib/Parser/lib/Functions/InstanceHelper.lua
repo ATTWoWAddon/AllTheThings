@@ -32,8 +32,24 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 				add(encounter, id, CurrentDifficultyID, data)
 			end
 		end
+		if helper.Coords and not encounter.coord then
+			encounter.coord = helper.Coords[id]
+		end
 		encounter.groups = appendAllGroups(encounter.groups, clone(loots[id]))
 		return encounter
+	end
+	-- Represents a World Quest that requires defeating an Encounter
+	local function BossWorldQuest(id, questID, t)
+		local quest = q(questID, t)
+		quest.crs = crs[id]
+		quest.isWorldQuest = true
+		if not quest.sym then
+			quest.sym = {{"select","encounterID",id,},{"pop"}}	-- Original WB
+		end
+		if helper.Coords and not quest.coord then
+			quest.coord = helper.Coords[id]
+		end
+		return quest
 	end
 	local function WithUpgrades(groups)
 		if not groups then return end
@@ -104,12 +120,15 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 	}
 	local function Difficulty(difficultyID, t)
 		local diff = d(difficultyID, t)
-		CurrentDifficultyID = diff.difficultyID
+		-- d() can sometimes change the applied difficultyID, so just track the exact one passed in since
+		-- it's likely the same one re-used in the file
+		CurrentDifficultyID = difficultyID
 		return setmetatable(diff, helperMeta)
 	end
 
 	helper.BossOnly = BossOnly
 	helper.Boss = Boss
+	helper.BossWorldQuest = BossWorldQuest
 	helper.Difficulty = Difficulty
 	helper.CommonBossDrops = CommonBossDrops
 	helper.ZoneDrops = ZoneDrops

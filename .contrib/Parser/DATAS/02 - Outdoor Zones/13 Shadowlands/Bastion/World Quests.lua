@@ -107,7 +107,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61520, {	-- Enemy of My Mnemis
 				["g"] = {
 					i(181711),	-- Depleted Centurion Core (QI!)
-					i(181710),	-- Inert Centurion Core (QI!)
+					o(356395, {	-- Inert Centurion Core
+						["coord"] = { 50.8, 20.7, BASTION },
+						["g"] = { i(181710) },	-- Inert Centurion Core (QI!)
+					}),
 				},
 			}),
 			q(61441, {	-- Engineering: Power Hammer

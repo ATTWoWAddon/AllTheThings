@@ -43,7 +43,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(16105, {	-- Dragon Glyphs: Veiled Ossuary
 				["coord"] = { 67.1, 11.8, THALDRASZUS },
 			}),
-			explorationAch(16518),	-- Explore Thaldraszus
+			ach(16518),		-- Explore Thaldraszus
 			ach(16634, {	-- Framing a New Perspective
 				["description"] = "Exact point in the world will be within a light pink beam of light when using the 'Selfie Camera MkII' near the proper location.",
 				["g"] = {

@@ -397,6 +397,12 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					i(169936),	-- Gauntlets of Crashing Tides
 					i(169935),	-- Brutish Myrmidon's Vambraces
 					i(168602),	-- Cloak of Blessed Depths
+					i(170199, {	-- Zanj'ir Weapon Rack (TOY!)
+						["crs"] = {
+							155920,	-- Azsh'ari Galeblade
+							155619,	-- Zanj'ir Honor Guard
+						},
+					}),
 				}),
 				e(2352, {	-- Abyssal Commander Sivara
 					["crs"] = { 151881 },	-- Abyssal Commander Sivara	-- Abyssal Commander Sivara
@@ -556,6 +562,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
+			d(DIFFICULTY.RAID.MULTI.HEROIC_PLUS, {
+				cr(150859, e(2349, {	-- Za'qul, Harbinger of Ny'alotha
+					i(168868),	-- Pauldrons of Za'qul
+				})),
+			}),
 			d(DIFFICULTY.RAID.HEROIC, {
 				n(ZONE_DROPS, {
 					i(169930),	-- Handwraps of Unhindered Resonance
@@ -695,7 +706,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					["g"] = {
 						i(168902),	-- Dream's End
 						i(168301),	-- Sever, Edge of Madness
-						i(168868),	-- Pauldrons of Za'qul
 						i(168349),	-- Shroud of Unmooring Whispers
 						i(169588),	-- Gardbrace of Fractured Reality
 						i(168391),	-- Cloak of Ill Tidings
@@ -876,7 +886,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						ach(13732),	-- Mythic: Za'qul
 						i(168902),	-- Dream's End
 						i(168301),	-- Sever, Edge of Madness
-						i(168868),	-- Pauldrons of Za'qul
 						i(168349),	-- Shroud of Unmooring Whispers
 						i(169588),	-- Gardbrace of Fractured Reality
 						i(168391),	-- Cloak of Ill Tidings

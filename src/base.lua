@@ -214,6 +214,10 @@ app.IsComplete = function(o)
 	return true;
 end
 
+-- Potentially shared functions which aren't yet added to Classic
+app.DirectGroupRefresh = app.EmptyFunction
+app.DirectGroupUpdate = app.EmptyFunction
+
 local GetItemIcon = app.WOWAPI.GetItemIcon;
 app.GetIconFromProviders = function(group)
 	if group.providers then

@@ -161,14 +161,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(524, {	-- Exarch Maladaar
 					["creatureID"] = 18373,
 					["groups"] = {
-						ach(666, {	-- Auchenai Crypts
-							-- #if BEFORE WRATH
-							["sourceQuests"] = {
-								10167,	-- Auchindoun...
-								10164,	-- Everything Will Be Alright
-							},
-							-- #endif
-						}),
+						ach(666),	-- Auchenai Crypts
 						i(27412),	-- Ironstaff of Regeneration
 						-- #if AFTER 7.3.5
 						i(27872),	-- The Harvester of Souls
@@ -241,9 +234,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(524, {	-- Exarch Maladaar
 						["creatureID"] = 18373,
 						["groups"] = {
-							ach(672, {	-- Heroic: Auchenai Crypts
-								["timeline"] = { ADDED_3_0_2 },
-							}),
+							ach(672),	-- Heroic: Auchenai Crypts
 							ach(5072, {	-- Heroic: Auchenai Crypts Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),

@@ -20,89 +20,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			},
 		}),
 		ach(18934),	-- Excessive Experimentation
-		ach(18904, {	-- Iron to Vendor Gold
-			crit(61746, {	-- Philosopher's Stone
-				["provider"] = { "i", 9149 },	-- Philosopher's Stone
-			}),
-			crit(61747, {	-- Guardian's Alchemist Stone
-				["provider"] = { "i", 35748 },	-- Guardian's Alchemist Stone
-			}),
-			crit(61748, {	-- Sorcerer's Alchemist Stone
-				["provider"] = { "i", 35749 },	-- Sorcerer's Alchemist Stone
-			}),
-			crit(61749, {	-- Redeemer's Alchemist Stone
-				["provider"] = { "i", 35750 },	-- Redeemer's Alchemist Stone
-			}),
-			crit(61750, {	-- Assassin's Alchemist Stone
-				["provider"] = { "i", 35751 },	-- Assassin's Alchemist Stone
-			}),
-			crit(61751, {	-- Alchemist Stone
-				["provider"] = { "i", 13503 },	-- Alchemist Stone
-			}),
-			crit(61752, {	-- Mercurial Alchemist Stone
-				["provider"] = { "i", 44322 },	-- Mercurial Alchemist Stone
-			}),
-			crit(61753, {	-- Indestructible Alchemist Stone
-				["provider"] = { "i", 44323 },	-- Indestructible Alchemist Stone
-			}),
-			crit(61754, {	-- Mighty Alchemist Stone
-				["provider"] = { "i", 44324 },	-- Mighty Alchemist Stone
-			}),
-			crit(61755, {	-- Lifebound Alchemist Stone
-				["provider"] = { "i", 58483 },	-- Lifebound Alchemist Stone
-			}),
-			crit(61756, {	-- Volatile Alchemist Stone
-				["provider"] = { "i", 68775 },	-- Volatile Alchemist Stone
-			}),
-			crit(61757, {	-- Quicksilver Alchemist Stone
-				["provider"] = { "i", 68776 },	-- Quicksilver Alchemist Stone
-			}),
-			crit(61758, {	-- Vibrant Alchemist Stone
-				["provider"] = { "i", 68777 },	-- Vibrant Alchemist Stone
-			}),
-			crit(61759, {	-- Zen Alchemist Stone
-				["provider"] = { "i", 75274 },	-- Zen Alchemist Stone
-			}),
-			crit(61760, {	-- Draenic Philosopher's Stone
-				["provider"] = { "i", 109262 },	-- Draenic Philosopher's Stone
-			}),
-			crit(61761, {	-- Infernal Alchemist Stone
-				["provider"] = { "i", 127842 },	-- Infernal Alchemist Stone
-			}),
-			crit(61764, {	-- Astral Alchemist Stone
-				["provider"] = { "i", 151607 },	-- Astral Alchemist Stone
-			}),
-			crit(61767, {	-- Siren's Alchemist Stone
-				["provider"] = { "i", 152637 },	-- Siren's Alchemist Stone
-			}),
-			crit(61770, {	-- Surging Alchemist Stone
-				["provider"] = { "i", 152632 },	-- Surging Alchemist Stone
-			}),
-			crit(61773, {	-- Sanguinated Alchemist Stone
-				["provider"] = { "i", 166974 },	-- Sanguinated Alchemist Stone
-			}),
-			crit(61774, {	-- Imbued Alchemist Stone
-				["provider"] = { "i", 166975 },	-- Imbued Alchemist Stone
-			}),
-			crit(61775, {	-- Emblazoned Alchemist Stone
-				["provider"] = { "i", 166976 },	-- Emblazoned Alchemist Stone
-			}),
-			crit(61776, {	-- Tidal Alchemist Stone
-				["provider"] = { "i", 165926 },	-- Tidal Alchemist Stone
-			}),
-			crit(61777, {	-- Spirited Alchemist Stone
-				["provider"] = { "i", 165927 },	-- Spirited Alchemist Stone
-			}),
-			crit(61778, {	-- Eternal Alchemist Stone
-				["provider"] = { "i", 165928 },	-- Eternal Alchemist Stone
-			}),
-			crit(61779, {	-- Ascended Alchemist Stone
-				["provider"] = { "i", 168676 },	-- Ascended Alchemist Stone
-			}),
-			crit(61780, {	-- Peerless Alchemist Stone
-				["provider"] = { "i", 171085 },	-- Peerless Alchemist Stone
-			}),
-		}),
+		ach(18904),	-- Iron to Vendor Gold
 		ach(18737),	-- Powerful Concoctions IV
 		ach(18736),	-- Powerful Concoctions III
 		ach(18735),	-- Powerful Concoctions II
@@ -174,6 +92,22 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 			}),
 		})),
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_EIGHT, n(QUESTS, bubbleDown({ ["timeline"] = { ADDED_1_15_7 }}, {
+			q(90560, {	-- Familiar Foulness
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(241651),	-- Recipe: Major Discolored Healing Potion (RECIPE!)
+				},
+			}),
+			q(90567, {	-- Unfamiliar Foulness
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(241651),	-- Recipe: Major Discolored Healing Potion (RECIPE!)
+				},
+			}),
+		}))),
+		-- #endif
 	}),
 	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
 		q(10906, {	-- Master of Elixirs (1/2)
@@ -1689,7 +1623,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Flask of Chromatic Resistance",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 17638,
 				},
 				{
@@ -2082,7 +2016,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
 					["name"] = "Flask of Chromatic Wonder",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 42736
 				}),
 				{
@@ -2410,7 +2344,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Flask of the North",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 67025
 				},
 				{
@@ -2419,7 +2353,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Lesser Flask of Resistance",
-					["timeline"] = { REMOVED_5_0_4 },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 62213
 				},
 			}

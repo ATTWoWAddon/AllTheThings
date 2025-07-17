@@ -15,7 +15,9 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["g"] = {
-						i(160253),	-- Mote of Pure Water (QI!)
+						o(289656, {	-- Mote of Pure Water
+							i(160253),	-- Mote of Pure Water (QI!)
+						}),
 					},
 				}),
 				q(51455, {	-- Shrine of the Storm: Cleansing Fonts

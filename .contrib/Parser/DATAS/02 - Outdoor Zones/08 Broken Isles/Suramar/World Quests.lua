@@ -167,12 +167,15 @@ root(ROOTS.Zones, {
 				q(42090),	-- Skittering Subjects
 				q(41558, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
+					["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41557, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
+					["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41262, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
+					["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41539, {	-- Sparkling Starlight Roses
 					["requireSkill"] = HERBALISM,
@@ -250,6 +253,10 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_7_0_3 },
 							}),
 						}),
+						o(251753, {	-- Treasure Chest
+							["questID"] = 43148,
+							["g"] = { i(140448) },	-- Lens of Qin'dera
+						}),
 						n(109564, {	-- Glimmering Treasure Chest
 							i(140495),	-- Torn Invitation [Fox Mount Quest]
 							i(139565, {	-- Spark of the Fallen Exarch [Protection Paladin Hidden Artifact Appearance]
@@ -271,6 +278,18 @@ root(ROOTS.Zones, {
 							i(140786),	-- Ley Spider Eggs (TOY!)
 							i(141301),	-- Unstable Powder Box (TOY!)
 							i(141306),	-- Wisp in a Bottle (TOY!)
+						}),
+						o(251754, {	-- Glimmering Treasure Chest
+							["questID"] = 43071,
+							["g"] = { i(139011) },	-- Berserking Helm of Ondry'el
+						}),
+						o(251755, {	-- Glimmering Treasure Chest
+							["questID"] = 43145,
+							["g"] = { i(140450) },	-- Berserking Helm of Taenna
+						}),
+						o(251759, {	-- Glimmering Treasure Chest
+							["questID"] = 43135,
+							["g"] = { i(139028) },	-- Disc of the Starcaller
 						}),
 						n(109497, {	-- Small Treasure Chest
 							i(137823),	-- Design: Prophetic Band [Rank 2] (RECIPE!)
@@ -361,13 +380,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, bubbleDownSelf({ ["t
 				q(43150),	-- 7.0 Suramar Collapse Scenario - Treasure 09 - Focus Attacks 03
 				q(43111),	-- 7.0 Suramar Collapse Scenario - Treasure 10 - Reduce Runaways 01: obtained Soothing Leystone Shard from a small chest (5 withered, objectID 251751)
 				q(43147),	-- 7.0 Suramar Collapse Scenario - Treasure 11 - Reduce Runaways 02
-				q(43148),	-- 7.0 Suramar Collapse Scenario - Treasure 12 - Reduce Runaways 03: obtained Lens of Qin'dera from a small chest (5 withered, objectID 251753)
-				q(43071),	-- 7.0 Suramar Collapse Scenario - Treasure 13 - Withered Berserker Unlock 01: obtained first Berserking Helm of Ondry'el from a big chest (10 withered, objectID 251754)
-				q(43145),	-- 7.0 Suramar Collapse Scenario - Treasure 14 - Withered Berserker Unlock 02
 				q(43128),	-- 7.0 Suramar Collapse Scenario - Treasure 15 - Withered Mana-Rager Unlock 01: obtained Spellmask of Alla'onus (10 withered, objectID 251756)
 				q(43146),	-- 7.0 Suramar Collapse Scenario - Treasure 16 - Withered Mana-Rager Unlock 02: obtained Spellmask okf Azsylla from a large chest (10 withered, objectID 251757)
 				q(43134),	-- 7.0 Suramar Collapse Scenario - Treasure 17 - Withered Spellseer Unlock 01: obtained Lenses of Spellseer Dellian (10 withered, objectID 251758)
-				q(43135),	-- 7.0 Suramar Collapse Scenario - Treasure 18 - Withered Lodestar Unlock 01: obtained Disc of the Starcaller (10 withered, objectID 251759)
 				q(45478),	-- Suramar - WQ rare: Achronos
 				q(45504),	-- Suramar - WQ rare: Alteria
 				q(45475),	-- Suramar - WQ rare: Auditor Esiel

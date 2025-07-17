@@ -304,7 +304,13 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			}),
 			q(49015, {	-- Antorus, the Burning Throne: The Death of a Titan
 				["sourceQuests"] = { 49014 },	-- The Burning Throne
-				["provider"] = { "n", 120533 },	-- Prophet Velen
+				["qgs"] = {
+					120533,	-- Prophet Velen
+					126307,	-- Prophet Velen
+					126950,	-- Prophet Velen
+					128722,	-- Prophet Velen
+					128949,	-- Prophet Velen
+				},
 				["coord"] = { 40.2, 24.1, THE_VINDICAAR_KROKUUN_UPPER },
 				["groups"] = {
 					i(152984),	-- Boon of the Pantheon

@@ -3,13 +3,13 @@ local _, app = ...;
 local L = app.L
 
 -- Global locals
-local ipairs, pairs, rawset, type, wipe, setmetatable, rawget, math_floor,tremove
-	= ipairs, pairs, rawset, type, wipe, setmetatable, rawget, math.floor,tremove
+local ipairs, pairs, rawset, type, setmetatable, rawget, math_floor,tremove
+	= ipairs, pairs, rawset, type, setmetatable, rawget, math.floor,tremove
 local C_Map_GetAreaInfo, C_Map_GetMapInfo = C_Map.GetAreaInfo, C_Map.GetMapInfo;
 
 -- App locals
-local contains, classIndex, raceIndex, factionID, ArrayAppend =
-	app.contains, app.ClassIndex, app.RaceIndex, app.FactionID, app.ArrayAppend
+local wipearray, ArrayAppend =
+	app.wipearray, app.ArrayAppend
 
 -- Module locals
 local AllCaches, AllGamePatches, postscripts, runners, QuestTriggers = {}, {}, {}, {}, {};
@@ -411,6 +411,12 @@ local fieldConverters = {
 	["azeriteessenceID"] = function(group, value)
 		CacheField(group, "azeriteessenceID", value);
 	end,
+	["campsiteID"] = function(group, value)
+		CacheField(group, "campsiteID", value);
+	end,
+	["catalystID"] = function(group, value)
+		CacheField(group, "catalystID", value);
+	end,
 	["creatureID"] = cacheCreatureID,
 	["criteriaID"] = function(group, value)
 		CacheField(group, "criteriaID", value);
@@ -508,22 +514,22 @@ local fieldConverters = {
 
 	-- Complex Converters
 	["altQuests"] = function(group, value)
-		for i=1,#value,1 do
+		for i=1,#value do
 			CacheField(group, "questID", value[i]);
 		end
 	end,
 	["crs"] = function(group, value)
-		for i=1,#value,1 do
+		for i=1,#value do
 			cacheCreatureID(group, value[i]);
 		end
 	end,
 	["qgs"] = function(group, value)
-		for i=1,#value,1 do
+		for i=1,#value do
 			cacheCreatureID(group, value[i]);
 		end
 	end,
 	["maps"] = function(group, value)
-		for i=1,#value,1 do
+		for i=1,#value do
 			cacheMapID(group, value[i]);
 		end
 		return true;
@@ -549,14 +555,14 @@ local fieldConverters = {
 	end,
 	["cost"] = function(group, value)
 		if type(value) == "table" then
-			for i=1,#value,1 do
+			for i=1,#value do
 				cacheProviderOrCost(group, value[i]);
 			end
 		end
 	end,
 	["provider"] = cacheProviderOrCost,
 	["providers"] = function(group, value)
-		for i=1,#value,1 do
+		for i=1,#value do
 			cacheProviderOrCost(group, value[i]);
 		end
 	end,
@@ -566,34 +572,24 @@ local fieldConverters = {
 	["minReputation"] = function(group, value)
 		cacheFactionID(group, value[1]);
 	end,
-	["c"] = function(group, value)
-		if not contains(value, classIndex) then
-			group.nmc = true; -- "Not My Class"
-		end
-	end,
-	["r"] = function(group, value)
-		if value ~= factionID then
-			group.nmr = true;	-- "Not My Race"
-		end
-	end,
-	["races"] = function(group, value)
-		if not contains(value, raceIndex) then
-			group.nmr = true;	-- "Not My Race"
-		end
-	end,
 	["nextQuests"] = function(group, value)
-		for i=1,#value,1 do
+		for i=1,#value do
 			CacheField(group, "nextQuests", value[i])
 		end
 	end,
 	["sourceQuests"] = function(group, value)
-		for i=1,#value,1 do
+		for i=1,#value do
 			CacheField(group, "sourceQuestID", value[i]);
 		end
 	end,
 	["sourceAchievements"] = function(group, value)
-		for i=1,#value,1 do
+		for i=1,#value do
 			CacheField(group, "sourceAchievementID", value[i]);
+		end
+	end,
+	["qis"] = function(group, value)
+		for i=1,#value do
+			CacheField(group, "qItemID", value[i])
 		end
 	end,
 
@@ -680,10 +676,6 @@ if app.IsRetail then
 	fieldConverters.awp = nil;
 	-- 'rwp' is never used as a 'search' and this breaks dynamic future removed in Simple mode
 	fieldConverters.rwp = nil;
-	-- Base Class provides auto-fields for these and they do no actual caching
-	fieldConverters.c = nil
-	fieldConverters.r = nil
-	fieldConverters.races = nil
 
 	-- use single iteration of each group by way of not performing any group field additions while the cache process is running
 	_CacheFields = function(group)
@@ -720,9 +712,10 @@ if app.IsRetail then
 	fieldConverters.heirloomID = fieldConverters.itemID;
 	postscripts[#postscripts + 1] = function()
 		if #cacheGroupForModItemID == 0 then return end
-		local modItemID
+		local modItemID,group
 		-- app.PrintDebug("caching for modItemID",#cacheGroupForModItemID)
-		for _,group in ipairs(cacheGroupForModItemID) do
+		for i=1,#cacheGroupForModItemID do
+			group = cacheGroupForModItemID[i]
 			modItemID = group.modItemID
 			if modItemID then
 				CacheField(group, "modItemID", modItemID)
@@ -731,7 +724,7 @@ if app.IsRetail then
 				end
 			end
 		end
-		wipe(cacheGroupForModItemID)
+		wipearray(cacheGroupForModItemID)
 		-- app.PrintDebug("caching for modItemID done")
 	end
 
@@ -772,13 +765,13 @@ end
 CacheFields = function(group, skipMapCaching)
 	allowMapCaching = not skipMapCaching
 	_CacheFields(group);
-	for i,runner in ipairs(runners) do
-		runner();
+	for i=1,#runners do
+		runners[i]()
 	end
-	for i,postscript in ipairs(postscripts) do
-		postscript();
+	for i=1,#postscripts do
+		postscripts[i]();
 	end
-	wipe(runners);
+	wipearray(runners);
 	return group;
 end
 
@@ -948,11 +941,12 @@ local function SearchForObject(field, id, require, allowMultiple)
 		return allowMultiple and app.EmptyTable or nil
 	end
 
-	local results = {}
+	local results
 
 	-- split logic based on require to reduce conditionals within loop
 	if require == 2 then
 		-- Key require
+		results = {}
 		for i=1,count,1 do
 			fcacheObj = fcache[i];
 			-- field matching id
@@ -965,6 +959,7 @@ local function SearchForObject(field, id, require, allowMultiple)
 		end
 	elseif require == 1 then
 		-- Field require
+		results = {}
 		for i=1,count,1 do
 			fcacheObj = fcache[i];
 			-- field matching id

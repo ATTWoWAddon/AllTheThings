@@ -100,7 +100,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61708, {	-- Drawing Out The Poison
 				["g"] = {
-					i(174043),	-- Phylactery of Arin'gore (QI!)
+					o(339750, {	-- Golden Egg
+						["coord"] = { 58.8, 26.5, MALDRAXXUS },
+						["g"] = { i(174043) },	-- Phylactery of Arin'gore (QI!)
+					}),
 				},
 			}),
 			q(61608, {	-- Enchanting: Unbreakable Crystal
@@ -246,7 +249,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61060),	-- Spore Losers
 			q(60231, {	-- State of Decay
 				i(177245, {	-- Maldraxxi Challenge Banner (EC!)
-					["questID"] = 59695,
+					["customCollect"] = "SL_COV_VEN",
 				}),
 			}),
 			q(61615, {	-- Tailoring: Haunting Hood

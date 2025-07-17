@@ -209,6 +209,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				["ItemAppearanceModifierID"] = 0,
 				["lvl"] = 110,
 				["g"] = {
 					cr(91784, e(1480, {	-- Warlord Parjesh

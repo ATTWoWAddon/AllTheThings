@@ -1,0 +1,26 @@
+3.0.1.8303
+r(47429),	--
+3.0.1.8622
+r(50305),	-- Skinning
+r(53125),	-- Master of Anatomy
+r(53662),	-- Master of Anatomy
+r(53663),	-- Master of Anatomy
+r(53664),	-- Master of Anatomy
+r(53665),	-- Master of Anatomy
+r(53666),	-- Master of Anatomy
+
+
+
+
+Missing in Skinning
+
+3.0.1.8303
+r(47429),	--
+3.0.1.8622
+r(50305),	-- Skinning
+r(53125),	-- Master of Anatomy
+r(53662),	-- Master of Anatomy
+r(53663),	-- Master of Anatomy
+r(53664),	-- Master of Anatomy
+r(53665),	-- Master of Anatomy
+r(53666),	-- Master of Anatomy

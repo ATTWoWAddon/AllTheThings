@@ -220,8 +220,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 							["timeline"] = { ADDED_9_2_5 },
 						}),
 					}, {	-- Friendly
-						i(190640, {	-- Font of Ephemeral Power
-							["questID"] = 65694,
+						i(190640, {	-- Font of Ephemeral Power (CI!)
 							["cost"] = { { "g", 5000000 } },	-- 500g
 							["sym"] = {
 								{"select","expansionID",EXPANSION.SL},	-- Select Shadowlands
@@ -275,8 +274,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						i(187640, {	-- Anointed Protostag (MOUNT!)
 							["cost"] = { { "c", ANIMA, 5000 } },
 						}),
-						i(190956, {	-- Decanter of Untapped Potential
-							["questID"] = 70705,
+						i(190956, {	-- Decanter of Untapped Potential (CI!)
 							["cost"] = { { "g", 25000000 } },	-- 2500g
 							["sym"] = {
 								{"select","expansionID",EXPANSION.SL},	-- Select Shadowlands

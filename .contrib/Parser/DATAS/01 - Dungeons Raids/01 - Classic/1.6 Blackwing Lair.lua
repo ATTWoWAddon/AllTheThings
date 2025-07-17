@@ -40,7 +40,7 @@ local TOKENS = {
 	}
 };
 -- #endif
-root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE, {
+root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE, bubbleDown({ ["timeline"] = { ADDED_1_6_0 } }, {
 	inst(742, {	-- Blackwing Lair
 		["lore"] = "In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",
 		["provider"] = { "o", 179879 },	-- Orb of Command
@@ -554,6 +554,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					i(19385),	-- Empowered Leggings
 					i(19387),	-- Chromatic Boots
 					i(19391),	-- Shimmering Geta
+					-- #if AFTER WOD
+					prof(SKINNING, {
+						i(12607, {	-- Brilliant Chromatic Scale
+							["description"] = "Can only be obtained from Chromaggus.",
+						}),
+					}),
+					-- #endif
 				},
 			}),
 			e(1536, {	-- Nefarian
@@ -562,15 +569,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					10162,	-- Lord Victor Nefarius
 				},
 				["groups"] = {
-					ach(685, {	-- Blackwing Lair
-						-- #if BEFORE WRATH
-						["sourceQuests"] = {
-							7781,	-- The Lord of Blackrock
-							7783,	-- The Lord of Blackrock
-							8730,	-- Nefarius's Corruption
-						},
-						-- #endif
-					}),
+					ach(685),	-- Blackwing Lair
 					ach(5057, {	-- Blackwing Lair Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),
@@ -1110,4 +1109,4 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 			-- #endif
 		},
 	}),
-})));
+}))));

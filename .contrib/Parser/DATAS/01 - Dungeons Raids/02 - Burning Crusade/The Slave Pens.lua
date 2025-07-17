@@ -107,6 +107,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 22421,	-- Skar'this the Heretic
 					["sourceQuest"] = 10900,	-- The Mark of Vashj
 					["altQuests"] = { 10901 },	-- The Cudgel of Kar'desh
+					-- #if ANYCLASSIC
+					["lockCriteria"] = { 1, "lvl", 70 },
+					-- #endif
 					["timeline"] = { ADDED_3_0_2 },
 					["maps"] = {
 						KARAZHAN,
@@ -141,6 +144,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10900, {	-- The Mark of Vashj
 					-- This quest started showing up again after SL level squish
 					["qg"] = 22421,	-- Skar'this the Heretic
+					-- #if ANYCLASSIC
+					["lockCriteria"] = { 1, "lvl", 70 },
+					-- #endif
 					["lvl"] = lvlsquish(70, 70, 10),
 				}),
 			}),
@@ -200,9 +206,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(572, {	-- Quagmirran
 					["creatureID"] = 17942,
 					["groups"] = {
-						ach(649, {	-- The Slave Pens
-							["timeline"] = { ADDED_3_0_2 },
-						}),
+						ach(649),	-- The Slave Pens
 						-- #if AFTER 7.3.5
 						i(27741),	-- Bleeding Hollow Warhammer
 						i(27673),	-- Phosphorescent Blade
@@ -325,9 +329,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(572, {	-- Quagmirran
 						["creatureID"] = 17942,
 						["groups"] = {
-							ach(669, {	-- Heroic: The Slave Pens
-								["timeline"] = { ADDED_3_0_2 },
-							}),
+							ach(669),	-- Heroic: The Slave Pens
 							ach(5069, {	-- Heroic: The Slave Pens Guild Run
 								["timeline"] = { ADDED_4_0_3 },
 							}),

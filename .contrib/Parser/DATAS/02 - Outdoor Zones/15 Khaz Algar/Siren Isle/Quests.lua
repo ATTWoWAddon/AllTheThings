@@ -461,13 +461,14 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				-- Another unlock for vendor (snapdragon treats)
 				-- ^ moved into CharacterItemDB instead
 				-- color changes questID (otherwise it will block 100% for zone)
-				q(86386),	-- Crimson Snapdragon Treat
-				q(86382),	-- Inky Snapdragon Treat
-				q(86383),	-- Kaja'Cola-braised Snapdragon Treat
-				q(86381),	-- Muddy Snapdragon Treat
-				q(86385),	-- Royal Snapdragon Treat
-				q(86387),	-- Sandy Snapdragon Treat
-				q(86384),	-- Storminfused Snapdragon Treat
+				-- these HQTs get linked to the Items as providers now due to automation, so make sure they're repeatable
+				q(86386, {["repeatable"]=true}),	-- Crimson Snapdragon Treat
+				q(86382, {["repeatable"]=true}),	-- Inky Snapdragon Treat
+				q(86383, {["repeatable"]=true}),	-- Kaja'Cola-braised Snapdragon Treat
+				q(86381, {["repeatable"]=true}),	-- Muddy Snapdragon Treat
+				q(86385, {["repeatable"]=true}),	-- Royal Snapdragon Treat
+				q(86387, {["repeatable"]=true}),	-- Sandy Snapdragon Treat
+				q(86384, {["repeatable"]=true}),	-- Storminfused Snapdragon Treat
 				-- q(86373),	-- Teal Snapdragon Treat (automated)
 				-- q(86375),	-- Talk to Gazix Fusegrease and unlock the Inky Snapdragon Treat (automated)
 				--

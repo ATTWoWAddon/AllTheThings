@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 root(ROOTS.Zones, {
 	m(PANDARIA, {
 		applyclassicphase(MOP_PHASE_LANDFALL, m(THE_JADE_FOREST, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
@@ -15,7 +14,7 @@ root(ROOTS.Zones, {
 			},
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					explorationAch(6351),	-- Explore Jade Forest
+					ach(6351),	-- Explore Jade Forest
 					ach(7290),	-- How To Strain Your Dragon
 					ach(7291),	-- In a Trail of Smoke
 					ach(7381, {	-- Restore Balance
@@ -24,11 +23,9 @@ root(ROOTS.Zones, {
 					ach(7289),	-- Shadow Hopper
 					ach(6300, {	-- Upjade Complete (A)
 						["races"] = ALLIANCE_ONLY,
-						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(6534, {	-- Upjade Complete (H)
 						["races"] = HORDE_ONLY,
-						["sym"] = {{ "achievement_criteria" }},
 					}),
 				}),
 				battlepets({
@@ -832,9 +829,42 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66730, {	-- Hyuna of the Shrines <Grand Master Pet Tamer>
 						["coord"] = { 48.0, 54.0, THE_JADE_FOREST },
+						["timeline"] = { ADDED_5_1_0 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(31953, {	-- Grand Master Hyuna
+								["sourceAchievement"] = 6606,	-- Taming Pandaria
+								["timeline"] = { ADDED_5_1_0 },
+								["isDaily"] = true,
+								["groups"] = {
+									i(89125),	-- Sack of Pet Supplies
+								},
+							}),
+						},
 					}),
 					n(68464, {	-- Whispering Pandaren Spirit <Grand Master Pet Tamer>
 						["coord"] = { 28.8, 36.0, THE_JADE_FOREST },
+						["timeline"] = { ADDED_5_1_0 },
+						["petBattleLvl"] = 25,
+						["groups"] = {
+							q(32440, {	-- Whispering Pandaren Spirit
+								["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer
+								["timeline"] = { ADDED_5_1_0 },
+								["isDaily"] = true,
+								["groups"] = {
+									i(93148, {	-- Pandaren Spirit Pet Supplies
+										["sym"] = {{"select","itemID",
+											89139,	-- Chain Pet Leash
+											44820,	-- Red Ribbon Pet Leash
+											37460,	-- Rope Pet Leash
+										}},
+										["groups"] = {
+											i(92799),	-- Pandaren Air Spirit (PET!)
+										},
+									})
+								},
+							}),
+						},
 					}),
 				}),
 				n(PROFESSIONS, {
@@ -3096,20 +3126,123 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(TREASURES, {
+					o(213741, {	-- Ancient Jinyu Staff
+						["coords"] = {
+							{ 44.9, 64.6, THE_JADE_FOREST },
+							{ 47.1, 67.5, THE_JADE_FOREST },
+							{ 46.2, 71.2, THE_JADE_FOREST },
+							{ 44.5, 64.4, THE_JADE_FOREST },
+						},
+						["questID"] = 31402,
+						["g"] = {
+							i(86196),	-- Ancient Jinyu Staff
+						},
+					}),
+					o(213364, {	-- Ancient Pandaren Mining Pick
+						["description"] = "Inside Greenstone Quarry at the lower level. Entrance at (46.1, 29.1).",
+						["coords"] = {
+							{ 33.52, 78.04, 373 },
+							{ 37.95, 13.75, 373 },
+							{ 40.08, 41.82, 373 },
+							{ 64.33, 55.75, 373 },
+						},
+						["questID"] = 31399,
+						["g"] = {
+							i(85777),	-- Ancient Pandaren Mining Pick
+						},
+					}),
+					o(213366, {	-- Ancient Pandaren Tea Pot
+						["questID"] = 31400,
+						["coord"] = { 26.22, 32.35, THE_JADE_FOREST },
+						["g"] = {
+							i(85780),	-- Ancient Pandaren Tea Pot
+						},
+					}),
 					o(214339, {	-- Chest of Supplies
-						["questID"] = 31864, -- Chest of Supplies
 						["coord"] = { 24.6, 53.2, THE_JADE_FOREST },
+						["questID"] = 31864, -- Chest of Supplies
+					}),
+					o(213742, {	-- Hammer of Ten Thunders
+						["coords"] = {
+							{ 40.24, 13.67, THE_JADE_FOREST },
+							{ 41.21, 13.84, THE_JADE_FOREST },
+							{ 41.76, 17.66, THE_JADE_FOREST },
+							{ 42.01, 17.56, THE_JADE_FOREST },
+							{ 42.97, 11.63, THE_JADE_FOREST },
+						},
+						["questID"] = 31403,
+						["g"] = {
+							i(86198),	-- Hammer of Ten Thunders
+						},
+					}),
+					o(211990, {	-- Hozen Speech
+						["coord"] = { 26.5, 28.3, THE_JADE_FOREST },
+					}),
+					n(64272, {	-- Jade Warrior Statue
+						["coord"] = { 39.26, 46.65, THE_JADE_FOREST },
+						["questID"] = 31307,
+						["g"] = {
+							i(86199),	-- Jade-Infused Blade
+						},
+					}),
+					o(213368, {	-- Lucky Pandaren Coin
+						["questID"] = 31401,
+						["description"] = "Located in the wishing fountain.",
+						["coord"] = { 31.96, 27.76, THE_JADE_FOREST },
+						["g"] = {
+							i(85781),	-- Lucky Pandaren Coin
+						},
+					}),
+					o(213363, {	-- Wodin's Mantid Shanker
+						["coord"] = { 39.41, 7.23, THE_JADE_FOREST },
+						["questID"] = 31397,
+						["g"] = {
+							i(85776),	-- Wodin's Mantid Shanker
+						},
 					}),
 					o(214338, {	-- Offering of Remembrance
-						["questID"] = 31865, -- Offering of Remembrance
 						["coord"] = { 46.3, 80.6, THE_JADE_FOREST },
+						["questID"] = 31865, -- Offering of Remembrance
+					}),
+					o(213748, {	-- Pandaren Ritual Stone
+						["questID"] = 31404,
+						["coord"] = { 23.49, 35.05, THE_JADE_FOREST },
+						["g"] = {
+							i(86216),	-- Pandaren Ritual Stone
+						},
+					}),
+					o(213362, {	-- Ship's Locker
+						["questID"] = 31396, -- Ship's Locker
+						["description"] = "Located underwater in a boat.",
+						["coord"] = { 51.28, 100.54, THE_JADE_FOREST },	-- Can't use Uncharted Sea MapID, plots the point incorrectly.
+					}),
+					o(214379),	-- Shrine of Fellowship [TODO]
+					o(213333, {	-- Spirit Binders
+						["coord"] = { 42.2, 17.4, THE_JADE_FOREST },
 					}),
 					o(214337, {	-- Stash of Gems
+						["coord"] = { 62.4, 27.5, THE_JADE_FOREST },
 						["description"] = "Located in a cave.",
 						["questID"] = 31866, -- Stash of Gems
-						["coord"] = { 62.4, 27.5, THE_JADE_FOREST },
 					}),
-					o(214379),	-- Shrine of Fellowship
+					o(215799, {	-- The Emperor's Burden - Part 1
+						["coord"] = { 47.0, 45.1, THE_JADE_FOREST },
+					}),
+					o(213421, {	-- The Emperor's Burden - Part 3
+						["coord"] = { 55.8, 56.8, THE_JADE_FOREST },
+					}),
+					o(213415, {	-- The First Monks
+						["coord"] = { 35.7, 30.5, THE_JADE_FOREST },
+					}),
+					o(213327, {	-- The Saurok
+						["coord"] = { 67.7, 29.3, THE_JADE_FOREST },
+					}),
+					o(215779, {	-- Watersmithing
+						["coord"] = { 66.0, 87.5, THE_JADE_FOREST },
+					}),
+					o(213512, {	-- Xin Wo Yin the Broken Hearted
+						["coord"] = { 37.5, 30.1, THE_JADE_FOREST },
+					}),
 				}),
 				n(VENDORS, {
 					n(56687, {	-- Metalworker Sashi <Trade Goods>

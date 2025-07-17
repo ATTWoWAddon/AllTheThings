@@ -226,6 +226,10 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 46499 },	-- Spiders, Huh?
 				["provider"] = { "n", 119886 },	-- Excavator Karla
 				["coord"] = { 39.6, 71.7, BROKEN_SHORE },
+				["g"] = {
+					i(146956),	-- Promising Treasure Key (QI!)
+					i(146664),	-- Finely-Jeweled Key
+				},
 			}),
 			q(46252, {	-- Intolerable Infestation
 				["sourceQuests"] = { 46248 },	-- Self-Fulfilling Prophecy
@@ -362,10 +366,16 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 			q(47017, {	-- Only the Best
 				["provider"] = { "n", 121081 },	-- Merris Townsend
 				["coord"] = { 43.6, 64.0, BROKEN_SHORE },
+				["g"] = {
+					i(147432),	-- Champion Equipment
+				},
 			}),
 			q(46253, {	-- Pillars of Creation
 				["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
-				["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				["qgs"] = {
+					116302,	-- Archmage Khadgar
+					122799,	-- Archmage Khadgar
+				},
 				["coord"] = { 44.6, 63.1, BROKEN_SHORE },
 			}),
 			q(46769, {	-- Relieved of Their Valuables
@@ -405,11 +415,18 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 46509 },	-- Tomb Raidering
 				["provider"] = { "n", 119886 },	-- Excavator Karla
 				["coord"] = { 39.6, 71.7, BROKEN_SHORE },
+				["g"] = {
+					i(146958),	-- Wonderfully-Adorned Cloth (QI!)
+					i(146663),	-- Soggy Tapestry
+				},
 			}),
 			q(46499, {	-- Spiders, Huh?
 				["sourceQuests"] = { 46734 },	-- Assault on Brokeen Shore
 				["provider"] = { "n", 119886 },	-- Excavator Karla
 				["coord"] = { 39.6, 71.7, BROKEN_SHORE },
+				["g"] = {
+					i(146955),	-- Potentially Precious Gem (QI!)
+				},
 			}),
 			q(46246, {	-- Strike Them Down
 				["sourceQuests"] = { 46249 },	-- Championing Our Cause
@@ -432,6 +449,9 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 				["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
+				["g"] = {
+					i(147430),	-- Mysterious Runebound Scroll (QI!)
+				},
 			}),
 			q(46773, {	-- The Command Center
 				["sourceQuest"] = 46245,	-- Begin Construction
@@ -445,7 +465,10 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 			}),
 			q(46805, {	-- The Deceiver's Downfall
 				["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
-				["provider"] = { "n", 120372 },	-- Prophet Velen
+				["qgs"] = {
+					120372,	-- Prophet Velen
+					122800,	-- Prophet Velen
+				},
 				["coord"] = { 44.6, 63.2, BROKEN_SHORE },
 			}),
 			q(46282, {	-- The King's Path
@@ -480,19 +503,23 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["provider"] = { "i", 147356 },	-- Broken Sentinax Beacon
 			}),
 			q(54120, {	-- To Orgrimmar
-				["provider"] = { "n", 145965 },	-- Spirit of Vol'jin
+				["qgs"] = {
+					145965,	-- Spirit of Vol'jin
+					145981, -- Restless Spirit
+				},
 				["lvl"] = 50,
 				["coord"] = { 62.3, 30.4, BROKEN_SHORE },
 				["races"] = HORDE_ONLY,
 				["sourceQuests"] = { 53778 },	-- Where He Fell
-				["g"] = {
-					i(165371),	-- The Glaive of Vol'jin (QI!)
-				},
+				["g"] = { i(165371) },	-- The Glaive of Vol'jin (QI!)
 			}),
 			q(46509, {	-- Tomb Raidering
 				["sourceQuests"] = { 46501 },	-- Grave Robbin'
 				["provider"] = { "n", 119886 },	-- Excavator Karla
 				["coord"] = { 39.6, 71.7, BROKEN_SHORE },
+				["g"] = {
+					i(146957),	-- Mysterious Potion (QI!)
+				},
 			}),
 			q(47054, {	-- Touched By Fate
 				["repeatable"] = true,
@@ -509,6 +536,9 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 46510 },	-- Ship Graveyard
 				["provider"] = { "n", 119886 },	-- Excavator Karla
 				["coord"] = { 39.6, 71.7, BROKEN_SHORE },
+				["g"] = {
+					i(146653),	-- Ancient Shard of Binding (QI!)
+				},
 			}),
 			q(53778, {	-- Where He Fell
 				["provider"] = { "n", 145965 },	-- Spirit of Vol'jin

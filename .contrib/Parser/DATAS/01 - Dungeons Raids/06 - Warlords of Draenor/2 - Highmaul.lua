@@ -62,6 +62,17 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				},
 			}),
 			d(DIFFICULTY.RAID.MULTI.ALL, {
+				cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
+					i(138807, {	-- Illusion: Mark of the Shattered Hand (ILLUSION!)
+						["timeline"] = { ADDED_7_0_3 },
+					}),
+				})),
+				cr(78948, e(1195, {	-- Tectus <The Living Mountain>
+					i(138835, {	-- Illusion: Rockbiter (ILLUSION!)
+						["classes"] = { SHAMAN },
+						["timeline"] = { ADDED_7_0_3 },
+					}),
+				})),
 				cr(79015, e(1153, {	-- Ko'ragh <Breaker of Magic>
 					un(REMOVED_FROM_GAME, i(115288)),	-- Felbreaker's Tome
 				})),
@@ -83,9 +94,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						i(116003),	-- Spectator's Sandals of Carnage
 						i(116282),	-- Grunt's Rusty Ring
 						i(116289),	-- Bloodmaw's Tooth
-						i(138807, {	-- Illusion: Mark of the Shattered Hand (ILLUSION!)
-							["timeline"] = { ADDED_7_0_3 },
-						}),
 					})),
 					cr(77404, e(971, {	-- The Butcher
 						i(116361),	-- Butcher's Cruel Chopper
@@ -118,10 +126,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						i(116032),	-- Legguards of Ravenous Assault
 						i(116279),	-- Frostcap Band
 						i(116292),	-- Mote of the Mountain
-						i(138835, {	-- Illusion: Rockbiter (ILLUSION!)
-							["classes"] = { SHAMAN },
-							["timeline"] = { ADDED_7_0_3 },
-						}),
 					})),
 					e(1148, {	-- Twin Ogron
 						["crs"] = {
@@ -171,9 +175,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					ach(8948, {	-- Flame On!
 						["crs"] = { 88123 },	-- Fire Pillar
 					}),
-					i(138807, {	-- Illusion: Mark of the Shattered Hand (ILLUSION!)
-						["timeline"] = { ADDED_7_0_3 },
-					}),
 				})),
 				cr(77404, e(971, {	-- The Butcher
 					ach(8947, {	-- Hurry Up, Maggot!
@@ -186,10 +187,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				cr(78948, e(1195, {	-- Tectus <The Living Mountain>
 					ach(8974, {	-- More Like Wrecked-us
 						["crs"] = { 80557 },	-- Mote of Tectus <Mote of the Mountain>
-					}),
-					i(138835, {	-- Illusion: Rockbiter (ILLUSION!)
-						["classes"] = { SHAMAN },
-						["timeline"] = { ADDED_7_0_3 },
 					}),
 				})),
 				e(1148, {	-- Twin Ogron

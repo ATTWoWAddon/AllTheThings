@@ -48,12 +48,12 @@ BAINE_BLOODHOOF_CRITERIA_UID = 12661;
 
 -- WoWHead doesn't list specific colors on all of the vendors, but if you visit on the opposite faction, they sell both. It's based on the character's faction. Putting this in here in case its different and we need two separate distinctions.
 local HOLIDAY_VENDOR_GROUPS_GREEN = {
-	i(34261, {	-- Pattern: Green Winter Clothes
+	i(34261, {	-- Pattern: Green Winter Clothes (RECIPE!)
 		["timeline"] = { ADDED_2_3_0 },
 	}),
 }
 local HOLIDAY_VENDOR_GROUPS_RED = {
-	i(34319, {	-- Pattern: Red Winter Clothes
+	i(34319, {	-- Pattern: Red Winter Clothes (RECIPE!)
 		["timeline"] = { ADDED_2_3_0 },
 	}),
 };
@@ -244,10 +244,10 @@ local STOLEN_PRESENT_GROUPS = {
 	}),
 	-- Misc:
 	i(46725),	-- Red Rider Air Rifle
-	i(219291, {	-- Puntable Baby Greench
+	i(219291, {	-- Puntable Baby Greench (CI!)
 		["timeline"] = { ADDED_11_0_7 },
 	}),
-	i(219255, {	-- Puntable Rotten Little Helper
+	i(219255, {	-- Puntable Rotten Little Helper (CI!)
 		["timeline"] = { ADDED_11_0_7 },
 	}),
 };
@@ -794,7 +794,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		ach(15313, {	-- Rockin' Rollin' Racer (2021)
 			["providers"] = {
 				{ "i", 187422 },	-- Rockin' Rollin' Racer Customizer 19.9.3 (TOY!)
-				{ "i", 187560 },	-- Rockin' Rollin' Racer Pack
+				{ "i", 187560 },	-- Rockin' Rollin' Racer Pack (CI!)
 			},
 			["timeline"] = { ADDED_9_1_5 },
 		}),
@@ -902,7 +902,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		-- #endif
 		i(21525, {	-- Green Winter Hat
 			["maps"] = {
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				-- Castle Nathria
 				1735,	-- The Grand Walk
 				1744,	-- The Purloined Stores
@@ -952,7 +952,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #endif
 			},
 			["crs"] = {
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				166969,	-- Baroness Frieda
 				-- #endif
 				-- #if AFTER WOD
@@ -986,7 +986,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		}),
 		i(21524, {	-- Red Winter Hat
 			["maps"] = {
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				-- Castle Nathria
 				1735,	-- The Grand Walk
 				1744,	-- The Purloined Stores
@@ -1037,7 +1037,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #endif
 			},
 			["crs"] = {
-				-- #if AFTER SHADOWLANDS
+				-- #if AFTER SL
 				166969,	-- Baroness Frieda
 				167406,	-- Sire Denathrius
 				164255,	-- Globgrog
@@ -1081,7 +1081,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		-- #endif
 		["groups"] = {
 			-- #if AFTER TBC
-			i(34261, {	-- Pattern: Green Winter Clothes
+			i(34261, {	-- Pattern: Green Winter Clothes (RECIPE!)
 				-- #if AFTER TBC
 				["description"] = "Horde Tailors receive this pattern in the mail, but Alliance Tailors can learn it from the Neutral holiday vendor in Shattrath.",
 				-- #else
@@ -1089,7 +1089,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #endif
 				["timeline"] = { ADDED_2_3_0 },
 			}),
-			i(34319, {	-- Pattern: Red Winter Clothes
+			i(34319, {	-- Pattern: Red Winter Clothes (RECIPE!)
 				-- #if AFTER TBC
 				["description"] = "Alliance Tailors receive this pattern in the mail, but Horde Tailors can learn it from the Neutral holiday vendor in Shattrath.",
 				-- #else
@@ -1104,7 +1104,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				["timeline"] = { ADDED_2_3_0 },
 			}),
 			-- #else
-			i(17724),	-- Pattern: Green Holiday Shirt
+			i(17724),	-- Pattern: Green Holiday Shirt (RECIPE!)
 			-- #endif
 			i(17712, {	-- Winter Veil Disguise Kit (TOY!)
 				["description"] = "Greatfather Winter will mail this to you 24 hours after you complete the 'A Smokywood Pastures Thank You!' quest.",
@@ -1400,9 +1400,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				i(218308, {	-- Winter Veil Cracker (TOY!)
 					i(233013),	-- Coal Cookie
 					i(234126),	-- Icicle Cupcake
-					i(219286),	-- Puntable Globe Yeti
-					i(234127),	-- Puntable Grumpling
-					i(219289),	-- Puntable Tiny Snowman
+					i(219286),	-- Puntable Globe Yeti (CI!)
+					i(234127),	-- Puntable Grumpling (CI!)
+					i(219289),	-- Puntable Tiny Snowman (CI!)
 				}),
 			},
 		})),
@@ -1418,7 +1418,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["groups"] = {
 				i(17725),	-- Formula: Enchant Weapon - Winter's Might (RECIPE!)
 				i(17722),	-- Pattern: Gloves of the Greatfather (RECIPE!)
-				i(17724),	-- Pattern: Green Holiday Shirt
+				i(17724),	-- Pattern: Green Holiday Shirt (RECIPE!)
 				i(17706),	-- Plans: Edge of Winter (RECIPE!)
 				i(17709),	-- Recipe: Elixir of Frost Power (RECIPE!)
 				i(17720),	-- Schematic: Snowmaster 9000 (RECIPE!)
@@ -1462,7 +1462,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					}),
 					-- #endif
 					i(17722),	-- Pattern: Gloves of the Greatfather (RECIPE!)
-					i(17724),	-- Pattern: Green Holiday Shirt
+					i(17724),	-- Pattern: Green Holiday Shirt (RECIPE!)
 					i(17706),	-- Plans: Edge of Winter (RECIPE!)
 					i(17709),	-- Recipe: Elixir of Frost Power (RECIPE!)
 					i(17720),	-- Schematic: Snowmaster 9000 (RECIPE!)
@@ -1725,7 +1725,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["_drop"] = { "g" },
 			["lvl"] = 10,
 			["groups"] = {
-				i(187560),	-- Rockin' Rollin' Racer Pack
+				i(187560),	-- Rockin' Rollin' Racer Pack (CI!)
 			},
 		})),
 		q(66507, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH } }, {	-- A Winter Veil Gift (2022)
@@ -2331,7 +2331,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				i(149503, {	-- Stolen Gift
 					["description"] = "This gift is granted to any player below max level. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
 					["timeline"] = { ADDED_7_2_5 },
-					-- #if AFTER SHADOWLANDS
+					-- #if AFTER SL
 					["lvl"] = { 30, 59 },
 					-- #elseif AFTER BFA
 					["lvl"] = { 30, 109 },
@@ -2468,6 +2468,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #endif
 				i(17194),	-- Holiday Spices
 				i(17196),	-- Holiday Spirits
+				i(34412, {	-- Sparkling Apple Cider
+					["timeline"] = { ADDED_2_3_0 },
+				}),
 				i(234407, {	-- Festive Green Holiday Boots
 					["timeline"] = { ADDED_11_0_7 },
 				}),
@@ -2539,32 +2542,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
 					["timeline"] = { ADDED_6_0_2 },
 				}),
-				i(128665, {	-- Ball of Tangled Lights
+				i(128665, {	-- Ball of Tangled Lights (CI!)
 					["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
 					["timeline"] = { ADDED_6_2_2 },
-					["questID"] = 39615,
 				}),
 				i(128668, {	-- Festive Outfits
-					["description"] = "This becomes un-saved if you remove the decorations even though the decorations remain unlocked.\n\nThis may also not be the correct QuestID for this Item unlock.",
+					["description"] = "This becomes un-saved if you remove the decorations even though the decorations remain unlocked.",
 					["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
 					["timeline"] = { ADDED_6_2_2 },
 					["questID"] = 39671,	-- apparently repeatable if you remove the festive decorations... or might be the wrong QuestID for the unlock specifically
 					["repeatable"] = true,
 				}),
-				i(128666, {	-- Imported Trees
+				i(128666, {	-- Imported Trees (CI!)
 					["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
 					["timeline"] = { ADDED_6_2_2 },
-					["questID"] = 39616,
 				}),
-				i(128667, {	-- Little Helpers
+				i(128667, {	-- Little Helpers (CI!)
 					["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
 					["timeline"] = { ADDED_6_2_2 },
-					["questID"] = 39767,
 				}),
-				i(128669, {	-- Old Box of Decorations
+				i(128669, {	-- Old Box of Decorations (CI!)
 					["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
 					["timeline"] = { ADDED_6_2_2 },
-					["questID"] = 39712,
 				}),
 				i(128670, {	-- Savage Gift
 					["cost"] = { { "i", 128659, 5 }, },	-- 5x Merry Supplies
@@ -2722,11 +2721,6 @@ root(ROOTS.HiddenQuestTriggers, {
 			}),
 		})),
 	})),
-	-- expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {
-	-- 	applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_VEIL_HEADER, {
-	-- 		q(64628),	-- Triggered when learning the additional things for the Rockin' Rollin' Toy (spellID 358761)
-	-- 	})),
-	-- })),
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
 		applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_VEIL_HEADER, {
 			q(78130),	-- Looting Festive Trans-Dimensional Bird Whistle [209859]
@@ -2736,6 +2730,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
 		applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_VEIL_HEADER, {
 			q(86440),	-- Stolen Present Daily / Scroll of Storytelling id 116456 (already known) / daily bonus?
+			q(86441),	-- Bronze Celebration Token Winter Veil tracker
 		})),
 	})),
 });

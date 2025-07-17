@@ -4,7 +4,7 @@
 local DF_ENCHANTING_KNOWLEDGE = 2030;
 local TWW_ENCHANTING_KNOWLEDGE = 2787;
 root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
-	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+	n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18769),	-- Disenchantment IV
 		ach(18768),	-- Disenchantment III
 		ach(18767),	-- Disenchantment II
@@ -342,9 +342,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 	})),
 	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
-			ach(18775, {	-- Iwen's Enchanting Rod
-				["provider"] = { "i", 164766 },	-- Iwen's Enchanting Rod
-			}),
+			ach(18775),	-- Iwen's Enchanting Rod
 		})),
 		n(QUESTS, {
 			q(54473, {	-- Enchanted Formulae [A]
@@ -1085,19 +1083,19 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 		cat(693, {	-- Cloak Enchantments
 			r(13635),	-- Defense
 			applyclassicphase(PHASE_FIVE, r(25086)),	-- Dodge
-			r(13657, {["timeline"]={REMOVED_5_0_4}}),	-- Fire Resistance
+			r(13657, {["timeline"]={DELETED_5_0_4}}),	-- Fire Resistance
 			r(13746),	-- Greater Defense
-			applyclassicphase(PHASE_FIVE_RECIPES, r(25081, {["timeline"]={REMOVED_5_0_4}})),	-- Greater Fire Resistance
-			applyclassicphase(PHASE_FIVE_RECIPES, r(25082, {["timeline"]={REMOVED_5_0_4}})),	-- Greater Nature Resistance
-			r(20014, {["timeline"]={REMOVED_5_0_4}}),	-- Greater Resistance
+			applyclassicphase(PHASE_FIVE_RECIPES, r(25081, {["timeline"]={DELETED_5_0_4}})),	-- Greater Fire Resistance
+			applyclassicphase(PHASE_FIVE_RECIPES, r(25082, {["timeline"]={DELETED_5_0_4}})),	-- Greater Nature Resistance
+			r(20014, {["timeline"]={DELETED_5_0_4}}),	-- Greater Resistance
 			r(13882),	-- Lesser Agility
-			r(7861, {["timeline"]={REMOVED_5_0_4}}),	-- Lesser Fire Resistance
+			r(7861, {["timeline"]={DELETED_5_0_4}}),	-- Lesser Fire Resistance
 			r(13421),	-- Lesser Protection
-			r(13522, {["timeline"]={REMOVED_5_0_4}}),	-- Lesser Shadow Resistance
+			r(13522, {["timeline"]={DELETED_5_0_4}}),	-- Lesser Shadow Resistance
 			r(13419),	-- Minor Agility
 			r(7771),	-- Minor Protection
-			r(7454, {["timeline"]={REMOVED_5_0_4}}),	-- Minor Resistance
-			r(13794, {["timeline"]={REMOVED_5_0_4}}),	-- Resistance
+			r(7454, {["timeline"]={DELETED_5_0_4}}),	-- Minor Resistance
+			r(13794, {["timeline"]={DELETED_5_0_4}}),	-- Resistance
 			applyclassicphase(PHASE_FIVE, r(25083)),	-- Stealth
 			applyclassicphase(PHASE_FIVE, r(25084)),	-- Subtlety
 			r(20015),	-- Superior Defense
@@ -1147,14 +1145,14 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(17180),	-- Enchanted Thorium Bar
 		}),
 		cat(697, {	-- Rods
-			r(20051, {["timeline"]={REMOVED_5_0_4}}),	-- Runed Arcanite Rod
+			r(20051, {["timeline"]={DELETED_5_0_4}}),	-- Runed Arcanite Rod
 			r(7421),	-- Runed Copper Rod
-			r(13628, {["timeline"]={REMOVED_5_0_4}}),	-- Runed Gold Rod
-			r(7795, {["timeline"]={REMOVED_5_0_4}}),	-- Runed Silver Rod
-			r(13702, {["timeline"]={REMOVED_5_0_4}}),	-- Runed Truesilver Rod
+			r(13628, {["timeline"]={DELETED_5_0_4}}),	-- Runed Gold Rod
+			r(7795, {["timeline"]={DELETED_5_0_4}}),	-- Runed Silver Rod
+			r(13702, {["timeline"]={DELETED_5_0_4}}),	-- Runed Truesilver Rod
 		}),
 		cat(696, {	-- Shield Enchantments
-			r(13933, {["timeline"]={REMOVED_5_0_4}}),	-- Frost Resistance
+			r(13933, {["timeline"]={DELETED_5_0_4}}),	-- Frost Resistance
 			r(20017),	-- Greater Stamina
 			r(13905),	-- Greater Versatility / CLASSIC: Greater Spirit
 			-- #if SEASON_OF_DISCOVERY
@@ -1264,13 +1262,13 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 		}),
 		cat(684, {	-- Cloak Enchantments
 			r(34004),	-- Greater Agility
-			r(34005, {["timeline"]={ADDED_2_0_1,REMOVED_5_0_4}}),	-- Greater Arcane Resistance
+			r(34005, {["timeline"]={ADDED_2_0_1,DELETED_5_0_4}}),	-- Greater Arcane Resistance
 			-- #if AFTER WRATH
 			applyclassicphase(TBC_PHASE_FIVE, r(47051, {["timeline"]={ADDED_2_4_0}})),	-- Greater Dodge / TBC: Steelweave
 			-- #endif
-			r(34006, {["timeline"]={ADDED_2_0_1,REMOVED_5_0_4}}),	-- Greater Shadow Resistance
+			r(34006, {["timeline"]={ADDED_2_0_1,DELETED_5_0_4}}),	-- Greater Shadow Resistance
 			r(27961),	-- Major Armor
-			r(27962, {["timeline"]={ADDED_2_0_1,REMOVED_5_0_4}}),	-- Major Resistance
+			r(27962, {["timeline"]={ADDED_2_0_1,DELETED_5_0_4}}),	-- Major Resistance
 			r(34003),	-- MOP: PvP Power / TBC: Spell Penetration
 			-- #if BEFORE WRATH
 			applyclassicphase(TBC_PHASE_FIVE, r(47051, {["timeline"]={ADDED_2_4_0}})),	-- TBC: Steelweave / Greater Dodge
@@ -1302,12 +1300,14 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			applyclassicphase(TBC_PHASE_FIVE, r(45765, {["timeline"]={ADDED_2_4_0}})),	-- Void Shatter
 		}),
 		cat(445, sharedDataSelf({ ["timeline"] = { ADDED_2_0_1, REMOVED_6_0_2 } }, {	-- Ring Enchantments
-			r(27926),	-- Healing Power
+			r(27926, {	-- Healing Power
+				["timeline"] = { ADDED_2_0_1, DELETED_5_0_4 },
+			}),
 			r(27924),	-- Spellpower
 			applyclassicphase(TBC_PHASE_THREE, r(27927)),	-- Stats
 			r(27920),	-- Striking
 		})),
-		cat(697, sharedDataSelf({ ["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 } }, {	-- Rods
+		cat(697, sharedDataSelf({ ["timeline"] = { ADDED_2_0_1, DELETED_5_0_4 } }, {	-- Rods
 			r(32665),	-- Runed Adamantite Rod
 			r(32664),	-- Runed Fel Iron Rod
 			r(32667),	-- Runed Eternium Rod
@@ -1327,7 +1327,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			-- #if BEFORE WOD
 			r(44383, {["timeline"]={ADDED_2_3_0}}),	-- Armor / TBC: Resilience
 			-- #endif
-			r(27947, {["timeline"]={ADDED_2_0_1,REMOVED_5_0_4}}),	-- Resistance
+			r(27947, {["timeline"]={ADDED_2_0_1,DELETED_5_0_4}}),	-- Resistance
 			-- #if BEFORE CATA
 			r(27946),	-- TBC: Shield Block / Parry
 			r(27944),	-- TBC: Tough Shield / Lesser Dodge
@@ -1404,12 +1404,12 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(44631),	-- Shadow Armor
 			r(60609, {["timeline"]={ADDED_3_1_0}}),	-- Speed
 			r(44500),	-- Superior Agility
-			r(44596, {["timeline"]={ADDED_3_1_0,REMOVED_5_0_4}}),	-- Superior Arcane Resistance
+			r(44596, {["timeline"]={ADDED_3_1_0,DELETED_5_0_4}}),	-- Superior Arcane Resistance
 			r(44591),	-- Superior Dodge / WOTLK: Titanweave
-			r(44556, {["timeline"]={ADDED_3_1_0,REMOVED_5_0_4}}),	-- Superior Fire Resistance
-			r(44483, {["timeline"]={ADDED_3_1_0,REMOVED_5_0_4}}),	-- Superior Frost Resistance
-			r(44494, {["timeline"]={ADDED_3_1_0,REMOVED_5_0_4}}),	-- Superior Nature Resistance
-			r(44590, {["timeline"]={ADDED_3_1_0,REMOVED_5_0_4}}),	-- Superior Shadow Resistance
+			r(44556, {["timeline"]={ADDED_3_1_0,DELETED_5_0_4}}),	-- Superior Fire Resistance
+			r(44483, {["timeline"]={ADDED_3_1_0,DELETED_5_0_4}}),	-- Superior Frost Resistance
+			r(44494, {["timeline"]={ADDED_3_1_0,DELETED_5_0_4}}),	-- Superior Nature Resistance
+			r(44590, {["timeline"]={ADDED_3_1_0,DELETED_5_0_4}}),	-- Superior Shadow Resistance
 			r(47899),	-- Wisdom
 		}),
 		cat(674, {	-- Glove Enchantments
@@ -1431,7 +1431,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(44636),	-- Greater Spellpower
 			r(59636),	-- Stamina
 		})),
-		cat(697, sharedDataSelf({ ["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 } }, {	-- Rods
+		cat(697, sharedDataSelf({ ["timeline"] = { ADDED_2_0_1, DELETED_5_0_4 } }, {	-- Rods
 			r(60619),	-- Runed Titanium Rod
 		})),
 		applyclassicphase(LEGION_PHASE_ONE, cat(704, sharedDataSelf({ ["timeline"] = { ADDED_7_0_3} }, {	-- Illusions
@@ -1531,7 +1531,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(74217),	-- Intellect
 			r(74215),	-- Strength
 		})),
-		cat(697, sharedDataSelf({ ["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 } }, {	-- Rods
+		cat(697, sharedDataSelf({ ["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 } }, {	-- Rods
 			r(92370),	-- Runed Elementium Rod
 		})),
 		cat(670, {	-- Shield and Off-Hand Enchantments

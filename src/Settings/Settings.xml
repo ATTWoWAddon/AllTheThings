@@ -9,6 +9,7 @@
 	<Script file="Pages/General - Unobtainables.lua"/>
 	<Script file="Pages/Interface.lua"/>
 	<Script file="Pages/Interface - Accessibility.lua"/>
+	<Script file="Pages/Interface - Fillers.lua"/>
 	<Script file="Pages/Interface - Information.lua"/>
 	<Script file="Pages/Features.lua"/>
 	<Script file="Pages/Features - Audio.lua"/>

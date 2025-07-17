@@ -7,7 +7,7 @@ local RAZZASHI_HATCHLING = i(48126, {	-- Razzashi Hatchling
 	["cr"] = 14821,	-- Razzashi Raptor
 });
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR, {
-	inst(76, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Zul'Gurub
+	inst(76, bubbleDownSelf({ ["timeline"] = { ADDED_1_7_0, REMOVED_4_0_3 } }, {	-- Zul'Gurub
 		["lore"] = "Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",
 		-- #if BEFORE WRATH
 		["zone-text-areaID"] = 19,	-- Zul'Gurub
@@ -948,9 +948,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 						-- #endif
 						i(19772),	-- Pattern: Blood Tiger Breastplate (RECIPE!)
 						i(19773),	-- Pattern: Blood Tiger Shoulders (RECIPE!)
-						i(19766),	-- Pattern: Bloodvine Boots
-						i(19765),	-- Pattern: Bloodvine Leggings
-						i(19764),	-- Pattern: Bloodvine Vest
+						i(19766),	-- Pattern: Bloodvine Boots (RECIPE!)
+						i(19765),	-- Pattern: Bloodvine Leggings (RECIPE!)
+						i(19764),	-- Pattern: Bloodvine Vest (RECIPE!)
 						i(19771),	-- Pattern: Primal Batskin Bracers (RECIPE!)
 						i(19770),	-- Pattern: Primal Batskin Gloves (RECIPE!)
 						i(19769),	-- Pattern: Primal Batskin Jerkin (RECIPE!)
@@ -1501,11 +1501,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				i(22637),	-- Primal Hakkari Idol
 			}),
 			n(14834, {	-- Hakkar the Soulflayer
-				ach(688, {	-- Zul'Gurub
-					-- #if BEFORE WRATH
-					["sourceQuest"] = 8183,	-- The Heart of Hakkar
-					-- #endif
-				}),
+				ach(688),	-- Zul'Gurub
 				i(19802),	-- Heart of Hakkar
 				i(19862),	-- Aegis of the Blood God
 				i(19852),	-- Ancient Hakkari Manslayer

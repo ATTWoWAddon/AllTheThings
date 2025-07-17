@@ -7,11 +7,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["icon"] = 236808,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(779),	-- Explore Loch Modan
+				ach(779),	-- Explore Loch Modan
 				ach(4899, {	-- Loch Modan Quests
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					-- #if ANYCLASSIC
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
+					-- #else
 					["sourceQuests"] = {
 						26148,	-- A Decisive Strike
 						26147,	-- Bigger and Uglier
@@ -29,6 +31,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						--	above definitely required; unclear if these are
 						--	27028,	-- Hornet Hunting
 						--	27030,	-- Foxtails by the Handful
+						
+						-- #if AFTER 5.0.4
+						-- Patch 5.0.4 (2012-08-28): Merged with Wetlands quests. 
+						25734,	-- Down in Thelgen Rock
+						25733,	-- Get Out of Here, Stalkers
+						25735,	-- Incendicite Ore
+						25780,	-- Assault on Menethil Keep
+						25801,	-- Claws from the Deep
+						25805,	-- Return the Statuette
+						25819,	-- The Eye of Paleth
+						25857,	-- Hunting Horrorjaw
+						26189,	-- The Angerfang Menace
+						25868,	-- Yorla Darksnare
+						--[[	TODO: possibly required -- first two from same hub as Yorla Darksnare, second two from same hub as The Angerfang Menace
+						25855,	-- Gizmos and Gadgets
+						25850,	-- Strike the Earth!
+						25853,	-- Tooling Around
+						--]]
+						26128,	-- The Battle of Thandol Span
+						26120,	-- The Crazed Dragonmaw
+						--[[ TODO: possibly needed
+						25939,	-- For Peat's Sake
+						26196,	-- Longbraid the Grim
+						25927,	-- The Threat of Flame
+						]]--
+						-- #endif
 					},
 					-- #endif
 				}),
@@ -81,7 +109,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			spell(921, {	-- Pickpocketing
+			header(HEADERS.Spell, 921, {	-- Pickpocketing
 				["classes"] = { ROGUE },
 				["groups"] = {
 					applyclassicphase(SOD_PHASE_ONE, i(208838, {	-- Dark Iron Lockbox
@@ -588,6 +616,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 82.7, 63.4, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Bobcat slain
+							["provider"] = { "n", 44188 },	-- Bobcat
+						}),
+					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, q(79975, {	-- Eagle's Fist
@@ -857,7 +890,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(6387, {	-- Honor Students
 					["providers"] = {
 						{ "n", 1681 },	-- Brock Stoneseeker
-						{ "i", 16310 },	-- Brock's List
+						{ "i", 16310 },	-- Brock's List (PQI!)
 					},
 					["coord"] = { 37, 47.8, LOCH_MODAN },
 					["races"] = { DWARF, GNOME },
@@ -1192,7 +1225,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26131, {	-- Reinforcements for Loch Modan
 					["qg"] = 1959,	-- Mountaineer Barleybrew
-					["coord"] = { 41.8, 52.2, IRONFORGE },
+					["coord"] = { 41.4, 52.3, IRONFORGE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1252,9 +1285,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/7 Mo'grosh Ogre slain
 							["providers"] = {
-								{ "n", 44758},	-- Mo'grosh Darkmauler
-								{ "n", 14267},	-- Emogg the Crusher
-								{ "n", 44760},	-- Mo'grosh Earthbender
+								{ "n", 44758 },	-- Mo'grosh Darkmauler
+								{ "n", 14267 },	-- Emogg the Crusher
+								{ "n", 44760 },	-- Mo'grosh Earthbender
 							},
 						}),
 					},
@@ -1267,9 +1300,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13635, {	-- South Gate Status Report
-					["qg"] = 1960,	-- Pilot Hammerfoot
+					["providers"] = {
+						{ "n",  1960 },	-- Pilot Hammerfoot
+						{ "i", 60494 },	-- South Gate Status Report (PQI!)
+					},
 					["sourceQuest"] = 26855,	-- A Pilot's Revenge
-					["coord"] = { 14.0, 56.4, LOCH_MODAN },
+					["coord"] = { 14.0, 56.5, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1361,30 +1397,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Mudbelly Boar slain
 							["provider"] = { "n", 44627 },	-- Mudbelly Boar
-						}),
-					},
-				}),
-				q(26854, {	-- The Lost Pilot
-					["qg"] = 1960,	-- Pilot Hammerfoot
-					["sourceQuests"] = {
-						26131,	-- Reinforcements for Loch Modan
-						28567,	-- Hero's Call: Loch Modan!
-					},
-					["coord"] = { 14.0, 56.6, LOCH_MODAN },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(58970, {	-- Mori's Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58971, {	-- Mori's Compass
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58972, {	-- Mori's Gear Stick
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(156933, {	-- Mori's Pocketknife
-							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1877,7 +1889,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(TREASURES, {
-				o(207496, {	-- Dark Iron Treasure Chest
+				o(207497, {	-- Dark Iron Treasure Chest
 					["coords"] = {
 						{ 36.6, 61.2, LOCH_MODAN },
 						{ 61.9, 75.0, LOCH_MODAN },
@@ -1906,15 +1918,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- Still available in some chests
 						i(4596),	-- Discolored Healing Potion
 					},
-				}),
-				o(207497, {	-- Dark Iron Treasure Chest
-					["coords"] = {	-- As opposed to 207496, this one spawns exclusively in Loch Modan
-						{ 36.6, 61.2, LOCH_MODAN },
-						{ 61.9, 75.0, LOCH_MODAN },
-						{ 80.3, 51.9, LOCH_MODAN },
-					},
-					["timeline"] = { ADDED_4_0_3 },
-					["sym"] = {{ "select", "objectID", 207496 }, {"pop"}},
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208689, {	-- Ferocious Idol
@@ -2267,16 +2270,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				-- #endif
-				-- #if ANYCLASSIC
-				i(3173, {	-- Bear Meat
-					["coord"] = { 29.2, 53.0, LOCH_MODAN },
-					["crs"] = {
-						1186,	-- Elder Black Bear
-						1189,	-- Black Bear Patriarch
-						1188,	-- Grizzled Black Bear
-						1225,	-- Ol' Sooty
-					},
-				}),
+				-- #if BEFORE 4.0.3
+				i(3173),	-- Bear Meat
 				i(3172, {	-- Boar Intestines
 					["coord"] = { 37.0, 34.4, LOCH_MODAN },
 					["crs"] = {
@@ -2285,6 +2280,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1192,	-- Elder Mountain Boar
 					},
 				}),
+				-- #endif
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208854, {	-- Chewed Spell Notes
 					["coords"] = {
@@ -2297,14 +2293,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1166,	-- Stonesplinter Seer
 				})),
 				-- #endif
-				i(769, {	-- Chunk of Boar Meat
-					["coord"] = { 37.0, 34.4, LOCH_MODAN },
-					["crs"] = {
-						1190,	-- Mountain Boar
-						1191,	-- Mangy Mountain Boar
-						1192,	-- Elder Mountain Boar
-					},
-				}),
+				-- #if BEFORE 4.0.3
+				i(769),	-- Chunk of Boar Meat
 				-- #endif
 				i(2823, {	-- Mo'grosh Can Opener
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },

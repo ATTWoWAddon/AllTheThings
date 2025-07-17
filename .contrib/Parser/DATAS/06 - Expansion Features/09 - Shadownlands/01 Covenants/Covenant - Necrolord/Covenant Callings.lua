@@ -68,7 +68,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				}),
 				q(60398, {	-- Aiding Revendreth
 					["provider"] = { "n", 158339 },	-- Sergeant Romark
-					["coord"] = { 54.2, 68.8, MALDRAXXUS },
+					["coords"] = {
+						{ 54.2, 68.8, MALDRAXXUS },
+						{ 47.8, 29.1, SEAT_OF_THE_PRIMUS },
+					},
 					["g"] = {
 						i(181732),	-- Tribute of the Ambitious
 					},

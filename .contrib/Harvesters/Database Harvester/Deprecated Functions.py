@@ -157,3 +157,114 @@ def get_existing_ids_item(thing) -> list[str]:
                     thing_id = re.sub("[^\\d^.]", "", word)
                     existing_ids.append(thing_id + "\n")
     return existing_ids
+
+
+def create_missing_recipes() -> None:
+    """Create a missing file for Recipes using difference between debug, raw file and exclusions."""
+    profession_dict: dict[str, list[str]] = build_profession_dict()
+    raw_path_dict: dict[str, Path] = {
+        profession: Path("Raw", "Professions", f"{profession}.txt")
+        for profession in profession_dict
+    }
+    exclusion_path_dict: dict[str, Path] = {
+        profession: Path("Exclusion", "Professions", f"{profession}.txt")
+        for profession in profession_dict
+    }
+    missing_path_dict: dict[str, Path] = {
+        profession: Path(
+            DATAS_FOLDER,
+            "00 - Missing DB",
+            "Professions",
+            f"{profession}.txt",
+        )
+        for profession in profession_dict
+    }
+    for profession in profession_dict:
+        print(profession)
+        with open(missing_path_dict[profession], "w") as missing_file:
+            raw_ids = extract_nth_column(raw_path_dict[profession], 0)
+            excluded_ids = extract_nth_column(exclusion_path_dict[profession], 0)
+            difference = sorted(
+                set(raw_ids) - set(get_existing_ids(Recipes)) - set(excluded_ids),
+                key=raw_ids.index,
+            )
+            if (difference := remove_empty_builds(difference)):
+                missing_file.writelines(difference)
+            else:
+                missing_file.write("Good Work! Nothing to do here!")
+            if (difference_db := get_itemdb_difference(profession, raw_ids, excluded_ids)):
+                missing_file.write(f"\n\n\n\nMissing in {profession}.lua\n\n")
+                missing_file.writelines(difference_db)
+            else:
+                missing_file.write(f"\n\nNothing is Missing in {profession}.lua! Good Work!")
+        if not difference and not difference_db and missing_path_dict[profession].exists():
+            missing_path_dict[profession].unlink()
+    return
+
+
+def create_missing_file(thing: type[Thing]) -> None:
+    """Create a missing file for a thing using difference between debug, raw file and exclusions."""
+    if not thing.real_collectible:
+        raise NotImplementedError("This is not a real collectible.")
+    if thing == Recipes:
+        create_missing_recipes()
+        return
+    missing_path = Path(
+        DATAS_FOLDER,
+        "00 - Missing DB",
+        f"Missing{thing.__name__}.txt",
+    )
+    with open(missing_path, "w") as missing_file:
+        raw_ids = extract_nth_column(Path("Raw", f"{thing.__name__}.txt"), 0)
+        excluded_ids = extract_nth_column(Path("Exclusion", f"{thing.__name__}.txt"), 0)
+        difference_db = None
+        difference = sorted(
+            set(raw_ids) - set(get_existing_ids(thing)) - set(excluded_ids),
+            key=raw_ids.index,
+        )
+        if (difference := remove_empty_builds(difference)):
+            missing_file.writelines(difference)
+        else:
+            missing_file.write("Good Work! Nothing to do here!")
+        if thing.db_path:
+            existing_things = list[str]()
+            with open(thing.db_path) as db_file:
+                for line in db_file:
+                    if info := thing.extract_existing_info(line):
+                        existing_things.append(info + "\n")
+                difference_db = sorted(
+                    set(raw_ids) - set(existing_things) - set(excluded_ids),
+                    key=raw_ids.index,
+                )
+                if (difference_db := remove_empty_builds(difference_db)):
+                    missing_file.write(f"\n\n\n\nMissing in {thing.db_path.name}\n\n")
+                    missing_file.writelines(difference_db)
+                else:
+                    missing_file.write(f"\n\nNothing is Missing in {thing.db_path.name}! Good Work!")
+    if not difference and not difference_db and missing_path.exists():
+        missing_path.unlink()
+
+
+def get_itemdb_difference(profession: str, raw_lines: list[str], excluded_recipes: list[str]) -> list[str]:
+    """Get itemDB difference for recipes"""
+    itemdb_list = list[str]()
+    itemdb_path = Path(
+        DATAS_FOLDER,
+        "00 - Profession DB",
+        f"{profession}.lua",
+    )
+    try:
+        with open(itemdb_path) as itemdb_file:
+            for line in itemdb_file:
+                try:
+                    line = line.split(";")[0].split(",")[1]
+                except IndexError:
+                    line = ""
+                line = remove_non_digits(line)
+                itemdb_list.append(line + "\n")
+            difference = sorted(set(raw_lines) - set(itemdb_list) - set(excluded_recipes), key=raw_lines.index)
+            difference = remove_empty_builds(difference)
+            return difference
+    except FileNotFoundError:
+        print(f"This {profession} has no ItemDB")
+        return []

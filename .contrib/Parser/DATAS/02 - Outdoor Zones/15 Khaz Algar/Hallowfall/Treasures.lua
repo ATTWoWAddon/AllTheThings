@@ -64,6 +64,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["description"] = "Starblessed Glimmerfly flies around in circle casting Lightning Orbs on the ground.\nCatch 5 Lightning Orbs by standing in illuminated circles in order to reveal the treasure.",
 				["coord"] = { 58.4, 27.2, HALLOWFALL },
 				["questID"] = 81468,
+				["crs"] = { 220703 },	-- Starblessed Glimmerfly
 				["g"] = {
 					i(224552),	-- Cave Spelunker's Torch (TOY!)
 				},

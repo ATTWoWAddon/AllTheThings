@@ -7,6 +7,7 @@ NEW_CHARACTER = createHeader({
 		de = "Neuer Charakter",
 		fr = "Nouveau personnage",
 		it = "Nuovo personaggio",
+		mx = "Nuevo personaje",
 		pt = "Novo personagem",
 		ru = "Новый персонаж",
 		ko = "새로운 캐릭터",

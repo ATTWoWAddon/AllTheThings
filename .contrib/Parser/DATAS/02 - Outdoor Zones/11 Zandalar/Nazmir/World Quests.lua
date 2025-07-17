@@ -72,13 +72,17 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(50813, {	-- Cargo Reclamation
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(158878),	-- Ransacked Supplies (QI!)
+					o(282481, {	-- Ransacked Supplies
+						i(158878),	-- Ransacked Supplies (QI!)
+					}),
 				},
 			}),
 			q(50962, {	-- Cargo Reclamation
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					i(158878),	-- Ransacked Supplies (QI!)
+					o(282481, {	-- Ransacked Supplies
+						i(158878),	-- Ransacked Supplies (QI!)
+					}),
 				},
 			}),
 			q(50568),	-- Chag's Challenge
@@ -456,8 +460,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 -- 		m(NAZMIR, {
 -- 			n(WORLD_QUESTS, {
 -- 				q(54325),	-- Completed 54136 without WM
--- 				q(50460),	-- Killed Zujothgul/Exalted 7th legion
--- 				q(50480),	-- Underlord Xerxiz killID
 -- 			}),
 -- 		}),
 -- 	}),

@@ -1,0 +1,18 @@
+createLocalizationString({
+	readable = "Include Creatures",
+	constant = "REPORT_NEARBY_CONTENT_INCLUDE_CREATURES_CHECKBOX",
+	export = true,
+	text = {
+		en = "Include Creatures",
+		-- TODO: de = "",
+		es = "Incluir Criaturas",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: ko = "",
+		cn = "包含生物",
+		-- TODO: tw = "",
+	},
+})

@@ -794,6 +794,12 @@ root(ROOTS.Zones, {
 							i(43100, {	-- Infused Mushroom (QI!)
 								["provider"] = { "o", 192818 },	-- Infused Mushroom
 							}),
+							n(33026, {	-- Sarah Brady <Alcohol>
+								["coord"] = { 44.15, 47.63, NORTHREND_THE_UNDERBELLY },
+								["groups"] = {
+									i(2593),	-- Flask of Stormwind Tawny
+								},
+							}),
 						}),
 						prof(FISHING, {
 							i(45903),	-- Corroded Jewelry (QI!)
@@ -824,9 +830,11 @@ root(ROOTS.Zones, {
 						n(VENDORS, {
 							n(29535, {	-- Alchemist Cinesra
 								["coord"] = { 63.2, 11.4, NORTHREND_THE_UNDERBELLY },
+								-- #if AFTER MOP
 								["sym"] = {{"select","itemID",
 									4565,	-- Simple Dagger
 								}},
+								-- #endif
 							}),
 							n(30885, {	-- Blazik Fireclaw <Hateful Gladiator> [Legion?] / Blazik Fireclaw <Legacy Arena Armor> [CATA+] / Blazik Fireclaw <Water Vendor> [WRATH]
 								["coord"] = { 59.5, 57.9, NORTHREND_THE_UNDERBELLY },
@@ -1448,6 +1456,32 @@ root(ROOTS.Zones, {
 							["coord"] = { 41.2, 27.0, NORTHREND_DALARAN },
 							["groups"] = WRATH_MINING,
 						}),
+					}),
+					prof(TAILORING, {
+						n(28699, {	-- Charles Worth <Tailoring Trainer>
+						-- #if AFTER 6.2.2
+						["description"] = "You can now learn these recipes even if the achievements have been completed on a different character.  If your tailor isn't your main, rejoice!  Just speak to Charles Worth and tell him you're ready to learn the patterns.",
+						-- #endif
+						["coord"] = { 36.3, 33.4, NORTHREND_DALARAN },
+						["requireSkill"] = TAILORING,
+						["groups"] = appendGroups(WRATH_TAILORING, {
+							r(56017, {	-- Deathchill Cloak
+								["sourceAchievements"] = {
+									41,		-- Loremaster of Northrend (A)
+									-- #if BEFORE 5.0.4
+									1360,	-- Loremaster of Northrend (H)
+									-- #endif
+								},
+								["description"] = "In order to learn this recipe, you must have the Loremaster of Northrend achievement completed.",
+								["requireSkill"] = TAILORING,
+							}),
+							r(56016, {	-- Wispcloak
+								["sourceAchievement"] = 1288,	-- Northrend Dungeonmaster
+								["description"] = "In order to learn this recipe, you must have the Northrend Dungeonmaster achievement completed.",
+								["requireSkill"] = TAILORING,
+							}),
+						}),
+					}),
 					}),
 				}),
 				n(QUESTS, {
@@ -2539,19 +2573,9 @@ root(ROOTS.Zones, {
 					})),
 				}),
 				n(REWARDS, {
-					i(46007, {	-- Bag of Fishing Treasures
+					container(46007, {	-- Bag of Fishing Treasures
 						["provider"] = { "n", 28742 },	-- Marcia Chase
 						["description"] = "Fishing Daily Quest Reward",
-						["sourceQuests"] = {
-							-- #if BEFORE CATA
-							24806,	-- Better Luck Next Time
-							-- #endif
-							13833,	-- Blood Is Thicker
-							13834,	-- Dangerously Delicious
-							13836,	-- Disarmed!
-							13832,	-- Jewel Of The Sewers
-							13830,	-- The Ghostfish
-						},
 						["requireSkill"] = FISHING,
 						["groups"] = {
 							applyclassicphase(WRATH_PHASE_TWO, i(45862)),	-- Bold Stormjewel
@@ -2597,20 +2621,8 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					i(44113, {	-- Small Spice Bag
+					container(44113, {	-- Small Spice Bag
 						["description"] = "Cooking Daily Quest Reward",
-						["sourceQuests"] = {
-							13103,	-- Cheese for Glowergold [A]
-							13115,	-- Cheese for Glowergold [H]
-							13113,	-- Convention at the Legerdemain [A]
-							13101,	-- Convention at the Legerdemain [H]
-							13100,	-- Infused Mushroom Meatloaf [A]
-							13112,	-- Infused Mushroom Meatloaf [H]
-							13107,	-- Mustard Dogs! [A]
-							13116,	-- Mustard Dogs! [H]
-							13102,	-- Sewer Stew [A]
-							13114,	-- Sewer Stew [H]
-						},
 						["requireSkill"] = COOKING,
 						["groups"] = {
 							currency(81),	-- Epicurean's Award
@@ -2773,7 +2785,7 @@ root(ROOTS.Zones, {
 								i(41718),	-- Design: Brilliant Scarlet Ruby [CATA+] / Design: Runed Scarlet Ruby [WRATH]
 								i(44183),	-- Fireproven Gauntlets
 								i(44181),	-- Ghostflicker Waistband
-								i(42188),	-- Pattern: Sapphire Spellthread
+								i(42188),	-- Pattern: Sapphire Spellthread (RECIPE!)
 								i(44180),	-- Robes of Crackling Flame
 							},
 						}),
@@ -2830,98 +2842,132 @@ root(ROOTS.Zones, {
 							emoc(28, i(45828)),	-- Windchill Binding
 						},
 					}),
-					n(32509, {	-- Brammold Deepmine <Antiques & Heirlooms>
+					n(32509, bubbleDown({ ["timeline"] = { REMOVED_6_1_0 } }, {	-- Brammold Deepmine <Antiques & Heirlooms>
 						["coord"] = { 51.0, 53.6, NORTHREND_DALARAN },
 						["groups"] = {
-							emoh(40, i(42944, {	-- Balanced Heartseeker
-								["timeline"] = { REMOVED_6_1_0 },
-							})),
-							emoh(65, i(42943, {	-- Bloodied Arcanite Reaper
-								["timeline"] = { REMOVED_6_1_0 },
-							})),
-							i(69893, {	-- Bloodsoaked Skullforge Reaver
+							i(93876, {			-- Awakened Pauldrons of Elements
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							i(93885, {			-- Awakened Vest of Elements
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							emoh(40, i(42944)),	-- Balanced Heartseeker
+							emoh(65, i(42943)),	-- Bloodied Arcanite Reaper
+							i(69893, {			-- Bloodsoaked Skullforge Reaver
 								["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 							}),
-							i(69889, {	-- Burnished Breastplate of Might
+							i(93859, {			-- Bloodstained Dreadmist Mantle
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							i(93860, {			-- Bloodstained Dreadmist Robe
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							i(93892, {			-- Brushed Breastplate of Might
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							i(93893, {			-- Brushed Pauldrons of Might
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							i(69889, {			-- Burnished Breastplate of Might
 								["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 							}),
-							i(69890, {	-- Burnished Pauldrons of Might
+							i(69890, {			-- Burnished Pauldrons of Might
 								["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 							}),
-							i(79131, {	-- Burnished Warden Staff
+							i(79131, {			-- Burnished Warden Staff
 								["timeline"] = { ADDED_5_0_4, REMOVED_6_1_0 },
 							}),
-							emoh(40, i(42950, {	-- Champion Herod's Shoulder
-								["timeline"] = { REMOVED_6_1_0 },
-							})),
-							emoh(40, i(48677, {	-- Champion's Deathdealer Breastplate
-								["timeline"] = { REMOVED_6_1_0 },
-							})),
-							emoh(65, i(42946, {	-- Charmed Ancient Bone Bow
-								["timeline"] = { REMOVED_6_1_0 },
-							})),
-							emoh(50, i(42948, {	-- Devout Aurastone Hammer
-								["timeline"] = { REMOVED_6_1_0 },
-							})),
-							emoh(65, i(42947, {	-- Dignified Headmaster's Charge
-								["timeline"] = { REMOVED_6_1_0 },
-							})),
-							emoh(50, i(42992, {	-- Discerning Eye of the Beast
-								["timeline"] = { REMOVED_6_1_0 },
-							})),
-							i(93902, {	-- Flamescarred Draconian Deflector
+							emoh(40, i(42950)),	-- Champion Herod's Shoulder
+							emoh(40, i(48677)),	-- Champion's Deathdealer Breastplate
+							emoh(65, i(42946)),	-- Charmed Ancient Bone Bow
+							i(93847, {			-- Crushing Mass of McGowan
 								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
-							i(93904, {	-- Musty Tome of the Lost
+							emoh(50, i(42948)),	-- Devout Aurastone Hammer
+							emoh(65, i(42947)),	-- Dignified Headmaster's Charge
+							emoh(50, i(42992)),	-- Discerning Eye of the Beast
+							i(93902, {			-- Flamescarred Draconian Deflector
 								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
-							emoh(40, i(42951, {	-- Mystical Pauldrons of Elements
-								["timeline"] = { REMOVED_6_1_0 },
-							})),
-							emoh(40, i(48683, {	-- Mystical Vest of Elements
-								["timeline"] = { REMOVED_6_1_0 },
-							})),
-							emoh(40, i(48685, {	-- Polished Breastplate of Valor
-								["timeline"] = { REMOVED_6_1_0 },
-							})),
-							emoh(40, i(42949, {	-- Polished Spaulders of Valor
-								["timeline"] = { REMOVED_6_1_0 },
-							})),
-							emoh(40, i(48687, {	-- Preened Ironfeather Breastplate
-								["timeline"] = { REMOVED_6_1_0 },
-							})),
-							emoh(40, i(42984, {	-- Preened Ironfeather Shoulders
-								["timeline"] = { REMOVED_6_1_0 },
-							})),
-							emoh(65, i(48718, {	-- Repurposed Lava Dredger
-								["timeline"] = { REMOVED_6_1_0 },
-							})),
-							emoh(40, i(42952, {	-- Stained Shadowcraft Spaulders
-								["timeline"] = { REMOVED_6_1_0 },
-							})),
-							emoh(40, i(48689, {	-- Stained Shadowcraft Tunic
-								["timeline"] = { REMOVED_6_1_0 },
-							})),
-							emoh(50, i(42991, {	-- Swift Hand of Justice
-								["timeline"] = { REMOVED_6_1_0 },
-							})),
-							emoh(40, i(42985, {	-- Tattered Dreadmist Mantle
-								["timeline"] = { REMOVED_6_1_0 },
-							})),
-							emoh(40, i(48691, {	-- Tattered Dreadmist Robe
-								["timeline"] = { REMOVED_6_1_0 },
-							})),
-							emoh(40, i(42945, {	-- Venerable Dal'Rend's Sacred Charge
-								["timeline"] = { REMOVED_6_1_0 },
-							})),
-							emoh(40, i(48716, {	-- Venerable Mass of McGowan
-								["timeline"] = { REMOVED_6_1_0 },
-							})),
-							i(93903, {	-- Weathered Observer's Shield
+							i(93896, {			-- Forceful Hand of Justice
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							i(93888, {			-- Furious Deathdealer Breastplate
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							i(93891, {			-- Gleaming Breastplate of Valor
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							i(93890, {			-- Gleaming Spaulders of Valor
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							i(93845, {			-- Gore-Steeped Skullforge Reaver
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							i(93887, {			-- Grand Champion Herod's Shoulder
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							i(93843, {			-- Hardened Arcanite Reaper
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							i(93865, {			-- Majestic Ironfeather Breastplate
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							i(93864, {			-- Majestic Ironfeather Shoulders
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							i(93904, {			-- Musty Tome of the Lost
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							emoh(40, i(42951)),	-- Mystical Pauldrons of Elements
+							emoh(40, i(48683)),	-- Mystical Vest of Elements
+							i(93856, {			-- Noble Dal'Rend's Sacred Charge
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							i(93897, {			-- Piercing Eye of the Beast
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							i(93853, {			-- Pious Aurastone Hammer
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							emoh(40, i(48685)),	-- Polished Breastplate of Valor
+							emoh(40, i(42949)),	-- Polished Spaulders of Valor
+							emoh(40, i(48687)),	-- Preened Ironfeather Breastplate
+							emoh(40, i(42984)),	-- Preened Ironfeather Shoulders
+							i(93846, {			-- Re-engineered Lava Dredger
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							i(93844, {			-- Refinished Warden Staff
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							emoh(65, i(48718)),	-- Repurposed Lava Dredger
+							i(93854, {			-- Scholarly Headmaster's Charge
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							emoh(40, i(42952)),	-- Stained Shadowcraft Spaulders
+							emoh(40, i(48689)),	-- Stained Shadowcraft Tunic
+							i(93862, {			-- Supple Shadowcraft Spaulders
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							i(93863, {			-- Supple Shadowcraft Tunic
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							emoh(50, i(42991)),	-- Swift Hand of Justice
+							emoh(40, i(42985)),	-- Tattered Dreadmist Mantle
+							emoh(40, i(48691)),	-- Tattered Dreadmist Robe
+							emoh(40, i(42945)),	-- Venerable Dal'Rend's Sacred Charge
+							emoh(40, i(48716)),	-- Venerable Mass of McGowan
+							i(93857, {			-- Vengeful Heartseeker
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							i(93855, {			-- War-Torn Ancient Bone Bow
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
+							}),
+							i(93903, {			-- Weathered Observer's Shield
 								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 						},
-					}),
+					})),
 					n(28951, {	-- Breanni <Pet Supplies>
 						["coord"] = { 58.7, 39.2, NORTHREND_DALARAN },
 						["groups"] = {
@@ -2941,47 +2987,21 @@ root(ROOTS.Zones, {
 					}),
 					n(28722, {	-- Bryan Landers <Engineering Supplies>
 						["coord"] = { 39.0, 26.0, NORTHREND_DALARAN },
-						["groups"] = {
+						["groups"] = appendGroups(WOTLK_ENGINEERING_SUPPLIES, {
 							i(136782, {	-- Fireworks Instruction Manual (CI!)
 								["timeline"] = { ADDED_7_0_3_LAUNCH },
 							}),
-							i(39684),	-- Hair Trigger
 							i(23817, {	-- Schematic: Titanium Toolbox (RECIPE!)
 								["isLimited"] = true,
 								["timeline"] = { ADDED_3_0_8 },
 							}),
-							i(40533),	-- Walnut Stock
-						},
+						}),
 					}),
 					n(29702, {	-- Chameli Banaphash <Haberdasher>
 						["coord"] = { 44.8, 46.6, NORTHREND_DALARAN },
 						["groups"] = {
 							i(44648),	-- Purple Turban
 							i(44647),	-- Violet Hat
-						},
-					}),
-					n(28699, {	-- Charles Worth <Tailoring Trainer>
-						-- #if AFTER 6.2.2
-						["description"] = "You can now learn these recipes even if the achievements have been completed on a different character.  If your tailor isn't your main, rejoice!  Just speak to Charles Worth and tell him you're ready to learn the patterns.",
-						-- #endif
-						["coord"] = { 36.3, 33.4, NORTHREND_DALARAN },
-						["requireSkill"] = TAILORING,
-						["groups"] = {
-							recipe(56017, {	-- Deathchill Cloak
-								["sourceAchievements"] = {
-									41,		-- Loremaster of Northrend (A)
-									-- #if BEFORE 5.0.4
-									1360,	-- Loremaster of Northrend (H)
-									-- #endif
-								},
-								["description"] = "In order to learn this recipe, you must have the Loremaster of Northrend achievement completed.",
-								["requireSkill"] = TAILORING,
-							}),
-							recipe(56016, {	-- Wispcloak
-								["sourceAchievement"] = 1288,	-- Northrend Dungeonmaster
-								["description"] = "In order to learn this recipe, you must have the Northrend Dungeonmaster achievement completed.",
-								["requireSkill"] = TAILORING,
-							}),
 						},
 					}),
 					n(32337, {	-- Christi Stockton <Wine Vendor>
@@ -3232,6 +3252,7 @@ root(ROOTS.Zones, {
 							})),
 							i(54798, {	-- Pattern: Frosty Flying Carpet
 								["cost"] = { { "i", 43102, 6 }, },	-- 6x Frozen Orb
+								["timeline"] = { ADDED_3_3_3 },
 							}),
 							applyclassicphase(WRATH_PHASE_TWO, i(45087, {	-- Runed Orb
 								["cost"] = { { "i", 43102, 4 }, },	-- 4x Frozen Orb
@@ -3446,7 +3467,7 @@ root(ROOTS.Zones, {
 							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 							i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 							i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-							i(22307),	-- Pattern: Enchanted Mageweave Pouch
+							i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 						},
 					}),
 					-- #if BEFORE MOP
@@ -3565,7 +3586,7 @@ root(ROOTS.Zones, {
 							i(21910),	-- Pattern: Spellfire Robe (RECIPE!)
 						},
 					}),
-					-- #if BEFORE 4.0.1
+					-- #if BEFORE 7.0.3
 					n(28723, {	-- Larana Drome <Inscription Supplies>
 						["coord"] = { 41.8, 36.8, NORTHREND_DALARAN },
 						["groups"] = {

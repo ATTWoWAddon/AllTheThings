@@ -89,6 +89,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					}),
 				}),
 			}),
+			filter(MISC, {
+				i(37859),	-- Amber Essence
+				i(37815),	-- Emerald Essence
+				i(37860),	-- Ruby Essence
+			}),
 			n(QUESTS, {
 				q(13126, {	-- A Unified Front
 					["qg"] = 27658,	-- Belgaristrasz

@@ -1,0 +1,75 @@
+11.1.5.59571
+pet(4761),	-- Pascal the Wonder Pup
+pet(4792),	-- Ada the Sweetest
+11.2.0.61476
+pet(4813),	-- Ixthal the Observling
+pet(4824),	-- Baby Karesh Fox - Orange
+pet(4825),	-- Veridian Thorntail
+pet(4826),	-- Scrappy Thorntail
+pet(4827),	-- Dread Horrorling
+pet(4828),	-- Impartial Watcher
+pet(4829),	-- Penumbral Terror
+pet(4830),	-- Observer, Baby (Green)
+pet(4832),	-- Looker Gaz'kreth Jr.
+pet(4833),	-- Xanthous Siphonmite
+pet(4834),	-- Jimmy
+pet(4835),	-- Cyan Siphonmite
+pet(4836),	-- Vitriolic Inchshifter
+pet(4837),	-- Worm, Cosmic - Critter (Red)
+pet(4838),	-- Palek'ti, the Mouth of Nothingness
+pet(4839),	-- Shimmering Inchshifter
+pet(4840),	-- Graceful Cosmic Ray Pup
+pet(4841),	-- Starlight
+pet(4842),	-- Duskthief
+pet(4843),	-- Sao'rhon
+pet(4844),	-- Inquisitive Cosmic Ray Pup
+pet(4845),	-- Mr. Long-Legs
+pet(4846),	-- Heka'Tarnos, Bringer of Discord
+pet(4847),	-- Copper Lapbug
+pet(4848),	-- Cerulean Lapbug
+pet(4853),	-- Rustyroot Fel Snooter
+pet(4854),	-- Duskytooth Fel Snooter
+pet(4855),	-- Mustyfur Fel Snooter
+pet(4856),	-- Scruffyhorn Fel Snooter
+pet(4858),	-- Shadefur Brewthief
+pet(4859),	-- Zo'ya
+pet(4860),	-- Unfazed Diver
+
+
+
+
+Missing in PetDB.lua
+
+11.2.0.61476
+pet(4813),	-- Ixthal the Observling
+pet(4824),	-- Baby Karesh Fox - Orange
+pet(4825),	-- Veridian Thorntail
+pet(4826),	-- Scrappy Thorntail
+pet(4827),	-- Dread Horrorling
+pet(4828),	-- Impartial Watcher
+pet(4829),	-- Penumbral Terror
+pet(4830),	-- Observer, Baby (Green)
+pet(4832),	-- Looker Gaz'kreth Jr.
+pet(4833),	-- Xanthous Siphonmite
+pet(4834),	-- Jimmy
+pet(4835),	-- Cyan Siphonmite
+pet(4836),	-- Vitriolic Inchshifter
+pet(4837),	-- Worm, Cosmic - Critter (Red)
+pet(4838),	-- Palek'ti, the Mouth of Nothingness
+pet(4839),	-- Shimmering Inchshifter
+pet(4840),	-- Graceful Cosmic Ray Pup
+pet(4841),	-- Starlight
+pet(4842),	-- Duskthief
+pet(4843),	-- Sao'rhon
+pet(4844),	-- Inquisitive Cosmic Ray Pup
+pet(4845),	-- Mr. Long-Legs
+pet(4846),	-- Heka'Tarnos, Bringer of Discord
+pet(4847),	-- Copper Lapbug
+pet(4848),	-- Cerulean Lapbug
+pet(4853),	-- Rustyroot Fel Snooter
+pet(4854),	-- Duskytooth Fel Snooter
+pet(4855),	-- Mustyfur Fel Snooter
+pet(4856),	-- Scruffyhorn Fel Snooter
+pet(4858),	-- Shadefur Brewthief
+pet(4859),	-- Zo'ya
+pet(4860),	-- Unfazed Diver

@@ -176,6 +176,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(194648),	-- Design: Jeweled Emerald Whelpling (RECIPE!)
 				},
 			}),
+			o(377536, {	-- Enriched Soil Pile
+				["coords"] = {
+					{ 49.7, 68.7, OHNAHRAN_PLAINS },
+					{ 50.5, 70.2, OHNAHRAN_PLAINS },
+					{ 52.1, 70.6, OHNAHRAN_PLAINS },
+					{ 52.7, 65.8, OHNAHRAN_PLAINS },
+					{ 52.8, 69.9, OHNAHRAN_PLAINS },
+					{ 53.0, 72.0, OHNAHRAN_PLAINS },
+					{ 53.3, 68.1, OHNAHRAN_PLAINS },
+					{ 53.8, 67.4, OHNAHRAN_PLAINS },
+					{ 54.1, 71.5, OHNAHRAN_PLAINS },
+					{ 54.6, 69.4, OHNAHRAN_PLAINS },
+				},
+				["g"] = { i(194426) },	-- Enriched Soil
+			}),
 			o(378010, {	-- Forgotten Dragon Treasure
 				["questID"] = 74399,
 				["coord"] = { 53.3, 68.9, OHNAHRAN_PLAINS },

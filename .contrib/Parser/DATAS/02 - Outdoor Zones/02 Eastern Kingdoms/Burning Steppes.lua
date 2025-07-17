@@ -7,10 +7,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["icon"] = 236734,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(775),	-- Explore Burning Steppes
+				ach(775),	-- Explore Burning Steppes
 				ach(4901, {	-- Burning Steppes Quests
 					["timeline"] = { ADDED_4_0_3 },
-					-- #if ANYCLASSIC
+					-- #if AFTER 7.3.5
+					["_doautomation"] = true,
+					-- #else
 					["sourceQuests"] = {
 						28183,	-- Return to Keeshan (A)
 						28425,	-- Return to Ariok (H)
@@ -97,6 +99,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
+				}),
+			}),
+			petbattles({
+				n(66520, {	-- Durin Darkhammer <Master Pet Tamer>
+					["coord"] = { 25.6, 47.6, BURNING_STEPPES },
+					["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDurin's pets are level 17 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Elemental - use Aquatic (powerful) or Critter (tanky) pet.",
+					["timeline"] = { ADDED_5_0_4 },
+					["petBattleLvl"] = 17,
+					["groups"] = {
+						q(31914, {	-- Durin Darkhammer
+							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
+							["timeline"] = { ADDED_5_0_4 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+						}),
+					},
 				}),
 			}),
 			n(QUESTS, {
@@ -507,7 +525,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] =
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						-- this quest was level locked for characters above level 56 before Shadowlands level squish
 						lvlsquish(56, 56, 20),
 						-- #else
@@ -522,7 +540,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] =
-						-- #if AFTER SHADOWLANDS
+						-- #if AFTER SL
 						-- this quest was level locked for characters above level 56 before Shadowlands level squish
 						lvlsquish(56, 56, 20),
 						-- #else
@@ -1665,19 +1683,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/3 Obsidian Piston
 							["provider"] = { "i", 63333 },	-- Obsidian Piston
-							["cr"] = 7039,	-- War Reaver
 						}),
 						objective(2, {	-- 0/1 Flux Exhaust Sieve
 							["provider"] = { "i", 63336 },	-- Flux Exhaust Sieve
-							["cr"] = 7039,	-- War Reaver
 						}),
 						objective(3, {	-- 0/1 Thorium Gearshaft
 							["provider"] = { "i", 63335 },	-- Thorium Gearshaft
-							["cr"] = 7039,	-- War Reaver
 						}),
 						objective(4, {	-- 0/1 Stone Power Core
 							["provider"] = { "i", 63334 },	-- Stone Power Core
-							["cr"] = 7039,	-- War Reaver
 						}),
 					},
 				}),
@@ -2372,7 +2386,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{58.8, 37.2, BURNING_STEPPES},
 					},
 				}),
-				i(14490, {	-- Pattern: Cindercloth Pants
+				i(14490, {	-- Pattern: Cindercloth Pants (RECIPE!)
 					["cr"] = 7037,	-- Thaurissan Firewalker (RECIPE!)
 					["coords"] = {
 						{43.8, 39.4, BURNING_STEPPES},
@@ -2472,6 +2486,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(13476, {	-- Recipe: Mighty Rage Potion (RECIPE!)
 					["timeline"] = { REMOVED_4_0_3 },	-- Now taught by trainer, recipe removed from the game.
 					["cr"] = 7027,	-- Blackrock Slayer
+				}),
+				o(206971, {	-- War Reaver Parts
+					["description"] = "Kill War Reavers for these objects to spawn. Loot the parts you need from the objects on the ground.",
+					["coord"] = { 47.4, 37.8, BURNING_STEPPES },
+					["timeline"] = { ADDED_4_0_1 },
+					["cr"] = 7039,	-- War Reaver
+					["groups"] = {
+						i(63333),	-- Obsidian Piston
+						i(63336),	-- Flux Exhaust Sieve
+						i(63335),	-- Thorium Gearshaft
+						i(63334),	-- Stone Power Core
+					},
 				}),
 			}),
 		},

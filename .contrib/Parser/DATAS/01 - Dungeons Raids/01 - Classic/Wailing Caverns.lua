@@ -304,8 +304,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 			}),
 			prof(SKINNING, {
-				i(6470),	-- Deviate Scale
-				i(6471),	-- Perfect Deviate Scale
+				i(6470, {	-- Deviate Scale
+					["description"] = "Can drop-, as well as be skinned from all deviates within the Wailing Caverns.",
+				}),
+				i(6471, {	-- Perfect Deviate Scale
+					["description"] = "Can drop-, as well as be skinned from all deviates within the Wailing Caverns, although the droprate is low.",
+				}),
 			}),
 			e(474, {	-- Lady Anacondra
 				["creatureID"] = 3671,
@@ -405,11 +409,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			e(481, {	-- Mutanus the Devourer
 				["creatureID"] = 3654,
 				["groups"] = {
-					ach(630, {	-- Wailing Caverns
-						-- #if BEFORE WRATH
-						["sourceQuest"] = 6981,	-- The Glowing Shard
-						-- #endif
-					}),
+					ach(630),	-- Wailing Caverns
 					ach(5039, {	-- Wailing Caverns Guild Run
 						["timeline"] = { ADDED_4_0_3 },
 					}),

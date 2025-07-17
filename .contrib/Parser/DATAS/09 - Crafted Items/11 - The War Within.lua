@@ -41,6 +41,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		["cost"] = {{"i", 230905, 2}},	-- Fractured Spark of Fortunes
 		["timeline"] = { ADDED_11_1_0 },
 	}),
+	i(231756, {	-- Spark of Starlight
+		["cost"] = {{"i", 231757, 2}},	-- Fractured Spark of Starlight
+		["timeline"] = { ADDED_11_2_0 },
+	}),
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
 			spell(430345, {	-- Meticulous Experimentation
@@ -1463,6 +1467,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(219196),	-- Empowered Mulch
 			i(219195),	-- Imbued Mulch
 			i(214597),	-- Irradiated Verdant Seed
+			i(240194, {["timeline"] = {ADDED_11_2_0}}),	-- K'areshi Lotus
 			i(213613),	-- Leyline Residue
 			i(210799),	-- Luredrop+
 			i(210800),	-- Luredrop++
@@ -1475,6 +1480,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(210802),	-- Orbinid+
 			i(210803),	-- Orbinid++
 			i(210804),	-- Orbinid+++
+			i(239690, {["timeline"] = {ADDED_11_2_0}}),	-- Phantom Bloom+
+			i(239691, {["timeline"] = {ADDED_11_2_0}}),	-- Phantom Bloom++
+			i(239692, {["timeline"] = {ADDED_11_2_0}}),	-- Phantom Bloom+++
 			i(214595),	-- Sporefused Verdant Seed
 			i(214561),	-- Verdant Seed
 			i(213612),	-- Viridescent Spores
@@ -1561,6 +1569,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(79924, 435865);	-- Irradiated Orbinid
 			FirstCraft(79921, 435830);	-- Lush Orbinid
 			FirstCraft(79926, 435867);	-- Sporefused Orbinid
+			-- Phantom Bloom
+			FirstCraft(92132, 1250314, ADDED_11_2_0);	-- Phantom Bloom
+			FirstCraft(92133, 1250317, ADDED_11_2_0);	-- Lush Phantom Bloom
 		})),
 	}),
 	prof(INSCRIPTION, {
@@ -1624,6 +1635,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(86453, 1213583); -- Glyph of the Admiral's Pistol Shot
 			FirstCraft(86451, 1213561); -- Glyph of the Ashvane Pistol Shot
 			FirstCraft(86454, 1213582); -- Glyph of the Gilded Pistol Shot
+			FirstCraft(90784, 1234336, ADDED_11_1_7);	-- Glyph of the Strix
 			FirstCraft(86455, 1213581); -- Glyph of the Twilight Pistol Shot
 			-- Inks
 			FirstCraft(80730, 444222);	-- Apricate Ink
@@ -1673,6 +1685,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(234246),	-- Glyph of the Admiral's Pistol Shot
 			i(234245),	-- Glyph of the Ashvane Pistol Shot
 			i(234247),	-- Glyph of the Gilded Pistol Shot
+			i(243051, {["timeline"] = {ADDED_11_1_7}}),	-- Glyph of the Strix
 			i(234248),	-- Glyph of the Twilight Pistol Shot
 		}),
 		filter(MISC, {
@@ -1715,32 +1728,32 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222594),	-- Algari Missive of the Quickblade+
 			i(222595),	-- Algari Missive of the Quickblade++
 			i(222596),	-- Algari Missive of the Quickblade+++
-			i(222546),	-- Algari Treatise on Alchemy
-			i(222554),	-- Algari Treatise on Blacksmithing
-			i(222550),	-- Algari Treatise on Enchanting
-			TempForceMisc(i(222621)),	-- Algari Treatise on Engineering
-			i(222552),	-- Algari Treatise on Herbalism
-			i(222548),	-- Algari Treatise on Inscription
-			i(222551),	-- Algari Treatise on Jewelcrafting
-			i(222549),	-- Algari Treatise on Leatherworking
-			i(222553),	-- Algari Treatise on Mining
-			i(222649),	-- Algari Treatise on Skinning
-			i(222547),	-- Algari Treatise on Tailoring
-			i(222600),	-- Contract: Assembly of the Deeps+
-			i(222601),	-- Contract: Assembly of the Deeps++
-			i(222602),	-- Contract: Assembly of the Deeps+++
-			i(232532, {["timeline"] = {ADDED_11_1_0}}),	-- Contract: The Cartels of Undermine+
-			i(232533, {["timeline"] = {ADDED_11_1_0}}),	-- Contract: The Cartels of Undermine++
-			i(232534, {["timeline"] = {ADDED_11_1_0}}),	-- Contract: The Cartels of Undermine+++
-			i(222597),	-- Contract: Council of Dornogal+
-			i(222598),	-- Contract: Council of Dornogal++
-			i(222599),	-- Contract: Council of Dornogal+++
-			i(222603),	-- Contract: Hallowfall Arathi+
-			i(222604),	-- Contract: Hallowfall Arathi++
-			i(222605),	-- Contract: Hallowfall Arathi+++
-			i(222606),	-- Contract: The Severed Threads+
-			i(222607),	-- Contract: The Severed Threads++
-			i(222608),	-- Contract: The Severed Threads+++
+			i(222546, {["questID"]=83725,["isWeekly"]=true}),	-- Algari Treatise on Alchemy
+			i(222554, {["questID"]=83726,["isWeekly"]=true}),	-- Algari Treatise on Blacksmithing
+			i(222550, {["questID"]=83727,["isWeekly"]=true}),	-- Algari Treatise on Enchanting
+			TempForceMisc(i(222621, {["questID"]=83728,["isWeekly"]=true})),	-- Algari Treatise on Engineering
+			i(222552, {["questID"]=83729,["isWeekly"]=true}),	-- Algari Treatise on Herbalism
+			i(222548, {["questID"]=83730,["isWeekly"]=true}),	-- Algari Treatise on Inscription
+			i(222551, {["questID"]=83731,["isWeekly"]=true}),	-- Algari Treatise on Jewelcrafting
+			i(222549, {["questID"]=83732,["isWeekly"]=true}),	-- Algari Treatise on Leatherworking
+			i(222553, {["questID"]=83733,["isWeekly"]=true}),	-- Algari Treatise on Mining
+			i(222649, {["questID"]=83734,["isWeekly"]=true}),	-- Algari Treatise on Skinning
+			i(222547, {["questID"]=83735,["isWeekly"]=true}),	-- Algari Treatise on Tailoring
+			i(222600, {["questID"]=84484,["isWeekly"]=true}),	-- Contract: Assembly of the Deeps+
+			i(222601, {["questID"]=84483,["isWeekly"]=true}),	-- Contract: Assembly of the Deeps++
+			i(222602, {["questID"]=84482,["isWeekly"]=true}),	-- Contract: Assembly of the Deeps+++
+			i(232532, {["timeline"]={ADDED_11_1_0},["questID"]=85793,["isWeekly"]=true}),	-- Contract: The Cartels of Undermine+
+			i(232533, {["timeline"]={ADDED_11_1_0},["questID"]=85794,["isWeekly"]=true}),	-- Contract: The Cartels of Undermine++
+			i(232534, {["timeline"]={ADDED_11_1_0},["questID"]=85795,["isWeekly"]=true}),	-- Contract: The Cartels of Undermine+++
+			i(222597, {["questID"]=84473,["isWeekly"]=true}),	-- Contract: Council of Dornogal+
+			i(222598, {["questID"]=84474,["isWeekly"]=true}),	-- Contract: Council of Dornogal++
+			i(222599, {["questID"]=84475,["isWeekly"]=true}),	-- Contract: Council of Dornogal+++
+			i(222603, {["questID"]=84479,["isWeekly"]=true}),	-- Contract: Hallowfall Arathi+
+			i(222604, {["questID"]=84480,["isWeekly"]=true}),	-- Contract: Hallowfall Arathi++
+			i(222605, {["questID"]=84481,["isWeekly"]=true}),	-- Contract: Hallowfall Arathi+++
+			i(222606, {["questID"]=84478,["isWeekly"]=true}),	-- Contract: The Severed Threads+
+			i(222607, {["questID"]=84477,["isWeekly"]=true}),	-- Contract: The Severed Threads++
+			i(222608, {["questID"]=84476,["isWeekly"]=true}),	-- Contract: The Severed Threads+++
 			i(226022),	-- Darkmoon Sigil: Ascension+
 			i(226023),	-- Darkmoon Sigil: Ascension++
 			i(226024),	-- Darkmoon Sigil: Ascension+++
@@ -1951,6 +1964,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			-- Lavish Luxuries
 			FirstCraft(81257, 435391);	-- Beautification Iris
 			FirstCraft(81255, 435389);	-- Remembrance Stone
+			-- Mounts
+			FirstCraft(89248, 1226650, ADDED_11_1_5);	-- Void-Crystal Panther
 		})),
 		filter(GEMS, {
 			i(213748),	-- Cognitive Bloodstone
@@ -2066,6 +2081,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(213762),	-- Sifted Cave Sand+
 			i(213763),	-- Sifted Cave Sand++
 			i(213764),	-- Sifted Cave Sand+++
+		}),
+		filter(MOUNTS, {
+			i(235712, {["timeline"] = {ADDED_11_1_5}}),	-- Void-Crystal Panther (MOUNT!)
 		}),
 		filter(PROFESSION_EQUIPMENT, {
 			i(215125, {["requireSkill"] = ENCHANTING}),		-- Enchanter's Crystal
@@ -2344,6 +2362,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(210936),	-- Ironclaw Ore+
 			i(210937),	-- Ironclaw Ore++
 			i(210938),	-- Ironclaw Ore+++
+			i(238201, {["timeline"]={ADDED_11_2_0}}),	-- K'areshi Ore+
+			i(238212, {["timeline"]={ADDED_11_2_0}}),	-- K'areshi Ore++
+			i(238213, {["timeline"]={ADDED_11_2_0}}),	-- K'areshi Ore+++
 			i(224838),	-- Null Sliver
 			i(210939),	-- Null Stone
 			i(224583),	-- Slab of Slate
@@ -2413,12 +2434,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80355, 439711);	-- Rich Ironclaw
 			FirstCraft(80373, 439729);	-- Webbed Ironclaw
 			FirstCraft(80364, 439720);	-- Weeping Ironclaw
+			-- Desolate Talus
+			FirstCraft(92134, 1250351, ADDED_11_2_0);	-- Desolate Deposit
+			FirstCraft(92135, 1250356, ADDED_11_2_0);	-- Rich Desolate Deposit
 		})),
 	}),
 	prof(SKINNING, {
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = SKINNING,
 		},{
+			FirstSkin(91127, 232098, ADDED_11_2_0),	-- Skinning "Chowdar"
 			FirstSkin(83410, 216031),	-- Skinning Abyssal Devourer
 			FirstSkin(83411, 214151),	-- Skinning Ahg'zagall
 			FirstSkin(81450, 219264),	-- Skinning Bloodmaw
@@ -2436,29 +2461,39 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstSkin(87592, 230935, ADDED_11_1_0),	-- Skinning Grease
 			FirstSkin(87593, 230936, ADDED_11_1_0),	-- Skinning Grime
 			FirstSkin(87590, 231017, ADDED_11_1_0),	-- Skinning Grimewick
+			FirstSkin(91132, 238540, ADDED_11_2_0),	-- Skinning Grubber
 			FirstSkin(83402, 221668),	-- Skinning Horror of the Shallows
 			FirstSkin(83413, 221327),	-- Skinning Kaheti Silk Hauler
 			FirstSkin(81455, 220275),	-- Skinning King Splash
+			FirstSkin(91126, 232077, ADDED_11_2_0),	-- Skinning Korgorath the Ravager
 			FirstSkin(83409, 220285),	-- Skinning Lurker of the Deeps
 			FirstSkin(83400, 221534),	-- Skinning Lytfang the Lost
 			FirstSkin(83416, 216044),	-- Skinning Maddened Siegebomber
+			FirstSkin(91272, 245997, ADDED_11_2_0),	-- Skinning Malek'ta
 			FirstSkin(83406, 220890),	-- Skinning Matriarch Charfuria
+			FirstSkin(91134, 231981, ADDED_11_2_0),	-- Skinning Maw of the Sands
+			FirstSkin(91128, 232108, ADDED_11_2_0),	-- Skinning Morgil the Netherspawn
 			FirstSkin(81458, 218452),	-- Skinning Murkshade
 			FirstSkin(87589, 230995, ADDED_11_1_0),	-- Skinning Nitro
+			FirstSkin(91135, 232127, ADDED_11_2_0),	-- Skinning Orith the Dreadful
 			FirstSkin(81452, 219267),	-- Skinning Plaguehart
 			FirstSkin(83403, 221786),	-- Skinning Pride of Beledar
 			FirstSkin(87591, 230934, ADDED_11_1_0),	-- Skinning Ratspit
 			FirstSkin(85547, 207826),	-- Skinning Ravageant
 			FirstSkin(87594, 230931, ADDED_11_1_0),	-- Skinning Scrapbeak
 			FirstSkin(87596, 233471, ADDED_11_1_0),	-- Skinning Scrapchewer
+			FirstSkin(91125, 232129, ADDED_11_2_0),	-- Skinning Shadowhowl
 			FirstSkin(85550, 219278),	-- Skinning Shallowshell the Clacker
+			FirstSkin(91133, 232006, ADDED_11_2_0),	-- Skinning Sha'ryth the Cursed
 			FirstSkin(84259, 228439),	-- Skinning Slatefang
 			FirstSkin(83405, 221217),	-- Skinning Spore-infused Shalewing
 			FirstSkin(85551, 221690),	-- Skinning Strength of Beledar
 			FirstSkin(83407, 221126),	-- Skinning Tephratennae
 			FirstSkin(81456, 220271),	-- Skinning Terror of the Forge
+			FirstSkin(91129, 232111, ADDED_11_2_0),	-- Skinning The Nightreaver
 			FirstSkin(83401, 221648),	-- Skinning The Perchfather
 			FirstSkin(81453, 219271),	-- Skinning Twice-Stinger the Wretched
+			FirstSkin(91131, 232195, ADDED_11_2_0),	-- Skinning Urmag
 			FirstSkin(83415, 216037),	-- Skinning Vilewing
 			FirstSkin(87595, 233472, ADDED_11_1_0),	-- Skinning Volstrike the Charged
 			FirstSkin(81449, 219263),	-- Skinning Warphorn
@@ -2597,7 +2632,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222851),	-- Artisan Chef's Hat
 			i(222849),	-- Artisan Enchanter's Hat
 			i(222848),	-- Artisan Fishing Cap
-			i(222847),	-- Artisan Gardening Hat
+			i(222847, {_drop={"requireSkill"},requireSkill=HERBALISM}),	-- Artisan Gardening Hat
 			i(222852),	-- Artisan Tailor's Coat
 			i(222845),	-- Weavercloth Alchemist's Robe
 			i(222846),	-- Weavercloth Chef's Hat
@@ -2778,6 +2813,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(82039),	-- first Fractured Spark of Omens
 			q(85395, {["timeline"]={ADDED_11_1_0_SEASONSTART}}),	-- Fractured Spark of Fortunes
 			q(90664, {["timeline"]={ADDED_11_1_0_SEASONSTART}}),	-- Triggers wtih 90660 A Golden Circumstance
+			q(85685, {["timeline"]={ADDED_11_2_0_SEASONSTART}}),	-- Fractured Spark of Starlight
 		}),
 	}),
 })));

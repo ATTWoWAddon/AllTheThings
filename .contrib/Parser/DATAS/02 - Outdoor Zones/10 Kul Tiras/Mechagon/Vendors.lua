@@ -18,6 +18,20 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					i(168806),	-- Mechanocat and Rider
 				},
 			}),
+			n(151462, {	-- Danielle Anglers
+				["coord"] = { 37.20, 47.16, MECHAGON },
+				["g"] = {
+					i(167698, {	-- Secret Fish Goggles
+						["sourceAchievement"] = 13489,	-- Secret Fish of Mechagon
+						-- #if AFTER 11.1.5
+						["description"] = "This is a toy since 11.1.5.\nIf you buy the goggles from the vendor, the toy is automatically added to your Toy Box. You do not have to click it on to add it (as you do with most toys).\n\nBut, the vendor won't sell you the goggles if you already have one on your bag or your bank, so make sure to delete it first.",
+						-- #endif
+					}),
+					i(161475, {	-- Secret Fish Lure
+						["sourceQuest"] = 51355,	-- Secretest Fish
+					}),
+				},
+			}),
 			n(150716, {	-- Stolen Royal Vendorbot
 				["coord"] = { 73.7, 36.9, MECHAGON },
 				["g"] = bubbleDownClassicRep(FACTION_RUSTBOLT_RESISTANCE, {

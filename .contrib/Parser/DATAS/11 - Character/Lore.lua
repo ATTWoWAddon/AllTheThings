@@ -98,7 +98,7 @@ root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } },
 				["sourceQuests"] = { 63489 },	-- Justice Long Overdue
 				["provider"] = { "n", 176882 },	-- Lady Liadrin
 				["coord"] = { 34.2, 77.4, GHOSTLANDS },
-				["classes"] = exclude({DRUID, PALADIN, SHAMAN}, ALL_CLASSES),
+				["classes"] = exclude({PALADIN}, BLOOD_ELF_CLASSES),
 				["g"] = {
 					i(191566),	-- Elusive Emerald Hawkstrider (MOUNT!)
 				},

@@ -81,7 +81,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 161509 },	-- Lady Moonberry
-				["coord"] = { 47.4, 36.1, THE_TRUNK },
+				["coords"] = {
+					{ 47.5, 36.5, THE_TRUNK },
+					{ 49.2, 39.9, THE_TRUNK },
+				},
 			}),
 			q(61058, {	-- Bound in Dreams
 				["sourceQuests"] = {
@@ -239,7 +242,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			q(61479, {	-- The Boon of Shapes
 				["sourceQuests"] = { 61475 },	-- The Heart of the Forest
 				["provider"] = { "n", 172431 },	-- Lady Moonberry
-				["coord"] = { 39.7, 60.8, ARDENWEALD },
+				["coord"] = { 49.2, 52.2, ARDENWEALD },
 			}),
 			q(58104, {	-- Show, Don't Tell
 				["sourceQuests"] = { 61479 },	-- The Boon of Shapes
@@ -341,7 +344,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["altQuests"] = { 61541 },	-- The Forge of Bonds
 				["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 				["provider"] = { "n", 156634 },	-- Winter Queen
-				["coord"] = { 50.9, 29.4, THE_CANOPY },
+				["coord"] = { 51.4, 27.7, THE_CANOPY },
 			}),
 			q(61542, {	-- The Boon of Binding
 				["sourceQuests"] = { 61541 },	-- The Forge of Bonds

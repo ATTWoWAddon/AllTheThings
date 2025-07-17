@@ -167,6 +167,28 @@ EXPERT_ARTISAN_ENGINEERING
 	{}
 -- #endif
 );
+VANILLA_ENGINEERING_SUPPLIES = sharedData({
+	["description"] = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world.",
+	["providers"] = {
+		{ "n", 5519},	-- Billibub Cogspinner <Engineering Supplies>
+		{ "n", 4587},	-- Elizabeth Van Talen <Engineering Supplies>
+		{ "n", 5175},	-- Gearcutter Cogspinner <Engineering Supplies>
+		{ "n", 3413},	-- Sovik <Engineering Supplies>
+		-- #if AFTER TBC
+		{ "n", 16657},	-- Feera <Engineering Supplies>
+		{ "n", 16782},	-- Yatheon <Engineering Supplies>
+		-- #endif
+		-- #if AFTER CATA
+		{ "n", 52637},	-- Hugo Letner <Engineering Supplies>
+		-- #endif
+		-- #if AFTER 4.1.0
+		{ "n", 52655},	-- Palehoof's Big Bag of Parts <Engineering Supplies>
+		-- #endif
+	},
+},{
+	i(4400),	-- Heavy Stock
+	i(4399),	-- Wooden Stock
+});
 TBC_ENGINEERING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
 	r(30350, {	-- Engineering (Master)
 		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
@@ -445,6 +467,20 @@ WRATH_GOBLIN_ENGINEERING
 	{}
 -- #endif
 );
+WOTLK_ENGINEERING_SUPPLIES = applyclassicphase(WRATH_PHASE_ONE, sharedData ({
+	["sharedDescription"] = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world.",
+	["providers"] = {
+		{ "n", 28722},	-- Bryan Landers <Engineering Supplies>
+		-- #if AFTER CATA
+		{ "n", 5519},	-- Billibub Cogspinner <Engineering Supplies>
+		{ "n", 3413},	-- Sovik <Engineering Supplies>
+		-- #endif
+	},
+	["timeline"] = { ADDED_3_0_2 },
+},{
+	i(39684),	-- Hair Trigger
+	i(40533),	-- Walnut Stock
+}));
 CATA_ENGINEERING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 	r(82774, {	-- Engineering (Illustrious)
 		["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
@@ -808,7 +844,7 @@ NAZJATAR_ENGINEERING = applyclassicphase(BFA_PHASE_THREE, sharedData({ ["timelin
 		r(294787),	-- Notorious Combatant's Stormsteel Destroyer [Rank 1]
 	}),
 }));
-SL_ENGINEERING = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_ENGINEERING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(310542),	-- Shadowlands Engineering
 	n(ARMOR, {
 		r(310507),	-- Articulated Ectoplasmic Specs

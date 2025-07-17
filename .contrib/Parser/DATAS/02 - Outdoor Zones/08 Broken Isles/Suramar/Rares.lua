@@ -132,6 +132,7 @@ root(ROOTS.Zones, {
 				n(109954, {	-- Magister Phaedris
 					["questID"] = 43348,
 					["coord"] = { 42.1, 80.1, SURAMAR },
+					["g"] = { i(140405) },	-- Illusion Matrix Crystal
 				}),
 				n(112497, {	-- Maia the White
 					["questID"] = 44072,
@@ -176,6 +177,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 66.7, 67.1, SURAMAR },
 					["g"] = {
 						i(140314),	-- Crab Shank (TOY!)
+						i(140402),	-- Green Or'ligai Egg
 					},
 				}),
 				n(111007, {	-- Randril

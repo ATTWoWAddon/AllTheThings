@@ -2027,6 +2027,12 @@
 74405@@@Murkalot
 74413@@@Treasure Goblin
 77137@@@Dread Hatchling
+5.5.0.61000
+247440@@@Chi-Ji
+247447@@@Chi-Ji
+247730@@@Xuen
+247731@@@Niuzao
+247732@@@Yu'lon
 7.3.0.24473
 305@@@White Stallion
 444@@@Lord Piglet
@@ -22644,3 +22650,290 @@
 11.1.5.59919
 185425@@@Helpful Workshop Bot
 243253@@@Layne Pontelle
+11.1.7.60520
+228832@@@Lorewalker Cho
+230097@@@Marran Trollbane
+230246@@@Lorewalker Cho
+230330@@@N'Zoth the Corruptor
+230333@@@Yogg-Saron
+230334@@@C'Thun
+230336@@@Y'Shaarj
+230400@@@Xal'atath
+230561@@@C'Thun
+230571@@@Aqir Destroyer
+230573@@@Umbral Seer
+230576@@@Chosen Champion
+231472@@@Alonsus Faol
+231927@@@Y'Shaarj
+231931@@@Yogg-Saron
+232214@@@Xal'atath
+232231@@@Lorewalker Cho
+232987@@@Faerin Lothar
+233754@@@Jaina Proudmoore
+234125@@@Felguard Legionnaire
+234126@@@Horde Soldier
+234127@@@Hero of Azeroth
+234128@@@Hero of Azeroth
+234129@@@Hero of Azeroth
+234130@@@Alliance Soldier
+234232@@@Lorewalker Cho
+235669@@@Arthas
+236259@@@Terenas Menethil II
+236348@@@Arthas Menethil
+236617@@@Faerin Lothar
+238142@@@The Lich King
+238913@@@Captain Garrick
+240716@@@Highborne Arcanist
+240717@@@Highborne Arcanist
+240718@@@Highborne Arcanist
+240719@@@Night Elf Druid
+240720@@@Night Elf Druid
+240721@@@Malfurion Stormrage
+240813@@@Uther Lightbringer
+240814@@@Arthas Menethil
+240815@@@Jaina Proudmoore
+240816@@@Protectorate Commander
+241479@@@Protectorate Soldier
+241480@@@Consortium Merchant
+241497@@@Dimensius the All-Devouring
+241504@@@Faerin Lothar
+241510@@@Danath Trollbane
+241528@@@Ethereal Citizen
+241529@@@Ethereal Citizen
+241530@@@Ethereal Citizen
+241531@@@Wandering Warpweaver
+241759@@@High Elf Arcanist
+241760@@@High Elf Arcanist
+241762@@@High Elf Arcanist
+241779@@@[DNT] Invisible Bunny
+241912@@@Danath Trollbane
+241913@@@Eitrigg
+241914@@@Marran Trollbane
+241917@@@Faerin Lothar
+241918@@@Overlord Geya'rah
+241925@@@Amani Striker
+241926@@@Amani Commander
+241927@@@Amani Caster
+241933@@@Captain Roderick Brewston
+241934@@@Danath Loyalist
+241942@@@Scourge Ghoul
+241943@@@Red Dawn Recruit
+241946@@@Arthas Menethil
+241981@@@Quel'thalas Mage
+241982@@@Radiant Wyrm
+241983@@@Starving Wretched
+241984@@@Kael'thas Sunstrider
+241986@@@M'uru
+242095@@@Lady Liadrin
+242096@@@Lor'themar Theron
+242097@@@Prophet Velen
+242413@@@Grand Magister Rommath
+242414@@@Halduron Brightwing
+242415@@@Halduron Brightwing
+242819@@@Faerin Lothar
+242822@@@Marran Trollbane
+242825@@@Colonel Veronica Nials
+242826@@@Marran Trollbane
+242864@@@Stromgarde Footman
+242868@@@Stromgarde Footman
+242916@@@Colonel Veronica Nials
+243115@@@Eitrigg
+243116@@@Overlord Geya'rah
+243117@@@Danath Trollbane
+243905@@@Danath Trollbane
+244304@@@Newstead Farmer
+244308@@@Overlord Geya'rah
+244920@@@Danath Trollbane
+245178@@@Waypoint A
+245191@@@Dagran Thaurissan II
+245242@@@Waypoint B
+245245@@@G.M.O.D
+245362@@@Chosen Champion
+245545@@@Flotsam Harvester
+245647@@@Lil' Daz'ti
+245776@@@Waypoint C
+11.1.7.60672
+230815@@@Faerin Lothar
+231759@@@Eitrigg
+231764@@@Faerin Lothar
+236815@@@Karga Bloodfury
+11.1.7.60915
+229945@@@Faerin Lothar
+229951@@@Captain Roderick Brewston
+11.2.0.61476
+620@@@Chicken
+96606@@@Arator
+97071@@@Arator
+97086@@@Arator
+99997@@@Arator
+110980@@@Arator
+120845@@@Arator
+121890@@@Arator
+129871@@@Arator
+230601@@@Locus-Walker
+230602@@@Xal'atath
+230603@@@Om'resh
+230609@@@Alleria Windrunner
+230645@@@Soul-Scribe
+230811@@@Locus-Walker
+230825@@@Xal'atath
+231128@@@Locus-Walker
+231475@@@Alleria Windrunner
+231522@@@Alleria Windrunner
+231524@@@Locus-Walker
+231820@@@Ve'nari
+232646@@@[DNT] Echo Device Missile
+232650@@@[DNT] Echo Device Missile
+233392@@@Wastelander Assassin
+233511@@@Narathe
+233640@@@Wastelander Assassin
+233702@@@Lo'shah
+233703@@@Yanhal
+233706@@@Locus-Walker
+233861@@@Lash'ir
+233862@@@Jayaan
+234316@@@Rhubarn
+234602@@@Alleria Windrunner
+234627@@@Dimensius
+234745@@@Hemet Nesingwary
+234816@@@Tuskarr Child
+234859@@@Tuskarr Child
+235290@@@Hemet Nesingwary
+235329@@@Shadowguard Assassin
+235353@@@Hemet Nesingwary
+235408@@@Shadowguard Assassin
+235448@@@Xal'atath
+235994@@@Om'rajula
+236835@@@Om'resh
+236836@@@Locus-Walker
+236837@@@Xal'atath
+236846@@@Hemet Nesingwary
+236890@@@Hemet Nesingwary
+237999@@@Kill Credit [DNT]
+238003@@@Void-Tainted Growth
+238071@@@Kill Credit [DNT]
+238541@@@Hemet Nesingwary
+238757@@@Ve'nari
+240537@@@Keg Pony
+240540@@@Pint-Sized Pink Pachyderm
+240551@@@Shield - DNT
+240817@@@Hemet Nesingwary
+240818@@@Ve'nari
+240819@@@Rhubarn
+240820@@@Botanist Alaenra
+240842@@@Leona Darkstrider
+240858@@@Soul-Scribe
+240859@@@Ve'nari
+241051@@@Ve'nari
+241469@@@Activity Bunny [DNT]
+241611@@@Chef Carl
+241688@@@Tentacle Chunk
+241783@@@Sprouting Tendril
+241789@@@Massive Tentacle
+241899@@@Reintroduced Crocolisk
+241907@@@Adarus Duskblaze
+242094@@@Gurtha'zul
+242138@@@Snufflehound
+242172@@@Gritta Brewstone
+242181@@@Beste Glatisant
+242538@@@Ve'nari
+242764@@@Temporal Attendant
+242768@@@Discarded Land Mine
+242783@@@Shoddily Stored Explosives
+242891@@@Kickbomb
+242936@@@Locus-Walker
+242953@@@Gar-Bomba
+243048@@@Cheerful Crocolisk
+243653@@@Alleria Windrunner
+244090@@@Void Bubble
+244114@@@Void Bubble
+244263@@@Ixthal the Observling
+244498@@@Faceless One
+244560@@@Arcane Missile
+244622@@@Invisible Bunny - Test (LOH)
+244633@@@Void Bubble
+244707@@@Void Bubble
+245155@@@Xal'atath
+245156@@@Soul-Scribe
+245157@@@Narathe
+245158@@@Lash'ir
+245159@@@Farena
+245160@@@Qaishaa
+245161@@@Om'talad
+245162@@@Jayaan
+245204@@@Baby Karesh Fox - Orange
+245215@@@Veridian Thorntail
+245217@@@Scrappy Thorntail
+245301@@@Market Patron
+245302@@@Tazavesh Enforcer
+245303@@@Bound Observer
+245306@@@Tazavesh Security
+245307@@@Consortium Collector
+245308@@@Golden Purrkin
+245309@@@Alleria Windrunner
+245310@@@Locus-Walker
+245357@@@Zo'ya
+245374@@@Ethereal Brannmorpher
+245457@@@Xy'nja
+245474@@@Dread Horrorling
+245475@@@Impartial Watcher
+245476@@@Penumbral Terror
+245477@@@Observer, Baby (Green)
+245479@@@Looker Gaz'kreth Jr.
+245480@@@Xanthous Siphonmite
+245481@@@Jimmy
+245482@@@Cyan Siphonmite
+245494@@@Vitriolic Inchshifter
+245495@@@Worm, Cosmic - Critter (Red)
+245496@@@Palek'ti, the Mouth of Nothingness
+245497@@@Shimmering Inchshifter
+245498@@@Graceful Cosmic Ray Pup
+245499@@@Starlight
+245500@@@Duskthief
+245501@@@Sao'rhon
+245502@@@Inquisitive Cosmic Ray Pup
+245503@@@Mr. Long-Legs
+245504@@@Heka'Tarnos, Bringer of Discord
+245505@@@Copper Lapbug
+245506@@@Cerulean Lapbug
+245523@@@Alleria Windrunner
+245524@@@Xal'atath
+245525@@@Locus-Walker
+245536@@@Leona Darkstrider
+245852@@@Om'en
+245967@@@Gorgrum Kegfist
+246042@@@Brewer's Balloon
+246217@@@Invisible Bunny - Test (LOH)
+246325@@@Adarus Duskblaze
+246331@@@Shadowguard Dreadnaught
+246402@@@Shadowguard Infiltrator
+246660@@@Rustyroot Fel Snooter
+246661@@@Duskytooth Fel Snooter
+246662@@@Mustyfur Fel Snooter
+246663@@@Scruffyhorn Fel Snooter
+246983@@@Shadefur Brewthief
+247433@@@Xal'atath
+247434@@@Alleria Windrunner
+247435@@@Locus-Walker
+247463@@@Zo'ya
+247465@@@Unfazed Diver
+247484@@@Harbinger Ul'thul
+247487@@@Supplier Jing
+247577@@@Shadowguard Darkweaver
+247946@@@Skyriding Glyph
+248109@@@Dimensius the All-Devouring
+248168@@@Unstable Mote
+248170@@@Captured Fox
+248490@@@Delver's Mana-Skimmer
+248491@@@Delver's Seasonal Mana-Skimmer
+248496@@@Brann Bronzebeard
+248538@@@Delver's Race
+248559@@@Boss Call
+248562@@@Captured Worm
+248564@@@Captured Bear
+248600@@@Teleport Stalker
+248746@@@[DNT] Siphon Missile
+248837@@@11.2 Raid - Manaforge - Boss 1 - Cosmetic Orb - Sound Stalker
+248855@@@Purloined Artifact
+248997@@@11.2 Raid - Manaforge - Boss 3 - Enter Combat - Sound Stalker
+249001@@@Purloined Artifact

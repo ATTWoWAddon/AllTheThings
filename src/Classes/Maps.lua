@@ -334,6 +334,10 @@ app.CreateExploration = app.CreateClass(CLASSNAME, KEY, {
 		return ExplorationAreaPositionDB[t.explorationID];
 	end,
 });
+app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+	if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
+	if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
+end)
 
 -- Reporting
 local AreaIDNameMapper = setmetatable({}, {__index = function(t,key)
@@ -780,7 +784,7 @@ local function HarvestExploration()
 	for mapID,objects in pairs(app.SearchForFieldContainer("mapID")) do
 		-- only check exploration on Zone maps where we have a raw map listed in ATT
 		local mapInfo = C_Map_GetMapInfo(mapID)
-		if mapInfo and mapInfo.mapType == 3 and C_Map_GetMapArtID(mapID) and app.SearchForObject("mapID",mapID,"key") then
+		if mapInfo and (mapInfo.mapType == 3 or mapInfo.mapType == 6) and C_Map_GetMapArtID(mapID) and app.SearchForObject("mapID",mapID,"key") then
 			app.print("Harvesting Map " .. mapID .. "...");
 			-- Find all points on the grid that have explored an area and make note of them.
 			local ok, any, hits = pcall(GenerateHitsForMap, grid, mapID);
@@ -961,6 +965,7 @@ app.CreateMap = app.CreateClass("Map", "mapID", {
 		t.isMinilistHeader = isHeader
 		return isHeader
 	end,
+	SortType = function(t) return "MapClassSortType" end,
 },
 "WithHeader", {
 	["name"] = function(t)
@@ -975,6 +980,7 @@ app.CreateMap = app.CreateClass("Map", "mapID", {
 	["description"] = function(t)
 		return L.HEADER_DESCRIPTIONS[t.headerID];
 	end,
+	["ShouldShowEventSchedule"] = app.ReturnTrue,
 }, (function(t)
 	local creatureID = t.creatureID or t.npcID;
 	if creatureID and creatureID < 0 then

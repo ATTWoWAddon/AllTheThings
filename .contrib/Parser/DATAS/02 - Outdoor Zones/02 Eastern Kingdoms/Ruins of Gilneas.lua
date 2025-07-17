@@ -198,7 +198,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27364,	-- On Whose Orders?
 						27360,	-- Vengeance for Our Soldiers
 					},
-					["coord"] = { 57.5, 18.2, SILVERPINE_FOREST },
+					["coord"] = { 57.5, 18.2, RUINS_OF_GILNEAS },
 					["races"] = HORDE_ONLY,
 				}),
 			}),

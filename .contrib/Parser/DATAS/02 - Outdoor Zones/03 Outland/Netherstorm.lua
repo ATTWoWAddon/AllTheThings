@@ -9,10 +9,11 @@ root(ROOTS.Zones, {
 			["icon"] = 236811,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					explorationAch(843),	-- Explore Netherstorm
+					ach(843),	-- Explore Netherstorm
 					ach(1194, {	-- Into the Nether
-						-- #if ANYCLASSIC
-						-- #if AFTER CATA
+						-- #if AFTER 7.3.5
+						["_doautomation"] = true,
+						-- #else
 						["sourceQuests"] = {
 							-- Socrethar
 							10409,	-- Deathblow to the Legion (Aldor)
@@ -36,47 +37,6 @@ root(ROOTS.Zones, {
 							-- Destroying the All-Devouring
 							10439,	-- Dimensius the All-Devouring
 						},
-						-- #else
-						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
-						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
-						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
-						["rank"] = 120,
-						-- #endif
-						-- #else
-						-- crit(1, {		-- Socrethar
-						-- 	["sourceQuests"] = {
-						-- 		10409,	-- Deathblow to the Legion (Aldor)
-						-- 		10507,	-- Turning Point (Scryers)
-						-- 	},
-						-- }),
-						-- crit(2, {		-- The Violet Tower
-						-- 	["sourceQuests"] = {
-						-- 		10240,	-- Building a Perimeter
-						-- 	},
-						-- }),
-						-- crit(3, {		-- Building the X-52 Nether-Rocket
-						-- 	["sourceQuests"] = {
-						-- 		10221,	-- Dr. Boom!
-						-- 	},
-						-- }),
-						-- crit(4, {		-- Protect Area 52!
-						-- 	["sourceQuests"] = {
-						-- 		10249,	-- Back to the Chief!
-						-- 	},
-						-- }),
-						-- crit(5, {		-- The Consortium
-						-- 	["sourceQuests"] = {
-						-- 		10276,	-- Full Triangle
-						-- 		10408,	-- Nexus-King Salhadaar
-						-- 		10440,	-- Success!
-						-- 		10274,	-- Securing the Celestial Ridge
-						-- 	},
-						-- }),
-						-- crit(6, {		-- Destroying the All-Devouring
-						-- 	["sourceQuests"] = {
-						-- 		10439,	-- Dimensius the All-Devouring
-						-- 	},
-						-- }),
 						-- #endif
 					}),
 				}),
@@ -1390,6 +1350,8 @@ root(ROOTS.Zones, {
 							i(30010),	-- Fleshling Simulation Staff
 							i(30009),	-- The Burning Crusader
 							i(30013),	-- Twin-Bladed Ripper
+							--
+							i(29618),	-- Protectorate Disruptor (QI!)
 						},
 					}),
 					q(10315, {	-- Neutralizing the Nethermancers
@@ -1475,6 +1437,8 @@ root(ROOTS.Zones, {
 								["provider"] = { "i", 29459 },	-- Ethereum Relay Data
 								["cr"] = 20619,	-- Ethereum Relay
 							}),
+							--
+							i(29482),	-- Ethereum Essence (QI!)
 						},
 					}),
 					q(10300, {	-- Rebuilding the Staff
@@ -2066,7 +2030,7 @@ root(ROOTS.Zones, {
 							h(i(77592)),	-- Replica High Warlord's Tome of Mending
 							h(i(77593)),	-- Replica High Warlord's Tome of Destruction
 							h(i(77597)),	-- Replica High Warlord's Shield Wall
-						}))),						
+						}))),
 						-- #endif
 					}),
 					applyclassicphase(WRATH_PHASE_FOUR, n(33933, {	-- Big Zokk Torquewrench <Arena Vendor> // Original S8 Vendor // Relentless Gladiator: Season 7 Gladiator Gear
@@ -2115,11 +2079,14 @@ root(ROOTS.Zones, {
 						-- #endif
 						["timeline"] = { ADDED_2_4_2, REMOVED_3_0_2 },
 					}),
+					-- #if ANYCLASSIC
+					-- mapped from PvP
 					n(107619, {	-- Blaze Magmaburn <Brutal and Guardian Gladiator>
 						["coord"] = { 33.2, 64.0, NETHERSTORM },
 						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Brutal Gladiator's Set
 						["timeline"] = { ADDED_7_0_3 },
 					}),
+					-- #endif
 					n(19536, {	-- Dealer Jadyan <Exotic Weapons>
 						["coord"] = { 44.0, 36.6, NETHERSTORM },
 						["groups"] = {
@@ -2316,11 +2283,14 @@ root(ROOTS.Zones, {
 						-- #endif
 						["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
 					})),
+					-- #if ANYCLASSIC
+					-- mapped from PvP
 					n(107599, {	-- Izzee the 'Clutch' <Merciless and Veteran's Gladiator>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
 						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Merciless Gladiator's Set
 						["timeline"] = { ADDED_7_0_3 },
 					}),
+					-- #endif
 					n(21493, {	-- Kablamm Farflinger <Transportation Engineer>
 						["requireSkill"] = GOBLIN_ENGINEERING,
 						["description"] = "Goblin Engineers can speak to Kablamm to learn the recipe.",
@@ -2379,6 +2349,8 @@ root(ROOTS.Zones, {
 							},
 						}),
 					}),
+					-- #if ANYCLASSIC
+					-- mapped from PvP
 					n(54650, {	-- Kezzik the Striker <Gladiator and General's Gladiator> [Legion+] / Kezzik the Striker <Gladiator, Merciless, & Vengeful Gear>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
 						["sym"] = {
@@ -2397,6 +2369,7 @@ root(ROOTS.Zones, {
 						},
 						["timeline"] = { ADDED_4_3_0 },
 					}),
+					-- #endif
 					applyclassicphase(WRATH_PHASE_FOUR, n(33940, {	-- Kezzik the Striker <Veteran Arena Vendor> [WRATH] Original WOTLK S8 VENDOR
 						["coord"] = { 33.1, 64.3, NETHERSTORM },
 						-- #if BEFORE 4.0.3.13277
@@ -2425,11 +2398,14 @@ root(ROOTS.Zones, {
 						-- #endif
 						["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
 					})),
+					-- #if ANYCLASSIC
+					-- mapped from PvP
 					n(107610, {	-- Kitzie Crankshot <Vengeful and Vindicator's Gladiator>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
 						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR },{"merge"},{"pop"}},	-- Vengeful Gladiator Set
 						["timeline"] = { ADDED_7_0_3 },
 					}),
+					-- #endif
 					n(23396, {	-- Krixel Pinchwhistle <Classic Alliance Mail & Plate> / Krixel Pinchwhistle <Arena Vendor> [TBC]
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
 						-- #if BEFORE WRATH
@@ -2869,6 +2845,6 @@ local COMMON_ENCHANTING_RECIPES = {
 	i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
 	i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
 	i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-	i(22307),	-- Pattern: Enchanted Mageweave Pouch
+	i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 };
 appendGroups(COMMON_ENCHANTING_RECIPES, ASARNAN_MALIJ_GROUPS);

@@ -3,6 +3,17 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 	n(ZONE_DROPS, {
+		i(153191, {-- Cracked Fel-Spotted Egg
+			["provider"] = { "i", 153190 },	-- Fel-Spotted Egg
+			["groups"] = {
+				i(152843),	-- Darkspore Mana Ray (MOUNT!)
+				i(152841),	-- Felglow Mana Ray (MOUNT!)
+				i(152840),	-- Scintillating Mana Ray (MOUNT!)
+				i(152842),	-- Vibrant Mana Ray (MOUNT!)
+				i(153054),	-- Docile Skyfin (PET!)
+				i(153055),	-- Fel-Afflicted Skyfin (PET!)
+			},
+		}),
 		i(153086),	-- Bile-Scoured Breastplate
 		i(153085),	-- Bile-Scoured Gauntlets
 		i(153084),	-- Bile-Scoured Helmet

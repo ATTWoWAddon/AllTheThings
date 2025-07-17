@@ -54,6 +54,7 @@ local DifficultyIcons = {
 	[5] = app.asset("Difficulty_Heroic"),
 	[6] = app.asset("Difficulty_Heroic"),
 	[7] = app.asset("Difficulty_LFR"),
+	[8] = 618858,
 	[9] = app.asset("Difficulty_Mythic"),
 	[11] = app.asset("Difficulty_Heroic"),
 	[12] = app.asset("Difficulty_Normal"),
@@ -180,6 +181,7 @@ app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 			return key .. t[key];
 		end
 	end,
+	["ignoreSourceLookup"] = app.ReturnTrue,
 	["ShouldExcludeFromTooltip"] = function(t)
 		local difficultyID = app.GetCurrentDifficultyID();
 		if difficultyID > 0 then

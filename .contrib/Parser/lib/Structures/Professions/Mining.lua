@@ -168,7 +168,7 @@ NAZJATAR_MINING = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ ["timeline"] =
 	r(296149),	-- Osmenite Deposit [Rank 1]
 	r(296145),	-- Osmenite Seam [Rank 1]
 }));
-SL_MINING = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+SL_MINING = applyclassicphase(SL_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(309835),	-- Mining (Shadowlands)
 	r(2656),	-- Mining Journal \ Smelting
 }));

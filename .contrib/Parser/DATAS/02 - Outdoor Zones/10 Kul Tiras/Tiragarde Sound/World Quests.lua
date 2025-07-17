@@ -206,9 +206,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(53875, {	-- Fogsail for a Day (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
 			}),
-			q(52144, {	-- Foundry Meltdown (Alliance)
-				["races"] = ALLIANCE_ONLY,
-			}),
+			q(52144),	-- Foundry Meltdown
 			q(53076),	-- Foundry Meltdown
 			q(51654),	-- Fowlmouth
 			q(51662),	-- Foxhollow Skyterror

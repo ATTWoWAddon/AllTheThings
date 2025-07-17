@@ -195,6 +195,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 				}),
+				n(107467, {	-- Jacin
+					["coord"] = { 49.0, 81.6, SURAMAR },
+					["g"] = {
+						i(137467),	-- Shimmerfield Crystal
+					},
+				}),
 				n(113843, {	-- Kieule <Souvenirs>
 					["coord"] = { 50.4, 53.0, SURAMAR },
 					["g"] = {
@@ -341,7 +347,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 50.0, 77.3, SURAMAR },
 					["description"] = "You must complete the Suramar quest chain starting with |cffffff00Magic Message|r up to completing |cffffff00Masquerade|r in order to interact with this merchant.",
 					["g"] = {
-						i(147768, {	-- Suramarian Sapphire
+						i(147768, {	-- Suramarian Sapphire (QI!)
 							["b"] = 1,	-- Force BoP since this is only available as a quest item
 							["classes"] = { PALADIN },
 							["cost"] = {
