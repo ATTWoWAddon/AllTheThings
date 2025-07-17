@@ -8,6 +8,7 @@ using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading;
 using static ATT.Export;
@@ -374,6 +375,16 @@ namespace ATT
         }
 
         /// <summary>
+        /// Assign the localization strings to the Framework's internal reference.
+        /// </summary>
+        /// <param name="localizationStrings">The localization strings.</param>
+        public static void AssignLocalizationStrings(Dictionary<string, object> localizationStrings)
+        {
+            LocalizationStrings = localizationStrings;
+            Trace.WriteLine($"Found {localizationStrings.Count} Localization Strings...");
+        }
+
+        /// <summary>
         /// Mark the Custom Header as Required.
         /// This will force it to be included in the export if it exists as a constant.
         /// NOTE: Only headers with a constant defined can be explicitly marked.
@@ -673,6 +684,13 @@ namespace ATT
         /// All of the ItemAppearanceModifierIDs that have been loaded into the database by their assigned modID.
         /// </summary>
         internal static Dictionary<long, long> ItemAppearanceModifierIDs_ModID { get; private set; } = new Dictionary<long, long>();
+
+        //
+
+        /// <summary>
+        /// The LocalizationStrings table from main.lua that is used to generate localization strings.
+        /// </summary>
+        internal static Dictionary<string, object> LocalizationStrings { get; private set; } = new Dictionary<string, object>();
 
         /// <summary>
         /// All of the objects that have been loaded into the database.
@@ -1923,7 +1941,7 @@ namespace ATT
 #endif
         }
 
-        private static void CleanLocalizedField(long key, string field, IDictionary<string, object> data, Dictionary<string, Dictionary<long, string>> localizationData)
+        private static void CleanLocalizedField<T>(T key, string field, IDictionary<string, object> data, Dictionary<string, Dictionary<T, string>> localizationData)
         {
             if (data.TryGetValue(field, out var value))
             {
@@ -1937,9 +1955,9 @@ namespace ATT
                 TryColorizeDictionary(localeData);
                 if (localeData.TryGetValue("en", out string englishValue))
                 {
-                    if (!localizationData.TryGetValue("en", out Dictionary<long, string> sublocale))
+                    if (!localizationData.TryGetValue("en", out Dictionary<T, string> sublocale))
                     {
-                        localizationData["en"] = sublocale = new Dictionary<long, string>();
+                        localizationData["en"] = sublocale = new Dictionary<T, string>();
                     }
                     sublocale[key] = englishValue;
 
@@ -1961,7 +1979,7 @@ namespace ATT
                         {
                             if (!localizationData.TryGetValue(locale.Key, out sublocale))
                             {
-                                localizationData[locale.Key] = sublocale = new Dictionary<long, string>();
+                                localizationData[locale.Key] = sublocale = new Dictionary<T, string>();
                             }
                             sublocale[key] = localizedValue;
                         }
@@ -2571,6 +2589,65 @@ namespace ATT
                 {
                     // Generate a string builder for each language. (an empty builder at the end will not be exported)
                     localizationByLocale[language] = new StringBuilder();
+                }
+
+                // Export the Localization Strings file.
+                if (LocalizationStrings != null && LocalizationStrings.Any())
+                {
+                    CurrentParseStage = ParseStage.ExportCustomHeaders;
+
+                    // Now export it based on what we know.
+                    var builder = new StringBuilder("-- Localization Strings").AppendLine();
+                    var constants = new Dictionary<string, bool>();
+                    var localizationForText = new Dictionary<string, Dictionary<string, string>>();
+                    foreach (var localizationPair in LocalizationStrings)
+                    {
+                        var key = localizationPair.Key;
+                        if (localizationPair.Value is IDictionary<string, object> localization && localization.TryGetValue("export", out bool export) && export)
+                        {
+                            constants[key] = true;
+                            CleanLocalizedField(key, "text", localization, localizationForText);
+                        }
+                    }
+
+                    // Sort the header constants!
+                    var headerKeys = constants.Keys.ToList();
+                    headerKeys.Sort(Framework.Compare);
+
+                    // Get all of the english translations and always write them to the file.
+                    if (localizationForText.TryGetValue("en", out var data))
+                    {
+                        localizationForText.Remove("en");
+                        foreach (var key in headerKeys)
+                        {
+                            if (data.TryGetValue(key, out string name))
+                            {
+                                builder.Append("L.").Append(key).Append(" = ");
+                                ExportStringValue(builder, name).AppendLine(";");
+                            }
+                        }
+                    }
+
+                    // Now grab the non-english localizations and conditionally write them to the file.
+                    foreach (var localePair in localizationForText)
+                    {
+                        data = localePair.Value;
+                        if (data.Any())
+                        {
+                            var localeBuilder = localizationByLocale[localePair.Key];
+                            foreach (var key in headerKeys)
+                            {
+                                if (data.TryGetValue(key, out string name))
+                                {
+                                    localeBuilder.Append("L.").Append(key).Append(" = ");
+                                    ExportStringValue(localeBuilder, name).AppendLine(";");
+                                }
+                            }
+                        }
+                    }
+
+                    // Append the file content to our localization database.
+                    localizationDatabase.AppendLine(builder.ToString());
                 }
 
                 // Export the Category DB file.

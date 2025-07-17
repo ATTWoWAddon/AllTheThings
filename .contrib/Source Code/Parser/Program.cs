@@ -501,6 +501,13 @@ namespace ATT
                         Framework.AssignCustomHeaders(Framework.ParseAsDictionary<long>(customHeaders));
                     }
 
+                    // Try to grab the contents of the global variable "LocalizationStrings".
+                    var localizationStrings = lua.GetTable("LocalizationStrings");
+                    if (localizationStrings != null)
+                    {
+                        Framework.AssignLocalizationStrings(Framework.ParseAsDictionary<string>(localizationStrings));
+                    }
+
                     // Try to grab the contents of the global variable "Phases".
                     var phases = lua.GetTable("Phases");
                     if (phases != null)

@@ -1739,8 +1739,34 @@ end
 
 -- Create a String.
 (function()
+local localizationStringsByConstant = {};
+LocalizationStrings = localizationStringsByConstant;	-- This is global, so that it can be found by Parser!
 createLocalizationString = function(data)
-	-- TODO
+	if not data then
+		print("INVALID LOCALIZATION STRING: You must pass data into the createLocalizationString function.");
+	elseif not data.constant then
+		print("INVALID LOCALIZATION STRING (missing 'constant')", data.readable);
+	elseif localizationStringsByConstant[data.constant] then
+		error("ERROR: LOCALIZATION STRING CONSTANT " .. data.constant .. " ALREADY ASSIGNED TO " .. localizationStringsByConstant[data.constant].readable .. ". Please double check that the localization definitions are unique or reuse the same localization.");
+	else
+		local textData = data.text;
+		if (not (textData and (type(textData) == "string" or (type(textData) == "table" and textData.en)))) and not data.icon then
+			print("INVALID LOCALIZATION STRING", data.readable, textData);
+		else
+			localizationStringsByConstant[data.constant] = data;
+			
+			-- Build the text using icon and color, if supplied.
+			if data.color then
+				-- Include the color first!
+				-- TODO
+			end
+			if data.icon then
+				-- Prefix the string with the texture.
+				--local textureString = "|T" .. data.icon .. ":0|t";
+				-- TODO
+			end
+		end
+	end
 end
 end)();
 
