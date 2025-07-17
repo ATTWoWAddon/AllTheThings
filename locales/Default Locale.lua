@@ -78,7 +78,6 @@ local GetItemClassInfo = app.WOWAPI.GetItemClassInfo;
 
 
 	RESET_INSTANCES_DESC = "Click here to reset your instances.\n\n"..ALT_KEY_TEXT.." click to toggle automatically resetting your instances when you leave a dungeon.\n\nWARNING: BE CAREFUL WITH THIS!";
-	TITLES = PAPERDOLL_SIDEBAR_TITLES;
 	UPDATE_WORLD_QUESTS_DESC = "Sometimes the World Quest API is slow or fails to return new data. If you wish to forcibly refresh the data without changing zones, click this button now!\n\n"..ALT_KEY_TEXT.." click to include currently-available Things which may not be time-limited";
 	DOES_NOT_CONTRIBUTE_TO_PROGRESS = "|cffe08207This group and its content do not contribute to the progress of this window since it is Sourced in another Location!|r";
 
@@ -385,47 +384,15 @@ local GetItemClassInfo = app.WOWAPI.GetItemClassInfo;
 		["Cнятие шкур"] = 8613,	-- Skinning		-- Required for RU
 	};
 
-		SKIP_AUTO_REFRESH = "Skip Settings-Toggle Data Refreshes!";
 		SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by "..SHIFT_KEY_TEXT.." clicking on an ATT window.";
 
 		ABOUT_TOP = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|r";
 		ABOUT_BOTTOM = "Active Contributors: |CFFFFFFFF(Alphabetical Order)\n%s\n\n|rHall of Fame: |CFFFFFFFF(Alphabetical Order)\n%s\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe). You should absolutely download their addons to get the collection icons on items in your bags! %s %s %s\n\nFor online collection comparing check out DataForAzeroth.com from Shoogen and WoWthing.org from Freddie!|r";
-		CLIPBOARDCOPYPASTE = "Ctrl+A, Ctrl+C to Copy to your Clipboard.";
-		CURSEFORGE_BUTTON_LABEL = "Curse";
-		CURSEFORGE_BUTTON_TOOLTIP = "Click this button to copy the url to get the ALL THE THINGS addon from Curse.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
-		DISCORD_BUTTON_LABEL = "Discord";
-		DISCORD_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things Discord server.\n\nYou can share your progress/frustrations with other collectors!";
-		GITHUB_BUTTON_LABEL = "GitHub";
-		GITHUB_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things GitHub.\n\nYou can clone the repository directly without needing to use a third party addon manager!";
-		MERCH_BUTTON_LABEL = "Merch";
-		MERCH_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things merchandise store.\n\nHere you can support the AddOn financially and get some cool merch in return!";
-		PATREON_BUTTON_LABEL = "Patreon";
-		PATREON_BUTTON_TOOLTIP = "Click this button to copy the URL to get to the All The Things Patreon page.\n\nHere you can see how you can support the AddOn financially!";
-		TWITCH_BUTTON_LABEL = "Twitch";
-		TWITCH_BUTTON_TOOLTIP = "Click this button to copy the URL to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!";
-		WAGO_BUTTON_LABEL = "Wago.io";
-		WAGO_BUTTON_TOOLTIP = "Click this button to copy the url to get the ALL THE THINGS addon from Wago.io.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
 
 		DEBUG_MODE = app.ccColors.Red.."Debug Mode|r (Show Everything)";
-		DEBUG_MODE_TOOLTIP = "Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
 		ACCOUNT_MODE = app.ccColors.Account.."Account Mode";
-		ACCOUNT_MODE_TOOLTIP = "Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.";
-		FACTION_MODE = "Faction Only";
-		FACTION_MODE_TOOLTIP = "Turn this setting on if you want to see Account Mode data only for races and classes of your current faction.";
-		LOOT_MODE = "Loot Mode";
-		LOOT_MODE_TOOLTIP = "Enable this option to show loot from all sources. This can include items such as Rings, Trinkets, Necklaces and the like. Whether or not something is collectible is irrelevant when using this mode. Not recommended all the time, but if you want to see items that can come from a source like they do in AtlasLoot, you can enable this to see that information.\n\nYou can change which sort of loot displays for you based on the Filters tab.\n\nDefault: Class Defaults, Disabled.";
 		MODE_EXPLAIN_LABEL = "|cffFFFFFFWhat you collect is summarized as a specific Mode. Enable all " .. app.ccColors.Insane .. "colored options|cffFFFFFF to unlock ".. app.ccColors.Insane .. "Insane Mode|cffFFFFFF.";
-		COMPLETIONIST_MODE = "+Sources";
-		COMPLETIONIST_MODE_TOOLTIP = "Enable this Mode to consider Items as Collected only when the specific Item has been unlocked for the given Appearance.\n\nThis means you will need to collect every shared Appearance of an Item.\n\nNote: By default, the game stops telling you about Items you have not collected once you have collected a shared Source, so this will ensure that uncollected Items are tracked.";
-		MAIN_ONLY = "Main Only";
-		MAIN_ONLY_TOOLTIP = "Turn this setting on if you additionally want ATT to *pretend* that you've earned all shared appearances not locked by a different race or class.\n\nAs an example, if you have collected a Hunter-Only Tier Piece from ICC and there is a shared appearance from the raid without class/race restrictions, ATT will *pretend* that you've earned that source of the appearance as well.\n\nNOTE: Switching to a different race/class will incorrectly report that you've earned appearance sources that you haven't collected for that new chararacter when unlocked in this way.";
-		ONLY_RWP = "Only RWP";
-		ONLY_RWP_TOOLTIP = "Enable this option to only track transmog that get removed from the game in the future. Only Items tagged with 'removed with patch' data count toward this. If you find an item not tagged that should be tagged, please let me know!\n\nYou can change which sort of loot displays for you based on the Filters tab.";
-		ONLY_NOT_TRASH = "Filter Trash Items";
-		ONLY_NOT_TRASH_TOOLTIP = "Enable this option to ignore white/grey items. Blizzard does not yet provide API for it in Classic.";
-		UNOFFICIAL_SUPPORT_TOOLTIP = "NOTE: At this time, official support is not provided by WoW's API, but ATT can track items or quest completion to make it functional in the addon.";
 
-		GENERAL_CONTENT = "General Content";
 		SHOW_INCOMPLETE_THINGS_CHECKBOX = "Show Repeatable/Trackable Things";
 		SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP = "Enable this option if you want to see incomplete repeatable content without forcing it to be considered 'collectible'.\n\nNOTE: Non-saved Rare Spawns, Treasures, and Vignettes also appear in the listing with this setting turned on.";
 		SHOW_COMPLETED_GROUPS_CHECKBOX = "Show Completed Groups";
@@ -454,8 +421,6 @@ local GetItemClassInfo = app.WOWAPI.GetItemClassInfo;
 		ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. "Account-Wide|R by default.";
 		TRACK_ACC_WIDE = app.ccColors.Account .. "Track Account-Wide|R";
 		ACCOUNT_THINGS_LABEL = "Account-Wide Things";
-		GENERAL_THINGS_LABEL = "General Things";
-		STRANGER_THINGS_LABEL = "Stranger Things";
 		ACHIEVEMENTS_CHECKBOX = ACHIEVEMENTS;
 		ACHIEVEMENTS_CHECKBOX_TOOLTIP = "Enable this option to track achievements.";
 		APPEARANCES_CHECKBOX = "Appearances";
@@ -476,8 +441,6 @@ local GetItemClassInfo = app.WOWAPI.GetItemClassInfo;
 		HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP = "Enable this option to specifically track collection of individual Heirloom Upgrades.\n\nWe all know Blizzard just loves to drain your gold and your soul, so keep track of that with this toggle.";
 		ILLUSIONS_CHECKBOX = "Illusions";
 		ILLUSIONS_CHECKBOX_TOOLTIP = "Enable this option to track illusions.\n\nThese are really cool-looking transmog effects you can apply to your weapons!\n\nNOTE: You are not an illusion, despite what all the Nightborne think.";
-		MOUNTS_CHECKBOX = MOUNTS;
-		MOUNTS_CHECKBOX_TOOLTIP = "Enable this option to track mounts.\n\nYou can ride these to go places faster than when running. Who knew!";
 		QUESTS_CHECKBOX = QUESTS_LABEL;
 		QUESTS_CHECKBOX_TOOLTIP = "Enable this option to track normal Quests.\n\nYou can right click any Quest in the lists to pop out their full quest chain to show your progress and any prerequisite Quests.\n\nNOTE: Tracking of Daily, Weekly, Yearly, and World Quests is not included in this option due to their periodic resets within the Blizzard Database.";
 		QUESTS_LOCKED_CHECKBOX = "+Locked";
@@ -488,16 +451,10 @@ local GetItemClassInfo = app.WOWAPI.GetItemClassInfo;
 		RECIPES_CHECKBOX_TOOLTIP = "Enable this option to track recipes for your professions.\n\nNOTE: You must open your professions list in order to cache these.";
 		REPUTATIONS_CHECKBOX = "Reputations";
 		REPUTATIONS_CHECKBOX_TOOLTIP = "Enable this option to track reputations.\n\nOnce you reach Exalted or Best Friend with a reputation, it will be marked Collected.\n\nYou may have to do a manual refresh for this to update correctly.";
-		TITLES_CHECKBOX = "Titles";
-		TITLES_CHECKBOX_TOOLTIP = "Enable this option to track titles.\n\nThese can make your character stand out and look like you've played for awhile. Typically only new players do not have a title active.";
-		TOYS_CHECKBOX = TOY_BOX;
-		TOYS_CHECKBOX_TOOLTIP = "Enable this option to track Toys.\n\nMost of these toys have a fun thing that they do. Others, like the Hearthstone Toys, can be used in place of your actual Hearthstone and can save you a bag slot! They also have interesting effects... Nice!";
 
-		EXPANSION_THINGS_LABEL = "Expansion Things";
 		AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Azerite Essences";
 		AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "Enable this option to track Azerite Essences.\n\nTracked per character by default.";
 		MOUNTMODS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t Mount Modifications";
-		MOUNTMODS_CHECKBOX_TOOLTIP = "Enable this option to track Mount Modifications";
 		FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t Followers & Companions";
 		FOLLOWERS_CHECKBOX_TOOLTIP = "Enable this option to track followers and champions.\n\nIE: Garrison Followers, Legion Class Hall Champions, BFA Campaign Minions and SL Adventurers.";
 		RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Runecarving Powers";
@@ -526,26 +483,12 @@ local GetItemClassInfo = app.WOWAPI.GetItemClassInfo;
 
 		ITEM_FILTER_LABEL = ARMOR .." & ".. AUCTION_CATEGORY_WEAPONS;
 		ITEM_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
-		CLASS_DEFAULTS_BUTTON = "Class Defaults";
-		CLASS_DEFAULTS_BUTTON_TOOLTIP = "Click this button to reset all of the filters to your class defaults.\n\nNOTE: Only filters that are collectible for your class can be turned on.";
-		ALL_BUTTON = ALL;
-		ALL_BUTTON_TOOLTIP = "Click this button to enable all options at once.";
-		UNCHECK_ALL_BUTTON = NONE;
-		UNCHECK_ALL_BUTTON_TOOLTIP = "Click this button to disable all options at once.";
 		STORE_IN_PROFILE_BUTTON = "Store in Profile",
 		STORE_IN_PROFILE_BUTTON_TOOLTIP = "By default, ATT stores these Filters on a per-character basis.\n\nCheck this option to store these Filter selections in the current Profile rather than per-character.",
 
 
-		UNOBTAINABLES_PAGE = "Unobtainables";
-		UNOBTAINABLE_LABEL = "Unobtainable Content";
-		CUSTOM_FILTERS_LABEL = "Automated Content";
 		CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
-		CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 
-		INTERFACE_PAGE = UIOPTIONS_MENU;
-		TOOLTIP_LABEL = "Tooltips";
-		TOOLTIP_HELP_CHECKBOX = "Show Tooltip Help";
-		TOOLTIP_HELP_CHECKBOX_TOOLTIP = "Enable this option if you want to see the help info in ATT window tooltips which indicates various key/click combinations for ATT window functionality.\nIf you already know all of the key/click combinations, you may want to save tooltip space and disable this option.";
 		ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "Tooltip Integrations";
 		ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP = "Enable this option if you want to see the information provided by ATT in external tooltips. This includes item links sent by other players, in the auction house, in the dungeon journal, in your bags, in the world, on NPCs, etc.\n\nIf you turn this feature off, you are seriously reducing your ability to quickly determine if you need to kill a mob or learn an appearance.\n\nWe recommend you keep this setting on.";
 		DISPLAY_IN_COMBAT_CHECKBOX = "In Combat";
@@ -554,13 +497,6 @@ local GetItemClassInfo = app.WOWAPI.GetItemClassInfo;
 		NOT_DISPLAY_IN_COMBAT_NPCS_CHECKBOX_TOOLTIP = "Enable this option to ignore rendering NPC tooltips while in combat.";
 		PET_CAGE_TOOLTIPS_CHECKBOX = "Pet Cages";
 		PET_CAGE_TOOLTIPS_CHECKBOX_TOOLTIP = "Enable this option to allow Pet Cage tooltip Integration. (This renders on TSM's Extra Tooltip or in a Compare Item Tooltip when enabled.)";
-		TOOLTIP_MOD_LABEL = "Modifier";
-		TOOLTIP_MOD_NONE = NONE_KEY;
-		TOOLTIP_MOD_SHIFT = SHIFT_KEY_TEXT;
-		TOOLTIP_MOD_CTRL = CTRL_KEY_TEXT;
-		TOOLTIP_MOD_ALT = ALT_KEY_TEXT;
-		TOOLTIP_MOD_CMD = CMD_KEY_TEXT;
-		TOOLTIP_SHOW_LABEL = "Shown Information";
 		SHOW_COLLECTION_PROGRESS_CHECKBOX = "Collection Progress";
 		SHOW_COLLECTION_PROGRESS_CHECKBOX_TOOLTIP = "Enable this option if you want to see your progress towards collecting a Thing or completing a group of Things at the Top Right of its tooltip.\n\nWe recommend that you keep this setting turned on.";
 		ICON_ONLY_CHECKBOX = "Icon Only";
@@ -593,8 +529,6 @@ local GetItemClassInfo = app.WOWAPI.GetItemClassInfo;
 		LOCATIONS_SLIDER_TOOLTIP = 'Use this to customize the number of source locations to show in the tooltip.\n\nNOTE: This will also show "X" number of other sources based on how many, if that total is equivalent to the total number of displayed elements, then that will simply display the last source.\n\nDefault: 5';
 		COMPLETED_SOURCES_CHECKBOX = "For Completed";
 		COMPLETED_SOURCES_CHECKBOX_TOOLTIP = "Enable this option if you want to see completed source locations in the tooltip.\n\nAs an example, if you complete the quest \"Bathran's Hair\" in Ashenvale, the tooltip for Evenar Stillwhisper will no longer show that quest when hovering over him.";
-		DROP_CHANCES_CHECKBOX = "Drop Chances";
-		DROP_CHANCES_CHECKBOX_TOOLTIP = "Enable this option to calculate various drop chance information in the tooltip for an item in an ATT window.\nThis can be helpful for knowing which Loot Spec should be used when Bonus Rolling for an item.";
 		FOR_CREATURES_CHECKBOX = "For Creatures";
 		FOR_CREATURES_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations for Creatures.";
 		FOR_THINGS_CHECKBOX = "For Things";
@@ -604,10 +538,7 @@ local GetItemClassInfo = app.WOWAPI.GetItemClassInfo;
 		WITH_WRAPPING_CHECKBOX = "Allow Wrapping";
 		WITH_WRAPPING_CHECKBOX_TOOLTIP = "Enable this option to allow the Source lines to wrap within the tooltip.\nThis will ensure that the tooltips do not grow wider than necessary, but will unfortunately make the Source information harder to read in many situations.";
 
-		BEHAVIOR_LABEL = "List Behavior";
-		MAIN_LIST_SLIDER_LABEL = "Main List Scale";
 		MAIN_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
-		MINI_LIST_SLIDER_LABEL = "Mini Lists Scale";
 		MINI_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
 		ADHOC_UPDATES_CHECKBOX = "Ad-Hoc Window Updates";
 		ADHOC_UPDATES_CHECKBOX_TOOLTIP = "Enable this option if you want only visible ATT windows to be updated.\n\nThis can greatly reduce loading times and prevent large framerate spikes in some situations.";
@@ -625,38 +556,16 @@ local GetItemClassInfo = app.WOWAPI.GetItemClassInfo;
 		FILL_NPC_DATA_CHECKBOX_TOOLTIP = "Enable this option if you want to fill all relevant data for a given NPC (Common Boss Drops, Drops, etc). This option may cause a significant amount of duplication, but the idea is that the NPC will remain visible if you need something available from that NPC.\n\nNote: A lot of Dragonflight outdoors content relies on this setting being enabled for accuracy due to how many Rares share common drops.\n\nDefault: Off";
 		NESTED_QUEST_CHAIN_CHECKBOX = "Show Nested Quest Chains";
 		NESTED_QUEST_CHAIN_CHECKBOX_TOOLTIP = "Enable this option if you want the Quest Chain Requirements (Right-Click on Quest) window to show required Quests as sub-groups of their following Quests, i.e. they must be completed from the inside out.\n\nThis is useful to not miss Breadcrumb Quests and should be used primarily for Quest completion in mind.\n\nOtherwise, Quest Chain Requirements will be displayed in a top-down list, with the earliest available Quest at the very top.";
-		SORT_BY_PROGRESS_CHECKBOX = "Sort By Progress";
 		SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "Enable this option if you want the 'Sort' operation ("..SHIFT_KEY_TEXT.." Right Click) to sort by the total progress of each group (instead of by Name)";
 		SHOW_REMAINING_CHECKBOX = "Show Remaining Things";
 		SHOW_REMAINING_CHECKBOX_TOOLTIP = "Enable this option if you want to see the number of items remaining instead of the progress over total.";
 		PERCENTAGES_CHECKBOX = "Show Percentage Completion";
 		PERCENTAGES_CHECKBOX_TOOLTIP = "Enable this option if you want to see the percent completion of each row.\n\nColoring of groups by completion is unaffected.";
-		PRECISION_SLIDER = "Precision Level";
 		PRECISION_SLIDER_TOOLTIP = 'Use this to customize your desired level of precision in percentage calculations.\n\nDefault: 2';
-		DYNAMIC_CATEGORY_LABEL = "Dynamic Categories";
-		DYNAMIC_CATEGORY_SIMPLE = "Simple";
-		DYNAMIC_CATEGORY_SIMPLE_TOOLTIP = "Generate Dynamic Categories based only on the very highest Category.";
-		DYNAMIC_CATEGORY_NESTED = "Nested";
-		DYNAMIC_CATEGORY_NESTED_TOOLTIP = "Generate Dynamic Categories based on their exact Source. This will lead to duplicates of Things that are also Sourced in multiple places.";
-		DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000Applied when Generated|r";
-		MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "Maximum Top Line Length";
 
-		ACCESSIBILITY_PAGE = ACCESSIBILITY_LABEL;
-		ACCESSIBILITY_EXPLAIN = COLORBLIND_MODE_SUBTEXT;
-		COLORS_ICONS = "Colors and Icons";
-		LOCKED_QUESTS = "Locked quests";
 		MORE_COLORS_CHECKBOX = "Show Colors";
 		MORE_COLORS_CHECKBOX_TOOLTIP = "Enable this option if you want to see more colors utilized to help distinguish additional conditions for Things in lists (i.e. class colors, faction colors, etc.)";
-		WINDOW_COLORS = "Window Colors";
-		BACKGROUND = EMBLEM_BACKGROUND;
-		BACKGROUND_TOOLTIP = "Set the background color of all ATT windows.";
-		BORDER = EMBLEM_BORDER;
-		BORDER_TOOLTIP = "Set the border color of all ATT windows.";
-		RESET_TOOLTIP = "Revert to default settings.";
-		CLASS_BORDER = "Use Class Color For Border";
-		CLASS_BORDER_TOOLTIP = "Use your class color for the borders. This updates when you log onto another class.";
 
-		FILLERS_LABEL = "Fillers";
 		FILLERS_EXPLANATION = "|cffFFFFFFFillers are mechanisms by which extra Data is 'filled' into/beneath other ATT content within various UI elements to show further use or purpose of a given Thing. For example, showing the resulting Purchases of an Item would be provided by a 'Filler'.\nThis tab allows you to modify your preferences of which Fillers will be active throughout ATT.|r",
 		TOOLTIP = "Tooltip",
 		LIST = "Mini List",
@@ -669,21 +578,10 @@ local GetItemClassInfo = app.WOWAPI.GetItemClassInfo;
 
 		ACHIEVEMENT_ID = "Achievement ID";
 		ACHIEVEMENT_CATEGORY_ID = "Achievement Category ID";
-		READDED_WITH_PATCH_CLASSIC_FORMAT = "This gets readded with patch %s";
-		REMOVED_WITH_PATCH_CLASSIC_FORMAT = "This gets removed with patch %s";
 
-		FEATURES_PAGE = FEATURES_LABEL;
 
-		CELEBRATIONS_LABEL = "Celebrations & Sound Effects";
-		AUDIO_CHANNEL = "Audio Channel";
-		CHANNEL_MASTER = MASTER;
-		CHANNEL_MUSIC = MUSIC_VOLUME;
-		CHANNEL_SFX = FX_VOLUME;
-		CHANNEL_AMBIENCE = AMBIENCE_VOLUME;
-		CHANNEL_DIALOG = DIALOG_VOLUME;
 		CELEBRATE_COLLECTED_CHECKBOX = "Collected Things Trigger a Celebration";
 		CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new Thing.\n\nThis feature can greatly help keep you motivated.";
-		SOUNDPACK = "Soundpack";
 		PLAY_DEATH_SOUND_CHECKBOX = "Play a Sound Effect when you Die";
 		PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a sound effect when you die.";
 		WARN_REMOVED_CHECKBOX = "Removed Things Trigger a Warning";
@@ -691,7 +589,6 @@ local GetItemClassInfo = app.WOWAPI.GetItemClassInfo;
 		SCREENSHOT_COLLECTED_CHECKBOX = "Collected Things Trigger a Screenshot";
 		SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "Enable this option if you want to take a screenshot for every Thing you collect.";
 
-		REPORTING_LABEL = "Reporting";
 		REPORT_COLLECTED_THINGS_CHECKBOX = "Report Collected Things";
 		REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "Enable this option if you want to see a message in chat detailing which items you have collected or removed from your collection.\n\nNOTE: This is present because Blizzard silently adds appearances and other collectible items and neglects to notify you of the additional items available to you.\n\nWe recommend you keep this setting on. You will still hear the fanfare with it off assuming you have that option turned on.";
 		REPORT_COMPLETED_QUESTS_CHECKBOX = "Report Quests";
@@ -717,21 +614,9 @@ local GetItemClassInfo = app.WOWAPI.GetItemClassInfo;
 		REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX = "Play a Sound Effect";
 		REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to also play a notification sound effect when nearby content is detected.";
 
-		SYNC_PAGE = "Sync";
-		ACCOUNT_SYNCHRONIZATION = "Account Synchronization";
-		AUTO_SYNC_ACC_DATA_CHECKBOX = "Automatically Sync Account Data";
-		AUTO_SYNC_ACC_DATA_TOOLTIP = "Enable this option if you want ATT to attempt to automatically synchronize account data between accounts when logging in or reloading the UI.";
 
-		WINDOWS_PAGE = "Windows";
 
-		PROFILES_PAGE = "Profiles";
-		PROFILE = "Profile";
-		PROFILE_INITIALIZE = "Initialize Profiles";
 		PROFILE_INITIALIZE_TOOLTIP = "This will enable your Saved Variables for ATT to support and contain Profile data. Your current Settings and Window information will be copied into the '"..DEFAULT.."' Profile, which cannot be deleted, but may be modified and will be used as the initial Profile for all characters.\n\nPlease be sure to report any unusual behavior or bugs with Profiles to the ATT Discord!";
-		PROFILE_INITIALIZE_CONFIRM = "Are you sure you want to enable Profile support?";
-		PROFILE_NEW_TOOLTIP = "Create a blank Profile to be used by the current Character";
-		PROFILE_COPY_TOOLTIP = "Copy the Selected Profile into the Current Profile";
-		PROFILE_DELETE_TOOLTIP = "Delete the Selected Profile";
 		PROFILE_SWITCH_TOOLTIP = "Set the Selected Profile as the Current Profile\n\nA Profile can also be "..SHIFT_KEY_TEXT.." clicked to Switch to it";
 		SHOW_PROFILE_LOADED = "Show which profile loads during login or when switching between profiles";
 

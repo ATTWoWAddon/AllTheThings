@@ -178,38 +178,15 @@ for key,value in pairs({
 do a[key] = value; end
 end
 
-		SKIP_AUTO_REFRESH = "Saltar Ajustes-Conmutador de los refrescos de datos!";
 		SKIP_AUTO_REFRESH_TOOLTIP = "Por defecto (desactivado), cualquier cambio de Ajustes que pueda afectar los datos visibles causará un refresco automático.\n\nActivando esta opción, los cambios de Ajustes no tendrán efecto hasta que el Usuario ejecute un Refresco Completo con "..SHIFT_KEY_TEXT.." + clic en una ventana de ATT.";
 
 		ABOUT_TOP = " |CFFFFFFFF es un addon de rastreo de colecciones que te muestra dónde y cómo conseguirlo tódo en el juego! Tenemos una gran comunidad de usuarios en nuestro Discord (enlace el final) donde puedes preguntar, enviar sugerencias y también reportar errores o objetos que falten. Si encuentras algún coleccionable que no está documentado, puedes decirnoslo en el Discord, o para los que tengan más conocimiento técnico, tenemos un Git donde puedes contribuir directamente.\n\nSi bien nos esforzamos mucho por el completado, hay muchas cosas que se añaden al juego en cada parche, así que si nos dejamos algo, por favor entiende que somos un equipo pequeño intentando seguir el ritmo de cambios e intentando coleccionar cosas nosotros también. :D\n\nPuedes preguntarme dudas cuando esté haciendo directos e intentaré responderte lo mejor que pueda, incluso si no está relacionado directamente con ATT (programación de addons del WoW también).\n\n- |r|Cffff8000Crieve|r";
 		ABOUT_BOTTOM = "Colaboradores activos: |CFFFFFFFF(Órden alfabético)\n%s\n\n|rSalón de la Fama: |CFFFFFFFF(Órden alfabético)\n%s\n\nMención especial para AmiYuy (CanIMogIt) y Caerdon (Caerdon Wardrobe). Tienes que descargarte sus addons para tener los iconos de colección de objetos en tus bolsas! %s %s %s\n\nPara comparar en línea la colección deberías visitar DataForAzeroth.com de Shoogen y WoWthing.org de Freddie!|r";
-		CLIPBOARDCOPYPASTE = "Ctrl+A, Ctrl+C para Copiar a tu Portapapeles.";
-		CURSEFORGE_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace del addon ALL THE THINGS en Curse.\n\nPuedes dar este enlace a tus amigos para que arruinen sus vidas también! Te van a perdonar en un futuro...o no.";
-		DISCORD_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace al servidor de Discord de All The Things.\n\nPuedes compartir tu progreso/frustraciones con otros coleccionistas!";
-		MERCH_BUTTON_LABEL = "Mercancía";
-		MERCH_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace a la tienda de artículos de All The Things.\n\nAquí puedes dar soporte financiero al Addon y conseguir artículos chulos a cambio!";
-		PATREON_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace a la página de Patreon de All The Things.\n\nAquí puedes ver cómo dar soporte financiero al Addon!";
-		TWITCH_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace a mi canal de Twitch.\n\nPuedes preguntarme dudas cuando esté haciendo directos e intentaré responderte lo mejor que pueda!";
-		WAGO_BUTTON_TOOLTIP = "Haz clic en este botón para copiar el enlace del addon ALL THE THINGS en Wago.io.\n\nPuedes dar este enlace a tus amigos para que arruinen sus vidas también! Te van a perdonar en un futuro...o no.";
 
 		DEBUG_MODE = app.ccColors.Red.."Modo Depuración|r (Muestra todo)";
-		DEBUG_MODE_TOOLTIP = "Literalmente... TODAS LAS COSAS EN EL JUEGO. PUNTO. SI, TODO DE TODO. Incluso las cosas no coleccionables como bolsas, consumibles, ingredientes, etc aparecerán en las listas. (Incluído tú! No, en serio. Mira.)\n\nEsto es sólo para propósitos de Depuración. No está pensado para ser usado para el rastreo de completado.\n\nEste modo se salta todos los filtros, incluyendo no obtenibles.";
 		ACCOUNT_MODE = app.ccColors.Account.."Modo Cuenta";
-		ACCOUNT_MODE_TOOLTIP = "Activa este ajuste si quieres rastrear todas las cosas para todos tus personajes independientemente de los filtros de clase o raza.\n\nLos filtros de No obtenible aún se aplican.";
-		FACTION_MODE = "Sólo Facción";
-		FACTION_MODE_TOOLTIP = "Activa este ajuste si quieres ver los datos de Modo Cuenta sólo para las razas y clases de tu facción actual.";
-		LOOT_MODE = "Modo botín";
-		LOOT_MODE_TOOLTIP = "Activa esta opción para mostrar el botín de todas las fuentes.\n\nPuedes cambiar el tipo de botín que se muestra en la pestaña de Filtros.";
 		MODE_EXPLAIN_LABEL = "|cffFFFFFFLo que coleccionas se resume en un modo específico. Activa todas las opciones " .. app.ccColors.Insane .. "coloreadas|cffFFFFFF para desbloquear el ".. app.ccColors.Insane .. "Modo Demente|cffFFFFFF.";
-		COMPLETIONIST_MODE = "+Fuentes";
-		COMPLETIONIST_MODE_TOOLTIP = "Activa este Modo para considerar los objetos como Coleccionados sólo cuando un objeto específico se ha desbloqueado para esa Apariencia.\n\nEsto significa que tendrás que coleccionar todas las apariencias compartidas de cada objeto.\n\nNota: Por defecto, el juego para de decirte cosas sobre los objetos que no has coleccionado cuando coleccionas una apariencia con fuente compartida, así que esto se asegura que los objetos no coleccionados son rastreados.";
-		MAIN_ONLY = "Sólo Personaje Principal";
-		MAIN_ONLY_TOOLTIP = "Activa este ajuste si a demás quieres que ATT *finja* que has conseguido todas las apariencias compartidas no bloqueadas por una raza diferente o clase.\n\nComo ejemplo, si has coleccionado una pieza de un conjunto de equipo de ICC sólo disponible para Cazador y hay una apariencia compartida de la banda sin las restricciones de clase/raza, ATT va a *fingir* que también has conseguido esa fuente de apariencia.\n\nNOTA: Cambiar a una raza/clase diferente va a mostrar incorrectamente que has conseguido una fuente de apariencia que no has conseguido para ese nuevo personaje cuando se desbloquea de esta forma.";
-		ONLY_RWP = "Sólo Eliminado con el parche";
-		ONLY_RWP_TOOLTIP = "Activa esta opción para rastrear sólamente las transfiguraciones que serán eliminadas del juego en un futuro. Sólo los objetos etiquetados con 'Eliminado en el Parche' ('removed with patch' o 'RWP') cuentan. Si encuentras un objeto sin etiquetar que debería estarlo, dímelo por favor!\n\nPuedes cambiar el tipo de botín que se muestra en la pestaña de Filtros.";
-		UNOFFICIAL_SUPPORT_TOOLTIP = "NOTA: Actualmente, no hay soporte oficial por parte de la API del WoW, pero ATT puede rastrear objetos o el completado de misiones para hacerlo funcional en el addon.";
 
-		GENERAL_CONTENT = "Contenido General";
 		SHOW_INCOMPLETE_THINGS_CHECKBOX = "Muestra todas las cosas rastreables";
 		SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver los objetos, PNJs y cabeceras que se pueden rastrear en el juego sin que se consideren 'coleccionables' necesariamente.\n\nPuedes usarlo para ayudarte a conseguir el logro Maestro cultural si aún no lo tienes.\n\nNOTA: Los enemigos Raros y las aventuras también apareceran en el listado con este ajuste activado.";
 		SHOW_COMPLETED_GROUPS_CHECKBOX = "Muestra los grupos completados";
@@ -234,8 +211,6 @@ end
 		ACC_WIDE_DEFAULT = "Rastreado ".. app.ccColors.Account .. "Para toda la cuenta|R por defecto.";
 		TRACK_ACC_WIDE = app.ccColors.Account .. "Rastrear para toda la cuenta|R";
 		ACCOUNT_THINGS_LABEL = "Cosas para toda la cuenta";
-		GENERAL_THINGS_LABEL = "Cosas generales";
-		STRANGER_THINGS_LABEL = "Cosas extrañas";
 
 		ACHIEVEMENTS_CHECKBOX = "Logros";
 		ACHIEVEMENTS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear logros.";
@@ -255,8 +230,6 @@ end
 		HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear específicamente la colección de cada mejora individual de Reliquias.\n\nTodos sabemos que a Blizzard le encanta drenar tu oro y tu alma, así que lleva la cuenta con este interruptor.";
 		ILLUSIONS_CHECKBOX = "Ilusiones";
 		ILLUSIONS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear ilusiones.\n\nSon efectos muy molones que puedes aplicar a tus armas!\n\nNOTA: No eres una ilusión, aunque todos los Nocheterna piensen lo contrario.";
-		MOUNTS_CHECKBOX = "Monturas";
-		MOUNTS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrar monturas.\n\nPuedes usarlas para ir a sitios más rápido que corriendo. Quién lo diría!";
 		QUESTS_CHECKBOX = "Misiones";
 		QUESTS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear misiones normales.\n\nPuedes hacer clic derecho en cualquier misión en las listas para abrir una ventana emergente con toda su cadena de misiones para ver tu progreso y si hay alguna misión requerida previa.\n\nNOTA: El rastreo de misiones Diarias, Semanales, Anuales y de mundo no se incluye en esta opción debido a los reinicios periódicos en la base de datos de Blizzard.";
 		QUESTS_LOCKED_CHECKBOX = "+Bloqueado";
@@ -265,12 +238,7 @@ end
 		RECIPES_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear recetas para tu profesión.\n\nNOTA: Debes abrir tu lista de profesiones para cargar la información de estas.";
 		REPUTATIONS_CHECKBOX = "Reputaciones";
 		REPUTATIONS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear reputaciones.\n\nCuando llegas a Exaltado o Mejor amigo con una reputación, se marcará como Coleccionado.\n\nPuede que tengas que hacer un refresco manual para que se actualice correctamente.";
-		TITLES_CHECKBOX = "Títulos";
-		TITLES_CHECKBOX_TOOLTIP = "Activa esta opción para rastrar títulos.\n\nPueden hacer que tu personaje resalte y parezca que has jugado desde mucho tiempo. Típicamente sólo los jugadores nuevos no tienen un título activo.";
-		TOYS_CHECKBOX = "Juguetes";
-		TOYS_CHECKBOX_TOOLTIP = "Activa esta opción para rastrar juguetes.\n\nLa mayoría de juguetes hacen algo divertido. Otros, como los juguetes de Piedra de Hogar, pueden usarse en vez de tu Piedra de Hogar y ahorrarte un hueco en tus bolsas! También tienen efectos interesantes... Mola!";
 
-		EXPANSION_THINGS_LABEL = "Cosas de expansión";
 		AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Esencias del Corazón de Azeroth";
 		AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "Activa esta opción para rastrear Esencias de azerita.\n\nRastreados por personaje por defecto.";
 		DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t Manuscrito de dracovigía";
@@ -301,32 +269,14 @@ end
 		ACCOUNT_WIDE_TITLES_TOOLTIP = "La mayoría de títulos son rastreados a nivel de toda la cuenta, pero algunos títulos prestigiosos en el WoW estan bloqueados al personaje que los ganó.\n\nActiva esto si no te importa eso y quieres ver esos títulos marcados como Completados en tus personajes secundarios.";
 
 		ITEM_EXPLAIN_LABEL = "|cffFFFFFFEste contenido se muestra siempre si estás en "..app.ccColors.Account.."Modo Cuenta|cffFFFFFF.|r";
-		CLASS_DEFAULTS_BUTTON = "Predeterminados de Clase";
-		CLASS_DEFAULTS_BUTTON_TOOLTIP = "Haz clic en este botón para restaurar todos los filtros a tus predeterminados de clase.\n\nNOTA: Sólo pueden activarse los filtros que son conseguibles por tu clase.";
-		ALL_BUTTON_TOOLTIP = "Haz clic en este botón para activar todas las opciones a la vez.";
-		UNCHECK_ALL_BUTTON_TOOLTIP = "Haz clic en este botón para desactivar todas las opciones a la vez.";
 
 
-		UNOBTAINABLES_PAGE = "No conseguibles";
-		UNOBTAINABLE_LABEL = "Contenido no conseguible";
-		CUSTOM_FILTERS_LABEL = "Contenido automatizado";
 		CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFEste contenido siempre está visible si está disponible para tu personaje actual o si estás en "..app.ccColors.Account.."Modo Cuenta|cffFFFFFF.|r";
-		CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Activa este ajuste para mostrar forzosamente %s contenido incluso si no está disponible para tu personaje actual.";
 
-		TOOLTIP_LABEL = "Descripciones emergentes";
-		TOOLTIP_HELP_CHECKBOX = "Muestra la ayuda de las descripciones emergentes";
-		TOOLTIP_HELP_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver la información de ayuda en las ventanas emergentes de la ventana de ATT que indica varias combinaciones de tecla/clics de funcionalidades de la ventana de ATT.\nSi ya conoces todas las combinaciones tecla/clics, puede interesarte ahorrar espacio en la ventana emergente y desactivar esta opción.";
 		ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "Integraciones con Descripciones emergentes";
 		ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver la información que da ATT en una ventana emergente externa. Esto incluye enlaces enviados por otros jugadores a objetos, en la Casa de Subastas, en el Diario de aventurero, en tus bolsas, en el mundo, en PNJs, etc.\n\nSi desactivas esto, estas reduciendo seriamente tu habilidad de determinar rápidamente si necesitas matar un monstruo o aprender una apariencia.\n\nRecomendamos mantener activado este ajuste.";
 		DISPLAY_IN_COMBAT_CHECKBOX = "En combate";
 		DISPLAY_IN_COMBAT_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver la información en la ventana emergente cuando estas en combate.\n\nSi estas en una banda con tu Hermandad de Mítico/Mítico+, deberías desactivar este ajuste para reducir al máximo el impacto en el rendimiento.\n\nPuede ser útil cuando estas en contenido antiguo sólo para saber rápidamente qué necesitas de un jefe.";
-		TOOLTIP_MOD_LABEL = "Modificador";
-		TOOLTIP_MOD_NONE = NONE_KEY;
-		TOOLTIP_MOD_SHIFT = SHIFT_KEY_TEXT;
-		TOOLTIP_MOD_CTRL = CTRL_KEY_TEXT;
-		TOOLTIP_MOD_ALT = ALT_KEY_TEXT;
-		TOOLTIP_MOD_CMD = CMD_KEY_TEXT;
-		TOOLTIP_SHOW_LABEL = "Información mostrada";
 		SHOW_COLLECTION_PROGRESS_CHECKBOX = "Progreso de colección";
 		SHOW_COLLECTION_PROGRESS_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver tu progreso para coleccionar una cosa o completar un grupo de cosas en la esquina superior derecha de la ventana emergente.\n\nRecomendamos que mantengas este ajuste activo.";
 		ICON_ONLY_CHECKBOX = "Sólo icono";
@@ -359,8 +309,6 @@ end
 		LOCATIONS_SLIDER_TOOLTIP = 'Usa esto para personalizar el numero de ubicaciones de origen a mostrar en la ventana emergente.\n\nNOTA: También mostrará "X" numero de otras opciones basándose en cuántas, si el total es equivalente al número total de elementos mostrados, sino simplemente mostrará la última fuente.\n\nPor defecto: 5';
 		COMPLETED_SOURCES_CHECKBOX = "Para completado";
 		COMPLETED_SOURCES_CHECKBOX_TOOLTIP = "Activa esta opción si quieres to see completed source locations in the tooltip.\n\nAs an example, if you complete the quest \"Bathran's Hair\" in Ashenvale, the tooltip for Evenar Stillwhisper will no longer show that quest when hovering over him.";
-		DROP_CHANCES_CHECKBOX = "Probabilidad de botón";
-		DROP_CHANCES_CHECKBOX_TOOLTIP = "Activa esta opción para calcular la información de probabilidades de botín en la ventana emergente de un objeto en la ventana de ATT.\nPuede ser útil para saber que especialización de botín debes usar cuando usas una Tirada de Bonificación en un objeto.";
 		FOR_CREATURES_CHECKBOX = "Para criaturas";
 		FOR_CREATURES_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver las ubicaciones de Criaturas.";
 		FOR_THINGS_CHECKBOX = "Para cosas";
@@ -370,10 +318,7 @@ end
 		WITH_WRAPPING_CHECKBOX = "Permitir ajuste de línea";
 		WITH_WRAPPING_CHECKBOX_TOOLTIP = "Activa esta opción para permitir que las líneas de fuentes se ajusten a la ventana emergente.\nEsto asegura que las ventanas emergentes no crecen más anchas de lo necesario, pero desafortunadamente hace que la información de las fuentes sea más difícil de leer en algunas situaciones.";
 
-		BEHAVIOR_LABEL = "Comportamiento de lista";
-		MAIN_LIST_SLIDER_LABEL = "Escala Lista Principal";
 		MAIN_LIST_SCALE_TOOLTIP = 'Usa esto para personalizar la escala de la Lista Principal.\n\nPor defecto: 1';
-		MINI_LIST_SLIDER_LABEL = "Escala Mini Listas";
 		MINI_LIST_SCALE_TOOLTIP = 'Usa esto para personalizar la escala de todas las Mini Listas.\n\nPor defecto: 1';
 		ADHOC_UPDATES_CHECKBOX = "Actualizaciones de ventanas Ad Hoc";
 		ADHOC_UPDATES_CHECKBOX_TOOLTIP = "Activa esta opción si quieres que sólo se actualizen las ventanas de ATT visibles.\n\nEsto puede reducir drásticamente los tiempos de carga y prevenir picos grandes de reducción de tasa de refresco en algunas situaciones.";
@@ -391,44 +336,20 @@ end
 		FILL_NPC_DATA_CHECKBOX_TOOLTIP = "Activa esta opción si quieres rellenar con toda la información relevante sobre un PNJ (Botín de jefe compartido, botín, etc) cuando se muestra en una Mini Lista. Esta opción puede causar un gran numero de duplicados, pero la idea es que el PNJ se mantenga visible en la Mini Lista si necesitas algo disponible de ese PNJ.\n\nNota: Gran cantidad del contenido de mundo de Dragonflight depende de que este ajuste esté activo para ser exacto porque muchos PNJ raros comparten botín.\n\nPor defecto: Desactivado";
 		NESTED_QUEST_CHAIN_CHECKBOX = "Muestra cadenas de misiones anidadas";
 		NESTED_QUEST_CHAIN_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver la ventana de Requerimientos de cadena de misiones (botón derecho en una misión) para ver las misiones requeridas como subgrupo de las misiones siguientes, p.e. deben completarse de dentro hacia fuera.\n\nEsto es útil para no perder ninguna mision secundaria y debe ser usado principalmente con el completado de misiones en mente.\n\nDe otra forma, los requerimientos de cadenas de misiones se mostrarán en una lista de arriba hacia abajo, con la siguiente misión disponible arriba del todo.";
-		SORT_BY_PROGRESS_CHECKBOX = "Ordenar por pogreso";
 		SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "Activa esta opción si quieres la operación de 'Ordenar' ("..SHIFT_KEY_TEXT.." + clic derecho) para ordenar sobre el total de progreso de cada grupo (en vez de por nombre)";
 		SHOW_REMAINING_CHECKBOX = "Muestra cosas pendientes";
 		SHOW_REMAINING_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver el numero de objetos pendientes en vez del progreso sobre el tota.";
 		PERCENTAGES_CHECKBOX = "Muestra el porcentaje de completado";
 		PERCENTAGES_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver el porcentaje de completado de cada línea.\n\nEl coloreado de grupos por completado no se ve afectado.";
-		PRECISION_SLIDER = "Nivel de precisión";
 		PRECISION_SLIDER_TOOLTIP = 'Usa esto para personalizar el nivel de precisión deseado en los cálculos de porcentajes.\n\nPor defecto: 2';
-		DYNAMIC_CATEGORY_LABEL = "Categorías dinámicas";
-		DYNAMIC_CATEGORY_SIMPLE = "Simple";
-		DYNAMIC_CATEGORY_SIMPLE_TOOLTIP = "Genera categorías dinámicas basándose sólo en la categoría más alta.";
-		DYNAMIC_CATEGORY_NESTED = "Anidado";
-		DYNAMIC_CATEGORY_NESTED_TOOLTIP = "Genera categorías dinámicas basándose en su fuente exacta. Esto conducirá a duplicados de cosas que se encuentran en múltiples sitios.";
-		DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000Aplicado cuando se genera|r";
-		MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "Largo máximo de línea superior";
 
-		ACCESSIBILITY_PAGE = ACCESSIBILITY_LABEL;
-		ACCESSIBILITY_EXPLAIN = COLORBLIND_MODE_SUBTEXT;
-		COLORS_ICONS = "Colores e Iconos";
-		LOCKED_QUESTS = "Misiones bloqueadas";
 		MORE_COLORS_CHECKBOX = "Muestra colores";
 		MORE_COLORS_CHECKBOX_TOOLTIP = "Activa esta opción si quieres ver mmás colores utilizados para ayudar a distinguir condiciones adicionales de cosas en las listas (i.e. colores de clase, colores de facción, etc.)";
-		WINDOW_COLORS = "Colores de ventana";
-		BACKGROUND = EMBLEM_BACKGROUND;
-		BACKGROUND_TOOLTIP = "Define el color de fondo de todas las ventanas de ATT.";
-		BORDER = EMBLEM_BORDER;
-		BORDER_TOOLTIP = "Define el color del borde de todas las ventanas de ATT.";
-		RESET_TOOLTIP = "Vuelve a los ajustes por defecto.";
-		CLASS_BORDER = "Usa el color de tu clase para los bordes";
-		CLASS_BORDER_TOOLTIP = "Usa el color de tu clase para los bordes. Se actualiza cuando entras al juego con otra clase.";
 
 
 
-		CELEBRATIONS_LABEL = "Celebraciones y Efectos de Sonido Sound Effects";
-		AUDIO_CHANNEL = "Canal de audio";
 		CELEBRATE_COLLECTED_CHECKBOX = "Coleccionar cosas dispara una Celebración";
 		CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP = "Activa esta opción si quieres oír un efecto de sonido de celebración 'trompetera' cuando obtienes algo nuevo.\n\nEsta funcionalidad puede ayudar mucho a mantenerte motivado.";
-		SOUNDPACK = "Paquete de sonidos";
 		PLAY_DEATH_SOUND_CHECKBOX = "Reproduce un efecto de sonido cuando mueres";
 		PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP = "Activa esta opción si quieres to oír un efecto de sonido cuando mueras.";
 		WARN_REMOVED_CHECKBOX = "Cosas eliminadas disparan un Aviso";
@@ -436,7 +357,6 @@ end
 		SCREENSHOT_COLLECTED_CHECKBOX = "Coleccionar cosas dispara una Captura de pantalla";
 		SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "Activa esta opción si quieres hacer una captura de pantalla cada vez que coleccionas alguna cosa.";
 
-		REPORTING_LABEL = "Notificaciones";
 		REPORT_COLLECTED_THINGS_CHECKBOX = "Notificar cosas coleccionadas";
 		REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "Activa esta opción si quieres to see a message in chat detailing which items you have collected or removed from your collection.\n\nNOTA: This is present because Blizzard silently adds appearances and other collectible items and neglects to notify you of the additional items available to you.\n\nWe recommend you keep this setting on. You will still hear the fanfare with it off assuming you have that option turned on.";
 		REPORT_COMPLETED_QUESTS_CHECKBOX = "Notificar misiones";
@@ -462,20 +382,9 @@ end
 		REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX = "Reproduce un efecto de sonido";
 		REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX_TOOLTIP = "Activa esta opción si quieres que ATT también reproduzca un efecto de sonido cuando se detecta contenido cercano.";
 
-		SYNC_PAGE = "Sincronización";
-		ACCOUNT_SYNCHRONIZATION = "Sincronización de cuenta";
-		AUTO_SYNC_ACC_DATA_CHECKBOX = "Sincroniza automáticamente los datos de cuenta";
-		AUTO_SYNC_ACC_DATA_TOOLTIP = "Activa esta opción si quieres que ATT intente actualizar los datos de cuenta entre cuentas cuando entras al juego o recargas la Interfaz.";
 
 
-		PROFILES_PAGE = "Perfiles";
-		PROFILE = "Perfil";
-		PROFILE_INITIALIZE = "Inicializar Perfiles";
 		PROFILE_INITIALIZE_TOOLTIP = "Esto permite que ATT admita y guarde la información del Perfil en las Saved Variables. Tus ajustes actuales y la información de la ventana van a ser copiadas en el perfil '"..DEFAULT.."', que no puede ser borrado, pero podría ser modificado y será usado como el Perfil inicial para todos los personajes.\n\nAsegúrate de informar de cualquier comportamiento inesperado o error con los Perfiles en el Discord de ATT!";
-		PROFILE_INITIALIZE_CONFIRM = "¿Estás seguro de que deseas habilitar la compatibilidad con perfiles?";
-		PROFILE_NEW_TOOLTIP = "Crea un perfil vacío para usarlo en el Personaje actual";
-		PROFILE_COPY_TOOLTIP = "Copia el Perfil seleccionado en el Perfil actual";
-		PROFILE_DELETE_TOOLTIP = "Elimina el Perfil seleccionado";
 		PROFILE_SWITCH_TOOLTIP = "Establece el Perfil seleccionado como el Perfil actual\n\nUn Perfil también puede ser clicado con "..SHIFT_KEY_TEXT.." para cambiar a él";
 		SHOW_PROFILE_LOADED = "Muestra qué perfil se carga durante el inicio de sesión o cuando se cambia entre perfiles";
 

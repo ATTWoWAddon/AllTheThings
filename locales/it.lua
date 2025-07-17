@@ -67,7 +67,6 @@ end
 		APPEARANCES_CHECKBOX = "Aspetto";
 		BATTLE_PETS_CHECKBOX = "Mascotte da combattimento";
 		RECIPES_CHECKBOX = "Ricette";
-		TITLES_CHECKBOX = "Titoli";
 
 		AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Essenze del Cuore di Azeroth";
 		DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t Manoscritto del Guardadraghi";

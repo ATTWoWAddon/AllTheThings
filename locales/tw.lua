@@ -155,40 +155,15 @@ if app.IsRetail then
 	do a[key] = value; end
 end
 
-		SKIP_AUTO_REFRESH = "不自動刷新！";
 		SKIP_AUTO_REFRESH_TOOLTIP = "預設情況下(未勾選)，任何可能影響可見資料的設定變化都會導致自動刷新。\n\n通過啟用該選項設定的變化將不會生效，直到玩家 "..SHIFT_KEY_TEXT.."點擊 ATT 視窗執行全部刷新。";
 
 		ABOUT_TOP = " |CFFFFFFFF是一個收藏追蹤插件，可以向您展示在遊戲中獲得所有內容的位置和方式！我們的 Discord 上有大量用戶社群（底部連結），您可以在其中提問、提交建議以及回報錯誤或丟失的物品。如果發現一些收藏品或未記錄的任務，可以在 Discord 上告訴我們，或者對於更精通技術的人，我們有一個您可以直接貢獻的 Git。\n\n雖然我們努力爭取完成，但每次更新都會加入很多東西，所以如果我們遺漏了什麼，請理解我們是一個小團隊，試圖跟上變化並自己收藏東西。:D\n\n在我直播時隨時問我問題，我會盡力回答，即使它與 ATT（一般魔獸插件程式也是如此）沒有直接關係。\n\n- |r|Cffff8000Crieve|r";
 		ABOUT_BOTTOM = "活躍貢獻者：|CFFFFFFFF（排名不分先後）\n%s！\n|r名人堂：|CFFFFFFFF（排名不分先後）\n%s\n\n特別鳴謝 AmiYuy（CanIMogIt）和 Caerdon（Caerdon Wardrobe）。絕對應該下載他們的插件，以獲得背包中物品的收藏圖標！ %s %s %s\n\n如需線上收藏比較，請拜訪 Shoogen 的 DataForAzeroth.com 和 Freddie 的 WoWthing.org！|r";	--TODO: now in alphabetical order
-		CLIPBOARDCOPYPASTE = "Ctrl+A, Ctrl+C 複製到剪貼簿。";
-		CURSEFORGE_BUTTON_TOOLTIP = "單擊按鈕複製 URL 到 Curse 的 ALL THE THINGS 插件頁面。\n\n您也可以將此連接發送給您的朋友，讓他們也毀掉自己的生活！他們最終會原諒你……也許吧。";
-		DISCORD_BUTTON_TOOLTIP = "點擊按鈕複製 URL 到All The Things Discord 伺服器。\n\n可以與其他收藏家分享進步/挫折！";
-		MERCH_BUTTON_LABEL = "商店";
-		MERCH_BUTTON_TOOLTIP = "點擊按鈕複製 URL 以進入 All The Things 商店。\n\n在這裡您可以在經濟上支援此插件並獲得一些很酷的商品作為回報！ ";
-		PATREON_BUTTON_TOOLTIP = "點擊按鈕複製 URL 以進入 All The Things Patreon 頁面。\n\n在這裡您可以看到如何在經濟上支援此插件！";
-		TWITCH_BUTTON_TOOLTIP = "點擊按鈕複製 URL 到我的 Twitch 頻道。\n\n可以在我直播的時候問問題，我會盡力回答！";
-		WAGO_BUTTON_TOOLTIP = "點擊按鈕複製 URL 到 Wago.io 的 ALL THE THINGS 插件頁面。\n\n您也可以將此連接發送給您的朋友，讓他們也毀掉自己的生活！他們最終會原諒你……也許吧。";
 
 		DEBUG_MODE = app.ccColors.Red.."偵錯模式|r（顯示所有）";
-		DEBUG_MODE_TOOLTIP = "就字面意思…遊戲中的所有事情。時間。點滴。是的，所有的一切。即使是不可收藏的事物，如袋子、消耗品、試劑等也會出現在列表中。（甚至你自己！不，是真的。看。）\n\n這僅用於偵錯目的。不用於完成追蹤。\n\n此模式將忽略所有篩選，包括無法獲得的。";
 		ACCOUNT_MODE = app.ccColors.Account.."帳號模式";
-		ACCOUNT_MODE_TOOLTIP = "如果要追蹤所有角色的所有內容，而不考慮職業和種族篩選，請啟用此設定。\n\n無法獲得篩選仍然適用。";
-		FACTION_MODE = "僅當前陣營";
-		FACTION_MODE_TOOLTIP = "如果你想只看到你當前陣營的種族和職業的戰隊模式資料，請開啟此設定。";
-		LOOT_MODE = "拾取模式";
-		LOOT_MODE_TOOLTIP = "啟用此選項可以顯示來自所有來源的戰利品。\n\n您可以依據“篩選器”標籤更改顯示的戰利品類型。";
 		MODE_EXPLAIN_LABEL = "|cffFFFFFF您收藏的內容總結在這裡。啟用所有 "..app.ccColors.Insane.."彩色選項|cffFFFFFF 解鎖 "..app.ccColors.Insane.."瘋狂模式|cffFFFFFF。";
-		COMPLETIONIST_MODE = "+來源";
-		COMPLETIONIST_MODE_TOOLTIP = "啟用該模式，只有當特定物品已被解鎖為給定外觀時才將物品視為已收藏。\n\n這意味著你需要收藏每一個共享外觀的物品。\n\n注意：預設情況下一旦你收藏了共享來源，遊戲就會停止告訴你未收藏的物品，這將確保未收藏的物品會被追蹤。";
-		MAIN_ONLY = "僅主要";
-		MAIN_ONLY_TOOLTIP = "如果你還想讓 ATT *假裝*你贏得了所有未被其他種族或職業鎖定的共享外觀，請啟用此設定。\n\n例如，如果你從冰冠城塞收藏了一個僅限獵人使用的物品，並且在沒有職業/種族限制的情況下，有一個來自副本的共享外觀，那麼 ATT 將*假裝*你也獲得了該外觀來源。\n\n注意：以這種方式解鎖時，切換到其他種族/職業將錯誤地回報你已經獲得了尚未為新角色收藏的外觀來源。";
-		ONLY_RWP = "僅‘隨更新移除’";
-		ONLY_RWP_TOOLTIP = "啟用此選項僅追蹤未來會從遊戲中刪除的幻化。只有標記為“隨更新移除”的資料的物品才會計入此資料。如果您發現未標記但應標記的物品，請告訴我！\n\n您可以依據“篩選器”選項卡更改顯示的戰利品類型。";
-		ONLY_NOT_TRASH = "排除垃圾物品";
-		ONLY_NOT_TRASH_TOOLTIP = "啟用此選項可忽略白色/灰色物品。暴雪尚未在經典懷舊服中提供 API。";
-		UNOFFICIAL_SUPPORT_TOOLTIP = "注意：目前，WoW 的 API 不提供官方支援，但 ATT 可以追蹤物品或任務完成情況，以使其在插件中發揮作用。";
 
-		GENERAL_CONTENT = "通用內容";
 		SHOW_INCOMPLETE_THINGS_CHECKBOX = "顯示所有可追蹤事物";
 		SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP = "如果想看到可以在遊戲中追蹤的物品、道具、NPC 等但不一定要被認為是'可收藏的'，請啟用此選項。\n\n如果你還沒有獲得博學者成就可以用這個來幫助你獲得它。\n\n注意：開啟此設定後，稀有刷新和事件也會出現在列表中。";
 		SHOW_COMPLETED_GROUPS_CHECKBOX = "顯示完成的群組";
@@ -213,8 +188,6 @@ end
 		ACC_WIDE_DEFAULT = "已追蹤 ".. app.ccColors.Account .. "帳號通用|R 預設。";
 		TRACK_ACC_WIDE = app.ccColors.Account .. "追蹤 帳號通用|R";
 		ACCOUNT_THINGS_LABEL = "帳號通用事物";
-		GENERAL_THINGS_LABEL = "通用事物";
-		STRANGER_THINGS_LABEL = "陌生事物";
 
 		ACHIEVEMENTS_CHECKBOX_TOOLTIP = "啟用此選項可追蹤成就。";
 		APPEARANCES_CHECKBOX = "外觀";
@@ -232,7 +205,6 @@ end
 		HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP = "啟用此選項可專門追蹤單個傳家寶升級的收藏情況。\n\n我們都知道暴雪就是喜歡消耗你的金幣和靈魂，所以用這個切換來追蹤你的金幣。";
 		ILLUSIONS_CHECKBOX = "附魔幻象";
 		ILLUSIONS_CHECKBOX_TOOLTIP = "啟用此選項以追蹤附魔幻象。\n\n這些看起來很酷的幻化效果，你可以套用到你的武器上！\n\n注意：你不是一個幻象，儘管所有的夜裔精靈都這麼認為。";
-		MOUNTS_CHECKBOX_TOOLTIP = "啟用此選項以追蹤坐騎。\n\n你可以騎著它們比跑步更快去別的地方。誰知道！";
 		QUESTS_CHECKBOX_TOOLTIP = "啟用此選項以追蹤任務。\n\n你可以點擊右鍵列表中的任何任務，彈出它們的完整任務鏈，以顯示你的進度和任何先決條件或後續任務。\n\n注意：每日、每周、每年和世界任務的追蹤不包含在此選項中，因為它們會在暴雪資料庫中定期重置。";
 		QUESTS_LOCKED_CHECKBOX = "+已鎖定";
 		QUESTS_LOCKED_CHECKBOX_TOOLTIP = "啟用此選項可專門包括追蹤鎖定任務的完成情況。\n\n鎖定任務是指玩家無法再通過正常遊戲完成的任務（依據已知的 ATT 資料）。\n\n獲得這些任務非常依賴於隊伍同步功能或使用帳號通用內的任務來整合其他角色的進度。";
@@ -240,11 +212,7 @@ end
 		RECIPES_CHECKBOX_TOOLTIP = "啟用此選項可追蹤你的專業技能圖紙。\n\n注意：你必須打開專業技能列表才能快取這些。";
 		REPUTATIONS_CHECKBOX = "聲望";
 		REPUTATIONS_CHECKBOX_TOOLTIP = "啟用此選項可追蹤聲望。\n\n一旦你達到了尊敬或最好的朋友，它將被標記為收藏。\n\n你可能需要手動刷新才能正確更新。";
-		TITLES_CHECKBOX = "頭銜";
-		TITLES_CHECKBOX_TOOLTIP = "啟用此選項可追蹤頭銜。\n\n這些可以讓你的角色脫穎而出，看起來你已經玩了一段時間。通常只有新玩家沒有頭銜。";
-		TOYS_CHECKBOX_TOOLTIP = "啟用此選項可追蹤玩具。\n\n這些玩具中的大多數玩具都有趣。其他的，如爐石玩具，可以用來代替你的初始爐石，並可以為你節省一個背包！他們也有有趣的效果…很好！";
 
-		EXPANSION_THINGS_LABEL = "資料片事物";
 		AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t 艾澤拉斯精華";
 		AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "啟用此選項以追蹤艾澤拉斯精華。\n\n預設情況下每個角色都會被追蹤。";
 		DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t 觀龍者手稿";
@@ -275,27 +243,14 @@ end
 		ACCOUNT_WIDE_TITLES_TOOLTIP = "大多數頭銜都是在帳號通用內進行追蹤，但是魔獸世界中一些著名的頭銜被鎖定在贏得他們的角色上。\n\n如果你不關心這個並希望看到那些標記為收藏的頭銜是你的小號，請切換此選項。";
 
 		ITEM_EXPLAIN_LABEL = "|cffFFFFFF始終顯示此內容如果位於 "..app.ccColors.Account.."帳號模式|cffFFFFFF。|r";
-		CLASS_DEFAULTS_BUTTON = "職業預設";
-		CLASS_DEFAULTS_BUTTON_TOOLTIP = "點擊此按鈕可將所有篩選重置為職業預設。\n\n注意：只能打開可為職業收藏的篩選。";
-		ALL_BUTTON_TOOLTIP = "點擊此按鈕一次啟用所有裝備篩選。";
-		UNCHECK_ALL_BUTTON_TOOLTIP = "點擊此按鈕一次停用所有裝備篩選。";
 
 
-		UNOBTAINABLES_PAGE = "無法獲得";
-		UNOBTAINABLE_LABEL = "無法獲得的內容";
-		CUSTOM_FILTERS_LABEL = "自動化內容";
 		CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFF如果當前角色可以使用此內容，或者位於 "..app.ccColors.Account.."帳號模式|cffFFFFFF。|r";
-		CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "啟用此設定可強行顯示%s內容，即使該內容對當前角色不可用。";
 
-		TOOLTIP_LABEL = "指標提示";
-		TOOLTIP_HELP_CHECKBOX = "顯示指標提示幫助";
-		TOOLTIP_HELP_CHECKBOX_TOOLTIP = "如果你想在 ATT 視窗指標提示中看到幫助資訊，即顯示 ATT 視窗功能的各種鍵/點擊組合，請啟用此選項。\n如果你已經知道所有的鍵/點擊組合，你可能希望節省工具提示空間並停用此選項。";
 		ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "啟用指標提示";
 		ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP = "如果希望在指標提示中查看 ATT 提供的資訊，請啟用此選項。這包括其他玩家發送的物品連接，在拍賣行、在地城助手、在你的背包裡、在世界、在 NPC 等等。\n\n如果你關閉了這個功能，就會嚴重降低你快速判斷是否需要擊殺首領或學習外觀的能力。\n\n我們建議你保持此設定。";
 		DISPLAY_IN_COMBAT_CHECKBOX = "在戰鬥中";
 		DISPLAY_IN_COMBAT_CHECKBOX_TOOLTIP = "如果要在戰鬥中呈現指標提示資訊，請啟用此選項。\n\n如果你正在同你的公會進行史詩/大秘境活動，你可能應該關閉這個設定以盡可能節省性能。\n\n當你在單刷時它可以很有用，可以立即知道你需要從首領那裡得到什麼。";
-		TOOLTIP_MOD_LABEL = "修飾鍵";
-		TOOLTIP_SHOW_LABEL = "顯示資訊";
 		SHOW_COLLECTION_PROGRESS_CHECKBOX = "收藏進度";
 		SHOW_COLLECTION_PROGRESS_CHECKBOX_TOOLTIP = "如果希望在指標提示的右上角看到收藏某個對象或完成某組對象的進度，請啟用此選項。\n\n我們建議你保持此設定處於打開狀態。";
 		ICON_ONLY_CHECKBOX = "僅圖標";
@@ -328,8 +283,6 @@ end
 		LOCATIONS_SLIDER_TOOLTIP = '使用該功能可以自訂指標提示中顯示的來源位置數量。\n\n注意：這也會依據其他來源的多少來顯示“X”個數量，如果這個總數等於顯示的元素總數，那麼就會簡單地顯示最後一個來源。\n\n預設：5';
 		COMPLETED_SOURCES_CHECKBOX = "對已完成";
 		COMPLETED_SOURCES_CHECKBOX_TOOLTIP = "如果你想在指標提示中看到已完成的來源位置，請啟用此選項。\n\n舉個例子，如果你在梣谷完成了任務“巴斯蘭的頭髮”，當你指標懸停在艾芙娜·寂語身上時，他的指標提示就不會再顯示這個任務了。";
-		DROP_CHANCES_CHECKBOX = "掉落率";
-		DROP_CHANCES_CHECKBOX_TOOLTIP = "啟用此選項可在 ATT 視窗的工具提示中計算物品的各種掉落機率資訊。\n這有助於了解在額外投骰物品時應使用哪種拾取專精。";
 		FOR_CREATURES_CHECKBOX = "對生物";
 		FOR_CREATURES_CHECKBOX_TOOLTIP = "如果你想查看生物的來源位置，請啟用此選項。";
 		FOR_THINGS_CHECKBOX = "對事物";
@@ -339,10 +292,7 @@ end
 		WITH_WRAPPING_CHECKBOX = "允許換行";
 		WITH_WRAPPING_CHECKBOX_TOOLTIP = "啟用此選項允許來源在指標提示中換行。\n這將確保指標提示不會超過必要的寬度，但不幸的是在許多情況下來源資訊會變得更加難以閱讀。";
 
-		BEHAVIOR_LABEL = "列表行為";
-		MAIN_LIST_SLIDER_LABEL = "主列表縮放";
 		MAIN_LIST_SCALE_TOOLTIP = '使用此功能可以自訂主列表的縮放。\n\n預設：1';
-		MINI_LIST_SLIDER_LABEL = "小列表縮放";
 		MINI_LIST_SCALE_TOOLTIP = '使用此功能可以自訂所有小和小列表的縮放。\n\n預設：1';
 		ADHOC_UPDATES_CHECKBOX = "使用臨時視窗更新";
 		ADHOC_UPDATES_CHECKBOX_TOOLTIP = "如果你想只更新可見的 ATT 視窗請啟用此選項。\n\n這可以大大減少載入時間並防止在某些情況下出現瘋狂掉幀。";
@@ -360,45 +310,23 @@ end
 		FILL_NPC_DATA_CHECKBOX_TOOLTIP = "如果希望在迷你列表中顯示時將所有相關資料嵌套到給定的 NPC（常見首領掉落、掉落等），請啟用此選項。此選項可能會導致大量重複，但其想法是該 NPC 將在迷你列表中保持可見，就好像需要特定於該 NPC 的內容一樣。\n\n預設：關閉";
 		NESTED_QUEST_CHAIN_CHECKBOX = "顯示嵌套任務鏈";
 		NESTED_QUEST_CHAIN_CHECKBOX_TOOLTIP = "如果你想讓任務鏈要求（點擊右鍵任務）視窗將所需任務顯示為其後續任務的子組，即它們必須從內到外完成，請啟用此選項。\n\n這一點很有用，不會錯過個別任務，應該主要用於完成任務的考慮。\n\n否則任務鏈要求將以自上而下的方式顯示，最早的任務在最上面。";
-		SORT_BY_PROGRESS_CHECKBOX = "按進度排序";
 		SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "如果你希望'排序'操作（"..SHIFT_KEY_TEXT.."右鍵）按每個組的總進度排序（而不是按名稱）請啟用此選項";
 		SHOW_REMAINING_CHECKBOX = "顯示剩餘事物";
 		SHOW_REMAINING_CHECKBOX_TOOLTIP = "如果你想查看剩餘事物數量而不是總進度，請啟用此選項。";
 		PERCENTAGES_CHECKBOX = "顯示完成百分比";
 		PERCENTAGES_CHECKBOX_TOOLTIP = "如果想查看每行的完成百分比請啟用此選項。\n\n按完成度對組進行著色不受影響。";
-		PRECISION_SLIDER = "百分比精確度";
 		PRECISION_SLIDER_TOOLTIP = '使用此選項可自訂百分比計算中所需的精度級別。\n\n預設：2';
-		DYNAMIC_CATEGORY_LABEL = "動態類別";
-		DYNAMIC_CATEGORY_SIMPLE = "簡單";
-		DYNAMIC_CATEGORY_SIMPLE_TOOLTIP = "僅依據最高的類別生成動態類別。 ";
-		DYNAMIC_CATEGORY_NESTED = "嵌套";
-		DYNAMIC_CATEGORY_NESTED_TOOLTIP = "依據它們的確切來源生成動態類別。這將導致在多個地方也有來源的事物重複。";
-		DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000生成時套用|r";
-		MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "最大頂線長度";
 
-		COLORS_ICONS = "顏色和圖標";
-		LOCKED_QUESTS = "鎖定任務";
 		MORE_COLORS_CHECKBOX = "顯示顏色";
 		MORE_COLORS_CHECKBOX_TOOLTIP = "如果你想看到使用更多的顏色來幫助區分列表中事物的附加條件，請啟用此選項（比如職業顏色，陣營顏色等。）";
-		WINDOW_COLORS = "視窗顏色";
-		BACKGROUND_TOOLTIP = "設定所有 ATT 視窗的背景顏色和透明度。";
-		BORDER_TOOLTIP = "設定所有 ATT 視窗的邊框顏色和透明度。";
-		RESET_TOOLTIP = "恢復預設設定。";
-		CLASS_BORDER = "邊框使用職業顏色";
-		CLASS_BORDER_TOOLTIP = "使用職業顏色作為邊框。當登錄到另一個職業時，此資訊會更新。";
 
 		ACHIEVEMENT_ID = "成就 ID";
 		ACHIEVEMENT_CATEGORY_ID = "成就類別 ID";
-		READDED_WITH_PATCH_CLASSIC_FORMAT = "該物品是隨更新 %s 重新加入的";
-		REMOVED_WITH_PATCH_CLASSIC_FORMAT = "該物品是隨更新 %s 移除的";
 
 
 
-		CELEBRATIONS_LABEL = "慶祝和音效";
-		AUDIO_CHANNEL = "聲音通道";
 		CELEBRATE_COLLECTED_CHECKBOX = "收藏事物觸發慶祝音效";
 		CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP = "如果你想在獲得新的事物時聽到慶祝'fanfare'效果請啟用這個選項。\n\n這個功能可以極大地幫助你保持動力。";
-		SOUNDPACK = "聲音包";
 		PLAY_DEATH_SOUND_CHECKBOX = "死亡時播放音效";
 		PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP = "如果你想在死亡時聽到音效，請啟用此選項。";
 		WARN_REMOVED_CHECKBOX = "移除事物觸發警告";
@@ -406,7 +334,6 @@ end
 		SCREENSHOT_COLLECTED_CHECKBOX = "收藏物品後觸發截圖";
 		SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "如果你想為你收藏的每件物品進行截圖請啟用此選項。";
 
-		REPORTING_LABEL = "回報";
 		REPORT_COLLECTED_THINGS_CHECKBOX = "回報已收藏事物";
 		REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "如果想在聊天中看到一條訊息，詳細說明收藏了哪些物品或從收藏中刪除了哪些物品，請啟用此選項。\n\n注意：這是因為暴雪默默的加入了外觀和其他收藏品並且忽略了通知你可用的其他物品。\n\n我們建議你保持此設定。如果你打開了這個選項，你會聽到警告聲。";
 		REPORT_COMPLETED_QUESTS_CHECKBOX = "回報任務";
@@ -432,20 +359,9 @@ end
 		REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX = "播放音效";
 		REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX_TOOLTIP = "如果你希望 ATT 在檢測到附近內容時也播放通知音效，請啟用此選項。";
 
-		SYNC_PAGE = "同步";
-		ACCOUNT_SYNCHRONIZATION = "帳號同步";
-		AUTO_SYNC_ACC_DATA_CHECKBOX = "自動同步帳號資料";
-		AUTO_SYNC_ACC_DATA_TOOLTIP = "如果您希望 ATT 在登錄或重新載入用戶介面時嘗試在帳號之間自動同步帳號資料，請啟用此選項。";
 
 
-		PROFILES_PAGE = "設定檔";
-		PROFILE = "設定檔";
-		PROFILE_INITIALIZE = "初始化設定檔";
 		PROFILE_INITIALIZE_TOOLTIP = "這將使您的 ATT 保存變數能夠支援和包含設定檔資料。您當前的設定和視窗資訊將被複製到 '"..DEFAULT.."' 設定檔中，該設定檔無法刪除，但可以修改並使用作為所有角色的初始設定檔。\n\n請務必必將設定檔的任何異常行為或錯誤回報給 ATT Discord！";
-		PROFILE_INITIALIZE_CONFIRM = "確定要打開設定檔支援？";
-		PROFILE_NEW_TOOLTIP = "為當前角色創建一個空白設定檔";
-		PROFILE_COPY_TOOLTIP = "複製已選設定檔到當前設定檔";
-		PROFILE_DELETE_TOOLTIP = "刪除已選設定檔";
 		PROFILE_SWITCH_TOOLTIP = "將選定的設定檔設定為當前設定檔\n\n一個設定檔也可以通過 "..SHIFT_KEY_TEXT.."點擊切換到它";
 		SHOW_PROFILE_LOADED = "顯示在登錄期間或在設定檔之間切換時載入的設定檔";
 

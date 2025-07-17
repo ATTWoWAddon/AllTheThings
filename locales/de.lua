@@ -134,23 +134,14 @@ do a[key] = value; end
 end
 
 
-		DISCORD_BUTTON_TOOLTIP = "Klicke auf diese Schaltfläche, um den Link für das ATT Discord zu kopieren.\n\nIhr könnt Eure Fortschritte/Frustrationen mit anderen Sammlern teilen!";
-		PATREON_BUTTON_TOOLTIP = "Klicke auf diese Schaltfläche, um den Link für das ATT Patreon zu kopieren.\n\nHier könnt Ihr sehen, wie Ihr das Addon Finanziell unterstützen könnt!";
-		TWITCH_BUTTON_TOOLTIP = "Klicke auf diese Schaltfläche, um den Link zu meinem Twitch Kanal zu kopieren.\n\nWährend ich Streame, könnt Ihr Fragen stellen. Ich werde mein bestes versuchen sie zu beantworten!";
 
 		DEBUG_MODE = app.ccColors.Red.."Debug Modus|r (Zeig alles)";
 		ACCOUNT_MODE = app.ccColors.Account.."Account Modus";
-		ACCOUNT_MODE_TOOLTIP = "Aktiviere diese Einstellung, um alle Dinge für alle Eure Charaktere, unabhängig von Klassen und Rassen, zu verfolgen.\n\nUnerreichbare Filter gelten weiterhin.";
-		FACTION_MODE = "Nur derzeitige Fraktion";
-		COMPLETIONIST_MODE = "+Quellen";
-		MAIN_ONLY = "Nur Hauptcharakter";
 
 		SHOW_INCOMPLETE_THINGS_CHECKBOX = "Zeig alle verfolgbaren Dinge";
 		SHOW_COLLECTED_THINGS_CHECKBOX = "Zeig gesammelte Dinge";
 
 		ACCOUNT_THINGS_LABEL = "Accountweite Dinge";
-		GENERAL_THINGS_LABEL = "Allgemeine Dinge";
-		STRANGER_THINGS_LABEL = "Fremde Dinge";
 
 		ACHIEVEMENTS_CHECKBOX_TOOLTIP = "Aktiviere diese Option, um Erfolge zu verfolgen.";
 		APPEARANCES_CHECKBOX = "Vorlagen";
@@ -159,9 +150,7 @@ end
 		HEIRLOOMS_UPGRADES_CHECKBOX = "+Aufwertungen";
 		RECIPES_CHECKBOX = "Rezepte";
 		REPUTATIONS_CHECKBOX = "Ruffraktionen";
-		TITLES_CHECKBOX = "Titel";
 
-		EXPANSION_THINGS_LABEL = "Erweiterungs Dinge";
 		AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Herzensessenzen";
 		DRAKEWATCHERMANUSCRIPTS_CHECKBOX = "|T"..app.asset("Expansion_DF")..":0|t Drachenwächtermanuskript";
 		FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t Anhänger & Gefährten";
@@ -172,7 +161,6 @@ end
 
 
 
-		UNOBTAINABLES_PAGE = "Unerreichbares";
 
 		DISPLAY_IN_COMBAT_CHECKBOX = "Im Kampf";
 		SPEC_CHECKBOX = "Spezialisierungen";
@@ -181,32 +169,18 @@ end
 		FOR_UNSORTED_CHECKBOX = "Für Unsortiert";
 
 		SHOW_MODELS_CHECKBOX = "Modell Vorschau";
-		SORT_BY_PROGRESS_CHECKBOX = "Nach Fortschritt sortieren";
-		DYNAMIC_CATEGORY_SIMPLE = "Simpel";
 
 
 
 
-		CELEBRATIONS_LABEL = "Feierlichkeiten & Sound Effekte";
 		CELEBRATE_COLLECTED_CHECKBOX = "Gesammelte Dinge lösen eine Feierlichkeit aus";
 		WARN_REMOVED_CHECKBOX = "Entfernte Dinge lösen eine Warnung aus";
 		SCREENSHOT_COLLECTED_CHECKBOX = "Gesammelte Dinge lösen einen Screenshot aus";
 		SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "Aktiviere diese Option, um bei gesammelten Dingen automatisch einen Screenshot zu erstellen.";
 
 
-		SYNC_PAGE = "Sync";
-		ACCOUNT_SYNCHRONIZATION = "Account Synchronisierung";
-		AUTO_SYNC_ACC_DATA_CHECKBOX = "Automatische Synchronisierung vom Account";
-		AUTO_SYNC_ACC_DATA_TOOLTIP = "Aktiviere diese Option, wenn ATT automatisch versuchen soll die Daten zwischen verknüpften Accounts zu synchronisieren, falls Ihr einloggt oder das Interface neu geladen wird.";
 
 
-		PROFILES_PAGE = "Profile";
-		PROFILE = "Profil";
-		PROFILE_INITIALIZE = "Initialisiere Profil";
-		PROFILE_INITIALIZE_CONFIRM = "Möchten Sie die Profilunterstützung wirklich aktivieren?";
-		PROFILE_NEW_TOOLTIP = "Erstelle ein leeres Profil, das vom aktuellen Charakter verwendet werden soll";
-		PROFILE_COPY_TOOLTIP = "Kopieren des ausgewählten Profils in das derzeitig aktive Profil";
-		PROFILE_DELETE_TOOLTIP = "Lösche das ausgewählte Profil";
 		PROFILE_SWITCH_TOOLTIP = "Setzt das ausgewählte Profil als das derzeitig aktive Profil\n\nEin Profil kann auch mit "..SHIFT_KEY_TEXT.."-geklickt werden, um dazu zu wechseln";
 
 if app.IsRetail then

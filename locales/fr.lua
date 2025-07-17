@@ -144,16 +144,12 @@ for key,value in pairs({
 do a[key] = value; end
 end
 
-		SKIP_AUTO_REFRESH = "Ne pas rafraîchir les données !";
 		SKIP_AUTO_REFRESH_TOOLTIP = "Par défaut (non coché), toute modification des paramètres susceptible d’affecter les données visibles entraînera un rafraîchissement automatique.\n\nEn activant cette option, les modifications des paramètres ne prendront effet dès que l’utilisateur effectuera un rafraîchissement complet en faisant "..SHIFT_KEY_TEXT.." + clic droit sur une fenêtre d’ATT.";
 
 		ABOUT_TOP = " |CFFFFFFFFest un addon de suivi de collection qui vous montre où et comment obtenir tout ce qui se trouve dans le jeu ! Nous avons une grande communtauté d’utilisateurs sur notre serveur Discord (le lien se trouve ci-dessous), vous pouvez venir nous poser des questions, soumettre des suggestions, signaler des bogues ou des éléments manquants. Si vous trouvez des objets à collectionner ou une quête qui n’est pas documentée, vous pouvez nous le faire savoir sur Discord. Pour ceux qui connaissent GitHub, nous avons un dépôt auquel vous pouvez contribuer directement.\n\nBien que nous nous efforcions d’être complets, il y a beaucoup de choses qui sont ajoutées au jeu à chaque patch, donc si nous manquons quelque chose, comprenez que nous sommes une petite équipe qui essaie de suivre les changements ainsi que de collecter des choses nous-mêmes. :D\n\nN’hésitez pas à me poser des questions lorsque je suis en session de diffusion et je ferai de mon mieux pour y répondre, même si ce n’est pas directement lié à ATT (également le développement des addons de WoW).\n\n- |r|Cffff8000Crieve|r";
 		ABOUT_BOTTOM = "Contributeurs actifs : |CFFFFFFFF(pas d’ordre particulier)\n%s\n|rPanthéon des membres : |CFFFFFFFF(pas d’ordre particulier)\n%s\n\nSpéciale dédicace à AmiYuy (CanIMogIt) et Caerdon (Caerdon Wardrobe). Vous devriez absolument télécharger leurs addons pour afficher des icônes sur les objets à collectionner dans vos sacs ! %s %s %s\n\nPour afficher vos collections en ligne, vous pouvez visiter DataForAzeroth.com, créé par Shoogen ou WoWthing.org créé par Freddie !|r";	--TODO: now in alphabetical order
 
 		ACCOUNT_MODE = app.ccColors.Account.."Mode Compte";
-		ACCOUNT_MODE_TOOLTIP = "Activez cette option si vous souhaitez suivre tous les objets de tous vos personnages, sans tenir compte des filtres de classe et de race. Les filtres d’inaccessibilité s’appliquent toujours.";
-		FACTION_MODE = "Faction uniquement";
-		FACTION_MODE_TOOLTIP = "Activez cette option si vous souhaitez afficher les données du mode Compte uniquement pour les races et les classes de votre faction actuelle.";
 
 		SHOW_COMPLETED_GROUPS_CHECKBOX = "Afficher les groupes complétés";
 		FILTER_THINGS_BY_LEVEL_CHECKBOX = "Aucune restriction de niveau";
@@ -182,7 +178,6 @@ end
 		QUESTS_LOCKED_CHECKBOX_TOOLTIP = "Activer cette option pour inclure spécifiquement le suivi de l’achèvement des quêtes verrouillées.\n\nLes quêtes verrouillées sont celles que le joueur n’est plus en mesure de terminer (selon les données connues d’ATT) en jouant normalement.\n\nL’obtention de ces quêtes dépend beaucoup de la fonction de synchronisation des groupes ou de l’utilisation de quêtes à l’échelle du compte pour intégrer la progression d’autres personnages.";
 		RECIPES_CHECKBOX = "Recettes";
 		REPUTATIONS_CHECKBOX = "Réputations";
-		TITLES_CHECKBOX = "Titres";
 
 		AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Essences du Cœur d’Azeroth";
 		AZERITE_ESSENCES_CHECKBOX_TOOLTIP = "Activer cette option pour suivre les essences d’Azérite.\n\nPar défaut, suivi actif sur le personnage.";
@@ -195,25 +190,12 @@ end
 
 
 		ITEM_EXPLAIN_LABEL = "|cffFFFFFFCe contenu est toujours affiché si vous êtes en "..app.ccColors.Account.."Mode Compte|cffFFFFFF.|r";
-		CLASS_DEFAULTS_BUTTON = "Votre classe";
-		CLASS_DEFAULTS_BUTTON_TOOLTIP = "Cliquez sur ce bouton pour reinitialiser tous les filtres en rapport avec votre classe acutelle.\n\nNOTE : Seuls les filtres qui sont utilisables pour votre classe peuvent être activés.";
-		ALL_BUTTON_TOOLTIP = "Cliquez sur ce bouton pour activer toutes les options en même temps.";
-		UNCHECK_ALL_BUTTON_TOOLTIP = "Cliquez sur ce bouton pour désactiver toutes les options en même temps.";
 
 
-		UNOBTAINABLES_PAGE = "Inaccessibles";
-		UNOBTAINABLE_LABEL = "Contenu inaccessible";
-		CUSTOM_FILTERS_LABEL = "Contenu automatique";
 		CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFCe contenu est toujours affiché s’il est disponible pour votre personnage actuel ou si vous vous trouvez dans la section "..app.ccColors.Account.."Mode Compte|cffFFFFFF.|r";
-		CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Activer ce paramètre pour afficher le contenu de %s même s’il n’est pas disponible pour le personnage actuel.";
 
-		TOOLTIP_LABEL = "Infobulles";
-		TOOLTIP_HELP_CHECKBOX = "Afficher l’infobulle d’aide";
-		TOOLTIP_HELP_CHECKBOX_TOOLTIP = "Activer cette option si vous souhaitez afficher les informations d’aide dans les infobulles des fenêtres d’ATT qui indiquent les différentes combinaisons de touches / clics pour les fonctionnalités des fenêtres d’ATT. Si vous connaissez déjà toutes les combinaisons de touches / clics, vous pouvez économiser de l’espace dans les infobulles et désactiver cette option.";
 		ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "Intégrations des infobulles";
 		DISPLAY_IN_COMBAT_CHECKBOX = "En combat";
-		TOOLTIP_MOD_LABEL = "Modifier";
-		TOOLTIP_SHOW_LABEL = "Afficher les informations";
 		SHOW_COLLECTION_PROGRESS_CHECKBOX = "Progression de la collecte";
 		ICON_ONLY_CHECKBOX = "Icône seulement";
 		ICON_ONLY_CHECKBOX_TOOLTIP = "Activez cette option si vous souhaitez afficher uniquement l’icône dans le coin supérieur droit au lieu de l’icône et du texte collecté / non collecté.\n\nCertaines personnes préfèrent des infobulles plus petites…";
@@ -221,51 +203,24 @@ end
 		KNOWN_BY_CHECKBOX_TOOLTIP = "Activez cette option si vous souhaitez afficher dans l’infobulle la liste complète des personnages de tous les serveurs qui connaissent la recette.";
 		COMPLETED_BY_CHECKBOX = "Complété par";
 		SPEC_CHECKBOX = "Spécialisations";
-		DROP_CHANCES_CHECKBOX = "Chances de tomber";
 
-		BEHAVIOR_LABEL = "Comportement de la liste";
-		MAIN_LIST_SLIDER_LABEL = "Échelle de la liste principale";
 		MAIN_LIST_SCALE_TOOLTIP = "Utilisez cette option pour personnaliser l’échelle de la liste principale.\n\nDéfaut : 1";
-		MINI_LIST_SLIDER_LABEL = "Échelle de la mini-liste";
 		MINI_LIST_SCALE_TOOLTIP = "Utilisez cette option pour personnaliser l’échelle des mini-listes.\n\nDéfaut : 1";
-		SORT_BY_PROGRESS_CHECKBOX = "Trier par progression";
 		SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "Activer cette option si vous souhaitez trier les groupes ("..SHIFT_KEY_TEXT.." + clic droit) par % de progression au lieu de les trier par leur nom.";
 		PERCENTAGES_CHECKBOX = "Afficher le pourcentage de réalisation";
-		PRECISION_SLIDER = "Niveau de précision";
 		PRECISION_SLIDER_TOOLTIP = "Utilisez cette option pour personnaliser le niveau de précision souhaité dans les calculs de pourcentage.\n\nDéfaut : 2";
-		DYNAMIC_CATEGORY_LABEL = "Catégories dynamiques";
-		DYNAMIC_CATEGORY_SIMPLE = "Simple";
-		DYNAMIC_CATEGORY_SIMPLE_TOOLTIP = "Générer des catégories dynamiques en se basant uniquement sur la catégorie la plus haute";
-		DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000Requiert un rechargement|r";
 
 		MORE_COLORS_CHECKBOX = "Afficher les couleurs";
-		WINDOW_COLORS = "Couleurs de la fenêtre";
-		BACKGROUND_TOOLTIP = "Définit la couleur d’arrière-plan de toutes les fenêtres d’ATT.";
-		BORDER_TOOLTIP = "Définit la couleur des bords de toutes les fenêtres d’ATT.";
-		CLASS_BORDER = "Utiliser la couleur de classe pour les bords";
-		CLASS_BORDER_TOOLTIP = "Utilise la couleur de votre classe pour les bords. Cette couleur est mise à jour lorsque vous vous connectez sur une autre classe.";
 
 
 
 
-		REPORTING_LABEL = "Signalement";
 		REPORT_COMPLETED_QUESTS_CHECKBOX = "Afficher l’ID de quête";
 		REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP = "Activer cette option si vous souhaitez afficher l’ID de quête pour toutes celles que vous acceptez ou terminez. (Sert à signaler des bogues, suivre des objectifs, etc.)";
 
-		SYNC_PAGE = "Sync";
-		ACCOUNT_SYNCHRONIZATION = "Synchronisation du compte";
-		AUTO_SYNC_ACC_DATA_CHECKBOX = "Synchronisation automatique des données du compte";
-		AUTO_SYNC_ACC_DATA_TOOLTIP = "Activer cette option si vous souhaitez qu’ATT tente de synchroniser automatiquement les données entre les comptes lors de la connexion ou du rechargement de l’interface utilisateur.";
 
 
-		PROFILES_PAGE = "Profils";
-		PROFILE = "Profil";
-		PROFILE_INITIALIZE = "Initialiser les profils";
 		PROFILE_INITIALIZE_TOOLTIP = "Cela permettra à vos variables sauvegardées pour ATT de supporter et de contenir des données de profil. Vos paramètres et informations de fenêtre actuels seront copiés dans le profil '"..DEFAULT.."'. Ce profil ne peut pas être supprimé, mais peut être modifié et sera utilisé comme profil initial pour tous les personnages. N’oubliez pas de signaler tout comportement inhabituel ou tout bogue lié aux profils sur le Discord d’ATT !";
-		PROFILE_INITIALIZE_CONFIRM = "Êtes-vous sûr de vouloir activer le support du profil ?";
-		PROFILE_NEW_TOOLTIP = "Créer un nouveau profil qui sera utilisé par le personnage actuel.";
-		PROFILE_COPY_TOOLTIP = "Copier le profil sélectionné dans le profil actuel";
-		PROFILE_DELETE_TOOLTIP = "Supprimer le profil sélectionné";
 		PROFILE_SWITCH_TOOLTIP = "Définir le profil sélectionné comme le profil actuel\n\n"..SHIFT_KEY_TEXT.." + clic pour accéder au profil sélectionné";
 		SHOW_PROFILE_LOADED = "Afficher le profil qui se charge lors de la connexion ou lors du passage d’un profil à l’autre";
 
