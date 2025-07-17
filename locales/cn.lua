@@ -32,25 +32,19 @@ L.REQUIRES_PETBATTLES = "|CFF00FFDE需要宠物对战|r";
 L.REQUIRES_SKYRIDING = "|CFF00FFDE"..(SPELL_FAILED_CUSTOM_ERROR_1029 or "需要驭空术").."|r";
 L.REPORT_TIP = "\n（"..CTRL_KEY_TEXT.."+C 将多行报告复制到剪贴板）";
 
-L.ICON_LEGEND_STATUS_TEXT = app.ccColors.White ..     "\n|T374225:0|t " .. "当前角色不可用" ..
-	"|T" .. app.asset("status-unobtainable") .. ":0|t " .. "不可获得" ..
-	"\n|T" .. app.asset("status-prerequisites") .. ":0|t " .. "仅在满足先决条件的情况下可获得" ..
-	"\n|T" .. app.asset("status-seasonal-available") .. ":0|t " .. "当前可用的季节性内容" ..
-	"\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t " .. "当前不可用的季节性内容" ..
-	"\n|T374225:0|t " .. "Unavailable on current character" ..
-	"\n|T" .. app.asset("status-unsorted") .. ":0|t " .. "Unsorted in ATT";
+L.ICON_LEGEND_STATUS_TEXT = app.ccColors.White ..     "\n|T374225:0|t " .. "当前角色不可用" .. "|T" .. app.asset("status-unobtainable") .. ":0|t " .. "不可获得" .. "\n|T" .. app.asset("status-prerequisites") .. ":0|t " .. "仅在满足先决条件的情况下可获得" .. "\n|T" .. app.asset("status-seasonal-available") .. ":0|t " .. "当前可用的季节性内容" .. "\n|T" .. app.asset("status-seasonal-unavailable") .. ":0|t " .. "当前不可用的季节性内容" .. "\n|T374225:0|t " .. "Unavailable on current character" .. "\n|T" .. app.asset("status-unsorted") .. ":0|t " .. "Unsorted in ATT";
 
-L.COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
-L.COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
-L.COMPLETE_ICON = "|T" .. app.asset("known_green") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
-L.NOT_COLLECTED_ICON = "|T" .. app.asset("unknown") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
-L.COLLECTED = "|T" .. app.asset("known") .. ":0|t |cff15abff已收藏|r";	-- Acquired the colors and icon from CanIMogIt.
-L.COLLECTED_APPEARANCE = "|T" .. app.asset("known_circle") .. ":0|t |cff15abff已收藏*|r";	-- Acquired the colors and icon from CanIMogIt.
-L.NOT_COLLECTED = "|T" .. app.asset("unknown") .. ":0|t |cffff9333未收藏|r";	-- Acquired the colors and icon from CanIMogIt.
-L.COMPLETE = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已完成|r";	-- Acquired the colors and icon from CanIMogIt.
-L.COMPLETE_OTHER = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已完成*|r";	-- Acquired the colors and icon from CanIMogIt.
-L.INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |cffff9333未完成|r";	-- Acquired the colors and icon from CanIMogIt.
-L.INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
+L.COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";
+L.COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";	
+L.COMPLETE_ICON = "|T" .. app.asset("known_green") .. ":0|t";	
+L.NOT_COLLECTED_ICON = "|T" .. app.asset("unknown") .. ":0|t";	
+L.COLLECTED = "|T" .. app.asset("known") .. ":0|t |cff15abff已收藏|r";
+L.COLLECTED_APPEARANCE = "|T" .. app.asset("known_circle") .. ":0|t |cff15abff已收藏*|r";
+L.NOT_COLLECTED = "|T" .. app.asset("unknown") .. ":0|t |cffff9333未收藏|r";
+L.COMPLETE = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已完成|r";
+L.COMPLETE_OTHER = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已完成*|r";
+L.INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |cffff9333未完成|r";
+L.INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";	
 
 L.MARKS_OF_HONOR_DESC = "荣耀印记必须在弹出窗口中查看才能看到所有正常的'包含'内容。\n(在聊天中输入'/att' 然后 "..SHIFT_KEY_TEXT.."点击链接的物品)\n\n|cFFfe040f之后购买和一起使用，重新登录和强制 ATT 刷新（按此顺序）\n可能需要正确注册所有物品。|r";
 L.MOP_REMIX_BRONZE_DESC = "青铜必须在弹出窗口中查看才能看到所有正常的'包含'内容。\n(在聊天中输入'/att' 然后 "..SHIFT_KEY_TEXT.."点击链接的物品)\n\n|cFFfe040f之后购买和一起使用，重新登录和强制 ATT 刷新（按此顺序）\n可能需要正确注册所有物品。|r";
@@ -88,7 +82,7 @@ L.PRESET_INSANE = app.ccColors.Insane .. "疯狂模式|R 启用所有 " .. app.c
 L.PRESET_ACCOUNT = app.ccColors.Account .. "账号模式|R 启用所有账号范围的追踪，并显示所有角色的进度。";
 
 
-L.SAVED = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已保存|r";	-- Acquired the colors and icon from CanIMogIt.
+L.SAVED = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已保存|r";
 L.COST_TEXT = "|T" .. app.asset("Currency") .. ":0|t |cff0891ff货币|r";
 
 local a = L.ABBREVIATIONS;
