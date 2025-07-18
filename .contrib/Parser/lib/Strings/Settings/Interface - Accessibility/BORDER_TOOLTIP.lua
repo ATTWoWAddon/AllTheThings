@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Set the border color of all ATT windows.",
 		-- TODO: de = "",
 		es = "Define el color del borde de todas las ventanas de ATT.",
-		-- TODO: mx = "",
+		mx = "Elige el color del borde de todas las ventanas de ATT.",
 		fr = "Définit la couleur des bords de toutes les fenêtres d’ATT.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

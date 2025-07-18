@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Colors and Icons",
 		-- TODO: de = "",
 		es = "Colores e Iconos",
-		-- TODO: mx = "",
+		mx = "Iconos y Colores",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

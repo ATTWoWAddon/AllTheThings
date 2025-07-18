@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option if you want to see more colors utilized to help distinguish additional conditions for Things in lists (i.e. class colors, faction colors, etc.)",
 		-- TODO: de = "",
-		es = "Activa esta opción si quieres ver mmás colores utilizados para ayudar a distinguir condiciones adicionales de cosas en las listas (i.e. colores de clase, colores de facción, etc.)",
-		-- TODO: mx = "",
+		es = "Activa esta opción si quieres ver más colores utilizados para ayudar a distinguir condiciones adicionales de cosas en las listas (i.e. colores de clase, colores de facción, etc.)",
+		mx = "Activa esta opción si quieres ver más colores utilizados para ayudar a distinguir condiciones adicionales de cosas en las listas (i.e. colores de clase, colores de facción, etc.)",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

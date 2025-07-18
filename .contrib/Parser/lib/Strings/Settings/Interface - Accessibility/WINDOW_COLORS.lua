@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Window Colors",
 		-- TODO: de = "",
 		es = "Colores de ventana",
-		-- TODO: mx = "",
+		mx = "Colores de ventana",
 		fr = "Couleurs de la fenêtre",
 		-- TODO: it = "",
 		-- TODO: pt = "",

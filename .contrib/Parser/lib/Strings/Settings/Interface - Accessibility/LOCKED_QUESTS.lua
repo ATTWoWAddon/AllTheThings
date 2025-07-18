@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Locked quests",
 		-- TODO: de = "",
 		es = "Misiones bloqueadas",
-		-- TODO: mx = "",
+		mx = "Misiones bloqueadas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Show Colors",
 		-- TODO: de = "",
 		es = "Muestra colores",
-		-- TODO: mx = "",
+		mx = "Muestra colores",
 		fr = "Afficher les couleurs",
 		-- TODO: it = "",
 		-- TODO: pt = "",

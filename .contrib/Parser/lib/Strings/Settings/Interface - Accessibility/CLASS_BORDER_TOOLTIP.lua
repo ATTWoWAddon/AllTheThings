@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Use your class color for the borders. This updates when you log onto another class.",
 		-- TODO: de = "",
 		es = "Usa el color de tu clase para los bordes. Se actualiza cuando entras al juego con otra clase.",
-		-- TODO: mx = "",
+		mx = "Usa el color de tu clase para los bordes. Se actualiza cuando entras al juego con otra clase.",
 		fr = "Utilise la couleur de votre classe pour les bords. Cette couleur est mise à jour lorsque vous vous connectez sur une autre classe.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

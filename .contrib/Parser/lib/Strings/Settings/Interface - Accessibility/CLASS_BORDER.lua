@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Use Class Color For Border",
 		-- TODO: de = "",
 		es = "Usa el color de tu clase para los bordes",
-		-- TODO: mx = "",
+		mx = "Usa el color de tu clase para los bordes",
 		fr = "Utiliser la couleur de classe pour les bords",
 		-- TODO: it = "",
 		-- TODO: pt = "",
