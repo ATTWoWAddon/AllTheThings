@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Celebrations & Sound Effects",
 		de = "Feierlichkeiten & Sound Effekte",
-		es = "Celebraciones y Efectos de Sonido Sound Effects",
-		-- TODO: mx = "",
+		es = "Celebraciones y Efectos de Sonido",
+		mx = "Celebraciones y Efectos de Sonido",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

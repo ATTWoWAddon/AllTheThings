@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want ATT to flash the taskbar when nearby content is detected.",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres que ATT ilumine la barra de tareas cuando se detecta contenido cercano.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres que ATT ilumine la barra de tareas cuando se detecta contenido cercano.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Audio Channel",
 		-- TODO: de = "",
 		es = "Canal de audio",
-		-- TODO: mx = "",
+		mx = "Canal de audio",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

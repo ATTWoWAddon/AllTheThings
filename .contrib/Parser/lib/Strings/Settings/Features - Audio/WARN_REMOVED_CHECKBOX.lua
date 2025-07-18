@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Removed Things Trigger a Warning",
 		de = "Entfernte Dinge lösen eine Warnung aus",
 		es = "Cosas eliminadas disparan un Aviso",
-		-- TODO: mx = "",
+		mx = "Cosas eliminadas activan un Aviso",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

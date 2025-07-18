@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want ATT to automatically clear the waypoint plotted by the nearby content feature when the content itself becomes unavailable or you go out of range.",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres que ATT limpie automáticamente los puntos de referencia puestos por la funcionalidad de contenido cercano cuando el contenido en sí desaparece o sales de rango.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres que ATT limpie automáticamente los puntos de referencia puestos por la funcionalidad de contenido cercano cuando el contenido en sí desaparece o sales de rango.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

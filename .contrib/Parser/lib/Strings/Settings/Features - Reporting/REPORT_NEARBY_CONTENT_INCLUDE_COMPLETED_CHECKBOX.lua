@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Include Completed",
 		-- TODO: de = "",
 		es = "Incluir Completados",
-		-- TODO: mx = "",
+		mx = "Incluir Completados",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

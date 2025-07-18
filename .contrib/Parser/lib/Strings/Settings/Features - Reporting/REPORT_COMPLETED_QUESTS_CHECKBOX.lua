@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Report Quests",
 		-- TODO: de = "",
 		es = "Notificar misiones",
-		-- TODO: mx = "",
+		mx = "Notificar misiones",
 		fr = "Afficher l’ID de quête",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want ATT to automatically plot waypoints for nearby content.",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres que ATT ponga automáticamente puntos de referencia para contenido cercano.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres que ATT ponga automáticamente puntos de referencia para contenido cercano.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

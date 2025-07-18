@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want to see nearby content such as vignettes to the chat. This feature provides popouts and waypoints when used.",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres ver contenido cercano como viñetas en el chat. Esta funcionalidad añade ventanas emergentes y puntos de referencia cuando se usa.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres ver contenido cercano como viñetas en el chat. Esta funcionalidad añade ventanas emergentes y puntos de referencia cuando se usa.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

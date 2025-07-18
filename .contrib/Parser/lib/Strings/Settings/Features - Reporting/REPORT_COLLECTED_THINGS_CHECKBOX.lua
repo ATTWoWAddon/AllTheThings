@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Report Collected Things",
 		-- TODO: de = "",
 		es = "Notificar cosas coleccionadas",
-		-- TODO: mx = "",
+		mx = "Notificar cosas coleccionadas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -5,7 +5,7 @@ createLocalizationString({
 	text = {
 		en = "Sync",
 		es = "Sincronización",
-		-- TODO: mx = "",
+		mx = "Sincronización",
 		-- TODO: it = "",
 		-- TODO: pt = "",
 		ru = "Синхронизация",

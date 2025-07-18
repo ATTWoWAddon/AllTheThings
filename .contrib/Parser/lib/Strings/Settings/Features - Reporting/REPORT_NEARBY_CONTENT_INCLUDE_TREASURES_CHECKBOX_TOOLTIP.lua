@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want to see nearby content notifications for things that are considered treasures. (Chests, Statues, Satchels in the world)",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres ver notificaciones de contenido cercano de cosas consideradas Tesoros. (Cofres, Estatuas, Bolsas en el mundo)",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres ver notificaciones de contenido cercano de cosas consideradas Tesoros. (Cofres, Estatuas, Bolsas en el mundo)",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

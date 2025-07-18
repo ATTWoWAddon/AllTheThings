@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Automatically Clear",
 		-- TODO: de = "",
 		es = "Limpiar automáticamente",
-		-- TODO: mx = "",
+		mx = "Limpiar automáticamente",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

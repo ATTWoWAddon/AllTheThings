@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option if you want to see the QuestID for any quest you Accept or Complete immediately after it happens. (For reporting bugs, trackings purposes, etc)",
 		-- TODO: de = "",
-		es = "Activa esta opción si quieres ver el QuestID para cualquier misión que aceptes o completes justo después de que pase. (Para notificar errores, propósitos de rastreo, etc)",
-		-- TODO: mx = "",
+		es = "Activa esta opción si quieres ver el misión ID para cualquier misión que aceptes o completes justo después de que pase. (Para notificar errores, propósitos de rastreo, etc)",
+		mx = "Activa esta opción si quieres ver el ID de misión para cualquier misión que aceptes o completes justo después de que pase. (Para notificar errores, propósitos de rastreo, etc)",
 		fr = "Activer cette option si vous souhaitez afficher l’ID de quête pour toutes celles que vous acceptez ou terminez. (Sert à signaler des bogues, suivre des objectifs, etc.)",
 		-- TODO: it = "",
 		-- TODO: pt = "",

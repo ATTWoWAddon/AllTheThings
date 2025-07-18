@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new Thing.\n\nThis feature can greatly help keep you motivated.",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres oír un efecto de sonido de celebración 'trompetera' cuando obtienes algo nuevo.\n\nEsta funcionalidad puede ayudar mucho a mantenerte motivado.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres oír un efecto de sonido de celebración 'trompetera' cuando obtienes algo nuevo.\n\nEsta funcionalidad puede ayudar mucho a mantenerte motivado.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

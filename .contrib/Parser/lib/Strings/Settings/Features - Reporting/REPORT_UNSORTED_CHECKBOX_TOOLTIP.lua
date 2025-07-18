@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option if you only want to see the QuestID if it isn't already Sourced.",
 		-- TODO: de = "",
-		es = "Activa esta opción si sólo quieres ver las QuestID si no se han configurado como fuente.",
-		-- TODO: mx = "",
+		es = "Activa esta opción si sólo quieres ver las misiones ID si no se les han configurado una fuente.",
+		mx = "Activa esta opción si sólo quieres ver los ID misiones si no se les han configurado una fuente.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

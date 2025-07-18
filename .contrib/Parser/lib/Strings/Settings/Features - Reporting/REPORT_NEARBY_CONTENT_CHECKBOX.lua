@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Report Nearby Content",
 		-- TODO: de = "",
 		es = "Notificar contenido cercano",
-		-- TODO: mx = "",
+		mx = "Notificar contenido cercano",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

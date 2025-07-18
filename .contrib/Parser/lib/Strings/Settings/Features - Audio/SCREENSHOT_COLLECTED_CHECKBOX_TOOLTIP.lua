@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want to take a screenshot for every Thing you collect.",
 		de = "Aktiviere diese Option, um bei gesammelten Dingen automatisch einen Screenshot zu erstellen.",
 		es = "Activa esta opción si quieres hacer una captura de pantalla cada vez que coleccionas alguna cosa.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres hacer una captura de pantalla cada vez que coleccionas alguna cosa.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

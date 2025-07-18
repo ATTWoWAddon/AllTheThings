@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.",
 		-- TODO: de = "",
-		es = "Activa esta opción si quieres oír un efecto de sonido de aviso cuando accidentamente vendas o comercies un objeto que te dió una apariencia y que cause que pierdas esa apariencia de tu colección.\n\nPuede ser extremadamente útil si vendes un objeto que tiene un temporizador de compra. El addon te va a decir que has cometido un error.",
-		-- TODO: mx = "",
+		es = "Activa esta opción si quieres oír un efecto de sonido de aviso cuando accidentalmente vendas o comercies un objeto que te dio una apariencia y que cause que pierdas esa apariencia de tu colección.\n\nPuede ser extremadamente útil si vendes un objeto que tiene un temporizador de compra. El addon te va a decir que has cometido un error.",
+		mx = "Activa esta opción si quieres oír un efecto de sonido de aviso cuando accidentalmente vendas o comercies un objeto que te dio una apariencia y que cause que pierdas esa apariencia de tu colección.\n\nPuede ser extremadamente útil si vendes un objeto que tiene un temporizador de compra. El addon te va a decir que has cometido un error.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

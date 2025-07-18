@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want ATT to also play a notification sound effect when nearby content is detected.",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres que ATT también reproduzca un efecto de sonido cuando se detecta contenido cercano.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres que ATT también reproduzca un efecto de sonido cuando se detecta contenido cercano.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

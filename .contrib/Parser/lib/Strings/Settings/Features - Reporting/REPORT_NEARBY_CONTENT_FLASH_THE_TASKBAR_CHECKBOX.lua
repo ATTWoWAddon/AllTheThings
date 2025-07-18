@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Flash the Taskbar",
 		-- TODO: de = "",
 		es = "Ilumina la barra de tareas",
-		-- TODO: mx = "",
+		mx = "Ilumina la barra de tareas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

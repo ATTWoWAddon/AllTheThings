@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Collected Things Trigger a Celebration",
 		de = "Gesammelte Dinge lösen eine Feierlichkeit aus",
 		es = "Coleccionar cosas dispara una Celebración",
-		-- TODO: mx = "",
+		mx = "Coleccionar cosas activa una Celebración",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

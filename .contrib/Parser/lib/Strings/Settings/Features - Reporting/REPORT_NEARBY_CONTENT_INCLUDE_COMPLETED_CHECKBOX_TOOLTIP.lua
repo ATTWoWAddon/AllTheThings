@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want to see nearby content notifications from things that are completed based on your filters in ATT.",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres ver notificaciones de contenido cercano de cosas que has completado basado en tus filtros en ATT.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres ver notificaciones de contenido cercano de cosas que has completado basado en tus filtros en ATT.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want to see nearby content notifications for things that are considered creatures. (Rares, World Bosses, NPCs)",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres ver notificaciones de contenido cercano de cosas consideradas Criaturas. (Raros, Jefes de mundo, PNJs)",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres ver notificaciones de contenido cercano de cosas consideradas Criaturas. (Raros, Jefes de mundo, PNJs)",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

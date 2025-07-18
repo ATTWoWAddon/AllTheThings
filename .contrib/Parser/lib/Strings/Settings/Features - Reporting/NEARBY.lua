@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Nearby:",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Cerca:",
+		mx = "Cerca:",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

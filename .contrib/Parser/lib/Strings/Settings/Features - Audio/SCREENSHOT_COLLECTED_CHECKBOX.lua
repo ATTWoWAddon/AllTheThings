@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Collected Things Trigger a Screenshot",
 		de = "Gesammelte Dinge lösen einen Screenshot aus",
 		es = "Coleccionar cosas dispara una Captura de pantalla",
-		-- TODO: mx = "",
+		mx = "Coleccionar cosas toma una Captura de pantalla",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

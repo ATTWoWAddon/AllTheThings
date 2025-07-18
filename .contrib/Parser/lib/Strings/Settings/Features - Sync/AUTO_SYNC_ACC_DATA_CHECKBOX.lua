@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Automatically Sync Account Data",
 		de = "Automatische Synchronisierung vom Account",
 		es = "Sincroniza automáticamente los datos de cuenta",
-		-- TODO: mx = "",
+		mx = "Sincroniza automáticamente los datos de cuenta",
 		fr = "Synchronisation automatique des données du compte",
 		-- TODO: it = "",
 		-- TODO: pt = "",

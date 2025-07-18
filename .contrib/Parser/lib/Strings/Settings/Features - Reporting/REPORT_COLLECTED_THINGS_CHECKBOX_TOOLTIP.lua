@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option if you want to see a message in chat detailing which items you have collected or removed from your collection.\n\nNOTE: This is present because Blizzard silently adds appearances and other collectible items and neglects to notify you of the additional items available to you.\n\nWe recommend you keep this setting on. You will still hear the fanfare with it off assuming you have that option turned on.",
 		-- TODO: de = "",
-		es = "Activa esta opción si quieres to see a message in chat detailing which items you have collected or removed from your collection.\n\nNOTA: This is present because Blizzard silently adds appearances and other collectible items and neglects to notify you of the additional items available to you.\n\nWe recommend you keep this setting on. You will still hear the fanfare with it off assuming you have that option turned on.",
-		-- TODO: mx = "",
+		es = "Activa esta opción si quieres ver un mensaje en el chat detallando qué objetos has recolectado o eliminado de tu colección.\n\nNOTA: Esto está presente porque Blizzard añade apariencias y otros objetos coleccionables de forma silenciosa y no te notifica sobre los objetos adicionales disponibles.\n\nTe recomendamos mantener esta opción activada. Seguirás escuchando la fanfarria con la opción desactivada, siempre que la tengas activada.",
+		mx = "Activa esta opción si quieres ver un mensaje en el chat detallando qué objetos has recolectado o eliminado de tu colección.\n\nNOTA: Esto está presente porque Blizzard añade apariencias y otros objetos coleccionables de forma silenciosa y no te notifica sobre los objetos adicionales disponibles.\n\nTe recomendamos mantener esta opción activada. Seguirás escuchando la fanfarria con la opción desactivada, siempre que la tengas activada.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

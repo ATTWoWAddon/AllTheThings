@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Play a Sound Effect",
 		-- TODO: de = "",
 		es = "Reproduce un efecto de sonido",
-		-- TODO: mx = "",
+		mx = "Reproduce un efecto de sonido",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

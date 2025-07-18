@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Include Creatures",
 		-- TODO: de = "",
 		es = "Incluir Criaturas",
-		-- TODO: mx = "",
+		mx = "Incluir Criaturas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

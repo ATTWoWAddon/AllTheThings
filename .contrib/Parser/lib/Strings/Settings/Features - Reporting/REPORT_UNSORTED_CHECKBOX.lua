@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Only 'Unsourced'",
 		-- TODO: de = "",
 		es = "Sólo 'Sin fuente'",
-		-- TODO: mx = "",
+		mx = "Sólo 'Sin fuente'",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Automatically Plot Waypoints",
 		-- TODO: de = "",
 		es = "Pon puntos de referencia automáticamente",
-		-- TODO: mx = "",
+		mx = "Pon puntos de referencia automáticamente",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

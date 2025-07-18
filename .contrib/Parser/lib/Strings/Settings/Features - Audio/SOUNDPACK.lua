@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Soundpack",
 		-- TODO: de = "",
 		es = "Paquete de sonidos",
-		-- TODO: mx = "",
+		mx = "Paquete de sonidos",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
