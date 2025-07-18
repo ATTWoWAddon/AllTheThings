@@ -5,16 +5,5 @@ createLocalizationString({
 	color = "ff6dce47",
 	export = true,
 	text = {
-		en = "Complete*",
-		de = "Vollständig*",
-		es = "Completado*",
-		mx = "Completado*",
-		fr = "Complet*",
-		-- TODO: it = "",
-		-- TODO: pt = "",
-		ru = "Выполнено*",
-		-- TODO: ko = "",
-		cn = "已完成*",
-		-- TODO: tw = "",
-	},
+		en = "",
 })
