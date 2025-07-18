@@ -2757,3 +2757,19 @@
 3034@@@Overlook Zo'shuul, K'aresh
 3035@@@Hosaas Rest, K'aresh
 3111@@@Quest Path 10562: 11.2 Raid - Manaforge - Zone - Traversal - Dimensius Forward Left (Quest/Event) - SRC
+11.2.0.61624
+3034@@@Overlook Zo'Shuul, K'aresh
+11.2.0.61787
+3145@@@Tazavesh, the Veiled Market
+3146@@@The Oasis
+3147@@@Shan'dorah
+3155@@@Shadow Point
+3156@@@Serrated Peaks
+3157@@@Overlook Zo'Shuul
+3158@@@Lunnall River
+3159@@@North Sufaad
+3160@@@Naakroa
+3161@@@Fracture of Laacuna
+3162@@@Untethered Space
+3163@@@Ruins of Yaathron
+3164@@@Hosaas' Rest

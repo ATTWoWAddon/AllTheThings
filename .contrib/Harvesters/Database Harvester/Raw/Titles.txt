@@ -845,3 +845,9 @@
 640@@@Star Savior %s
 641@@@%s Bronzebeard
 644@@@%s of the Twilight Star
+11.2.0.61624
+647@@@Ba'%s
+648@@@Zo'%s
+649@@@Om'%s
+11.2.0.62049
+650@@@Delver %s

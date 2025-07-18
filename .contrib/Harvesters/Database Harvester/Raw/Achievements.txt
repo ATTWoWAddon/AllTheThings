@@ -2828,6 +2828,8 @@
 40841@@@[DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden) (copy)
 3.4.4.59853
 42115@@@3.4.4 - CN LKC  - Warglaives of Azzinoth - Transmog
+3.4.5.62072
+61022@@@[DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden) (copy) (copy)
 4.0.1.12911
 736@@@Explore Mulgore NYI
 750@@@Explore Northern Barrens
@@ -16308,3 +16310,46 @@
 60930@@@<Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 14 [DNT]
 60931@@@<Hidden> 11.2 Raid Renown - Manaforge Vandals Rank 15 [DNT]
 60932@@@Voidrazor Sanctuary clears
+11.2.0.61624
+41048@@@Astral Weapons of Conquest
+60933@@@With Flying Colors
+60934@@@With Flying Colors
+60939@@@Bringing Down the House
+60940@@@Vandals! In! Space!
+60941@@@<Hidden> 11.2 Raid Renown - Activated All Dead Drops
+11.2.0.61787
+41618@@@King's Ransom
+60975@@@Weathered Ethereal Crests earned
+60976@@@Carved Ethereal Crests earned
+60977@@@Runed Ethereal Crests earned
+60978@@@Gilded Ethereal Crests earned
+60993@@@<DNT> Plexus Sentinel defeated on Heroic
+60994@@@<DNT> Loom'ithar defeated on Heroic
+60995@@@<DNT> Soulbinder Naazindhri defeated on Heroic
+60996@@@<DNT> Forgeweaver Araz defeated on Heroic
+60997@@@<DNT> The Soul Hunters defeated on Heroic
+60998@@@<DNT> Fractillus defeated on Heroic
+60999@@@<DNT> Nexus-King Salhadaar defeated on Heroic
+61000@@@<DNT> Dimensius, the All-Devouring defeated on Heroic
+61001@@@<DNT> Plexus Sentinel defeated on Normal
+61002@@@<DNT> Loom'ithar defeated on Normal
+61003@@@<DNT> Soulbinder Naazindhri defeated on Normal
+61004@@@<DNT> Forgeweaver Araz defeated on Normal
+61005@@@<DNT> The Soul Hunters defeated on Normal
+61006@@@<DNT> Fractillus defeated on Normal
+61007@@@<DNT> Nexus-King Salhadaar defeated on Normal
+61008@@@<DNT> Dimensius, the All-Devouring defeated on Normal
+61009@@@<DNT> Plexus Sentinel defeated on Raid Finder
+61010@@@<DNT> Loom'ithar defeated on Raid Finder
+61011@@@<DNT> Soulbinder Naazindhri defeated on Raid Finder
+61012@@@<DNT> Forgeweaver Araz defeated on Raid Finder
+61013@@@<DNT> The Soul Hunters defeated on Raid Finder
+61014@@@<DNT> Fractillus defeated on Raid Finder
+61015@@@<DNT> Nexus-King Salhadaar defeated on Raid Finder
+61016@@@<DNT> Dimensius, the All-Devouring defeated on Raid Finder
+11.2.0.61871
+42174@@@Unbound Hero: The War Within Season Three
+61017@@@Phase-Lost-and-Found
+11.2.0.62049
+61092@@@Hard Mode: Tazavesh, the Veiled Market
+61093@@@Flawless Transaction

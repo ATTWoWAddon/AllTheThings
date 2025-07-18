@@ -9141,8 +9141,9 @@
 5265@@@+$k1 Critical Strike
 5266@@@+$k1 Haste
 5267@@@+$k1 Haste
-5.5.0.61916
+5.5.0.61735
 8221@@@
+5.5.0.61916
 6.0.1.18179
 2523@@@+$k1 Ranged Critical Strike
 2586@@@+$k1 Ranged Attack Power/+$k2 Stamina/+$k3 Critical Strike
@@ -12669,6 +12670,8 @@
 7930@@@Greater Twisted Appendage
 7931@@@Lesser Void Ritual
 7933@@@Greater Void Ritual
+11.1.7.61965
+8246@@@Sha Corruption
 11.2.0.61476
 7641@@@Arcane
 7897@@@Energizing Fiber
@@ -12680,3 +12683,6 @@
 7903@@@Pure Dexterous Fiber
 7904@@@Dexterous Fiber
 8058@@@11.2 - FX - Arcane - Enchants
+11.2.0.61787
+7901@@@Chronomantic Fiber
+7902@@@Pure Chronomantic Fiber

@@ -16,6 +16,9 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 		appendAllGroups(ALL_BOSSES, v)
 	end
 	local function BossOnly(id, t)
+		if not t and type(id) ~= "number" then
+			print("ERROR: Missing id for BossOnly")
+		end
 		local encounter = e(id, t)
 		encounter.crs = crs[id]
 		return encounter
@@ -40,6 +43,9 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 	end
 	-- Represents a World Quest that requires defeating an Encounter
 	local function BossWorldQuest(id, questID, t)
+		if not t and (type(id) ~= "number" or type(questID) ~= "number") then
+			print("ERROR: Missing id/questID for BossWorldQuest",id,questID)
+		end
 		local quest = q(questID, t)
 		quest.crs = crs[id]
 		quest.isWorldQuest = true

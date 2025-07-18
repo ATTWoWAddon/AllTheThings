@@ -328,6 +328,29 @@
 3.4.4.61075
 459486@@@Golden Ashes of Al'ar
 459538@@@Harmonious Greetings Bear
+3.4.5.61815
+88718@@@Phosphorescent Stone Drake
+88742@@@Drake of the North Wind
+88744@@@Drake of the South Wind
+88746@@@Vitreous Stone Drake
+88990@@@Dark Phoenix
+96491@@@Armored Razzashi Raptor
+96499@@@Swift Zulian Panther
+97493@@@Pureblood Fire Hawk
+98204@@@Amani Battle Bear
+98718@@@Subdued Seahorse
+101542@@@Flametalon of Alysrazor
+102488@@@White Riding Camel
+102514@@@Corrupted Hippogryph
+107203@@@Tyrael's Charger
+107516@@@Spectral Gryphon
+107517@@@Spectral Wind Rider
+107842@@@Blazing Drake
+107845@@@Life-Binder's Handmaiden
+110039@@@Experiment 12-B
+121820@@@Obsidian Nightwing
+1249659@@@Moppy the Drake (FINAL NAME TBD)
+1250045@@@Obsidian Worldbreaker Utility (Final Name TBD)
 4.4.0.53627
 10790@@@Tiger
 13819@@@Summon Warhorse
@@ -342,15 +365,10 @@
 87091@@@Goblin Turbo-Trike
 88331@@@Volcanic Stone Drake
 88335@@@Drake of the East Wind
-88718@@@Phosphorescent Stone Drake
 88741@@@Drake of the West Wind
-88742@@@Drake of the North Wind
-88744@@@Drake of the South Wind
-88746@@@Vitreous Stone Drake
 88748@@@Brown Riding Camel
 88749@@@Tan Riding Camel
 88750@@@Grey Riding Camel
-88990@@@Dark Phoenix
 90621@@@Golden King
 92155@@@Ultramarine Qiraji Battle Tank
 92231@@@Spectral Steed
@@ -358,41 +376,26 @@
 93326@@@Sandstone Drake
 93623@@@Mottled Drake
 93644@@@Kor'kron Annihilator
-96491@@@Armored Razzashi Raptor
-96499@@@Swift Zulian Panther
 96503@@@Amani Dragonhawk
 97359@@@Flameward Hippogryph
-97493@@@Pureblood Fire Hawk
 97501@@@Green Fire Hawk
 97560@@@Corrupted Fire Hawk
 97581@@@Savage Raptor
-98204@@@Amani Battle Bear
-98718@@@Subdued Seahorse
 98727@@@Winged Guardian
 100332@@@Vicious War Steed
 100333@@@Vicious War Wolf
 101282@@@Vicious Gladiator's Twilight Drake
-101542@@@Flametalon of Alysrazor
 101573@@@Swift Shorestrider
 101821@@@Ruthless Gladiator's Twilight Drake
 102346@@@Swift Forest Strider
 102349@@@Swift Springstrider
 102350@@@Swift Lovebird
-102488@@@White Riding Camel
-102514@@@Corrupted Hippogryph
 103081@@@Darkmoon Dancing Bear
 103195@@@Mountain Horse
 103196@@@Swift Mountain Horse
-107203@@@Tyrael's Charger
-107516@@@Spectral Gryphon
-107517@@@Spectral Wind Rider
-107842@@@Blazing Drake
 107844@@@Twilight Harbinger
-107845@@@Life-Binder's Handmaiden
-110039@@@Experiment 12-B
 110051@@@Heart of the Aspects
 113120@@@Feldrake
-121820@@@Obsidian Nightwing
 5.5.0.60481
 113199@@@Jade Cloud Serpent
 118089@@@Azure Water Strider
@@ -516,6 +519,11 @@
 1247596@@@Celestial Riding Serpent
 1247597@@@Celestial Riding Ox
 1247598@@@Celestial Riding Tiger
+5.5.0.62044
+127272@@@Orange Water Strider
+127274@@@Jade Water Strider
+127278@@@Golden Water Strider
+1238816@@@Envoy of Sa'bak
 6.0.1.18179
 0@@@TEST - Traveler's Tundra Mammoth (Alliance)
 0@@@TEST - Running Wild
@@ -615,9 +623,6 @@
 121805@@@RAF Mount III
 123160@@@Crimson Riding Crane
 127180@@@Albino Riding Crane
-127272@@@Orange Water Strider
-127274@@@Jade Water Strider
-127278@@@Golden Water Strider
 128859@@@zzOldDepleted-Kyparium Rocket
 130678@@@Unruly Behemoth
 130730@@@Kafa-Crazed Goat
@@ -2212,3 +2217,15 @@
 1245517@@@Scarlet Void Flyer
 1246781@@@Azure Void Flyer
 1247662@@@Brewfest Barrel Bomber
+11.2.0.61624
+1245205@@@The Headless Horseman's Hallowed Charger
+1245357@@@Adorned Northeron Gryphon
+1245358@@@High Shaman's Aerie Gryphon
+1245359@@@Cinder-Plumed Highland Gryphon
+1245361@@@Emberwing Sky Guide
+11.2.0.61787
+1233542@@@The Bone Freezer
+11.2.0.61981
+1250578@@@Phase-Lost Slateback
+11.2.0.62049
+1227192@@@Herald of Sa'bak

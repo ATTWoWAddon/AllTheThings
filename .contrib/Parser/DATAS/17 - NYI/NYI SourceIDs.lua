@@ -3,6 +3,9 @@
 ---------------------------------------------------------------
 root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 	-- #if ANYCLASSIC
+	expansion(EXPANSION.WRATH, {
+		i(200235, {["sourceID"] = 182400 }),	-- Collective Cloak
+	}),
 	-- #if MOP
 	expansion(EXPANSION.MOP, {
 		-- 5.5.0

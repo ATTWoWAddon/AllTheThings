@@ -1039,62 +1039,6 @@ namespace ATT
                     // Export all Unsorted.
                     File.WriteAllText(Path.Combine(directory, "Unsorted.lua"), ATT.Export.ExportRawLua(unsorted).ToString(), Encoding.UTF8);
                 }
-
-                // Load in the Locale File and Warn about Unused Header IDs.
-                var content = File.ReadAllText("./../../locales/en.lua");
-                content = content.Substring(content.IndexOf("{", content.IndexOf("[\"HEADER_NAMES\"]")));
-                content = content.Substring(0, content.IndexOf('}'));
-
-                // Scan through for Header Localization. (we don't care about the actual name)
-                long npcID;
-                int index = 0;
-                var allLocalizedHeaders = new Dictionary<long, string>();
-                while ((index = content.IndexOf('[', index)) > -1)
-                {
-                    ++index;
-                    int endIndex = content.IndexOf(']', index);
-                    if (endIndex > -1 && long.TryParse(content.Substring(index, endIndex - index), out npcID))
-                    {
-                        int dataStartIndex = content.IndexOf('=', endIndex) + 1;
-                        int dataEndIndex = content.IndexOfAny(new char[] { '\r', '\n' }, dataStartIndex);
-                        allLocalizedHeaders[npcID] = content.Substring(dataStartIndex, dataEndIndex - dataStartIndex).Trim();
-                    }
-                }
-
-                // Determine if any of the localized Headers have no references.
-                if (allLocalizedHeaders.Any())
-                {
-                    var sortedHeaderIDs = allLocalizedHeaders.Keys.ToList();
-                    sortedHeaderIDs.Sort();
-                    sortedHeaderIDs.Reverse();
-                    foreach (int sortedHeaderID in sortedHeaderIDs)
-                    {
-                        if (NPCS_WITH_REFERENCES.ContainsKey(sortedHeaderID)) continue;
-                        Log($"Header [{sortedHeaderID}] has no reference and should be removed.");
-                    }
-
-                    var missingHeaderLocalization = new List<long>();
-                    foreach (var pair in NPCS_WITH_REFERENCES)
-                    {
-                        if (pair.Key < 1)
-                        {
-                            if (allLocalizedHeaders.ContainsKey(pair.Key)) continue;
-                            missingHeaderLocalization.Add(pair.Key);
-                        }
-                    }
-                    if (missingHeaderLocalization.Any())
-                    {
-                        Trace.WriteLine("Missing Localization for Headers:");
-                        missingHeaderLocalization.Sort();
-                        missingHeaderLocalization.Reverse();
-                        foreach (int id in missingHeaderLocalization)
-                        {
-                            Trace.Write(id);
-                            Trace.Write(',');
-                        }
-                        Trace.WriteLine("");
-                    }
-                }
             }
 
             /// <summary>

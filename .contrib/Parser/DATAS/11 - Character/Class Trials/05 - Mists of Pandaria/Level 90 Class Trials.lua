@@ -1,6 +1,8 @@
 -------------------------------------------
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
+
+-- #if NOT ANYCLASSIC
 root(ROOTS.Character, n(CLASS_TRIAL, {
 	expansion(EXPANSION.MOP, bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 		header(HEADERS.Achievement, 6193, {
@@ -411,3 +413,4 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 		}),
 	})),
 }));
+-- #endif

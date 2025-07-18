@@ -214,22 +214,20 @@ local PLAYER_TOOLTIPS = {
 };
 
 -- AUTHOR GUIDs
-local AUTHOR_TEXT = app.Modules.Color.Colorize(L.TOOLTIP_MODULE.RANKS.AUTHOR, app.Colors.White);
-local AUTHOR_TITLE = app.Modules.Color.Colorize(L.TOOLTIP_MODULE.TITLES.XX_THE_COMPLETIONIST, app.Colors.Raid);
 local tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
 	if leftSide then
-		leftSide:SetText(AUTHOR_TITLE:format(name));
+		leftSide:SetText(L.PLAYER_TITLE_THE_COMPLETIONIST:format(name));
 	end
 	local rightSide = _G[self:GetName() .. "TextRight2"];
 	leftSide = _G[self:GetName() .. "TextLeft2"];
 	if leftSide and rightSide and not ElvUI then
 		leftSide:SetText(L.TITLE);
 		leftSide:Show();
-		rightSide:SetText(AUTHOR_TEXT);
+		rightSide:SetText(L.PLAYER_RANK_AUTHOR);
 		rightSide:Show();
 	else
-		self:AddDoubleLine(L.TITLE, AUTHOR_TEXT);
+		self:AddDoubleLine(L.TITLE, L.PLAYER_RANK_AUTHOR);
 	end
 end
 for i,guid in ipairs({
@@ -241,24 +239,21 @@ for i,guid in ipairs({
 end
 
 -- CONTRIBUTOR GUIDS
-local CONTRIBUTOR_TEXT = app.Modules.Color.Colorize(L.TOOLTIP_MODULE.RANKS.CONTRIBUTOR, app.Colors.White);
-local CONTRIBUTOR_TITLE = L.TOOLTIP_MODULE.TITLES.XX_THE_CONTRIBUTOR;
-local ShouldKeepTitle = CONTRIBUTOR_TITLE == "%s";
-CONTRIBUTOR_TITLE = app.Modules.Color.Colorize(CONTRIBUTOR_TITLE, "ffa335ee");
+local ShouldContributorsKeepTitle = L.PLAYER_TITLE_THE_CONTRIBUTOR:find("%%s|r");
 tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
 	if leftSide then
-		leftSide:SetText(CONTRIBUTOR_TITLE:format(ShouldKeepTitle and leftSide:GetText() or name));
+		leftSide:SetText(L.PLAYER_TITLE_THE_CONTRIBUTOR:format(ShouldContributorsKeepTitle and leftSide:GetText() or name));
 	end
 	local rightSide = _G[self:GetName() .. "TextRight2"];
 	leftSide = _G[self:GetName() .. "TextLeft2"];
 	if leftSide and rightSide and not ElvUI then
 		leftSide:SetText(L.TITLE);
 		leftSide:Show();
-		rightSide:SetText(CONTRIBUTOR_TEXT);
+		rightSide:SetText(L.PLAYER_RANK_CONTRIBUTOR);
 		rightSide:Show();
 	else
-		self:AddDoubleLine(L.TITLE, CONTRIBUTOR_TEXT);
+		self:AddDoubleLine(L.TITLE, L.PLAYER_RANK_CONTRIBUTOR);
 	end
 end
 for i,guid in ipairs({
@@ -353,10 +348,9 @@ for i,guid in ipairs({
 end
 
 -- EXTERMINATOR GUIDs
-local EXTERMINATOR_TITLE = app.Modules.Color.Colorize(L.TOOLTIP_MODULE.TITLES.XX_THE_EXTERMINATOR, "ffa335ee");
 tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
-	if leftSide then leftSide:SetText(EXTERMINATOR_TITLE:format(name)); end
+	if leftSide then leftSide:SetText(L.PLAYER_TITLE_THE_EXTERMINATOR:format(name)); end
 end
 for i,guid in ipairs({
 	"Player-4372-00B131BB",	-- Aivet
@@ -420,10 +414,9 @@ for i,guid in ipairs({
 end
 
 -- GOLD_TYCOON GUIDs
-local GOLD_TYCOON_TITLE = app.Modules.Color.Colorize(L.TOOLTIP_MODULE.TITLES.XX_THE_GOLD_TYCOON, app.Colors.Raid);
 tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
-	if leftSide then leftSide:SetText(GOLD_TYCOON_TITLE:format(name)); end
+	if leftSide then leftSide:SetText(L.PLAYER_TITLE_GOLD_TYCOON:format(name)); end
 end
 for i,guid in ipairs({
 	"Player-4372-014E6539",	-- Complaindept-Atiesh
@@ -437,11 +430,9 @@ for i,guid in ipairs({
 end
 
 -- LORD_KING GUIDs
-local LORD_KING_TITLE = app.Modules.Color.Colorize(L.TOOLTIP_MODULE.TITLES.XX_THE_LORD_KING, "ffa335ee");
-local LORD_QUEEN_TITLE = app.Modules.Color.Colorize(L.TOOLTIP_MODULE.TITLES.XX_THE_LORD_QUEEN, "ffa335ee");
 tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
-	if leftSide then leftSide:SetText(LORD_KING_TITLE:format(name)); end
+	if leftSide then leftSide:SetText(L.PLAYER_TITLE_LORD_KING:format(name)); end
 end
 for i,guid in ipairs({
 	-- Boomps characters
@@ -468,7 +459,7 @@ end
 -- LORD_QUEEN GUIDs
 tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
-	if leftSide then leftSide:SetText(LORD_QUEEN_TITLE:format(name)); end
+	if leftSide then leftSide:SetText(L.PLAYER_TITLE_LORD_QUEEN:format(name)); end
 end
 for i,guid in ipairs({
 	-- Frax Characters
@@ -483,10 +474,9 @@ for i,guid in ipairs({
 end
 
 -- BRINGER_OF_FLAMES GUID
-local BRINGER_OF_FLAMES_TITLE = app.Modules.Color.Colorize(L.TOOLTIP_MODULE.TITLES.XX_BRINGER_OF_FLAMES, "ffa335ee");
 tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
-	if leftSide then leftSide:SetText(BRINGER_OF_FLAMES_TITLE:format(name)); end
+	if leftSide then leftSide:SetText(L.PLAYER_TITLE_BRINGER_OF_FLAMES:format(name)); end
 end
 for i,guid in ipairs({
 	"Player-4372-03E59723",	-- Sarkan-Atiesh
@@ -503,11 +493,10 @@ for i,guid in ipairs({
 	PLAYER_TOOLTIPS[guid] = tooltipFunction;
 end
 
--- OF_THE_ASYLUM GUIDs
-local OF_THE_ASYLUM_TITLE = app.Modules.Color.Colorize(L.TOOLTIP_MODULE.TITLES.XX_OF_THE_ASYLUM, "ffa335ee");
+-- KING_OF_THE_ASYLUM GUIDs
 tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
-	if leftSide then leftSide:SetText(OF_THE_ASYLUM_TITLE:format(name)); end
+	if leftSide then leftSide:SetText(L.PLAYER_TITLE_KING_OF_THE_ASYLUM:format(name)); end
 end
 for i,guid in ipairs({
 	"Player-4372-03E56CDC",	-- Slorche-Atiesh
@@ -523,7 +512,7 @@ end
 -- Pinkey GUID
 tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
-	if leftSide then leftSide:SetText(app.Modules.Color.Colorize(leftSide:GetText() or name, "ffF58CBA")); end
+	if leftSide then leftSide:SetText(L.PLAYER_TITLE_PINKEY:format(leftSide:GetText() or name)); end
 end
 for i,guid in ipairs({
 	"Player-4372-01D307D4",	-- Pinkey-Atiesh
@@ -533,10 +522,9 @@ for i,guid in ipairs({
 end
 
 -- SCARAB_LORD GUIDs
-local SCARAB_LORD_TITLE = app.Modules.Color.Colorize(L.TOOLTIP_MODULE.TITLES.XX_THE_SCARAB_LORD, app.Colors.Raid);
 tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
-	if leftSide then leftSide:SetText("|c" .. app.Colors.Raid .. "Scarab Lord " .. name .. "|r"); end
+	if leftSide then leftSide:SetText(L.PLAYER_TITLE_SCARAB_LORD:format(name)); end
 end
 for i,guid in ipairs({
 	"Player-4372-000B3C4D",	-- Congelatore
@@ -546,10 +534,9 @@ for i,guid in ipairs({
 end
 
 -- THE_HUGGLER GUIDs
-local THE_HUGGLER_TITLE = app.Modules.Color.Colorize(L.TOOLTIP_MODULE.TITLES.XX_THE_HUGGLER, "ffF58CBA");
 tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
-	if leftSide then leftSide:SetText(THE_HUGGLER_TITLE:format(name)); end
+	if leftSide then leftSide:SetText(L.PLAYER_TITLE_THE_HUGGLER:format(name)); end
 end
 for i,guid in ipairs({
 	"Player-4372-00006B41",	-- Tahiti-Atiesh

@@ -2525,49 +2525,53 @@ function app:GetDataCache()
 		return nil;
 	end
 
-	-- app.PrintDebug("Start loading data cache")
-	-- app.PrintMemoryUsage()
+	-- app.PrintMemoryUsage("app:GetDataCache init")
+
+	-- not really worth moving this into a Class since it's literally allowed to be used once
+	local DefaultRootKeys = {
+		__type = function(t) return "ROOT" end,
+		title = function(t)
+			return t.modeString .. DESCRIPTION_SEPARATOR .. t.untilNextPercentage
+		end,
+		progressText = function(t)
+			if not rawget(t,"TLUG") and app.CurrentCharacter then
+				local primeData = app.CurrentCharacter.PrimeData
+				if primeData then
+					return GetProgressColorText(primeData.progress, primeData.total)
+				end
+			end
+			return GetProgressColorText(t.progress, t.total)
+		end,
+		modeString = function(t)
+			return app.Settings:GetModeString()
+		end,
+		untilNextPercentage = function(t)
+			if not rawget(t,"TLUG") and app.CurrentCharacter then
+				local primeData = app.CurrentCharacter.PrimeData
+				if primeData then
+					return app.Modules.Color.GetProgressTextToNextPercent(primeData.progress, primeData.total)
+				end
+			end
+			return app.Modules.Color.GetProgressTextToNextPercent(t.progress, t.total)
+		end,
+		visible = app.ReturnTrue,
+	}
+	app.CloneDictionary(app.BaseClass.__class, DefaultRootKeys)
 
 	-- Update the Row Data by filtering raw data (this function only runs once)
 	local rootData = setmetatable({
+		key = "ROOT",
 		text = L.TITLE,
 		icon = app.asset("logo_32x32"),
 		preview = app.asset("Discord_2_128"),
 		description = L.DESCRIPTION,
 		font = "GameFontNormalLarge",
 		expanded = true,
-		visible = true,
-		progress = 0,
-		total = 0,
 		g = {},
 	}, {
-		-- TODO: yuck all of this... should assign the available functionality during startup events
-		-- and use proper methods
 		__index = function(t, key)
-			-- app.PrintDebug("Top-Root-Get",rawget(t,"TLUG"),key)
-			if key == "title" then
-				return t.modeString .. DESCRIPTION_SEPARATOR .. t.untilNextPercentage;
-			elseif key == "progressText" then
-				if not rawget(t,"TLUG") and app.CurrentCharacter then
-					local primeData = app.CurrentCharacter.PrimeData;
-					if primeData then
-						return GetProgressColorText(primeData.progress, primeData.total);
-					end
-				end
-				return GetProgressColorText(t.progress, t.total);
-			elseif key == "modeString" then
-				return app.Settings:GetModeString();
-			elseif key == "untilNextPercentage" then
-				if not rawget(t,"TLUG") and app.CurrentCharacter then
-					local primeData = app.CurrentCharacter.PrimeData;
-					if primeData then
-						return app.Modules.Color.GetProgressTextToNextPercent(primeData.progress, primeData.total);
-					end
-				end
-				return app.Modules.Color.GetProgressTextToNextPercent(t.progress, t.total);
-			elseif key == "visible" then
-				return true;
-			end
+			local defaultKeyFunc = DefaultRootKeys[key]
+			if defaultKeyFunc then return defaultKeyFunc(t) end
 		end,
 		__newindex = function(t, key, val)
 			-- app.PrintDebug("Top-Root-Set",rawget(t,"TLUG"),key,val)
@@ -2707,7 +2711,7 @@ function app:GetDataCache()
 		db = app.CreateNPC(app.HeaderConstants.SECRETS, app.Categories.Secrets);
 		tinsert(g, db);
 	end
-	
+
 	-----------------------------------------
 	-- L I M I T E D   C A T E G O R I E S --
 	-----------------------------------------
@@ -3025,7 +3029,6 @@ function app:GetDataCache()
 	end
 	return rootData;
 end
-app.AddEventHandler("OnLoad", app.GetDataCache)
 
 end	-- Dynamic/Main Data
 
@@ -3073,7 +3076,6 @@ customWindowUpdates.AchievementHarvester = function(self, ...)
 			self.initialized = true;
 			self.Limit = 45000;	-- MissingAchievements:11.0.0.54774 (maximum achievementID)
 			self.PartitionSize = 5000;
-			local db = {};
 			local CleanUpHarvests = function()
 				local g, partition, pg, pgcount, refresh = self.data.g, nil, nil, nil, nil;
 				local count = g and #g or 0;
@@ -3133,12 +3135,14 @@ customWindowUpdates.AchievementHarvester = function(self, ...)
 				end
 				tinsert(g, partition);
 			end
-			db.g = g;
-			db.text = "Achievement Harvester";
-			db.icon = app.asset("WindowIcon_RaidAssistant");
-			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nExpand a group to harvest the 1,000 Achievements within that range.";
-			db.visible = true;
-			db.back = 1;
+			local db = app.CreateRawText("Achievement Harvester", {
+				g = g,
+				text = "Achievement Harvester",
+				icon = app.asset("WindowIcon_RaidAssistant"),
+				description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nExpand a group to harvest the 1,000 Achievements within that range.",
+				visible = true,
+				back = 1,
+			})
 			self:SetData(db);
 		end
 		self:BaseUpdate(true);
@@ -3157,15 +3161,13 @@ customWindowUpdates.AuctionData = function(self)
 	if not self.initialized then
 		local C_AuctionHouse_ReplicateItems = C_AuctionHouse.ReplicateItems;
 		self.initialized = true;
-		self:SetData({
-			["text"] = "Auction Module",
-			["visible"] = true,
-			["back"] = 1,
-			["icon"] = 133784,
-			["description"] = "This is a debug window for all of the auction data that was returned. Turn on 'Account Mode' to show items usable on any character on your account!",
-			["options"] = {
-				{
-					["text"] = "Wipe Scan Data",
+		self:SetData(app.CreateRawText("Auction Module", {
+			visible = true,
+			back = 1,
+			icon = 133784,
+			description = "This is a debug window for all of the auction data that was returned. Turn on 'Account Mode' to show items usable on any character on your account!",
+			options = {
+				app.CreateRawText("Wipe Scan Data", {
 					["icon"] = 2065582,
 					["description"] = "Click this button to wipe out all of the previous scan data.",
 					["visible"] = true,
@@ -3186,9 +3188,8 @@ customWindowUpdates.AuctionData = function(self)
 						data.visible = #window.data.g > #window.data.options;
 						return true;
 					end,
-				},
-				{
-					["text"] = "Scan or Load Last Save",
+				}),
+				app.CreateRawText("Scan or Load Last Save", {
 					["icon"] = 1100023,
 					["description"] = "Click this button to perform a full scan of the auction house or load the last scan conducted within 15 minutes. The game may or may not freeze depending on the size of your auction house.\n\nData should populate automatically.",
 					["visible"] = true,
@@ -3209,9 +3210,8 @@ customWindowUpdates.AuctionData = function(self)
 						end
 					end,
 					['OnUpdate'] = app.AlwaysShowUpdate,
-				},
-				{
-					["text"] = "Toggle Debug Mode",
+				}),
+				app.CreateRawText("Toggle Debug Mode", {
 					["icon"] = 134521,
 					["description"] = "Click this button to toggle debug mode to show everything regardless of filters!",
 					["visible"] = true,
@@ -3231,9 +3231,8 @@ customWindowUpdates.AuctionData = function(self)
 						end
 						return true;
 					end,
-				},
-				{
-					["text"] = "Toggle Account Mode",
+				}),
+				app.CreateRawText("Toggle Account Mode", {
 					["icon"] = 413583,
 					["description"] = "Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.",
 					["visible"] = true,
@@ -3252,9 +3251,8 @@ customWindowUpdates.AuctionData = function(self)
 						end
 						return true;
 					end,
-				},
-				{
-					["text"] = "Toggle Faction Mode",
+				}),
+				app.CreateRawText("Toggle Faction Mode", {
 					["icon"] = 134932,
 					["description"] = "Click this button to toggle faction mode to show everything for your faction!",
 					["visible"] = true,
@@ -3276,9 +3274,8 @@ customWindowUpdates.AuctionData = function(self)
 						end
 						return true;
 					end,
-				},
-				{
-					["text"] = "Toggle Unobtainable Items",
+				}),
+				app.CreateRawText("Toggle Unobtainable Items", {
 					["icon"] = 135767,
 					["description"] = "Click this button to see currently unobtainable items in the auction data.",
 					["visible"] = true,
@@ -3308,10 +3305,10 @@ customWindowUpdates.AuctionData = function(self)
 						end
 						return true;
 					end,
-				},
+				}),
 			},
 			["g"] = {}
-		});
+		}))
 		for i,option in ipairs(self.data.options) do
 			tinsert(self.data.g, option);
 		end
@@ -4407,15 +4404,13 @@ customWindowUpdates.RaidAssistant = function(self)
 			local function AttemptResetInstances()
 				ResetInstances();
 			end
-			raidassistant = {
-				['text'] = L.RAID_ASSISTANT,
-				['icon'] = app.asset("WindowIcon_RaidAssistant"),
-				["description"] = L.RAID_ASSISTANT_DESC,
-				['visible'] = true,
-				['back'] = 1,
-				['g'] = {
-					{
-						['text'] = L.LOOT_SPEC_UNKNOWN,
+			raidassistant = app.CreateRawText(L.RAID_ASSISTANT, {
+				icon = app.asset("WindowIcon_RaidAssistant"),
+				description = L.RAID_ASSISTANT_DESC,
+				visible = true,
+				back = 1,
+				g = {
+					app.CreateRawText(L.LOOT_SPEC_UNKNOWN, {
 						['title'] = L.LOOT_SPEC,
 						["description"] = L.LOOT_SPEC_DESC,
 						['visible'] = true,
@@ -4434,7 +4429,7 @@ customWindowUpdates.RaidAssistant = function(self)
 								end
 							end
 						end,
-					},
+					}),
 					app.CreateDifficulty(1, {
 						['title'] = L.DUNGEON_DIFF,
 						["description"] = L.DUNGEON_DIFF_DESC,
@@ -4498,8 +4493,7 @@ customWindowUpdates.RaidAssistant = function(self)
 							end
 						end,
 					}),
-					{
-						['text'] = L.RESET_INSTANCES,
+					app.CreateRawText(L.RESET_INSTANCES, {
 						['icon'] = app.asset("Button_Reset"),
 						['description'] = L.RESET_INSTANCES_DESC,
 						['visible'] = true,
@@ -4525,9 +4519,8 @@ customWindowUpdates.RaidAssistant = function(self)
 								end
 							end
 						end,
-					},
-					{
-						['text'] = L.TELEPORT_TO_FROM_DUNGEON,
+					}),
+					app.CreateRawText(L.TELEPORT_TO_FROM_DUNGEON, {
 						['icon'] = 136222,
 						['description'] = L.TELEPORT_TO_FROM_DUNGEON_DESC,
 						['visible'] = true,
@@ -4538,9 +4531,8 @@ customWindowUpdates.RaidAssistant = function(self)
 						['OnUpdate'] = function(data)
 							data.visible = IsAllowedToUserTeleport();
 						end,
-					},
-					{
-						['text'] = L.DELIST_GROUP,
+					}),
+					app.CreateRawText(L.DELIST_GROUP, {
 						['icon'] = 252175,
 						['description'] = L.DELIST_GROUP_DESC,
 						['visible'] = true,
@@ -4556,9 +4548,8 @@ customWindowUpdates.RaidAssistant = function(self)
 						['OnUpdate'] = function(data)
 							data.visible = C_LFGList.GetActiveEntryInfo();
 						end,
-					},
-					{
-						['text'] = L.LEAVE_GROUP,
+					}),
+					app.CreateRawText(L.LEAVE_GROUP, {
 						['icon'] = 132331,
 						['description'] = L.LEAVE_GROUP_DESC,
 						['visible'] = true,
@@ -4574,11 +4565,10 @@ customWindowUpdates.RaidAssistant = function(self)
 						['OnUpdate'] = function(data)
 							data.visible = IsInGroup();
 						end,
-					},
+					}),
 				}
-			};
-			lootspecialization = {
-				['text'] = L.LOOT_SPEC,
+			})
+			lootspecialization = app.CreateRawText(L.LOOT_SPEC, {
 				['icon'] = 1499566,
 				["description"] = L.LOOT_SPEC_DESC_2,
 				['OnClick'] = function(row, button)
@@ -4590,8 +4580,7 @@ customWindowUpdates.RaidAssistant = function(self)
 					data.g = {};
 					local numSpecializations = GetNumSpecializations();
 					if numSpecializations and numSpecializations > 0 then
-						tinsert(data.g, {
-							['text'] = L.CURRENT_SPEC,
+						tinsert(data.g, app.CreateRawText(L.CURRENT_SPEC, {
 							['title'] = select(2, GetSpecializationInfo(GetSpecialization())),
 							['icon'] = 1495827,
 							['id'] = 0,
@@ -4603,11 +4592,10 @@ customWindowUpdates.RaidAssistant = function(self)
 								Callback(self.Update, self);
 								return true;
 							end,
-						});
+						}))
 						for i=1,numSpecializations,1 do
 							local id, name, description, icon, background, role, primaryStat = GetSpecializationInfo(i);
-							tinsert(data.g, {
-								['text'] = name,
+							tinsert(data.g, app.CreateRawText(name, {
 								['icon'] = icon,
 								['id'] = id,
 								["description"] = description,
@@ -4618,16 +4606,15 @@ customWindowUpdates.RaidAssistant = function(self)
 									Callback(self.Update, self);
 									return true;
 								end,
-							});
+							}))
 						end
 					end
 				end,
 				['visible'] = true,
 				['back'] = 1,
 				['g'] = {},
-			};
-			dungeondifficulty = {
-				['text'] = L.DUNGEON_DIFF,
+			})
+			dungeondifficulty = app.CreateRawText(L.DUNGEON_DIFF, {
 				['icon'] = 236530,
 				["description"] = L.DUNGEON_DIFF_DESC_2,
 				['OnClick'] = function(row, button)
@@ -4658,9 +4645,8 @@ customWindowUpdates.RaidAssistant = function(self)
 						["trackable"] = false,
 					})
 				},
-			};
-			raiddifficulty = {
-				['text'] = L.RAID_DIFF,
+			})
+			raiddifficulty = app.CreateRawText(L.RAID_DIFF, {
 				['icon'] = 236530,
 				["description"] = L.RAID_DIFF_DESC_2,
 				['OnClick'] = function(row, button)
@@ -4691,9 +4677,8 @@ customWindowUpdates.RaidAssistant = function(self)
 						["trackable"] = false,
 					})
 				},
-			};
-			legacyraiddifficulty = {
-				['text'] = L.LEGACY_RAID_DIFF,
+			})
+			legacyraiddifficulty = app.CreateRawText(L.LEGACY_RAID_DIFF, {
 				['icon'] = 236530,
 				["description"] = L.LEGACY_RAID_DIFF_DESC_2,
 				['OnClick'] = function(row, button)
@@ -4730,7 +4715,7 @@ customWindowUpdates.RaidAssistant = function(self)
 						["trackable"] = false,
 					}),
 				},
-			};
+			})
 			self:SetData(raidassistant);
 
 			-- Setup Event Handlers and register for events
@@ -4899,24 +4884,21 @@ customWindowUpdates.Random = function(self)
 
 			local mainHeader
 			local function AddRandomCategoryButton(text, icon, desc, name)
-				return
-				{
-					["text"] = text,
-					["icon"] = icon,
-					["description"] = desc,
-					["visible"] = true,
-					["OnUpdate"] = app.AlwaysShowUpdate,
-					["OnClick"] = function(row, button)
+				return app.CreateRawText(text, {
+					icon = icon,
+					description = desc,
+					visible = true,
+					OnUpdate = app.AlwaysShowUpdate,
+					OnClick = function(row, button)
 						self.RandomSearchFilter = name
 						self:SetData(mainHeader)
 						self:Reroll()
 						return true
 					end,
-				}
+				})
 			end
 
-			local rerollOption = {
-				['text'] = L.REROLL,
+			local rerollOption = app.CreateRawText(L.REROLL, {
 				['icon'] = app.asset("Button_Reroll"),
 				['description'] = L.REROLL_DESC,
 				['visible'] = true,
@@ -4925,9 +4907,8 @@ customWindowUpdates.Random = function(self)
 					return true;
 				end,
 				['OnUpdate'] = app.AlwaysShowUpdate,
-			};
-			local filterHeader = {
-				['text'] = L.APPLY_SEARCH_FILTER,
+			})
+			local filterHeader = app.CreateRawText(L.APPLY_SEARCH_FILTER, {
 				['icon'] = app.asset("Button_Search"),
 				["description"] = L.APPLY_SEARCH_FILTER_DESC,
 				['visible'] = true,
@@ -4935,21 +4916,19 @@ customWindowUpdates.Random = function(self)
 				["indent"] = 0,
 				['back'] = 1,
 				['g'] = {
-					setmetatable({
-						['description'] = L.SEARCH_EVERYTHING_BUTTON_OF_DOOM,
-						['visible'] = true,
-						['OnClick'] = function(row, button)
+					app.CreateRawText(L.TITLE, {
+						icon = app.asset("logo_32x32"),
+						preview = app.asset("Discord_2_128"),
+						description = L.SEARCH_EVERYTHING_BUTTON_OF_DOOM,
+						visible = true,
+						OnClick = function(row, button)
 							self.RandomSearchFilter = appName;
 							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = app.AlwaysShowUpdate,
-					}, { __index = function(t, key)
-						if key == "text" or key == "icon" or key == "preview" or key == "texcoord" or key == "previewtexcoord" then
-							return app:GetWindow("Prime").data[key];
-						end
-					end}),
+						OnUpdate = app.AlwaysShowUpdate,
+					}),
 					AddRandomCategoryButton(L.ACHIEVEMENT, app.asset("Category_Achievements"), L.ACHIEVEMENT_DESC, "Achievement"),
 					AddRandomCategoryButton(L.DUNGEON, app.asset("Difficulty_Normal"), L.DUNGEON_DESC, "Dungeon"),
 					AddRandomCategoryButton(L.FACTIONS, app.asset("Category_Factions"), L.FACTION_DESC, "Factions"),
@@ -4965,9 +4944,8 @@ customWindowUpdates.Random = function(self)
 					AddRandomCategoryButton(L.TOY, app.asset("Category_ToyBox"), L.TOY_DESC, "Toy"),
 					AddRandomCategoryButton(L.ZONE, app.asset("Category_Zones"), L.ZONE_DESC, "Zone"),
 				},
-			};
-			mainHeader = {
-				['text'] = L.GO_GO_RANDOM,
+			})
+			mainHeader = app.CreateRawText(L.GO_GO_RANDOM, {
 				['icon'] = app.asset("WindowIcon_Random"),
 				["description"] = L.GO_GO_RANDOM_DESC,
 				['visible'] = true,
@@ -4975,8 +4953,7 @@ customWindowUpdates.Random = function(self)
 				['back'] = 1,
 				["indent"] = 0,
 				['options'] = {
-					{
-						['text'] = L.CHANGE_SEARCH_FILTER,
+					app.CreateRawText(L.CHANGE_SEARCH_FILTER, {
 						['icon'] = app.asset("Button_Search"),
 						["description"] = L.CHANGE_SEARCH_FILTER_DESC,
 						['visible'] = true,
@@ -4986,11 +4963,11 @@ customWindowUpdates.Random = function(self)
 							return true;
 						end,
 						['OnUpdate'] = app.AlwaysShowUpdate,
-					},
+					}),
 					rerollOption,
 				},
 				['g'] = { },
-			};
+			})
 			self:SetData(mainHeader);
 			self.Rebuild = function(self, no)
 				-- Rebuild all the datas
@@ -5063,14 +5040,13 @@ customWindowUpdates.RWP = function(self, force)
 			return;
 		end
 		self.initialized = true;
-		self:SetData({
-			["text"] = L.FUTURE_UNOBTAINABLE,
+		self:SetData(app.CreateRawText(L.FUTURE_UNOBTAINABLE, {
 			["icon"] = app.asset("WindowIcon_RWP"),
 			["description"] = L.FUTURE_UNOBTAINABLE_TOOLTIP,
 			["visible"] = true,
 			["back"] = 1,
 			["g"] = app:BuildSearchResponse("rwp"),
-		});
+		}))
 		self:BuildData();
 		self.ExpandInfo = { Expand = true, Manual = true };
 	end
@@ -5696,15 +5672,14 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
 		self:RegisterEvent("TRADE_SKILL_CLOSE");
 		self:RegisterEvent("GARRISON_TRADESKILL_NPC_CLOSED");
-		self:SetData({
-			['text'] = L.PROFESSION_LIST,
-			['icon'] = 134940,
-			["description"] = L.PROFESSION_LIST_DESC,
-			['visible'] = true,
-			["indent"] = 0,
-			['back'] = 1,
-			['g'] = { },
-		});
+		self:SetData(app.CreateRawText(L.PROFESSION_LIST, {
+			icon = 134940,
+			description = L.PROFESSION_LIST_DESC,
+			visible = true,
+			indent = 0,
+			back = 1,
+			g = { },
+		}))
 
 		local MissingRecipes = {}
 		-- Adds the pertinent information about a given recipeID to the reagentcache
