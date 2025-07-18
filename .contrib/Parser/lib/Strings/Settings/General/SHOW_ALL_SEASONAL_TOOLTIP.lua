@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this setting to show all seasonal events, instead of only currently active seasonal events.\n\nNOTE: Seasonal Events will automatically be visible as active 7 days in advance.",
 		-- TODO: de = "",
 		es = "Activa este ajuste si quieres ver todos los eventos temporales, en vez de sólo los eventos temporales activos.\n\nNOTA: Los eventos temporales se van a mostrar como activos automáticamente 7 días antes del inicio.",
-		-- TODO: mx = "",
+		mx = "Activa este ajuste si quieres ver todos los eventos estacionales, en vez de sólo los eventos estacionales activos.\n\nNOTA: Los eventos estacionales se van a mostrar como activos automáticamente 7 días antes del inicio.",
 		fr = "Activez cete option si vous souhaitez afficher tous les événements saisonniers, au lieu des seuls événements saisonniers en cours.\n\nNOTE: Seasonal Events will automatically be visible as active 7 days in advance.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

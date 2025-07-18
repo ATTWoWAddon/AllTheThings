@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Account-Wide Things",
 		de = "Accountweite Dinge",
 		es = "Cosas para toda la cuenta",
-		-- TODO: mx = "",
+		mx = "Cosas para toda la cuenta",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

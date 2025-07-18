@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option to track Mount Modifications",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Habilite esta opción para realizar un seguimiento de las modificaciones de montura",
+		mx = "Habilite esta opción para realizar un seguimiento de las modificaciones de montura",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

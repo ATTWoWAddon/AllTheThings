@@ -7,6 +7,7 @@ createLocalizationString({
 		en = "Conduits",
 		de = "Medien",
 		es = "Conductos",
+		mx = "Conductos",
 		fr = "Intermédiaires",
 		it = "Condotti",
 		pt = "Conduítes",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Character Unlocks",
 		-- TODO: de = "",
 		es = "Desbloqueos de personaje",
-		-- TODO: mx = "",
+		mx = "Desbloqueos de personaje",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

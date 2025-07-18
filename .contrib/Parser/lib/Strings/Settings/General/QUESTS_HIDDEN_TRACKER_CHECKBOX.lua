@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "+HQT",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		-- TODO: es = "+DMO",
+		-- TODO: mx = "+AMO",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

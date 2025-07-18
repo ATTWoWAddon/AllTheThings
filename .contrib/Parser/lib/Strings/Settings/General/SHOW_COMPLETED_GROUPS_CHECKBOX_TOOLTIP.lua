@@ -5,7 +5,7 @@ createLocalizationString({
 	text = {
 		en = "Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.",
 		-- TODO: de = "",
-		es = "Activa esta opción si quieres ver los grupos completados como cabecera con un porcentaje de completado. Si un grupo no tiene nada relevante para tu clase, este ajuste hará que tambien se muestren estos grupos en el listado.\n\nRecomendamos que desactives este ajuste para conservar espacio en la Mini Lista y te permite ver rápidamente qué te falta de la zona.",
+		es = "Activa esta opción si quieres ver los grupos completados como cabecera con un porcentaje de completado. Si un grupo no tiene nada relevante para tu clase, este ajuste hará que también se muestren estos grupos en el listado.\n\nRecomendamos que desactives este ajuste para conservar espacio en la Mini Lista y te permite ver rápidamente qué te falta de la zona.",
 		mx = "Activa esta opción si quieres ver los grupos completados como cabecera con un porcentaje de completado. Si un grupo no tiene nada relevante para tu clase, este ajuste hará que también se muestren estos grupos en el listado.\n\nRecomendamos que desactives este ajuste para conservar espacio en la Mini Lista y te permite ver rápidamente qué te falta de la zona.",
 		-- TODO: fr = "",
 		-- TODO: it = "",

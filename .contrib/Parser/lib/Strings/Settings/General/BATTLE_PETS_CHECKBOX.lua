@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Battle Pets",
 		de = "Kampfhaustiere",
 		es = "Mascotas de duelo",
-		-- TODO: mx = "",
+		mx = "Mascotas de duelo",
 		fr = "Mascottes de combat",
 		it = "Mascotte da combattimento",
 		pt = "Mascotes de Batalha",

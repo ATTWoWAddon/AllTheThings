@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option to track titles.\n\nThese can make your character stand out and look like you've played for awhile. Typically only new players do not have a title active.",
 		-- TODO: de = "",
-		es = "Activa esta opción para rastrar títulos.\n\nPueden hacer que tu personaje resalte y parezca que has jugado desde mucho tiempo. Típicamente sólo los jugadores nuevos no tienen un título activo.",
-		-- TODO: mx = "",
+		es = "Activa esta opción para rastrear títulos.\n\nPueden hacer que tu personaje resalte y parezca que has jugado desde mucho tiempo. Típicamente sólo los jugadores nuevos no tienen un título activo.",
+		mx = "Activa esta opción para rastrear títulos.\n\nPueden hacer que tu personaje resalte y parezca que has jugado desde mucho tiempo. Típicamente sólo los jugadores nuevos no tienen un título activo.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

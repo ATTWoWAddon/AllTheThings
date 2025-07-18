@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Quest completion is typically per Character, but this will consider a Quest as completed if ANY Character has completed that specific Quest.",
 		-- TODO: de = "",
 		es = "El completado de misiones normalmente es por Personaje, pero esto considerará una misión como completada si CUALQUIER personaje ha completado esa misión en específico.",
-		-- TODO: mx = "",
+		mx = "El completado de misiones normalmente es por Personaje, pero esto considerará una misión como completada si CUALQUIER personaje ha completado esa misión en específico.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

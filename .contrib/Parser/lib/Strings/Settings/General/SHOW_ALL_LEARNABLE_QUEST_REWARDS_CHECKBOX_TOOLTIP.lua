@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Disable this option to hide items that are listed as \"Not Available in Personal Loot\" for quests.\n\nThis is useful for tracking items that your class can't use in World Drops, but still marking quests as completed.\n\nSome items can be marked incorrectly: this setting WILL hide items that you can obtain!",
 		-- TODO: de = "",
 		es = "Desactiva esta opción para esconder objetos marcados como \"No disponible en Botín Personal\" en misiones.\n\nEsto es útil para rastrear objetos que tu clase no puede usar de Botín de mundo, pero marcando las misiones como completadas.\n\nAlgunos objetos pueden marcarse incorrectamente: este ajuste ESCONDERÁ objetos que puedes obtener!",
-		-- TODO: mx = "",
+		mx = "Desactiva esta opción para esconder objetos marcados como \"No disponible en Botín Personal\" en misiones.\n\nEsto es útil para rastrear objetos que tu clase no puede usar de Botín de mundo, pero marcando las misiones como completadas.\n\nAlgunos objetos pueden marcarse incorrectamente: este ajuste ESCONDERÁ objetos que puedes obtener!",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

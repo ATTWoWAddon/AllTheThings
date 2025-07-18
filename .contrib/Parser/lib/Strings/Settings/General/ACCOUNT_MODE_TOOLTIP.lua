@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.",
 		de = "Aktiviere diese Einstellung, um alle Dinge für alle Eure Charaktere, unabhängig von Klassen und Rassen, zu verfolgen.\n\nUnerreichbare Filter gelten weiterhin.",
 		es = "Activa este ajuste si quieres rastrear todas las cosas para todos tus personajes independientemente de los filtros de clase o raza.\n\nLos filtros de No obtenible aún se aplican.",
-		-- TODO: mx = "",
+		mx = "Activa este ajuste si quieres rastrear todas las cosas para todos tus personajes independientemente de los filtros de clase o raza.\n\nLos filtros de No obtenible aún se aplican.",
 		fr = "Activez cette option si vous souhaitez suivre tous les objets de tous vos personnages, sans tenir compte des filtres de classe et de race. Les filtres d’inaccessibilité s’appliquent toujours.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

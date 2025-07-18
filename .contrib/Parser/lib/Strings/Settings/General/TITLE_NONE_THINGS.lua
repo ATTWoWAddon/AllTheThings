@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "None of the Things ",
 		de = "Keins der Dinge ",
 		es = "Ninguna de las cosas ",
-		-- TODO: mx = "",
+		mx = "Ninguna de las cosas ",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		pt = "Nenhuma das Coisas ",

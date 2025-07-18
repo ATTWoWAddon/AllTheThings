@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Loot Mode",
 		-- TODO: de = "",
 		es = "Modo botín",
-		-- TODO: mx = "",
+		mx = "Modo botín"
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

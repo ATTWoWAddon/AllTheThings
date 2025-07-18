@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option to see Things which have already been Collected.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.",
 		-- TODO: de = "",
 		es = "Activa esta opción para ver las cosas que ya has coleccionado.\n\nRecomendamos que desactives este ajuste para conservar espacio en la Mini Lista y te permite ver rápidamente qué te falta de la zona.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción para ver las cosas que ya has coleccionado.\n\nRecomendamos que desactives este ajuste para conservar espacio en la Mini Lista y te permite ver rápidamente qué te falta de la zona.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

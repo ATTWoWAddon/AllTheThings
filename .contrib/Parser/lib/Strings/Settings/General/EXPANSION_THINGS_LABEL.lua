@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Expansion Things",
 		de = "Erweiterungs Dinge",
 		es = "Cosas de expansión",
-		-- TODO: mx = "",
+		mx = "Cosas de expansión",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

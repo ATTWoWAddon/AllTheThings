@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option to track Azerite Essences.\n\nTracked per character by default.",
 		-- TODO: de = "",
 		es = "Activa esta opción para rastrear Esencias de azerita.\n\nRastreados por personaje por defecto.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción para rastrear Esencias de azerita.\n\nRastreados por personaje por defecto.",
 		fr = "Activer cette option pour suivre les essences d’Azérite.\n\nPar défaut, suivi actif sur le personnage.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

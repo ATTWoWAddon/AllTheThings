@@ -5,7 +5,7 @@ createLocalizationString({
 	text = {
 		en = "Consider any Character Unlock collected if any character has collected it.",
 		-- TODO: de = "",
-		es = "Considerar cualquier desbloqueo coleccionado si algun personaje lo ha coleccionado.",
+		es = "Considerar cualquier desbloqueo coleccionado si algún personaje lo ha coleccionado.",
 		mx = "Considerar cualquier desbloqueo coleccionado si algún personaje lo ha coleccionado.",
 		-- TODO: fr = "",
 		-- TODO: it = "",

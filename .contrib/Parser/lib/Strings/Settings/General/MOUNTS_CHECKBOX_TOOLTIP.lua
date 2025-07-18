@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option to track mounts.\n\nYou can ride these to go places faster than when running. Who knew!",
 		-- TODO: de = "",
-		es = "Activa esta opción para rastrar monturas.\n\nPuedes usarlas para ir a sitios más rápido que corriendo. Quién lo diría!",
-		-- TODO: mx = "",
+		es = "Activa esta opción para rastrear monturas.\n\nPuedes usarlas para ir a sitios más rápido que corriendo. Quién lo diría!",
+		mx = "Activa esta opción para rastrear monturas.\n\nPuedes usarlas para ir a sitios más rápido que corriendo. Quién lo diría!",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

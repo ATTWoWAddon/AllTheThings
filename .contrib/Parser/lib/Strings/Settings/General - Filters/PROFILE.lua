@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Profile",
 		de = "Profil",
 		es = "Perfil",
-		-- TODO: mx = "",
+		mx = "Perfil",
 		fr = "Profil",
 		-- TODO: it = "",
 		-- TODO: pt = "",

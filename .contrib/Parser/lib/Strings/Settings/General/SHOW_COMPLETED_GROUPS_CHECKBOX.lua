@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Show Completed Groups",
 		-- TODO: de = "",
 		es = "Muestra los grupos completados",
-		-- TODO: mx = "",
+		mx = "Muestra los grupos completados",
 		fr = "Afficher les groupes complétés",
 		-- TODO: it = "",
 		-- TODO: pt = "",

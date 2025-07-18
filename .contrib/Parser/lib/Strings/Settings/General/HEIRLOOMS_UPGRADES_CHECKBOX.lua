@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "+Upgrades",
 		de = "+Aufwertungen",
 		es = "+Mejoras",
-		-- TODO: mx = "",
+		mx = "+Mejoras",
 		fr = "+ Améliorations",
 		-- TODO: it = "",
 		-- TODO: pt = "",

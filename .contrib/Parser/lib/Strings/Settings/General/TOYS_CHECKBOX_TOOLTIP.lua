@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option to track Toys.\n\nMost of these toys have a fun thing that they do. Others, like the Hearthstone Toys, can be used in place of your actual Hearthstone and can save you a bag slot! They also have interesting effects ... Nice!",
 		-- TODO: de = "",
 		es = "Activa esta opción para rastrar juguetes.\n\nLa mayoría de juguetes hacen algo divertido. Otros, como los juguetes de Piedra de Hogar, pueden usarse en vez de tu Piedra de Hogar y ahorrarte un hueco en tus bolsas! También tienen efectos interesantes ... Mola!",
-		-- TODO: mx = "",
+		mx = "Activa esta opción para rastrar juguetes.\n\nLa mayoría de juguetes hacen algo divertido. Otros, como los juguetes de Piedra de Hogar, pueden usarse en vez de tu Piedra de Hogar y ahorrarte un hueco en tus bolsas! También tienen efectos interesantes ... Genial!",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

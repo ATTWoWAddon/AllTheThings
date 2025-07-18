@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Achievement tracking is usually Account-Wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.",
 		-- TODO: de = "",
 		es = "El rastreo de Logros normalmente es a nivel de toda la Cuenta, pero hay un numero de logros exclusivos de clases y razas que no puedes conseguir con tu personaje principal.",
-		-- TODO: mx = "",
+		mx = "El rastreo de Logros normalmente es a nivel de toda la Cuenta, pero hay un numero de logros exclusivos de clases y razas que no puedes conseguir con tu personaje principal.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

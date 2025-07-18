@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Stranger Things",
 		de = "Fremde Dinge",
 		es = "Cosas extrañas",
-		-- TODO: mx = "",
+		mx = "Cosas extrañas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

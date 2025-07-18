@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option to track battle pets and companions. These can be found in the open world or via boss drops in various Dungeons and Raids as well as from Vendors and Reputation.",
 		-- TODO: de = "",
-		es = "Activa esta opción para rastrar Mascotas de duelo y acompañantes. Pueden ser encontrados en el mundo abierto o a través de botín de jefe en varias mazmorras y bandas así como vendedores y reputaciones.",
-		mx = "Activa esta opción para rastrar Mascotas de duelo y acompañantes. Pueden ser encontrados en el mundo abierto o a través de botín de jefe en varias calabozos y bandas así como vendedores y reputaciones.",
+		es = "Activa esta opción para rastrear Mascotas de duelo y de compañía. Pueden ser encontrados en el mundo abierto o a través de botín de jefe en varias mazmorras y bandas así como vendedores y reputaciones.",
+		mx = "Activa esta opción para rastrear Mascotas de duelo y de compañía. Pueden ser encontrados en el mundo abierto o a través de botín de jefe en varias calabozos y bandas así como vendedores y reputaciones.",
 		fr = "Activer cette option pour suivre les mascottes de combat et les compagnons. Ils peuvent être trouvés dans le monde ouvert ou par l’intermédiaire des boss dans divers donjons et raids, ainsi que par l’intermédiaire des vendeurs et de la réputation.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

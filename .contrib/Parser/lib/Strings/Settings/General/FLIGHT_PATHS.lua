@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Flight Paths",
 		de = "Flugpunkte",
 		es = "Rutas de vuelo",
-		-- TODO: mx = "",
+		mx = "Rutas de vuelo",
 		fr = "Trajets Aériens",
 		-- TODO: it = "",
 		pt = "Pontos de voo",

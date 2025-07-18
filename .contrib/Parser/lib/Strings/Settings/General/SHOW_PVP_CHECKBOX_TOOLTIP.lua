@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this setting if you want to show content which 'may' require Player vs. Player interactions within the game.",
 		-- TODO: de = "",
 		es = "Activa este ajuste si quieres ver el contenido que 'pueda' requerir interacciones Jugador contra Jugador en el juego.",
-		-- TODO: mx = "",
+		mx = "Activa este ajuste si quieres ver el contenido que 'pueda' requerir interacciones Jugador contra Jugador en el juego.",
 		fr = "Activez cette option si vous souhaitez afficher le contenu qui 'peut' nécessiter des interactions Joueur contre Joueur dans le jeu.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option to track exploration completion for outdoor maps.\n\nThe information provided by this option is currently inaccurate and needs to be strengthened, so please use it with caution.",
 		-- TODO: de = "",
-		es = "Activa esta opción para rastrear el completado de exploración para los mapas exteriores.",
-		-- TODO: mx = "",
+		es = "Habilite esta opción para realizar un seguimiento de la finalización de la exploración en mapas al aire libre.\n\nLa información proporcionada por esta opción actualmente es inexacta y necesita ser fortalecida, así que úsela con precaución.",
+		mx = "Habilite esta opción para realizar un seguimiento de la finalización de la exploración en mapas al aire libre.\n\nLa información proporcionada por esta opción actualmente es inexacta y necesita ser fortalecida, así que úsela con precaución.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

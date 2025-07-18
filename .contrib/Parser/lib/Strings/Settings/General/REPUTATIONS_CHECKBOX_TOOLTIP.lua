@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option to track reputations.\n\nOnce you reach Exalted or Best Friend with a reputation, it will be marked Collected.\n\nYou may have to do a manual refresh for this to update correctly.",
 		-- TODO: de = "",
 		es = "Activa esta opción para rastrear reputaciones.\n\nCuando llegas a Exaltado o Mejor amigo con una reputación, se marcará como Coleccionado.\n\nPuede que tengas que hacer un refresco manual para que se actualice correctamente.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción para rastrear reputaciones.\n\nCuando llegas a Exaltado o Mejor amigo con una reputación, se marcará como Coleccionado.\n\nPuede que tengas que hacer un refresco manual para que se actualice correctamente.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

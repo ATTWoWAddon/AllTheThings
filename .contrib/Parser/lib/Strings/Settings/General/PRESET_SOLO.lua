@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Solo Mode disables all account-wide tracking, and will only show progress for your current character.",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "El modo Solo deshabilita todo seguimiento de la cuenta y solo mostrará el progreso de tu personaje actual.",
+		mx = "El modo Solo deshabilita todo seguimiento de la cuenta y solo mostrará el progreso de tu personaje actual.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

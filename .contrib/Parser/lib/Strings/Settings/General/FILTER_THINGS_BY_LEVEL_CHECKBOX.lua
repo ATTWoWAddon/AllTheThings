@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "No Level Restrictions",
 		-- TODO: de = "",
 		es = "Sin restricciones de niveles",
-		-- TODO: mx = "",
+		mx = "Sin restricciones de niveles",
 		fr = "Aucune restriction de niveau",
 		-- TODO: it = "",
 		-- TODO: pt = "",

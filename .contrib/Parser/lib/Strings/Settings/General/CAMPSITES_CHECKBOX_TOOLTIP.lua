@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option to track warband campsite completion.",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Habilite esta opción para realizar un seguimiento del completado de campamentos de la banda guerrera.",
+		mx = "Habilite esta opción para realizar un seguimiento del completado de sitios de acampado de la tropa.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

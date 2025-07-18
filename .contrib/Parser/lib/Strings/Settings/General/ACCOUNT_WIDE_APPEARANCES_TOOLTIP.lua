@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Transmog should be collected account wide. Certain items cannot be learned by every class, so ATT will do its best to only show you things that you can collect on your current character.",
 		-- TODO: de = "",
 		es = "Las transfiguraciones deben ser coleccionadas en toda la cuenta. Algunos objetos no pueden ser aprendidos por todas las clases, así que ATT hará lo posible para sólo mostrarte cosas que puedas coleccionar con tu personaje actual.",
-		-- TODO: mx = "",
+		mx = "Las transfiguraciones deben ser coleccionadas en toda la cuenta. Algunos objetos no pueden ser aprendidos por todas las clases, así que ATT hará lo posible para sólo mostrarte cosas que puedas coleccionar con tu personaje actual.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

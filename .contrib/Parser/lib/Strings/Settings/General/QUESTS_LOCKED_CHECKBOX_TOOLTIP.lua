@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option to specifically include tracking of Locked Quest completion.\n\nLocked Quests are those which the player is no longer able to complete (according to known ATT data) through normal gameplay.\n\nObtaining these Quests is very reliant on the Party Sync feature or using Account-Wide Quests to incorporate progress from other characters.",
 		-- TODO: de = "",
 		es = "Activa esta opción para incluir específicamente el rastreo de completado de misiones bloqueadas.\n\nLas misiones bloqueadas son aquellas que el personaje ya no puede completar (según los datos de ATT) jugando normalmente.\n\nLa obtención de estas misiones se basa mucho en la funcionalidad de Sincronización de Grupo o usando Misiones de cuenta para incorporar el progreso desde otros personajes.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción para incluir específicamente el rastreo de completado de misiones bloqueadas.\n\nLas misiones bloqueadas son aquellas que el personaje ya no puede completar (según los datos de ATT) jugando normalmente.\n\nLa obtención de estas misiones se basa mucho en la funcionalidad de Sincronización de Grupo o usando Misiones de cuenta para incorporar el progreso desde otros personajes.",
 		fr = "Activer cette option pour inclure spécifiquement le suivi de l’achèvement des quêtes verrouillées.\n\nLes quêtes verrouillées sont celles que le joueur n’est plus en mesure de terminer (selon les données connues d’ATT) en jouant normalement.\n\nL’obtention de ces quêtes dépend beaucoup de la fonction de synchronisation des groupes ou de l’utilisation de quêtes à l’échelle du compte pour intégrer la progression d’autres personnages.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -8,8 +8,8 @@ createLocalizationString({
 		-- #else
 		en = "Skyriding",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Jinete de dragones",
+		mx = "Dracoequitación",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

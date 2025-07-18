@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Deaths",
 		-- TODO: de = "",
 		es = "Muertes",
-		-- TODO: mx = "",
+		mx = "Muertes",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

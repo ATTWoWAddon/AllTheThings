@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Class Defaults",
 		-- TODO: de = "",
 		es = "Predeterminados de Clase",
-		-- TODO: mx = "",
+		mx = "Predeterminados de Clase",
 		fr = "Votre classe",
 		-- TODO: it = "",
 		-- TODO: pt = "",

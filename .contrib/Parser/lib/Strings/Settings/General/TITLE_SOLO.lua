@@ -5,8 +5,11 @@ createLocalizationString({
 	text = {
 		en = "Solo ",
 		de = "Alleine ",
-		-- TODO: mx = "",
+		es = "Solo ",
+		mx = "Solo ",
+		-- TODO: fr = "",
 		-- TODO: it = "",
+		-- TODO: pt = "",
 		ru = "Соло ",
 		-- TODO: ko = "",
 		cn = "个人 ",

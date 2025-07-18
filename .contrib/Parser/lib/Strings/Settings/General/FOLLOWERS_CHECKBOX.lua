@@ -7,6 +7,7 @@ createLocalizationString({
 		en = "Followers & Companions",
 		de = "Anhänger & Gefährten",
 		es = "Seguidores y Campeones",
+		mx = "Seguidores y Campeones",
 		fr = "Sujets & Compagnons",
 		it = "Seguaci & Avventurieri",
 		pt = "Seguidores & Companheiros",

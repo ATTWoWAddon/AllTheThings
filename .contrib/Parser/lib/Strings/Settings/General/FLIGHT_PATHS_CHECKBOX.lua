@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Flight Paths",
 		de = "Flugpunkte",
-		es = "Puntos de vuelo",
-		-- TODO: mx = "",
+		es = "Rutas de vuelo",
+		mx = "Rutas de vuelo",
 		fr = "Trajets Aériens",
 		-- TODO: it = "",
 		-- TODO: pt = "",

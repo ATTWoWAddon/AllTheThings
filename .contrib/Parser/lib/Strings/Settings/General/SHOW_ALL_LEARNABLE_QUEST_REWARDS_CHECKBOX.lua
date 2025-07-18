@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "All Learnable Quest Rewards",
 		-- TODO: de = "",
 		es = "Todas las recompensas de misión que se pueden aprender",
-		-- TODO: mx = "",
+		mx = "Todas las recompensas de misión que se pueden aprender",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

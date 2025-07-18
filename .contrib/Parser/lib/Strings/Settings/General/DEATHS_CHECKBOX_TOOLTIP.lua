@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option to track each time one of your characters die and show it as a Collectible section within the addon.\n\nNOTE: If you turn this off, we'll still track it, but we simply will not show the statistic unless you're in Debug Mode.",
 		-- TODO: de = "",
 		es = "Activa esta opción para rastrear cada vez que uno de tus personajes muere y lo muestra como una sección de coleccionable en el addon.\n\nNOTA: Si lo desactivas, lo seguiremos rastreando, pero simplemente no mostraremos la estadística a no ser que estés en Modo Depuración.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción para rastrear cada vez que uno de tus personajes muere y lo muestra como una sección de coleccionable en el addon.\n\nNOTA: Si lo desactivas, lo seguiremos rastreando, pero simplemente no mostraremos la estadística a no ser que estés en Modo Debug.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

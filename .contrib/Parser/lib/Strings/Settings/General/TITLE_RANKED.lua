@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Ranked ",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Competitivo ",
+		mx = "Competitivo ",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

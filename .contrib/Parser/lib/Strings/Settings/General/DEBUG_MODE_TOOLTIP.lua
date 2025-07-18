@@ -5,7 +5,7 @@ createLocalizationString({
 	text = {
 		en = "Quite literally ... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.",
 		-- TODO: de = "",
-		es = "Literalmente ... TODAS LAS COSAS EN EL JUEGO. PUNTO. SI, TODO DE TODO. Incluso las cosas no coleccionables como bolsas, consumibles, ingredientes, etc aparecerán en las listas. (Incluído tú! No, en serio. Mira.)\n\nEsto es sólo para propósitos de Depuración. No está pensado para ser usado para el rastreo de completado.\n\nEste modo se salta todos los filtros, incluyendo no obtenibles.",
+		es = "Literalmente ... TODAS LAS COSAS EN EL JUEGO. PUNTO. SI, TODO DE TODO. Incluso las cosas no coleccionables como bolsas, consumibles, ingredientes, etc aparecerán en las listas. (Incluido tú! No, en serio. Mira.)\n\nEsto es sólo para propósitos de Depuración. No está pensado para ser usado para el rastreo de completado.\n\nEste modo se salta todos los filtros, incluyendo no obtenibles.",
 		mx = "Literalmente ... TODAS LAS COSAS EN EL JUEGO. PUNTO. SI, TODO DE TODO. Incluso las cosas no coleccionables como bolsas, consumibles, ingredientes, etc aparecerán en las listas. (Incluido tú! No, enserió. Mira.)\n\nEsto es sólo para propósitos de Depuración. No está pensado para ser usado para el rastreo de completado.\n\nEste modo se salta todos los filtros, incluyendo no obtenibles.",
 		-- TODO: fr = "",
 		-- TODO: it = "",

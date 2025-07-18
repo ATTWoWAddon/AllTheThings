@@ -5,7 +5,7 @@ createLocalizationString({
 	text = {
 		en = "Enable this setting if you want to ignore armor, weapon, race, class, or profession requirements for BoE/BoA items.\n\nIf you are trying to collect things for your alts via Auction House scanning, this mode may be useful to you.",
 		-- TODO: de = "",
-		es = "Activa este ajuste si quieres ignorar requerimientos de armadura, arma, raza, clase o de profesión para los objetos BoE/BoA items.\n\nSi estás intentando coleccionar cosas para tus personajes secundarios escaneando la Casa de Subastas, este modo puede serte útil.",
+		es = "Activa este ajuste si quieres ignorar requerimientos de armadura, arma, raza, clase o de profesión para los objetos BoE/BoA.\n\nSi estás intentando coleccionar cosas para tus personajes secundarios escaneando la Casa de Subastas, este modo puede serte útil.",
 		mx = "Activa este ajuste si quieres ignorar requerimientos de armadura, arma, raza, clase o de profesión para los objetos LaE/LaC.\n\nSi estás intentando coleccionar cosas para tus personajes secundarios escaneando la Casa de Subastas, este modo puede serte útil.",
 		fr = "Activez cette option si vous souhaitez ignorer les exigences en matière d’armure, d’arme, de race, de classe ou de profession pour les objets LqE / LqR.\n\nSi vous essayez de collecter des objets pour vos personnages secondaires via l’hôtel des ventes, ce mode peut vous être utile.",
 		-- TODO: it = "",

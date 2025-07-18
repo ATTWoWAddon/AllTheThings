@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option to only track transmog that get removed from the game in the future. Only Items tagged with 'removed with patch' data count toward this. If you find an item not tagged that should be tagged, please let me know!\n\nYou can change which sort of loot displays for you based on the Filters tab.",
 		-- TODO: de = "",
-		es = "Activa esta opción para rastrear sólamente las transfiguraciones que serán eliminadas del juego en un futuro. Sólo los objetos etiquetados con 'Eliminado en el Parche' ('removed with patch' o 'RWP') cuentan. Si encuentras un objeto sin etiquetar que debería estarlo, dímelo por favor!\n\nPuedes cambiar el tipo de botín que se muestra en la pestaña de Filtros.",
-		mx = "Activa esta opción para rastrear solamente las transfiguraciones que serán eliminadas del juego en un futuro. Sólo los objetos etiquetados con 'Eliminado en el Parche' ('removed with patch' o 'RWP') cuentan. Si encuentras un objeto sin etiquetar que debería estarlo, dímelo por favor!\n\nPuedes cambiar el tipo de botín que se muestra en la pestaña de Filtros.",
+		es = "Activa esta opción para rastrear solamente las transfiguraciones que serán eliminadas del juego en un futuro. Sólo los objetos etiquetados con 'Eliminado en el Parche' cuentan. Si encuentras un objeto sin etiquetar que debería estarlo, dímelo por favor!\n\nPuedes cambiar el tipo de botín que se muestra en la pestaña de Filtros.",
+		mx = "Activa esta opción para rastrear solamente las transfiguraciones que serán eliminadas del juego en un futuro. Sólo los objetos etiquetados con 'Removido en el Parche' cuentan. Si encuentras un objeto sin etiquetar que debería estarlo, dímelo por favor!\n\nPuedes cambiar el tipo de botín que se muestra en la pestaña de Filtros.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

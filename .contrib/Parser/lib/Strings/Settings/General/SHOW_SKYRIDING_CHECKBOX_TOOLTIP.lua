@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this setting if you want to show content which requires Skyriding within the game.",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Habilita esta configuración si deseas mostrar contenido que requiera Jinete de dragones dentro del juego.",
+		mx = "Habilita esta configuración si deseas mostrar contenido que requiera Dracoequitación dentro del juego.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

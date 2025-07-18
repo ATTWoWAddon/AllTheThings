@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this preset. This will adjust only the relevant tracking options of the current profile.",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Habilite este ajuste preestablecido. Esto ajustará únicamente las opciones de seguimiento relevantes del perfil actual.",
+		mx = "Habilite este ajuste preestablecido. Esto ajustará únicamente las opciones de seguimiento relevantes del perfil actual.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

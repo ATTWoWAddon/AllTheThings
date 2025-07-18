@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Reputations",
 		de = "Ruffraktionen",
 		es = "Reputaciones",
-		-- TODO: mx = "",
+		mx = "Reputaciones",
 		fr = "Réputations",
 		-- TODO: it = "",
 		-- TODO: pt = "",

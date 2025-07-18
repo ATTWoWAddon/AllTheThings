@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this setting if you want to show content which requires Pet Battles within the game.",
 		-- TODO: de = "",
-		es = "Activa este ajuste si quieres ver el contenido que requiere Batallas de mascotas en el juego.",
-		-- TODO: mx = "",
+		es = "Activa este ajuste si quieres ver el contenido que requiere duelos de mascotas en el juego.",
+		mx = "Activa este ajuste si quieres ver el contenido que requiere duelos de mascotas en el juego.",
 		fr = "Activez cete option si vous souhaitez afficher du contenu nécessitant des combats de mascottes dans le jeu.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

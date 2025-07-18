@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Ranked Mode enables the collectibles tracked by websites such as Data For Azeroth and WoWthing.",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "El modo clasificado permite el seguimiento de los coleccionables mediante sitios web como Data For Azeroth y WoWthing.",
+		mx = "El modo clasificado permite el seguimiento de los coleccionables mediante sitios web como Data For Azeroth y WoWthing.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

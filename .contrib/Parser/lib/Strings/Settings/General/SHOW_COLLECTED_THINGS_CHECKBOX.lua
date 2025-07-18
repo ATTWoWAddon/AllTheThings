@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Show Collected Things",
 		de = "Zeig gesammelte Dinge",
 		es = "Muestra las cosas coleccionadas",
-		-- TODO: mx = "",
+		mx = "Muestra las cosas coleccionadas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

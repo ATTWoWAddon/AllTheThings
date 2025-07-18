@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Azerite Essences cannot technically be collected and used Account-Wide, but if you only care about collecting them on your main character then you may prefer tracking them Account-Wide.",
 		-- TODO: de = "",
 		es = "Las Esencia de azerita técnicamente no pueden ser coleccionadas y usadas a nivel de Cuenta, pero si sólo te importa coleccionarlas en tu personaje principal entonces puede que prefieras rastrearlas a nivel de toda la cuenta.",
-		-- TODO: mx = "",
+		mx = "Las Esencia de azerita técnicamente no pueden ser coleccionadas y usadas a nivel de Cuenta, pero si sólo te importa coleccionarlas en tu personaje principal entonces puede que prefieras rastrearlas a nivel de toda la cuenta.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

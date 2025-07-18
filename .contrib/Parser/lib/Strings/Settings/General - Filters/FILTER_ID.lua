@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Filter ID",
 		-- TODO: de = "",
 		es = "Filtro ID",
-		-- TODO: mx = "",
+		mx = "ID de Filtro",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

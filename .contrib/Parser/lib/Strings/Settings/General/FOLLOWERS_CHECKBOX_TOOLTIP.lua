@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option to track followers and champions.\n\nIE: Garrison Followers, Legion Class Hall Champions, BFA Campaign Minions and SL Adventurers.",
 		-- TODO: de = "",
 		es = "Activa esta opción para rastrear seguidores y campeones.\n\nPE: Seguidores de la Ciudadela, Campeones de la Sede de clase, seguidores de la Campaña de BFA o aventureros de SL.",
-		mx = "Activa esta opción para rastrear seguidores y campeones.\n\nPE: Seguidores de la fortaleza, Campeones de la Sede de clase, seguidores de la Campaña de BFA o aventureros de SL.",
+		mx = "Activa esta opción para rastrear seguidores y campeones.\n\nPE: Seguidores de la Fortaleza, Campeones de la Sede de clase, seguidores de la Campaña de BFA o aventureros de SL.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option to specifically track collection of individual Heirloom Upgrades.\n\nWe all know Blizzard just loves to drain your gold and your soul, so keep track of that with this toggle.",
 		-- TODO: de = "",
 		es = "Activa esta opción para rastrear específicamente la colección de cada mejora individual de Reliquias.\n\nTodos sabemos que a Blizzard le encanta drenar tu oro y tu alma, así que lleva la cuenta con este interruptor.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción para rastrear específicamente la colección de cada mejora individual de Reliquias.\n\nTodos sabemos que a Blizzard le encanta drenar tu oro y tu alma, así que lleva la cuenta con este switch.",
 		fr = "Activer cette option pour suivre spécifiquement la collecte des améliorations d’héritage individuelles.\n\nNous savons tous que Blizzard aime vider votre Or et votre âme, alors gardez une trace de cela avec cette option.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

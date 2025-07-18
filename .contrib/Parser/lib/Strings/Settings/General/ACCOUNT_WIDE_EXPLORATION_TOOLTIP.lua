@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Exploration tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?",
 		-- TODO: de = "",
 		es = "El rastreado de Exploración es sólo útil por personaje, pero realmente quieres tener que coleccionarlos todos en todos tus 50 personajes?",
-		-- TODO: mx = "",
+		mx = "El rastreado de Exploración es sólo útil por personaje, pero realmente quieres tener que coleccionarlos todos en todos tus 50 personajes?",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

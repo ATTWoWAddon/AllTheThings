@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option to show loot from all sources. This can include items such as Rings, Trinkets, Necklaces and the like. Whether or not something is collectible is irrelevant when using this mode. Not recommended all the time, but if you want to see items that can come from a source like they do in AtlasLoot, you can enable this to see that information.\n\nYou can change which sort of loot displays for you based on the Filters tab.\n\nDefault: Class Defaults, Disabled.",
 		-- TODO: de = "",
 		es = "Activa esta opción para mostrar el botín de todas las fuentes.\n\nPuedes cambiar el tipo de botín que se muestra en la pestaña de Filtros.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción para mostrar el botín de todas las fuentes.\n\nPuedes cambiar el tipo de botín que se muestra en la pestaña de Filtros.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

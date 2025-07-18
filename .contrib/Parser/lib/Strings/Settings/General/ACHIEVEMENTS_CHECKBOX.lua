@@ -4,6 +4,5 @@ createLocalizationString({
 	export = true,
 	text = {
 		en = [[~ACHIEVEMENTS]],
-		es = "Logros",
 	},
 })

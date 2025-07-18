@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Revert to default settings.",
 		-- TODO: de = "",
 		es = "Vuelve a los ajustes por defecto.",
-		-- TODO: mx = "",
+		mx = "Vuelve a los ajustes por defecto.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

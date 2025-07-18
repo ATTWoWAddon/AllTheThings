@@ -7,6 +7,7 @@ createLocalizationString({
 		en = "Runecarving Powers",
 		de = "Runenschnitzmacht",
 		es = "Poder de talla de runas",
+		mx = "Poder de talla de runas",
 		fr = "Pouvoirs de gravure runique",
 		it = "Abilità dell'Incisione Runica",
 		pt = "Poder de Runogravura",

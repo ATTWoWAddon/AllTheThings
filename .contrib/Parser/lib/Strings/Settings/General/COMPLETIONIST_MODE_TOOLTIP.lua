@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this Mode to consider Items as Collected only when the specific Item has been unlocked for the given Appearance.\n\nThis means you will need to collect every shared Appearance of an Item.\n\nNote: By default, the game stops telling you about Items you have not collected once you have collected a shared Source, so this will ensure that uncollected Items are tracked.",
 		-- TODO: de = "",
 		es = "Activa este Modo para considerar los objetos como Coleccionados sólo cuando un objeto específico se ha desbloqueado para esa Apariencia.\n\nEsto significa que tendrás que coleccionar todas las apariencias compartidas de cada objeto.\n\nNota: Por defecto, el juego para de decirte cosas sobre los objetos que no has coleccionado cuando coleccionas una apariencia con fuente compartida, así que esto se asegura que los objetos no coleccionados son rastreados.",
-		-- TODO: mx = "",
+		mx = "Activa este Modo para considerar los objetos como Coleccionados sólo cuando un objeto específico se ha desbloqueado para esa Apariencia.\n\nEsto significa que tendrás que coleccionar todas las apariencias compartidas de cada objeto.\n\nNota: Por defecto, el juego para de decirte cosas sobre los objetos que no has coleccionado cuando coleccionas una apariencia con fuente compartida, así que esto se asegura que los objetos no coleccionados son rastreados.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

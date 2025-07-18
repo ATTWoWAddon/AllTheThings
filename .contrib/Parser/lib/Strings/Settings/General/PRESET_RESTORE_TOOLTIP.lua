@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Restore your tracking options to before applying any presets.",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Restaure sus opciones de seguimiento a los valores anteriores a la aplicación de cualquier ajuste preestablecido",
+		mx = "Restaure sus opciones de seguimiento a los valores anteriores a la aplicación de cualquier ajuste preestablecido",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

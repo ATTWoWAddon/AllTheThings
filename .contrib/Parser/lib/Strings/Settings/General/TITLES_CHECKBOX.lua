@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Titles",
 		de = "Titel",
 		es = "Títulos",
-		-- TODO: mx = "",
+		mx = "Títulos",
 		fr = "Titres",
 		it = "Titoli",
 		pt = "Títulos",

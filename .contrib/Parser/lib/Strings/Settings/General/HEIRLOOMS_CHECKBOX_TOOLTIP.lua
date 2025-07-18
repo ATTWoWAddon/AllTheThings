@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option to track whether you have unlocked an Heirloom and its respective Upgrade Levels.\n\nHeirlooms that have an associated Appearance are filtered via the Appearances filter. (turning off appearances will still show the Heirloom itself)\n\nSome items that appear with heirloom quality also help boost reputations and can be filtered via the Reputations filter.",
 		-- TODO: de = "",
 		es = "Activa esta opción para rastrear si has desbloqueado una Reliquia y sus respectivos niveles de mejora.\n\nLas reliquias tienen asociada una Apariencia son filtradas por el filtro de Apariencias. (Desactivar las apariencias aún va a mostrar la Reliquia como tal)\n\nAlgunos objetos que también aparecen con la calidad de reliquia que ayudan a aumentar reputaciones pueden ser filtrados por el filtro de reputaciones.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción para rastrear si has desbloqueado una Reliquia y sus respectivos niveles de mejora.\n\nLas reliquias tienen asociada una Apariencia son filtradas por el filtro de Apariencias. (Desactivar las apariencias aún va a mostrar la Reliquia como tal)\n\nAlgunos objetos que también aparecen con la calidad de reliquia que ayudan a aumentar reputaciones pueden ser filtrados por el filtro de reputaciones.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

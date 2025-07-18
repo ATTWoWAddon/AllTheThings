@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "+Locked",
 		-- TODO: de = "",
-		es = "+Bloqueado",
-		-- TODO: mx = "",
+		es = "+Bloqueadas",
+		mx = "+Bloqueadas",
 		fr = "+Verrouillées",
 		-- TODO: it = "",
 		-- TODO: pt = "",

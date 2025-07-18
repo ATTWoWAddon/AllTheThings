@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option to track Shadowlands Runecarving Powers.",
 		-- TODO: de = "",
 		es = "Activa esta opción para rastrear Poderes de talla de runas de Shadowlands.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción para rastrear Poderes de talla de runas de Shadowlands.",
 		fr = "Activer cette option pour suivre l’obtention des pouvoirs de gravure runique.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this setting if you want to see content available regardless of player level.\n\nNOTE: Disabling this is especially useful on Starter Accounts.",
 		-- TODO: de = "",
 		es = "Activa este ajuste si quieres ver el contenido disponible sin tener en cuenta el nivel del jugador.\n\nNOTA: Deshabilitar esto es especialmente útil en cuentas Starter.",
-		-- TODO: mx = "",
+		mx = "Activa este ajuste si quieres ver el contenido disponible sin tener en cuenta el nivel del jugador.\n\nNOTA: Deshabilitar esto es especialmente útil en cuentas Starter.",
 		fr = "Activez cette option si vous souhaitez que le contenu soit disponible quel que soit le niveau du joueur.\n\nREMARQUE : désactiver cette option est utile pour les nouveaux comptes.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

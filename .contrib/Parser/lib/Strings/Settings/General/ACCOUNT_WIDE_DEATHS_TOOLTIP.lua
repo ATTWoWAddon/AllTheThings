@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Death tracking really only exists for pre-Wrath Classic where a statistic wasn't available to know this information. Once achievements were implemented, this feature instead acquires data directly from the statistics API. You can use the tooltip on the Death Tracker to se",
 		-- TODO: de = "",
 		es = "EL rastreo de muertes realmente sólo existe antes de la Wrath de Classic donde no había la estadística para saber esta información. Cuando se implementaron los logros, esta función recoge esta información de la API de estadísticas. Puedes usar la ventana emergente del Rastreador de Muertes para verlo",
-		-- TODO: mx = "",
+		mx = "EL rastreo de muertes realmente sólo existe antes de la Wrath de Classic donde no había la estadística para saber esta información. Cuando se implementaron los logros, esta función recoge esta información de la API de estadísticas. Puedes usar la ventana emergente del Rastreador de Muertes para verlo",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

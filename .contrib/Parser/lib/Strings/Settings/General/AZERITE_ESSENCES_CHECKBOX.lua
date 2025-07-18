@@ -7,6 +7,7 @@ createLocalizationString({
 		en = "Azerite Essences",
 		de = "Herzensessenzen",
 		es = "Esencias del Corazón de Azeroth",
+		mx = "Esencias de Azerita",
 		fr = "Essences du Cœur d’Azeroth",
 		it = "Essenze del Cuore di Azeroth",
 		pt = "Essências do Coração de Azeroth",

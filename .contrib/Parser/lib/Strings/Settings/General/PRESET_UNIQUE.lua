@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Unique Mode disables Sources, marking gear as collected when you have learned their unique appearance.",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "El modo único desactiva las fuentes y marca el equipo como recolectado cuando has aprendido su apariencia única.",
+		mx = "El modo único desactiva las fuentes y marca el equipo como recolectado cuando has aprendido su apariencia única.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

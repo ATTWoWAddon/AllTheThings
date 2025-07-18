@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Store in Profile",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Guardado en el perfil",
+		mx = "Guardado en el perfil",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Layer",
 		-- TODO: de = "",
 		es = "Capa",
-		-- TODO: mx = "",
+		mx = "Capa",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

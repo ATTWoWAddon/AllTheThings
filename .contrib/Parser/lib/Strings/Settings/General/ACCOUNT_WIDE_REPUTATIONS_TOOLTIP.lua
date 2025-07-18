@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Reputations are now tracked Account-Wide in Blizzard's database for achievements, so turning this on may be a good idea.",
 		-- TODO: de = "",
 		es = "Las reputaciones ahora son rastreadas a nivel de toda la cuenta en la base de datos de Blizzard para los logros, así que activar esto puede ser buena idea.",
-		-- TODO: mx = "",
+		mx = "Las reputaciones ahora son rastreadas a nivel de toda la cuenta en la base de datos de Blizzard para los logros, así que activar esto puede ser buena idea.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

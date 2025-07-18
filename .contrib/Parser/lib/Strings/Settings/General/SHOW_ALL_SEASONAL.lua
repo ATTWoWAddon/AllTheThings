@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "All Seasonal Events",
 		-- TODO: de = "",
 		es = "Todos los eventos de temporales",
-		-- TODO: mx = "",
+		mx = "Todos los eventos de estacionales",
 		fr = "Événemnts saisonniers",
 		-- TODO: it = "",
 		-- TODO: pt = "",

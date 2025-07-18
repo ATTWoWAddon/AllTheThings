@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Turn this setting on if you want to see Account Mode data only for races and classes of your current faction.",
 		-- TODO: de = "",
 		es = "Activa este ajuste si quieres ver los datos de Modo Cuenta sólo para las razas y clases de tu facción actual.",
-		-- TODO: mx = "",
+		mx = "Activa este ajuste si quieres ver los datos de Modo Cuenta sólo para las razas y clases de tu facción actual.",
 		fr = "Activez cette option si vous souhaitez afficher les données du mode Compte uniquement pour les races et les classes de votre faction actuelle.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Completionist Mode enables Sources, only marking gear as collected when you have learned the appearance from that specific item.",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "El modo Completista habilita las Fuentes y solo marca el equipo como recolectado cuando hayas aprendido la apariencia de ese elemento específico.",
+		mx = "El modo Completista habilita las Fuentes y solo marca el equipo como recolectado cuando hayas aprendido la apariencia de ese elemento específico.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

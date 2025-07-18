@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Core Mode enables the collectibles visible in the game's Warband Collections journal.",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "El modo básico habilita los coleccionables visibles en el diario de colecciones de la bandas guerreras.",
+		mx = "El modo básico habilita los coleccionables visibles en el diario de colecciones de las tropas.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

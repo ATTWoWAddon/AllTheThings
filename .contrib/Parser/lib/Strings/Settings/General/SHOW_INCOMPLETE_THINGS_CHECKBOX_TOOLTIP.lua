@@ -5,7 +5,7 @@ createLocalizationString({
 	text = {
 		en = "Enable this option if you want to see incomplete repeatable content without forcing it to be considered 'collectible'.\n\nNOTE: Non-saved Rare Spawns, Treasures, and Vignettes also appear in the listing with this setting turned on.",
 		-- TODO: de = "",
-		es = "Activa esta opción si quieres ver los objetos, PNJs y cabeceras que se pueden rastrear en el juego sin que se consideren 'coleccionables' necesariamente.\n\nPuedes usarlo para ayudarte a conseguir el logro Maestro cultural si aún no lo tienes.\n\nNOTA: Los enemigos Raros y las aventuras también apareceran en el listado con este ajuste activado.",
+		es = "Activa esta opción si quieres ver los objetos, PNJs y cabeceras que se pueden rastrear en el juego sin que se consideren 'coleccionables' necesariamente.\n\nPuedes usarlo para ayudarte a conseguir el logro Maestro cultural si aún no lo tienes.\n\nNOTA: Los enemigos Raros y las aventuras también aparecerán en el listado con este ajuste activado.",
 		mx = "Activa esta opción si quieres ver los objetos, PNJs y cabeceras que se pueden rastrear en el juego sin que se consideren 'coleccionables' necesariamente.\n\nPuedes usarlo para ayudarte a conseguir el logro Maestro cultural si aún no lo tienes.\n\nNOTA: Los enemigos Raros y las aventuras también aparecerán en el listado con este ajuste activado.",
 		-- TODO: fr = "",
 		-- TODO: it = "",

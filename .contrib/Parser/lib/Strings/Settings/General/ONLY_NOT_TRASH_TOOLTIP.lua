@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option to ignore white/grey items. Blizzard does not yet provide API for it in Classic.",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Habilite esta opción para ignorar los elementos blancos o grises. Blizzard aún no ofrece una API para ello en Classic.",
+		mx = "Habilite esta opción para ignorar los elementos blancos o grises. Blizzard aún no ofrece una API para ello en Classic.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

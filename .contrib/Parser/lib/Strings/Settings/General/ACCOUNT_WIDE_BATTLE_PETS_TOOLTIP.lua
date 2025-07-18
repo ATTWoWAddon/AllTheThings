@@ -5,7 +5,7 @@ createLocalizationString({
 	text = {
 		en = "Companion pets can be collected on multiple characters and realistically would require that you have an insane amount of bag space in order to collect them all on one character.\n\nWe recommend you keep this turned on, but you do you fam.",
 		-- TODO: de = "",
-		es = "Las mascotas de compañia pueden coleccionarse con múltiples personajes y realmente requeriría que tuvieses un montón de espacio en las bolsas para poder coleccionarlas todas en un personaje.\n\nRecomendamos mantener esto activado, pero cada quién hace lo que quiere.",
+		es = "Las mascotas de compañía pueden coleccionarse con múltiples personajes y realmente requeriría que tuvieses un montón de espacio en las bolsas para poder coleccionarlas todas en un personaje.\n\nRecomendamos mantener esto activado, pero cada quién hace lo que quiere.",
 		mx = "Las mascotas de compañía pueden coleccionarse con múltiples personajes y realmente requeriría que tuvieses un montón de espacio en las bolsas para poder coleccionarlas todas en un personaje.\n\nRecomendamos mantener esto activado, pero cada quién hace lo que quiere.",
 		-- TODO: fr = "",
 		-- TODO: it = "",

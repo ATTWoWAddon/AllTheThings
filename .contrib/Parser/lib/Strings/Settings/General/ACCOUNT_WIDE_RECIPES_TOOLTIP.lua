@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Recipes are not normally tracked Account-Wide in Blizzard's database, but we can do that.\n\nIt is impossible to collect them all on one character, so with this, you can give your alts and their professions meaning.",
 		-- TODO: de = "",
 		es = "Las recetas normalmente no son rastreadas a nivel de toda la cuenta en la base de datos de Blizzard, pero nosotros podemos hacerlo.\n\nEs imposible coleccionarlas todas en un personaje, así que con esto, puedes dar a tus personajes secundarios y a sus profesiones un sentido.",
-		-- TODO: mx = "",
+		mx = "Las recetas normalmente no son rastreadas a nivel de toda la cuenta en la base de datos de Blizzard, pero nosotros podemos hacerlo.\n\nEs imposible coleccionarlas todas en un personaje, así que con esto, puedes dar a tus personajes secundarios y a sus profesiones un sentido.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

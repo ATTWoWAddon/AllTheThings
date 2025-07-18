@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this to consider a Soulbind Conduit as collected for all characters if at least one character has learned it.",
 		-- TODO: de = "",
 		es = "Activa esto para considerar los conductos de nexo de almas como coleccionados en todos los personajes si almenos uno de ellos los ha aprendido.",
-		-- TODO: mx = "",
+		mx = "Activa esto para considerar los conductos de anima como coleccionados en todos los personajes si almenos uno de ellos los ha aprendido.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

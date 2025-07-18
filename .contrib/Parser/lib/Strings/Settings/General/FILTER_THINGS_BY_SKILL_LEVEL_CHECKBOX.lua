@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "No Skill Level Restrictions",
 		-- TODO: de = "",
 		es = "Sin restricciones de habilidad",
-		-- TODO: mx = "",
+		mx = "Sin restricciones de habilidad",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

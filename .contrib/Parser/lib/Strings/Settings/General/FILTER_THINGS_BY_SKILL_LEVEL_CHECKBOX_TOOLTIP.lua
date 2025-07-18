@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Disable this setting if you only want to see content available to the maximum possible skill level available to the game environment.",
 		-- TODO: de = "",
 		es = "Desactiva este ajuste si quieres ver sólo el contenido disponible para el máximo nivel de habilidad de la versión del juego.",
-		-- TODO: mx = "",
+		mx = "Desactiva este ajuste si quieres ver sólo el contenido disponible para el máximo nivel de habilidad de la versión del juego.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

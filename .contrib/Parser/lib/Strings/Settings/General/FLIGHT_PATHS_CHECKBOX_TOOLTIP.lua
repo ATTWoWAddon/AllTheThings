@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option to track flight paths and ferry stations.\n\nTo collect these, open the dialog with the flight / ferry master in each continent.\n\nNOTE: Due to phasing technology, you may have to phase to the other versions of a zone to get credit for those points of interest.",
 		-- TODO: de = "",
-		es = "Activa esta opción para rastrar puntos de vuelo y muelles de ferry.\n\nPara coleccionar estos, abre el dialogo con el maestro de punto de vuelo / ferri en cada continente.\n\nNOTA: Debido a la tecnologia de faseo, puede que tengas que fasearte a otras versiones de una zona para obtener crédito de esos puntos de interés.",
-		mx = "Activa esta opción para rastrar puntos de vuelo y muelles de ferry.\n\nPara coleccionar estos, abre el dialogo con el maestro de punto de vuelo / ferri en cada continente.\n\nNOTA: Debido a la tecnología de faseo, puede que tengas que fasearte a otras versiones de una zona para obtener crédito de esos puntos de interés.",
+		es = "Activa esta opción para rastrar rutas de vuelo y muelles de ferry.\n\nPara coleccionar estos, abre el dialogo con el maestro de punto de vuelo / ferri en cada continente.\n\nNOTA: Debido a la tecnología de faseo, puede que tengas que fasearte a otras versiones de una zona para obtener crédito de esos puntos de interés.",
+		mx = "Activa esta opción para rastrar rutas de vuelo y muelles de ferry.\n\nPara coleccionar estos, abre el dialogo con el maestro de punto de vuelo / ferri en cada continente.\n\nNOTA: Debido a la tecnología de faseo, puede que tengas que fasearte a otras versiones de una zona para obtener crédito de esos puntos de interés.",
 		fr = "Activer cette option pour suivre les trajets de vol et les stations de ferries. Pour les collecter, ouvrez le dialogue avec le maître des vols / ferries de chaque continent.\n\nREMARQUE : en raison de la technologie de mise en phase, il se peut que vous deviez passer en phase dans les autres versions d’une zone pour obtenir le crédit de ces points d’intérêt.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

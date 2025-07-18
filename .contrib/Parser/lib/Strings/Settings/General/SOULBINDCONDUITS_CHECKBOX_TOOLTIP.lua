@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option to track Shadowlands Conduits.",
 		-- TODO: de = "",
-		es = "Activa esta opción para rastrar Conductos de Shadowlands.",
-		-- TODO: mx = "",
+		es = "Activa esta opción para rastrear Conductos de Shadowlands.",
+		mx = "Activa esta opción para rastrear Conductos de Shadowlands.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

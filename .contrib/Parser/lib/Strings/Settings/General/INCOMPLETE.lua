@@ -8,6 +8,7 @@ createLocalizationString({
 		en = "Incomplete",
 		de = "Unvollständig",
 		es = "Incompleto",
+		mx = "Incompleto",
 		fr = "Incomplet",
 		ru = "Не Выполнено",
 		cn = "未完成",

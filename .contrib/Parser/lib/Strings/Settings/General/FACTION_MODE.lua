@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Faction Only",
 		de = "Nur derzeitige Fraktion",
 		es = "Sólo Facción",
-		-- TODO: mx = "",
+		mx = "Sólo Facción",
 		fr = "Faction uniquement",
 		-- TODO: it = "",
 		-- TODO: pt = "",

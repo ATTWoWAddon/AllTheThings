@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "General Things",
 		de = "Allgemeine Dinge",
 		es = "Cosas generales",
-		-- TODO: mx = "",
+		mx = "Cosas generales",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

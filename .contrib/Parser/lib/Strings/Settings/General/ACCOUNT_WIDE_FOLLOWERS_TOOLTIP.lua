@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Followers are typically per character, but do you really want to have to collect 243 Garrison Inn Followers on one character at a rate of 1 per week?\n\nI think not, good sir.",
 		-- TODO: de = "",
 		es = "Los seguidores normalmente son por Personaje, pero realmente quieres tener que coleccionar los 243 seguidores de Ciudadela en uno de tus personajes a un ritmo de 1 por semana?\n\nNo lo creo, mi señor.",
-		-- TODO: mx = "",
+		mx = "Los seguidores normalmente son por Personaje, pero realmente quieres tener que coleccionar los 243 seguidores de Ciudadela en uno de tus personajes a un ritmo de 1 por semana?\n\nNo lo creo, mi señor.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

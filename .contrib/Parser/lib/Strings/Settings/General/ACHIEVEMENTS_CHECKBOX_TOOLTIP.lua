@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option to track achievements.",
 		de = "Aktiviere diese Option, um Erfolge zu verfolgen.",
 		es = "Activa esta opción para rastrear logros.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción para rastrear logros.",
 		fr = "Activer cette option pour suivre les hauts faits.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

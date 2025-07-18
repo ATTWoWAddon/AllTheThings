@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option to track Character Unlocks. These are various character-based unlocks which aren't clearly able to be categorized as another type (e.g. Hex variants, Polymorph variants, Hunter species taming unlocks, Pocopoc customizations, etc.)\n\nTracked per character by default.",
 		-- TODO: de = "",
-		es = "Activa esta opción para rastrar los Desbloqueos de personaje. Son varios debloqueos de personaje que no son claramente categorizables en otro sitio (e.g. variantes de Maleficio, variantes de Polimorfia, especies domables desbloqueadas de cazador, personalizaciones de Pocopoc, etc.)\n\nRastreado por personaje por defecto.",
-		mx = "Activa esta opción para rastrar los desbloqueos de personaje. Son varios debloqueos de personaje que no son claramente categorizables en otro sitio (e.g. variantes de Maleficio, variantes de Polimorfia, especies domables desbloqueadas de cazador, personalizaciones de Pocopoc, etc.)\n\nRastreado por personaje por defecto.",
+		es = "Activa esta opción para rastrar los Desbloqueos de personaje. Son varios debloqueos de personaje que no son claramente categorizables en otro sitio (ejem: variantes de Maleficio, variantes de Polimorfia, especies domables desbloqueadas de cazador, personalizaciones de Pocopoc, etc.)\n\nRastreado por personaje por defecto.",
+		mx = "Activa esta opción para rastrar los desbloqueos de personaje. Son varios debloqueos de personaje que no son claramente categorizables en otro sitio (ejem: variantes de Maleficio, variantes de Polimorfia, especies domables desbloqueadas de cazador, personalizaciones de Pocopoc, etc.)\n\nRastreado por personaje por defecto.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

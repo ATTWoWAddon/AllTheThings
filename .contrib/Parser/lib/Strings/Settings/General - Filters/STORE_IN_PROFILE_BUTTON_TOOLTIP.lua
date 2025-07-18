@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "By default, ATT stores these Filters on a per-character basis.\n\nCheck this option to store these Filter selections in the current Profile rather than per-character.",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "De forma predeterminada, ATT almacena estos filtros por personaje.\n\nMarque esta opción para almacenar estas selecciones de filtros en el perfil actual en lugar de por personaje.",
+		mx = "De forma predeterminada, ATT almacena estos filtros por personaje.\n\nMarque esta opción para almacenar estas selecciones de filtros en el perfil actual en lugar de por personaje.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

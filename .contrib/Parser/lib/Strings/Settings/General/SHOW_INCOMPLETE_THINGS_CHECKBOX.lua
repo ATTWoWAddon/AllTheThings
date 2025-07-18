@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Show Repeatable/Trackable Things",
 		de = "Zeig alle verfolgbaren Dinge",
-		es = "Muestra todas las cosas rastreables",
-		-- TODO: mx = "",
+		es = "Muestra todas las cosas repetibles/rastreables",
+		mx = "Muestra todas las cosas repetibles/rastreables",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

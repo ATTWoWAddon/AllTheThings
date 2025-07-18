@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Windows",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Ventanas",
+		mx = "Ventanas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

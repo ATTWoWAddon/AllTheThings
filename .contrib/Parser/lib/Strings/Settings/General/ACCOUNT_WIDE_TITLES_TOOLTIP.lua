@@ -5,7 +5,7 @@ createLocalizationString({
 	text = {
 		en = "Most titles are tracked Account-Wide, but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.",
 		-- TODO: de = "",
-		es = "La mayoría de títulos son rastreados a nivel de toda la cuenta, pero algunos títulos prestigiosos en el WoW estan bloqueados al personaje que los ganó.\n\nActiva esto si no te importa eso y quieres ver esos títulos marcados como Completados en tus personajes secundarios.",
+		es = "La mayoría de títulos son rastreados a nivel de toda la cuenta, pero algunos títulos prestigiosos en el WoW están bloqueados al personaje que los ganó.\n\nActiva esto si no te importa eso y quieres ver esos títulos marcados como Completados en tus personajes secundarios.",
 		mx = "La mayoría de títulos son rastreados a nivel de toda la cuenta, pero algunos títulos prestigiosos en el WoW están bloqueados al personaje que los ganó.\n\nActiva esto si no te importa eso y quieres ver esos títulos marcados como Completados en tus personajes secundarios.",
 		-- TODO: fr = "",
 		-- TODO: it = "",

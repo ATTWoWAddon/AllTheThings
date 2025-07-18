@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Campsites",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Campamento",
+		mx = "Sitios de acampado",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

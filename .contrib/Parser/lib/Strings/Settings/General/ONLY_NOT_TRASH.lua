@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Filter Trash Items",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Filtrar objetos basura",
+		mx = "Filtrar objetos basura",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

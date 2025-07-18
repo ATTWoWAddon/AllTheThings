@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "None of the Things Mode disables the tracking of all collectibles. Way to challenge yourself.",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "El modo Ninguna de las Cosas desactiva el seguimiento de todos los coleccionables. ¡Menudo reto!",
+		mx = "El modo Ninguna de las Cosas desactiva el seguimiento de todos los coleccionables. ¡Vaya reto!",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
