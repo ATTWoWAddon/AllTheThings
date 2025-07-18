@@ -7,7 +7,7 @@ createLocalizationString({
 		en = "Not Collected",
 		de = "Nicht gesammelt",
 		es = "No adquirido",
-		mx = "No aprendido",
+		mx = "No coleccionado",
 		fr = "Pas Collecté",
 		ru = "Не Собрано",
 		cn = "未收藏",

@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Patreon",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Patreon",
+		mx = "Patreon",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

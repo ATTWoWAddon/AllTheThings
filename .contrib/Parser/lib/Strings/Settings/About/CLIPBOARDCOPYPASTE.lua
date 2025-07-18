@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Ctrl+A, Ctrl+C to Copy to your Clipboard.",
 		-- TODO: de = "",
 		es = "Ctrl+A, Ctrl+C para Copiar a tu Portapapeles.",
-		-- TODO: mx = "",
+		mx = "Ctrl+A, Ctrl+C para Copiar a tu Portapapeles.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

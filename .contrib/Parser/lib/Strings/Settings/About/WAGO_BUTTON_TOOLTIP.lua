@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Click this button to copy the url to get the ALL THE THINGS addon from Wago.io.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you ... maybe.",
 		-- TODO: de = "",
-		es = "Haz clic en este botón para copiar el enlace del addon ALL THE THINGS en Wago.io.\n\nPuedes dar este enlace a tus amigos para que arruinen sus vidas también! Te van a perdonar en un futuro ...o no.",
-		mx = "Haz click en este botón para copiar el enlace del addon ALL THE THINGS en Wago.io.\n\nPuedes dar este enlace a tus amigos para que arruinen sus vidas también! Te van a perdonar en un futuro ...o no.",
+		es = "Haz clic en este botón para copiar el enlace del addon ALL THE THINGS en Wago.io.\n\n¡Puedes dar este enlace a tus amigos para que arruinen sus vidas también! Te van a perdonar en un futuro ...o no.",
+		mx = "Haz click en este botón para copiar el enlace del addon ALL THE THINGS en Wago.io.\n\n¡Puedes dar este enlace a tus amigos para que arruinen sus vidas también! Te van a perdonar en un futuro ...o no.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

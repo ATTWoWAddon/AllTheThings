@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Click this button to copy the URL to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!",
 		de = "Klicke auf diese Schaltfläche, um den Link zu meinem Twitch Kanal zu kopieren.\n\nWährend ich Streame, könnt Ihr Fragen stellen. Ich werde mein bestes versuchen sie zu beantworten!",
-		es = "Haz clic en este botón para copiar el enlace a mi canal de Twitch.\n\nPuedes preguntarme dudas cuando esté haciendo directos e intentaré responderte lo mejor que pueda!",
-		mx = "Haz click en este botón para copiar el enlace a mi canal de Twitch.\n\nPuedes preguntarme dudas cuando esté haciendo directos e intentaré responderte lo mejor que pueda!",
+		es = "Haz clic en este botón para copiar el enlace a mi canal de Twitch.\n\n¡Puedes preguntarme dudas cuando esté haciendo directos e intentaré responderte lo mejor que pueda!",
+		mx = "Haz click en este botón para copiar el enlace a mi canal de Twitch.\n\n¡Puedes preguntarme dudas cuando esté haciendo directos e intentaré responderte lo mejor que pueda!",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

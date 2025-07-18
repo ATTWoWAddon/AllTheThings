@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Tooltip",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Ventana emergente",
+		mx = "Ventana emergente",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Merch",
 		-- TODO: de = "",
 		es = "Mercancía",
-		-- TODO: mx = "",
+		mx = "Mercancía",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

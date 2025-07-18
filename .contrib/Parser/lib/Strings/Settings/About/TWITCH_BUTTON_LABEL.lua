@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Twitch",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Twitch",
+		mx = "Twitch",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

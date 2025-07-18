@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Click this button to copy the URL to get to the All The Things GitHub.\n\nYou can clone the repository directly without needing to use a third party addon manager!",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Haga clic en este botón para copiar la URL y acceder a All The Things GitHub.\n\n¡Puede clonar el repositorio directamente sin necesidad de usar un administrador de complementos de terceros!",
+		mx = "Haga click en este botón para copiar la URL y acceder a All The Things GitHub.\n\n¡Puede clonar el repositorio directamente sin necesidad de usar un administrador de complementos de terceros!",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

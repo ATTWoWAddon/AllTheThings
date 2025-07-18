@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Click this button to copy the URL to get to the All The Things merchandise store.\n\nHere you can support the AddOn financially and get some cool merch in return!",
 		-- TODO: de = "",
-		es = "Haz clic en este botón para copiar el enlace a la tienda de artículos de All The Things.\n\nAquí puedes dar soporte financiero al Addon y conseguir artículos chulos a cambio!",
-		mx = "Haz click en este botón para copiar el enlace a la tienda de artículos de All The Things.\n\nAquí puedes dar soporte financiero al Addon y conseguir artículos chulos a cambio!",
+		es = "Haz clic en este botón para copiar el enlace a la tienda de artículos de All The Things.\n\n¡Aquí puedes dar soporte financiero al Addon y conseguir artículos chulos a cambio!",
+		mx = "Haz click en este botón para copiar el enlace a la tienda de artículos de All The Things.\n\n¡Aquí puedes dar soporte financiero al Addon y conseguir artículos chulos a cambio!",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

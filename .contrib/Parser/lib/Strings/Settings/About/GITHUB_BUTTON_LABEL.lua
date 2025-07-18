@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "GitHub",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "GitHub",
+		mx = "GitHub",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,4 +6,5 @@ createLocalizationString({
 	export = true,
 	text = {
 		en = "",
+	},
 })

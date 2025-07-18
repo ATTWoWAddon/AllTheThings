@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Curse",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Curse",
+		mx = "Curse",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
