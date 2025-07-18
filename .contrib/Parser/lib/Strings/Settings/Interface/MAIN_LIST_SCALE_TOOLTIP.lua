@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Use this to customize the scale of the Main List.\n\nDefault: 1",
 		-- TODO: de = "",
 		es = "Usa esto para personalizar la escala de la Lista Principal.\n\nPor defecto: 1",
-		-- TODO: mx = "",
+		mx = "Usa esto para personalizar la escala de la Lista Principal.\n\nPor defecto: 1",
 		fr = "Utilisez cette option pour personnaliser l’échelle de la liste principale.\n\nDéfaut : 1",
 		-- TODO: it = "",
 		-- TODO: pt = "",

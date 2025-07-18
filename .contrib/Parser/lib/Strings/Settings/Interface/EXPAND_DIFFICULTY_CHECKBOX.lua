@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Expand Current Difficulty",
 		-- TODO: de = "",
 		es = "Expandir la dificultad actual",
-		-- TODO: mx = "",
+		mx = "Expandir la dificultad actual",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

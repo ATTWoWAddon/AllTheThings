@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option to ignore rendering NPC tooltips while in combat.",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Habilite esta opción para ignorar la presentación de la información sobre ventanas emergentes de los NPC durante el combate.",
+		mx = "Habilite esta opción para ignorar la presentación de la información sobre ventanas emergentes de los NPC durante el combate.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

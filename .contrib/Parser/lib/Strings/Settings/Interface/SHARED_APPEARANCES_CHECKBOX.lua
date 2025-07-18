@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Shared Appearances",
 		-- TODO: de = "",
 		es = "Apariencias compartidas",
-		-- TODO: mx = "",
+		mx = "Apariencias compartidas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

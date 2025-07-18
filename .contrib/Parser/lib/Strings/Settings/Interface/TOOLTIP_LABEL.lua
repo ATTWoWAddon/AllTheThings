@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Tooltips",
 		-- TODO: de = "",
 		es = "Descripciones emergentes",
-		-- TODO: mx = "",
+		mx = "Descripciones emergentes",
 		fr = "Infobulles",
 		-- TODO: it = "",
 		-- TODO: pt = "",

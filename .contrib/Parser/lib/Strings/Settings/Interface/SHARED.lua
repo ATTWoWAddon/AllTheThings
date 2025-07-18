@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Shared",
 		de = "Geteilt",
-		es = "Compartido",
-		-- TODO: mx = "",
+		es = "Compartido/a",
+		mx = "Compartido/a",
 		fr = "Partagé",
 		-- TODO: it = "",
 		-- TODO: pt = "",

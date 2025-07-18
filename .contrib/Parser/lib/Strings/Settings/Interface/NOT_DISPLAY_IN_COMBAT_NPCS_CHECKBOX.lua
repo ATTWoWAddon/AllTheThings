@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Except NPCs",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Excepto PNJ",
+		mx = "Excepto PNJ",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

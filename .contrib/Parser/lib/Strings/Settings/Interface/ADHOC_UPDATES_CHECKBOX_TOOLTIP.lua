@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option if you want only visible ATT windows to be updated.\n\nThis can greatly reduce loading times and prevent large framerate spikes in some situations.",
 		-- TODO: de = "",
-		es = "Activa esta opción si quieres que sólo se actualizen las ventanas de ATT visibles.\n\nEsto puede reducir drásticamente los tiempos de carga y prevenir picos grandes de reducción de tasa de refresco en algunas situaciones.",
-		-- TODO: mx = "",
+		es = "Activa esta opción si quieres que sólo se actualicen las ventanas de ATT visibles.\n\nEsto puede reducir drásticamente los tiempos de carga y prevenir picos grandes de reducción de tasa de refresco en algunas situaciones.",
+		mx = "Activa esta opción si quieres que sólo se actualicen las ventanas de ATT visibles.\n\nEsto puede reducir drásticamente los tiempos de carga y prevenir picos grandes de reducción de tasa de refresco en algunas situaciones.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

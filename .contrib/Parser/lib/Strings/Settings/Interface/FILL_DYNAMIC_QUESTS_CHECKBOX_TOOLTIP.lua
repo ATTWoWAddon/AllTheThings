@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option if you want to allow Items/Currencies which are used to purchase collectible Things to be filled with those purchases when under automatically-populated Quests.\n\nFor example, this will cause the [World Quests] window to behave like the minilist rather than the Main list regarding Cost display.\nNote that in most cases, this will drastically increase the apparent content within the window.",
 		-- TODO: de = "",
-		es = "Activa esta opción si quieres permitir objetos/divisas que son usadas para coleccionar cosas se rellenen con esas compras cuanndo estás en misiones dinámicas.\n\nPor ejemplo, esto causa que la ventana de [Misiones de mundo] actúe como una Mini Lista en vez de actuar como una lista principal en cuento a mostrar el Coste.\nTen en cuenta que esto aumenta drásticamente la cantidad de contenido que aparece en la ventana.",
-		-- TODO: mx = "",
+		es = "Activa esta opción si quieres permitir objetos/divisas que son usadas para coleccionar cosas se rellenen con esas compras cuando estás en misiones dinámicas.\n\nPor ejemplo, esto causa que la ventana de [Misiones de mundo] actúe como una Mini Lista en vez de actuar como una lista principal en cuento a mostrar el Coste.\nTen en cuenta que esto aumenta drásticamente la cantidad de contenido que aparece en la ventana.",
+		mx = "Activa esta opción si quieres permitir objetos/divisas que son usadas para coleccionar cosas se rellenen con esas compras cuando estás en misiones dinámicas.\n\nPor ejemplo, esto causa que la ventana de [Misiones de mundo] actúe como una Mini Lista en vez de actuar como una lista principal en cuento a mostrar el Coste.\nTen en cuenta que esto aumenta drásticamente la cantidad de contenido que aparece en la ventana.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

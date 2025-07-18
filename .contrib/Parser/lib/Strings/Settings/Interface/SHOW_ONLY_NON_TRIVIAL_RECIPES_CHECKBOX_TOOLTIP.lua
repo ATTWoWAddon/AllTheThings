@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you only want to see non-trivial recipes in the recipe list.",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres ver sólo las recetas no triviales en la lista de recetas.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres ver sólo las recetas no triviales en la lista de recetas.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

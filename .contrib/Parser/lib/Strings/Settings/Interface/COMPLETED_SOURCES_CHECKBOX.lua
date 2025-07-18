@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "For Completed",
 		-- TODO: de = "",
-		es = "Para completado",
-		-- TODO: mx = "",
+		es = "completados",
+		mx = "completados",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

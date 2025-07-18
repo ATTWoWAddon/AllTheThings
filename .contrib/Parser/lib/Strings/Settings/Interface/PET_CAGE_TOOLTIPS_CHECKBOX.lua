@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Pet Cages",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Jaulas de mascotas",
+		mx = "Jaulas de mascotas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

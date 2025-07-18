@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Show Crafted Items",
 		-- TODO: de = "",
 		es = "Mostrar objetos fabricados",
-		-- TODO: mx = "",
+		mx = "Mostrar objetos fabricados",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

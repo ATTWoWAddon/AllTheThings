@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Allow Wrapping",
 		-- TODO: de = "",
-		es = "Permitir ajuste de línea",
-		-- TODO: mx = "",
+		es = "Permitir ajuste de largo",
+		mx = "Permitir ajuste de largo",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Mini Lists Scale",
 		-- TODO: de = "",
 		es = "Escala Mini Listas",
-		-- TODO: mx = "",
+		mx = "Escala Mini Listas",
 		fr = "Échelle de la mini-liste",
 		-- TODO: it = "",
 		-- TODO: pt = "",

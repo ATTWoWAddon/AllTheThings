@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want to see the percent completion of each row.\n\nColoring of groups by completion is unaffected.",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres ver el porcentaje de completado de cada línea.\n\nEl coloreado de grupos por completado no se ve afectado.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres ver el porcentaje de completado de cada línea.\n\nEl coloreado de grupos por completado no se ve afectado.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

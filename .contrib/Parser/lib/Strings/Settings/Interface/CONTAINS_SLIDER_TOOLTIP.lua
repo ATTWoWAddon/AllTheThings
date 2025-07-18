@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Use this to customize the number of Summarized Things to show in the tooltip.\n\nDefault: 25",
 		-- TODO: de = "",
 		es = "Usa esto para personalizar el número de cosas resumidas a mostrar en la ventana emergente.\n\nPor defecto: 25",
-		-- TODO: mx = "",
+		mx = "Usa esto para personalizar el número de cosas resumidas a mostrar en la ventana emergente.\n\nPor defecto: 25",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

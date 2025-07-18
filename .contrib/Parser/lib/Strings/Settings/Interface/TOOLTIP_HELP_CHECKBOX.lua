@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Show Tooltip Help",
 		-- TODO: de = "",
 		es = "Muestra la ayuda de las descripciones emergentes",
-		-- TODO: mx = "",
+		mx = "Muestra la ayuda de las descripciones emergentes",
 		fr = "Afficher l’infobulle d’aide",
 		-- TODO: it = "",
 		-- TODO: pt = "",

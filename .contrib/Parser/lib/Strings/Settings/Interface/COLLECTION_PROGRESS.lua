@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Collection Progress",
 		de = "Fortschritt der Sammlung",
 		es = "Progreso de la colección",
-		-- TODO: mx = "",
+		mx = "Progreso de la colección",
 		fr = "Progression de la collection",
 		-- TODO: it = "",
 		pt = "Progresso da Coleção",

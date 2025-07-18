@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option if you want to see Source Locations which have not been fully sourced into the database.",
 		-- TODO: de = "",
-		es = "Activa esta opción si quieres ver las ubicaciones de origen que no se han añadido del todo a la base de datos.",
-		-- TODO: mx = "",
+		es = "Activa esta opción si quieres ver las ubicaciones de fuente que no se han añadido del todo a la base de datos.",
+		mx = "Activa esta opción si quieres ver las ubicaciones de origen que no se han añadido del todo a la base de datos.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

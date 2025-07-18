@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "For Creatures",
 		de = "Für Kreaturen",
 		es = "Para criaturas",
-		-- TODO: mx = "",
+		mx = "Para criaturas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

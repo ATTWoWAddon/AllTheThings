@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you only want to see shared appearances that your character can unlock.\n\nNOTE: We recommend you keep this off as knowing the unlock requirements for an item can be helpful in identifying why an item is Not Collected.",
 		-- TODO: de = "",
 		es = "Activa esta opción si quiere ver sólo las apariencias compartidas que tu personaje puede desbloquear.\n\nNOTA: Recomendamos mantener esto desactivado porque saber los requerimientos de desbloqueo de un objeto puede ayudar a identificar porque un objeto no es Coleccionado.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quiere ver sólo las apariencias compartidas que tu personaje puede desbloquear.\n\nNOTA: Recomendamos mantener esto desactivado porque saber los requerimientos de desbloqueo de un objeto puede ayudar a identificar porque un objeto no es Coleccionado.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

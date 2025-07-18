@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Icon Only",
 		-- TODO: de = "",
 		es = "Sólo icono",
-		-- TODO: mx = "",
+		mx = "Sólo icono",
 		fr = "Icône seulement",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Ad-Hoc Window Updates",
 		-- TODO: de = "",
 		es = "Actualizaciones de ventanas Ad Hoc",
-		-- TODO: mx = "",
+		mx = "Actualizaciones de ventanas Ad Hoc",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

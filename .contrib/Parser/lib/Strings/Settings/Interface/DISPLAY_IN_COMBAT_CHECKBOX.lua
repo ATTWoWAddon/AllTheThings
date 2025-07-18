@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "In Combat",
 		de = "Im Kampf",
 		es = "En combate",
-		-- TODO: mx = "",
+		mx = "En combate",
 		fr = "En combat",
 		-- TODO: it = "",
 		-- TODO: pt = "",

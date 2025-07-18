@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Completed By: %s",
 		de = "Vervollständigt von: %s",
 		es = "Completado por: %s",
-		-- TODO: mx = "",
+		mx = "Completado por: %s",
 		fr = "Complété par: %s",
 		-- TODO: it = "",
 		-- TODO: pt = "",

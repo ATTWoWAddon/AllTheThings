@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Only Relevant",
 		-- TODO: de = "",
 		es = "Sólo relevante",
-		-- TODO: mx = "",
+		mx = "Sólo relevante",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

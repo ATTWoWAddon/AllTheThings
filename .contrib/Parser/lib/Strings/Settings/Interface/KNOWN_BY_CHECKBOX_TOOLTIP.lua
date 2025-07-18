@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want to see the full list of characters on all servers that know the Recipe in the tooltip.",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres ver una lista completa de todos los personajes en todos los servidores que conocen la receta en su ventana emergente",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres ver una lista completa de todos los personajes en todos los servidores que conocen la receta en su ventana emergente",
 		fr = "Activez cette option si vous souhaitez afficher dans l’infobulle la liste complète des personnages de tous les serveurs qui connaissent la recette.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

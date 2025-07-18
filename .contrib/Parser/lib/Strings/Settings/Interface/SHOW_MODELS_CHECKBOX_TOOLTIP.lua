@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option to show models within a preview instead of the icon on the tooltip.\n\nThis option may assist you in identifying what a Rare Spawn or Vendor looks like. It might be a good idea to keep this turned on for that reason.",
 		-- TODO: de = "",
 		es = "Activa esta opción para mostrar los modelos en vez del icono en la ventana emergente.\n\nEsta opción puede ayudarte a identificar cómo es un PNJ raro o un vendedor. Puede ser buena idea mantener esto activo por esta razón.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción para mostrar los modelos en vez del icono en la ventana emergente.\n\nEsta opción puede ayudarte a identificar cómo es un PNJ raro o un vendedor. Puede ser buena idea mantener esto activo por esta razón.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

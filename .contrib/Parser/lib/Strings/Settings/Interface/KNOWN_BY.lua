@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Known by %s",
 		de = "Bekannt durch %s",
 		es = "Conocido por %s",
-		-- TODO: mx = "",
+		mx = "Conocido por %s",
 		fr = "Connu par %s",
 		-- TODO: it = "",
 		pt = "Conhecido como %s",

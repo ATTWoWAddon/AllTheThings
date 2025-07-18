@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want to see the information provided by ATT in external tooltips. This includes item links sent by other players, in the auction house, in the dungeon journal, in your bags, in the world, on NPCs, etc.\n\nIf you turn this feature off, you are seriously reducing your ability to quickly determine if you need to kill a mob or learn an appearance.\n\nWe recommend you keep this setting on.",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres ver la información que da ATT en una ventana emergente externa. Esto incluye enlaces enviados por otros jugadores a objetos, en la Casa de Subastas, en el Diario de aventurero, en tus bolsas, en el mundo, en PNJs, etc.\n\nSi desactivas esto, estas reduciendo seriamente tu habilidad de determinar rápidamente si necesitas matar un monstruo o aprender una apariencia.\n\nRecomendamos mantener activado este ajuste.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres ver la información que da ATT en una ventana emergente externa. Esto incluye enlaces enviados por otros jugadores a objetos, en la Casa de Subastas, en el Diario de aventurero, en tus bolsas, en el mundo, en PNJs, etc.\n\nSi desactivas esto, estas reduciendo seriamente tu habilidad de determinar rápidamente si necesitas matar un monstruo o aprender una apariencia.\n\nRecomendamos mantener activado este ajuste.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

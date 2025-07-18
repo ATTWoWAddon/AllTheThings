@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Summarize Things",
 		-- TODO: de = "",
 		es = "Resume cosas",
-		-- TODO: mx = "",
+		mx = "Resume cosas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

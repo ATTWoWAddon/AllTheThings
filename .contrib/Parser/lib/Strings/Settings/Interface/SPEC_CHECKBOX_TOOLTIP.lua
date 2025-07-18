@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option to show the loot specialization information of items in the item's tooltip as provided by the Game Client.\n\nNOTE: These icons will still appear within the ATT mini lists regardless of this setting.",
 		-- TODO: de = "",
 		es = "Activa esta opción para mostrar la especialización de botín de objetos en la ventana emergente del objeto tal y como se muestra en el cliente del juego.\n\nNOTA: Estos iconos se mostrarán igualmente en las Mini Listas de ATT independientemente de este ajuste.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción para mostrar la especialización de botín de objetos en la ventana emergente del objeto tal y como se muestra en el cliente del juego.\n\nNOTA: Estos iconos se mostrarán igualmente en las Mini Listas de ATT independientemente de este ajuste.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Model Preview",
 		de = "Modell Vorschau",
 		es = "Previsualizar Modelos",
-		-- TODO: mx = "",
+		mx = "Previsualizar Modelos",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

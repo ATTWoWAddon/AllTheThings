@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Show Recipes",
 		-- TODO: de = "",
 		es = "Mostrar recetas",
-		-- TODO: mx = "",
+		mx = "Mostrar recetas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want to see Source Locations for Things.",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres ver las ubicaciones de origen de las cosas.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres ver las ubicaciones de origen de las cosas.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

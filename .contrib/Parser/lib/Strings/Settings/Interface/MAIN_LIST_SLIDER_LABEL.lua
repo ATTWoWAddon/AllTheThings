@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Main List Scale",
 		-- TODO: de = "",
 		es = "Escala Lista Principal",
-		-- TODO: mx = "",
+		mx = "Escala Lista Principal",
 		fr = "Échelle de la liste principale",
 		-- TODO: it = "",
 		-- TODO: pt = "",

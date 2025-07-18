@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option if you want to see completed source locations in the tooltip.\n\nAs an example, if you complete the quest \"Bathran's Hair\" in Ashenvale, the tooltip for Evenar Stillwhisper will no longer show that quest when hovering over him.",
 		-- TODO: de = "",
-		es = "Activa esta opción si quieres to see completed source locations in the tooltip.\n\nAs an example, if you complete the quest \"Bathran's Hair\" in Ashenvale, the tooltip for Evenar Stillwhisper will no longer show that quest when hovering over him.",
-		-- TODO: mx = "",
+		es = "Habilita esta opción si quieres ver las ubicaciones de las fuentes completadas en la información sobre herramientas.\n\nPor ejemplo, si completas la misión \"Cabello de Bathran\" en Vallefresno, la información sobre herramientas de Evenar Plácido Susurro ya no mostrará esa misión al pasar el cursor sobre él.",
+		mx = "Habilita esta opción si quieres ver las ubicaciones de las fuentes completadas en la información sobre herramientas.\n\nPor ejemplo, si completas la misión \"Cabello de Bathran\" en Vallefresno, la información sobre herramientas de Evenar Plácido Susurro ya no mostrará esa misión al pasar el cursor sobre él.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

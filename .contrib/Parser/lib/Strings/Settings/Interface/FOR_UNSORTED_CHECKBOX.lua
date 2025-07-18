@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "For Unsorted",
 		de = "Für Unsortiert",
-		es = "Para no ordenados",
-		-- TODO: mx = "",
+		es = "Para no listados",
+		mx = "Para no listados",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

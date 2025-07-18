@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Only Non-Trivial",
 		-- TODO: de = "",
 		es = "Sólo no triviales",
-		-- TODO: mx = "",
+		mx = "Sólo no triviales",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

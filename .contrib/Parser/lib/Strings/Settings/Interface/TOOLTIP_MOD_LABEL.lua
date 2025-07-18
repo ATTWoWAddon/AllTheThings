@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Modifier",
 		-- TODO: de = "",
 		es = "Modificador",
-		-- TODO: mx = "",
+		mx = "Modificador",
 		-- TODO: it = "",
 		-- TODO: pt = "",
 		ru = "Модификатор",

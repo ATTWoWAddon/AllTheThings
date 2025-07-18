@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Contains:",
 		de = "Enthält:",
 		es = "Contiene:",
-		-- TODO: mx = "",
+		mx = "Contiene:",
 		fr = "Contient :",
 		-- TODO: it = "",
 		pt = "Contém:",

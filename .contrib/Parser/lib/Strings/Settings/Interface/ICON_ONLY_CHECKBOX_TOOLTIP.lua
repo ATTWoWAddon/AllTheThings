@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you only want to see the icon in the topright corner instead of the icon and the collected/not collected text.\n\nSome people like smaller tooltips ...",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres ver sólo el icono en la esquina superior derecha en vez del icono y del texto Coleccionado/No Coleccionado.\n\nAlgunas personas prefieren ventanas emergentes más pequeñas ...",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres ver sólo el icono en la esquina superior derecha en vez del icono y del texto Coleccionado/No Coleccionado.\n\nAlgunas personas prefieren ventanas emergentes más pequeñas ...",
 		fr = "Activez cette option si vous souhaitez afficher uniquement l’icône dans le coin supérieur droit au lieu de l’icône et du texte collecté / non collecté.\n\nCertaines personnes préfèrent des infobulles plus petites…",
 		-- TODO: it = "",
 		-- TODO: pt = "",

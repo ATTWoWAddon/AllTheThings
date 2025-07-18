@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want to see Source Locations for Creatures.",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres ver las ubicaciones de Criaturas.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres ver las ubicaciones de Criaturas.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

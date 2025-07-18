@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want to see your progress towards collecting a Thing or completing a group of Things at the Top Right of its tooltip.\n\nWe recommend that you keep this setting turned on.",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres ver tu progreso para coleccionar una cosa o completar un grupo de cosas en la esquina superior derecha de la ventana emergente.\n\nRecomendamos que mantengas este ajuste activo.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres ver tu progreso para coleccionar una cosa o completar un grupo de cosas en la esquina superior derecha de la ventana emergente.\n\nRecomendamos que mantengas este ajuste activo.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

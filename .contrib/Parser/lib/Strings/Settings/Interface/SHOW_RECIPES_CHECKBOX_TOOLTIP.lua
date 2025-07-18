@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want to see a list of all of the recipes that can be crafted by any of your characters for a reagent in its tooltip.",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres ver la lista de todas las recetas que se pueden fabricar por cualquiera de tus personajes para un ingrediente en su ventana emergente.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres ver la lista de todas las recetas que se pueden fabricar por cualquiera de tus personajes para un ingrediente en su ventana emergente.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

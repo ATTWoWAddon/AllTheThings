@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Show Nested Quest Chains",
 		-- TODO: de = "",
 		es = "Muestra cadenas de misiones anidadas",
-		-- TODO: mx = "",
+		mx = "Muestra cadenas de misiones anidadas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

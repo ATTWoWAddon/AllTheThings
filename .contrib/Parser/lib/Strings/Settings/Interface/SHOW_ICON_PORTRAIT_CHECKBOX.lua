@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Icon Portraits",
 		-- TODO: de = "",
 		es = "Iconos de Retratos",
-		-- TODO: mx = "",
+		mx = "Iconos de Retratos",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

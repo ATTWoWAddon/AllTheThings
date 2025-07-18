@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "\n\n|cffff0000Applied when Generated|r",
 		-- TODO: de = "",
 		es = "\n\n|cffff0000Aplicado cuando se genera|r",
-		-- TODO: mx = "",
+		mx = "\n\n|cffff0000Aplicado cuando se genera|r",
 		fr = "\n\n|cffff0000Requiert un rechargement|r",
 		-- TODO: it = "",
 		-- TODO: pt = "",

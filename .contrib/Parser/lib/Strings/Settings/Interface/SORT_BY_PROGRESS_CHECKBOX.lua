@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Sort By Progress",
 		de = "Nach Fortschritt sortieren",
 		es = "Ordenar por pogreso",
-		-- TODO: mx = "",
+		mx = "Ordenar por pogreso",
 		fr = "Trier par progression",
 		-- TODO: it = "",
 		-- TODO: pt = "",

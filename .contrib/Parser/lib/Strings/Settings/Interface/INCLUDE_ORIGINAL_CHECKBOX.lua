@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Original Source",
 		-- TODO: de = "",
 		es = "Fuente original",
-		-- TODO: mx = "",
+		mx = "origen original",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

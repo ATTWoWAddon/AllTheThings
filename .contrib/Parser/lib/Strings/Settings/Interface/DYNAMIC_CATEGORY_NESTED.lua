@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Nested",
 		-- TODO: de = "",
 		es = "Anidado",
-		-- TODO: mx = "",
+		mx = "Anidado",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

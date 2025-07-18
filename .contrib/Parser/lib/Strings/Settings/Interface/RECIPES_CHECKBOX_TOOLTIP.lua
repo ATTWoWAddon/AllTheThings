@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option to track recipes for your professions.\n\nNOTE: You must open your professions list in order to cache these.",
 		-- TODO: de = "",
 		es = "Activa esta opción para rastrear recetas para tu profesión.\n\nNOTA: Debes abrir tu lista de profesiones para cargar la información de estas.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción para rastrear recetas para tu profesión.\n\nNOTA: Debes abrir tu lista de profesiones para cargar la información de estas.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

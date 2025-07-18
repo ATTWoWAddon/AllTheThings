@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option to show the estimated amount of Items/Currency required to collect Things.\n\nFor Containers which do not reward all of their available content at once, the estimate will thus be lower than actually required.",
 		-- TODO: de = "",
 		es = "Activa esta opción para mostrar el numero aproximado de Objetos/Divisas requeridas para coleccionar cosas.\n\nPara contenedores que no dan todas sus recompensas a la vez, el aproximado puede ser menor al requerido realmente.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción para mostrar el numero aproximado de Objetos/Monedas requeridas para coleccionar cosas.\n\nPara contenedores que no dan todas sus recompensas a la vez, el aproximado puede ser menor al requerido realmente.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Show Remaining Things",
 		-- TODO: de = "",
 		es = "Muestra cosas pendientes",
-		-- TODO: mx = "",
+		mx = "Muestra cosas pendientes",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Fill Dynamic Quests",
 		-- TODO: de = "",
 		es = "Rellenar misiones dinámicas",
-		-- TODO: mx = "",
+		mx = "Rellenar misiones dinámicas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

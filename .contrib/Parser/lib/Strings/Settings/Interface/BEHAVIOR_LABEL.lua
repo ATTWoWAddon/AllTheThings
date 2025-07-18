@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "List Behavior",
 		-- TODO: de = "",
 		es = "Comportamiento de lista",
-		-- TODO: mx = "",
+		mx = "Comportamiento de lista",
 		fr = "Comportement de la liste",
 		-- TODO: it = "",
 		-- TODO: pt = "",

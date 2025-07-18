@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Use this to customize your desired level of precision in percentage calculations.\n\nDefault: 2",
 		-- TODO: de = "",
 		es = "Usa esto para personalizar el nivel de precisión deseado en los cálculos de porcentajes.\n\nPor defecto: 2",
-		-- TODO: mx = "",
+		mx = "Usa esto para personalizar el nivel de precisión deseado en los cálculos de porcentajes.\n\nPor defecto: 2",
 		fr = "Utilisez cette option pour personnaliser le niveau de précision souhaité dans les calculs de pourcentage.\n\nDéfaut : 2",
 		-- TODO: it = "",
 		-- TODO: pt = "",

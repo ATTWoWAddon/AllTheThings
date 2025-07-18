@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option to summarize Things in the tooltip. For example, if a Thing can be turned into a Vendor for another Thing, then show that other thing in the tooltip to provide visibility for its multiple uses. If a Thing acts as a Container for a number of other Things, this option will show all of the other Things that the container Contains.\n\nWe recommend that you keep this setting turned on.",
 		-- TODO: de = "",
 		es = "Activa esta opción para resumir cosas en la ventana emergente. Por ejemplo, si una cosa puede ser cambiada en un vendedor por otra cosa, entonces muestra esa otra cosa en la ventana emergente para dar visibilidad a sus múltiples usos. Si una cosa actúa como contenedor para otras cosas, esta opción mostrará todas esas otras cosas que ese contenedor puede contener.\n\nRecomendamos que mantengas activo este ajuste.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción para resumir cosas en la ventana emergente. Por ejemplo, si una cosa puede ser cambiada en un vendedor por otra cosa, entonces muestra esa otra cosa en la ventana emergente para dar visibilidad a sus múltiples usos. Si una cosa actúa como contenedor para otras cosas, esta opción mostrará todas esas otras cosas que ese contenedor puede contener.\n\nRecomendamos que mantengas activo este ajuste.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

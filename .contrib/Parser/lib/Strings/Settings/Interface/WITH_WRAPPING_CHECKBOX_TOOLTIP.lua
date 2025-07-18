@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option to allow the Source lines to wrap within the tooltip.\nThis will ensure that the tooltips do not grow wider than necessary, but will unfortunately make the Source information harder to read in many situations.",
 		-- TODO: de = "",
 		es = "Activa esta opción para permitir que las líneas de fuentes se ajusten a la ventana emergente.\nEsto asegura que las ventanas emergentes no crecen más anchas de lo necesario, pero desafortunadamente hace que la información de las fuentes sea más difícil de leer en algunas situaciones.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción para permitir que las líneas de fuentes se ajusten a la ventana emergente.\nEsto asegura que las ventanas emergentes no crecen más anchas de lo necesario, pero desafortunadamente hace que la información de las fuentes sea más difícil de leer en algunas situaciones.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

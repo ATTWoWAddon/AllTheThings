@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon.",
 		-- TODO: de = "",
-		es = "Activa esta opción si quieres minimizar automáticamente en la Mini Lista las cabeceras de dificultad que no estan activas cuando entras a una mazmorra o banda.\n\nEjemplo: Minimiza la cabecera de Heroico en una mazmorra de dificultad Normal.",
-		mx = "Activa esta opción si quieres minimizar automáticamente en la Mini Lista las cabeceras de dificultad que no estan activas cuando entras a un calabozo o banda.\n\nEjemplo: Minimiza la cabecera de Heroico en un calabozo de dificultad Normal.",
+		es = "Activa esta opción si quieres minimizar automáticamente en la Mini Lista las cabeceras de dificultad que no están activas cuando entras a una mazmorra o banda.\n\nEjemplo: Minimiza la cabecera de Heroico en una mazmorra de dificultad Normal.",
+		mx = "Activa esta opción si quieres minimizar automáticamente en la Mini Lista las cabeceras de dificultad que no están activas cuando entras a un calabozo o banda.\n\nEjemplo: Minimiza la cabecera de Heroico en un calabozo de dificultad Normal.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

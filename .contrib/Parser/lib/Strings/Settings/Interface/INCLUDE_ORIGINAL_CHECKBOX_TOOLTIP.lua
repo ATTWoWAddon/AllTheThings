@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you actually liked seeing the original source info within the Shared Appearances list in the tooltip.",
 		-- TODO: de = "",
 		es = "Activa esta opción si te gustaba la información de fuentes original en la lista de Apariencias Compartidas en la ventana emergente.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si te gustaba la información de origen original en la lista de Apariencias Compartidas en la ventana emergente.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option if you want to see creature icon portraits instead of the default icons for quest object types.\n\nIE: When looking at quests, this option will show the face of the quest giver instead of the quest type icon.\n\nDefault: On",
 		-- TODO: de = "",
-		es = "Activa esta opción si quieres ver el icono de la criatura en vez de los iconos por defecto del tipo de objeto de la misión.\n\nPE: Cuando estas mirando misiones, esta opción va a mostrar la cara del personaje que te da la misión en vez del icono del tipo de misión this option.\n\nPor defecto: Activado",
-		-- TODO: mx = "",
+		es = "Activa esta opción si quieres ver el icono de la criatura en vez de los iconos por defecto del tipo de objeto de la misión.\n\nPE: Cuando estas mirando misiones, esta opción va a mostrar la cara del personaje que te da la misión en vez del icono del tipo de misión.\n\nPor defecto: Activado",
+		mx = "Activa esta opción si quieres ver el icono de la criatura en vez de los iconos por defecto del tipo de objeto de la misión.\n\nPE: Cuando estas mirando misiones, esta opción va a mostrar la cara del personaje que te da la misión en vez del icono del tipo de misión.\n\nPor defecto: Activado",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

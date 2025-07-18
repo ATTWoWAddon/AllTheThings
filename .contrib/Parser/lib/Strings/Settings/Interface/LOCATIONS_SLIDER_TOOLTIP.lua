@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Use this to customize the number of source locations to show in the tooltip.\n\nNOTE: This will also show \"X\" number of other sources based on how many, if that total is equivalent to the total number of displayed elements, then that will simply display the last source.\n\nDefault: 5",
 		-- TODO: de = "",
-		es = "Usa esto para personalizar el numero de ubicaciones de origen a mostrar en la ventana emergente.\n\nNOTA: También mostrará \"X\" numero de otras opciones basándose en cuántas, si el total es equivalente al número total de elementos mostrados, sino simplemente mostrará la última fuente.\n\nPor defecto: 5",
-		-- TODO: mx = "",
+		es = "Usa esto para personalizar el numero de ubicaciones de fuentes a mostrar en la ventana emergente.\n\nNOTA: También mostrará \"X\" numero de otras opciones basándose en cuántas, si el total es equivalente al número total de elementos mostrados, sino simplemente mostrará la última fuente.\n\nPor defecto: 5",
+		mx = "Usa esto para personalizar el numero de ubicaciones de origen a mostrar en la ventana emergente.\n\nNOTA: También mostrará \"X\" numero de otras opciones basándose en cuántas, si el total es equivalente al número total de elementos mostrados, sino simplemente mostrará la última fuente.\n\nPor defecto: 5",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

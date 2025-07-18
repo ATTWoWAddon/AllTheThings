@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Maximum Top Line Length",
 		-- TODO: de = "",
 		es = "Largo máximo de línea superior",
-		-- TODO: mx = "",
+		mx = "Largo máximo de línea superior",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

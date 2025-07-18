@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Precision Level",
 		-- TODO: de = "",
 		es = "Nivel de precisión",
-		-- TODO: mx = "",
+		mx = "Nivel de precisión",
 		fr = "Niveau de précision",
 		-- TODO: it = "",
 		-- TODO: pt = "",

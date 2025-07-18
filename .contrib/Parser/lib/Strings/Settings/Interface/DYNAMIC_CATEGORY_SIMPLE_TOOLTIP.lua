@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Generate Dynamic Categories based only on the very highest Category.",
 		-- TODO: de = "",
 		es = "Genera categorías dinámicas basándose sólo en la categoría más alta.",
-		-- TODO: mx = "",
+		mx = "Genera categorías dinámicas basándose sólo en la categoría más alta.",
 		fr = "Générer des catégories dynamiques en se basant uniquement sur la catégorie la plus haute",
 		-- TODO: it = "",
 		-- TODO: pt = "",

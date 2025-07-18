@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option to allow Pet Cage tooltip Integration. (This renders on TSM's Extra Tooltip or in a Compare Item Tooltip when enabled.)",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Habilite esta opción para permitir la integración de la información sobre herramientas de la jaula para mascotas. (Esto se muestra en la información sobre herramientas adicional de TSM o en la información sobre herramientas de comparación de elementos cuando está habilitado).",
+		mx = "Habilite esta opción para permitir la integración de la información sobre herramientas de la jaula para mascotas. (Esto se muestra en la información sobre herramientas adicional de TSM o en la información sobre herramientas de comparación de elementos cuando está habilitado).",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

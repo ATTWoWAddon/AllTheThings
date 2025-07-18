@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Dynamic Categories",
 		-- TODO: de = "",
 		es = "Categorías dinámicas",
-		-- TODO: mx = "",
+		mx = "Categorías dinámicas",
 		fr = "Catégories dynamiques",
 		-- TODO: it = "",
 		-- TODO: pt = "",

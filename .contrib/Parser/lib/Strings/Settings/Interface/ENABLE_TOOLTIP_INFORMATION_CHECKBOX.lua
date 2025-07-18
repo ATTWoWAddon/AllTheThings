@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Tooltip Integrations",
 		-- TODO: de = "",
-		es = "Integraciones con Descripciones emergentes",
-		-- TODO: mx = "",
+		es = "Integraciones con ventanas emergentes",
+		mx = "Integraciones con ventanas emergentes",
 		fr = "Intégrations des infobulles",
 		-- TODO: it = "",
 		-- TODO: pt = "",

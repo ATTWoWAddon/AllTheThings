@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option if you want to see full Source Location Paths for objects within the ATT database in the tooltip.",
 		-- TODO: de = "",
-		es = "Activa esta opción si quieres ver el camino entero de ubicaciones de origen de objetos en la base de datos de ATT en la ventana emergente.",
-		-- TODO: mx = "",
+		es = "Activa esta opción si quieres ver el camino entero de ubicaciones de fuente de objetos en la base de datos de ATT en la ventana emergente.",
+		mx = "Activa esta opción si quieres ver el camino entero de ubicaciones de origen de objetos en la base de datos de ATT en la ventana emergente.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

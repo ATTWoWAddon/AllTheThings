@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option if you want to see the number of items remaining instead of the progress over total.",
 		-- TODO: de = "",
-		es = "Activa esta opción si quieres ver el numero de objetos pendientes en vez del progreso sobre el tota.",
-		-- TODO: mx = "",
+		es = "Activa esta opción si quieres ver el numero de objetos pendientes en vez del progreso sobre el total.",
+		mx = "Activa esta opción si quieres ver el numero de objetos pendientes en vez del progreso sobre el total.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

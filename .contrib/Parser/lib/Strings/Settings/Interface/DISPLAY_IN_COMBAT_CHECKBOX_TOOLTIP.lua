@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want to render tooltip information while you are in combat.\n\nIf you are raiding with your Mythic/Mythic+ Guild, you should probably turn this setting off to save as much performance as you can.\n\nIt can be useful while you are soloing old content to immediately know what you need from a boss.",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres ver la información en la ventana emergente cuando estas en combate.\n\nSi estas en una banda con tu Hermandad de Mítico/Mítico+, deberías desactivar este ajuste para reducir al máximo el impacto en el rendimiento.\n\nPuede ser útil cuando estas en contenido antiguo sólo para saber rápidamente qué necesitas de un jefe.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres ver la información en la ventana emergente cuando estas en combate.\n\nSi estas en una banda con tu Hermandad de Mítico/Mítico+, deberías desactivar este ajuste para reducir al máximo el impacto en el rendimiento.\n\nPuede ser útil cuando estas en contenido antiguo sólo para saber rápidamente qué necesitas de un jefe.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

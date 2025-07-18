@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Show Percentage Completion",
 		-- TODO: de = "",
 		es = "Muestra el porcentaje de completado",
-		-- TODO: mx = "",
+		mx = "Muestra el porcentaje de completado",
 		fr = "Afficher le pourcentage de réalisation",
 		-- TODO: it = "",
 		-- TODO: pt = "",

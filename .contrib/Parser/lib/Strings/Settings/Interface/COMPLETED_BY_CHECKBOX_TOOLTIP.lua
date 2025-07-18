@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want to see the full list of characters on all servers that have completed the Quest in the tooltip.",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres ver una lista completa de todos los personajes en todos los servidores que han completado la misión en la ventana emergente.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres ver una lista completa de todos los personajes en todos los servidores que han completado la misión en la ventana emergente.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

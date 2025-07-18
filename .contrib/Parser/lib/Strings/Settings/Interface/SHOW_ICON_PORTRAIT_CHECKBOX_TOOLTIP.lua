@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option if you want to see creature icon portraits instead of the default icons for non-quest object types.\n\nIE: When looking at bosses, this option will show the face of the boss instead of the difficulty icon.\n\nDefault: On",
 		-- TODO: de = "",
-		es = "Activa esta opción si quieres ver el icono de la criatura en vez de los iconos por defecto del tipo de objeto.\n\nPE: Cuando estas mirando jefes de banda, esta opción de va a mostrar la cara del jefe de banda en vez del icono de dificuldad.\n\nPor defecto: Activado",
-		-- TODO: mx = "",
+		es = "Activa esta opción si quieres ver el icono de la criatura en vez de los iconos por defecto del tipo de objeto.\n\nPE: Cuando estas mirando jefes de banda, esta opción de va a mostrar la cara del jefe de banda en vez del icono de dificultad.\n\nPor defecto: Activado",
+		mx = "Activa esta opción si quieres ver el icono de la criatura en vez de los iconos por defecto del tipo de objeto.\n\nPE: Cuando estas mirando jefes de banda, esta opción de va a mostrar la cara del jefe de banda en vez del icono de dificultad.\n\nPor defecto: Activado",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
