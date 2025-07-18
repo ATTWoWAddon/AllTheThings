@@ -6,7 +6,7 @@ createLocalizationString({
 		en = " Only ",
 		de = " Nur ",
 		es = " Sólo ",
-		-- TODO: mx = "",
+		mx = " Sólo ",
 		fr = " Seulement ",
 		-- TODO: it = "",
 		pt = " Apenas ",

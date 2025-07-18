@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Level ",
 		de = "Stufe ",
 		es = "Nivel ",
-		-- TODO: mx = "",
+		mx = "Nivel ",
 		fr = "Niveau ",
 		-- TODO: it = "",
 		pt = "Nível ",

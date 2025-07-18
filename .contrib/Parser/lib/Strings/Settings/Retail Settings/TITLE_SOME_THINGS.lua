@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Some of the Things ",
 		de = "Einige der Dinge ",
 		es = "Algunas de las cosas ",
-		-- TODO: mx = "",
+		mx = "Algunas de las cosas ",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		pt = "Alguams das Coisas ",

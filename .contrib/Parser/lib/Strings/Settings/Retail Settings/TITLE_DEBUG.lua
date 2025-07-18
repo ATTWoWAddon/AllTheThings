@@ -6,6 +6,7 @@ createLocalizationString({
 	text = {
 		en = "Debug ",
 		es = "Depuración ",
+		mx = "Debug ",
 		ru = "Отладка ",
 		cn = "调试 ",
 		tw = "偵錯 ",

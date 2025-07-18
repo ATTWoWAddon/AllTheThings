@@ -6,7 +6,7 @@ createLocalizationString({
 		en = " (Main Only)",
 		de = " (Nur Hauptcharakter)",
 		es = " (Sólo Principal)",
-		-- TODO: mx = "",
+		mx = " (Sólo Principal)",
 		fr = " (Joueur principal seulement)",
 		-- TODO: it = "",
 		pt = " (Apenas main)",
