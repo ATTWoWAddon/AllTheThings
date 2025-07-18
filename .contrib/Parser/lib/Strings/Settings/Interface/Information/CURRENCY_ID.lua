@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Currency ID",
 		-- TODO: de = "",
 		es = "Moneda ID",
-		-- TODO: mx = "",
+		mx = "ID de moneda",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

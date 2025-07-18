@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Can be repeated multiple times",
 		de = "Dies kann mehrfach abgeschlossen werden.",
 		es = "Esto se puede completar múltiples veces.",
-		-- TODO: mx = "",
+		mx = "Esto se puede completar múltiples veces.",
 		fr = "Peut être réalisé plusieurs fois.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

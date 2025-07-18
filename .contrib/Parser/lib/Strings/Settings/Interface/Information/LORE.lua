@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Lore",
 		de = "Geschichte",
 		es = "Trasfondo",
-		-- TODO: mx = "",
+		mx = "Historia",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		pt = "História",

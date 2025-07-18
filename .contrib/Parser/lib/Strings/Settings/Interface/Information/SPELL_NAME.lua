@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Spell Name",
 		-- TODO: de = "",
 		es = "Nombre del hechizo",
-		-- TODO: mx = "",
+		mx = "Nombre del hechizo",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

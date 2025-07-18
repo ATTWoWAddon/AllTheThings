@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Object Type",
 		-- TODO: de = "",
 		es = "Tipo de objeto",
-		-- TODO: mx = "",
+		mx = "Tipo de objeto",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

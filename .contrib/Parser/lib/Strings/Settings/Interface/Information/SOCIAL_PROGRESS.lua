@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Social Progress",
 		-- TODO: de = "",
 		es = "Progreso social",
-		-- TODO: mx = "",
+		mx = "Progreso social",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

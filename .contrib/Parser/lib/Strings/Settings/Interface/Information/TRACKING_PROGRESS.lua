@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Tracking Progress",
 		de = "Fortschrittsverfolgung",
 		es = "Rastreando progreso",
-		-- TODO: mx = "",
+		mx = "Rastreando progreso",
 		fr = "Suivi des progrès",
 		-- TODO: it = "",
 		pt = "Rastreando Progresso",

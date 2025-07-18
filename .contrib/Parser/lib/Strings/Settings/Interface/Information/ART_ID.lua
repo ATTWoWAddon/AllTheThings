@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Art ID",
 		-- TODO: de = "",
 		es = "Arte ID",
-		-- TODO: mx = "",
+		mx = "ID Arte",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

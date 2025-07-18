@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Coordinates",
 		de = "Koordinaten",
 		es = "Coordenadas",
-		-- TODO: mx = "",
+		mx = "Coordenadas",
 		fr = "Coordonnées",
 		-- TODO: it = "",
 		pt = "Coordenadas",

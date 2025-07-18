@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Gear Set ID",
 		-- TODO: de = "",
 		es = "Set de equipo ID",
-		-- TODO: mx = "",
+		mx = "ID de Set de equipo",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

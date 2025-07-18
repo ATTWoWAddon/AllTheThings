@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Conduit ID",
 		-- TODO: de = "",
 		es = "Conducto ID",
-		-- TODO: mx = "",
+		mx = "ID de conducto",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

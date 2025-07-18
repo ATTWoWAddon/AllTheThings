@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Can be completed yearly",
 		de = "Dies kann jährlich abgeschlossen werden.",
 		es = "Esto se puede completar anualmente.",
-		-- TODO: mx = "",
+		mx = "Esto se puede completar anualmente.",
 		fr = "Peut être réalisé uniquement chaque année.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

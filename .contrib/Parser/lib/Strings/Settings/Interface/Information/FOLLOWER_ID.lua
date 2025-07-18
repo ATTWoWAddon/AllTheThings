@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Follower ID",
 		-- TODO: de = "",
 		es = "Seguidores ID",
-		-- TODO: mx = "",
+		mx = "ID de seguidores",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Campsite ID",
 		-- TODO: de = "",
 		es = "Campamento ID",
-		mx = "Sitios de acampado ID",
+		mx = "ID de Sitios de acampado",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

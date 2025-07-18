@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Can be completed weekly",
 		de = "Dies kann wöchentlich abgeschlossen werden.",
 		es = "Esto se puede completar semanalmente.",
-		-- TODO: mx = "",
+		mx = "Esto se puede completar semanalmente.",
 		fr = "Peut être réalisé uniquement chaque semaine.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

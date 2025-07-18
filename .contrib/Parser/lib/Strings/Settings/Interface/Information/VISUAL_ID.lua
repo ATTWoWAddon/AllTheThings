@@ -5,7 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Visual ID",
 		-- TODO: de = "",
-		-- TODO: mx = "",
+		es = "Visual ID",
+		mx = "ID Visual",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

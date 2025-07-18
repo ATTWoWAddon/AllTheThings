@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Can be completed when the World Quest is active",
 		de = "Dies kann nur abgeschlossen werden, solange die Weltquest aktiv ist.",
 		es = "Esto se puede completar cuando la misión de mundo está activa.",
-		-- TODO: mx = "",
+		mx = "Esto se puede completar cuando la misión de mundo está activa.",
 		fr = "Peut être réalisé uniquement lorsque la quête mondiale est active.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

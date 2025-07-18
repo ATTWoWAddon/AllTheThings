@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Descriptions",
 		de = "Beschreibungen",
 		es = "Descripciones",
-		-- TODO: mx = "",
+		mx = "Descripciones",
 		-- TODO: it = "",
 		pt = "Descrições",
 		ru = "Описания",

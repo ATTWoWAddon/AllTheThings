@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Requires",
 		de = "Benötigt",
 		es = "Requiere",
-		-- TODO: mx = "",
+		mx = "Requiere",
 		fr = "Requiert",
 		it = "Richiede",
 		pt = "Requer",

@@ -7,7 +7,7 @@ createLocalizationString({
 		en = "Requires PvP Activities or Currencies",
 		de = "Dies erfordert Spieler gegen Spieler Aktivität oder eine Währung, die damit verbunden ist.",
 		es = "Esta cosa requiere actividades Jugador contra Jugador o una divisa relacionada con esas actividades.",
-		-- TODO: mx = "",
+		mx = "Esta cosa requiere actividades Jugador contra Jugador o una divisa relacionada con esas actividades.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

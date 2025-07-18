@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Achievement Category ID",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Categoría de logros ID",
+		mx = "ID de Categoría de logros",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

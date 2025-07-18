@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Criteria ID",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Criterio ID",
+		mx = "ID de criterio",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

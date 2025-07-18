@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Difficulty ID",
 		-- TODO: de = "",
 		es = "Dificultad ID",
-		-- TODO: mx = "",
+		mx = "ID de Dificultad",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

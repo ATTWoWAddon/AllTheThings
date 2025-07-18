@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "This has a limited quantity and may not always be present on the vendor.",
 		de = "Dies hat eine begrenzte Menge und ist nicht immer beim Händler verfügbar.",
 		es = "Tiene una cantidad limitada puede que no esté presente siempre en este vendedor.",
-		-- TODO: mx = "",
+		mx = "Tiene una cantidad limitada puede que no esté presente siempre en este vendedor.",
 		fr = "Il s’agit d’une quantité limitée qui n’est pas toujours disponible chez le vendeur.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

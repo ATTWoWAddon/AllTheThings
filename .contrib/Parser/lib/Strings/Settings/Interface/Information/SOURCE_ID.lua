@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Source ID",
 		-- TODO: de = "",
-		es = "Origen ID",
-		mx = "Fuente ID",
+		es = "Fuente ID",
+		mx = "ID del origen",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

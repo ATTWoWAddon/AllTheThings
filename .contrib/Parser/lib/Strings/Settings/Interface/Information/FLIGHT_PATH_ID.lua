@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Flight Path ID",
 		-- TODO: de = "",
 		es = "Ruta de vuelo ID",
-		-- TODO: mx = "",
+		mx = "ID de Ruta de vuelo",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

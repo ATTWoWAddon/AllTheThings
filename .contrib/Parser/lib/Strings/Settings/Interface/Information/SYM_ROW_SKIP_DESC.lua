@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Linked content is only displayed in the tooltip for this object.",
 		-- TODO: de = "",
 		es = "El contenido vinculado solo se muestra en la información sobre la ventana emergente de este objeto.",
-		-- TODO: mx = "",
+		mx = "El contenido vinculado solo se muestra en la información sobre la ventana emergente de este objeto.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

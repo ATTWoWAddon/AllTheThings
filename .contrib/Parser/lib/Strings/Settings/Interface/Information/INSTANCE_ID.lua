@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Instance ID",
 		-- TODO: de = "",
 		es = "Mazmorra ID",
-		mx = "Calabozo ID",
+		mx = "ID de Calabozo",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

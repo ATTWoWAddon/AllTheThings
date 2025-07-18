@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Illusion ID",
 		-- TODO: de = "",
 		es = "Ilusión ID",
-		-- TODO: mx = "",
+		mx = "ID de ilusión",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Can be completed monthly",
 		de = "Dies kann monatlich abgeschlossen werden.",
 		es = "Esto se puede completar mensualmente.",
-		-- TODO: mx = "",
+		mx = "Esto se puede completar mensualmente.",
 		fr = "Peut être réalisé uniquement chaque mois.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

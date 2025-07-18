@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Classes",
 		de = "Klassen",
 		es = "Clases",
-		-- TODO: mx = "",
+		mx = "Clases",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

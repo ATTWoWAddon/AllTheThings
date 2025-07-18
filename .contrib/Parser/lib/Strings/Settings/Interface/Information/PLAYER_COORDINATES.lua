@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Player Coordinates",
 		-- TODO: de = "",
 		es = "Coordenadas del jugador",
-		-- TODO: mx = "",
+		mx = "Coordenadas del jugador",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		pt = "Coordenadas do Jogador",

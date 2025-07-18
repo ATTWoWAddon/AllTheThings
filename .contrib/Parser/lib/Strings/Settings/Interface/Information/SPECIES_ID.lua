@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Species ID",
 		-- TODO: de = "",
 		es = "Especies ID",
-		-- TODO: mx = "",
+		mx = "ID de las Especies",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

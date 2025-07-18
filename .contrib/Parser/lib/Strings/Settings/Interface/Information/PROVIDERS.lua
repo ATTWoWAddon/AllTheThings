@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Provider(s)",
 		de = "Anbieter",
 		es = "Proveedor(es)",
-		-- TODO: mx = "",
+		mx = "Proveedor(es)",
 		fr = "Fournisseur(s)",
 		-- TODO: it = "",
 		-- TODO: pt = "",

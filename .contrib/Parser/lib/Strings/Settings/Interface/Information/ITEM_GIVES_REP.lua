@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Provides Reputation with '",
 		de = "Bietet Ruf mit '",
 		es = "Provee reputación con '",
-		-- TODO: mx = "",
+		mx = "Otorga reputación con '",
 		fr = "Fournit la réputation avec '",
 		-- TODO: it = "",
 		pt = "Concede reputação com '",

@@ -7,7 +7,7 @@ createLocalizationString({
 		en = "Requires Pet Battling",
 		de = "Dies erfodert Haustierkampf.",
 		es = "Esta cosa requiere duelos de mascota.",
-		-- TODO: mx = "",
+		mx = "Esta cosa requiere duelos de mascota.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

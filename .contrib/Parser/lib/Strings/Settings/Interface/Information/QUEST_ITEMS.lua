@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Quest Items",
 		-- TODO: de = "",
 		es = "Objetos de misión",
-		-- TODO: mx = "",
+		mx = "Objetos de misión",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

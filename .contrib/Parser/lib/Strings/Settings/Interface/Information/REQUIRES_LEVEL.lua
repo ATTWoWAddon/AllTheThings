@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Requires Level",
 		de = "Benötigt Stufe",
 		es = "Necesitas ser nivel",
-		-- TODO: mx = "",
+		mx = "Necesitas ser nivel",
 		fr = "Niveau requis",
 		-- TODO: it = "",
 		-- TODO: pt = "",

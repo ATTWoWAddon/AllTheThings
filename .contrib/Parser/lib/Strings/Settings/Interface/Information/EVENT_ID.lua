@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Event ID",
 		-- TODO: de = "",
 		es = "Evento ID",
-		-- TODO: mx = "",
+		mx = "ID de Evento",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Icon Path",
 		-- TODO: de = "",
 		es = "Icono de ruta",
-		-- TODO: mx = "",
+		mx = "Icono de ruta",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

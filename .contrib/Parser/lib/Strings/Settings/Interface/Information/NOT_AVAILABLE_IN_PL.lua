@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Not available in Personal Loot.",
 		de = "Nicht vorhanden im Persönlicher Beute Modus.",
 		es = "No disponible en botín personal.",
-		-- TODO: mx = "",
+		mx = "No disponible en botín personal.",
 		fr = "Non disponible pour le butin personnel.",
 		-- TODO: it = "",
 		pt = "Não disponível para saque (loot) pessoal.",

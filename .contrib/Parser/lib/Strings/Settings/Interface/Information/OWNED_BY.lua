@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Owned by %s",
 		-- TODO: de = "",
 		es = "Poseído por %s",
-		-- TODO: mx = "",
+		mx = "Poseído por %s",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

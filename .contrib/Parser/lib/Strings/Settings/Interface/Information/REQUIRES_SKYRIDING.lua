@@ -9,7 +9,7 @@ createLocalizationString({
 		-- #else
 		en = "Requires Skyriding",
 		es = "Requiere Surcacielos",
-		mx = "Requiere Cielonautica",
+		mx = "Requiere Cielonáutica",
 		cn = "需要驭空术",
 		-- #endif
 	},

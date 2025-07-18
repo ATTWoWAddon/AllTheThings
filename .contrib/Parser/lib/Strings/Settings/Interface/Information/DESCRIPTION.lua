@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path ... of the damned.\"",
 		-- TODO: de = "",
 		es = "\"Insensatamente has buscado tu propia muerte. Descaradamente has ignorado poderes que escapan a tu comprensión. Has luchado con ahínco para invadir el reino del Coleccionista. Ahora solo queda una salida: recorrer el solitario camino ... de los condenados.\"",
-		-- TODO: mx = "",
+		mx = "\"Insensatamente has buscado tu propia muerte. Descaradamente has ignorado poderes que escapan a tu comprensión. Has luchado con fuerza para invadir el reino del Coleccionista. Ahora solo queda una salida: recorrer el solitario camino ... de los condenados.\"",
 		fr = "\"Sottement, vous avez cherché votre propre perte. Effrontément, vous avez ignoré des pouvoirs au-delà de votre compréhension. Vous vous êtes battus pour envahir le royaume du Collectionneur. Maintenant, il n’y a plus qu’une seule issue : emprunter le chemin solitaire ... des damnés.\"",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Never Implemented",
 		de = "Nie implementiert",
 		es = "Nunca Implementado",
-		-- TODO: mx = "",
+		mx = "Nunca Implementado",
 		fr = "Jamais mis en place",
 		-- TODO: it = "",
 		-- TODO: pt = "",

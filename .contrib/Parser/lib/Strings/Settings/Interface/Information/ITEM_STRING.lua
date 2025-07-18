@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Item String",
 		-- TODO: de = "",
 		es = "Cadena de texto de objetos",
-		-- TODO: mx = "",
+		mx = "Cadena de texto de objetos",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

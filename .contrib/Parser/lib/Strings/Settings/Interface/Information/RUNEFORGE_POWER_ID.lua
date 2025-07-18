@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Runeforge Power ID",
 		-- TODO: de = "",
 		es = "Poder de forja de runas ID",
-		-- TODO: mx = "",
+		mx = "ID de Poder de forja de runas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

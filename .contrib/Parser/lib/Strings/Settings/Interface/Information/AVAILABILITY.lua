@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Availability",
 		-- TODO: de = "",
 		es = "Disponibilidad",
-		-- TODO: mx = "",
+		mx = "Disponibilidad",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

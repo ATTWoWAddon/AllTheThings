@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "iLvl",
 		-- TODO: de = "",
 		es = "iLvl (Nivel promedio de objetos)",
-		-- TODO: mx = "",
+		mx = "Nivel de objetos promedio",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Can be completed daily",
 		de = "Dies kann täglich abgeschlossen werden.",
 		es = "Esto se puede completar diariamente.",
-		-- TODO: mx = "",
+		mx = "Esto se puede completar diariamente.",
 		fr = "Peut être réalisé uniquement quotidiennement.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

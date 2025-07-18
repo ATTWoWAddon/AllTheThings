@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Faction ID",
 		-- TODO: de = "",
 		es = "Facción ID",
-		-- TODO: mx = "",
+		mx = "ID de Facción",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

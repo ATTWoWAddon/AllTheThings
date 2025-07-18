@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Creature ID",
 		-- TODO: de = "",
 		es = "Criatura ID",
-		-- TODO: mx = "",
+		mx = "ID de Criatura",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

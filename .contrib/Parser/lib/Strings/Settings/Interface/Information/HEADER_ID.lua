@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Header ID",
 		-- TODO: de = "",
 		es = "Encabezado ID",
-		-- TODO: mx = "",
+		mx = "ID de Encabezado",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

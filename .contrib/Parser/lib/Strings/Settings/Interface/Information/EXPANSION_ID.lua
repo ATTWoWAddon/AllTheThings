@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Expansion ID",
 		-- TODO: de = "",
 		es = "Expansión ID",
-		-- TODO: mx = "",
+		mx = "ID de Expansión",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

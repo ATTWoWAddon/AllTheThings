@@ -6,7 +6,8 @@ createLocalizationString({
 	export = true,
 	text = {
 		en = "Saved",
-		es = "Conocido",
+		es = "Guardado",
+		mx = "Guardado",
 		ru = "Сохранено",
 		cn = "已保存",
 	},

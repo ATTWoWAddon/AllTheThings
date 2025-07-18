@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Exploration ID",
 		-- TODO: de = "",
 		es = "Exploración ID",
-		-- TODO: mx = "",
+		mx = "ID de Exploración",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

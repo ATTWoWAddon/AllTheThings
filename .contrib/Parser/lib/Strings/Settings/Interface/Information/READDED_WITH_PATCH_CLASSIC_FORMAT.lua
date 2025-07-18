@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "This gets readded with patch %s",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Esto se vuelve a agregar con el parche %s",
+		mx = "Esto se vuelve a agregar con el parche %s",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

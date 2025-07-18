@@ -5,7 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Mod ID",
 		-- TODO: de = "",
-		-- TODO: mx = "",
+		es = "Mod ID",
+		mx = "ID de Mod",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

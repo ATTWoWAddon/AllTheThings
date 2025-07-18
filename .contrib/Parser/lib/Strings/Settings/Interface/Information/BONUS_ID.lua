@@ -5,7 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Bonus ID",
 		-- TODO: de = "",
-		-- TODO: mx = "",
+		es = "Bonus ID",
+		mx = "ID de Bonus",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

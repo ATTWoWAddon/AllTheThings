@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Quest Giver",
 		de = "Questgeber",
 		es = "Asignador de misión",
-		mx = "Proveedor de misión",
+		mx = "Otorgador de misión",
 		fr = "Donneur de quête",
 		-- TODO: it = "",
 		-- TODO: pt = "",

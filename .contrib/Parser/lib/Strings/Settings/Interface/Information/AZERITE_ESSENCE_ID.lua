@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Azerite Essence ID",
 		-- TODO: de = "",
-		es = "Esencia de Azerita ID",
-		-- TODO: mx = "",
+		es = "Esencia del corazón de Azeroth ID",
+		mx = "ID Esencia de Azerita",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
