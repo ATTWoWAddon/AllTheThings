@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Automated Content",
 		-- TODO: de = "",
 		es = "Contenido automatizado",
-		-- TODO: mx = "",
+		mx = "Contenido automatizado",
 		fr = "Contenu automatique",
 		-- TODO: it = "",
 		-- TODO: pt = "",

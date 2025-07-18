@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this setting to forcibly show %s content even if it is not available to the current character.",
 		-- TODO: de = "",
 		es = "Activa este ajuste para mostrar forzosamente %s contenido incluso si no está disponible para tu personaje actual.",
-		-- TODO: mx = "",
+		mx = "Activa este ajuste para mostrar forzosamente %s contenido incluso si no está disponible para tu personaje actual.",
 		fr = "Activer ce paramètre pour afficher le contenu de %s même s’il n’est pas disponible pour le personnage actuel.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

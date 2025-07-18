@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Unobtainables",
 		de = "Unerreichbares",
 		es = "No conseguibles",
-		-- TODO: mx = "",
+		mx = "No obtenibles",
 		fr = "Inaccessibles",
 		-- TODO: it = "",
 		-- TODO: pt = "",
