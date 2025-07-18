@@ -1571,7 +1571,6 @@ root(ROOTS.Unsorted, {
 				exploration(14836),	-- <Unnamed POI 020>
 			}),
 			i(220445),	-- Illusionary Charm
-			i(228195),	-- Tattered Goblin Cap
 		})),
 	}),
 	expansion(EXPANSION.DF, {
@@ -2786,7 +2785,6 @@ root(ROOTS.Unsorted, {
 				i(162666),	-- Ripped Satchel
 				i(162667),	-- Farraki Funeral Urn
 				i(162683),	-- Archaic Dinomancy Carvings
-				i(162685),	-- Overflowing Loa Tribute
 			}),
 			filter(MISC, {	-- War Effort
 				i(161121),	-- The Wolf's Den
@@ -3395,7 +3393,6 @@ root(ROOTS.Unsorted, {
 			i(166863),	-- Farrakki Star Rubies
 			i(166864),	-- Engraved Amani Spearpoints
 			i(166871),	-- Jeweled Pyrium Goblet
-			i(166872),	-- Sterling Truesilver Flatware
 			i(166873),	-- Amethyst Parrot
 			i(166876),	-- Scrimshaw Ivory Direhorn
 			i(166896),	-- Heritage of the Sin'dorei

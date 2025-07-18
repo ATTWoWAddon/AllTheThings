@@ -2376,14 +2376,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				-- #if BEFORE CATA
-				i(4589, {	-- Long Elegant Feather
-					["crs"] = {
-						2659,	-- Razorbeak Skylord
-						2657,	-- Trained Razorbeak
-						2658,	-- Razorbeak Gryphon
-						2651,	-- Witherbark Hideskinner
-					},
-				}),
+				i(4589),	-- Long Elegant Feather
 				-- #endif
 				i(8704, {	-- OOX-09/HL Distress Beacon
 					["description"] = "This item can drop off of any hostile creature in the zone. Rare and Elite creatures have higher drop chance.",

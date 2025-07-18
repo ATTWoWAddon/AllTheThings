@@ -2,7 +2,7 @@ createLocalizationString({
 	readable = "[icon:known] Collected",
 	constant = "COLLECTED",
 	icon = [[~_.asset("known")]],
-	color = [[~_.Colors.Completed]],
+	color = [[~_.DefaultColors.Completed]],
 	export = true,
 	text = {
 		en = "Collected",

@@ -2040,25 +2040,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				n(4577, {	-- Millie Gregorian <Tailoring Supplies>
-					["sym"] = { {"sub", "common_recipes_vendor", 3364 } },	-- Borya <Tailoring Supplies>
 					["coord"] = { 70.6, 30.1, UNDERCITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {
-						i(6275, {	-- Pattern: Greater Adept's Robe (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(10326, {	-- Pattern: Tuxedo Jacket (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(10323, {	-- Pattern: Tuxedo Pants (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(10321, {	-- Pattern: Tuxedo Shirt (RECIPE!)
-							["isLimited"] = true,
-						}),
+					["sym"] = {{ "sub", "common_vendor", 5154 }},	-- Poranna Snowbraid <Tailoring Supplies>
+					["groups"] = sharedData({
+						["isLimited"] = true,
+					}, {
+						i(6275),	-- Pattern: Greater Adept's Robe (RECIPE!)
+						i(5772),	-- Pattern: Red Woolen Bag (RECIPE!)
+						i(10326),	-- Pattern: Tuxedo Jacket (RECIPE!)
+						i(10323),	-- Pattern: Tuxedo Pants (RECIPE!)
+						i(10321),	-- Pattern: Tuxedo Shirt (RECIPE!)
 					}),
 				}),
 				n(5819, {	-- Mirelle Tremayne

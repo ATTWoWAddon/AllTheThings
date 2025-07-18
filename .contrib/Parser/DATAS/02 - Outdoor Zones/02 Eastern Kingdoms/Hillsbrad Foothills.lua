@@ -3831,15 +3831,6 @@ Click Leave vehicle and repeat steps 3-8"]],
 					},
 				})),
 				-- #endif
-				-- #if BEFORE CATA
-				i(4589, {	-- Long Elegant Feather
-					["crs"] = {
-						2474,	-- Kurdros
-						2347,	-- Wild Gryphon
-						2473,	-- Granistad
-					},
-				}),
-				-- #endif
 				-- #if AFTER CATA
 				i(5775, {	-- Pattern: Black Silk Pack (RECIPE!)
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023

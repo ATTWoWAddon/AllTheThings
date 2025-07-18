@@ -1408,10 +1408,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 64.6, 21.6, DARNASSUS },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {
-						{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
-					},
-					["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {
+					["sym"] = {{ "sub", "common_vendor", 5154 }},	-- Poranna Snowbraid <Tailoring Supplies>
+					["groups"] = {
 						i(6272, {	-- Pattern: Blue Linen Robe (RECIPE!)
 							["isLimited"] = true,
 						}),
@@ -1425,7 +1423,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(10311, {	-- Pattern: Orange Martial Shirt (RECIPE!)
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
 				n(4223, {	-- Fyldan <Cooking Supplies> [TBC+] / Fyldan <Cooking Supplier>
 					-- #if AFTER CATA

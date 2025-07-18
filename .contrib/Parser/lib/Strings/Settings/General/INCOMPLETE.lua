@@ -2,7 +2,7 @@ createLocalizationString({
 	readable = "[icon:incomplete] Incomplete",
 	constant = "INCOMPLETE",
 	icon = [[~_.asset("incomplete")]],
-	color = [[~_.Colors.Completed]],
+	color = [[~_.DefaultColors.Completed]],
 	export = true,
 	text = {
 		en = "Incomplete",

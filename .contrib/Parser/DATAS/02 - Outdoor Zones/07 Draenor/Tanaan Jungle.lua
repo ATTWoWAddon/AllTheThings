@@ -2060,6 +2060,7 @@ root(ROOTS.Zones, {
 								un(REMOVED_FROM_GAME, i(127785)),	-- Crystallized Fel
 								-- }),
 							}, {	-- Friendly
+								i(128454),	-- Order of the Awakened Battle Standard
 								i(123974, {	-- Reins of the Corrupted Dreadwing (MOUNT!)
 									["cost"] = { { "c", 823, 150000 }, },	-- 150,000x Apexis Crystal
 								}),

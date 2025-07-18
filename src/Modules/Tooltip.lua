@@ -233,17 +233,17 @@ end
 for i,guid in ipairs({
 	"Player-76-0895E23B",	-- Crieve-Sargeras
 	"Player-4372-0000390A",	-- Crieve-Atiesh
+	"Player-5117-014EE29A",	-- Crieve-Atiesh (Era)
 	"Player-5813-01CEF978",	-- Crieve-Wild Growth (SOD)
 }) do
 	PLAYER_TOOLTIPS[guid] = tooltipFunction;
 end
 
 -- CONTRIBUTOR GUIDS
-local ShouldContributorsKeepTitle = L.PLAYER_TITLE_THE_CONTRIBUTOR:find("%%s|r");
 tooltipFunction = function(self, locClass, engClass, locRace, engRace, gender, name, server)
 	local leftSide = _G[self:GetName() .. "TextLeft1"];
 	if leftSide then
-		leftSide:SetText(L.PLAYER_TITLE_THE_CONTRIBUTOR:format(ShouldContributorsKeepTitle and leftSide:GetText() or name));
+		leftSide:SetText(L.PLAYER_TITLE_THE_CONTRIBUTOR:format(leftSide:GetText() or name));
 	end
 	local rightSide = _G[self:GetName() .. "TextRight2"];
 	leftSide = _G[self:GetName() .. "TextLeft2"];

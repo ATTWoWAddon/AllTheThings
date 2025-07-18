@@ -654,17 +654,15 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				n(16767, {	-- Neii <Tailoring Supplies>
 					["coord"] = { 64.7, 68.5, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER CATA
-					["sym"] = { { "sub", "common_recipes_vendor", 3364 } },	-- Borya <Tailoring Supplies>
-					-- #endif
-					["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {
+					["sym"] = {{ "sub", "common_vendor", 5154 }},	-- Poranna Snowbraid <Tailoring Supplies>
+					["groups"] = {
 						i(21892),	-- Pattern: Bolt of Imbued Netherweave (RECIPE!)
 						i(21894, {	-- Pattern: Bolt of Soulcloth (RECIPE!)
 							["isLimited"] = true,
 						}),
 						i(21896),	-- Pattern: Netherweave Robe (RECIPE!)
 						i(21897),	-- Pattern: Netherweave Tunic (RECIPE!)
-					}),
+					},
 				}),
 				n(16768, {	-- Nurguni <Tradesman>
 					["coord"] = { 57.0, 50.05, THE_EXODAR },

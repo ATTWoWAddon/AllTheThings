@@ -1,7 +1,7 @@
 createLocalizationString({
 	readable = "[icon:logo_32x32] Contributor",
 	constant = "PLAYER_RANK_CONTRIBUTOR",
-	color = [[~_.Colors.White]],
+	color = [[~_.DefaultColors.White]],
 	icon = [[~_.asset("logo_32x32")]],
 	export = true,
 	text = {

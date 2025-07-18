@@ -2738,11 +2738,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_2_3_0 },	-- Learned from trainer
 					["cr"] = 6201,	-- Legashi Rogue
 				}),
-				-- #if BEFORE CATA
-				i(4589, {	-- Long Elegant Feather
-					["cr"] = 6375,	-- Thunderhead Hippogryph
-				}),
-				-- #endif
 				-- #if AFTER 11.1.5
 				i(15751, {	-- Pattern: Blue Dragonscale Breastplate (RECIPE!)
 					-- Zonedrop, can drop from any mob now

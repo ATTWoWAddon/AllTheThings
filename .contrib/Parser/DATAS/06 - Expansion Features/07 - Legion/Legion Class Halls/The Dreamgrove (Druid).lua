@@ -243,8 +243,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					q(41106, {	-- Call of the Wilds
 						["sourceQuests"] = { 40643 },	-- A Summons From Moonglade
-						["provider"] = { "n", 101064 },	-- Archdruid Hamuul Runetotem
-						["coord"] = { 56.2, 32.0, MOONGLADE },
+						["qgs"] = {
+							101064,	-- Archdruid Hamuul Runetotem
+							-- #if AFTER BFA
+							142299,	-- Archdruid Hamuul Runetotem
+							-- #endif
+						},
+						["coords"] = {
+							{ 56.2, 32.0, MOONGLADE },
+							-- #if AFTER BFA
+							{ 42.3, 44.3, SILITHUS },
+							-- #endif
+						},
 					}),
 					q(43368, {	-- Champion: Brightwing
 						["provider"] = { "n", 98008 },		-- Brightwing

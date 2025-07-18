@@ -214,23 +214,27 @@ ARTISAN_TAILORING
 	{}
 -- #endif
 );
-VANILLA_TAILORING_VENDOR_REAGENTS = {
-	i(2325),	-- Black Dye
-	i(2324),	-- Bleach
-	i(6260),	-- Blue Dye
-	i(2605),	-- Green Dye
-	i(4340),	-- Grey Dye
-	i(6261),	-- Orange Dye
-	i(10290),	-- Pink Dye
-	i(4342),	-- Purple Dye
-	i(2604),	-- Red Dye
-	i(4341),	-- Yellow Dye
-	i(2320),	-- Coarse Thread
-	i(2321),	-- Fine Thread
-	i(4291),	-- Silken Thread
-	i(8343),	-- Heavy Silken Thread
-	i(14341),	-- Rune Thread
-};
+VANILLA_TAILORING_SUPPLIES = sharedData({
+	["description"] = "Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",
+	["providers"] = {
+		{ "n", 1347},	-- Alexandra Bolero <Tailoring Supplies>
+		{ "n", 3364},	-- Borya <Tailoring Supplies>
+		{ "n", 4168},	-- Elynna <Tailoring Supplies>
+		{ "n", 3005},	-- Mahu <Tailoring Supplies> [CATA+] / <Leatherworking & Tailoring Supplies>
+		{ "n", 4577},	-- Millie Gregorian <Tailoring Supplies>
+		{ "n", 8681},	-- Outfitter Eric <Speciality Tailoring Supplies>
+		{ "n", 5154},	-- Poranna Snowbraid <Tailoring Supplies>
+		-- #if AFTER TBC
+		{ "n", 16638},	-- Deynna <Tailoring Supplies>
+		{ "n", 16767},	-- Neii <Tailoring Supplies>
+		-- #endif
+	},
+}, {
+	i(2324),	-- Bleach (Only sold by Tailoring Suppliers)
+	i(6261),	-- Orange Dye (Only used in Tailoring)
+	i(10290),	-- Pink Dye (Only used in Tailoring)
+	i(4341),	-- Yellow Dye (Only used in Tailoring)
+});
 TBC_TAILORING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
 	r(26790, {	-- Tailoring (Master)
 		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },

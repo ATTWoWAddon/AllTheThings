@@ -456,12 +456,13 @@ local QUANTUM_GROUP = sharedData({
 		hqt(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed) (Mace)
 			["name"] = "Quantum Greathammer/Mace (Two-Handed) completed.",
 		}),
+		i(68194),	-- Oggleflint's Inspirer				(Removed)
 	}),
 	i(208112, {	-- Quantum Greatsword	(Two-Handed)
 		hqt(77598, {	-- when you learn everything from Quantum Greatsword	(Two-Handed)
 			["name"] = "Quantum Greatsword (Two-Handed) completed.",
 		}),
-		ig(134746),	-- Covert Greatsword					(Removed)
+		ig(134746),	-- Covert Greatsword				(Removed)
 		i(186410, {	-- Jaithys, the Prison Blade		(Removed)
 			["modID"] = 2, -- Heroic raid
 		}),

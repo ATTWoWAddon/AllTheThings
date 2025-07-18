@@ -7656,26 +7656,4 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			}),
 		}),
 	}),
-	-- Non-crafted reagents from vendors for professions:
-	filter(REAGENTS, {
-		["groups"] = appendAllGroups(
-			-- Dyes and threads from LW and Tailor vendors:
-			{i(2324, {	-- Bleach (unique to Tailoring vendors)
-				["description"] = "Can be bought from Tailoring Suppliers, as well as some Trade vendors around the old world.",
-			})},
-			sharedData({	-- Unique to Letherworking and Tailoring vendors
-				["description"] = "Can be bought from Leatherworking and Tailoring Suppliers, as well as some Trade vendors around the old world.",
-			},{
-				-- Dyes:
-				i(6261),	-- Orange Dye
-				i(10290),	-- Pink Dye
-				i(4341),	-- Yellow Dye
-			})
-			-- Alchemy vials from vendors
-			-- Blacksmithing reagents from vendors
-			-- Cooking reagents from vendors
-			-- Enchanting reagents from vendors
-			-- Engineering reagents from vendors
-		),
-	}),
 }));

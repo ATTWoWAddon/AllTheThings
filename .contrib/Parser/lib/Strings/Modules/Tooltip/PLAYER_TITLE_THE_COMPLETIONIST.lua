@@ -1,7 +1,7 @@
 createLocalizationString({
 	readable = "[name] the Completionist",
 	constant = "PLAYER_TITLE_THE_COMPLETIONIST",
-	color = [[~_.Colors.Raid]],
+	color = [[~_.DefaultColors.Raid]],
 	export = true,
 	text = {
 		en = "%s the Completionist",

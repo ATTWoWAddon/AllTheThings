@@ -168,6 +168,9 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					n(180117, {	-- Meat Vendor
 						i(187173),	-- Wriggling Tentacle
 					}),
+					n(180754, {	-- Questionable Trader <Cartel Ta>
+						i(185953),	-- Fraudulent Credentials
+					}),
 					n(180161, {	-- Shopkeeper
 						["description"] = "When the NPC whispers you, |cFFFFFFFF/nod|r at them.",
 						["g"] = {
@@ -188,12 +191,20 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 							}),
 						},
 					}),
-					n(180754, {	-- Questionable Trader <Cartel Ta>
-						i(185953),	-- Fraudulent Credentials
-					}),
 					n(180129, {	-- Toy Vendor
 						i(104324),	-- Foot Ball (TOY!)
 						i(187178),	-- Sc'ootie's Favorite Plushie
+					}),
+					n(177999, {	-- Xy'darid <General Goods>
+						i(185933),	-- Cheap Spices
+						i(185936),	-- Common Drum
+						i(185934),	-- Cracked Warhammer
+						i(185932),	-- Damaged Flask
+						i(185909),	-- Dull Opal
+						i(185935),	-- Dusty Skull
+						i(185937),	-- Stale Bread
+						i(185938),	-- Threadbare Cloth
+						i(185939),	-- Worn Journal
 					}),
 				},
 			}),

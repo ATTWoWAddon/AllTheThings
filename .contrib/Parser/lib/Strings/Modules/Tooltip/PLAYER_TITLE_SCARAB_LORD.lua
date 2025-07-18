@@ -1,7 +1,7 @@
 createLocalizationString({
 	readable = "Scarab Lord [name]",
 	constant = "PLAYER_TITLE_SCARAB_LORD",
-	color = [[~_.Colors.Raid]],
+	color = [[~_.DefaultColors.Raid]],
 	export = true,
 	text = {
 		en = "Scarab Lord %s",

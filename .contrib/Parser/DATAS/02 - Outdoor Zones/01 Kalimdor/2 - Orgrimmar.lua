@@ -2660,7 +2660,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, VANILLA_TAILORING_VENDOR_REAGENTS, {
+					["sym"] = {{ "sub", "common_vendor", 5154 }},	-- Poranna Snowbraid <Tailoring Supplies>
+					["groups"] = {
 						i(6270, {	-- Pattern: Blue Linen Vest (RECIPE!)
 							["isLimited"] = true,
 						}),
@@ -2680,7 +2681,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
 				-- #if NOT ANYCLASSIC
 				-- TODO: Finish this part.

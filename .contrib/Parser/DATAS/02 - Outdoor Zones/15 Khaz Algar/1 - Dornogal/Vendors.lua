@@ -87,7 +87,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}),
 					-- Season 2
 					i(232382, {	-- Golden Valorstone
-						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S2, 2}},
+						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S2, 1}},
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
 					i(231153, {	-- Triumphant Satchel of Carved Undermine Crests

@@ -2132,7 +2132,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(8681, {	-- Outfitter Eric <Speciality Tailoring Supplies>
 					["coord"] = { 43.0, 29.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {
+					["groups"] = appendGroups(VANILLA_COMMON_LEATHERWORKING_TAILORING_SUPPLIES, VANILLA_TAILORING_SUPPLIES, {
 						i(10314, {	-- Pattern: Lavender Mageweave Shirt (RECIPE!)
 							["isLimited"] = true,
 						}),
@@ -2152,11 +2152,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(5154, {	-- Poranna Snowbraid <Tailoring Supplies>
 					["coord"] = { 43.8, 29.6, IRONFORGE },
-					-- #if AFTER CATA
-					["sym"] = { {"sub", "common_recipes_vendor", 3364} },	-- Borya <Tailoring Supplies>
-					-- #endif
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {}),
+					["groups"] = appendGroups(
+						-- #if AFTER CATA
+						COMMON_CATACLYSM_TAILORING_RECIPES, 
+						-- #endif
+						VANILLA_COMMON_LEATHERWORKING_TAILORING_SUPPLIES, VANILLA_TAILORING_SUPPLIES, {}),
 				}),
 				n(5108, {	-- Raena Flinthammer <Light Armor Merchant>
 					["coord"] = { 32.6, 58.0, IRONFORGE },

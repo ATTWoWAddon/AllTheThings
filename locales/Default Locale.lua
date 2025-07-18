@@ -115,25 +115,6 @@ local L = {
 		app.asset("status-seasonal-available"),	-- 5 Seasonal available
 		app.asset("status-unsorted"), -- 6 Unsorted
 	},
-	TOOLTIP_MODULE = {
-		RANKS = {
-			AUTHOR = " |T"..app.asset("logo_32x32")..":0|t Author";
-			CONTRIBUTOR = " |T"..app.asset("logo_32x32")..":0|t Contributor";
-			COLLECTOR = "Collector";
-		},
-		TITLES = {
-			XX_BRINGER_OF_FLAMES = "%s, Bringer of Flames";
-			XX_OF_THE_ASYLUM = "%s, King of the Asylum";
-			XX_THE_COMPLETIONIST = "%s the Completionist";
-			XX_THE_CONTRIBUTOR = "%s";	-- NOTE: Contributors didn't want a different title.
-			XX_THE_EXTERMINATOR = "%s the Exterminator";
-			XX_THE_GOLD_TYCOON = "Gold Tycoon %s";
-			XX_THE_LORD_KING = "Lord King %s";
-			XX_THE_LORD_QUEEN = "Lord Queen %s";
-			XX_THE_SCARAB_LORD = "Scarab Lord %s";
-			XX_THE_HUGGLER = "%s the Huggler";
-		},
-	},
 };
 app.L = L;
 

@@ -3392,11 +3392,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 39384,	-- Noxious Whelp
 				}),
 				-- #endif
-				-- #if BEFORE CATA
-				i(4589, {	-- Long Elegant Feather
-					["cr"] = 5300,	-- Frayfeather Hippogryph
-				}),
-				-- #endif
 				i(8705, {	-- OOX-22/FE Distress Beacon
 					["description"] = "This item has a chance to drop from any creature in Feralas.",
 				}),

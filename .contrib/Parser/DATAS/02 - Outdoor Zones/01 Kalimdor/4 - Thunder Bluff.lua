@@ -1246,15 +1246,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(3005, {	-- Mahu <Tailoring Supplies> [CATA+] / <Leatherworking & Tailoring Supplies>
 					["coord"] = { 43.8, 45.1, THUNDER_BLUFF },
-					["sym"] = {
-						-- #if AFTER CATA
-						{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
-						-- #else
-						{"sub", "common_vendor", 5565}	-- Jillian Tanner <Leatherworking Supplies>
-						-- #endif
-					},
+					-- #if BEFORE CATA
+					["sym"] = { {"sub", "common_vendor", 5565} },	-- Jillian Tanner <Leatherworking Supplies>
+					-- #endif
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(VANILLA_TAILORING_VENDOR_REAGENTS, {
+					["groups"] = appendGroups(
+						-- #if AFTER CATA
+						COMMON_CATACLYSM_TAILORING_RECIPES, 
+						-- #endif
+						VANILLA_COMMON_LEATHERWORKING_TAILORING_SUPPLIES, VANILLA_TAILORING_SUPPLIES, {
 						i(10311, {	-- Pattern: Orange Martial Shirt (RECIPE!)
 							["isLimited"] = true,
 						}),

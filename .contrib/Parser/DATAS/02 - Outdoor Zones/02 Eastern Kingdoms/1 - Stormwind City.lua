@@ -4720,24 +4720,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 				}),
 				-- #endif
-				n(1347, {	-- Alexandra Bolero <Tailoring Supplies>
-					["coords"] = {
-						-- #if AFTER WRATH
-						{ 53.2, 81.6, STORMWIND_CITY },
-						-- #else
-						{ 43.4, 74.0, STORMWIND_CITY },
-						-- #endif
-					},
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, VANILLA_TAILORING_VENDOR_REAGENTS, {
-						i(6274, {	-- Pattern: Blue Overalls (RECIPE!)
-							["isLimited"] = true,
-						}),
-						i(10325, {	-- Pattern: White Wedding Dress (RECIPE!)
-							["isLimited"] = true,
-						}),
+					n(1347, {	-- Alexandra Bolero <Tailoring Supplies>
+						["coords"] = {
+							-- #if AFTER WRATH
+							{ 53.2, 81.6, STORMWIND_CITY },
+							-- #else
+							{ 43.4, 74.0, STORMWIND_CITY },
+							-- #endif
+						},
+						["races"] = ALLIANCE_ONLY,
+						["sym"] = {{ "sub", "common_vendor", 5154 }},	-- Poranna Snowbraid <Tailoring Supplies>
+						["groups"] = {
+							i(6274, {	-- Pattern: Blue Overalls (RECIPE!)
+								["isLimited"] = true,
+							}),
+							i(10325, {	-- Pattern: White Wedding Dress (RECIPE!)
+								["isLimited"] = true,
+							}),
+						},
 					}),
-				}),
 				n(1315, {	-- Allan Hafgan <Staves Merchant>
 					["coords"] = {
 						-- #if AFTER WRATH

@@ -307,12 +307,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			q(62891, {	-- Into the Reservoir
 				["sourceQuests"] = { 62890 },	-- Who Shapes the Forest
 				["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-				["coord"] = { 39.7, 55.7, THE_TRUNK },
+				["coord"] = { 39.7, 55.7, THE_ROOTS },
 			}),
 			q(62892, {	-- Recover the Lost
 				["sourceQuests"] = { 62891 },	-- Into the Reservoir
 				["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-				["coord"] = { 39.7, 55.7, THE_TRUNK },
+				["coord"] = { 39.7, 55.7, THE_ROOTS },
 			}),
 			q(62893, {	-- Do What We Cannot
 				["sourceQuests"] = { 62892 },	-- Recover the Lost

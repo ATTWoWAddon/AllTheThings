@@ -3964,6 +3964,199 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 	}),
 	filter(REAGENTS, {
+		-- Table of Content:
+		--	Cloth + Silk
+		--	Elemetal reagents
+		--	Clams
+		--	Cooking reagents
+		--	Other reagents
+		--_______________________________
+		--
+		-- Cloth:
+		i(14256, {	-- Felcloth
+			-- #if AFTER CATA
+			["coords"] = {
+				{ 52.0, 70.15, WINTERSPRING },	-- Xorothian Imps (Mazthoril)
+				{ 52.3, 75.70, WINTERSPRING },	-- Xorothian Satyrs (Mazthoril)
+				{ 52.75, 64.65, WINTERSPRING },	-- Xorothian Eredar (Mazthoril)
+				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
+				{ 17.7, 37.7, FELWOOD },	-- Misty Valley
+				{ 37.7, 67.85, BLASTED_LANDS },	-- The Tainted Forest
+				{ 33.4, 46.8, BLASTED_LANDS },	-- The Tainted Scar
+				{ 45.9, 46.8, BLASTED_LANDS },	-- The Dark Portal, west of
+			},
+			["crs"] = {
+				50315,	-- Xorothian Eredar
+				50321,	-- Xorothian Imp
+				50318,	-- Xorothian Satyr
+				7136,	-- Infernal Sentry
+				46950,	-- Misty Grell
+				41253,	-- Oath-Chained Infernal
+				41470,	-- Doomguard Destroyer
+				41471,	-- Dreadlord Defiler
+				6011,	-- Felguard Sentry
+			},
+			-- #endif
+			["description"] = "Felcloth drops uncommonly from given satyrs and creatures of the Burning Legion within the given zones.",
+			["maps"] = {
+				DIRE_MAUL_WARPWOOD_QUARTER,
+				-- #if BEFORE CATA
+				FELWOOD,
+				-- #endif
+			},
+		}),
+		i(2589, {	-- Linen Cloth
+			["description"] = "Linen Cloth drops commonly from any humanoid and undead creatures within the given zones.",
+			["maps"] = {
+				DUN_MOROGH,
+				DUROTAR,
+				ELWYNN_FOREST,
+				LOCH_MODAN,
+				MULGORE,
+				RAGEFIRE_CHASM,
+				SILVERPINE_FOREST,
+				TIRISFAL_GLADES,
+				WESTFALL,
+			},
+		}),
+		i(4338, {	-- Mageweave Cloth
+			["description"] = "Mageweave Cloth drops commonly from any humanoid and undead creatures within the given zones.",
+			["maps"] = {
+				BADLANDS,
+				BURNING_STEPPES,
+				DIRE_MAUL_GORDOK_COMMONS,
+				FELWOOD,
+				SEARING_GORGE,
+				TANARIS,
+				ZULFARRAK,
+			},
+		}),
+		i(14047, {	-- Runecloth
+			["description"] = "Runecloth drops commonly from any humanoid and undead creatures within the given zones.",
+			["maps"] = {
+				BLACKROCK_DEPTHS,
+				BLASTED_LANDS,
+				LOWER_BLACKROCK_SPIRE,
+				SILITHUS,
+				STRATHOLME,
+				SWAMP_OF_SORROWS,
+				WINTERSPRING,
+			},
+		}),
+		i(4306, {	-- Silk Cloth
+			["description"] = "Silk Cloth drops commonly from any humanoid and undead creatures within the given zones.",
+			["maps"] = {
+				ARATHI_HIGHLANDS,
+				DESOLACE,
+				DIRE_MAUL_GORDOK_COMMONS,
+				FERALAS,
+				MARAUDON,
+				RAZORFEN_KRAUL,
+				THE_HINTERLANDS,
+				ULDAMAN,
+			},
+		}),
+		i(2592, {	-- Wool Cloth
+			["description"] = "Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",
+			["maps"] = {
+				ASHENVALE,
+				BLACKFATHOM_DEEPS,
+				DUSKWOOD,
+				THE_STOCKADE,
+				WETLANDS,
+			},
+		}),
+		-- Silk:
+		i(14227, {	-- Ironweb Spider Silk
+			-- #if AFTER 4.0.3
+			["crs"] = {
+				10376,	-- Crystal Fang
+				10596,	-- Mother Smolderweb
+				10374,	-- Spire Spider
+				10375,	-- Spire Spiderling
+			},
+			["description"] = "Drops from spiders in Lower Blackrock Spire.",
+			["maps"] = { LOWER_BLACKROCK_SPIRE },
+			-- #else
+			["crs"] = {
+				1821,	-- Carrion Lurker
+				5858,	-- Greater Lava Spider
+				1824,	-- Plague Lurker
+				5857,	-- Searing Lava Spider
+				1822,	-- Venom Mist Lurker
+			},
+			["description"] = "Drops from spiders in the level bracket 45-60.",
+			["maps"] = {
+				SEARING_GORGE,
+				WESTERN_PLAGUELANDS,
+			},
+			-- #endif
+		}),
+		i(10285, {	-- Shadow Silk
+			-- #if AFTER BFA
+			["crs"] = {
+				5856,	-- Glassweb Spider
+				5858,	-- Greater Lava Spider
+				5857,	-- Searing Lava Spider
+			},
+			["description"] = "Drops from spiders in Searing Gorge.",
+			["maps"] = { SEARING_GORGE },
+			-- #elseif AFTER 4.0.3
+			["crs"] = {
+				5856,	-- Glassweb Spider
+				1824,	-- Plague Lurker
+				5857,	-- Searing Lava Spider
+				1822,	-- Venom Mist Lurker
+			},
+			["description"] = "Drops from spiders in higher level vanilla zones.",
+			-- #else
+			["crs"] = {
+				1821,	-- Carrion Lurker
+				5856,	-- Glassweb Spider
+				1824,	-- Plague Lurker
+				5857,	-- Searing Lava Spider
+				1822,	-- Venom Mist Lurker
+			},
+			["description"] = "Drops from spiders in the level bracket 45-60.",
+			-- #endif
+		}),
+		i(4337, {	-- Thick Spider's Silk
+			-- Danny Donkey: Anyclassic here points to sources nerfed at an unknown point between MoP and TWW.
+			["crs"] = {
+				-- #if AFTER 4.0.3
+				-- #else
+				1821,	-- Carrion Lurker
+				4411,	-- Darkfang Lurker
+				4431,	-- Darkfang Spider
+				4377,	-- Darkmist Lurker
+				5856,	-- Glassweb Spider
+				5858,	-- Greater Lava Spider
+				5857,	-- Searing Lava Spider
+				-- #endif
+				4412,	-- Darkfang Creeper
+				4414,	-- Darkfang Venomspider
+				4378,	-- Darkmist Recluse
+				4379,	-- Darkmist Silkspinner
+				4376,	-- Darkmist Spider
+				4415,	-- Giant Darkfang Spiders
+				-- #if ANYCLASSIC
+				1824,	-- Plague Lurker
+				1822,	-- Venom Mist Lurker
+				-- #endif
+			},
+			["description"] = "Drops from spiders in the level bracket 32-60.",
+			["maps"] = {
+				DUSTWALLOW_MARSH,
+				-- #if BEFORE CATA
+				SEARING_GORGE,
+				-- #endif
+				-- #if ANYCLASSIC
+				WESTERN_PLAGUELANDS,
+				-- #endif
+			},
+		}),
+		--___________________________________
+		--
 		-- Elemental reagents:
 			-- Air:
 		i(7069, {	-- Elemental Air
@@ -4385,7 +4578,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				EASTERN_PLAGUELANDS,
 				WESTERN_PLAGUELANDS,
 				-- #endif
-				DIRE_MAUL,
+				DIRE_MAUL_CAPITAL_GARDENS,
 				SCHOLOMANCE,
 				STRATHOLME,
 			},
@@ -4530,134 +4723,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			},
 		}),
-		-- Claws, fangs, feathers,+++:
-		i(5637, {	-- Large Fang
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats ranging from level 25 to 40.",
-			["maps"] = {
-				ASHENVALE,
-				BADLANDS,
-				DESOLACE,
-				DUSKWOOD,
-				DUSTWALLOW_MARSH,
-				HILLSBRAD_FOOTHILLS,
-				LOCH_MODAN,
-				RAZORFEN_DOWNS,
-				RAZORFEN_KRAUL,
-				STONETALON_MOUNTAINS,
-				STRANGLETHORN_VALE,
-				SWAMP_OF_SORROWS,
-				THOUSAND_NEEDLES,
-				WETLANDS,
-				-- #if AFTER TBC
-				BLOODMYST_ISLE,
-				GHOSTLANDS,
-				-- #endif
-			},
-			-- #else
-			["coord"] = { 50.0, 70.0, ARATHI_HIGHLANDS },
-			["cr"] = 2561,	-- Highland Fleshstalker
-			["description"] = "Cataclysm messed up with the drop sources for Large Fangs. Supposed to drop from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats. The Highland Fleshstalker seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents.",
-			-- #endif
-		}),
-		i(17056, {	-- Light Feather
-			-- #if BEFORE 4.0.3
-			["coord"] = { 44.0, 48.0, DARKSHORE },
-			["crs"] = {
-				10158,	-- Moonkin
-				10157,	-- Moonkin Oracle
-				10160,	-- Raging Moonkin
-				10159,	-- Young Moonkin
-			},
-			-- #endif
-			-- #if AFTER 4.0.3
-			["description"] = "Can drop from all birds, harpies, owlkin and striders on Kalimdor, Eastern Kingdoms, Outland and Northrend.",
-			-- #else
-			["description"] = "Drops from birds, harpies, owlkin and striders in the level bracket 10-30 like Moonkin in Darkshore.",
-			-- #endif
-		}),
-		i(5635, {	-- Sharp Claw
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from some Beast and Demon creatures like hounds, felines, spiders, raptors and bats ranging from level 10 to 30.",
-			["maps"] = {
-				ASHENVALE,
-				DARKSHORE,
-				DUSKWOOD,
-				HILLSBRAD_FOOTHILLS,
-				LOCH_MODAN,
-				RAZORFEN_KRAUL,
-				REDRIDGE_MOUNTAINS,
-				SHADOWFANG_KEEP,
-				SILVERPINE_FOREST,
-				STONETALON_MOUNTAINS,
-				THE_BARRENS,
-				THOUSAND_NEEDLES,
-				WAILING_CAVERNS,
-				WESTFALL,
-				WETLANDS,
-				-- #if AFTER TBC
-				BLOODMYST_ISLE,
-				GHOSTLANDS,
-				-- #endif
-			},
-			-- #else
-			["coords"] = {
-				{ 27.0, 60.0, GHOSTLANDS },
-				{ 50.0, 60.0, GHOSTLANDS },
-				{ 70.0, 38.0, GHOSTLANDS },
-			},
-			["crs"] = {
-				16348,	-- Ghostclaw Lynx
-				16349,	-- Ghostclaw Ravager
-				16347,	-- Starving Ghostclaw
-			},
-			["description"] = "Cataclysm messed up with the drop sources for Sharp Claws. Supposed to drop from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats. The Ghostclaw lynxs in Ghostland seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents!",
-			-- #endif
-		}),
-		i(4402, {	-- Small Flame Sac
-			-- #if AFTER 4.0.3
-			["cr"] = 14398,	-- Eldreth Darter
-			["description"] = "Cataclysm messed up with the drop sources for Small Flame Sacs. Supposed to drop from small dragonkin like darters and whelps. Eldreth Darters in The Capital Gardens in Dire Maul seems to be the most reliable source.",
-			["maps"] = { DIRE_MAUL },
-			-- #else
-			["coords"] = {
-				{ 81.0, 48.0, BADLANDS },
-				{ 45.0, 68.0, DUSTWALLOW_MARSH },
-				{ 46.0, 24.0, FERALAS },
-				{ 36.0, 12.0, STONETALON_MOUNTAINS },
-				{ 15.0, 61.0, SWAMP_OF_SORROWS },
-				{ 62.0, 42.0, WETLANDS },
-			},
-			["description"] = "Drops from small dragonkin like darters and whelps.",
-			-- #endif
-		}),
-		-- From trolls:
-		i(12804, {	-- Powerful Mojo
-			-- #if BEFORE 4.0.3
-			["coord"] = { 72.0, 15.0, EASTERN_PLAGUELANDS },	-- Zul'mashar
-			-- #endif
-			["description"] = "Can drop from trolls.",
-			["maps"] = {
-				LOWER_BLACKROCK_SPIRE,
-				ZULGURUB,
-			},
-		}),
-		i(8153, {	-- Wildvine
-			-- #if BEFORE 4.0.3
-			["description"] = "Drops from trolls ranging from level 40 to 50.",
-			["maps"] = {
-				STRANGLETHORN_VALE,
-				THE_HINTERLANDS,
-			},
-			-- #else
-			["description"] = "Cataclysm messed up with the drop sources for Wildvine. Supposed to drop from trolls in Hinterlands and Stranglethorn, farming Purple Lotus with herbalism is the most reliable source.",
-			-- #endif
-		}),
-		-- Black Diamonds:
-		i(11754, {["maps"] = { BLACKROCK_DEPTHS }, }),	-- Black Diamond
-		i(18335, {	-- Pristine Black Diamond
-			["description"] = "Can drop from ANY content intended for level-capped vanilla players, whether it be Dire Maul, Stratholme, Scholomance, or the raids. This is a rare item, farming it requires luck.",
-		}),
+		--___________________________________
+		--
 		-- Clams:
 		i(7973, {	-- Big-mouth Clam
 			-- #if AFTER 4.0.3
@@ -4765,91 +4832,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				i(5500),	-- Iridescent Pearl
 				i(5504),	-- Tangy Clam Meat
 				i(5498),	-- Small Lustrous Pearl
-			},
-		}),
-		-- Alchemy:
-		i(19441, {	-- Huge Venom Sac
-			-- #if BEFORE 4.0.3
-			["description"] = "Can drop from scorpids and spiders in the level bracket 50-60, and are most abundant in Burning Steppes and Silithus. Spiders and scorpids often share a spawn with other bests, so kill the hound or whatever if you cannot find scorpids and spiders.",
-			["maps"] = {
-				BURNING_STEPPES,
-				SILITHUS,
-			},
-			-- #else
-			["description"] = "Cataclysm messed up with the drop sources for Huge Venom Sac, and the only reliable sources are scorpids and spiders in Ruins of Ahn'Qiraj and Naxxramas.",
-			["maps"] = {
-				NAXXRAMAS,
-				RUINS_OF_AHNQIRAJ,
-			},
-			-- #endif
-		}),
-		i(1288, {	-- Large Venom Sac
-			-- #if BEFORE 4.0.3
-			["description"] = "Can drop from spiders in the level bracket 20-35, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other bests, so kill the bear or whatever if you cannot find spiders.",
-			["maps"] = {
-				ASHENVALE,
-				DUSKWOOD,
-			},
-			-- #elseif AFTER BFA
-			["description"] = "Can drop from spiders in most vanilla zones, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other bests, so kill the bear or whatever if you cannot find spiders.",
-			["maps"] = {
-				ASHENVALE,
-				DUSKWOOD,
-			},
-			-- #else
-			["coords"] = {
-				{ 86.0, 54.0, DUSKWOOD },	-- By spider cave east of Darkshire
-				{ 77.0, 60.0, DUSKWOOD },	-- Windmill crossroad
-			},
-			["cr"] = 930,	-- Black Widow Hatchling
-			-- #endif
-		}),
-		i(1475, {	-- Small Venom Sac
-			-- #if BEFORE 4.0.3
-			["description"] = "Can drop from spiders in the level bracket 5-20, and are most abundant in Loch Modan and Stonetalon Mountains. Spiders often share a spawn with other bests, so kill the bear or whatever if you cannot find spiders.",
-			["maps"] = {
-				LOCH_MODAN,
-				STONETALON_MOUNTAINS,
-			},
-			-- #else
-			["coord"] = { 18.8, 35.8, BLOODMYST_ISLE },
-			["crs"] = {
-				17523,	-- Myst Leecher
-				17522,	-- Myst Spinner
-				17683,	-- Zarakh
-			},
-			["description"] = "Cataclysm messed up with the drop sources for Small Venom Sac, and unfortunately for Horde players the only reliable farming spot is on Bloodmyst Isle.",
-			-- #endif
-		}),
-		i(9260, {	-- Volatile Rum
-			["coords"] = {
-				-- #if BEFORE 4.0.3
-				{ 54.0, 93.0, TANARIS },	-- Land's End Beach
-				-- #else
-				{ 77.0, 90.0, NORTHERN_BARRENS },	-- Fray Island
-				{ 69.4, 53.5, TANARIS },	-- Southbreak Shore
-				-- #endif
-				{ 74.0, 47.0, TANARIS },	-- Lost Rigger Cove
-			},
-			["crs"] = {
-				-- #if BEFORE 4.0.3
-				7857,	-- Southsea Dock Worker
-				7856,	-- Southsea Frebooter
-				15685,	-- Southsea Kidnapper
-				7902,	-- Treasure Hunting Buccaneer
-				7899,	-- Treasure Hunting Pirate
-				7901,	-- Treasure Hunting Swashbuckler
-				-- #else
-				3382,	-- Southsea Cannoneer
-				3383,	-- Southsea Cutthroat
-				40632,	-- Southsea Musketeer
-				3384,	-- Southsea Privateer
-				44168,	-- Southsea Recruit
-				40635,	-- Southsea Strongarm
-				40636,	-- Southsea Swabbie
-				-- #endif
-				7855,	-- Southsea Pirate
-				7858,	-- Southsea Swashbuckler
 			},
 		}),
 		-- Cooking:
@@ -5655,9 +5637,167 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["description"] = "Drops from spiders in the level bracket 35-60 like spiders in Dustwallow Marsh.",
 			-- #endif
 		}),
-		-- Engineering:
+		--______________________________________
+		--
+		-- Other reagents:
+		i(11754, {["maps"] = { BLACKROCK_DEPTHS }, }),	-- Black Diamond
 		i(7191),	-- Fused Wiring
-		-- Leatherworking:
+		i(19441, {	-- Huge Venom Sac
+			-- #if BEFORE 4.0.3
+			["description"] = "Can drop from scorpids and spiders in the level bracket 50-60, and are most abundant in Burning Steppes and Silithus. Spiders and scorpids often share a spawn with other bests, so kill the hound or whatever if you cannot find scorpids and spiders.",
+			["maps"] = {
+				BURNING_STEPPES,
+				SILITHUS,
+			},
+			-- #else
+			["description"] = "Cataclysm messed up with the drop sources for Huge Venom Sac, and the only reliable sources are scorpids and spiders in Ruins of Ahn'Qiraj and Naxxramas.",
+			["maps"] = {
+				NAXXRAMAS,
+				RUINS_OF_AHNQIRAJ,
+			},
+			-- #endif
+		}),
+		i(8168, {	-- Jet Black Feather
+			["coords"] = {
+				{ 58.0, 20.0, BLASTED_LANDS },
+				{ 60.0, 27.0, BLASTED_LANDS },
+				{ 55.0, 35.0, BLASTED_LANDS },
+				{ 60.0, 38.0, BLASTED_LANDS },
+				{ 55.0, 44.0, BLASTED_LANDS },
+			},
+			["crs"] = {
+				5982,	-- Black Slayer
+				8299,	-- Spiteflayer
+			},
+			["timeline"] = { REMOVED_4_0_3 },
+		}),
+		i(5637, {	-- Large Fang
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats ranging from level 25 to 40.",
+			["maps"] = {
+				ASHENVALE,
+				BADLANDS,
+				DESOLACE,
+				DUSKWOOD,
+				DUSTWALLOW_MARSH,
+				HILLSBRAD_FOOTHILLS,
+				LOCH_MODAN,
+				RAZORFEN_DOWNS,
+				RAZORFEN_KRAUL,
+				STONETALON_MOUNTAINS,
+				STRANGLETHORN_VALE,
+				SWAMP_OF_SORROWS,
+				THOUSAND_NEEDLES,
+				WETLANDS,
+				-- #if AFTER TBC
+				BLOODMYST_ISLE,
+				GHOSTLANDS,
+				-- #endif
+			},
+			-- #else
+			["coord"] = { 50.0, 70.0, ARATHI_HIGHLANDS },
+			["cr"] = 2561,	-- Highland Fleshstalker
+			["description"] = "Cataclysm messed up with the drop sources for Large Fangs. Supposed to drop from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats. The Highland Fleshstalker seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents.",
+			-- #endif
+		}),
+		i(1288, {	-- Large Venom Sac
+			-- #if BEFORE 4.0.3
+			["description"] = "Can drop from spiders in the level bracket 20-35, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other bests, so kill the bear or whatever if you cannot find spiders.",
+			["maps"] = {
+				ASHENVALE,
+				DUSKWOOD,
+			},
+			-- #elseif AFTER BFA
+			["description"] = "Can drop from spiders in most vanilla zones, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other bests, so kill the bear or whatever if you cannot find spiders.",
+			["maps"] = {
+				ASHENVALE,
+				DUSKWOOD,
+			},
+			-- #else
+			["coords"] = {
+				{ 86.0, 54.0, DUSKWOOD },	-- By spider cave east of Darkshire
+				{ 77.0, 60.0, DUSKWOOD },	-- Windmill crossroad
+			},
+			["cr"] = 930,	-- Black Widow Hatchling
+			-- #endif
+		}),
+		i(17056, {	-- Light Feather
+			-- #if BEFORE 4.0.3
+			["coord"] = { 44.0, 48.0, DARKSHORE },
+			["crs"] = {
+				10158,	-- Moonkin
+				10157,	-- Moonkin Oracle
+				10160,	-- Raging Moonkin
+				10159,	-- Young Moonkin
+			},
+			-- #endif
+			-- #if AFTER 4.0.3
+			["description"] = "Can drop from all birds, harpies, owlkin and striders on Kalimdor, Eastern Kingdoms, Outland and Northrend.",
+			-- #else
+			["description"] = "Drops from birds, harpies, owlkin and striders in the level bracket 10-30 like Moonkin in Darkshore.",
+			-- #endif
+		}),
+		i(4589, {	-- Long Elegant Feather
+			["coords"] = {
+				{ 20.0, 57.0, AZSHARA },
+				{ 56.0, 62.8, FERALAS },
+				{ 84.0, 34.0, HILLSBRAD_FOOTHILLS },
+			},
+			["crs"] = {
+				5300,	-- Frayfeather Hippogryph
+				6375,	-- Thunderhead Hippogryph
+				2474,	-- Kurdros
+				2347,	-- Wild Gryphon
+				2473,	-- Granistad
+				2659,	-- Razorbeak Skylord
+				2657,	-- Trained Razorbeak
+				2658,	-- Razorbeak Gryphon
+				2651,	-- Witherbark Hideskinner
+			},
+			["description"] = "Alliance players can disregard The Hinterlands due to most mob sources being friendly.",
+			["maps"] = { THE_HINTERLANDS },
+			["timeline"] = { REMOVED_4_0_3 },
+		}),
+		i(5116, {	-- Long Tail Feather
+			["coords"] = {
+				{ 32.4, 66.0, STONETALON_MOUNTAINS },
+				{ 79.0, 77.0, THOUSAND_NEEDLES },
+			},
+			["description"] = "Drops from birds and harpies in the given zones.",
+			["maps"] = {
+				ARATHI_HIGHLANDS,
+				BADLANDS,
+				DESOLACE,
+			},
+			["timeline"] = { REMOVED_4_0_3 },
+		}),
+		i(7072, {	-- Naga Scale
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops from nagas ranging from level 28 to 40, though the droprate is low.",
+			["maps"] = {
+				ARATHI_HIGHLANDS,
+				DESOLACE,
+				HILLSBRAD_FOOTHILLS,
+			},
+			-- #else
+			["coord"] = { 29.0, 11.0, DESOLACE },
+			["cr"] = 4719,	-- Slitherblade Sea Witch
+			["description"] = "Cataclysm messed up with the drop sources for Naga Scale. Slitherblade Sea Witches seems to be the most reliable source. Consider farming this on a character that are more capable to farm in water.",
+			-- #endif
+		}),
+		i(12804, {	-- Powerful Mojo
+			-- #if BEFORE 4.0.3
+			["coord"] = { 72.0, 15.0, EASTERN_PLAGUELANDS },	-- Zul'mashar
+			-- #endif
+			["description"] = "Can drop from trolls.",
+			["maps"] = {
+				LOWER_BLACKROCK_SPIRE,
+				ZULGURUB,
+			},
+		}),
+		i(18335, {	-- Pristine Black Diamond
+			["description"] = "Can drop from ANY content intended for level-capped vanilla players, whether it be Dire Maul, Stratholme, Scholomance, or the raids. This is a rare item, farming it requires luck.",
+		}),
 		i(4461, {	-- Raptor Hide
 			-- #if BEFORE 4.0.3
 			["description"] = "Drops from raptors ranging from level 30 to 40.",
@@ -5672,15 +5812,167 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["description"] = "Cataclysm messed up with the drop sources for Large Fangs. Supposed to drop from all raptors within a given level range. The Highland Fleshstalker seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents.",
 			-- #endif
 		}),
-		-- Cloth (Leave more details to Danny)
-		i(14256),	-- Felcloth
-		i(14227),	-- Ironweb Spider Silk
-		i(10285),	-- Shadow Silk
-		i(4337),	-- Thick Spider's Silk
-		i(2589),	-- Linen Cloth
-		i(2592),	-- Wool Cloth
-		i(4306),	-- Silk Cloth
-		i(4338),	-- Mageweave Cloth
-		i(14047),	-- Runecloth
+		i(5635, {	-- Sharp Claw
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops from some Beast and Demon creatures like hounds, felines, spiders, raptors and bats ranging from level 10 to 30.",
+			["maps"] = {
+				ASHENVALE,
+				DARKSHORE,
+				DUSKWOOD,
+				HILLSBRAD_FOOTHILLS,
+				LOCH_MODAN,
+				RAZORFEN_KRAUL,
+				REDRIDGE_MOUNTAINS,
+				SHADOWFANG_KEEP,
+				SILVERPINE_FOREST,
+				STONETALON_MOUNTAINS,
+				THE_BARRENS,
+				THOUSAND_NEEDLES,
+				WAILING_CAVERNS,
+				WESTFALL,
+				WETLANDS,
+				-- #if AFTER TBC
+				BLOODMYST_ISLE,
+				GHOSTLANDS,
+				-- #endif
+			},
+			-- #else
+			["coords"] = {
+				{ 27.0, 60.0, GHOSTLANDS },
+				{ 50.0, 60.0, GHOSTLANDS },
+				{ 70.0, 38.0, GHOSTLANDS },
+			},
+			["crs"] = {
+				16348,	-- Ghostclaw Lynx
+				16349,	-- Ghostclaw Ravager
+				16347,	-- Starving Ghostclaw
+			},
+			["description"] = "Cataclysm messed up with the drop sources for Sharp Claws. Supposed to drop from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats. The Ghostclaw lynxs in Ghostland seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents!",
+			-- #endif
+		}),
+		i(5784, {	-- Slimy Murloc Scale
+			-- #if AFTER 4.0.3
+			["description"] = "Drops from murlocs Blackfathom Deeps.",
+			["maps"] = { BLACKFATHOM_DEEPS },
+			-- #else
+			["description"] = "Drops from murlocs in the level bracket 15-25 like Bluegill murlocs in Wetlands.",
+			["coord"] = { 15.1, 39.3, WETLANDS },	-- Bluegill Marsh
+			["crs"] = {
+				1026,	-- Bluegill Forager
+				1028,	-- Bluegill Muckdweller
+				1024,	-- Bluegill Murloc
+				1029,	-- Bluegill Oracle
+				1025,	-- Bluegill Puddlejumper
+				1418,	-- Bluegill Raider
+				1027,	-- Bluegill Warrior
+			},
+			-- #endif
+		}),
+		i(4402, {	-- Small Flame Sac
+			-- #if AFTER 4.0.3
+			["cr"] = 14398,	-- Eldreth Darter
+			["description"] = "Cataclysm messed up with the drop sources for Small Flame Sacs. Supposed to drop from small dragonkin like darters and whelps. Eldreth Darters in The Capital Gardens in Dire Maul seems to be the most reliable source.",
+			["maps"] = { DIRE_MAUL },
+			-- #else
+			["coords"] = {
+				{ 81.0, 48.0, BADLANDS },
+				{ 45.0, 68.0, DUSTWALLOW_MARSH },
+				{ 46.0, 24.0, FERALAS },
+				{ 36.0, 12.0, STONETALON_MOUNTAINS },
+				{ 15.0, 61.0, SWAMP_OF_SORROWS },
+				{ 62.0, 42.0, WETLANDS },
+			},
+			["description"] = "Drops from small dragonkin like darters and whelps.",
+			-- #endif
+		}),
+		i(1475, {	-- Small Venom Sac
+			-- #if BEFORE 4.0.3
+			["description"] = "Can drop from spiders in the level bracket 5-20, and are most abundant in Loch Modan and Stonetalon Mountains. Spiders often share a spawn with other bests, so kill the bear or whatever if you cannot find spiders.",
+			["maps"] = {
+				LOCH_MODAN,
+				STONETALON_MOUNTAINS,
+			},
+			-- #else
+			["coord"] = { 18.8, 35.8, BLOODMYST_ISLE },
+			["crs"] = {
+				17523,	-- Myst Leecher
+				17522,	-- Myst Spinner
+				17683,	-- Zarakh
+			},
+			["description"] = "Cataclysm messed up with the drop sources for Small Venom Sac, and unfortunately for Horde players the only reliable farming spot is on Bloodmyst Isle.",
+			-- #endif
+		}),
+		i(5785, {	-- Thick Murloc Scale
+			-- Danny Donkey:	Blizzard devs fucked around with this reagent during retail Cataclysm which lead to it periodically only becoming obtainable from the rare Scargil in Hillsbrad and random mobs in Dustwallow.
+			-- 					At an unknown point got it added to Bluegill murlocs in Wetlands, as well as possibly dropping in StV and DwM. Seems like Cata Classic carried on without affecting this drop.
+			-- #if NOT ANYCLASSIC
+			["coord"] = { 15.1, 39.3, WETLANDS },	-- Bluegill Marsh
+			["crs"] = {
+				42111,	-- Bluegill Forager
+				41425,	-- Bluegill Murloc
+				41426,	-- Bluegill Oracle
+				42110,	-- Bluegill Puddlejumper
+			},
+			["description"] = "Drops from Bluegill murlocs in Wetlands.",
+			-- #elseif ANYCLASSIC
+			["maps"] = {
+				DUSTWALLOW_MARSH,
+				-- #if BEFORE 4.0.3
+				STRANGLETHORN_VALE,
+				-- #else
+				NORTHERN_STRANGLETHORN,
+				-- #endif
+			},
+			-- #endif
+			-- #if ANYCLASSIC
+				-- #if AFTER 4.0.3
+				["description"] = "Supposedly drops from murlocs in Northen Stranglethorn and Dustwallow Marsh. If you find any other reliable sources, please let us know in the ATT discord!",
+				-- #else
+				["description"] = "Drops from murlocs in Stranglethorn Vale and Dustwallow Marsh.",
+				-- #endif
+			-- #endif
+		}),
+		i(9260, {	-- Volatile Rum
+			["coords"] = {
+				-- #if BEFORE 4.0.3
+				{ 54.0, 93.0, TANARIS },	-- Land's End Beach
+				-- #else
+				{ 77.0, 90.0, NORTHERN_BARRENS },	-- Fray Island
+				{ 69.4, 53.5, TANARIS },	-- Southbreak Shore
+				-- #endif
+				{ 74.0, 47.0, TANARIS },	-- Lost Rigger Cove
+			},
+			["crs"] = {
+				-- #if BEFORE 4.0.3
+				7857,	-- Southsea Dock Worker
+				7856,	-- Southsea Frebooter
+				15685,	-- Southsea Kidnapper
+				7902,	-- Treasure Hunting Buccaneer
+				7899,	-- Treasure Hunting Pirate
+				7901,	-- Treasure Hunting Swashbuckler
+				-- #else
+				3382,	-- Southsea Cannoneer
+				3383,	-- Southsea Cutthroat
+				40632,	-- Southsea Musketeer
+				3384,	-- Southsea Privateer
+				44168,	-- Southsea Recruit
+				40635,	-- Southsea Strongarm
+				40636,	-- Southsea Swabbie
+				-- #endif
+				7855,	-- Southsea Pirate
+				7858,	-- Southsea Swashbuckler
+			},
+		}),
+		i(8153, {	-- Wildvine
+			-- #if BEFORE 4.0.3
+			["description"] = "Drops from trolls ranging from level 40 to 50.",
+			["maps"] = {
+				STRANGLETHORN_VALE,
+				THE_HINTERLANDS,
+			},
+			-- #else
+			["description"] = "Cataclysm messed up with the drop sources for Wildvine. Supposed to drop from trolls in Hinterlands and Stranglethorn, farming Purple Lotus with herbalism is the most reliable source.",
+			-- #endif
+		}),
 	}),
 }));

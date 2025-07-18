@@ -1,7 +1,7 @@
 createLocalizationString({
 	readable = "Gold Tycoon [name]",
 	constant = "PLAYER_TITLE_GOLD_TYCOON",
-	color = [[~_.Colors.Raid]],
+	color = [[~_.DefaultColors.Raid]],
 	export = true,
 	text = {
 		en = "Gold Tycoon %s",

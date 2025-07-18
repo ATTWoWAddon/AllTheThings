@@ -1986,12 +1986,11 @@ local function BuildSourceParent(group)
 	end
 	-- app.PrintDebug("BuildSourceParent",group.hash,thingCheck,specificSource,keyValue,#things,isDirectSources)
 	-- if app.Debugging then
-	-- 	local sourceGroup = {
-	-- 		["text"] = "DEBUG THINGS",
+	-- 	local sourceGroup = app.CreateRawText("DEBUG THINGS", {
 	-- 		["OnUpdate"] = app.AlwaysShowUpdate,
 	-- 		["skipFill"] = true,
 	-- 		["g"] = {},
-	-- 	};
+	-- 	})
 	-- 	NestObjects(sourceGroup, things, true)
 	-- 	NestObject(group, sourceGroup, nil, 1)
 	-- end
@@ -2805,6 +2804,9 @@ function app:GetDataCache()
 				icon = app.asset("Interface_Newly_Added")
 			}),
 
+			-- Achievements
+			app.CreateDynamicHeader("achievementID", SimpleNPCGroup(app.HeaderConstants.ACHIEVEMENTS)),
+
 			-- Artifacts
 			app.CreateDynamicHeader("artifactID", SimpleNPCGroup(app.HeaderConstants.ARTIFACTS)),
 
@@ -3137,7 +3139,6 @@ customWindowUpdates.AchievementHarvester = function(self, ...)
 			end
 			local db = app.CreateRawText("Achievement Harvester", {
 				g = g,
-				text = "Achievement Harvester",
 				icon = app.asset("WindowIcon_RaidAssistant"),
 				description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nExpand a group to harvest the 1,000 Achievements within that range.",
 				visible = true,
@@ -3395,8 +3396,7 @@ customWindowUpdates.CosmicInfuser = function(self, force)
 			self.initialized = true;
 			force = true;
 			local g = {};
-			local rootData = {
-				text = "Cosmic Infuser",
+			local rootData = app.CreateRawText("Cosmic Infuser", {
 				icon = app.asset("Category_Zones"),
 				description = "This window helps debug when we're missing map IDs in the addon.",
 				OnUpdate = app.AlwaysShowUpdate,
@@ -3405,16 +3405,17 @@ customWindowUpdates.CosmicInfuser = function(self, force)
 				visible = true,
 				expanded = true,
 				g = g,
-			};
+			})
 
 			-- Cache all maps by their ID number, starting with maps we reference in our DB.
 			local mapsByID = {};
-			for mapID,_ in pairs(app.SearchForFieldContainer("mapID")) do
+			for mapID,cachedMaps in pairs(app.SearchForFieldContainer("mapID")) do
 				if not mapsByID[mapID] then
 					local mapObject = app.CreateMap(mapID, {
 						mapInfo = C_Map_GetMapInfo(mapID),
 						collectible = true,
-						collected = true
+						collected = true,
+						statistic = tostring(#cachedMaps),
 					});
 					mapsByID[mapID] = mapObject;
 					mapObject.g = {};	-- Doing this prevents the CreateMap function from creating an exploration header.
@@ -6776,12 +6777,11 @@ app.ProcessAuctionData = function()
 			["description"] = L.ITEMS_FOR_ACHIEVEMENTS_DESC,
 			["priority"] = 1,
 		}),
-		["sourceID"] = {	-- Appearances
-			["text"] = "Appearances",
+		["sourceID"] = app.CreateRawText("Appearances", {	-- Appearances
 			["icon"] = 135276,
 			["description"] = L.ALL_APPEARANCES_DESC,
 			["priority"] = 2,
-		},
+		}),
 		["mountID"] = app.CreateFilter(100, {	-- Mounts
 			["description"] = L.ALL_THE_MOUNTS_DESC,
 			["priority"] = 3,
@@ -6800,12 +6800,11 @@ app.ProcessAuctionData = function()
 			["description"] = L.ALL_THE_RECIPES_DESC,
 			["priority"] = 6,
 		}),
-		["itemID"] = {					-- General
-			["text"] = "General",
+		["itemID"] = app.CreateRawText("General", {					-- General
 			["icon"] = 334365,
 			["description"] = L.ALL_THE_ILLUSIONS_DESC,
 			["priority"] = 7,
-		},
+		}),
 		["reagentID"] = app.CreateFilter(56, {	-- Reagent
 			["icon"] = 135851,
 			["description"] = L.ALL_THE_REAGENTS_DESC,

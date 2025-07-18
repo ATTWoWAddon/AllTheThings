@@ -386,6 +386,7 @@ i(158751);	-- Matted Pelt
 i(161201);	-- Mermaid's Looking Glass
 i(158778);	-- Mucose Tendril
 i(158866);	-- Oily Blubber
+i(162685);	-- Overflowing Loa Tribute
 i(163848);	-- Overused Voodoo Doll
 i(158831);	-- Parched Honeycomb
 i(158740);	-- Pearly Incisor
@@ -465,6 +466,7 @@ i(166801);	-- Sapphire of Brilliance (Opulence Crown Consumable)
 i(166875);	-- Silver Filigreed Devilsaur Tooth
 i(166858);	-- Silver Sculpture of Sseratus
 i(166797);	-- Star Topaz (Opulence Crown Consumable)
+i(166872);	-- Sterling Truesilver Flatware
 i(166796);	-- Sunset Amber (Opulence Crown Consumable)
 i(166288);	-- Waterlogged Junk
 i(166859);	-- Zinj'alor Blue Diamond
@@ -1301,23 +1303,19 @@ i(187470);	-- Broken Mutilator Chain
 i(186189);	-- Cache of Armaments
 i(187408);	-- Cartel Purchase Order
 i(186660);	-- Charger's Armor Spikes
-i(185933);	-- Cheap Spices
 i(187477);	-- Chewed Mawsworn Orders
 i(187449);	-- Chipped Razorwing Fang
 i(187211);	-- Chronicle of Cartel Al
 i(187220);	-- Coalesced Power
 i(187453);	-- Coiled Black Chain
-i(185936);	-- Common Drum
 i(187347);	-- Concentrated Anima
 i(187343);	-- Condensed Offering Sphere
-i(185934);	-- Cracked Warhammer
 i(185483);	-- Cranial Disk
 i(187456);	-- Crucible of Soulforge Metal
 i(187444);	-- Crushed Mawshrooms
 i(185739);	-- Crystalline Shard
 i(187464);	-- Crystallized Soul Dust
 i(185478);	-- Dagger-Length Talons
-i(185932);	-- Damaged Flask
 i(187293);	-- Desolate Shard of Bek
 i(187296);	-- Desolate Shard of Cor
 i(187299);	-- Desolate Shard of Dyz
@@ -1331,10 +1329,8 @@ i(187355);	-- Devourer Femur
 i(185947);	-- Draught of Leeching Strikes
 i(185951);	-- Draught of Spiked Skin
 i(185950);	-- Draught of Temporal Rush
-i(185909);	-- Dull Opal
 i(185968);	-- Duplicate Rune Chit
 i(187358);	-- Dusty Meditation Crystal
-i(185935);	-- Dusty Skull
 i(187188);	-- D'roo's Bottomless Gulper
 i(187197);	-- D'roo's Haunted Drumset
 i(187554);	-- Elethium Chips
@@ -1436,12 +1432,10 @@ i(187455);	-- Spiked Manacles
 i(185970);	-- Splintered Crystal Fragments
 i(186661);	-- Splintered Horseshoe
 i(187357);	-- Squished Mawshroom
-i(185937);	-- Stale Bread
 i(187194);	-- Star in a Jar
 i(185910);	-- Star Lantern
 i(187485);	-- Stone Teleporter Parts
 i(187348);	-- Tattered Scroll
-i(185938);	-- Threadbare Cloth
 i(187451);	-- Torture Device Parts
 i(187192);	-- Urn of Knowledge
 i(187452);	-- Vacant Soul Vessel
@@ -1452,7 +1446,6 @@ i(187191);	-- Vi'ller's Preserved Eye
 i(186202);	-- Wafting Koricone
 i(187461);	-- Warped Branding Rod
 i(187476);	-- Weathered Journal
-i(185939);	-- Worn Journal
 i(187198);	-- Xy'le Date
 i(187236);	-- Zovaal's Dark Carafe
 
@@ -2387,6 +2380,7 @@ i(228507);	-- Swarmite Eggsac
 i(225818);	-- Tainted Incense
 i(220286);	-- Tarnished Medallion
 i(227315);	-- Tarragon Soda
+i(228195);	-- Tattered Goblin Cap
 i(220225);	-- Tattered Standard
 i(225821);	-- Tattered Theater Hood
 i(225797);	-- The Fifty Rules of Commerce, Fourth Edition
