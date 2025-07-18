@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Sourceless",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Sin fuente",
+		mx = "Sin fuente",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

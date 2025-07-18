@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "All pets that you have not collected yet are displayed here.",
 		de = "Alle Haustiere die Ihr noch nicht gesammelt habt, werden hier angezeigt.",
 		es = "Todas las mascotas que aún no has coleccionado se muestran aquí.",
-		-- TODO: mx = "",
+		mx = "Todas las mascotas que aún no has coleccionado se muestran aquí.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

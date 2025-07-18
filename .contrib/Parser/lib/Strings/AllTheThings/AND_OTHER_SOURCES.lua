@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "And %s other sources ...",
 		de = "Und %s andere Quellen ...",
 		es = "Y %s otras fuentes ...",
-		-- TODO: mx = "",
+		mx = "Y %s otras fuentes ...",
 		fr = "Et %s sources différentes ...",
 		-- TODO: it = "",
 		-- TODO: pt = "",

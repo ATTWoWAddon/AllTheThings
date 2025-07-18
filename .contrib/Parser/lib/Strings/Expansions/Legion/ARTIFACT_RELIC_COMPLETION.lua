@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Artifact Relic Completion",
 		-- TODO: de = "",
 		es = "Completado de reliquias de Artefacto",
-		-- TODO: mx = "",
+		mx = "Completado de reliquias de Artefacto",
 		fr = "Complétion des Armes prodigieuses",
 		-- TODO: it = "",
 		-- TODO: pt = "",

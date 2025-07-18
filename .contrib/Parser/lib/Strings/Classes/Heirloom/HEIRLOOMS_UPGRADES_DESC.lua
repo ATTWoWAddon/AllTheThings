@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "This indicates whether or not you have upgraded the heirloom to a certain level.\n\nR.I.P. Gold.\n - Crieve",
 		de = "Dies zeigt an, ob Ihr ein Erbstück bereits auf eine bestimmte Stufe aufgewertet habt.\n\nR.I.P. Gold.\n - Crieve",
 		es = "Esto indica si has mejorado o no la reliquia a un cierto nivel.\n\nD.E.P. Oro.\n - Crieve",
-		-- TODO: mx = "",
+		mx = "Esto indica si has mejorado o no la reliquia a un cierto nivel.\n\nD.E.P. Oro.\n - Crieve",
 		fr = "Indique si vous avez ou non amélioré l’objet d’héritage à un certain niveau.\n\nBye bye votre Or.\n- Crieve",
 		-- TODO: it = "",
 		pt = "Isso indica se já atualizou ou não a herança para um certo nível.\n\nR.I.P. Gold.\n - Crieve",

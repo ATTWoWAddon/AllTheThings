@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Reroll the Random Selection",
 		de = "Zufallsauswahl erneut würfeln",
 		es = "Repetir tirada de dados de la selección aleatoria",
-		-- TODO: mx = "",
+		mx = "Repetir lanzamiento de dados de la selección aleatoria",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

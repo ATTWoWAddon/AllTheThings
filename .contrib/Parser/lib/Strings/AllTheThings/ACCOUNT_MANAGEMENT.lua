@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Account Management",
 		de = "Accountverwaltung",
 		es = "Administración de Cuenta",
-		-- TODO: mx = "",
+		mx = "Administración de Cuenta",
 		fr = "Gestion des comptes",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Toggle ATT World Quests",
 		de = "ATT Weltquests ein/aus",
 		es = "Activar Misiones de Mundo ATT",
-		-- TODO: mx = "",
+		mx = "Activar ATT Misiones de Mundo",
 		fr = "Afficher / masquer les quêtes mondiales d’ATT",
 		-- TODO: it = "",
 		-- TODO: pt = "",

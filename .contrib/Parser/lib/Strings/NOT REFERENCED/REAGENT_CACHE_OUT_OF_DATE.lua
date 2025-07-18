@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Reagent Cache is out-of-date and will be re-cached when opening your professions!",
 		de = "Die gespeicherten Informationen über Materialien sind veraltet und werden beim Öffnen der Berufe neu aktualisiert und gespeichert!",
-		es = "La cache de ingredientes está desactualizada y se actualizará cuando abras tus profesiones!",
-		-- TODO: mx = "",
+		es = "¡La cache de ingredientes está desactualizada y se actualizará cuando abras tus profesiones!",
+		mx = "¡La cache de ingredientes está desactualizada y se actualizará cuando abras tus profesiones!",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

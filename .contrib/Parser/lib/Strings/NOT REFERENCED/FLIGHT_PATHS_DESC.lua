@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Flight paths are cached when you talk to the flight master on each continent.\n  - Crieve",
 		de = "Flugpunkte werden entdeckt, indem Ihr mit dem Flugmeister sprecht.\n  - Crieve",
 		es = "Las rutas de vuelo son detectadas cuando hablas con un maestro de vuelo de cada continente.\n  - Crieve",
-		-- TODO: mx = "",
+		mx = "Las rutas de vuelo son detectadas cuando hablas con un maestro de vuelo de cada continente.\n  - Crieve",
 		fr = "Les trajets de vol sont mis en cache lorsque vous parlez au Maître de vol sur chaque continent.\n- Crieve",
 		-- TODO: it = "",
 		pt = "Pontos de voo são registrados quando você fala com um mestre de voo em cada continente.\n  - Crieve",

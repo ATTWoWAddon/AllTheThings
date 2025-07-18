@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.",
 		de = "Verliehen für das Einloggen.\n\nGute Arbeit! DU HAST ES GESCHAFFT!\n\nNur im Debug Modus sichtbar.",
 		es = "Otorgado por iniciar sesión.\n\n¡Buen trabajo! ¡LO LOGRASTE!\n\nSolo visible en modo de depuración.",
-		-- TODO: mx = "",
+		mx = "Otorgado por iniciar sesión.\n\n¡Buen trabajo! ¡LO LOGRASTE!\n\nSolo visible en modo de depuración.",
 		fr = "Récompensé pour s’être connecté.\nBon travail ! VOUS L’AVEZ FAIT !\nSeulement visible en mode débogage.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

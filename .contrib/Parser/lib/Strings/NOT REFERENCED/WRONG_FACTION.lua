@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "You might need to be on the other faction to view this.",
 		de = "Möglicherweise müsst Ihr auf der anderen Fraktion sein, um dies anschauen zu können.",
 		es = "Quizás necesites estar en la otra facción para ver esto.",
-		-- TODO: mx = "",
+		mx = "Quizás necesites estar en la otra facción para ver esto.",
 		fr = "Il se peut que vous deviez être dans la faction adverse pour afficher cela.",
 		-- TODO: it = "",
 		pt = "Você precisa ser de outra facção para visualizar isso.",

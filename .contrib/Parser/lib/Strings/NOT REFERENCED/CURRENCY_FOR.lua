@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Currency for",
 		de = "Währung für",
 		es = "Moneda para",
-		-- TODO: mx = "",
+		mx = "Moneda para",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

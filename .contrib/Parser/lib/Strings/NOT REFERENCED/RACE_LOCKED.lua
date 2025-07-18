@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Race Locked",
 		de = "Rasse Gesperrt",
-		es = "Exclusivo de raza/facción",
-		-- TODO: mx = "",
+		es = "Bloqueo de raza",
+		es = "Limitado a un(as) raza(s)",
 		fr = "Race bloquée",
 		-- TODO: it = "",
 		pt = "Travado por raça",

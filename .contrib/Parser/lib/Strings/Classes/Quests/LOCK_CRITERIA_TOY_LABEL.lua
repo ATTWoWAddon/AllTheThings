@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Known Toy",
 		-- TODO: de = "",
 		es = "Juguete conocido",
-		-- TODO: mx = "",
+		mx = "Juguete conocido",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

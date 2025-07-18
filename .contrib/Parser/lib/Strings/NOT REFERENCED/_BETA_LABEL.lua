@@ -5,7 +5,9 @@ createLocalizationString({
 	export = true,
 	text = {
 		en = " [Beta]",
-		-- TODO: mx = "",
+		-- TODO: de = "",
+		es = "[Beta]",
+		mx = "[Beta]",
 		fr = " [Bêta]",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Requires a standing between %s and %s with %s.",
 		de = "Erfordert einen Ruf zwischen %s und %s bei %s.",
 		es = "Requiere un nivel entre %s y %s con %s.",
-		-- TODO: mx = "",
+		mx = "Requiere un nivel entre %s y %s con %s.",
 		fr = "Il faut avoir obtenu une note entre %s et %s avec %s.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

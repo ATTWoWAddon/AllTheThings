@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Where:",
 		-- TODO: de = "",
 		es = "Dónde:",
-		-- TODO: mx = "",
+		mx = "Dónde:",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

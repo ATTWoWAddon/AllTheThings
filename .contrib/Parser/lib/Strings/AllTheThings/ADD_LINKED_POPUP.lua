@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Please type the name of the character or BNET account to link to.",
 		de = "Bitte geben Sie den Namen des Charakters oder Bnet Kontos ein, zu dem Sie eine Verknüpfung erstellen möchten.",
 		es = "Por favor escribe el nombre del personaje o cuenta Battle.net a conectar.",
-		-- TODO: mx = "",
+		mx = "Por favor escribe el nombre del personaje o cuenta Battle.net a conectar.",
 		fr = "Veuillez saisir le nom du personnage ou du compte Battle.net vers lequel vous souhaitez établir un lien.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

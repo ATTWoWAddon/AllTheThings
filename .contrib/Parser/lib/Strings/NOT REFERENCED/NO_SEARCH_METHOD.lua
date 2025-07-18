@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "No search method specified.",
 		de = "Keine Suchmethode festgelegt.",
 		es = "Método de búsqueda no especificado.",
-		-- TODO: mx = "",
+		mx = "Método de búsqueda no especificado.",
 		fr = "Aucune méthode de recherche n’est spécifiée.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

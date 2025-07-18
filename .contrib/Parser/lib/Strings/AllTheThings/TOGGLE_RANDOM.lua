@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Toggle ATT Random",
 		de = "ATT Zufall ein/aus",
 		es = "Activar ATT Aleatorio",
-		-- TODO: mx = "",
+		mx = "Activar ATT Aleatorio",
 		fr = "Afficher / masquer ATT Aléatoire",
 		-- TODO: it = "",
 		-- TODO: pt = "",

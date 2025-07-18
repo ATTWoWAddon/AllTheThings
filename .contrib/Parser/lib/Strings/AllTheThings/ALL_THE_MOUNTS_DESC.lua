@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "All mounts that you have not collected yet are displayed here.",
 		de = "Alle Reittiere die Ihr noch nicht gesammelt habt, werden hier angezeigt.",
 		es = "Todas las monturas que aún no has coleccionado se muestran aquí.",
-		-- TODO: mx = "",
+		mx = "Todas las monturas que aún no has coleccionado se muestran aquí.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

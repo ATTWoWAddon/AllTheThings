@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Resets",
 		-- TODO: de = "",
 		es = "Reinicios",
-		-- TODO: mx = "",
+		mx = "Reinicios",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

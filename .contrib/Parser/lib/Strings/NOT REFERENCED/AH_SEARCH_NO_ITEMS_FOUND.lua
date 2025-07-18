@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "No cached items found in search. Expand the group and view the items to cache the names and try again. Only Bind on Equip items will be found using this search.",
 		de = "Es wurden keine gespeicherten Gegenstände in der Suche gefunden. Erweiteren Sie die Gruppe und sehen Sie sich Gegenstände an, um die Namen zu speichern und versuchen Sie es danach erneut. Nur Gegenstände des 'Wird beim Anlegen gebunden' Types werden mit dieser Suche gefunden.",
 		es = "No se encontraron objetos en caché en la búsqueda. Expande el grupo, visualiza los objetos para guardar los nombres en caché e inténtalo de nuevo. Solo se encontrarán objetos ligados al equipar con esta búsqueda.",
-		-- TODO: mx = "",
+		mx = "No se encontraron objetos en caché en la búsqueda. Expande el grupo, visualiza los objetos para guardar los nombres en caché e inténtalo de nuevo. Solo se encontrarán objetos ligados al equipar con esta búsqueda.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

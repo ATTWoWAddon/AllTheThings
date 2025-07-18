@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "This contains the visual breakdown of what is required to obtain or purchase all Things within the top-level group.\n\nNote: Does not currently include Reagents/Recipes requirements!",
 		-- TODO: de = "",
 		es = "Esto contiene el desglose visual de lo que se requiere para obtener o comprar todas las cosas dentro del grupo de nivel superior.\n\nNota: ¡Actualmente no incluye los requisitos de materiales/recetas!",
-		-- TODO: mx = "",
+		mx = "Esto contiene el desglose visual de lo que se requiere para obtener o comprar todas las cosas dentro del grupo de nivel superior.\n\nNota: ¡Actualmente no incluye los requisitos de materiales/recetas!",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Learned Spell/Mount/Recipe",
 		de = "Zauber/Reittier/Rezept Erlernt",
 		es = "Habilidad/Montura/Receta aprendida",
-		-- TODO: mx = "",
+		mx = "Habilidad/Montura/Receta aprendida",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

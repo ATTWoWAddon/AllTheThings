@@ -5,7 +5,7 @@ createLocalizationString({
 	text = {
 		en = "These are World Quests and other time-limited Things that are currently available somewhere. Go get 'em!",
 		de = "Dies sind Weltquests und andere zeitlich begrenzte Dinge, die derzeit irgendwo verfügbar sind. Los Hol's dir!",
-		es = "Esto son misiones de mundo y otras cosas disponibles por tiempo limitado que estan diponibles en algun sitio. Ve a por ellas!",
+		es = "Esto son misiones de mundo y otras cosas disponibles por tiempo limitado que están disponibles en algún sitio. Ve a por ellas!",
 		mx = "Esto son misiones de mundo y otras cosas disponibles por tiempo limitado que están disponibles en algún sitio. Ve a por ellas!",
 		-- TODO: fr = "",
 		-- TODO: it = "",

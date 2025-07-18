@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Unlocked Heirloom",
 		de = "Erbstück Entsperrt",
 		es = "Reliquias desbloqueadas",
-		-- TODO: mx = "",
+		mx = "Reliquias desbloqueadas",
 		fr = "Objet Héritage déverrouillé",
 		-- TODO: it = "",
 		pt = "Herança Desbloqueada",

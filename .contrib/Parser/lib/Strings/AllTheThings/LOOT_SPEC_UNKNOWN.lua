@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Loot Specialization Unknown",
 		de = "Beute Spezialisierung Unbekannt",
 		es = "Especialización de botín desconocida",
-		-- TODO: mx = "",
+		mx = "Especialización de botín desconocida",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

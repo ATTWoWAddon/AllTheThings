@@ -6,7 +6,7 @@ createLocalizationString({
 		en = " item(s).",
 		de = " Gegenstände.",
 		es = " objeto(s).",
-		-- TODO: mx = "",
+		mx = " objeto(s).",
 		fr = " objet(s).",
 		-- TODO: it = "",
 		-- TODO: pt = "",

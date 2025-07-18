@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "This window allows you to randomly select a place or item to get. Go get 'em!",
 		de = "In diesem Fenster könnt Ihr einen fehlenden, zufällig ausgwählten Ort oder Gegenstand zum Sammeln erwürfeln. Los Hol's dir!",
-		es = "Esta ventana te permite seleccionar aleatoriamente un lugar u objeto que coger. Ve a por ello!",
-		-- TODO: mx = "",
+		es = "Esta ventana te permite seleccionar aleatoriamente un lugar u objeto que coger. ¡Ve a por ello!",
+		mx = "Esta ventana te permite seleccionar aleatoriamente un lugar u objeto que conseguir. ¡Ve a por ello!",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

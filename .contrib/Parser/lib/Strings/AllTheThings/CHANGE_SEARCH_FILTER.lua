@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Change Search Filter",
 		de = "Suchfilter ändern",
 		es = "Cambiar filtro de búsqueda",
-		-- TODO: mx = "",
+		mx = "Cambiar filtro de búsqueda",
 		fr = "Changer le filtre de la recherche",
 		-- TODO: it = "",
 		-- TODO: pt = "",

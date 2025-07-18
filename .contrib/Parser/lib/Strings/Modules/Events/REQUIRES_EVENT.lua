@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Requires Event",
 		-- TODO: de = "",
 		es = "Requiere el evento",
-		-- TODO: mx = "",
+		mx = "Requiere el evento",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

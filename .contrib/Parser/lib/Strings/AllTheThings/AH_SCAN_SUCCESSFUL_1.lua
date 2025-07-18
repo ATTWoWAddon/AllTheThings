@@ -6,7 +6,7 @@ createLocalizationString({
 		en = ": Successfully scanned ",
 		de = ": Erfolgreich gescanned ",
 		es = ": Escaneado exitoso",
-		-- TODO: mx = "",
+		mx = ": Escaneo exitoso",
 		fr = ": Analyser avec succès ",
 		-- TODO: it = "",
 		-- TODO: pt = "",

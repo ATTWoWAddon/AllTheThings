@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Please report this to the ATT Discord in #retail-errors! Thanks!",
 		de = "Bitte melden Sie den Fehler an das ATT Discord in #retail-errors! Danke!",
 		es = "¡Por favor, reporte esto al Discord de ATT en #retail-errors! ¡gracias!",
-		-- TODO: mx = "",
+		mx = "¡Por favor, reporta esto al Discord de ATT en #retail-errors! ¡gracias!",
 		fr = "Merci de signaler sur le serveur Discord d’ATT dans le canal #retail-errors ! Merci !",
 		-- TODO: it = "",
 		pt = "Por favor reporte isso no Discord do ATT em #retail-errors! Obrigado!",

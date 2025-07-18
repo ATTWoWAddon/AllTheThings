@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Current Specialization",
 		de = "Derzeitige Spezialisierung",
 		es = "Especialización actual",
-		-- TODO: mx = "",
+		mx = "Especialización actual",
 		fr = "Spécialisation actuelle",
 		-- TODO: it = "",
 		-- TODO: pt = "",

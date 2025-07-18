@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Toggle ATT Main List",
 		de = "ATT Hauptliste ein/aus",
 		es = "Activar Lista Principal ATT",
-		-- TODO: mx = "",
+		mx = "Activar Lista Principal ATT",
 		fr = "Afficher / masquer la liste principale d’ATT",
 		-- TODO: it = "",
 		-- TODO: pt = "",

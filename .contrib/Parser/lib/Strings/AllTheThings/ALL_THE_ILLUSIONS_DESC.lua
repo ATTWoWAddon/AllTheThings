@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Illusions, toys, and other items that can be used to earn collectible items are displayed here.",
 		-- TODO: de = "",
 		es = "Ilusiones, juguetes, y otros objetos que pueden ser usados para conseguir objetos coleccionables se muestran aquí.",
-		-- TODO: mx = "",
+		mx = "Ilusiones, juguetes, y otros objetos que pueden ser usados para conseguir objetos coleccionables se muestran aquí.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

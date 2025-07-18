@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Known Appearance",
 		-- TODO: de = "",
 		es = "Apariencia conocida",
-		-- TODO: mx = "",
+		mx = "Apariencia conocida",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

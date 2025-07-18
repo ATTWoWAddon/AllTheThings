@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Click this button to select a random quest based on what you're missing.",
 		de = "Klick diesen Knopf um eine zufällige Quest auszuwählen, die Euch noch fehlt.",
-		es = "Haz clic en este botón para seleccionar una misión aleatoria basado en lo que te falta.",
-		mx = "Haz click en este botón para seleccionar una misión aleatoria basado en lo que te falta.",
+		es = "Haz clic en este botón para seleccionar una misión aleatoria basada en lo que te falta.",
+		mx = "Haz click en este botón para seleccionar una misión aleatoria basada en lo que te falta.",
 		fr = "Cliquez sur ce bouton pour sélectionner une quête aléatoire basé sur ce qu’il vous manque.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Reroll: ",
 		de = "Erneut Würfeln: ",
 		es = "Volver a tirar: ",
-		-- TODO: mx = "",
+		mx = "Volver a tirar: ",
 		fr = "Reroll :",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "This indicates whether or not you have acquired or purchased the heirloom yet.",
 		de = "Dies zeigt an, ob Ihr bereits ein Erbstück gekauft oder erhalten habt.",
 		es = "Esto indica si ya ha adquirido o comprado la reliquia.",
-		-- TODO: mx = "",
+		mx = "Esto indica si ya ha adquirido o comprado la reliquia.",
 		fr = "Indique si vous avez ou non déjà acquis ou acheté l’objet d’héritage.",
 		-- TODO: it = "",
 		pt = "Isso indica se já adquiriu ou não a Herança.",

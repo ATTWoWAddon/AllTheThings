@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "NPC ID",
 		-- TODO: de = "",
 		es = "Pnj ID",
-		-- TODO: mx = "",
+		mx = "ID de Pnj",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

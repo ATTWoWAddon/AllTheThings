@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Right Click to Delete this Linked Character",
 		de = "Rechtsklick zum Löschen dieses verknüpften Charakters",
 		es = "Botón derecho para eliminar este personaje conectado",
-		-- TODO: mx = "",
+		mx = "Click derecho para eliminar este personaje conectado",
 		fr = "Clic droit pour supprimer ce personnage lié",
 		-- TODO: it = "",
 		-- TODO: pt = "",

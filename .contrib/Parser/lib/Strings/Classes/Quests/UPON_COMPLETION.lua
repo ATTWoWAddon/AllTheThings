@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Upon Completion",
 		de = "Bei Fertigstellung",
 		es = "Al finalizar",
-		-- TODO: mx = "",
+		mx = "Al completar",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

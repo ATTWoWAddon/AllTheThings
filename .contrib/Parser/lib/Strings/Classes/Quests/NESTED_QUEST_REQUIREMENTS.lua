@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Nested Quest Requirements",
 		-- TODO: de = "",
 		es = "Requisitos de Misión anidados",
-		-- TODO: mx = "",
+		mx = "Requisitos de Misión anidados",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

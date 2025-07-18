@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Music Roll ID",
 		-- TODO: de = "",
 		es = "Rollo de música ID",
-		mx = "Rollo musical ID",
+		mx = "ID de rollo musical",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

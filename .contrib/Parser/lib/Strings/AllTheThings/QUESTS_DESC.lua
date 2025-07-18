@@ -5,7 +5,7 @@ createLocalizationString({
 	text = {
 		en = "Shows all possible QuestID's in the game in ascending numeric order.",
 		de = "Zeigt alle möglichen Quest ID's im Spiel, in aufsteigender numerischer Reihenfolge.",
-		es = "Muestra todas las QuestID disponibles en el juego en orden numérico ascendente.",
+		es = "Muestra todas las ID de misiones disponibles en el juego en orden numérico ascendente.",
 		mx = "Muestra todas las ID de misiones disponibles en el juego en orden numérico ascendente.",
 		-- TODO: fr = "",
 		-- TODO: it = "",

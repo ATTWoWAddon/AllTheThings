@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "This gets added back with patch %s",
 		-- TODO: de = "",
 		es = "Re añadido en el parche %s",
-		-- TODO: mx = "",
+		mx = "Re agregado en el parche %s",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

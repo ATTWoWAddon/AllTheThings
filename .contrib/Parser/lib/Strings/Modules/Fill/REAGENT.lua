@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Reagent",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Material",
+		mx = "Material",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

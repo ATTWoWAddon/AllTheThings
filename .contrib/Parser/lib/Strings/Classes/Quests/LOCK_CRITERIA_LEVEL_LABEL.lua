@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Player Level",
 		de = "Spieler Stufe",
 		es = "Nivel de personaje",
-		-- TODO: mx = "",
+		mx = "Nivel de personaje",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

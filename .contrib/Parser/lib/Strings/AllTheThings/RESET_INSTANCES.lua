@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Reset Instances",
 		de = "Instanzen zurücksetzen",
 		es = "Reiniciar instancias",
-		-- TODO: mx = "",
+		mx = "Reiniciar instancias",
 		fr = "Réinitiialiser les instances",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Open Automatically",
 		de = "Automatisch öffnen",
 		es = "Abrir automáticamente",
-		-- TODO: mx = "",
+		mx = "Abrir automáticamente",
 		fr = "Ouvrir automatiquement",
 		-- TODO: it = "",
 		-- TODO: pt = "",

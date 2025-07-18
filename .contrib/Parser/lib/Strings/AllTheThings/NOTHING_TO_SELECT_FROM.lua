@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "There was nothing collectible (according to current Settings) to randomly select from. If 'Ad-Hoc Updates' is enabled in Settings, the Main list must be updated (/att) before using this window.",
 		de = "Es wurde nichts für die zufällige Auswahl gefunden. Wenn 'Ad-Hoc Updates' in den Einstellungen aktiviert ist, muss die Hauptliste zuerst aktualisiert werden, (/att) bevor Ihr dieses Fenster benutzt.",
-		es = "No se encontró nada para seleccionar aleatoriamente. Si las 'actualizaciones Ad-Hoc' estan habilitadas en los ajustes, la Lista Principal se tiene que actualizar (/att) antes de usar esta ventana.",
-		mx = "No se encontró nada para seleccionar aleatoriamente. Si las 'actualizaciones Ad-Hoc' estan habilitadas en los ajustes, la lista principal se tiene que actualizar (/att) antes de usar esta ventana.",
+		es = "No se encontró nada para seleccionar aleatoriamente. Si las 'actualizaciones Ad-Hoc' están habilitadas en los ajustes, la Lista Principal se tiene que actualizar (/att) antes de usar esta ventana.",
+		mx = "No se encontró nada para seleccionar aleatoriamente. Si las 'actualizaciones Ad-Hoc' están habilitadas en los ajustes, la lista principal se tiene que actualizar (/att) antes de usar esta ventana.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

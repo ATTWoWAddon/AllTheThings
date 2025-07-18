@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "%s with %s (Current: %s)",
 		de = "%s mit %s (Current: %s)",
 		es = "%s con %s (Actual: %s)",
-		-- TODO: mx = "",
+		mx = "%s con %s (Actual: %s)",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Toggle Account Mode",
 		de = "Account Modus ein/aus",
 		es = "Activar Modo Cuenta",
-		-- TODO: mx = "",
+		mx = "Activar Modo Cuenta",
 		fr = "Afficher / masquer le mode Compte",
 		-- TODO: it = "",
 		-- TODO: pt = "",

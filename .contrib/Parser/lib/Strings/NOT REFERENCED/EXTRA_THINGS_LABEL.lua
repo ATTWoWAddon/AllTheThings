@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Additional Resources",
 		-- TODO: de = "",
 		es = "Recursos adicionales",
-		-- TODO: mx = "",
+		mx = "Recursos adicionales",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		pt = "Recursos Adicionais",

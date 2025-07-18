@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "All items that can be used to obtain achievements that you are missing are displayed here.",
 		de = "Alle Gegenstände, mit denen Ihr Euch fehlende Erfolge erreichen könnt, werden hier angezeigt.",
 		es = "Todos los objetos que pueden ser usados para conseguir logros que te faltan se muestran aquí.",
-		-- TODO: mx = "",
+		mx = "Todos los objetos que pueden ser usados para conseguir logros que te faltan se muestran aquí.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

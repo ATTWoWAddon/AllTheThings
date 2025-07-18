@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Opposite faction equivalent: ",
 		de = "Äquivalent der gegnerischen Fraktion: ",
 		es = "Equivalente en la facción contraria: ",
-		-- TODO: mx = "",
+		mx = "Equivalente en la facción contraria: ",
 		fr = "Équivalent de la faction opposée : ",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Mount ID",
 		-- TODO: de = "",
 		es = "Montura ID",
-		-- TODO: mx = "",
+		mx = "ID de Montura",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

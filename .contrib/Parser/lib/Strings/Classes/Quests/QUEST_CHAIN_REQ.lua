@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Quest Chain Requirements",
 		de = "Questreihe Anforderungen",
 		es = "Requisitos de la cadena de misiones",
-		-- TODO: mx = "",
+		mx = "Requisitos de la cadena de misiones",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

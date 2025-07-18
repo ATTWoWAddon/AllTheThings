@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "No linked accounts found.",
 		de = "Keine verknüpften Accounts gefunden.",
 		es = "No se encontraron cuentas conectadas.",
-		-- TODO: mx = "",
+		mx = "No se encontraron cuentas conectadas.",
 		fr = "Aucun compte lié n’a été trouvé.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

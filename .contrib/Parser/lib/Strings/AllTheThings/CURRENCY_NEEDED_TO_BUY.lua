@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Estimated amount needed to obtain remaining Things",
 		de = "Geschätzter Betrag, der benötigt wird, um die verbleibenden Dinge zu erhalten",
 		es = "Cantidad estimada necesaria para obtener las cosas restantes",
-		-- TODO: mx = "",
+		mx = "Cantidad estimada necesaria para obtener las cosas restantes",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

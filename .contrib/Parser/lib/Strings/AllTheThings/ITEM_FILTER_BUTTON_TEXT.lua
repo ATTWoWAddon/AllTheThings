@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Set Item Filter",
 		de = "Setze Gegenstandsfilter",
 		es = "Establecer un filtro de objeto",
-		-- TODO: mx = "",
+		mx = "Establecer un filtro de objeto",
 		fr = "Définir le filtre des objets",
 		-- TODO: it = "",
 		-- TODO: pt = "",

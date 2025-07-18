@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Toggle Source Locations",
 		de = "Quellen ein/aus",
-		es = "Activar fuentes / ubicaciones de procedencia",
-		-- TODO: mx = "",
+		es = "Activar ubicaciones de fuentes",
+		mx = "Activar ubicaciones de procedencias",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

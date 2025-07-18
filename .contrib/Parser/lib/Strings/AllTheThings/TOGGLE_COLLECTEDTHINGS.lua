@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Toggle Collected Things",
 		de = "Gesammelte Dinge ein/aus",
 		es = "Activar Cosas Coleccionadas",
-		-- TODO: mx = "",
+		mx = "Activar Cosas Coleccionadas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

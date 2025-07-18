@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Only Bind on Equip items can be found using this search.",
 		de = "Nur Gegenstände des 'Wird beim Anlegen gebunden' Types werden mit dieser Suche gefunden.",
 		es = "Solo se buscaran objetos ligados al equipar con esta búsqueda.",
-		-- TODO: mx = "",
+		mx = "Solo se buscaran objetos ligados al equipar con esta búsqueda.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

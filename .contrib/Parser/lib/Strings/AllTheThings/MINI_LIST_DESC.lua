@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "This list contains the relevant information for your current zone, which cannot be found in the ATT database",
 		-- TODO: de = "",
 		es = "Esta lista contiene información relevante sobre la zona actual en la que estás, que no puede encontrarse en la base de datos de ATT",
-		-- TODO: mx = "",
+		mx = "Esta lista contiene información relevante sobre la zona actual en la que estás, que no puede encontrarse en la base de datos de ATT",
 		fr = "Cette liste contient les informations pertinentes pour la zone actuelle, qui ne peuvent être trouvées dans la base de données d’ATT.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

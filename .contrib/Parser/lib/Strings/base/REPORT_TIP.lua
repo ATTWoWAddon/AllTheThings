@@ -6,6 +6,7 @@ createLocalizationString({
 		en = [[~"\n(" .. CTRL_KEY_TEXT .. "+C to copy multiline report to your clipboard)"]],
 		de = [[~"\n(" .. CTRL_KEY_TEXT .. "+C um mehrere Linien zu kopieren.)"]],
 		es = [[~"\n(" .. CTRL_KEY_TEXT .. "+C para copiar un informe de varias líneas al portapapeles)"]],
+		mx = [[~"\n(" .. CTRL_KEY_TEXT .. "+C para copiar un informe de varias líneas al portapapeles)"]],
 		fr = [[~"\n(" .. CTRL_KEY_TEXT .. " + C pour copier le rapport multiligne dans votre presse-papiers)"]],
 		pt = [[~"\n(" .. CTRL_KEY_TEXT .. "+C para copiar o texto completo do report para sua área de transferência)"]],
 		ru = [[~"\n(" .. CTRL_KEY_TEXT .. "+C, чтобы скопировать многострочный отчёт в буфер обмена)"]],

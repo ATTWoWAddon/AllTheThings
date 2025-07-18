@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Delist Group",
 		de = "Gruppe abmelden",
 		es = "Quitar Grupo",
-		-- TODO: mx = "",
+		mx = "Quitar Grupo",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

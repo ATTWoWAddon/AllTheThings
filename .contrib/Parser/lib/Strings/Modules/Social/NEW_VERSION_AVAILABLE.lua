@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "A newer version of %s is available. Please update the AddOn %s",
 		-- TODO: de = "",
 		es = "Hay una nueva versión de %s disponible. Por favor actualiza el AddOn, %s.",
-		-- TODO: mx = "",
+		mx = "Hay una nueva versión de %s disponible. Por favor actualiza el AddOn, %s.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

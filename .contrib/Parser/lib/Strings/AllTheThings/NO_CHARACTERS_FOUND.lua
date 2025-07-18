@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "No characters found.",
 		de = "Keine Charaktere gefunden.",
 		es = "No se encontraron personajes.",
-		-- TODO: mx = "",
+		mx = "No se encontraron personajes.",
 		fr = "Aucun personnage trouvé.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

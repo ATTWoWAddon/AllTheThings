@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "This shows all of the linked accounts you have defined so far.",
 		de = "Hier werden alle Eure verknüpften Accounts angezeigt, die Ihr definiert habt.",
 		es = "Muestra todas las cuentas conectadas que hayas definido hasta ahora.",
-		-- TODO: mx = "",
+		mx = "Muestra todas las cuentas conectadas que hayas definido hasta ahora.",
 		fr = "Affiche tous les comptes liés que vous avez définis jusqu’à présent.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

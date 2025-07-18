@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Fill NPC Data",
 		-- TODO: de = "",
 		es = "Rellenar datos PNJ",
-		-- TODO: mx = "",
+		mx = "Rellenar datos PNJ",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

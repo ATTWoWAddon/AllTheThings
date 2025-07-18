@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "You can search the ATT Database by using a item filter.",
 		de = "Ihr könnt die ATT Datenbank nach Gegenstandsfiltern durchsuchen.",
 		es = "Puedes buscar en la base de datos de ATT usando un filtro de objetos.",
-		-- TODO: mx = "",
+		mx = "Puedes buscar en la base de datos de ATT usando un filtro de objetos.",
 		fr = "Vous pouvez effectuer une recherche dans la base de données d’ATT en utilisant un filtre.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

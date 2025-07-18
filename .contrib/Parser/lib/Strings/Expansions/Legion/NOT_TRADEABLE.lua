@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Not Tradeable",
 		de = "Nicht Handelbar",
 		es = "No comerciable",
-		-- TODO: mx = "",
+		mx = "No comerciable",
 		fr = "Non échangeable",
 		-- TODO: it = "",
 		-- TODO: pt = "",

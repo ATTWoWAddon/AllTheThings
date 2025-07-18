@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Open your professions to cache them.",
 		de = "Öffnet Eure Berufe, um sie zu speichern.",
-		es = "Abre tus profesiones para cargarlas.",
-		-- TODO: mx = "",
+		es = "Abre tus profesiones para guardarlas.",
+		mx = "Abre tus profesiones para guardarlas.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

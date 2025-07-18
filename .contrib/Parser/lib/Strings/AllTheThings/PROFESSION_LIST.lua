@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Profession List",
 		de = "Berufsliste",
 		es = "Lista de profesiones",
-		-- TODO: mx = "",
+		mx = "Lista de profesiones",
 		fr = "Liste des métiers",
 		-- TODO: it = "",
 		-- TODO: pt = "",

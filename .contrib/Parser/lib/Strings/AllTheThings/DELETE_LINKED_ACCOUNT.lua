@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Right Click to Delete this Linked Account",
 		de = "Rechtsklick zum Löschen dieses verknüpften Accounts",
 		es = "Botón derecho para eliminar esta cuenta conectada",
-		-- TODO: mx = "",
+		mx = "Click derecho para eliminar esta cuenta conectada",
 		fr = "Clic droit pour supprimer ce compte lié",
 		-- TODO: it = "",
 		-- TODO: pt = "",

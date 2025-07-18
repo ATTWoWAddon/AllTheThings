@@ -6,7 +6,7 @@ createLocalizationString({
 		en = " THING UNTIL ",
 		de = " DING BIS ",
 		es = " COSAS HASTA ",
-		-- TODO: mx = "",
+		mx = " COSAS HASTA ",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

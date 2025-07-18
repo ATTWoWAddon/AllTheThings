@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Toggle Completionist Mode",
 		de = "Completionist Modus ein/aus",
 		es = "Activar Modo Completista",
-		-- TODO: mx = "",
+		mx = "Activar Modo Completista",
 		fr = "Afficher / masquer le mode Complétionniste",
 		-- TODO: it = "",
 		-- TODO: pt = "",

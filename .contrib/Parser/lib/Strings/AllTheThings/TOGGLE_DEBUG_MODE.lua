@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Toggle Debug Mode",
 		de = "Debug Modus ein/aus",
 		es = "Activar Modo Depuración",
-		-- TODO: mx = "",
+		mx = "Activar Modo Debug",
 		fr = "Afficher / masquer le mode Débogage",
 		-- TODO: it = "",
 		-- TODO: pt = "",

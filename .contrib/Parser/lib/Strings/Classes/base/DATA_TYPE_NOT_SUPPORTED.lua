@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "This data type is not supported at this time.",
 		-- TODO: de = "",
 		es = "Este tipo de datos no se admite en este momento.",
-		-- TODO: mx = "",
+		mx = "Este tipo de datos no se admite en este momento.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

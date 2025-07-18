@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "This contains the visual breakdown of what is required to obtain or purchase this Thing",
 		de = "Dies zeigt eine visuelle Aufschlüsselung dessen, was benötigt wird um dieses Ding zu erhalten oder zu kaufen",
 		es = "Esto contiene el desglose visual de lo que se requiere para obtener o comprar esta cosa.",
-		-- TODO: mx = "",
+		mx = "Esto contiene el desglose visual de lo que se requiere para obtener o comprar esta cosa.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		pt = "Aqui contém uma visão geral detalhada do que é necessário para obter ou comprar isso",

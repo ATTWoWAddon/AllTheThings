@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Invalid Quest Objective",
 		de = "Ungültiges Questziel",
 		es = "Objetivo de misión inválido",
-		-- TODO: mx = "",
+		mx = "Objetivo de misión inválido",
 		fr = "Objectif de quête invalide.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

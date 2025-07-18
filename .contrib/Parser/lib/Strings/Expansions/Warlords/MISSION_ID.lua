@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Mission ID",
 		-- TODO: de = "",
 		es = "Misión ID",
-		-- TODO: mx = "",
+		mx = "ID de Misión",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -5,7 +5,7 @@ createLocalizationString({
 	text = {
 		en = "This Item is Unique-Collected but failed to be detected due to missing Blizzard API information.\n\nIt will be fixed after the next Force-Refresh.",
 		-- TODO: de = "",
-		es = "Este objeto es Único-Coleccionado pero no se pudo detectar por falta de información de la API de Blizzard.\n\nSe arreglará después de un Refresco Forzado.",
+		es = "Este objeto es Único-Coleccionado pero no se pudo detectar por falta de información de la API de Blizzard.\n\nSe arreglará después de un refresco Forzado.",
 		mx = "Este objeto es Único-Coleccionado pero no se pudo detectar por falta de información de la API de Blizzard.\n\nSe arreglará después de una actualización forzada.",
 		-- TODO: fr = "",
 		-- TODO: it = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "This shows all of the characters on your account.",
 		de = "Dies zeigt alle Charaktere auf diesem Account.",
 		es = "Muestra todos los personajes en tu cuenta.",
-		-- TODO: mx = "",
+		mx = "Muestra todos los personajes en tu cuenta.",
 		fr = "Affiche tous les personnages de votre compte.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

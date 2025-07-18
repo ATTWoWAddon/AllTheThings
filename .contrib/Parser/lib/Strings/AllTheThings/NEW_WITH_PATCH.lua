@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Newly Added Things",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Cosas recién agregadas",
+		mx = "Cosas recién agregadas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

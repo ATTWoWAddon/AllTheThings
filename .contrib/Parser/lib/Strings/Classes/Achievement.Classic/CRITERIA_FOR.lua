@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Criteria for",
 		de = "Kriterium für",
 		es = "Criterio para",
-		-- TODO: mx = "",
+		mx = "Criterio para",
 		fr = "Critères de",
 		-- TODO: it = "",
 		-- TODO: pt = "",

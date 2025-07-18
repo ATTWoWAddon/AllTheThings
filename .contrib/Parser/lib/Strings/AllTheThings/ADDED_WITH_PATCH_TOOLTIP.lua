@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "This shows you all of the content that has been added with each patch of the expansion.",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Esto muestra todo el contenido que se ha agregado con cada parche de la expansión.",
+		mx = "Esto muestra todo el contenido que se ha agregado con cada parche de la expansión.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

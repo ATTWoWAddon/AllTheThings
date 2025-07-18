@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Toggle BoE/BoA Items",
 		de = "BoE/BoA Gegenstände ein/aus",
-		es = "Activar objetos BoE/BoA",
-		mx = "Activar objetos Ligados al equipar/Ligados a la cuenta",
+		es = "Activar objetos LaE/LaC (Ligados al equipar/cuenta)",
+		mx = "Activar objetos LaE/LaC (Ligados al equipar/cuenta)",
 		fr = "Afficher / masquer les objets LqE / LqA",
 		-- TODO: it = "",
 		-- TODO: pt = "",

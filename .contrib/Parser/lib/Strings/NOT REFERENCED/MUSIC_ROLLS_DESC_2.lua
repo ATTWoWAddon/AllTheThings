@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "\n\nYou must first unlock the Music Rolls by completing the Bringing the Bass in your garrison for this item to drop.",
 		de = "\n\nIhr müsst Musikrollen zuerst mit der Quest 'Wir brauchen Bass' in Eurer Garnison freischalten, bevor diese droppen können.\n\nSelfies benötigen das S.E.L.F.I.E.-Kamera 2.0 Spielzeug.",
 		es = "\n\nPrimero debes desbloquear los Rollos de música completando la misión Que vuelva la música en tu ciudadela para que aparezca este objeto.\n\nSelfies requieren el juguete S.E.L.F.I.E.",
-		mx = "\n\nPrimero debes desbloquear los Rollos de música completando la misión Poniendo el ritmo en tu fortaleza para que aparezca este objeto.\n\nSelfies requieren el juguete S.E.L.F.I.E.",
+		mx = "\n\nPrimero debes desbloquear los Rollos musicales completando la misión Poniendo el ritmo en tu fortaleza para que aparezca este objeto.\n\nSelfies requieren el juguete S.E.L.F.I.E.",
 		fr = "\n\nVous devez d’abord débloquer les rouleaux de musique en accomplissant la quête À fond les basses ! dans votre garnison de fief pour pouvoir avoir cet objet.\n\nLes selfies nécessitent le jouet Appareil photo P.R.O.F.I.L.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

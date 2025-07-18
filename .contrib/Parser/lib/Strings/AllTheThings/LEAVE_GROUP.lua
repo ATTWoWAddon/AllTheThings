@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Leave Group",
 		de = "Gruppe verlassen",
 		es = "Salir del grupo",
-		-- TODO: mx = "",
+		mx = "Dejar el grupo",
 		fr = "Quitter le groupe",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Tradeable",
 		de = "Handelbar",
 		es = "Comerciable",
-		-- TODO: mx = "",
+		mx = "Comerciable",
 		fr = "Échangeable",
 		-- TODO: it = "",
 		-- TODO: pt = "",

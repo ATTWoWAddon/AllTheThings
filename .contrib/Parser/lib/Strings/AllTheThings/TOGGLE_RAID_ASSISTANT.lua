@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Toggle ATT Raid Assistant",
 		de = "ATT Raid Assistent ein/aus",
 		es = "Activar Asistente de Banda ATT",
-		-- TODO: mx = "",
+		mx = "Activar Asistente de Banda ATT",
 		fr = "Afficher / masquer l’assistant de raid d’ATT",
 		-- TODO: it = "",
 		-- TODO: pt = "",

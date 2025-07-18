@@ -6,7 +6,7 @@ createLocalizationString({
 		en = " with |cffff8000",
 		de = " mit |cffff8000",
 		es = " con |cffff8000",
-		-- TODO: mx = "",
+		mx = " con |cffff8000",
 		fr = " avec |cffff8000",
 		-- TODO: it = "",
 		-- TODO: pt = "",

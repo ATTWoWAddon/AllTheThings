@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want to fill all relevant data for a given NPC (Common Boss Drops, Drops, etc). This option may cause a significant amount of duplication, but the idea is that the NPC will remain visible if you need something available from that NPC.\n\nNote: A lot of Dragonflight outdoors content relies on this setting being enabled for accuracy due to how many Rares share common drops.\n\nDefault: Off",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres rellenar con toda la información relevante sobre un PNJ (Botín de jefe compartido, botín, etc) cuando se muestra en una Mini Lista. Esta opción puede causar un gran numero de duplicados, pero la idea es que el PNJ se mantenga visible en la Mini Lista si necesitas algo disponible de ese PNJ.\n\nNota: Gran cantidad del contenido de mundo de Dragonflight depende de que este ajuste esté activo para ser exacto porque muchos PNJ raros comparten botín.\n\nPor defecto: Desactivado",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres rellenar con toda la información relevante sobre un PNJ (Botín de jefe compartido, botín, etc) cuando se muestra en una Mini Lista. Esta opción puede causar un gran numero de duplicados, pero la idea es que el PNJ se mantenga visible en la Mini Lista si necesitas algo disponible de ese PNJ.\n\nNota: Gran cantidad del contenido de mundo de Dragonflight depende de que este ajuste esté activo para ser exacto porque muchos PNJ raros comparten botín.\n\nPor defecto: Desactivado",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

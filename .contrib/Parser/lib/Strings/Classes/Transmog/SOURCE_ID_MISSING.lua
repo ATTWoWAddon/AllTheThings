@@ -5,7 +5,7 @@ createLocalizationString({
 	text = {
 		en = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!",
 		de = "Bitte meldet diesen Gegenstand und wo er erhalten wurde an das ATT Discord in #retail-errors!",
-		es = "Por favor, reporta este objeto y dónde fue obtenido al discord de ATT en #retail-errors!",
+		es = "Por favor, reporta este objeto y dónde fue obtenido al Discord de ATT en #retail-errors!",
 		mx = "Por favor, reporta este objeto y dónde fue obtenido al Discord de ATT en #retail-errors!",
 		fr = "Veuillez signaler cet objet et le lieu où il a été acquis sur le Discord d’ATT, dans le salon #retail-errors !",
 		-- TODO: it = "",

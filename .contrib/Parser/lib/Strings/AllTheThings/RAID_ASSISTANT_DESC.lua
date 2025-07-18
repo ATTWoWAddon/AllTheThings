@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Never enter the instance with the wrong settings again! Verify that everything is as it should be!",
 		de = "Betreten Sie die Instanz nie wieder mit den falschen Einstellungen! Überprüfen Sie, ob alles so ist, wie es sein sollte!",
-		es = "Nunca entres a una instancia con los ajustes incorrectos! Verifica que todo está como debería!",
-		-- TODO: mx = "",
+		es = "¡Nunca entres a una instancia con los ajustes incorrectos! ¡Verifica que todo está como debería!",
+		mx = "¡Nunca entres a una instancia con los ajustes incorrectos! ¡Verifica que todo está como debería!",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "This list shows you all of the functionality related to syncing account data.",
 		de = "Diese Liste zeigt alle Funktionen, die mit der Synchronisierung von Accounts zusammenhängen.",
 		es = "Esta lista te muestra todas las funcionalidades relacionadas con la sincronización de datos de cuentas.",
-		-- TODO: mx = "",
+		mx = "Esta lista te muestra todas las funcionalidades relacionadas con la sincronización de datos de cuentas.",
 		fr = "Cette liste affiche toutes les fonctionnalités liées à la synchronisation des données du compte.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

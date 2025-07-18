@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Completed Quest",
 		de = "Quest Vollendet",
 		es = "Misión completada",
-		-- TODO: mx = "",
+		mx = "Misión completada",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "In Personal Loot dungeons, raids, and outdoor encounters, this setting will dictate which items are available for you.\n\nClick this row to change it now!",
 		de = "Im Persönlicher Beute Modus bestimmt diese Einstellung welche Gegenstände für eure Klasse in Instanzen, Schlachtzügen und anderen Kämpfen verfügbar sind.\n\nKlicke auf diese Zeile, um es jetzt zu ändern!",
-		es = "En mazmorras, bandas o encuentros de mundo con botín personal, este ajuste decidirá qué objetos estan disponibles para tí.\n\nHaz clic aquí para cambiarla ahora!",
-		mx = "En calabozos, bandas o encuentros de mundo con botín personal, este ajuste decidirá qué objetos están disponibles para tí.\n\nHaz click aquí para cambiarla ahora!",
+		es = "En mazmorras, bandas o encuentros de mundo con botín personal, este ajuste decidirá qué objetos están disponibles para ti.\n\nHaz clic aquí para cambiarla ahora!",
+		mx = "En calabozos, bandas o encuentros de mundo con botín personal, este ajuste decidirá qué objetos están disponibles para ti.\n\nHaz click aquí para cambiarla ahora!",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

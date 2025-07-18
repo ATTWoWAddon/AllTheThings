@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "This shows you all of the content that has been added with the latest patch of the game.",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Aquí se muestra todo el contenido que se agregó con el último parche del juego.",
+		mx = "Aquí se muestra todo el contenido que se agregó con el último parche del juego.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

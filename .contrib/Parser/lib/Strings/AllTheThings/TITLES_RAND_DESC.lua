@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Click this button to select a random title based on what you're missing.",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Haga clic en este botón para seleccionar un título aleatorio según lo que le falta.",
+		mx = "Haga click en este botón para seleccionar un título aleatorio según lo que le falta.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

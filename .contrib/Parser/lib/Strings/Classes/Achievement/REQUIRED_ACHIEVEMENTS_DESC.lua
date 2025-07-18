@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Shows any Achievements which must be obtained before this Thing is available",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Muestra los logros que deben obtenerse antes de que esta cosa esté disponible.",
+		mx = "Muestra los logros que deben obtenerse antes de que esta cosa esté disponible.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

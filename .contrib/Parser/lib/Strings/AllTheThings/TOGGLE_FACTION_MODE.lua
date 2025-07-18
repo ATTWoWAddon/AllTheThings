@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Toggle Faction Mode",
 		de = "Fraktions Modus ein/aus",
 		es = "Activar Modo Facción",
-		-- TODO: mx = "",
+		mx = "Activar Modo Facción",
 		fr = "Afficher / masquer le mode Faction",
 		-- TODO: it = "",
 		-- TODO: pt = "",

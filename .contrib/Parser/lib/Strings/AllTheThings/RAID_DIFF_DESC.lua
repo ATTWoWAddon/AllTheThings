@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "The difficulty setting for raids.\n\nClick this row to change it now!",
 		de = "Der Schwierigkeitsgrad für Schlachtzüge.\n\nKlicke diese Zeile, um sie jetzt zu ändern!",
-		es = "Ajuste de dificultad para bandas.\n\nHaz clic aquí para cambiarla ahora!",
-		mx = "Ajuste de dificultad para bandas.\n\nHaz click aquí para cambiarla ahora!",
+		es = "Ajuste de dificultad para bandas.\n\n¡Haz clic aquí para cambiarla ahora!",
+		mx = "Ajuste de dificultad para bandas.\n\n¡Haz click aquí para cambiarla ahora!",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Toggle ATT Mini List",
 		de = "ATT Mini Liste ein/aus",
 		es = "Activar Mini Lista ATT",
-		-- TODO: mx = "",
+		mx = "Activar Mini Lista ATT",
 		fr = "Afficher / masquer la mini-liste d’ATT",
 		-- TODO: it = "",
 		-- TODO: pt = "",

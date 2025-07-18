@@ -5,7 +5,7 @@ createLocalizationString({
 	text = {
 		en = "Artifact Cache is out-of-date/inaccurate and will be re-cached when logging onto each character!",
 		-- TODO: de = "",
-		es = "La cache de Artefactos está desactalizada/imprecisa y se actualizará cuando entres al juego con cada personaje!",
+		es = "La cache de Artefactos está desactualizada/imprecisa y se actualizará cuando entres al juego con cada personaje!",
 		mx = "La cache de Artefactos está desactualizada/imprecisa y se actualizará cuando entres al juego con cada personaje!",
 		-- TODO: fr = "",
 		-- TODO: it = "",

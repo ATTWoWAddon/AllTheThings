@@ -6,7 +6,7 @@ createLocalizationString({
 		en = " known recipes!",
 		de = " bekannte Rezepte!",
 		es = " ¡Recetas conocidas!",
-		-- TODO: mx = "",
+		mx = " ¡Recetas conocidas!",
 		fr = " recettes connues !",
 		-- TODO: it = "",
 		-- TODO: pt = "",

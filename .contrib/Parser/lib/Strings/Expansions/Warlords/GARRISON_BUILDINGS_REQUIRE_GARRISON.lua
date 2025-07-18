@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Due to a Blizzard API issue/restriction, this can only be properly cached as collected while within your Garrison",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Debido a un problema/restricción de la API de Blizzard, esto solo se puede almacenar en caché correctamente como recolectado mientras esté dentro de su ciudadela",
+		mx = "Debido a un problema/restricción de la API de Blizzard, esto solo se puede almacenar en caché correctamente como recolectado mientras esté dentro de su fortaleza",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

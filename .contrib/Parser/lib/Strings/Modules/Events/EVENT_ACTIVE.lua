@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Active:",
 		-- TODO: de = "",
 		es = "Activo:",
-		-- TODO: mx = "",
+		mx = "Activo:",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Visit the Flight Master to cache.",
 		de = "Besucht den Greifenmeister für die Entdeckung.",
 		es = "Visita al maestro de vuelo para detectarlo",
-		-- TODO: mx = "",
+		mx = "Visita al maestro de vuelo para detectarlo",
 		fr = "Rendez visite au Maître de vol pour mettre en cache.",
 		-- TODO: it = "",
 		pt = "Visite o Mestre de Voo para registrar.",

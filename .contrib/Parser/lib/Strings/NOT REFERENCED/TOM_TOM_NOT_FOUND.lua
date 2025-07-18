@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "You must have TomTom installed to plot coordinates.",
 		-- TODO: de = "",
 		es = "Debe tener instalado TomTom para poder seguir coordenadas.",
-		-- TODO: mx = "",
+		mx = "Debe tener instalado TomTom para poder seguir coordenadas.",
 		fr = "Vous devez avoir installé TomTom pour pouvoir ajouter des coordonnées.",
 		-- TODO: it = "",
 		pt = "Você precisa ter TomTom instalado para exibir as coordenadas.",

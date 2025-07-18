@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Cached ",
 		de = "Gespeichert ",
-		es = "Cargado ",
-		mx = "Guardado ",
+		es = "Cargada ",
+		mx = "Guardada ",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

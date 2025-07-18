@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Toggle Loot Mode",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Activar Modo despojo",
+		mx = "Activar Modo botín",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

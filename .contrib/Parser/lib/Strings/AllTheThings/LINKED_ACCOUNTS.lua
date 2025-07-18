@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Linked Accounts",
 		de = "Verknüpfte Accounts",
 		es = "Cuentas conectadas",
-		-- TODO: mx = "",
+		mx = "Cuentas conectadas",
 		fr = "Comptes liés",
 		-- TODO: it = "",
 		-- TODO: pt = "",

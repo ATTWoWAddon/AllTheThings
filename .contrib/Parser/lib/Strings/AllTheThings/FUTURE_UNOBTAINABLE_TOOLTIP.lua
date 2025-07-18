@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "This is content that has been confirmed or is highly-probable to be made unobtainable in a known future patch.",
 		-- TODO: de = "",
 		es = "Esto es contenido que se ha confirmado o es muy probable que no se pueda conseguir en un futuro parche conocido.",
-		-- TODO: mx = "",
+		mx = "Esto es contenido que se ha confirmado o es muy probable que no se pueda conseguir en un futuro parche conocido.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

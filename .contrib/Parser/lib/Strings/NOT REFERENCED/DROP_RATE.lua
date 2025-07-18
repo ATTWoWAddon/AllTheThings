@@ -5,7 +5,7 @@ createLocalizationString({
 	text = {
 		en = "Drop Rate",
 		es = "Probabilidad de botín",
-		-- TODO: mx = "",
+		mx = "Probabilidad de botín",
 		fr = "Taux de chance de tomber",
 		-- TODO: it = "",
 		-- TODO: pt = "",

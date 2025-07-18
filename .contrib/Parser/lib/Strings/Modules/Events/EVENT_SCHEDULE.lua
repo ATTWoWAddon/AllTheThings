@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Event Schedule",
 		-- TODO: de = "",
 		es = "Horario del evento",
-		-- TODO: mx = "",
+		mx = "Horario del evento",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

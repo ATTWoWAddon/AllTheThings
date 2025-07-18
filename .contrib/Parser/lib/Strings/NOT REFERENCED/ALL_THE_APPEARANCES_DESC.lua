@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "All appearances that you need are displayed here.",
 		de = "Alle Vorlagen die Ihr noch nicht gesammelt habt, werden hier angezeigt.",
 		es = "Todas las apariencias que te faltan se muestran aquí.",
-		-- TODO: mx = "",
+		mx = "Todas las apariencias que te faltan se muestran aquí.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

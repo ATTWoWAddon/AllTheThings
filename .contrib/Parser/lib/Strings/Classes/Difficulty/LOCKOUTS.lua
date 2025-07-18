@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Lockouts",
 		-- TODO: de = "",
 		es = "Bloqueos",
-		-- TODO: mx = "",
+		mx = "Bloqueos",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

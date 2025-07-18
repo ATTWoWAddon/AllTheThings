@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Requires a minimum standing of %s with %s.",
 		de = "Erfordert mindestens einen Ruf von %s bei %s.",
 		es = "Requiere un nivel mínimo de %s con %s.",
-		-- TODO: mx = "",
+		mx = "Requiere un nivel mínimo de %s con %s.",
 		fr = "Il faut avoir obtenu une note minimale de %s avec %s.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

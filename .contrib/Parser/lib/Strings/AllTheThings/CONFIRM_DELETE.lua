@@ -5,7 +5,7 @@ createLocalizationString({
 	text = {
 		en = "\n \nAre you sure you want to delete this?",
 		de = "\n \nBist Du sicher, dass Du dies löschen möchtest?",
-		es = "\n \nEstás seguro de que quieres eliminar esto?",
+		es = "\n \n¿Estás seguro de que quieres eliminar esto?",
 		mx = "\n \n¿Estás seguro de que quieres eliminar esto?",
 		fr = "\n\nÊtes-vous sûr de vouloir supprimer ce personnage ?",
 		-- TODO: it = "",

@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Hidden Currency Triggers",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Desencadenantes ocultos de monedas",
+		mx = "Disparadores ocultos de monedas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

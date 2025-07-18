@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "All items that can be used to craft an item using a profession on your account.",
 		de = "Alle Materialien, die zum Herstellen eines Gegenstandes mit einem Beruf auf Eurem Account verwendet werden können.",
 		es = "Todos los objetos que pueden ser usados para fabricar un objeto usando una profesión en tu cuenta.",
-		-- TODO: mx = "",
+		mx = "Todos los objetos que pueden ser usados para fabricar un objeto usando una profesión en tu cuenta.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Sym-Link",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Enlace simbólico",
+		mx = "Enlace simbólico",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

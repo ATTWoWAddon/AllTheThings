@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Right Click to Delete this Character",
 		de = "Rechtsklick um diesen Charakter zu löschen",
 		es = "Botón derecho para eliminar este personaje",
-		-- TODO: mx = "",
+		mx = "Botón derecho para eliminar este personaje",
 		fr = "Clic droit pour supprimer ce personnage",
 		-- TODO: it = "",
 		-- TODO: pt = "",

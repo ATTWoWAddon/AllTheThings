@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Random - Go Get 'Em!",
 		de = "Zufall - Los holt's Euch!",
-		es = "Aleatorio - Ve a por ello!",
-		-- TODO: mx = "",
+		es = "Aleatorio - ¡Ve a por ello!",
+		mx = "Aleatorio - ¡Ve a buscarlos!",
 		-- TODO: it = "",
 		-- TODO: pt = "",
 		ru = "Случайная цель - Получи Их!",

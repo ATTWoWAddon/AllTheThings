@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "If you switch your talents, your loot specialization changes with you.",
 		de = "Wenn Ihr Eure Talent Spezialisierung wechselt, ändert sich automatisch auch Eure Beutespezialisierung um.",
 		es = "Si cambias tus talentos, tu especialización de despojo también cambia contigo.",
-		-- TODO: mx = "",
+		mx = "Si cambias tus talentos, tu especialización de botín también cambia contigo.",
 		fr = "Si vous changez de talent, votre spécialisation en matière de butin change également.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

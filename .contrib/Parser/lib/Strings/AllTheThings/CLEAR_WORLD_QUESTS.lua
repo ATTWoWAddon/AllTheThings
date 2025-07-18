@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Clear World Quests",
 		de = "Weltquests auflösen",
 		es = "Limpiar misiones de mundo",
-		-- TODO: mx = "",
+		mx = "Limpiar misiones de mundo",
 		fr = "Nettoyer les quêtes mondiales",
 		-- TODO: it = "",
 		-- TODO: pt = "",

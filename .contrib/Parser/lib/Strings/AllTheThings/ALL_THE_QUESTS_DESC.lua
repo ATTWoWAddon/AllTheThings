@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "All quests that have objective or starting items that can be sold on the auction house are displayed here.",
 		de = "Alle Quests, die von Objekten oder Gegenständen angenommen werden können, die über das Auktionshaus handelbar sind, werden hier angezeigt.",
 		es = "Todas las misiones que tienen objetos como objetivo o inicio que pueden ser vendidos en la casa de subastas se muestran aquí.",
-		-- TODO: mx = "",
+		mx = "Todas las misiones que tienen objetos como objetivo o inicio que pueden ser vendidos en la casa de subastas se muestran aquí.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

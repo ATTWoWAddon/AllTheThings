@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "All recipes that you have not collected yet are displayed here.",
 		de = "Alle Rezepte die Ihr noch nicht gesammelt habt, werden hier angezeigt.",
 		es = "Todas las recetas que aún no has coleccionado se muestran aquí.",
-		-- TODO: mx = "",
+		mx = "Todas las recetas que aún no has coleccionado se muestran aquí.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

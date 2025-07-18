@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Which Item Filter would you like to search for?",
 		de = "Nach welchem Gegenstandsfilter möchtet Ihr suchen?",
-		es = "Qué filtro de objetos quieres usar para buscar?",
-		-- TODO: mx = "",
+		es = "¿Qué filtro de objetos quieres usar para buscar?",
+		mx = "¿Qué filtro de objetos quieres usar para buscar?",
 		fr = "Quel filtre d’objet souhaitez-vous rechercher ?",
 		-- TODO: it = "",
 		-- TODO: pt = "",

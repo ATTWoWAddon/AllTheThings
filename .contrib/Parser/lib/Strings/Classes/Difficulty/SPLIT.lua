@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Per Difficulty",
 		de = "Pro Schwierigkeitsgrad",
 		es = "Por dificultad",
-		-- TODO: mx = "",
+		mx = "Por dificultad",
 		fr = "Par difficulté",
 		-- TODO: it = "",
 		-- TODO: pt = "",

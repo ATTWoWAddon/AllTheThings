@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "The above quests need to be completed before being able to complete the things listed below.",
 		de = "Die oben angezeigten Quests müssen zuerst beendet werden, bevor Ihr die unten angezeigten Dinge erhalten könnt.",
 		es = "Las misiones anteriores deben completarse antes de poder completar las cosas que se enumeran a continuación.",
-		-- TODO: mx = "",
+		mx = "Las misiones anteriores deben completarse antes de poder completar las cosas que se enumeran a continuación.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

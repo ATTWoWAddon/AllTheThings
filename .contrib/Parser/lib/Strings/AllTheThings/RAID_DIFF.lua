@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Raid Difficulty",
 		de = "Schlachtzug Schwierigkeit",
 		es = "Dificultad de banda",
-		-- TODO: mx = "",
+		mx = "Dificultad de banda",
 		fr = "Difficulté du raid",
 		-- TODO: it = "",
 		-- TODO: pt = "",

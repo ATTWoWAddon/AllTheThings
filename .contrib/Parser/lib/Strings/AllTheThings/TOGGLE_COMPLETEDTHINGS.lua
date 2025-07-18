@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Toggle Completed Things (Both)",
 		de = "Erledigte Dinge ein/aus (Beides)",
 		es = "Activar Cosas Completadas (Ambas)",
-		-- TODO: mx = "",
+		mx = "Activar Cosas Completadas (Ambas)",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

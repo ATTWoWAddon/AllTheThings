@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Toggle ATT Profession List",
 		de = "ATT Berufs Liste ein/aus",
 		es = "Activar Lista de Profesiones ATT",
-		-- TODO: mx = "",
+		mx = "Activar Lista de Profesiones ATT",
 		fr = "Afficher / masquer la liste des métiers d’ATT",
 		-- TODO: it = "",
 		-- TODO: pt = "",

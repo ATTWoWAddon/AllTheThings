@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "%s (%d) was added to your collection.",
 		de = "%s (%d) wurde deiner Sammlung hinzugefügt.",
 		es = "%s (%d) fue añadido a tu colección.",
-		-- TODO: mx = "",
+		mx = "%s (%d) fue añadido a tu colección.",
 		fr = "%s (%d) a été ajouté à votre collection.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

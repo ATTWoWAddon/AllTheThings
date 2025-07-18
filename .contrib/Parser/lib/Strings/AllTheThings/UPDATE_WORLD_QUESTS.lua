@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Update World Quests Now",
 		de = "Weltquests jetzt aktualisieren",
 		es = "Actualiza las misiones de mundo ahora",
-		-- TODO: mx = "",
+		mx = "Actualiza las misiones de mundo ahora",
 		fr = "Mettre à jour les quêtes mondiales",
 		-- TODO: it = "",
 		-- TODO: pt = "",

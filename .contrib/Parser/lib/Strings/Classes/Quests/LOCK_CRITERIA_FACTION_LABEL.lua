@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Faction Reputation",
 		de = "Fraktion Ruf",
 		es = "Reputación con facción",
-		-- TODO: mx = "",
+		mx = "Reputación con facción",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

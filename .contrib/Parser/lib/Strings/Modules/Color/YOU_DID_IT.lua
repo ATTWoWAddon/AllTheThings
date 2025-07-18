@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "YOU DID IT!",
 		-- TODO: de = "",
 		es = "¡LO LOGRASTE! ",
-		-- TODO: mx = "",
+		mx = "¡LO LOGRASTE! ",
 		fr = "VOUS AVEZ RÉUSSI !",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Likely just broke out of an infinite source quest loop.",
 		de = "Wahrscheinlich gerade aus einer unendlichen Quest-Quellensuchschleife ausgebrochen.",
 		es = "Seguramente se ha salido de un bucle infinito de fuentes de misión.",
-		-- TODO: mx = "",
+		mx = "Seguramente se ha salido de un bucle infinito de fuentes de misión.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

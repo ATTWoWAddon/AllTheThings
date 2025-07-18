@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Click this button to select a random instance based on what you're missing.",
 		de = "Klick diesen Knopf um eine zufällige Instanz auszuwählen, die Euch noch fehlt.",
-		es = "Haz clic en este botón para seleccionar una instancia aleatoria basado en lo que te falta.",
-		mx = "Haz click en este botón para seleccionar una instancia aleatoria basado en lo que te falta.",
+		es = "Haz clic en este botón para seleccionar una mazmorra aleatoria basado en lo que te falta.",
+		mx = "Haz click en este botón para seleccionar un calabozo aleatorio basado en lo que te falta.",
 		fr = "Cliquez sur ce bouton pour sélectionner une instance aléatoire basé sur ce qu’il vous manque.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

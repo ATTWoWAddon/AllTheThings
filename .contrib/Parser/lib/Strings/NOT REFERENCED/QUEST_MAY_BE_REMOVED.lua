@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Failed to acquire information. This quest may have been removed from the game. ",
 		de = "Information konnte nicht beschaffen werden. Die Quest wurde möglicherweise von dem Spiel entfernt.",
 		es = "No se pudo obtener información. Es posible que esta misión haya sido eliminada del juego. ",
-		-- TODO: mx = "",
+		mx = "No se pudo obtener información. Es posible que esta misión haya sido eliminada del juego. ",
 		fr = "Impossible d’obtenir des informations. Cette quête a peut-être été supprimée du jeu. ",
 		-- TODO: it = "",
 		-- TODO: pt = "",

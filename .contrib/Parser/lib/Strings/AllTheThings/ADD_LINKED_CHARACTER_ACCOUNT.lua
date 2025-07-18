@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Add Linked Character / Account",
 		de = "Verknüpften Charakter / Account hinzufügen",
 		es = "Añadir personaje / cuenta conectado/a ",
-		-- TODO: mx = "",
+		mx = "Añadir personaje / cuenta conectado/a ",
 		fr = "Ajouter un personnage / compte lié",
 		-- TODO: it = "",
 		-- TODO: pt = "",

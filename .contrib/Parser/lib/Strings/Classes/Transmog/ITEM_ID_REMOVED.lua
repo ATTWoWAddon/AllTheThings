@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "%s (%d) was removed from your collection.",
 		de = "%s (%d) wurde aus deiner Sammlung entfernt.",
 		es = "%s (%d) fue eliminado de tu colección.",
-		-- TODO: mx = "",
+		mx = "%s (%d) fue removido de tu colección.",
 		fr = "%s (%d) a été supprimé de votre collection.",
 		-- TODO: it = "",
 		-- TODO: pt = "",
