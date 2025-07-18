@@ -298,8 +298,8 @@ if localeString == "esES" then
 	
 	for key,value in pairs({
 		["Antorus, el Trono Ardiente"] = "Antorus",	-- ["Antorus, the Burning Throne"] = "Antorus"
-		["Expansion Pre"] = "Pre",
-		["Expansion Features"] = "EF",
+		["Evento pre lanzamiento"] = "Pre",
+		["Características de expansión"] = "EF",
 		[GROUP_FINDER] = "D&R",	-- ["Dungeons & Raids"] = "D&R"
 		["The Burning Crusade"] = "BC",
 		["Burning Crusade"] = "BC",
@@ -319,8 +319,9 @@ if localeString == "esES" then
 		["10 jugadores (Heroico)"] = "10M (H)",
 		["25 jugadores"] = "25M",
 		["25 jugadores (Heroico)"] = "25M (H)",
+		["Misiones de emisario"] = "Emissary",
 		[TRACKER_HEADER_WORLD_QUESTS] = "WQ",	-- ["World Quests"] = "WQ"
-		["Curia:"] = "Curia:",
+		["Curia:"] = "Cov:",
 	})
 	do ABBREVIATIONS[key] = value; end
 	
@@ -341,8 +342,8 @@ if localeString == "esES" then
 		
 		for key,value in pairs({
 			["Antorus, el Trono Ardiente"] = "Antorus",	-- ["Antorus, the Burning Throne"] = "Antorus"
-			["Expansion Pre"] = "Pre",
-			["Expansion Features"] = "EF",
+			["Evento pre expansión"] = "Pre",
+			["Características de expansión"] = "EF",
 			[GROUP_FINDER] = "D&R",	-- ["Dungeons & Raids"] = "D&R"
 			["The Burning Crusade"] = "BC",
 			["Burning Crusade"] = "BC",
@@ -352,7 +353,7 @@ if localeString == "esES" then
 			["Mists of Pandaria"] = "MoP",
 			["Warlords of Draenor"] = "WoD",
 			["Battle for Azeroth"] = "BFA",
-			["Las Tierras Sombrías"] = "SL",
+			["Las Tierras de las Sombras"] = "SL",
 			["Shadowlands"] = "SL",
 			["Jugador contra Jugador"] = "JcJ",
 			["Raid Finder"] = "LFR",
@@ -366,10 +367,10 @@ if localeString == "esES" then
 			["10 jugadores (Heroico)"] = "10M (H)",
 			["25 jugadores"] = "25M",
 			["25 jugadores (Heroico)"] = "25M (H)",
-			["Emissary Quests"] = "Emissary",
+			["Misiones de emisario"] = "Emissary",
 			[TRACKER_HEADER_WORLD_QUESTS] = "WQ",	-- ["World Quests"] = "WQ"
 			["WoW Anniversary"] = "Anniversary",
-			["Pacto:"] = "Pacto:",
+			["Pacto:"] = "Cov:",
 		})
 		do ABBREVIATIONS[key] = value; end
 	end
