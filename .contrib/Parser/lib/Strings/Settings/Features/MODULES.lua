@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Modules",
 		-- TODO: de = "",
 		es = "Módulos",
-		-- TODO: mx = "",
+		mx = "Módulos",
 		-- TODO: it = "",
 		-- TODO: pt = "",
 		ru = "Модули",

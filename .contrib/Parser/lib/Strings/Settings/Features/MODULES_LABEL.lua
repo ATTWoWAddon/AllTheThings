@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Modules & Mini Lists",
 		-- TODO: de = "",
 		es = "Módulos y Mini Listas",
-		-- TODO: mx = "",
+		mx = "Módulos y Mini Listas",
 		fr = "Modules & mini-listes",
 		-- TODO: it = "",
 		-- TODO: pt = "",

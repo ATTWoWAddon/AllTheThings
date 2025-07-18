@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Chat Commands",
 		de = "Chat Befehle",
 		es = "Comandos de Chat",
-		-- TODO: mx = "",
+		mx = "Comandos de Chat",
 		fr = "Commandes du chat",
 		-- TODO: it = "",
 		-- TODO: pt = "",

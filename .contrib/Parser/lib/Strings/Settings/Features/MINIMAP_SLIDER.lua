@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Minimap Button Size",
 		de = "Minimap Knopf Größe",
 		es = "Tamaño del botón del minimapa",
-		-- TODO: mx = "",
+		mx = "Tamaño del botón del mini mapa",
 		fr = "Taille du bouton de la mini-carte",
 		-- TODO: it = "",
 		pt = "Tamanho do botão do minimapa",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Automatically Open the Raid Assistant",
 		de = "Raid Assistent automatisch öffnen",
 		es = "Abre automáticamente el Asistente de Banda",
-		-- TODO: mx = "",
+		mx = "Abre automáticamente el Asistente de Banda",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

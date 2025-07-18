@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want to see the ATT button on your world map. This button allows you to quickly access the Mini List for the currently displayed zone. Regularly, you'd need to physically travel to the zone in order to see the content on the mini list that you can access by typing '/att mini' in your chatbox.",
 		-- TODO: de = "",
 		es = "Activa esta opción si quiere ver el botón de ATT en tu mapa del mundo. Este botón te permite acceder rápidamente a la Mini Lista de la zona mostrada actualmente. Aunque deberás viajar físicamente a la zona para poder ver el contenido en la Mini Lista a la que puedes acceder cuando escribes '/att mini' en tu chat.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quiere ver el botón de ATT en tu mapa del mundo. Este botón te permite acceder rápidamente a la Mini Lista de la zona mostrada actualmente. Aunque deberás viajar físicamente a la zona para poder ver el contenido en la Mini Lista a la que puedes acceder cuando escribes '/att mini' en tu chat.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		ru = "Включите данную опцию, если Вы хотите кнопку ATT на Вашей карте. Эта кнопка позволяет открыть Мини список ATT для открытой зоны на карте. В обычной ситуации Вам требуется физически быть в зоне, чтобы набрать '/att mini' в чате.",

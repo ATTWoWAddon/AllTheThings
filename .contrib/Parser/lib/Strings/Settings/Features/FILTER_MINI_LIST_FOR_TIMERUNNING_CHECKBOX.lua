@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Filter Mini List for Timerunning",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Filtro mini lista Asaltante temporal",
+		mx = "Filtro mini lista Cronoaventurero",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

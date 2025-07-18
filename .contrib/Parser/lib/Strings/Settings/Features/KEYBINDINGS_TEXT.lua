@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "You can set keybindings for ATT in the game's options.",
 		-- TODO: de = "",
 		es = "Puedes definir atajos de teclado para ATT en las opciones del juego.",
-		-- TODO: mx = "",
+		mx = "Puedes configurar atajos de teclado para ATT en las opciones del juego.",
 		fr = "Vous pouvez définir les raccourcis clavier pour ATT dans les options du jeu.",
 		-- TODO: it = "",
 		ru = "Вы можете назначить клавиши для ATT в настройках игры.",

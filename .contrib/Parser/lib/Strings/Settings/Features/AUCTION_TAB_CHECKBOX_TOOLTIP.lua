@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want to see the Auction House Module provided with ATT.\n\nSome addons are naughty and modify this frame extensively. ATT doesn't always play nice with those toys.",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres ver el módulo de la Casa de Subastas que viene con ATT.\n\nAlgunos addons son traviesos y modifican esta ventana extensamente. ATT no funciona muy bien con algunos de estos juguetitos.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres ver el módulo de la Casa de Subastas que viene con ATT.\n\nAlgunos addons son traviesos y modifican esta ventana extensamente. ATT no funciona muy bien con algunos de estos juguetitos.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

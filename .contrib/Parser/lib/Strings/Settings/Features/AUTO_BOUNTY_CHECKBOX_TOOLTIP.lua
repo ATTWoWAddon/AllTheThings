@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want to see the items that have an outstanding collection bounty. If you manage to snag one of the items posted on this list, you could make a good sum of gold.\n\nShortcut Command: /attbounty",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres ver los objetos que tienen una recompensa extraordinaria de colección. Si consigues uno de los objetos de esta lista, puedes conseguir una buena cantidad de oro.\n\nComando corto: /attbounty",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres ver los objetos que tienen una recompensa extraordinaria de colección. Si consigues uno de los objetos de esta lista, puedes conseguir una buena cantidad de oro.\n\nComando corto: /attbounty",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

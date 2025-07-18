@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Automatically Open the Main List",
 		de = "Hauptliste automatisch öffnen",
 		es = "Abre automáticamente la Lista Principal",
-		-- TODO: mx = "",
+		mx = "Abre automáticamente la Lista Principal",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

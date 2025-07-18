@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Automatically Open the World Quests List",
 		de = "Weltquests Liste automatisch öffnen",
 		es = "Abre automáticamente la Lista de Misiones de Mundo",
-		-- TODO: mx = "",
+		mx = "Abre automáticamente la Lista de Misiones de Mundo",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

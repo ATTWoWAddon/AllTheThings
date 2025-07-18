@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Show the World Map Button",
 		-- TODO: de = "",
 		es = "Muestra el botón del mapa de mundo",
-		-- TODO: mx = "",
+		mx = "Muestra el botón del mapa de mundo",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		ru = "Показывать Кнопку на Карте",

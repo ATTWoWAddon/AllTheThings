@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Automatically Open the Profession List",
 		de = "Berufs Liste automatisch öffnen",
 		es = "Abre automáticamente la Lista de Profesiones",
-		-- TODO: mx = "",
+		mx = "Abre automáticamente la Lista de Profesiones",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

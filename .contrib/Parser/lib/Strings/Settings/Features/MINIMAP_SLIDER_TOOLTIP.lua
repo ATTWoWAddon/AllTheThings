@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Use this to customize the size of the Minimap Button.\n\nDefault: 36",
 		de = "Nutze dies um die Größe des Minmimap Knopfes zu verändern.\n\nDefault: 36",
 		es = "Usa esto para personalizar el tamaño del botón del Minimapa.\n\nPredeterminado: 36",
-		-- TODO: mx = "",
+		mx = "Usa esto para personalizar el tamaño del botón del Mini mapa.\n\nPredeterminado: 36",
 		fr = "Utilisez cette option pour personnaliser la taille du bouton de la mini-carte.\n\nDéfaut: 36",
 		-- TODO: it = "",
 		pt = "Use isso para customizar o tamanho do Botão no Minimapa.\n\nPadrão: 36",

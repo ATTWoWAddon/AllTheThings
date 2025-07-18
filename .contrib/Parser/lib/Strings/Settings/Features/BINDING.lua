@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Binding",
 		-- TODO: de = "",
 		es = "Ligado",
-		-- TODO: mx = "",
+		mx = "Ligado",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

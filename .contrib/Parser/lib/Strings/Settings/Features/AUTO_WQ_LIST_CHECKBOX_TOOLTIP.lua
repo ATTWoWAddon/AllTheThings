@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want the 'World Quests' list to appear automatically. The list will automatically update whenever you switch zones.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle World Quests List\n\nShortcut Command: /attwq",
 		-- TODO: de = "",
 		es = "Activa esta opción si quieres que la Lista de 'Misiones de Mundo' aparezca automáticamente. La lista se actualizará automáticamente cuando cambies de zonas.\n\nTambién puedes configurar este ajuste a un atajo.\n\nAtajos de teclado -> Addons -> ALL THE THINGS -> Activar Misiones de Mundo ATT\n\nComando corto: /attwq",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres que la Lista de 'Misiones de Mundo' aparezca automáticamente. La lista se actualizará automáticamente cuando cambies de zonas.\n\nTambién puedes configurar este ajuste a un atajo.\n\nAtajos de teclado -> Addons -> ALL THE THINGS -> Activar Misiones de Mundo ATT\n\nComando corto: /attwq",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

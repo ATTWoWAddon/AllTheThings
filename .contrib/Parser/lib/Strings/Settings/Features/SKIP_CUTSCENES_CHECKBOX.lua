@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Automatically Skip Cutscenes",
 		de = "Zwischensequenzen automatisch überspringen",
 		es = "Saltar automáticamente cinemáticas",
-		-- TODO: mx = "",
+		mx = "Omitir automáticamente cinemáticas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

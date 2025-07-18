@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Show the Auction House Module Tab",
 		-- TODO: de = "",
 		es = "Muestra la pestaña del módulo de Casa de Subastas",
-		-- TODO: mx = "",
+		mx = "Muestra la pestaña del módulo de Casa de Subastas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

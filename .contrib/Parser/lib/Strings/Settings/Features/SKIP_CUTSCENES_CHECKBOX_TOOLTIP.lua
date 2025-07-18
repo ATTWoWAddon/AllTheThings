@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Enable this option if you want ATT to automatically skip all cutscenes on your behalf.",
 		de = "Aktiviere diese Option, wenn ATT automatisch alle Zwischensequenzen für Euch überspringen soll.",
 		es = "Activa esta opción si quieres que ATT salte todas las cinemáticas automáticamente por ti.",
-		-- TODO: mx = "",
+		mx = "Activa esta opción si quieres que ATT omita todas las cinemáticas automáticamente por ti.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

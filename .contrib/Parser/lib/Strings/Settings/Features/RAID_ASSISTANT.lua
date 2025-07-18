@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Raid Assistant",
 		de = "Raid Assistent",
 		es = "Asistente de Banda",
-		-- TODO: mx = "",
+		mx = "Asistente de Banda",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

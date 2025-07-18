@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Miscellaneous Icons Legend",
 		-- TODO: de = "",
 		es = "Iconos para textos varios",
-		-- TODO: mx = "",
+		mx = "Iconos para textos varios",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

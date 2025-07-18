@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Completionist ",
 		de = "Vervollständiger ",
 		es = "Completista ",
-		-- TODO: mx = "",
+		mx = "Completista ",
 		fr = "Complétionniste ",
 		-- TODO: it = "",
 		pt = "Complecionista ",

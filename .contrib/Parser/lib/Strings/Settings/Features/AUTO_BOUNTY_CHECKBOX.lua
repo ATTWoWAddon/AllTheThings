@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Automatically Open the Bounty List",
 		de = "Preisgeld Liste automatisch öffnen",
 		es = "Abre automáticamente la Lista de Recompensas",
-		-- TODO: mx = "",
+		mx = "Abre automáticamente la Lista de Recompensas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
