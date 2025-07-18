@@ -6,8 +6,8 @@ createLocalizationString({
 	text = {
 		en = "Lord Queen %s",
 		de = "Lordkönigin %s",
-		es = "Señor Reina %s",
-		mx = "Señor Reina %s",
+		es = "Señora Reina %s",
+		mx = "Señora Reina %s",
 		fr = "Seigneur Reine %s",
 		it = "Lord Regina %s",
 		pt = "Senhor Rainha %s",
