@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Fillers",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Rellenos",
+		mx = "Rellenos",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

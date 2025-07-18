@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Popout List",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Lista ventana emergente",
+		mx = "Lista ventana emergente",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
