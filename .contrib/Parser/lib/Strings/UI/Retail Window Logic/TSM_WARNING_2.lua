@@ -6,7 +6,7 @@ createLocalizationString({
 		en = " preset.\n\nWe recommend that you use a different profile when using this feature.\n\nDo you want to proceed anyways?",
 		de = " Voreinstellung zurücksetzt.\n\nWir empfehlen das Sie ein anderes Profil für diese Funktion benutzen.\n\nMöchten Sie trotzdem fortfahren?",
 		es = " preestablecido.\n\nLe recomendamos que utilice un perfil diferente al usar esta función.\n\n¿Desea continuar de todos modos?",
-		-- TODO: mx = "",
+		mx = " preestablecido.\n\nLe recomendamos que utilice un perfil diferente al usar esta función.\n\n¿Desea continuar de todos modos?",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

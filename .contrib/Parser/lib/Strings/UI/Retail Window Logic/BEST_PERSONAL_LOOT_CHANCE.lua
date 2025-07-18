@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Best Personal Loot Chance",
 		de = "Beste Persönliche Beute Chance",
 		es = "Mejor probabilidad de botín personal",
-		-- TODO: mx = "",
+		mx = "Mejor probabilidad de botín personal",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

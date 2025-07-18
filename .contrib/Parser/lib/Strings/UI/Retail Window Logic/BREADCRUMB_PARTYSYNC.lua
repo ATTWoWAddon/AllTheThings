@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "This may be unable to be completed without Party Sync if completing any of these quests first:",
 		de = "Dies ist nicht abschließbar ohne Partysyncronisation, wenn etwas aus folgendem abgeschlossen ist:",
 		es = "Es posible que esto no se pueda completar sin Sincronización de grupo si primero se completa alguna de estas misiones:",
-		-- TODO: mx = "",
+		mx = "Es posible que esto no se pueda completar sin Sincronización de grupo si primero se completa alguna de estas misiones:",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

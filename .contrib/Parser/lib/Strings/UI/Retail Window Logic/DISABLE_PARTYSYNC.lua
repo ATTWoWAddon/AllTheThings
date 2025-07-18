@@ -5,7 +5,7 @@ createLocalizationString({
 	text = {
 		en = "This is likely not able to be completed by this character even using Party Sync. If you manage otherwise, please let us know on Discord!",
 		de = "Dies ist vermutlich nicht abschließbar, selbst mit aktiver Gruppensynchronisation. Sollte es dennoch abschließbar sein, melde Dich im Discord!",
-		es = "Es probable que este personaje no pueda completar esto ni siquiera con Sincronización de grupo. Si no lo consigues, ¡cuéntanoslo en Discord!",
+		es = "Es probable que este personaje no pueda completar esto ni siquiera con Sincronización de grupo. Si lo consigues, ¡cuéntanoslo en Discord!",
 		mx = "Es probable que este personaje no pueda completar esto ni siquiera con Sincronización de grupo. Si lo consigues, ¡cuéntanoslo en Discord!",
 		-- TODO: fr = "",
 		-- TODO: it = "",

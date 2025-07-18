@@ -6,5 +6,7 @@ createLocalizationString({
 	export = true,
 	text = {
 		en = "Future Warband Collected",
+		es = "Recolectado en el futuro por la Banda de guerra",
+		mx = "Coleccionado en el futuro por la Tropa",
 	},
 })

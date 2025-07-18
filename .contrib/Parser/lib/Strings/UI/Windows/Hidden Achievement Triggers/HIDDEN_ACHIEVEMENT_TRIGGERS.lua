@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Hidden Achievement Triggers",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Disparador de logros ocultos",
+		mx = "Activador de logros ocultos",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

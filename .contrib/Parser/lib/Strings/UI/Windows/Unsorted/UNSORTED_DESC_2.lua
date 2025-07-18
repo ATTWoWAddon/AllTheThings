@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Items here exist within the game and may be available to players, but have not yet been sourced into the accurate location in ATT",
 		de = "Gegenstände hier existieren im Spiel und können für Spieler verfügbar sein, wurden aber noch nicht an den richtigen Ort in ATT gebracht.",
 		es = "Los objetos aquí existen dentro del juego y pueden estar disponibles para los jugadores, pero aún no se han obtenido en la ubicación precisa en ATT.",
-		-- TODO: mx = "",
+		mx = "Los objetos aquí existen dentro del juego y pueden estar disponibles para los jugadores, pero aún no se han obtenido en la ubicación precisa en ATT.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

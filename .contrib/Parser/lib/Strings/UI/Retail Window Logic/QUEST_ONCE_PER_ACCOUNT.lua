@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Once-Per-Account Quest",
 		de = "Einmalig pro Account Quest",
 		es = "Misión única por cuenta",
-		-- TODO: mx = "",
+		mx = "Misión única por cuenta",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "No entries matching your filters were found.",
 		de = "Es wurden keine Einträge gefunden, die Euren Sucheinstellungen entsprechen.",
 		es = "No se encontraron resultados que coincidan con tus filtros.",
-		-- TODO: mx = "",
+		mx = "No se encontraron resultados que coincidan con tus filtros.",
 		fr = "Aucune entrée correspondant à vos filtres n’a été trouvée.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

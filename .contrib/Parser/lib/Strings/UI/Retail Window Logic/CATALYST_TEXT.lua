@@ -6,5 +6,7 @@ createLocalizationString({
 	export = true,
 	text = {
 		en = "Catalyst",
+		es = "Catalizador",
+		mx = "Catalizador",
 	},
 })

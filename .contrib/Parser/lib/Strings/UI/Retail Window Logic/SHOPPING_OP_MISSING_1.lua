@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "The preset is missing a 'Shopping' Operation assignment.",
 		de = "Der Voreinstellung fehlt die Zuweisung einer 'Shopping' Funktion.",
 		es = "Falta en el ajuste preestablecido una asignación de operación 'Compras'.",
-		-- TODO: mx = "",
+		mx = "Falta en el ajuste preestablecido una asignación de operación 'Compras'.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

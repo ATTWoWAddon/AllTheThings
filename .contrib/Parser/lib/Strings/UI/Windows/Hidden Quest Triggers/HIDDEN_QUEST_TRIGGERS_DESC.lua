@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "These are Quests which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes",
 		de = "Dies sind Quests, deren Auslösung anhand bestimmter Kriterien manuell festgelegt wurde und die vor allem Intern vom Spiel zu Nachverfolgungszwecken verwendet werden.",
 		es = "Se trata de misiones que se han determinado manualmente para que se activen según criterios específicos y que el juego utiliza principalmente de forma interna con fines de seguimiento.",
-		-- TODO: mx = "",
+		mx = "Se trata de misiones que se han determinado manualmente para que se activen según criterios específicos y que el juego utiliza principalmente de forma interna con fines de seguimiento.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

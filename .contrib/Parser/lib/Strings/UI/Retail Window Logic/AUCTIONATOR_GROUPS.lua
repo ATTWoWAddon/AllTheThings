@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Group-based searches are only supported using Auctionator.",
 		de = "Suchen durch Gruppen-basis sind nur durch Auctionator möglich.",
 		es = "Las búsquedas basadas en grupos solo se admiten mediante Auctionator.",
-		-- TODO: mx = "",
+		mx = "Las búsquedas basadas en grupos solo se admiten mediante Auctionator.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

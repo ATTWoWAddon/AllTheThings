@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Updates Paused",
 		-- TODO: de = "",
 		es = "Actualizaciones pausadas",
-		-- TODO: mx = "",
+		mx = "Actualizaciones pausadas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

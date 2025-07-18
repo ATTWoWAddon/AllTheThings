@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Loot Table Chance",
 		de = "Beute Chance",
 		es = "Probabilidad en la tabla de botín",
-		-- TODO: mx = "",
+		mx = "Probabilidad en la tabla de botín",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

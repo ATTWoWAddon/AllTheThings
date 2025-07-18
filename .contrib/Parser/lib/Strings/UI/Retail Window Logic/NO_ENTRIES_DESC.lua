@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group.",
 		de = "Wenn Sie glauben, dass dies ein Fehler war, versuchen Sie den Debug Modus zu aktivieren. Möglicherweise schränkt eine Filter Einstellung die Sichtbarkeit der Gruppe ein.",
 		es = "Si crees que se trata de un error, intenta activar el modo de depuración. Es posible que alguno de sus filtros esté restringiendo la visibilidad del grupo.",
-		mx = "Si cree que se trata de un error, intente activar el modo de depuración. Es posible que alguno de sus filtros esté restringiendo la visibilidad del grupo.",
+		mx = "Si cree que se trata de un error, intente activar el modo de debug. Es posible que alguno de sus filtros esté restringiendo la visibilidad del grupo.",
 		fr = "Si vous pensez qu’il s’agit d’une erreur, essayez d’activer le 'mode débogage'. Il se peut que l’un de vos filtres limite la visibilité du groupe.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

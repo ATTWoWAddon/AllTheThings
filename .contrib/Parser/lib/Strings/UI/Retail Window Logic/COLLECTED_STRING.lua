@@ -6,7 +6,7 @@ createLocalizationString({
 		en = " Collected",
 		de = " Gesammelt",
 		es = " Recolectado",
-		-- TODO: mx = "",
+		mx = " Coleccionado",
 		fr = " Collectionné",
 		-- TODO: it = "",
 		pt = " Coletado",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Open mini list for ",
 		-- TODO: de = "",
 		es = "Abrir Mini lista para",
-		-- TODO: mx = "",
+		mx = "Abrir Mini lista para",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

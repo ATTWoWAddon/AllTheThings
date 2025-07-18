@@ -5,7 +5,8 @@ createLocalizationString({
 	text = {
 		en = "[Click to Update Progress]",
 		de = "[Öffne die Hauptliste um den Fortschritt zu aktualisieren]",
-		es = "[Abrir Lista Principal para actualizar el progreso]",
+		es = "[Haga clic para actualizar el progreso]",
+		mx = "[Haga click para actualizar el progreso]",
 		fr = "[Ouvrir la liste principale pour mettre à jour la progression]",
 		ru = "[Откройте Основной список, чтобы обновить прогресс]",
 		cn = "[打开主列表更新进度 ]",

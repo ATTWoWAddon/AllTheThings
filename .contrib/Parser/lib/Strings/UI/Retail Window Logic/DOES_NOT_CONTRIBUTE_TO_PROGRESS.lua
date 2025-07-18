@@ -6,8 +6,8 @@ createLocalizationString({
 	text = {
 		en = "This group and its content do not contribute to the progress of this window since it is Sourced in another Location!",
 		-- TODO: de = "",
-		es = "Este grupo y su contenido no contribuyen al progreso de esta ventana porque sus fuentes estan en otra zona!",
-		mx = "Este grupo y su contenido no contribuyen al progreso de esta ventana porque sus fuentes están en otra zona!",
+		es = "Este grupo y su contenido no contribuyen al progreso de esta ventana porque sus fuentes están en otra zona!",
+		mx = "Este grupo y su contenido no contribuyen al progreso de esta ventana porque sus orígenes están en otra zona!",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Hidden Quest Triggers",
 		de = "Versteckte Quest Auslöser",
 		es = "Disparadores de misiones ocultas",
-		-- TODO: mx = "",
+		mx = "Activadores de misiones ocultas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

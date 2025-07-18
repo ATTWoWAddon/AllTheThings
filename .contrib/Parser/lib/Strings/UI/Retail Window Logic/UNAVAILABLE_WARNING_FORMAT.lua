@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Becomes unavailable if %d of the following are met:",
 		de = "Wird unerreichbar wenn %d der folgenden erfüllt sind:",
 		es = "Deja de estar disponible si se cumplen %d de las siguientes condiciones:",
-		-- TODO: mx = "",
+		mx = "Deja de estar disponible si se cumplen %d de las siguientes condiciones:",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

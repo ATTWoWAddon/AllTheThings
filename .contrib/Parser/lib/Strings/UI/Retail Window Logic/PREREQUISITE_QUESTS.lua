@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "There are prerequisite quests that must be accepted or completed before this may be obtained:",
 		de = "Es gibt Quests, deren Abschluss Voraussetzung ist um dies zu erhalten:",
-		es = "Hay misiones previas que deben completarse antes de poder obtener esto:",
-		-- TODO: mx = "",
+		es = "Hay misiones previas que deben aceptarse o completarse antes de poder obtener esto:",
+		mx = "Hay misiones previas que deben aceptarse o completarse antes de poder obtener esto:",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

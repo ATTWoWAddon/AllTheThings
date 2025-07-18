@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "No known coordinates for %s",
 		-- TODO: de = "",
 		es = "No hay coordenadas conocidas para %s",
-		-- TODO: mx = "",
+		mx = "No hay coordenadas conocidas para %s",
 		fr = "Aucune coordonnée connue pour %s",
 		-- TODO: it = "",
 		pt = "Sem coordenadas conhecidas para %s",

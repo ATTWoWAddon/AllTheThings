@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Updated the preset successfully.",
 		de = "Die Voreinstellung wurde erfolgreich aktualisiert.",
 		es = "Se actualizó el ajuste preestablecido con éxito.",
-		-- TODO: mx = "",
+		mx = "Se actualizó el ajuste preestablecido con éxito.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
