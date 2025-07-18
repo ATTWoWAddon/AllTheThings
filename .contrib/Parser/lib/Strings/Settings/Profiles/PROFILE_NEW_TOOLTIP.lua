@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Create a blank Profile to be used by the current Character",
 		de = "Erstelle ein leeres Profil, das vom aktuellen Charakter verwendet werden soll",
 		es = "Crea un perfil vacío para usarlo en el Personaje actual",
-		-- TODO: mx = "",
+		mx = "Crea un perfil vacío para usarlo en el Personaje actual",
 		fr = "Créer un nouveau profil qui sera utilisé par le personnage actuel.",
 		-- TODO: it = "",
 		-- TODO: pt = "",

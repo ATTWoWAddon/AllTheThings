@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Delete the Selected Profile",
 		de = "Lösche das ausgewählte Profil",
 		es = "Elimina el Perfil seleccionado",
-		-- TODO: mx = "",
+		mx = "Elimina el Perfil seleccionado",
 		fr = "Supprimer le profil sélectionné",
 		-- TODO: it = "",
 		-- TODO: pt = "",

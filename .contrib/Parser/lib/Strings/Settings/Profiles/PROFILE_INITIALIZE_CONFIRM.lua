@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Are you sure you want to enable Profile support?",
 		de = "Möchten Sie die Profilunterstützung wirklich aktivieren?",
 		es = "¿Estás seguro de que deseas habilitar la compatibilidad con perfiles?",
-		-- TODO: mx = "",
+		mx = "¿Estás seguro de que deseas habilitar la compatibilidad con perfiles?",
 		fr = "Êtes-vous sûr de vouloir activer le support du profil ?",
 		-- TODO: it = "",
 		-- TODO: pt = "",

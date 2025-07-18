@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Copy the Selected Profile into the Current Profile",
 		de = "Kopieren des ausgewählten Profils in das derzeitig aktive Profil",
 		es = "Copia el Perfil seleccionado en el Perfil actual",
-		-- TODO: mx = "",
+		mx = "Copia el Perfil seleccionado en el Perfil actual",
 		fr = "Copier le profil sélectionné dans le profil actuel",
 		-- TODO: it = "",
 		-- TODO: pt = "",

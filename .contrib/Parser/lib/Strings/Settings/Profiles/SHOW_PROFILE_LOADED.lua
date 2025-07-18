@@ -6,7 +6,7 @@ createLocalizationString({
 		en = "Show which profile loads during login or when switching between profiles",
 		-- TODO: de = "",
 		es = "Muestra qué perfil se carga durante el inicio de sesión o cuando se cambia entre perfiles",
-		-- TODO: mx = "",
+		mx = "Muestra qué perfil se carga durante el inicio de sesión o cuando se cambia entre perfiles",
 		fr = "Afficher le profil qui se charge lors de la connexion ou lors du passage d’un profil à l’autre",
 		-- TODO: it = "",
 		-- TODO: pt = "",
