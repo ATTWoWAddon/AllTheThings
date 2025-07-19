@@ -5,6 +5,7 @@ OUTPOSTS = createHeader({
 		en = "Outposts",
 		de = "Außenposten",
 		es = "Puesto de avanzada",
+		mx = "Avanzada",
 		fr = "Avant-postes",
 		-- it = "",
 		-- ko = "",

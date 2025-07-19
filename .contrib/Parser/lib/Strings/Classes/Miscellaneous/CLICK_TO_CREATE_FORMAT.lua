@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Click to Create %s",
 		-- TODO: de = "",
-		es = "Haz clic para crear%s",
-		mx = "Haz click para crear%s",
+		es = "Haz clic para crear %s",
+		mx = "Haz click para crear %s",
 		fr = "Cliquez pour créer %s",
 		-- TODO: it = "",
 		ru = "Нажмите, чтобы создать %s",
