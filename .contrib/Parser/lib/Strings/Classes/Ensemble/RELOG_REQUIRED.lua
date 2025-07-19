@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "使用此功能后，通常需要注销并重新登录，以便在游戏服务器上正确领取所有物品。",
 		-- TODO: tw = "",
 	},
 })

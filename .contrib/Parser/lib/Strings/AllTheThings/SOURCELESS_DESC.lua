@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "这些物品已确认可获得，但目前尚不清楚其来源，甚至无法确定现在是否还能获得。",
 		-- TODO: tw = "",
 	},
 })

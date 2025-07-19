@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "启用此选项以追踪战团营地的完成情况。",
 		-- TODO: tw = "",
 	},
 })

@@ -23,7 +23,7 @@ addVersionFlavor({
 	pt = "porque AllTheThings tem fome.",
 	ru = "потому что AllTheThings голоден.",
 	ko = "AllTheThings가 배고프기 때문입니다.",
-	cn = "因为万物都饥饿。",
+	cn = "因为 AllTheThings 饿了。",
 	tw = "因為萬物都飢餓。",
 });
 addVersionFlavor({
@@ -49,7 +49,7 @@ addVersionFlavor({
 	-- TODO: pt = "",
 	-- TODO: ru = "",
 	-- TODO: ko = "",
-	-- TODO: cn = "",
+	cn = "否则今晚会有鱼人在你窗外尖叫。",
 	-- TODO: tw = "",
 });
 addVersionFlavor({
@@ -62,7 +62,7 @@ addVersionFlavor({
 	-- TODO: pt = "",
 	-- TODO: ru = "",
 	-- TODO: ko = "",
-	-- TODO: cn = "",
+	cn = "因为所谓的收藏，不过是换了个说法的囤积癖罢了。",
 	-- TODO: tw = "",
 });
 addVersionFlavor({
@@ -75,7 +75,7 @@ addVersionFlavor({
 	-- TODO: pt = "",
 	-- TODO: ru = "",
 	-- TODO: ko = "",
-	-- TODO: cn = "",
+	cn = "而 Crieve 会帮一只乌龟重新入水。",
 	-- TODO: tw = "",
 });
 addVersionFlavor({
@@ -88,7 +88,7 @@ addVersionFlavor({
 	-- TODO: pt = "",
 	-- TODO: ru = "",
 	-- TODO: ko = "",
-	-- TODO: cn = "",
+	cn = "否则你的战斗宠物就要成立公会了！",
 	-- TODO: tw = "",
 });
 --[[

@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "显示在该物品可用前必须获得的所有成就",
 		-- TODO: tw = "",
 	},
 })

@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "启用此选项以追踪坐骑更改",
 		-- TODO: tw = "",
 	},
 })

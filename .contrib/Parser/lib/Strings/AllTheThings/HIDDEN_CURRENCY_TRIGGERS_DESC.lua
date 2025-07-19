@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "这些货币是根据特定条件手动判定触发的，主要由游戏内部用于追踪目的。",
 		-- TODO: tw = "",
 	},
 })

@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "这会显示每个资料片补丁新增的所有内容。",
 		-- TODO: tw = "",
 	},
 })

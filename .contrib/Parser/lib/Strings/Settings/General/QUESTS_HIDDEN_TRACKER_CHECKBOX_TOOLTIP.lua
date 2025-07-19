@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "启用此选项可专门包含隐藏任务追踪（HQT）的完成情况。\n\nHQT 是对玩家不可见的任务 ID，游戏在后台用于监控角色/账号在各种情况下的进度或状态。\n\n你大概并不关心追踪这些，对吧？我想你应该没问题的。",
 		-- TODO: tw = "",
 	},
 })

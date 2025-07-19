@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "该套装已被你的某个角色使用。\n\n|cFFA0A0A0很遗憾，暴雪的系统有时可能无法授予所有物品。|r",
 		-- TODO: tw = "",
 	},
 })

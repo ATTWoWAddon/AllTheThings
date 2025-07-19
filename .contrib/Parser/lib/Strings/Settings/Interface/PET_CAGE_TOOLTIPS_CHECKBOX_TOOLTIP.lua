@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "启用此选项可整合宠物笼提示信息（该功能将在启用后显示于 TSM 额外提示或物品对比提示中）。",
 		-- TODO: tw = "",
 	},
 })

@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "由于暴雪 API 存在技术限制/接口问题，该数据仅当您位于要塞内时才能被正确缓存并记录为已收集状态。",
 		-- TODO: tw = "",
 	},
 })

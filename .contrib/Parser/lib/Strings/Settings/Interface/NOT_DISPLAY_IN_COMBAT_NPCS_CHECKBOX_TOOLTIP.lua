@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "启用此选项可在战斗中忽略显示 NPC 的提示。",
 		-- TODO: tw = "",
 	},
 })

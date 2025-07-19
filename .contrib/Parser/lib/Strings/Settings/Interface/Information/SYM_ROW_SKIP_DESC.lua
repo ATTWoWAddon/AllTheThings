@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "关联内容仅显示在该对象的提示中。",
 		-- TODO: tw = "",
 	},
 })

@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "启用此选项后，可在游玩正式服或时光漫游角色时，正确过滤时光漫游相关内容（仅限迷你列表显示）。\n\n注意：该选项仅在时光漫游活动期间可用！",
 		-- TODO: tw = "",
 	},
 })
