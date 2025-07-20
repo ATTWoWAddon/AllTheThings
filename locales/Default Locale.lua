@@ -612,7 +612,7 @@ if app.IsRetail then
 			CUSTOM_COLLECTS_REASONS["NPE"].text = "Experiencia de los jugadores nuevos";
 			CUSTOM_COLLECTS_REASONS["NPE"].desc = "Sólo un personaje nuevo puede coleccionar esto.";
 			CUSTOM_COLLECTS_REASONS["SL_SKIP"].text = "Hilos del destino";
-			CUSTOM_COLLECTS_REASONS["SL_SKIP"].desc = "Sólo un personaje que elige saltarse la historia de las Tierras Sombrías puede coleccionar esto.";
+			CUSTOM_COLLECTS_REASONS["SL_SKIP"].desc = "Sólo un personaje que elige saltarse la historia de las Tierras de las Sombras puede coleccionar esto.";
 			CUSTOM_COLLECTS_REASONS["HOA"].desc = "Sólo un personaje que ha obtenido el |cffe6cc80"..GetSpellName(275825).."|r puede coleccionar esto.";
 			CUSTOM_COLLECTS_REASONS["!HOA"].desc = "Sólo un personaje que |cffff0000no|r ha obtenido el |cffe6cc80"..GetSpellName(275825).."|r puede coleccionar esto.";
 		end
