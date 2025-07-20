@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Owned Pets:",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Mascotas poseídas",
+		mx = "Mascotas obtenidas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
