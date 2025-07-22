@@ -6,8 +6,8 @@ createLocalizationString({
 	text = {
 		en = "As an example, using |cff00FF98/att achievement:9547|r will show you something awesome!",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Como ejemplo, usar |cff00FF98/att achievement:9547|r te mostrará algo fabuloso.",
+		mx = "Como ejemplo, usar |cff00FF98/att achievement:9547|r te mostrará algo increíble.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

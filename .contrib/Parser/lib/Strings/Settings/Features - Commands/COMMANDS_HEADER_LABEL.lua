@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Chat commands to view any thing",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Comandos de chat para ver cualquier cosa",
+		mx = "Comandos de chat para ver cualquier cosa",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

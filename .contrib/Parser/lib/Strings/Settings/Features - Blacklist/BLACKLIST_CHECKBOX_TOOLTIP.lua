@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Surely this will let you hide that thing you are too lazy to collect...",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Seguramente esto te permitirá esconder aquello que te da pereza coleccionar...",
+		mx = "Seguramente esto te permitirá esconder aquello que te da pereza coleccionar...",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

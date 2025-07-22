@@ -6,8 +6,8 @@ createLocalizationString({
 	text = {
 		en = "IDs can be found by looking at the WoWHead address, or turning on the various IDs in the ATT settings.",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Los ID se pueden encontrar consultando la dirección de WoWHead o activando los distintos ID en la configuración de ATT.",
+		mx = "Los ID se pueden encontrar consultando la dirección de WoWHead o activando los distintos ID en la configuración de ATT.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

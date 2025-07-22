@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable the Blacklist feature in ATT!",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "¡Habilite la función de Lista negra en ATT!",
+		mx = "¡Habilite la función de Lista negra en ATT!",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

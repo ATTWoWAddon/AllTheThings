@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Blacklist",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "lista negra",
+		mx = "lista negra",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

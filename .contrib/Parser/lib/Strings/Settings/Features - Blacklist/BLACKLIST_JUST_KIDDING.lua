@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "APRIL FOOLS!! You cannot Blacklist things in ATT.",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "¡Día de los Inocentes! No se pueden poner cosas en la lista negra de ATT.",
+		mx = "¡Día de los Inocentes! No se pueden poner cosas en la lista negra de ATT.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
