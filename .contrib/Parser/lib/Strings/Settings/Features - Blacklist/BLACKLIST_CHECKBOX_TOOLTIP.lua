@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "这下总算能藏住那些懒得收集的东西了吧…",
 		-- TODO: tw = "",
 	},
 })

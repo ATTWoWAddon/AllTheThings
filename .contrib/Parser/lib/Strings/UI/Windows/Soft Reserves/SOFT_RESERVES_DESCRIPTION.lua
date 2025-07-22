@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "这是由团队提交的软保留物品列表。该功能需由队长通过 ATT 插件管理。若队长未安装 ATT，则此功能无法生效。\n\n队长：未安装 ATT 的队员可私聊你“!sr <物品链接>”或“!sr <物品 ID>”来软保留某件物品。",
 		-- TODO: tw = "",
 	},
 })

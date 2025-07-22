@@ -13,7 +13,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "例如，输入 |cff00FF98/att achievement:9547|r，就能看到超酷的内容！",
 		-- TODO: tw = "",
 	},
 })
