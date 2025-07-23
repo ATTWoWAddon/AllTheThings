@@ -5,6 +5,7 @@
 		text = {
 			en = "Barrel of Wine",
 			es = "Barrica de vino",
+			mx = "Barril de vino",
 			de = "Weinfass",
 			fr = "Tonneau de vin",
 			it = "Barile di Vino",
@@ -12,6 +13,7 @@
 			ru = "Бочка с вином",
 			ko = "포도주 통",
 			cn = "酒桶",
+			tw = "一桶酒",
 		},
 	},
 })
