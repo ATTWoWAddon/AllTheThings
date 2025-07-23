@@ -4,9 +4,9 @@
 		model = 4220170,
 		text = {
 			en = "Barrel of Wine",
+			de = "Weinfass",
 			es = "Barrica de vino",
 			mx = "Barril de vino",
-			de = "Weinfass",
 			fr = "Tonneau de vin",
 			it = "Barile di Vino",
 			pt = "Barril de Vinho",
