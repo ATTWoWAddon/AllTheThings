@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Expand Mini Lists",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Expandir mini listas",
+		mx = "Expandir mini listas",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
