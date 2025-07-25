@@ -2566,8 +2566,6 @@ root(ROOTS.Unsorted, {
 				i(163544),	-- Scroll of Agile Swimming
 				i(163545),	-- Scroll of Ocean Ferocity
 				i(163546),	-- Scroll of the Forked Tongue
-				i(163580),	-- Delicate Cathedral of Light Replica
-				i(163581),	-- Fragile Model of Stormwind Keep
 				i(163591),	-- Golden Fleet Sea Charts
 				i(163606),	-- Note From Leo
 				i(163632),	-- Pristine Strings of Pearls
@@ -3409,7 +3407,6 @@ root(ROOTS.Unsorted, {
 			i(166863),	-- Farrakki Star Rubies
 			i(166864),	-- Engraved Amani Spearpoints
 			i(166871),	-- Jeweled Pyrium Goblet
-			i(166873),	-- Amethyst Parrot
 			i(166876),	-- Scrimshaw Ivory Direhorn
 			i(166896),	-- Heritage of the Sin'dorei
 		})),
@@ -3688,7 +3685,6 @@ root(ROOTS.Unsorted, {
 			i(169954),	-- Steeped Kelp Tea
 			i(169955),	-- Stopped Watch
 			i(169956),	-- Crunchy Seaweed Chips
-			i(169961),	-- Crumbling Mineral Formation
 			i(169962),	-- Frayed Fetish
 			i(169963),	-- Cracked Containment Unit
 			i(169964),	-- Flakes of Blood
@@ -3701,7 +3697,6 @@ root(ROOTS.Unsorted, {
 			i(169986),	-- Cracked Dragonscale
 			i(169987),	-- Inert Dragonscale
 			i(169988),	-- Inert Mineral Dust
-			i(169992),	-- Cracked Iris Lens
 			i(170000),	-- Battered Bastion
 			i(170001),	-- Seized Engine
 			i(170002),	-- Split Differential
@@ -3711,8 +3706,6 @@ root(ROOTS.Unsorted, {
 			i(170010),	-- Crumbling Memento
 			i(170011),	-- Cracked Memento
 			i(170012),	-- Tarnished Memento
-			i(170013),	-- Inanimate Rock
-			i(170014),	-- Crumbling Rock
 			i(170015),	-- Inert Rock
 			i(170016),	-- Dark Craggy Rock
 			i(170017),	-- Cracked Titan Disc

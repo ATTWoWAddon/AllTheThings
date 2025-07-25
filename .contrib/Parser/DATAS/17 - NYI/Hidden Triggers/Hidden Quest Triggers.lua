@@ -878,8 +878,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(31148),	-- Novice Elreth - completed with quest 28651
 		q(31174),	-- The Dread Vos - completed with quest 31019
 		q(31206),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863
-		q(31373),	-- The Order of the Cloud Serpent - completed with quest 32461
-		q(31375),	-- The Order of the Cloud Serpent - completed with quest 32461
 		q(31445),	-- zzOld - completed with quest 31369 & 31370
 		q(31469),	-- UNUSED - completed with quest 31311
 		q(31485),	-- UNUSED - completed with quest 31281

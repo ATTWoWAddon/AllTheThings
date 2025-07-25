@@ -331,6 +331,7 @@ i(158828);	-- Cracked Gladiator's Medallion
 i(155607);	-- D.E.H.T.A. Membership Card
 i(155841);	-- Defaced Statuette
 i(155608);	-- Defiled Bone
+i(163580);	-- Delicate Cathedral of Light Replica
 i(159756);	-- Depleted Azerite
 i(158792);	-- Digestive Acid
 i(155618);	-- Discarded Molting
@@ -347,6 +348,7 @@ i(158760);	-- Fin Ray
 i(158801);	-- Finely Serrated Tooth
 i(155603);	-- Flaky Fish Scales
 i(163918);	-- Fleshcarving Knife
+i(163581);	-- Fragile Model of Stormwind Keep
 i(158874);	-- Frothing Vapor
 i(158770);	-- Gelatinous Roe
 i(158865);	-- Ghastly Ooze
@@ -454,6 +456,7 @@ i(158773);	-- Wriggling Goop
 -- PATCH 8.1.0 --
 -----------------
 i(166852);	-- Akil'zon's Mithril Bust
+i(166873);	-- Amethyst Parrot
 i(166874);	-- Azerothian Diamond Brooch
 i(166860);	-- Azj'Aqir Onyx Stone
 i(166856);	-- Bwonsamdi Ritual Scepter
@@ -491,14 +494,18 @@ i(170086);	-- Coral-Flecked Chalice
 i(170099);	-- Corroded Elegant Key
 i(169997);	-- Cracked Aegis
 i(169132);	-- Cracked Gyroscope
+i(169992);	-- Cracked Iris Lens
 i(170029);	-- Cracked Tablet
 i(169999);	-- Crumbling Barrier
+i(169961);	-- Crumbling Mineral Formation
+i(170014);	-- Crumbling Rock
 i(169124);	-- Decorational Whirlycog
 i(170097);	-- Discarded Quel'dorei Tome
 i(169149);	-- Dulled Micro-Serrated Incisor
 i(170005);	-- Fractured Pearl
 i(169138);	-- Fractured Personality Module
 i(169123);	-- Functional Fiddleswitch
+i(170013);	-- Inanimate Rock
 i(169129);	-- Lovingly Worn Wrench
 i(170031);	-- Moldy Tome
 i(170096);	-- Sodden Highborne Painting

@@ -577,10 +577,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { AD
 			i(116707),	-- Zangarra Ring
 		}),
 		filter(TRINKET_F, {
-			i(118881),	-- Najheric Bangle
 			i(118883),	-- Bronze Elekk Statue
+			i(118880),	-- Everburning Candle
 			i(118877),	-- Fizzlebang's Folly
 			i(118876),	-- Lucky Double-Sided Coin
+			i(118881),	-- Najheric Bangle
 		}),
 	}),
 	n(WEAPONS, {

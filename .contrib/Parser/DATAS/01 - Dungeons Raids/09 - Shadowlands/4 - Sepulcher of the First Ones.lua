@@ -1493,10 +1493,11 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				n(QUESTS, {
 					q(65762, {	-- Sepulcher of the First Ones - Heavy is the Crown [M]
-						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
-						["g"] = {
-							i(190959),	-- Mourne Fragment (QI!)
-						},
+						["qgs"] = {
+							184601,	-- Highlord Bolvar Fordragon
+							188683,	-- Knight of the Ebon Blade
+						},	--
+						["g"] = { i(190959) },	-- Mourne Fragment (QI!)
 					}),
 				}),
 				-- #if AFTER 10.0.2

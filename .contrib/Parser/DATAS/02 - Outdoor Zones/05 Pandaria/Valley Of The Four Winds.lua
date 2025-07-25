@@ -1623,6 +1623,7 @@ root(ROOTS.Zones, {
 					q(38935, {	-- His Name Was... Stormstout - appears to be an unused version of this quest added in Warlords of Draenor?
 						["description"] = "This breadcrumb can only be picked up from the Adventure Guide (shift+J).",
 						["isBreadcrumb"] = true,
+						["timeline"] = { ADDED_6_2_0 },
 						["lvl"] = 15,
 					}),
 					q(30053, {	-- Hop Hunting

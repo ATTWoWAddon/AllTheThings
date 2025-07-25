@@ -211,21 +211,25 @@ local CachedMapData = setmetatable({}, {
 
 				-- Swap out the map data for the header.
 				results = ((results.classID and app.CreateCharacterClass) or (header.key == "instanceID" and app.CreateInstance) or app.CreateMap)(header[header.key], header);
-				ExpandGroupsRecursively(results, true);
 				results.visible = true;
-				results.expanded = true;
 				results.mapID = mapID;
 				results.back = 1;
 				results.indent = 0;
-
-				local difficultyID = app.GetCurrentDifficultyID();
-				if difficultyID ~= 0 then
-					for _,row in ipairs(header.g) do
-						if row.difficultyID or row.difficulties then
-							if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-								if not row.expanded then ExpandGroupsRecursively(row, true, true); expanded = true; end
-							elseif row.expanded then
-								ExpandGroupsRecursively(row, false, true);
+				
+				if app.Settings:GetTooltipSetting("Expand:MiniList") then
+					ExpandGroupsRecursively(results, true);
+					results.expanded = true;
+					if app.Settings:GetTooltipSetting("Expand:Difficulty") then
+						local difficultyID = app.GetCurrentDifficultyID();
+						if difficultyID ~= 0 then
+							for _,row in ipairs(header.g) do
+								if row.difficultyID or row.difficulties then
+									if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
+										if not row.expanded then ExpandGroupsRecursively(row, true, true); expanded = true; end
+									elseif row.expanded then
+										ExpandGroupsRecursively(row, false, true);
+									end
+								end
 							end
 						end
 					end

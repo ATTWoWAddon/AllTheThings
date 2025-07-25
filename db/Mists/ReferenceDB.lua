@@ -95,6 +95,8 @@ _.OnUpdateDB=
 	["IsOnQuestVisibleOverride13720"] = function(t)if not C_QuestLog.IsOnQuest(13720)then t.visible=false;return true;end end,
 	["IsOnQuestVisibleOverride13721"] = function(t)if not C_QuestLog.IsOnQuest(13721)then t.visible=false;return true;end end,
 	["IsOnQuestVisibleOverride13722"] = function(t)if not C_QuestLog.IsOnQuest(13722)then t.visible=false;return true;end end,
+	["OnUpdateForRepeatableQuestWithCost1000"] = function(t)local cost,maxReputation=t.cost,t.maxReputation;if cost and maxReputation then	t.repPerTurnIn,t.remainingTurnIns,t.totalTurnIns=_.Modules.FactionData.CalculateRemainingTurnIns(_.WOWAPI.GetFactionCurrentReputation(maxReputation[1]),1000,maxReputation[2]);cost[1][3]=t.remainingTurnIns;end	end,
+	["OnUpdateForRepeatableQuestWithCost500"] = function(t)local cost,maxReputation=t.cost,t.maxReputation;if cost and maxReputation then	t.repPerTurnIn,t.remainingTurnIns,t.totalTurnIns=_.Modules.FactionData.CalculateRemainingTurnIns(_.WOWAPI.GetFactionCurrentReputation(maxReputation[1]),500,maxReputation[2]);cost[1][3]=t.remainingTurnIns;end	end,
 	["SILVER_COVENTANT_DAILY"] = function(t)if not t.ach then	local f=_.SearchForField("achievementID",3676);if f and #f>0 then	for _,o in pairs(f)do	if o.key=="achievementID" then	t.ach=o;return;end	end	end	end	end,
 	["SUNREAVERS_DAILY"] = function(t)if not t.ach then	local f=_.SearchForField("achievementID",3677);if f and #f>0 then	for _,o in pairs(f)do	if o.key=="achievementID" then	t.ach=o;return;end	end	end	end	end
 }

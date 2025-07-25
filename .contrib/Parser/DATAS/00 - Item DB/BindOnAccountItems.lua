@@ -23,6 +23,10 @@ end
 i(226500);	-- Chipped Drakefire Amulet
 -- #endif
 
+-- #if ANYCLASSIC
+i(247497);	-- Order of the Cloud Serpent Flight Log
+-- #endif
+
 -- BoA Cost Items
 i(137642);	-- Mark of Honor
 i(163036);	-- Polished Pet Charm

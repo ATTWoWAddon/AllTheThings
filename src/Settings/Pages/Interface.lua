@@ -759,20 +759,37 @@ checkboxDoAdHocUpdates:SetPoint("LEFT", headerListBehavior, 0, 0)
 checkboxDoAdHocUpdates:SetPoint("TOP", sliderMiniListScale, "BOTTOM", 0, -10)
 end
 
+local checkboxExpandMiniList = child:CreateCheckBox(L.EXPAND_MINILIST_CHECKBOX,
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Expand:MiniList"))
+end,
+function(self)
+	settings:SetTooltipSetting("Expand:MiniList", self:GetChecked())
+end)
+checkboxExpandMiniList:SetATTTooltip(L.EXPAND_MINILIST_CHECKBOX_TOOLTIP)
+if checkboxDoAdHocUpdates then
+	checkboxExpandMiniList:AlignBelow(checkboxDoAdHocUpdates)
+else
+	checkboxExpandMiniList:SetPoint("LEFT", headerListBehavior, 0, 0)
+	checkboxExpandMiniList:SetPoint("TOP", sliderMiniListScale, "BOTTOM", 0, -10)
+end
+
 local checkboxExpandDifficulty = child:CreateCheckBox(L.EXPAND_DIFFICULTY_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Expand:Difficulty"))
+	if not settings:GetTooltipSetting("Expand:MiniList") then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
 end,
 function(self)
 	settings:SetTooltipSetting("Expand:Difficulty", self:GetChecked())
 end)
 checkboxExpandDifficulty:SetATTTooltip(L.EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP)
-if checkboxDoAdHocUpdates then
-	checkboxExpandDifficulty:AlignBelow(checkboxDoAdHocUpdates)
-else
-	checkboxExpandDifficulty:SetPoint("LEFT", headerListBehavior, 0, 0)
-	checkboxExpandDifficulty:SetPoint("TOP", sliderMiniListScale, "BOTTOM", 0, -10)
-end
+checkboxExpandDifficulty:AlignBelow(checkboxExpandMiniList, 1)
 
 local checkboxIconPortrait = child:CreateCheckBox(L.SHOW_ICON_PORTRAIT_CHECKBOX,
 function(self)
@@ -783,7 +800,7 @@ function(self)
 	app.CallbackEvent("OnRenderDirty")
 end)
 checkboxIconPortrait:SetATTTooltip(L.SHOW_ICON_PORTRAIT_CHECKBOX_TOOLTIP)
-checkboxIconPortrait:AlignBelow(checkboxExpandDifficulty)
+checkboxIconPortrait:AlignBelow(checkboxExpandDifficulty, -1)
 
 local checkboxIconPortraitForQuests = child:CreateCheckBox(L.SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX,
 function(self)

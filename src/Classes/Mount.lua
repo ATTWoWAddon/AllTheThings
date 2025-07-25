@@ -9,15 +9,12 @@ local C_MountJournal_GetMountInfoExtraByID,C_MountJournal_GetMountInfoByID,C_Mou
 	= C_MountJournal.GetMountInfoExtraByID,C_MountJournal.GetMountInfoByID,C_MountJournal.GetMountIDs
 
 -- WoW API Cache
-local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetSpellName = app.WOWAPI.GetSpellName;
 local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 local GetSpellLink = app.WOWAPI.GetSpellLink;
 
 -- App locals
 local Colorize = app.Modules.Color.Colorize;
-local GetRawField
-	= app.GetRawField
 
 -- Mount Lib
 do
@@ -136,6 +133,8 @@ do
 		local IsSpellKnown = app.IsSpellKnownHelper
 		for _,mountID in ipairs(C_MountJournal_GetMountIDs()) do
 			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
+			-- somehow, randomly, some players have had a spellID value which exists but isn't a number...
+			spellID = tonumber(spellID)
 			if spellID then
 				 -- also used to have a questID check... is that really needed?
 				if isCollected or IsSpellKnown(spellID) then

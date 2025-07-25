@@ -135,6 +135,28 @@ FUNCTION_TEMPLATES = {
 		ExportDB.OnUpdateDB[OnUpdateName] = [[~function(t) if not C_QuestLog.IsOnQuest(]]..questID..[[) then t.visible = false; return true; end end]]
 		return [[_.OnUpdateDB.]]..OnUpdateName..[[]]
 	end,
+	GenerateOnUpdateForRepeatableQuestWithCost = function(repPerTurnIn, count)
+		local OnUpdateName = "OnUpdateForRepeatableQuestWithCost"..repPerTurnIn
+		if count then
+			OnUpdateName = OnUpdateName.."x"..count
+			ExportDB.OnUpdateDB[OnUpdateName] = [[~function(t)
+				local cost, maxReputation = t.cost, t.maxReputation;
+				if cost and maxReputation then
+					t.repPerTurnIn, t.remainingTurnIns, t.totalTurnIns = _.Modules.FactionData.CalculateRemainingTurnIns(_.WOWAPI.GetFactionCurrentReputation(maxReputation[1]), ]] .. repPerTurnIn .. [[, maxReputation[2]);
+					cost[1][3] = t.remainingTurnIns * ]] .. count .. [[;
+				end
+			end]];
+		else
+			ExportDB.OnUpdateDB[OnUpdateName] = [[~function(t)
+				local cost, maxReputation = t.cost, t.maxReputation;
+				if cost and maxReputation then
+					t.repPerTurnIn, t.remainingTurnIns, t.totalTurnIns = _.Modules.FactionData.CalculateRemainingTurnIns(_.WOWAPI.GetFactionCurrentReputation(maxReputation[1]), ]] .. repPerTurnIn .. [[, maxReputation[2]);
+					cost[1][3] = t.remainingTurnIns;
+				end
+			end]];
+		end
+		return [[_.OnUpdateDB.]]..OnUpdateName..[[]];
+	end,
 };
 ExportDB.OnTooltipDB = {
 	-- #if BEFORE CATA

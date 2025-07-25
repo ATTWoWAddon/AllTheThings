@@ -263,6 +263,8 @@ L.EVENT_START = "Start:";
 L.EVENT_WHERE = "Where:";
 L.EXPAND_DIFFICULTY_CHECKBOX = "Expand Current Difficulty";
 L.EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon.";
+L.EXPAND_MINILIST_CHECKBOX = "Expand Mini Lists";
+L.EXPAND_MINILIST_CHECKBOX_TOOLTIP = "Enable this option to automatically expand all groups contained within the mini lists when viewing them for the first time per game session.";
 L.EXPANSION_ID = "Expansion ID";
 L.EXPANSION_THINGS_LABEL = "Expansion Things";
 L.EXPLORATION_CHECKBOX = "Exploration (inaccurate)";
@@ -1891,13 +1893,13 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=22,["weekday"]=4,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=1,["monthDay"]=7,["weekday"]=4,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=10,["monthDay"]=22,["weekday"]=5,["year"]=2026},{["hour"]=10,["minute"]=0,["month"]=1,["monthDay"]=7,["weekday"]=5,["year"]=2027})
 });
-_.Modules.Events.SetEventInformation(1262, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=6,["weekday"]=1,["year"]=2022},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=27,["weekday"]=1,["year"]=2022})
-});
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=2,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=4,["year"]=2025}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=4,["year"]=2026},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=6,["year"]=2027})
+});
+_.Modules.Events.SetEventInformation(1262, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=6,["weekday"]=1,["year"]=2022},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=27,["weekday"]=1,["year"]=2022})
 });
 _.Modules.Events.SetEventInformation(133889, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=4,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=1,["year"]=2024}),
@@ -21922,6 +21924,10 @@ L.BEHAVIOR_LABEL = "Comportamiento de lista";
 L.BEST_BONUS_ROLL_CHANCE = "Mejor probabilidad de tirada de bonificación";
 L.BEST_PERSONAL_LOOT_CHANCE = "Mejor probabilidad de botín personal";
 L.BINDING = "Ligado";
+L.BLACKLIST_CHECKBOX = "¡Habilite la función de Lista negra en ATT!";
+L.BLACKLIST_CHECKBOX_TOOLTIP = "Seguramente esto te permitirá esconder aquello que te da pereza coleccionar...";
+L.BLACKLIST_JUST_KIDDING = "¡Día de los Inocentes! No se pueden poner cosas en la lista negra de ATT.";
+L.BLACKLIST_PAGE = "lista negra";
 L.BORDER_TOOLTIP = "Define el color del borde de todas las ventanas de ATT.";
 L.BREADCRUMB_PARTYSYNC = "Es posible que esto no se pueda completar sin Sincronización de grupo si primero se completa alguna de estas misiones:";
 L.BREADCRUMB_PARTYSYNC_2 = "Esto se puede obtener a través de la Sincronización de grupo con otro personaje que no haya completado ninguna de estas misiones:";
@@ -21961,6 +21967,10 @@ L.COLLECTED_STRING = " Recolectado";
 L.COLLECTED_WARBAND = "|T" .. _.asset("known_circle_yellow") .. ":0|t |cfff0e341Recolectado en el futuro por la Banda de guerra|r";
 L.COLLECTION_PROGRESS = "Progreso de la colección";
 L.COLORS_ICONS = "Colores e Iconos";
+L.COMMANDS_HEADER_LABEL = "Comandos de chat para ver cualquier cosa";
+L.COMMANDS_PAGE = "Comandos";
+L.COMMANDS_PART_1 = "|cffFFFFFFLos ID se pueden encontrar consultando la dirección de WoWHead o activando los distintos ID en la configuración de ATT.|r";
+L.COMMANDS_PART_2 = "|cffFFFFFFComo ejemplo, usar |cff00FF98/att achievement:9547|r te mostrará algo fabuloso.|r";
 L.COMPLETE = "|T" .. _.asset("known_green") .. ":0|t |cff6dce47Completado|r";
 L.COMPLETED_BY = "Completado por: %s";
 L.COMPLETED_BY_CHECKBOX = "Completado por";
@@ -22072,6 +22082,7 @@ L.FILTER_THINGS_BY_LEVEL_CHECKBOX = "Sin restricciones de niveles";
 L.FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "Activa este ajuste si quieres ver el contenido disponible sin tener en cuenta el nivel del jugador.\n\nNOTA: Deshabilitar esto es especialmente útil en cuentas Starter.";
 L.FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX = "Sin restricciones de habilidad";
 L.FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX_TOOLTIP = "Desactiva este ajuste si quieres ver sólo el contenido disponible para el máximo nivel de habilidad de la versión del juego.";
+L.FILTERS_PAGE = "Filtros";
 L.FLIGHT_PATH_ID = "Ruta de vuelo ID";
 L.FLIGHT_PATHS = "Rutas de vuelo";
 L.FLIGHT_PATHS_CHECKBOX = "Rutas de vuelo";
@@ -22265,6 +22276,7 @@ L.PET_BATTLES = "Duelo de mascotas";
 L.PET_CAGE_TOOLTIPS_CHECKBOX = "Jaulas de mascotas";
 L.PET_CAGE_TOOLTIPS_CHECKBOX_TOOLTIP = "Habilite esta opción para permitir la integración de la información sobre herramientas de la jaula para mascotas. (Esto se muestra en la información sobre herramientas adicional de TSM o en la información sobre herramientas de comparación de elementos cuando está habilitado).";
 L.PET_DESC = "Haz clic en este botón para seleccionar una mascota aleatoria basado en lo que te falta.";
+L.PHASES_PAGE = "Fases";
 L.PLAY_DEATH_SOUND_CHECKBOX = "Reproduce un efecto de sonido cuando mueres";
 L.PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP = "Activa esta opción si quieres to oír un efecto de sonido cuando mueras.";
 L.PLAYER_COORDINATES = "Coordenadas del jugador";
@@ -24901,6 +24913,7 @@ L.COLLECTED_APPEARANCE = "|T" .. _.asset("known_circle") .. ":0|t |c" .. _.Defau
 L.COLLECTED_STRING = " Coleccionado";
 L.COLLECTED_WARBAND = "|T" .. _.asset("known_circle_yellow") .. ":0|t |cfff0e341Coleccionado en el futuro por la Tropa|r";
 L.COLORS_ICONS = "Iconos y Colores";
+L.COMMANDS_PART_2 = "|cffFFFFFFComo ejemplo, usar |cff00FF98/att achievement:9547|r te mostrará algo increíble.|r";
 L.COMPLETIONIST_MODE = "+Origenes";
 L.CONDUIT_ID = "ID de conducto";
 L.COST_TEXT = "|T" .. _.asset("Currency") .. ":0|t |cffdedadeMoneda|r";
@@ -25205,6 +25218,7 @@ L.AUCTION_TAB_CHECKBOX = "显示拍卖行模块标签";
 L.AUCTION_TAB_CHECKBOX_TOOLTIP = "如果你想查看 ATT 提供的拍卖行模块请启用此选项。\n\n一些插件很调皮会大量修改这个框架。ATT 并不总是和那些玩具玩得很好。";
 L.AUCTIONATOR_GROUPS = "基于群组的搜索只支持使用 Auctionator。";
 L.AUDIO_CHANNEL = "声音通道";
+L.AUDIO_PAGE = "声音";
 L.AUTO_BOUNTY_CHECKBOX = "自动打开奖励列表";
 L.AUTO_BOUNTY_CHECKBOX_TOOLTIP = "如果想查看具有杰出收藏奖励的物品，请启用此选项。如果设法抓住显示在此列表中的物品之一，可以赚到一笔不错的金币。\n\n快捷命令：/attbounty";
 L.AUTO_MAIN_LIST_CHECKBOX = "自动打开主列表";
@@ -25230,6 +25244,10 @@ L.BEHAVIOR_LABEL = "列表行为";
 L.BEST_BONUS_ROLL_CHANCE = "最佳额外投骰几率";
 L.BEST_PERSONAL_LOOT_CHANCE = "最佳个人拾取几率";
 L.BINDING = "绑定";
+L.BLACKLIST_CHECKBOX = "启用 ATT 中的黑名单功能！";
+L.BLACKLIST_CHECKBOX_TOOLTIP = "这下总算能藏住那些懒得收集的东西了吧…";
+L.BLACKLIST_JUST_KIDDING = "愚人节快乐！ATT 里可没法拉黑东西哦。";
+L.BLACKLIST_PAGE = "黑名单";
 L.BORDER_TOOLTIP = "设置所有 ATT 窗口的边框颜色和透明度。";
 L.BREADCRUMB_PARTYSYNC = "如果先完成这些任务中的任何一个在没有小队同步的情况下可能无法完成：";
 L.BREADCRUMB_PARTYSYNC_2 = "这可以通过与另一个没有完成这些任务的角色进行小队同步获得：";
@@ -25271,6 +25289,10 @@ L.COLLECTED_APPEARANCE = "|T" .. _.asset("known_circle") .. ":0|t |c" .. _.Defau
 L.COLLECTED_STRING = " 已收藏";
 L.COLLECTION_PROGRESS = "收藏进度";
 L.COLORS_ICONS = "颜色和图标";
+L.COMMANDS_HEADER_LABEL = "查看任意内容的聊天命令行";
+L.COMMANDS_PAGE = "命令行";
+L.COMMANDS_PART_1 = "|cffFFFFFFID 可通过以下方式查看：访问 WoWHead 网址，或在 ATT 设置中启用相关 ID 显示选项。|r";
+L.COMMANDS_PART_2 = "|cffFFFFFF例如，输入 |cff00FF98/att achievement:9547|r，就能看到超酷的内容！|r";
 L.COMPLETE = "|T" .. _.asset("known_green") .. ":0|t |cff6dce47已完成|r";
 L.COMPLETED_BY = "完成：%s";
 L.COMPLETED_BY_CHECKBOX = "已完成";
@@ -25379,6 +25401,7 @@ L.FILTER_THINGS_BY_LEVEL_CHECKBOX = "不限制等级";
 L.FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "启用此选项会忽略玩家等级限制显示内容。\n\n\n\n注意：对于新账号，禁用此项特别有用。";
 L.FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX = "无技能等级限制";
 L.FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX_TOOLTIP = "如果您只想查看游戏环境中可用的最高技能级别可用的内容，请禁用此设置。";
+L.FILTERS_PAGE = "过滤器";
 L.FLIGHT_PATH_ID = "飞行路线 ID";
 L.FLIGHT_PATHS = "飞行路线";
 L.FLIGHT_PATHS_CHECKBOX = "飞行路径";
@@ -25399,6 +25422,7 @@ L.FUTURE_UNOBTAINABLE = "未来不可获取！";
 L.FUTURE_UNOBTAINABLE_TOOLTIP = "这是已经确认或极有可能在已知的未来补丁中无法获取的内容。";
 L.GARRISON_BUILDINGS_REQUIRE_GARRISON = "由于暴雪 API 存在技术限制/接口问题，该数据仅当您位于要塞内时才能被正确缓存并记录为已收集状态。";
 L.GENERAL_CONTENT = "通用内容";
+L.GENERAL_PAGE = "通用";
 L.GENERAL_THINGS_LABEL = "通用事物";
 L.GITHUB_BUTTON_TOOLTIP = "点击按钮复制 URL 到All The Things GitHub 地址。\n\n您可以直接克隆软件源代码，而无需使用第三方插件管理器！";
 L.GO_GO_RANDOM = "随机 - 去看看！";
@@ -25431,6 +25455,7 @@ L.ILLUSIONS_CHECKBOX_TOOLTIP = "启用此选项以追踪附魔幻象。\n\n这�
 L.INCLUDE_ORIGINAL_CHECKBOX = "原始来源";
 L.INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP = "如果你真的喜欢在鼠标提示中的共享外观列表中看到原始来源信息，请启用此选项。";
 L.INCOMPLETE = "|T" .. _.asset("incomplete") .. ":0|t |c" .. _.DefaultColors.Completed .. "未完成|r";
+L.INFORMATION_PAGE = "信息";
 L.INSTANCE_DESC = "点击此按钮可根据缺少的内容选择随机副本。";
 L.INSTANCE_ID = "副本 ID";
 L.ITEM_DESC = "点击此按钮可根据缺少的内容选择随机物品。";
@@ -25562,6 +25587,7 @@ L.OPPOSITE_FACTION_EQ = "与对立阵营对应：";
 L.OTHER_ROW_INSTRUCTIONS = "|cff3399ff左键展开/折叠\n右键弹出小列表\n" .. SHIFT_KEY_TEXT .. "左键刷新收藏\n" .. CTRL_KEY_TEXT .. "左键展开/折叠列表\n" .. SHIFT_KEY_TEXT .. "右键单击排序组/弹出列表\n" .. ALT_KEY_TEXT .. "右键设置路径点|r";
 L.OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ff左键展开/折叠\n右键弹出小列表\n" .. SHIFT_KEY_TEXT .. "左键搜索拍卖行|r";
 L.OWNED_BY = "拥有者 %s";
+L.OWNED_PETS = "已拥有宠物";
 L.PATREON_BUTTON_TOOLTIP = "点击按钮复制 URL 以进入 All The Things Patreon 页面。\n\n在这里您可以看到如何在经济上支持插件！";
 L.PERCENTAGES_CHECKBOX = "显示完成百分比";
 L.PERCENTAGES_CHECKBOX_TOOLTIP = "如果想查看每行的完成百分比请启用此选项。\n\n按完成度对组进行着色不受影响。";
@@ -25570,6 +25596,7 @@ L.PET_BATTLES = "战斗宠物";
 L.PET_CAGE_TOOLTIPS_CHECKBOX = "宠物笼";
 L.PET_CAGE_TOOLTIPS_CHECKBOX_TOOLTIP = "启用此选项可整合宠物笼提示信息（该功能将在启用后显示于 TSM 额外提示或物品对比提示中）。";
 L.PET_DESC = "点击此按钮可根据缺少的内容选择随机宠物。";
+L.PHASES_PAGE = "阶段";
 L.PLAY_DEATH_SOUND_CHECKBOX = "死亡时播放音效";
 L.PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP = "如果你想在死亡时听到音效，请启用此选项。";
 L.PLAYER_COORDINATES = "玩家坐标";
@@ -25653,6 +25680,7 @@ L.RELOG_REQUIRED = "使用此功能后，通常需要注销并重新登录，以
 L.REMOVED_WITH_PATCH = "随补丁移除";
 L.REMOVED_WITH_PATCH_CLASSIC_FORMAT = "该物品是随补丁 %s 移除的";
 L.REMOVED_WITH_PATCH_FORMAT = "补丁 %s 中被删除";
+L.REPEATABLES_LABEL = "可重复";
 L.REPORT_COLLECTED_THINGS_CHECKBOX = "报告已收藏事物";
 L.REPORT_COLLECTED_THINGS_CHECKBOX_TOOLTIP = "如果想在聊天中看到一条消息，详细说明收藏了哪些物品或从收藏中删除了哪些物品，请启用此选项。\n\n注意：这是因为暴雪默默地添加了外观和其他收藏品并且忽略了通知你可用的其他物品。\n\n我们建议你保持此设置。如果你打开了这个选项，你会听到警告声。";
 L.REPORT_COMPLETED_QUESTS_CHECKBOX = "报告任务";
@@ -25752,6 +25780,8 @@ L.SKIP_AUTO_REFRESH_TOOLTIP = "默认情况下(未勾选)，任何可能影响�
 L.SKIP_CUTSCENES_CHECKBOX = "自动跳过场景动画";
 L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "如果想让 ATT 代表你自动跳过所有场景动画请启用此选项。";
 L.SOCIAL_PROGRESS = "社交进度";
+L.SOFT_RESERVES = "软保留";
+L.SOFT_RESERVES_DESCRIPTION = "这是由团队提交的软保留物品列表。该功能需由队长通过 ATT 插件管理。若队长未安装 ATT，则此功能无法生效。\n\n队长：未安装 ATT 的队员可私聊你“!sr <物品链接>”或“!sr <物品 ID>”来软保留某件物品。";
 L.SORT_BY_PROGRESS_CHECKBOX = "按进度排序";
 L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "如果你希望'排序'操作（" .. SHIFT_KEY_TEXT .. "右键）按每个组的总进度排序（而不是按名称）请启用此选项";
 L.SOULBINDCONDUITS_CHECKBOX = "|T" .. _.asset("Expansion_SL") .. ":0|t 导灵器";

@@ -15,18 +15,26 @@ end
 local L = app.L;
 
 -- Global locals
-local rawset, tonumber, ipairs, pairs
-	= rawset, tonumber, ipairs, pairs
+local rawset, tonumber, ipairs, pairs,wipe
+	= rawset, tonumber, ipairs, pairs,wipe
 
 -- Module locals
 local FlashClientIcon = FlashClientIcon;
 local C_VignetteInfo_GetVignetteInfo = C_VignetteInfo.GetVignetteInfo;
 local C_VignetteInfo_GetVignettes = C_VignetteInfo.GetVignettes;
 local C_VignetteInfo_GetVignettePosition = C_VignetteInfo.GetVignettePosition;
+local Callback, DelayedCallback = app.CallbackHandlers.Callback, app.CallbackHandlers.DelayedCallback
 
 -- Helper Functions
 local SettingsCache = {}
 local ActiveWaypointGUID;
+local function PlotUserWaypoint(pos)
+	C_SuperTrack.SetSuperTrackedUserWaypoint(false)
+	C_Map.ClearUserWaypoint()
+	C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(pos.mapID, pos.x, pos.y, pos.z))
+	C_SuperTrack.SetSuperTrackedUserWaypoint(true)
+	ActiveWaypointGUID = pos.guid
+end
 local function GetWaypointLink(guid, text)
 	-- Generates a waypoint link with text (optional) inside the link should the vignette guid have a valid position.
 	if guid and C_VignetteInfo_GetVignettePosition then
@@ -35,11 +43,10 @@ local function GetWaypointLink(guid, text)
 			local pos = C_VignetteInfo_GetVignettePosition(guid, mapID);
 			if pos then
 				if SettingsCache.PlotWaypoints then
-					ActiveWaypointGUID = guid;
-					C_SuperTrack.SetSuperTrackedUserWaypoint(false);
-					C_Map.ClearUserWaypoint();
-					C_Map.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(mapID, pos.x, pos.y, pos.z));
-					C_SuperTrack.SetSuperTrackedUserWaypoint(true);
+					pos.mapID = mapID
+					pos.guid = guid
+					Callback(PlotUserWaypoint, pos)
+					-- TODO: setting & logic here for incorporating into TomTom waypoints
 				end
 				return app:WaypointLink(mapID, pos.x, pos.y, text);
 			end
@@ -153,7 +160,6 @@ local CachedVignetteInfo = setmetatable({}, {
 				end
 			end
 		end
-		return false
 	end,
 })
 local function ClearVignette(guid)
@@ -170,9 +176,11 @@ local function ClearVignette(guid)
 		ActiveWaypointGUID = nil
 	end
 end
+local vignettesByGUID = {}
 local function UpdateVignette(guid)
 	if not guid then return end
 
+	vignettesByGUID[guid] = true
 	local vignetteInfo = CachedVignetteInfo[guid]
 	if vignetteInfo then
 		-- app.PrintDebug("Vignette.Update",vignetteInfo.SearchType,vignetteInfo.ID,guid);
@@ -181,12 +189,12 @@ local function UpdateVignette(guid)
 end
 app.AddEventRegistration("VIGNETTE_MINIMAP_UPDATED", UpdateVignette);
 local function Event_VIGNETTES_UPDATED()
-	local vignettesByGUID = {};
 	local vignettes = C_VignetteInfo_GetVignettes();
+	-- app.PrintDebug("Current Vignettes:",vignettes and #vignettes)
+	wipe(vignettesByGUID)
 	if vignettes then
-		for _,guid in ipairs(vignettes) do
-			vignettesByGUID[guid] = true;
-			UpdateVignette(guid);
+		for v=1,#vignettes do
+			UpdateVignette(vignettes[v])
 		end
 	end
 	for guid,_ in pairs(CachedVignetteInfo) do
@@ -196,11 +204,7 @@ local function Event_VIGNETTES_UPDATED()
 	end
 end
 app.AddEventRegistration("VIGNETTES_UPDATED", Event_VIGNETTES_UPDATED);
-app.AddEventHandler("OnReady", function()
-	Event_VIGNETTES_UPDATED();
-	app.AddEventHandler("OnReportNearbySettingsChanged", Event_VIGNETTES_UPDATED);
-end);
-app.AddEventHandler("OnSettingsRefreshed", function()
+local function CacheVignetteSettings()
 	local settings = app.Settings
 	SettingsCache.IncludeCompleted = settings:GetTooltipSetting("Nearby:IncludeCompleted")
 	SettingsCache.IncludeUnknown = settings:GetTooltipSetting("Nearby:IncludeUnknown")
@@ -211,4 +215,35 @@ app.AddEventHandler("OnSettingsRefreshed", function()
 	for searchType,search in pairs(VignetteSearchTypes) do
 		SettingsCache[search] = settings:GetTooltipSetting("Nearby:Type:" .. search)
 	end
+end
+local function InitialVignetteScan()
+	CacheVignetteSettings()
+	DelayedCallback(Event_VIGNETTES_UPDATED, 0.1)
+	-- clean up the 1 time function, needs to be callback since it's removing within the same event
+	Callback(app.RemoveEventHandler, InitialVignetteScan)
+end
+app.AddEventHandler("OnRefreshCollectionsDone", InitialVignetteScan)
+app.AddEventHandler("Settings.OnSet", function(containerKey, key, value)
+	if containerKey ~= "Tooltips" then return end
+
+	local type, _ = (":"):split(key)
+	if type ~= "Nearby" then return end
+
+	CacheVignetteSettings()
+	DelayedCallback(Event_VIGNETTES_UPDATED, 0.1)
 end)
+
+-- Allows a user to use /att reset-vignettes
+-- to enable Debug Printing of any PrintDebug messages
+app.ChatCommands.Add("reset-vignettes", function(args)
+	wipe(ReportedVignettes)
+	for guid,_ in pairs(CachedVignetteInfo) do
+		ClearVignette(guid)
+	end
+	DelayedCallback(Event_VIGNETTES_UPDATED, 0.1)
+	app.print("Vignette Caches reset!")
+	return true
+end, {
+	"Usage : /att reset-vignettes",
+	"Allows resetting the Vignette cache such that Vignettes can be reported again in chat",
+})

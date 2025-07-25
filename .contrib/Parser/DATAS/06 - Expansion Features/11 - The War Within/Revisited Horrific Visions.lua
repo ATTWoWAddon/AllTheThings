@@ -1150,16 +1150,16 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(87429),	-- ?? / Old Town
 		-- Orgrimmar
 		q(87432),	-- after killing Thrall (main chest unlock hqt?), doesn't affected with additional wings clearing
-		q(85951),	-- Valley of Spirits
-		q(85953),	-- The Drag
-		q(85950),	-- Valley of Honor
-		q(85952),	-- Valley of Wisdom
+		q(85951, {["isWeekly"]=true}),	-- Valley of Spirits
+		q(85953, {["isWeekly"]=true}),	-- The Drag
+		q(85950, {["isWeekly"]=true}),	-- Valley of Honor
+		q(85952, {["isWeekly"]=true}),	-- Valley of Wisdom
 		-- Stormwind
 		q(87428),	-- after Alleria kill (main chest unlock hqt?)
-		q(85829),	-- Dwarven District
-		q(85830),	-- Trade District
-		q(85831),	-- Mage Quarter
-		q(85832),	-- Old Town
+		q(85829, {["isWeekly"]=true}),	-- Dwarven District
+		q(85830, {["isWeekly"]=true}),	-- Trade District
+		q(85831, {["isWeekly"]=true}),	-- Mage Quarter
+		q(85832, {["isWeekly"]=true}),	-- Old Town
 		--
 		q(90524, {name="Mage Quarter & Mask"}),	-- either hqt to pop thing for moto or mask drop hqt after clearing up mage quarter (with Long Night mask)
 		q(90528, {name="Old Town & Mask"}),	-- either hqt to pop thing for moto or mask drop hqt after clearing up old town (with Long Night mask)

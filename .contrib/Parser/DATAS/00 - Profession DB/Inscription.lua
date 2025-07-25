@@ -614,24 +614,47 @@ i(0, 127017);	-- Tiger Claw Inscription
 i(0, 127016);	-- Tiger Fang Inscription
 i(0, 127007);	-- Yu'lon Kite
 -- Scroll/Research?!
+i(0, 124443);	-- Glyph of Black Ice
+i(0, 132167);	-- Glyph of Blackout Kick
+i(0, 112266);	-- Glyph of Bladed Judgment
+i(0, 124444);	-- Glyph of Breath of Fire
+i(0, 112430);	-- Glyph of Burning Anger (Research: Blackfallow Ink)
+i(0, 124446);	-- Glyph of Clash
+i(0, 126153);	-- Glyph of Confession
+i(0, 112462);	-- Glyph of Crackling Tiger Lightning (Research: Blackfallow Ink)
+i(0, 126701);	-- Glyph of Direction
+i(0, 124447);	-- Glyph of Enduring Healing Sphere
 i(0, 112469);	-- Glyph of Fighting Pose (Research: Ink of the Sea)
+i(0, 57037);	-- Glyph of Focused Wrath
+i(0, 124449);	-- Glyph of Guard
+i(0, 112429);	-- Glyph of Crow Feast / Glyph of Hawk Feast [Legion+] (Research: Jadefire Ink)
+i(0, 126687);	-- Glyph of Holy Resurrection
 i(0, 112464);	-- Glyph of Honor (Scroll of Wisdom)
-i(0, 123781);	-- Glyph of the Blazing Trail(Scroll of Wisdom)
-i(0, 112462);	-- Glyph of Crackling Tiger Lightning Research: Blackfallow Ink
-i(0, 112430);	-- Glyph of Burning Anger Research: Blackfallow Ink
-i(0, 131152);	-- Glyph of the Cheetah Research: Shimmering Ink
-i(0, 124466);	-- Glyph of the Heavens Research: Blackfallow Ink
-i(0, 126800);	-- Glyph of Shadowy Friends Research: Blackfallow Ink
-i(0, 112466);	-- Glyph of Rising Tiger Kick Research: Shimmering Ink
-i(0, 126696);	-- Glyph of the Val'kyr Research: Ink of Dreams
-i(0, 112429);	-- Glyph of Hawk Feast Research: Jadefire Ink
-
+i(0, 122015);	-- Glyph of Incite
+i(0, 112465);	-- Glyph of Jab
+i(0, 124450);	-- Glyph of Mana Tea
+i(0, 126704);	-- Glyph of Marking
+i(0, 122030);	-- Glyph of Mass Exorcism
+i(0, 124448);	-- Glyph of Rapid Rolling
+i(0, 112265);	-- Glyph of Righteous Retreat
+i(0, 112466);	-- Glyph of Rising Tiger Kick (Research: Shimmering Ink)
+i(0, 124461);	-- Glyph of Shadow Word: Death
+i(0, 126800);	-- Glyph of Shadowy Friends (Research: Blackfallow Ink)
+i(0, 124454);	-- Glyph of Spinning Fire Blossom
+i(0, 112468);	-- Glyph of Spirit Roll
+i(0, 119481);	-- Glyph of the Battle Healer
+i(0, 123781);	-- Glyph of the Blazing Trail (Scroll of Wisdom)
+i(0, 131152);	-- Glyph of the Cheetah (Research: Shimmering Ink)
+i(0, 112264);	-- Glyph of the Falling Avenger
+i(0, 124466);	-- Glyph of the Heavens (Research: Blackfallow Ink)
+i(0, 126696);	-- Glyph of the Val'kyr (Research: Ink of Dreams)
+i(0, 124457);	-- Glyph of Transcendence
+i(0, 124460);	-- Glyph of Vampiric Embrace
+i(0, 112461);	-- Glyph of Water Roll
+i(0, 112460);	-- Glyph of Zen Flight
 
 -- Blackfallow
 --i(0, 57855);	-- Glyph of Charm Woodland Creature
-
-
-
 
 i(0, 130407);	-- Mystery of the Mists (removed`?)
 i(0, 127475);	-- Incarnadine Ink Removed?
@@ -656,59 +679,30 @@ i(104229, 148276);	-- Glyph of the Sha
 i(104228, 148275);	-- Glyph of Angels
 i(104227, 148274);	-- Glyph of Pillar of Light
 
-
-
 -- 5.0.3.15890
--- Need more research
-i(0, 124448);	--
-i(0, 124461);	--
 i(0, 112437);	--
-i(0, 112461);	--
-i(0, 126701);	--
 i(0, 127625);	--
-i(0, 112266);	--
-i(0, 112265);	--
 i(0, 124453);	--
 i(0, 112451);	--
 i(0, 112454);	--
 i(0, 112444);	--
-i(0, 124443);	--
 i(0, 126801);	--
-i(0, 124460);	--
-i(0, 124454);	--
-i(0, 126704);	--
 i(0, 112440);	--
-i(0, 124449);	--
 i(0, 124445);	--
-i(0, 124457);	--
 i(0, 124451);	--
-i(0, 112264);	--
 i(0, 58309);	--
-i(0, 112465);	--
 i(0, 124452);	--
-i(0, 112460);	--
 i(0, 112883);	--
 i(0, 112442);	--
-i(0, 124447);	--
 i(0, 124456);	--
-i(0, 112468);	--
-i(0, 57037);	--
-i(0, 126153);	--
 i(0, 112450);	--
-i(0, 124444);	--
 i(0, 124463);	--
 i(0, 112458);	--
-i(0, 124450);	--
 i(0, 112463);	--
 i(0, 124459);	--
-i(0, 122030);	--
-i(0, 119481);	--
-i(0, 124446);	--
 i(0, 124442);	--
 i(0, 124455);	--
-i(0, 126687);	--
 i(0, 112457);	--
-i(0, 122015);	--
 i(0, 112452);	--
 --6.0.1.18179
 -- if not all are 5.4.0 material?
@@ -720,7 +714,6 @@ i(0, 148268);	--
 i(0, 148490);	--
 i(0, 135535);	--
 i(0, 148255);	--
-i(0, 132167);	--
 i(0, 148290);	--
 i(0, 148289);	--
 i(0, 148291);	--

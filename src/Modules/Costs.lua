@@ -626,7 +626,7 @@ do
 	end}
 
 	local function AddGroupCosts(o, Collector)
-		-- app.PrintDebug("AGC",o.hash)
+		-- app.PrintDebug("AGC",app:SearchLink(o))
 		if not o.visible or o.saved or o.collected then return end
 		-- only add costs once per hash in case it is duplicated
 		local hash = o.hash
@@ -670,7 +670,9 @@ do
 		-- ignore costs for and within certain groups
 		if not group.visible or group.sourceIgnored then return end
 
-		CollectorRunner.Run(AddGroupCosts, group, Collector)
+		local runner = Collector.Runner
+		-- app.PrintDebug("AGC:Run",app:SearchLink(group))
+		runner.Run(AddGroupCosts, group, Collector)
 		local g = group.g
 		if not g then return end
 
@@ -691,7 +693,7 @@ do
 		Collector.__text = text
 		group.text = (text or "").."  "..BLIZZARD_STORE_PROCESSING
 		group.OnSetVisibility = app.ReturnTrue
-		-- app.PrintDebug("AGC:Start",group.text)
+		-- app.PrintDebug("AGC:Start",text)
 		app.DirectGroupUpdate(group)
 	end
 	local function EndUpdating(Collector)
@@ -741,24 +743,28 @@ do
 		Collector.Reset()
 	end
 
-	api.GetCostCollector = function()
+	api.GetCostCollector = function(group)
 
-		local Collector = {}
-
+		local windowRunner = group.window and group.window:GetRunner()
+		-- app.PrintDebug("New Cost Collector",windowRunner)
 		-- Table which can capture cost information for a collector
-		Collector.Data = setmetatable({}, __costData)
-		Collector.Hashes = {}
+		local Collector = {
+			Runner=windowRunner or CollectorRunner,
+			Data = setmetatable({}, __costData),
+			Hashes = {},
+		}
 
 		Collector.ScanGroups = function(group, costGroup)
 			Collector.__group = costGroup
-			CollectorRunner.Run(StartUpdating, Collector)
+			local runner = Collector.Runner
+			runner.Run(StartUpdating, Collector)
 			local g = group.g
 			if g then
 				for _,o in ipairs(g) do
 					ScanGroups(o, Collector)
 				end
 			end
-			CollectorRunner.Run(EndUpdating, Collector)
+			runner.Run(EndUpdating, Collector)
 		end
 
 		Collector.Reset = function()
@@ -841,7 +847,7 @@ local function BuildTotalCost(group)
 		OnClick = app.UI.OnClick.IgnoreRightClick,
 	});
 
-	local Collector = app.Modules.Costs.GetCostCollector()
+	local Collector = app.Modules.Costs.GetCostCollector(group)
 
 	local function RefreshCollector(data, didUpdate)
 		if not didUpdate then return end

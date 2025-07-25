@@ -122,6 +122,7 @@ local TooltipSettingsBase = {
 		["Enabled:Mod"] = "None",
 		["EnablePetCageTooltips"] = true,
 		["Expand:Difficulty"] = true,
+		["Expand:MiniList"] = true,
 		["IncludeOriginalSource"] = true,
 		["LootSpecializations"] = true,
 		["WorldMapButton"] = true,

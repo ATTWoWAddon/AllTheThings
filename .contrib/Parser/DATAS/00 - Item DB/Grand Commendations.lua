@@ -127,10 +127,6 @@ i(143941, FACTION_THE_TILLERS);				-- Commendation of The Tillers
 h(i(63518, FACTION_HELLSCREAMS_REACH));		-- Hellscream's Reach Commendation
 a(i(63517, FACTION_BARADINS_WARDENS));		-- Baradin's Wardens Commendation
 
--- Mists of Pandaria
-i(104286, FACTION_ORDER_OF_THE_CLOUD_SERPENT);		-- Quivering Firestorm Egg [Order of the Cloud Serpent]
-i(89155, FACTION_ORDER_OF_THE_CLOUD_SERPENT);		-- Onyx Egg [Order of the Cloud Serpent]
-
 -- Warlords of Draenor
 i(118099, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Gorian Artifact Fragment [Steamwheedle Preservation]
 i(118100, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Highmaul Relic [Steamwheedle Preservation]
