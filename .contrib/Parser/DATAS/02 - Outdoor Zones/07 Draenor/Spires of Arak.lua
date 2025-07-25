@@ -141,7 +141,6 @@ root(ROOTS.Zones, {
 						1441,	-- Mud Jumper (PET!)
 						417,	-- Rat (PET!)
 						1587,	-- Royal Moth (PET!)
-						568,	-- Silkbead Snail (PET!)
 						379,	-- Squirrel (PET!)
 						401,	-- Strand Crab (PET!)
 						1593,	-- Waterfly (PET!)
@@ -164,6 +163,9 @@ root(ROOTS.Zones, {
 								{ 57.8, 51.0, SPIRES_OF_ARAK },
 								{ 59.0, 68.6, SPIRES_OF_ARAK },
 							},
+						}),
+						pet(568, {	-- Silkbead Snail (PET!)
+							["coord"] = { 48.8, 45.4, SPIRES_OF_ARAK },
 						}),
 						pet(1590),	-- Swamplighter Firefly (PET!)
 						pet(1456),	-- Thicket Skitterer (PET!)

@@ -1,6 +1,7 @@
 createLocalizationString({
 	readable = "[icon:unknown] Not Collected",
 	constant = "NOT_COLLECTED",
+	icon = [[~_.asset("unknown")]],
 	color = "ffff9333",
 	export = true,
 	text = {

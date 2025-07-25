@@ -472,7 +472,7 @@ L.NO_ENTRIES_DESC = "If you believe this was in error, try activating 'Debug Mod
 L.NO_LINKED_ACCOUNTS = "No linked accounts found.";
 L.NO_SEARCH_METHOD = "No search method specified.";
 L.NOT_AVAILABLE_IN_PL = "Not available in Personal Loot.";
-L.NOT_COLLECTED = "|cffff9333Not Collected|r";
+L.NOT_COLLECTED = "|T" .. _.asset("unknown") .. ":0|t |cffff9333Not Collected|r";
 L.NOT_COLLECTED_ICON = "|T" .. _.asset("unknown") .. ":0|t";
 L.NOT_DISPLAY_IN_COMBAT_NPCS_CHECKBOX = "Except NPCs";
 L.NOT_DISPLAY_IN_COMBAT_NPCS_CHECKBOX_TOOLTIP = "Enable this option to ignore rendering NPC tooltips while in combat.";
@@ -1759,6 +1759,7 @@ localize(L.HEADER_NAMES, {
 	[-611] = "Silithid Royalty",
 	[-612] = "Obsidian Fragment Exchange",
 	[-648] = "Memory of Scholomance",
+	[-652] = "Zandalari Incursions",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -1805,6 +1806,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-591] = "The festival is held only on Sunday night from 9 PM to 11 PM (PST(US)/CEST(EU)/AEST(OCE). During the festival, floating lanterns appear on the surface of the water and Pandaren NPCs wander onto the beach to set up bonfires and shoot off fireworks. Shortly after, the Wanderer's Festival Hatchlings appear.",
 	[-592] = "This is a yearly recurring event that occurs between the beginning of November and the end of the year.",
 	[-610] = "If the following are sorted somewhere, please delete them from this list. Thanks.",
+	[-652] = "The Zandalari Incursions into the main land of Pandaria began with the release of the Isle of Thunder. Warbringers can be found all around the continent with varying degrees of challenging solo mechanics and available mounts! Farm these with friends.",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -2031,6 +2033,7 @@ localize(L.HEADER_ICONS, {
 	[-611] = 133575,
 	[-612] = 135241,
 	[-648] = 133743,
+	[-652] = 838687,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -9680,7 +9683,7 @@ L.NO_ENTRIES_DESC = "Wenn Sie glauben, dass dies ein Fehler war, versuchen Sie d
 L.NO_LINKED_ACCOUNTS = "Keine verknüpften Accounts gefunden.";
 L.NO_SEARCH_METHOD = "Keine Suchmethode festgelegt.";
 L.NOT_AVAILABLE_IN_PL = "Nicht vorhanden im Persönlicher Beute Modus.";
-L.NOT_COLLECTED = "|cffff9333Nicht gesammelt|r";
+L.NOT_COLLECTED = "|T" .. _.asset("unknown") .. ":0|t |cffff9333Nicht gesammelt|r";
 L.NOT_TRADEABLE = "Nicht Handelbar";
 L.NOTHING_TO_SELECT_FROM = "Es wurde nichts für die zufällige Auswahl gefunden. Wenn 'Ad-Hoc Updates' in den Einstellungen aktiviert ist, muss die Hauptliste zuerst aktualisiert werden, (/att) bevor Ihr dieses Fenster benutzt.";
 L.OPEN_AUTOMATICALLY = "Automatisch öffnen";
@@ -12530,7 +12533,7 @@ L.NO_ENTRIES_DESC = "Si vous pensez qu’il s’agit d’une erreur, essayez d�
 L.NO_LINKED_ACCOUNTS = "Aucun compte lié n’a été trouvé.";
 L.NO_SEARCH_METHOD = "Aucune méthode de recherche n’est spécifiée.";
 L.NOT_AVAILABLE_IN_PL = "Non disponible pour le butin personnel.";
-L.NOT_COLLECTED = "|cffff9333Pas Collecté|r";
+L.NOT_COLLECTED = "|T" .. _.asset("unknown") .. ":0|t |cffff9333Pas Collecté|r";
 L.NOT_TRADEABLE = "Non échangeable";
 L.OPEN_AUTOMATICALLY = "Ouvrir automatiquement";
 L.OPEN_AUTOMATICALLY_DESC = "Si vous n’êtes pas un développeur de chez Blizzard, il peut être judicieux de décocher cela. Ceci a été fait pour forcer Blizzard à corriger et / ou reconnaître ces bugs.";
@@ -20161,7 +20164,7 @@ L.NO_ENTRIES_DESC = "Если Вы уверены, что это была оши
 L.NO_LINKED_ACCOUNTS = "Прикреплённых аккаунтов не найдено.";
 L.NO_SEARCH_METHOD = "Не выбран метод для поиска.";
 L.NOT_AVAILABLE_IN_PL = "Недоступно в Персональной добыче.";
-L.NOT_COLLECTED = "|cffff9333Не Собрано|r";
+L.NOT_COLLECTED = "|T" .. _.asset("unknown") .. ":0|t |cffff9333Не Собрано|r";
 L.NOTHING_TO_SELECT_FROM = "Не из чего делать случайный выбор. Если включена опция 'Обновлять только видимые окна', то предварительно нужно открыть Основной Список (/att).";
 L.OBJECTIVES = "Цели";
 L.ONLY_RELEVANT_CHECKBOX = "Только Уместные";
@@ -26121,7 +26124,7 @@ L.NO_ENTRIES_DESC = "Si crees que se trata de un error, intenta activar el modo 
 L.NO_LINKED_ACCOUNTS = "No se encontraron cuentas conectadas.";
 L.NO_SEARCH_METHOD = "Método de búsqueda no especificado.";
 L.NOT_AVAILABLE_IN_PL = "No disponible en botín personal.";
-L.NOT_COLLECTED = "|cffff9333No adquirido|r";
+L.NOT_COLLECTED = "|T" .. _.asset("unknown") .. ":0|t |cffff9333No adquirido|r";
 L.NOT_DISPLAY_IN_COMBAT_NPCS_CHECKBOX = "Excepto PNJ";
 L.NOT_DISPLAY_IN_COMBAT_NPCS_CHECKBOX_TOOLTIP = "Habilite esta opción para ignorar la presentación de la información sobre ventanas emergentes de los NPC durante el combate.";
 L.NOT_TRADEABLE = "No comerciable";
@@ -29323,7 +29326,7 @@ L.MUSIC_ROLL_ID = "ID de rollo musical";
 L.MUSIC_ROLLS_DESC = "Estos se desbloquean por personaje y actualmente no se comparten entre cuentas. Si alguien de Blizzard está leyendo esto, sería genial que los hicieran accesibles para toda la cuenta.\n\nDebes actualizar manualmente el addon " .. SHIFT_KEY_TEXT .. " click en el encabezado para que esto se detecte.";
 L.MUSIC_ROLLS_DESC_2 = "\n\nPrimero debes desbloquear los Rollos musicales completando la misión Poniendo el ritmo en tu fortaleza para que aparezca este objeto.\n\nSelfies requieren el juguete S.E.L.F.I.E.";
 L.NO_ENTRIES_DESC = "Si cree que se trata de un error, intente activar el modo de debug. Es posible que alguno de sus filtros esté restringiendo la visibilidad del grupo.";
-L.NOT_COLLECTED = "|cffff9333No coleccionado|r";
+L.NOT_COLLECTED = "|T" .. _.asset("unknown") .. ":0|t |cffff9333No coleccionado|r";
 L.NOTHING_TO_SELECT_FROM = "No se encontró nada para seleccionar aleatoriamente. Si las 'actualizaciones Ad-Hoc' están habilitadas en los ajustes, la lista principal se tiene que actualizar (/att) antes de usar esta ventana.";
 L.NPC_ID = "ID de Pnj";
 L.OBJECT_ID = "ID de objeto";
@@ -29883,7 +29886,7 @@ L.NO_ENTRIES_DESC = "如果认为这是错误的，请尝试激活'调试模式'
 L.NO_LINKED_ACCOUNTS = "未找到链接帐号。";
 L.NO_SEARCH_METHOD = "未指定搜索方法。";
 L.NOT_AVAILABLE_IN_PL = "在个人拾取中不可用。";
-L.NOT_COLLECTED = "|cffff9333未收藏|r";
+L.NOT_COLLECTED = "|T" .. _.asset("unknown") .. ":0|t |cffff9333未收藏|r";
 L.NOT_DISPLAY_IN_COMBAT_NPCS_CHECKBOX = "排除 NPC";
 L.NOT_DISPLAY_IN_COMBAT_NPCS_CHECKBOX_TOOLTIP = "启用此选项可在战斗中忽略显示 NPC 的提示。";
 L.NOT_TRADEABLE = "不可交易";

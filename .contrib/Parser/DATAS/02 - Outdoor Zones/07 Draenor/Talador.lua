@@ -1,5 +1,5 @@
 ---------------------------------------------------
---          Z O N E S        M O D U L E         --
+--         Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
 local COMMON_TREASURE_SYM = {{"select","itemID",
@@ -133,11 +133,10 @@ root(ROOTS.Zones, {
 						452,	-- Red-Tailed Chipmunk (PET!)
 						1587,	-- Royal Moth (PET!)
 						560,	-- Sea Gull (PET!)
-						568,	-- Silkbead Snail (PET!)
 						1593,	-- Waterfly (PET!)
 					}},
 					["groups"] = {
-						pet(1572),	--  Brilliant Bloodfeather (PET!)
+						pet(1572),	-- Brilliant Bloodfeather (PET!)
 						pet(1589, {	-- Crimsonwing Moth (PET!)
 							["description"] = "Only one is up at a time.  Once captured or killed, it immediately respawns.",
 							["coords"] = {
@@ -177,13 +176,16 @@ root(ROOTS.Zones, {
 								{ 75.0, 17.8, TALADOR },
 							},
 						}),
-						pet(1595),	--  Flat-Tooth Calf (PET!)
-						pet(1583, {	--  Kelp Scuttler (PET!)
+						pet(1595),	-- Flat-Tooth Calf (PET!)
+						pet(1583, {	-- Kelp Scuttler (PET!)
 							["description"] = "Found on the Orunai Coast, Talador; Tideskorn Harbor, Stormheim; and around Nar'Thalas Academy, Azsuna."
 						}),
-						pet(1441),	--  Mud Jumper (PET!)
-						pet(1599, {	--  Shadow Sporebat (PET!)
+						pet(1441),	-- Mud Jumper (PET!)
+						pet(1599, {	-- Shadow Sporebat (PET!)
 							["description"] = "Found only in Zangarra.",
+						}),
+						pet(568, {	-- Silkbead Snail (PET!)
+							["coord"] = { 83.7, 29.2, TALADOR },
 						}),
 					},
 				})),

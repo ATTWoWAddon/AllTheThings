@@ -46,26 +46,25 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				battlepets({
-					["sym"] = {{"select","speciesID",
-						747,	-- Effervescent Glowfly (PET!)
-					}},
-					["groups"] = {
-						pet(724),	-- Alpine Foxling (PET!)
-						pet(725),	-- Alpine Foxling Kit (PET!)
-						pet(1166, {	-- Kun-Lai Runt (PET!)
-							["description"] = "This is a very good pet in PvE, but is breed-dependent. You may want to capture multiple breeds.",
-							["timeline"] = { ADDED_5_1_0 },
-						}),
-						pet(726),	-- Plains Monitor (PET!)
-						pet(727),	-- Prairie Mouse (PET!)
-						pet(679),	-- Summit Kid (PET!)
-						pet(728, {	-- Szechuan Chicken (PET!)
-							['description'] = "Can sometimes be easier to find as a secondary pet. Can accompany almost any other pet in Kun-Lai.",
-						}),
-						pet(729),	-- Tolai Hare (PET!)
-						pet(730),	-- Tolai Hare Pup (PET!)
-						pet(731),	-- Zooey Snake (PET)
-					},
+					pet(724),	-- Alpine Foxling (PET!)
+					pet(725),	-- Alpine Foxling Kit (PET!)
+					pet(747, {	-- Effervescent Glowfly (PET!)
+						["coord"] = { 55.0, 89.2, KUN_LAI_SUMMIT },
+					}),
+					pet(1166, {	-- Kun-Lai Runt (PET!)
+						["description"] = "This is a very good pet in PvE, but is breed-dependent. You may want to capture multiple breeds.",
+						["timeline"] = { ADDED_5_1_0 },
+					}),
+					pet(726),	-- Plains Monitor (PET!)
+					pet(727),	-- Prairie Mouse (PET!)
+					pet(679),	-- Summit Kid (PET!)
+					pet(728, {	-- Szechuan Chicken (PET!)
+						["description"] = "Can sometimes be easier to find as a secondary pet. Can accompany almost any other pet in Kun-Lai.",
+						["coord"] = { 60.0, 86.6, KUN_LAI_SUMMIT },
+					}),
+					pet(729),	-- Tolai Hare (PET!)
+					pet(730),	-- Tolai Hare Pup (PET!)
+					pet(731),	-- Zooey Snake (PET)
 				}),
 				explorationHeader({
 					exploration(6076),	-- Auburn Bluffs
@@ -1977,7 +1976,7 @@ root(ROOTS.Zones, {
 							i(86573),	-- Shard of Archstone (TOY!)
 						},
 					}),
-					n(66933, {	-- Kishak
+					n(66933, {	-- Kishak <Son of Kril'mandar>
 						["coords"] = {
 							{ 45.60, 19.61, KUN_LAI_SUMMIT },
 							{ 42.58, 22.98, KUN_LAI_SUMMIT },
@@ -1985,10 +1984,7 @@ root(ROOTS.Zones, {
 							{ 49.38, 18.54, KUN_LAI_SUMMIT },
 						},
 						["groups"] = {
-							i(90168, {	-- Kishak's Clamshell
-								i(90172),	-- Clamshell Band
-								i(90087),	-- Lobstmourne
-							}),
+							i(90168),	-- Kishak's Clamshell
 						},
 					}),
 					n(50332, {	-- Korda Torros
@@ -2041,40 +2037,6 @@ root(ROOTS.Zones, {
 						},
 						["groups"] = {
 							i(86581),	-- Farwater Conch (TOY!)
-						},
-					}),
-					n(69841, {	-- Zandalari Warbringer (Amber)
-						["coords"] = {
-							{ 47.42, 61.54, DREAD_WASTES },
-							{ 75.11, 67.47, KUN_LAI_SUMMIT },
-							{ 52.56, 18.85, THE_JADE_FOREST },
-							{ 36.58, 85.67, TOWNLONG_STEPPES },
-						},
-						["groups"] = {
-							i(94230),	-- Amber Primordial Direhorn (MOUNT!)
-						},
-					}),
-					n(69842, {	-- Zandalari Warbringer (Jade)
-						["coords"] = {
-							{ 47.42, 61.54, DREAD_WASTES },
-							{ 75.11, 67.47, KUN_LAI_SUMMIT },
-							{ 52.56, 18.85, THE_JADE_FOREST },
-							{ 36.58, 85.67, TOWNLONG_STEPPES },
-						},
-						["groups"] = {
-							i(94231),	-- Jade Primordial Direhorn (MOUNT!)
-						},
-					}),
-					n(69769, {	-- Zandalari Warbringer (Slate)
-						["coords"] = {
-							{ 47.42, 61.54, DREAD_WASTES },
-							{ 39.83, 65.92, KRASARANG_WILDS },
-							{ 75.11, 67.47, KUN_LAI_SUMMIT },
-							{ 52.56, 18.85, THE_JADE_FOREST },
-							{ 36.58, 85.67, TOWNLONG_STEPPES },
-						},
-						["groups"] = {
-							i(94229),	-- Slate Primordial Direhorn (MOUNT!)
 						},
 					}),
 				}),

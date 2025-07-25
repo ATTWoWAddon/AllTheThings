@@ -410,7 +410,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_LAND
 			i(94268, {["timeline"] = {ADDED_5_2_0}}),	-- Haunted Steel Headguard
 			i(94265, {["timeline"] = {ADDED_5_2_0}}),	-- Haunted Steel Treads
 			i(94267, {["timeline"] = {ADDED_5_2_0}}),	-- Haunted Steel Warboots
-			i(82916),	-- Lightsteel Bracers
+			i(82916, {["timeline"] = {CREATED_5_0_4, ADDED_7_3_5, REMOVED_10_0_2}}),	-- Lightsteel Bracers
 			i(82977),	-- Living Steel Breastplate
 			i(82978),	-- Living Steel Gauntlets
 			i(87402),	-- Ornate Battleplate of the Master
@@ -424,12 +424,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_LAND
 			i(82920),	-- Masterwork Spiritguard Shoulders
 			i(98606, {["timeline"] = {ADDED_5_4_0}}),	-- Protector's Trillium Legguards
 			i(98615, {["timeline"] = {ADDED_5_4_0}}),	-- Protector's Trillium Waistguard
-			i(82900),	-- Spiritguard Bracers
+			i(82900, {["timeline"] = {CREATED_5_0_4, ADDED_7_3_5, REMOVED_10_0_2}}),	-- Spiritguard Bracers
 			i(87405),	-- Unyielding Bloodplate
 		}),
 		filter(MISC, {
 			i(98717, {["timeline"] = {ADDED_5_4_0}}),	-- Balanced Trillium Ingot
-			i(80431, {["timeline"] = {REMOVED_10_0_2}}),	-- Folded Ghost Iron
+			i(80431, {["timeline"] = {CREATED_5_0_4, ADDED_7_3_5, REMOVED_10_0_2}}),	-- Folded Ghost Iron
 			i(86599),	-- Ghost Iron Shield Spike
 			i(82960),	-- Ghostly Skeleton Key
 			i(94111, {["timeline"] = {ADDED_5_2_0}}),	-- Lightning Steel Ingot

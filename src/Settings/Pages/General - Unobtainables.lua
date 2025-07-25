@@ -42,6 +42,7 @@ local AvailabilityConditions = {
 	3,	-- Real Money
 	9,	-- Black Market AH
 	10,	-- Trading Card Game
+	11,	-- Trading Post
 	0,	-- Blank Space
 	38,	-- Ordos
 	4,	-- PvP Elite / Gladiator

@@ -9,8 +9,6 @@ root(ROOTS.Zones, {
 				["sym"] = {{"select","speciesID",
 					487,	-- Alpine Chipmunk (PET!)
 					407,	-- Forest Spiderling (PET!)
-					569,	-- Garden Frog (PET!)
-					1744,	-- Mist Fox Kit (PET!)
 					391,	-- Mountain Cottontail (PET!)
 					1441,	-- Mud Jumper (PET!)
 					378,	-- Rabbit (PET!)
@@ -34,10 +32,16 @@ root(ROOTS.Zones, {
 					pet(1731, {	-- Felspider (PET!)
 						["description"] = "Found in the Blind Marshlands and in Faronaar (in a small area under the 'F' on the map.)",
 					}),
+					pet(569, {	-- Garden Frog (PET!)
+						["coord"] = { 43.0, 59.8, HIGHMOUNTAIN },
+					}),
 					pet(1762, {	-- Hog-Nosed Bat (PET!)
 						["coord"] = { 50.8, 33.6, HIGHMOUNTAIN },
 					}),
 					pet(1713),	-- Long-Eared Owl (PET!)
+					pet(1744, {	-- Mist Fox Kit (PET!)
+						["coord"] = { 47.8, 30.6, HIGHMOUNTAIN },
+					}),
 					pet(1776, {	-- Mudshell Conch (PET!)
 						["description"] = "Found on the northern coastline of Highmountain.",
 					}),

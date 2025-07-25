@@ -1312,6 +1312,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 70.6, 30.8, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 					["races"] = { PANDAREN_HORDE },
+					["maps"] = { 503 },	-- Brawl'gar Arena
 				}),
 				-- #if ANYCLASSIC
 				q(5652, {	-- Hex of Weakness [Orgrimmar]

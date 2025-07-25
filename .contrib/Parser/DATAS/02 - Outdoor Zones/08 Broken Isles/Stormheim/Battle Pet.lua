@@ -9,7 +9,6 @@ root(ROOTS.Zones, {
 				["sym"] = {{"select","speciesID",
 					1708,	-- Albatross Chick (PET!)
 					1743,	-- Black-Footed Fox Kit (PET!)
-					380,	-- Bucktooth Flapper (PET!)
 					647,	-- Grizzly Squirrel (PET!)
 					550,	-- Highlands Mouse (PET!)
 					645,	-- Highlands Turkey (PET!)
@@ -18,17 +17,19 @@ root(ROOTS.Zones, {
 					1713,	-- Long-Eared Owl (PET!)
 					633,	-- Mountain Skunk (PET!)
 					1441,	-- Mud Jumper (PET!)
-					743,	-- Rapan Whelk (PET!)
 				}},
 				["groups"] = {
+					pet(380, {	-- Bucktooth Flapper (PET!)
+						["coord"] = { 35.8, 52.2, STORMHEIM },
+					}),
 					pet(1712, {	-- Golden Eaglet (PET!)
 						["description"] = "Found in yellow areas on the map in Stormheim.",
 					}),
 					pet(1744, {	-- Mist Fox Kit (PET!)
-						["coords"] = {
-							{ 47.8, 30.6, HIGHMOUNTAIN },
-							{ 43.2, 21.2, STORMHEIM },
-						},
+						["coord"] = { 43.2, 21.2, STORMHEIM },
+					}),
+					pet(743, {	-- Rapana Whelk (PET!)
+						["coord"] = { 56.8, 45.5, STORMHEIM },
 					}),
 					pet(1749, {	-- Rose Taipan (PET!)
 						["description"] = "Found in yellow areas on the map in Stormheim.",

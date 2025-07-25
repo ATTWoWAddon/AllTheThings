@@ -23,20 +23,24 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				battlepets({
-					["sym"] = {{"select","speciesID",
-						708,	-- Malayan Quillrat (PET!)
-						711,	-- Sifang Otter (PET!)
-					}},
-					["groups"] = {
-						pet(716),	-- Amethyst Spiderling (PET!)
-						pet(714),	-- Feverbite Hatchling (PET!)
-						pet(678),	-- Jungle Grub (PET!)
-						pet(718),	-- Luyu Moth (PET!)
-						pet(722),	-- Mei Li Sparkler (PET!)
-						pet(717),	-- Savory Beetle (PET!)
-						pet(712),	-- Sifang Otter Pup (PET!)
-						pet(723),	-- Spiny Terrapin (PET!)
-					},
+					pet(716),	-- Amethyst Spiderling (PET!)
+					pet(714, {	-- Feverbite Hatchling (PET!)
+						["coord"] = { 18.0, 43.8, KRASARANG_WILDS },
+					}),
+					pet(678),	-- Jungle Grub (PET!)
+					pet(718),	-- Luyu Moth (PET!)
+					pet(708),	-- Malayan Quillrat (PET!)
+					pet(722, {	-- Mei Li Sparkler (PET!)
+						["coord"] = { 37.6, 44.0, KRASARANG_WILDS },
+					}),
+					pet(717),	-- Savory Beetle (PET!)
+					pet(711, {	-- Sifang Otter (PET!)
+						["coord"] = { 86.4, 10.4, KRASARANG_WILDS },
+					}),
+					pet(712, {	-- Sifang Otter Pup (PET!)
+						["coord"] = { 85.8, 16.6, KRASARANG_WILDS },
+					}),
+					pet(723),	-- Spiny Terrapin (PET!)
 				}),
 				explorationHeader({
 					visit_exploration(6160,{coord={31.9,70.6,KRASARANG_WILDS}}),	-- Angkhal Pavilion
@@ -2905,8 +2909,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(66936, {	-- Clawlord Kril'mandar <The Pinch King>
+						["provider"] = { "i", 90172, 1 },	-- Clamshell Band
 						["description"] = "Summoned with Clamshell Band, which is created by items dropping from makrura along the coast of Pandaria. Akkalou and Akkalar can be found in The Jade Forest, Damlak in Krasarang Wilds, Kishak in Kun-Lai Summit, Odd'nirok in Townlong Steppes and Clamstok in the Dread Wastes.",
 						["coord"] = { 12.6, 82, KRASARANG_WILDS },
+						["cost"] = {
+							{ "i", 90170, 1 },	-- Clamstok's Clamshell [Dread Wastes]
+							{ "i", 90169, 1 },	-- Damlak's Clamshell [Krasarang Wilds]
+							{ "i", 90168, 1 },	-- Kishak's Clamshell [Kun-Lai Summit]
+							{ "i", 90167, 1 },	-- Akkalar's Clamshell [The Jade Forest]
+							{ "i", 90166, 1 },	-- Akkalou's Clamshell [The Jade Forest]
+							{ "i", 90171, 1 },	-- Odd'nirok's Clamshell [Townlong Steppes]
+						},
 						["g"] = {
 							i(90087),	-- Lobstmourne
 						},
@@ -2917,16 +2930,13 @@ root(ROOTS.Zones, {
 							i(90721),	-- Cournith Waterstrider's Silken Finery
 						},
 					}),
-					n(66934, {	-- Damlak
+					n(66934, {	-- Damlak <Servant of Kril'mandar>
 						["coords"] = {
 							{ 40.0, 88.6, KRASARANG_WILDS },
 							{ 38.8, 87.4, KRASARANG_WILDS },
 						},
 						["g"] = {
-							i(90169, {	-- Damlak's Clamshell
-								i(90172),	-- Clamshell Band
-								i(90087),	-- Lobstmourne
-							}),
+							i(90169),	-- Damlak's Clamshell
 						},
 					}),
 					n(50331, {	-- Go-Kan
@@ -2988,18 +2998,6 @@ root(ROOTS.Zones, {
 						},
 						["g"] = {
 							i(90718),	-- Torik-Ethis' Bloodied Legguards
-						},
-					}),
-					n(69769, {	-- Zandalari Warbringer (Slate)
-						["coords"] = {
-							{ 47.42, 61.54, DREAD_WASTES },
-							{ 39.83, 65.92, KRASARANG_WILDS },
-							{ 75.11, 67.47, KUN_LAI_SUMMIT },
-							{ 52.56, 18.85, THE_JADE_FOREST },
-							{ 36.58, 85.67, TOWNLONG_STEPPES },
-						},
-						["g"] = {
-							i(94229),	-- Slate Primordial Direhorn (MOUNT!)
 						},
 					}),
 				}),

@@ -647,8 +647,9 @@ HeaderAssignments = {
 	["Year 2026"] = -339,
 	["Year 2027"] = -340,
 	["Zalazane's Fall"] = -485,
+	["Zandalari Incursions"] = -652,
 	["Zone Drops"] = -63,
 	["Zone Rewards"] = -64,
 	["Zskera Vaults"] = -403,
 };
-NextHeaderID = -652;
+NextHeaderID = -653;

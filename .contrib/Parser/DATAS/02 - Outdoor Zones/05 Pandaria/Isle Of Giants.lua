@@ -20,14 +20,23 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(RARES, {
-					n(70096, {	-- War-God Dokah
+					n(70096, {	-- War-God Dokah <Ward of Beasts>
 						["coords"] = {
 							{ 77.6, 82.6, ISLE_OF_GIANTS },
 							{ 78.6, 80.6, ISLE_OF_GIANTS },
 							{ 76.4, 83.8, ISLE_OF_GIANTS },
 						},
-						["g"] = {
-							i(94158),	-- Big Bag of Zandalari Supplies
+						["groups"] = {
+							i(94158, {	-- Big Bag of Zandalari Supplies
+								["description"] = "Can contain all sorts of crafting reagents, gems, and BOE epics normally found on rares in Pandaria.",
+								["sym"] = {{"select","itemID",87218},{"pop"}},	-- Big Bag of Arms
+							}),
+							i(94159, {	-- Small Bag of Zandalari Supplies
+								["description"] = "Can contain all sorts of herbs, ore, and cloth.",
+							}),
+							i(94225),	-- Stolen Celestial Insignia
+							i(94227),	-- Stolen Golden Lotus Insignia
+							i(94226),	-- Stolen Klaxxi Insignia
 						},
 					}),
 				}),

@@ -7,20 +7,18 @@ root(ROOTS.Zones, {
 		m(AZSUNA, {
 			petbattle(filter(BATTLE_PETS, {
 				["sym"] = {{"select","speciesID",
-					706,	-- Bandicoon (PET!)
 					396,	-- Dusk Spidering (PET!)
 					1731,	-- Felspider (PET!)
 					478,	-- Forest Moth (PET!)
 					464,	-- Grey Moth (PET!)
 					647,	-- Grizzly Squirrel (PET!)
-					699,	-- Jumping Spider (PET!)
 					1583,	-- Kelp Scuttler (PET!)
-					743,	-- Rapana Whelk (PET!)
 					1587,	-- Royal Moth (PET!)
 					1736,	-- Slithering Brownscale (PET!)
 				}},
 				["groups"] = {
 					pet(1708),	-- Albatross Chick (PET!)
+					pet(706),	-- Bandicoon (PET!)
 					pet(1914),	-- Coastal Sandpiper (PET!)
 					pet(1774, {	-- Eldritch Manafiend (PET!)
 						["description"] = "This pet can only spawn during the night between 6:30pm to 6:30am PST(US)/CEST(EU)/AEST(OCE).",
@@ -34,6 +32,9 @@ root(ROOTS.Zones, {
 					pet(1710, {	-- Fledgling Oliveback (PET!)
 						["coord"] = { 44.4, 23.6, AZSUNA },
 					}),
+					pet(699, {	-- Jumping Spider (PET!)
+						["coord"] = { 48.4, 22.8, AZSUNA },
+					}),
 					pet(1728, {	-- Juvenile Scuttleback (PET!)
 						["coords"] = {
 							{ 61.8, 61.6, AZSUNA },
@@ -42,6 +43,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					pet(1729),	-- Olivetail Hare (PET!)
+					pet(743, {	-- Rapana Whelk (PET!)
+						["coords"] = {
+							{ 45.0, 56.2, AZSUNA },
+							{ 50.2, 49.2, AZSUNA },
+							{ 57.0, 59.0, AZSUNA },
+						},
+					}),
 					pet(1935, {	-- Squirky (PET!)
 						["description"] = "Found at the given coord on Seabreak Isle.",
 						["coord"] = { 20.0, 21.8, AZSUNA },

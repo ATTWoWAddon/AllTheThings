@@ -1027,7 +1027,7 @@ local i = function(itemID, speciesID, altSpeciesID)
 end
 local n = function(creatureID, speciesID)
 	if creatureID < 1 then return end
-	local pet = { ["speciesID"] = speciesID, ["cr"] = creatureID, ["ignoreBonus"] = true };
+	local pet = { ["speciesID"] = speciesID, ["npcID"] = creatureID, ["ignoreBonus"] = true };
 	Pets[creatureID] = pet;
 	return pet;
 end

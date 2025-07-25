@@ -2727,7 +2727,7 @@ function app:GetDataCache()
 
 	-- Trading Post
 	if app.Categories.TradingPost then
-		db = app.CreateRawText(L.TRADING_POST);	-- Probably some global string Later
+		db = app.CreateRawText(TRANSMOG_SOURCE_7);
 		db.g = app.Categories.TradingPost;
 		db.icon = app.asset("Category_TradingPost");
 		tinsert(g, db);

@@ -472,7 +472,7 @@ L.NO_ENTRIES_DESC = "If you believe this was in error, try activating 'Debug Mod
 L.NO_LINKED_ACCOUNTS = "No linked accounts found.";
 L.NO_SEARCH_METHOD = "No search method specified.";
 L.NOT_AVAILABLE_IN_PL = "Not available in Personal Loot.";
-L.NOT_COLLECTED = "|cffff9333Not Collected|r";
+L.NOT_COLLECTED = "|T" .. _.asset("unknown") .. ":0|t |cffff9333Not Collected|r";
 L.NOT_COLLECTED_ICON = "|T" .. _.asset("unknown") .. ":0|t";
 L.NOT_DISPLAY_IN_COMBAT_NPCS_CHECKBOX = "Except NPCs";
 L.NOT_DISPLAY_IN_COMBAT_NPCS_CHECKBOX_TOOLTIP = "Enable this option to ignore rendering NPC tooltips while in combat.";
@@ -1575,8 +1575,9 @@ localize(L.HEADER_NAMES, {
 	[-649] = "Wave 6 Boss",
 	[-650] = "Wave 12 Boss",
 	[-651] = "Final Wave Boss",
-	[-652] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
-	[-653] = "|cFFFFFFFFStep 1:|r Conspicious Note",
+	[-652] = "Zandalari Incursions",
+	[-653] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
+	[-654] = "|cFFFFFFFFStep 1:|r Conspicious Note",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -1674,6 +1675,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-565] = "Hello, fight fans. The world's meanest villains are teamed up and back for revenge! Meet in Stormwind, Orgrimmar or Dornogal to fight against villainous bosses from Azeroth's past.",
 	[-591] = "The festival is held only on Sunday night from 9 PM to 11 PM (PST(US)/CEST(EU)/AEST(OCE). During the festival, floating lanterns appear on the surface of the water and Pandaren NPCs wander onto the beach to set up bonfires and shoot off fireworks. Shortly after, the Wanderer's Festival Hatchlings appear.",
 	[-592] = "This is a yearly recurring event that occurs between the beginning of November and the end of the year.",
+	[-652] = "The Zandalari Incursions into the main land of Pandaria began with the release of the Isle of Thunder. Warbringers can be found all around the continent with varying degrees of challenging solo mechanics and available mounts! Farm these with friends.",
 });
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -2232,6 +2234,7 @@ localize(L.HEADER_ICONS, {
 	[-649] = 135442,
 	[-650] = 236271,
 	[-651] = 135771,
+	[-652] = 838687,
 });
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -6583,6 +6586,7 @@ local ObjectNames = {
 	[210238] = "Serpent Egg",
 	[210239] = "Serpent Egg",
 	[210240] = "Serpent Egg",
+	[210277] = "Slitherscale Weapons",
 	[210416] = "Mogu Artifact",
 	[210417] = "Mogu Artifact",
 	[210418] = "Mogu Artifact",
@@ -6758,10 +6762,20 @@ local ObjectNames = {
 	[214825] = "Ancient Mogu Chest",
 	[214826] = "Ancient Mogu Chest",
 	[214827] = "Ancient Mogu Chest",
+	[214843] = "Serpent's Scale",
+	[214844] = "Serpent's Scale",
+	[214845] = "Oona Brew Mug",
+	[214862] = "Hatchling Poop",
+	[214863] = "Hatchling Poop",
+	[214865] = "Stolen Boots",
+	[214866] = "Stolen Boots",
+	[214867] = "Stolen Boots",
+	[214868] = "Stolen Boots",
 	[214871] = "Shattered Destroyer",
 	[214903] = "The Tan-Chao",
 	[214945] = "Onyx Egg",
 	[214962] = "Requisitioned Firework Launcher",
+	[214986] = "Stolen Sri-La Keg",
 	[215705] = "Tillers Shrine",
 	[215765] = "Waiting for the Turtle",
 	[215779] = "Watersmithing",
@@ -13868,6 +13882,7 @@ local ObjectModels = {
 	[210238] = 623767,
 	[210239] = 623814,
 	[210240] = 623817,
+	[210277] = 192631,
 	[210416] = 536480,
 	[210417] = 605542,
 	[210418] = 604719,
@@ -14039,10 +14054,20 @@ local ObjectModels = {
 	[214825] = 629720,
 	[214826] = 629720,
 	[214827] = 629720,
+	[214843] = 367306,
+	[214844] = 367356,
+	[214845] = 309567,
+	[214862] = 304609,
+	[214863] = 304609,
+	[214865] = 199363,
+	[214866] = 199364,
+	[214867] = 199365,
+	[214868] = 198140,
 	[214871] = 589967,
 	[214903] = 528748,
 	[214945] = 623765,
 	[214962] = 536486,
+	[214986] = 531043,
 	[215705] = 525041,
 	[215765] = 534984,
 	[215779] = 534984,
@@ -17953,6 +17978,7 @@ _.PhaseConstants = {
 	REAL_MONEY = 3,
 	REMOVED_FROM_GAME = 2,
 	TCG = 10,
+	TRADING_POST = 11,
 	UNLEARNABLE = 5,
 };
 local phases = {
@@ -17996,6 +18022,11 @@ local phases = {
 	[10] = {
 		name = "Trading Card Game [TCG]",
 		description = "|cFFAAFFAAOriginally obtained via a TCG card that is no longer in print, but may still be available via the Black Market, In-Game, or Real Life Auction House.|r",
+		state = 3,
+	},
+	[11] = {
+		name = TRANSMOG_SOURCE_7,
+		description = "|cFFAAFFAAThis item is available in the Trading Post.|r",
 		state = 3,
 	},
 	[38] = {
@@ -20683,7 +20714,7 @@ L.QUEST_NAMES = {
 	[50185] = "Green Crystal Monocle",
 	[50250] = "Posthaste",
 	[50384] = "Doug Test - Completable Quest4",
-	[52819] = _.L.HEADER_NAMES[-653],
+	[52819] = _.L.HEADER_NAMES[-654],
 	[52917] = "Grimmy Dialogue",
 	[53417] = "Lost Spawn of Krag'wa (The Shattered River)",
 	[53418] = "Lost Spawn of Krag'wa (Razorjaw River)",
@@ -21864,7 +21895,7 @@ L.NO_ENTRIES_DESC = "Wenn Sie glauben, dass dies ein Fehler war, versuchen Sie d
 L.NO_LINKED_ACCOUNTS = "Keine verknüpften Accounts gefunden.";
 L.NO_SEARCH_METHOD = "Keine Suchmethode festgelegt.";
 L.NOT_AVAILABLE_IN_PL = "Nicht vorhanden im Persönlicher Beute Modus.";
-L.NOT_COLLECTED = "|cffff9333Nicht gesammelt|r";
+L.NOT_COLLECTED = "|T" .. _.asset("unknown") .. ":0|t |cffff9333Nicht gesammelt|r";
 L.NOT_TRADEABLE = "Nicht Handelbar";
 L.NOTHING_TO_SELECT_FROM = "Es wurde nichts für die zufällige Auswahl gefunden. Wenn 'Ad-Hoc Updates' in den Einstellungen aktiviert ist, muss die Hauptliste zuerst aktualisiert werden, (/att) bevor Ihr dieses Fenster benutzt.";
 L.OPEN_AUTOMATICALLY = "Automatisch öffnen";
@@ -22161,8 +22192,8 @@ localize(L.HEADER_NAMES, {
 	[-590] = "Tanz der tausend Boote",
 	[-591] = "Wanderfest",
 	[-592] = "Geburtstag von WoW",
-	[-652] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
-	[-653] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
+	[-653] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
+	[-654] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -23981,6 +24012,7 @@ localize(ObjectNames, {
 	[210238] = "Schlangenei",
 	[210239] = "Schlangenei",
 	[210240] = "Schlangenei",
+	[210277] = "Schlängelschuppenwaffen",
 	[210416] = "Moguartefakt",
 	[210417] = "Moguartefakt",
 	[210418] = "Moguartefakt",
@@ -24152,10 +24184,20 @@ localize(ObjectNames, {
 	[214825] = "Uralte Mogutruhe",
 	[214826] = "Uralte Mogutruhe",
 	[214827] = "Uralte Mogutruhe",
+	[214843] = "Schlangenschuppe",
+	[214844] = "Schlangenschuppe",
+	[214845] = "Uunabierkrug",
+	[214862] = "Häufchen eines Jungtiers",
+	[214863] = "Häufchen eines Jungtiers",
+	[214865] = "Gestohlene Stiefel",
+	[214866] = "Gestohlene Stiefel",
+	[214867] = "Gestohlene Stiefel",
+	[214868] = "Gestohlene Stiefel",
 	[214871] = "Zerschmetterter Zerstörer",
 	[214903] = "Der Tan-Chao",
 	[214945] = "Onyxei",
 	[214962] = "Requirierter Raketenzünder",
+	[214986] = "Gestohlenes Fass aus Sri-La",
 	[215705] = "Schrein der Ackerbauern",
 	[215765] = "Warten auf die Schildkröte",
 	[215779] = "Wasserschmieden",
@@ -28092,7 +28134,7 @@ L.NO_ENTRIES_DESC = "Si vous pensez qu’il s’agit d’une erreur, essayez d�
 L.NO_LINKED_ACCOUNTS = "Aucun compte lié n’a été trouvé.";
 L.NO_SEARCH_METHOD = "Aucune méthode de recherche n’est spécifiée.";
 L.NOT_AVAILABLE_IN_PL = "Non disponible pour le butin personnel.";
-L.NOT_COLLECTED = "|cffff9333Pas Collecté|r";
+L.NOT_COLLECTED = "|T" .. _.asset("unknown") .. ":0|t |cffff9333Pas Collecté|r";
 L.NOT_TRADEABLE = "Non échangeable";
 L.OPEN_AUTOMATICALLY = "Ouvrir automatiquement";
 L.OPEN_AUTOMATICALLY_DESC = "Si vous n’êtes pas un développeur de chez Blizzard, il peut être judicieux de décocher cela. Ceci a été fait pour forcer Blizzard à corriger et / ou reconnaître ces bugs.";
@@ -28417,8 +28459,8 @@ localize(L.HEADER_NAMES, {
 	[-590] = "Embarquement pour les Mille pointes",
 	[-591] = "Festival de l’explorateur",
 	[-592] = "Anniversaire de WoW",
-	[-652] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
-	[-653] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
+	[-653] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
+	[-654] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -30252,6 +30294,7 @@ localize(ObjectNames, {
 	[210238] = "Œuf de serpent",
 	[210239] = "Œuf de serpent",
 	[210240] = "Œuf de serpent",
+	[210277] = "Armes ondulécailles",
 	[210416] = "Artéfact mogu",
 	[210417] = "Artéfact mogu",
 	[210418] = "Artéfact mogu",
@@ -30423,10 +30466,20 @@ localize(ObjectNames, {
 	[214825] = "Coffre mogu ancien",
 	[214826] = "Coffre mogu ancien",
 	[214827] = "Coffre mogu ancien",
+	[214843] = "Ecaille du serpent",
+	[214844] = "Ecaille du serpent",
+	[214845] = "Chope de bière d’Ouna",
+	[214862] = "Caca de jeune",
+	[214863] = "Caca de jeune",
+	[214865] = "Bottes volées",
+	[214866] = "Bottes volées",
+	[214867] = "Bottes volées",
+	[214868] = "Bottes volées",
 	[214871] = "Destructeur brisé",
 	[214903] = "Le tan-chao",
 	[214945] = "Œuf d’onyx",
 	[214962] = "Lanceur de feux d’artifice réquisitionné",
+	[214986] = "Tonneau de Sri-La volé",
 	[215705] = "Autel des Laboureurs",
 	[215765] = "En attendant la tortue",
 	[215779] = "Forge-l’eau",
@@ -34281,8 +34334,8 @@ localize(L.HEADER_NAMES, {
 	[-590] = "Mille Barche",
 	[-591] = "Festa del Nomade",
 	[-592] = "Anniversario di WoW",
-	[-652] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
-	[-653] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
+	[-653] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
+	[-654] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "Ottieni esperienza e reputazione bonus nel corso delle tue avventure ad Azeroth, e trova tesori misteriosi sulle Isole dei Draghi e a Khaz Algar!",
@@ -35885,6 +35938,7 @@ localize(ObjectNames, {
 	[210238] = "Uovo di Serpe",
 	[210239] = "Uovo di Serpe",
 	[210240] = "Uovo di Serpe",
+	[210277] = "Armi degli Scagliaviscida",
 	[210416] = "Manufatto dei Mogu",
 	[210417] = "Manufatto dei Mogu",
 	[210418] = "Manufatto dei Mogu",
@@ -36055,10 +36109,20 @@ localize(ObjectNames, {
 	[214825] = "Antica Cassa dei Mogu",
 	[214826] = "Antica Cassa dei Mogu",
 	[214827] = "Antica Cassa dei Mogu",
+	[214843] = "Scaglia di Serpe",
+	[214844] = "Scaglia di Serpe",
+	[214845] = "Boccale di Birra di Una",
+	[214862] = "Escrementi del Cucciolo",
+	[214863] = "Escrementi del Cucciolo",
+	[214865] = "Stivali Rubati",
+	[214866] = "Stivali Rubati",
+	[214867] = "Stivali Rubati",
+	[214868] = "Stivali Rubati",
 	[214871] = "Distruttore Infranto",
 	[214903] = "Tan-Chao",
 	[214945] = "Uovo d'Onice",
 	[214962] = "Mortaio per Fuochi d'Artificio Requisito",
+	[214986] = "Barile di Sri-La Rubato",
 	[215705] = "Santuario dei Coltivatori",
 	[215765] = "Mokkan dell'Attesa della Tartaruga",
 	[215779] = "Mokkan della Forgiatura Con l'Acqua",
@@ -39709,8 +39773,8 @@ localize(L.HEADER_NAMES, {
 	[-590] = "Barco a Dar Com o Pau",
 	[-591] = "Festival do Andarilho",
 	[-592] = "Aniversário do WoW",
-	[-652] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
-	[-653] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
+	[-653] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
+	[-654] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "Ganhe bônus de experiência e reputação em suas aventuras em Azeroth e ache fortuitos mistérios nas Ilhas do Dragão e em Khaz Algar!",
@@ -41481,6 +41545,7 @@ localize(ObjectNames, {
 	[210238] = "Ovo de Serpente",
 	[210239] = "Ovo de Serpente",
 	[210240] = "Ovo de Serpente",
+	[210277] = "Armas Escama-lisa",
 	[210416] = "Artefato Mogu",
 	[210417] = "Artefato Mogu",
 	[210418] = "Artefato Mogu",
@@ -41652,10 +41717,20 @@ localize(ObjectNames, {
 	[214825] = "Arca Mogu Antiga",
 	[214826] = "Arca Mogu Antiga",
 	[214827] = "Arca Mogu Antiga",
+	[214843] = "Escama da Serpente",
+	[214844] = "Escama da Serpente",
+	[214845] = "Caneca de Cerveja de Uná",
+	[214862] = "Cocozinho",
+	[214863] = "Cocozinho",
+	[214865] = "Botas Roubadas",
+	[214866] = "Botas Roubadas",
+	[214867] = "Botas Roubadas",
+	[214868] = "Botas Roubadas",
 	[214871] = "Destruidor Despedaçado",
 	[214903] = "Tan-Chao",
 	[214945] = "Ovo Ônix",
 	[214962] = "Lançador de Fogos de Artifício Requisitado",
+	[214986] = "Barril de Sri-La Roubado",
 	[215705] = "Templo dos Lavradores",
 	[215765] = "Esperando pela Tartaruga",
 	[215779] = "Forjágua",
@@ -45601,7 +45676,7 @@ L.NO_ENTRIES_DESC = "Если Вы уверены, что это была оши
 L.NO_LINKED_ACCOUNTS = "Прикреплённых аккаунтов не найдено.";
 L.NO_SEARCH_METHOD = "Не выбран метод для поиска.";
 L.NOT_AVAILABLE_IN_PL = "Недоступно в Персональной добыче.";
-L.NOT_COLLECTED = "|cffff9333Не Собрано|r";
+L.NOT_COLLECTED = "|T" .. _.asset("unknown") .. ":0|t |cffff9333Не Собрано|r";
 L.NOTHING_TO_SELECT_FROM = "Не из чего делать случайный выбор. Если включена опция 'Обновлять только видимые окна', то предварительно нужно открыть Основной Список (/att).";
 L.OBJECTIVES = "Цели";
 L.ONLY_RELEVANT_CHECKBOX = "Только Уместные";
@@ -46097,8 +46172,8 @@ localize(L.HEADER_NAMES, {
 	[-590] = "Вечеринка тысячи лодок",
 	[-591] = "Фестиваль странника",
 	[-592] = "Годовщина World of Warcraft",
-	[-652] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
-	[-653] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
+	[-653] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
+	[-654] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Штучки, которые можно получить в награду с разного контента в родительской секции.\nОни собраны здесь, чтобы уменьшить количество источников, когда Штучка доступна из многих мест.",
@@ -47943,6 +48018,7 @@ localize(ObjectNames, {
 	[210238] = "Яйцо облачного змея",
 	[210239] = "Яйцо облачного змея",
 	[210240] = "Яйцо облачного змея",
+	[210277] = "Оружие клана Скользкой Чешуи",
 	[210416] = "Реликвия могу",
 	[210417] = "Реликвия могу",
 	[210418] = "Реликвия могу",
@@ -48114,10 +48190,20 @@ localize(ObjectNames, {
 	[214825] = "Древний сундук могу",
 	[214826] = "Древний сундук могу",
 	[214827] = "Древний сундук могу",
+	[214843] = "\"Змеиная чешуйка\"",
+	[214844] = "\"Змеиная чешуйка\"",
+	[214845] = "Кружка с варевом Уна",
+	[214862] = "Небольшая кучка",
+	[214863] = "Небольшая кучка",
+	[214865] = "Украденные сапоги",
+	[214866] = "Украденные сапоги",
+	[214867] = "Украденные сапоги",
+	[214868] = "Украденные сапоги",
 	[214871] = "Разбитый разрушитель",
 	[214903] = "Тань-Чао",
 	[214945] = "Ониксовое яйцо",
 	[214962] = "Конфискованная установка для фейерверков",
+	[214986] = "Украденная бочка Шри-Ла",
 	[215705] = "Святилище земледельцев",
 	[215765] = "\"В ожидании черепахи\"",
 	[215779] = "\"Водоковка\"",
@@ -52046,8 +52132,8 @@ localize(L.HEADER_NAMES, {
 	[-590] = "버섯구름 뱃놀이 대잔치",
 	[-591] = "유랑객의 축제",
 	[-592] = "월드 오브 워크래프트의 생일",
-	[-652] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
-	[-653] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
+	[-653] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
+	[-654] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "아제로스를 모험하며 추가 경험치와 평판을 획득하고, 용의 섬과 카즈 알가르에서 수수께끼의 보물을 발견해 보십시오!",
@@ -53803,6 +53889,7 @@ localize(ObjectNames, {
 	[210238] = "운룡 알",
 	[210239] = "운룡 알",
 	[210240] = "운룡 알",
+	[210277] = "뱀비늘 무기 선반",
 	[210416] = "모구 유물",
 	[210417] = "모구 유물",
 	[210418] = "모구 유물",
@@ -53972,10 +54059,19 @@ localize(ObjectNames, {
 	[214825] = "고대 모구 궤짝",
 	[214826] = "고대 모구 궤짝",
 	[214827] = "고대 모구 궤짝",
+	[214843] = "운룡의 비늘",
+	[214844] = "운룡의 비늘",
+	[214845] = "우나 맥주잔",
+	[214862] = "새끼 운룡의 응가",
+	[214865] = "도난당한 장화",
+	[214866] = "도난당한 장화",
+	[214867] = "도난당한 장화",
+	[214868] = "도난당한 장화",
 	[214871] = "무너진 파괴자",
 	[214903] = "탄차오",
 	[214945] = "마노 알",
 	[214962] = "징발된 폭죽 발사기",
+	[214986] = "도둑맞은 스리라 맥주통",
 	[215705] = "농사꾼 연합 제단",
 	[215765] = "거북을 기다리며",
 	[215779] = "물대장장이",
@@ -57612,7 +57708,7 @@ L.NO_ENTRIES_DESC = "Si crees que se trata de un error, intenta activar el modo 
 L.NO_LINKED_ACCOUNTS = "No se encontraron cuentas conectadas.";
 L.NO_SEARCH_METHOD = "Método de búsqueda no especificado.";
 L.NOT_AVAILABLE_IN_PL = "No disponible en botín personal.";
-L.NOT_COLLECTED = "|cffff9333No adquirido|r";
+L.NOT_COLLECTED = "|T" .. _.asset("unknown") .. ":0|t |cffff9333No adquirido|r";
 L.NOT_DISPLAY_IN_COMBAT_NPCS_CHECKBOX = "Excepto PNJ";
 L.NOT_DISPLAY_IN_COMBAT_NPCS_CHECKBOX_TOOLTIP = "Habilite esta opción para ignorar la presentación de la información sobre ventanas emergentes de los NPC durante el combate.";
 L.NOT_TRADEABLE = "No comerciable";
@@ -58200,8 +58296,8 @@ localize(L.HEADER_NAMES, {
 	[-590] = "Azote de los Mil Barcos",
 	[-591] = "Festival del Errante",
 	[-592] = "Aniversario de WoW",
-	[-652] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
-	[-653] = "|cFFFFFFFFStep 1:|r Nota llamativa",
+	[-653] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
+	[-654] = "|cFFFFFFFFStep 1:|r Nota llamativa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contiene recompensas que dan al completar el evento.",
@@ -60041,6 +60137,7 @@ localize(ObjectNames, {
 	[210238] = "Huevo de dragón",
 	[210239] = "Huevo de dragón",
 	[210240] = "Huevo de dragón",
+	[210277] = "Armas Reptaescama",
 	[210416] = "Artefacto mogu",
 	[210417] = "Artefacto mogu",
 	[210418] = "Artefacto mogu",
@@ -60212,10 +60309,20 @@ localize(ObjectNames, {
 	[214825] = "Cofre mogu antiguo",
 	[214826] = "Cofre mogu antiguo",
 	[214827] = "Cofre mogu antiguo",
+	[214843] = "Escama de dragón",
+	[214844] = "Escama de dragón",
+	[214845] = "Jarra de cerveza de Oona",
+	[214862] = "Caca de prole",
+	[214863] = "Caca de prole",
+	[214865] = "Botas robadas",
+	[214866] = "Botas robadas",
+	[214867] = "Botas robadas",
+	[214868] = "Botas robadas",
 	[214871] = "Destructor destrozado",
 	[214903] = "El Tan-Chao",
 	[214945] = "Huevo de ónice",
 	[214962] = "Lanzador de fuegos artificiales requisado",
+	[214986] = "Barril de Sri-La robado",
 	[215705] = "Santuario de labradores",
 	[215765] = "Esperando a la tortuga",
 	[215779] = "Herrería acuática",
@@ -63968,7 +64075,7 @@ L.MUSIC_ROLL_ID = "ID de rollo musical";
 L.MUSIC_ROLLS_DESC = "Estos se desbloquean por personaje y actualmente no se comparten entre cuentas. Si alguien de Blizzard está leyendo esto, sería genial que los hicieran accesibles para toda la cuenta.\n\nDebes actualizar manualmente el addon " .. SHIFT_KEY_TEXT .. " click en el encabezado para que esto se detecte.";
 L.MUSIC_ROLLS_DESC_2 = "\n\nPrimero debes desbloquear los Rollos musicales completando la misión Poniendo el ritmo en tu fortaleza para que aparezca este objeto.\n\nSelfies requieren el juguete S.E.L.F.I.E.";
 L.NO_ENTRIES_DESC = "Si cree que se trata de un error, intente activar el modo de debug. Es posible que alguno de sus filtros esté restringiendo la visibilidad del grupo.";
-L.NOT_COLLECTED = "|cffff9333No coleccionado|r";
+L.NOT_COLLECTED = "|T" .. _.asset("unknown") .. ":0|t |cffff9333No coleccionado|r";
 L.NOTHING_TO_SELECT_FROM = "No se encontró nada para seleccionar aleatoriamente. Si las 'actualizaciones Ad-Hoc' están habilitadas en los ajustes, la lista principal se tiene que actualizar (/att) antes de usar esta ventana.";
 L.NPC_ID = "ID de Pnj";
 L.OBJECT_ID = "ID de objeto";
@@ -64125,7 +64232,7 @@ localize(L.HEADER_NAMES, {
 	[-589] = "La gran carrera de Gnomeregan",
 	[-590] = "Fiesta de los mil barcos",
 	[-591] = "Festival del errante",
-	[-653] = "|cFFFFFFFFStep 1:|rNota sospechosa",
+	[-654] = "|cFFFFFFFFStep 1:|rNota sospechosa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-29] = "Contiene cosas que se otorgan como recompensa al completar este evento.",
@@ -64697,7 +64804,7 @@ L.NO_ENTRIES_DESC = "如果认为这是错误的，请尝试激活'调试模式'
 L.NO_LINKED_ACCOUNTS = "未找到链接帐号。";
 L.NO_SEARCH_METHOD = "未指定搜索方法。";
 L.NOT_AVAILABLE_IN_PL = "在个人拾取中不可用。";
-L.NOT_COLLECTED = "|cffff9333未收藏|r";
+L.NOT_COLLECTED = "|T" .. _.asset("unknown") .. ":0|t |cffff9333未收藏|r";
 L.NOT_DISPLAY_IN_COMBAT_NPCS_CHECKBOX = "排除 NPC";
 L.NOT_DISPLAY_IN_COMBAT_NPCS_CHECKBOX_TOOLTIP = "启用此选项可在战斗中忽略显示 NPC 的提示。";
 L.NOT_TRADEABLE = "不可交易";
@@ -65334,8 +65441,8 @@ localize(L.HEADER_NAMES, {
 	[-590] = "赛艇大会",
 	[-591] = "云游节",
 	[-592] = "魔兽世界周年庆典",
-	[-652] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
-	[-653] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
+	[-653] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
+	[-654] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "包含完成事件时奖励的事物。",
@@ -66934,6 +67041,7 @@ localize(ObjectNames, {
 	[210238] = "翔龙蛋",
 	[210239] = "翔龙蛋",
 	[210240] = "翔龙蛋",
+	[210277] = "滑鳞武器架",
 	[210416] = "魔古神器",
 	[210417] = "魔古神器",
 	[210418] = "魔古神器",
@@ -67099,10 +67207,18 @@ localize(ObjectNames, {
 	[214825] = "古代魔古箱子",
 	[214826] = "古代魔古箱子",
 	[214827] = "古代魔古箱子",
+	[214843] = "龙鳞菇",
+	[214844] = "龙鳞菇",
+	[214845] = "乌拿老酒杯",
+	[214865] = "失窃的靴子",
+	[214866] = "失窃的靴子",
+	[214867] = "失窃的靴子",
+	[214868] = "失窃的靴子",
 	[214871] = "破碎毁灭者",
 	[214903] = "接天桥",
 	[214945] = "玛瑙翔龙蛋",
 	[214962] = "征用的焰火发射器",
+	[214986] = "失窃的香里拉酒桶",
 	[215705] = "阡陌客神龛",
 	[215765] = "等待海龟",
 	[215779] = "水锻法",

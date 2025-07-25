@@ -18157,6 +18157,11 @@ local phases = {
 		description = "|cFFAAFFAAOriginally obtained via a TCG card that is no longer in print, but may still be available via the Black Market, In-Game, or Real Life Auction House.|r",
 		state = 3,
 	},
+	[11] = {
+		name = "Trading Post",
+		description = "|cFFAAFFAAOnly available when listed in the Trading Post for the current month.|r",
+		state = 3,
+	},
 	[38] = {
 		name = "Ordos - Legendary Cloak",
 		description = "|cFFFFAAAAOnly available to players that completed the Legendary Cloak quest chain during Mists of Pandaria, obtained the Legendary Cloak Appearance during MoP: Remix or via the BMAH.|r",

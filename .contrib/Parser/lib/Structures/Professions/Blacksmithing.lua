@@ -808,11 +808,11 @@ MOP_BLACKSMITHING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timelin
 		r(122576),	-- Ghost-Forged Helm
 		r(122580),	-- Ghost-Forged Legplates
 		r(122577),	-- Ghost-Forged Shoulders
-		r(122589),	-- Lightsteel Bracers
-		r(122573),	-- Spiritguard Bracers
+		r(122589, {["timeline"] = {CREATED_5_0_4, ADDED_7_3_5, REMOVED_10_0_2}}),	-- Lightsteel Bracers
+		r(122573, {["timeline"] = {CREATED_5_0_4, ADDED_7_3_5, REMOVED_10_0_2}}),	-- Spiritguard Bracers
 	}),
 	filter(MISC, {
-		r(126869, {["timeline"] = {REMOVED_10_0_2}}),	-- Folded Ghost Iron
+		r(126869, {["timeline"] = {CREATED_5_0_4, ADDED_7_3_5, REMOVED_10_0_2}}),	-- Folded Ghost Iron
 		r(122633),	-- Ghostly Skeleton Key
 	}),
 	filter(MISC, sharedData({

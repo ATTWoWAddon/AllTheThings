@@ -7,11 +7,9 @@ root(ROOTS.Zones, {
 			["icon"] = 656543,
 			["groups"] = {
 				battlepets({
-					["sym"] = {{"select","speciesID",
-						706,	-- Bandicoon (PET!)
-						708,	-- Malayan Quillrat (PET!)
-						709,	-- Malayan Quillrat Pup (PET!)
-					}},
+					pet(706),	-- Bandicoon (PET!)
+					pet(708),	-- Malayan Quillrat (PET!)
+					pet(709),	-- Malayan Quillrat Pup (PET!)
 				}),
 				explorationHeader({
 					visit_exploration(6377,{coord={55.7,55.4,THE_VEILED_STAIR}}),	-- Hatescale Burrow

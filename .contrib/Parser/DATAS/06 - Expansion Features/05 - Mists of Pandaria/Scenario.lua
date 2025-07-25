@@ -13,6 +13,7 @@ SCENARIOS = createHeader({
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_1_0 } }, {
 	applyclassicphase(MOP_PHASE_LANDFALL, n(SCENARIOS, {
 		["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
+		["lvl"] = lvlsquish(90, 90, 35),
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(6943),	-- Queuing Spree
@@ -42,6 +43,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						crit(21499, {	-- A Brewing Storm
 							["achievementID"] = 7509,	-- Scenaturday (H)
 							["races"] = HORDE_ONLY,
+						}),
+					}),
+					n(QUESTS, {
+						q(30567, {	-- Blanche's Boomer Brew
+							["qg"] = 59569,	-- Brewmaster Blanche
+							["coord"] = { 38.8, 31.1, THE_JADE_FOREST },
+						}),
+						q(30442, {	-- Blanche's Boomer Brew
+							["qg"] = 59569,	-- Brewmaster Blanche
+							["coord"] = { 38.0, 30.0, THE_JADE_FOREST },
+							["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+							["isDaily"] = true,
 						}),
 					}),
 				},
@@ -234,6 +247,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					crit(21500, {	-- Greenstone Village
 						["achievementID"] = 7509,	-- Scenaturday (H)
 						["races"] = HORDE_ONLY,
+					}),
+				}),
+				n(QUESTS, {
+					q(31613, {	-- Volatile Greenstone Brew
+						["qg"] = 62321,	-- Brewmaster Tzu
+						["coord"] = { 47.4, 37.0, THE_JADE_FOREST },
 					}),
 				}),
 			}),

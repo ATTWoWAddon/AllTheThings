@@ -6,7 +6,7 @@ root(ROOTS.Zones, {
 		m(TOWNLONG_STEPPES, {
 			["lore"] = "Townlong Steppes is relatively small zone located in northwestern Pandaria. The main story that is played out here involves aiding the Shado-Pan on their pursuit against the Sha of Hatred, and aiding them in fending off the Osul yaungol and the aggressive mantid coming from the south.",
 			["icon"] = 618796,
-			["maps"] = { 389 },	-- Niuzao Catacombs
+			["maps"] = { TOWNLONG_STEPPES_NIUZAO_CATACOMBS },
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(7310),	-- Defender of Gods
@@ -60,28 +60,17 @@ root(ROOTS.Zones, {
 					ach(7288),	-- Yak Attack (Niuzao Temple)
 				}),
 				battlepets({
-					["sym"] = {{"select","speciesID",
-						724,	-- Alpine Foxling (PET!)
-						725,	-- Alpine Foxling Kit (PET!)
-						742,	-- Clouded Hedgehog (PET!)
-						745,	-- Crunchy Scorpion (PET!)
-						741,	-- Silent Hedgehog (PET!)
-						729,	-- Tolai Hare (PET!)
-					}},
-					["groups"] = {
-						pet(732, {	-- Amber Moth (PET!)
-							["coords"] = {
-								{ 50.0, 80.2, TOWNLONG_STEPPES },
-								{ 66.8, 80.6, TOWNLONG_STEPPES },
-								{ 55.6, 33.6, DREAD_WASTES },
-							},
-						}),
-						pet(733),	-- Grassland Hopper (PET!)
-						pet(680),	-- Kuitan Mongoose (PET!)
-						pet(737),	-- Mongoose (PET!)
-						pet(739),	-- Mongoose Pup (PET!)
-						pet(740),	-- Yakrat (PET!)
-					},
+					pet(732, {	-- Amber Moth (PET!)
+						["coords"] = {
+							{ 48.8, 78.2, TOWNLONG_STEPPES },
+							{ 66.8, 80.6, TOWNLONG_STEPPES },
+						},
+					}),
+					pet(733),	-- Grassland Hopper (PET!)
+					pet(680),	-- Kuitan Mongoose (PET!)
+					pet(737),	-- Mongoose (PET!)
+					pet(739),	-- Mongoose Pup (PET!)
+					pet(740),	-- Yakrat (PET!)
 				}),
 				explorationHeader({
 					visit_exploration(6342,{coord={59.2,85.9,TOWNLONG_STEPPES}}),	-- Ambermarsh
@@ -1358,7 +1347,8 @@ root(ROOTS.Zones, {
 						},
 					})),
 					n(66900, {	-- Huggalon the Heart Watcher
-						["coord"] = { 37.2, 57.6, TOWNLONG_STEPPES },
+						["coord"] = { 65.6, 23.8, TOWNLONG_STEPPES_NIUZAO_CATACOMBS },
+						["description"] = "Located in the catacombs.",
 						["g"] = {
 							i(90067),	-- B. F. F. Necklace (TOY!)
 						},
@@ -1425,10 +1415,7 @@ root(ROOTS.Zones, {
 					n(66938, {	-- Odd'nirok <Seer of Kril'mandar>
 						["coord"] = { 42.3, 92.67, TOWNLONG_STEPPES },
 						["g"] = {
-							i(90171, {	-- Odd'nirok's Clamshell
-								i(90172),	-- Clamshell Band
-								i(90087),	-- Lobstmourne
-							}),
+							i(90171),	-- Odd'nirok's Clamshell
 						},
 					}),
 					n(50791, {	-- Siltriss the Sharpener
@@ -1447,40 +1434,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 32.0, 61.8, TOWNLONG_STEPPES },
 						["g"] = {
 							i(87224),	-- Big Bag of Wonders
-						},
-					}),
-					n(69841, {	-- Zandalari Warbringer (Amber)
-						["coords"] = {
-							{ 47.42, 61.54, DREAD_WASTES },
-							{ 75.11, 67.47, KUN_LAI_SUMMIT },
-							{ 52.56, 18.85, THE_JADE_FOREST },
-							{ 36.58, 85.67, TOWNLONG_STEPPES },
-						},
-						["g"] = {
-							i(94230),	-- Amber Primordial Direhorn (MOUNT!)
-						},
-					}),
-					n(69842, {	-- Zandalari Warbringer (Jade)
-						["coords"] = {
-							{ 47.42, 61.54, DREAD_WASTES },
-							{ 75.11, 67.47, KUN_LAI_SUMMIT },
-							{ 52.56, 18.85, THE_JADE_FOREST },
-							{ 36.58, 85.67, TOWNLONG_STEPPES },
-						},
-						["g"] = {
-							i(94231),	-- Jade Primordial Direhorn (MOUNT!)
-						},
-					}),
-					n(69769, {	-- Zandalari Warbringer (Slate)
-						["coords"] = {
-							{ 47.42, 61.54, DREAD_WASTES },
-							{ 39.83, 65.92, KRASARANG_WILDS },
-							{ 75.11, 67.47, KUN_LAI_SUMMIT },
-							{ 52.56, 18.85, THE_JADE_FOREST },
-							{ 36.58, 85.67, TOWNLONG_STEPPES },
-						},
-						["g"] = {
-							i(94229),	-- Slate Primordial Direhorn (MOUNT!)
 						},
 					}),
 				}),
@@ -1502,10 +1455,10 @@ root(ROOTS.Zones, {
 					o(213956, {	-- Fragment of Dread
 						["questID"] = 31423,
 						["coords"] = {
-							{ 64.2, 20.3, 389 },	-- Niuzao Catacombs
-							{ 37.7, 87.0, 389 },	-- Niuzao Catacombs
-							{ 47.8, 89.0, 389 },	-- Niuzao Catacombs
-							{ 56.5, 64.7, 389 },	-- Niuzao Catacombs
+							{ 64.2, 20.3, TOWNLONG_STEPPES_NIUZAO_CATACOMBS },
+							{ 37.7, 87.0, TOWNLONG_STEPPES_NIUZAO_CATACOMBS },
+							{ 47.8, 89.0, TOWNLONG_STEPPES_NIUZAO_CATACOMBS },
+							{ 56.5, 64.7, TOWNLONG_STEPPES_NIUZAO_CATACOMBS },
 						},
 						["description"] = "Entrance is at |cFFFFD70032.6 61.8|r. There are 4 possible spawn points.",
 						["g"] = {

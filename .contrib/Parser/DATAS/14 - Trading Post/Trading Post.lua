@@ -17,7 +17,7 @@ FILLED_TRAVELERS_LOG = createHeader({
 	},
 });
 
-root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
+root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TRADING_POST }, {
 	n(ACHIEVEMENTS, {
 		ach(17334, {	-- Trading Post Enthusiast
 			iensemble(203431),	-- Ensemble: Burden of Unrelenting Justice

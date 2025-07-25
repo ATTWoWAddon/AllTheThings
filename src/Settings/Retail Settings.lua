@@ -216,6 +216,11 @@ local TooltipSettingsBase = {
 		["u"] = true,
 	},
 };
+local UnobtainableSettingsBase = {
+	__index = {
+		[11] = true,	-- Trading Post
+	}
+};
 
 local RawSettings;
 local function SetupRawSettings()
@@ -226,6 +231,7 @@ local function SetupRawSettings()
 	setmetatable(RawSettings.General, GeneralSettingsBase)
 	setmetatable(RawSettings.Tooltips, TooltipSettingsBase)
 	setmetatable(RawSettings.Filters, FilterSettingsBase)
+	setmetatable(RawSettings.Unobtainable, UnobtainableSettingsBase)
 end
 settings.Initialize = function(self)
 	-- app.PrintDebug("settings.Initialize")

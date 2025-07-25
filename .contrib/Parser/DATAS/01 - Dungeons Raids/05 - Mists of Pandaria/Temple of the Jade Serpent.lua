@@ -55,7 +55,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 				n(65317, {	-- Xiang <The Two Jugglers>
-					i(87522),	-- Star Carrier Bracers
+					i(87522),	-- Star-Carrier Bracers
 				}),
 				e(335, {	-- Sha of Doubt
 					["crs"] = { 56439 },	-- Sha of Doubt

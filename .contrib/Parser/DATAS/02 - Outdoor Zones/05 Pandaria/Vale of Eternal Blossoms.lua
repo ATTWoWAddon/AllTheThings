@@ -55,13 +55,46 @@ root(ROOTS.Zones, {
 					ach(6847),	-- The Song of the Yaungol (automated)
 				}),
 				battlepets({
-					pet(751),	-- Dancing Water Skimmer (PET!)
-					pet(747),	-- Effervescent Glowfly (PET!)
-					pet(383),	-- Eternal Strider (PET!)
+					pet(751, {	-- Dancing Water Skimmer (PET!)
+						["coords"] = {
+							{ 30.2, 77.6, VALE_OF_ETERNAL_BLOSSOMS },
+							{ 71.2, 40.2, VALE_OF_ETERNAL_BLOSSOMS },
+							{ 76.2, 60.0, VALE_OF_ETERNAL_BLOSSOMS },
+						},
+					}),
+					pet(747, {	-- Effervescent Glowfly (PET!)
+						["coords"] = {
+							{ 23.2, 27.2, VALE_OF_ETERNAL_BLOSSOMS },
+							{ 21.6, 60.8, VALE_OF_ETERNAL_BLOSSOMS },
+							{ 85.0, 48.4, VALE_OF_ETERNAL_BLOSSOMS },
+						},
+					}),
+					pet(383, {	-- Eternal Strider (PET!)
+						["coords"] = {
+							{ 34.0, 78.6, VALE_OF_ETERNAL_BLOSSOMS },
+							{ 72.6, 27.6, VALE_OF_ETERNAL_BLOSSOMS },
+							{ 87.0, 46.2, VALE_OF_ETERNAL_BLOSSOMS },
+						},
+					}),
 					pet(748),	-- Gilded Moth (PET!)
-					pet(749),	-- Golden Civet (PET!)
-					pet(750),	-- Golden Civet Kitten (PET!)
-					pet(752),	-- Yellow-Bellied Bullfrog (PET!)
+					pet(749, {	-- Golden Civet (PET!)
+						["coords"] = {
+							{ 11.2, 70.0, VALE_OF_ETERNAL_BLOSSOMS },
+							{ 48.2, 30.8, VALE_OF_ETERNAL_BLOSSOMS },
+						},
+					}),
+					pet(750, {	-- Golden Civet Kitten (PET!)
+						["coords"] = {
+							{ 11.2, 70.6, VALE_OF_ETERNAL_BLOSSOMS },
+							{ 38.6, 64.8, VALE_OF_ETERNAL_BLOSSOMS },
+						},
+					}),
+					pet(752, {	-- Yellow-Bellied Bullfrog (PET!)
+						["coords"] = {
+							{ 24.6, 30.8, VALE_OF_ETERNAL_BLOSSOMS },
+							{ 69.0, 44.8, VALE_OF_ETERNAL_BLOSSOMS },
+						},
+					}),
 				}),
 				explorationHeader({
 					visit_exploration(6149,{coord={18.8,22.0,VALE_OF_ETERNAL_BLOSSOMS}}),	-- Ancestral Rise

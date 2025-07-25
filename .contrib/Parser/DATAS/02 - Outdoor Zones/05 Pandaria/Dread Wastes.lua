@@ -84,19 +84,22 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				battlepets({
-					["sym"] = {{"select","speciesID",
-						732,	-- Amber Moth (PET!)
-					}},
-					["groups"] = {
-						pet(742),	-- Clouded Hedgehog (PET!)
-						pet(745),	-- Crunchy Scorpion (PET!)
-						pet(746, {	-- Emperor Crab (PET!)
-							["description"] = "Can be found around The Briny Muck.",
-						}),
-						pet(743),	-- Rapana Whelk (PET!)
-						pet(744),	-- Resilient Roach (PET!)
-						pet(741),	-- Silent Hedgehog (PET!)
-					},
+					pet(732, {	-- Amber Moth (PET!)
+						["coords"] = {
+							{ 47.4, 16.8, DREAD_WASTES },
+							{ 55.6, 33.6, DREAD_WASTES },
+						},
+					}),
+					pet(742),	-- Clouded Hedgehog (PET!)
+					pet(745),	-- Crunchy Scorpion (PET!)
+					pet(746, {	-- Emperor Crab (PET!)
+						["coord"] = { 25.5, 65.6, DREAD_WASTES },
+					}),
+					pet(743, {	-- Rapana Whelk (PET!)
+						["coord"] = { 36.6, 63.4, DREAD_WASTES },
+					}),
+					pet(744),	-- Resilient Roach (PET!)
+					pet(741),	-- Silent Hedgehog (PET!)
 				}),
 				explorationHeader({
 					visit_exploration(6446,{coord={29.6,89.6,DREAD_WASTES}}),	-- Amber Quarry
@@ -1602,13 +1605,10 @@ root(ROOTS.Zones, {
 							i(86589),	-- Ai-Li's Skymirror (TOY!)
 						},
 					}),
-					n(66935, {	-- Clamstok
+					n(66935, {	-- Clamstok <Scion of Kril'mandar>
 						["coord"] = { 27.0, 69.2, DREAD_WASTES },
 						["g"] = {
-							i(90170, {	-- Clamstok's Clamshell
-								i(90172),	-- Clamshell Band
-								i(90087),	-- Lobstmourne
-							}),
+							i(90170),	-- Clamstok's Clamshell
 						},
 					}),
 					n(50334, {	-- Dak the Breaker
@@ -1664,40 +1664,6 @@ root(ROOTS.Zones, {
 						},
 						["g"] = {
 							i(86585),	-- Golden Fleece
-						},
-					}),
-					n(69841, {	-- Zandalari Warbringer (Amber)
-						["coords"] = {
-							{ 47.42, 61.54, DREAD_WASTES },
-							{ 75.11, 67.47, KUN_LAI_SUMMIT },
-							{ 52.56, 18.85, THE_JADE_FOREST },
-							{ 36.58, 85.67, TOWNLONG_STEPPES },
-						},
-						["g"] = {
-							i(94230),	-- Amber Primordial Direhorn (MOUNT!)
-						},
-					}),
-					n(69842, {	-- Zandalari Warbringer (Jade)
-						["coords"] = {
-							{ 47.42, 61.54, DREAD_WASTES },
-							{ 75.11, 67.47, KUN_LAI_SUMMIT },
-							{ 52.56, 18.85, THE_JADE_FOREST },
-							{ 36.58, 85.67, TOWNLONG_STEPPES },
-						},
-						["g"] = {
-							i(94231),	-- Jade Primordial Direhorn (MOUNT!)
-						},
-					}),
-					n(69769, {	-- Zandalari Warbringer (Slate)
-						["coords"] = {
-							{ 47.42, 61.54, DREAD_WASTES },
-							{ 39.83, 65.92, KRASARANG_WILDS },
-							{ 75.11, 67.47, KUN_LAI_SUMMIT },
-							{ 52.56, 18.85, THE_JADE_FOREST },
-							{ 36.58, 85.67, TOWNLONG_STEPPES },
-						},
-						["g"] = {
-							i(94229),	-- Slate Primordial Direhorn (MOUNT!)
 						},
 					}),
 				}),

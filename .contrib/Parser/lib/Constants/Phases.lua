@@ -265,6 +265,43 @@ TCG = createPhase({
 	},
 });
 -- #endif
+TRADING_POST = createPhase({
+	readable = "Trading Post",
+	constant = "TRADING_POST",
+	export = true,
+	phaseID = 11,
+	state = 3,
+	text = {
+		-- #if AFTER DF
+		en = [[~TRANSMOG_SOURCE_7]],
+		-- #else
+		en = "Trading Post",
+		-- de = "",
+		-- es = "",
+		-- mx = "",
+		-- fr = "",
+		-- it = "",
+		-- ko = "",
+		-- pt = "",
+		-- ru = "",
+		-- cn = "",
+		-- tw = "",
+		-- #endif
+	},
+	description = {
+		en = "This item is available in the Trading Post.",
+		-- de = "",
+		-- es = "",
+		-- mx = "",
+		-- fr = "",
+		-- it = "",
+		-- ko = "",
+		-- pt = "",
+		-- ru = "",
+		-- cn = "",
+		-- tw = "",
+	},
+});
 ELITE_PVP_REQUIREMENT = createPhase({
 	readable = "Elite PvP",
 	constant = "ELITE_PVP_REQUIREMENT",

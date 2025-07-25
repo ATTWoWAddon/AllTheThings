@@ -136,6 +136,21 @@ namespace ATT
                 ProcessContainer(container);
             }
 
+            // Merge Wago Battle Pet data into the containers
+            if (SOURCED.TryGetValue("speciesID", out Dictionary<long, HashSet<IDictionary<string, object>>> allSourcedSpecies))
+            {
+                foreach (var sourceSpeciesDataPair in allSourcedSpecies)
+                {
+                    if (WagoData.TryGetValue(sourceSpeciesDataPair.Key, out BattlePetSpecies battlePetSpecies) && battlePetSpecies.CreatureID > 0)
+                    {
+                        foreach(var speciesData in sourceSpeciesDataPair.Value)
+                        {
+                            speciesData["npcID"] = battlePetSpecies.CreatureID;
+                        }
+                    }
+                }
+            }
+
             // Incorporate external or other DB information into the Objects
             CurrentParseStage = ParseStage.Incorporation;
             ProcessingFunction = DataIncorporation;

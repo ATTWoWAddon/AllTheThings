@@ -208,16 +208,11 @@ root(ROOTS.Zones, {
 					ach(8727),	-- Where There's Pirates, There's Booty
 				}),
 				battlepets({
-					["sym"] = {{"select","speciesID",
-						417,	-- Rat (PET!)
-					}},
-					["groups"] = {
-						pet(1324),	-- Ashwing Moth (PET!)
-						pet(1325),	-- Flamering Moth (PET!)
-						pet(1326, {	-- Skywisp Moth (PET!)
-							["description"] = "Found on the tallest peaks of the isle, accessible easiest from an Albatross ride.",
-						}),
-					},
+					pet(1324),	-- Ashwing Moth (PET!)
+					pet(1325),	-- Flamering Moth (PET!)
+					pet(1326, {	-- Skywisp Moth (PET!)
+						["description"] = "Found on the tallest peaks of the isle, accessible easiest from an Albatross ride.",
+					}),
 				}),
 				n(BURDEN_OF_ETERNITY, {
 					-- Cloth

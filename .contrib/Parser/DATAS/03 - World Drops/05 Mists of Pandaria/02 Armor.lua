@@ -30,6 +30,7 @@ root(ROOTS.WorldDrops, {
 				i(82060),	-- Gemmed Amulet
 				i(82170),	-- Grummle Amulet
 				i(82280),	-- Immaculate Amulet
+				i(82007),	-- Intricate Amulet
 				i(82115),	-- Shamanic Amulet
 				i(87468),	-- Shiny Hozen Rock Holder
 				i(87469),	-- Astrylian's Cheerful Charm
@@ -179,16 +180,20 @@ root(ROOTS.WorldDrops, {
 				i(82063),	-- Gemmed Ring
 				i(82173),	-- Grummle Ring
 				i(82283),	-- Immaculate Ring
+				i(82005),	-- Intricate Ring
 				i(90581),	-- Jan-Ho's Unwavering Seal
 				i(90584),	-- Perculia's Peculiar Signet
 				i(90591),	-- Ring of the Shipwrecked Prince
 				i(82118),	-- Shamanic Ring
+				i(87442),	-- Signet of the Scorned
 			}),
 			filter(TRINKET_F, {
 				i(87497),	-- Core of Decency
 				i(87500),	-- Brooch of Munificent Deeds
 				i(87496),	-- Daelo's Final Words
 				i(87495),	-- Gerps Perfect Arrow
+				i(87499),	-- Grakl's Gleaming Talisman
+				i(87498),	-- Spiritwhisper Conch
 			}),
 		}),
 	}),

@@ -23,32 +23,57 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				battlepets({
-					["sym"] = {{"select","speciesID",
-						711,	-- Sifang Otter (PET!)
-						712,	-- Sifang Otter Pup (PET!)
-						723,	-- Spiny Terrapin (PET!)
-					}},
-					["groups"] = {
-						pet(380),	-- Bucktooth Flapper (PET!)
-						pet(562),	-- Coral Adder (PET!)
-						pet(564),	-- Emerald Turtle (PET!)
-						pet(569),	-- Garden Frog (PET!)
-						pet(753),	-- Garden Moth (PET!)
-						pet(571),	-- Grove Viper (PET!)
-						pet(699),	-- Jumping Spider (PET!)
-						pet(565),	-- Jungle Darter (PET!)
-						pet(702),	-- Leopard Tree Frog (PET!)
-						pet(570),	-- Masked Tanuki (PET!)
-						pet(703),	-- Masked Tanuki Pup (PET!)
-						pet(566),	-- Mirror Strider (PET!)
-						pet(573),	-- Sandy Petrel (PET!)
-						pet(754),	-- Shrine Fly (PET!)
-						pet(568),	-- Silkbead Snail (PET!)
-						pet(572, {	-- Spirebound Crab (PET!)
-							["coord"] = { 69.2, 30.0, THE_JADE_FOREST },
-						}),
-						pet(567),	-- Temple Snake (PET!)
-					},
+					pet(380, {	-- Bucktooth Flapper (PET!)
+						["coord"] = { 34.4, 47.6, THE_JADE_FOREST },
+					}),
+					pet(562, {	-- Coral Adder (PET!)
+						["coord"] = { 66.2, 86.4, THE_JADE_FOREST },
+					}),
+					pet(564),	-- Emerald Turtle (PET!)
+					pet(569, {	-- Garden Frog (PET!)
+						["coord"] = { 56.6, 45.2, THE_JADE_FOREST },
+					}),
+					pet(753, {	-- Garden Moth (PET!)
+						["coord"] = { 53.6, 45.2, THE_JADE_FOREST },
+					}),
+					pet(571),	-- Grove Viper (PET!)
+					pet(699),	-- Jumping Spider (PET!)
+					pet(565, {	-- Jungle Darter (PET!)
+						["coord"] = { 54.2, 71.0, THE_JADE_FOREST },
+					}),
+					pet(702),	-- Leopard Tree Frog (PET!)
+					pet(570),	-- Masked Tanuki (PET!)
+					pet(703),	-- Masked Tanuki Pup (PET!)
+					pet(566, {	-- Mirror Strider (PET!)
+						["coords"] = {
+							{ 32.6, 45.4, THE_JADE_FOREST },
+							{ 40.6, 53.4, THE_JADE_FOREST },
+						},
+					}),
+					pet(573, {	-- Sandy Petrel (PET!)
+						["coord"] = { 66.8, 28.0, THE_JADE_FOREST },
+					}),
+					pet(754, {	-- Shrine Fly (PET!)
+						["coords"] = {
+							{ 33.4, 50.6, THE_JADE_FOREST },
+							{ 36.6, 58.6, THE_JADE_FOREST },
+						},
+					}),
+					pet(711, {	-- Sifang Otter (PET!)
+						["coord"] = { 40.6, 93.8, THE_JADE_FOREST },
+					}),
+					pet(712, {	-- Sifang Otter Pup (PET!)
+						["coord"] = { 38.2, 92.6, THE_JADE_FOREST },
+					}),
+					pet(568, {	-- Silkbead Snail (PET!)
+						["coord"] = { 48.8, 94.2, THE_JADE_FOREST },
+					}),
+					pet(572, {	-- Spirebound Crab (PET!)
+						["coord"] = { 69.2, 30.0, THE_JADE_FOREST },
+					}),
+					pet(567, {	-- Temple Snake (PET!)
+						["coord"] = { 55.0, 56.6, THE_JADE_FOREST },
+					}),
 				}),
 				explorationHeader({
 					exploration(5943),	-- Amberfly Bog
@@ -658,10 +683,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 58.8, 81.7, THE_JADE_FOREST },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(30567, {	-- Blanche's Boomer Brew
-						["qg"] = 59569,	-- Brewmaster Blanche
-						["coord"] = { 38.8, 31.1, THE_JADE_FOREST },
-					}),
 					q(29892, {	-- Body
 						["sourceQuest"] = 31130,	-- A Visit with Lorewalker Cho
 						["providers"] = {
@@ -712,12 +733,6 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 29745,	-- The Sprites' Plight
 						["provider"] = { "o", 214871 },	-- Shattered Destroyer
 						["coord"] = { 48.5, 20.6, THE_JADE_FOREST },
-					}),
-					q(30442, {	-- Blanche's Boomer Brew
-						["coord"] = { 38.0, 30.0, THE_JADE_FOREST },
-						["qg"] = 59569,	-- Brewmaster Blanche
-						["isDaily"] = true,
-						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(29631, {	-- Burning Bright
 						["sourceQuest"] = 29627,	-- A Proper Weapon
@@ -2234,11 +2249,6 @@ root(ROOTS.Zones, {
 							i(74763),	-- Spirit Bottle (QI!)
 						},
 					}),
-					q(31613, {	-- Volatile Greenstone Brew
-						["qg"] = 62321,	-- Brewmaster Tzu
-						["coord"] = { 47.4, 37.0, THE_JADE_FOREST },
-						["lvl"] = 90,
-					}),
 					warchiefscommand(q(49538, {	-- Warchief's Command: Jade Forest!
 						["timeline"] = { ADDED_7_3_5 },
 						["races"] = HORDE_ONLY,
@@ -2363,22 +2373,16 @@ root(ROOTS.Zones, {
 							i(87649),	-- Pool-Stirrer
 						},
 					}),
-					n(66937, {	-- Akkalar
+					n(66937, {	-- Akkalar <Shield of Kril'mandar>
 						["coord"] = { 59.6, 96.0, THE_JADE_FOREST },
 						["groups"] = {
-							i(90167, {	-- Akkalar's Clamshel
-								i(90172),	-- Clamshell Band
-								i(90087),	-- Lobstmourne
-							}),
+							i(90167), 	-- Akkalar's Clamshell
 						},
 					}),
-					n(66932, {	-- Akkalou
+					n(66932, {	-- Akkalou <Spawn of Kril'mandar>
 						["coord"] = { 59.3, 36.4, THE_JADE_FOREST },
 						["groups"] = {
-							i(90166, {	-- Akkalou's Clamshell
-								i(90172),	-- Clamshell Band
-								i(90087),	-- Lobstmourne
-							}),
+							i(90166),	-- Akkalou's Clamshell
 						},
 					}),
 					n(51078, {	-- Ferdinand
@@ -2467,40 +2471,6 @@ root(ROOTS.Zones, {
 							i(87651),	-- Pathwalker Greatstaff
 						},
 					}),
-					n(69841, {	-- Zandalari Warbringer (Amber)
-						["coords"] = {
-							{ 47.4, 61.5, DREAD_WASTES },
-							{ 75.1, 67.4, KUN_LAI_SUMMIT },
-							{ 52.5, 18.8, THE_JADE_FOREST },
-							{ 36.5, 85.6, TOWNLONG_STEPPES },
-						},
-						["groups"] = {
-							i(94230),	-- Amber Primordial Direhorn (MOUNT!)
-						},
-					}),
-					n(69842, {	-- Zandalari Warbringer (Jade)
-						["coords"] = {
-							{ 47.4, 61.5, DREAD_WASTES },
-							{ 75.1, 67.4, KUN_LAI_SUMMIT },
-							{ 52.5, 18.8, THE_JADE_FOREST },
-							{ 36.5, 85.6, TOWNLONG_STEPPES },
-						},
-						["groups"] = {
-							i(94231),	-- Jade Primordial Direhorn (MOUNT!)
-						},
-					}),
-					n(69769, {	-- Zandalari Warbringer (Slate)
-						["coords"] = {
-							{ 47.4, 61.5, DREAD_WASTES },
-							{ 39.8, 65.9, KRASARANG_WILDS },
-							{ 75.1, 67.4, KUN_LAI_SUMMIT },
-							{ 52.5, 18.8, THE_JADE_FOREST },
-							{ 36.5, 85.6, TOWNLONG_STEPPES },
-						},
-						["groups"] = {
-							i(94229),	-- Slate Primordial Direhorn (MOUNT!)
-						},
-					}),
 				}),
 				n(TREASURES, {
 					o(213741, {	-- Ancient Jinyu Staff
@@ -2554,6 +2524,7 @@ root(ROOTS.Zones, {
 							{ 42.01, 17.56, THE_JADE_FOREST },
 							{ 42.97, 11.63, THE_JADE_FOREST },
 						},
+						["description"] = "Leaning upright against the wall.",
 						["groups"] = {
 							i(86198),	-- Hammer of Ten Thunders
 						},
@@ -2564,6 +2535,7 @@ root(ROOTS.Zones, {
 					n(64272, {	-- Jade Warrior Statue
 						["questID"] = 31307,
 						["coord"] = { 39.26, 46.65, THE_JADE_FOREST },
+						["description"] = "Up against the wooden fence post on the rocky terrain with its back to the wall.",
 						["groups"] = {
 							i(86199),	-- Jade-Infused Blade
 						},
@@ -2579,6 +2551,7 @@ root(ROOTS.Zones, {
 					o(213363, {	-- Wodin's Mantid Shanker
 						["questID"] = 31397,
 						["coord"] = { 39.41, 7.23, THE_JADE_FOREST },
+						["description"] = "Glimmering in the east side of the pond underwater between the lantern and the stone wall.",
 						["groups"] = {
 							i(85776),	-- Wodin's Mantid Shanker
 						},
@@ -2764,122 +2737,7 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i(87426, {	-- Deathspite Breastplate
-						["crs"] = {
-							59102,	-- Forest Huntress
-							54559,	-- Glittering Amberfly
-							55470,	-- Hozen Groundpounder
-							55236,	-- Jade Guardian
-							66668,	-- Sha-Infested Prowler
-							61760,	-- Slingtail Recruit
-							55110,	-- Slingtail Stickypaw
-							66288,	-- Thunder Hold Sharp-Shooter
-							62930,	-- Water Sprite
-							55238,	-- Waxwood Matriarch
-						},
-					}),
-					i(87520, {	-- Glowing Wind Bracers
-						["crs"] = {
-							55470,	-- Hozen Groundpounder
-							66668,	-- Sha-Infested Prowler
-							61562,	-- Slingtail Treeleaper
-							59772,	-- Smoky Porcupine
-						},
-					}),
-					i(87499, {	-- Grakl's Gleaming Talisman
-						["crs"] = {
-							55470,	-- Hozen Groundpounder
-							56396,	-- Hungry Bloodtalon
-							59084,	-- Pearly Tortoise
-							66423,	-- Sha Haunt
-							66668,	-- Sha-Infested Prowler
-							61562,	-- Slingtail Treeleaper
-							66348,	-- Thunder Hold Armsman
-							62930,	-- Water Sprite
-						},
-					}),
-					i(87456, {	-- Hexu's Amplifying Helm
-						["crs"] = {
-							66270,	-- Felstorm Warlock
-							55470,	-- Hozen Groundpounder
-							66213,	-- Koukou
-							56201,	-- Orchard Wasp
-							66668,	-- Sha-Infested Prowler
-							55110,	-- Slingtail Stickypaw
-							66285,	-- Thunder Hold Infantryman
-							56283,	-- Tigerfly
-							62930,	-- Water Sprite
-						},
-					}),
-					i(87464, {	-- Leggings of the Scorched Man
-						["crs"] = {
-							66290,	-- Garrosh'ar Gear-Greaser
-							54989,	-- Gormali Slaver
-							55470,	-- Hozen Groundpounder
-							66106,	-- Hozen Scavenger
-							66668,	-- Sha-Infested Prowler
-							66446,	-- Thunder Hold Mender
-							56283,	-- Tigerfly
-							66269,	-- Twinspire Grunt
-						},
-					}),
-					i(87467, {	-- Ravenclaw Harbinger
-						["crs"] = {
-							56303,	-- Alliance Infiltrator
-							66268,	-- Gatrul'lon Flamecaller
-							54559,	-- Glittering Amberfly
-							55470,	-- Hozen Groundpounder
-							59084,	-- Pearly Tortoise
-							59417,	-- Sha Echo
-							66424,	-- Sha Harbinger
-							62930,	-- Water Sprite
-						},
-					}),
-					i(87516, {	-- Scalebreaker Axe
-						["crs"] = {
-							66282,	-- Garrosh'ar Grunt
-							54559,	-- Glittering Amberfly
-							54987,	-- Greenwood Trickster
-							55470,	-- Hozen Groundpounder
-							57119,	-- Hozen Ravager
-							66668,	-- Sha-Infested Prowler
-							62930,	-- Water Sprite
-						},
-					}),
-					i(87442, {	-- Signet of the Scorned
-						["crs"] = {
-							54703,	-- Gormali Incinerator
-							55470,	-- Hozen Groundpounder
-							66153,	-- Hozen Scavenger
-							56201,	-- Orchard Wasp
-							59084,	-- Pearly Tortoise
-							66668,	-- Sha-Infested Prowler
-							56283,	-- Tigerfly
-						},
-					}),
-					i(87498, {	-- Spiritwhisper Conch
-						["crs"] = {
-							54558,	-- Bog Crocolisk
-							55470,	-- Hozen Groundpounder
-							57119,	-- Hozen Ravager
-							56201,	-- Orchard Wasp
-							66668,	-- Sha-Infested Prowler
-							55193,	-- Slingtail Mudseer
-							59772,	-- Smoky Porcupine
-						},
-					}),
-					i(87522, {	-- Star-Carrier Bracers
-						["crs"] = {
-							55461,	-- Grookin Reinforcement
-							55470,	-- Hozen Groundpounder
-							66424,	-- Sha Harbinger
-							66668,	-- Sha-Infested Prowler
-							61760,	-- Slingtail Recruit
-							56650,	-- Stoneskin Basilisk
-							66272,	-- Twinspire Deathguard
-							66273,	-- Twinspire Demolitionist
-						},
-					}),
+					i(87522),	-- Star-Carrier Bracers
 					i(120138, {	-- Tome of Polymorph: Monkey (CI!)
 						["crs"] = {
 							55470,	-- Hozen Groundpounder
@@ -2892,6 +2750,7 @@ root(ROOTS.Zones, {
 							55110,	-- Slingtail Stickypaw
 							61562,	-- Slingtail Treeleaper
 						},
+						["timeline"] = { ADDED_6_0_2 },
 					}),
 					i(120140, {	-- Tome of Polymorph: Porcupine (CI!)
 						["crs"] = {
@@ -2900,69 +2759,6 @@ root(ROOTS.Zones, {
 						},
 						["timeline"] = { ADDED_6_0_2 },
 					}),
-					i(87521, {	-- Zoid's Scorched Bracers
-						["crs"] = {
-							66290,	-- Garrosh'ar Gear-Greaser
-							66282,	-- Garrosh'ar Grunt
-							54559,	-- Glittering Amberfly
-							55470,	-- Hozen Groundpounder
-							66668,	-- Sha-Infested Prowler
-							61557,	-- Slingtail Treeleaper
-						},
-					}),
-					i(81998),	-- Intricate Wand
-					i(82003),	-- Intricate Spellblade
-					i(82010),	-- Intricate Crystal
-					i(82011),	-- Intricate Scepter
-					i(82020),	-- Polished Axe
-					i(82018),	-- Polished Bow
-					i(82019),	-- Polished Broadaxe
-					i(82016),	-- Polished Crossbow
-					i(82015),	-- Polished Dagger
-					i(82000),	-- Polished Greatsword
-					i(82012),	-- Polished Gun
-					i(82008),	-- Polished Hammer
-					i(82013),	-- Polished Knuckles
-					i(82009),	-- Polished Mace
-					i(82006),	-- Polished Spear
-					i(82002),	-- Polished Staff
-					i(82014),	-- Polished Staff
-					i(82001),	-- Polished Sword
-					i(82007),	-- Intricate Amulet
-					i(82017),	-- Intricate Cloak
-					i(82005),	-- Intricate Ring
-					i(81969),	-- Stitched Cowl
-					i(81967),	-- Stitched Shoulderpads
-					i(81972),	-- Stitched Robe
-					i(81973),	-- Stitched Wristwraps
-					i(81970),	-- Stitched Handwraps
-					i(81966),	-- Stitched Cord
-					i(81968),	-- Stitched Leggings
-					i(81971),	-- Stitched Sandals
-					i(81977),	-- Silent Hood
-					i(81975),	-- Silent Shoulders
-					i(81980),	-- Silent Jerkin
-					i(81981),	-- Silent Bindings
-					i(81978),	-- Silent Gloves
-					i(81974),	-- Silent Waistband
-					i(81976),	-- Silent Britches
-					i(81979),	-- Silent Boots
-					i(81985),	-- Saurok Helm
-					i(81983),	-- Saurok Spaulders
-					i(81988),	-- Saurok Vest
-					i(81989),	-- Saurok Bracers
-					i(81986),	-- Saurok Gauntlets
-					i(81982),	-- Saurok Belt
-					i(81984),	-- Saurok Legguards
-					i(81987),	-- Saurok Greaves
-					i(81993),	-- Wall Helm
-					i(81991),	-- Wall Pauldrons
-					i(81996),	-- Wall Breastplate
-					i(81997),	-- Wall Vambraces
-					i(81994),	-- Wall Gauntlets
-					i(81990),	-- Wall Girdle
-					i(81992),	-- Wall Legplates
-					i(81995),	-- Wall Sabatons
 				}),
 			},
 		}))),
@@ -2972,15 +2768,6 @@ root(ROOTS.Zones, {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 	m(PANDARIA, {
 		m(THE_JADE_FOREST, {
-			n(FACTIONS, {
-				header(HEADERS.Faction, FACTION_ORDER_OF_THE_CLOUD_SERPENT, {
-					n(QUESTS, {
-						q(30165),	-- Tracking Event: Picked Blue Serpent - picked the blue serpent egg during "Choosing the One" (questID 30138)
-						q(30167),	-- Tracking Event: Picked Gold Serpent - picked the gold serpent egg during "Choosing the One" (questID 30138)
-						q(30166),	-- Tracking Event: Picked Green Serpent - picked the green serpent egg during "Choosing the One" (questID 30138)
-					}),
-				}),
-			}),
 			n(QUESTS, {
 				q(29702),	-- Gorrok TRACKING
 				q(30486),	-- Jade Dragon Phased Terrain Tracking - triggers after placing the Cho family heirloom during "Last Piece of the Puzzle" (questID 30485 & 31362)

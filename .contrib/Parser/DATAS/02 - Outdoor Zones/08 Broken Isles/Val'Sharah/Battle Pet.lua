@@ -6,7 +6,6 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 		petbattle(filter(BATTLE_PETS, {
 			["sym"] = {{"select","speciesID",
 				398,	-- Black Rat (PET!)
-				380,	-- Bucktooth Flapper (PET!)
 				393,	-- Cockroach (PET!)
 				396,	-- Dusk Spiderling (PET!)
 				479,	-- Elfin Rabbit (PET!)
@@ -17,6 +16,9 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			["groups"] = {
 				pet(1738, {	-- Auburn Ringtail (PET!)
 					["description"] = "Best found around NW Moonclaw Vale.",
+				}),
+				pet(380, {	-- Bucktooth Flapper (PET!)
+					["coord"] = { 53.2, 46.6, VALSHARAH },
 				}),
 				pet(1913, {	-- Gleamhoof Fawn (PET!)
 					["description"] = "Found around the grassy area in southern Val'Sharah.",

@@ -26,19 +26,18 @@ root(ROOTS.Zones, {
 					ach(7293),	-- Till the Break of Dawn (Halfhill)
 				}),
 				battlepets({
-					["sym"] = {{"select","speciesID",
-						564,	-- Emerald Turtle (PET!)
-					}},
-					["groups"] = {
-						pet(706),	-- Bandicoon (PET!)
-						pet(707),	-- Bandicoon Kit (PET!)
-						pet(708),	-- Malayan Quillrat (PET!)
-						pet(709),	-- Malayan Quillrat Pup (PET!)
-						pet(710),	-- Marsh Fiddler (PET!)
-						pet(677),	-- Shy Bandicoon (PET!)
-						pet(711),	-- Sifang Otter (PET!)
-						pet(713),	-- Softshell Snapling (PET!)
-					},
+					pet(706),	-- Bandicoon (PET!)
+					pet(707),	-- Bandicoon Kit (PET!)
+					pet(708),	-- Malayan Quillrat (PET!)
+					pet(709),	-- Malayan Quillrat Pup (PET!)
+					pet(710, {	-- Marsh Fiddler (PET!)
+						["coord"] = { 41.6, 45.2, VALLEY_OF_THE_FOUR_WINDS },
+					}),
+					pet(677, {	-- Shy Bandicoon (PET!)
+						["coord"] = { 17.8, 42.8, VALLEY_OF_THE_FOUR_WINDS },
+					}),
+					pet(711),	-- Sifang Otter (PET!)
+					pet(713),	-- Softshell Snapling (PET!)
 				}),
 				explorationHeader({
 					visit_exploration(6096,{coord={45.4,26.8,VALLEY_OF_THE_FOUR_WINDS}}),	-- Cattail Lake
