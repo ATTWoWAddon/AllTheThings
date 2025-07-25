@@ -150,12 +150,28 @@ local function GetCatalysts(data)
 	if not slot then return end
 
 	local catalystID = PossibleCatalystBonusIDLookups[bonusID]
-	-- app.PrintDebug("Can Catalyst!",catalystID,app:SearchLink(data))
 	local upgradeInfo = C_Item_GetItemUpgradeInfo(data.link)
+	-- app.PrintDebug("Can Catalyst!",catalystID,bonusID,app:SearchLink(data))
+	-- app.PrintTable(upgradeInfo)
 	if not upgradeInfo then return end -- shouldn't happen
 
-	local upgradeTrackID = upgradeInfo.trackStringID or 973	-- TODO: revisit with SL Catalysts...
+	local upgradeTrackID = upgradeInfo.trackStringID
 	local upgradeLevel = upgradeInfo.currentLevel or 0
+
+	-- Non-Upgrade cases
+	if not upgradeTrackID then
+		-- app.PrintDebug("Non-upgrade Item",data.link)
+		-- app.PrintTable(upgradeInfo)
+		-- Primalist Items, DF S1
+		if upgradeLevel == 2 and upgradeInfo.maxLevel == 3 then
+			-- Primalist converts to Normal
+			upgradeTrackID = 973
+		-- SL Items
+		elseif upgradeLevel == 0 then
+			-- use the bonusID as the trackID directly as it's 1:1 with difficulty
+			upgradeTrackID = bonusID
+		end
+	end
 
 	-- If our upgrade level is 5+ then the item is actually on the next matching trackID for catalyst output
 	if upgradeLevel > 4 then

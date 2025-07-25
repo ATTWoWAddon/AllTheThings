@@ -269,7 +269,7 @@ TRADING_POST = createPhase({
 	readable = "Trading Post",
 	constant = "TRADING_POST",
 	export = true,
-	phaseID = 11,
+	phaseID = 7,
 	state = 3,
 	text = {
 		-- #if AFTER DF

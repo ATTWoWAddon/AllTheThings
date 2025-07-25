@@ -17978,7 +17978,7 @@ _.PhaseConstants = {
 	REAL_MONEY = 3,
 	REMOVED_FROM_GAME = 2,
 	TCG = 10,
-	TRADING_POST = 11,
+	TRADING_POST = 7,
 	UNLEARNABLE = 5,
 };
 local phases = {

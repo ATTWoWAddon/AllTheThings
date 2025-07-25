@@ -218,7 +218,7 @@ local TooltipSettingsBase = {
 };
 local UnobtainableSettingsBase = {
 	__index = {
-		[11] = true,	-- Trading Post
+		[7] = true,	-- Trading Post
 	}
 };
 

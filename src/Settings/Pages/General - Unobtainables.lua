@@ -40,9 +40,9 @@ local AvailabilityConditions = {
 	5,	-- Unlearnable
 	0,	-- Blank Space
 	3,	-- Real Money
+	7,	-- Trading Post
 	9,	-- Black Market AH
 	10,	-- Trading Card Game
-	11,	-- Trading Post
 	0,	-- Blank Space
 	38,	-- Ordos
 	4,	-- PvP Elite / Gladiator

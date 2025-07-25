@@ -15,9 +15,9 @@ SEPULCHER_OF_FIRST_ONES_TIER = {
 		i(188899),	-- Mercurial Punisher's Boots
 		-- i(188898),	-- Mercurial Punisher's Grips
 		-- i(188896),	-- Mercurial Punisher's Shoulderpads
-		-- i(188900),	-- Mercurial Punisher's Mantle
+		i(188900),	-- Mercurial Punisher's Mantle
 		-- i(188894),	-- Mercurial Punisher's Jerkin
-		i(188893),	-- Mercurial Punisher's Breeches
+		-- i(188893),	-- Mercurial Punisher's Breeches
 		-- i(188892),	-- Mercurial Punisher's Hood
 		i(188895),	-- Mercurial Punisher's Wristguards
 	};

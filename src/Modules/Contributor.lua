@@ -406,6 +406,7 @@ MobileDB.GameObject = {
 		[57] = true,	-- Bloodscalp Lore Tablet (q:26744)
 	   [119] = true,	-- Abercrombie's Crate (q:26680)
 	   [276] = true,	-- Shimmerweed Basket (q:315)
+	   [765] = true,	-- Silverleaf
 	   [759] = true,	-- The Holy Spring (q:26817)
 	  [1618] = true,	-- Peacebloom
 	  [1673] = true,	-- Fel Cone (q:489)

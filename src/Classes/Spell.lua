@@ -14,6 +14,7 @@ local IsQuestFlaggedCompleted, SearchForFieldContainer, SearchForField
 -- WoW API Cache
 local GetSpellLink = app.WOWAPI.GetSpellLink;
 
+-- TODO: some of these deprecated in 11.2, move to WOWAPI
 local IsSpellKnown, IsPlayerSpell, GetNumSpellTabs, GetSpellTabInfo, IsSpellKnownOrOverridesKnown
 ---@diagnostic disable-next-line: deprecated
 	= IsSpellKnown, IsPlayerSpell, GetNumSpellTabs, GetSpellTabInfo, IsSpellKnownOrOverridesKnown
