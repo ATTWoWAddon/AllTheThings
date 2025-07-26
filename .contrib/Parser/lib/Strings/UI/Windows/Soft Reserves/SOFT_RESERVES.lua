@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Soft Reserves",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Reserva anticipada",
+		mx = "Reserva anticipada",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
