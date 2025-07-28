@@ -9,7 +9,7 @@
 ExportDB._Compressed.ForceFillDB = true
 ExportDB.ForceFillDB = {
 	Item = {
-		-- Tokens loaded under Gluth as a duplicate from other bosses, so ideal to fill for both locations
+		-- Tokens loaded under Gluth and DS LFR as a duplicate from other bosses, so ideal to fill for both locations
 		-- Naxx 10M Tokens
 		[40610] = 1,	-- Chestguard of the Lost Conqueror
 		[40611] = 1,	-- Chestguard of the Lost Protector
@@ -30,5 +30,21 @@ ExportDB.ForceFillDB = {
 		[40637] = 1,	-- Mantle of the Lost Conqueror
 		[40638] = 1,	-- Mantle of the Lost Protector
 		[40639] = 1,	-- Mantle of the Lost Vanquisher
+		-- DS LFR Tokens
+		[78862] = 1,	-- Chest of the Corrupted Vanquisher
+		[78863] = 1,	-- Chest of the Corrupted Conqueror
+		[78864] = 1,	-- Chest of the Corrupted Protector
+		[78865] = 1,	-- Gauntlets of the Corrupted Vanquisher
+		[78866] = 1,	-- Gauntlets of the Corrupted Conqueror
+		[78867] = 1,	-- Gauntlets of the Corrupted Protector
+		[78868] = 1,	-- Crown of the Corrupted Vanquisher
+		[78869] = 1,	-- Crown of the Corrupted Conqueror
+		[78870] = 1,	-- Crown of the Corrupted Protector
+		[78871] = 1,	-- Leggings of the Corrupted Vanquisher
+		[78872] = 1,	-- Leggings of the Corrupted Conqueror
+		[78873] = 1,	-- Leggings of the Corrupted Protector
+		[78874] = 1,	-- Shoulders of the Corrupted Vanquisher
+		[78875] = 1,	-- Shoulders of the Corrupted Conqueror
+		[78876] = 1,	-- Shoulders of the Corrupted Protector
 	}
 }
