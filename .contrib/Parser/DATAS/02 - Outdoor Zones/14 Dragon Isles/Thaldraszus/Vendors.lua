@@ -22,7 +22,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(187300, {	-- Gryrmpech <Head Gardener>
 				["coord"] = { 37.8, 75.4, THALDRASZUS },
-				["g"] = {
+				["groups"] = {
 					i(114980, {	-- Farmer's Broom
 						["cost"] = 67,	-- 67c
 					}),
@@ -37,13 +37,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(198470, {	-- Usodormu
 				["sourceQuest"] = 66040,	-- Back to the Future (confirm)
 				["coord"] = { 60.4, 79.8, THALDRASZUS },
-				["g"] = {
+				["groups"] = {
 					i(201435),	-- Shuffling Sands (TOY!)
 				},
 			}),
 			n(197586, {	-- Xemah
 				["coord"] = { 38.95, 46.31, THALDRASZUS },
-				["g"] = {
+				["groups"] = {
 					i(200871),	-- Steamed Scarab Steak
 				},
 			}),

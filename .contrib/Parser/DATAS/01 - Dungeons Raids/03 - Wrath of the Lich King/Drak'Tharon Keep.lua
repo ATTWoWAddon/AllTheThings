@@ -88,10 +88,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						{ "n", 26787 },	-- Image of Drakuru
 						{ "i", 35797 },	-- Drakuru's Elixir
 					},
-					["sourceQuest"] = 12068,	-- Voices From the Dust
 					-- #if AFTER 4.3.0.14890
 					["altQuests"] = { 30120 },	-- Cleansing Drak'Tharon
 					-- #endif
+					["sourceQuest"] = 12068,	-- Voices From the Dust
 					["coord"] = { 71.7, 26.1, GRIZZLY_HILLS },
 					["cost"] = { { "i", 38303, 5 } },	-- Enduring Mojo
 					["lvl"] = lvlsquish(73, 73, 15),

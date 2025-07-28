@@ -81,7 +81,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			ach(12561),	-- Explore Nazmir
 			ach(13028, {	-- Hoppin' Sad
 				["cr"] = 143317,	-- Lost Spawn of Krag'wa
-				["g"] = {
+				["groups"] = {
 					hqt(53417, {
 						["name"] = "Lost Spawn of Krag'wa (The Shattered River)",
 						["coord"] = { 69.5, 58.6, NAZMIR },
@@ -129,7 +129,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			ach(11868, {	-- The Dark Heart of Nazmir
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					crit(36955, {	-- Deep in the Swamp
 						["sourceQuests"] = { 47188 },	-- The Aid of the Loa
 					}),

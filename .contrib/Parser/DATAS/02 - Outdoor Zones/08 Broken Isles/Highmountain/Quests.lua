@@ -117,7 +117,7 @@ root(ROOTS.Zones, {
 					},
 					["coord"] = { 45.1, 32.4, HIGHMOUNTAIN },
 					["provider"] = { "n", 95421 },	-- Navarrogg
-					["g"] = {
+					["groups"] = {
 						i(200664, {	-- Bloodgem of Greed
 							["classes"] = { EVOKER },
 							["timeline"] = ADDED_10_0_2,
@@ -162,7 +162,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 40345 },	-- Burn the Candle at Both Ends
 					["coord"] = { 55.2, 41.8, HIGHMOUNTAIN },
 					["provider"] = { "n", 97130 },	-- Bluewax Gatekeeper
-					["g"] = {
+					["groups"] = {
 						i(130275),	-- Chain of Bossing Around
 						i(130286),	-- Thunderpeak Breastplate
 						i(130285),	-- Whitewater Chestwrap
@@ -191,7 +191,7 @@ root(ROOTS.Zones, {
 						39489,	-- Invading Spelunkers
 					},
 					["provider"] = { "n", 96038 },	-- Jale Rivermane
-					["g"] = {
+					["groups"] = {
 						i(200662, {	-- Encrusted Blade of the Mountains
 							["classes"] = { EVOKER },
 							["timeline"] = ADDED_10_0_2,
@@ -218,7 +218,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 39043 },	-- Bitestone Enclave
 					["coord"] = { 46.6, 44.0, 651 },	-- Bitestone Enclave
 					["provider"] = { "n", 97553 },	-- Warbrave Oro
-					["g"] = {
+					["groups"] = {
 						i(121722),	-- Staunch Warbrave Loop
 						i(130287),	-- Snowblind Bracers
 						i(130288),	-- Drogstitch Wristwraps
@@ -238,7 +238,7 @@ root(ROOTS.Zones, {
 					},
 					["coord"] = { 30.0, 62.7, 654 },	-- Mucksnout Den
 					["provider"] = { "n", 97846 },	-- Apprentice Rosalyn
-					["g"] = {
+					["groups"] = {
 						i(132091),	-- Warmth of Uriah
 						i(132092),	-- Solace of Uriah
 						i(132093),	-- Courage of Uriah
@@ -272,7 +272,7 @@ root(ROOTS.Zones, {
 					},
 					["coord"] = { 49.4, 39.2, HIGHMOUNTAIN },
 					["provider"] = { "n", 94068 },	-- Oren Windstrider
-					["g"] = {
+					["groups"] = {
 						i(129277),	-- Skyhorn Nestling (PET!)
 					},
 				}),
@@ -314,7 +314,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 39440 },	-- You Lift, Brul?
 					["coord"] = { 52.3, 61.6, 659 },	-- Stonedark Grotto
 					["provider"] = { "n", 95799 },	-- Damrul the Stronk
-					["g"] = {
+					["groups"] = {
 						i(130296),	-- Deep Squatter's Waistguard (Leather)
 						i(130295),	-- Deep Squatter's Sash
 						i(130297),	-- Deep Squatter's Belt
@@ -377,7 +377,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 40388 },	-- Huln's War - Shadowsong
 					["provider"] = { "n", 97903 },	-- Jarod Shadowsong
 					["coord"] = { 31.2, 52.4, 697 },	-- Azshara (Scenario)
-					["g"] = {
+					["groups"] = {
 						i(130282),	-- Highmountain Trueshot Cape
 						i(130309),	-- Band of Malorne's Chosen
 					},
@@ -396,7 +396,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 39123 },	-- Lion Stalkin'
 					["coord"] = { 39.9, 52.2, HIGHMOUNTAIN },
 					["provider"] = { "n", 95438 },	-- Ellias
-					["g"] = {
+					["groups"] = {
 						i(133810),	-- Recipe: Salt and Pepper Shank [Rank 1] (RECIPE!)
 					},
 				}),
@@ -443,7 +443,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 39124 },	-- Moose Shootin'
 					["coord"] = { 39.9, 52.2, HIGHMOUNTAIN },
 					["provider"] = { "n", 94101 },	-- Laeni Silvershot
-					["g"] = {
+					["groups"] = {
 						i(141647),	-- Medallion of Morashu
 					},
 				}),
@@ -458,7 +458,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 39323 },	-- Moozy's Sojourn
 					["coord"] = { 37.5, 64.2, HIGHMOUNTAIN },
 					["provider"] = { "n", 95130 },	-- Mooze Waterwise
-					["g"] = {
+					["groups"] = {
 						i(121724),	-- Whitewater Safety Blanket
 					},
 				}),
@@ -489,7 +489,7 @@ root(ROOTS.Zones, {
 					},
 					["coord"] = { 42.7, 10.8, HIGHMOUNTAIN },
 					["provider"] = { "n", 98067 },	-- King Mrgl-Mrgl
-					["g"] = {
+					["groups"] = {
 						i(133818),	-- Recipe: Barracuda Mrglgagh [Rank 1] (RECIPE!)
 					},
 				}),
@@ -510,7 +510,7 @@ root(ROOTS.Zones, {
 					},
 					["coord"] = { 39.9, 52.2, HIGHMOUNTAIN },
 					["provider"] = { "n", 94434 },	-- Addie Fizzlebog
-					["g"] = {
+					["groups"] = {
 						i(130320),	-- Addie's Ink-Stained Satchel
 					},
 				}),
@@ -532,7 +532,7 @@ root(ROOTS.Zones, {
 					},
 					["coord"] = { 42.7, 10.8, HIGHMOUNTAIN },
 					["provider"] = { "n", 98067 },	-- King Mrgl-Mrgl
-					["g"] = {
+					["groups"] = {
 						i(132116),	-- Slime-Stacked Shoulderguards
 						i(132113),	-- Pufferfish Demolition Greaves (Cloth)
 						i(132112),	-- Pufferfish Demolition Legwraps
@@ -550,7 +550,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 38911 },	-- The Rivermane Tribe
 					["coord"] = { 43.6, 59.8, HIGHMOUNTAIN },
 					["provider"] = { "n", 93833 },	-- Jale Rivermane
-					["g"] = {
+					["groups"] = {
 						i(121657),	-- Snowblind Treads
 						i(121659),	-- Drogstitch Footwraps
 						i(121658),	-- Whitewater Sabatons
@@ -594,7 +594,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 39455 },	-- Cave of the Blood Trial
 					["coord"] = { 59.1, 31.8, 653 },	-- Cave of the Blood Trial
 					["provider"] = { "n", 93836 },	-- Torok Bloodtotem
-					["g"] = {
+					["groups"] = {
 						i(121669),	-- Snowblind Leggings
 						i(121671),	-- Drogstitch Legguards
 						i(121670),	-- Whitewater Leggings
@@ -623,7 +623,7 @@ root(ROOTS.Zones, {
 					},
 					["coord"] = { 40.0, 52.2, HIGHMOUNTAIN },
 					["provider"] = { "n", 94409 },	-- Hemet Nesingwary
-					["g"] = {
+					["groups"] = {
 						i(121672),	-- Lead-Studded Robes
 						i(121655),	-- Lead-Studded Vest
 						i(121654),	-- Lead-Studded Chestguard
@@ -652,7 +652,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 39496 },	-- The Flow of the River
 					["coord"] = { 41.2, 61.5, HIGHMOUNTAIN },
 					["provider"] = { "n", 95956 },	-- Jale Rivermane
-					["g"] = {
+					["groups"] = {
 						i(130291),	-- Snowblind Gloves
 						i(130292),	-- Drogstitch Grips
 						i(130293),	-- Whitewater Gloves
@@ -681,7 +681,7 @@ root(ROOTS.Zones, {
 				q(40071, {	-- Tamer Takedown
 					["coord"] = { 50.9, 36.6, HIGHMOUNTAIN },
 					["provider"] = { "n", 94068 },	-- Oren Windstrider
-					["g"] = {
+					["groups"] = {
 						i(121681),	-- Snowblind Wristwraps
 						i(121684),	-- Dogstitch Bracers
 						i(121683),	-- Whitewater Ringmail Cuffs
@@ -699,7 +699,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 39577 },	-- An Ancient Secret
 					["coord"] = { 61.1, 73.7, 657 },	-- Path of Huln
 					["provider"] = { "n", 96270 },	-- Ebyssian
-					["g"] = {
+					["groups"] = {
 						i(133137),	-- Wisps of Illusion
 						i(133138),	-- Time-Lost Dragon Heart
 						i(133139),	-- Feltotem Sigil
@@ -733,7 +733,7 @@ root(ROOTS.Zones, {
 					},
 					["provider"] = { "n", 117225 },	-- Navarrogg
 					["coord"] = { 35.6, 24.0, HIGHMOUNTAIN },
-					["g"] = {
+					["groups"] = {
 						i(143778),	-- Fel Infusing Totem (QI!)
 					},
 				}),
@@ -821,7 +821,7 @@ root(ROOTS.Zones, {
 					},
 					["coord"] = { 31.3, 25.1, HIGHMOUNTAIN },
 					["provider"] = { "n", 117249 },	-- Navarrogg
-					["g"] = {
+					["groups"] = {
 						i(143863),	-- Fel Exfoliator (QI!)
 					},
 				}),
@@ -829,7 +829,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 38910 },	-- Rocs vs Eagles
 					["coord"] = { 52.3, 36.5, HIGHMOUNTAIN },
 					["provider"] = { "n", 95410 },	-- Lasan Skyhorn
-					["g"] = {
+					["groups"] = {
 						i(121665),	-- Snowblind Cowl
 						i(121667),	-- Drogstitch Hood
 						i(121666),	-- Whitewater Helmet
@@ -844,7 +844,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 40594 },	-- Justice Rains from Above
 					["coord"] = { 53.1, 68.7, HIGHMOUNTAIN },
 					["provider"] = { "n", 97407 },	-- Lasan Skyhorn
-					["g"] = {
+					["groups"] = {
 						i(121675),	-- Snowblind Mantle
 						i(121673),	-- Drogstitch Spaulders
 						i(121676),	-- Whitewater Amice
@@ -867,7 +867,7 @@ root(ROOTS.Zones, {
 					},
 					["coord"] = { 49.2, 36.5, HIGHMOUNTAIN },
 					["provider"] = { "n", 95410 },	-- Lasan Skyhorn
-					["g"] = {
+					["groups"] = {
 						i(133093),	-- Crawliac Charming Draught
 						i(133104),	-- Errant Mana
 						i(133094),	-- Heart of the Witchqueen
@@ -893,7 +893,7 @@ root(ROOTS.Zones, {
 				q(44055, {	-- They Have a Pitlord
 					["provider"] = { "n", 108504 },	-- Marius Felbane
 					["coord"] = { 29.7, 40.1, HIGHMOUNTAIN },
-					["g"] = {
+					["groups"] = {
 						i(140726),	-- Hood of the Spurious Journey
 						i(140728),	-- Kuglaroth's Helm
 						i(140724),	-- Pit Lord Stompers
@@ -913,7 +913,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 40219 },	-- In Defiance of Deathwing
 					["coord"] = { 49.3, 54.1, 657 },	-- Path of Huln
 					["provider"] = { "n", 108069 },	-- Spiritwalker Ebonhorn
-					["g"] = {
+					["groups"] = {
 						i(121662),	-- Snowblind Handwraps
 						i(121660),	-- Drogstitch Gloves
 						i(121663),	-- Whitewater Gauntlets
@@ -961,7 +961,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 39670 },	-- Critter Scatter Shot
 					["coord"] = { 57.6, 56.5, HIGHMOUNTAIN },
 					["provider"] = { "n", 96513 },	-- Razik Gazbolt
-					["g"] = {
+					["groups"] = {
 						i(131933),	-- Critter Hand Cannon (TOY!)
 					},
 				}),
@@ -969,7 +969,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 38909 },	-- Get to High Ground
 					["coord"] = { 49.0, 55.2, HIGHMOUNTAIN },
 					["provider"] = { "n", 94561 },	-- Warbrave Nava
-					["g"] = {
+					["groups"] = {
 						i(121678),	-- Snowblind Cord
 						i(121680),	-- Drogstitch Belt
 						i(121679),	-- Whitewater Cinch

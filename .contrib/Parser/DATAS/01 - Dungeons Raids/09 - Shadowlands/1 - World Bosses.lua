@@ -126,7 +126,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["modID"] = 14,
-		["g"] = bubbleDownFiltered({
+		["groups"] = bubbleDownFiltered({
 			["isRaid"] = true,
 			["isWeekly"] = true,
 		},FILTERFUNC_questIDORencounterID,{

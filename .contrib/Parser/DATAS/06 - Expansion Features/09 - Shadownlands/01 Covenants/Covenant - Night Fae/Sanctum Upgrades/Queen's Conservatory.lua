@@ -122,10 +122,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	n(NIGHT_FAE, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = 3641394,
-			["g"] = {
+			["groups"] = {
 				n(QUEENS_CONSERVATORY, {
 					["maps"] = { 1662 },	-- Queen's Conservatory
-					["g"] = {
+					["groups"] = {
 						n(ACHIEVEMENTS, {
 							ach(14676, {	-- Divine Spirit Savior
 								crit(51504, {	-- Infuse Divine Martial Spirit
@@ -172,46 +172,46 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						}),
 						n(TIER_ONE, {
 							["icon"] = 3636849,
-							["g"] = {
+							["groups"] = {
 								n(QUESTS, {
 									q(62624, {	-- The Queen's Conservatory
 										["provider"] = { "n", 173171 },	-- Conservator Starry Night
 										["coord"] = { 56.0, 68.2, THE_ROOTS },
 									}),
 									q(63046, {	-- The End and the Beginning
-										["sourceQuests"] = { 62624 },	-- The Queen's Conservatory
 										["provider"] = { "n", 173171 },	-- Conservator Starry Night
+										["sourceQuests"] = { 62624 },	-- The Queen's Conservatory
 										["coord"] = { 56.0, 68.2, THE_ROOTS },
 									}),
 									q(59862, {	-- A Savior for Lost Souls
-										["sourceQuests"] = { 63046 },	-- The End and the Beginning
 										["provider"] = { "n", 166476 },	-- Warden Casad
+										["sourceQuests"] = { 63046 },	-- The End and the Beginning
 										["coord"] = { 69.9, 44.7, 1662 },	-- Queen's Conservatory
 									}),
 									q(59872, {	-- How to Save a God
-										["sourceQuests"] = { 59862 },	-- A Savior for Lost Souls
 										["provider"] = { "n", 166476 },	-- Warden Casad
+										["sourceQuests"] = { 59862 },	-- A Savior for Lost Souls
 										["coord"] = { 33.4, 62.0, 1662 },	-- Queen's Conservatory
-										["g"] = {
+										["groups"] = {
 											i(177953),	-- Untamed Spirit
 										},
 									}),
 									q(59873, {	-- Greeting a God
-										["sourceQuests"] = { 59872 },	-- How to Save a God
 										["provider"] = { "n", 166476 },	-- Warden Casad
+										["sourceQuests"] = { 59872 },	-- How to Save a God
 										["coord"] = { 33.4, 62.0, 1662 },	-- Queen's Conservatory
 									}),
 									q(59999, {	-- Rebirth of the Grove
-										["sourceQuests"] = { 59873 },	-- Greeting a God
 										["provider"] = { "n", 166476 },	-- Warden Casad
+										["sourceQuests"] = { 59873 },	-- Greeting a God
 										["coord"] = { 33.4, 62.0, 1662 },	-- Queen's Conservatory
 									}),
 									q(62441, {	-- Fair Exchange for a Soul
-										["sourceQuests"] = { 59873 },	-- Greeting a God
 										["provider"] = { "n", 166476 },	-- Warden Casad
-										["isWeekly"] = true,
+										["sourceQuests"] = { 59873 },	-- Greeting a God
 										["coord"] = { 33.4, 62.0, 1662 },	-- Queen's Conservatory
-										["g"] = {
+										["isWeekly"] = true,
+										["groups"] = {
 											i(178880),	-- Greater Dutiful Spirit
 											i(178877),	-- Greater Martial Spirit
 											i(178883),	-- Greater Prideful Spirit
@@ -223,90 +223,90 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						}),
 						n(TIER_TWO, {
 							["icon"] = 3636837,
-							["g"] = {
+							["groups"] = {
 								n(ACHIEVEMENTS, {
 									ach(14677),	-- Spiritual Observations
 								}),
 								n(QUESTS, {
 									q(62447, {	-- A Rare and Unusual Spirit (1)
-										["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
 										["provider"] = { "n", 171107 },	-- Cultivator Littleflower
+										["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
 										["coord"] = { 42.2, 52.9, 1662 },
-										["g"] = {
+										["groups"] = {
 											i(183704),	-- Shifting Spirit of Knowledge
 										},
 									}),
 									q(62454, {	-- A Rare and Unusual Spirit (2)
-										["sourceQuests"] = { 62447 },	-- A Rare and Unusual Spirit (1)
 										["provider"] = { "n", 174329 },	-- Falir the Shifting
+										["sourceQuests"] = { 62447 },	-- A Rare and Unusual Spirit (1)
 										["coord"] = { 24.0, 53.3, 1662 },
 										["cost"] = { { "i", 183704, 1 } },	-- Shifting Spirit of Knowledge
 									}),
 									q(59871, {	-- Catalyze This
-										["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
 										["provider"] = { "n", 166476 },	-- Warden Casad
+										["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
 										["coord"] = { 33.4, 62.0, 1662 },
-										["g"] = {
+										["groups"] = {
 											i(184779),	-- Temporal Leaves
 										},
 									}),
 									q(62467, {	-- Seed of a Thought
-										["sourceQuests"] = { 59871 },	-- Catalyze This
 										["provider"] = { "n", 166476 },	-- Warden Casad
+										["sourceQuests"] = { 59871 },	-- Catalyze This
 										["coord"] = { 33.4, 62.0, 1662 },
 									}),
 									q(60640, {	-- Regrowth of the Grove
-										["sourceQuests"] = { 62467 },	-- Seed of a Thought
 										["provider"] = { "n", 166476 },	-- Warden Casad
+										["sourceQuests"] = { 62467 },	-- Seed of a Thought
 										["coord"] = { 33.4, 62.0, 1662 },
 									}),
 									q(62449, {	-- A Spirit's Duty
-										["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
 										["provider"] = { "n", 174273 },	-- Falir the Shifting
+										["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
 										["coord"] = { 24.0, 53.3, 1662 },
 										["isWeekly"] = true,
-										["g"] = {
+										["groups"] = {
 											i(176921),	-- Temporal Leaves
 											i(176922),	-- Wild Nightbloom
 											i(176832),	-- Wildseed Root Grain
 										},
 									}),
 									q(62450, {	-- A Spirit's Heart
-										["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
 										["provider"] = { "n", 174329 },	-- Falir the Shifting
+										["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
 										["coord"] = { 24.0, 53.3, 1662 },
 										["isWeekly"] = true,
-										["g"] = {
+										["groups"] = {
 											i(176921),	-- Temporal Leaves
 											i(176922),	-- Wild Nightbloom
 											i(176832),	-- Wildseed Root Grain
 										},
 									}),
 									q(62452, {	-- A Spirit's Might
-										["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
 										["provider"] = { "n", 174329 },	-- Falir the Shifting
+										["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
 										["coord"] = { 24.0, 53.3, 1662 },
 										["isWeekly"] = true,
-										["g"] = {
+										["groups"] = {
 											i(176921),	-- Temporal Leaves
 											i(176922),	-- Wild Nightbloom
 											i(176832),	-- Wildseed Root Grain
 										},
 									}),
 									q(62445, {	-- A Spirit's Pride
-										["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
 										["provider"] = { "n", 174329 },	-- Falir the Shifting
+										["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
 										["coord"] = { 24.0, 53.3, 1662 },
 										["isWeekly"] = true,
-										["g"] = {
+										["groups"] = {
 											i(176921),	-- Temporal Leaves
 											i(176922),	-- Wild Nightbloom
 											i(176832),	-- Wildseed Root Grain
 										},
 									}),
 									q(62442, {	-- Aid the Covenant
-										["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
 										["provider"] = { "n", 174324 },	-- Conservator Aoni
+										["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
 										["coord"] = { 32.1, 62.0, 1662 },
 										["isDaily"] = true,
 									}),
@@ -314,7 +314,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								n(VENDORS, {
 									n(174403, {	-- Seed Merchant Daybreak <Queen's Conservatory>
 										["coord"] = { 34.6, 60.6, 1662 },
-										["g"] = {
+										["groups"] = {
 											i(183521),	-- Temporal Leaf Seeds
 											i(183520),	-- Wild Nightbloom Seeds
 											i(183522),	-- Wildseed Root Grain Seeds
@@ -324,15 +324,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								o(350978, {	-- Queen's Conservatory Cache
 									header(HEADERS.Item, 178881, {	-- Dutiful Spirit
 										["description"] = "Spirit quality affects loot chance.",
-										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[1] },T2_DUTIFUL_GROUP),
+										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[1] },T2_DUTIFUL_GROUP),
 									}),
 									header(HEADERS.Item, 178874, {	-- Martial Spirit
 										["description"] = "Spirit quality affects loot chance.",
-										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[4] },T2_MARTIAL_GROUP),
+										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[4] },T2_MARTIAL_GROUP),
 									}),
 									header(HEADERS.Item, 177698, {	-- Untamed Spirit
 										["description"] = "Spirit quality affects loot chance.",
-										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[7] },appendGroups(T2_UNTAMED_GROUP, {
+										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[7] },appendGroups(T2_UNTAMED_GROUP, {
 											i(181313),		-- Snapper Soul
 											i(181314),		-- Gulper Soul
 											i(181302),		-- Spirit Tender's Branches
@@ -340,21 +340,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									}),
 									header(HEADERS.Item, 178882, {	-- Prideful Spirit
 										["description"] = "Spirit quality affects loot chance.",
-										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[10] },T2_PRIDEFUL_GROUP),
+										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[10] },T2_PRIDEFUL_GROUP),
 									}),
 								}),
 								o(350978, {	-- Queen's Conservatory Cache
 									header(HEADERS.Item, 178880, {	-- Greater Dutiful Spirit
 										["description"] = "Spirit quality affects loot chance.",
-										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[2] },T3_DUTIFUL_GROUP),
+										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[2] },T3_DUTIFUL_GROUP),
 									}),
 									header(HEADERS.Item, 178877, {	-- Greater Martial Spirit
 										["description"] = "Spirit quality affects loot chance.",
-										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[5] },T3_MARTIAL_GROUP),
+										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[5] },T3_MARTIAL_GROUP),
 									}),
 									header(HEADERS.Item, 177699, {	-- Greater Untamed Spirit
 										["description"] = "Spirit quality affects loot chance.",
-										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[8] },appendGroups(T3_UNTAMED_GROUP, {
+										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[8] },appendGroups(T3_UNTAMED_GROUP, {
 											i(181306),	-- Spirit Tender's Bulb
 											i(180414),	-- Wakener's Runestag (MOUNT!)
 											i(187705, {	-- Choofa's Call (TOY!)
@@ -365,79 +365,79 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									}),
 									header(HEADERS.Item, 178883, {	-- Greater Prideful Spirit
 										["description"] = "Spirit quality affects loot chance.",
-										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[11] },T3_PRIDEFUL_GROUP),
+										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[11] },T3_PRIDEFUL_GROUP),
 									}),
 								}),
 							},
 						}),
 						n(TIER_THREE, {
 							["icon"] = 3636841,
-							["g"] = {
+							["groups"] = {
 								n(ACHIEVEMENTS, {
 									ach(14780),	-- Meditation Master
 								}),
 								n(QUESTS, {
 									q(60641, {	-- Blossoming of the Grove
-										["sourceQuests"] = { 60640 },	-- Regrowth of the Grove
 										["provider"] = { "n", 166476 },	-- Warden Casad
+										["sourceQuests"] = { 60640 },	-- Regrowth of the Grove
 										["coord"] = { 33.4, 62.0, 1662 },
 									}),
 									q(62603, {	-- A Rare and Unusual Spirit (3)
-										["sourceQuests"] = { 60640 },	-- Regrowth of the Grove
 										["provider"] = { "n", 171107 },	-- Cultivator Littleflower
+										["sourceQuests"] = { 60640 },	-- Regrowth of the Grove
 										["coord"] = { 42.2, 52.9, 1662 },
-										["g"] = {
+										["groups"] = {
 											i(183805),	-- Tranquil Spirit of the Cosmos
 										},
 									}),
 									q(62444, {	-- Aid the Covenant
-										["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
 										["provider"] = { "n", 174324 },	-- Conservator Aoni
+										["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
 										["coord"] = { 32.1, 62.0, 1662 },
 										["isDaily"] = true,
 									}),
 									q(62600, {	-- Finding Inner Peace
-										["sourceQuests"] = { 62603 },	-- A Rare and Unusual Spirit (3)
 										["provider"] = { "n", 174507 },	-- Ohm of Meditation
+										["sourceQuests"] = { 62603 },	-- A Rare and Unusual Spirit (3)
 										["coord"] = { 25.6, 47.5, 1662 },
-										["cost"] = { { "i", 183805, 1 } },	-- Tranquil Spirit of the Cosmos
 										["maps"] = { ARDENWEALD },
+										["cost"] = { { "i", 183805, 1 } },	-- Tranquil Spirit of the Cosmos
 									}),
 									q(62587, {	-- In Search of Inner Calm (1)
-										["sourceQuests"] = { 62600 },	-- Finding Inner Peace
 										["provider"] = { "n", 174507 },	-- Ohm of Meditation
+										["sourceQuests"] = { 62600 },	-- Finding Inner Peace
 										["coord"] = { 25.6, 47.5, 1662 },
 										["maps"] = { HIGHMOUNTAIN },
 									}),
 									q(62588, {	-- In Search of Inner Calm (2)
-										["sourceQuests"] = { 62587 },	-- In Search of Inner Calm (1)
 										["provider"] = { "n", 174507 },	-- Ohm of Meditation
+										["sourceQuests"] = { 62587 },	-- In Search of Inner Calm (1)
 										["coord"] = { 25.6, 47.5, 1662 },
 										["maps"] = { ZULDAZAR },
 									}),
 									q(62589, {	-- In Search of Inner Calm (3)
-										["sourceQuests"] = { 62588 },	-- In Search of Inner Calm (2)
 										["provider"] = { "n", 174508 },	-- Ohm of Meditation
+										["sourceQuests"] = { 62588 },	-- In Search of Inner Calm (2)
 										["coord"] = { 25.6, 47.5, 1662 },
 										["maps"] = { WINTERSPRING },
 									}),
 									q(62590, {	-- In Search of Inner Calm (4)
-										["sourceQuests"] = { 62589 },	-- In Search of Inner Calm (3)
 										["provider"] = { "n", 174508 },	-- Ohm of Meditation
+										["sourceQuests"] = { 62589 },	-- In Search of Inner Calm (3)
 										["coord"] = { 25.6, 47.5, 1662 },
 										["maps"] = { HOWLING_FJORD },
 									}),
 									q(62591, {	-- In Search of Inner Calm (5)
-										["sourceQuests"] = { 62590 },	-- In Search of Inner Calm (4)
 										["provider"] = { "n", 174508 },	-- Ohm of Meditation
+										["sourceQuests"] = { 62590 },	-- In Search of Inner Calm (4)
 										["coord"] = { 25.6, 47.5, 1662 },
 										["maps"] = { THE_CAPE_OF_STRANGLETHORN },
 									}),
 									q(62592, {	-- Master of Inner Calm
-										["sourceQuests"] = { 62591 },	-- In Search of Inner Calm (5)
 										["provider"] = { "n", 174508 },	-- Ohm of Meditation
+										["sourceQuests"] = { 62591 },	-- In Search of Inner Calm (5)
 										["coord"] = { 25.6, 47.5, 1662 },
-										["g"] = {
+										["groups"] = {
 											i(183856),	-- Mystical Orb of Meditation (TOY!)
 										},
 									}),
@@ -446,46 +446,46 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						}),
 						n(TIER_FOUR, {
 							["icon"] = 3636847,
-							["g"] = {
+							["groups"] = {
 								n(ACHIEVEMENTS, {
 									ach(14789),	-- All Spirits Great and Small
 								}),
 								n(QUESTS, {
 									q(60642, {	-- The Grove Resplendent
-										["sourceQuests"] = { 60641 },	-- Blossoming of the Grove
 										["provider"] = { "n", 166476 },	-- Warden Casad
+										["sourceQuests"] = { 60641 },	-- Blossoming of the Grove
 										["coord"] = { 33.4, 62.0, 1662 },
 									}),
 									q(62625, {	-- A Rare and Unusual Spirit (4)
-										["sourceQuests"] = { 60641 },	-- Blossoming of the Grove
 										["provider"] = { "n", 171107 },	-- Cultivator Littleflower
+										["sourceQuests"] = { 60641 },	-- Blossoming of the Grove
 										["coord"] = { 42.2, 52.9, 1662 },
-										["g"] = {
+										["groups"] = {
 											i(183806),	-- Energetic Spirit of Curiosity
 										},
 									}),
 									q(62443, {	-- Aid the Covenant
-										["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
 										["provider"] = { "n", 174324 },	-- Conservator Aoni
+										["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
 										["coord"] = { 32.1, 62.0, 1662 },
 										["isDaily"] = true,
 									}),
 									q(62627, {	-- All Spirits Great and Small (1)
-										["sourceQuests"] = { 62625 },	-- A Rare and Unusual Spirit (4)
 										["provider"] = { "n", 174511 },	-- Lia the Curious
+										["sourceQuests"] = { 62625 },	-- A Rare and Unusual Spirit (4)
 										["coord"] = { 26.0, 63.8, 1662 },
-										["cost"] = { { "i", 183806, 1 } },	-- 1 Energetic Spirit of Curiosity
 										["maps"] = { FROSTFIRE_RIDGE },
+										["cost"] = { { "i", 183806, 1 } },	-- 1 Energetic Spirit of Curiosity
 									}),
 									q(62629, {	-- All Spirits Great and Small (2)
-										["sourceQuests"] = { 62627 },	-- All Spirits Great and Small (1)
 										["provider"] = { "n", 174511 },	-- Lia the Curious
+										["sourceQuests"] = { 62627 },	-- All Spirits Great and Small (1)
 										["coord"] = { 26.0, 63.8, 1662 },
 										["maps"] = { KUN_LAI_SUMMIT },
 									}),
 									q(62630, {	-- All Spirits Great and Small (3)
-										["sourceQuests"] = { 62629 },	-- All Spirits Great and Small (2)
 										["provider"] = { "n", 174511 },	-- Lia the Curious
+										["sourceQuests"] = { 62629 },	-- All Spirits Great and Small (2)
 										["coord"] = { 26.0, 63.8, 1662 },
 										["maps"] = { TIRAGARDE_SOUND },
 									}),
@@ -494,33 +494,33 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						}),
 						n(TIER_FIVE, {
 							["icon"] = 3636846,
-							["g"] = {
+							["groups"] = {
 								o(350978, {	-- Queen's Conservatory Cache
 									header(HEADERS.Item, 178879, {	-- Divine Dutiful Spirit
 										["description"] = "Spirit quality affects loot chance.",
-										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[3] },T5_DUTIFUL_GROUP),
+										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[3] },T5_DUTIFUL_GROUP),
 									}),
 									header(HEADERS.Item, 178878, {	-- Divine Martial Spirit
 										["description"] = "Spirit quality affects loot chance.",
-										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[6] },T5_MARTIAL_GROUP),
+										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[6] },T5_MARTIAL_GROUP),
 									}),
 									header(HEADERS.Item, 177700, {	-- Divine Untamed Spirit
 										["description"] = "Spirit quality affects loot chance.",
-										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[9] },appendGroups(T5_UNTAMED_GROUP, {
+										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[9] },appendGroups(T5_UNTAMED_GROUP, {
 											i(180723),	-- Enchanted Wakener's Runestag (MOUNT!)
 											i(181310),	-- Spirit Tender's Pack
 										})),
 									}),
 									header(HEADERS.Item, 178884, {	-- Divine Prideful Spirit
 										["description"] = "Spirit quality affects loot chance.",
-										["g"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[12] },T5_PRIDEFUL_GROUP),
+										["groups"] = sharedData({ ["cost"] = TOTAL_COST_COLLECTION[12] },T5_PRIDEFUL_GROUP),
 									}),
 									i(180977),	-- Spirit-Tender's Satchel
 								}),
 								n(VENDORS, {
 									n(174403, {	-- Seed Merchant Daybreak <Queen's Conservatory>
 										["coord"] = { 34.6, 60.6, 1662 },
-										["g"] = {
+										["groups"] = {
 											iensemble(184111, {	-- Ensemble: Conservator's Guise
 												["cost"] = { { "c", ANIMA, 12500 } },
 												["classes"] = MAIL_CLASSES,

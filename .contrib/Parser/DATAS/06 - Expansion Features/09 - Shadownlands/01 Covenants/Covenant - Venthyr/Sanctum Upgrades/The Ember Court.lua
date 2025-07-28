@@ -140,10 +140,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 	n(VENTHYR, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = 3641397,
-			["g"] = {
+			["groups"] = {
 				n(EMBER_COURT, {
 					["maps"] = { 1644 },	-- Ember Court (Scenario Map)
-					["g"] = {
+					["groups"] = {
 						faction(FACTION_THE_EMBER_COURT, {
 							["crs"] = { 165399 },	-- Lord Garridan
 							["maps"] = { REVENDRETH },
@@ -486,7 +486,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									14680,	-- Something for Everyone
 									14725,	-- We Happy Few
 								}},
-								["g"] = {
+								["groups"] = {
 									title(433),	-- <Name> the Party Herald
 								},
 							}),
@@ -656,7 +656,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						}),
 						n(QUESTS, sharedData({["isWeekly"] = true},{
 							q(61524, {	-- The Ember Court
-								["g"] = {
+								["groups"] = {
 									i(179958),	-- Ember Court Guest List (QI!)
 								},
 							}),
@@ -713,7 +713,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							q(60930, {	-- Lower Your Standards
 								["qg"] = 165500, -- Picky Stefan
 								["coord"] = { 32.9, 57.6, 1644 }, -- Ember Court
-								["g"] = {
+								["groups"] = {
 									o_repeated({
 										i(180470),	-- Wild Fungus
 										o(354079),	-- Scorchshroom
@@ -757,20 +757,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							q(60957, {	-- Ansel's Lucky Violin
 								["qg"] = 170881, -- Lucky Ansel
 								["coord"] = { 53.3, 36.5, 1644 }, -- Ember Court
-								["g"] = {
+								["groups"] = {
 									o(354173, {	-- Ansel's Lucky Violin
 										["coord"] = { 60, 48.2, 1644 },
-										["g"] = { i(180485) },	-- Ansel's Lucky Violin
+										["groups"] = { i(180485) },	-- Ansel's Lucky Violin
 									}),
 								},
 							}),
 							q(60960, {	-- Chiu's Lute
 								["qg"] = 170878, -- Chiu Brightcask
 								["coord"] = { 53.1, 36.2, 1644 }, -- Ember Court
-								["g"] = {
+								["groups"] = {
 									o(354174, {	-- Chiu's Lute
 										["coord"] = { 38, 31.9, 1644 },
-										["g"] = { i(180486) },	-- Chiu's Lute
+										["groups"] = { i(180486) },	-- Chiu's Lute
 									}),
 								},
 							}),
@@ -778,15 +778,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								["qg"] = 170874, -- Noko
 								["coord"] = { 54, 38.2, 1644 }, -- Ember Court
 								["crs"] = 170916,	-- Rowdy Roadie
-								["g"] = { i(180484) },	-- Noko's Flute
+								["groups"] = { i(180484) },	-- Noko's Flute
 							}),
 						})),
 						n(SCENARIO_COMPLETION, {
 							["description"] = "Some rewards drop from the non-Extravagant tribute chests, but targeting the Extravagant tribute from Elated guests is the best way to get rare loot.",	-- typically a few pieces will drop from the regular/medium chests, but it appears to be the same loot that drops from Extravagant chests - just listing the Extravagant chest for source and duplication reduction, especially since some pieces drop from multiple guests' chests
-							["g"] = {
+							["groups"] = {
 								o(356697, {	-- Alexandros Mograine's Extravagant Tribute
 									["crs"] = { 171833 },	-- Alexandros Mograine <The Ashbringer>
-									["g"] = appendGroups(ALEXANDROS_GROUP, {
+									["groups"] = appendGroups(ALEXANDROS_GROUP, {
 										i(181616),	-- A Treatise on the Great Battles of Lordaeron
 										i(181617),	-- Command the Field
 										i(183860),	-- The Death March: An Introduction to Maldraxxi Etiquette
@@ -796,14 +796,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								}),
 								n(165686, {	-- Ashen Amalgamation
 									["description"] = "To summon this mob, you need to collect |cFF1eff00Anima-Infused Water|r from Sika's tribute, which makes water buckets appear around the Ember Court.  Use the |cFFFFFFFFTraditional|r decorations, and when the candles start fires you can douse them with the water.  Put out enough fires, and the rare will spawn.",
-									["g"] = {
+									["groups"] = {
 										i(183107),	-- Char (PET!)
 									},
 								}),
 								o(356693, {	-- Baroness Vashj's Extravagant Tribute
 									["crs"] = { 168444 },	-- Baroness Vashj <Matron of Spies>
 									["coord"] = { 47.5, 41.2, 1644 }, -- Ember Court
-									["g"] = appendGroups(VASHJ_GROUP, {
+									["groups"] = appendGroups(VASHJ_GROUP, {
 										i(178894),	-- Decree: Baroness Vashj's Boon
 										i(183860),	-- The Death March: An Introduction to Maldraxxi Etiquette
 										i(178892),	-- Decree: Baroness Vashj's Favor
@@ -813,7 +813,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								o(356720, {	-- Choofa's Extravagant Tribute
 									["crs"] = { 168449 },	-- Choofa
 									["coord"] = { 47.5, 41.2, 1644 }, -- Ember Court
-									["g"] = appendGroups(CHOOFA_GROUP, {
+									["groups"] = appendGroups(CHOOFA_GROUP, {
 										i(178902),	-- Rejuvenating Sprig
 										i(178899),	-- Treecorn
 										i(178901),	-- Vineseed
@@ -826,14 +826,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								o(356752, {	-- Cryptkeeper Kassir's Extravagant Tribute
 									["crs"] = { 168450 },	-- Cryptkeeper Kassir
 									["coord"] = { 47.5, 41.2, 1644 }, -- Ember Court
-									["g"] = appendGroups(KASSIR_GROUP, {
+									["groups"] = appendGroups(KASSIR_GROUP, {
 										i(183862),	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
 									}),
 								}),
 								o(356716, {	-- Droman Aliothe's Extravagant Tribute
 									["crs"] = { 171847 },	-- Droman Aliothe <Court of Night>
 									["coord"] = { 47.5, 41.2, 1644 }, -- Ember Court
-									["g"] = appendGroups(DORMAN_GROUP, {
+									["groups"] = appendGroups(DORMAN_GROUP, {
 										i(183861),	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables
 										i(181438),	-- The Wild Drum (EC!)
 									}),
@@ -841,7 +841,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								o(356700, {	-- Grandmaster Vole's Extravagant Tribute
 									["crs"] = { 171848 },	-- Grandmaster Vole
 									["coord"] = { 47.5, 41.2, 1644 }, -- Ember Court
-									["g"] = appendGroups(VOLE_GROUP, {
+									["groups"] = appendGroups(VOLE_GROUP, {
 										i(181761),	-- The Grandmaster's Voucher
 										i(181765),	-- Marcel Mullby's Marker
 										i(183860),	-- The Death March: An Introduction to Maldraxxi Etiquette
@@ -851,7 +851,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								o(356712, {	-- Hunt-Captain Korayn's Extravagant Tribute
 									["crs"] = { 171836 },	-- Hunt-Captain Korayn <The Wild Hunt>
 									["coord"] = { 47.5, 41.2, 1644 }, -- Ember Court
-									["g"] = appendGroups(KORAYN_GROUP, {
+									["groups"] = appendGroups(KORAYN_GROUP, {
 										i(181618),	-- Gorm Quishe Platter
 										i(181620),	-- Hard Boiled Gorm Egg
 										i(183861),	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables
@@ -865,14 +865,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										171851,	-- Pelagos
 									},
 									["coord"] = { 47.5, 41.2, 1644 }, -- Ember Court
-									["g"] = appendGroups(KLEIA_AND_PELAGOS_GROUP, {
+									["groups"] = appendGroups(KLEIA_AND_PELAGOS_GROUP, {
 										i(183863),	-- The Proper Path and Etiquette for Aspirants
 									}),
 								}),
 								o(356709, {	-- Lady Moonberry's Extravagant Tribute
 									["crs"] = { 171830 },	-- Lady Moonberry <Court of Night>
 									["coord"] = { 47.5, 41.2, 1644 }, -- Ember Court
-									["g"] = appendGroups(MOONBERRY_GROUP, {
+									["groups"] = appendGroups(MOONBERRY_GROUP, {
 										i(181613),	-- Decree: Lady Moonberry's Boon
 										i(181607),	-- Decree: Lady Moonberry's Esteem
 										i(183861),	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables
@@ -883,7 +883,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								o(356728, {	-- Mikanikos' Extravagant Tribute
 									["crs"] = { 171831 },	-- Mikanikos <Forgelite Prime>
 									["coord"] = { 47.5, 41.2, 1644 }, -- Ember Court
-									["g"] = appendGroups(MIKANIKOS_GROUP, {
+									["groups"] = appendGroups(MIKANIKOS_GROUP, {
 										i(181563),	-- Decree: Mikanikos's Boon
 										i(181564),	-- Decree: Mikanikos's Esteem
 										i(183863),	-- The Proper Path and Etiquette for Aspirants
@@ -894,7 +894,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								o(356705, {	-- Plague Deviser Marileth's Extravagant Tribute
 									["crs"] = { 171852 },	-- Plague Deviser Marileth
 									["coord"] = { 47.5, 41.2, 1644 }, -- Ember Court
-									["g"] = appendGroups(MARILETH_GROUP, {
+									["groups"] = appendGroups(MARILETH_GROUP, {
 										i(181621),	-- Hyper-Reactive Slime Sample
 										i(181622),	-- Slightly Irradiated Slime Sample
 										i(183860),	-- The Death March: An Introduction to Maldraxxi Etiquette
@@ -905,7 +905,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								o(356725, {	-- Polemarch Adrestes' Extravagant Tribute
 									["crs"] = { 168447 },	-- Polemarch Adrestes
 									["coord"] = { 47.5, 41.2, 1644 }, -- Ember Court
-									["g"] = appendGroups(ADRESTES_GROUP, {
+									["groups"] = appendGroups(ADRESTES_GROUP, {
 										i(178897),	-- Stalwart Pauldron of Resolve
 										i(178896),	-- Stalwart Gloves of Resolve
 										i(183863),	-- The Proper Path and Etiquette for Aspirants
@@ -920,7 +920,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										171839,	-- Rendle
 									},
 									["coord"] = { 47.5, 41.2, 1644 }, -- Ember Court
-									["g"] = appendGroups(RENDLE_AND_CUDGELFACE_GROUP, {
+									["groups"] = appendGroups(RENDLE_AND_CUDGELFACE_GROUP, {
 										i(181780),	-- An Undelivered Tradesman's Shipment
 										i(183862),	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
 										i(181779),	-- A "Wrapped" Weapon
@@ -935,7 +935,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								o(356737, {	-- Sika's Extravagant Tribute
 									["crs"] = { 171854 },	-- Sika
 									["coord"] = { 47.5, 41.2, 1644 }, -- Ember Court
-									["g"] = appendGroups(SIKA_GROUP, {
+									["groups"] = appendGroups(SIKA_GROUP, {
 										i(183886),	-- Sika's Rare Ore Pouch
 										i(183885),	-- Sika's Spare Ore Pouch
 										i(183863),	-- The Proper Path and Etiquette for Aspirants
@@ -946,7 +946,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								o(356748, {	-- Stonehead's Extravagant Tribute
 									["crs"] = { 171856 },	-- Stonehead
 									["coord"] = { 47.5, 41.2, 1644 }, -- Ember Court
-									["g"] = appendGroups(STONEHEAD_GROUP, {
+									["groups"] = appendGroups(STONEHEAD_GROUP, {
 										i(183709),	-- Bronze-Bound Sinstone
 										i(183862),	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
 										i(181771),	-- Stonehead's Best Bud Bracelet
@@ -960,7 +960,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								o(356741, {	-- The Countess' Extravagant Tribute
 									["crs"] = { 165269 },	-- The Countess <Harvester of Desire>
 									["coord"] = { 47.5, 41.2, 1644 }, -- Ember Court
-									["g"] = appendGroups(COUNTESS_GROUP, {
+									["groups"] = appendGroups(COUNTESS_GROUP, {
 										i(182209),	-- Desire's Battle Gargon (MOUNT!)
 										i(181566),	-- Decree: The Countess's Boon
 										i(183862),	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
@@ -974,25 +974,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						}),
 						n(TIER_ONE, {
 							["icon"] = 3750312,
-							["g"] = {
+							["groups"] = {
 								-- TODO: i tipped the scales toward "formal" as hard as i could in the initial scenario, and got quests for 'formal refreshments' and 'formal entertainment.'  if you tip them towards casual (or land in the middle) what happens?
 								q(59660, {	-- A New Court
-									["sourceQuests"] = { 63065 },	-- Sanctum Upgrade: The Ember Court
 									["provider"] = { "n", 161979 },	-- Theotar
+									["sourceQuests"] = { 63065 },	-- Sanctum Upgrade: The Ember Court
 									["coord"] = { 49.9, 19.3, SINFALL_REACHES },
 								}),
 								q(61351, {	-- Ancient Sinstone (+Formal)
 									["provider"] = { "n", 164965 },	-- Prince Renathal
-									["isWeekly"] = true,	-- i guess?
 									["cost"] = { { "i", 181248, 1 } },	-- 1x Ancient Sinstone
+									["isWeekly"] = true,	-- i guess?
 									["crs"] = { 171705 },	-- Court Crusher
 								}),
 								q(61899, {	-- Anima Tastings
-								--	TODO: might also be tied to purchase of Staff: Stage Crew, which i purchased right after scenario
-									["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },
 									["provider"] = { "n", 165494 },	-- Hips
 									["coord"] = { 30.7, 41.8, REVENDRETH },
-									["g"] = {
+									["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },
+								--	TODO: might also be tied to purchase of Staff: Stage Crew, which i purchased right after scenario
+									["groups"] = {
 										i(181533),	-- Stock: Anima Samples (EC!)
 										i(182360),	-- Fresh Ardenweald Anima (QI!)
 										i(182358),	-- Fresh Bastion Anima (QI!)
@@ -1001,80 +1001,80 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61900, {	-- Comfy Chairs
-									["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
 									["coord"] = { 29.8, 45.4, REVENDRETH },
-									["g"] = {
+									["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },
+									["groups"] = {
 										i(181535),	-- Stock: Comfy Chairs (EC!)
 										i(182362),	-- Reclaimed Lumber (QI!)
 										i(182354),	-- Soft Vulpin Fur (QI!)
 									},
 								}),
 								q(63694, {	-- Choofa's Best Friend
-									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Choofa?
 									["provider"] = { "n", 160814 },	-- Choofa
 									["coord"] = { 63.7, 36.6, ARDENWEALD },
+									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Choofa?
 								}),
 								q(63685, {	-- Cryptkeeper Kassir's Best Friend
-									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Cryptkeeper Kassir?
 									["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
 									["coord"] = { 70.1, 56.1, REVENDRETH },
+									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Cryptkeeper Kassir?
 								}),
 								q(63695, {	-- Droman Aliothe's Best Friend
-									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Droman Aliothe?
 									["provider"] = { "n", 160894 },	-- Droman Aliothe
 									["coord"] = { 60.0, 53.8, ARDENWEALD },
+									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Droman Aliothe?
 								}),
 								q(61407, {	-- Ember Court: Atoning Rituals
+									["provider"] = { "n", 167332 },	-- Gresit
 									["sourceQuests"] = {
 										61706,	-- Ember Court: Entertainment
 										57929,	-- Hunting an Inquisitor
 									},
-									["provider"] = { "n", 167332 },	-- Gresit
 									["coord"] = { 71.7, 40.3, REVENDRETH },
-									["g"] = {
+									["groups"] = {
 										i(176130),	-- Contract: Atoning Rituals (EC!)
 									},
 								}),
 								q(61405, {	-- Ember Court: Divine Desserts
-									["sourceQuests"] = { 61880 },	-- Honored Attendance
-									["isWorldQuest"] = true,	-- shows up in /attwq without this despite having no attached collectibles
 									["provider"] = { "n", 172448 },	-- Stewart
+									["sourceQuests"] = { 61880 },	-- Honored Attendance
 									["coord"] = { 33.9, 66.5, BASTION },
-									["g"] = {
+									["isWorldQuest"] = true,	-- shows up in /attwq without this despite having no attached collectibles
+									["groups"] = {
 										i(176135),	-- Contract: Divine Desserts (EC!)
 									},
 								}),
 								q(61706, {	-- Ember Court: Entertainment
-									["sourceQuests"] = { 59661 },	-- Ember Court Rehearsal
 									["provider"] = { "n", 164966 },	-- Temel
+									["sourceQuests"] = { 59661 },	-- Ember Court Rehearsal
 									["coord"] = { 27.9, 43.1, REVENDRETH },
 								}),
 								q(61408, {	-- Ember Court: Glimpse of the Wilds
-									["sourceQuests"] = { 61880 },	-- Honored Attendance
-									["isWorldQuest"] = true,	-- shows up in /attwq without this despite having no attached collectibles
 									["provider"] = { "n", 172352 },	-- Niya
+									["sourceQuests"] = { 61880 },	-- Honored Attendance
 									["coord"] = { 56.3, 55.6, ARDENWEALD },
-									["g"] = {
+									["isWorldQuest"] = true,	-- shows up in /attwq without this despite having no attached collectibles
+									["groups"] = {
 										i(176131),	-- Contract: Glimpse of the Wilds (EC!)
 										i(183944),	-- Heron Net (QI!)
 									},
 								}),
 								q(61704, {	-- Ember Court: Guest RSVPs
-								--	also requires Absolution Crypt storyline, add that SQ upon completion
-									["sourceQuests"] = { 59661 },	-- Ember Court Rehearsal
 									["provider"] = { "n", 164966 },	-- Temel
+									["sourceQuests"] = { 59661 },	-- Ember Court Rehearsal
 									["coord"] = { 27.9, 43.1, REVENDRETH },
-									["g"] = {
+								--	also requires Absolution Crypt storyline, add that SQ upon completion
+									["groups"] = {
 										i(179958),	-- Ember Court Guest List (QI!)
 									},
 								}),
 								q(61738, {	-- Ember Court: Lost Chalice Band
-									["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },
-									["description"] = "Available after purchasing Staff: Stage Crew.",
 									["provider"] = { "n", 173173 },	-- Caretaker Tedo
 									["coord"] = { 55.1, 43.7, REVENDRETH },
-									["g"] = {
+									["description"] = "Available after purchasing Staff: Stage Crew.",
+									["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },
+									["groups"] = {
 										i(176132),	-- Contract: Lost Chalice Band (EC!)
 										i(182302),	-- Band Promotional Posters (QI!)
 										i(182310),	-- Confiscated Instruments (QI!)
@@ -1083,19 +1083,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61403, {	-- Ember Court: Maldraxxus Army
-									["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },
-									["sourceQuest"] = 58407,	-- The Medallion of Dominion
 									["provider"] = { "n", 172964 },	-- Emeni
+									["sourceQuest"] = 58407,	-- The Medallion of Dominion
 									["coord"] = { 54.2, 69.3, MALDRAXXUS },
-									["g"] = {
+									["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },
+									["groups"] = {
 										i(176140),	-- Contract: Maldraxxian Army (EC!)
 									},
 								}),
 								q(61399, {	-- Ember Court: Mortal Reminders
-									["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },
 									["provider"] = { "n", 156791 },	-- Keeper Ta'saran
 									["coord"] = { 59.2, 75.1, ORIBOS },
-									["g"] = {
+									["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },
+									["groups"] = {
 										i(176128),	-- Contract: Mortal Reminders (EC!)
 										i(181356),	-- Glenzu Original (QI!)
 										i(181354),	-- Regenerative Magma (QI!)
@@ -1104,10 +1104,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61406, {	-- Ember Court: Mushroom Surprise
-									["description"] = "Available after purchasing Staff: Waiters.",
 									["provider"] = { "n", 168429 },	-- Melody Madcap
 									["coord"] = { 40.2, 41.2, MALDRAXXUS },
-									["g"] = {
+									["description"] = "Available after purchasing Staff: Waiters.",
+									["groups"] = {
 										i(176136),	-- Contract: Mushroom Surprise! (EC!)
 										i(181828),	-- Disgusting Foraging Bag (QI!)
 										o(356596, {	-- Feather Cap
@@ -1127,15 +1127,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 												{ 67.8, 33.2, ARDENWEALD },
 												{ 69.5, 33.9, ARDENWEALD },
 											},
-											["g"] = { i(181839) },	-- Violet Frill (QI!)
+											["groups"] = { i(181839) },	-- Violet Frill (QI!)
 										}),
 									},
 								}),
 								q(61400, {	-- Ember Court: Mystery Mirrors
-									["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },
 									["provider"] = { "n", 172986 },	-- Simone
 									["coord"] = { 24.6, 50.2, REVENDRETH },
-									["g"] = {
+									["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },
+									["groups"] = {
 										i(176127),	-- Contract: Mystery Mirrors (EC!)
 										i(183919),	-- Ashen Core (QI!)
 										i(183912),	-- Scorched Mirror Fragment (QI!)
@@ -1143,15 +1143,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61705, {	-- Ember Court: Refreshments
-									["sourceQuests"] = { 59661 },	-- Ember Court Rehearsal
 									["provider"] = { "n", 164966 },	-- Temel
+									["sourceQuests"] = { 59661 },	-- Ember Court Rehearsal
 									["coord"] = { 27.9, 43.1, REVENDRETH },
 								}),
 								q(61402, {	-- Ember Court: Stoneborn Reserves
-									["description"] = "Available after purchasing Building: Guardhouse.",
 									["provider"] = { "n", 172502 },	-- Chelra the Bladewall
 									["coord"] = { 26.5, 29.1, REVENDRETH },
-									["g"] = {
+									["description"] = "Available after purchasing Building: Guardhouse.",
+									["groups"] = {
 										i(176139),	-- Contract: Stoneborn Reserves (EC!)
 										o(355971, {	-- Stoneborn Glaive
 											i(181500),	-- Stoneborn Glaive (QI!)
@@ -1159,97 +1159,97 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61398, {	-- Ember Court: Traditional
-									["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },
 									["provider"] = { "n", 156822 },	-- Mistress Mihaela
 									["coord"] = { 61.3, 63.8, REVENDRETH },
-									["g"] = {
+									["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },
+									["groups"] = {
 										i(176126),	-- Contract: Traditional Theme (EC!)
 										i(181473),	-- Candle Wax Chunk (QI!)
 									},
 								}),
 								q(61404, {	-- Ember Court: Tubbins's Tea Party
-									["sourceQuests"] = { 61705 },	-- Ember Court: Refreshments
 									["provider"] = { "n", 167863 },	-- Tubbins
+									["sourceQuests"] = { 61705 },	-- Ember Court: Refreshments
 									["coord"] = { 30.9, 57.6, REVENDRETH },
-									["g"] = {
+									["groups"] = {
 										i(176134),	-- Contract: Tubbins's Tea Party (EC!)
 										i(181370),	-- Pristine Water (QI!)
 										i(183943),	-- Tubbins's Bucket (QI!)
 									},
 								}),
 								q(61401, {	-- Ember Court: Venthyr Volunteers
-									["description"] = "Available after purchasing Building: Guardhouse.",
 									["provider"] = { "n", 172614 },	-- Nadija the Mistblade
 									["coord"] = { 60.9, 39.5, REVENDRETH },
-									["g"] = {
+									["description"] = "Available after purchasing Building: Guardhouse.",
+									["groups"] = {
 										i(176138),	-- Contract: Venthyr Volunteers (EC!)
 										i(181716),	-- Recruiting Posters (QI!)
 									},
 								}),
 								q(61892, {	-- Ember Court Ambassador 1 - Revendreth
-									["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },
 									["provider"] = { "n", 165453 },	-- Lady Ilinca <Court Concierge>
 									["coord"] = { 28.5, 41.1, REVENDRETH },
-									["g"] = {
+									["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },
+									["groups"] = {
 										i(181521),	-- Ember Court Ambassador (EC!)
 									},
 								}),
 								q(61893, {	-- Ember Court Ambassador 2 - Ardenweald
-									["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },
-									["sourceQuests"] = { 61892 },	-- Ember Court Ambassador 1 - Revendreth
 									["provider"] = { "n", 165453 },	-- Lady Ilinca
+									["sourceQuests"] = { 61892 },	-- Ember Court Ambassador 1 - Revendreth
 									["coord"] = { 28.5, 41.1, REVENDRETH },
-									["g"] = {
+									["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },
+									["groups"] = {
 										i(181524),	-- Staff: Ambassador (EC!)
 									},
 								}),
 								q(61894, {	-- Ember Court Ambassador 3 - Maldraxxus
-									["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },
-									["sourceQuests"] = { 61893 },	-- Ember Court Ambassador 2 - Ardenweald
 									["provider"] = { "n", 165453 },	-- Lady Ilinca
+									["sourceQuests"] = { 61893 },	-- Ember Court Ambassador 2 - Ardenweald
 									["coord"] = { 28.5, 41.1, REVENDRETH },
-									["g"] = {
+									["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },
+									["groups"] = {
 										i(182342),	-- Staff: Maldraxxus Ambassador (EC!)
 									},
 								}),
 								q(61895, {	-- Ember Court Ambassador 4 - Bastion
-									["minReputation"] = { FACTION_THE_EMBER_COURT, EXALTED },
-									["sourceQuests"] = { 61894 },	-- Ember Court Ambassador 3 - Maldraxxus
 									["provider"] = { "n", 165453 },	-- Lady Ilinca
+									["sourceQuests"] = { 61894 },	-- Ember Court Ambassador 3 - Maldraxxus
 									["coord"] = { 28.5, 41.1, REVENDRETH },
-									["g"] = {
+									["minReputation"] = { FACTION_THE_EMBER_COURT, EXALTED },
+									["groups"] = {
 										i(182343),	-- Staff: Bastion Ambassador (EC!)
 									},
 								}),
 								q(59661, {	-- Ember Court Rehearsal
-									["sourceQuests"] = { 59660 },	-- A New Court
 									["provider"] = { "n", 164966 },	-- Temel
+									["sourceQuests"] = { 59660 },	-- A New Court
 									["coord"] = { 27.9, 43.1, REVENDRETH },
 								}),
 								q(61882, {	-- Formal Entertainment
-									["sourceQuests"] = { 61407 },	-- Ember Court: Atoning Rituals
 									["provider"] = { "n", 167332 },	-- Gresit
+									["sourceQuests"] = { 61407 },	-- Ember Court: Atoning Rituals
 									["coord"] = { 71.7, 40.3, REVENDRETH },
 								}),
 								q(61884, {	-- Formal Refreshments
-									["sourceQuests"] = { 61404 },	-- Ember Court: Tubbins's Tea Party
 									["provider"] = { "n", 167863 },	-- Tubbins
+									["sourceQuests"] = { 61404 },	-- Ember Court: Tubbins's Tea Party
 									["coord"] = { 30.9, 57.6, REVENDRETH },
 								}),
 								q(63696, {	-- Grandmaster Vole's Best Friend
-									-- ["minReputation"] = { FACTION_EMBER_COURT_VOLE,  },	-- TODO, Best Friend w/ Grandmaster Vole?
 									["provider"] = { "n", 163019 },	-- Grandmaster Vole
 									["coord"] = { 52.8, 49.2, MALDRAXXUS },
+									-- ["minReputation"] = { FACTION_EMBER_COURT_VOLE,  },	-- TODO, Best Friend w/ Grandmaster Vole?
 								}),
 								q(61880, {	-- Honored Attendance
-									["sourceQuests"] = { 61704 },	-- Ember Court: Guest RSVPs
 									["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
+									["sourceQuests"] = { 61704 },	-- Ember Court: Guest RSVPs
 									["coord"] = { 70.0, 56.2, REVENDRETH },
 								}),
 								q(63697, {	-- Kleia and Pelagos's Best Friend
-									-- ["minReputation"] = { FACTION_EMBER_COURT_KLEIA_PELAGOS,  },	-- TODO, Best Friend w/ Kleia and Pelagos?
 									["provider"] = { "n", 174916 },	-- Kleia
 									["coord"] = { 55.8, 86.4, BASTION },
+									-- ["minReputation"] = { FACTION_EMBER_COURT_KLEIA_PELAGOS,  },	-- TODO, Best Friend w/ Kleia and Pelagos?
 								}),
 								q(62626, {	-- Mullby's Marker
 									["provider"] = { "i", 181765 },	-- Marcel Mullby's Marker
@@ -1258,180 +1258,178 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								q(63213, {	-- Naladu the Elder
 									["provider"] = { "n", 176253 },	-- Elder Naladu
 									["coord"] = { 61.8, 59.8, 1644 },	-- Ember Court
-									["g"] = {
+									["groups"] = {
 										i(184627, {	-- Sacrificial Red Envelope
 											i(184628),	-- Elder's Sacrificial Moonstone
 										}),
 									},
 								}),
 								q(63698, {	-- Plague Deviser Marileth's Best Friend
-									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Plague Deviser Marileth?
 									["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 									["coord"] = { 60.4, 71.6, MALDRAXXUS },
+									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Plague Deviser Marileth?
 								}),
 								q(62073, {	-- Restock: Band Shirts
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165494 },	-- Hips
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["coord"] = { 30.7, 41.7, REVENDRETH },
 									["cost"] = {
 										{ "i", 173202, 10 },	-- 10x Shrouded Cloth
 										{ "i", 172230, 5 },		-- 5x Soul Dust
 										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
+									["repeatable"] = true,
 								}),
 								q(62064, {	-- Restock: Broken Mirrors
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["coord"] = { 29.8, 45.4, REVENDRETH },
 									["cost"] = {
 										{ "i", 173109, 5 },	-- 5x Angerseye
 										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
+									["repeatable"] = true,
 								}),
 								q(62066, {	-- Restock: Dredger Pool
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["coord"] = { 29.8, 45.4, REVENDRETH },
 									["cost"] = {
 										{ "i", 171263, 10 },	-- 10x Potion of Soul Purity
 										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
+									["repeatable"] = true,
 								}),
 								q(62106, {	-- Restock: Enchantments
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["coord"] = { 32.1, 41.6, REVENDRETH },
 									["cost"] = {
 										{ "i", 172416, 1 },	-- Enchant Bracers - Shaded Hearthing
 										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
+									["repeatable"] = true,
 								}),
 								q(62094, {	-- Restock: Exploratory Meals
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165490 },	-- Picky Stefan
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["coord"] = { 29.0, 44.3, REVENDRETH },
 									["cost"] = {
 										{ "i", 173060, 20 },	-- 20x Aerated Water
 										{ "i", 171274, 1 },		-- 1x Potion of Spectral Stamina
 										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
+									["repeatable"] = true,
 								}),
 								q(62078, {	-- Restock: Fashion Accessories
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165494 },	-- Hips
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["coord"] = { 30.7, 41.7, REVENDRETH },
 									["cost"] = {
 										{ "i", 173141, 1 },		-- 1x Masterful Laestrite Choker
 										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
+									["repeatable"] = true,
 								}),
 								q(62084, {	-- Restock: Fine Cutlery
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165490 },	-- Picky Stefan
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["coord"] = { 29.0, 44.3, REVENDRETH },
 									["cost"] = {
 										{ "i", 171828, 10 },	-- 10x Laestrite Ore
 										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
+									["repeatable"] = true,
 								}),
 								q(61916, {	-- Restock: Fire Damage
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["coord"] = { 29.8, 45.4, REVENDRETH },
 									["cost"] = {
 										{ "i", 173202, 10 },	-- 20x Shrouded Cloth
 										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
+									["repeatable"] = true,
 								}),
 								q(62070, {	-- Restock: Fragrant Flowers
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165494 },	-- Hips
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["coord"] = { 30.7, 41.7, REVENDRETH },
 									["cost"] = {
 										{ "i", 170554, 1 },		-- 1x Vigil's Torch
 										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
+									["repeatable"] = true,
 								}),
 								q(62076, {	-- Restock: Free Press
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165494 },	-- Hips
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["coord"] = { 30.7, 41.7, REVENDRETH },
 									["cost"] = {
 										{ "i", 173059, 1 },		-- 1x Luminous Ink
 										{ "i", 175886, 10 },	-- 10x Dark Parchment
 										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
+									["repeatable"] = true,
 								}),
 								q(62080, {	-- Restock: Herbal Tea
-								--	showed up after Week 1 Ember Court
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165490 },	-- Picky Stefan
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["coord"] = { 29.0, 44.2, REVENDRETH },
 									["cost"] = {
 										{ "i", 168583, 1 },	-- 1x Widowbloom
 										{ "i", 168589, 1 },	-- 1x Marrowroot
 										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
+									["repeatable"] = true,
+								--	showed up after Week 1 Ember Court
 								}),
 								q(62087, {	-- Restock: Imported Dinnerware
-								--	showed up after Week 3 Ember Court
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165490 },	-- Picky Stefan
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["coord"] = { 29.0, 44.3, REVENDRETH },
 									["cost"] = {
 										{ "i", 171831, 1 },	-- 1x Phaedrum Ore
 										{ "i", 177061, 5 },	-- 5x Twilight Bark
 										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
+									["repeatable"] = true,
+								--	showed up after Week 3 Ember Court
 								}),
 								q(62095, {	-- Restock: Medic's Tent
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["coord"] = { 32.1, 41.6, REVENDRETH },
 									["cost"] = {
 										{ "i", 173192, 10 },	-- 10x Shrouded Cloth Bandage
 										{ "i", 171267, 1 },		-- 1x Spiritual Healing Potion
 										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
+									["repeatable"] = true,
 								}),
 								q(62083, {	-- Restock: Medical Supplies
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165490 },	-- Picky Stefan
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["coord"] = { 29.0, 44.3, REVENDRETH },
 									["cost"] = {
 										{ "i", 171301, 10 },	-- 10x Spiritual Anti-Venom
 										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
+									["repeatable"] = true,
 								}),
 								q(62065, {	-- Restock: My Favorite Table
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["coord"] = { 29.8, 45.4, REVENDRETH },
 									["cost"] = {
 										{ "i", 177061, 10 },	-- 10x Twilight Bark
 										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
+									["repeatable"] = true,
 								}),
 								q(62082, {	-- Restock: Personal Stash
-								--	showed up after Week 4 Ember Court
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165490 },	-- Picky Stefan
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["coord"] = { 29.0, 44.3, REVENDRETH },
 									["cost"] = {
 										{ "i", 172069, 1 },		-- 1x Banana Beef Pudding
@@ -1439,154 +1437,156 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										{ "i", 172051, 1 },		-- 1x Steak a la Mode
 										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
+									["repeatable"] = true,
+								--	showed up after Week 4 Ember Court
 								}),
 								q(62069, {	-- Restock: Sinstones
-								--	showed up after Week 2 Ember Court
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165494 },	-- Hips
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["coord"] = { 30.7, 41.7, REVENDRETH },
 									["cost"] = {
 										{ "c", 1820, 20 },	-- 20x Infused Ruby
 										{ "c", 1816, 50 },	-- 50x Sinstone Fragment
 									},
+									["repeatable"] = true,
+								--	showed up after Week 2 Ember Court
 								}),
 								q(62075, {	-- Restock: Soul Cages
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165494 },	-- Hips
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["coord"] = { 30.7, 41.7, REVENDRETH },
 									["cost"] = {
 										{ "i", 172089, 20 },	-- 20x Desolate Leather
 										{ "i", 171832, 1 },		-- 1x Sinvyr Ore
 										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
+									["repeatable"] = true,
 								}),
 								q(62067, {	-- Restock: Statues
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["coord"] = { 29.8, 45.4, REVENDRETH },
 									["cost"] = {
 										{ "i", 171840, 60 },	-- 60x Porous Stone
 										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
+									["repeatable"] = true,
 								}),
 								q(62062, {	-- Restock: Stolen Rugs
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["coord"] = { 29.8, 45.4, REVENDRETH },
 									["cost"] = {
 										{ "i", 171840, 20 },	-- 20x Porous Stone
 										{ "i", 173202, 10 },	-- 10x Shrouded Cloth
 										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
+									["repeatable"] = true,
 								}),
 								q(62104, {	-- Restock: Stoneborn Reserves
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165496 },
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["coord"] = { 32.1, 41.6, REVENDRETH },
 									["cost"] = {
 										{ "i", 171841, 10 },	-- 10x Shaded Stone
 										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
+									["repeatable"] = true,
 								}),
 								q(62108, {	-- Restock: Strategic Codices
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["coord"] = { 32.1, 41.6, REVENDRETH },
 									["cost"] = {
 										{ "i", 184090, 1 },		-- 1x Potion of the Psychopomp's Speed
 										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
+									["repeatable"] = true,
 								}),
 								q(62109, {	-- Restock: Surveillance Equipment
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["coord"] = { 32.1, 41.6, REVENDRETH },
 									["cost"] = {
 										{ "i", 171266, 5 },		-- 5x Potion of the Hidden Spirit
 										{ "i", 171264, 5 },		-- 5x Potion of Shaded Sight
 										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
+									["repeatable"] = true,
 								}),
 								q(62105, {	-- Restock: Unconventional Weapons
-									["repeatable"] = true,
-									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["coord"] = { 32.1, 41.6, REVENDRETH },
 									["cost"] = {
 										{ "i", 172903, 1 },		-- 1x Nutcracker Grenade
 										{ "i", 172904, 1 },		-- 1x Shadow Land Mine
 										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
+									["repeatable"] = true,
 								}),
 								q(60236, {	-- RSVP: Cryptkeeper Kassir
+									["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
 									["sourceQuests"] = {
 										57928,	-- Atonement Crypt Key
 										61704,	-- Ember Court: Guest RSVPs
 									},
-									["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
-									["isDaily"] = true,
 									["coord"] = { 70.2, 56.1, REVENDRETH },
-									["g"] = {
+									["isDaily"] = true,
+									["groups"] = {
 										i(178526),	-- Lost Cryptkeeper's Ring (QI!)
 										i(176120),	-- RSVP: Cryptkeeper Kassir
 									},
 								}),
 								q(61129, {	-- RSVP: Droman Aliothe
-									["description"] = "1. Purchase a |cFFFFFFFFNecklace of Dredbat Fangs|r from Ta'tru in Revendreth (|cFFFFFFFF51.1, 78.8|r).  The price of this item changes each week.\n\n2. Exchange the necklace for an |cFFFFFFFFAquamarine Cartel Chit|r from Ta'lan the Antiquary in the Broker's Den in Oribos (|cFFFFFFFF51.6, 44.6|r).\n\n3. Exchange the chit for a |cFFFFFFFFTeregeer Crystal|r from Acquirer Ta'gosh in the Ring of Fates in Oribos (|cFFFFFFFF61.7, 72.0|r).\n\n4. Return to Revendreth and exchange the crystal for the |cFFFFFFFFPreserved Berries|r from Ta'ruca (|cFFFFFFFF51.1, 78.5|r).",
 									["provider"] = { "n", 160894 },	-- Droman Aliothe
-									["isDaily"] = true,	-- according to the API!
 									["coord"] = { 60.1, 53.8, ARDENWEALD },
+									["description"] = "1. Purchase a |cFFFFFFFFNecklace of Dredbat Fangs|r from Ta'tru in Revendreth (|cFFFFFFFF51.1, 78.8|r).  The price of this item changes each week.\n\n2. Exchange the necklace for an |cFFFFFFFFAquamarine Cartel Chit|r from Ta'lan the Antiquary in the Broker's Den in Oribos (|cFFFFFFFF51.6, 44.6|r).\n\n3. Exchange the chit for a |cFFFFFFFFTeregeer Crystal|r from Acquirer Ta'gosh in the Ring of Fates in Oribos (|cFFFFFFFF61.7, 72.0|r).\n\n4. Return to Revendreth and exchange the crystal for the |cFFFFFFFFPreserved Berries|r from Ta'ruca (|cFFFFFFFF51.1, 78.5|r).",
 									["cost"] = {
 										{ "i", 180973, 1 },	-- Necklace of Dredbat Fangs
 										{ "i", 180971, 1 },	-- Aquamarine Cartel Chit
 										{ "i", 180970, 1 },	-- Teregeer Crystal
 										{ "i", 180774, 1 },	-- Preserved Berries
 									},
-									["g"] = {
+									["isDaily"] = true,	-- according to the API!
+									["groups"] = {
 										i(176121),	-- RSVP: Droman Aliothe
 									},
 								}),
 								q(61092, {	-- RSVP: Grandmaster Vole
-									["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },
-									["description"] = "|cFF1eff00Invitation: Grandmaster Vole|r can be purchased from Lady Ilinca above Sinfall.",
 									["provider"] = { "n", 163019 },	-- Grandmaster Vole
-									["isDaily"] = true,	-- according to the API!
 									["coord"] = { 52.8, 49.2, MALDRAXXUS },
-									["g"] = {
+									["description"] = "|cFF1eff00Invitation: Grandmaster Vole|r can be purchased from Lady Ilinca above Sinfall.",
+									["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },
+									["isDaily"] = true,	-- according to the API!
+									["groups"] = {
 										i(176122),	-- RSVP: Grandmaster Vole
 									},
 								}),
 								q(61256, {	-- RSVP: Kleia and Pelagos
-									["sourceQuests"] = { 61880 },	-- Honored Attendance
 									["provider"] = { "n", 174916 },	-- Kleia
-									["isDaily"] = true,	-- according to the API!
+									["sourceQuests"] = { 61880 },	-- Honored Attendance
 									["coord"] = { 55.8, 86.4, BASTION },
-									["g"] = {
+									["isDaily"] = true,	-- according to the API!
+									["groups"] = {
 										i(176123),	-- RSVP: Kleia and Pelagos
 									},
 								}),
 								q(61105, {	-- RSVP: Plague Deviser Marileth
-								--	showed up after Week 3 Ember Court
-									["sourceQuests"] = { 61880 },	-- Honored Attendance (i guess?  all the other quests between them are repeatable so wouldn't work as SQs)
 									["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
-									["isDaily"] = true,	-- according to the API!
+									["sourceQuests"] = { 61880 },	-- Honored Attendance (i guess?  all the other quests between them are repeatable so wouldn't work as SQs)
 									["coord"] = { 60.4, 71.6, MALDRAXXUS },
-									["g"] = {
+									["isDaily"] = true,	-- according to the API!
+								--	showed up after Week 3 Ember Court
+									["groups"] = {
 										i(176124),	-- RSVP: Plague Deviser Marileth
 									},
 								}),
 								q(61130, {	-- RSVP: Sika
 									["provider"] = { "n", 166577 },	-- Sika
-									["isDaily"] = true,	-- according to the API!
 									["coord"] = { 52.7, 82.6, BASTION },
-									["g"] = {
+									["isDaily"] = true,	-- according to the API!
+									["groups"] = {
 										i(176125),	-- RSVP: Sika
 										i(180965),	-- Adonas's Promissory Note (QI!)
 										i(180967),	-- Ikaran's Promissory Note (QI!)
@@ -1596,9 +1596,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								}),
 								q(60916, {	-- RSVP: Stonehead
 									["provider"] = { "n", 157199 },	-- Stonehead
-									["isDaily"] = true,
 									["coord"] = { 38.9, 66.0, REVENDRETH },
-									["g"] = {
+									["isDaily"] = true,
+									["groups"] = {
 										i(178686),	-- RSVP: Stonehead
 										o(354075, {	-- Blank Parchment
 											["coords"] = {
@@ -1608,18 +1608,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 												{ 38.2, 71.4, REVENDRETH },
 												{ 38.8, 69.9, REVENDRETH },
 											},
-											["g"] = { i(171343) },	-- Blank Parchment (QI!)
+											["groups"] = { i(171343) },	-- Blank Parchment (QI!)
 										}),
 										i(171344),	-- Venthyr Calligraphy Set (QI!)
 										i(180466),	-- Forged Permission Slip (QI!)
 									},
 								}),
 								q(61139, {	-- RSVP: Choofa
-									["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },	-- Ember Court - Honored
 									["provider"] = { "n", 160814 },	-- Choofa
-									["isDaily"] = true,
 									["coord"] = { 63.6, 36.6, ARDENWEALD },
-									["g"] = {
+									["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },	-- Ember Court - Honored
+									["isDaily"] = true,
+									["groups"] = {
 										i(176119),	-- RSVP: Choofa
 									},
 								}),
@@ -1628,15 +1628,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["coord"] = { 55.5, 27.0, SINFALL_REACHES },
 								}),
 								q(63699, {	-- Sika's Best Friend
-									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Sika?
 									["provider"] = { "n", 166577 },	-- Sika
 									["coord"] = { 52.6, 82.5, BASTION },
+									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Sika?
 								}),
 								q(61898, {	-- Small Bites
-									["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },
 									["provider"] = { "n", 165490 },	-- Picky Stefan
 									["coord"] = { 28.9, 44.2, REVENDRETH },
-									["g"] = {
+									["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },
+									["groups"] = {
 										i(181532),	-- Stock: Appetizers (EC!)
 										i(182356),	-- Aged Windcheese (QI!)
 										i(182355),	-- Forgotten Sweetcheese (QI!)
@@ -1645,53 +1645,53 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(63700, {	-- Stonehead's Best Friend
-									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Stonehead?
 									["provider"] = { "n", 157199 },	-- Stonehead
 									["coord"] = { 39.0, 66.0, REVENDRETH },
+									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Stonehead?
 								}),
 								q(61616, {	-- The Ember Court (Week 1)
+									["provider"] = { "n", 164966 },	-- Temel
 									["sourceQuests"] = {
 										61882,	-- Formal Entertainment
 										61884,	-- Formal Refreshments
 										61880,	-- Honored Attendance
 									},
-									["provider"] = { "n", 164966 },	-- Temel
 									["coord"] = { 28.0, 43.1, REVENDRETH },
-									["g"] = {
+									["groups"] = {
 										i(181536),	-- Guest List Page (EC!)
 										i(179958),	-- Ember Court Guest List (QI!)
 									},
 								}),
 								q(61526, {	-- The Ember Court (Week 2 / 3)
-									["sourceQuests"] = { 61616 },	-- The Ember Court (Week 1)
 									["provider"] = { "n", 164966 },	-- Temel
-									["isDaily"] = true,	-- according to the API
+									["sourceQuests"] = { 61616 },	-- The Ember Court (Week 1)
 									["coord"] = { 28.0, 43.1, REVENDRETH },
-									["g"] = {
+									["isDaily"] = true,	-- according to the API
+									["groups"] = {
 										i(179958),	-- Ember Court Guest List (QI!)
 									},
 								}),
 								q(61525, {	-- The Ember Court (maybe this is the longer version that unlocks upon hitting Friendly?  maybe?)
 									["provider"] = { "n", 164966 },	-- Temel
-									["isDaily"] = true,	-- according to the API
 									["coord"] = { 28.0, 43.1, REVENDRETH },
-									["g"] = {
+									["isDaily"] = true,	-- according to the API
+									["groups"] = {
 										i(179958),	-- Ember Court Guest List (QI!)
 									},
 								}),
 								q(60339, {	-- The Ember Court (Honored)
 									["provider"] = { "n", 164966 },	-- Temel
-									["isDaily"] = true,	-- according to the API
 									["coord"] = { 28.0, 43.1, REVENDRETH },
-									["g"] = {
+									["isDaily"] = true,	-- according to the API
+									["groups"] = {
 										i(179958),	-- Ember Court Guest List (QI!)
 									},
 								}),
 								q(61896, {	-- Undercover Security
-									["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },
 									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
 									["coord"] = { 32.0, 41.6, REVENDRETH },
-									["g"] = {
+									["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },
+									["groups"] = {
 										i(182363),	-- Enchanted Trickster Dust (QI!)
 										i(181530),	-- Stock: Greeting Kits (EC!)
 										i(182364),	-- The Everyday Assassin (QI!)
@@ -1701,193 +1701,193 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						}),
 						n(TIER_TWO, {
 							["icon"] = 3750313,
-							["g"] = {
+							["groups"] = {
 								q(62177, {	-- A Memorable Look
+									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
-									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182970, 1 } },	-- Burgleclipped Portrait
 								}),
 								q(62174, {	-- A Proper Cover
+									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
-									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182973, 1 } },	-- 1x Leather Dredger Coif
 								}),
 								q(62206, {	-- Ardenweald Etiquette
+									["provider"] = { "i", 183861 },	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
-									["provider"] = { "i", 183861 },	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables
 								}),
 								q(62207, {	-- Bastion Etiquette
+									["provider"] = { "i", 183863 },	-- The Proper Path and Etiquette for Aspirants
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
-									["provider"] = { "i", 183863 },	-- The Proper Path and Etiquette for Aspirants
 								}),
 								q(64340, {	-- Bewitching
+									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
-									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 187133, 1 } },	-- 1x Bewitching Little Hat
 								}),
 								q(62178, {	-- Black Muck Dye
+									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
-									["repeatable"] = true,
-									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182702, 1 } },	-- 1x Black Muck Dye
+									["repeatable"] = true,
 								}),
 								q(62179, {	-- Blue Muck Dye
+									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
-									["repeatable"] = true,
-									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182705, 1 } },	-- Vial of Blue Muck Dye
+									["repeatable"] = true,
 								}),
 								q(62181, {	-- Bubbling Red Muck Dye
-									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
-									["repeatable"] = true,
 									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["cost"] = { { "i", 182703, 1 } },	-- 1x Bubbling Red Muck Dye
+									["repeatable"] = true,
 								}),
 								q(61764, {	-- Dredging up a Name
+									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["sourceQuests"] = { 62361 },	-- Introductions are in Order
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
-									["provider"] = { "n", 172854 },	-- Dredger Butler
 								}),
 								q(62985, {	-- Dredging up a New Look
-								--	you dye your Dredger Butler's clothes blue here, but you don't get achievement credit until you do the "Blue Muck Dye" quest.  the questID for it triggers when completing this, but doesn't count for the achievement.  thanks, blizz!
+									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["sourceQuests"] = { 61764 },	-- Dredging up a Name
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
-									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 184446, 1 } },	-- 1x Vial of Blue Muck Dye
+								--	you dye your Dredger Butler's clothes blue here, but you don't get achievement credit until you do the "Blue Muck Dye" quest.  the questID for it triggers when completing this, but doesn't count for the achievement.  thanks, blizz!
 								}),
 								q(61763, {	-- Dredging Up an Assistant
-									["sourceQuests"] = { 61762 },	-- Making a Smarter Dredger
 									["provider"] = { "n", 157846 },	-- Rendle
+									["sourceQuests"] = { 61762 },	-- Making a Smarter Dredger
 									["coord"] = { 72.5, 73.2, REVENDRETH },
-									["g"] = {
+									["groups"] = {
 										i(182683),	-- Dredger Butler (PET!)
 										i(182301),	-- Kaja-Infused Dredger Mix (QI!)
 									},
 								}),
 								q(62180, {	-- Green Muck Dye
+									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
-									["repeatable"] = true,
-									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182704, 1 } },	-- Green Muck Dye
+									["repeatable"] = true,
 								}),
 								q(61766, {	-- Homegrown Help
-									-- ["sourceQuests"] = {  },	-- TODO: upgrade to Tier 2 without doing any Tier 1 quests to verify SQ
 									["provider"] = { "n", 164966 },	-- Temel
+									-- ["sourceQuests"] = {  },	-- TODO: upgrade to Tier 2 without doing any Tier 1 quests to verify SQ
 									["coord"] = { 27.9, 43.0, REVENDRETH },
 								}),
 								q(62361, {	-- Introductions are in Order
-									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["provider"] = { "n", 157846 },	-- Rendle
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["coord"] = { 72.5, 73.2, REVENDRETH },
 								}),
 								q(62173, {	-- Long Sleeved Doublet
+									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
-								--	["repeatable"] = true,
-									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182967, 1 } },	-- 1x Dredger's Long Sleeved Doublet
+								--	["repeatable"] = true,
 								}),
 								q(62175, {	-- Looking Fabulous
+									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
-									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182971, 1 } },	-- Fabius's Portrait
 								}),
 								q(62208, {	-- Maldraxxi Protocols
+									["provider"] = { "i", 183860 },	-- The Death March: An Introduction to Maldraxxi Etiquette
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
-									["provider"] = { "i", 183860 },	-- The Death March: An Introduction to Maldraxxi Etiquette
 								}),
 								q(62221, {	-- My Own Death Pony!
+									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
-									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 183842, 1 } },	-- Sinrunner Pony Reins
 								}),
 								q(61762, {	-- Making a Smarter Dredger
-									["sourceQuests"] = { 61851 },	-- Shades of Muck
 									["provider"] = { "n", 157846 },	-- Rendle
+									["sourceQuests"] = { 61851 },	-- Shades of Muck
 									["coord"] = { 72.5, 73.2, REVENDRETH },
 									["cost"] = {{ "i", 182298, 1 }},	-- 1x Kaja'Extreme
-									["g"] = {
+									["groups"] = {
 										i(184448),	-- Spicy Scorchshrooms (QI!)
 									},
 								}),
 								q(62222, {	-- On Silver Wings
+									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
-									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 183843, 1 } },	-- Juvenile Dredbat Harness
 								}),
 								q(61851, {	-- Shades of Muck
-									["sourceQuests"] = { 61766 },	-- Homegrown Help
 									["provider"] = { "n", 157846 },	-- Rendle
+									["sourceQuests"] = { 61766 },	-- Homegrown Help
 									["coord"] = { 72.5, 73.2, REVENDRETH },
 								}),
 								q(62172, {	-- Shortsleeved Doublet
+									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
-									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182712, 1 } },	-- Dredger's Short Sleeved Doublet
 								}),
 								q(64509, {	-- Stylish Cover
+									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
-									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 187256, 1 } },	-- Hips' Spare Fedora
 								}),
 								q(62176, {	-- The Spikey Look
-									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
-								--	["repeatable"] = true,
 									["provider"] = { "n", 172854 },	-- Dredger Butler
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["cost"] = { { "i", 182972, 1 } },	-- 1x Critter Two-Thumbs Portrait
+								--	["repeatable"] = true,
 								}),
 								q(63765, {	-- Unseen Hero of the Party
+									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
-									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 185741, 1 } },	-- 1x Restock and Repair, Tips and Tricks for Keeping the Party Going
 								}),
 								q(62205, {	-- Venthyr Ettiquette
+									["provider"] = { "i", 183862 },	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
-									["provider"] = { "i", 183862 },	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
 								}),
 							},
 						}),
 						n(TIER_THREE, {
 							["icon"] = 3750311,
-							["g"] = {
+							["groups"] = {
 								q(63690, {	-- Alexandros Mograine's Best Friend
-									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Alexandros Mograine?
 									["provider"] = { "n", 171933 },	-- Alexandros Mograine
 									["coord"] = { 50.4, 67.4, MALDRAXXUS },
+									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Alexandros Mograine?
 								}),
 								q(62597, {	-- Bonesmith Heirmir
 									["provider"] = { "i", 183844 },	-- A Letter of Introduction, The Bonesmith
-									["g"] = {
+									["groups"] = {
 										i(183844),	-- A Letter of Introduction, The Bonesmith (QI!)
 									},
 								}),
 								q(61943, {	-- Court Influencer
-									-- ["sourceQuests"] = {  },	-- TODO: unknown
 									["provider"] = { "n", 165399 },	-- Lord Garridan
+									-- ["sourceQuests"] = {  },	-- TODO: unknown
 									["coord"] = { 28.5, 41.0, REVENDRETH },
-									["g"] = {
+									["groups"] = {
 										i(181537),	-- Guest List Page (EC!)
 									},
 								}),
 								q(62598, {	-- Forgelite Sophone
 									["provider"] = { "i", 183845 },	-- A Short Letter to Forgelite Sophone
-									["g"] = {
+									["groups"] = {
 										i(183845),	-- A Short Letter to Forgelite Sophone (QI!)
 									},
 								}),
@@ -1896,112 +1896,112 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["maps"] = { REVENDRETH },
 								}),
 								q(63691, {	-- Hunt-Captain Korayn's Best Friend
-									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Hunt-Captain Korayn?
 									["provider"] = { "n", 171319 },	-- Hunt-Captain Korayn
 									["coord"] = { 50.8, 70.4, ARDENWEALD },
+									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Hunt-Captain Korayn?
 								}),
 								q(62613, {	-- Kyrian Arsenal
-									["sourceQuests"] = { 62598 },	-- Forgelite Sophone
 									["provider"] = { "n", 174719 },	-- Forgelite Sophone
+									["sourceQuests"] = { 62598 },	-- Forgelite Sophone
 									["coord"] = { 52.9, 83.5, BASTION },
-									["g"] = {
+									["groups"] = {
 										i(177243),	-- Kyrian Arsenal (EC!)
 									},
 								}),
 								q(62609, {	-- Necrolord Arsenal
-									["sourceQuests"] = { 62597 },	-- Bonesmith Heirmir
 									["provider"] = { "n", 157676 },	-- Bonesmith Heirmir
+									["sourceQuests"] = { 62597 },	-- Bonesmith Heirmir
 									["coord"] = { 53.0, 68.2, MALDRAXXUS },
-									["g"] = {
+									["groups"] = {
 										i(177241),	-- Necrolord Arsenal (EC!)
 									},
 								}),
 								q(63692, {	-- Polemarch Adrestes's Best Friend
-									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Polemarch Adrestes?
 									["provider"] = { "n", 171385 },	-- Polemarch Adrestes
 									["coord"] = { 51.8, 47.6, BASTION },
+									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Polemarch Adrestes?
 								}),
 								q(63693, {	-- Rendle and Cudgelface's Best Friend
-									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Rendle and Cudgelface?
 									["provider"] = { "n", 171190 },	-- Alexandros Mograine
 									["coord"] = { 31.0, 40.0, SINFALL_DEPTHS },
+									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Rendle and Cudgelface?
 								}),
 								q(61255, {	-- RSVP: Alexandros Mograine
-									["sourceQuests"] = { 61943 },	-- Court Influencer
 									["provider"] = { "n", 171933 },	-- Alexandros Morgraine
+									["sourceQuests"] = { 61943 },	-- Court Influencer
 									["coord"] = { 50.3, 67.4, MALDRAXXUS },
-									["g"] = {
+									["groups"] = {
 										i(181160),	-- Ossein Battleaxe (QI!)
 										i(181161),	-- Ossein Staff (QI!)
 										i(176115),	-- RSVP: Alexandros Mograine
 									},
 								}),
 								q(61109, {	-- RSVP: Hunt-Captain Korayn
-									["sourceQuests"] = { 61943 },	-- Court Influencer
 									["provider"] = { "n", 171319 },	-- Hunt-Captain Korayn
+									["sourceQuests"] = { 61943 },	-- Court Influencer
 									["coord"] = { 50.8, 70.4, ARDENWEALD },
-									["g"] = {
+									["groups"] = {
 										i(176116),	-- RSVP: Hunt-Captain Korayn
 									},
 								}),
 								q(61123, {	-- RSVP: Polemarch Adrestes
-									["sourceQuests"] = { 61943 },	-- Court Influencer
 									["provider"] = { "n", 171385 },	-- Polemarch Adrestes
+									["sourceQuests"] = { 61943 },	-- Court Influencer
 									["coord"] = { 51.8, 47.7, BASTION },
-									["g"] = {
+									["groups"] = {
 										i(176117),	-- RSVP: Polemarch Adrestes
 									},
 								}),
 								q(61059, {	-- RSVP: Rendle and Cudgelface
-									["sourceQuests"] = { 61943 },	-- Court Influencer
-									["description"] = "To get Rendle and Cudgelface's RSVP, you need to do one of the Sootible Hat quests.  If you want to collect the |cffffff00Rendle's Big Day|r criteria more quickly, you can abandon the RSVP quest and pick it up again to complete more Sootible Hat quests.",
 									["provider"] = { "n", 171190 },	-- Cudgelface
+									["sourceQuests"] = { 61943 },	-- Court Influencer
 									["coord"] = { 61.9, 77.0, SINFALL_DEPTHS },
-									["g"] = {
+									["description"] = "To get Rendle and Cudgelface's RSVP, you need to do one of the Sootible Hat quests.  If you want to collect the |cffffff00Rendle's Big Day|r criteria more quickly, you can abandon the RSVP quest and pick it up again to complete more Sootible Hat quests.",
+									["groups"] = {
 										q(62559, {	-- Sootible Hat: Crown of the Righteous
-										--	initially picked up right after picking up RSVP: Rendle and Cudgelface
-											["customCollect"] = "SL_COV_VEN",	-- marking specifically for 'contains' section
-										--	["sourceQuests"] = {  },	-- TODO: unknown
-											["repeatable"] = true,
 											["provider"] = { "n", 165302 },	-- Rendle
+										--	["sourceQuests"] = {  },	-- TODO: unknown
 											["coord"] = { 62.5, 76.6, SINFALL_DEPTHS },
 											["cost"] = { { "i", 180760, 1 } },	-- Crown of the Righteous
+											["customCollect"] = "SL_COV_VEN",	-- marking specifically for 'contains' section
+											["repeatable"] = true,
+										--	initially picked up right after picking up RSVP: Rendle and Cudgelface
 										}),
 										q(62558, {	-- Sootible Hat: Fae Revel Masque
-										--	initially picked up right after picking up RSVP: Rendle and Cudgelface
-											["customCollect"] = "SL_COV_VEN",	-- marking specifically for 'contains' section
-										--	["sourceQuests"] = {  },	-- TODO: unknown
-											["repeatable"] = true,
 											["provider"] = { "n", 165302 },	-- Rendle
+										--	["sourceQuests"] = {  },	-- TODO: unknown
 											["coord"] = { 62.5, 76.6, SINFALL_DEPTHS },
 											["cost"] = { { "i", 180755, 1 } },	-- Fae Revel Masque
+											["customCollect"] = "SL_COV_VEN",	-- marking specifically for 'contains' section
+											["repeatable"] = true,
+										--	initially picked up right after picking up RSVP: Rendle and Cudgelface
 										}),
 										q(62556, {	-- Sootible Hat: Pink Party Hat
-										--	initially picked up right after picking up RSVP: Rendle and Cudgelface
-											["customCollect"] = "SL_COV_VEN",	-- marking specifically for 'contains' section
-										--	["sourceQuests"] = {  },	-- TODO: unknown
-											["repeatable"] = true,
 											["provider"] = { "n", 165302 },	-- Rendle
+										--	["sourceQuests"] = {  },	-- TODO: unknown
 											["coord"] = { 62.5, 76.6, SINFALL_DEPTHS },
 											["cost"] = { { "i", 180752, 1 } },	-- Pink Party Hat
+											["customCollect"] = "SL_COV_VEN",	-- marking specifically for 'contains' section
+											["repeatable"] = true,
+										--	initially picked up right after picking up RSVP: Rendle and Cudgelface
 										}),
 										q(62554, {	-- Sootible Hat: Red Noggin Candle
-										--	initially picked up right after picking up RSVP: Rendle and Cudgelface
-											["customCollect"] = "SL_COV_VEN",	-- marking specifically for 'contains' section
-										--	["sourceQuests"] = {  },	-- TODO: unknown
-											["repeatable"] = true,
 											["provider"] = { "n", 165302 },	-- Rendle
+										--	["sourceQuests"] = {  },	-- TODO: unknown
 											["coord"] = { 62.5, 76.6, SINFALL_DEPTHS },
 											["cost"] = { { "i", 180751, 1 } },	-- Red Noggin Candle
+											["customCollect"] = "SL_COV_VEN",	-- marking specifically for 'contains' section
+											["repeatable"] = true,
+										--	initially picked up right after picking up RSVP: Rendle and Cudgelface
 										}),
 										i(176118),	-- RSVP: Rendle and Cudgelface
 									},
 								}),
 								q(62612, {	-- Venthyr Arsenal
-									["sourceQuests"] = { 62601 },	-- Forgy
 									["provider"] = { "n", 161931 },	-- Forgy
+									["sourceQuests"] = { 62601 },	-- Forgy
 									["coord"] = { 63.2, 62.7, REVENDRETH },
-									["g"] = {
+									["groups"] = {
 										i(177242),	-- Venthyr Arsenal (EC!)
 									},
 								}),
@@ -2009,42 +2009,42 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						}),
 						n(TIER_FOUR, {
 							["icon"] = 3750314,
-							["g"] = {
+							["groups"] = {
 								q(60825, {	-- Amateur Spies
 									["provider"] = { "n", 168445 },	-- Baroness Vashj
 									["isDaily"] = true,
-									["g"] = {
+									["groups"] = {
 										i(180296),	-- Shrouded Necromancer Head
 									},
 								}),
 								q(63686, {	-- Baroness Vashj's Best Friend
-									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Baroness Vashj?
 									["provider"] = { "n", 162487 },	-- Baroness Vashj
 									["coord"] = { 67.6, 45.9, MALDRAXXUS },
+									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Baroness Vashj?
 								}),
 								q(61944, {	-- Discerning Taste
-									["sourceQuests"] = { 61943 },	-- Court Influencer (not confirmed, but very likely)
 									["provider"] = { "n", 165399 },	-- Lord Garridan
+									["sourceQuests"] = { 61943 },	-- Court Influencer (not confirmed, but very likely)
 									["coord"] = { 28.5, 41.0, REVENDRETH },
-									["g"] = {
+									["groups"] = {
 										i(181538),	-- Guest List Page (EC!)
 									},
 								}),
 								q(63687, {	-- Lady Moonberry's Best Friend
-									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Lady Moonberry?
 									["provider"] = { "n", 172098 },	-- Lady Moonberry
 									["coord"] = { 48.9, 51.0, ARDENWEALD },
+									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Lady Moonberry?
 								}),
 								q(63688, {	-- Mikanikos's Best Friend
-									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Mikanikos?
 									["provider"] = { "n", 171647 },	-- Mikanikos
 									["coord"] = { 50.1, 21.0, BASTION },
+									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ Mikanikos?
 								}),
 								q(61174, {	-- RSVP: Baroness Vashj
-									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
 									["provider"] = { "n", 162487 },	-- Baroness Vashj
+									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
 									["coord"] = { 67.6, 45.9, MALDRAXXUS },
-									["g"] = {
+									["groups"] = {
 										i(180846),	-- Colossal Feaster's Head (QI!)
 										i(180850),	-- Morbid Boneguard's Head (QI!)
 										i(180849),	-- Soul-Rotted Flesh Head (QI!)
@@ -2053,10 +2053,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61354, {	-- RSVP: Lady Moonberry
-									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
 									["provider"] = { "n", 172098 },	-- Lady Moonberry
+									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
 									["coord"] = { 48.9, 51.0, ARDENWEALD },
-									["g"] = {
+									["groups"] = {
 										i(181251),	-- Blooming Lasher Spur (QI!)
 										i(181250),	-- Gorm Pheromone Gland (QI!)
 										i(176112),	-- RSVP: Lady Moonberry
@@ -2071,57 +2071,57 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 												{ 50.5, 39.4, ARDENWEALD },
 												{ 50.5, 41.4, ARDENWEALD },
 											},
-											["g"] = { i(181252) },	-- Silverheart Vine Leaves (QI!)
+											["groups"] = { i(181252) },	-- Silverheart Vine Leaves (QI!)
 										}),
 									},
 								}),
 								q(61173, {	-- RSVP: Mikanikos
-									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
 									["provider"] = { "n", 171647 },	-- Mikanikos
+									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
 									["coord"] = { 50.1, 21.0, BASTION },
-									["g"] = {
+									["groups"] = {
 										i(180895),	-- Potentially Perfect Part (QI!)
 										i(176113),	-- RSVP: Mikanikos
 										i(182114),	-- Assorted Parts and 'Things'
 									},
 								}),
 								q(60948, {	-- RSVP: The Countess
-									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
 									["provider"] = { "n", 171106 },	-- The Countess
+									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
 									["coord"] = { 58.0, 27.4, REVENDRETH },
-									["g"] = {
+									["groups"] = {
 										o(354185, {	-- House Iremoore Formal Wear
 											["coord"] = { 56, 35.5, REVENDRETH },
-											["g"] = { i(180497) },	-- House Iremoore Disguise (QI!)
+											["groups"] = { i(180497) },	-- House Iremoore Disguise (QI!)
 										}),
 										i(176114),	-- RSVP: The Countess
 									},
 								}),
 								q(63689, {	-- The Countess's Best Friend
-									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ The Countess?
 									["provider"] = { "n", 171106 },	-- The Countess
 									["coord"] = { 58.0, 27.4, REVENDRETH },
+									-- ["minReputation"] = { ,  },	-- TODO, Best Friend w/ The Countess?
 								}),
 							},
 						}),
 						n(TIER_FIVE, {
 							["icon"] = 3750310,
-							["g"] = {
+							["groups"] = {
 								q(61945, {	-- The Professionals
-									-- ["sourceQuests"] = {  },	-- TODO
 									["provider"] = { "n", 164966 },	-- Temel
+									-- ["sourceQuests"] = {  },	-- TODO
 									["coord"] = { 27.9, 43.1, REVENDRETH },
 								}),
 								q(62599, {	-- Gormsmith Cavina
+									["provider"] = { "i", 183846 },	-- Orders to Gormsmith Cavina
 									-- TODO: first time obtaining this quest item, Exalted + Rank 5 Ember Court... not sure requirements if any
 									-- ["sourceQuests"] = {  },	-- TODO
-									["provider"] = { "i", 183846 },	-- Orders to Gormsmith Cavina
 								}),
 								q(62616, {	-- Night Fae Arsenal
-									["sourceQuests"] = { 62599 },	-- Gormsmith Cavina
 									["provider"] = { "n", 165382 },	-- Gormsmith Cavina
+									["sourceQuests"] = { 62599 },	-- Gormsmith Cavina
 									["coord"] = { 51.6, 34.0, ARDENWEALD },
-									["g"] = {
+									["groups"] = {
 										i(177244),	-- Night Fae Arsenal (EC!)
 									},
 								}),
@@ -2136,7 +2136,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							n(174711, {	-- Freeman
 								["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },
 								["coord"] = { 32.0, 41.2, REVENDRETH },
-								["g"] = {
+								["groups"] = {
 									i(182371, {	-- Claws of the Court's Sentinels
 										["cost"] = { { "c", ANIMA, 1750 } },
 									}),
@@ -2194,7 +2194,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							}),
 							n(165453, {	-- Lady Ilinca <Court Concierge>
 								["coord"] = { 28.5, 41.1, REVENDRETH },
-								["g"] = {
+								["groups"] = {
 									i(176850, {	-- Blank Invitation
 										["cost"] = { { "c", 1820, 15 } },
 									}),
@@ -2212,7 +2212,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							}),
 							n(173371, {	-- Lady Rovinette <Ember Court Clothier>
 								["coord"] = { 28.3, 43.7, REVENDRETH },
-								["g"] = bubbleDownClassicRep(FACTION_THE_EMBER_COURT, {
+								["groups"] = bubbleDownClassicRep(FACTION_THE_EMBER_COURT, {
 									{		-- Neutral
 									}, {	-- Friendly
 										i(181050, {	-- Court Death Shroud Boots
@@ -2335,7 +2335,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									{ 58.8, 80.0, SINFALL_REACHES },	-- without hat
 								},
 								["crs"] = { 172531 },	-- Temel <The Party Herald> (with no hat - combining these because they sell the same stuff)
-								["g"] = {
+								["groups"] = {
 									SILVERTIP_DREDWING,
 									i(181441, {	-- Altar of Accomplishment (EC!)
 										["cost"] = { { "c", ANIMA, 25 } },

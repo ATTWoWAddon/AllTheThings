@@ -17,7 +17,7 @@ root(ROOTS.PVP, {
 				ach(9242),	-- Challenger: Warlords of Draenor Season 1
 				ach(9996, {	-- Defender of the Alliance: Warlords of Draenor Season 1
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						title(310, {	-- <Name> Defender of the Alliance
 							["races"] = ALLIANCE_ONLY,
 							-- #if AFTER 8.0.1
@@ -28,7 +28,7 @@ root(ROOTS.PVP, {
 				}),
 				ach(10001, {	-- Defender of the Horde: Warlords of Draenor Season 1
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						title(313, {	-- <Name> Defender of the Horde
 							["races"] = HORDE_ONLY,
 							-- #if AFTER 8.0.1
@@ -47,7 +47,7 @@ root(ROOTS.PVP, {
 				}),
 				ach(9997, {	-- Guardian of the Alliance: Warlords of Draenor Season 1
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						title(309, {	-- <Name> Guardian of the Alliance
 							["races"] = ALLIANCE_ONLY,
 							-- #if AFTER 8.0.1
@@ -58,7 +58,7 @@ root(ROOTS.PVP, {
 				}),
 				ach(10000, {	-- Guardian of the Horde: Warlords of Draenor Season 1
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						title(312, {	-- <Name> Guardian of the Horde
 							["races"] = HORDE_ONLY,
 							-- #if AFTER 8.0.1
@@ -69,7 +69,7 @@ root(ROOTS.PVP, {
 				}),
 				ach(9230, {	-- Hero of the Alliance: Primal
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
 							["timeline"] = { ADDED_7_3_2 },
 						})),
@@ -77,7 +77,7 @@ root(ROOTS.PVP, {
 				}),
 				ach(9231, {	-- Hero of the Horde: Primal
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
 							["timeline"] = { ADDED_7_3_2 },
 						})),
@@ -99,7 +99,7 @@ root(ROOTS.PVP, {
 				ach(9241),	-- Rival: Warlords of Draenor Season 1
 				ach(9995, {	-- Soldier of the Alliance: Warlords of Draenor Season 1
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						title(311, {	-- <Name> Soldier of the Alliance
 							["races"] = ALLIANCE_ONLY,
 							-- #if AFTER 8.0.1
@@ -110,7 +110,7 @@ root(ROOTS.PVP, {
 				}),
 				ach(9998, {	-- Soldier of the Horde: Warlords of Draenor Season 1
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						title(314, {	-- <Name> Soldier of the Horde
 							["races"] = HORDE_ONLY,
 							-- #if AFTER 8.0.1
@@ -123,7 +123,7 @@ root(ROOTS.PVP, {
 			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					n(PVP_ASPIRANT, {
 						cl(DEATHKNIGHT, {
 							un(REMOVED_FROM_GAME, i(115197)),	-- Primal Aspirant's Dreadplate Chestpiece (A)
@@ -249,7 +249,7 @@ root(ROOTS.PVP, {
 								["sym"] = {
 									{"sub", "pvp_weapons_faction_ensemble", EXPANSION.WOD, SEASON_PRIMAL, FACTION_HEADER_ALLIANCE, PVP_COMBATANT },
 								},
-								["g"] = {
+								["groups"] = {
 									i(115083, {	-- Primal Combatant's Barrier (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -343,7 +343,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 115111 },	-- Primal Combatant's Girdle of Cruelty (A)
 									{"select", "itemID", 115113 },	-- Primal Combatant's Warboots of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(115049, {	-- Primal Combatant's Dreadplate Chestpiece (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -371,7 +371,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 115085 },	-- Primal Combatant's Belt of Cruelty (A)
 									{"select", "itemID", 115086 },	-- Primal Combatant's Boots of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(115054, {	-- Primal Combatant's Dragonhide Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -399,7 +399,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 115095 },	-- Primal Combatant's Waistguard of Cruelty (A)
 									{"select", "itemID", 115097 },	-- Primal Combatant's Footguards of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(115059, {	-- Primal Combatant's Chain Armor (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -427,7 +427,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 115043 },	-- Primal Combatant's Cord of Cruelty (A)
 									{"select", "itemID", 115045 },	-- Primal Combatant's Treads of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(115094, {	-- Primal Combatant's Silk Amice (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -455,7 +455,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 115085 },	-- Primal Combatant's Belt of Cruelty (A)
 									{"select", "itemID", 115086 },	-- Primal Combatant's Boots of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(115101, {	-- Primal Combatant's Ironskin Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -483,7 +483,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 115111 },	-- Primal Combatant's Girdle of Cruelty (A)
 									{"select", "itemID", 115113 },	-- Primal Combatant's Warboots of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(115106, {	-- Primal Combatant's Scaled Chestpiece (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -511,7 +511,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 115043 },	-- Primal Combatant's Cord of Cruelty (A)
 									{"select", "itemID", 115045 },	-- Primal Combatant's Treads of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(115117, {	-- Primal Combatant's Satin Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -539,7 +539,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 115085 },	-- Primal Combatant's Belt of Cruelty (A)
 									{"select", "itemID", 115086 },	-- Primal Combatant's Boots of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(115123, {	-- Primal Combatant's Leather Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -567,7 +567,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 115095 },	-- Primal Combatant's Waistguard of Cruelty (A)
 									{"select", "itemID", 115097 },	-- Primal Combatant's Footguards of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(115127, {	-- Primal Combatant's Ringmail Armor (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -595,7 +595,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 115043 },	-- Primal Combatant's Cord of Cruelty (A)
 									{"select", "itemID", 115045 },	-- Primal Combatant's Treads of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(115165, {	-- Primal Combatant's Felweave Amice (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -623,7 +623,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 115111 },	-- Primal Combatant's Girdle of Cruelty (A)
 									{"select", "itemID", 115113 },	-- Primal Combatant's Warboots of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(115166, {	-- Primal Combatant's Plate Chestpiece (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -863,7 +863,7 @@ root(ROOTS.PVP, {
 								["sym"] = {
 									{"sub", "pvp_weapons_faction_ensemble", EXPANSION.WOD, SEASON_PRIMAL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
 								},
-								["g"] = {
+								["groups"] = {
 									i(115594, {	-- Primal Gladiator's Cleaver
 										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
@@ -957,7 +957,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 115701 },	-- Primal Gladiator's Girdle of Cruelty (A)
 									{"select", "itemID", 115706 },	-- Primal Gladiator's Warboots of Victory (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(115629, {	-- Primal Gladiator's Dreadplate Chestpiece
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -985,7 +985,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 115670 },	-- Primal Gladiator's Belt of Victory (A)
 									{"select", "itemID", 115672 },	-- Primal Gladiator's Boots of Prowess (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(115634, {	-- Primal Gladiator's Dragonhide Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -1015,7 +1015,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 115684 },	-- Primal Gladiator's Waistguard of Victory (A)
 									{"select", "itemID", 115672 },	-- Primal Gladiator's Footguards of Prowess (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(115639, {	-- Primal Gladiator's Chain Armor
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -1043,7 +1043,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 115620 },	-- Primal Gladiator's Cord of Cruelty (A)
 									{"select", "itemID", 115624 },	-- Primal Gladiator's Treads of Prowess (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(115677, {	-- Primal Gladiator's Silk Handguards
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -1071,7 +1071,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 115668 },	-- Primal Gladiator's Belt of Prowess (A)
 									{"select", "itemID", 115673 },	-- Primal Gladiator's Boots of Victory (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(115691, {	-- Primal Gladiator's Ironskin Gloves
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -1099,7 +1099,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 115703 },	-- Primal Gladiator's Girdle of Victory (A)
 									{"select", "itemID", 115705 },	-- Primal Gladiator's Warboots of Prowess (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(115696, {	-- Primal Gladiator's Scaled Chestpiece
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -1127,7 +1127,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 115622 },	-- Primal Gladiator's Cord of Victory (A)
 									{"select", "itemID", 115623 },	-- Primal Gladiator's Treads of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(115710, {	-- Primal Gladiator's Satin Gloves
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -1155,7 +1155,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 115669 },	-- Primal Gladiator's Belt of Cruelty (A)
 									{"select", "itemID", 115671 },	-- Primal Gladiator's Boots of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(115715, {	-- Primal Gladiator's Leather Tunic
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -1184,7 +1184,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 115685 },	-- Primal Gladiator's Footguards of Cruelty (A)
 									{"select", "itemID", 115687 },	-- Primal Gladiator's Footguards of Victory (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(115720, {	-- Primal Gladiator's Ringmail Armor
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -1212,7 +1212,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 115621 },	-- Primal Gladiator's Cord of Prowess (A)
 									{"select", "itemID", 115625 },	-- Primal Gladiator's Treads of Victory (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(115761, {	-- Primal Gladiator's Felweave Handguards
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -1240,7 +1240,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 115702 },	-- Primal Gladiator's Girdle of Prowess (A)
 									{"select", "itemID", 115704 },	-- Primal Gladiator's Warboots of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(115766, {	-- Primal Gladiator's Plate Chestpiece
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -1578,7 +1578,7 @@ root(ROOTS.PVP, {
 			}),
 			n(FACTION_HEADER_HORDE, {
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					n(PVP_ASPIRANT, {
 						cl(DEATHKNIGHT, {
 							un(REMOVED_FROM_GAME, i(119974)),	-- Primal Aspirant's Dreadplate Chestpiece (H)
@@ -1704,7 +1704,7 @@ root(ROOTS.PVP, {
 								["sym"] = {
 									{"sub", "pvp_weapons_faction_ensemble", EXPANSION.WOD, SEASON_PRIMAL, FACTION_HEADER_HORDE, PVP_COMBATANT },
 								},
-								["g"] = {
+								["groups"] = {
 									i(119866, {	-- Primal Combatant's Barrier (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -1798,7 +1798,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 119894 },	-- Primal Combatant's Girdle of Cruelty (H)
 									{"select", "itemID", 119896 },	-- Primal Combatant's Warboots of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(119839, {	-- Primal Combatant's Dreadplate Chestpiece (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -1826,7 +1826,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 119868 },	-- Primal Combatant's Belt of Cruelty (H)
 									{"select", "itemID", 119869 },	-- Primal Combatant's Boots of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(119844, {	-- Primal Combatant's Dragonhide Gloves (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -1854,7 +1854,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 119878 },	-- Primal Combatant's Waistguard of Cruelty (H)
 									{"select", "itemID", 119880 },	-- Primal Combatant's Footguards of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(119849, {	-- Primal Combatant's Chain Armor (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -1882,7 +1882,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 119833 },	-- Primal Combatant's Cord of Cruelty (H)
 									{"select", "itemID", 119835 },	-- Primal Combatant's Treads of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(119877, {	-- Primal Combatant's Silk Amice (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -1910,7 +1910,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 119868 },	-- Primal Combatant's Belt of Cruelty (H)
 									{"select", "itemID", 119869 },	-- Primal Combatant's Boots of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(119884, {	-- Primal Combatant's Ironskin Gloves (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -1938,7 +1938,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 119894 },	-- Primal Combatant's Girdle of Cruelty (H)
 									{"select", "itemID", 119896 },	-- Primal Combatant's Warboots of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(119889, {	-- Primal Combatant's Scaled Chestpiece (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -1966,7 +1966,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 119833 },	-- Primal Combatant's Cord of Cruelty (H)
 									{"select", "itemID", 119835 },	-- Primal Combatant's Treads of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(119900, {	-- Primal Combatant's Satin Gloves (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -1994,7 +1994,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 119868 },	-- Primal Combatant's Belt of Cruelty (H)
 									{"select", "itemID", 119869 },	-- Primal Combatant's Boots of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(119906, {	-- Primal Combatant's Leather Gloves (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -2022,7 +2022,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 119878 },	-- Primal Combatant's Waistguard of Cruelty (H)
 									{"select", "itemID", 119880 },	-- Primal Combatant's Footguards of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(119910, {	-- Primal Combatant's Ringmail Armor (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -2050,7 +2050,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 119833 },	-- Primal Combatant's Cord of Cruelty (H)
 									{"select", "itemID", 119835 },	-- Primal Combatant's Treads of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(119942, {	-- Primal Combatant's Felweave Amice (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -2078,7 +2078,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 119894 },	-- Primal Combatant's Girdle of Cruelty (H)
 									{"select", "itemID", 119896 },	-- Primal Combatant's Warboots of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(119943, {	-- Primal Combatant's Plate Chestpiece (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -2318,7 +2318,7 @@ root(ROOTS.PVP, {
 								["sym"] = {
 									{"sub", "pvp_weapons_faction_ensemble", EXPANSION.WOD, SEASON_PRIMAL, FACTION_HEADER_HORDE, PVP_GLADIATOR },
 								},
-								["g"] = {
+								["groups"] = {
 									i(111067, {	-- Primal Gladiator's Cleaver
 										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
@@ -2412,7 +2412,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 111174 },	-- Primal Gladiator's Girdle of Cruelty (H)
 									{"select", "itemID", 111179 },	-- Primal Gladiator's Warboots of Victory (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(111102, {	-- Primal Gladiator's Dreadplate Chestpiece
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -2440,7 +2440,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 111143 },	-- Primal Gladiator's Belt of Victory (H)
 									{"select", "itemID", 111145 },	-- Primal Gladiator's Boots of Prowess (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(111107, {	-- Primal Gladiator's Dragonhide Gloves
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -2470,7 +2470,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 111157 },	-- Primal Gladiator's Waistguard of Victory (H)
 									{"select", "itemID", 111159 },	-- Primal Gladiator's Footguards of Prowess (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(111112, {	-- Primal Gladiator's Chain Armor
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -2498,7 +2498,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 111093 },	-- Primal Gladiator's Cord of Cruelty (H)
 									{"select", "itemID", 111097 },	-- Primal Gladiator's Treads of Prowess (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(111150, {	-- Primal Gladiator's Silk Handguards
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -2526,7 +2526,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 111141 },	-- Primal Gladiator's Belt of Prowess (H)
 									{"select", "itemID", 111146 },	-- Primal Gladiator's Boots of Victory (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(111164, {	-- Primal Gladiator's Ironskin Gloves
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -2554,7 +2554,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 111176 },	-- Primal Gladiator's Girdle of Victory (H)
 									{"select", "itemID", 111178 },	-- Primal Gladiator's Warboots of Prowess (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(111169, {	-- Primal Gladiator's Scaled Chestpiece
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -2582,7 +2582,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 111095 },	-- Primal Gladiator's Cord of Victory (H)
 									{"select", "itemID", 111096 },	-- Primal Gladiator's Treads of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(111183, {	-- Primal Gladiator's Satin Gloves
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -2610,7 +2610,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 111142 },	-- Primal Gladiator's Belt of Cruelty (H)
 									{"select", "itemID", 111144 },	-- Primal Gladiator's Boots of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(111188, {	-- Primal Gladiator's Leather Tunic
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -2639,7 +2639,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 111158 },	-- Primal Gladiator's Footguards of Cruelty (H)
 									{"select", "itemID", 111160 },	-- Primal Gladiator's Footguards of Victory (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(111193, {	-- Primal Gladiator's Ringmail Armor
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -2667,7 +2667,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 111094 },	-- Primal Gladiator's Cord of Prowess (H)
 									{"select", "itemID", 111098 },	-- Primal Gladiator's Treads of Victory (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(111234, {	-- Primal Gladiator's Felweave Handguards
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -2695,7 +2695,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 111175 },	-- Primal Gladiator's Girdle of Prowess (H)
 									{"select", "itemID", 111177 },	-- Primal Gladiator's Warboots of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(111239, {	-- Primal Gladiator's Plate Chestpiece
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -3222,7 +3222,7 @@ root(ROOTS.PVP, {
 				ach(10101),	-- Challenger: Warlords of Draenor Season 2
 				ach(10106, {	-- Defender of the Alliance: Warlords of Draenor Season 2
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						title(310, {	-- <Name> Defender of the Alliance
 							["races"] = ALLIANCE_ONLY,
 							-- #if AFTER 8.0.1
@@ -3233,7 +3233,7 @@ root(ROOTS.PVP, {
 				}),
 				ach(10107, {	-- Defender of the Horde: Warlords of Draenor Season 2
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						title(313, {	-- <Name> Defender of the Horde
 							["races"] = HORDE_ONLY,
 							-- #if AFTER 8.0.1
@@ -3252,7 +3252,7 @@ root(ROOTS.PVP, {
 				}),
 				ach(10108, {	-- Guardian of the Alliance: Warlords of Draenor Season 2
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						title(309, {	-- <Name> Guardian of the Alliance
 							["races"] = ALLIANCE_ONLY,
 							-- #if AFTER 8.0.1
@@ -3263,7 +3263,7 @@ root(ROOTS.PVP, {
 				}),
 				ach(10109, {	-- Guardian of the Horde: Warlords of Draenor Season 2
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						title(312, {	-- <Name> Guardian of the Horde
 							["races"] = HORDE_ONLY,
 							-- #if AFTER 8.0.1
@@ -3274,7 +3274,7 @@ root(ROOTS.PVP, {
 				}),
 				ach(10102, {	-- Hero of the Alliance: Wild
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
 							["timeline"] = { ADDED_7_3_2 },
 						})),
@@ -3282,7 +3282,7 @@ root(ROOTS.PVP, {
 				}),
 				ach(10103, {	-- Hero of the Horde: Wild
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
 							["timeline"] = { ADDED_7_3_2 },
 						})),
@@ -3291,7 +3291,7 @@ root(ROOTS.PVP, {
 				ach(10100),	-- Rival: Warlords of Draenor Season 2
 				ach(10104, {	-- Soldier of the Alliance: Warlords of Draenor Season 2
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						title(311, {	-- <Name> Soldier of the Alliance
 							["races"] = ALLIANCE_ONLY,
 							-- #if AFTER 8.0.1
@@ -3302,7 +3302,7 @@ root(ROOTS.PVP, {
 				}),
 				ach(10105, {	-- Soldier of the Horde: Warlords of Draenor Season 2
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						title(314, {	-- <Name> Soldier of the Horde
 							["races"] = HORDE_ONLY,
 							-- #if AFTER 8.0.1
@@ -3328,7 +3328,7 @@ root(ROOTS.PVP, {
 			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					n(PVP_ASPIRANT, {
 						cl(DEATHKNIGHT, {
 							un(REMOVED_FROM_GAME, i(125070)),	-- Wild Aspirant's Dreadplate Chestpiece (A)
@@ -3466,7 +3466,7 @@ root(ROOTS.PVP, {
 								["sym"] = {
 									{"sub", "pvp_weapons_faction_ensemble", EXPANSION.WOD, SEASON_WILD, FACTION_HEADER_ALLIANCE, PVP_COMBATANT },
 								},
-								["g"] = {
+								["groups"] = {
 									i(124951, {	-- Wild Combatant's Barrier (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -3569,7 +3569,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 124989 },	-- Wild Combatant's Girdle of Cruelty (A)
 									{"select", "itemID", 124991 },	-- Wild Combatant's Warboots of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(124913, {	-- Wild Combatant's Dreadplate Chestpiece (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -3602,7 +3602,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 124953 },	-- Wild Combatant's Belt of Cruelty (A)
 									{"select", "itemID", 124954 },	-- Wild Combatant's Boots of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(124918, {	-- Wild Combatant's Dragonhide Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -3635,7 +3635,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 124968 },	-- Wild Combatant's Waistguard of Cruelty (A)
 									{"select", "itemID", 124970 },	-- Wild Combatant's Footguards of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(124923, {	-- Wild Combatant's Chain Armor (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -3668,7 +3668,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 124902 },	-- Wild Combatant's Cord of Cruelty (A)
 									{"select", "itemID", 124904 },	-- Wild Combatant's Treads of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(124967, {	-- Wild Combatant's Silk Amice (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -3701,7 +3701,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 124953 },	-- Wild Combatant's Belt of Cruelty (A)
 									{"select", "itemID", 124954 },	-- Wild Combatant's Boots of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(124979, {	-- Wild Combatant's Ironskin Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -3734,7 +3734,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 124989 },	-- Wild Combatant's Girdle of Cruelty (A)
 									{"select", "itemID", 124991 },	-- Wild Combatant's Warboots of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(124984, {	-- Wild Combatant's Scaled Chestpiece (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -3767,7 +3767,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 124902 },	-- Wild Combatant's Cord of Cruelty (A)
 									{"select", "itemID", 124904 },	-- Wild Combatant's Treads of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125000, {	-- Wild Combatant's Satin Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -3800,7 +3800,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 124953 },	-- Wild Combatant's Belt of Cruelty (A)
 									{"select", "itemID", 124954 },	-- Wild Combatant's Boots of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125006, {	-- Wild Combatant's Leather Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -3833,7 +3833,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 124968 },	-- Wild Combatant's Waistguard of Cruelty (A)
 									{"select", "itemID", 124970 },	-- Wild Combatant's Footguards of Cruelty  (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125010, {	-- Wild Combatant's Ringmail Armor (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -3866,7 +3866,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 124902 },	-- Wild Combatant's Cord of Cruelty (A)
 									{"select", "itemID", 124904 },	-- Wild Combatant's Treads of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125057, {	-- Wild Combatant's Felweave Amice (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -3899,7 +3899,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 124989 },	-- Wild Combatant's Girdle of Cruelty (A)
 									{"select", "itemID", 124991 },	-- Wild Combatant's Warboots of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125058, {	-- Wild Combatant's Plate Chestpiece (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -4080,7 +4080,7 @@ root(ROOTS.PVP, {
 								["sym"] = {
 									{"sub", "pvp_weapons_faction_ensemble", EXPANSION.WOD, SEASON_WILD, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
 								},
-								["g"] = {
+								["groups"] = {
 									i(124675, {	-- Wild Gladiator's Cleaver
 										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
@@ -4183,7 +4183,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 124803 },	-- Wild Gladiator's Girdle of Cruelty (A)
 									{"select", "itemID", 124808 },	-- Wild Gladiator's Warboots of Victory (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(124711, {	-- Wild Gladiator's Dreadplate Chestpiece (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -4211,7 +4211,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 124752 },	-- Wild Gladiator's Belt of Victory (A)
 									{"select", "itemID", 124754 },	-- Wild Gladiator's Boots of Prowess (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(124716, {	-- Wild Gladiator's Dragonhide Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -4242,7 +4242,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 124776 },	-- Wild Gladiator's Waistguard of Victory (A)
 									{"select", "itemID", 124778 },	-- Wild Gladiator's Footguards of Prowess (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(124721, {	-- Wild Gladiator's Chain Armor (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -4270,7 +4270,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 124692 },	-- Wild Gladiator's Cord of Cruelty (A)
 									{"select", "itemID", 124696 },	-- Wild Gladiator's Treads of Prowess (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(124773, {	-- Wild Gladiator's Silk Amice (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -4298,7 +4298,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 124750 },	-- Wild Gladiator's Belt of Prowess (A)
 									{"select", "itemID", 124755 },	-- Wild Gladiator's Boots of Victory (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(124793, {	-- Wild Gladiator's Ironskin Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -4326,7 +4326,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 124805 },	-- Wild Gladiator's Girdle of Victory (A)
 									{"select", "itemID", 124807 },	-- Wild Gladiator's Warboots of Prowess (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(124798, {	-- Wild Gladiator's Scaled Chestpiece (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -4354,7 +4354,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 124694 },	-- Wild Gladiator's Cord of Victory (A)
 									{"select", "itemID", 124695 },	-- Wild Gladiator's Treads of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(124822, {	-- Wild Gladiator's Satin Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -4382,7 +4382,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 124751 },	-- Wild Gladiator's Belt of Cruelty (A)
 									{"select", "itemID", 124753 },	-- Wild Gladiator's Boots of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(124828, {	-- Wild Gladiator's Leather Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -4411,7 +4411,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 124777 },	-- Wild Gladiator's Footguards of Cruelty (A)
 									{"select", "itemID", 124779 },	-- Wild Gladiator's Footguards of Victory (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(124832, {	-- Wild Gladiator's Ringmail Armor (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -4439,7 +4439,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 124693 },	-- Wild Gladiator's Cord of Prowess (A)
 									{"select", "itemID", 124697 },	-- Wild Gladiator's Treads of Victory (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(124879, {	-- Wild Gladiator's Felweave Amice (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -4467,7 +4467,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 124804 },	-- Wild Gladiator's Girdle of Prowess (A)
 									{"select", "itemID", 124806 },	-- Wild Gladiator's Warboots of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(124880, {	-- Wild Gladiator's Plate Chestpiece (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -4809,7 +4809,7 @@ root(ROOTS.PVP, {
 			}),
 			n(FACTION_HEADER_HORDE, {
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					n(PVP_ASPIRANT, {
 						cl(DEATHKNIGHT, {
 							un(REMOVED_FROM_GAME, i(125547)),	-- Wild Aspirant's Dreadplate Chestpiece (H)
@@ -4947,7 +4947,7 @@ root(ROOTS.PVP, {
 								["sym"] = {
 									{"sub", "pvp_weapons_faction_ensemble", EXPANSION.WOD, SEASON_WILD, FACTION_HEADER_HORDE, PVP_COMBATANT },
 								},
-								["g"] = {
+								["groups"] = {
 									i(125428, {	-- Wild Combatant's Barrier (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -5050,7 +5050,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125466 },	-- Wild Combatant's Girdle of Cruelty (H)
 									{"select", "itemID", 125468 },	-- Wild Combatant's Warboots of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125390, {	-- Wild Combatant's Dreadplate Chestpiece (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -5083,7 +5083,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125430 },	-- Wild Combatant's Belt of Cruelty (H)
 									{"select", "itemID", 125431 },	-- Wild Combatant's Boots of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125395, {	-- Wild Combatant's Dragonhide Gloves (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -5116,7 +5116,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125445 },	-- Wild Combatant's Waistguard of Cruelty (H)
 									{"select", "itemID", 125448 },	-- Wild Combatant's Footguards of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125400, {	-- Wild Combatant's Chain Armor (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -5149,7 +5149,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125379 },	-- Wild Combatant's Cord of Cruelty (H)
 									{"select", "itemID", 125381 },	-- Wild Combatant's Treads of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125444, {	-- Wild Combatant's Silk Amice (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -5182,7 +5182,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125430 },	-- Wild Combatant's Belt of Cruelty (H)
 									{"select", "itemID", 125431 },	-- Wild Combatant's Boots of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125456, {	-- Wild Combatant's Ironskin Gloves (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -5215,7 +5215,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125466 },	-- Wild Combatant's Girdle of Cruelty (H)
 									{"select", "itemID", 125468 },	-- Wild Combatant's Warboots of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125461, {	-- Wild Combatant's Scaled Chestpiece (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -5248,7 +5248,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125379 },	-- Wild Combatant's Cord of Cruelty (H)
 									{"select", "itemID", 125381 },	-- Wild Combatant's Treads of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125477, {	-- Wild Combatant's Satin Gloves (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -5281,7 +5281,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125430 },	-- Wild Combatant's Belt of Cruelty (H)
 									{"select", "itemID", 125431 },	-- Wild Combatant's Boots of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125483, {	-- Wild Combatant's Leather Gloves (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -5314,7 +5314,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125445 },	-- Wild Combatant's Waistguard of Cruelty (H)
 									{"select", "itemID", 125447 },	-- Wild Combatant's Footguards of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125487, {	-- Wild Combatant's Ringmail Armor (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -5347,7 +5347,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 119833 },	-- Wild Combatant's Cord of Cruelty (H)
 									{"select", "itemID", 119835 },	-- Wild Combatant's Treads of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125534, {	-- Wild Combatant's Felweave Amice (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -5380,7 +5380,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125466 },	-- Wild Combatant's Girdle of Cruelty (H)
 									{"select", "itemID", 125468 },	-- Wild Combatant's Warboots of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125535, {	-- Wild Combatant's Plate Chestpiece (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -5561,7 +5561,7 @@ root(ROOTS.PVP, {
 								["sym"] = {
 									{"sub", "pvp_weapons_faction_ensemble", EXPANSION.WOD, SEASON_WILD, FACTION_HEADER_HORDE, PVP_GLADIATOR },
 								},
-								["g"] = {
+								["groups"] = {
 									i(125228, {	-- Wild Gladiator's Barrier (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -5664,7 +5664,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125282 },	-- Wild Gladiator's Girdle of Cruelty (H)
 									{"select", "itemID", 125287 },	-- Wild Gladiator's Warboots of Victory (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125190, {	-- Wild Gladiator's Dreadplate Chestpiece (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -5692,7 +5692,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125231 },	-- Wild Gladiator's Belt of Victory (H)
 									{"select", "itemID", 125233 },	-- Wild Gladiator's Boots of Prowess (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125195, {	-- Wild Gladiator's Dragonhide Gloves (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -5723,7 +5723,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125255 },	-- Wild Gladiator's Waistguard of Victory (H)
 									{"select", "itemID", 125257 },	-- Wild Gladiator's Footguards of Prowess (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125200, {	-- Wild Gladiator's Chain Armor (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -5751,7 +5751,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125171 },	-- Wild Gladiator's Cord of Cruelty (H)
 									{"select", "itemID", 125175 },	-- Wild Gladiator's Treads of Prowess (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125252, {	-- Wild Gladiator's Silk Amice (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -5779,7 +5779,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125229 },	-- Wild Gladiator's Belt of Prowess (H)
 									{"select", "itemID", 125234 },	-- Wild Gladiator's Boots of Victory (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125272, {	-- Wild Gladiator's Ironskin Gloves (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -5807,7 +5807,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125284 },	-- Wild Gladiator's Girdle of Victory (H)
 									{"select", "itemID", 125286 },	-- Wild Gladiator's Warboots of Prowess (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125277, {	-- Wild Gladiator's Scaled Chestpiece (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -5835,7 +5835,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125173 },	-- Wild Gladiator's Cord of Victory (H)
 									{"select", "itemID", 125174 },	-- Wild Gladiator's Treads of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125301, {	-- Wild Gladiator's Satin Gloves (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -5863,7 +5863,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125230 },	-- Wild Gladiator's Belt of Cruelty (H)
 									{"select", "itemID", 125232 },	-- Wild Gladiator's Boots of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125307, {	-- Wild Gladiator's Leather Gloves (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -5892,7 +5892,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125256 },	-- Wild Gladiator's Footguards of Cruelty (H)
 									{"select", "itemID", 125258 },	-- Wild Gladiator's Footguards of Victory (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125311, {	-- Wild Gladiator's Ringmail Armor (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -5920,7 +5920,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125172 },	-- Wild Gladiator's Cord of Prowess (H)
 									{"select", "itemID", 125176 },	-- Wild Gladiator's Treads of Victory (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125356, {	-- Wild Gladiator's Felweave Amice (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -5948,7 +5948,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125283 },	-- Wild Gladiator's Girdle of Prowess (H)
 									{"select", "itemID", 125285 },	-- Wild Gladiator's Warboots of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125357, {	-- Wild Gladiator's Plate Chestpiece (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -6483,7 +6483,7 @@ root(ROOTS.PVP, {
 				ach(10113),	-- Challenger: Warlords of Draenor Season 3
 				ach(10118, {	-- Defender of the Alliance: Warlords of Draenor Season 3
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						title(310, {	-- <Name> Defender of the Alliance
 							["races"] = ALLIANCE_ONLY,
 							-- #if AFTER 8.0.1
@@ -6494,7 +6494,7 @@ root(ROOTS.PVP, {
 				}),
 				ach(10119, {	-- Defender of the Horde: Warlords of Draenor Season 3
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						title(313, {	-- <Name> Defender of the Horde
 							["races"] = HORDE_ONLY,
 							-- #if AFTER 8.0.1
@@ -6513,7 +6513,7 @@ root(ROOTS.PVP, {
 				}),
 				ach(10116, {	-- Guardian of the Alliance: Warlords of Draenor Season 3
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						title(309, {	-- <Name> Guardian of the Alliance
 							["races"] = ALLIANCE_ONLY,
 							-- #if AFTER 8.0.1
@@ -6524,7 +6524,7 @@ root(ROOTS.PVP, {
 				}),
 				ach(10117, {	-- Guardian of the Horde: Warlords of Draenor Season 3
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						title(312, {	-- <Name> Guardian of the Horde
 							["races"] = HORDE_ONLY,
 							-- #if AFTER 8.0.1
@@ -6535,7 +6535,7 @@ root(ROOTS.PVP, {
 				}),
 				ach(10114, {	-- Hero of the Alliance: Warmongering
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
 							["timeline"] = { ADDED_7_3_2 },
 						})),
@@ -6543,7 +6543,7 @@ root(ROOTS.PVP, {
 				}),
 				ach(10115, {	-- Hero of the Horde: Warmongering
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
 							["timeline"] = { ADDED_7_3_2 },
 						})),
@@ -6552,7 +6552,7 @@ root(ROOTS.PVP, {
 				ach(10112),	-- Rival: Warlords of Draenor Season 3
 				ach(10120, {	-- Soldier of the Alliance: Warlords of Draenor Season 3
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						title(311, {	-- <Name> Soldier of the Alliance
 							["races"] = ALLIANCE_ONLY,
 							-- #if AFTER 8.0.1
@@ -6563,7 +6563,7 @@ root(ROOTS.PVP, {
 				}),
 				ach(10121, {	-- Soldier of the Horde: Warlords of Draenor Season 3
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						title(314, {	-- <Name> Soldier of the Horde
 							["races"] = HORDE_ONLY,
 							-- #if AFTER 8.0.1
@@ -6589,7 +6589,7 @@ root(ROOTS.PVP, {
 			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					n(PVP_ASPIRANT, {
 						cl(DEATHKNIGHT, {
 							i(126184),	-- Warmongering Aspirant's Dreadplate Chestpiece (A)
@@ -6727,7 +6727,7 @@ root(ROOTS.PVP, {
 								["sym"] = {
 									{"sub", "pvp_weapons_faction_ensemble", EXPANSION.WOD, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_COMBATANT },
 								},
-								["g"] = {
+								["groups"] = {
 									i(126065, {	-- Warmongering Combatant's Barrier (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -6830,7 +6830,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126103 },	-- Warmongering Combatant's Girdle of Cruelty (A)
 									{"select", "itemID", 126105 },	-- Warmongering Combatant's Warboots of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126027, {	-- Warmongering Combatant's Dreadplate Chestpiece (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -6863,7 +6863,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126067 },	-- Warmongering Combatant's Belt of Cruelty (A)
 									{"select", "itemID", 126068 },	-- Warmongering Combatant's Boots of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126032, {	-- Warmongering Combatant's Dragonhide Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -6896,7 +6896,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126082 },	-- Warmongering Combatant's Waistguard of Cruelty (A)
 									{"select", "itemID", 126084 },	-- Warmongering Combatant's Footguards of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126037, {	-- Warmongering Combatant's Chain Armor (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -6929,7 +6929,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126016 },	-- Warmongering Combatant's Cord of Cruelty (A)
 									{"select", "itemID", 126018 },	-- Warmongering Combatant's Treads of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126081, {	-- Warmongering Combatant's Silk Amice (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -6962,7 +6962,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126067 },	-- Warmongering Combatant's Belt of Cruelty (A)
 									{"select", "itemID", 126068 },	-- Warmongering Combatant's Boots of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126093, {	-- Warmongering Combatant's Ironskin Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -6995,7 +6995,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126103 },	-- Warmongering Combatant's Girdle of Cruelty (A)
 									{"select", "itemID", 126105 },	-- Warmongering Combatant's Warboots of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126098, {	-- Warmongering Combatant's Scaled Chestpiece (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -7028,7 +7028,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126016 },	-- Warmongering Combatant's Cord of Cruelty (A)
 									{"select", "itemID", 126068 },	-- Warmongering Combatant's Treads of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126114, {	-- Warmongering Combatant's Satin Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -7061,7 +7061,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126067 },	-- Warmongering Combatant's Belt of Cruelty (A)
 									{"select", "itemID", 126068 },	-- Warmongering Combatant's Boots of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126120, {	-- Warmongering Combatant's Leather Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -7094,7 +7094,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126083 },	-- Warmongering Combatant's Waistguard of Cruelty (A)
 									{"select", "itemID", 126084 },	-- Warmongering Combatant's Footguards of Cruelty  (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126124, {	-- Warmongering Combatant's Ringmail Armor (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -7127,7 +7127,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126016 },	-- Warmongering Combatant's Cord of Cruelty (A)
 									{"select", "itemID", 126068 },	-- Warmongering Combatant's Treads of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126171, {	-- Warmongering Combatant's Felweave Amice (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -7160,7 +7160,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126103 },	-- Warmongering Combatant's Girdle of Cruelty (A)
 									{"select", "itemID", 126105 },	-- Warmongering Combatant's Warboots of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126172, {	-- Warmongering Combatant's Plate Chestpiece (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -7346,7 +7346,7 @@ root(ROOTS.PVP, {
 								["sym"] = {
 									{"sub", "pvp_weapons_faction_ensemble", EXPANSION.WOD, SEASON_WARMONGERING, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
 								},
-								["g"] = {
+								["groups"] = {
 									i(125863, {	-- Warmongering Gladiator's Barrier (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -7446,7 +7446,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125917 },	-- Warmongering Gladiator's Girdle of Cruelty (A)
 									{"select", "itemID", 125922 },	-- Warmongering Gladiator's Warboots of Victory (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125825, {	-- Warmongering Gladiator's Dreadplate Chestpiece (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -7474,7 +7474,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125866 },	-- Warmongering Gladiator's Belt of Victory (A)
 									{"select", "itemID", 125868 },	-- Warmongering Gladiator's Boots of Prowess (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125830, {	-- Warmongering Gladiator's Dragonhide Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -7505,7 +7505,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125890 },	-- Warmongering Gladiator's Waistguard of Victory (A)
 									{"select", "itemID", 125892 },	-- Warmongering Gladiator's Footguards of Prowess (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125835, {	-- Warmongering Gladiator's Chain Armor (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -7533,7 +7533,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125806 },	-- Warmongering Gladiator's Cord of Cruelty (A)
 									{"select", "itemID", 125810 },	-- Warmongering Gladiator's Treads of Prowess (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125887, {	-- Warmongering Gladiator's Silk Amice (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -7561,7 +7561,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125864 },	-- Warmongering Gladiator's Belt of Prowess (A)
 									{"select", "itemID", 125869 },	-- Warmongering Gladiator's Boots of Victory (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125907, {	-- Warmongering Gladiator's Ironskin Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -7589,7 +7589,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125919 },	-- Warmongering Gladiator's Girdle of Victory (A)
 									{"select", "itemID", 125921 },	-- Warmongering Gladiator's Warboots of Prowess (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125912, {	-- Warmongering Gladiator's Scaled Chestpiece (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -7617,7 +7617,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125808 },	-- Warmongering Gladiator's Cord of Victory (A)
 									{"select", "itemID", 125809 },	-- Warmongering Gladiator's Treads of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125936, {	-- Warmongering Gladiator's Satin Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -7645,7 +7645,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125865 },	-- Warmongering Gladiator's Belt of Cruelty (A)
 									{"select", "itemID", 125867 },	-- Warmongering Gladiator's Boots of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125942, {	-- Warmongering Gladiator's Leather Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -7674,7 +7674,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125891 },	-- Warmongering Gladiator's Footguards of Cruelty (A)
 									{"select", "itemID", 125893 },	-- Warmongering Gladiator's Footguards of Victory (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125946, {	-- Warmongering Gladiator's Ringmail Armor (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -7702,7 +7702,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125807 },	-- Warmongering Gladiator's Cord of Prowess (A)
 									{"select", "itemID", 125811 },	-- Warmongering Gladiator's Treads of Victory (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125993, {	-- Warmongering Gladiator's Felweave Amice (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -7730,7 +7730,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 125918 },	-- Warmongering Gladiator's Girdle of Prowess (A)
 									{"select", "itemID", 125920 },	-- Warmongering Gladiator's Warboots of Cruelty (A)
 								},
-								["g"] = {
+								["groups"] = {
 									i(125994, {	-- Warmongering Gladiator's Plate Chestpiece (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -8077,7 +8077,7 @@ root(ROOTS.PVP, {
 			}),
 			n(FACTION_HEADER_HORDE, {
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					n(PVP_ASPIRANT, {
 						cl(DEATHKNIGHT, {
 							i(126661),	-- Warmongering Aspirant's Dreadplate Chestpiece (H)
@@ -8215,7 +8215,7 @@ root(ROOTS.PVP, {
 								["sym"] = {
 									{"sub", "pvp_weapons_faction_ensemble", EXPANSION.WOD, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT },
 								},
-								["g"] = {
+								["groups"] = {
 									i(126542, {	-- Warmongering Combatant's Barrier (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -8318,7 +8318,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126580 },	-- Warmongering Combatant's Girdle of Cruelty (H)
 									{"select", "itemID", 126582 },	-- Warmongering Combatant's Warboots of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126504, {	-- Warmongering Combatant's Dreadplate Chestpiece (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -8351,7 +8351,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126544 },	-- Warmongering Combatant's Belt of Cruelty (H)
 									{"select", "itemID", 126545 },	-- Warmongering Combatant's Boots of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126509, {	-- Warmongering Combatant's Dragonhide Gloves (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -8384,7 +8384,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126559 },	-- Warmongering Combatant's Waistguard of Cruelty (H)
 									{"select", "itemID", 126561 },	-- Warmongering Combatant's Footguards of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126514, {	-- Warmongering Combatant's Chain Armor (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -8417,7 +8417,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126493 },	-- Warmongering Combatant's Cord of Cruelty (H)
 									{"select", "itemID", 126495 },	-- Warmongering Combatant's Treads of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126558, {	-- Warmongering Combatant's Silk Amice (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -8450,7 +8450,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126544 },	-- Warmongering Combatant's Belt of Cruelty (H)
 									{"select", "itemID", 126545 },	-- Warmongering Combatant's Boots of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126570, {	-- Warmongering Combatant's Ironskin Gloves (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -8483,7 +8483,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126580 },	-- Warmongering Combatant's Girdle of Cruelty (H)
 									{"select", "itemID", 126582 },	-- Warmongering Combatant's Warboots of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126575, {	-- Warmongering Combatant's Scaled Chestpiece (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -8516,7 +8516,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126493 },	-- Warmongering Combatant's Cord of Cruelty (H)
 									{"select", "itemID", 126495 },	-- Warmongering Combatant's Treads of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126591, {	-- Warmongering Combatant's Satin Gloves (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -8549,7 +8549,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126544 },	-- Warmongering Combatant's Belt of Cruelty (H)
 									{"select", "itemID", 126545 },	-- Warmongering Combatant's Boots of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126597, {	-- Warmongering Combatant's Leather Gloves (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -8584,7 +8584,7 @@ root(ROOTS.PVP, {
 										126561,	-- Warmongering Combatant's Footguards of Cruelty (H)
 									},
 								},
-								["g"] = {
+								["groups"] = {
 									i(126601, {	-- Warmongering Combatant's Ringmail Armor (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -8619,7 +8619,7 @@ root(ROOTS.PVP, {
 										126561,	-- Warmongering Combatant's Footguards of Cruelty (H)
 									},
 								},
-								["g"] = {
+								["groups"] = {
 									i(126648, {	-- Warmongering Combatant's Felweave Amice (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -8652,7 +8652,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126580 },	-- Warmongering Combatant's Girdle of Cruelty (H)
 									{"select", "itemID", 126582 },	-- Warmongering Combatant's Warboots of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126649, {	-- Warmongering Combatant's Plate Chestpiece (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -8838,7 +8838,7 @@ root(ROOTS.PVP, {
 								["sym"] = {
 									{"sub", "pvp_weapons_faction_ensemble", EXPANSION.WOD, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_GLADIATOR },
 								},
-								["g"] = {
+								["groups"] = {
 									i(126342, {	-- Warmongering Gladiator's Barrier (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -8938,7 +8938,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126396 },	-- Warmongering Gladiator's Girdle of Cruelty (H)
 									{"select", "itemID", 126401 },	-- Warmongering Gladiator's Warboots of Victory (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126306, {	-- Warmongering Gladiator's Dreadplate Helm (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -8966,7 +8966,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126345 },	-- Warmongering Gladiator's Belt of Victory (H)
 									{"select", "itemID", 126347 },	-- Warmongering Gladiator's Boots of Prowess (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126309, {	-- Warmongering Gladiator's Dragonhide Gloves (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -8997,7 +8997,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126369 },	-- Warmongering Gladiator's Waistguard of Victory (H)
 									{"select", "itemID", 126371 },	-- Warmongering Gladiator's Footguards of Prowess (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126314, {	-- Warmongering Gladiator's Chain Armor (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -9025,7 +9025,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126285 },	-- Warmongering Gladiator's Cord of Cruelty (H)
 									{"select", "itemID", 126289 },	-- Warmongering Gladiator's Treads of Prowess (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126366, {	-- Warmongering Gladiator's Silk Amice (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -9053,7 +9053,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126343 },	-- Warmongering Gladiator's Belt of Prowess (H)
 									{"select", "itemID", 126348 },	-- Warmongering Gladiator's Boots of Victory (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126386, {	-- Warmongering Gladiator's Ironskin Gloves (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -9081,7 +9081,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126398 },	-- Warmongering Gladiator's Girdle of Victory (H)
 									{"select", "itemID", 126400 },	-- Warmongering Gladiator's Warboots of Prowess (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126391, {	-- Warmongering Gladiator's Scaled Chestpiece (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -9109,7 +9109,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126287 },	-- Warmongering Gladiator's Cord of Victory (H)
 									{"select", "itemID", 126288 },	-- Warmongering Gladiator's Treads of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126415, {	-- Warmongering Gladiator's Satin Gloves (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -9137,7 +9137,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126344 },	-- Warmongering Gladiator's Belt of Cruelty (H)
 									{"select", "itemID", 126346 },	-- Warmongering Gladiator's Boots of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126421, {	-- Warmongering Gladiator's Leather Gloves (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -9166,7 +9166,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126370 },	-- Warmongering Gladiator's Footguards of Cruelty (H)
 									{"select", "itemID", 126372 },	-- Warmongering Gladiator's Footguards of Victory (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126425, {	-- Warmongering Gladiator's Ringmail Armor (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -9194,7 +9194,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126286 },	-- Warmongering Gladiator's Cord of Prowess (H)
 									{"select", "itemID", 126290 },	-- Warmongering Gladiator's Treads of Victory (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126470, {	-- Warmongering Gladiator's Felweave Amice (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -9222,7 +9222,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 126397 },	-- Warmongering Gladiator's Girdle of Prowess (H)
 									{"select", "itemID", 126399 },	-- Warmongering Gladiator's Warboots of Cruelty (H)
 								},
-								["g"] = {
+								["groups"] = {
 									i(126471, {	-- Warmongering Gladiator's Plate Chestpiece (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),

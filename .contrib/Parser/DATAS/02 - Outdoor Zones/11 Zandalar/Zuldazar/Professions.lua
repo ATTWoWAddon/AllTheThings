@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 120,
-					["g"] = {
+					["groups"] = {
 						i(155666),	-- Eye of Dazar (QI!)
 					},
 				}),

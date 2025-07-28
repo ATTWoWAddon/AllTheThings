@@ -22,7 +22,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, bubbleDo
 				788,
 				789,
 			},
-			["g"] = {
+			["groups"] = {
 				n(ACHIEVEMENTS, {
 						ach(19946, {	-- Raid Finder: Mogu'shan Vaults
 							crit(65677, {	-- The Stone Guard
@@ -197,7 +197,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, bubbleDo
 					474,	-- Oratorium of the Voice
 					475,	-- Heart of Fear
 				},
-				["g"] = {
+				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(19949, {	-- Raid Finder: Heart of Fear
 							crit(65696, {	-- Imperial Vizier Zor'lok
@@ -333,7 +333,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, bubbleDo
 				["isRaid"] = true,
 				["coord"] = { 48.4, 61.4, THE_VEILED_STAIR },
 				["maps"] = { 456 },	-- Terrace of Endless Spring
-				["g"] = {
+				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(19952, {	-- Raid Finder: Terrace of Endless Spring
 							crit(65713, {	-- Protectors of the Endless

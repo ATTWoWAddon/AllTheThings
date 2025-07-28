@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
-					["g"] = {
+					["groups"] = {
 						i(155590),	-- Shard of Golden Beryl (QI!)
 					},
 				}),

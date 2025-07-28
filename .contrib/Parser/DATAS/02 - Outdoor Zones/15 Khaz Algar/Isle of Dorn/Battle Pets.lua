@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				4533,	-- Meek Bloodlasher (PET!)
 				4521,	-- Subterranean Dartswog (PET!)
 			}},
-			["g"] = {
+			["groups"] = {
 				pet(4540, {	-- Alabaster Stonecharger (PET!)
 					["coord"] = { 47.0, 29.6, ISLE_OF_DORN },
 				}),

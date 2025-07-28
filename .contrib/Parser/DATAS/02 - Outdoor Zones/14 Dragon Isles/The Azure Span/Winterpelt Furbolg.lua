@@ -36,7 +36,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["minReputation"] = { FACTION_WINTERPELT_FURBOLG, UNFRIENDLY+2050 },
 					["provider"] = { "n", 189401 },	-- Sonova Snowden
 					["coord"] = { 65.4, 15.9, THE_AZURE_SPAN },
-					["g"] = {
+					["groups"] = {
 						i(202246),	-- Winterpelt Jewelry
 					},
 				}),
@@ -47,7 +47,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["minReputation"] = { FACTION_WINTERPELT_FURBOLG, UNFRIENDLY+2050 },
 					["provider"] = { "n", 189401 },	-- Sonova Snowden
 					["coord"] = { 65.4, 15.9, THE_AZURE_SPAN },
-					["g"] = {
+					["groups"] = {
 						i(202244),	-- Frosty Foraged Foods (QI!)
 					},
 				}),
@@ -79,7 +79,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
 					["repeatable"] = true,
 					["cost"] = { { "i", 202017, 5 } },	-- 5x Liberated Furbolg Artifacts
-					["g"] = {
+					["groups"] = {
 						spell(403661),	-- Knowledge: Winterpelt
 					}
 				}),
@@ -93,7 +93,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
 					["repeatable"] = true,
 					["cost"] = { { "i", 202018, 1 } },	-- 1x Intact Scribe Stick
-					["g"] = {
+					["groups"] = {
 						spell(403661),	-- Knowledge: Winterpelt
 					}
 				}),
@@ -125,7 +125,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 25
 					["provider"] = { "n", 201065 },	-- Sonova Snowden
 					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
-					["g"] = {
+					["groups"] = {
 						i(202268),	-- Winterpelt Totem
 					},
 				}),
@@ -142,7 +142,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 50
 					["provider"] = { "n", 199271 },	-- Elder Mhaz
 					["coord"] = { 57.4, 21.1, THE_AZURE_SPAN },
-					["g"] = {
+					["groups"] = {
 						i(202181),	-- Best-root Tuber (QI!)
 					},
 				}),
@@ -151,7 +151,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 50
 					["provider"] = { "n", 199272 },	-- Matron Fherg
 					["coord"] = { 57.4, 20.9, THE_AZURE_SPAN },
-					["g"] = {
+					["groups"] = {
 						i(202185),	-- Chillwrought Worm Meat (QI!)
 					},
 				}),
@@ -163,7 +163,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 50
 					["provider"] = { "n", 201065 },	-- Sonova Snowden
 					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },
-					["g"] = {
+					["groups"] = {
 						i(202283),	-- Reading Glasses (TOY!)
 					},
 				}),
@@ -207,7 +207,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 75
 					["provider"] = { "n", 199299 },	-- Jhagaze the Wordkeeper
 					["coord"] = { 67.0, 11.9, THE_AZURE_SPAN },
-					["g"] = {
+					["groups"] = {
 						i(202264),	-- Defender of the Winterpelt
 						i(198834),	-- Scribbled Bark Chunks (QI!)
 					},
@@ -240,7 +240,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 100
 					["provider"] = { "n", 189394 },	-- Kranac Sagesnow
 					["coord"] = { 65.9, 10.7, THE_AZURE_SPAN },
-					["g"] = {
+					["groups"] = {
 						i(202253),	-- Primal Stave of Claw and Fur (TOY!)
 					},
 				}),
@@ -248,7 +248,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(VENDORS, {
 				n(201105, {	-- Kazzi
 					["coord"] = { 65.8, 12.7, THE_AZURE_SPAN },
-					["g"] = bubbleDownRepSkip(FACTION_WINTERPELT_FURBOLG, {
+					["groups"] = bubbleDownRepSkip(FACTION_WINTERPELT_FURBOLG, {
 						{		-- Neutral
 						}, {	-- Friendly
 							i(202314, {	-- Big Chunk o' Meat

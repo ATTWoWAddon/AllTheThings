@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
-	applyclassicphase(MOP_PHASE_LANDFALL, inst(324, {	-- Siege of Niuzao Temple
+	applyclassicphase(MOP_PHASE_ONE, inst(324, {	-- Siege of Niuzao Temple
 		["coord"] = { 35, 82, TOWNLONG_STEPPES },
 		["maps"] = {
 			457,	-- Siege of Niuzao Temple
@@ -23,7 +23,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				q(31366, {	-- Take Down the Wing Leader
 					["provider"] = { "n", 64517 },	-- Shado-Master Chum Kiu
 					["coord"] = { 58.0, 23.0, 457 },
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/1 Wing Leader Ner'onok slain
 							["provider"] = { "n", 62205 },	-- Wing Leader Ner'onok
 						}),
@@ -38,7 +38,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 				e(727, {	-- Wing Leader Ner'onok
 					["crs"] = { 62205 },	-- Wing Leader Ner'onok
-					["g"] = {
+					["groups"] = {
 						ach(10011, {	-- Siege of Niuzao Temple
 							["timeline"] = { ADDED_6_2_0 },
 						}),
@@ -48,7 +48,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {
 				e(693, {	-- Vizier Jin'bak
 					["crs"] = { 61567 },	-- Vizier Jin'bak
-					["g"] = {
+					["groups"] = {
 						-- Available
 						i(144022, {	-- Hood of Viridian Residue
 							["timeline"] = { ADDED_7_1_5 },
@@ -86,7 +86,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				e(738, {	-- Commander Vo'jak
 					["crs"] = { 61634 },	-- Commander Vo'jak
-					["g"] = {
+					["groups"] = {
 						-- Available
 						i(144164, {	-- Siege-Captain's Scimitar
 							["timeline"] = { ADDED_7_1_5 },
@@ -124,7 +124,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				e(692, {	-- General Pa'valak
 					["crs"] = { 61485 },	-- General Pa'valak
-					["g"] = {
+					["groups"] = {
 						-- Available
 						i(144167, {	-- Tempestuous Longbow
 							["timeline"] = { ADDED_7_1_5 },
@@ -162,7 +162,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				e(727, {	-- Wing Leader Ner'onok
 					["crs"] = { 62205 },	-- Wing Leader Ner'onok
-					["g"] = {
+					["groups"] = {
 						-- Available
 						i(144219, {	-- Tolakesh, Horn of the Black Ox
 							["timeline"] = { ADDED_7_1_5 },
@@ -243,7 +243,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(693, {	-- Vizier Jin'bak
 					["crs"] = { 61567 },	-- Vizier Jin'bak
-					["g"] = {
+					["groups"] = {
 						-- Available
 						i(144022, {	-- Hood of Viridian Residue
 							["timeline"] = { ADDED_7_1_5 },
@@ -281,7 +281,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				e(738, {	-- Commander Vo'jak
 					["crs"] = { 61634 },	-- Commander Vo'jak
-					["g"] = {
+					["groups"] = {
 						-- Available
 						ach(6688),	-- Where's My Air Support?
 						i(144164, {	-- Siege-Captain's Scimitar
@@ -320,7 +320,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				e(692, {	-- General Pa'valak
 					["crs"] = { 61485 },	-- General Pa'valak
-					["g"] = {
+					["groups"] = {
 						ach(6485),	-- Return to Sender
 						i(144167, {	-- Tempestuous Longbow
 							["timeline"] = { ADDED_7_1_5 },
@@ -358,7 +358,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				e(727, {	-- Wing Leader Ner'onok
 					["crs"] = { 62205 },	-- Wing Leader Ner'onok
-					["g"] = {
+					["groups"] = {
 						-- Available
 						ach(6763),	-- Heroic: Siege of Niuzao Temple
 						ach(6772),	-- Heroic: Siege of Niuzao Temple Guild Run
@@ -434,7 +434,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 } }, {
+			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
 				ach(8439, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Siege of Niuzao Temple
 					title(247),	-- Siegebreaker <Name>
 				})),

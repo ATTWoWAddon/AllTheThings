@@ -390,8 +390,8 @@ if CombineSeasonalLoot then
 						i(168983),	-- Maniacal Monarch's Girdle
 						i(168982),	-- Regal Mekanospurs
 						i(168988),	-- Royal Attendant's Trouser
-					}
-				))),
+					})
+				)),
 			}),
 		})),
 		-- Item Appearance changes during the Season
@@ -410,7 +410,7 @@ if CombineSeasonalLoot then
 		-- Apparently the old versions of these helms ARE available during the season... but only from the Great Vault (confirmed)
 		header(HEADERS.Object, 446366, {	-- The Great Vault
 			["sharedDescription"] = "Only available from the Great Vault during the Season. It is expected (though not confirmed) that the original Source will be available again after the start of the next Season.",
-			["g"] = {
+			["groups"] = {
 				i(169003),	-- Apogee Inventor's Goggles
 				i(169006),	-- Inventor's Ingenious Trifocals
 				i(169005),	-- Mekgineer's Mindbending Headgear
@@ -625,7 +625,7 @@ local INSTANCE_GROUPS = {
 		ach(13789, {	-- Hertz Locker
 			["description"] = "After completing the achievement, speak to Prince Erazmin on Mechagon Island to get the essence.  You must already have the Rank 3 version.",
 			["u"] = REMOVED_FROM_GAME,
-			["g"] = {
+			["groups"] = {
 				i(168845, {	-- Mecha-Perfection Turbo (Rank 4)
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -688,6 +688,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 			1497,	-- Mechagon City
 		},
 		["timeline"] = {ADDED_8_2_0},
-		["g"] = INSTANCE_GROUPS
+		["groups"] = INSTANCE_GROUPS
 	}),
 }))

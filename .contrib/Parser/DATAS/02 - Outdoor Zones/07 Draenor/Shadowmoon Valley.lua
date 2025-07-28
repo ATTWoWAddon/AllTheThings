@@ -83,7 +83,7 @@ root(ROOTS.Zones, {
 					}),
 					ach(9470, {		-- Council of Exarchs
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							title(283, {	-- Prelate <Name>
 								["races"] = ALLIANCE_ONLY,
 							}),
@@ -111,7 +111,7 @@ root(ROOTS.Zones, {
 					ach(9564, {	-- Securing Draenor (Alliance)
 						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							crit(26253),	-- Assault on Socrethar's Rise
 							crit(26254),	-- Assault on Darktide Roost
 						},
@@ -315,7 +315,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 45.7, 26.3, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 75884 },	-- Rulkan
-						["g"] = {
+						["groups"] = {
 							i(106151),	-- Karabor Honor Guard Legguards
 							i(107316),	-- Karabor Sage Leggings
 							i(107306),	-- Karabor Skirmisher Legguards
@@ -328,7 +328,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 26.9, 6.6, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 84372 },	-- Madari
-						["g"] = {
+						["groups"] = {
 							garrisonBuilding(64),	-- Fishing Shack
 						},
 					}),
@@ -373,7 +373,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.9, 32.6, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 81912 },	-- Foreman Zipfizzle
-						["g"] = {
+						["groups"] = {
 							i(117499),	-- Lunarlight Plate Stompers
 							i(117500),	-- Lunartanned Boots
 							i(117497),	-- Moonchain Boots
@@ -411,7 +411,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 110,
 						["provider"] = { "o", 258980 },	-- Cursed Tome
 						["coord"] = { 37.6, 59.3, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(141361),	-- Cursed Tome (QI!)
 						},
 					}),
@@ -420,7 +420,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 45.9, 38.9, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 75005 },	-- Samaara
-						["g"] = {
+						["groups"] = {
 							i(113145),	-- Karabor Guardian Gorget
 							i(113146),	-- Karabor Sage Pendant
 							i(113147),	-- Rangari Luck Charm
@@ -444,7 +444,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 46.3, 38.6, DRAENOR_SHADOWMOON_VALLEY },
 						["provider"] = { "n", 77282 },	-- Prophet Velen
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(113176),	-- Karabor Anchorite Cudgel
 							i(113172),	-- Karabor Arcanist Wand
 							i(113173),	-- Karabor Honor Guard Mace
@@ -475,7 +475,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 61.8, 29.1, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 81140 },	-- Apprentice Artificer Andren
-						["g"] = {
+						["groups"] = {
 							i(113155),	-- Karabor Honor Guard Seal
 							i(113156),	-- Karabor Sage Signet
 							i(113157),	-- Rangari Initiate Ring
@@ -486,7 +486,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 34.2, 63.3, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 74877 },	-- Yrel
-						["g"] = {
+						["groups"] = {
 							i(107309),	-- Karabor Honor Guard Warboots
 							i(107315),	-- Karabor Sage Treads
 							i(107304),	-- Karabor Skirmisher Boots
@@ -516,7 +516,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 84385 },	-- Fanara
 						["coord"] = { 44.2, 40.9, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							DRAENOR_LEATHERWORKING,
 							i(111818),	-- The Tannery, Level 1
 						},
@@ -526,7 +526,7 @@ root(ROOTS.Zones, {
 						["requireSkill"] = BLACKSMITHING,
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 80827 },	-- Haephest
-						["g"] = appendGroups(DRAENOR_BLACKSMITHING, {
+						["groups"] = appendGroups(DRAENOR_BLACKSMITHING, {
 							i(111813),	-- The Forge, Level 1
 						}),
 					}),
@@ -547,7 +547,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 53.6, 57.2, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 76204 },	-- Fiona
-						["g"] = {
+						["groups"] = {
 							follower(180),	-- Fiona
 						},
 					}),
@@ -567,7 +567,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 46.1, 25.5, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 77211 },	-- Dulga
-						["g"] = {
+						["groups"] = {
 							i(113162),	-- Kral'za's Resolve
 							i(113160),	-- Moonstone Luck Totem
 							i(113158),	-- Dol'mak's Lucky Charm
@@ -592,7 +592,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 62.5, 26.2, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 80079 },	-- Exarch Naielle
-						["g"] = {
+						["groups"] = {
 							follower(185),	-- Rangari Chel
 							follower(184),	-- Apprentice Artificer Andren
 							follower(186),	-- Vindicator Onaala
@@ -627,7 +627,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 47.0, 14.4, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 73877 },	-- Jarrod Hamby
-						["g"] = {
+						["groups"] = {
 							i(113151),	-- Lightly Perforated Chestplate
 							i(113153),	-- Podling-Husk Tunic
 							i(113154),	-- Podling Vineweave Robe
@@ -639,7 +639,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.6, 72.0, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 80635 },	-- Rangari Arepheon
-						["g"] = {
+						["groups"] = {
 							i(107310),	-- Karabor Honor Guard Gauntlets
 							i(107303),	-- Rangari Initiate Gauntlets
 							i(107861),	-- Karabor Sage Gloves
@@ -689,7 +689,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 84523 },	-- Ameeka
 						["coord"] = { 58.2, 26.6, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = appendGroups(DRAENOR_TAILORING, {
+						["groups"] = appendGroups(DRAENOR_TAILORING, {
 							i(111816),	-- Tailoring Emporium, Level 1
 						}),
 					}),
@@ -745,7 +745,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 29.2, 25.6, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 77184 },	-- Archmage Khadgar
-						["g"] = {
+						["groups"] = {
 							i(108972),	-- Blind Fel-Eye Ring
 							i(108975),	-- Fel-Blackened Ring
 							i(108976),	-- Sanctified Fel-Wrap Ring
@@ -763,7 +763,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 84963 },	-- Deema
 						["coord"] = { 35.6, 72.2, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							DRAENOR_ENCHANTING,
 							i(111817),	-- Enchanter's Study, Level 1
 						},
@@ -804,7 +804,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 52.6, 59.6, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 80859 },	-- Rangari Duula
-						["g"] = {
+						["groups"] = {
 							i(113239),	-- Blademoon Chain Leggings
 							i(113237),	-- Blademoon Leggings
 							i(113240),	-- Blademoon Plate Legguards
@@ -816,7 +816,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 45.7, 25.5, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 75884 },	-- Rulkan
-						["g"] = {
+						["groups"] = {
 							follower(183),	-- Rulkan
 						},
 					}),
@@ -838,7 +838,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.1, 38.6, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 74043 },	-- Prophet Velen
-						["g"] = {
+						["groups"] = {
 							i(107313),	-- Karabor Honor Guard Girdle
 							i(107318),	-- Karabor Sage Cord
 							i(107308),	-- Karabor Skirmisher Belt
@@ -850,7 +850,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 36.3, 19.3, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 76748 },	-- Shelly Hamby
-						["g"] = {
+						["groups"] = {
 							follower(182),	-- Shelly Hamby
 						},
 					}),
@@ -860,7 +860,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 82496 },	-- Telos
 						["coord"] = { 54.0, 45.6, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = appendGroups(DRAENOR_ALCHEMY, {
+						["groups"] = appendGroups(DRAENOR_ALCHEMY, {
 							i(111812),	-- Alchemy Lab, lvl 1
 						}),
 					}),
@@ -894,7 +894,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 84825 },	-- Goggles
 						["sourceQuest"] = 36286,	-- Transponder 047-B
 						["requireSkill"] = ENGINEERING,
-						["g"] = appendGroups(DRAENOR_ENGINEERING, {
+						["groups"] = appendGroups(DRAENOR_ENGINEERING, {
 							i(109258),	-- Engineering Works, lvl 1
 						}),
 					}),
@@ -924,7 +924,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 53.5, 57.2, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 76204 },	-- Fiona
-						["g"] = {
+						["groups"] = {
 							i(106153),	-- Karabor Honor Guard Chestplate
 							i(107314),	-- Karabor Sage Robe
 							i(106143),	-- Karabor Skirmisher Vest
@@ -958,7 +958,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 35032 },	-- Into Anguish
 						["races"] = ALLIANCE_ONLY,
 						["description"] = "Granted automatically upon completing |cFFFFD700Into Anguish|r.",
-						["g"] = {
+						["groups"] = {
 							i(107312),	-- Karabor Honor Guard Shoulders
 							i(107317),	-- Karabor Sage Mantle
 							i(107307),	-- Karabor Skirmisher Spaulders
@@ -971,7 +971,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 35032,	-- Into Anguish
 						["description"] = "This version is offered if you abandon the quest and return to |cFFFFD700Prophet Velen|r.",
-						["g"] = {
+						["groups"] = {
 							i(107312),	-- Karabor Honor Guard Shoulders
 							i(107317),	-- Karabor Sage Mantle
 							i(107307),	-- Karabor Skirmisher Spaulders
@@ -988,7 +988,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 77.3, 38.1, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 72413 },	-- Exarch Akama
-						["g"] = {
+						["groups"] = {
 							i(106150),	-- Karabor Honor Guard Helm
 							i(106156),	-- Karabor Sage Cap
 							i(106160),	-- Karabor Skirmisher Hood
@@ -1000,7 +1000,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 56.1, 32.4, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 82348 },	-- Vindicator Maraad
-						["g"] = {
+						["groups"] = {
 							i(113179),	-- Karabor Arcanist Tome
 							i(113181),	-- Karabor Honor Guard Axe
 							i(113177),	-- Karabor Honor Guard Shield
@@ -1034,7 +1034,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 84724 },	-- Sha'la
 						["coord"] = { 57.8, 21.6, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(111815),	-- Scribe's Quarters, Level 1
 							i(111923, {	-- Secret of Draenor Inscription
 								i(120136),		-- Recipe: Secrets of Draenor Inscription
@@ -1101,7 +1101,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 66.3, 26.1, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 88972 },	-- Exarch Maladaar
-						["g"] = {
+						["groups"] = {
 							i(113234),	-- Karabor Honor Guard Wristwraps
 							i(113233),	-- Karabor Sage Wristwraps
 							i(113235),	-- Karabor Skirmisher Wristwraps
@@ -1119,7 +1119,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 19.1, 28.5, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 77417 },	-- Image of Archmage Khadgar
-						["g"] = {
+						["groups"] = {
 							i(113150),	-- Felblood-Starched Cloak
 							i(113149),	-- Flayed Flesh Cloak
 							i(113148),	-- Foulspawn Drape
@@ -1141,7 +1141,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 26.4, 32.7, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["icon"] = 1500867,
-						["g"] = {
+						["groups"] = {
 							i(113163),	-- Kliaa's Venomclaws
 							i(113159),	-- Probiscus of the Swampfly Queen
 							i(113161),	-- Throbbing Swampfly Venom Sac
@@ -1158,7 +1158,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["icon"] = 632821,
 						["provider"] = {"o",232405},	-- Wanted Poster
-						["g"] = {
+						["groups"] = {
 							i(117989),	-- Maa'run's Baleful Eye
 							i(117990),	-- Maa'run's Prescient Eye
 							i(117991),	-- Maa'run's Treacherous Eye
@@ -1246,7 +1246,7 @@ root(ROOTS.Zones, {
 							{ 29.4, 29.8, DRAENOR_SHADOWMOON_VALLEY },
 							{ 41.4, 32.8, DRAENOR_SHADOWMOON_VALLEY },
 						},
-						["g"] = {
+						["groups"] = {
 							i(109060),	-- Rylak-Scale Vest
 						},
 					}),
@@ -1254,7 +1254,7 @@ root(ROOTS.Zones, {
 						["questID"] = 37356,
 						["isDaily"] = true,
 						["coord"] = { 50.8, 79.0, DRAENOR_SHADOWMOON_VALLEY },	-- **Coords unconfirmed, relied on wowhead**
-						["g"] = {
+						["groups"] = {
 							i(119387),	-- Loop of Drowned Souls
 						},
 					}),
@@ -1262,14 +1262,14 @@ root(ROOTS.Zones, {
 						["questID"] = 37410,
 						["coord"] = { 67.2, 84.6, DRAENOR_SHADOWMOON_VALLEY },
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(119400),	-- Rugged Crystal Cudgel
 						},
 					}),
 					n(82326, {	-- Ba'ruun
 						["questID"] = 35731,
 						["coord"] = { 52.9, 16.7, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(113540),	-- Ba'ruun's Bountiful Bloom (TOY!)
 						},
 					}),
@@ -1280,14 +1280,14 @@ root(ROOTS.Zones, {
 					n(81639, {	-- Brambleking Fili
 						["questID"] = 33383,
 						["coord"] = { 44.8, 77.2, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(117551),	-- Staff of the One True Bramble King
 						},
 					}),
 					n(77085, {	-- Dark Emanation
 						["questID"] = 33064,
 						["coord"] = { 48.6, 43.6, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(109075),	-- Abberant's Paw
 						},
 					}),
@@ -1299,14 +1299,14 @@ root(ROOTS.Zones, {
 							{ 39.6, 80.8, DRAENOR_SHADOWMOON_VALLEY },
 							{ 42.2, 83.8, DRAENOR_SHADOWMOON_VALLEY },
 						},
-						["g"] = {
+						["groups"] = {
 							i(113548),	-- Darktide Summoner Staff
 						},
 					}),
 					n(82411, {	-- Darktalon
 						["questID"] = 35555,
 						["coord"] = { 49.7, 41.8, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(113541),	-- Darktalon's Drape
 						},
 					}),
@@ -1314,7 +1314,7 @@ root(ROOTS.Zones, {
 						["questID"] = 37351,
 						["isDaily"] = true,
 						["coord"] = { 46.0, 71.8, DRAENOR_SHADOWMOON_VALLEY },	-- **Coords unconfirmed, relied on wowhead**
-						["g"] = {
+						["groups"] = {
 							i(119431),	-- Servant of Demidos (PET!)
 							i(119377),	-- Void-Touched Diamond Necklace
 						},
@@ -1322,14 +1322,14 @@ root(ROOTS.Zones, {
 					n(82676, {	-- Enavra
 						["questID"] = 35688,
 						["coord"] = { 67.9, 63.9, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(113556),	-- Varandi Family Crest
 						},
 					}),
 					n(82207, {	-- Faebright
 						["questID"] = 35725,
 						["coord"] = { 61.6, 61.8, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(113557),	-- Dragonrider's Tinkered Leggings
 						},
 					}),
@@ -1339,7 +1339,7 @@ root(ROOTS.Zones, {
 							{ 24.2, 32.3, DRAENOR_SHADOWMOON_VALLEY },	-- cave
 							{ 31.2, 34.5, 540 },	-- spawn
 						},
-						["g"] = {
+						["groups"] = {
 							i(113082),	-- Precious Bloodthorn Loop
 						},
 					}),
@@ -1347,28 +1347,28 @@ root(ROOTS.Zones, {
 						["description"] = "In a cave behind the waterfall.",
 						["questID"] = 35558,
 						["coord"] = { 37.6, 49.0, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(113631),	-- Hypnosis Goggles (TOY!)
 						},
 					}),
 					n(83553, {	-- Insha'tar
 						["questID"] = 35909,
 						["coord"] = { 57.4, 48.6, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(113571),	-- Boots of the Shadowborn
 						},
 					}),
 					n(74206, {	-- Killmaw
 						["questID"] = 33043,
 						["coord"] = { 40.8, 44.6, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(109078),	-- Killmaw's Canine
 						},
 					}),
 					n(72362, {	-- Ku'targ the Voidseer
 						["questID"] = 33039,
 						["coord"] = { 32.5, 35.1, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(109061),	-- Ku'targ's Merciless Grips
 						},
 					}),
@@ -1376,21 +1376,21 @@ root(ROOTS.Zones, {
 						["questID"] = 37355,
 						["isDaily"] = true,
 						["coord"] = { 48.0, 77.6, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(119360),	-- Temptessa's Knee-High Boots
 						},
 					}),
 					n(72537, {	-- Leaf-Reader Kurri
 						["questID"] = 33055,
 						["coord"] = { 37.7, 14.3, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(108907),	-- Mushroom of Destiny
 						},
 					}),
 					n(77310, {	-- Mad "King" Sporeon
 						["questID"] = 35906,
 						["coord"] = { 44.8, 20.8, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(113561),	-- Staff of the Mad Bramble King
 						},
 					}),
@@ -1398,7 +1398,7 @@ root(ROOTS.Zones, {
 						["questID"] = 37357,
 						["isDaily"] = true,
 						["coord"] = { 29.6, 51.0, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(119369),	-- Malgosh's Coif
 						},
 					}),
@@ -1409,21 +1409,21 @@ root(ROOTS.Zones, {
 							{ 51.6, 77.2, DRAENOR_SHADOWMOON_VALLEY },
 							{ 52.0, 79.6, DRAENOR_SHADOWMOON_VALLEY },
 						},
-						["g"] = {
+						["groups"] = {
 							i(119368),	-- Milgra's Mighty Mitts
 						},
 					}),
 					n(82362, {	-- Morva Soultwister
 						["questID"] = 35523,
 						["coord"] = { 38.6, 70.4, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(113559),	-- Void Prophecy Cudgel
 						},
 					}),
 					n(75071, {	-- Mother Om'ra
 						["questID"] = 33642,
 						["coord"] = { 44.0, 57.4, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(113527),	-- Legacy of Om'ra
 						},
 					}),
@@ -1431,7 +1431,7 @@ root(ROOTS.Zones, {
 						["questID"] = 37409,
 						["isDaily"] = true,
 						["coord"] = { 60.7, 89.9, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(119364),	-- Hydraskin Shoulderguards
 						},
 					}),
@@ -1445,7 +1445,7 @@ root(ROOTS.Zones, {
 							{ 39.6, 36.8, DRAENOR_SHADOWMOON_VALLEY },
 							{ 44.6, 43.6, DRAENOR_SHADOWMOON_VALLEY },
 						},
-						["g"] = {
+						["groups"] = {
 							i(116773),	-- Swift Breezestrider (MOUNT!)
 						},
 					}),
@@ -1453,21 +1453,21 @@ root(ROOTS.Zones, {
 						["questID"] = 37352,
 						["isDaily"] = true,
 						["coord"] = { 50.2, 72.6, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(119382),	-- Hershak's Heavy Legguards
 						},
 					}),
 					n(82374, {	-- Rai'vosh
 						["questID"] = 35553,
 						["coord"] = { 48.8, 22.7, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(113542),	-- Whispers of Rai'Vosh (TOY!)
 						},
 					}),
 					n(72606, {	-- Rockhoof
 						["questID"] = 34068,
 						["coord"] = { 52.8, 50.8, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(109077),	-- Rockhoof's Crest
 						},
 					}),
@@ -1475,7 +1475,7 @@ root(ROOTS.Zones, {
 						["questID"] = 37354,
 						["isDaily"] = true,
 						["coord"] = { 48.2, 80.8, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(119396),	-- Shadowspeaker's Shard
 						},
 					}),
@@ -1488,7 +1488,7 @@ root(ROOTS.Zones, {
 							{ 63.6, 57.6, DRAENOR_SHADOWMOON_VALLEY },
 							{ 59.8, 58.6, DRAENOR_SHADOWMOON_VALLEY },
 						},
-						["g"] = {
+						["groups"] = {
 							i(113543),	-- Spirit of Shinri (TOY!)
 						},
 					}),
@@ -1496,35 +1496,35 @@ root(ROOTS.Zones, {
 						["questID"] = 37411,
 						["isDaily"] = true,
 						["coord"] = { 61.7, 89.0, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(119411),	-- Massive Rockworm Fang
 						},
 					}),
 					n(86689, {	-- Sneevel
 						["questID"] = 36880,
 						["coord"] = { 27.6, 43.6, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(118734),	-- Sneevel's Loincloth
 						},
 					}),
 					n(75482, {	-- Veloss
 						["questID"] = 33640,
 						["coord"] = { 21.6, 20.8, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(108906),	-- Sporebat Larval Pod
 						},
 					}),
 					n(75492, {	-- Venomshade
 						["questID"] = 33643,
 						["coord"] = { 54.6, 70.2, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(108957),	-- Venomshade Skin Boots
 						},
 					}),
 					n(83385, {	-- Voidseer Kalurg
 						["questID"] = 35847,
 						["coord"] = { 32.7, 41.4, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(109074),	-- Fine Void-Chain Cinch
 						},
 					}),
@@ -1533,12 +1533,12 @@ root(ROOTS.Zones, {
 						["questID"] = 33038,
 						["coord"] = { 42.8, 40.4, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(113553),	-- Windfang Sabre
 							q(35614, {	-- Artificer Romuul
 								["races"] = ALLIANCE_ONLY,
 								--["description"] = "Available the day after killing |cFFFFD700Windfang Matriarch|r.",
-								["g"] = {
+								["groups"] = {
 									follower(179),	-- Artificer Romuul
 								},
 							}),
@@ -1550,7 +1550,7 @@ root(ROOTS.Zones, {
 							{ 48.6, 64.2, DRAENOR_SHADOWMOON_VALLEY },
 							{ 48.6, 66.6, DRAENOR_SHADOWMOON_VALLEY },
 						},
-						["g"] = {
+						["groups"] = {
 							i(113570),	-- Ancient's Bloom (TOY!)
 						},
 					}),
@@ -1563,21 +1563,21 @@ root(ROOTS.Zones, {
 					o(232596, {	-- Ancestral Greataxe
 						["questID"] = 35584,
 						["coord"] = { 52.8, 48.4, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(113560),	-- Ancestral Shadowmoon Greataxe
 						},
 					}),
 					o(226854, {	-- Armored Elekk Tusk
 						["questID"] = 33869,
 						["coord"] = { 41.5, 27.9, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(108902),	-- Armored Elekk Tusk
 						},
 					}),
 					o(232582, {	-- Ashes of A'kumbo
 						["questID"] = 33584,
 						["coord"] = { 37.8, 44.3, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(113531),	-- Ashes of A'kumbo
 						},
 					}),
@@ -1585,42 +1585,42 @@ root(ROOTS.Zones, {
 						["questID"] = 33867,
 						["coord"] = { 49.4, 37.6, DRAENOR_SHADOWMOON_VALLEY },
 						["description"] = "If this is not showing up for you on Alliance, you will need to complete the quests in the area first, then move to a new map area and back in to see the treasure.",
-						["g"] = {
+						["groups"] = {
 							i(109739),	-- Star Chart (TOY!)
 						},
 					}),
 					o(232591, {	-- Beloved's Offering
 						["questID"] = 33046,
 						["coord"] = { 36.8, 41.5, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(113547),	-- Bouquet of Dried Flowers
 						},
 					}),
 					o(224228, {	-- Bubbling Cauldron
 						["questID"] = 33613,
 						["coord"] = { 37.1, 23.1, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(108945),	-- Void-Boiled Squirrel
 						},
 					}),
 					o(226865, {	-- Cargo of the Raven Queen
 						["questID"] = 33885,
 						["coord"] = { 84.6, 44.8, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(232583, {	-- Carved Drinking Horn
 						["questID"] = 33569,
 						["coord"] = { 33.5, 39.7, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(113545),	-- Carved Drinking Horn
 						},
 					}),
 					o(224785, {	-- Demonic Cache
 						["questID"] = 33575,
 						["coord"] = { 20.4, 30.6, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(108904),	-- Fingers of the Void
 						},
 					}),
@@ -1640,14 +1640,14 @@ root(ROOTS.Zones, {
 					o(227743, {	-- Fantastic Fish
 						["questID"] = 34174,
 						["coord"] = { 26.5, 5.7, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(226862, {	-- Giant Moonwillow Cone
 						["questID"] = 33891,
 						["coord"] = { 34.5, 46.2, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(108901),	-- Moonwillow Wand
 						},
 					}),
@@ -1658,91 +1658,91 @@ root(ROOTS.Zones, {
 					o(232588, {	-- Greka's Urn
 						["questID"] = 33614,
 						["coord"] = { 38.5, 43.0, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(113408),	-- Greka's Dentures
 						},
 					}),
 					o(224750, {	-- Hanging Satchel
 						["questID"] = 33564,
 						["coord"] = { 47.2, 46.0, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(108900),	-- Cragsman Gloves
 						},
 					}),
 					o(227134, {	-- Iron Horde Cargo Shipment
 						["questID"] = 33041,
 						["coord"] = { 42.1, 61.2, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(224755, {	-- Iron Horde Tribute
 						["questID"] = 33567,
 						["coord"] = { 37.5, 59.3, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(108903),	-- Tiny Iron Star
 						},
 					}),
 					o(232579, {	-- Kaliri Egg
 						["questID"] = 33568,
 						["coord"] = { 57.9, 45.3, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(113271),	-- Giant Kaliri Egg
 						},
 					}),
 					o(232624, {	-- Mikkal's Chest
 						["questID"] = 35603,
 						["coord"] = { 58.9, 21.9, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(113215),	-- Empty Paint Jar
 						},
 					}),
 					o(232494, {	-- Mushroom-Covered Chest
 						["questID"] = 37254,
 						["coord"] = { 52.9, 24.9, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(235860, {	-- Orc Skeleton
 						["questID"] = 36507,
 						["coord"] = { 67.0, 33.5, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(116875),	-- Rusty Iron Band
 						},
 					}),
 					o(225501, {	-- Peace Offering
 						["questID"] = 33610,
 						["coord"] = { 45.2, 60.5, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(107650),	-- Shadowmoon Offering
 						},
 					}),
 					o(225502, {	-- Peace Offering
 						["questID"] = 33611,
 						["coord"] = { 43.8, 60.6, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(107650),	-- Shadowmoon Offering
 						},
 					}),
 					o(225503, {	-- Peace Offering
 						["questID"] = 33612,
 						["coord"] = { 44.5, 59.1, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(107650),	-- Shadowmoon Offering
 						},
 					}),
 					o(223533, {	-- Peace Offering
 						["coord"] = { 44.5, 63.6, DRAENOR_SHADOWMOON_VALLEY },
 						["questID"] = 33384,
-						["g"] = {
+						["groups"] = {
 							i(107650),	-- Shadowmoon Offering
 						},
 					}),
 					o(226861, {	-- Ronokk's Belongings
 						["questID"] = 33886,
 						["coord"] = { 31.3, 39.1, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(109081),	-- Ronokk's Greatcloak
 						},
 					}),
@@ -1756,105 +1756,105 @@ root(ROOTS.Zones, {
 					o(232586, {	-- Rovo's Dagger
 						["questID"] = 33573,
 						["coord"] = { 36.7, 44.5, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(113378),	-- Rovo's Dagger
 						},
 					}),
 					o(224753, {	-- Scaly Rylak Egg
 						["questID"] = 33565,
 						["coord"] = { 67.1, 84.2, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(44722),	-- Aged Yolk
 						},
 					}),
 					o(224780, {	-- Shadowmoon Sacrificial Dagger
 						["questID"] = 35919,
 						["coord"] = { 30.0, 45.4, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(113563),	-- Shadowmoon Sacrificial Dagger
 						},
 					}),
 					o(224770, {	-- Shadowmoon Exile Treasure
 						["questID"] = 33570,
 						["coord"] = { 45.8, 24.6, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(113388),	-- Shadowmoon Astrologer's Almanac
 						},
 					}),
 					o(233126, {	-- Shadowmoon Treasure
 						["questID"] = 33883,
 						["coord"] = { 28.2, 39.2, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(232067, {	-- Stolen Treasure
 						["questID"] = 35280,
 						["coord"] = { 27.0, 2.5, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(232621, {	-- Strange Spore
 						["questID"] = 35600,
 						["coord"] = { 55.8, 20.0, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(118104),	-- Umbrafen Spore (PET!)
 						},
 					}),
 					o(233101, {	-- Sunken Fishing Boat
 						["questID"] = 35677,
 						["coord"] = { 37.2, 26.0, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(118414),	-- Awesomefish
 						},
 					}),
 					o(232066, {	-- Sunken Treasure
 						["questID"] = 35279,
 						["coord"] = { 28.8, 7.2, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(232592, {	-- Swamplighter Hive
 						["questID"] = 35580,
 						["coord"] = { 55.3, 74.8, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(117550),	-- Angry Beehive Toy (TOY!)
 						},
 					}),
 					o(230664, {	-- The Crystal Blade of Torvath
 						["questID"] = 34743,
 						["coord"] = { 61.7, 68.0, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(111636),	-- The Crystal Blade of Torvath
 						},
 					}),
 					o(232587, {	-- Uzko's Knickknacks
 						["questID"] = 33540,
 						["coord"] = { 35.9, 40.9, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(113546),	-- Uzko's Dusty Boots
 						},
 					}),
 					o(232589, {	-- Veema's Herb Bag
 						["questID"] = 33866,
 						["coord"] = { 34.2, 43.5, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(109124),	-- Frostweed
 						},
 					}),
 					o(224784, {	-- Vindicator's Cache
 						["questID"] = 33574,
 						["coord"] = { 51.1, 79.1, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(113375),	-- Vindicator's Armor Polish Kit (TOY!)
 						},
 					}),
 					o(224754, {	-- Waterlogged Chest
 						["questID"] = 33566,
 						["coord"] = { 39.2, 83.9, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
+						["groups"] = {
 							i(113372),	-- Darktide Pincer
 						},
 					}),
@@ -1863,7 +1863,7 @@ root(ROOTS.Zones, {
 					n(84074, {	-- Merchant Derrook
 						["coord"] = { 57.4, 30.2, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(114980, {	-- Farmer's Broom
 								["cost"] = 67,	-- 67c
 							}),

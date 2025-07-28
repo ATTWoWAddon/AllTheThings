@@ -18,12 +18,12 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			941,	-- Lower Deck [The Vindicaar: LFD]
 		},
 		["isRaid"] = true,
-		["g"] = {
+		["groups"] = {
 			n(EMISSARY_QUESTS, {
 				q(48642, {	-- Argussian Reach
 					["provider"] = { "n", 127151 },	-- Toraan the Revered
 					["isWorldQuest"] = true,
-					["g"] = {
+					["groups"] = {
 						i(157831, {	-- Scuffed Krokul Cache
 							["sym"] = {{"select","itemID",
 								152740,	-- Unsullied Cloak
@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				q(48639, {	-- Army of the Light
 					["provider"] = { "n", 127120 },	-- Vindicator Jaelaana
 					["isWorldQuest"] = true,
-					["g"] = {
+					["groups"] = {
 						i(157829, {	-- Gilded Trunk
 							["sym"] = {{"select","itemID",
 								152740,	-- Unsullied Cloak
@@ -141,7 +141,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				q(48976, bubbleDownSelf({ ["minReputation"] = { FACTION_ARGUSSIAN_REACH, EXALTED }}, {	-- Supplies From the Argussian Reach
 					["provider"] = { "n", 127151 },	-- Toraan the Revered
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(152922, {	-- Brittle Krokul Chest
 							i(153127),	-- Cube of Discovery
 						}),
@@ -150,7 +150,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				q(48977, bubbleDownSelf({ ["minReputation"] = { FACTION_ARMY_OF_THE_LIGHT, EXALTED }}, {	-- Supplies From the Army of the Light
 					["repeatable"] = true,
 					["provider"] = { "n", 127120 },	-- Vindicator Jaelaana
-					["g"] = {
+					["groups"] = {
 						i(152923, {	-- Gleaming Footlocker
 							i(153044),	-- Avenging Felcrusher (MOUNT!)
 							i(153043),	-- Blessed Felcrusher (MOUNT!)
@@ -179,7 +179,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					["provider"] = { "n", 125343 },		-- Vorel
 					["requireSkill"] = JEWELCRAFTING,
 					["sourceQuests"] = { 46941 },	-- The Path Forward
-					["g"] = {
+					["groups"] = {
 						i(151736),	-- Design: Deadly Deep Chemirine (RECIPE!)
 						i(151738),	-- Design: Masterful Argulite (RECIPE!)
 						i(151737),	-- Design: Quick Lightsphene (RECIPE!)
@@ -192,7 +192,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					["requireSkill"] = JEWELCRAFTING,
 					["sourceQuests"] = { 48075 },	-- A Colorful Key
 					["coord"] = { 44.45, 73.35, THE_VINDICAAR_KROKUUN_UPPER },
-					["g"] = {
+					["groups"] = {
 						i(151724),	-- Design: Empyrial Cosmic Crown [Rank 1] (RECIPE!)
 						i(151727),	-- Design: Empyrial Deep Crown [Rank 1] (RECIPE!)
 						i(151730),	-- Design: Empyrial Elemental Crown [Rank 1] (RECIPE!)
@@ -219,7 +219,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					["sourceQuests"] = { 49143 },	-- Essence of the Light Mother
 					["provider"] = { "n", 126307 },	-- Prophet Velen
 					["coord"] = { 46.0, 36.7, THE_VINDICAAR_KROKUUN_UPPER },
-					["g"] = {
+					["groups"] = {
 						i(152593),	-- Essence of Light (QI!)
 					},
 				}),
@@ -227,7 +227,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					["sourceQuests"] = { 47220 },	-- A Beacon in the Dark
 					["provider"] = { "n", 128722 },	-- Prophet Velen
 					["coord"] = { 53.1, 48.8, THE_VINDICAAR_EREDATH_UPPER },
-					["g"] = {
+					["groups"] = {
 						i(152594),	-- Essence of Shadow (QI!)
 					},
 				}),
@@ -235,7 +235,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
 					["provider"] = { "n", 126307 },	-- Prophet Velen
 					["coord"] = { 45.9, 34.0, THE_VINDICAAR_KROKUUN_UPPER },
-					["g"] = {
+					["groups"] = {
 						i(153125),	-- Vestige of Light (QI!)
 					},
 				}),
@@ -269,7 +269,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 						{ 45.8, 23.9, THE_VINDICAAR_EREDATH_UPPER },
 						{ 46.7, 24.6, THE_VINDICAAR_KROKUUN_UPPER },
 					},
-					["g"] = {
+					["groups"] = {
 						i(153014),	-- Pristine Argunite (QI!)
 					},
 				}),
@@ -278,7 +278,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					["repeatable"] = true,
 					["qg"] = 126954,	-- High Exarch Turalyon
 					["cost"] = { { "c", 1220, 900 } },	-- 900x Order Resources
-					["g"] = {
+					["groups"] = {
 						i(152097, {	-- Lightforged Bulwark
 							follower(1059, {	-- Lightforged Bulwark (Temporary Troop)
 								["collectible"] = false,
@@ -327,14 +327,14 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					["provider"] = { "n", 121263 },	-- Grand Artificer Romuul
 					["coord"] = { 43.3, 23.2, THE_VINDICAAR_KROKUUN_UPPER },
 					["lvl"] = 45,
-					["g"] = {
+					["groups"] = {
 						i(147906),	-- Fel Heart of Argus (QI!)
 					},
 				}),
 				q(48074, {	-- Looming Over Me
 					["requireSkill"] = TAILORING,
 					["sourceQuests"] = { 46941 },	-- The Path Forward
-					["g"] = {
+					["groups"] = {
 						recipe(247807),	-- Lightweave Breeches [Rank 1]
 						i(151874),	-- Lightweave Loom (QI!)
 					},
@@ -363,7 +363,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					["sourceQuests"] = { 47220 },	-- A Beacon in the Dark
 					["provider"] = { "n", 128722 },	-- Prophet Velen
 					["coord"] = { 53.1, 48.8, THE_VINDICAAR_EREDATH_UPPER },
-					["g"] = {
+					["groups"] = {
 						i(151090),	-- The Crest of Knowledge (QI!)
 					},
 				}),
@@ -382,7 +382,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					["isWeekly"] = true,
 					["qg"] = 126954,	-- High Exarch Turalyon
 					["cost"] = { { "c", 1220, 150 } },	-- 150x Order Resources
-					["g"] = {
+					["groups"] = {
 						i(152097, {	-- Lightforged Bulwark
 							follower(1059, {	-- Lightforged Bulwark (Temporary Troop)
 								["collectible"] = false,
@@ -519,7 +519,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 						{ 44.6, 67.0, THE_VINDICAAR_EREDATH_UPPER },
 						{ 63.0, 63.6, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 					},
-					["g"] = bubbleDownClassicRep(FACTION_ARMY_OF_THE_LIGHT, {
+					["groups"] = bubbleDownClassicRep(FACTION_ARMY_OF_THE_LIGHT, {
 						{		-- Neutral
 						}, {	-- Friendly
 							i(152726),	-- Design: Mass Prospect Empyrium (RECIPE!)
@@ -549,7 +549,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 						{ 66.2, 57.8, THE_VINDICAAR_EREDATH_UPPER },
 						{ 56.6, 30.2, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 					},
-					["g"] = bubbleDownClassicRep(FACTION_ARGUSSIAN_REACH, {
+					["groups"] = bubbleDownClassicRep(FACTION_ARGUSSIAN_REACH, {
 						{		-- Neutral
 						}, {	-- Friendly
 							i(152658),	-- Formula: Chaos Shatter (RECIPE!)
@@ -581,7 +581,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 						{ 46.1, 65.9, THE_VINDICAAR_EREDATH_UPPER },
 						{ 61.6, 59.1, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 					},
-					["g"] = sharedData({ ["cost"] = { { "c", VEILED_ARGUNITE, 650 } } }, {
+					["groups"] = sharedData({ ["cost"] = { { "c", VEILED_ARGUNITE, 650 } } }, {
 						i(153211, {	-- Relinquished Hood
 							["sym"] = {
 								{"sub", "legion_relinquished", {"INVTYPE_HEAD"}, 2, 4, 5, 6, 7 },	-- Cosmetic, Cloth, Leather, Mail, Plate Armor Only!
@@ -601,7 +601,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 							["sym"] = {
 								{"sub", "legion_relinquished", {"INVTYPE_CLOAK"}, 3 },	-- Cloak Only!
 							},
-							["g"] = sharedData({["modID"] = 43},{	-- Relinquished modID
+							["groups"] = sharedData({["modID"] = 43},{	-- Relinquished modID
 								i(152778),	-- Conservatory Ward's Drape (Confirmed in Errors 18 Jan 2022)
 								i(146793),	-- Man'ari Magus Drape (reported in #errors on 20201113)
 								i(146794),	-- Sargerei Herald's Cloak (reported in #errors on November 21, 2020)

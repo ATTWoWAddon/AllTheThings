@@ -32,74 +32,74 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 		}),
 		n(QUESTS, {
 			q(70050, {	-- Chasing Storms [A]
-				["sourceQuests"] = { 66596 },	-- Whispers in the Winds [A]
 				["provider"] = { "n", 189077 },	-- Toddy Whiskers
+				["sourceQuests"] = { 66596 },	-- Whispers in the Winds [A]
 				["coord"] = { 22.8, 55.8, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(69944, {	-- Chasing Storms [H]
-				["sourceQuests"] = { 65439 },	-- Whispers in the Winds [H]
 				["provider"] = { "n", 197279 },	-- Naleidea Rivergleam
+				["sourceQuests"] = { 65439 },	-- Whispers in the Winds [H]
 				["coord"] = { 55.8, 12.6, DUROTAR },
 				["races"] = HORDE_ONLY,
 			}),
 			q(70048, {	-- A Primal Threat [A]
-				["sourceQuests"] = { 66596 },	-- Whispers in the Winds [A]
 				["provider"] = { "n", 193450 },	-- Archmage Khadgar
+				["sourceQuests"] = { 66596 },	-- Whispers in the Winds [A]
 				["coord"] = { 23.0, 56.0, STORMWIND_CITY },
-				["g"] = {
+				["groups"] = {
 					i(192493),	-- Mote of Primal Energy (QI!)
 					i(199109),	-- Primal Stormling (PET!)
 					i(199211),	-- Primeval Essence
 				},
 			}),
 			q(69923, {	-- A Primal Threat [H]
-				["sourceQuests"] = { 65439 },	-- Whispers in the Winds [H]
 				["provider"] = { "n", 193450 },	-- Archmage Khadgar
+				["sourceQuests"] = { 65439 },	-- Whispers in the Winds [H]
 				["coord"] = { 55.9, 12.6, DUROTAR },
-				["g"] = {
+				["groups"] = {
 					i(192493),	-- Mote of Primal Energy (QI!)
 					i(199109),	-- Primal Stormling (PET!)
 					i(199211),	-- Primeval Essence
 				},
 			}),
 			q(70055, {	-- Sigil of Storms [A]
-				["sourceQuests"] = { 70050 },	-- Chasing Storms [A]
 				["provider"] = { "i", 198352 },	-- Sigil of Storms [A]
-				["g"] = {
+				["sourceQuests"] = { 70050 },	-- Chasing Storms [A]
+				["groups"] = {
 					i(199211),	-- Primeval Essence
 				},
 			}),
 			q(69992, {	-- Sigil of Storms [H]
-				["sourceQuests"] = { 69944 },	-- Chasing Storms [H]
 				["provider"] = { "i", 198080 },	-- Sigil of Storms [H]
-				["g"] = {
+				["sourceQuests"] = { 69944 },	-- Chasing Storms [H]
+				["groups"] = {
 					i(199211),	-- Primeval Essence
 				},
 			}),
 			q(70049, {	-- Calming the Storms [A]
-				["sourceQuests"] = { 70048 },	-- A Primal Threat [A]
 				["provider"] = { "n", 193450 },	-- Archmage Khadgar
+				["sourceQuests"] = { 70048 },	-- A Primal Threat [A]
 				["coord"] = { 23.0, 56.0, STORMWIND_CITY },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(192493),	-- Mote of Primal Energy (QI!)
 				},
 			}),
 			q(69925, {	-- Calming the Storms [H]
-				["sourceQuests"] = { 69923 },	-- A Primal Threat [H]
 				["provider"] = { "n", 193450 },	-- Archmage Khadgar
+				["sourceQuests"] = { 69923 },	-- A Primal Threat [H]
 				["coord"] = { 55.9, 12.6, DUROTAR },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(192493),	-- Mote of Primal Energy (QI!)
 				},
 			}),
 			q(66458, {	-- Legacy of Tyr: Secrets of the Past [A]
-				["sourceQuests"] = { 66596 },	-- Whispers on the Winds [A]
 				["provider"] = { "n", 189569 },	-- Wrathion <The Black Prince>
+				["sourceQuests"] = { 66596 },	-- Whispers on the Winds [A]
 				["coord"] = { 22.9, 56.0, STORMWIND_CITY },
-				["g"] = {
+				["groups"] = {
 					i(201303),	-- Beheader's Poleaxe
 					i(201304),	-- Dunesplitter
 					i(201305),	-- Fist of the Treasure Seeker
@@ -111,10 +111,10 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				},
 			}),
 			q(66586, {	-- Legacy of Tyr: Secrets of the Past [H]
-				["sourceQuests"] = { 65439 },	-- Whispers in the Winds [H]
 				["provider"] = { "n", 190239 },	-- Ebyssian
+				["sourceQuests"] = { 65439 },	-- Whispers in the Winds [H]
 				["coord"] = { 55.8, 12.1, DUROTAR },
-				["g"] = {
+				["groups"] = {
 					i(201303),	-- Beheader's Poleaxe
 					i(201304),	-- Dunesplitter
 					i(201305),	-- Fist of the Treasure Seeker
@@ -135,7 +135,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				{ 25.0, 53.2, STORMWIND_CITY },
 				{ 55.6, 12.4, DUROTAR },
 			},
-			["g"] = {
+			["groups"] = {
 				i(199337, {	-- Bag of Furious Winds (TOY!)
 					["cost"] = {{ "i", PRIMEVAL_ESSENCE, 100 }}
 				}),
@@ -314,29 +314,29 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				TIRISFAL_GLADES,
 				UNGORO_CRATER,
 			},
-			["g"] = {
+			["groups"] = {
 				n(COMMON_BOSS_DROPS, {
 					i(199211),	-- Primeval Essence
 					i(198352),	-- Sigil of Storms [A]
 					i(198080),	-- Sigil of Storms [H]
 				}),
 				n(189933, {	-- Glacial Ice Lord
-					["g"] = {
+					["groups"] = {
 						i(199839),	-- Dimmed Primeval Water
 					},
 				}),
 				n(189955, {	-- Raging Fire Lord
-					["g"] = {
+					["groups"] = {
 						i(199836),	-- Dimmed Primeval Fire
 					},
 				}),
 				n(189954, {	-- Rumbling Earth Lord
-					["g"] = {
+					["groups"] = {
 						i(199837),	-- Dimmed Primeval Earth
 					},
 				}),
 				n(185784, {	-- Unbridled Storm Lord
-					["g"] = {
+					["groups"] = {
 						i(199838),	-- Dimmed Primeval Storm
 					},
 				}),

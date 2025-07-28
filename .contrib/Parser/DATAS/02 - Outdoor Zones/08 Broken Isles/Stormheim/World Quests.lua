@@ -41,7 +41,7 @@ root(ROOTS.Zones, {
 				q(41938),	-- Brothers of Skovald
 				q(46011),	-- Colossal Infernal (Invasion wq)
 				q(46216, {	-- Congealed Corruption (Invasion WQ)
-					["g"] = {
+					["groups"] = {
 						i(144402),	-- Fel Reaver Core Fragment (QI!)
 					},
 				}),
@@ -177,19 +177,19 @@ root(ROOTS.Zones, {
 				}),
 				q(41555, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
-					["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
+					["groups"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41556, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
-					["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
+					["groups"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41261, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
-					["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
+					["groups"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41278, {	-- Slippery Stormrays
 					["requireSkill"] = FISHING,
-					["g"] = {
+					["groups"] = {
 						o(247875, {	-- Boom Bait
 							i(135496), -- Boom Bait (QI)
 						}),
@@ -228,7 +228,7 @@ root(ROOTS.Zones, {
 				q(41930),	-- Valor Calls
 				q(41666, {	-- Vantus Rune Work Order: Nythendra
 					["requireSkill"] = INSCRIPTION,
-					["g"] = {
+					["groups"] = {
 						i(137768),	-- Vantus Rune Technique: Nythendra [Rank 3] (RECIPE!)
 					},
 				}),
@@ -268,19 +268,19 @@ root(ROOTS.Zones, {
 				}),
 				q(41678, {	-- Work Order: Gunpack
 					["requireSkill"] = ENGINEERING,
-					["g"] = {
+					["groups"] = {
 						i(137722),	-- Schematic: Gunpack [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41636, {	-- Work Order: Leystone Breastplate
 					["requireSkill"] = BLACKSMITHING,
-					["g"] = {
+					["groups"] = {
 						i(123939),	-- Plans: Leystone Breastplate [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41654, {	-- Work Order: Queen's Opal Loop
 					["requireSkill"] = JEWELCRAFTING,
-					["g"] = {
+					["groups"] = {
 						i(137865),	-- Design: Queen's Opal Loop [Rank 3] (RECIPE!)
 					},
 				}),
@@ -292,13 +292,13 @@ root(ROOTS.Zones, {
 				}),
 				q(41648, {	-- Work Order: Silkweave Bracers
 					["requireSkill"] = TAILORING,
-					["g"] = {
+					["groups"] = {
 						i(137961),	-- Pattern: Silkweave Bracers [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41660, {	-- Work Order: Skaggldrynk
 					["requireSkill"] = ALCHEMY,
-					["g"] = {
+					["groups"] = {
 						i(127923),	-- Recipe: Skaggldrynk [Rank 2] (RECIPE!)
 					},
 				}),
@@ -310,13 +310,13 @@ root(ROOTS.Zones, {
 				}),
 				q(41642, {	-- Work Order: Warhide Footpads
 					["requireSkill"] = LEATHERWORKING,
-					["g"] = {
+					["groups"] = {
 						i(137880),	-- Pattern: Warhide Footpads [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41672, {	-- Work Order: Word of Haste
 					["requireSkill"] = ENCHANTING,
-					["g"] = {
+					["groups"] = {
 						i(128597),	-- Formula: Enchant Ring - Word of Haste [Rank 3] (RECIPE!)
 					},
 				}),

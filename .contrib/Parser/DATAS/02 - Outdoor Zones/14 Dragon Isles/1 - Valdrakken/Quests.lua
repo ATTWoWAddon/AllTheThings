@@ -46,7 +46,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		n(QUESTS, {
 			header(HEADERS.Achievement, 16556, {	-- Great Gourmand of The Ruby Feast
 				["description"] = "Every Day a new sequence of Quests will appear.",
-				["g"] = {
+				["groups"] = {
 					------ Day 1 ------
 					q(71238, {	-- The Ruby Feast!
 						["provider"] = { "o", 382166 },	-- The Ruby Feast!
@@ -67,7 +67,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["sourceQuests"] = { 70930 },	-- All Tea, No Shadeleaf
 						["provider"] = { "n", 185778 },	-- Lilial Dawnburst
 						["coord"] = { 51.7, 62.0, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							i(200759),	-- Aruunem Berrytart
 							i(200885),	-- Cinna-Cinderbloom Tea
 							i(194550),	-- Coldsnap Sagittate (QI!)
@@ -85,7 +85,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["sourceQuests"] = { 70932 },	-- The Life of Spice
 						["provider"] = { "n", 189207 },	-- Griftah
 						["coord"] = { 25.6, 54.3, THE_WAKING_SHORES },
-						["g"] = {
+						["groups"] = {
 							i(200887),	-- Charred Porter
 							i(200888),	-- Coal-Fired Rib Rack
 							i(200889),	-- Highly Spiced Haunch
@@ -103,7 +103,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["sourceQuests"] = { 70957 },	-- The Sea Out West
 						["provider"] = { "n", 186502 },	-- Sugarbough
 						["coord"] = { 28.6, 60.5, OHNAHRAN_PLAINS },
-						["g"] = {
+						["groups"] = {
 							i(200892),	-- Dragonfruit Punch
 							i(200891),	-- Druidic Dreamsalad
 							i(194552),	-- Glimmering Ramblekelp Bulb (QI!)
@@ -121,7 +121,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["sourceQuests"] = { 70958 },	-- Finest Fungi at the Feast
 						["provider"] = { "n", 187025 },	-- Warden Captain Sinjoirmi
 						["coord"] = { 60.2, 82.2, THALDRASZUS },
-						["g"] = {
+						["groups"] = {
 							i(200893),	-- Azsunian Poached Lobster
 							i(200895),	-- Fine Taladorian Cheese Platter
 							i(200894),	-- Rare Vintage Arcwine
@@ -139,7 +139,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["sourceQuests"] = { 70981 },	-- Savory Seas
 						["provider"] = { "n", 186212 },	-- Wayun
 						["coord"] = { 7.4, 44.2, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							i(200896),	-- Captain's Caramelized Catfish
 							i(200898),	-- Mantis Shrimp Cocktail
 							i(194554),	-- Savory Deviant Dealfish (QI!)
@@ -157,7 +157,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["sourceQuests"] = { 70987 },	-- Hearts of Starch
 						["provider"] = { "n", 189400 },	-- Meliane Enorath
 						["coord"] = { 65.2, 58.0, THE_WAKING_SHORES },
-						["g"] = {
+						["groups"] = {
 							i(200900),	-- Fried Emperor Wraps
 							i(200899),	-- Seared Sea Mist Noodles
 							i(200901),	-- Roquefort-Stuffed Peppers
@@ -175,7 +175,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["sourceQuests"] = { 70988 },	-- The Egg's the Thing
 						["provider"] = { "n", 196161 },	-- Ilana
 						["coord"] = { 85.8, 35.2, OHNAHRAN_PLAINS },
-						["g"] = {
+						["groups"] = {
 							i(194556),	-- Breezehunter Egg (QI!)
 							i(200902),	-- Ravenberry Panacotta Delight
 							i(200903),	-- Moira's Choice Espresso
@@ -188,7 +188,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["provider"] = { "n", 189479 },	-- Rumiastrasza
 						["coord"] = { 61.5, 11.8, VALDRAKKEN },
 						["altQuests"] = { 72258 },	-- Daily Lockout
-						["g"] = {
+						["groups"] = {
 							i(198132),	-- Recipe: Hoard of Draconic Delicacies (RECIPE!)
 							i(202013),	-- Ruby Recipe Journal VIII (QI!)
 						},
@@ -211,7 +211,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "n", 192522 },	-- Thalendra
 				["coord"] = { 72.8, 66.2, VALDRAKKEN },
 				["cost"] = { { "i", 197769, 1 }, },	-- 1x Tasty Hatchling's Treat
-				["g"] = {
+				["groups"] = {
 					title(467, {	-- <Name>, Honorary Dryad
 						["collectible"] = false,
 					}),
@@ -224,7 +224,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["cost"] = { { "i", 197769, 1 }, },	-- 1x Tasty Hatchling's Treat
 				["isDaily"] = true,
 				["timeline"] = { ADDED_10_0_5 },
-				["g"] = {
+				["groups"] = {
 					title(467, {	-- <Name>, Honorary Dryad
 						["collectible"] = false,
 					}),
@@ -237,7 +237,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["cost"] = { { "i", 197766, 1 }, },	-- 1x Snow in a Cone
 				["isDaily"] = true,
 				["timeline"] = { ADDED_10_0_5 },
-				["g"] = {
+				["groups"] = {
 					title(467, {	-- <Name>, Honorary Dryad
 						["collectible"] = false,
 					}),
@@ -250,7 +250,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["cost"] = { { "i", 197767, 1 }, },	-- 1x Blubbery Muffin
 				["isDaily"] = true,
 				["timeline"] = { ADDED_10_0_5 },
-				["g"] = {
+				["groups"] = {
 					title(467, {	-- <Name>, Honorary Dryad
 						["collectible"] = false,
 					}),
@@ -263,7 +263,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["cost"] = { { "i", 197768, 1 }, },	-- 1x Tasty Hatchling's Treat
 				["isDaily"] = true,
 				["timeline"] = { ADDED_10_0_5 },
-				["g"] = {
+				["groups"] = {
 					title(467, {	-- <Name>, Honorary Dryad
 						["collectible"] = false,
 					}),
@@ -305,7 +305,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["timeline"] = { ADDED_10_1_0 },
 				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["classes"] = { EVOKER },
-				["g"] = {
+				["groups"] = {
 					i(205252),	-- Momento of Rekindled Bonds
 					i(204830),	-- Shattered Horn Signet (QI!)
 					i(204824),	-- Torn Journal Entry (QI!)
@@ -335,7 +335,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			q(72354, {	-- The Great Vault
 				["provider"] = { "n", 196499 },	-- Therazal
 				["coord"] = { 49.9, 56, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					i(201793),	-- Resplendent Gemstone
 				},
 			}),
@@ -350,7 +350,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "n", 216449 },	-- Vaskarn
 				["coord"] = { 45.5, 55.9, VALDRAKKEN },
 				["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_2 },
-				["g"] = {
+				["groups"] = {
 					i(212458),	-- Awakened Flightstone
 					i(211951),	-- Pouch of Whelpling's Awakened Crests
 				},
@@ -373,7 +373,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "n", 216951 },	-- Kalecgos
 				["coord"] = { 29.5, 49.5, VALDRAKKEN },
 				["timeline"] = { ADDED_10_2_7 },
-				["g"] = {
+				["groups"] = {
 					i(224296, {	-- Basket of Draconic Flowers (QI!)
 						i(219283),	-- Obsidian Iris (QI!)
 						i(219285),	-- Azure Lily (QI!)
@@ -388,7 +388,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "n", 216967 },	-- Scalecommander Cindrethresh
 				["coord"] = { 29.6, 49.5, VALDRAKKEN },
 				["timeline"] = { ADDED_10_2_7 },
-				["g"] = {
+				["groups"] = {
 					i(217348),	-- Arcane Residue (QI!)
 				},
 			}),
@@ -403,7 +403,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "n", 216950 },	-- Scalecommander Viridia
 				["coord"] = { 29.5, 49.5, VALDRAKKEN },
 				["timeline"] = { ADDED_10_2_7 },
-				["g"] = {
+				["groups"] = {
 					i(210469),	-- Personal Tabard
 				},
 			}),
@@ -418,7 +418,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			["provider"] = { "n", 194026 },	-- Azley
 			["coord"] = { 35.4, 58.8, VALDRAKKEN },
 			["repeatable"] = true,
-			["g"] = {
+			["groups"] = {
 				i(200285),	-- Dragonscale Expedition Insignia [Uncommon]
 				i(200288),	-- Maruuk Centaur Insignia [Uncommon]
 				i(200287),	-- Iskaara Tuskarr Insignia [Uncommon]
@@ -448,7 +448,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "n", 189973 },	-- Kemora
 				["coord"] = { 35.0, 28.1, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 },
-				["g"] = {
+				["groups"] = {
 					i(206135),	-- Heroic Dungeon Delver's Trophy Chest
 					i(206136),	-- Heroic Dungeon Delver's Trophy Crest
 					------ Reputation ------

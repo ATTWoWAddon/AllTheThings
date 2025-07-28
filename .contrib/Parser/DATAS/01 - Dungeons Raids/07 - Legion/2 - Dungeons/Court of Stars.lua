@@ -5,7 +5,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(800, {	-- Court of Stars
 		["coord"] = { 51.0, 65.6, SURAMAR },
 		["maps"] = { 761, 762, 763 },
-		["g"] = {
+		["groups"] = {
 			n(WORLD_QUESTS, {
 				q(42769, {	-- Court of Stars: Bring Me the Eyes
 					["isWorldQuest"] = true,

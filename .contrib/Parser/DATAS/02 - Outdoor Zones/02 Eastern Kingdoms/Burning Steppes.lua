@@ -301,13 +301,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48001,	-- Thelaron Direneedle
 					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = { HUMAN, DWARF, VOIDELF, KULTIRAN, DARKIRON },
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
 					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Humans, Dwarfs, Void Elves, Kul Tirans, and Dark Iron Dwarfs. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution for Human, Dwarf and Dark Iron Dwarf:\n2 Hides, 4 Handfulls of Mud, and 2 Spools of Thread.\n\nSolution for Void Elf:\n3 Hides, 2 Handfulls of Mud, and 1 Spool of Thread.\n\nSolution for Kul Tiran:\n4 Hides, 1 Handfull of Mud, and 3 Spools of Thread.\n\n",
 					-- #endif
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = { HUMAN, DWARF, VOIDELF, KULTIRAN, DARKIRON },
 					["groups"] = {
 						objective(1, {	-- 0/1 Blackrock Disguise
 							["providers"] = {
@@ -332,13 +332,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48001,	-- Thelaron Direneedle
 					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
-					["timeline"] = { ADDED_4_0_1 },
-					["races"] = { DRAENEI, WORGEN, PANDAREN_ALLIANCE, LIGHTFORGED, DRACTHYR_ALLIANCE},
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
 					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Draenei, Worgen, Tushui Pandaren, Lightforged Draenei, and Alliance Dracthyr. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n4 Hides\n1 Handfull of Mud\n3 Spools of Thread",
 					-- #endif
+					["timeline"] = { ADDED_4_0_1 },
+					["races"] = { DRAENEI, WORGEN, PANDAREN_ALLIANCE, LIGHTFORGED, DRACTHYR_ALLIANCE},
 					["groups"] = {
 						objective(1, {	-- 0/1 Blackrock Disguise
 							["providers"] = {
@@ -356,13 +356,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48001,	-- Thelaron Direneedle
 					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = { GNOME, MECHAGNOME },
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
 					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Gnomes and Mechagnomes. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n1 Hide\n3 Handfulls of Mud\n4 Spools of Thread",
 					-- #endif
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = { GNOME, MECHAGNOME },
 					["groups"] = {
 						objective(1, {	-- 0/1 Blackrock Disguise
 							["providers"] = {
@@ -380,13 +380,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48001,	-- Thelaron Direneedle
 					["sourceQuest"] = 28254,	-- A Needle in a Hellhole (A)
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = { NIGHTELF },
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
 					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Night Elves. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n3 Hides\n2 Handfulls of Mud\n1 Spool of Thread",
 					-- #endif
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = { NIGHTELF },
 					["groups"] = {
 						objective(1, {	-- 0/1 Blackrock Disguise
 							["providers"] = {
@@ -404,13 +404,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48001,	-- Thelaron Direneedle
 					["sourceQuest"] = 28427,	-- A Needle in a Hellhole (H)
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
-					["timeline"] = { ADDED_4_0_3_LAUNCH },
-					["races"] = { ORC, UNDEAD, MAGHAR },
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
 					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Orcs, Undead, and Mag'har Orcs. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n2 Hides\n4 Handfulls of Mud\n2 Spools of Thread",
 					-- #endif
+					["timeline"] = { ADDED_4_0_3_LAUNCH },
+					["races"] = { ORC, UNDEAD, MAGHAR },
 					["groups"] = {
 						objective(1, {	-- 0/1 Blackrock Disguise
 							["providers"] = {
@@ -428,13 +428,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48001,	-- Thelaron Direneedle
 					["sourceQuest"] = 28427,	-- A Needle in a Hellhole (H)
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
-					["timeline"] = { ADDED_4_0_3_LAUNCH },
-					["races"] = { TAUREN, PANDAREN_HORDE, HIGHMOUNTAIN_TAUREN, DRACTHYR_HORDE },
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
 					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Tauren, Huojin Pandaren, Highmountain Tauren, and Horde Dracthyr. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n4 Hides\n1 Handfull of Mud\n3 Spools of Thread",
 					-- #endif
+					["timeline"] = { ADDED_4_0_3_LAUNCH },
+					["races"] = { TAUREN, PANDAREN_HORDE, HIGHMOUNTAIN_TAUREN, DRACTHYR_HORDE },
 					["groups"] = {
 						objective(1, {	-- 0/1 Blackrock Disguise
 							["providers"] = {
@@ -452,13 +452,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48001,	-- Thelaron Direneedle
 					["sourceQuest"] = 28427,	-- A Needle in a Hellhole (H)
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
-					["timeline"] = { ADDED_4_0_3_LAUNCH },
-					["races"] = { GOBLIN, VULPERA },
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
 					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Goblins and Vulperas. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n1 Hide\n3 Handfulls of Mud\n4 Spools of Thread",
 					-- #endif
+					["timeline"] = { ADDED_4_0_3_LAUNCH },
+					["races"] = { GOBLIN, VULPERA },
 					["groups"] = {
 						objective(1, {	-- 0/1 Blackrock Disguise
 							["providers"] = {
@@ -476,13 +476,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48001,	-- Thelaron Direneedle
 					["sourceQuest"] = 28427,	-- A Needle in a Hellhole (H)
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = { TROLL, BLOODELF, NIGHTBORNE, ZANDALARI },
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
 					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
 					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Trolls, Blood Elves, Nightborne Elves, and Zandalari Trolls. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n3 Hides\n2 Handfulls of Mud\n1 Spool of Thread",
 					-- #endif
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = { TROLL, BLOODELF, NIGHTBORNE, ZANDALARI },
 					["groups"] = {
 						objective(1, {	-- 0/1 Blackrock Disguise
 							["providers"] = {
@@ -556,7 +556,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coord"] = { 12.4, 31.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["classes"] = { WARLOCK },
 					["cost"] = {
 						-- #if AFTER TBC
 						{ "i", 12360, 1 },	-- Arcanite Bar
@@ -564,6 +563,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 12360, 3 },	-- Arcanite Bar
 						-- #endif
 					},
+					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 				}),
 				{	-- Assault on Dreadmaul Rock
@@ -592,7 +592,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 7564,	-- Wildeyes
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["classes"] = { WARLOCK },
 					["cost"] = {
 						-- #if AFTER TBC
 						{ "i", 9264, 2 },	-- Elixir of Shadow Power
@@ -600,6 +599,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 9264, 10 },	-- Elixir of Shadow Power
 						-- #endif
 					},
+					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 				}),
 				{	-- Blackened Ashes
@@ -623,10 +623,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 				{	-- Blood Tour
 					["allianceQuestData"] = q(28314, {	-- Blood Tour (A)
-						["providers"] = {	-- Accepting any quest from the NPC turns him into a mobileNPC
-						{ "n", 48306 },	-- John J. Keeshan
-						{ "n", 48346 },	-- John J. Keeshan (mobileNPC)
-					},
+						["qgs"] = {
+							48306,	-- John J. Keeshan
+							48346,	-- John J. Keeshan (mobileNPC)
+						},
 						["sourceQuests"] = {
 							28313,	-- A Heap of Delicious Worg (A)
 							28311,	-- Blackened Ashes (A)
@@ -676,8 +676,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28174, {	-- Burning Vengeance (A)
 					["qg"] = 47811,	-- John J. Keeshan
 					["sourceQuest"] = 28666,	-- Hero's Call: Burning Steppes!
-					["description"] = "Provided to players who DID NOT complete John J. Keeshan's questline in Redridge Mountains.",
 					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
+					["description"] = "Provided to players who DID NOT complete John J. Keeshan's questline in Redridge Mountains.",
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -692,8 +692,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28416, {	-- Burning Vengeance (A)
 					["qg"] = 47811,	-- John J. Keeshan
 					["sourceQuest"] = 28666,	-- Hero's Call: Burning Steppes!
-					["description"] = "Provided to players who DID complete John J. Keeshan's questline in Redridge Mountains.",
 					["coord"] = { 17.2, 52.0, BURNING_STEPPES },
+					["description"] = "Provided to players who DID complete John J. Keeshan's questline in Redridge Mountains.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -797,7 +797,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 7564,	-- Wildeyes
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["classes"] = { WARLOCK },
 					["cost"] = {
 						-- #if AFTER TBC
 						{ "i", 15416, 3},	-- 3x Black Dragonscal
@@ -805,6 +804,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 15416, 35},	-- 35x Black Dragonscale
 						-- #endif
 					},
+					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 				}),
 				q(28172, {	-- Done Nothing Wrong (A)
@@ -896,10 +896,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				{	-- Draconic Vanguard
 					["allianceQuestData"] = q(28315, {	-- Draconic Vanguard (A)
-						["providers"] = {	-- Accepting any quest from the NPC turns him into a mobileNPC
-						{ "n", 48306 },	-- John J. Keeshan
-						{ "n", 48346 },	-- John J. Keeshan (mobileNPC)
-					},
+						["qgs"] = {
+							48306,	-- John J. Keeshan
+							48346,	-- John J. Keeshan (mobileNPC)
+						},
 						["sourceQuests"] = {
 							28313,	-- A Heap of Delicious Worg (A)
 							28311,	-- Blackened Ashes (A)
@@ -1265,7 +1265,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 9836,	-- Mathredis Firestar
 					["coord"] = { 65, 23.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
 						{ "i", 8411, 1 },	-- Lung Juice Cocktail
@@ -1273,6 +1272,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 11952, 4 },	-- Night Dragon's Breath
 						{ "g", 300000 },	-- 30g
 					},
+					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
 						i(11642, {	-- Lesser Arcanum of Constitution
@@ -1284,7 +1284,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 9836,	-- Mathredis Firestar
 					["coord"] = { 65, 23.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
 						{ "i", 11567, 4 },	-- Crystal Spire
@@ -1292,6 +1291,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 11736, 1 },	-- Libram of Resilience
 						{ "g", 300000 },	-- 30g
 					},
+					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
 						i(11644, {	-- Lesser Arcanum of Resilience
@@ -1303,7 +1303,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 9836,	-- Mathredis Firestar
 					["coord"] = { 65, 23.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
 						{ "i", 11752, 1 },	-- Black Blood of the Tormented
@@ -1311,6 +1310,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 11732, 1 },	-- Libram of Rumination
 						{ "g", 300000 },	-- 30g
 					},
+					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
 						i(11622, {	-- Lesser Arcanum of Rumination
@@ -1322,7 +1322,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 9836,	-- Mathredis Firestar
 					["coord"] = { 65, 23.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
 						{ "i", 11734, 1 },	-- Libram of Tenacity
@@ -1330,6 +1329,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 11753, 1 },	-- Eye of Kajal
 						{ "g", 300000 },	-- 30g
 					},
+					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
 						i(11643, {	-- Lesser Arcanum of Tenacity
@@ -1341,7 +1341,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 9836,	-- Mathredis Firestar
 					["coord"] = { 65, 23.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
 						{ "i", 11737, 1 },	-- Libram of Voracity
@@ -1349,6 +1348,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 11563, 4 },	-- Crystal Force
 						{ "g", 300000 },	-- 30g
 					},
+					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
 						i(11647, {	-- Lesser Arcanum of Voracity
@@ -1427,10 +1427,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE TBC
 					["sourceQuest"] = 7564,	-- Wildeyes
 					-- #endif
+					["coord"] = { 12.4, 31.6, BURNING_STEPPES },
 					-- #if BEFORE 4.0.3
 					["description"] = "Do not leave Burning Steppes without purchasing a Shadowy Potion or two.",
 					-- #endif
-					["coord"] = { 12.4, 31.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FELWOOD },
 					["cost"] = { { "i", 18802, 1 } },	-- Shadowy Potion
@@ -2075,11 +2075,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 7564,	-- Wildeyes
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["classes"] = { WARLOCK },
 					["cost"] = {
 						{ "i", 14344, 6 },	-- Large Brilliant Shard
 						{ "i", 11370, 25 },	-- Dark Iron Ore
 					},
+					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 				}),
 				q(7564, {	-- Wildeyes

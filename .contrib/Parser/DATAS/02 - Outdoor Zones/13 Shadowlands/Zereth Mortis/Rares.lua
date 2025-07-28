@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 		n(RARES, {
 			header(HEADERS.Achievement, 15392, {	-- Dune Dominance
 				["description"] = "Upon defeat of any other Rare creature in ZM, there is a small chance that one of these 'special' rares will begin to activate.\nIt is not currently known whether there is a minimum cooldown between spawns, though it's been reported as quick as 50 min.",
-				["g"] = bubbleDownFiltered({["isDaily"]=true},FILTERFUNC_questID,{
+				["groups"] = bubbleDownFiltered({["isDaily"]=true},FILTERFUNC_questID,{
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {
 							182155,	-- High Reaver Damaris
@@ -32,7 +32,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						["crs"] = { 182156 },	-- Edra, the Will Grazer
 						["coord"] = { 63.8, 27, ZERETH_MORTIS },
 						["questID"] = 65586,
-						["g"] = {
+						["groups"] = {
 							i(190106),	-- Approaching Terror's Torch
 							i(190105),	-- Chilling Domination Mace
 							i(190459),	-- Cold Dispiriting Barricade
@@ -42,11 +42,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					n(182114, {	-- Iska, Outrider of Ruin
 						["coord"] = { 63.8, 27, ZERETH_MORTIS },
 						["questID"] = 65585,
-						["g"] = {
+						["groups"] = {
 							n(182120, {	-- Rhuv, Gorger of Ruin
 								["coord"] = { 63.8, 27, ZERETH_MORTIS },
 								["questID"] = 65706,
-								["g"] = {
+								["groups"] = {
 									i(190765),	-- Colossal Plaguespew Mawrat (MOUNT!)
 								},
 							}),
@@ -60,7 +60,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						["crs"] = { 182161 },	-- Phalangax, the Final Grasp
 						["coord"] = { 63.8, 27, ZERETH_MORTIS },
 						["questID"] = 65587,
-						["g"] = {
+						["groups"] = {
 							i(190108),	-- Aegis of Laughing Souls
 							i(190109),	-- Cudgel of Mortality's Chains
 							i(190127),	-- Marzan's Dancing Twin-Scythe
@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			n(179006, {	-- Akkaris <Annelid Prime>
 				["coord"] = { 64.7, 33.7, ZERETH_MORTIS },
 				["questID"] = 65552,
-				["g"] = {
+				["groups"] = {
 					i(190733),	-- Circle of Akkaris
 					i(189903),	-- Sand Sifting Sandals
 					i(189958),	-- Tunneler's Penetrating Greathelm
@@ -84,7 +84,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			n(183596, {	-- Chitali the Eldest <Cervid Prime>
 				["coord"] = { 50.3, 69, ZERETH_MORTIS },
 				["questID"] = 65553,
-				["g"] = {
+				["groups"] = {
 					i(189994),	-- Chitali's Command
 					i(189906),	-- Mask of the Resolute Cervid
 					i(189947),	-- Majestic Watcher's Girdle
@@ -94,7 +94,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			n(183953, {	-- Corrupted Architect
 				["coord"] = { 47.5, 62.2, ZERETH_MORTIS },
 				["questID"] = 65273,
-				["g"] = {
+				["groups"] = {
 					i(189940),	-- Architect's Polluting Touch
 					i(189907),	-- Crown of Contorted Thought
 					i(190009),	-- Hammer of Shattered Works
@@ -104,7 +104,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			n(180917, {	-- Destabilized Core
 				["coord"] = { 53.6, 44.4, ZERETH_MORTIS },
 				["questID"] = 64716,
-				["g"] = {
+				["groups"] = {
 					i(189910),	-- Adornment of Jingling Fractals
 					i(189985),	-- Curtain of Untold Realms
 					i(189999),	-- Dark Sky Gavel
@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			n(184409, {	-- Euv'ouk
 				["coord"] = { 47.5, 45.1, ZERETH_MORTIS },
 				["questID"] = 65555,
-				["g"] = {
+				["groups"] = {
 					i(190047),	-- Converted Broker's Staff
 					i(189956),	-- Perverse Champion's Handguards
 					i(189949),	-- Shackles of the Bound Guardian
@@ -126,7 +126,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "You might need to kill some vespoids in close by area.",
 				["coord"] = { 61.8, 60.5, ZERETH_MORTIS },
 				["questID"] = 65557,
-				["g"] = {
+				["groups"] = {
 					i(189936),	-- Feasting's Feeding Cloak
 					i(189969),	-- Vespoid's Clanging Legguards
 					i(189970),	-- Visor of Visceral Cravings
@@ -137,7 +137,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "To open the vault there is corresponding symbols in the area. Click those to open the vault.",
 				["coord"] = { 64.5, 58.7, ZERETH_MORTIS },
 				["questID"] = 65544,
-				["g"] = {
+				["groups"] = {
 					i(190004),	-- Furidian's Inscribed Barb
 					i(189963),	-- Sculpted Ouroboros Clasp
 					i(189932),	-- Slick Scale Chitinous
@@ -148,7 +148,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Feed its kids with three Energizing Leporid(183562, Bunnies in the area)",
 				["coord"] = { 68.9, 36.9, ZERETH_MORTIS },
 				["questID"] = 64719,
-				["g"] = {
+				["groups"] = {
 					i(189937),	-- Garudeon's Blanket of Feathers
 					i(189951),	-- Sunbathed Avian Armor
 					i(190602),	-- Symbol of the Raptora
@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			n(182318, {	-- General Zarathura <Army of the Endless>
 				["coord"] = { 59.6, 18.6, ZERETH_MORTIS },
 				["questID"] = 65583,
-				["g"] = {
+				["groups"] = {
 					i(190731),	-- Deceiver's Illusionary Signet
 					i(189968),	-- Dreadlord General's Tunic
 					i(190125, {	-- Kris of Intricate Secrets
@@ -172,7 +172,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Need to pull 5 Bulging Roots (184048) that are in the close by area. Use target macro to find them easily.",
 				["coord"] = { 52.9, 93.3, ZERETH_MORTIS },
 				["questID"] = 65579,
-				["g"] = {
+				["groups"] = {
 					i(190008),	-- Enlightened Botanist's Machete
 					i(189953),	-- Lush-Stained Footguards
 					i(190049),	-- Perennial Punching Dagger
@@ -187,7 +187,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					{ 80.4, 46.3, ZERETH_MORTIS },
 				},
 				["questID"] = 63988,
-				["g"] = {
+				["groups"] = {
 					i(189960),	-- Crouching Legs of the Bufonid
 					i(190001),	-- Gorkek's Glistening Throatguard
 					i(189926),	-- Posion-Licked Spaulders
@@ -196,7 +196,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			n(178563, {	-- Hadeon the Stonebreaker <Scarabid Prime>
 				["coord"] = { 52.6, 25.1, ZERETH_MORTIS },
 				["questID"] = 65581,
-				["g"] = {
+				["groups"] = {
 					i(190000),	-- Carapace of Gliding Sands
 					i(190051),	-- Elder's Opulent Stave
 					i(189942),	-- Hadeon's Indomitable Faceguard
@@ -211,7 +211,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 				["coord"] = { 58.2, 68.3, ZERETH_MORTIS },
 				["questID"] = 65551,
-				["g"] = {
+				["groups"] = {
 					i(189931),	-- Annelid's Hinge Wrappings
 					i(189965),	-- Armored Cuffs of the Unbroken
 					i(190056),	-- Enlightened Explorer's Lantern
@@ -222,7 +222,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["coord"] = { 52.2, 75.2, ZERETH_MORTIS },
 				["cost"] = {{"i",187923,1}},	-- Aurelid Lure
 				["questID"] = 65548,
-				["g"] = {
+				["groups"] = {
 					i(187676, {	-- Deepstar Polyp (MOUNT!)
 						["description"] = "This mount has 100% drop chance if you do the summon.",
 					}),
@@ -234,7 +234,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			n(178508, {	-- Mother Phestis <Tarachnid Prime>
 				["coord"] = { 54, 34, ZERETH_MORTIS },
 				["questID"] = 65547,
-				["g"] = {
+				["groups"] = {
 					i(189950),	-- Constrained Prey's Binds
 					i(189769),	-- Fang of Phestis (Not Confirmed)
 					i(190045),	-- Flowing Sandbender's Staff
@@ -244,7 +244,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			n(179043, {	-- Orixal <Helicid Prime>
 				["coord"] = { 56.6, 69, ZERETH_MORTIS },
 				["questID"] = 65582,
-				["g"] = {
+				["groups"] = {
 					i(189952),	-- Celestial Mollusk's Chestshell
 					i(189912),	-- Orixal's Moist Sash
 					i(189934),	-- Slime-Wake Sabatons
@@ -253,7 +253,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			n(183814, {	-- Otaris the Provoked
 				["coord"] = { 58.6, 39, ZERETH_MORTIS },
 				["questID"] = 65257,
-				["g"] = {
+				["groups"] = {
 					i(189957),	-- Colossus' Focusing Headpiece
 					i(189909),	-- Pantaloons of Cold Recesses
 					i(189945),	-- Shoulders of the Missing Giant
@@ -262,7 +262,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			n(183746, {	-- Otiosen
 				["coord"] = { 43.4, 87.6, ZERETH_MORTIS },
 				["questID"] = 65556,
-				["g"] = {
+				["groups"] = {
 					i(187634),	-- Ambystan Lattice
 					i(189925),	-- Amphibian's Nimble Leggings
 					i(190046),	-- Broker's Stolen Cane
@@ -274,7 +274,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Pylons show what rune you need to bring here. Needs at least two persons.\nPosition of runes:\nRune (V-like symbol) @ 43.0 21.5\nRune (Diamonds-like symbol) @ 44.9 22.4\nRune (M-like symbol) @ 46.8 23.3\nRune (H-llke symbol) @ 48.4 24.1", -- See if symbols rotate
 				["coord"] = { 39.5, 26.8, ZERETH_MORTIS },
 				["questID"] = 64668,
-				["g"] = {
+				["groups"] = {
 					i(190002),	-- Bulwark of the Broken
 					i(189984),	-- Drape of Idolized Symmetry
 					i(189961),	-- Enduring Protector's Shoulderguards
@@ -288,7 +288,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					{ 53.4, 47.2, ZERETH_MORTIS },
 				},
 				["questID"] = 65574,
-				["g"] = {
+				["groups"] = {
 					i(189927),	-- Broker's Gnawed Spaulders
 					i(190730),	-- Matriarch's Shell Band
 					i(189998),	-- Ornate Stone Mallet
@@ -298,7 +298,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			n(184413, {	-- Shifting Stargorger
 				["coord"] = { 42, 21.9, ZERETH_MORTIS },
 				["questID"] = 65549,
-				["g"] = {
+				["groups"] = {
 					i(189908),	-- Gorger's Leggings of Famine
 					i(189916),	-- Mutated Devourer's Harness
 					i(189941),	-- Voracious Diadem
@@ -309,7 +309,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			n(183722, {	-- Sorranos <Vombata Prime>
 				["coord"] = { 35.8, 71.2, ZERETH_MORTIS },
 				["questID"] = 65240,
-				["g"] = {
+				["groups"] = {
 					i(189944),	-- Immovable Stance of the Vombata
 					i(189962),	-- Sorrano's Gleaming Pauldrons
 					i(189911),	-- Sublime Fur Mantle
@@ -321,7 +321,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Use the cosmic energy system behind the mountain. Work your way to the top level and then jump down to be able to pull him.",
 				["coord"] = { 50.4, 39.8, ZERETH_MORTIS },
 				["questID"] = 65272,
-				["g"] = {
+				["groups"] = {
 					i(189954),	-- Lustrous Sentinel's Sabatons
 					i(190003),	-- Skyward Savior's Talon
 					i(189915),	-- Tahkwitz' Cloth Ribbon
@@ -332,7 +332,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			n(181249, {	-- Tethos
 				["coord"] = { 54.5, 73.4, ZERETH_MORTIS },
 				["questID"] = 65550,
-				["g"] = {
+				["groups"] = {
 					i(189928),	-- Centripetal Waistband
 					i(190055),	-- Coalescing Energy Implement
 					i(189967),	-- Hood of Star Topology
@@ -345,7 +345,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["crs"] = { 183505 },	-- The Matriarch
 				["coord"] = { 44, 75, ZERETH_MORTIS },
 				["questID"] = 65580,
-				["g"] = {
+				["groups"] = {
 					i(190006),	-- Anima-Siphoning Sword
 					i(189921),	-- Devourer's Insaitable Grips
 					i(189913),	-- Engulfer's Tightening Cinch
@@ -355,7 +355,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			n(181360, {	-- Vexis <Lupine Prime>
 				["coord"] = { 39.5, 57.1, ZERETH_MORTIS },
 				["questID"] = 65239,
-				["g"] = {
+				["groups"] = {
 					i(189959),	-- Legs of Graceful Landing
 					i(190597),	-- Symbol of the Lupine
 					i(189997),	-- The Lupine Prime's Might
@@ -366,7 +366,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			n(183747, {	-- Vitiane
 				["coord"] = { 47, 47, ZERETH_MORTIS },
 				["questID"] = 65584,
-				["g"] = {
+				["groups"] = {
 					i(189922),	-- Cowl of Shameful Proliferation
 					i(189935),	-- Harrowing Hope Squashers
 					i(189901),	-- Vitiane's Defiled Vestment
@@ -375,7 +375,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			n(183737, {	-- Xy'rath the Covetous
 				["coord"] = { 63.7, 49.1, ZERETH_MORTIS },
 				["questID"] = 65241,
-				["g"] = {
+				["groups"] = {
 					i(189918),	-- Fleeting Broker's Strides
 					i(189964),	-- Multi-Faceted Belt
 					i(190238, {	-- Xy'rath's Booby-Trapped Cache (TOY!)
@@ -393,7 +393,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["description"] = "Pull the bugs but do not kill them. Wait until reaching 20 stacks of the debuff.",
 				["coord"] = { 43.3, 32.9, ZERETH_MORTIS },
 				["questID"] = 65251,
-				["g"] = {
+				["groups"] = {
 					i(189924),	-- Buzzing Predator's Legs
 					i(190726),	-- Extract of Prodigious Sands
 					i(189902),	-- Hapless Traveler's Treads

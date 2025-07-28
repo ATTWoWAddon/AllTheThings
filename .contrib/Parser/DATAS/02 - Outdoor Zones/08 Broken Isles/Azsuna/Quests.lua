@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 			q(38857, {	-- A Favor for Mr. Shackle
 				["coord"] = { 50.2, 61.0, AZSUNA },
 				["provider"] = { "n", 88863 },	-- Seska Seafang
-				["g"] = {
+				["groups"] = {
 					i(200665, {	-- Seaweed Trimming Blade
 						["classes"] = { EVOKER },
 						["timeline"] = ADDED_10_0_2,
@@ -38,7 +38,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 42375 },	-- Eye See You
 				["coord"] = { 63.8, 28.8, AZSUNA },
 				["provider"] = { "n", 107245 },	-- Marius Felbane
-				["g"] = {
+				["groups"] = {
 					i(121480),	-- Felblaze Chain
 					i(129171),	-- Band of Ingression
 				},
@@ -50,7 +50,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				},
 				["coord"] = { 53.3, 45.4, AZSUNA },
 				["provider"] = { "n", 108328 },	-- Olothil Starlance
-				["g"] = {
+				["groups"] = {
 					i(138820),	-- Starlance Pauldrons
 					i(138821),	-- Starlance Mantle
 					i(138822),	-- Starlance Shoulderpads
@@ -85,7 +85,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 					{ "n", 91061 },	-- Cellarman Voodani
 					{ "n", 91065 },	-- Cellarman Voodani
 				},
-				["g"] = {
+				["groups"] = {
 					i(121493),	-- Liastrin's Wine Taster
 					i(121489),	-- Valiana's Secret Recipe
 					i(121491),	-- Shalrala's Engraved Goblet
@@ -114,7 +114,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				},
 				["coord"] = { 37.6, 57.6, AZSUNA },
 				["provider"] = { "n", 90474 },	-- Kor'vas Bloodthorn
-				["g"] = {
+				["groups"] = {
 					i(132984),	-- Abandoned Highborne Mana Crystal
 					i(132985),	-- Blood of the Vanquished Highborne
 					i(133002),	-- Coalesced Shadows
@@ -145,7 +145,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 37468 },	-- Into the Academy
 				["coord"] = { 53.4, 48.9, 631 },	-- Nar'thalas Academy
 				["provider"] = { "n", 89660 },	-- Thyrillion
-				["g"] = {
+				["groups"] = {
 					i(138873),	-- Mystical Frosh Hat (TOY!)
 				},
 			}),
@@ -164,7 +164,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["provider"] = { "o", 239328 },	-- Captain's Foot Locker
 				["coord"] = { 65.6, 56.8, AZSUNA },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(121482),	-- Cloak of the Greywatch
 					i(138857),	-- SI:7 Standard Issue Vest
 					i(138856),	-- Alliance Auxillary Hauberk
@@ -177,7 +177,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["provider"] = { "o", 239328 },	-- Captain's Foot Locker
 				["coord"] = { 65.6, 56.8, AZSUNA },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(138859),	-- Royal Apothecary Robe
 					i(121488),	-- Royal Apothecary Drape
 					i(138862),	-- Decorated Deathstalker Jerkin
@@ -189,7 +189,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 37862 },	-- Still Alive
 				["coord"] = { 49.7, 26.8, AZSUNA },
 				["provider"] = { "n", 102988 },	-- Archmage Khadgar
-				["g"] = {
+				["groups"] = {
 					i(121435),	-- Leywalker Robes
 					i(121418),	-- Ruin-Stalker Vest
 					i(121417),	-- Seaspray Vest
@@ -251,7 +251,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 37468 },	-- Into the Academy
 				["coord"] = { 53.4, 48.9, 631 },	-- Nar'thalas Academy
 				["provider"] = { "n", 89849 },	-- Andellis
-				["g"] = {
+				["groups"] = {
 					i(138843),	-- The Librarian's Handwraps
 					i(138842),	-- Bookbinding Wraps
 					i(138841),	-- Shark-Link Gloves
@@ -266,7 +266,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 42567 },	-- Cursed to Wither
 				["coord"] = { 48.2, 22.7, AZSUNA },
 				["provider"] = { "n", 91131 },	-- Runas the Shamed
-				["g"] = {
+				["groups"] = {
 					i(200653, {	-- Azure Staff of Arcana
 						["classes"] = { EVOKER },
 						["timeline"] = ADDED_10_0_2,
@@ -338,7 +338,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 			q(37657, {	-- Making the World Safe for Profit
 				["coord"] = { 56.5, 59.5, AZSUNA },
 				["provider"] = { "n", 91419 },	-- Mr. Shackle
-				["g"] = {
+				["groups"] = {
 					i(138852),	-- Gilnean Fleece Pantaloons
 					i(138851),	-- Corsair's Britches
 					i(138850),	-- Standard Earthen Ring Regalia
@@ -370,7 +370,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 37510 },	-- Sternfathom's Champion
 				["coord"] = { 47.9, 48.7, AZSUNA },
 				["provider"] = { "n", 88923 },	-- Sternfathom
-				["g"] = {
+				["groups"] = {
 					i(133828),	-- Recipe: Fighter Chow [Rank 1] (RECIPE!)
 				},
 			}),
@@ -378,7 +378,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 37497 },	-- Trailing the Tidestone
 				["coord"] = { 51.7, 44.2, AZSUNA },
 				["provider"] = { "n", 88867 },	-- Prince Farondis
-				["g"] = {
+				["groups"] = {
 					i(121487),	-- Nar'thalas Protector's Cape
 					i(132911),	-- Seal of House Farondis
 				},
@@ -387,7 +387,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 37507 },	-- Boss Whalebelly's in Charge
 				["coord"] = { 50.0, 48.4, AZSUNA },
 				["provider"] = { "n", 88873 },	-- Okuna Longtusk
-				["g"] = {
+				["groups"] = {
 					i(121492),	-- Shiny Ookin' Bauble
 					i(121494),	-- Mundane Ookin' Curio
 					i(121490),	-- Precious Ookin' Coin
@@ -398,7 +398,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 37862 },	-- Still Alive
 				["coord"] = { 50.0, 26.5, AZSUNA },
 				["provider"] = { "n", 90738 },	-- Stellagosa
-				["g"] = {
+				["groups"] = {
 					i(129178),	-- Emmigosa (PET!)
 				},
 			}),
@@ -406,7 +406,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 37733 },	-- Prince Farondis
 				["coord"] = { 46.9, 41.2, AZSUNA },
 				["provider"] = { "n", 88115 },	-- Prince Farondis
-				["g"] = {
+				["groups"] = {
 					i(121432),	-- Leywalker Leggings
 					i(121434),	-- Ruin-Stalker Breeches
 					i(121433),	-- Seaspray Leggings
@@ -444,7 +444,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				},
 				["coord"] = { 43.1, 43.6, AZSUNA },
 				["provider"] = { "n", 90317 },	-- Jace Darkweaver
-				["g"] = {
+				["groups"] = {
 					i(141623),	-- Demon Warding Halo
 					i(141622),	-- Guise of the Demon Warder
 					i(141621),	-- Helmet of Demon Warding
@@ -459,7 +459,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 37536 },	-- Morale Booster
 				["coord"] = { 47.9, 48.7, AZSUNA },
 				["provider"] = { "n", 89048 },	-- Sternfathom
-				["g"] = {
+				["groups"] = {
 					i(121438),	-- Leywalker Amice
 					i(121436),	-- Ruin-Stalker Spaulders
 					i(121439),	-- Seaspray Mantle
@@ -482,7 +482,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 37858 },	-- Stellagosa
 				["coord"] = { 46.6, 15.7, AZSUNA },
 				["provider"] = { "n", 90065 },	-- Stellagosa
-				["g"] = {
+				["groups"] = {
 					i(132971),	-- Nightfallen's Desperation
 					i(132970),	-- Runas' Nearly Depleted Ley Crystal
 					i(132969),	-- Talisman of the Lost Blue Flight
@@ -496,7 +496,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 37469 },	-- The Tidestone: Shattered
 				["coord"] = { 57.8, 43.3, AZSUNA },
 				["provider"] = { "n", 89009 },	-- Prince Farondis
-				["g"] = {
+				["groups"] = {
 					i(121420),	-- Leywalker Treads
 					i(121422),	-- Ruin-Stalker Boots
 					i(121421),	-- Seaspray Sabatons
@@ -515,7 +515,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				},
 				["coord"] = { 41.2, 50.5, AZSUNA },
 				["provider"] = { "n", 90474 },	-- Kor'vas Bloodthorn
-				["g"] = {
+				["groups"] = {
 					i(132961),	-- Cape of Azure Fury
 					i(132964),	-- Stellagosa's Breath
 					i(132962),	-- The Jailer's Key
@@ -582,7 +582,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 37729 },	-- Pop Quiz: Advanced Rune Drawing
 				["coord"] = { 29.5, 42.6, 631 },	-- Nar'thalas Academy
 				["provider"] = { "n", 89661 },	-- Instructor Nidriel
-				["g"] = {
+				["groups"] = {
 					i(121484),	-- Psychotic Scholar's Chain
 					i(132910),	-- Leywalker Bracers
 					i(132909),	-- Ruin-Stalker Bindings
@@ -594,7 +594,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 37530 },	-- Save Yourself
 				["coord"] = { 57.8, 43.4, AZSUNA },
 				["provider"] = { "n", 89009 },	-- Prince Farondis
-				["g"] = {
+				["groups"] = {
 					i(133028),	--	Gale of Azshara
 					i(133026),	--	Cursed Dissection Blade
 					i(133025),	--	Enchanted El'dranil Frond
@@ -617,7 +617,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 37857 },	-- Runas Knows the Way
 				["coord"] = { 53.7, 16.7, AZSUNA },
 				["provider"] = { "n", 90383 },	-- Runas the Shamed
-				["g"] = {
+				["groups"] = {
 					i(138876),	-- Runas' Crystal Grinder (TOY!)
 				},
 			}),
@@ -625,7 +625,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 37991 },	-- Agapanthus
 				["coord"] = { 48.8, 26.4, AZSUNA },
 				["provider"] = { "n", 90543 },	-- Agapanthus
-				["g"] = {
+				["groups"] = {
 					i(121481),	-- Tranquil Azurewing Band
 					i(121425),	-- Leywalker Gloves
 					i(121423),	-- Ruin-Stalker Gloves
@@ -642,7 +642,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 37256 },	-- They Came From the Sea
 				["coord"] = { 47.0, 41.3, AZSUNA },
 				["provider"] = { "n", 89341 },	-- Magister Garuhod
-				["g"] = {
+				["groups"] = {
 					i(133814),	-- Recipe: Faronaar Fizz [Rank 1] (RECIPE!)
 				},
 			}),
@@ -653,7 +653,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				},
 				["coord"] = { 53.5, 16.3, AZSUNA },
 				["provider"] = { "n", 89978 },	-- Projection of Senegos
-				["g"] = {
+				["groups"] = {
 					i(121444),	-- Leywalker Wristwraps
 					i(121447),	-- Ruin-Stalker Wristwraps
 					i(121446),	-- Seaspray Wristwraps
@@ -668,7 +668,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 37565 },	-- The Right Weapons for the Job
 				["coord"] = { 53.4, 63.0, AZSUNA },
 				["provider"] = { "n", 89051 },	-- Okuna Longtusk
-				["g"] = {
+				["groups"] = {
 					i(121441),	-- Leywalker Waistwrap
 					i(121443),	-- Ruin-Stalker Belt
 					i(121442),	-- Seaspray Belt
@@ -688,7 +688,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				},
 				["coord"] = { 43.2, 43.1, AZSUNA },
 				["provider"] = { "n", 89398 },	-- Allari the Souleateer
-				["g"] = {
+				["groups"] = {
 					i(129172),	-- Band of Demonic Guile
 					i(132951),	-- Leywalker Shoes
 					i(132949),	-- Ruin-Stalker Footpads
@@ -715,7 +715,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 37690 },	-- Those Who Remember
 				["coord"] = { 48.4, 34.4, AZSUNA },
 				["provider"] = { "n", 89023 },	-- Nightwatcher Idri
-				["g"] = {
+				["groups"] = {
 					i(121428),	-- Leywalker Aurora
 					i(121430),	-- Ruin-Stalker Helm
 					i(121429),	-- Seaspray Helm
@@ -735,7 +735,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 				["sourceQuests"] = { 38232 },	-- Minion!  Kill Them!
 				["provider"] = { "n", 91165 },	-- Daglop
 				["coord"] = { 62.8, 51.4, AZSUNA },
-				["g"] = {
+				["groups"] = {
 					i(138878),	-- Copy of Daglop's Contract (TOY!)
 				},
 			}),

@@ -6,13 +6,13 @@ root(ROOTS.Secrets, {
 	header(HEADERS.Spell, 231215, {	-- Sun Darter Hatchling
 		["displayID"] = 74529,
 		["description"] = "***This secret requires you to have debug mode enabled to see the consumables/steps. To enable debug mode right click the ATT icon on the minimap, navigate to the general tab and check the \"|Cff15abffDebug Mode|r |cFFFFFFFF(Show Everything)|r\" box.*** \n\nIt also requires the battle pet Perky Pug from the Dungeons and Raids achievement Looking For Multitudes.\n\nEnjoy!\n\n!Note If coords are not plotting, you might need to make a standalone item, plot it, and then plot again from the main list.",
-		["g"] = {
+		["groups"] = {
 			o(9999908, {	-- Step 1: Gather Consumables.
 				["description"] = "|cFFFFFFFFSTEP 1:|r Gather the following quantity of consumables:",
-				["g"] = {
+				["groups"] = {
 					i(38320, {	-- Dire Brew
 						["description"] = "Qty:1\n\nObtained from Dark Iron Brewer in BRD.\n\nWalk/fly to BRD, or use the Direbrew's Remote obtained from Brewfest. Once inside the instance, take a left through the gate, and then right through another gate.  Go through the door on the left, and click the Shadowforge Lock at the back of the room.  Backtrack to the door, go up the ramp and take a left down the hallway.  Continue down the hallway, until it opens up.  Take the first right into \"The Manufactory\".  Head right and through the door at the back of the room, over the bridge and into \"The Grim Guzzler\".  Go up the stairs on the right and in the back of the room on the left is the Dark Iron Brewer. Talk to him until he passes out, and loot the Dire Brew that spawns.",
-						["g"] = {
+						["groups"] = {
 							n(144128, {	-- Dark Iron Brewer
 								["coords"] = {
 									{ 21.0, 38.3, BURNING_STEPPES },	-- Blackrock Mountain
@@ -32,7 +32,7 @@ root(ROOTS.Secrets, {
 					}),
 					i(103789, {	-- "Little Princess" Costume
 						["description"] = "Qty:1\n\nPurchase on the AH or from the vendors below:",
-						["g"] = {
+						["groups"] = {
 							n(142065, {	-- Dana Pull
 								["description"] = "Boralus",
 								["coord"] = { 50.8, 46.0, BORALUS },
@@ -90,7 +90,7 @@ root(ROOTS.Secrets, {
 					}),
 					i(8529, {	-- Noggenfogger Elixir
 						["description"] = "Qty:20\n\nPurchase from Sprinkle Noggenfogger in Tanaris.",
-						["g"] = {
+						["groups"] = {
 							n(98844, {	-- Sprinkle Noggenfogger
 								["coord"] = { 51.2, 29.8, TANARIS },
 							}),
@@ -104,7 +104,7 @@ root(ROOTS.Secrets, {
 					}),
 					i(89373, {	-- Scotty's Lucky Coin
 						["description"] = "Qty:1\n\nObtained from killing Scotty in Townlong Steppes.\n\nScotty's behind the Mantid house in the middle of the tree, so either walk around the left side of the house, or fly just above the house down into the crevice.",
-						["g"] = {
+						["groups"] = {
 							n(66162, {	-- Scotty
 								["coord"] = { 21.6, 46.5, TOWNLONG_STEPPES },
 							}),
@@ -112,7 +112,7 @@ root(ROOTS.Secrets, {
 					}),
 					i(955, {	-- Scroll of Intellect
 						["description"] = "Qty:1\n\nPurchase on the AH, make your own (Inscription), or buy in limited quantities from the vendors below:",
-						["g"] = {
+						["groups"] = {
 							n(1316, {	-- Adair Gilroy <Librarian>
 								["description"] = "Stormwind",
 								["coord"] = { 51.8, 74.8, STORMWIND_CITY },
@@ -163,7 +163,7 @@ root(ROOTS.Secrets, {
 				["cost"] = {
 					{ "i", 89373, 1 },	-- Scotty's Lucky Coin
 				},
-				["g"] = {
+				["groups"] = {
 					o(272434, {	-- Water Stone
 						["coord"] = { 47.9, 1.5, WINTERSPRING },
 						["groups"] = { i(147455), },	-- Water Stone
@@ -199,7 +199,7 @@ root(ROOTS.Secrets, {
 				["questID"] = 48022,
 				["isWeekly"] = true,
 				["description"] = "|cFFFFFFFFSTEP 14:|r DO NOT JUMP IN WATER. Walk to the edge of water on the right, behind the plaque, where the cavern slopes down into the water.  Walk across the water and loot the egg.\n\nCongrats on your new pet!!! \n\n!Don't forget to turn off debug mode now that you are done.",
-				["g"] = {
+				["groups"] = {
 					i(142223),	-- Sun Darter Hatchling (PET!)
 				},
 			}),

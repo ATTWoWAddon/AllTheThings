@@ -1,14 +1,14 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED_5_1_0 }, {
-	applyclassicphase(MOP_PHASE_LANDFALL, inst(303, {	-- Gate of the Setting Sun
+root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
+	applyclassicphase(MOP_PHASE_ONE, inst(303, {	-- Gate of the Setting Sun
 		["coord"] = { 15.8, 74.8, VALE_OF_ETERNAL_BLOSSOMS },
 		["maps"] = {
 			437,	-- Gate of the Setting Sun
 			438,	-- Gate Watch Tower
 		},
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(31363, {	-- Lighting the Way
 					["provider"] = { "n", 64467 },	-- Bowmistress Li
@@ -23,7 +23,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				q(31364, {	-- That's a Big Bug!
 					["provider"] = { "n", 64467 },	-- Bowmistress Li
 					["coord"] = { 61.0, 88.2, 437 },
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/1 Raigonn slain
 							["provider"] = { "n", 56877 },	-- Raigonn
 						}),
@@ -38,7 +38,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 				e(649, {	-- Raigonn
 					["crs"] = { 56877 },	-- Raigonn
-					["g"] = {
+					["groups"] = {
 						-- Available
 						ach(10010, {	-- Gate of the Setting Sun
 							["timeline"] = { ADDED_6_2_0 },
@@ -50,7 +50,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(655, {	-- Saboteur Kip'tilak
 					["crs"] = { 56906 },	-- Saboteur Kip'tilak
-					["g"] = {
+					["groups"] = {
 						-- Available
 						i(144018, {	-- Fallout-Filtering Hood
 							["timeline"] = { ADDED_7_1_5 },
@@ -82,7 +82,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				e(675, {	-- Striker Ga'dok
 					["crs"] = { 56589 },	-- Striker Ga'dok
-					["g"] = {
+					["groups"] = {
 						-- Available
 						i(143980, {	-- Acid-Scarred Spaulders
 							["timeline"] = { ADDED_7_1_5 },
@@ -114,7 +114,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				e(676, {	-- Commander Ri'mok
 					["crs"] = { 56636 },	-- Commander Ri'mok
-					["g"] = {
+					["groups"] = {
 						-- Available
 						i(144098, {	-- Mantid Trochanter
 							["timeline"] = { ADDED_7_1_5 },
@@ -146,7 +146,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				e(649, {	-- Raigonn
 					["crs"] = { 56877 },	-- Raigonn
-					["g"] = {
+					["groups"] = {
 						-- Available
 						i(144218, {	-- Klatith, Fangs of the Swarm
 							["timeline"] = { ADDED_7_1_5 },
@@ -210,7 +210,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				e(655, {	-- Saboteur Kip'tilak
 					["crs"] = { 56906 },	-- Saboteur Kip'tilak
-					["g"] = {
+					["groups"] = {
 						-- Available
 						ach(6479),	-- Bomberman
 						i(144018, {	-- Fallout-Filtering Hood
@@ -249,7 +249,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				e(675, {	-- Striker Ga'dok
 					["crs"] = { 56589 },	-- Striker Ga'dok
-					["g"] = {
+					["groups"] = {
 						-- Available
 						i(143980, {	-- Acid-Scarred Spaulders
 							["timeline"] = { ADDED_7_1_5 },
@@ -287,7 +287,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				e(676, {	-- Commander Ri'mok
 					["crs"] = { 56636 },	-- Commander Ri'mok
-					["g"] = {
+					["groups"] = {
 						-- Available
 						i(144098, {	-- Mantid Trochanter
 							["timeline"] = { ADDED_7_1_5 },
@@ -325,7 +325,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				e(649, {	-- Raigonn
 					["crs"] = { 56877 },	-- Raigonn
-					["g"] = {
+					["groups"] = {
 						-- Available
 						ach(6759),	-- Heroic: Gate of the Setting Sun
 						ach(6768),	-- Heroic: Gate of the Setting Sun Guild Run
@@ -400,7 +400,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 } }, {
+			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
 				ach(8434, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Gate of the Setting Sun
 					title(241),	-- <Name>, Defender of the Wall
 				})),
@@ -416,7 +416,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0 } }, {
+	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 		inst(303, {
 			q(31631),	-- Gate of the Setting Sun Challenge Mode - Bronze Addition (Nth)
 			q(31624),	-- Gate of the Setting Sun Challenge Mode - Consolation (Nth)

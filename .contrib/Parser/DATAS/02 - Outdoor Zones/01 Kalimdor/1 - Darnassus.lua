@@ -134,16 +134,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7799, {	-- A Donation of Mageweave
 					["qg"] = 14725,	-- Raedon Duskstriker
 					["coord"] = { 64.0, 23.0, DARNASSUS },
-					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
 				q(7800, {	-- A Donation of Runecloth
 					["qg"] = 14725,	-- Raedon Duskstriker
 					["coord"] = { 64.0, 23.0, DARNASSUS },
-					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -177,11 +177,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 				q(5647, {	-- A Lack of Fear
 					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
-					["coord"] = { 39.2, 81, DARNASSUS },
 					["altQuests"] = {
 						5641,	-- A Lack of Fear [Ironforge]
 						5645,	-- A Lack of Fear [Stormwind City]
 					},
+					["coord"] = { 39.2, 81, DARNASSUS },
 					["timeline"] = { REMOVED_2_3_0 },
 					["maps"] = { IRONFORGE },
 					["classes"] = { PRIEST },
@@ -216,10 +216,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7801, {	-- Additional Runecloth [Darnassus]
 					["qg"] = 14725,	-- Raedon Duskstriker
 					["sourceQuest"] = 7800,	-- A Donation of Runecloth
-					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
-					["maxReputation"] = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
 					["coord"] = { 64.0, 23.0, DARNASSUS },
+					["maxReputation"] = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
@@ -255,11 +255,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if NOT ANYCLASSIC
 				q(5678, {	-- Arcane Feedback [Stormwind City]
 					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
-					["coord"] = { 40.0, 80.0, DARNASSUS },
 					["altQuests"] = {
 						5676,	-- Arcane Feedback [Stormwind City]
 						5677,	-- Arcane Feedback [Ironforge]
 					},
+					["coord"] = { 40.0, 80.0, DARNASSUS },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN },
 					["classes"] = { PRIEST },
@@ -362,7 +362,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if NOT ANYCLASSIC
 				q(5640, {	-- Desperate Prayer
 					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
-					["coord"] = { 39.6, 80.8, DARNASSUS },
 					["altQuests"] = {
 						5634,	-- Desperate Prayer [Stormwind City #1]
 						5635,	-- Desperate Prayer [Elwynn Forest]
@@ -371,6 +370,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5638,	-- Desperate Prayer [Stormwind City #2]
 						5639,	-- Desperate Prayer [Ironforge]
 					},
+					["coord"] = { 39.6, 80.8, DARNASSUS },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN, DWARF },
 					["classes"] = { PRIEST },
@@ -413,14 +413,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						11406,	-- High Priest Rohan <Priest Trainer>
 						376,	-- High Priestess Laurena <Priest Trainer>
 					},
+					["altQuests"] = {
+						5675,	-- Elune's Grace [Ironforge]
+						5673,	-- Elune's Grace [Stormwind City]
+					},
 					["coords"] = {
 						{ 39.2, 81, DARNASSUS },
 						{ 25, 8.2, IRONFORGE },
 						{ 38.8, 26.6, STORMWIND_CITY },
-					},
-					["altQuests"] = {
-						5675,	-- Elune's Grace [Ironforge]
-						5673,	-- Elune's Grace [Stormwind City]
 					},
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
@@ -439,11 +439,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if NOT ANYCLASSIC
 				q(5672, {	-- Elune's Grace [Darnassus]
 					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
-					["coord"] = { 39.2, 81, DARNASSUS },
 					["altQuests"] = {
 						5675,	-- Elune's Grace [Ironforge]
 						5673,	-- Elune's Grace [Stormwind City]
 					},
+					["coord"] = { 39.2, 81, DARNASSUS },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
@@ -478,14 +478,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 12302, 1 } },	-- Ancient Frostsaber (MOUNT!)
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
+					["_drop"] = { "g" },
 					["sym"] = { { "select", "itemID",
 						18766,
 						18767,
 						18902
 					}},
-					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
-					["_drop"] = { "g" },
 				}),
 				q(952, {	-- Grove of the Ancients
 					["providers"] = {
@@ -520,8 +520,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(32664, {	-- Learn to Ride
 					["description"] = "This quest is available to Night Elves upon reaching level 10.",
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
-					["DisablePartySync"] = true,
-					["isBreadcrumb"] = true,
+					["races"] = { NIGHTELF },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -529,13 +528,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["races"] = { NIGHTELF },
+					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["lvl"] = lvlsquish(10, 10, 10),
 				}),
 				q(14085, {	-- Learn to Ride in Darnassus
 					["provider"] = { "i", 46876 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Night Elves in their Mailbox upon reaching the specified level.",
 					["timeline"] = { ADDED_3_3_0, REMOVED_5_2_0 },
+					["races"] = { NIGHTELF },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -543,7 +544,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["races"] = { NIGHTELF },
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(4493, {	-- March of the Silithid (A)
@@ -576,13 +576,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #else
 					["coord"] = { 64.4, 22.2, DARNASSUS },
 					-- #endif
-					["requireSkill"] = LEATHERWORKING,
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 2309, 5 },	-- Embossed Leather Boots
 						{ "i", 2310, 5 },	-- Embossed Leather Cloak
 						{ "i", 4239, 1 },	-- Embossed Leather Gloves
 					},
+					["requireSkill"] = LEATHERWORKING,
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 8,
 					["groups"] = {
 						i(6710),	-- Pattern: Moonglow Vest (RECIPE!)
@@ -647,14 +647,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 12303, 1 } },	-- Nightsaber (MOUNT!)
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
+					["_drop"] = { "g" },
 					["sym"] = { { "select", "itemID",
 						18766,
 						18767,
 						18902
 					}},
-					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
-					["_drop"] = { "g" },
 				}),
 				applyclassicphase(CATA_PHASE_ONE, q(29314, {	-- Remembering the Ancestors
 					["providers"] = {
@@ -820,15 +820,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5489,	-- Brother Joshua <Priest Trainer>
 						11397,	-- Nara Meideros <Priest Trainer>
 					},
-					["coords"] = {
-						{ 39.2, 81, DARNASSUS },
-						{ 55.6, 56.8, TELDRASSIL },
-						{ 47.2, 52.2, DUN_MOROGH },
-						{ 43.4, 65.6, ELWYNN_FOREST },
-						{ 24.6, 9.2, IRONFORGE },
-						{ 38.6, 26.8, STORMWIND_CITY },
-						{ 20.8, 50.2, STORMWIND_CITY },
-					},
 					["altQuests"] = {
 						5629,	-- Returning Home [Teldrassil]
 						5630,	-- Returning Home [Dun Morogh]
@@ -837,6 +828,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5631,	-- Returning Home [Stormwind City]
 						5632,	-- Returning Home [Stormwind City]
 						-- NOTE: There is 10534 and 10539 also, but these are for DRAENEI and were never found on TBC Classic, so those two were likely never implemented. Starshards was a Night Elf Priest only spell.
+					},
+					["coords"] = {
+						{ 39.2, 81, DARNASSUS },
+						{ 55.6, 56.8, TELDRASSIL },
+						{ 47.2, 52.2, DUN_MOROGH },
+						{ 43.4, 65.6, ELWYNN_FOREST },
+						{ 24.6, 9.2, IRONFORGE },
+						{ 38.6, 26.8, STORMWIND_CITY },
+						{ 20.8, 50.2, STORMWIND_CITY },
 					},
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
@@ -855,7 +855,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if NOT ANYCLASSIC
 				q(5627, {	-- Returning Home [Darnassus]
 					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
-					["coord"] = { 39.2, 81, DARNASSUS },
 					["altQuests"] = {
 						5628,	-- Returning Home [Elwynn Forest]
 						5629,	-- Returning Home [Teldrassil]
@@ -864,6 +863,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5632,	-- Returning Home [Stormwind City]
 						5633,	-- Returning Home [Ironforge]
 					},
+					["coord"] = { 39.2, 81, DARNASSUS },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
@@ -1068,14 +1068,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1683, {	-- Vorlus Vilehoof
 					["qg"] = 4088,	-- Elanaria
-					["sourceQuests"] = {
-						1638,	-- A Warrior's Training
-						1684,	-- Elanaria
-						1679,	-- Muren Stormpike
-						-- #if AFTER TBC
-						9582,	-- Strength of One
-						-- #endif
-					},
 					["altQuests"] = {
 						1665,	-- Bartleby's Mug
 						-- #if AFTER TBC
@@ -1083,6 +1075,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 						1678,	-- Vejrek
 						--1683,	-- Vorlus Vilehoof
+					},
+					["sourceQuests"] = {
+						1638,	-- A Warrior's Training
+						1684,	-- Elanaria
+						1679,	-- Muren Stormpike
+						-- #if AFTER TBC
+						9582,	-- Strength of One
+						-- #endif
 					},
 					["coord"] = { 57.3, 34.6, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1506,7 +1506,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 67.2, 15.8, DARNASSUS },	-- Craftsmen's Terrace
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
-					["group"] = {
+					["groups"] = {
 						i(1179),	-- Ice Cold Milk
 					},
 				}),

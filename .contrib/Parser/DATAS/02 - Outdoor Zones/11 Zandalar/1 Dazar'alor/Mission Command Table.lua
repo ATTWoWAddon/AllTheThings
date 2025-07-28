@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				{ 51.59, 99.58, DAZARALOR },	-- The Banshee's Wail Location [Original]
 				{ 58.42, 70.63, HALL_OF_CHRONICLERS },
 			},
-			["g"] = {
+			["groups"] = {
 				ach(12869, {	-- Azeroth at War: After Lordaron
 					["_doautomation"] = true,
 				}),
@@ -31,11 +31,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				}),
 				mission(2122, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- A Shady Character
 					["provider"] = { "i", 166242 },	-- A Shady Message [H]
-					["g"] = {
+					["groups"] = {
 						q(54447, {	-- A Shady Character
 							["pvp"] = true,
 							["pb"] = true,
-							["g"] = {
+							["groups"] = {
 								i(166244),	-- Token of Shadiness (QI!)
 							},
 						}),

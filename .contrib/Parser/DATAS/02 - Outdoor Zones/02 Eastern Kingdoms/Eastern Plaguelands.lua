@@ -5,8 +5,8 @@ local CRAFTSMANS_WRIT_QUEST = function(id, itemID, cost)
 	return applyclassicphase(PHASE_SIX, q(id, {	-- Craftsman's Writ - Quest
 		["provider"] = { "i", itemID },	-- Craftsman's Writ - Item
 		["timeline"] = { REMOVED_4_0_3 },
-		["repeatable"] = true,
 		["cost"] = { cost },
+		["repeatable"] = true,
 		["lvl"] = 55,
 		-- #if BEFORE 4.0.3
 		["groups"] = {
@@ -1007,9 +1007,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27372, {	-- A Gift For Fiona
 					["qg"] = 45429,	-- Tarenar Sunstrike
-					["description"] = "If you abandon this quest, you can pick it up again at Fiona's Caravan at the zone entrance on the border with Western Plaguelands.",
 					["sourceQuest"] = 27371,	-- What I Do Best
 					["coord"] = { 8.9, 66.5, EASTERN_PLAGUELANDS },
+					["description"] = "If you abandon this quest, you can pick it up again at Fiona's Caravan at the zone entrance on the border with Western Plaguelands.",
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/10 Plaguehound Blood
@@ -1364,10 +1364,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 81.8, 58.1, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22528, 30 } },	-- Dark Iron Scraps
 					-- #endif
-					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
@@ -1437,10 +1437,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 81.4, 58.5, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22526, 30 } },	-- Bone Fragments
 					-- #endif
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 55,
 					-- #if BEFORE 4.0.3
@@ -1460,10 +1460,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 81.4, 58.5, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22526, 30 } },	-- Bone Fragments
 					-- #endif
-					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
@@ -1531,12 +1531,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27453, {	-- Catalysm
 					["qg"] = 11035,	-- Betina Bigglezink
-					["description"] = "If you abandon this quest, you can pick it up again from Betina Bigglezink at Light's Shield Tower.",
 					["sourceQuests"] = {
 						27452,	-- Dark Garb
 						27451,	-- To Kill With Purpose
 					},
 					["coord"] = { 53.2, 54.6, EASTERN_PLAGUELANDS },
+					["description"] = "If you abandon this quest, you can pick it up again from Betina Bigglezink at Light's Shield Tower.",
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/8 Active Liquid Plague Agent
@@ -1560,6 +1560,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(5517, {	-- Chromatic Mantle of the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
+					["altQuests"] = {
+						5517,	-- Chromatic Mantle of the Dawn
+						5521,	-- Chromatic Mantle of the Dawn
+						5524,	-- Chromatic Mantle of the Dawn
+					},
 					["sourceQuest"] = 5513,	-- Mantles of the Dawn
 					["coords"] = {
 						-- #if AFTER WRATH
@@ -1569,13 +1574,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn
-					["cost"] = { { "i", 12844, 25 } },	-- Argent Dawn Valor Token
 					["timeline"] = { REMOVED_4_0_3 },
-					["altQuests"] = {
-						5517,	-- Chromatic Mantle of the Dawn
-						5521,	-- Chromatic Mantle of the Dawn
-						5524,	-- Chromatic Mantle of the Dawn
-					},
+					["cost"] = { { "i", 12844, 25 } },	-- Argent Dawn Valor Token
 					["lvl"] = 55,
 					["groups"] = {
 						i(18182),	-- Chromatic Mantle of the Dawn
@@ -1591,10 +1591,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 81.5, 58.3, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22527, 30 } },	-- Core of Elements
 					-- #endif
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 55,
 					-- #if BEFORE 4.0.3
@@ -1614,8 +1614,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 81.4, 59.8, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
-					["cost"] = { { "i", 12843, 1 } },	-- Corruptor's Scourgestone
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 12843, 1 } },	-- Corruptor's Scourgestone
 					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
@@ -1684,8 +1684,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 81.1, 57.5, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
-					["cost"] = { { "i", 12844, 1 } },	-- Argent Dawn Valor Token
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 12844, 1 } },	-- Argent Dawn Valor Token
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
@@ -1704,10 +1704,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 82.5, 58.6, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22525, 30 } },	-- Crypt Fiend Parts
 					-- #endif
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 55,
 					-- #if BEFORE 4.0.3
@@ -1727,10 +1727,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 82.5, 58.6, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22525, 30 } },	-- Crypt Fiend Parts
 					-- #endif
-					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
@@ -1771,10 +1771,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 81.8, 58.1, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22528, 30 } },	-- Dark Iron Scraps
 					-- #endif
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 55,
 					-- #if BEFORE 4.0.3
@@ -1913,13 +1913,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn
 					["timeline"] = { REMOVED_4_0_3 },
-					["repeatable"] = true,
 					-- #if BEFORE 4.0.3
 					["cost"] = {
 						{ "i", 22524, 27 },	-- Insignia of the Crusade
 						{ "i", 22523, 27 },	-- Insignia of the Dawn
 					},
 					-- #endif
+					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
 						i(22657, {	-- Amulet of the Dawn
@@ -1951,16 +1951,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 81.6, 60.0, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
-					["maxReputation"] = { FACTION_ARGENT_DAWN, HONORED },	-- Argent Dawn
 					["minReputation"] = { FACTION_ARGENT_DAWN, FRIENDLY },	-- Argent Dawn
+					["maxReputation"] = { FACTION_ARGENT_DAWN, HONORED },	-- Argent Dawn
 					["timeline"] = { REMOVED_4_0_3 },
-					["repeatable"] = true,
 					-- #if BEFORE 4.0.3
 					["cost"] = {
 						{ "i", 22524, 110 },	-- Insignia of the Crusade
 						{ "i", 22523, 110 },	-- Insignia of the Dawn
 					},
 					-- #endif
+					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
 						i(22657, {	-- Amulet of the Dawn
@@ -1992,16 +1992,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 81.6, 60.0, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
-					["maxReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn
 					["minReputation"] = { FACTION_ARGENT_DAWN, HONORED },	-- Argent Dawn
+					["maxReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn
 					["timeline"] = { REMOVED_4_0_3 },
-					["repeatable"] = true,
 					-- #if BEFORE 4.0.3
 					["cost"] = {
 						{ "i", 22524, 75 },	-- Insignia of the Crusade
 						{ "i", 22523, 75 },	-- Insignia of the Dawn
 					},
 					-- #endif
+					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
 						i(22657, {	-- Amulet of the Dawn
@@ -2033,16 +2033,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 81.6, 60.0, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
-					["maxReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn
 					["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn
+					["maxReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn
 					["timeline"] = { REMOVED_4_0_3 },
-					["repeatable"] = true,
 					-- #if BEFORE 4.0.3
 					["cost"] = {
 						{ "i", 22524, 45 },	-- Insignia of the Crusade
 						{ "i", 22523, 45 },	-- Insignia of the Dawn
 					},
 					-- #endif
+					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
 						i(22657, {	-- Amulet of the Dawn
@@ -2143,8 +2143,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 53.4, 22, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
-					["maps"] = { DIRE_MAUL, FERALAS, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { DIRE_MAUL, FERALAS, UNGORO_CRATER },
 					["cost"] = {
 						{ "i", 12655, 1 },	-- Enchanted Thorium Bar
 						{ "i", 11562, 5 },	-- Crystal Restore
@@ -2519,12 +2519,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27482, {	-- Into the Flames
 					["qg"] = 45574,	-- Vex'tul (mobileNPC)
-					["description"] = "If you abandon this quest, you can pick it up again from Vex'tul at Eastwall Tower.",
 					["sourceQuest"] = 27481,	-- Out of the Ziggurat
 					["coords"] = {	-- Walks back-and-forth between these two points
 						{ 60.6, 43.3, EASTERN_PLAGUELANDS },
 						{ 61.8, 41.0, EASTERN_PLAGUELANDS },
 					},
+					["description"] = "If you abandon this quest, you can pick it up again from Vex'tul at Eastwall Tower.",
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- Warlord Thresh'jin's Body burned
@@ -2559,8 +2559,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 81.4, 59.8, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
-					["cost"] = { { "i", 12841, 10 } },	-- Invader's Scourgestones
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 12841, 10 } },	-- Invader's Scourgestones
 					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
@@ -2642,9 +2642,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27454, {	-- Just a Drop in the Bucket
 					["qg"] = 11035,	-- Betina Bigglezink
-					["description"] = "If you abandon this quest, you can pick it up again from Betina Bigglezink at Light's Shield Tower.",
 					["sourceQuest"] = 27453,	-- Catalysm
 					["coord"] = { 53.2, 54.6, EASTERN_PLAGUELANDS },
+					["description"] = "If you abandon this quest, you can pick it up again from Betina Bigglezink at Light's Shield Tower.",
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- Disturb Mereldar Plague Cauldron
@@ -2733,8 +2733,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn
-					["cost"] = { { "i", 12844, 10 } },	-- Argent Dawn Valor Token
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 12844, 10 } },	-- Argent Dawn Valor Token
 					["lvl"] = 55,
 				}),
 				q(77243, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Many Corruptor's Scourgestones
@@ -2819,8 +2819,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 81.4, 59.8, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
-					["cost"] = { { "i", 12840, 20 } },	-- Minion's Scourgestone
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 12840, 20 } },	-- Minion's Scourgestone
 					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
@@ -3109,10 +3109,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 81.2, 59.0, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22529, 30 } },	-- Savage Frond
 					-- #endif
-					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
@@ -3135,10 +3135,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 81.2, 59.0, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22529, 30 } },	-- Savage Frond
 					-- #endif
-					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 55,
 					-- #if BEFORE 4.0.3
@@ -3249,7 +3249,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				applyclassicphase(PHASE_SIX, q(9227, {	-- Superior Armaments of Battle - Exalted Amongst the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
-					["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 75.8, 54.0, EASTERN_PLAGUELANDS },
@@ -3257,6 +3256,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 81.6, 60.0, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
+					["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 22524, 6 },	-- Insignia of the Crusade
@@ -3287,8 +3287,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(PHASE_SIX, q(9221, {	-- Superior Armaments of Battle - Friend of the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
-					["maxReputation"] = { FACTION_ARGENT_DAWN, HONORED },	-- Argent Dawn
-					["minReputation"] = { FACTION_ARGENT_DAWN, FRIENDLY },	-- Argent Dawn
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 75.8, 54.0, EASTERN_PLAGUELANDS },
@@ -3296,12 +3294,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 81.6, 60.0, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
+					["minReputation"] = { FACTION_ARGENT_DAWN, FRIENDLY },	-- Argent Dawn
+					["maxReputation"] = { FACTION_ARGENT_DAWN, HONORED },	-- Argent Dawn
 					["timeline"] = { REMOVED_4_0_3 },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 22524, 30 },	-- Insignia of the Crusade
 						{ "i", 22523, 30 },	-- Insignia of the Dawn
 					},
+					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
 						i(22681, {	-- Band of Piety
@@ -3326,8 +3326,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(PHASE_SIX, q(9223, {	-- Superior Armaments of Battle - Honored Amongst the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
-					["maxReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn
-					["minReputation"] = { FACTION_ARGENT_DAWN, HONORED },	-- Argent Dawn
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 75.8, 54.0, EASTERN_PLAGUELANDS },
@@ -3335,12 +3333,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 81.6, 60.0, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
+					["minReputation"] = { FACTION_ARGENT_DAWN, HONORED },	-- Argent Dawn
+					["maxReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn
 					["timeline"] = { REMOVED_4_0_3 },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 22524, 20 },	-- Insignia of the Crusade
 						{ "i", 22523, 20 },	-- Insignia of the Dawn
 					},
+					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
 						i(22681, {	-- Band of Piety
@@ -3365,8 +3365,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(PHASE_SIX, q(9226, {	-- Superior Armaments of Battle - Revered Amongst the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
-					["maxReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn
-					["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 75.8, 54.0, EASTERN_PLAGUELANDS },
@@ -3374,12 +3372,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 81.6, 60.0, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
+					["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn
+					["maxReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn
 					["timeline"] = { REMOVED_4_0_3 },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 22524, 7 },	-- Insignia of the Crusade
 						{ "i", 22523, 7 },	-- Insignia of the Dawn
 					},
+					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
 						i(22681, {	-- Band of Piety
@@ -3761,6 +3761,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2425,	-- Varimathras
 						-- #endif
 					},
+					["sourceQuest"] = 6144,	-- The Call to Command
 					["coords"] = {
 						-- #if AFTER 3.3.0
 						{ 57.8, 92.0, UNDERCITY },
@@ -3768,7 +3769,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 56.2, 92.6, UNDERCITY },
 						-- #endif
 					},
-					["sourceQuest"] = 6144,	-- The Call to Command
 					-- #if AFTER 3.3.0
 					["description"] = "This version of the quest is only available to those that have not yet completed the Wrath Gate.",
 					-- #endif
@@ -3805,10 +3805,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 81.5, 58.3, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 22527, 30 } },	-- Core of Elements
 					-- #endif
-					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
@@ -3857,12 +3857,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 45451 },	-- Argus Highbeacon
 						{ "i", 61362 },	-- Highbeacon's Parcel
 					},
-					["description"] = "Position of Argus Highbeacon depends on the position of Fionas Caravan and the order of quests you completed.",
 					["sourceQuest"] = 27522,	-- Beat it Out of Them
 					["coords"] = {
 						{ 28.3, 25.8, EASTERN_PLAGUELANDS },
 						{ 50.5, 20.2, EASTERN_PLAGUELANDS },
 					},
+					["description"] = "Position of Argus Highbeacon depends on the position of Fionas Caravan and the order of quests you completed.",
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
@@ -3982,8 +3982,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 81.1, 57.5, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
-					["cost"] = { { "i", 12844, 1 } },	-- Argent Dawn Valor Token
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 12844, 1 } },	-- Argent Dawn Valor Token
 					["lvl"] = 55,
 					["groups"] = {
 						i(22568, {	-- Sealed Craftsman's Writ
@@ -4299,7 +4299,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				applyclassicphase(PHASE_SIX, q(9165, {	-- Writ of Safe Passage
 					["qg"] = 16226,	-- Guard Didier <Brotherhood of the Light>
-					["description"] = "Twice per day, Guard Didier starts a caravan westward. Simply protect him and the mules, but if any of them die, it's over. After the caravan arrives at its destination, he will offer this quest.",
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 74.4, 52.2, EASTERN_PLAGUELANDS },
@@ -4307,6 +4306,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 80.0, 58.0, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
+					["description"] = "Twice per day, Guard Didier starts a caravan westward. Simply protect him and the mules, but if any of them die, it's over. After the caravan arrives at its destination, he will offer this quest.",
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 55,
@@ -4677,7 +4677,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				o(421153, {	-- Carved Eye
 					["coord"] = { 28.6, 13.4, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_10_2_5 },
-					["g"] = {
+					["groups"] = {
 						i(212993),	-- Grimoire of the Plagued Observer (CI!)
 					},
 				}),
@@ -4700,7 +4700,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 39.6, 92.5, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
-					["g"] = { i(12886), },	-- Pamela's Doll's Head (QI!)
+					["groups"] = { i(12886), },	-- Pamela's Doll's Head (QI!)
 				}),
 				o(176142, {	-- Pamela's Doll's Left Side
 					["sourceQuests"] = {
@@ -4721,7 +4721,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 39.6, 92.7, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
-					["g"] = { i(12887), },	-- Pamela's Doll's Left Side (QI!)
+					["groups"] = { i(12887), },	-- Pamela's Doll's Left Side (QI!)
 				}),
 				o(176143, {	-- Pamela's Doll's Right Side
 					["sourceQuests"] = {
@@ -4742,7 +4742,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 39.6, 90.0, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
-					["g"] = { i(12888), },	-- Pamela's Doll's Right Side (QI!)
+					["groups"] = { i(12888), },	-- Pamela's Doll's Right Side (QI!)
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, i(226418, {	-- Rune of Holy Specialization

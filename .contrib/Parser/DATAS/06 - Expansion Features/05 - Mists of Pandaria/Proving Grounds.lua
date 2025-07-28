@@ -11,7 +11,7 @@ PROVING_GROUNDS = createHeader({
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, {
 	n(PROVING_GROUNDS, {
 		["maps"] = { 480 },	-- Proving Grounds
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(9572),	-- Proving Yourself: Bronze Damage
 				ach(9573),	-- Proving Yourself: Silver Damage

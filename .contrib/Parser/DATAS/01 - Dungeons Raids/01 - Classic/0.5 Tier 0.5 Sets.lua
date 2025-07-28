@@ -542,12 +542,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["maps"] = { WINTERSPRING, SCHOLOMANCE, STRATHOLME },
-					["classes"] = { PALADIN },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 16722, 1 },	-- Lightforge Bracers
 						{ "g", 200000 },	-- 20g
 					},
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/15 Winterspring Blood Sample
@@ -570,13 +570,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						LBRS_HALYCONS_LAIR,
 						LBRS_CHAMBER_OF_BATTLE,
 					},
-					["classes"] = { PALADIN },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 16725, 1 },	-- Lightforge Boots
 						{ "i", 16728, 1 },	-- Lightforge Legplates
 						{ "i", 16729, 1 },	-- Lightforge Spaulders
 					},
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
 						i(22087),	-- Soulforge Boots
@@ -589,12 +589,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["sourceQuest"] = 8977,	-- Return to Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["maps"] = { BLACKROCK_DEPTHS, STRATHOLME },
-					["classes"] = { PALADIN },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 16723, 1 },	-- Lightforge Belt
 						{ "i", 16724, 1 },	-- Lightforge Gauntlets
 					},
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
 						i(22086),	-- Soulforge Belt
@@ -615,12 +615,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						LBRS_HALYCONS_LAIR,
 						LBRS_CHAMBER_OF_BATTLE,
 					},
-					["classes"] = { PALADIN },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 16727, 1 },	-- Lightforge Helm
 						{ "i", 16726, 1 },	-- Lightforge Breastplate
 					},
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
 						i(22091),	-- Soulforge Helm
@@ -1035,12 +1035,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["maps"] = { SILITHUS, SCHOLOMANCE, STRATHOLME },
-					["classes"] = { SHAMAN },
-					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 16671, 1 },	-- Bindings of Elements
 						{ "g", 200000 },	-- 20g
 					},
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/15 Silithus Venom Sample
@@ -1070,13 +1070,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						LBRS_HALYCONS_LAIR,
 						LBRS_CHAMBER_OF_BATTLE,
 					},
-					["classes"] = { SHAMAN },
-					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 16670, 1 },	-- Boots of Elements
 						{ "i", 16668, 1 },	-- Kilt of Elements
 						{ "i", 16669, 1 },	-- Pauldrons of Elements
 					},
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
 						i(22096),	-- Boots of The Five Thunders
@@ -1097,12 +1097,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						LBRS_HALYCONS_LAIR,
 						LBRS_CHAMBER_OF_BATTLE,
 					},
-					["classes"] = { SHAMAN },
-					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 16673, 1 },	-- Cord of Elements
 						{ "i", 16672, 1 },	-- Gauntlets of Elements
 					},
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
 						i(22098),	-- Cord of The Five Thunders
@@ -1123,12 +1123,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						LBRS_HALYCONS_LAIR,
 						LBRS_CHAMBER_OF_BATTLE,
 					},
-					["classes"] = { SHAMAN },
-					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 16667, 1 },	-- Coif of Elements
 						{ "i", 16666, 1 },	-- Vest of Elements
 					},
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
 						i(22097),	-- Coif of The Five Thunders
@@ -1555,10 +1555,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8961,	-- Three Kings of Flame
 					["maps"] = { BLACKROCK_MOUNTAIN, SILITHUS },
-					["classes"] = { WARRIOR, MAGE },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 					},
+					["classes"] = { WARRIOR, MAGE },
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/1 Druidical Remains
@@ -1577,10 +1577,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8961,	-- Three Kings of Flame
 					["maps"] = { BLACKROCK_MOUNTAIN, WINTERSPRING },
-					["classes"] = { WARLOCK, DRUID },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 					},
+					["classes"] = { WARLOCK, DRUID },
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/1 Starbreeze Village Relic
@@ -1596,10 +1596,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8961,	-- Three Kings of Flame
 					["maps"] = { BLACKROCK_MOUNTAIN, EASTERN_PLAGUELANDS },
-					["classes"] = { HUNTER, ROGUE },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 					},
+					["classes"] = { HUNTER, ROGUE },
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/1 Brilliant Sword of Zealotry
@@ -1612,10 +1612,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8961,	-- Three Kings of Flame
 					["maps"] = { BLACKROCK_MOUNTAIN, HILLSBRAD_FOOTHILLS },
-					["classes"] = { PALADIN, PRIEST, SHAMAN },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 					},
+					["classes"] = { PALADIN, PRIEST, SHAMAN },
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/1 Soul Ashes of the Banished
@@ -1812,21 +1812,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						LBRS_HALYCONS_LAIR,
 						LBRS_CHAMBER_OF_BATTLE,
 					},
-					["cr"] = 16042,	-- Lord Valthalak
 					["cost"] = {
 						{ "i", 22048, 1 },	-- Lord Valthalak's Amulet
 						{ "i", 22056, 1 },	-- Brazier of Beckoning [Lord Valthalak]
 					},
+					["cr"] = 16042,	-- Lord Valthalak
 					["lvl"] = 58,
 				}),
 				q(8985, {	-- More Components of Importance [WARRIOR, ROGUE]
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8970,	-- I See Alcaz Island In Your Future...
 					["maps"] = { BLACKROCK_MOUNTAIN, WINTERSPRING },
-					["classes"] = { WARRIOR, ROGUE },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 					},
+					["classes"] = { WARRIOR, ROGUE },
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/1 Starbreeze Village Relic
@@ -1844,10 +1844,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8970,	-- I See Alcaz Island In Your Future...
 					["maps"] = { BLACKROCK_MOUNTAIN, SILITHUS },
-					["classes"] = { DRUID, PALADIN, SHAMAN },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 					},
+					["classes"] = { DRUID, PALADIN, SHAMAN },
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/1 Druidical Remains
@@ -1868,10 +1868,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8970,	-- I See Alcaz Island In Your Future...
 					["maps"] = { BLACKROCK_MOUNTAIN, EASTERN_PLAGUELANDS },
-					["classes"] = { PRIEST, MAGE },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 					},
+					["classes"] = { PRIEST, MAGE },
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/1 Brilliant Sword of Zealotry
@@ -1886,10 +1886,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8970,	-- I See Alcaz Island In Your Future...
 					["maps"] = { BLACKROCK_MOUNTAIN, HILLSBRAD_FOOTHILLS },
-					["classes"] = { HUNTER, WARLOCK },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 					},
+					["classes"] = { HUNTER, WARLOCK },
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/1 Soul Ashes of the Banished
@@ -2037,11 +2037,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						LBRS_HALYCONS_LAIR,
 						LBRS_CHAMBER_OF_BATTLE,
 					},
-					["classes"] = { WARRIOR, MAGE },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 						{ "i", 22049, 1 },	-- Brazier of Beckoning [Mor Grayhoof]
 					},
+					["classes"] = { WARRIOR, MAGE },
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/1 Mor Grayhoof slain
@@ -2060,11 +2060,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						DIRE_MAUL,
 						239,	-- Warpwood Quarter
 					},
-					["classes"] = { WARLOCK, DRUID },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 						{ "i", 22050, 1 },	-- Brazier of Beckoning [Isalien]
 					},
+					["classes"] = { WARLOCK, DRUID },
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/1 Isalien slain
@@ -2079,11 +2079,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8964,	-- Components of Importance [HUNTER, ROGUE]
 					["maps"] = { BLACKROCK_MOUNTAIN, STRATHOLME },
-					["classes"] = { HUNTER, ROGUE },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 						{ "i", 22051, 1 },	-- Brazier of Beckoning [Jarien and Sothos]
 					},
+					["classes"] = { HUNTER, ROGUE },
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/1 Jarien slain
@@ -2101,11 +2101,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8965,	-- Components of Importance [PALADIN, PRIEST, SHAMAN]
 					["maps"] = { BLACKROCK_MOUNTAIN, SCHOLOMANCE },
-					["classes"] = { PALADIN, PRIEST, SHAMAN },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 						{ "i", 22052, 1 },	-- Brazier of Beckoning [Kormok]
 					},
+					["classes"] = { PALADIN, PRIEST, SHAMAN },
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/1 Kormok slain
@@ -2124,11 +2124,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						DIRE_MAUL,
 						239,	-- Warpwood Quarter
 					},
-					["classes"] = { WARRIOR, ROGUE },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 						{ "i", 22050, 1 },	-- Brazier of Beckoning [Isalien]
 					},
+					["classes"] = { WARRIOR, ROGUE },
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/1 Isalien slain
@@ -2157,11 +2157,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 						LBRS_HALYCONS_LAIR,
 						LBRS_CHAMBER_OF_BATTLE,
 					},
-					["classes"] = { DRUID, PALADIN, SHAMAN },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 						{ "i", 22049, 1 },	-- Brazier of Beckoning [Mor Grayhoof]
 					},
+					["classes"] = { DRUID, PALADIN, SHAMAN },
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/1 Mor Grayhoof slain
@@ -2181,11 +2181,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8987,	-- More Components of Importance [PRIEST, MAGE]
 					["maps"] = { BLACKROCK_MOUNTAIN, STRATHOLME },
-					["classes"] = { PRIEST, MAGE },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 						{ "i", 22051, 1 },	-- Brazier of Beckoning [Jarien & Sothos]
 					},
+					["classes"] = { PRIEST, MAGE },
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/1 Jarien slain
@@ -2208,11 +2208,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8988,	-- More Components of Importance [HUNTER, WARLOCK]
 					["maps"] = { BLACKROCK_MOUNTAIN, SCHOLOMANCE },
-					["classes"] = { HUNTER, WARLOCK },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 						{ "i", 22052, 1 },	-- Brazier of Beckoning [Kormok]
 					},
+					["classes"] = { HUNTER, WARLOCK },
 					["lvl"] = 58,
 					["groups"] = {
 						objective(1, {	-- 0/1 Kormok slain

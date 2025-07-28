@@ -189,8 +189,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 			n(QUESTS, {
 				q(1193, {	-- A Broken Trap
 					["provider"] = { "o", 179485 },	-- Broken Trap
-					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = GORDOK_COMMONS_MAPS,
 					-- #if BEFORE 4.0.3
 					["description"] = "Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",
 					["cost"] = {
@@ -198,6 +196,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "i", 3829, 1 },	-- Frost Oil
 					},
 					-- #endif
+					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = GORDOK_COMMONS_MAPS,
 					["repeatable"] = true,
 					["lvl"] = lvlsquish(56, 56, 15),
 				}),
@@ -319,7 +319,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
-					["group"] = {
+					["groups"] = {
 						ach(2357, {	-- Dreadsteed of Xoroth
 							["sourceQuest"] = 7631,	-- Dreadsteed of Xoroth
 							["timeline"] = { REMOVED_4_0_3 },
@@ -359,12 +359,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						-- #ENDIF
 						{ "n", 14368 },	-- Lorekeeper Lydros <House of Shen'dralar>
 					},
-					["requireSkill"] =
-						-- #if AFTER TBC
-						BLACKSMITHING,
-						-- #else
-						9788,	-- Armorsmith
-						-- #endif
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = {
 						236,	-- Capital Gardens
 						BLACKROCK_SPIRE,
@@ -375,11 +370,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						LBRS_HALYCONS_LAIR,
 						LBRS_CHAMBER_OF_BATTLE,
 					},
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 18779, 1 },	-- Bottom Half of Advanced Armorsmithing: Volume I
 						{ "i", 18780, 1 },	-- Top Half of Advanced Armorsmithing: Volume I
 					},
+					["requireSkill"] =
+						-- #if AFTER TBC
+						BLACKSMITHING,
+						-- #else
+						9788,	-- Armorsmith
+						-- #endif
 					["groups"] = {
 						i(12727, {	-- Plans: Enchanted Thorium Breastplate (RECIPE!)
 							["timeline"] = { REMOVED_4_0_3 },
@@ -393,21 +393,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						-- #ENDIF
 						{ "n", 14368 },	-- Lorekeeper Lydros <House of Shen'dralar>
 					},
+					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = {
+						236,	-- Capital Gardens
+						STRATHOLME, SCHOLOMANCE
+					},
+					["cost"] = {
+						{ "i", 18781, 1 },	-- Bottom Half of Advanced Armorsmithing: Volume II
+						{ "i", 18782, 1 },	-- Top Half of Advanced Armorsmithing: Volume II
+					},
 					["requireSkill"] =
 						-- #if AFTER TBC
 						BLACKSMITHING,
 						-- #else
 						9788,	-- Armorsmith
 						-- #endif
-					["maps"] = {
-						236,	-- Capital Gardens
-						STRATHOLME, SCHOLOMANCE
-					},
-					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {
-						{ "i", 18781, 1 },	-- Bottom Half of Advanced Armorsmithing: Volume II
-						{ "i", 18782, 1 },	-- Top Half of Advanced Armorsmithing: Volume II
-					},
 					["lvl"] = 50,
 					["groups"] = {
 						i(12726, {	-- Plans: Enchanted Thorium Leggings (RECIPE!)
@@ -422,12 +422,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						-- #endif
 						{ "n", 14368 },	-- Lorekeeper Lydros <House of Shen'dralar>
 					},
-					["requireSkill"] =
-						-- #if AFTER TBC
-						BLACKSMITHING,
-						-- #else
-						9788,	-- Armorsmith
-						-- #endif
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = merge(CAPITAL_GARDENS_MAPS, {
 						BLACKROCK_SPIRE,
 						LBRS_TAZZALOR,
@@ -438,11 +433,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						LBRS_CHAMBER_OF_BATTLE,
 						STRATHOLME
 					}),
-					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 18783, 1 },	-- Bottom Half of Advanced Armorsmithing: Volume III
 						{ "i", 18784, 1 },	-- Top Half of Advanced Armorsmithing: Volume III
 					},
+					["requireSkill"] =
+						-- #if AFTER TBC
+						BLACKSMITHING,
+						-- #else
+						9788,	-- Armorsmith
+						-- #endif
 					["lvl"] = 50,
 					["groups"] = {
 						i(12725, {	-- Plans: Enchanted Thorium Helm (RECIPE!)
@@ -656,6 +656,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						7481,	-- Elven Legends
 						7482,	-- Elven Legends
 					},
+					["maxReputation"] = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["cost"] = {
@@ -664,7 +665,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "i", 14344, 4 },	-- Large Brilliant Shard
 						{ "i", 12753, 2 },	-- Skin of Shadow
 					},
-					["maxReputation"] = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
 					["repeatable"] = true,
 					["lvl"] = 57,
 					["groups"] = {
@@ -679,6 +679,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						7481,	-- Elven Legends
 						7482,	-- Elven Legends
 					},
+					["maxReputation"] = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["cost"] = {
@@ -687,7 +688,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "i", 14344, 2 },	-- Large Brilliant Shard
 						{ "i", 12735, 1 },	-- Frayed Abomination Stitching
 					},
-					["maxReputation"] = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
 					["repeatable"] = true,
 					["lvl"] = 57,
 					["groups"] = {
@@ -702,6 +702,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						7481,	-- Elven Legends
 						7482,	-- Elven Legends
 					},
+					["maxReputation"] = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["cost"] = {
@@ -710,7 +711,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "i", 14344, 2 },	-- Large Brilliant Shard
 						{ "i", 12938, 2 },	-- Blood of Heroes
 					},
-					["maxReputation"] = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
 					["repeatable"] = true,
 					["lvl"] = 57,
 					["groups"] = {
@@ -900,9 +900,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(27119, {	-- The Gordok Ogre Suit
 					["qg"] = 14338,	-- Knot Thimblejack
-					["cost"] = { { "i", 18240, 1 } },	-- Ogre Tannin
-					["maps"] = GORDOK_COMMONS_MAPS,
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = GORDOK_COMMONS_MAPS,
+					["cost"] = { { "i", 18240, 1 } },	-- Ogre Tannin
 					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
 						i(18258),	-- Gordok Ogre Suit
@@ -911,9 +911,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(27120, {	-- The Gordok Ogre Suit
 					["qg"] = 14338,	-- Knot Thimblejack
 					["sourceQuest"] = 27119,	-- The Gordok Ogre Suit
-					["cost"] = { { "i", 18240, 1 } },	-- Ogre Tannin
-					["maps"] = GORDOK_COMMONS_MAPS,
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = GORDOK_COMMONS_MAPS,
+					["cost"] = { { "i", 18240, 1 } },	-- Ogre Tannin
 					["repeatable"] = true,
 					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
@@ -1011,8 +1011,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(7461, {	-- The Madness Within
 					["qg"] = 14358,	-- Shen'dralar Ancient
-					["maps"] = CAPITAL_GARDENS_MAPS,
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["lvl"] = 56,
 					["groups"] = {
 						objective(1, {	-- 0/1 Immol'thar slain
@@ -1025,8 +1025,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(27110, {	-- The Madness Within
 					["qg"] = 14358,	-- Shen'dralar Ancient
-					["maps"] = CAPITAL_GARDENS_MAPS,
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["lvl"] = lvlsquish(36, 36, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Immol'thar slain
@@ -1039,8 +1039,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				q(27113, {	-- The Shen'dralar Ancient
 					["qg"] = 44991,	-- Estulan
-					["maps"] = CAPITAL_GARDENS_MAPS,
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["lvl"] = lvlsquish(39, 39, 15),
 				}),
 				q(7877, {	-- The Treasure of the Shen'dralar
@@ -1049,8 +1049,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "o", 179517 },	-- Treasure of the Shen'dralar
 					},
 					["sourceQuest"] = 7461,	-- The Madness Within
-					["maps"] = CAPITAL_GARDENS_MAPS,
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["lvl"] = 57,
 					["groups"] = {
 						i(18421, {	-- Backwood Helm
@@ -1070,8 +1070,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "o", 179517 },	-- Treasure of the Shen'dralar
 					},
 					["sourceQuest"] = 27110,	-- The Madness Within
-					["maps"] = CAPITAL_GARDENS_MAPS,
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = CAPITAL_GARDENS_MAPS,
 					["lvl"] = lvlsquish(39, 39, 15),
 					["groups"] = {
 						i(65949),	-- Dire Maul
@@ -1083,8 +1083,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(7703, {	-- Unfinished Gordok Business
 					["qg"] = 14325,	-- Captain Kromcrush
 					["description"] = "Kill |cFFFFD700King Gordok|r, and then return to the courtyard.",
-					["maps"] = merge(WARPWOOD_QUARTER_MAPS, GORDOK_COMMONS_MAPS, CAPITAL_GARDENS_MAPS),
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = merge(WARPWOOD_QUARTER_MAPS, GORDOK_COMMONS_MAPS, CAPITAL_GARDENS_MAPS),
 					["lvl"] = 60,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
@@ -1101,8 +1101,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(27124, {	-- Unfinished Gordok Business
 					["qg"] = 14325,	-- Captain Kromcrush
 					["description"] = "Kill |cFFFFD700King Gordok|r, and then return to the courtyard.",
-					["maps"] = GORDOK_COMMONS_MAPS,
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = GORDOK_COMMONS_MAPS,
 					["lvl"] = lvlsquish(42, 42, 15),
 					["groups"] = {
 						i(18367),	-- Gordok's Gauntlets

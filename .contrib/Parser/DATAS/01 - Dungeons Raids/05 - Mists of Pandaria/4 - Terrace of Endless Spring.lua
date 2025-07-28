@@ -127,18 +127,18 @@ local CUTTING_EDGE_ONUPDATE = [[function(t)
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		t.rwp = nil;
 	else
-		t.u = ]] .. MOP_PHASE_LANDFALL .. [[;
+		t.u = ]] .. MOP_PHASE_ONE .. [[;
 		t.rwp = 50200;
 	end
 end]];
 -- #endif
 root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
-	applyclassicphase(MOP_PHASE_LANDFALL, inst(320, {	-- Terrace of Endless Spring
+	applyclassicphase(MOP_PHASE_ONE, inst(320, {	-- Terrace of Endless Spring
 		["coord"] = { 48.4, 61.4, THE_VEILED_STAIR },
 		["maps"] = { 456 },	-- Terrace of Endless Spring
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(11757, {	-- Sha of Fabulous (Heart of Fear and Terrace of Endless Spring)
 					["timeline"] = { ADDED_7_2_0 },
@@ -1053,7 +1053,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(742, {	-- Tsulong
 						["crs"] = { 62442 },	-- Tsulong
-						["g"] = {
+						["groups"] = {
 							i(167051, {	-- Azure Windseeker (PET!)
 								["timeline"] = { ADDED_8_1_5 },
 							}),
@@ -1061,7 +1061,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(729, {	-- Lei Shi
 						["crs"] = { 62983 },	-- Lei Shi
-						["g"] = {
+						["groups"] = {
 							i(167052, {	-- Spirit of the Spring (PET!)
 								["timeline"] = { ADDED_8_1_5 },
 							}),
@@ -1069,7 +1069,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(709, {	-- Sha of Fear
 						["crs"] = { 60999 },	-- Sha of Fear
-						["g"] = {
+						["groups"] = {
 							i(87210),	-- Chimera of Fear
 							i(138805, {	-- Illusion: Jade Spirit (ILLUSION!)
 								["timeline"] = { ADDED_7_0_3 },
@@ -1088,14 +1088,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
 				-- #endif
 				["ignoreBonus"] = true,
-				["g"] = {
+				["groups"] = {
 					i(89808, {	-- Dividends of the Everlasting Spring (Original)
 						["description"] = "Contains 28g 50s.\n\nThis item and other consolation items like it created many riots on the WoW Forums and continued to do so until they added the updated bags in 5.2.0.",
-						["timeline"] = { ADDED_5_1_0, REMOVED_5_2_0 },
+						["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
 					}),
 					i(89857, {	-- Dividends of the Everlasting Spring (Original)
 						["description"] = "Contains 28g 50s.\n\nThis item and other consolation items like it created many riots on the WoW Forums and continued to do so until they added the updated bags in 5.2.0.",
-						["timeline"] = { ADDED_5_1_0, REMOVED_5_2_0 },
+						["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
 					}),
 					i(95617, {	-- Dividends of the Everlasting Spring
 						["description"] = "This item is awarded as a consolation prize to players who do not win loot after defeating a boss encounter in the Raid Finder mode of Heart of Fear.",
@@ -1109,7 +1109,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 								60585,	-- Elder Regail
 								60583,	-- Protector Kaolan
 							},
-							["g"] = {
+							["groups"] = {
 								i(86878),	-- Asani's Uncleansed Sandals
 								i(86868),	-- Bracers of Defiled Earth
 								i(86876),	-- Casque of Expelled Corruption
@@ -1128,7 +1128,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						}),
 						e(742, {	-- Tsulong
 							["crs"] = { 62442 },	-- Tsulong
-							["g"] = {
+							["groups"] = {
 								i(86884),	-- Belt of Embodied Terror
 								i(86900),	-- Binder's Chain of Unending Summer
 								i(86883),	-- Daybreak Drape
@@ -1157,7 +1157,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						}),
 						e(729, {	-- Lei Shi
 							["crs"] = { 62983 },	-- Lei Shi
-							["g"] = {
+							["groups"] = {
 								i(89277, {	-- Shoulders of the Shadowy Conqueror
 									-- #if AFTER 7.2.0
 									["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
@@ -1186,7 +1186,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						}),
 						e(709, {	-- Sha of Fear
 							["crs"] = { 60999 },	-- Sha of Fear
-							["g"] = {
+							["groups"] = {
 								i(89274, {	-- Helm of the Shadowy Conqueror
 									-- #if AFTER 7.2.0
 									["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
@@ -1214,7 +1214,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						60585,	-- Elder Regail
 						60583,	-- Protector Kaolan
 					},
-					["g"] = {
+					["groups"] = {
 						ach(6717, {	-- Power Overwhelming
 							crit(19624, {	-- Protector Kaolan defeated last
 								["cr"] = 60583,	-- Protector Kaolan
@@ -1230,22 +1230,22 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(742, {	-- Tsulong
 					["crs"] = { 62442 },	-- Tsulong
-					["g"] = {
+					["groups"] = {
 						ach(6933),	-- Who's Got Two Green Thumbs?
 					},
 				}),
 				e(729, {	-- Lei Shi
 					["crs"] = { 62983 },	-- Lei Shi
-					["g"] = {
+					["groups"] = {
 						ach(6824),	-- Face Clutchers
 					},
 				}),
 				e(709, {	-- Sha of Fear
 					["crs"] = { 60999 },	-- Sha of Fear
-					["g"] = {
+					["groups"] = {
 						ach(6825),	-- The Mind-Killer
 						ach(8248, {	-- Ahead of the Curve: Sha of Fear
-							["timeline"] = { ADDED_5_1_0, REMOVED_5_2_0 },
+							["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
 							-- #if MOP
 							["OnUpdate"] = CUTTING_EDGE_ONUPDATE;
 							-- #endif
@@ -1255,17 +1255,17 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
 				["ignoreBonus"] = true,
-				["g"] = {
+				["groups"] = {
 					e(683, {	-- Protectors of the Endless
 						["crs"] = {
 							60583,	-- Protector Kaolan
 							60586,	-- Elder Asani
 							60585,	-- Elder Regail
 						},
-						["g"] = {
+						["groups"] = {
 							n(QUALITY_ELITE, {
 								["description"] = "You must kill Protector Kaolan last!",
-								["g"] = {
+								["groups"] = {
 									i(90528),	-- Asani's Uncleansed Sandals (Elite)
 									i(90520),	-- Bracers of Defiled Earth (Elite)
 									i(90530),	-- Casque of Expelled Corruption (Elite)
@@ -1300,7 +1300,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(742, {	-- Tsulong
 						["crs"] = { 62442 },	-- Tsulong
-						["g"] = {
+						["groups"] = {
 							i(86326),	-- Belt of Embodied Terror
 							i(86342),	-- Binder's Chain of Unending Summer
 							i(86325),	-- Daybreak Drape
@@ -1329,7 +1329,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(729, {	-- Lei Shi
 						["crs"] = { 62983 },	-- Lei Shi
-						["g"] = {
+						["groups"] = {
 							i(89246, {	-- Shoulders of the Shadowy Conqueror
 								-- #if AFTER 7.2.0
 								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
@@ -1358,7 +1358,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(709, {	-- Sha of Fear
 						["crs"] = { 60999 },	-- Sha of Fear
-						["g"] = {
+						["groups"] = {
 							i(89235, {	-- Helm of the Shadowy Conqueror
 								-- #if AFTER 7.2.0
 								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
@@ -1379,18 +1379,18 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.HEROIC, {
 				["ignoreBonus"] = true,
-				["g"] = {
+				["groups"] = {
 					e(683, {	-- Protectors of the Endless
 						["crs"] = {
 							60583,	-- Protector Kaolan
 							60586,	-- Elder Asani
 							60585,	-- Elder Regail
 						},
-						["g"] = {
+						["groups"] = {
 							ach(6731),	-- Heroic: Protectors of the Endless
 							n(QUALITY_ELITE, {
 								["description"] = "You must kill Protector Kaolan last!",
-								["g"] = {
+								["groups"] = {
 									i(90514),	-- Asani's Uncleansed Sandals (Elite)
 									i(90506),	-- Bracers of Defiled Earth (Elite)
 									i(90516),	-- Casque of Expelled Corruption (Elite)
@@ -1425,7 +1425,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(742, {	-- Tsulong
 						["crs"] = { 62442 },	-- Tsulong
-						["g"] = {
+						["groups"] = {
 							ach(6732),	-- Heroic: Tsulong
 							i(87161),	-- Belt of Embodied Terror
 							i(87183),	-- Binder's Chain of Unending Summer
@@ -1455,7 +1455,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(729, {	-- Lei Shi
 						["crs"] = { 62983 },	-- Lei Shi
-						["g"] = {
+						["groups"] = {
 							ach(6733),	-- Heroic: Lei Shi
 							i(89262, {	-- Shoulders of the Shadowy Conqueror
 								-- #if AFTER 7.2.0
@@ -1485,19 +1485,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(709, {	-- Sha of Fear
 						["crs"] = { 60999 },	-- Sha of Fear
-						["g"] = {
+						["groups"] = {
 							ach(6734, {	-- Heroic: Sha of Fear
 								title(198),	-- the Fearless
 							}),
 							ach(7487, {	-- Cutting Edge: Sha of Fear
-								["timeline"] = { ADDED_5_1_0, REMOVED_5_2_0 },
+								["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
 								-- #if MOP
 								["OnUpdate"] = CUTTING_EDGE_ONUPDATE;
 								-- #endif
 							}),
 							ach(6676),	-- Heroic: Sha of Fear Guild Run
 							ach(6678, {	-- Realm First! Sha of Fear
-								["timeline"] = { ADDED_5_1_0, REMOVED_5_2_0 },
+								["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
 								-- #if MOP
 								["OnUpdate"] = CUTTING_EDGE_ONUPDATE;
 								-- #endif

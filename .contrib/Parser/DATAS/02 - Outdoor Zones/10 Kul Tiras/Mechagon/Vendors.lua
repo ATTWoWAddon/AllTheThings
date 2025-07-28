@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 		n(VENDORS, {
 			n(152321, {	-- Cork Stuttguard
 				["coord"] = { 63.3, 42.9, MECHAGON },
-				["g"] = {
+				["groups"] = {
 					i(167787, {	-- Blueprint: Mechanocat Laser Pointer
 						["cost"] = 5000000,	-- 500g
 					}),
@@ -20,7 +20,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			}),
 			n(151462, {	-- Danielle Anglers
 				["coord"] = { 37.20, 47.16, MECHAGON },
-				["g"] = {
+				["groups"] = {
 					i(167698, {	-- Secret Fish Goggles
 						["sourceAchievement"] = 13489,	-- Secret Fish of Mechagon
 						-- #if AFTER 11.1.5
@@ -34,7 +34,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			}),
 			n(150716, {	-- Stolen Royal Vendorbot
 				["coord"] = { 73.7, 36.9, MECHAGON },
-				["g"] = bubbleDownClassicRep(FACTION_RUSTBOLT_RESISTANCE, {
+				["groups"] = bubbleDownClassicRep(FACTION_RUSTBOLT_RESISTANCE, {
 					{		-- Neutral
 					}, {	-- Friendly
 						i(167693),	-- Neural Autonomy

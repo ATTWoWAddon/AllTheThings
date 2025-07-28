@@ -76,11 +76,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(31976, {	-- The Returning Champion (A)
 					["qg"] = 66522,	-- Lydia Accoste
+					["altQuests"] = { 31975 },	-- The Returning Champion (Winterspring)
 					["sourceQuests"] = {
 						31915,	-- Grand Master Lydia Accoste
 						31897,	-- Grand Master Trixxy
 					},
-					["altQuests"] = { 31975 },	-- The Returning Champion (Winterspring)
 					["coord"] = { 40.0, 76.4, DEADWIND_PASS },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { STORMWIND_CITY },
@@ -89,11 +89,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(31980, {	-- The Returning Champion (H)
 					["qg"] = 66522,	-- Lydia Accoste
+					["altQuests"] = { 31977 },	-- The Returning Champion (Winterspring)
 					["sourceQuests"] = {
 						31915,	-- Grand Master Lydia Accoste
 						31897,	-- Grand Master Trixxy
 					},
-					["altQuests"] = { 31977 },	-- The Returning Champion (Winterspring)
 					["coord"] = { 40.0, 76.4, DEADWIND_PASS },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { ORGRIMMAR },
@@ -275,7 +275,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Behind the wooden door",
 					["coord"] = { 43.9, 72.8, DEADWIND_PASS },
 					["timeline"] = { ADDED_10_2_5 },
-					["g"] = {
+					["groups"] = {
 						i(212989),	-- Grimoire of the Mana-Gorged Observer (CI!)
 					},
 				}),

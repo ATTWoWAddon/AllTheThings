@@ -4,7 +4,7 @@
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	n(COVENANT_SANCTUMS, {
 		["description"] = "These rewards are shared across Covenants.",
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(14835),		-- A Resolute Bond
 				ach(14636),		-- Adventurer in Chief
@@ -91,7 +91,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					172400,	-- Command Table [Night Fae]
 					166143,	-- Command Table [Venthyr]
 				},
-				["g"] = {
+				["groups"] = {
 					i(178040, {	-- Condensed Stygia
 						currency(1767),	-- Stygia
 					}),
@@ -213,7 +213,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						-- 170044,	-- Nandor [Venthyr]
 						-- 170039,	-- Popo [Kyrian]
 					},
-					["g"] = {
+					["groups"] = {
 						i(184507),	-- Lucy (PET!)
 						i(184505),	-- "Adorable Ascended" Costume
 						i(184506),	-- "Flying Faerie" Costume
@@ -237,7 +237,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						{"i", 181556},	-- Tribute of the Court
 						{"i", 181557},	-- Favor of the Court
 					},
-					["g"] = {
+					["groups"] = {
 						i(187880),	-- Goat Soul
 						i(187862),	-- Snake Soul
 					},
@@ -250,7 +250,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						{"i", 181475},	-- Bounty of the Grovewardens
 						{"i", 181476},	-- Tribute of the Wild Hunt
 					},
-					["g"] = {
+					["groups"] = {
 						i(187840, {	-- Sparkle Wings (TOY!)
 							["timeline"] = { ADDED_9_1_5 },
 						}),
@@ -264,14 +264,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						{"i", 181732},	-- Tribute of the Ambitious
 						{"i", 181733},	-- Tribute of the Duty-Bound
 					},
-					["g"] = {
+					["groups"] = {
 						i(187913, {	-- Apprentice Slimemancer's Boots (TOY!)
 							["timeline"] = { ADDED_9_1_5 },
 						}),
 						i(184159),	-- Necroray Egg
 						i(184158, {	-- Oozing Necroray Egg
 							["provider"] = { "i", 184159 },	-- Necroray Egg
-							["g"] = {
+							["groups"] = {
 								i(184160),	-- Bulbous Necroray (MOUNT!)
 								i(184161),	-- Infested Necroray (MOUNT!)
 								i(184162),	-- Pestilent Necroray (MOUNT!)
@@ -284,7 +284,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						{"i", 181372},	-- Tribute of the Ascended
 						{"i", 181741},	-- Tribute of the Paragon
 					},
-					["g"] = {
+					["groups"] = {
 						i(187419, {	-- Steward's First Feather (TOY!)
 							["timeline"] = { ADDED_9_1_5 },
 						}),
@@ -295,7 +295,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						{"i", 181556},	-- Tribute of the Court
 						{"i", 181557},	-- Favor of the Court
 					},
-					["g"] = {
+					["groups"] = {
 						i(180248),	-- Ambassador's Reserve (Ember Court Bonus Time)
 						i(176850),	-- Blank Invitation
 						i(187512, {	-- Tome of Small Sins (TOY!)

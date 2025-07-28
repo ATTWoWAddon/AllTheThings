@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
-					["g"] = {
+					["groups"] = {
 						i(155661),	-- Pristine Kubiline Shards (QI!)
 						i(155830),	-- Runic Core (QI!)
 					},

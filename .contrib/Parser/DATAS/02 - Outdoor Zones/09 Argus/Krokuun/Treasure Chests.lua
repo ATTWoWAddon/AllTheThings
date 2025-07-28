@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					{"find","headerID",SPECIAL},	-- get Special
 					{"find","filterID",PLATE},{"pop"},		-- get Plate
 				},
-				["g"] = appendAllGroups({	-- Shared Rewards
+				["groups"] = appendAllGroups({	-- Shared Rewards
 					i(152857),	-- Chipped Man'ari Blade
 				},sharedData({	-- Common Objects
 					["isDaily"] = true,

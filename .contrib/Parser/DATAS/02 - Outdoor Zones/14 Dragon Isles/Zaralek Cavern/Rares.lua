@@ -43,7 +43,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					204214,	-- Monstrous Magmaclaw Snapper
 					202318,	-- Response Team Watcher
 				},
-				["g"] = {
+				["groups"] = {
 					n(BACK, {
 						i(205056),	-- Zaralek Surveyor's Cloak
 						i(205055),	-- Zaralek Surveyor's Drape
@@ -142,7 +142,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(203515, {	-- Alcanon
 				["coord"] = { 56.4, 73.3, ZARALEK_CAVERN },
 				["questID"] = 75284,	-- Old QuestID: 75550
-				["g"] = {
+				["groups"] = {
 					bo(75285, true),
 					i(203307),	-- Winding Slitherdrake: Plated Brow (MM!)
 					i(205318),	-- Guardian Golem's Legplates
@@ -152,7 +152,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(203468, {	-- Aquifon
 				["coord"] = { 47.8, 74.8, ZARALEK_CAVERN },
 				["questID"] = 75270,	-- Old QuestID: 75547
-				["g"] = {
+				["groups"] = {
 					bo(75271, true),
 					i(205154),	-- Aquapo (PET!)
 					i(205306),	-- Aquiferous Raiment
@@ -162,11 +162,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(203621, {	-- Brullo the Stronk
 				["coord"] = { 41.4, 86.1, ZARALEK_CAVERN },
 				["questID"] = 75325,
-				["g"] = {
+				["groups"] = {
 					bo(75326, true),
 					o(398828, {	-- Chest of Massive Gains
 						["coord"] = { 41.5, 86.2, ZARALEK_CAVERN },
-						["g"] = {
+						["groups"] = {
 							i(205114, {	-- Brul (PET!)
 								["description"] = "After defeating Brullo, eat Rocks on the Rocks to transform then open the chest.",
 								["cost"] = { { "i", 204845, 1 } },	-- 1x Rocks on the Rocks
@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(204093, {	-- Colossian
 				["coord"] = { 48.2, 24.4, ZARALEK_CAVERN },
 				["questID"] = 75475,	-- Old QuestID: 75572
-				["g"] = {
+				["groups"] = {
 					bo(75476, true),
 					i(197364),	-- Renewed Proto-Drake: Short Spiked Crest (MM!)
 					i(205315),	-- Colossian Cuirass
@@ -192,7 +192,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(203646, {	-- Dinn
 				["coord"] = { 29.2, 50.7, ZARALEK_CAVERN },
 				["questID"] = 75352,	-- Old QuestID: 75564
-				["g"] = {
+				["groups"] = {
 					bo(75353, true),
 					i(205419),	-- Dinn's Drum (TOY!)
 					i(203320),	-- Winding Slitherdrake: Ears (MM!)
@@ -203,7 +203,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(203664, {	-- Emberdusk
 				["coord"] = { 32.1, 51.2, ZARALEK_CAVERN },
 				["questID"] = 75361,	-- Old QuestID: 75567
-				["g"] = {
+				["groups"] = {
 					bo(75364, true),
 					i(203363),	-- Winding Slitherdrake: Large Finned Throat (MM!)
 					i(205293),	-- Emberdusk's Embrace
@@ -213,7 +213,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(203660, {	-- Flowfy
 				["coord"] = { 36.2, 44.7, ZARALEK_CAVERN },
 				["questID"] = 75357,	-- Old QuestID: 75565
-				["g"] = {
+				["groups"] = {
 					bo(75358, true),
 					i(197109),	-- Highland Drake: Spiked Head (MM!)
 					i(205334),	-- Flowfy's Smoldering Chain
@@ -223,7 +223,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(203592, {	-- General Zskorro
 				["coord"] = { 41.7, 18.4, ZARALEK_CAVERN },
 				["questID"] = 75295,	-- Old QuestID: 75552
-				["g"] = {
+				["groups"] = {
 					bo(75296, true),
 					i(203334),	-- Winding Slitherdrake: Curled Horns (MM!)
 					i(205321),	-- Brimstone Bracers
@@ -234,7 +234,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(203477, {	-- Goopal
 				["coord"] = { 68.5, 46.4, ZARALEK_CAVERN },
 				["questID"] = 75273,	-- Old QuestID: 75548
-				["g"] = {
+				["groups"] = {
 					bo(75274, true),
 					i(203309),	-- Winding Slitherdrake: Long Chin Horn (MM!)
 					i(205317),	-- Crystalpod Gauntlets
@@ -244,14 +244,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			-- n(203611, {	-- Hadexia <Ember of Twilight>
 				--["coord"] = { , , ZARALEK_CAVERN },
 				--["questID"] = ,	-- Old QuestID:
-				--["g"] = {
+				--["groups"] = {
 				--	bo(, true),
 				--},
 			-- }),
 			n(203627, {	-- Invohq
 				["coord"] = { 46.0, 33.3, ZARALEK_CAVERN },
 				["questID"] = 75335,	-- Old QuestID: 75558
-				["g"] = {
+				["groups"] = {
 					bo(75336, true),
 					i(205796, {	-- Molten Lava Pack (TOY!)
 					--	["description"] = "This toy is bugged for some accounts and simply does not drop. Nobody knows why.",
@@ -265,7 +265,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(203625, {	-- Karokta
 				["coord"] = { 42.2, 65.9, ZARALEK_CAVERN },
 				["questID"] = 75333,	-- Old QuestID: 75557
-				["g"] = {
+				["groups"] = {
 					bo(75334, true),
 					i(205203),	-- Cobalt Shalewing (MOUNT!)
 					i(205147),	-- Ridged Shalewing	(PET!)
@@ -277,7 +277,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(203466, {	-- Kapraku
 				["coord"] = { 59.3, 39.8, ZARALEK_CAVERN },
 				["questID"] = 75268,	-- Old QuestID: 75546
-				["g"] = {
+				["groups"] = {
 					bo(75269, true),
 					i(205341),	-- Winding Slitherdrake: Heavy Scales (MM!)
 					i(205319),	-- Deepflayer Shoulderguards
@@ -287,7 +287,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(203618, {	-- Klakatak
 				["coord"] = { 53.9, 42.3, ZARALEK_CAVERN },
 				["questID"] = 75321,	-- Old QuestID: 75555
-				["g"] = {
+				["groups"] = {
 					bo(75322, true),
 					i(205686),	-- Clacking Claw
 					i(205308),	-- Clacking Clawguards
@@ -297,7 +297,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(203462, {	-- Kob'rok
 				["coord"] = { 65.0, 55.8, ZARALEK_CAVERN },
 				["questID"] = 75266,	-- Old QuestID: 75545
-				["g"] = {
+				["groups"] = {
 					bo(75267, true),
 					i(205152),	-- Skaarn (PET!)
 					i(197021),	-- Cliffside Wylderdrake: Spiked Club Tail (MM!)
@@ -309,21 +309,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			-- n(203642, {	-- Kronkapace
 				--["coord"] = { , , ZARALEK_CAVERN },
 				--["questID"] = ,	-- Old QuestID:
-				--["g"] = {
+				--["groups"] = {
 				--	bo(, true),
 				--},
 			-- }),
 			-- n(203630, {	-- Lavermix
 				--["coord"] = { , , ZARALEK_CAVERN },
 				--["questID"] = ,	-- Old QuestID:
-				--["g"] = {
+				--["groups"] = {
 				--	bo(, true),
 				--},
 			-- }),
 			n(200111, {	-- Magtembo
 				["coord"] = { 41.1, 37.7, ZARALEK_CAVERN },
 				["questID"] = 75339,	-- Old QuestID: 75561
-				["g"] = {
+				["groups"] = {
 					bo(75340, true),
 					i(203339),	-- Winding Slitherdrake: Impaler Horns (MM!)
 					i(205300),	-- Magma Waders
@@ -333,7 +333,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(203521, {	-- Professor Gastrinax
 				["coord"] = { 55.5, 18.3, ZARALEK_CAVERN },
 				["questID"] = 75291,	-- Old QuestID: 75551
-				["g"] = {
+				["groups"] = {
 					bo(75292, true),
 					i(203331),	-- Winding Slitherdrake: Cluster Horns (MM!)
 					i(205322),	-- Algeth'ar Exile's Frock
@@ -343,14 +343,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			-- n(204096, {	-- Shadowforge Mole Machine
 				--["coord"] = { , , ZARALEK_CAVERN },
 				--["questID"] = ,	-- Old QuestID:
-				--["g"] = {
+				--["groups"] = {
 				--	bo(, true),
 				--},
 			-- }),
 			n(203643, {	-- Skornak
 				["coord"] = { 36.3, 52.9, ZARALEK_CAVERN },
 				["questID"] = 75348,	-- Old QuestID: 75563
-				["g"] = {
+				["groups"] = {
 					bo(75349, true),
 					i(203321),	-- Winding Slitherdrake: Curled Cheek Horn (MM!)
 					i(205301),	-- Hardened Lava Handwraps
@@ -360,7 +360,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(203480, {	-- Spinmarrow
 				["coord"] = { 53.1, 65.0, ZARALEK_CAVERN },
 				["questID"] = 75275,	-- Old QuestID: 75549
-				["g"] = {
+				["groups"] = {
 					bo(75276, true),
 					i(203318),	-- Winding Slitherdrake: Hairy Chest (MM!)
 					i(205326),	-- Crystalweb Chelicera
@@ -371,7 +371,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(203662, {	-- Subterrax
 				["coord"] = { 38.8, 46.5, ZARALEK_CAVERN },
 				["questID"] = 75359,	-- Old QuestID: 75566
-				["g"] = {
+				["groups"] = {
 					bo(75360, true),
 					i(203338),	-- Winding Slitherdrake: Antler Horns (MM!)
 					i(205328),	-- Earthen Emissary's Edge
@@ -382,7 +382,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(203593, {	-- Underlight Queen
 				["coord"] = { 58.2, 69.1, ZARALEK_CAVERN },
 				["questID"] = 75297,	-- Old QuestID: 75553
-				["g"] = {
+				["groups"] = {
 					bo(75298, true),
 					i(205159),	-- Teardrop Moth (PET!)
 					i(205325),	-- Crystal Wing Shield
@@ -393,7 +393,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(201029, {	-- Viridian King
 				["coord"] = { 39.2, 71.0, ZARALEK_CAVERN },
 				["questID"] = 75365,	-- Old QuestID: 75570
-				["g"] = {
+				["groups"] = {
 					bo(75366, true),
 					i(203345),	-- Winding Slitherdrake: Split Jaw Horns (MM!)
 					i(205316),	-- Crystal Stompers

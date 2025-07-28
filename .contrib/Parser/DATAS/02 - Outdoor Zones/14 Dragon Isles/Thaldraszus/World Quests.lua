@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				71232,	-- Renown of the Dragon Isles
 				DF_ACCOUNT_CAMPAIGN_QUEST,
 			},
-			["g"] = sharedData({ ["isWorldQuest"] = true, }, {
+			["groups"] = sharedData({ ["isWorldQuest"] = true, }, {
 
 				-- q(QUEST, {	-- NAME
 					-- ["coord"] = { XX, YY, THALDRASZUS }
@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(71160, {	-- Depth Charge
 					["coord"] = { 49.9, 59.4, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(200561),	-- Deepwater Lure (QI!)
 					},
 				}),
@@ -76,13 +76,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(70111, {	-- Temple Treasures
 					["coord"] = { 51.0, 58.5, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(198443),	-- Titan Temple Relic (QI!)
 					},
 				}),
 				q(70072, {	-- Time-Lost and Found
 					["coord"] = { 58.2, 80.0, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(198597),	-- Time-Lost Possession (QI!)
 						i(198649),	-- Time-Lost Possession (QI!)
 						i(198564),	-- Time-Lost Relic (QI!)

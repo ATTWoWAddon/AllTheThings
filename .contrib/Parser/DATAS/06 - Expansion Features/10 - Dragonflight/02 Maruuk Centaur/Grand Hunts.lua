@@ -123,7 +123,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					n(190907, {	-- Blitztusk
 						["coord"] = { 77.0, 20.6, OHNAHRAN_PLAINS },
 						["questID"] = 73908,
-						["g"] = {
+						["groups"] = {
 							i(200296),	-- Mammoth Tusk Wraps
 						},
 					}),
@@ -138,7 +138,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					n(190161, {	-- Sarana
 						["coord"] = { 85.4, 15.6, OHNAHRAN_PLAINS },
 						["questID"] = 73932,
-						["g"] = {
+						["groups"] = {
 							i(200440),	-- Helm of Feline Instinct
 						},
 					}),
@@ -199,14 +199,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					n(193341, {	-- Angen
 						["coord"] = { 33.2, 72.4, THALDRASZUS },
 						["questID"] = 73906,
-						["g"] = {
+						["groups"] = {
 							i(200128),	-- Zephyr's Razor
 						},
 					}),
 					n(193330, {	-- Galzuda
 						["coord"] = { 36.0, 68.6, THALDRASZUS },
 						["questID"] = 73916,
-						["g"] = {
+						["groups"] = {
 							i(200261),	-- White Chitin Bands
 						},
 					}),
@@ -322,7 +322,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70906, {
 						["name"] = "1st Weekly Grand Hunt",
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(200468, {	-- Grant Hunt Spoils [Epic]
 								i(200290),	-- Bakar Companion (PET!)
 								i(194094),	-- Bakar Companion Color: Black (CI!)
@@ -348,7 +348,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["name"] = "2nd Weekly Grand Hunt",
 						["sourceQuests"] = { 70906 },	-- 1st Weekly Grand Hunt
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(200513, {	-- Grand Hunt Spoils [Rare]
 								i(200290),	-- Bakar Companion (PET!)
 								i(194094),	-- Bakar Companion Color: Black (CI!)
@@ -365,7 +365,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["name"] = "3rd Weekly Grand Hunt",
 						["sourceQuests"] = { 71136 },	-- 2nd Weekly Grand Hunt
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(200515, {	-- Grand Hunt Spoils [Uncommon]
 								i(200290),	-- Bakar Companion (PET!)
 								i(194091),	-- Bakar Companion Color: Golden Brown (CI!)
@@ -380,7 +380,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["name"] = "Repeatable Grand Hunt",
 						["sourceQuests"] = { 71137 },	-- 3rd Weekly Grand Hunt
 						["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(200516, {	-- Grant Hunt Spoils [Common]
 								i(194091),	-- Bakar Companion Color: Golden Brown (CI!)
 								i(193360),	-- Centaur's Trophy Necklace

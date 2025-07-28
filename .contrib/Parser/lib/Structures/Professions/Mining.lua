@@ -144,7 +144,7 @@ MOP_MINING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = {
 }));
 DRAENOR_MINING = applyclassicphase(WOD_PHASE_ONE, i(111349, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	["description"] = "This can drop from any ore gathering node on Draenor.",
-	["g"] = {
+	["groups"] = {
 		r(158754, {	-- Mining (Draenor Master)
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 			-- #if NOT ANYCLASSIC

@@ -858,7 +858,7 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 		if ttType then
 			ttId = ttdata.id;
 			-- Debugging without ATT exclusions
-			-- app.PrintDebug("TT Type",ttType,ttId)
+			-- app.PrintDebug("TT",self:GetName(),ttType,ttId)
 			-- app.PrintTable(ttdata)
 			if IgnoredTypes[ttType] then
 				return true
@@ -872,8 +872,27 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 		-- end
 		-- self:Show();
 
+		-- Does this tooltip have an OnClear attached for ATT?
+		if not self.AllTheThingsOnTooltipClearedHook then
+			local tooltipName = self:GetName();
+			if tooltipName and HookableTooltips[tooltipName] then
+				-- app.PrintDebug("Hooking ClearTooltip",tooltipName)
+				pcall(self.HookScript, self, "OnTooltipCleared", ClearTooltip)
+				-- if pcall(self.HookScript, self, "OnTooltipCleared", ClearTooltip) then
+				-- 	app.PrintDebug("Hooked")
+				-- end
+				self.AllTheThingsOnTooltipClearedHook = true;
+			else
+				app.PrintDebug("Ignoring Tooltip",tooltipName)
+				-- otherwise mark them as ignored so ATT doesn't process them
+				self.AllTheThingsIgnored = true;
+				return
+			end
+		end
+
 		-- Does the tooltip have an owner?
 		local owner = SafeGetOwner(self)
+		-- app.PrintDebug("TT Owner",owner,owner:GetName())
 		if owner then
 			if owner.SpellHighlightTexture	-- Action bars
 			or owner.TrainBook		-- Spellbook spell tooltips
@@ -952,23 +971,6 @@ if TooltipDataProcessor and app.GameBuildVersion > 60000 then
 		end
 		-- self:Show();
 		--]]--
-
-		-- Does this tooltip have an OnClear attached for ATT since it can handle content which ATT will attach to?
-		if self.AllTheThingsProcessing and not self.AllTheThingsOnTooltipClearedHook then
-			local tooltipName = self:GetName();
-			if tooltipName and HookableTooltips[tooltipName] then
-				-- app.PrintDebug("Hooking ClearTooltip",tooltipName)
-				pcall(self.HookScript, self, "OnTooltipCleared", ClearTooltip)
-				-- if pcall(self.HookScript, self, "OnTooltipCleared", ClearTooltip) then
-				-- 	app.PrintDebug("Hooked")
-				-- end
-				self.AllTheThingsOnTooltipClearedHook = true;
-			else
-				app.PrintDebug("Ignoring Tooltip",tooltipName)
-				-- otherwise mark them as ignored so ATT doesn't process them
-				self.AllTheThingsIgnored = true;
-			end
-		end
 
 		-- Does the tooltip have a target?
 		if self.AllTheThingsProcessing and target and id then

@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 		n(VENDORS, {
 			n(135793, {	-- Collector Kojo <Tortollan Seekers Emissary>
 				["coord"] = { 40.4, 36.4, STORMSONG_VALLEY },
-				["g"] = bubbleDownClassicRep(FACTION_TORTOLLAN_SEEKERS, {
+				["groups"] = bubbleDownClassicRep(FACTION_TORTOLLAN_SEEKERS, {
 					{		-- Neutral
 					}, {	-- Friendly
 					}, {	-- Honored
@@ -122,7 +122,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(130786, {	-- Hobbs
 				["coord"] = { 58.3, 70.3, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(162000, {	-- Pig Nose
 						["cost"] = { { "i", 155838, 25 }, },	-- 25x Briarback Quill
 					}),
@@ -143,7 +143,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(136674, {	-- Madeline Netley <Stable Master>
 				["coord"] = { 31.6, 67.2, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(163489, {	-- Abyssal Eel (PET!)
 						["cost"] = { { "i", POLISHED_PET_CHARM, 75 }, },
 					}),
@@ -186,7 +186,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(138096, {	-- Sanya Wraithschilde <Innkeeper>
 				["races"] = HORDE_ONLY,
 				["coord"] = { 50.8, 33.6, STORMSONG_VALLEY },
-				["g"] = {
+				["groups"] = {
 					i(162000, {	-- Pig Nose
 						["cost"] = { { "i", 155838, 25 }, },	-- 25x Briarback Quill
 					}),
@@ -195,7 +195,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(135800, {	-- Sister Lilyana <Storm's Wake Emissary>
 				["coord"] = { 59.2, 69.3, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = bubbleDownClassicRep(FACTION_STORMS_WAKE, {
+				["groups"] = bubbleDownClassicRep(FACTION_STORMS_WAKE, {
 					{		-- Neutral
 					}, {	-- Friendly
 					}, {	-- Honored

@@ -30,7 +30,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 				}),
 			}),
 			n(QUESTS, {
-				["g"] = bubbleDownClassicRep(FACTION_THE_SCALE_OF_THE_SANDS, {
+				["groups"] = bubbleDownClassicRep(FACTION_THE_SCALE_OF_THE_SANDS, {
 					{		-- Neutral
 						q(10947, {	-- An Artifact From the Past
 							["qg"] = 21700,	-- Akama
@@ -44,33 +44,16 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						}),
 					}, {	-- Friendly
 						q(10462, {	-- Champion's Pledge
-							["providers"] = {
-								{ "n", 19935 },	-- Soridormi
-								{ "n", 19936 },	-- Arazmodu
+							["qgs"] = {
+								19935,	-- Soridormi
+								19936,	-- Arazmodu
 							},
-							["sourceQuests"] = {
-								-- #if AFTER 3.0.2
-								13432,	-- The Vials of Eternity
-								-- #else
-								10445,	-- The Vials of Eternity
-								-- #endif
-							},
-							["maps"] = { CAVERNS_OF_TIME },
 							["altQuests"] = {
 								--10462,	-- Champion's Pledge
 								10460,	-- Defender's Pledge
 								10461,	-- Restorer's Pledge
 								10463,	-- Sage's Pledge
 							},
-							["groups"] = {
-								i(29298),	-- Band of Eternity
-							},
-						}),
-						q(10460, {	-- Defender's Pledge
-							["providers"] = {
-								{ "n", 19935 },	-- Soridormi
-								{ "n", 19936 },	-- Arazmodu
-							},
 							["sourceQuests"] = {
 								-- #if AFTER 3.0.2
 								13432,	-- The Vials of Eternity
@@ -79,21 +62,21 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 								-- #endif
 							},
 							["maps"] = { CAVERNS_OF_TIME },
+							["groups"] = {
+								i(29298),	-- Band of Eternity
+							},
+						}),
+						q(10460, {	-- Defender's Pledge
+							["qgs"] = {
+								19935,	-- Soridormi
+								19936,	-- Arazmodu
+							},
 							["altQuests"] = {
 								10462,	-- Champion's Pledge
 								--10460,	-- Defender's Pledge
 								10461,	-- Restorer's Pledge
 								10463,	-- Sage's Pledge
 							},
-							["groups"] = {
-								i(29294),	-- Band of Eternity
-							},
-						}),
-						q(10461, {	-- Restorer's Pledge
-							["providers"] = {
-								{ "n", 19935 },	-- Soridormi
-								{ "n", 19936 },	-- Arazmodu
-							},
 							["sourceQuests"] = {
 								-- #if AFTER 3.0.2
 								13432,	-- The Vials of Eternity
@@ -102,20 +85,43 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 								-- #endif
 							},
 							["maps"] = { CAVERNS_OF_TIME },
+							["groups"] = {
+								i(29294),	-- Band of Eternity
+							},
+						}),
+						q(10461, {	-- Restorer's Pledge
+							["qgs"] = {
+								19935,	-- Soridormi
+								19936,	-- Arazmodu
+							},
 							["altQuests"] = {
 								10462,	-- Champion's Pledge
 								10460,	-- Defender's Pledge
 								--10461,	-- Restorer's Pledge
 								10463,	-- Sage's Pledge
 							},
+							["sourceQuests"] = {
+								-- #if AFTER 3.0.2
+								13432,	-- The Vials of Eternity
+								-- #else
+								10445,	-- The Vials of Eternity
+								-- #endif
+							},
+							["maps"] = { CAVERNS_OF_TIME },
 							["groups"] = {
 								i(29307),	-- Band of Eternity
 							},
 						}),
 						q(10463, {	-- Sage's Pledge
-							["providers"] = {
-								{ "n", 19935 },	-- Soridormi
-								{ "n", 19936 },	-- Arazmodu
+							["qgs"] = {
+								19935,	-- Soridormi
+								19936,	-- Arazmodu
+							},
+							["altQuests"] = {
+								10462,	-- Champion's Pledge
+								10460,	-- Defender's Pledge
+								10461,	-- Restorer's Pledge
+								--10463,	-- Sage's Pledge
 							},
 							["sourceQuests"] = {
 								-- #if AFTER 3.0.2
@@ -125,30 +131,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 								-- #endif
 							},
 							["maps"] = { CAVERNS_OF_TIME },
-							["altQuests"] = {
-								10462,	-- Champion's Pledge
-								10460,	-- Defender's Pledge
-								10461,	-- Restorer's Pledge
-								--10463,	-- Sage's Pledge
-							},
 							["groups"] = {
 								i(29302),	-- Band of Eternity
 							},
 						}),
 					}, {	-- Honored
 						q(10466, {	-- Champion's Vow
-							["providers"] = {
-								{ "n", 19935 },	-- Soridormi
-								{ "n", 19936 },	-- Arazmodu
+							["qgs"] = {
+								19935,	-- Soridormi
+								19936,	-- Arazmodu
 							},
-							["sourceQuest"] = 10462,	-- Champion's Pledge
-							["maps"] = { CAVERNS_OF_TIME },
 							["altQuests"] = {
 								--10466,	-- Champion's Vow
 								10467,	-- Defender's Vow
 								10465,	-- Restorer's Vow
 								10464,	-- Sage's Vow
 							},
+							["sourceQuest"] = 10462,	-- Champion's Pledge
+							["maps"] = { CAVERNS_OF_TIME },
 							["groups"] = {
 								objective(1, {	-- 0/1 Band of Eternity
 									["provider"] = { "i", 29298 },	-- Band of Eternity
@@ -157,18 +157,18 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							},
 						}),
 						q(10467, {	-- Defender's Vow
-							["providers"] = {
-								{ "n", 19935 },	-- Soridormi
-								{ "n", 19936 },	-- Arazmodu
+							["qgs"] = {
+								19935,	-- Soridormi
+								19936,	-- Arazmodu
 							},
-							["sourceQuest"] = 10460,	-- Defender's Pledge
-							["maps"] = { CAVERNS_OF_TIME },
 							["altQuests"] = {
 								10466,	-- Champion's Vow
 								--10467,	-- Defender's Vow
 								10465,	-- Restorer's Vow
 								10464,	-- Sage's Vow
 							},
+							["sourceQuest"] = 10460,	-- Defender's Pledge
+							["maps"] = { CAVERNS_OF_TIME },
 							["groups"] = {
 								objective(1, {	-- 0/1 Band of Eternity
 									["provider"] = { "i", 29294 },	-- Band of Eternity
@@ -177,18 +177,18 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							},
 						}),
 						q(10465, {	-- Restorer's Vow
-							["providers"] = {
-								{ "n", 19935 },	-- Soridormi
-								{ "n", 19936 },	-- Arazmodu
+							["qgs"] = {
+								19935,	-- Soridormi
+								19936,	-- Arazmodu
 							},
-							["sourceQuest"] = 10461,	-- Restorer's Pledge
-							["maps"] = { CAVERNS_OF_TIME },
 							["altQuests"] = {
 								10466,	-- Champion's Vow
 								10467,	-- Defender's Vow
 								--10465,	-- Restorer's Vow
 								10464,	-- Sage's Vow
 							},
+							["sourceQuest"] = 10461,	-- Restorer's Pledge
+							["maps"] = { CAVERNS_OF_TIME },
 							["groups"] = {
 								objective(1, {	-- 0/1 Band of Eternity
 									["provider"] = { "i", 29307 },	-- Band of Eternity
@@ -197,18 +197,18 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							},
 						}),
 						q(10464, {	-- Sage's Vow
-							["providers"] = {
-								{ "n", 19935 },	-- Soridormi
-								{ "n", 19936 },	-- Arazmodu
+							["qgs"] = {
+								19935,	-- Soridormi
+								19936,	-- Arazmodu
 							},
-							["sourceQuest"] = 10463,	-- Sage's Pledge
-							["maps"] = { CAVERNS_OF_TIME },
 							["altQuests"] = {
 								10466,	-- Champion's Vow
 								10467,	-- Defender's Vow
 								10465,	-- Restorer's Vow
 								--10464,	-- Sage's Vow
 							},
+							["sourceQuest"] = 10463,	-- Sage's Pledge
+							["maps"] = { CAVERNS_OF_TIME },
 							["groups"] = {
 								objective(1, {	-- 0/1 Band of Eternity
 									["provider"] = { "i", 29302 },	-- Band of Eternity
@@ -218,18 +218,18 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						}),
 					}, {	-- Revered
 						q(10470, {	-- Champion's Oath
-							["providers"] = {
-								{ "n", 19935 },	-- Soridormi
-								{ "n", 19936 },	-- Arazmodu
+							["qgs"] = {
+								19935,	-- Soridormi
+								19936,	-- Arazmodu
 							},
-							["sourceQuest"] = 10466,	-- Champion's Vow
-							["maps"] = { CAVERNS_OF_TIME },
 							["altQuests"] = {
 								--10470,	-- Champion's Oath
 								10471,	-- Defender's Oath
 								10469,	-- Restorer's Oath
 								10468,	-- Sage's Oath
 							},
+							["sourceQuest"] = 10466,	-- Champion's Vow
+							["maps"] = { CAVERNS_OF_TIME },
 							["groups"] = {
 								objective(1, {	-- 0/1 Band of Eternity
 									["provider"] = { "i", 29299 },	-- Band of Eternity
@@ -238,18 +238,18 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							},
 						}),
 						q(10471, {	-- Defender's Oath
-							["providers"] = {
-								{ "n", 19935 },	-- Soridormi
-								{ "n", 19936 },	-- Arazmodu
+							["qgs"] = {
+								19935,	-- Soridormi
+								19936,	-- Arazmodu
 							},
-							["sourceQuest"] = 10467,	-- Defender's Vow
-							["maps"] = { CAVERNS_OF_TIME },
 							["altQuests"] = {
 								10470,	-- Champion's Oath
 								--10471,	-- Defender's Oath
 								10469,	-- Restorer's Oath
 								10468,	-- Sage's Oath
 							},
+							["sourceQuest"] = 10467,	-- Defender's Vow
+							["maps"] = { CAVERNS_OF_TIME },
 							["groups"] = {
 								objective(1, {	-- 0/1 Band of Eternity
 									["provider"] = { "i", 29295 },	-- Band of Eternity
@@ -258,18 +258,18 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							},
 						}),
 						q(10469, {	-- Restorer's Oath
-							["providers"] = {
-								{ "n", 19935 },	-- Soridormi
-								{ "n", 19936 },	-- Arazmodu
+							["qgs"] = {
+								19935,	-- Soridormi
+								19936,	-- Arazmodu
 							},
-							["sourceQuest"] = 10465,	-- Restorer's Vow
-							["maps"] = { CAVERNS_OF_TIME },
 							["altQuests"] = {
 								10470,	-- Champion's Oath
 								10471,	-- Defender's Oath
 								--10469,	-- Restorer's Oath
 								10468,	-- Sage's Oath
 							},
+							["sourceQuest"] = 10465,	-- Restorer's Vow
+							["maps"] = { CAVERNS_OF_TIME },
 							["groups"] = {
 								objective(1, {	-- 0/1 Band of Eternity
 									["provider"] = { "i", 29306 },	-- Band of Eternity
@@ -278,18 +278,18 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							},
 						}),
 						q(10468, {	-- Sage's Oath
-							["providers"] = {
-								{ "n", 19935 },	-- Soridormi
-								{ "n", 19936 },	-- Arazmodu
+							["qgs"] = {
+								19935,	-- Soridormi
+								19936,	-- Arazmodu
 							},
-							["sourceQuest"] = 10464,	-- Sage's Vow
-							["maps"] = { CAVERNS_OF_TIME },
 							["altQuests"] = {
 								10470,	-- Champion's Oath
 								10471,	-- Defender's Oath
 								10469,	-- Restorer's Oath
 								--10468,	-- Sage's Oath
 							},
+							["sourceQuest"] = 10464,	-- Sage's Vow
+							["maps"] = { CAVERNS_OF_TIME },
 							["groups"] = {
 								objective(1, {	-- 0/1 Band of Eternity
 									["provider"] = { "i", 29303 },	-- Band of Eternity
@@ -307,11 +307,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 								10472,	-- Sage's Covenant
 							},
 							["maps"] = { CAVERNS_OF_TIME },
-							["repeatable"] = true,
 							["cost"] = {
 								{ "i", 29301, 1 },	-- Band of the Eternal Champion
 								{ "g", 750000 },	-- 75g
 							},
+							["repeatable"] = true,
 							["groups"] = {
 								i(29297),	-- Band of the Eternal Defender
 								i(29309),	-- Band of the Eternal Restorer
@@ -319,18 +319,18 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							},
 						}),
 						q(10474, {	-- Champion's Covenant
-							["providers"] = {
-								{ "n", 19935 },	-- Soridormi
-								{ "n", 19936 },	-- Arazmodu
+							["qgs"] = {
+								19935,	-- Soridormi
+								19936,	-- Arazmodu
 							},
-							["sourceQuest"] = 10470,	-- Champion's Oath
-							["maps"] = { CAVERNS_OF_TIME },
 							["altQuests"] = {
 								--10474,	-- Champion's Covenant
 								10475,	-- Defender's Covenant
 								10473,	-- Restorer's Covenant
 								10472,	-- Sage's Covenant
 							},
+							["sourceQuest"] = 10470,	-- Champion's Oath
+							["maps"] = { CAVERNS_OF_TIME },
 							["groups"] = {
 								objective(1, {	-- 0/1 Band of Eternity
 									["provider"] = { "i", 29300 },	-- Band of Eternity
@@ -347,11 +347,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 								10472,	-- Sage's Covenant
 							},
 							["maps"] = { CAVERNS_OF_TIME },
-							["repeatable"] = true,
 							["cost"] = {
 								{ "i", 29297, 1 },	-- Band of the Eternal Defender
 								{ "g", 750000 },	-- 75g
 							},
+							["repeatable"] = true,
 							["groups"] = {
 								i(29301),	-- Band of the Eternal Champion
 								i(29309),	-- Band of the Eternal Restorer
@@ -359,18 +359,18 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							},
 						}),
 						q(10475, {	-- Defender's Covenant
-							["providers"] = {
-								{ "n", 19935 },	-- Soridormi
-								{ "n", 19936 },	-- Arazmodu
+							["qgs"] = {
+								19935,	-- Soridormi
+								19936,	-- Arazmodu
 							},
-							["sourceQuest"] = 10471,	-- Defender's Oath
-							["maps"] = { CAVERNS_OF_TIME },
 							["altQuests"] = {
 								10474,	-- Champion's Covenant
 								--10475,	-- Defender's Covenant
 								10473,	-- Restorer's Covenant
 								10472,	-- Sage's Covenant
 							},
+							["sourceQuest"] = 10471,	-- Defender's Oath
+							["maps"] = { CAVERNS_OF_TIME },
 							["groups"] = {
 								objective(1, {	-- 0/1 Band of Eternity
 									["provider"] = { "i", 29296 },	-- Band of Eternity
@@ -387,11 +387,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 								10472,	-- Sage's Covenant
 							},
 							["maps"] = { CAVERNS_OF_TIME },
-							["repeatable"] = true,
 							["cost"] = {
 								{ "i", 29309, 1 },	-- Band of the Eternal Restorer
 								{ "g", 750000 },	-- 75g
 							},
+							["repeatable"] = true,
 							["groups"] = {
 								i(29301),	-- Band of the Eternal Champion
 								i(29297),	-- Band of the Eternal Defender
@@ -399,18 +399,18 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							},
 						}),
 						q(10473, {	-- Restorer's Covenant
-							["providers"] = {
-								{ "n", 19935 },	-- Soridormi
-								{ "n", 19936 },	-- Arazmodu
+							["qgs"] = {
+								19935,	-- Soridormi
+								19936,	-- Arazmodu
 							},
-							["sourceQuest"] = 10469,	-- Restorer's Oath
-							["maps"] = { CAVERNS_OF_TIME },
 							["altQuests"] = {
 								10474,	-- Champion's Covenant
 								10475,	-- Defender's Covenant
 								--10473,	-- Restorer's Covenant
 								10472,	-- Sage's Covenant
 							},
+							["sourceQuest"] = 10469,	-- Restorer's Oath
+							["maps"] = { CAVERNS_OF_TIME },
 							["groups"] = {
 								objective(1, {	-- 0/1 Band of Eternity
 									["provider"] = { "i", 29308 },	-- Band of Eternity
@@ -427,11 +427,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 								10472,	-- Sage's Covenant
 							},
 							["maps"] = { CAVERNS_OF_TIME },
-							["repeatable"] = true,
 							["cost"] = {
 								{ "i", 29305, 1 },	-- Band of the Eternal Sage
 								{ "g", 750000 },	-- 75g
 							},
+							["repeatable"] = true,
 							["groups"] = {
 								i(29301),	-- Band of the Eternal Champion
 								i(29297),	-- Band of the Eternal Defender
@@ -439,18 +439,18 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							},
 						}),
 						q(10472, {	-- Sage's Covenant
-							["providers"] = {
-								{ "n", 19935 },	-- Soridormi
-								{ "n", 19936 },	-- Arazmodu
+							["qgs"] = {
+								19935,	-- Soridormi
+								19936,	-- Arazmodu
 							},
-							["sourceQuest"] = 10468,	-- Sage's Oath
-							["maps"] = { CAVERNS_OF_TIME },
 							["altQuests"] = {
 								10474,	-- Champion's Covenant
 								10475,	-- Defender's Covenant
 								10473,	-- Restorer's Covenant
 								--10472,	-- Sage's Covenant
 							},
+							["sourceQuest"] = 10468,	-- Sage's Oath
+							["maps"] = { CAVERNS_OF_TIME },
 							["groups"] = {
 								objective(1, {	-- 0/1 Band of Eternity
 									["provider"] = { "i", 29304 },	-- Band of Eternity

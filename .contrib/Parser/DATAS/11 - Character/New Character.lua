@@ -25,7 +25,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		applyclassicphase(WOD_PHASE_ONE, ach(9708, {	-- Savagely Epic [Warlords Of Draenor]
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3_LAUNCH },
 		})),
-		applyclassicphase(MOP_PHASE_LANDFALL, ach(6349, {	-- Mystically Epic [Mists of Pandaria]
+		applyclassicphase(MOP_PHASE_ONE, ach(6349, {	-- Mystically Epic [Mists of Pandaria]
 			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_3_LAUNCH },
 		})),
 		applyclassicphase(CATA_PHASE_ONE, ach(5372, {	-- Cataclysmically Epic [Cataclysm]
@@ -56,7 +56,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		applyclassicphase(WOD_PHASE_ONE, ach(9707, {	-- Savagely Superior [Warlords Of Draenor]
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3_LAUNCH },
 		})),
-		applyclassicphase(MOP_PHASE_LANDFALL, ach(6348, {	-- Mystically Superior [Mists of Pandaria]
+		applyclassicphase(MOP_PHASE_ONE, ach(6348, {	-- Mystically Superior [Mists of Pandaria]
 			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_3_LAUNCH },
 		})),
 		applyclassicphase(CATA_PHASE_ONE, ach(5373, {	-- Cataclysmically Superior [Cataclysm]
@@ -72,7 +72,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		})),
 		ach(19489, {	-- Class Connoisseur
 			["timeline"] = { ADDED_11_0_2 },
-			["g"] = {
+			["groups"] = {
 				crit(55223),	-- Druid
 				crit(55224),	-- Hunter
 				crit(64623),	-- Mage
@@ -93,7 +93,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 		ach(7382, {	-- Dynamic Duo
 			["timeline"] = { ADDED_5_0_4 },
-			["g"] = {
+			["groups"] = {
 				i(212174, {	-- The Warband Map to Everywhere All At Once (TOY!)
 					["timeline"] = { ADDED_11_0_0 },
 				}),
@@ -1393,125 +1393,125 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["timeline"] = { ADDED_9_2_0 },
 			["groups"] = {
 				q(65425, {	-- Whatever You Sayaad (A)
-					["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
 					["provider"] = { "n", 184600 },	-- Warlock Minion
 					["coord"] = { 79.5, 69.8, STORMWIND_CITY },
+					["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
+					["timeline"] = { ADDED_9_2_0, REMOVED_10_1_5 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
-					["timeline"] = { ADDED_9_2_0, REMOVED_10_1_5 },
 				}),
 				q(65424, {	-- Whatever You Sayaad (H)
-					["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
 					["provider"] = { "n", 184600 },	-- Warlock Minion
 					["coord"] = { 74.6, 47.4, ORGRIMMAR },
+					["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
+					["timeline"] = { ADDED_9_2_0, REMOVED_10_1_5 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARLOCK },
-					["timeline"] = { ADDED_9_2_0, REMOVED_10_1_5 },
 				}),
 				q(76427, {	-- A Dark Summons (H)
 					["provider"] = { "i", 208227 },	-- Mysterious Letter (QI!)
+					["timeline"] = { ADDED_10_1_5 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARLOCK },
-					["timeline"] = { ADDED_10_1_5 },
 					["isBreadcrumb"] = true,	-- need to confirm
 				}),
 				q(76430, {	-- Beingning Impositions (H)
 					["provider"] = { "n", 207051 },	-- Assistant Phineas
 					-- ["coord"] = { X, Y, ORGRIMMAR },
+					["timeline"] = { ADDED_10_1_5 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARLOCK },
-					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(76410, {	-- A Dark Summons (A)
 					["provider"] = { "i", 208226 },	-- Mysterious Letter (QI!)
+					["timeline"] = { ADDED_10_1_5 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
-					["timeline"] = { ADDED_10_1_5 },
 					["isBreadcrumb"] = true,	-- need to confirm
 				}),
 				q(75538, {	-- Beginning Impositions (A)
-					["sourceQuests"] = { 76410 },	-- A Dark Summons (?)
 					["provider"] = { "n", 204198 },	-- Assistant Phineas
+					["sourceQuests"] = { 76410 },	-- A Dark Summons (?)
 					["coord"] = { 43.6, 79.3, STORMWIND_CITY },
+					["timeline"] = { ADDED_10_1_5 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
-					["timeline"] = { ADDED_10_1_5 },
 				}),
 				q(75539, {	-- Some Wicked Things This Way Come
+					["provider"] = { "n", 203968 },	-- Madam Shadow
 					["sourceQuests"] = {
 						75538,	-- Beginning Impositions (A)
 						76430,	-- Beingning Impositions (H)
 					},
 					["sourceQuestNumRequired"] = 1,
-					["provider"] = { "n", 203968 },	-- Madam Shadow
 					["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
-					["classes"] = { WARLOCK },
 					["timeline"] = { ADDED_10_1_5 },
+					["classes"] = { WARLOCK },
 				}),
 				q(75540, {	-- Hermetic Insurance
-					["sourceQuests"] = { 75539 },	-- Some Wicked Things This Way Come
 					["provider"] = { "n", 203968 },	-- Madam Shadow
+					["sourceQuests"] = { 75539 },	-- Some Wicked Things This Way Come
 					["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
-					["classes"] = { WARLOCK },
 					["timeline"] = { ADDED_10_1_5 },
+					["classes"] = { WARLOCK },
 				}),
 				q(75541, {	-- Those Who Hesitate
-					["sourceQuests"] = { 75540 },	-- Hermetic Insurance
 					["provider"] = { "n", 203968 },	-- Madam Shadow
+					["sourceQuests"] = { 75540 },	-- Hermetic Insurance
 					["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
-					["classes"] = { WARLOCK },
 					["timeline"] = { ADDED_10_1_5 },
+					["classes"] = { WARLOCK },
 				}),
 				q(76155, {	-- A Wolf Among Sheep
-					["sourceQuests"] = { 75541 },	-- Those Who Hesitate
 					["provider"] = { "n", 205276 },	-- Initiate Oman
+					["sourceQuests"] = { 75541 },	-- Those Who Hesitate
 					["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
-					["classes"] = { WARLOCK },
 					["timeline"] = { ADDED_10_1_5 },
-					["g"] = {
+					["classes"] = { WARLOCK },
+					["groups"] = {
 						i(206160),	-- Madam Shadow's Grimoire (QI!)
 						spell(412234),	-- Madam Shadow's Soulstone
 					},
 				}),
 				q(75542, {	-- Curses & Cultists
-					["sourceQuests"] = { 76155 },	-- A Wolf Among Sheep
 					["provider"] = { "n", 203968 },	-- Madam Shadow
+					["sourceQuests"] = { 76155 },	-- A Wolf Among Sheep
 					["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
-					["classes"] = { WARLOCK },
 					["timeline"] = { ADDED_10_1_5 },
+					["classes"] = { WARLOCK },
 				}),
 				q(75639, {	-- Fel Suspicions
-					["sourceQuests"] = { 75542 },	-- Curses & Cultists
 					["provider"] = { "n", 205433 },	-- Initiate Oman
+					["sourceQuests"] = { 75542 },	-- Curses & Cultists
 					["coord"] = { 58.9, 63.1, DARKMOON_ISLAND },
-					["classes"] = { WARLOCK },
 					["timeline"] = { ADDED_10_1_5 },
+					["classes"] = { WARLOCK },
 				}),
 				q(75543, {	-- Last Rites By Accident
-					["sourceQuests"] = { 75639 },	-- Fel Suspicions
 					["provider"] = { "o", 402609 },	-- Demonic Gateway
+					["sourceQuests"] = { 75639 },	-- Fel Suspicions
 					["coord"] = { 59.7, 62.2, DARKMOON_ISLAND },
-					["classes"] = { WARLOCK },
 					["timeline"] = { ADDED_10_1_5 },
+					["classes"] = { WARLOCK },
 				}),
 				q(75544, {	-- When Revenge Burns Green
-					["sourceQuests"] = { 75543 },	-- Last Rites By Accident
 					["provider"] = { "n", 205575 },	-- Initiate Oman
+					["sourceQuests"] = { 75543 },	-- Last Rites By Accident
 					["coord"] = { 8.4, 36.0, BURNING_STEPPES },
-					["classes"] = { WARLOCK },
 					["timeline"] = { ADDED_10_1_5 },
-					["g"] = {
+					["classes"] = { WARLOCK },
+					["groups"] = {
 						spell(417884),	-- Fiendish Imps
 						i(208108),	-- Madam Shadow's Old Grimoire
 					},
 				}),
 				q(76163, {	-- A Lighter Shade of Fel
-					["sourceQuests"] = { 75544 },	-- When Revenge Burns Green
 					["provider"] = { "i", 206681 },	-- Letter from Oman (QI!)
-					["classes"] = { WARLOCK },
+					["sourceQuests"] = { 75544 },	-- When Revenge Burns Green
 					["description"] = "You get this quest in your mailbox next weekly reset after finishing 'When Revenge Burns Green'",
 					["timeline"] = { ADDED_10_1_5 },
-					["g"] = {
+					["classes"] = { WARLOCK },
+					["groups"] = {
 						i(207101),	-- Glyph of Banehollow's Soulstone
 					},
 				}),
@@ -1984,7 +1984,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	-- #if BEFORE 11.0.0
 	-- Fixed with TWW - you can collect any armor with any class
 	filter(CLOTH, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
-		["g"] = sharedData({
+		["groups"] = sharedData({
 			["sharedDescription"] = "This item is obtained by a newly created worgen monk, but because it's soulbound cloth item, you can't learn it.",
 			["collectible"] = false,
 		},{
@@ -1995,7 +1995,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 	})),
 	filter(CLOTH, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
-		["g"] = sharedData({
+		["groups"] = sharedData({
 			["sharedDescription"] = "This item is obtained by a newly created goblin monk, but because it's soulbound cloth item, you can't learn it.",
 			["collectible"] = false,
 		},{
@@ -2017,18 +2017,18 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["coord"] = { 43.0, 89.4, THE_WAR_CRECHE },
 		}),
 		q(84424, {	-- Forward, to Adventure!
-			["sourceQuests"] = { 84423 },	-- Shaking the Dust Off
 			["provider"] = { "n", 229075 },	-- Scalecommander Emberthal
+			["sourceQuests"] = { 84423 },	-- Shaking the Dust Off
 			["coord"] = { 43.0, 89.4, THE_WAR_CRECHE },
-			["g"] = {
+			["groups"] = {
 				o(467064, {	-- Quest Journal
 					i(229165),	-- Quest Journal (QI!)
 				}),
 			},
 		}),
 		q(85026, {	-- Where Legends are Made
-			["sourceQuests"] = { 84424 },	-- Forward, to Adventure!
 			["provider"] = { "n", 167032 },	-- Chromie
+			["sourceQuests"] = { 84424 },	-- Forward, to Adventure!
 			["coords"] = {
 				{ 40.8, 80.1, ORGRIMMAR },
 				{ 56.2, 17.2, STORMWIND_CITY },

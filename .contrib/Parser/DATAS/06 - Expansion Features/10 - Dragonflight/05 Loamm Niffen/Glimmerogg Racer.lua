@@ -24,21 +24,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}),
 			n(QUESTS, {
 				q(74787, {	-- Come Snail Away
+					["provider"] = { "n", 201752 },	-- Briggul
 					["sourceQuests"] = {
 						73709,	-- Favor on the Side
 						73708,	-- Pay to Play
 					},
-					["provider"] = { "n", 201752 },	-- Briggul
 					["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(203708),	-- Conch Whistle
 					},
 				}),
 				q(75598, {	-- Snailed It
-					["minReputation"] = { FACTION_GLIMMEROGG_RACER, 5 },	-- Rank 5, Professional, 2800
 					["provider"] = { "n", 201752 },	-- Briggul
 					["coord"] = { 44.2, 80.0, ZARALEK_CAVERN },
-					["g"] = {
+					["minReputation"] = { FACTION_GLIMMEROGG_RACER, 5 },	-- Rank 5, Professional, 2800
+					["groups"] = {
 						i(205155),	-- Big Slick in the City
 					},
 				}),
@@ -107,19 +107,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}, {
 				q(75662, {	-- A Race To The Finish
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(205119),	-- Bashful (PET!)
 					},
 				}),
 				q(75707, {	-- A Race To The Finish
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(205123),	-- Brulee (PET!)
 					},
 				}),
 				q(75706, {	-- A Race To The Finish
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(205121),	-- Tricky (PET!)
 					},
 				}),

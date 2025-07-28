@@ -60,7 +60,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			ach(14339, {	-- Shard Labor
 				["description"] = "'Collect all trackable things' must be enabled to see the location of each shard in the list.\n\nShards are collected account-wide.  There are shards to collect in Bastion, Necrotic Wake, and Spires of Ascension.",
-				["g"] = {
+				["groups"] = {
 				--	https://www.wowhead.com/achievement=14339/shard-labor#comments
 				--	moving completed ones up to the top for now so it's easier to see which one checks off (to verify coords + add data more easily)
 					q(61295, {	-- Anima Crystal Shard
@@ -338,7 +338,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						["description"] = "After you finish collecting all the shards from Bastion, Necrotic Wake, and Spires of Ascension, visit Hephaesius.  Give him the shards, and he will forge them into a mallet.",
 						["questID"] = 61229,	-- receiving the mallet from Hephaesius
 						["coord"] = { 59.3, 31.4, BASTION },
-						["g"] = {
+						["groups"] = {
 							i(180858),	-- Crystal Mallet of Heralds
 						},
 					}),
@@ -354,7 +354,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						["questID"] = 61183,	-- looting the treasure
 						["sourceQuest"] = 61191,	-- ringing the bell
 						["coord"] = { 36.1, 26.6, BASTION },
-						["g"] = {
+						["groups"] = {
 							i(180772),	-- Silverwind Larion (MOUNT!)
 						},
 					}),

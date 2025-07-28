@@ -818,7 +818,7 @@ settings.GetUnobtainableFilter = function(self, u)
 	return not u or RawSettings.Unobtainable[u]
 end
 settings.SetUnobtainableFilter = function(self, u, value)
-	self:SetValue("Unobtainable", u, value and true or nil)
+	self:SetValue("Unobtainable", u, value)
 	self:UpdateMode(1);
 end
 

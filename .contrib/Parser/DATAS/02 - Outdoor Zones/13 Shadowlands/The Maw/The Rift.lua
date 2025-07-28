@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				{"i",186969,1},	-- Collapsing Riftstone
 				{"i",186731,1},	-- Repaired Riftkey
 			},
-			["g"] = {
+			["groups"] = {
 				n(QUESTS, {
 					q(64282, {	-- Full of Surprises
 						["provider"] = { "n", 179904 },	-- Ve'nari
@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					n(179853, {	-- Blinding Shadow
 						["coord"] = { 34.7, 41.9, THE_MAW },
 						["questID"] = 64276,
-						["g"] = {
+						["groups"] = {
 							i(187406),	-- Band of Blinding Shadows
 							i(187361),	-- Rift-Bound Shadow Piercer
 						},
@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						["description"] = "Patrols in a circle around a large rock formation in the Beastwarrens.",
 						["coord"] = { 51.1, 71.1, THE_MAW },
 						["questID"] = 64272,
-						["g"] = {
+						["groups"] = {
 							i(187398),	-- Chestguard of the Shadeguard
 							i(187363),	-- Orguluus' Spear
 						},
@@ -38,7 +38,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					n(179735, {	-- Torglluun
 						["coord"] = { 28.5, 24.9, THE_MAW },
 						["questID"] = 64232,
-						["g"] = {
+						["groups"] = {
 							i(187139),	-- Bottled Shade Heart (TOY!)
 							i(187389),	-- Lord of Shade's Binders
 							i(187360),	-- Orb of Enveloping Rifts
@@ -50,7 +50,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					n(179572, {	-- Hand of Nilganihmaht
 						["description"] = "At the back of the cave.  Collect 5 rings from throughout the Maw and place them on the Hand to receive the mount.\n\nThe 4 pieces that make up the Stone Ring require the Necrolord Assault; 2 pieces additionally require the quest |cFF349cffPutting a Plan Together|r.  The Hand of Nilganihmaht and the Runed Band are both in the Rift, which requires either the Night Fae Covenant Assault quest |cFF349cffA Shady Place|r or the use of a |cFF1eff00Repaired Riftkey|r in Korthia.\n\nThe other 3 rings can be collected at any time in the normal phase of the Maw.",
 						["coord"] = { 25.6, 32.0, THE_MAW },
-						["g"] = {
+						["groups"] = {
 							q(64197, {	-- Placing Stone Ring
 								["cost"] = { { "i", 186603, 1 } },	-- Nilganihmaht's Stone Ring (combine 4 green Quartered Rings)
 								["name"] = "Placing Stone Ring",
@@ -84,7 +84,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 									64200,	-- Placing Silver Ring
 									64201,	-- Placing Signet Ring
 								},
-								["g"] = {
+								["groups"] = {
 									i(186713),	-- Hand of Nilganihmaht (MOUNT!)
 								},
 							}),
@@ -98,12 +98,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							{ 66.4, 58.2, THE_MAW },
 							{ 62.2, 64.2, THE_MAW },
 						},
-						["g"] = {
+						["groups"] = {
 							o(369262, {	-- Zovaal's Vault
 								["coord"] = { 44.6, 51.5, THE_MAW },
 								["questID"] = 64283,
 								["isDaily"] = true,
-								["g"] = {
+								["groups"] = {
 									i(187416),	-- Jailer's Cage (TOY!)
 									i(187113),	-- Personal Ball and Chain (TOY!)
 									i(187251),	-- Shaded Skull Shoulderguards

@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131002 },	-- Lieutenant Bauer
 				["coord"] = { 30.2, 59.2, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156472),	-- Songstone (QI!)
 					i(160345),	-- Zeth'jir Seacaller Signet
 					i(160371),	-- Tidespeaker Belt
@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "i", 158195 },	-- Frothing Vial
 				["races"] = ALLIANCE_ONLY,
 				["crs"] = { 130094 },	-- Tidesage Seacaller
-				["g"] = {
+				["groups"] = {
 					i(158139),	-- Tideblood (QI!)
 				},
 			}),
@@ -72,7 +72,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 134702 },	-- Nedly Grinner
 				["coord"] = { 44.4, 55.5, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158724),	-- Old Ship Parts (QI!)
 					i(158682),	-- Anchor-Strapped Barrier
 					i(158684),	-- Salvage-Hunter's Torch
@@ -97,7 +97,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					130395,	-- Briarback Warcaller
 					134425,	-- Hulking Kraulguard
 				},
-				["g"] = {
+				["groups"] = {
 					i(157850),	-- Foul-Smelling Sample (QI!)
 				},
 			}),
@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131003 },
 				["coord"] = { 34.5, 47.2, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156482),	-- Zeth'jir Harpoon (QI!)
 				},
 			}),
@@ -124,7 +124,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 129808 },	-- Farmer Goldfield
 				["coord"] = { 50.7, 73.1, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160561),	-- Goldfield's Knife (QI!)
 					i(156583),	-- Salvaged Azerite Ammunition (QI!)
 				},
@@ -139,7 +139,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "o", 244986 },	-- Dirty Pocketwatch
 				["coord"] = { 49.8, 73.5, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156577),	-- Battered Toy Sword (QI!)
 					i(156578),	-- Tarnished Locket (QI!)
 				},
@@ -149,7 +149,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 129999 },	-- Taelia
 				["coord"] = { 59.2, 69.5, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155859),	-- Military Whistle (QI!)
 					i(160408),	-- Stormwake Pendant (QI!)
 				},
@@ -169,7 +169,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131003 },
 				["coord"] = { 34.5, 47.2, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158332),	-- Zeth'jir Channeling Rod (QI!)
 				},
 			}),
@@ -184,7 +184,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 136574 },	-- Charles Davenport
 				["coord"] = { 29.8, 67.1, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(159882),	-- Bug Zapper (QI!)
 				},
 			}),
@@ -203,7 +203,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["coord"] = { 72.7, 72.2, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158558),	-- Luminous Honey Jar
 				},
 			}),
@@ -211,7 +211,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 136574 },	-- Charles Davenport
 				["coord"] = { 29.8, 67.1, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(159839),	-- Spider Silk (QI!)
 				},
 			}),
@@ -222,7 +222,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["provider"] = { "n", 137554 },	-- Toki
 				["coord"] = { 34.3, 26.2, STORMSONG_VALLEY },
-				["g"] = bubbleDown({ ["races"] = ALLIANCE_ONLY }, {	-- even the hidden Horde appearances can only be unlocked by completing the quest on an Alliance character
+				["groups"] = bubbleDown({ ["races"] = ALLIANCE_ONLY }, {	-- even the hidden Horde appearances can only be unlocked by completing the quest on an Alliance character
 					i(160335),	-- Tidespeaker Soles
 					i(160338),	-- Darkwater Waders
 					i(160341),	-- Stormchaser Footgear
@@ -256,7 +256,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 134639 },	-- Brother Pike
 				["coord"] = { 66.1, 47.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158211),	-- Abyssal Beacon (QI!)
 					i(155229),	-- Abyssal Beacon
 					i(155228),	-- Tideguard Bulwark
@@ -283,7 +283,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130190 },	-- Sergeant Calvin
 				["coord"] = { 57.6, 66.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155877),	-- Horde Explosive (QI!)
 				},
 			}),
@@ -325,7 +325,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 138735 },	-- Felecia Gladstone
 				["coord"] = { 46.4, 36.9, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160604),	-- Patched Mine Sweeper (QI!)
 				},
 			}),
@@ -340,7 +340,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131002 },
 				["coord"] = { 30.2, 59.2, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(159752),	-- Fishbone Key (QI!)
 				},
 			}),
@@ -374,7 +374,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 49832 },	-- An Illegible Scroll
 				["provider"] = { "n", 135794 },	-- Scrollsage Nola
 				["coord"] = { 40.6, 45.5, STORMSONG_VALLEY },
-				["g"] = {
+				["groups"] = {
 					i(155237),	-- Nola's Shawl
 					i(160384),	-- Tidespeaker Armbands
 					i(160387),	-- Darkwater Armbands
@@ -403,7 +403,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 136658 },	-- Marie Davenport
 				["coord"] = { 30.2, 66.7, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160302),	-- Box of Cookies (QI!)
 				},
 			}),
@@ -435,7 +435,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 133577 },	-- Master Gunner Line
 				["coord"] = { 25.9, 55.1, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(157783),	-- Slagshot Slammer (QI!)
 				},
 			}),
@@ -479,7 +479,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 132017 },	-- Ancel Mildenhall
 				["coord"] = { 68.5, 67.7, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156628),	-- Brewmaster's Treatise Vol. 1 (QI!)
 				},
 			}),
@@ -491,7 +491,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 132017 },	-- Ancel Mildenhall
 				["coord"] = { 70.6, 69.6, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160331),	-- Apiarist's Protective Drape
 					i(160346),	-- Honey-Artisan's Ring
 				},
@@ -521,7 +521,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135067 },	-- Moxie Lockspinner
 				["coord"] = { 42.6, 54.3, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158636),	-- Mud Worm Meat (QI!)
 					i(158635),	-- Remote Earl-E Designator (QI!)
 					i(160514, {	-- Maokka's Box
@@ -534,7 +534,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131014 },	-- Rikal
 				["coord"] = { 34.9, 47.7, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158181),	-- Abyssal Fang (QI!)
 				},
 			}),
@@ -543,7 +543,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 136658 },	-- Marie Davenport
 				["coord"] = { 30.2, 66.7, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160052),	-- Flour Bomb (QI!)
 					i(160333),	-- Tidespeaker Shoes
 					i(160336),	-- Darkwater Footwraps
@@ -591,7 +591,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131248 },	-- Samuel Williams
 				["coord"] = { 66.4, 56.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156607),	-- Warship Blueprint (QI!)
 				},
 			}),
@@ -609,7 +609,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 132118 },	-- Farmer Burton
 				["coord"] = { 51.5, 65.9, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155197),	-- Darkwater Bracers
 					i(155195),	-- Dread Corsair Bracers
 					i(155196),	-- Stormchaser Bracers
@@ -634,7 +634,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131014 },	-- Rikal
 				["coord"] = { 34.9, 47.7, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158183),	-- Tidal Beacon (QI!)
 				},
 			}),
@@ -671,7 +671,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 134639 },	-- Brother Pike
 				["coord"] = { 66.1, 47.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158465),	-- Tidal Kris (QI!)
 				},
 			}),
@@ -708,7 +708,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131000 },	-- Commander Kellam
 				["coord"] = { 34.1, 54.8, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160519),	-- Fort Daelin Speargun
 					i(155219),	-- Zeth'jir Scaleguard Pillar
 					i(160521),	-- Kellam's Longknife
@@ -737,7 +737,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["coord"] = { 44.4, 55.6, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160668),	-- Lost Coin (QI!)
 					i(158226),	-- Magnetized Metal Collector (QI!)
 				},
@@ -747,7 +747,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 132118 },	-- Farmer Burton
 				["coord"] = { 51.5, 65.9, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156648),	-- Harvester Gizmo (QI!)
 				},
 			}),
@@ -776,7 +776,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 138735 },	-- Felecia Gladstone
 				["coord"] = { 46.4, 36.9, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160595),	-- Energized Core (QI!)
 					i(160593),	-- Grizz's Key (QI!)
 				},
@@ -795,7 +795,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 129808 },	-- Farmer Goldfield
 				["coord"] = { 50.7, 73.1, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160558),	-- River Carnations (QI!)
 				},
 			}),
@@ -812,7 +812,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 138735 },	-- Felecia Gladstone
 				["coord"] = { 46.9, 47.7, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160348),	-- Tidespeaker Handwraps
 					i(160351),	-- Darkwater Mitts
 					i(160354),	-- Stormchaser Strikers
@@ -827,7 +827,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 136574 },	-- Charles Davenport
 				["coord"] = { 29.8, 67.1, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(159776),	-- Gunpowder (QI!)
 					i(160350),	-- Darkwater Handwraps
 					i(160356),	-- Dread Corsair Gloves
@@ -850,7 +850,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130715 },	-- Taelia
 				["coord"] = { 63.4, 64.8, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155829),	-- Drenched Mainspring (QI!)
 				},
 			}),
@@ -863,7 +863,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130694 },	-- Mayor Roz
 				["coord"] = { 57.6, 66.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158692),	-- Darkwater Cinch
 					i(160364),	-- Darkwater Legwraps
 					i(158689),	-- Dread Corsair Greatbelt
@@ -900,7 +900,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130576 },	-- Brother Pike
 				["coord"] = { 59.2, 68.6, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(179386),	-- Tidesage Necklace
 				},
 			}),
@@ -911,7 +911,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["provider"] = { "n", 137453 },	-- Loroja <Watcher of Ai'twen>
 				["coord"] = { 35.7, 31.2, STORMSONG_VALLEY },
-				["g"] = bubbleDown({ ["races"] = ALLIANCE_ONLY }, {	-- Horde characters do not earn appearances from this quest.
+				["groups"] = bubbleDown({ ["races"] = ALLIANCE_ONLY }, {	-- Horde characters do not earn appearances from this quest.
 					i(160395),	-- Ai'twen's Light
 					i(160396),	-- Ai'twen's Defender
 					i(160352),	-- Darkwater Grasps
@@ -931,7 +931,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["coord"] = { 78.5, 54.8, STORMSONG_VALLEY },
 				["lvl"] = 50,
-				["g"] = {
+				["groups"] = {
 					i(157771),	-- Holy Water (QI!)
 				},
 			}),
@@ -946,7 +946,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135330 },	-- Nedly Grinner
 				["coord"] = { 41.1, 54.0, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160481),	-- Irontide Coin Bag (QI!)
 				},
 			}),
@@ -955,7 +955,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 133953 },	-- Mayor Roz
 				["coord"] = { 44.7, 64.5, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156516),	-- Sedative Quill (QI!)
 				},
 			}),
@@ -980,7 +980,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130714 },	-- Brother Pike
 				["coord"] = { 63.4, 64.8, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155919),	-- Dead Ringer (QI!)
 				},
 			}),
@@ -1026,7 +1026,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 136574 },	-- Charles Davenport
 				["coord"] = { 36.1, 74.6, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160063),	-- Pack of Rats (QI!)
 				},
 			}),
@@ -1039,7 +1039,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 136658 },	-- Marie Davenport
 				["coord"] = { 30.3, 66.7, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(159782),	-- Milk Pail (QI!)
 					i(159781),	-- Mountain Goat Milk (QI!)
 				},
@@ -1052,7 +1052,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["coord"] = { 78.5, 54.8, STORMSONG_VALLEY },
 				["lvl"] = 120,
-				["g"] = { i(163212) },	-- Cleansing Thurible (QI!)
+				["groups"] = { i(163212) },	-- Cleansing Thurible (QI!)
 			}),
 			q(52069, {	-- More Fodder
 				["sourceQuests"] = { 49831 },	-- From the Depths
@@ -1068,7 +1068,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135874 },	-- Lea Martinel
 				["coord"] = { 57.9, 55.5, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(159713),	-- Rebel Weapons (QI!)
 				},
 			}),
@@ -1095,7 +1095,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135517 },	-- Tideguard Victoria
 				["coord"] = { 60.9, 41.3, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(159157),	-- Rod of Tides (QI!)
 				},
 			}),
@@ -1113,7 +1113,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131003 },
 				["coord"] = { 34.5, 47.2, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158200),	-- Zeth'jir Channeling Rod (QI!)
 					i(160885),	-- Fort Daelin Lantern
 					i(160360),	-- Tidespeaker Legwarmers
@@ -1149,7 +1149,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131249 },	-- Taelia
 				["coord"] = { 66.4, 56.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156609),	-- Stormfused Weapon (QI!)
 					i(155204),	-- Brineworks Boot Knife
 					i(155214),	-- Brineworks Hullcracker
@@ -1166,7 +1166,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131003 },	-- Specialist Wembley
 				["coord"] = { 34.5, 47.2, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160337),	-- Darkwater Footpads
 					i(160343),	-- Dread Corsair Boots
 					i(155232),	-- Proudmoore Battalion Cloak
@@ -1179,7 +1179,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 132647 },	-- Ancel Mildenhall
 				["coord"] = { 70.6, 69.6, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156808),	-- Journal Pages (QI!)
 					i(156717),	-- Sticky Boot (QI!)
 				},
@@ -1207,7 +1207,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130714 },	-- Brother Pike
 				["coord"] = { 66.3, 56.6, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(157859),	-- Dead Ringer (QI!)
 				},
 			}),
@@ -1216,7 +1216,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 141223 },	-- Brother Pike
 				["coord"] = { 70.3, 36.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(162423),	-- Ritual Knife (QI!)
 					i(162425),	-- Ritual Lantern (QI!)
 					i(162429),	-- Ritual Robes (QI!)
@@ -1227,7 +1227,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 132292 },	-- Raimond Mildenhall
 				["coord"] = { 74.1, 72.7, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(157839),	-- Hive Mother's Stinger (QI!)
 				},
 			}),
@@ -1279,7 +1279,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 137691 },	-- Brother Pike
 				["coord"] = { 78.3, 28.8, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(162462),	-- Staff of Storms (PQI!)
 					o(293699, {	-- Scroll of Safe Passage
 						i(162456),	-- Ritual of Safe Passage (QI!)
@@ -1303,7 +1303,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135682 },	-- Patrick Eckhart
 				["coord"] = { 57.8, 55.3, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(159144),	-- Scent Vial (QI!)
 				},
 			}),
@@ -1320,7 +1320,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "o", 282478 },	-- Empty Crate
 				["coord"] = { 46.3, 77.0, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158735),	-- Stolen Crate (QI!)
 				},
 			}),
@@ -1329,7 +1329,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 132292 },	-- Raimond Mildenhall
 				["coord"] = { 74.1, 72.7, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156709),	-- Royal Jelly (QI!)
 				},
 			}),
@@ -1344,7 +1344,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 137506 },	-- Brother Pike
 				["coord"] = { 75.5, 26.9, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					azeriteItem(155180),	-- Darkwater Hood
 					azeriteItem(155186),	-- Darkwater Shoulderpads
 					azeriteItem(155177),	-- Dread Corsair Greathelm
@@ -1372,7 +1372,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130714 },	-- Brother Pike
 				["coord"] = { 66.4, 56.5, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					azeriteItem(155168),	-- Darkwater Tunic
 					azeriteItem(160878),	-- Darkwater Shoulderguards
 					azeriteItem(155166),	-- Dread Corsair Breastplate
@@ -1400,7 +1400,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 134639 },	-- Brother Pike
 				["coord"] = { 66.0, 47.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158681),	-- Lightning Tether
 				},
 			}),
@@ -1447,7 +1447,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 133953 },	-- Sergeant Calvin
 				["coord"] = { 46.7, 73.8, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155824),	-- Flask of Enraging Vapors (QI!)
 					i(155225),	-- Bramblehulk Greatsword
 					i(160522),	-- Brennadam Vinescythe
@@ -1470,7 +1470,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 136498 },	-- Taelia
 				["coord"] = { 59.9, 37.9, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158702),	-- Darkwater Bindings
 					i(158700),	-- Dread Corsair Vambraces
 					i(158701),	-- Stormchaser Shackles
@@ -1483,7 +1483,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 134447 },	-- Lost Farmhand
 				["coord"] = { 72.7, 72.2, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(157851),	-- Bee Pheromones (QI!)
 				},
 			}),
@@ -1516,7 +1516,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["description"] = "You receive the item that starts this quest from looting any treasure chest.",
 				["provider"] = { "i", 163856 },	-- Ancient Pilgrimage Scrollcasing
 				["_drop"] = { "g" },
-				["g"] = {
+				["groups"] = {
 					i(163853),	-- Pilgrimage Scroll (QI!)
 					i(163852),	-- Tortollan Pilgrimage Scroll (QI!)
 					azeriteItem(163863),	-- Bartered Vrykul Cowl
@@ -1548,7 +1548,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "o", 280727 },	-- Charred Note
 				["coord"] = { 68.6, 54.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156629),	-- Architect's Cipher (QI!)
 				},
 			}),
@@ -1574,7 +1574,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130715 },	-- Taelia
 				["coord"] = { 63.4, 64.8, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155193),	-- Darkwater Belt
 					i(155190),	-- Dread Corsair Girdle
 					i(155192),	-- Stormchaser Belt
@@ -1606,7 +1606,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 141223 },	-- Brother Pike
 				["coord"] = { 70.3, 36.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(162446),	-- Staff of Storms (QI!)
 				},
 			}),
@@ -1689,7 +1689,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130714 },	-- Brother Pike
 				["coord"] = { 63.4, 64.8, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155893),	-- Imbued Tidewater (QI!)
 					i(155173),	-- Darkwater Gloves
 					i(155174),	-- Dread Corsair Gauntlets
@@ -1727,7 +1727,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "o", 297492 },	-- Bulletin Board
 				["coord"] = { 51.0, 33.6, STORMSONG_VALLEY },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(163636),	-- Razorclaw Alpha Pelt (QI!)
 				},
 			}),
@@ -1736,7 +1736,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "o", 287958 },	-- Bulletin Board
 				["coord"] = { 30.6, 68.1, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158300),	-- Thundersnout's Snout (QI!)
 				},
 			}),
@@ -1745,7 +1745,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "o", 297492 },	-- Bulletin Board
 				["coord"] = { 51.0, 33.6, STORMSONG_VALLEY },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158300),	-- Thundersnout's Snout (QI!)
 				},
 			}),
@@ -1787,7 +1787,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					137677,	-- Toki
 				},
 				["coord"] = { 35.7, 31.2, STORMSONG_VALLEY },
-				["g"] = {
+				["groups"] = {
 					i(160429),	-- Rope and Hook (QI!)
 				},
 			}),
@@ -1812,7 +1812,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130694 },	-- Mayor Roz
 				["coord"] = { 57.6, 66.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(133510),	-- Warchief's Orders (QI!)
 				},
 			}),
@@ -1824,7 +1824,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131014 },	-- Rikal
 				["coord"] = { 34.9, 47.7, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158680),	-- Rikal's Ritual Beads
 				},
 			}),

@@ -55,7 +55,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(VENDORS, {
 				n(219215, {	-- Hotharn <Competitor's Recipes>
 					["coord"] = { 55.5, 77.1, DORNOGAL },
-					["g"] = sharedData({ ["cost"] = {{"c", HONOR, 7500}} }, {
+					["groups"] = sharedData({ ["cost"] = {{"c", HONOR, 7500}} }, {
 						filter(RECIPES, {
 							i(225433),	-- Design: Algari Competitor's Amulet (RECIPE!)
 							i(225432),	-- Design: Algari Competitor's Signet (RECIPE!)
@@ -191,7 +191,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				n(219212, {	-- Maara <War Mode Supplies>
 					["coord"] = { 60.3, 70.0, DORNOGAL },
-					["g"] = {
+					["groups"] = {
 						filter(MISC, sharedData({
 							["cost"] = {{"c", HONOR, 500}},
 						}, {
@@ -209,10 +209,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				n(219217, {	-- Velerd <Honor Quartermaster>
 					["coord"] = { 55.0, 76.5, DORNOGAL },
-					["g"] = {
+					["groups"] = {
 						i(225739, {	-- Algari Distinguishment
 							["cost"] = {{"c", HONOR, 2000}},
-							["g"] = {
+							["groups"] = {
 								i(137642),	-- Mark of Honor
 							},
 						}),

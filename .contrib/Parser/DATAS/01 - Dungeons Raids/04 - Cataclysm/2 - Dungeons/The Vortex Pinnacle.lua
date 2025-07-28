@@ -17,19 +17,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				q(28845, {	-- The Vortex Pinnacle
-					["isBreadcrumb"] = true,
 					["qgs"] = {
 						45772,	-- General Ammantep
 						49943,	-- Itesh
-					},
-					["coords"] = {
-						{ 45.2, 37.7, ULDUM },	-- General Ammantep
 					},
 					["sourceQuests"] = {
 						27519,	-- Under the Choking Sands
 						27520,	-- Minions of Al'Akir
 						27706,	-- The Scepter of Orsis
 					},
+					["coords"] = {
+						{ 45.2, 37.7, ULDUM },	-- General Ammantep
+					},
+					["isBreadcrumb"] = true,
 				}),
 				q(28760, {	-- Vengeance for Orsis
 					["qg"] = 49943,	-- Itesh

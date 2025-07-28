@@ -40,7 +40,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["provider"] = { "n", 208474 },	-- Clarelle
 					["coord"] = { 51.4, 59.6, EMERALD_DREAM },
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(211389, {	-- Cache of Overblooming Treasures
 							i(211416),	-- Dream Wardens Insignia [Epic 1k BoA]
 							i(211417),	-- Dream Wardens Insignia [Epic 1k]

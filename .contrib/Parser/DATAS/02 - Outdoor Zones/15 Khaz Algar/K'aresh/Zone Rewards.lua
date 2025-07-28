@@ -5,6 +5,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 	m(KARESH, {
 		n(ZONE_REWARDS, {
 			n(ARMOR, {
+				filter(COSMETIC, {
+					-- Temp Placement. Should probably be moved to treasures after figuring it out? List items directly and attach coords to them, maybe?
+					-- These are related to 'Phase-Lost-and-Found" achievement
+					-- You find orbs while Phase Diving and when you go through them, you get the item
+					-- Orb can't be targeted so idk if it is an object or NPC.
+					i(250276),	-- Phase-Lost Greatsword
+					i(250300),	-- Phase-Lost Rod (51.2, 67.7, KARESH)
+				}),
 				filter(CLOTH, {
 					i(243507),	-- Wastelander Magi's Bands
 					i(243506),	-- Wastelander Magi's Cord
@@ -39,6 +47,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					i(243520),	-- Wastelander Skirmisher's Legguards
 					i(243521),	-- Wastelander Skirmisher's Pauldrons
 					i(243522),	-- Wastelander Skirmisher's Sash
+				}),
+				filter(MISC, {
+					i(242529),	-- Shadowtrade Imports
 				}),
 				filter(NECK_F, {
 					i(243499),	-- Wastelander's Gilded Pendant
@@ -75,7 +86,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					i(243545),	-- Wastelander's Gilded Staff
 					i(243535),	-- Wastelander's Gilded Stiletto
 					i(243538),	-- Wastelander's Gilded Warmace
-					--i(243550),	-- Wastelander's Gilded Warglaive
+					i(243550),	-- Wastelander's Gilded Warglaive
 				}),
 			}),
 		}),

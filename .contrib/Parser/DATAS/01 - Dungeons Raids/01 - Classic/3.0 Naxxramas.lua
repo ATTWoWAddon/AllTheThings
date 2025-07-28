@@ -104,10 +104,10 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 15192,	-- Anachronos
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 								["maps"] = { STRATHOLME },
-								["classes"] = { PRIEST },
 								["cost"] = {
 									{ "i", 22737, 1 },	-- Atiesh, Greatstaff of the Guardian
 								},
+								["classes"] = { PRIEST },
 								["groups"] = {
 									i(22631),	-- Atiesh, Greatstaff of the Guardian (Priest)
 								},
@@ -116,10 +116,10 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 15192,	-- Anachronos
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 								["maps"] = { STRATHOLME },
-								["classes"] = { MAGE },
 								["cost"] = {
 									{ "i", 22737, 1 },	-- Atiesh, Greatstaff of the Guardian
 								},
+								["classes"] = { MAGE },
 								["groups"] = {
 									i(22589),	-- Atiesh, Greatstaff of the Guardian (Mage)
 								},
@@ -128,10 +128,10 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 15192,	-- Anachronos
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 								["maps"] = { STRATHOLME },
-								["classes"] = { WARLOCK },
 								["cost"] = {
 									{ "i", 22737, 1 },	-- Atiesh, Greatstaff of the Guardian
 								},
+								["classes"] = { WARLOCK },
 								["groups"] = {
 									i(22630),	-- Atiesh, Greatstaff of the Guardian (Warlock)
 								},
@@ -140,10 +140,10 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 15192,	-- Anachronos
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 								["maps"] = { STRATHOLME },
-								["classes"] = { DRUID },
 								["cost"] = {
 									{ "i", 22737, 1 },	-- Atiesh, Greatstaff of the Guardian
 								},
+								["classes"] = { DRUID },
 								["groups"] = {
 									i(22632),	-- Atiesh, Greatstaff of the Guardian (Druid)
 								},
@@ -151,10 +151,10 @@ applyclassicphase(PHASE_SIX,
 							q(9250, {	-- Frame of Atiesh
 								["provider"] = { "i", 22727 },	-- Frame of Atiesh
 								["description"] = "Collect 40 of the Splinters to craft the Frame of Atiesh. This starts the quest chain for Atiesh. You will need to coordinate with your guild to get priority on Splinters.",
-								["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
 								["cost"] = {
 									{ "i", 22726, 40 },	-- Splinter of Atiesh
 								},
+								["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
 								["lvl"] = 60,
 							}),
 						},
@@ -173,13 +173,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22353, 1 },	-- Desecrated Helmet
 									{ "i", 22375, 15 },	-- Wartorn Plate Scrap
 									{ "i", 12360, 5 },	-- Arcanite Bar
 									{ "i", 20725, 1 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22418),	-- Dreadnaught Helmet
@@ -189,13 +189,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22354, 1 },	-- Desecrated Pauldrons
 									{ "i", 22375, 12 },	-- Wartorn Plate Scrap
 									{ "i", 12360, 2 },	-- Arcanite Bar
 									{ "i", 15407, 3 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22419),	-- Dreadnaught Pauldrons
@@ -205,13 +205,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22349, 1 },	-- Desecrated Breastplate
 									{ "i", 22375, 25 },	-- Wartorn Plate Scrap
 									{ "i", 12360, 4 },	-- Arcanite Bar
 									{ "i", 20725, 2 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22416),	-- Dreadnaught Breastplate
@@ -221,13 +221,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22355, 1 },	-- Desecrated Bracers
 									{ "i", 22375, 6 },	-- Wartorn Plate Scrap
 									{ "i", 12360, 1 },	-- Arcanite Bar
 									{ "i", 20725, 1 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22423),	-- Dreadnaught Bracers
@@ -237,13 +237,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22357, 1 },	-- Desecrated Gauntlets
 									{ "i", 22375, 8 },	-- Wartorn Plate Scrap
 									{ "i", 12360, 1 },	-- Arcanite Bar
 									{ "i", 15407, 5 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22421),	-- Dreadnaught Gauntlets
@@ -253,13 +253,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22356, 1 },	-- Desecrated Waistguard
 									{ "i", 22375, 8 },	-- Wartorn Plate Scrap
 									{ "i", 12360, 1 },	-- Arcanite Bar
 									{ "i", 15407, 5 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22422),	-- Dreadnaught Waistguard
@@ -269,13 +269,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22352, 1 },	-- Desecrated Legplates
 									{ "i", 22375, 20 },	-- Wartorn Plate Scrap
 									{ "i", 12360, 4 },	-- Arcanite Bar
 									{ "i", 15407, 3 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22417),	-- Dreadnaught Legplates
@@ -285,13 +285,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22358, 1 },	-- Desecrated Sabatons
 									{ "i", 22375, 12 },	-- Wartorn Plate Scrap
 									{ "i", 12360, 2 },	-- Arcanite Bar
 									{ "i", 15407, 3 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22420),	-- Dreadnaught Sabatons
@@ -303,13 +303,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22360, 1 },	-- Desecrated Headpiece
 									{ "i", 22375, 15 },	-- Wartorn Plate Scrap
 									{ "i", 12360, 5 },	-- Arcanite Bar
 									{ "i", 15407, 2 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22428),	-- Redemption Headpiece
@@ -319,13 +319,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22361, 1 },	-- Desecrated Spaulders
 									{ "i", 22375, 12 },	-- Wartorn Plate Scrap
 									{ "i", 12360, 2 },	-- Arcanite Bar
 									{ "i", 20725, 2 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22429),	-- Redemption Spaulders
@@ -335,13 +335,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22350, 1 },	-- Desecrated Tunic
 									{ "i", 22375, 25 },	-- Wartorn Plate Scrap
 									{ "i", 12360, 4 },	-- Arcanite Bar
 									{ "i", 15407, 3 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22425),	-- Redemption Tunic
@@ -351,13 +351,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22362, 1 },	-- Desecrated Wristguards
 									{ "i", 22375, 6 },	-- Wartorn Plate Scrap
 									{ "i", 12360, 1 },	-- Arcanite Bar
 									{ "i", 15407, 2 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22424),	-- Redemption Wristguards
@@ -367,13 +367,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22364, 1 },	-- Desecrated Handguards
 									{ "i", 22375, 8 },	-- Wartorn Plate Scrap
 									{ "i", 12360, 1 },	-- Arcanite Bar
 									{ "i", 15407, 5 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22426),	-- Redemption Handguards
@@ -383,13 +383,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22363, 1 },	-- Desecrated Girdle
 									{ "i", 22375, 8 },	-- Wartorn Plate Scrap
 									{ "i", 12360, 1 },	-- Arcanite Bar
 									{ "i", 20725, 3 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22431),	-- Redemption Girdle
@@ -399,13 +399,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22359, 1 },	-- Desecrated Legguards
 									{ "i", 22375, 20 },	-- Wartorn Plate Scrap
 									{ "i", 12360, 4 },	-- Arcanite Bar
 									{ "i", 20725, 2 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22427),	-- Redemption Legguards
@@ -415,13 +415,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22365, 1 },	-- Desecrated Boots
 									{ "i", 22375, 12 },	-- Wartorn Plate Scrap
 									{ "i", 12360, 2 },	-- Arcanite Bar
 									{ "i", 15407, 3 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22430),	-- Redemption Boots
@@ -433,13 +433,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22360, 1 },	-- Desecrated Headpiece
 									{ "i", 22374, 15 },	-- Wartorn Chain Scrap
 									{ "i", 12360, 4 },	-- Arcanite Bar
 									{ "i", 20725, 2 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22438),	-- Cryptstalker Headpiece
@@ -449,13 +449,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22361, 1 },	-- Desecrated Spaulders
 									{ "i", 22374, 12 },	-- Wartorn Chain Scrap
 									{ "i", 12360, 2 },	-- Arcanite Bar
 									{ "i", 15407, 3 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22439),	-- Cryptstalker Spaulders
@@ -465,13 +465,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22350, 1 },	-- Desecrated Tunic
 									{ "i", 22374, 25 },	-- Wartorn Chain Scrap
 									{ "i", 12360, 4 },	-- Arcanite Bar
 									{ "i", 15407, 3 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22436),	-- Cryptstalker Tunic
@@ -481,13 +481,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22362, 1 },	-- Desecrated Wristguards
 									{ "i", 22374, 6 },	-- Wartorn Chain Scrap
 									{ "i", 12360, 1 },	-- Arcanite Bar
 									{ "i", 15407, 2 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22443),	-- Cryptstalker Wristguards
@@ -497,13 +497,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22364, 1 },	-- Desecrated Handguards
 									{ "i", 22374, 8 },	-- Wartorn Chain Scrap
 									{ "i", 12360, 1 },	-- Arcanite Bar
 									{ "i", 15407, 5 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22441),	-- Cryptstalker Handguards
@@ -513,13 +513,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22363, 1 },	-- Desecrated Girdle
 									{ "i", 22374, 8 },	-- Wartorn Chain Scrap
 									{ "i", 12360, 1 },	-- Arcanite Bar
 									{ "i", 20725, 3 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22442),	-- Cryptstalker Girdle
@@ -529,13 +529,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22359, 1 },	-- Desecrated Legguards
 									{ "i", 22374, 20 },	-- Wartorn Chain Scrap
 									{ "i", 12360, 3 },	-- Arcanite Bar
 									{ "i", 15407, 5 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22437),	-- Cryptstalker Legguards
@@ -545,13 +545,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22365, 1 },	-- Desecrated Boots
 									{ "i", 22374, 12 },	-- Wartorn Chain Scrap
 									{ "i", 12360, 1 },	-- Arcanite Bar
 									{ "i", 20725, 3 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22440),	-- Cryptstalker Boots
@@ -563,7 +563,6 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22353, 1 },	-- Desecrated Helmet
 									{ "i", 22373, 15 },	-- Wartorn Leather Scrap
@@ -571,6 +570,7 @@ applyclassicphase(PHASE_SIX,
 									{ "i", 20725, 1 },	-- Nexus Crystal
 									{ "g", 750000 },	-- 75g
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22478),	-- Bonescythe Helmet
@@ -580,7 +580,6 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22354, 1 },	-- Desecrated Pauldrons
 									{ "i", 22373, 12 },	-- Wartorn Leather Scrap
@@ -588,6 +587,7 @@ applyclassicphase(PHASE_SIX,
 									{ "i", 20725, 1 },	-- Nexus Crystal
 									{ "g", 500000 },	-- 50g
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22479),	-- Bonescythe Pauldrons
@@ -597,13 +597,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22349, 1 },	-- Desecrated Breastplate
 									{ "i", 22373, 25 },	-- Wartorn Leather Scrap
 									{ "i", 12360, 2 },	-- Arcanite Bar
 									{ "i", 15407, 6 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22476),	-- Bonescythe Breastplate
@@ -613,7 +613,6 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22355, 1 },	-- Desecrated Bracers
 									{ "i", 22373, 6 },	-- Wartorn Leather Scrap
@@ -621,6 +620,7 @@ applyclassicphase(PHASE_SIX,
 									{ "i", 15407, 2 },	-- Cured Rugged Hide
 									{ "g", 100000 },	-- 10g
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22483),	-- Bonescythe Bracers
@@ -630,13 +630,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22357, 1 },	-- Desecrated Gauntlets
 									{ "i", 22373, 8 },	-- Wartorn Leather Scrap
 									{ "i", 12360, 1 },	-- Arcanite Bar
 									{ "i", 15407, 5 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22481),	-- Bonescythe Gauntlets
@@ -646,7 +646,6 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22356, 1 },	-- Desecrated Waistguard
 									{ "i", 22373, 8 },	-- Wartorn Leather Scrap
@@ -654,6 +653,7 @@ applyclassicphase(PHASE_SIX,
 									{ "i", 20725, 1 },	-- Nexus Crystal
 									{ "g", 150000 },	-- 15g
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22482),	-- Bonescythe Waistguard
@@ -663,7 +663,6 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22352, 1 },	-- Desecrated Legplates
 									{ "i", 22373, 20 },	-- Wartorn Leather Scrap
@@ -671,6 +670,7 @@ applyclassicphase(PHASE_SIX,
 									{ "i", 15407, 8 },	-- Cured Rugged Hide
 									{ "g", 1000000 },	-- 100g
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22477),	-- Bonescythe Legplates
@@ -680,7 +680,6 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22358, 1 },	-- Desecrated Sabatons
 									{ "i", 22373, 12 },	-- Wartorn Leather Scrap
@@ -688,6 +687,7 @@ applyclassicphase(PHASE_SIX,
 									{ "i", 20725, 2 },	-- Nexus Crystal
 									{ "g", 250000 },	-- 25g
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22480),	-- Bonescythe Sabatons
@@ -699,13 +699,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22367, 1 },	-- Desecrated Circlet
 									{ "i", 22376, 15 },	-- Wartorn Cloth Scrap
 									{ "i", 14342, 3 },	-- Mooncloth
 									{ "i", 20725, 3 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22514),	-- Circlet of Faith
@@ -715,13 +715,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22368, 1 },	-- Desecrated Shoulderpads
 									{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
 									{ "i", 14342, 2 },	-- Mooncloth
 									{ "i", 15407, 3 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22515),	-- Shoulderpads of Faith
@@ -731,13 +731,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22351, 1 },	-- Desecrated Robe
 									{ "i", 22376, 25 },	-- Wartorn Cloth Scrap
 									{ "i", 14342, 4 },	-- Mooncloth
 									{ "i", 20725, 2 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22512),	-- Robe of Faith
@@ -747,13 +747,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22369, 1 },	-- Desecrated Bindings
 									{ "i", 22376, 6 },	-- Wartorn Cloth Scrap
 									{ "i", 12363, 1 },	-- Arcane Crystal
 									{ "i", 20725, 1 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22519),	-- Bindings of Faith
@@ -762,12 +762,12 @@ applyclassicphase(PHASE_SIX,
 							q(9116, {	-- Gloves of Faith
 								["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22371, 1 },	-- Desecrated Gloves
 									{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
 									{ "i", 14342, 4 },	-- Mooncloth
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22517),	-- Gloves of Faith
@@ -777,13 +777,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22370, 1 },	-- Desecrated Belt
 									{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
 									{ "i", 12363, 2 },	-- Arcane Crystal
 									{ "i", 14342, 2 },	-- Mooncloth
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22518),	-- Belt of Faith
@@ -793,13 +793,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22366, 1 },	-- Desecrated Leggings
 									{ "i", 22376, 20 },	-- Wartorn Cloth Scrap
 									{ "i", 14342, 4 },	-- Mooncloth
 									{ "i", 20725, 2 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22513),	-- Leggings of Faith
@@ -809,13 +809,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22372, 1 },	-- Desecrated Sandals
 									{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
 									{ "i", 14342, 2 },	-- Mooncloth
 									{ "i", 15407, 3 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22516),	-- Sandals of Faith
@@ -827,13 +827,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22360, 1 },	-- Desecrated Headpiece
 									{ "i", 22374, 15 },	-- Wartorn Chain Scrap
 									{ "i", 12360, 4 },	-- Arcanite Bar
 									{ "i", 20725, 2 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22466),	-- Earthshatter Headpiece
@@ -843,13 +843,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22361, 1 },	-- Desecrated Spaulders
 									{ "i", 22374, 12 },	-- Wartorn Chain Scrap
 									{ "i", 12360, 2 },	-- Arcanite Bar
 									{ "i", 14342, 2 },	-- Mooncloth
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22467),	-- Earthshatter Spaulders
@@ -859,13 +859,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22350, 1 },	-- Desecrated Tunic
 									{ "i", 22374, 25 },	-- Wartorn Chain Scrap
 									{ "i", 12360, 4 },	-- Arcanite Bar
 									{ "i", 15407, 3 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22464),	-- Earthshatter Tunic
@@ -875,13 +875,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22362, 1 },	-- Desecrated Wristguards
 									{ "i", 22374, 6 },	-- Wartorn Chain Scrap
 									{ "i", 12360, 1 },	-- Arcanite Bar
 									{ "i", 15407, 2 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22471),	-- Earthshatter Wristguards
@@ -891,13 +891,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22364, 1 },	-- Desecrated Handguards
 									{ "i", 22374, 8 },	-- Wartorn Chain Scrap
 									{ "i", 12360, 1 },	-- Arcanite Bar
 									{ "i", 15407, 5 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22469),	-- Earthshatter Handguards
@@ -907,13 +907,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22363, 1 },	-- Desecrated Girdle
 									{ "i", 22374, 8 },	-- Wartorn Chain Scrap
 									{ "i", 12360, 1 },	-- Arcanite Bar
 									{ "i", 20725, 3 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22470),	-- Earthshatter Girdle
@@ -923,13 +923,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22359, 1 },	-- Desecrated Legguards
 									{ "i", 22374, 20 },	-- Wartorn Chain Scrap
 									{ "i", 12360, 3 },	-- Arcanite Bar
 									{ "i", 15407, 5 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22465),	-- Earthshatter Legguards
@@ -939,13 +939,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22365, 1 },	-- Desecrated Boots
 									{ "i", 22374, 12 },	-- Wartorn Chain Scrap
 									{ "i", 12360, 1 },	-- Arcanite Bar
 									{ "i", 20725, 3 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22468),	-- Earthshatter Boots
@@ -957,13 +957,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22367, 1 },	-- Desecrated Circlet
 									{ "i", 22376, 15 },	-- Wartorn Cloth Scrap
 									{ "i", 14342, 3 },	-- Mooncloth
 									{ "i", 20725, 3 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22498),	-- Frostfire Circlet
@@ -973,13 +973,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22368, 1 },	-- Desecrated Shoulderpads
 									{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
 									{ "i", 14342, 2 },	-- Mooncloth
 									{ "i", 15407, 3 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22499),	-- Frostfire Shoulderpads
@@ -989,13 +989,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22351, 1 },	-- Desecrated Robe
 									{ "i", 22376, 25 },	-- Wartorn Cloth Scrap
 									{ "i", 14342, 4 },	-- Mooncloth
 									{ "i", 20725, 2 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22496),	-- Frostfire Robe
@@ -1005,13 +1005,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22369, 1 },	-- Desecrated Bindings
 									{ "i", 22376, 6 },	-- Wartorn Cloth Scrap
 									{ "i", 12363, 1 },	-- Arcane Crystal
 									{ "i", 20725, 1 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22503),	-- Frostfire Bindings
@@ -1021,12 +1021,12 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22371, 1 },	-- Desecrated Gloves
 									{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
 									{ "i", 14342, 4 },	-- Mooncloth
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22501),	-- Frostfire Gloves
@@ -1036,13 +1036,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22370, 1 },	-- Desecrated Belt
 									{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
 									{ "i", 12363, 2 },	-- Arcane Crystal
 									{ "i", 14342, 2 },	-- Mooncloth
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22502),	-- Frostfire Belt
@@ -1052,13 +1052,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22366, 1 },	-- Desecrated Leggings
 									{ "i", 22376, 20 },	-- Wartorn Cloth Scrap
 									{ "i", 14342, 4 },	-- Mooncloth
 									{ "i", 20725, 2 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22497),	-- Frostfire Leggings
@@ -1068,13 +1068,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22372, 1 },	-- Desecrated Sandals
 									{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
 									{ "i", 14342, 2 },	-- Mooncloth
 									{ "i", 15407, 3 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22500),	-- Frostfire Sandals
@@ -1086,13 +1086,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22367, 1 },	-- Desecrated Circlet
 									{ "i", 22376, 15 },	-- Wartorn Cloth Scrap
 									{ "i", 14342, 3 },	-- Mooncloth
 									{ "i", 14344, 3 },	-- Large Brilliant Shard
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22506),	-- Plagueheart Circlet
@@ -1102,13 +1102,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22368, 1 },	-- Desecrated Shoulderpads
 									{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
 									{ "i", 14342, 2 },	-- Mooncloth
 									{ "i", 15407, 3 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22507),	-- Plagueheart Shoulderpads
@@ -1118,13 +1118,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22351, 1 },	-- Desecrated Robe
 									{ "i", 22376, 25 },	-- Wartorn Cloth Scrap
 									{ "i", 14342, 4 },	-- Mooncloth
 									{ "i", 20725, 2 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22504),	-- Plagueheart Robe
@@ -1134,13 +1134,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22369, 1 },	-- Desecrated Bindings
 									{ "i", 22376, 6 },	-- Wartorn Cloth Scrap
 									{ "i", 12363, 1 },	-- Arcane Crystal
 									{ "i", 20725, 1 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22511),	-- Plagueheart Bindings
@@ -1150,12 +1150,12 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22371, 1 },	-- Desecrated Gloves
 									{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
 									{ "i", 14342, 4 },	-- Mooncloth
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22509),	-- Plagueheart Gloves
@@ -1165,13 +1165,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22370, 1 },	-- Desecrated Belt
 									{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
 									{ "i", 14342, 2 },	-- Mooncloth
 									{ "i", 12363, 2 },	-- Arcane Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22510),	-- Plagueheart Belt
@@ -1181,13 +1181,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22366, 1 },	-- Desecrated Leggings
 									{ "i", 22376, 20 },	-- Wartorn Cloth Scrap
 									{ "i", 14342, 4 },	-- Mooncloth
 									{ "i", 20725, 2 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22505),	-- Plagueheart Leggings
@@ -1197,13 +1197,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22372, 1 },	-- Desecrated Sandals
 									{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
 									{ "i", 14342, 2 },	-- Mooncloth
 									{ "i", 15407, 3 },	-- Cured Rugged Hide
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22508),	-- Plagueheart Sandals
@@ -1215,13 +1215,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16135,	-- Rayne <Cenarion Circle>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22360, 1 },	-- Desecrated Headpiece
 									{ "i", 22373, 15 },	-- Wartorn Leather Scrap
 									{ "i", 15407, 6 },	-- Cured Rugged Hide
 									{ "i", 20725, 2 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22490),	-- Dreamwalker Headpiece
@@ -1231,13 +1231,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16135,	-- Rayne <Cenarion Circle>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22361, 1 },	-- Desecrated Spaulders
 									{ "i", 22373, 12 },	-- Wartorn Leather Scrap
 									{ "i", 15407, 5 },	-- Cured Rugged Hide
 									{ "i", 20725, 1 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22491),	-- Dreamwalker Spaulders
@@ -1247,13 +1247,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16135,	-- Rayne <Cenarion Circle>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22350, 1 },	-- Desecrated Tunic
 									{ "i", 22373, 25 },	-- Wartorn Leather Scrap
 									{ "i", 15407, 6 },	-- Cured Rugged Hide
 									{ "i", 20725, 2 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22488),	-- Dreamwalker Tunic
@@ -1263,13 +1263,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16135,	-- Rayne <Cenarion Circle>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22362, 1 },	-- Desecrated Wristguards
 									{ "i", 22373, 6 },	-- Wartorn Leather Scrap
 									{ "i", 15407, 2 },	-- Cured Rugged Hide
 									{ "i", 12363, 1 },	-- Arcane Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22495),	-- Dreamwalker Wristguards
@@ -1279,13 +1279,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16135,	-- Rayne <Cenarion Circle>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22364, 1 },	-- Desecrated Handguards
 									{ "i", 22373, 8 },	-- Wartorn Leather Scrap
 									{ "i", 15407, 5 },	-- Cured Rugged Hide
 									{ "i", 20725, 1 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22493),	-- Dreamwalker Handguards
@@ -1295,13 +1295,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16135,	-- Rayne <Cenarion Circle>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22363, 1 },	-- Desecrated Girdle
 									{ "i", 22373, 8 },	-- Wartorn Leather Scrap
 									{ "i", 15407, 2 },	-- Cured Rugged Hide
 									{ "i", 14342, 3 },	-- Mooncloth
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22494),	-- Dreamwalker Girdle
@@ -1311,13 +1311,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16135,	-- Rayne <Cenarion Circle>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22359, 1 },	-- Desecrated Legguards
 									{ "i", 22373, 20 },	-- Wartorn Leather Scrap
 									{ "i", 15407, 8 },	-- Cured Rugged Hide
 									{ "i", 20725, 1 },	-- Nexus Crystal
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22489),	-- Dreamwalker Legguards
@@ -1327,13 +1327,13 @@ applyclassicphase(PHASE_SIX,
 								["qg"] = 16135,	-- Rayne <Cenarion Circle>
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22365, 1 },	-- Desecrated Boots
 									{ "i", 22373, 12 },	-- Wartorn Leather Scrap
 									{ "i", 15407, 2 },	-- Cured Rugged Hide
 									{ "i", 14342, 3 },	-- Mooncloth
 								},
+								["repeatable"] = true,
 								["lvl"] = 60,
 								["groups"] = {
 									i(22492),	-- Dreamwalker Boots
@@ -1367,11 +1367,8 @@ applyclassicphase(PHASE_SIX,
 						q(9237, {	-- Glacial Cloak
 							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
-							-- #if BEFORE WRATH
-							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-							-- #endif
+							["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 							["cost"] = {
 								{ "i", 22682, 5 },	-- Frozen Rune
 								{ "i",  7080, 2 },	-- Essence of Water
@@ -1380,6 +1377,9 @@ applyclassicphase(PHASE_SIX,
 								{ "g", 2000000 },	-- 200g
 							},
 							["lvl"] = 60,
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["groups"] = {
 								i(22658),	-- Glacial Cloak
 							},
@@ -1388,10 +1388,6 @@ applyclassicphase(PHASE_SIX,
 							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
-							["classes"] = { PRIEST, MAGE, WARLOCK },
-							-- #if BEFORE WRATH
-							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-							-- #endif
 							["cost"] = {
 								{ "i", 22682, 5 },	-- Frozen Rune
 								{ "i",  7080, 4 },	-- Essence of Water
@@ -1399,7 +1395,11 @@ applyclassicphase(PHASE_SIX,
 								{ "i", 14227, 2 },	-- Ironweb Spider Silk
 								{ "g", 2000000 },	-- 200g
 							},
+							["classes"] = { PRIEST, MAGE, WARLOCK },
 							["lvl"] = 60,
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["groups"] = {
 								i(22654),	-- Glacial Gloves
 							},
@@ -1407,12 +1407,8 @@ applyclassicphase(PHASE_SIX,
 						q(9240, {	-- Glacial Vest
 							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
-							["classes"] = { PRIEST, MAGE, WARLOCK },
-							-- #if BEFORE WRATH
-							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-							-- #endif
+							["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 							["cost"] = {
 								{ "i", 22682, 8 },	-- Frozen Rune
 								{ "i",  7080, 6 },	-- Essence of Water
@@ -1420,7 +1416,11 @@ applyclassicphase(PHASE_SIX,
 								{ "i", 14227, 4 },	-- Ironweb Spider Silk
 								{ "g", 3000000 },	-- 300g
 							},
+							["classes"] = { PRIEST, MAGE, WARLOCK },
 							["lvl"] = 60,
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["groups"] = {
 								i(22652),	-- Glacial Vest
 							},
@@ -1429,10 +1429,6 @@ applyclassicphase(PHASE_SIX,
 							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
-							["classes"] = { PRIEST, MAGE, WARLOCK },
-							-- #if BEFORE WRATH
-							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-							-- #endif
 							["cost"] = {
 								{ "i", 22682, 4 },	-- Frozen Rune
 								{ "i",  7080, 2 },	-- Essence of Water
@@ -1440,7 +1436,11 @@ applyclassicphase(PHASE_SIX,
 								{ "i", 14227, 2 },	-- Ironweb Spider Silk
 								{ "g", 2000000 },	-- 200g
 							},
+							["classes"] = { PRIEST, MAGE, WARLOCK },
 							["lvl"] = 60,
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["groups"] = {
 								i(22655),	-- Glacial Wrists
 							},
@@ -1449,10 +1449,6 @@ applyclassicphase(PHASE_SIX,
 							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
-							["classes"] = { WARRIOR, PALADIN },
-							-- #if BEFORE WRATH
-							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-							-- #endif
 							["cost"] = {
 								{ "i", 22682, 4 },	-- Frozen Rune
 								{ "i", 7080, 2 },	-- Essence of Water
@@ -1460,7 +1456,11 @@ applyclassicphase(PHASE_SIX,
 								{ "i", 12360, 2 },	-- Arcanite Bar
 								{ "g", 2000000 },	-- 200g
 							},
+							["classes"] = { WARRIOR, PALADIN },
 							["lvl"] = 60,
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["groups"] = {
 								i(22671),	-- Icebane Bracers
 							},
@@ -1468,12 +1468,8 @@ applyclassicphase(PHASE_SIX,
 						q(9236, {	-- Icebane Breastplate
 							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
-							["classes"] = { WARRIOR, PALADIN },
-							-- #if BEFORE WRATH
-							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-							-- #endif
+							["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 							["cost"] = {
 								{ "i", 22682, 8 },	-- Frozen Rune
 								{ "i", 7080, 4 },	-- Essence of Water
@@ -1481,7 +1477,11 @@ applyclassicphase(PHASE_SIX,
 								{ "i", 12360, 2 },	-- Arcanite Bar
 								{ "g", 3000000 },	-- 300g
 							},
+							["classes"] = { WARRIOR, PALADIN },
 							["lvl"] = 60,
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["groups"] = {
 								i(22669),	-- Icebane Breastplate
 							},
@@ -1490,10 +1490,6 @@ applyclassicphase(PHASE_SIX,
 							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
-							["classes"] = { WARRIOR, PALADIN },
-							-- #if BEFORE WRATH
-							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-							-- #endif
 							["cost"] = {
 								{ "i", 22682, 5 },	-- Frozen Rune
 								{ "i", 7080, 2 },	-- Essence of Water
@@ -1501,7 +1497,11 @@ applyclassicphase(PHASE_SIX,
 								{ "i", 12360, 2 },	-- Arcanite Bar
 								{ "g", 2000000 },	-- 200g
 							},
+							["classes"] = { WARRIOR, PALADIN },
 							["lvl"] = 60,
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["groups"] = {
 								i(22670),	-- Icebane Gauntlets
 							},
@@ -1510,10 +1510,6 @@ applyclassicphase(PHASE_SIX,
 							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
-							["classes"] = { HUNTER, SHAMAN },
-							-- #if BEFORE WRATH
-							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-							-- #endif
 							["cost"] = {
 								{ "i", 22682, 4 },	-- Frozen Rune
 								{ "i",  7080, 5 },	-- Essence of Water
@@ -1521,7 +1517,11 @@ applyclassicphase(PHASE_SIX,
 								{ "i", 15408, 16 },	-- Heavy Scorpid Scale
 								{ "g", 2000000 },	-- 200g
 							},
+							["classes"] = { HUNTER, SHAMAN },
 							["lvl"] = 60,
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["groups"] = {
 								i(22665),	-- Icy Scale Bracers
 							},
@@ -1529,12 +1529,8 @@ applyclassicphase(PHASE_SIX,
 						q(9246, {	-- Icy Scale Breastplate
 							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
-							["classes"] = { HUNTER, SHAMAN },
-							-- #if BEFORE WRATH
-							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-							-- #endif
+							["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 							["cost"] = {
 								{ "i", 22682, 8 },	-- Frozen Rune
 								{ "i",  7080, 7 },	-- Essence of Water
@@ -1542,7 +1538,11 @@ applyclassicphase(PHASE_SIX,
 								{ "i", 15408, 24 },	-- Heavy Scorpid Scale
 								{ "g", 3000000 },	-- 300g
 							},
+							["classes"] = { HUNTER, SHAMAN },
 							["lvl"] = 60,
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["groups"] = {
 								i(22664),	-- Icy Scale Breastplate
 							},
@@ -1551,10 +1551,6 @@ applyclassicphase(PHASE_SIX,
 							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
-							["classes"] = { HUNTER, SHAMAN },
-							-- #if BEFORE WRATH
-							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-							-- #endif
 							["cost"] = {
 								{ "i", 22682, 5 },	-- Frozen Rune
 								{ "i",  7080, 5 },	-- Essence of Water
@@ -1562,7 +1558,11 @@ applyclassicphase(PHASE_SIX,
 								{ "i", 15408, 16 },	-- Heavy Scorpid Scale
 								{ "g", 2000000 },	-- 200g
 							},
+							["classes"] = { HUNTER, SHAMAN },
 							["lvl"] = 60,
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["groups"] = {
 								i(22666),	-- Icy Scale Gauntlets
 							},
@@ -1571,19 +1571,15 @@ applyclassicphase(PHASE_SIX,
 							["provider"] = { "i", 22719 },	-- Omarion's Handbook
 							["description"] = "You must not have a profession above 270 skill for you to get this item from Omarion.",
 							["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
+							["lvl"] = 60,
 							-- #if BEFORE WRATH
 							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
 							-- #endif
-							["lvl"] = 60,
 						}),
 						q(9241, {	-- Polar Bracers
 							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
-							["classes"] = { ROGUE, DRUID },
-							-- #if BEFORE WRATH
-							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-							-- #endif
 							["cost"] = {
 								{ "i", 22682, 4 },	-- Frozen Rune
 								{ "i",  7080, 3 },	-- Essence of Water
@@ -1591,7 +1587,11 @@ applyclassicphase(PHASE_SIX,
 								{ "i", 15407, 3 },	-- Cured Rugged Hide
 								{ "g", 2000000 },	-- 200g
 							},
+							["classes"] = { ROGUE, DRUID },
 							["lvl"] = 60,
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["groups"] = {
 								i(22663),	-- Polar Bracers
 							},
@@ -1600,10 +1600,6 @@ applyclassicphase(PHASE_SIX,
 							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
-							["classes"] = { ROGUE, DRUID },
-							-- #if BEFORE WRATH
-							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-							-- #endif
 							["cost"] = {
 								{ "i", 22682, 5 },	-- Frozen Rune
 								{ "i",  7080, 3 },	-- Essence of Water
@@ -1611,7 +1607,11 @@ applyclassicphase(PHASE_SIX,
 								{ "i", 12810, 12 },	-- Enchanted Leather
 								{ "g", 2000000 },	-- 200g
 							},
+							["classes"] = { ROGUE, DRUID },
 							["lvl"] = 60,
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["groups"] = {
 								i(22662),	-- Polar Gloves
 							},
@@ -1619,12 +1619,8 @@ applyclassicphase(PHASE_SIX,
 						q(9243, {	-- Polar Tunic
 							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
-							["classes"] = { ROGUE, DRUID },
-							-- #if BEFORE WRATH
-							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
-							-- #endif
+							["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 							["cost"] = {
 								{ "i", 22682, 8 },	-- Frozen Rune
 								{ "i",  7080, 5 },	-- Essence of Water
@@ -1632,7 +1628,11 @@ applyclassicphase(PHASE_SIX,
 								{ "i", 12810, 16 },	-- Enchanted Leather
 								{ "g", 3000000 },	-- 300g
 							},
+							["classes"] = { ROGUE, DRUID },
 							["lvl"] = 60,
+							-- #if BEFORE WRATH
+							["OnUpdate"] = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
+							-- #endif
 							["groups"] = {
 								i(22661),	-- Polar Tunic
 							},
@@ -1653,13 +1653,13 @@ applyclassicphase(PHASE_SIX,
 						}),
 						q(9121, {	-- The Dread Citadel - Naxxramas [Honored]
 							["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
-							["minReputation"] = { FACTION_ARGENT_DAWN, HONORED },	-- Argent Dawn, Honored.
-							["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
 							["altQuests"] = {
 								9122,	-- The Dread Citadel - Naxxramas [Revered]
 								9123,	-- The Dread Citadel - Naxxramas [Exalted]
 								9378,	-- Attunement [HIDDEN QUEST TRIGGER]
 							},
+							["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+							["minReputation"] = { FACTION_ARGENT_DAWN, HONORED },	-- Argent Dawn, Honored.
 							["cost"] = {
 								{ "i", 12363, 5 },	-- Arcane Crystal
 								{ "i", 14344, 2 },	-- Large Brilliant Shard
@@ -1671,13 +1671,13 @@ applyclassicphase(PHASE_SIX,
 						}),
 						q(9122, {	-- The Dread Citadel - Naxxramas [Revered]
 							["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
-							["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-							["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 							["altQuests"] = {
 								9121,	-- The Dread Citadel - Naxxramas [Honored]
 								9123,	-- The Dread Citadel - Naxxramas [Exalted]
 								9378,	-- Attunement [HIDDEN QUEST TRIGGER]
 							},
+							["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+							["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 							["cost"] = {
 								{ "i", 12363, 2 },	-- Arcane Crystal
 								{ "i", 20725, 1 },	-- Nexus Crystal
@@ -1687,13 +1687,13 @@ applyclassicphase(PHASE_SIX,
 						}),
 						q(9123, {	-- The Dread Citadel - Naxxramas [Exalted]
 							["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
-							["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
-							["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
 							["altQuests"] = {
 								9121,	-- The Dread Citadel - Naxxramas [Honored]
 								9122,	-- The Dread Citadel - Naxxramas [Revered]
 								9378,	-- Attunement [HIDDEN QUEST TRIGGER]
 							},
+							["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+							["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 							["lvl"] = 60,
 						}),
 						q(9120, {	-- The Fall of Kel'Thuzad

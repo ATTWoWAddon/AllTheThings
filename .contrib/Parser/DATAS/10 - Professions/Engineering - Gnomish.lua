@@ -157,8 +157,8 @@ profession(ENGINEERING, {
 					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
 					["sourceQuest"] = 3643,	-- Show Your Work
 					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
-					["cost"] = { { "g", 20000 } },	-- 2g
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "g", 20000 } },	-- 2g
 					["requireSkill"] = ENGINEERING,
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -171,10 +171,10 @@ profession(ENGINEERING, {
 					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
 					["sourceQuest"] = 3641,	-- Show Your Work
 					["coord"] = { 69.8, 50.2, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					["cost"] = { { "g", 20000 } },	-- 2g
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "g", 20000 } },	-- 2g
 					["requireSkill"] = ENGINEERING,
+					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 30,
 					["groups"] = {

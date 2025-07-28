@@ -9,7 +9,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	n(NIGHT_FAE, {
 		n(RENOWN, {
 			["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
-			["g"] = {
+			["groups"] = {
 				i(186473, {	-- A Tiny Winter Staff (Pepe!)
 					["description"] = "Requires Renown 56.",
 					["timeline"] = { ADDED_9_1_0 },
@@ -35,7 +35,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				WISPS_OF_MEMORY,
 				n(LEGENDARIES, {
 					["description"] = "Requires Renown 48.",
-					["g"] = {
+					["groups"] = {
 						i(186565),	-- Memory of Rampant Transference
 						i(187109),	-- Memory of a Blazing Slaughter
 						i(186687),	-- Memory of Celestial Spirits

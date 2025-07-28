@@ -392,7 +392,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							-- #endif
 						},
 					}),
-				}
+				},
 			}),
 		},
 	}),

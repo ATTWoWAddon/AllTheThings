@@ -10,7 +10,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			i(211515, {	-- Splintered Spark of Awakening
 				["description"] = "Drops from Dragonflight Dungeon/Raid & certain Outdoor content.\n\nEnable 'Debug Mode' to see the drop limitations for this Item for your character.",
-				["g"] = {
+				["groups"] = {
 					-- TODO: maybe a more interesting way to link 'drop amounts' via currency/HQT into Items in the future
 					currency(2800),	-- 10.2.6 Professions - Personal Tracker - S4 Spark Drops (Hidden)
 				},

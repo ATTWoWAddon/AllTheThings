@@ -94,7 +94,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			ach(15889, {	-- River Rapids Wrangler
 				["coord"] = { 45.0, 54.0, THE_AZURE_SPAN },
-				["g"] = {
+				["groups"] = {
 					i(198428),	-- Tuskarr Dinghy (TOY!)
 				},
 			}),

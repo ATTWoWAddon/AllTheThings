@@ -50,7 +50,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					19897,	-- Heroic: Stormstout Brewery
 					19895,	-- Heroic: Temple of the Jade Serpent
 				}},
-				["g"] = {
+				["groups"] = {
 					i(208491),	-- Timerunner's Seal
 				},
 			}),
@@ -196,11 +196,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				437,	-- Gate of the Setting Sun
 				438,	-- Gate Watch Tower
 			},
-			["g"] = {
+			["groups"] = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
 					e(649, {	-- Raigonn
 						["crs"] = { 56877 },	-- Raigonn
-						["g"] = {
+						["groups"] = {
 							ach(19902),	-- Gate of the Setting Sun
 						},
 					}),
@@ -208,7 +208,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				d(DIFFICULTY.DUNGEON.HEROIC, {
 					e(649, {	-- Raigonn
 						["crs"] = { 56877 },	-- Raigonn
-						["g"] = {
+						["groups"] = {
 							ach(19903),	-- Heroic: Gate of the Setting Sun
 						},
 					}),
@@ -222,11 +222,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				454,	-- Vaults of Kings Past
 				455,	-- Throne of Ancient Conquerors
 			},
-			["g"] = {
+			["groups"] = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
 					e(698, {	-- Xin the Weaponmaster
 						["crs"] = { 61398 },	-- Xin the Weaponmaster
-						["g"] = {
+						["groups"] = {
 							ach(19904),	-- Mogu'shan Palace
 						},
 					}),
@@ -234,7 +234,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				d(DIFFICULTY.DUNGEON.HEROIC, {
 					e(698, {	-- Xin the Weaponmaster
 						["crs"] = { 61398 },	-- Xin the Weaponmaster
-						["g"] = {
+						["groups"] = {
 							ach(19905),	-- Heroic: Mogu'shan Palace
 						},
 					}),
@@ -244,11 +244,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		inst(311, {	-- Scarlet Halls
 			["coord"] = { 78.0, 56.8, SCARLET_MONASTERY_ENTRANCE },
 			["maps"] = { 431, 432 },
-			["g"] = {
+			["groups"] = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
 					e(656, {	-- Flameweaver Koegler
 						["crs"] = { 59150 },	-- Flameweaver Koegler
-						["g"] = {
+						["groups"] = {
 							ach(19906),	-- Scarlet Halls
 						},
 					}),
@@ -256,7 +256,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				d(DIFFICULTY.DUNGEON.HEROIC, {
 					e(656, {	-- Flameweaver Koegler
 						["crs"] = { 59150 },	-- Flameweaver Koegler
-						["g"] = {
+						["groups"] = {
 							ach(19907),	-- Heroic: Scarlet Halls
 						},
 					}),
@@ -269,14 +269,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				SCARLET_MONASTERY,	-- Scarlet Monastery: Forlorn Cloister (First Boss)
 				436,	-- Scarlet Monasatery: Crusader's Chapel (Last two bosses)
 			},
-			["g"] = {
+			["groups"] = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
 					e(674, {	-- High Inquisitor Whitemane
 						["crs"] = {
 							3977,	-- High Inquisitor Whitemane
 							60040,	-- Commander Durand
 						},
-						["g"] = {
+						["groups"] = {
 							ach(19908),	-- Scarlet Monastery
 						},
 					}),
@@ -287,7 +287,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							3977,	-- High Inquisitor Whitemane
 							60040,	-- Commander Durand
 						},
-						["g"] = {
+						["groups"] = {
 							ach(19909),	-- Heroic: Scarlet Monastery
 						},
 					}),
@@ -299,11 +299,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			["maps"] = {
 				SCHOLOMANCE, 477, 478, 479,
 			},
-			["g"] = {
+			["groups"] = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
 					e(684, {	-- Darkmaster Gandling
 						["crs"] = { 59080 },
-						["g"] = {
+						["groups"] = {
 							ach(19910),	-- Scholomance
 						},
 					}),
@@ -311,7 +311,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				d(DIFFICULTY.DUNGEON.HEROIC, {
 					e(684, {	-- Darkmaster Gandling
 						["crs"] = { 59080 },
-						["g"] = {
+						["groups"] = {
 							ach(19911),	-- Heroic: Scholomance
 						},
 					}),
@@ -326,11 +326,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				445,	-- Snowdrift Dojo
 				446,	-- Sealed Chambers
 			},
-			["g"] = {
+			["groups"] = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
 					e(686, {	-- Taran Zhu
 						["crs"] = { 56884 },	-- Taran Zhu
-						["g"] = {
+						["groups"] = {
 							ach(19898),	-- Shado-Pan Monastery
 						},
 					}),
@@ -338,7 +338,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				d(DIFFICULTY.DUNGEON.HEROIC, {
 					e(686, {	-- Taran Zhu
 						["crs"] = { 56884 },	-- Taran Zhu
-						["g"] = {
+						["groups"] = {
 							ach(19899),	-- Heroic: Shado-Pan Monastery
 						},
 					}),
@@ -352,11 +352,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				458,	-- The Hollowed Out Tree
 				459,	-- Upper Tree Ring
 			},
-			["g"] = {
+			["groups"] = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
 					e(727, {	-- Wing Leader Ner'onok
 						["crs"] = { 62205 },	-- Wing Leader Ner'onok
-						["g"] = {
+						["groups"] = {
 							ach(19900),	-- Siege of Niuzao Temple
 						},
 					}),
@@ -364,7 +364,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				d(DIFFICULTY.DUNGEON.HEROIC, {
 					e(727, {	-- Wing Leader Ner'onok
 						["crs"] = { 62205 },	-- Wing Leader Ner'onok
-						["g"] = {
+						["groups"] = {
 							ach(19901),	-- Heroic: Siege of Niuzao Temple
 						},
 					}),
@@ -379,11 +379,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				441,	-- The Great Wheel
 				442,	-- The Tasting Room
 			},
-			["g"] = {
+			["groups"] = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
 					e(670, {	-- Yan-Zhu the Uncasked
 						["crs"] = { 59479 },	-- Yan-Zhu the Uncasked
-						["g"] = {
+						["groups"] = {
 							ach(19896),	-- Stormstout Brewery
 						},
 					}),
@@ -391,7 +391,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				d(DIFFICULTY.DUNGEON.HEROIC, {
 					e(670, {	-- Yan-Zhu the Uncasked
 						["crs"] = { 59479 },	-- Hoptallus
-						["g"] = {
+						["groups"] = {
 							ach(19897),	-- Heroic: Stormstout Brewery
 						},
 					}),
@@ -404,11 +404,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				429,	-- Temple of the Jade Serpent
 				430,	-- The Scrollkeeper's Sanctum
 			},
-			["g"] = {
+			["groups"] = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
 					e(335, {	-- Sha of Doubt
 						["crs"] = { 56439 },	-- Sha of Doubt
-						["g"] = {
+						["groups"] = {
 							ach(19894),	-- Temple of the Jade Serpent
 						},
 					}),
@@ -416,7 +416,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				d(DIFFICULTY.DUNGEON.HEROIC, {
 					e(335, {	-- Sha of Doubt
 						["crs"] = { 56439 },	-- Sha of Doubt
-						["g"] = {
+						["groups"] = {
 							ach(19895),	-- Heroic: Temple of the Jade Serpent
 						},
 					}),

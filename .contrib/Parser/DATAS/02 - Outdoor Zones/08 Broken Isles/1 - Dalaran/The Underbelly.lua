@@ -15,7 +15,7 @@ root(ROOTS.Zones, {
 						}),
 						ach(11066, {	-- Underbelly Tycoon
 							["cost"] = { { "c", 1149, 20000 } },	-- 20,000x Sightless Eyes
-							["g"] = {
+							["groups"] = {
 								i(138387),	-- Ratstallion (MOUNT!)
 							},
 						}),
@@ -42,7 +42,7 @@ root(ROOTS.Zones, {
 							["description"] = "This vendor is not always present. It can appear in either version of Dalaran.",
 							["coord"] = { 51.6, 40.6, LEGION_THE_UNDERBELLY },
 							["timeline"] = { ADDED_7_0_3 },
-							["g"] = {
+							["groups"] = {
 								i(136803, {	-- Dirty Tricks, Vol 1: Detection (CI!)
 									["timeline"] = { ADDED_7_0_3 },
 								}),
@@ -59,7 +59,7 @@ root(ROOTS.Zones, {
 						}),
 						n(97362, {	-- Dazzik "Proudmoore" <Magical Things>
 							["coord"] = { 66.2, 74.8, LEGION_THE_UNDERBELLY },
-							["g"] = {
+							["groups"] = {
 								i(138016, {	-- Clothes Chest Pattern: Dalaran Citizens
 									["cost"] = { { "c", 1149, 250 }, },	-- 250x Sightless Eye
 								}),
@@ -91,7 +91,7 @@ root(ROOTS.Zones, {
 						}),
 						n(97363, {	-- K'huta <Portals and Jujus>
 							["coord"] = { 66.0, 79.9, LEGION_THE_UNDERBELLY },
-							["g"] = {
+							["groups"] = {
 								i(139423, {	-- Croc Mojo
 									["cost"] = { { "c", 1149, 175 }, },	-- 175x Sightless Eye
 								}),
@@ -123,7 +123,7 @@ root(ROOTS.Zones, {
 						}),
 						n(97364, {	-- Laura Malley <Creatures>
 							["coord"] = { 58.0, 58.1, LEGION_THE_UNDERBELLY },
-							["g"] = {
+							["groups"] = {
 								i(137932, {	-- Pattern: Flaming Hoop (RECIPE!)
 									["cost"] = { { "c", 1149, 100 }, },		-- 100x Sightless Eye
 								}),
@@ -135,7 +135,7 @@ root(ROOTS.Zones, {
 								}),
 								i(139412, {	-- Young Mutant War Turtles
 									["cost"] = { { "c", 1149, 1500 }, },	-- 1,500x Sightless Eye
-									["g"] = {
+									["groups"] = {
 										pet(1912),	-- Young Mutant Warturtle (PET!)
 									},
 								}),
@@ -143,7 +143,7 @@ root(ROOTS.Zones, {
 						}),
 						n(97360, {	-- Matthew Rabis <Feral Warlock>
 							["coord"] = { 47.0, 56.6, LEGION_THE_UNDERBELLY },
-							["g"] = {
+							["groups"] = {
 								i(137828, {	-- Design: Twisted Pandemonite Choker [Rank 2] (RECIPE!)
 									["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
 								}),
@@ -160,7 +160,7 @@ root(ROOTS.Zones, {
 						}),
 						n(97361, {	-- Oxana Demonslay <Weapons and Secrets>
 							["coord"] = { 67.4, 18.1, LEGION_THE_UNDERBELLY },
-							["g"] = {
+							["groups"] = {
 								i(137831, {	-- Design: Vindictive Pandemonite Choker [Rank 2] (RECIPE!)
 									["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
 								}),
@@ -171,7 +171,7 @@ root(ROOTS.Zones, {
 						}),
 						n(107760, {	-- Strap Bucklebolt <Belts>
 							["coord"] = { 65.8, 80.8, LEGION_THE_UNDERBELLY },
-							["g"] = {
+							["groups"] = {
 								i(137966, {	-- Pattern: Imbued Silkweave Cinch [Rank 2] (RECIPE!)
 									["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
 								}),
@@ -233,7 +233,7 @@ root(ROOTS.Zones, {
 						}),
 						n(97366, {	-- The Widow <Tools of Deception>
 							["coord"] = { 71.5, 24.0, LEGION_THE_UNDERBELLY },
-							["g"] = {
+							["groups"] = {
 								i(137829, {	-- Design: Subtle Shadowruby Pendant [Rank 2] (RECIPE!)
 									["cost"] = { { "c", 1149, 250 }, },		-- 250x Sightless Eye
 								}),

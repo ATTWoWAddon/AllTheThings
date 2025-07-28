@@ -124,11 +124,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					q(3370, {	-- In Nightmares [A]
 						["qg"] = 8418,	-- Falla Sagewind
 						["sourceQuest"] = 6981,	-- The Glowing Shard
-						["description"] = "She lives in a house on top of the mountain.",
 						["coord"] = { 48.2, 32.8, THE_BARRENS },
+						["description"] = "She lives in a house on top of the mountain.",
 						["timeline"] = { REMOVED_4_0_3 },
-						["lvl"] = 15,
 						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 15,
 						["groups"] = {
 							objective(1, {
 								["provider"] = { "i", 10649 },	-- Nightmare Shard
@@ -144,11 +144,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					q(3369, {	-- In Nightmares [H]
 						["qg"] = 8418,	-- Falla Sagewind
 						["sourceQuest"] = 6981,	-- The Glowing Shard
-						["description"] = "She lives in a house on top of the mountain.",
 						["coord"] = { 48.2, 32.8, THE_BARRENS },
+						["description"] = "She lives in a house on top of the mountain.",
 						["timeline"] = { REMOVED_4_0_3 },
-						["lvl"] = 15,
 						["races"] = HORDE_ONLY,
+						["lvl"] = 15,
 						["groups"] = {
 							objective(1, {
 								["provider"] = { "i", 10649 },	-- Nightmare Shard

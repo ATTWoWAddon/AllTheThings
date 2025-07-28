@@ -216,9 +216,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2199, {	-- Lore for a Price
 					["qg"] = 6826,	-- Talvash del Kissel
 					["sourceQuest"] = 2198,	-- The Shattered Necklace
-					["cost"] = { { "i", 2842, 5 } },	-- Silver Bar (x5)
 					["coord"] = { 36.4, 3.6, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 2842, 5 } },	-- Silver Bar (x5)
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 37,
 				}),
@@ -287,13 +287,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(3375, {	-- Replacement Phial
 					["qg"] = 6826,	-- Talvash del Kissel
 					["sourceQuest"] = 2199,	-- Lore for a Price
+					["coord"] = { 36.4, 3.6, IRONFORGE },
+					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 3827, 1 },	-- Mana Potion
 						{ "i", 3857, 1 },	-- Coal
 						{ "i", 1708, 1 },	-- Sweet Nectar
 					},
-					["coord"] = { 36.4, 3.6, IRONFORGE },
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 37,

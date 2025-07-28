@@ -4,7 +4,7 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
 	m(UNDERMINE, {
 		n(WORLD_QUESTS, {
-			["g"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+			["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
 				petbattle(q(86952, {	-- Approach the Croach
 					["provider"] = { "n", 237718 },	-- Creech
 					["coord"] = { 31.8, 79.6, UNDERMINE },
@@ -32,7 +32,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				}),
 				q(85519, {	-- Boom and Burst
 					["coord"] = { 64.9, 70.8, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						o(478679, {	-- Salvage Part
 							i(231889),	-- New-To-You Mechanical Parts (QI!)
 						}),
@@ -40,7 +40,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				}),
 				q(85269, {	-- Boom Balloon
 					["coord"] = { 37.0, 30.8, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						o(508718, {	-- Rooftop Teleporter
 							["coord"] = { 37.4, 33.7, UNDERMINE },
 						}),
@@ -57,7 +57,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				}),
 				q(85428, {	-- Code Violations
 					["coord"] = { 34.8, 28.0, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(232989),	-- S4F3-T Inspectors (QI!)
 					},
 				}),
@@ -70,7 +70,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				q(84948, {	-- Contract Work
 					-- This one is 'forge a pact'?
 					["coord"] = { 42.9, 52.3, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(234281),	-- Undermine Cartel Work
 					},
 				}),
@@ -96,19 +96,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				}),
 				q(84971, {	-- For Love of Grog
 					["coord"] = { 44.6, 78.4, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(229407),	-- Citrus Acid (QI!)
 					},
 				}),
 				q(85515, {	-- Free Samples!
 					["coord"] = { 27.8, 45.5, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(231900),	-- Sample Potion (QI!)
 					},
 				}),
 				q(85500, {	-- Hazardous Waste
 					["coord"] = { 56.6, 30.4, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						o(479594, {	-- Depleted Hotrod Battery
 							i(232054),	-- Depleted Hotrod Battery (QI!)
 						}),
@@ -117,7 +117,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				}),
 				q(85396, {	-- Heaps o' Scrap
 					["coord"] = { 44.2, 78.6, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(231022),	-- Bits o' Scrap (QI!)
 						i(231164),	-- Goblin Grapnel (QI!)
 						o(475990),	-- Junk Pile
@@ -129,7 +129,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				}),
 				q(85514, {	-- If They're Not Using It...
 					["coord"] = { 48.7, 49.3, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(231898),	-- Industrial-Grade Makeup Remover (QI!)
 						i(231895),	-- Leftover Mocktail (QI!)
 						i(231897),	-- Rusted Coin (QI!)
@@ -175,7 +175,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				}),
 				q(85518, {	-- Scalper Scum
 					["coord"] = { 49.9, 33.1, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						o(500203, {	-- Resold Goods
 							i(232922),	-- Resold Goods (QI!)
 						}),
@@ -189,7 +189,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				}),
 				q(85513, {	-- Underrider Grease
 					["coord"] = { 47.1, 55.7, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						i(231893),	-- Grease Residue (QI!)
 					},
 				}),
@@ -224,7 +224,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				-- Special Assigments
 				q(85487, {	-- Special Assignment: Boom! Headshot!
 					["coord"] = { 38.4, 52.0, UNDERMINE },
-					["g"] = {
+					["groups"] = {
 						o(504338, {	-- Rooftop Teleporter
 							["coord"] = { 35.8, 52.2, UNDERMINE },
 						}),

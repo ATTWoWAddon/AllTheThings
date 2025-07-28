@@ -47,11 +47,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			n(QUESTS, {
 				q(27355, {	-- A Boon for the Powerful
-					["sourceQuest"] = 27272,	-- Demisette Sends Word [CATA] / A Message From Evelyn Thorn [SL+]
-					["timeline"] = { ADDED_4_0_3 },
-					["classes"] = { WARLOCK },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(20, 20, 8),
 					["qgs"] = {
 						-- #if AFTER SL
 						164942,	-- Evelyn Thorn
@@ -59,6 +54,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						461,	-- Demisette Cloyce
 						-- #endif
 					},
+					["sourceQuest"] = 27272,	-- Demisette Sends Word [CATA] / A Message From Evelyn Thorn [SL+]
 					["coords"] = {
 						-- #if AFTER SL
 						{ 79.5, 69.9, STORMWIND_CITY },
@@ -66,6 +62,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 39.4, 84.8, STORMWIND_CITY },
 						-- #endif
 					},
+					["timeline"] = { ADDED_4_0_3 },
+					["classes"] = { WARLOCK },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(20, 20, 8),
 					["groups"] = {
 						objective(1, {	-- 0/1 Tenebrous Orb
 							["provider"] = { "i", 60882 },	-- Tenebrous Orb
@@ -101,7 +101,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(27337, {	-- A Fitting Weapon [Alliance]
-					["sourceQuest"] = 27225,	-- A Summons from Ander Germaine
 					["qgs"] = {
 						-- #if BEFORE SL
 						914,	-- Ander Germaine
@@ -109,6 +108,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						164939,	-- Signilda Hardforge <Warrior Trainer>
 						-- #endif
 					},
+					["sourceQuest"] = 27225,	-- A Summons from Ander Germaine
 					["coords"] = {
 						-- #if AFTER SL
 						{ 80.3, 70.4, STORMWIND_CITY },
@@ -195,6 +195,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						3352,	-- Ormak Grimshot
 						-- #endif
 					},
+					["sourceQuest"] = 27278,	-- Grimshot's Call [CATA] / Tamanji's Call [SL+]
 					["coords"] = {
 						-- #if AFTER SL
 						{ 73.8, 43.8, ORGRIMMAR },
@@ -202,7 +203,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 63.8, 32.8, ORGRIMMAR },
 						-- #endif
 					},
-					["sourceQuest"] = 27278,	-- Grimshot's Call [CATA] / Tamanji's Call [SL+]
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { HUNTER },
 					["races"] = HORDE_ONLY,
@@ -837,8 +837,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(SOD_PHASE_ONE, q(78307, {	-- The Horn of Xelthos (2/2)
 					["provider"] = { "o", 410369 },	-- Dead Drop
 					["sourceQuest"] = 78261,	-- The Horn of Xelthos (1/2)
-					["description"] = "15 minutes or so after you turn in the first part of the Horn of Xelthos, you'll receive another mail from C and be able to loot the rune from the dead drop outside of SFK.",
 					["coord"] = { 47.1, 71.1, SILVERPINE_FOREST },
+					["description"] = "15 minutes or so after you turn in the first part of the Horn of Xelthos, you'll receive another mail from C and be able to loot the rune from the dead drop outside of SFK.",
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["lvl"] = 20,
@@ -1674,8 +1674,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(1740, {	-- The Orb of Soran'ruk
 					["qg"] = 6247,	-- Doan Karhan
 					["coord"] = { 49.2, 57.2, THE_BARRENS },
-					["maps"] = { BLACKFATHOM_DEEPS },
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { BLACKFATHOM_DEEPS },
 					["classes"] = { WARLOCK },
 					["lvl"] = 20,
 					["groups"] = {

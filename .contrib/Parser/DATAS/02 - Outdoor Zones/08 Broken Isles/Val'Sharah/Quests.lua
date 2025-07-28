@@ -416,7 +416,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["sourceQuests"] = { 38743 },	-- The Fate of Val'Sharah
 					["coord"] = { 53.7, 55.8, VALSHARAH },
 					["icon"] = 237230,
-					["g"] = {
+					["groups"] = {
 						i(139043),	-- Tear of Elune (QI!)
 						i(130001),	-- Shaladrassil Cuirass
 						i(129993),	-- Shaladrassil Tunic
@@ -746,7 +746,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["provider"] = { "i", 127860 },	-- Warden's Signet
 					["coord"] = { 38.9, 65.1, VALSHARAH },
 					["cr"] = 94366,	-- Lelyn Swiftshadow
-					["g"] = {
+					["groups"] = {
 						i(127860),	-- Warden's Signet (QI!)
 					},
 				}),

@@ -108,7 +108,7 @@ InstanceHelper.Coords = EncounterCoords
 root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
-		["g"] = bubbleDownFiltered({
+		["groups"] = bubbleDownFiltered({
 			["isRaid"] = true,
 			["isWeekly"] = true,
 		},FILTERFUNC_questIDORencounterID,{

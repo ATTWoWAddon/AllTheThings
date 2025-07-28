@@ -8,7 +8,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_
 		["displayID"] = 92632,
 		["maps"] = { THE_MAW },
 		["cost"] = {{ "i", 184870, 1 }},	-- 1x Stygia Dowser
-		["g"] = {
+		["groups"] = {
 			prof(STYGIA_CRAFTING, sharedData({ ["u"] = TRAINING }, {
 				r(350276),	-- Armored Husk
 				r(350399),	-- Stygia Bar
@@ -22,7 +22,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_
 					{ 23.1, 68.3, THE_MAW },	-- First Grapple Point
 					{ 23.7, 75.3, THE_MAW },	-- Second Grapple Point
 				},
-				["g"] = {
+				["groups"] = {
 					i(185056),	-- Crumbling Stele
 				},
 			}),
@@ -69,7 +69,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_
 				},
 				["questID"] = 63707,
 				["cost"] = { { "i", 185474, 1 }, },		-- Armored Husk
-				["g"] = {
+				["groups"] = {
 					i(185630, {	-- Stygia Bar
 						["cost"] = {
 							{ "i", 185618, 10 },	-- 10x Stygia Dust
@@ -89,7 +89,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 63707 },	-- Soulsteel Anvil
 				["coord"] = { 23.2, 46.8, THE_MAW },	-- Beginning of the Path
 				["questID"] = 63666,
-				["g"] = {
+				["groups"] = {
 					i(185471),	-- Willing Wolf Soul
 				},
 			}),
@@ -101,9 +101,9 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_
 				},
 			}),
 			q(63684, {	-- Feral Shadehound
-				["description"] = "Once you have the |cFFa335eeArmored Husk|r and the |cFFa335eeWilling Wolf Soul|r, click on the Binding Altar at |cFFFFFFFF45.2, 48.3|r.\n\n|cffde1c1cAs soon as you summon the mount, it will start running, so make sure you're facing towards the interior of the zone and that you won't run off the edge and into the void!|r\n\nOnce you're mounted, your hotkeys will be replaced with runes.  Use them in the order provided by your |cFFa335eeCrumbling Stele|r, and you will receive the mount!",
 				["provider"] = { "i", 185475 },	-- Feral Shadehound
-				["g"] = {
+				["description"] = "Once you have the |cFFa335eeArmored Husk|r and the |cFFa335eeWilling Wolf Soul|r, click on the Binding Altar at |cFFFFFFFF45.2, 48.3|r.\n\n|cffde1c1cAs soon as you summon the mount, it will start running, so make sure you're facing towards the interior of the zone and that you won't run off the edge and into the void!|r\n\nOnce you're mounted, your hotkeys will be replaced with runes.  Use them in the order provided by your |cFFa335eeCrumbling Stele|r, and you will receive the mount!",
+				["groups"] = {
 					i(184168),	-- Bound Shadehound (MOUNT!)
 					i(185616),	-- Summon Feral Shadehound (QI!)
 				},

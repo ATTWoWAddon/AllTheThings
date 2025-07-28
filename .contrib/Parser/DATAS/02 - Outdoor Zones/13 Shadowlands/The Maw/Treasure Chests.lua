@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 64207,
 				["cost"] = { { "i", 186727, 4 } },	-- 4x Seal Breaker Key
 				["lockCriteria"] = { 1, "spellID", 354354 },	-- Learning Hand of Nilganihmaht prevents being able to do the quests again
-				["g"] = {
+				["groups"] = {
 					o(369133, {	-- Domination Seal #1
 						["questID"] = 64204,
 						["lockCriteria"] = { 1, "spellID", 354354 },	-- Learning Hand of Nilganihmaht prevents being able to do the quests again
@@ -32,13 +32,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			o(369129, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Nilganihmaht's Gold Band
 				["description"] = "Start climbing up at |cFFFFFFFF18.6, 39.0|r.",
 				["coord"] = { 19.2, 32.3, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(186608),	-- Nilganihmaht's Gold Band
 				},
 			})),
 			o(369602, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Hands of Defiance
 				["coord"] = { 25.5, 36.8, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(187255),	-- Hands of Defiance: A Chronicle of Woe
 				},
 			})),
@@ -53,7 +53,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 68.7, 42.6, THE_MAW },
 				},
 				["questID"] = 62682,
-				["g"] = {
+				["groups"] = {
 					i(186727),	-- Seal Breaker Key
 				},
 			})),
@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 69.2, 45.2, THE_MAW },
 				["questID"] = 64256,
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 				--	Epics
 					i(187017),	-- Brutalizer's Mantle
 					i(187240),	-- Field Warden's Watchful Eye
@@ -81,14 +81,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "In a small cave.",
 				["coord"] = { 66.5, 62.2, THE_MAW },
 				["questID"] = 64261,
-				["g"] = {
+				["groups"] = {
 					i(187352),	-- Jeweled Heart of Ezekiel
 				},
 			})),
 			n(173841, {	-- Paper Scrap
 				["description"] = "A tiny |cFFFFFFFFPaper Scrap|r on some rocks.",
 				["coord"] = { 19.3, 33.5, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(183063),	-- Words of the Warden
 				},
 			}),
@@ -122,7 +122,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			n(173811, {	-- Subject 638
 				["coord"] = { 35.8, 45.5, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(183069),	-- Tormentor's Notes
 				},
 			}),
@@ -133,14 +133,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 66.9, 55.9, THE_MAW },	-- Entrance
 				},
 				["questID"] = 62680,
-				["g"] = {
+				["groups"] = {
 					i(186727),	-- Seal Breaker Key
 				},
 			})),
 			n(173837, {	-- Torture Implements
 				["description"] = "Once you are inside the cave, you can find the box of |cFFFFFFFFTorture Implements|r at the back, around |cFFFFFFFF72.8, 16.9|r.",
 				["coord"] = { 27.7, 20.2, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(183060),	-- Box of Torments
 				},
 			}),
@@ -152,7 +152,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["questID"] = 64010,
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(186183),	-- Lil' Abom Head
 				},
 			})),
@@ -161,7 +161,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 38.5, 58.5, THE_MAW },
 				["questID"] = 64008,
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(186186),	-- Lil' Abom Right Hand
 				},
 			})),
@@ -172,7 +172,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["questID"] = 64009,
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(186187),	-- Lil' Abom Spare Arm
 				},
 			})),
@@ -184,7 +184,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["questID"] = 64011,
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(186184),	-- Lil' Abom Torso
 				},
 			})),
@@ -192,7 +192,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 29.4, 67.2, THE_MAW },
 				["questID"] = 64013,
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(186185),	-- Lil' Abom Legs
 				},
 			})),

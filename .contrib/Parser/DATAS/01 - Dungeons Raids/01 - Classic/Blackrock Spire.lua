@@ -157,8 +157,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 10637,	-- Malyfous Darkhammer
 				["sourceQuest"] = 5047,	-- Pip Quickwit, At Your Service!
 				["coord"] = { 61, 38.8, WINTERSPRING },
-				["maps"] = { SCHOLOMANCE, STRATHOLME },
 				["timeline"] = { REMOVED_4_0_3 },
+				["maps"] = { SCHOLOMANCE, STRATHOLME },
 				["cost"] = {
 					{ "i", 12731, 1 },	-- Pristine Hide of the Beast
 					{ "i", 12735, 10 },	-- Frayed Abomination Stitching
@@ -178,8 +178,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["provider"] = { "o", 176192 },	-- Catalogue of the Wayward
 				["sourceQuest"] = 5164,	-- Catalogue of the Wayward
 				["coord"] = { 39.4, 66.7, WESTERN_PLAGUELANDS },
-				["maps"] = { STRATHOLME, EASTERN_PLAGUELANDS },
 				["timeline"] = { REMOVED_4_0_3 },
+				["maps"] = { STRATHOLME, EASTERN_PLAGUELANDS },
 				["cost"] = {
 					{ "i", 12871, 1 },	-- Chromatic Carapace
 					{ "i", 12607, 10 },	-- Brilliant Chromatic Scale
@@ -393,12 +393,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			applyclassicphase(SOD_PHASE_FOUR, q(84495, {	-- Fiery Plate Gauntlets
 				["qg"] = 10637,	-- Malyfous Darkhammer <The Thorium Brotherhood>
 				["sourceQuest"] = 5103,	-- Hot Fiery Death
-				["requireSkill"] =
-					-- #if AFTER TBC
-					BLACKSMITHING,
-					-- #else
-					9788,	-- Armorsmith
-					-- #endif
 				["coord"] = { 61.0, 38.8, WINTERSPRING },
 				["timeline"] = { ADDED_1_15_3 },
 				["cost"] = {
@@ -407,6 +401,12 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ "i", 7078, 2 },	-- Essence of Fire
 					{ "i", 7910, 4 },	-- Star Ruby
 				},
+				["requireSkill"] =
+					-- #if AFTER TBC
+					BLACKSMITHING,
+					-- #else
+					9788,	-- Armorsmith
+					-- #endif
 				["lvl"] = 55,
 				["groups"] = {
 					i(227909, {	-- Plans: Fiery Plate Gauntlets of the Hidden Technique (RECIPE!)
@@ -421,12 +421,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			q(5124, {	-- Fiery Plate Gauntlets
 				["qg"] = 10637,	-- Malyfous Darkhammer <The Thorium Brotherhood>
 				["sourceQuest"] = 5103,	-- Hot Fiery Death
-				["requireSkill"] =
-					-- #if AFTER TBC
-					BLACKSMITHING,
-					-- #else
-					9788,	-- Armorsmith
-					-- #endif
 				["coord"] = { 61.0, 38.8, WINTERSPRING },
 				["timeline"] = {
 					-- #if SEASON_OF_DISCOVERY
@@ -441,6 +435,12 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ "i", 7078, 2 },	-- Essence of Fire
 					{ "i", 7910, 4 },	-- Star Ruby
 				},
+				["requireSkill"] =
+					-- #if AFTER TBC
+					BLACKSMITHING,
+					-- #else
+					9788,	-- Armorsmith
+					-- #endif
 				["lvl"] = 55,
 				["groups"] = {
 					i(12699, {	-- Plans: Fiery Plate Gauntlets (RECIPE!)
@@ -549,14 +549,14 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			q(5103, {	-- Hot Fiery Death
 				["provider"] = { "o", 176090 },	-- Human Remains
+				["description"] = "At the bottom floor of Lower Blackrock Spire near the lava.",
+				["timeline"] = { REMOVED_4_0_3 },
 				["requireSkill"] =
 					-- #if AFTER TBC
 					BLACKSMITHING,
 					-- #else
 					9788,	-- Armorsmith
 					-- #endif
-				["description"] = "At the bottom floor of Lower Blackrock Spire near the lava.",
-				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 55,
 				["groups"] = {
 					i(12812, {	-- Unfired Plate Gauntlets
@@ -584,8 +584,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["qg"] = 10637,	-- Malyfous Darkhammer
 				["sourceQuest"] = 5047,	-- Pip Quickwit, At Your Service!
 				["coord"] = { 61, 38.8, WINTERSPRING },
-				["maps"] = { SCHOLOMANCE, STRATHOLME },
 				["timeline"] = { REMOVED_4_0_3 },
+				["maps"] = { SCHOLOMANCE, STRATHOLME },
 				["cost"] = {
 					{ "i", 12731, 1 },	-- Pristine Hide of the Beast
 					{ "i", 12735, 5 },	-- Frayed Abomination Stitching
@@ -605,8 +605,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["provider"] = { "o", 176192 },	-- Catalogue of the Wayward
 				["sourceQuest"] = 5164,	-- Catalogue of the Wayward
 				["coord"] = { 39.4, 66.7, WESTERN_PLAGUELANDS },
-				["maps"] = { SCHOLOMANCE, STRATHOLME, EASTERN_PLAGUELANDS },
 				["timeline"] = { REMOVED_4_0_3 },
+				["maps"] = { SCHOLOMANCE, STRATHOLME, EASTERN_PLAGUELANDS },
 				["cost"] = {
 					{ "i", 12871, 1 },	-- Chromatic Carapace
 					{ "i", 12607, 10 },	-- Brilliant Chromatic Scale
@@ -628,8 +628,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ "n", 10918 },	-- Lorax
 					{ "i", 12806 },	-- Unforged Rune Covered Breastplate
 				},
-				["description"] = "Have an Unforged Rune Covered Breastplate in your bags to make his dialog available.",
 				["coord"] = { 63.8, 73.8, WINTERSPRING },
+				["description"] = "Have an Unforged Rune Covered Breastplate in your bags to make his dialog available.",
 				["timeline"] = { REMOVED_4_0_3 },
 				["requireSkill"] = BLACKSMITHING,
 				["learnedAt"] = 275,
@@ -706,10 +706,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			-- #endif
 			q(4866, {	-- Mother's Milk
 				["qg"] = 9563,	-- Ragged John
+				["coord"] = { 65, 23.6, BURNING_STEPPES },
 				-- #if BEFORE 4.0.3
 				["description"] = "You need to setup a coordinated group ONLY for this. If the healer or ANYONE removes the poison, you have to reset and try again.\n\nBefore the group starts, set your hearth to Stormwind or have a mage for a quick port to Stormwind after the group has gotten their bites.",
 				-- #endif
-				["coord"] = { 65, 23.6, BURNING_STEPPES },
 				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 55,
 				["groups"] = {
@@ -857,14 +857,14 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			q(5127, {	-- The Demon Forge
 				["qg"] = 10918,	-- Lorax
 				["sourceQuest"] = 5126,	-- Lorax's Tale
+				["coord"] = { 63.8, 73.8, WINTERSPRING },
+				["timeline"] = { REMOVED_4_0_3 },
 				["requireSkill"] =
 					-- #if AFTER TBC
 					BLACKSMITHING,
 					-- #else
 					9788,	-- Armorsmith
 					-- #endif
-				["coord"] = { 63.8, 73.8, WINTERSPRING },
-				["timeline"] = { REMOVED_4_0_3 },
 				["learnedAt"] = 275,
 				["lvl"] = 55,
 				["groups"] = {
@@ -1165,10 +1165,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					{ "n", 9077 },	-- Warlord Goretooth <Kargath Expeditionary Force>
 					{ "i", 12563 },	-- Warlord Goretooth's Command
 				},
+				["coord"] = { 5.8, 47.6, BADLANDS },
 				-- #if BEFORE 4.0.3
 				["description"] = "Talk to Warlord Goretooth and read through his full dialog for the item that starts the quest to be given to you.",
 				-- #endif
-				["coord"] = { 5.8, 47.6, BADLANDS },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,

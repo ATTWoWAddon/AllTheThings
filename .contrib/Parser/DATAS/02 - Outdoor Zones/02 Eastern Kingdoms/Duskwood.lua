@@ -139,10 +139,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26720, {	-- A Curse We Cannot Lift
 					["qg"] = 43730,	-- Oliver Harris
 					["sourceQuest"] = 26719,	-- Delivery to Master Harris
+					["coord"] = { 18.3, 57.6, DUSKWOOD },
 					-- #if AFTER 7.0.3
 					["description"] = "High-level players may require |cff0070ddSoft Foam Sword|r to lower creature health to 10%.",
 					-- #endif
-					["coord"] = { 18.3, 57.6, DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1893,13 +1893,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26618, {	-- Wolves at Our Heels
 					["qg"] = 264,	-- Commander Althea Ebonlocke
-					["coord"] = { 73.5, 46.9, DUSKWOOD },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						28564,	-- Hero's Call: Duskwood!
 						26728,	-- Hero's Call: Duskwood!
 					},
+					["coord"] = { 73.5, 46.9, DUSKWOOD },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/12 Dire Wolf slain
 							["provider"] = { "n", 43704 },	-- Dire Wolf

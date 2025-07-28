@@ -565,7 +565,7 @@ root(ROOTS.Zones, {
 							29666,	-- The Sting of Learning
 							29677,	-- The Sun Pearl
 						},
-						["coord"] = { 70.6, 38.7, THE_WANDERING_ISLE_STARTING_ZONE },
+						["coord"] = { 78.4, 43, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Cross to the Pool of Reflection
 								["description"] = "Jump into the swirling blue effects on the closest rock to the shore to jump up the rest of the stones to ledge.",
@@ -919,8 +919,8 @@ root(ROOTS.Zones, {
 						-- #if BEFORE LEGION
 						["sourceQuest"] = 30041,	-- Much to Learn (Hunter)
 						-- #endif
-						["classes"] = { HUNTER },
 						["coord"] = { 56.7, 18.2, THE_WANDERING_ISLE_STARTING_ZONE },
+						["classes"] = { HUNTER },
 						["groups"] = {
 							objective(1, {	-- Loot and Equip a Trainee's Crossbow
 								["provider"] = { "i", 73211 },	-- Trainee's Crossbow
@@ -932,8 +932,8 @@ root(ROOTS.Zones, {
 						-- #if BEFORE LEGION
 						["sourceQuest"] = 30045,	-- Much to Learn (Warrior)
 						-- #endif
-						["classes"] = { WARRIOR },
 						["coord"] = { 56.7, 18.2, THE_WANDERING_ISLE_STARTING_ZONE },
+						["classes"] = { WARRIOR },
 						["groups"] = {
 							-- #if AFTER 9.0.1
 							objective(1, {	-- Loot and Equip a Trainee's Axe
@@ -954,13 +954,13 @@ root(ROOTS.Zones, {
 						-- #if BEFORE LEGION
 						["sourceQuest"] = 30040,	-- Much to Learn (Mage)
 						-- #endif
+						["coord"] = { 56.7, 18.2, THE_WANDERING_ISLE_STARTING_ZONE },
 						["classes"] = {
 							MAGE,
 							-- #if AFTER DF
 							WARLOCK
 							-- #endif
 						},
-						["coord"] = { 56.7, 18.2, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Loot and Equip a Trainee's Spellblade
 								["provider"] = { "i", 76390 },	-- Trainee's Spellblade
@@ -975,8 +975,8 @@ root(ROOTS.Zones, {
 						-- #if BEFORE LEGION
 						["sourceQuest"] = 30042,	-- Much to Learn (Priest)
 						-- #endif
-						["classes"] = { PRIEST },
 						["coord"] = { 56.7, 18.2, THE_WANDERING_ISLE_STARTING_ZONE },
+						["classes"] = { PRIEST },
 						["groups"] = {
 							objective(1, {	-- Loot and Equip a Trainee's Mace
 								["provider"] = { "i", 73207 },	-- Trainee's Mace
@@ -991,8 +991,8 @@ root(ROOTS.Zones, {
 						-- #if BEFORE LEGION
 						["sourceQuest"] = 30039,	-- Much to Learn (Monk)
 						-- #endif
-						["classes"] = { MONK },
 						["coord"] = { 56.7, 18.2, THE_WANDERING_ISLE_STARTING_ZONE },
+						["classes"] = { MONK },
 						["groups"] = {
 							objective(1, {	-- Loot and Equip a Trainee's Staff
 								["provider"] = { "i", 73209 },	-- Trainee's Staff
@@ -1004,8 +1004,8 @@ root(ROOTS.Zones, {
 						-- #if BEFORE LEGION
 						["sourceQuest"] = 30043,	-- Much to Learn (Rogue)
 						-- #endif
-						["classes"] = { ROGUE },
 						["coord"] = { 56.7, 18.2, THE_WANDERING_ISLE_STARTING_ZONE },
+						["classes"] = { ROGUE },
 						["groups"] = {
 							objective(1, {	-- Loot and Equip a Trainee's Dagger
 								["provider"] = { "i", 73208 },	-- Trainee's Dagger
@@ -1020,8 +1020,8 @@ root(ROOTS.Zones, {
 						-- #if BEFORE LEGION
 						["sourceQuest"] = 30044,	-- Much to Learn (Shaman)
 						-- #endif
-						["classes"] = { SHAMAN },
 						["coord"] = { 56.7, 18.2, THE_WANDERING_ISLE_STARTING_ZONE },
+						["classes"] = { SHAMAN },
 						["groups"] = {
 							objective(1, {	-- Loot and Equip a Trainee's Axe
 								["provider"] = { "i", 76391 },	-- Trainee's Axe

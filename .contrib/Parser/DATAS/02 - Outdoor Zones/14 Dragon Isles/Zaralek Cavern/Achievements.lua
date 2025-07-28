@@ -24,7 +24,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			})),
 			ach(18100, {	-- Cavern Clawbbering
 				["cost"] = { { "i", 205686, 21 } },	-- 21x Clacking Claw
-				["g"] = {
+				["groups"] = {
 					i(205904),	-- Vibrant Clacking Claw (TOY!)
 					crit(59491, {
 						["_npcs"] = { 203515 },	-- Alcanon
@@ -157,7 +157,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						17917,	-- Mechanical Battler of Zaralek Cavern
 						17918,	-- Undead Battler of Zaralek Cavern
 					}},
-					["g"] = {
+					["groups"] = {
 						i(193377),	-- Gerald (PET!)
 					},
 				})),
@@ -358,7 +358,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					41183,	-- There's No Place Like Loamm
 					-- #endif
 				}},
-				["g"] = {
+				["groups"] = {
 					i(205206, {	-- Calescent Shalewing (MOUNT!)
 						["timeline"] = { ADDED_10_2_6 },
 					}),

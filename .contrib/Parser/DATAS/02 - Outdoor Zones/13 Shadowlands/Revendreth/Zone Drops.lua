@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		n(ZONE_DROPS, {
 			header(HEADERS.Spell, 921, {	-- Pickpocketing
 				["classes"] = { ROGUE },
-				["g"] = {
+				["groups"] = {
 					-- both of these only have pickpocket comments on Wowhead
 					i(180870),	-- Shadow's Bite
 					i(180868),	-- Fear's Heartpiercer
@@ -76,7 +76,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			i(187430),	-- Harvester's Sinvyr Chalice
 			i(183420, {	-- Hopebreaker's Right Boot
 				["classes"] = LEATHER_CLASSES,
-				["g"] = {
+				["groups"] = {
 					i(183418, {	-- Hopebreaker's Boots
 						["cost"] = {
 							{ "i", 183419, 1 },	-- Hopebreaker's Left Boot
@@ -86,7 +86,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			i(183417, {	-- Mail Courier's Right Runner
 				["classes"] = MAIL_CLASSES,
-				["g"] = {
+				["groups"] = {
 					i(182719, {	-- Mail Courier's Runners
 						["cost"] = {
 							{ "i", 183416, 1 },	-- Mail Courier's Left Runner
@@ -109,7 +109,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			i(183430, {	-- Researcher's Right Slipper
 				["classes"] = CLOTH_CLASSES,
-				["g"] = {
+				["groups"] = {
 					i(183425, {	-- Researcher's Slippers
 						["cost"] = {
 							{ "i", 183427, 1 },	-- Researcher's Left Slipper
@@ -122,7 +122,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			i(183423, {	-- Stone Legion Right Sabaton
 				["classes"] = PLATE_CLASSES,
-				["g"] = {
+				["groups"] = {
 					i(183421, {	-- Stone Legion Sabatons
 						["cost"] = {
 							{ "i", 183422, 1 },	-- Stone Legion Left Sabaton
@@ -152,10 +152,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 61194,	-- after the first day, when you can do the original quest item > second looted bell (this one), i haven't been able to loot more than one bell per day.  they also generally drop very quickly, like in < 10 mob kills, and this quest triggers on loot each time
 				["isDaily"] = true,
 				["crs"] = { 160716 },	-- Sinstone Rampager
-				["g"] = {
+				["groups"] = {
 					i(174652, {	-- Satchel of Forgotten Heirlooms
 						["description"] = "Awarded regardless of your judgment.", -- as of December 14th 2021 she gives the satchel regardless of player's decision.
-						["g"] = {
+						["groups"] = {
 							i(180387),	-- Crumbling Sinstone
 							i(180403),	-- Vessel of Distilled Regret
 							i(180402),	-- Barrier of the Forgotten

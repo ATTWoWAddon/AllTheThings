@@ -137,6 +137,7 @@ namespace ATT
             }
 
             // Merge Wago Battle Pet data into the containers
+            // TODO: move this to the Incorporate pass instead of manually outside the flow
             if (SOURCED.TryGetValue("speciesID", out Dictionary<long, HashSet<IDictionary<string, object>>> allSourcedSpecies))
             {
                 foreach (var sourceSpeciesDataPair in allSourcedSpecies)
@@ -145,7 +146,12 @@ namespace ATT
                     {
                         foreach(var speciesData in sourceSpeciesDataPair.Value)
                         {
-                            speciesData["npcID"] = battlePetSpecies.CreatureID;
+                            // TODO: better way to handle pet battle enemies which are species but also listed under NYI
+                            // for now just wipe the npcID of any species listed under NYI
+                            if (!speciesData.ContainsKey("_nyi"))
+                            {
+                                speciesData["npcID"] = battlePetSpecies.CreatureID;
+                            }
                         }
                     }
                 }

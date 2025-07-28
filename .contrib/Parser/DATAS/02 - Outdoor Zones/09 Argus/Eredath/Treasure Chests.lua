@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["description"] = "Use |cFFFFD700Shroud of Arcane Echoes|r to open the chest.",
 				["coord"] = { 40.9, 69.9, EREDATH },
 				["questID"] = 49153,
-				["g"] = {
+				["groups"] = {
 					i(153281),	-- Augari Wakener's Handwraps
 				},
 			}),
@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["description"] = "Use |cFFFFD700Shroud of Arcane Echoes|r to open the chest.",
 				["coord"] = { 70.6, 27.6, EREDATH },
 				["questID"] = 49129,
-				["g"] = {
+				["groups"] = {
 					i(153280),	-- Augari Wakener's Circlet
 				},
 			}),
@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sourceQuests"] = { 48107 },	-- The Sigil of Awakening
 				["coord"] = { 70.2, 59.8, EREDATH },
 				["questID"] = 48748,
-				["g"] = {
+				["groups"] = {
 					i(153279),	-- Augari Wakener's Cord
 				},
 			}),
@@ -33,7 +33,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["description"] = "You will need |cFFFFD700Light's Judgment|r to get into the cave.",
 				["coord"] = { 50.6, 38.5, EREDATH },
 				["questID"] = 48744,
-				["g"] = {
+				["groups"] = {
 					i(153325),	-- Eredath Vigilant's Redoubt
 				},
 			}),
@@ -41,7 +41,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sourceQuests"] = { 48107 },	-- The Sigil of Awakening
 				["coord"] = { 57.1, 76.8, EREDATH },
 				["questID"] = 48749,
-				["g"] = {
+				["groups"] = {
 					i(153267),	-- Enclave Aspirant's Hatchet
 				},
 			}),
@@ -49,7 +49,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["description"] = "Drop down into the hole by the waterfall and land on the ledge. You will need a |cFFFFD700Goblin Glider Kit|r to reach this chest.",
 				["coord"] = { 43.5, 54.4, EREDATH },
 				["questID"] = 48751,
-				["g"] = {
+				["groups"] = {
 					i(153313),	-- Praetor's Ornamental Claymore
 				},
 			}),
@@ -62,7 +62,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["description"] = "Use |cFFFFD700Shroud of Arcane Echoes|r to open the chest.",
 				["coord"] = { 62.2, 22.3, EREDATH },
 				["questID"] = 49151,
-				["g"] = {
+				["groups"] = {
 					i(153282),	-- Augari Wakener's Leggings
 				},
 			}),
@@ -75,7 +75,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["description"] = "You will need |cFFFFD700Light's Judgment|r to get into the cave.",
 				["coord"] = { 61.2, 72.5, EREDATH },
 				["questID"] = 48745,
-				["g"] = {
+				["groups"] = {
 					i(153286),	-- Augari Wakener's Cuffs
 				},
 			}),
@@ -83,13 +83,13 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["description"] = "You will need |cFFFFD700Lightforged Warframe|r to get into the cave.",
 				["coord"] = { 40.2, 51.5, EREDATH },
 				["questID"] = 48747,
-				["g"] = {
+				["groups"] = {
 					i(153328),	-- Mystic Wakener's Shiv
 					i(152854),	-- Nethershorn Lantern
 				},
 			}),
 			o_repeated({	-- Ancient Eredar Cache
-				["g"] = appendAllGroups({	-- Shared Rewards
+				["groups"] = appendAllGroups({	-- Shared Rewards
 					i(153336),	-- Eredath Lightseeker's Armguards
 					i(153332),	-- Eredath Lightseeker's Chestpiece
 					i(153330),	-- Eredath Lightseeker's Greaves
@@ -276,7 +276,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					{ 35.3, 36.0, EREDATH },
 					{ 37.7, 48.7, EREDATH },
 				},
-				["g"] = {
+				["groups"] = {
 					i(152854),	-- Nethershorn Lantern
 					i(152862),	-- Shredded Felbroken Shawl
 				},
@@ -308,7 +308,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					{ 37.9, 23.5, EREDATH },
 					{ 38.1, 39.9, EREDATH },
 				},
-				["g"] = {
+				["groups"] = {
 					i(152854),	-- Nethershorn Lantern
 					i(152862),	-- Shredded Felbroken Shawl
 				},

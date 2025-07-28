@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 40.3, 55.2, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 56156,	-- A Tempered Blade
-			["g"] = {
+			["groups"] = {
 				i(168846),	-- Pearl of Lucid Dreams (Rank 1)
 			},
 		}),
@@ -31,7 +31,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{ 32.8, 39.5, NAZJATAR },
 				{ 55.2, 48.8, NAZJATAR },
 			},
-			["g"] = {
+			["groups"] = {
 				i(169778),	-- Enchanting Crystal (QI!)
 			},
 		}),
@@ -43,7 +43,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				{ 32.8, 39.5, NAZJATAR },
 				{ 55.2, 48.8, NAZJATAR },
 			},
-			["g"] = {
+			["groups"] = {
 				i(169778),	-- Enchanting Crystal (QI!)
 			},
 		}),
@@ -51,7 +51,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 2.",
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 154297 },	-- Bladesman Inowari
-			["g"] = {
+			["groups"] = {
 				i(169903),	-- Nazjatar Survival Pack
 			},
 		}),
@@ -59,7 +59,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["provider"] = { "n", 151310 },	-- Kelfin Scout (Poen Gillbrack)
 			["description"] = "Offered when |cFFFFD700Poen Gillbrack|r reaches rank 7.",
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(169919),	-- Unshackled Commendation Crate
 			},
 		}),
@@ -67,7 +67,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["provider"] = { "n", 150202 },	-- Waveblade Hunter (Hunter Akana)
 			["races"] = ALLIANCE_ONLY,
 			["description"] = "Offered when |cFFFFD700Hunter Akana|r reaches rank 2.",
-			["g"] = {
+			["groups"] = {
 				i(169903),	-- Nazjatar Survival Pack
 			},
 		}),
@@ -75,7 +75,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 7.",
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 154297 },	-- Bladesman Inowari
-			["g"] = {
+			["groups"] = {
 				i(169904),	-- Ankoan Commendation Crate
 			},
 		}),
@@ -105,7 +105,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["provider"] = { "o", 325853 },	-- Empty Bookcase
 			["sourceQuest"] = 56156,	-- A Tempered Blade
 			["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
-			["g"] = {
+			["groups"] = {
 				i(168169),	-- Ancient Scroll (QI!)
 				o(326594, {	-- Arcane Tome
 					i(168170),	-- Arcane Tome (QI!)
@@ -118,7 +118,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["coord"] = { 26.0, 41.8, NAZJATAR },
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(168605),	-- Chitterspine Spine (QI!)
 			},
 		}),
@@ -129,7 +129,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["coord"] = { 53.1, 28.3, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(168199),	-- Arcane Cache Key (QI!)
 			},
 		}),
@@ -139,7 +139,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(168199),	-- Arcane Cache Key (QI!)
 			},
 		}),
@@ -161,7 +161,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = ALLIANCE_ONLY,
 			["description"] = "Must complete this quest for the rest of the zone to become available.",
 			["sourceQuest"] = 55363,	-- Rescue the Farseer
-			["g"] = {
+			["groups"] = {
 				spell(304905),	-- World Quests
 			},
 		}),
@@ -169,7 +169,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Offered when |cFFFFD700Hunter Akana|r reaches rank 7.",
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 150202 },	-- Hunter Akana
-			["g"] = {
+			["groups"] = {
 				i(169904),	-- Ankoan Commendation Crate
 			},
 		}),
@@ -178,7 +178,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 40.2, 55.2, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 55175,	-- Where the Road Leads
-			["g"] = {
+			["groups"] = {
 				-- Cloth
 				i(170520),	-- 7th Legionnaire's Hood
 				i(170519),	-- 7th Legionnaire's Amice
@@ -205,7 +205,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 48.4, 62.3, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 55094,	-- Stay Low, Stay Fast!
-			["g"] = {
+			["groups"] = {
 				i(170530),	-- Honorbound Artificer's Guise	\
 				i(170529),	-- Honorbound Artificer's Amice	 > when i completed the alliance version of the quest on my priest, it also awarded these.
 				i(170516),	-- Honorbound Artificer's Robes	/
@@ -247,7 +247,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 			["races"] = HORDE_ONLY,
 			["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 2.",
-			["g"] = {
+			["groups"] = {
 				i(169903),	-- Nazjatar Survival Pack
 			},
 		}),
@@ -281,7 +281,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["provider"] = { "o", 327596 },	-- Broken Abyssal Focus
 			["description"] = "This quest is not available unless you have 150 in Kul Tiran Alchemy, Blacksmithing, Engineering, Jewelcrafting, Leatherworking, or Tailoring.",
 			["sourceQuest"] = 56156,	-- A Tempered Blade
-			["g"] = {
+			["groups"] = {
 				i(169320),	-- Broken Power Core (QI!)
 			},
 		}),
@@ -291,7 +291,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["provider"] = { "o", 327596 },	-- Broken Abyssal Focus
 			["description"] = "This quest is not available unless you have 150 in Zandalari Alchemy, Blacksmithing, Engineering, Jewelcrafting, Leatherworking, or Tailoring.",
 			["sourceQuest"] = 55500,	-- Save a Friend
-			["g"] = {
+			["groups"] = {
 				i(169320),	-- Broken Power Core (QI!)
 			},
 		}),
@@ -302,7 +302,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			},
 			["races"] = HORDE_ONLY,
 			["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 5.",
-			["g"] = {
+			["groups"] = {
 				i(169908),	-- Cleverly Concealed Supplies
 			},
 		}),
@@ -314,7 +314,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 20.",
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 120,
-			["g"] = {
+			["groups"] = {
 				i(169354),	-- Brilliant Glimmershell (PET!)
 			},
 		}),
@@ -323,7 +323,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 51.0, 65.5, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 55500,	-- Save a Friend
-			["g"] = {
+			["groups"] = {
 				currency(1721),	-- Prismatic Manapearls
 			},
 		}),
@@ -600,7 +600,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 40.2, 55.2, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 150101 },	-- Lady Jaina Proudmoore
-			["g"] = {
+			["groups"] = {
 				currency(1721),	-- Prismatic Manapearl x25
 			},
 		}),
@@ -633,7 +633,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 38.8, 30.4, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 56037,	-- Stealing the Naga's Secrets
-			["g"] = {
+			["groups"] = {
 				i(168540),	-- Deepsea Crystal (QI!)
 			},
 		}),
@@ -642,7 +642,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 38.8, 30.4, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 56045,	-- Stealing the Naga's Secrets
-			["g"] = {
+			["groups"] = {
 				i(168540),	-- Deepsea Crystal (QI!)
 			},
 		}),
@@ -653,7 +653,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["coord"] = { 43.8, 54.5, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				o(325881, {	-- Sand Pile
 					i(168230),	-- Buried Treasure (QI!)
 				}),
@@ -676,7 +676,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 48.7, 86.8, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 54969,	-- Descent
-			["g"] = {
+			["groups"] = {
 				i(163887),	-- 7th Legionnaire's Longsword
 				i(163881),	-- 7th Legionnaire's Longbow
 				i(163890),	-- 7th Legionnaire's Claymore
@@ -694,7 +694,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 41.9, 80.6, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 54021,	-- The First Arcanist
-			["g"] = {
+			["groups"] = {
 				i(170275),	-- Honorbound Warmaul
 				i(163874),	-- Honorbound Decapitator
 				--i(163871),	-- Honorbound Pigstricker
@@ -772,7 +772,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 48.5, 62.1, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 55869,	-- Clearing Out the Cache
-			["g"] = {
+			["groups"] = {
 				i(168847),	-- Pearl of Manifest Ambitions (Rank 2)
 			},
 		}),
@@ -781,7 +781,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 48.5, 62.1, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 55500,	-- Save A Friend
-			["g"] = {
+			["groups"] = {
 				i(168846),	-- Pearl of Lucid Dreams (Rank 1)
 			},
 		}),
@@ -790,7 +790,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 48.8, 60.6, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 55481,	-- Scouting the Palace
-			["g"] = {
+			["groups"] = {
 				i(168850),	-- Time-Lost Battlefield Memento (Rank 1)
 			},
 		})),
@@ -799,7 +799,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 38.1, 55.3, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 57010,	-- Harnessing the Power
-			["g"] = {
+			["groups"] = {
 				i(168850),	-- Time-Lost Battlefield Memento (Rank 1)
 			},
 		})),
@@ -810,7 +810,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["coord"] = { 25.5, 26.5, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(170075),	-- Recipe: Unagi Skewer (RECIPE!)
 				o(326727, {	-- Shipwrecked Keg
 					i(168629),	-- Ocean "Infused" Lager (QI!)
@@ -824,7 +824,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
 			["isDaily"] = true,
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(170075),	-- Recipe: Unagi Skewer (RECIPE!)
 				o(326727, {	-- Shipwrecked Keg
 					i(168629),	-- Ocean "Infused" Lager (QI!)
@@ -859,7 +859,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 43.4, 49.8, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 55361,	-- The Lost Shaman
-			["g"] = {
+			["groups"] = {
 				i(167748),	-- Stone of Elements (QI!)
 			},
 		}),
@@ -868,7 +868,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 38.0, 48.6, NAZJATAR },
 			["isDaily"] = true,
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(168433),	-- Vent Kelp Sprout (QI!)
 			},
 		}),
@@ -907,7 +907,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 			["sourceQuest"] = 55500,	-- Save a Friend
-			["g"] = {
+			["groups"] = {
 				i(168577),	-- Imbued Pearl (QI!)
 			},
 		}),
@@ -938,7 +938,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
 			["isDaily"] = true,
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(168254),	-- Fathom Flesh (QI!)
 				i(168253),	-- Fathom Hook (QI!)
 			},
@@ -950,7 +950,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
 			["isDaily"] = true,
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(168254),	-- Fathom Flesh (QI!)
 				i(168253),	-- Fathom Hook (QI!)
 			},
@@ -962,7 +962,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 			["sourceQuest"] = 55500,	-- Save a Friend
-			["g"] = {
+			["groups"] = {
 				i(168404),	-- Envenomed Fangs (QI!)
 				i(168525),	-- Poison Globule (QI!)
 				i(168198),	-- Venom Droplet (QI!)
@@ -975,7 +975,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 56.5, 29.2, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 153147 },	-- Apprentice Ukaro
-			["g"] = {
+			["groups"] = {
 				i(168398),	-- Tome of Binding (QI!)
 			},
 		}),
@@ -986,7 +986,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 78.5, 26.8, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 152716 },	-- Arylina
-			["g"] = {
+			["groups"] = {
 				o(326595, {	-- Arylina's Diary
 					["coords"] = {
 						{ 76.2, 27.5, NAZJATAR },
@@ -999,7 +999,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 						{ 79.5, 27.7, NAZJATAR },
 						{ 80.3, 29.8, NAZJATAR },
 					},
-					["g"] = { i(168238) },	-- Arylina's Diary (QI!)
+					["groups"] = { i(168238) },	-- Arylina's Diary (QI!)
 				}),
 			},
 		}),
@@ -1020,7 +1020,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["description"] = "Offered when |cFFFFD700Poen Gillbrack|r reaches rank 13.",
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(169921),	-- Spine Guarded Supplies
 			},
 		}),
@@ -1029,7 +1029,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 40.3, 55.2, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 55937,	-- Clearing Out the Cache
-			["g"] = {
+			["groups"] = {
 				i(168847),	-- Pearl of Manifest Ambitions (Rank 2)
 			},
 		}),
@@ -1041,7 +1041,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 9.",
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(169916),	-- Brew-Soaked Supplies
 			},
 		}),
@@ -1052,7 +1052,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
-			["g"] = {
+			["groups"] = {
 				i(168406),	-- Captured Friend (QI!)
 				i(168407),	-- Friendship Net (QI!)
 			},
@@ -1072,7 +1072,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Offered when |cFFFFD700Poen Gillbrack|r reaches rank 20.",
 			["races"] = HORDE_ONLY,
 			["lvl"] = 120,
-			["g"] = {
+			["groups"] = {
 				i(169353),	-- Lustrous Glimmershell (PET!)
 			},
 		}),
@@ -1081,7 +1081,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 20.",
 			["races"] = HORDE_ONLY,
 			["lvl"] = 120,
-			["g"] = {
+			["groups"] = {
 				i(169199, {	-- Snapdragon Kelpstalker (MOUNT!)
 					["description"] = "Learning this mount also unlocks the Alliance |cFFA330C9Deepcoral Snapdragon|r mount.",
 				}),
@@ -1092,7 +1092,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Offered when |cFFFFD700Farseer Ori|r reaches Rank 7.",
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 154304 },	-- Farseer Ori
-			["g"] = {
+			["groups"] = {
 				i(169904),	-- Ankoan Commendation Crate (contained a benthic token, some war resources, and some zin'anthid)
 			},
 		}),
@@ -1110,7 +1110,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Offered when |cFFFFD700Hunter Akana|r reaches rank 9.",
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 150202 },	-- Hunter Akana
-			["g"] = {
+			["groups"] = {
 				i(169911, {	-- Liberated Naga Cache
 					currency(1721),	-- Prismatic Manapearl x10
 				--	i(168185),	-- Osmenite Ore x11
@@ -1135,7 +1135,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				54012,	-- Fortunate Souls
 				56063,	-- Dark Tides
 			},
-			["g"] = {
+			["groups"] = {
 				i(168817),	-- Siphoning Crystal (QI!)
 			},
 		}),
@@ -1181,7 +1181,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Offered when |cFFFFD700Farseer Ori|r reaches rank 20.",
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 120,
-			["g"] = {
+			["groups"] = {
 				i(170155, {	-- Carved Ankoan Charm (TOY!)
 					["description"] = "Learning this toy also unlocks the Horde |cFF0070DEBook of the Unshackled|r toy.",
 				}),
@@ -1199,7 +1199,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Loot the Arcane Chest at the provided coordinates to get the item that starts this quest.",
 			["provider"] = { "i", 170512 },	-- Lesser Benthic Arcanocrystal
 			["coord"] = { 79.4, 27.2, NAZJATAR },
-			["g"] = {
+			["groups"] = {
 				currency(1721),	-- Prismatic Manapearls x7
 				i(170547),	-- Mardivas's Arcane Cache Key (QI!)
 			},
@@ -1212,7 +1212,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				55601,	-- Coveted Crystals
 				55860,	-- Sea Slug Liquidation
 			},
-			["g"] = {
+			["groups"] = {
 				i(168541),	-- Residue Detector (QI!)
 			},
 		}),
@@ -1224,7 +1224,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				55867,	-- Coveted Crystals
 				55870,	-- Sea Slug Liquidation
 			},
-			["g"] = {
+			["groups"] = {
 				i(168541),	-- Residue Detector (QI!)
 			},
 		}),
@@ -1243,7 +1243,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				}),
 				o(327221, {	-- Kelpberry Cask
 					["coord"] = { 57.8, 40.9, NAZJATAR },
-					["g"] = { i(168174) },	-- Cask of Kelpberry Juice (QI!)
+					["groups"] = { i(168174) },	-- Cask of Kelpberry Juice (QI!)
 				}),
 			},
 		}),
@@ -1253,7 +1253,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["coord"] = { 59.5, 42.0, NAZJATAR },
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				o_repeated({
 					i(168173),	-- Kelpberry (QI!)
 					o(322791),	-- Kelpberry
@@ -1261,7 +1261,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				}),
 				o(327221, {	-- Kelpberry Cask
 					["coord"] = { 57.8, 40.9, NAZJATAR },
-					["g"] = { i(168174) },	-- Cask of Kelpberry Juice (QI!)
+					["groups"] = { i(168174) },	-- Cask of Kelpberry Juice (QI!)
 				}),
 			},
 		}),
@@ -1270,7 +1270,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 64.2, 52.0, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 55469,	-- To Zin-Azshari
-			["g"] = {
+			["groups"] = {
 				i(168002),	-- Arcane Scroll (QI!)
 				i(169147),	-- Cracked Sphere (QI!)
 				i(169148),	-- Discarded Staff (QI!)
@@ -1281,7 +1281,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 25.5, 26.4, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
-			["g"] = {
+			["groups"] = {
 				i(168647),	-- Mgglurky's Mugglrgl (QI!)
 			},
 		}),
@@ -1291,7 +1291,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 			["sourceQuest"] = 55500,	-- Save A Friend
-			["g"] = {
+			["groups"] = {
 				i(168300),	-- Dani's Treasure (QI!)
 			},
 		}),
@@ -1302,7 +1302,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 35.0, 49.0, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 150123 },	-- Tracker Onu
-			["g"] = {
+			["groups"] = {
 				i(166905),	-- Hunting Knife (QI!)
 				i(166904),	-- Snapshell Flesh (QI!)
 			},
@@ -1314,7 +1314,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 45.6, 19.6, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 154239 },	-- Tracker Otaru
-			["g"] = {
+			["groups"] = {
 				o(327158, {	-- Neptulian Clam
 					i(168658),	-- Neptulian Clam (QI!)
 				}),
@@ -1328,7 +1328,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["sourceQuest"] = 55500,	-- Save a Friend -- todo: verify sourceQuest. Most likely after unlocking the conch
 			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
-			["g"] = {
+			["groups"] = {
 				o(327158, {	-- Neptulian Clam
 					i(168658),	-- Neptulian Clam (QI!)
 				}),
@@ -1342,7 +1342,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["sourceQuest"] = 56156,	-- A Tempered Blade
 			["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
-			["g"] = {
+			["groups"] = {
 				i(168647),	-- Mgglurky's Mugglrgl (QI!)
 			},
 		}),
@@ -1351,7 +1351,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches Rank 13.",
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 154297 },	-- Bladesman Inowari
-			["g"] = {
+			["groups"] = {
 				i(169917),	-- Mysterious Azshari Chest (contained 1 stranged mineralized water, 2 battle-scarred augment runes, 16 gilded seaweave, 8 prismatic manapearls, and 115 war resources.  not sure if rewards are static or just "uhhh [throws random crafting materials/currency at you]"
 			},
 		}),
@@ -1360,7 +1360,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Offered when |cFFFFD700Farseer Ori|r reaches Rank 13.",
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 154304 },	-- Farseer Ori
-			["g"] = {
+			["groups"] = {
 				i(169917),	-- Mysterious Azshari Chest
 			},
 		}),
@@ -1374,7 +1374,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				55983,	-- A Safer Place (A)
 				55530,	-- A Safer Place (H)
 			},
-			["g"] = {
+			["groups"] = {
 				i(168093),	-- Grimy Manapearl Bracelet
 			},
 		}),
@@ -1390,7 +1390,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["sourceQuest"] = 56156,	-- A Tempered Blade
 			["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
-			["g"] = {
+			["groups"] = {
 				o(325759, {	-- Mana-Infused Clam
 					["coords"] = {
 						{ 28.8, 47.7, NAZJATAR },
@@ -1407,7 +1407,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 						{ 34.4, 44.4, NAZJATAR },
 						{ 37.0, 45.7, NAZJATAR },
 					},
-					["g"] = {
+					["groups"] = {
 						i(168158),	-- Enchanted Pearl (QI!)
 					},
 				}),
@@ -1420,7 +1420,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["coord"] = { 37.2, 19.2, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(168396),	-- Assault Plans (QI!)
 			},
 		}),
@@ -1431,7 +1431,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["coord"] = { 48.0, 46.6, NAZJATAR },
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(168482),	-- Benthic Sealant (QI!)
 			},
 		}),
@@ -1442,7 +1442,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["sourceQuest"] = 56156,	-- A Tempered Blade
 			["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
-			["g"] = {
+			["groups"] = {
 				i(168482),	-- Benthic Sealant (QI!)
 			},
 		}),
@@ -1453,7 +1453,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 45.9, 76.6, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 154245 },	-- Apprentice Unato
-			["g"] = {
+			["groups"] = {
 				i(168482),	-- Benthic Sealant (QI!)
 			},
 		}),
@@ -1464,7 +1464,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 44.6, 45.2, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 154244 },	-- Apprentice Uataro
-			["g"] = {
+			["groups"] = {
 				i(168482),	-- Benthic Sealant (QI!)
 			},
 		}),
@@ -1475,7 +1475,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 71.5, 31.5, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 154243 },	-- Apprentice Aonari
-			["g"] = {
+			["groups"] = {
 				i(168482),	-- Benthic Sealant (QI!)
 			},
 		}),
@@ -1486,7 +1486,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["sourceQuest"] = 56156,	-- A Tempered Blade
 			["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
-			["g"] = {
+			["groups"] = {
 				i(168482),	-- Benthic Sealant (QI!)
 			},
 		}),
@@ -1497,7 +1497,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
-			["g"] = {
+			["groups"] = {
 				i(168482),	-- Benthic Sealant (QI!)
 			},
 		}),
@@ -1508,7 +1508,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
-			["g"] = {
+			["groups"] = {
 				i(168482),	-- Benthic Sealant (QI!)
 			},
 		}),
@@ -1519,7 +1519,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
-			["g"] = {
+			["groups"] = {
 				i(168482),	-- Benthic Sealant (QI!)
 			},
 		}),
@@ -1530,7 +1530,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
-			["g"] = {
+			["groups"] = {
 				i(168482),	-- Benthic Sealant (QI!)
 			},
 		}),
@@ -1541,7 +1541,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
-			["g"] = {
+			["groups"] = {
 				i(169234),	-- Fresh Unagi (QI!)
 			},
 		}),
@@ -1586,7 +1586,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 13.",
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 55500,	-- Save a Friend
-			["g"] = {
+			["groups"] = {
 				i(169922),	-- Vim's Gift of Appreciation
 			},
 		}),
@@ -1619,7 +1619,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches Rank 5.",
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 154297 },	-- Bladesman Inowari
-			["g"] = {
+			["groups"] = {
 				i(169905),	-- Faintly Glowing Supplies
 			},
 		}),
@@ -1630,7 +1630,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["coord"] = { 45.0, 22.1, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(168261),	-- Reinforced Cache Key (QI!)
 			},
 		}),
@@ -1641,7 +1641,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["coord"] = { 45.0, 22.1, NAZJATAR },
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(168261),	-- Reinforced Cache Key (QI!)
 			},
 		}),
@@ -1652,7 +1652,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 78.9, 42.5, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 152532 },	-- Shirelle McFadden
-			["g"] = {
+			["groups"] = {
 				o(325883, {	-- Highborne Relic
 					i(168186),	-- Highborne Relic (QI!)
 				}),
@@ -1918,7 +1918,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 43.4, 49.8, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 55361,	-- The Lost Shaman
-			["g"] = {
+			["groups"] = {
 				i(167784),	-- Prison Key (QI!)
 			},
 		}),
@@ -1937,7 +1937,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 36.9, 27.0, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 55599,	-- Scouting Undercover
-			["g"] = {
+			["groups"] = {
 				i(168753),	-- Chitterspine Roe (QI!)
 			},
 		}),
@@ -1946,7 +1946,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 36.9, 27.0, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 55866,	-- Scouting Undercover
-			["g"] = {
+			["groups"] = {
 				i(168753),	-- Chitterspine Roe (QI!)
 			},
 		}),
@@ -1956,7 +1956,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 55385,	-- Scouting the Pens
 			["description"] = "Unlocks the rest of the zone and opens up World Quests.",
-			["g"] = {
+			["groups"] = {
 				spell(304906),	-- World Quests
 			},
 		}),
@@ -1973,7 +1973,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				56162,	-- Back Out to Sea (optional quest, but not an actual breadcrumb)
 				57010,	-- Harnessing the Power
 			},
-			["g"] = {
+			["groups"] = {
 				i(169482),	-- Benthic Leggings
 				i(169483),	-- Benthic Treads
 				i(169485),	-- Benthic Gauntlets
@@ -1988,7 +1988,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				56161,	-- Back Out to Sea (optional quest, but not an actual breadcrumb)
 				57010,	-- Harnessing the Power
 			},
-			["g"] = {
+			["groups"] = {
 				i(169482),	-- Benthic Leggings
 				i(169483),	-- Benthic Treads
 				i(169485),	-- Benthic Gauntlets
@@ -2018,7 +2018,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 37.8, 55.8, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 56156,	-- A Tempered Blade
-			["g"] = {
+			["groups"] = {
 				i(169817),	-- Scrying Stone (QI!)
 			},
 		}),
@@ -2027,7 +2027,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 49.0, 62.1, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 55500,	-- Save A Friend
-			["g"] = {
+			["groups"] = {
 				i(169817),	-- Scrying Stone (QI!)
 			},
 		}),
@@ -2036,7 +2036,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 38.8, 30.4, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 56037,	-- Stealing the Naga's Secrets
-			["g"] = {
+			["groups"] = {
 				i(168539),	-- Bioluminescent Ooze (QI!)
 			},
 		}),
@@ -2045,7 +2045,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 38.8, 30.4, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 56045,	-- Stealing the Naga's Secrets
-			["g"] = {
+			["groups"] = {
 				i(168539),	-- Bioluminescent Ooze (QI!)
 			},
 		}),
@@ -2064,7 +2064,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 76.4, 29.8, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 55485,	-- Terrors in the Deep
-			["g"] = {
+			["groups"] = {
 				i(168201),	-- Oculeth's Notes (QI!)
 			},
 		}),
@@ -2080,7 +2080,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 38.0, 48.6, NAZJATAR },
 			["sourceQuest"] = 55500,	-- Save A Friend
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(167538),	-- Unmarked Seashell (QI!)
 			},
 		}),
@@ -2089,7 +2089,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 66.0, 43.6, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 153617 },	-- Shandris Feathermoon
-			["g"] = {
+			["groups"] = {
 				i(168241),	-- Elemental Core (QI!)
 			},
 		}),
@@ -2100,7 +2100,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				56156,	-- A Tempered Blade
 				55500,	-- Save A Friend
 			},
-			["g"] = {
+			["groups"] = {
 				i(168947),	-- Scroll of Bursting Power (QI!)
 			},
 		}),
@@ -2111,7 +2111,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 62.5, 51.7, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 152737 },	-- Tracker Ikuto
-			["g"] = {
+			["groups"] = {
 				i(168247),	-- Snapdragon Claw (QI!)
 			},
 		}),
@@ -2132,7 +2132,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "o", 327170 },	-- Weapon Rack
 			["sourceQuest"] = 56039,	-- We Can't Have Dull Weapons
-			["g"] = {
+			["groups"] = {
 				i(168515),	-- Azerite Trident (QI!)
 			},
 		}),
@@ -2141,10 +2141,10 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 			["provider"] = { "o", 327170 },	-- Weapon Rack
 			["sourceQuest"] = 56047,	-- We Can't Have Dull Weapons
-			["g"] = {
+			["groups"] = {
 				o(326611, {
 					["coord"] = { 34.7, 21.1, NAZJATAR },
-					["g"] = { i(168516) },	-- Azerite Trident (QI!)
+					["groups"] = { i(168516) },	-- Azerite Trident (QI!)
 				}),
 			},
 		}),
@@ -2153,7 +2153,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 59.0, 19.0, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
-			["g"] = {
+			["groups"] = {
 				i(168841),	-- Scroll of Shirakess (QI!)
 			},
 		}),
@@ -2179,7 +2179,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				153308,	-- Fury of Azshara
 				153307,	-- Unleashed Arcanofiend
 			},
-			["g"] = {
+			["groups"] = {
 				ach(13763),	-- Back to the Depths!
 				i(170081, {	-- Abyssal Conch (A)
 					["races"] = ALLIANCE_ONLY,
@@ -2194,7 +2194,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["description"] = "Offered when |cFFFFD700Poen Gillbrack|r reaches Rank 5.",
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(169909, {	-- Poen's Neat Things
 					i(169942),	-- Vibrant Sea Blossom
 				}),
@@ -2204,7 +2204,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["provider"] = { "n", 151300 },	-- Kelfin Scout (Neri Sharpfin)
 			["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 13.",
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(169920),	-- Neri's Spare Supplies
 			},
 		}),
@@ -2222,7 +2222,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 7.",
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(169919),	-- Unshackled Commendation Crate
 			},
 		}),
@@ -2233,7 +2233,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
 			["isDaily"] = true,
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(169345),	-- Purified Water (QI!)
 			},
 		}),
@@ -2254,7 +2254,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 37.9, 52.9, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 56347,	-- An Abyssal Opportunity
-			["g"] = {
+			["groups"] = {
 				i(169329),	-- Eternal Ornament (QI!)
 			},
 		}),
@@ -2263,7 +2263,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 49.3, 61.8, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 56353,	-- An Abyssal Opportunity
-			["g"] = {
+			["groups"] = {
 				i(169329),	-- Eternal Ornament (QI!)
 			},
 		}),
@@ -2272,7 +2272,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 37.9, 52.9, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 56348,	-- The Eternal Palace: We Can Make It Stronger... (A)
-			["g"] = {
+			["groups"] = {
 				i(169329),	-- Eternal Ornament (QI!)
 			},
 		}),
@@ -2281,7 +2281,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 49.3, 61.8, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 56352,	-- The Eternal Palace: We Can Make It Stronger... (H)
-			["g"] = {
+			["groups"] = {
 				i(169329),	-- Eternal Ornament (QI!)
 			},
 		}),
@@ -2305,7 +2305,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				56095,	-- Legacy of Nar'anan
 				56118,	-- Snap Back
 			},
-			["g"] = {
+			["groups"] = {
 				i(169207),	-- Memory Core (QI!)
 				i(169209),	-- Scroll of Bursting Power (QI!)
 			},
@@ -2324,7 +2324,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				55486,	-- Secrets of Telemancy
 				55488,	-- Speak with the Dead
 			},
-			["g"] = {
+			["groups"] = {
 				i(168212),	-- Javelin of Suramar (QI!)
 			},
 		}),
@@ -2335,7 +2335,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
 			["isDaily"] = true,
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(168809),	-- Living Droplet (QI!)
 			},
 		}),
@@ -2355,7 +2355,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 74.2, 40.2, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 153617 },	-- Shandris Feathermoon
-			["g"] = {
+			["groups"] = {
 				i(168212),	-- Javelin of Suramar (QI!)
 			},
 		}),
@@ -2364,7 +2364,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Offered when |cFFFFD700Farseer Ori|r reaches Rank 5.",
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 154304 },	-- Farseer Ori
-			["g"] = {
+			["groups"] = {
 				i(169905),	-- Faintly Glowing Supplies
 			},
 		}),
@@ -2381,7 +2381,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["providers"] = {	-- add other two bodyguards/friends/whatever
 				{ "n", 154304 },	-- Farseer Ori
 			},
-			["g"] = {
+			["groups"] = {
 				i(169911, {	-- Liberated Naga Cache
 					currency(1721),	-- Prismatic Manapearl x10
 				--	i(168185),	-- Osmenite Ore x11
@@ -2404,7 +2404,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["provider"] = { "n", 154304 },	-- Waveblade Shaman (Farseer Ori)
 			["races"] = ALLIANCE_ONLY,
 			["description"] = "Offered when |cFFFFD700Farseer Ori|r reaches rank 2.",
-			["g"] = {
+			["groups"] = {
 				i(169903),	-- Nazjatar Survival Pack
 			},
 		}),
@@ -2445,7 +2445,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["coord"] = { 45.7, 83.7, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				o(325882, {	-- Brass Key
 					["coords"] = {
 						{ 45.3, 83.9, NAZJATAR },
@@ -2461,7 +2461,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 						{ 49.5, 87.2, NAZJATAR },
 						{ 49.9, 88.4, NAZJATAR },
 					},
-					["g"] = { i(168167) },	-- Brass Key (QI!)
+					["groups"] = { i(168167) },	-- Brass Key (QI!)
 				}),
 			},
 		}),
@@ -2482,7 +2482,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches rank 20.",
 			["races"] = HORDE_ONLY,
 			["lvl"] = 120,
-			["g"] = {
+			["groups"] = {
 				i(170154, {	-- Book of the Unshackled (TOY!)
 					["description"] = "Learning this toy also unlocks the Alliance |cFF0070DECarved Ankoan Charm|r toy.",
 				}),
@@ -2494,7 +2494,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 			["sourceQuest"] = 55500,	-- Save a Friend
-			["g"] = {
+			["groups"] = {
 				i(168421),	-- Fathom Ray Egg (QI!)
 				i(168425),	-- Swim Jet (QI!)
 			},
@@ -2509,7 +2509,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Offered when |cFFFFD700Hunter Akana|r reaches rank 20.",
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 150202 },	-- Hunter Akana
-			["g"] = {
+			["groups"] = {
 				i(169917),	-- Mysterious Azshari Cache
 			},
 		}),
@@ -2518,7 +2518,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "o", 327592 },	-- Enchanted Lock
 			["sourceQuest"] = 56246,	-- Enchanted Lock
-			["g"] = {
+			["groups"] = {
 				spell(305101),	-- Curios of Nazjatar
 			},
 		}),
@@ -2527,7 +2527,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 			["provider"] = { "o", 327592 },	-- Enchanted Lock
 			["sourceQuest"] = 56245,	-- Enchanted Lock
-			["g"] = {
+			["groups"] = {
 				spell(305101),	-- Curios of Nazjatar
 			},
 		}),
@@ -2535,7 +2535,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches rank 9.",
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 154297 },	-- Bladesman Inowari
-			["g"] = {
+			["groups"] = {
 				i(169911, {	-- Liberated Naga Cache
 					currency(1721),	-- Prismatic Manapearls x10 — also contained 10x osmenite ore, but not sure if that's a static reward
 				}),
@@ -2547,7 +2547,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 31.2, 37.5, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
-			["g"] = {
+			["groups"] = {
 				i(168519),	-- Hydra Scale (QI!)
 			},
 		}),
@@ -2557,7 +2557,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 34.4, 37.8, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
-			["g"] = {
+			["groups"] = {
 				i(168519),	-- Hydra Scale (QI!)
 			},
 		}),
@@ -2568,7 +2568,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 48.4, 52.5, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 150553 },	-- Tracker Okaju
-			["g"] = {
+			["groups"] = {
 				i(167070),	-- Nazjatar Shackle Key (QI!)
 			},
 		}),
@@ -2609,7 +2609,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["coord"] = { 56.3, 15.0, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(168260),	-- Void Cache Key (QI!)
 			},
 		}),
@@ -2619,7 +2619,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Requires |cFFFFD700Neri Sharpfin|r as your friend.",
 			["isDaily"] = true,
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(168260),	-- Void Cache Key (QI!)
 			},
 		}),
@@ -2629,7 +2629,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["provider"] = { "o", 326140 },	-- Bounty Board
 			["description"] = "Requires |cFFFFD700Hunter Akana|r as your friend.",
-			["g"] = {
+			["groups"] = {
 				i(168324),	-- Braxicus' Giant Claw (QI!)
 			},
 		}),
@@ -2639,7 +2639,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["provider"] = { "o", 326141 },	-- Bounty Board
 			["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
-			["g"] = {
+			["groups"] = {
 				i(168317),	-- Commander Sarj'eth's Head (QI!)
 			},
 		}),
@@ -2648,7 +2648,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["provider"] = { "o", 327585 },	-- Bounty Board
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(168317),	-- Commander Sarj'eth's Head (QI!)
 			},
 		}),
@@ -2667,7 +2667,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["coord"] = { 39.2, 54.1, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(168321),	-- Eye of Gler'thogg (QI!)
 			},
 		}),
@@ -2678,7 +2678,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["coord"] = { 48.0, 61.5, NAZJATAR },
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(168321),	-- Eye of Gler'thogg (QI!)
 			},
 		}),
@@ -2689,7 +2689,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["coord"] = { 39.2, 54.1, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(168323),	-- Haggronar's Head (QI!)
 			},
 		}),
@@ -2700,7 +2700,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["coord"] = { 39.2, 54.1, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(168322),	-- Inquisitor Ithriza's Head (QI!)
 			},
 		}),
@@ -2709,7 +2709,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["provider"] = { "o", 327585 },	-- Bounty Board
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(168322),	-- Inquisitor Ithriza's Head (QI!)
 			},
 		}),
@@ -2719,7 +2719,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["provider"] = { "o", 326141 },	-- Bounty Board
 			["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
-			["g"] = {
+			["groups"] = {
 				i(168319),	-- Lady Narjiss' Head (QI!)
 			},
 		}),
@@ -2729,7 +2729,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["provider"] = { "o", 327585 },	-- Bounty Board
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(168319),	-- Lady Narjiss' Head (QI!)
 			},
 		}),
@@ -2751,7 +2751,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["coord"] = { 48.0, 61.5, NAZJATAR },
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(168265),	-- Lady Naz'jess' Head (QI!)
 			},
 		}),
@@ -2762,7 +2762,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["coord"] = { 39.1, 54.1, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
-			["g"] ={
+			["groups"] ={
 				i(168318),	-- Lord Ha'kass' Head (QI!)
 			},
 		}),
@@ -2773,7 +2773,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["coord"] = { 48.0, 61.5, NAZJATAR },
 			["races"] = HORDE_ONLY,
-			["g"] ={
+			["groups"] ={
 				i(168318),	-- Lord Ha'kass' Head (QI!)
 			},
 		}),
@@ -2813,7 +2813,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 25.5, 26.5, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 153884 },	-- King Mrgl-Mrgl
-			["g"] = {
+			["groups"] = {
 				i(168628),	-- Crackleclaw Crab (QI!)
 			},
 		}),
@@ -2824,7 +2824,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["sourceQuest"] = 55500,	-- Save a Friend -- todo: verify sourceQuest. Most likely after unlocking the conch
 			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
-			["g"] = {
+			["groups"] = {
 				i(168628),	-- Crackleclaw Crab (QI!)
 			},
 		}),
@@ -2842,7 +2842,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				55597,	-- Bound by Honor
 				55595,	-- Deteriorating Knowledge
 			},
-			["g"] = {
+			["groups"] = {
 				i(168948),	-- Dried Kelp (QI!)
 				i(169477),	-- Benthic Girdle
 				i(169478),	-- Benthic Bracers
@@ -2857,7 +2857,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				55863,	-- Deteriorating Knowledge
 				55864,	-- The Price is Death
 			},
-			["g"] = {
+			["groups"] = {
 				i(168948),	-- Dried Kelp (QI!)
 				i(169477),	-- Benthic Girdle
 				i(169478),	-- Benthic Bracers
@@ -2868,7 +2868,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Germinating Seed can drop from any rare in Nazjatar.",
 			["provider"] = { "i", 167786 },	-- Germinating Seed
 			["_drop"] = { "g" },	-- Drops Zin'anthid
-			["g"] = {
+			["groups"] = {
 				currency(1721),	-- Prismatic Manapearl
 				i(167785),	-- Coral Petal (QI!)
 			},
@@ -2877,7 +2877,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Chum can drop from any rare in Nazjatar.",
 			["provider"] = { "i", 168155 },	-- Chum
 			["_drop"] = { "g" },
-			["g"] = {
+			["groups"] = {
 				currency(1721),	-- Prismatic Manapearls
 				i(168159),	-- Chum (QI!)
 				i(168155),	-- Chum (QI!)
@@ -2888,7 +2888,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Brinestone Pickaxe can drop from any rare in Nazjatar or be mined from Osmenite Deposits or Seams.",
 			["provider"] = { "i", 168081 },	-- Brinestone Pickaxe
 			["_drop"] = { "g" },	-- Drop Osmemite Ore
-			["g"] = {
+			["groups"] = {
 				currency(1721),	-- Prismatic Manapearl
 				i(168049),	-- Amber Brinestone Shard (QI!)
 				i(168051),	-- Azure Brinestone Shard (QI!)
@@ -2912,7 +2912,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 41.3, 58.2, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 154241 },	-- Seeker Anagi
-			["g"] = {
+			["groups"] = {
 				i(168432),	-- Fresh Sponge (QI!)
 			},
 		}),
@@ -2926,7 +2926,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["isDaily"] = true,
 			["coord"] = { 45.6, 58.6, NAZJATAR },
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(168432),	-- Fresh Sponge (QI!)
 			},
 		}),
@@ -2938,7 +2938,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["description"] = "Offered when |cFFFFD700Hunter Akana|r reaches rank 20.",
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 120,
-			["g"] = {
+			["groups"] = {
 				i(169200, {	-- Deepcoral Snapdragon (MOUNT!)
 					["description"] = "Learning this mount also unlocks the Horde |cFFA330C9Snapdragon Kelpstalker|r mount.",
 				}),
@@ -2948,7 +2948,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["provider"] = { "n", 151300 },	-- Kelfin Scout (Neri Sharpfin)
 			["races"] = HORDE_ONLY,
 			["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 7.",
-			["g"] = {
+			["groups"] = {
 				i(169919),	-- Unshackled Commendation Crate
 			},
 		}),
@@ -2957,7 +2957,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 5.",
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(169910, {	-- Vim's Scavenged Supplies
 					i(169942),	-- Vibrant Sea Blossom
 				}),
@@ -2968,7 +2968,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 36.9, 27.0, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuests"] = { 55599 },	-- Scouting Undercover
-			["g"] = {
+			["groups"] = {
 				i(168810),	-- Iridescent Pearl (QI!)
 			},
 		}),
@@ -2977,7 +2977,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["coord"] = { 36.9, 27.0, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 55866,	-- Scouting Undercover
-			["g"] = {
+			["groups"] = {
 				i(168810),	-- Iridescent Pearl (QI!)
 			},
 		}),
@@ -2986,7 +2986,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["description"] = "Offered when |cFFFFD700Poen Gillbract|r reaches Rank 9.",
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(169915),	-- Poen's Stashed Supplies
 			},
 		}),

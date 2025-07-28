@@ -57,7 +57,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			ach(12496, {	-- Stormsong and Dance
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					crit(40160, {	-- The Tidesages of Stormsong
 						["sourceQuests"] = { 51401 },	-- Carry On
 					}),
@@ -123,7 +123,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["questID"] = 52429,
 					["icon"] = 1001977,
 					["coord"] = { 44.44, 73.53, STORMSONG_VALLEY },
-					["g"] = {
+					["groups"] = {
 						i(162000),	-- Pig Nose
 					},
 				}),
@@ -131,7 +131,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["questID"] = 52326,
 					["icon"] = 1001977,
 					["coord"] = { 58.2, 63.7, STORMSONG_VALLEY },
-					["g"] = {
+					["groups"] = {
 						i(160485),	-- An Unforgettable Luncheon
 					},
 				}),

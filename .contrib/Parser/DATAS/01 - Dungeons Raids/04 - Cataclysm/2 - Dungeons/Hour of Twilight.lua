@@ -13,13 +13,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 		["groups"] = {
 			n(QUESTS, {
 				q(30103, {	-- To Wyrmrest!
-					["sourceQuest"] = 30102,	-- The Hour of Twilight
-					["providers"] = {
-						{ "n", 54548 },	-- Thrall (4 versions, all different areas of the dungeon)
-						{ "n", 54634 },
-						{ "n", 54972 },
-						{ "n", 55779 },
+					["qgs"] = {
+						54548,	-- Thrall (4 versions, all different areas of the dungeon)
+						54634,
+						54972,
+						55779,
 					},
+					["sourceQuest"] = 30102,	-- The Hour of Twilight
 					["groups"] = {
 						i(72858),	-- Safeguard Gloves
 						i(72887),	-- Cinch of the World Shaman
@@ -27,12 +27,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				q(30105, {	-- The Twilight Prophet
-					["sourceQuest"] = 30102,	-- The Hour of Twilight (did not drop for me before completing the chain)
 					["providers"] = {
 						{ "i", 77957 },	-- Urgent Twilight Missive
 						{ "n", 54590 },	-- Arcurion
 						{ "n", 54968 },	-- Asira Dawnslayer (apparently can drop from this boss if someone queues into the dungeon with the first boss dead)
 					},
+					["sourceQuest"] = 30102,	-- The Hour of Twilight (did not drop for me before completing the chain)
 					["groups"] = {
 						i(72884),	-- Writhing Wand
 						i(72886),	-- Thrall's Gratitude

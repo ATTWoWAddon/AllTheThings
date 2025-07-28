@@ -823,6 +823,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13868, {	-- Corrupting Influence?
 					["provider"] = { "i", 46128 },	-- Troll Charm
 					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						3925,	-- Thistlefur Avenger
 						3924,	-- Thistlefur Shaman
@@ -830,7 +831,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						3921,	-- Thistlefur Ursa
 						3922,	-- Thistlefur Totemic
 					},
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13653, {	-- Crisis at Splintertree
 					["qg"] = 33421,	-- Gorka
@@ -1421,16 +1421,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13921, {	-- He Who Would Be Forgiven
 					["sourceQuest"] = 13919,	-- A Trip to the Moonwell
-					["description"] = "This quest is auto given to you once completing |cFFFFD700A Trip To The Moonwell|r.",
 					["coord"] = { 71.3, 60.5, ASHENVALE },
+					["description"] = "This quest is auto given to you once completing |cFFFFD700A Trip To The Moonwell|r.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(14018, {	-- He Who Would Be Forgiven
 					["qg"] = 3894,	-- Pelturas Whitemoon
 					["sourceQuest"] = 13919,	-- A Trip to the Moonwell
-					["description"] = "You can pick this quest up if you abandon the quest by the same name.",
 					["coord"] = { 37.4, 51.8, ASHENVALE },
+					["description"] = "You can pick this quest up if you abandon the quest by the same name.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1483,8 +1483,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						13877,	-- Go With The Flow (A)
 						13879,	-- Thunder Peak (H)
 					},
-					["coord"] = { 52.3, 56.5, ASHENVALE },
 					["sourceQuestNumRequired"] = 1,
+					["coord"] = { 52.3, 56.5, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/8 Lava fissures filled
@@ -2097,8 +2097,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						13877,	-- Go With The Flow (A)
 						13879,	-- Thunder Peak (H)
 					},
-					["coord"] = { 52.1, 56.7, ASHENVALE },
 					["sourceQuestNumRequired"] = 1,
+					["coord"] = { 52.1, 56.7, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/10 Lava Rager slain
@@ -2762,8 +2762,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 59.8, 54.6, ASHENVALE },
 						-- #endif
 					},
-					["cr"] = 12677,	-- Shadumbra
 					["races"] = HORDE_ONLY,
+					["cr"] = 12677,	-- Shadumbra
 					["lvl"] = lvlsquish(20, 20, 7),
 				}),
 				q(2, {		-- Sharptalon's Claw
@@ -2778,8 +2778,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 75.8, 69.6, ASHENVALE },
 						-- #endif
 					},
-					["cr"] = 12676,	-- Sharptalon
 					["races"] = HORDE_ONLY,
+					["cr"] = 12676,	-- Sharptalon
 					["lvl"] = lvlsquish(20, 20, 7),
 				}),
 				q(13873, {	-- Sheelah's Last Wish
@@ -2972,8 +2972,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "i", 16408 },	-- Befouled Water Globe
 					["sourceQuest"] = 25,	-- Stonetalon Standstill / Simmer Down Now [CATA]
 					["coord"] = { 50.8, 71.6, ASHENVALE },
-					["cr"] = 12759,	-- Tideress
 					["races"] = HORDE_ONLY,
+					["cr"] = 12759,	-- Tideress
 					["lvl"] = lvlsquish(23, 23, 7),
 				}),
 				q(26468, {	-- The Branch of Cenarius
@@ -3622,8 +3622,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 41.6, 66.6, ASHENVALE },
 						-- #endif
 					},
-					["cr"] = 12678,	-- Ursangous
 					["races"] = HORDE_ONLY,
+					["cr"] = 12678,	-- Ursangous
 					["lvl"] = lvlsquish(20, 20, 7),
 				}),
 				q(1037, {	-- Velinde Starsong

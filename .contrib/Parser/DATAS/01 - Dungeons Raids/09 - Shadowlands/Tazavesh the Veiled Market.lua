@@ -19,7 +19,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			TAZAVESH_BORALUS_HARBOR,
 			TAZAVESH_AGGRAMARS_VAULT,
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(61093, {	-- Flawless Transaction
 					["timeline"] = { ADDED_11_2_0_SEASONSTART },
@@ -50,7 +50,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					}),
 					crit(52464, {	-- Waffle
 						["cr"] = 180824,	-- Waffle
-						["coord"] = { 77.29, 45.70, TAZAVESH_THE_VEILED_MARKET }
+						["coord"] = { 77.29, 45.70, TAZAVESH_THE_VEILED_MARKET },
 					}),
 				}),
 			}),
@@ -80,7 +80,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					["sourceQuests"] = { 63976 },	-- The Al'ley Cat of Oribos
 					["provider"] = { "n", 178908 },	-- Al'dalil
 					["coord"] = { 57.1, 31.1, 1672 },	-- Broker's Den
-					["g"] = {
+					["groups"] = {
 						i(186182),	-- Cartel So Shipping Manifest (QI!)
 					},
 				}),
@@ -106,7 +106,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					["sourceQuests"] = { 63983 },	-- Dead Drop
 					["provider"] = { "n", 158890 },	-- Bounty Hunter Ta'oku
 					["coord"] = { 32.5, 32.4, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(186696),	-- Ta Coin of Favors (QI!)
 					},
 				}),
@@ -126,7 +126,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					["sourceQuests"] = { 63985 },	-- The Veiled Market
 					["provider"] = { "n", 180750 },	-- Au'manal <Master Forger>
 					["cost"] = { { "i", 185954, 1 } },	-- Passably-Forged Credentials
-					["g"] = {
+					["groups"] = {
 						i(187552),	-- Perfectly-Forged Credentials
 					},
 				}),
@@ -139,7 +139,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			n(VENDORS, {
 				["description"] = "All the vendors with the name Vendor in them can be found just inside the entrance to the dungeon.",
-				["g"] = {
+				["groups"] = {
 					n(180130, {	-- Antique Vendor
 						i(34828),	-- Antique Silver Cufflinks
 						i(187179),	-- Glow Sticks
@@ -147,7 +147,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					}),
 					n(180750, {	-- Au'manal <Master Forger>
 						["description"] = "Requires |cFFFFFFFFFraudulent Credentials|r to be equipped to be able to trade for the new neck.",
-						["g"] = {
+						["groups"] = {
 							i(185954, {	-- Passably-Forged Credentials
 								["cost"] = { { "i", 185953, 1 } },	-- Fraudulent Credentials
 							}),
@@ -179,7 +179,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					}),
 					n(180161, {	-- Shopkeeper
 						["description"] = "When the NPC whispers you, |cFFFFFFFF/nod|r at them.",
-						["g"] = {
+						["groups"] = {
 							i(186540, {	-- Rarity (PET!)
 								["cost"] = {
 									{ "g", 21430000 },	-- 2,143g
@@ -221,7 +221,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0 } }, {
 				e(2437, {	-- Zo'phex the Sentinel
 					["crs"] = { 175616 },	-- Zo'phex
-					["g"] = {
+					["groups"] = {
 						i(183468),	-- Born Anew
 						i(183498),	-- Cloaked in Shadows
 						i(182110),	-- Crippling Hex
@@ -243,7 +243,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						176556,	-- Alcruux
 						176705,	-- Venza Goldfuse
 					},
-					["g"] = {
+					["groups"] = {
 						i(184587),	-- Ambuscade
 						i(181512),	-- Dizzying Tumble
 						i(181756),	-- Incantation of Swiftness
@@ -262,7 +262,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2436, {	-- Mailroom Mayhem
 					["crs"] = { 175646 },	-- P.O.S.T Master
-					["g"] = {
+					["groups"] = {
 						i(182584),	-- Cheetah's Vigor
 						i(181837),	-- Clear Mind
 						i(182461),	-- Echoing Blessings
@@ -282,7 +282,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2452, {	-- Au'myza's Oasis
 					["crs"] = { 176563 },	-- Zo'gron
-					["g"] = {
+					["groups"] = {
 						i(182460),	-- Accrued Vitality
 						i(183470),	-- Born of the Wilds
 						i(182656),	-- Disturb the Peace
@@ -303,7 +303,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2451, {	-- So'azmi
 					["crs"] = { 175806 },	-- So'azmi
-					["g"] = {
+					["groups"] = {
 						i(181707),	-- Diverted Energy
 						i(182449),	-- Resolute Barrier
 						i(182605),	-- Tactical Retreat
@@ -321,7 +321,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2448, {	-- Hylbrande
 					["crs"] = { 175663 },	-- Hylbrande
-					["g"] = {
+					["groups"] = {
 						i(182105),	-- Astral Projection
 						i(180943),	-- Cacophonous Roar
 						i(182336),	-- Golden Path
@@ -339,7 +339,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2449, {	-- Timecap'n Hooktail
 					["crs"] = { 175546 },	-- Timecap'n Hooktail
-					["g"] = {
+					["groups"] = {
 						i(181498),	-- Grounding Surge
 						i(181975),	-- Hardened Bones
 						i(183502),	-- Prepared for All
@@ -357,7 +357,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2455, {	-- So'leah
 					["crs"] = { 177269 },	-- So'leah
-					["g"] = {
+					["groups"] = {
 						i(186638),	-- Cartel Master's Gearglider (MOUNT!)
 						i(181838),	-- Charitable Soul
 						i(182304),	-- Divine Call
@@ -380,7 +380,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2437, {	-- Zo'phex the Sentinel
 					["crs"] = { 175616 },	-- Zo'phex
-					["g"] = {
+					["groups"] = {
 						ach(15109, {	-- Will it Blend?
 							["cost"] = {
 								{ "i", 187179, 1 },	-- Glow Sticks
@@ -393,7 +393,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2436, {	-- Mailroom Mayhem
 					["crs"] = { 175646 },	-- P.O.S.T Master
-					["g"] = {
+					["groups"] = {
 						ach(15106),	-- Quality Control
 						i(185844, {	-- Ticking Sack of Terror
 							["timeline"] = { ADDED_9_1_0 , REMOVED_9_2_0 },
@@ -406,20 +406,20 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				-- #if AFTER 9.2.5
 				e(2451, {	-- So'azmi
 					["crs"] = { 175806 },	-- So'azmi
-					["g"] = {
+					["groups"] = {
 						ach(15650, {["timeline"] = { ADDED_9_2_5 }}),	-- Mythic: Streets of Wonder
 					},
 				}),
 				-- #endif
 				e(2448, {	-- Hylbrande
 					["crs"] = { 175663 },	-- Hylbrande
-					["g"] = {
+					["groups"] = {
 						ach(15179),	-- This is Fine
 					},
 				}),
 				e(2455, {	-- So'leah
 					["crs"] = { 177269 },	-- So'leah
-					["g"] = {
+					["groups"] = {
 						ach(15178, {	-- Fake It 'Til You Make It
 							i(186637),	-- Tazavesh Gearglider (MOUNT!)
 						}),
@@ -439,7 +439,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2437, {	-- Zo'phex the Sentinel
 					["crs"] = { 175616 },	-- Zo'phex
-					["g"] = {
+					["groups"] = {
 						ach(15109, {	-- Will it Blend?
 							["cost"] = {
 								{ "i", 187179, 1 },	-- Glow Sticks
@@ -469,7 +469,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						176556,	-- Alcruux
 						176705,	-- Venza Goldfuse
 					},
-					["g"] = {
+					["groups"] = {
 						i(184587),	-- Ambuscade
 						i(181512),	-- Dizzying Tumble
 						i(181756),	-- Incantation of Swiftness
@@ -488,7 +488,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2436, {	-- Mailroom Mayhem
 					["crs"] = { 175646 },	-- P.O.S.T Master
-					["g"] = {
+					["groups"] = {
 						ach(15106),	-- Quality Control
 						i(182584),	-- Cheetah's Vigor
 						i(181837),	-- Clear Mind
@@ -514,7 +514,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2452, {	-- Au'myza's Oasis
 					["crs"] = { 176563 },	-- Zo'gron
-					["g"] = {
+					["groups"] = {
 						i(182460),	-- Accrued Vitality
 						i(183470),	-- Born of the Wilds
 						i(182656),	-- Disturb the Peace
@@ -535,7 +535,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2451, {	-- So'azmi
 					["crs"] = { 175806 },	-- So'azmi
-					["g"] = {
+					["groups"] = {
 						ach(15650, {["timeline"] = { ADDED_9_2_5 }}),	-- Mythic: Streets of Wonder
 						i(181707),	-- Diverted Energy
 						i(182449),	-- Resolute Barrier
@@ -554,7 +554,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2448, {	-- Hylbrande
 					["crs"] = { 175663 },	-- Hylbrande
-					["g"] = {
+					["groups"] = {
 						ach(15179),	-- This is Fine
 						i(182105),	-- Astral Projection
 						i(180943),	-- Cacophonous Roar
@@ -573,7 +573,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2449, {	-- Timecap'n Hooktail
 					["crs"] = { 175546 },	-- Timecap'n Hooktail
-					["g"] = {
+					["groups"] = {
 						i(181498),	-- Grounding Surge
 						i(181975),	-- Hardened Bones
 						i(183502),	-- Prepared for All
@@ -591,7 +591,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2455, {	-- So'leah
 					["crs"] = { 177269 },	-- So'leah
-					["g"] = {
+					["groups"] = {
 						ach(15178, {	-- Fake It 'Til You Make It
 							i(186637),	-- Tazavesh Gearglider (MOUNT!)
 						}),

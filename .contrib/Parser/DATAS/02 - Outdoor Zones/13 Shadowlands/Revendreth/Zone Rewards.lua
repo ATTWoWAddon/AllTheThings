@@ -5,7 +5,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 	m(REVENDRETH, {
 		n(ZONE_REWARDS, {
 			["description"] = "These items can drop from repeatable treasure chests and are sometimes awarded from world quests or table missions.",
-			["g"] = {
+			["groups"] = {
 				i(182728),	-- A Crate of Sinvyr Ore
 				i(182727),	-- A Leaking Package
 				i(173718),	-- Bottle of Redelav Wine

@@ -619,7 +619,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if NOT ANYCLASSIC
 						q(5629, {	-- Returning Home [Teldrassil]
 							["qg"] = 3600,	-- Laurna Morninglight <Priest Trainer>
-							["coord"] = { 55.6, 56.8, TELDRASSIL },
 							["altQuests"] = {
 								5627,	-- Returning Home [Darnassus]
 								5628,	-- Returning Home [Elwynn Forest]
@@ -628,6 +627,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								5632,	-- Returning Home [Stormwind City]
 								5633,	-- Returning Home [Ironforge]
 							},
+							["coord"] = { 55.6, 56.8, TELDRASSIL },
 							["timeline"] = { REMOVED_3_0_2 },
 							["classes"] = { PRIEST },
 							["races"] = { NIGHTELF },
@@ -1228,8 +1228,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(7383, {	-- Crown of the Earth (5/6) / Teldrassil: The Burden of the Kaldorei [CATA+]
 					["qg"] = 3515,	-- Corithras Moonrage
-					["sourceQuest"] = 933,	-- Crown of the Earth (4/6) / Teldrassil: The Coming Dawn [CATA+]
 					["altQuests"] = { 934 },	-- Crown of the Earth (?/?) did the entire chain and never got this one yet it is marked as completed at the end
+					["sourceQuest"] = 933,	-- Crown of the Earth (4/6) / Teldrassil: The Coming Dawn [CATA+]
 					["coord"] = { 56.2, 61.7, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1277,7 +1277,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if NOT ANYCLASSIC
 				q(5636, {	-- Desperate Prayer
 					["qg"] = 3600,	-- Laurna Morninglight <Priest Trainer>
-					["coord"] = { 55.6, 56.8, TELDRASSIL },
 					["altQuests"] = {
 						5634,	-- Desperate Prayer [Stormwind City #1]
 						5635,	-- Desperate Prayer [Elwynn Forest]
@@ -1286,6 +1285,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5639,	-- Desperate Prayer [Ironforge]
 						5640,	-- Desperate Prayer [Darnassus]
 					},
+					["coord"] = { 55.6, 56.8, TELDRASSIL },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN, DWARF },
 					["classes"] = { PRIEST },
@@ -1356,12 +1356,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1581, {	-- Elixirs for the Bladeleafs
 					["qg"] = 2083,	-- Syral Bladeleaf
-					["description"] =
-						-- #if BEFORE 8.0.1
-						"This quest becomes available at Alchemy skill level 20 when the character level requirement is met.",
-						-- #else
-						"This quest becomes available at Classic Alchemy skill level 20 when the character level requirement is met.",
-						-- #endif
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 55.8, 50.4, TELDRASSIL },
@@ -1369,12 +1363,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 56.0, 57.8, TELDRASSIL },
 						-- #endif
 					},
-					["requireSkill"] = ALCHEMY,
-					["races"] = ALLIANCE_ONLY,
+					["description"] =
+						-- #if BEFORE 8.0.1
+						"This quest becomes available at Alchemy skill level 20 when the character level requirement is met.",
+						-- #else
+						"This quest becomes available at Classic Alchemy skill level 20 when the character level requirement is met.",
+						-- #endif
 					["cost"] = {
 						{ "i", 2454, 6 },	-- Elixir of Lion's Strength
 						{ "i", 5997, 2 },	-- Elixir of Minor Defense
 					},
+					["requireSkill"] = ALCHEMY,
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
 				}),
 				q(2259, {	-- Erion Shadewhisper
@@ -1600,9 +1600,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 6286,	-- Zarrin
 					["coord"] = { 57, 61.2, TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 5465, 7 } },	-- Small Spider Leg
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
-					["cost"] = { { "i", 5465, 7 } },	-- Small Spider Leg
 					["groups"] = {
 						i(5482, {	-- Recipe: Kaldorei Spider Kabob (RECIPE!)
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1787,12 +1787,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(929, {	-- Teldrassil: The Refusal of the Aspects [CATA+] / Crown of the Earth (3/6)
 					["qg"] = 3515,	-- Corithras Moonrage
-					["description"] = "The quest completion marker and position of the quest giver depends on the quests you have accepted.\n\nIf you DO NOT have |cff4a54e8Teldrassil: The Burden of the Kaldorei|r in your Quest Log, Corithras Moonrage will be at Dolanaar.\nIf you DO HAVE it accepted, along with this quest, he will be at the Crossroads in front of the entrance to Darnassus.",
 					["sourceQuest"] = 28731,	-- Teldrassil: Passing Awareness
 					["coords"] = {
 						{ 55.8, 53.9, TELDRASSIL },	-- Dolanaar
 						{ 41.0, 45.6, TELDRASSIL },	-- Darnassus Crossroads
 					},
+					["description"] = "The quest completion marker and position of the quest giver depends on the quests you have accepted.\n\nIf you DO NOT have |cff4a54e8Teldrassil: The Burden of the Kaldorei|r in your Quest Log, Corithras Moonrage will be at Dolanaar.\nIf you DO HAVE it accepted, along with this quest, he will be at the Crossroads in front of the entrance to Darnassus.",
 					["races"] = PRIESTESS_OF_THE_MOON_RACES,
 				}),
 				-- #endif
@@ -2078,9 +2078,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "o", 6752 },	-- Strange Fronded Plant
 						{ "i", 5190 },	-- Shimmering Frond
 					},
-					-- #if AFTER CATA
-					["description"] = "Give the Shimmering Frond to Denalan at the east end of Lake Al'Ameth (59.9, 59.8) to ensure you get the next quest.",
-					-- #endif
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 37.3, 25.5, TELDRASSIL },
@@ -2088,6 +2085,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 34.7, 28.8, TELDRASSIL },
 						-- #endif
 					},
+					-- #if AFTER CATA
+					["description"] = "Give the Shimmering Frond to Denalan at the east end of Lake Al'Ameth (59.9, 59.8) to ensure you get the next quest.",
+					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
 				}),
@@ -2114,9 +2114,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2399, {	-- The Sprouted Fronds
 					["provider"] = { "o", 7510 },	-- Sprouted Frond
-					-- #if AFTER CATA
-					["description"] = "A bug prevents the spawn of Sprouted Frond if completed at a wrong NPC.\nAfter picking up the quest, |cff4a54e8The Shimmering Frond|r, DO NOT turn in the quest to Denalan at the Wellspring Hovel, but to the Denalan at the east end of Lake Al'Ameth (59.9, 59.8). Denalan at the Wellsping Hovel will not spawn the Sprouted Frond after completing the quest and you will be unable to get the next quest.\nThe Denalan at the east end of Lake Al'Ameth WILL spawn the Sprouted Frond and you can pick up the next quest |cff4a54e8The Shimmering Frond|r.\n\nIf, like me, you turned it in to Denalan at the Wellspring Hovel, just travel to the one at the lake and log out. Go onto another character who has not done the quest yet, turn it in there and log out. The plants should spawn and give you enough time to re-log back to your previous character and do the quest.\n\n- Crieve",
-					-- #endif
 					["sourceQuest"] = 931,	-- The Shimmering Frond
 					["coords"] = {
 						-- #if AFTER CATA
@@ -2126,6 +2123,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 60.8, 68.5, TELDRASSIL },
 						-- #endif
 					},
+					-- #if AFTER CATA
+					["description"] = "A bug prevents the spawn of Sprouted Frond if completed at a wrong NPC.\nAfter picking up the quest, |cff4a54e8The Shimmering Frond|r, DO NOT turn in the quest to Denalan at the Wellspring Hovel, but to the Denalan at the east end of Lake Al'Ameth (59.9, 59.8). Denalan at the Wellsping Hovel will not spawn the Sprouted Frond after completing the quest and you will be unable to get the next quest.\nThe Denalan at the east end of Lake Al'Ameth WILL spawn the Sprouted Frond and you can pick up the next quest |cff4a54e8The Shimmering Frond|r.\n\nIf, like me, you turned it in to Denalan at the Wellspring Hovel, just travel to the one at the lake and log out. Go onto another character who has not done the quest yet, turn it in there and log out. The plants should spawn and give you enough time to re-log back to your previous character and do the quest.\n\n- Crieve",
+					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
 				}),

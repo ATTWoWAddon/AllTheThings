@@ -8,7 +8,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			936,	-- Freehold
 		},
 		["lvl"] = 110,
-		["g"] = {
+		["groups"] = {
 			n(WORLD_QUESTS, {
 				q(52454, {	-- Freehold: Dread Captain Vandegrim
 					["isWorldQuest"] = true,
@@ -29,7 +29,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						126832,	-- Skycap'n Kragg
 						--  Shark Bait
 					},
-					["g"] = {
+					["groups"] = {
 						i(159633),	-- Sharkbait's Fishhook
 						i(155884),	-- Parrotfeather Cloak
 						i(159227),	-- Silk Cuffs of the Skycap'n
@@ -44,7 +44,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						126845,	-- Captain Jolly
 						126847,	-- Captain Raoul
 					},
-					["g"] = {
+					["groups"] = {
 						i(159132),	-- Jolly's Boot Daggeer
 						i(159130),	-- Captain's Diplomacy
 						i(158311),	-- Concealed Fencing Plates
@@ -62,7 +62,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						129699,	-- Ludwig Von Tortollan
 						126969,	-- Trothak <The Shark Puncher>
 					},
-					["g"] = {
+					["groups"] = {
 						i(159634),	-- Jeweled Sharksplitter
 						i(158305),	-- Sea Dog's Cuffs
 						i(155892),	-- Bite-Resistant Chain Gloves
@@ -76,7 +76,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(2095,	{	-- Harlan Sweete
 					["crs"] = { 126983 },	-- Harlan Sweete
-					["g"] = {
+					["groups"] = {
 						ach(12831),	-- Freehold
 						i(159635),	-- Bloody Tideturner
 						i(155888),	-- Irontide Captain's Hat
@@ -94,13 +94,13 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = 120,
-				["g"] = {
+				["groups"] = {
 					e(2102, {	-- Skycap'n Kragg
 						["crs"] = {
 							126832,	-- Skycap'n Kragg
 							--  Shark Bait
 						},
-						["g"] = {
+						["groups"] = {
 							i(159633),	-- Sharkbait's Fishhook
 							i(155884),	-- Parrotfeather Cloak
 							i(159227),	-- Silk Cuffs of the Skycap'n
@@ -115,7 +115,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							126845,	-- Captain Jolly
 							126847,	-- Captain Raoul
 						},
-						["g"] = {
+						["groups"] = {
 							i(159132),	-- Jolly's Boot Daggeer
 							i(159130),	-- Captain's Diplomacy
 							i(158311),	-- Concealed Fencing Plates
@@ -133,7 +133,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							129699,	-- Ludwig Von Tortollan
 							126969,	-- Trothak <The Shark Puncher>
 						},
-						["g"] = {
+						["groups"] = {
 							i(159634),	-- Jeweled Sharksplitter
 							i(158305),	-- Sea Dog's Cuffs
 							i(155892),	-- Bite-Resistant Chain Gloves
@@ -147,7 +147,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2095, {	-- Harlan Sweete
 						["crs"] = { 126983 },	-- Harlan Sweete
-						["g"] = {
+						["groups"] = {
 							ach(12832),	-- Heroic: Freehold
 							i(159635),	-- Bloody Tideturner
 							i(155888),	-- Irontide Captain's Hat
@@ -167,13 +167,13 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				["difficulties"] = { DIFFICULTY.DUNGEON.KEYSTONE, DIFFICULTY.DUNGEON.MYTHIC },
 				["lvl"] = 120,
-				["g"] = {
+				["groups"] = {
 					e(2102, {	-- Skycap'n Kragg
 						["crs"] = {
 							126832,	-- Skycap'n Kragg
 							--  Shark Bait
 						},
-						["g"] = {
+						["groups"] = {
 							ach(12548),	-- I'm in Charge Now!
 							ach(12550),	-- Pecking Order
 							i(159633),	-- Sharkbait's Fishhook
@@ -190,7 +190,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							126845,	-- Captain Jolly
 							126847,	-- Captain Raoul
 						},
-						["g"] = {
+						["groups"] = {
 							i(159132),	-- Jolly's Boot Daggeer
 							i(159130),	-- Captain's Diplomacy
 							i(158311),	-- Concealed Fencing Plates
@@ -208,7 +208,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							129699,	-- Ludwig Von Tortollan
 							126969,	-- Trothak <The Shark Puncher>
 						},
-						["g"] = {
+						["groups"] = {
 							i(159634),	-- Jeweled Sharksplitter
 							i(158305),	-- Sea Dog's Cuffs
 							i(155892),	-- Bite-Resistant Chain Gloves
@@ -222,7 +222,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2095, {	-- Harlan Sweete
 						["crs"] = { 126983 },	-- Harlan Sweete
-						["g"] = {
+						["groups"] = {
 							ach(12833),	-- Mythic: Freehold
 							ach(12999),	-- Mythic: Freehold Guild Run
 							ach(12998),	-- That Sweete Booty

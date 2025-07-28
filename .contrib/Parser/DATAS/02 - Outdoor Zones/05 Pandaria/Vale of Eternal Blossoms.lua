@@ -7,7 +7,7 @@ local VALE_TOT_ONUPDATE = [[function(t)
 	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_RISE_OF_THE_THUNDER_KING .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
-		t.u = ]] .. MOP_PHASE_LANDFALL .. [[;
+		t.u = ]] .. MOP_PHASE_ONE .. [[;
 		t.description = "This will be unavailable when the Rise of the Thunder King phase begins."
 	end
 end]];
@@ -15,7 +15,7 @@ local VALE_SOO_ONUPDATE = [[function(t)
 	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_SIEGE_OF_ORGRIMMAR .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
-		t.u = ]] .. MOP_PHASE_LANDFALL .. [[;
+		t.u = ]] .. MOP_PHASE_ONE .. [[;
 		t.description = "This will be unavailable when the Siege of Orgrimmar phase begins."
 	end
 end]];
@@ -130,75 +130,79 @@ root(ROOTS.Zones, {
 				}),
 				n(FLIGHT_PATHS, {
 					fp(1073, {	-- Serpent's Spine, Vale of Eternal Blossoms
+						["cr"] = 63497,	-- Mai of the Wall <Flight Master>
 						["coord"] = { 14.2, 79.2, VALE_OF_ETERNAL_BLOSSOMS },
 					}),
 					fp(1057, {	-- Shrine of Seven Stars, Vale of Eternal Blossoms
+						["cr"] = 61121,	-- Sharinga Springrunner <Flight Master>
 						["coord"] = { 84.6, 62.4, VALE_OF_ETERNAL_BLOSSOMS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(1058, {	-- Shrine of Two Moons, Vale of Eternal Blossoms
+						["cr"] = 61122,	-- Tania Summerbreeze <Flight Master>
 						["coord"] = { 62.8, 21.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["races"] = HORDE_ONLY,
 					}),
 					fp(2544, {	-- Mistfall Village, Vale of Eternal Blossoms
-						["cr"] = 154805,	-- Ryuxi
-						["coord"] = { 38.9, 72.8, VALE_OF_ETERNAL_BLOSSOMS },
+						["cr"] = 154805,	-- Ryuxi <Master of Serpents>
 						-- ["sourceQuests"] = {  },	-- TODO: likely requires some 8.3 quest chain before becoming available?
+						["coord"] = { 38.9, 72.8, VALE_OF_ETERNAL_BLOSSOMS },
+						["timeline"] = { ADDED_8_3_0 },
 					}),
 				}),
 				n(MAILBOX, {
 					["description"] = "The following will be mailed to you upon completion of respective achievements.",
 					["groups"] = {
 						q(31055, {	-- Between a Saurok and a Hard Place
-							["sourceAchievement"] = 6716,	-- Between a Saurok and a Hard Place
 							["providers"] = {
 								{ "i", 83769 },	-- Between a Saurok and a Hard Place
 								{ "i", 83076 },	-- Between a Saurok and a Hard Place
 							},
+							["sourceAchievement"] = 6716,	-- Between a Saurok and a Hard Place
 						}),
 						q(31094, {	-- Fish Tales
-							["sourceAchievement"] = 6846,	-- Fish Tales
 							["provider"] = { "i", 83771 },	-- Fish Tales
+							["sourceAchievement"] = 6846,	-- Fish Tales
 						}),
 						q(32602, {	-- Gods and Monsters
-							["sourceAchievement"] = 8051,	-- Gods and Monsters
 							["provider"] = { "i", 94199 },	-- Gods and Monsters
+							["sourceAchievement"] = 8051,	-- Gods and Monsters
 						}),
 						q(31097, {	-- Heart of the Mantid Swarm
-							["sourceAchievement"] = 6857,	-- Heart of the Mantid Swarm
 							["provider"] = { "i", 83773 },	-- Heart of the Mantid Swarm
+							["sourceAchievement"] = 6857,	-- Heart of the Mantid Swarm
 						}),
 						q(31093, {	-- Hozen in the Mist
-							["sourceAchievement"] = 6850,	-- Hozen in the Mist
 							["provider"] = { "i", 83770 },	-- Hozen in the Mist
+							["sourceAchievement"] = 6850,	-- Hozen in the Mist
 						}),
 						q(32601, {	-- Rumbles of Thunder
-							["sourceAchievement"] = 8050,	-- Rumbles of Thunder
 							["provider"] = { "i", 94198 },	-- Rumbles of Thunder
+							["sourceAchievement"] = 8050,	-- Rumbles of Thunder
 						}),
 						q(31103, {	-- The Ballad of Liu Lang
-							["sourceAchievement"] = 6856,	-- Ballad of Liu Lang
 							["provider"] = { "i", 83780 },	-- The Ballad of Liu Lang
+							["sourceAchievement"] = 6856,	-- Ballad of Liu Lang
 						}),
 						q(31095, {	-- The Dark Heart of the Mogu
-							["sourceAchievement"] = 6754,	-- The Dark Heart of the Mogu
 							["provider"] = { "i", 83772 },	-- The Dark Heart of the Mogu
+							["sourceAchievement"] = 6754,	-- The Dark Heart of the Mogu
 						}),
 						q(31102, {	-- The Seven Burdens of Shaohao
-							["sourceAchievement"] = 6855,	-- The Seven Burdens of Shaohao
 							["provider"] = { "i", 83779 },	-- The Seven Burdens of Shaohao
+							["sourceAchievement"] = 6855,	-- The Seven Burdens of Shaohao
 						}),
 						q(31100, {	-- The Song of the Yaungol
-							["sourceAchievement"] = 6847,	-- The Song of the Yaungol
 							["provider"] = { "i", 83777 },	-- The Song of the Yaungol
+							["sourceAchievement"] = 6847,	-- The Song of the Yaungol
 						}),
 						q(32600, {	-- The Zandalari Prophecy
-							["sourceAchievement"] = 8049,	-- The Zandalari Prophecy
 							["provider"] = { "i", 94197 },	-- The Zandalari Prophecy
+							["sourceAchievement"] = 8049,	-- The Zandalari Prophecy
 						}),
 						q(31096, {	-- What is Worth Fighting For
-							["sourceAchievement"] = 6858,	-- What Is Worth Fighting For
 							["provider"] = { "i", 83774 },	-- What is Worth Fighting For
+							["sourceAchievement"] = 6858,	-- What Is Worth Fighting For
 						}),
 					},
 				}),
@@ -491,149 +495,139 @@ root(ROOTS.Zones, {
 				}),
 				n(QUESTS, {
 					q(32011, {	-- A Celestial Task (A)
-						["provider"] = { "n", 64032 },	-- Sage Whiteheart
+						["qg"] = 64032,	-- Sage Whiteheart
 						["coord"] = { 84.6, 63.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["isBreadcrumb"] = true,
-						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(32010, {	-- A Celestial Task (H)
-						["provider"] = { "n", 64001 },	-- Sage Lotusbloom
+						["qg"] = 64001,	-- Sage Lotusbloom
 						["coord"] = { 62.7, 23.3, VALE_OF_ETERNAL_BLOSSOMS },
-						["isBreadcrumb"] = true,
-						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(33229, applyclassicphase(MOP_PHASE_ESCALATION, {	-- A Flash of Bronze... (A)
-						["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
-						["isBreadcrumb"] = true,
-						["races"] = ALLIANCE_ONLY,
+						["qg"] = 73691,	-- Chromie <The Timewalkers>
 						["timeline"] = { ADDED_5_3_0 },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 					})),
 					q(33230, applyclassicphase(MOP_PHASE_ESCALATION, {	-- A Flash of Bronze... (H)
-						["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
-						["isBreadcrumb"] = true,
-						["races"] = HORDE_ONLY,
+						["qg"] = 73691,	-- Chromie <The Timewalkers>
 						["timeline"] = { ADDED_5_3_0 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 					})),
 					q(30284, {	-- A Thousand Pointy Teeth
+						["qg"] = 59343,	-- Ren Firetongue
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59343 },	-- Ren Firetongue
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30338, {	-- A Weighty Task
+						["qg"] = 59343,	-- Ren Firetongue
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59343 },	-- Ren Firetongue
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31755, {	-- Acts of Cruelty
+						["qg"] = 58468,	-- Sun Tenderheart
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58468 },	-- Sun Tenderheart
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30236, {	-- Aetha
+						["qg"] = 59338,	-- Che Wildwalker
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59338 },	-- Che Wildwalker
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30244, {	-- Along the Serpent's Spine
+						["qg"] = 58920,	-- Kun Autumnlight
 						["coord"] = { 21.3, 71.4, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58920 },	-- Kun Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
-					q(31376, {	-- Attack At The Temple of the Jade Serpent (A)
-						["sourceQuests"] = { 31512 },	-- A Witness to History
-						["provider"] = { "n", 64032 },	-- Sage Whiteheart
-						["isDaily"] = true,
-						["coord"] = { 84.6, 63.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(31377, {	-- Attack At The Temple of the Jade Serpent (H)
-						--["sourceQuests"] = { 31511 },	-- A Witness to History
-						["provider"] = { "n", 64001 },	-- Sage Lotusbloom
-						["isDaily"] = true,
-						["coord"] = { 62.7, 23.3, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = HORDE_ONLY,
-					}),
 					q(31243, {	-- Attack on Mistfall Village
+						["qg"] = 58408,	-- Leven Dawnblade
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58408 },	-- Leven Dawnblade
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31246, {	-- Attack on Mistfall Village
+						["qg"] = 59343,	-- Ren Firetongue
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59343 },	-- Ren Firetongue
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30286, {	-- Backed Into a Corner
+						["qg"] = 59337,	-- Sun Tenderheart
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59337 },	-- Sun Tenderheart
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30297, {	-- Baolai the Immolator
+						["qg"] = 58911,	-- Rook Stonetoe
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 58911 },	-- Rook Stonetoe
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30634, {	-- Barring Entry
-						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58471 },	-- Kun Autumnlight
+						["qg"] = 58471,	-- Kun Autumnlight
 						["sourceQuests"] = { 30632 },	-- The Ruins of Guo-Lai
+						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
-						["g"] = {
+						["groups"] = {
 							i(80484),	-- Explosive Keg (QI!)
 						},
 					}),
 					q(30642, {	-- Battle Axe of the Thunder King
-						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59905 },	-- Zhi the Harmonious
+						["qg"] = 59905,	-- Zhi the Harmonious
 						["sourceQuests"] = { 30641 },	-- Battle Helm of the Thunder King
-						["g"] = sharedData({ ["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 } }, {
+						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
+						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						-- #if MOP
+						["OnUpdate"] = VALE_SOO_ONUPDATE;
+						-- #endif
+						["groups"] = sharedData({ ["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 } }, {
 							i(90601),	-- Bonded Plate of the Golden Lotus
 							i(90607),	-- Burning Robes of the Golden Lotus
 							i(90598),	-- Crackling Chain of the Golden Lotus
@@ -644,573 +638,541 @@ root(ROOTS.Zones, {
 							i(90609),	-- Mending Robe of the Golden Lotus
 							i(90599),	-- Warmimng Chestguard of the Golden Lotus
 						}),
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
-						-- #if MOP
-						["OnUpdate"] = VALE_SOO_ONUPDATE;
-						-- #endif
 					}),
 					q(30641, {	-- Battle Helm of the Thunder King
-						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59905 },	-- Zhi the Harmonious
+						["qg"] = 59905,	-- Zhi the Harmonious
 						["sourceQuests"] = { 30640 },	-- Battle Spear of the Thunder King
+						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30640, {	-- Battle Spear of the Thunder King
-						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59905 },	-- Zhi the Harmonious
+						["qg"] = 59905,	-- Zhi the Harmonious
 						["sourceQuests"] = { 30639 },	-- The Secrets of Guo-Lai
+						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31136, {	-- Behind Our Lines
+						["qg"] = 58408,	-- Leven Dawnblade
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58408 },	-- Leven Dawnblade
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30226, {	-- Blood on the Rise
+						["qg"] = 58503,	-- Anji Autumnlight
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 58503 },	-- Anji Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30266, {	-- Bloodied Skies
+						["qg"] = 58920,	-- Kun Autumnlight
 						["coord"] = { 21.3, 71.4, VALE_OF_ETERNAL_BLOSSOMS },
 						["isDaily"] = true,
 						-- Wouter TODO: qg was originally Leven Dawnblade according to Wowwiki, verify this
-						["provider"] = { "n", 58920 },	-- Kun Autumnlight
 					}),
 					q(30195, {	-- Blooming Blossoms
+						["qg"] = 58820,	-- Merchant Benny
 						["coord"] = { 33.8, 69.8, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58820 },	-- Merchant Benny
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30282, {	-- Burning Away the Filth
+						["qg"] = 58503,	-- Anji Autumnlight
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 58503 },	-- Anji Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31754, {	-- Cannonfire
+						["qg"] = 58471,	-- Kun Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58471 },	-- Kun Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30481, {	-- Carved in Stone
+						["qg"] = 59333,	-- Rook Stonetoe
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59333 },	-- Rook Stonetoe
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
-					q(31378, {	-- Challenge at the Temple of the Red Crane (A)
-						["sourceQuests"] = { 31512 },	-- A Witness to History
-						["provider"] = { "n", 64032 },	-- Sage Whiteheart
-						["isDaily"] = true,
-						["coord"] = { 84.6, 63.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(31379, {	-- Challenge At The Temple of the Red Crane (H)
-						["sourceQuests"] = { 31511 },	-- A Witness to History
-						["provider"] = { "n", 64001 },	-- Sage Lotusbloom
-						["isDaily"] = true,
-						["coord"] = { 62.7, 23.3, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = HORDE_ONLY,
-					}),
 					q(30263, {	-- Clearing in the Forest
+						["qg"] = 59338,	-- Che Wildwalker
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59338 },	-- Che Wildwalker
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30233, {	-- Cracklefang
+						["qg"] = 59343,	-- Ren Firetongue
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59343 },	-- Ren Firetongue
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31762, {	-- Crumbling Behemoth
+						["qg"] = 58465,	-- Anji Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58465 },	-- Anji Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
-					q(31382, {	-- Defense At Niuzao Temple (A)
-						["sourceQuests"] = { 31512 },	-- A Witness to History
-						["provider"] = { "n", 64032 },	-- Sage Whiteheart
-						["isDaily"] = true,
-						["coord"] = { 84.6, 63.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = ALLIANCE_ONLY
-					}),
-					q(31383, {	-- Defense At Niuzao Temple (H)
-						["sourceQuests"] = { 31511 },	-- A Witness to History
-						["provider"] = { "n", 64001 },	-- Sage Lotusbloom
-						["isDaily"] = true,
-						["coord"] = { 62.7, 23.3, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = HORDE_ONLY,
-					}),
 					q(32016, {	-- Elder Charms of Good Fortune
+						["qg"] = 64029,	-- Elder Lin
 						["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 64029 },	-- Elder Lin
-						["isWeekly"] = true,
-						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+						["races"] = ALLIANCE_ONLY,
+						["isWeekly"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_TOT_ONUPDATE;
 						-- #endif
 					}),
 					q(32017, {	-- Elder Charms of Good Fortune
+						["qg"] = 63996,	-- Elder Lin
 						["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 63996 },	-- Elder Lin
-						["isWeekly"] = true,
-						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+						["races"] = HORDE_ONLY,
+						["isWeekly"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_TOT_ONUPDATE;
 						-- #endif
 					}),
 					q(30194, {	-- Encroaching Storm
+						["qg"] = 59338,	-- Che Wildwalker
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59338 },	-- Che Wildwalker
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30264, {	-- Enemy at the Gates
+						["qg"] = 58503,	-- Anji Autumnlight
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 58503 },	-- Anji Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30342, {	-- Fiery Tongue, Fragile Feet
+						["qg"] = 59343,	-- Ren Firetongue
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59343 },	-- Ren Firetongue
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30320, {	-- Free Spirits
+						["qg"] = 58468,	-- Sun Tenderheart
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58468 },	-- Sun Tenderheart
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
-						["g"] = {
+						["groups"] = {
 							i(89297),	-- Shao-Tien Spirit Dagger (QI!)
 						},
 					}),
 					q(30289, {	-- Freeing Mind and Body
+						["qg"] = 58911,	-- Rook Stonetoe
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 58911 },	-- Rook Stonetoe
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30296, {	-- Gaohun the Soul-Severer
+						["qg"] = 58911,	-- Rook Stonetoe
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 58911 },	-- Rook Stonetoe
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30312, {	-- Given a Second Chance
+						["qg"] = 58468,	-- Sun Tenderheart
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58468 },	-- Sun Tenderheart
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31244, {	-- Guo-Lai Encampment
+						["qg"] = 59343,	-- Ren Firetongue
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59343 },	-- Ren Firetongue
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31240, {	-- Guo-Lai Infestation
+						["qg"] = 59343,	-- Ren Firetongue
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59343 },	-- Ren Firetongue
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30304, {	-- Hard as a Rock
+						["qg"] = 58504,	-- Kun Autumnlight
 						["coord"] = { 34.0, 38.2, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58504 },	-- Kun Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30305, {	-- He Knows What He's Doing
+						["qg"] = 59333,	-- Rook Stonetoe
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59333 },	-- Rook Stonetoe
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31756, {	-- High Chance of Rain
+						["qg"] = 58471,	-- Kun Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58471 },	-- Kun Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30200, {	-- In Ashen Webs
+						["qg"] = 58503,	-- Anji Autumnlight
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 58503 },	-- Anji Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30293, {	-- In Enemy Hands
+						["qg"] = 58471,	-- Kun Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58471 },	-- Kun Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					-- Wouter TODO: are these in the game?
 					q(30630, {	-- Into the Vale (A)
+						["qg"] = 59964,	-- Pako the Speaker
 						["sourceQuests"] = { 31512 },	-- A Witness to History (A)
-						["provider"] = { "n", 59964 },	-- Pako the Speaker
 						["races"] = ALLIANCE_ONLY,
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(33008, {	-- Into the Vale (H)
+						["qg"] = 59964,	-- Pako the Speaker
 						["sourceQuests"] = { 31511 },	-- A Witness to History (H)
-						["provider"] = { "n", 59964 },	-- Pako the Speaker
 						["races"] = HORDE_ONLY,
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(33231, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, {	-- Journey to the Timeless Isle
-						["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
-						["isBreadcrumb"] = true,	-- Possible to skip if you just fly to the Isle after picking up Flash of Bronze
-						["races"] = ALLIANCE_ONLY,
+						["qg"] = 73691,	-- Chromie <The Timewalkers>
 						["sourceQuests"] = {
 							33229,	-- A Flash of Bronze...	(Alliance)
 							33230,	-- A Flash of Bronze...	(Horde)
 						},
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,	-- Possible to skip if you just fly to the Isle after picking up Flash of Bronze
 					})),
 					q(33232, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, {	-- Journey to the Timeless Isle
-						["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
-						["isBreadcrumb"] = true,	-- Possible to skip if you just fly to the Isle after picking up Flash of Bronze
-						["races"] = HORDE_ONLY,
+						["qg"] = 73691,	-- Chromie <The Timewalkers>
 						["sourceQuests"] = {
 							33229,	-- A Flash of Bronze...	(Alliance)
 							33230,	-- A Flash of Bronze...	(Horde)
 						},
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,	-- Possible to skip if you just fly to the Isle after picking up Flash of Bronze
 						["groups"] = {
 							i(104110),	-- Curious Bronze Timepiece (QI!)
 						},
 					})),
 					q(30635, {	-- Killing the Quilen
-						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58465 },	-- Anji Autumnlight
+						["qg"] = 58465,	-- Anji Autumnlight
 						["sourceQuests"] = {
 							30633,	-- Out with the Scouts
 							30634,	-- Barring Entry
 						},
+						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31758, {	-- Laosy Scouting
+						["qg"] = 58471,	-- Kun Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58471 },	-- Kun Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30239, {	-- Lao-Fe the Slavebinder
+						["qg"] = 59338,	-- Che Wildwalker
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59338 },	-- Che Wildwalker
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30638, {	-- Leaving an Opening
-						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58465 },	-- Anji Autumnlight
+						["qg"] = 58465,	-- Anji Autumnlight
 						["sourceQuests"] = {
 							30635,	-- Killing the Quilen
 							30636,	-- Stones of Power
 							30637,	-- The Guo-Lai Halls
 							30654,	-- The Guo-Lai Halls
 						},
+						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30245, {	-- Lost Scouts
+						["qg"] = 58920,	-- Kun Autumnlight
 						["coord"] = { 21.3, 71.4, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58920 },	-- Kun Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30196, {	-- Lushroom Rush
+						["qg"] = 58818,	-- Cook Tope
 						["coord"] = { 33.8, 70.2, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58818 },	-- Cook Tope
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30243, {	-- Mantid Under Fire
+						["qg"] = 58920,	-- Kun Autumnlight
 						["coord"] = { 21.3, 71.4, VALE_OF_ETERNAL_BLOSSOMS },
 						["isDaily"] = true,
-						["provider"] = { "n", 58920 },	-- Kun Autumnlight
 					}),
 					q(30193, {	-- Meating Expectations
+						["qg"] = 58818,	-- Cook Tope
 						["coord"] = { 33.8, 70.2, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58818 },	-- Cook Tope
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
-					q(32246, applyclassicphase(MOP_PHASE_LANDFALL, {	-- Meet the Scout (A)
-						["provider"] = { "n", 64610 },	-- Lyalia
+					q(32246, applyclassicphase(MOP_PHASE_ONE, {	-- Meet the Scout (A)
+						["qg"] = 64610,	-- Lyalia
+						["sourceQuests"] = { 31483 },	-- Incoming...
 						["coord"] = { 84.0, 58.7, VALE_OF_ETERNAL_BLOSSOMS },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 31483 },	-- Incoming...
 					})),
-					q(32249, applyclassicphase(MOP_PHASE_LANDFALL, {	-- Meet the Scout (H)
-						["provider"] = { "n", 64566 },	-- Sunwalker Dezco
+					q(32249, applyclassicphase(MOP_PHASE_ONE, {	-- Meet the Scout (H)
+						["qg"] = 64566,	-- Sunwalker Dezco
+						["sourceQuests"] = { 31483 },	-- Incoming...
 						["coord"] = { 62.8, 27.9, VALE_OF_ETERNAL_BLOSSOMS },
 						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 31483 },	-- Incoming...
 					})),
 					q(31242, {	-- Mistfall Village
+						["qg"] = 58408,	-- Leven Dawnblade
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58408 },	-- Leven Dawnblade
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31245, {	-- Mistfall Village
+						["qg"] = 59343,	-- Ren Firetongue
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59343 },	-- Ren Firetongue
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31249, {	-- Mistfall Village
+						["qg"] = 58408,	-- Leven Dawnblade
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58408 },	-- Leven Dawnblade
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30287, {	-- Mogu Make Poor House Guests
+						["qg"] = 58911,	-- Rook Stonetoe
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 58911 },	-- Rook Stonetoe
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31293, {	-- Mogu Make Poor House Guests
+						["qg"] = 58911,	-- Rook Stonetoe
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 58911 },	-- Rook Stonetoe
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					-- Wouter TODO: these two get removed with SoO again?
 					q(32719, applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {	-- Mogu Runes of Fate (A)
-						["provider"] = { "n", 64029 },	-- Elder Lin
+						["qg"] = 64029,	-- Elder Lin
 						["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["isWeekly"] = true,
-						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 },
+						["races"] = ALLIANCE_ONLY,
+						["isWeekly"] = true,
 					})),
 					q(32718, applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {	-- Mogu Runes of Fate (H)
-						["provider"] = { "n", 63996 },	-- Elder Liao
+						["qg"] = 63996,	-- Elder Liao
 						["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["isWeekly"] = true,
-						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 },
+						["races"] = HORDE_ONLY,
+						["isWeekly"] = true,
 					})),
 					q(31295, {	-- Mogu within the Ruins of Guo-Lai
+						["qg"] = 59338,	-- Che Wildwalker
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59338 },	-- Che Wildwalker
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30192, {	-- My Town, It's on Fire
+						["qg"] = 58819,	-- Mayor Shiyo
 						["coord"] = { 21.3, 71.4, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58819 },	-- Mayor Shiyo
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30288, {	-- My Town, It's On Fire Again
+						["qg"] = 59336,	-- Mayor Shiyo
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59336 },	-- Mayor Shiyo
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30444, {	-- No Reprieve
+						["qg"] = 58919,	-- Anji Autumnlight
 						["coord"] = { 21.4, 71.5, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58919 },	-- Anji Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30299, {	-- No Stone Unturned
+						["qg"] = 59334,	-- Sun Tenderheart
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59334 },	-- Sun Tenderheart
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30301, {	-- Offering a Warm Welcome
+						["qg"] = 59332,	-- Leven Dawnblade
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59332 },	-- Leven Dawnblade
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30633, {	-- Out with the Scouts
-						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58465 },	-- Anji Autumnlight
+						["qg"] = 58465,	-- Anji Autumnlight
 						["sourceQuests"] = { 30632 },	-- The Ruins of Guo-Lai
+						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30298, {	-- Painting the Ruins Red
+						["qg"] = 59332,	-- Leven Dawnblade
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59332 },	-- Leven Dawnblade
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30231, {	-- Pomfruit Pickup
+						["qg"] = 58818,	-- Cook Tope
 						["coord"] = { 33.8, 70.2, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58818 },	-- Cook Tope
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30235, {	-- Quid Pro Quo
+						["qg"] = 59338,	-- Che Wildwalker
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59338 },	-- Che Wildwalker
-						["isDaily"] = true,
-						["g"] = { i(87807) },	-- Stone of the Water Strider (QI!)
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
+						["groups"] = { i(87807) },	-- Stone of the Water Strider (QI!)
 					}),
 					q(31288, {	-- Research Project: The Mogu Dynasties
-						["provider"] = { "n", 63984 },	-- Master Liu
+						["qg"] = 63984,	-- Master Liu
 						["coord"] = { 83.6, 31.0, VALE_OF_ETERNAL_BLOSSOMS },
 						["isDaily"] = true,
 					}),
 					q(31289, {	-- Research Project: The Pandaren Empire
-						["provider"] = { "n", 63984 },	-- Master Liu
+						["qg"] = 63984,	-- Master Liu
 						["coords"] = {
 							{ 83.6, 31.0, VALE_OF_ETERNAL_BLOSSOMS },
 							-- #if AFTER 8.3.0
@@ -1220,686 +1182,672 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(30238, {	-- Return to Rest
+						["qg"] = 59338,	-- Che Wildwalker
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59338 },	-- Che Wildwalker
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30261, {	-- Roll Club: Serpent's Spine
+						["qg"] = 58704,	-- Kelari Featherfoot
 						["coord"] = { 18.1, 63.5, VALE_OF_ETERNAL_BLOSSOMS },
 						["isDaily"] = true,
-						["provider"] = { "n", 58704 },	-- Kelari Featherfoot
 					}),
 					q(30292, {	-- Rude Awakenings
+						["qg"] = 58471,	-- Kun Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58471 },	-- Kun Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30232, {	-- Ruffling Some Feathers
+						["qg"] = 59338,	-- Che Wildwalker
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59338 },	-- Che Wildwalker
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30205, {	-- Runelocked
+						["qg"] = 63266,	-- Sinan the Dreamer
 						["coord"] = { 33.6, 40.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 63266 },	-- Sinan the Dreamer
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30206, {	-- Runes in the Ruins
+						["qg"] = 63266,	-- Sinan the Dreamer
 						["coord"] = { 33.6, 40.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 63266 },	-- Sinan the Dreamer
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30309, {	-- Set in Stone
+						["qg"] = 58465,	-- Anji Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58465 },	-- Anji Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30385, {	-- Setting Sun Garrison
+						["qg"] = 59338,	-- Che Wildwalker
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59338 },	-- Che Wildwalker
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31247, {	-- Setting Sun Garrison
+						["qg"] = 59343,	-- Ren Firetongue
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59343 },	-- Ren Firetongue
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31250, {	-- Setting Sun Garrison
+						["qg"] = 58408,	-- Leven Dawnblade
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58408 },	-- Leven Dawnblade
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31297, {	-- Setting Sun Garrison
+						["qg"] = 59337,	-- Sun Tenderheart
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59337 },	-- Sun Tenderheart
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30265, {	-- Sparkle in the Eye
+						["qg"] = 59343,	-- Ren Firetongue
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59343 },	-- Ren Firetongue
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30190, {	-- Sprite Plight
+						["qg"] = 58819,	-- Mayor Shiyo
 						["coord"] = { 21.3, 71.4, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58819 },	-- Mayor Shiyo
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30191, {	-- Steer Clear of the Beer Here
+						["qg"] = 58819,	-- Mayor Shiyo
 						["coord"] = { 21.3, 71.4, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58819 },	-- Mayor Shiyo
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30308, {	-- Stone Hard Quilen
+						["qg"] = 58465,	-- Anji Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58465 },	-- Anji Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30290, {	-- Stonebound Killers
+						["qg"] = 58911,	-- Rook Stonetoe
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 58911 },	-- Rook Stonetoe
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endifss
 					}),
 					q(30636, {	-- Stones of Power
-						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58465 },	-- Anji Autumnlight
+						["qg"] = 58465,	-- Anji Autumnlight
 						["sourceQuests"] = {
 							30633,	-- Out with the Scouts
 							30634,	-- Barring Entry
 						},
+						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31760, {	-- Striking First
+						["qg"] = 58465,	-- Anji Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58465 },	-- Anji Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30291, {	-- Stunning Display
+						["qg"] = 59343,	-- Ren Firetongue
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59343 },	-- Ren Firetongue
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30242, {	-- Survival Ring: Blades
+						["qg"] = 58743,	-- Yumi Goldenpaw
 						["coord"] = { 18.4, 71.5, VALE_OF_ETERNAL_BLOSSOMS },
 						["isDaily"] = true,
-						["provider"] = { "n", 58743 },	-- Yumi Goldenpaw
 					}),
 					q(30240, {	-- Survival Ring: Flame
+						["qg"] = 58743,	-- Yumi Goldenpaw
 						["coord"] = { 18.4, 71.5, VALE_OF_ETERNAL_BLOSSOMS },
 						["isDaily"] = true,
-						["provider"] = { "n", 58743 },	-- Yumi Goldenpaw
 					}),
 					q(30204, {	-- That's Not a Rock!
+						["qg"] = 58504,	-- Kun Autumnlight
 						["coord"] = { 34.0, 38.2, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58504 },	-- Kun Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31369, {	-- The Anglers [A]
-						["isBreadcrumb"] = true,
-						["provider"] = { "n", 64033 },	-- Master Angler Karu
-						["races"] = ALLIANCE_ONLY,
+						["qg"] = 64033,	-- Master Angler Karu
 						["coord"] = { 86.5, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { REMOVED_5_1_0, ADDED_10_2_7 },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(31370, {	-- The Anglers [H]
-						["isBreadcrumb"] = true,	-- this wasn't available for me until I party synced, but no follow up quest on turn in... not sure what locks
-						["provider"] = { "n", 64010 },	-- Master Angler Karu
-						["races"] = HORDE_ONLY,
+						["qg"] = 64010,	-- Master Angler Karu
 						["coord"] = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { REMOVED_5_1_0, ADDED_10_2_7 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,	-- this wasn't available for me until I party synced, but no follow up quest on turn in... not sure what locks
 					}),
 					q(30225, {	-- The Ashweb Matriarch
+						["qg"] = 58503,	-- Anji Autumnlight
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 58503 },	-- Anji Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30306, {	-- The Battle Ring
+						["qg"] = 58962,	-- Hai-Me Heavyhands
 						["coord"] = { 19.0, 75.4, VALE_OF_ETERNAL_BLOSSOMS },
 						["isDaily"] = true,
 						-- Wouter TODO: supposedly moved from Anji Autumnlight in 5.4.0
-						["provider"] = { "n", 58962 },	-- Hai-Me Heavyhands
 					}),
 					q(30248, {	-- The Butcher
+						["qg"] = 58920,	-- Kun Autumnlight
 						["coord"] = { 21.3, 71.4, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58920 },	-- Kun Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30277, {	-- The Crumbling Hall
+						["qg"] = 58919,	-- Anji Autumnlight
 						["coord"] = { 21.4, 71.5, VALE_OF_ETERNAL_BLOSSOMS },
 						["isDaily"] = true,
-						["provider"] = { "n", 58919 },	-- Anji Autumnlight
-						["g"] = {
+						["groups"] = {
 							i(87790),	-- Ancient Guo-Lai Artifact (QI!)
 						},
 					}),
 					q(30314, {	-- The Displaced Paleblade
+						["qg"] = 59342,	-- He Softfoot
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59342 },	-- He Softfoot
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30307, {	-- The Eternal Vigil
+						["qg"] = 58408,	-- Leven Dawnblade
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58408 },	-- Leven Dawnblade
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30646, {	-- The Final Power
-						["coord"] = { 74.2, 41.8, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 59906 },	-- Sinan the Dreamer
+						["qg"] = 59906,	-- Sinan the Dreamer
 						["sourceQuests"] = { 30645 },	-- The Might of Three
-						["g"] = sharedData({ ["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 } }, {
+						["coord"] = { 74.2, 41.8, VALE_OF_ETERNAL_BLOSSOMS },
+						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						-- #if MOP
+						["OnUpdate"] = VALE_SOO_ONUPDATE;
+						-- #endif
+						["groups"] = sharedData({ ["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 } }, {
 							i(90596),	-- Burning Necklace of the Golden Lotus
 							i(90593),	-- Delicate Necklace of the Golden Lotus
 							i(90594),	-- Durable Necklace of the Golden Lotus
 							i(90592),	-- Ferocious Necklace of the Golden Lotus
 							i(90595),	-- Mending Necklace of the Golden Lotus
 						}),
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
-						-- #if MOP
-						["OnUpdate"] = VALE_SOO_ONUPDATE;
-						-- #endif
 					}),
 					q(31384, {	-- The Golden Lotus (A)
-						["isBreadcrumb"] = true,
+						["qg"] = 64031,	-- Xari the Kind
 						["coord"] = { 84.2, 62.4, VALE_OF_ETERNAL_BLOSSOMS },
 						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 64031 },	-- Xari the Kind
+						["isBreadcrumb"] = true,
 					}),
 					q(31385, {	-- The Golden Lotus (H)
-						["isBreadcrumb"] = true,
+						["qg"] = 64007,	-- Weng the Merciful
 						["coord"] = { 63.0, 22.2, VALE_OF_ETERNAL_BLOSSOMS },
 						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 64007 },	-- Weng the Merciful
+						["isBreadcrumb"] = true,
 					}),
 					q(30637, {	-- The Guo-Lai Halls
-						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58465 },	-- Anji Autumnlight
+						["qg"] = 58465,	-- Anji Autumnlight
 						["sourceQuests"] = { 30632 },	-- The Ruins of Guo-Lai
+						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30654, {	-- The Guo-Lai Halls
-						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58465 },	-- Anji Autumnlight
+						["qg"] = 58465,	-- Anji Autumnlight
 						["sourceQuests"] = { 30632 },	-- The Ruins of Guo-Lai
+						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31876, {	-- The Inkmasters of the Arboretum
-						["requireSkill"] = INSCRIPTION,
-						["provider"] = { "n", 64691 },	-- Lorewalker Huynh
-						["isWeekly"] = true,
+						["qg"] = 64691,	-- Lorewalker Huynh
 						["coord"] = { 82.0, 29.4, VALE_OF_ETERNAL_BLOSSOMS },
+						["requireSkill"] = INSCRIPTION,
+						["isWeekly"] = true,
 					}),
 					q(30302, {	-- The Imperion Threat
+						["qg"] = 59332,	-- Leven Dawnblade
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59332 },	-- Leven Dawnblade
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30300, {	-- The Key to Success
+						["qg"] = 59334,	-- Sun Tenderheart
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59334 },	-- Sun Tenderheart
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31390, {	-- The Klaxxi [A]
+						["qg"] = 64488,	-- Riki the Shifting Shadow
 						["coord"] = { 84.4, 61.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 64488 },	-- Riki the Shifting Shadow
 						["isBreadcrumb"] = true,
 					}),
 					q(31391, {	-- The Klaxxi [H]
+						["qg"] = 64534,	-- Bowmaster Ku
 						["coord"] = { 63.2, 20.8, VALE_OF_ETERNAL_BLOSSOMS },
 						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 64534 },	-- Bowmaster Ku
 						["isBreadcrumb"] = true,
 					}),
 					q(31367, {	-- The Lorewalkers [A]
+						["qg"] = 64508,	-- Scrollmaker Resshi
 						["coord"] = { 85.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 64508 },	-- Scrollmaker Resshi
-						["isBreadcrumb"] = true,
-						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { REMOVED_5_1_0, ADDED_10_2_7 },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(31368, {	-- The Lorewalkers [H]
+						["qg"] = 64531,	-- Lena Stonebrush
 						["coord"] = { 62.4, 21.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 64531 },	-- Lena Stonebrush
-						["isBreadcrumb"] = true,
-						["races"] = HORDE_ONLY,
 						["timeline"] = { REMOVED_5_1_0, ADDED_10_2_7 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(30645, {	-- The Might of Three
-						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58468 },	-- Sun Tenderheart
+						["qg"] = 58468,	-- Sun Tenderheart
 						["sourceQuests"] = { 30644 },	-- What Comes to Pass
+						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30643, {	-- The Mogu's Message
-						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58408 },	-- Leven Dawnblade
+						["qg"] = 58408,	-- Leven Dawnblade
 						["sourceQuests"] = { 30642 },	-- Battle Axe of the Thunder King
+						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30313, {	-- The Moving Mists
+						["qg"] = 59342,	-- He Softfoot
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59342 },	-- He Softfoot
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(32815, applyclassicphase(MOP_PHASE_ESCALATION, {	-- The Old Seer
+						["qg"] = 61962,	-- Lorewalker Cho
 						["sourceQuests"] = { 32807 },	-- The Warchief and the Darkness
-						["provider"] = { "n", 61962 },	-- Lorewalker Cho
 						["timeline"] = { ADDED_5_3_0 },
 					})),
 					q(30237, {	-- The Pandaren Uprising Relived
+						["qg"] = 59338,	-- Che Wildwalker
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59338 },	-- Che Wildwalker
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30632, {	-- The Ruins of Guo-Lai
-						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58408 },	-- Leven Dawnblade
+						["qg"] = 58408,	-- Leven Dawnblade
 						["sourceQuests"] = {
 							31512,	-- A Witness to History (A)
 							31511,	-- A Witness to History (H)
 							30631,	-- The Shrine of Seven Stars (A)
 							30649,	-- The Shrine of Two Moons (H)
 						},
+						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31248, {	-- The Ruins of Guo-Lai
+						["qg"] = 58408,	-- Leven Dawnblade
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58408 },	-- Leven Dawnblade
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31294, {	-- The Ruins of Guo-Lai
+						["qg"] = 59338,	-- Che Wildwalker
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59338 },	-- Che Wildwalker
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31296, {	-- The Ruins of Guo-Lai
+						["qg"] = 59337,	-- Sun Tenderheart
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59337 },	-- Sun Tenderheart
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30639, {	-- The Secrets of Guo-Lai
-						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58408 },	-- Leven Dawnblade
+						["qg"] = 58408,	-- Leven Dawnblade
 						["sourceQuests"] = {
 							30635,	-- Killing the Quilen
 							30636,	-- Stones of Power
 							30637,	-- The Guo-Lai Halls
 							30654,	-- The Guo-Lai Halls
 						},
-						["g"] = sharedData({ ["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 } }, {
+						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
+						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						-- #if MOP
+						["OnUpdate"] = VALE_SOO_ONUPDATE;
+						-- #endif
+						["groups"] = sharedData({ ["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 } }, {
 							i(90615),	-- Burning Mark of the Golden Lotus
 							i(90614),	-- Delicate Mark of the Golden Lotus
 							i(90618),	-- Durable Mark of the Golden Lotus
 							i(90617),	-- Ferocious Mark of the Golden Lotus
 							i(90616),	-- Mending Mark of the Golden Lotus
 						}),
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
-						-- #if MOP
-						["OnUpdate"] = VALE_SOO_ONUPDATE;
-						-- #endif
 					}),
 					q(31386, {	-- The Shado-Pan Offensive (A)
-						["isBreadcrumb"] = true,
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 64030 },	-- Lao Lang
+						["qg"] = 64030,	-- Lao Lang
 						["coord"] = { 84.4, 61.6, VALE_OF_ETERNAL_BLOSSOMS },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(31388, {	-- The Shado-Pan Offensive (H)
-						["isBreadcrumb"] = true,
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 64002 },	-- Sang-Bo
+						["qg"] = 64002,	-- Sang-Bo
 						["coord"] = { 63.0, 21.2, VALE_OF_ETERNAL_BLOSSOMS },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(30631, {	-- The Shrine of Seven Stars
+						["qg"] = 58468,	-- Sun Tenderheart
 						["sourceQuests"] = { 30630 },	-- Into the Vale (A)
-						["provider"] = { "n", 58468 },	-- Sun Tenderheart
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["races"] = ALLIANCE_ONLY,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30649, {	-- The Shrine of Two Moons
+						["qg"] = 58468,	-- Sun Tenderheart
 						["sourceQuests"] = { 33008 },	-- Into the Vale (H)
-						["provider"] = { "n", 58468 },	-- Sun Tenderheart
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["races"] = HORDE_ONLY,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30280, {	-- The Thunder Below
+						["qg"] = 58919,	-- Anji Autumnlight
 						["coord"] = { 21.4, 71.5, VALE_OF_ETERNAL_BLOSSOMS },
 						["isDaily"] = true,
-						["provider"] = { "n", 58919 },	-- Anji Autumnlight
 					}),
 					-- Wouter TODO: check these quests
 					q(31372, {	-- The Tillers (A)
+						["qg"] = 64036,	-- Tang Ironhoe
 						["coord"] = { 87.0, 60.8, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 64036 },	-- Tang Ironhoe
-						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(31374, {	-- The Tillers (H)
+						["qg"] = 64011,	-- Farmhand Dooka
 						["coord"] = { 60.4, 22.8, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 64011 },	-- Farmhand Dooka
-						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(32679, applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {	-- Thunder Calls (A)
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 64610 },	-- Lyalia
+						["qg"] = 64610,	-- Lyalia
 						["coord"] = { 84.0, 58.8, VALE_OF_ETERNAL_BLOSSOMS },
+						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					})),
 					q(32678, applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {	-- Thunder Calls (H)
+						["qg"] = 64566,	-- Sunwalker Dezco
 						["coord"] = { 62.8, 28.0, VALE_OF_ETERNAL_BLOSSOMS },
 						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 64566 },	-- Sunwalker Dezco
 						["isBreadcrumb"] = true,
 					})),
 					q(30310, {	-- Thundering Skies
+						["qg"] = 58465,	-- Anji Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58465 },	-- Anji Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
-					q(31380, {	-- Trial At The Temple of the White Tiger (A)
-						["sourceQuests"] = { 31512 },	-- A Witness to History
-						["provider"] = { "n", 64032 },	-- Sage Whiteheart
-						["isDaily"] = true,
-						["coord"] = { 84.6, 63.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(31381, {	-- Trial At The Temple of the White Tiger (H)
-						["sourceQuests"] = { 31511 },	-- A Witness to History
-						["provider"] = { "n", 64001 },	-- Sage Lotusbloom
-						["isDaily"] = true,
-						["coord"] = { 62.7, 23.3, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = HORDE_ONLY,
-					}),
 					q(30228, {	-- Troubling the Troublemakers
+						["qg"] = 58503,	-- Anji Autumnlight
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 58503 },	-- Anji Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31291, {	-- Uncovering the Past
-						["provider"] = { "n", 63983 },	-- Ms. Thai
+						["qg"] = 63983,	-- Ms. Thai
 						["coord"] = { 83.6, 31.0, VALE_OF_ETERNAL_BLOSSOMS },
 						["isDaily"] = true,
 					}),
 					q(30249, {	-- Under the Setting Sun
+						["qg"] = 58920,	-- Kun Autumnlight
 						["coord"] = { 21.3, 71.4, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58920 },	-- Kun Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30341, {	-- Under Watchful Eyes
+						["qg"] = 59342,	-- He Softfoot
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59342 },	-- He Softfoot
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31387, {	-- Understanding The Shado-Pan (A)
+						["qg"] = 64030,	-- Lao Lang
 						["coord"] = { 84.4, 61.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 64030 },	-- Lao Lang
-						["isBreadcrumb"] = true,
-						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_1_0 },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(31389, {	-- Understanding The Shado-Pan (H)
+						["qg"] = 64002,	-- Sang-Bo
 						["coord"] = { 63.0, 21.2, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 64002 },	-- Sang-Bo
-						["isBreadcrumb"] = true,
-						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_1_0 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(31757, {	-- Unleashed Spirits
+						["qg"] = 58465,	-- Anji Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58465 },	-- Anji Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30246, {	-- Upon the Ramparts
+						["qg"] = 58503,	-- Anji Autumnlight
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 58503 },	-- Anji Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30234, {	-- Vicejaw
+						["qg"] = 59343,	-- Ren Firetongue
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59343 },	-- Ren Firetongue
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30251, {	-- Vyraxxis, the Krik'thik Swarm-Lord
+						["qg"] = 58503,	-- Anji Autumnlight
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 58503 },	-- Anji Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(33134, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, {	-- Warforged Seals (A)
-						["repeatable"] = true,
-						["provider"] = { "n", 64029 },	-- Elder Lin
+						["qg"] = 64029,	-- Elder Lin
 						["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { ADDED_5_4_0 },
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
 					})),
 					q(33133, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, {	-- Warforged Seals (H)
-						["repeatable"] = true,
-						["provider"] = { "n", 63996 },	-- Elder Liao
+						["qg"] = 63996,	-- Elder Liao
 						["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_5_4_0 },
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
 					})),
 					q(30644, {	-- What Comes to Pass
-						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59905 },	-- Zhi the Harmonious
+						["qg"] = 59905,	-- Zhi the Harmonious
 						["sourceQuests"] = { 30643 },	-- The Mogu's Message
+						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31131, {	-- Whitepetal Lake
+						["qg"] = 58408,	-- Leven Dawnblade
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["provider"] = { "n", 58408 },	-- Leven Dawnblade
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30285, {	-- Wu Kao Scouting Reports
+						["qg"] = 59337,	-- Sun Tenderheart
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 59337 },	-- Sun Tenderheart
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(30227, {	-- Wulon, the Granite Sentinel
+						["qg"] = 58503,	-- Anji Autumnlight
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["provider"] = { "n", 58503 },	-- Anji Autumnlight
-						["isDaily"] = true,
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+						["isDaily"] = true,
 						-- #if MOP
 						["OnUpdate"] = VALE_SOO_ONUPDATE;
 						-- #endif
 					}),
 					q(31015, {	-- Your Private Collection
-						["providers"] = {
-							{ "n", 61962 },	-- Lorewalker Cho
-							{ "n", 63577 },	-- Lorewalker Cho
+						["qgs"] = {
+							61962,	-- Lorewalker Cho
+							63577,	-- Lorewalker Cho
 						},
-						["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["sourceQuests"] = {
 							31367,	-- The Lorewalkers (A)
 							31368,	-- The Lorewalkers (H)
 						},
+						["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
 					}),
 				}),
 				n(RARES, {
@@ -1914,7 +1862,7 @@ root(ROOTS.Zones, {
 							50359,	-- Urgolax
 							50336,	-- Yorik Sharpeye
 						},
-						["g"] = {
+						["groups"] = {
 							i(87636),	-- Cloak of the Forgotten Emperor
 							i(87638),	-- Cloak of Tranquil Clouds
 							i(87637),	-- Jade Harbinger's Cloak
@@ -1925,7 +1873,7 @@ root(ROOTS.Zones, {
 					}),
 					n(58778, {	-- Aetha
 						["coord"] = { 35.0, 89.9, VALE_OF_ETERNAL_BLOSSOMS },
-						["g"] = {
+						["groups"] = {
 							crit(20521, {	-- Aetha
 								["achievementID"] = 7317,	-- One Many Army
 							}),
@@ -1934,7 +1882,7 @@ root(ROOTS.Zones, {
 					}),
 					n(50822, {	-- Ai-Ran the Shifting Cloud
 						["coord"] = { 42.8, 69.2, VALE_OF_ETERNAL_BLOSSOMS },
-						["g"] = {
+						["groups"] = {
 							i(86590),	-- Essence of the Breeze (TOY!)
 						},
 					}),
@@ -1948,13 +1896,13 @@ root(ROOTS.Zones, {
 						["cost"] = {
 							{ "i", 86546, 1 },	-- Sky Crystal
 						},
-						["g"] = {
+						["groups"] = {
 							i(90655),	-- Thundering Ruby Cloud Serpent (MOUNT!)
 						},
 					}),
 					n(58949, {	-- Bai-Jin the Butcher
 						["coord"] = { 17.0, 48.7, VALE_OF_ETERNAL_BLOSSOMS },
-						["g"] = {
+						["groups"] = {
 							crit(20530, {	-- Bai-Jin the Butcher
 								["achievementID"] = 7317,	-- One Many Army
 							}),
@@ -1963,7 +1911,7 @@ root(ROOTS.Zones, {
 					}),
 					n(63695, {	-- Baolai the Immolator
 						["coord"] = { 28.7, 43.3, VALE_OF_ETERNAL_BLOSSOMS },
-						["g"] = {
+						["groups"] = {
 							crit(20524, {	-- Baolai the Immolator
 								["achievementID"] = 7317,	-- One Many Army
 							}),
@@ -1975,7 +1923,7 @@ root(ROOTS.Zones, {
 							{ 75.8, 47.5, 395 },
 							{ 22.4, 26.7, 395 },	-- Entrance
 						},
-						["g"] = {
+						["groups"] = {
 							crit(20526, {	-- Bloodtip
 								["achievementID"] = 7317,	-- One Many Army
 							}),
@@ -1984,7 +1932,7 @@ root(ROOTS.Zones, {
 					}),
 					n(58768, {	-- Cracklefang
 						["coord"] = { 46.4, 59.3, VALE_OF_ETERNAL_BLOSSOMS },
-						["g"] = {
+						["groups"] = {
 							crit(20517, {	-- Cracklefang
 								["achievementID"] = 7317,	-- One Many Army
 							}),
@@ -1996,7 +1944,7 @@ root(ROOTS.Zones, {
 							{ 53.1, 59.3, 395 },
 							{ 22.4, 26.7, 395 },	-- Entrance
 						},
-						["g"] = {
+						["groups"] = {
 							crit(20525, {	-- Gaohun the Soul-Severer
 								["achievementID"] = 7317,	-- One Many Army
 							}),
@@ -2008,7 +1956,7 @@ root(ROOTS.Zones, {
 							{ 26.3, 51.1, VALE_OF_ETERNAL_BLOSSOMS },
 							{ 28.9, 56.3, VALE_OF_ETERNAL_BLOSSOMS },
 						},
-						["g"] = {
+						["groups"] = {
 							crit(20519, {	-- General Temuja
 								["achievementID"] = 7317,	-- One Many Army
 							}),
@@ -2017,7 +1965,7 @@ root(ROOTS.Zones, {
 					}),
 					n(62880, {	-- Gochao the Ironfist
 						["coord"] = { 26.86, 13.08, VALE_OF_ETERNAL_BLOSSOMS },
-						["g"] = {
+						["groups"] = {
 							crit(20528, {	-- Gochao the Ironfist
 								["achievementID"] = 7317,	-- One Many Army
 							}),
@@ -2030,7 +1978,7 @@ root(ROOTS.Zones, {
 							{ 63.98, 19.19, 395 },
 							{ 22.43, 26.75, 395 },	-- Entrance
 						},
-						["g"] = {
+						["groups"] = {
 							crit(20529, {	-- Huo-Shuang
 								["achievementID"] = 7317,	-- One Many Army
 							}),
@@ -2039,19 +1987,24 @@ root(ROOTS.Zones, {
 					}),
 					n(50749, {	-- Kal'tik the Blight
 						["coord"] = { 14.0, 58.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["g"] = {
-							i(134023),	-- Bottled Tornado (TOY!)
+						["groups"] = {
+							i(86579, {	-- Bottled Tornado [Should be a toy...]
+								["timeline"] = { ADDED_5_0_4, DELETED_7_0_3 },
+							}),
+							i(134023, {	-- Bottled Tornado (TOY!)
+								["timeline"] = { ADDED_7_0_3 },
+							}),
 						},
 					}),
 					n(50349, {	-- Kang the Soul Thief
 						["coord"] = { 15.2, 35.2, VALE_OF_ETERNAL_BLOSSOMS },
-						["g"] = {
+						["groups"] = {
 							i(86571),	-- Kang's Bindstone (TOY!)
 						},
 					}),
 					n(63978, {	-- Kri'chon
 						["coord"] = { 6.27, 58.5, VALE_OF_ETERNAL_BLOSSOMS },
-						["g"] = {
+						["groups"] = {
 							crit(20531, {	-- Kri'chon
 								["achievementID"] = 7317,	-- One Many Army
 							}),
@@ -2060,7 +2013,7 @@ root(ROOTS.Zones, {
 					}),
 					n(50840, {	-- Major Nanners
 						["coord"] = { 30.7, 91.5, VALE_OF_ETERNAL_BLOSSOMS },
-						["g"] = {
+						["groups"] = {
 							i(86594),	-- Helpful Wikky's Whistle (TOY!)
 						},
 					}),
@@ -2069,13 +2022,13 @@ root(ROOTS.Zones, {
 							{ 39.1, 54.0, VALE_OF_ETERNAL_BLOSSOMS },
 							{ 34.8, 60.7, VALE_OF_ETERNAL_BLOSSOMS },
 						},
-						["g"] = {
+						["groups"] = {
 							i(86586),	-- Panflute of Pandaria (TOY!)
 						},
 					}),
 					n(58771, {	-- Quid
 						["coord"] = { 66.4, 39.3, VALE_OF_ETERNAL_BLOSSOMS },
-						["g"] = {
+						["groups"] = {
 							crit(20522, {	-- Quid
 								["achievementID"] = 7317,	-- One Many Army
 							}),
@@ -2084,13 +2037,13 @@ root(ROOTS.Zones, {
 					}),
 					n(50780, {	-- Sahn Tidehunter
 						["coord"] = { 69.4, 30.5, VALE_OF_ETERNAL_BLOSSOMS },
-						["g"] = {
+						["groups"] = {
 							i(86582),	-- Aqua Jewel (TOY!)
 						},
 					}),
 					n(63240, {	-- Shadowmaster Sydow
 						["coord"] = { 30.5, 78.4, VALE_OF_ETERNAL_BLOSSOMS },
-						["g"] = {
+						["groups"] = {
 							crit(20520, {	-- Shadowmaster Sydow
 								["achievementID"] = 7317,	-- One Many Army
 							}),
@@ -2099,7 +2052,7 @@ root(ROOTS.Zones, {
 					}),
 					n(58817, {	-- Spirit of Lao-Fe
 						["coord"] = { 47.4, 65.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["g"] = {
+						["groups"] = {
 							crit(20523, {	-- Spirit of Lao-Fe
 								["achievementID"] = 7317,	-- One Many Army
 							}),
@@ -2108,13 +2061,13 @@ root(ROOTS.Zones, {
 					}),
 					n(50359, {	-- Urgolax
 						["coord"] = { 39.5, 25.1, VALE_OF_ETERNAL_BLOSSOMS },
-						["g"] = {
+						["groups"] = {
 							i(86575),	-- Chalice of Secrets (TOY!)
 						},
 					}),
 					n(58769, {	-- Vicejaw
 						["coord"] = { 37.4, 50.9, VALE_OF_ETERNAL_BLOSSOMS },
-						["g"] = {
+						["groups"] = {
 							crit(20518, {	-- Vicejaw
 								["achievementID"] = 7317,	-- One Many Army
 							}),
@@ -2123,7 +2076,7 @@ root(ROOTS.Zones, {
 					}),
 					n(63977, {	-- Vyraxxis
 						["coord"] = { 7.92, 33.8, VALE_OF_ETERNAL_BLOSSOMS },
-						["g"] = {
+						["groups"] = {
 							crit(20532, {	-- Vyraxxis
 								["achievementID"] = 7317,	-- One Many Army
 							}),
@@ -2135,7 +2088,7 @@ root(ROOTS.Zones, {
 							{ 45.3, 76.3, VALE_OF_ETERNAL_BLOSSOMS },
 							{ 40.2, 77.1, VALE_OF_ETERNAL_BLOSSOMS },
 						},
-						["g"] = {
+						["groups"] = {
 							crit(20527, {	-- Wulon
 								["achievementID"] = 7317,	-- One Many Army
 							}),
@@ -2144,7 +2097,7 @@ root(ROOTS.Zones, {
 					}),
 					n(50336, {	-- Yorik Sharpeye
 						["coord"] = { 88.0, 44.3, VALE_OF_ETERNAL_BLOSSOMS },
-						["g"] = {
+						["groups"] = {
 							i(86568),	-- Mr. Smite's Brass Compass (TOY!)
 						},
 					}),
@@ -2224,7 +2177,7 @@ root(ROOTS.Zones, {
 					}),
 					n(64922, {	-- Brann Bronzebeard <Archaeology Trainer>
 						["coord"] = { 83.4, 30.9, VALE_OF_ETERNAL_BLOSSOMS },
-						["g"] = {
+						["groups"] = {
 							i(104198, {	-- Mantid Artifact Hunter's Kit
 								["cost"] = { { "i", 87399, 2 }, },	-- 2x Restored Artifact
 							}),
@@ -2234,7 +2187,7 @@ root(ROOTS.Zones, {
 						["description"] = "You can only buy items from this vendor if you have the Challenge Conquerer: Gold Feat of Strength on your toon.  You can only buy the set for your class.",
 						["coord"] = { 86.3, 61.5, VALE_OF_ETERNAL_BLOSSOMS },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							un(REMOVED_FROM_GAME, i(90049)),	-- Girdle of the Lich Lord
 							un(REMOVED_FROM_GAME, i(90050)),	-- Treads of the Lich Lord
 							un(REMOVED_FROM_GAME, i(90051)),	-- Chestguard of the Lich Lord
@@ -2329,7 +2282,7 @@ root(ROOTS.Zones, {
 						["description"] = "You can only buy items from this vendor if you have the Challenge Conquerer: Gold Feat of Strength on your toon.  You can only buy the set for your class.",
 						["coord"] = { 61.2, 20.8, VALE_OF_ETERNAL_BLOSSOMS },
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							un(REMOVED_FROM_GAME, i(90049)),	-- Girdle of the Lich Lord
 							un(REMOVED_FROM_GAME, i(90050)),	-- Treads of the Lich Lord
 							un(REMOVED_FROM_GAME, i(90051)),	-- Chestguard of the Lich Lord
@@ -2425,7 +2378,7 @@ root(ROOTS.Zones, {
 							{ 84.2, 62.7, VALE_OF_ETERNAL_BLOSSOMS },	-- Alliance
 							{ 63.2, 22.0, VALE_OF_ETERNAL_BLOSSOMS },	-- Horde
 						},
-						["g"] = bubbleDownClassicRep(FACTION_GOLDEN_LOTUS, {
+						["groups"] = bubbleDownClassicRep(FACTION_GOLDEN_LOTUS, {
 							{		-- Neutral
 								i(89071),	-- Alani's Inflexible Ring
 								i(89527),	-- Amulet of Swirling Mists
@@ -2505,7 +2458,7 @@ root(ROOTS.Zones, {
 					}),
 					n(66973, {	-- Kai Featherfall <Phoenix Egg Trader>
 						["coord"] = { 82.2, 34.0, VALE_OF_ETERNAL_BLOSSOMS },
-						["g"] = sharedData({
+						["groups"] = sharedData({
 							["cost"] = {{"i", 90045, 1 }},	-- 1x Ancestral Phoenix Egg
 							["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 						}, {
@@ -2517,7 +2470,7 @@ root(ROOTS.Zones, {
 					}),
 					n(65172, {	-- Len at Arms <Adventuring Supplies>
 						["coord"] = { 14.1, 78.8, VALE_OF_ETERNAL_BLOSSOMS },
-						["g"] = {
+						["groups"] = {
 							i(83234),	-- Wasteland Amulet
 							i(83229),	-- Wasteland Armored Bracers
 							i(83184),	-- Wasteland Armored Chestpiece
@@ -2630,139 +2583,15 @@ root(ROOTS.Zones, {
 					}),
 					n(64691, {	-- Lorewalker Huynh <Inscription Trainer>
 						["coord"] = { 82.0, 29.3, VALE_OF_ETERNAL_BLOSSOMS },
-						["g"] = {
+						["groups"] = {
 							i(137788, {	-- Technique: Songs of Peace (RECIPE!)
 								["timeline"] = { ADDED_7_0_3 },
 							}),
 						},
 					}),
-					n(64001, {	-- Sage Lotusbloom <The August Celestials Quartermaster>
-						["coord"] = { 62.7, 23.3, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = HORDE_ONLY,
-						["g"] = bubbleDownClassicRep(FACTION_THE_AUGUST_CELESTIALS, {
-							{		-- Neutral
-								i(88880),	-- Battle Shadow Bracers
-								i(89532),	-- Bladesong Cloak
-								i(88876),	-- Boots of the High Adept
-								i(88892),	-- Bracers of Inlaid Jade
-								i(88879),	-- Braided Black and White Bracer
-								i(88865),	-- Bramblestaff Boots
-								i(88883),	-- Brewmaster Chani's Bracers
-								i(88885),	-- Clever Ashyo's Armbands
-								i(89533),	-- Cloak of Ancient Curses
-								i(89537),	-- Cloak of the Silent Mountain
-								i(88881),	-- Fallen Sentinel Bracers
-								i(88744),	-- Fingers of the Loneliest Monk
-								i(88749),	-- Gauntlets of Jade Sutras
-								i(88741),	-- Gloves of Red Feathers
-								i(88746),	-- Gloves of the Overwhelming Swarm
-								i(89665),	-- Leggings of Ponderous Advance
-								i(89659),	-- Leggings of Unfinished Conquest
-								i(88893),	-- Minh's Beaten Bracers
-								i(89668),	-- Mountain Stream Ringmail
-								i(88743),	-- Ogo's Elder Gloves
-								i(89534),	-- Pressed Flower Cloak
-								i(88884),	-- Quillpaw Family Bracers
-								i(88748),	-- Ravenmane's Gloves
-								i(89667),	-- Refurbished Zandalari Vestment
-								i(89535),	-- Ribcracker's Cloak
-								i(88867),	-- Sandals of the Elder Sage
-								i(88745),	-- Sentinel Commander's Gauntlets
-								i(88866),	-- Steps of the War Serpent
-								i(88877),	-- Storm-Sing Sandals
-								i(88747),	-- Streetfighter's Iron Knuckles
-								i(89658),	-- Subversive Leggings
-								i(88742),	-- Sunspeaker's Flared Gloves
-								i(88862),	-- Tankiss Warstompers
-								i(88882),	-- Tiger-Striped Wristguards
-								i(88868),	-- Tukka-Tuk's Hairy Boots
-								i(89669),	-- Undergrowth Stalker Chestpiece
-								i(89664),	-- Valiant's Shinguards
-								i(89666),	-- Vestment of the Ascendant Tribe
-								i(88878),	-- Void Flame Slippers
-								i(88864),	-- Yu'lon Guardian Boots
-							}, {	-- Friendly
-							}, {	-- Honored
-								i(89124),	-- Celestial Offering
-							}, {	-- Revered
-								i(84561),	-- Formula: Enchant Bracer - Exceptional Strength (RECIPE!)
-								i(84557),	-- Formula: Enchant Bracer - Greater Agility (RECIPE!)
-								i(84559),	-- Formula: Enchant Bracer - Super Intellect (RECIPE!)
-								i(93224),	-- Grand Commendation of the August Celestials
-							}, {	-- Exalted
-								i(89799),	-- August Celestials Tabard
-								i(86377),	-- Pattern: Royal Satchel (RECIPE!)
-								i(89304, {	-- Reins of the Thundering August Cloud Serpent (MOUNT!)
-									["cost"] = 100000000,	-- 10,000g
-								}),
-							},
-						}),
-					}),
-					n(64032, {	-- Sage Whiteheart <The August Celestials Quartermaster>
-						["coord"] = { 84.6, 63.8, VALE_OF_ETERNAL_BLOSSOMS },
-						["races"] = ALLIANCE_ONLY,
-						["g"] = bubbleDownClassicRep(FACTION_THE_AUGUST_CELESTIALS, {
-							{		-- Neutral
-								i(88880),	-- Battle Shadow Bracers
-								i(89532),	-- Bladesong Cloak
-								i(88876),	-- Boots of the High Adept
-								i(88892),	-- Bracers of Inlaid Jade
-								i(88879),	-- Braided Black and White Bracer
-								i(88865),	-- Bramblestaff Boots
-								i(88883),	-- Brewmaster Chani's Bracers
-								i(88885),	-- Clever Ashyo's Armbands
-								i(89533),	-- Cloak of Ancient Curses
-								i(89537),	-- Cloak of the Silent Mountain
-								i(88881),	-- Fallen Sentinel Bracers
-								i(88744),	-- Fingers of the Loneliest Monk
-								i(88749),	-- Gauntlets of Jade Sutras
-								i(88741),	-- Gloves of Red Feathers
-								i(88746),	-- Gloves of the Overwhelming Swarm
-								i(89665),	-- Leggings of Ponderous Advance
-								i(89659),	-- Leggings of Unfinished Conquest
-								i(88893),	-- Minh's Beaten Bracers
-								i(89668),	-- Mountain Stream Ringmail
-								i(88743),	-- Ogo's Elder Gloves
-								i(89534),	-- Pressed Flower Cloak
-								i(88884),	-- Quillpaw Family Bracers
-								i(88748),	-- Ravenmane's Gloves
-								i(89667),	-- Refurbished Zandalari Vestment
-								i(89535),	-- Ribcracker's Cloak
-								i(88867),	-- Sandals of the Elder Sage
-								i(88745),	-- Sentinel Commander's Gauntlets
-								i(88866),	-- Steps of the War Serpent
-								i(88877),	-- Storm-Sing Sandals
-								i(88747),	-- Streetfighter's Iron Knuckles
-								i(89658),	-- Subversive Leggings
-								i(88742),	-- Sunspeaker's Flared Gloves
-								i(88862),	-- Tankiss Warstompers
-								i(88882),	-- Tiger-Striped Wristguards
-								i(88868),	-- Tukka-Tuk's Hairy Boots
-								i(89669),	-- Undergrowth Stalker Chestpiece
-								i(89664),	-- Valiant's Shinguards
-								i(89666),	-- Vestment of the Ascendant Tribe
-								i(88878),	-- Void Flame Slippers
-								i(88864),	-- Yu'lon Guardian Boots
-							}, {	-- Friendly
-							}, {	-- Honored
-								i(89124),	-- Celestial Offering
-							}, {	-- Revered
-								i(84561),	-- Formula: Enchant Bracer - Exceptional Strength (RECIPE!)
-								i(84557),	-- Formula: Enchant Bracer - Greater Agility (RECIPE!)
-								i(84559),	-- Formula: Enchant Bracer - Super Intellect (RECIPE!)
-								i(93224),	-- Grand Commendation of the August Celestials
-							}, {	-- Exalted
-								i(89799),	-- August Celestials Tabard
-								i(86377),	-- Pattern: Royal Satchel (RECIPE!)
-								i(89304, {	-- Reins of the Thundering August Cloud Serpent (MOUNT!)
-									["cost"] = 100000000,	-- 10,000g
-								}),
-							},
-						}),
-					}),
 					n(64605, {	-- Tan Shin Tiao <Lorewalkers Quartermaster>
 						["coord"] = { 82.2, 29.4, VALE_OF_ETERNAL_BLOSSOMS },
-						["g"] = bubbleDownClassicRep(FACTION_THE_LOREWALKERS, {
+						["groups"] = bubbleDownClassicRep(FACTION_THE_LOREWALKERS, {
 							{		-- Neutral
 							}, {	-- Friendly
 							}, {	-- Honored
@@ -2788,7 +2617,7 @@ root(ROOTS.Zones, {
 				n(ZONE_DROPS, {
 					i(87779, {	-- Ancient Guo-Lai Cache Key
 						["description"] = "Use these keys to unlock Ancient Guo Lai Cache chests in the Vault.",
-						["g"] = appendGroups({
+						["groups"] = appendGroups({
 								i(90470),	-- Design: Jade Owl
 								i(90471),	-- Design: Sapphire Cub
 								i(90815),	-- Relic of Guo-Lai

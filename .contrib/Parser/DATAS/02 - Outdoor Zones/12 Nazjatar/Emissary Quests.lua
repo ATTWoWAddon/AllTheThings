@@ -8,10 +8,10 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 			["provider"] = { "n", 154002 },	-- Atolia Seapearl
 			["repeatable"] = true,
-			["g"] = {
+			["groups"] = {
 				i(169940, {	-- Unshackled Supplies
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(168866, {	-- Incandescent Azerite Slivershards (Rank 4)
 							["u"] = REMOVED_FROM_GAME,
 						}),
@@ -44,10 +44,10 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["provider"] = { "n", 154140 },	-- Speaker Utia
 			["lvl"] = 120,
 			["repeatable"] = true,
-			["g"] = {
+			["groups"] = {
 				i(169939, {	-- Ankoan Supplies
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(168866, {	-- Incandescent Azerite Slivershards (Rank 4)
 							["u"] = REMOVED_FROM_GAME,
 						}),

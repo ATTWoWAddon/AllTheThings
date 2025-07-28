@@ -10,7 +10,7 @@ root(ROOTS.ExpansionFeatures,
 					n(ACHIEVEMENTS, {
 						ach(9468, {		-- Salvaging Pays Off
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"] = {
+							["groups"] = {
 								i(111977),		-- Salvage Yard, Level 3 [Blueprints]
 							},
 						}),
@@ -21,14 +21,14 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37045, {	-- Salvaging the Situation
-							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 79857 },	-- Lumba the Crusher
+							["races"] = HORDE_ONLY,
 						}),
 					}),
 					i(139594),	-- Salvage Crate
 					i(114120, {	-- Big Crate of Salvage
 						["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
-						["g"] = sharedData({ ["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 } },{
+						["groups"] = sharedData({ ["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 } },{
 							-- Only adding items where Salvage Crates were realistically the only source
 							i(36533),	-- Adorned Broadsword
 							i(36603),	-- Archaic Longspear

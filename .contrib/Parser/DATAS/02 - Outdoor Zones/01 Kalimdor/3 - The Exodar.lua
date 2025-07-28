@@ -61,17 +61,17 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 			n(QUESTS, {
 				q(10356, {	-- A Donation of Mageweave
 					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
-					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["coord"] = { 63.5, 67.7, THE_EXODAR },
 					["timeline"] = { REMOVED_4_0_3},
+					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
 				q(10357, {	-- A Donation of Runecloth
 					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
-					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["coord"] = { 63.5, 67.7, THE_EXODAR },
 					["timeline"] = { REMOVED_4_0_3},
+					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -106,10 +106,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				q(10358, {	-- Additional Runecloth
 					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
 					["sourceQuest"] = 10357,	-- A Donation of Runecloth
-					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
-					["maxReputation"] = { FACTION_EXODAR, EXALTED },	-- Exodar, Exalted.
 					["coord"] = { 63.5, 67.7, THE_EXODAR },
+					["maxReputation"] = { FACTION_EXODAR, EXALTED },	-- Exodar, Exalted.
 					["timeline"] = { REMOVED_4_0_3},
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
@@ -213,9 +213,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["maps"] = { AZUREMYST_ISLE },
 					["races"] = { DRAENEI },
-					["DisablePartySync"] = true,
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 20, 10),
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -223,11 +220,15 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
+					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
+					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(14082, {	-- Learn to Ride at the Exodar
 					["provider"] = { "i", 46879 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Draenei in their Mailbox upon reaching the specified level.",
 					["timeline"] = { ADDED_3_3_0, REMOVED_5_2_0 },
+					["races"] = { DRAENEI },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -235,7 +236,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["races"] = { DRAENEI },
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(9598, {	-- Redemption (1/2)
@@ -243,11 +243,11 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 10366,	-- Jol
 					["coord"] = { 38.4, 82.2, THE_EXODAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["classes"] = { PALADIN },
-					["races"] = { DRAENEI },
 					["cost"] = {
 						{ "i", 23926, 1 },	-- Tome of Divinity
 					},
+					["classes"] = { PALADIN },
+					["races"] = { DRAENEI },
 					["lvl"] = lvlsquish(12, 12, 10),
 				}),
 				q(9600, {	-- Redemption (2/2)
@@ -396,7 +396,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				n(16739, {	-- Caregiver Breel <Innkeeper>
 					["coord"] = { 59.5, 18.76, THE_EXODAR },	-- The Exobar
 					["races"] = ALLIANCE_ONLY,
-					["group"] = {
+					["groups"] = {
 						i(1179),	-- Ice Cold Milk
 					},
 				}),

@@ -24,9 +24,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 42.2, 29.3, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 125922 },	-- Brother Therold
-				["g"] = {
+				["groups"] = {
 					o(273270, {	-- Harbor Seaweed
-						i(152401),	-- Bunch of Seaweed (QI!) (QI!)
+						i(152401),	-- Bunch of Seaweed (QI!)
 					}),
 					i(160098),	-- Freebooter Bands
 					i(158258),	-- Freebooter Handwraps
@@ -56,7 +56,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 75.8, 65.7, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 127646 },	-- Lord Kennings
-				["g"] = {
+				["groups"] = {
 					i(152800),	-- Simple Skinning Knife (QI!)
 				},
 			}),
@@ -65,7 +65,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 75.8, 65.7, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 127646 },	-- Lord Kennings
-				["g"] = {
+				["groups"] = {
 					i(152817),	-- Hawk Egg (QI!)
 				},
 			}),
@@ -83,7 +83,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 65.8, 50.1, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 129956 },	-- Dockmaster Tyndall
-				["g"] = {
+				["groups"] = {
 					i(160574),	-- Sealed Letter (QI!)
 				},
 			}),
@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 62.9, 29.8, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 130101 },	-- Recruit Brutis
-				["g"] = {
+				["groups"] = {
 					i(158254),	-- Freebooter Grips
 					i(158253),	-- Freebooter Pantaloons
 					i(158256),	-- Navigator's Mitts
@@ -122,7 +122,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "o", 277199 },	-- Weathered Job List
 				["coord"] = { 76.1, 65.4, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(152988),	-- Fuzzy Tail (QI!)
 					i(152986),	-- Sturdy Quill (QI!)
 				},
@@ -141,7 +141,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 79.7, 81.8, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 128702 },	-- Roko <Wandering Merchant>
-				["g"] = {
+				["groups"] = {
 					i(153507),	-- Hundred Year Bourbon (QI!)
 				},
 			}),
@@ -150,16 +150,16 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 42.3, 29.3, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 125922 },	-- Brother Therold
-				["g"] = {
+				["groups"] = {
 					o(273799, {	-- Bundle of Vellum
 						["coord"] = { 43.2, 29.7, TIRAGARDE_SOUND },
-						["g"] = {
+						["groups"] = {
 							i(152586),	-- Bundle of Vellum (QI!)
 						},
 					}),
 					o(273798, {	-- Jar of Blubber
 						["coord"] = { 41.8, 30.0, TIRAGARDE_SOUND },
-						["g"] = {
+						["groups"] = {
 							i(152585),	-- Seal Blubber (QI!)
 						},
 					}),
@@ -180,7 +180,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 42.2, 29.3, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 125922 },	-- Brother Therold
-				["g"] = {
+				["groups"] = {
 					i(153513),	-- Cleansing Tonic (PQI!)
 				},
 			}),
@@ -189,7 +189,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 55.4, 24.6, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 125398 },	-- Harold Beckett
-				["g"] = {
+				["groups"] = {
 					i(151913),	-- Rugged Boar Tusk (QI!)
 				},
 			}),
@@ -204,7 +204,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 42.4, 22.6, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 129170 },	-- Rulf
-				["g"] = {
+				["groups"] = {
 					i(155828),	-- Spotted Gryphon Egg (QI!)
 				},
 			}),
@@ -256,7 +256,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 51.6, 27.2, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 124802 },	-- Lord Aldrius Norwington
-				["g"] = {
+				["groups"] = {
 					i(158220),	-- Cooper's Horseshoe
 				},
 			}),
@@ -283,7 +283,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					{ 86.3, 79.7, TIRAGARDE_SOUND },	-- not sure what causes this NPC to show up in this location instead of the other coord, but this is where it was for me
 				},
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155024),	-- Navigator's Sandals
 					i(155026),	-- Freebooter Boots
 					i(155025),	-- Outrigger Boots
@@ -295,7 +295,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 85.21, 80.61, TIRAGARDE_SOUND },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 143777 },	-- Tall Hasani
-				["g"] = {
+				["groups"] = {
 					i(155024),	-- Navigator's Sandals
 					i(155026),	-- Freebooter Boots
 					i(155025),	-- Outrigger Boots
@@ -329,7 +329,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 50.2, 37.1, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 123415 },	-- Henry Hardwick
-				["g"] = {
+				["groups"] = {
 					i(151135),	-- Stein of Grog (QI!)
 				},
 			}),
@@ -348,7 +348,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sym"] = {{"select","itemID",
 					POLISHED_PET_CHARM,
 				}},
-				["g"] = {
+				["groups"] = {
 					i(155858),	-- Scratchy (QI!)
 				},
 			}),
@@ -435,7 +435,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					{ "n", 127481 },	-- Lord Kennings
 					{ "n", 127709 },	-- Lord Kennings
 				},
-				["g"] = {
+				["groups"] = {
 					i(153020),	-- Pristine Ice Chunks (QI!)
 				},
 			}),
@@ -443,7 +443,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 37.6, 29.5, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 125962 },	-- Manager Yerold
-				["g"] = {
+				["groups"] = {
 					i(160094),	-- Freebooter Cord
 					i(160084),	-- Freebooter Shoes
 					i(160083),	-- Navigator's Footwraps
@@ -488,7 +488,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 77.3, 83.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 128927 },	-- Venrik
-				["g"] = {
+				["groups"] = {
 					azeriteItem(160859),	-- Freebooter Hood
 					azeriteItem(155040),	-- Freebooter Shoulderpads
 					azeriteItem(160858),	-- Navigator's Crown
@@ -521,7 +521,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 77.0, 82.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 129098 },	-- Rodrigo <Flight Master>
-				["g"] = {
+				["groups"] = {
 					i(154878),	-- Rodrigo's Birdseed Biscuit (QI!)
 				},
 			}),
@@ -530,7 +530,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 54.4, 19.4, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 127144 },	-- Melissa Kenny
-				["g"] = {
+				["groups"] = {
 					i(152109),	-- Boneface's "Key" (QI!)
 				},
 			}),
@@ -539,7 +539,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 56.6, 61.1, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 131048 },	-- Lieutenant Tarenfold
-				["g"] = {
+				["groups"] = {
 					i(156520),	-- Proudmoore Battle Standard (QI!)
 					i(155085),	-- Standard Bearer's Band
 					i(158235),	-- Navigator's Shoes
@@ -583,7 +583,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 43.6, 15.2, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 130424 },	-- "Helpless" Henry
-				["g"] = {
+				["groups"] = {
 					i(154171),	-- Fiery Essence (QI!)
 				},
 			}),
@@ -606,7 +606,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "o", 277373 },	-- Glimmering Seaweed
 				["coord"] = { 88.0, 74.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(153184),	-- Glimmering Locket (QI!)
 				},
 			}),
@@ -615,7 +615,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "o", 277373 },	-- Glimmering Seaweed
 				["coord"] = { 85.48, 80.78, TIRAGARDE_SOUND },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(153184),	-- Glimmering Locket (QI!)
 				},
 			}),
@@ -627,7 +627,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 56.6, 61.1, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 131048 },	-- Lieutenant Tarenfold
-				["g"] = {
+				["groups"] = {
 					i(155092),	-- Master Cannoneer's Cloak
 					i(158268),	-- Navigator's Bracers
 					i(158271),	-- Freebooter Armbands
@@ -646,7 +646,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 55.4, 35.8, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 131684 },	-- Penny "Precious" Hardwick
-				["g"] = {
+				["groups"] = {
 					i(158262),	-- Freebooter Mitts
 					i(158264),	-- Navigator's Handwraps
 					i(158265),	-- Outrigger Grips
@@ -672,7 +672,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 42.4, 22.2, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 129003 },	-- Tagart
-				["g"] = {
+				["groups"] = {
 					i(155681),	-- Goat Fur (QI!)
 					i(153596),	-- Goat Shears (QI!)
 				},
@@ -681,7 +681,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 50.4, 70.2, 1171 },	-- Gol Thovas
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 128354 },	-- Birch Tomlin
-				["g"] = {
+				["groups"] = {
 					i(153350),	-- Repurposed Gilnean Staff (PQI!)
 				},
 			}),
@@ -701,7 +701,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 68.9, 20.5, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 129613 },	-- Maynard Algerson
-				["g"] = {
+				["groups"] = {
 					i(158063),	-- Reclaimed Axe (QI!)
 				},
 			}),
@@ -734,7 +734,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "o", 276488 },	-- Azerite Cannonball
 				["coord"] = { 78.6, 77.8, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(152628),	-- Azerite Cannonball (QI!)
 				},
 			}),
@@ -743,7 +743,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 85.4, 80.7, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 128228 },	-- Hungry Sam
-				["g"] = {
+				["groups"] = {
 					i(153348),	-- Juicy Lurker Tail (QI!)
 				},
 			}),
@@ -751,7 +751,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 53442 },	-- The Castaways
 				["coord"] = { 85.4, 80.7, TIRAGARDE_SOUND },
 				["provider"] = { "n", 128228 },	-- Hungry Sam
-				["g"] = {
+				["groups"] = {
 					i(153348),	-- Juicy Lurker Tail (QI!)
 				},
 			}),
@@ -771,7 +771,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 51.2, 25.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 127586 },	-- Joma
-				["g"] = {
+				["groups"] = {
 					i(152848),	-- Lucktail's Tail (QI!)
 				},
 			}),
@@ -797,7 +797,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 68.9, 20.5, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 129613 },	-- Maynard Algerson
-				["g"] = {
+				["groups"] = {
 					i(154993),	-- Wood-Adorned Skull (QI!)
 				},
 			}),
@@ -806,7 +806,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 47485 },	-- The Ashvane Trading Company
 				["coord"] = { 78.9, 45.7, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158065),	-- Note to Forgemaster Farthing (QI!)
 					i(158066),	-- Note to Taskmaster Williams (QI!)
 					i(155029),	-- Navigator's Gloves
@@ -833,10 +833,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "o", 278313 },	-- Sternly Worded Letter
 				["coord"] = { 77.2, 84.7, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(161083, {	-- Satchel of Plundered Jewels
 						["description"] = "Contains some gems as well.",
-						["g"] = {
+						["groups"] = {
 							i(160261),	-- Soul of the Sea [Ring]
 						},
 					}),
@@ -846,7 +846,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 51.2, 25.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 127586 },	-- Joma
-				["g"] = {
+				["groups"] = {
 					i(152849),	-- Pulsating Extract (QI!)
 				},
 			}),
@@ -855,7 +855,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 52.5, 28.5, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 125042 },	-- Gora Layton
-				["g"] = {
+				["groups"] = {
 					i(153357),	-- Battlehorn of the Mountain (PQI!)
 				},
 			}),
@@ -864,7 +864,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 85.4, 80.8, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 128229 },	-- Stabby Jane
-				["g"] = {
+				["groups"] = {
 					i(153186),	-- Silver Compass (QI!)
 					i(153185),	-- Steel Lunchbox (QI!)
 					i(153187),	-- Tin Robot (QI!)
@@ -875,7 +875,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 85.4, 80.8, TIRAGARDE_SOUND },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 128229 },	-- Stabby Jane
-				["g"] = {
+				["groups"] = {
 					i(153186),	-- Silver Compass (QI!)
 					i(153185),	-- Steel Lunchbox (QI!)
 					i(153187),	-- Tin Robot (QI!)
@@ -889,7 +889,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					{ "n", 127481 },	-- Lord Kennings
 					{ "n", 127709 },	-- Lord Kennings
 				},
-				["g"] = {
+				["groups"] = {
 					i(155089),	-- Lord Kenning's Signet
 					i(158281),	-- Navigator's Cord
 					i(158283),	-- Freebooter Cinch
@@ -908,7 +908,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 52.5, 28.5, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 127559 },	-- Lord Aldrius Norwington
-				["g"] = {
+				["groups"] = {
 					i(155065),	-- Trogg Thumper
 					i(155068),	-- Grimestone Pounder
 					i(155075),	-- Lord Aldrus' Greatstaff
@@ -925,7 +925,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 56.4, 61.6, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 142393 },	-- Taelia
-				["g"] = {
+				["groups"] = {
 					i(162522),	-- Evermoss Clump (QI!)
 				},
 			}),
@@ -944,7 +944,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 80.2, 75.2, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 126158 },	-- Flynn Fairwind
-				["g"] = {
+				["groups"] = {
 					i(152722),	-- Dockmaster's Key (QI!)
 					i(152721),	-- Dockmaster's Records (QI!)
 				},
@@ -972,7 +972,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 78.1, 55.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 133552 },	-- Head Chemist Walters
-				["g"] = {
+				["groups"] = {
 					i(157778),	-- Azerite Dust (QI!)
 					i(157857),	-- Walters' Chemistry Kit (QI!)
 				},
@@ -1007,7 +1007,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 77.3, 83.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 128927 },	-- Venrik
-				["g"] = {
+				["groups"] = {
 					i(153599),	-- Dead Man's Ale (QI!)
 					i(153600),	-- Goat's Milk (QI!)
 					i(153601),	-- Goat's Milk in a Skull Mug (QI!)
@@ -1021,7 +1021,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 77.3, 83.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 128927 },	-- Venrik
-					["g"] = {
+					["groups"] = {
 						i(155083),	-- Crow's Nest Spotlight
 						i(155081),	-- Great Sea Buckler
 						i(158285),	-- Navigator's Belt
@@ -1046,7 +1046,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 65.0, 60.6, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 137694 },	-- Parin Tinklocket
-				["g"] = {
+				["groups"] = {
 					i(160317),	-- V-300 Serial Plate (QI!)
 				},
 			}),
@@ -1064,7 +1064,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 79.2, 76.3, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 127537 },	-- Geraldine
-				["g"] = {
+				["groups"] = {
 					i(152667),	-- "Sea Dog" Grog (QI!)
 				},
 			}),
@@ -1101,7 +1101,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 47.8, 16.4, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 129578 },	-- Shawn McClinter
-				["g"] = {
+				["groups"] = {
 					i(153679),	-- Tether Shot (QI!)
 					i(158241),	-- Freebooter Striders
 					i(158228),	-- Gryphon Rider's Ring
@@ -1132,7 +1132,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 51.2, 25.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 127492 },	-- Majo
-				["g"] = {
+				["groups"] = {
 					o(276496, {	-- Durable Seashell
 						i(152847),	-- Durable Seashell (QI!)
 					}),
@@ -1142,7 +1142,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 51.2, 70.6, 1171 },	-- Gol Thovas
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 128353 },	-- Pendi Cranklefuse
-				["g"] = {
+				["groups"] = {
 					o(277427, {	-- Packaged Relics
 						i(153349),	-- Drust Relic (QI!)
 					}),
@@ -1153,7 +1153,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 75.85, 49.08, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 121239 },	-- Flynn Fairwind
-				["g"] = {
+				["groups"] = {
 					i(163032),	-- Chemist's Notes (QI!)
 					i(163034),	-- Raw Azerite Sample (QI!)
 				},
@@ -1184,7 +1184,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 60.9, 30.8, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 140752 },	-- Jenny Swiftbrook
-				["g"] = {
+				["groups"] = {
 					i(161439),	-- Gleaming Spiral (QI!)
 					o(292917, {	-- Sparkling Tidescale
 						i(161440),	-- Sparkling Tidescale (QI!)
@@ -1226,7 +1226,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 42.2, 29.3, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 128680 },	-- Okri Putterwrench
-				["g"] = {
+				["groups"] = {
 					i(153486),	-- Intact Venomous Barb (QI!)
 				},
 			}),
@@ -1237,7 +1237,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["coord"] = { 56.1, 17.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(152675),	-- Saurolisk Scale (QI!)
 					i(152671),	-- Unidentifiable Meat (QI!)
 					o(276270, {	-- Soup Stone
@@ -1245,7 +1245,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					}),
 					o(276838, {	-- Stirring Bone
 						["coord"] = { 58.1, 14.6, TIRAGARDE_SOUND },
-						["g"] = {
+						["groups"] = {
 							i(152678),	-- Stirring Bone (QI!)
 						},
 					}),
@@ -1286,7 +1286,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 81.0, 42.4, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 130375 },	-- Tallis Skyheart
-				["g"] = {
+				["groups"] = {
 					i(155090),	-- Lieutenant Fernn's Ring
 					i(158266),	-- Southport Searchlight
 					i(158330),	-- Proudmoore Marine's Crest
@@ -1297,7 +1297,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 42.4, 22.2, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 129003 },	-- Tagart
-				["g"] = {
+				["groups"] = {
 					i(153595),	-- Sticky Bee Honey (QI!)
 				},
 			}),
@@ -1312,7 +1312,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 67.5, 55.7, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 129858 },	-- Wulfred Fizzbracket
-				["g"] = {
+				["groups"] = {
 					i(155009),	-- Loaned S.E.L.F.I.E. Camera (QI!)
 					i(158225),	-- Over-Engineered Flash Bulb
 				},
@@ -1325,7 +1325,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 77.3, 83.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 126158 },	-- Flynn Fairwind
-				["g"] = {
+				["groups"] = {
 					i(153680),	-- Bilge Rat Orders (QI!)
 					i(153682),	-- Blacktooth Bruiser Orders (QI!)
 					i(153681),	-- Cutwater Corsair Orders (QI!)
@@ -1352,7 +1352,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["coord"] = { 35.0, 24.2, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155053),	-- Scaleterror Slicer
 					i(155079),	-- Thrashneck Gladius
 					i(155072),	-- Wavetamer Trident
@@ -1385,7 +1385,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 80.2, 75.2, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 126158 },	-- Flynn Fairwind
-					["g"] = {
+					["groups"] = {
 						i(152719),	-- Azerite Cutlass (QI!)
 						i(152720),	-- Trickshot's Azerite Powder Horn (QI!)
 						i(155077),	-- Ashvane Captain's Cutlass
@@ -1403,7 +1403,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 140732 },	-- Flynn Fairwind
 				["coord"] = { 76.9, 82.8, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(161477),	-- Beckett's Strongbox Key (QI!)
 					i(161478),	-- Luna's Strongbox Key (QI!)
 					i(161476),	-- Reed's Strongbox Key (QI!)
@@ -1434,7 +1434,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 51.2, 25.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 127492 },	-- Majo
-				["g"] = {
+				["groups"] = {
 					i(158229),	-- Lucktail Riding Cloak
 					i(158267),	-- Tortollan Traveling Lantern
 					i(155082),	-- Durable Seashell Barrier
@@ -1459,7 +1459,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 70.8, 61.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 127481 },	-- Lord Kennings
-				["g"] = {
+				["groups"] = {
 					i(153010),	-- Bloodstained Fur Tuft (QI!)
 				},
 			}),
@@ -1468,7 +1468,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 55.4, 24.6, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 125309 },	-- Abbey Watkins
-				["g"] = {
+				["groups"] = {
 					i(152642),	-- Soft Stoat Pelt (QI!)
 					i(158279),	-- Freebooter Bindings
 					i(158249),	-- Freebooter Pants
@@ -1525,7 +1525,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 140732 },	-- Flynn Fairwind
 				["coord"] = { 75.3, 48.8, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(162008),	-- Ashvane Skeleton Key (QI!)
 				},
 			}),
@@ -1533,7 +1533,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 82.7, 72.8, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 126511 },	-- Skinner MacGuff
-				["g"] = {
+				["groups"] = {
 					i(152514),	-- Toxic Stinger (QI!)
 				},
 			}),
@@ -1569,7 +1569,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "o", 277199 },	-- Weathered Job List
 				["coord"] = { 76.1, 65.4, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158243),	-- Navigator's Legwraps
 					i(158245),	-- Freebooter Trousers
 					i(158244),	-- Outrigger Chausses
@@ -1622,7 +1622,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 44.8, 15.5, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 130478 },	-- Griddon
-				["g"] = {
+				["groups"] = {
 					i(153697),	-- Steamy Essence (QI!)
 					i(158289),	-- Navigator's Cinch
 					i(158291),	-- Freebooter Waistwrap
@@ -1662,7 +1662,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 70.0, 18.5, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 129669 },	-- Benjamin Algerson
-				["g"] = {
+				["groups"] = {
 					i(155586),	-- Petula's Locket (QI!)
 					i(158219),	-- Petula's Locket
 				},
@@ -1678,10 +1678,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 149877 },	-- Tinkmaster Overspark
 				["coord"] = { 65.8, 66.3, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o(321845, {	-- Tri-dimensional Coordinates
 						["coord"] = { 65.9, 66.4, TIRAGARDE_SOUND },
-						["g"] = { i(167039) },	-- Tri-dimensional Coordinates (QI!)
+						["groups"] = { i(167039) },	-- Tri-dimensional Coordinates (QI!)
 					}),
 				},
 			}),
@@ -1690,10 +1690,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 149809 },	-- Gazlowe
 				["coord"] = { 65.8, 66.3, TIRAGARDE_SOUND },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o(325907, {	-- Tri-dimensional Coordinates
 						["coord"] = { 65.9, 66.4, TIRAGARDE_SOUND },
-						["g"] = { i(168218) },	-- Tri-dimensional Coordinates (QI!)
+						["groups"] = { i(168218) },	-- Tri-dimensional Coordinates (QI!)
 					}),
 				},
 			}),

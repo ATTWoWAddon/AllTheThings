@@ -294,7 +294,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			856,
 		},
 		["lvl"] = 110,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(11787, {    -- The Gates of Hell
                     crit(36469, {    -- Goroth
@@ -494,7 +494,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 							47727,	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
 						},
 						["provider"] = { "n", 119723 },	-- Image of Aegwynn
-						["g"] = { i(151248) },	-- Fragment of the Guardian's Seal (QI!)
+						["groups"] = { i(151248) },	-- Fragment of the Guardian's Seal (QI!)
 					}),
 				}),
 				ZoneDrops({}),
@@ -521,7 +521,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						["description"] = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
 						["altQuests"] = { 47727 },	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
 						["provider"] = { "n", 119723 },	-- Image of Aegwynn
-						["g"] = { i(151249) },	-- Fragment of the Guardian's Seal (QI!)
+						["groups"] = { i(151249) },	-- Fragment of the Guardian's Seal (QI!)
 					}),
 				}),
 				ZoneDrops({}),
@@ -541,7 +541,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						["description"] = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Mythic difficulty each week.\n",
 						["altQuests"] = { 47727 },	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
 						["provider"] = { "n", 119723 },	-- Image of Aegwynn
-						["g"] = { i(151250) },	-- Fragment of the Guardian's Seal (QI!)
+						["groups"] = { i(151250) },	-- Fragment of the Guardian's Seal (QI!)
 					}),
 				}),
 				ZoneDrops({}),

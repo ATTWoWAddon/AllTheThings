@@ -226,14 +226,14 @@ root(ROOTS.Zones, {
 						["qg"] = 17924,	-- Msshi'fn
 						["sourceQuest"] = 9919,	-- Sporeggar
 						["coord"] = { 19.7, 52.1, ZANGARMARSH },
-						["timeline"] = { ADDED_7_3_5 },
 						["minReputation"] = { FACTION_SPOREGGAR, NEUTRAL },	-- Sporeggar, Neutral.
 						["maxReputation"] = { FACTION_SPOREGGAR, FRIENDLY },	-- Sporeggar, Friendly.
-						["isBreadcrumb"] = true,
-						["lvl"] = lvlsquish(62, 62, 10),
+						["timeline"] = { ADDED_7_3_5 },
 						-- #if NOT ANYCLASSIC
 						["lockCriteria"] = { 1, "factionID", 970.5 },	-- Sporeggar, Friendly
 						-- #endif
+						["isBreadcrumb"] = true,
+						["lvl"] = lvlsquish(62, 62, 10),
 					}),
 					q(50131, {	-- An Outside Perspective
 						["qg"] = 17923,	-- Fahssn
@@ -242,14 +242,14 @@ root(ROOTS.Zones, {
 							9739,	-- The Sporelings' Plight
 						},
 						["coord"] = { 19.0, 63.4, ZANGARMARSH },
-						["timeline"] = { ADDED_7_3_5 },
 						["minReputation"] = { FACTION_SPOREGGAR, UNFRIENDLY },	-- Sporeggar, Unfriendly.
 						["maxReputation"] = { FACTION_SPOREGGAR, NEUTRAL },	-- Sporeggar, Neutral.
-						["isBreadcrumb"] = true,
-						["lvl"] = lvlsquish(62, 62, 10),
+						["timeline"] = { ADDED_7_3_5 },
 						-- #if NOT ANYCLASSIC
 						["lockCriteria"] = { 1, "factionID", 970.4 },	-- Sporeggar, Neutral
 						-- #endif
+						["isBreadcrumb"] = true,
+						["lvl"] = lvlsquish(62, 62, 10),
 					}),
 					q(9788, {	-- A Damp, Dark Place
 						["qg"] = 17956,	-- Ikeyen
@@ -498,16 +498,16 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 9765,	-- Preparing for War
 						["maxReputation"] = { FACTION_CENARION_EXPEDITION, EXALTED },	-- Cenarion Expedition, Exalted.
 						["timeline"] = { REMOVED_4_3_0 },
+						["maps"] = { COILFANG_RESERVOIR_STEAMVAULT },
 						-- #if BEFORE 4.3.0
 						-- This way it doesnt display as currency once the quest got removed
 						["cost"] = { { "i", 24368, 1 } },	-- Coilfang Armaments
 						-- #endif
-						["maps"] = { COILFANG_RESERVOIR_STEAMVAULT },
-						["repeatable"] = true,
-						["lvl"] = lvlsquish(67, 67, 20),
 						-- #if NOT ANYCLASSIC
 						["lockCriteria"] = { 1, "factionID", 942.8 },	-- Cenarion Expedition, Exalted
 						-- #endif
+						["repeatable"] = true,
+						["lvl"] = lvlsquish(67, 67, 20),
 					}),
 					q(10115, {	-- Daggerfen Deviance
 						["qg"] = 18008,	-- Ikuti
@@ -672,10 +672,10 @@ root(ROOTS.Zones, {
 						["minReputation"] = { FACTION_SPOREGGAR, NEUTRAL },	-- Sporeggar, Neutral.
 						["maxReputation"] = { FACTION_SPOREGGAR, FRIENDLY },	-- Sporeggar, Friendly.
 						["cost"] = { { "i", 24245, 10 } },	-- Glowcap
-						["lvl"] = lvlsquish(62, 62, 10),
 						-- #if NOT ANYCLASSIC
 						["lockCriteria"] = { 1, "factionID", 970.5 },	-- Sporeggar, Friendly
 						-- #endif
+						["lvl"] = lvlsquish(62, 62, 10),
 					}),
 					q(9816, {	-- Have You Ever Seen One of These?
 						["qg"] = 18014,	-- Witch Doctor Tor'gash
@@ -704,11 +704,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 80.3, 64.2, ZANGARMARSH },
 						["maxReputation"] = { FACTION_CENARION_EXPEDITION, HONORED },	-- Cenarion Expedition, Honored.
 						["cost"] = {{ "i", 24401, 10 }},	-- Unidentified Plant Parts
-						["repeatable"] = true,
-						["lvl"] = lvlsquish(60, 60, 10),
 						-- #if NOT ANYCLASSIC
 						["lockCriteria"] = { 1, "factionID", 942.6 },	-- Cenarion Expedition, Honored
 						-- #endif
+						["repeatable"] = true,
+						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
 							i(24402, {	-- Package of Identified Plants
 								i(24407),	-- Uncatalogued Species
@@ -797,8 +797,8 @@ root(ROOTS.Zones, {
 					}),
 					q(9833, {	-- Lines of Communication
 						["qg"] = 18009,	-- Puluu
-						["minReputation"] = { FACTION_KURENAI, NEUTRAL },	-- Kurenai, Neutral.
 						["coord"] = { 40.8, 28.6, ZANGARMARSH },
+						["minReputation"] = { FACTION_KURENAI, NEUTRAL },	-- Kurenai, Neutral.
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(62, 62, 10),
 						["groups"] = {
@@ -893,15 +893,15 @@ root(ROOTS.Zones, {
 						["qg"] = 17925,	-- Gshaff
 						["sourceQuest"] = 9806,	-- Fertile Spores
 						["coord"] = { 19.1, 49.4, ZANGARMARSH },
-						["maxReputation"] = { FACTION_SPOREGGAR, EXALTED },	-- Sporeggar, Exalted.
 						["minReputation"] = { FACTION_SPOREGGAR, FRIENDLY },	-- Sporeggar, Friendly.
+						["maxReputation"] = { FACTION_SPOREGGAR, EXALTED },	-- Sporeggar, Exalted.
 						["cost"] = { { "i", 24449, 6 } },	-- Fertile Spore
-						["repeatable"] = true,
-						["lvl"] = lvlsquish(62, 62, 10),
-						["_drop"] = { "g" },	-- Glowcap added from API
 						-- #if NOT ANYCLASSIC
 						["lockCriteria"] = { 1, "factionID", 970.8 },	-- Sporeggar, Exalted
 						-- #endif
+						["repeatable"] = true,
+						["lvl"] = lvlsquish(62, 62, 10),
+						["_drop"] = { "g" },	-- Glowcap added from API
 					}),
 					q(9809, {	-- More Glowcaps
 						["qg"] = 17924,	-- Mshii'fn
@@ -909,22 +909,22 @@ root(ROOTS.Zones, {
 						["coord"] = { 19.7, 52.1, ZANGARMARSH },
 						["maxReputation"] = { FACTION_SPOREGGAR, FRIENDLY },	-- Sporeggar, Friendly.
 						["cost"] = { { "i", 24245, 10 } },	-- Glowcap
-						["repeatable"] = true,
-						["lvl"] = lvlsquish(62, 62, 10),
 						-- #if NOT ANYCLASSIC
 						["lockCriteria"] = { 1, "factionID", 970.5 },	-- Sporeggar, Friendly
 						-- #endif
+						["repeatable"] = true,
+						["lvl"] = lvlsquish(62, 62, 10),
 					}),
 					q(9742, {	-- More Spore Sacs
 						["qg"] = 17923,	-- Fahssn
 						["sourceQuest"] = 9739,	-- The Sporelings' Plight
 						["coord"] = { 19.0, 63.4, ZANGARMARSH },
 						["maxReputation"] = { FACTION_SPOREGGAR, FRIENDLY },	-- Sporeggar, Friendly.
-						["repeatable"] = true,
-						["lvl"] = lvlsquish(61, 61, 10),
 						-- #if NOT ANYCLASSIC
 						["lockCriteria"] = { 1, "factionID", 970.5 },	-- Sporeggar, Friendly
 						-- #endif
+						["repeatable"] = true,
+						["lvl"] = lvlsquish(61, 61, 10),
 					}),
 					q(9744, {	-- More Tendrils!
 						["qg"] = 17923,	-- Fahssn
@@ -932,11 +932,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 19.0, 63.4, ZANGARMARSH },
 						["maxReputation"] = { FACTION_SPOREGGAR, FRIENDLY },	-- Sporeggar, Friendly.
 						["cost"] = { { "i", 24291, 6 } },	-- Bog Lord Tendril
-						["repeatable"] = true,
-						["lvl"] = lvlsquish(61, 61, 10),
 						-- #if NOT ANYCLASSIC
 						["lockCriteria"] = { 1, "factionID", 970.5 },	-- Sporeggar, Friendly
 						-- #endif
+						["repeatable"] = true,
+						["lvl"] = lvlsquish(61, 61, 10),
 					}),
 					q(9834, {	-- Natural Armor
 						["qg"] = 18010,	-- Maktu
@@ -1024,13 +1024,13 @@ root(ROOTS.Zones, {
 						["qg"] = 17856,	-- Gzhun'tt
 						["sourceQuest"] = 9726,	-- Now That We're Friends...
 						["coord"] = { 19.5, 50.0, ZANGARMARSH },
-						["maxReputation"] = { FACTION_SPOREGGAR, EXALTED },	-- Sporeggar, Exalted.
 						["minReputation"] = { FACTION_SPOREGGAR, FRIENDLY },	-- Sporeggar, Friendly.
-						["repeatable"] = true,
-						["lvl"] = lvlsquish(62, 62, 10),
+						["maxReputation"] = { FACTION_SPOREGGAR, EXALTED },	-- Sporeggar, Exalted.
 						-- #if NOT ANYCLASSIC
 						["lockCriteria"] = { 1, "factionID", 970.8 },	-- Sporeggar, Exalted
 						-- #endif
+						["repeatable"] = true,
+						["lvl"] = lvlsquish(62, 62, 10),
 						["groups"] = {
 							objective(1, {	-- 0/12 Bloodscale Slavedriver slain
 								["provider"] = { "n", 18089 },	-- Bloodscale Slavedriver
@@ -1083,8 +1083,8 @@ root(ROOTS.Zones, {
 						["qg"] = 17841,	-- Ysiel Windsinger
 						["sourceQuest"] = 9764,	-- Orders from Lady Vashj
 						["timeline"] = { REMOVED_4_3_0 },
-						["cost"] = {{ "i", 24368, 1 }},	-- Coilfang Armaments
 						["maps"] = { COILFANG_RESERVOIR_STEAMVAULT },
+						["cost"] = {{ "i", 24368, 1 }},	-- Coilfang Armaments
 						["lvl"] = lvlsquish(67, 67, 20),
 					}),
 					q(9904, {	-- Pursuing Terrorclaw
@@ -1451,11 +1451,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10955,	-- Morthis Whisperwing
 						["coord"] = { 80.2, 65.2, ZANGARMARSH },
 						["timeline"] = { REMOVED_4_0_1 },
-						["classes"] = { DRUID },
 						["cost"] = {
 							{ "i", 22790, 10 },	-- Ancient Lichen
 							{ "i", 22786, 10 },	-- Dreaming Glory
 						},
+						["classes"] = { DRUID },
 						["lvl"] = 70,
 						["groups"] = {
 							objective(1, {	-- 0/10 Bogblossom
@@ -1575,11 +1575,11 @@ root(ROOTS.Zones, {
 						["provider"] = { "i", 24407 },	-- Uncatalogued Species
 						["sourceQuest"] = 9784,	-- Identify Plant Parts
 						["maxReputation"] = { FACTION_CENARION_EXPEDITION, HONORED },	-- Cenarion Expedition, Honored.
-						["repeatable"] = true,
-						["lvl"] = lvlsquish(60, 60, 10),
 						-- #if NOT ANYCLASSIC
 						["lockCriteria"] = { 1, "factionID", 942.5 },	-- Cenarion Expedition, Honored
 						-- #endif
+						["repeatable"] = true,
+						["lvl"] = lvlsquish(60, 60, 10),
 					}),
 					q(9901, {	-- Unfinished Business
 						["qg"] = 18295,	-- Prospector Conall
@@ -1691,14 +1691,14 @@ root(ROOTS.Zones, {
 					}),
 					q(9827,	{	-- Withered Basidium [Alliance]
 						["provider"] = { "i", 24483 },	-- Withered Basidium
-						["cr"] = 18124,	-- Withered Giant
 						["races"] = ALLIANCE_ONLY,
+						["cr"] = 18124,	-- Withered Giant
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),
 					q(9828, {	-- Withered Basidium [Horde]
 						["provider"] = { "i", 24484 },	-- Withered Basidium
-						["cr"] = 18124,	-- Withered Giant
 						["races"] = HORDE_ONLY,
+						["cr"] = 18124,	-- Withered Giant
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),
 					q(10355, {	-- Withered Flesh
@@ -1809,7 +1809,7 @@ root(ROOTS.Zones, {
 						["description"] = "Inside Coilfang Reservoir area.",
 						["cost"] = {{"i",187662,1}},	-- Strange Goop
 						["coord"] = { 52.2, 37.9, ZANGARMARSH },
-						["g"] = {
+						["groups"] = {
 							i(187915),	-- Pungent Blobfish
 						},
 					}),

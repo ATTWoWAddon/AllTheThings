@@ -229,8 +229,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(1599, {	-- Beginnings
 							["qg"] = 460,	-- Alamar Grimm <Warlock Trainer>
-							["coord"] = { 28.6, 66.1, DUN_MOROGH },
 							["altQuests"] = { 1598 },	-- The Stolen Tome
+							["coord"] = { 28.6, 66.1, DUN_MOROGH },
 							["timeline"] = { REMOVED_3_3_0 },
 							["races"] = ALLIANCE_ONLY,
 							["classes"] = { WARLOCK },
@@ -302,7 +302,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 37087,	-- Jona Ironstock
 							["altQuests"] = { 24492 },	-- Pack Your Bags
 							["sourceQuest"] = 24491,	-- Follow that Gyro-Copter!
-							["description"] = "Only available during |cFFFFD700Pack Your Bags|r.",
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 60.6, 21.1, COLDRIDGE_VALLEY },
@@ -310,6 +309,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 35.8, 66.2, DUN_MOROGH },
 								-- #endif
 							},
+							["description"] = "Only available during |cFFFFD700Pack Your Bags|r.",
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -457,7 +457,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { HUNTER },
-							["g"] = {
+							["groups"] = {
 								-- #if BEFORE MOP
 								-- #else
 								objective(2, {	-- 0/5 Practice Steady Shot 
@@ -983,7 +983,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { DWARF },
 							["classes"] = { WARRIOR },
-							["g"] = {
+							["groups"] = {
 								-- #if BEFORE MOP
 								-- #else
 								objective(2, {	-- 0/1 Practice Charge
@@ -1594,9 +1594,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_7_3_0 },
 							["groups"] = {
 								q(47895, {	-- Bert's Bots
-									-- CRIEVE NOTE: Not sure if there's a source achievement or quest required to do first.
 									["timeline"] = { ADDED_7_3_0 },
 									["isDaily"] = true,
+									-- CRIEVE NOTE: Not sure if there's a source achievement or quest required to do first.
 									["groups"] = {
 										i(151638, {	-- Leprous Sack of Pet Supplies
 											["timeline"] = { ADDED_7_3_0 },
@@ -2784,8 +2784,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 26854,	-- The Lost Pilot
 					["coord"] = { 87.6, 50.2, DUN_MOROGH },
-					["maps"] = { LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Mangy Claw
@@ -2812,7 +2812,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(384, {	-- Beer Basted Boar Ribs
 					["qg"] = 1267,	-- Ragnar Thunderbrew
-					["races"] = ALLIANCE_ONLY,
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 53.9, 50.7, DUN_MOROGH },
@@ -2820,15 +2819,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 46.8, 52.4, DUN_MOROGH },
 						-- #endif
 					},
-					-- #if BEFORE CATA
-					["requireSkill"] = COOKING,
-					-- #endif
 					["cost"] = {
 						{ "i", 2894, 1 },	-- Rhapsody Malt
 						-- #if BEFORE CATA
 						{ "i", 2886, 6 },	-- Crag Boar Rib
 						-- #endif
 					},
+					-- #if BEFORE CATA
+					["requireSkill"] = COOKING,
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
 					["groups"] = {
 						-- #if AFTER CATA
@@ -2871,8 +2871,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(308, {	-- Distracting Jarven
 							["qg"] = 1373,	-- Jarven Thunderbrew
 							["coord"] = { 47.6, 52.6, DUN_MOROGH },
-							["cost"] = { { "i", 2686, 1 } },	-- Thunder Ale
 							["timeline"] = { REMOVED_4_0_3 },
+							["cost"] = { { "i", 2686, 1 } },	-- Thunder Ale
 							["races"] = ALLIANCE_ONLY,
 							["repeatable"] = true,
 							["groups"] = {
@@ -2910,10 +2910,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 13328, 1 } },	-- Black Ram
-					["sym"] = { { "select", "itemID", 18785, 18786, 18787 } },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["_drop"] = { "g" },
+					["sym"] = { { "select", "itemID", 18785, 18786, 18787 } },
 				}),
 				q(26380, {	-- Bound for Kharanos
 					["providers"] = {
@@ -2995,7 +2995,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if NOT ANYCLASSIC
 				q(5637, {	-- Desperate Prayer
 					["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
-					["coord"] = { 47.2, 52.2, DUN_MOROGH },
 					["altQuests"] = {
 						5634,	-- Desperate Prayer [Stormwind City #1]
 						5635,	-- Desperate Prayer [Elwynn Forest]
@@ -3004,6 +3003,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5639,	-- Desperate Prayer [Ironforge]
 						5640,	-- Desperate Prayer [Darnassus]
 					},
+					["coord"] = { 47.2, 52.2, DUN_MOROGH },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN, DWARF },
 					["classes"] = { PRIEST },
@@ -3131,10 +3131,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 13329, 1 } },	-- Frost Ram
-					["sym"] = { { "select", "itemID", 18785, 18786, 18787 } },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["_drop"] = { "g" },
+					["sym"] = { { "select", "itemID", 18785, 18786, 18787 } },
 				}),
 				q(25724, {	-- Frostmane Aggression
 					["qg"] = 40950,	-- Captain Tharran
@@ -3275,10 +3275,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 13327, 1 } },	-- Icy Blue Mechanostrider Mod A
-					["sym"] = { { "select", "itemID", 18772, 18773, 18774 } },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["_drop"] = { "g" },
+					["sym"] = { { "select", "itemID", 18772, 18773, 18774 } },
 				}),
 				q(5626, {	-- In Favor of the Light
 					["qg"] = 837,	-- Branstock Khalder <Priest Trainer>
@@ -3316,11 +3316,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(32663, {	-- Learn To Ride
-					["races"] = { GNOME },
 					["description"] = "This quest is available to Gnomes upon reaching level 10.",
-					["isBreadcrumb"] = true,
-					["DisablePartySync"] = true,
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
+					["races"] = { GNOME },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -3328,14 +3326,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
+					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["lvl"] = 10,
 				}),
 				q(32662, {	-- Learn To Ride
-					["races"] = { DWARF },
 					["description"] = "This quest is available to Dwarves upon reaching level 10.",
-					["isBreadcrumb"] = true,
-					["DisablePartySync"] = true,
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
+					["races"] = { DWARF },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -3343,12 +3341,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
+					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["lvl"] = 10,
 				}),
 				q(14084, {	-- Learn to Ride in Dun Morogh
 					["provider"] = { "i", 46878 },	-- Riding Training Pamphlet (QS!)
 					["description"] = "The pamphlet that starts this quest is sent to Gnomes in their Mailbox upon reaching the specified level.",
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
+					["races"] = { GNOME },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -3356,13 +3357,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["races"] = { GNOME },
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(14083, {	-- Learn to Ride in Dun Morogh
 					["provider"] = { "i", 46877 },	-- Riding Training Pamphlet (QS!)
 					["description"] = "The pamphlet that starts this quest is sent to Dwarves in their Mailbox upon reaching the specified level.",
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
+					["races"] = { DWARF },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -3370,7 +3371,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["races"] = { DWARF },
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(1679, {	-- Muren Stormpike
@@ -3643,7 +3643,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if NOT ANYCLASSIC
 				q(5630, {	-- Returning Home [Dun Morogh]
 					["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
-					["coord"] = { 47.2, 52.2, DUN_MOROGH },
 					["altQuests"] = {
 						5627,	-- Returning Home [Darnassus]
 						5628,	-- Returning Home [Elwynn Forest]
@@ -3652,6 +3651,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5632,	-- Returning Home [Stormwind City]
 						5633,	-- Returning Home [Ironforge]
 					},
+					["coord"] = { 47.2, 52.2, DUN_MOROGH },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
@@ -3693,9 +3693,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1377,	-- Pilot Stonegear
 					["sourceQuest"] = 467,	-- Stonegear's Search
 					["coord"] = { 49.6, 48.4, DUN_MOROGH },
-					["cost"] = { { "i", 3340, 6 } },	-- Incendicite Ore
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WETLANDS },
+					["cost"] = { { "i", 3340, 6 } },	-- Incendicite Ore
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -3731,8 +3731,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(317, {	-- Stocking Jetsteam
 					["qg"] = 1378,	-- Pilot Bellowfiz
 					["coord"] = { 49.4, 48.4, DUN_MOROGH },
-					["cost"] = { { "i", 769, 4 } },	-- Chunk of Boar Meat
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 769, 4 } },	-- Chunk of Boar Meat
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 2,
 					["groups"] = {
@@ -4005,8 +4005,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(433, {	-- The Public Servant
-					--	Danny Donkey: Molkree says this quest propably got added by mistake to a list of quests to be marked as incomplete on a yearly basis. All yearly quests resets 15/01.
-					--	Classic have description in the quest because it will not play ball and appear directly on the npc itself due to conflict with the state of being a QG. This is not an issue on retail.
 					["providers"] = {
 						{ "n", 1977 },	-- Senator Mehr Stonehallow
 						-- #if AFTER CATA
@@ -4020,12 +4018,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 68.6, 56.0, DUN_MOROGH },
 						-- #endif
 					},
-					["races"] = ALLIANCE_ONLY,
-					["isYearly"] = true,
-					["lvl"] = 6,
 					-- #if ANYCLASSIC
 					["description"] = "The quest 'The Public Servant' gets flagged as not completed on a yearly basis, thus is unintentionally repeatable. This does not affect the collected state of the quest rewards.",
 					-- #endif
+					["races"] = ALLIANCE_ONLY,
+					["isYearly"] = true,
+					["lvl"] = 6,
+					--	Danny Donkey: Molkree says this quest propably got added by mistake to a list of quests to be marked as incomplete on a yearly basis. All yearly quests resets 15/01.
+					--	Classic have description in the quest because it will not play ball and appear directly on the npc itself due to conflict with the state of being a QG. This is not an issue on retail.
 					["groups"] = {
 						-- #if AFTER CATA
 						objective(1, {	-- 0/7 Trapped Miner
@@ -4306,10 +4306,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 13326, 1 } },	-- White Mechanostrider Mod A
-					["sym"] = { { "select", "itemID", 18772, 18773, 18774 } },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["_drop"] = { "g" },
+					["sym"] = { { "select", "itemID", 18772, 18773, 18774 } },
 				}),
 			}),
 			n(RARES, {

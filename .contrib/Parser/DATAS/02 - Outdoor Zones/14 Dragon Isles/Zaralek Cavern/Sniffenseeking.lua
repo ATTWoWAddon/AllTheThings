@@ -24,7 +24,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				{ "i", 205984, 1 },	-- 1x Bartered Dig Map
 			},
 			["crs"] = { 201426 },	-- Myrrit
-			["g"] = {
+			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(18284, {	-- A Niffen's Best Buddy
 						["sym"] = {{"meta_achievement",
@@ -32,7 +32,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							18257,	-- Can You Dig It?
 							18271,	-- He'sSss All Mine
 						}},
-						["g"] = {
+						["groups"] = {
 							title(507),	-- <Name>, Sniffenseeker
 						},
 					}),
@@ -80,13 +80,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				n(BONUS_OBJECTIVES, sharedData({ ["repeatable"] = true }, {
 					q(76015, {	-- Heart of Iron
-						["g"] = {
+						["groups"] = {
 							i(205939),	-- Iron Titan Key
 						},
 					}),
 					q(76084, {	-- Frostfire Finesse
 						["coord"] = { 60.1, 54.6, ZARALEK_CAVERN },
-						["g"] = {
+						["groups"] = {
 							i(206002),	-- Flame-Engulfed Key Fragment
 							i(206001),	-- Frost-Encased Key Fragment
 							i(206000),	-- Frostfire Key
@@ -94,20 +94,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 					q(75619, {	-- Thieving Critters
 						["coord"] = { 56.6, 58.5, ZARALEK_CAVERN },
-						["g"] = {
+						["groups"] = {
 							i(205185),	-- Muddy Key
 							i(205186),	-- Sticky Key
 						},
 					}),
 					q(75397, {	-- Those Rascally Worms
 						["coord"] = { 57.3, 51.4, ZARALEK_CAVERN },
-						["g"] = {
+						["groups"] = {
 							i(202180),	-- Pipsee Cheese Snack (QI!)
 						},
 					}),
 					q(75390, {	-- Vertical Anomaly
 						["coord"] = { 54.6, 49.5, ZARALEK_CAVERN },
-						["g"] = {
+						["groups"] = {
 							i(203655),	-- Waterlogged Key
 						},
 					}),
@@ -119,7 +119,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 					q(75620, {	-- Liars in Light
 						["coord"] = { 60.1, 54.6, ZARALEK_CAVERN },
-						["g"] = {
+						["groups"] = {
 							i(205202),	-- Small Key
 						},
 					}),
@@ -128,43 +128,43 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 					q(75234, {	-- Scratch and Sniff
 						["coord"] = { 54.6, 52.6, ZARALEK_CAVERN },
-						["g"] = {
+						["groups"] = {
 							i(205277),	-- Stolen Key
 						},
 					}),
 					q(75621, {	-- Element Whispers
 						["coord"] = { 55.9, 52, ZARALEK_CAVERN },
-						["g"] = {
+						["groups"] = {
 							i(205689),	-- Champion's Crystal
 						},
 					}),
 					q(75517, {	-- Sneak and Sniff
 						["coord"] = { 56.9, 51.4, ZARALEK_CAVERN },
-						["g"] = {
+						["groups"] = {
 							i(205412),	-- Jangly Key
 						},
 					}),
 					q(76081, {	-- Liars of Spirit
 						["coord"] = { 60.1, 54.6, ZARALEK_CAVERN },
-						["g"] = {
+						["groups"] = {
 							i(205990),	-- Fierce Key
 						},
 					}),
 					q(76014, {  -- Living Statue
-						["g"] = {
+						["groups"] = {
 							i(205938),	-- Heated Titan Key
 						},
 					}),
 					q(76027, {	-- Flapping and Screaming
 						["coord"] = { 54.6, 49.5, ZARALEK_CAVERN },
-						["g"] = {
+						["groups"] = {
 							o(402578, {	-- Glowing Key
 								i(205969),	-- Glowing Key
 							}),
 						},
 					}),
 					q(76016, {  -- The Living Drill
-						["g"] = {
+						["groups"] = {
 							i(205941),	-- Spit-covered Key
 						},
 					}),
@@ -195,7 +195,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 					q(75459, {	-- Brand New Digs
 						["coord"] = { 55.9, 49.9, ZARALEK_CAVERN },
-						["g"] = {
+						["groups"] = {
 							i(204867),	-- Metal Key
 						},
 					}),

@@ -811,8 +811,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(526, {	-- Lightforge Ingots
 					["qg"] = 1217,	-- Glorin Steelbrow
-					["sourceQuest"] = 321,	-- Lightforge Iron
 					["altQuests"] = { 324 },	-- The Lost Ingots
+					["sourceQuest"] = 321,	-- Lightforge Iron
 					["coord"] = { 10.6, 60.6, WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -827,10 +827,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26196, {	-- Longbraid the Grim
 					["qg"] = 41615,	-- Ferilon Leafborn
 					["sourceQuest"] = 25939,	-- For Peat's Sake
-				--	possibly requires The Threat of Flame?
 					["coord"] = { 56.4, 40.0, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+				--	possibly requires The Threat of Flame?
 				}),
 				q(25926, {	-- Mired in Hatred
 					["qg"] = 41503,	-- Rethiel the Greenwarden
@@ -982,10 +982,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 285,	-- Search More Hovels
 					["coord"] = { 14.0, 34.8, WETLANDS },
-					["timeline"] = { REMOVED_4_0_3 },
 					-- #if AFTER 4.0.3
 					["description"] = "This quest gets marked as completed when you complete the quest 'Return the Statuette' (25805).",
 					-- #endif
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -1316,8 +1316,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 25734,	-- Down in Thelgen Rock
 					["coord"] = { 47.6, 65.6, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
-					["cr"] = 41167,	-- Torrention
 					["races"] = ALLIANCE_ONLY,
+					["cr"] = 41167,	-- Torrention
 					["groups"] = {
 						i(59069, {	-- Slabchisel Boots
 							["timeline"] = { ADDED_4_0_3 },

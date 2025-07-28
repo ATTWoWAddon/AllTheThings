@@ -1,16 +1,15 @@
-
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		n(PROFESSIONS, {
 			["maps"] = {
 				LEGION_DALARAN,
 			},
-			["g"] = {
+			["groups"] = {
 				prof(JEWELCRAFTING, {
 					q(40523, {	-- Facet-nating Friends
 						["coord"] = { 40.3, 34.7, LEGION_DALARAN },
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
-						["g"] = {
+						["groups"] = {
 							recipe(264546),	-- Legion Jewelcrafting
 						},
 					}),
@@ -18,7 +17,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
 						["coord"] = { 40.2, 34.6, LEGION_DALARAN },
 						["sourceQuests"] = { 40523 },	-- Facet-nating Friends
-						["g"] = {
+						["groups"] = {
 							recipe(195850),	-- Versatile Skystone
 						},
 					}),
@@ -36,7 +35,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
 						["coord"] = { 40.2, 34.6, LEGION_DALARAN },
 						["sourceQuest"] = 40531,	-- Swift Vengeance
-						["g"] = {
+						["groups"] = {
 							recipe(195848),	-- Deadly Deep Amber
 						},
 					}),
@@ -44,7 +43,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
 						["coord"] = { 40.2, 34.6, LEGION_DALARAN },
 						["sourceQuest"] = 40531,	-- Swift Vengeance
-						["g"] = {
+						["groups"] = {
 							recipe(195851),	-- Masterful Queen's Opal
 						},
 					}),
@@ -52,7 +51,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
 						["coord"] = { 40.2, 34.6, LEGION_DALARAN },
 						["sourceQuest"] = 40531,	-- Swift Vengeance
-						["g"] = {
+						["groups"] = {
 							recipe(195849),	-- Quick Azsunite
 						},
 					}),
@@ -80,7 +79,7 @@ root(ROOTS.Zones, {
 							42214,	-- Knocked for a Loop
 							40525,	-- Getting the Band Back Together
 						},
-						["g"] = {
+						["groups"] = {
 							i(137215),	-- Cut Azsunite (QI!)
 							i(137794),	-- Design: Azsunite Loop [Rank 1] (RECIPE!)
 						},
@@ -93,7 +92,7 @@ root(ROOTS.Zones, {
 							42214,	-- Knocked for a Loop
 							40525,	-- Getting the Band Back Together
 						},
-						["g"] = {
+						["groups"] = {
 							i(137212),	-- Cut Skystone (QI!)
 							i(137793),	-- Design: Skystone Loop [Rank 1] (RECIPE!)
 						},
@@ -106,7 +105,7 @@ root(ROOTS.Zones, {
 							42214,	-- Knocked for a Loop
 							40525,	-- Getting the Band Back Together
 						},
-						["g"] = {
+						["groups"] = {
 							i(137214),	-- Cut Deep Amber (QI!)
 							i(137792),	-- Design: Deep Amber Loop [Rank 1] (RECIPE!)
 						},
@@ -137,7 +136,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
 						["coord"] = { 40.2, 34.6, LEGION_DALARAN },
 						["sourceQuests"] = { 40536 },	-- Bruls Before Jewels
-						["g"] = {
+						["groups"] = {
 							recipe(195854),	-- Versatile Maelstrom Sapphire
 						},
 					}),
@@ -145,7 +144,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 100939 },	-- Clive Cozen
 						["coord"] = { 38.3, 36.2, LEGION_DALARAN },
 						["sourceQuests"] = { 40536 },	-- Bruls Before Jewels
-						["g"] = {
+						["groups"] = {
 							recipe(195881),	-- Jeweled Lockpick
 						},
 					}),
@@ -158,7 +157,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
 						["coord"] = { 42.2, 35.0, STORMHEIM },
 						["sourceQuests"] = { 40540 },	-- Come at Me, Brul
-						["g"] = {
+						["groups"] = {
 							i(132760),	-- Conducting Jewel (QI!)
 						},
 					}),
@@ -166,7 +165,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
 						["coord"] = { 42.2, 35.0, STORMHEIM },
 						["sourceQuests"] = { 40541 },	-- The Charge Within
-						["g"] = {
+						["groups"] = {
 							recipe(195883),	-- Chatterstone
 						},
 					}),
@@ -174,7 +173,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
 						["coord"] = { 42.2, 35.0, STORMHEIM },
 						["sourceQuests"] = { 40546 },	-- Mysteries of Nature
-						["g"] = {
+						["groups"] = {
 							sp(199417),	-- Design: Deadly Eye of Prophecy
 							recipe(195852),	-- Deadly Eye of Prophecy
 						},
@@ -183,7 +182,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
 						["coord"] = { 42.2, 35.0, STORMHEIM },
 						["sourceQuests"] = { 40546 },	-- Mysteries of Nature
-						["g"] = {
+						["groups"] = {
 							sp(199418),	-- Design: Quick Dawnlight
 							recipe(195853),	-- Quick Dawnlight
 						},
@@ -192,7 +191,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
 						["coord"] = { 42.2, 35.0, STORMHEIM },
 						["sourceQuests"] = { 40546 },	-- Mysteries of Nature
-						["g"] = {
+						["groups"] = {
 							sp(199419),	-- Design: Masterful Shadowruby
 							recipe(195855),	-- Masterful Shadowruby
 						},
@@ -216,7 +215,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "o", 246154 },	-- Broken Toy Box
 						["coord"] = { 40.0, 35.3, LEGION_DALARAN },
 						["sourceQuests"] = { 40547 },	-- To Dalaran, With Love
-						["g"] = {
+						["groups"] = {
 							recipe(195882),	-- JewelCraft
 						},
 					}),
@@ -225,7 +224,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 39.8, 35, LEGION_DALARAN },
 						["sourceQuests"] = { 40558 },	-- Socket to Me
 						["maps"] = { 751, 752, 753, 754, 755, 756 },	-- The Black Rook Hold
-						["g"] = {
+						["groups"] = {
 							i(137800),	-- Dawnlight Band [Rank 1] (RECIPE!)
 						},
 					}),
@@ -234,7 +233,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 39.8, 35, LEGION_DALARAN },
 						["sourceQuests"] = { 40558 },	-- Socket to Me
 						["maps"] = { 703, 704, 705 },	-- Halls of Valor
-						["g"] = {
+						["groups"] = {
 							i(137799),	-- Maelstrom Band [Rank 1] (RECIPE!)
 						},
 					}),
@@ -243,7 +242,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 39.8, 35, LEGION_DALARAN },
 						["sourceQuests"] = { 40558 },	-- Socket to Me
 						["maps"] = { 706, 707, 708 },	-- Maw of Souls
-						["g"] = {
+						["groups"] = {
 							i(137798),	-- Prophetic Band [Rank 1] (RECIPE!)
 						},
 					}),
@@ -255,7 +254,7 @@ root(ROOTS.Zones, {
 							40561,	-- Halls of Valor: Jewel of the Heavens
 							40560,	-- Maw of Souls: Spiriting Away
 						},
-						["g"] = {
+						["groups"] = {
 							sp(199991),	-- Design: Class Necklace
 						},
 					}),
@@ -264,7 +263,7 @@ root(ROOTS.Zones, {
 					q(38944, {	-- Sew It Begins
 						["provider"] = { "n", 93542 },	-- Tanithria
 						["coord"] = { 35.2, 34.2, LEGION_DALARAN },
-						["g"] = {
+						["groups"] = {
 							recipe(264628),	-- Legion Tailoring
 						},
 					}),
@@ -272,26 +271,26 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 38944 },	-- Sew It Begins
 						["provider"] = { "n", 93542 },	-- Tanithria
 						["coord"] = { 35.2, 34.2, LEGION_DALARAN },
-						["g"] = {
+						["groups"] = {
 							recipe(185920),	-- Silkweave Epaulets
 							recipe(185919),	-- Silkweave Cinch
 							--
 							i(127294),	-- Handcrafted Silkweave Robe (QI!)
 							o(242636, {	-- Tanithria's Purple Dye
 								["coord"] = { 35.5, 34.5, LEGION_DALARAN },
-								["g"] = { i(127289) },	-- Tanithria's Purple Dye (QI!)
+								["groups"] = { i(127289) },	-- Tanithria's Purple Dye (QI!)
 							}),
 							o(242638, {	-- Tanithria's Red Dye
 								["coord"] = { 35.5, 34.5, LEGION_DALARAN },
-								["g"] = { i(127291) },	-- Tanithria's Red Dye (QI!)
+								["groups"] = { i(127291) },	-- Tanithria's Red Dye (QI!)
 							}),
 							o(242633, {	-- Tanithria's Silkweave
 								["coord"] = { 35.5, 34.0, LEGION_DALARAN },
-								["g"] = { i(127286) },	-- Tanithria's Silkweave (QI!)
+								["groups"] = { i(127286) },	-- Tanithria's Silkweave (QI!)
 							}),
 							o(242634, {	-- Tanithria's Thread
 								["coord"] = { 35.5, 34.5, LEGION_DALARAN },
-								["g"] = { i(127287) },	-- Tanithria's Thread (QI!)
+								["groups"] = { i(127287) },	-- Tanithria's Thread (QI!)
 							}),
 						},
 					}),
@@ -317,7 +316,7 @@ root(ROOTS.Zones, {
 						},
 						["provider"] = { "n", 93967 },	-- Lyndras
 						["coord"] = { 60.0, 34.6, AZSUNA },
-						["g"] = {
+						["groups"] = {
 							r(186763, {["u"]=TRAINING}),	-- Rune-Threaded Silkweave Robe
 							r(186764, {["u"]=TRAINING}),	-- Rune-Threaded Silkweave Bracers
 							r(185918),	-- Silkweave Bracers [Rank 1]
@@ -343,7 +342,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 38952 },	-- Meticulous Precision
 						["provider"] = { "n", 93967 },	-- Lyndras
 						["coord"] = { 35.2, 34.2, LEGION_DALARAN },
-						["g"] = {
+						["groups"] = {
 							r(186799, {["u"]=TRAINING}),	-- Basic Slikweave Robe
 							r(186801, {["u"]=TRAINING}),	-- Embroidered Slikweave Robe
 							r(185935),	-- Silkweave Cinch [Rank 2]
@@ -358,7 +357,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 38954 },	-- Where's Lyndras?
 						["provider"] = { "n", 93967 },	-- Lyndras
 						["coord"] = { 35.2, 34.2, LEGION_DALARAN },
-						["g"] = {
+						["groups"] = {
 							recipe(186388),	-- Silkweave Satchel
 						},
 					}),
@@ -371,7 +370,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 38956 },	-- Where's Lyndras Again?
 						["provider"] = { "n", 93967 },	-- Lyndras
 						["coord"] = { 35.2, 34.2, LEGION_DALARAN },
-						["g"] = {
+						["groups"] = {
 							recipe(185921),	-- Silkweave Pantaloons [Rank 1] (RECIPE!)
 						},
 					}),
@@ -379,7 +378,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 38956 },	-- Where's Lyndras Again?
 						["provider"] = { "n", 93525 },	-- Ainderu Summerleaf
 						["coord"] = { 35.2, 34.2, LEGION_DALARAN },
-						["g"] = {
+						["groups"] = {
 							recipe(185924),	-- Silkweave Slippers [Rank 1] (RECIPE!)
 						},
 					}),
@@ -406,7 +405,7 @@ root(ROOTS.Zones, {
 						},
 						["provider"] = { "n", 93967 },	-- Lyndras
 						["coord"] = { 35.2, 34.2, LEGION_DALARAN },
-						["g"] = {
+						["groups"] = {
 							r(187058, {["u"]=TRAINING}),	-- Slikweave Hood Lining
 							r(187059, {["u"]=TRAINING}),	-- Slikweave Hood: Outer Layer
 							r(187060, {["u"]=TRAINING}),	-- Handcrafted Slikweave Hood
@@ -418,7 +417,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 93967 },	-- Lyndras
 						["coord"] = { 35.2, 34.2, LEGION_DALARAN },
 						["maps"] = { 713 },	-- Eye of Azshara
-						["g"] = {
+						["groups"] = {
 							recipe(185923),	-- Silkweave Gloves [Rank 1] (RECIPE!)
 						},
 					}),
@@ -438,13 +437,12 @@ root(ROOTS.Zones, {
 							39602,	-- Where's Lyndras: Sewer Sleuthing
 						},
 						["provider"] = { "o", 243899 },	-- Broken Ley Flame Burner
-						["coord"] = { 56.2, 68.4, LEGION_DALARAN }
+						["coord"] = { 56.2, 68.4, LEGION_DALARAN },
 					}),
 					q(39667, {	-- Where's Lyndras: Leyflame Larceny
 						["sourceQuests"] = { 39605 },	-- Where's Lyndras: Downward Spiral
 						["provider"] = { "o", 243899 },	-- Broken Ley Flame Burner
-						["coord"] = { 56.2, 68.4, LEGION_DALARAN }
-
+						["coord"] = { 56.2, 68.4, LEGION_DALARAN },
 					}),
 					q(38965, {	-- Assault on Violet Hold: Into the Hold
 						["sourceQuests"] = { 39667 },	-- Where's Lyndras: Leyflame Larceny
@@ -456,7 +454,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 38965 },	-- Assault on Violet Hod: Into the Hold
 						["provider"] = { "n", 93542 },	-- Tanithria
 						["coord"] = { 35.2, 34.2, LEGION_DALARAN },
-						["g"] = {
+						["groups"] = {
 							recipe(185937),	-- Silkweave Pantaloons [Rank 2] (RECIPE!)
 							recipe(185938),	-- Silkweave Hood [Rank 2] (RECIPE!)
 							recipe(185939),	-- Silkweave Gloves [Rank 2] (RECIPE!)
@@ -490,7 +488,7 @@ root(ROOTS.Zones, {
 						},
 						["provider"] = { "n", 93969 },	-- Leyweaver Tytallo
 						["coord"] = { 40.4, 69.4, SURAMAR },
-						["g"] = {
+						["groups"] = {
 							r(185962),	-- Imbued Silkweave
 							r(185926),	-- Imbued Silkweave Bracers [Rank 1]
 						},
@@ -499,7 +497,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 38970 },	-- The Queen's Grace Loom
 						["provider"] = { "n", 93978 },	-- Leyweaver Athystro
 						["coord"] = { 26.6, 71.4, SURAMAR },
-						["g"] = {
+						["groups"] = {
 							r(185931),	-- Pattern: Imbued Silkweave Gloves [Rank 1] (RECIPE!)
 						},
 					}),
@@ -508,7 +506,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 93977 },	-- Leyweaver Tellumi
 						["coord"] = { 65.6, 56.2, STORMHEIM },
 						["maps"] = { 703, 704, 705 },	-- Halls of Valor
-						["g"] = {
+						["groups"] = {
 							r(185929),	-- Pattern: Imbued Silkweave Pantaloons [Rank 1] (RECIPE!)
 						},
 					}),
@@ -516,7 +514,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 38970 },	-- The Queen's Grace Loom
 						["provider"] = { "n", 93976 },	-- Leyweaver Mithrogane
 						["coord"] = { 40.2, 69.6, SURAMAR },
-						["g"] = {
+						["groups"] = {
 							r(185933),	-- Pattern: Imbued Silkwave Robes [Rank 1] (RECIPE!)
 						},
 					}),

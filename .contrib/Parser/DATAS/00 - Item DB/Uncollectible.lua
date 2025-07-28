@@ -22,6 +22,7 @@ i(2657);	-- Red Leather Bag
 i(3914);	-- Journeyman's Backpack
 i(5571);	-- Small Black Pouch
 i(5572);	-- Small Green Pouch
+i(5573);	-- Green Leather Bag
 i(6457);	-- Rusted Engineering Parts
 i(23553,{collectible=false})	-- Living Branch
 i(16967,{collectible=false})	-- Feralas Ahi
@@ -467,6 +468,7 @@ i(166800);	-- Diamond of Sustenance (Opulence Crown Consumable)
 i(166867);	-- Embossed Silver Bijou
 i(166799);	-- Emerald of Vigor (Opulence Crown Consumable)
 i(166861);	-- Hakkari Blood Garnet
+i(166854);	-- Jade Sethraliss Effigy
 i(166870);	-- Mithril-Trimmed Ritual Plate
 i(166801);	-- Sapphire of Brilliance (Opulence Crown Consumable)
 i(166875);	-- Silver Filigreed Devilsaur Tooth
@@ -550,9 +552,6 @@ i(174824);	-- Depleted Soul Ruby
 i(174347);	-- Deteriorating Umbral Wing
 i(174820);	-- Discarded Ny'alothan Tome
 i(174514);	-- Discarded Token
-i(174908);	-- Dragon Heart
-i(174909);	-- Dragon Heart
-i(174910);	-- Dragon Heart
 i(174383);	-- Ebony Stone
 i(174209);	-- Encased Arthropod
 i(172947);	-- Faceless Mask of Dark Imagination
@@ -571,9 +570,6 @@ i(168160);	-- Jeweled Scarab Figurine
 i(174823);	-- Miniature Plates of Uldum Replica
 i(173912);	-- Oozing Vocal Sac
 i(174510);	-- Pile of Shredded Paper
-i(174911);	-- Prophetic Eye
-i(174912);	-- Prophetic Eye
-i(174913);	-- Prophetic Eye
 i(107799);	-- Racing Regs
 i(173906);	-- Ruptured Power Cell
 i(174360);	-- Shadowy Gem
@@ -584,9 +580,6 @@ i(174515);	-- Star Powder
 i(174509);	-- Tarnished Mark
 i(174777);	-- The Curse of Stone
 i(174784);	-- The Final Truth
-i(174063);	-- Titan Core
-i(174064);	-- Titan Core
-i(174065);	-- Titan Core
 i(174783);	-- Torn Page of "Fear and Flesh"
 i(171353);	-- Torn Page of "The Curse of Stone"
 i(174785);	-- Torn Page of "The Final Truth"
@@ -2551,6 +2544,7 @@ i(238874);	-- Congealed Mana
 i(247686);	-- Crystallized Nightshade
 i(238882);	-- Cursed Eyeball Cluster
 i(238883);	-- Dimly Glowing Scrap
+i(238889);	-- Eldritch Signal Antenna
 i(238838);	-- Enlarged Nerve
 i(244359);	-- Ethereal Pylon Conduit
 i(238886);	-- Faintly Glowing Vellum

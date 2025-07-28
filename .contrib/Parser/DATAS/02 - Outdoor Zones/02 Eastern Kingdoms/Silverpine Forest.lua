@@ -588,8 +588,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27575, {	-- From the Belly of the Beast
 					["qg"] = 45878,	-- Lord Godfrey
-					["sourceQuest"] = 27574,	-- I Never Forget a Face
 					["altQuests"] = { 27594 },	-- On Her Majesty's Secret Service
+					["sourceQuest"] = 27574,	-- I Never Forget a Face
 					["description"] = "Available while Lord Godfrey is at your side. Once you complete |cFFFFD700On Her Majesty's Secret Service|r, this quest becomes unobtainable.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -688,8 +688,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["altQuests"] = { 27594 },	-- On Her Majesty's Secret Service
 					["description"] = "Available while Lord Godfrey is at your side. Once you complete |cFFFFD700On Her Majesty's Secret Service|r, this quest becomes unobtainable.|r",
 					["timeline"] = { ADDED_4_0_3 },
-					["cr"] = 45896,	-- Marsh Crocolisk
 					["races"] = HORDE_ONLY,
+					["cr"] = 45896,	-- Marsh Crocolisk
 				}),
 				q(26998, {	-- Iterating Upon Success
 					["qg"] = 44784,	-- High Apothecary Shana T'veen
@@ -1558,8 +1558,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1950,	-- Rane Yorick
 					["sourceQuest"] = 428,	-- Lost Deathstalkers
 					["coord"] = { 53.4, 13.4, SILVERPINE_FOREST },
-					["cost"] = { { "i", 3164, 6 } },	-- Discolored Worg Heart
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 3164, 6 } },	-- Discolored Worg Heart
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {

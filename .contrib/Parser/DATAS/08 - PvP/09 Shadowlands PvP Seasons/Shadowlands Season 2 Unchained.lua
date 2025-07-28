@@ -55,7 +55,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 		n(PVP_ASPIRANT, {
 			n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 				["coord"] = { 36.0, 58.6, ORIBOS },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {{"i", MOH, 12}},
 					["timeline"] = { ADDED_10_0_2_LAUNCH },
 				}, {
@@ -78,7 +78,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			}),
 			n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 				["coord"] = { 36.0, 58.6, ORIBOS },
-				["g"] = bubbleDown({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 } }, {
+				["groups"] = bubbleDown({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 } }, {
 					filter(BACK_F, {
 						honor(525, i(185240)),	-- Unchained Aspirant's Cape
 						honor(525, i(185128)),	-- Unchained Aspirant's Cloak
@@ -200,7 +200,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 		n(PVP_GLADIATOR, {
 			n(168011, {	-- Zo'sorg <Master of Conflict>
 				["coord"] = { 35.0, 57.6, ORIBOS },
-				["g"] = bubbleDown({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 } }, {
+				["groups"] = bubbleDown({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 } }, {
 					iensemble(201876, {	-- Arsenal: Unchained Gladiator's Weapons
 						["cost"] = {{"i", MOH, 80}},
 						["timeline"] = { ADDED_10_0_2_LAUNCH },
@@ -229,7 +229,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			}),
 			n(168011, {	-- Zo'sorg <Master of Conflict>
 				["coord"] = { 35.0, 57.6, ORIBOS },
-				["g"] = bubbleDown({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 } }, {
+				["groups"] = bubbleDown({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 } }, {
 					filter(BACK_F, {
 						conquest(525, i(185164)),	-- Unchained Gladiator's Cloak
 						conquest(525, i(185245)),	-- Unchained Gladiator's Drape

@@ -4,7 +4,7 @@
 
 root(ROOTS.GroupFinder, n(PARTY_SYNC, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 	["description"] = "Rewarded from Quest while in Party Sync",
-	["g"] = {
+	["groups"] = {
 		i(171305, {	-- Salvaged Cache of Goods
 			cl(DEATHKNIGHT, {
 				i(173566),	-- Bloodcaked Runeblade

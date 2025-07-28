@@ -14,18 +14,18 @@ root(ROOTS.Zones, {
 					["classes"] = { HUNTER },
 				}),
 				q(45473, {	-- A Giant Problem
-					["g"] = {
+					["groups"] = {
 						i(146947),	-- Sunken Cargo (QI!)
 					},
 				}),
 				q(46932),	-- A Tad More Corruption
 				q(45988, {	-- Ancient Bones
-					["g"] = {
+					["groups"] = {
 						i(144238),	-- Ancient Bones (QI!)
 					},
 				}),
 				q(46105, {	-- Arachnid Superiority
-					["g"] = {
+					["groups"] = {
 						i(147206),	-- Potent Venom Sac (QI!)
 					},
 				}),
@@ -40,7 +40,7 @@ root(ROOTS.Zones, {
 				q(45520),	-- Behind Enemy Portals
 				q(46073),	-- Break Their Garrison
 				q(46761, {	-- Brew Bandits
-					["g"] = {
+					["groups"] = {
 						i(146896),	-- Hozen Vaulting Staff (QI!)
 					},
 				}),
@@ -60,7 +60,7 @@ root(ROOTS.Zones, {
 				}),
 				q(45970),	-- Duty's End
 				q(46829, {	-- Elemental Abuse
-					["g"] = {
+					["groups"] = {
 						i(147283),	-- Air Power Core (QI!)
 						i(147284),	-- Earth Power Core (QI!)
 						i(147286),	-- Fire Power Core (QI!)
@@ -79,7 +79,7 @@ root(ROOTS.Zones, {
 				q(45934),	-- Fowl Play
 				q(46072),	-- Full Fel
 				q(46198, {	-- Gems of Destruction
-					["g"] = {
+					["groups"] = {
 						i(144362),	-- Pulsating Gem (QI!)
 					},
 				}),
@@ -88,7 +88,7 @@ root(ROOTS.Zones, {
 					["classes"] = { PALADIN },
 				}),
 				q(45985, {	-- Hellish Scavengers
-					["g"] = {
+					["groups"] = {
 						i(144240),	-- Ravaged Supplies (QI!)
 					},
 				}),
@@ -109,7 +109,7 @@ root(ROOTS.Zones, {
 				q(46308),	-- Leave a Trail
 				q(46046, {	-- Life's a Lich
 					["classes"] = { DEATHKNIGHT },
-					["g"] = {
+					["groups"] = {
 						i(144241),	-- Fel-Infused Remains (QI!)
 					},
 				}),
@@ -118,11 +118,11 @@ root(ROOTS.Zones, {
 				}),
 				q(46707),	-- Minion! Kill That One Too!
 				q(46755, {	-- Mission: Felraging
-					-- TODO: ["classes"] = { ? },
+					-- ["classes"] = { ? },
 				}),
 				q(46756),	-- Mission: Felrage Destruction
 				q(46825, {	-- Mud Mucking
-					["g"] = {
+					["groups"] = {
 						i(147211),	-- Sparkling Kirin Tor Coin (QI!)
 					},
 				}),
@@ -138,7 +138,7 @@ root(ROOTS.Zones, {
 				q(46180),	-- Power of Our Enemy
 				q(45929),	-- Purging the Flames
 				q(46075, {	-- Relic Hunting
-					["g"] = {
+					["groups"] = {
 						i(143851),	-- Precious Antiquity (QI!)
 					},
 				}),
@@ -156,7 +156,7 @@ root(ROOTS.Zones, {
 				q(46109),	-- Stand!
 				q(46236),	-- Stonebound Soldiers
 				q(46762, {	-- Storm Brew Hustle
-					["g"] = {
+					["groups"] = {
 						i(146896),	-- Hozen Vaulting Staff (QI!)
 					},
 				}),
@@ -164,7 +164,7 @@ root(ROOTS.Zones, {
 					["classes"] = { DEATHKNIGHT },
 				}),
 				q(45805, {	-- The Burning Keys
-					["g"] = {
+					["groups"] = {
 						i(143924),	-- Burning Key (QI!)
 					},
 				}),
@@ -177,12 +177,12 @@ root(ROOTS.Zones, {
 				q(46866),	-- Torture Chamber
 				q(45379),	-- Treasure Master Iks'reeged
 				q(45973, {	-- Unchecked Power
-					["g"] = {
+					["groups"] = {
 						i(146951),	-- Abjurist's Scroll of Knowledge (QI!)
 					},
 				}),
 				q(45791, {	-- War Materiel
-					["g"] = {
+					["groups"] = {
 						i(143888),	-- Felslag (QI!)
 					},
 				}),
@@ -191,7 +191,7 @@ root(ROOTS.Zones, {
 					["sym"] = {{"select","npcID",118403}},	-- Syaith (special NPC for Inscription Recipe)
 				}),
 				q(44748, {	-- Winged Terrors
-					["g"] = {
+					["groups"] = {
 						i(142079),	-- Shipwrecked Supplies (QI!)
 					},
 				}),

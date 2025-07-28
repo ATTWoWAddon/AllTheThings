@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sym"] = {{"select","npcID",127376}},	-- Select the WQ NPC
 			}),
 			q(48637, {	-- Cleansing Fire
-				["g"] = {
+				["groups"] = {
 					i(152648),	-- Brightsoul Scepter (QI!)
 				},
 			}),
@@ -57,7 +57,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			}),
 			q(48833),	-- Ritual Completion
 			q(48958, {	-- Ritual Interruption
-				["g"] = {
+				["groups"] = {
 					i(152465),	-- Banishment Stone Shard (QI!)
 				},
 			}),
@@ -65,7 +65,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			q(48662),	-- Short Fuses
 			q(48514),	-- Slumbering Behemoths
 			q(48691, {	-- Soul Chain
-				["g"] = {
+				["groups"] = {
 					i(152971),	-- Talisman of the Prophet (QI!)
 				},
 			}),
@@ -73,7 +73,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			q(48360),	-- Supplies Needed: Fiendish Leather
 			q(48374),	-- Supplies Needed: Lightweave Cloth
 			q(48640, {	-- The Immortal Squadron
-				["g"] = {
+				["groups"] = {
 					i(152657),	-- Target Designator (QI!)
 				},
 			}),

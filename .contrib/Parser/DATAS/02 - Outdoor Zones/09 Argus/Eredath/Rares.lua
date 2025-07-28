@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48709,	-- killID
 				["isDaily"] = true,
 				["coord"] = { 30.6, 41.6, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(153034),	-- Technique: Glyph of the Voidling (RECIPE!)
 					i(153056),	-- Grasping Manifestation (PET!)
 				},
@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48700,	-- killID
 				["isDaily"] = true,
 				["coord"] = { 44.2, 59.4, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(153193),	-- Baarut the Brisk (TOY!)
 				},
 			}),
@@ -36,7 +36,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48702,	-- killID
 				["isDaily"] = true,
 				["coord"] = { 41.8, 11.2, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(152998),	-- Carefully Hidden Muffin
 				},
 			}),
@@ -50,7 +50,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48718,	-- killID
 				["isDaily"] = true,
 				["coord"] = { 61.8, 50.2, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(153179),	-- Blue Conservatory Scroll (TOY!)
 					i(153181),	-- Red Conservatory Scroll (TOY!)
 					i(153180),	-- Yellow Conservatory Scroll (TOY!)
@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48713,	-- killID
 				["isDaily"] = true,
 				["coord"] = { 48.5, 40.9, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(153302),	-- Honed Jed'hin Scimitar
 				},
 			}),
@@ -75,7 +75,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48714,	-- killID
 				["isDaily"] = true,
 				["coord"] = { 58.8, 37.8, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(153315),	-- Praetor's Ornamental Warblade
 				},
 			}),
@@ -83,7 +83,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48717,	-- killID
 				["isDaily"] = true,
 				["coord"] = { 60.9, 29.8, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(153257),	-- Isolon Anchorite's Gavel
 				},
 			}),
@@ -91,7 +91,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48716,	-- killID
 				["isDaily"] = true,
 				["coord"] = { 57.6, 30.8, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(153268),	-- Enclave Aspirant's Axe
 				},
 			}),
@@ -100,7 +100,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48712,	-- killID
 				["isDaily"] = true,
 				["coord"] = { 44.0, 48.6, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(153190),	-- Fel-Spotted Egg
 				},
 			}),
@@ -108,7 +108,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48692,	-- killID
 				["isDaily"] = true,
 				["coord"] = { 44.8, 71.4, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(153296),	-- Spectral Consul's Cutter
 				},
 			}),
@@ -117,7 +117,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48721,	-- killID
 				["isDaily"] = true,
 				["coord"] = { 50.0, 9.4, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(152904),	-- Acid Belcher (MOUNT!)
 				},
 			}),
@@ -125,7 +125,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48935,	-- killID
 				["isDaily"] = true,
 				["coord"] = { 48.6, 53.6, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(153203),	-- Ancient Fishing Line
 				},
 			}),
@@ -133,7 +133,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48710,	-- killID
 				["isDaily"] = true,
 				["coord"] = { 70.2, 46.0, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(153292),	-- Spectral Censorite's Spire
 				},
 			}),
@@ -146,7 +146,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48706,	-- killID
 				["isDaily"] = true,
 				["coord"] = { 38.6, 65.2, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(153306),	-- Oronaar Miner's Piercer
 				},
 			}),
@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48705,	-- killID
 				["isDaily"] = true,
 				["coord"] = { 33.8, 47.4, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(152844),	-- Lambent Mana Ray (MOUNT!)
 				},
 			}),
@@ -167,7 +167,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48704,	-- killID
 				["isDaily"] = true,
 				["coord"] = { 63.6, 64.6, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(153183),	-- Barrier Generator (TOY!)
 					i(153323),	-- Eredath Vigilant's Crest
 				},
@@ -176,7 +176,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48703,	-- killID
 				["isDaily"] = true,
 				["coord"] = { 36.6, 23.6, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(153183),	-- Barrier Generator (TOY!)
 					i(153322),	-- Eredath Vigilant's Shield
 				},
@@ -185,7 +185,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48695,	-- killID
 				["isDaily"] = true,
 				["coord"] = { 55.6, 60.6, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(152814),	-- Maddened Chaosrunner (MOUNT!)
 					i(153269),	-- Enclave Aspirant's Waraxe
 				},

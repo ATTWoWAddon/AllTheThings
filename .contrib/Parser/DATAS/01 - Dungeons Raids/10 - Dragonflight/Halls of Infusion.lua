@@ -9,7 +9,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			2082,	-- Infuser's Rotunda
 			2083,	-- Infusion Chamber
 		},
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(72192, {	-- Halls of Infusion: Entropy to Order
 					-- ["sourceQuests"] = {  },	--
@@ -20,7 +20,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2504, {	-- Watcher Irideus
 					["crs"] = { 189719 },	-- Watcher Irideus
-					["g"] = {
+					["groups"] = {
 						i(193746),	-- Gauntlets of Incalculable Power
 						i(193743),	-- Irideus Fragment
 						i(193745),	-- Rod of Perfect Order
@@ -30,7 +30,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2507, {	-- Gulping Goliath
 					["crs"] = { 189722 },	-- Gulping Goliath
-					["g"] = {
+					["groups"] = {
 						i(193726),	-- Amphibian's Bellowing Crown
 						i(193725),	-- Ancient Hornswog Spaulders
 						i(193730),	-- Croaking Dagger
@@ -42,7 +42,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2510, {	-- Khajin the Unyielding
 					["crs"] = { 189727 },	-- Khajin the Unyielding
-					["g"] = {
+					["groups"] = {
 						i(193731),	-- Circle of Ascended Frost
 						i(193735),	-- Earthshaker's Steel Visor
 						i(193732, {	-- Globe of Jagged Ice
@@ -57,7 +57,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2511, {	-- Primal Tsunami
 					["crs"] = { 189729 },	-- Primal Tsunami
-					["g"] = {
+					["groups"] = {
 						ach(16260),	-- Halls of Infusion
 						i(193741),	-- Mantle of Crushing Waves
 						i(193738),	-- Robe of Plunging Depths
@@ -78,7 +78,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2511, {	-- Primal Tsunami
 					["crs"] = { 189729 },	-- Primal Tsunami
-					["g"] = {
+					["groups"] = {
 						ach(16261),	-- Heroic: Halls of Infusion
 					},
 				}),
@@ -89,13 +89,13 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2507, {	-- Gulping Goliath
 					["crs"] = { 189722 },	-- Gulping Goliath
-					["g"] = {
+					["groups"] = {
 						ach(16426),	-- Hungry Hungry Hornswog
 					},
 				}),
 				e(2511, {	-- Primal Tsunami
 					["crs"] = { 189729 },	-- Primal Tsunami
-					["g"] = {
+					["groups"] = {
 						ach(16262),	-- Mythic: Halls of Infusion
 						ach(17098),	-- Mythic: Halls of Infusion Guild Run
 						ach(16427),	-- Go With The Flow

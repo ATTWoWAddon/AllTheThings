@@ -391,8 +391,8 @@ root(ROOTS.Zones, {
 					q(26259, {	-- Blood of the Earthwarder
 						["qg"] = 43397,	-- Seer Kormo
 						["sourceQuest"] = 26255,	-- Return to the Temple of Earth
-						["description"] = "This quest must be completed before unlocking the Therazane dailies (The Binding). Seer Kormo will not be present in the Temple of Earth once the fight is done.",
 						["coord"] = { 49.7, 53.0, DEEPHOLM },
+						["description"] = "This quest must be completed before unlocking the Therazane dailies (The Binding). Seer Kormo will not be present in the Temple of Earth once the fight is done.",
 						["lvl"] = 82,
 						["groups"] = {
 							objective(1, {	-- 0/5 Blood of Neltharion
@@ -972,20 +972,20 @@ root(ROOTS.Zones, {
 						["lvl"] = 82,
 					}),
 					q(28295, {	-- Meetup with the Caravan
-						["description"] = "This quest is part of a breadcrumb questline from Deepholm and cannot be accepted if you have accepted or completed 'Hero's Call: Uldum!', or any following quests in Uldum.",
 						["qg"] = 44238,	-- Harrison Jones
 						["sourceQuest"] = 28292,	-- That's No Pyramid!
 						["coord"] = { 85.6, 25.8, STORMWIND_CITY },
+						["description"] = "This quest is part of a breadcrumb questline from Deepholm and cannot be accepted if you have accepted or completed 'Hero's Call: Uldum!', or any following quests in Uldum.",
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(28296, {	-- Meetup with the Caravan
-						["description"] = "This quest is part of a breadcrumb questline from Deepholm and cannot be accepted if you have accepted or completed 'Warchief's Command: Uldum!' or any following quests in Uldum.",
-						["sourceQuest"] = 28293,	-- That's No Pyramid!
-						["isBreadcrumb"] = true,
 						["qg"] = 47571,	-- Belloc Brightblade
+						["sourceQuest"] = 28293,	-- That's No Pyramid!
 						["coord"] = { 49.1, 70.5, ORGRIMMAR },
+						["description"] = "This quest is part of a breadcrumb questline from Deepholm and cannot be accepted if you have accepted or completed 'Warchief's Command: Uldum!' or any following quests in Uldum.",
 						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(27047, {	-- Motes
 						["qg"] = 43805,	-- Felsen the Enduring
@@ -1391,16 +1391,16 @@ root(ROOTS.Zones, {
 						["qg"] = 44799,	-- Explorer Mowi
 						["sourceQuest"] = 27058,	-- The Wrong Sequence (A)
 						["coord"] = { 47.4, 51.4, DEEPHOLM },
-						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 						["lvl"] = 82,
 					}),
 					q(28293, {	-- That's No Pyramid! (H)
 						["qg"] = 44823,	-- Examiner Rowe
 						["sourceQuest"] = 27059,	-- The Wrong Sequence (H)
 						["coord"] = { 51.2, 50.0, DEEPHOLM },
-						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 						["lvl"] = 82,
 					}),
 					q(26249, {	-- The Admiral's Cabin
@@ -1480,9 +1480,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(27203, {	-- The Maelstrom
-						["providers"] = {
-							{ "n", 45244 },	-- Farseer Krogar
-							{ "n", 45226 },	-- Naraat the Earthspeaker
+						["qgs"] = {
+							45244,	-- Farseer Krogar
+							45226,	-- Naraat the Earthspeaker
 						},
 						["sourceQuests"] = {
 							27398, -- The Battle Is Won, The War Goes On (A)

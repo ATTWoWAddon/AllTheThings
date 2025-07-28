@@ -4617,7 +4617,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			r(86644),	-- Origami Slime*
 		}),
 	}))),
-	applyclassicphase(MOP_PHASE_LANDFALL, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+	applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 		cat(779, {	-- Inks
 			r(111645),	-- Ink of Dreams
 			r(111646),	-- Starlight Ink
@@ -4896,38 +4896,38 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			},
 		}),
 		q(39931, {	-- Smashing Herbs
-			["sourceQuests"] = { 39847 },	-- Sign This
 			["provider"] = { "n", 92195 },	-- Professor Pallin
+			["sourceQuests"] = { 39847 },	-- Sign This
 			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 		}),
 		q(39932, {	-- Fish Ink
-			["sourceQuests"] = { 39931 },	-- Smashing Herbs
 			["provider"] = { "n", 92195 },	-- Professor Pallin
+			["sourceQuests"] = { 39931 },	-- Smashing Herbs
 			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 		}),
 		q(39933, {	-- The Card Shark
-			["sourceQuests"] = { 39932 },	-- Fish Ink
 			["provider"] = { "n", 92195 },	-- Professor Pallin
+			["sourceQuests"] = { 39932 },	-- Fish Ink
 			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 			["groups"] = {
 				r(192854),	-- Prophecy Tarot [Rank 1] (RECIPE!)
 			},
 		}),
 		q(40056, {	-- Our New Allies (DH)
-			["sourceQuests"] = { 39933 },	-- The Card Shark
 			["provider"] = { "n", 92195 },	-- Professor Pallin
+			["sourceQuests"] = { 39933 },	-- The Card Shark
 			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 			["classes"] = { DEMONHUNTER },
 		}),
 		q(39934, {	-- Our New Allies (non-DH)
-			["sourceQuests"] = { 39933 },	-- The Card Shark
 			["provider"] = { "n", 92195 },	-- Professor Pallin
+			["sourceQuests"] = { 39933 },	-- The Card Shark
 			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 			["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 		}),
 		q(40057, {	-- The Price of Power (DH)
-			["sourceQuests"] = { 40056 },	-- Our New Allies (DH)
 			["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+			["sourceQuests"] = { 40056 },	-- Our New Allies (DH)
 			["coord"] = { 43.2, 43.2, AZSUNA },
 			["classes"] = { DEMONHUNTER },
 			["groups"] = {
@@ -4935,8 +4935,8 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			},
 		}),
 		q(39935, {	-- The Price of Power (non-DH)
-			["sourceQuests"] = { 39934 },	-- Our New Allies (non-DH)
 			["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+			["sourceQuests"] = { 39934 },	-- Our New Allies (non-DH)
 			["coord"] = { 43.2, 43.2, AZSUNA },
 			["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 			["groups"] = {
@@ -4944,20 +4944,20 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			},
 		}),
 		q(40058, {	-- Defense Symbology (DH)
-			["sourceQuests"] = { 40057 },	-- The Price of Power (DH)
 			["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+			["sourceQuests"] = { 40057 },	-- The Price of Power (DH)
 			["coord"] = { 43.2, 43.2, AZSUNA },
 			["classes"] = { DEMONHUNTER },
 		}),
 		q(39936, {	-- Inscription of the Body (non-DH)
-			["sourceQuests"] = { 39935 },	-- The Price of Power (non-DH)
 			["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+			["sourceQuests"] = { 39935 },	-- The Price of Power (non-DH)
 			["coord"] = { 43.2, 43.2, AZSUNA },
 			["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 		}),
 		q(40059, {	-- Opposites Repel (DH)
-			["sourceQuests"] = { 40058 },	-- Defense Symbology (DH)
 			["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
+			["sourceQuests"] = { 40058 },	-- Defense Symbology (DH)
 			["coord"] = { 54.0, 15.4, AZSUNA },
 			["classes"] = { DEMONHUNTER },
 			["groups"] = {
@@ -4965,8 +4965,8 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			},
 		}),
 		q(39937, {	-- Opposites Repel (non-DH)
-			["sourceQuests"] = { 39936 },	-- Inscription of the Body (non-DH)
 			["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
+			["sourceQuests"] = { 39936 },	-- Inscription of the Body (non-DH)
 			["coord"] = { 54.0, 15.4, AZSUNA },
 			["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 			["groups"] = {
@@ -4974,8 +4974,8 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			},
 		}),
 		q(40060, {	-- Containing the Demon Within (DH)
-			["sourceQuests"] = { 40059 },	-- Opposites Repel (DH)
 			["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
+			["sourceQuests"] = { 40059 },	-- Opposites Repel (DH)
 			["coord"] = { 54.0, 15.4, AZSUNA },
 			["classes"] = { DEMONHUNTER },
 			["groups"] = {
@@ -4983,8 +4983,8 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			},
 		}),
 		q(39938, {	-- Containing the Demon Within (non-DH)
-			["sourceQuests"] = { 39937 },	-- Opposites Repel (non-DH)
 			["provider"] = { "n", 97736 },	-- Baric Stormrunner <Illidari>
+			["sourceQuests"] = { 39937 },	-- Opposites Repel (non-DH)
 			["coord"] = { 54.0, 15.4, AZSUNA },
 			["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 			["groups"] = {
@@ -4992,51 +4992,51 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			},
 		}),
 		q(40061, {	-- To Know Your Enemy (DH)
-			["sourceQuests"] = { 40057 },	-- The Price of Power (DH)
 			["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+			["sourceQuests"] = { 40057 },	-- The Price of Power (DH)
 			["coord"] = { 43.2, 43.2, AZSUNA },
 			["classes"] = { DEMONHUNTER },
 		}),
 		q(39939, {	-- Scribal Knowledge (non-DH)
-			["sourceQuests"] = { 39935 },	-- The Price of Power (non-DH)
 			["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
+			["sourceQuests"] = { 39935 },	-- The Price of Power (non-DH)
 			["coord"] = { 43.2, 43.2, AZSUNA },
 			["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 		}),
 		q(39940, {	-- Runes of Power
+			["provider"] = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
 			["sourceQuests"] = {
 				40061,	-- To Know Your Enemy (DH)
 				39939,	-- Scribal Knowledge (non-DH)
 			},
-			["provider"] = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
 			["coord"] = { 43.2, 43.2, AZSUNA },
 			["groups"] = {
 				r(192850),	-- Glyph of Crackling Flames (RECIPE!)
 			},
 		}),
 		q(40063, {	-- Control is Key (DH)
-			["sourceQuests"] = { 40061 },	-- To Know Your Enemy (DH)
 			["provider"] = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
+			["sourceQuests"] = { 40061 },	-- To Know Your Enemy (DH)
 			["coord"] = { 65.0, 25.8, AZSUNA },
 			["classes"] = { DEMONHUNTER },
 		}),
 		q(39941, {	-- Control is Key (non-DH)
-			["sourceQuests"] = { 39939 },	-- Scribal Knowledge (non-DH)
 			["provider"] = { "n", 97734 },	-- Zaria Shadowheart <Illidari>
+			["sourceQuests"] = { 39939 },	-- Scribal Knowledge (non-DH)
 			["coord"] = { 43.2, 43.2, AZSUNA },
 			["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 		}),
 		q(39943, {	-- The Burdens of Hunting
+			["qgs"] = {
+				97734,	-- Zaria Shadowheart
+				98026,	-- Baric Stormrunner
+			},
 			["sourceQuests"] = {
 				40060,	-- Containing the Demon Within (DH)
 				39938,	-- Containing the Demon Within (non-DH)
 				39940,	-- Runes of Power
 				40063,	-- Control is Key (DH)
 				39941,	-- Control is Key (non-DH)
-			},
-			["providers"] = {
-				{ "n", 97734 },	-- Zaria Shadowheart
-				{ "n", 98026 },	-- Baric Stormrunner
 			},
 			["coords"] = {
 				{ 54.0, 15.4, AZSUNA },
@@ -5047,84 +5047,84 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			},
 		}),
 		q(39944, {	-- Mysterious Messages
-			["sourceQuests"] = { 39933 },	-- The Card Shark
 			["provider"] = { "n", 92195 },	-- Professor Pallin
+			["sourceQuests"] = { 39933 },	-- The Card Shark
 			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 		}),
 		q(39945, {	-- Runes Within the Ruins
-			["sourceQuests"] = { 39944 },	-- Mysterious Messages
 			["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
+			["sourceQuests"] = { 39944 },	-- Mysterious Messages
 			["coord"] = { 69.2, 40.6, STORMHEIM },
 		}),
 		q(39946, {	-- Right Tool for the Job
-			["sourceQuests"] = { 39944 },	-- Mysterious Messages
 			["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
+			["sourceQuests"] = { 39944 },	-- Mysterious Messages
 			["coord"] = { 69.2, 40.6, STORMHEIM },
 		}),
 		q(39947, {	-- Not So Complex?
+			["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
 			["sourceQuests"] = {
 				39945,	-- Runes Within the Ruins
 				39946,	-- Right Tool for the Job
 			},
-			["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
 			["coord"] = { 69.2, 40.6, STORMHEIM },
 		}),
 		q(40052, {	-- Ancient Vrykul Mastered
-			["sourceQuests"] = { 39947 },	-- Not So Complex?
 			["provider"] = { "n", 97748 },	-- Nicholo Swiftfuse
+			["sourceQuests"] = { 39947 },	-- Not So Complex?
 			["coord"] = { 69.2, 40.6, STORMHEIM },
 			["groups"] = {
 				r(192802),	-- Scroll of Forgotten Knowledge (RECIPE!)
 			},
 		}),
 		q(39948, {	-- The Ink Flows
-			["sourceQuests"] = { 40052 },	-- Ancient Vrykul Mastered
 			["provider"] = { "n", 92195 },	-- Professor Pallin
+			["sourceQuests"] = { 40052 },	-- Ancient Vrykul Mastered
 			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 		}),
 		q(39949, {	-- Once a Scribe Like You
-			["sourceQuests"] = { 39948 },	-- The Ink Flows
 			["provider"] = { "n", 97359 },	-- Raethan
+			["sourceQuests"] = { 39948 },	-- The Ink Flows
 			["coord"] = { 68.6, 59.6, LEGION_THE_UNDERBELLY },
 		}),
 		q(39950, {	-- An Odd Trinket
-			["sourceQuests"] = { 39949 },	-- Once a Scribe Like You
 			["provider"] = { "n", 97359 },	-- Raethan
+			["sourceQuests"] = { 39949 },	-- Once a Scribe Like You
 			["coord"] = { 68.6, 59.6, LEGION_THE_UNDERBELLY },
 			["groups"] = {
 				r(192855),	-- Prophecy Tarot [Rank 2] (RECIPE!)
 			},
 		}),
 		q(39954, {	-- Mass Milling Techniques
-			["sourceQuests"] = { 39933 },	-- The Card Shark
 			["provider"] = { "n", 92195 },	-- Professor Pallin
+			["sourceQuests"] = { 39933 },	-- The Card Shark
 			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 			["groups"] = {
 				r(210116),	-- Mass Mill Yseralline Seeds (RECIPE!)
 			},
 		}),
 		q(39961, {	-- An Embarrassing Revelation
-			["sourceQuests"] = { 39933 },	-- The Card Shark
 			["provider"] = { "o", 244651 },	-- Steamy Romance Novel
+			["sourceQuests"] = { 39933 },	-- The Card Shark
 			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 		}),
 		q(39955, {	-- The Plot Thickens [A]
-			["sourceQuests"] = { 39961 },	-- An Embarrassing Revelation
 			["provider"] = { "n", 92195 },	-- Professor Pallin
+			["sourceQuests"] = { 39961 },	-- An Embarrassing Revelation
 			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
 		}),
 		q(39959, {	-- The Plot Thickens [H]
-			["sourceQuests"] = { 39961 },	-- An Embarrassing Revelation
 			["provider"] = { "n", 92195 },	-- Professor Pallin
+			["sourceQuests"] = { 39961 },	-- An Embarrassing Revelation
 			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
 		}),
 		q(39956, {	-- The Legacy Passed On [A]
-			["sourceQuests"] = { 39955 },	-- The Plot Thickens [A]
 			["provider"] = { "n", 97762 },	-- Bill Spearshaker <Author Extrodinaire>
+			["sourceQuests"] = { 39955 },	-- The Plot Thickens [A]
 			["coord"] = { 77.2, 10.4, IRONFORGE },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
@@ -5132,8 +5132,8 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			},
 		}),
 		q(39960, {	-- The Legacy Passed On [H]
-			["sourceQuests"] = { 39959 },	-- The Plot Thickens [H]
 			["provider"] = { "n", 97766 },	-- Francis Serbacon <Author Extrodinaire>
+			["sourceQuests"] = { 39959 },	-- The Plot Thickens [H]
 			["coord"] = { 77.8, 38.8, UNDERCITY },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
@@ -5141,18 +5141,18 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			},
 		}),
 		q(39953, {	-- Halls of Valor: Vision of Valor
+			["provider"] = { "n", 92195 },	-- Professor Pallin
 			["sourceQuests"] = {
 				40052,	-- Ancient Vrykul Mastered
 				39950,	-- An Odd Trinket
 				39943,	-- The Burdens of Hunting
 			},
-			["provider"] = { "n", 92195 },	-- Professor Pallin
 			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 			["maps"] = { 703, 704, 705 },	-- Halls of Valor
 		}),
 		q(39957, {	-- Demon Ink
-			["sourceQuests"] = { 39953 },	-- Halls of Valor: Vision of Valor
 			["provider"] = { "n", 92195 },	-- Professor Pallin
+			["sourceQuests"] = { 39953 },	-- Halls of Valor: Vision of Valor
 			["coord"] = { 41.6, 37.2, LEGION_DALARAN },
 			["cost"] = { { "i", 124124, 1 } },	-- 1x Blood of Sargeras
 			["groups"] = {
@@ -5161,50 +5161,50 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			},
 		}),
 		q(39942, {	-- Aethrem Crystal
-			["description"] = "There is a chance of getting this quest when milling Aethril.",
 			["provider"] = { "i", 136909 },	-- Aethrem Crystal
+			["description"] = "There is a chance of getting this quest when milling Aethril.",
 			["groups"] = {
 				r(209658),	-- Mass Mill Aethril (RECIPE!)
 			},
 		}),
 		q(40062, {	-- Bulging Nightmare Pod
-			["description"] = "There is a chance of getting this quest when milling Dreamleaf.",
 			["provider"] = { "i", 136912 },	-- Bulging Nightmare Pod
+			["description"] = "There is a chance of getting this quest when milling Dreamleaf.",
 			["groups"] = {
 				r(209659),	-- Mass Mill Dreamleaf (RECIPE!)
 			},
 		}),
 		q(40065, {	-- Fjarnsk
-			["description"] = "There is a chance of getting this quest when milling Fjarnskaggl.",
 			["provider"] = { "i", 136916 },	-- Fjarnsk
+			["description"] = "There is a chance of getting this quest when milling Fjarnskaggl.",
 			["groups"] = {
 				r(209661),	-- Mass Mill Fjarnskaggl (RECIPE!)
 			},
 		}),
 		q(39951, {	-- Roseate Essence
-			["description"] = "There is a chance of getting this quest when milling Starlight Rose.",
 			["provider"] = { "i", 136917 },	-- Roseate Essence
+			["description"] = "There is a chance of getting this quest when milling Starlight Rose.",
 			["groups"] = {
 				r(209662),	-- Mass Mill Starlight Rose (RECIPE!)
 			},
 		}),
 		q(39952, {	-- Sallow Essence
-			["description"] = "There is a chance of getting this quest when milling Felwort.",
 			["provider"] = { "i", 136918 },	-- Sallow Essence
+			["description"] = "There is a chance of getting this quest when milling Felwort.",
 			["groups"] = {
 				r(209664),	-- Mass Mill Felwort (RECIPE!)
 			},
 		}),
 		q(40064, {	-- Woody Seed Cluster
-			["description"] = "There is a chance of getting this quest when milling Foxflower.",
 			["provider"] = { "i", 136915 },	-- Woody Seed Cluster
+			["description"] = "There is a chance of getting this quest when milling Foxflower.",
 			["groups"] = {
 				r(209660),	-- Mass Mill Foxflower (RECIPE!)
 			},
 		}),
 		q(43929, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {	-- Vantus Mastery
-			["description"] = "Available to pick after acquired all rank 3 Vantus Techniques from EN, TOV and NH.",
 			["provider"] = { "n", 90417 },	-- Archmage Khadgar
+			["description"] = "Available to pick after acquired all rank 3 Vantus Techniques from EN, TOV and NH.",
 			["groups"] = {
 				i(137783),	-- Vantus Rune Technique: Gul'dan [Rank 3] (RECIPE!)
 			},
@@ -5220,50 +5220,50 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			q(54477, {	-- Inscribed Methods [A]
 				["provider"] = { "n", 130399 },	-- Zooey Inksprocket
 				["coord"] = { 73.4, 6.3, BORALUS },
-				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(54478, {	-- Inscribed Methods [H]
 				["provider"] = { "n", 130901 },	-- Chronicler Grazzul
 				["coord"] = { 42.3, 39.7, DAZARALOR },
-				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
+				["races"] = HORDE_ONLY,
 			}),
 			------ Tools of Trade Questline ------
 			q(40537, {	-- Drawing Blood [A]
-				["description"] = "This quest chain requires 150 skill in Kul Tiran Inscription.",
 				["provider"] = { "n", 130399 },	-- Zooey Inksprocket
 				["coord"] = { 73.4, 6.3, BORALUS },
-				["races"] = ALLIANCE_ONLY,
+				["description"] = "This quest chain requires 150 skill in Kul Tiran Inscription.",
 				["timeline"] = { ADDED_8_1_5 },
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(49943, {	-- Drawing Blood [H]
-				["description"] = "This quest chain requires 150 skill in Zandalari Inscription.",
 				["provider"] = { "n", 130901 },	-- Chronicler Grazzul
 				["coord"] = { 42.3, 39.7, DAZARALOR },
-				["races"] = HORDE_ONLY,
+				["description"] = "This quest chain requires 150 skill in Zandalari Inscription.",
 				["timeline"] = { ADDED_8_1_5 },
+				["races"] = HORDE_ONLY,
 			}),
 			q(49694, {	-- Turn to Drust [A]
-				["sourceQuests"] = { 40537 },	-- Drawing Blood [A]
 				["provider"] = { "n", 130399 },	-- Zooey Inksprocket
+				["sourceQuests"] = { 40537 },	-- Drawing Blood [A]
 				["coord"] = { 73.4, 6.3, BORALUS },
-				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(49944, {	-- Turn to Drust [H]
-				["sourceQuests"] = { 49943 },	-- Drawing Blood [H]
 				["provider"] = { "n", 130901 },	-- Chronicler Grazzul
+				["sourceQuests"] = { 49943 },	-- Drawing Blood [H]
 				["coord"] = { 42.3, 39.7, DAZARALOR },
-				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["races"] = HORDE_ONLY,
 			}),
 			q(49873, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Sacrificial Writes
+				["provider"] = { "o", 279647 },	-- Tome of Sacrifice
 				["sourceQuests"] = {
 					49694,	-- Turn to Drust [A]
 					49944,	-- Turn to Drust [H]
 				},
-				["provider"] = { "o", 279647 },	-- Tome of Sacrifice
 				["coord"] = { 20.6, 44, DRUSTVAR },
 				["groups"] = {
 					r(259665),	-- Blood Contract: Sacrifice
@@ -5272,8 +5272,8 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				},
 			})),
 			q(49874, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- By the Book
-				["sourceQuests"] = { 49873 },	-- Sacrificial Writes
 				["provider"] = { "n", 131657 },	-- Bloodshed Compendium
+				["sourceQuests"] = { 49873 },	-- Sacrificial Writes
 				["coord"] = { 20.7, 44, DRUSTVAR },
 				["maps"] = { 1407 },	-- Prison of Ink (Scenario Map)
 				["groups"] = {
@@ -5282,43 +5282,43 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				},
 			})),
 			q(49876, {	-- Lines in the Sand [A]
-				["sourceQuests"] = { 49874 },	-- By the Book
 				["provider"] = { "n", 131386 },	-- Kronah
+				["sourceQuests"] = { 49874 },	-- By the Book
 				["coord"] = { 20.6, 44, DRUSTVAR },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(49946, {	-- Lines in the Sand [H]
-				["sourceQuests"] = { 49874 },	-- By the Book
 				["provider"] = { "n", 131386 },	-- Kronah
+				["sourceQuests"] = { 49874 },	-- By the Book
 				["coord"] = { 20.6, 44, DRUSTVAR },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(49877, {	-- Temple of Sethraliss: Booking on a Favor
+				["provider"] = { "n", 150318 },	-- Veriss
 				["sourceQuests"] = {
 					49876,	-- Lines in the Sand [A]
 					49946,	-- Lines in the Sand [H]
 				},
-				["provider"] = { "n", 150318 },	-- Veriss
 				["coord"] = { 27.6, 52.3, VOLDUN },
-				["maps"] = { 1038, 1043 },	-- Temple of Sethraliss
 				["timeline"] = { ADDED_8_1_5 },
-				["g"] = {
+				["maps"] = { 1038, 1043 },	-- Temple of Sethraliss
+				["groups"] = {
 					i(156512),	-- Tome of Oblivion (QI!)
 				},
 			}),
 			q(49879, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Brush With Death
-				["sourceQuests"] = { 49877 },	-- Temple of Sethraliss: Booking on a Favor
 				["provider"] = { "o", 279645 },	-- Tome of Oblivion
+				["sourceQuests"] = { 49877 },	-- Temple of Sethraliss: Booking on a Favor
 				["coord"] = { 27.6, 52.3, VOLDUN },
 				["groups"] = {
 					r(292322),	-- Blood Contract: Oblivion
 				},
 			})),
 			q(49878, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	--Penning In Protection
-				["sourceQuests"] = { 49877 },	-- Temple of Sethraliss: Booking on a Favor
 				["provider"] = { "o", 279646 },	-- Bloodguard Chronicles
+				["sourceQuests"] = { 49877 },	-- Temple of Sethraliss: Booking on a Favor
 				["coord"] = { 27.6, 52.2, VOLDUN },
 				["groups"] = {
 					r(292320),	-- Blood Contract: Bloodguard
@@ -5328,17 +5328,17 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				},
 			})),
 			q(49881, {	-- The Final Verse
+				["provider"] = { "n", 150318 },	-- Veriss
 				["sourceQuests"] = {
 					49878, -- Penning In Protection
 					49879, -- Brush With Death
 				},
-				["provider"] = { "n", 150318 },	-- Veriss
 				["coord"] = { 27.6, 52.3, VOLDUN },
 				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(49882, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- A Test of Quills
-				["sourceQuests"] = { 49881 },	-- The Final Verse
 				["provider"] = { "n", 131397 },	-- Miju
+				["sourceQuests"] = { 49881 },	-- The Final Verse
 				["coord"] = { 32.6, 86, ZULDAZAR },
 				["groups"] = {
 					r(256301),	-- Sanguine Feather Quill of Lana'thel (RECIPE!)
@@ -5355,18 +5355,18 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(QUESTS, {
 			q(70361, {	-- Dragon Isles Inscription
-				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Inscription.",
 				["provider"] = { "n", 198125 },	-- Isarian Shadowplume <Inscription Trainer>
 				["coord"] = { 57.1, 58.2, THE_WAKING_SHORES },
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Inscription.",
 				["lockCriteria"] = { 1,
 					"spellID", 366251,	-- Dragon Isles Inscription
 					"questID", 72244,	-- Dragon Isles Inscription
 				},
 			}),
 			q(72244, {	-- Dragon Isles Inscription
-				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Inscription.",
 				["provider"] = { "n", 198380 },	-- Journalist Jessamine Spitz
 				["coord"] = { 76.1, 35.5, THE_WAKING_SHORES },
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Inscription.",
 				["lockCriteria"] = { 1,
 					"spellID", 366251,	-- Dragon Isles Inscription
 					"questID", 70361,	-- Dragon Isles Inscription
@@ -5384,12 +5384,12 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				["coord"] = { 40.2, 64.4, THE_AZURE_SPAN },
 			}),
 			q(70188, {	-- Specialized Secrets: Inscription
-				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
+				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
 				["cost"] = {{"i", 191784, 1 }},	-- 1x Dragon Shard of Knowledge
 				["isRepeatable"] = true,
-				["g"] = {
+				["groups"] = {
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
@@ -5397,69 +5397,69 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		n(QUESTS, sharedData({
 			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
 			["isWeekly"] = true,
-			["g"] = {
+			["groups"] = {
 				i(198607),	-- Scribe's Glyphs
 			},
 		},{
 			------ Requires 25 Skill ------
 			q(66945, {	-- Icy Ink
-				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
-				["g"] = {
+				["description"] = "Requires 25 Skill.",
+				["groups"] = {
 					i(194451),	-- Icy Excrement (QI!)
 				},
 			}),
 			q(66944, {	-- Peacock Pigments
-				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
-				["g"] = {
+				["description"] = "Requires 25 Skill.",
+				["groups"] = {
 					i(194321),	-- Peacock Feather (QI!)
 				},
 			}),
 			q(72438, {	-- Tarasek Intentions
-				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
-				["g"] = {
+				["description"] = "Requires 25 Skill.",
+				["groups"] = {
 					i(201835),	-- Draconic Scroll (QI!)
 				},
 			}),
 			q(66943, {	-- Wood for Writing
-				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
-				["g"] = {
+				["description"] = "Requires 25 Skill.",
+				["groups"] = {
 					i(194332),	-- Bark Parchment (QI!)
 				},
 			}),
 
 			------ Requires 45 Skill ------
 			q(70561, {	-- A Scribe's Tragedy
-				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 185540 },	-- Talendara
 				["coord"] = { 39.4, 73.6, VALDRAKKEN },
+				["description"] = "Requires 45 Skill.",
 			}),
 			q(70558, {	-- Disillusioned Illusions
-				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 185540 },	-- Talendara
 				["coord"] = { 39.4, 73.6, VALDRAKKEN },
+				["description"] = "Requires 45 Skill.",
 			}),
 			q(70592, {	-- Inscription Services Requested
-				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 194026 },	-- Azley
 				["coord"] = { 35.6, 58.8, VALDRAKKEN },
+				["description"] = "Requires 25 Skill.",
 			}),
 			q(70560, {	-- The Most Powerful Tool: Good Documentation
-				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 185540 },	-- Talendara
 				["coord"] = { 39.4, 73.6, VALDRAKKEN },
+				["description"] = "Requires 45 Skill.",
 			}),
 			q(70559, {	-- Quill You Help?
-				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 185540 },	-- Talendara
 				["coord"] = { 39.4, 73.6, VALDRAKKEN },
+				["description"] = "Requires 45 Skill.",
 			}),
 
 			------ Requires ?? Skill - Patch 10.1.0. ------
@@ -5467,7 +5467,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				["provider"] = { "n", 203516 },	-- Kayann
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 },
-				["g"] = {
+				["groups"] = {
 					i(204435),	-- Obsidian Tablet (QI!)
 				},
 			}),
@@ -5481,7 +5481,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				["provider"] = { "n", 210162 },	-- Magnolia Oaken
 				["coord"] = { 36.8, 63.1, VALDRAKKEN },
 				["timeline"] = { ADDED_10_2_0 },
-				["g"] = {
+				["groups"] = {
 					i(208886),	-- Fiery Essence (QI!)
 				},
 			}),
@@ -5489,14 +5489,14 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				["provider"] = { "n", 210162 },	-- Magnolia Oaken
 				["coord"] = { 36.8, 63.1, VALDRAKKEN },
 				["timeline"] = { ADDED_10_2_0 },
-				["g"] = {
+				["groups"] = {
 					i(208946),	-- Burning Rune (QI!)
 				},
 			}),
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["g"] = sharedData({ ["cost"] = {{ "c", DF_INSCRIPTION_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", DF_INSCRIPTION_KNOWLEDGE, 1 }} }, {
 				r(383533),	-- Azurescale Sigil
 				r(383536),	-- Bronzescale Sigil
 				r(383512),	-- Bundle O' Cards: Dragon Isles
@@ -5523,7 +5523,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			o(402892, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Ancient Research
 				["coord"] = { 54.6, 20.2, ZARALEK_CAVERN },
 				["questID"] = 76121,
-				["g"] = {
+				["groups"] = {
 					i(206035),	-- Ancient Research
 				},
 			})),
@@ -5531,7 +5531,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				["description"] = "Interact with the glyph, cross the bridge and kill the neutral NPC at the end, then return to collect the treasure.",
 				["questID"] = 70248,
 				["coord"] = { 47.1, 40.1, THALDRASZUS },
-				["g"] = {
+				["groups"] = {
 					i(198672),	-- Decryption Key
 					i(198659),	-- Forgetful Apprentice's Tome (1 of 2)
 				},
@@ -5539,7 +5539,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			o(380601, {	-- Dusty Darkmoon Card
 				["questID"] = 70297,
 				["coord"] = { 46.2, 24.0, THE_AZURE_SPAN },
-				["g"] = {
+				["groups"] = {
 					i(198693),	-- Dusty Darkmoon Card
 				},
 			}),
@@ -5548,35 +5548,35 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				["description"] = "Speak to Siennagosa and offer to help putting her deck back together, then gather the cards in the proper order (Ace through Eight) to collect the treasure.",
 				["questID"] = 70287,
 				["coord"] = { 56.1, 40.9, THALDRASZUS },
-				["g"] = {
+				["groups"] = {
 					i(201015),	-- Counterfeit Darkmoon Deck
 				},
 			}),
 			o(380550, {	-- Forgetful Apprentice's Tome
 				["questID"] = 70264,
 				["coord"] = { 56.3, 41.2, THALDRASZUS },
-				["g"] = {
+				["groups"] = {
 					i(198659),	-- Forgetful Apprentice's Tome (1 of 2)
 				},
 			}),
 			o(380595, {	-- Frosted Parchment
 				["questID"] = 70293,
 				["coord"] = { 43.7, 30.9, THE_AZURE_SPAN },
-				["g"] = {
+				["groups"] = {
 					i(198686),	-- Frosted Parchment
 				},
 			}),
 			o(411169, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Grove Keeper's Pillar
 				["coord"] = { 63.4, 71.5, EMERALD_DREAM },
 				["questID"] = 78412,
-				["g"] = {
+				["groups"] = {
 					i(210459),	-- Grove Keeper's Pillar
 				},
 			})),
 			o(402890, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Hissing Rune Draft
 				["coord"] = { 53.0, 74.3, ZARALEK_CAVERN },
 				["questID"] = 76120,
-				["g"] = {
+				["groups"] = {
 					i(206034),	-- Hissing Rune Draft
 				},
 			})),
@@ -5584,49 +5584,49 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				["description"] = "Collect the Pulsing Earth Rune first! Otherwise this treasure might erroneously contain the rune, and you will not be able to collect the proper treasure.",
 				["questID"] = 70281,
 				["coord"] = { 13.2, 63.7, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					i(198669),	-- How to Train Your Whelpling
 				},
 			}),
 			o(402888, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Intricate Zaqali Runes
 				["coord"] = { 36.7, 46.3, ZARALEK_CAVERN },
 				["questID"] = 76117,
-				["g"] = {
+				["groups"] = {
 					i(206031),	-- Intricate Zaqali Runes
 				},
 			})),
 			o(411170, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Primalist Shadowbinding Rune
 				["coord"] = { 36.0, 46.6, EMERALD_DREAM },
 				["questID"] = 78413,
-				["g"] = {
+				["groups"] = {
 					i(210460),	-- Primalist Shadowbinding Rune
 				},
 			})),
 			o(380610, {	-- Pulsing Earth Rune
 				["questID"] = 70306,
 				["coord"] = { 67.9, 58.0, THE_WAKING_SHORES },
-				["g"] = {
+				["groups"] = {
 					i(198704),	-- Pulsing Earth Rune
 				},
 			}),
 			o(380612, {	-- Sign Language Reference Sheet
 				["questID"] = 70307,
 				["coord"] = { 85.7, 25.2, OHNAHRAN_PLAINS },
-				["g"] = {
+				["groups"] = {
 					i(198703),	-- Sign Language Reference Sheet
 				},
 			}),
 			o(411168, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Winnie's Notes on Flora and Fauna
 				["coord"] = { 55.6, 27.5, EMERALD_DREAM },
 				["questID"] = 78411,
-				["g"] = {
+				["groups"] = {
 					i(210458),	-- Winnie's Notes on Flora and Fauna
 				},
 			})),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
-			["g"] = {
+			["groups"] = {
 				currency(DF_INSCRIPTION_KNOWLEDGE),
 			},
 		},{
@@ -5645,27 +5645,27 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			}),
 			q(70518, {	-- DF Weekly Inscription Knowledgepoint #3
 				["name"] = "DF Inscription Drop #1: Qalashi Djaradin",
-				["description"] = "Drops from any Qalashi Djaradin.\nCoordinates link to the spot(s) we found best.",
-				["crs"] = {
-					186109,	-- Qalashi Necksnapper
-					186110,	-- Djaradin Crustshaper
-				},
 				["provider"] = { "i", 198971 },		-- Curious Djaradin Rune
 				["coords"] = {
 					{ 39.6, 51.4, THE_WAKING_SHORES },
 					{ 34.8, 68.6, THE_WAKING_SHORES },
 					{ 39.6, 51.4, THE_WAKING_SHORES },
 				},
+				["description"] = "Drops from any Qalashi Djaradin.\nCoordinates link to the spot(s) we found best.",
+				["crs"] = {
+					186109,	-- Qalashi Necksnapper
+					186110,	-- Djaradin Crustshaper
+				},
 			}),
 			q(70519, {	-- DF Weekly Inscription Knowledgepoint #4
 				["name"] = "DF Inscription Drop #2: Dragon-kin/Proto Drakes",
+				["provider"] = { "i", 198972 },		-- Draconic Glamour
+				["coord"] = { 44.0, 81.8, THALDRASZUS },
 				["description"] = "Drops from any Dragon-kin/Proto Drake.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = {
 					193973,	-- Mistyvale Splashcaster
 					193969,	-- Mistyvale Firestarter
 				},
-				["provider"] = { "i", 198972 },		-- Draconic Glamour
-				["coord"] = { 44.0, 81.8, THALDRASZUS },
 			}),
 		})),
 	})),
@@ -5673,7 +5673,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		n(QUESTS, sharedData({
 			["isWeekly"] = true,
 			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["g"] = {
+			["groups"] = {
 				i(228776),	-- Algari Scribe's Journal
 			},
 		},{
@@ -5684,7 +5684,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["g"] = sharedData({ ["cost"] = {{ "c", TWW_INSCRIPTION_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_INSCRIPTION_KNOWLEDGE, 1 }} }, {
 				r(447868),	-- Algari Treatise on Inscription
 				r(444192),	-- Darkmoon Sigil: Evolve
 				r(444193),	-- Darkmoon Sigil: Radiance
@@ -5704,63 +5704,63 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 			o(455982, {	-- Blue Earthen Pigment
 				["coord"] = { 62.4, 58.0, THE_RINGING_DEEPS },
 				["questID"] = 83885,
-				["g"] = {
+				["groups"] = {
 					i(226311),	-- Blue Earthen Pigment
 				},
 			}),
 			o(455980, {	-- Calligrapher's Chiseled Marker
 				["coord"] = { 42.8, 49.0, HALLOWFALL },
 				["questID"] = 83887,
-				["g"] = {
+				["groups"] = {
 					i(226313),	-- Calligrapher's Chiseled Marker
 				},
 			}),
 			o(455985, {	-- Dornogal Scribe's Quill
 				["coord"] = { 57.1, 46.98, DORNOGAL },
 				["questID"] = 83882,
-				["g"] = {
+				["groups"] = {
 					i(226308),	-- Dornogal Scribe's Quill
 				},
 			}),
 			o(455984, {	-- Historian's Dip Pen
 				["coord"] = { 55.9, 60.0, ISLE_OF_DORN },
 				["questID"] = 83883,
-				["g"] = {
+				["groups"] = {
 					i(226309),	-- Historian's Dip Pen
 				},
 			}),
 			o(455981, {	-- Informant's Fountain Pen
 				["coord"] = { 43.2, 58.9, HALLOWFALL },
 				["questID"] = 83886,
-				["g"] = {
+				["groups"] = {
 					i(226312),	-- Informant's Fountain Pen
 				},
 			}),
 			o(455979, {	-- Nerubian Texts
 				["coord"] = { 55.8, 43.9, AZJ_KAHET },
 				["questID"] = 83888,
-				["g"] = {
+				["groups"] = {
 					i(226314),	-- Nerubian Texts
 				},
 			}),
 			o(455983, {	-- Runic Scroll
 				["coord"] = { 48.5, 34.3, THE_RINGING_DEEPS },
 				["questID"] = 83884,
-				["g"] = {
+				["groups"] = {
 					i(226310),	-- Runic Scroll
 				},
 			}),
 			o(455978, {	-- Venomancer's Ink Well
 				["coord"] = { 50.1, 30.8, NERUBAR },
 				["questID"] = 83889,
-				["g"] = {
+				["groups"] = {
 					i(226315),	-- Venomancer's Ink Well
 				},
 			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
-			["g"] = {
+			["groups"] = {
 				currency(TWW_INSCRIPTION_KNOWLEDGE),
 			},
 		},{

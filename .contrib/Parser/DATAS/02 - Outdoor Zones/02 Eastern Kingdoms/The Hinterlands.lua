@@ -168,7 +168,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 13.4, 43.4, THE_HINTERLANDS },
 						["races"] = ALLIANCE_ONLY,
 						-- #if BEFORE 2.1.0
-						["g"] = EXPERT_ARTISAN_LEATHERWORKING,
+						["groups"] = EXPERT_ARTISAN_LEATHERWORKING,
 						-- #endif
 					}),
 				}),
@@ -1893,7 +1893,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7884,	-- Fraggar Thundermantle
 					["sourceQuest"] = 2880,	-- Troll Necklace Bounty
 					["coord"] = { 14.8, 44.6, THE_HINTERLANDS },
-					["timeline"] = { REMOVED_2_0_3 },
 					["maxReputation"] = {
 						-- #if CLASSICERA
 						471, EXALTED,	-- Wildhammer Clan, Exalted.
@@ -1901,6 +1900,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						471, REVERED,	-- Wildhammer Clan, Revered.
 						-- #endif
 					},
+					["timeline"] = { REMOVED_2_0_3 },
 					["cost"] = { { "i", 9259, 5 } },	-- Troll Tribal Necklace
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,

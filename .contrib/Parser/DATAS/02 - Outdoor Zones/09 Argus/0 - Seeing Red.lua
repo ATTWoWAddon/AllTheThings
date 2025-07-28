@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 					{ 77.8, 37.5, STORMWIND_CITY },
 					{ 71.8, 44.6, ORGRIMMAR },
 				},
-				["g"] = {
+				["groups"] = {
 					i(208206),	-- Teleportation Crystal (QI!)
 				},
 			}),
@@ -31,7 +31,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 				["provider"] = { "n", 208831 },	-- Arzal'kal
 				["coord"] = { 53.7, 68.2, KROKUUN },
 				["sourceQuests"] = { 77410 },	-- Opening Wounds
-				["g"] = {
+				["groups"] = {
 					i(208203),	-- Brilliant Star (QI!)
 				},
 			}),
@@ -47,7 +47,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 					77411,	-- Contrition
 					77789,	-- Severing Ties
 				},
-				["g"] = {
+				["groups"] = {
 					ach(18854),	-- Seeing Red
 					i(208658),	-- Mirror of Humility (TOY!)
 				},
@@ -60,7 +60,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 		}),
 		n(SPECIAL, sharedData({
 			["sourceQuests"] = { 77795 },	-- Scavenged Artifacts
-			["g"] = {
+			["groups"] = {
 				i(208691, {	-- Argunite Cluster
 					["description"] = "Rewarded from any Allies of Arzaal after the questline. Contains a few random items related to Argus.",
 					["sym"] = {{"select","itemID",
@@ -105,7 +105,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 			n(125246, {	-- Gaal <Blacksmith>
 				["sourceQuests"] = { 77795 },	-- Scavenged Artifacts
 				["coord"] = { 56.7, 68.6, KROKUUN },
-				["g"] = {
+				["groups"] = {
 					i(208684, {	-- Anchorite's Sorrow
 						["cost"] = {
 							{ "i", 151565, 40 },	-- 40x Astral Glory

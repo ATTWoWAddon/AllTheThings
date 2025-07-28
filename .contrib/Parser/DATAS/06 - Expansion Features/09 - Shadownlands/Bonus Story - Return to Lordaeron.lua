@@ -45,33 +45,33 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			["coord"] = { 61.9, 55.6, 2070 },
 		}),
 		q(65662, {	-- House of Plagues
-			["sourceQuests"] = { 65661 },	-- Consulting Our Allies
 			["provider"] = { "n", 177782 },	-- Margrave Sin'dane
+			["sourceQuests"] = { 65661 },	-- Consulting Our Allies
 			["coord"] = { 74.8, 33.6, MALDRAXXUS },
 		}),
 		q(65664, {	-- Essence of Plague
-			["sourceQuests"] = { 65662 },	-- House of Plagues
 			["provider"] = { "n", 185517 },	-- Plague Deviser Marileth
+			["sourceQuests"] = { 65662 },	-- House of Plagues
 			["coord"] = { 71.2, 71.5, MALDRAXXUS },
 		}),
 		q(65663, {	-- Feed the Eater
-			["sourceQuests"] = { 65662 },	-- House of Plagues
 			["provider"] = { "n", 185803 },	-- Calia Menethil
+			["sourceQuests"] = { 65662 },	-- House of Plagues
 			["coord"] = { 71.1, 71.4, MALDRAXXUS },
 		}),
 		q(65665, {	-- Embodiment
+			["provider"] = { "n", 185825 },	-- Plague Deviser Marileth
 			["sourceQuests"] = {
 				65663,	-- Feed th Eater
 				65664,	-- Essence of Plague
 			},
-			["provider"] = { "n", 185825 },	-- Plague Deviser Marileth
 			["coord"] = { 68.7, 81.8, MALDRAXXUS },
 		}),
 		q(65666, {	-- Return to Brill
-			["sourceQuests"] = { 65665 },	-- Embodiment
 			["provider"] = { "n", 185829 },	-- Lilian Voss
+			["sourceQuests"] = { 65665 },	-- Embodiment
 			["coord"] = { 68.6, 81.8, MALDRAXXUS },
-			["g"] = {
+			["groups"] = {
 				i(191029),	-- Lilian's Hearthstone (QI!)
 			},
 		}),
@@ -102,7 +102,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			["sourceQuest"] = 66091,	-- Path of the Dark Rangers (H)
 			["coord"] = { 61.8, 67.8, 2070 },
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				ach(15579, {	-- Return to Lordaeron
 					title(460),	-- <Name> of Lordaeron
 				}),
@@ -113,7 +113,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			["sourceQuest"] = 66090,	-- Path of the Dark Rangers (A)
 			["coord"] = { 61.9, 67.8, 2070 },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				ach(15579, {	-- Return to Lordaeron
 					title(460),	-- <Name> of Lordaeron
 				}),

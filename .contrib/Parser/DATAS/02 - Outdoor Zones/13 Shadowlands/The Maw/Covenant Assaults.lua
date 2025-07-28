@@ -178,13 +178,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["provider"] = { "n", 177900 },	-- Xandria
 				["coord"] = { 42.8, 44.8, THE_MAW },
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(185720),	-- Draka's Battlehorn (QI!)
 					i(185993, {	-- Ascended War Chest
 						["sym"] = {
 							{"select","itemID",187410},	-- Death's Advance Battlefield Drape
 						},
-						["g"] = {
+						["groups"] = {
 							i(186546),	-- Copperback Etherwyrm (PET!)
 							i(187185),	-- Vesper of Faith (TOY!)
 						},
@@ -197,14 +197,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63827, {	-- Encouraging Words
 							["provider"] = { "n", 177900 },	-- Xandria
 							["coord"] = { 42.7, 44.7, THE_MAW },
-							["g"] = {
+							["groups"] = {
 								i(185775),	-- Codex of Renewed Vigor (QI!)
 							},
 						}),
 						q(63843, {	-- Heart and Soul
 							["provider"] = { "n", 177226 },	-- Artemede
 							["coord"] = { 42.3, 44.3, THE_MAW },
-							["g"] = {
+							["groups"] = {
 								i(185829),	-- Trueheart Spear (QI!)
 							},
 						}),
@@ -231,7 +231,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63846, {	-- The Ember Count
 							["provider"] = { "n", 178091 },	-- Vulca
 							["coord"] = { 43.1, 44.3, THE_MAW },
-							["g"] = {
+							["groups"] = {
 								i(185839),	-- Soulsteel Ember (QI!)
 								ach(15041, {	-- The Zovaal Shuffle
 									["coords"] = {
@@ -257,7 +257,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							["coord"] = { 42.1, 44.5, THE_MAW },	-- Orator Kloe
 							["questID"] = 64019,
 							["isWeekly"] = true,
-							["g"] = {
+							["groups"] = {
 								q(64024, {	-- 1st Find
 									["name"] = "1st Find",
 									["coord"] = { 40.7, 51.6, THE_MAW },
@@ -281,7 +281,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							["crs"] = { 179189 },	-- Chain of Domination
 							["coord"] = { 30.0, 43.1, THE_MAW },
 							["questID"] = 64039,
-							["g"] = {
+							["groups"] = {
 								i(186544),	-- Sinfall Screecher (PET!)
 							},
 						}),
@@ -309,13 +309,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["provider"] = { "n", 177072 },	-- Baroness Draka
 				["coord"] = { 33.8, 54.8, THE_MAW },
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(185720),	-- Draka's Battlehorn (QI!)
 					i(185992, {	-- War Chest of the Undying Army
 						["sym"] = {
 							{"select","itemID",187410},	-- Death's Advance Battlefield Drape
 						},
-						["g"] = {
+						["groups"] = {
 							i(186103),	-- Undying Darkhound (MOUNT!)
 							i(186557),	-- Fodder (PET!)
 						},
@@ -334,21 +334,21 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63753, {	-- Centurions March!
 							["sourceQuests"] = { 63772 },	-- Waiting in the Wings
 							["coord"] = { 37.0, 63.5, THE_MAW },
-							["g"] = {
+							["groups"] = {
 								i(185733),	-- Anima Mote (QI!)
 							},
 						}),
 						q(63594, {	-- Clearing the Walls
 							["sourceQuests"] = { 63545 },	-- Putting A Plan Together
 							["provider"] = { "i", 186573 },	-- Defense Map
-							["g"] = {
+							["groups"] = {
 								i(186601),	-- Quartered Ancient Ring
 							},
 						}),
 						q(63455, {	-- Dead On Their Feet
 							["provider"] = { "n", 177076 },	-- Margrave Sin'dane
 							["coord"] = { 33.6, 54.9, THE_MAW },
-							["g"] = {
+							["groups"] = {
 								i(184876),	-- Cohesion Crystal (QI!)
 							},
 						}),
@@ -359,7 +359,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63625, {	-- Here's an Axe, Get to Work!
 							["provider"] = { "n", 177072 },	-- Baroness Draka
 							["coord"] = { 33.8, 54.8, THE_MAW },
-							["g"] = {
+							["groups"] = {
 								i(184513),	-- Containment Orb (QI!)
 							},
 						}),
@@ -367,7 +367,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							["sourceQuests"] = { 63772 },	-- Waiting in the Wings
 							["provider"] = { "n", 177226 },	-- Artemede
 							["coord"] = { 37.0, 63.3, THE_MAW },
-							["g"] = {
+							["groups"] = {
 								i(184513),	-- Containment Orb (QI!)
 							},
 						}),
@@ -375,7 +375,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							["sourceQuests"] = { 63772 },	-- Waiting in the Wings
 							["provider"] = { "n", 177175 },	-- Mikanikos
 							["coord"] = { 37.0, 63.5, THE_MAW },
-							["g"] = {
+							["groups"] = {
 								o(367965, {
 									["coords"] = {
 										{ 35.6, 64.8, THE_MAW },
@@ -389,7 +389,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 										{ 39.0, 65.5, THE_MAW },
 										{ 39.4, 60.4, THE_MAW },
 									},
-									["g"] = { i(185685) },	-- Automaton Bolts (QI!)
+									["groups"] = { i(185685) },	-- Automaton Bolts (QI!)
 								}),
 								i(184513),	-- Containment Orb (QI!)
 							},
@@ -401,7 +401,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(59004, {	-- Splash Damage
 							["provider"] = { "n", 163295 },	-- Plague Deviser Marileth
 							["coord"] = { 32.9, 56.8, THE_MAW },
-							["g"] = {
+							["groups"] = {
 								i(185729),	-- Anima Charged Rune (QI!)
 								i(185485),	-- Rune Remover (QI!)
 							},
@@ -409,14 +409,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63772, {	-- Waiting in the Wings
 							["provider"] = { "n", 177072 },	-- Baroness Draka
 							["coord"] = { 33.8, 54.8, THE_MAW },
-							["g"] = {
+							["groups"] = {
 								i(184513),	-- Containment Orb (QI!)
 							},
 						}),
 						q(63773, {	-- You and What Army
 							["provider"] = { "n", 177072 },	-- Baroness Draka
 							["coord"] = { 33.8, 54.8, THE_MAW },
-							["g"] = {
+							["groups"] = {
 								ach(15037, {	-- This Army
 									crit(52044, {	-- Cutter Fin
 										["crs"] = { 177771 },	-- Cutter Fin
@@ -462,7 +462,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 								{ 33.7, 66.2, THE_MAW },
 								{ 34.6, 59.7, THE_MAW },
 							},
-							["g"] = {
+							["groups"] = {
 								i(186604),	-- Quartered Ancient Ring
 							},
 						}),
@@ -475,7 +475,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							},
 							["questID"] = 63815,
 							["isDaily"] = true,
-							["g"] = {
+							["groups"] = {
 								i(186573, {	-- Defense Map
 									["description"] = "This item will start dropping during or after the quest |cFF349cffPutting A Plan Together|r.",
 								}),
@@ -545,12 +545,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["provider"] = { "n", 178828 },	-- Lord Herne
 				["isWeekly"] = true,
 				["coord"] = { 22.4, 43.3, THE_MAW },
-				["g"] = {
+				["groups"] = {
 					i(185991, {	-- War Chest of the Wild Hunt
 						["sym"] = {
 							{"select","itemID",187410},	-- Death's Advance Battlefield Drape
 						},
-						["g"] = {
+						["groups"] = {
 							i(186000),	-- Wild Hunt Legsplitter (MOUNT!)
 							i(186547),	-- Invasive Buzzer (PET!)
 							i(185052),	-- Hippo Soul (SS!)
@@ -560,7 +560,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63951, {	-- A Shady Place
 							["provider"] = { "n", 178890 },	-- Margrave Sin'dane
 							["coord"] = { 22.5, 43.2, THE_MAW },
-							["g"] = {
+							["groups"] = {
 								i(187012),	-- Unbalanced Riftstone (QI!)
 							},
 						}),
@@ -579,7 +579,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63972, {	-- Just Don't Ask Me to Spell It
 							["provider"] = { "n", 179066 },	-- Choofa
 							["coord"] = { 22.2, 43.3, THE_MAW },
-							["g"] = {
+							["groups"] = {
 								ach(15044, {	-- Krrprripripkraak's Heroes
 									crit(52078, {	-- Elder Gwenna
 										["crs"] = { 179555 },	-- Elder Gwenna
@@ -612,7 +612,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63969, {	-- Looming Darkness
 							["provider"] = { "n", 178828 },	-- Lord Herne
 							["coord"] = { 22.4, 43.3, THE_MAW },
-							["g"] = {
+							["groups"] = {
 								i(186310),	-- Dark Marrow (QI!)
 								i(186309),	-- Mawsworn Missive Scrap (QI!)
 								i(186300),	-- Mawsworn Ritual Book (QI!)
@@ -625,21 +625,21 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63971, {	-- Snail Stomping
 							["provider"] = { "n", 178885 },	-- Lady Moonberry
 							["coord"] = { 22.7, 43.7, THE_MAW },
-							["g"] = {
+							["groups"] = {
 								i(186199),	-- Lady Moonberry's Wand (QI!)
 							},
 						}),
 						q(63974, {	-- That's Going to Sting
 							["provider"] = { "n", 179065 },	-- Niya
 							["coord"] = { 22.2, 43.6, THE_MAW },
-							["g"] = {
+							["groups"] = {
 								i(186569),	-- Angry Needler Nest (QI!)
 							},
 						}),
 						q(63945, {	-- The Soul Blade
 							["provider"] = { "n", 178690 },	-- Bonesmith Heirmir
 							["coord"] = { 22.2, 43.5, THE_MAW },
-							["g"] = {
+							["groups"] = {
 								i(186097),	-- Heirmir's Runeblade (QI!)
 							},
 						}),
@@ -650,7 +650,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							{"i",186969,1},	-- Collapsing Riftstone
 							{"i",186731,1},	-- Repaired Riftkey
 						},
-						["g"] = {
+						["groups"] = {
 							n(ACHIEVEMENTS, {
 								ach(15001, {	-- Jailer's Personal Stash
 									["description"] = "Requires entering the Rift, either via the |cFF349cffA Shady Place|r quest or a Maw Rift in Korthia.",
@@ -669,7 +669,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 									},
 									["questID"] = 63993,
 									["isDaily"] = true,
-									["g"] = {
+									["groups"] = {
 										i(187251),	-- Shaded Skull Shoulderguards
 									},
 								}),
@@ -677,7 +677,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 									["coord"] = { 25.3, 49.1, THE_MAW },
 									["questID"] = 63995,
 									["isDaily"] = true,
-									["g"] = {
+									["groups"] = {
 										i(187251),	-- Shaded Skull Shoulderguards
 									},
 								}),
@@ -688,7 +688,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 									},
 									["questID"] = 63996,
 									["isDaily"] = true,
-									["g"] = {
+									["groups"] = {
 										i(187251),	-- Shaded Skull Shoulderguards
 									},
 								}),
@@ -697,7 +697,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 									["coord"] = { 25.6, 32.6, THE_MAW },
 									["questID"] = 63997,
 									["isDaily"] = true,
-									["g"] = {
+									["groups"] = {
 										i(187251),	-- Shaded Skull Shoulderguards
 									},
 								}),
@@ -708,7 +708,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 									},
 									["questID"] = 63998,
 									["isDaily"] = true,
-									["g"] = {
+									["groups"] = {
 										i(187251),	-- Shaded Skull Shoulderguards
 									},
 								}),
@@ -716,7 +716,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 									["coord"] = { 29.7, 42.8, THE_MAW },
 									["questID"] = 63999,
 									["isDaily"] = true,
-									["g"] = {
+									["groups"] = {
 										i(187251),	-- Shaded Skull Shoulderguards
 									},
 								}),
@@ -743,7 +743,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							["questID"] = 64000,
 							["isDaily"] = true,
 							["cost"] = { { "i", 186190, 1 } },	-- Etherwyrm Cage Key
-							["g"] = {
+							["groups"] = {
 								i(186191),	-- Infused Etherwyrm (PET!)
 							},
 						}),
@@ -779,12 +779,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["coord"] = { 29.9, 17.1, THE_MAW },
 				["altQuests"] = { 64554 },	-- Venthyr Assault (as reported via the world quest API)
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(185990, {	-- Harvester's War Chest
 						["sym"] = {
 							{"select","itemID",187410},	-- Death's Advance Battlefield Drape
 						},
-						["g"] = {
+						["groups"] = {
 							i(185996),	-- Harvester's Dredwing Saddle (MOUNT!)
 						},
 					}),
@@ -792,7 +792,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63837, {	-- A Tea for Every Occasion
 							["provider"] = { "n", 178178 },	-- Theotar
 							["coord"] = { 29.6, 17.9, THE_MAW },
-							["g"] = {
+							["groups"] = {
 								ach(15042, {	-- Tea for the Troubled
 									crit(52065, {	-- Simone
 										["crs"] = { 179465 },	-- Simone
@@ -836,7 +836,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63836, {	-- Fangcrack's Fan Club
 							["provider"] = { "n", 178112 },	-- Rendle
 							["coord"] = { 31.2, 15.3, THE_MAW },
-							["g"] = {
+							["groups"] = {
 								ach(15043, {	-- Hoarder of Torghast
 									["crs"] = { 178118 },	-- Fangcrack
 									["coord"] = { 31.1, 13.0, THE_MAW },
@@ -845,7 +845,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 									-- Technically accurate but such a rare occurrence & possibility that it's not worth listing
 									-- every 4th week + 1hr+ spawn time chance with 30 sec despawn... kek
 									-- ["coord"] = { 31.0, 13.2, THE_MAW },
-									-- ["g"] = {
+									-- ["groups"] = {
 									-- 	i(186969, {	-- Collapsing Riftstone
 									-- 		["cost"] = {{"c",1767,100}},	-- 100 Stygia
 									-- 	}),
@@ -864,28 +864,28 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63842, {	-- That's a Good Trick
 							["provider"] = { "n", 178172 },	-- Lady Moonberry
 							["coord"] = { 29.9, 17.1, THE_MAW },
-							["g"] = {
+							["groups"] = {
 								i(186102),	-- Lady Moonberry's Wand (QI!)
 							},
 						}),
 						q(63841, {	-- The Skyhunt
 							["provider"] = { "n", 178180 },	-- Hunt-Captain Korayn
 							["coord"] = { 29.3, 18.1, THE_MAW },
-							["g"] = {
+							["groups"] = {
 								i(185949),	-- Korayn's Spear (QI!)
 							},
 						}),
 						q(63840, {	-- They Grow Up So Quickly
 							["provider"] = { "n", 178179 },	-- Niya
 							["coord"] = { 29.5, 18.0, THE_MAW },
-							["g"] = {
+							["groups"] = {
 								i(186089),	-- Niya's Staff (QI!)
 							},
 						}),
 						q(63834, {	-- Weapons of the Tremaculum
 							["provider"] = { "n", 178066 },	-- General Draven
 							["coord"] = { 30.0, 17.1, THE_MAW },
-							["g"] = {
+							["groups"] = {
 								i(185912),	-- Ghastly Crown (QI!)
 								i(185911),	-- Mawsworn Weapon (QI!)
 								i(185913),	-- Shade Eyes (QI!)

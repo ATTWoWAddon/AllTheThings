@@ -186,7 +186,7 @@ root(ROOTS.Zones, {
 				n(107840, {	-- Stormforged Grapple Launcher
 					["questID"] = 39775,
 					["coord"] = { 36.9, 31.8, STORMHEIM },
-					["g"] = {
+					["groups"] = {
 						i(138111, {	-- Stormforged Grapple Launcher
 							["description"] = "This item can be safely deleted and you'll still be able to interact with the hooks.",
 						}),

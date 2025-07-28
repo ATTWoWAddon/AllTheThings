@@ -1122,8 +1122,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 21191 },	-- Carefully Wrapped Present
 			},
 			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
 			["isYearly"] = true,
+			["_drop"] = { "g" },
 			["groups"] = {
 				i(116451, {	-- Warm Blue Woolen Socks
 					["timeline"] = { ADDED_6_0_2 },
@@ -1146,9 +1146,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 21363 },	-- Festive Gift
 			},
 			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
 			["isYearly"] = true,
 			["lvl"] = 10,
+			["_drop"] = { "g" },
 			["groups"] = {
 				i(21328),	-- Wand of Holiday Cheer
 			},
@@ -1159,9 +1159,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 21310 },	-- Gaily Wrapped Present
 			},
 			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
 			["isYearly"] = true,
 			["lvl"] = 20,
+			["_drop"] = { "g" },
 			["groups"] = {
 				i(21301, {	-- Father Winter's Helper (PET!)
 					["timeline"] = { ADDED_1_11_1 },
@@ -1183,11 +1183,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 21270 },	-- Gently Shaken Gift
 			},
 			["description"] = "Given prior to 2015 exclusively to non-spell casters.",
-			["classes"] = exclude({ PRIEST, MAGE, WARLOCK, SHAMAN, DRUID }, ALL_CLASSES),
 			["timeline"] = { REMOVED_6_2_3 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
+			["classes"] = exclude({ PRIEST, MAGE, WARLOCK, SHAMAN, DRUID }, ALL_CLASSES),
 			["isYearly"] = true,
+			["_drop"] = { "g" },
 			["groups"] = {
 				-- #if BEFORE 6.2.2
 				i(116692, {	-- Fuzzy Green Lounge Cushion (TOY!)
@@ -1214,11 +1214,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 21271 },	-- Gently Shaken Gift
 			},
 			["description"] = "Given prior to 2015 exclusively to spell casters.",
-			["classes"] = { PRIEST, MAGE, WARLOCK, SHAMAN, DRUID },
 			["timeline"] = { REMOVED_6_2_3 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
+			["classes"] = { PRIEST, MAGE, WARLOCK, SHAMAN, DRUID },
 			["isYearly"] = true,
+			["_drop"] = { "g" },
 			["groups"] = {
 				-- #if BEFORE 6.2.2
 				i(116692, {	-- Fuzzy Green Lounge Cushion (TOY!)
@@ -1412,9 +1412,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ "i", 21327 },	-- Ticking Present
 			},
 			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
 			["isYearly"] = true,
 			["lvl"] = 40,
+			["_drop"] = { "g" },
 			["groups"] = {
 				i(17725),	-- Formula: Enchant Weapon - Winter's Might (RECIPE!)
 				i(17722),	-- Pattern: Gloves of the Greatfather (RECIPE!)
@@ -1481,8 +1481,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["timeline"] = { ADDED_2_3_0, REMOVED_2_4_3 },
 			-- #endif
 			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
 			["lvl"] = 10,
+			["_drop"] = { "g" },
 			["groups"] = {
 				i(34425, {	-- Clockwork Rocket Bot (PET!)
 					["timeline"] = { ADDED_2_3_0 },
@@ -1497,8 +1497,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["description"] = "Gift from 2008.",
 			["timeline"] = { ADDED_2_4_3, REMOVED_3_3_0 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
 			["lvl"] = 10,
+			["_drop"] = { "g" },
 			["groups"] = {
 				i(37710, {	-- Crashin' Thrashin' Racer Controller (TOY!)
 					-- #if ANYCLASSIC
@@ -1532,8 +1532,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["description"] = "Gift from 2010.",
 			["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_4_2_0 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
 			["lvl"] = 10,
+			["_drop"] = { "g" },
 			["groups"] = {
 				i(46709, {	-- MiniZep Controller (TOY!)
 					["timeline"] = { ADDED_4_0_3_LAUNCH },
@@ -1548,8 +1548,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["description"] = "Gift from 2011.",
 			["timeline"] = { ADDED_4_2_0, REMOVED_5_1_0 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
 			["lvl"] = 10,
+			["_drop"] = { "g" },
 			["groups"] = {
 				i(70923, {	-- Gaudy Winter Veil Sweater
 					["timeline"] = { ADDED_4_2_0 },
@@ -1564,8 +1564,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["description"] = "Gift from 2012.",
 			["timeline"] = { ADDED_5_1_0, REMOVED_5_4_0 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
 			["lvl"] = 10,
+			["_drop"] = { "g" },
 			["groups"] = {
 				i(90888, {	-- Special Edition Foot Ball (TOY!)
 					["timeline"] = { ADDED_5_1_0 },
@@ -1583,8 +1583,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["description"] = "Gift from 2013.",
 			["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
 			["lvl"] = 10,
+			["_drop"] = { "g" },
 			["groups"] = {
 				i(104318, {	-- Crashin' Thrashin' Flyer Controller (TOY!)
 					["timeline"] = { ADDED_5_4_0 },
@@ -1599,8 +1599,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["description"] = "Gift from 2014.",
 			["timeline"] = { ADDED_6_0_2, REMOVED_6_2_2 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
 			["lvl"] = 10,
+			["_drop"] = { "g" },
 			["groups"] = {
 				i(116763, {	-- Crashin' Thrashin' Shredder Controller (TOY!)
 					["timeline"] = { ADDED_6_0_2 },
@@ -1615,8 +1615,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["description"] = "Gift from 2015.",
 			["timeline"] = { ADDED_6_2_2, REMOVED_7_0_3 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
 			["lvl"] = 10,
+			["_drop"] = { "g" },
 			["groups"] = {
 				i(108632, {	-- Crashin' Thrashin' Flamer Controller (TOY!)
 					["timeline"] = { ADDED_6_2_2 },
@@ -1631,8 +1631,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["description"] = "Gift from 2016.",
 			["timeline"] = { ADDED_7_0_3, REMOVED_7_3_0 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
 			["lvl"] = 10,
+			["_drop"] = { "g" },
 			["groups"] = {
 				i(128636, {	-- Endothermic Blaster (TOY!)
 					["timeline"] = { ADDED_7_0_3 },
@@ -1647,8 +1647,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["description"] = "Gift from 2017. You will receive only one factions Toy Weapon Set.  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
 			["timeline"] = { ADDED_7_3_0, REMOVED_8_0_1_LAUNCH },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
 			["lvl"] = 10,
+			["_drop"] = { "g" },
 			["groups"] = {
 				i(151349, {	-- Toy Weapon Set [A] (TOY!)
 					["timeline"] = { ADDED_7_3_0 },
@@ -1668,8 +1668,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["description"] = "Gift from 2018. You will receive only one factions Toy Armor Set.  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
 			["timeline"] = { ADDED_8_0_1, REMOVED_8_2_5 },
 			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
 			["lvl"] = 10,
+			["_drop"] = { "g" },
 			["groups"] = {
 				i(162643, {	-- Toy Armor Set [A] (TOY!)
 					["timeline"] = { ADDED_8_0_1 },
@@ -1689,8 +1689,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["description"] = "Gift from 2019.",
 			["timeline"] = { ADDED_8_2_5, REMOVED_9_0_1 },	-- Should been removed earlier?
 			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
 			["lvl"] = 10,
+			["_drop"] = { "g" },
 			["groups"] = {
 				i(172223, {	-- Crashin' Thrashin' Battleship (TOY!)
 					["timeline"] = { ADDED_8_2_5 },
@@ -1709,8 +1709,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 			["description"] = "Gift from 2020.",
 			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
 			["lvl"] = 10,
+			["_drop"] = { "g" },
 			["groups"] = {
 				i(178533),	-- Jingles (PET!)
 			},
@@ -1722,8 +1722,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 			["description"] = "Gift from 2021.",
 			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
 			["lvl"] = 10,
+			["_drop"] = { "g" },
 			["groups"] = {
 				i(187560),	-- Rockin' Rollin' Racer Pack (CI!)
 			},
@@ -1735,8 +1735,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 			["description"] = "Gift from 2022.",
 			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
 			["lvl"] = 10,
+			["_drop"] = { "g" },
 			["groups"] = {
 				i(191937),	-- Falling Star Catcher (TOY!)
 			},
@@ -1748,8 +1748,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 			["description"] = "Gift from 2023.",
 			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
 			["lvl"] = 10,
+			["_drop"] = { "g" },
 			["groups"] = {
 				i(208825),	-- Junior Timekeeper's Racing Belt (TOY!)
 			},
@@ -1761,8 +1761,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			},
 			["description"] = "Gift from 2024.",
 			["maps"] = { IRONFORGE, ORGRIMMAR },
-			["_drop"] = { "g" },
 			["lvl"] = 10,
+			["_drop"] = { "g" },
 			["groups"] = {
 				i(218310),	-- Box of Puntables (TOY!)
 				i(232653),	-- Portentous Present (PET!)
@@ -1848,8 +1848,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ 47.4, 37.6, FROSTWALL },
 				{ 44, 51.6, LUNARFALL },
 			},
-			["maps"] = { FROSTFIRE_RIDGE },
 			["timeline"] = { ADDED_6_2_2 },
+			["maps"] = { FROSTFIRE_RIDGE },
 			["isDaily"] = true,
 			["lvl"] = lvlsquish(90, 90, 40),
 			["groups"] = {
@@ -1871,8 +1871,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ 47.4, 37.6, FROSTWALL },
 				{ 44, 51.6, LUNARFALL },
 			},
-			["maps"] = { FROSTFIRE_RIDGE },
 			["timeline"] = { ADDED_6_2_2 },
+			["maps"] = { FROSTFIRE_RIDGE },
 			["isDaily"] = true,
 			["lvl"] = lvlsquish(90, 90, 40),
 			["groups"] = {
@@ -1894,8 +1894,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			-- #else
 			["coord"] = { 33.4, 67, IRONFORGE },
 			-- #endif
-			["maps"] = { SEARING_GORGE, TANARIS },
 			["timeline"] = { REMOVED_4_3_0 },
+			["maps"] = { SEARING_GORGE, TANARIS },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 40,
@@ -1924,8 +1924,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			-- #else
 			["coord"] = { 53.2, 66.6, ORGRIMMAR },
 			-- #endif
-			["maps"] = { SEARING_GORGE, TANARIS },
 			["timeline"] = { REMOVED_4_3_0 },
+			["maps"] = { SEARING_GORGE, TANARIS },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 40,
@@ -1950,7 +1950,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		q(8860, {	-- New Year Celebrations! (Alliance)
 			["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
 			["description"] = "This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",
-			["races"] = ALLIANCE_ONLY,
 			["maps"] = {
 				-- #if AFTER WRATH
 				NORTHREND_DALARAN,
@@ -1968,6 +1967,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				TIRISFAL_GLADES,
 				WETLANDS,
 			},
+			["races"] = ALLIANCE_ONLY,
 			-- #if BEFORE CATA
 			["isYearly"] = true,	-- NOTE: We actually don't know which expansion this changed to be a one time quest, but it eventually does. Keep a close eye on this for future expansions of WoW Classic.
 			-- #endif
@@ -1980,7 +1980,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		q(8861, {	-- New Year Celebrations! (Horde)
 			["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
 			["description"] = "This quest is only available on December 31. Quest can be obtained from Wonderform Operator in any major city.",
-			["races"] = HORDE_ONLY,
 			["maps"] = {
 				-- #if AFTER WRATH
 				NORTHREND_DALARAN,
@@ -1998,6 +1997,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				TIRISFAL_GLADES,
 				WETLANDS,
 			},
+			["races"] = HORDE_ONLY,
 			-- #if BEFORE CATA
 			["isYearly"] = true,	-- NOTE: We actually don't know which expansion this changed to be a one time quest, but it eventually does. Keep a close eye on this for future expansions of WoW Classic.
 			-- #endif
@@ -2170,8 +2170,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ 47.4, 37.6, FROSTWALL },
 				{ 44, 51.6, LUNARFALL },
 			},
-			["maps"] = { FROSTFIRE_RIDGE },
 			["timeline"] = { ADDED_6_2_2 },
+			["maps"] = { FROSTFIRE_RIDGE },
 			["isDaily"] = true,
 			["lvl"] = lvlsquish(90, 90, 40),
 			["groups"] = {
@@ -2193,8 +2193,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ 47.4, 37.6, FROSTWALL },
 				{ 44, 51.6, LUNARFALL },
 			},
-			["maps"] = { FROSTFIRE_RIDGE },
 			["timeline"] = { ADDED_6_2_2 },
+			["maps"] = { FROSTFIRE_RIDGE },
 			["isDaily"] = true,
 			["lvl"] = lvlsquish(90, 90, 40),
 			["groups"] = {
@@ -2255,8 +2255,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		q(81560, {	-- Winter's Presents
 			["qg"] = 220307,	-- Holiday Enthusiast
 			["coord"] = { 46, 55.1, DORNOGAL },
-			["races"] = ALLIANCE_ONLY,
 			["timeline"] = { ADDED_11_0_7 },
+			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 		}),
 		q(81561, {	-- Winter's Presents
@@ -2268,13 +2268,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ 46, 55.1, DORNOGAL },
 				{ 56.9, 28.7, DORNOGAL },
 			},
-			["races"] = HORDE_ONLY,
 			["timeline"] = { ADDED_11_0_7 },
+			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 		}),
 		{	-- You're a Mean One...
 			["allianceQuestData"] = q(7043, {	-- You're a Mean One... [A]
-				["sourceQuest"] = 7042,	-- Stolen Winter Veil Treats (Alliance)
 				-- #if AFTER CATA
 				["qgs"] = {
 					13433,	-- Wulmort Jinglepocket (Alliance)
@@ -2287,9 +2286,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #else
 				["maps"] = { IRONFORGE },
 				-- #endif
+				["sourceQuest"] = 7042,	-- Stolen Winter Veil Treats (Alliance)
 			}),
 			["hordeQuestData"] = q(6983, {	-- You're a Mean One... [H]
-				["sourceQuest"] = 6963,	-- Stolen Winter Veil Treats (Horde)
 				-- #if AFTER CATA
 				["qgs"] = {
 					13418,	-- Kaymard Copperpinch (Horde)
@@ -2302,6 +2301,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #else
 				["maps"] = { ORGRIMMAR },
 				-- #endif
+				["sourceQuest"] = 6963,	-- Stolen Winter Veil Treats (Horde)
 			}),
 			-- #if AFTER CATA
 			["isDaily"] = true,
@@ -2385,7 +2385,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				{ 52.9, 77.4, ORGRIMMAR },
 			},
 			["timeline"] = { CREATED_8_3_0, ADDED_9_0_1 },
-			["g"] = { i(174865) },	-- A Tiny Winter Hat (Pepe!)
+			["groups"] = { i(174865) },	-- A Tiny Winter Hat (Pepe!)
 		}),
 		o(187236, {	-- Winter Veil Gift
 			i(178528, {	-- Winter Veil Gift

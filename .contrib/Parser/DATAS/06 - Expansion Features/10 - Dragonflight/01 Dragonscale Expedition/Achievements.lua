@@ -33,7 +33,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					16297,	-- Treasures of The Waking Shores
 					16571,	-- Well Supplied
 				}},
-				["g"] = {
+				["groups"] = {
 					i(198822),	-- Bestowed Ohuna Spotter (MOUNT!)
 				},
 			}),

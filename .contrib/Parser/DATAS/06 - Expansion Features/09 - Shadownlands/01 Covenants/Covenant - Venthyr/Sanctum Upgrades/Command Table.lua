@@ -6,11 +6,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	n(VENTHYR, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = 3641397,
-			["g"] = {
+			["groups"] = {
 				n(COMMAND_TABLE, {
 					n(TIER_ONE, {
 						["icon"] = 3675495,
-						["g"] = {
+						["groups"] = {
 							n(FOLLOWERS, bubbleDownSelf({
 								["collectible"] = false,
 								["u"] = UNLEARNABLE,	-- Temporary troops
@@ -26,8 +26,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							})),
 							n(QUESTS, {
 								q(59319, {	-- Advancing Our Efforts
-									["sourceQuests"] = { 63064 },	-- Sanctum Upgrade: Adventures Scouting Map
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
+									["sourceQuests"] = { 63064 },	-- Sanctum Upgrade: Adventures Scouting Map
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
 								}),
 								q(63064, {	-- Sanctum Upgrade: Adventures Scouting Map
@@ -35,77 +35,77 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["coord"] = { 55.4, 27.0, SINFALL_REACHES },
 								}),
 								q(61792, {	-- Adventurer: Bogdan
-									["description"] = "Requires Renown 38.",
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
-									["g"] = {
+									["description"] = "Requires Renown 38.",
+									["groups"] = {
 										follower(1253),	-- Bogdan
 									},
 								}),
 								q(64467, {	-- Adventurer: Chachi the Artiste
-									["description"] = "Requires Renown 44.",
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
-									["g"] = {
+									["description"] = "Requires Renown 44.",
+									["groups"] = {
 										follower(1345),	-- Chachi the Artists
 									},
 								}),
 								q(61789, {	-- Adventurer: Lost Sybille
-									["description"] = "Requires Renown 27.",
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
-									["g"] = {
+									["description"] = "Requires Renown 27.",
+									["groups"] = {
 										follower(1254),	-- Lost Sybille
 									},
 								}),
 								q(64469, {	-- Adventurer: Lucia
-									["description"] = "Requires Renown 71.",
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
-									["g"] = {
+									["description"] = "Requires Renown 71.",
+									["groups"] = {
 										follower(1347),	-- Lucia
 									},
 								}),
 								q(64468, {	-- Adventurer: Madame Iza
-									["description"] = "Requires Renown 62.",
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
-									["g"] = {
+									["description"] = "Requires Renown 62.",
+									["groups"] = {
 										follower(1346),	-- Madame Iza
 									},
 								}),
 								q(61729, {	-- Adventurer: Rahel
-									["sourceQuests"] = { 63064 },	-- Sanctum Upgrade: Adventures Scouting Map
-									["description"] = "Requires Renown 4.",
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
+									["sourceQuests"] = { 63064 },	-- Sanctum Upgrade: Adventures Scouting Map
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
-									["g"] = {
+									["description"] = "Requires Renown 4.",
+									["groups"] = {
 										follower(1250),	-- Rahel
 									},
 								}),
 								q(61786, {	-- Adventurer: Stonehead
-								--	TODO: does this also require 58327, "Snacks for Stonehead"?  (quest text references you being friends with him)
-									["sourceQuests"] = { 58444 },	-- Return to Sinfall
-									["description"] = "Requires Renown 12.",
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
+									["sourceQuests"] = { 58444 },	-- Return to Sinfall
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
-									["g"] = {
+									["description"] = "Requires Renown 12.",
+								--	TODO: does this also require 58327, "Snacks for Stonehead"?  (quest text references you being friends with him)
+									["groups"] = {
 										follower(1251),	-- Stonehead
 									},
 								}),
 								q(61788, {	-- Adventurer: Simone
-									["description"] = "Requires Renown 17.",
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
-									["g"] = {
+									["description"] = "Requires Renown 17.",
+									["groups"] = {
 										follower(1252),	-- Simone
 									},
 								}),
 								q(61790, {	-- Adventurer: Vulca
-									["description"] = "Requires Renown 33.",
 									["provider"] = { "n", 164741 },	-- Tactician Sakaa
 									["coord"] = { 57.8, 58.6, SINFALL_REACHES },
-									["g"] = {
+									["description"] = "Requires Renown 33.",
+									["groups"] = {
 										follower(1255),	-- Vulca
 									},
 								}),

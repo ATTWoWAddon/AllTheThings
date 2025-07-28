@@ -10,11 +10,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		["provider"] = { "o", 322533 },	-- Mardivas's Tome of the Elements
 		["coord"] = { 60.7, 32.4, NAZJATAR },
 		["icon"] = 132774,	-- icon for Strange Mineralized Water
-		["g"] = {
+		["groups"] = {
 			currency(1721),	-- Prismatic Manapearl x5
 			n(155139, {	-- Arcane Amalgamation
 				["description"] = "Activate no crystals.",
-				["g"] = {
+				["groups"] = {
 					i(170477),	-- Mardivas's Universally Lauded Tote
 				},
 			}),
@@ -26,7 +26,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				["cost"] = {
 					{ "i", 169333, 1 },	-- Strange Volcanic Rock
 				},
-				["g"] = {
+				["groups"] = {
 					i(170126),	-- Igneous Longbow
 				},
 			}),
@@ -38,7 +38,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				["cost"] = {
 					{ "i", 169334, 1 },	-- Strange Oceanic Sediment
 				},
-				["g"] = {
+				["groups"] = {
 					i(170383),	-- Coralspine Bulwark
 				},
 			}),
@@ -51,7 +51,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				["cost"] = {
 					{ "i", 169334, 2 },	-- Strange Oceanic Sediment
 				},
-				["g"] = {
+				["groups"] = {
 					i(170125),	-- Behemoth Claw of the Abyss
 				},
 			}),
@@ -65,7 +65,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 					{ "i", 169333, 1 },	-- Strange Volcanic Rock
 					{ "i", 169334, 1 },	-- Strange Oceanic Sediment
 				},
-				["g"] = {
+				["groups"] = {
 					i(170128),	-- Majestic Shirakess Greatstaff
 				},
 			}),
@@ -79,7 +79,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 					{ "i", 169332, 1 },	-- Strange Mineralized Water
 					{ "i", 169333, 1 },	-- Strange Volcanic Rock
 				},
-				["g"] = {
+				["groups"] = {
 					i(170132),	-- Slicer of Omus
 					i(170166),	-- Technique: Glyph of Steaming Fury (RECIPE!)
 				},
@@ -93,7 +93,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				["cost"] = {
 					{ "i", 169332, 2 },	-- Strange Mineralized Water
 				},
-				["g"] = {
+				["groups"] = {
 					i(170130),	-- Glaive of Swells
 				},
 			}),
@@ -107,7 +107,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 					{ "i", 169333, 1 },	-- Strange Volcanic Rock
 					{ "i", 169334, 1 },	-- Strange Oceanic Sediment
 				},
-				["g"] = {
+				["groups"] = {
 					i(170129),	-- Salgos' Volatile Basher
 				},
 			}),
@@ -121,7 +121,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 					{ "i", 169332, 1 },	-- Strange Mineralized Water
 					{ "i", 169334, 1 },	-- Strange Oceanic Sediment
 				},
-				["g"] = {
+				["groups"] = {
 					i(170124),	-- Coral-Sharpened Greatsword
 				},
 			}),
@@ -134,7 +134,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				["cost"] = {
 					{ "i", 169333, 2 },	-- Strange Volcanic Rock
 				},
-				["g"] = {
+				["groups"] = {
 					i(170131),	-- Tidal Wand of Malevolence
 				},
 			}),
@@ -146,7 +146,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				["cost"] = {
 					{ "i", 169332, 1 },	-- Strange Mineralized Water
 				},
-				["g"] = {
+				["groups"] = {
 					i(170138),	-- Scroll of Violent Tides
 				},
 			}),
@@ -160,7 +160,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 					{ "i", 169332, 1 },	-- Strange Mineralized Water
 					{ "i", 169333, 1 },	-- Strange Volcanic Rock
 				},
-				["g"] = {
+				["groups"] = {
 					i(170127),	-- Pyroclastic Halberd
 					i(170166),	-- Technique: Glyph of Steaming Fury (RECIPE!)
 				},
@@ -175,7 +175,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 					{ "i", 169332, 1 },	-- Strange Mineralized Water
 					{ "i", 169334, 1 },	-- Strange Oceanic Sediment
 				},
-				["g"] = {
+				["groups"] = {
 					i(170137),	-- Azerite-Infused Crystal Flayer
 				},
 			}),

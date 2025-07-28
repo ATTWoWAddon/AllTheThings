@@ -57,7 +57,7 @@ root(ROOTS.Zones, {
 		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(978, {		-- 3000 Quests Completed
 			["timeline"] = { ADDED_3_0_2 },
-			["g"] = {
+			["groups"] = {
 				title(42),		-- <Name> the Seeker
 			},
 		})),
@@ -269,7 +269,7 @@ root(ROOTS.Zones, {
 		})),
 		petbattle(ach(12930, {	-- Battle Safari (Kul Tiras and Zandalar)
 			["timeline"] = { ADDED_8_0_1 },
-			["g"] = {
+			["groups"] = {
 				i(163634),		-- Dreadtick Leecher (PET!)
 				crit(41273),		-- Shadowback Crawler
 				crit(41274),		-- River Frog
@@ -1369,7 +1369,7 @@ root(ROOTS.Zones, {
 		})),
 		petbattle(ach(7499, {	-- Taming the World (40)
 			["timeline"] = { ADDED_5_0_4 },
-			["g"] = {
+			["groups"] = {
 				i(92738),	-- Safari Hat (TOY!)
 			},
 		})),
@@ -1381,7 +1381,7 @@ root(ROOTS.Zones, {
 				13626,	-- Nautical Nuisances of Nazjatar
 				13625,	-- Mighty Minions of Mechagon
 			}},
-			["g"] = {
+			["groups"] = {
 				i(169349),	-- Kelpfin (PET!)
 			},
 		}))),
@@ -1920,7 +1920,7 @@ root(ROOTS.Zones, {
 		})),
 		ach(13144, {	-- Wide World of Quests
 			["timeline"] = { ADDED_8_0_1 },
-			["g"] = {
+			["groups"] = {
 				crit(42348, {
 					["_quests"] = 51433,	-- Matron Morana
 				}),
@@ -1948,7 +1948,7 @@ root(ROOTS.Zones, {
 				6589,	-- Pandaria Safari
 			}},
 			["timeline"] = { ADDED_5_0_4 },
-			["g"] = {
+			["groups"] = {
 				title(199),		-- Zookeeper <Name>
 			},
 		})),

@@ -6,7 +6,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 		["mapID"] = 713,
 		["coord"] = { 61.2, 41.1, AZSUNA },
 		["lvl"] = 98,
-		["g"] = {
+		["groups"] = {
 			n(ZONE_DROPS, {
 				i(137726),	-- Schematic: Leystone Buoy (RECIPE!)
 				prof(INSCRIPTION, {
@@ -20,7 +20,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["provider"] = { "n", 106780 },	-- Tidestone of Golganneth
 					["sourceQuest"] = 38286,	-- Eye of Azshara: Wrath of Azshara
 					["modelScale"] = 3,
-					["g"] = {
+					["groups"] = {
 						i(140622),	-- Hardshell Greatbelt
 						i(140623),	-- Brightscale Waistguard
 						i(140624),	-- Bitterbrine Binding
@@ -137,7 +137,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = 110,
-				["g"] = {
+				["groups"] = {
 					cr(91784, e(1480, {	-- Warlord Parjesh
 						i(134240),	-- Brinewashed Leather Cowl
 						i(134223),	-- Coralplate Chestguard
@@ -211,7 +211,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				["ItemAppearanceModifierID"] = 0,
 				["lvl"] = 110,
-				["g"] = {
+				["groups"] = {
 					cr(91784, e(1480, {	-- Warlord Parjesh
 						ach(10456, {	-- But You Say He's Just a Friend
 							["crs"] = { 97264 },	-- Hatecoil Shellbreaker

@@ -394,7 +394,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 						["description"] = "Items under this group only have a chance to drop on your first kill per day for your warband.",
 						["timeline"] = { ADDED_10_2_7 },
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(224163, {	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor (MM!)
 								["timeline"] = { ADDED_10_2_7 },
 							}),
@@ -925,6 +925,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		}),
 		q(9386, {	-- A Light in Dark Places
 			["qg"] = FESTIVAL_FLAMEKEEPER_ID,
+			["sourceQuest"] = 9319,	-- A Light in Dark Places
 			-- #if BEFORE TBC
 			["coords"] = FESTIVAL_FLAMEKEEPER_COORDS,
 			["maps"] = {
@@ -940,7 +941,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				SCHOLOMANCE,
 			},
 			-- #endif
-			["sourceQuest"] = 9319,	-- A Light in Dark Places
 			["timeline"] = { REMOVED_2_4_0 },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(50, 1, 1),
@@ -956,7 +956,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		}),
 		q(9365, {	-- A Thief's Reward (A)
 			["qg"] = FESTIVAL_LOREMASTER_ID,
-			["coords"] = FESTIVAL_LOREMASTER_COORDS,
 			["sourceQuests"] = {
 				9324,	-- Stealing Orgrimmar's Flame
 				9325,	-- Stealing Thunder Bluff's Flame
@@ -965,6 +964,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				-- #endif
 				9326,	-- Stealing the Undercity's Flame
 			},
+			["coords"] = FESTIVAL_LOREMASTER_COORDS,
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(50, 1, 1),
@@ -974,7 +974,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		}),
 		q(9339, {	-- A Thief's Reward (H)
 			["qg"] = FESTIVAL_TALESPINNER_ID,
-			["coords"] = FESTIVAL_TALESPINNER_COORDS,
 			["sourceQuests"] = {
 				9332,	-- Stealing Darnassus's Flame
 				9331,	-- Stealing Ironforge's Flame
@@ -983,6 +982,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				11933,	-- Stealing the Exodar's Flame
 				-- #endif
 			},
+			["coords"] = FESTIVAL_TALESPINNER_COORDS,
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(50, 1, 1),
@@ -1008,8 +1008,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		q(11891, {	-- An Innocent Disguise
 			["qg"] = 25324,	-- Earthen Ring Guide
 			["sourceQuest"] = 11886,	-- Unusual Activity
-			["description"] = "Use your Totemic Beacon to summon the quest giver.",
 			["coord"] = { 10.2, 15.3, ASHENVALE },
+			["description"] = "Use your Totemic Beacon to summon the quest giver.",
 			["timeline"] = { ADDED_2_4_0 },
 			["cost"] = {
 				{ "i", 35828, 1 },	-- Totemic Beacon
@@ -1122,8 +1122,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		q(29092, {	-- Inform the Elder (A)
 			["qg"] = 25324,	-- Earthen Ring Guide
 			["sourceQuest"] = 11891,	-- An Innocent Disguise
-			["description"] = "Use your Totemic Beacon to summon the quest giver.",
 			["coord"] = { 16.0, 20.8, ASHENVALE },
+			["description"] = "Use your Totemic Beacon to summon the quest giver.",
 			["timeline"] = { ADDED_4_0_1 },
 			["cost"] = {
 				{ "i", 35828, 1 },	-- Totemic Beacon
@@ -1134,8 +1134,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		q(12012, {	-- Inform the Elder (H)
 			["qg"] = 25324,	-- Earthen Ring Guide
 			["sourceQuest"] = 11891,	-- An Innocent Disguise
-			["description"] = "Use your Totemic Beacon to summon the quest giver.",
 			["coord"] = { 16.0, 20.8, ASHENVALE },
+			["description"] = "Use your Totemic Beacon to summon the quest giver.",
 			["timeline"] = { ADDED_2_4_0 },
 			["cost"] = {
 				{ "i", 35828, 1 },	-- Totemic Beacon
@@ -1527,10 +1527,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			-- #if BEFORE TBC
 			["coords"] = FESTIVAL_LOREMASTER_COORDS,
 			-- #endif
-			["timeline"] = { REMOVED_2_4_0 },
-			["races"] = ALLIANCE_ONLY,
-			["isYearly"] = true,
-			["lvl"] = 1,
 			-- #if BEFORE TBC
 			["icon"] = 134467,
 			["groups"] = {
@@ -1547,16 +1543,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				i(23247),	-- Burning Blossom
 			},
 			-- #endif
+			["timeline"] = { REMOVED_2_4_0 },
+			["races"] = ALLIANCE_ONLY,
+			["isYearly"] = true,
+			["lvl"] = 1,
 		}),
 		q(9368, {	-- The Festival of Fire (H)
 			["qg"] = FESTIVAL_TALESPINNER_ID,
 			-- #if BEFORE TBC
 			["coords"] = FESTIVAL_TALESPINNER_COORDS,
 			-- #endif
-			["timeline"] = { REMOVED_2_4_0 },
-			["races"] = ALLIANCE_ONLY,
-			["isYearly"] = true,
-			["lvl"] = 1,
 			-- #if BEFORE TBC
 			["icon"] = 134467,
 			["groups"] = {
@@ -1573,6 +1569,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				i(23247),	-- Burning Blossom
 			},
 			-- #endif
+			["timeline"] = { REMOVED_2_4_0 },
+			["races"] = ALLIANCE_ONLY,
+			["isYearly"] = true,
+			["lvl"] = 1,
 		}),
 		q(11970, {	-- The Master of Summer Lore (A)
 			["qgs"] = {
@@ -1587,6 +1587,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				220870,	-- Holiday Enthusiast
 				-- #endif
 			},
+			["timeline"] = { ADDED_2_4_0 },
 			["maps"] = {
 				STORMWIND_CITY,
 				IRONFORGE,
@@ -1617,7 +1618,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				DORNOGAL
 				-- #endif
 			},
-			["timeline"] = { ADDED_2_4_0 },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 1,
 			["groups"] = {
@@ -1637,6 +1637,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				220870,	-- Holiday Enthusiast
 				-- #endif
 			},
+			["timeline"] = { ADDED_2_4_0 },
 			["maps"] = {
 				ORGRIMMAR,
 				THUNDER_BLUFF,
@@ -1665,7 +1666,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				DORNOGAL
 				-- #endif
 			},
-			["timeline"] = { ADDED_2_4_0 },
 			["races"] = HORDE_ONLY,
 			["lvl"] = 1,
 			["groups"] = {
@@ -1727,15 +1727,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		q(82087, {	-- Torch Tossing (A)
 			["qg"] = FESTIVAL_MASTER_FIRE_EATER_ID,
 			["coords"] = FESTIVAL_MASTER_FIRE_EATER_COORDS,
-			["races"] = ALLIANCE_ONLY,
 			["timeline"] = { ADDED_10_2_7 },
+			["races"] = ALLIANCE_ONLY,
 			["groups"] = { i(23247) },	-- Burning Blossom
 		}),
 		q(82105, {	-- Torch Tossing (H)
 			["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
 			["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
-			["races"] = HORDE_ONLY,
 			["timeline"] = { ADDED_10_2_7 },
+			["races"] = HORDE_ONLY,
 			["groups"] = { i(23247) },	-- Burning Blossom
 		}),
 		q(11886, {	-- Unusual Activity
@@ -1770,12 +1770,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				WINTERSPRING,
 			},
 			-- #endif
-			["timeline"] = { REMOVED_2_4_0 },
-			["isYearly"] = true,
-			["lvl"] = 1,
 			-- #if BEFORE TBC
 			["icon"] = 134467,
 			-- #endif
+			["timeline"] = { REMOVED_2_4_0 },
+			["isYearly"] = true,
+			["lvl"] = 1,
 			["groups"] = {
 				-- #if BEFORE TBC
 				objective(1, {	-- Flame of Azshara
@@ -1810,9 +1810,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				SEARING_GORGE,
 			},
 			-- #endif
-			["timeline"] = { REMOVED_2_4_0 },
-			["isYearly"] = true,
-			["lvl"] = 1,
 			-- #if BEFORE TBC
 			["icon"] = 134467,
 			["groups"] = {
@@ -1834,6 +1831,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				i(23247),	-- Burning Blossom
 			},
 			-- #endif
+			["timeline"] = { REMOVED_2_4_0 },
+			["isYearly"] = true,
+			["lvl"] = 1,
 		}),
 
 		-- Bonfire Descecration Quests

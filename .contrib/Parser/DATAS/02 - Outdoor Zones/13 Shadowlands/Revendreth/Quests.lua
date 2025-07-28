@@ -1,4 +1,4 @@
- ---------------------------------------------------
+---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
@@ -33,7 +33,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57007 },	-- Invitation of the Master
 					["provider"] = { "n", 157550 },	-- Nadjia the Mistblade
 					["coord"] = { 65.7, 64.6, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(175730),	-- Master Duelist's Chit
 					},
 				}),
@@ -49,7 +49,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 56942 },	-- On The Road Again
 					["provider"] = { "n", 155533 },	-- Lord Chamberlain
 					["coord"] = { 67.5, 68.5, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(174102),	-- Anima Canister (QI!)
 					},
 				}),
@@ -57,7 +57,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 56942 },	-- On The Road Again
 					["provider"] = { "n", 155533 },	-- Lord Chamberlain
 					["coord"] = { 67.5, 68.5, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(175441),	-- Nightcloaked Belt
 						i(175439),	-- Sash of Pained Absolution
 						i(175440),	-- Soul Hunter's Belt
@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57174 },	-- The Stoneborn
 					["provider"] = { "n", 156822 },	-- Mistress Mihaela
 					["coord"] = { 61.3, 63.7, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(174482),	-- Plea of Darkhaven (QI!)
 					},
 				}),
@@ -101,7 +101,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57179 },	-- The Authority of Revendreth
 					["provider"] = { "n", 156605 },	-- Lord Chamberlain
 					["coord"] = { 58.0, 49.5, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(175714),	-- The Chamberlain's Tarnished Signet
 					},
 				}),
@@ -114,7 +114,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
 					["provider"] = { "n", 156823 },	-- Lord Chamberlain
 					["coord"] = { 64.7, 49.9, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(174998),	-- Avowed Crypt Key (QI!)
 						i(174930),	-- Inquisitor Stelia's Sinstone (QI!)
 					},
@@ -131,7 +131,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 163576 },	-- Echelon
 					["coord"] = { 67.4, 53.5, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(175431),	-- Leggings of Pained Absolution
 						i(175433),	-- Nightcloaked Breeches
 						i(175432),	-- Soul Hunter's Leggings
@@ -142,7 +142,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59021 },	-- Herald Their Demise
 					["provider"] = { "n", 163576 },	-- Echelon
 					["coord"] = { 67.4, 53.5, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(171100),	-- Hidden Sinstone Fragment (QI!)
 						i(171101),	-- Hidden Sinstone Fragment (QI!)
 						i(171102),	-- Hidden Sinstone Fragment (QI!)
@@ -153,7 +153,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57175 },	-- Inquisitor Vilhelm's Sinstone
 					["provider"] = { "n", 164166 },	-- Echelon
 					["coord"] = { 65.9, 47.1, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(175445),	-- Nightcloaked Bindings
 						i(175444),	-- Soul Hunter's Bracers
 						i(175443),	-- Stoneforged Vambraces
@@ -169,7 +169,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57176 },	-- Sinstone Delivery
 					["provider"] = { "n", 157069 },	-- Lord Chamberlain
 					["coord"] = { 65.6, 49.6, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(175732),	-- Tablet of Despair
 					},
 				}),
@@ -177,7 +177,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57180 },	-- The Accuser's Secret
 					["provider"] = { "n", 157084 },	-- Lord Chamberlain
 					["coord"] = { 66.3, 50.5, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(175756),	-- Medallion of Dominion (QI!)
 					},
 				}),
@@ -185,7 +185,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57182 },	-- The Accuser's Fate
 					["provider"] = { "n", 156381 },	-- Sire Denathrius
 					["coord"] = { 53.4, 63.9, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(175436),	-- Mantle of Pained Absolution
 						i(175434),	-- Nightcloaked Spaulders
 						i(175437),	-- Soul Hunter's Monnion
@@ -202,7 +202,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57098 },	-- The Grove of Terror
 					["provider"] = { "n", 169087 },	-- The Fearstalker
 					["coord"] = { 50.6, 73.8, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(179388),	-- Hopebreaker Soul Chains (QI!)
 					},
 				}),
@@ -210,7 +210,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58916 },	-- Dread Priming
 					["provider"] = { "n", 163221 },	-- Flockmaster Sergio
 					["coord"] = { 51.2, 74.3, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(175765),	-- Dredwing Shroud
 					},
 				}),
@@ -223,7 +223,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59014 },	-- King of the Hill
 					["provider"] = { "n", 168664 },	-- The Fearstalker
 					["coord"] = { 47.8, 70.1, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(178994),	-- Hollowed Dredbat Fang (QI!)
 					},
 				}),
@@ -236,7 +236,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57131 },	-- Let the Hunt Begin
 					["provider"] = { "n", 168664 },	-- The Fearstalker
 					["coord"] = { 47.8, 70.1, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(175715),	-- Gargon Eye Ring
 					},
 				}),
@@ -262,7 +262,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60313 },	-- Dredhollow
 					["provider"] = { "n", 168217 },	-- The Accuser
 					["coord"] = { 43.2, 73.8, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(178873),	-- Concentrated Anima Vial (QI!)
 						i(177648),	-- Honed Dredglaive
 						i(177651),	-- Nimble Hopebreaker's Rapier
@@ -277,7 +277,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60313 },	-- Dredhollow
 					["provider"] = { "n", 164394 },	-- General Draven
 					["coord"] = { 43.3, 74.0, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(175427),	-- Hood of Pained Absolution
 						i(175429),	-- Nightcloaked Hood
 						i(175428),	-- Soul Hunter's Helm
@@ -297,7 +297,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 168468 },	-- The Accuser
 					["coord"] = { 39.6, 81.2, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(175770),	-- Medallion of Dread (QI!)
 						i(175487),	-- Nightcloaked Shoes
 						i(175485),	-- Shoes of Pained Absolution
@@ -315,7 +315,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57240 },	-- Where is Prince Renathal?
 					["provider"] = { "n", 157199 },	-- Stonehead
 					["coord"] = { 38.9, 66.0, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						o(354075, {	-- Blank Parchment
 							["coords"] = {
 								{ 37.8, 68.4, REVENDRETH },
@@ -324,7 +324,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								{ 38.2, 71.4, REVENDRETH },
 								{ 38.8, 69.9, REVENDRETH },
 							},
-							["g"] = { i(171343) },	-- Blank Parchment (QI!)
+							["groups"] = { i(171343) },	-- Blank Parchment (QI!)
 						}),
 						i(171345),	-- Forged Letter of Condemnation (QI!)
 						i(171344),	-- Venthyr Calligraphy Set (QI!)
@@ -339,7 +339,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57405 },	-- Chasing Madness
 					["provider"] = { "n", 157639 },	-- Theotar
 					["coord"] = { 38.0, 60.7, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(175425),	-- Handwraps of Pained Absolution
 						i(175423),	-- Nightcloaked Gloves
 						i(175426),	-- Soul Hunter's Gauntlets
@@ -350,7 +350,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57405 },	-- Chasing Madness
 					["provider"] = { "n", 157639 },	-- Theotar
 					["coord"] = { 38.0, 60.7, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(171468),	-- Regal Cloth Scrap (QI!)
 						i(171469),	-- Scorched Plank (QI!)
 					},
@@ -377,7 +377,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57460 },	-- Tubbins's Tea
 					["provider"] = { "n", 158542 },	-- Theotar
 					["coord"] = { 31.1, 57.4, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(179988),	-- Ash-Scored Girdle
 						i(179991),	-- Light-Bleached Greaves
 						i(179989),	-- Marquis's Lace Cuffs
@@ -393,7 +393,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60566 },	-- Into the Light
 					["provider"] = { "n", 169105 },	-- Breakfist
 					["coord"] = { 30.4, 45.6, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(177637),	-- Sinfall Arquebus
 						i(177642),	-- Sinfall Darkblade
 						i(177643),	-- Sinfall Duelist's Rapier
@@ -429,7 +429,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57690 },	-- Cages For All Occasions
 					["provider"] = { "n", 158645 },	-- Prince Renathal
 					["coord"] = { 34.6, 18.6, THE_MAW },
-					["g"] = {
+					["groups"] = {
 						i(172446),	-- Renathal's Cage Key (QI!)
 					},
 				}),
@@ -437,7 +437,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57691 },	-- A Royal Key
 					["provider"] = { "n", 158645 },	-- Prince Renathal
 					["coord"] = { 34.6, 18.6, THE_MAW },
-					["g"] = {
+					["groups"] = {
 						i(175731),	-- Stolen Maw Badge
 					},
 				}),
@@ -457,7 +457,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 172673 },	-- Projection of Prince Renathal
 					["coord"] = { 32.1, 41.4, REVENDRETH },
 					["maps"] = { 1688 },	-- Revendreth (Scenario Map)
-					["g"] = {
+					["groups"] = {
 						i(175492),	-- Cowl of Pained Absolution
 						i(175483),	-- Nightcloaked Chestpiece
 						i(175494),	-- Nightcloaked Helm
@@ -480,10 +480,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59710 },	-- A Curious Invitation
 					["provider"] = { "n", 169238 },	-- Courier Araak
 					["coord"] = { 59.5, 66.7, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						o(349303, {	-- Taskmaster Matyas' Ruminations
 							["coord"] = { 58.7, 69.3, REVENDRETH },
-							["g"] = { i(180177) },	-- Ruminations on True Names (QI!)
+							["groups"] = { i(180177) },	-- Ruminations on True Names (QI!)
 						}),
 					},
 				}),
@@ -491,18 +491,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59712 },	-- The Lay of the Land
 					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
 					["coord"] = { 59.9, 68.9, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						o(349381, {	-- Sinstone Fragment
 							["coord"] = { 60.8, 72.1, REVENDRETH },
-							["g"] = { i(179981) },	-- Chipped Sinstone (QI!)
+							["groups"] = { i(179981) },	-- Chipped Sinstone (QI!)
 						}),
 						o(349380, {	-- Sinstone Fragment
 							["coord"] = { 60.5, 69.8, REVENDRETH },
-							["g"] = { i(179980) },	-- Cracked Sinstone (QI!)
+							["groups"] = { i(179980) },	-- Cracked Sinstone (QI!)
 						}),
 						o(349379, {	-- Sinstone Fragment (QI!)
 							["coord"] = { 61.0, 67.7, REVENDRETH },
-							["g"] = { i(179979) },	-- Worn Sinstone (QI!)
+							["groups"] = { i(179979) },	-- Worn Sinstone (QI!)
 						}),
 						---
 						i(178071),	-- Amice of Pained Absolution
@@ -519,7 +519,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59846 },	-- Finders-Keepers, Sinners-Weepers
 					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
 					["coord"] = { 59.9, 68.9, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(177765),	-- Witherfall Special Reserve (QI!)
 					},
 				}),
@@ -527,7 +527,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59846 },	-- Finders-Keepers, Sinners-Weepers
 					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
 					["coord"] = { 59.9, 68.9, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						o(349385, {	-- Scythe Bloom
 							["coords"] = {
 								{ 62.3, 70.7, REVENDRETH },
@@ -539,7 +539,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								{ 62.9, 70.1, REVENDRETH },
 								{ 63.1, 68.2, REVENDRETH },
 							},
-							["g"] = { i(177714) },	-- Scythe Bloom Pollen (QI!)
+							["groups"] = { i(177714) },	-- Scythe Bloom Pollen (QI!)
 						}),
 						i(177713),	-- Pristine Venom Gland (QI!)
 					},
@@ -556,7 +556,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59715 },	-- Message for Matyas
 					["provider"] = { "n", 166081 },	-- Taskmaster Matyas
 					["coord"] = { 60.1, 69.4, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(177881),	-- Nadjia's Sinstone (QI!)
 						i(175498),	-- Nightcloaked Pants
 						i(175418),	-- Nightcloaked Vest
@@ -572,7 +572,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59716 },	-- Comfortably Numb
 					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
 					["coord"] = { 60.1, 69.2, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(179359),	-- Sinstone Fragment (QI!)
 						i(178077),	-- Briarbane Signet
 					},
@@ -589,7 +589,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 166616 },	-- Nadjia the Mistblade
 					["coord"] = { 60.2, 78.6, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(178054),	-- Briarbane Carbine
 						i(178055),	-- Briarbane Glaive
 						i(178060),	-- Briarbane Halberd
@@ -612,7 +612,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57174 },	-- The Stoneborn
 					["provider"] = { "n", 167489 },	-- Lajos
 					["coord"] = { 62.2, 61.3, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(178565),	-- Suspicious Message (QI!)
 					},
 				}),
@@ -620,7 +620,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60177 },	-- Reason for the Treason
 					["provider"] = { "n", 167489 },	-- Lajos
 					["coord"] = { 62.2, 61.3, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(175766),	-- Ilka's Hunting Cloak
 						i(175737),	-- Samu's Inkwell Pendant
 					},
@@ -651,7 +651,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57471 },	-- It's a Dirty Job
 					["provider"] = { "n", 157846 },	-- Rendle
 					["coord"] = { 72.5, 73.2, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(171966),	-- Gem of Binding (QI!)
 					},
 				}),
@@ -664,7 +664,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57477 },	-- We're Gonna Need a Bigger Dredger
 					["provider"] = { "n", 157898 },	-- Bootus
 					["coord"] = { 72.8, 73.9, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(177655),	-- Air Bootuses
 						i(177656),	-- Boot-a-Charge Flyers
 						i(177653),	-- Bootus Hardeneds
@@ -702,7 +702,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57919 },	-- An Abuse of Power
 					["provider"] = { "n", 160116 },	-- The Accuser
 					["coord"] = { 71.8, 40.3, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(173696),	-- Venthyr Ritual Dagger (QI!)
 						i(173695),	-- Venthyr Ritual Robes (QI!)
 						i(173697),	-- Venthyr Ritual Tome (QI!)
@@ -736,18 +736,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60127 },	-- Missing Stone Fiend
 					["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
 					["coord"] = { 70.1, 56.1, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						o(339224, {	-- Temel's Body
 							["coord"] = { 68.9, 53.3, REVENDRETH },
-							["g"] = { i(173737) },	-- Temel's Body (QI!)
+							["groups"] = { i(173737) },	-- Temel's Body (QI!)
 						}),
 						o(339226, {	-- Temel's Head
 							["coord"] = { 70.2, 53.8, REVENDRETH },
-							["g"] = { i(173739) },	-- Temel's Head (QI!)
+							["groups"] = { i(173739) },	-- Temel's Head (QI!)
 						}),
 						o(339225, {	-- Temel's Wings
 							["coord"] =  { 66.1, 53.1, REVENDRETH },
-							["g"] = { i(173738) },	-- Temel's Wings (QI!)
+							["groups"] = { i(173738) },	-- Temel's Wings (QI!)
 						}),
 					},
 				}),
@@ -760,7 +760,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57925 },	-- Archivist Fane
 					["provider"] = { "n", 160248 },	-- Archivist Fane
 					["coord"] = { 73.0, 52.0, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(173733),	-- Sinstone Records (QI!)
 					},
 				}),
@@ -777,7 +777,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 160248 },	-- Archivist Fane
 					["coord"] = { 73.0, 52.0, REVENDRETH },
 					["maps"] = { 1663 },	-- Halls of Atonement
-					["g"] = {
+					["groups"] = {
 						i(184717),	-- Lord Chamberlain's Cloak
 					},
 				}),
@@ -787,7 +787,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60051 },	-- A Master of Their Craft
 					["provider"] = { "n", 158038 },	-- Laurent
 					["coord"] = { 26.3, 49.0, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(172074),	-- Laurent's Belongings (QI!)
 						i(175504),	-- Cord of Pained Absolution
 						i(175506),	-- Nightcloaked Waistcord
@@ -799,7 +799,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57531 },	-- An Unfortunate Situation
 					["provider"] = { "n", 158038 },	-- Laurent
 					["coord"] = { 26.3, 49.0, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(172085),	-- Mirror Fragment (QI!)
 						i(172086),	-- Mirror Fragment (QI!)
 						i(172087),	-- Mirror Fragment (QI!)
@@ -819,7 +819,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57571 },	-- Moving Mirrors
 					["provider"] = { "n", 158205 },	-- Laurent
 					["coord"] = { 24.2, 49.4, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(175507),	-- Bindings of Pained Absolution
 						i(175716),	-- Emberscorched Band
 						i(175510),	-- Nightcloaked Bracers
@@ -850,7 +850,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 158205 },	-- Laurent
 					["coord"] = { 24.2, 49.4, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(175733),	-- Brimming Ember Shard
 						i(177657),	-- Overflowing Ember Mirror
 					},
@@ -860,7 +860,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				q(60467, {	-- A Rousing Aroma
 					["provider"] = { "n", 168455 },	-- Sabina
 					["coord"] = { 35.0, 53.9, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(178898),	-- Pungent Swarmer Toxin (QI!)
 					},
 				}),
@@ -868,7 +868,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60467 },	-- A Rousing Aroma
 					["provider"] = { "n", 168455 },	-- Sabina
 					["coord"] = { 35.0, 53.9, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(178904),	-- Shackle Key (QI!)
 					},
 				}),
@@ -884,7 +884,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 168455 },	-- Sabina
 					["coord"] = { 35.0, 53.9, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(175736),	-- Hopebreaker Pendant
 					},
 				}),
@@ -895,7 +895,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
 					["cost"] = { { "i", 180583, 1 } },	-- Impressionable Gorger Spawn (technically this doesn't stay in your inventory, but i think this is a better way to display it - when it was added as a drop, the rare still showed up as something you needed to do, vs 'cost' that will disappear as soon as this quest is done)
 					["coord"] = { 60.0, 58.0, REVENDRETH },	-- rough coords where NPC will spawn for quest
-					["g"] = {
+					["groups"] = {
 						i(182314),	-- Endmire Vineroot (QI!)
 						i(182590),	-- Vinewormed Coin Pouch
 					},
@@ -904,7 +904,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 61839 },	-- Nipping at the Undergrowth
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
 					["coord"] = { 60.0, 58.0, REVENDRETH },	-- rough coords where NPC will spawn for quest
-					["g"] = {
+					["groups"] = {
 						i(182314),	-- Endmire Vineroot (QI!)
 						i(182591),	-- Vinecovered Infused Rubies
 					},
@@ -913,7 +913,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 61840 },	-- Vineroot on the Menu
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
 					["coord"] = { 60.0, 58.0, REVENDRETH },	-- rough coords where NPC will spawn for quest
-					["g"] = {
+					["groups"] = {
 						i(182315),	-- Infused Endmire Fruit (QI!)
 						i(182592),	-- Infused Endmire Fruit
 					},
@@ -922,7 +922,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 61842 },	-- Vineroot Will Not Do
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
 					["coord"] = { 60.0, 58.0, REVENDRETH },	-- rough coords where NPC will spawn for quest
-					["g"] = {
+					["groups"] = {
 						i(182315),	-- Infused Endmire Fruit (QI!)
 						i(182593),	-- Sinrunner Carving
 					},
@@ -931,31 +931,31 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 61844 },	-- Hungry Hungry Gorger
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
 					["coord"] = { 60.0, 58.0, REVENDRETH },	-- rough coords where NPC will spawn for quest
-					["g"] = {
+					["groups"] = {
 						i(182594),	-- A Sparkling Ruby Necklace
-					}
+					},
 				}),
 				q(62045, {	-- Ready for More
 					["sourceQuests"] = { 62044 },	-- Standing Toe To Toe
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
 					["coord"] = { 60.0, 58.0, REVENDRETH },	-- rough coords where NPC will spawn for quest
-					["g"] = {
+					["groups"] = {
 						i(182586, {	-- A Venthyr Arm Holding a Cudgel
 							i(182588),	-- A Bloody Hand
 							i(182587),	-- Gorger Slobbered Cudgel
 						}),
-					}
+					},
 				}),
 				q(62046, {	-- A New Pack
 					["sourceQuests"] = { 62045 },	-- Ready for More
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
 					["coord"] = { 60.0, 58.0, REVENDRETH },	-- rough coords where NPC will spawn for quest
-					["g"] = {
+					["groups"] = {
 						i(182589, {	-- Loyal Gorger (MOUNT!)
 							-- tagged with cost here so that it shows under the Rare for the start of the quest chain item
 							["cost"] = { { "i", 180583, 1 } },	-- Impressionable Gorger Spawn
 						}),
-					}
+					},
 				}),
 			}),
 			------ Miscellaneous ------
@@ -973,7 +973,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 57136 },	-- The Penitent Hunt
 				["provider"] = { "n", 156384 },	-- Huntmaster Constantin
 				["coord"] = { 48.5, 68.5, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(174957),	-- Abel's Rapier (QI!)
 				},
 			}),
@@ -986,7 +986,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 57098 },	-- The Grove of Terror
 				["provider"] = { "o", 355296 },	-- Bounty: Beast Control
 				["coord"] = { 49.6, 75.9, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(179719),	-- Anima Lure (QI!)
 				},
 			}),
@@ -1000,7 +1000,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 59014 },	-- King of the Hill
 				["provider"] = { "n", 156384 },	-- Huntmaster Constantin
 				["coord"] = { 48.5, 68.4, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(179316),	-- Doomfang Skull (QI!)
 					i(178996),	-- Pristine Deathwalker Paw (QI!)
 					i(178997),	-- Prized Fearspinner Fangs (QI!)
@@ -1010,7 +1010,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
 				["provider"] = { "n", 168698 },	-- Chiselgrump
 				["coord"] = { 69.5, 53.3, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(179002),	-- Dredger Chisel (QI!)
 				},
 			}),
@@ -1031,14 +1031,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "n", 161418 },	-- Sinkeeper Mourana
 				["coord"] = { 73.2, 34.0, REVENDRETH },
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr
-				["g"] = {
+				["groups"] = {
 					i(174741),	-- Bell of Remembrance (QI!)
 				},
 			}),
 			q(58327, {	-- Snacks for Stonehead
 				["description"] = "Pick up the Hollow Rock at |cFFFFFFFF38.8, 64.3|r, or Stonehead will fling you away when you try to approach the quest.",
 				["coord"] = { 39.2, 65.2, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					ach(14272),	-- Best Bud With Benefits
 					i(175840),	-- A Light Snack (QI!)
 					i(175826),	-- Ash Crisps (QI!)
@@ -1049,14 +1049,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60480, {	-- The Endmire
 				["provider"] = { "n", 168618 },	-- Tessle the Snitch
 				["coord"] = { 65.1, 63.5, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(175751),	-- Infused Ruby (QI!)
 				},
 			}),
 			q(58060, {	-- The Night Market
 				["provider"] = { "n", 160100 },	-- Provisioner Dracho
 				["coord"] = { 61.0, 39.6, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(173689),	-- Hastily Wrapped Package (QI!)
 				},
 			}),
@@ -1064,7 +1064,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 56942 },	-- On The Road Again
 				["provider"] = { "o", 352490 },	-- Join the Rebellion!
 				["coord"] = { 67.7, 67.6, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(173945),	-- Join the Prince! (QI!)
 					i(177665),	-- Spectral Hankerchief
 				},
@@ -1073,7 +1073,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 57025 },	-- A Plea to Revendreth
 				["provider"] = { "o", 351885 },	-- Wanted: Aggregate of Doom
 				["coord"] = { 59.1, 69.2, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(180288),	-- Silver-Bladed Excavator
 				},
 			}),
@@ -1081,7 +1081,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 57025 },	-- A Plea to Revendreth
 				["provider"] = { "o", 351886 },	-- Wanted: Duke Anton
 				["coord"] = { 60.7, 40.1, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(179380),	-- Redelev Purse
 				},
 			}),
@@ -1089,7 +1089,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 57025 },	-- A Plea to Revendreth
 				["provider"] = { "o", 351874 },	-- Wanted: Enforcer Kristof
 				["coord"] = { 30.6, 48.9, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(181714),	-- Jeweled Hand Fan
 				},
 			}),
@@ -1102,7 +1102,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 57025 },	-- A Plea to Revendreth
 				["provider"] = { "o", 351888 },	-- Wanted: Summoner Marcelis
 				["coord"] = { 30.8, 49.0, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(180459),	-- Dessication Duster
 				},
 			}),
@@ -1110,7 +1110,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 57025 },	-- A Plea to Revendreth
 				["provider"] = { "o", 351889 },	-- Wanted: The Pale Doom
 				["coord"] = { 62.2, 63.5, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(180458),	-- Writ of Tithe Exemption
 				},
 			}),
@@ -1136,45 +1136,45 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}, {
 				q(62781, {	-- Ash You Like It [Pre-60]
 					["coord"] = { 36.6, 56.0, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(181334),	-- Essence Extractor
 					},
 				}),
 				q(62784, {	-- Charlatans [Pre-60]
 					["coord"] = { 72.0, 49.0, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(181189),	-- Darkwing Rebel's Striders
 						i(181179),	-- Sincollector's Leggings
 						i(181185),	-- Soulstalker Breeches
 						i(181200),	-- Stonewrought Legguards
-					}
+					},
 				}),
 				q(62780, {	-- Parasites of Reality [Pre-60]
 					["coord"] = { 67.2, 61.0, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(181194),	-- Darkwing Rebel's Cinch
 						i(181176),	-- Sincollector's Sandals
 						i(181183),	-- Soulstalker Grips
 						i(181199),	-- Stonewrought Gauntlets
-					}
+					},
 				}),
 				q(62783, {	-- Stalking Fear [Pre-60]
 					["coord"] = { 41.6, 77.6, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(181195),	-- Darkwing Rebel's Bracers
 						i(181180),	-- Sincollector's Cord
 						i(181187),	-- Soulstalker Bindings
 						i(181203),	-- Stonewrought Armplates
-					}
+					},
 				}),
 				q(62782, {	-- The Banewood [Pre-60]
 					["coord"] = { 46.0, 67.0, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(181193),	-- Darkwing Rebel's Shoulderguards
 						i(181206),	-- Sincollector's Shoulderpads
 						i(181184),	-- Soulstalker Helm
 						i(181196),	-- Stonewrought Helm
-					}
+					},
 				}),
 			}))),
 		}),

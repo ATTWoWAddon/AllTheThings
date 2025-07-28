@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				3283,	-- Snowlemental (PET!)
 				3336,	-- Vorquin Runt (PET!)
 			}},
-			["g"] = {
+			["groups"] = {
 				pet(3367),	-- Emberling (PET!)
 				pet(3295, {	-- Igneoid (PET!)
 					["coord"] = { 51.4, 31.6, THE_WAKING_SHORES },

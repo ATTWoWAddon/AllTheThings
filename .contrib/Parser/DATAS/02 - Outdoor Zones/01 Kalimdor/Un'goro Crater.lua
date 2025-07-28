@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 43.6, 41.4, UNGORO_CRATER },
 					["timeline"] = { ADDED_7_2_0 },
 					["requireSkill"] = BLACKSMITHING,
-					["g"] = {
+					["groups"] = {
 						i(142388),	-- Bleached Stegodon Spike (QI!)
 						i(142387),	-- Calcified Diemetradon Scale (QI!)
 						i(142386),	-- Mostly Powerful Mojo (QI!)
@@ -836,9 +836,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 38276 },	-- Tara (mobileNPC)
 						{ "i", 50746 },	-- Tara's Tar Scraper
 					},
-					["description"] = "If you have a Herbalism as a profession, you will have to use the 'Tar Scrapper' manually from the Objective Tracker or from your bag.",
 					["sourceQuest"] = 24737,	-- Super Sticky
 					["coord"] = { 43.1, 41.1, UNGORO_CRATER },
+					["description"] = "If you have a Herbalism as a profession, you will have to use the 'Tar Scrapper' manually from the Objective Tracker or from your bag.",
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Unbelievably Sticky Tar
@@ -1289,7 +1289,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 43.6, 41.4, UNGORO_CRATER },
 					["timeline"] = { ADDED_7_2_0 },
 					["requireSkill"] = BLACKSMITHING,
-					["g"] = {
+					["groups"] = {
 						i(142389),	-- Broken Darkspear (QI!)
 					},
 				}),
@@ -1493,9 +1493,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 38276 },	-- Tara (mobileNPC)
 						{ "i", 50742 },	-- Tara's Tar Scraper
 					},
-					["description"] = "If you have a Herbalism as a profession, you will have to use the 'Tar Scrapper' manually from the Objective Tracker or from your bag.",
 					["sourceQuest"] = 24693,	-- Mossy Pile
 					["coord"] = { 43.1, 41.1, UNGORO_CRATER },
+					["description"] = "If you have a Herbalism as a profession, you will have to use the 'Tar Scrapper' manually from the Objective Tracker or from your bag.",
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/8 Super Sticky Tar
@@ -1752,8 +1752,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24718, {	-- The Mighty U'cha
 					["qg"] = 38275,	-- Gremix <Treasure Hunter> (mobileNPC)
 					["sourceQuest"] = 24701,	-- Marshal's Refuse
-					["description"] = "This quest pops-up when you enter the Fungal Rock cave during the quest |cFFFFD700The Apes of Un'Goro|r.",
 					["coord"] = { 43.1, 41.1, UNGORO_CRATER },
+					["description"] = "This quest pops-up when you enter the Fungal Rock cave during the quest |cFFFFD700The Apes of Un'Goro|r.",
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 U'cha's Pelt
@@ -1863,8 +1863,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24705,	-- Town Dwellers Were Made to be Saved
 						24704,	-- The Evil Dragons of Un'Goro Crater
 					},
-					["timeline"] = { ADDED_4_0_3 },
 					["description"] = "Engage, but do not kill Steaming Fury until Maximillian finished his prayer.",
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/2 Prayers
 							["provider"] = { "n", 38254 },	-- Steaming Fury
@@ -1924,13 +1924,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 13887,	-- Venomhide Eggs
 					["coord"] = { 71.4, 73.8, UNGORO_CRATER },
 					["timeline"] = { ADDED_3_2_0 },
-					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 47196, 20 },	-- Venomhide Baby Tooth
 						{ "i", 14047, 20 },	-- Runecloth
 						{ "i", 8170, 20 },	-- Rugged Leather
 						{ "g", 800000 },	-- 80g
 					},
+					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(48, 48, 15),
 					["groups"] = {
 						ach(3357, {	-- Venomhide Ravasaur
@@ -2007,9 +2007,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24911, {	-- Tropical Paradise Beckons
-					["providers"] = {
-						{ "n", 38578 },	-- Flinn
-						{ "n", 44374 },	-- Sherm
+					["qgs"] = {
+						38578,	-- Flinn
+						44374,	-- Sherm
 					},
 					["coords"] = {
 						{ 33.2, 76.8, TANARIS },

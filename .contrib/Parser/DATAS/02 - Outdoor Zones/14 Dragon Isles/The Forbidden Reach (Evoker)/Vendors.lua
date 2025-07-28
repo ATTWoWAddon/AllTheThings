@@ -6,7 +6,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 		n(VENDORS, {
 			n(192785, {	-- Fusethrian <Rations & Hydration>
 				["coord"] = { 43.6, 60.8, THE_FORBIDDEN_REACH_DRACTHYR },
-				["g"] = {
+				["groups"] = {
 					i(200305),	-- Dracthyr Water Rations
 					i(200304),	-- Stored Dracthyr Rations
 				},
@@ -14,7 +14,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 			n(198429, {	-- Treysh
 				["sourceQuests"] = { 72263 },	-- Cavalry Has Its Place
 				["coord"] = { 45.3, 61.3, THE_FORBIDDEN_REACH_DRACTHYR },
-				["g"] = {
+				["groups"] = {
 					i(198809),	-- Armored Vorquin Leystrider (MOUINT!)
 					i(201720),	-- Bronze Vorquin (MOUINT!)
 					i(201702),	-- Crimson Vorquin (MOUINT!)

@@ -159,13 +159,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 			}),
 			q(14172, {	-- The Grateful Dead — Terokkar Forest, Aldor, all
 				["qg"] = 35260,	-- Cheerful Aldor Spirit
-				["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 				["coord"] = { 40.1, 22.2, TEROKKAR_FOREST },
+				["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 			}),
 			q(14173, {	-- The Grateful Dead — Terokkar Forest, Scryer, all
 				["qg"] = 35261,	-- Cheerful Aldor Spirit
-				["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 				["coord"] = { 40.1, 22.2, TEROKKAR_FOREST },
+				["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 			}),
 			q(14174, {	-- The Grateful Dead — Tirisfal Glades, Undead
 				["qg"] = 34476,	-- Cheerful Undead Spirit

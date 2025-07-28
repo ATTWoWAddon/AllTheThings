@@ -378,8 +378,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(3501, {	-- Everything Counts In Large Amounts
 					["qg"] = 7363,	-- Kum'isha the Collector
 					["coord"] = { 51.8, 35.6, BLASTED_LANDS },
-					["cost"] = { { "i", 10593, 1 } },	-- Imperfect Draenethyst Fragment
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 10593, 1 } },	-- Imperfect Draenethyst Fragment
 					["lvl"] = 45,
 					["groups"] = {
 						i(12122),	-- Kum'isha's Junk
@@ -475,11 +475,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7506,	-- Bloodmage Lynnore
 					["coord"] = { 50.6, 14.3, BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 8394, 10 },	-- Basilisk Brain
 						{ "i", 8396, 2 },	-- Vulture Gizzard
 					},
+					["repeatable"] = true,
 					["lvl"] = 45,
 					["groups"] = {
 						i(8423, {	-- Cerebral Cortex Compound
@@ -715,8 +715,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7363,	-- Kum'isha the Collector
 					["sourceQuest"] = 3501,	-- Everything Counts In Large Amounts
 					["coord"] = { 51.8, 35.6, BLASTED_LANDS },
-					["cost"] = { { "i", 10593, 1 } },	-- Imperfect Draenethyst Fragment
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 10593, 1 } },	-- Imperfect Draenethyst Fragment
 					["repeatable"] = true,
 					["lvl"] = 45,
 					["groups"] = {
@@ -826,12 +826,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 2581,	-- Snickerfang Jowls
 					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 8391, 3 },	-- Snickerfang Jowl
 						{ "i", 8392, 2 },	-- Blasted Boar Lung
 						{ "i", 8393, 1 },	-- Scorpok Pincer
 					},
+					["repeatable"] = true,
 					["lvl"] = 45,
 					["groups"] = {
 						i(8410, {	-- R.O.I.D.S.
@@ -869,12 +869,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 2585,	-- The Decisive Striker
 					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 8393, 3 },	-- Scorpok Pincer
 						{ "i", 8396, 2 },	-- Vulture Gizzard
 						{ "i", 8392, 1 },	-- Blasted Boar Lung
 					},
+					["repeatable"] = true,
 					["lvl"] = 45,
 					["groups"] = {
 						i(8412, {	-- Ground Scorpok Assay
@@ -901,8 +901,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(25681, {	-- Some People Just Need Killing
 					["qg"] = 41134,	-- Tak'arili
 					["sourceQuest"] = 25680,	-- That's Not Us
-					["description"] = "|cffFF0000DO NOT GET IN THE BOX.|r\nThe box will change which phase your character is in, and waste a lot of time.",
 					["coord"] = { 62.2, 1.4, BLASTED_LANDS },
+					["description"] = "|cffFF0000DO NOT GET IN THE BOX.|r\nThe box will change which phase your character is in, and waste a lot of time.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -917,12 +917,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 2583,	-- A Boar's Vitality
 					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 8392, 3 },	-- Blasted Boar Lung
 						{ "i", 8393, 2 },	-- Scorpok Pincer
 						{ "i", 8394, 1 },	-- Basilisk Brain
 					},
+					["repeatable"] = true,
 					["lvl"] = 45,
 					["groups"] = {
 						i(8411, {	-- Lung Juice Cocktail
@@ -1477,9 +1477,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				})),
 				q(25714, {	-- Watcher Mahar Ba
-					["providers"] = {
-						{ "n", 5393 },	-- Quartermaster Lungertz
-						{ "n", 9540 },	-- Enohar Thunderbrew
+					["qgs"] = {
+						5393,	-- Quartermaster Lungertz
+						9540,	-- Enohar Thunderbrew
 					},
 					["sourceQuests"] = {
 						25709,	-- Curtail the Darktail
@@ -1803,7 +1803,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				o(421154, {	-- Carved Eye
 					["coord"] = { 55.7, 53.6, BLASTED_LANDS },
 					["timeline"] = { ADDED_10_2_5 },
-					["g"] = {
+					["groups"] = {
 						i(212983),	-- Grimoire of the Blasted Observer (CI!)
 					},
 				}),

@@ -13,13 +13,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			["description"] = "The Revival Catalyst is a system that allows you convert Primalist Items from the Forbidden Reach Zone or a Normal Mode Non-set items from the Vault of the Incarnates Raid into your class' Normal Transmog Set.\n\nIf you upgrade your Primal Storm Item to 3/3 Upgrades, you will instead unlock your classes' Heroic Vault of the Incarnes Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
 			["coord"] = { 60.6, 53.8, THALDRASZUS },
 			["modelScale"] = 4,
-			["g"] = bubbleDown({ ["modID"] = 4 }, {
+			["groups"] = bubbleDown({ ["modID"] = 4 }, {
 				d(DIFFICULTY.RAID.NORMAL, {
 					["description"] = "",
-					["g"] = bubbleDown({ ["modID"] = 3 }, {
+					["groups"] = bubbleDown({ ["modID"] = 3 }, {
 						cl(DEATHKNIGHT, {
 							["sym"] = SymRaidVault(DEATHKNIGHT, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(200413),	-- Drape of the Haunted Frostbrood
 								i(200411),	-- Girdle of the Haunted Frostbrood
 								i(200406),	-- Sabatons of the Haunted Frostbrood
@@ -28,7 +28,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						}),
 						cl(DEMONHUNTER, {
 							["sym"] = SymRaidVault(DEMONHUNTER, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(200343),	-- Skybound Avenger's Boots
 								i(200350),	-- Skybound Avenger's Cape
 								i(200348),	-- Skybound Avenger's Waistwrap
@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						}),
 						cl(DRUID, {
 							["sym"] = SymRaidVault(DRUID, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(200358),	-- Lost Landcaller's Bindings
 								i(200359),	-- Lost Landcaller's Laena
 								i(200352),	-- Lost Landcaller's Moccasins
@@ -46,7 +46,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						}),
 						cl(EVOKER, {
 							["sym"] = SymRaidVault(EVOKER, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(200385),	-- Bracers of the Awakened
 								i(200384),	-- Chain of the Awakened
 								i(200386),	-- Shroud of the Awakened
@@ -55,7 +55,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						}),
 						cl(HUNTER, {
 							["sym"] = SymRaidVault(HUNTER, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(200393),	-- Stormwing Harrier's Belt
 								i(200395),	-- Stormwing Harrier's Plumage
 								i(200388),	-- Stormwing Harrier's Sabatons
@@ -64,7 +64,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						}),
 						cl(MAGE, {
 							["sym"] = SymRaidVault(MAGE, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(200323),	-- Crystal Scholar's Cape
 								i(200321),	-- Crystal Scholar's Cinch
 								i(200322),	-- Crystal Scholar's Cuffs
@@ -73,7 +73,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						}),
 						cl(MONK, {
 							["sym"] = SymRaidVault(MONK, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(200367),	-- Cuffs of the Waking Fist
 								i(200368),	-- Drape of the Waking Fist
 								i(200361),	-- Gaiters of the Waking Fist
@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						}),
 						cl(PALADIN, {
 							["sym"] = SymRaidVault(PALADIN, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(200421),	-- Virtuous Silver Bracers
 								i(200422),	-- Virtuous Silver Cloak
 								i(200420),	-- Virtuous Silver Faulds
@@ -91,7 +91,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						}),
 						cl(PRIEST, {
 							["sym"] = SymRaidVault(PRIEST, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(200332),	-- Draconic Hierophant's Drape
 								i(200330),	-- Draconic Hierophant's Sash
 								i(200325),	-- Draconic Hierophant's Slippers
@@ -100,7 +100,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						}),
 						cl(ROGUE, {
 							["sym"] = SymRaidVault(ROGUE, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(200377),	-- Vault Delver's Camouflage
 								i(200370),	-- Vault Delver's Shinguards
 								i(200376),	-- Vault Delver's Sweatbands
@@ -109,7 +109,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						}),
 						cl(SHAMAN, {
 							["sym"] = SymRaidVault(SHAMAN, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(200403),	-- Cuffs of Infused Earth
 								i(200402),	-- Faulds of Infused Earth
 								i(200404),	-- Greatcloak of Infused Earth
@@ -118,7 +118,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						}),
 						cl(WARLOCK, {
 							["sym"] = SymRaidVault(WARLOCK, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(200339),	-- Scalesworn Cultist's Girdle
 								i(200341),	-- Scalesworn Cultist's Runedrape
 								i(200334),	-- Scalesworn Cultist's Sandals
@@ -127,7 +127,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						}),
 						cl(WARRIOR, {
 							["sym"] = SymRaidVault(WARRIOR, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(200424),	-- Boots of the Walking Mountain
 								i(200430),	-- Bracers of the Walking Mountain
 								i(200429),	-- Core of the Walking Mountain
@@ -138,10 +138,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				d(DIFFICULTY.RAID.HEROIC, {
 					["description"] = "",
-					["g"] = bubbleDown({ ["bonusID"] = 1 }, {
+					["groups"] = bubbleDown({ ["bonusID"] = 1 }, {
 						cl(DEATHKNIGHT, {
 							["sym"] = SymRaidVault(DEATHKNIGHT, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(200413),	-- Drape of the Haunted Frostbrood
 								i(200411),	-- Girdle of the Haunted Frostbrood
 								i(200406),	-- Sabatons of the Haunted Frostbrood
@@ -150,7 +150,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						}),
 						cl(DEMONHUNTER, {
 							["sym"] = SymRaidVault(DEMONHUNTER, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(200343),	-- Skybound Avenger's Boots
 								i(200350),	-- Skybound Avenger's Cape
 								i(200348),	-- Skybound Avenger's Waistwrap
@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						}),
 						cl(DRUID, {
 							["sym"] = SymRaidVault(DRUID, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(200358),	-- Lost Landcaller's Bindings
 								i(200359),	-- Lost Landcaller's Laena
 								i(200352),	-- Lost Landcaller's Moccasins
@@ -168,7 +168,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						}),
 						cl(EVOKER, {
 							["sym"] = SymRaidVault(EVOKER, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(200385),	-- Bracers of the Awakened
 								i(200384),	-- Chain of the Awakened
 								i(200386),	-- Shroud of the Awakened
@@ -177,7 +177,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						}),
 						cl(HUNTER, {
 							["sym"] = SymRaidVault(HUNTER, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(200393),	-- Stormwing Harrier's Belt
 								i(200395),	-- Stormwing Harrier's Plumage
 								i(200388),	-- Stormwing Harrier's Sabatons
@@ -186,7 +186,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						}),
 						cl(MAGE, {
 							["sym"] = SymRaidVault(MAGE, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(200323),	-- Crystal Scholar's Cape
 								i(200321),	-- Crystal Scholar's Cinch
 								i(200322),	-- Crystal Scholar's Cuffs
@@ -195,7 +195,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						}),
 						cl(MONK, {
 							["sym"] = SymRaidVault(MONK, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(200367),	-- Cuffs of the Waking Fist
 								i(200368),	-- Drape of the Waking Fist
 								i(200361),	-- Gaiters of the Waking Fist
@@ -204,7 +204,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						}),
 						cl(PALADIN, {
 							["sym"] = SymRaidVault(PALADIN, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(200421),	-- Virtuous Silver Bracers
 								i(200422),	-- Virtuous Silver Cloak
 								i(200420),	-- Virtuous Silver Faulds
@@ -213,7 +213,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						}),
 						cl(PRIEST, {
 							["sym"] = SymRaidVault(PRIEST, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(200332),	-- Draconic Hierophant's Drape
 								i(200330),	-- Draconic Hierophant's Sash
 								i(200325),	-- Draconic Hierophant's Slippers
@@ -222,7 +222,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						}),
 						cl(ROGUE, {
 							["sym"] = SymRaidVault(ROGUE, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(200377),	-- Vault Delver's Camouflage
 								i(200370),	-- Vault Delver's Shinguards
 								i(200376),	-- Vault Delver's Sweatbands
@@ -231,7 +231,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						}),
 						cl(SHAMAN, {
 							["sym"] = SymRaidVault(SHAMAN, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(200403),	-- Cuffs of Infused Earth
 								i(200402),	-- Faulds of Infused Earth
 								i(200404),	-- Greatcloak of Infused Earth
@@ -240,7 +240,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						}),
 						cl(WARLOCK, {
 							["sym"] = SymRaidVault(WARLOCK, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(200339),	-- Scalesworn Cultist's Girdle
 								i(200341),	-- Scalesworn Cultist's Runedrape
 								i(200334),	-- Scalesworn Cultist's Sandals
@@ -249,7 +249,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						}),
 						cl(WARRIOR, {
 							["sym"] = SymRaidVault(WARRIOR, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(200424),	-- Boots of the Walking Mountain
 								i(200430),	-- Bracers of the Walking Mountain
 								i(200429),	-- Core of the Walking Mountain

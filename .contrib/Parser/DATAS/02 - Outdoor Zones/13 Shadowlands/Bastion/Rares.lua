@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["crs"] = { 161441 },	-- Orator Kloe
 				["coord"] = { 55.3, 80.3, BASTION },
 				["questID"] = 58526,
-				["g"] = {
+				["groups"] = {
 					i(179487),	-- Aethon's Horn
 				},
 			}),
@@ -30,12 +30,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 32.1, 17.8, BASTION },	-- Vesper of Loyalty
 				},
 				["questID"] = 60933,
-				["g"] = {
+				["groups"] = {
 					o(354175, {	-- Cache of the Ascended
 						["coord"] = { 53.5, 88.7, BASTION },
 						["questID"] = 60977,
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(183741),	-- Ascended Skymane (MOUNT!)
 						},
 					}),
@@ -49,7 +49,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				-- #endif
 				["coord"] = { 32.6, 23.4, BASTION },
 				["questID"] = 61083,
-				["g"] = {
+				["groups"] = {
 					i(183607),	-- Uncertain Aspirant's Spear
 					i(180613),	-- Fragile Humility Scroll (not dropped by the boss, but putting here so that the source text associates it w/ the rare)
 				},
@@ -63,14 +63,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(170659, {	-- Basilofos, King of the Hill
 				["coord"] = { 48.4, 50.4, BASTION },
 				["questID"] = 60897,	-- TODO: 62158 triggered as well
-				["g"] = {
+				["groups"] = {
 					i(180704),	-- Infused Pet Biscuit (consumable, maybe ignore)
 				},
 			}),
 			n(171189, {	-- Bookkeeper Mnemis
 				["coord"] = { 57.2, 62.4, BASTION },
 				["questID"] = 59022,
-				["g"] = {
+				["groups"] = {
 					i(182682),	-- Book-Borrower Identification
 				},
 			}),
@@ -78,7 +78,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "If the rare is not attackable, you can kill Anima-Starved Cloudfeathers in the area to provoke it.",
 				["coord"] = { 50.6, 59.6, BASTION },
 				["questID"] = 60978,
-				["g"] = {
+				["groups"] = {
 					i(180812),	-- Golden Teroclaw (PET!)
 				},
 			}),
@@ -86,7 +86,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["crs"] = { 161441 },	-- Orator Kloe
 				["coord"] = { 55.3, 80.3, BASTION },
 				["questID"] = 60571,
-				["g"] = {
+				["groups"] = {
 					i(179488),	-- Cloudtail's Paw
 				},
 			}),
@@ -104,7 +104,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ "o", 354288 },	-- Mercia's Legacy: Chapter Six
 					{ "i", 180569 },	-- Mercia's Legacy: Chapter Seven
 				},
-				["g"] = {
+				["groups"] = {
 					i(183606),	-- Bulwark of Echoing Courage
 					i(184295),	-- Eternal Daybreak Necklace
 					i(183608),	-- Evernote Vesper
@@ -120,7 +120,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							{ 67.3, 43.6, BASTION },
 							{ 67.4, 42.8, BASTION },
 						},
-						["g"] = { i(180569), },	-- Mercia's Legacy: Chapter Seven (so the item is associated with the rare)
+						["groups"] = { i(180569), },	-- Mercia's Legacy: Chapter Seven (so the item is associated with the rare)
 					}),
 					i(183613),	-- Glinting Daybreak Dagger
 					i(183612),	-- Loyal Champion's Hammer
@@ -135,7 +135,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["crs"] = { 171300 },	-- Malfunctioning Clawguard
 				["coord"] = { 56.4, 46.1, BASTION },
 				["questID"] = 60999,
-				["g"] = {
+				["groups"] = {
 					i(182759),	-- Functioning Anima Core
 					i(180651),	-- Discarded Phalynx Core (so the item is associated with the rare)
 				},
@@ -144,7 +144,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "If the rare is up, you will get a debuff called Ominous Gaze when you are close to it.  To start the encounter, you need to die and speak to the NPC.",
 				["coord"] = { 27.8, 30.0, BASTION },
 				["questID"] = 60883,
-				["g"] = {
+				["groups"] = {
 					i(184297),	-- Death Warden's Greatblade
 				},
 			}),
@@ -152,7 +152,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "As soon as Demi is pulled, she will start running east.  She will pull additional Forsworn mobs for you to contend with, and she has 100 stacks of a buff that causes her to take reduced damage.  The stacks drop each time she is attacked, so she will take progressively more damage.  Upon defeat, she drops the treasure she is holding.\n\nThis rare is soloable, but having decent gear and at least one more person may be helpful — if Demi makes it to safety, she will despawn.",
 				["coord"] = { 37.0, 41.8, BASTION },
 				["questID"] = 61000,
-				["g"] = {
+				["groups"] = {
 					o(354649, {	-- Relic Hoard
 						i(183606),	-- Bulwark of Echoing Courage
 						i(183608),	-- Evernote Vesper
@@ -172,7 +172,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Stewart offers you his Stewpendous Stew in thanks after you save him from Dionae.",
 				["coord"] = { 40.9, 47.4, BASTION },
 				["questID"] = 62650,
-				["g"] = {
+				["groups"] = {
 					o(344588, {	-- Stewart's Stewpendous Stew
 						i(180856),	-- Silvershell Snapper (PET!)
 					}),
@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(171255, {	-- Echo of Aella <Hand of Courage>
 				["coord"] = { 46.8, 64.0, BASTION },
 				["questID"] = 61091,	-- looting (seems more important to track than killing)
-				["g"] = {
+				["groups"] = {
 					i(180062),	-- Heavenly Drum
 				},
 			}),
@@ -189,7 +189,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Force the rare to spawn by killing mobs around the Eternal Forge.  Forge-Keeper Mnemis will periodically announce the threat level, and Aegeon will be dispatched when the threat level reaches Major.",
 				["coord"] = { 50.8, 19.6, BASTION },
 				["questID"] = 60998,
-				["g"] = {
+				["groups"] = {
 					i(184404),	-- Ever-Abundant Hearth (TOY!)
 				},
 			}),
@@ -198,7 +198,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			--	cutscene phased the area during 57717, 'step back from that ledge, my friend' and the end of that storyline is 57447, 'purity's prerogative'
 				["coord"] = { 60.5, 73.4, BASTION },
 				["questID"] = 58222,
-				["g"] = {
+				["groups"] = {
 					i(180444),	-- Harmonia's Chosen Belt
 				},
 			}),
@@ -206,7 +206,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Pick up anima from the Depleted Anima Canisters around the chamber and the area outside.  Feed them to Herculon to activate him.\n\nLoot will be in the Aspirant's Cache behind him after he is defeated.",
 				["coord"] = { 43.0, 82.6, BASTION },
 				["questID"] = 57708,
-				["g"] = {
+				["groups"] = {
 					i(182759),	-- Functioning Anima Core
 				},
 			}),
@@ -214,7 +214,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["crs"] = { 161441 },	-- Orator Kloe
 				["coord"] = { 55.3, 80.3, BASTION },
 				["questID"] = 60569,
-				["g"] = {
+				["groups"] = {
 					i(179485),	-- Fang of Nemaeus
 				},
 			}),
@@ -222,12 +222,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Requires 3 people to summon.  After all 3 have channeled the incense, the vesper will ring and Sophia will appear.  Protect her by defeating 2 waves of Forsworn attackers, and then the rare will spawn.\n\nAfter Nikara is defeated, Sophia will leave behind a chest called Sophia's Gift.",
 				["coord"] = { 51.8, 68.6, BASTION },
 				["questID"] = 63411,
-				["g"] = {
+				["groups"] = {
 					o(339625, {	-- Sophia's Gift
 						["coord"] = { 51.7, 68.8, BASTION },
 						["questID"] = 58319,
 						["isDaily"] = true,
-						["g"] = { i(183608) },	-- Evernote Vesper
+						["groups"] = { i(183608) },	-- Evernote Vesper
 					}),
 				},
 			}),
@@ -235,7 +235,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Killing the creatures in 'The Necrotic Wake' area will have a chance to make the dragon come down from the sky and become attackable.",
 				["coord"] = { 30.3, 55.2, BASTION },
 				["questID"] = 61108,
-				["g"] = {
+				["groups"] = {
 					i(182749),	-- Regurgitated Kyrian Wings
 				},
 			}),
@@ -244,20 +244,20 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["crs"] = { 160875 },	-- Sophia
 				["coord"] = { 61.2, 51.0, BASTION },
 				["questID"] = 58320,
-				["g"] = {
+				["groups"] = {
 					o(339625, {	-- Sophia's Radiance
 						["coord"] = { 61.3, 50.4, BASTION },
 						--["questID"] = ,
 						--["isDaily"] = true,
-						["g"] = { i(183608) },	-- Evernote Vesper
+						["groups"] = { i(183608) },	-- Evernote Vesper
 					}),
-				}
+				},
 			}),
 			n(161527, {	-- Sigilback
 				["crs"] = { 161441 },	-- Orator Kloe
 				["coord"] = { 55.3, 80.3, BASTION },
 				["questID"] = 60570,
-				["g"] = {
+				["groups"] = {
 					i(179486),	-- Sigilback's Smashshell
 				},
 			}),
@@ -266,7 +266,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 60.6, 93.2, BASTION },
 				["questID"] = 60862,
 				["cost"] = {{ "i", 180445, 1 }},	-- 1xSkystrider Glider
-				["g"] = {
+				["groups"] = {
 					ach(14733, {	-- In the Hot Seat
 						["description"] = "Requires using the Skystrider Glider to bring Sundancer down. Being present for a kill will not grant credit.",
 					}),
@@ -284,7 +284,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 59.8, 51.8, BASTION },
 					{ 63.4, 36.0, BASTION },
 				},
-				["g"] = {
+				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						i(180869, {	-- Devoured Wader (PET!)
 							["crs"] = {
@@ -320,7 +320,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["crs"] = { 171018 },	-- Unstable Memory Fragment
 				["coord"] = { 43.4, 25.2, BASTION },
 				["questID"] = 60997,
-				["g"] = {
+				["groups"] = {
 					i(184413),	-- Mnemonic Attunement Pane (TOY!)
 				},
 			}),

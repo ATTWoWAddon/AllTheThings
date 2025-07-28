@@ -198,8 +198,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(56903, {	-- Crown of Courage
 			["qg"] = 155759,	-- Myrael Lunarbloom
 			["sourceQuest"] = 56842,	-- Lunar Preservation
-			["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Courage|r transmog.",
 			["coord"] = { 53.1, 36.0, MOONGLADE },
+			["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Courage|r transmog.",
 			["timeline"] = { ADDED_8_3_0 },
 			["groups"] = {
 				i(170278),	-- Flower of Fortitude (QI!)
@@ -213,8 +213,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(56905, {	-- Crown of Dark Blossoms
 			["qg"] = 155759,	-- Myrael Lunarbloom
 			["sourceQuest"] = 56842,	-- Lunar Preservation
-			["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Dark Blossoms|r transmog.",
 			["coord"] = { 53.1, 36.0, MOONGLADE },
+			["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Dark Blossoms|r transmog.",
 			["timeline"] = { ADDED_8_3_0 },
 			["groups"] = {
 				i(170296),	-- Flower of Compassion (QI!)
@@ -228,8 +228,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(56906, {	-- Crown of Good Fortune
 			["qg"] = 155759,	-- Myrael Lunarbloom
 			["sourceQuest"] = 56842,	-- Lunar Preservation
-			["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Good Fortune|r transmog.",
 			["coord"] = { 53.1, 36.0, MOONGLADE },
+			["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Good Fortune|r transmog.",
 			["timeline"] = { ADDED_8_3_0 },
 			["groups"] = {
 				objective(1, {	-- 0/3 Flower of Thoughtfulness
@@ -261,8 +261,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(56904, {	-- Crown of Prosperity
 			["qg"] = 155759,	-- Myrael Lunarbloom
 			["sourceQuest"] = 56842,	-- Lunar Preservation
-			["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Prosperity|r transmog.",
 			["coord"] = { 53.1, 36.0, MOONGLADE },
+			["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Prosperity|r transmog.",
 			["timeline"] = { ADDED_8_3_0 },
 			["groups"] = {
 				i(170283),	-- Flower of Felicity (QI!)
@@ -277,6 +277,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 15864,	-- Valadar Starsong <Coin of Ancestry Collector>
 			["sourceQuest"] = 8883,	-- Valadar Starsong
 			["coord"] = { 53.6, 35.3, MOONGLADE },
+			["description"] = "In order to summon Omen you need to fire 30 cluster rockets from the launcer at 63.73, 62.41. Any will do. The spawns Minion of Omen can be ignored.\n\nElune's Blessing is obtained from a ring of light appearing on Omen's corpse. The light does not disappear when the corpse despawns, so you might not need to fight Omen at all.",
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(40, 40, 1),
 			["_drop"] = { "g" },
@@ -287,13 +288,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				i(21540),	-- Elune's Lantern (TOY!)
 				i(21640),	-- Lunar Festival Fireworks Pack
 			},
-			["description"] = "In order to summon Omen you need to fire 30 cluster rockets from the launcer at 63.73, 62.41. Any will do. The spawns Minion of Omen can be ignored.\n\nElune's Blessing is obtained from a ring of light appearing on Omen's corpse. The light does not disappear when the corpse despawns, so you might not need to fight Omen at all.",
 		}),
 		q(8862, {	-- Elune's Candle
 			["qg"] = 15864,	-- Valadar Starsong
 			["coord"] = { 53.6, 35.3, MOONGLADE },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["timeline"] = { REMOVED_3_0_8 },
+			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["isYearly"] = true,
 			["lvl"] = 10,
 			-- #if BEFORE 3.0.8.9464
@@ -306,8 +306,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(8863, {	-- Festival Dumplings
 			["qg"] = 15864,	-- Valadar Starsong
 			["coord"] = { 53.6, 35.3, MOONGLADE },
-			["cost"] = { { "i", 21100, 1 } },	-- Coin of Ancestry
 			["timeline"] = { REMOVED_3_0_8 },
+			["cost"] = { { "i", 21100, 1 } },	-- Coin of Ancestry
 			["repeatable"] = true,
 			-- #if BEFORE 3.0.8.9464
 			["groups"] = {
@@ -318,8 +318,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(8864, {	-- Festive Lunar Dresses
 			["qg"] = 15864,	-- Valadar Starsong
 			["coord"] = { 53.6, 35.3, MOONGLADE },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["timeline"] = { REMOVED_3_0_8 },
+			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["repeatable"] = true,
 			-- #if BEFORE 3.0.8.9464
 			["groups"] = {
@@ -333,8 +333,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(8865, {	-- Festive Lunar Pant Suits
 			["qg"] = 15864,	-- Valadar Starsong
 			["coord"] = { 53.6, 35.3, MOONGLADE },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["timeline"] = { REMOVED_3_0_8 },
+			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["isYearly"] = true,
 			-- #if BEFORE 3.0.8.9464
 			["groups"] = {
@@ -348,8 +348,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(8878, {	-- Festive Recipes
 			["qg"] = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.8, 35.3, MOONGLADE },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["timeline"] = { REMOVED_3_0_8 },
+			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["repeatable"] = true,
 			["lvl"] = 50,
 			["groups"] = {
@@ -367,8 +367,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(8877, {	-- Firework Launcher
 			["qg"] = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.8, 35.3, MOONGLADE },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["timeline"] = { REMOVED_3_0_8 },
+			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["repeatable"] = true,
 			["lvl"] = 45,
 			["groups"] = {
@@ -383,8 +383,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(8881, {	-- Large Cluster Rockets
 			["qg"] = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.8, 35.3, MOONGLADE },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["timeline"] = { REMOVED_3_0_8 },
+			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["repeatable"] = true,
 			["lvl"] = 55,
 			-- #if BEFORE 3.0.8.9464
@@ -401,8 +401,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(8879, {	-- Large Rockets
 			["qg"] = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.8, 35.3, MOONGLADE },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["timeline"] = { REMOVED_3_0_8 },
+			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["repeatable"] = true,
 			["lvl"] = 35,
 			-- #if BEFORE 3.0.8.9464
@@ -459,18 +459,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(56842, {	-- Lunar Preservation
 			["qg"] = 155759,	-- Myrael Lunarbloom
 			["coord"] = { 53.1, 36.0, MOONGLADE },
+			["description"] = "Only a very few moonwells in faction-neutral locations counts for this quest. If you happen to lose the 'Blessing of the Moon'-buff due to death, you can continue as you still have the buff and turn in the quest without having to revisit moonwells.",
 			["timeline"] = { ADDED_8_3_0 },
-			["g"] = {
+			["groups"] = {
 				i(170084),	-- Blessed Staff of Moonflowers (QI!)
 				i(170083),	-- Staff of Moonflowers (QI!)
 			},
-			["description"] = "Only a very few moonwells in faction-neutral locations counts for this quest. If you happen to lose the 'Blessing of the Moon'-buff due to death, you can continue as you still have the buff and turn in the quest without having to revisit moonwells.",
 		}),
 		q(8876, {	-- Small Rockets
 			["qg"] = 15909,	-- Fariel Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.8, 35.3, MOONGLADE },
-			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["timeline"] = { REMOVED_3_0_8 },
+			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["repeatable"] = true,
 			["lvl"] = 25,
 			-- #if BEFORE 3.0.8.9464
@@ -533,6 +533,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				220307,	-- Holiday Enthusiast
 				-- #endif
 			},
+			["timeline"] = { ADDED_10_0_5 },
 			["maps"] = {
 				VALDRAKKEN,
 				-- #if AFTER TWW
@@ -542,7 +543,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
 			["isYearly"] = true,
-			["timeline"] = { ADDED_10_0_5 },
 		}),
 		q(73170, {	-- The Lunar Festival (H)
 			["qgs"] = {
@@ -551,6 +551,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				220307,	-- Holiday Enthusiast
 				-- #endif
 			},
+			["timeline"] = { ADDED_10_0_5 },
 			["maps"] = {
 				VALDRAKKEN,
 				-- #if AFTER TWW
@@ -560,11 +561,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
 			["isYearly"] = true,
-			["timeline"] = { ADDED_10_0_5 },
 		}),
 		q(8883, {	-- Valadar Starsong
 			["qg"] = 15895,	-- Lunar Festival Harbinger
-			["description"] = "Picking up this Quest from a Quest Giver makes it unavailable at another one.\nIt does not matter which one.\nThere is no need (or point) to visit all of them. You need only one.",
 			["sourceQuest"] = 8867,	-- Lunar Fireworks
 			["coords"] = {
 				{ 32.5, 53.0, ELWYNN_FOREST },
@@ -587,57 +586,58 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				{ 62.9, 19.3, VALE_OF_ETERNAL_BLOSSOMS },
 				-- #endif
 			},
+			["description"] = "Picking up this Quest from a Quest Giver makes it unavailable at another one.\nIt does not matter which one.\nThere is no need (or point) to visit all of them. You need only one.",
 			["isBreadcrumb"] = true,
 			["isYearly"] = true,
 		}),
 
 		-- Elders of Khaz Algar
 		q(85929, {	-- Archivist Rubbleglint on The Isle of Dorn
-			["timeline"] = { ADDED_11_0_7 },
 			["qg"] = 233971,	-- Archivist Rubbleglint
 			["coord"] = { 40.91, 87.35, ISLE_OF_DORN },
+			["timeline"] = { ADDED_11_0_7 },
 			["isYearly"] = true,
 		}),
 		q(85930, {	-- Archivist Coppermoss on The Isle of Dorn
-			["timeline"] = { ADDED_11_0_7 },
 			["qg"] = 233972,	-- Archivist Coppermoss
 			["coord"] = { 48.62, 13.95, ISLE_OF_DORN },
+			["timeline"] = { ADDED_11_0_7 },
 			["isYearly"] = true,
 		}),
 		q(85931, {	-- Archivist Farolt in The Ringing Deeps
-			["timeline"] = { ADDED_11_0_7 },
 			["qg"] = 233973,	-- Archivist Farolt
 			["coord"] = { 48.9, 67.3, THE_RINGING_DEEPS },
+			["timeline"] = { ADDED_11_0_7 },
 			["isYearly"] = true,
 		}),
 		q(85932, {	-- Archivist Silsigra in The Ringing Deeps
-			["timeline"] = { ADDED_11_0_7 },
 			["qg"] = 233974,	-- Archivist Silsigra
 			["coord"] = { 67.29, 52.98, THE_RINGING_DEEPS },
+			["timeline"] = { ADDED_11_0_7 },
 			["isYearly"] = true,
 		}),
 		q(85933, {	-- Elder Knythall in Hallowfall
-			["timeline"] = { ADDED_11_0_7 },
 			["qg"] = 233975,	-- Elder Knythall
 			["coord"] = { 25.88, 51.93, HALLOWFALL },
+			["timeline"] = { ADDED_11_0_7 },
 			["isYearly"] = true,
 		}),
 		q(85934, {	-- Elder Swornvow in Hallowfall
-			["timeline"] = { ADDED_11_0_7 },
 			["qg"] = 233976,	-- Elder Swornvow
 			["coord"] = { 66.27, 46.28, HALLOWFALL },
+			["timeline"] = { ADDED_11_0_7 },
 			["isYearly"] = true,
 		}),
 		q(85935, {	-- Elder Ikk'zivan in Azj-Kahet
-			["timeline"] = { ADDED_11_0_7 },
 			["qg"] = 233977,	-- Elder Ikk'zivan
 			["coord"] = { 66.91, 85.53, AZJ_KAHET },
+			["timeline"] = { ADDED_11_0_7 },
 			["isYearly"] = true,
 		}),
 		q(85936, {	-- Elder Ikk'xataz in Azj-Kahet
-			["timeline"] = { ADDED_11_0_7 },
 			["qg"] = 233978,	-- Elder Ikk'xataz
 			["coord"] = { 46.82, 57.21, AZJ_KAHET },
+			["timeline"] = { ADDED_11_0_7 },
 			["isYearly"] = true,
 		}),
 
@@ -749,9 +749,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		-- Elders of Eastern Kingdoms
 		q(8647, {	-- Bellowrage the Elder
 			["qg"] = 15563,	-- Elder Bellowrage
-			-- #if AFTER WOD
-			["description"] = "In order to view this Elder, visit Zidormi at 48.1, 7.3 to see Blasted Lands before the invasion.",
-			-- #endif
 			["coords"] = {
 				-- #if AFTER CATA
 				{ 54.2, 49.4, BLASTED_LANDS },
@@ -759,6 +756,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				{ 57.9, 54.9, BLASTED_LANDS },
 				-- #endif
 			},
+			-- #if AFTER WOD
+			["description"] = "In order to view this Elder, visit Zidormi at 48.1, 7.3 to see Blasted Lands before the invasion.",
+			-- #endif
 			["isYearly"] = true,
 		}),
 		q(8683, {	-- Dawnstrider the Elder
@@ -1161,9 +1161,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["isYearly"] = true,
 		}),
 		q(13026, {	-- Bluewolf the Elder
-			["description"] = "Inside the Wintergrasp Antechamber, inaccessible unless your faction controls the area.",
 			["qg"] = 30368,	-- Elder Bluewolf
 			["coord"] = { 49.0, 14.0, WINTERGRASP },
+			["description"] = "Inside the Wintergrasp Antechamber, inaccessible unless your faction controls the area.",
 			["timeline"] = { ADDED_3_0_8 },
 			["isYearly"] = true,
 		}),
@@ -1409,13 +1409,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8866, {	-- Bronzebeard the Elder
 			["qg"] = 15871,	-- Elder Bronzebeard
-			["isYearly"] = true,
 			-- #if BEFORE CATA
 			["coord"] = { 29.1, 17.0, IRONFORGE },	-- The Mystic Ward
 			-- #else
 			["coord"] = { 29.4, 17.1, IRONFORGE },	-- The Mystic Ward
 			["description"] = "Can be challenging for Horde players. Fly in and fly high without hesitation. Watch out for guard movements in The Mystic Ward.",
 			-- #endif
+			["isYearly"] = true,
 		}),
 		q(8646, {	-- Hammershout the Elder
 			["qg"] = 15562,	-- Elder Hammershout
@@ -1459,13 +1459,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8678, {	-- Wheathoof the Elder [Wrath+] / Proudhorn the Elder [Classic]
 			["qg"] = 15580,	-- Elder Ezra Wheathoof [Wrath+] / Elder Proudhorn [Classic]
-			["isYearly"] = true,
 			-- #if BEFORE CATA
 			["coord"] = { 73.0, 23.4, THUNDER_BLUFF },	-- The Elder Rise
 			-- #else
 			["coord"] = { 72.8, 22.8, THUNDER_BLUFF },	-- The Elder Rise
 			["description"] = "Found on the northern side of The Elder Rise, easily accessible for flying players.",
 			-- #endif
+			["isYearly"] = true,
 		}),
 	}),
 	n(REWARDS, {

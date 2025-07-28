@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(182105, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {	-- Mysterious Trashpile
 				["description"] = "Use /bow on the Mysterious Trashpile. (Cave Entrance is 44.59, 65.48).",
 				["coord"] = { 44.84, 67.89, MALDRAXXUS },
-				["g"] = {
+				["groups"] = {
 					i(187878),	-- Saurid Soul (SS!)
 				},
 			})),

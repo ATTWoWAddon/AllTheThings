@@ -1,14 +1,14 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	-- TODO: lots of these are lacking lots of information! (crs/coords/etc.)
 	n(ACHIEVEMENTS, {
 		ach(6541),	-- Loremaster of Pandaria (automated)
 		ach(6974),	-- Pandaria Explorer [7.0.3] / Explore Pandaria (automated)
 		ach(6828, {	-- Pandaren Ambassador (Alliance) (automated)
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(89785, {	-- Pandaren Kite (A) (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({
 		}),
 		ach(6827, {	-- Pandaren Ambassador (Horde) (automated)
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(81559, {	-- Pandaren Kite (H) (MOUNT!)
 					["races"] = HORDE_ONLY,
 				}),

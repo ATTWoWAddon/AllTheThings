@@ -1187,8 +1187,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 78284,	-- Grizzby HQT
 					["coord"] = { 61.8, 39.4, THE_BARRENS },
 					["timeline"] = { REMOVED_2_0_1 },
-					["cost"] = { { "i", 17058, 24 } },	-- Fish Oil
 					["maps"] = { ARATHI_HIGHLANDS, BLACKFATHOM_DEEPS, DESOLACE, DUSTWALLOW_MARSH, FERALAS, HILLSBRAD_FOOTHILLS, STRANGLETHORN_VALE, SWAMP_OF_SORROWS, WETLANDS },
+					["cost"] = { { "i", 17058, 24 } },	-- Fish Oil
 					["lvl"] = 20,
 				})),
 				-- #endif
@@ -1220,7 +1220,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(7329, {	-- Thun'grim's Sword
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
-					}
+					},
 				}),
 				q(1799, {	-- Fragments of the Orb of Orahil
 					["qg"] = 6266,	-- Menara Voidrender
@@ -1645,8 +1645,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "i", 5099 },	-- Hoof of Lakota'mani
 					["coord"] = { 47.6, 51.6, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cr"] = 3474,	-- Lakota'mani
 					["races"] = HORDE_ONLY,
+					["cr"] = 3474,	-- Lakota'mani
 					["lvl"] = 10,
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -1808,7 +1808,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
 							["timeline"] = { ADDED_1_3_0, REMOVED_4_0_3 },
 						}),
-					}
+					},
 				}),
 				q(3301, {	-- Mura Runetotem
 					["qg"] = 3448,	-- Tonga Runetotem
@@ -1889,8 +1889,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "i", 5102 },	-- Owatanka's Tailspike
 					["coord"] = { 49.6, 59.6, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cr"] = 3473,	-- Owatanka
 					["races"] = HORDE_ONLY,
+					["cr"] = 3473,	-- Owatanka
 					["lvl"] = 10,
 				}),
 				q(1040, {	-- Passage to Booty Bay
@@ -2176,8 +2176,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 6365,	-- Meats to Orgrimmar
 					["coord"] = { 51.50, 30.34, THE_BARRENS },
-					["lvl"] = lvlsquish(10, 10, 5),
 					["races"] = { ORC, TROLL },
+					["lvl"] = lvlsquish(10, 10, 5),
 				}),
 				-- #endif
 				q(3923, {	-- Rilli Greasygob
@@ -2477,7 +2477,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 78908,	--  Speak to N'ora
 					["coord"] = { 62.0, 39.4, THE_BARRENS },
 					["timeline"] = { REMOVED_2_0_1 },
-					["OnUpdate"] = [[_.OnUpdateDB.FOR_CRAFTER]],
 					["cost"] = {
 						{ "i", 10940, 40 },	-- Strange Dust
 						{ "i", 10939, 5 },	-- Greater Magic Essence
@@ -2485,6 +2484,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 211419, 1 },	-- Handful of Shifting Scales
 						{ "g", 50000 },		-- 5g
 					},
+					["OnUpdate"] = [[_.OnUpdateDB.FOR_CRAFTER]],
 					["groups"] = {
 						i(211420, {	-- Shifting Scale Talisman
 							["timeline"] = { REMOVED_2_0_1 },
@@ -2635,8 +2635,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 46.4, 73.8, THE_BARRENS },
 						{ 37.5, 50.8, WESTFALL },
 					},
-					["maps"] = { STONETALON_MOUNTAINS },
 					["timeline"] = { ADDED_1_15_1 },
+					["maps"] = { STONETALON_MOUNTAINS },
 					["lvl"] = 14,
 					["groups"] = {
 						i(3334),	-- Farmer's Shovel
@@ -2861,13 +2861,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 10,
 				}),
 				q(1795, {	-- The Binding (Felhunter)
-					["qg"] = 6251,	-- Strahad Farsan
 					["allianceQuestData"] = {
 						["sourceQuest"] = 1804,	-- Tome of the Cabal (3/3) (A)
 					},
 					["hordeQuestData"] = {
 						["sourceQuest"] = 1805,	-- Tome of the Cabal (3/3) (H)
 					},
+					["qg"] = 6251,	-- Strahad Farsan
 					["coord"] = { 62.6, 35.4, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
@@ -2892,9 +2892,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						4962,	-- Shard of a Felhound
 					},
 					["coord"] = { 62.4, 35.4, THE_BARRENS },
-					["lockCriteria"] = { 1, "questID", 4975 },	-- The Completed Orb of Noh'Orahil (mutually exclusive)
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
+					["lockCriteria"] = { 1, "questID", 4975 },	-- The Completed Orb of Noh'Orahil (mutually exclusive)
 					["lvl"] = 35,
 					["groups"] = {
 						i(15108, {	-- Orb of Dar'Orahil
@@ -2912,9 +2912,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						4963,	-- Shard of an Infernal
 					},
 					["coord"] = { 62.4, 35.4, THE_BARRENS },
-					["lockCriteria"] = { 1, "questID", 4964 },	-- The Completed Orb of Dar'Orahil (mutually exclusive)
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
+					["lockCriteria"] = { 1, "questID", 4964 },	-- The Completed Orb of Dar'Orahil (mutually exclusive)
 					["lvl"] = 35,
 					["groups"] = {
 						i(15107, {	-- Orb of Noh'Orahil
@@ -2945,11 +2945,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "o", 412224 },	-- Dark Ritual Stone
 					},
 					["sourceQuest"] = 78680,	-- Rumors Abound
-					["description"] = "After obtaining the blood, interact with the altar near the obelisk dedicated to Grommash Hellscream to begin a ritual, summoning a few waves of demons that must be defeated using Drain Soul while standing inside the purple rune on the ground. Defeat the final Searing Infernal this way to cause the Mysterious Traveler to appear.",
 					["coords"] = {
 						{ 49.2, 57.2, THE_BARRENS },
 						{ 79.0, 80.3, ASHENVALE },
 					},
+					["description"] = "After obtaining the blood, interact with the altar near the obelisk dedicated to Grommash Hellscream to begin a ritual, summoning a few waves of demons that must be defeated using Drain Soul while standing inside the purple rune on the ground. Defeat the final Searing Infernal this way to cause the Mysterious Traveler to appear.",
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["lvl"] = 20,
@@ -3510,8 +3510,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(885, {	-- Washte Pawne
 					["provider"] = { "i", 5103 },	-- Washte Pawne's Feather
 					["timeline"] = { REMOVED_4_0_3 },
-					["cr"] = 3472,	-- Washte Pawne
 					["races"] = HORDE_ONLY,
+					["cr"] = 3472,	-- Washte Pawne
 					["lvl"] = 10,
 				}),
 				q(972, {	-- Water Sapta [The Barrens]

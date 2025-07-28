@@ -166,7 +166,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 37.6, 65.4, AZSHARA },
 						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { REMOVED_4_0_3 },
-						["g"] = CLASSIC_TBC_DRAGONSCALE,
+						["groups"] = CLASSIC_TBC_DRAGONSCALE,
 					}),
 				}),
 			}),
@@ -823,8 +823,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = { i(49685) },	-- Flag of Territorial Claim (QI!)
 				}),
 				q(14471, {	-- First Degree Mortar
-					["sourceQuest"] = 14468,	-- Another Warm Body
 					["qg"] = 36746,	-- Xiz "The Eye" Salvoblast
+					["sourceQuest"] = 14468,	-- Another Warm Body
 					["coord"] = { 29.1, 57.9, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1039,7 +1039,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 117252,	-- Archmage Xylem
 					["coord"] = { 25.2, 38.0, AZSHARA },
 					["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
-					["g"] = {
+					["groups"] = {
 						i(143779),	-- The Focusing Iris (QI!)
 					},
 				}),
@@ -1415,10 +1415,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(44920, {	-- Order of Incantations
 					["qg"] = 115791,	-- Joanna
 					["sourceQuest"] = 44915,	-- Professionally Good looking
-					["description"] = "Puzzle order is Arcane, Frost, Fire, Shadow.",
 					["coord"] = { 25.0, 38.6, AZSHARA },
+					["description"] = "Puzzle order is Arcane, Frost, Fire, Shadow.",
 					["timeline"] = { ADDED_7_2_0 },
-					["_drop"] = { "c", "classes" },	-- bad API data
 					["classes"] = {
 						DEATHKNIGHT,	-- Frost
 						DEMONHUNTER,	-- Havoc
@@ -1426,6 +1425,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						ROGUE,			-- Subtlety
 						WARRIOR,		-- Arms
 					},
+					["_drop"] = { "c", "classes" },	-- bad API data
 				}),
 				q(26372, {	-- Pre-Flight Checklist
 					["qg"] = 42643,	-- Fleep
@@ -1474,7 +1474,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						ROGUE,			-- Subtlety
 						WARRIOR,		-- Arms
 					},
-					["g"] = {
+					["groups"] = {
 						i(142374),	-- Fanciful Hat (QI!)
 						i(142365),	-- Magnificent Mantle (QI!)
 						i(142372),	-- Well-Tailored Robes (QI!)
@@ -1620,9 +1620,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(14127, {	-- Return of the Highborne?
 					["provider"] = { "i", 47039 },	-- Scout's Orders
-					["crs"] = { 35095 },	-- Talrendis Scout
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["crs"] = { 35095 },	-- Talrendis Scout
 				}),
 				q(14128, {	-- Return of the Highborne?
 					["qg"] = 8576,	-- Ag'tor Bloodfist

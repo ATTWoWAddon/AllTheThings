@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			header(HEADERS.Achievement, 19026, {	-- Defenders of the Dream
 				------ Chapter 1 ------
 				q(76317, {	-- Call of the Dream
-					["g"] = {
+					["groups"] = {
 						i(208181),	-- Shandris's Scouting Report (QI!)
 					},
 				}),
@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 76317 },	-- Call of the Dream
 					["provider"] = { "n", 187590 },	-- Merithra
 					["coord"] = { 18.7, 51.8, OHNAHRAN_PLAINS },
-					["g"] = {
+					["groups"] = {
 						i(210412),	-- Flourishing Whimsydrake (MOUNT!)
 					},
 				}),
@@ -56,7 +56,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 76323 },	-- Amirdrassil
 					["provider"] = { "n", 206809 },	-- Merithra
 					["coord"] = { 53.8, 63.9, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						i(209923),	-- Chartreuse Champion's Blade
 						i(209919),	-- Chartreuse Champion's Bulwark
 						i(209937),	-- Chartreuse Champion's Gavel
@@ -109,7 +109,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 77436 },	-- The Burning Barrow
 					["provider"] = { "n", 206247 },	-- Tyrande Whisperwind
 					["coord"] = { 51.3, 42.9, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						i(210236),	-- Chartreuse Champion's Cloak
 						i(209917),	-- Fearless Faerie's Shroud
 						i(210235),	-- Spirited Stag's Cape
@@ -128,7 +128,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 76435 },	-- The Smoldering Copse
 					["provider"] = { "n", 207160 },	-- Tyrande Whisperwind
 					["coord"] = { 40.7, 47.5, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						i(209908),	-- Chartreuse Champion's Bracers
 						i(209903),	-- Chartreuse Champion's Girdle
 						i(209906),	-- Fearless Faerie's Belt
@@ -151,7 +151,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 					["provider"] = { "n", 207160 },	-- Tyrande Whisperwind
 					["coord"] = { 536, 50.9, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						i(209900),	-- Chartreuse Champion's Shoulderplates
 						i(209899),	-- Fearless Faerie's Shoulderpads
 						i(209902),	-- Spirited Stag's Epaulets
@@ -162,7 +162,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 76442 },	-- Forlorn Hop
 					["provider"] = { "n", 211193 },	-- Tyrande Whisperwind
 					["coord"] = { 36.1, 50.8, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						i(210730),	-- Mark of the Dream Wardens
 					},
 				}),
@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 76403 },	-- Mayhem Incarnate
 					["provider"] = { "n", 206619 },	-- Buri <Claw of Vyranoth>
 					["coord"] = { 36.8, 26.0, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						i(209889),	-- Chartreuse Champion's Gauntlets
 						i(209883),	-- Chartreuse Champion's Sabatons
 						i(209929),	-- Fearless Faerie's Boots
@@ -204,7 +204,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 76344 },	-- Primalist Directive
 					["provider"] = { "n", 206612 },	-- Vyranoth
 					["coord"] = { 36.8, 25.8, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						i(209915),	-- Perennial Pompon Pendant
 						i(209916),	-- Sunrise Circlet
 					},
@@ -221,7 +221,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 76532 },	-- Assault on the Wellspring
 					["provider"] = { "n", 208378 },	-- Suzska
 					["coord"] = { 27.6, 32.1, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						i(209895),	-- Chartreuse Champion's Legplates
 						i(209898),	-- Fearless Faerie's Trousers
 						i(209897),	-- Spirited Stag's Legguards
@@ -232,7 +232,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 76348 },	-- Big Bright Beautiful Barrier
 					["provider"] = { "n", 208378 },	-- Suzska
 					["coord"] = { 33.5, 30.3, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						i(209885),	-- Chartreuse Champion's Chestplate
 						i(209926),	-- Chartreuse Champion's Warhelm
 						i(209894),	-- Fearless Faerie's Guise
@@ -247,7 +247,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 76347 },	-- Power, Eruption, and Lies
 					["provider"] = { "n", 210733 },	-- Vyranoth
 					["coord"] = { 33.7, 25.2, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						i(210757),	-- Scales of Remorse
 					},
 				}),
@@ -261,7 +261,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 76327 },	-- Eye of Ysera
 					["provider"] = { "n", 206416 },	-- Merithra
 					["coord"] = { 52.1, 29.1, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						i(208124),	-- The Dreamer's Essence (QI!)
 						i(209914),	-- Bramble Bark Band
 						i(209912),	-- Luscious Leaf Loop
@@ -277,7 +277,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 78646 },	-- Fire Watch
 					["provider"] = { "n", 206406 },	-- Merithra
 					["coord"] = { 52.1, 24.2, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						i(208184),	-- Dreamy Dust (QI!)
 					},
 				}),
@@ -285,7 +285,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 78646 },	-- Fire Watch
 					["provider"] = { "n", 206406 },	-- Merithra
 					["coord"] = { 52.1, 24.2, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						i(210016),	-- Somnowl's Shroud (QI!)
 						-- modID 27 bonusID 9546
 						i(210236),	-- Chartreuse Champion's Cloak
@@ -306,7 +306,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 76334 },	-- Good Counsel
 					["provider"] = { "n", 206406 },	-- Merithra
 					["coord"] = { 53.0, 28.1, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						-- modID 27 bonusID 9546
 						i(209908),	-- Chartreuse Champion's Bracers
 						i(209910),	-- Fearless Faerie's Wristbands
@@ -328,7 +328,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 76331 },	-- Merithra's Gambit
 					["provider"] = { "n", 206406 },	-- Merithra
 					["coord"] = { 52.9, 28.0, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						-- modID 27 bonusID 9546
 						i(209926),	-- Chartreuse Champion's Warhelm
 						i(209894),	-- Fearless Faerie's Guise
@@ -343,7 +343,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 					["provider"] = { "n", 206416 },	-- Merithra
 					["coord"] = { 57.2, 26.1, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						-- modID 27 bonusID 9546
 						i(209889),	-- Chartreuse Champion's Gauntlets
 						i(209888),	-- Fearless Faerie's Gloves
@@ -355,7 +355,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 76336 },	-- Flight and Fight
 					["provider"] = { "n", 206406 },	-- Merithra
 					["coord"] = { 51.9, 29.4, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						i(210847),	-- Tears of the Eye
 					},
 				}),
@@ -374,7 +374,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 76416 },	-- Forward Unto Fire
 					["provider"] = { "n", 208553 },	-- Vyranoth
 					["coord"] = { 38.8, 39.1, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						i(208544),	-- Frozenheart's Wrath (QI!)
 						--modID 27 bonusID 9546
 						i(209903),	-- Chartreuse Champion's Girdle
@@ -399,7 +399,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 					["provider"] = { "n", 208550 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 38.7, 39.1, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						i(210023),	-- Scrap of Parchment (QI!)
 					},
 				}),
@@ -410,7 +410,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 					["provider"] = { "n", 208552 },	-- Tyrande Whisperwind
 					["coord"] = { 38.6, 39.1, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						--modID 27 bonusID 9546
 						i(209885),	-- Chartreuse Champion's Chestplate
 						i(209887),	-- Fearless Faerie's Vest
@@ -425,7 +425,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 					["provider"] = { "n", 208550 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 38.6, 39.0, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						--modID 27 bonusID 9546
 						i(209895),	-- Chartreuse Champion's Legplates
 						i(209898),	-- Fearless Faerie's Trousers
@@ -442,7 +442,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 76388 },	-- Fighting Fire With Fire
 					["provider"] = { "n", 208568 },	-- Tyrande Whisperwind
 					["coord"] = { 34.9, 35.3, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						i(208752),	-- Horn of Cenarius (QI!)
 						--modID 27 bonusID 9546
 						i(209900),	-- Chartreuse Champion's Shoulderplates
@@ -458,7 +458,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 					["provider"] = { "n", 208572 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 35.0, 33.5, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						--modID 27 bonusID 9546
 						i(209923),	-- Chartreuse Champion's Blade
 						i(209919),	-- Chartreuse Champion's Bulwark
@@ -487,7 +487,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 76401 },	-- Echo of the Firelands
 					["provider"] = { "n", 206921 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 34.9, 35.4, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						i(210916),	-- Ember of Fyrakk [2.5k Dream Warden rep]
 						i(206960),	-- Enchanted Wyrm's Dreaming Crest
 					},
@@ -502,7 +502,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 77780 },	-- A Blossom Witnessed
 					["provider"] = { "n", 206397 },	-- Merithra of the Dream
 					["coord"] = { 14.8, 55.8, OHNAHRAN_PLAINS },
-					["g"] = {
+					["groups"] = {
 						o(409338, {	-- Washed-Up Pack
 							["coord"] = { 21.7, 61.8, OHNAHRAN_PLAINS },
 							["groups"] = {
@@ -524,7 +524,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["provider"] = { "n", 208537 },	-- Tyrande Whisperwind
 					["races"] = { NIGHTELF },
 					["coord"] = { 50.8, 61.4, AMIRDRASSIL },
-					["g"] = {
+					["groups"] = {
 						iensemble(209604),	-- Ensemble: Raiment of Amirdrassi
 					},
 				}),
@@ -532,7 +532,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 77329 },	-- Auspicious Gathering
 					["provider"] = { "n", 208537 },	-- Tyrande Whisperwind
 					["coord"] = { 50.8, 61.4, AMIRDRASSIL },
-					["g"] = {
+					["groups"] = {
 						i(208230),	-- Anaya's Pendant (QI!)
 						i(208232),	-- Singed Darnassian Tabard (QI!)
 						i(208221),	-- Soil of the Dreamgrove (QI!)
@@ -553,7 +553,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 76280 },	-- New Moon (TODO: 76281 is required for phase?)
 					["provider"] = { "n", 209042 },	-- Kalecgos
 					["coord"] = { 54.2, 57.9, AMIRDRASSIL },
-					["g"] = {
+					["groups"] = {
 						i(209316),	-- Goat's Milk in a Skull Mug (QI!)
 						i(209318),	-- Dalaran Dazzler (QI!)
 						i(209317),	-- Karazhan Twist (QI!)
@@ -577,7 +577,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 76281 },	-- New Moon (TOD): 76282 & 77781 also required?)
 					["provider"] = { "n", 206849 },	-- Merithra of the Dream
 					["coord"] = { 54.2, 57.9, AMIRDRASSIL },
-					["g"] = {
+					["groups"] = {
 						i(210920),	-- Gift of Amirdrassil [2.5k Dream Warden rep]
 					},
 				}),
@@ -616,7 +616,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77197 },	-- An Eggcellent Idea
 				["provider"] = { "n", 185904 },	-- Mother Elion
 				["coord"] = { 61.5, 68.7, THE_WAKING_SHORES },
-				["g"] = {
+				["groups"] = {
 					i(208060),	-- Juicy Beetle Bits (QI!)
 				},
 			}),
@@ -624,7 +624,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 76463 },	-- Delectable Delicacies
 				["provider"] = { "n", 207352 },	-- Mordenaku
 				["coord"] = { 61.5, 68.7, THE_WAKING_SHORES },
-				["g"] = {
+				["groups"] = {
 					i(211353),	-- Roasted Ram Special
 				},
 			}),
@@ -638,7 +638,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "n", 207351 },	-- Vyranoth
 				["coord"] = { 51.1, 83.8, STORMHEIM },
 				["maps"] = { 2230, 2231 },	-- Halls Of Valor scenario maps
-				["g"] = {
+				["groups"] = {
 					i(206156),	-- Grotto Netherwing Drake (MOUNT!)
 					i(210959),	-- Pact of the Netherwing
 				},
@@ -652,7 +652,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuestNumRequired"] = 1,]]--
 				["provider"] = { "n", 210196 },	-- Solarys Thorngale
 				["coord"] = { 52.0, 63.6, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(210633),	-- Kal'andu (PET!)
 				},
 			}),
@@ -660,7 +660,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77948 },	-- Burning Out (if you complete Burning Out before you grab this quest, it becomes unobtainable as of 8.September.2023)
 				["provider"] = { "o", 409077 },	-- Singed Leaflet
 				["coord"] = { 38.0, 47.2, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(210921),	-- Bounty of the Fallen Defector
 					i(209048),	-- Singed Leaflet (QI!)
 				},
@@ -687,7 +687,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 78065 },	-- The Q'onzu Query
 				["provider"] = { "n", 210646 },	-- Follower of Q'onzu
 				["coord"] = { 34.7, 69.0, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(211373, {	-- Bag of Many Wonders
 						i(211372),	-- Q'onzu's Consolation Prize
 					}),
@@ -702,7 +702,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 78064 },	-- Q'onzu's Perception
 				["provider"] = { "n", 210524 },	-- Q'onzu
 				["coord"] = { 34.7, 69.3, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(210227),	-- Q'onzu's Faerie Feather (QI!)
 				},
 			}),
@@ -711,7 +711,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 78162 },	-- Q'onzu's Distraction
 				["provider"] = { "n", 210524 },	-- Q'onzu
 				["coord"] = { 34.7, 69.3, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(210645),	-- Feather of Friends (CI!)
 					i(211374, {	-- Tangled Yarn of Secrets
 						i(211377, {	-- Tangled Yarn of Secrets
@@ -742,7 +742,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "n", 211328 },	-- Vaskarn
 				["coord"] = { 49.8, 61.6, EMERALD_DREAM },
 				["timeline"] = { REMOVED_10_2_6_SEASON_FOUR },
-				["g"] = {
+				["groups"] = {
 					i(210180),	-- Emerald Flightstone
 					i(210917),	-- Pouch of Whelpling's Dreaming Crests
 				},
@@ -757,7 +757,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77662 },	-- A Call to Aid
 				["provider"] = { "n", 209083 },	-- Shandris Feathermoon
 				["coord"] = { 49.6, 46.2, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(209430),	-- Bear Spirit Stone (QI!)
 					i(208770),	-- Leaf Spirit Stone (QI!)
 					i(209429),	-- Moon Spirit Stone (QI!)
@@ -767,7 +767,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			q(77664, {	-- One Last Step
 				["sourceQuests"] = { 77739 },	-- Smother the Flames
 				["provider"] = { "n", 209677 },	-- Shandris Feathermoon (player instance NPC)
-				["g"] = {
+				["groups"] = {
 					i(210957),	-- Rune of the Fire Druids
 				},
 			}),
@@ -790,7 +790,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77674 },	-- Wounds of the Past
 				["provider"] = { "n", 209328 },	-- Lilian Voss
 				["coord"] = { 55.3, 42.3, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(208937),	-- A Muddy Journal
 					i(211366),	-- Drops of Moon Water
 					i(209054),	-- Ritual Remedy (QI!)
@@ -804,7 +804,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 78904 },	-- HQT - `Local Stories Quest Unlock`
 				["provider"] = { "n", 208669 },	-- Lady Moonberry
 				["coord"] = { 49.8, 62.5, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(208977),	-- Very Important Tree Supplies (QI!)
 				},
 			}),
@@ -812,7 +812,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77316 },	-- Trouble at the Tree
 				["provider"] = { "n", 208669 },	-- Lady Moonberry
 				["coord"] = { 49.8, 62.5, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(208985),	-- Silly Hat (QI!)
 				},
 			}),
@@ -820,7 +820,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77317 },	-- Hatted Hibernation
 				["provider"] = { "n", 208669 },	-- Lady Moonberry
 				["coord"] = { 49.8, 62.5, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					iensemble(210996),	-- Moonberry's Many Mischief Makers
 					i(210997),	-- Spare Party Hat
 				},
@@ -835,7 +835,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77896 },	-- A Sleepy Search
 				["provider"] = { "n", 210164 },	-- Thaalean
 				["coord"] = { 58.1, 77.3, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(208930),	-- Velvety Lasher Leaves (QI!)
 				},
 			}),
@@ -843,7 +843,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77896 },	-- A Sleepy Search
 				["provider"] = { "n", 210164 },	-- Thaalean
 				["coord"] = { 58.1, 77.3, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(208931),	-- Silky Sage (QI!)
 				},
 			}),
@@ -854,7 +854,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 				["provider"] = { "n", 210164 },	-- Thaalean
 				["coord"] = { 58.1, 77.3, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(208949),	-- Heated Hearthstone (QI!)
 				},
 			}),
@@ -862,7 +862,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77955 },	-- Heated Hearthstone Hustle
 				["provider"] = { "n", 210164 },	-- Thaalean
 				["coord"] = { 58.1, 77.3, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(210864),	-- Improvised Leafbed (TOY!)
 					i(210952),	-- Spare Heated Hearthstone
 				},
@@ -883,7 +883,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 76568 },	-- Pineshrew Panic
 				["provider"] = { "n", 207779 },	-- Ethidris Creekward
 				["coord"] = { 53.7, 74.6, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(211371),	-- Dryad-Keeper Credentials
 				}
 			}),
@@ -891,7 +891,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 76569 },	-- Druid-Guardian Conference
 				["provider"] = { "n", 207779 },	-- Ethidris Creekward
 				["coord"] = { 53.7, 74.6, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(208732),	-- Lasher Heart (QI!)
 				},
 			}),
@@ -911,7 +911,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 76572 },	-- A Poisonous Promotion
 				["provider"] = { "n", 209788 },	-- Dionaessa
 				["coord"] = { 53.8, 74.6, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(210958),	-- Crown of the Dryad Guardian
 				},
 			}),
@@ -925,7 +925,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77310 },	-- Memory of the Dreamer
 				["provider"] = { "n", 208713 },	-- Alexstrasza the Life-Binder
 				["coord"] = { 58.6, 23.9, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(208884),	-- Root Restoration Fruit (QI!)
 				},
 			}),
@@ -933,7 +933,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77311 },	-- Healing Helper
 				["provider"] = { "n", 208713 },	-- Alexstrasza the Life-Binder
 				["coord"] = { 58.6, 23.9, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(208676),	-- Sprouted Seedling (QI!)
 				},
 			}),
@@ -949,7 +949,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 				["provider"] = { "n", 208714 },	-- Ysera
 				["coord"] = { 58.6, 23.8, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(210954),	-- Sprout of Rebirth
 				},
 			}),
@@ -957,7 +957,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77314 },	-- Requiem in a Dream
 				["provider"] = { "n", 208714 },	-- Ysera
 				["coord"] = { 58.6, 23.8, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(211370),	-- Branch of Gracus
 				},
 			}),
@@ -970,7 +970,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 78041 },	-- Sky Mother's Ire
 				["provider"] = { "n", 210587 },	-- Aviana
 				["coord"] = { 65.8, 37.6, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(209875),	-- Gorestained Armor Scrap (QI!)
 					i(208775),	-- Ashphodel Research Notes (QI!)
 				},
@@ -984,7 +984,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 78041 },	-- Sky Mother's Ire / or Aviana's Assessment
 				["provider"] = { "i", 208775 },	-- Ashphodel Research Notes
 				--["coord"] = { 65.9, 37.8, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(211395),	-- Ashphodel Research Notes
 					i(210453),	-- Bundle of Flame Pollen (QI!)
 					i(210951),	-- Treacherous Research Notes
@@ -998,7 +998,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 				["provider"] = { "n", 210585 },	-- Q'onzu <Loa of Change>
 				["coord"] = { 65.9, 37.8, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(210176),	-- Q'onzu's Vision Charm (QI!)
 				},
 			}),
@@ -1010,7 +1010,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 				["provider"] = { "n", 210587 },	-- Aviana
 				["coord"] = { 65.8, 37.6, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(210136),	-- Uprooted Ashphodel (QI!)
 				},
 			}),
@@ -1021,7 +1021,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 				["provider"] = { "n", 210587 },	-- Aviana
 				["coord"] = { 65.8, 37.6, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(211369),	-- Charred Staff of the Overseer
 					--i(210663),	-- Circle of Nature's Youth (COSMETIC!)
 				},
@@ -1035,7 +1035,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 208669 },	-- Lady Moonberry
 				["coord"] = { 49.8, 62.5, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(208396),	-- Splintered Spark of Dreams
 				},
 			}),
@@ -1049,7 +1049,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				--["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 209292 },	-- Sprout
 				["coord"] = { 48.6, 67.8, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(208780),	-- Filled Bucket (QI!)
 					i(208779),	-- Unfilled Bucket (QI!)
 				},
@@ -1058,7 +1058,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77677 },	-- Some Water...
 				["provider"] = { "n", 209571 },	-- Professor Ash
 				["coord"] = { 48.7, 68.0, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(210457),	-- Fish Bones (QI!)
 				},
 			}),
@@ -1067,7 +1067,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "n", 209458 },	-- Dewy Sapling
 				["coord"] = { 48.6, 67.8, EMERALD_DREAM },
 				["cost"] = {{"i",208647,1}},	-- Primed Emerald Dream Fertilizer (QI!)
-				["g"] = {
+				["groups"] = {
 					i(208757),	-- Ash's Recipes to Delight and Nourish Your Plant Pals (QI!)
 					i(208644, {	-- Lasher Plant Matter (QI!)
 						["providers"] = {
@@ -1082,7 +1082,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 							{ 43.1, 79.6, EMERALD_DREAM },
 							{ 43.0, 77.2, EMERALD_DREAM },
 						},
-						["g"] = {
+						["groups"] = {
 							i(209416),	-- Turtle Eggshell Shards (QI!)
 						},
 					}),
@@ -1103,7 +1103,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77697 },	-- The Right Food...
 				["provider"] = { "n", 209571 },	-- Professor Ash
 				["coord"] = { 48.7, 68.0, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(208705),	-- Druidic Totem (QI!)
 				},
 			}),
@@ -1111,7 +1111,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 77711 },	-- And a Pinch of Magic
 				["provider"] = { "n", 209571 },	-- Professor Ash
 				["coord"] = { 48.7, 68.0, EMERALD_DREAM },
-				["g"] = {
+				["groups"] = {
 					i(211131),	-- Delicately Curated Blossoms [750 Dream Warden rep]
 					i(210774),	-- Ochre Dreamtalon (MOUNT!)
 				},

@@ -4,7 +4,7 @@
 
 root(ROOTS.PVP, pvp(n(PRESTIGE, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {
 	["description"] = "System that was used during Legion Expansion.",
-	["g"] = {
+	["groups"] = {
 		ach(10991, {	-- First Step into a Larger World [1]
 			i(139777, {	-- Strange Crate
 				i(139775),	-- Alliance Enthusiast (PET!)
@@ -13,7 +13,7 @@ root(ROOTS.PVP, pvp(n(PRESTIGE, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {
 		}),
 		ach(10743, {	-- The Prestige (A) [2]
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(138992, {	-- Grand Marshal's Medal of Valor
 					["timeline"] = { REMOVED_8_0_1 },
 					["races"] = ALLIANCE_ONLY,
@@ -53,7 +53,7 @@ root(ROOTS.PVP, pvp(n(PRESTIGE, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {
 		}),
 		ach(10745, {	-- The Prestige (H) [2]
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				i(138996, {	-- High Warlord's Medal of Valor
 					["timeline"] = { REMOVED_8_0_1 },
 					["races"] = HORDE_ONLY,

@@ -17,7 +17,7 @@ root(ROOTS.Zones, {
 				o(243798, {	-- A Steamy Jewelry Box
 					["questID"] = 39531,
 					["coord"] = { 63.5, 59.3, 750 },
-					["g"] = {
+					["groups"] = {
 						i(141322),	-- Shiny Silver Necklace
 					},
 				}),
@@ -123,7 +123,7 @@ root(ROOTS.Zones, {
 				o(243688, {	-- Treasure Chest
 					["questID"] = 39466,
 					["coord"] = { 49.6, 37.7, HIGHMOUNTAIN },
-					["g"] = {
+					["groups"] = {
 						i(131927),	-- Shimmering Roc Feather
 					},
 				}),
@@ -138,7 +138,7 @@ root(ROOTS.Zones, {
 				o(243773, {	-- Treasure Chest
 					["questID"] = 39503,
 					["coord"] = { 47.6, 44.0, HIGHMOUNTAIN },
-					["g"] = {
+					["groups"] = {
 						i(131926),	-- Delicate Roc Feather
 					},
 				}),
@@ -154,7 +154,7 @@ root(ROOTS.Zones, {
 				o(244519, {	-- Treasure Chest
 					["questID"] = 39824,
 					["coord"] = { 53.5, 51.0, HIGHMOUNTAIN },
-					["g"] = {
+					["groups"] = {
 						i(131810),	-- Derelict Skyhorn Kite
 					},
 				}),

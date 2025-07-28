@@ -15,10 +15,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			["description"] = "The Revival Catalyst is a system that lets you convert Emerald Dream's Zone Weekly Event Items (Superbloom, Dreamseeds, A Worthy Ally: Dream) & LFR Mode Non-set items from the Amirdrassil Raid into your class' LFR Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
 			["coord"] = { 60.6, 53.8, THALDRASZUS },
 			["modelScale"] = 4,
-			["g"] = bubbleDown({ ["modID"] = 4 }, {
+			["groups"] = bubbleDown({ ["modID"] = 4 }, {
 				cl(DEATHKNIGHT, {
 					["sym"] = SymRaidAdmirdrassil(DEATHKNIGHT, DIFFICULTY.RAID.LFR),
-					["g"] = {
+					["groups"] = {
 						i(207202),	-- Graveboots of the Risen Nightmare
 						i(207197),	-- Seal of the Risen Nightmare
 						i(207195),	-- Shroud of the Risen Nightmare
@@ -27,7 +27,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				cl(DEMONHUNTER, {
 					["sym"] = SymRaidAdmirdrassil(DEMONHUNTER, DIFFICULTY.RAID.LFR),
-					["g"] = {
+					["groups"] = {
 						i(207259),	-- Screaming Torchfiend's Armlets
 						i(207260),	-- Screaming Torchfiend's Clasp
 						i(207265),	-- Screaming Torchfiend's Clutches
@@ -36,7 +36,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				cl(DRUID, {
 					["sym"] = SymRaidAdmirdrassil(DRUID, DIFFICULTY.RAID.LFR),
-					["g"] = {
+					["groups"] = {
 						i(207249),	-- Benevolent Embersage's Featherdrape
 						i(207256),	-- Benevolent Embersage's Lined Boots
 						i(207251),	-- Benevolent Embersage's Sagacious Sash
@@ -45,7 +45,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				cl(EVOKER, {
 					["sym"] = SymRaidAdmirdrassil(EVOKER, DIFFICULTY.RAID.LFR),
-					["g"] = {
+					["groups"] = {
 						i(207224),	-- Weyrnkeeper's Timeless Adorned Sash
 						i(207222),	-- Weyrnkeeper's Timeless Ornamented Cloak
 						i(207229),	-- Weyrnkeeper's Timeless Treads
@@ -54,7 +54,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				cl(HUNTER, {
 					["sym"] = SymRaidAdmirdrassil(HUNTER, DIFFICULTY.RAID.LFR),
-					["g"] = {
+					["groups"] = {
 						i(207214),	-- Blazing Dreamstalker's Bracers
 						i(207215),	-- Blazing Dreamstalker's Spined Girdle
 						i(207213),	-- Blazing Dreamstalker's Staghide
@@ -63,7 +63,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				cl(MAGE, {
 					["sym"] = SymRaidAdmirdrassil(MAGE, DIFFICULTY.RAID.LFR),
-					["g"] = {
+					["groups"] = {
 						i(207286),	-- Wayward Chronomancer's Cuffs
 						i(207285),	-- Wayward Chronomancer's Stole
 						i(207292),	-- Wayward Chronomancer's Strapped Boots
@@ -72,7 +72,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				cl(MONK, {
 					["sym"] = SymRaidAdmirdrassil(MONK, DIFFICULTY.RAID.LFR),
-					["g"] = {
+					["groups"] = {
 						i(207242),	-- Mystic Heron's Belt
 						i(207240),	-- Mystic Heron's Feathered Mantle
 						i(207241),	-- Mystic Heron's Fisticuffs
@@ -81,7 +81,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				cl(PALADIN, {
 					["sym"] = SymRaidAdmirdrassil(PALADIN, DIFFICULTY.RAID.LFR),
-					["g"] = {
+					["groups"] = {
 						i(207186),	-- Zealous Pyreknight's Banner
 						i(207193),	-- Zealous Pyreknight's Dreamstompers
 						i(207188),	-- Zealous Pyreknight's Emblem
@@ -90,7 +90,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				cl(PRIEST, {
 					["sym"] = SymRaidAdmirdrassil(PRIEST, DIFFICULTY.RAID.LFR),
-					["g"] = {
+					["groups"] = {
 						i(207278),	-- Cincture of Lunar Communion
 						i(207276),	-- Cloak of Lunar Communion
 						i(207283),	-- Poulaines of Lunar Communion
@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				cl(ROGUE, {
 					["sym"] = SymRaidAdmirdrassil(ROGUE, DIFFICULTY.RAID.LFR),
-					["g"] = {
+					["groups"] = {
 						i(207233),	-- Lucid Shadewalker's Baldric
 						i(207232),	-- Lucid Shadewalker's Bracers
 						i(207231),	-- Lucid Shadewalker's Cape
@@ -108,7 +108,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				cl(SHAMAN, {
 					["sym"] = SymRaidAdmirdrassil(SHAMAN, DIFFICULTY.RAID.LFR),
-					["g"] = {
+					["groups"] = {
 						i(207204),	-- Greatwolf Outcast's Chainweave
 						i(207211),	-- Greatwolf Outcast's Footpads
 						i(207206),	-- Greatwolf Outcast's Sigil Belt
@@ -117,7 +117,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				cl(WARLOCK, {
 					["sym"] = SymRaidAdmirdrassil(WARLOCK, DIFFICULTY.RAID.LFR),
-					["g"] = {
+					["groups"] = {
 						i(207268),	-- Devout Ashdevil's Bracelets
 						i(207269),	-- Devout Ashdevil's Fanged Sash
 						i(207267),	-- Devout Ashdevil's Fiendcloak
@@ -126,7 +126,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				cl(WARRIOR, {
 					["sym"] = SymRaidAdmirdrassil(WARRIOR, DIFFICULTY.RAID.LFR),
-					["g"] = {
+					["groups"] = {
 						i(207179),	-- Molten Vanguard's Chains
 						i(207184),	-- Molten Vanguard's Greatboots
 						i(207177),	-- Molten Vanguard's Manacles

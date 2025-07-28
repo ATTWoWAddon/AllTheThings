@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 		n(VENDORS, {
 			n(178257, {	-- Archivist Roh-Suir
 				["coord"] = { 61.6, 21.7, KORTHIA },
-				["g"] = bubbleDownRep(FACTION_THE_ARCHIVISTS_CODEX, {
+				["groups"] = bubbleDownRep(FACTION_THE_ARCHIVISTS_CODEX, {
 					{		-- Tier 1
 						i(187508, {	-- Trained Gromit Carrier
 							["cost"] = { { "c", CATALOGED_RESEARCH, 35 } },
@@ -46,7 +46,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					}, {	-- Tier 4
 						i(186470, {	-- Recipe: Crafter's Mark of the Chained Isle (RECIPE!)
 							["cost"] = { { "c", CATALOGED_RESEARCH, 2500 } },
-							["g"] = {
+							["groups"] = {
 								r(343676, {	-- Crafter's Mark of the Chained Isle (RECIPE!)
 									["requireSkill"] = ALCHEMY,
 								}),
@@ -127,7 +127,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			n(179214, {	-- Bonesmith Heirmir
 				["coord"] = { 63.5, 25.3, KORTHIA },
 				["crs"] = { 180700 },	-- Vision of Bonesmith Heirmir
-				["g"] = {
+				["groups"] = {
 					i(187077, {	-- Packaged Soul Ash
 						["cost"] = { { "c", SOUL_ASH, 300 } },
 					}),
@@ -146,7 +146,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			}),
 			n(179321, {	-- Duchess Mynx <Death's Advance Quartermaster>
 				["coord"] = { 63.5, 23.3, KORTHIA },
-				["g"] = bubbleDownClassicRep(FACTION_DEATHS_ADVANCE, {
+				["groups"] = bubbleDownClassicRep(FACTION_DEATHS_ADVANCE, {
 					{		-- Neutral
 					}, {	-- Friendly
 						i(188156, {	-- Korthian Accessory
@@ -160,7 +160,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						i(187187, {	-- Korthian Armaments
 							["description"] = "These items can also drop from War Chests awarded by Covenant Assaults, the Death's Advance War Chest, and occasionally from Korthian dailies.\n\nKorthian Armaments also have a chance to drop from Korthia rares and treasures.",
 							["cost"] = { { "c", STYGIA, 1000 } },
-							["g"] = {
+							["groups"] = {
 								n(WEAPONS, {
 									i(185889),	-- Gromit Tendon Longbow
 									i(186762),	-- Korthian Anima Slicer
@@ -380,7 +380,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						}),
 						i(186598, {	-- Recipe: Crafter's Mark III (RECIPE!)
 							["cost"] = { { "c", STYGIA, 2000 } },
-							["g"] = {
+							["groups"] = {
 								r(343677, {	-- Crafter's Mark III (RECIPE!)
 									["requireSkill"] = ALCHEMY,
 								}),
@@ -403,7 +403,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						}),
 						i(187218, {	-- Tome of Origins (RECIPE!)
 							["cost"] = { { "c", STYGIA, 2000 } },
-							["g"] = {
+							["groups"] = {
 								r(352439, {	-- Vestige of Origins (RECIPE!)
 									["requireSkill"] = BLACKSMITHING,
 								}),

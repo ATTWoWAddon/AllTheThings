@@ -107,8 +107,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "i", 3668 },	-- Assassin's Contract
 					["coord"] = { 50.8, 58.8, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cr"] = 2434,	-- Shadowy Assassin
 					["races"] = ALLIANCE_ONLY,
+					["cr"] = 2434,	-- Shadowy Assassin
 					["lvl"] = 30,
 				}),
 				q(523, {	-- Baron's Demise
@@ -309,13 +309,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
-					["classes"] = { SHAMAN },
 					["cost"] = {
 						{ "i", 7067, 1 },	-- Elemental Earth
 						{ "i", 7068, 1 },	-- Elemental Fire
 						{ "i", 7069, 1 },	-- Elemental Air
 						{ "i", 7070, 1 },	-- Elemental Water
 					},
+					["classes"] = { SHAMAN },
 					["lvl"] = 50,
 				})),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8235, {	-- Encoded Fragments
@@ -581,8 +581,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 6681,	-- The Manor, Ravenholdt
 					["coord"] = { 85.2, 79.4, ALTERAC_MOUNTAINS },
 					["maxReputation"] = { FACTION_RAVENHOLDT, FRIENDLY },	-- Ravenholdt, Friendly.
-					["cost"] = { { "i", 17124, 1 } },	-- Syndicate Emblem
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 17124, 1 } },	-- Syndicate Emblem
 					["classes"] = { ROGUE },
 					["repeatable"] = true,
 					["lvl"] = 24,
@@ -749,8 +749,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2333,	-- Henchman Valik
 					["altQuests"] = { 533 },	-- Infiltration (Can only be completed while on this quest)
 					["coord"] = { 57.15, 69.50, ALTERAC_MOUNTAINS },
-					["cost"] = { { "i", 3703, 1 } },	-- Southshore Stout
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 3703, 1 } },	-- Southshore Stout
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 					["groups"] = {

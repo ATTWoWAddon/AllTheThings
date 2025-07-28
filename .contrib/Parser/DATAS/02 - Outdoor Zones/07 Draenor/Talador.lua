@@ -113,14 +113,14 @@ root(ROOTS.Zones, {
 					ach(9564, {	-- Securing Draenor (A)
 						["collectible"] = false,
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							crit(26258),	-- Assault on Shattrath Harbor
 						},
 					}),
 					ach(9562, {	-- Securing Draenor (Horde)
 						["collectible"] = false,
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							crit(26242),	-- Assault on Shattrath Harbor
 						},
 					}),
@@ -387,7 +387,7 @@ root(ROOTS.Zones, {
 							["coord"] = { 69.7, 20.8, TALADOR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 34711,	-- Due Cause to Celebrate
-							["g"] = {
+							["groups"] = {
 								follower(154),	-- Magister Serena
 							},
 						}),
@@ -396,7 +396,7 @@ root(ROOTS.Zones, {
 							["coord"] = { 71.2, 29.9, TALADOR },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 34712,	-- Due Cause to Celebrate
-							["g"] = {
+							["groups"] = {
 								follower(154),	-- Magister Krelas
 							},
 						}),
@@ -453,7 +453,7 @@ root(ROOTS.Zones, {
 								34910,	-- Vicious Viziers
 								34909,	-- While We're in the Neighborhood
 							},
-							["g"] = {
+							["groups"] = {
 								i(112521),	-- Auchenai Keeper Hood
 								i(112522),	-- Sha'tari Deadeye Helm
 								i(112520),	-- Sha'tari Keeper Helm
@@ -469,7 +469,7 @@ root(ROOTS.Zones, {
 								34888,	-- Vicious Viziers
 								34887,	-- While We're in the Neighborhood
 							},
-							["g"] = {
+							["groups"] = {
 								i(112521),	-- Auchenai Keeper Hood
 								i(112522),	-- Sha'tari Deadeye Helm
 								i(112520),	-- Sha'tari Keeper Helm
@@ -518,7 +518,7 @@ root(ROOTS.Zones, {
 								["sourceQuests"] = {
 									34558,	-- At Your Command (A)
 									34566,	-- At Your Command (H)
-								}
+								},
 							}),
 						}),
 					}),
@@ -528,7 +528,7 @@ root(ROOTS.Zones, {
 							["coord"] = { 69.8, 20.7, TALADOR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 34981,	-- The Only Way to Travel
-							["g"] = {
+							["groups"] = {
 								follower(155),	-- Miall
 							},
 						}),
@@ -537,7 +537,7 @@ root(ROOTS.Zones, {
 							["coord"] = { 71.2, 29.9, TALADOR },
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 34971,	-- The Only Way to Travel
-							["g"] = {
+							["groups"] = {
 								follower(155),	-- Morketh Bladehowl
 							},
 						}),
@@ -660,7 +660,7 @@ root(ROOTS.Zones, {
 								34979,	-- Punching Through
 								34977,	-- Supply Recovery
 							},
-							["g"] = {
+							["groups"] = {
 								i(112521),	-- Auchenai Keeper Hood
 								i(112522),	-- Sha'tari Deadeye Helm
 								i(112520),	-- Sha'tari Keeper Helm
@@ -675,7 +675,7 @@ root(ROOTS.Zones, {
 								34855,	-- Punching Through
 								34860,	-- Supply Recovery
 							},
-							["g"] = {
+							["groups"] = {
 								i(112521),	-- Auchenai Keeper Hood
 								i(112522),	-- Sha'tari Deadeye Helm
 								i(112520),	-- Sha'tari Keeper Helm
@@ -718,7 +718,7 @@ root(ROOTS.Zones, {
 								["sourceQuests"] = {
 									34558,	-- At Your Command (A)
 									34566,	-- At Your Command (H)
-								}
+								},
 							}),
 						}),
 					}),
@@ -805,7 +805,7 @@ root(ROOTS.Zones, {
 							33873,	-- Cure of Aruunem
 							33872,	-- Dust of the Dead
 						},
-						["g"] = {
+						["groups"] = {
 							i(113033),	-- Auchenai Keeper Handwraps
 							i(113032),	-- Sha'tari Deadeye Mitts
 							i(113034),	-- Sha'tari Keeper Gauntlets
@@ -964,7 +964,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.2, 73.6, TALADOR },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34157,	-- Into the Heart of Madness
-						["g"] = {
+						["groups"] = {
 							i(113015),	-- Auchenai Preserver's Loop
 							i(119069),	-- Auchenai Protector's Seal
 							i(119061),	-- Auchenai Soultender's Ring
@@ -977,7 +977,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.2, 73.6, TALADOR },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34157,	-- Into the Heart of Madness
-						["g"] = {
+						["groups"] = {
 							i(113015),	-- Auchenai Preserver's Loop
 							i(119069),	-- Auchenai Protector's Seal
 							i(119061),	-- Auchenai Soultender's Ring
@@ -1028,7 +1028,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 61.0, 38.4, TALADOR },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34097,	-- Born to Shred
-						["g"] = {
+						["groups"] = {
 							i(113054),	-- Broken Shredder Blade
 							i(113052),	-- Camshaft-Haft Greatcleaver
 							i(113051),	-- Iron Shredder Axle
@@ -1044,7 +1044,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 61.0, 38.4, TALADOR },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 33729,	-- Born to Shred
-						["g"] = {
+						["groups"] = {
 							i(113054),	-- Broken Shredder Blade
 							i(113052),	-- Camshaft-Haft Greatcleaver
 							i(113051),	-- Iron Shredder Axle
@@ -1094,7 +1094,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 75873 },	-- Gazlowe
 						["coord"] = { 62.0, 10.4, TALADOR },
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(113024),	-- "Reliable" Threat Assessor
 							i(113025),	-- External Combustion Engine
 							i(113023),	-- Foolproof Targeting Mechanism
@@ -1163,7 +1163,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 57.1, 76.9, TALADOR },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34452,	-- Light's Rest
-						["g"] = {
+						["groups"] = {
 							i(112528),	-- Auchenai Keeper Robe
 							i(112510),	-- Sha'tari Deadeye Vest
 							i(112509),	-- Sha'tari Keeper Chestplate
@@ -1175,7 +1175,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 60.9, 72.4, TALADOR },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34451,	-- Sunsworn Camp
-						["g"] = {
+						["groups"] = {
 							i(112528),	-- Auchenai Keeper Robe
 							i(112510),	-- Sha'tari Deadeye Vest
 							i(112509),	-- Sha'tari Keeper Chestplate
@@ -1216,7 +1216,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 51.6, 50.5, TALADOR },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34415,	-- An'dure The Giant
-						["g"] = {
+						["groups"] = {
 							i(113012),	-- Kaelynara's Drape
 							i(119055),	-- Kaelynara's Manaweave Cloak
 							i(119050),	-- Kaelynara's Rugged Cloak
@@ -1229,7 +1229,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 51.6, 50.5, TALADOR },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34414,	-- An'dure The Giant
-						["g"] = {
+						["groups"] = {
 							i(113012),	-- Kaelynara's Drape
 							i(119055),	-- Kaelynara's Manaweave Cloak
 							i(119050),	-- Kaelynara's Rugged Cloak
@@ -1292,7 +1292,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 64.2, 47.8, TALADOR },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34751,	-- Clear!
-						["g"] = {
+						["groups"] = {
 							follower(171),	-- Pleasure-Bot 8000
 						},
 					}),
@@ -1301,7 +1301,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 62.9, 50.5, TALADOR },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34761,	-- Clear!
-						["g"] = {
+						["groups"] = {
 							follower(171),	-- Pleasure-Bot 8000
 						},
 					}),
@@ -1324,7 +1324,7 @@ root(ROOTS.Zones, {
 							34458,	-- Powering the Defenses (Alliance)
 							35249,	-- Powering the Defenses (Horde)
 						},
-						["g"] = {
+						["groups"] = {
 							i(112513),	-- Auchenai Keeper Treads
 							i(112514),	-- Sha'tari Deadeye Sabatons
 							i(112512),	-- Sha'tari Keeper Warboots
@@ -1336,7 +1336,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 69.5, 21.5, TALADOR },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34773,	-- Why Is The Brew Gone?
-						["g"] = {
+						["groups"] = {
 							i(112525),	-- Auchenai Keeper Leggings
 							i(112526),	-- Sha'tari Deadeye Leggings
 							i(112524),	-- Sha'tari Keeper Legguards
@@ -1403,7 +1403,7 @@ root(ROOTS.Zones, {
 							34875,	-- Next Steps (alliance, arcane sanctum)
 							34571,	-- Out of Jovite (alliance, artillery tower)
 						},
-						["g"] = {
+						["groups"] = {
 							i(112531),	-- Auchenai Keeper Mantle
 							i(112532),	-- Sha'tari Deadeye Monnion
 							i(112530),	-- Sha'tari Keeper Shoulders
@@ -1468,7 +1468,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 69.5, 5.8, TALADOR },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 36341,	-- Primal Fury
-						["g"] = {
+						["groups"] = {
 							i(120313),	-- Sanketsu
 						},
 					}),
@@ -1477,7 +1477,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 69.5, 5.8, TALADOR },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 36342,	-- Primal Fury
-						["g"] = {
+						["groups"] = {
 							i(120313),	-- Sanketsu
 						},
 					}),
@@ -1526,7 +1526,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 71.1, 29.4, TALADOR },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34766,	-- Logistical Nightmare
-						["g"] = {
+						["groups"] = {
 							i(112525),	-- Auchenai Keeper Leggings
 							i(112526),	-- Sha'tari Deadeye Leggings
 							i(112524),	-- Sha'tari Keeper Legguards
@@ -1589,7 +1589,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 63.0, 26.1, TALADOR },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34087,	-- Through the Looking Glass
-						["g"] = {
+						["groups"] = {
 							i(113024),	-- "Reliable" Threat Assessor
 							i(113025),	-- External Combustion Engine
 							i(113023),	-- Foolproof Targeting Mechanism
@@ -1600,7 +1600,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 54.1, 36.4, TALADOR },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34963,	-- Khadgar's Plan
-						["g"] = {
+						["groups"] = {
 							i(112518),	-- Auchenai Keeper Gloves
 							i(112519),	-- Sha'tari Deadeye Gauntlets
 							i(112517),	-- Sha'tari Keeper Handguards
@@ -1612,7 +1612,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 54.1, 36.4, TALADOR },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34962,	-- Khadgar's Plan
-						["g"] = {
+						["groups"] = {
 							i(112518),	-- Auchenai Keeper Gloves
 							i(112519),	-- Sha'tari Deadeye Gauntlets
 							i(112517),	-- Sha'tari Keeper Handguards
@@ -1623,7 +1623,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 77082 },	-- Restalaan
 						["coord"] = { 44.8, 90.4, TALADOR },
 						["sourceQuest"] = 34508,	-- Restalaan, Captain of the Guard
-						["g"] = {
+						["groups"] = {
 							i(113045),	-- Restalaan's Greatsword
 							i(113047),	-- Restalaan's Longsword
 							i(113042),	-- Talador Sentinel Standard Issue
@@ -1644,7 +1644,7 @@ root(ROOTS.Zones, {
 							34981,	-- The Only Way to Travel (alliance, artillery tower)
 							34971,	-- The Only Way to Travel (horde, artillery tower)
 						},
-						["g"] = {
+						["groups"] = {
 							i(113031),	-- Eredar Soulchain
 							i(119087),	-- Legion Lord's Gorget
 							i(119078),	-- Soulcrystal Dust Pendant
@@ -1667,7 +1667,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 75288 },	-- Shadow-Sage Iskar
 						["coord"] = { 70.4, 56.8, TALADOR },
 						["sourceQuest"] = 33579,	-- What the Draenei Found
-						["g"] = {
+						["groups"] = {
 							i(113028),	-- Shadar Chain Pendant
 							i(119086),	-- Shadar Choker
 							i(113027),	-- Shadar Gorget
@@ -1686,7 +1686,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 77853 },	-- Image of Archmage Vargoth
 						["coord"] = { 84.6, 31.6, TALADOR },
 						["sourceQuest"] = 34472,	-- Temporal Juxtaposition
-						["g"] = {
+						["groups"] = {
 							follower(190),	-- Image of Archmage Vargoth
 						},
 					}),
@@ -1695,7 +1695,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 58.1, 53.1, TALADOR },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34776,	-- Gatekeepers of Auchindoun
-						["g"] = {
+						["groups"] = {
 							follower(207),	-- Aeda Brightdawn
 						},
 					}),
@@ -1704,7 +1704,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 57.4, 51.1, TALADOR },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34777,	-- Gatekeepers of Auchindoun
-						["g"] = {
+						["groups"] = {
 							follower(207),	-- Defender Illona
 						},
 					}),
@@ -1745,7 +1745,7 @@ root(ROOTS.Zones, {
 							34154,	-- Destination: Unknown (Alliance)
 							34564,	-- Destination: Unknown (Horde)
 						},
-						["g"] = {
+						["groups"] = {
 							follower(205),	-- Soulbinder Tuulani
 						},
 					}),
@@ -1807,7 +1807,7 @@ root(ROOTS.Zones, {
 							34875,	-- Next Steps (arcane sanctum)
 							34571,	-- Out of Jovite (artillery tower)
 						},
-						["g"] = {
+						["groups"] = {
 							i(112586),	-- Riverbeast Femur
 							i(112579),	-- Riverbeast Jawbone
 							i(112587),	-- Riverbeast Tusk Shank
@@ -1827,7 +1827,7 @@ root(ROOTS.Zones, {
 							34874,	-- Next Steps (arcane sanctum)
 							34577,	-- Out of Jovite (artillery tower)
 						},
-						["g"] = {
+						["groups"] = {
 							i(112586),	-- Riverbeast Femur
 							i(112579),	-- Riverbeast Jawbone
 							i(112587),	-- Riverbeast Tusk Shank
@@ -1847,7 +1847,7 @@ root(ROOTS.Zones, {
 							34875,	-- Next Steps (arcane sanctum)
 							34571,	-- Out of Jovite (artillery tower)
 						},
-						["g"] = {
+						["groups"] = {
 							i(112578),	-- Talador Hunting Rifle
 							i(112624),	-- Talador Spellbarrier
 							i(112577),	-- Teroclaw Talon
@@ -1865,7 +1865,7 @@ root(ROOTS.Zones, {
 							34576,	-- Iridium Recovery (artillery tower)
 							34577,	-- Out of Jovite (artillery tower)
 						},
-						["g"] = {
+						["groups"] = {
 							i(112578),	-- Talador Hunting Rifle
 							i(112624),	-- Talador Spellbarrier
 							i(112577),	-- Teroclaw Talon
@@ -1885,7 +1885,7 @@ root(ROOTS.Zones, {
 							34875,	-- Next Steps (arcane sanctum)
 							34571,	-- Out of Jovite (artillery tower)
 						},
-						["g"] = {
+						["groups"] = {
 							i(112581),	-- Ra'tok's Buckler
 							i(112580),	-- Ra'tok's Painhammer
 							i(112585),	-- Ra'tok's Throatguard
@@ -1902,7 +1902,7 @@ root(ROOTS.Zones, {
 							34576,	-- Iridium Recovery (artillery tower)
 							34577,	-- Out of Jovite (artillery tower)
 						},
-						["g"] = {
+						["groups"] = {
 							i(112581),	-- Ra'tok's Buckler
 							i(112580),	-- Ra'tok's Painhammer
 							i(112585),	-- Ra'tok's Throatguard
@@ -2001,7 +2001,7 @@ root(ROOTS.Zones, {
 							{ 48.00, 36.00, TALADOR },
 						},
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(119378),	-- Socrethar's Stone
 						},
 					}),
@@ -2013,21 +2013,21 @@ root(ROOTS.Zones, {
 							{ 44.6, 40.6, TALADOR },
 						},
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(119413),	-- Gu'gok's Rangefinder
 						},
 					}),
 					n(77620, {	-- Cro Fleshrender
 						["questID"] = 34165,
 						["coord"] = { 37.4, 70.6, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(116123),	-- Fleshrender's Painbringer
 						},
 					}),
 					n(77561, {	-- Dr. Gloom
 						["questID"] = 34142,
 						["coord"] = { 68.4, 15.7, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(112499),	-- Stinky Gloom Bombs
 							currency(824),	-- Garrison Resources
 						},
@@ -2035,7 +2035,7 @@ root(ROOTS.Zones, {
 					n(77828, {	-- Echo of Murmur
 						["questID"] = 34221,
 						["coord"] = { 34.0, 57.2, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(113670),	-- Mournful Moan of Murmur (TOY!)
 						},
 					}),
@@ -2045,7 +2045,7 @@ root(ROOTS.Zones, {
 							{ 49.8, 83.4, TALADOR },
 							{ 50.2, 85.4, TALADOR },
 						},
-						["g"] = {
+						["groups"] = {
 							i(112373),	-- Felbark's Shin
 						},
 					}),
@@ -2054,14 +2054,14 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 47.6, 32.9, TALADOR },
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(119386),	-- Consort's Promise Ring
 						},
 					}),
 					n(77614, {	-- Frenzied Golem
 						["questID"] = 34145,
 						["coord"] = { 46.2, 55.0, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(113288),	-- Shard of Contempt
 							i(113287),	-- Shard of Scorn
 						},
@@ -2074,14 +2074,14 @@ root(ROOTS.Zones, {
 							{ 56.6, 64.0, TALADOR },
 							{ 56.4, 65.8, TALADOR },
 						},
-						["g"] = {
+						["groups"] = {
 							i(116122),	-- Burning Legion Missive (TOY!)
 						},
 					}),
 					n(80471, {	-- Gennadian
 						["questID"] = 34929,
 						["coord"] = { 67.4, 80.6, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(116075),	-- Scales of Gennadian
 						},
 					}),
@@ -2091,7 +2091,7 @@ root(ROOTS.Zones, {
 							{ 30.4, 64.0, TALADOR },
 							{ 33.2, 63.8, TALADOR },
 						},
-						["g"] = {
+						["groups"] = {
 							i(116113),	-- Breath of Talador (TOY!)
 						},
 					}),
@@ -2100,7 +2100,7 @@ root(ROOTS.Zones, {
 						["description"] = "Click on the Restless Crate.",
 						["questID"] = 36919,
 						["coord"] = { 22.2, 74.2, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(120436),	-- Mrglrgirdle
 						},
 					}),
@@ -2109,7 +2109,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 47.6, 39.0, TALADOR },
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(119402),	-- Gurg'tol's Imp Imperator
 						},
 					}),
@@ -2118,7 +2118,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 48.1, 25.2, TALADOR },
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(119403),	-- Sargerei Soulbiter
 						},
 					}),
@@ -2129,7 +2129,7 @@ root(ROOTS.Zones, {
 							{ 65.2, 43.0, TALADOR },
 							{ 61.4, 49.2, TALADOR },
 						},
-						["g"] = {
+						["groups"] = {
 							i(116124),	-- Scaled Riverbeast Vest
 						},
 					}),
@@ -2140,7 +2140,7 @@ root(ROOTS.Zones, {
 							{ 77.4, 51.2, TALADOR },
 							{ 78.4, 50.8, TALADOR },
 						},
-						["g"] = {
+						["groups"] = {
 							i(112369),	-- Hami-Down Cloak
 						},
 					}),
@@ -2151,7 +2151,7 @@ root(ROOTS.Zones, {
 							{ 56.6, 62.6, TALADOR },
 							{ 56.6, 66.0, TALADOR },
 						},
-						["g"] = {
+						["groups"] = {
 							i(116122),	-- Burning Legion Missive (TOY!)
 						},
 					}),
@@ -2161,7 +2161,7 @@ root(ROOTS.Zones, {
 							{ 61.1, 83.9, TALADOR },	-- Deathweb Hollow Cave Entrance
 							{ 66.8, 85.6, TALADOR },	-- Klikixx
 						},
-						["g"] = {
+						["groups"] = {
 							i(116125),	-- Klikixx's Webspinnner (TOY!)
 						},
 					}),
@@ -2170,7 +2170,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 37.4, 37.6, TALADOR },
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(119394),	-- Kurlosh's Kidneyslicer
 						},
 					}),
@@ -2179,7 +2179,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 33.6, 37.8, TALADOR },
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(119352),	-- Demlash's Dashing Robe
 						},
 					}),
@@ -2189,14 +2189,14 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 37.96, 20.8, TALADOR },
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(119385),	-- Vanguard's Linebreaking Bracer
 						},
 					}),
 					n(77784, {	-- Lo'marg Jawcrusher
 						["questID"] = 34208,
 						["coord"] = { 49.2, 92.3, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(116070),	-- Tezzakel's Terrible Talisman
 						},
 					}),
@@ -2205,7 +2205,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 31.0, 26.8, TALADOR },
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(119388),	-- Doomlord's Seal of Command
 						},
 					}),
@@ -2214,7 +2214,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 38.8, 49.8, TALADOR },
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(119353),	-- Matron's Supple Gloves
 						},
 					}),
@@ -2224,7 +2224,7 @@ root(ROOTS.Zones, {
 							{ 86.4, 30.8, TALADOR },
 							{ 86.0, 29.6, TALADOR },
 						},
-						["g"] = {
+						["groups"] = {
 							i(116077),	-- Pulsating Brain of No'losh
 						},
 					}),
@@ -2234,7 +2234,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 31.4, 47.6, TALADOR },
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(119170),	-- Eye of Observation (PET!)
 							i(119375),	-- Chained Orb of Omniscience
 						},
@@ -2242,7 +2242,7 @@ root(ROOTS.Zones, {
 					n(77741, {	-- Ra'kahn
 						["questID"] = 34196,
 						["coord"] = { 59.48, 59.96, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(116112),	-- Ra'kahn's Bite
 						},
 					}),
@@ -2285,7 +2285,7 @@ root(ROOTS.Zones, {
 							{ 46.8, 31.0, TALADOR },
 						},
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(119350),	-- Sargerei Councillor's Drape
 						},
 					}),
@@ -2294,7 +2294,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 41.0, 42.0, TALADOR },
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(119393),	-- Searing Shadowflame Axe
 						},
 					}),
@@ -2304,7 +2304,7 @@ root(ROOTS.Zones, {
 							{ 67.5, 23.4, 537 },	-- Shirzir
 							{ 41.4, 60.1, TALADOR },	-- Tomb of Souls Entrance
 						},
-						["g"] = {
+						["groups"] = {
 							i(112370),	-- Shirzir's Sticky Slippers
 						},
 					}),
@@ -2316,7 +2316,7 @@ root(ROOTS.Zones, {
 							{ 56.6, 62.6, TALADOR },
 							{ 56.6, 66.4, TALADOR },
 						},
-						["g"] = {
+						["groups"] = {
 							i(116122),	-- Burning Legion Missive (TOY!)
 						},
 					}),
@@ -2329,14 +2329,14 @@ root(ROOTS.Zones, {
 							{ 67.4, 59.8, TALADOR },
 							{ 54.8, 81.4, TALADOR },
 						},
-						["g"] = {
+						["groups"] = {
 							i(116767),	-- Sapphire Riverbeast (MOUNT!)
 						},
 					}),
 					n(86549, {	-- Steeltusk
 						["questID"] = 36858,
 						["coord"] = { 67.7, 35.8, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(117562),	-- Steeltusk's Steel Tusk
 						},
 					}),
@@ -2344,21 +2344,21 @@ root(ROOTS.Zones, {
 						["description"] = "Kill small spiders around the egg sacs until you see warnings. The third warning should spawn the Taladorantula.",
 						["questID"] = 34171,
 						["coord"] = { 59.0, 87.4, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(116126),	-- Taladorantula Terrofang
 						},
 					}),
 					n(79485, {	-- Talonpriest Zorkra
 						["questID"] = 34668,
 						["coord"] = { 53.83, 91.35, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(116110),	-- Zorkra's Hood
 						},
 					}),
 					n(80524, {	-- Underseer Bloodmane
 						["questID"] = 34945,
 						["coord"] = { 63.6, 20.8, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(112475),	-- Prize's Horn-Ring
 						},
 					}),
@@ -2371,7 +2371,7 @@ root(ROOTS.Zones, {
 							{ 37.6, 43.2, TALADOR },
 						},
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(119383),	-- Shoulderplates of the Vigilant
 						},
 					}),
@@ -2379,7 +2379,7 @@ root(ROOTS.Zones, {
 						["description"] = "The spear spawns from the corpse of Viperlash.",
 						["questID"] = 34148,
 						["coord"] = { 37.6, 74.7, TALADOR },
-						["g"] = {
+						["groups"] = {
 							o(227654, {	-- Bonechewer Spear
 								i(112371),	-- Warpstalker-Scale Grips
 							}),
@@ -2389,11 +2389,11 @@ root(ROOTS.Zones, {
 						["description"] = "After you defeat him, he turns friendly and tells you to loot his sword.",
 						["questID"] = 34204,
 						["coord"] = { 69.6, 33.6, TALADOR },
-						["g"] = {
+						["groups"] = {
 							o(227859, {	-- Hope
 								["questID"] = 34205,
 								["coord"] = { 69.7, 33.2, TALADOR },
-								["g"] = {
+								["groups"] = {
 									i(112261),	-- Forgotten Vindicator's Blade
 								},
 							}),
@@ -2404,7 +2404,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 37.6, 14.6, TALADOR },
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(119371),	-- Mantle of the Destroyer
 							i(119435),	-- Path of Flame
 						},
@@ -2412,7 +2412,7 @@ root(ROOTS.Zones, {
 					n(77529, {	-- Yazheera the Incinerator
 						["questID"] = 34135,
 						["coord"] = { 53.8, 25.7, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(112263),	-- Yazheera's Burning Bracers
 						},
 					}),
@@ -2422,7 +2422,7 @@ root(ROOTS.Zones, {
 						["description"] = "Speak to Aarko.\nAssist him in killing 2 waves of enemies, then Surok Darkstorm.\nLoot the Treasure.",
 						["questID"] = 34182,
 						["coord"] = { 36.6, 96.0, TALADOR },
-						["g"] = {
+						["groups"] = {
 							o(227793, {	-- Aarko's Family Treasure
 								i(117567),	-- Aarko's Antique Crossbow
 							}),
@@ -2431,7 +2431,7 @@ root(ROOTS.Zones, {
 					o(227955, {	-- Amethyl Crystal
 						["questID"] = 34236,
 						["coord"] = { 62.1, 32.4, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(116131),	-- Amethyl Crystal
 						},
 					}),
@@ -2442,21 +2442,21 @@ root(ROOTS.Zones, {
 							{ 78.1, 35.6, TALADOR },	-- Aruuna Crystal Mine Entrance
 							{ 81.8, 34.9, TALADOR },	-- Aruuna Mining Cart
 						},
-						["g"] = {
+						["groups"] = {
 							--i(109118),	-- Blackrock Ore
 						},
 					}),
 					o(228016, {	-- Barrel of Fish
 						["questID"] = 34252,
 						["coord"] = { 62.4, 48.0, TALADOR },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(228023, {	-- Bonechewer Remnants
 						["questID"] = 34259,
 						["coord"] = { 33.3, 76.8, TALADOR },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
@@ -2464,21 +2464,21 @@ root(ROOTS.Zones, {
 						["description"] = "Below the bridge.",
 						["questID"] = 34471,
 						["coord"] = { 73.5, 51.4, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(116127),	-- Bright Coin
 						},
 					}),
 					o(236935, {	-- Burning Blade Cache
 						["questID"] = 36937,
 						["coord"] = { 70.1, 7.1, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(120945),	-- Primal Spirit
 						},
 					}),
 					o(228012, {	-- Charred Sword
 						["questID"] = 34248,
 						["coord"] = { 77.0, 50.0, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(116116),	-- Blazegrease Greatsword
 						},
 					}),
@@ -2488,21 +2488,21 @@ root(ROOTS.Zones, {
 							{ 61.1, 83.9, TALADOR },	-- Deathweb Hollow Cave Entrance
 							{ 66.5, 86.9, TALADOR },	-- Curious Deathweb Egg
 						},
-						["g"] = {
+						["groups"] = {
 							i(117569),	-- Giant Deathweb Egg (TOY!)
 						},
 					}),
 					o(226976, {	-- Deceptia's Smoldering Boots
 						["questID"] = 33933,
 						["coord"] = { 58.8, 12.1, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(108743),	-- Deceptia's Smoldering Boots (TOY!)
 						},
 					}),
 					o(228017, {	-- Draenei Weapons
 						["questID"] = 34253,
 						["coord"] = { 55.2, 66.7, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(116118),	-- Surplus Auchenai Weaponry
 						},
 					}),
@@ -2513,7 +2513,7 @@ root(ROOTS.Zones, {
 					o(227956, {	-- Foreman's Lunchbox
 						["questID"] = 34238,
 						["coord"] = { 57.4, 28.7, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(116120),	-- Tasty Talador Lunch (TOY!)
 						},
 					}),
@@ -2524,21 +2524,21 @@ root(ROOTS.Zones, {
 							{ 27.8, 75.6, TALADOR },	-- Cave Entrance
 							{ 28.4, 74.2, TALADOR },	-- Gift of the Ancients
 						},
-						["g"] = {
+						["groups"] = {
 							i(118686),	-- Signet Ring of Gehs'taal
 						},
 					}),
 					o(228015, {	-- Iron Box
 						["questID"] = 34251,
 						["coord"] = { 64.6, 79.2, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(117571),	-- Gordunni Skullthumper
 						},
 					}),
 					n(75644, {	-- Iron Scout
 						["questID"] = 33649,
 						["coord"] = { 75.1, 36.1, TALADOR },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
@@ -2547,7 +2547,7 @@ root(ROOTS.Zones, {
 						["questID"] = 34134,
 						["coord"] = { 57.2, 75.3, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(117563),	-- Deathweb Toxin Vial
 						},
 					}),
@@ -2558,7 +2558,7 @@ root(ROOTS.Zones, {
 							{ 64.8, 9.2,  TALADOR },	-- Cave Entrance
 							{ 65.5, 11.4, TALADOR },	-- Jug of Aged Ironwine
 						},
-						["g"] = {
+						["groups"] = {
 							i(117568),	-- Jug of Ironwine
 						},
 					}),
@@ -2574,7 +2574,7 @@ root(ROOTS.Zones, {
 							{ 53.3, 25.7, TALADOR },	-- Cave Entrance
 							{ 54.0, 27.6, TALADOR },	-- Ketya's Stash
 						},
-						["g"] = {
+						["groups"] = {
 							i(116121),	-- A Steamy Romance Novel: I'm In Love With a Robot
 							i(116402),	-- Stonegrinder (PET!)
 						},
@@ -2582,26 +2582,26 @@ root(ROOTS.Zones, {
 					o(243283, {	-- Knight Pepe
 						["coord"] = { 51.01, 63.31, TALADOR },
 						["timeline"] = { ADDED_6_2_0 },
-						["g"] = { i(127869) },	-- A Tiny Plated Helm (Pepe!)
+						["groups"] = { i(127869) },	-- A Tiny Plated Helm (Pepe!)
 					}),
 					o(228022, {	-- Light of the Sea
 						["questID"] = 34258,
 						["coord"] = { 38.2, 12.5, TALADOR },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(227527, {	-- Lightbearer
 						["questID"] = 35964,
 						["coord"] = { 68.8, 56.2, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(109192),	-- Lightbearer
 						},
 					}),
 					o(227954, {	-- Luminous Shell
 						["questID"] = 34235,
 						["coord"] = { 52.6, 29.5, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(116132),	-- Snail Shell Necklace
 						},
 					}),
@@ -2610,7 +2610,7 @@ root(ROOTS.Zones, {
 						["questID"] = 34128,
 						["coord"] = { 61.0, 71.7, TALADOR },
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(117563),	-- Death Toxin Vial
 						},
 					}),
@@ -2620,28 +2620,28 @@ root(ROOTS.Zones, {
 							{ 78.2, 14.7, TALADOR },	-- Treasure
 							{ 75.3, 22.3, TALADOR },	-- Cave
 						},
-						["g"] = {
+						["groups"] = {
 							i(117572),	-- Iridium Inlaid Band
 						},
 					}),
 					o(228014, {	-- Relic of Aruuna
 						["questID"] = 34250,
 						["coord"] = { 75.8, 44.7, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(116128),	-- Tiny Naaru Statue
 						},
 					}),
 					o(228020, {	-- Relic of Telmor
 						["questID"] = 34256,
 						["coord"] = { 47.0, 91.7, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(116128),	-- Tiny Naaru Statue
 						},
 					}),
 					o(227951, {	-- Rook's Tacklebox
 						["questID"] = 34232,
 						["coord"] = { 64.9, 13.3, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(116117),	-- Rook's Lucky Fishin' Line
 						},
 					}),
@@ -2660,7 +2660,7 @@ root(ROOTS.Zones, {
 							{ 41.44, 60.14, TALADOR },	-- Tomb of Souls Entrance
 							{ 28.3, 35.0, 537 },	-- Soulbinder's Reliquary
 						},
-						["g"] = {
+						["groups"] = {
 							i(117570),	-- Auchenai Soulbinder's Signet
 						},
 					}),
@@ -2669,7 +2669,7 @@ root(ROOTS.Zones, {
 						["description"] = "Requires Fishing.",
 						["modelScale"] = 2,
 						["coord"] = { 39.2, 41.7, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(112623, {	-- Pack of Fishing Supplies
 								i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
 								i(33820),	-- Weather-Beaten Fishing Hat
@@ -2690,14 +2690,14 @@ root(ROOTS.Zones, {
 							{ 73.41, 30.68, TALADOR },
 							{ 70.75, 31.96, TALADOR },
 						},
-						["g"] = {
+						["groups"] = {
 							i(112699),	-- Teroclaw Hatchling (PET!)
 						},
 					}),
 					o(228021, {	-- Treasure of Ango'rosh
 						["questID"] = 34257,
 						["coord"] = { 38.3, 84.5, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(116119),	-- Ango'rosh Sorcerer Stone
 						},
 					}),
@@ -2707,7 +2707,7 @@ root(ROOTS.Zones, {
 							{ 61.1, 83.9, TALADOR },	-- Deathweb Hollow Cave Entrance
 							{ 65.4, 88.6, TALADOR },	-- Webbed Sac
 						},
-						["g"] = {
+						["groups"] = {
 							i(116129),	-- Desiccated Orc's Coin Pouch
 						},
 					}),
@@ -2716,7 +2716,7 @@ root(ROOTS.Zones, {
 						["questID"] = 34140,
 						["coord"] = { 40.6, 89.4, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
@@ -2725,7 +2725,7 @@ root(ROOTS.Zones, {
 					n(84212, {	-- Kazbala
 						["description"] = "This vendor is only available until you reach 50(Can be lower). Items are also available from vendors in Stormwind, Orgrimmar, and Dalaran.",
 						["coord"] = { 45.2, 38.8, TALADOR },
-						["g"] = {
+						["groups"] = {
 							i(54436, {	-- Blue Clockwork Rocket Bot (PET!)
 								["timeline"] = { ADDED_3_3_3 },
 							}),
@@ -2761,7 +2761,7 @@ root(ROOTS.Zones, {
 					n(84216, {	-- Talgaiir the Ironrender
 						["description"] = "This vendor is only available at lower levels before he becomes phased out. Items are also available from Big Zokk Torquewrench in Area 52. Items require Legionnaire/Knight-Captain or higher to purchase. |r",
 						["coord"] = { 45.6, 38.6, TALADOR },
-						["g"] = pvp({
+						["groups"] = pvp({
 							-- Note: don't mark these as unobtainable here because they are obtainable from Big Zokk in Netherstorm.
 							a(i(77596)),	-- Replica Grand Marshal's Aegis
 							a(i(77563)),	-- Replica Grand Marshal's Battle Hammer
@@ -2808,7 +2808,7 @@ root(ROOTS.Zones, {
 					n(80765, {	-- Wixxa the Sapper <Explosives>
 						["coord"] = { 71.6, 30.2, TALADOR },
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(23799, {	-- Schematic: Adamantite Rifle (RECIPE!)
 								["isLimited"] = true,
 							}),
@@ -2828,7 +2828,7 @@ root(ROOTS.Zones, {
 					}),
 					n(86949, {	-- Zooti Fizzlefury
 						["coord"] = { 85.0, 31.0, TALADOR },
-						["g"] = {
+						["groups"] = {
 							-- currency(1191, {	-- Valor
 							un(REMOVED_FROM_GAME, i(127785)),	-- Crystallized Fel
 							-- }),

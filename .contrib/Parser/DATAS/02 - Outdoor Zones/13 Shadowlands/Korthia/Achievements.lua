@@ -17,7 +17,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					15099,	-- Treasures of Korthia
 					15107,	-- Conquering Korthia
 				}},
-				["g"] = {
+				["groups"] = {
 					i(186654),	-- Hand of Salaranga (MOUNT!)
 				},
 			}),
@@ -205,7 +205,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			}),
 			ach(15099, {	-- Treasures of Korthia
 				crit(52236, {	-- Glittering Nest Material
-					["_quests"] = { 64222 }
+					["_quests"] = { 64222 },
 				}),
 				crit(52237, {	-- Forgotten Feather
 					["_quests"] = { 64234 },

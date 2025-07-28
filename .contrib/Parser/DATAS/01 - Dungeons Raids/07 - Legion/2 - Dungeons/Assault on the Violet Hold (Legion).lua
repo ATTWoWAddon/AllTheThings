@@ -6,7 +6,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 		["lvl"] = 105,
 		["mapID"] = 732,
 		["coord"] = { 66.2, 68.3, LEGION_DALARAN },
-		["g"] = {
+		["groups"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				n(VH_FINAL_WAVE_BOSS, {
 					cr(102387, e(1697, {	-- Sael'orn

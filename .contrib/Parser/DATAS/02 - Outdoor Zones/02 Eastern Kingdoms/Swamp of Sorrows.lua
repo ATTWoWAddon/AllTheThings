@@ -118,7 +118,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 49.8, 56.0, SWAMP_OF_SORROWS },
 						["races"] = HORDE_ONLY,
 						-- #if BEFORE 2.1.0
-						["g"] = EXPERT_ARTISAN_ALCHEMY,
+						["groups"] = EXPERT_ARTISAN_ALCHEMY,
 						-- #endif
 					}),
 				}),
@@ -136,13 +136,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(QUESTS, {
 				q(2801, {	-- A Tale of Sorrow
-					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["allianceQuestData"] = {
 						["sourceQuest"] = 2783,	-- Petty Squabbles (A)
 					},
 					["hordeQuestData"] = {
 						["sourceQuest"] = 2623,	-- The Swamp Talker (H)
 					},
+					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
@@ -835,8 +835,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(28553, {	-- Okrilla and the Blasted Lands
 					["qg"] = 7623,	-- Dispatch Commander Ruag
-					["sourceQuest"] = 27916,	-- Ruag's Report
 					["altQuests"] = { 28671 },	-- Warchief's Command: Blasted Lands!
+					["sourceQuest"] = 27916,	-- Ruag's Report
 					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,

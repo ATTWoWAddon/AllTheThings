@@ -22,12 +22,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			q(64982, {	-- Cat (Well-Fed) Soul
 				["name"] = "Cat (Well-Fed) Soul",
-				["icon"] = 656577,
-				["sourceQuests"] = { 64961 },	-- Cat Soul
-				["cost"] = { { "i", 187811, 1 } },	-- Spectral Feed
-				["coord"] = { 58.4, 70.5, 1702 },	-- Heart of the Forest
 				["qg"] = 182093,	-- Ma'oh
+				["sourceQuests"] = { 64961 },	-- Cat Soul
+				["coord"] = { 58.4, 70.5, 1702 },	-- Heart of the Forest
+				["icon"] = 656577,
 				["description"] = "After obtaining the Cat Soul, grab a |cFFFFFFFFSpectral Feed|r located at |cFFFFFFFF63.75, 61.69|r in Revendreth. Then return to Heart of the Forest with it, and go to the Queen's Conservatory portal downstairs.\nFind |cFFFFFFFFMa'oh|r next to the portal and |cFFFFFFFF/meow|r at them. Then use the |cFFFFFFFFSpectral Feed|r from your inventory while targeting them.",
+				["cost"] = { { "i", 187811, 1 } },	-- Spectral Feed
 			}),
 			q(64941, {	-- Chicken Soul
 				["provider"] = { "i", 187813 },	-- Chicken Soul
@@ -35,14 +35,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			q(64939, {	-- Choofa/Squirrel Soul
 				["name"] = "Choofa/Squirrel Soul",
 				["icon"] = 645526,
-				["description"] = "Talk to Choofa in the covenant sanctum."
+				["description"] = "Talk to Choofa in the covenant sanctum.",
 			}),
 			applyevent(EVENTS.TIMEWALKING_MISTS_OF_PANDARIA_DUNGEON_EVENT, q(65024, {	-- Cloud Serpent Soul
 				["provider"] = { "i", 187904 },	-- Cloud Serpent Soul
 			})),
 			pvp(q(64651, {	-- Cobra Soul
-				["description"] = "Drops from rated PvP.",
 				["provider"] = { "i", 182167 },	-- Cobra Soul
+				["description"] = "Drops from rated PvP.",
 			})),
 			q(64938, {	-- Corgi Soul
 				["name"] = "Corgi Soul",
@@ -72,8 +72,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["provider"] = { "i", 187880 },	-- Goat Soul
 			}),
 			pvp(q(62426, {	-- Gryphon Soul
-				["description"] = "Drops from rated PvP.",
 				["provider"] = { "i", 182170 },	-- Gryphon Soul
+				["description"] = "Drops from rated PvP.",
 			})),
 			q(62421, {	-- Gulper Soul
 				["provider"] = { "i", 181314 },	-- Gulper Soul
@@ -85,8 +85,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["provider"] = { "i", 182171 },	-- Hippogryph Soul
 			}),
 			q(64650, {	-- Hyena Soul
-				["description"] = "Drops from Mythic Dungeons.",
 				["provider"] = { "i", 182173 },	-- Hyena Soul
+				["description"] = "Drops from Mythic Dungeons.",
 			}),
 			applyevent(EVENTS.TIMEWALKING_NORTHREND_DUNGEON_EVENT, q(65023, {	-- Jormungar Soul
 				["provider"] = { "i", 187903 },	-- Jormungar Soul
@@ -150,8 +150,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				-- ["crs"] = { 168647 },	-- Valfir the Unrelenting
 			}),
 			pvp(q(63604, {	-- Shoveltusk Soul
-				["description"] = "Drops from PvP.",	-- Comp Stomp 2 Nov 2021
 				["provider"] = { "i", 185048 },	-- Shoveltusk Soul
+				["description"] = "Drops from PvP.",	-- Comp Stomp 2 Nov 2021
 			})),
 			q(62436, {	-- Shrieker Soul
 				["provider"] = { "i", 182185 },	-- Shrieker Soul
@@ -189,8 +189,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				-- ["crs"] = { 164415 },	-- Skuld Vit
 			}),
 			pvp(q(62440, {	-- Wyvern Soul
-				["description"] = "Drops from random battlegrounds.",
 				["provider"] = { "i", 182184 },	-- Wyvern Soul
+				["description"] = "Drops from random battlegrounds.",
 			})),
 			q(63603, {	-- Yak Soul
 				["provider"] = { "i", 185047 },	-- Yak Soul

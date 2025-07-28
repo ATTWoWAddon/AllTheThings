@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			}),
 			n(128134, {	-- Orix the All-Seer
 				["coord"] = { 59.5, 44.9, ANTORAN_WASTES },
-				["g"] = {
+				["groups"] = {
 					i(153069, {	-- All-Seer's Draught
 						["cost"] = { { "i", INTACT_DEMON_EYE, 25 } },
 					}),

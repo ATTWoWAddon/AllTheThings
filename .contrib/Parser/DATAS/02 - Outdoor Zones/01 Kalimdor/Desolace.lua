@@ -310,8 +310,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1386, {	-- Assault on the Kolkar
 					["qg"] = 5398,	-- Warug
 					["sourceQuest"] = 1385,	-- Brutal Politics
-					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["coord"] = { 74.8, 68.0, DESOLACE },
+					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,	-- TODO: Double check that this is only Alliance Only
 					["lvl"] = 30,
@@ -388,10 +388,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14334, {	-- Blubbergut
-					["description"] = "Blubbergut will only spawn if you walk to the end of the dock to trigger the spawn event.",
 					["qg"] = 12031,	-- Mai'Lahii
 					["sourceQuest"] = 14337,	-- Shadowprey Village
 					["coord"] = { 22.6, 71.9, DESOLACE },
+					["description"] = "Blubbergut will only spawn if you walk to the end of the dock to trigger the spawn event.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -475,8 +475,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1386,	-- Assault on the Kolkar
 						1367,	-- Magram Alliance
 					},
-					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["coord"] = { 74.8, 68.0, DESOLACE },
+					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
@@ -503,10 +503,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1385, {	-- Brutal Politics
 					["qg"] = 5396,	-- Captain Pentigast
+					["coord"] = { 66.7, 11.0, DESOLACE },
 					-- #if BEFORE 4.0.3
 					["description"] = "Once you complete 'Khan Hratha' for the Gelkis Clan, you can accept and start working on this quest. Bare in mind that it is quite-the-grind to get back to Friendly. Best of luck to you!",
 					-- #endif
-					["coord"] = { 66.7, 11.0, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -758,8 +758,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 36398,	-- Khan Leh'Prah
 					["sourceQuest"] = 14393,	-- Into the Fray!
 					["coord"] = { 72.3, 67.4, DESOLACE },
-					["timeline"] = { ADDED_4_0_3 },
 					["description"] = "If you completed this quest prior to 8.0.1, go to Karnum's Glade and speak with Karnum Marshweaver (57.4, 47.6) and he'll grant you the rep.\n\n - Crieve",
+					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Agogridon Defeated
 							["provider"] = { "n", 36442 },	-- Agogridon
@@ -1068,8 +1068,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1371, {	-- Gizmo for Warug
 					["qg"] = 5398,	-- Warug
 					["sourceQuest"] = 1369,	-- Broken Tears
-					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["coord"] = { 74.8, 68.0, DESOLACE },
+					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 4392, 1 }},	-- Advanced Target Dummy
 					["lvl"] = 30,
@@ -1134,8 +1134,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				heroscall(q(28531, {    -- Hero's Call: Desolace!
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
-					["isBreadcrumb"] = true,
 					["lockCriteria"] = { 1, "questID", 25938 },	-- Help for Desolace
+					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
 					-- Cataclysm: Maximum is level 33. (TODO: Test max level between 32 and 37)
@@ -1240,8 +1240,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "i", 49220 },	-- Infernal Power Core
 					["coord"] = { 51.2, 75.4, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
-					["crs"] = { 35591 },	-- Lesser Infernal
 					["races"] = ALLIANCE_ONLY,
+					["crs"] = { 35591 },	-- Lesser Infernal
 					["groups"] = {
 						objective(1, {	-- 0/1 Jugkar Grim'rod Slain
 							["provider"] = { "n", 5771 },	-- Jugkar Grim'rod
@@ -1253,8 +1253,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "i", 49200 },	-- Infernal Power Core
 					["coord"] = { 51.2, 75.4, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
-					["crs"] = { 35591 },	-- Lesser Infernal
 					["races"] = HORDE_ONLY,
+					["crs"] = { 35591 },	-- Lesser Infernal
 					["groups"] = {
 						objective(1, {	-- 0/1 Jugkar Grim'rod Slain
 							["provider"] = { "n", 5771 },	-- Jugkar Grim'rod
@@ -1282,8 +1282,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1380, {	-- Khan Hratha (Gelkis)
 					["qg"] = 5397,	-- Uthek the Wise
 					["sourceQuest"] = 1374,	-- Khan Jehn
-					["minReputation"] = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
 					["coord"] = { 36.2, 79.2, DESOLACE },
+					["minReputation"] = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
@@ -1304,8 +1304,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1381, {	-- Khan Hratha (Magram)
 					["qg"] = 5398,	-- Warug
 					["sourceQuest"] = 1375,	-- Khan Shaka
-					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["coord"] = { 74.8, 68.0, DESOLACE },
+					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
@@ -1326,8 +1326,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1374, {	-- Khan Jehn
 					["qg"] = 5397,	-- Uthek the Wise
 					["sourceQuest"] = 1373,	-- Ongeku
-					["minReputation"] = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
 					["coord"] = { 36.2, 79.2, DESOLACE },
+					["minReputation"] = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
@@ -1341,8 +1341,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1375, {	-- Khan Shaka
 					["qg"] = 5398,	-- Warug
 					["sourceQuest"] = 1371,	-- Gizmo for Warug
-					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["coord"] = { 74.8, 68.0, DESOLACE },
+					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
@@ -1419,9 +1419,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(14282, {	-- Mystery Solved
 					["qg"] = 35773,	-- Cenarion Researcher Korrah
-					["description"] = "If you abandon this quest, you can pick it up again from Cenarion Researcher Korrah at Ethel Rethor.",
 					["sourceQuest"] = 14268,	-- Deep Impact
 					["coord"] = { 38.8, 27.0, DESOLACE },
+					["description"] = "If you abandon this quest, you can pick it up again from Cenarion Researcher Korrah at Ethel Rethor.",
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(55896, {	-- Emblazoned Girdle
@@ -1504,8 +1504,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1373, {	-- Ongeku
 					["qg"] = 5397,	-- Uthek the Wise
 					["sourceQuest"] = 1370,	-- Stealing Supplies
-					["minReputation"] = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
 					["coord"] = { 36.2, 79.2, DESOLACE },
+					["minReputation"] = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SWAMP_OF_SORROWS },
 					["lvl"] = 30,
@@ -1659,9 +1659,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(14364, {	-- Putting Their Heads Together (A)
 					["qg"] = 5396,	-- Captain Pentigast
-					["description"] = "If you abandon this quest, you can pick it up again from Captain Pentigast at Nijel's Point.",
 					["sourceQuest"] = 14363,	-- You'll Know it When You See It
 					["coord"] = { 66.7, 10.9, DESOLACE },
+					["description"] = "If you abandon this quest, you can pick it up again from Captain Pentigast at Nijel's Point.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2038,8 +2038,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1370, {	-- Stealing Supplies
 					["qg"] = 5397,	-- Uthek the Wise
 					["sourceQuest"] = 1384,	-- Raid on the Kolkar
-					["minReputation"] = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
 					["coord"] = { 36.2, 79.2, DESOLACE },
+					["minReputation"] = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
@@ -2180,6 +2180,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1480, {	-- The Corrupter (1/5)
 					["provider"] = { "i", 20310 },	-- Flayed Demon Skin
 					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = HORDE_ONLY,
 					["crs"] = {
 						4665,	-- Burning Blade Adept
 						4663,	-- Burning Blade Augur
@@ -2190,7 +2191,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						4667,	-- Burning Blade Shadowmage
 						4668,	-- Burning Blade Summoner
 					},
-					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 				}),
 				q(1481, {	-- The Corrupter (2/5)
@@ -2360,8 +2360,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14394,	-- Death to Agogridon
 					},
 					["coord"] = { 73.3, 73.0, DESOLACE },
-					["modelScale"] = 1.5,
 					["timeline"] = { ADDED_4_0_3 },
+					["modelScale"] = 1.5,
 					["isBreadcrumb"] = true,
 				}),
 				q(26589, {	-- The Wilds of Feralas (H)
@@ -2526,9 +2526,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(14363, {	-- You'll Know It When You See It (A)
 					["qg"] = 5396,	-- Captain Pentigast
-					["description"] = "If you abandon this quest, you can pick it up again from Captain Pentigast at Nijel's Point.",
 					["sourceQuest"] = 14361,	-- Peace of Mind
 					["coord"] = { 66.7, 10.9, DESOLACE },
+					["description"] = "If you abandon this quest, you can pick it up again from Captain Pentigast at Nijel's Point.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

@@ -111,7 +111,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					201393,	-- Dragonspawn Spellweaver's Focus
 					201392,	-- Drakonid Striker's Cutlass
 				}},
-				["g"] = {
+				["groups"] = {
 					o(383735),	-- Disturbed Dirt
 					o(376386),	-- Disturbed Dirt
 					o(383734),	-- Disturbed Dirt
@@ -152,7 +152,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					193898,	-- Umbral Bone Needle
 					193899,	-- Primalweave Spindle
 				}},
-				["g"] = {
+				["groups"] = {
 					i(201391),	-- Drakonid Enforcer's Hidesplitter
 					i(201387),	-- Drakonid Stalker's Halberd
 					i(201386),	-- Drakonid Defender's Pike

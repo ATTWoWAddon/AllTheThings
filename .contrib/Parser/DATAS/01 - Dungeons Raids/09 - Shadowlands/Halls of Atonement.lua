@@ -9,12 +9,12 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			1664,	-- The Nave of Pain
 			1665,	-- Sanctury of Souls
 		},
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {}),	-- Do Not Remove
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2406, {	-- Halkias
 					["crs"] = { 165408 },	-- Halkias
-					["g"] = {
+					["groups"] = {
 						-- Legendaries
 						i(183380),	-- Memory of a Seismic Reverberation
 						i(182629),	-- Memory of the Crimson Runes
@@ -33,7 +33,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2387, {	-- Echelon
 					["crs"] = { 164185 },	-- Echelon
-					["g"] = {
+					["groups"] = {
 						-- Legendaries
 						i(183349),	-- Memory of the Deeptremor Stone
 						-- Conduits
@@ -53,7 +53,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2411, {	-- High Adjudicator Aleez
 					["crs"] = { 165410 },	-- High Adjudicator Aleez
-					["g"] = {
+					["groups"] = {
 						-- Legendaries
 						i(183306),	-- Memory of the Righteous Bulwark
 						-- Conduits
@@ -72,7 +72,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2413, {	-- Lord Chamberlain
 					["crs"] = { 164218 },	--	Lord Chamberlain
-					["g"] = {
+					["groups"] = {
 						ach(14370),	-- Halls of Atonement
 						-- Legendaries
 						i(183241),	-- Memory of the Dark Titan
@@ -96,7 +96,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2413, {	-- Lord Chamberlain
 					["crs"] = { 164218 },	--	Lord Chamberlain
-					["g"] = {
+					["groups"] = {
 						ach(14410),	-- Heroic: Halls of Atonement
 					},
 				}),
@@ -104,19 +104,19 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2406, {	-- Halkias
 					["crs"] = { 165408 },	-- Halkias
-					["g"] = {
+					["groups"] = {
 						ach(14567),	-- Picking Up the Pieces
 					},
 				}),
 				e(2387, {	-- Echelon
 					["crs"] = { 164185 },	-- Echelon
-					["g"] = {
+					["groups"] = {
 						ach(14284),	-- Breaking Bad
 					},
 				}),
 				e(2413, {	-- Lord Chamberlain
 					["crs"] = { 164218 },	--	Lord Chamberlain
-					["g"] = {
+					["groups"] = {
 						ach(14411),	-- Mythic: Halls of Atonement
 						ach(14380),	-- Mythic: Halls of Atonement Guild Run
 						ach(14352),	-- Nobody Puts Denathrius in a Corner

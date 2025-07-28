@@ -9,7 +9,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			809, 810, 811, 812, 813, 814,	-- Lower
 		},
 		["lvl"] = 110,
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(44684, {	-- Corruption Runs Deep
 					["qg"] = 114631,	-- Archmage Karlain
@@ -44,7 +44,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					["provider"] = { "i", 143556 },	-- Charred Bone Fragments
 					["sourceQuest"] = 45295,	-- Return to Karazhan: Clearing Out the Cobwebs
 					["description"] = "You must complete the full quest chain before the quest item will drop from the boss.",
-					["g"] = {
+					["groups"] = {
 						i(142469),	-- Violet Seal of the Grand Magus
 					},
 				}),
@@ -129,7 +129,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 			}),
 			n(COMMON_BOSS_DROPS, {
-				["g"] = {
+				["groups"] = {
 					i(143615),	-- Technique: Glyph of Crackling Ox Lightning (RECIPE!)
 					i(143616),	-- Technique: Glyph of the Trusted Steed (RECIPE!)
 				},
@@ -159,7 +159,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			n(VENDORS, {
 				n(114815, {	-- Koren
 					["description"] = "This vendor is located in the Livery Stables.",
-					["g"] = {
+					["groups"] = {
 						i(31395),	-- Plans: Iceguard Helm (RECIPE!)
 						i(31393),	-- Plans: Iceguard Breastplate (RECIPE!)
 						i(31394),	-- Plans: Iceguard Leggings (RECIPE!)
@@ -189,7 +189,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(1837, {	-- Moroes
 					["creatureID"] = 114312,	-- Moroes
-					["g"] = {
+					["groups"] = {
 						i(138797),	-- Illusion: Mongoose (ILLUSION!)
 						i(142246, {	-- Broken Pocket Watch
 							["description"] = "This is a rare drop that eventually leads to adding Moroes as a follower.",
@@ -198,13 +198,13 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				e(1817, {	-- Shade of Medivh
 					["creatureID"] = 114350,	-- Shade of Medivh
-					["g"] = {
+					["groups"] = {
 						i(138798),	-- Illusion: Sunfire (ILLUSION!)
 					},
 				}),
 				e(1838, {	-- Viz'aduum the Watcher
 					["creatureID"] = 114790,	-- Viz'aduum the Watcher
-					["g"] = {
+					["groups"] = {
 						ach(11929),	-- Heroic: Return to Karazhan
 						i(213017, {	-- Grimoire of the Riftsmolder Darkglare (CI!)
 							["timeline"] = { ADDED_10_2_5 },
@@ -219,7 +219,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						114284,	-- Elfyra
 						114251,	-- Galindre
 					},
-					["g"] = {
+					["groups"] = {
 						i(142298),	-- Astonishingly Scarlet Slippers
 						i(142204),	-- Boots of False Promise
 						i(142300),	-- Greaves of Miraculous Magnificence
@@ -239,7 +239,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						114260,	-- Mrrgria
 						114261,	-- Toe Knee
 					},
-					["g"] = {
+					["groups"] = {
 						i(142302),	-- Armguards of Burning Passion
 						i(142146),	-- Blackfin Wristband
 						i(142154),	-- Bracelets of the Sorrowful Bridge
@@ -259,7 +259,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						114329,	-- Luminore
 						114522,	-- Mrs. Cauldrons
 					},
-					["g"] = {
+					["groups"] = {
 						i(142196),	-- Cinch of Improbable Desire
 						i(142206),	-- Cloak of Sweltering Flame
 						i(142197),	-- Legguards of Imprisonment
@@ -273,7 +273,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				e(1825, {	-- Maiden of Virtue
 					["creatureID"] = 113971,	-- Maiden of Virtue
-					["g"] = {
+					["groups"] = {
 						i(142138),	-- Confiscated Manacle
 						i(142153),	-- Cord of the Penitent
 						i(142170),	-- Drape of Shame
@@ -289,7 +289,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						114262,	-- Attumen the Huntsman
 						114264,	-- Midnight
 					},
-					["g"] = {
+					["groups"] = {
 						i(142140),	-- Calliard's Galoshes
 						i(142174),	-- Choker of Barbed Reins
 						i(142126),	-- Helm of Phantasmal Scars
@@ -303,7 +303,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				e(1837, {	-- Moroes
 					["creatureID"] = 114312,	-- Moroes
-					["g"] = {
+					["groups"] = {
 						i(142159),	-- Bloodstained Handkerchief
 						i(142123),	-- Breastplate of Obligation
 						i(142134),	-- Castellan's Blinders
@@ -316,7 +316,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				e(1836, {	-- The Curator
 					["creatureID"] = 114247,	-- The Curator
-					["g"] = {
+					["groups"] = {
 						i(142130),	-- Bite-Marked Wristplates
 						i(142141),	-- Custodian's Soothing Touch
 						i(142165),	-- Deteriorated Construct Core
@@ -331,7 +331,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				e(1817, {	-- Shade of Medivh
 					["creatureID"] = 114350,	-- Shade of Medivh
-					["g"] = {
+					["groups"] = {
 						i(142207),	-- Amulet of the Last Guardian
 						i(142157),	-- Aran's Relaxing Ruby
 						i(142131),	-- Frozen-Link Chestguard
@@ -345,7 +345,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				e(1818, {	-- Mana Devourer
 					["creatureID"] = 114252,	-- Mana Devourer
-					["g"] = {
+					["groups"] = {
 						i(142162),	-- Fluctuating Energy
 						i(142150),	-- Hood of Uncanny Perspectives
 						i(142135),	-- Legguards of Countless Hours
@@ -359,7 +359,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				e(1838, {	-- Viz'aduum the Watcher
 					["creatureID"] = 114790,	-- Viz'aduum the Watcher
-					["g"] = {
+					["groups"] = {
 						i(142167),	-- Eye of Command
 						i(142132),	-- Doomstride Footguards
 						i(142151),	-- Leggings of Countless Worlds
@@ -422,7 +422,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						114329,	-- Luminore
 						114522,	-- Mrs. Cauldrons
 					},
-					["g"] = {
+					["groups"] = {
 						i(142196),	-- Cinch of Improbable Desire
 						i(142206),	-- Cloak of Sweltering Flame
 						i(142197),	-- Legguards of Imprisonment
@@ -440,7 +440,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						114260,	-- Mrrgria
 						114261,	-- Toe Knee
 					},
-					["g"] = {
+					["groups"] = {
 						i(142302),	-- Armguards of Burning Passion
 						i(142146),	-- Blackfin Wristband
 						i(142154),	-- Bracelets of the Sorrowful Bridge
@@ -458,7 +458,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						114284,	-- Elfyra
 						114251,	-- Galindre
 					},
-					["g"] = {
+					["groups"] = {
 						i(142298),	-- Astonishingly Scarlet Slippers
 						i(142204),	-- Boots of False Promise
 						i(142300),	-- Greaves of Miraculous Magnificence
@@ -474,7 +474,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				e(1825, {	-- Maiden of Virtue
 					["creatureID"] = 113971,	-- Maiden of Virtue
-					["g"] = {
+					["groups"] = {
 						i(142138),	-- Confiscated Manacle
 						i(142153),	-- Cord of the Penitent
 						i(142170),	-- Drape of Shame
@@ -490,7 +490,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						114262,	-- Attumen the Huntsman
 						114264,	-- Midnight
 					},
-					["g"] = {
+					["groups"] = {
 						i(142236),	-- Midnight (MOUNT!)
 						i(142140),	-- Calliard's Galoshes
 						i(142174),	-- Choker of Barbed Reins
@@ -505,7 +505,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				e(1837, {	-- Moroes
 					["creatureID"] = 114312,	-- Moroes
-					["g"] = {
+					["groups"] = {
 						ach(11338),	-- Dine and Bash
 						i(142159),	-- Bloodstained Handkerchief
 						i(142123),	-- Breastplate of Obligation
@@ -520,7 +520,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				n(114895, {	-- Nightbane
 					["description"] = "This boss is only available if you do a speed run.",
 					["cr"] = 115038,	-- Image of Medivh
-					["g"] = {
+					["groups"] = {
 						i(142552),	-- Smoldering Ember Wyrm (MOUNT!)
 						i(143556, {	-- Charred Bone Fragments
 							["description"] = "You must complete the full quest chain before this will drop from the boss.",
@@ -544,7 +544,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				e(1836, {	-- The Curator
 					["creatureID"] = 114247,	-- The Curator
-					["g"] = {
+					["groups"] = {
 						i(142130),	-- Bite-Marked Wristplates
 						i(142141),	-- Custodian's Soothing Touch
 						i(142165),	-- Deteriorated Construct Core
@@ -559,7 +559,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				e(1817, {	-- Shade of Medivh
 					["creatureID"] = 114350,	-- Shade of Medivh
-					["g"] = {
+					["groups"] = {
 						ach(11432),	-- Scared Straight
 						i(142207),	-- Amulet of the Last Guardian
 						i(142157),	-- Aran's Relaxing Ruby
@@ -574,7 +574,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				e(1818, {	-- Mana Devourer
 					["creatureID"] = 114252,	-- Mana Devourer
-					["g"] = {
+					["groups"] = {
 						ach(11431, {	-- The Rat Pack
 							["crs"] = { 116802 },	-- Rodent of Usual Size
 						}),
@@ -591,7 +591,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				e(1838, {	-- Viz'aduum the Watcher
 					["creatureID"] = 114790,	-- Viz'aduum the Watcher
-					["g"] = {
+					["groups"] = {
 						ach(11429),	-- Mythic: Return to Karazhan
 						ach(11428),	-- Return to Karazhan Guild Run
 						i(142167),	-- Eye of Command

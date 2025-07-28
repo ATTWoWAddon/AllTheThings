@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					230946,	-- V.V. Goosworth
 					233472,	-- Volstrike the Charged
 				},
-				["g"] = {
+				["groups"] = {
 					i(234415),	-- Handcrank Casing
 					i(234386),	-- Handcrank Fuel Injector
 					i(234381),	-- Handcrank Fuel Tank
@@ -57,7 +57,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["provider"] = { "n", 234819 },	-- Ragzy Cashgrab
 					["coord"] = { 40.0, 22.4, UNDERMINE },
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						o(503440),	-- Discarded Goods
 					},
 				}),
@@ -72,7 +72,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["provider"] = { "n", 234834 },	-- Boatwright Frankle
 					["coord"] = { 61.4, 25.2, UNDERMINE },
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(234971),	-- Chunk of Charged Glass (QI!)
 						o(503450),	-- Chunk of Charged Glass
 					},
@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["provider"] = { "n", 236035 },	-- Scrapminer Krazzik
 					["coord"] = { 56.7, 79.0, UNDERMINE },
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(234970),	-- Partially-Drained Battery (QI!)
 						o(508727),	-- Partially-Drained Battery
 					},
@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["coord"] = { 42.2, 76.7, UNDERMINE },
 				["questID"] = 84927,	-- Candy Stickemup
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235347),	-- 100% Sharp Glimmerblade
 					i(235348),	-- Back Alley Shank
 					i(235304),	-- Gutter Rat Mask
@@ -105,7 +105,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["coord"] = { 59.5, 84.7, UNDERMINE },
 				["questID"] = 84907,
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235357),	-- Bulletscar Barricade
 					i(235300),	-- Cloak of Mecha Shards
 					i(235351),	-- Hypersteel CX4 Greatsword
@@ -122,7 +122,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["coord"] = { 41.2, 91.4, UNDERMINE },
 				["questID"] = 90492,
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(229955),	-- Darkfuse Spy-Eye (MOUNT!)
 					i(235832),	-- Oil-Splattered Cloak
 					i(235467),	-- Ominous Oil Residue
@@ -134,7 +134,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["coord"] = { 26.5, 68.4, UNDERMINE },
 				["questID"] = 84877,
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235309),	-- Gloomshroud Robe
 					i(235352),	-- Netherflare Wand
 					i(235350),	-- Void-forged Cudgel
@@ -144,7 +144,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["coord"] = { 60.6, 9.6, UNDERMINE },
 				["questID"] = 84911,
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235300),	-- Cloak of Mecha Shards
 					i(235351),	-- Hypersteel CX4 Greatsword
 					i(235315),	-- Rocketstep Boots
@@ -160,7 +160,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["crs"] = { 234751 },	-- Noggenfogger Recall Technician
 				["questID"] = 90489,
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235824),	-- Flame Sputterer
 					i(235310),	-- Flashy Patchwork Trousers
 					i(235327),	-- Mend-and-Match Shoulderpads
@@ -172,7 +172,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["coord"] = { 67.5, 33.5, UNDERMINE },
 				["questID"] = 84928,
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235323),	-- Blastshell Bracers
 					i(235303),	-- Seafused Brimstone Band
 					i(235319),	-- Tidebomb Chestpiece
@@ -186,7 +186,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				},
 				["questID"] = 90488,
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235835),	-- Braided Wire Wrap
 					i(235300),	-- Cloak of Mecha Shards
 					i(235351),	-- Hypersteel CX4 Greatsword
@@ -197,7 +197,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["coord"] = { 47.0, 55.7, UNDERMINE },
 				["questID"] = 84926,	-- Nitro
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235318),	-- Ironfang Plate Legguards
 					i(235325),	-- Rusthide Gloves
 					i(235324),	-- Scavenger's Lost Bind
@@ -211,7 +211,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["coord"] = { 25.3, 36.7, UNDERMINE },
 				["questID"] = 84918,	-- Court of Rats
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235308),	-- Filthtread Boots
 					i(235359),	-- Ratfang Toxin
 					i(235326),	-- Ratspit's Heirloom Wristwraps
@@ -221,7 +221,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["coord"] = { 41.8, 25.3, UNDERMINE },
 				["questID"] = 84922,
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235300),	-- Cloak of Mecha Shards
 					i(235351),	-- Hypersteel CX4 Greatsword
 					i(235322),	-- Junkyard Clawguards
@@ -234,7 +234,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["coord"] = { 68.6, 81.2, UNDERMINE },
 				["questID"] = 84917,	-- Scrapbeak
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235301),	-- Drape of the Dazzling Feather
 					i(235321),	-- Feather-Spike Girdle
 					i(235305),	-- Golfer's Truestrike Gloves
@@ -249,7 +249,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				},
 				["questID"] = 90491,
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235831),	-- Battery-Powered Longshank
 					i(235830),	-- Unstable Missilecaps
 					i(235829),	-- Welded Scrap Hood
@@ -263,7 +263,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["coord"] = { 52.3, 40.8, UNDERMINE },
 				["questID"] = 84895,
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235347),	-- 100% Sharp Glimmerblade
 					i(235310),	-- Flashy Patchwork Trousers
 					i(235327),	-- Mend-and-Match Shoulderpads
@@ -275,7 +275,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["coord"] = { 41.3, 43.6, UNDERMINE },
 				["questID"] = 85004,	-- Swigs Farsight
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235347),	-- 100% Sharp Glimmerblade
 					i(235310),	-- Flashy Patchwork Trousers
 					i(235314),	-- Knightrider's Steelfists
@@ -288,7 +288,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["coord"] = { 36.2, 43.3, UNDERMINE },
 				["questID"] = 84919,	-- Tally Doublespeak
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235328),	-- Boots of the Silver Tongue
 					i(235310),	-- Flashy Patchwork Trousers
 					i(235355),	-- Gossi-blin's Baton
@@ -300,7 +300,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["coord"] = { 63.6, 50.3, UNDERMINE },
 				["questID"] = 84884,	-- Junk Wall
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235300),	-- Cloak of Mecha Shards
 					i(235351),	-- Hypersteel CX4 Greatsword
 					i(235315),	-- Rocketstep Boots
@@ -312,7 +312,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["coord"] = { 54.1, 50.3, UNDERMINE },
 				["questID"] = 84921,	-- Thwack
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235347),	-- 100% Sharp Glimmerblade
 					i(235317),	-- Chestplate of the Ultimatum
 					i(235353),	-- Debtsmasher Axe
@@ -326,7 +326,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["coord"] = { 36.9, 78.2, UNDERMINE },
 				["questID"] = 84920,
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235347),	-- 100% Sharp Glimmerblade
 					i(235329),	-- Cowl of Acidic Mire
 					i(235310),	-- Flashy Patchwork Trousers
@@ -341,7 +341,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				["coord"] = { 62.7, 26.1, UNDERMINE },
 				["questID"] = 90490,
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235373),	-- Abyssal Volt
 					i(235826),	-- Electric Wristrags
 					i(235828),	-- Electrocution Warning

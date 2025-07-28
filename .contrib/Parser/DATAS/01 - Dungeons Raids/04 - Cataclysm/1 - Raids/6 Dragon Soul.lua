@@ -29,10 +29,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["qg"] = 55476,	-- Lord Afrasastrasz
 						["sourceQuest"] = 29801,	-- Proving Your Worth
 						["coord"] = { 50.2, 59.6, 409 },	-- Dragon Soul
+						["description"] = "Yes, you actually have to pay the 10 000 gold to progress on this questline.",
 						["cost"] = {
 							{ "i", 74752, 1 },	-- Solved Cipher
 						},
-						["description"] = "Yes, you actually have to pay the 10 000 gold to progress on this questline.",
 						["groups"] = {
 							i(74749, {	-- Charging Decoder Ring
 								["description"] = "Just log out for 12 hours. Read a book or something!",
@@ -66,8 +66,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 					q(30093, {	-- Assassinate Creed
 						["qg"] = 57770,	-- Zazzo Twinklefingers
-						["coord"] = { 70.0, 40.8, RUINS_OF_GILNEAS },
 						["sourceQuest"] = 30092,	-- Our Man in Gilneas
+						["coord"] = { 70.0, 40.8, RUINS_OF_GILNEAS },
 						["cr"] = 57802,	-- Lord Hiram Creed <Warlord of the Blackhowl>
 					}),
 					q(30109, {	-- Blood of the Betrayer
@@ -116,17 +116,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 					q(30116, {	-- Sharpening Your Fangs
 						["qg"] = 57777,	-- Wrathion <The Black Prince>
-						["description"] = "This quest requires you to turn in 60 unopened Elementium Gem Clusters.",
 						["sourceQuest"] = 30113,	-- Victory in the Depths
 						["coord"] = { 71.4, 45.6, HILLSBRAD_FOOTHILLS },
+						["description"] = "This quest requires you to turn in 60 unopened Elementium Gem Clusters.",
 						["cost"] = {
 							{ "i", 77952, 60 },	-- Elementium Gem Cluster
 						},
 					}),
 					q(30106, {	-- The Deed is Done
 						["qg"] = 57770,	-- Zazzo Twinklefingers
-						["coord"] = { 70.0, 40.8, RUINS_OF_GILNEAS },
 						["sourceQuest"] = 30093,	-- Assassinate Creed
+						["coord"] = { 70.0, 40.8, RUINS_OF_GILNEAS },
 						["groups"] = {
 							i(77945),	-- Fear
 							i(77946),	-- Vengeance
@@ -134,8 +134,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 					q(29847, {	-- To Catch a Thief
 						["qg"] = 56375,	-- Mostrasz
-						["coord"] = { 67.8, 45.2, HILLSBRAD_FOOTHILLS },
 						["sourceQuest"] = 29934,	-- To Ravenholdt
+						["coord"] = { 67.8, 45.2, HILLSBRAD_FOOTHILLS },
 					}),
 					q(29934, {	-- To Ravenholdt
 						["qg"] = 55488,	-- Corastrasza

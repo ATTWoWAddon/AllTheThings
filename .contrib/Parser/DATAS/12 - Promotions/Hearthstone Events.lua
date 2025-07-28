@@ -100,8 +100,8 @@ root(ROOTS.Promotions, {
 					},
 				}),
 				q(79178, {	-- Play Hearthstone!
-					["sourceQuests"] = { 79184 },	-- It's Hearthstone's Anniversary!
 					["provider"] = { "n", 215409 },	-- MC Farala
+					["sourceQuests"] = { 79184 },	-- It's Hearthstone's Anniversary!
 					["coord"] = { 61.6, 31.1, VALDRAKKEN },
 					["groups"] = {
 						i(211965),	-- Hearthstone Wild Card

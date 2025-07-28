@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sourceQuests"] = { 47219 },	-- A Vessel Made Ready
 				["provider"] = { "n", 121230 },	-- Alleria Windrunner
 				["coord"] = { 28.3, 47.0, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(152602),	-- Remnant of Nhal'athoth (QI!)
 				},
 			}),
@@ -47,7 +47,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sourceQuests"] = { 47238 },	-- The Seat of the Triumvirate
 				["provider"] = { "o", 271103 },	-- Prayer Effigy
 				["coord"] = { 46.7, 68.8, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(147763),	-- Fragmented Prayers (QI!)
 				},
 			}),
@@ -58,10 +58,10 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				},
 				["provider"] = { "n", 121597 },	-- Locus-Walker
 				["coord"] = { 32.0, 37.4, EREDATH },
-				["g"] = {
+				["groups"] = {
 					o(273833, {	-- Heart of Nhal'athoth
 						["coord"] = { 26.6, 45.0, EREDATH },
-						["g"] = { i(151088) },	-- Heart of Nhal'athoth (QI!)
+						["groups"] = { i(151088) },	-- Heart of Nhal'athoth (QI!)
 					}),
 				},
 			}),
@@ -85,7 +85,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sourceQuests"] = { 47686 },	-- Not-So-Humble Beginnings
 				["provider"] = { "n", 123413 },	-- Archmage Y'mera
 				["coord"] = { 59.5, 50.5, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(151624),	-- Y'mera's Arcanocrystal (QI!)
 				},
 			}),
@@ -93,7 +93,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sourceQuests"] = { 46815 },	-- Eredath, Jewel of Argus
 				["provider"] = { "n", 120533 },	-- Prophet Velen
 				["coord"] = { 54.5, 78.0, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(152408),	-- Stolen Pylon Core (QI!)
 					i(153052),	-- Depleted Pylon Core
 				},
@@ -111,7 +111,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sourceQuests"] = { 47883 },	-- The Longest Vigil
 				["provider"] = { "n", 124070 },	-- Vigilant Quoram
 				["coord"] = { 59.8, 50.5, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(151126),	-- Fragment of Acuity (QI!)
 					i(151128),	-- Fragment of Guile (QI!)
 					i(151127),	-- Fragment of Wit (QI!)
@@ -131,7 +131,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sourceQuests"] = { 47686 },	-- Not-So-Humble Beginnings
 				["provider"] = { "n", 123413 },	-- Archmage Y'mera
 				["coord"] = { 59.5, 50.5, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(151366),	-- Partially Digested Arcana (QI!)
 				},
 			}),
@@ -139,7 +139,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sourceQuests"] = { 46815 },	-- Eredath, Jewel of Argus
 				["provider"] = { "n", 120533 },	-- Prophet Velen
 				["coord"] = { 54.5, 78.0, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(152407),	-- Argunite Keystone (QI!)
 				},
 			}),
@@ -214,7 +214,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				},
 				["provider"] = { "n", 124070 },	-- Vigilant Quoram
 				["coord"] = { 59.8, 50.5, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(151476),	-- Sigil of Awakening (QI!)
 				},
 			}),
@@ -238,7 +238,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				},
 				["provider"] = { "n", 121230 },	-- Alleria Windrunner
 				["coord"] = { 43.5, 67.5, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(151563),	-- Hallowed Prayer Effigy (QI!)
 				},
 			}),

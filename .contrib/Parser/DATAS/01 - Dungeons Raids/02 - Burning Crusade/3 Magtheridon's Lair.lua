@@ -66,12 +66,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(13430, {	-- Trial of the Naaru: Magtheridon
 					["qg"] = 18481,	-- A'dal
+					["altQuests"] = { 10888 },	-- Trial of the Naaru: Magtheridon (legacy version)
 					["sourceQuests"] = {
 						10884,	-- Trial of the Naaru: Mercy
 						10885,	-- Trial of the Naaru: Strength
 						10886,	-- Trial of the Naaru: Tenacity
 					},
-					["altQuests"] = { 10888 },	-- Trial of the Naaru: Magtheridon (legacy version)
 					["coord"] = { 54.2, 44.4, SHATTRATH_CITY },
 					["timeline"] = { ADDED_3_0_2 },
 					["groups"] = {

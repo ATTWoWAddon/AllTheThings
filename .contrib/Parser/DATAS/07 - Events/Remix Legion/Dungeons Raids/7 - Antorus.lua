@@ -20,7 +20,7 @@
 				919,	-- Upper Deck
 				920,	-- Lower Deck
 			},
-			["g"] = {
+			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(19958, {	-- Raid Finder: Siege of Orgrimmar
 						crit(65761, {	-- Immerseus
@@ -626,7 +626,7 @@
 					}),
 					e(869, {	-- Garrosh Hellscream
 						["crs"] = { 71865 },	-- Garrosh Hellscream
-						["g"] = {
+						["groups"] = {
 							i(224461),	-- Bones of Mannoroth
 						}
 					}),
@@ -840,7 +840,7 @@
 					}),
 					e(869, {	-- Garrosh Hellscream
 						["crs"] = { 71865 },	-- Garrosh Hellscream
-						["g"] = {
+						["groups"] = {
 							i(224461),	-- Bones of Mannoroth
 						}
 					}),
@@ -1153,7 +1153,7 @@
 					}),
 					e(869, {	-- Garrosh Hellscream
 						["crs"] = { 71865 },	-- Garrosh Hellscream
-						["g"] = {
+						["groups"] = {
 							i(224461),	-- Bones of Mannoroth
 						}
 					}),

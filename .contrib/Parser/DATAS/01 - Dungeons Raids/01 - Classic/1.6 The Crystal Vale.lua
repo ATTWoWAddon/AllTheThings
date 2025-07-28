@@ -14,7 +14,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(7785, {	-- Examine the Vessel
 					["qg"] = 14347,	-- Highlord Demitrian
 					["provider"] = { "i", 19016 },	-- Vessel of Rebirth
-					["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
 					["coords"] = {
 						-- #if AFTER LEGION
 						{ 29.6, 10.6, SILITHUS },
@@ -22,24 +21,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 21.7, 8.6, SILITHUS },
 						-- #endif
 					},
+					["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
 					["timeline"] = { REMOVED_1_15_4 },
 					["maps"] = { MOLTEN_CORE },
-					["classes"] = SWORD_CLASSES,
 					["cost"] = {
 						{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
 						{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
 					},
+					["classes"] = SWORD_CLASSES,
 				}),
 				q(85442, {	-- Examine the Vessel
 					["qg"] = 232309,	-- Highlord Demitrian
 					["provider"] = { "i", 19016 },	-- Vessel of Rebirth
 					["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
 					["maps"] = { MOLTEN_CORE },
-					["classes"] = SWORD_CLASSES,
 					["cost"] = {
 						{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
 						{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
 					},
+					["classes"] = SWORD_CLASSES,
 				}),
 				q(7787, {	-- Rise, Thunderfury!
 					["qg"] = 14347,	-- Highlord Demitrian
@@ -69,8 +69,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(7786, {	-- Thunderaan the Windseeker
 					["qg"] = 14347,	-- Highlord Demitrian
-					["sourceQuest"] = 7785,	-- Examine the Vessel
 					["altQuests"] = { 7521 },	-- Thunderaan the Windseeker [Original?]
+					["sourceQuest"] = 7785,	-- Examine the Vessel
 					["coords"] = {
 						-- #if AFTER LEGION
 						{ 29.6, 10.6, SILITHUS },

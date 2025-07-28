@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						10393,	-- Undercity Cockroach (PET!)
 					},
 				},
-				["g"] = {
+				["groups"] = {
 					i(29901),	-- Blue Moth (PET!)
 					i(29902),	-- Red Moth (PET!)
 					i(29903),	-- Yellow Moth (PET!)
@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			n(134345, {	-- Collector Kojo <Tortollan Seekers Emissary>
 				["coord"] = { 71.5, 30.3, ZULDAZAR },
-				["g"] = bubbleDownClassicRep(FACTION_TORTOLLAN_SEEKERS, {
+				["groups"] = bubbleDownClassicRep(FACTION_TORTOLLAN_SEEKERS, {
 					{		-- Neutral
 					}, {	-- Friendly
 					}, {	-- Honored
@@ -132,14 +132,14 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			n(124034, {	-- Golkada
 				["coord"] = { 71.2, 29.6, ZULDAZAR },	-- Golkada
-				["g"] = {
+				["groups"] = {
 					i(163564),	-- Extra-dry Fruitcake
 				},
 			}),
 			n(138099, {	-- Isabel Marigan <Alchemy Supplies>
 				["coord"] = { 76.4, 49.0, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(9144, {	-- Wildvine Potion
 						["timeline"] = { ADDED_8_0_1 },
 					}),
@@ -148,11 +148,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(161590, {	-- Jinxy Blastwheel <Profession Liason>
 				["coord"] = { 52.7, 58.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = COMMON_BFA_PVP_RECIPES_S4,
+				["groups"] = COMMON_BFA_PVP_RECIPES_S4,
 			}),
 			n(136219, {	-- Mona <Butterflies>
 				["coord"] = { 71.6, 29.4, ZULDAZAR },
-				["g"] = {
+				["groups"] = {
 					i(163508, {	-- Blue Flitter (PET!)
 						["cost"] = { { "i", POLISHED_PET_CHARM, 100 }, },
 					}),
@@ -161,7 +161,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(135249, {	-- Meatminder Teki
 				["coord"] = { 66.8, 41.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(157781),	-- Extra-Chunky Dino Food
 					i(157780),	-- Free-Range Dino Chow
 					i(157779),	-- Infant Dino Kibble
@@ -170,14 +170,14 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(142839, {	-- Old Jen'tay
 				["description"] = "When you have 150 BfA Inscription, speak to the NPC and he will teach you the technique.",
 				["coord"] = { 76.2, 39.8, ZULDAZAR },
-				["g"] = {
+				["groups"] = {
 					i(162030),	-- Technique: Glyph of the Humble Flyer (RECIPE!)
 				},
 			}),
 			n(142552, {	-- Ozgrom Ragefang <Profession Liason>
 				["races"] = HORDE_ONLY,
 				["coord"] = { 52.6, 58.2, ZULDAZAR },
-				["g"] = COMMON_BFA_PVP_RECIPES_S1_S2,
+				["groups"] = COMMON_BFA_PVP_RECIPES_S1_S2,
 			}),
 			n(140139, {	-- Spearmon Kol
 				["coord"] = { 77.0, 16.6, ZULDAZAR },
@@ -193,7 +193,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(143555, {	-- Xander Silberman
 				["coord"] = { 51.6, 58.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(168920, {	-- Azerite-Encrusted Timequartz (Rank 1)
 						["sourceQuests"] = { 56500 },	-- Storming the Battlefields
 						["cost"] = { { "i", 137642, 5 }, },		-- 5x Mark of Honor

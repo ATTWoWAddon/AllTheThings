@@ -73,7 +73,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "All food is sold by Tanor in Ardenweald at |cFFFFFFFF65.0, 19.6|r.",
 				["coord"] = { 65.0, 19.6, ARDENWEALD },
 				["crs"] = { 164725 },	-- Tanor <Food & Drink>
-				["g"] = {
+				["groups"] = {
 					crit(49954, {["provider"] = { "i", 178228 }}),	-- Glittersnap Snowpeas
 					crit(49955, {["provider"] = { "i", 173761 }}),	-- Glazed Glowberries
 					crit(49956, {["provider"] = { "i", 173759 }}),	-- Candied Brightbark
@@ -96,7 +96,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "You have to be in the Night Fae covenant to personally summon mobs, but anyone can kill and loot the mobs if they are summoned by someone else.  Only one mob is summonable per day.",
 				["coord"] = { 41.5, 44.8, ARDENWEALD },
 				["crs"] = { 171743 },	-- Dapperdew
-				["g"] = {
+				["groups"] = {
 					crit(48705, {	-- Xavius
 						["_npcs"] = { 166146 },
 					}),

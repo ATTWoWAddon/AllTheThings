@@ -110,7 +110,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 					29902,	-- Red Moth (PET!)
 					29903,	-- Yellow Moth (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					i(136905),	-- Ridgeback Piglet (PET!)
 					i(136908),	-- Thaumaturgical Piglet (PET!)
 					i(139789),	-- Transmutant (PET!)
@@ -538,7 +538,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 	prof(FISHING, {
 		spell(201943, {	-- Better Luck Next Time
 			["maps"] = { AZSUNA, BROKEN_SHORE, EYE_OF_AZSHARA, HIGHMOUNTAIN, STORMHEIM, SURAMAR, VALSHARAH },
-			["g"] = {
+			["groups"] = {
 				i(142528),	-- Crate of Bobbers: Can of Worms (TOY!)
 				i(142529),	-- Crate of Bobbers: Cat Head (TOY!)
 				i(142530),	-- Crate of Bobbers: Tugboat (TOY!)

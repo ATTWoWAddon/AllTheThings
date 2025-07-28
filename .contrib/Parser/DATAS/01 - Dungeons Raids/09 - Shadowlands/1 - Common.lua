@@ -49,7 +49,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				2052,	-- The Grand Design
 				2061,	-- Ephemeral Plains
 			},
-			["g"] = {
+			["groups"] = {
 				i(192466, {	-- Puzzling Cartel Dinar
 					["bonusID"] = 3407,	-- "Priceless"
 				}),
@@ -83,7 +83,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				2052,	-- The Grand Design
 				2061,	-- Ephemeral Plains
 			},
-			["g"] = {
+			["groups"] = {
 				i(192466, {	-- Puzzling Cartel Dinar
 					["bonusID"] = 3407,	-- "Priceless"
 				}),
@@ -117,7 +117,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				2052,	-- The Grand Design
 				2061,	-- Ephemeral Plains
 			},
-			["g"] = {
+			["groups"] = {
 				i(192466, {	-- Puzzling Cartel Dinar
 					["bonusID"] = 3407,	-- "Priceless"
 				}),

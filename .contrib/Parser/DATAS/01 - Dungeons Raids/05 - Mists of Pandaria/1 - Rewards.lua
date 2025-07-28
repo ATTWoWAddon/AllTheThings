@@ -1,9 +1,9 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_1_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	n(REWARDS, {
-		applyclassicphase(MOP_PHASE_LANDFALL, currency(697, {	-- Elder Charm of Good Fortune
+		applyclassicphase(MOP_PHASE_ONE, currency(697, {	-- Elder Charm of Good Fortune
 			["description"] = "Purchased from Commander Lo Ping in Townlong Steppes |cffffffff(37.8, 64.6)|r for 20 Lesser Charms of Good Fortune.  You also have a chance to get them from killing rares or opening Troves of the Thunder King on the Isle of Thunder.\n",
 			["coord"] = { 37.8, 64.6, TOWNLONG_STEPPES },	-- Commander Lo Ping
 			["cost"] = { { "c", 738, 20 } },	-- 20x Lesser Charm of Good Fortune

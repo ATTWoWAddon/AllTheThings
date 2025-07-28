@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 		n(ZONE_DROPS, {
 			i(161344, {	-- Abyssal Fragment
 				["description"] = "These are a World Drop in any zone and can be bought from the Auction House.  Once you collect 20, combine them and use them on the \"Abyssal Icon\" located at 73.5, 23.6 in Stormsong Valley.",
-				["g"] = {
+				["groups"] = {
 					i(161479, {	-- Nazjatar Blood Serpent (MOUNT!)
 						["coord"] = { 73.5, 23.6, STORMSONG_VALLEY },
 						["crs"] = { 140474 },	-- Adherent of the Abyss

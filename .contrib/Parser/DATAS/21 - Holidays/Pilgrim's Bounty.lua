@@ -426,8 +426,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				}),
 				q(14040, {	-- Pumpkin Pie (Horde)
 					["qg"] = 34768,	-- William Mullins
-					["coord"] = { 65.8, 13.2, UNDERCITY },
 					["sourceQuest"] = 14037,	-- Spice Bread Stuffing (Horde)
+					["coord"] = { 65.8, 13.2, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
@@ -571,8 +571,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				q(14053, {	-- We're Out of Cranberry Chutney Again? (Alliance)
 					["qg"] = 34710,	-- Ellen Moore
 					["coord"] = { 33.7, 50.6, ELWYNN_FOREST },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = { { "i", 44840, 20 } },	-- Cranberry Chutney
+					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["_drop"] = { "g" },
 				}),

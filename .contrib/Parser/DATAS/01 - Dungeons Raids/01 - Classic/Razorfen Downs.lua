@@ -214,10 +214,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27024, {	-- Partners in Crime
 					["qg"] = 44837,	-- Koristrasza
-					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 					-- #if AFTER 6.0.2
 					["description"] = "This quest gets marked as completed when you complete the quest '|cFFFFD700Blackthorn's Lieutenants|r' (33513).",
 					-- #endif
+					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 					["lvl"] = lvlsquish(40, 40, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Glutton slain
@@ -253,10 +253,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						27063,	-- Looming Threat [Alliance]
 						27062,	-- Looming Threat [Horde]
 					},
-					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 					-- #if AFTER 6.0.2
 					["description"] = "This quest gets marked as completed when you complete the quest '|cFFFFD700The Ritual|r' (33514).",
 					-- #endif
+					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 					["lvl"] = lvlsquish(42, 42, 15),
 					-- #if BEFORE 6.0.1.18322
 					["groups"] = {

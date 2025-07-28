@@ -313,7 +313,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			2126,	-- The Clutchwarren
 			2135,	-- Valdrakken
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(17110, {	-- The Primal Bulwark
 					crit(55109, {	-- Eranog
@@ -422,7 +422,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						16442,	-- Incubation Extermination
 						16451,	-- The Ol Raszle Daszle
 					}},
-					["g"] = {
+					["groups"] = {
 						i(192806),	-- Raging Magmammoth (MOUNT!)
 					},
 				}),
@@ -519,7 +519,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				["coord"] = { 60.6, 53.8, THALDRASZUS },
 				["modelScale"] = 4,
 				["catalystID"] = 3,	-- ItemBonus.Value_0 DF:S1
-				["g"] = {
+				["groups"] = {
 					Difficulty(DIFFICULTY.RAID.LFR, {["upgradeTrackID"]=UPGRADETRACKS.VETERAN}).AddGroups(
 						bubbleDownFiltered({bonusID=451},FILTERFUNC_itemID,
 						ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.LFR))
@@ -638,7 +638,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				n(QUESTS, {
 					q(71018, {	-- Vault of the Incarnates: Break a Few Eggs (N)
 						["provider"] = { "n", 193460 },	-- Kalecgos
-						["g"] = {
+						["groups"] = {
 							i(200225),	-- Shard of the Greatstaff
 						},
 					}),
@@ -678,7 +678,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				n(QUESTS, {
 					q(71019, {	-- Vault of the Incarnates: Break a Few Eggs (H)
 						["provider"] = { "n", 193460 },	-- Kalecgos
-						["g"] = {
+						["groups"] = {
 							i(200226),	-- Shard of the Greatstaff
 						},
 					}),
@@ -700,7 +700,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				n(QUESTS, {
 					q(71020, {	-- Vault of the Incarnates: Break a Few Eggs (M)
 						["provider"] = { "n", 193460 },	-- Kalecgos
-						["g"] = {
+						["groups"] = {
 							i(200227),	-- Shard of the Greatstaff
 						},
 					}),
@@ -747,13 +747,13 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					ach(17108, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }}),	-- Cutting Edge: Raszageth the Storm-Eater
 					ach(17116, bubbleDownSelf({["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {	-- Hall of Fame: Raszageth the Storm-Eater (A)
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							title(487),	-- <Name>, Famed Slayer of Raszageth
 						},
 					})),
 					ach(17118, bubbleDownSelf({["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {	-- Hall of Fame: Raszageth the Storm-Eater (H)
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							title(487),	-- <Name>, Famed Slayer of Raszageth
 						},
 					})),

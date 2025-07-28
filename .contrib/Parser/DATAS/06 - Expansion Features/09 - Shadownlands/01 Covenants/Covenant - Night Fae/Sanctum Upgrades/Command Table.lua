@@ -6,11 +6,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	n(NIGHT_FAE, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = 3641394,
-			["g"] = {
+			["groups"] = {
 				n(COMMAND_TABLE, {
 					n(TIER_ONE, {
 						["icon"] = 3675495,
-						["g"] = {
+						["groups"] = {
 							n(FOLLOWERS, bubbleDownSelf({
 								["collectible"] = false,
 								["u"] = UNLEARNABLE,	-- Temporary troops
@@ -31,85 +31,85 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
-									["g"] = {
+									["groups"] = {
 										follower(1338),	-- Elwyn
 									},
 								}),
 								q(61857, {	-- Adventurer: Groonoomcrooek
-									["description"] = "Requires Renown 38.",
-									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
-									["g"] = {
+									["description"] = "Requires Renown 38.",
+									["groups"] = {
 										follower(1288),	-- Groonoomcrooek
 									},
 								}),
 								q(61854, {	-- Adventurer: Master Sha'lor
-									["description"] = "Requires Renown 17.",
-									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
-									["g"] = {
+									["description"] = "Requires Renown 17.",
+									["groups"] = {
 										follower(1284),	-- Master Sha'lor
 									},
 								}),
 								q(61852, {	-- Adventurer: Guardian Kota
-									["description"] = "Requires Renown 4.",
-									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
-									["g"] = {
+									["description"] = "Requires Renown 4.",
+									["groups"] = {
 										follower(1283),	-- Guardian Kota
 									},
 								}),
 								q(61855, {	-- Adventurer: Qadarin
-									["description"] = "Requires Renown 27.",
-									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
-									["g"] = {
+									["description"] = "Requires Renown 27.",
+									["groups"] = {
 										follower(1286),	-- Qadarin
 									},
 								}),
 								q(64458, {	-- Adventurer: Sulanoom
-									["description"] = "Requires Renown 44.",
-									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
-									["g"] = {
+									["description"] = "Requires Renown 44.",
+									["groups"] = {
 										follower(1337),	-- Sulanoom
 									},
 								}),
 								q(61853, {	-- Adventurer: Te'zan
-									["description"] = "Requires Renown 12.",
-									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
-									["g"] = {
+									["description"] = "Requires Renown 12.",
+									["groups"] = {
 										follower(1285),	-- Te'zan
 									},
 								}),
 								q(61856, {	-- Adventurer: Watcher Vesperbloom
-									["description"] = "Requires Renown 33.",
-									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
-									["g"] = {
+									["description"] = "Requires Renown 33.",
+									["groups"] = {
 										follower(1287),	-- Watcher Vesperbloom
 									},
 								}),
 								q(64460, {	-- Adventurer: Yanlar
-									["description"] = "Requires Renown 71.",
-									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+									["sourceQuest"] = 61553,	-- Know Where to Strike
 									["coord"] = { 44.7, 56.3, ARDENWEALD },
-									["g"] = {
+									["description"] = "Requires Renown 71.",
+									["groups"] = {
 										follower(1339),	-- Yanlar
 									},
 								}),
 								q(61553, {	-- Know Where to Strike
-									["sourceQuests"] = { 61552 },	-- The Hunt Watches
 									["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+									["sourceQuests"] = { 61552 },	-- The Hunt Watches
 									["coord"] = { 44.6, 56.2, ARDENWEALD },
 								}),
 								q(61552, {	-- The Hunt Watches

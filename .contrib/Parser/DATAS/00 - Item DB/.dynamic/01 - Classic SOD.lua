@@ -1,4 +1,4 @@
-﻿-- #if SEASON_OF_DISCOVERY
+-- #if SEASON_OF_DISCOVERY
 _.ItemDB = {
 [25]={["class"]=2,["equippable"]=1,["iLvl"]=2,["inventoryType"]=21,["name"]="Worn Shortsword",["q"]=1,["subclass"]=7},
 [35]={["class"]=2,["equippable"]=1,["iLvl"]=2,["inventoryType"]=17,["name"]="Bent Staff",["q"]=1,["subclass"]=10},

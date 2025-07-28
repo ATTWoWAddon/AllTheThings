@@ -39,11 +39,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(66, 66, 15),
 				})),
 				applyclassicphase(TBC_PHASE_TWO, q(10445, {	-- The Vials of Eternity
-					["providers"] = {
-						{ "n", 19935 },	-- Soridormi
-						{ "n", 19936 },	-- Arazmodu
+					["qgs"] = {
+						19935,	-- Soridormi
+						19936,	-- Arazmodu
 					},
-					["description"] = "The questgiver can be found walking around the Caverns of Time.",
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 39.4, 44.4, CAVERNS_OF_TIME },
@@ -51,6 +50,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 59.6, 54, TANARIS },
 						-- #endif
 					},
+					["description"] = "The questgiver can be found walking around the Caverns of Time.",
 					["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 					["maps"] = {
 						TEMPEST_KEEP_THE_EYE,
@@ -67,9 +67,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(TBC_PHASE_TWO, q(13432, {	-- The Vials of Eternity
-					["providers"] = {
-						{ "n", 19935 },	-- Soridormi
-						{ "n", 19936 },	-- Arazmodu
+					["qgs"] = {
+						19935,	-- Soridormi
+						19936,	-- Arazmodu
 					},
 					["altQuests"] = { 10445 },	-- The Vials of Eternity (legacy version)
 					["description"] = "The questgiver can be found walking around the Caverns of Time.",
@@ -97,8 +97,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 66.0, 49.6, TANARIS },
 						-- #endif
 					},
-					["lvl"] = lvlsquish(66, 66, 15),
 					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(66, 66, 15),
 				})),
 			}),
 			-- #endif

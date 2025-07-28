@@ -7,7 +7,7 @@ root(ROOTS.Zones, {
 			["icon"] = 374221,
 			["isRaid"] = true,
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				n(FLIGHT_PATHS, {
 					fp(1408, {	-- Warspear, Ashran
 						["coord"] = { 44.2, 33.9, WARSPEAR },
@@ -25,37 +25,37 @@ root(ROOTS.Zones, {
 					prof(ALCHEMY, {
 						n(87542, {	-- Joshua Alvarez <Alchemy Recipes>
 							["coord"] = { 61.0, 27.4, WARSPEAR },
-							["g"] = appendGroups(COMMON_DRAENOR_ALCHEMY_RECIPES, {DRAENOR_ALCHEMY}),
+							["groups"] = appendGroups(COMMON_DRAENOR_ALCHEMY_RECIPES, {DRAENOR_ALCHEMY}),
 						}),
 					}),
 					prof(BLACKSMITHING, {
 						n(87550, {	-- Nonn Threeratchet <Blacksmithing Plans>
 							["coord"] = { 75.0, 37.9, WARSPEAR },
-							["g"] = appendGroups(COMMON_DRAENOR_BLACKSMITHING_RECIPES, {DRAENOR_BLACKSMITHING}),
+							["groups"] = appendGroups(COMMON_DRAENOR_BLACKSMITHING_RECIPES, {DRAENOR_BLACKSMITHING}),
 						}),
 					}),
 					prof(ENCHANTING, {
 						n(86045, {	-- Ged'kah <Enchanting Recipes>
 							["coord"] = { 78.0, 53.7, WARSPEAR },
-							["g"] = appendGroups(COMMON_DRAENOR_ENCHANTING_RECIPES, {DRAENOR_ENCHANTING}),
+							["groups"] = appendGroups(COMMON_DRAENOR_ENCHANTING_RECIPES, {DRAENOR_ENCHANTING}),
 						}),
 					}),
 					prof(ENGINEERING, {
 						n(87552, {	-- Nik Steelrings <Engineering Plans>
 							["coord"] = { 70.5, 38.9, WARSPEAR },
-							["g"] = appendGroups(COMMON_DRAENOR_ENGINEERING_RECIPES, {DRAENOR_ENGINEERING}),
+							["groups"] = appendGroups(COMMON_DRAENOR_ENGINEERING_RECIPES, {DRAENOR_ENGINEERING}),
 						}),
 					}),
 					prof(LEATHERWORKING, {
 						n(87549, {	-- Garm Gladestride <Leatherworking Patterns>
 							["coord"] = { 50.4, 27.4, WARSPEAR },
-							["g"] = appendGroups(COMMON_DRAENOR_LEATHERWORKING_RECIPES, {DRAENOR_LEATHERWORKING}),
+							["groups"] = appendGroups(COMMON_DRAENOR_LEATHERWORKING_RECIPES, {DRAENOR_LEATHERWORKING}),
 						}),
 					}),
 					prof(TAILORING, {
 						n(87543, {	-- Petir Starocean <Tailoring Patterns>
 							["coord"] = { 59.0, 42.8, WARSPEAR },
-							["g"] = appendGroups(COMMON_DRAENOR_TAILORING_RECIPES, {DRAENOR_TAILORING}),
+							["groups"] = appendGroups(COMMON_DRAENOR_TAILORING_RECIPES, {DRAENOR_TAILORING}),
 						}),
 					}),
 				}),
@@ -65,7 +65,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 65.3, 59.3, WARSPEAR },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
-						["g"] = {
+						["groups"] = {
 							i(127831),	-- Challenger's Strongbox
 						},
 					}),
@@ -74,7 +74,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 65.3, 59.3, WARSPEAR },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
-						["g"] = {
+						["groups"] = {
 							i(127831),	-- Challenger's Strongbox
 						},
 					}),
@@ -83,7 +83,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 65.3, 59.3, WARSPEAR },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
-						["g"] = {
+						["groups"] = {
 							i(127831),	-- Challenger's Strongbox
 						},
 					}),
@@ -92,7 +92,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 65.3, 59.3, WARSPEAR },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
-						["g"] = {
+						["groups"] = {
 							i(127831),	-- Challenger's Strongbox
 						},
 					}),
@@ -101,7 +101,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 65.3, 59.3, WARSPEAR },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
-						["g"] = {
+						["groups"] = {
 							i(127831),	-- Challenger's Strongbox
 						},
 					}),
@@ -110,7 +110,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 65.3, 59.3, WARSPEAR },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
-						["g"] = {
+						["groups"] = {
 							i(127831),	-- Challenger's Strongbox
 						},
 					}),
@@ -119,7 +119,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 65.3, 59.3, WARSPEAR },
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
-						["g"] = {
+						["groups"] = {
 							i(127831),	-- Challenger's Strongbox
 						},
 					}),
@@ -301,7 +301,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 81765 },	-- Vivianne
 						["coord"] = { 62.1, 23.0, WARSPEAR },
 						["sourceQuest"] = 36709,	-- Burning Beauty
-						["g"] = {
+						["groups"] = {
 							follower(216),	-- Vivianne
 						},
 					}),
@@ -313,10 +313,10 @@ root(ROOTS.Zones, {
 				}),
 				n(VENDORS, {
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						n(86036, {	-- Beska Redtusk <Frostwolf Orcs Quartermaster>
 							["coord"] = { 53.9, 62.6, WARSPEAR },
-							["g"] = bubbleDownClassicRep(FACTION_FROSTWOLF_ORCS, {
+							["groups"] = bubbleDownClassicRep(FACTION_FROSTWOLF_ORCS, {
 								{		-- Neutral
 								}, {	-- Friendly
 									i(118664, {	-- Frostwolf Elixir
@@ -335,7 +335,7 @@ root(ROOTS.Zones, {
 									}),
 									i(119161, {	-- Contract: Karg Bloodfury
 										["cost"] = 50000000,	-- 5,000g
-										["g"] = {
+										["groups"] = {
 											follower(459),	-- Karg Bloodfury
 										},
 									}),
@@ -358,7 +358,7 @@ root(ROOTS.Zones, {
 						}),
 						n(88569, {	-- Blood Guard Axelash <Primal Gladiator>
 							["coord"] = { 48.5, 57.6, WARSPEAR },
-							["g"] = {
+							["groups"] = {
 								n(WEAPONS, {
 									i(138632, {	-- Arsenal: Primal Gladiator's Weapons
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -1015,7 +1015,7 @@ root(ROOTS.Zones, {
 						n(88161, {	-- Challenger Sunforge
 							["description"] = "Can only buy items from this vendor if you have Challenge Warlord: Gold Feat of Strength on your character.",
 							["coord"] = { 65.3, 59.3, WARSPEAR },
-							["g"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {
+							["groups"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {
 								i(118401, {	-- Arcana Shard Spire
 									["cost"] = 10000000,	-- 1,000g
 								}),
@@ -1075,7 +1075,7 @@ root(ROOTS.Zones, {
 								}),
 								un(REMOVED_FROM_GAME, i(119032, {	-- Rusted Challenger's Strongbox
 									["description"] = "This box was from the WoD Challenge Mode Dailies.",
-									["g"] = {
+									["groups"] = {
 										un(REMOVED_FROM_GAME, i(118996)),	-- Blackfire Amulet
 										un(REMOVED_FROM_GAME, i(118997)),	-- Blackfire Cape
 										un(REMOVED_FROM_GAME, i(118998)),	-- Blackfire Crystal
@@ -1151,7 +1151,7 @@ root(ROOTS.Zones, {
 								})),
 								un(REMOVED_FROM_GAME, i(127831, {	-- Challenger's Strongbox
 									["description"] = "This box was from the WoD Challenge Mode Dailies.",
-									["g"] = {
+									["groups"] = {
 										un(REMOVED_FROM_GAME, i(118997)),	-- Blackfire Cape
 										un(REMOVED_FROM_GAME, i(118998)),	-- Blackfire Crystal
 										un(REMOVED_FROM_GAME, i(118999)),	-- Blackfire Ring
@@ -1228,7 +1228,7 @@ root(ROOTS.Zones, {
 						}),
 						n(93909, {	-- Cladd Dawnstrider <Wild Gladiator>
 							["coord"] = { 49.3, 56.7, WARSPEAR },
-							["g"] = {
+							["groups"] = {
 								n(WEAPONS, {
 									i(138634, {	-- Arsenal: Wild Gladiator's Weapons (H)
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -1897,13 +1897,13 @@ root(ROOTS.Zones, {
 						}),
 						n(86382, {	-- Dawn-Seeker Alkset <Apexis Leggings Trader>
 							["coord"] = { 65.2, 64.2, WARSPEAR },
-							["g"] = {
+							["groups"] = {
 								i(119821, {	-- Contact: Dawnseeker Rukaryx
 									["cost"] = {
 										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
 										{ "g", 50000000 },	-- 5,000g
 									},
-									["g"] = {
+									["groups"] = {
 										follower(462),	-- Dawnseeker Rukaryx
 									},
 								}),
@@ -1969,7 +1969,7 @@ root(ROOTS.Zones, {
 								116768,	-- Mosshide Riverwallow (MOUNT!)
 								119821,	-- Contact: Dawnseeker Rukaryx
 							}},
-							["g"] = {
+							["groups"] = {
 								i(116976, {	-- Crystal Reinforced Doomcloak
 									["cost"] = 10000000,	-- 1,000g
 								}),
@@ -2038,7 +2038,7 @@ root(ROOTS.Zones, {
 								116768,	-- Mosshide Riverwallow (MOUNT!)
 								119821,	-- Contact: Dawnseeker Rukaryx
 							}},
-							["g"] = {
+							["groups"] = {
 								i(116967, {	-- Crystal-Leaf Bracers
 									["cost"] = 10000000,	-- 1,000g
 								}),
@@ -2095,7 +2095,7 @@ root(ROOTS.Zones, {
 								116768,	-- Mosshide Riverwallow (MOUNT!)
 								119821,	-- Contact: Dawnseeker Rukaryx
 							}},
-							["g"] = {
+							["groups"] = {
 								i(116955, {	-- Crystal-Leaf Helm
 									["cost"] = 10000000,	-- 1,000g
 								}),
@@ -2152,7 +2152,7 @@ root(ROOTS.Zones, {
 								116768,	-- Mosshide Riverwallow (MOUNT!)
 								119821,	-- Contact: Dawnseeker Rukaryx
 							}},
-							["g"] = {
+							["groups"] = {
 								i(116945, {	-- Crystal-Leaf Gloves
 									["cost"] = 10000000,	-- 1,000g
 								}),
@@ -2209,7 +2209,7 @@ root(ROOTS.Zones, {
 								116768,	-- Mosshide Riverwallow (MOUNT!)
 								119821,	-- Contact: Dawnseeker Rukaryx
 							}},
-							["g"] = {
+							["groups"] = {
 								i(115380, {	-- Crystal-Leaf Chain
 									["cost"] = 10000000,	-- 1,000g
 								}),
@@ -2262,7 +2262,7 @@ root(ROOTS.Zones, {
 						}),
 						n(128759, {	-- Dazzerian <Warspear Quartermaster>
 							["coord"] = { 49.2, 55.0, WARSPEAR },
-							["g"] = bubbleDownClassicRep(FACTION_VOLJINS_SPEAR, {
+							["groups"] = bubbleDownClassicRep(FACTION_VOLJINS_SPEAR, {
 								{		-- Neutral
 								}, {	-- Friendly
 									i(115500),	-- Disposable Pocket Flying Machine
@@ -2281,7 +2281,7 @@ root(ROOTS.Zones, {
 						}),
 						n(93908, {	-- Fobbly Kickfix <Wild Combatant>
 							["coord"] = { 49.1, 56.4, WARSPEAR },
-							["g"] = {
+							["groups"] = {
 								n(WEAPONS, {
 									i(138629, {	-- Arsenal: Wild Combatant's Weapons (H)
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -2782,7 +2782,7 @@ root(ROOTS.Zones, {
 						n(93917, {	-- Malukah Lightsong <Warmongering Gladiator>
 							["races"] = HORDE_ONLY,	-- to hide it in Mark of Honor list
 							["coord"] = { 48.9, 57.3, WARSPEAR },
-							["g"] = {
+							["groups"] = {
 								n(WEAPONS, {
 									i(138636, {	-- Arsenal: Warmongering Gladiator's Weapons (H)
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -3458,7 +3458,7 @@ root(ROOTS.Zones, {
 						}),
 						n(87551, {	-- Maru'sa <Inscription Recipes>
 							["coord"] = { 75.3, 47.6, WARSPEAR },
-							["g"] = {
+							["groups"] = {
 								i(111923, {	-- Secret of Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
 									i(120136),		-- Recipe: Secrets of Draenor Inscription
 									recipe(169081),	-- War Paints
@@ -3518,7 +3518,7 @@ root(ROOTS.Zones, {
 						}),
 						n(86037, {	-- Ravenspeaker Skeega <Arakkoa Outcasts Quartermaster>
 							["coord"] = { 53.4, 59.8, WARSPEAR },
-							["g"] = bubbleDownClassicRep(FACTION_ARAKKOA_OUTCASTS, {
+							["groups"] = bubbleDownClassicRep(FACTION_ARAKKOA_OUTCASTS, {
 								{		-- Neutral
 								}, {	-- Friendly
 									i(118666, {	-- Arakkoa Elixir
@@ -3548,7 +3548,7 @@ root(ROOTS.Zones, {
 						}),
 						n(88253, {	-- Srikka <Archaeology Fragments>
 							["coord"] = { 74.4, 31.6, WARSPEAR },
-							["g"] = {
+							["groups"] = {
 								i(122606, {	-- Explorer's Notebook
 									["cost"] = { { "i", 87399, 5 } },	-- 5x  Restored Artifact
 								}),
@@ -3577,7 +3577,7 @@ root(ROOTS.Zones, {
 						}),
 						n(87774, {	-- Stone Guard Brokefist <Primal Combatant>
 							["coord"] = { 48.3, 57.5, WARSPEAR },
-							["g"] = {
+							["groups"] = {
 								n(WEAPONS, {
 									i(138626, {	-- Arsenal: Primal Combatant's Weapons (H)
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -4065,7 +4065,7 @@ root(ROOTS.Zones, {
 						}),
 						n(93916, {	-- Tae'loxe Soulshrivel <Warmongering Combatant>
 							["coord"] = { 49.2, 57.1, WARSPEAR },
-							["g"] = {
+							["groups"] = {
 								n(WEAPONS, {
 									i(138627, {	-- Arsenal: Warmongering Combatant's Weapons (H)
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -4565,7 +4565,7 @@ root(ROOTS.Zones, {
 						}),
 						n(85840, {	-- Torgg Flexington <Blueprints Trader>
 							["coord"] = { 42.6, 36.4, WARSPEAR },
-							["g"] = {
+							["groups"] = {
 								i(111929, {	-- Alchemy Lab, Level 2
 									["cost"] = { { "i", 116394, 1 }, },	-- Outpost Building Assembly Notes
 								}),

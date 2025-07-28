@@ -155,7 +155,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["description"] = "Find Mammoths to ride from the individual locations to the location specified on this achievement.",
 				["cr"] = 198163,	-- Mammoth-Tamer Tavok
 				["coord"] = { 39.6, 55.0, THE_WAKING_SHORES },	-- Turn in
-				["g"] = {
+				["groups"] = {
 					crit(55870, {	-- Smoldering Perch
 						["coord"] = { 37.2, 44.5, THE_WAKING_SHORES },
 						["cr"] = 194625,	-- Tame Magmammoth

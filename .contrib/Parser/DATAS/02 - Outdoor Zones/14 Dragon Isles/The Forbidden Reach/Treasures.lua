@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["coord"] = { 48.8, 73.1, THE_FORBIDDEN_REACH },
 				["questID"] = 74567,
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(204573),	-- Condensed Fire Magic
 					i(204574),	-- Condensed Frost Magic
 					i(204575),	-- Condensed Earth Magic
@@ -32,41 +32,41 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					{ 55.5, 93.6, THE_FORBIDDEN_REACH },
 					{ 53.6, 76.7, THE_FORBIDDEN_REACH },
 				},
-				["g"] = {
+				["groups"] = {
 					i(197000),	-- Cliffside Wylderdrake: Coiled Horns (MM!)
 				},
 			}),
 			o(385834, {	-- Journal Entry: Experiments
 				["coord"] = { 59.6, 64.9, THE_FORBIDDEN_REACH },
-				["g"] = {
+				["groups"] = {
 					i(204200),	-- Journal Entry: Experiments [A]
 					i(202329),	-- Journal Entry: Experiments [H]
 				}
 			}),
 			o(385835, {	-- Journal Entry: Relics
 				["coord"] = { 50.8, 43.4, THE_FORBIDDEN_REACH },
-				["g"] = {
+				["groups"] = {
 					i(202335),	-- Journal Entry: Relics [A]
 					i(204221),	-- Journal Entry: Relics [H]
 				},
 			}),
 			o(385832, {	-- Receiving Stone: Final Warning
 				["coord"] = { 58.9, 72.3, THE_FORBIDDEN_REACH },
-				["g"] = {
+				["groups"] = {
 					i(202328),	-- Receiving Stone: Final Warning [A]
 					i(204250),	-- Receiving Stone: Final Warning [H]
 				}
 			}),
 			o(385830, {	-- Sending Stone: Initial Report
 				["coord"] = { 55.3, 35.8, THE_FORBIDDEN_REACH },
-				["g"] = {
+				["groups"] = {
 					i(202326),	-- Sending Stone: Initial Report [A]
 					i(204252),	-- Sending Stone: Initial Report [H]
 				}
 			}),
 			o(385533, {	-- Sending Stone: Protest
 				["coord"] = { 58.4, 70.6, THE_FORBIDDEN_REACH },
-				["g"] = {
+				["groups"] = {
 					i(202203),	-- Sending Stone: Protest [A]
 					i(204251),	-- Sending Stone: Protest [H]
 				}
@@ -74,21 +74,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			spell(399307, {	-- [DNT] Get Token
 				["coord"] = { 53.6, 36.1, THE_FORBIDDEN_REACH },
 				["cost"] = { { "i", 202667, 1 }, },	-- 1x Sealed Artifact Scroll
-				["g"]= {
+				["groups"]= {
 					i(202871),	-- Draconic Artifact
 				}
 			}),
 			n(201006, {	-- Spirit of Blessing
 				["coord"] = { 38.2, 36.9, THE_FORBIDDEN_REACH },
 				["cost"] = { { "i", 202668, 1 }, },	-- 1x Sealed Spirit Scroll
-				["g"]= {
+				["groups"]= {
 					i(202872),	-- Token of Blessing
 				}
 			}),
 			n(200958, {	-- Wondrous Fish
 				["coord"] = { 45.1, 53.7, THE_FORBIDDEN_REACH },
 				["cost"] = { { "i", 202669, 1 }, },	-- 1x Sealed Fish Scroll
-				["g"]= {
+				["groups"]= {
 					i(202854),	-- Wondrous Fish
 				}
 			}),

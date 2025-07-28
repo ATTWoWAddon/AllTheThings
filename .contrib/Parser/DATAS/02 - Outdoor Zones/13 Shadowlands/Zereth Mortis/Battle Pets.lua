@@ -38,7 +38,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					{ 39.6, 55.5, ZERETH_MORTIS },
 					{ 48.7, 95.6, ZERETH_MORTIS },
 				},
-				["g"] = {
+				["groups"] = {
 					pet(3218),	-- Enraged Poultrid (PET!)
 				},
 			}),

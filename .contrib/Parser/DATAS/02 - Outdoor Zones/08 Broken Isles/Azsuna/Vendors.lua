@@ -8,7 +8,7 @@ root(ROOTS.Zones, {
 			n(VENDORS, {
 				n(107139, {	-- Enchantress Ilyana
 					["coord"] = { 46.8, 40.8, AZSUNA },
-					["g"] = {
+					["groups"] = {
 						i(144317),	-- Formula: Enchant Neck - Mark of the Deadly [Rank 1] (RECIPE!)
 						i(144308),	-- Formula: Enchant Neck - Mark of the Master [Rank 1] (RECIPE!)
 						i(144314),	-- Formula: Enchant Neck - Mark of the Quick [Rank 1] (RECIPE!)
@@ -17,7 +17,7 @@ root(ROOTS.Zones, {
 				}),
 				n(102196, {	-- Fargo Flintlocke
 					["coord"] = { 43.0, 62.84, AZSUNA },
-					["g"] = {
+					["groups"] = {
 						i(136630),	-- "Twirling Bottom" Repeater
 						i(136632),	-- Chaos Blaster
 						i(136629),	-- Felgibber Shotgun
@@ -39,7 +39,7 @@ root(ROOTS.Zones, {
 				n(107963, {	-- Kharmeera
 					["coord"] = { 47.2, 26.6, AZSUNA },
 					["crs"] = { 99420 },	-- Kharmeera (after completion of Quests)
-					["g"] = sharedData({ ["sourceQuest"] = 39923 }, {	-- Down to the Core
+					["groups"] = sharedData({ ["sourceQuest"] = 39923 }, {	-- Down to the Core
 						i(128574, {	-- Formula: Enchant Cloak - Binding of Agility [Rank 1] (RECIPE!)
 							["cost"] = { { "i", 124442, 1 }, },	-- 1x Chaos Crystal
 						}),
@@ -53,7 +53,7 @@ root(ROOTS.Zones, {
 				}),
 				n(93973, {	-- Leyweaver Phaxondus
 					["coord"] = { 29.0, 46.0, AZSUNA },
-					["g"] = {
+					["groups"] = {
 						i(127023, {	-- Pattern: Imbued Silkweave Epaulets [Rank 1] (RECIPE!)
 							["cost"] = { { "i", 124437, 100 }, },	-- 100x Shal'dorei Silk
 						}),
@@ -61,7 +61,7 @@ root(ROOTS.Zones, {
 				}),
 				n(107379, {	-- Marin Bladewing <Wardens Emissary>
 					["coord"] = { 48.2, 73.9, AZSUNA },
-					["g"] = bubbleDownClassicRep(FACTION_THE_WARDENS, {
+					["groups"] = bubbleDownClassicRep(FACTION_THE_WARDENS, {
 						{		-- Neutral
 						}, {	-- Friendly
 						}, {	-- Honored
@@ -79,7 +79,7 @@ root(ROOTS.Zones, {
 						}, {	-- Revered
 							i(140219, {	-- Boon of the Bloodhunter
 								["cost"] = 2000000,	-- 200g
-								["g"] = {
+								["groups"] = {
 									i(140227),	-- Bloodhunter's Quarry
 								},
 							}),
@@ -126,7 +126,7 @@ root(ROOTS.Zones, {
 				}),
 				n(107376, {	-- Veridis Fallon <Court of Farondis Emissary>
 					["coord"] = { 46.9, 41.4, AZSUNA },
-					["g"] = bubbleDownClassicRep(FACTION_COURT_OF_FARONDIS, {
+					["groups"] = bubbleDownClassicRep(FACTION_COURT_OF_FARONDIS, {
 						{		-- Neutral
 						}, {	-- Friendly
 						}, {	-- Honored
@@ -140,7 +140,7 @@ root(ROOTS.Zones, {
 						}, {	-- Revered
 							i(129276, {	-- Beginner's Guide to Dimensional Rifting
 								["cost"] = 5000000,	-- 500g
-								["g"] = {
+								["groups"] = {
 									ach(11175, {	-- Higher Dimensional Learning (Azsuna)
 										i(140493),		-- Adept's Guide to Dimensional Rifting
 										crit(32196),		-- Beginner's Guide to Dimensional Rifting Ch. 1 - Navigating Through Time
@@ -161,7 +161,7 @@ root(ROOTS.Zones, {
 							}),
 							i(139556, {	-- Syriel Crescentfall's Notes: Ravenguard
 								["cost"] = 20000000,	-- 2,000g
-								["g"] = {
+								["groups"] = {
 									artifact(224),	-- Marksmanship Hunter Hidden Appearance
 								},
 							}),

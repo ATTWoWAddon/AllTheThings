@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					{"find","headerID",SPECIAL},		-- get Special
 					{"find","filterID",CLOTH},{"pop"},	-- get Cloth
 				},
-				["g"] = {
+				["groups"] = {
 					i(153324),	-- Eredath Vigilant's Bastion
 				},
 			}),
@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48818,
 				["isDaily"] = true,
 				["coord"] = { 76.0, 56.2, ANTORAN_WASTES },
-				["g"] = {
+				["groups"] = {
 					i(153123),	-- Cracked Radinax Control Gem
 				},
 			}),
@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 49183,
 				["isDaily"] = true,
 				["coord"] = { 61.8, 37.6, ANTORAN_WASTES },
-				["g"] = {
+				["groups"] = {
 					i(152905),	-- Crimson Slavermaw (MOUNT!)
 				},
 			}),
@@ -38,7 +38,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48865,
 				["isDaily"] = true,
 				["coord"] = { 61.2, 21.6, ANTORAN_WASTES },
-				["g"] = {
+				["groups"] = {
 					i(153113),	-- Demon's Soulstone
 				},
 			}),
@@ -47,7 +47,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["isDaily"] = true,
 				["coord"] = { 80.5, 62.7, ANTORAN_WASTES },
 				["crs"] = { 126680 },	-- portal to rare
-				["g"] = {
+				["groups"] = {
 					i(153123),	-- Cracked Radinax Control Gem (Green Item)
 				},
 			}),
@@ -56,7 +56,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48968,
 				["isDaily"] = true,
 				["coord"] = { 58.0, 12.0, ANTORAN_WASTES },
-				["g"] = {
+				["groups"] = {
 					i(153194),	-- Legion Communication Orb (TOY!)
 				},
 			}),
@@ -64,7 +64,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 49241,
 				["isDaily"] = true,
 				["coord"] = { 56.0, 45.8, ANTORAN_WASTES },
-				["g"] = {
+				["groups"] = {
 					i(153113),	-- Demon's Soulstone
 				},
 			}),
@@ -73,7 +73,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48821,
 				["isDaily"] = true,
 				["coord"] = { 63.8, 22.0, ANTORAN_WASTES },
-				["g"] = {
+				["groups"] = {
 					i(152790),	-- Vile Fiend (MOUNT!)
 				},
 			}),
@@ -81,7 +81,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48815,
 				["isDaily"] = true,
 				["coord"] = { 60.6, 48.6, ANTORAN_WASTES },
-				["g"] = {
+				["groups"] = {
 					i(151543),	-- Technique: Glyph of Fel-Touched Shards (RECIPE!)
 				},
 			}),
@@ -89,7 +89,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48813,
 				["isDaily"] = true,
 				["coord"] = { 62.6, 54.4, ANTORAN_WASTES },
-				["g"] = {
+				["groups"] = {
 					i(153113),	-- Demon's Soulstone
 				},
 			}),
@@ -102,7 +102,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					{"find","headerID",SPECIAL},	-- get Special
 					{"find","filterID",PLATE},{"pop"},	-- get Plate
 				},
-				["g"] = {
+				["groups"] = {
 					i(153327),	-- Mystic Wakener's Dagger
 				},
 			}),
@@ -120,7 +120,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					{ "i", 153013, 1 },		-- Disgusting Feast
 				},
 				["crs"] = { 126073 },	-- Felspawn Imp
-				["g"] = {
+				["groups"] = {
 					i(153252),	-- Rebellious Imp (PET!)
 				},
 			}),
@@ -128,13 +128,13 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48809,
 				["isDaily"] = true,
 				["coord"] = { 64.0, 20.8, ANTORAN_WASTES },
-				["g"] = {
+				["groups"] = {
 					i(152903),	-- Biletooth Gnasher (MOUNT!)
 				},
 			}),
 			n(126196, {	-- Radix
 				["coord"]  = { 72.5, 67.5, ANTORAN_WASTES },
-				["g"] = {
+				["groups"] = {
 					i(212778, {	-- Grimoire of the Vile Tyrant (CI!)
 						["timeline"] = { ADDED_10_2_5 },
 						["description"] = "The grimoire only drops when Radix is in stasis and you have to rightclick to activate him.\nIf Radix is already active and has no loot, not even greys, then you cant loot the grimoire for this day.",
@@ -147,7 +147,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["isDaily"] = true,
 				["coord"] = { 65.4, 81.4, ANTORAN_WASTES },
 				["cost"] = { { "i", 153226, 1 } },	-- 1x Observer's Locus Resonator
-				["g"] = {
+				["groups"] = {
 					i(153293),	-- Sightless Eye (TOY!)
 				},
 			}),
@@ -158,7 +158,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["isDaily"] = true,
 				["coord"] = { 77.5, 74.7, ANTORAN_WASTES },	-- Vishax's Portal
 				["crs"] = { 127943 },	-- Vishax's Portal
-				["g"] = {
+				["groups"] = {
 					i(153253),	-- S.F.E. Interceptor (TOY!)
 				},
 			}),
@@ -169,7 +169,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["isDaily"] = true,
 				["coord"] = { 54.8, 39.1, ANTORAN_WASTES },
 				["crs"] = { 127577 },	-- Bone Effigy
-				["g"] = {
+				["groups"] = {
 					i(153195),	-- Uuna (PET!)
 				},
 			}),
@@ -178,7 +178,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48812,
 				["isDaily"] = true,
 				["coord"] = { 65.0, 51.6, ANTORAN_WASTES },
-				["g"] = {
+				["groups"] = {
 					i(153190),	-- Fel-Spotted Egg
 				},
 			}),
@@ -187,7 +187,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48811,
 				["isDaily"] = true,
 				["coord"] = { 66.4, 54.2, ANTORAN_WASTES },
-				["g"] = {
+				["groups"] = {
 					i(153113),	-- Demon's Soulstone
 				},
 			}),
@@ -200,7 +200,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					{"find","headerID",SPECIAL},		-- get Special
 					{"find","filterID",CLOTH},{"pop"},	-- get Cloth
 				},
-				["g"] = {
+				["groups"] = {
 					i(153319),	-- Ardent Vindicator's Greatmace
 				},
 			}),
@@ -208,7 +208,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48810,
 				["isDaily"] = true,
 				["coord"] = { 53.0, 36.6, ANTORAN_WASTES },
-				["g"] = {
+				["groups"] = {
 					i(152903),	-- Biletooth Gnasher (MOUNT!)
 				},
 			}),
@@ -216,7 +216,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48822,
 				["isDaily"] = true,
 				["coord"] = { 53.2, 28.4, ANTORAN_WASTES },
-				["g"] = {
+				["groups"] = {
 					i(153113),	-- Demon's Soulstone
 				},
 			}),
@@ -229,7 +229,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					{"find","headerID",SPECIAL},		-- get Special
 					{"find","filterID",CLOTH},{"pop"},	-- get Cloth
 				},
-				["g"] = {
+				["groups"] = {
 					i(153312),	-- Praetor's Ornamental Greatsword
 				},
 			}),
@@ -238,7 +238,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48814,
 				["isDaily"] = true,
 				["coord"] = { 61.6, 65.0, ANTORAN_WASTES },
-				["g"] = {
+				["groups"] = {
 					i(153126),	-- Micro-Artillery Controller (TOY!)
 				},
 			}),

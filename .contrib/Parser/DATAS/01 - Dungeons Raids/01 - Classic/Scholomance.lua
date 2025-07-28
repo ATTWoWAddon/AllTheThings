@@ -48,8 +48,8 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		-- #endif
 		applyclassicphase(PHASE_FOUR, q(8259, {	-- A More Fitting Reward (Post 1.7, Phase 4)
 			["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
-			["sourceQuest"] = 7668,	-- The Darkreaver Menace (Original: 1.4 till 1.7 only)
 			["altQuests"] = { 8258 },	-- The Darkreaver Menace (New)
+			["sourceQuest"] = 7668,	-- The Darkreaver Menace (Original: 1.4 till 1.7 only)
 			["coord"] = { 38.7, 35.9, ORGRIMMAR },
 			["timeline"] = { ADDED_1_7_0, REMOVED_4_0_3 },
 			["classes"] = { SHAMAN },
@@ -219,17 +219,17 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		q(76257, {	-- Darkmaster's Scourgestone
 			["provider"] = { "i", 206373 },	-- Darkmaster's Scourgestone (QI!)
 			["timeline"] = { ADDED_10_1_5 },
-			["g"] = {
+			["groups"] = {
 				i(12844),	-- Argent Dawn Valor Token
 			},
 		}),
 		q(4771, {	-- Dawn's Gambit
 			["qg"] = 11035,	-- Betina Bigglezink <The Argent Dawn>
 			["sourceQuest"] = 5531,	-- Betina Bigglezink
+			["coord"] = { 81.5, 59.7, EASTERN_PLAGUELANDS },
 			-- #if BEFORE 4.0.3
 			["description"] = "After completing this quest, you can return to Betina to have her give you another Gambit.",
 			-- #endif
-			["coord"] = { 81.5, 59.7, EASTERN_PLAGUELANDS },
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 57,
 			["groups"] = {
@@ -250,8 +250,8 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 		q(5382, {	-- Doctor Theolen Krastinov, the Butcher
 			["qg"] = 11216,	-- Eva Sarkhoff
-			["description"] = "Talk to Eva until she offers the quest.",
 			["coord"] = { 70.2, 73.7, WESTERN_PLAGUELANDS },
+			["description"] = "Talk to Eva until she offers the quest.",
 			["timeline"] = { REMOVED_4_0_3 },
 			["lvl"] = 55,
 			["groups"] = {
@@ -422,8 +422,8 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				{ "i", 13585 },	-- Keepsake of Remembrance
 			},
 			["sourceQuest"] = 5462,	-- The Dying, Ras Frostwhisper
-			["description"] = "Take the Keepsake to the symbol on the floor in Baron Rivendare's room in Stratholme.",
 			["coord"] = { 81.7, 57.8, EASTERN_PLAGUELANDS },
+			["description"] = "Take the Keepsake to the symbol on the floor in Baron Rivendare's room in Stratholme.",
 			["timeline"] = { REMOVED_4_0_3 },
 			["maps"] = { STRATHOLME },
 			["lvl"] = 57,
@@ -577,10 +577,10 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 		applyclassicphase(PHASE_FOUR, q(8258, {	-- The Darkreaver Menace (Post 1.7, Phase 4)
 			["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
-			["sourceQuest"] = 7667,	-- Material Assistance
 			["altQuests"] = {
 				7668,	-- The Darkreaver Menace (Original)
 			},
+			["sourceQuest"] = 7667,	-- Material Assistance
 			["coord"] = { 38.7, 35.9, ORGRIMMAR },
 			["timeline"] = { ADDED_1_7_0, REMOVED_4_0_3 },
 			["classes"] = { SHAMAN },
@@ -2038,7 +2038,7 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 						{ "i", 206365, 1 },	-- 1x Inert Spectral Essence
 					},
 					-- ["lockCriteria"] = {},	-- cannot be triggered if Spectral Essence already in player inventory from Vanilla
-					["g"] = {
+					["groups"] = {
 						i(13544),	-- Spectral Essence
 					},
 				})),
@@ -2190,7 +2190,7 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			ach(6715, {	-- Polyformic Acid Science
-				["timeline"] = { ADDED_5_1_0 },
+				["timeline"] = { ADDED_5_0_4 },
 				["groups"] = sharedData({
 					["cost"] = {
 						{ "i", 85589, 1 },	-- Nearly Full Vial of Polyformic Acid
@@ -2473,7 +2473,7 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 	},
 }));
 -- #if AFTER 5.0.4
-table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 } }, {
+table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
 	ach(8438, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Scholomance
 		title(245),	-- Darkmaster <Name>
 	})),

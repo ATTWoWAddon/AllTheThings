@@ -12,11 +12,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			2319,	-- Crashing Storm Hall
 			2320,	-- Abandoned Mines
 		},
-		["g"] = {
+		["groups"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2566, {	-- Kyrioss
 					["crs"] = { 209230 },	-- Kyrioss
-					["g"] = {
+					["groups"] = {
 						i(221037),	-- Charged Rookfeather Wraps
 						i(219294),	-- Charged Stormrook Plume
 						i(221033),	-- Hyperactive Stormclaw
@@ -28,7 +28,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 				e(2567, {	-- Stormguard Gorren
 					["crs"] = { 207205 },	-- Stormguard Gorren
-					["g"] = {
+					["groups"] = {
 						i(221041),	-- Boltbreaker Armor
 						i(221043),	-- Cloudstrider Soles
 						i(221038),	-- Crashing Thunderhammer
@@ -41,7 +41,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 				e(2568, {	-- Voidstone Monstrosity
 					["crs"] = { 207207 },	-- Voidstone Monstrosity
-					["g"] = {
+					["groups"] = {
 						ach(40621),	-- The Rookery
 						i(223096),	-- Pattern: Roiling Thunderstrike Talons (RECIPE!)
 						i(221048),	-- Amice of Oblivion
@@ -58,7 +58,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2568, {	-- Voidstone Monstrosity
 					["crs"] = { 207207 },	-- Voidstone Monstrosity
-					["g"] = {
+					["groups"] = {
 						ach(40637),	-- Heroic: The Rookery
 					},
 				}),
@@ -66,7 +66,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			d(DIFFICULTY.DUNGEON.MYTHIC, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2, ADDED_11_1_0 } }, {
 				e(2568, {	-- Voidstone Monstrosity
 					["crs"] = { 207207 },	-- Voidstone Monstrosity
-					["g"] = {
+					["groups"] = {
 						ach(40642),	-- Mythic: The Rookery
 					},
 				}),

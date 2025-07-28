@@ -36,123 +36,123 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 		}),
 		q(72681, {	-- Report to the Trading Post -- March 2023
 			["timeline"] = { ADDED_10_0_5 },
-			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+			["isYearly"] = true,
 		}),
 		q(75833, {	-- Report to the Trading Post -- April 2023
 			["timeline"] = { ADDED_10_0_7 },
-			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+			["isYearly"] = true,
 		}),
 		q(76159, {	-- Report to the Trading Post -- May 2023
 			["timeline"] = { ADDED_10_0_7 },
-			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+			["isYearly"] = true,
 		}),
 		q(76103, {	-- Report to the Trading Post -- June 2023
 			["timeline"] = { ADDED_10_1_0 },
-			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+			["isYearly"] = true,
 		}),
 		q(76104, {	-- Report to the Trading Post -- July 2023
 			["timeline"] = { ADDED_10_1_0 },
-			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+			["isYearly"] = true,
 		}),
 		q(76105, {	-- Report to the Trading Post -- August 2023
 			["timeline"] = { ADDED_10_1_5 },
-			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+			["isYearly"] = true,
 		}),
 		q(76106, {	-- Report to the Trading Post -- September 2023
 			["timeline"] = { ADDED_10_1_5 },
-			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+			["isYearly"] = true,
 		}),
 		q(76107, {	-- Report to the Trading Post -- October 2023
 			["timeline"] = { ADDED_10_1_7 },
-			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+			["isYearly"] = true,
 		}),
 		q(76108, {	-- Report to the Trading Post -- November 2023
 			["timeline"] = { ADDED_10_1_7 },
-			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+			["isYearly"] = true,
 		}),
 		q(76112, {	-- Report to the Trading Post -- December 2023
 			["timeline"] = { ADDED_10_2_0 },
-			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+			["isYearly"] = true,
 		}),
 		q(76113, {	-- Report to the Trading Post -- January 2024
 			["timeline"] = { ADDED_10_2_0 },
-			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+			["isYearly"] = true,
 		}),
 		q(76114, {	-- Report to the Trading Post -- February 2024
 			["timeline"] = { ADDED_10_2_5 },
-			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+			["isYearly"] = true,
 		}),
 		q(81722, {	-- Report to the Trading Post -- August 2024
 			["timeline"] = { ADDED_11_0_2 },
-			["isYearly"] = true,
 			["maps"] = { DORNOGAL },
+			["isYearly"] = true,
 		}),
 		q(81723, {	-- Report to the Trading Post -- September 2024
 			["timeline"] = { ADDED_11_0_2 },
-			["isYearly"] = true,
 			["maps"] = { DORNOGAL },
+			["isYearly"] = true,
 		}),
 		q(81724, {	-- Report to the Trading Post -- October 2024
 			["timeline"] = { ADDED_11_0_2 },
-			["isYearly"] = true,
 			["maps"] = { DORNOGAL },
+			["isYearly"] = true,
 		}),
 		q(81725, {	-- Report to the Trading Post -- November 2024
 			["timeline"] = { ADDED_11_0_5 },
-			["isYearly"] = true,
 			["maps"] = { DORNOGAL },
+			["isYearly"] = true,
 		}),
 		q(81726, {	-- Report to the Trading Post -- December 2024
 			["timeline"] = { ADDED_11_0_5 },
-			["isYearly"] = true,
 			["maps"] = { DORNOGAL },
+			["isYearly"] = true,
 		}),
 		q(81715, {	-- Report to the Trading Post -- January 2025
 			["timeline"] = { ADDED_11_0_7 },
-			["isYearly"] = true,
 			["maps"] = { DORNOGAL },
+			["isYearly"] = true,
 		}),
 		q(81714, {	-- Report to the Trading Post -- February 2025
 			["timeline"] = { ADDED_11_0_7 },
-			["isYearly"] = true,
 			["maps"] = { DORNOGAL },
+			["isYearly"] = true,
 		}),
 		q(81717, {	-- Report to the Trading Post -- March 2025
 			["timeline"] = { ADDED_11_1_0 },
-			["isYearly"] = true,
 			["maps"] = { DORNOGAL },
+			["isYearly"] = true,
 		}),
 		q(81718, {	-- Report to the Trading Post -- April 2025
 			["timeline"] = { ADDED_11_1_0 },
-			["isYearly"] = true,
 			["maps"] = { DORNOGAL },
+			["isYearly"] = true,
 		}),
 		q(81719, {	-- Report to the Trading Post -- May 2025
 			["timeline"] = { ADDED_11_1_5 },
-			["isYearly"] = true,
 			["maps"] = { DORNOGAL },
+			["isYearly"] = true,
 		}),
 		q(81720, {	-- Report to the Trading Post -- June 2025
 			["timeline"] = { ADDED_11_1_5 },
-			["isYearly"] = true,
 			["maps"] = { DORNOGAL },
+			["isYearly"] = true,
 		}),
 		q(81721, {	-- Report to the Trading Post -- July 2025
 			["timeline"] = { ADDED_11_1_7 },
-			["isYearly"] = true,
 			["maps"] = { DORNOGAL },
+			["isYearly"] = true,
 		}),
 	}),
 	n(YEAR2023, {
@@ -2380,7 +2380,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				}),
 				i(112326, {	-- Warforged Nightmare (MOUNT!)
 					["cost"] = {{"c", TRADERS_TENDER, 700}},
-					["g"] = {
+					["groups"] = {
 						n(MAILBOX, {
 							i(112324),	-- Nightmarish Hitching Post (TOY!)
 						}),
@@ -2553,7 +2553,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 			n(VENDORS, {
 				n(234747, {	-- Supplier Felina <Trading Post Outlet Completionist>
 					["coord"] = { 48.16, 51.99, DORNOGAL },
-					["g"] = {
+					["groups"] = {
 						filter(BATTLE_PETS, {
 							i(190925, {	-- Buttercup (PET!)
 								["cost"] = {{"c", TRADERS_TENDER, 350}},
@@ -2582,7 +2582,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				}),
 				n(234746, {	-- Supplier Mizix <Trading Post Outlet Creatures and Toys>
 					["coord"] = { 48.07, 52.16, DORNOGAL },
-					["g"] = {
+					["groups"] = {
 						filter(BATTLE_PETS, {
 							i(190604, {	-- Buzzworth (PET!)
 								["cost"] = {{"c", TRADERS_TENDER, 200}},
@@ -2638,7 +2638,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				}),
 				n(234744, {	-- Supplier Offa <Trading Post Outlet Wearables>
 					["coord"] = { 47.57, 52.76, DORNOGAL },
-					["g"] = {
+					["groups"] = {
 						filter(COSMETIC, {
 							i(190712, {	-- Ancestral Skychaser Totem
 								["cost"] = {{"c", TRADERS_TENDER, 200}},
@@ -2729,7 +2729,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				}),
 				n(234742, {	-- Supplier Toffa <Trading Post Outlet Weapons>
 					["coord"] = { 47.79, 52.55, DORNOGAL },
-					["g"] = {
+					["groups"] = {
 						filter(COSMETIC, {
 							i(190832, {	-- Acolyte’s Etched Warhammer
 								["cost"] = {{"c", TRADERS_TENDER, 50}},

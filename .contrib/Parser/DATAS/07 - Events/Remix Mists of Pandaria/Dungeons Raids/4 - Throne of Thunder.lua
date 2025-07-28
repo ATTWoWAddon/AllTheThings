@@ -16,7 +16,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				514,	-- Pinnacle of Storms
 				515,	-- Hidden Cell
 			},
-			["g"] = {
+			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(19955, {	-- Raid Finder: Throne of Thunder
 						crit(65724, {	-- Jin'rokh the Breaker

@@ -647,7 +647,7 @@ MOP_ENGINEERING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"
 local SECRET_OF_DRAENOR_ENGINEERING = 119299;
 DRAENOR_ENGINEERING = applyclassicphase(WOD_PHASE_ONE, i(111921, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	["description"] = "This is a reward for completing the introductory Engineering questline that can drop from any Draenor mob. Also sold at The Forge for 100 gold.",
-	["g"] = {
+	["groups"] = {
 		r(158739, {	-- Engineering (Draenor Master)
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 			-- #if NOT ANYCLASSIC

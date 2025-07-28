@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 	m(THE_MAW, {
 		n(VENDORS, {
 			n(162804, {	-- Ve'nari
-				["g"] = bubbleDownRep(FACTION_VENARI, {
+				["groups"] = bubbleDownRep(FACTION_VENARI, {
 					{		-- Dubious
 						i(180817, {	-- Cypher of Relocation
 							["cost"] = { { "c", STYGIA, 60 } },
@@ -71,7 +71,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						}),
 						i(183870, {	-- Recipe: Crafter's Mark II (RECIPE!)
 							["cost"] = { { "c", STYGIA, 300 } },
-							["g"] = {
+							["groups"] = {
 								r(343678, {	-- Crafter's Mark II (RECIPE!)
 									["requireSkill"] = ALCHEMY,
 								}),

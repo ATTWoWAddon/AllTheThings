@@ -758,7 +758,7 @@ root(ROOTS.Zones, {
 					q(9897, {	-- I'm Saved!
 						["qg"] = 18294,	-- Kristen Dipswitch
 						["coord"] = { 71.4, 40.6, NAGRAND },
-						["description"] = "You have to rescue Kristen Dipswitch from Gankly Rottenfist to get offered the quest. When she is not getting attacked by Gankly you have to get her killed by a mob and wait ~90 minutes until she respanws."
+						["description"] = "You have to rescue Kristen Dipswitch from Gankly Rottenfist to get offered the quest. When she is not getting attacked by Gankly you have to get her killed by a mob and wait ~90 minutes until she respanws.",
 					}),
 					q(10646, {	-- Illidan's Pupil
 						["qg"] = 18417,	-- Altruis
@@ -845,8 +845,8 @@ root(ROOTS.Zones, {
 					q(9914, {	-- A Head Full of Ivory
 						["qg"] = 18333,	-- Shadrek
 						["coord"] = { 31.8, 56.8, NAGRAND },
-						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
 						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
+						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
 						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already.
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
@@ -855,8 +855,8 @@ root(ROOTS.Zones, {
 					q(9886, {	-- Membership Benefits
 						["qg"] = 18265,	-- Gezhe <The Consortium>
 						["coord"] = { 31.4, 57.8, NAGRAND },
-						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
 						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
+						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
 						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
@@ -869,8 +869,8 @@ root(ROOTS.Zones, {
 					q(9884, {	-- Membership Benefits
 						["qg"] = 18265,	-- Gezhe <The Consortium>
 						["coord"] = { 31.4, 57.8, NAGRAND },
-						["maxReputation"] = { FACTION_THE_CONSORTIUM, HONORED },	-- The Consortium, Honored.
 						["minReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
+						["maxReputation"] = { FACTION_THE_CONSORTIUM, HONORED },	-- The Consortium, Honored.
 						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.6 },	-- Consortium, Honored
@@ -893,20 +893,20 @@ root(ROOTS.Zones, {
 						["qg"] = 18408,	-- Warden Moi'bff Jill
 						["sourceQuest"] = 10476,	-- Fierce Enemies
 						["coord"] = { 54.8, 70.8, NAGRAND },
-						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
 						["maxReputation"] = { FACTION_KURENAI, EXALTED },	-- Kurenai, Exalted.
+						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
+						["races"] = ALLIANCE_ONLY,
 						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 978.8 },	-- Kurenai, Exalted
 						-- #endif
-						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 					}),
 					q(9885, {	-- Membership Benefits
 						["qg"] = 18265,	-- Gezhe <The Consortium>
 						["coord"] = { 31.4, 57.8, NAGRAND },
-						["maxReputation"] = { FACTION_THE_CONSORTIUM, REVERED },	-- The Consortium, Revered.
 						["minReputation"] = { FACTION_THE_CONSORTIUM, HONORED },	-- The Consortium, Honored.
+						["maxReputation"] = { FACTION_THE_CONSORTIUM, REVERED },	-- The Consortium, Revered.
 						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.7 },	-- Consortium, Revered
@@ -929,8 +929,8 @@ root(ROOTS.Zones, {
 						["qg"] = 18265,	-- Gezhe <The Consortium>
 						["sourceQuest"] = 9882,	-- Stealing from Thieves
 						["coord"] = { 31.4, 57.8, NAGRAND },
-						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
 						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
+						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
 						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
@@ -941,8 +941,8 @@ root(ROOTS.Zones, {
 						["qg"] = 18333,	-- Shadrek
 						["sourceQuest"] = 9914,	-- A Head Full of Ivory
 						["coord"] = { 31.8, 56.8, NAGRAND },
-						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
 						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
+						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
 						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
@@ -953,9 +953,9 @@ root(ROOTS.Zones, {
 						["qg"] = 18265,	-- Gezhe <The Consortium>
 						["sourceQuest"] = 9893,	-- Obsidian Warbeads
 						["coord"] = { 31.4, 57.8, NAGRAND },
-						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
-						["maxReputation"] = { FACTION_THE_CONSORTIUM, EXALTED },	-- The Consortium, Exalted.
 						["minReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
+						["maxReputation"] = { FACTION_THE_CONSORTIUM, EXALTED },	-- The Consortium, Exalted.
+						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
 						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.8 },	-- The Consortium, Exalted
@@ -966,14 +966,14 @@ root(ROOTS.Zones, {
 						["qg"] = 18407,	-- Warden Bullrok
 						["sourceQuest"] = 10479,	-- Proving Your Strength
 						["coord"] = { 55.8, 37.8, NAGRAND },
-						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
 						["maxReputation"] = { FACTION_THE_MAGHAR, EXALTED },	-- The Maghar, Exalted.
+						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
+						["races"] = HORDE_ONLY,
 						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 941.8 },	-- The Maghar, Exalted
 						-- #endif
 						["repeatable"] = true,
-						["races"] = HORDE_ONLY,
 					}),
 					q(10479, {	-- Proving Your Strength
 						["qg"] = 18407,	-- Warden Bullrok
@@ -1396,11 +1396,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10988,	-- The Raven Stones
 						["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
 						["timeline"] = { REMOVED_4_0_1 },
-						["classes"] = { DRUID },
 						["cost"] = {
 							{ "i", 32657, 1 },	-- Arthorn's Sparrowhawk Whistle (Provided)
 							{ "i", 32355, 1 },	-- Essence of the Eagle
 						},
+						["classes"] = { DRUID },
 						["lvl"] = 70,
 					})),
 					q(9861, {	-- The Howling Wind
@@ -1479,13 +1479,13 @@ root(ROOTS.Zones, {
 						["qg"] = 22981,	-- Watcher Elaira
 						["sourceQuest"] = 10987,	-- To Catch A Sparrowhawk
 						["coord"] = { 20.6, 35.7, NAGRAND },
-						["maps"] = { TEROKKAR_FOREST },
 						["timeline"] = { REMOVED_4_0_1 },
-						["classes"] = { DRUID },
+						["maps"] = { TEROKKAR_FOREST },
 						["cost"] = {
 							{ "i", 32315, 1 },	-- Cenarion Sparrowhawk Whistle (Provided)
 							{ "i", 32313, 8 },	-- Raven Stone
 						},
+						["classes"] = { DRUID },
 						["lvl"] = 70,
 					})),
 					q(9962, {	-- The Ring of Blood: Brokentoe
@@ -1674,11 +1674,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10986,	-- Eyes in the Sky
 						["coord"] = { 20.6, 35.7, NAGRAND },
 						["timeline"] = { REMOVED_4_0_1 },
-						["classes"] = { DRUID },
 						["cost"] = {
 							{ "i", 32321, 1 },	-- Sparrowhawk Net (Provided)
 							{ "i", 32320, 1 },	-- Captive Sparrowhawk
 						},
+						["classes"] = { DRUID },
 						["lvl"] = 70,
 					})),
 					q(10081, {	-- To Meet Mother Kashur
@@ -2088,6 +2088,7 @@ root(ROOTS.Zones, {
 							{ 57.0, 40.0, NAGRAND },
 						},
 						["races"] = HORDE_ONLY,
+						["minReputation"] = { FACTION_THE_MAGHAR, NEUTRAL },
 						["groups"] = {
 							i(21894, {	-- Pattern: Bolt of Soulcloth (RECIPE!)
 								["isLimited"] = true,

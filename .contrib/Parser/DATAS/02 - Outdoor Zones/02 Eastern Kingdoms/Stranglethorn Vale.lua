@@ -284,21 +284,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(2836, {	-- Brikk Keencraft <Master Blacksmith>
 						["coord"] = { 29.0, 75.4, STRANGLETHORN_VALE },
 						-- #if BEFORE 2.1.0
-						["g"] = ARTISAN_BLACKSMITHING,
+						["groups"] = ARTISAN_BLACKSMITHING,
 						-- #endif
 					}),
 				}),
 				prof(ENGINEERING, {
 					n(7406, {	-- Oglethorpe Obnoticus <Master Gnome Engineer>
 						["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
-						["g"] = ALL_GNOMISH_ENGINEERING,
+						["groups"] = ALL_GNOMISH_ENGINEERING,
 					}),
 				}),
 				prof(LEATHERWORKING, {
 					n(7871, {	-- Se'Jib <Master Tribal Leatherworker>
 						["coord"] = { 36.6, 34.2, STRANGLETHORN_VALE },
 						["races"] = HORDE_ONLY,
-						["g"] = CLASSIC_TBC_TRIBAL,
+						["groups"] = CLASSIC_TBC_TRIBAL,
 					}),
 				}),
 			}),
@@ -450,8 +450,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(4621, {	-- Avast Ye, Admiral!
 					["qg"] = 2546,	-- Fleet Master Firallon
 					["sourceQuest"] = 1036,	-- Avast Ye, Scallywag
-					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
-					["description"] = "This quest also requires you to be hated or lower with Booty Bay.",
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 46.7, 95.2, THE_CAPE_OF_STRANGLETHORN },
@@ -459,6 +457,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 30.6, 90.6, STRANGLETHORN_VALE },
 						-- #endif
 					},
+					["description"] = "This quest also requires you to be hated or lower with Booty Bay.",
+					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
 					["lvl"] = lvlsquish(55, 55, 10),
 					["groups"] = {
 						i(12185),	-- Bloodsail Admiral's Hat
@@ -466,7 +466,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1036, {	-- Avast Ye, Scallywag
 					["qg"] = 2545,	-- "Pretty Boy" Duncan
-					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 44.4, 92.6, THE_CAPE_OF_STRANGLETHORN },
@@ -474,14 +473,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 27.4, 69.4, STRANGLETHORN_VALE },
 						-- #endif
 					},
+					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(55, 55, 10),
 				}),
 				q(204, {	-- Bad Medicine
 					["qg"] = 733,	-- Sergeant Yohwa
 					["coord"] = { 38.0, 3.3, STRANGLETHORN_VALE },
-					["cost"] = { { "i", 2633, 7 } },	-- Jungle Remedy
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 2633, 7 } },	-- Jungle Remedy
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -850,7 +850,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(9272, {	-- Dressing the Part
 					["qg"] = 2546,	-- Fleet Master Firallon
-					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, NEUTRAL },	-- Bloodsail Buccaneers, Neutral.
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 46.6, 95.2, THE_CAPE_OF_STRANGLETHORN },
@@ -858,6 +857,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 30.6, 90.6, STRANGLETHORN_VALE },
 						-- #endif
 					},
+					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, NEUTRAL },	-- Bloodsail Buccaneers, Neutral.
 					["lvl"] = lvlsquish(49, 49, 10),
 					["groups"] = {
 						i(22746, {	-- Buccaneer's Uniform
@@ -909,9 +909,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2762,	-- The Great Silver Deceiver
 						2763,	-- The Art of the Imbue
 					},
-					["requireSkill"] = BLACKSMITHING,
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
+					["requireSkill"] = BLACKSMITHING,
 					["lvl"] = 40,
 					["groups"] = {
 						i(8703,	{	-- Signet of Expertise
@@ -927,17 +927,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(8554, {	-- Facing Negolash
 					["qg"] = 2594,	-- Sprogger
-					["sourceQuest"] = 8553,	-- The Captain's Cutlass
 					["altQuests"] = { 618 },	-- Facing Negolash [Old]
+					["sourceQuest"] = 8553,	-- The Captain's Cutlass
 					["coord"] = { 26.7, 73.6, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
 						q(619, {	-- Enticing Negolash
 							["provider"] = { "o", 2289 },	-- Ruined Lifeboat
-							["cost"] = {{ "i", 4457, 10 }},	-- Barbecued Buzzard Wing
 							["description"] = "This quest is repeatable, but can only be completed while you have the quest \"Facing Negolash\" in your quest log.",
 							["timeline"] = { REMOVED_4_0_3 },
+							["cost"] = {{ "i", 4457, 10 }},	-- Barbecued Buzzard Wing
 							["repeatable"] = true,
 							["groups"] = {
 								objective(1, {	-- 0/1 Smotts' Cutlass
@@ -1089,10 +1089,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(215, {	-- Jungle Secrets
 					["qg"] = 738,	-- Private Thorsen
+					["coord"] = { 40, 8, STRANGLETHORN_VALE },
 					-- #if BEFORE 4.0.3
 					["description"] = "Every so often, Thorsen will go on patrol. If you follow him, he will be ambushed by two of Kurzen's lackeys - if he survives, he will offer you this quest.",
 					-- #endif
-					["coord"] = { 40, 8, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -1588,18 +1588,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				q(3643, {	-- Show Your Work
 					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
-					["sourceQuest"] = 3642,	-- The Pledge of Secrecy
 					["altQuests"] = { 3639, 3641 },	-- The Pledge of Secrecy
+					["sourceQuest"] = 3642,	-- The Pledge of Secrecy
 					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
-					["requireSkill"] = ENGINEERING,
-					["learnedAt"] = 200,
-					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 4392, 2 },	-- Advanced Target Dummy
 						{ "i", 4407, 1 },	-- Accurate Scope
 						{ "i", 10559, 6 },	-- Mithril Tube
 					},
+					["requireSkill"] = ENGINEERING,
+					["learnedAt"] = 200,
+					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
 						i(10790),	-- Gnome Engineer Membership Card
@@ -1653,12 +1653,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 2760,	-- The Mithril Order
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["requireSkill"] = BLACKSMITHING,
-					["learnedAt"] = 210,
 					["cost"] = {
 						{ "i", 3575, 40 },	-- Iron Bar
 						{ "i", 3860, 40 },	-- Mithril Bar
 					},
+					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 210,
 					["lvl"] = 40,
 					["groups"] = {
 						i(7983, {	-- Plans: Ornate Mithril Pants (RECIPE!)
@@ -1840,12 +1840,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 2760,	-- The Mithril Order
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["requireSkill"] = BLACKSMITHING,
-					["learnedAt"] = 210,
 					["cost"] = {
 						{ "i", 3860, 40 },	-- Iron Bar
 						{ "i", 3864, 4 },	-- Citrine
 					},
+					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 210,
 					["lvl"] = 40,
 					["groups"] = {
 						i(7985, {	-- Plans: Ornate Mithril Shoulder (RECIPE!)
@@ -1948,8 +1948,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(8553, {	-- The Captain's Cutlass
 					["qg"] = 2500,	-- Captain Hecklebury Smotts
-					["sourceQuest"] = 8552,	-- The Monogrammed Sash
 					["altQuests"] = { 615 },	-- The Captain's Cutlass [Old]
+					["sourceQuest"] = 8552,	-- The Monogrammed Sash
 					["coord"] = { 26.6, 73.6, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
@@ -2031,12 +2031,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 2760,	-- The Mithril Order
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["requireSkill"] = BLACKSMITHING,
-					["learnedAt"] = 210,
 					["cost"] = {
 						{ "i", 3860, 40 },	-- Iron Bar
 						{ "i", 6037, 5 },	-- Truesilver Bar
 					},
+					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 210,
 					["lvl"] = 40,
 					["groups"] = {
 						i(7984, {	-- Plans: Ornate Mithril Gloves (RECIPE!)
@@ -2131,11 +2131,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(3642, {	-- The Pledge of Secrecy
 					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
+					["altQuests"] = { 3638, 3640 },	-- The Pledge of Secrecy
 					["sourceQuests"] = {
 						3635,	-- Gnome Engineering
 						3637,	-- Gnome Engineering
 					},
-					["altQuests"] = { 3638, 3640 },	-- The Pledge of Secrecy
 					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["requireSkill"] = ENGINEERING,

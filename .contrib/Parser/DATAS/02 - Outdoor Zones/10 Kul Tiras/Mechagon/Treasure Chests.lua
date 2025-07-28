@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					{ 25.67, 76.05, MECHAGON },
 					{ 30.77, 59.67, MECHAGON },
 				},
-				["g"] = {
+				["groups"] = {
 					i(169872, {	-- Irontide Lockbox Key / 10.0.7: Key of Bound Earth
 						["description"] = "Key drops from Seaspit and Seaspray mobs in the area, chest has a chance to spawn around the nearby islands.",
 						["crs"] = {
@@ -29,7 +29,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 							153218,	-- Seaspray Murloc
 							153219,	-- Seaspray Oracle
 						},
-						["g"] = {
+						["groups"] = {
 							i(170146),	-- Paint Bottle: Nukular Red (QS!)
 						},
 					}),
@@ -102,7 +102,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 						{ 64.5, 59.6, MECHAGON },
 						{ 70.6, 47.8, MECHAGON },	-- Possibly bloat from another chest
 					},
-					["g"] = {
+					["groups"] = {
 						i(170147),	-- Paint Bottle: Goblin Green (QS!)
 					},
 				}),
@@ -176,11 +176,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			o(330634, {	-- P3-P3
 				["description"] = "Located in the alternate Timeline.",
 				["coord"] = { 68.5, 47.9, MECHAGON },
-				["g"] = { i(170151) },	-- A Tiny Clockwork Key (Pepe!)
+				["groups"] = { i(170151) },	-- A Tiny Clockwork Key (Pepe!)
 			}),
 			o(327548, {	-- Powerpack Blueprints
 				["coord"] = { 60.9, 41.5, MECHAGON },
-				["g"] = {
+				["groups"] = {
 					i(168219),	-- Blueprint: Beastbot Powerpack
 				},
 			}),

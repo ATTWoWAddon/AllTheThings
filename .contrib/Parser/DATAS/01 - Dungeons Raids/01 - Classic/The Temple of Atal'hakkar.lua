@@ -293,14 +293,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(3512, {	-- In Eranikus' Own Words
 					["qg"] = 5353,	-- Itharius
 					["sourceQuest"] = 3374,	-- The Essence of Eranikus [Part 2]
-					["description"] = "This quest chain seems to be an incomplete one as there is no follow-up. Still an interesting quest chain as most people do not know about it. It essentially details how Eranikus is not actually dead and likely prepares the player for the Opening of AQ quest chain that does involve Eranikus once again.",
 					["coord"] = { 13.7, 71.7, SWAMP_OF_SORROWS },
+					["description"] = "This quest chain seems to be an incomplete one as there is no follow-up. Still an interesting quest chain as most people do not know about it. It essentially details how Eranikus is not actually dead and likely prepares the player for the Opening of AQ quest chain that does involve Eranikus once again.",
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WINTERSPRING },
+					["lvl"] = 48,
 					-- #if BEFORE 4.0.3
 					["OnUpdate"] = ESSENCE_OF_ERANIKUS_OWN_WORDS_OnUpdate,
 					-- #endif
-					["lvl"] = 48,
 				}),
 				q(3446, {	-- Into the Depths
 					["providers"] = {
@@ -414,16 +414,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(3374, {	-- The Essence of Eranikus [Part 2]
 					["qg"] = 5353,	-- Itharius
-					["sourceQuest"] = 3373,	-- The Essence of Eranikus
 					["provider"] = { "i", 10589 },	-- Oathstone of Ysera's Dragonflight
-					["description"] = "You get the Oathstone by talking to Itharius, at the cave in the SW part of Swamp of Sorrows. You must have the Chained Essence first.",
+					["sourceQuest"] = 3373,	-- The Essence of Eranikus
 					["coord"] = { 13.7, 71.7, SWAMP_OF_SORROWS },
+					["description"] = "You get the Oathstone by talking to Itharius, at the cave in the SW part of Swamp of Sorrows. You must have the Chained Essence first.",
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 10455, 1 } },	-- Chained Essence of Eranikus
+					["lvl"] = 48,
 					-- #if BEFORE 4.0.3
 					["OnUpdate"] = ESSENCE_OF_ERANIKUS_PART_TWO_OnUpdate,
 					-- #endif
-					["lvl"] = 48,
 				}),
 				q(3528, {	-- The God Hakkar
 					["qg"] = 8579,	-- Yeh'kinya

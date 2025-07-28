@@ -46,7 +46,7 @@ root(ROOTS.Zones, {
 					["questID"] = 37649,
 					["coord"] = { 69.5, 49.3, 632 },	-- Oceanus Cove
 					["description"] = "In the Oceanus Cove cave next to Lady Sssurine.",
-					["g"] = {
+					["groups"] = {
 						i(129078),	-- Sssurine's Luxurious Sssandals
 					},
 				}),
@@ -56,11 +56,11 @@ root(ROOTS.Zones, {
 				}),
 				o(253994, {	-- Seemingly Unguarded Treasure
 					["coord"] = { 65.1, 69.8, AZSUNA },
-					["g"] = {
+					["groups"] = {
 						o(240354, {	-- Genuinely Unguarded Treasure
 							["questID"] = 38239,
 							["coord"] = { 65.1, 69.8, AZSUNA },
-							["g"] = {
+							["groups"] = {
 								i(129070),	-- Ring of the Dread Pirate Bob
 							},
 						}),
@@ -183,7 +183,7 @@ root(ROOTS.Zones, {
 				o(240641, {	-- Treasure Chest
 					["questID"] = 38370,
 					["coord"] = { 49.4, 58.0, AZSUNA },
-					["g"] = {
+					["groups"] = {
 						i(141882),	-- Eternal Groom's Wedding Band
 					},
 				}),
@@ -228,7 +228,7 @@ root(ROOTS.Zones, {
 				o(240643, {	-- Treasure Chest
 					["questID"] = 37828,
 					["coord"] = { 49.5, 45.3, AZSUNA },
-					["g"] = {
+					["groups"] = {
 						i(122681),	-- Sternfathom's Pet Journal (TOY!)
 					},
 				}),

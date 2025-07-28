@@ -164,14 +164,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29642, {	-- Trouble at Auchindoun
 					["qg"] = 18893,	-- Spymistress Mehlisah Highcrown
-					["coord"] = { 50.2, 45.4, SHATTRATH_CITY },
-					["timeline"] = { ADDED_4_3_0 },
-					-- This was available to a character with 29643 already completed, the follow up of this 'breadcrumb'...
-					-- ["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(68, 68, 20),
 					["altQuests"] = {
 						10094,	-- The Codex of Blood (pre 4.0.3)
 					},
+					["coord"] = { 50.2, 45.4, SHATTRATH_CITY },
+					["timeline"] = { ADDED_4_3_0 },
+					-- ["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(68, 68, 20),
+					-- This was available to a character with 29643 already completed, the follow up of this 'breadcrumb'...
 				}),
 			}),
 			n(COMMON_BOSS_DROPS, {

@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(377899, {	-- Hidden Hornswog Hostage
 				["coord"] = { 64.9, 69.6, THE_WAKING_SHORES },
 				["questID"] = 67048,
-				["g"] = {
+				["groups"] = {
 					i(199916),	-- Roseate Hopper (PET!)
 				},
 			}),
@@ -38,7 +38,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(191476, {	-- Searing Flame Harchek
 				["coord"] = { 32.2, 68.6, THE_WAKING_SHORES },
-				["g"] = {
+				["groups"] = {
 					i(195881),	-- Recipe: Charred Hornswog Steaks (RECIPE!)
 				},
 			}),

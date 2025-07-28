@@ -143,7 +143,7 @@ local TWISTED_TREASURES_OF_THE_VALE = i(104275, {	-- Twisted Treasures of the Va
 	-- #endif
 	["timeline"] = { ADDED_5_4_0, REMOVED_8_0_1 },
 	["sym"] = {MOP_SYM_PETS},
-	["g"] = {
+	["groups"] = {
 		i(105824),	-- Aeth's Swiftcinder Cloak
 		i(105816),	-- Brave Niunai's Cloak
 		i(105812),	-- Cape of the Alpha
@@ -227,7 +227,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 		["timeline"] = { ADDED_5_4_0 },
 		["isRaid"] = true,
 		["lvl"] = 90,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(8458, {	-- Vale of Eternal Sorrows
 					crit(23651, {	-- Immerseus
@@ -296,7 +296,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						8531,	-- Now We are the Paragon
 						8537,	-- Strike!
 					}},
-					["g"] = {
+					["groups"] = {
 						i(104208),	-- Spawn of Galakras (MOUNT!)
 					},
 				}),
@@ -309,8 +309,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					--["coord"] = { <coords>, <mapID> },    -- Siege of Orgrimmar
 				}),
 				q(33138, {    -- Why Do We Fight?
-					["sourceQuests"] = { 33147 },    -- The Last Gasp of Y'Shaarj
 					["provider"] = { "n", 73318 },    -- Lorewalker Cho
+					["sourceQuests"] = { 33147 },    -- The Last Gasp of Y'Shaarj
 					--["coord"] = { <coords>, <mapID> },    -- Siege of Orgrimmar
 				}),
 			}),
@@ -323,7 +323,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						["provider"] = { "n", 73715 },	-- Rivett Clutchpop <Horde Supplies> [H]
 					},
 					["description"] = "Vendor spawns in after opening gate after the Malkorok Boss fight in Kor'kron Barracks.",
-					["g"] = {
+					["groups"] = {
 						i(23799, {	-- Schematic: Adamantite Rifle (RECIPE!)
 							["isLimited"] = true,
 						}),
@@ -340,7 +340,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					["hqd"] = n(73674, {	-- Blizzix Sparkshiv <Raid Finder Vendor> [H]
 						["coord"] = { 42.9, 74.7, 392 },
 					}),
-					["g"] = {
+					["groups"] = {
 						cl(WARRIOR, {
 							-- DPS
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(99046)),		-- Helmet of the Prehistoric Marauder
@@ -535,7 +535,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					["hqd"] = n(74010, {	-- Nadina Stargem <Raid Vendor> [H]
 						["coord"] = { 43.3, 76.0, 392 },
 					}),
-					["g"] = {
+					["groups"] = {
 						cl(WARRIOR, {
 							-- DPS
 							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99602)),		-- Helmet of the Prehistoric Marauder
@@ -730,7 +730,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					["hqd"] = n(74012, {	-- Ki'agnuu <Heroic Vendor> [H]
 						["coord"] = { 43.1, 78.7, 392 },
 					}),
-					["g"] = {
+					["groups"] = {
 						cl(WARRIOR, {
 							-- DPS
 							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99206)),		-- Helmet of the Prehistoric Marauder
@@ -925,7 +925,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					["hqd"] = n(74019, {	-- Tu'aho Pathcutter <Mythic Vendor> [H]
 						["coord"] = { 43.4, 80.4, 392 },
 					}),
-					["g"] = {
+					["groups"] = {
 						cl(WARRIOR, {
 							-- DPS
 							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99418)),		-- Helmet of the Prehistoric Marauder
@@ -1115,7 +1115,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				}),
 				n(72157, {	-- Hagrus <Reagents>
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(5643),	-- Recipe: Great Rage Potion (RECIPE!)
 						i(5640),	-- Recipe: Rage Potion (RECIPE!)
 					},
@@ -1222,7 +1222,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				-- #endif
 				["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
 				["ignoreBonus"] = true,
-				["g"] = {
+				["groups"] = {
 					-- #if BEFORE 6.0.2
 					n(COMMON_BOSS_DROPS, {
 						COALESCED_TURMOIL,
@@ -1260,7 +1260,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 								71475,	-- Rook Stonetoe [The Fallen Protectors]
 								71480,	-- Sun Tenderheart [The Fallen Protectors]
 							},
-							["g"] = {
+							["groups"] = {
 								i(104936),	-- Darkfallen Shoulderplates LFR
 								i(104931),	-- Death Lotus Crossbow LFR
 								i(104951),	-- Gaze of Echoing Despair LFR
@@ -1289,7 +1289,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 								71965,	-- Norushen
 								72276,	-- Amalgam of Corruption
 							},
-							["g"] = {
+							["groups"] = {
 								i(104964),	-- Blight Hurlers LFR
 								i(104969),	-- Boots of Broken Reliance LFR
 								i(104958),	-- Bracers of Blind Hatred LFR
@@ -1575,7 +1575,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				["crs"] = { 80633 },	-- Lorewalker Han <Raid Finder Storyteller>
 				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
 				["timeline"] = { ADDED_6_0_2 },
-				["g"] = {
+				["groups"] = {
 					-- #if AFTER 6.0.2
 					n(COMMON_BOSS_DROPS, {
 						COALESCED_TURMOIL,
@@ -1613,7 +1613,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 								71475,	-- Rook Stonetoe [The Fallen Protectors]
 								71480,	-- Sun Tenderheart [The Fallen Protectors]
 							},
-							["g"] = {
+							["groups"] = {
 								i(112477),	-- Softfoot's Last Resort
 								i(112478),	-- Death Lotus Crossbow
 								i(112491),	-- Purehearted Cricket Cage
@@ -1642,7 +1642,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 								71965,	-- Norushen
 								72276,	-- Amalgam of Corruption
 							},
-							["g"] = {
+							["groups"] = {
 								i(112547),	-- Norushen's Shortblade
 								i(112546),	-- Xifeng, Longblade of the Titanic Guardian
 								i(112560),	-- Norushen's Enigmatic Barrier
@@ -1940,7 +1940,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						71475,	-- Rook Stonetoe [The Fallen Protectors]
 						71480,	-- Sun Tenderheart [The Fallen Protectors]
 					},
-					["g"] = {
+					["groups"] = {
 						ach(8528),	-- Go Long
 					},
 				}),
@@ -1949,7 +1949,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						72276,	-- Amalgam of Corruption
 						71965,	-- Norushen
 					},
-					["g"] = {
+					["groups"] = {
 						ach(8532),	-- None Shall Pass
 					},
 				}),
@@ -1967,7 +1967,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						71859,	-- Earthbreaker Haromm
 						71858,	-- Wavebinder Kardris
 					},
-					["g"] = {
+					["groups"] = {
 						ach(8453),	-- Rescue Raiders
 						i(105751, {	-- Kor'kron Shaman's Treasure (Shaman Only)
 							i(105745),	-- Kor'kron Dark Shaman Cowl
@@ -2024,7 +2024,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			FLEX_RAID_HEADER({							-- Flexible (Removed with Patch 6.0.2) >> Items marked "Normal" after 6.0 <<
 				["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
 				["ignoreBonus"] = true,
-				["g"] = {
+				["groups"] = {
 					n(ZONE_DROPS, {
 						i(105838),	-- Aeth's Swiftcinder Cloak Normal
 						i(105830),	-- Brave Niunai's Cloak Normal
@@ -2071,7 +2071,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							71475,	-- Rook Stonetoe [The Fallen Protectors]
 							71480,	-- Sun Tenderheart [The Fallen Protectors]
 						},
-						["g"] = {
+						["groups"] = {
 							i(104687),	-- Darkfallen Shoulderplates Normal
 							i(104682),	-- Death Lotus Crossbow Normal
 							i(104702),	-- Gaze of Echoing Despair Normal
@@ -2100,7 +2100,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							72276,	-- Amalgam of Corruption
 							71965,	-- Norushen
 						},
-						["g"] = {
+						["groups"] = {
 							i(104715),	-- Blight Hurlers Normal
 							i(104720),	-- Boots of Broken Reliance Normal
 							i(104709),	-- Bracers of Blind Hatred Normal
@@ -2392,7 +2392,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			-- CRIEVE NOTE: This is necessary because 'Flexible' difficulty was repurposed to 'Normal', they use the same difficultyID and merge data in MOP Classic otherwise.
 			d(DIFFICULTY.RAID.NORMAL, {					-- Normal (Added with Patch 6.0.2)
 				["timeline"] = { ADDED_6_0_2 },
-				["g"] = {
+				["groups"] = {
 					n(ZONE_DROPS, {
 						i(113224),	-- Aeth's Swiftcinder Cloak
 						i(113231),	-- Brave Niunai's Cloak
@@ -2439,7 +2439,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							71475,	-- Rook Stonetoe [The Fallen Protectors]
 							71480,	-- Sun Tenderheart [The Fallen Protectors]
 						},
-						["g"] = {
+						["groups"] = {
 							i(112477),	-- Softfoot's Last Resort
 							i(112478),	-- Death Lotus Crossbow
 							i(112491),	-- Purehearted Cricket Cage
@@ -2468,7 +2468,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							72276,	-- Amalgam of Corruption
 							71965,	-- Norushen
 						},
-						["g"] = {
+						["groups"] = {
 							i(112547),	-- Norushen's Shortblade
 							i(112546),	-- Xifeng, Longblade of the Titanic Guardian
 							i(112560),	-- Norushen's Enigmatic Barrier
@@ -2561,7 +2561,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							71859,	-- Earthbreaker Haromm
 							71858,	-- Wavebinder Kardris
 						},
-						["g"] = {
+						["groups"] = {
 							i(112759),	-- Haromm's Frozen Crescent
 							i(112769),	-- Kardris' Scepter
 							i(112770),	-- Darkfang Mask
@@ -2750,13 +2750,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.PLAYER10, {
 				["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				["g"] = {
+				["groups"] = {
 					cr(71865, e(869, {	-- Garrosh Hellscream
 						ach(8398, {	-- Ahead of the Curve: Garrosh Hellscream (10 player)
 							-- #if MOP
 							["OnUpdate"] = CUTTING_EDGE_ONUPDATE,
 							-- #endif
-							["g"] = {
+							["groups"] = {
 								i(104246, {	-- Reins of the Kor'kron War Wolf (MOUNT!)
 									-- #if MOP
 									["OnUpdate"] = CUTTING_EDGE_ONUPDATE,
@@ -2769,13 +2769,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.PLAYER25, {
 				["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				["g"] = {
+				["groups"] = {
 					cr(71865, e(869, {	-- Garrosh Hellscream
 						ach(8399, {	-- Ahead of the Curve: Garrosh Hellscream (25 player)
 							-- #if MOP
 							["OnUpdate"] = CUTTING_EDGE_ONUPDATE,
 							-- #endif
-							["g"] = {
+							["groups"] = {
 								i(104246, {	-- Reins of the Kor'kron War Wolf (MOUNT!)
 									-- #if MOP
 									["OnUpdate"] = CUTTING_EDGE_ONUPDATE,
@@ -2792,7 +2792,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				-- #endif
 				["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
 				["ignoreBonus"] = true,
-				["g"] = {
+				["groups"] = {
 					n(ZONE_DROPS, {
 						i(103846),	-- Aeth's Swiftcinder Cloak Heroic
 						i(103960),	-- Brave Niunai's Cloak Heroic
@@ -2863,7 +2863,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							71475,	-- Rook Stonetoe [The Fallen Protectors]
 							71480,	-- Sun Tenderheart [The Fallen Protectors]
 						},
-						["g"] = {
+						["groups"] = {
 							i(103783),	-- Darkfallen Shoulderplates Heroic
 							i(103776),	-- Death Lotus Crossbow Heroic
 							i(103820),	-- Gaze of Echoing Despair Heroic
@@ -2915,7 +2915,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							72276,	-- Amalgam of Corruption
 							71965,	-- Norushen
 						},
-						["g"] = {
+						["groups"] = {
 							i(103852),	-- Blight Hurlers Heroic
 							i(103762),	-- Boots of Broken Reliance Heroic
 							i(103740),	-- Bracers of Blind Hatred Heroic
@@ -3437,7 +3437,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			d(DIFFICULTY.RAID.HEROIC, {					-- Heroic (Added with Patch 6.0.2)
 				["timeline"] = { ADDED_6_0_2 },
 				["ItemAppearanceModifierID"] = 0,
-				["g"] = {
+				["groups"] = {
 					n(ZONE_DROPS, {
 						i(113224),	-- Aeth's Swiftcinder Cloak
 						i(113231),	-- Brave Niunai's Cloak
@@ -3484,7 +3484,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							71475,	-- Rook Stonetoe [The Fallen Protectors]
 							71480,	-- Sun Tenderheart [The Fallen Protectors]
 						},
-						["g"] = {
+						["groups"] = {
 							i(112477),	-- Softfoot's Last Resort
 							i(112478),	-- Death Lotus Crossbow
 							i(112491),	-- Purehearted Cricket Cage
@@ -3513,7 +3513,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							72276,	-- Amalgam of Corruption
 							71965,	-- Norushen
 						},
-						["g"] = {
+						["groups"] = {
 							i(112547),	-- Norushen's Shortblade
 							i(112546),	-- Xifeng, Longblade of the Titanic Guardian
 							i(112560),	-- Norushen's Enigmatic Barrier
@@ -3606,7 +3606,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							71859,	-- Earthbreaker Haromm
 							71858,	-- Wavebinder Kardris
 						},
-						["g"] = {
+						["groups"] = {
 							i(112759),	-- Haromm's Frozen Crescent
 							i(112769),	-- Kardris' Scepter
 							i(112770),	-- Darkfang Mask
@@ -3789,7 +3789,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				-- #endif
 				["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
 				["ignoreBonus"] = true,
-				["g"] = {
+				["groups"] = {
 					n(ZONE_DROPS, {
 						i(105852),	-- Aeth's Swiftcinder Cloak Mythic
 						i(105844),	-- Brave Niunai's Cloak Mythic
@@ -3863,7 +3863,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							71475,	-- Rook Stonetoe [The Fallen Protectors]
 							71480,	-- Sun Tenderheart [The Fallen Protectors]
 						},
-						["g"] = {
+						["groups"] = {
 							-- #if BEFORE 6.0.2
 							ach(8465),	-- Heroic: Fallen Protectors
 							-- #endif
@@ -3918,7 +3918,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							72276,	-- Amalgam of Corruption
 							71965,	-- Norushen
 						},
-						["g"] = {
+						["groups"] = {
 							-- #if BEFORE 6.0.2
 							ach(8466),	-- Heroic: Norushen
 							-- #endif
@@ -4466,7 +4466,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			}),
 			d(DIFFICULTY.RAID.MYTHIC, {					-- Mythic (Added with Patch 6.0.2)
 				["timeline"] = { ADDED_6_0_2 },
-				["g"] = {
+				["groups"] = {
 					n(ZONE_DROPS, {
 						i(113224),	-- Aeth's Swiftcinder Cloak
 						i(113231),	-- Brave Niunai's Cloak
@@ -4514,7 +4514,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							71475,	-- Rook Stonetoe [The Fallen Protectors]
 							71480,	-- Sun Tenderheart [The Fallen Protectors]
 						},
-						["g"] = {
+						["groups"] = {
 							ach(8465),	-- Mythic: Fallen Protectors
 							i(112477),	-- Softfoot's Last Resort
 							i(112478),	-- Death Lotus Crossbow
@@ -4544,7 +4544,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							72276,	-- Amalgam of Corruption
 							71965,	-- Norushen
 						},
-						["g"] = {
+						["groups"] = {
 							ach(8466),	-- Mythic: Norushen
 							i(112547),	-- Norushen's Shortblade
 							i(112546),	-- Xifeng, Longblade of the Titanic Guardian
@@ -4641,7 +4641,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							71859,	-- Earthbreaker Haromm
 							71858,	-- Wavebinder Kardris
 						},
-						["g"] = {
+						["groups"] = {
 							ach(8470),	-- Mythic: Kor'kron Dark Shaman
 							i(112759),	-- Haromm's Frozen Crescent
 							i(112769),	-- Kardris' Scepter
@@ -4832,7 +4832,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			}),
 			d(DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC, {
 				["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				["g"] = {
+				["groups"] = {
 					cr(71865, e(869, {	-- Garrosh Hellscream
 						ach(8400, {	-- Cutting Edge: Garrosh Hellscream (10 player)
 							-- #if MOP
@@ -4849,7 +4849,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			}),
 			d(DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC, {
 				["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
-				["g"] = {
+				["groups"] = {
 					cr(71865, e(869, {	-- Garrosh Hellscream
 						ach(8401, {	-- Cutting Edge: Garrosh Hellscream (25 player)
 							-- #if MOP

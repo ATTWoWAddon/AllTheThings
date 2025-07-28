@@ -227,7 +227,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							["description"] = "You can loot this from the Talon King's Coffer after Patch 2.3.0, before that (and perhaps in TBC Classic), you would loot it from his corpse.",
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
-					}
+					},
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
@@ -332,7 +332,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							}),
 						},
 					}),
-				}
+				},
 			}),
 		},
 	}),

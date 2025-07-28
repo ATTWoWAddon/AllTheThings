@@ -60,7 +60,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
 				n(143560, {	-- Marshal Gabriel <Second-in-Command>
 					["coord"] = { 56.4, 25.8, BORALUS },
-					["g"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
 						iensemble(184672, {	-- Arsenal: Sinister Aspirant's Weapons [A]
 							["cost"] = {{"i", MOH, 80}},
 						}),
@@ -144,7 +144,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = HORDE_ONLY }, {
 				n(143555, {	-- Xander Silberman <War Effort Coordinator>
 					["coord"] = { 51.6, 58.2, ZULDAZAR },
-					["g"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
 						iensemble(184673, {	-- Arsenal: Sinister Aspirant's Weapons [H]
 							["cost"] = {{"i", MOH, 80}},
 						}),
@@ -242,7 +242,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
 				n(143560, {	-- Marshal Gabriel <Second-in-Command>
 					["coord"] = { 56.4, 25.8, BORALUS },
-					["g"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
 						iensemble(184670, {	-- Arsenal: Sinister Gladiator's Weapons [A]
 							["cost"] = {{"i", MOH, 80}},
 						}),
@@ -382,7 +382,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = HORDE_ONLY }, {
 				n(143555, {	-- Xander Silberman <War Effort Coordinator>
 					["coord"] = { 51.6, 58.2, ZULDAZAR },
-					["g"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
 						iensemble(184671, {	-- Arsenal: Sinister Gladiator's Weapons [H]
 							["cost"] = {{"i", MOH, 80}},
 						}),

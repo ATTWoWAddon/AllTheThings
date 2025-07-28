@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 				["sourceQuests"] = { 76283 },	-- Andu-falah-dor
 				["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
 				["coord"] = { 58.0, 35.7, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					ach(20206, {	-- Champion of the Dragonflights
 						title(547),	-- <Name>, Champion of the Dragonflights
 					}),

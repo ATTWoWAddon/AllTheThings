@@ -368,9 +368,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							-- #endif
 							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 							i(33814),	-- Keli'dan's Feathered Stave
-						}
+						},
 					}),
-				}
+				},
 			}),
 		},
 	}),

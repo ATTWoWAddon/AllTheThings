@@ -14,7 +14,7 @@ root(ROOTS.Zones, {
 			n(NETHER_DISRUPTOR, {
 				q(46736, {	-- Contribute to Nether Disruptor
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						currency(1226),	-- 75x Nethershard
 					},
 				}),

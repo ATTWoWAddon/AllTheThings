@@ -437,8 +437,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 17,	-- Uldaman Reagent Run
 					["coord"] = { 37.07, 49.38, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
-					["requireSkill"] = ALCHEMY,
 					["maps"] = { BADLANDS },
+					["requireSkill"] = ALCHEMY,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
@@ -769,10 +769,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1345,	-- Magmar Fellhew
 					["sourceQuest"] = 436,	-- Ironband's Excavation
 					["coord"] = { 64.9, 66.7, LOCH_MODAN },
-					["timeline"] = { REMOVED_4_0_3 },
 					-- #if AFTER 4.0.3
 					["description"] = "This quest gets marked as completed when you complete the quest 'Gathering Idols' (26961).",
 					-- #endif
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
 					["groups"] = {
@@ -1455,12 +1455,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1963,	-- Vidra Hearthstove
 					["coord"] = { 34.8, 49.3, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 3172, 3 },	-- Boar Intestines
 						{ "i", 3173, 3 },	-- Bear Meat
 						{ "i", 3174, 3 },	-- Spider Ichor
 					},
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,
 					["groups"] = {
 						i(3220),	-- Blood Sausage
@@ -1515,10 +1515,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 1156,	-- Vyrin Swiftwind
 					["sourceQuest"] = 258,	-- A Hunter's Challenge
 					["coord"] = { 81.8, 64.2, LOCH_MODAN },
-					["timeline"] = { REMOVED_4_0_3 },
 					-- #if AFTER 4.0.3
 					["description"] = "This quest gets marked as completed when you complete the quest 'Vyrin's Revenge (1/2)' (27036).",
 					-- #endif
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 					["groups"] = {

@@ -31,13 +31,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			-- RBG
 			ach(42035, {	-- Astral Marshal: The War Within Season 3
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					title(635),	-- Astral Marshal <Name>
 				},
 			}),
 			ach(42034, {	-- Astral Warlord: The War Within Season 3
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					title(632),	-- Astral Warlord <Name>
 				},
 			}),
@@ -68,7 +68,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 		n(PVP_WARMODE, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
 			n(219213, {	-- Gilderann <War Mode Quartermaster>
 				["coord"] = { 55.2, 76.8, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					filter(BACK_F, {
 						bloody(525, i(230695)),	-- Astral Warmonger's Cape
 						bloody(525, i(230697)),	-- Astral Warmonger's Cloak
@@ -145,7 +145,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
 			n(219217, {	-- Velerd <Honor Quartermaster>
 				["coord"] = { 55.0, 76.5, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					filter(BACK_F, {
 						honor(525, i(230365)),	-- Astral Aspirant's Cape
 						honor(525, i(230364)),	-- Astral Aspirant's Cloak
@@ -267,7 +267,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			n(219222, {	-- Lalandi <Conquest Quartermaster>
 				["coord"] = { 55.1, 76.2, DORNOGAL },
 				["ItemAppearanceModifierID"] = 159,
-				["g"] = {
+				["groups"] = {
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							conquest(525, i(230591)),	-- Astral Gladiator's Cloak
@@ -740,7 +740,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			]]--
 			n(219216, {	-- Rogurn <Elite Conquest Quartermaster>
 				["coord"] = { 59.8, 69.3, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					honor(100, i(232908, {	-- Astral Gladiator's Tabard
 						["sourceAchievements"] = { 41027 },	-- Elite: The War Within Season 3
 					})),

@@ -144,7 +144,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					14876,	-- Macabre Mechanicals
 					14877,	-- Unholy Undead
 				}},
-				["g"] = {
+				["groups"] = {
 					i(184509),	-- Spriggan Trickster (PET!)
 				},
 			})),

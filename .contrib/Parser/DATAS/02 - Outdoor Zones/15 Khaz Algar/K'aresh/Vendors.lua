@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 		n(VENDORS, {
 			n(235079, {	-- Ba'orr
 				["coord"] = { 41.1, 25.1, KARESH_TAZAVESH },
-				["g"] = {
+				["groups"] = {
 					i(247699),	-- Coagulated "Milk" Protein
 					i(247698),	-- Deep-Fired Devourer Legs
 					i(247693),	-- Fermented Warpstalker Niblets
@@ -20,7 +20,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 			}),
 			n(241588, {	-- Hashim
 				["coord"] = { 50.3, 36.6, KARESH },
-				["g"] = {
+				["groups"] = {
 					i(238039),	-- Chronomatic Fiber
 					i(238041),	-- Dexterous Fiber
 					i(238037),	-- Energizing Fiber
@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 			}),
 			n(241624, {	-- Shad'anis
 				["coord"] = { 50.4, 36.3, KARESH },
-				["g"] = {
+				["groups"] = {
 					i(242730, {	-- Acidic Void Creeper (MOUNT!)
 						["cost"] = { { "c", 3303, 7 }, },	-- Untethered Coin
 					}),

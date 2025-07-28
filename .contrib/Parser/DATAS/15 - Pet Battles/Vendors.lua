@@ -32,7 +32,7 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 			-- #endif
 			-- #endif
 		},
-		["g"] = {
+		["groups"] = {
 			i(86143, {	-- Battle Pet Bandage
 				["cost"] = { { "i", POLISHED_PET_CHARM, 5 } },
 			}),

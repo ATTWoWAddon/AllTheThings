@@ -108,11 +108,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if AFTER WRATH
 					["maps"] = { BURNING_STEPPES },
 					-- #endif
-					["classes"] = { HUNTER },
-					["lvl"] = lvlsquish(60, 60, 30),
 					-- #if BEFORE WRATH
 					["cost"] = { { "i", 18705, 1 } },	-- Mature Black Dragon Sinew
 					-- #endif
+					["classes"] = { HUNTER },
+					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
 						-- #if AFTER WRATH
 						objective(1, {	-- 0/1 Mature Black Dragon Sinew
@@ -142,8 +142,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["sourceQuest"] = 7633,	-- An Introduction
 					["coord"] = { 47, 24.48, FELWOOD },
 					["maps"] = { WINTERSPRING },
-					["classes"] = { HUNTER },
 					["cost"] = { { "i", 18704, 1 } },	-- Mature Blue Dragon Sinew
+					["classes"] = { HUNTER },
 					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
 						i(18714),	-- Ancient Sinew Wrapped Lamina
@@ -237,9 +237,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(SOD_PHASE_FOUR, q(84555, {	-- Nostro's Compendium
 					["provider"] = { "i", 228680 },	-- Nostro's Compendium of Dragon Slaying
 					["description"] = "You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",
-					["classes"] = { WARRIOR, PALADIN, ROGUE },
 					["timeline"] = { ADDED_1_15_3 },
 					["maps"] = { DIRE_MAUL },
+					["classes"] = { WARRIOR, PALADIN, ROGUE },
 					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
 						i(228695),	-- A Dull and Flat Elven Blade
@@ -249,11 +249,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(7507, bubbleDown({ ["timeline"] = { REMOVED_3_3_0 } }, {	-- Nostro's Compendium
 					["provider"] = { "i", 18401 },	-- Nostro's Compendium of Dragon Slaying
 					["description"] = "You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",
-					["classes"] = { WARRIOR, PALADIN },
 					-- #if SEASON_OF_DISCOVERY
 					["timeline"] = { REMOVED_1_15_3 },
 					-- #endif
 					["maps"] = { DIRE_MAUL },
+					["classes"] = { WARRIOR, PALADIN },
 					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
 						i(18513),	-- A Dull and Flat Elven Blade
@@ -266,8 +266,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "i", 18708 },	-- Petrified Bark
 					},
 					["sourceQuest"] = 7633,	-- An Introduction
-					["description"] = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
 					["coord"] = { 47, 24.48, FELWOOD },
+					["description"] = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
 					["timeline"] = { ADDED_1_15_3 },
 					["maps"] = { UNGORO_CRATER, BURNING_STEPPES, SILITHUS, WINTERSPRING },
 					["classes"] = { HUNTER },
@@ -335,8 +335,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "i", 18708 },	-- Petrified Bark
 					},
 					["sourceQuest"] = 7633,	-- An Introduction
-					["description"] = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
 					["coord"] = { 47, 24.48, FELWOOD },
+					["description"] = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
 					["maps"] = { UNGORO_CRATER, BURNING_STEPPES, SILITHUS, WINTERSPRING },
 					["classes"] = { HUNTER },
 					["lvl"] = lvlsquish(60, 60, 30),
@@ -409,9 +409,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "i", 228695 },	-- A Dull and Flat Elven Blade
 					},
 					["sourceQuest"] = 84555,	-- Nostro's Compendium
-					["classes"] = { WARRIOR, PALADIN, ROGUE },
 					["timeline"] = { ADDED_1_15_3 },
 					["maps"] = { DIRE_MAUL },
+					["classes"] = { WARRIOR, PALADIN, ROGUE },
 					["lvl"] = lvlsquish(60, 60, 30),
 				})),
 				-- #endif
@@ -432,9 +432,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(SOD_PHASE_FOUR, q(84557, {	-- The Forging of Quel'Serrar
 					["qg"] = 14368,	-- Lorekeeper Lydros
 					["sourceQuest"] = 84556,	-- The Forging of Quel'Serrar
-					["classes"] = { WARRIOR, PALADIN, ROGUE },
 					["timeline"] = { ADDED_1_15_3 },
 					["maps"] = { DIRE_MAUL },
+					["classes"] = { WARRIOR, PALADIN, ROGUE },
 					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
 						objective(1, {	-- 0/1 Treated Ancient Blade

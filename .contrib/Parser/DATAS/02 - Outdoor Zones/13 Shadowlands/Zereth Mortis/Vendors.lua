@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 		n(VENDORS, {
 			n(185713, {	-- Hadja
 				["coord"] = { 35.2, 65.7, ZERETH_MORTIS },
-				["g"] = sharedData({ ["cost"] = { { "c", ANIMA, 500 }, }, }, {
+				["groups"] = sharedData({ ["cost"] = { { "c", ANIMA, 500 }, }, }, {
 					i(191036, {	-- Broker's Accessory
 						["sym"] = {
 							{"select", "itemID",
@@ -95,7 +95,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			}),
 			n(185587, {	-- Rafiq
 				["coord"] = { 60.6, 51, ZERETH_MORTIS },
-				["g"] = sharedData({ ["modID"] = 28, ["b"] = 1, }, {
+				["groups"] = sharedData({ ["modID"] = 28, ["b"] = 1, }, {
 					i(188054, {	-- Antecedent Drape
 						["cost"] = { { "i", SANDWORN_RELIC, 160 }, },
 					}),
@@ -208,13 +208,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			n(185092, {	-- Shade of Irik-tu
 				["description"] = "Only available while dead.",
 				["coord"] = { 34.6, 48.1, ZERETH_MORTIS },
-				["g"] = {
+				["groups"] = {
 					i(189467),	-- Schematic: Ineffable Skitterer
 				},
 			}),
 			n(182257, {	-- Vilo <Enlightened Quartermaster>
 				["coord"] = { 34.8, 64.1, ZERETH_MORTIS },
-				["g"] = bubbleDownClassicRep(FACTION_THE_ENLIGHTENED, {
+				["groups"] = bubbleDownClassicRep(FACTION_THE_ENLIGHTENED, {
 					{		-- Neutral
 						i(198449, {	-- Pouch of Prodigious Wonders
 							["timeline"] = { ADDED_9_2_5 },

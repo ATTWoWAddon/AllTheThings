@@ -79,52 +79,52 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["questID"] = 76262,
 				}),
 				q(76263, {	-- The Dread Citadel - Naxxramas [Honored]
-					["sourceQuests"] = { 76262 },	-- Archmage Angela Dosantos
+					["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos
 					["altQuests"] = {
 						76264,	-- The Dread Citadel - Naxxramas [Revered]
 						76265,	-- The Dread Citadel - Naxxramas [Exalted]
 					},
-					["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos
+					["sourceQuests"] = { 76262 },	-- Archmage Angela Dosantos
 					["coord"] = { 75.5, 52.8, EASTERN_PLAGUELANDS },
-					["maxReputation"] = { FACTION_ARGENT_DAWN, REVERED },
 					["minReputation"] = { FACTION_ARGENT_DAWN, HONORED },
+					["maxReputation"] = { FACTION_ARGENT_DAWN, REVERED },
 					["cost"] = {
 						{ "i", 12363, 5 },	-- 5x Arcane Crystal
 						{ "i", 14344, 6 },	-- 6x Large Brilliant Shard
 						{ "i", 12811, 1 },	-- 1x Righteous Orb
 					},
-					["g"] = {
+					["groups"] = {
 						ach(18372),	-- Wards of the Dread Citadel
 					},
 				}),
 				q(76264, {	-- The Dread Citadel - Naxxramas [Revered]
-					["sourceQuests"] = { 76262 },	-- Archmage Angela Dosantos
+					["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos
 					["altQuests"] = {
 						76263,	-- The Dread Citadel - Naxxramas [Honored]
 						76265,	-- The Dread Citadel - Naxxramas [Exalted]
 					},
-					["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos
+					["sourceQuests"] = { 76262 },	-- Archmage Angela Dosantos
 					["coord"] = { 75.5, 52.8, EASTERN_PLAGUELANDS },
-					["maxReputation"] = { FACTION_ARGENT_DAWN, EXALTED },
 					["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },
+					["maxReputation"] = { FACTION_ARGENT_DAWN, EXALTED },
 					["cost"] = {
 						{ "i", 12363, 2 },	-- 2x Arcane Crystal
 						{ "i", 14344, 3 },	-- 3x Large Brilliant Shard
 					},
-					["g"] = {
+					["groups"] = {
 						ach(18372),	-- Wards of the Dread Citadel
 					},
 				}),
 				q(76265, {	-- The Dread Citadel - Naxxramas [Exalted]
-					["sourceQuests"] = { 76262 },	-- Archmage Angela Dosantos
+					["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos
 					["altQuests"] = {
 						76263,	-- The Dread Citadel - Naxxramas [Honored]
 						76264,	-- The Dread Citadel - Naxxramas [Revered]
 					},
-					["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos
+					["sourceQuests"] = { 76262 },	-- Archmage Angela Dosantos
 					["coord"] = { 75.5, 52.8, EASTERN_PLAGUELANDS },
 					["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },
-					["g"] = {
+					["groups"] = {
 						ach(18372),	-- Wards of the Dread Citadel
 					},
 				}),
@@ -202,17 +202,17 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			})),
 			n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 				q(76395, {	-- Corruptor's Scourgestones
-					["sourceQuests"] = { 76390 },	-- Inconvenience Fee
 					["provider"] = { "n", 206572 },	-- Zackett Skullsmash
-					["repeatable"] = true,
+					["sourceQuests"] = { 76390 },	-- Inconvenience Fee
 					["cost"] = {{ "i", 206375, 1 }},	-- 1x Corruptor's Scourgestone
-					["g"] = {
+					["repeatable"] = true,
+					["groups"] = {
 						i(DEATHS_BARGAINING_CHIP),
 					},
 				}),
 				q(76390, {	-- Inconvenience Fee
-					["sourceQuests"] = { 76307 },	-- Makeshift Grappling Hook
 					["provider"] = { "n", 206572 },	-- Zackett Skullsmash
+					["sourceQuests"] = { 76307 },	-- Makeshift Grappling Hook
 					["cost"] = {
 						{ "i", 206374, 20 },	-- 20x Invader's Scourgestone
 						{ "i", 206375, 5 },		-- 5x Corruptor's Scourgestone
@@ -220,7 +220,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						{ "i", 33042, 1 },		-- 1x Black Coffee
 						{ "i", 13180, 2 },		-- 2x Stratholme Holy Water
 					},
-					["g"] = {
+					["groups"] = {
 						i(206615),	-- Desecrated Cloth Bracers
 						i(206623),	-- Desecrated Leather Bracers
 						i(206631),	-- Desecrated Mail Bracers
@@ -228,40 +228,40 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 				q(76396, {	-- Invader's Scourgestones
-					["sourceQuests"] = { 76390 },	-- Inconvenience Fee
 					["provider"] = { "n", 206572 },	-- Zackett Skullsmash
-					["repeatable"] = true,
+					["sourceQuests"] = { 76390 },	-- Inconvenience Fee
 					["cost"] = {{ "i", 206374, 10 }},	-- 10x Invader's Scourgestone
-					["g"] = {
+					["repeatable"] = true,
+					["groups"] = {
 						i(DEATHS_BARGAINING_CHIP),
 					},
 				}),
 				q(77244, {	-- Many Corruptor's Scourgestones
-					["sourceQuests"] = { 76390 },	-- Inconvenience Fee
 					["provider"] = { "n", 206572 },	-- Zackett Skullsmash
-					["repeatable"] = true,
+					["sourceQuests"] = { 76390 },	-- Inconvenience Fee
 					["cost"] = {{ "i", 206375, 5 }},	-- 5x Corruptor's Scourgestone
-					["g"] = {
+					["repeatable"] = true,
+					["groups"] = {
 						i(DEATHS_BARGAINING_CHIP),
 					},
 				}),
 				q(77245, {	-- Many Invader's Scourgestones
-					["sourceQuests"] = { 76390 },	-- Inconvenience Fee
 					["provider"] = { "n", 206572 },	-- Zackett Skullsmash
-					["repeatable"] = true,
+					["sourceQuests"] = { 76390 },	-- Inconvenience Fee
 					["cost"] = {{ "i", 206374, 50 }},	-- 50x Invader's Scourgestone
-					["g"] = {
+					["repeatable"] = true,
+					["groups"] = {
 						i(DEATHS_BARGAINING_CHIP),
 					},
 				}),
 				q(76290, {	-- Omarion's Second Handbook
+					["provider"] = { "i", 206449 },	-- Omarion's Second Handbook
 					["sourceQuests"] = {
 						76263,	-- The Dread Citadel - Naxxramas [Honored]
 						76264,	-- The Dread Citadel - Naxxramas [Revered]
 						76265,	-- The Dread Citadel - Naxxramas [Exalted]
 					},
 					["sourceQuestNumRequired"] = 1,
-					["provider"] = { "i", 206449 },	-- Omarion's Second Handbook
 				}),
 			})),
 			n(SPECIAL, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
@@ -1015,7 +1015,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						76265,	-- The Dread Citadel - Naxxramas [Exalted]
 					},
 					["sourceQuestNumRequired"] = 1,
-					["g"] = {
+					["groups"] = {
 						i(206470),	-- Construct's Hook
 					},
 				}),
@@ -1027,28 +1027,28 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						76265,	-- The Dread Citadel - Naxxramas [Exalted]
 					},
 					["sourceQuestNumRequired"] = 1,
-					["g"] = {
+					["groups"] = {
 						i(22682),	-- Frozen Rune
 					},
 				}),
 				o(403702, {	-- Lost Page
 					["description"] = "Pages 1 and 2 of Omarion's Notes can be found in the Outer Ring of Naxxramas, inside the slime pool that separates the Construct and Arachnid Quarters, to the north of the instance. It will be at the bottom of the pool.",
 					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
-					["g"] = {
+					["groups"] = {
 						i(206450),	-- Omarion's Notes - Pages 1 & 2 (CI!)
 					},
 				}),
 				o(403703, {	-- Lost Page
 					["description"] = "Pages 3 and 4 of Omarion's notes can be found in the first room of the Arachnid Quarter, hidden within the ruined structure by the slime pool.",
 					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
-					["g"] = {
+					["groups"] = {
 						i(206451),	-- Omarion's Notes - Pages 3 & 4 (CI!)
 					},
 				}),
 				o(403704, {	-- Lost Page
 					["description"] = "Pages 5 and 6 of Omarion's Notes can be found just before entering Faerlina's room - Instead of taking a left to enter the boss room, take a right. Page is hidden beneath some spider eggs.",
 					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
-					["g"] = {
+					["groups"] = {
 						i(206452),	-- Omarion's Notes - Pages 5 & 6 (CI!)
 					},
 				}),
@@ -1058,7 +1058,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						76307,	-- Makeshift Grappling Hook
 						76290,	-- Omarion's Second Handbook
 					},
-					["g"] = {
+					["groups"] = {
 						i(206453),	-- Omarion's Notes - Pages 7 & 8 (CI!)
 					},
 				}),
@@ -1068,7 +1068,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						76307,	-- Makeshift Grappling Hook
 						76290,	-- Omarion's Second Handbook
 					},
-					["g"] = {
+					["groups"] = {
 						i(206454),	-- Omarion's Notes - Pages 9 & 10 (CI!)
 					},
 				}),
@@ -1078,7 +1078,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						76307,	-- Makeshift Grappling Hook
 						76290,	-- Omarion's Second Handbook
 					},
-					["g"] = {
+					["groups"] = {
 						i(206455),	-- Omarion's Notes - Pages 11 & 12 (CI!)
 					},
 				}),
@@ -1088,7 +1088,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						76307,	-- Makeshift Grappling Hook
 						76290,	-- Omarion's Second Handbook
 					},
-					["g"] = {
+					["groups"] = {
 						i(206456),	-- Omarion's Notes - Pages 13 & 14 (CI!)
 					},
 				}),
@@ -1098,35 +1098,35 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						76307,	-- Makeshift Grappling Hook
 						76290,	-- Omarion's Second Handbook
 					},
-					["g"] = {
+					["groups"] = {
 						i(206457),	-- Omarion's Notes - Pages 15 & 16 (CI!)
 					},
 				}),
 				o(403710, {	-- Lost Page
 					["description"] = "Pages 17 and 18 of Omarion's Notes can be found in the first room of the Plague Quarter, sitting by a meat wagon just to the left of the entrance. The page does blend in well with the wagon so it can be easy to miss.",
 					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
-					["g"] = {
+					["groups"] = {
 						i(206458),	-- Omarion's Notes - Pages 17 & 18 (CI!)
 					},
 				}),
 				o(403711, {	-- Lost Page
 					["description"] = "Pages 19 and 20 of Omarion's Notes can be found by the corridor between Noth and Heigan in the Plague Quarter. On the mob gauntlet on the left side, there will be a slime pool covered by a sewer lid, and some mushrooms in the area. The note will be on top of one of the mushrooms.",
 					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
-					["g"] = {
+					["groups"] = {
 						i(206459),	-- Omarion's Notes - Pages 19 & 20 (CI!)
 					},
 				}),
 				o(403712, {	-- Lost Page
 					["description"] = "Pages 21 and 22 of Omarion's Notes can be found in Loatheb's room, by a gate to the left of where the boss is standing (when looking from the boss's room entrance).",
 					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
-					["g"] = {
+					["groups"] = {
 						i(206460),	-- Omarion's Notes - Pages 21 & 22 (CI!)
 					},
 				}),
 				o(403713, {	-- Lost Page
 					["description"] = "Pages 23 and 24 of Omarion's Notes can be found by the platform overlooking Noth's room. The platform is accessible by reaching it via the Outer Ring.",
 					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
-					["g"] = {
+					["groups"] = {
 						i(206461),	-- Omarion's Notes - Pages 23 & 24 (CI!)
 					},
 				}),
@@ -1136,14 +1136,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						76307,	-- Makeshift Grappling Hook
 						76290,	-- Omarion's Second Handbook
 					},
-					["g"] = {
+					["groups"] = {
 						i(206462),	-- Omarion's Notes - Pages 25 & 26 (CI!)
 					},
 				}),
 				o(403715, {	-- Lost Page
 					["description"] = "Pages 27 and 28 of Omarion's Notes can be found in the Four Horsemen room, by a sewer pipe to the left as you enter the room.",
 					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
-					["g"] = {
+					["groups"] = {
 						i(206463),	-- Omarion's Notes - Pages 27 & 28 (CI!)
 					},
 				}),
@@ -1153,20 +1153,20 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						76307,	-- Makeshift Grappling Hook
 						76290,	-- Omarion's Second Handbook
 					},
-					["g"] = {
+					["groups"] = {
 						i(206464),	-- Omarion's Notes - Pages 29 & 30 (CI!)
 					},
 				}),
 				o(403717, {	-- Lost Page
 					["description"] = "Pages 31 and 32 of Omarion's Notes can be found in the room after Razuvious with all the enchanted weapons. By the right, next to the corner, by one of the window frames.",
 					["sourceQuests"] = { 76290 },	-- Omarion's Second Handbook
-					["g"] = {
+					["groups"] = {
 						i(206465),	-- Omarion's Notes - Pages 31 & 32 (CI!)
 					},
 				}),
 				o(403962, {	-- Omarion's Second Handbook
 					["description"] = "Located by a cage in the first room of the Military Quarter.",
-					["g"] = {
+					["groups"] = {
 						i(206449),	-- Omarion's Second Handbook
 					},
 				}),
@@ -1174,18 +1174,18 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			n(VENDORS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 				n(206572, {	-- Zackett Skullsmash
 					["sourceQuests"] = { 76390 },	-- Inconvenience Fee
-					["g"] = {
+					["groups"] = {
 						i(206573, {	-- Dented Raider's Belt
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
 							["description"] = "Includes a wide range of Bind on Equip (BoE) Belts from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-							["g"] = {
+							["groups"] = {
 								i(206609),	-- Lamented Crusader's Belt
 							},
 						}),
 						i(206575, {	-- Dented Raider's Boots
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
 							["description"] = "Includes a wide range of Bind on Equip (BoE) Boots from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-							["g"] = {
+							["groups"] = {
 								i(10402),	-- Blackened Defias Boots
 								i(206611),	-- Lamented Crusader's Boots
 								i(7187),	-- VanCleef's Boots
@@ -1195,14 +1195,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(206571, {	-- Dented Raider's Bracers
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
 							["description"] = "Includes a wide range of Bind on Equip (BoE) Bracers from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-							["g"] = {
+							["groups"] = {
 								i(206607),	-- Lamented Crusader's Bracers
 							},
 						}),
 						i(206570, {	-- Dented Raider's Chestpiece
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
 							["description"] = "Includes a wide range of Bind on Equip (BoE) Chestpieces from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-							["g"] = {
+							["groups"] = {
 								i(206606),	-- Lamented Crusader's Chestpiece
 								i(3019),	-- Noble's Robe
 							},
@@ -1210,7 +1210,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(206572, {	-- Dented Raider's Gauntlets
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
 							["description"] = "Includes a wide range of Bind on Equip (BoE) Gauntlets from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-							["g"] = {
+							["groups"] = {
 								i(206608),	-- Lamented Crusader's Gauntlets
 							--	i(1944),	-- Metalworking Gloves				Added to original Source in 10.1.7
 							--	i(1945),	-- Woodworking Gloves				Added to original Source in 10.1.7
@@ -1219,14 +1219,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(206568, {	-- Dented Raider's Helmet
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
 							["description"] = "Includes a wide range of Bind on Equip (BoE) Helmets from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-							["g"] = {
+							["groups"] = {
 								i(206604),	-- Lamented Crusader's Helmet
 							},
 						}),
 						i(206574, {	-- Dented Raider's Leggings
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
 							["description"] = "Includes a wide range of Bind on Equip (BoE) Leggings from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-							["g"] = {
+							["groups"] = {
 							--	i(1943),	-- Goblin Mail Leggings				Added to original Source in 10.1.7
 							--	i(2978),	-- Veteran Leggings					-- Likely added back. Add when confirmed
 								i(206610),	-- Lamented Crusader's Leggings
@@ -1235,7 +1235,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(206569, {	-- Dented Raider's Spaulders
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 3 }},
 							["description"] = "Includes a wide range of Bind on Equip (BoE) Spaulders from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
-							["g"] = {
+							["groups"] = {
 								i(206605),	-- Lamented Crusader's Spaulders
 							},
 						}),
@@ -1267,7 +1267,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						}),
 						i(206577, {	-- Slime-Covered Scroll
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 12 }},
-							["g"] = {
+							["groups"] = {
 								i(206552),	-- Ancient Design: Frostwyrm's Frigid Stare (RECIPE!)
 								i(206551),	-- Ancient Design: Frostwyrm's Icy Gaze (RECIPE!)
 								i(206543),	-- Ancient Design: Gem of the Nerubians (RECIPE!)
@@ -1343,10 +1343,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					n(QUESTS, {
 						q(13372, {	-- The Key to the Focusing Iris (Quest)
 							["provider"] = { "i", 44569 },	-- Key to the Focusing Iris (Item)
+							["lvl"] = lvlsquish(78, 78, 30),
 							-- #if ANYCLASSIC
 							["OnUpdate"] = WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE,
 							-- #endif
-							["lvl"] = lvlsquish(78, 78, 30),
 							["groups"] = {
 								i(44582, {	-- Key to the Focusing Iris
 									["timeline"] = { DELETED_4_2_0 },
@@ -1362,7 +1362,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							["description"] = "You must do this in the 10-man version of Naxxramas, with Instructor Razuvious still alive.\n\nOnce you have the Rotten Delicious apple, you need to go back to Valiance, and slowly approach it, while attempting to give the item. Once you're able to do so, the steed will eat the rotten apple, but that will not be enough, as it will still refuse you as its rider.\n\nClick on one of the Obedience Crystal near the boss to mind control one of the Understudy adds, and bring the mind-controlled add to Valiance, which will at that point mount Valiance. Bring the mounted add back to Razuvious, and then break the mind control by clicking on the mind-controlled pet portrait and selecting Dismiss.\n\nNow kill the boss and loot your new mount.",
 							["questID"] = 76378,
 							["cost"] = {{ "i", 208068, 1 }},	-- 1x Rotten Delicious
-							["g"] = {
+							["groups"] = {
 								i(206585),	-- Valiance (MOUNT!)
 							},
 						}),

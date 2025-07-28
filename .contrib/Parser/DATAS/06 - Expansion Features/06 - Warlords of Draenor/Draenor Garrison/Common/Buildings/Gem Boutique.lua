@@ -33,12 +33,12 @@ root(ROOTS.ExpansionFeatures,
 							["isDaily"] = true,
 						}),
 						q(36644, {	-- Your First Jewelcrafting Work Order
-							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 77356 },	-- Costan Highwall
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37573, {	-- Your First Jewelcrafting Work Order
-							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 79832 },	-- Dorogarr
+							["races"] = HORDE_ONLY,
 						}),
 					}),
 					n(VENDORS, {

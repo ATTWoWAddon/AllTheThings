@@ -926,7 +926,7 @@ COMMON_MOP_LEATHERWORKING_RECIPES = applyclassicphase(MOP_PHASE_LANDFALL, shared
 }));
 DRAENOR_LEATHERWORKING = applyclassicphase(WOD_PHASE_ONE, i(115358, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	["description"] = "This is a reward for completing the introductory Leaterworking questline that can drop from any Draenor mob.",
-	["g"] = {
+	["groups"] = {
 		r(158752, {	-- Leatherworking (Draenor Master)
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 			-- #if NOT ANYCLASSIC

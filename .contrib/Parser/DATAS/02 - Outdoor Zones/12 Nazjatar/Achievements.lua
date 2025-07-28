@@ -477,7 +477,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				13709,	-- Unfathomable
 				13558,	-- Waveblade Ankoan (A)
 			}},
-			["g"] = {
+			["groups"] = {
 				i(169194),		-- Snapback Scuttler (MOUNT!)
 				title(405),		-- of the Deeps
 			},

@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 			q(85460, {	-- Ecological Succession
 				["coord"] = { 74.1, 32.6, KARESH },
 				["isWeekly"] = true,	-- TODO: remove after Blizzard fix it flag
-				["g"] = {
+				["groups"] = {
 					o(483713, {	-- Watering Jug
 						i(232323),	-- Watering Jug (QI!)
 					}),
@@ -24,7 +24,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 							{"where","mapID",KARESH},{"pop"},
 							{"where","headerID",ZONE_REWARDS},{"pop"},
 						},
-						["g"] = {
+						["groups"] = {
 							i(242734),	-- Curious Slateback (MOUNT!)
 							i(245252),	-- Graceful Cosmic Ray Pup (PET!)
 							i(244909),	-- Impartial Watcher (PET!)
@@ -39,9 +39,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 			}),
 			q(84962, {	-- Exigent Extermination
 				["coord"] = { 65.9, 48.5, KARESH },
-				["g"] = {
+				["groups"] = {
 					o(499099, {	-- Entropic Egg
 						i(232601),	-- Entropic Egg (QI!)
+					}),
+				},
+			}),
+			q(85822, {	-- Making a Market
+				["coord"] = { 58.8, 58.9, KARESH },
+				["groups"] = {
+					o(495603, {	--  Loose Sand
+						i(232578),	-- Wastelander Artifact (QI!)
+						i(232626),	-- Wastelander Artifact (QI!)
+						i(232625),	-- Wastelander Artifact (QI!)
+						i(232627),	-- Wastelander Artifact (QI!)
+						i(232628),	-- Wastelander Artifact (QI!)
 					}),
 				},
 			}),
@@ -64,9 +76,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 			q(85864, {	-- Phase Diving: Fractured Laacunite
 				["description"] = "You need to phasedive in order to get this World Quest.",
 				["coord"] = { 55.2, 26.5, KARESH },
-				["g"] = {
+				["groups"] = {
 					i(232612),	-- Laacunite Shard (QI!)
 				},
+			}),
+			q(88904, {	-- Phase Diving: It Could Be Anything
+				["description"] = "You need to phasedive in order to get this World Quest.",
+				["coord"] = { 68.6, 31.7, KARESH },
 			}),
 			q(89291, {	-- Phase Diving: Oath-Breaker Desamirah
 				["description"] = "You need to phasedive in order to get this World Quest.",
@@ -94,7 +110,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 			}),
 			q(85812, {	-- Raid the Raiders
 				["coord"] = { 74.7, 51.1, KARESH },
-				["g"] = {
+				["groups"] = {
 					o(495583, {	-- Missing Shipment
 						i(232574),	-- Missing Shipment (QI!)
 					}),
@@ -108,7 +124,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 			}),
 			q(86395, {	-- Stealing the Stolen
 				["coord"] = { 85.8, 55.5, KARESH },
-				["g"] = {
+				["groups"] = {
 					o(503220, {	-- Weapon Rack
 						i(233543),	-- Stolen Stolen Weapon (QI!)
 					}),
@@ -116,7 +132,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 			}),
 			q(86800, {	-- Swipe 'Em
 				["coord"] = { 53.8, 49.4, KARESH },
-				["g"] = {
+				["groups"] = {
 					o(507470, {	-- Tool Rack
 						i(235413),	-- Shadowguard Tool (QI!)
 					}),
@@ -127,7 +143,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 			}),
 			q(86707, {	-- The Shadowguard Resurgence
 				["coord"] = { 38.9, 65.5, KARESH_TAZAVESH },
-				["g"] = {
+				["groups"] = {
 					o(507058, {	-- Northeast Barrier Projector
 						["coord"] = { 41.3, 63.1, KARESH_TAZAVESH },
 					}),
@@ -150,7 +166,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 			}),
 			q(86305, {	-- Watch me Make these Bugs Expire
 				["coord"] = { 49.3, 64.3, KARESH },
-				["g"] = {
+				["groups"] = {
 					i(249417),	-- Flamethrower (QI!)
 				},
 			}),

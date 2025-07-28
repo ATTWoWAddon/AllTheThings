@@ -39,7 +39,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(82335),	-- Crystals
 				}, {	-- RENOWN 5 --
 					q(82391, {	-- Precious Stones
-						["g"] = { i(223951) },	-- Earth-Encrusted Gem
+						["groups"] = { i(223951) },	-- Earth-Encrusted Gem
 					}),
 					--
 					q(81990, {	-- The Light's Call
@@ -55,12 +55,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["sourceQuests"] = { 81990 },	-- The Light's Call
 						["provider"] = { "n", 215527 },	-- Keyrra Flamestonge
 						["coords"] = {{ 65.5, 32.2, HALLOWFALL }},
-						["g"] = {
+						["groups"] = {
 							i(219453),	-- Idona Seerstone's Tinderbox (QI!)
 							i(219451),	-- Oskaer Daleclash's Tinderbox (QI!)
 							o(439789, {	-- Dalian Ironlink's Tinderbox
 								["coord"] = { 67.0, 20.9, HALLOWFALL },
-								["g"] = {
+								["groups"] = {
 									i(219499),	-- Dalian Ironlink's Tinderbox (QI!)
 								},
 							}),
@@ -73,7 +73,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						},
 						["provider"] = { "n", 215527 },	-- Keyrra Flamestonge
 						["coords"] = {{ 65.5, 32.2, HALLOWFALL }},
-						["g"] = {
+						["groups"] = {
 							i(219503),	-- Honorary Tinderbox
 						},
 					}),
@@ -87,7 +87,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(82394),	-- A Cache of Crests
 				}, {	-- RENOWN 10 --
 					q(82395, {	-- Flame-touched Tabard
-						["g"] = { i(218352) },	-- Expeditionary Tabard (COSMETIC!)
+						["groups"] = { i(218352) },	-- Expeditionary Tabard (COSMETIC!)
 					}),
 				}, {	-- RENOWN 11 --
 					q(81692, {	-- The Flame Within
@@ -98,7 +98,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["sourceQuests"] = { 81692 },	-- The Flame Within
 						["provider"] = { "n", 217128 },	-- Speaker Kuldas
 						["coords"] = {{ 47.5, 32.0, THE_RINGING_DEEPS }},
-						["g"] = {
+						["groups"] = {
 							i(219960),	-- Honey Drone Vac (QI!)
 							i(220130),	-- Pure Fire Honey (QI!)
 						},
@@ -107,7 +107,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["sourceQuests"] = { 81692 },	-- The Flame Within
 						["provider"] = { "n", 217128 },	-- Speaker Kuldas
 						["coords"] = {{ 47.5, 32.0, THE_RINGING_DEEPS }},
-						["g"] = {
+						["groups"] = {
 							i(219806),	-- Awakened Cog (QI!)
 							i(219807),	-- Ringing Gemstone (QI!)
 						},
@@ -119,7 +119,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						},
 						["provider"] = { "n", 217128 },	-- Speaker Kuldas
 						["coords"] = {{ 47.5, 32.0, THE_RINGING_DEEPS }},
-						["g"] = {
+						["groups"] = {
 							i(220157),	-- Empowered Tinderbox
 						},
 					}),
@@ -150,7 +150,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["sourceQuests"] = { 81906 },	-- Whispers from the Web
 						["provider"] = { "n", 221902 },	-- Ct'nak
 						["coords"] = {{ 46.9, 50.1, NERUBAR_LOWER }},
-						["g"] = {
+						["groups"] = {
 							i(220212),	-- Aelric's Corrupted Tinderbox (QI!)
 							i(220215),	-- Unidentified Tinderbox (QI!)
 						},
@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["sourceQuests"] = { 81908 },	-- A Flame in the Dark
 						["provider"] = { "n", 221902 },	-- Ct'nak
 						["coords"] = {{ 46.9, 50.1, NERUBAR_LOWER }},
-						["g"] = {
+						["groups"] = {
 							i(220359),	-- Aelric's Corrupted Tinderbox (QI!)
 						},
 					}),
@@ -167,7 +167,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["sourceQuests"] = { 81909 },	-- Absolute Power
 						["provider"] = { "n", 214380 },	-- Raen Dawncavalyr
 						["coords"] = {{ 43.2, 56.4, HALLOWFALL }},
-						["g"] = {
+						["groups"] = {
 							i(220158),	-- Darkened Tinderbox
 						},
 					}),
@@ -175,20 +175,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(83334),	-- The Wealth of an Empire
 				}, {	-- RENOWN 24 --
 					q(82407, {	-- For What Glimmers in the Deep
-						["g"] = { i(224072) },	-- Enchanted Runed Harbinger Crest
+						["groups"] = { i(224072) },	-- Enchanted Runed Harbinger Crest
 					}),
 				}, {	-- RENOWN 25 --
 						------ Paragon ------
 					q(79218, {	-- Renowned with the Hallowfall Arathi
 						["isRepeatable"] = true,
-						["g"] = { i(225246) },	-- Overflowing Hallowfall Trove
+						["groups"] = { i(225246) },	-- Overflowing Hallowfall Trove
 					}),
 				},
 			}))),
 			header(HEADERS.Quest, 76586, bubbleDownSelf({ ["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 3 } }, {	-- Spreading The Light
 				["icon"] = 135922,
 				["coord"] = { 65.4, 32.2, HALLOWFALL },
-				["g"] = {
+				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(40308),		-- Beacon of Hope (automated)
 						ach(40313, {	-- Igniting the Keyflames
@@ -203,7 +203,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						q(76338, {	-- A Better Cabbage Smacker
 							["description"] = "Whirring Field Keyflame.",
 							["coord"] = { 65.0, 29.3, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								o(403740, {	-- Cleanbrass Bolts
 									i(206519),	-- Cleanbrass Bolts (QI!)
 								}),
@@ -213,7 +213,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						q(79471, {	-- Bleak Sand
 							["description"] = "Bleak Sand Keyflame.",
 							["coord"] = { 61.6, 12.8, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(211073),	-- Sentry Flare (QI!)
 							},
 						}),
@@ -228,7 +228,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						q(79329, {	-- Glowing Harvest
 							["description"] = "Light's Blooming Keyflame",
 							["coord"] = { 63.4, 28.5, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								o(421070, {	-- Remnant Satchel
 									i(212755),	-- Remnant Satchel (QI!)
 								}),
@@ -237,21 +237,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						q(79469, {	-- Lurking Below
 							["description"] = "Duskrise Acerage Keyflame.",
 							["coord"] = { 61.9, 32.0, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(215467),	-- Dirt-Cracker Pick (QI!)
 							},
 						}),
 						q(78657, {	-- The Midnight Sentry
 							["description"] = "Torchlight Mine Keyflame.",
 							["coord"] = { 63.9, 19.6, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(211073),	-- Sentry Flare (QI!)
 							},
 						}),
 						q(79470, {	-- Water of War
 							["description"] = "Faded Shore keyflame.",
 							["coord"] = { 62.6, 17.0, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(211073),	-- Sentry Flare (QI!)
 							},
 						}),
@@ -286,7 +286,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["sourceQuests"] = { 82006 },	-- Speak to Attica Whiskervale
 							["provider"] = { "n", 212419 },	-- Attica Whiskervale
 							["coord"] = { 64.5, 18.8, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(220782),	-- Thunder (PET!)
 							},
 						}),
@@ -306,10 +306,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["sourceQuests"] = { 78466 },	-- Keyflame: Chef Dinaire
 							["provider"] = { "n", 206533 },	-- Chef Dinaire
 							["coord"] = { 64.5, 31.1, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								o(434861, {	-- Ever-Blossoming Fungi
 									["maps"] = { MYCOMANCER_CAVERN },
-									["g"] = { i(218127) },	-- Ever-Blossoming Fungi (QI!)
+									["groups"] = { i(218127) },	-- Ever-Blossoming Fungi (QI!)
 								}),
 							},
 						}),
@@ -317,7 +317,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["sourceQuests"] = { 79295 },	-- Keyflame: Taerry Bligestone
 							["provider"] = { "n", 215956 },	-- Taerry Bligestone
 							["coord"] = { 65.8, 24.4, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								o(423714, {	-- Duskstem Stalk
 									i(215447),	-- Duskstem (QI!)
 								}),
@@ -327,7 +327,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["sourceQuests"] = { 80005 },	-- Keyflame: Crab Cage
 							["provider"] = { "o", 424347 },	-- Empty Crab Cage
 							["coord"] = { 61.5, 17.4, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(216693),	-- Shadowtide Crab (QI!)
 							},
 						}),
@@ -365,7 +365,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["sourceQuests"] = { 78472 },	-- Keyflame: Attica Whiskervale
 							["provider"] = { "n", 212419 },	-- Attica Whiskervale
 							["coord"] = { 64.5, 18.8, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								o(439314, {	-- Camp Supplies
 									i(219346),	-- Camp Supplies (QI!)
 								}),
@@ -375,7 +375,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["sourceQuests"] = { 78472 },	-- Keyflame: Attica Whiskervale
 							["provider"] = { "n", 212419 },	-- Attica Whiskervale
 							["coord"] = { 64.5, 18.8, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(219198),	-- Attica's Cave Torch (QI!)
 								o(403458, {	-- Dauntless Draught
 									i(206203),	-- Dauntless Draught (QI!)
@@ -392,7 +392,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["sourceQuests"] = { 79295 },	-- Keyflame: Taerry Bligestone
 							["provider"] = { "n", 215956 },	-- Taerry Bligestone
 							["coord"] = { 65.8, 24.4, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(211942),	-- Water Hose (QI!)
 							},
 						}),
@@ -404,7 +404,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["sourceQuests"] = { 78452 },	-- Keyflame: Yovas Flintstrike
 							["provider"] = { "n", 208186 },	-- Yorvas Flintstrike
 							["coord"] = { 64.6, 30.7, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(211872),	-- Patrol Torch (QI!)
 							},
 						}),
@@ -419,7 +419,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								{"n", 206441 },	-- Auebry Irongear
 							},
 							["coord"] = { 65.2, 28.1, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(207084),	-- Auebry's Marker Pistol
 							},
 						}),
@@ -427,7 +427,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["sourceQuests"] = { 78466 },	-- Keyflame: Chef Dinaire
 							["provider"] = { "n", 206533 },	-- Chef Dinaire
 							["coord"] = { 64.5, 31.1, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(206601),	-- Dark-Nurtured Scallions (QI!)
 								i(211474),	-- Shadowblind Grouper (QI!)
 								i(211475),	-- Twilight Spice (QI!)
@@ -438,7 +438,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["sourceQuests"] = { 76599 },	-- Keyflame: Auebry Irongear
 							["provider"] = { "n", 206441 },	-- Auebry Irongear
 							["coord"] = { 65.2, 28.1, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								o(416418, {	-- Harvest Seed Supply
 									i(211947),	-- Harvest Seed Supply (QI!)
 								}),
@@ -448,7 +448,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["sourceQuests"] = { 78452 },	-- Keyflame: Yovas Flintstrike
 							["provider"] = { "n", 208186 },	-- Yorvas Flintstrike
 							["coord"] = { 64.6, 30.7, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(211872),	-- Patrol Torch (QI!)
 							},
 						}),
@@ -461,7 +461,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["sourceQuests"] = { 79383 },	-- Keyflame: Erol Ellimoore
 							["provider"] = { "n", 206150 },	-- Erol Ellimoore
 							["coord"] = { 63.2, 29.4, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(211969),	-- Arathi-Locked Chest (QI!)
 								o(416973, {	-- Arathi Toolbox
 									["coords"] = {
@@ -478,7 +478,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 										{ 65.4, 27.3, HALLOWFALL },
 										{ 65.8, 24.4, HALLOWFALL },
 									},
-									["g"] = { i(211975), },	-- Arathi Toolkit (QI!)
+									["groups"] = { i(211975), },	-- Arathi Toolkit (QI!)
 								}),
 								i(211968),	-- Blueprint Bundle (QI!)
 								o(416971, {	-- Fallow Corn
@@ -493,7 +493,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 										{ 65.5, 30.2, HALLOWFALL },
 										{ 66.2, 32.4, HALLOWFALL },
 									},
-									["g"] = { i(211971), },	-- Fallow Corn (QI!)
+									["groups"] = { i(211971), },	-- Fallow Corn (QI!)
 								}),
 								o(416969, {	-- Harvest Wine
 									["coords"] = {
@@ -522,7 +522,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 										{ 66.4, 23.7, HALLOWFALL },
 										{ 66.5, 23.7, HALLOWFALL },
 									},
-									["g"] = { i(211972), },	-- Hallowfall Farm Supplies (QI!)
+									["groups"] = { i(211972), },	-- Hallowfall Farm Supplies (QI!)
 								}),
 								i(211967),	-- Large Sealed Crate (QI!)
 								i(211966),	-- Nerubian Sealed Crate (QI!)
@@ -536,7 +536,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 										{ 67.6, 29.4, HALLOWFALL },
 										{ 67.6, 29.5, HALLOWFALL },
 									},
-									["g"] = { i(211974), },	-- Rolled Arathi Rug (QI!)
+									["groups"] = { i(211974), },	-- Rolled Arathi Rug (QI!)
 								}),
 								i(211973),	-- Spider-Touched Bag (QI!)
 								o(416968, {	-- Stillstone Catch
@@ -551,7 +551,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 										{ 67.1, 24.5, HALLOWFALL },
 										{ 67.2, 27.9, HALLOWFALL },
 									},
-									["g"] = { i(211964), },	-- Stillstone Catch (QI!)
+									["groups"] = { i(211964), },	-- Stillstone Catch (QI!)
 								}),
 							},
 						}),
@@ -559,7 +559,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["sourceQuests"] = { 76599 },	-- Keyflame: Auebry Irongear
 							["provider"] = { "n", 206441 },	-- Auebry Irongear
 							["coord"] = { 65.2, 28.1, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(210745),	-- Firelight Spud (QI!)
 							},
 						}),
@@ -567,11 +567,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["sourceQuests"] = { 78466 },	-- Keyflame: Chef Dinaire
 							["provider"] = { "n", 206533 },	-- Chef Dinaire
 							["coord"] = { 64.5, 31.1, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(211478),	-- Darkroot Persimmon (QI!)
 								o(414700, {	-- Ethereal Sugar
 									["coord"] = { 64.2, 28.1, HALLOWFALL },
-									["g"] = { i(219808), },	-- Ethereal Sugar (QI!)
+									["groups"] = { i(219808), },	-- Ethereal Sugar (QI!)
 								}),
 								i(211479),	-- Frog-Kissed Caviar (QI!)
 							},
@@ -580,7 +580,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["sourceQuests"] = { 79383 },	-- Keyflame: Erol Ellimoore
 							["provider"] = { "n", 206150 },	-- Erol Ellimoore
 							["coord"] = { 63.2, 29.4, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(211969),	-- Arathi-Locked Chest (QI!)
 								i(211975),	-- Arathi Toolkit (QI!)
 								i(211968),	-- Blueprint Bundle (QI!)
@@ -601,7 +601,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						n(206514, {	-- Crazed Cabbage Smacker
 							["coord"] = { 64.9, 29.4, HALLOWFALL },
 							["questID"] = 82558,
-							["g"] = {
+							["groups"] = {
 								i(223935),	-- Cabbage Harvester's Pantaloons
 								i(223928),	-- Crop Cutter's Gauntlets
 								i(221238),	-- Pillar of Constructs
@@ -612,7 +612,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["coord"] = { 67.3, 23.5, HALLOWFALL },
 							["questID"] = 82560,
 							["cost"] = {{ "i", 211474, 10 }},	-- 10x Shadowblind Grouper
-							["g"] = {
+							["groups"] = {
 								i(221247),	-- Cavernous Critter Shooter
 								i(223938),	-- Marsh Hopper's Spaulders
 							},
@@ -620,7 +620,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						n(206184, {	-- Deathpetal
 							["coord"] = { 63.8, 32.0, HALLOWFALL },
 							["questID"] = 82559,
-							["g"] = {
+							["groups"] = {
 								i(221253),	-- Cultivator's Plant Puncher
 								i(223005),	-- String of Fungal Fruits
 								i(223927),	-- Vinewrapped Leather Tunic
@@ -629,7 +629,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						n(221179, {	-- Duskshadow
 							["coord"] = { 64.1, 19.5, HALLOWFALL },
 							["questID"] = 82562,
-							["g"] = {
+							["groups"] = {
 								i(223919),	-- Abducted Lawman's Gavel (dupe)
 								i(223936),	-- Shadow Bog Trousers
 								i(223918),	-- Specter Stalker's Shotgun
@@ -639,7 +639,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["provider"] = { "n", 220492 },	-- Finclaw Bloodtide
 							["coord"] = { 61.1, 18.3, HALLOWFALL },
 							["questID"] = 82564,
-							["g"] = {
+							["groups"] = {
 								i(223925),	-- Blood Hungerer's Chestplate
 								i(221234),	-- Tidal Pendant
 							},
@@ -647,7 +647,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						n(206203, {	-- Moth'ethk
 							["coord"] = { 63.5, 28.5, HALLOWFALL },
 							["questID"] = 82557,
-							["g"] = {
+							["groups"] = {
 								i(223924),	-- Chitin-Inscribed Vest
 								i(221240),	-- Nerubian Stagshell Gouger
 							},
@@ -655,7 +655,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						n(220771, {	-- Murkspike
 							["coord"] = { 62.4, 13.3, HALLOWFALL },
 							["questID"] = 82565,
-							["g"] = {
+							["groups"] = {
 								i(223934),	-- Makrura's Foreboding Legplates
 							},
 						}),
@@ -671,7 +671,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								206981,	-- Fungus Mound
 								206993,	-- Fungal Mass
 							},
-							["g"] = {
+							["groups"] = {
 								i(221250),	-- Creeping Lasher Machete
 								i(223940),	-- Deranged Fungarian's Epaulets
 							},
@@ -679,7 +679,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						n(207826, {	-- Ravageant
 							["coord"] = { 59.8, 21.4, HALLOWFALL },
 							["questID"] = 82566,
-							["g"] = {
+							["groups"] = {
 								i(221240),	-- Nerubian Stagshell Gouger
 								i(223932),	-- Scarab's Carapace Cap
 							},
@@ -687,7 +687,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						n(207803, {	-- Toadstomper
 							["coord"] = { 66.7, 24.1, HALLOWFALL },
 							["questID"] = 82561,
-							["g"] = {
+							["groups"] = {
 								i(223921),	-- Ever-Oozing Signet
 								i(223920),	-- Slime Deflecting Stopper
 								i(223933),	-- Slime Goliath's Cap
@@ -819,7 +819,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					n(TREASURES, {
 						o(417381, {	-- A Small Bag of Seeds
 							["coord"] = { 65.3, 27.2, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(212339),	-- A Small Bag of Seeds
 							},
 						}),
@@ -835,7 +835,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						}),
 						o(419714, {	-- Expedition Pack
 							["coord"] = { 61.1, 9.6, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(212333),	-- Expedition Tinderbox (QS!/QI!)
 							},
 						}),
@@ -849,7 +849,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["description"] = "Requires level 80. Use a light source item then walk along the river near Stillstone Pond. With time Sparkbugs will appear next to you and randomly may be interactable, granting the pet.",
 							["coord"] = { 66.8, 25.3, HALLOWFALL },
 							["provider"] = {"i", 218107},	-- Sparkbug Jar
-							["g"] = {
+							["groups"] = {
 								i(220771),	-- Hallowed Glowfly (PET!)
 							},
 						}),
@@ -861,7 +861,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								{ 64.8, 27.4, HALLOWFALL },
 								{ 64.8, 26.7, HALLOWFALL },
 							},
-							["g"] = {
+							["groups"] = {
 								i(224457),	-- Lil Piggy (QS!/QI!)
 							},
 						}),
@@ -875,13 +875,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								{ 66.1, 32.5, HALLOWFALL },
 								{ 67.8, 25.0, HALLOWFALL },
 							},
-							["g"] = {
+							["groups"] = {
 								i(224548),	-- Nerubian Device (QS!)
 							},
 						}),
 						n(206870, {	-- Shadowrooted Vine
 							["provider"] = { "i", 206670 },	-- Darkroot Grips
-							["g"] = {
+							["groups"] = {
 								-- confirmed for this ID
 								i(211861),	-- Umbral Eggplant
 								-- probable drops for this ID
@@ -895,7 +895,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						-- }),
 						n(225986, {	-- Shadowrooted Vine
 							["provider"] = { "i", 206670 },	-- Darkroot Grips
-							["g"] = {
+							["groups"] = {
 								-- confirmed x2
 								i(221819, {	-- Shadowbog Hopper (PET!)
 									["description"] = "Seems to only come from vines in Stillstone Pond",
@@ -911,21 +911,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 							["coord"] = { 66.4, 23.0, HALLOWFALL },
 							["questID"] = 80541,
-							["g"] = {
+							["groups"] = {
 								i(226016),	-- Darkened Tabard of the Arathi (COSMETIC!)
 							},
 						}),
 						o(423971, {	-- Coral-Fused Clam
 							["coord"] = { 64.0, 6.2, HALLOWFALL },
 							["cost"] = { { "i", 218354, 1 }, },	-- 1x Clammer's Pry Bar
-							["g"] = {
+							["groups"] = {
 								i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
 							},
 						}),
 						o(457271, {	-- Crabber Supplies
 							["coord"] = { 62.4, 16.2, HALLOWFALL },
 							["questID"] = 84342,
-							["g"] = {
+							["groups"] = {
 								i(226018),	-- Darkened Arathi Cape (COSMETIC!)
 								i(224466),	-- Wilber The Chicken (QS!)
 							},
@@ -937,7 +937,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								{ 64.9, 25.6, HALLOWFALL },
 							},
 							["questID"] = 81988,
-							["g"] = {
+							["groups"] = {
 								i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
 								i(224466),	-- Wilber The Chicken (QS!)
 							},
@@ -949,7 +949,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								{ 63.1, 30.7, HALLOWFALL },
 							},
 							["questID"] = 80590,
-							["g"] = {
+							["groups"] = {
 								i(226016),	-- Darkened Tabard of the Arathi (COSMETIC!)
 							},
 						}),
@@ -961,7 +961,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								{ 64.9, 30.9, HALLOWFALL },
 							},
 							["questID"] = 84337,
-							["g"] = {
+							["groups"] = {
 								i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
 							},
 						}),
@@ -975,7 +975,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								{ 65.6, 29.5, HALLOWFALL },
 							},
 							["questID"] = 80420,
-							["g"] = {
+							["groups"] = {
 								i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
 							},
 						}),
@@ -988,7 +988,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								{ 65.2, 33.5, HALLOWFALL },
 							},
 							["questID"] = 83272,
-							["g"] = {
+							["groups"] = {
 								i(221546),	-- Nightfarm Growthling (PET!)
 							},
 						}),
@@ -999,7 +999,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								{ 64.9, 33.5, HALLOWFALL },
 							},
 							["questID"] = 84339,
-							["g"] = {
+							["groups"] = {
 								i(226016),	-- Darkened Tabard of the Arathi (COSMETIC!)
 							},
 						}),
@@ -1012,7 +1012,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								{ 65.5, 27.1, HALLOWFALL },
 							},
 							["questID"] = 84341,
-							["g"] = {
+							["groups"] = {
 								i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
 								i(224460),	-- The Lost Diary (QS!)
 							},
@@ -1026,7 +1026,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							--when you loot it - other treasure which require this item vanish, so cannot be looted on same week?
 							["coord"] = { 61.9, 6.0, HALLOWFALL },
 							["questID"] = 80687,
-							["g"] = {
+							["groups"] = {
 								i(218354),	-- Clammer's Pry Bar
 							},
 						}),
@@ -1047,7 +1047,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 							["coord"] = { 62.0, 31.7, HALLOWFALL },
 							["questID"] = 82996,
-							["g"] = {
+							["groups"] = {
 								i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
 							},
 						}),
@@ -1055,7 +1055,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 							["coord"] = { 68.2, 26.6, HALLOWFALL },
 							["questID"] = 84340,
-							["g"] = {
+							["groups"] = {
 								i(226018),	-- Darkened Arathi Cape (COSMETIC!)
 								i(224460),	-- The Lost Diary (QS!)
 							},
@@ -1232,7 +1232,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					n(VENDORS, {
 						n(212419, {	-- Attica Whiskervale
 							["coord"] = { 64.5, 18.8, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(217342, {	-- Dauntless Draught
 									["cost"] = {{"i", RADIANT_REMNANT, 2}},
 								}),
@@ -1246,7 +1246,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						}),
 						n(206441, {	-- Auebry Irongear
 							["coord"] = { 65.2, 28.1, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(210632, {	-- Auebry's Farshooter
 									["cost"] = {{"i", RADIANT_REMNANT, 3}},
 								}),
@@ -1261,7 +1261,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						}),
 						n(206533, {	-- Chef Dinaire
 							["coord"] = { 64.5, 31.1, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(206670, {	-- Darkroot Grippers
 									["cost"] = {{"i", RADIANT_REMNANT, 5}},
 								}),
@@ -1272,7 +1272,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						}),
 						n(206150, {	-- Erol Ellimoore
 							["coord"] = { 63.2, 29.4, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(224813, {	-- Big Cat Whistle
 									["cost"] = {{"i", RADIANT_REMNANT, 5}},
 									["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 12 }
@@ -1287,7 +1287,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						}),
 						n(214428, {	-- Seraphine Seedheart
 							["coord"] = { 63.7, 33.9, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(224256, {	-- Bag of Angry Fungus
 									["cost"] = {{"i", RADIANT_REMNANT, 3}},
 								}),
@@ -1302,7 +1302,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						}),
 						n(215956, {	-- Taerry Bligestone
 							["coord"] = { 65.8, 24.4, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(218107, {	-- Sparkbug Jar
 									["cost"] = {{"i", RADIANT_REMNANT, 2}},
 								}),
@@ -1313,7 +1313,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						}),
 						n(208186, {	-- Yorvas Flintstrike
 							["coord"] = { 64.6, 30.7, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(224815, {	-- Charm of the Flame
 									["cost"] = {{"i", RADIANT_REMNANT, 5}},
 									["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 14 },
@@ -1330,11 +1330,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, }, {
 						q(76586, {	-- Spreading The Light
 							["coord"] = { 55.3, 14.5, HALLOWFALL },
-							["g"] = {
+							["groups"] = {
 								i(226264, {	-- Radiant Cache (S1)
 									["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
 									["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-									["g"] = {
+									["groups"] = {
 										i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
 										i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)
 										i(227283),	-- Recipe: Feast of the Divine Day (RECIPE!)
@@ -1343,7 +1343,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								i(239126, {	-- Radiant Cache (S2)
 									["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
 									["timeline"] = { ADDED_11_1_0_SEASONSTART },
-									["g"] = {
+									["groups"] = {
 										i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
 										i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)
 										i(227283),	-- Recipe: Feast of the Divine Day (RECIPE!)
@@ -1369,7 +1369,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						{ 42.4, 55.0, HALLOWFALL },
 						{ 41.3, 53.1, HALLOWFALL },
 					},
-					["g"] = bubbleDownRep(FACTION_HALLOWFALL_ARATHI, {
+					["groups"] = bubbleDownRep(FACTION_HALLOWFALL_ARATHI, {
 						{		-- RENOWN 1 --
 						}, {	-- RENOWN 2 --
 							i(218351, {	-- Expeditionary Cape

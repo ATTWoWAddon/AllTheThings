@@ -194,7 +194,7 @@ local INSTANCE_GROUPS = {
 	n(VENDORS, {
 		n(140319, {	-- Hobart Grapplehammer
 			["description"] = "In the building directly at the end of the first road after entering the dungeon.",
-			["g"] = {
+			["groups"] = {
 				i(161131, {	-- Barely Stable Azerite Reactor
 					["cost"] = { { "g", 300000000 } },	-- 30k gold
 				}),
@@ -311,6 +311,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 		},
 		["maps"] = { 1010 },	-- The Motherlode
 		["timeline"] = { ADDED_8_0_1_LAUNCH },
-		["g"] = INSTANCE_GROUPS
+		["groups"] = INSTANCE_GROUPS
 	}),
 }))

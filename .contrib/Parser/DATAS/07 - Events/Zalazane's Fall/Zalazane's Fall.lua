@@ -86,9 +86,9 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 				},
 			}),
 			q(25495, {	-- Preparin' For Battle
-				["providers"] = {
-					{ "n", 40253 },	-- Champion Uru'zin
-					{ "n", 40204 },	-- Handler Marnlek
+				["qgs"] = {
+					40253,	-- Champion Uru'zin
+					40204,	-- Handler Marnlek
 				},
 				["sourceQuest"] = 25461,	-- Trollin' For Volunteers
 				["coord"] = { 57.8, 73.0, DUROTAR },

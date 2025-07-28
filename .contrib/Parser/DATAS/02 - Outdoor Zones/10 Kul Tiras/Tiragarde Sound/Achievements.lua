@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 		n(ACHIEVEMENTS, {
 			ach(12473, {	-- A Sound Plan
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					crit(39984, {	-- The Ashvane Trading Company
 						["sourceQuests"] = { 50531 },	-- Under Their Noses
 					}),

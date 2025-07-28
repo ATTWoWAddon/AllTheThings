@@ -2923,12 +2923,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					n(8736, {	-- Buzzek Bracketswing <Engineering Trainer>
 						["coord"] = { 51.6, 30.2, TANARIS },
 						-- #if BEFORE 2.1.0
-						["g"] = EXPERT_ARTISAN_ENGINEERING,
+						["groups"] = EXPERT_ARTISAN_ENGINEERING,
 						-- #endif
 					}),
 					n(8126, {	-- Nixx Sprocketspring <Goblin Engineering Trainer>
 						["coord"] = { 52.2, 28.2, TANARIS },
-						["g"] = ALL_GOBLIN_ENGINEERING,
+						["groups"] = ALL_GOBLIN_ENGINEERING,
 					}),
 				}),
 			}),
@@ -2950,8 +2950,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						10892,	-- Imperial Plate Armor [H]
 					},
 					-- #endif
-					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 					["coord"] = { 51.4, 28.7, TANARIS },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["lvl"] = 50,
@@ -2999,12 +2999,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 2764,	-- Galvan's Finest Pupil
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["requireSkill"] = BLACKSMITHING,
-					["learnedAt"] = 210,
 					["cost"] = {
 						{ "i", 7931, 2 },	-- Mithril Coif
 						{ "i", 7928, 1 },	-- Ornate Mithril Shoulder
 					},
+					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 210,
 					["lvl"] = 40,
 					["groups"] = {
 						recipe(9980, {	-- Ornate Mithril Helm
@@ -3286,20 +3286,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(6610, {	-- Clamlette Surprise
-					["description"] =
-						-- #if AFTER 8.0.1
-						"Becomes available at Classic Cooking skill level 225 when character level requirement is met.\n\nThe Horde breadcrumb for this quest is called 'To Gadgetzan You Go!' and is picked up from cooking trainer Zamja in Orgrimmar. Sadly the Alliance breadcrumb from Ironforge named 'I Know A Guy...' is unobtainable.",
-						-- #elseif AFTER 4.0.3
-						"Becomes available at Cooking skill level 225 when character level requirement is met.\n\nThe Horde breadcrumb for this quest is called 'To Gadgetzan You Go!' and is picked up from cooking trainer Zamja in Orgrimmar. Sadly the Alliance breadcrumb from Ironforge named 'I Know A Guy...' is unobtainable.",
-						-- #else
-						"Becomes available at Cooking skill level 225 when character level requirement is met.\n\nThe Alliance breadcrumb for this quest is called 'I Know A Guy...' and is picked up from cooking trainer Daryl Riknussun in Ironforge. The Horde breadcrumb for this quest is called 'To Gadgetzan You Go!' and is picked up from cooking trainer Zamja in Orgrimmar.",
-						-- #endif
 					["qgs"] = {
 						-- #if AFTER 4.0.3
 						40589,	-- Dirge Quikcleave
 						-- #else
 						8125,	-- Dirge Quikcleave
 						-- #endif
+					},
+					["altQuests"] = { 13825 },	-- Clamlette Surprise
+					["sourceQuests"] = {
+						6611,	-- To Gadgetzan You Go!
+						6612,	-- I Know A Guy...
 					},
 					["coords"] = {
 						-- #if AFTER 4.0.3
@@ -3308,13 +3305,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 52.6, 28.1, TANARIS },
 						-- #endif
 					},
-					["altQuests"] = { 13825 },	-- Clamlette Surprise
-					["sourceQuests"] = {
-						6611,	-- To Gadgetzan You Go!
-						6612,	-- I Know A Guy...
-					},
-					["requireSkill"] = COOKING,
-					["learnedAt"] = 225,
+					["description"] =
+						-- #if AFTER 8.0.1
+						"Becomes available at Classic Cooking skill level 225 when character level requirement is met.\n\nThe Horde breadcrumb for this quest is called 'To Gadgetzan You Go!' and is picked up from cooking trainer Zamja in Orgrimmar. Sadly the Alliance breadcrumb from Ironforge named 'I Know A Guy...' is unobtainable.",
+						-- #elseif AFTER 4.0.3
+						"Becomes available at Cooking skill level 225 when character level requirement is met.\n\nThe Horde breadcrumb for this quest is called 'To Gadgetzan You Go!' and is picked up from cooking trainer Zamja in Orgrimmar. Sadly the Alliance breadcrumb from Ironforge named 'I Know A Guy...' is unobtainable.",
+						-- #else
+						"Becomes available at Cooking skill level 225 when character level requirement is met.\n\nThe Alliance breadcrumb for this quest is called 'I Know A Guy...' and is picked up from cooking trainer Daryl Riknussun in Ironforge. The Horde breadcrumb for this quest is called 'To Gadgetzan You Go!' and is picked up from cooking trainer Zamja in Orgrimmar.",
+						-- #endif
 					["cost"] = {
 						{ "i", 12207, 12 },	-- Giant Egg
 						{ "i", 7974, 10 },	-- Zesty Clam Meat
@@ -3324,6 +3322,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 8932, 20 },	-- Alterac Swiss
 						-- #endif
 					},
+					["requireSkill"] = COOKING,
+					["learnedAt"] = 225,
 					["lvl"] = 35,
 					["groups"] = {
 						i(16971),	-- Clamlette Surprise
@@ -3343,9 +3343,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 52.63, 28.12, TANARIS },
 					["timeline"] = { ADDED_3_1_0, REMOVED_4_0_3 },
-					["lockCriteria"] = { 1, "spellID", 64054 },	-- Clamlette Magnifique (RECIPE!)
 					["requireSkill"] = COOKING,
 					["learnedAt"] = 225,
+					["lockCriteria"] = { 1, "spellID", 64054 },	-- Clamlette Magnifique (RECIPE!)
 					["groups"] = {
 						i(16971),	-- Clamlette Surprise
 						recipe(18260, {	-- Cooking (Artisan)
@@ -3807,8 +3807,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_2_5_1, REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
-					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 					["lvl"] = 50,
 				}),
 				q(10892, {	-- Imperial Plate Armor [H]
@@ -3817,8 +3817,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_2_5_1, REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
-					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 					["lvl"] = 50,
 				}),
 				q(7653, {	-- Imperial Plate Belt
@@ -3826,11 +3826,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 7652,	-- A Blue Light Bargain
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["requireSkill"] = BLACKSMITHING,
-					["learnedAt"] = 265,
 					["cost"] = {
 						{ "i", 12359, 20 },	-- Thorium Bar
 					},
+					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 265,
 					["lvl"] = 50,
 					["groups"] = {
 						i(12688, {	-- Plans: Imperial Plate Belt (RECIPE!)
@@ -3843,11 +3843,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 7652,	-- A Blue Light Bargain
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["requireSkill"] = BLACKSMITHING,
-					["learnedAt"] = 265,
 					["cost"] = {
 						{ "i", 12359, 40 },	-- Thorium Bar
 					},
+					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 265,
 					["lvl"] = 50,
 					["groups"] = {
 						i(12700, {	-- Plans: Imperial Plate Boots (RECIPE!)
@@ -3860,11 +3860,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 7652,	-- A Blue Light Bargain
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["requireSkill"] = BLACKSMITHING,
-					["learnedAt"] = 265,
 					["cost"] = {
 						{ "i", 12359, 20 },	-- Thorium Bar
 					},
+					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 265,
 					["lvl"] = 50,
 					["groups"] = {
 						i(12690, {	-- Plans: Imperial Plate Bracer (RECIPE!)
@@ -3877,11 +3877,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 7652,	-- A Blue Light Bargain
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["requireSkill"] = BLACKSMITHING,
-					["learnedAt"] = 265,
 					["cost"] = {
 						{ "i", 12359, 60 },	-- Thorium Bar
 					},
+					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 265,
 					["lvl"] = 50,
 					["groups"] = {
 						i(12705, {	-- Plans: Imperial Plate Chest (RECIPE!)
@@ -3894,11 +3894,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 7652,	-- A Blue Light Bargain
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["requireSkill"] = BLACKSMITHING,
-					["learnedAt"] = 265,
 					["cost"] = {
 						{ "i", 12359, 50 },	-- Thorium Bar
 					},
+					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 265,
 					["lvl"] = 50,
 					["groups"] = {
 						i(12701, {	-- Plans: Imperial Plate Helm (RECIPE!)
@@ -3911,11 +3911,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 7652,	-- A Blue Light Bargain
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["requireSkill"] = BLACKSMITHING,
-					["learnedAt"] = 265,
 					["cost"] = {
 						{ "i", 12359, 60 },	-- Thorium Bar
 					},
+					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 265,
 					["lvl"] = 50,
 					["groups"] = {
 						i(12715, {	-- Plans: Imperial Plate Leggings (RECIPE!)
@@ -3928,11 +3928,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 7652,	-- A Blue Light Bargain
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["requireSkill"] = BLACKSMITHING,
-					["learnedAt"] = 265,
 					["cost"] = {
 						{ "i", 12359, 20 },	-- Thorium Bar
 					},
+					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 265,
 					["lvl"] = 50,
 					["groups"] = {
 						i(12687, {	-- Plans: Imperial Plate Shoulders (RECIPE!)
@@ -4203,12 +4203,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(53818, {	-- Re-parrot / Programming On The Fly
-					-- Quest shows up in-game as "Re-parrot" currently, but Wowhead redirects to the second quest name listed
 					["qg"] = 151132,	-- Feathers
 					["sourceQuest"] = 53816,	-- Some Reassembly Required
 					["coord"] = { 62.1, 45.3, TANARIS },
 					["timeline"] = { ADDED_8_1_5 },
 					["lvl"] = 120,
+					-- Quest shows up in-game as "Re-parrot" currently, but Wowhead redirects to the second quest name listed
 				}),
 				q(648, {	-- Rescue OOX-17/TN!
 					["qg"] = 7784,	-- Homing Robot OOX-17/TN
@@ -4497,13 +4497,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 3638,	-- The Pledge of Secrecy
 					["coord"] = { 54.4, 27.2, TANARIS },
 					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
-					["requireSkill"] = ENGINEERING,
-					["learnedAt"] = 200,
 					["cost"] = {
 						{ "i", 4392, 2 },	-- Advanced Target Dummy
 						{ "i", 4407, 1 },	-- Accurate Scope
 						{ "i", 10559, 6 },	-- Mithril Tube
 					},
+					["requireSkill"] = ENGINEERING,
+					["learnedAt"] = 200,
 					["lvl"] = 30,
 				}),
 				q(379, {	-- Slake That Thirst
@@ -4529,7 +4529,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.1, 45.3, TANARIS },
 					["timeline"] = { ADDED_8_1_5 },
 					["lvl"] = 50,
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/100 Mechanical Parts
 							["provider"] = { "i", 167232 },	-- Mechanical Parts (QI!)
 							["coord"] = { 62.6, 45.0, TANARIS },
@@ -4787,12 +4787,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 2764,	-- Galvan's Finest Pupil
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["requireSkill"] = BLACKSMITHING,
-					["learnedAt"] = 210,
 					["cost"] = {
 						{ "i", 7930, 2 },	-- Heavy Mithril Breastplate
 						{ "i", 7927, 1 },	-- Ornate Mithril Gloves
 					},
+					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 210,
 					["lvl"] = 40,
 					["groups"] = {
 						recipe(9972, {	-- Ornate Mithril Breastplate
@@ -4853,16 +4853,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25566, {	-- The Secrets of Uldum (A)
 					["qg"] = 40109,	-- Prospector Gunstan
 					["sourceQuest"] = 25420,	-- Ancient Obstacles
-					["description"] = "If chest disappears for you, go to Zidormi in Uldum and ask her to return you back in time.",
 					["coord"] = { 40.1, 77.0, TANARIS },
+					["description"] = "If chest disappears for you, go to Zidormi in Uldum and ask her to return you back in time.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25069, {	-- The Secrets of Uldum (H)
 					["qg"] = 38922,	-- Examiner Andoren Dawnrise
 					["sourceQuest"] = 25017,	-- Ancient Obstacles
-					["description"] = "If chest disappears for you, go to Zidormi in Uldum and ask her to return you back in time.",
 					["coord"] = { 33.2, 77.0, TANARIS },
+					["description"] = "If chest disappears for you, go to Zidormi in Uldum and ask her to return you back in time.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -4903,8 +4903,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(2741, {	-- The Super Egg-O-Matic
 					["provider"] = { "o", 142071 },	-- Egg-O-Matic
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 8564, 1 }},	-- Hippogryph Egg
 					["maps"] = { FERALAS },
+					["cost"] = {{ "i", 8564, 1 }},	-- Hippogryph Egg
 					["lvl"] = 42,
 					["groups"] = {
 						i(8647, {	-- Egg Crate
@@ -4930,8 +4930,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 142071 },	-- Egg-O-Matic
 					["sourceQuest"] = 2741,	-- The Super Egg-O-Matic
 					["timeline"] = { REMOVED_4_0_3 },
-					["cost"] = {{ "i", 8564, 1 }},	-- Hippogryph Egg
 					["maps"] = { FERALAS },
+					["cost"] = {{ "i", 8564, 1 }},	-- Hippogryph Egg
 					["repeatable"] = true,
 					["lvl"] = 42,
 					["groups"] = {
@@ -5005,11 +5005,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 2764,	-- Galvan's Finest Pupil
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["requireSkill"] = BLACKSMITHING,
 					["cost"] = {
 						{ "i", 7933, 2 },	-- Heavy Mithril Boots
 						{ "i", 7926, 1 },	-- Ornate Mithril Pants
 					},
+					["requireSkill"] = BLACKSMITHING,
 					["lvl"] = 40,
 					["groups"] = {
 						recipe(9979, {	-- Ornate Mithril Boots

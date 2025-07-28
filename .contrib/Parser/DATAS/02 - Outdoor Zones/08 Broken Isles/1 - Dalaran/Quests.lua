@@ -169,7 +169,7 @@ root(ROOTS.Zones, {
 					["provider"] = { "n", 113986 },	-- Archmage Khadgar
 					["sourceQuests"] = { 44182 },	-- City Under Siege
 					["coord"] = { 47.6, 74.6, DEADWIND_PASS },
-					["g"] = {
+					["groups"] = {
 						i(141411),	-- Translocation Anomaly Neutralization Crystal (QI!)
 					},
 				}),
@@ -226,7 +226,7 @@ root(ROOTS.Zones, {
 				q(44400, {	-- Assault on Violet Hold: Purple Pain
 					["coord"] = { 66.3, 67.9, LEGION_DALARAN },
 					["provider"] = { "n", 113813 },	-- Lieutenant Sinclari
-					["g"] = {
+					["groups"] = {
 						i(141359),	-- Violet Guardian's Corona
 						i(141358),	-- Violet Guardian's Cowl
 						i(141357),	-- Violet Guardian's Helm
@@ -363,7 +363,7 @@ root(ROOTS.Zones, {
 				q(45239, {	-- Cubic Coalescing
 					["sourceQuests"] = { 45238 },	-- Return to Karazhan: Cubic Cynosure
 					["provider"] = { "n", 93538 },	-- Dariness the Learned
-					["g"] = {
+					["groups"] = {
 						i(142536),	-- Memory Cube (TOY!)
 					},
 				}),
@@ -468,7 +468,7 @@ root(ROOTS.Zones, {
 				q(44412, {	-- Enemies Everywhere
 					["sourceQuest"] = 44411,    -- Strange Humming Crystal
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
-					["g"] = {
+					["groups"] = {
 						i(141348, {	-- Wondrous Wisdomball (PET!)
 							-- added cost of original quest chain start item
 							["cost"] = {{"i",141349,1}},	-- Strange Humming Crystal
@@ -546,7 +546,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 42.7, 28.4, LEGION_DALARAN },
 					["lvl"] = 45,
 					["timeline"] = { REMOVED_9_1_0 },
-					["g"] = {
+					["groups"] = {
 						i(136352),	-- Archmage Karlain's Imbued Silkweave Robe (QI!)
 						i(136351),	-- Handful of Obliterum Ash (QI!)
 					},
@@ -719,7 +719,7 @@ root(ROOTS.Zones, {
 						{ 52.6, 56.2, ORGRIMMAR },
 						{ 40.4, 77.8, STORMWIND_CITY },
 					},
-					["g"] = {
+					["groups"] = {
 						i(140192),	-- Dalaran Heartstone (TOY!)
 						i(143785),	-- Tome of the Tranquil Mind
 					},
@@ -846,7 +846,7 @@ root(ROOTS.Zones, {
 						PRIEST,		-- Shadow
 						WARLOCK,	-- Affliction
 					},
-					["g"] = {
+					["groups"] = {
 						i(143494),	-- A Mysterious Note (QI!)
 					},
 				}),
@@ -1058,7 +1058,7 @@ root(ROOTS.Zones, {
 						WARLOCK,	-- Affliction
 					},
 					["lvl"] = 45,
-					["g"] = {
+					["groups"] = {
 						i(143496),	-- Nethersworn Manifesto (QI!)
 					},
 				}),
@@ -1122,7 +1122,7 @@ root(ROOTS.Zones, {
 						ADDED_7_3_5,
 						REMOVED_8_0_1
 					},
-					["g"] = {
+					["groups"] = {
 						i(154880),	-- Cursed Shard (QI!)
 					},
 				}),
@@ -1194,7 +1194,7 @@ root(ROOTS.Zones, {
 						WARLOCK,	-- Affliction
 					},
 					["lvl"] = 45,
-					["g"] = {
+					["groups"] = {
 						i(143496),	-- Nethersworn Manifesto (QI!)
 					},
 				}),
@@ -1203,7 +1203,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 50.2, 23.0, LEGION_DALARAN },
 					["lvl"] = 110,
 					["provider"] = { "n", 110018 },	-- Gazrix Gearlock <Steamwheedle Cartel>
-					["g"] = {
+					["groups"] = {
 						i(140601, {	-- Sixtrigger Resource Crate
 							i(133815),	-- Recipe: Spiced Rib Roast [Rank 1] (RECIPE!)
 							i(140600),	-- Sixtrigger Lucky Ring
@@ -1216,7 +1216,7 @@ root(ROOTS.Zones, {
 						i(140593),	-- Rax's Polished Greaves
 						i(140595),	-- Rax's Silk Pajama Bottoms
 						i(140594),	-- Snaggle's Favorite Pants
-					}
+					},
 				}),
 				q(50432, {	-- Titanic Innovation
 					["provider"] = { "n", 106655 },	-- Arcanomancer Vridiel
@@ -1250,7 +1250,7 @@ root(ROOTS.Zones, {
 				}),
 				q(43341, {	-- Uniting the Isles
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
-					["g"] = {
+					["groups"] = {
 						i(141605, {	-- Flight Master Whistle
 							["modID"] = 11,
 						}),
@@ -1259,7 +1259,7 @@ root(ROOTS.Zones, {
 				q(45727, {	-- Uniting the Isles
 					["coord"] = { 28.5, 48.3, LEGION_DALARAN },
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
-					["g"] = {
+					["groups"] = {
 						i(141605, {	-- Flight Master Whistle
 							["modID"] = 11,
 						}),

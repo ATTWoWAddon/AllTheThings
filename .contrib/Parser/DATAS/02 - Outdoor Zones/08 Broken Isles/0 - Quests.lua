@@ -5,7 +5,7 @@
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		n(QUESTS, {
-			["g"] = {
+			["groups"] = {
 				n(ACHIEVEMENTS, {	-- Achievements
 					ach(11427, {	-- No Shellfish Endeavor
 						i(143660),	-- Mrgrglhjorn (TOY!)
@@ -60,7 +60,7 @@ root(ROOTS.Zones, {
 				header(HEADERS.Spell, 41341, {	-- Balance of Power
 					["description"] = "The only known requirement to start this questline is the completion of your class campaign.",
 					["maps"] = CLASS_HALL_MAPS,
-					["g"] = {
+					["groups"] = {
 						q(43496, {	-- The Power Within
 							["description"] = "This quest is available if you *have* completed the quests at Azurewing Repose in Azsuna.",
 							["provider"] = { "n", 110768 },	-- Image of Kalec
@@ -275,102 +275,102 @@ root(ROOTS.Zones, {
 							},
 							["provider"] = { "n", 111826 },	-- Archmage Kalec
 							["coord"] = { 37.8, 47.4, SURAMAR },
-							["g"] = {
+							["groups"] = {
 								cl(WARRIOR, {
 									["classes"] = { WARRIOR },
-									["g"] = {
+									["groups"] = {
 										artifact(805),
 										artifact(669),
 										artifact(164),
-									}
+									},
 								}),
 								cl(PALADIN, {
 									["classes"] = { PALADIN },
-									["g"] = {
+									["groups"] = {
 										artifact(16),
 										artifact(545),
 										artifact(856),
-									}
+									},
 								}),
 								cl(HUNTER, {
 									["classes"] = { HUNTER },
-									["g"] = {
+									["groups"] = {
 										artifact(219),
 										artifact(462),
 										artifact(481),
-									}
+									},
 								}),
 								cl(ROGUE, {
 									["classes"] = { ROGUE },
-									["g"] = {
+									["groups"] = {
 										artifact(237),
 										artifact(765),
 										artifact(71),
-									}
+									},
 								}),
 								cl(PRIEST, {
 									["classes"] = { PRIEST },
-									["g"] = {
+									["groups"] = {
 										artifact(735),
 										artifact(753),
 										artifact(255),
-									}
+									},
 								}),
 								cl(DEATHKNIGHT, {
 									["classes"] = { DEATHKNIGHT },
-									["g"] = {
+									["groups"] = {
 										artifact(368),
 										artifact(371),
 										artifact(403),
-									}
+									},
 								}),
 								cl(SHAMAN, {
 									["classes"] = { SHAMAN },
-									["g"] = {
+									["groups"] = {
 										artifact(310),
 										artifact(682),
 										artifact(781),
-									}
+									},
 								}),
 								cl(MAGE, {
 									["classes"] = { MAGE },
-									["g"] = {
+									["groups"] = {
 										artifact(184),
 										artifact(499),
 										artifact(134),
-									}
+									},
 								}),
 								cl(WARLOCK, {
 									["classes"] = { WARLOCK },
-									["g"] = {
+									["groups"] = {
 										artifact(198),
 										artifact(329),
 										artifact(818),
-									}
+									},
 								}),
 								cl(MONK, {
 									["classes"] = { MONK },
-									["g"] = {
+									["groups"] = {
 										artifact(517),
 										artifact(348),
 										artifact(525),
-									}
+									},
 								}),
 								cl(DRUID, {
 									["classes"] = { DRUID },
-									["g"] = {
+									["groups"] = {
 										artifact(419),
 										artifact(54),
 										artifact(434),
 										artifact(277),
-									}
+									},
 								}),
 								cl(DEMONHUNTER, {
 									["classes"] = { DEMONHUNTER },
-									["g"] = {
+									["groups"] = {
 										artifact(36),
 										artifact(563),
-									}
+									},
 								}),
 							},
 						}),
@@ -380,7 +380,7 @@ root(ROOTS.Zones, {
 					["icon"] = 236415,
 					["lore"] = "Light's Heart is the sentience core of the naaru prime Xe'ra sent as a last resort by High Exarch Turalyon who battles on Argus, to be handed to Prophet Velen. It fell from the Felstorm along the coast of Suramar, in the Broken Isles.\n\nThe Order of the Silver Hand witnessed the event and informed Archmage Khadgar, who then tasked order leaders with recovering it before the Burning Legion did. It has since been kept safe in a class order hall.\n\nUnlocked by the Tear of Elune, Xe'ra communicates through it with the order leader in order to provide insight into the history of Illidan Stormrage. She revealed that Light's Heart was to serve as the vessel for Illidan Stormrage's rebirth. After Illidan's soul was put into a prism to keep it safe, it was brought to Light's Heart where the prism was \"seemingly consumed\". Light's Heart, with Illidan's soul inside, is then brought to Khadgar with instructions to call forth the vessel's power when Gul'dan attempts to summon Sargeras, thus releasing Illidan's soul into his body before Sargeras can possess his empty shell.",
 					["maps"] = CLASS_HALL_MAPS,
-					["g"] = {
+					["groups"] = {
 						q(44009, {	-- A Falling Star (non-Paladin)
 							["description"] = "The prerequisite for this quest is recruiting your class's first two champions, doing your first short mission, and recruiting your first troops.",	-- i also sent out my first 1-hour mission after the 2-minute one, not sure if that's required.  not sure whether paladin's requirements are different, so i didn't add the description to their version of the quest.
 							["provider"] = { "n", 90417 },	-- Archmage Khadgar
@@ -402,7 +402,7 @@ root(ROOTS.Zones, {
 							["provider"] = { "n", 112130 },	-- Archmage Khadgar
 							["coord"] = { 27.5, 35.8, AEGWYNNS_GALLERY },
 							["maps"] = { 775, 776 },	-- Scenario: In Defense of the Exodar
-							["g"] = {
+							["groups"] = {
 								i(140614),	-- Amice of Steadfast Allies
 								i(140610),	-- Wristwraps of the Grieving Prophet
 								i(140615),	-- Felstalking Shoulders
@@ -414,7 +414,7 @@ root(ROOTS.Zones, {
 								n(110486, {	-- Huk'roth the Huntmaster
 									["altQuests"] = { 44004 },	-- Bringer of the Light
 									["questID"] = 43480,
-									["g"] = {
+									["groups"] = {
 										i(140533),	-- Huntmaster's Injector
 									},
 								}),
@@ -422,7 +422,7 @@ root(ROOTS.Zones, {
 									["description"] = "This quest can only be completed during the \"In Defense of the Exodar\" scenario. If you want to complete this optional quest, you MUST pick it up before completing the Step 2 objectives (Portals and Terrified Citizens) or else it will not be available!",
 									["altQuests"] = { 44004 },	-- Bringer of the Light
 									["provider"] = { "n", 110695 },	-- Farseer Nobundo
-									["g"] = {
+									["groups"] = {
 										i(140608),	-- Boots of the Broken
 										i(140604),	-- Britches of Elemental Protection
 										i(140606),	-- Earth-Crushing Sabatons
@@ -431,7 +431,7 @@ root(ROOTS.Zones, {
 										i(140607),	-- Elementally Infused Boots
 										i(140603),	-- Nobundo's Earthshaper Kilt
 										i(140609),	-- Slippers of the Earthen Healer
-									}
+									},
 								}),
 								q(43483),	-- Fel Annihilation, unavailable afterwards
 							},
@@ -459,7 +459,7 @@ root(ROOTS.Zones, {
 							},
 							["provider"] = { "n", 90417 },	-- Archmage Khadgar
 							["coord"] = { 28.9, 48.4, LEGION_DALARAN },
-							["g"] = { i(141351) },	-- Tear of Elune (QI!)
+							["groups"] = { i(141351) },	-- Tear of Elune (QI!)
 						}),
 						q(44464, {	-- Awakenings
 							["sourceQuest"] = 44448,	-- In the House of Light and Shadow
@@ -474,7 +474,7 @@ root(ROOTS.Zones, {
 							["sourceQuest"] = 44466,	-- An Unclear Path
 							["provider"] = { "n", 113857 },	-- Light's Heart
 							["maps"] = { 793 },		-- Scenario: Black Rook Hold
-							["g"] = {
+							["groups"] = {
 								q(44414, {	-- Felspawns of Lothros
 									["description"] = "This quest can only be completed while in the Ravencrest's Legacy scenario.",
 									["sourceQuest"] = 44479,	-- Ravencrest's Legacy
@@ -498,7 +498,7 @@ root(ROOTS.Zones, {
 									["sourceQuest"] = 44415,	-- The Red Axe
 									["provider"] = { "n", 113355 },	-- Broxigar the Red
 									["altQuests"] = { 44479 },	-- Ravencrest's Legacy
-									["g"] = {
+									["groups"] = {
 										i(139932),	-- Belt of Shadowsong
 										i(140002),	-- Broxigar's Girdle
 										i(139902),	-- Defiler's Cord
@@ -523,7 +523,7 @@ root(ROOTS.Zones, {
 						q(44496, {	-- Destiny Unfulfilled
 							["description"] = "There are three versions of this quest: One for Demon Hunters, one for players that have defeated Illidan in the Black Temple, and one for players that haven't.\n\nThis one is for players that haven't killed him.",
 							["sourceQuest"] = 44480,	-- In My Father's House
-							["g"] = {
+							["groups"] = {
 								i(121745),	-- Helm of the Betrayed
 								i(139909),	-- Illidari High Lord's Cowl
 								i(140005),	-- Impenetrable Faceplate
@@ -535,7 +535,7 @@ root(ROOTS.Zones, {
 							["sourceQuest"] = 44480,	-- In My Father's House
 							["provider"] = { "n", 113857 },	-- Light's Heart
 							["classes"] = { HUNTER, DEMONHUNTER },
-							["g"] = {
+							["groups"] = {
 								i(121745),	-- Helm of the Betrayed
 								i(139909),	-- Illidari High Lord's Cowl
 								i(140005),	-- Impenetrable Faceplate
@@ -546,7 +546,7 @@ root(ROOTS.Zones, {
 							["description"] = "There are three versions of this quest: One for Demon Hunters, one for players that have defeated Illidan in the Black Temple, and one for players that haven't.\n\nThis one is for players that have defeated him.",
 							["sourceQuest"] = 44480,	-- In My Father's House
 							["provider"] = { "n", 113857 },	-- Light's Heart
-							["g"] = {
+							["groups"] = {
 								i(121745),	-- Helm of the Betrayed
 								i(139909),	-- Illidari High Lord's Cowl
 								i(140005),	-- Impenetrable Faceplate
@@ -560,7 +560,7 @@ root(ROOTS.Zones, {
 						q(45175, {	-- Soul Prism of the Illidari
 							["sourceQuest"] = 45174,	-- The Hunt for Illidan Stormrage
 							["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
-							["g"] = {
+							["groups"] = {
 								i(139930),	-- Belt of the Netherwalker
 								i(139978),	-- Boots of the Illidari Crusade
 								i(139933),	-- Footpads of the Illidari Crusade
@@ -575,7 +575,7 @@ root(ROOTS.Zones, {
 							["sourceQuest"] = 45175,	-- Soul Prism of the Illidari
 							["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
 							["maps"] = { 703, 704, 705 },	-- Halls of Valor
-							["g"] = {
+							["groups"] = {
 								i(143661),	-- Soul Prism of the Illidari (QI!)
 								i(139988),	-- Blazing Purpose Mantle
 								i(140021),	-- Crusader's Inferno Pauldrons
@@ -599,7 +599,7 @@ root(ROOTS.Zones, {
 						["maps"] = {
 							LEGION_DALARAN, LEGION_THE_UNDERBELLY, AEGWYNNS_GALLERY,
 						},
-						["g"] = {
+						["groups"] = {
 							i(134859),	-- Lost Mail
 						},
 					}),
@@ -627,7 +627,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 103976 },	-- The Postmaster
 						["coord"] = { 38.6, 40.8, LEGION_DALARAN },
 						["maps"] = { 701 },	-- Icecrown Citadel (scenario version)
-						["g"] = {
+						["groups"] = {
 							i(134857),	-- Invincible's Reins (QI!)
 						},
 					}),
@@ -635,7 +635,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 41367 },	-- Priority Delivery
 						["provider"] = { "n", 52562 },	-- Johnny Awesome
 						["coord"] = { 68.6, 73.1, FERALAS },
-						["g"] = {
+						["groups"] = {
 							i(135464),	-- Bulging Sack of Gold (QI!)
 							i(135463),	-- Invincible's Reins (QI!)
 						},
@@ -649,14 +649,14 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 41395 },	-- Due Reward
 						["description"] = "After you finish performing menial tasks for Johnny Awesome, you'll receive another letter from the Postmaster requesting your presence in the mail room.",
 						["provider"] = { "n", 103976 },	-- The Postmaster
-						["g"] = {
+						["groups"] = {
 							ach(12416),	-- The Total Package
 						},
 					})),
 					ach(12431, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 } }, {	-- Post Haste
 						["sourceQuests"] = { 50247 },	-- The Mail Must Flow
 						["description"] = "Once you've done the last quest, you can speak to the Postmaster again to offer more assistance sorting letters.",
-						["g"] = {
+						["groups"] = {
 							i(156721),	-- Mailemental (PET!)
 							i(156836, {	-- Bulging Package
 								i(156833),	-- Katy's Stampwhistle (TOY!)
@@ -667,7 +667,7 @@ root(ROOTS.Zones, {
 					ach(12439, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 } }, {	-- Priority Mail
 						["sourceQuests"] = { 50247 },	-- The Mail Must Flow
 						["description"] = "Once you've done the last quest, you can speak to the Postmaster again to offer more assistance sorting letters.",
-						["g"] = {
+						["groups"] = {
 							title(372),	-- Postmaster <Name>
 						},
 					})),

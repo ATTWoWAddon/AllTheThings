@@ -12,7 +12,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			-- TODO more coords for possible spawns
 			-- then remove the maps for Krokuun and Antoran Wastes once coords added
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(12028, {	-- Envision Invasion Eradication
 					-- TODO: instead of maps on entire achieve, have coords/maps on each criteria as needed
@@ -40,7 +40,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						125863,	-- Invasion Point: Sangua
 						126499,	-- Invasion Point: Val
 					},
-					["g"] = {
+					["groups"] = {
 						crit(37456, {	-- Mazgoroth
 							["crs"] = { 125137 },	-- Mazgoroth
 						}),
@@ -120,7 +120,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["g"] = {
+				["groups"] = {
 					i(207296, {	-- Grimoire of the Netherbound Imp (CI!)
 						["timeline"] = { ADDED_10_1_5 },
 					}),
@@ -157,7 +157,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["g"] = {
+				["groups"] = {
 					i(152351),	-- Mesmerizing Soul Hood
 					i(152354),	-- Accursed Defiler's Mantle
 					i(152363),	-- Fel-Spike Shoulderpads
@@ -191,7 +191,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["g"] = {
+				["groups"] = {
 					i(152361),	-- Horned Hood of Retaliation
 					i(152371),	-- Shoulderguards of Despondent Masses
 					i(152378),	-- Breastplate of Terminal End
@@ -225,7 +225,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["g"] = {
+				["groups"] = {
 					i(152369),	-- Helm of the Vigilant Eye
 					i(152351),	-- Mesmerizing Soul Hood
 					i(152354),	-- Accursed Defiler's Mantle
@@ -257,7 +257,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["g"] = {
+				["groups"] = {
 					i(152361),	-- Horned Hood of Retaliation
 					i(152379),	-- Spaulders of Vile Determination
 					i(152366),	-- Enthralling Chain Armor
@@ -291,7 +291,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["g"] = {
+				["groups"] = {
 					i(152376),	-- Crown of Burning Resolve
 					i(152363),	-- Fel-Spike Shoulderpads
 					i(152378),	-- Breastplate of Terminal End
@@ -322,7 +322,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["g"] = {
+				["groups"] = {
 					i(153265),	-- Enclave Aspirant's Battleaxe
 					i(153261),	-- Forlorn Artificer's Hammer
 				},
@@ -342,7 +342,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["g"] = {
+				["groups"] = {
 					i(153320),	-- Ardent Vindicator's Demolisher
 					i(153295),	-- Spectral Consul's Quickblade
 				},
@@ -362,7 +362,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["g"] = {
+				["groups"] = {
 					i(153262),	-- Forlorn Artificer's Gavel
 					i(153300),	-- Militant Exarch's Saber
 				},
@@ -382,7 +382,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["g"] = {
+				["groups"] = {
 					i(153264),	-- Enclave Aspirant's Splitter
 					i(153301),	-- Militant Exarch's Slicer
 				},
@@ -402,7 +402,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["g"] = {
+				["groups"] = {
 					i(153307),	-- Oronaar Miner's Pickaxe
 					i(153297),	-- Spectral Consul's Broadsword
 				},
@@ -422,7 +422,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
-				["g"] = {
+				["groups"] = {
 					i(153258),	-- Forlorn Artificer's Mace
 					i(153254),	-- Isolon Anchorite's Mace
 				},

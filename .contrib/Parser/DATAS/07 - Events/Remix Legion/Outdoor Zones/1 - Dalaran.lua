@@ -5,7 +5,7 @@
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, bubbleDown({ ["timeline"] = { ADDED_11_2_0, REMOVED_LEGION_REMIX_END } }, {
 	m(LEGION_DALARAN, {
 	--	["icon"] = 618798,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 			}),
 			n(QUESTS, {

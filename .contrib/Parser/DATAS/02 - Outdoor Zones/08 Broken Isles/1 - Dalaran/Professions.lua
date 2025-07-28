@@ -203,7 +203,7 @@ root(ROOTS.Zones, {
 				prof(BLACKSMITHING, {
 					n(92183, {	-- Alard Schmied <Blacksmithing Trainer>
 						["coord"] = { 45.0, 29.6, LEGION_DALARAN },
-						["g"] = {
+						["groups"] = {
 							r(239415, {["timeline"] = {ADDED_7_2_0}}),	-- Rethu's Incessant Courage (RECIPE!)
 						},
 					}),
@@ -212,7 +212,7 @@ root(ROOTS.Zones, {
 					n(93536, {	-- Awilo Lon'gomba <Cooking Trainer>
 						["coord"] = { 69.8, 38.6, LEGION_DALARAN },
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							r(195128, {	-- Cooking (Legion Master)
 								["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
 								["collectible"] = false,
@@ -223,7 +223,7 @@ root(ROOTS.Zones, {
 					n(99330, {	-- Katherine Lee <Cooking Trainer>
 						["coord"] = { 44.0, 66.0, LEGION_DALARAN },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							r(195128, {	-- Cooking (Legion Master)
 								["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1 },
 								["collectible"] = false,
@@ -421,7 +421,7 @@ root(ROOTS.Zones, {
 							}}}, {
 								header(HEADERS.Item, 151653, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Broken Isles Recipe Scrap
 									["description"] = "Use 10 of Broken Isles Recipe Scrap to create an unlearned recipe.",
-									["g"] = sharedData({["cost"]={{"i",151653,10}}}, {	-- 10x Broken Isles Recipe Scrap
+									["groups"] = sharedData({["cost"]={{"i",151653,10}}}, {	-- 10x Broken Isles Recipe Scrap
 										i(133842),	-- Recipe: Azshari Salad [Rank 2] (RECIPE!)
 										i(133862),	-- Recipe: Azshari Salad [Rank 3] (RECIPE!)
 										i(133838),	-- Recipe: Barracuda Mrglgagh [Rank 2] (RECIPE!)
@@ -495,13 +495,13 @@ root(ROOTS.Zones, {
 				prof(FISHING, {
 					n(108825, {	-- Conjurer Margoss
 						["coord"] = { 50.0, 1.0, LEGION_DALARAN },
-						["g"] = LEGION_FISHING,
+						["groups"] = LEGION_FISHING,
 					}),
 					faction(FACTION_CONJURER_MARGOSS, {	-- Conjurer Margoss
 						["creatureID"] = 108825,
 						["description"] = "Can be found on a floating island called Margoss' Retreat just North of Dalaran.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
 						["requireSkill"] = FISHING,
-						["g"] = {
+						["groups"] = {
 							q(42911, {	-- Drowned Mana
 								["provider"] = { "n", 108825 },	-- Conjurer Margoss
 								["coord"] = { 44.7, 62.0, BROKEN_ISLES },
@@ -528,7 +528,7 @@ root(ROOTS.Zones, {
 						ach(10722, {	-- The Wish Remover
 							["description"] = "You need to use the special lures sold by the trainer to earn this achievement.",
 							["requireSkill"] = FISHING,
-							["g"] = THE_WISH_REMOVER,
+							["groups"] = THE_WISH_REMOVER,
 						}),
 					}),
 				}),
@@ -542,7 +542,7 @@ root(ROOTS.Zones, {
 							["lvl"] = { 45 },
 							["isWorldQuest"] = true,
 							["requireSkill"] = INSCRIPTION,
-							["g"] = {
+							["groups"] = {
 								i(137769),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 3] (RECIPE!)
 							},
 						}),
@@ -551,7 +551,7 @@ root(ROOTS.Zones, {
 				prof(LEATHERWORKING, {
 					n(93523, {	-- Namha Moonwater <Leatherworking Trainer>
 						["coord"] = { 35.4, 29.6, LEGION_DALARAN },
-						["g"] = {
+						["groups"] = {
 							r(239413, {["timeline"] = {ADDED_7_2_0}}),	-- The Sentinel's Eternal Refuge (RECIPE!)
 							r(239414, {["timeline"] = {ADDED_7_2_0}}),	-- Vigilance Perch (RECIPE!)
 						},

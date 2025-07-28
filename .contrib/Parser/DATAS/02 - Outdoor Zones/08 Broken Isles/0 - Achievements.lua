@@ -5,7 +5,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 	n(ACHIEVEMENTS, {
 		ach(10876, {	-- Battle on the Broken Isles
 			["sym"] = {{ "achievement_criteria" }},
-			["g"] = {
+			["groups"] = {
 				i(139003, {	-- Pocket Pet Portal (CI!)
 					["timeline"] = { REMOVED_9_1_0 },
 				}),
@@ -587,7 +587,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				11477,	-- Off the Top Rook
 				11478,	-- The Darkbrul-oh
 			}},
-			["g"] = {
+			["groups"] = {
 				a(i(129280)),	-- Prestigious War Steed (MOUNT!)
 				h(i(143864)),	-- Prestigious War Wolf (MOUNT!)
 			},

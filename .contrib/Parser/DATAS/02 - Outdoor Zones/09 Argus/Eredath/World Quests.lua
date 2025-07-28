@@ -23,7 +23,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sym"] = {{"select","npcID",126910}},	-- Select the WQ NPC
 			}),
 			q(48096, {	-- Core Mechanics
-				["g"] = {
+				["groups"] = {
 					i(152689),	-- Crystalline Construct Core (QI!)
 				},
 			}),
@@ -35,7 +35,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			q(47135),	-- For Their Own Good
 			q(48098),	-- Garden Pests
 			q(48097, {	-- Gatekeeper's Review: Cunning
-				["g"] = {
+				["groups"] = {
 					i(151126),	-- Fragment of Acuity (QI!)
 					i(151128),	-- Fragment of Guile (QI!)
 					i(151127),	-- Fragment of Wit (QI!)
@@ -60,7 +60,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			}),
 			q(49052),	-- Mar'cuus
 			q(47828, {	-- Memories of the Fallen
-				["g"] = {
+				["groups"] = {
 					o(272009, {	-- Preserved Crystal Collection
 						i(151555),	-- Crystallized Memory (QI!)
 					}),
@@ -80,12 +80,12 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sym"] = {{"select","npcID",125497}},	-- Select the WQ NPC
 			}),
 			q(48105, {	-- Peer Review
-				["g"] = {
+				["groups"] = {
 					i(153249),	-- Y'mera's Attuning Crystal (QI!)
 				},
 			}),
 			q(47844, {	-- Recurring Madness
-				["g"] = {
+				["groups"] = {
 					i(151570),	-- Lightbound Crystal (QI!)
 				},
 			}),
@@ -93,12 +93,12 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sym"] = {{"select","npcID",126898}},	-- Select the WQ NPC
 			}),
 			q(48102, {	-- Scale Samples
-				["g"] = {
+				["groups"] = {
 					i(152411),	-- Delicate Panthara Scales (QI!)
 				},
 			}),
 			q(47858, {	-- Security: Engaged
-				["g"] = {
+				["groups"] = {
 					i(152357),	-- Vigilant Power Crystal (QI!)
 				},
 			}),
@@ -136,7 +136,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sym"] = {{"select","npcID",126865}},	-- Select the WQ NPC
 			}),
 			q(48094, {	-- Void Clot
-				["g"] = {
+				["groups"] = {
 					i(152415),	-- Clotted Void Crystal (QI!)
 				},
 			}),

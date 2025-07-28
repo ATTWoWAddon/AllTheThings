@@ -38,13 +38,13 @@ root(ROOTS.Zones, {
 				petbattle(q(41914)),	-- Clear the Catacombs
 				q(42151),	-- Clear the Skies
 				q(44067, {	-- Consolidating Power
-					["g"] = {
+					["groups"] = {
 						i(141253),	-- Nightblade Pendant (QI!)
 					},
 				}),
 				q(44867),	-- Contain their Advance
 				q(44816, {	-- Continued Exposure
-					["g"] = { i(142509) },	-- Withered Targeting Orb (QI!)
+					["groups"] = { i(142509) },	-- Withered Targeting Orb (QI!)
 				}),
 				q(41195),	-- Culling Ambervale
 				q(44856),	-- Cut the Cattitude
@@ -167,15 +167,15 @@ root(ROOTS.Zones, {
 				q(42090),	-- Skittering Subjects
 				q(41558, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
-					["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
+					["groups"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41557, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
-					["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
+					["groups"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41262, {	-- Slab of Bacon
 					["requireSkill"] = COOKING,
-					["g"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
+					["groups"] = { i(135511) },	-- Thick Slab of Bacon (QI!)
 				}),
 				q(41539, {	-- Sparkling Starlight Roses
 					["requireSkill"] = HERBALISM,
@@ -207,7 +207,7 @@ root(ROOTS.Zones, {
 				q(43814),	-- Unspeakable Collaborators
 				q(41667, {	-- Vantus Rune Work Order: Xavius
 					["requireSkill"] = INSCRIPTION,
-					["g"] = {
+					["groups"] = {
 						i(137771),	-- Vantus Rune Technique: Xavius [Rank 3] (RECIPE!)
 					},
 				}),
@@ -247,7 +247,7 @@ root(ROOTS.Zones, {
 						692,	-- Falanaar Arcway
 						693,	-- Falanaar Arcway
 					},
-					["g"] = {
+					["groups"] = {
 						n(109556, {	-- Treasure Chest
 							i(136914, {	-- Leyline Broodling (PET!)
 								["timeline"] = { ADDED_7_0_3 },
@@ -255,7 +255,7 @@ root(ROOTS.Zones, {
 						}),
 						o(251753, {	-- Treasure Chest
 							["questID"] = 43148,
-							["g"] = { i(140448) },	-- Lens of Qin'dera
+							["groups"] = { i(140448) },	-- Lens of Qin'dera
 						}),
 						n(109564, {	-- Glimmering Treasure Chest
 							i(140495),	-- Torn Invitation [Fox Mount Quest]
@@ -281,15 +281,15 @@ root(ROOTS.Zones, {
 						}),
 						o(251754, {	-- Glimmering Treasure Chest
 							["questID"] = 43071,
-							["g"] = { i(139011) },	-- Berserking Helm of Ondry'el
+							["groups"] = { i(139011) },	-- Berserking Helm of Ondry'el
 						}),
 						o(251755, {	-- Glimmering Treasure Chest
 							["questID"] = 43145,
-							["g"] = { i(140450) },	-- Berserking Helm of Taenna
+							["groups"] = { i(140450) },	-- Berserking Helm of Taenna
 						}),
 						o(251759, {	-- Glimmering Treasure Chest
 							["questID"] = 43135,
-							["g"] = { i(139028) },	-- Disc of the Starcaller
+							["groups"] = { i(139028) },	-- Disc of the Starcaller
 						}),
 						n(109497, {	-- Small Treasure Chest
 							i(137823),	-- Design: Prophetic Band [Rank 2] (RECIPE!)
@@ -303,13 +303,13 @@ root(ROOTS.Zones, {
 				q(44157),	-- Withered Wrangling: Tel'anor
 				q(41643, {	-- Work Order: Battlebound Leggings
 					["requireSkill"] = LEATHERWORKING,
-					["g"] = {
+					["groups"] = {
 						i(137909),	-- Pattern: Battlebound Leggings [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41679, {	-- Work Order: Deployable Bullet Dispenser
 					["requireSkill"] = ENGINEERING,
-					["g"] = {
+					["groups"] = {
 						i(137719),	-- Schematic: Deployable Bullet Dispenser [Rank 3] (RECIPE!)
 					},
 				}),
@@ -318,13 +318,13 @@ root(ROOTS.Zones, {
 				}),
 				q(41637, {	-- Work Order: Leystone Pauldrons
 					["requireSkill"] = BLACKSMITHING,
-					["g"] = {
+					["groups"] = {
 						i(123938),	-- Plans: Leystone Pauldrons [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41655, {	-- Work Order: Queen's Opal Pendant
 					["requireSkill"] = JEWELCRAFTING,
-					["g"] = {
+					["groups"] = {
 						i(137866),	-- Design: Queen's Opal Pendant [Rank 3] (RECIPE!)
 					},
 				}),
@@ -333,13 +333,13 @@ root(ROOTS.Zones, {
 				}),
 				q(41649, {	-- Work Order: Silkweave Slippers
 					["requireSkill"] = TAILORING,
-					["g"] = {
+					["groups"] = {
 						i(138014),	-- Pattern: Silkweave Slippers [Rank 3] (RECIPE!)
 					},
 				}),
 				q(41661, {	-- Work Order: Skystep Potions
 					["requireSkill"] = ALCHEMY,
-					["g"] = {
+					["groups"] = {
 						i(127924),	-- Recipe: Skystep Potion [Rank 2] (RECIPE!)
 					},
 				}),
@@ -351,7 +351,7 @@ root(ROOTS.Zones, {
 				}),
 				q(41673, {	-- Work Order: Word of Mastery
 					["requireSkill"] = ENCHANTING,
-					["g"] = {
+					["groups"] = {
 						i(128598),	-- Formula: Enchant Ring - Word of Mastery [Rank 3] (RECIPE!)
 					},
 				}),

@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["icon"] = 458226,
 				["description"] = "To unlock this faction, you must complete |cFFFFD700The Final Atonement|r questline in Revendreth.\n\nReputation with The Avowed is gained first by killing Depraved mobs outside the Halls of Atonement.  Once you reach Friendly, use your |cFFFFFFFFSinstone Fragments|r to complete daily quests and summon Inquisitors, High Inquisitors, and Grand Inquisitors.\n\nMembers of the |cFFfe040fVenthyr Covenant|r can purchase a special mount and cosmetic cloak from the Avowed quartermaster that are unavailable to other covenants.",
 				["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor (unlocks ability to collect Sinstone Fragments + gain reputation)
-				["g"] = {
+				["groups"] = {
 					faction(FACTION_THE_AVOWED, {	-- The Avowed
 						["icon"] = 458226,
 					}),
@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								14273,	-- Crypt Kicker
 								14276,	-- It's Always Sinny in Revendreth
 							}},
-							["g"] = {
+							["groups"] = {
 								title(423),		-- Cryptkeeper
 							},
 						}),
@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}, {
 						q(58127, {	-- Inquisitor Sinstone
 							["cost"] = { { "c", SINSTONE_FRAGMENTS, 100 } },
-							["g"] = {
+							["groups"] = {
 								i(173793, {	-- Inquisitor Sinstone
 									["sym"] = {{"select","itemID",
 										172998,	-- Inquisitor Otilia's Sinstone
@@ -87,7 +87,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						}),
 						q(58128, {	-- High Inquisitor Sinstone
 							["cost"] = { { "c", SINSTONE_FRAGMENTS, 250 } },
-							["g"] = {
+							["groups"] = {
 								i(173794, {	-- High Inquisitor Sinstone
 									["sym"] = {{"select","itemID",
 										173006,	-- High Inquisitor Dacian's Sinstone
@@ -100,7 +100,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						}),
 						q(58129, {	-- Grand Inquisitor Sinstone
 							["cost"] = { { "i", 180451, 10 } },	-- 10x Grand Inquisitor's Sinstone Fragment
-							["g"] = {
+							["groups"] = {
 								i(173795, {	-- Grand Inquisitor Sinstone
 									["sym"] = {{"select","itemID",
 										173008,	-- Grand Inquisitor Aurica's Sinstone
@@ -127,7 +127,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 									156916,	-- Inquisitor Sorian
 									159151,	-- Inquisitor Traian
 								},
-								["g"] = {
+								["groups"] = {
 									i(173721),	-- Love and Terror
 									i(184214),	-- Chained Manacles
 									i(180451),	-- Grand Inquisitor's Sinstone Fragment
@@ -166,7 +166,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 									159154,	-- High Inquisitor Magda
 									159153,	-- High Inquisitor Radu
 								},
-								["g"] = {
+								["groups"] = {
 									i(173721),	-- Love and Terror
 									i(180451),	-- Grand Inquisitor's Sinstone Fragment
 									i(184211),	-- High Inquisitor's Banded Cincture
@@ -180,7 +180,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								["description"] = "Requires |cff0c5baeHigh Inquisitor Dacian's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
 								["coord"] = { 72.0, 53.0, REVENDRETH },
 								["provider"] = { "i", 173006 },	-- High Inquisitor Dacian's Sinstone
-								["g"] = {
+								["groups"] = {
 									i(180496),	-- High Inquisitor's Drape of Shame
 								},
 							}),
@@ -188,7 +188,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								["description"] = "Requires |cff0c5baeHigh Inquisitor Gabi's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
 								["coord"] = { 75.2, 44.2, REVENDRETH },
 								["provider"] = { "i", 173000 },	-- High Inquisitor Gabi's Sinstone
-								["g"] = {
+								["groups"] = {
 									i(180500),	-- High Inquisitor's Bloody Cloak
 								},
 							}),
@@ -196,7 +196,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								["description"] = "Requires |cff0c5baeHigh Inquisitor Magda's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
 								["coord"] = { 69.6, 52.0, REVENDRETH },
 								["provider"] = { "i", 173005 },	-- High Inquisitor Magda's Sinstone
-								["g"] = {
+								["groups"] = {
 									i(180498),	-- High Inquisitor's Obscene Shawl
 								},
 							}),
@@ -204,7 +204,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								["description"] = "Requires |cff0c5baeHigh Inquisitor Radu's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
 								["coord"] = { 71.4, 42.2, REVENDRETH },
 								["provider"] = { "i", 173001 },	-- High Inquisitor Radu's Sinstone
-								["g"] = {
+								["groups"] = {
 									i(180499),	-- High Inquisitor's Cloak of Fanaticism
 								},
 							}),
@@ -215,7 +215,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 									159157,	-- Grand Inquisitor Aurica
 									159156,	-- Grand Inquisitor Nicu
 								},
-								["g"] = {
+								["groups"] = {
 									i(173721),	-- Love and Terror
 									i(177803),	-- Grand Inquisitor's Stave
 									i(184210),	-- Spiked Cudgel fo the Inquisition (sic)
@@ -236,7 +236,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					n(VENDORS, {
 						n(173705, {	-- Archivist Janeera <Avowed Quartermaster>
 							["coord"] = { 73.0, 52.0, REVENDRETH },
-							["g"] = bubbleDownClassicRep(FACTION_THE_AVOWED, {
+							["groups"] = bubbleDownClassicRep(FACTION_THE_AVOWED, {
 								{		-- Neutral
 								}, {	-- Friendly
 								}, {	-- Honored
@@ -279,7 +279,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						n(159088, {	-- Bored Dredger
 							["description"] = "There is a chance to find this vendor when opening a crypt with an |cFFFFFFFFAtonement Crypt Key|r.\n\nHe runs away shortly after exiting the crypt, so make your purchases quickly!",
 							["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
-							["g"] = {
+							["groups"] = {
 								i(177231, {	-- Crown of Honor (EC!)
 									["customCollect"] = "SL_COV_VEN",
 									["cost"] = 1000000,	-- 100g

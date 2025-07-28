@@ -12,7 +12,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				},
 				["coord"] = { 51.1, 41.7, KORTHIA },
 				["questID"] = 64243,
-				["g"] = {
+				["groups"] = {
 					i(187402),	-- All-Consuming Loop
 					i(187245),	-- Death-Enveloped Spires
 					i(187246),	-- Death-Enveloped Pauldrons
@@ -23,7 +23,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["description"] = "Requires someone to enter the Rift and click the rare, at which point it will pull the player out into the normal phase of Korthia.\n\nWhen the rare has shifted into the normal Korthia phase, there is a zonewide announcement: |cFFff8040Deadsoul Hatcher breaks into Korthia from the Rift!|r",
 				["coord"] = { 59.2, 52.0, KORTHIA },
 				["questID"] = 64285,
-				["g"] = {
+				["groups"] = {
 					i(187401),	-- Band of the Shaded Rift
 					i(187396),	-- Girdle of the Deadsoul
 				},
@@ -31,7 +31,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			n(177903, {	-- Dominated Protector
 				["coord"] = { 51.9, 20.9, KORTHIA },
 				["questID"] = 63830,
-				["g"] = {
+				["groups"] = {
 					i(187390),	-- Dominated Protector's Helm
 				},
 			}),
@@ -40,7 +40,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["crs"] = { 180009 },	-- Alluring Drum
 				["coord"] = { 33.1, 39.5, KORTHIA },
 				["questID"] = 64320,
-				["g"] = {
+				["groups"] = {
 					i(187423),	-- Legend of the Animaswell
 					i(187278, {	-- Talon-Pierced Mawsworn Lockbox
 						i(187395),	-- Reinforced Stygian Spaulders
@@ -57,7 +57,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				},
 				["coord"] = { 59.7, 43.3, KORTHIA },
 				["questID"] = 64349,
-				["g"] = {
+				["groups"] = {
 					i(187424),	-- Legend of the Animaswell
 					i(187372),	-- Miasma Filtering Headpiece
 					i(187181, bubbleDownSelf({ ["customCollect"] = "SL_COV_NEC" }, {	-- Small Corpsefly Egg
@@ -71,7 +71,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["description"] = "Can spawn next to other rares when they die.  Defeat the adds that emerge from the portal, and eventually the rare will appear.\n\nWhen the portal spawns, there is a zonewide announcement: |cFFff8040A massive devourer tears an opening into Korthia.|r",
 				["crs"] = { 179464 },	-- Devouring Tear
 				["questID"] = 64246,
-				["g"] = {
+				["groups"] = {
 					i(187375),	-- Bound Worldeater Tendrils
 					i(187384),	-- Konthrogz's Scaled Handguards
 					i(187183),	-- Rampaging Mauler (MOUNT!)
@@ -87,7 +87,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					{ 63.0, 35.8, KORTHIA },
 				},
 				["questID"] = 64428,
-				["g"] = {
+				["groups"] = {
 					i(187248),	-- Kroke's Gleaming Spaulders
 					i(187250),	-- Kroke's Wingspiked Pauldrons
 					i(187394),	-- Tormented Giant's Legplates
@@ -102,7 +102,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				},
 				["provider"] = { "o", 369181 },	-- Fleshy Remains
 				["questID"] = 64233,
-				["g"] = {
+				["groups"] = {
 					i(186645),	-- Crimson Shardhide (MOUNT!)
 					i(187377),	-- Malbog's Paws
 				},
@@ -111,15 +111,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["description"] = "Use the grapple points to access the rare and chase her as she evades you.\n\nWhen the rare has been pulled, there is a zonewide announcement: |cFFff4040Relic Breaker Krelva yells: Not now, fool!  I am searching for something...|r",
 				["coord"] = { 22.8, 42.6, KORTHIA },
 				["questID"] = 64291,
-				["g"] = {
+				["groups"] = {
 					i(187403),	-- Relic Breaker's Drape
 				},
 			}),
 			n(180160, {	-- Reliwik the Defiant
 				["description"] = "Click the |cFFFFFFFFUncorrupted Razorwing Egg|r to draw the attention of the rare.",
+				["provider"] = { "o", 369435 },	-- Uncorrupted Razorwing Egg
 				["coord"] = { 56.3, 66.2, KORTHIA },
 				["questID"] = 64455,
-				["g"] = {
+				["groups"] = {
 					i(187388),	-- Barbed Scale Cinch
 					i(186652),	-- Garnet Razorwing (MOUNT!)
 				},
@@ -128,7 +129,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["description"] = "Requires someone to enter the Rift and click the rare, at which point it will pull the player out into the normal phase of Korthia.\n\nWhen the rare has shifted into the normal Korthia phase, there is a zonewide announcement: |cFFff8040Screaming Shade breaks into Korthia from the Rift!|r",
 				["coord"] = { 44.6, 42.9, KORTHIA },
 				["questID"] = 64263,
-				["g"] = {
+				["groups"] = {
 					i(187400),	-- Mantle of Screaming Shadows
 					i(187362),	-- Stinging Shadow Screamer
 				},
@@ -137,7 +138,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["description"] = "Requires someone to enter the Rift and click the rare, at which point it will pull the player out into the normal phase of Korthia.\n\nWhen the rare has shifted into the normal Korthia phase, there is a zonewide announcement: |cFFff8040Silent Soulstalker breaks into Korthia from the Rift!|r",
 				["coord"] = { 57.5, 70.2, KORTHIA },
 				["questID"] = 64284,
-				["g"] = {
+				["groups"] = {
 					i(187381),	-- Rift-Touched Bindings
 					i(187383),	-- Silent Soulstalker Sabatons
 				},
@@ -150,7 +151,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				},
 				["coord"] = { 46.3, 79.7, KORTHIA },
 				["questID"] = 64313,
-				["g"] = {
+				["groups"] = {
 					i(187283),	-- Gravewing Crystal
 					i(187428),	-- Legend of the Animaswell
 					i(187386),	-- Stygian Crystal Studded Legguards
@@ -162,7 +163,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					179759,	-- Mawsworn Portal [Vignette]
 				},
 				["questID"] = 64245,
-				["g"] = {
+				["groups"] = {
 					i(187035),	-- Cold Burden of the Damned
 					i(187242),	-- Exterminator's Crest of the Damned
 					i(187382),	-- Mawsworn Exterminator's Hauberk
@@ -182,7 +183,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					{ 61.4, 57.8, KORTHIA },
 				},
 				["questID"] = 64457,
-				["g"] = {
+				["groups"] = {
 					i(187404),	-- Cartel Ve Amulet
 					i(187264),	-- Ve'rayn's Head
 					i(187369),	-- Ve'rayn's Formal Robes
@@ -196,7 +197,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					{ 46.9, 35.1, KORTHIA },	-- end
 				},
 				["questID"] = 64338,
-				["g"] = {
+				["groups"] = {
 					i(187380),	-- Devourer Hide Belt
 					i(187282),	-- Intact Aquilon Core
 					i(187426),	-- Legend of the Animaswell
@@ -208,7 +209,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["coord"] = { 45.0, 35.5, KORTHIA },
 				["questID"] = 64278,
 				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
-				["g"] = {
+				["groups"] = {
 					i(187104),	-- Obelisk of Dark Tidings
 					i(187387),	-- Pauldrons of the Unknown Beyond
 					i(187368),	-- Xyraxz's Controlling Rod
@@ -219,7 +220,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["coord"] = { 39.3, 52.4, KORTHIA },
 				["questID"] = 64257,
 				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
-				["g"] = {
+				["groups"] = {
 					i(187103),	-- Everliving Statuette
 					i(187366),	-- Fallen Vault Guardian's Spire
 					i(187391),	-- Yarxhov's Rib-Cage
@@ -229,7 +230,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["description"] = "At the bottom of the cave.",
 				["coord"] = { 30.2, 54.9, KORTHIA },
 				["questID"] = 64442,
-				["g"] = {
+				["groups"] = {
 					i(186542),	-- Korthian Specimen (PET!)
 					i(187371),	-- Velvet Gromit Handwraps
 				},

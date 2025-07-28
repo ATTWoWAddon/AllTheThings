@@ -58,14 +58,14 @@ root(ROOTS.Zones, {
 							q(44982, {	-- Direbeak Bonding
 								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44981,	-- The Unkindly Faction
-								["g"] = {
+								["groups"] = {
 									i(142495),	-- Fake Teeth (TOY!)
 								},
 							}),
 							q(44988, {	-- Direbeak Reunion
 								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44987,	-- Direbeak Team Rumble
-								["g"] = {
+								["groups"] = {
 									i(137579),	-- Brilliant Direbeak (MOUNT!)
 								},
 							}),

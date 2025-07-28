@@ -29,7 +29,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			DORNOGAL,
 		},
 		["cr"] = 238254,	-- Portal to Horrific Visions
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(41897),	-- A Monumental Amount of Mementos
 				ach(41898),	-- A Mountain of Mementos
@@ -52,7 +52,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						41965,	-- Beyond the Most Horrific Vision of Orgrimmar
 						41964,	-- Beyond the Most Horrific Vision of Stormwind
 					}},
-					["g"] = { i(235709) },	-- Ny'alothan Shadow Worm
+					["groups"] = { i(235709) },	-- Ny'alothan Shadow Worm
 				}),
 				ach(41983),	-- Memento Mania
 				ach(41896),	-- Memento Mori
@@ -62,7 +62,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						41876,	-- The Even More Horrific Vision of Orgrimmar
 						41854,	-- The Even More Horrific Vision of Stormwind
 					}},
-					["g"] = { i(174463) },	-- Reek (PET!)
+					["groups"] = { i(174463) },	-- Reek (PET!)
 				}),
 				ach(41859),	-- Thanks For The Mementos
 				ach(41929, {	-- Through the Depths of Visions
@@ -72,7 +72,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						41855,	-- The Most Horrific Vision of Stormwind
 						41725,	-- We Have the Memories
 					}},
-					["g"] = { i(174654) },	-- Black Serpent of N'Zoth (MOUNT!)
+					["groups"] = { i(174654) },	-- Black Serpent of N'Zoth (MOUNT!)
 				}),
 				ach(41971, {	-- Through the Looking Glass
 					title(631),	-- <Name> the Mad
@@ -88,35 +88,35 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["isBreadcrumb"] = true,
 				}),
 				q(87328, {	-- Truly Horrific to Behold
-					["sourceQuests"] = { 86706 },	-- Seeking Knowledge of the Past
 					["provider"] = { "n", 236382 },	-- Soridormi
+					["sourceQuests"] = { 86706 },	-- Seeking Knowledge of the Past
 					["coord"] = { 34.6, 68.7, DORNOGAL },
 				}),
 				q(87329, {	-- Into the Darkest Memories
-					["sourceQuests"] = { 87328 },	-- Truly Horrific to Behold
 					["provider"] = { "n", 236382 },	-- Soridormi
+					["sourceQuests"] = { 87328 },	-- Truly Horrific to Behold
 					["coord"] = { 34.5, 68.7, DORNOGAL },
 				}),
 				q(87332, {	-- A Collection of Variables
-					["sourceQuests"] = { 87329 },	-- Into the Darkest Memories
 					["provider"] = { "n", 236382 },	-- Soridormi
+					["sourceQuests"] = { 87329 },	-- Into the Darkest Memories
 					["coord"] = { 34.5, 68.7, DORNOGAL },
 				}),
 				q(87335, {	-- Echoing Lessons
-					["sourceQuests"] = { 87332 },	-- A Collection of Variables
 					["provider"] = { "n", 238136 },	-- Augermu
+					["sourceQuests"] = { 87332 },	-- A Collection of Variables
 					["coord"] = { 35.2, 68.5, DORNOGAL },
 				}),
 				q(87336, {	-- Remembering Again and Again
-					["sourceQuests"] = { 87335 },	-- Echoing Lessons
 					["provider"] = { "n", 238136 },	-- Augermu
+					["sourceQuests"] = { 87335 },	-- Echoing Lessons
 					["coord"] = { 35.2, 68.5, DORNOGAL },
 				}),
 				-- End of intro quests
 				-- Follower quest
 				q(88803, {	-- Timely Assistance
-					["sourceQuests"] = { 87336 },	-- Remembering Again and Again
 					["provider"] = { "n", 238337 },	-- Bronze Hourglass
+					["sourceQuests"] = { 87336 },	-- Remembering Again and Again
 					["coords"] = {
 						{ 51.9, 82.7, RE_HORRIFIC_ORGRIMMAR },
 						{ 53.2, 50.3, RE_HORRIFIC_STORMWIND },
@@ -124,10 +124,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				-- Corruptions quest
 				q(90719, {	-- Borrowing Corruption
-					--["sourceQuests"] = { ??? },	-- TODO: it was just up with some of new builds
 					["provider"] = { "n", 238136 },	-- Augermu
+					--["sourceQuests"] = { ??? },	-- TODO: it was just up with some of new builds
 					["coord"] = { 35.2, 68.6, DORNOGAL },
-					["g"] = {
+					["groups"] = {
 						i(238407),	-- Black Blood Residue
 						i(238678),	-- Lesser Rune of Echoing Void
 						i(239084),	-- Lesser Rune of Gushing Wound
@@ -138,10 +138,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 				q(90731, {	-- Enhancing Corruption
-					["sourceQuests"] = { 90719 },	-- Borrowing Corruption
 					["provider"] = { "n", 238136 },	-- Augermu
+					["sourceQuests"] = { 90719 },	-- Borrowing Corruption
 					["coord"] = { 35.2, 68.6, DORNOGAL },
-					["g"] = {
+					["groups"] = {
 						i(238680),	-- Greater Rune of Echoing Void
 						i(239086),	-- Greater Rune of Gushing Wound
 						i(239080),	-- Greater Rune of Infinite Stars
@@ -152,35 +152,35 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				-- TODO: Some masks still have their old quests, and something is funky with criteria of mask of the long night, WIP on Blizzard's end maybe? v0v
 				q(86153, {	-- Faceless Mask of the Dark Imagination
-					--["sourceQuests"] = { ?? },	-- ??
 					["provider"] = { "i", 232919 },	-- Faceless Mask of the Dark Imagination (QI!/QS!)
+					--["sourceQuests"] = { ?? },	-- ??
 				}),
 				q(86801, {	-- Faceless Mask of Multitudes
 					["provider"] = { "i", 235414 },	-- Faceless Mask of Multitudes (QS!/QI!)
 				}),
 				q(86152, {	-- Faceless Mask of the Daredevil
-					--["sourceQuests"] = { 90529 },	-- hqt?
 					["provider"] = { "i", 232918 },	-- Faceless Mask of the Daredevil (QS!/QI!)
+					--["sourceQuests"] = { 90529 },	-- hqt?
 				}),
 				q(86151, {	-- Faceless Mask of the Burned Bridge
-					--["sourceQuests"] = { 90530 },	-- hqt?
 					["provider"] = { "i", 232917 },	-- Faceless Mask of the Burned Bridge (QI!/QS!)
+					--["sourceQuests"] = { 90530 },	-- hqt?
 				}),
 				q(86155, {	-- Faceless Mask of the Long Night
-					--["sourceQuests"] = { ?? },	-- ??
 					["provider"] = { "i", 232921 },	-- Faceless Mask of the Long Night (QI!/QS!)
+					--["sourceQuests"] = { ?? },	-- ??
 				}),
 				q(86154, {	-- Faceless Mask of the Pained
-					--["sourceQuests"] = { ?? },	-- ??
 					["provider"] = { "i", 232920 },	-- Faceless Mask of the Pained (QI!/QS!)
+					--["sourceQuests"] = { ?? },	-- ??
 				}),
 				q(88652, {	-- Faceless Mask of the Nemesis
-					--["sourceQuests"] = { ?? },	-- ??
 					["provider"] = { "i", 237434 },	-- Faceless Mask of the Nemesis (QI!/QS!)
+					--["sourceQuests"] = { ?? },	-- ??
 				}),
 				q(88903, {	-- Faceless Mask of Vengeance
-					--["sourceQuests"] = { ?? },	-- ??
 					["provider"] = { "i", 238260 },	-- Faceless Mask of Vengeance (QI!/QS!)
+					--["sourceQuests"] = { ?? },	-- ??
 				}),
 			}),
 			n(RARES, {
@@ -199,7 +199,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						{ 66.1, 76.3, RE_HORRIFIC_STORMWIND },
 						{ 52.6, 77.3, RE_HORRIFIC_STORMWIND },
 					},
-					["g"] = { i(223265) },	-- Nesting Swarmite (MOUNT!)
+					["groups"] = { i(223265) },	-- Nesting Swarmite (MOUNT!)
 				}),
 				n(160708, {	-- Mail Muncher
 					["description"] = "Has a chance to spawn from Mailboxes in either vision.",
@@ -216,7 +216,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						{ 49.7, 87.0, RE_HORRIFIC_STORMWIND },
 						{ 75.7, 64.6, RE_HORRIFIC_STORMWIND },
 					},
-					["g"] = { i(174653) },	-- Mail Muncher (MOUNT!)
+					["groups"] = { i(174653) },	-- Mail Muncher (MOUNT!)
 				}),
 			}),
 			n(REWARDS, {
@@ -341,7 +341,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 					["questID"] = 89472,
 					["repeatable"] = true,
-					["g"] = { i(239107) },	-- Black Blood Infused Bar
+					["groups"] = { i(239107) },	-- Black Blood Infused Bar
 				}),
 			}),
 			n(SPECIAL, {
@@ -355,7 +355,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["description"] = "Collect each reagent and craft them together into cycle parts, return the parts to the bike in Dornogal to earn your own.\n\nEach special reagent is available from Visions with at least one mask active.",
 					["sourceQuest"] = 90129,	-- Voidfire Deathcycle Frame Tagged For Extraction
 					["coord"] = { 34.0, 68.2, DORNOGAL },
-					["g"] = {
+					["groups"] = {
 						i(240181, {	-- Boarhide Deathcycle Seat
 							["cost"] = {
 								{ "i", 222890, 5 },	-- 5x Weavercloth Spellthread
@@ -447,7 +447,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				n(238136, {	-- Augermu
 					["sourceQuest"] = 90719,	-- Borrowing Corruption
 					["coord"] = { 35.2, 68.6, DORNOGAL },
-					["g"] = sharedData({ ["cost"] = {{"c", 3149, 500}} }, {	-- 500x Displaced Corrupted Mementos
+					["groups"] = sharedData({ ["cost"] = {{"c", 3149, 500}} }, {	-- 500x Displaced Corrupted Mementos
 						i(238678),	-- Lesser Rune of Echoing Void
 						i(239084),	-- Lesser Rune of Gushing Wound
 						i(239078),	-- Lesser Rune of Infinite Stars
@@ -465,7 +465,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				n(238544, {	-- Chreni "HEROIC/Hero Quality Vendor"
 					["sourceAchievement"] = 41874,	-- Symphony of Masks
 					["coord"] = { 33.8, 68.6, DORNOGAL },
-					["g"] = appendAllGroups(
+					["groups"] = appendAllGroups(
 						{
 							i(242623, {	-- Enchanted Warbound Purifying Kit
 								["cost"] = {{"c", 3149, 2000 }},	-- 2000x Displaced Corrupted Mementos
@@ -552,7 +552,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				n(238546, {	-- Rhythferr "NORMAL/Champion Quality Vendor"
 					["sourceAchievement"] = 41857,	-- Masked Soliloquy
 					["coord"] = { 34.1, 68.5, DORNOGAL },
-					["g"] = appendAllGroups(
+					["groups"] = appendAllGroups(
 						{
 							i(242622, {	-- Warbound Purifying Kit
 								["cost"] = {{"c", 3149, 1000 }},	-- 1000x Displaced Corrupted Mementos
@@ -639,7 +639,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				n(238545, {	-- TickTak "LFR/Veteran Quality Vendor"
 					["coord"] = { 33.9, 68.8, DORNOGAL },
 					["sourceAchievement"] = 41873,	-- Incremental Progress
-					["g"] = bubbleDown({["modID"] = 83}, {
+					["groups"] = bubbleDown({["modID"] = 83}, {
 						i(236892, {	-- Void-Touched Battle Staff
 							["cost"] = {{"c", 3149, 500}},	-- 500x Displaced Corrupted Mementos
 						}),
@@ -719,7 +719,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				n(238138, {	-- Torie
 					["coord"] = { 34.4, 68.4, DORNOGAL },
-					["g"] = {
+					["groups"] = {
 						i(238666, {	-- Ashjra'kamas, The Corrupted
 							["cost"] = {{ "c", 3149, 1000 }},
 						}),
@@ -861,7 +861,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}),
 			header(HEADERS.Achievement, 41875, {	-- Horrific Vision of Orgrimmar
 				["maps"] = { RE_HORRIFIC_ORGRIMMAR },
-				["g"] = {
+				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(41875),	-- Horrific Vision of Orgrimmar
 						ach(41876),	-- The Even More Horrific Vision of Orgrimmar
@@ -872,7 +872,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						o(499956, {	-- Corrupted Chest (The Drag/Garona)
 							["description"] = "Bonus Chest for completing The Drag Objective/Garona.",
 							["coord"] = { 48.5, 58.3, RE_HORRIFIC_ORGRIMMAR },
-							["g"] = {
+							["groups"] = {
 								i(235795),	-- Void-Scarred Scorpid (PET!)
 								i(240193),	-- Tentacle Spokes
 							},
@@ -880,7 +880,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						o(499957, {	-- Corrupted Chest (Valley of Wisdom/Geya'rah)
 							["description"] = "Bonus Chest for completing the Valley of Wisdom/Geya'rah.",
 							["coord"] = { 48.9, 58.1, RE_HORRIFIC_ORGRIMMAR },
-							["g"] = {
+							["groups"] = {
 								i(242648),	-- Black Blood Coagulate
 								i(232917),	-- Faceless Mask of the Burned Bridge (QS!/QI!)
 								i(240193),	-- Tentacle Spokes
@@ -891,7 +891,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						o(499958, {	-- Corrupted Chest (Valley of Honor/Rexxar)
 							["description"] = "Bonus Chest for completing the Valley of Honor Objective/Rexxar.",
 							["coord"] = { 48.1, 58.1, RE_HORRIFIC_ORGRIMMAR },
-							["g"] = {
+							["groups"] = {
 								i(242648),	-- Black Blood Coagulate
 								i(174457),	-- C'Thuffer (PET!)
 								i(232918),	-- Faceless Mask of the Daredevil (QS!/QI!)
@@ -901,7 +901,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						o(499960, {	-- Corrupted Chest (Vale of Spirits/Zekhan)
 							["description"] = "Bonus Chest for completing the Vale of Spirits Objective/Zekhan.",
 							["coord"] = { 48.8, 58.3, RE_HORRIFIC_ORGRIMMAR },
-							["g"] = {
+							["groups"] = {
 								i(173726),	-- Void-Scarred Toad (PET!)
 								i(174924),	-- Void-Touched Souvenir Totem (TOY!)
 								i(240178),	-- Voidflame-Resistant Hide
@@ -910,7 +910,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						o(499954, {	-- Corrupted Chest (Valley of Strength/Thrall chest)
 							["description"] = "Chest for completing Valley of Strength Objective/Thrall.",
 							["coord"] = { 48.5, 58.7, RE_HORRIFIC_ORGRIMMAR },
-							["g"] = {
+							["groups"] = {
 								i(174461),	-- Anomalus (PET!)
 								i(174646),	-- Void-Scarred Pup (PET!)
 							},
@@ -919,7 +919,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					n(RARES, {
 						n(241024, {	-- Big Keech <Rare Antiquities>
 							["coord"] = { 72.4, 35.7, RE_HORRIFIC_ORGRIMMAR },
-							["g"] = {
+							["groups"] = {
 								i(238922),	-- Design: Voice-Crystal Panther (RECIPE!)
 								i(238924),	-- Void-Bound Orb of Mystery
 							},
@@ -927,7 +927,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						n(241702, {	-- Gamon <Hero of Orgrimmar>
 							["description"] = "Interact with his axe on the table on the right portion of the first floor of the Broken Tusk inn at the Valley of Strength",
 							["coord"] = { 54.7, 79.0, RE_HORRIFIC_ORGRIMMAR },
-							["g"] = { i(239158) },	-- Nemesis Shard (GAMON)
+							["groups"] = { i(239158) },	-- Nemesis Shard (GAMON)
 						}),
 						n(238836, {	-- Void-Scarred Wolf
 							["description"] = "Interact with Wolf Rider gear in the Valleys of Honor and Wisdom to gain a stacking buff, then interact with a wolf rug at the Drag's leatherworking shop to spawn the rare.\n\nWolf rider packs are only visible with at least one mask active.",
@@ -941,7 +941,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 								{ 39.2, 49.5, RE_HORRIFIC_ORGRIMMAR },	-- Wolf Tack (519559)
 								{ 60.8, 54.7, RE_HORRIFIC_ORGRIMMAR },	-- Wolf Rug
 							},
-							["g"] = { i(235706) },	-- Void-Scarred Pack Mother's Harness (MOUNT!)
+							["groups"] = { i(235706) },	-- Void-Scarred Pack Mother's Harness (MOUNT!)
 						}),
 						n(238145, {	-- Void-Scarred Wyvern Matriarch
 							["description"] = "Clear the Valley of Wisdom to access the elevator up to the Skyway. Defeat waves of Void-Scarred Wyverns until the matriarch spawns.\n\nThe path up to the Skyway will remain blocked without at least 3 masks active.",
@@ -953,26 +953,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 								238054,	-- Void Scarred Cub
 								238098,	-- Void-Scarred Wyvern
 							},
-							["g"] = { i(235707) },	-- Reins of the Void-Scarred Windrider (MOUNT!)
+							["groups"] = { i(235707) },	-- Reins of the Void-Scarred Windrider (MOUNT!)
 						}),
 					}),
 					n(TREASURES, {
 						o(342098, {	-- Coifcurl's Close Shave Kit
 							["description"] = "Requires entering the Valley of Spirits. The chest is inside the barber shop on the right.",
 							["coord"] = { 40.5, 60.3, RE_HORRIFIC_ORGRIMMAR },
-							["g"] = { i(174920) },	-- Coifcurl's Close Shave Kit (TOY!)
+							["groups"] = { i(174920) },	-- Coifcurl's Close Shave Kit (TOY!)
 						}),
 						o(529677, {	-- Void-Forged Engine Block
 							["coord"] = { 56.9, 56.8, RE_HORRIFIC_ORGRIMMAR },
 							["questID"] = 90526,
-							["g"] = { i(240189) },	-- Void-Forged Engine Block
+							["groups"] = { i(240189) },	-- Void-Forged Engine Block
 						}),
 					}),
 				},
 			}),
 			header(HEADERS.Achievement, 41853, {	-- Horrific Vision of Stormwind
 				["maps"] = { RE_HORRIFIC_STORMWIND },
-				["g"] = {
+				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(41853),	-- Horrific Vision of Stormwind
 						ach(41854),	-- The Even More Horrific Vision of Stormwind
@@ -983,7 +983,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						o(499031, {	-- Corrupted Chest (Trade District/Wyrmbane)
 							["description"] = "Bonus Chest for completing the Trade District Objective/Wyrmbane.",
 							["coord"] = { 41.3, 34.1, RE_HORRIFIC_STORMWIND },
-							["g"] = {
+							["groups"] = {
 								i(240193),	-- Tentacle Spokes
 								i(235793),	-- Void-Scarred Parrot (PET!)
 							},
@@ -991,7 +991,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						o(499026, {	-- Corrupted Chest (Dwarven District/Kelsey)
 							["description"] = "Bonus Chest for completing the Dwarven District Objective/Kelsey.",
 							["coord"] = { 41.9, 34.2, RE_HORRIFIC_STORMWIND },
-							["g"] = {
+							["groups"] = {
 								i(240178),	-- Voidflame-Resistant Hide
 								i(174460),	-- Void-Scarred Rat (PET!)
 							},
@@ -999,7 +999,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						o(499028, {	-- Corrupted Chest (Mage Quarter/Umbric)
 							["description"] = "Bonus Chest for completing the Mage Quarter Objective/Umbric.",
 							["coord"] = { 41.0, 33.9, RE_HORRIFIC_STORMWIND },
-							["g"] = {
+							["groups"] = {
 								i(242648),	-- Black Blood Coagulate
 								i(240186),	-- Depleted Void Crystal
 								i(232919, {	-- Faceless Mask of Dark Imagination (QI!/QS!)
@@ -1011,7 +1011,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						o(499029, {	-- Corrupted Chest (Old Town/Valeera)
 							["description"] = "Bonus Chest for completing the Old Town Objective/Valeera.",
 							["coord"] = { 42.1, 33.9, RE_HORRIFIC_STORMWIND },
-							["g"] = {
+							["groups"] = {
 								i(242648),	-- Black Blood Coagulate
 								i(235794),	-- Eye of Chaos (PET!)
 								i(232920, {	-- Faceless Mask of the Pained (QI!/QS!)
@@ -1027,7 +1027,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						o(499022, {	-- Corrupted Chest (Cathedral/Alleria)
 							["description"] = "Chest for completing the Cathedral Objective/Alleria.",
 							["coord"] = { 41.6, 34.4, RE_HORRIFIC_STORMWIND },
-							["g"] = {
+							["groups"] = {
 								i(232921, {	-- Faceless Mask of the Long Night (QI!/QS!)
 									["description"] = "Granted by completing all five districts within a single visit.",
 								}),
@@ -1047,16 +1047,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 								{ 62.6, 61.2, RE_HORRIFIC_STORMWIND },
 								{ 69.6, 68.2, RE_HORRIFIC_STORMWIND },
 							},
-							["g"] = { i(174926) },	-- Overly Sensitive Void Spectacles (TOY!)
+							["groups"] = { i(174926) },	-- Overly Sensitive Void Spectacles (TOY!)
 						}),
 						n(241698, {	-- Hogger
 							["description"] = "Interact with his WANTED poster just to the right of the entrance to the Mage Quarter area\n\nRequires an active Mask",
 							["coord"] = { 55.8, 75.2, RE_HORRIFIC_STORMWIND },
-							["g"] = { i(239157) },	-- Nemesis Shard (HOGGER)
+							["groups"] = { i(239157) },	-- Nemesis Shard (HOGGER)
 						}),
 						n(241718, {	-- Vengeful Voidspeaker
 							["coord"] = { 71.0, 70.0, RE_HORRIFIC_STORMWIND },
-							["g"] = {
+							["groups"] = {
 								i(238260, {	-- Faceless Mask of Vengeance (QI!/QS!)
 									["description"] = "Requires an active Mask",
 								}),
@@ -1084,7 +1084,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 								{ 50.9, 84.0, RE_HORRIFIC_STORMWIND },	-- Mage Horseshoe (517349)
 								{ 63.0, 37.3, RE_HORRIFIC_STORMWIND },	-- Anvil
 							},
-							["g"] = { i(235705) },	-- Void-Forged Stallion's Reins (MOUNT!)
+							["groups"] = { i(235705) },	-- Void-Forged Stallion's Reins (MOUNT!)
 						}),
 						header(HEADERS.Item, 235700, {	-- Reins of the Void-Scarred Gryphon
 							n(237918, {	-- Claw Marked Bowl
@@ -1103,7 +1103,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							}),
 							n(237991, {	-- Void-Scarred Gryphon
 								["provider"] = { "n", 237918 },	-- Claw Marked Bowl
-								["g"] = { i(235700) },	-- Reins of the Void-Scarred Gryphon (MOUNT!)
+								["groups"] = { i(235700) },	-- Reins of the Void-Scarred Gryphon (MOUNT!)
 							}),
 						}),
 					}),
@@ -1111,7 +1111,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						o(529673, {	-- Unclaimed Auction House Crate
 							["questID"] = 90525,
 							["coord"] = { 61.5, 72.7, RE_HORRIFIC_STORMWIND },
-							["g"] = {
+							["groups"] = {
 								i(240191),	-- Magic-Lined Manifold
 							},
 						}),
@@ -1128,7 +1128,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						o(343698, {	-- Void-Touched Skull
 							["description"] = "Behind the orphanage in Cathedral Square.  It's on the ground next to some crates, is very small, and doesn't have the typical interactable sparkle.",
 							["coord"] = { 58.9, 52.9, RE_HORRIFIC_STORMWIND },
-							["g"] = {
+							["groups"] = {
 								i(174921, {	-- Void-Touched Skull (TOY!)
 									i(174922),	-- Void-Touched Skull
 								}),

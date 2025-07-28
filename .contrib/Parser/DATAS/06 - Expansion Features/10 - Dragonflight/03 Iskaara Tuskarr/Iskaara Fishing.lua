@@ -70,75 +70,75 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			n(QUESTS, {
 				------ RENOWN 4 ------
 				q(70941, {	-- Fishing Holes
-					["description"] = "Spawns Anywhere on Dragon Isles.",
 					["provider"] = { "n", 197631 },	-- Rowie
 					["coord"] = { 45.8, 55.2, VALDRAKKEN },
+					["description"] = "Spawns Anywhere on Dragon Isles.",
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				------ RENOWN 5 ------
 				q(71230, {	-- Tuskarr Fishing Gear
-					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 5 },
-					["description"] = "Spawns Anywhere on Dragon Isles.",
 					["provider"] = { "n", 197631 },	-- Rowie
 					["coord"] = { 45.8, 55.2, VALDRAKKEN },
+					["description"] = "Spawns Anywhere on Dragon Isles.",
+					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 5 },
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				q(70871, {	-- Iskaaran Fishing Net
-					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 5 },
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
-					["g"] = {
+					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 5 },
+					["groups"] = {
 						i(199925),	-- Stone With Hole
 						i(199924),	-- Strong Sea Kelp
 					},
 				}),
 				q(72584, {	-- Setting Your Very Own Net
-					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 5 },
-					["sourceQuests"] = { 70871 },	-- Iskaaran Fishing Net
 					["provider"] = { "n", 195935 },	-- Tavio
+					["sourceQuests"] = { 70871 },	-- Iskaaran Fishing Net
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
+					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 5 },
 				}),
 				------ RENOWN 6 ------
 				q(70942, {	-- Highland Fishing
-					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 6 },
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
+					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 6 },
 				}),
 				------ RENOWN 7 ------
 				q(70943, {	-- Harpooning
-					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 7 },
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
+					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 7 },
 				}),
 				------ RENOWN 10 ------
 				q(70944, {	-- Ice Fishing
-					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 10 },
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
+					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 10 },
 				}),
 				------ RENOWN 13 ------
 				q(70945, {	-- Netting More
-					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 13 },
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
+					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 13 },
 				}),
 				------ RENOWN 15 ------
 				q(70948, {	-- Hook, Line, and Swelter!
-					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 15 },
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
+					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 15 },
 				}),
 				------ RENOWN 18 ------
 				q(70950, {	-- Fishy Entertainment
-					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 18 },
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
+					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 18 },
 				}),
 				------ RENOWN 27 ------
 				q(70952, {	-- Abandoned... or Hidden Caches
-					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 27 },
 					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
+					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 27 },
 				}),
 			}),
 			n(QUESTS, sharedData({
@@ -149,7 +149,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				q(70438, {	-- Flying Fish
 					["provider"] = { "n", 195338 },	-- Fisherman Pasqaa
 					["coord"] = { 63.7, 76.5, THE_WAKING_SHORES },
-					["g"] = {
+					["groups"] = {
 						i(198855),	-- Throw Net
 					},
 				}),
@@ -164,7 +164,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				q(72075, {	-- Hot Stock
 					["provider"] = { "n", 198767 },	-- Explorative Fisher
 					["coord"] = { 34.5, 65.2, THE_WAKING_SHORES },
-					["g"] = {
+					["groups"] = {
 						i(198855),	-- Throw Net
 					},
 				}),
@@ -172,7 +172,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				q(72072, {	-- Dragonsprings Drop
 					["provider"] = { "n", 198766 },	-- Thrifty Fisher
 					["coord"] = { 80.8, 78.4, OHNAHRAN_PLAINS },
-					["g"] = {
+					["groups"] = {
 						i(198855),	-- Throw Net
 					},
 				}),
@@ -184,7 +184,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				q(71191, {	-- Net Worth
 					["provider"] = { "n", 197700 },	-- Gruff Fisher
 					["coord"] = { 58.6, 34.4, OHNAHRAN_PLAINS },
-					["g"] = {
+					["groups"] = {
 						i(200646),	-- Gruff Fisher's Net (QI!)
 					},
 				}),
@@ -196,7 +196,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				q(71193, {	-- Underwater Menace
 					["provider"] = { "n", 197597 },	-- Cautious Fisher
 					["coord"] = { 57.2, 65.3, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(200667),	-- Grim Morsel (QI!)
 					},
 				}),
@@ -208,7 +208,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				q(73226, {	-- Dragonskull Shoal
 					["provider"] = { "n", 200947 },	-- Reclusive Fisher
 					["coord"] = { 74.1, 40.5, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						i(198855),	-- Throw Net
 					},
 				}),
@@ -273,7 +273,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			},{
 				["crs"] = { 195935 },
 				["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
-				["g"] = {
+				["groups"] = {
 					filter(RECIPES, sharedData({ ["u"] = TRAINING }, {
 						r(388251),	-- Braided Seavine Harpoon Rope
 						r(388253),	-- Dense Draconium Net Weights
@@ -397,7 +397,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				["sharedDescription"] = "Chance to spawn after using 5 |cffffffffOminous Conches|r at specific |cffffffffLarge Lunker Sighting|r Locations.\nWhich Lunker Sighting is up changes every week & if there is no fish icon, the pool is not up and you cannot spawn a Lunker at that location.",
 				["cost"] = { { "i", 194701, 5 } },	-- 5x Ominous Conch
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(200086),	-- Khaz'gorite-Infused Resin
 				},
 			},{
@@ -427,7 +427,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				n(193708, {	-- Skald the Impaler <Lunker>
 					["coord"] = { 33.8, 64.4, THE_WAKING_SHORES },
 					["questID"] = 74078,
-					["g"] = {
+					["groups"] = {
 						i(200086),	-- Khaz'gorite-Infused Resin
 						i(200218, {	-- Charred Fishing Pole
 							--["collectible"] = true,	-- Changed flag from false to true so that it can be collected.  Was able to collect with SS June 21, 2024
@@ -519,14 +519,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coords"] = {
 							{ 80.0, 27.0, THE_WAKING_SHORES },
 						},
-						["g"] = {
+						["groups"] = {
 							i(200079),	-- Sea-Polished Basalt
 						},
 					}),
 					o(381512, {	-- Wooden Pole
 						["description"] = "Used to craft Iskaaran Harpoon.",
 						["coord"] = { 15.6, 44.5, THE_AZURE_SPAN },
-						["g"] = {
+						["groups"] = {
 							i(200077),	-- Wooden Pole
 						},
 					}),

@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Gather the |cFFFFFFFFSpectral Feed|r, located at |cFFFFFFFF63.75, 61.69|r in Revendreth. This has roughly a 60 minute respawn, and is lootable by others shortly after being looted by one player.\nAfter, head to the Lost Soul located at 63.18, 42.76 in Revendreth. Use |cFFFFFFFF/chicken|r on the soul, then use the |cFFFFFFFFSpectral Feed|r from your Bag.\nThe soul may have multiple spawn points, or a separate respawn timer than the Feed, it is unknown. However, you can only see the Soul when you have the Feed in your bags.",
 				["coord"] = { 63.18, 42.76, REVENDRETH },
 				["cost"] = { { "i", 187811, 1 } },	-- Spectral Feed
-				["g"] = {
+				["groups"] = {
 					i(187813),	-- Chicken Soul
 				},
 			})),
@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 63.1, 43.1, REVENDRETH },
 				["questID"] = 62107,
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					header(HEADERS.Item, 182581, {	-- Handful of Oats
 						["description"] = "Day 1: Collect 8 |cFFFFFFFFHandfuls of Oats|r.  They can be found in |cFFFFFFFFSacks of Oats|r in any of the farmland in the northern half of Westfall — Jansen Stead, Furlbrow's Pumpkin Farm, Saldean's Farm, and the Molsen Farm.\n\nThese can likely be found in more locations than are provided.  Check by fences, around the bases of trees, and near carts.  They do not sparkle, so they can be difficult to spot.",
 						["coords"] = {
@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			})),
 			o(370469, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {	-- Spectral Feed
 				["coord"] = { 63.75, 61.69, REVENDRETH },
-				["g"] = {
+				["groups"] = {
 					i(187811),	-- Spectral Feed
 				},
 			})),

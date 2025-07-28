@@ -13,12 +13,12 @@ root(ROOTS.Zones, {
 				674,	-- Soul Engine
 				675,	-- Soul Engine
 			},
-			["g"] = {
+			["groups"] = {
 				n(QUESTS, {
 					q(40077, {	-- The Invasion Begins
 						["coord"] = { 22.0, 55.8, 672 },
 						["provider"] = { "n", 93011 },	-- Kayn Sunfury
-						["g"] = {
+						["groups"] = {
 							i(128953),	-- Treads of Illidari Supremacy
 							i(133317),	-- Treads of Illidari Supremacy
 						},
@@ -27,7 +27,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 28.5, 63.0, 672 },
 						["sourceQuests"] = { 40077 },	-- Treads of Illidari Supremacy
 						["provider"] = { "n", 98229 },	-- Kayn Sunfury
-						["g"] = {
+						["groups"] = {
 							mount(200175, {	-- Felsaber (MOUNT!)
 								["classes"] = { DEMONHUNTER },
 							}),
@@ -47,7 +47,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 33.9, 70.0, 672 },
 						["provider"] = { "n", 94410 },	-- Allari the Souleater
 						["sourceQuests"] = { 40378 },	-- Enter the Illidar: Ashtongue
-						["g"] = {
+						["groups"] = {
 							i(201989, {	-- Twisted Heart
 								["timeline"] = { ADDED_10_0_2_LAUNCH },
 							}),
@@ -57,7 +57,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 33.9, 70.0, 672 },
 						["sourceQuests"] = { 40378 },	-- Enter the Illidar: Ashtongue
 						["provider"] = { "n", 94410 },	-- Allari the Souleater
-						["g"] = {
+						["groups"] = {
 							i(128952),	-- Torment Ender's Chestguard
 							i(133312),	-- Torment Ender's Chestguard
 						},
@@ -75,7 +75,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 38.8, 60.6, 672 },
 						["provider"] = { "n", 93759 },	-- Jace Darkweaver
 						["sourceQuests"] = { 39050 },	-- Meeting With the Queen
-						["g"] = {
+						["groups"] = {
 							i(201989, {	-- Twisted Heart
 								["timeline"] = { ADDED_10_0_2_LAUNCH },
 							}),
@@ -85,7 +85,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 38.8, 60.6, 672 },
 						["sourceQuests"] = { 39050 },	-- Meeting With the Queen
 						["provider"] = { "n", 93759 },	-- Jace Darkweaver
-						["g"] = {
+						["groups"] = {
 							i(128951),	-- Leggings of Sacrifice
 							i(133316),	-- Leggings of Sacrifice
 						},
@@ -107,7 +107,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 64.0, 52.2, 672 },
 						["provider"] = { "n", 96436 },	-- Jace Darkweaver
 						["sourceQuests"] = { 39262 },	-- Give Me Sight Beyond Sight
-						["g"] = {
+						["groups"] = {
 							i(201989, {	-- Twisted Heart
 								["timeline"] = { ADDED_10_0_2_LAUNCH },
 							}),
@@ -117,7 +117,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 60.5, 44.8, 672 },
 						["sourceQuests"] = { 39495 },	-- Hidden No More
 						["provider"] = { "n", 96420 },	-- Cyana Nightglaive
-						["g"] = {
+						["groups"] = {
 							i(128950),	-- Demon-Rend Shoulderblades
 							i(133311),	-- Demon-Rend Shoulderblades
 						},
@@ -140,7 +140,7 @@ root(ROOTS.Zones, {
 							39495,	-- Hidden No More
 							38725,	-- Into the Foul Creche
 						},
-						["g"] = {
+						["groups"] = {
 							i(128954),	-- Power Handler's Gloves
 							i(133314),	-- Power Handler's Gloves
 						},
@@ -172,7 +172,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 69.9, 44.2, 672 },
 						["sourceQuests"] = { 39663 },	-- On Felbat Wings
 						["provider"] = { "n", 97297 },	-- Cyana Nightglaive
-						["g"] = {
+						["groups"] = {
 							i(128955),	-- The Brood Queen's Veil
 							i(133310),	-- The Brood Queen's Veil
 						},
@@ -181,7 +181,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 69.8, 37.9, 672 },
 						["sourceQuests"] = { 38728 },	-- The Keystone
 						["provider"] = { "n", 97303 },	-- Kayn Sunfury
-						["g"] = {
+						["groups"] = {
 							i(132243),	-- Fel-Etched Glaive
 						},
 					}),
@@ -190,14 +190,14 @@ root(ROOTS.Zones, {
 					n(97058, { -- Count Nefarious
 						["questID"] = 40231,	-- Nefarious Ring
 						["coord"] = { 63.7, 23.2, 672 },
-						["g"] = {
+						["groups"] = {
 							i(128948),	-- Nefarious Ring
 						},
 					}),
 					n(97370, {	-- General Volroth
 						["questID"] = 40234,
 						["coord"] = { 68.6, 27.6, 672 },
-						["g"] = {
+						["groups"] = {
 							i(128947),	-- Pit Lord's Cuffs
 							i(133313),	-- Pit Lord's Cuffs
 						},
@@ -205,14 +205,14 @@ root(ROOTS.Zones, {
 					n(97059, {	-- King Voras
 						["questID"] = 40232,
 						["coord"] = { 74.6, 57.5, 672 },
-						["g"] = {
+						["groups"] = {
 							i(128944),	-- Voras' Silk Drape
 						},
 					}),
 					n(97057, { -- Overseer Brutarg
 						["questID"] = 40233,	-- Brutarg's Sword Tip
 						["coord"] = { 81.1, 41.4, 672 },
-						["g"] = {
+						["groups"] = {
 							i(133580),	-- Brutarg's Sword Tip
 						},
 					}),
@@ -232,7 +232,7 @@ root(ROOTS.Zones, {
 						["questID"] = 39971,	-- Inquisitor's Menacing Eye
 						["coord"] = { 45.0, 77.9, 672 },
 						["icon"] = 308482,	-- Grey Treasure Chest
-						["g"] = {
+						["groups"] = {
 							i(129192),	-- Inquisitor's Menacing Eye
 						},
 					}),
@@ -258,7 +258,7 @@ root(ROOTS.Zones, {
 							{ 54.9, 58.7, 673 },
 						},
 						["icon"] = 308482,	-- Grey Treasure Chest
-						["g"] = {
+						["groups"] = {
 							i(128946),	-- Mardum Lord Signet
 						},
 					}),
@@ -298,7 +298,7 @@ root(ROOTS.Zones, {
 						["questID"] = 39975,	-- Vile Stalkerskin Pouch [28 Slot Bag]
 						["coord"] = { 73.5, 48.9, 672 },
 						["icon"] = 308482,	-- Grey Treasure Chest
-						["g"] = {
+						["groups"] = {
 							i(129195),	-- Vile Stalkerskin Pouch
 						},
 					}),
@@ -324,14 +324,14 @@ root(ROOTS.Zones, {
 						678,	-- Second Floor
 						679,	-- Third Floor
 					},
-					["g"] = {
+					["groups"] = {
 						n(QUESTS, {
 							q(38672, {	-- Breaking Out
 								["coord"] = { 80.1, 36.6, 677 },
 								["description"] = "Maiev upgrades your uncommon Illidari Glaives to these two glaives.",
 								["sourceQuests"] = { 38729 },	-- Return to the Black Temple
 								["provider"] = { "n", 92718 },	-- Maiev Shadowsong
-								["g"] = {
+								["groups"] = {
 									i(132243),	-- Fel-Etched Glaive
 									i(128956),	-- Fel-Etched Glaive
 								},
@@ -375,7 +375,7 @@ root(ROOTS.Zones, {
 								["coord"] = { 41.0, 47.1, 678 },
 								["provider"] = { "n", 96675 },	-- Allari the Souleater
 								["sourceQuests"] = { 39682 },	-- Grand Theft Felbat
-								["g"] = {
+								["groups"] = {
 									i(201989, {	-- Twisted Heart
 										["timeline"] = { ADDED_10_0_2_LAUNCH },
 									}),
@@ -385,7 +385,7 @@ root(ROOTS.Zones, {
 								["coord"] = { 41.0, 47.1, 678 },
 								["provider"] = { "n", 96675 },	-- Allari the Souleater
 								["sourceQuests"] = { 39682 },	-- Grand Theft Felbat
-								["g"] = {
+								["groups"] = {
 									i(201989, {	-- Twisted Heart
 										["timeline"] = { ADDED_10_0_2_LAUNCH },
 									}),
@@ -400,7 +400,7 @@ root(ROOTS.Zones, {
 								["coord"] = { 41.3, 47.3, 678 },
 								["sourceQuests"] = { 39682 },	-- Grand Theft Felbat
 								["provider"] = { "n", 97643 },	-- Kor'vas Bloodthorn
-								["g"] = {
+								["groups"] = {
 									i(128949),	-- Infernal Firecord Sash
 									i(133315),	-- Infernal Firecord Sash
 								},
@@ -419,7 +419,7 @@ root(ROOTS.Zones, {
 								["coord"] = { 24.4, 55.7, 679 },
 								["sourceQuests"] = { 39686 },	-- All The Way Up
 								["provider"] = { "n", 97644 },	-- Kor'vas Bloodthorn
-								["g"] = {
+								["groups"] = {
 									i(138970),	-- Helm of Reaffirmed Purpose
 									i(141650),	-- Helm of Reaffirmed Purpose
 								},
@@ -429,7 +429,7 @@ root(ROOTS.Zones, {
 								["provider"] = { "n", 97644 },	-- Kor'vas Bloodthorn
 								["races"] = { NIGHTELF },
 								["sourceQuests"] = { 40373 },	-- A New Direction
-								["g"] = {
+								["groups"] = {
 									i(201989, {	-- Twisted Heart
 										["timeline"] = { ADDED_10_0_2_LAUNCH },
 									}),
@@ -440,7 +440,7 @@ root(ROOTS.Zones, {
 								["provider"] = { "n", 97644 },	-- Kor'vas Bloodthorn
 								["races"] = { NIGHTELF },
 								["sourceQuests"] = { 40373 },	-- A New Direction
-								["g"] = {
+								["groups"] = {
 									i(201989, {	-- Twisted Heart
 										["timeline"] = { ADDED_10_0_2_LAUNCH },
 									}),
@@ -451,7 +451,7 @@ root(ROOTS.Zones, {
 								["provider"] = { "n", 97644 },	-- Kor'vas Bloodthorn
 								["races"] = { BLOODELF },
 								["sourceQuests"] = { 40373 },	-- A New Direction
-								["g"] = {
+								["groups"] = {
 									i(201989, {	-- Twisted Heart
 										["timeline"] = { ADDED_10_0_2_LAUNCH },
 									}),
@@ -462,7 +462,7 @@ root(ROOTS.Zones, {
 								["provider"] = { "n", 97644 },	-- Kor'vas Bloodthorn
 								["races"] = { BLOODELF },
 								["sourceQuests"] = { 40373 },	-- A New Direction
-								["g"] = {
+								["groups"] = {
 									i(201989, {	-- Twisted Heart
 										["timeline"] = { ADDED_10_0_2_LAUNCH },
 									}),
@@ -483,14 +483,14 @@ root(ROOTS.Zones, {
 							n(96997, {	-- Kethrazor
 								["questID"] = 40251,	-- Inquisitor's Glowering Eye
 								["coord"] = { 49.5, 32.8, 677 },
-								["g"] = {
+								["groups"] = {
 									i(128945),	-- Inquisitor's Glowering Eye
 								},
 							}),
 							n(97069, {	-- Wrath-Lord Lekos
 								["questID"] = 40301,	-- Lekos' Leash
 								["coord"] = { 69.1, 27.6, 677 },
-								["g"] = {
+								["groups"] = {
 									i(128958),	-- Lekos' Leash
 								},
 							}),

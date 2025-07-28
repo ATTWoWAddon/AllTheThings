@@ -468,7 +468,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			-- #else
 			["description"] = "Rewarded for completing a random mop dungeon during leveling or completing a random mop timewalking dungeon.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
 			-- #endif
-			["g"] = {
+			["groups"] = {
 				i(113757),	-- Band of Directed Fury
 				i(113788),	-- Blossoming Belt*
 				i(113764),	-- Blossoming Cap*
@@ -512,7 +512,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 		i(114662, {	-- Tranquil Satchel of Helpful Goods 85-87, 88-90
 			["u"] = REMOVED_FROM_GAME,
 			["description"] = "Rewarded for completing a random Mists of Pandaria dungeon in the level 85-89 range.",	-- Saying 89, because at level 90 you can no longer queue for this.
-			["g"] = {
+			["groups"] = {
 				i(113788),	-- Blossoming Belt
 				i(113764),	-- Blossoming Cap
 				i(113787),	-- Blossoming Slippers
@@ -540,7 +540,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 		i(114669, {	-- Tranquil Satchel of Helpful Goods 88-90
 			["u"] = REMOVED_FROM_GAME,
 			["description"] = "Rewarded for completing a random Mists of Pandaria dungeon in the level 88-89 range.",	-- Again, saying 89 because at level 90 you can no longer queue for this.
-			["g"] = {
+			["groups"] = {
 				i(113757),	-- Band of Directed Fury
 				i(113766),	-- Blossoming Gloves
 				i(113767),	-- Blossoming Mantle
@@ -563,10 +563,10 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(113750),	-- Kyparite Shoulderguards
 			},
 		}),
-		i(98133, {	-- Greater Cache of Treasures
+		i(89613, {	-- Cache of Treasures [Looks like this was deprecated in favor of #92813)
 			["timeline"] = {
-				ADDED_5_3_0,
-				REMOVED_9_0_1,	-- no longer available to queue random scenarios post 9.0 squish
+				ADDED_5_0_4,
+				REMOVED_5_1_0,
 			},
 		}),
 		i(92813, {	-- Greater Cache of Treasures [Looks like this was deprecated in favor of #98133)
@@ -575,10 +575,10 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				REMOVED_5_3_0,
 			},
 		}),
-		i(89613, {	-- Cache of Treasures [Looks like this was deprecated in favor of #92813)
+		i(98133, {	-- Greater Cache of Treasures
 			["timeline"] = {
-				ADDED_5_0_4,
-				REMOVED_5_1_0,
+				ADDED_5_3_0,
+				REMOVED_9_0_1,	-- no longer available to queue random scenarios post 9.0 squish
 			},
 		}),
 		i(98134, {	-- Heroic Cache of Treasures
@@ -621,7 +621,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		}),
 		i(122607, bubbleDownSelf({ ["timeline"] = { ADDED_6_1_0, REMOVED_6_2_0 } }, {	-- Savage Satchel of Cooperation
-			["g"] = {
+			["groups"] = {
 				i(122633, {	-- Shared Turbulent Armament
 					i(115319),	-- Turbulent Axe
 					i(115322),	-- Turbulent Dagger
@@ -705,7 +705,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			},
 		})),
 		i(128803, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_0, REMOVED_7_0_3 } }, {	-- Savage Satchel of Cooperation
-			["g"] = {
+			["groups"] = {
 				i(127799, {	-- Baleful Pendant
 					i(124612),	-- Discordant Amulet
 					i(124611),	-- Discordant Collar
@@ -839,7 +839,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_9_0_1 } }, {
 		q(51370, {	-- Short-Supply Reward
 			["repeatable"] = true,
-			["g"] = {
+			["groups"] = {
 				i(160054),	-- War-Torn Satchel of Cooperation
 			},
 		}),
@@ -855,7 +855,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		q(83023, {	-- Short-Supply Reward
 			["repeatable"] = true,
-			["g"] = {
+			["groups"] = {
 				i(224573, {	-- Crystal Satchel of Cooperation
 					i(224572),	-- Crystallized Augment Rune
 				}),

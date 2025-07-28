@@ -12,15 +12,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 
 			n(OUTPOSTS, {
 				["description"] = "Horde Outposts allow you to set up additional bases in Kul Tiras.  You can buy Scouting Reports from Ransa, the vendor next to The Banshee's Wail.  Each one will start a mission on your Mission Command Table.  After you complete the initial questline, you'll be offered additional missions to upgrade your outposts.",
-				["g"] = {
+				["groups"] = {
 					i(165728, {	-- Outpost Upgrade: The Great Seal (CI!)
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 						["filterID"] = CONSUMABLES,
-						["g"] = {
+						["groups"] = {
 							mi(2106, {	-- Upgrade: The Great Seal
 								["races"] = HORDE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(54225, {	-- Mission Report: The Great Seal
 										["provider"] = { "n", 138706 },	-- Mission Command Table
 										["races"] = HORDE_ONLY,
@@ -40,10 +40,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["g"] = {
+						["groups"] = {
 							mi(2108, {	-- Upgrade: Vulpera Hideaway
 								["races"] = HORDE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(54258, {	-- Mission Report: Vulpera Hideaway
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["races"] = HORDE_ONLY,
@@ -63,10 +63,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["g"] = {
+						["groups"] = {
 							mi(2107, {	-- Upgrade: Zul'jan Ruins
 								["races"] = HORDE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(54239, {	-- Mission Report: Zul'jan Ruins
 										["provider"] = { "n", 138704 },		-- Mission Command Table
 										["races"] = HORDE_ONLY,
@@ -86,15 +86,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["g"] = {
+						["groups"] = {
 							mi(1967, {	-- Hillcrest Pasture
 								["races"] = HORDE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(52478, {	-- Mission Report: Hillcrest Pasture
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
-										["g"] = {
+										["groups"] = {
 											i(162123),	-- Mission Report (QI!)
 										},
 									}),
@@ -112,15 +112,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["g"] = {
+						["groups"] = {
 							mi(1965, {	-- Mudfisher Cove
 								["races"] = HORDE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(52313, {	-- Mission Report: Mudfisher Cove
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
-										["g"] = {
+										["groups"] = {
 											i(161482),	-- Mudfisher Cove
 											i(161484),	-- Mission Report (QI!)
 										},
@@ -136,12 +136,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							mi(2095, {	-- Wicker Defense
 								["sourceQuests"] = { 52314 },	-- Mudfisher Cove
 								["races"] = HORDE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(53125, {	-- Mission Report: Into The Wicker (Per Character)
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
-										["g"] = {
+										["groups"] = {
 											i(163334),	-- Outpost Upgrade
 											i(163335),	-- Mission Report (QI!)
 										},
@@ -160,15 +160,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["g"] = {
+						["groups"] = {
 							mi(1963, {	-- Stonefist Watch
 								["races"] = HORDE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(52221, {	-- Mission Report: Stonefist Watch
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
-										["g"] = {
+										["groups"] = {
 											i(161386),	-- Mission Report (QI!)
 										},
 									}),
@@ -183,12 +183,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							mi(2092, {	-- Spare Parts
 								["sourceQuests"] = { 52222 },	-- Stonefist Watch
 								["races"] = HORDE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(53081, {	-- Mission Report: Spare Parts (Per Character)
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
-										["g"] = {
+										["groups"] = {
 											i(163184),	-- Outpost Upgrade
 											i(163185),	-- Mission Report (QI!)
 										},
@@ -207,15 +207,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["g"] = {
+						["groups"] = {
 							mi(2067, {	-- Stonetusk Watch
 								["races"] = HORDE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(52776, {	-- Mission Report: Stonetusk Watch
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["races"] = HORDE_ONLY,
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
-										["g"] = {
+										["groups"] = {
 											i(162511),	-- Stonetusk Watch
 											i(162512),	-- Mission Report (QI!)
 										},
@@ -231,12 +231,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							mi(2093, {	-- Giant Slaying
 								["sourceQuests"] = { 52777 },	-- Stonetusk Watch
 								["races"] = HORDE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(53100, {	-- Mission Report: Giant Slaying (Per Character)
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
-										["g"] = {
+										["groups"] = {
 											i(163190),	-- Outpost Upgrade
 											i(163191),	-- Mission Report (QI!)
 										},
@@ -255,15 +255,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1560, 50 }, },	-- 50x War Resources
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["g"] = {
+						["groups"] = {
 							mi(1964, {	-- Swiftwind Post
 								["races"] = HORDE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(52275, {	-- Mission Report: Swiftwind Post
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["races"] = HORDE_ONLY,
 										["coord"] = { 51.59, 99.58, DAZARALOR },	-- The Banshee's Wail Location
-										["g"] = {
+										["groups"] = {
 											i(165362),	-- Swiftwind Post
 											i(161483),	-- Mission Report (QI!)
 										},
@@ -279,12 +279,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							mi(2094, {	-- Nature Calls
 								["sourceQuests"] = { 52276 },	-- Swiftwind Post
 								["races"] = HORDE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(53102, {	-- Mission Report: Nature Calls (Per Character)
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["races"] = HORDE_ONLY,
 										["coord"] = { 51.59, 99.58, DAZARALOR },	-- The Banshee's Wail Location
-										["g"] = {
+										["groups"] = {
 											i(163194),	-- Mission Report (QI!)
 										},
 									}),
@@ -302,15 +302,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["g"] = {
+						["groups"] = {
 							mi(1966, {	-- Windfall Cavern
 								["races"] = HORDE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(52319, {	-- Mission Report: Windfall Cavern
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
-										["g"] = {
+										["groups"] = {
 											i(161487),	-- Windfall Cavern
 											i(161488),	-- Mission Report (QI!)
 										},
@@ -329,16 +329,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1560, 50 }, },	-- 50x War Resources
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["g"] = {
+						["groups"] = {
 						--	initial outpost setup
 							mi(1880, {	-- Wolf's Den
 								["races"] = HORDE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(52005, {	-- Mission Report: Wolf's Den
 										["provider"] = { "n", 138704 },		-- Mission Command Table
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
-										["g"] = {
+										["groups"] = {
 											i(161152),	-- Mission Report (QI!)
 										},
 									}),
@@ -354,12 +354,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 								["sourceQuests"] = { 52127 },	-- Wolf's Den
 								["races"] = HORDE_ONLY,
 								["cr"] = 138706,	-- Mission Command Table
-								["g"] = {
+								["groups"] = {
 									q(53151, {	-- Mission Report: Wolves For The Den
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["races"] = HORDE_ONLY,
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
-										["g"] = {
+										["groups"] = {
 											i(163519),	-- Mission Report (QI!)
 										},
 									}),
@@ -388,7 +388,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 44.9, 39.6, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 137818 },	-- Myxle "The Searat" Gutwrench
-				["g"] = {
+				["groups"] = {
 					h(ach(13056)),	-- Giving a Scrap (H)
 					i(160266),	-- Scrapped Cloth (QI!)
 					i(160267),	-- Tattered Pants (QI!)
@@ -409,7 +409,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 132989 },	-- Blind Tra'wala
 				["coord"] = { 53.6, 9.4, DAZARALOR },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156839),	-- Pack of Pterrordax Snacks (QI!)
 				},
 			}),
@@ -433,7 +433,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 50.0, 84.9, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 135441 },	-- Zolani
-				["g"] = {
+				["groups"] = {
 					i(160107),	-- Amani Head (QI!)
 					i(158898),	-- Sandfury Head (QI!)
 					i(155305),	-- Golden City Greatcloak
@@ -448,7 +448,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 46.0, 13.0, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 126560 },	-- Wardruid Loti
-				["g"] = {
+				["groups"] = {
 					i(159102),	-- Raal's Spare Hexxer
 					i(159100),	-- Crimson Cultist Scepter
 					i(159099),	-- Pa'ku Adherent's Talons
@@ -487,7 +487,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126560 },	-- Wardruid Loti
 				["coord"] = { 45.0, 23.9, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(152627),	-- Loti's Totem (QI!)
 				},
 			}),
@@ -516,7 +516,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 126334 },	-- Jani <Loa of Scavengers>
 				["cost"] = { { "i", 168970, 1 } },	-- Trashmaster's Mantle
-				["g"] = {
+				["groups"] = {
 					i(169394),	-- Richly Appointed Drape
 					title(324),	-- Trashmaster
 				},
@@ -614,7 +614,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 50.0, 84.9, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 126684 },	-- Yazma
-				["g"] = {
+				["groups"] = {
 					i(152184),	-- Tongue of Gahz'ragon (QI!)
 				},
 			}),
@@ -629,7 +629,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["coord"] = { 39.4, 13.8, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158399),	-- Rastari Wargreaves
 					i(158400),	-- Zanchuli Leggings
 					i(158401),	-- Torcalin Breeches
@@ -651,7 +651,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 124629 },	-- Kaza'jin the Wavebinder
 				["coord"] = { 42.6, 21.4, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156923),	-- Fetish of Loti (QI!)
 				},
 			}),
@@ -682,7 +682,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 51.5, 31.8, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 122817 },	-- Bladeguard Kaja
-				["g"] = {
+				["groups"] = {
 					i(179384),	-- Chain of Exemption (Added in SL)
 				},
 			}),
@@ -812,7 +812,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126148 },	-- Witch Doctor Jala
 				["coord"] = { 44.3, 82.1, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(152461),	-- Dark Fetishes (QI!)
 				},
 			}),
@@ -843,7 +843,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 50.0, 84.7, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 126684 },	-- Yazma
-				["g"] = {
+				["groups"] = {
 					i(152101),	-- The Word of Zul (QI!)
 				},
 			}),
@@ -970,7 +970,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126549 },
 				["coord"] = { 51.6, 41.2, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(179383),	-- Royal Zandalari Pendant
 				},
 			}),
@@ -979,7 +979,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126564 },	-- Hexlord Raal
 				["coord"] = { 51.8, 11.9, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155246),	-- Jambani Grips
 					i(155266),	-- Jambani Waistwrap
 					i(155247),	-- Rastari Gauntlets
@@ -1017,7 +1017,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135690 },	-- Dread-Admiral Tattersail
 				["coord"] = { 58.4, 62.9, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					follower(1182),	-- Dread-Admiral Tattersail
 				},
 			}),
@@ -1043,7 +1043,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["description"] = "Reaching Level 30 will make this quest pop up.",
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_10_1_5 },
-				["g"] = {
+				["groups"] = {
 					i(206566),	-- Scarlet Pterrordax (MOUNT!)
 				},
 			}),

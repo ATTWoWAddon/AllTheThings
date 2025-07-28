@@ -392,7 +392,7 @@ root(ROOTS.Zones, {
 							{ 54.6, 63.6, HELLFIRE_PENINSULA },
 							{ 56.6, 37.2, HELLFIRE_PENINSULA },
 						},
-						["g"] = TBC_TAILORING,
+						["groups"] = TBC_TAILORING,
 					}),
 				}),
 				n(QUESTS, {
@@ -460,7 +460,7 @@ root(ROOTS.Zones, {
 									{ "i",  23343 },	-- Torn Pilgrim's Pack
 									{ "o", 184478 },	-- Torn Pilgrim's Pack
 								},
-								["coord"] = { 22.1, 68.5, HELLFIRE_PENINSULA }
+								["coord"] = { 22.1, 68.5, HELLFIRE_PENINSULA },
 							}),
 							i(25783),	-- Pilgrim's Cover
 							i(25781),	-- Segmented Breastplate
@@ -501,7 +501,7 @@ root(ROOTS.Zones, {
 									{ "i",  29501 },	-- Sha'naar Key
 									{ "o", 184466 },	-- Metal Coffer
 								},
-								["coord"] = { 14.3, 63.5, HELLFIRE_PENINSULA }
+								["coord"] = { 14.3, 63.5, HELLFIRE_PENINSULA },
 							}),
 						},
 					}),
@@ -612,8 +612,8 @@ root(ROOTS.Zones, {
 						["qg"] = 16793,	-- Magistrix Carinda
 						["sourceQuest"] = 9374,	-- Arelion's Journal
 						["coord"] = { 26.3, 60.3, HELLFIRE_PENINSULA },
-						["cr"] = 20159,	-- Magister Aledis
 						["races"] = HORDE_ONLY,
+						["cr"] = 20159,	-- Magister Aledis
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),
 					q(10288, {	-- Arrival in Outland [Alliance]
@@ -727,10 +727,10 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_FIVE, q(11516, {	-- Blast the Gateway
 						["qg"] = 24937,	-- Magistrix Seyla
 						["sourceQuest"] = 11526,	-- The Missing Magistrix
-						["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 						["coord"] = { 58.2, 17.6, HELLFIRE_PENINSULA },
-						["lvl"] = lvlsquish(70, 70, 25),
+						["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 						["isDaily"] = true,
+						["lvl"] = lvlsquish(70, 70, 25),
 						["groups"] = {
 							objective(1, {	-- 0/1 Legion Gateway Destroyed
 								["provider"] = { "i", 34253 },	-- Sizzling Embers
@@ -745,10 +745,10 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_FIVE, q(11515, {	-- Blood for Blood
 						["qg"] = 24937,	-- Magistrix Seyla
 						["sourceQuest"] = 11526,	-- The Missing Magistrix
-						["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 						["coord"] = { 58.2, 17.6, HELLFIRE_PENINSULA },
-						["lvl"] = lvlsquish(70, 70, 25),
+						["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 						["isDaily"] = true,
+						["lvl"] = lvlsquish(70, 70, 25),
 						["groups"] = appendGroups(BLOOD_FOR_BLOOD_GROUPS, {
 							objective(1, {	-- 0/1 Emaciated Felblood slain
 								["provider"] = { "i", 34257 },	-- Fel Siphon
@@ -983,6 +983,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22430,	-- Assistant Klatu
 						["sourceQuest"] = 10903,	-- Return to Honor Hold
 						["coord"] = { 54.3, 63.6, HELLFIRE_PENINSULA },
+						["description"] = "You can forego interacting with Warrant Officer Tracy Proudwell and go directly to the given coordinates.",
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
@@ -995,7 +996,6 @@ root(ROOTS.Zones, {
 							}),
 							i(31799),	-- Fei Fei Doggy Treat
 						},
-						["description"] = "You can forego interacting with Warrant Officer Tracy Proudwell and go directly to the given coordinates.",
 					}),
 					q(10144, {	-- Disrupt Their Reinforcements [Alliance]
 						["qg"] = 19310,	-- Forward Commander Kingston
@@ -1175,16 +1175,16 @@ root(ROOTS.Zones, {
 							{ "o", 185302 },	-- Fei Fei's Cache
 						},
 						["sourceQuest"] = 10903,	-- Return to Honor Hold
+						["coord"] = { 56.4, 62.9, HELLFIRE_PENINSULA },
 						-- #if BEFORE WRATH
 						["description"] = "In order to finish this, you need to talk to the Warrant Officer. After the dialog You're given the option to buy a 'Fei Fei Doggy Treat' for:\nSparkling Zircon: Gem vendor in the Inn\nMaiden's Anguish: Grand Master Alchemist or Reagent vendor in the tower.\nSilken Thread: Upstairs in the inn from the Grand Master Tailor",
 						-- #else
 						["description"] = "In order to finish this, you need to talk to the Warrant Officer. After the dialog You're given the option to buy a 'Fei Fei Doggy Treat' for a Silken Thread.\n\nSilken Thread can be found upstairs in the inn from the Grand Master Tailor.",
 						-- #endif
-						["coord"] = { 56.4, 62.9, HELLFIRE_PENINSULA },
-						["races"] = ALLIANCE_ONLY,
 						["cost"] = {
 							{ "i", 31799, 1 },	-- Fei Fei Doggy Treat
 						},
+						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
@@ -1683,8 +1683,8 @@ root(ROOTS.Zones, {
 						},
 						["sourceQuest"] = 10288,	-- Arrival in Outland
 						["coord"] = { 87.3, 52.4, HELLFIRE_PENINSULA },
-						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(10289, {	-- Journey to Thrallmar
@@ -1694,8 +1694,8 @@ root(ROOTS.Zones, {
 						},
 						["sourceQuest"] = 10120,	-- Arrival in Outland
 						["coord"] = { 87.3, 48.1, HELLFIRE_PENINSULA },
-						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(10159, {	-- Keep Thornfang Hill Clear!
@@ -3452,7 +3452,7 @@ root(ROOTS.Zones, {
 					n(17657, {	-- Logistics Officer Ulrike <Honor Hold Quartermaster>
 						["coord"] = { 56.6, 62.6, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = bubbleDownClassicRep(FACTION_HONOR_HOLD, {
+						["groups"] = bubbleDownClassicRep(FACTION_HONOR_HOLD, {
 							{		-- Neutral
 							}, {	-- Friendly
 								i(23142),	-- Design: Regal Deep Peridot (Cata+) / Design: Enduring Deep Peridot (TBC) (RECIPE!)

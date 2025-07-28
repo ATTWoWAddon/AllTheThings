@@ -340,11 +340,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26019, {	-- Enormous Eel Egg (A)
 							["provider"] = { "i", 56571 },	-- Enormous Eel Egg
 							["sourceQuest"] = 26015,	-- Phosphora Hunting
+							["races"] = ALLIANCE_ONLY,
 							["crs"] = {
 								41925,	-- Coldlight Hunters
 								41926,	-- Coldlight Oracles
 							},
-							["races"] = ALLIANCE_ONLY,
 						}),
 						q(26122, {	-- Environmental Awareness
 							["qg"] = 41669,	-- Fiasco Sizzlegrin
@@ -444,11 +444,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26090, {	-- I Brought You This Egg
 							["provider"] = { "i", 56570 },	-- Enormous Eel Egg
 							["sourceQuest"] = 26087,	-- "Glow-Juice"
+							["races"] = HORDE_ONLY,
 							["crs"] = {
 								41925,	-- Coldlight Hunters
 								41926,	-- Coldlight Oracles
 							},
-							["races"] = HORDE_ONLY,
 						}),
 						q(26072, {	-- Into the Totem
 							["qg"] = 41600,	-- Erunak Stonespeaker
@@ -516,7 +516,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(59649),	-- Chum-Coated Robes
 								i(59648),	-- Handguards of the Severed Starfish
 								i(59647),	-- Captain Verne's Splitter
-							}
+							},
 						}),
 						q(26015, {	-- Phosphora Hunting
 							["qg"] = 41910,	-- Humphrey Digsong
@@ -537,8 +537,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 57102 },	-- Twilight Cage Key
 							["sourceQuest"] = 26140,	-- Communing with the Ancient
 							["description"] = "Only drops when the |cFFFFD700Ascend No More!|r quest has been accepted or completed.",
-							["crs"] = { 41652 },	-- Twilight Champion
 							["races"] = ALLIANCE_ONLY,
+							["crs"] = { 41652 },	-- Twilight Champion
 							["groups"] = {
 								objective(1, {	-- 0/5 Alliance Prisoners rescued
 									["provider"] = { "o", 203705 },	-- Cage
@@ -552,8 +552,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 57118 },	-- Twilight Cage Key
 							["sourceQuest"] = 26140,	-- Communing with the Ancient
 							["description"] = "Only drops when the |cFFFFD700Ascend No More!|r quest has been accepted or completed.",
-							["crs"] = { 41652 },	-- Twilight Champion
 							["races"] = HORDE_ONLY,
+							["crs"] = { 41652 },	-- Twilight Champion
 							["groups"] = {
 								objective(1, {	-- 0/5 Horde Prisoners rescued
 									["provider"] = { "o", 203709 },	-- Cage
@@ -643,8 +643,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 41663,	-- Captain "Jewels" Verne
 							["coord"] = { 51.4, 61.5, VASHJIR_ABYSSAL_DEPTHS },
 							["description"] = "This version is provided if you abandon the quest granted by killing an |cFFFFD700Alliance Sea-Scout|r.",
-							-- Completed 26105,26121,26124 as well
 							["races"] = HORDE_ONLY,
+							-- Completed 26105,26121,26124 as well
 							["groups"] = {
 								objective(1, {	-- 0/7 Alliance Sea-Scout slain
 									["provider"] = { "n", 42114 },	-- Alliance Sea-Scout
@@ -703,8 +703,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26126, {	-- The Perfect Fuel
 							["qg"] = 41669,	-- Fiasco Sizzlegrin
 							["sourceQuest"] = 26122,	-- Environmental Awareness
-							["description"] = "2 Remora, 3 Hammerhead",
 							["coord"] = { 51.4, 60.7, VASHJIR_ABYSSAL_DEPTHS },
+							["description"] = "2 Remora, 3 Hammerhead",
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(59643),	-- Gloves of Delicate Mixture
@@ -892,7 +892,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["coord"] = { 53.6, 57.6, VASHJIR_KELPTHAR_FOREST },
 									["cr"] = 41018,	-- King Gurboggle
 								}),
-							}
+							},
 						}),
 						q(25471, {	-- Across the Great Divide
 							["qg"] = 41341,	-- Erunak Stonespeaker
@@ -935,7 +935,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["coord"] = { 49.6, 43.0, VASHJIR_KELPTHAR_FOREST },
 									["cr"] = 39918,	-- Clacksnap Pincer
 								}),
-							}
+							},
 						}),
 						q(25598, {	-- Ain't Too Proud to Beg
 							["qg"] = 39883,	-- Adarrah
@@ -1133,7 +1133,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "n", 41340 },	-- Private Pollard
 									["coord"] = { 63.8, 59.8, VASHJIR_KELPTHAR_FOREST },
 								}),
-							}
+							},
 						}),
 						q(26007, {	-- Debriefing (H)
 							["qg"] = 41341,	-- Erunak Stonespeaker
@@ -1145,7 +1145,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "n", 41885 },	-- Gurrok
 									["coord"] = { 63.8, 59.8, VASHJIR_KELPTHAR_FOREST },
 								}),
-							}
+							},
 						}),
 						q(25743, {	-- Decisions, Decisions
 							["qg"] = 46458,	-- Budd
@@ -1257,13 +1257,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isBreadcrumb"] = true,
 						}),
 						q(25946, {	-- Helm's Deep
-							["icon"] = 133151,
 							["sourceQuests"] = {
 								25942,	-- Buy Us Some Time
 								27668,	-- Pay Attention
 								25943,	-- Traveling on Our Stomachs
 							},
 							["coord"] = { 38.8, 26.7, VASHJIR_KELPTHAR_FOREST },
+							["icon"] = 133151,
 							["races"] = HORDE_ONLY,
 						}),
 						heroscall(q(27724, {	-- Hero's Call: Vashj'ir!
@@ -1341,11 +1341,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(27729, {	-- Once More, With Eeling
-							["description"] = "Granted automatically from killing any eel.",
-							["providers"] = {
-								{ "n", 40855},	-- Slitherfin Eel
-								{ "n", 41002},	-- Slickskin Eel
+							["qgs"] = {
+								4085,	-- Slitherfin Eel
+								4100,	-- Slickskin Eel
 							},
+							["description"] = "Granted automatically from killing any eel.",
 							["groups"] = {
 								objective(1, {	-- 0/8 Disgusting Eels Justifiably Slain
 									["providers"] = {
@@ -1416,13 +1416,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								objective(1, {	-- 0/3 Saltwater Starfish
 									["providers"] = {
-										{ "i", 54828 },	-- Saltwater Starfish
+										{ "i",  54828 },	-- Saltwater Starfish
 										{ "o", 205989 },	-- Saltwater Star
-							},
+									},
 								}),
 								objective(2, {	-- 0/1 Conch Shell
 									["providers"] = {
-										{ "i", 52504 },	-- Conch Shell
+										{ "i",  52504 },	-- Conch Shell
 										{ "o", 202560 },	-- Conch Shell
 									},
 								}),
@@ -1436,22 +1436,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								objective(1, {	-- 0/3 Saltwater Starfish
 									["providers"] = {
-										{ "i", 54828 },	-- Saltwater Starfish
+										{ "i",  54828 },	-- Saltwater Starfish
 										{ "o", 205989 },	-- Saltwater Star
-							},
+									},
 								}),
 								objective(2, {	-- 0/1 Conch Shell
 									["providers"] = {
-										{ "i", 52504 },	-- Conch Shell
+										{ "i",  52504 },	-- Conch Shell
 										{ "o", 202560 },	-- Conch Shell
 									},
 								}),
 							},
 						}),
 						q(27699, {	-- Shark Weak
-							["description"] = "If you abandon this quest, leave the area and swim back to the boat. You must NOT use a mount.",
 							["sourceQuest"] = 25657,	-- Dah, Nunt.. Dah, Nunt...
 							["coord"] = { 58.3, 48.8, VASHJIR_KELPTHAR_FOREST },
+							["description"] = "If you abandon this quest, leave the area and swim back to the boat. You must NOT use a mount.",
 							["groups"] = {
 								objective(1, {	-- 0/5 Gnaws' Tooth
 									["providers"] = {
@@ -2152,8 +2152,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25750, {	-- Curious Distraction (A)
-							["u"] = REMOVED_FROM_GAME,
 							["races"] = ALLIANCE_ONLY,
+							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {	-- rewards were moved to another quest so they're still collectible
 								objective(1, {	-- 0/1 Messy Rubbing
 									["provider"] = { "o", 203210 },	-- Highborne Tablet
@@ -2173,8 +2173,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25961, {	-- Curious Distraction (H)
-							["u"] = REMOVED_FROM_GAME,
 							["races"] = HORDE_ONLY,
+							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {	-- rewards were moved to another quest so they're still collectible
 								objective(1, {	-- 0/1 Messy Rubbing
 									["provider"] = { "o", 203210 },	-- Highborne Tablet
@@ -2297,8 +2297,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(25629, {	-- Her Lady's Hand
 							["qg"] = 42077,	-- Lady Naz'jar
 							["sourceQuest"] = 25973,	-- Welcome News
-							["description"] = "Must be on |cFFFFD700Visions of the Past: Rise from the Deep|r to accept this quest.",
 							["coord"] = { 33.1, 75.9, VASHJIR_SHIMMERING_EXPANSE },
+							["description"] = "Must be on |cFFFFD700Visions of the Past: Rise from the Deep|r to accept this quest.",
 						}),
 						q(25898, {	-- Honor and Privilege (A)
 							["qg"] = 41535,	-- Engineer Hexascrub
@@ -3098,7 +3098,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 34.7, 75, VASHJIR_SHIMMERING_EXPANSE },
 							["cost"] = {{"i",187662,1}},	-- Strange Goop
 							["timeline"] = { ADDED_9_2_5 },
-							["g"] = {
+							["groups"] = {
 								i(187916),	-- Coilclutch Vine
 							},
 						}),

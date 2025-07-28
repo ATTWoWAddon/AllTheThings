@@ -31,8 +31,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 								{ 38.3, 19.1, EVERSONG_WOODS },
 								-- #endif
 							},
-							["races"] = { BLOODELF },
 							["timeline"] = { ADDED_1_12_1, REMOVED_6_0_2 },
+							["races"] = { BLOODELF },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- 0/6 Arcane Sliver
@@ -47,8 +47,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						q(37440, {	-- A Fistful of Slivers
 							["qg"] = 15296,	-- Arcanist Ithanas
-							["sourceQuest"] = 8326,	-- Unfortunate Measures
 							["altQuests"] = { 8336 },	-- A Fistful of Slivers (original)
+							["sourceQuest"] = 8326,	-- Unfortunate Measures
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 61.8, 39.4, SUNSTRIDER_ISLE },
@@ -56,8 +56,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 								{ 38.3, 19.1, EVERSONG_WOODS },
 								-- #endif
 							},
-							["races"] = { BLOODELF },
 							["timeline"] = { ADDED_6_0_2 },
+							["races"] = { BLOODELF },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- 0/6 Arcane Sliver
@@ -345,9 +345,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						q(31170, {	-- Monk Training
 							["qg"] = 15278,	-- Magistrix Erona
 							["coord"] = { 61.0, 45.1, SUNSTRIDER_ISLE },
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["races"] = { BLOODELF },
 							["classes"] = { MONK },
-							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						}),
 						q(9676, {	-- Paladin Training
 							["qg"] = 15278,	-- Magistrix Erona
@@ -444,8 +444,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38.8, 19.4, EVERSONG_WOODS },
 							-- #endif
-							["races"] = { BLOODELF },
 							["timeline"] = { ADDED_1_12_1, REMOVED_6_0_2 },
+							["races"] = { BLOODELF },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- Solanian's Scrying Orb
@@ -492,15 +492,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						q(37443, {	-- Solanian's Belongings
 							["qg"] = 15295,	-- Well Watcher Solanian
-							["sourceQuest"] = 8326,	-- Unfortunate Measures
 							["altQuests"] = { 8330 },	-- Solanian's Belongings (original)
+							["sourceQuest"] = 8326,	-- Unfortunate Measures
 							-- #if AFTER LEGION
 							["coord"] = { 64.0, 42.6, SUNSTRIDER_ISLE },
 							-- #else
 							["coord"] = { 38.8, 19.4, EVERSONG_WOODS },
 							-- #endif
-							["races"] = { BLOODELF },
 							["timeline"] = { ADDED_6_0_2 },
+							["races"] = { BLOODELF },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- Solanian's Scrying Orb
@@ -572,8 +572,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38.8, 19.4, EVERSONG_WOODS },
 							-- #endif
-							["races"] = { BLOODELF },
 							["timeline"] = { ADDED_1_12_1, REMOVED_6_0_2 },
+							["races"] = { BLOODELF },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- Shrine of Dath'Remar Read
@@ -588,15 +588,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						q(37442, {	-- The Shrine of Dath'Remar
 							["qg"] = 15295,	-- Well Watcher Solanian
-							["sourceQuest"] = 8326,	-- Unfortunate Measures
 							["altQuests"] = { 8345 },	-- The Shrine of Dath'Remar (original)
+							["sourceQuest"] = 8326,	-- Unfortunate Measures
 							-- #if AFTER LEGION
 							["coord"] = { 64.0, 42.6, SUNSTRIDER_ISLE },
 							-- #else
 							["coord"] = { 38.8, 19.4, EVERSONG_WOODS },
 							-- #endif
-							["races"] = { BLOODELF },
 							["timeline"] = { ADDED_6_0_2 },
+							["races"] = { BLOODELF },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- Shrine of Dath'Remar Read
@@ -617,8 +617,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 37.2, 19, EVERSONG_WOODS },
 							-- #endif
-							["races"] = { BLOODELF },
 							["timeline"] = { ADDED_1_12_1, REMOVED_6_0_2 },
+							["races"] = { BLOODELF },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								-- #if BEFORE CATA
@@ -637,15 +637,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						q(37439, {	-- Thirst Unending
 							["qg"] = 15297,	-- Arcanist Helion
-							["sourceQuest"] = 8326,	-- Unfortunate Measures
 							["altQuests"] = { 8346 },	-- Thirst Unending (original)
+							["sourceQuest"] = 8326,	-- Unfortunate Measures
 							-- #if AFTER LEGION
 							["coord"] = { 58.6, 38.8, SUNSTRIDER_ISLE },
 							-- #else
 							["coord"] = { 37.2, 19, EVERSONG_WOODS },
 							-- #endif
-							["races"] = { BLOODELF },
 							["timeline"] = { ADDED_6_0_2 },
+							["races"] = { BLOODELF },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								i(20999),	-- Green Chain Gauntlets
@@ -659,9 +659,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						q(31171, {	-- Tiger Palm
 							["qg"] = 63332,	-- Pao
 							["coord"] = { 63.6, 42.6, SUNSTRIDER_ISLE },
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["races"] = { BLOODELF },
 							["classes"] = { MONK },
-							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						}),
 						q(8326, {	-- Unfortunate Measures
 							["qg"] = 15278,	-- Magistrix Erona
@@ -1172,8 +1172,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 15403,	-- Aeldon Sunbrand
 					["sourceQuest"] = 8463,	-- Unstable Mana Crystals
 					["coord"] = { 48.1, 46.0, EVERSONG_WOODS },
-					["cr"] = 15968,	-- Darnassian Scout
 					["races"] = HORDE_ONLY,
+					["cr"] = 15968,	-- Darnassian Scout
 					["lvl"] = lvlsquish(5, 5, 1),
 					["groups"] = {
 						objective(1, {	-- Intruder Defeated
@@ -1356,9 +1356,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["description"] = "This quest is automatically offered to Blood Elves upon reaching the specified level.",
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["races"] = { BLOODELF },
-					["DisablePartySync"] = true,
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(20, 20, 10),
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -1366,11 +1363,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
+					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
+					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(14081, {	-- Learn to Ride in the Eversong Woods
 					["provider"] = { "i", 46882 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Blood Elves in their Mailbox upon reaching the specified level.",
 					["timeline"] = { ADDED_3_3_0, REMOVED_5_2_0 },
+					["races"] = { BLOODELF },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -1378,7 +1379,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(8480, {	-- Lost Armaments

@@ -41,7 +41,7 @@ local RUTHLESS_ELITE_ONUPDATE = [[function(t)
 	end
 end]];
 local CATACLYSMIC_ELITE_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_LANDFALL .. [[) then
+	if _.Settings:GetUnobtainableFilter(]] .. MOP_PHASE_ONE .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		t.rwp = nil;
 	else

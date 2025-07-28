@@ -63,13 +63,13 @@ local CUTTING_EDGE_ONUPDATE = [[function(t)
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		t.rwp = nil;
 	else
-		t.u = ]] .. MOP_PHASE_LANDFALL .. [[;
+		t.u = ]] .. MOP_PHASE_ONE .. [[;
 		t.rwp = 50200;
 	end
 end]];
 -- #endif
 root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
-	applyclassicphase(MOP_PHASE_LANDFALL, inst(330, {	-- Heart of Fear
+	applyclassicphase(MOP_PHASE_ONE, inst(330, {	-- Heart of Fear
 		["isRaid"] = true,
 		["coord"] = { 39.0, 34.9, DREAD_WASTES },	-- Heart of Fear
 		["maps"] = {
@@ -77,7 +77,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			475,	-- Heart of Fear
 		},
 		["sharedLockout"] = 1,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(6718, {	-- The Dread Approach
 					crit(19628, {	-- Imperial Vizier Zor'lok
@@ -516,7 +516,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(745, {	-- Imperial Vizier Zor'lok
 						["crs"] = { 62980 },	-- Imperial Vizier Zor'lok
-						["g"] = {
+						["groups"] = {
 							i(167058, {	-- Kor'thik Swarmling (PET!)
 								["timeline"] = { ADDED_8_1_5 },
 							}),
@@ -524,7 +524,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(744, {	-- Blade Lord Ta'yak
 						["crs"] = { 62543 },	-- Blade Lord Ta'yak
-						["g"] = {
+						["groups"] = {
 							i(167053, {	-- Amberglow Stinger (PET!)
 								["timeline"] = { ADDED_8_1_5 },
 							}),
@@ -532,7 +532,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(713, {	-- Garalon
 						["crs"] = { 62164 },	-- Garalon
-						["g"] = {
+						["groups"] = {
 							i(167054, {	-- Spawn of Garalon (PET!)
 								["timeline"] = { ADDED_8_1_5 },
 							}),
@@ -540,13 +540,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(741, {	-- Wind Lord Mel'jarak
 						["crs"] = { 62397 },	-- Wind Lord Mel'jarak
-						["g"] = {
+						["groups"] = {
 
 						},
 					}),
 					e(737, {	-- Amber-Shaper Un'sok
 						["crs"] = { 62511 },	-- Amber-Shaper Un'sok
-						["g"] = {
+						["groups"] = {
 							i(167055, {	-- Living Amber (PET!)
 								["timeline"] = { ADDED_8_1_5 },
 							}),
@@ -554,7 +554,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(743, {	-- Grand Empress Shek'zeer
 						["crs"] = { 62837 },	-- Grand Empress Shek'zeer
-						["g"] = {
+						["groups"] = {
 							i(167056, {	-- Ravenous Prideling (PET!)
 								["timeline"] = { ADDED_8_1_5 },
 							}),
@@ -570,14 +570,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
 				-- #endif
 				["ignoreBonus"] = true,
-				["g"] = {
+				["groups"] = {
 					i(89807, {	-- Amber Encased Treasure Pouch (Original)
 						["description"] = "Contains 28g 50s.\n\nThis item and other consolation items like it created many riots on the WoW Forums and continued to do so until they added the updated bags in 5.2.0.",
-						["timeline"] = { ADDED_5_1_0, REMOVED_5_2_0 },
+						["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
 					}),
 					i(89856, {	-- Amber Encased Treasure Pouch (Original)
 						["description"] = "Contains 28g 50s.\n\nThis item and other consolation items like it created many riots on the WoW Forums and continued to do so until they added the updated bags in 5.2.0.",
-						["timeline"] = { ADDED_5_1_0, REMOVED_5_2_0 },
+						["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
 					}),
 					i(95619, {	-- Amber Encased Treasure Pouch
 						["description"] = "This item is awarded as a consolation prize to players who do not win loot after defeating a boss encounter in the Raid Finder mode of Heart of Fear.",
@@ -587,7 +587,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					header(HEADERS.Achievement, 6718, {	-- The Dread Approach
 						e(745, {	-- Imperial Vizier Zor'lok
 							["crs"] = { 62980 },	-- Imperial Vizier Zor'lok
-							["g"] = {
+							["groups"] = {
 								i(86854),	-- Articulated Legplates
 								i(86815),	-- Attenuating Bracers
 								i(86811),	-- Boots of the Still Breath
@@ -606,7 +606,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						}),
 						e(744, {	-- Blade Lord Ta'yak
 							["crs"] = { 62543 },	-- Blade Lord Ta'yak
-							["g"] = {
+							["groups"] = {
 								i(86825),	-- Boots of the Blowing Wind
 								i(86821),	-- Bracers of Unseen Strikes
 								i(86826),	-- Bracers of Tempestuous Fury
@@ -628,7 +628,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 								62164,	-- Garalon	-- Maybe Outside Version
 								63191 ,	-- Garalon	-- In Raid Version
 							},
-							["g"] = {
+							["groups"] = {
 								i(86834),	-- Bonebreaker Gauntlets
 								i(86832),	-- Garalon's Hollow Skull
 								i(89958),	-- Garalon's Graven Carapace
@@ -649,7 +649,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					header(HEADERS.Achievement, 6845, {	-- Nightmare of Shek'zeer
 						e(741, {	-- Wind Lord Mel'jarak
 							["crs"] = { 62397 },	-- Wind Lord Mel'jarak
-							["g"] = {
+							["groups"] = {
 								i(89271, {	-- Gauntlets of the Shadowy Conqueror
 									-- #if AFTER 7.2.0
 									["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
@@ -668,7 +668,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						}),
 						e(737, {	-- Amber-Shaper Un'sok
 							["crs"] = { 62511 },	-- Amber-Shaper Un'sok
-							["g"] = {
+							["groups"] = {
 								i(89268, {	-- Leggings of the Shadowy Conqueror
 									-- #if AFTER 7.2.0
 									["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
@@ -687,7 +687,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						}),
 						e(743, {	-- Grand Empress Shek'zeer
 							["crs"] = { 62837 },	-- Grand Empress Shek'zeer
-							["g"] = {
+							["groups"] = {
 								i(89265, {	-- Chest of the Shadowy Conqueror
 									-- #if AFTER 7.2.0
 									["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
@@ -728,44 +728,44 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(745, {	-- Imperial Vizier Zor'lok
 					["crs"] = { 62980 },	-- Imperial Vizier Zor'lok
-					["g"] = {
+					["groups"] = {
 						ach(6937),	-- Overzealous
 					},
 				}),
 				e(744, {	-- Blade Lord Ta'yak
 					["crs"] = { 62543 },	-- Blade Lord Ta'yak
-					["g"] = {
+					["groups"] = {
 						ach(6936),	-- Candle in the Wind
 					},
 				}),
 				e(713, {	-- Garalon
 					["crs"] = { 62164 },	-- Garalon
-					["g"] = {
+					["groups"] = {
 						ach(6553),	-- Like an Arrow to the Face
 					},
 				}),
 				e(741, {	-- Wind Lord Mel'jarak
 					["crs"] = { 62397 },	-- Wind Lord Mel'jarak
-					["g"] = {
+					["groups"] = {
 						ach(6683),	-- Less Than Three
 					},
 				}),
 				e(737, {	-- Amber-Shaper Un'sok
 					["crs"] = { 62511 },	-- Amber-Shaper Un'sok
-					["g"] = {
+					["groups"] = {
 						ach(6518),	-- I Heard You Like Amber...
 					},
 				}),
 				e(743, {	-- Grand Empress Shek'zeer
 					["crs"] = { 62837 },	-- Grand Empress Shek'zeer
-					["g"] = {
+					["groups"] = {
 						ach(6922, {	-- Timing is Everything
 							crit(21105, {	-- Defeat 2 Kor'thik Reavers within 10 seconds of each other
 								["cr"] = 63591,	-- Kor'thik Reaver
 							}),
 						}),
 						ach(8246, {	-- Ahead of the Curve: Grand Empress Shek'zeer
-							["timeline"] = { ADDED_5_1_0, REMOVED_5_2_0 },
+							["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
 							-- #if MOP
 							["OnUpdate"] = CUTTING_EDGE_ONUPDATE;
 							-- #endif
@@ -775,10 +775,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
 				["ignoreBonus"] = true,
-				["g"] = {
+				["groups"] = {
 					e(745, {	-- Imperial Vizier Zor'lok
 						["crs"] = { 62980 },	-- Imperial Vizier Zor'lok
-						["g"] = {
+						["groups"] = {
 							i(86203),	-- Articulated Leggings
 							i(86157),	-- Attenuating Bracers
 							i(86153),	-- Boots of the Still Breath
@@ -797,7 +797,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(744, {	-- Blade Lord Ta'yak
 						["crs"] = { 62543 },	-- Blade Lord Ta'yak
-						["g"] = {
+						["groups"] = {
 							i(86167),	-- Boots of the Blowing Wind
 							i(86163),	-- Bracers of Unseen Strikes
 							i(86168),	-- Bracers of Tempestuous Fury
@@ -816,7 +816,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(713, {	-- Garalon
 						["crs"] = { 62164 },	-- Garalon
-						["g"] = {
+						["groups"] = {
 							i(86176),	-- Bonebreaker Gauntlets
 							i(89832),	-- Garalon's Graven Carapace
 							i(86174),	-- Garlon's Hollow Skull
@@ -835,7 +835,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(741, {	-- Wind Lord Mel'jarak
 						["crs"] = { 62397 },	-- Wind Lord Mel'jarak
-						["g"] = {
+						["groups"] = {
 							i(89240, {	-- Gauntlets of the Shadowy Conqueror
 								-- #if AFTER 7.2.0
 								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
@@ -854,7 +854,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(737, {	-- Amber-Shaper Un'sok
 						["crs"] = { 62511 },	-- Amber-Shaper Un'sok
-						["g"] = {
+						["groups"] = {
 							i(89243, {	-- Leggings of the Shadowy Conqueror
 								-- #if AFTER 7.2.0
 								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
@@ -873,7 +873,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(743, {	-- Grand Empress Shek'zeer
 						["crs"] = { 62837 },	-- Grand Empress Shek'zeer
-						["g"] = {
+						["groups"] = {
 							i(89237, {	-- Chest of the Shadowy Conqueror
 								-- #if AFTER 7.2.0
 								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
@@ -894,10 +894,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.HEROIC, {
 				["ignoreBonus"] = true,
-				["g"] = {
+				["groups"] = {
 					e(745, {	-- Imperial Vizier Zor'lok
 						["crs"] = { 62980 },	-- Imperial Vizier Zor'lok
-						["g"] = {
+						["groups"] = {
 							ach(6725),	-- Heroic: Imperial Vizier Zor'lok
 							i(86944),	-- Articulated Legplates
 							i(86948),	-- Attenuating Bracers
@@ -917,7 +917,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(744, {	-- Blade Lord Ta'yak
 						["crs"] = { 62543 },	-- Blade Lord Ta'yak
-						["g"] = {
+						["groups"] = {
 							ach(6726),	-- Heroic: Blade Lord Ta'yak
 							i(86959),	-- Boots of the Blowing Wind
 							i(86954),	-- Bracers of Unseen Strikes
@@ -937,7 +937,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(713, {	-- Garalon
 						["crs"] = { 62164 },	-- Garalon
-						["g"] = {
+						["groups"] = {
 							ach(6727),	-- Heroic: Garalon
 							i(86964),	-- Bonebreaker Gauntlets
 							i(86966),	-- Garalon's Hollow Skull
@@ -957,7 +957,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(741, {	-- Wind Lord Mel'jarak
 						["crs"] = { 62397 },	-- Wind Lord Mel'jarak
-						["g"] = {
+						["groups"] = {
 							ach(6728),	-- Heroic: Wind Lord Mel'jarak
 							i(89256, {	-- Gauntlets of the Shadowy Conqueror
 								-- #if AFTER 7.2.0
@@ -977,7 +977,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(737, {	-- Amber-Shaper Un'sok
 						["crs"] = { 62511 },	-- Amber-Shaper Un'sok
-						["g"] = {
+						["groups"] = {
 							ach(6729),	-- Heroic: Amber-Shaper Un'sok
 							i(89253, {	-- Leggings of the Shadowy Conqueror
 								-- #if AFTER 7.2.0
@@ -997,15 +997,15 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(743, {	-- Grand Empress Shek'zeer
 						["crs"] = { 62837 },	-- Grand Empress Shek'zeer
-						["g"] = {
+						["groups"] = {
 							ach(7486, {	-- Cutting Edge: Grand Empress Shek'zeer
-								["timeline"] = { ADDED_5_1_0, REMOVED_5_2_0 },
+								["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
 								-- #if MOP
 								["OnUpdate"] = CUTTING_EDGE_ONUPDATE;
 								-- #endif
 							}),
 							ach(6679, {	-- Realm First! Grand Empress Shek'zeer
-								["timeline"] = { ADDED_5_1_0, REMOVED_5_2_0 },
+								["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
 								-- #if MOP
 								["OnUpdate"] = CUTTING_EDGE_ONUPDATE;
 								-- #endif

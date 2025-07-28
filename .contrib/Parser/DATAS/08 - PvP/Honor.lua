@@ -6,7 +6,7 @@ root(ROOTS.PVP, pvp(n(PVP_HONOR, {
 	currency(HONOR),	-- Honor
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 		ach(12893, {	-- Honor Level 5
-			["g"] = {
+			["groups"] = {
 				i(142380, {	-- Dutiful Gruntling (PET!)
 					["races"] = HORDE_ONLY,
 					["crs"] = {

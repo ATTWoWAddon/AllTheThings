@@ -58,7 +58,7 @@ root(ROOTS.Zones, {
 					header(HEADERS.NPC, 115787, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {	-- Bloodgazer Hatchling
 						["description"] = "1. Buy Azsunian Grapes from Nalysse Dawnsorrow in Azsuna.\n2. Kill Bloodgazer Matriarch.\n3. /target Orphaned Bloodgazer\n4. Feed Orphaned Bloodgazer Azsunian Grapes.\n5. Enjoy new Bloodgazer Hatchling! Do one quest each day for a mount!|r",
 						["crs"] = { 115741 },	-- Orphaned Bloodgazer
-						["g"] = {
+						["groups"] = {
 							pet(1977),	-- Bloodgazer Hatchling (PET!)
 							q(44998, {	-- Allies in Azsuna
 								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
@@ -67,14 +67,14 @@ root(ROOTS.Zones, {
 							q(45008, {	-- Bloodgazer Bonding
 								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 								["sourceQuest"] = 45006,	-- The Unfavorable Faction
-								["g"] = {
+								["groups"] = {
 									i(142494),	-- Purple Blossom (TOY!)
 								},
 							}),
 							q(45020, {	-- Bloodgazer Reunion
 								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 								["sourceQuest"] = 45018,	-- Bloodgazer Team Rumble
-								["g"] = {
+								["groups"] = {
 									i(137577),	-- Predatory Bloodgazer (MOUNT!)
 								},
 							}),

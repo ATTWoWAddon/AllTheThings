@@ -70,7 +70,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coords"] = {
 								{ 63.0, 30.4, WINTERSPRING },
 								{ 65.2, 76.6, WINTERSPRING },
-								{ 57.6, 75.6, WINTERSPRING }
+								{ 57.6, 75.6, WINTERSPRING },
 							},
 						}),
 						crit(16178, {	-- Shardtooth Bears
@@ -264,11 +264,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(31975, {	-- The Returning Champion (A)
 					["qg"] = 66466,	-- Stone Cold Trixxy
+					["altQuests"] = { 31976 },	-- The Returning Champion (Deadwind Pass)
 					["sourceQuests"] = {
 						31915,	-- Grand Master Lydia Accoste
 						31897,	-- Grand Master Trixxy
 					},
-					["altQuests"] = { 31976 },	-- The Returning Champion (Deadwind Pass)
 					["coord"] = { 65.6, 64.4, WINTERSPRING },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { STORMWIND_CITY },
@@ -277,11 +277,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(31977, {	-- The Returning Champion (H)
 					["qg"] = 66466,	-- Stone Cold Trixxy
+					["altQuests"] = { 31980 },	-- The Returning Champion (Deadwind Pass)
 					["sourceQuests"] = {
 						31915,	-- Grand Master Lydia Accoste
 						31897,	-- Grand Master Trixxy
 					},
-					["altQuests"] = { 31980 },	-- The Returning Champion (Deadwind Pass)
 					["coord"] = { 65.6, 64.4, WINTERSPRING },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { ORGRIMMAR },
@@ -950,12 +950,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 4741,	-- Wild Guardians (2/3)
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FELWOOD },
+					["races"] = HORDE_ONLY,
 					["crs"] = {
 						7454,	-- Berserk Owlbeast
 						7452,	-- Crazed Owlbeast
 						7453,	-- Moontouched Owlbeast
 					},
-					["races"] = HORDE_ONLY,
 					["lvl"] = 52,
 				}),
 				q(28609, {	-- Hammer Time
@@ -1471,10 +1471,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					-- #endif
+					["coord"] = { 61.2, 37, WINTERSPRING },
 					-- #if BEFORE 4.0.3
 					["description"] = "Upon finishing this quest, you will become a Master Axesmith and be locked out of becoming a Master Hammersmith and Master Swordsmith.",
 					-- #endif
-					["coord"] = { 61.2, 37, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLACKROCK_SPIRE },
 					-- #if BEFORE TBC
@@ -1555,7 +1555,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(28656, {	-- Strange Life Forces
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
-					["description"] = "Kill mobs at close range until you receive an E'ko buff.",
 					["coords"] = {
 						{ 46.3, 18.0, WINTERSPRING },
 						{ 55.6, 23.6, WINTERSPRING },
@@ -1565,6 +1564,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 68.0, 54.1, WINTERSPRING },
 						{ 60.7, 76.3, WINTERSPRING },
 					},
+					["description"] = "Kill mobs at close range until you receive an E'ko buff.",
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4842, {	-- Strange Sources
@@ -1588,10 +1588,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5307,	-- Corruption [Master Swordsmith]
 					},
 					-- #endif
+					["coord"] = { 61.2, 37.2, WINTERSPRING },
 					-- #if BEFORE 4.0.3
 					["description"] = "Upon finishing this quest, you will become a Master Hammersmith and be locked out of becoming a Master Axesmith and Master Swordsmith.",
 					-- #endif
-					["coord"] = { 61.2, 37.2, WINTERSPRING },
 					["timeline"] = { ADDED_1_15_3 },
 					["maps"] = { STRATHOLME },
 					-- #if BEFORE TBC
@@ -1620,10 +1620,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5307,	-- Corruption [Master Swordsmith]
 					},
 					-- #endif
+					["coord"] = { 61.2, 37.2, WINTERSPRING },
 					-- #if BEFORE 4.0.3
 					["description"] = "Upon finishing this quest, you will become a Master Hammersmith and be locked out of becoming a Master Axesmith and Master Swordsmith.",
 					-- #endif
-					["coord"] = { 61.2, 37.2, WINTERSPRING },
 					["timeline"] = {
 						-- #if SEASON_OF_DISCOVERY
 						REMOVED_1_15_3,
@@ -1787,8 +1787,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(29034, {	-- They Grow Up So Fast
 					["qg"] = 10618,	-- Rivern Frostwind
 					["sourceQuest"] = 29032,	-- Get Them While They're Young
-					["description"] = "This quest must remain in your quest log to do the relevant daily quests.",
 					["coord"] = { 46.6, 17.6, WINTERSPRING },
+					["description"] = "This quest must remain in your quest log to do the relevant daily quests.",
 					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
 						{ "i", 68644, 20 },	-- Winterspring Cub Whisker

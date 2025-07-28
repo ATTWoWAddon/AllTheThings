@@ -106,7 +106,7 @@ root(ROOTS.Instances, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CATA
 		}),
 		ach(12079, {	-- Raiding with Leashes V: Cuteaclysm
 			["timeline"] = { ADDED_7_3_0 },
-			["g"] = {
+			["groups"] = {
 				i(152963),	-- Amalgam of Destruction (PET!)
 			},
 		}),

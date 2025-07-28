@@ -35,7 +35,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["coord"] = { 70.4, 27.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(167100, {	-- Alliance Champion's Cache
 							["modID"] = 53,	-- iLvl 415
 							["sym"] = {
@@ -54,7 +54,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["isWeekly"] = true,
 					["coord"] = { 56.4, 26.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
@@ -64,7 +64,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["isWeekly"] = true,
 					["coord"] = { 56.4, 26.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
@@ -81,7 +81,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						{ 38.0, 55.4, NAZJATAR },
 					},
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
@@ -91,7 +91,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["isWeekly"] = true,
 					["coord"] = { 56.4, 26.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
@@ -101,7 +101,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["isWeekly"] = true,
 					["coord"] = { 56.4, 26.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
@@ -111,7 +111,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["isWeekly"] = true,
 					["coord"] = { 56.2, 26.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
@@ -121,7 +121,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["isWeekly"] = true,
 					["coord"] = { 56.4, 26.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
@@ -131,7 +131,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["isWeekly"] = true,
 					["coord"] = { 56.4, 26.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
@@ -141,7 +141,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["isWeekly"] = true,
 					["coord"] = { 56.4, 26.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
@@ -151,7 +151,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["isWeekly"] = true,
 					["coord"] = { 56.4, 26.0, BORALUS },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
@@ -160,7 +160,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["provider"] = { "n", 141698 },	--  Kort Ceefer
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 56.4, 25.8, BORALUS },
-					["g"] = {
+					["groups"] = {
 						i(163604, {	-- Net-O-Matic 5000
 							["filterID"] = CONSUMABLES,
 						}),
@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["provider"] = { "n", 143560 },	-- Marshal Gabriel
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 56.4, 25.8, BORALUS },
-					["g"] = {
+					["groups"] = {
 						i(168920),	-- Azerite-Encrusted Timequartz (Rank 1)
 						i(168442),	-- Roiling Blood of the Vanquished (Rank 1)
 						i(168578),	-- Sphere of Suppressed Force (Rank 1)
@@ -190,15 +190,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			})),
 			n(OUTPOSTS, {
 				["description"] = "Alliance Outposts allow you to set up additional bases in Zandalar.  You can buy Scouting Reports from Vindicator Jaelaana, the vendor next to Wind's Redemption.  Each one will start a mission on your Mission Command Table.  After you complete the initial questline, you'll be offered additional missions to upgrade your outposts.",
-				["g"] = {
+				["groups"] = {
 					i(165880, {	-- Outpost Upgrade: Arom's Stand (CI!)
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["g"] = {
+						["groups"] = {
 							mi(2111, {	-- Upgrade: Arom's Stand
 								["races"] = ALLIANCE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(54306, {	-- Mission Report: Arom's Stand
 										["provider"] = { "n", 138704 },		-- Mission Command Table
 										["races"] = ALLIANCE_ONLY,
@@ -218,10 +218,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["g"] = {
+						["groups"] = {
 							mi(2109, {	-- Upgrade: Brennadam
 								["races"] = ALLIANCE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(54262, {	-- Mission Report: Brennadam
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["races"] = ALLIANCE_ONLY,
@@ -241,10 +241,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["g"] = {
+						["groups"] = {
 							mi(2110, {	-- Upgrade: Castaway Point
 								["races"] = ALLIANCE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(54284, {	-- Mission Report: Castaway Point
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["races"] = ALLIANCE_ONLY,
@@ -264,15 +264,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1560, 50 }, },	-- 50x War Resources
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["g"] = {
+						["groups"] = {
 							mi(2090, {	-- Grimwatt's Crash
 								["races"] = ALLIANCE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(53006, {	-- Mission Report: Grimwatt's Crash
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
-										["g"] = {
+										["groups"] = {
 											i(162977),	-- Mission Report (QI!)
 										},
 									}),
@@ -286,7 +286,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							}),
 							mi(2096, {	-- Ambush at Grimwatt's Crash
 								["races"] = ALLIANCE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(53186, {	-- Mission Report: Ambush at Grimwatt's Crash
 										["sourceQuests"] = { 53006 },	-- Mission Report: Grimwatt's Crash
 										["provider"] = { "n", 138704 },	-- Mission Command Table
@@ -307,15 +307,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["g"] = {
+						["groups"] = {
 							mi(2089, {	-- Mistvine Ledge
 								["races"] = ALLIANCE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(52962, {	-- Mission Report: Mistvine Ledge
 										["provider"] = { "n", 138704 },		-- Mission Command Table
 										["races"] = ALLIANCE_ONLY,
 										["coord"] = { 70.5, 27.2, BORALUS },
-										["g"] = {
+										["groups"] = {
 											i(162646),	-- Mission Report (QI!)
 										},
 									}),
@@ -330,7 +330,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							mi(2100, {	-- Jungle Escort
 								["sourceQuests"] = { 52963 },	-- Mistvine Ledge
 								["races"] = ALLIANCE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(53306, {	-- Mission Report: Jungle Escort
 										["provider"] = { "n", 138704 },		-- Mission Command Table
 										["coord"] = { 70.5, 27.2, BORALUS },
@@ -350,15 +350,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["g"] = {
+						["groups"] = {
 							mi(2069, {	-- Mugamba Overlook
 								["races"] = ALLIANCE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(52851, {	-- Mission Report: Mugamba Overlook
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["races"] = ALLIANCE_ONLY,
 										["coord"] = { 70.5, 27.2, BORALUS },
-										["g"] = {
+										["groups"] = {
 											i(162577),	-- Mission Report (QI!)
 										},
 									}),
@@ -373,12 +373,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							mi(2099, {	-- Spare Parts
 								["sourceQuests"] = { 52852 },	-- Mugamba Overlook
 								["races"] = ALLIANCE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(53275, {	-- Mission Report: Spare Parts
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["races"] = ALLIANCE_ONLY,
 										["coord"] = { 70.5, 27.2, BORALUS },
-										["g"] = {
+										["groups"] = {
 											i(163602),	-- Mission Report (QI!)
 										},
 									}),
@@ -396,15 +396,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1560, 50 }, },	-- 50x War Resources
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["g"] = {
+						["groups"] = {
 							mi(2068, {	-- Veiled Grotto
 								["races"] = ALLIANCE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(52801, {	-- Mission Report: Veiled Grotto
 										["provider"] = { "n", 138704 },		-- Mission Command Table
 										["races"] = ALLIANCE_ONLY,
 										["coord"] = { 70.5, 27.2, BORALUS },
-										["g"] = {
+										["groups"] = {
 											i(162553),	-- Mission Report (QI!)
 										},
 									}),
@@ -422,15 +422,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["g"] = {
+						["groups"] = {
 							mi(2070, {	-- Verdant Hollow
 								["races"] = ALLIANCE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(52886, {	-- Mission Report: Verdant Hollow
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["races"] = ALLIANCE_ONLY,
 										["coord"] = { 70.5, 27.2, BORALUS },
-										["g"] = {
+										["groups"] = {
 											i(162604),	-- Mission Report (QI!)
 										},
 									}),
@@ -445,12 +445,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							mi(2098, {	-- Dino Research
 								["sourceQuests"] = { 52888 },	-- Verdant Hollow
 								["races"] = ALLIANCE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(53267, {	-- Mission Report: Dino Research
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["races"] = ALLIANCE_ONLY,
 										["coord"] = { 70.5, 27.2, BORALUS },
-										["g"] = {
+										["groups"] = {
 											i(163597),	-- Mission Report (QI!)
 										},
 									}),
@@ -468,15 +468,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
 						["filterID"] = CONSUMABLES,	-- Might change to Misc later
-						["g"] = {
+						["groups"] = {
 							mi(2091, {	-- Vulture's Nest
 								["races"] = ALLIANCE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(53043, {	-- Mission Report: Vulture's Nest
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["races"] = ALLIANCE_ONLY,
 										["coord"] = { 70.5, 27.2, BORALUS },
-										["g"] = {
+										["groups"] = {
 											i(163039),	-- Mission Report (QI!)
 										},
 									}),
@@ -491,12 +491,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							mi(2097, {	-- Missing Supplies
 								["sourceQuests"] = { 53044 },	-- Vulture's Nest
 								["races"] = ALLIANCE_ONLY,
-								["g"] = {
+								["groups"] = {
 									q(53221, {	-- Mission Report: Missing Supplies
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["coord"] = { 70.5, 27.2, BORALUS },
 										["races"] = ALLIANCE_ONLY,
-										["g"] = {
+										["groups"] = {
 											i(163572),	-- Mission Report (QI!)
 										},
 									}),
@@ -523,7 +523,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 124289 },	-- "Risky" Liz Seminario <Fur Trader>
 				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 72.2, 16.2, BORALUS },
-				["g"] = {
+				["groups"] = {
 					i(159751),	-- Bundle of Warm Furs (QI!)
 				},
 			}),
@@ -546,7 +546,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 141274 },	-- Crenzo Sparkshatter
 				["coord"] = { 77.1, 16.4, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					a(ach(12741)),	-- Giving a Scrap (A)
 					i(160266),	-- Scrapped Cloth (QI!)
 					i(160267),	-- Tattered Pants (QI!)
@@ -657,7 +657,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 152000 },	-- Dori'thur
 				["coord"] = { 70.7, 26.8, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					spell(290834),	-- Blessing of the Night Warrior
 				},
 			}),
@@ -672,7 +672,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 121144 },	-- Katherine Proudmoore <Lord Admiral of Kul Tiras>
 				["coord"] = { 48.2, 80.7, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					azeriteItem(155034),	-- Freebooter Cowl
 					azeriteItem(155022),	-- Freebooter Tunic
 					azeriteItem(155039),	-- Navigator's Robes
@@ -771,7 +771,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135681 },	-- Grand Admiral Jes-Tereth
 				["coord"] = { 67.9, 26.4, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					follower(1182),	-- Grand Admiral Jes-Tereth
 				},
 			}),
@@ -822,9 +822,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 67.9, 22.0, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 10,
-				["g"] = {
+				["groups"] = {
 					i(163161),	-- Tol Dagor Master Key (QI!)
-				}
+				},
 			}),
 			q(49715, {	-- Trouble at Greystone Keep
 				-- ["sourceQuests"] = { 50790 },	-- Hot Pursuit	-- TODO maybe earlier? maybe none?
@@ -850,7 +850,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["description"] = "Reaching Level 30 will make this quest pop up.",
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_10_1_5 },
-				["g"] = {
+				["groups"] = {
 					i(206567),	-- Harbor Gryphon (MOUNT!)
 				},
 			}),

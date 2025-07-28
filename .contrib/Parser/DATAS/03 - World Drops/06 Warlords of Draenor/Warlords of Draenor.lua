@@ -411,6 +411,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { AD
 		filter(NECK_F, {
 			i(118847),	-- Amulet of Quel'Riq
 			i(116686),	-- Ancestral Amulet
+			i(118845),	-- Azereki's Grave Seal
 			i(116677),	-- Coldsinger Amulet
 			i(118843),	-- Eleece's Braced Gorget
 			i(116679),	-- Growthshaper Amulet
@@ -578,6 +579,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { AD
 		}),
 		filter(TRINKET_F, {
 			i(118883),	-- Bronze Elekk Statue
+			i(118879),	-- Everblooming Thorny Hibiscus
 			i(118880),	-- Everburning Candle
 			i(118877),	-- Fizzlebang's Folly
 			i(118876),	-- Lucky Double-Sided Coin
@@ -893,7 +895,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { AD
 		q(36435, {	-- Unintelligible Intelligence
 			["provider"] = { "i", 115593 },	-- Illegible Sootstained Notes
 			["description"] = "This item can drop from any Draenor mob.",
-			["requireSkill"] = INSCRIPTION,
 			["maps"] = {
 				FROSTFIRE_RIDGE,
 				GORGROND,
@@ -902,6 +903,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { AD
 				SPIRES_OF_ARAK,
 				TALADOR,
 			},
+			["requireSkill"] = INSCRIPTION,
 			["races"] = HORDE_ONLY,
 			["lvl"] = 90,
 		}),

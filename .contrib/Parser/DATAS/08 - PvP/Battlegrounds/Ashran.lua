@@ -8,12 +8,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 		["timeline"] = { ADDED_6_0_2 },
 		["maps"] = { 588, 589 },	-- Ashran & Ashran Mine
 		["lvl"] = { 25 },
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(9102),	-- Ashran Victory
 				ach(9104, {	-- Bounty Hunter (A)
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						crit(25209, {	-- Blood Elf Ear
 							["provider"] = { "i", 112128 },	-- Blood Elf Ear
 						}),
@@ -39,7 +39,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				ach(9103, {	-- Bounty Hunter (H)
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						crit(25203, {	-- Draenei Tail
 							["provider"] = { "i", 112121 },	-- Draenei Tail
 						}),
@@ -109,7 +109,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				ach(9256, {	-- Rescue Operation (A)
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						crit(25410, {	-- Commander Jobby Shortsight
 							["cr"] = 85670,	-- Commander Jobby Shortsight
 						}),
@@ -123,7 +123,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				ach(9257, {	-- Rescue Operation (H)
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						crit(25448, {	-- General Lizzie Heartbane
 							["cr"] = 85673,	-- General Lizzie Heartbane
 						}),
@@ -137,7 +137,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				ach(9225, {	-- Take Them Out (A)
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						crit(26303, {	-- Captain Hoodrych
 							["cr"] = 79900,	-- Captain Hoodrych
 						}),
@@ -181,7 +181,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				ach(9224, {	-- Take Them Out (H)
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						crit(26289, {	-- Alune Windmane
 							["cr"] = 80488,	-- Alune Windmane
 						}),
@@ -253,159 +253,159 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			}),
 			n(QUESTS, {
 				q(35264, {	-- A Bunch of Artifact Fragments (A)
-					["repeatable"] = true,
 					["provider"] = { "n", 81870 },	-- Anenga
 					["coord"] = { 45.8, 76.2, 1478 },
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 				}),
 				q(35872, {	-- A Bunch of Artifact Fragments (A)
-					["repeatable"] = true,
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(35690, {	-- A Bunch of Artifact Fragments (A)
-					["repeatable"] = true,
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(35868, {	-- A Bunch of Artifact Fragments (A)
-					["repeatable"] = true,
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36031, {	-- A Bunch of Artifact Fragments (H)
-					["repeatable"] = true,
 					["provider"] = { "n", 82204 },	-- Atomik
 					["coord"] = { 49.6, 24.6, 1478 },
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 				}),
 				q(36064, {	-- A Bunch of Artifact Fragments (H)
-					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36067, {	-- A Bunch of Artifact Fragments (H)
-					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36026, {	-- A Bunch of Artifact Fragments (H)
-					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(35638, {	-- A Few Artifact Fragments (A)
-					["repeatable"] = true,
 					["provider"] = { "n", 81870 },	-- Anenga
 					["coord"] = { 45.8, 76.2, 1478 },
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 				}),
 				q(35867, {	-- A Few Artifact Fragments (A)
-					["repeatable"] = true,
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(35871, {	-- A Few Artifact Fragments (A)
-					["repeatable"] = true,
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(35689, {	-- A Few Artifact Fragments (A)
-					["repeatable"] = true,
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36030, {	-- A Few Artifact Fragments (H)
-					["repeatable"] = true,
 					["provider"] = { "n", 82204 },	-- Atomik
 					["coord"] = { 49.6, 24.6, 1478 },
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 				}),
 				q(36063, {	-- A Few Artifact Fragments (H)
-					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36024, {	-- A Few Artifact Fragments (H)
-					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36066, {	-- A Few Artifact Fragments (H)
-					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(35639, {	-- A TON of Artifact Fragments (A)
-					["repeatable"] = true,
 					["provider"] = { "n", 81870 },	-- Anenga
 					["coord"] = { 45.8, 76.2, 1478 },
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 				}),
 				q(35873, {	-- A TON of Artifact Fragments (A)
-					["repeatable"] = true,
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(35691, {	-- A TON of Artifact Fragments (A)
-					["repeatable"] = true,
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(35869, {	-- A TON of Artifact Fragments (A)
-					["repeatable"] = true,
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36032, {	-- A TON of Artifact Fragments (H)
-					["repeatable"] = true,
 					["provider"] = { "n", 82204 },	-- Atomik
 					["coord"] = { 49.6, 24.6, 1478 },
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 				}),
 				q(36025, {	-- A TON of Artifact Fragments (H)
-					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36068, {	-- A TON of Artifact Fragments (H)
-					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,	-- i think only 1 version for each faction got re-added?  not sure!
 				}),
 				q(36065, {	-- A TON of Artifact Fragments (H)
 					["provider"] = { "n", 83995 },	-- Fura
-					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 				}),
 				q(38925, {	-- Ashran Dominance (A)
-					["repeatable"] = true,
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
+					["groups"] = {
 						i(135546),	-- Fel-Touched Crate of Battlefield Goods
 					},
 				}),
 				q(38923, {	-- Ashran Dominance (H)
-					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
+					["groups"] = {
 						i(135546),	-- Fel-Touched Crate of Battlefield Goods
 					},
 				}),
 				q(37483, {	-- Captian's Whistle (A)
-					["repeatable"] = true,
 					["provider"] = { "n", 84173 },	-- Commander Anne Dunworthy
 					["coord"] = { 44.6, 74.0, 1478 },
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(37484, {	-- Captian's Whistle (H)
-					["repeatable"] = true,
 					["provider"] = { "n", 84473 },	-- General Ushet Wolfbarger
 					["coord"] = { 45.0, 27.8, 1478 },
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(39217, {	-- Don't Hate, Excavate! (A)
@@ -433,34 +433,34 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(36791, {	-- Phantom Potion (A)
-					["repeatable"] = true,
 					["provider"] = { "n", 85749 },	-- Gimlet Ginfizz
 					["coord"] = { 44.2, 74.2, 1478 },
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = { i(114124) },	-- Phantom Potion
+					["groups"] = { i(114124) },	-- Phantom Potion
 				}),
 				q(36935, {	-- Phantom Potion (H)
-					["repeatable"] = true,
 					["provider"] = { "n", 86366 },	-- Tyra Silverblood
 					["coord"] = { 45.6, 28.6, 1478 },
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = { i(114124) },	-- Phantom Potion
+					["groups"] = { i(114124) },	-- Phantom Potion
 				}),
 				q(39096, {	-- Slay Them All! (A)
-					["repeatable"] = true,
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
+					["groups"] = {
 						i(135546),	-- Fel-Touched Crate of Battlefield Goods
 					},
 				}),
 				q(39090, {	-- Slay Them All! (H)
-					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
+					["groups"] = {
 						i(135546),	-- Fel-Touched Crate of Battlefield Goods
 					},
 				}),
@@ -478,15 +478,15 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(56336, {	-- Uncovering the Artifact Fragments (A)
 					["provider"] = { "n", 155283 },	-- Ecilam
-					["isWeekly"] = true,
 					["coord"] = { 44.6, 74.4, 1478 },
 					["races"] = ALLIANCE_ONLY,
+					["isWeekly"] = true,
 				}),
 				q(56337, {	-- Uncovering the Artifact Fragments (H)
 					["provider"] = { "n", 155286 },	-- Fura
-					["isWeekly"] = true,
 					["coord"] = { 45.4, 27.1, 1478 },
 					["races"] = HORDE_ONLY,
+					["isWeekly"] = true,
 				}),
 				q(36130, {	-- Reporting For Duty (A)
 					["provider"] = { "n", 84173 },	-- Commander Anne Dunworthy
@@ -525,20 +525,20 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(36741, {	-- Vintage Free Action Potion (A)
-					["repeatable"] = true,
 					["provider"] = { "n", 85749 },	-- Gimlet Ginfizz
 					["coord"] = { 44.2, 74.2, 1478 },
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = { i(116925) },	-- Vintage Free Action Potion
+					["groups"] = { i(116925) },	-- Vintage Free Action Potion
 				}),
 				q(36742, {	-- Vintage Free Action Potion (H)
-					["repeatable"] = true,
 					["provider"] = { "n", 86366 },	-- Tyra Silverblood
 					["coord"] = { 45.6, 28.6, 1478 },
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = { i(116925) },	-- Vintage Free Action Potion
+					["groups"] = { i(116925) },	-- Vintage Free Action Potion
 				}),
 				q(36119, {	-- Welcome to Ashran (A)
 					["races"] = ALLIANCE_ONLY,
@@ -550,15 +550,15 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				q(56338, {	-- Volrath Must Die
 					["provider"] = { "n", 84173 },	-- Commander Anne Dunworthy
-					["isWeekly"] = true,
 					["coord"] = { 44.6, 74.0, 1478 },
 					["races"] = ALLIANCE_ONLY,
+					["isWeekly"] = true,
 				}),
 				q(56339, {	-- Tremblade Must Die
 					["provider"] = { "n", 84473 },	-- General Ushet Wolfbarger
-					["isWeekly"] = true,
 					["coord"] = { 45, 28.7, 1478 },
 					["races"] = HORDE_ONLY,
+					["isWeekly"] = true,
 				}),
 				q(35937, {	-- Blood Elf Ear
 					["qgs"] = {
@@ -571,7 +571,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["cost"] = { { "i", 112128, 1 } },	-- Blood Elf Ear
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(170073),	-- Dented Ashmaul Strongbox
 						i(128216, {	-- Dented Ashmaul Strongbox
 							["races"] = ALLIANCE_ONLY,
@@ -585,7 +585,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["cost"] = { { "i", 112121, 1 } },	-- Draenei Tail
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(128215, {	-- Dented Ashmaul Strongbox
 							["races"] = HORDE_ONLY,
 							["sym"] = { {"sub", "pvp_gear_faction_base", EXPANSION.WOD, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
@@ -598,7 +598,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["cost"] = { { "i", 112126, 1 } },	-- Dwarf Spine
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(128215, {	-- Dented Ashmaul Strongbox
 							["races"] = HORDE_ONLY,
 							["sym"] = { {"sub", "pvp_gear_faction_base", EXPANSION.WOD, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
@@ -617,7 +617,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["cost"] = { { "i", 112015, 1 } },	-- Forsaken Brains
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(170073),	-- Dented Ashmaul Strongbox
 						i(128216, {	-- Dented Ashmaul Strongbox
 							["races"] = ALLIANCE_ONLY,
@@ -637,7 +637,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["cost"] = { { "i", 112125, 1 } },	-- Goblin Nose
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(170073),	-- Dented Ashmaul Strongbox
 						i(128216, {	-- Dented Ashmaul Strongbox
 							["races"] = ALLIANCE_ONLY,
@@ -651,7 +651,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["cost"] = { { "i", 112131, 1 } },	-- Human Bone Chip
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(128215, {	-- Dented Ashmaul Strongbox
 							["races"] = HORDE_ONLY,
 							["sym"] = { {"sub", "pvp_gear_faction_base", EXPANSION.WOD, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
@@ -670,7 +670,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["cost"] = { { "i", 112122, 1 } },	-- Orc Tooth
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(170073),	-- Dented Ashmaul Strongbox
 						i(128216, {	-- Dented Ashmaul Strongbox
 							["races"] = ALLIANCE_ONLY,
@@ -690,7 +690,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["cost"] = { { "i", 112113, 1 } },	-- Pandaren Hide
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(170073),	-- Dented Ashmaul Strongbox
 						i(128216, {	-- Dented Ashmaul Strongbox
 							["races"] = ALLIANCE_ONLY,
@@ -704,7 +704,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["cost"] = { { "i", 112113, 1 } },	-- Pandaren Hide
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(170073),	-- Dented Ashmaul Strongbox
 						i(128215, {	-- Dented Ashmaul Strongbox
 							["races"] = HORDE_ONLY,
@@ -718,7 +718,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["cost"] = { { "i", 112124, 1 } },	-- Severed Night Elf Head
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(128215, {	-- Dented Ashmaul Strongbox
 							["races"] = HORDE_ONLY,
 							["sym"] = { {"sub", "pvp_gear_faction_base", EXPANSION.WOD, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
@@ -737,7 +737,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["cost"] = { { "i", 112123, 1 } },	-- Tauren Hoof
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(170073),	-- Dented Ashmaul Strongbox
 						i(128216, {	-- Dented Ashmaul Strongbox
 							["races"] = ALLIANCE_ONLY,
@@ -757,7 +757,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["cost"] = { { "i", 112120, 1 } },	-- Troll Feet
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(170073),	-- Dented Ashmaul Strongbox
 						i(128216, {	-- Dented Ashmaul Strongbox
 							["races"] = ALLIANCE_ONLY,
@@ -771,7 +771,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["cost"] = { { "i", 112127, 1 } },	-- Tuft of Gnome Hair
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(128215, {	-- Dented Ashmaul Strongbox
 							["races"] = HORDE_ONLY,
 							["sym"] = { {"sub", "pvp_gear_faction_base", EXPANSION.WOD, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
@@ -782,9 +782,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(36884, {	-- Worgen Snout
 					["qg"] = 83869,	-- Angry Zurge
 					["cost"] = { { "i", 112119, 1 } },	-- Worgen Snout
-					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["repeatable"] = true,
+					["groups"] = {
 						i(128215, {	-- Dented Ashmaul Strongbox
 							["races"] = HORDE_ONLY,
 							["sym"] = { {"sub", "pvp_gear_faction_base", EXPANSION.WOD, SEASON_WARMONGERING, FACTION_HEADER_HORDE, PVP_COMBATANT }, },
@@ -821,7 +821,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				n(80882, {	-- Tomas Riogain <Stormshield Quartermaster>
 					["coord"] = { 44.2, 74.0, 1478 },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(116776, {	-- Pale Thorngrazer (MOUNT!)
 							["cost"] = {
 								{ "i", 137642, 100 },	-- 100x Mark of Honor
@@ -850,7 +850,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				n(85115, {	-- Dazzerian <Warspear Quartermaster>
 					["coord"] = { 48.4, 23.8, 1478 },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(116775, {	-- Breezestrider Stallion (MOUNT!)
 							["cost"] = {
 								{ "i", 137642, 100 },	-- 100x Mark of Honor
@@ -878,7 +878,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				n(82876, {	-- Grand Marshal Tremblade Elite S1-S2-S3
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						elitepvp(i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
 							["timeline"] = { ADDED_7_0_3 },
 						})),
@@ -1447,7 +1447,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				n(82877, {	-- High Warlord Volrath Elite Season 1/S1 - Season 2/S2 - Season 3/S3 -
 					["races"] = HORDE_ONLY,
 					--["u"] = REMOVED_FROM_GAME,	-- Vendor doesn't sell anything in 7.0+
-					["g"] = {
+					["groups"] = {
 						elitepvp(i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
 							["timeline"] = { ADDED_7_0_3 },
 						})),
@@ -2108,7 +2108,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			i(128214),	-- Dented Ashmaul Strongbox H S2
 			i(128215, {	-- Dented Ashmaul Strongbox H S3
 				["u"] = REMOVED_FROM_GAME,
-				["g"] = {
+				["groups"] = {
 					i(134705),	-- Surging Chain Leggings
 				},
 			}),

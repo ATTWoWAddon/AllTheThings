@@ -504,13 +504,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		}),
 		ach(9729, {		-- Victory in Hillsbrad (Alliance)
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
+			["groups"] = {
 				title(280),		-- <Name>, Tarren Mill Terror
 			},
 		}),
 		ach(9566, {		-- Victory in Hillsbrad (Horde)
 			["races"] = HORDE_ONLY,
-			["g"] = {
+			["groups"] = {
 				title(281),		-- <Name>, Southshore Slayer
 			},
 		}),
@@ -1222,8 +1222,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		}),
 		n(QUESTS, {
 			q(57298, {	-- How Things "Really" Happened...
-				["sourceQuest"] = 57249,	-- A Timely Invitation
 				["qg"] = 157113,	-- Chromie
+				["sourceQuest"] = 57249,	-- A Timely Invitation
 				["coord"] = { 53.5, 54.7, CAVERNS_OF_TIME },
 				["lvl"] = 60,
 			}),
@@ -1279,7 +1279,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			-- Correct answers is in the bottom
 			q(43461, {	-- A Time to Reflect
 				["qg"] = 110035,	-- Historian Jupa
-				["isDaily"] = true,
 				-- #if BEFORE 11.0.5
 				["coord"] = { 36.6, 74.6, ORGRIMMAR },
 				-- #else
@@ -1287,14 +1286,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					{ 36.6, 74.6, ORGRIMMAR },
 					{ 62.8, 50.2, TANARIS },
 				},
-				-- make sure this available timeline doesn't get eaten by matching removed timeline on merged parent Quests
-				["_forcetimeline"] = true,
+				["_forcetimeline"] = true,	-- make sure this available timeline doesn't get eaten by matching removed timeline on merged parent Quests
 				-- #endif
 				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(43323, {	-- A Time to Reflect
 				["qg"] = 110034,	-- Historian Llore
-				["isDaily"] = true,
 				-- #if BEFORE 11.0.5
 				["coord"] = { 84.6, 25.0, STORMWIND_CITY },
 				-- #else
@@ -1302,10 +1300,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					{ 84.6, 25.0, STORMWIND_CITY },
 					{ 62.8, 50.2, TANARIS },
 				},
-				-- make sure this available timeline doesn't get eaten by matching removed timeline on merged parent Quests
-				["_forcetimeline"] = true,
+				["_forcetimeline"] = true,	-- make sure this available timeline doesn't get eaten by matching removed timeline on merged parent Quests
 				-- #endif
 				["races"] = ALLIANCE_ONLY,
+				["isDaily"] = true,
 			}),
 		}),
 		n(VENDORS, {
@@ -1359,7 +1357,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 			n(231351, {	-- Kieule <Souvenirs>
 				["coord"] = { 62.38, 49.92, TANARIS },
-				["g"] = {
+				["groups"] = {
 					i(140670),	-- Souvenir Elekk
 					i(140671),	-- Souvenir Raptor
 					i(118052),	-- Murloc Chew Toy
@@ -1374,12 +1372,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		n(QUESTS, {
 			q(47253, {	-- The Originals [Alliance]
 				["qg"] = 110034,	-- Historian Llore
-				["isDaily"] = true,
-				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 51.5, 38.7, CAVERNS_OF_TIME },
 				["timeline"] = { REMOVED_11_0_5 },
-				-- make sure this available timeline doesn't get eaten by matching removed timeline on merged parent Quests
-				["_forcetimeline"] = true,
+				["_forcetimeline"] = true,	-- make sure this available timeline doesn't get eaten by matching removed timeline on merged parent Quests
+				["races"] = ALLIANCE_ONLY,
+				["isDaily"] = true,
 				["sym"] = {{"select","npcID",
 					121818,	-- Lord Kazzak [Blasted Lands - Always up]
 					121820,	-- Azuregos [Azshara - Always Up]
@@ -1395,15 +1392,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				-- #else
 				["qg"] = 223882,	-- Izaik Kadarov
 				-- #endif
-				["isDaily"] = true,
 				-- #if BEFORE 11.0.5
 				["races"] = HORDE_ONLY,
 				["coord"] = { 51.5, 38.7, CAVERNS_OF_TIME },
 				-- #else
 				["coord"] = { 62.3, 51.8, TANARIS },
 				-- #endif
-				-- make sure this available timeline doesn't get eaten by matching removed timeline on merged parent Quests
-				["_forcetimeline"] = true,
+				["_forcetimeline"] = true,	-- make sure this available timeline doesn't get eaten by matching removed timeline on merged parent Quests
+				["isDaily"] = true,
 				["sym"] = {{"select","npcID",
 					121818,	-- Lord Kazzak [Blasted Lands - Always up]
 					121820,	-- Azuregos [Azshara - Always Up]
@@ -1600,98 +1596,98 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				n(QUESTS, {
 					q(57302, {	-- Alterac Valley Graveyards
 						["qg"] = 159811,	-- Sergeant Durgen Stormpike
-						["isDaily"] = true,
 						["coord"] = { 43.6, 17.2, 1537 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 						["lvl"] = 10,
 					}),
 					q(57305, {	-- Armor Scraps
 						["qg"] = 13257,	-- Murgot Deepforge
-						["isDaily"] = true,
 						["coord"] = { 43.6, 15.9, 1537 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 						["lvl"] = 10,
 					}),
 					q(57309, {	-- Begin the Attack
-						["repeatable"] = true,	-- presumably
 						["qg"] = 13446,	-- Field Marshal Teravaine
 						["coord"] = { 52.3, 44.0, 1537 },
 						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,	-- presumably
 						["lvl"] = 10,
 					}),
 					q(57304, {	-- Capture a Mine (A)
-						["providers"] = {
-							{ "n", 12096 },		-- Stormpike Quartermaster
-							{ "n", 159811 },	-- Sergeant Durgen Stormpike
+						["qgs"] = {
+							12096,	-- Stormpike Quartermaster
+							159811,	-- Sergeant Durgen Stormpike
 						},
-						["isDaily"] = true,
 						["coords"] = {
 							{ 43.3, 17.0, 1537 },
 							{ 43.6, 17.2, 1537 },
 						},
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 						["lvl"] = 10,
 					}),
 					q(57314, {	-- Capture a Mine (H)
-						["providers"] = {
-							{ "n", 12097 },		-- Frostwolf Quartermaster
-							{ "n", 158579 },	-- Corporal Teeka Bloodsnarl
+						["qgs"] = {
+							12097,	-- Frostwolf Quartermaster
+							158579,	-- Corporal Teeka Bloodsnarl
 						},
-						["isDaily"] = true,
 						["coords"] = {
 							{ 46.8, 83.5, 1537 },
 							{ 50.8, 82.3, 1537 },
 						},
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
 						["lvl"] = 10,
 					}),
 					q(57311, {	-- Coldtooth Supplies (A)
-						["repeatable"] = true,
 						["qg"] = 12096,	-- Stormpike Quartermaster
 						["coord"] = { 43.3, 17.0, 1537 },
 						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
 						["lvl"] = 10,
 					}),
 					q(57321, {	-- Coldtooth Supplies (H)
-						["repeatable"] = true,
 						["qg"] = 12097,	-- Frostwolf Quartermaster
 						["coord"] = { 46.8, 83.5, 1537 },
 						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
 						["lvl"] = 10,
 					}),
 					q(57722, {	-- Empty Stables (A)
-						["repeatable"] = true,
 						["qg"] = 158863,	-- Stormpike Stable Master
 						["coord"] = { 42.6, 16.9, 1537 },
 						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
 						["lvl"] = 10,
 					}),
 					q(57723, {	-- Empty Stables (H)
-						["repeatable"] = true,
 						["qg"] = 158864,	-- Frostwolf Stable Master
 						["coord"] = { 57.1, 82.5, 1537 },
 						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
 						["lvl"] = 10,
 					}),
 					q(57317, {	-- Enemy Booty
 						["qg"] = 13176,	-- Smith Regzar
-						["isDaily"] = true,
 						["coord"] = { 49.9, 82.6, 1537 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
 						["lvl"] = 10,
 					}),
 					q(57310, {	-- Irondeep Supplies (A)
-						["repeatable"] = true,
 						["qg"] = 12096,	-- Stormpike Quartermaster
 						["coord"] = { 43.3, 17.0, 1537 },
 						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
 						["lvl"] = 10,
 					}),
 					q(57322, {	-- Irondeep Supplies (H)
-						["repeatable"] = true,
 						["qg"] = 12097,	-- Frostwolf Quartermaster
 						["coord"] = { 46.8, 83.5, 1537 },
 						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
 						["lvl"] = 10,
 					}),
 					q(56258, {	-- Ivus the Forest Lord
@@ -1728,10 +1724,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						},
 					}),
 					q(57320, {	-- Launch the Attack!
-						["repeatable"] = true,	-- presumably
 						["qg"] = 13449,	-- Warmaster Garrick
 						["coord"] = { 45.0, 48.0, 1537 },
 						["races"] = HORDE_ONLY,
+						["repeatable"] = true,	-- presumably
 						["lvl"] = 10,
 					}),
 					q(56259, {	-- Lokholar the Ice Lord
@@ -1742,48 +1738,48 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						["isWeekly"] = true,
 					}),
 					q(57641, {	-- Master Ryson's All Seeing Eye
-						--	unsure if this has faction requirements or anything along those lines
 						["repeatable"] = true,	-- presumably
 						["lvl"] = 10,
+						--	unsure if this has faction requirements or anything along those lines
 					}),
 					q(57306, {	-- More Armor Scraps
-						["repeatable"] = true,
 						["qg"] = 13257,	-- Murgot Deepforge
 						["coord"] = { 43.6, 15.9, 1537 },
 						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
 						["lvl"] = 10,
 					}),
 					q(57318, {	-- More Booty!
-						["repeatable"] = true,
 						["qg"] = 13176,	-- Smith Regzar
 						["coord"] = { 49.9, 82.6, 1537 },
 						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
 						["lvl"] = 10,
 					}),
 					q(57313, {	-- Speak with our Quartermaster
 						["qg"] = 13798,	-- Jotek
-						["isWeekly"] = true,
 						["coord"] = { 50.6, 82.0, 1537 },
 						["races"] = HORDE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 10,
 					}),
 					q(56256, {	-- The Battle for Alterac (A)
 						["qg"] = 154478,	-- Prospector Stonehewer
 					--	["coord"] = { , ALTERAC_VALLEY },
-						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["isWeekly"] = true,
 					}),
 					q(56257, {	-- The Battle for Alterac (H)
 						["qg"] = 154473,	-- Voggah Deathgrip
 						["coord"] = { 55.0, 87.2, ALTERAC_VALLEY },
-						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
+						["isWeekly"] = true,
 					}),
 					q(57312, {	-- The Graveyards of Alterac
 						["qg"] = 158579,	-- Corporal Teeka Bloodsnarl
-						["isDaily"] = true,
 						["coord"] = { 50.8, 82.3, 1537 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
 						["lvl"] = 10,
 					}),
 					q(57639, {	-- The Legend of Korrak
@@ -1802,39 +1798,39 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					}),
 					q(57303, {	-- The Quartermaster
 						["qg"] = 13797,	-- Mountaineer Boombellow
-						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["isWeekly"] = true,
 						["lvl"] = 10,
 					}),
 					q(57307, {	-- Towers and Bunkers (A)
 						["qg"] = 159811,	-- Sergeant Durgen Stormpike
-						["isDaily"] = true,
 						["coord"] = { 43.6, 17.2, 1537 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
 						["lvl"] = 10,
 					}),
 					q(57315, {	-- Towers and Bunkers (H)
 						["qg"] = 158579,	-- Corporal Teeka Bloodsnarl
-						["isDaily"] = true,
 						["coord"] = { 50.8, 82.3, 1537 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
 						["lvl"] = 10,
 					}),
 					q(57730, {	-- Zinfizzlex's Portable Shredder Unit (A)
-						["description"] = "Questgiver is west of Korrak (over the bridge) and you have to escort him to your base. After bringing him to safety he offers the quest.",
-						["repeatable"] = true,
 						["qg"] = 13377,	-- Master Engineer Zinfizzlex
+						["description"] = "Questgiver is west of Korrak (over the bridge) and you have to escort him to your base. After bringing him to safety he offers the quest.",
 						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
 						["lvl"] = 10,
-						["g"] = { i(17410) },	-- Zinfizzlex's Portable Shredder Unit
+						["groups"] = { i(17410) },	-- Zinfizzlex's Portable Shredder Unit
 					}),
 					q(57731, {	-- Zinfizzlex's Portable Shredder Unit (H)
-						["description"] = "Questgiver is west of Korrak (over the bridge) and you have to escort him to your base. After bringing him to safety he offers the quest.",
-						["repeatable"] = true,
 						["qg"] = 13377,	-- Master Engineer Zinfizzlex
+						["description"] = "Questgiver is west of Korrak (over the bridge) and you have to escort him to your base. After bringing him to safety he offers the quest.",
 						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
 						["lvl"] = 10,
-						["g"] = { i(17384) },	-- Zinfizzlex's Portable Shredder Unit
+						["groups"] = { i(17384) },	-- Zinfizzlex's Portable Shredder Unit
 					}),
 				}),
 				n(VENDORS, {
@@ -2301,8 +2297,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["qg"] = 223882,	-- Izaik Kadarov
 				["coord"] = { 62.3, 51.8, TANARIS },
 				-- #endif
-				["isWeekly"] = true,
 				["timeline"] = { ADDED_8_2_5, REMOVED_8_2_5, ADDED_11_0_2 },
+				["isWeekly"] = true,
 				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
 			}),
 		}),
@@ -2475,7 +2471,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				2362,	-- Shadowforge City
 				2363,	-- Detention Block
 			},
-			["g"] = {
+			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(41220, { ["timeline"] = { "removed 11.0.7.58238" } }),	-- WoW's 20th Anniversary
 					ach(40999, {		-- You're in Your Blackrock Depths
@@ -2538,7 +2534,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							-- #endif
 						},
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(232471, {	-- Cache of Dark Iron Treasures
 								["sym"] = SYM_ALL_BRD_DROPS,
 							}),
@@ -2752,7 +2748,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					40992,	-- Peanut Gallery
 					40989,	-- Pet Mischief
 				}},
-				["g"] = {
+				["groups"] = {
 					i(228760),	-- Coldflame Tempest (MOUNT!)
 				},
 			}),
@@ -2929,8 +2925,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["coord"] = { 62.9, 50.7, TANARIS },
 			}),
 			q(84489, {	-- Shopping Squee!
-				["sourceQuests"] = { 84254 },	-- Meet and Greet
 				["provider"] = { "n", 223877 },	-- Yllana <Event Coordinator>
+				["sourceQuests"] = { 84254 },	-- Meet and Greet
 				["coord"] = { 62.9, 50.7, TANARIS },
 			}),
 			q(84616, {	-- Celebrate Good Fun!
@@ -2943,7 +2939,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["coord"] = { 62.6, 50.0, TANARIS },
 				["maps"] = { 2354 },	-- Silithus
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					ach(40977),	-- Codex Editor: Ahn'Qiraj
 					i(233014, {	-- Bronze Celebration Cache of Treasures
 						["sym"] = SYM_ALL_BRD_DROPS,
@@ -2973,7 +2969,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		n(VENDORS, {
 			n(223884, {	--  Bobadormu
 				["coord"] = { 62.7, 50.3, TANARIS },
-				["g"] = {
+				["groups"] = {
 					n(ARMOR, bubbleDownFiltered({
 						["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
 					},FILTERFUNC_itemID,{
@@ -3182,7 +3178,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 			n(158061, {	-- Historian Ma'di
 				["coord"] = { 62.6, 50.4, TANARIS },
-				["g"] = {
+				["groups"] = {
 					i(229828, {	-- 20th Anniversary Balloon Chest (TOY!)
 						["cost"] = {{"c", BRONZE_TOKEN, 10}}
 					}),
@@ -3191,19 +3187,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					}),
 					i(232598, {	-- Bag of Timewarped Badges
 						["cost"] = {{"c", BRONZE_TOKEN, 1}},
-						["g"] = {
+						["groups"] = {
 							currency(TIMEWARPED_BADGE),
 						},
 					}),
 					i(235505, {	-- Satchel of Timewarped Badges
 						["cost"] = {{"c", BRONZE_TOKEN, 5}},
-						["g"] = {
+						["groups"] = {
 							currency(TIMEWARPED_BADGE),
 						},
 					}),
 					i(235506, {	-- Box of Timewarped Badges
 						["cost"] = {{"c", BRONZE_TOKEN, 25}},
-						["g"] = {
+						["groups"] = {
 							currency(TIMEWARPED_BADGE),
 						},
 					}),
@@ -3229,94 +3225,94 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 			n(231352, {	-- Notary Grably <Titles of Olde>
 				["coord"] = { 63.3, 50.7, TANARIS },
-				["g"] = {
+				["groups"] = {
 					i(230264, {	-- Bronze Celebration Titles: Broken Isles Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
-						["g"] = {
+						["groups"] = {
 							title(587),	-- Broken Isles Enthusiast <Name> (TITLE!)
 						},
 					}),
 					i(230261, {	-- Bronze Celebration Titles: Cataclysm Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
-						["g"] = {
+						["groups"] = {
 							title(584),	-- Cataclsym Enthusiast <Name> (TITLE!)
 						},
 					}),
 					i(230258, {	-- Bronze Celebration Titles: Classic Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
-						["g"] = {
+						["groups"] = {
 							title(581),	-- Classic Enthusiast <Name> (TITLE!)
 						},
 					}),
 					i(230263, {	-- Bronze Celebration Titles: Draenor Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
-						["g"] = {
+						["groups"] = {
 							title(586),	-- Draenor Enthusias <Name> (TITLE!)
 						},
 					}),
 					i(230268, {	-- Bronze Celebration Titles: Dragon Isles Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
-						["g"] = {
+						["groups"] = {
 							title(591),	-- Dragon Isles Enthusiast <Name> (TITLE!)
 						},
 					}),
 					i(229826, {	-- Bronze Celebration Titles: Grizzly Hills Hiker (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
-						["g"] = {
+						["groups"] = {
 							title(577),	-- Grizzly Hills Hiker <Name> (TITLE!)
 						},
 					}),
 					i(231833, {	-- Bronze Celebration Titles: Karazhan Graduate (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
-						["g"] = {
+						["groups"] = {
 							title(596),	-- Karazhan Graduate <Name> (TITLE!)
 						},
 					}),
 					i(230266, {	-- Bronze Celebration Titles: Kul Tiras Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
-						["g"] = {
+						["groups"] = {
 							title(589),	-- Kul Tiras Enthusiast <Name> (TITLE!)
 						},
 					}),
 					i(231832, {	-- Bronze Celebration Titles: Molten Core Prospector (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
-						["g"] = {
+						["groups"] = {
 							title(595),	-- Molten Core Prospector <Name> (TITLE!)
 						},
 					}),
 					i(230260, {	-- Bronze Celebration Titles: Northrend Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
-						["g"] = {
+						["groups"] = {
 							title(583),	-- Northrend Enthusiast <Name> (TITLE!)
 						},
 					}),
 					i(230259, {	-- Bronze Celebration Titles: Outland Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
-						["g"] = {
+						["groups"] = {
 							title(582),	-- Outland Enthusiast <Name> (TITLE!)
 						},
 					}),
 					i(230262, {	-- Bronze Celebration Titles: Pandaria Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
-						["g"] = {
+						["groups"] = {
 							title(585),	-- Pandaria Enthusiast <Name> (TITLE!)
 						},
 					}),
 					i(229827, {	-- Bronze Celebration Titles: Plaguelands Survivor (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
-						["g"] = {
+						["groups"] = {
 							title(578),	-- Plaguelands Survivor <Name> (TITLE!)
 						},
 					}),
 					i(230267, {	-- Bronze Celebration Titles: Shadowlands Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
-						["g"] = {
+						["groups"] = {
 							title(590),	-- Shadowlands Enthusiast <Name> (TITLE!)
 						},
 					}),
 					i(230265, {	-- Bronze Celebration Titles: Zuldazar Enthusiast (CI!)
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
-						["g"] = {
+						["groups"] = {
 							title(588),	-- Zuldazar Enthusiast <Name> (TITLE!)
 						},
 					}),
@@ -3324,7 +3320,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 			n(229707, {	-- Storekeeper Reginald <Out of Time-ly Trinkets>
 				["coord"] = { 62.9, 51.1, TANARIS },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {{"c", BRONZE_TOKEN, 10}},
 				}, {
 					i(44819),	-- Baby Blizzard Bear (PET!)
@@ -3342,7 +3338,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 			n(223902, {	-- Traeya <Armor Vendor>
 				["coord"] = { 63.1, 50.9, TANARIS },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {{"c", BRONZE_TOKEN, 60}},
 				}, {
 					iensemble(228205, {	-- Ensemble: Pale Rider's Eternal Armor
@@ -3397,7 +3393,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					74,	--	Caverns of Time Entrance
 					CAVERNS_OF_TIME,
 				},
-				["g"] = {
+				["groups"] = {
 					filter(MOUNTS, {
 						i(87771),	-- Reins of the Heavenly Onyx Cloud Serpent (MOUNT!)
 					}),
@@ -3502,7 +3498,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					74,	--	Caverns of Time Entrance
 					CAVERNS_OF_TIME,
 				},
-				["g"] = {
+				["groups"] = {
 					filter(MOUNTS, {
 						a(i(43959)),	-- Reins of the Grand Black War Mammoth (A) (MOUNT!)
 						h(i(44083)),	-- Reins of the Grand Black War Mammoth (H) (MOUNT!)

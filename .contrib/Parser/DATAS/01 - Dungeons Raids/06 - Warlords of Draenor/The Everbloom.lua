@@ -71,7 +71,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 		["coord"] = { 59.55, 45.45, GORGROND },
 		["maps"] = { 620, 621 },
 		["lvl"] = 100,
-		["g"] = {
+		["groups"] = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(WITHERBARK),
 				BossOnly(PROTECTORS),

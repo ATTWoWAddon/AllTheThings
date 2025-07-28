@@ -87,14 +87,14 @@ root(ROOTS.Zones, {
 							q(44959, {	-- Snowfeather Bonding
 								["provider"] = { "n", 115784 },	-- Snowfeather Hatchling
 								["sourceQuest"] = 44958,	-- The Unfriendly Faction
-								["g"] = {
+								["groups"] = {
 									i(142497),	-- Tiny Pack (TOY!)
 								},
 							}),
 							q(44969, {	-- Snowfeather Reunion
 								["provider"] = { "n", 115784 },	-- Snowfeather Hatchling
 								["sourceQuest"] = 44968,	-- Snowfeather Team Rumble
-								["g"] = {
+								["groups"] = {
 									i(137578),	-- Snowfeather Hunter (MOUNT!)
 								},
 							}),

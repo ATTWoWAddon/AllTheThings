@@ -6,13 +6,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		n(VENDORS, {
 			n(172634, {	-- Brightgleam
 				["coord"] = { 33.2, 51.6, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(180782),	-- Technique: Fae Revel Masque (RECIPE!)
 				},
 			}),
 			n(165341, {	-- Droman Dawnblossom
 				["coord"] = { 38, 36.8, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					r(360545, {	-- Mark of the Shimmering Ardenmoth (RECIPE!)
 						["description"] = "Talk to Droman Dawnblossom. Then pick up the Fae Net item that is leaning against a table to the right of Droman.\nThen either travel to Val'sharah or summon a Vale Flitter Pet and use the Fae Net on the battle pet until you get a buff called Glowing Moth.",
 						["cost"] = { { "i", 187943, 1}, },	-- 1x Fae Net
@@ -22,7 +22,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			n(163714, {	-- Master Clerk Salorn <Tickets and Patron Rewards>
 				["coord"] = { 43.0, 47.0, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(180748, {	-- Silky Shimmermoth (MOUNT!)
 						["cost"] = { { "c", ANIMA, 5000 } },
 					}),
@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			n(164725, {	-- Tanor <Food & Drink>
 				["coord"] = { 65.0, 19.6, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(173759),	-- Candied Brightbark
 					i(178226),	-- Charred Runeflank
 					i(173762),	-- Flask of Ardendew

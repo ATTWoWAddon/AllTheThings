@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		n(QUESTS, {
 			header(HEADERS.Quest, 60152, {	-- The Eternal City
 				["icon"] = 3847780,
-				["g"] = {
+				["groups"] = {
 					q(62801, {	-- The Call of Fate
 						-- TODO: confirm whether you HAVE to hit 60 on that exact quest
 						-- ["altQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.8, 41.7, THE_MAW },
-					["g"] = {
+					["groups"] = {
 						i(184544),	-- Attuned Shard (QI!)
 						i(184757),	-- Chain of the Purpose-Bound
 					},
@@ -109,7 +109,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
 					["maps"] = { TORGHAST },
-					["g"] = {
+					["groups"] = {
 						i(184758),	-- Drape of Inscrutable Purpose
 						i(184198),	-- Soul-Touched Key (QI!)
 					},
@@ -123,7 +123,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 62935 },	-- Remnants of Hope
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
-					["g"] = {
+					["groups"] = {
 						i(184200),	-- Coded Notes (QI!)
 						i(184199),	-- Ice-Encrusted Debris (QI!)
 					},
@@ -132,7 +132,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 62938 },	-- Information for a Price
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
-					["g"] = {
+					["groups"] = {
 						i(184550),	-- Attuned Shard (QI!)
 					},
 				}),
@@ -145,7 +145,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 62966 },	-- Finding a Witness
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
-					["g"] = {
+					["groups"] = {
 						i(184242),	-- Burnt Totem (QI!)
 					},
 				}),
@@ -153,7 +153,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 62969 },	-- Lest the Trail Go Cold
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
-					["g"] = {
+					["groups"] = {
 						i(184551),	-- Attuned Shard (QI!)
 					},
 				}),
@@ -174,7 +174,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60146 },	-- Torment Chamber: Thrall
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
-					["g"] = {
+					["groups"] = {
 						i(184276),	-- Length of Light-Infused Chain (QI!)
 						i(184277),	-- Lion Emblem (QI!)
 						i(184278),	-- Royal Ring (QI!)
@@ -227,13 +227,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					REVENDRETH,
 				},
 				["_drop"] = { "isDaily" },
-				["g"] = { i(161475) },	-- Secret Fish Lure
+				["groups"] = { i(161475) },	-- Secret Fish Lure
 			}),
 			q(62457, {	-- The Great Vault
 				["provider"] = { "n", 173350 },	-- Ba'vol
 				["coord"] = { 64.4, 35.8, ORIBOS },
 				["timeline"] = { REMOVED_10_0_2 },
-				["g"] = {
+				["groups"] = {
 					i(183251),	-- Memory of a Craven Strategem
 					i(183224),	-- Memory of a Deep Focus Draught
 					i(183210),	-- Memory of a Fel Bombardment
@@ -487,7 +487,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["provider"] = { "n", 172431 },	-- Lady Moonberry <Court of Night>
 				["coord"] = { 49.2, 52.2, ARDENWEALD },
-				["g"] = {
+				["groups"] = {
 					i(179562),	-- Duskwarder Branch
 					i(179517),	-- Duskwarder Censor
 					i(181433),	-- Duskwarder Gavel
@@ -512,7 +512,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["provider"] = { "n", 163427 },	-- Kalisthene
 				["coord"] = { 51.1, 43.7, BASTION },
-				["g"] = {
+				["groups"] = {
 					i(181635),	-- Honortoll Gavel
 					i(181630),	-- Honortoll Spear
 					i(181627),	-- Lifepath Crossbow
@@ -538,7 +538,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 52.8, 68.2, MALDRAXXUS },
 					{ 49.7, 43.5, SEAT_OF_THE_PRIMUS },
 				},
-				["g"] = {
+				["groups"] = {
 					i(181685),	-- Gorewrought Barrier
 					i(181689),	-- Gorewrought Bonesaw
 					i(181693),	-- Gorewrought Crossbow
@@ -570,7 +570,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 52.0, 38.6, SINFALL_REACHES },	-- Prince Renathal [for Venthyr]
 					{ 61.4, 60.2, REVENDRETH },	-- Prince Renathal [at Darkhaven, for non-Venthyr]
 				},
-				["g"] = {
+				["groups"] = {
 					i(181208),	-- Anima-Infused Muck
 					i(181224),	-- Avowed Arcanist's Staff
 					i(181221),	-- Balanced Darkwing Stave
@@ -746,7 +746,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
-				["g"] = {
+				["groups"] = {
 					i(178575),	-- Golden Orb of Energy (QI!)
 					i(178591),	-- Ancient Venthyr Relic
 					i(178575),	-- Golden Orb of Energy (QI!)
@@ -775,7 +775,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
-				["g"] = {
+				["groups"] = {
 					i(178571),	-- A Slimy Correspondence (QI!)
 				},
 			}),
@@ -787,7 +787,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
-				["g"] = {
+				["groups"] = {
 					i(178576),	-- Ancient Broker Headpiece (QI!)
 				},
 			}),
@@ -799,7 +799,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
-				["g"] = {
+				["groups"] = {
 					i(178570),	-- Fading Memory Glass (QI!)
 				},
 			}),
@@ -919,7 +919,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
-				["g"] = {
+				["groups"] = {
 					i(178580),	-- Champion's Coin (QI!)
 				},
 			}),

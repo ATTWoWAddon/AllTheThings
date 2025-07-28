@@ -129,7 +129,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			}),
 			ach(40726, {	-- War Within Delves: Tier 11 (Season 1)
 				["maps"] = ALL_REGULAR_DELVES,
-				["g"] = {
+				["groups"] = {
 					title(550),	-- High Explorer <Name>
 				},
 			}),
@@ -138,7 +138,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		m(ZEKVIRS_LAIR, {
 			["icon"] = [[~_.asset("Delves_Nerubian")]],
 			["coord"] = { 6.7, 33.9, NERUBAR },
-			["g"] = {
+			["groups"] = {
 				n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
 					ach(40431, {	-- Hunting the Hunter
 						title(560),	-- <Name> Ascension Breaker
@@ -217,7 +217,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			["icon"] = [[~_.asset("Delves_Goblin")]],
 			["maps"] = { 2426 },
 			["coord"] = { 52.7, 9.4, UNDERMINE },
-			["g"] = {
+			["groups"] = {
 				n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {
 					ach(41529, {	-- Breaking the Bank
 						title(612),	-- %s, the Real Deal
@@ -250,7 +250,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			["icon"] = [[~_.asset("Delves_Shadow")]],
 			--["maps"] = { X },
 			["coord"] = { 38.5, 51.1, KARESH_TAZAVESH },
-			["g"] = {
+			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(42190),	-- Let Me Solo Her: Nexus-Princess Ky'veza
 					ach(42193),	-- My Stab-Happy Nemesis
@@ -285,7 +285,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		ach(41106, {	-- Algari Delver Damage Dealer
 			["timeline"] = { ADDED_11_1_0 },
-			["g"] = {
+			["groups"] = {
 				crit(71057, {	-- Earthcrawl Mines
 					["maps"] = { EARTHCRAWL_MINES },
 				}),
@@ -332,7 +332,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		ach(41109, {	-- Algari Delver Damage Dealer II
 			["timeline"] = { ADDED_11_1_0 },
-			["g"] = {
+			["groups"] = {
 				crit(71043, {	-- Earthcrawl Mines
 					["maps"] = { EARTHCRAWL_MINES },
 				}),
@@ -379,7 +379,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		ach(41110, {	-- Algari Delver Damage Dealer III
 			["timeline"] = { ADDED_11_1_0 },
-			["g"] = {
+			["groups"] = {
 				crit(71058, {	-- Earthcrawl Mines
 					["maps"] = { EARTHCRAWL_MINES },
 				}),
@@ -426,7 +426,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		ach(41107, {	-- Algari Delver Healer
 			["timeline"] = { ADDED_11_1_0 },
-			["g"] = {
+			["groups"] = {
 				crit(71008, {	-- Earthcrawl Mines
 					["maps"] = { EARTHCRAWL_MINES },
 				}),
@@ -473,7 +473,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		ach(41111, {	-- Algari Delver Healer II
 			["timeline"] = { ADDED_11_1_0 },
-			["g"] = {
+			["groups"] = {
 				crit(71072, {	-- Earthcrawl Mines
 					["maps"] = { EARTHCRAWL_MINES },
 				}),
@@ -520,7 +520,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		ach(41112, {	-- Algari Delver Healer III
 			["timeline"] = { ADDED_11_1_0 },
-			["g"] = {
+			["groups"] = {
 				crit(71086, {	-- Earthcrawl Mines
 					["maps"] = { EARTHCRAWL_MINES },
 				}),
@@ -567,7 +567,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		ach(41108, {	-- Algari Delver Tank
 			["timeline"] = { ADDED_11_1_0 },
-			["g"] = {
+			["groups"] = {
 				crit(71022, {	-- Earthcrawl Mines
 					["maps"] = { EARTHCRAWL_MINES },
 				}),
@@ -614,7 +614,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		ach(41113, {	-- Algari Delver Tank II
 			["timeline"] = { ADDED_11_1_0 },
-			["g"] = {
+			["groups"] = {
 				crit(71100, {	-- Earthcrawl Mines
 					["maps"] = { EARTHCRAWL_MINES },
 				}),
@@ -661,7 +661,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		ach(41114, {	-- Algari Delver Tank III
 			["timeline"] = { ADDED_11_1_0 },
-			["g"] = {
+			["groups"] = {
 				crit(71114, {	-- Earthcrawl Mines
 					["maps"] = { EARTHCRAWL_MINES },
 				}),
@@ -744,7 +744,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		ach(40882, {	-- Copious Coffers
 			["maps"] = ALL_REGULAR_DELVES,
-			["g"] = {
+			["groups"] = {
 				title(575),	-- <Name> the Bountiful
 				i(237358, {	-- Silver Coffer Key
 					["timeline"] = { ADDED_11_1_0 },
@@ -782,14 +782,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		ach(41095, {	-- Delve Beyond (500)
 			["timeline"] = { ADDED_11_1_0 },
 			["maps"] = ALL_THE_DELVES,
-			["g"] = {
+			["groups"] = {
 				title(598),	-- Delver %s
 			},
 		}),
 		ach(41096, {	-- Delve Infinite (1000)
 			["timeline"] = { ADDED_11_1_0 },
 			["maps"] = ALL_THE_DELVES,
-			["g"] = {
+			["groups"] = {
 				title(599),	-- Infinite Delver %s
 			},
 		}),
@@ -840,7 +840,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 				40538,	-- Brann Development
 			}},
 			["maps"] = ALL_THE_DELVES,
-			["g"] = {
+			["groups"] = {
 				i(224415),	-- Ivory Goliathus (MOUNT!)
 			},
 		}),
@@ -852,7 +852,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		ach(40098, {	-- Immortal Spelunker
 			["maps"] = ALL_REGULAR_DELVES,
-			["g"] = {
+			["groups"] = {
 				title(549),	-- Immortal Spelunker <Name>
 			},
 		}),
@@ -885,7 +885,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 				40815,	-- The Underkeep Discoveries
 			}},
 			["maps"] = ALL_REGULAR_DELVES,
-			["g"] = {
+			["groups"] = {
 				title(570),	-- <Name>, Seeker of Loot
 			},
 		}),
@@ -894,7 +894,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		ach(42241, {	-- Overcharged Delver
 			["timeline"] = { ADDED_11_1_7 },
-			["g"] = {
+			["groups"] = {
 				crit(105440, {	-- Fungal Folly
 					["maps"] = { FUNGAL_FOLLY },
 				}),
@@ -952,7 +952,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		ach(40885, {	-- The Key to Madness
 			["maps"] = ALL_REGULAR_DELVES,
-			["g"] = {
+			["groups"] = {
 				i(237355, {	-- Golden Coffer Key
 					["timeline"] = { ADDED_11_1_0 },
 				}),
@@ -964,7 +964,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		ach(42212, {	-- Titan Console Overcharged
 			["maps"] = OVERCHARGED_DELVES,
 			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0_SEASONSTART },
-			["g"] = { i(246237) },	-- OC91 Chariot (MOUNT!)
+			["groups"] = { i(246237) },	-- OC91 Chariot (MOUNT!)
 		}),
 		ach(40100, {	-- Undying Caver
 			["maps"] = ALL_REGULAR_DELVES,
@@ -1120,7 +1120,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			["cost"] = {{"c", RESTORED_COFFER_KEY, 1}},
 		},FILTERFUNC_itemID,{
 			["provider"] = { "o", 413590 },	-- Bountiful Coffer
-			["g"] = {
+			["groups"] = {
 				i(220520, {["timeline"]={ REMOVED_11_1_0}}),	-- Radiant Echo
 				i(235897, {["timeline"]={ ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART}}),	-- Radiant Echo
 				i(246771, {["timeline"]={ ADDED_11_2_0_SEASONSTART}}),	-- Radiant Echo
@@ -1374,7 +1374,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		n(CURIO, {	-- TODO: Might be that Curio Belongs to Specific Delves... Have to check // Braghe
 			-- ["sharedDescription"] = "To collect a Curio, it must be selected on Brann prior to an ATT Force Refresh",
-			["g"] = {
+			["groups"] = {
 				--[[
 				-- We could comment these in to give every rank of curio a Source line, but maybe it's not worth it
 				n(RANK_ONE, {
@@ -1820,9 +1820,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		-- Season 1 (probably gonna need to sort out stuff out side of it)
 		q(84519, {	-- Ancient Curiosity: Combat
 			["provider"] = { "i", 228560 },	-- Ancient Curio (TODO: providers ids could be swapped) (TODO: MIGHT CHANGED ITEMID)
-			["maps"] = ALL_REGULAR_DELVES,
 			["timeline"] = { REMOVED_11_1_0 },
-			["g"] = {
+			["maps"] = ALL_REGULAR_DELVES,
+			["groups"] = {
 				-- I don't think this is the curio everyone gets from this quest... is it RNG or only this one
 				-- that wowhead claims?
 				-- i(228580),	-- Brute Force Idol
@@ -1834,9 +1834,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		q(84520, {	-- Ancient Curiosity: Utility
 			["provider"] = { "i", 228581 },	-- Ancient Curio (TODO: providers ids could be swapped) (TODO: MIGHT CHANGED ITEMID)
-			["maps"] = ALL_REGULAR_DELVES,
 			["timeline"] = { REMOVED_11_1_0 },
-			["g"] = {
+			["maps"] = ALL_REGULAR_DELVES,
+			["groups"] = {
 				i(228582),	-- Streamlined Relic
 				-- i(225901, {	-- Streamlined Relic [Rank 1] (only tracking Rank 4 curios)
 				-- 	["bonusID"] = 11255,
@@ -1844,77 +1844,77 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			},
 		}),
 		q(81514, {	-- Bountiful Delves
-			["sourceQuests"] = { 83315 },	-- Preparing for the Unknown
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
+			["sourceQuests"] = { 83315 },	-- Preparing for the Unknown
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 		}),
 		q(81510, {	-- Ship It!
-			["sourceQuests"] = { 81514 },	-- Bountiful Delves
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
+			["sourceQuests"] = { 81514 },	-- Bountiful Delves
 			["coord"] = { 47.4, 44.4, DORNOGAL },
-			["g"] = {
+			["groups"] = {
 				i(219391),	-- Delver's Dirigible (MOUNT!)
 			},
 		}),
 		q(81593, {	-- Maximum Potential
-			["sourceQuests"] = { 81510 },	-- Ship It!
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
+			["sourceQuests"] = { 81510 },	-- Ship It!
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { REMOVED_11_1_0 },
 		}),
 		q(81595, {	-- Seasonal Start
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["sourceQuests"] = {
 				81510,	-- Ship It!
 				84365,	-- Something on the Horizon
 			},
 			["sourceQuestNumRequired"] = 1,
-			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { REMOVED_11_1_0 },
 		}),
 		q(84224, {	-- To Delves!
-			--["sourceQuests"] = { 81510 },	-- Ship It! TODO: wrong, auto pop on fresh (first) 80s on account, as of 11.0.5
 			--["provider"] = { "n", xxxxx },	-- Auto-accept?
+			--["sourceQuests"] = { 81510 },	-- Ship It! TODO: wrong, auto pop on fresh (first) 80s on account, as of 11.0.5
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { REMOVED_11_1_0 },
 		}),
 		q(81596, {	-- Delve Hunter
-			["sourceQuests"] = { 81595 },	-- Seasonal Start
 			["provider"] = { "n", 226763 },	-- Naleidea Rivergleam
+			["sourceQuests"] = { 81595 },	-- Seasonal Start
 			["coord"] = { 47.8, 44.5, DORNOGAL },
 			["timeline"] = { REMOVED_11_1_0 },
 		}),
 		q(83500, {	-- Zekvir, Hand of the Harbinger
-			["sourceQuests"] = { 81596 },	-- Delve Hunter
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
+			["sourceQuests"] = { 81596 },	-- Delve Hunter
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { REMOVED_11_1_0 },
-			["g"] = { i(225547) },	-- Toxic Victory (TOY!)
+			["groups"] = { i(225547) },	-- Toxic Victory (TOY!)
 		}),
 		-- Season 2
 		q(86461, {	-- Ancient Curiosity: Combat
 			["provider"] = { "i", 234330 },	-- Ancient Curio
-			["maps"] = ALL_REGULAR_DELVES,	-- s2 delves or all delves?
 			["timeline"] = { ADDED_11_1_0_SEASONSTART },
+			["maps"] = ALL_REGULAR_DELVES,	-- s2 delves or all delves?
 		}),
 		q(86462, {	-- Ancient Curiosity: Utility
 			["provider"] = { "i", 234329 },	-- Ancient Curio
-			["maps"] = ALL_REGULAR_DELVES,	-- s2 delves or all delves?
 			["timeline"] = { ADDED_11_1_0_SEASONSTART },
+			["maps"] = ALL_REGULAR_DELVES,	-- s2 delves or all delves?
 		}),
 		q(88947, {	-- Undermined Delves
-			--["sourceQuests"] = { xx },	-- ??
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
+			--["sourceQuests"] = { xx },	-- ??
 			["coord"] = { 47.6, 44.3, DORNOGAL },
-			["isBreadcrumb"] = true,
 			["timeline"] = { ADDED_11_1_0_SEASONSTART },
+			["isBreadcrumb"] = true,
 		}),
 		q(85242, {	-- Seasonal Refresher
-			["sourceQuests"] = { 88947 },	-- Undermined Delves
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
+			["sourceQuests"] = { 88947 },	-- Undermined Delves
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { ADDED_11_1_0_SEASONSTART },
-			["g"] = {
+			["groups"] = {
 				i(233281, {	-- Delver's Cosmetic Surprise Bag
 					-- it seems like give you as reward any cosmetic from s1 delves that wasn't looted before
 				}),
@@ -1922,11 +1922,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			},
 		}),
 		q(85243, {	-- I Want My Hat Back
-			["sourceQuests"] = { 85242 },	-- Seasonal Refresher
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
+			["sourceQuests"] = { 85242 },	-- Seasonal Refresher
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { ADDED_11_1_0_SEASONSTART },
-			["g"] = {
+			["groups"] = {
 				o(500694, {	-- Nerubian Lord
 					i(233025),	-- Giant Pile of Gold (QI!)
 					i(233026),	-- Johnny's Share of the Spoils (QI!)
@@ -1937,11 +1937,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			},
 		}),
 		q(85244, {	-- Defeating the Underpin
-			["sourceQuests"] = { 85243 },	-- I Want My Hat Back
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
+			["sourceQuests"] = { 85243 },	-- I Want My Hat Back
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { ADDED_11_1_0_SEASONSTART },
-			["g"] = {
+			["groups"] = {
 				i(212170),	-- Brann's Spare Hat (COSMETIC!)
 				i(230727),	-- Explosive Victory (TOY!)
 			},
@@ -1952,32 +1952,31 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		-- Season 2 - Overload stuff
 		q(90968, {	-- Titanic Rumblings
-			["isBreadcrumb"] = true,
 			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
+			["isBreadcrumb"] = true,
 		}),
 		q(90969, {	-- Titan Consoles
-			["sourceQuests"] = { 90968 },	-- Titanic Rumblings
 			["provider"] = { "n", 245191 },	-- Dagran Thaurissan II (can also be picked up from journal)
-			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
+			["sourceQuests"] = { 90968 },	-- Titanic Rumblings
 			["coord"] = { 48.0, 43.4, DORNOGAL },
+			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
 		}),
 		q(90970, {	-- Titan Disc-Count
-			["sourceQuests"] = { 90969 },	-- Titan Consoles
 			["provider"] = { "n", 235490 },	-- Overcharged Titan Console
+			["sourceQuests"] = { 90969 },	-- Titan Consoles
 			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
 			["maps"] = OVERCHARGED_DELVES,
-			["g"] = {
+			["groups"] = {
 				i(244466),	-- Dagran's Pouch of Fragments
 			},
 		}),
 		q(90971, {	-- Overcharged Console
-			["sourceQuests"] = { 90970 },	-- Titan Disc-Count
 			["provider"] = { "n", 235490 },	-- Overcharged Titan Console
+			["sourceQuests"] = { 90970 },	-- Titan Disc-Count
 			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
 			["maps"] = OVERCHARGED_DELVES,
 		}),
 		q(91009, {	-- Durable Information Storage Container
-			["sourceQuests"] = { 90971 },	-- Overcharged Console (TODO: with 11.2 ptr this quest exist but I will test out chain next time)
 			["qgs"] = {
 				-- #if BEFORE 11.2.0
 				235490,	-- Overcharged Titan Console
@@ -1986,9 +1985,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 				249592,	-- Titan Console
 				-- #endif
 			},
-			["timeline"] = { ADDED_11_1_7 },
+			["sourceQuests"] = { 90971 },	-- Overcharged Console (TODO: with 11.2 ptr this quest exist but I will test out chain next time)
 			["coord"] = { 48.0, 43.4, DORNOGAL },
-			["g"] = {
+			["timeline"] = { ADDED_11_1_7 },
+			["groups"] = {
 				i(242664),	-- Durable Information Securing Container (cloth)
 				i(245964),	-- Durable Information Securing Container (leather)
 				i(245965),	-- Durable Information Securing Container (mail)
@@ -1997,93 +1997,93 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			},
 		}),
 		q(91026, {	-- Gathering an Upgrade
-			["sourceQuests"] = { 91009 },	-- Durable Information Storage Container
-			["providers"] = {
-				{ "n", 245191 },	-- Dagran Thaurissan II
-				{ "n", 235490 },	-- Overcharged Titan Console
+			["qgs"] = {
+				245191,	-- Dagran Thaurissan II
+				235490,	-- Overcharged Titan Console
 			},
-			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
+			["sourceQuests"] = { 91009 },	-- Durable Information Storage Container
 			["coord"] = { 48.0, 43.4, DORNOGAL },
-			["g"] = {
+			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
+			["groups"] = {
 				i(244825),	-- Faulty Titan Directives (QI!)
 				i(244696),	-- Overcharged Chest (delve s2 loot table)
 				i(244311),	-- Titan Memory Card
 			},
 		}),
 		q(91030, {	-- New Titan Directives
-			["sourceQuests"] = { 91026 },	-- Gathering an Upgrade
 			["provider"] = { "n", 245191 },	-- Dagran Thaurissan II
-			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
+			["sourceQuests"] = { 91026 },	-- Gathering an Upgrade
 			["coord"] = { 48.0, 43.4, DORNOGAL },
-			["g"] = {
+			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
+			["groups"] = {
 				i(244696),	-- Overcharged Chest (delve s2 loot table)
 			},
 		}),
 		q(91031, {	-- Pushing it to the Limit
-			["sourceQuests"] = { 91030 },	-- New Titan Directives
 			["provider"] = { "n", 245191 },	-- Dagran Thaurissan II
-			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
+			["sourceQuests"] = { 91030 },	-- New Titan Directives
 			["coord"] = { 48.0, 43.4, DORNOGAL },
-			["g"] = {
+			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
+			["groups"] = {
 				i(244696),	-- Overcharged Chest (delve s2 loot table)
 				--i(244311),	-- Titan Memory Card
 			},
 		}),
 		q(91033, {	-- Monitoring 'Construct'ing
-			["sourceQuests"] = { 91031 },	-- Pushing it to the Limit
 			["provider"] = { "n", 245191 },	-- Dagran Thaurissan II
-			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
+			["sourceQuests"] = { 91031 },	-- Pushing it to the Limit
 			["coord"] = { 48.0, 43.4, DORNOGAL },
-			["g"] = {
+			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
+			["groups"] = {
 				i(244696),	-- Overcharged Chest (delve s2 loot table)
 			},
 		}),
 		q(91035, {	-- Construct De-Escalation
-			["sourceQuests"] = { 91033 },	-- Monitoring 'Construct'ing
 			["provider"] = { "n", 245191 },	-- Dagran Thaurissan II
-			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
+			["sourceQuests"] = { 91033 },	-- Monitoring 'Construct'ing
 			["coord"] = { 48.0, 43.4, DORNOGAL },
-			["g"] = {
+			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
+			["groups"] = {
 				i(244696),	-- Overcharged Chest (delve s2 loot table)
 			},
 		}),
 		-- Season 3
 		q(90776, {	-- Ancient Curiosity: Combat
 			["provider"] = { "i", 242849 },	-- Ancient Curio
-			["maps"] = ALL_REGULAR_DELVES,
 			["timeline"] = { ADDED_11_2_0_SEASONSTART },
+			["maps"] = ALL_REGULAR_DELVES,
 		}),
 		q(90778, {	-- Ancient Curiosity: Utility
 			["provider"] = { "i", 242850 },	-- Ancient Curio
-			["maps"] = ALL_REGULAR_DELVES,
 			["timeline"] = { ADDED_11_2_0_SEASONSTART },
+			["maps"] = ALL_REGULAR_DELVES,
 		}),
 		q(91780, {	-- Ethereal Delves
-			-- auto pop on login
 			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+			-- auto pop on login
 		}),
 		q(91781, {	-- Seasonal Reminder
-			["sourceQuests"] = { 91780 },	-- Ethereal Delves
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
-			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+			["sourceQuests"] = { 91780 },	-- Ethereal Delves
 			["coord"] = { 47.4, 44.4, DORNOGAL },
-			["g"] = {
+			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+			["groups"] = {
 				i(248127),	-- Delver's Cosmetic Surprise Bag
 				i(248126),	-- Delver's Starter Kit
 			},
 		}),
 		q(91782, {	-- Repossessed!
-			["sourceQuests"] = { 91781 },	-- Seasonal Reminder
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
-			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+			["sourceQuests"] = { 91781 },	-- Seasonal Reminder
 			["coord"] = { 47.4, 44.4, DORNOGAL },
-			["g"] = {
+			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+			["groups"] = {
 				o(563555, {	-- Writ of Repossession
 					["coord"] = { 47.5, 44.4, DORNOGAL },
 				}),
 				o(564545, {	-- Brann's Repossessed Gear
 					["coord"] = { 47.1, 19.9, KARESH_TAZAVESH },
-					["g"] = {
+					["groups"] = {
 						i(248129),	-- Brann's Repossessed Gear (QI!)
 					},
 				}),
@@ -2092,11 +2092,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			},
 		}),
 		q(91089, {	-- Defeating Ky'veza
-			["sourceQuests"] = { 91782 },	-- Repossessed!
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
-			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+			["sourceQuests"] = { 91782 },	-- Repossessed!
 			["coord"] = { 47.4, 44.4, DORNOGAL },
-			["g"] = {
+			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+			["groups"] = {
 				i(244470),	--  Etheric Victory (TOY!)
 			},
 		}),
@@ -2105,14 +2105,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 	n(QUESTS, sharedData({
 		["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 		["coord"] = { 47.4, 44.4, DORNOGAL },
-		["weekly"] = true,
+		["isWeekly"] = true,
 	}, {
 		q(82746),	-- Delves: Breaking Tough to Loot Stuff
 		q(82707),	-- Delves: Earthen Defense
 		q(82710),	-- Delves: Empire-ical Exploration
 		q(82706),	-- Delves: Khaz Algar Research
 		q(82711, {	-- Delves: Lost and Found
-			["g"] = {
+			["groups"] = {
 				i(224159),	-- Brann's Compass (QI!)
 				i(224160),	-- Brann's Hat (QI!)
 				i(224158),	-- Brann's Letter Opener (QI!)
@@ -2120,7 +2120,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		q(82708),	-- Delves: Nerubian Menace
 		q(82709, {	-- Delves: Percussive Archaeology
-			["g"] = {
+			["groups"] = {
 				i(224146),	-- Khaz Algar Archaeological Fragments (QI!)
 			},
 		}),
@@ -2159,7 +2159,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		-- Mislaid Curiosities can be found throughout all Delves, random coordinates
 		n(245938, {	-- Flickergate
 			["timeline"] = { ADDED_11_2_0 },
-			["g"] = {
+			["groups"] = {
 				i(248764),	-- Artisanal Blink Trap
 				i(248954),	-- Nether-warped Seedlings (also from Nemesis Strongbox s3)
 				i(245524),	-- Shadowguard's Phasebound Visor (COSMETIC!)
@@ -2168,7 +2168,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		o(567732, {	-- Kaja'6-Pack
 			["timeline"] = { ADDED_11_2_0 },
-			["g"] = {
+			["groups"] = {
 				i(249032),	-- Dulux Bluesberry Blast
 				i(249031),	-- Supreme Mangoro Madness
 			},
@@ -2176,7 +2176,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		o(455914, {	-- Mislaid Curiosity
 			["description"] = "Contains Chunk of Companion Experience tokens.",
 			["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-			["g"] = {
+			["groups"] = {
 				-- First versions
 				i(228071),	-- Chunk of Companion Experience (Uncommon)
 				i(228072),	-- Chunk of Companion Experience (Rare)
@@ -2190,7 +2190,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		o(478443, {	-- Mislaid Curiosity
 			["description"] = "Contains a 'Chunk of Companion Experience' token.\n\n|cFF40bf40Massively buffed in 11.1, they can now provide up to 18k Brann XP each, depending on the Delves' Level & which experience token you receive.|r",
 			["timeline"] = { ADDED_11_1_0 },
-			["g"] = {
+			["groups"] = {
 				-- Brann Experience
 				i(235504),	-- Chunk of Companion Experience (Uncommon)
 				i(235503),	-- Chunk of Companion Experience (Rare)
@@ -2217,7 +2217,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		o(455759, {	-- Hulking Raptorial Claw
 			["description"] = "Left behind by Zekvir when he invades a delve.",
 			["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-			["g"] = {
+			["groups"] = {
 				i(218126),	-- Befouler's Syringe
 				i(219381, {	-- Fate Weaver
 					["description"] = "Fly to Fate Weaver's Spool in Azj-Kahet to perform the ritual, coords 64.2, 74.8",
@@ -2231,7 +2231,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		o(506498, {	-- Gilded Stash
 			["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
-			["g"] = {
+			["groups"] = {
 				-- gilded undermine crest x7
 			},
 		}),
@@ -2239,35 +2239,35 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			["description"] = "Left behind by Underpin when he is defeated in a delve.",
 			["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 			["cr"] = 236942,	-- The Underpin
-			["g"] = {
+			["groups"] = {
 				i(235813),	-- Machine Gob's Iron Grin
 				--i(233071), -- Delver's Bounty
 			},
 		}),
 		o(503871, {	-- Nemesis Strongbox (gray)
 			["timeline"] = { ADDED_11_1_0 },
-			["g"] = {
+			["groups"] = {
 				-- gold bag
 				-- TODO: have other chunk of exp too?
 			},
 		}),
 		o(503868, {	-- Nemesis Strongbox (uncommon)
 			["timeline"] = { ADDED_11_1_0 },
-			["g"] = {
+			["groups"] = {
 				-- gold bag, delves reagents
 				-- TODO: have other chunk of exp too?
 			},
 		}),
 		o(503869, {	-- Nemesis Strongbox (rare)
 			["timeline"] = { ADDED_11_1_0 },
-			["g"] = {
+			["groups"] = {
 				-- gold bag, delves reagents
 				-- TODO: have other chunk of exp too?
 			},
 		}),
 		o(503870, {	-- Nemesis Strongbox (epic)
 			["timeline"] = { ADDED_11_1_0 },
-			["g"] = {
+			["groups"] = {
 				-- gold bag, delves reagents
 				i(235607),	-- Chunk of Companion Experience (epic)
 				i(235813),	-- Machine Gob's Iron Grin
@@ -2277,7 +2277,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 	n(VENDORS, {
 		n(226250, {	-- Reno Jackson <Delve Treasures>
 			["coord"] = { 47.6, 45.0, DORNOGAL },
-			["g"] = {
+			["groups"] = {
 				n(DELVERS_DIRIGIBLE_SCHEMATIC, {
 					i(224981, {	-- Delver's Dirigible Schematic: Brown Paint (MM!)
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
@@ -2354,7 +2354,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 					i(235608, {	-- Nightfall Sanctum Campsite (CI!)
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
-						["g"] = { campsite(5) },	-- Cultists' Quay (CS!)
+						["groups"] = { campsite(5) },	-- Cultists' Quay (CS!)
 					}),
 				}),
 				n(ARMOR, {
@@ -2519,7 +2519,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		}),
 		n(208070, {	-- Sir Finley Mrgglton <Delve Treasures>
 			["coord"] = { 47.6, 43.6, DORNOGAL },
-			["g"] = {
+			["groups"] = {
 				n(DELVERS_DIRIGIBLE_SCHEMATIC, {
 					i(235685, {	-- Delver's Dirigible Schematic: Drill (MM!)
 						["cost"] = {{"c", UNDERCOIN, 2500}},
@@ -2667,7 +2667,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 						-- #endif
 						-- Listening 500+ Items is excessive bloat, especially since you get around 150 Undercoins per Delve
 						-- Even if you have all items, which takes ages, its probably better to keep them for future Delve Seasons -Goldenshacal 24th Sep 2024
-						--["g"] = {
+						--["groups"] = {
 						--	currency(RESONANCE_CRYSTALS),
 						--},
 					}),
@@ -2969,7 +2969,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 	m(ARCHIVAL_ASSAULT, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
 		["icon"] = [[~_.asset("Delves_Shadow")]],
 		["coord"] = { 55.1, 48.1, KARESH },
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(42679),	-- Archival Assault Discoveries
 				ach(42771, {	-- Archival Assault Stories
@@ -2990,7 +2990,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 	m(EARTHCRAWL_MINES, {
 		["icon"] = [[~_.asset("Delves_Nerubian")]],
 		["coord"] = { 38.6, 73.9, ISLE_OF_DORN },
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(40806),	-- Earthcrawl Mines Discoveries
 				ach(40527, {	-- Earthcrawl Mines Stories
@@ -3021,7 +3021,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 				}),
 				i(213000),	-- Holy Flamethrower Torch (QI!)
 				i(213085, {	-- Lost Treasure (QI!)
-					["timeline"] = { ADDED_11_1_0 }
+					["timeline"] = { ADDED_11_1_0 },
 				}),
 				i(212868),	-- Precious Ore (QI!)
 				i(226222),	-- Webbed Hookshot (QI!)
@@ -3068,7 +3068,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 	m(EXCAVATION_SITE_9, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
 		["icon"] = [[~_.asset("Delves_Goblin")]],
 		["coord"] = { 81.0, 98.2, THE_RINGING_DEEPS },
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(41100),	-- Excavation Site 9 Discoveries
 				ach(41098, {	-- Excavation Site 9 Stories
@@ -3119,7 +3119,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 	m(FUNGAL_FOLLY, {
 		["icon"] = [[~_.asset("Delves_Fungarian")]],
 		["coord"] = { 51.9, 65.5, ISLE_OF_DORN },
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(40803),	-- Fungal Folly Discoveries
 				ach(40525, {	-- Fungal Folly Stories
@@ -3145,7 +3145,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			filter(MISC, {
 				o(409302, {	-- Dispersal Crystal
 					["coord"] = { 63, 54.3, FUNGAL_FOLLY },
-					["g"] = {
+					["groups"] = {
 						i(209788),	-- Dispersion Crystal (QI!)
 					},
 				}),
@@ -3153,7 +3153,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 				i(244900, {["timeline"] = { ADDED_11_1_7 }}),	-- Miniature Titan Disc: Spark Burst (CI!)
 				o(536065, {	-- Nuts and Bolts
 					["timeline"] = { ADDED_11_2_0 },
-					["g"] = {
+					["groups"] = {
 						i(250107),	-- Nuts and Bolts (QI!)
 					},
 				}),
@@ -3187,7 +3187,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 				o(454093, {	-- Sturdy Chest
 					["coord"] = { 49.6, 35.7, FUNGAL_FOLLY },
 					["questID"] = 83452,
-					["g"] = {
+					["groups"] = {
 						i(225556),	-- Ancient Construct (TOY!) -- confirmed 2/2
 					},
 				}),
@@ -3205,7 +3205,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 	m(KRIEGVALS_REST, {
 		["icon"] = [[~_.asset("Delves_Kobold")]],
 		["coord"] = { 62.1, 42.7, ISLE_OF_DORN },
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(40807),	-- Kriegval's Rest Discoveries
 				ach(40526, {	-- Kriegval's Rest Stories
@@ -3271,7 +3271,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 	m(MYCOMANCER_CAVERN, {
 		["icon"] = [[~_.asset("Delves_Fungarian")]],
 		["coord"] = { 71.1, 31.1, HALLOWFALL },
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(40808),	-- Mycomancer Cavern Discoveries
 				ach(40531, {	-- Mycomancer Cavern Stories
@@ -3309,14 +3309,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 				o(456581, {	-- Egg Clutch
 					["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 12 },
 					["coord"] = { 58.1, 31.2, MYCOMANCER_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(225339),	-- Chicken Eggs (QS!/QI!)
 					},
 				}),
 				o(456583, {	-- Lost Shoe
 					["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 12 },
 					["coord"] = { 38.8, 21.7, MYCOMANCER_CAVERN },
-					["g"] = {
+					["groups"] = {
 						i(225336),	-- A Lost Shoe (QS!/QI!)
 					},
 				}),
@@ -3361,7 +3361,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 	m(NIGHTFALL_SANCTUM, {
 		["icon"] = [[~_.asset("Delves_Shadow")]],
 		["coord"] = { 34.6, 46.8, HALLOWFALL },
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(40809),	-- Nightfall Sanctum Discoveries
 				ach(40530, {	-- Nightfall Sanctum Stories
@@ -3428,7 +3428,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			2422,	-- The High Decks
 			2423,	-- Entrance
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(41101),	-- Sidestreet Sluice Discoveries
 				ach(41099, {	-- Sidestreet Sluice Stories
@@ -3477,7 +3477,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 	m(SKITTERING_BREACH, {
 		["icon"] = [[~_.asset("Delves_Nerubian")]],
 		["coord"] = { 65.5, 61.5, HALLOWFALL },
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(40810),	-- Skittering Breach Discoveries
 				ach(40533, {	-- Skittering Breach Stories
@@ -3537,7 +3537,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		["maps"] = {
 			2314,
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(40811),	-- Tak-Rethan Abyss Discoveries
 				ach(40535, {	-- Tak-Rethan Abyss Stories
@@ -3594,7 +3594,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 	m(THE_DREAD_PIT, {
 		["icon"] = [[~_.asset("Delves_Nerubian")]],
 		["coord"] = { 74.1, 37.7, THE_RINGING_DEEPS },
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(40812),	-- The Dread Pit Discoveries
 				ach(40529, {	-- The Dread Pit Stories
@@ -3649,7 +3649,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 	m(THE_SINKHOLE, {
 		["icon"] = [[~_.asset("Delves_Kobyss")]],
 		["coord"] = { 50.6, 53.2, HALLOWFALL },
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(40813),	-- The Sinkhole Discoveries
 				ach(40532, {	-- The Sinkhole Stories
@@ -3711,7 +3711,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 		["icon"] = [[~_.asset("Delves_Nerubian")]],
 		["coord"] = { 46.6, 25.7, AZJ_KAHET },
 		["maps"] = { 2313 },	-- The Spiral Weave
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(40814),	-- The Spiral Weave Discoveries
 				ach(40536, {	-- The Spiral Weave Stories
@@ -3743,7 +3743,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 				})),
 				o(506525, {	-- Plundered Artifacts
 					["timeline"] = { ADDED_11_1_0 },
-					["g"] = { i(235257) },	-- Plundered Artifacts (QI!)
+					["groups"] = { i(235257) },	-- Plundered Artifacts (QI!)
 				}),
 			}),
 			n(QUESTS, {
@@ -3752,9 +3752,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 					["coord"] = { 58.9, 18.6, AZJ_KAHET },
 				}),
 				q(85666, {	-- Delver's Call: Spiral Weave
-					-- cross complete with 83770
 					["provider"] = { "o", 487851 },	-- DELVER'S CALL: The Spiral Weave
 					["coord"] = { 53.0, 76.1, THE_SPIRAL_WEAVE },
+					-- cross complete with 83770
 				}),
 			}),
 			n(TREASURES, {
@@ -3783,7 +3783,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 	m(THE_UNDERKEEP, {
 		["icon"] = [[~_.asset("Delves_Nerubian")]],
 		["coord"] = { 58.1, 65.8, 2213 },
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(40815),	-- The Underkeep Discoveries
 				ach(40534, {	-- The Underkeep Stories
@@ -3843,7 +3843,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 	m(THE_WATERWORKS, {
 		["icon"] = [[~_.asset("Delves_Kobold")]],
 		["coord"] = { 46.3, 48.5, THE_RINGING_DEEPS },
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(40816),	-- The Waterworks Discoveries
 				ach(40528, {	-- The Waterworks Stories

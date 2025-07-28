@@ -132,9 +132,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["petBattleLvl"] = 25,
 					["groups"] = {
 						q(45083, {	-- Crysa's Flyers
-							-- CRIEVE NOTE: Not sure if there's a source achievement or quest required to do first.
 							["timeline"] = { ADDED_7_1_0 },
 							["isDaily"] = true,
+							-- CRIEVE NOTE: Not sure if there's a source achievement or quest required to do first.
 							["groups"] = {
 								i(142447, {	-- Torn Sack of Pet Supplies
 									["timeline"] = { ADDED_7_1_0 },
@@ -1312,20 +1312,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(26701, {	-- Flight to Brackenwall
-					["description"] = "This quest is only available for characters who haven't started questing in Dustwallow Marsh, and requires the completion of the breadcrumb quest 'The Call of Kalimdor'. Said quest can be obtained from an ogre swimming in a circle near the pier at Booty Bay in The Cape of Stranglethorn.",
 					["qg"] = 3391,	-- Gazlowe
 					["sourceQuest"] = 26696,	-- The Call of Kalimdor
 					["coord"] = { 68.4, 69.0, NORTHERN_BARRENS },
+					["description"] = "This quest is only available for characters who haven't started questing in Dustwallow Marsh, and requires the completion of the breadcrumb quest 'The Call of Kalimdor'. Said quest can be obtained from an ogre swimming in a circle near the pier at Booty Bay in The Cape of Stranglethorn.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 35,
 				}),
 				q(26702, {	-- Flight to Theramore
-					["description"] = "This quest is only available for characters who haven't started questing in Dustwallow Marsh, and requires the completion of the breadcrumb quest 'The Call of Kalimdor'. Said quest can be obtained from Corporal Jeyne on the pier at Booty Bay in The Cape of Stranglethorn.",
 					["qg"] = 3391,	-- Gazlowe
 					["sourceQuest"] = 26596,	-- The Call of Kalimdor
 					["coord"] = { 68.4, 69.0, NORTHERN_BARRENS },
+					["description"] = "This quest is only available for characters who haven't started questing in Dustwallow Marsh, and requires the completion of the breadcrumb quest 'The Call of Kalimdor'. Said quest can be obtained from Corporal Jeyne on the pier at Booty Bay in The Cape of Stranglethorn.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1373,7 +1373,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(7329, {	-- Thun'grim's Sword
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
-					}
+					},
 				}),
 				q(1799, {	-- Fragments of the Orb of Orahil
 					["qg"] = 6266,	-- Menara Voidrender
@@ -2248,7 +2248,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
 							["timeline"] = { ADDED_1_3_0, REMOVED_4_0_3 },
 						}),
-					}
+					},
 				}),
 				q(29111, {	-- Mor'shan Caravan Delivery
 					["qg"] = 52207,	-- Nagala Whipshank
@@ -2621,8 +2621,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 6365,	-- Meats to Orgrimmar
 					["coord"] = { 51.5, 30.3, THE_BARRENS },
-					["lvl"] = lvlsquish(10, 10, 5),
 					["races"] = { ORC, TROLL },
+					["lvl"] = lvlsquish(10, 10, 5),
 				}),
 				-- #endif
 				q(3923, {	-- Rilli Greasygob
@@ -3232,13 +3232,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 10,
 				}),
 				q(1795, {	-- The Binding (Felhunter)
-					["qg"] = 6251,	-- Strahad Farsan
 					["allianceQuestData"] = {
 						["sourceQuest"] = 1804,	-- Tome of the Cabal (3/3) (A)
 					},
 					["hordeQuestData"] = {
 						["sourceQuest"] = 1805,	-- Tome of the Cabal (3/3) (H)
 					},
+					["qg"] = 6251,	-- Strahad Farsan
 					["coord"] = { 62.6, 35.4, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
@@ -3263,9 +3263,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						4962,	-- Shard of a Felhound
 					},
 					["coord"] = { 62.4, 35.4, THE_BARRENS },
-					["lockCriteria"] = { 1, "questID", 4975 },	-- The Completed Orb of Noh'Orahil (mutually exclusive)
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
+					["lockCriteria"] = { 1, "questID", 4975 },	-- The Completed Orb of Noh'Orahil (mutually exclusive)
 					["lvl"] = 35,
 					["groups"] = {
 						i(15108, {	-- Orb of Dar'Orahil
@@ -3283,9 +3283,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						4963,	-- Shard of an Infernal
 					},
 					["coord"] = { 62.4, 35.4, THE_BARRENS },
-					["lockCriteria"] = { 1, "questID", 4964 },	-- The Completed Orb of Dar'Orahil (mutually exclusive)
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
+					["lockCriteria"] = { 1, "questID", 4964 },	-- The Completed Orb of Dar'Orahil (mutually exclusive)
 					["lvl"] = 35,
 					["groups"] = {
 						i(15107, {	-- Orb of Noh'Orahil
@@ -3986,11 +3986,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(14068, {	-- Waptor Twapping
 					["qg"] = 34828,	-- Kala'ma
 					["coord"] = { 62.0, 63.2, NORTHERN_BARRENS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
 					-- #if AFTER 9.0.1
 					["description"] = "This quest is a stand-alone quest involving level 30 raptors and have nothing to do with the level 35 Kor'kron soldiers around the zone. The level 35 soldiers got added with patch 5.3.0 as part of the late MoP storyline.",
 					-- #endif
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/5 Wittle Waptor
 							["providers"] = {

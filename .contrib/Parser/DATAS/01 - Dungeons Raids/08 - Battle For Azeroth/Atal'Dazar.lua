@@ -9,7 +9,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			935,	-- Sacrificial Pits
 		},
 		["lvl"] = 110,
-		["g"] = {
+		["groups"] = {
 			n(DROPS, {
 				i(159841, {	-- Tome of Hex: Skeletal Hatchling (CI!)
 					["crs"] = { 122963 },	-- Rezan
@@ -39,7 +39,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(2082, {	-- Priestess Alun'za
 					["crs"] = { 122967 },	-- Priestess Alun'za
-					["g"] = {
+					["groups"] = {
 						i(158321),	-- Wand of Zealous Purification
 						i(158322),	-- Aureus Vessel
 						i(158309),	-- Wristlinks of Alchemical Transfusion
@@ -53,7 +53,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(2036, {	-- Vol'kaal
 					["crs"] = { 122965 },	-- Vol'kaal
-					["g"] = {
+					["groups"] = {
 						i(159632),	-- Adulation Enforcer
 						i(158375),	-- Drape of the Loyal Vassal
 						i(158348),	-- Wraps of Everliving Fealty
@@ -65,7 +65,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(2083, {	-- Rezan
 					["crs"] = { 122963 },	-- Rezan
-					["g"] = {
+					["groups"] = {
 						i(168139),	-- Long Regal Sinew (LW reagent, has the highest drop chance from this boss)
 						i(160269),	-- Soulrending Claw
 						i(158711),	-- Hallowed Ossein Longbow
@@ -80,7 +80,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(2030, {	-- Yazma
 					["crs"] = { 122968 },	-- Yazma
-					["g"] = {
+					["groups"] = {
 						ach(12824),	-- Atal'Dazar
 						i(158323),	-- Soulrender's Fang
 						i(159358),	-- Coif of the Court Spider
@@ -97,10 +97,10 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				["lvl"] = 120,
-				["g"] = {
+				["groups"] = {
 					e(2082, {	-- Priestess Alun'za
 						["crs"] = { 122967 },	-- Priestess Alun'za
-						["g"] = {
+						["groups"] = {
 							i(158321),	-- Wand of Zealous Purification
 							i(158322),	-- Aureus Vessel
 							i(158309),	-- Wristlinks of Alchemical Transfusion
@@ -114,7 +114,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2036, {	-- Vol'kaal
 						["crs"] = { 122965 },	-- Vol'kaal
-						["g"] = {
+						["groups"] = {
 							i(159632),	-- Adulation Enforcer
 							i(158375),	-- Drape of the Loyal Vassal
 							i(158348),	-- Wraps of Everliving Fealty
@@ -126,7 +126,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2083, {	-- Rezan
 						["crs"] = { 122963 },	-- Rezan
-						["g"] = {
+						["groups"] = {
 							i(168139),	-- Long Regal Sinew (LW reagent, has the highest drop chance from this boss)
 							i(160269),	-- Soulrending Claw
 							i(158711),	-- Hallowed Ossein Longbow
@@ -141,7 +141,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2030, {	-- Yazma
 						["crs"] = { 122968 },	-- Yazma
-						["g"] = {
+						["groups"] = {
 							ach(12825),	-- Heroic: Atal'Dazar
 							i(158323),	-- Soulrender's Fang
 							i(159358),	-- Coif of the Court Spider
@@ -160,7 +160,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				["difficulties"] = { DIFFICULTY.DUNGEON.KEYSTONE, DIFFICULTY.DUNGEON.MYTHIC },
 				["lvl"] = 120,
-				["g"] = {
+				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(12270, {	-- Bringing Hexy Back
 							crit(38504, {	-- Vol'kaal defeated
@@ -180,7 +180,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 
 					e(2082, {	-- Priestess Alun'za
 						["crs"] = { 122967 },	-- Priestess Alun'za
-						["g"] = {
+						["groups"] = {
 							ach(12272),	-- Gold Fever
 							i(158321),	-- Wand of Zealous Purification
 							i(158322),	-- Aureus Vessel
@@ -195,7 +195,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2036, {	-- Vol'kaal
 						["crs"] = { 122965 },	-- Vol'kaal
-						["g"] = {
+						["groups"] = {
 							i(159632),	-- Adulation Enforcer
 							i(158375),	-- Drape of the Loyal Vassal
 							i(158348),	-- Wraps of Everliving Fealty
@@ -207,7 +207,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2083, {	-- Rezan
 						["crs"] = { 122963 },	-- Rezan
-						["g"] = {
+						["groups"] = {
 							i(168139),	-- Long Regal Sinew (LW reagent, has the highest drop chance from this boss)
 							i(160269),	-- Soulrending Claw
 							i(158711),	-- Hallowed Ossein Longbow
@@ -222,7 +222,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(2030, {	-- Yazma
 						["crs"] = { 122968 },	-- Yazma
-						["g"] = {
+						["groups"] = {
 							ach(12826),	-- Mythic: Atal'Dazar
 							ach(13002),	-- Mythic: Atal'Dazar Guild Run
 							ach(12273),	-- It's Lit!

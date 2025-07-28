@@ -26,7 +26,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(QUESTS, {
 				q(74376, {	-- Coalesced Storm Remnants
 					["provider"] = { "i", 203469 },	-- Coalesced Storm Remnants
-					["g"] = {
+					["groups"] = {
 						i(ESSENCE_OF_THE_STORM),
 					}
 				}),
@@ -81,21 +81,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(201543, {	-- Avalantus
 					["coord"] = { 51.8, 68.5, THE_PRIMALIST_FUTURE },
 					["questID"] = 74554,
-					["g"] = {
+					["groups"] = {
 						i(203670),	-- Prismatic Diamond Loop
 					},
 				}),
 				n(201545, {	-- Shapemaster Za'lani
 					["coord"] = { 46.9, 42.6, THE_PRIMALIST_FUTURE },
 					["questID"] = 74553,
-					["g"] = {
+					["groups"] = {
 						i(203668),	-- Earthshaping Grips
 					},
 				}),
 				n(201562, {	-- Shardwing
 					["coord"] = { 48.3, 16.9, THE_PRIMALIST_FUTURE },
 					["questID"] = 74556,
-					["g"] = {
+					["groups"] = {
 						i(203669),	-- Chillwing Leggings
 						i(200241),	-- Stormcaller's Ritual Hatchet
 					},
@@ -103,7 +103,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(201542, {	-- Tikar Frostclaw
 					["coord"] = { 61.7, 31.7, THE_PRIMALIST_FUTURE },
 					["questID"] = 74558,
-					["g"] = {
+					["groups"] = {
 						i(203667),	-- Frostclaw's Spellfingers
 					},
 				}),
@@ -117,7 +117,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 28.0, 25.9, THE_PRIMALIST_FUTURE },
 					["timeline"] = { ADDED_10_0_2_LAUNCH },
 					["isWeekly"] = true,
-					["g"]= {
+					["groups"]= {
 						i(194640),	-- Design: Ring-Bound Hourglass (RECIPE!)
 						i(201447),	-- Primal Revenant's Breezeblade
 						i(201444),	-- Primal Revenant's Earthblade
@@ -128,13 +128,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(VENDORS, {
 				n(198831, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Bivogosa <Head Chef>
 					["coord"] = { 61.5, 53.3, THE_PRIMALIST_FUTURE },
-					["g"] = {
+					["groups"] = {
 						i(201047),	-- Arcanostabilized Provisions
 					},
 				})),
 				n(199425, {	-- Brendormi <Field Primal Researcher>
 					["coord"] = { 59.9, 48.4, THE_PRIMALIST_FUTURE },
-					["g"] = {
+					["groups"] = {
 						-- Gear?
 						i(201961, {	-- Bronze Band of Destinies
 							["cost"] = {
@@ -189,14 +189,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				n(198827, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Sous Chef Durang
 					["coord"] = { 61.2, 52.8, THE_PRIMALIST_FUTURE },
-					["g"] = {
+					["groups"] = {
 						i(201813),	-- Spoiled Firewine
 					},
 				})),
 				n(199541, {	-- Tarndormu <Temporal Squadron Commander>
 					["description"] = "This Vendor is only visible during the Storm's Fury event.",
 					["coord"] = { 60.8, 46.6, THE_PRIMALIST_FUTURE },
-					["g"] = {
+					["groups"] = {
 						i(202096),	-- Armaments of the Scale
 					},
 				}),

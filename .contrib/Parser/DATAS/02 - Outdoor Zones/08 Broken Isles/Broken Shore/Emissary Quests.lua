@@ -10,7 +10,7 @@ root(ROOTS.Zones, {
 					["isWorldQuest"] = true,
 					["provider"] = { "n", 120414 },	-- Captain Ruysantos
 					["coord"] = { 42.2, 58.8, BROKEN_SHORE },
-					["g"] = {
+					["groups"] = {
 						i(157830, {	-- Legionfall Spoils
 							["sym"] = {{"select","itemID",
 								147216,	-- Dauntless Hood
@@ -43,7 +43,7 @@ root(ROOTS.Zones, {
 					["repeatable"] = true,
 					["provider"] = { "n", 120414 },	-- Captain Ruysantos
 					["coord"] = { 42.2, 58.8, BROKEN_SHORE },
-					["g"] = {
+					["groups"] = {
 						i(152108, {	-- Legionfall Chest
 							i(147841),	-- Orphaned Felbat (PET!)
 						}),

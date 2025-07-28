@@ -10,7 +10,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				15667,	-- Fate of Domination
 				15681,	-- Fate of the Sepulcher
 			}},
-			["g"] = {
+			["groups"] = {
 				i(190170),	-- Jigglesworth Sr. (MOUNT!)
 			},
 		})),
@@ -20,7 +20,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				15668,	-- Heroic: Fate of Domination
 				15682,	-- Heroic: Fate of the Sepulcher
 			}},
-			["g"] = {
+			["groups"] = {
 				title(464),	-- <Name>, Hero of Fate (TITLE!)
 			},
 		})),
@@ -30,7 +30,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				15669,	-- Mythic: Fate of Domination
 				15683,	-- Mythic: Fate of the Sepulcher
 			}},
-			["g"] = {
+			["groups"] = {
 				spell(373190),	-- Path of the Sire
 				spell(373191),	-- Path of the Tormented Soul
 				spell(373192),	-- Path of the First Ones
@@ -93,7 +93,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				14290,	-- I Only Have Eyes For You
 				14289,	-- Kaal-ed Shot
 			}},
-			["g"] = {
+			["groups"] = {
 				i(184183),	-- Voracious Gorger (MOUNT!)
 			},
 		}),

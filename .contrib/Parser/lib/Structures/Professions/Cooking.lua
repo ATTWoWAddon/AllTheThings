@@ -221,7 +221,7 @@ WAY_OF_THE_WOK = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"]
 }));
 DRAENOR_COOKING = applyclassicphase(WOD_PHASE_ONE, i(111387, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	["description"] = "This can drop from any Warlords of Draenor mob if you don't already have it learned.",
-	["g"] = {
+	["groups"] = {
 		r(158765, {	-- Cooking (Draenor Master)
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 			-- #if NOT ANYCLASSIC

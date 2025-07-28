@@ -165,7 +165,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						["description"] = "Absorb the soul at the beginning of Blackrook Hold, clear the dungeon, then clear Maw of Souls. You must not die at all through both dungeons.\n\nWARNING: You must do this with a group of 5 players for the buffs to upgrade after each boss kill.",
 						["maps"] = { 751, 752, 753, 754, 755, 756 },	-- Black Rook Hold
 						["crs"] = { 98806 },	-- Soul Essence
-						["g"] = { i(140323) },	-- Lagan (PET!)
+						["groups"] = { i(140323) },	-- Lagan (PET!)
 					}),
 					i(137899),	-- Pattern: Dreadleather Jerkin [Rank 3] (RECIPE!)
 				}),

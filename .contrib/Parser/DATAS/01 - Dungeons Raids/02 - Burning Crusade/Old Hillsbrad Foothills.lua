@@ -44,9 +44,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						{ 53.9, 28.9, TANARIS },
 						-- #endif
 					},
-					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
 					["races"] = { HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME },
 					["lvl"] = lvlsquish(66, 66, 15),
+					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
 					["groups"] = {
 						objective(1, {	-- 0/1 Don Carlos' Hat
 							["provider"] = { "i", 38329 },	-- Don Carlos' Hat
@@ -63,9 +63,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						{ 53.9, 28.9, TANARIS },
 						-- #endif
 					},
-					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
 					["races"] = exclude({ HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME }, ALL_RACES),
 					["lvl"] = lvlsquish(66, 66, 15),
+					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
 					["groups"] = {
 						objective(1, {	-- 0/1 Don Carlos' Hat
 							["provider"] = { "i", 38329 },	-- Don Carlos' Hat
@@ -348,7 +348,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(33847),	-- Epoch Hunter's Head
 						},
 					}),
-				}
+				},
 			}),
 		},
 	})),

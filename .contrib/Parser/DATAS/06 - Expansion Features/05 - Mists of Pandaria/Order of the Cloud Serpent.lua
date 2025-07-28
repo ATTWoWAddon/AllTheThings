@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_LANDFALL, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_1_0 } }, {
+root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	header(HEADERS.Faction, FACTION_ORDER_OF_THE_CLOUD_SERPENT, {
 		["description"] = "Gain reputation with this faction by training a cloud serpent hatchling, and eventually you will earn either an Azure, Golden, or Jade Cloud Serpent mount.  More rewards are unlocked by reaching Revered and Exalted with the faction, including a toy, more mounts, and Jewelcrafting designs.\n\nThe quest chain begins with |cFFefc400Wild Things|r.\n\n",
 		["maps"] = { THE_JADE_FOREST },
@@ -53,10 +53,10 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_LANDFALL, expansion(EX
 					},
 				}),
 				q(30151, {	-- Catch!
-					["providers"] = {
-						{ "n", 65669 },	-- Your Hatchling
-						{ "n", 65670 },	-- Your Hatchling
-						{ "n", 65671 },	-- Your Hatchling
+					["qgs"] = {
+						65669,	-- Your Hatchling
+						65670,	-- Your Hatchling
+						65671,	-- Your Hatchling
 					},
 					["sourceQuest"] = 30142,	-- It's A...
 					["coord"] = { 57.5, 45.3, THE_JADE_FOREST },
@@ -113,14 +113,14 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_LANDFALL, expansion(EX
 					},
 				}),
 				q(30156, {	-- Feeding Time
-					["providers"] = {
-						{ "n", 65669 },	-- Your Hatchling
-						{ "n", 65670 },	-- Your Hatchling
-						{ "n", 65671 },	-- Your Hatchling
-						{ "n", 65672 },	-- Cloud Serpent
-						{ "n", 65673 },	-- Cloud Serpent
-						{ "n", 65674 },	-- Cloud Serpent
-						{ "n", 65724 },	-- Azure Hatchling
+					["qgs"] = {
+						65669,	-- Your Hatchling
+						65670,	-- Your Hatchling
+						65671,	-- Your Hatchling
+						65672,	-- Cloud Serpent
+						65673,	-- Cloud Serpent
+						65674,	-- Cloud Serpent
+						65724,	-- Azure Hatchling
 					},
 					["sourceQuest"] = 30142,	-- It's A...
 					["coord"] = { 57.4, 45.3, THE_JADE_FOREST },
@@ -245,11 +245,11 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_LANDFALL, expansion(EX
 					},
 				}),
 				q(31704, {	-- Pooped
-					["providers"] = {
-						{ "n", 58384 },	-- Azure Hatchling
-						{ "n", 65669 },	-- Your Hatchling
-						{ "n", 65670 },	-- Your Hatchling
-						{ "n", 65671 },	-- Your Hatchling
+					["qgs"] = {
+						58384,	-- Azure Hatchling
+						65669,	-- Your Hatchling
+						65670,	-- Your Hatchling
+						65671,	-- Your Hatchling
 					},
 					["sourceQuest"] = 30142,	-- It's A...
 					["coord"] = { 57.4, 45.3, THE_JADE_FOREST },
@@ -266,11 +266,11 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_LANDFALL, expansion(EX
 					},
 				}),
 				q(31716, {	-- Pooped
-					["providers"] = {
-						{ "n", 58384 },	-- Azure Hatchling
-						{ "n", 65669 },	-- Your Hatchling
-						{ "n", 65670 },	-- Your Hatchling
-						{ "n", 65671 },	-- Your Hatchling
+					["qgs"] = {
+						58384,	-- Azure Hatchling
+						65669,	-- Your Hatchling
+						65670,	-- Your Hatchling
+						65671,	-- Your Hatchling
 					},
 					["sourceQuest"] = 30142,	-- It's A...
 					["coord"] = { 57.4, 45.3, THE_JADE_FOREST },
@@ -386,11 +386,11 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_LANDFALL, expansion(EX
 					},
 				}),
 				q(30150, {	-- Sweet as Honey
-					["providers"] = {
-						{ "n", 58384 },	-- Azure Hatchling
-						{ "n", 65669 },	-- Your Hatchling
-						{ "n", 65670 },	-- Your Hatchling
-						{ "n", 65671 },	-- Your Hatchling
+					["qgs"] = {
+						58384,	-- Azure Hatchling
+						65669,	-- Your Hatchling
+						65670,	-- Your Hatchling
+						65671,	-- Your Hatchling
 					},
 					["sourceQuest"] = 30142,	-- It's A...
 					["coord"] = { 57.4, 45.3, THE_JADE_FOREST },
@@ -431,16 +431,16 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_LANDFALL, expansion(EX
 					},
 				}),
 				q(30154, {	-- The Easiest Way To A Serpent's Heart
-					["providers"] = {
-						{ "n", 65669 },	-- Your Hatchling
-						{ "n", 65670 },	-- Your Hatchling
-						{ "n", 65671 },	-- Your Hatchling
-						{ "n", 65672 },	-- Cloud Serpent
-						{ "n", 65673 },	-- Cloud Serpent
-						{ "n", 65674 },	-- Cloud Serpent
-						{ "n", 65679 },	-- Golden Hatchling
-						{ "n", 65723 },	-- Jade Hatchling
-						{ "n", 65724 },	-- Azure Hatchling
+					["qgs"] = {
+						65669,	-- Your Hatchling
+						65670,	-- Your Hatchling
+						65671,	-- Your Hatchling
+						65672,	-- Cloud Serpent
+						65673,	-- Cloud Serpent
+						65674,	-- Cloud Serpent
+						65679,	-- Golden Hatchling
+						65723,	-- Jade Hatchling
+						65724,	-- Azure Hatchling
 					},
 					["sourceQuest"] = 30142,	-- It's A...
 					["coord"] = { 57.4, 45.3, THE_JADE_FOREST },
@@ -585,11 +585,11 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_LANDFALL, expansion(EX
 					},
 				}),
 				q(31710, {	-- Tiny Treats
-					["providers"] = {
-						{ "n", 65672 },	-- Your Cloud Serpent
-						{ "n", 65673 },	-- Your Cloud Serpent
-						{ "n", 65674 },	-- Your Cloud Serpent
-						{ "n", 65724 },	-- Azure Hatchling
+					["qgs"] = {
+						65672,	-- Your Cloud Serpent
+						65673,	-- Your Cloud Serpent
+						65674,	-- Your Cloud Serpent
+						65724,	-- Azure Hatchling
 					},
 					["sourceQuest"] = 30142,	-- It's A...
 					["coord"] = { 57.5, 45.3, THE_JADE_FOREST },
@@ -623,9 +623,9 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_LANDFALL, expansion(EX
 					["qg"] = 58564,	-- Elder Anli
 					["coord"] = { 57.6, 44.8, THE_JADE_FOREST },
 					["timeline"] = { ADDED_5_4_0 },
-					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestWithCost(1000),
 					["cost"] = { { "i", 104286, 1 } },	-- 1x Quivering Firestorm Egg
 					["repeatable"] = true,
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestWithCost(1000),
 				})),
 				q(30135, {	-- Beating the Odds
 					["qg"] = 58225,	-- Instructor Tong
@@ -728,9 +728,9 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_LANDFALL, expansion(EX
 					["qg"] = 58564,	-- Elder Anli
 					["coord"] = { 57.6, 44.8, THE_JADE_FOREST },
 					["maxReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },
-					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestWithCost(500),
 					["cost"] = {{ "i", 89155, 1 }},	-- Onyx Egg
 					["repeatable"] = true,
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestWithCost(500),
 				}),
 				q(80311, {	-- Order of the Cloud Serpent
 					["qg"] = 63900,	-- Toortle Wider
@@ -741,8 +741,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_LANDFALL, expansion(EX
 				q(31810, {	-- Riding the Skies (Azure)
 					["qg"] = 58564,	-- Elder Anli
 					["coord"] = { 57.7, 45.0, THE_JADE_FOREST },
-					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },
 					["description"] = "You will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.",
+					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },
 					["groups"] = {
 						i(85430),	-- Azure Cloud Serpent (MOUNT!)
 					},
@@ -750,8 +750,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_LANDFALL, expansion(EX
 				q(31811, {	-- Riding the Skies (Golden)
 					["qg"] = 58564,	-- Elder Anli
 					["coord"] = { 57.7, 45.0, THE_JADE_FOREST },
-					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },
 					["description"] = "You will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.",
+					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },
 					["groups"] = {
 						i(85429),	-- Golden Cloud Serpent (MOUNT!)
 					},
@@ -759,8 +759,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_LANDFALL, expansion(EX
 				q(30188, {	-- Riding the Skies (Jade)
 					["qg"] = 58564,	-- Elder Anli
 					["coord"] = { 57.7, 45.0, THE_JADE_FOREST },
-					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },
 					["description"] = "You will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.",
+					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },
 					["groups"] = {
 						i(79802),	-- Jade Cloud Serpent (MOUNT!)
 					},
@@ -783,15 +783,15 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_LANDFALL, expansion(EX
 					["isBreadcrumb"] = true,
 				}),
 				q(30139, {	-- The Rider's Journey (blue egg)
-				--	picked the blue and got this one, but some notes indicate all colors now grant this quest.
-				--	i picked "wait, i changed my mind about my egg" and switched to green/yellow, and they gave 30140 and 30141, respectively.  swapping back to blue switched the quest back to 30139.
-				--	completing one version of the quest completes them all, so altQuests is unnecessary here.
 					["providers"] = {
 						{ "i", 78962 },	-- Blue Serpent Egg (QI!)
 						{ "n", 58225 },	-- Instructor Tong
 					},
 					["sourceQuest"] = 30138,	-- Choosing the One
 					["coord"] = { 65.3, 31.6, THE_JADE_FOREST },
+				--	picked the blue and got this one, but some notes indicate all colors now grant this quest.
+				--	i picked "wait, i changed my mind about my egg" and switched to green/yellow, and they gave 30140 and 30141, respectively.  swapping back to blue switched the quest back to 30139.
+				--	completing one version of the quest completes them all, so altQuests is unnecessary here.
 				}),
 				q(30140, {	-- The Rider's Journey (green egg)
 					["providers"] = {
@@ -838,7 +838,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_LANDFALL, expansion(EX
 					},
 					["description"] = "This is learned by completing the Riding the Skies quest chain upon reaching Exalted with the Order of the Cloud Serpents.",
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },
-					["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 				}),
 			}),
 			-- #endif
@@ -911,7 +911,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_LANDFALL, expansion(EX
 							-- #if ANYCLASSIC
 							i(247497, {	-- Order of the Cloud Serpent Flight Log
 								["recipeID"] = 130487,	-- Cloud Serpent Riding
-								["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+								["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 							}),
 							-- #endif
 							i(89796),	-- Order of the Cloud Serpent Tabard
@@ -932,7 +932,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_LANDFALL, expansion(EX
 	}),
 }))));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 	header(HEADERS.Faction, FACTION_ORDER_OF_THE_CLOUD_SERPENT, {
 		n(QUESTS, {
 			q(30165),	-- Tracking Event: Picked Blue Serpent - picked the blue serpent egg during "Choosing the One" (questID 30138)

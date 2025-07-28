@@ -25,10 +25,10 @@ root(ROOTS.WorldDrops, {
 					["u"] = NEVER_IMPLEMENTED,
 				})),
 				q(32630, {	-- Chief Engineer Jard's Journal
-					["timeline"] = { ADDED_5_2_0, REMOVED_9_0_2_LAUNCH },
 					["provider"] = {"i",94847},	-- Schematic: Chief Engineer Jard's Journal
-					["_drop"] = { "g" },
+					["timeline"] = { ADDED_5_2_0, REMOVED_9_0_2_LAUNCH },
 					["u"] = NEVER_IMPLEMENTED,
+					["_drop"] = { "g" },
 				}),
 			}),
 			prof(INSCRIPTION, {
@@ -63,7 +63,7 @@ root(ROOTS.WorldDrops, {
 				}),
 				TempForceMisc(i(100864, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Pattern: Hardened Magnificent Hide and Its Uses (RECIPE!)
 					["description"] = "Requires maxed Pandaria leatherworking skill to drop.",
-					["g"] = {
+					["groups"] = {
 						r(146923),	-- Accelerated Hardened Magnificent Hide (RECIPE!)
 						r(142976),	-- Hardened Magnificent Hide (RECIPE!)
 					},

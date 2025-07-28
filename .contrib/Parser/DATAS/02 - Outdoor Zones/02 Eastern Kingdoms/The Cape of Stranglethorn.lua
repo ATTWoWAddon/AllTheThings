@@ -142,8 +142,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(31917, {	-- A Tamer's Homecoming (A)
 					["qg"] = 65656,	-- Bill Buckler
-					["sourceQuest"] = 31728,	-- Bill Buckler
 					["altQuests"] = { 31918 },	-- A Tamer's Homecoming (H) -- CRIEVE NOTE: Check this on MOP Classic
+					["sourceQuest"] = 31728,	-- Bill Buckler
 					["coord"] = { 51.4, 73.2, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { STORMWIND_CITY },
@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				prof(ENGINEERING, {
 					n(7406, {	-- Oglethorpe Obnoticus <Gnomish Engineering Trainer>
 						["coord"] = { 43.0, 72.0, THE_CAPE_OF_STRANGLETHORN },
-						["g"] = ALL_GNOMISH_ENGINEERING,
+						["groups"] = ALL_GNOMISH_ENGINEERING,
 					}),
 				}),
 			}),
@@ -336,9 +336,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(4621, {	-- Avast Ye, Admiral!
 					["qg"] = 2546,	-- Fleet Master Firallon
 					["sourceQuest"] = 1036,	-- Avast Ye, Scallywag
-					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
-					["description"] = "This quest also requires you to be hated or lower with Booty Bay.",
 					["coord"] = { 46.7, 95.2, THE_CAPE_OF_STRANGLETHORN },
+					["description"] = "This quest also requires you to be hated or lower with Booty Bay.",
+					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
 					["lvl"] = lvlsquish(55, 55, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Baron Revilgaz slain
@@ -352,8 +352,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1036, {	-- Avast Ye, Scallywag
 					["qg"] = 43454,	-- "Good-Boy" Bruce
-					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
 					["coord"] = { 41.6, 61.2, THE_CAPE_OF_STRANGLETHORN },
+					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(55, 55, 10),
 				}),
@@ -556,8 +556,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 58490 },	-- Opened Mosh'Ogg Bounty
 					},
 					["sourceQuest"] = 28702,	-- Hero's Call: The Cape of Stranglethorn
-					["description"] = "This quest is only available if you DID NOT complete |cff4a54e8The Source of the Corruption|r and |cff4a54e8The Mosh'Ogg Bounty|r in Northern Stranglethorn.",
 					["coord"] = { 55.2, 42.3, THE_CAPE_OF_STRANGLETHORN },
+					["description"] = "This quest is only available if you DID NOT complete |cff4a54e8The Source of the Corruption|r and |cff4a54e8The Mosh'Ogg Bounty|r in Northern Stranglethorn.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -567,8 +567,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 58490 },	-- Opened Mosh'Ogg Bounty
 					},
 					["sourceQuest"] = 28702,	-- Hero's Call: The Cape of Stranglethorn
-					["description"] = "This quest is only available if you DID complete |cff4a54e8The Source of the Corruption|r and |cff4a54e8The Mosh'Ogg Bounty|r in Northern Stranglethorn.",
 					["coord"] = { 55.2, 42.5, THE_CAPE_OF_STRANGLETHORN },
+					["description"] = "This quest is only available if you DID complete |cff4a54e8The Source of the Corruption|r and |cff4a54e8The Mosh'Ogg Bounty|r in Northern Stranglethorn.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -671,8 +671,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(9272, {	-- Dressing the Part
 					["qg"] = 2546,	-- Fleet Master Firallon
-					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, NEUTRAL },	-- Bloodsail Buccaneers, Neutral.
 					["coord"] = { 46.6, 95.2, THE_CAPE_OF_STRANGLETHORN },
+					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, NEUTRAL },	-- Bloodsail Buccaneers, Neutral.
 					["lvl"] = lvlsquish(49, 49, 10),
 					["groups"] = {
 						i(22746, {	-- Buccaneer's Uniform
@@ -759,18 +759,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(8554, {	-- Facing Negolash
 					["qg"] = 2594,	-- Sprogger
-					["sourceQuest"] = 8553,	-- The Captain's Cutlass
 					["altQuests"] = { 618 },	-- Facing Negolash [Old]
+					["sourceQuest"] = 8553,	-- The Captain's Cutlass
 					["coord"] = { 26.7, 73.6, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
 						q(619, {	-- Enticing Negolash
 							["provider"] = { "o", 2289 },	-- Ruined Lifeboat
-							["cost"] = {
-								{ "i", 4457, 10 },	-- Barbecued Buzzard Wing
-								{ "i", 4595, 5 },	-- Junglevine Wine
-							},
 							-- #if AFTER CATA
 							["coord"] = { 49.7, 81.2, STRANGLETHORN_VALE },
 							-- #endif
@@ -781,6 +777,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								"This quest is repeatable, but can only be completed while you have the quest \"Facing Negolash\" in your quest log.",
 								-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
+							["cost"] = {
+								{ "i", 4457, 10 },	-- Barbecued Buzzard Wing
+								{ "i", 4595, 5 },	-- Junglevine Wine
+							},
 							["repeatable"] = true,
 							["groups"] = {
 								objective(1, {	-- 0/1 Smotts' Cutlass
@@ -805,8 +805,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(38399, {	-- Fencing the Rose
 					["qg"] = 2542,	-- Catelyn the Blade
 					["coord"] = { 41.3, 74.1, THE_CAPE_OF_STRANGLETHORN },
-					["cost"] = {{ "i", 90561, 1 }},	-- Eternium Rose
 					["timeline"] = { ADDED_6_2_0 },
+					["cost"] = {{ "i", 90561, 1 }},	-- Eternium Rose
 					["requireSkill"] = ENGINEERING,
 					["isDaily"] = true,
 					["groups"] = {
@@ -1724,18 +1724,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(3643, {	-- Show Your Work
 					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
-					["sourceQuest"] = 3642,	-- The Pledge of Secrecy
 					["altQuests"] = { 3639, 3641 },	-- The Pledge of Secrecy
+					["sourceQuest"] = 3642,	-- The Pledge of Secrecy
 					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
-					["requireSkill"] = ENGINEERING,
-					["learnedAt"] = 200,
-					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 4392, 2 },	-- Advanced Target Dummy
 						{ "i", 4407, 1 },	-- Accurate Scope
 						{ "i", 10559, 6 },	-- Mithril Tube
 					},
+					["requireSkill"] = ENGINEERING,
+					["learnedAt"] = 200,
+					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
 						i(10790),	-- Gnome Engineer Membership Card
@@ -1850,8 +1850,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26598, {	-- The Heart of Mokk
 							["qg"] = 1449,	-- Witch Doctor Unbagwa
 							["coord"] = { 54.1, 46.5, THE_CAPE_OF_STRANGLETHORN },
-							["cost"] = { { "i", 2799, 1 } },	-- Gorilla Fang
 							["timeline"] = { ADDED_4_0_3 },
+							["cost"] = { { "i", 2799, 1 } },	-- Gorilla Fang
 							["repeatable"] = true,
 							["groups"] = {
 								objective(1, {	-- 0/1 Heart of Mokk
@@ -2036,8 +2036,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26606,	-- Mukla's Demise
 					},
 					["sourceQuestNumRequired"] = 1,
-					["description"] = "You need to complete at least one of [Kill-Collect], [Mok'rash the Cleaver], or [Mukla's Demise] to pick up this quest.",
 					["coord"] = { 42.6, 71.8, THE_CAPE_OF_STRANGLETHORN },
+					["description"] = "You need to complete at least one of [Kill-Collect], [Mok'rash the Cleaver], or [Mukla's Demise] to pick up this quest.",
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(26662, {	-- The Brashtide Crew
@@ -2070,8 +2070,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26696, {	-- The Call of Kalimdor (H)
 					["qg"] = 48797,	-- Gim'hila
-					["description"] = "Swims in a circle near the dock.",
 					["coord"] = { 39.6, 68.5, THE_CAPE_OF_STRANGLETHORN },
+					["description"] = "Swims in a circle near the dock.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -2108,8 +2108,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(8553, {	-- The Captain's Cutlass
 					["qg"] = 2500,	-- Captain Hecklebury Smotts
-					["sourceQuest"] = 8552,	-- The Monogrammed Sash
 					["altQuests"] = { 615 },	-- The Captain's Cutlass [Old]
+					["sourceQuest"] = 8552,	-- The Monogrammed Sash
 					["coord"] = { 26.6, 73.6, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 35,
@@ -2222,8 +2222,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26487,	-- Akiris by the Bundle
 						26450,	-- If They're Just Going to Leave Them Lying Around...
 					},
-					["description"] = "This version of the quest is given to players that have completed '|cffe50d12Mok'thardin's Enchantment|r' quest chain prior to the Cataclysm.",
 					["coord"] = { 33.6, 29.1, THE_CAPE_OF_STRANGLETHORN },
+					["description"] = "This version of the quest is given to players that have completed '|cffe50d12Mok'thardin's Enchantment|r' quest chain prior to the Cataclysm.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -2261,11 +2261,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(3642, {	-- The Pledge of Secrecy
 					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
+					["altQuests"] = { 3638, 3640 },	-- The Pledge of Secrecy
 					["sourceQuests"] = {
 						3635,	-- Gnome Engineering
 						3637,	-- Gnome Engineering
 					},
-					["altQuests"] = { 3638, 3640 },	-- The Pledge of Secrecy
 					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["requireSkill"] = ENGINEERING,
@@ -2323,9 +2323,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n",  44084 },	-- Maywiki
 						{ "o", 204372 },	-- Zanzil's Portal
 					},
-					["description"] = "If you abandon this quest, talk to |cFFFFD700Maywiki|r at |cFFFFD700Explorers' League Digsite|r.",
 					["sourceQuest"] = 26810,	-- Eliminate the Outcast
 					["coord"] = { 61.2, 44.3, THE_CAPE_OF_STRANGLETHORN },
+					["description"] = "If you abandon this quest, talk to |cFFFFD700Maywiki|r at |cFFFFD700Explorers' League Digsite|r.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2336,8 +2336,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 204372 },	-- Zanzil's Portal
 					},
 					["sourceQuest"] = 26551,	-- Eliminate the Outcast
-					["description"] = "If you abandon this quest, talk to |cFFFFD700Chabal|r in |cFFFFD700Hardwrench Hideaway|r.",
 					["coord"] = { 61.1, 44.2, THE_CAPE_OF_STRANGLETHORN },
+					["description"] = "If you abandon this quest, talk to |cFFFFD700Chabal|r in |cFFFFD700Hardwrench Hideaway|r.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -2920,7 +2920,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(2699, {	-- Rikqiz <Leatherworking Supplies>
 					["coord"] = { 43.2, 71.7, THE_CAPE_OF_STRANGLETHORN },
-					["g"] = {
+					["groups"] = {
 						i(14635, {	-- Pattern: Gem-Studded Leather Belt (RECIPE!)
 							["isLimited"] = true,
 						}),

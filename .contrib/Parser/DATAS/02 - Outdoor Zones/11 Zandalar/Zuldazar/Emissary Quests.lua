@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["lvl"] = 120,
 				["coord"] = { 71.51, 30.35, ZULDAZAR },
 				["repeatable"] = true,
-				["g"] = {
+				["groups"] = {
 					i(166245, {	-- Tortollan Seekers Supplies
 						i(166704),	-- Bowl of Glowing Pufferfish (TOY!)
 						i(166807),	-- Recipe: Boralus Blood Sausage [Rank 3] (RECIPE!)

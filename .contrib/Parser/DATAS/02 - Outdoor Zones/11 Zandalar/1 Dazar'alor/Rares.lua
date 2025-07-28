@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(120899, {	-- Kul'krazahn
 				["questID"] = 48333,
 				["coord"] = { 55.01, 83.61, DAZARALOR },
-				["g"] = {
+				["groups"] = {
 					crit(41875, {	-- Kul'krazahn (Adventurer of Zuldazar)
 						["achievementID"] = 12944,	-- Adventurer of Zuldazar
 					}),
@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["questID"] = 50856,
 				["coord"] = { 50.6, 59.6, DAZARALOR },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(161049),	-- Ferocious Devilsaur Legwraps
 				},
 			}),

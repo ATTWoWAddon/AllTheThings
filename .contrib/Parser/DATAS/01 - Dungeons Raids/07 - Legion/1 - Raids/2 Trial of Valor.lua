@@ -85,7 +85,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 		["coord"] = { 70.4, 69.4, STORMHEIM },
 		["maps"] = { 806, 807, 808 },
 		["lvl"] = 110,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(11762, {["timeline"] = {ADDED_7_2_0}}),	-- Can I Get A Helya (Trial of Valor)
 				ach(11394, {	-- Trial of Valor
@@ -119,7 +119,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				q(45088, {	-- Trial of Valor: The Lost Army
 					["provider"] = { "n", 114263 },	-- Odyn
-					["g"] = {
+					["groups"] = {
 						iensemble(143506, {	-- Ensemble: Vestment of the Chosen Dead
 							["classes"] = CLOTH_CLASSES,
 						}),
@@ -245,7 +245,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					ach(11387, {	-- The Chosen
 						["crs"] = { 116229 },	-- Mythical Champion of the Chosen Dead
 						["timeline"] = { REMOVED_8_0_1 },
-						["g"] = {
+						["groups"] = {
 							title(347),	-- The Chosen
 							iensemble(143508, {	-- Ensemble: Vestment of the Chosen Dead
 								["classes"] = CLOTH_CLASSES,

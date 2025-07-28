@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 	m(UNDERMINE, {
 		n(SCRAP, {
 			["description"] = "Frequently around the zone a pile of scrap will be marked on the map, ready for excavation. Once started, there is a two minute timer to dig up as much as possible, clearing obstables and dodging projectiles. Renown unlocks new drops and efficiency upgrades, and a rare mob can sometimes spawn at max excavation progress.",
-			["g"] = {
+			["groups"] = {
 				FromSCRAP(n(ACHIEVEMENTS, {
 					ach(41590),	-- No Littering
 					ach(41591),	-- Really No Littering
@@ -143,7 +143,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["description"] = "Can spawn when players fill the 'Trash Shoveled' progress bar to 500 during a S.C.R.A.P. Job event in Undermine.\n\nNote: All loot can drop even when the daily flag is saved.",
 						["questID"] = 87007,
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							ach(41594),	-- Can You Believe What People Throw Away?
 							i(235822),	-- Coin-Woven Shawl
 							--i(235909),	-- Gleam
@@ -185,10 +185,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				n(VENDORS, {
 					n(234776, {	-- Angelo Rustbin <S.C.R.A.P. Exchange>
 						["coord"] = { 25.8, 38.1, UNDERMINE },
-						["g"] = {
+						["groups"] = {
 							i(233557, {	-- Sifted Pile of Scrap
 								["cost"] = {{ "c", 3218, 333 }},	-- Empty Kaja'Cola Can
-								["g"] = {
+								["groups"] = {
 									i(229949),	-- Personalized Goblin S.C.R.A.Per (MOUNT!)
 									i(232838),	-- Viridian Mechasaur (PET!)
 								},
@@ -210,7 +210,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 							}),
 							i(233558, {	-- S.C.R.A.P. Scrubber Deluxe
 								["cost"] = {{ "i", 233246, 1 }},	-- Gunk-Covered Thingy
-								["g"] = {
+								["groups"] = {
 									filter(CLOTH, {
 										i(233263),	-- Laundered Cowl
 										i(233267),	-- Laundered Cuffs
@@ -241,7 +241,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					}),
 					n(234362, {	-- Kaja'Cola Dispenser
 						["coord"] = { 67.3, 28.5, UNDERMINE },
-						["g"] = {
+						["groups"] = {
 							i(233444, {	-- Kaja'Cola X-Treme
 								["minReputation"] = { FACTION_CARTELS_OF_UNDERMINE, 7 }
 							}),

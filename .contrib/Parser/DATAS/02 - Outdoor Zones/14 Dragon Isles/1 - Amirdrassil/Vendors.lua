@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 					{"select", "npcID", 50305 },	-- Select Moon Priestess Lasara <Darnassus Quartermaster>
 					{"pop"},						-- Discard Header and aquire their children
 				},
-				["g"] = {
+				["groups"] = {
 					i(210424, {	-- Darnassian Tabard
 						["cost"] = { { "c", DRAGON_SUPPLIES, 250 } },
 					}),
@@ -24,7 +24,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 			}),
 			n(216284, {	-- Mythrin'dir
 				["coord"] = { 54.1, 60.8, AMIRDRASSIL },
-				["g"] = {
+				["groups"] = {
 					i(211399),	-- Technique: Glyph of the Lunar Chameleon
 				},
 			}),

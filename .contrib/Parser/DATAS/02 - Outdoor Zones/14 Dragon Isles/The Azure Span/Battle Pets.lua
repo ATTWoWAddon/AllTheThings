@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				3328,	-- Tiny Timbertooth (PET!)
 				3336,	-- Vorquin Runt (PET!)
 			}},
-			["g"] = {
+			["groups"] = {
 				pet(3357),	-- Azure Crystalspine (PET!)
 				pet(3356, {	-- Chalkshell Turtle (PET!)
 					["description"] = "Talk to |cFFefc400Lani|r and use the extra action button to spawn this pet.",

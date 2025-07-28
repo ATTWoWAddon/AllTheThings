@@ -49,7 +49,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}},
 			})),
 			ach(40360, {	-- Life on the Farm (automated)
-				["g"] = {
+				["groups"] = {
 					i(226160),	-- Hillhelm Farmhand's Hoe
 					i(226161),	-- Hillhelm Farmhand's Watering Can
 				},

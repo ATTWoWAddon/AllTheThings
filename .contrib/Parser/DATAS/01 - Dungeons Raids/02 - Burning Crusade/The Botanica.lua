@@ -301,7 +301,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(33859),	-- Warp Splinter Clipping
 						},
 					}),
-				}
+				},
 			}),
 		},
 	}),

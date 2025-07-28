@@ -678,9 +678,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25931, {	-- Brood of Seldarria
 					["qg"] = 41487,	-- Hierophant Malyk
-					["description"] = "If you abandon this quest, you can pick it up again from Hierophant Malyk at Farwatcher's Glen.",
 					["sourceQuest"] = 25930,	-- Ascending the Vale
 					["coord"] = { 33.1, 59.6, STONETALON_MOUNTAINS },
+					["description"] = "If you abandon this quest, you can pick it up again from Hierophant Malyk at Farwatcher's Glen.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1232,8 +1232,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 58.2, 51.6, STONETALON_MOUNTAINS },
 					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { SILVERPINE_FOREST, SHADOWFANG_KEEP },
-					["lockCriteria"] = { 1, "spellID", 400080 },	-- Engrave Chest - Deadly Brew
 					["classes"] = { ROGUE },
+					["lockCriteria"] = { 1, "spellID", 400080 },	-- Engrave Chest - Deadly Brew
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/1 Venture Co. Work Order
@@ -1303,7 +1303,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				q(25935, {	-- Hungry Pups
 					["qg"] = 41638,	-- Houndmaster Jonathan (mobileNPC)
-					["description"] = "Houndmaster Jonathan walks his restless, hungry pups, around the tree.",
 					["sourceQuest"] = 25925,	-- Thal'darah's Vengeance
 					["coords"] = {
 						{ 33.2, 59.5, STONETALON_MOUNTAINS },
@@ -1312,6 +1311,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 32.3, 60.1, STONETALON_MOUNTAINS },
 						{ 32.8, 59.6, STONETALON_MOUNTAINS },
 					},
+					["description"] = "Houndmaster Jonathan walks his restless, hungry pups, around the tree.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1354,9 +1354,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "i", 55181 },	-- Illegible Orc Letter
 					["sourceQuest"] = 25640,	-- Bombs Away: Windshear Mine
 					["coord"] = { 72.3, 61.7, STONETALON_MOUNTAINS },
-					["crs"] = { 40905 },	-- Windshear Overseer
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["crs"] = { 40905 },	-- Windshear Overseer
 				}),
 				q(26058, {	-- In Defense of Krom'gar Fortress [Krom'gar Legionnaire]
 					["qg"] = 40902,	-- Chief Blastgineer Bombguts
@@ -1390,9 +1390,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25808, {	-- Is This Thing On?
 					["qg"] = 41277,	-- Lieutenant Paulson
-					["description"] = "If you abandon this quest, you can pick it up again from Lieutenant Paulson at the barricade near the entrance of The Deep Reaches.",
 					["sourceQuest"] = 25806,	-- They Put the Assass in... Never Mind
 					["coord"] = { 72.1, 76.0, STONETALON_MOUNTAINS },
+					["description"] = "If you abandon this quest, you can pick it up again from Lieutenant Paulson at the barricade near the entrance of The Deep Reaches.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1792,8 +1792,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26016, {	-- Orders from Base Camp
 					["provider"] = { "i", 56474 },	-- Orders from Base Camp
 					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-					["crs"] = { 41937 },	-- Marshal Paltrow
 					["races"] = HORDE_ONLY,
+					["crs"] = { 41937 },	-- Marshal Paltrow
 				}),
 				q(25650, {	-- Orders from High Command
 					["providers"] = {
@@ -2101,8 +2101,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if BEFORE 9.0.1
 					["description"] = "This quest cannot be completed after level 30, after reaching Exalted with Orgrimmar, or after finishing the Stonetalon Mountains questline.",
 					-- #endif
-					["timeline"] = { ADDED_4_0_3 },
 					["maxReputation"] = { FACTION_ORGRIMMAR, EXALTED },	-- Orgrimmar, Exalted
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
@@ -2364,7 +2364,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						o(19595, {	-- Gatekeeper's Hold
 							["coord"] = { 30.0, 15.5, STONETALON_MOUNTAINS },
-							["group"] = { i(5687) },	-- Gatekeeper's Key
+							["groups"] = { i(5687) },	-- Gatekeeper's Key
 						}),
 						i(6671, {	-- Juggernaut Leggings
 							["timeline"] = { REMOVED_4_0_3 },
@@ -2513,10 +2513,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40896,	-- Lord Fallowmere
 					["sourceQuest"] = 25652,	-- Commandeer That Ballon!
 					["coord"] = { 59.6, 56.9, STONETALON_MOUNTAINS },
-					["timeline"] = { ADDED_4_0_3 },
 					-- #if BEFORE 9.0.1
 					["description"] = "This quest cannot be completed after level 30, after reaching Exalted with Darnassus, or after finishing the Stonetalon Mountains questline.",
 					-- #endif
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
@@ -2642,12 +2642,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, q(78114, {	-- Wild Wyvern Wrangling
 					["qg"] = 210845,	-- Jixo Madrocket <Amateur Daredevil>
 					["coord"] = { 59.2, 62.4, STONETALON_MOUNTAINS },
+					["timeline"] = { REMOVED_2_0_1 },
+					["maps"] = { ASHENVALE, WAILING_CAVERNS },
 					["cost"] = {	-- You don't need to be on the quest to get these drops
 						{ "i", 209838, 1 },	-- Hypnotic Crystal
 						{ "i", 209840, 1 },	-- Gnarled Wand of Wild Magic
 					},
-					["timeline"] = { REMOVED_2_0_1 },
-					["maps"] = { ASHENVALE, WAILING_CAVERNS },
 					["classes"] = { HUNTER },
 					["lvl"] = 15,
 				})),

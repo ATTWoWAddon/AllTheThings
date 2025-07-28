@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						41549,	-- Mechanical Battler of Undermine
 						41550,	-- Undead Battler of Undermine
 					}},
-					["g"] = {
+					["groups"] = {
 						i(232855),	-- Foreman (PET!)
 					},
 				})),
@@ -232,7 +232,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					41217,	-- Treasures of Undermine
 					41708,	-- You're My Friend Now
 				}},
-				["g"] = { campsite(25) },	-- Gallagio Grand Gallery (CS!)
+				["groups"] = { campsite(25) },	-- Gallagio Grand Gallery (CS!)
 			}),
 			ach(40948),	-- Nine-Tenths of the Law
 			ach(40894),	-- Sojourner of Undermine (automated)

@@ -1414,10 +1414,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 45.6, 47.8, ELWYNN_FOREST },
 								-- #endif
 							},
-							["timeline"] = { REMOVED_6_0_2 },
 							-- #if AFTER 6.0.2
 							["description"] = "This quest gets marked as completed when you complete the quest 'Rest and Relaxation' (37112).",
 							-- #endif
+							["timeline"] = { REMOVED_6_0_2 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(57395, {	-- Lion's Pride Bracer
@@ -2527,7 +2527,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if NOT ANYCLASSIC
 				q(5635, {	-- Desperate Prayer
 					["qg"] = 377,	-- Priestess Josetta <Priest Trainer>
-					["coord"] = { 43.4, 65.6, ELWYNN_FOREST },
 					["altQuests"] = {
 						5634,	-- Desperate Prayer [Stormwind City #1]
 						5636,	-- Desperate Prayer [Teldrassil]
@@ -2536,6 +2535,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5639,	-- Desperate Prayer [Ironforge]
 						5640,	-- Desperate Prayer [Darnassus]
 					},
+					["coord"] = { 43.4, 65.6, ELWYNN_FOREST },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN, DWARF },
 					["classes"] = { PRIEST },
@@ -2733,6 +2733,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 10.1.5
 					["description"] = "This quest is available to Humans upon reaching level 10.",
 					-- #endif
+					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
+					["races"] = { HUMAN },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -2740,16 +2742,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
-					["races"] = { HUMAN },
-					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["lvl"] = 10,
 				}),
 				q(14079, {	-- Learn to Ride in Elwynn Forest
 					["provider"] = { "i", 46875 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Humans in their Mailbox upon reaching the specified level.",
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_1 },
+					["races"] = { HUMAN },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -2757,7 +2758,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["races"] = { HUMAN },
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(85, {	-- Lost Necklace
@@ -2774,6 +2774,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						240,	-- Marshal Dughan
 						-- #endif
 					},
+					["sourceQuest"] = 123,	-- The Collector
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 81.9, 66.0, ELWYNN_FOREST },
@@ -2781,7 +2782,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 42.1, 65.9, ELWYNN_FOREST },
 						-- #endif
 					},
-					["sourceQuest"] = 123,	-- The Collector
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
 					["groups"] = {
@@ -2819,10 +2819,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 12354, 1 } },	-- Palomino (MOUNT!)
-					["sym"] = { { "select", "itemID", 18777, 18776, 18778 } },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["_drop"] = { "g" },
+					["sym"] = { { "select", "itemID", 18777, 18776, 18778 } },
 				}),
 				q(86, {	-- Pie for Billy
 					["qg"] = 247,	-- Billy Maclure
@@ -2901,7 +2901,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if NOT ANYCLASSIC
 				q(5628, {	-- Returning Home [Elwynn Forest]
 					["qg"] = 377,	-- Priestess Josetta <Priest Trainer>
-					["coord"] = { 43.4, 65.6, ELWYNN_FOREST },
 					["altQuests"] = {
 						5627,	-- Returning Home [Darnassus]
 						5629,	-- Returning Home [Teldrassil]
@@ -2910,6 +2909,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5632,	-- Returning Home [Stormwind City]
 						5633,	-- Returning Home [Ironforge]
 					},
+					["coord"] = { 43.4, 65.6, ELWYNN_FOREST },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
@@ -3058,7 +3058,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 2223 },	-- The Collector's Schedule (PQI!)
 					},
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(7, 7, 1),
 					["crs"] = {
 						-- #if AFTER CATA
 						13159,	-- James Clark
@@ -3069,6 +3068,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						97,		-- Riverpaw Runt
 						-- #endif
 					},
+					["lvl"] = lvlsquish(7, 7, 1),
 				}),
 				q(114, {	-- The Escape
 					["providers"] = {
@@ -3171,10 +3171,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 12353, 1 } },	-- White Stallion (MOUNT!)
-					["sym"] = { { "select", "itemID", 18777, 18776, 18778 } },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["_drop"] = { "g" },
+					["sym"] = { { "select", "itemID", 18777, 18776, 18778 } },
 				}),
 				q(106, {	-- Young Lovers
 					["providers"] = {

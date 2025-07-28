@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						["provider"] = { "n", 158556 },	-- Aithlyn <Wild Hunt Quartermaster>
 						["coord"] = { 48.4, 50.4, ARDENWEALD },
 						["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(180649, {	-- Wild Hunt Supplies
 								i(180635),	-- Hungry Burrower (PET!)
 								i(183800),	-- Amber Ardenmoth (MOUNT!)
@@ -35,7 +35,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							{ 48.4, 50.4, ARDENWEALD },
 							{ 59.6, 31.8, THE_TRUNK },	-- Heart of the Forest
 						},
-						["g"] = bubbleDownClassicRep(FACTION_THE_WILD_HUNT, {
+						["groups"] = bubbleDownClassicRep(FACTION_THE_WILD_HUNT, {
 							{		-- Neutral
 								i(190644, {	-- Vessel of Profound Possibilities (CI!)
 									["cost"] = {{"c",2009,10000}},	-- 10,000 Cosmic Flux

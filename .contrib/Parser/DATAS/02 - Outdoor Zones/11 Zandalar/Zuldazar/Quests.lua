@@ -45,7 +45,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["isWeekly"] = true,
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
@@ -55,7 +55,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["isWeekly"] = true,
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
@@ -66,7 +66,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["isWeekly"] = true,
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
@@ -76,7 +76,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["isWeekly"] = true,
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
@@ -86,7 +86,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["isWeekly"] = true,
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
@@ -96,7 +96,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["isWeekly"] = true,
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
@@ -106,7 +106,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["isWeekly"] = true,
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
@@ -116,7 +116,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["isWeekly"] = true,
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
@@ -126,7 +126,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["isWeekly"] = true,
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
@@ -136,7 +136,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["isWeekly"] = true,
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
@@ -145,7 +145,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["coord"] = { 51.56, 58.06, ZULDAZAR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 143551 },	--  Centurion Firescream
-					["g"] = {
+					["groups"] = {
 						i(163604, {	-- Net-O-Matic 5000
 							["filterID"] = CONSUMABLES,
 						}),
@@ -155,7 +155,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["provider"] = { "n", 143555 },	-- Xander Silberman
 					["races"] = HORDE_ONLY,
 					["coord"] = { 51.6, 58.2, ZANDALAR },
-					["g"] = {
+					["groups"] = {
 						i(168920),	-- Azerite-Encrusted Timequartz (Rank 1)
 						i(168442),	-- Roiling Blood of the Vanquished (Rank 1)
 						i(168578),	-- Sphere of Suppressed Force (Rank 1)
@@ -211,7 +211,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122009 },	-- Kraal Master B'khor
 				["coord"] = { 67.6, 43.4, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158411),	-- Jambani Girdle
 					i(158434),	-- Jambani Legwraps
 					i(158408),	-- Rastari Girdle
@@ -234,7 +234,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 121706 },	-- Beastlord L'kala
 				["coord"] = { 66.8, 42.5, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(167545),	-- L'kala's Offering (QI!)
 				},
 			}),
@@ -281,7 +281,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 151257 },	-- Torcali
 				["coord"] = { 68.2, 29.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(167546),	-- Blessed Offering (QI!)
 				},
 			}),
@@ -292,7 +292,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["provider"] = { "n", 128925 },	-- Deyon
 				["coord"] = { 75.2, 61.5, ZULDAZAR },
-				["g"] = {
+				["groups"] = {
 					i(157543),	-- Orders from Nazjatar (QI!)
 					i(157539),	-- Scroll of Storm Control (QI!)
 					i(157554),	-- Stone Fragment (QI!)
@@ -325,7 +325,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130821 },	-- Wavemaster Lanfa
 				["coord"] = { 54.3, 87.0, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156473),	-- Empowered Fire Mojo (QI!)
 				},
 			}),
@@ -334,7 +334,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130905 },	-- Cala Cruzpot
 				["coord"] = { 64.0, 35.4, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155904),	-- Razorwing Bile Sac (QI!)
 				},
 			}),
@@ -343,10 +343,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
 				["coord"] = { 66.7, 42.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o(293960, {	-- Crown of Torcali
 						["coord"] = { 70.5, 34.6, ZULDAZAR },
-						["g"] = { i(162586) },	-- Crown of Torcali (QI!)
+						["groups"] = { i(162586) },	-- Crown of Torcali (QI!)
 					}),
 					i(162587),	-- Dustwing Incandescence (QI!)
 				},
@@ -362,7 +362,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 124063 },	-- Jol the Ancient
 				["coord"] = { 76.4, 16.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156827),	-- Aged Crab Foam (QI!)
 					i(156824),	-- Brutosaur Scale (QI!)
 					i(156809),	-- Envenomed Puffer Spine (QI!)
@@ -373,7 +373,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131580 },	-- Apprentice Telemancer Astrandis
 				["coord"] = { 43.9, 72.1, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o_repeated({	-- Xibalan Fossil
 						["coords"] = {
 							{ 41.1, 75.0, ZULDAZAR },
@@ -385,7 +385,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							{ 42.8, 72.9, ZULDAZAR },
 							{ 42.9, 73.5, ZULDAZAR },
 						},
-						["g"] = {
+						["groups"] = {
 							o(280490),	-- Xibalan Fossil
 							o(280491),	-- Xibalan Fossil
 							o(280493),	-- Xibalan Fossil
@@ -417,7 +417,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 129907 },	-- Zul the Prophet
 				["coord"] = { 62.9, 28.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155300),	-- Jambani Deflector
 					i(159763),	-- Jambani Hex Focus
 					i(155302),	-- Idol of Vol'jamba
@@ -436,7 +436,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["provider"] = { "n", 125039 },	-- Trader Kro
 				["coord"] = { 79.2, 42.3, ZULDAZAR },
-				["g"] = {
+				["groups"] = {
 					i(156539),	-- Chunk of Naga Flesh (QI!)
 				},
 			}),
@@ -446,7 +446,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
 				["coord"] = { 68.2, 41.8, ZULDAZAR },
-				["g"] = {
+				["groups"] = {
 					i(168304),	-- Squeaky Raptor (QI!)
 				},
 			}),
@@ -458,7 +458,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["isDaily"] = true,
 				["coord"] = { 68.2, 41.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(168304),	-- Squeaky Raptor (QI!)
 				},
 			}),
@@ -472,7 +472,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 49969 },	-- Awaken a God
 				["provider"] = { "n", 131475 },	-- Shrine of Gral
 				["coord"] = { 82.8, 42.3, ZULDAZAR },
-				["g"] = {
+				["groups"] = {
 					i(159765),	-- Empowered Shark's Tooth
 					i(155308),	-- Whispering Seawitch's Ring
 				},
@@ -492,7 +492,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130905 },	-- Cala Cruzpot
 				["coord"] = { 64.1, 35.3, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156475),	-- Aggression Formula (QI!)
 				},
 			}),
@@ -512,7 +512,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["provider"] = { "n", 128889 },	-- Deyon
 				["coord"] = { 73.7, 61.0, ZULDAZAR },
-				["g"] = {
+				["groups"] = {
 					i(154708),	-- Nazeshi Cage Key (QI!)
 				},
 			}),
@@ -536,7 +536,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135803 },	-- J'eebi
 				["coord"] = { 76.4, 48.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(159934),	-- Large Lump of Crab Meat (QI!)
 				},
 			}),
@@ -549,7 +549,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127815 },	-- Zolani
 				["coord"] = { 47.9, 60.4, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(153529),	-- Condensed Thunder (QI!)
 				},
 			}),
@@ -568,7 +568,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
 				["coord"] = { 66.8, 42.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160975),	-- Partially Digested Direhorn Flesh (QI!)
 				},
 			}),
@@ -591,7 +591,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
 				["coord"] = { 66.8, 42.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o_repeated({
 						i(150347),	-- Steaming Fresh Carrion (QI!)
 						o(291234),	-- Steaming Fresh Carrion
@@ -608,7 +608,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["coord"] = { 70.6, 50.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(159146, {	-- Kua'fon (MOUNT!)
 						-- using cost here to show the quest chain starting item
 						["cost"] = {{"i",157782,1}},	-- Pterrordax Egg
@@ -621,7 +621,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 70.6, 50.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["cost"] = { { "i", 159139, 1 } },	-- 1x Lightweight Skyterror Barding
-				["g"] = {
+				["groups"] = {
 					i(159138),	-- Berserker Skull (QI!)
 				},
 			}),
@@ -651,7 +651,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 129907 },	-- Zul the Prophet
 				["coord"] = { 65.7, 30.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160523),	-- Seal of Implacable Fate (QI!)
 					i(160524),	-- Zul's Ire (QI!)
 				},
@@ -687,7 +687,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127377 },	-- Pa'ku
 				["coord"] = { 70.9, 50.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158885),	-- Shimmerfin Flesh (QI!)
 				},
 			}),
@@ -701,7 +701,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					{ 75.2, 61.5, ZULDAZAR },	-- Deyon
 					{ 70.6, 64.9, ZULDAZAR },	-- Akru
 				},
-				["g"] = {
+				["groups"] = {
 					i(157543),	-- Orders from Nazjatar (QI!)
 				},
 			}),
@@ -716,7 +716,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131580 },	-- Apprentice Telemancer Astrandis
 				["coord"] = { 40.0, 76.5, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155310),	-- Reliquary Explorer's Drape
 					i(158419),	-- Rastari Treads
 					i(158420),	-- Zanchuli Footwraps
@@ -739,7 +739,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
 				["coord"] = { 66.8, 42.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(147897),	-- Direhorn Growth Hormone (QI!)
 				},
 			}),
@@ -747,7 +747,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 49768 },	-- Nesingwary's Trek
 				["provider"] = { "n", 123005 },	-- Hemet Nesingwary
 				["coord"] = { 67.5, 17.7, ZULDAZAR },
-				["g"] = {
+				["groups"] = {
 					i(158447),	-- Jambani Armguards
 					i(158423),	-- Jambani Gloves
 					i(158445),	-- Rastari Armguards
@@ -771,7 +771,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 47586 },	-- Hunting the Hunter
 				["provider"] = { "n", 138669 },	-- Hemet Nesingwary
 				["coord"] = { 63.5, 16.1, ZULDAZAR },
-				["g"] = {	-- The rewards are Horde-only.
+				["groups"] = {	-- The rewards are Horde-only.
 					i(159120, {	-- Great Hunt Warglaive
 						["races"] = HORDE_ONLY,
 					}),
@@ -809,7 +809,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 124656 },	-- Zolani
 				["coord"] = { 72.1, 21.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(151384),	-- Traitorous Zandalari Head (QI!)
 				},
 			}),
@@ -818,7 +818,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
 				["coord"] = { 66.7, 42.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(162589),	-- Alexxi's Foolproof Remedy (QI!)
 				},
 			}),
@@ -839,7 +839,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130833 },	-- Captain Grez'ko
 				["coord"] = { 57.8, 76.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156473),	-- Empowered Fire Mojo (QI!)
 					i(158667),	-- Blue Flame Spelltorch
 					i(159124),	-- Golden Fleet Buckler
@@ -867,7 +867,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(47706, {	-- Hunt for King K'tal
 				["provider"] = { "o", 271706 },	-- Hunters' Board
 				["coord"] = { 67.4, 17.9, ZULDAZAR },
-				["g"] = {
+				["groups"] = {
 					i(151169),	-- Skull of K'tal (QI!)
 				},
 			}),
@@ -919,7 +919,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135576 },	-- Bo'tzun Maset
 				["coord"] = { 54.4, 87.0, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155882),	-- Brig Key (QI!)
 					i(159942),	-- Zul Adherent's Band
 				},
@@ -998,7 +998,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 124063 },	-- Jol the Ancient
 				["coord"] = { 76.4, 16.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160568),	-- Ancient Tortollan Scroll (QI!)
 					i(160566),	-- Astringent Spices (QI!)
 					i(160569),	-- Clotting Powder (QI!)
@@ -1016,7 +1016,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					{ 52.1, 32.8, ZULDAZAR },
 				},
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(159105),	-- Spy Mistress Chopper
 					i(159106),	-- Venom Queen Longbow
 					i(159107),	-- Shadra Disciple's Hexknife
@@ -1031,7 +1031,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130929 },	-- Witch Doctor Jangalar
 				["coord"] = { 64.1, 35.3, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155911),	-- Jangalar's Voodoo Totem (QI!)
 				},
 			}),
@@ -1061,7 +1061,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 129907 },	-- Zul the Prophet
 				["coord"] = { 62.8, 32.5, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(161139),	-- Spirit Twister's Band
 					i(155255),	-- Rastari Legguards
 					i(155257),	-- Zanchuli Legwraps
@@ -1081,7 +1081,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["isDaily"] = true,
 				["coord"] = { 70.7, 51.1, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(162024),	-- Kua'fon's Favorite Skull (QI!)
 				},
 			}),
@@ -1090,7 +1090,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127814 },	-- Habutu
 				["coord"] = { 47.9, 60.4, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(153524),	-- Rastari Skull Whistle (QI!)
 				},
 			}),
@@ -1133,7 +1133,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 49283 },	-- Who Seeks the Seekers?
 				["provider"] = { "n", 129586 },	-- Batu
 				["coord"] = { 70.5, 65.2, ZULDAZAR },
-				["g"] = {
+				["groups"] = {
 					i(154704),	-- Scroll of Seeking (QI!)
 				},
 			}),
@@ -1181,7 +1181,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 125486 },	-- Wingrider Nivek
 				["coord"] = { 69.0, 40.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160945),	-- Queenfeather's Plume (QI!)
 				},
 			}),
@@ -1190,7 +1190,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 124062 },	-- King Rastakhan
 				["coord"] = { 76.7, 16.1, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156861),	-- Skull of Windcaller Ula'jan (QI!)
 					i(155242),	-- Rastari Warboots
 					i(155243),	-- Zanchuli Slippers
@@ -1207,7 +1207,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 121706 },	-- Beastlord L'kala
 				["coord"] = { 66.8, 42.5, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(159764),	-- Enraged Diemetradon Fin
 					i(158390),	-- Jambani Striders
 					i(158387),	-- Rastari Footguards
@@ -1243,7 +1243,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["provider"] = { "n", 125041 },	-- Scrollsage Goji
 				["coord"] = { 79.2, 42.1, ZULDAZAR },
-				["g"] = {
+				["groups"] = {
 					i(151859),	-- Scroll of Illusion (QI!)
 				},
 			}),
@@ -1251,7 +1251,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 49286 },	-- Caged Wisdom
 				["provider"] = { "n", 128889 },	-- Deyon
 				["coord"] = { 73.7, 61.0, ZULDAZAR },
-				["g"] = {
+				["groups"] = {
 					i(153022),	-- Tortollan Scroll (QI!)
 				},
 			}),
@@ -1285,7 +1285,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127814 },	-- Habutu
 				["coord"] = { 47.9, 60.4, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155304),	-- Stormbinder Signet Ring
 					i(158412),	-- Zanchuli Cuffs
 					i(158413),	-- Rastari Bracers
@@ -1304,7 +1304,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130905 },	-- Cala Cruzpot
 				["coord"] = { 64.0, 35.4, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156922),	-- Gloomtail's Head (QI!)
 					i(156867),	-- Voodoo'ed Aggression Formula (QI!)
 				},
@@ -1348,7 +1348,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130450 },	-- Bladeguard Sonji
 				["coord"] = { 47.3, 25.0, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155311),	-- Soltok's Drape
 					i(155309),	-- Lightning Caller's Band
 				},
@@ -1365,18 +1365,18 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127837 },	-- Kaza'jin the Wavebinder
 				["coord"] = { 47.1, 60.5, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o(277886, {	-- Grimoire of the Other Side
 						["coord"] = { 46.8, 61.9, ZULDAZAR },
-						["g"] = { i(153526) },	-- Grimoire of the Other Side (QI!)
+						["groups"] = { i(153526) },	-- Grimoire of the Other Side (QI!)
 					}),
 					o(277444, {	-- Reclaimed Bijous
 						["coord"] = { 45.6, 60.4, ZULDAZAR },
-						["g"] = { i(153525) },	-- Reclaimed Bijous (QI!)
+						["groups"] = { i(153525) },	-- Reclaimed Bijous (QI!)
 					}),
 					o(277447, {	-- Venerated Remains
 						["coord"] = { 45.8, 62.4, ZULDAZAR },
-						["g"] = { i(153527) },	-- Venerated Remains (QI!)
+						["groups"] = { i(153527) },	-- Venerated Remains (QI!)
 					}),
 				},
 			}),
@@ -1394,7 +1394,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127377 },	-- Pa'ku
 				["coord"] = { 71.4, 49.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158913),	-- Huge Dragon Kite (QI!)
 				},
 			}),
@@ -1446,7 +1446,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["description"] = "You receive the item that starts this quest from looting any treasure chest.",
 				["provider"] = { "i", 163856 },	-- Ancient Pilgrimage Scrollcasing
 				["_drop"] = { "g" },
-				["g"] = {
+				["groups"] = {
 					i(163853),	-- Pilgrimage Scroll (QI!)
 					i(163852),	-- Tortollan Pilgrimage Scroll (QI!)
 					azeriteItem(163863),	-- Bartered Vrykul Cowl
@@ -1472,7 +1472,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130929 },	-- Witch Doctor Jangalar
 				["coord"] = { 64.1, 35.3, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156925),	-- Offering of Gloomtail's Head (QI!)
 					i(159123),	-- Jambani Barrier
 					i(158666),	-- Jambani Voodoo Focus
@@ -1517,7 +1517,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127837 },	-- Kaza'jin the Wavebinder
 				["coord"] = { 49.6, 64.5, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					azeriteItem(155250),	-- Rastari Helm
 					azeriteItem(155260),	-- Rastari Pauldrons
 					azeriteItem(155252),	-- Torcalin Coif
@@ -1543,9 +1543,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130929 },	-- Witch Doctor Jangalar
 				["coord"] = { 64.1, 35.3, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o(279044, {	-- Zandalari Rushes
-						["g"] = { i(155916) },	-- Fragrant Rushes (QI!)
+						["groups"] = { i(155916) },	-- Fragrant Rushes (QI!)
 					}),
 				},
 			}),
@@ -1554,7 +1554,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 132637 },	-- Jamil Abul'housin
 				["coord"] = { 76.5, 16.0, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(156834),	-- Traitor's Blood (QI!)
 				},
 			}),
@@ -1565,18 +1565,18 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["provider"] = { "n", 125047 },	-- Rokor
 				["coord"] = { 81.3, 45.8, ZULDAZAR },
-				["g"] = {
+				["groups"] = {
 					o(272563, {	-- Edicts of Gral
 						["coord"] = { 80.8, 43.3, ZULDAZAR },
-						["g"] = { i(151852) },	-- Edicts of Gral (QI!)
+						["groups"] = { i(151852) },	-- Edicts of Gral (QI!)
 					}),
 					o(272561, {	-- Scroll of Purify
 						["coord"] = { 80.0, 44.5, ZULDAZAR },
-						["g"] = { i(151854) },	-- Scroll of Purify (QI!)
+						["groups"] = { i(151854) },	-- Scroll of Purify (QI!)
 					}),
 					o(272562, {	-- Waves of Power
 						["coord"] = { 80.5, 45.0, ZULDAZAR },
-						["g"] = { i(151853) },	-- Waves of Power (QI!)
+						["groups"] = { i(151853) },	-- Waves of Power (QI!)
 					}),
 				},
 			}),
@@ -1601,7 +1601,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 137075 },	-- Lieutenant Dennis Grimtale
 				["coord"] = { 76.6, 48.5, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(159836),	-- Scouting Map (QI!)
 					i(159835),	-- Ship's Manifest (QI!)
 					i(159837),	-- Unsent Letter (QI!)
@@ -1612,7 +1612,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 151319 },	-- Li'zal <Priestess of Torcali>
 				["coord"] = { 68.3, 41.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(168325),	-- Direhorn Saddle (QI!)
 				},
 			}),
@@ -1639,7 +1639,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130929 },	-- Witch Doctor Jangalar
 				["coord"] = { 64.1, 35.3, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155917),	-- Partially Digested Pod (QI!)
 				},
 			}),
@@ -1648,7 +1648,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 121599 },		-- King Rastakhan
 				["coord"] = { 60.39, 22.03, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(147833),	-- Antitoxin (QI!)
 				},
 			}),
@@ -1672,7 +1672,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 49283 },	-- Who Seeks the Seekers?
 				["provider"] = { "n", 128888 },	-- Koba
 				["coord"] = { 70.2, 65.0, ZULDAZAR },
-				["g"] = {
+				["groups"] = {
 					i(156871),	-- Spitzy (TOY!)
 					i(156865),	-- Amphibious Lab Enclosure (QI!)
 					i(156866),	-- Hatchling's First Alchemy Stone (QI!)
@@ -1696,7 +1696,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 67.6, 72.8, ZANCHUL_HALL_OF_THE_HIGH_PRIESTS },
 				["races"] = HORDE_ONLY,
 				["sourceQuests"] = { 53775 },	-- Shades of Disruption
-				["g"] = {
+				["groups"] = {
 					i(165401),	-- The Glaive of Vol'jin (QI!)
 				},
 			}),
@@ -1705,7 +1705,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 151999 },	-- Jo'nok, Bulwark of Torcali <Zanchuli Council>
 				["coord"] = { 23.3, 73.8, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(168408),	-- Child of Torcali (MOUNT!)
 				},
 			}),
@@ -1742,7 +1742,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 121601 },		-- Rokhan
 				["coord"] = { 56.9, 19.10, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158653),	-- Bloodsiege Drape
 					i(162453),	-- Shazraka's Curse Ring
 				},
@@ -1752,7 +1752,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 151257 },	-- Torcali <Loa of Wanderers>
 				["races"] = HORDE_ONLY,
 				["coord"] = { 68.2, 29.6, ZULDAZAR },
-				["g"] = {
+				["groups"] = {
 					o_repeated({
 						o(325476),	-- Direbloom
 						o(325478),	-- Direbloom
@@ -1769,7 +1769,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 121706 },	-- Beastlord L'kala
 				["coord"] = { 66.8, 42.5, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o(270040, {	-- Nearly-hatching Pterrordax Egg
 						i(150272),	-- Nearly-hatching Pterrordax Egg (QI!)
 					}),
@@ -1784,7 +1784,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					51521,	-- The True Leader of Zandalar
 					54165,	-- The Return of Derek Proudmoore
 				},
-				["g"] = {
+				["groups"] = {
 					i(164944),	-- The Bloodied Glaive of Vol'jin (QI!)
 				},
 			}),
@@ -1832,7 +1832,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 129907 },	-- Zul the Prophet
 				["coord"] = { 64.4, 28.5, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(155458),	-- Mindbreaker Chant (QI!)
 				},
 			}),
@@ -1862,7 +1862,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
 				["sourceQuests"] = { 49276 },	-- The Thrill of Exploration
-				["g"] = {
+				["groups"] = {
 					o_repeated({	-- Xibalan Fossil
 						["coords"] = {
 							{ 41.1, 75.0, ZULDAZAR },
@@ -1874,7 +1874,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							{ 42.8, 72.9, ZULDAZAR },
 							{ 42.9, 73.5, ZULDAZAR },
 						},
-						["g"] = {
+						["groups"] = {
 							o(280490),	-- Xibalan Fossil
 							o(280491),	-- Xibalan Fossil
 							o(280493),	-- Xibalan Fossil
@@ -1902,7 +1902,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 63.5, 31.7, ZULDAZAR },
 				["sourceQuests"] = { 49488 },	-- Tal'gurub
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o(278453, {	-- Voodoo Totem
 						["coords"] = {
 							{ 62.4, 28.5, ZULDAZAR },
@@ -1917,7 +1917,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							{ 64.4, 33.9, ZULDAZAR },
 							{ 64.7, 33.0, ZULDAZAR },
 						},
-						["g"] = { i(154901) },	-- Voodoo Totem (QI!)
+						["groups"] = { i(154901) },	-- Voodoo Totem (QI!)
 					}),
 				},
 			}),
@@ -1936,7 +1936,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 44.4, 73.4, ZULDAZAR },
 				["sourceQuests"] = { 49282 },	-- Morgrum's Extended Survey
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(159743),	-- Breath of Xibala (QI!)
 				},
 			}),
@@ -1984,7 +1984,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131049 },	-- Rezan
 				["coord"] = { 43.6, 39.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					azeriteItem(155239),	-- Rastari Breastplate
 					azeriteItem(161143),	-- Rastari Helmet
 					azeriteItem(161141),	-- Torcalin Headguard
@@ -2055,7 +2055,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 60.0, 22.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 1181 },	-- Zandalar Scenario
-				["g"] = {
+				["groups"] = {
 					ach(12481),	-- The Final Seal
 				},
 			}),

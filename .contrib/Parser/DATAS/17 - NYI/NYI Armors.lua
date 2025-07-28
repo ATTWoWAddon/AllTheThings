@@ -3449,10 +3449,14 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 			expansion(EXPANSION.BFA, patch(3,0), {
 				i(174470),	-- Bound Sinew Ring \\ Ring - PH
+				i(174053),	-- Corrupted Ring - Overconfident
 				i(174050),	-- Corrupted Ring - Revel in Violence
 				i(174051),	-- Corrupted Ring - Spontaneous Fury
 				i(174056),	-- Corrupted Ring - Face the Truth
+				i(174054),	-- Corrupted Ring - Last Grasp
+				i(174052),	-- Corrupted Ring - Masochistic
 				i(174057),	-- Corrupted Ring - Mesmerizing
+				i(174055),	-- Corrupted Ring - Thing From Beyond
 				i(170738),	-- Felsoul Band of Destruction
 				i(174468),	-- Ring of Deceitful Rumors \\ Ring - PH
 			}),

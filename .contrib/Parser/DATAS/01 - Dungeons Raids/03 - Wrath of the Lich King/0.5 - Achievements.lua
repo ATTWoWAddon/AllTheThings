@@ -228,7 +228,7 @@ root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WRA
 		}),
 		ach(11320, {	-- Raiding with Leashes IV: Wrath of the Lick King
 			["timeline"] = { ADDED_7_1_0 },
-			["g"] = {
+			["groups"] = {
 				i(142210),	-- Celestial Invitation (Begins a quest for a pet)
 			},
 		}),

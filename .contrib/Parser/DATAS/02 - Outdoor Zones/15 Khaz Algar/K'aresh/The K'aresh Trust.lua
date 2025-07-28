@@ -29,6 +29,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					q(90634),	-- A Small Bundle of Crystals
 					q(90633),	-- Weathered Crests
 				}, {	-- RENOWN 9 --
+					q(90635),	-- Valorstones
 				}, {	-- RENOWN 10 --
 					i(245968),	-- Tabard of the Trust
 				}, {	-- RENOWN 11 --
@@ -49,10 +50,35 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					------ Paragon ------
 				},
 			}))),
+			n(QUESTS, {
+				q(90663, {	-- Stealing What is Ours
+					["provider"] = { "n", 238016 },	-- Ba'eth
+					["coord"] = { 57.6, 58.1, KARESH_TAZAVESH },
+					["minReputation"] = { FACTION_THE_KARESH_TRUST, 9 },	-- The K'aresh Trust Renown 9
+					["groups"] = {
+						i(242535, {	-- Missing Imports (QI!)
+							["coord"] = { 46.8, 35.7, KARESH_TAZAVESH },
+							["providers"] = {
+								{ "o", 532317 },	-- Shadowtrade Imports
+								{ "o", 532318 },	-- Shadowtrade Imports
+								{ "o", 532321 },	-- Shadowtrade Imports
+								{ "o", 532322 },	-- Shadowtrade Imports
+								{ "o", 532323 },	-- Shadowtrade Imports
+							},
+						}),
+					},
+				}),
+				q(90729, {	-- Win-Win Situation
+					["sourceQuests"] = { 90663 },	-- Stealing What is Ours
+					["provider"] = { "n", 238016 },	-- Ba'eth
+					["coord"] = { 57.6, 58.1, KARESH_TAZAVESH },
+					["minReputation"] = { FACTION_THE_KARESH_TRUST, 9 },	-- The K'aresh Trust Renown 9
+				}),
+			}),
 			n(VENDORS, {
 				n(235252, {	-- Om'sirik <Renown Quartermaster>
 					["coord"] = { 40.6, 29.2, KARESH_TAZAVESH },
-					["g"] = bubbleDownRep(FACTION_THE_KARESH_TRUST, {
+					["groups"] = bubbleDownRep(FACTION_THE_KARESH_TRUST, {
 						{		-- RENOWN 1 --
 						}, {	-- RENOWN 2 --
 						}, {	-- RENOWN 3 --
@@ -202,5 +228,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				}),
 			}),
 		})),
+	}),
+})));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
+	m(KHAZ_ALGAR, {
+		m(KARESH, {
+			n(QUESTS, {	-- Exo Note to Senior Contrib(s): I think this structure should be different but dunno how to structure it. Please fix and remove comment.
+				q(90725),	-- Triggered at the completion of 'Stealing What is Ours' (90663) and 'Win-Win Situation' (90729)
+			}),
+		}),
 	}),
 })));

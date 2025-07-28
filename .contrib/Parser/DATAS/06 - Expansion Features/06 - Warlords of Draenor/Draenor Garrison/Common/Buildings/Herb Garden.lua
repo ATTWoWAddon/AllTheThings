@@ -10,7 +10,7 @@ root(ROOTS.ExpansionFeatures,
 					n(ACHIEVEMENTS, {
 						ach(9454, {	-- Draenic Seed Collector
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"] = {
+							["groups"] = {
 								i(111997),	-- Herb Garden, Level 3
 							},
 						}),
@@ -18,7 +18,7 @@ root(ROOTS.ExpansionFeatures,
 					n(VENDORS, {
 						n(85344, {	-- Naron Bloomthistle
 							["races"] = ALLIANCE_ONLY,
-							["g"] = {
+							["groups"] = {
 								i(110721, {	-- Crazy Carrot (PET!)
 									["cost"] = { { "i", 116053, 1000 }, },	-- 1,000x Draenic Seeds
 								}),
@@ -63,7 +63,7 @@ root(ROOTS.ExpansionFeatures,
 					n(VENDORS, {
 						n(81981, {	-- Tarnon
 							["races"] = HORDE_ONLY,
-							["g"] = {
+							["groups"] = {
 								i(110721, {	-- Crazy Carrot (PET!)
 									["cost"] = { { "i", 116053, 1000 }, },	-- 1,000x Draenic Seeds
 								}),

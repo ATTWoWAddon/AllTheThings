@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 223533 },	-- Custodian Khubon
 				["coord"] = { 49.8, 54.1, DORNOGAL },
 				["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-				["g"] = {
+				["groups"] = {
 					i(211297),	-- Fractured Spark of Omens
 				},
 			}),
@@ -22,7 +22,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 223533 },	-- Custodian Khubon
 				["coord"] = { 49.8, 54.1, DORNOGAL },
 				["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
-				["g"] = {
+				["groups"] = {
 					i(230905),	-- Fractured Spark of Fortunes
 				},
 			}),
@@ -31,7 +31,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 223533 },	-- Custodian Khubon
 				["coord"] = { 49.8, 54.1, DORNOGAL },
 				["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
-				["g"] = {
+				["groups"] = {
 					i(230905),	-- Fractured Spark of Fortunes
 				},
 			}),
@@ -48,7 +48,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 219226 },	-- Vaskarn
 				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
 				["coord"] = { 52.1, 42.2, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					i(236953),	-- Crimson Valorstone
 				},
 			}),
@@ -57,7 +57,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 219226 },	-- Vaskarn
 				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
 				["coord"] = { 52.1, 42.2, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					i(236953),	-- Crimson Valorstone
 				},
 			}),
@@ -67,7 +67,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 219226 },	-- Vaskarn
 				["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 				["coord"] = { 52.1, 42.2, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					i(236953),	-- Crimson Valorstone
 					i(231269),	-- Satchel of Carved Undermine Crests
 				},
@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 219226 },	-- Vaskarn
 				["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 				["coord"] = { 52.1, 42.2, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					i(236953),	-- Crimson Valorstone
 					i(231269),	-- Satchel of Carved Undermine Crests
 				},
@@ -91,14 +91,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 229128 },	-- Valeera Sanguinar
 				["coord"] = { 61.0, 5.4, DORNOGAL },
 				["classes"] = { MAGE },
-				["g"] = {
+				["groups"] = {
 					i(227710),	-- Tome of Polymorph: Mosswool (CI!)
 				},
 			}),
 			q(83275, {	-- Gear Enchanting
 				["provider"] = { "n", 226287 },	-- Ellerdin
 				["coord"] = { 51.8, 48.7, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					i(225652),	-- Enchant Ring - Glimmering Haste
 					i(226245),	-- Hollow Ring
 				},
@@ -116,7 +116,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			q(84490, {	-- The Great Vault
 				["provider"] = { "n", 229336 },	-- Overseer Hyggred
 				["coord"] = { 52.1, 45.5, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					i(228378),	-- Pristine Council's Seal (QI!)
 				},
 			}),
@@ -125,14 +125,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 219226 },	-- Vaskarn
 				["coord"] = { 52.1, 42.2, DORNOGAL },
 				["timeline"] = { REMOVED_11_1_0 },
-				["g"] = { i(221269) },	-- Crimson Valorstone
+				["groups"] = { i(221269) },	-- Crimson Valorstone
 			}),
 			q(82059, {	-- Transmutation Station
 				["sourceQuests"] = { 82050 },	-- The Harbinger of Crests
 				["provider"] = { "n", 219226 },	-- Vaskarn
 				["coord"] = { 52.1, 42.2, DORNOGAL },
 				["timeline"] = { REMOVED_11_1_0 },
-				["g"] = { i(221269) },	-- Crimson Valorstone
+				["groups"] = { i(221269) },	-- Crimson Valorstone
 			}),
 			-- Ultra Prime is likely one-time for the 3x chips, regular quest will follow other weeks
 			q(91205, {	-- Ultra Prime Deluxe Turbo-Boost: Powerhouse Challenges
@@ -140,14 +140,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 52.4, 45.9, DORNOGAL },
 				["isWeekly"] = true,	-- this quest was also reset by blizz for some reason
 				["timeline"] = { ADDED_11_1_5, REMOVED_11_2_0 },
-				["g"] = { i(237502) },	-- Puzzling Cartel Chip x3
+				["groups"] = { i(237502) },	-- Puzzling Cartel Chip x3
 			}),
 			q(89039, {	-- Turbo-Boost: Powerhouse Challenges
 				["provider"] = { "o", 525434 },	-- Bounty: Liberation of Undermine
 				["coord"] = { 52.4, 45.9, DORNOGAL },
 				["isWeekly"] = true,
 				["timeline"] = { ADDED_11_1_5, REMOVED_11_2_0 },
-				["g"] = { i(237502) },	-- Puzzling Cartel Chip
+				["groups"] = { i(237502) },	-- Puzzling Cartel Chip
 			}),
 		}),
 		------ Alts ------
@@ -240,7 +240,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 226511 },	-- High Speaker Brinthe
 				["coord"] = { 46.3, 49.3, DORNOGAL },
 				["maps"] = { VAULT_OF_MEMORY },
-				["g"] = {
+				["groups"] = {
 					i(225741),	-- Titan Disc Fragment (QI!)
 				},
 			}),
@@ -249,7 +249,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 226511 },	-- High Speaker Brinthe
 				["coord"] = { 46.3, 49.3, DORNOGAL },
 				["maps"] = { VAULT_OF_MEMORY },
-				["g"] = {
+				["groups"] = {
 					i(225741),	-- Titan Disc Fragment (QI!)
 				},
 			}),

@@ -143,7 +143,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 36.5, 46.9, SURAMAR },
 					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
 					["sourceQuest"] = 42229,	-- Shal'Aran
-					["g"] = {
+					["groups"] = {
 						i(141652),	-- Mana Divining Stone
 					},
 				}),
@@ -187,7 +187,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 35.3, 47.3, SURAMAR },
 					["provider"] = { "n", 98312 },	-- First Arcanist Thalyssra
 					["sourceQuest"] = 40123,	-- The Nightborne Pact
-					["g"] = {
+					["groups"] = {
 						i(121804),	-- Cloak of the Everliving Keeper
 					},
 				}),
@@ -244,7 +244,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 60.6, 56.5, SURAMAR },
 					["provider"] = { "n", 108872 },	-- Margaux
 					["sourceQuest"] = 42835,	-- The Old Fashioned Way
-					["g"] = {
+					["groups"] = {
 						i(139790),	-- Untethered Wyrmling (PET!)
 					},
 				}),
@@ -396,14 +396,14 @@ root(ROOTS.Zones, {
 					["coord"] = { 48.4, 83.2, SURAMAR },
 					["provider"] = { "n", 107598 },	-- Vanthir
 					["sourceQuest"] = 40746,	-- One of the People
-					["g"] = {
+					["groups"] = {
 						i(138308),	-- Mana Wine Flask (QI!)
 					},
 				}),
 				q(42396, {	-- Do The Thing! -- aa
 					["coord"] = { 15.8, 54.8, SURAMAR },
 					["provider"] = { "n", 107302 },	-- Pearlhunter Phin
-					["g"] = {
+					["groups"] = {
 						i(137383),	-- Speckled Pearl (QI!)
 					},
 				}),
@@ -498,7 +498,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 36.6, 45.1, SURAMAR },
 					["provider"] = { "n", 115710 },	-- Chief Telemancer Oculeth
 					["sourceQuest"] = 45420,	-- The Nighthold: The Eye of Aman'Thul
-					["g"] = {
+					["groups"] = {
 						i(142436),	-- Arcanist's Manasaber (MOUNT!)
 					},
 				}),
@@ -617,7 +617,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 44.2, 73.0, SURAMAR },
 					["provider"] = { "n", 108063 },	-- Korine
 					["sourceQuest"] = 40745,	-- Shift Change
-					["g"] = {
+					["groups"] = {
 						i(130209),	-- Never Ending Toy Chest (TOY!)
 					},
 				}),
@@ -643,7 +643,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 41.0, 51.7, SURAMAR },
 					["provider"] = { "n", 114909 },	-- Archmage Khadgar
 					["sourceQuest"] = 44739,	-- Ready for Battle
-					["g"] = {
+					["groups"] = {
 						i(140078),	-- Crystalized Leypetal
 						i(140077),	-- Goldleaf Arcwine Phial
 						i(140076),	-- Felborne Energist's Gem
@@ -832,7 +832,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 36.4, 22.3, SURAMAR },
 					["provider"] = { "n", 101768 },	-- Lothrius Mooncaller
 					["sourceQuest"] = 40964,	-- The Rift Between
-					["g"] = {
+					["groups"] = {
 						i(133882),	-- Trap Rune (QI!)
 					},
 				}),
@@ -1009,7 +1009,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 30.3, 30.8, SURAMAR },
 					["provider"] = { "n", 103571 },	-- Solendra Featherdown
 					["sourceQuest"] = 41478,	-- The Final Blessing
-					["g"] = {
+					["groups"] = {
 						i(136605),	-- Solendra's Compassion (QI!)
 					},
 				}),
@@ -1037,7 +1037,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 15.1, 51.7, SURAMAR },
 					["provider"] = { "n", 108389 },	-- Mrgrlilgrl
 					["sourceQuest"] = 42728,	-- A Mlrglrmg For Grlmrgl
-					["g"] = {
+					["groups"] = {
 						i(141879),	-- Berglrgl Perrgl Girggrlf (TOY!)
 					},
 				}),
@@ -1125,7 +1125,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 32.2, 12.7, SURAMAR },
 					["provider"] = { "n", 101765 },	-- Syrana Starweaver
 					["sourceQuest"] = 40969,	-- Starweaver's Fate
-					["g"] = {
+					["groups"] = {
 						i(133999),	-- Inert Crystal (QI!)
 					},
 				}),
@@ -1161,7 +1161,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 36.4, 22.3, SURAMAR },
 					["provider"] = { "n", 101768 },	-- Lothrius Mooncaller
 					["sourceQuest"] = 40964,	-- The Rift Between
-					["g"] = {
+					["groups"] = {
 						i(133900),	-- Aftermath of the Well (QI!)
 						i(133898),	-- Anthology of the Guard (QI!)
 						i(133899),	-- Magical Manifest of the Moon (QI!)
@@ -1227,7 +1227,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 51.1, 76.1, SURAMAR },
 					["provider"] = { "n", 107225 },	-- Deline
 					["sourceQuest"] = 41878,	-- The Gondolier
-					["g"] = {
+					["groups"] = {
 						i(137295),	-- Bottle of Arcwine (QI!)
 					},
 				}),
@@ -1352,7 +1352,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 46.4, 58.1, SURAMAR },
 					["provider"] = { "n", 115517 },	-- Magus Sendath
 					["sourceQuest"] = 44834,	-- Nullified
-					["g"] = {
+					["groups"] = {
 						i(142260),	-- Arcane Nullifier (QI!)
 					},
 				}),
@@ -1456,7 +1456,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 36.6, 45.0, SURAMAR },
 					["provider"] = { "n", 115710 },	-- Chief Telemancer Oculeth
 					["sourceQuest"] = 45067,	-- Telemantic Expanse
-					["g"] = {
+					["groups"] = {
 						i(142405),	-- Advanced Telemancy Beacon (QI!)
 					},
 				}),
@@ -1545,7 +1545,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 36.8, 46.6, SURAMAR },
 					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
 					["sourceQuest"] = 42487,	-- Friends On the Outside
-					["g"] = {
+					["groups"] = {
 						i(138392),	-- Amplifier Fragment (QI!)
 						i(138391),	-- Arcane Amplifier (QI!)
 					},
@@ -1677,7 +1677,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 19.5, 22.3, SURAMAR },
 					["provider"] = { "n", 106696 },	-- Kalendros Irongrove
 					["sourceQuest"] = 41464,	-- Not here, Not Now, Not Ever
-					["g"] = {
+					["groups"] = {
 						i(135534),	-- Heavy Torch (QI!)
 					},
 				}),
@@ -1690,7 +1690,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 32.2, 12.7, SURAMAR },
 					["provider"] = { "n", 101765 },	-- Syrana Starweaver
 					["sourceQuest"] = 40969,	-- Starweaver's Fate
-					["g"] = {
+					["groups"] = {
 						i(133924),	-- Astromancer's Keystone (QI!)
 					},
 				}),
@@ -1897,7 +1897,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 21.4, 30.6, SURAMAR },
 					["provider"] = { "n", 103570 },	-- Mardranel Forestheart
 					["sourceQuest"] = 41453,	-- Homeward Bounding
-					["g"] = {
+					["groups"] = {
 						i(139791),	-- Lurking Owl Kitten (PET!)
 					},
 				}),

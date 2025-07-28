@@ -116,7 +116,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						{ 56.7, 85.1, AZJ_KAHET },	-- Cave Entrance
 						{ 66.77, 56.26, NERUBAR_LOWER },	-- Void Hole
 					},
-					["g"] = {
+					["groups"] = {
 						ach(40632),		-- No Harm Ever Came From Reading A Book
 					},
 				}),

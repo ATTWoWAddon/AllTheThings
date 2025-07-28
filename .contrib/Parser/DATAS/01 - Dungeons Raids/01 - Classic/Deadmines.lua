@@ -112,11 +112,11 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			q(27842, {	-- Only the Beginning
 				["qg"] = 46889,	-- Kagtha
-				-- The source quest never made it out of Beta.
 				--["sourceQuest"] = 28004,	-- Adventurers Wanted: The Deadmines [Horde]
 				["timeline"] = { ADDED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = lvlsquish(15, 15, 7),
+				-- The source quest never made it out of Beta.
 				["groups"] = {
 					objective(1, {	-- 0/1 Glubtok slain
 						["provider"] = { "n", 47162 },	-- Glubtok <The Foreman>
@@ -232,11 +232,11 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					{ "n", 46612 },	-- Lieutenant Horatio Laine
 					{ "i", 62334 },	-- Stormwind Communicator Mk. II
 				},
-				-- The source quest never made it out of Beta.
 				--["sourceQuest"] = 28005,	-- Adventurers Wanted: The Deadmines [Alliance]
 				["timeline"] = { ADDED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = lvlsquish(15, 15, 7),
+				-- The source quest never made it out of Beta.
 				["groups"] = {
 					objective(1, {	-- 0/1 Glubtok slain
 						["provider"] = { "n", 47162 },	-- Glubtok <The Foreman>
@@ -260,7 +260,6 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					{ "i", 2874 },	-- An Unsent Letter
 					{ "n", 1646 },	-- Baros Alexston <City Architect>
 				},
-				["description"] = "Drops from VanCleef. Deliver it to Baros Alexston in Stormwind City.",
 				["coords"] = {
 					-- #if AFTER WRATH
 					{ 57.7, 47.9, STORMWIND_CITY },
@@ -268,6 +267,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					{ 49, 30.2, STORMWIND_CITY },
 					-- #endif
 				},
+				["description"] = "Drops from VanCleef. Deliver it to Baros Alexston in Stormwind City.",
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 16,

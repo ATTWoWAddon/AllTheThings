@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sourceQuests"] = { 46938 },	-- Alone in the Abyss
 				["provider"] = { "n", 126239 },	-- Chieftain Hatuun
 				["coord"] = { 58.8, 78.4, KROKUUN },
-				["g"] = {
+				["groups"] = {
 					i(152472),	-- Chieftain's Salve (QI!)
 				},
 			}),
@@ -33,7 +33,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				},
 				["provider"] = { "n", 124975 },	-- Image of Grand Artificer Romuul
 				["coord"] = { 60.7, 47.2, KROKUUN },
-				["g"] = {
+				["groups"] = {
 					i(151851),	-- Immaculate Felcore (QI!)
 				},
 			}),
@@ -51,7 +51,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sourceQuests"] = { 47431 },	-- Gathering Light
 				["provider"] = { "n", 121519 },	-- Captain Fareeya
 				["coord"] = { 40.5, 63.5, KROKUUN },
-				["g"] = {
+				["groups"] = {
 					i(150942),	-- Argunite Crystal (QI!)
 				},
 			}),
@@ -112,7 +112,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["provider"] = { "n", 121519 },	-- Captain Fareeya
 				["coord"] = { 40.5, 63.6, KROKUUN },
 				["lvl"] = 45,
-				["g"] = {
+				["groups"] = {
 					i(150993),	-- Army of the Light Code Book (QI!)
 					i(150995),	-- Enigmatic Legion Orders (QI!)
 				},
@@ -161,7 +161,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sourceQuests"] = { 46938 },	-- Alone in the Abyss
 				["provider"] = { "n", 119535 },	-- Illidan Stormrage
 				["coord"] = { 60.8, 79.5, KROKUUN },
-				["g"] = {
+				["groups"] = {
 					i(152695),	-- Crest of the Grand Army
 					i(152690),	-- Darkfall Arcanum
 					i(152692),	-- Devastator Anchor Crystal
@@ -178,7 +178,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sourceQuests"] = { 47892 },	-- Storming the Citadel
 				["provider"] = { "n", 124974 },	-- Prophet Velen
 				["coord"] = { 61.1, 47.7, KROKUUN },
-				["g"] = {
+				["groups"] = {
 					i(152110),	-- Talisman of the Prophet (QI!)
 				},
 			}),
@@ -214,7 +214,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sourceQuests"] = { 47892 },	-- Storming the Citadel
 				["provider"] = { "n", 124975 },	-- Image of Grand Artificer Romuul
 				["coord"] = { 60.8, 47.3, KROKUUN },
-				["g"] = {
+				["groups"] = {
 					i(151837),	-- Invocation Array (QI!)
 					i(151838),	-- Judgment Core (QI!)
 					i(151839),	-- Vindicator Plating (QI!)
@@ -247,7 +247,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["provider"] = { "n", 121260 },	-- Lightforged Courier
 				["coord"] = { 40.6, 70.0, KROKUUN },
 				["lvl"] = 45,
-				["g"] = {
+				["groups"] = {
 					i(147491),	-- Sealed Missive (QI!)
 				},
 			}),

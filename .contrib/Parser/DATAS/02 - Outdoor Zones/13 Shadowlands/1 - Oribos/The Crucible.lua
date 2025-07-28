@@ -4,7 +4,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			["description"] = "The Crucible - sub-zone accessed via Tal-Inara",
 			["provider"] = { "n", 159478 },	-- Tal-Inara
 			["sourceQuest"] = 63857,	-- Voices of the Eternal
-			["g"] = {
+			["groups"] = {
 				n(HIDDEN_QUESTS, {
 					hqt(65614, {	-- Stay awhile and listen with Arbiter Pelagos (spellID 366958)
 						["timeline"] = {ADDED_9_2_0},

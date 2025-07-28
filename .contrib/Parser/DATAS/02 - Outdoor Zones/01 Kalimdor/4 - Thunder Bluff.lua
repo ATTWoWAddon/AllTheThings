@@ -146,32 +146,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(7822, {	-- A Donation of Mageweave
 					["qg"] = 14728,	-- Rumstag Proudstrider
 					["coord"] = { 43.2, 42.8, THUNDER_BLUFF },
-					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 				}),
 				q(7823, {	-- A Donation of Runecloth
 					["qg"] = 14728,	-- Rumstag Proudstrider
 					["coord"] = { 43.2, 42.8, THUNDER_BLUFF },
-					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
 				}),
 				q(7821, {	-- A Donation of Silk
 					["qg"] = 14728,	-- Rumstag Proudstrider
 					["coord"] = { 43.2, 42.8, THUNDER_BLUFF },
-					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 26,
 				}),
 				q(7820, {	-- A Donation of Wool
 					["qg"] = 14728,	-- Rumstag Proudstrider
 					["coord"] = { 43.2, 42.8, THUNDER_BLUFF },
-					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -179,9 +179,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14728,	-- Rumstag Proudstrider
 					["sourceQuest"] = 7823,	-- A Donation of Runecloth
 					["coord"] = { 43.2, 42.8, THUNDER_BLUFF },
-					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["maxReputation"] = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
@@ -302,11 +302,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if NOT ANYCLASSIC
 				q(5644, {	-- Devouring Plague [Thunder Bluff]
 					["qg"] = 3044,	-- Miles Welsh <Priest Trainer>
-					["coord"] = { 26.0, 15.8, THUNDER_BLUFF },
 					["altQuests"] = {
 						5646,	-- Devouring Plague [Orgrimmar]
 						5679,	-- Devouring Plague [Undercity]
 					},
+					["coord"] = { 26.0, 15.8, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
@@ -366,13 +366,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(768, {	-- Gathering Leather
+					["qg"] = 3050,	-- Veren Tallstrider
+					["coord"] = { 44.0, 44.6, THUNDER_BLUFF },
 					-- #if BEFORE 8.0.1
 					["description"] = "This quest becomes available at Skinning skill level 1 when the character level requirement is met.",
 					-- #else
 					["description"] = "This quest becomes available at Classic Skinning skill level 1 when the character level requirement is met.",
 					-- #endif
-					["qg"] = 3050,	-- Veren Tallstrider
-					["coord"] = { 44.0, 44.6, THUNDER_BLUFF },
 					["cost"] = { { "i", 2318, 12 } },	-- Light Leather
 					["requireSkill"] = SKINNING,
 					["races"] = HORDE_ONLY,
@@ -391,13 +391,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if NOT ANYCLASSIC
 				q(5656, {	-- Hex of Weakness [Thunder Bluff]
 					["qg"] = 3044,	-- Miles Welsh <Priest Trainer>
-					["coord"] = { 26.0, 15.8, THUNDER_BLUFF },
 					["altQuests"] = {
 						5652,	-- Hex of Weakness [Orgrimmar]
 						5654,	-- Hex of Weakness [Durotar]
 						5655,	-- Hex of Weakness [Mulgore]
 						5657,	-- Hex of Weakness [Undercity]
 					},
+					["coord"] = { 26.0, 15.8, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
@@ -413,13 +413,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(769, {	-- Kodo Hide Bag
+					["qg"] = 3050,	-- Veren Tallstrider
+					["coord"] = { 44, 44.6, THUNDER_BLUFF },
 					-- #if BEFORE 8.0.1
 					["description"] = "This quest becomes available at Leatherworking skill level 10 when the character level requirement is met.",
 					-- #else
 					["description"] = "This quest becomes available at Classic Leatherworking skill level 10 when the character level requirement is met.",
 					-- #endif
-					["qg"] = 3050,	-- Veren Tallstrider
-					["coord"] = { 44, 44.6, THUNDER_BLUFF },
 					["requireSkill"] = LEATHERWORKING,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
@@ -808,10 +808,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 1196,	-- The Sacred Flame (2/3)
 					["coord"] = { 46.13, 51.69, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 5869, 1 },	-- Cloven Hoof
 					},
+					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/1 Cloven Hoof
@@ -832,13 +832,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if NOT ANYCLASSIC
 				q(5663, {	-- Touch of Weakness [Thunder Bluff]
 					["qg"] = 3044,	-- Miles Welsh <Priest Trainer>
-					["coord"] = { 26.0, 15.8, THUNDER_BLUFF },
 					["altQuests"] = {
 						5658,	-- Touch of Weakness [Undercity]
 						5660,	-- Touch of Weakness [Durotar]
 						5661,	-- Touch of Weakness [Mulgore]
 						5662,	-- Touch of Weakness [Orgrimmar]
 					},
+					["coord"] = { 26.0, 15.8, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },

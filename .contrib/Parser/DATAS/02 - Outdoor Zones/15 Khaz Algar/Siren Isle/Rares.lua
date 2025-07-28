@@ -145,7 +145,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["description"] = "In non-Storm phase of the Vault.",
 				["coord"] = { 66.5, 55.9, 2375 },
 				["questID"] = 84797,
-				["g"] = {
+				["groups"] = {
 					i(235017),	-- Glittering Vault Shard (TOY!)
 				},
 			}),
@@ -158,7 +158,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["description"] = "In non-Storm phase of the Vault.",
 				["coord"] = { 28.1, 24.9, 2375 },
 				["questID"] = 86779,
-				["g"] = {
+				["groups"] = {
 					i(235017),	-- Glittering Vault Shard (TOY!)
 				},
 			}),

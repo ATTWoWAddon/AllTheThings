@@ -1,4 +1,3 @@
-
 -- Identifies the first known patch of each Expansion tag
 -- Currently only utilized to query additional game flavors from Wowhead if the Parse version matches a lower Wowhead version
 -- NOTE: Classic usually follows this build number.

@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 155188 },	-- Scrollsage Nola
 				["coord"] = { 72.2, 37.2, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(169682, {	-- Venture Co. Rocket Box
 						["crs"] = {
 							155259,	-- Lifting Specialist Gogo
@@ -23,25 +23,25 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			q(55688, {	-- A Growing Mystery
 				["description"] = "This quest is only available if you pick up the clue from the |cFFFfffffDirt Pile|r while on |cFFefc400Clues Abound|r.",
 				["isDaily"] = true,
-				["g"] = { i(168243) },	-- Runestone Fragments (QI!)
+				["groups"] = { i(168243) },	-- Runestone Fragments (QI!)
 			}),
 			q(56373, {	-- A Gulper Ate The Rolly
 				["provider"] = { "n", 151462 },	-- Danielle Anglers
 				["coord"] = { 37.0, 47.1, MECHAGON },
 				["isDaily"] = true,
-				["g"] = { i(169391) },	-- Bubble-eyed Rolly (QI!)
+				["groups"] = { i(169391) },	-- Bubble-eyed Rolly (QI!)
 			}),
 			q(55672, {	-- A Historical Mess
 				["description"] = "This quest is only available if you pick up the clue from the |cFFffffffWaterlogged Scroll Case|r while on |cFFefc400Clues Abound|r.",
 				["provider"] = { "n", 152633 },	-- Sir Finley Mrrgglton
 				["isDaily"] = true,
-				["g"] = { i(168224) },	-- Tortollan Relics (QI!)
+				["groups"] = { i(168224) },	-- Tortollan Relics (QI!)
 			}),
 			q(55697, {	-- A Little Leg Work
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 				["coord"] = { 71.4, 38.7, MECHAGON },
 				["sourceQuest"] = 55373,	-- Knock 'Em Out The Box
-				["g"] = {
+				["groups"] = {
 					i(168281),	-- Mechaspider Leg (QI!)
 					i(168299),	-- Toe Spring (QI!)
 				},
@@ -62,7 +62,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 153373 },	-- Penny Clobberbottom
 				["coord"] = { 70.9, 37.6, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(168430),	-- Clobberbottom's Boomer (QI!)
 				},
 			}),
@@ -71,7 +71,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["coord"] = { 71.8, 35.8, MECHAGON },
 				["isDaily"] = true,
 				["description"] = "Only available in the alternate timeline. Speak to |cFFFFD700Chromie|r when she is in town.",
-				["g"] = {
+				["groups"] = {
 					i(169213),	-- Leg Strut XS (QI!)
 					i(169214),	-- Pristine Hound Bolts (QI!)
 					i(169212),	-- Sentry Heel Nut (QI!)
@@ -81,7 +81,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 151936 },	-- Mylune
 				["coord"] = { 72.1, 37.2, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(168582),	-- Living Sap (QI!)
 				},
 			}),
@@ -89,14 +89,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 154568 },	-- Pedram Mechanotrax
 				["coord"] = { 62.1, 76.8, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(169279),	-- Pedram's Marker Pistol (QI!)
 				},
 			}),
 			q(55210, {	-- Batteries Not Included
 				["provider"] = { "n", 150630 },	-- Flip Quickcharge
 				["coord"] = { 70.8, 39.1, MECHAGON },
-				["g"] = {
+				["groups"] = {
 					i(167233),	-- Damaged Energy Cell (QI!)
 				},
 			}),
@@ -114,7 +114,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				},
 				["isDaily"] = true,
 				--["sourceQuest"] =
-				["g"] = { i(169867) },	-- Visual Holo Sphere (QI!)
+				["groups"] = { i(169867) },	-- Visual Holo Sphere (QI!)
 			}),
 			q(56082, {	-- Bot Rampage
 			--	don't know if there are SQs or a reputation requirement.  i was at 2,500 Honored and this quest was up as a daily when i flew to the island.
@@ -138,7 +138,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["coord"] = { 37.0, 47.1, MECHAGON },
 				["requireSkill"] = FISHING,
 				["sourceQuest"] = 55339,	-- Tidying Up
-				["g"] = {
+				["groups"] = {
 					i(167649),	-- Hundred-Fathom Lure
 				},
 			}),
@@ -146,7 +146,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 150631 },	-- Pristy Quickcharge
 				["coord"] = { 70.8, 38.4, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(169807),	-- Salvaged Mechagnome Appendage (QI!)
 				},
 			}),
@@ -166,7 +166,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 152501 },	-- Elise Starseeker
 				["coord"] = { 70.4, 31.0, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(168234),	-- Ancient Runestone (QI!)
 					i(168236),	-- Hearthstone Card (QI!)
 					i(168223),	-- Old Parchment (QI!)
@@ -185,7 +185,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 154967 },	-- Walton Cogfrenzy
 				["coord"] = { 73.4, 33.3, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(169471, {	-- Cogfrenzy's Construction Toolkit
 						i(167845),	-- Blueprint: Emergency Powerpack
 						i(167844),	-- Blueprint: Emergency Repair Kit
@@ -203,7 +203,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 153538 },	-- Adalin Halfheight
 				["isDaily"] = true,
 				["coord"] = { 75.2, 69.8, MECHAGON },
-				["g"] = {
+				["groups"] = {
 					i(168754),	-- Adalin's Cards (QI!)
 				},
 			}),
@@ -211,7 +211,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["isDaily"] = true,
 				["coord"] = { 58.9, 31.7, MECHAGON },
 				["provider"] = { "n", 153750 },	-- Koupal Oilshins
-				["g"] = {
+				["groups"] = {
 					i(168608),	-- Stolen Oil (QI!)
 				},
 			}),
@@ -220,17 +220,17 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 154982 },	-- Archivist Bitbyte
 				["isDaily"] = true,
 				["coord"] = { 72.0, 36.5, MECHAGON },
-				["g"] = {
+				["groups"] = {
 					q(56425, {	-- Scorched Data Disc
 						["isDaily"] = true,
 						["provider"] = { "i", 169595 },	-- Scorched Data Disc
-						["g"] = {
+						["groups"] = {
 							i(169474),	-- Corrupted Data Disc (QI!)
 							n(153486, {	-- Data Anomaly <Baron Geddon>
 								["questID"] = 57389,
 								["isDaily"] = true,
 								["sym"] = {{"select","itemID",16844}},	-- Earthfury Epaulets
-								["g"] = {
+								["groups"] = {
 									i(168631),	-- Metal Detector
 									i(169169),	-- Blueprint: Blue Spraybot
 									i(168906),	-- Blueprint: Holographic Digitalization Relay
@@ -242,11 +242,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					q(56421, {	-- Cracked Numeric Cylinder
 						["isDaily"] = true,
 						["provider"] = { "i", 169591 },	-- Cracked Numeric Cylinder
-						["g"] = {
+						["groups"] = {
 							n(COMMON_BOSS_DROPS, {
 								["questID"] = 57385,
 								["isDaily"] = true,
-								["g"] = {
+								["groups"] = {
 									n(152958, {	-- Data Anomaly <Hogger>
 										["sym"] = {{"select","itemID",1934}},	-- Hogger's Trousers
 									}),
@@ -267,11 +267,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					q(56423, {	-- Large Storage Fragment
 						["isDaily"] = true,
 						["provider"] = { "i", 169593 },	-- Large Storage Fragment
-						["g"] = {
+						["groups"] = {
 							n(COMMON_BOSS_DROPS, {
 								["questID"] = 57387,
 								["isDaily"] = true,
-								["g"] = {
+								["groups"] = {
 									n(152961, {	-- Data Anomaly <Balnazzar>
 										["sym"] = {{"select","itemID",
 											13353,	-- Book of the Dead
@@ -292,11 +292,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					q(56424, {	-- Rust Covered Disc
 						["isDaily"] = true,
 						["provider"] = { "i", 169594 },	-- Rust Covered Disc
-						["g"] = {
+						["groups"] = {
 							n(COMMON_BOSS_DROPS, {
 								["questID"] = 57388,
 								["isDaily"] = true,
-								["g"] = {
+								["groups"] = {
 									n(152979),	-- Data Anomaly <Baron Kazum>
 									n(152983, {	-- Data Anomaly <Crowd Pummeler 9-60>
 										["sym"] = {{"select","itemID",132558}},	-- Bot Operator's Treads
@@ -332,7 +332,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["coord"] = { 59.0, 31.6, MECHAGON },
 				["sourceQuest"] = 55729,	-- The Resistance Needs You!
 				["_drop"] = { "isDaily" },
-				["g"] = {
+				["groups"] = {
 					i(168608),	-- Stolen Oil (QI!)
 				},
 			}),
@@ -345,7 +345,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 				["coord"] = { 71.5, 38.7, MECHAGON },
 				["sourceQuest"] = 55753,	-- Knock His Bot Off
-				["g"] = {
+				["groups"] = {
 					i(168827),	-- Scrapforged Mechaspider (MOUNT!)
 				},
 			}),
@@ -378,7 +378,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 				["coord"] = { 71.5, 38.7, MECHAGON },
 				["sourceQuest"] = 54922,	-- The Nuts and Bolts of it
-				["g"] = {
+				["groups"] = {
 					i(169153),	-- Recycled Crawler Manifold (QI!)
 				},
 			}),
@@ -386,7 +386,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 152747 },	-- Christy Punchcog
 				["coord"] = { 69.7, 32.3, MECHAGON },
 				["sourceQuest"] = 55708,	-- Upgraded
-				["g"] = {
+				["groups"] = {
 					i(168252),	-- Punchcard Satchel (QI!)
 					i(168752),	-- Omnipurpose Efficient Logic Board
 					i(167556),	-- Subroutine: Overclock
@@ -396,7 +396,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 151462 },	-- Danielle Anglers
 				["coord"] = { 37.0, 47.1, MECHAGON },
 				["requireSkill"] = FISHING,
-				["g"] = {
+				["groups"] = {
 					i(167671),	-- Anodized Sentry Fish (QI!)
 					i(167670),	-- Jarmouthed Goby (QI!)
 					i(167669),	-- Suction Tube (QI!)
@@ -406,7 +406,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 				["coord"] = { 71.5, 38.7, MECHAGON },
 				["sourceQuest"] = 56168,	-- Factory Refurbished
-				["g"] = {
+				["groups"] = {
 					i(167076),	-- Grease Trap (QI!)
 				},
 			}),
@@ -419,7 +419,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 154485 },	-- Short John Mithril
 				["coord"] = { 21.5, 81.9, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(169221),	-- Chief's Key (QI!)
 					i(169222),	-- Murloc Treasure (QI!)
 				},
@@ -428,7 +428,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 152295 },	-- Pascal
 				["coord"] = { 71.2, 32.3, MECHAGON },
 				["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, REVERED },
-				["g"] = {
+				["groups"] = {
 					i(169251),	-- Ancient Insect (QI!)
 					i(169224),	-- Big Red Button (QI!)
 					i(169248),	-- Broken Sandals (QI!)
@@ -468,7 +468,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 				["coord"] = { 71.4, 38.7, MECHAGON },
 				["sourceQuest"] = 54929,	-- Ready to Rumble
-				["g"] = {
+				["groups"] = {
 					i(167745),	-- Spiderspring Gear (QI!)
 				},
 			}),
@@ -476,7 +476,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 				["coord"] = { 71.5, 38.7, MECHAGON },
 				["sourceQuest"] = 55696,	-- Test Drive
-				["g"] = {
+				["groups"] = {
 					i(168305),	-- Powercore Schematics (QI!)
 				},
 			}),
@@ -501,11 +501,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "o", 326027 },	-- Recyclerizer DX-82
 				["cost"] = { { "i", 168946, 1 } },	-- Bundle of Recyclable Parts
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(168264, {	-- Recycling Requisition
 						["repeatable"] = true,
 						["questID"] = 55148,
-						["g"] = {
+						["groups"] = {
 							i(169167),	-- Blueprint: Orange Spraybot
 							i(168220),	-- Blueprint: Re-Procedurally Generated Punchcard
 							i(167795),	-- Paint Vial: Copper Trim
@@ -523,7 +523,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					i(168266, {	-- Strange Recycling Requisiton
 						["questID"] = 56079,
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 							i(169175),	-- Blueprint: Annoy-o-Tron Gang
 							i(169167),	-- Blueprint: Orange Spraybot
@@ -546,7 +546,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 155254 },	-- Oglethorpe Obnoticus
 				["coord"] = { 72.7, 38.0, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(169381, {	-- OOX-35/MG (PET!)
 						["description"] = "When the quest |cFFFFD700My Chickens are Not for Eating!|r is active, there are Dismantled OOX-35s in the zone that can be repaired for 25 spare parts, rewarding the pet.",
 					}),
@@ -563,7 +563,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["coord"] = { 72.0, 34.2, MECHAGON },
 				["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, EXALTED },
 				["description"] = "Once you are exalted with Rustbolt Resistance, this quest is awarded after completing the Toys Like Us daily.",
-				["g"] = {
+				["groups"] = {
 					i(169882),	-- Sapphronetta Flivvers Action Figure (QI!)
 					i(169876),	-- Azeroth Mini: Sapphronetta
 				},
@@ -589,12 +589,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 152499 },	-- Moxie Lockspinner
 				["coord"] = { 73.7, 34.3, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(168184),	-- Rare Metal (QI!)
 					i(168183),	-- Rare Metal Collector (QI!)
 					i(168204, {	-- Small Metal Box
 						["description"] = "Small Metal Boxes can be collected when using the Rare Metal Collector.",
-						["g"] = {
+						["groups"] = {
 							i(170148),	-- Paint Bottle: Electric Blue (QS!)
 						},
 					}),
@@ -632,7 +632,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 152575 },	-- Steelsage Gao
 				["isDaily"] = true,	-- collection status for the quest resets over time
 				["coord"] = { 73.6, 34.3, MECHAGON },
-				["g"] = {
+				["groups"] = {
 					i(169176),	-- Blueprint: Encrypted Black Market Radio
 				},
 			}),
@@ -644,18 +644,18 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 154335 },	-- Dread Captain DeMeza
 				["coord"] = { 71.7, 38.8, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					o(327569, {	-- Pirate Chest
 						["coord"] = { 14.7, 82.4, MECHAGON },
-						["g"] = { i(169164) },	-- Father's Bones (QI!)
+						["groups"] = { i(169164) },	-- Father's Bones (QI!)
 					}),
 					o(327568, {	-- Pirate Chest
 						["coord"] = { 21.0, 71.4, MECHAGON },
-						["g"] = { i(169165) },	-- Father's Sword (QI!)
+						["groups"] = { i(169165) },	-- Father's Sword (QI!)
 					}),
 					o(327570, {	-- Pirate Chest
 						["coord"] = { 24.0, 83.5, MECHAGON },
-						["g"] = { i(169166) },	-- Father's Clothes (QI!)
+						["groups"] = { i(169166) },	-- Father's Clothes (QI!)
 					}),
 				},
 			}),
@@ -682,7 +682,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["coord"] = { 73.96, 36.93, MECHAGON },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(171248),	-- Prototype Implant (QI!)
 				},
 			}),
@@ -691,7 +691,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["coord"] = { 74.0, 36.8, MECHAGON },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(171248),	-- Prototype Implant (QI!)
 				},
 			}),
@@ -699,7 +699,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 				["coord"] = { 71.4, 38.7, MECHAGON },
 				["sourceQuest"] = 54086,	-- Right Bot for the Job
-				["g"] = {
+				["groups"] = {
 					i(167175),	-- Sixteen-Servo-Actuator (QI!)
 					i(167176),	-- Strongbox Key (QI!)
 				},
@@ -713,7 +713,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 150630 },	-- Flip Quickcharge
 				["coord"] = { 70.8, 39.1, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(169824),	-- Discarded Technology (QI!)
 					i(169839),	-- Spark-7143 (QI!)
 				},
@@ -723,7 +723,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["coord"] = { 70.7, 38.4, MECHAGON },
 				["sourceQuest"] = 56319,	-- The Quickcharge Contract
 				["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, HONORED },
-				["g"] = {
+				["groups"] = {
 					i(168122),	-- NRG-100 (QI!)
 					i(166970),	-- Energy Cell
 				},
@@ -742,7 +742,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			q(56117),	-- Recyclable Parts
 			o(326027, {	-- Recyclerizer DX-82
 				["modelScale"] = 3,
-				["g"] = {
+				["groups"] = {
 					i(168946, {	-- Bundle of Recyclable Parts
 						["cost"] = {
 							{ "i", 168217, 30 },	-- 30x Hardened Springs
@@ -756,7 +756,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 150631 },	-- Pristy Quickcharge
 				["coord"] = { 70.7, 38.4, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(168122),	-- NRG-100 (QI!)
 				},
 			}),
@@ -930,7 +930,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["description"] = "One-time completion per character.",
 				["sourceQuest"] = 55736,	-- Welcome to the Resistance
 				["lvl"] = { 50 },
-				["g"] = {
+				["groups"] = {
 					i(168832),	-- Galvanic Oscillator
 				},
 			}),
@@ -947,7 +947,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 				["coord"] = { 71.4, 38.7, MECHAGON },
 				["sourceQuest"] = 55736,	-- Welcome to the Resistance
-				["g"] = {
+				["groups"] = {
 					i(168115),	-- Mechanobot Ignition (QI!)
 					i(168113),	-- Multi-Leg Chaindrive (QI!)
 					i(168114),	-- Shellsteel Casing (QI!)
@@ -975,7 +975,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					{ 47.6, 36.8, MECHAGON },	-- Alliance
 					{ 42.6, 41.4, MECHAGON },	-- Horde
 				},
-				["g"] = {
+				["groups"] = {
 					i(169681),	-- BOOM-TASTIC 3000 (QI!)
 				},
 			}),
@@ -983,7 +983,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 				["coord"] = { 71.5, 38.7, MECHAGON },
 				["sourceQuest"] = 56175,	-- Emission Free
-				["g"] = {
+				["groups"] = {
 					i(168270),	-- Rusty Mechaspider (QI!)
 				},
 			}),
@@ -991,7 +991,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 154511 },	-- Sneaky Pete
 				["coord"] = { 24.2, 75.3, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(169241),	-- Family Jewelry (QI!)
 				},
 			}),
@@ -1005,7 +1005,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 152321 },	-- Cork Stuttguard
 				["coord"] = { 63.2, 43.0, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(168246),	-- Golden Cogpaste (QI!)
 				},
 			}),
@@ -1018,7 +1018,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 153993 },	-- Chromie
 				["coord"] = { 70.2, 30.9, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(168813),	-- Robotic-Memory Recorder (QI!)
 				},
 			}),
@@ -1039,7 +1039,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 152295 },	-- Pascal
 				["coord"] = { 71.2, 32.5, MECHAGON },
 				["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, HONORED },
-				["g"] = {
+				["groups"] = {
 					r(300122, {["u"]=TRAINING}),	-- Scrapmaster's Blowtorch
 				},
 			}),
@@ -1063,7 +1063,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 155450 },	-- Jepetto Joybuzz
 				["coord"] = { 70.2, 32.9, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(169816),	-- Quasi-Faceted Scanner (QI!)
 					i(169838, {	-- Azeroth Mini: Starter Pack
 						i(169796),	-- Azeroth Mini Collection: Mechagon (TOY!)
@@ -1078,7 +1078,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 152747 },	-- Christy Punchcog
 				["coord"] = { 69.7, 32.3, MECHAGON },
 				["sourceQuest"] = 55736,	-- Welcome to the Resistance
-				["g"] = {
+				["groups"] = {
 					i(168250),	-- Microcogs (QI!)
 					i(167555),	-- Pocket-Sized Computation Device
 				},
@@ -1109,7 +1109,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = {"o",329715},	-- Useful Bits and Pieces
 				["coord"] = { 43.0, 41.1, MECHAGON },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(169686),	-- Useful Bits and Pieces (QI!)
 				},
 			}),
@@ -1147,7 +1147,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, HONORED },
 				["DisablePartySync"] = true,
 				["description"] = "You do not lose your Ub3r-Spanner while completing this quest, you simply need to have it in your inventory.",
-				["g"] = {
+				["groups"] = {
 					i(168532),	-- Overcharged Mecha-core (QI!)
 				},
 			}),

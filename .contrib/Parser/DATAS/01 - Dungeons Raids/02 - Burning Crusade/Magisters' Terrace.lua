@@ -376,7 +376,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 							i(34160),	-- The Signet Ring of Prince Kael'thas
 						},
 					})
-				}
+				},
 			}),
 		},
 	})),

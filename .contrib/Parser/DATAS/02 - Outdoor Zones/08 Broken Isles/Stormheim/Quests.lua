@@ -15,7 +15,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 38872 },	-- The Dark Lady's Bidding
 					["races"] = HORDE_ONLY,
 					["coord"] = { 57.6, 71.9, STORMHEIM },
-					["g"] = {
+					["groups"] = {
 						i(129225),	-- Runespeaker's Bracers
 						i(129226),	-- Dreadsworn Armplates
 						i(129227),	-- Stormborn Cuffs
@@ -46,7 +46,7 @@ root(ROOTS.Zones, {
 					["races"] = HORDE_ONLY,
 					["coord"] = { 44.1, 18.1, STORMHEIM },
 					["provider"] = { "n", 91158 },	-- Nathanos Blightcaller
-					["g"] = {
+					["groups"] = {
 						i(121499),	-- Footwraps of the Blightcaller
 						i(121501),	-- Duskbat Exterminator's Treads
 						i(121500),	-- Blighthound Master's Greaves
@@ -61,7 +61,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 39855 },	-- Paid in Lifeblood
 					["coord"] = { 60.0, 50.7, STORMHEIM },
 					["provider"] = { "n", 92539 },	-- Havi
-					["g"] = {
+					["groups"] = {
 						i(133813),	-- Recipe: Pickled Stormray [Rank 1] (RECIPE!)
 					},
 				}),
@@ -74,7 +74,7 @@ root(ROOTS.Zones, {
 					["races"] = HORDE_ONLY,
 					["coord"] = { 62.5, 68.0, STORMHEIM },
 					["provider"] = { "n", 94228 },	-- Lady Sylvanas Windrunner
-					["g"] = {
+					["groups"] = {
 						i(121572),	-- Sylvanas' Barbed Arrow
 						i(121568),	-- Blessing of the Banshee Queen
 						i(121570),	-- Might of the Forsaken
@@ -164,7 +164,7 @@ root(ROOTS.Zones, {
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 33.6, 50.8, STORMHEIM },
 					["provider"] = { "n", 90866 },	-- Tinkmaster Overspark
-					["g"] = {
+					["groups"] = {
 						i(134554),	-- Runespeaker's Gloves
 						i(134555),	-- Runesworn Grips
 						i(134556),	-- Stormborn Gloves
@@ -194,7 +194,7 @@ root(ROOTS.Zones, {
 					},
 					["coord"] = { 68.4, 54.2, STORMHEIM },
 					["provider"] = { "n", 93231 },	-- Vydhar
-					["g"] = {
+					["groups"] = {
 						i(129335),	-- Runespeaker's Cuffs
 						i(129336),	-- Runesworn Bindings
 						i(129337),	-- Stormborn Bracers
@@ -240,7 +240,7 @@ root(ROOTS.Zones, {
 				q(38337, {	-- Built to Scale (A)
 					["provider"] = { "i", 122610 },	-- Storm Drake Scale
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(129320),	-- Charged Stormwing Robes
 						i(129321),	-- Electrified Stormwing Vest
 						i(129322),	-- Humming Stormwing Chest
@@ -259,7 +259,7 @@ root(ROOTS.Zones, {
 						91920,	-- Stormwing Drake
 						91486,	-- Stormwing Drake
 					},
-					["g"] = {
+					["groups"] = {
 						i(129320),	-- Charged Stormwing Robes
 						i(129321),	-- Electrified Stormwing Vest
 						i(129322),	-- Humming Stormwing Chest
@@ -299,7 +299,7 @@ root(ROOTS.Zones, {
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 72.3, 61.0, STORMHEIM },
 					["icon"] = 134269,
-					["g"] = {
+					["groups"] = {
 						i(129252),	-- Lorna's Bracelet
 						i(129255),	-- Worgen Kings Wraps
 						i(129256),	-- Shotgun Rider's Bracers
@@ -317,7 +317,7 @@ root(ROOTS.Zones, {
 					},
 					["coord"] = { 49.8, 32.5, STORMHEIM },
 					["provider"] = { "n", 107498 },	-- Cukkaw
-					["g"] = {
+					["groups"] = {
 						i(129361),	-- Blackfeather Handwraps
 						i(129363),	-- Blackfeather Gloves
 						i(129364),	-- Blackfeather Grips
@@ -343,7 +343,7 @@ root(ROOTS.Zones, {
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 62.2, 68.1, STORMHEIM },
 					["provider"] = { "n", 95804 },	-- Genn Greymane
-					["g"] = {
+					["groups"] = {
 						i(129258),	-- Sylvanas' Broken Arrow
 						i(129259),	-- Bane of the Darklady
 						i(129260),	-- Tenacity of Cursed Blood
@@ -458,7 +458,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 38308 },	-- Eyes in the Overlook
 					["races"] = HORDE_ONLY,
 					["coord"] = { 33.3, 31.4, STORMHEIM },
-					["g"] = {
+					["groups"] = {
 						i(129093),	-- Ravenbear Disguise (TOY!)
 					},
 				}),
@@ -477,7 +477,7 @@ root(ROOTS.Zones, {
 						{ "n", 92539 },	-- Havi
 						{ "n", 97973 },	-- Havi
 					},
-					["g"] = {
+					["groups"] = {
 						i(140618),	-- Helbreaker Amice
 						i(140619),	-- Helbreaker Epaulets
 						i(140620),	-- Helbreaker Spaulders
@@ -519,7 +519,7 @@ root(ROOTS.Zones, {
 					["races"] = HORDE_ONLY,
 					["coord"] = { 36.1, 27.4, STORMHEIM },
 					["provider"] = { "n", 91590 },	-- Apothecary Withers
-					["g"] = {
+					["groups"] = {
 						i(122702),	-- Containment Unit (QI!)
 						i(134554),	-- Runespeaker's Gloves
 						i(134555),	-- Runesworn Grips
@@ -537,7 +537,7 @@ root(ROOTS.Zones, {
 						39786,	-- A Stone Cold Gamble
 					},
 					["provider"] = { "n", 107674 },	-- Snaggle Sixtrigger
-					["g"] = {
+					["groups"] = {
 						title(343),	-- <Name> the Gullible
 					},
 				}),
@@ -548,7 +548,7 @@ root(ROOTS.Zones, {
 					},
 					["coord"] = { 68.0, 48.6, STORMHEIM },
 					["provider"] = { "n", 93446 },	-- Shieldmaiden Iounn
-					["g"] = {
+					["groups"] = {
 						i(129229),	-- Runespeaker's Sandals
 						i(129231),	-- Stormborn Treads
 						i(129230),	-- Runesworn Boots
@@ -582,7 +582,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 39984 },	-- Remnants of the Past
 					["coord"] = { 59.0, 42.9, STORMHEIM },
 					["provider"] = { "n", 97973 },	-- Havi
-					["g"] = {
+					["groups"] = {
 						i(129350),	-- Sigrid's Phantom Shroud
 						i(132773),	-- Dreadsworn Waistguard
 						i(132772),	-- Stormborn Cinch
@@ -610,7 +610,7 @@ root(ROOTS.Zones, {
 				q(38060, {	-- Signal Boost
 					["sourceQuests"] = { 38058 },	-- Lightning Rod
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(129233),	-- Tinkmaster's Spare Shoes
 						i(129234),	-- Tinkmaster's Insulated Boots
 						i(129235),	-- Tinkmaster's Buzzing Kickers
@@ -669,7 +669,7 @@ root(ROOTS.Zones, {
 					},
 					["coord"] = { 70.2, 69.2, STORMHEIM },
 					["provider"] = { "n", 97986 },	-- Vethir
-					["g"] = {
+					["groups"] = {
 						i(132845),	-- Odyn's Veil
 						i(132846),	-- Felbound Plasma
 						i(132847),	-- Valgrinn's Heart
@@ -703,7 +703,7 @@ root(ROOTS.Zones, {
 				q(39597, {	-- The Blessing of the Watchers
 					["sourceQuests"] = { 39594 },	-- A Trial of Might
 					["provider"] = { "n", 96258 },	-- Yotnar
-					["g"] = {
+					["groups"] = {
 						i(200666, {	-- Storm-Imbued Pole
 							["classes"] = { EVOKER },
 							["timeline"] = ADDED_10_0_2,
@@ -812,7 +812,7 @@ root(ROOTS.Zones, {
 				q(39593, {	-- The Shattered Watcher
 					["sourceQuests"] = { 39590 },	-- Ahead of the Game
 					["coord"] = { 46.6, 44.4, STORMHEIM },
-					["g"] = {
+					["groups"] = {
 						i(129316),	-- Watcher's Pendant of Courage
 						i(121560),	-- Signet of the Watcher's Guile
 					},
@@ -897,7 +897,7 @@ root(ROOTS.Zones, {
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 42.0, 64.4, STORMHEIM },
 					["provider"] = { "n", 91481 },	-- Commander Lorna Crowley <Gilneas Brigade>
-					["g"] = {
+					["groups"] = {
 						i(121567),	-- Galeborn's Oiled Cloak
 						i(129318),	-- Lodestone of the Galeborn
 						i(129317),	-- Lodestone of the Mystic
@@ -909,7 +909,7 @@ root(ROOTS.Zones, {
 					["races"] = HORDE_ONLY,
 					["coord"] = { 46.5, 67.7, STORMHEIM },
 					["provider"] = { "n", 92566 },	-- Dread-Rider Cullen
-					["g"] = {
+					["groups"] = {
 						i(121567),	-- Galeborn's Oiled Cloak
 						i(129318),	-- Lodestone of the Galeborn
 						i(129317),	-- Lodestone of the Mystic
@@ -954,7 +954,7 @@ root(ROOTS.Zones, {
 					},
 					["coord"] = { 74.8, 55.5, STORMHEIM },
 					["provider"] = { "n", 108072 },	-- Sir Finley Mrrggglton
-					["g"] = {
+					["groups"] = {
 						i(129329),	-- The Blood-Thane's Amulet
 						i(129360),	-- Dreadsworn Breastplate
 						i(129358),	-- Stormborn Hauberk
@@ -970,7 +970,7 @@ root(ROOTS.Zones, {
 					},
 					["coord"] = { 42.8, 82.6, STORMHEIM },
 					["provider"] = { "n", 96465 },	-- Vethir
-					["g"] = {
+					["groups"] = {
 						i(132806),	-- Azariah's Last Moments
 						i(132808),	-- Breath of Vethir
 						i(132811),	-- Crystallized Tideskorn Cruelty
@@ -1017,7 +1017,7 @@ root(ROOTS.Zones, {
 						{ "n", 91249 },	-- Vethir
 						{ "n", 96465 },	-- Vethir
 					},
-					["g"] = {
+					["groups"] = {
 						i(121517),	-- Thorignir Punisher Spaulders
 						i(121515),	-- Thorignir Striker Shoulderguards
 						i(121518),	-- Thorignir Javelin Mantle

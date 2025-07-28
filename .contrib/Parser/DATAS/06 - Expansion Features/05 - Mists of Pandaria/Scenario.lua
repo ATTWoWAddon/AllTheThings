@@ -10,11 +10,11 @@ SCENARIOS = createHeader({
 		en = [[~SCENARIOS]],
 	},
 });
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_1_0 } }, {
-	applyclassicphase(MOP_PHASE_LANDFALL, n(SCENARIOS, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+	applyclassicphase(MOP_PHASE_ONE, n(SCENARIOS, {
 		["crs"] = { 78709 },	-- Lorewalker Fu <Scenario Storyteller>
 		["lvl"] = lvlsquish(90, 90, 35),
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(6943),	-- Queuing Spree
 				a(ach(6874, {	-- Scenaturday (A)
@@ -29,7 +29,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				["crs"] = {
 					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
 				},
-				["g"] = {
+				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(7252),	-- A Brewing Storm
 						ach(7257),	-- Don't Shake the Keg
@@ -53,7 +53,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						q(30442, {	-- Blanche's Boomer Brew
 							["qg"] = 59569,	-- Brewmaster Blanche
 							["coord"] = { 38.0, 30.0, THE_JADE_FOREST },
-							["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+							["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 							["isDaily"] = true,
 						}),
 					}),
@@ -96,7 +96,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 			}),
 			m(524, {	-- Battle on the High Seas
 				["crs"] = { 78777 },	-- Lorewalker Shin <Heroic Scenario Storyteller>
-				["g"] = {
+				["groups"] = {
 					n(ACHIEVEMENTS, {
 						a(ach(8314)),	-- Battle on the High Seas (A)
 						h(ach(8315)),	-- Battle on the High Seas (H)
@@ -150,7 +150,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				["crs"] = {
 					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
 				},
-				["g"] = {
+				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(8316),	-- Blood in the Snow
 						ach(8329),	-- Heed the Weed
@@ -164,7 +164,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				["crs"] = {
 					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
 				},
-				["g"] = {
+				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(7522),	-- Crypt of Forgotten Kings
 						ach(7276),	-- Fancy Footwork
@@ -184,7 +184,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 			}),
 			m(488, {	-- Dagger in the Dark
 				["maps"] = { 489 },	-- Dagger in the Dark
-				["g"] = {
+				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(8009),	-- Dagger in the Dark
 						ach(7987),	-- No Egg Left Behind
@@ -195,7 +195,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 			}),
 			m(498, {	-- Domination Point / Lion's Landing
 				["maps"] = { 486 },	-- Lion's Landing
-				["g"] = {
+				["groups"] = {
 					n(ACHIEVEMENTS, {
 						h(ach(8013)),	-- Domination Point
 						a(ach(8010)),	-- Lion's Landing
@@ -227,7 +227,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				["crs"] = {
 					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
 				},
-				["g"] = {
+				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(8319),	-- Accelerated Archaeology
 						ach(8317),	-- Dark Heart of Pandaria
@@ -260,7 +260,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				["crs"] = {
 					78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
 				},
-				["g"] = {
+				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(8327),	-- Heroic: The Secrets of Ragefire
 						ach(8295),	-- The Few, the Proud, the Gob Squad
@@ -314,14 +314,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				["maps"] = {
 					VALE_OF_ETERNAL_BLOSSOMS,
 				},
-				["g"] = {
+				["groups"] = {
 					container(98133, {	-- Greater Cache of Treasures
 						["description"] = "Rewarded for completing |cFFFFD700The King and the Council|r and |cFFFFD700The Warchief and the Darkness|r quests.\nSee Rewards Tab description for a detailed farming guide.",
 						["providers"] = {
 							{ "i", 92813 },	-- Greater Cache of Treasures [Looks like this was deprecated in favor of #98133]
 							{ "i", 89613 },	-- Greater Cache of Treasures [Looks like this was deprecated in favor of #98133]
 						},
-						["g"] = {
+						["groups"] = {
 							n(BACK, {
 								i(92881),	-- Bladesnap Drape
 								i(89503),	-- Greenstone Drape
@@ -619,7 +619,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					}),
 					container(98546, {	-- Bulging Heroic Cache of Treasures
 						["description"] = "Rewarded for completing |cFFFFD700Heroic Deeds|r quest.\nMouseover the Rewards Tab located ATT > Expansion Features > MoP > Scenarios > Rewards for a detailed farming guide.",
-						["g"] = {
+						["groups"] = {
 							n(BACK, {
 								i(98237),	-- Doubtcrusher Drape
 								i(98226),	-- Heartlander's Cloak
@@ -773,25 +773,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 			}),
 			n(QUESTS, {
 				["description"] = "Quests may only be completed ONCE per character. Items you receive from the Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.|r",
-				["g"] = {
+				["groups"] = {
 					q(32806, {	-- The King and the Council
-						["sourceQuests"] = { 32892 },	-- War is Coming
-						["providers"] = {
-							{ "n", 61962 },	-- Lorewalker Cho
-							{ "n", 63577 },	-- Lorewalker Cho
+						["qgs"] = {
+							61962,	-- Lorewalker Cho
+							63577,	-- Lorewalker Cho
 						},
+						["sourceQuests"] = { 32892 },	-- War is Coming
 						["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["maps"] = { 523 },	-- Dun Morogh (Blood in the Snow scenario)
-						["g"] = {
+						["groups"] = {
 							i(98133),	-- Greater Cache of Treasures
 						},
 					}),
 					q(32807, {	-- The Warchief and the Darkness
-						["sourceQuests"] = { 32806 },	-- The King and the Council
 						["provider"] = { "n", 61962 },	-- Lorewalker Cho
+						["sourceQuests"] = { 32806 },	-- The King and the Council
 						["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["maps"] = { 520, 521 },	-- Vale of Eternal Blossoms (Dark Heart of Pandaria scenario)
-						["g"] = {
+						["groups"] = {
 							i(98133),	-- Greater Cache of Treasures
 						},
 					}),
@@ -799,7 +799,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						["provider"] = { "n", 66998 },	-- Jinho the Wind Breaker
 						["coord"] = { 46.6, 56.5, 392 },
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(98546),  -- Bulging Heroic Cache of Treasures
 						},
 					}),
@@ -807,7 +807,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						["provider"] = { "n", 64101 },	-- Taijin the Cyclone
 						["coord"] = { 47.23, 49.71, 393 },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(98546),  -- Bulging Heroic Cache of Treasures
 						},
 					}),

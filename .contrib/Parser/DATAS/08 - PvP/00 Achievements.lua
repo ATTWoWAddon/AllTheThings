@@ -123,7 +123,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	}),
 	ach(40219, {	-- Battleground Blitzest
 		["timeline"] = { ADDED_11_0_2 },
-		["g"] = {
+		["groups"] = {
 			crit(67431),	-- Arathi Basin
 			crit(67425),	-- Deephaul Ravine
 			crit(67430),	-- Deepwind Gorge
@@ -151,7 +151,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(449, {		-- Blood Guard
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(21, {	-- Blood Guard <Name>
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -178,7 +178,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(448, {		-- Centurion
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(23, {	-- Centurion <Name>
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -188,7 +188,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(447, {		-- Champion
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(24, {	-- Champion <Name>
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -208,7 +208,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(435, {		-- Commander
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(11, {	-- Commander <Name>
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -218,7 +218,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(470, {		-- Corporal
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(2, {	-- Corporal <Name>
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -329,7 +329,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(434, {		-- Field Marshal
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(13, {	-- Field Marshal <Name>
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -339,7 +339,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(452, {		-- First Sergeant
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(19, {	-- First Sergeant <Name>
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -424,7 +424,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(446, {		-- General
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(26, {	-- General <Name>
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -439,7 +439,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(433, {		-- Grand Marshal
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(14, {	-- Grand Marshal <Name>
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -459,7 +459,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(468, {		-- Grunt
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(16, {	-- Grunt <Name>
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -490,7 +490,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(443, {		-- High Warlord
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(28, {	-- High Warlord <Name>
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -549,7 +549,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(439, {		-- Knight
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(6, {	-- Knight <Name>
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -559,7 +559,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(438, {		-- Knight-Captain
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(8, {	-- Knight-Captain <Name>
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -569,7 +569,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(437, {		-- Knight-Champion
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(9, {	-- Knight-Champion <Name>
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -579,7 +579,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(472, {		-- Knight-Lieutenant
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(7, {	-- Knight-Lieutenant <Name>
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -601,7 +601,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(469, {		-- Legionnaire
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(22, {	-- Legionnaire <Name>
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -616,7 +616,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(436, {		-- Lieutenant Commander
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(10, {	-- Lieutenant Commander <Name>
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -626,7 +626,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(444, {		-- Lieutenant General
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(25, {	-- Lieutenant General <Name>
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -641,7 +641,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(473, {		-- Marshal
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(12, {	-- Marshal <Name>
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -651,7 +651,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(441, {		-- Master Sergeant
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(4, {	-- Master Sergeant <Name>
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -685,7 +685,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	-- #endif
 	ach(10537, {	-- Patron of War
 		["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
-		["g"]= {
+		["groups"]= {
 			title(326, {	-- <Name>, Patron of War
 				["description"] = "Connect Twitch and Battle.net accounts and watch tournament streams",
 				["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
@@ -724,7 +724,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(442, {		-- Private
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(1, {	-- Private <Name>
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -734,7 +734,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(454, {		-- Scout
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(15, {	-- Scout <Name>
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -744,7 +744,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(450, {		-- Senior Sergeant
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(18, {	-- Senior Sergeant <Name>
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -754,7 +754,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(471, {		-- Sergeant (Alliance)
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(3, {	-- Sergeant <Name>
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -764,7 +764,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(453, {		-- Sergeant (Horde)
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(17, {	-- Sergeant <Name>
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -774,7 +774,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(440, {		-- Sergeant Major
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(5, {	-- Sergeant Major <Name>
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -784,7 +784,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	-- #endif
 	ach(14191, {	-- Servant of N'Zoth
 		["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(414, {	-- <Name>, Servant of N'Zoth
 				["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
 			}),
@@ -800,7 +800,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(451, {		-- Stone Guard
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(20, {	-- Stone Guard <Name>
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -888,7 +888,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	}),
 	ach(8392, {		-- Tournament Glory 2013
 		["timeline"] = { ADDED_5_3_0, REMOVED_5_4_0 },
-		["g"] = {
+		["groups"] = {
 			title(128, {		-- Vanquisher
 				["timeline"] = { ADDED_5_3_0, REMOVED_5_4_0 },
 			}),
@@ -912,7 +912,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(445, {		-- Warlord
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
-		["g"] = {
+		["groups"] = {
 			title(27, {	-- Warlord <Name>
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },

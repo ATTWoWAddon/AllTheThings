@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 59.5, 59.2, THALDRASZUS },
 				["questID"] = 74055,
 				["cost"] = { { "i", 197733, 4 } },	-- 4x Unsustainable Containment Core
-				["g"] = {
+				["groups"] = {
 					bo(69963, true),
 				},
 			}),
@@ -24,7 +24,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(193658, {	-- Corrupted Proto-Dragon
 				["coord"] = { 44.8, 69.0, THALDRASZUS },
 				["questID"] = 74060,
-				["g"] = {
+				["groups"] = {
 					bo(69962, true),
 					i(200166),	-- Corrupted Drake Horn
 				},
@@ -32,7 +32,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(193663, {	-- Craggravated Elemental
 				["coord"] = { 45.4, 85.2, THALDRASZUS },
 				["questID"] = 74061,
-				["g"] = {
+				["groups"] = {
 					bo(69964, true),
 					i(200298),	-- Stoneshaped Greatbelt
 				},
@@ -41,7 +41,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(193125, {	-- Goremaul the Gluttonous
 				["coord"] = { 53.4, 41.0, THALDRASZUS },
 				["questID"] = 73878,
-				["g"] = {
+				["groups"] = {
 					i(200436),	-- Gorestained Hauberk
 				},
 			}),
@@ -59,7 +59,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 60.2, 83.0, THALDRASZUS },
 				},
 				["questID"] = 73881,
-				["g"] = {
+				["groups"] = {
 					i(200760),	-- Unstable Arcane Cell
 				},
 			}),
@@ -72,7 +72,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 36.8, 85.6, THALDRASZUS },
 				["questID"] = 72813,
 				["isDaily"] = IGNORED_VALUE,
-				["g"] = {
+				["groups"] = {
 					i(200182),	-- Riveted Drape
 				},
 			}),
@@ -80,7 +80,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["description"] = "Requires completion of the questhub in the area. Only spawns if the portal is available.",
 				["coord"] = { 62.2, 81.7, THALDRASZUS },
 				["questID"] = 74066,
-				["g"] = {
+				["groups"] = {
 					bo(69882, true),
 					i(200185),	-- Grips of the Everflowing Ocean
 				},
@@ -90,7 +90,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 62.1, 60.1, THALDRASZUS },
 				["questID"] = 74561,
-				["g"] = {
+				["groups"] = {
 					bo(74450, true),
 					i(203666),	-- Vinelashed Bracers
 				},
@@ -98,7 +98,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(193688, {	-- Phenran
 				["coord"] = { 60.0, 61.0, THALDRASZUS },
 				["questID"] = 74020,
-				["g"] = {
+				["groups"] = {
 					i(200146),	-- Phenran's Discordant Smasher
 				},
 			}),
@@ -106,7 +106,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 59.6, 61.8, THALDRASZUS },
 				["questID"] = 74565,
-				["group"] = {
+				["groups"] = {
 					bo(74449, true),
 					i(203677),	-- Watcher's 'Neck' Ring
 				},
@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 59.0, 56.0, THALDRASZUS },
 				["questID"] = 74566,
-				["g"] = {
+				["groups"] = {
 					bo(74448, true),
 					i(203665),	-- Stonetongues Hood
 				},
@@ -146,7 +146,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 				["questID"] = 74085,
 				["cost"] = { { "i", 200949, 1 }, },	-- 1x Case of Fresh Gleamfish
-				["g"] = {
+				["groups"] = {
 					i(200999),	-- The Super Shellkhan Gang (TOY!)
 				},
 			}),
@@ -158,7 +158,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 47.5, 71.7, THALDRASZUS },	-- cave
 				},
 				["questID"] = 74086,
-				["g"] = {
+				["groups"] = {
 					i(200214),	-- Grasp of the Weeping Widow
 				},
 			}),
@@ -169,7 +169,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 47.9, 49.8, THALDRASZUS },
 				["crs"] = { 193156 },	-- Wooly Lamb
 				["questID"] = 74089,
-				["g"] = {
+				["groups"] = {
 					bo(69850, true),
 				},
 			}),

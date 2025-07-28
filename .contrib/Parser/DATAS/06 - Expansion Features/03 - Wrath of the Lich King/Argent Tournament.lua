@@ -514,8 +514,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.3, 19.0, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13717),	-- The Valiant's Charge (A) (Darnassus)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13717),	-- The Valiant's Charge (A) (Darnassus)
 					["groups"] = {
 						objective(1, {	-- 0/1 Ashwood Brand
 							["provider"] = { "i", 44981 },	-- Ashwood Brand
@@ -526,15 +526,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				}),
 				q(13746, {	-- A Blade Fit For A Champion (A) (Gnomeregan, Valiant)
 					["qg"] = 33335,	-- Ambrose Boltspark
-					["coord"] = { 76.5, 19.8, ICECROWN },
 					["sourceQuests"] = {
 						13688,	-- A Valiant Of Gnomeregan
 						13704,	-- Valiant Of Gnomeregan
 					},
+					["coord"] = { 76.5, 19.8, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13715),	-- The Valiant's Charge (A) (Gnomeregan)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13715),	-- The Valiant's Charge (A) (Gnomeregan)
 					["groups"] = {
 						objective(1, {	-- 0/1 Ashwood Brand
 							["provider"] = { "i", 44981 },	-- Ashwood Brand
@@ -552,8 +552,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.6, 19.5, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13714),	-- The Valiant's Charge (A) (Ironforge)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13714),	-- The Valiant's Charge (A) (Ironforge)
 					["groups"] = {
 						objective(1, {	-- 0/1 Ashwood Brand
 							["provider"] = { "i", 44981 },	-- Ashwood Brand
@@ -571,8 +571,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.6, 19.1, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13718),	-- The Valiant's Charge (A) (Stormwind City)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13718),	-- The Valiant's Charge (A) (Stormwind City)
 					["groups"] = {
 						objective(1, {	-- 0/1 Ashwood Brand
 							["provider"] = { "i", 44981 },	-- Ashwood Brand
@@ -590,8 +590,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.1, 19.1, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13716),	-- The Valiant's Charge (A) (The Exodar)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13716),	-- The Valiant's Charge (A) (The Exodar)
 					["groups"] = {
 						objective(1, {	-- 0/1 Ashwood Brand
 							["provider"] = { "i", 44981 },	-- Ashwood Brand
@@ -628,8 +628,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.0, 24.5, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13719),	-- The Valiant's Charge (H) (Darkspear Trolls)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13719),	-- The Valiant's Charge (H) (Darkspear Trolls)
 					["groups"] = {
 						objective(1, {	-- 0/1 Ashwood Brand
 							["provider"] = { "i", 44981 },	-- Ashwood Brand
@@ -647,8 +647,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.5, 24.6, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13697),	-- The Valiant's Charge (H) (Orgrimmar)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13697),	-- The Valiant's Charge (H) (Orgrimmar)
 					["groups"] = {
 						objective(1, {	-- 0/1 Ashwood Brand
 							["provider"] = { "i", 44981 },	-- Ashwood Brand
@@ -666,8 +666,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.5, 23.9, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13722),	-- The Valiant's Charge (H) (Silvermoon City)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13722),	-- The Valiant's Charge (H) (Silvermoon City)
 					["groups"] = {
 						objective(1, {	-- 0/1 Ashwood Brand
 							["provider"] = { "i", 44981 },	-- Ashwood Brand
@@ -685,8 +685,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.2, 24.6, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13720),	-- The Valiant's Charge (H) (Thunder Bluff)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13720),	-- The Valiant's Charge (H) (Thunder Bluff)
 					["groups"] = {
 						objective(1, {	-- 0/1 Ashwood Brand
 							["provider"] = { "i", 44981 },	-- Ashwood Brand
@@ -704,8 +704,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.5, 24.2, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13721),	-- The Valiant's Charge (H) (Undercity)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13721),	-- The Valiant's Charge (H) (Undercity)
 					["groups"] = {
 						objective(1, {	-- 0/1 Ashwood Brand
 							["provider"] = { "i", 44981 },	-- Ashwood Brand
@@ -821,10 +821,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 74.0, 24.6, ICECROWN },
 					["timeline"] = { ADDED_3_1_0, REMOVED_4_0_1 },
 					["maps"] = { THE_STORM_PEAKS },
+					["isDaily"] = true,
 					-- #if BEFORE CATA
 					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
 					-- #endif
-					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/15 Small Stone Block
 							["providers"] = {
@@ -839,18 +839,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				applyclassicphase(WRATH_PHASE_THREE, {	-- A Leg Up
 					["allianceQuestData"] = q(14074, {	-- A Leg Up (A)
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
+						["sourceAchievements"] = { 3676 },	-- A Silver Confidant
 						["coord"] = { 76.2, 19.6, ICECROWN },
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
-						["sourceAchievements"] = { 3676 },	-- A Silver Confidant
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.SILVER_COVENTANT_DAILY]]),
 						["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
 					}),
 					["hordeQuestData"] = q(14143, {	-- A Leg Up (H)
 						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
+						["sourceAchievements"] = { 3677 },	-- The Sunreavers
 						["coord"] = { 76.1, 24.0, ICECROWN },
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
-						["sourceAchievements"] = { 3677 },	-- The Sunreavers
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.SUNREAVERS_DAILY]]),
 						["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
@@ -940,8 +940,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.3, 19.0, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13717),	-- The Valiant's Charge (A) (Darnassus)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13717),	-- The Valiant's Charge (A) (Darnassus)
 					["groups"] = {
 						objective(1, {	-- 0/10 Converted Hero slain
 							["provider"] = { "n", 32255 },	-- Converted Hero
@@ -957,8 +957,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.6, 19.8, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13715),	-- The Valiant's Charge (A) (Gnomeregan)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13715),	-- The Valiant's Charge (A) (Gnomeregan)
 					["groups"] = {
 						objective(1, {	-- 0/10 Converted Hero slain
 							["provider"] = { "n", 32255 },	-- Converted Hero
@@ -970,8 +970,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["qg"] = 33315,	-- Rollo Sureshot
 					["coord"] = { 76.7, 19.4, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13714),	-- The Valiant's Charge (A) (Ironforge)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13714),	-- The Valiant's Charge (A) (Ironforge)
 					["groups"] = {
 						objective(1, {	-- 0/10 Converted Hero slain
 							["provider"] = { "n", 32255 },	-- Converted Hero
@@ -987,8 +987,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.5, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13718),	-- The Valiant's Charge (A) (Stormwind City)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13718),	-- The Valiant's Charge (A) (Stormwind City)
 					["groups"] = {
 						objective(1, {	-- 0/10 Converted Hero slain
 							["provider"] = { "n", 32255 },	-- Converted Hero
@@ -1004,8 +1004,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.1, 19.2, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13716),	-- The Valiant's Charge (A) (The Exodar)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13716),	-- The Valiant's Charge (A) (The Exodar)
 					["groups"] = {
 						objective(1, {	-- 0/10 Converted Hero slain
 							["provider"] = { "n", 32255 },	-- Converted Hero
@@ -1017,8 +1017,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["qg"] = 33540,	-- Shadow Hunter Mezil-kree
 					["coord"] = { 76.0, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13719),	-- The Valiant's Charge (H) (Darkspear Trolls)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13719),	-- The Valiant's Charge (H) (Darkspear Trolls)
 					["groups"] = {
 						objective(1, {	-- 0/10 Converted Hero slain
 							["provider"] = { "n", 32255 },	-- Converted Hero
@@ -1034,8 +1034,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.5, 24.5, ICECROWN },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13697),	-- The Valiant's Charge (H) (Orgrimmar)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13697),	-- The Valiant's Charge (H) (Orgrimmar)
 					["groups"] = {
 						objective(1, {	-- 0/10 Converted Hero slain
 							["provider"] = { "n", 32255 },	-- Converted Hero
@@ -1051,8 +1051,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.4, 23.8, ICECROWN },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13722),	-- The Valiant's Charge (H) (Silvermoon City)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13722),	-- The Valiant's Charge (H) (Silvermoon City)
 					["groups"] = {
 						objective(1, {	-- 0/10 Converted Hero slain
 							["provider"] = { "n", 32255 },	-- Converted Hero
@@ -1068,8 +1068,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.3, 24.7, ICECROWN },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13720),	-- The Valiant's Charge (H) (Thunder Bluff)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13720),	-- The Valiant's Charge (H) (Thunder Bluff)
 					["groups"] = {
 						objective(1, {	-- 0/10 Converted Hero slain
 							["provider"] = { "n", 32255 },	-- Converted Hero
@@ -1085,8 +1085,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.6, 24.1, ICECROWN },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13721),	-- The Valiant's Charge (H) (Undercity)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13721),	-- The Valiant's Charge (H) (Undercity)
 					["groups"] = {
 						objective(1, {	-- 0/10 Converted Hero slain
 							["provider"] = { "n", 32255 },	-- Converted Hero
@@ -1121,8 +1121,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.3, 19.0, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13717),	-- The Valiant's Charge (A) (Darnassus)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13717),	-- The Valiant's Charge (A) (Darnassus)
 					["groups"] = {
 						objective(1, {	-- 0/1 Blade of Drak'Mar
 							["provider"] = { "i", 44978 },	-- Blade of Drak'Mar
@@ -1139,8 +1139,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.5, 19.8, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13715),	-- The Valiant's Charge (A) (Gnomeregan)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13715),	-- The Valiant's Charge (A) (Gnomeregan)
 					["groups"] = {
 						objective(1, {	-- 0/1 Blade of Drak'Mar
 							["provider"] = { "i", 44978 },	-- Blade of Drak'Mar
@@ -1157,8 +1157,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.6, 19.5, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13714),	-- The Valiant's Charge (A) (Ironforge)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13714),	-- The Valiant's Charge (A) (Ironforge)
 					["groups"] = {
 						objective(1, {	-- 0/1 Blade of Drak'Mar
 							["provider"] = { "i", 44978 },	-- Blade of Drak'Mar
@@ -1175,8 +1175,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.6, 19.1, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13718),	-- The Valiant's Charge (A) (Stormwind City)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13718),	-- The Valiant's Charge (A) (Stormwind City)
 					["groups"] = {
 						objective(1, {	-- 0/1 Blade of Drak'Mar
 							["provider"] = { "i", 44978 },	-- Blade of Drak'Mar
@@ -1193,8 +1193,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.1, 19.1, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13716),	-- The Valiant's Charge (A) (The Exodar)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13716),	-- The Valiant's Charge (A) (The Exodar)
 					["groups"] = {
 						objective(1, {	-- 0/1 Blade of Drak'Mar
 							["provider"] = { "i", 44978 },	-- Blade of Drak'Mar
@@ -1229,8 +1229,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.0, 24.5, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13719),	-- The Valiant's Charge (H) (Darkspear Trolls)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13719),	-- The Valiant's Charge (H) (Darkspear Trolls)
 					["groups"] = {
 						objective(1, {	-- 0/1 Blade of Drak'Mar
 							["provider"] = { "i", 44978 },	-- Blade of Drak'Mar
@@ -1247,8 +1247,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.5, 24.6, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13697),	-- The Valiant's Charge (H) (Orgrimmar)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13697),	-- The Valiant's Charge (H) (Orgrimmar)
 					["groups"] = {
 						objective(1, {	-- 0/1 Blade of Drak'Mar
 							["provider"] = { "i", 44978 },	-- Blade of Drak'Mar
@@ -1265,8 +1265,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.5, 23.9, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13722),	-- The Valiant's Charge (H) (Silvermoon City)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13722),	-- The Valiant's Charge (H) (Silvermoon City)
 					["groups"] = {
 						objective(1, {	-- 0/1 Blade of Drak'Mar
 							["provider"] = { "i", 44978 },	-- Blade of Drak'Mar
@@ -1283,8 +1283,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.2, 24.6, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13720),	-- The Valiant's Charge (H) (Thunder Bluff)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13720),	-- The Valiant's Charge (H) (Thunder Bluff)
 					["groups"] = {
 						objective(1, {	-- 0/1 Blade of Drak'Mar
 							["provider"] = { "i", 44978 },	-- Blade of Drak'Mar
@@ -1301,8 +1301,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.5, 24.2, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13721),	-- The Valiant's Charge (H) (Undercity)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13721),	-- The Valiant's Charge (H) (Undercity)
 					["groups"] = {
 						objective(1, {	-- 0/1 Blade of Drak'Mar
 							["provider"] = { "i", 44978 },	-- Blade of Drak'Mar
@@ -1434,8 +1434,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.4, 19.0, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13717),	-- The Valiant's Charge (A) (Darnassus)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13717),	-- The Valiant's Charge (A) (Darnassus)
 					["groups"] = {
 						objective(1, {	-- 0/15 Boneguard Footman slain
 							["provider"] = { "n", 33438 },	-- Boneguard Footman
@@ -1461,8 +1461,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.5, 19.9, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13715),	-- The Valiant's Charge (A) (Gnomeregan)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13715),	-- The Valiant's Charge (A) (Gnomeregan)
 					["groups"] = {
 						objective(1, {	-- 0/15 Boneguard Footman slain
 							["provider"] = { "n", 33438 },	-- Boneguard Footman
@@ -1488,8 +1488,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.6, 19.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13714),	-- The Valiant's Charge (A) (Ironforge)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13714),	-- The Valiant's Charge (A) (Ironforge)
 					["groups"] = {
 						objective(1, {	-- 0/15 Boneguard Footman slain
 							["provider"] = { "n", 33438 },	-- Boneguard Footman
@@ -1515,8 +1515,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.6, 19.2, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13718),	-- The Valiant's Charge (A) (Stormwind City)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13718),	-- The Valiant's Charge (A) (Stormwind City)
 					["groups"] = {
 						objective(1, {	-- 0/15 Boneguard Footman slain
 							["provider"] = { "n", 33438 },	-- Boneguard Footman
@@ -1542,8 +1542,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.1, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13716),	-- The Valiant's Charge (A) (The Exodar)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13716),	-- The Valiant's Charge (A) (The Exodar)
 					["groups"] = {
 						objective(1, {	-- 0/15 Boneguard Footman slain
 							["provider"] = { "n", 33438 },	-- Boneguard Footman
@@ -1569,8 +1569,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 75.9, 24.4, ICECROWN },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13719),	-- The Valiant's Charge (H) (Darkspear Trolls)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13719),	-- The Valiant's Charge (H) (Darkspear Trolls)
 					["groups"] = {
 						objective(1, {	-- 0/15 Boneguard Footman slain
 							["provider"] = { "n", 33438 },	-- Boneguard Footman
@@ -1596,8 +1596,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.4, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13697),	-- The Valiant's Charge (H) (Orgrimmar)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13697),	-- The Valiant's Charge (H) (Orgrimmar)
 					["groups"] = {
 						objective(1, {	-- 0/15 Boneguard Footman slain
 							["provider"] = { "n", 33438 },	-- Boneguard Footman
@@ -1623,8 +1623,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.5, 23.9, ICECROWN },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13722),	-- The Valiant's Charge (H) (Silvermoon City)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13722),	-- The Valiant's Charge (H) (Silvermoon City)
 					["groups"] = {
 						objective(1, {	-- 0/15 Boneguard Footman slain
 							["provider"] = { "n", 33438 },	-- Boneguard Footman
@@ -1650,8 +1650,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.1, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13720),	-- The Valiant's Charge (H) (Thunder Bluff)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13720),	-- The Valiant's Charge (H) (Thunder Bluff)
 					["groups"] = {
 						objective(1, {	-- 0/15 Boneguard Footman slain
 							["provider"] = { "n", 33438 },	-- Boneguard Footman
@@ -1677,8 +1677,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.5, 24.3, ICECROWN },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13721),	-- The Valiant's Charge (H) (Undercity)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13721),	-- The Valiant's Charge (H) (Undercity)
 					["groups"] = {
 						objective(1, {	-- 0/15 Boneguard Footman slain
 							["provider"] = { "n", 33438 },	-- Boneguard Footman
@@ -1773,13 +1773,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				applyclassicphase(WRATH_PHASE_THREE, q(24442, {	-- Battle Plans Of The Kvaldir
 					["provider"] = { "i", 49676 },	-- Kvaldir Attack Plans
 					["sourceAchievements"] = { 2771, 2817 },	-- Exalted Champion of the Horde / Exalted Champion of the Alliance
-					["OnClick"] = CRUSADER_DAILY_OnClick,
-					["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.CRUSADER_DAILY]]),
-					["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
 					["crs"] = {
 						34839,	-- Kvaldir Mist Binder
 						34838,	-- Kvaldir Reaver
 					},
+					["OnClick"] = CRUSADER_DAILY_OnClick,
+					["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.CRUSADER_DAILY]]),
+					["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
 					["groups"] = {
 						objective(1, {	-- 0/1 Heart of the Mists
 							["providers"] = {
@@ -1794,18 +1794,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				applyclassicphase(WRATH_PHASE_THREE, {	-- Breakfast Of Champions
 					["allianceQuestData"] = q(14076, {	-- Breakfast Of Champions (A)
 						["qg"] = 34912,	-- Savinia Loresong <The Silver Covenant>
+						["sourceAchievements"] = { 3676 },	-- A Silver Confidant
 						["coord"] = { 76.2, 19.6, ICECROWN },
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
-						["sourceAchievements"] = { 3676 },	-- A Silver Confidant
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.SILVER_COVENTANT_DAILY]]),
 						["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
 					}),
 					["hordeQuestData"] = q(14092, {	-- Breakfast Of Champions (H)
 						["qg"] = 34914,	-- Tylos Dawnrunner <The Sunreavers>
+						["sourceAchievements"] = { 3677 },	-- The Sunreavers
 						["coord"] = { 76.1, 24.0, ICECROWN },
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
-						["sourceAchievements"] = { 3677 },	-- The Sunreavers
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.SUNREAVERS_DAILY]]),
 						["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
@@ -1846,12 +1846,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				}),
 				applyclassicphase(WRATH_PHASE_THREE, q(14105, {	-- Deathspeaker Kharos
 					["qg"] = 34882,	-- High Crusader Adelard
-					["coord"] = { 69.4, 23.1, ICECROWN },
 					["sourceAchievements"] = { 2771, 2817 },	-- Exalted Champion of the Horde / Exalted Champion of the Alliance
+					["coord"] = { 69.4, 23.1, ICECROWN },
+					["isDaily"] = true,
 					["OnClick"] = CRUSADER_DAILY_OnClick,
 					["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.CRUSADER_DAILY]]),
 					["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
-					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Deathspeaker Kharos slain
 							["provider"] = { "n", 34808 },	-- Deathspeaker Kharos <Cult of the Damned>
@@ -1862,12 +1862,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, q(14101, {	-- Drottinn Hrothgar
 					["qg"] = 34882,	-- High Crusader Adelard
-					["coord"] = { 69.4, 23.1, ICECROWN },
 					["sourceAchievements"] = { 2771, 2817 },	-- Exalted Champion of the Horde / Exalted Champion of the Alliance
+					["coord"] = { 69.4, 23.1, ICECROWN },
+					["isDaily"] = true,
 					["OnClick"] = CRUSADER_DAILY_OnClick,
 					["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.CRUSADER_DAILY]]),
 					["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
-					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Drottinn Hrothgar slain
 							["providers"] = {
@@ -1899,12 +1899,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				}),
 				applyclassicphase(WRATH_PHASE_THREE, q(14108, {	-- Get Kraken!
 					["qg"] = 35094,	-- Crusader Silverdawn
-					["coord"] = { 69.4, 23.1, ICECROWN },
 					["sourceAchievements"] = { 2771, 2817 },	-- Exalted Champion of the Horde / Exalted Champion of the Alliance
+					["coord"] = { 69.4, 23.1, ICECROWN },
+					["isDaily"] = true,
 					["OnClick"] = CRUSADER_DAILY_OnClick,
 					["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.CRUSADER_DAILY]]),
 					["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
-					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/8 Hurl Spears at North Sea Kraken
 							["providers"] = {
@@ -1922,18 +1922,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				applyclassicphase(WRATH_PHASE_THREE, {	-- Gormok Wants His Snobolds
 					["allianceQuestData"] = q(14090, {	-- Gormok Wants His Snobolds (A)
 						["qg"] = 34912,	-- Savinia Loresong <The Silver Covenant>
+						["sourceAchievements"] = { 3676 },	-- A Silver Confidant
 						["coord"] = { 76.2, 19.6, ICECROWN },
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
-						["sourceAchievements"] = { 3676 },	-- A Silver Confidant
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.SILVER_COVENTANT_DAILY]]),
 						["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
 					}),
 					["hordeQuestData"] = q(14141, {	-- Gormok Wants His Snobolds (H)
 						["qg"] = 34914,	-- Tylos Dawnrunner <The Sunreavers>
+						["sourceAchievements"] = { 3677 },	-- The Sunreavers
 						["coord"] = { 76.1, 24.0, ICECROWN },
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
-						["sourceAchievements"] = { 3677 },	-- The Sunreavers
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.SUNREAVERS_DAILY]]),
 						["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
@@ -1954,13 +1954,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 
 				applyclassicphase(WRATH_PHASE_THREE, q(14095, {	-- Identifying the Remains
 					["provider"] = { "i", 46955 },	-- Kraken Tooth
-					["description"] = "Defeating the Kraken during |cFFFFD700Get Kraken|r rewards this item.",
 					["sourceAchievements"] = { 2771, 2817 },	-- Exalted Champion of the Horde / Exalted Champion of the Alliance
+					["description"] = "Defeating the Kraken during |cFFFFD700Get Kraken|r rewards this item.",
+					["isDaily"] = true,
+					["cr"] = 34925,	-- North Sea Kraken
 					["OnClick"] = CRUSADER_DAILY_OnClick,
 					["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.CRUSADER_DAILY]]),
 					["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
-					["cr"] = 34925,	-- North Sea Kraken
-					["isDaily"] = true,
 				})),
 
 				q(13627, {	-- Jack Me Some Lumber
@@ -1969,10 +1969,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 74.2, 24.6, ICECROWN },
 					["timeline"] = { ADDED_3_1_0, REMOVED_4_0_1 },
 					["maps"] = { CRYSTALSONG_FOREST },
+					["isDaily"] = true,
 					-- #if BEFORE CATA
 					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
 					-- #endif
-					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/12 Rough Hewn Plank
 							["providers"] = {
@@ -2113,12 +2113,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				},
 				applyclassicphase(WRATH_PHASE_THREE, q(14102, {	-- Mistcaller Yngvar
 					["qg"] = 34882,	-- High Crusader Adelard
-					["coord"] = { 69.4, 23.1, ICECROWN },
 					["sourceAchievements"] = { 2771, 2817 },	-- Exalted Champion of the Horde / Exalted Champion of the Alliance
+					["coord"] = { 69.4, 23.1, ICECROWN },
+					["isDaily"] = true,
 					["OnClick"] = CRUSADER_DAILY_OnClick,
 					["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.CRUSADER_DAILY]]),
 					["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
-					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- Mistcaller Yngvar slain
 							["providers"] = {
@@ -2132,12 +2132,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, q(14104, {	-- Ornolf The Scarred
 					["qg"] = 34882,	-- High Crusader Adelard
-					["coord"] = { 69.4, 23.1, ICECROWN },
 					["sourceAchievements"] = { 2771, 2817 },	-- Exalted Champion of the Horde / Exalted Champion of the Alliance
+					["coord"] = { 69.4, 23.1, ICECROWN },
+					["isDaily"] = true,
 					["OnClick"] = CRUSADER_DAILY_OnClick,
 					["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.CRUSADER_DAILY]]),
 					["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
-					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- Ornolf the Scarred slain
 							["providers"] = {
@@ -2152,18 +2152,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				applyclassicphase(WRATH_PHASE_THREE, {	-- Rescue at Sea
 					["allianceQuestData"] = q(14152, {	-- Rescue at Sea (A)
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
+						["sourceAchievements"] = { 3676 },	-- A Silver Confidant
 						["coord"] = { 76.2, 19.6, ICECROWN },
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
-						["sourceAchievements"] = { 3676 },	-- A Silver Confidant
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.SILVER_COVENTANT_DAILY]]),
 						["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
 					}),
 					["hordeQuestData"] = q(14136, {	-- Rescue at Sea (H)
 						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
+						["sourceAchievements"] = { 3677 },	-- The Sunreavers
 						["coord"] = { 76.1, 24.0, ICECROWN },
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
-						["sourceAchievements"] = { 3677 },	-- The Sunreavers
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.SUNREAVERS_DAILY]]),
 						["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
@@ -2182,18 +2182,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				applyclassicphase(WRATH_PHASE_THREE, {	-- Stop The Aggressors
 					["allianceQuestData"] = q(14080, {	-- Stop The Aggressors (A)
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
+						["sourceAchievements"] = { 3676 },	-- A Silver Confidant
 						["coord"] = { 76.2, 19.6, ICECROWN },
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
-						["sourceAchievements"] = { 3676 },	-- A Silver Confidant
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.SILVER_COVENTANT_DAILY]]),
 						["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
 					}),
 					["hordeQuestData"] = q(14140, {	-- Stop The Aggressors (H)
 						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
+						["sourceAchievements"] = { 3677 },	-- The Sunreavers
 						["coord"] = { 76.1, 24.0, ICECROWN },
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
-						["sourceAchievements"] = { 3677 },	-- The Sunreavers
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.SUNREAVERS_DAILY]]),
 						["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
@@ -2440,10 +2440,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["qg"] = 33817,	-- Justicar Mariel Trueheart <Seneschal of the Argent Tournament>
 					["coord"] = { 69.6, 22.8, ICECROWN },
 					["timeline"] = { ADDED_3_1_0, REMOVED_4_0_1 },
+					["isBreadcrumb"] = true,
 					-- #if BEFORE CATA
 					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
 					-- #endif
-					["isBreadcrumb"] = true,
 				}),
 				q(13670, {	-- The Edge Of Winter (A) (The Silver Covenant, Aspirant)
 					["qg"] = 33625,	-- Arcanist Taelis
@@ -2472,8 +2472,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.3, 19.0, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13717),	-- The Valiant's Charge (A) (Darnassus)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13717),	-- The Valiant's Charge (A) (Darnassus)
 					["groups"] = {
 						objective(1, {	-- 0/1 Winter's Edge
 							["provider"] = { "i", 45003 },	-- Winter's Edge
@@ -2490,8 +2490,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.5, 19.8, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13715),	-- The Valiant's Charge (A) (Gnomeregan)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13715),	-- The Valiant's Charge (A) (Gnomeregan)
 					["groups"] = {
 						objective(1, {	-- 0/1 Winter's Edge
 							["provider"] = { "i", 45003 },	-- Winter's Edge
@@ -2508,8 +2508,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.6, 19.5, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13714),	-- The Valiant's Charge (A) (Ironforge)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13714),	-- The Valiant's Charge (A) (Ironforge)
 					["groups"] = {
 						objective(1, {	-- 0/1 Winter's Edge
 							["provider"] = { "i", 45003 },	-- Winter's Edge
@@ -2526,8 +2526,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.6, 19.1, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13718),	-- The Valiant's Charge (A) (Stormwind City)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13718),	-- The Valiant's Charge (A) (Stormwind City)
 					["groups"] = {
 						objective(1, {	-- 0/1 Winter's Edge
 							["provider"] = { "i", 45003 },	-- Winter's Edge
@@ -2544,8 +2544,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.1, 19.1, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13716),	-- The Valiant's Charge (A) (The Exodar)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13716),	-- The Valiant's Charge (A) (The Exodar)
 					["groups"] = {
 						objective(1, {	-- 0/1 Winter's Edge
 							["provider"] = { "i", 45003 },	-- Winter's Edge
@@ -2580,8 +2580,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.0, 24.5, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13719),	-- The Valiant's Charge (H) (Darkspear Trolls)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13719),	-- The Valiant's Charge (H) (Darkspear Trolls)
 					["groups"] = {
 						objective(1, {	-- 0/1 Winter's Edge
 							["provider"] = { "i", 45003 },	-- Winter's Edge
@@ -2598,8 +2598,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.5, 24.6, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13697),	-- The Valiant's Charge (H) (Orgrimmar)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13697),	-- The Valiant's Charge (H) (Orgrimmar)
 					["groups"] = {
 						objective(1, {	-- 0/1 Winter's Edge
 							["provider"] = { "i", 45003 },	-- Winter's Edge
@@ -2616,8 +2616,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.5, 23.9, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13722),	-- The Valiant's Charge (H) (Silvermoon City)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13722),	-- The Valiant's Charge (H) (Silvermoon City)
 					["groups"] = {
 						objective(1, {	-- 0/1 Winter's Edge
 							["provider"] = { "i", 45003 },	-- Winter's Edge
@@ -2634,8 +2634,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.2, 24.6, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13720),	-- The Valiant's Charge (H) (Thunder Bluff)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13720),	-- The Valiant's Charge (H) (Thunder Bluff)
 					["groups"] = {
 						objective(1, {	-- 0/1 Winter's Edge
 							["provider"] = { "i", 45003 },	-- Winter's Edge
@@ -2652,8 +2652,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 76.5, 24.2, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13721),	-- The Valiant's Charge (H) (Undercity)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13721),	-- The Valiant's Charge (H) (Undercity)
 					["groups"] = {
 						objective(1, {	-- 0/1 Winter's Edge
 							["provider"] = { "i", 45003 },	-- Winter's Edge
@@ -2663,12 +2663,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				}),
 				applyclassicphase(WRATH_PHASE_THREE, q(14107, {	-- The Fate of the Fallen
 					["qg"] = 35094,	-- Crusader Silverdawn
-					["coord"] = { 69.4, 23.1, ICECROWN },
 					["sourceAchievements"] = { 2771, 2817 },	-- Exalted Champion of the Horde / Exalted Champion of the Alliance
+					["coord"] = { 69.4, 23.1, ICECROWN },
+					["isDaily"] = true,
 					["OnClick"] = CRUSADER_DAILY_OnClick,
 					["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.CRUSADER_DAILY]]),
 					["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
-					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/6 Fallen Hero's Spirit blessed
 							["providers"] = {
@@ -2688,8 +2688,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.4, 19.0, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13717),	-- The Valiant's Charge (A) (Darnassus)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13717),	-- The Valiant's Charge (A) (Darnassus)
 					["groups"] = {
 						objective(1, {	-- 0/3 Mark of the Valiant
 							["provider"] = { "i", 45127 },	-- Mark of the Valiant
@@ -2717,8 +2717,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.5, 19.9, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13715),	-- The Valiant's Charge (A) (Gnomeregan)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13715),	-- The Valiant's Charge (A) (Gnomeregan)
 					["groups"] = {
 						objective(1, {	-- 0/3 Mark of the Valiant
 							["provider"] = { "i", 45127 },	-- Mark of the Valiant
@@ -2746,8 +2746,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.6, 19.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13714),	-- The Valiant's Charge (A) (Ironforge)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13714),	-- The Valiant's Charge (A) (Ironforge)
 					["groups"] = {
 						objective(1, {	-- 0/3 Mark of the Valiant
 							["provider"] = { "i", 45127 },	-- Mark of the Valiant
@@ -2775,8 +2775,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.6, 19.2, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13718),	-- The Valiant's Charge (A) (Stormwind City)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13718),	-- The Valiant's Charge (A) (Stormwind City)
 					["groups"] = {
 						objective(1, {	-- 0/3 Mark of the Valiant
 							["provider"] = { "i", 45127 },	-- Mark of the Valiant
@@ -2804,8 +2804,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.1, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13716),	-- The Valiant's Charge (A) (The Exodar)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13716),	-- The Valiant's Charge (A) (The Exodar)
 					["groups"] = {
 						objective(1, {	-- 0/3 Mark of the Valiant
 							["provider"] = { "i", 45127 },	-- Mark of the Valiant
@@ -2833,8 +2833,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 75.9, 24.4, ICECROWN },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13719),	-- The Valiant's Charge (H) (Darkspear Trolls)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13719),	-- The Valiant's Charge (H) (Darkspear Trolls)
 					["groups"] = {
 						objective(1, {	-- 0/3 Mark of the Valiant
 							["provider"] = { "i", 45127 },	-- Mark of the Valiant
@@ -2862,8 +2862,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.4, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13697),	-- The Valiant's Charge (H) (Orgrimmar)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13697),	-- The Valiant's Charge (H) (Orgrimmar)
 					["groups"] = {
 						objective(1, {	-- 0/3 Mark of the Valiant
 							["provider"] = { "i", 45127 },	-- Mark of the Valiant
@@ -2891,8 +2891,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.5, 23.9, ICECROWN },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13722),	-- The Valiant's Charge (H) (Silvermoon City)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13722),	-- The Valiant's Charge (H) (Silvermoon City)
 					["groups"] = {
 						objective(1, {	-- 0/3 Mark of the Valiant
 							["provider"] = { "i", 45127 },	-- Mark of the Valiant
@@ -2920,8 +2920,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.1, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13720),	-- The Valiant's Charge (H) (Thunder Bluff)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13720),	-- The Valiant's Charge (H) (Thunder Bluff)
 					["groups"] = {
 						objective(1, {	-- 0/3 Mark of the Valiant
 							["provider"] = { "i", 45127 },	-- Mark of the Valiant
@@ -2949,8 +2949,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 					["coord"] = { 76.5, 24.3, ICECROWN },
 					["races"] = HORDE_ONLY,
-					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13721),	-- The Valiant's Charge (H) (Undercity)
 					["isDaily"] = true,
+					["OnUpdate"] = VALIANT_DAILY_OnUpdate(13721),	-- The Valiant's Charge (H) (Undercity)
 					["groups"] = {
 						objective(1, {	-- 0/3 Mark of the Valiant
 							["provider"] = { "i", 45127 },	-- Mark of the Valiant
@@ -2973,18 +2973,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				applyclassicphase(WRATH_PHASE_THREE, {	-- The Light's Mercy
 					["allianceQuestData"] = q(14077, {	-- The Light's Mercy (A)
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
+						["sourceAchievements"] = { 3676 },	-- A Silver Confidant
 						["coord"] = { 76.2, 19.6, ICECROWN },
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
-						["sourceAchievements"] = { 3676 },	-- A Silver Confidant
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.SILVER_COVENTANT_DAILY]]),
 						["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
 					}),
 					["hordeQuestData"] = q(14144, {	-- The Light's Mercy (H)
 						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
+						["sourceAchievements"] = { 3677 },	-- The Sunreavers
 						["coord"] = { 76.1, 24.0, ICECROWN },
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
-						["sourceAchievements"] = { 3677 },	-- The Sunreavers
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.SUNREAVERS_DAILY]]),
 						["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
@@ -3541,8 +3541,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						13695,	-- A Valiant Of Undercity
 					},
 					["coord"] = { 76.5, 24.6, ICECROWN },
-					["_drop"] = { "races" },
 					["races"] = exclude({ ORC, GOBLIN, PANDAREN_HORDE, NIGHTBORNE, HIGHMOUNTAIN_TAUREN, ZANDALARI, VULPERA, MAGHAR, DRACTHYR_HORDE }, HORDE_ONLY),
+					["_drop"] = { "races" },
 				}),
 				q(13708, {	-- Valiant Of Sen'jin
 					["qg"] = 33372,	-- Zul'tore
@@ -3613,18 +3613,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				applyclassicphase(WRATH_PHASE_THREE, {	-- What Do You Feed a Yeti, Anyway?
 					["allianceQuestData"] = q(14112, {	-- What Do You Feed a Yeti, Anyway? (A)
 						["qg"] = 34912,	-- Savinia Loresong <The Silver Covenant>
+						["sourceAchievements"] = { 3676 },	-- A Silver Confidant
 						["coord"] = { 76.2, 19.6, ICECROWN },
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
-						["sourceAchievements"] = { 3676 },	-- A Silver Confidant
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.SILVER_COVENTANT_DAILY]]),
 						["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
 					}),
 					["hordeQuestData"] = q(14145, {	-- What Do You Feed a Yeti, Anyway? (H)
 						["qg"] = 34914,	-- Tylos Dawnrunner <The Sunreavers>
+						["sourceAchievements"] = { 3677 },	-- The Sunreavers
 						["coord"] = { 76.1, 24.0, ICECROWN },
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
-						["sourceAchievements"] = { 3677 },	-- The Sunreavers
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.SUNREAVERS_DAILY]]),
 						["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
@@ -3645,18 +3645,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				applyclassicphase(WRATH_PHASE_THREE, {	-- You've Really Done It This Time, Kul
 					["allianceQuestData"] = q(14096, {	-- You've Really Done It This Time, Kul (A)
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
+						["sourceAchievements"] = { 3676 },	-- A Silver Confidant
 						["coord"] = { 76.2, 19.6, ICECROWN },
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
-						["sourceAchievements"] = { 3676 },	-- A Silver Confidant
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.SILVER_COVENTANT_DAILY]]),
 						["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
 					}),
 					["hordeQuestData"] = q(14142, {	-- You've Really Done It This Time, Kul (H)
 						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
+						["sourceAchievements"] = { 3677 },	-- The Sunreavers
 						["coord"] = { 76.1, 24.0, ICECROWN },
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
-						["sourceAchievements"] = { 3677 },	-- The Sunreavers
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = CLASSIC_ONLY_DB_FUNC([[_.OnUpdateDB.SUNREAVERS_DAILY]]),
 						["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
@@ -3775,6 +3775,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
 						["sourceQuest"] = 24476,	-- Tempering The Blade (A)
 						["coord"] = { 74.2, 31.2, ICECROWN },
+						["description"] = "Just enter the instance and a special event will unfold. There is no need to talk to Jaina.",
 						["maps"] = { HALLS_OF_REFLECTION },
 						["groups"] = {
 							objective(1, {	-- 0/1 Subdued Quel'Delar
@@ -3785,7 +3786,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 								},
 							}),
 						},
-						["description"] = "Just enter the instance and a special event will unfold. There is no need to talk to Jaina.",
 					}),
 					q(24522, {	-- Journey To The Sunwell (A)
 						["providers"] = {
@@ -3794,8 +3794,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 						["sourceQuest"] = 24480,	-- The Halls Of Reflection (A)
 						["coord"] = { 74.2, 31.2, ICECROWN },
-						["maps"] = { ISLE_OF_QUELDANAS },
 						["description"] = "If you accidentally enter the raid before turning in the quest, you will have to use your hearthstone to get out or walk through the whole empty instance to a portal at the end.",
+						["maps"] = { ISLE_OF_QUELDANAS },
 					}),
 					q(24535, {	-- Thalorien Dawnseeker (A)
 						["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
@@ -3969,6 +3969,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
 						["sourceQuest"] = 24560,	-- Tempering The Blade (H)
 						["coord"] = { 74.2, 31.2, ICECROWN },
+						["description"] = "Just enter the instance and a special event will unfold. There is no need to talk to Sylvanas.",
 						["maps"] = { HALLS_OF_REFLECTION },
 						["groups"] = {
 							objective(1, {	-- 0/1 Subdued Quel'Delar
@@ -3979,7 +3980,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 								},
 							}),
 						},
-						["description"] = "Just enter the instance and a special event will unfold. There is no need to talk to Sylvanas.",
 					}),
 					q(24562, {	-- Journey To The Sunwell (H)
 						["providers"] = {
@@ -3988,8 +3988,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 						["sourceQuest"] = 24561,	-- The Halls Of Reflection (H)
 						["coord"] = { 74.2, 31.2, ICECROWN },
-						["maps"] = { ISLE_OF_QUELDANAS },
 						["description"] = "If you accidentally enter the raid before turning in the quest, you will have to use your hearthstone to get out or walk through the whole empty instance to a portal at the end.",
+						["maps"] = { ISLE_OF_QUELDANAS },
 					}),
 					q(24563, {	-- Thalorien Dawnseeker (H)
 						["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
@@ -4122,7 +4122,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				o(194618, {	-- Lance Rack
 					["coord"] = { 75.9, 19.8, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(46069, {	-- Alliance Lance
 							-- #IF BEFORE 7.0.0
 							["ignoreSource"] = true,
@@ -4133,7 +4133,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				o_repeated({	-- Lance Rack
 					["coord"] = { 48.8, 71.3, ICECROWN },
 					["maps"] = { TRIAL_OF_THE_CHAMPION },
-					["g"] = {
+					["groups"] = {
 						o(194908),	-- Lance Rack
 						o(194909),	-- Lance Rack
 						i(46106, {	-- Argent Lance
@@ -4146,7 +4146,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				o(194622, {	-- Lance Rack
 					["coord"] = { 76.0, 23.6, ICECROWN },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(46070, {	-- Horde Lance
 							-- #IF BEFORE 7.0.0
 							["ignoreSource"] = true,

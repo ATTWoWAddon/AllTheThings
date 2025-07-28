@@ -59,13 +59,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				faction(FACTION_CARTELS_OF_UNDERMINE),	-- Cartels of Undermine
 				ach(41086, {	-- Ally of Undermine
 					["minReputation"] = { FACTION_CARTELS_OF_UNDERMINE, 20 },	-- Cartels of Undermine 20
-					["g"] = {
+					["groups"] = {
 						title(603),	-- <Name> the Explosive
 					},
 				}),
 				n(231409, {	-- Smaks Topskimmer <Renown Quartermaster>
 					["coord"] = { 43.6, 50.8, UNDERMINE },
-					["g"] = bubbleDownRep(FACTION_CARTELS_OF_UNDERMINE, {
+					["groups"] = bubbleDownRep(FACTION_CARTELS_OF_UNDERMINE, {
 						{		-- RENOWN 1 --
 						}, {	-- RENOWN 2 --
 						}, {	-- RENOWN 3 --
@@ -237,17 +237,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						q(90557),	-- Whose Key is This?
 					}, {	-- RENOWN 10 --
 						q(86555, {	-- Undermine Benefactor
-							["g"] = { i(231737) },	-- Undermine Enforcer's Padding (COSMETIC!)
+							["groups"] = { i(231737) },	-- Undermine Enforcer's Padding (COSMETIC!)
 						}),
 					}, {	-- RENOWN 11 --
 						-- TODO: missing Scrappy S.C.R.A.P.per II
 						q(85820, {	-- Valorstones
-							["g"] = { i(231737) },	-- Undermine Enforcer's Padding (COSMETIC!)
+							["groups"] = { i(231737) },	-- Undermine Enforcer's Padding (COSMETIC!)
 						}),
 					}, {	-- RENOWN 12 --
 						-- TODO: missing Master Negotiator
 						q(85821, {	-- Valorstones
-							["g"] = { i(231737) },	-- Undermine Enforcer's Padding (COSMETIC!)
+							["groups"] = { i(231737) },	-- Undermine Enforcer's Padding (COSMETIC!)
 						}),
 					}, {	-- RENOWN 13 --
 					}, {	-- RENOWN 14 --
@@ -261,12 +261,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					}, {	-- RENOWN 19 --
 					}, {	-- RENOWN 20 --
 						q(85827, {	-- Glinting and Gleaming
-							["g"] = { i(230936) },	-- Enchanted Runed Undermine Crest
+							["groups"] = { i(230936) },	-- Enchanted Runed Undermine Crest
 						}),
 						------ Paragon ------
 						q(85805, {	-- Renowned with the Cartels of Undermine
 							["isRepeatable"] = true,
-							["g"] = { i(232463) },	-- Overflowing Undermine Trove
+							["groups"] = { i(232463) },	-- Overflowing Undermine Trove
 						}),
 					},
 				}))),
@@ -275,7 +275,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				faction(FACTION_DARKFUSE_SOLUTIONS),	-- Darkfuse Solutions
 				ach(41350, {	-- A Long Fuse
 					["minReputation"] = { FACTION_DARKFUSE_SOLUTIONS, EXALTED },	-- Darkfuse Solutions Exalted
-					["g"] = {
+					["groups"] = {
 						title(606),	-- Darkfuse Diplomat <Name>
 					},
 				}),
@@ -284,7 +284,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["coord"] = { 30.8, 38.2, UNDERMINE },
 					["minReputation"] = { FACTION_DARKFUSE_SOLUTIONS, EXALTED },	-- Darkfuse Solutions Exalted
 					["isRepeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(232465, {	-- Darkfuse Trove (Paragon)
 							i(233064),	-- Bronze Goblin Wave Shredder (MOUNT!)
 						}),
@@ -293,11 +293,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				n(231396, {	-- Sitch Lowdown <Darkfuse Solutions Quartermaster>
 					["sourceQuest"] = 86961,	-- Diversified Investments
 					["coord"] = { 30.8, 38.2, UNDERMINE },
-					["g"] = bubbleDownClassicRep(FACTION_DARKFUSE_SOLUTIONS, {
+					["groups"] = bubbleDownClassicRep(FACTION_DARKFUSE_SOLUTIONS, {
 						{		-- Neutral
 							i(235558, {	-- Box of Darkfuse Miscellany
 								["cost"] = {{ "c", 3226, 100 }},	-- 100x Market Research
-								["g"] = {
+								["groups"] = {
 									currency(3177),	-- Darkfuse Solutions Commendation
 								},
 							}),
@@ -335,7 +335,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				faction(FACTION_TWW_BILGEWATER_CARTEL),	-- Bilgewater Cartel
 				n(231406, {	-- Rocco Razzboom <Bilgewater Quartermaster>
 					["coord"] = { 39.2, 22.2, UNDERMINE },
-					["g"] = bubbleDownClassicRep(FACTION_TWW_BILGEWATER_CARTEL, {
+					["groups"] = bubbleDownClassicRep(FACTION_TWW_BILGEWATER_CARTEL, {
 						{		-- Neutral
 						}, {	-- Friendly
 							i(236764, {	-- Finder's Fee
@@ -375,20 +375,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				},{
 					q(88870, {	-- Honored with the Bilgewater Cartel
 						["minReputation"] = { FACTION_TWW_BILGEWATER_CARTEL, HONORED },	-- Bilgewater Cartel Honored
-						["g"] = { i(234745) },	-- Bilgewater's Trove (CI!) (Green)
+						["groups"] = { i(234745) },	-- Bilgewater's Trove (CI!) (Green)
 					}),
 					q(88871, {	-- Revered with the Bilgewater Cartel
 						["minReputation"] = { FACTION_TWW_BILGEWATER_CARTEL, REVERED },	-- Bilgewater Cartel Revered
-						["g"] = { i(235258) },	-- Bilgewater's Trove (CI!) (Blue)
+						["groups"] = { i(235258) },	-- Bilgewater's Trove (CI!) (Blue)
 					}),
 					q(88872, {	-- Exalted with the Bilgewater Cartel
 						["minReputation"] = { FACTION_TWW_BILGEWATER_CARTEL, EXALTED },	-- Bilgewater Cartel Exalted
-						["g"] = { i(235259) },	-- Bilgewater's Trove (CI!) (Epic)
+						["groups"] = { i(235259) },	-- Bilgewater's Trove (CI!) (Epic)
 					}),
 					q(85806, {	-- Exalted with the Bilgewater Cartel (Paragon)
 						["minReputation"] = { FACTION_TWW_BILGEWATER_CARTEL, EXALTED },	-- Bilgewater Cartel Exalted
 						["isRepeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(237132, {	-- Bilgewater Trove (Paragon)
 								i(234741),	-- Miscellaneous Mechanica
 								i(229957),	-- Bilgewater Bombardier (MOUNT!)
@@ -401,7 +401,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				faction(FACTION_TWW_BLACKWATER_CARTEL),	-- Blackwater Cartel
 				n(231405, {	-- Boatswain Hardee <Blackwater Quartermaster>
 					["coord"] = { 63.4, 16.7, UNDERMINE },
-					["g"] = bubbleDownClassicRep(FACTION_TWW_BLACKWATER_CARTEL, {
+					["groups"] = bubbleDownClassicRep(FACTION_TWW_BLACKWATER_CARTEL, {
 						{		-- Neutral
 						}, {	-- Friendly
 							i(236763, {	-- Finder's Fee
@@ -441,20 +441,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				},{
 					q(88876, {	-- Honored with the Blackwater Cartel
 						["minReputation"] = { FACTION_TWW_BLACKWATER_CARTEL, HONORED },	-- Blackwater Cartel Honored
-						["g"] = { i(234744) },	-- Blackwater's Trove (CI!) (Green)
+						["groups"] = { i(234744) },	-- Blackwater's Trove (CI!) (Green)
 					}),
 					q(88877, {	-- Revered with the Blackwater Cartel
 						["minReputation"] = { FACTION_TWW_BLACKWATER_CARTEL, REVERED },	-- Blackwater Cartel Revered
-						["g"] = { i(235260) },	-- Blackwater's Trove (CI!) (Blue)
+						["groups"] = { i(235260) },	-- Blackwater's Trove (CI!) (Blue)
 					}),
 					q(88878, {	-- Exalted with the Blackwater Cartel
 						["minReputation"] = { FACTION_TWW_BLACKWATER_CARTEL, EXALTED },	-- Blackwater Cartel Exalted
-						["g"] = { i(235261) },	-- Blackwater's Trove (CI!) (Purple)
+						["groups"] = { i(235261) },	-- Blackwater's Trove (CI!) (Purple)
 					}),
 					q(85807, {	-- Exalted with the Blackwater Cartel (Paragon)
 						["minReputation"] = { FACTION_TWW_BLACKWATER_CARTEL, EXALTED },	-- Blackwater Cartel Exalted
 						["isRepeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(237135, {	-- Blackwater's Trove (Paragon)
 								i(234741),	-- Miscellaneous Mechanica
 								i(229937),	-- Blackwater Bonecrusher (MOUNT!)
@@ -467,7 +467,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				faction(FACTION_TWW_STEAMWHEEDLE_CARTEL),	-- Steamwheedle Cartel
 				n(231408, {	-- Lab Assistant Laszly <Steamwheedle Quartermaster>
 					["coord"] = { 27.5, 72.8, UNDERMINE },
-					["g"] = bubbleDownClassicRep(FACTION_TWW_STEAMWHEEDLE_CARTEL, {
+					["groups"] = bubbleDownClassicRep(FACTION_TWW_STEAMWHEEDLE_CARTEL, {
 						{		-- Neutral
 						}, {	-- Friendly
 							i(236689, {	-- Finder's Fee
@@ -507,20 +507,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				},{
 					q(88873, {	-- Honored with the Steamwheedle Cartel
 						["minReputation"] = { FACTION_TWW_STEAMWHEEDLE_CARTEL, HONORED },	-- Steamwheedle Cartel Honored
-						["g"] = { i(235262) },	-- Steamwheedle's Trove (CI!) (Green)
+						["groups"] = { i(235262) },	-- Steamwheedle's Trove (CI!) (Green)
 					}),
 					q(88874, {	-- Revered with the Steamwheedle Cartel
 						["minReputation"] = { FACTION_TWW_STEAMWHEEDLE_CARTEL, REVERED },	-- Steamwheedle Cartel Revered
-						["g"] = { i(234743) },	-- Steamwheedle's Trove (CI!) (Blue)
+						["groups"] = { i(234743) },	-- Steamwheedle's Trove (CI!) (Blue)
 					}),
 					q(88875, {	-- Exalted with the Steamwheedle Cartel
 						["minReputation"] = { FACTION_TWW_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamwheedle Cartel Exalted
-						["g"] = { i(235263) },	-- Steamwheedle's Trove (CI!) (Purple)
+						["groups"] = { i(235263) },	-- Steamwheedle's Trove (CI!) (Purple)
 					}),
 					q(85809, {	-- Exalted with the Steamwheedle Cartel (Paragon)
 						["minReputation"] = { FACTION_TWW_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamwheedle Cartel Exalted
 						["isRepeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(237134, {	-- Steamwheedle Trove (Paragon)
 								i(234741),	-- Miscellaneous Mechanica
 								i(229943),	-- Steamwheedle Supplier (MOUNT!)
@@ -533,7 +533,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				faction(FACTION_TWW_VENTURE_CO),	-- Venture Co
 				n(231407, {	-- Shredz the Scrapper <Venture Quartermaster>
 					["coord"] = { 53.3, 72.7, UNDERMINE },
-					["g"] = bubbleDownClassicRep(FACTION_TWW_VENTURE_CO, {
+					["groups"] = bubbleDownClassicRep(FACTION_TWW_VENTURE_CO, {
 						{		-- Neutral
 						}, {	-- Friendly
 							i(236765, {	-- Finder's Fee
@@ -573,20 +573,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				},{
 					q(88879, {	-- Honored with the Venture Co
 						["minReputation"] = { FACTION_TWW_VENTURE_CO, HONORED },	-- Venture Co Honored
-						["g"] = { i(234746) },	-- Venture Co.'s Trove (CI!) (Green)
+						["groups"] = { i(234746) },	-- Venture Co.'s Trove (CI!) (Green)
 					}),
 					q(88880, {	-- Revered with the Venture Co
 						["minReputation"] = { FACTION_TWW_VENTURE_CO, REVERED },	-- Venture Co Revered
-						["g"] = { i(235264) },	-- Venture Co.'s Trove (CI!) (Blue)
+						["groups"] = { i(235264) },	-- Venture Co.'s Trove (CI!) (Blue)
 					}),
 					q(88881, {	-- Exalted with the Venture Co
 						["minReputation"] = { FACTION_TWW_VENTURE_CO, EXALTED },	-- Venture Co Exalted
-						["g"] = { i(235265) },	-- Venture Co.'s Trove (CI!) (Purple)
+						["groups"] = { i(235265) },	-- Venture Co.'s Trove (CI!) (Purple)
 					}),
 					q(85810, {	-- Exalted with the Venture Co (Paragon)
 						["minReputation"] = { FACTION_TWW_VENTURE_CO, EXALTED },	-- Venture Co Exalted
 						["isRepeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(237133, {	-- Venture Co Trove (Paragon)
 								i(234741),	-- Miscellaneous Mechanica
 								i(229951),	-- Venture Co-ordinator (MOUNT!)

@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 					{ 62.93, 26.58, STORMSONG_VALLEY },	-- The Hive
 					{ 63.2, 28.5, STORMSONG_VALLEY },	-- First Jelly
 				},
-				["g"] = {
+				["groups"] = {
 					n(FACTIONS, {
 						faction(FACTION_HONEYBACK_HARVESTER, {	-- Honeyback Harvester
 							["races"] = ALLIANCE_ONLY,
@@ -31,7 +31,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 						--	["cr"] = 155172,	-- Trapdoor Bee Hunter
-							["g"] = {
+							["groups"] = {
 								i(172145),	-- Unremarkable Spider-Fang
 							},
 						}),
@@ -40,7 +40,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 						--	["cr"] = 155171,	-- The Hivekiller
-							["g"] = {
+							["groups"] = {
 								i(172144),	-- Glittering Stinger
 							},
 						}),
@@ -49,7 +49,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 						--	["cr"] = 155055,	-- Gurg the Hivethief
-							["g"] = {
+							["groups"] = {
 								i(172147),	-- Nugget Honey
 							},
 						}),
@@ -57,7 +57,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							["provider"] = { "n", 155745 },	-- Honeyback Harvester
 							["coord"] = { 62.5, 26.3, STORMSONG_VALLEY },
 							["races"] = ALLIANCE_ONLY,
-							["g"] = {
+							["groups"] = {
 								i(170069, {	-- Honeyback Harvester (MOUNT!)
 									["races"] = ALLIANCE_ONLY,
 								}),
@@ -68,7 +68,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 						--	["cr"] = 155176,	-- Old Nasha
-							["g"] = {
+							["groups"] = {
 								i(172146),	-- Glazed Bear Meat
 							},
 						}),
@@ -77,7 +77,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 						--	["cr"] = 155059,	-- Yorag the Jelly Feaster
-							["g"] = {
+							["groups"] = {
 								i(172143),	-- Perforated Spiral Horn
 							},
 						}),
@@ -94,7 +94,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 						--	["cr"] = 155173,	-- Honeyback Usurper
-							["g"] = {
+							["groups"] = {
 								i(172142),	-- Pilfered Beeswax
 							},
 						}),
@@ -214,7 +214,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							{ 61.18, 29.41, STORMSONG_VALLEY },
 						},
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(169152),	-- Empty Beehive
 							i(168822),	-- Thin Jelly
 						},
@@ -223,7 +223,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 						["description"] = "This is the initial Jelly Deposit you encounter when unlocking the reputation.",
 						["coord"] = { 63.2, 28.5, STORMSONG_VALLEY },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(169106),	-- Thin Jelly
 						},
 					}),
@@ -275,7 +275,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 					n(VENDORS, {
 						n(153393, {	-- Barry
 							["coord"] = { 69.2, 64.2, STORMSONG_VALLEY },
-							["g"] = {
+							["groups"] = {
 								i(169109),	-- Beeholder's Goggles
 								i(169141),	-- Butterfly Net
 								i(169395),	-- Summit Zephyr

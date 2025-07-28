@@ -498,11 +498,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				915,	-- You Scream, I Scream... [Horde - Orc] (removed)
 				-- #endif
 			},
-			-- #if AFTER CATA
-			["maps"] = {
-				86,	-- Orgrimmar: The Drag
-			},
-			-- #endif
 			["coords"] = {
 				-- #if AFTER CATA
 				{ 57.93, 57.63, ORGRIMMAR },	-- Orphan Matron Battlewail
@@ -510,6 +505,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 70.8, 25.6, ORGRIMMAR },	-- Orphan Matron Battlewail
 				-- #endif
 			},
+			-- #if AFTER CATA
+			["maps"] = {
+				86,	-- Orgrimmar: The Drag
+			},
+			-- #endif
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
@@ -674,8 +674,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 22818 },	-- Draenei Orphan
 			},
 			["sourceQuest"] = 10956,	-- The Seat of the Naaru
-			["timeline"] = { ADDED_2_0_1 },
 			["coord"] = { 57.6, 41.2, THE_EXODAR },
+			["timeline"] = { ADDED_2_0_1 },
 			["maps"] = { SHATTRATH_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1992,39 +1992,39 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["isYearly"] = true,
 		}),
 		q(89318, {	-- Bold for a Kobold
-			["sourceQuests"] = 89317,	-- Children's Week in Dornogal
 			["qg"] = 241593,	-- Skibbles
+			["sourceQuests"] = 89317,	-- Children's Week in Dornogal
 			["maps"] = { DORNOGAL },
 			["isYearly"] = true,
-			["g"] = { i(239689) },	-- Khaz Algar Orphan Whistle (QI!)
+			["groups"] = { i(239689) },	-- Khaz Algar Orphan Whistle (QI!)
 		}),
 		q(89319, {	-- The Wondrous Weave
-			["sourceQuest"] = 89318,	-- Bold for a Kobold
 			["qg"] = 241604,	-- Destien
+			["sourceQuest"] = 89318,	-- Bold for a Kobold
 			["maps"] = { HALLOWFALL },
 			["isYearly"] = true,
-			["g"] = { i(240196) },	-- Khaz Algar Orphan Whistle (QI!)
+			["groups"] = { i(240196) },	-- Khaz Algar Orphan Whistle (QI!)
 		}),
 		q(89320, {	-- The Eager Engineer
-			["sourceQuest"] = 89319,	-- The Wondrous Weave
 			["qg"] = 241603,	-- Threadis
+			["sourceQuest"] = 89319,	-- The Wondrous Weave
 			["maps"] = { AZJ_KAHET },
 			["isYearly"] = true,
-			["g"] = { i(240197) },	-- Khaz Algar Orphan Whistle (QI!)
+			["groups"] = { i(240197) },	-- Khaz Algar Orphan Whistle (QI!)
 		}),
 		q(89321, {	-- Recreation for Rooks
-			["sourceQuest"] = 89320,	-- The Eager Engineer
 			["qg"] = 241605,	-- Kitzy
+			["sourceQuest"] = 89320,	-- The Eager Engineer
 			["maps"] = { UNDERMINE },
 			["isYearly"] = true,
-			["g"] = { i(240198) },	-- Khaz Algar Orphan Whistle (QI!)
+			["groups"] = { i(240198) },	-- Khaz Algar Orphan Whistle (QI!)
 		}),
 		q(89322, {	-- A Brighter Tomorrow
-			["sourceQuest"] = 89321,	-- Recreation for Rooks
 			["qg"] = 241732,	-- Ullna <Matron in Training>
+			["sourceQuest"] = 89321,	-- Recreation for Rooks
 			["coord"] = { 55.2, 27.0, DORNOGAL },
 			["isYearly"] = true,
-			["g"] = A_BRIGHTER_TOMORROW_GROUPS,
+			["groups"] = A_BRIGHTER_TOMORROW_GROUPS,
 		}),
 	})),
 	-- #if AFTER 4.1.0.13682
@@ -2097,11 +2097,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 	n(VENDORS, bubbleDown({ ["timeline"] = { ADDED_11_1_5 } }, {
 		n(242651, {	-- Brundia Braidhammer <Toy and Pet Seller>
 			["coord"] = { 58.0, 56.8, STORMWIND_CITY },
-			["g"] = sharedData({ ["cost"] = { {"i", 241215, 1} } }, WELL_LOVED_FIGURINE_VENDOR_GROUP), -- 1x Well-loved Figurine
+			["groups"] = sharedData({ ["cost"] = { {"i", 241215, 1} } }, WELL_LOVED_FIGURINE_VENDOR_GROUP), -- 1x Well-loved Figurine
 		}),
 		n(243031, {	-- Clockwork Assistant
 			["coord"] = { 55.8, 26.6, DORNOGAL },
-			["g"] = {
+			["groups"] = {
 				i(140309, {	-- Prismatic Bauble (TOY!) (More accessible than Mad Merchant)
 					["cost"] = 2500000000,	-- 250,000g
 				}),
@@ -2109,11 +2109,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 		}),
 		n(243032, {	-- Jepetto Joybuzz
 			["coord"] = { 55.8, 26.4, DORNOGAL },
-			["g"] = sharedData({ ["cost"] = { {"i", 241215, 1} } }, WELL_LOVED_FIGURINE_VENDOR_GROUP), -- 1x Well-loved Figurine
+			["groups"] = sharedData({ ["cost"] = { {"i", 241215, 1} } }, WELL_LOVED_FIGURINE_VENDOR_GROUP), -- 1x Well-loved Figurine
 		}),
 		n(242676, {	-- Leial Knitterton <Toy and Pet Seller>
 			["coord"] = { 58.0, 56.8, ORGRIMMAR },
-			["g"] = sharedData({ ["cost"] = { {"i", 241215, 1} } }, WELL_LOVED_FIGURINE_VENDOR_GROUP), -- 1x Well-loved Figurine
+			["groups"] = sharedData({ ["cost"] = { {"i", 241215, 1} } }, WELL_LOVED_FIGURINE_VENDOR_GROUP), -- 1x Well-loved Figurine
 		}),
 	})),
 })));

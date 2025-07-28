@@ -304,12 +304,12 @@ root(ROOTS.Zones, {
 							10663,	-- The Hermit Smith (H)
 						},
 						["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
+						["maps"] = { SHATTRATH_CITY },
 						["cost"] = {
 							{ "i", 23784, 1 },	-- Adamantite Frame
 							{ "i", 23793, 4 },	-- Heavy Knothide Leather
 							{ "i", 30823, 1 },	-- Demon Warding Totem
 						},
-						["maps"] = { SHATTRATH_CITY },
 						["lvl"] = lvlsquish(67, 67, 25),
 					}),
 					q(10628, {	-- Akama
@@ -323,10 +323,10 @@ root(ROOTS.Zones, {
 							{ "n", 21700 },	-- Akama
 							{ "i", 32646 },	-- Medallion of Karabor
 						},
-						["sourceQuest"] = 10707,	-- The Ata'mal Terrace
 						-- #if AFTER WRATH
 						["altQuests"] = { 11052 },	-- Akama's Promise
 						-- #endif
+						["sourceQuest"] = 10707,	-- The Ata'mal Terrace
 						["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
 						["lvl"] = lvlsquish(68, 68, 25),
 						["groups"] = {
@@ -344,8 +344,8 @@ root(ROOTS.Zones, {
 							{ "n", 21700 },	-- Akama
 							{ "i", 32646 },	-- Medallion of Karabor
 						},
-						["sourceQuest"] = 10707,	-- The Ata'mal Terrace
 						["altQuests"] = { 10708 },	-- Akama's Promise
+						["sourceQuest"] = 10707,	-- The Ata'mal Terrace
 						["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
 						["lvl"] = lvlsquish(68, 68, 25),
 						["groups"] = {
@@ -376,13 +376,13 @@ root(ROOTS.Zones, {
 					}),
 					q(10870, {	-- Ally of the Netherwing
 						["qg"] = 22112,	-- Karynaku
-						["sourceQuest"] = 10866,	-- Zuluhed the Whacked
-						["coord"] = { 69.8, 61.4, SHADOWMOON_VALLEY },
-						["_drop"] = { "races" },	-- stop this from being marked as horde only when it is not horde only
 						-- #if AFTER WRATH
 						["altQuests"] = { 10871 },	-- Ally of the Netherwing
 						-- #endif
+						["sourceQuest"] = 10866,	-- Zuluhed the Whacked
+						["coord"] = { 69.8, 61.4, SHADOWMOON_VALLEY },
 						["lvl"] = lvlsquish(70, 70, 25),
+						["_drop"] = { "races" },	-- stop this from being marked as horde only when it is not horde only
 						["groups"] = {
 							i(31492),	-- Claw of the Netherwing Flight
 							i(31491),	-- Netherwing Defender's Shield
@@ -394,11 +394,11 @@ root(ROOTS.Zones, {
 					-- #if AFTER WRATH
 					q(10871, {	-- Ally of the Netherwing
 						["qg"] = 22112,	-- Karynaku
+						["altQuests"] = { 10870 },	-- Ally of the Netherwing
 						["sourceQuest"] = 10866,	-- Zuluhed the Whacked
 						["coord"] = { 69.8, 61.4, SHADOWMOON_VALLEY },
-						["_drop"] = { "races" },	-- stop this from being marked as horde only when it is not horde only
-						["altQuests"] = { 10870 },	-- Ally of the Netherwing
 						["lvl"] = lvlsquish(70, 70, 25),
+						["_drop"] = { "races" },	-- stop this from being marked as horde only when it is not horde only
 						["groups"] = {
 							i(31492),	-- Claw of the Netherwing Flight
 							i(31491),	-- Netherwing Defender's Shield
@@ -721,13 +721,13 @@ root(ROOTS.Zones, {
 						},
 					},
 					q(10634, {	-- Divination: Gorefiend's Armor
-						["qg"] = 21797,	-- Ancient Shadowmoon Spirit
 						["allianceQuestData"] = {
 							["sourceQuest"] = 10644,	-- Teron Gorefiend - Lore and Legend (A)
 						},
 						["hordeQuestData"] = {
 							["sourceQuest"] = 10633,	-- Teron Gorefiend - Lore and Legend (H)
 						},
+						["qg"] = 21797,	-- Ancient Shadowmoon Spirit
 						["coord"] = { 58.2, 70.8, SHADOWMOON_VALLEY },
 						["lvl"] = lvlsquish(67, 67, 25),
 						["groups"] = {
@@ -739,13 +739,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10635, {	-- Divination: Gorefiend's Cloak
-						["qg"] = 21797,	-- Ancient Shadowmoon Spirit
 						["allianceQuestData"] = {
 							["sourceQuest"] = 10644,	-- Teron Gorefiend - Lore and Legend (A)
 						},
 						["hordeQuestData"] = {
 							["sourceQuest"] = 10633,	-- Teron Gorefiend - Lore and Legend (H)
 						},
+						["qg"] = 21797,	-- Ancient Shadowmoon Spirit
 						["coord"] = { 58.2, 70.8, SHADOWMOON_VALLEY },
 						["lvl"] = lvlsquish(67, 67, 25),
 						["groups"] = {
@@ -757,13 +757,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10636, {	-- Divination: Gorefiend's Truncheon
-						["qg"] = 21797,	-- Ancient Shadowmoon Spirit
 						["allianceQuestData"] = {
 							["sourceQuest"] = 10644,	-- Teron Gorefiend - Lore and Legend (A)
 						},
 						["hordeQuestData"] = {
 							["sourceQuest"] = 10633,	-- Teron Gorefiend - Lore and Legend (H)
 						},
+						["qg"] = 21797,	-- Ancient Shadowmoon Spirit
 						["coord"] = { 58.2, 70.8, SHADOWMOON_VALLEY },
 						["lvl"] = lvlsquish(67, 67, 25),
 						["groups"] = {
@@ -1131,8 +1131,8 @@ root(ROOTS.Zones, {
 						["qg"] = 22214,	-- Harbinger Saronen
 						["sourceQuests"] = { 10826, 10653 },	-- Marks of Sargeras (SMV or Shattrath)
 						["coord"] = { 62.2, 29.8, SHADOWMOON_VALLEY },
-						["maxReputation"] = { FACTION_THE_ALDOR, EXALTED },	-- The Aldor, Exalted.
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+						["maxReputation"] = { FACTION_THE_ALDOR, EXALTED },	-- The Aldor, Exalted.
 						["cost"] = { { "i", 30809, 10 } },	-- Mark of Sargeras
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(68, 68, 25),
@@ -1141,8 +1141,8 @@ root(ROOTS.Zones, {
 						["qg"] = 22211,	-- Battlemage Vyara
 						["sourceQuests"] = { 10824, 10656 },	-- Sunfury Signets (SMV or Shattrath)
 						["coord"] = { 56.2, 58.7, SHADOWMOON_VALLEY },
-						["maxReputation"] = { FACTION_THE_SCRYERS, EXALTED },	-- The Scryers, Exalted.
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+						["maxReputation"] = { FACTION_THE_SCRYERS, EXALTED },	-- The Scryers, Exalted.
 						["cost"] = { { "i", 30810, 10 } },	-- Sunfury Signet
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(68, 68, 25),
@@ -1205,8 +1205,8 @@ root(ROOTS.Zones, {
 					q(10571, {	-- Oronu the Elder (The Aldor)
 						["qg"] = 21402,	-- Anchorite Ceyla
 						["sourceQuest"] = 10568,	-- Tablets of Baa'ri (The Aldor)
-						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["coord"] = { 62.6, 28.4, SHADOWMOON_VALLEY },
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["lvl"] = lvlsquish(68, 68, 25),
 						["groups"] = {
 							objective(1, {	-- 0/1 Orders From Akama
@@ -1219,8 +1219,8 @@ root(ROOTS.Zones, {
 					q(10684, {	-- Oronu the Elder (The Scryers)
 						["qg"] = 21955,	-- Arcanist Thelis
 						["sourceQuest"] = 10683,	-- Tablets of Baa'ri (The Scryers)
-						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["coord"] = { 56.2, 59.6, SHADOWMOON_VALLEY },
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["lvl"] = lvlsquish(68, 68, 25),
 						["groups"] = {
 							objective(1, {	-- 0/1 Orders From Akama
@@ -1232,11 +1232,11 @@ root(ROOTS.Zones, {
 					}),
 					q(10622, {	-- Proof of Allegiance
 						["qg"] = 21826,	-- Sanoru
-						["coord"] = { 57.3, 49.5, SHADOWMOON_VALLEY },
 						["sourceQuests"] = {
 							10575,	-- The Warden's Cage (The Aldor)
 							10686,	-- The Warden's Cage (The Scryers)
 						},
+						["coord"] = { 57.3, 49.5, SHADOWMOON_VALLEY },
 						["groups"] = {
 							objective(1, {	-- 0/1 Zandras slain
 								["provider"] = { "n", 21827 },	-- Zandras
@@ -1282,8 +1282,8 @@ root(ROOTS.Zones, {
 					q(10816, {	-- Reclaiming Holy Ground
 						["qg"] = 21822,	-- Vindicator Aluumen
 						["sourceQuest"] = 10619,	-- The Ashtongue Tribe
-						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["coord"] = { 61.2, 29.2, SHADOWMOON_VALLEY },
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["lvl"] = lvlsquish(68, 68, 25),
 						["groups"] = {
 							objective(1, {	-- 0/8 Shadowmoon Slayer slain
@@ -1340,8 +1340,8 @@ root(ROOTS.Zones, {
 						["qg"] = 22214,	-- Harbinger Saronen
 						["sourceQuests"] = { 10826, 10653 },	-- Marks of Sargeras (SMV or Shattrath)
 						["coord"] = { 62.2, 29.8, SHADOWMOON_VALLEY },
-						["maxReputation"] = { FACTION_THE_ALDOR, EXALTED },	-- The Aldor, Exalted.
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+						["maxReputation"] = { FACTION_THE_ALDOR, EXALTED },	-- The Aldor, Exalted.
 						["cost"] = { { "i", 30809, 1 } },	-- Mark of Sargeras
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(68, 68, 25),
@@ -1350,8 +1350,8 @@ root(ROOTS.Zones, {
 						["qg"] = 22211,	-- Battlemage Vyara
 						["sourceQuests"] = { 10824, 10656 },	-- Sunfury Signets (SMV or Shattrath)
 						["coord"] = { 56.2, 58.7, SHADOWMOON_VALLEY },
-						["maxReputation"] = { FACTION_THE_SCRYERS, EXALTED },	-- The Scryers, Exalted.
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+						["maxReputation"] = { FACTION_THE_SCRYERS, EXALTED },	-- The Scryers, Exalted.
 						["cost"] = { { "i", 30810, 1 } },	-- Sunfury Signet
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(68, 68, 25),
@@ -1402,8 +1402,8 @@ root(ROOTS.Zones, {
 					}),
 					q(10824, {	-- Sunfury Signets
 						["qg"] = 22211,	-- Battlemage Vyara
-						["coord"] = { 56.2, 58.7, SHADOWMOON_VALLEY },
 						["sourceQuest"] = 10552,	-- Allegiance to the Scryers
+						["coord"] = { 56.2, 58.7, SHADOWMOON_VALLEY },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["cost"] = { { "i", 30810, 10 } },	-- Sunfury Signet
 						["lvl"] = lvlsquish(68, 68, 25),
@@ -1443,8 +1443,8 @@ root(ROOTS.Zones, {
 					q(10568, {	-- Tablets of Baa'ri (The Aldor)
 						["qg"] = 21402,	-- Anchorite Ceyla
 						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
-						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["coord"] = { 62.6, 28.4, SHADOWMOON_VALLEY },
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["lvl"] = lvlsquish(68, 68, 25),
 						["groups"] = {
 							objective(1, {	-- 0/12 Baa'ri Tablet Fragment
@@ -1516,8 +1516,8 @@ root(ROOTS.Zones, {
 					q(11047, {	-- The Apprentice's Request
 						["qg"] = 23280,	-- Agadai
 						["coord"] = { 52.0, 54.4, BLADES_EDGE_MOUNTAINS },
-						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(67, 67, 20),
 					}),
 					q(10606, {	-- The Art of Fel Reaver Maintenance (A)
@@ -1577,8 +1577,8 @@ root(ROOTS.Zones, {
 					q(10574, {	-- The Ashtongue Corruptors (The Aldor)
 						["qg"] = 21402,	-- Anchorite Ceyla
 						["sourceQuest"] = 10571,	-- Oronu the Elder
-						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["coord"] = { 62.6, 28.4, SHADOWMOON_VALLEY },
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["lvl"] = lvlsquish(68, 68, 25),
 						["groups"] = {
 							objective(1, {	-- 0/1 Eykenen's Medallion Fragment
@@ -1606,8 +1606,8 @@ root(ROOTS.Zones, {
 					q(10685, {	-- The Ashtongue Corruptors (The Scryers)
 						["qg"] = 21955,	-- Arcanist Thelis
 						["sourceQuest"] = 10684,	-- Oronu the Elder
-						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["coord"] = { 56.2, 59.6, SHADOWMOON_VALLEY },
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["lvl"] = lvlsquish(68, 68, 25),
 						["groups"] = {
 							objective(1, {	-- 0/1 Eykenen's Medallion Fragment
@@ -1635,8 +1635,8 @@ root(ROOTS.Zones, {
 					q(10619, {	-- The Ashtongue Tribe
 						["qg"] = 21822,	-- Vindicator Aluumen
 						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
-						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["coord"] = { 61.2, 29.2, SHADOWMOON_VALLEY },
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["lvl"] = lvlsquish(68, 68, 25),
 						["groups"] = {
 							objective(1, {	-- 0/3 Ashtongue Handler slain
@@ -1870,8 +1870,8 @@ root(ROOTS.Zones, {
 					q(10817, {	-- The Great Retribution
 						["qg"] = 21953,	-- Varen the Reclaimer
 						["sourceQuest"] = 10807,	-- The Ashtongue Broken
-						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["coord"] = { 54.7, 58.1, SHADOWMOON_VALLEY },
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["lvl"] = lvlsquish(68, 68, 25),
 						["groups"] = {
 							objective(1, {	-- 0/8 Shadowmoon Slayer slain
@@ -1899,8 +1899,8 @@ root(ROOTS.Zones, {
 					q(10681, {	-- The Hand of Gul'dan (H)
 						["qg"] = 21938,	-- Earthmender Splinthoof
 						["coord"] = { 28.4, 26.5, SHADOWMOON_VALLEY },
-						["isBreadcrumb"] = true,	-- for Enraged Spirits of Fire and Earth
 						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,	-- for Enraged Spirits of Fire and Earth
 						["lvl"] = lvlsquish(68, 68, 25),
 					}),
 					q(10662, {	-- The Hermit Smith (A)
@@ -2091,15 +2091,15 @@ root(ROOTS.Zones, {
 					q(10575, {	-- The Warden's Cage (The Aldor)
 						["qg"] = 21402,	-- Anchorite Ceyla
 						["sourceQuest"] = 10574,	-- The Ashtongue Corruptors
-						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["coord"] = { 62.6, 28.4, SHADOWMOON_VALLEY },
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["lvl"] = lvlsquish(68, 68, 25),
 					}),
 					q(10686, {	-- The Warden's Cage (The Scryers)
 						["qg"] = 21955,	-- Arcanist Thelis
 						["sourceQuest"] = 10685,	-- The Ashtongue Corruptors
-						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["coord"] = { 56.2, 59.6, SHADOWMOON_VALLEY },
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["lvl"] = lvlsquish(68, 68, 25),
 					}),
 					q(10808, {	-- Thwart the Dark Conclave
@@ -2336,13 +2336,13 @@ root(ROOTS.Zones, {
 					}),
 					q(10866, {	-- Zuluhed the Whacked
 						["qg"] = 22112,	-- Karynaku
-						["sourceQuest"] = 10858,	-- Karynaku
-						["coord"] = { 69.8, 61.4, SHADOWMOON_VALLEY },
-						["_drop"] = { "races" },	-- stop this from being marked as horde only when it is not horde only
 						-- #if AFTER WRATH
 						["altQuests"] = { 10872 },	-- Zuluhed the Whacked
 						-- #endif
+						["sourceQuest"] = 10858,	-- Karynaku
+						["coord"] = { 69.8, 61.4, SHADOWMOON_VALLEY },
 						["lvl"] = lvlsquish(70, 70, 25),
+						["_drop"] = { "races" },	-- stop this from being marked as horde only when it is not horde only
 						["groups"] = {
 							objective(1, {	-- Karynaku freed
 								["providers"] = {
@@ -2361,11 +2361,11 @@ root(ROOTS.Zones, {
 					-- #if AFTER WRATH
 					q(10872, {	-- Zuluhed the Whacked
 						["qg"] = 22112,	-- Karynaku
+						["altQuests"] = { 10866 },	-- Zuluhed the Whacked
 						["sourceQuest"] = 10858,	-- Karynaku
 						["coord"] = { 69.8, 61.4, SHADOWMOON_VALLEY },
-						["_drop"] = { "races" },	-- stop this from being marked as horde only when it is not horde only
-						["altQuests"] = { 10866 },	-- Zuluhed the Whacked
 						["lvl"] = lvlsquish(70, 70, 25),
+						["_drop"] = { "races" },	-- stop this from being marked as horde only when it is not horde only
 						["groups"] = {
 							objective(1, {	-- Karynaku freed
 								["providers"] = {

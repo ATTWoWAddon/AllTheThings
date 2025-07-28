@@ -285,11 +285,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4881, {	-- Assassination Plot
 					["provider"] = { "i", 12564 },	-- Assassination Note
-					["description"] = "The item that starts this quest is dropped by Galak Messengers.",
 					["coord"] = { 21.2, 32, THOUSAND_NEEDLES },
+					["description"] = "The item that starts this quest is dropped by Galak Messengers.",
 					["timeline"] = { REMOVED_4_0_3 },
-					["cr"] = 10617,	-- Galak Messenger
 					["races"] = HORDE_ONLY,
+					["cr"] = 10617,	-- Galak Messenger
 					["lvl"] = 23,
 				}),
 				q(1118, {	-- Back to Booty Bay
@@ -1186,8 +1186,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(27324, {	-- Grimtotem Chiefs: Grundig Darkcloud [H]
 					["qg"] = 45278,	-- Freewind Brave
 					["sourceQuest"] = 27319,	-- Grimtotem Chiefs: Elder Stormhoof [H]
-					["timeline"] = { ADDED_4_0_3 },
 					["coord"] = { 39.0, 41.1, THOUSAND_NEEDLES },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Grundig Darkcloud slain
@@ -1341,12 +1341,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25660, {	-- Haunted
 					["qg"] = 41058,	-- Spirit of Tony Two-Tusk (mobileNPC)
-					["description"] = "The Spirit of Tony Two-Tusk will appear and start haunting you shortly after you complete quest |cFFFFD700Two-Tusk Takedown|r.",
 					["sourceQuests"] = {
 						25627,	-- Two-Tusk Takedown [A]
 						25628,	-- Two-Tusk Takedown [H]
 					},
 					["coord"] = { 91.7, 78.9, THOUSAND_NEEDLES },	-- can be picked up anywhere in the Southsea Holdfast, but this is where it first shows up
+					["description"] = "The Spirit of Tony Two-Tusk will appear and start haunting you shortly after you complete quest |cFFFFD700Two-Tusk Takedown|r.",
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(5762, {	-- Hemet Nesingwary
@@ -1649,13 +1649,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "i", 5877 },	-- Cracked Silithid Carapace
 					["coord"] = { 70.2, 87, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = HORDE_ONLY,
 					["crs"] = {
 						4133,	-- Silithid Hive Drone
 						4130,	-- Silithid Searcher
 						4131,	-- Silithid Invader
 						4132,	-- Silithid Ravager
 					},
-					["races"] = HORDE_ONLY,
 					["lvl"] = 28,
 					["groups"] = {
 						objective(1, {	-- 0/1 Silithid Heart
@@ -2578,19 +2578,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 				}),
 				q(28143, {	-- To the Withering
-					-- This quest gets marked as completed when you complete 28142
 					["qg"] = 47580,	-- Lakota Windsong
-					["description"] = "This quest is offered as a replacement to |cFFFFD700To the Withering|r (28142) if you happen to abandon it.",
 					["sourceQuest"] = 28140,	-- The Elder Crone
 					["coord"] = { 30.5, 49.3, THOUSAND_NEEDLES },
+					["description"] = "This quest is offered as a replacement to |cFFFFD700To the Withering|r (28142) if you happen to abandon it.",
 					["timeline"] = { ADDED_4_0_3 },
+					-- This quest gets marked as completed when you complete 28142
 				}),
 				q(28142, {	-- To the Withering
-					-- This quest gets marked as completed when you complete 28143
-					["description"] = "This quest pops-up and gets Auto-Accepted when you complete the quest |cFFFFD700The Elder Crone|r (28140).\nIf you happen to abandon this quest, you can get its replacement, |cFFFFD700To the Withering|r (28143), from Lakota Windsong.",
 					["sourceQuest"] = 28140,	-- The Elder Crone
 					["coord"] = { 35.9, 60.7, THOUSAND_NEEDLES },
+					["description"] = "This quest pops-up and gets Auto-Accepted when you complete the quest |cFFFFD700The Elder Crone|r (28140).\nIf you happen to abandon this quest, you can get its replacement, |cFFFFD700To the Withering|r (28143), from Lakota Windsong.",
 					["timeline"] = { ADDED_4_0_3 },
+					-- This quest gets marked as completed when you complete 28143
 				}),
 				q(27275, {	-- Together Again [A]
 					["qg"] = 41444,	-- Brienna Starglow

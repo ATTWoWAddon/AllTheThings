@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		n(VENDORS, {
 			n(222561, {	-- Agmera <Dungeon Exploration Equipment>
 				["coord"] = { 53.8, 38.2, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					i(225948, {	-- Harbinger's Equipment Chest
 						["timeline"] = { ADDED_11_0_5, REMOVED_11_1_0 },
 						["cost"] = {{ "c", 3008, 350 }},	-- 350x Valorstones
@@ -57,7 +57,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(219036, {	-- Ardgaz <Token Exchange>
 				["coord"] = { 54.8, 42.5, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					-- All seasons
 					i(226814, {	-- Chest of Gold
 						["cost"] = {
@@ -120,7 +120,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(240481, {	-- Consultant Wrexxle <Undermine Dealer>
 				["coord"] = { 52.0, 46.0, DORNOGAL },
 				["timeline"] = { ADDED_11_1_5 },
-				["g"] = appendAllGroups(
+				["groups"] = appendAllGroups(
 					sharedData({	-- Mythic
 						["cost"] = {{ "i", 237502, 3 }},	-- 3x Puzzling Cartel Chip
 						["modID"] = 6,
@@ -269,7 +269,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(248341, {	-- Dip Stickshift <Memories-R-Us>				
 				["coord"] = { 48.1, 45.4, DORNOGAL },
 				["timeline"] = { ADDED_11_2_0 },
-				["g"] = {
+				["groups"] = {
 					i(247864),	-- Memory of Arthas
 					i(247865),	-- Memory of Garrosh
 					i(247866),	-- Memory of Guldan
@@ -284,7 +284,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(219230, {	-- Erani <Pet Charm Trader>
 				["coord"] = { 58.5, 64.9, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					i(224101, {	-- Brown Leafbug (PET!)
 						["cost"] = {{ "i", POLISHED_PET_CHARM, 50 }},
 					}),
@@ -304,7 +304,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(219197, {	-- Griftah <Amazing Amulets>
 				["coord"] = { 62.5, 50.9, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					i(224763),	-- Design: Cubic Blasphemia (RECIPE!)
 					i(228921),	-- Griftah's Heavy-Duty Embellishing Powder
 					i(202046),	-- Lucky Tortollan Charm
@@ -312,7 +312,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(219255, {	-- Karbath <Weapon Trader>
 				["coord"] = { 47.3, 64.8, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					i(227699, {	-- Earthen Ceremonial Chopper
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 500}},
 					}),
@@ -330,7 +330,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(219051, {	-- Lyrendal <Artisan's Consortium Quartermaster>
 				["coord"] = { 59.8, 56.4, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					i(228379, {	-- Design: Captured Starlight (RECIPE!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 					}),
@@ -591,7 +591,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(224294, {	-- Osidion <Ensemble Vendor>
 				["description"] = "Cost is based on if a Earth-Encrusted Gem is in your inventory. If none then the ensembles are available for Resonance Crystals.",
 				["coord"] = { 57.3, 60.8, DORNOGAL },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {
 						{"i", 223951, 1},	-- 1x Earth-Encrusted Gem
 						{"c", RESONANCE_CRYSTALS, 9750},
@@ -632,7 +632,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(234906, {	-- Syenite
 				["coord"] = { 58.0, 56.8, DORNOGAL },
 				["timeline"] = { ADDED_11_1_0 },
-				["g"] = {
+				["groups"] = {
 					-- Season 2
 					i(230937),	-- Enchanted Weathered Undermine Crest
 					i(230936),	-- Enchanted Runed Undermine Crest
@@ -657,7 +657,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(219226, {	-- Vaskarn
 				["coord"] = { 52.1, 42.2, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					-- Season 1
 					-- Trade DOWN
 					i(221268, {	-- Pouch of Weathered Harbinger Crests

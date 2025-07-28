@@ -8,13 +8,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 		["maps"] = {
 			2449,	-- Eco-Dome Al'dani
 		},
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(3107, {	-- Azhiccar
 					["crs"] = { 234893 },	-- Azhiccar
-					["g"] = {
+					["groups"] = {
 						i(242468),	-- Al'dani Attendant's Gauze
 						i(242497),	-- Azhiccaran Parapodia
 						i(242472),	-- Consumed Wastelander's Epaulets
@@ -29,7 +29,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						234933,	-- Taah'bat <The Relentless>
 						237514,	-- A'wazj
 					},
-					["g"] = {
+					["groups"] = {
 						i(242479),	-- Girdle of Absolute Faith
 						i(242483),	-- Greaves of the Wild Pair
 						i(242495),	-- Incorporeal Warpclaw
@@ -41,7 +41,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 				e(3109, {	-- Soul-Scribe
 					["crs"] = { 234935 },	-- Soul-Scribe
-					["g"] = {
+					["groups"] = {
 						ach(42780),	-- Eco-Dome Al'dani
 						i(242490),	-- Ancient Oracle's Caress
 						i(242487),	-- Fatebound Crusader
@@ -57,7 +57,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(3109, {	-- Soul-Scribe
 					["crs"] = { 247283 },	-- Soul-Scribe
-					["g"] = {
+					["groups"] = {
 						ach(42781),	-- Heroic: Eco-Dome Al'dani
 					},
 				}),
@@ -65,7 +65,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(3109, {	-- Soul-Scribe
 					["crs"] = { 247283 },	-- Soul-Scribe
-					["g"] = {
+					["groups"] = {
 						ach(42782),	-- Mythic: Eco-Dome Al'dani
 					},
 				}),

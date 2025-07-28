@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			i(212493),	-- Odd Glob of Wax // objectID 419696 (Waxy Lump)
 			n(215233, {	-- Urthgrafr Riftcaller
 				["coord"] = { 56.9, 16.3, THE_RINGING_DEEPS },
-				["g"] = {
+				["groups"] = {
 					i(212595),	-- Glittering Shard (QS!)/(QI!)
 				},
 			}),

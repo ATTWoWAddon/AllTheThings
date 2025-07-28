@@ -399,9 +399,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26514, {	-- Canyon Romp
 					["qg"] = 344,	-- Magistrate Solomon
-					["description"] = "If you, by any chance, abandon this quest, you can get it back from Magistrate Solomon at the Lakeshire Town Hall.",
 					["sourceQuest"] = 26512,	-- Tuning the Gnomecorder
 					["coord"] = { 28.9, 41.1, REDRIDGE_MOUNTAINS },
+					["description"] = "If you, by any chance, abandon this quest, you can get it back from Magistrate Solomon at the Lakeshire Town Hall.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -419,9 +419,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26714, {	-- Darkblaze, Brood of the Worldbreaker
 					["qg"] = 43733,	-- Colonel Troteman
-					["description"] = "If you, by any chance, abandon this quest, you can get it back from Colonel Troteman at the Keeshan's Post.",
 					["sourceQuest"] = 26713,	-- Showdown at Stonewatch
 					["coord"] = { 60.6, 36.6, REDRIDGE_MOUNTAINS },
+					["description"] = "If you, by any chance, abandon this quest, you can get it back from Colonel Troteman at the Keeshan's Post.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -530,17 +530,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26519, {	-- He Who Controls the Ettins
-					["description"] = "Once obtained, the Quest has to be completed. It can't be abandoned.",
 					["provider"] = { "i", 58898 },	-- Dirt-Stained Scroll (QS!)
 					["sourceQuest"] = 26512,	-- Tuning the Gnomecorder
+					["description"] = "Once obtained, the Quest has to be completed. It can't be abandoned.",
 					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						445,	-- Redridge Alpha
 						446,	-- Redridge Basher
 						580,	-- Redridge Drudger
 						430,	-- Redridge Mystic
 					},
-					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ardo Dirtpaw slain
 							["provider"] = { "n", 711 },	-- Ardo Dirtpaw
@@ -571,8 +571,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "This quest seems to be unobtainable at higher levels, so if you want to collect the transmog from this quest then you'll need to do it early.",
 					-- #ENDIF
 					["timeline"] = { ADDED_4_0_3 },
-					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(14, 14, 11),
 					["groups"] = {
 						i(60689, {	-- Belt of Unsolvable Problems
@@ -640,9 +640,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26573, {	-- His Heart Must Be In It
 					["qg"] = 43221,	-- Colonel Troteman
-					["description"] = "If you, by any chance, abandon this quest, you can get it back from Colonel Troteman at the Lakeshire Town Hall.",
 					["sourceQuest"] = 26571,	-- Weapons of War
 					["coord"] = { 28.7, 40.7, REDRIDGE_MOUNTAINS },
+					["description"] = "If you, by any chance, abandon this quest, you can get it back from Colonel Troteman at the Lakeshire Town Hall.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1050,7 +1050,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						o(204437, {	-- Blackrock Key Pouch
 							["coord"] = { 69.5, 76.3, REDRIDGE_MOUNTAINS },
-							["group"] = { i(59261) },	-- Blackrock Holding Pen Key (QI!)
+							["groups"] = { i(59261) },	-- Blackrock Holding Pen Key (QI!)
 						}),
 					},
 				}),
@@ -1413,9 +1413,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 43611 },	-- John J. Keeshan
 						{ "i", 59522 },	-- Key of Ilgalar (PQI!)
 					},
-					["description"] = "If you, by any chance, abandon this quest, you can get it back from John J. Keeshan at the Shalewind Canyon.",
 					["sourceQuest"] = 26693,	-- The Dark Tower
 					["coord"] = { 77.7, 65.5, REDRIDGE_MOUNTAINS },
+					["description"] = "If you, by any chance, abandon this quest, you can get it back from John J. Keeshan at the Shalewind Canyon.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1522,9 +1522,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26544, {	-- They've Wised Up...
 					["qg"] = 344,	-- Magistrate Solomon
-					["description"] = "If you, by any chance, abandon this quest, you can get it back from Magistrate Solomon at the Lakeshire Town Hall.",
 					["sourceQuest"] = 26514,	-- Canyon Romp
 					["coord"] = { 28.9, 41.1, REDRIDGE_MOUNTAINS },
+					["description"] = "If you, by any chance, abandon this quest, you can get it back from Magistrate Solomon at the Lakeshire Town Hall.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1547,9 +1547,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 43458 },	-- John J. Keeshan
 						{ "i", 60385 },	-- Bravo Company Field Kit (PQI!)
 					},
-					["description"] = "If you, by any chance, abandon this quest, you can get it back from John J. Keeshan at the Camp Everstill.",
 					["sourceQuest"] = 26646,	-- Prisoners of War
 					["coord"] = { 52.5, 55.4, REDRIDGE_MOUNTAINS },
+					["description"] = "If you, by any chance, abandon this quest, you can get it back from John J. Keeshan at the Camp Everstill.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1751,9 +1751,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26545, {	-- Yowler Must Die!
 					["qg"] = 344,	-- Magistrate Solomon
-					["description"] = "If you, by any chance, abandon this quest, you can get it back from Magistrate Solomon at the Lakeshire Town Hall.",
 					["sourceQuest"] = 26544,	-- They've Wised Up...
 					["coord"] = { 28.9, 41.1, REDRIDGE_MOUNTAINS },
+					["description"] = "If you, by any chance, abandon this quest, you can get it back from Magistrate Solomon at the Lakeshire Town Hall.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

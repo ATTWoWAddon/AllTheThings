@@ -35,7 +35,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(51640),	-- Beachhead
 			q(50572, {	-- Bloody Intrusion
-				["g"] = {
+				["groups"] = {
 					i(154724),	-- Ceremonial Torch (QI!)
 				},
 			}),
@@ -59,7 +59,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53323, {	-- Burnished Platinum
 				["requireSkill"] = MINING,
-				["g"] = {
+				["groups"] = {
 					i(163624),	-- Burnished Platinum (QI!)
 				},
 			}),
@@ -71,7 +71,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			})),
 			q(50813, {	-- Cargo Reclamation
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o(282481, {	-- Ransacked Supplies
 						i(158878),	-- Ransacked Supplies (QI!)
 					}),
@@ -79,7 +79,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50962, {	-- Cargo Reclamation
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o(282481, {	-- Ransacked Supplies
 						i(158878),	-- Ransacked Supplies (QI!)
 					}),
@@ -96,14 +96,14 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			petbattle(q(52779)),	-- Crawg in the Bog
 			q(50492),	-- Cursed Chest
 			a(q(50899, {	-- Don't Stalk Me, Troll (A)
-				["g"] = {
+				["groups"] = {
 					a(ach(13026)),	-- 7th Legion Spycatcher
 					i(158924),	-- Portable Revealing Occular (QI!)
 				},
 			})),
 			q(50717, {	-- Don't Stalk Me, Troll (H)
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					h(ach(13025)),	-- Zandalari Spycatcher
 					i(158324),	-- Talanji's Mojo (QI!)
 				},
@@ -116,32 +116,32 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52007, {	-- Engines of War
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160988),	-- Goblin Incendiary Rocket Launcher (QI!)
 				},
 			}),
 			q(53290, {	-- Flourishing Riverbud
 				["requireSkill"] = HERBALISM,
-				["g"] = {
+				["groups"] = {
 					i(163595),	-- Flourishing Riverbud (QI!)
 				},
 			}),
 			q(53289, {	-- Flourishing Sea Stalks
 				["requireSkill"] = HERBALISM,
-				["g"] = {
+				["groups"] = {
 					i(163588),	-- Flourishing Sea Stalk (QI!)
 				},
 			}),
 			q(51172, {	-- Forked Lightning (A)
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(157863),	-- Restored Skycaller Gem (QI!)
 					i(157861),	-- Skycaller Gem Chip (QI!)
 				},
 			}),
 			q(50545, {	-- Forked Lightning (H)
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(157863),	-- Restored Skycaller Gem (QI!)
 					i(157861),	-- Skycaller Gem Chip (QI!)
 				},
@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			})),
 			q(53322, {	-- Gleaming Storm Silver
 				["requireSkill"] = MINING,
-				["g"] = {
+				["groups"] = {
 					i(163623),	-- Gleaming Storm Silver (QI!)
 				},
 			}),
@@ -177,7 +177,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(50506),	-- King Kooba
 			q(50497, {	-- Krag'wa's Favor
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(151040),	-- Chunky Meat (QI!)
 					o(281469, {	-- Raptor's Eggs
 						i(157841),	-- Prime Raptor Egg (QI!)
@@ -192,7 +192,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(50566),	-- Lost Scroll
 			q(53321, {	-- Luminous Monelite
 				["requireSkill"] = MINING,
-				["g"] = {
+				["groups"] = {
 					i(163609),	-- Luminous Monelite (QI!)
 				},
 			}),
@@ -218,7 +218,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53293, {	-- Overgrown Anchor Weed
 				["requireSkill"] = HERBALISM,
-				["g"] = { i(163601) },	-- Overgrown Anchor Weed (QI!)
+				["groups"] = { i(163601) },	-- Overgrown Anchor Weed (QI!)
 			}),
 			q(54671),	-- Overgrown Ancient
 			q(50510),	-- Overstuffed Saurolisk
@@ -242,7 +242,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			})),
 			q(54839, {	-- Rightfully Ours (Faction Assault WQ)
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(166726),	-- Alliance Supplies (QI!)
 				},
 			}),
@@ -253,33 +253,33 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50961, {	-- Save Our Scrolls!
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158176),	-- Intact Tortollan Scroll (QI!)
 				},
 			}),
 			q(50634, {	-- Save Our Scrolls!
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158176),	-- Intact Tortollan Scroll (QI!)
 				},
 			}),
 			q(50521, {	-- Scorched Earth
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(157847),	-- Firestick (QI!)
 				},
 			}),
 			q(51109, {	-- Scorched Earth
-				["g"] = {
+				["groups"] = {
 					i(159745),	-- X-P100D (QI!)
 				},
 			}),
 			q(50512),	-- Scout Skrasniss
 			q(53886, {	-- Self Guided Tour (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					o(310204, {	-- Alliance Strongbox
-						["g"] = { i(165011) },	-- Nazmir Battleplans (QI!)
+						["groups"] = { i(165011) },	-- Nazmir Battleplans (QI!)
 					}),
 				},
 			}),
@@ -292,7 +292,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["description"] = "This rare is only up when its associated world quest is active.",
 					["questID"] = 50467,
 					["coord"] = { 49.8, 67.0, NAZMIR },
-					["g"] = {
+					["groups"] = {
 						i(160973),	-- Accursed Tuskwand
 					},
 				}),
@@ -320,7 +320,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50936, {	-- Survival Strategy
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158193),	-- Diremaw Hide (QI!)
 					i(158192),	-- Pterrordax Wingclaw (QI!)
 					i(158191),	-- Saurid Feather (QI!)
@@ -328,7 +328,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50660, {	-- Survival Strategy
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158193),	-- Diremaw Hide (QI!)
 					i(158192),	-- Pterrordax Wingclaw (QI!)
 					i(158191),	-- Saurid Feather (QI!)
@@ -342,7 +342,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(50474, {	-- The Other Side
 				["races"] = HORDE_ONLY,
 				["lvl"] = 50,
-				["g"] = {
+				["groups"] = {
 					i(157833),	-- Spirit Essence (QI!)
 				},
 			}),
@@ -357,13 +357,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(50514),	-- Totem Maker Jash'ga
 			q(50577, {	-- Unaccounted For
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(159761),	-- Grappling Hook (QI!)
 				},
 			}),
 			q(51176, {	-- Unaccounted For
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(159761),	-- Grappling Hook (QI!)
 				},
 			}),
@@ -381,7 +381,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(52426, {	-- Work Order: Battle Flag: Phalanx Defense
 				["races"] = HORDE_ONLY,
 				["requireSkill"] = TAILORING,
-				["g"] = {
+				["groups"] = {
 					i(162444),	-- Pattern: Battle Flag: Phalanx Defense [Rank 3] (RECIPE!)
 				},
 			}),
@@ -391,7 +391,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(52396, {	-- Work Order: Contract: Talanji's Expedition
 				["races"] = HORDE_ONLY,
 				["requireSkill"] = INSCRIPTION,
-				["g"] = {
+				["groups"] = {
 					i(162368),	-- Technique: Contract: Talanji's Expedition [Rank 3] (RECIPE!)
 				},
 			}),
@@ -404,14 +404,14 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(52360, {	-- Work Order: Enchant Weapon - Coastal Surge
 				["races"] = HORDE_ONLY,
 				["requireSkill"] = ENCHANTING,
-				["g"] = {
+				["groups"] = {
 					i(162315),	-- Formula: Enchant Weapon - Coastal Surge [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52361, {	-- Work Order: Enchant Weapon - Torrent of Elements
 				["races"] = HORDE_ONLY,
 				["requireSkill"] = ENCHANTING,
-				["g"] = {
+				["groups"] = {
 					i(162319),	-- Formula: Enchant Weapon - Torrent of Elements [Rank 3] (RECIPE!)
 				},
 			}),
@@ -424,7 +424,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(52337, {	-- Work Order: Sea Mist Potion
 				["races"] = HORDE_ONLY,
 				["requireSkill"] = ALCHEMY,
-				["g"] = {
+				["groups"] = {
 					i(162259),	-- Recipe: Sea Mist Potion [Rank 3] (RECIPE!)
 				},
 			}),
@@ -443,7 +443,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(52372, {	-- Work Order: XA-1000 Surface Skimmer
 				["races"] = HORDE_ONLY,
 				["requireSkill"] = ENGINEERING,
-				["g"] = {
+				["groups"] = {
 					i(162339),	-- Schematic: XA-1000 Surface Skimmer [Rank 3] (RECIPE!)
 				},
 			}),

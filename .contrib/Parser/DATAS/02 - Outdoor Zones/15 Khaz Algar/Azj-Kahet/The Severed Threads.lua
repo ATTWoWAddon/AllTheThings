@@ -53,11 +53,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}, {	-- RENOWN 9 --
 					q(82431),	-- Unsevered Threads
 					q(85531, {	-- Earth-Encrusted Gem
-						["g"] = { i(223951) },	-- Earth-Encrusted Gem
+						["groups"] = { i(223951) },	-- Earth-Encrusted Gem
 					}),
 				}, {	-- RENOWN 10 --
 					q(82432, {	-- A Gift Handwoven
-						["g"] = { i(218349) },	-- Tabard of the Severed Threads (COSMETIC!)
+						["groups"] = { i(218349) },	-- Tabard of the Severed Threads (COSMETIC!)
 					}),
 				}, {	-- RENOWN 11 --
 				}, {	-- RENOWN 12 --
@@ -84,13 +84,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}, {	-- RENOWN 23 --
 				}, {	-- RENOWN 24 --
 					q(82446, {	-- For What Glimmers in Shadow
-						["g"] = { i(224072) },	-- Enchanted Runed Harbinger Crest
+						["groups"] = { i(224072) },	-- Enchanted Runed Harbinger Crest
 					}),
 				}, {	-- RENOWN 25 --
 					------ Paragon ------
 					q(79196, {	-- Renowned with The Severed Threads
 						["isRepeatable"] = true,
-						["g"] = { i(225247) },	-- Overflowing Severed Threads Trove
+						["groups"] = { i(225247) },	-- Overflowing Severed Threads Trove
 					}),
 				},
 			}))),
@@ -121,7 +121,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["provider"] = { "n", 229184 },	-- Aspirant Kiipka
 							["coord"] = { 55.8, 42.2, AZJ_KAHET },
 							["isRepeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								i(226045),	-- The General's Trove
 							},
 						}),
@@ -129,7 +129,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["provider"] = { "n", 224733 },	-- Tulumun <Assistant to the Executor>
 							["coord"] = { 56.2, 42.2, AZJ_KAHET },
 							["isRepeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								i(226100),	-- The Vizier's Trove
 							},
 						}),
@@ -137,7 +137,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["provider"] = { "n", 224733 },	-- Bobbin <Eye of the Weaver>
 							["coord"] = { 56.4, 43.2, AZJ_KAHET },
 							["isRepeatable"] = true,
-							["g"] = {
+							["groups"] = {
 								i(226103),	-- The Weaver's Trove
 							},
 						}),
@@ -172,7 +172,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["provider"] = { "n", 226019 },	-- Spindle
 							["minReputation"] = { FACTION_THE_WEAVER, 4 },
 							["coord"] = { 87.7, 59.3, NERUBAR },
-							["g"] = {
+							["groups"] = {
 								i(225341),	-- Incriminating Dagger (QI!)
 								i(225344),	-- Incriminating Evidence (QI!)
 								i(225343),	-- Incriminating Journal Entry (QI!)
@@ -190,7 +190,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["provider"] = { "n", 227428 },	-- Widow Arak'nai
 							["minReputation"] = { FACTION_THE_WEAVER, 7 },
 							["coord"] = { 62.9, 12.1, NERUBAR_LOWER },
-							["g"] = {
+							["groups"] = {
 								o(453716, {	-- Cache of Expensive Libations
 									["coord"] = { 78.0, 53.0, NERUBAR },
 									["groups"] = {
@@ -204,7 +204,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["provider"] = { "n", 216298 },	-- Meesk the Venomtongue
 							["minReputation"] = { FACTION_THE_WEAVER, 7 },
 							["coord"] = { 62.8, 22.9, NERUBAR },
-							["g"] = {
+							["groups"] = {
 								ach(40832),	-- Leave it to Weaver
 								i(226103),	-- The Weaver's Trove
 							},
@@ -221,7 +221,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["provider"] = { "n", 223760 },	-- Ukos'via <Historical Spinner>
 							["minReputation"] = { FACTION_THE_GENERAL, 4 },
 							["coord"] = { 40.9, 33.5, NERUBAR },
-							["g"] = {
+							["groups"] = {
 								i(225637),	-- Poisoned Dagger (QI!)
 								i(225635),	-- Zev'kall's Attrition Log (QI!)
 							},
@@ -243,7 +243,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["provider"] = { "n", 224547 },	-- Anub'azal <Lord of Heritage Forces>
 							["minReputation"] = { FACTION_THE_GENERAL, 7 },
 							["coord"] = { 46.0, 24.2, AZJ_KAHET },
-							["g"] = {
+							["groups"] = {
 								ach(40833),	-- The General's Salute
 								i(226045),	-- The General's Trove
 							},
@@ -254,7 +254,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["provider"] = { "n", 208782 },	-- Executor Nizrek
 							["minReputation"] = { FACTION_THE_VIZIER, 4 },
 							["coord"] = { 52.9, 46.2, NERUBAR },
-							["g"] = {
+							["groups"] = {
 								i(224799),	-- Nizrek's potion (QI!)
 							},
 						}),
@@ -284,7 +284,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["provider"] = { "n", 225024 },	-- Executor Nizrek
 							["minReputation"] = { FACTION_THE_VIZIER, 7 },
 							["coord"] = { 54.7, 33.2, NERUBAR },
-							["g"] = {
+							["groups"] = {
 								ach(40835),	-- Vizier than Ever
 								i(226100),	-- The Vizier's Trove
 							},
@@ -306,21 +306,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(81491, {	-- Armaments: Arbalests
 						["provider"] = { "n", 224171 },	-- Eirzay
 						["coord"] = { 61.3, 36.2, NERUBAR_LOWER },
-						["g"] = {
+						["groups"] = {
 							o(439531),	-- Unattended Arbalest
 						},
 					}),
 					q(81492, {	-- Armaments: Smithing Tools
 						["provider"] = { "n", 224172 },	-- Eirzay
 						["coord"] = { 54.5, 63.6, AZJ_KAHET },
-						["g"] = {
+						["groups"] = {
 							o(439532),	-- Sureki Smithing Tool
 						},
 					}),
 					q(81477, {	-- Armaments: Weaponry
 						["provider"] = { "n", 224170 },	-- Eirzay
 						["coord"] = { 58.1, 39.3, NERUBAR_LOWER },
-						["g"] = {
+						["groups"] = {
 							o(439474),	-- Queensguard Weaponry
 						},
 					}),
@@ -360,7 +360,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(81494, {	-- Relics of War: Rak-Zakaz
 						["provider"] = { "n", 224176 },	-- Eirzay
 						["coord"] = { 61.4, 24.1, NERUBAR_LOWER },
-						["g"] = {
+						["groups"] = {
 							o(454176, {	-- Kaheti Armaments
 								i(225738),	-- Kaheti Warblade (QI!)
 							}),
@@ -369,7 +369,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(81478, {	-- Relics of War: The Ruptired Lake
 						["provider"] = { "n", 224173 },	-- Eirzay
 						["coord"] = { 36.4, 49.2, AZJ_KAHET },
-						["g"] = {
+						["groups"] = {
 							o(439562, {	-- Fallen Aeroknight
 								["coords"] = {
 									{ 26.5, 42.1, AZJ_KAHET },
@@ -388,7 +388,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(81493, {	-- Relics of War: The Salien Gutter Conflict
 						["provider"] = { "n", 224174 },	-- Eirzay
 						["coord"] = { 63.8, 26.3, NERUBAR_LOWER },
-						["g"] = {
+						["groups"] = {
 							i(219429),	-- Ritual Kobyss Spear (QI!)
 						},
 					}),
@@ -408,7 +408,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(81495, {	-- Requisitions: Brightblooms
 						["provider"] = { "n", 224178 },	-- Ghos'opp
 						["coord"] = { 64.2, 21.2, NERUBAR },
-						["g"] = {
+						["groups"] = {
 							o(437767, {	-- Crate of Hallowfall Herbs
 								i(219225),	-- Crystalline Brightbloom (QI!)
 							}),
@@ -417,7 +417,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(81496, {	-- Requisitions: Fangpetals
 						["provider"] = { "n", 224179 },	-- Ghos'opp
 						["coord"] = { 49.2, 51.8, NERUBAR },
-						["g"] = {
+						["groups"] = {
 							o(437769, {	-- Fragrant Fangpetal
 								i(219226),	-- Fragrant Fangpetal (QI!)
 							}),
@@ -426,7 +426,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(81479, {	-- Requisitions: Umbrashrooms
 						["provider"] = { "n", 224177 },	-- Ghos'opp
 						["coord"] = { 52.0, 16.6, NERUBAR },
-						["g"] = {
+						["groups"] = {
 							o(437726, {	-- Luminescent Umbrashroom
 								i(219212),	-- Luminescent Umbrashroom (QI!)
 							}),
@@ -435,21 +435,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(81506, {	-- Sabotage: Alchemical Instruments
 						["provider"] = { "n", 224186 },	-- Ghos'opp
 						["coord"] = { 54.5, 15.5, AZJ_KAHET },
-						["g"] = {
+						["groups"] = {
 							o(438039),	-- Alchemical Instruments
 						},
 					}),
 					q(81481, {	-- Sabotage: Transformatory Vessels
 						["provider"] = { "n", 224183 },	-- Ghos'opp
 						["coord"] = { 64.5, 87.3, AZJ_KAHET },
-						["g"] = {
+						["groups"] = {
 							o(438037),	-- Black Blood Vessel
 						},
 					}),
 					q(81505, {	-- Sabotage: Venomancers
 						["provider"] = { "n", 224184 },	-- Ghos'opp
 						["coord"] = { 39.5, 51.4, AZJ_KAHET },
-						["g"] = {
+						["groups"] = {
 							o(438038),	-- Venomancy Flask
 						},
 					}),
@@ -457,7 +457,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["provider"] = { "n", 224187 },	-- Ghos'opp
 						["coord"] = { 50.6, 47.1, NERUBAR },
 						["crs"] = { 221072 },	-- Unwitting Hollowguard
-						["g"] = {
+						["groups"] = {
 							i(219323),	-- Gelatinous Unguent (QI!)
 						},
 					}),
@@ -465,7 +465,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["provider"] = { "n", 224189 },	-- Ghos'opp
 						["coord"] = { 30.9, 23.0, NERUBAR },
 						["crs"] = { 226580 },	-- Unwitting Skeinsguard
-						["g"] = {
+						["groups"] = {
 							i(219322),	-- Malodorous Philter (QI!)
 						},
 					}),
@@ -473,7 +473,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["provider"] = { "n", 224188 },	-- Ghos'opp
 						["coord"] = { 47.9, 9.7, NERUBAR },
 						["crs"] = { 226579 },	-- Unwitting Umbraguard
-						["g"] = {
+						["groups"] = {
 							i(219324),	-- Roiling Elixir (QI!)
 						},
 					}),
@@ -481,14 +481,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["provider"] = { "n", 224182 },	-- Ghos'opp
 						["coord"] = { 65.1, 78.8, AZJ_KAHET },
 						["crs"] = { 221060 },	-- Pustulant Feaster
-						["g"] = {
+						["groups"] = {
 							i(219228),	-- Fetid Slime Sac (QI!)
 						},
 					}),
 					q(81497, {	-- Wild Reagents: Salien Gutters
 						["provider"] = { "n", 224181 },	-- Ghos'opp
 						["coord"] = { 61.1, 74.4, AZJ_KAHET },
-						["g"] = {
+						["groups"] = {
 							i(219227),	-- Swollen Kobyss Eye (QI!)
 						},
 					}),
@@ -499,7 +499,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							220764,	-- Unsettled Snail
 							220765,	-- Juvenile Snail
 						},
-						["g"] = {
+						["groups"] = {
 							i(219254),	-- Writhing Antennae (QI!)
 						},
 					}),
@@ -519,7 +519,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(80573, {	-- Dropping Eaves: Spoils of War
 						["provider"] = { "n", 224193 },	-- Ru'murh
 						["coord"] = { 55.0, 26.6, NERUBAR },
-						["g"] = {
+						["groups"] = {
 							o(437205, {	-- Sureki War Chest
 								["coord"] = { 67.3, 33.0, NERUBAR },
 								["groups"] = {
@@ -533,7 +533,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(81471, {	-- Dropping Eaves: Saving the Past
 						["provider"] = { "n", 224195 },	-- Ru'murh
 						["coord"] = { 73.3, 50.9, NERUBAR },
-						["g"] = {
+						["groups"] = {
 							n(221116, {	-- Mug of Screamer Venom
 								["coord"] = { 77.7, 53.8, NERUBAR },
 							}),
@@ -546,7 +546,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(81470, {	-- Dropping Eaves: Thieving Weave
 						["provider"] = { "n", 224194 },	-- Ru'murh
 						["coord"] = { 70.3, 31.8, NERUBAR },
-						["g"] = {
+						["groups"] = {
 							o(439291, {	-- Repossessed Goods
 								["coord"] = { 72.1, 45.4, NERUBAR },
 								["groups"] = {
@@ -558,28 +558,28 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(81499, {	-- Information Control: Ascended Intrigue
 						["provider"] = { "n", 224198 },	-- Ru'murh
 						["coord"] = { 54.8, 34.5, NERUBAR },
-						["g"] = {
+						["groups"] = {
 							o(439334),	-- Sureki Shadecaster
 						},
 					}),
 					q(81472, {	-- Information Control: Ansurek's Truth
 						["provider"] = { "n", 224197 },	-- Ru'murh
 						["coord"] = { 39.8, 26.6, NERUBAR },
-						["g"] = {
+						["groups"] = {
 							o(439339),	-- Sureki Shadecaster
 						},
 					}),
 					q(81473, {	-- Information Control: The Right Side of History
 						["provider"] = { "n", 224196 },	-- Ru'murh
 						["coord"] = { 77.8, 53.7, NERUBAR },
-						["g"] = {
+						["groups"] = {
 							o(437216),	-- Sureki Shadecaster
 						},
 					}),
 					q(81504, {	-- Infiltration: Hidden Figures
 						["provider"] = { "n", 224201 },	-- Ru'murh
 						["coord"] = { 77.5, 42.9, AZJ_KAHET },
-						["g"] = {
+						["groups"] = {
 							o(439382, {	-- Suspicious Shipment
 								i(219358),	-- Bundle of Coded Silks (QI!)
 							}),
@@ -588,14 +588,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(81483, {	-- Infiltration: Production Blocker
 						["provider"] = { "n", 224199 },	-- Ru'murh
 						["coord"] = { 45.6, 51.0, NERUBAR_LOWER },
-						["g"] = {
+						["groups"] = {
 							o(439348),	-- Mutagen Cache
 						},
 					}),
 					q(81503, {	-- Infiltration: Terror Made Manifest
 						["provider"] = { "n", 224200 },	-- Ru'murh
 						["coord"] = { 64.2, 75.3, AZJ_KAHET },
-						["g"] = {
+						["groups"] = {
 							i(219350),	-- Maddening Manifest (QI!)
 						},
 					}),
@@ -603,7 +603,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["provider"] = { "n", 224191 },	-- Ru'murh
 						["coord"] = { 68.6, 51.1, NERUBAR },
 						["crs"] = { 221055 },	-- Ascended Trafficker
-						["g"] = {
+						["groups"] = {
 							i(219292),	-- Perplexing Contraband (QI!)
 						},
 					}),
@@ -611,7 +611,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["provider"] = { "n", 224192 },	-- Ru'murh
 						["coord"] = { 79.7, 56.8, NERUBAR },
 						["crs"] = { 221063 },	-- Sureki Shadowstalker
-						["g"] = {
+						["groups"] = {
 							i(219293),	-- Sureki Intelligence (QI!)
 						},
 					}),
@@ -619,7 +619,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["provider"] = { "n", 224190 },	-- Ru'murh
 						["coord"] = { 41.5, 22.4, NERUBAR },
 						["crs"] = { 220315 },	-- Sureki Strongarm
-						["g"] = {
+						["groups"] = {
 							i(217996),	-- Sureki Tithe (QI!)
 						},
 					}),
@@ -657,11 +657,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							{ 55.2, 41, AZJ_KAHET },
 							{ 55.9, 42.2, AZJ_KAHET },
 						},
-						["g"] = {
+						["groups"] = {
 							i(225572, {	-- The General's War Chest (S1)
 								["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
 								["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-								["g"] = {
+								["groups"] = {
 									i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
 									i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
 									i(227281),	-- Recipe: Feast of the Midnight Masquerade (RECIPE!)
@@ -670,7 +670,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							i(239122, {	-- The General's War Chest (S2)
 								["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
 								["timeline"] = { ADDED_11_1_0_SEASONSTART },
-								["g"] = {
+								["groups"] = {
 									i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
 									i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
 									i(227281),	-- Recipe: Feast of the Midnight Masquerade (RECIPE!)
@@ -689,11 +689,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							{ "n", 220867 },	-- Y'tekhi
 						},
 						["coord"] = { 55.2, 41, AZJ_KAHET },
-						["g"] = {
+						["groups"] = {
 							i(225573, {	-- The Vizier's Capital (S1)
 								["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
 								["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-								["g"] = {
+								["groups"] = {
 									i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
 									i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
 									i(227281),	-- Recipe: Feast of the Midnight Masquerade (RECIPE!)
@@ -702,7 +702,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							i(239124, {	-- The Vizier's Capital (S2)
 								["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
 								["timeline"] = { ADDED_11_1_0_SEASONSTART },
-								["g"] = {
+								["groups"] = {
 									i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
 									i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
 									i(227281),	-- Recipe: Feast of the Midnight Masquerade (RECIPE!)
@@ -721,11 +721,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							{ "n", 220867 },	-- Y'tekhi
 						},
 						["coord"] = { 55.2, 41, AZJ_KAHET },
-						["g"] = {
+						["groups"] = {
 							i(225571, {	-- The Weaver's Gratuity (S1)
 								["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
 								["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-								["g"] = {
+								["groups"] = {
 									i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
 									i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
 									i(227281),	-- Recipe: Feast of the Midnight Masquerade (RECIPE!)
@@ -734,7 +734,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							i(239125, {	-- The Weaver's Gratuity (S2)
 								["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
 								["timeline"] = { ADDED_11_1_0_SEASONSTART },
-								["g"] = {
+								["groups"] = {
 									i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
 									i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
 									i(227281),	-- Recipe: Feast of the Midnight Masquerade (RECIPE!)
@@ -762,7 +762,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							226510,	-- Weaver's Facade
 							223276,	-- Widow's Undercrawler (MOUNT!)
 						}},
-						["g"] = {
+						["groups"] = {
 							i(226519, {	-- General's Expertise (TOY!)
 								["cost"] = {{"c", KEJ, 1100}},
 							}),
@@ -814,7 +814,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["sourceQuest"] = 80544,	-- The Weaver Weekly pickup
 				["cost"] = {{"i",226514,1}},	-- Treasure Map: Weave-Rat Cache
 			},{
-				["g"] = bubbleDownFiltered({
+				["groups"] = bubbleDownFiltered({
 					["sharedDescription"] = "Interact with Thimble and follow him to reveal his cache.\nOnly available if your weekly pact is with The Weaver.",
 				},FILTERFUNC_objectID,{
 					o(434527, {	-- Thimble's Cache
@@ -921,7 +921,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["cost"] = {{"i",226512,1}},	-- Treasure Map: Forgotten Memorial
 				["crs"] = { 220781 },	-- Aspirant Kiipka
 			},{
-				["g"] = bubbleDownFiltered({
+				["groups"] = bubbleDownFiltered({
 					["sharedDescription"] = "Interact with the Forgotten Memorial to challenge Aspirant Kiipka and then defeat him.\nOnly available if your weekly pact is with The General.",
 				},FILTERFUNC_objectID,{
 					o(437060, {	-- Aspirant's Tribute
@@ -993,7 +993,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["cost"] = {{"i",226513,1}},	-- Treasure Map: Kaheti Excavation
 				["crs"] = { 226483 },	-- Dig Spot
 			},{
-				["g"] = bubbleDownFiltered({
+				["groups"] = bubbleDownFiltered({
 					["sharedDescription"] = "Talk to Dor'garad to reveal the Dig Spots. Interract with them to fill the progress bar. After you are done, he'll throw the treasure to you.\nOnly available if your weekly pact is with The General.",
 				},FILTERFUNC_objectID,{
 					o(455279, {	-- Vizier's Appreciation
@@ -1073,7 +1073,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						228950,	-- Rumor Map Bundle
 						228952,	-- Treasure Map Bundle
 					}},
-					["g"] = bubbleDownRep(FACTION_THE_GENERAL, {
+					["groups"] = bubbleDownRep(FACTION_THE_GENERAL, {
 						{		-- Stranger
 						}, {	-- Acquaintance
 						}, {	-- Crony
@@ -1113,7 +1113,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						228950,	-- Rumor Map Bundle
 						228952,	-- Treasure Map Bundle
 					}},
-					["g"] = bubbleDownRep(FACTION_THE_WEAVER, {
+					["groups"] = bubbleDownRep(FACTION_THE_WEAVER, {
 						{		-- Stranger
 						}, {	-- Acquaintance
 						}, {	-- Crony
@@ -1140,30 +1140,30 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				n(226214, {	-- Ka'muko <Kej Currency Exchanger>
 					["coord"] = { 56.6, 43.0, AZJ_KAHET },
-					["g"] = {
+					["groups"] = {
 						i(226195, {	-- Resonance Crystal Cluster
 							["cost"] = {{"c", KEJ, 200}},
-							["g"] = {
+							["groups"] = {
 							--	currency(RESONANCE_CRYSTALS),
 							},
 						}),
 						i(226198, {	-- Resonance Crystal Agglomeration
 							["cost"] = {{"c", KEJ, 2000}},
-							["g"] = {
+							["groups"] = {
 							--	currency(RESONANCE_CRYSTALS),
 							},
 						}),
 						i(226196, {	-- Silk Kej Pouch
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 800}},
 							["minReputation"] = { FACTION_THE_SEVERED_THREADS, 8 },
-							["g"] = {
+							["groups"] = {
 								currency(KEJ),
 							},
 						}),
 						i(226199, {	-- Silk Kej Purse
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 8000}},
 							["minReputation"] = { FACTION_THE_SEVERED_THREADS, 8 },
-							["g"] = {
+							["groups"] = {
 								currency(KEJ),
 							},
 						}),
@@ -1171,7 +1171,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				n(223750, {	-- Lady Vinazian <Severed Threads Quartermaster>
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
-					["g"] = bubbleDownRep(FACTION_THE_SEVERED_THREADS, {
+					["groups"] = bubbleDownRep(FACTION_THE_SEVERED_THREADS, {
 						{		-- RENOWN 1 --
 						}, {	-- RENOWN 2 --
 							i(228420, {	-- Unsevered Thread
@@ -1242,7 +1242,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						228950,	-- Rumor Map Bundle
 						228952,	-- Treasure Map Bundle
 					}},
-					["g"] = bubbleDownRep(FACTION_THE_VIZIER, {
+					["groups"] = bubbleDownRep(FACTION_THE_VIZIER, {
 						{		-- Stranger
 						}, {	-- Acquaintance
 						}, {	-- Crony

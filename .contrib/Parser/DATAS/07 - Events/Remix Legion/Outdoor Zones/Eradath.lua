@@ -4,7 +4,7 @@
 --[[root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, bubbleDown({ ["timeline"] = { ADDED_11_2_0, REMOVED_LEGION_REMIX_END } }, {
 	m(EREDATH, {
 		["icon"] = 618317,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(19884),		-- Campaign: Valley of the Four Winds
 				ach(19994),		-- Elusive Foes: Valley of the Four Winds
@@ -39,7 +39,7 @@
 						20009,	-- Looking For Group: Valley of the Four Winds
 						19963,	-- Tour Valley of the Four Winds
 					}},
-					["g"] = {
+					["groups"] = {
 						i(221816),	-- Halfhill Farmer's Backpack
 					},
 				}),
@@ -50,15 +50,15 @@
 					["coord"] = { 53.2, 51.4, VALLEY_OF_THE_FOUR_WINDS },
 				}),
 				q(81587, {	-- Noodle Time: Bonus
-					["isDaily"] = true,
 					["provider"] = { "n", 220895 },	-- Grandmaster Jakkus <Class Apparel>
 					["coord"] = { 53.2, 51.4, VALLEY_OF_THE_FOUR_WINDS },
+					["isDaily"] = true,
 					["_drop"] = { "g" },
 				}),
 				q(81565, {	-- Another Round of Noodles
-					["isDaily"] = true,
 					["provider"] = { "n", 220895 },	-- Grandmaster Jakkus <Class Apparel>
 					["coord"] = { 53.2, 51.4, VALLEY_OF_THE_FOUR_WINDS },
+					["isDaily"] = true,
 					["_drop"] = { "g" },
 				}),
 			}),

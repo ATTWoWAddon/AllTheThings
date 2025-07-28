@@ -11,7 +11,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					152594, -- Broker Ve'ken
 					170257,	-- Broker Ve'nott
 				},
-				["g"] = {
+				["groups"] = {
 					n(176761, {	-- Adamant Vault
 						i(187034, {	-- Gilded Agony Cage
 							["cost"] = { { "c", PHANTASMA, 1000 } },

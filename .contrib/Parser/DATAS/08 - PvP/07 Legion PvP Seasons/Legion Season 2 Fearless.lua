@@ -8,13 +8,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_7_1_0, REMOVED_7_2_0 } }, {
 			ach(11004, {	-- Fearless Combatant [A]
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(103533),	-- Vicious Saddle
 				},
 			}),
 			ach(11003, {	-- Fearless Combatant [H]
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(103533),	-- Vicious Saddle
 				},
 			}),

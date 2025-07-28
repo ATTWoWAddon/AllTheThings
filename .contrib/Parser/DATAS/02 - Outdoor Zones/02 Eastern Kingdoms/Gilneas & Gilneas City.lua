@@ -600,8 +600,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						14404,	-- Not Quite Shipshape
 						14412,	-- Washed Up
 					},
-					["description"] = "Given if |cFFFFD700The Hayward Brothers|r questline is completed last.",
 					["coord"] = { 36.88, 84.18, GILNEAS },
+					["description"] = "Given if |cFFFFD700The Hayward Brothers|r questline is completed last.",
 					["races"] = { WORGEN },
 				}),
 				q(14397, {	-- Evacuation
@@ -699,8 +699,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(14463, {	-- Horses for Duskhaven
 					["qg"] = 36457,	-- Lorna Crowley
 					["sourceQuest"] = 14416,	-- The Hungry Ettin
-					["description"] = "Given if |cFFFFD700The Crowley Orchard|r questline is completed last.",
 					["coord"] = { 37.68, 72.75, GILNEAS },
+					["description"] = "Given if |cFFFFD700The Crowley Orchard|r questline is completed last.",
 					["races"] = { WORGEN },
 				}),
 				q(14400, {	-- I Can't Wear This
@@ -1018,8 +1018,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(14402, {	-- Ready to Go
 					["qg"] = 36458,	-- Grandma Wahl
 					["sourceQuest"] = 14401,	-- Grandma's Cat
-					["description"] = "Given if the |cFFFFD700Grandma Wahl|r questline is completed last.",
 					["coord"] = { 32.52, 75.48, GILNEAS },
+					["description"] = "Given if the |cFFFFD700Grandma Wahl|r questline is completed last.",
 					["races"] = { WORGEN },
 				}),
 				q(24673, {	-- Return to Stormglen
@@ -1221,8 +1221,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						14463,	-- Horses for Duskhaven
 						14402,	-- Ready to Go
 					},
-					["description"] = "Only one of the source quests can be turned in, but all become marked completed.",
 					["coord"] = { 37.63, 65.20, GILNEAS },
+					["description"] = "Only one of the source quests can be turned in, but all become marked completed.",
 					["races"] = { WORGEN },
 				}),
 				q(14382, {	-- Two By Sea

@@ -9,13 +9,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_7_3_0, REMOVED_7_3_2 } }, {
 			ach(12032, {	-- Fierce  Combatant [A]
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(103533),	-- Vicious Saddle
 				},
 			}),
 			ach(12031, {	-- Fierce  Combatant [H]
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(103533),	-- Vicious Saddle
 				},
 			}),
@@ -67,7 +67,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
 					["coord"] = { 29.6, 75.0, LEGION_DALARAN },
-					["g"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
 						iensemble(150252, {	-- Ensemble: Fierce Combatant's Dreadplate Armor [A]
 							["classes"] = { DEATHKNIGHT },
 						}),
@@ -267,7 +267,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH }, ["races"] = HORDE_ONLY }, {
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
 					["coord"] = { 56.8, 27.8, LEGION_DALARAN },
-					["g"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
 						iensemble(150253, {	-- Ensemble: Fierce Combatant's Dreadplate Armor [H]
 							["classes"] = { DEATHKNIGHT },
 						}),
@@ -503,7 +503,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
 					["coord"] = { 29.6, 75.0, LEGION_DALARAN },
-					["g"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
 						iensemble(149483, {	-- Ensemble: Fierce Gladiator's Dreadplate Armor [A]
 							["classes"] = { DEATHKNIGHT },
 						}),
@@ -703,7 +703,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH }, ["races"] = HORDE_ONLY }, {
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
 					["coord"] = { 56.8, 27.8, LEGION_DALARAN },
-					["g"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+					["groups"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
 						iensemble(149482, {	-- Ensemble: Fierce Gladiator's Dreadplate Armor [H]
 							["classes"] = { DEATHKNIGHT },
 						}),
@@ -905,7 +905,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 }, ["races"] = ALLIANCE_ONLY }, {
 				n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
 					["coord"] = { 29.6, 74.8, LEGION_DALARAN },
-					["g"] = sharedData({
+					["groups"] = sharedData({
 						["u"] = ELITE_PVP_REQUIREMENT,
 					}, {
 						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
@@ -926,7 +926,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
 				n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
 					["coord"] = { 29.6, 74.8, LEGION_DALARAN },
-					["g"] = sharedData({
+					["groups"] = sharedData({
 						["sourceAchievements"] = {
 							12090,	-- Fierce Elite
 							12135,	-- Dominant Elite
@@ -1134,7 +1134,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 }, ["races"] = HORDE_ONLY }, {
 				n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
 					["coord"] = { 57.0, 27.8, LEGION_DALARAN },
-					["g"] = sharedData({
+					["groups"] = sharedData({
 						["u"] = ELITE_PVP_REQUIREMENT,
 					}, {
 						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
@@ -1155,7 +1155,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH }, ["races"] = HORDE_ONLY }, {
 				n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
 					["coord"] = { 57.0, 27.8, LEGION_DALARAN },
-					["g"] = sharedData({
+					["groups"] = sharedData({
 						["sourceAchievements"] = {
 							12090,	-- Fierce Elite
 							12135,	-- Dominant Elite

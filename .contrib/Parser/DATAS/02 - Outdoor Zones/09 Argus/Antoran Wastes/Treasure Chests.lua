@@ -27,7 +27,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["description"] = "Near Vrax'thul, on the east side of a black pillar.",
 				["cost"] = {{ "i", 152786, 1 }},	-- Call of the Devourer
 				["coord"] = { 52.4, 35.3, ANTORAN_WASTES },
-				["g"] = {
+				["groups"] = {
 					i(152991),	-- Fiend Bone
 				},
 			}),
@@ -38,7 +38,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					{ 65.6, 26.3, ANTORAN_WASTES },	-- Entrance
 					{ 65.9, 19.4, ANTORAN_WASTES },	-- Imp Bone
 				},
-				["g"] = {
+				["groups"] = {
 					i(152992),	-- Imp Bone
 				},
 			}),
@@ -46,7 +46,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["description"] = "Next to the altar.",
 				["cost"] = {{ "i", 152786, 1 }},	-- Call of the Devourer
 				["coord"] = { 50.4, 56.1, ANTORAN_WASTES },
-				["g"] = {
+				["groups"] = {
 					i(152993),	-- Ur'zul Bone
 				},
 			}),
@@ -77,7 +77,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					{"find","headerID",SPECIAL},		-- get Special
 					{"find","filterID",CLOTH},{"pop"},	-- get Cloth
 				},
-				["g"] = appendAllGroups({	-- Shared Rewards
+				["groups"] = appendAllGroups({	-- Shared Rewards
 					i(152857),	-- Chipped Man'ari Blade
 					i(153344),	-- Triumvirate High Guard's Bracers
 					i(153340),	-- Triumvirate High Guard's Breastplate

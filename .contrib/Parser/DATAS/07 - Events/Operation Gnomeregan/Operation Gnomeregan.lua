@@ -94,9 +94,9 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 				},
 			}),
 			q(25393, {	-- Operation: Gnomeregan
-				["providers"] = {
-					{ "n", 39271 },	-- High Tinker Mekkatorque <King of Gnomes> (At the operation start location)
-					{ "n", 7937 },	-- High Tinker Mekkatorque <King of Gnomes> (after the quest is done, back in IF)
+				["qgs"] = {
+					39271,	-- High Tinker Mekkatorque <King of Gnomes> (At the operation start location)
+					7937,	-- High Tinker Mekkatorque <King of Gnomes> (after the quest is done, back in IF)
 				},
 				["sourceQuest"] = 25287,	-- Words for Delivery (2)
 				["coord"] = { 69.2, 49.2, IRONFORGE },
@@ -174,8 +174,8 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 					{ "n", 39678 },	-- Toby Zeigear
 					{ "i", 52731 },	-- Mekkatorque's Speech
 				},
-				["sourceQuest"] = 25283,	-- Prepping the Speech
 				["altQuests"] = { 25286 },	-- Words for Delivery (for level 75 and below)
+				["sourceQuest"] = 25283,	-- Prepping the Speech
 				["coord"] = { 49.32, 48.27, DUN_MOROGH },
 				["groups"] = {
 					i(54651),	-- Gnomeregan Pride (TOY!)

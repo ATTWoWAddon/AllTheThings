@@ -9,7 +9,7 @@ root(ROOTS.Zones, {
 				q(43179, {	-- The Kirin Tor of Dalaran
 					["isWorldQuest"] = true,
 					["provider"] = { "n", 32725 },	-- Warmage Silva
-					["g"] = {
+					["groups"] = {
 						i(147410),	-- Greater Court of Farondis Insignia
 						i(147411),	-- Greater Dreamweaver Insignia
 						i(147412),	-- Greater Highmountain Insignia

@@ -128,7 +128,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							17287,	-- Forbidden Reach Advanced: Gold
 							17290,	-- Forbidden Reach Reverse: Gold
 						}},
-						["g"] = {
+						["groups"] = {
 							title(489),	-- Forbidden Reach Racer <Name>
 						},
 					}),
@@ -137,7 +137,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				dragonridingrace(73025, {	-- Aerie Chasm Cruise
 					["provider"] = { "n", 200236 },	-- Bronze Timekeeper
 					["coord"] = { 63.3, 51.8, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						ach(17243),	-- Aerie Chasm Cruise: Bronze
 						ach(17244),	-- Aerie Chasm Cruise: Silver
 						ach(17245),	-- Aerie Chasm Cruise: Gold
@@ -146,7 +146,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				dragonridingrace(73027, {	-- Aerie Chasm Cruise - Advanced
 					["provider"] = { "n", 200236 },	-- Bronze Timekeeper
 					["coord"] = { 63.3, 51.8, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						ach(17246),	-- Aerie Chasm Cruise Advanced: Bronze
 						ach(17247),	-- Aerie Chasm Cruise Advanced: Silver
 						ach(17248),	-- Aerie Chasm Cruise Advanced: Gold
@@ -155,7 +155,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				dragonridingrace(73028, {	-- Aerie Chasm Cruise - Reverse
 					["provider"] = { "n", 200236 },	-- Bronze Timekeeper
 					["coord"] = { 63.3, 51.8, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						ach(17249),	-- Aerie Chasm Cruise Reverse: Bronze
 						ach(17250),	-- Aerie Chasm Cruise Reverse: Silver
 						ach(17251),	-- Aerie Chasm Cruise Reverse: Gold
@@ -164,7 +164,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				dragonridingrace(73033, {	-- Caldera Coaster
 					["provider"] = { "n", 200316 },	-- Bronze Timekeeper
 					["coord"] = { 41.3, 14.7, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						ach(17261),	-- Caldera Coaster: Bronze
 						ach(17262),	-- Caldera Coaster: Silver
 						ach(17263),	-- Caldera Coaster: Gold
@@ -173,7 +173,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				dragonridingrace(73034, {	-- Caldera Coaster - Advanced
 					["provider"] = { "n", 200316 },	-- Bronze Timekeeper
 					["coord"] = { 41.3, 14.7, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						ach(17264),	-- Caldera Coaster Advanced: Bronze
 						ach(17265),	-- Caldera Coaster Advanced: Silver
 						ach(17266),	-- Caldera Coaster Advanced: Gold
@@ -182,7 +182,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				dragonridingrace(73052, {	-- Caldera Coaster - Reverse
 					["provider"] = { "n", 200316 },	-- Bronze Timekeeper
 					["coord"] = { 41.3, 14.7, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						ach(17267),	-- Caldera Coaster Reverse: Bronze
 						ach(17268),	-- Caldera Coaster Reverse: Silver
 						ach(17269),	-- Caldera Coaster Reverse: Gold
@@ -191,7 +191,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				dragonridingrace(73061, {	-- Forbidden Reach Rush
 					["provider"] = { "n", 200417 },	-- Bronze Timekeeper
 					["coord"] = { 49.4, 59.8, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						ach(17270),	-- Forbidden Reach Rush: Bronze
 						ach(17271),	-- Forbidden Reach Rush: Silver
 						ach(17272),	-- Forbidden Reach Rush: Gold
@@ -200,7 +200,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				dragonridingrace(73062, {	-- Forbidden Reach Rush - Advanced
 					["provider"] = { "n", 200417 },	-- Bronze Timekeeper
 					["coord"] = { 49.4, 59.8, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						ach(17273),	-- Forbidden Reach Rush Advanced: Bronze
 						ach(17274),	-- Forbidden Reach Rush Advanced: Silver
 						ach(17275),	-- Forbidden Reach Rush Advanced: Gold
@@ -209,7 +209,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				dragonridingrace(73065, {	-- Forbidden Reach Rush - Reverse
 					["provider"] = { "n", 200417 },	-- Bronze Timekeeper
 					["coord"] = { 49.4, 59.8, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						ach(17276),	-- Forbidden Reach Rush Reverse: Bronze
 						ach(17277),	-- Forbidden Reach Rush Reverse: Silver
 						ach(17278),	-- Forbidden Reach Rush Reverse: Gold
@@ -218,7 +218,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				dragonridingrace(73020, {	-- Morqut Ascent
 					["provider"] = { "n", 200212 },	-- Bronze Timekeeper
 					["coord"] = { 31.4, 65.9, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						ach(17223),	-- Morqut Ascent: Bronze
 						ach(17224),	-- Morqut Ascent: Silver
 						ach(17225),	-- Morqut Ascent: Gold
@@ -227,7 +227,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				dragonridingrace(73023, {	-- Morqut Ascent - Advanced
 					["provider"] = { "n", 200212 },	-- Bronze Timekeeper
 					["coord"] = { 31.4, 65.9, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						ach(17237),	-- Morqut Ascent Advanced: Bronze
 						ach(17238),	-- Morqut Ascent Advanced: Silver
 						ach(17239),	-- Morqut Ascent Advanced: Gold
@@ -236,7 +236,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				dragonridingrace(73024, {	-- Morqut Ascent - Reverse
 					["provider"] = { "n", 200212 },	-- Bronze Timekeeper
 					["coord"] = { 31.4, 65.9, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						ach(17240),	-- Morqut Ascent Reverse: Bronze
 						ach(17241),	-- Morqut Ascent Reverse: Silver
 						ach(17242),	-- Morqut Ascent Reverse: Gold
@@ -245,7 +245,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				dragonridingrace(73029, {	-- Southern Reach Route
 					["provider"] = { "n", 200247 },	-- Bronze Timekeeper
 					["coord"] = { 63.6, 84.3, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						ach(17252),	-- Southern Reach Route: Bronze
 						ach(17253),	-- Southern Reach Route: Silver
 						ach(17254),	-- Southern Reach Route: Gold
@@ -254,7 +254,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				dragonridingrace(73030, {	-- Southern Reach Route - Advanced
 					["provider"] = { "n", 200247 },	-- Bronze Timekeeper
 					["coord"] = { 63.6, 84.3, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						ach(17255),	-- Southern Reach Route Advanced: Bronze
 						ach(17256),	-- Southern Reach Route Advanced: Silver
 						ach(17257),	-- Southern Reach Route Advanced: Gold
@@ -263,7 +263,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				dragonridingrace(73032, {	-- Southern Reach Route - Reverse
 					["provider"] = { "n", 200247 },	-- Bronze Timekeeper
 					["coord"] = { 63.6, 84.3, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						ach(17258),	-- Southern Reach Route Reverse: Bronze
 						ach(17259),	-- Southern Reach Route Reverse: Silver
 						ach(17260),	-- Southern Reach Route Reverse: Gold
@@ -272,7 +272,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				dragonridingrace(73017, {	-- Stormsunder Crater Circuit
 					["provider"] = { "n", 200183 },	-- Bronze Timekeeper
 					["coord"] = { 76.3, 65.7, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						ach(17214),	-- Stormsunder Crater Circuit: Bronze
 						ach(17215),	-- Stormsunder Crater Circuit: Silver
 						ach(17216),	-- Stormsunder Crater Circuit: Gold
@@ -281,7 +281,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				dragonridingrace(73018, {	-- Stormsunder Crater Circuit - Advanced
 					["provider"] = { "n", 200183 },	-- Bronze Timekeeper
 					["coord"] = { 76.3, 65.7, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						ach(17217),	-- Stormsunder Crater Circuit Advanced: Bronze
 						ach(17218),	-- Stormsunder Crater Circuit Advanced: Silver
 						ach(17219),	-- Stormsunder Crater Circuit Advanced: Gold
@@ -290,7 +290,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				dragonridingrace(73019, {	-- Stormsunder Crater Circuit - Reverse
 					["provider"] = { "n", 200183 },	-- Bronze Timekeeper
 					["coord"] = { 76.3, 65.7, THE_FORBIDDEN_REACH },
-					["g"] = {
+					["groups"] = {
 						ach(17220),	-- Stormsunder Crater Circuit Reverse: Bronze
 						ach(17221),	-- Stormsunder Crater Circuit Reverse: Silver
 						ach(17222),	-- Stormsunder Crater Circuit Reverse: Gold
@@ -356,7 +356,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					dragonridingrace(75958, {	-- Aerie Chasm Cruise - Challenge
 						["provider"] = { "n", 200236 },	-- Bronze Timekeeper
 						["coord"] = { 63.3, 51.8, THE_FORBIDDEN_REACH },
-						["g"] = {
+						["groups"] = {
 							ach(18040),	-- Aerie Chasm Cruise Challenge: Bronze
 							ach(18041),	-- Aerie Chasm Cruise Challenge: Silver
 							ach(18042),	-- Aerie Chasm Cruise Challenge: Gold
@@ -365,7 +365,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					dragonridingrace(75959, {	-- Aerie Chasm Cruise - Reverse Challenge
 						["provider"] = { "n", 200236 },	-- Bronze Timekeeper
 						["coord"] = { 63.3, 51.8, THE_FORBIDDEN_REACH },
-						["g"] = {
+						["groups"] = {
 							ach(18043),	-- Aerie Chasm Cruise Reverse Challenge: Bronze
 							ach(18044),	-- Aerie Chasm Cruise Reverse Challenge: Silver
 							ach(18045),	-- Aerie Chasm Cruise Reverse Challenge: Gold
@@ -374,7 +374,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					dragonridingrace(75962, {	-- Caldera Coaster - Challenge
 						["provider"] = { "n", 200316 },	-- Bronze Timekeeper
 						["coord"] = { 41.3, 14.7, THE_FORBIDDEN_REACH },
-						["g"] = {
+						["groups"] = {
 							ach(18052),	-- Caldera Coaster Challenge: Bronze
 							ach(18053),	-- Caldera Coaster Challenge: Silver
 							ach(18054),	-- Caldera Coaster Challenge: Gold
@@ -383,7 +383,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					dragonridingrace(75963, {	-- Caldera Coaster - Reverse Challenge
 						["provider"] = { "n", 200316 },	-- Bronze Timekeeper
 						["coord"] = { 41.3, 14.7, THE_FORBIDDEN_REACH },
-						["g"] = {
+						["groups"] = {
 							ach(18055),	-- Caldera Coaster Reverse Challenge: Bronze
 							ach(18056),	-- Caldera Coaster Reverse Challenge: Silver
 							ach(18057),	-- Caldera Coaster Reverse Challenge: Gold
@@ -392,7 +392,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					dragonridingrace(75964, {	-- Forbidden Reach Rush - Challenge
 						["provider"] = { "n", 200417 },	-- Bronze Timekeeper
 						["coord"] = { 49.4, 59.8, THE_FORBIDDEN_REACH },
-						["g"] = {
+						["groups"] = {
 							ach(18058),	-- Forbidden Reach Rush Challenge: Bronze
 							ach(18059),	-- Forbidden Reach Rush Challenge: Silver
 							ach(18060),	-- Forbidden Reach Rush Challenge: Gold
@@ -401,7 +401,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					dragonridingrace(75965, {	-- Forbidden Reach Rush - Reverse Challenge
 						["provider"] = { "n", 200417 },	-- Bronze Timekeeper
 						["coord"] = { 49.4, 59.8, THE_FORBIDDEN_REACH },
-						["g"] = {
+						["groups"] = {
 							ach(18061),	-- Forbidden Reach Rush Reverse Challenge: Bronze
 							ach(18062),	-- Forbidden Reach Rush Reverse Challenge: Silver
 							ach(18063),	-- Forbidden Reach Rush Reverse Challenge: Gold
@@ -410,7 +410,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					dragonridingrace(75956, {	-- Morqut Ascent - Challenge
 						["provider"] = { "n", 200212 },	-- Bronze Timekeeper
 						["coord"] = { 31.4, 65.9, THE_FORBIDDEN_REACH },
-						["g"] = {
+						["groups"] = {
 							ach(18034),	-- Morqut Ascent Challenge: Bronze
 							ach(18035),	-- Morqut Ascent Challenge: Silver
 							ach(18036),	-- Morqut Ascent Challenge: Gold
@@ -419,7 +419,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					dragonridingrace(75957, {	-- Morqut Ascent - Reverse Challenge
 						["provider"] = { "n", 200212 },	-- Bronze Timekeeper
 						["coord"] = { 31.4, 65.9, THE_FORBIDDEN_REACH },
-						["g"] = {
+						["groups"] = {
 							ach(18037),	-- Morqut Ascent Reverse Challenge: Bronze
 							ach(18038),	-- Morqut Ascent Reverse Challenge: Silver
 							ach(18039),	-- Morqut Ascent Reverse Challenge: Gold
@@ -428,7 +428,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					dragonridingrace(75960, {	-- Southern Reach Route - Challenge
 						["provider"] = { "n", 200247 },	-- Bronze Timekeeper
 						["coord"] = { 63.6, 84.3, THE_FORBIDDEN_REACH },
-						["g"] = {
+						["groups"] = {
 							ach(18046),	-- Southern Reach Route Challenge: Bronze
 							ach(18047),	-- Southern Reach Route Challenge: Silver
 							ach(18048),	-- Southern Reach Route Challenge: Gold
@@ -437,7 +437,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					dragonridingrace(75961, {	-- Southern Reach Route - Reverse Challenge
 						["provider"] = { "n", 200247 },	-- Bronze Timekeeper
 						["coord"] = { 63.6, 84.3, THE_FORBIDDEN_REACH },
-						["g"] = {
+						["groups"] = {
 							ach(18049),	-- Southern Reach Route Reverse Challenge: Bronze
 							ach(18050),	-- Southern Reach Route Reverse Challenge: Silver
 							ach(18051),	-- Southern Reach Route Reverse Challenge: Gold
@@ -446,7 +446,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					dragonridingrace(75954, {	-- Stormsunder Crater Circuit - Challenge
 						["provider"] = { "n", 200183 },	-- Bronze Timekeeper
 						["coord"] = { 76.3, 65.7, THE_FORBIDDEN_REACH },
-						["g"] = {
+						["groups"] = {
 							ach(18028),	-- Stormsunder Crater Circuit Challenge: Bronze
 							ach(18029),	-- Stormsunder Crater Circuit Challenge: Silver
 							ach(18030),	-- Stormsunder Crater Circuit Challenge: Gold
@@ -455,7 +455,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					dragonridingrace(75955, {	-- Stormsunder Crater Circuit - Reverse Challenge
 						["provider"] = { "n", 200183 },	-- Bronze Timekeeper
 						["coord"] = { 76.3, 65.7, THE_FORBIDDEN_REACH },
-						["g"] = {
+						["groups"] = {
 							ach(18031),	-- Stormsunder Crater Circuit Reverse Challenge: Bronze
 							ach(18032),	-- Stormsunder Crater Circuit Reverse Challenge: Silver
 							ach(18033),	-- Stormsunder Crater Circuit Reverse Challenge: Gold
@@ -478,7 +478,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					18150,	-- Zaralek Cavern Glyph Hunter
 					17492,	-- Zaralek Cavern Racing Completionist
 				}},
-				["g"] = {
+				["groups"] = {
 					i(207776),	-- Grotto Netherwing Drake: Black Scales (MM!)
 				},
 			})),

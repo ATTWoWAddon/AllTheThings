@@ -56,7 +56,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					},
 					["provider"] = { "n", 233582 },	-- Thrayir, Eyes of the Siren
 					["coord"] = { 72.5, 61.3, 2375 },
-					["g"] = {
+					["groups"] = {
 						i(232639),	-- Thrayir, Eyes of the Siren (MOUNT!)
 					},
 				}),
@@ -88,7 +88,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				n(231357, {	-- Zek'ul the Shipbreaker
 					["coord"] = { 32.7, 73.0, SIREN_ISLE },
 					["questID"] = 85405,
-					["g"] = {
+					["groups"] = {
 						i(232569),	-- Cyclonic Runekey
 					},
 				}),
@@ -96,7 +96,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				n(231368, {	-- Ksvir the Forgotten
 					["coord"] = { 37.9, 76.1, 2375 },
 					["questID"] = 85406,
-					["g"] = {
+					["groups"] = {
 						i(235017, {	-- Glittering Vault Shard (TOY!)
 							["description"] = "The toy can drop on every kill and is unaffected by daily lockout.",
 						}),
@@ -108,7 +108,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				o(507120, {	-- Ducky Friend
 					["description"] = "Can be found during the storm in a house on the 2nd floor, on a bed.",
 					["coord"] = { 39.2, 54.2, SIREN_ISLE },
-					["g"] = {
+					["groups"] = {
 						i(233447),	-- Marmaduke's "Ducky Friend"
 					},
 				}),
@@ -140,13 +140,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					TWW_ACCOUNT_CAMPAIGN_QUEST,
 					84725,	-- The Circlet Calls
 				},
-				["g"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+				["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
 					n(SPECIAL, {
 						q(86174),	-- Special Assignment: Storm's a Brewin (TODO: seems to be unlock tracker)
 						q(85113, {	-- Special Assignment: Storm's a Brewin
 							["provider"] = { "n", 227815 },	-- Suzie Boltwrench
 							["coord"] = { 69.0, 49.2, SIREN_ISLE },
-							["g"] = {
+							["groups"] = {
 								i(232466),	-- Leave the Storm (QI!)
 								i(235548),	-- Earthen Landlubber's Cache
 								--^ contain isle drop/vendor stuff

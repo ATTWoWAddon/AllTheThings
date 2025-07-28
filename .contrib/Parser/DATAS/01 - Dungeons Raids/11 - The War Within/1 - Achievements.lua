@@ -10,7 +10,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				40140,	-- Algari Dungeon Healer
 				40141,	-- Algari Dungeon Tank
 			}},
-			["g"] = {
+			["groups"] = {
 				iensemble(219115),	-- Versatile Peddler's Trinkets
 			},
 		}),

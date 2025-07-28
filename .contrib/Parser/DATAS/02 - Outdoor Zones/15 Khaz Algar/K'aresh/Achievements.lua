@@ -19,7 +19,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 			ach(42736),	-- Ixthar's Legacy (automated)
 			ach(42730),	-- Jump, Jump, and Away!
 			skyriding(ach(42727)),	-- K'aresh Glyph Hunter (automated)
-			ach(41978),	-- Moonlighter
+			ach(41978, {	-- Moonlighter
+				iensemble(244140),	-- Ethereal Sash Cache
+			}),
 			ach(41808),	-- Otherworldly Ecologist (automated)
 			ach(61017, {	-- Phase-Lost-and-Found
 				-- TODO: is there a better way?
@@ -52,7 +54,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					{ 56.5, 86.7, KARESH_TAZAVESH },
 					{ 60.7, 55.3, KARESH_TAZAVESH },
 				},
-				["g"] = {
+				["groups"] = {
 					i(250240),	-- Phase-Lost Slateback (MOUNT!)
 					i(250282),	-- Phase-Lost Bardiche (COSMETIC!)
 					i(250283),	-- Phase-Lost Carver (COSMETIC!)
@@ -88,6 +90,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				i(237485),	-- Terror of the Night (MOUNT!)
 			}),
 			ach(42738),	-- We've All Got Swords! (automated)
+		}),
+	}),
+})));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
+	m(KHAZ_ALGAR, {
+		m(KARESH, {
+			n(ACHIEVEMENTS, {
+				-- Exo Note for a Senior Contrib(s): If placement of the HQT is wrong, please move it to correct place. If not wrong, please remove this note.
+				q(91916, name(HEADERS.Item,244140)),	-- Triggers when "Ethereal Sash Cache" is opened
+			}),
 		}),
 	}),
 })));

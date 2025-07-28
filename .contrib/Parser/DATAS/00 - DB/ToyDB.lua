@@ -284,6 +284,7 @@ i(85500);	-- Anglers Fishing Raft
 i(86582);	-- Aqua Jewel
 i(90067);	-- B. F. F. Necklace
 i(86565);	-- Battle Horn
+i(86579);	-- Bottled Tornado [Removed 7.0.3]
 i(87214);	-- Blingtron 4000
 i(89139);	-- Chain Pet Leash
 i(86575);	-- Chalice of Secrets

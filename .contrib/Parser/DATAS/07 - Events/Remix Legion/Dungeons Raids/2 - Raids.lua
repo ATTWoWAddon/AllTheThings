@@ -13,7 +13,7 @@
 					19950,	-- Heart of Fear
 					19947,	-- Mogu'shan Vaults
 				}},
-				["g"] = {
+				["groups"] = {
 					i(210523),	-- Timerunner's Amulet
 				},
 			}),
@@ -26,7 +26,7 @@
 					19951,	-- Heroic: Heart of Fear
 					19948,	-- Heroic: Mogu'shan Vaults
 				}},
-				["g"] = {
+				["groups"] = {
 					title(553),	-- <Name>, Claw of Eternus
 				},
 			}),

@@ -7,7 +7,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			["provider"] = { "n", 196620 },	-- Pleeqi
 			["coord"] = { 13.5, 48.5, THE_AZURE_SPAN },
 			["isWeekly"] = true,
-			["g"] = {
+			["groups"] = {
 				i(200095, {	-- Supply-Laden Soup Pot
 					["sym"] = {
 						{"select", "mapID",
@@ -22,7 +22,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						{"pop"},
 						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 					},
-					["g"] = {
+					["groups"] = {
 						i(200652),	-- Alchemical Flavor Pocket
 						i(215362, {	-- Cache of Storms
 							["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
@@ -42,7 +42,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 13.6, 48.6, THE_AZURE_SPAN },
 						["questID"] = 74097,
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							ach(16444, {	-- Leftovers' Revenge
 								i(200882),	-- Big Kinook's Spare Ladle
 							}),

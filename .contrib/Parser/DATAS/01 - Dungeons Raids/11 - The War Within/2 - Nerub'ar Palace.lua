@@ -279,7 +279,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			2295,	-- The Crown of Shadows
 			2296,	-- The Crown of Shadows - Upper
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(40247, {	-- The Skittering Battlements
 					crit(67564, {	-- Ulgrax the Devourer
@@ -388,7 +388,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						40730,	-- Love is in the Lair
 						40266,	-- Missed 'Em by That Much
 					}},
-					["g"] = {
+					["groups"] = {
 						i(223266),	-- Shadowed Swarmite (MOUNT!)
 					},
 				}),
@@ -443,7 +443,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						AZJ_KAHET_LOWER,
 					},
 					-- #endif
-					["g"] = {
+					["groups"] = {
 						i(226810),	-- Infiltrator's Shroud (TOY!)
 					},
 				})
@@ -453,7 +453,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				["coord"] = { 50.0, 54.2, DORNOGAL },
 				["modelScale"] = 4,
 				["catalystID"] = 8,	-- ItemBonus.Value_0 TWW:S1
-				["g"] = {
+				["groups"] = {
 					Difficulty(DIFFICULTY.RAID.LFR, {["upgradeTrackID"]=UPGRADETRACKS.VETERAN}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(NERUBAR_PALACE_TIER, DIFFICULTY.RAID.LFR)
 					),
@@ -570,7 +570,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				n(QUESTS, {
 					q(82629,{	-- Nerub-ar Palace: For Nerubian Eyes Only
 						["provider"] = { "n", 216971 },	-- Shadow Walker Tarvex
-						["g"] = {
+						["groups"] = {
 							i(224014),	-- Signet of the Skeinspiner (QI!)
 							i(224011),	-- Signet of the Thousand Scars (QI!)
 						},
@@ -619,7 +619,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				n(QUESTS, {
 					q(82638,{	-- Nerub-ar Palace: For Nerubian Eyes Only
 						["provider"] = { "n", 216971 },	-- Shadow Walker Tarvex
-						["g"] = {
+						["groups"] = {
 							i(224015),	-- Signet of the Skeinspiner (QI!)
 							i(224012),	-- Signet of the Thousand Scars (QI!)
 						},
@@ -651,7 +651,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				n(QUESTS, {
 					q(82639,{	-- Nerub-ar Palace: For Nerubian Eyes Only
 						["provider"] = { "n", 216971 },	-- Shadow Walker Tarvex
-						["g"] = {
+						["groups"] = {
 							i(224016),	-- Signet of the Skeinspiner (QI!)
 							i(224013),	-- Signet of the Thousand Scars (QI!)
 						},
@@ -748,7 +748,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		-- The Finer Things (Account-Wide Buff tracking) (maybe do something neat to show current level)
 		q(84562, {
 			["name"]="Severed Threads Active",	-- 1st Turn in of 'The Finer Things' (84286)
-			["g"] = {
+			["groups"] = {
 				currency(3094),	-- Tracking Currency for Severed Threads stacks
 			},
 		}),

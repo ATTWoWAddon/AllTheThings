@@ -7,7 +7,7 @@ root(ROOTS.Secrets, {
 		["description"] = "***Quest tracking enabled is required to see all the steps.***",
 		["modelScale"] = .8,
 		["displayID"] = 78092,
-		["g"] = {
+		["groups"] = {
 			o(270855, {	-- Step 1: Inconspicuous Note
 				["model"] = 1661948,
 				["questID"] = 47826,
@@ -44,7 +44,7 @@ root(ROOTS.Secrets, {
 				},
 				["sourceQuest"] = 47841,	-- Step 4: Inconspicuous Note
 				["description"] = "|cFFFFFFFFStep 5:|r First, obtain a |cFFFFD700Shadoweave Mask|r.  |cffcc33ffNote: You will need the actual item; it cannot be transmogged on your character.|r\n\nThis step requires visiting Deepholm.  Take the |cFFFFD700Therazane's Throne|r portal if it is available; otherwise, fly to |cFFFFFFFF58.3, 25.6|r and you will see a cave opening to |cFFFFD700Crumbling Depths|r.\n\nOnce you are in the cave, mount up and go past the |cFFFFD700Colossal Gyreworm|r into the next section of the cavern. Go to the big grey rock in the center of the room at |cFFFFFFFF63.7, 22.6|r and you will see a |cFFFFD700Dark Fissure|r.  Click it.  Once you click it, a warning will pop up, saying: \n\n|cffcc33ff'WARNING: you are about to fall into a dark fissure.  You may not be able to climb back out again.  Are you very sure you want to do this?'|r\n\nOnce inside the fissure, you will see a chair.  Go behind the chair and click on the |cFFFFD700Dingy Plaque|r.  The plaque reads... \r\r|cFFFFFFFFSupremacy?|r\r|cFFFFFFFFGet...|r\r|cFFFFFFFFShirk...|r\r|cFFFFFFFF...eke...|r\r\rThis will spawn a |cFFFFD700Strange Skull|r on the seat of the chair.  Equip the Shadoweave Mask and interact with the |cFFFFD700Strange Skull|r and you will see a purple explosion.|r\n",
-				["g"] = {
+				["groups"] = {
 					i(10025),	-- Shadoweave Mask
 				},
 			}),
@@ -82,7 +82,7 @@ root(ROOTS.Secrets, {
 				["coord"] = { 39.8, 73.6, DEADWIND_PASS },
 				["sourceQuest"] = 47881,	-- Step 9: Inconspicuous Note
 				["description"] = "|cFFFFFFFFStep 10:|r This step requires visiting |cFFFFD700Deadwind Pass|r.  Head to |cFFFFFFFF39.8, 73.6|r, the entrance to the Forgotten Crypt.\n\nOnce inside, head down the stairs into the |cFFFFD700Well of the Forgotten|r.  Head into the |cFFFFD700Pauper's Walk|r hallway and follow it into the |cFFFFD700Forgotten Crypt.|r\n\nTake a right and then another right back into |cFFFFD700Pauper's Walk|r, then take a right at the Y and walk down the spiral, back into the |cFFFFD700Forgotten Crypt|r.\nTake a left and another left into the |cFFFFD700Tomb of the Unrepentant.|r\nOpen the gate and fall down the hole to the right (just drop down one level, not two). Walk into |cFFFFD700The Pit of Criminals|r, and |cFFFFD700Puzzler's Desire|r is on top of the bone pile.\n\n|cffcc33ffNote: If you are on the Warlock Affiction artifact quest and can't see the Puzzler's Desire, then you will have to abandon the quest to solve the phasing issue.\n\nCongratulations on your mount!|r\n\nWe would like to thank the |cFFFFD700Secret Finding Discord|r for solving yet another puzzle.\n",
-				["g"] = {
+				["groups"] = {
 					i(151623),	-- Lucid Nightmare (MOUNT!)
 				},
 			}),

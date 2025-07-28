@@ -21,7 +21,7 @@ root(ROOTS.Zones, {
 				}),
 				ach(10774, {	-- Hatchling of the Talon
 					["sourceQuests"] = { 41094 },	-- Hatchlings of the Talon
-					["g"] = {
+					["groups"] = {
 						i(139773),	-- Emerald Winds (TOY!)
 					},
 				}),

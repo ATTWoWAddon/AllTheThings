@@ -15,7 +15,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		n(221421, { -- Eraneth <Draconic Combatant Recipes>
 			["timeline"] = { ADDED_11_0_0 },
 			["coord"] = { 43.6, 42.4, VALDRAKKEN },
-			["g"] = sharedData({ ["cost"] = {{"i", MOH, 3}} }, {
+			["groups"] = sharedData({ ["cost"] = {{"i", MOH, 3}} }, {
 		-- #endif
 				i(194646),	-- Design: Djaradin's "Pinata" (RECIPE!)
 				i(193877),	-- Pattern: Infurious Boots of Reprieve (RECIPE!)

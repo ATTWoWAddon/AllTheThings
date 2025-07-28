@@ -13,7 +13,7 @@ root(ROOTS.Zones, {
 					1325,	-- Flamering moth (PET!)
 					1591,	-- Violet Firefly (PET!)
 				}},
-				["g"] = {
+				["groups"] = {
 					pet(706),	-- Bandicoon (PET!)
 					pet(1809, {	-- Crystalline Broodling (PET!)
 						["description"] = "Found around Falanaar.",

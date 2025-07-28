@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					180032,	-- Wild Worldcracker
 					179859,	-- Xyraxz the Unknowable
 				},
-				["g"] = {
+				["groups"] = {
 					hqt(64280, {	-- Daily Drop #1
 						["name"] = "Daily Drop #1",
 						["isDaily"] = true,

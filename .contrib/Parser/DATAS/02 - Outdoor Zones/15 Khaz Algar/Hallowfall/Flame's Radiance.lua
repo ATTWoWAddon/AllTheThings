@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				ach(41997),	-- Owner of a Radiant Heart
 			}),
 			f(TITLES, {
-				["g"] = bubbleDownRep(FACTION_FLAMES_RADIANCE, { -- Blizzard changed their mind on most of the titles I guess
+				["groups"] = bubbleDownRep(FACTION_FLAMES_RADIANCE, { -- Blizzard changed their mind on most of the titles I guess
 					{		-- RENOWN 1 --
 						--title(619),	-- Recruit <Name>
 					}, {	-- RENOWN 2 --
@@ -53,7 +53,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}, {	-- RENOWN 5 --
 					q(89494, {	-- A Frocking Good Job
 						["sourceQuest"] = 89493,	-- Welcome to the Field
-						["g"] = {
+						["groups"] = {
 							i(233298),	-- Radiant Stalwart's Buckle
 							i(233289),	-- Radiant Stalwart's Tabard
 						},
@@ -72,7 +72,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(89400),	-- Carved Crests
 					q(89496, {	-- Defender of the Sacred Flame
 						["sourceQuest"] = 89494,	-- A Frocking Good Job
-						["g"] = {
+						["groups"] = {
 							i(233299),	-- Sacred Templar's Buckle
 							i(233290),	-- Sacred Templar's Tabard
 						},
@@ -81,14 +81,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					------ Paragon ------
 					q(89515, {	-- Renowned with Flame's Radiance
 						["isRepeatable"] = true,
-						["g"] = { i(239489) },	-- Radiant Officer's Cache
+						["groups"] = { i(239489) },	-- Radiant Officer's Cache
 					}),
 				},
 			}))),
 			n(VENDORS, {
 				n(240852, {	-- Lars Bronsmaelt
 					["coord"] = { 28.3, 56.2, HALLOWFALL },
-					["g"] = bubbleDownRep(FACTION_FLAMES_RADIANCE, {
+					["groups"] = bubbleDownRep(FACTION_FLAMES_RADIANCE, {
 						{		-- RENOWN 1 --
 						}, {	-- RENOWN 2 --
 							i(238850, {	-- Arathi Entertainer's Flame (TOY!)

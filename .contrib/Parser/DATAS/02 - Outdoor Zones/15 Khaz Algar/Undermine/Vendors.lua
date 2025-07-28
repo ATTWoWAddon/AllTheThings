@@ -6,14 +6,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 		n(VENDORS, {
 			n(231824, {	-- Kari Bridgeblaster
 				["coord"] = { 44.0, 49.8, UNDERMINE },
-				["g"] = {
+				["groups"] = {
 					-- tier set vendor
 					-- curio - 228819 Excessively Bejeweled Curio
 				},
 			}),
 			n(237784, {	-- Alchemist Pestlezugg
 				["coord"] = { 28.0, 73.9, UNDERMINE },
-				["g"] = {
+				["groups"] = {
 					i(235703),	-- Noggenfogger Select DOWN
 					i(235710, {	-- Noggenfogger Select FRESH
 						["races"] = { GOBLIN },	-- TODO: I don't have any goblin
@@ -24,7 +24,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			n(226994, {	-- Blair Bass <"Gold" Fish Exchange>
 				["sourceQuest"] = 83542,	-- Quick Gills for Gold Now
 				["coord"] = { 34.0, 71.4, UNDERMINE },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {{ "i", 227673, 5 }},	-- "Gold" Fish
 				},{
 					i(237346),	-- Artisan Beverage Goblet Bobber (TOY!)
@@ -34,7 +34,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			}),
 			n(239112, {	-- Bombin' Bert
 				["coord"] = { 50.9, 31.8, UNDERMINE },
-				["g"] = {
+				["groups"] = {
 					i(237762),	-- "Harmless" Sniper Dislodger XL
 					i(237306),	-- NEW Goblin Hot Potato
 				},
@@ -42,7 +42,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			n(239150, {	-- Brix the Bloody
 				--TODO: idk rp or whatever purpose it is
 				["coord"] = { 28.2, 27.1, UNDERMINE },
-				["g"] = {
+				["groups"] = {
 					i(237315),	-- Fighting Guide: Armed Combat
 					i(237320),	-- Fighting Guide: Grappling Combat
 					i(237319),	-- Fighting Guide: Magical Combat
@@ -57,14 +57,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			}),
 			n(239523, {	-- Brondo Packrat
 				["coord"] = { 29.0, 53.8, UNDERMINE },
-				["g"] = {
+				["groups"] = {
 					-- TODO: move into uncollectible?
 					i(237333),	-- Undermine Crate
 				},
 			}),
 			n(236411, {	-- Ditty Fuzeboy
 				["coord"] = { 35.4, 41.4, UNDERMINE },
-				["g"] = {
+				["groups"] = {
 					i(232850, {	-- Blackwater Kegmover (PET!)
 						["cost"] = {{ "i", 234741, 5 }},	-- Miscellaneous Mechanica
 					}),
@@ -87,14 +87,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			}),
 			n(231066, {	-- Gallagio Caterer
 				["sourceQuest"] = 87297,	-- Cashing the Check
-				["g"] = {
+				["groups"] = {
 					i(237259),	-- Kapow Kanapes
 					i(237260),	-- Glass of Daylight Dew
 				},
 			}),
 			n(239166, {	-- Geeves
 				["coord"] = { 29.2, 25.8, UNDERMINE },
-				["g"] = {
+				["groups"] = {
 					-- TODO: move in uncollectible if there won't be any purpose or shared in zone
 					i(236647),	-- Coin and Kaja
 					i(236649),	-- Few Screws Loose
@@ -108,7 +108,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			n(236849, {	-- Greexit Coarsebub
 				["description"] = "Sells different cosmetics depending on which cartel you have a contract with.",
 				["coord"] = { 24.5, 63.3, UNDERMINE },
-				["g"] = {
+				["groups"] = {
 					-- Bilgewater Cartel
 					i(231736),	-- Bilgewater Bruiser's Tabard
 					i(231748),	-- Bilgewater Bruiser's Spaulders
@@ -129,7 +129,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 			}),
 			n(228286, {	-- Skedgit Cinderbangs <Entrepreneur Inc.>
 				["coord"] = { 43.0, 82.8, UNDERMINE },
-				["g"] = {
+				["groups"] = {
 					i(229952, {	-- Asset Advocator (MOUNT!)
 						["cost"] = {{ "i", 234741, 25 }},	-- Miscellaneous Mechanica
 					}),

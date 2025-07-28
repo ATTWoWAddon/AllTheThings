@@ -107,8 +107,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(5125, {	-- Aurius' Reckoning
 					["qg"] = 10917,	-- Aurius
 					["sourceQuest"] = 5122,	-- The Medallion of Faith
-					["cost"] = { { "i", 12845, 1 } },	-- Medallion of Faith
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 12845, 1 } },	-- Medallion of Faith
 					["groups"] = {
 						i(17044, {	-- Will of the Martyr
 							["timeline"] = { REMOVED_4_0_3 },
@@ -140,12 +140,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(5243, {	-- Houses of the Holy
 					["qg"] = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
+					["coord"] = { 81.6, 57.8, EASTERN_PLAGUELANDS },
 					-- #if BEFORE 4.0.3
 					["description"] = "When mousing over the crates, look for 'Requires: Disarm Trap'. If you see this, it's a trap and shouldn't be touched.\n\nIf you are a dwarf, use find treasure and on the mini map it will show a dot for the holy water in the crate. It will only show crates with items in it on the mini map and not bad crates.",
 					-- #endif
-					["coord"] = { 81.6, 57.8, EASTERN_PLAGUELANDS },
-					["cost"] = { { "i", 13180, 5 } },	-- Stratholme Holy Water
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 13180, 5 } },	-- Stratholme Holy Water
 					["lvl"] = 55,
 					["groups"] = {
 						i(13216, {	-- Crown of the Penitent
@@ -462,8 +462,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(5122, {	-- The Medallion of Faith
 					["qg"] = 10917,	-- Aurius
-					["cost"] = { { "i", 12845, 1 } },	-- Medallion of Faith
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 12845, 1 } },	-- Medallion of Faith
 					["repeatable"] = true,
 				}),
 				q(5281, {	-- The Restless Souls (1/2)

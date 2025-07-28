@@ -64,7 +64,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		n(PVP_WARMODE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {
 			n(197553, {	-- Fieldmaster Emberath
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					n(BACK, {
 						bloody(120, i(217101)),	-- Draconic Warmonger's Cape
 						bloody(120, i(217103)),	-- Draconic Warmonger's Cloak
@@ -144,7 +144,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {
 			n(199601, {	-- Seltherex
 				["coord"] = { 44.7, 37.0, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					filter(BACK_F, {
 						honor(525, i(216381)),	-- Draconic Aspirant's Cape
 						honor(525, i(216379)),	-- Draconic Aspirant's Cloak
@@ -266,7 +266,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			n(199599, {	-- Calderax
 				["coord"] = { 44.3, 36.6, VALDRAKKEN },
 				["ItemAppearanceModifierID"] = 159,
-				["g"] = {
+				["groups"] = {
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							conquest(525, i(216232)),	-- Draconic Gladiator's Cloak
@@ -894,7 +894,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(199720, {	-- Glamora
 				["coord"] = { 45.9, 38.7, VALDRAKKEN },
-				["g"] = {
+				["groups"] = {
 					honor(100, i(216667, {	-- Draconic Gladiator's Tabard
 						["sourceAchievements"] = { 19509 },	-- Elite: Dragonflight Season 4
 						["bonusID"] = 0,
@@ -926,7 +926,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			n(221421, { -- Eraneth <Draconic Combatant Recipes>
 				["timeline"] = { ADDED_11_0_0 },
 				["coord"] = { 43.6, 42.4, VALDRAKKEN },
-				["g"] = sharedData({ ["cost"] = {{"i", MOH, 3}} }, {
+				["groups"] = sharedData({ ["cost"] = {{"i", MOH, 3}} }, {
 			-- #endif
 					i(211588),	-- Design: Draconic Combatant's Jeweled Amulet (RECIPE!)
 					i(211589),	-- Design: Draconic Combatant's Jeweled Signet (RECIPE!)
@@ -976,7 +976,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			-- #endif
 			n(197553, {	-- Fieldmaster Emberath
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {{"i", 190450, 3}},	-- 3x Awakened Ire
 					["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 				}, {

@@ -492,8 +492,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					["qg"] = 52135,	-- Malfurion Stormrage
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["coord"] = { 47.0, 91.3, THE_MOLTEN_FRONT },
-					["cost"] = { { "c", 416, 150 } },	-- 150x Mark of the World Tree
 					["maps"] = { MOUNT_HYJAL },
+					["cost"] = { { "c", 416, 150 } },	-- 150x Mark of the World Tree
 				}),
 				q(29160, {	-- Egg-stinction
 					["qg"] = 52921,	-- Deldren Ravenelm
@@ -689,9 +689,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					},
 				}),
 				q(29182, {	-- Flight of the Storm Crows
-					["providers"] = {
-						{ "n", 50068 },	-- Isara Riverstride
-						{ "n", 52669 },	-- Matoclaw
+					["qgs"] = {
+						50068,	-- Isara Riverstride
+						52669,	-- Matoclaw
 					},
 					["sourceQuest"] = 29181,	-- Druids of the Talon
 					["coords"] = {
@@ -1485,8 +1485,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					["qg"] = 52135,	-- Malfurion Stormrage
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["coord"] = { 47.0, 91.3, THE_MOLTEN_FRONT },
-					["cost"] = { { "c", 416, 150 } },	-- 150x Mark of the World Tree
 					["maps"] = { MOUNT_HYJAL },
+					["cost"] = { { "c", 416, 150 } },	-- 150x Mark of the World Tree
 				}),
 				q(29310, {	-- The Tipping Point
 					["qg"] = 11801,	-- Rabine Saturna
@@ -1632,8 +1632,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29147,	-- Call the Flock
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
-					["isDaily"] = true,
 					["description"] = "You have to quit your bird vehicle before you can use the Quill of the Bird-Queen to summon Millagazor.",
+					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Millagazor slain
 							["providers"] = {

@@ -594,6 +594,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				18927,	-- Human Commoner
 				19173,	-- Night Elf Commoner
 			},
+			["timeline"] = { ADDED_3_1_0 },
 			["maps"] = {
 				NORTHREND_THE_UNDERBELLY,
 				NORTHREND_DALARAN,
@@ -614,7 +615,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				THE_STORM_PEAKS,
 				WINTERSPRING,
 			},
-			["timeline"] = { ADDED_3_1_0 },
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
 			["isYearly"] = true,
@@ -628,6 +628,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				19176,	-- Tauren Commoner
 				19177,	-- Troll Commoner
 			},
+			["timeline"] = { ADDED_3_1_0 },
 			["maps"] = {
 				NORTHREND_THE_UNDERBELLY,
 				NORTHREND_DALARAN,
@@ -648,7 +649,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				UNDERCITY,
 				WINTERSPRING,
 			},
-			["timeline"] = { ADDED_3_1_0 },
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
 			["isYearly"] = true,
@@ -852,7 +852,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				i(212608),	-- Duck Potion (QI!)
 				o(420195, {	-- Golden Egg Heirloom
 					["coord"] = { 30.4, 91.3, ELWYNN_FOREST },
-					["g"] = { i(212643) },	-- Golden Egg Heirloom (QI!)
+					["groups"] = { i(212643) },	-- Golden Egg Heirloom (QI!)
 				}),
 			},
 		}),
@@ -873,7 +873,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				i(216488),	-- Duck Potion (QI!)
 				o(424098, {	-- Golden Egg Heirloom
 					["coord"] = { 44.5, 35.2, DUROTAR },
-					["g"]  = { i(216489) },	-- Golden Egg Heirloom (QI!)
+					["groups"]  = { i(216489) },	-- Golden Egg Heirloom (QI!)
 				}),
 			},
 		}),

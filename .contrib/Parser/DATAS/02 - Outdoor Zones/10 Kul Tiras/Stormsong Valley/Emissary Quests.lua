@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135793 },	-- Collector Kojo
 				["coord"] = { 40.54, 36.41, STORMSONG_VALLEY },
 				["repeatable"] = true,
-				["g"] = {
+				["groups"] = {
 					i(166245, {	-- Tortollan Seekers Supplies
 						i(166704),	-- Bowl of Glowing Pufferfish (TOY!)
 						i(166807),	-- Recipe: Boralus Blood Sausage [Rank 3] (RECIPE!)
@@ -41,7 +41,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 59.29, 69.33, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
-				["g"] = {
+				["groups"] = {
 					i(165868, {	-- Storm's Wake Equipment Cache
 						["sym"] = {
 							{"select", "mapID", STORMSONG_VALLEY},
@@ -70,7 +70,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 59.29, 69.33, STORMSONG_VALLEY },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(166294, {	-- Storm's Wake Supplies
 						i(166719),	-- Violet Abyssal Eel (PET!)
 						i(166665),	-- Technique: Glyph of Storm's Wake (RECIPE!)

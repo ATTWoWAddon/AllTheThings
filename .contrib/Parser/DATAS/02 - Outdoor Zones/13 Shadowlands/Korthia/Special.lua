@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["description"] = "Collect |cFFFFFFFFTasty Mawshrooms|r from the daily Invasive Mawshroom treasures in Korthia and feed them to Darkmaul.",
 				["coord"] = { 42.8, 32.7, KORTHIA },
 				["cost"] = { { "i", 187153, 10 } },	-- 10x Tasty Mawshroom
-				["g"] = {
+				["groups"] = {
 					i(186646),	-- Darkmaul (MOUNT!)
 				},
 			}),
@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["description"] = "Bring 10 |cFFFFFFFFLost Razorwing Eggs|r to the Razorwing Nest to receive the mount.",
 				["cost"] = { { "i", 187054, 10 } },	-- 10x Lost Razorwing Egg
 				["coord"] = { 25.7, 51.1, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186651),	-- Dusklight Razorwing (MOUNT!)
 				},
 			}),
@@ -41,7 +41,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				},
 				["questID"] = 64298,
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					q(64293, {["name"] = "Day 1"}),	-- Day 1
 					q(64294, {["name"] = "Day 2"}),	-- Day 2
 					q(64295, {["name"] = "Day 3"}),	-- Day 3
@@ -52,7 +52,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						["description"] = "After you find Maelie 6 times, return to Tinybell and accept responsibility for the wayward unicorn.",
 						["provider"] = { "n", 179930 },	-- Tinybell
 						["coord"] = { 60.7, 21.8, KORTHIA },
-						["g"] = {
+						["groups"] = {
 							i(186643),	-- Reins of the Wanderer (MOUNT!)
 						},
 					}),

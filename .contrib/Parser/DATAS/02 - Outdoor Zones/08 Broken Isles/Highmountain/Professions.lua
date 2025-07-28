@@ -12,7 +12,7 @@ root(ROOTS.Zones, {
 						["requireSkill"] = FISHING,
 						["creatureID"] = 120457,
 						["coord"] = { 32.4, 40.9, 750 },	-- Highmountain (Thunder Totem)
-						["g"] = {
+						["groups"] = {
 							i(146960, {		-- Ancient Totem Fragment
 								-- extra info for the item can go here
 							}),
@@ -45,7 +45,7 @@ root(ROOTS.Zones, {
 					i(139893, {	-- Skinning Technique: Unbroken Tooth
 						["requireSkill"] = SKINNING,
 						["crs"] = { 97449 },	-- Bristlemaul
-						["g"] = {
+						["groups"] = {
 							recipe(194170),	-- Unbroken Tooth
 						},
 					}),

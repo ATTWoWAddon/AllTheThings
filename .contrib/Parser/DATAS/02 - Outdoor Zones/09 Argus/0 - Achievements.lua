@@ -285,7 +285,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					12098,	-- Mechanical Melee
 					12099,	-- Unstoppable Undead
 				}},
-				["g"] = {
+				["groups"] = {
 					i(153040),	-- Felclaw Marsuul (PET!)
 				},
 			})),
@@ -1061,7 +1061,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				12074,	-- Shoot First, Loot Later
 				12066,	-- You Are Now Prepared!
 			}},
-			["g"] = {
+			["groups"] = {
 				title(366),	-- <Name> the Lightbringer
 			},
 		}),

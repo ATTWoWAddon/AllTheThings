@@ -11,7 +11,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			1686,	-- Upper Barrow of Carnage
 			1687,	-- Lower Barrow of Carnage
 		},
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(58095, {	-- Theater of Pain: Help Wanted
 					["provider"] = { "n", 159689 },	-- Overseer Kalvaros
@@ -26,7 +26,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						164463,	-- Paceran the Virulent
 						164461,	-- Sathel the Accursed
 					},
-					["g"] = {
+					["groups"] = {
 						-- Legendaries
 						i(183332),	-- Memory of the Master Assassin's Mark
 						-- Conduits
@@ -46,7 +46,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2401, {	-- Gorechop
 					["crs"] = { 162317 },	-- Gorechop
-					["g"] = {
+					["groups"] = {
 						-- Conduits
 						i(183510),	-- Count the Odds
 						i(180932),	-- Fueled by Violence
@@ -61,7 +61,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2390, {	-- Xav the Unfallen
 					["crs"] = { 162329 },	-- Xav the Unfallen
-					["g"] = {
+					["groups"] = {
 						-- Legendaries
 						i(183220),	-- Memory of Razelikh's Defilement
 						i(183300),	-- Memory of the Magistrate's Judgment
@@ -82,7 +82,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2389, {	-- Kul'tharok
 					["crs"] = { 162309 },	-- Kul'tharok
-					["g"] = {
+					["groups"] = {
 						-- Legendaries
 						i(182617),	-- Memory of Death's Embrace
 						i(183375),	-- Memory of the Diabolic Raiment
@@ -101,7 +101,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2417, {	-- Mordretha, the Endless Empress
 					["crs"] = { 165946 },	-- Mordretha, the Endless Empress
-					["g"] = {
+					["groups"] = {
 						ach(14372),	-- Theater of Pain
 						-- Legendaries
 						i(183314),	-- Memory of Cauterizing Shadows
@@ -126,7 +126,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2417, {	-- Mordretha, the Endless Empress
 					["crs"] = { 165946 },	-- Mordretha, the Endless Empress
-					["g"] = {
+					["groups"] = {
 						ach(14416),	-- Heroic: Theater of Pain
 					},
 				}),
@@ -138,7 +138,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						164463,	-- Paceran the Virulent
 						164461,	-- Sathel the Accursed
 					},
-					["g"] = {
+					["groups"] = {
 						ach(14297, {	-- Three Choose One
 							crit(48444),	-- Paceran the Virulent
 							crit(48445),	-- Sathel the Accursed
@@ -148,13 +148,13 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				e(2401, {	-- Gorechop
 					["crs"] = { 162317 },	-- Gorechop
-					["g"] = {
+					["groups"] = {
 						ach(14607),	-- Fresh Meat!
 					},
 				}),
 				e(2417, {	-- Mordretha, the Endless Empress
 					["crs"] = { 165946 },	-- Mordretha, the Endless Empress
-					["g"] = {
+					["groups"] = {
 						ach(14417),	-- Mythic: Theater of Pain
 						ach(14385),	-- Mythic: Theater of Pain Guild Run
 						ach(14533),	-- Royal Rumble

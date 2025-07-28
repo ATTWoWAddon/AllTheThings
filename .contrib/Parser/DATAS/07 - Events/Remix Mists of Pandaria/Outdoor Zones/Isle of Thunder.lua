@@ -4,7 +4,7 @@
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(ISLE_OF_THUNDER, {
 		["icon"] = 136014,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(19892, {	-- Campaign: Isle of Thunder
 					crit(67270, {	-- Assault the Shipyard
@@ -52,7 +52,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						20000,	-- Elusive Foes: Isle of Thunder
 						20015,	-- Looking For Group: Isle of Thunder
 					}},
-					["g"] = {
+					["groups"] = {
 						clWithoutLock(DEATHKNIGHT, {
 							iensemble(217824),	-- Arsenal: Webbed Soulforged Weaponry
 						}),
@@ -106,7 +106,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			n(FACTIONS, {
 				faction(FACTION_KIRIN_TOR_OFFENSIVE, {	-- Kirin Tor Offensive
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						n(ACHIEVEMENTS, {
 							ach(19919, {	-- Kirin Tor Offensive
 								["races"] = ALLIANCE_ONLY,
@@ -116,7 +116,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				faction(FACTION_SUNREAVER_ONSLAUGHT, {	-- Sunreaver Onslaught
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						n(ACHIEVEMENTS, {
 							ach(19920, {	-- Sunreaver Onslaught
 								["races"] = HORDE_ONLY,
@@ -129,29 +129,29 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				q(80443, {	-- Aid the Kirin Tor Offensive [A]
 					["provider"] = { "n", 67933 },	-- Vereesa Windrunner
 					["coord"] = { 63.2, 72.1, ISLE_OF_THUNDER },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
+					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(81749, {	-- Aid the Kirin Tor Offensive [A]
 					["provider"] = { "n", 67933 },	-- Vereesa Windrunner
 					["coord"] = { 63.2, 72.1, ISLE_OF_THUNDER },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
+					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),
 				q(80442, {	-- Aid the Sunreavers Onslaught [H]
 					["provider"] = { "n", 70520 },	-- Halduron Brightwing
 					["coord"] = { 32.5, 35.5, ISLE_OF_THUNDER },
-					["races"] = HORDE_ONLY,
 					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
+					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(81748, {	-- Aid the Sunreavers Onslaught [H]
 					["provider"] = { "n", 70520 },	-- Halduron Brightwing
 					["coord"] = { 32.5, 35.5, ISLE_OF_THUNDER },
-					["races"] = HORDE_ONLY,
 					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
+					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 				}),
 			}),

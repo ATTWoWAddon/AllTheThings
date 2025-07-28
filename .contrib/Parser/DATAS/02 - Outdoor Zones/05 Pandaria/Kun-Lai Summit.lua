@@ -125,164 +125,79 @@ root(ROOTS.Zones, {
 					visit_exploration(6168,{coord={57.7,20.4,KUN_LAI_SUMMIT}}),	-- Zouchin Strand
 					exploration(6169),	-- Zouchin Village
 				}),
-				n(FACTIONS, {
-					faction(FACTION_THE_AUGUST_CELESTIALS, {	-- The August Celestials
-						["description"] = "Each day, the August Celestials require your aid at one of their temples.  Speak to the representative in your faction's Vale of Eternal Blossoms shrine to find out where your help is needed (|cff3f48ccSage Whiteheart for Alliance|r and |cff880015Sage Lotusbloom for Horde|r).\n\nThe dailies will be in one of these locations:\nJade Forest - Temple of the Jade Serpent\nKrasarang Wilds - Cradle of Chi-Ji\nKun-Lai Summit - Temple of the White Tiger\nTownlong Steppes - Niuzao Temple\n\n",
-						["collectible"] = false,
-						["icon"] = 645203,
-						["groups"] = {
-							n(QUESTS, {
-								q(31394, {	-- A Celestial Experience (A)
-									["sourceQuests"] = { 31392 },	-- Temple of the White Tiger
-									["provider"] = { "n", 64540 },	-- Anduin Wrynn
-									["coord"] = { 68.7, 43.1, KUN_LAI_SUMMIT },
-									["races"] = ALLIANCE_ONLY,
-								}),
-								q(31395, {	-- A Celestial Experience (H)
-									["sourceQuests"] = { 31393 },	-- Temple of the White Tiger
-									["provider"] = { "n", 64542 },	-- Sunwalker Dezco
-									["coord"] = { 68.7, 43.0, KUN_LAI_SUMMIT },
-									["races"] = HORDE_ONLY,
-								}),
-								q(31512, {	-- A Witness to History (A)
-									["sourceQuests"] = { 31394 },	-- A Celestial Experience
-									["provider"] = { "n", 64540 },	-- Anduin Wrynn
-									["coord"] = { 68.7, 43.1, KUN_LAI_SUMMIT },
-									["races"] = ALLIANCE_ONLY,
-								}),
-								q(31511, {	-- A Witness to History (H)
-									["sourceQuests"] = { 31395 },	-- A Celestial Experience
-									["provider"] = { "n", 64542 },	-- Sunwalker Dezco
-									["coord"] = { 68.7, 43.0, KUN_LAI_SUMMIT },
-									["races"] = HORDE_ONLY,
-								}),
-								q(31517, {	-- Contending With Bullies
-									["sourceQuests"] = { 31512, 31511 },	-- A Witness to History (A, H)
-									["provider"] = { "n", 60968 },	-- Xuen
-									["isDaily"] = true,
-									["coord"] = { 67.2, 55.9, KUN_LAI_SUMMIT },
-								}),
-								q(30880, {	-- Round 1: The Streetfighter
-									["sourceQuests"] = { 31512, 31511 },	-- A Witness to History (A, H)
-									["provider"] = { "n", 60968 },	-- Xuen
-									["isDaily"] = true,
-									["coord"] = { 67.2, 55.9, KUN_LAI_SUMMIT },
-								}),
-								q(30879, {	-- Round 1: Brewmaster Chani
-									["sourceQuests"] = { 31512, 31511 },	-- A Witness to History (A, H)
-									["provider"] = { "n", 60968 },	-- Xuen
-									["isDaily"] = true,
-									["coord"] = { 67.2, 55.9, KUN_LAI_SUMMIT },
-								}),
-								q(30881, {	-- Round 2: Clever Ashyo & Ken-Ken
-									["sourceQuests"] = { 30879 },	-- Round 1: Brewmaster Chani
-									["provider"] = { "n", 60968 },	-- Xuen
-									["isDaily"] = true,
-									["coord"] = { 70.3, 51.3, KUN_LAI_SUMMIT },
-								}),
-								q(30882, {	-- Round 2: Kang Bramblestaff
-									["sourceQuests"] = { 30880 },	-- Round 1: The Streetfighter
-									["provider"] = { "n", 60968 },	-- Xuen
-									["isDaily"] = true,
-									["coord"] = { 70.3, 51.3, KUN_LAI_SUMMIT },
-								}),
-								q(30885, {	-- Round 3: Master Boom Boom
-									["sourceQuests"] = { 30882 },	-- Round 2: Kang Bramblestaff
-									["provider"] = { "n", 60968 },	-- Xuen
-									["isDaily"] = true,
-									["coord"] = { 71.7, 45.0, KUN_LAI_SUMMIT },
-								}),
-								q(30883, {	-- Round 3: The Wrestler
-									["sourceQuests"] = { 30881 },	-- Round 2: Clever Ashyo & Ken-Ken
-									["provider"] = { "n", 60968 },	-- Xuen
-									["isDaily"] = true,
-									["coord"] = { 71.7, 44.9, KUN_LAI_SUMMIT },
-								}),
-								q(30902, {	-- Round 4: Master Windfur
-									["sourceQuests"] = { 30885 },	-- Round 3: Master Boom Boom
-									["provider"] = { "n", 60968 },	-- Xuen
-									["isDaily"] = true,
-									["coord"] = { 66.4, 46.3, KUN_LAI_SUMMIT },
-								}),
-								q(30907, {	-- Round 4: The P.U.G.
-									["sourceQuests"] = { 30883 },	-- Round 3: The Wrestler
-									["provider"] = { "n", 60968 },	-- Xuen
-									["isDaily"] = true,
-									["coord"] = { 66.5, 46.4, KUN_LAI_SUMMIT },
-								}),
-								q(31492, {	-- The Torch of Strength
-									["sourceQuests"] = { 31512, 31511 },	-- A Witness to History (A, H)
-									["provider"] = { "n", 60981 },	-- Lin Tenderpaw
-									["isDaily"] = true,
-									["coord"] = { 68.5, 56.3, KUN_LAI_SUMMIT },
-								}),
-							}),
-						},
-					}),
-				}),
 				n(FLIGHT_PATHS, {
 					fp(1017, {	-- Binan Village, Kun-Lai Summit
+						["cr"] = 61474,	-- Jo the Wind Watcher <Flight Master>
 						["coord"] = { 72.4, 94.0, KUN_LAI_SUMMIT },
 					}),
 					fp(1019, {	-- Eastwind Rest, Kun-Lai Summit
+						["cr"] = 61745,	-- Soaring Paw <Flight Master>
 						["coord"] = { 62.4, 80.6, KUN_LAI_SUMMIT },
 						["races"] = HORDE_ONLY,
 					}),
 					fp(1023, {	-- Kota Basecamp, Kun-Lai Summit
+						["cr"] = 60416,	-- Uncle Eastwind <Flight Master>
 						["coord"] = { 42.8, 69.6, KUN_LAI_SUMMIT },
 					}),
 					fp(1022, {	-- One Keg, Kun-Lai Summit
+						["cr"] = 61504,	-- Little Cleankite <Flight Master>
 						["coord"] = { 57.6, 59.8, KUN_LAI_SUMMIT },
 					}),
 					fp(1117, {	-- Serpent's Spine, Kun-Lai Summit
+						["cr"] = 65863,	-- Morla Skyblade <Flight Master>
 						["coord"] = { 36.0, 83.6, KUN_LAI_SUMMIT },
 						["races"] = HORDE_ONLY,
 					}),
 					fp(1024, {	-- Shado-Pan Fallback, Kun-Lai Summit
+						["cr"] = 61473,	-- Kite Master Ni <Flight Master>
 						["coord"] = { 43.8, 89.6, KUN_LAI_SUMMIT },
 					}),
 					fp(1018, {	-- Temple of the White Tiger, Kun-Lai Summit
+						["cr"] = 61118,	-- Big Greenfeather <Flight Master>
 						["coord"] = { 66.2, 50.6, KUN_LAI_SUMMIT },
 					}),
 					fp(1020, {	-- Westwind Rest, Kun-Lai Summit
+						["cr"] = 61744,	-- Tabo the Flyer <Flight Master>
 						["coord"] = { 54.0, 84.2, KUN_LAI_SUMMIT },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					fp(1025, {	-- Winter's Blossom, Kun-Lai Summit
+						["cr"] = 61512,	-- Kite Master Len <Flight Master>
 						["coord"] = { 34.6, 59.0, KUN_LAI_SUMMIT },
 					}),
 					fp(1021, {	-- Zouchin Village, Kun-Lai Summit
+						["cr"] = 61511,	-- Bo the Wind Claimer <Flight Master>
 						["coord"] = { 62.4, 30.0, KUN_LAI_SUMMIT },
 					}),
 				}),
 				petbattles({
 					n(66738, {	-- Courageous Yon <Grand Master Pet Tamer>
 						["coord"] = { 35.8, 73.6, KUN_LAI_SUMMIT },
-						["timeline"] = { ADDED_5_1_0 },
+						["timeline"] = { ADDED_5_0_4 },
 						["petBattleLvl"] = 25,
 						["groups"] = {
 							q(31956, {	-- Grand Master Yon
 								["sourceAchievement"] = 6606,	-- Taming Pandaria
-								["timeline"] = { ADDED_5_1_0 },
+								["timeline"] = { ADDED_5_0_4 },
 								["isDaily"] = true,
 								["groups"] = {
 									i(89125),	-- Sack of Pet Supplies
 								},
 							}),
-							q(63435, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Temple Throwdown
-								["qg"] = 176655,	-- Anthea <Carefree Pet Tamer>
-								["coord"] = { 70.4, 51.4, KUN_LAI_SUMMIT },
-								["timeline"] = { ADDED_9_1_0 },
-								["isDaily"] = true,
-								["groups"] = {
-									i(184866, {	-- Grummlepouch
-										i(89587),	-- Porcupette (PET!)
-										i(184867),	-- Squibbles (PET!)
-									}),
-								},
-							})),
 						},
 					}),
+					q(63435, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- Temple Throwdown
+						["qg"] = 176655,	-- Anthea <Carefree Pet Tamer>
+						["coord"] = { 70.4, 51.4, KUN_LAI_SUMMIT },
+						["timeline"] = { ADDED_9_1_0 },
+						["isDaily"] = true,
+						["groups"] = {
+							i(184866, {	-- Grummlepouch
+								i(89587),	-- Porcupette (PET!)
+								i(184867),	-- Squibbles (PET!)
+							}),
+						},
+					})),
 					n(68465, {	-- Thundering Pandaren Spirit <Grand Master Pet Tamer>
 						["coord"] = { 64.8, 93.6, KUN_LAI_SUMMIT },
 						["timeline"] = { ADDED_5_1_0 },
@@ -318,12 +233,12 @@ root(ROOTS.Zones, {
 				}),
 				n(QUESTS, {
 					q(30581, {	-- ... and the Pot, Too!
-						["coord"] = { 60.1, 85.9, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59636 },	-- Uyen Chow
+						["qg"] = 59636,	-- Uyen Chow
 						["sourceQuests"] = {
 							30569,	-- Trouble on the Farmstead (A)
 							30570,	-- Trouble on the Farmstead (H)
 						},
+						["coord"] = { 60.1, 85.9, KUN_LAI_SUMMIT },
 						["groups"] = {
 							o_repeated({
 								i(80227),	-- Root Vegetable (QI!)
@@ -337,18 +252,30 @@ root(ROOTS.Zones, {
 							i(88398),	-- Root Veggie Stew
 						},
 					}),
+					q(31394, {	-- A Celestial Experience (A)
+						["qg"] = 64540,	-- Anduin Wrynn
+						["sourceQuests"] = { 31392 },	-- Temple of the White Tiger
+						["coord"] = { 68.7, 43.1, KUN_LAI_SUMMIT },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(31395, {	-- A Celestial Experience (H)
+						["qg"] = 64542,	-- Sunwalker Dezco
+						["sourceQuests"] = { 31393 },	-- Temple of the White Tiger
+						["coord"] = { 68.7, 43.0, KUN_LAI_SUMMIT },
+						["races"] = HORDE_ONLY,
+					}),
 					q(30746, {	-- A Fair Trade
-						["coord"] = { 42.4, 69.6, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60503 },	-- Uncle Keenbean
+						["qg"] = 60503,	-- Uncle Keenbean
 						["sourceQuest"] = 30825,	-- Kota Blend
+						["coord"] = { 42.4, 69.6, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(80944),	-- Bundle of Kafa'kota Berries (QI!)
 						},
 					}),
 					q(30820, {	-- A Funeral
-						["coord"] = { 63.1, 29.3, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60436 },	-- Li Hai
+						["qg"] = 60436,	-- Li Hai
 						["sourceQuest"] = 30819,	-- Preparing the Remains
+						["coord"] = { 63.1, 29.3, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(82496),	-- Waterfall Mantle
 							i(82497),	-- Mushan Hide Spaulders
@@ -362,8 +289,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30808, {	-- A Grummle's Luck
+						["qg"] = 59371,	-- Lucky Eightcoins
 						["coord"] = { 64.7, 61.7, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59371 },	-- Lucky Eightcoins
 						["groups"] = {
 							o_repeated({
 								i(81293),	-- Stolen Luckydos (QI!)
@@ -374,17 +301,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30715, {	-- A Line Unbroken
-						["coord"] = { 35.1, 59.6, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61819 },	-- Ban Bearheart
+						["qg"] = 61819,	-- Ban Bearheart
 						["sourceQuest"] = 30699,	-- To Winter's Blossom
+						["coord"] = { 35.1, 59.6, KUN_LAI_SUMMIT },
 					}),
 					q(30599, {	-- A Monkey Idol
-						["coord"] = { 51.9, 67.2, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59452 },	-- Brother Rabbitsfoot
+						["qg"] = 59452,	-- Brother Rabbitsfoot
 						["sourceQuests"] = {
 							30603,	-- The Broketooth Ravage
 							30602,	-- The Rabbitsfoot
 						},
+						["coord"] = { 51.9, 67.2, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(80428),	-- Corpse of Dak Dak (QI!)
 							i(80429),	-- Corpse of Ko Ko (QI!)
@@ -393,54 +320,66 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30283, {	-- A Smashing Impression
+						["qg"] = 58469,	-- Ren Firetongue
 						["coord"] = { 56.0, 91.8, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 58469 },	-- Ren Firetongue
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(30751, {	-- A Terrible Sacrifice
-						["coord"] = { 29.2, 62.3, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61820 },	-- Lao-Chin the Iron Belly
+						["qg"] = 61820,	-- Lao-Chin the Iron Belly
 						["sourceQuest"] = 30724,	-- To the Wall!
+						["coord"] = { 29.2, 62.3, KUN_LAI_SUMMIT },
 						["groups"] = {
 							o(212003, {	-- Yaungol Oil Barrel
 								i(82799),	-- Yaungol Oil Barrel (QI!)
 							}),
 						},
 					}),
+					q(31512, {	-- A Witness to History (A)
+						["qg"] = 64540,	-- Anduin Wrynn
+						["sourceQuests"] = { 31394 },	-- A Celestial Experience
+						["coord"] = { 68.7, 43.1, KUN_LAI_SUMMIT },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(31511, {	-- A Witness to History (H)
+						["qg"] = 64542,	-- Sunwalker Dezco
+						["sourceQuests"] = { 31395 },	-- A Celestial Experience
+						["coord"] = { 68.7, 43.0, KUN_LAI_SUMMIT },
+						["races"] = HORDE_ONLY,
+					}),
 					q(30506, {	-- Admiral Taylor has Awakened (3 versions of this quest from 3 different npc's but completing one gives credit for all 3)
+						["qg"] = 59076,	-- Commander Hsieh
+						["sourceQuests"] = {
+							30459,	-- All of the Arrows
+							30457,	-- Call Out Their Leader
+							30460,	-- Hit Medicine
+						},
 						["coord"] = { 70.8, 90.4, KUN_LAI_SUMMIT },
 						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 59076 },	-- Commander Hsieh
-						["sourceQuests"] = {
-							30459,	-- All of the Arrows
-							30457,	-- Call Out Their Leader
-							30460,	-- Hit Medicine
-						},
 					}),
 					q(30507, {	-- Admiral Taylor has Awakened
+						["qg"] = 59073,	-- Mayor Bramblestaff
+						["sourceQuests"] = {
+							30459,	-- All of the Arrows
+							30457,	-- Call Out Their Leader
+							30460,	-- Hit Medicine
+						},
 						["coord"] = { 72.2, 91.8, KUN_LAI_SUMMIT },
 						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 59073 },	-- Mayor Bramblestaff
-						["sourceQuests"] = {
-							30459,	-- All of the Arrows
-							30457,	-- Call Out Their Leader
-							30460,	-- Hit Medicine
-						},
 					}),
 					q(30508, {	-- Admiral Taylor has Awakened
-						["coord"] = { 71.6, 92.8, KUN_LAI_SUMMIT },
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 59077 },	-- Apothecary Cheng
+						["qg"] = 59077,	-- Apothecary Cheng
 						["sourceQuests"] = {
 							30459,	-- All of the Arrows
 							30457,	-- Call Out Their Leader
 							30460,	-- Hit Medicine
 						},
+						["coord"] = { 71.6, 92.8, KUN_LAI_SUMMIT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(30459, {	-- All of the Arrows
+						["qg"] = 59076,	-- Commander Hsieh
 						["coord"] = { 70.7, 90.3, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59076 },	-- Commander Hsieh
 						["groups"] = {
 							o(210759, {	-- Arrow for Commander Hsieh
 								i(79806),	-- Arrow for Commander Hsieh (QI!)
@@ -448,23 +387,23 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30796, {	-- An End to Everything
-						["coord"] = { 57.3, 48.0, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61297 },	-- Image of Lorewalker Cho
+						["qg"] = 61297,	-- Image of Lorewalker Cho
 						["sourceQuest"] = 30795,	-- Staying Connected
+						["coord"] = { 57.3, 48.0, KUN_LAI_SUMMIT },
 						["description"] = "Use |cFFFFD700The Tongue of Ba-Shon|r.",
 					}),
 					q(30491, {	-- At the Yak Wash
-						["coord"] = { 65.3, 62.3, 381 },
-						["provider"] = { "n", 61693 },	-- Muskpaw Jr.
+						["qg"] = 61693,	-- Muskpaw Jr.
 						["sourceQuest"] = 30488,	-- The Missing Muskpaw
+						["coord"] = { 65.3, 62.3, 381 },
 					}),
 					q(30492, {	-- Back in Yak
-						["coord"] = { 71.4, 69.2, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59354 },	-- Muskpaw Jr.
+						["qg"] = 59354,	-- Muskpaw Jr.
 						["sourceQuests"] = {
 							30491,	-- At the Yak Wash
 							30587,	-- Yakity Yak
 						},
+						["coord"] = { 71.4, 69.2, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(82574),	-- Coin of Blessings
 							i(82575),	-- Coin of Serendipity
@@ -474,27 +413,25 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31253, {	-- Back to Eastwind Rest
+						["qg"] = 59573,	-- Farmer Chow
+						["sourceQuests"] = {
+							30581,	-- ... and the Pot, Too!
+							30571,	-- Farmhand Freedom
+						},
 						["coord"] = { 60.2, 85.7, KUN_LAI_SUMMIT },
 						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 59573 },	-- Farmer Chow
-						["sourceQuests"] = {
-							30581,	-- ... and the Pot, Too!
-							30571,	-- Farmhand Freedom
-						},
 					}),
 					q(31252, {	-- Back to Westwind Rest
-						["coord"] = { 60.2, 85.7, KUN_LAI_SUMMIT },
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 59573 },	-- Farmer Chow
+						["qg"] = 59573,	-- Farmer Chow
 						["sourceQuests"] = {
 							30581,	-- ... and the Pot, Too!
 							30571,	-- Farmhand Freedom
 						},
+						["coord"] = { 60.2, 85.7, KUN_LAI_SUMMIT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(30651, {	-- Barrels of Fun (A)
-						["coord"] = { 54.1, 83.2, KUN_LAI_SUMMIT },
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 59450 },	-- Sully "The Pickle" McLeary
+						["qg"] = 59450,	-- Sully "The Pickle" McLeary
 						["sourceQuests"] = {
 							31252,	-- Back to Westwind Rest
 							30593,	-- Deanimate the Reanimated
@@ -503,18 +440,20 @@ root(ROOTS.Zones, {
 							30583,	-- Blue Dwarf Needs Food Badly
 							30575,	-- Round 'Em Up
 						},
+						["coord"] = { 54.1, 83.2, KUN_LAI_SUMMIT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(88577),	-- Explosive Barrel
 						},
 					}),
 					q(30656, {	-- Barrels of Fun (H)
-						["coord"] = { 62.7, 79.8, KUN_LAI_SUMMIT },
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 59448 },	-- Rivett Clutchpop
+						["qg"] = 59448,	-- Rivett Clutchpop
 						["sourceQuests"] = {
 							31253,	-- Back to Eastwind Rest
 							30620,	-- Mogu?! Oh No-gu!
 						},
+						["coord"] = { 62.7, 79.8, KUN_LAI_SUMMIT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							o(211312, {	-- Explosives Barrel
 								i(80528),	-- Explosives Barrel (QI!)
@@ -523,29 +462,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31251, {	-- Best Meals Anywhere!
+						["qg"] = 59448,	-- Rivett Clutchpop
+						["sourceQuest"] = 30515,	-- Challenge Accepted
 						["coord"] = { 62.7, 79.8, KUN_LAI_SUMMIT },
 						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 59448 },	-- Rivett Clutchpop
-						["sourceQuest"] = 30515,	-- Challenge Accepted
 						["groups"] = {
 							i(80245),	-- Kun-Lai Meaty Bits (QI!)
 						},
 					}),
 					q(31847, {	-- Better Dead than Dread
+						["qg"] = 61512,	-- Kite Master Len
 						["coord"] = { 34.6, 59.0, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61512 },	-- Kite Master Len
 						["isBreadcrumb"] = true,
 						-- TODO: determine sourceQuest. exclusive with "The Threat in the South" from Townlong Steppes
 					}),
 					q(31695, {	-- Beyond the Wall
-						["isBreadcrumb"] = true,
-						["coords"] = {
-							{ 54.1, 83.4, KUN_LAI_SUMMIT },
-							{ 62.3, 79.6, KUN_LAI_SUMMIT },
-						},
-						["providers"] = {
-							{ "n", 63542 },	-- Elder Tsulan
-							{ "n", 63535 },	-- Elder Shiao
+						["qgs"] = {
+							63542,	-- Elder Tsulan
+							63535,	-- Elder Shiao
 						},
 						["altQuests"] = {
 							31386,	-- The Shado-Pan Offensive (A)
@@ -557,42 +491,47 @@ root(ROOTS.Zones, {
 							30661,	-- The Ordo Warbringer (H)
 							30663,	-- The Ordo Warbringer (H)
 						},
+						["coords"] = {
+							{ 54.1, 83.4, KUN_LAI_SUMMIT },
+							{ 62.3, 79.6, KUN_LAI_SUMMIT },
+						},
+						["isBreadcrumb"] = true,
 					}),
 					q(30583, {	-- Blue Dwarf Needs Food Badly
+						["qg"] = 59450,	-- Sully "The Pickle" McLeary
+						["sourceQuest"] = 30514,	-- Challenge Accepted
 						["coord"] = { 54.1, 83.2, KUN_LAI_SUMMIT },
 						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 59450 },	-- Sully "The Pickle" McLeary
-						["sourceQuest"] = 30514,	-- Challenge Accepted
 					}),
 					q(30604, {	-- Breaking Broketooth
-						["coord"] = { 51.9, 67.2, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59452 },	-- Brother Rabbitsfoot
+						["qg"] = 59452,	-- Brother Rabbitsfoot
 						["sourceQuests"] = {
 							30603,	-- The Broketooth Ravage
 							30602,	-- The Rabbitsfoot
 						},
+						["coord"] = { 51.9, 67.2, KUN_LAI_SUMMIT },
 					}),
 					q(30798, {	-- Breaking the Emperor's Shield
-						["coord"] = { 57.3, 47.9, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61297 },	-- Image of Lorewalker Cho
+						["qg"] = 61297,	-- Image of Lorewalker Cho
 						["sourceQuest"] = 30799,	-- The Tomb of Shadows
+						["coord"] = { 57.3, 47.9, KUN_LAI_SUMMIT },
 					}),
 					q(30605, {	-- Bros Before Hozen
-						["coord"] = { 51.9, 67.2, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59452 },	-- Brother Rabbitsfoot
+						["qg"] = 59452,	-- Brother Rabbitsfoot
 						["sourceQuests"] = {
 							30599,	-- A Monkey Idol
 							30604,	-- Breaking Broketooth
 							30600,	-- No Pack Left Behind
 						},
+						["coord"] = { 51.9, 67.2, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(88379),	-- Grummlecake
 						},
 					}),
 					q(30807, {	-- By the Falls, For the Fallen
-						["coord"] = { 60.6, 21.3, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60785 },	-- Sage Liao
+						["qg"] = 60785,	-- Sage Liao
 						["sourceQuest"] = 30794,	-- Emergency Care
+						["coord"] = { 60.6, 21.3, KUN_LAI_SUMMIT },
 						["groups"] = {
 							o(211510, {	-- Sage Liao's Belongings
 								i(81177),	-- Pandaren Healing Draught (QI!)
@@ -600,8 +539,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30457, {	-- Call Out Their Leader
+						["qg"] = 59073,	-- Mayor Bramblestaff
 						["coord"] = { 72.2, 91.8, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59073 },	-- Mayor Bramblestaff
 						["groups"] = {
 							i(84542),	-- Bataari Hatchet
 							i(84539),	-- Bataari Warshield
@@ -614,21 +553,21 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30514, {	-- Challenge Accepted (A)
+						["qg"] = 63542,	-- Elder Tsulan
+						["sourceQuest"] = 30512,	-- Westwind Rest
 						["coord"] = { 56.3, 84.3, KUN_LAI_SUMMIT },
 						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 63542 },	-- Elder Tsulan
-						["sourceQuest"] = 30512,	-- Westwind Rest
 					}),
 					q(30515, {	-- Challenge Accepted (H)
+						["qg"] = 63535,	-- Elder Shiao
+						["sourceQuest"] = 30513,	-- Eastwind Rest
 						["coord"] = { 61.1, 82.2, KUN_LAI_SUMMIT },
 						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 63535 },	-- Elder Shiao
-						["sourceQuest"] = 30513,	-- Eastwind Rest
 					}),
 					q(30802, {	-- Chasing the Storm
-						["coord"] = { 33.8, 63.1, 385 },
-						["provider"] = { "n", 61297 },	-- Image of Lorewalker Cho
+						["qg"] = 61297,	-- Image of Lorewalker Cho
 						["sourceQuest"] = 30801,	-- Lessons from History
+						["coord"] = { 33.8, 63.1, 385 },
 						["groups"] = {
 							i(81890),	-- Blood-Revealed Map (QI!)
 							i(82579),	-- Lorewalker's Mark
@@ -639,107 +578,107 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30816, {	-- Checking In
-						["coord"] = { 63.1, 29.3, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60436 },	-- Li Hai
+						["qg"] = 60436,	-- Li Hai
 						["sourceQuest"] = 30935,	-- Fisherman's Tale
+						["coord"] = { 63.1, 29.3, KUN_LAI_SUMMIT },
 						["isBreadcrumb"] = true,
 					}),
 					q(31460, {	-- Cho's Missive (A)
-						["coord"] = { 53.6, 83.2, KUN_LAI_SUMMIT },
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 59451 },	-- Mishka
-						["isBreadcrumb"] = true,
+						["qg"] = 59451,	-- Mishka
 						["sourceQuests"] = {
 							30651,	-- Barrels of Fun
 							30650,	-- Pandaren Prisoners
 							30660,	-- The Ordo Warbringer
 							30662,	-- The Ordo Warbringer
 						},
+						["coord"] = { 53.6, 83.2, KUN_LAI_SUMMIT },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(31459, {	-- Cho's Missive (H)
-						["coord"] = { 62.6, 80.7, KUN_LAI_SUMMIT },
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 59449 },	-- Shademaster Kiryn
-						["isBreadcrumb"] = true,
+						["qg"] = 59449,	-- Shademaster Kiryn
 						["sourceQuests"] = {
 							30656,	-- Barrels of Fun
 							30655,	-- Pandaren Prisoners
 							30661,	-- The Ordo Warbringer
 							30663,	-- The Ordo Warbringer
 						},
+						["coord"] = { 62.6, 80.7, KUN_LAI_SUMMIT },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(30828, {	-- Cleansing the Mere
-						["coord"] = { 74.9, 88.5, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60973 },	-- Waterspeaker Gorai
+						["qg"] = 60973,	-- Waterspeaker Gorai
 						["sourceQuest"] = 30480,	-- The Ritual
+						["coord"] = { 74.9, 88.5, KUN_LAI_SUMMIT },
 					}),
 					q(30487, {	-- Comin' Round the Mountain
-						["coord"] = { 57.2, 61.2, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59696 },	-- Uncle Cloverleaf
+						["qg"] = 59696,	-- Uncle Cloverleaf
 						["sourceQuests"] = {
 							30601,	-- Instant Courage
 							30618,	-- Resupplying One Keg
 							30621,	-- They Stole My Luck
 						},
+						["coord"] = { 57.2, 61.2, KUN_LAI_SUMMIT },
 					}),
 					q(57069, {	-- Cut Off the Heads
-						["lvl"] = 120,
-						["coord"] = { 60.0, 75.6, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 156391 },	-- Li Li Stormstout
-						["timeline"] = { ADDED_8_3_0 },
+						["qg"] = 156391,	-- Li Li Stormstout
 						["sourceQuest"] = 57068,	-- Kite Surveillance
+						["coord"] = { 60.0, 75.6, KUN_LAI_SUMMIT },
+						["timeline"] = { ADDED_8_3_0 },
+						["lvl"] = 120,
 					}),
 					q(30593, {	-- Deanimate the Reanimated (A)
+						["qg"] = 59451,	-- Mishka
+						["sourceQuest"] = 30514,	-- Challenge Accepted
 						["coord"] = { 53.6, 83.2, KUN_LAI_SUMMIT },
 						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 59451 },	-- Mishka
-						["sourceQuest"] = 30514,	-- Challenge Accepted
 					}),
 					q(30594, {	-- Deanimate the Reanimated (H)
+						["qg"] = 59449,	-- Shademaster Kiryn
+						["sourceQuest"] = 30515,	-- Challenge Accepted
 						["coord"] = { 62.6, 80.7, KUN_LAI_SUMMIT },
 						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 59449 },	-- Shademaster Kiryn
-						["sourceQuest"] = 30515,	-- Challenge Accepted
 					}),
 					q(30991, {	-- Do a Barrel Roll!
-						["coord"] = { 31.8, 60.1, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61820 },	-- Lao-Chin the Iron Belly
+						["qg"] = 61820,	-- Lao-Chin the Iron Belly
 						["sourceQuests"] = {
 							30751,	-- A Terrible Sacrifice
 							30994,	-- Lao-Chin's Gambit
 						},
+						["coord"] = { 31.8, 60.1, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(88531),	-- Lao Chin's Last Mug (TOY!)
 						},
 					}),
 					q(30513, {	-- Eastwind Rest
-						["coord"] = { 71.6, 93.1, KUN_LAI_SUMMIT },
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 59442 },	-- General Nazgrim
+						["qg"] = 59442,	-- General Nazgrim
 						["sourceQuests"] = {
 							30509,	-- General Nazgrim has Awakened
 							30510,	-- General Nazgrim has Awakened
 							30511,	-- General Nazgrim has Awakened
 						},
+						["coord"] = { 71.6, 93.1, KUN_LAI_SUMMIT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(30794, {	-- Emergency Care
-						["coord"] = { 60.6, 21.3, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60694 },	-- Sage Liao
+						["qg"] = 60694,	-- Sage Liao
 						["sourceQuest"] = 30816,	-- Checking In
+						["coord"] = { 60.6, 21.3, KUN_LAI_SUMMIT },
 					}),
 					q(31011, {	-- Enemies At Our Door
-						["coord"] = { 62.3, 29.0, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61371 },	-- Lorewalker Cho
+						["qg"] = 61371,	-- Lorewalker Cho
 						["sourceQuests"] = {
 							30943,	-- Handle With Care
 							30944,	-- It Takes A Village
 							30942,	-- Make A Fighter Out of Me
 							30945,	-- What's Yours Is mine
 						},
+						["coord"] = { 62.3, 29.0, KUN_LAI_SUMMIT },
 					}),
 					q(30468, {	-- Enraged Vengeance
+						["qg"] = 59273,	-- Swordmistress Mei
 						["coord"] = { 74.7, 88.6, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59273 },	-- Swordmistress Mei
 						["groups"] = {
 							i(84535),	-- Bodyguard's Dagger
 							i(84529),	-- Bodyguard's Halberd
@@ -753,96 +692,96 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30571, {	-- Farmhand Freedom
-						["coord"] = { 60.2, 85.7, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59573 },	-- Farmer Chow
+						["qg"] = 59573,	-- Farmer Chow
 						["sourceQuests"] = {
 							30569,	-- Trouble on the Farmstead (A)
 							30570,	-- Trouble on the Farmstead (H)
 						},
+						["coord"] = { 60.2, 85.7, KUN_LAI_SUMMIT },
 					}),
 					q(30834, {	-- Father and Child Reunion
-						["coord"] = { 74.6, 76.9, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59272 },	-- Wu-Peng
+						["qg"] = 59272,	-- Wu-Peng
 						["sourceQuest"] = 30467,	-- My Son...
+						["coord"] = { 74.6, 76.9, KUN_LAI_SUMMIT },
 					}),
 					q(30992, {	-- Finish This!
-						["coord"] = { 31.8, 60.1, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61820 },	-- Lao-Chin the Iron Belly
+						["qg"] = 61820,	-- Lao-Chin the Iron Belly
 						["sourceQuest"] = 30991,	-- Do a Barrel Roll!
+						["coord"] = { 31.8, 60.1, KUN_LAI_SUMMIT },
 					}),
 					q(30935, {	-- Fisherman's Tale
-						["coord"] = { 64.0, 73.3, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61297 },	-- Image of Lorewalker Cho
+						["qg"] = 61297,	-- Image of Lorewalker Cho
 						["sourceQuest"] = 30802,	-- Chasing the Storm
+						["coord"] = { 64.0, 73.3, KUN_LAI_SUMMIT },
 					}),
 					q(30489, {	-- Fresh Needle Scent
+						["qg"] = 59353,	-- Lao Muskpaw
 						["coord"] = { 71.6, 70.2, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59353 },	-- Lao Muskpaw
 						["groups"] = {
 							i(79952),	-- Pungent Sprite Needles (QI!)
 						},
 					}),
 					q(30967, {	-- Free the Dissenters
+						["qg"] = 60973,	-- Waterspeaker Gorai
 						["coord"] = { 75.1, 87.9, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60973 },	-- Waterspeaker Gorai
 					}),
 					q(30509, {	-- General Nazgrim has Awakened (3 versions of this quest from 3 different npc's but completing one gives credit for all 3)
+						["qg"] = 59076,	-- Commander Hsieh
+						["sourceQuests"] = {
+							30459,	-- All of the Arrows
+							30457,	-- Call Out Their Leader
+							30460,	-- Hit Medicine
+						},
 						["coord"] = { 70.7, 90.3, KUN_LAI_SUMMIT },
 						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 59076 },	-- Commander Hsieh
-						["sourceQuests"] = {
-							30459,	-- All of the Arrows
-							30457,	-- Call Out Their Leader
-							30460,	-- Hit Medicine
-						},
 					}),
 					q(30510, {	-- General Nazgrim has Awakened
+						["qg"] = 59073,	-- Mayor Bramblestaff
+						["sourceQuests"] = {
+							30459,	-- All of the Arrows
+							30457,	-- Call Out Their Leader
+							30460,	-- Hit Medicine
+						},
 						["coord"] = { 72.2, 91.8, KUN_LAI_SUMMIT },
 						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 59073 },	-- Mayor Bramblestaff
-						["sourceQuests"] = {
-							30459,	-- All of the Arrows
-							30457,	-- Call Out Their Leader
-							30460,	-- Hit Medicine
-						},
 					}),
 					q(30511, {	-- General Nazgrim has Awakened
-						["coord"] = { 71.5, 92.8, KUN_LAI_SUMMIT },
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 59077 },	-- Apothecary Cheng
+						["qg"] = 59077,	-- Apothecary Cheng
 						["sourceQuests"] = {
 							30459,	-- All of the Arrows
 							30457,	-- Call Out Their Leader
 							30460,	-- Hit Medicine
 						},
+						["coord"] = { 71.5, 92.8, KUN_LAI_SUMMIT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(30339, {	-- Getting your Hands Dirty
+						["qg"] = 59341,	-- Merchant Tantan
 						["coord"] = { 55.0, 92.0, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59341 },	-- Merchant Tantan
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(30824, {	-- Gourmet Kafa
+						["qg"] = 60678,	-- Cousin Littlebrew
 						["coord"] = { 40.2, 81.5, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60678 },	-- Cousin Littlebrew
 					}),
 					q(30743, {	-- Gourmet Kafa
+						["qg"] = 60596,	-- Cousin Gootfur
 						["coord"] = { 42.3, 69.7, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60596 },	-- Cousin Gootfur
 					}),
 					q(30610, {	-- Grummle! Grummle! Grummle!
-						["coord"] = { 52.0, 67.1, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59894 },	-- Brother Yakshoe
+						["qg"] = 59894,	-- Brother Yakshoe
 						["sourceQuests"] = {
 							30607,	-- Hozen Love Their Keys
 							30608,	-- The Snackrifice
 							30606,	-- Thumping Knucklethump
-						}
+						},
+						["coord"] = { 52.0, 67.1, KUN_LAI_SUMMIT },
 					}),
 					q(30943, {	-- Handle With Care
-						["coord"] = { 63.4, 28.7, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61495 },	-- Elder Shu
+						["qg"] = 61495,	-- Elder Shu
 						["sourceQuest"] = 30935,	-- Fisherman's Tale
+						["coord"] = { 63.4, 28.7, KUN_LAI_SUMMIT },
 						["groups"] = {
 							o(211684, {	-- Volatile Blooms
 								i(82298),	-- Handful of Volatile Blooms (QI!)
@@ -855,36 +794,34 @@ root(ROOTS.Zones, {
 						["lvl"] = 82,
 					})),
 					q(30460, {	-- Hit Medicine
+						["qg"] = 59077,	-- Apothecary Cheng
 						["coord"] = { 71.5, 92.8, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59077 },	-- Apothecary Cheng
 						["groups"] = {
 							i(79819),	-- Dit Da Jow (QI!)
 						},
 					}),
 					q(30682, {	-- Holed Up
+						["qg"] = 60178,	-- Sya Zhong
 						["coord"] = { 42.9, 88.3, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60178 },	-- Sya Zhong
 						["groups"] = {
 							i(88579),	-- Jin Warmkeg's Brew (TOY!)
 						},
 					}),
 					q(30723, {	-- Honor, Even in Death
-						["coord"] = { 34.9, 59.4, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61816 },	-- Lin Silentstrike
+						["qg"] = 61816,	-- Lin Silentstrike
 						["sourceQuest"] = 30699,	-- To Winter's Blossom
+						["coord"] = { 34.9, 59.4, KUN_LAI_SUMMIT },
 					}),
 					q(30607, {	-- Hozen Love Their Keys
-						["coord"] = { 50.5, 64.0, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59894 },	-- Brother Yakshoe
+						["qg"] = 59894,	-- Brother Yakshoe
 						["sourceQuest"] = 30605,	-- Bros Before Hozen
+						["coord"] = { 50.5, 64.0, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(80535),	-- Yeti Shackle Key (QI!)
 						},
 					}),
 					q(30652, {	-- In Tents Channeling (A)
-						["coord"] = { 53.8, 83.6, KUN_LAI_SUMMIT },
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 59441 },	-- Admiral Taylor
+						["qg"] = 59441,	-- Admiral Taylor
 						["sourceQuests"] = {
 							31252,	-- Back to Westwind Rest
 							30593,	-- Deanimate the Reanimated
@@ -893,11 +830,11 @@ root(ROOTS.Zones, {
 							30583,	-- Blue Dwarf Needs Food Badly
 							30575,	-- Round 'Em Up
 						},
+						["coord"] = { 53.8, 83.6, KUN_LAI_SUMMIT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(30657, {	-- In Tents Channeling (H)
-						["coord"] = { 62.9, 80.1, KUN_LAI_SUMMIT },
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 59442 },	-- General Nazgrim
+						["qg"] = 59442,	-- General Nazgrim
 						["sourceQuests"] = {
 							31253,	-- Back to Eastwind Rest
 							30594,	-- Deanimate the Reanimated
@@ -906,27 +843,29 @@ root(ROOTS.Zones, {
 							31251,	-- Best Meals Anywhere!
 							31256,	-- Round 'Em Up!
 						},
+						["coord"] = { 62.9, 80.1, KUN_LAI_SUMMIT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(30601, {	-- Instant Courage
-						["coord"] = { 57.2, 61.1, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59696 },	-- Uncle Cloverleaf
+						["qg"] = 59696,	-- Uncle Cloverleaf
 						["sourceQuest"] = 30999,	-- Path Less Traveled
+						["coord"] = { 57.2, 61.1, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(80308),	-- Fire Lotus Incense (QI!)
 						},
 					}),
 					q(30944, {	-- It Takes A Village
-						["coord"] = { 62.3, 29.0, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61371 },	-- Lorewalker Cho
+						["qg"] = 61371,	-- Lorewalker Cho
 						["sourceQuest"] = 30935,	-- Fisherman's Tale
+						["coord"] = { 62.3, 29.0, KUN_LAI_SUMMIT },
 					}),
 					q(30797, {	-- It Was Almost Alive
-						["coord"] = { 57.1, 47.8, KUN_LAI_SUMMIT },
 						["provider"] = { "o", 211754 },	-- Curious Text
 						["sourceQuests"] = {
 							30684,	-- Seeker's Folly
 							31306,	-- Seeker's Folly
 						},
+						["coord"] = { 57.1, 47.8, KUN_LAI_SUMMIT },
 						["groups"] = {
 							o(211780, {	-- Curious Text
 								i(81892),	-- Curious Text (QI!)
@@ -934,13 +873,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30805, {	-- Justice
-						["coord"] = { 60.6, 21.3, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60785 },	-- Sage Liao
+						["qg"] = 60785,	-- Sage Liao
 						["sourceQuest"] = 30794,	-- Emergency Care
+						["coord"] = { 60.6, 21.3, KUN_LAI_SUMMIT },
 					}),
 					q(30825, {	-- Kota Blend
+						["qg"] = 60677,	-- Uncle Tallmug
 						["coord"] = { 40.3, 81.5, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60677 },	-- Uncle Tallmug
 						["groups"] = {
 							o_repeated({
 								i(81054),	-- Kafa'Kota Berry
@@ -950,29 +889,29 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30994, {	-- Lao-Chin's Gambit
-						["coord"] = { 29.3, 62.2, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61454 },	-- Suna Silentstrike
+						["qg"] = 61454,	-- Suna Silentstrike
 						["sourceQuests"] = {
 							30751,	-- A Terrible Sacrifice
 							30750,	-- Off the Wall!
 						},
+						["coord"] = { 29.3, 62.2, KUN_LAI_SUMMIT },
 					}),
 					q(30801, {	-- Lessons from History
-						["coord"] = { 57.3, 47.9, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61297 },	-- Image of Lorewalker Cho
+						["qg"] = 61297,	-- Image of Lorewalker Cho
 						["sourceQuest"] = 30800,	-- Stealing Their Thunder King
+						["coord"] = { 57.3, 47.9, KUN_LAI_SUMMIT },
 					}),
 					q(57075, {	-- Liquid Courage
-						["lvl"] = 120,
-						["coord"] = { 55.5, 91.1, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 156938 },	-- Li Li Stormstout
-						["timeline"] = { ADDED_8_3_0 },
+						["qg"] = 156938,	-- Li Li Stormstout
 						["sourceQuest"] = 57074,	-- Our Backs to the Gate
+						["coord"] = { 55.5, 91.1, KUN_LAI_SUMMIT },
+						["timeline"] = { ADDED_8_3_0 },
+						["lvl"] = 120,
 					}),
 					q(30942, {	-- Make A Fighter Out of Me
-						["coord"] = { 63.7, 30.7, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61503 },	-- Shomi
+						["qg"] = 61503,	-- Shomi
 						["sourceQuest"] = 30935,	-- Fisherman's Tale
+						["coord"] = { 63.7, 30.7, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(82599),	-- Shomi's Greatsword
 							i(82600),	-- Shomi's Mace
@@ -985,10 +924,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30619, {	-- Mogu?! Oh No-gu! (A)
+						["qg"] = 63542,	-- Elder Tsulan
+						["sourceQuest"] = 30514,	-- Challenge Accepted
 						["coord"] = { 54.1, 83.4, KUN_LAI_SUMMIT },
 						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 63542 },	-- Elder Tsulan
-						["sourceQuest"] = 30514,	-- Challenge Accepted
 						["groups"] = {
 							i(82489),	-- Dreaming Spirit Helm
 							i(82491),	-- Mindbender Cowl
@@ -1002,10 +941,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30620, {	-- Mogu?! Oh No-gu! (H)
+						["qg"] = 63535,	-- Elder Shiao
+						["sourceQuest"] = 30515,	-- Challenge Accepted
 						["coord"] = { 62.3, 79.6, KUN_LAI_SUMMIT },
 						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 63535 },	-- Elder Shiao
-						["sourceQuest"] = 30515,	-- Challenge Accepted
 						["groups"] = {
 							i(82489),	-- Dreaming Spirit Helm
 							i(82491),	-- Mindbender Cowl
@@ -1019,87 +958,87 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(57070, {	-- Mogu Massacre
-						["lvl"] = 120,
-						["coord"] = { 60.0, 75.6, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 156391 },	-- Li Li Stormstout
-						["timeline"] = { ADDED_8_3_0 },
+						["qg"] = 156391,	-- Li Li Stormstout
 						["sourceQuest"] = 57068,	-- Kite Surveillance
+						["coord"] = { 60.0, 75.6, KUN_LAI_SUMMIT },
+						["timeline"] = { ADDED_8_3_0 },
+						["lvl"] = 120,
 					}),
 					q(31456, {	-- Muskpaw Ranch (A)
-						["coord"] = { 53.7, 84.1, KUN_LAI_SUMMIT },
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 63754 },	-- Farmhand Bo
-						["isBreadcrumb"] = true,
+						["qg"] = 63754,	-- Farmhand Bo
 						["sourceQuests"] = {
 							30660,	-- The Ordo Warbringer
 							30662,	-- The Ordo Warbringer
 						},
+						["coord"] = { 53.7, 84.1, KUN_LAI_SUMMIT },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(31457, {	-- Muskpaw Ranch (H)
-						["coord"] = { 62.5, 79.4, KUN_LAI_SUMMIT },
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 63751 },	-- Farmhand Ko
-						["isBreadcrumb"] = true,
+						["qg"] = 63751,	-- Farmhand Ko
 						["sourceQuests"] = {
 							30661,	-- The Ordo Warbringer
 							30663,	-- The Ordo Warbringer
 						},
+						["coord"] = { 62.5, 79.4, KUN_LAI_SUMMIT },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(30768, {	-- My Husband...
-						["isBreadcrumb"] = true,
-						["coord"] = { 31.3, 61.6, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61454 },	-- Suna Silentstrike
-						["sourceQuest"] = 30992,	-- Finish This!
+						["qg"] = 61454,	-- Suna Silentstrike
 						["altQuests"] = {
 							31695,	-- Beyond the Wall
 							31386,	-- The Shado-Pan Offensive (A)
 							31388,	-- The Shado-Pan Offensive (H)
 						},
+						["sourceQuest"] = 30992,	-- Finish This!
+						["coord"] = { 31.3, 61.6, KUN_LAI_SUMMIT },
+						["isBreadcrumb"] = true,
 					}),
 					q(30467, {	-- My Son...
-						["coord"] = { 74.9, 88.8, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59263 },	-- Merchant Shi
+						["qg"] = 59263,	-- Merchant Shi
 						["sourceQuests"] = {
 							31451,	-- The Missing Merchant (H)
 							31452,	-- The Missing Merchant (A)
 						},
+						["coord"] = { 74.9, 88.8, KUN_LAI_SUMMIT },
 					}),
 					q(57071, {	-- No Brew Left Behind
-						["lvl"] = 120,
-						["coord"] = { 59.9, 75.5, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 156390 },	-- Chen Stormstout
-						["timeline"] = { ADDED_8_3_0 },
+						["qg"] = 156390,	-- Chen Stormstout
 						["sourceQuest"] = 57068,	-- Kite Surveillance
+						["coord"] = { 59.9, 75.5, KUN_LAI_SUMMIT },
+						["timeline"] = { ADDED_8_3_0 },
+						["lvl"] = 120,
 					}),
 					q(30600, {	-- No Pack Left Behind
-						["coord"] = { 51.9, 67.2, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59452 },	-- Brother Rabbitsfoot
+						["qg"] = 59452,	-- Brother Rabbitsfoot
 						["sourceQuests"] = {
 							30603,	-- The Broketooth Ravage
 							30602,	-- The Rabbitsfoot
 						},
+						["coord"] = { 51.9, 67.2, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(80307),	-- Grummlepack (QI!)
 							i(88397),	-- Grummlepack
 						},
 					}),
 					q(30750, {	-- Off the Wall!
-						["coord"] = { 29.3, 62.2, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61454 },	-- Suna Silentstrike
+						["qg"] = 61454,	-- Suna Silentstrike
 						["sourceQuest"] = 30724,	-- To the Wall!
+						["coord"] = { 29.3, 62.2, KUN_LAI_SUMMIT },
 					}),
 					q(30614, {	-- Oil Stop
+						["qg"] = 59402,	-- Slimy Inkstain
 						["coord"] = { 65.4, 60.8, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59402 },	-- Slimy Inkstain
 						["groups"] = {
 							i(80312),	-- Empty Oil Vial (QI!)
 							i(80311),	-- Filled Oil Vial (QI!)
 						},
 					}),
 					q(30683, {	-- One Traveler's Misfortune
-						["coord"] = { 48.1, 49.0, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60175 },	-- Lucky Bluestring
+						["qg"] = 60175,	-- Lucky Bluestring
 						["sourceQuest"] = 30487,	-- Comin' Round the Mountain
+						["coord"] = { 48.1, 49.0, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(82505),	-- Waterfall Robe
 							i(82506),	-- Mushan Hide Tunic
@@ -1113,20 +1052,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(57074, {	-- Our Backs to the Gate
-						["lvl"] = 120,
-						["coord"] = { 59.9, 75.5, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 156390 },	-- Chen Stormstout
-						["timeline"] = { ADDED_8_3_0 },
+						["qg"] = 156390,	-- Chen Stormstout
 						["sourceQuests"] = {
 							57069,	-- Cut Off the Heads
 							57070,	-- Mogu Massacre
 							57072,	-- Yak of All Trades
 						},
+						["coord"] = { 59.9, 75.5, KUN_LAI_SUMMIT },
+						["timeline"] = { ADDED_8_3_0 },
+						["lvl"] = 120,
 					}),
 					q(30650, {	-- Pandaren Prisoners (A)
-						["coord"] = { 54.1, 83.4, KUN_LAI_SUMMIT },
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 63542 },	-- Elder Tsulan
+						["qg"] = 63542,	-- Elder Tsulan
 						["sourceQuests"] = {
 							31252,	-- Back to Westwind Rest
 							30593,	-- Deanimate the Reanimated
@@ -1135,26 +1072,28 @@ root(ROOTS.Zones, {
 							30583,	-- Blue Dwarf Needs Food Badly
 							30575,	-- Round 'Em Up
 						},
+						["coord"] = { 54.1, 83.4, KUN_LAI_SUMMIT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(30655, {	-- Pandaren Prisoners (H)
-						["coord"] = { 62.3, 79.6, KUN_LAI_SUMMIT },
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 63535 },	-- Elder Shiao
+						["qg"] = 63535,	-- Elder Shiao
 						["sourceQuests"] = {
 							31253,	-- Back to Eastwind Rest
 							30620,	-- Mogu?! Oh No-gu!
 						},
+						["coord"] = { 62.3, 79.6, KUN_LAI_SUMMIT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(30999, {	-- Path Less Traveled
-						["coord"] = { 57.3, 61.6, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61847 },	-- Lorewalker Cho
+						["qg"] = 61847,	-- Lorewalker Cho
 						["sourceQuests"] = {
 							31460,	-- Cho's Missive (A)
 							31459,	-- Cho's Missive (H)
 						},
+						["coord"] = { 57.3, 61.6, KUN_LAI_SUMMIT },
 					}),
 					q(32816, {	-- Path of the Last Emperor
-						["provider"] = { "n", 70980 },	-- Seer Hao Pham Roo
+						["qg"] = 70980,	-- Seer Hao Pham Roo
 						["sourceQuest"] = 32815,	-- The Old Seer
 						["groups"] = {
 							i(98137),	-- Treads of Reticence
@@ -1169,17 +1108,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30819, {	-- Preparing the Remains
-						["coord"] = { 60.6, 21.3, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60785 },	-- Sage Liao
+						["qg"] = 60785,	-- Sage Liao
 						["sourceQuests"] = {
 							30807,	-- By the Falls, For the Fallen
 							30805,	-- Justice
 							30806,	-- The Scent of Life
 						},
+						["coord"] = { 60.6, 21.3, KUN_LAI_SUMMIT },
 					}),
 					q(30595, {	-- Profiting off of the Past
+						["qg"] = 59821,	-- Bao Jian
 						["coord"] = { 59.6, 78.2, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59821 },	-- Bao Jian
 						["groups"] = {
 							o_repeated({
 								i(80294),	-- Mogu Relic (QI!)
@@ -1190,8 +1129,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30469, {	-- Repossession
+						["qg"] = 59263,	-- Merchant Shi
 						["coord"] = { 74.9, 88.8, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59263 },	-- Merchant Shi
 						["groups"] = {
 							o(210887, {	-- Untainted Supplies
 								i(79880),	-- Stolen Supplies (QI!)
@@ -1199,9 +1138,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31228, {	-- Prophet Khar'zul
-						["coord"] = { 62.3, 29.0, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 63784 },	-- Lorewalker Cho
+						["qg"] = 63784,	-- Lorewalker Cho
 						["sourceQuest"] = 30946,	-- Revelations
+						["coord"] = { 62.3, 29.0, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(82514),	-- Waterfall Leggings
 							i(82515),	-- Mushan Hide Legguards
@@ -1229,9 +1168,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30618, {	-- Resupplying One Keg
-						["coord"] = { 57.7, 61.7, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59695 },	-- Big Sal
+						["qg"] = 59695,	-- Big Sal
 						["sourceQuest"] = 30999,	-- Path Less Traveled
+						["coord"] = { 57.7, 61.7, KUN_LAI_SUMMIT },
 						["groups"] = {
 							o_repeated({
 								i(80315),	-- Stolen Supplies (QI!)
@@ -1252,30 +1191,30 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(57076, {	-- Return to Mistfall
-						["lvl"] = 120,
-						["coord"] = { 55.4, 91.1, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 156937 },	-- Chen Stormstout
-						["timeline"] = { ADDED_8_3_0 },
+						["qg"] = 156937,	-- Chen Stormstout
 						["sourceQuest"] = 57075,	-- Liquid Courage
+						["coord"] = { 55.4, 91.1, KUN_LAI_SUMMIT },
+						["timeline"] = { ADDED_8_3_0 },
+						["lvl"] = 120,
 					}),
 					q(30946, {	-- Revelations
-						["coord"] = { 62.3, 29.0, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 63750 },	-- Lorewalker Cho
+						["qg"] = 63750,	-- Lorewalker Cho
 						["sourceQuest"] = 31011,	-- Enemies At Our Door
+						["coord"] = { 62.3, 29.0, KUN_LAI_SUMMIT },
 					}),
 					q(30617, {	-- Roadside Assistance
-						["coord"] = { 64.8, 60.4, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59597 },	-- Smokey Sootassle
+						["qg"] = 59597,	-- Smokey Sootassle
 						["sourceQuest"] = 30616,	-- Traffic Issues
+						["coord"] = { 64.8, 60.4, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(88381),	-- Silversage Incence (TOY!)
 						},
 					}),
 					q(30575, {	-- Round 'Em Up (A)
+						["qg"] = 59441,	-- Admiral Taylor
+						["sourceQuest"] = 30514,	-- Challenge Accepted
 						["coord"] = { 53.7, 82.6, KUN_LAI_SUMMIT },
 						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 59441 },	-- Admiral Taylor
-						["sourceQuest"] = 30514,	-- Challenge Accepted
 						["groups"] = {
 							i(84511),	-- Dreaming Spirit Monnion
 							i(84517),	-- Kafa Armored Shoulders
@@ -1289,10 +1228,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31256, {	-- Round 'Em Up (H)
+						["qg"] = 59442,	-- General Nazgrim
+						["sourceQuest"] = 30515,	-- Challenge Accepted
 						["coord"] = { 62.9, 80.1, KUN_LAI_SUMMIT },
 						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 59442 },	-- General Nazgrim
-						["sourceQuest"] = 30515,	-- Challenge Accepted
 						["groups"] = {
 							i(84511),	-- Dreaming Spirit Monnion
 							i(84517),	-- Kafa Armored Shoulders
@@ -1306,36 +1245,36 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30684, {	-- Seeker's Folly
-						["coord"] = { 48.1, 49.0, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60175 },	-- Lucky Bluestring
+						["qg"] = 60175,	-- Lucky Bluestring
 						["sourceQuest"] = 30683,	-- One Traveler's Misfortune
+						["coord"] = { 48.1, 49.0, KUN_LAI_SUMMIT },
 					}),
 					q(31306, {	-- Seeker's Folly
-						["coord"] = { 48.0, 49.1, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60180 },	-- Lucky Bluestring
+						["qg"] = 60180,	-- Lucky Bluestring
 						["sourceQuest"] = 30683,	-- One Traveler's Misfortune
+						["coord"] = { 48.0, 49.1, KUN_LAI_SUMMIT },
 						["description"] = "This version becomes available if you abandon the first version.",
 					}),
 					q(30742, {	-- Shut it Down
+						["qg"] = 60596,	-- Cousin Gootfur
 						["coord"] = { 42.3, 69.7, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60596 },	-- Cousin Gootfur
 					}),
 					q(30823, {	-- Shut it Down
+						["qg"] = 60678,	-- Cousin Littlebrew
 						["coord"] = { 40.2, 81.5, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60678 },	-- Cousin Littlebrew
 					}),
 					q(30795, {	-- Staying Connected
-						["coord"] = { 43.7, 51.1, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60795 },	-- Lorewalker Cho
+						["qg"] = 60795,	-- Lorewalker Cho
 						["sourceQuest"] = 30829,	-- The Tongue of Ba-Shon
+						["coord"] = { 43.7, 51.1, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(81712),	-- The Tongue of Ba-Shon (QI!)
 						},
 					}),
 					q(30800, {	-- Stealing Their Thunder King
-						["coord"] = { 57.3, 47.9, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61297 },	-- Image of Lorewalker Cho
+						["qg"] = 61297,	-- Image of Lorewalker Cho
 						["sourceQuest"] = 30798,	-- Breaking the Emperor's Shield
+						["coord"] = { 57.3, 47.9, KUN_LAI_SUMMIT },
 						["groups"] = {
 							o(211967, {	-- King's Coffer
 								i(82764),	-- Bottom Fragment of Lei Shen's Tablet (QI!)
@@ -1343,21 +1282,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30340, {	-- Stick in the Mud
+						["qg"] = 59341,	-- Merchant Tantan
 						["coord"] = { 55.0, 92.0, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59341 },	-- Merchant Tantan
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(31392, {	-- Temple of the White Tiger (A)
-						["races"] = ALLIANCE_ONLY,
-						["isBreadcrumb"] = true,
-						["coords"] = {
-							{ 72.0, 94.2, KUN_LAI_SUMMIT },
-							{ 54.5, 77.1, KRASARANG_WILDS },	-- Leni Kelpenstout
-							{ 45.7, 43.7, THE_JADE_FOREST },	-- Peiji Goldendraft
-							{ 74.8, 81.3, TOWNLONG_STEPPES },	-- Tigermaster Liu-Do
-							{ 55.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },	-- Hopsmaster Chang
-						},
 						["qgs"] = {
 							63751,	-- Farmhand Ko
 							64448,	-- Hopsmaster Chang
@@ -1366,10 +1296,25 @@ root(ROOTS.Zones, {
 							66247,	-- Tigermaster Liu-Do
 							64521,	-- Wanderer Chu
 						},
+						["coords"] = {
+							{ 72.0, 94.2, KUN_LAI_SUMMIT },
+							{ 54.5, 77.1, KRASARANG_WILDS },	-- Leni Kelpenstout
+							{ 45.7, 43.7, THE_JADE_FOREST },	-- Peiji Goldendraft
+							{ 74.8, 81.3, TOWNLONG_STEPPES },	-- Tigermaster Liu-Do
+							{ 55.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },	-- Hopsmaster Chang
+						},
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(31393, {	-- Temple of the White Tiger (H)
-						["races"] = HORDE_ONLY,
-						["isBreadcrumb"] = true,
+						["qgs"] = {
+							63751,	-- Farmhand Ko
+							64448,	-- Hopsmaster Chang
+							60289,	-- Leni Kelpenstout
+							55809,	-- Peiji Goldendraft
+							66247,	-- Tigermaster Liu-Do
+							64521,	-- Wanderer Chu
+						},
 						["coords"] = {
 							{ 72.0, 94.2, KUN_LAI_SUMMIT },
 							{ 54.5, 77.1, KRASARANG_WILDS },	-- Leni Kelpenstout
@@ -1378,20 +1323,14 @@ root(ROOTS.Zones, {
 							{ 74.8, 81.3, TOWNLONG_STEPPES },	-- Tigermaster Liu-Do
 							{ 55.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },	-- Hopsmaster Chang
 						},
-						["qgs"] = {
-							63751,	-- Farmhand Ko
-							64448,	-- Hopsmaster Chang
-							60289,	-- Leni Kelpenstout
-							55809,	-- Peiji Goldendraft
-							66247,	-- Tigermaster Liu-Do
-							64521,	-- Wanderer Chu
-						},
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(31207, {	-- The Arena of Annihilation
-						["lvl"] = 90,
-						["maps"] = { 480 },	-- Arena of Annihilation
+						["qg"] = 63315,	-- Gurgthock
 						["coord"] = { 68.6, 48.3, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 63315 },	-- Gurgthock
+						["maps"] = { 480 },	-- Arena of Annihilation
+						["lvl"] = 90,
 						["groups"] = {
 							i(90466),	-- Maki's Mashing Mace
 							i(90465),	-- Scar-Shell's Scintillating Staff
@@ -1404,17 +1343,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30603, {	-- The Broketooth Ravage
-						["coord"] = { 49.1, 70.4, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59806 },	-- Brother Rabbitsfoot
+						["qg"] = 59806,	-- Brother Rabbitsfoot
 						["sourceQuest"] = 30592,	-- The Burlap Trail: To Burlap Waystation
+						["coord"] = { 49.1, 70.4, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(81137),	-- Rabbitsfoot's Luckydo (QI!)
 						},
 					}),
 					q(30747, {	-- The Burlap Grind
-						["coord"] = { 42.5, 69.3, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60679 },	-- Nephew Burrberry
+						["qg"] = 60679,	-- Nephew Burrberry
 						["sourceQuest"] = 30746,	-- A Fair Trade
+						["coord"] = { 42.5, 69.3, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(81183),	-- Flask of Kafa (QI!)
 							i(82525),	-- Dreaming Spirit Sabatons
@@ -1429,22 +1368,22 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30821, {	-- The Burlap Grind (daily)
+						["qg"] = 60679,	-- Nephew Burrberry
+						["sourceQuest"] = 30747,	-- The Burlap Grind
 						["coord"] = { 42.5, 69.3, KUN_LAI_SUMMIT },
 						["isDaily"] = true,
-						["provider"] = { "n", 60679 },	-- Nephew Burrberry
-						["sourceQuest"] = 30747,	-- The Burlap Grind
 					}),
 					q(30592, {	-- The Burlap Trail: To Burlap Waystation
+						["qg"] = 59701,	-- Brother Lintpocket
 						["coord"] = { 58.0, 61.4, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59701 },	-- Brother Lintpocket
 						["groups"] = {
 							i(88384),	-- Burlap Ritual Bag
 						},
 					}),
 					q(30692, {	-- The Burlap Trail: To Kota Basecamp
-						["coord"] = { 51.6, 67.8, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59703 },	-- Brother Trailscenter
+						["qg"] = 59703,	-- Brother Trailscenter
 						["sourceQuest"] = 30612,	-- The Leader Hozen
+						["coord"] = { 51.6, 67.8, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(82584),	-- Snowfall Shawl
 							i(82585),	-- Snowdrift Drape
@@ -1454,18 +1393,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30665, {	-- The Defense of Shado-Pan Fallback
-						["coord"] = { 44.4, 89.9, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60161 },	-- Shado-Master Chong
+						["qg"] = 60161,	-- Shado-Master Chong
 						["sourceQuests"] = {
 							30459,	-- All of the Arrows
 							30457,	-- Call Out Their Leader
 							30460,	-- Hit Medicine
 						},
+						["coord"] = { 44.4, 89.9, KUN_LAI_SUMMIT },
 					}),
 					q(30855, {	-- The Fall of Shai Hu
-						["coord"] = { 74.9, 88.5, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61065 },	-- Waterspeaker Gorai
+						["qg"] = 61065,	-- Waterspeaker Gorai
 						["sourceQuest"] = 30828,	-- Cleansing the Mere
+						["coord"] = { 74.9, 88.5, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(82552),	-- Dreaming Spirit Armbands
 							i(82554),	-- Mindbender Cuffs
@@ -1479,9 +1418,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30804, {	-- The Fearmaster
-						["coord"] = { 71.0, 69.1, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59353 },	-- Lao Muskpaw
+						["qg"] = 59353,	-- Lao Muskpaw
 						["sourceQuest"] = 30582,	-- The Late Mrs. Muskpaw
+						["coord"] = { 71.0, 69.1, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(84520),	-- Dreaming Spirit Boots
 							i(84526),	-- Kafa Armored Warboots
@@ -1495,20 +1434,20 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30582, {	-- The Late Mrs. Muskpaw
-						["cr"] = 59335,	-- Burilgi Despoiler
-						["coord"] = { 70.3, 71.9, KUN_LAI_SUMMIT },
 						["provider"] = { "i", 80241 },	-- Muskpaw's Keepsake
+						["coord"] = { 70.3, 71.9, KUN_LAI_SUMMIT },
+						["cr"] = 59335,	-- Burilgi Despoiler
 						["groups"] = {
 							i(80241),	-- Muskpaw's Keepsake (QI!)
 						},
 					}),
 					q(30612, {	-- The Leader Hozen
-						["coord"] = { 45.9, 64.0, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59452 },	-- Brother Rabbitsfoot
+						["qg"] = 59452,	-- Brother Rabbitsfoot
 						["sourceQuests"] = {
 							30610,	-- Grummel! Grummle! Grummle!
 							30611,	-- Unleash The Yeti!
 						},
+						["coord"] = { 45.9, 64.0, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(82541),	-- Waterfall Gloves
 							i(82542),	-- Mushan Hide Gloves
@@ -1522,41 +1461,41 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31452, {	-- The Missing Merchant (A)
-						["coord"] = { 54.1, 83.4, KUN_LAI_SUMMIT },
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 63542 },	-- Elder Tsulan
-						["isBreadcrumb"] = true,
+						["qg"] = 63542,	-- Elder Tsulan
 						["sourceQuests"] = {
 							30651,	-- Barrels of Fun
 							30650,	-- Pandaren Prisoners
 							30660,	-- The Ordo Warbringer
 							30662,	-- The Ordo Warbringer
 						},
+						["coord"] = { 54.1, 83.4, KUN_LAI_SUMMIT },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(31451, {	-- The Missing Merchant (H)
-						["coord"] = { 62.3, 79.6, KUN_LAI_SUMMIT },
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 63535 },	-- Elder Shiao
-						["isBreadcrumb"] = true,
+						["qg"] = 63535,	-- Elder Shiao
 						["sourceQuests"] = {
 							30656,	-- Barrels of Fun
 							30655,	-- Pandaren Prisoners
 							30661,	-- The Ordo Warbringer
 							30663,	-- The Ordo Warbringer
 						},
+						["coord"] = { 62.3, 79.6, KUN_LAI_SUMMIT },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(30488, {	-- The Missing Muskpaw
-						["coord"] = { 71.6, 70.2, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59353 },	-- Lao Muskpaw
+						["qg"] = 59353,	-- Lao Muskpaw
 						["sourceQuests"] = {
 							31456,	-- Muskpaw Ranch (A)
 							31457,	-- Muskpaw Ranch (H)
 						},
+						["coord"] = { 71.6, 70.2, KUN_LAI_SUMMIT },
 					}),
 					q(30660, {	-- The Ordo Warbringer (A)
-						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 30652,	-- In Tents Channeling
 						["description"] = "Automatically granted after completing the criteria for |cFFFFD700In Tents Channeling|r.",
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(82590),	-- Blazecaster's Wand
 							i(82598),	-- Fireblaze Clobberer
@@ -1571,11 +1510,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30662, {	-- The Ordo Warbringer (A)
-						["coord"] = { 53.9, 83.4, KUN_LAI_SUMMIT },
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 59441 },	-- Admiral Taylor
+						["qg"] = 59441,	-- Admiral Taylor
 						["sourceQuest"] = 30652,	-- In Tents Channeling
+						["coord"] = { 53.9, 83.4, KUN_LAI_SUMMIT },
 						["description"] = "Only available if you abandon the original version of the quest.",
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(82590),	-- Blazecaster's Wand
 							i(82598),	-- Fireblaze Clobberer
@@ -1590,9 +1529,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30661, {	-- The Ordo Warbringer (H)
-						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 30657,	-- In Tents Channeling
 						["description"] = "Automatically granted after completing the criteria for |cFFFFD700In Tents Channeling|r.",
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(82590),	-- Blazecaster's Wand
 							i(82598),	-- Fireblaze Clobberer
@@ -1607,11 +1546,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30663, {	-- The Ordo Warbringer (H)
-						["coord"] = { 62.4, 80.4, KUN_LAI_SUMMIT },
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 59442 },	-- General Nazgrim
+						["qg"] = 59442,	-- General Nazgrim
 						["sourceQuest"] = 30657,	-- In Tents Channeling
+						["coord"] = { 62.4, 80.4, KUN_LAI_SUMMIT },
 						["description"] = "Only available if you abandon the original version of the quest.",
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(82590),	-- Blazecaster's Wand
 							i(82598),	-- Fireblaze Clobberer
@@ -1626,30 +1565,30 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30602, {	-- The Rabbitsfoot
-						["coord"] = { 51.6, 67.8, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59703 },	-- Brother Trailscenter
+						["qg"] = 59703,	-- Brother Trailscenter
 						["sourceQuest"] = 30592,	-- The Burlap Trail: To Burlap Waystation
+						["coord"] = { 51.6, 67.8, KUN_LAI_SUMMIT },
 					}),
 					q(30480, {	-- The Ritual
-						["coord"] = { 75.1, 88.0, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60973 },	-- Waterspeaker Gorai
+						["qg"] = 60973,	-- Waterspeaker Gorai
 						["sourceQuests"] = {
 							30468,	-- Enraged Vengeance
 							30967,	-- Free the Dissenters
 							30496,	-- The Waterspeaker's Staff
 						},
+						["coord"] = { 75.1, 88.0, KUN_LAI_SUMMIT },
 					}),
 					q(31254, {	-- The Road to Kun-Lai
-						["races"] = ALLIANCE_ONLY,
-						-- #if AFTER 7.3.5
-						["sourceQuests"] = { 49559 },	-- Hero's Call: Kun-Lai Summit!
-						-- #endif
 						["qgs"] = {
 							63778,	-- Messenger Grummle
 						},
+						-- #if AFTER 7.3.5
+						["sourceQuests"] = { 49559 },	-- Hero's Call: Kun-Lai Summit!
+						-- #endif
 						["coords"] = {
 							{ 70.0, 23.6, VALLEY_OF_THE_FOUR_WINDS },	-- Messenger Grummle
 						},
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(31255, {	-- The Road to Kun-Lai
 						["qg"] = 63778,	-- Messenger Grummle
@@ -1659,7 +1598,7 @@ root(ROOTS.Zones, {
 						["coords"] = {
 							{ 70.0, 23.6, VALLEY_OF_THE_FOUR_WINDS },
 							{ 41.7, 29.9, KRASARANG_WILDS },
-					--	TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" ?
+							--	TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" ?
 							{ 45.7, 43.8, THE_JADE_FOREST },
 						},
 						["races"] = HORDE_ONLY,
@@ -1668,28 +1607,28 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(38936, {	-- The Road to Kun-Lai (Adventure guide)
-						["isBreadcrumb"] = true,
 						["description"] = "This quest needs to be accepted from the 'Adventure Guide'.",
+						["isBreadcrumb"] = true,
 					}),
 					q(30806, {	-- The Scent of Life
-						["coord"] = { 60.6, 21.3, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60785 },	-- Sage Liao
+						["qg"] = 60785,	-- Sage Liao
 						["sourceQuest"] = 30794,	-- Emergency Care
+						["coord"] = { 60.6, 21.3, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(80907),	-- Opalescent Blue Crab Shell (QI!)
 							i(81261),	-- Stolen Pandaren Spices (QI!)
 						},
 					}),
 					q(30281, {	-- The Silent Approach
+						["qg"] = 58470,	-- He Softfoot
 						["coord"] = { 55.2, 92.0, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 58470 },	-- He Softfoot
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(30608, {	-- The Snackrifice
-						["coord"] = { 50.5, 64.0, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59894 },	-- Brother Yakshoe
+						["qg"] = 59894,	-- Brother Yakshoe
 						["sourceQuest"] = 30605,	-- Bros Before Hozen
+						["coord"] = { 50.5, 64.0, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(82532),	-- Waterfall Cord
 							i(82533),	-- Mushan Hide Belt
@@ -1703,39 +1642,39 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31455, {	-- The Shado-Pan (A)
-						["coord"] = { 53.9, 83.4, KUN_LAI_SUMMIT },
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 59441 },	-- Admiral Taylor
-						["isBreadcrumb"] = true,
+						["qg"] = 59441,	-- Admiral Taylor
 						["sourceQuests"] = {
 							30651,	-- Barrels of Fun
 							30650,	-- Pandaren Prisoners
 							30660,	-- The Ordo Warbringer
 							30662,	-- The Ordo Warbringer
 						},
+						["coord"] = { 53.9, 83.4, KUN_LAI_SUMMIT },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(31453, {	-- The Shado-Pan (H)
-						["coord"] = { 62.4, 80.4, KUN_LAI_SUMMIT },
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 59442 },	-- General Nazgrim
-						["isBreadcrumb"] = true,
+						["qg"] = 59442,	-- General Nazgrim
 						["sourceQuests"] = {
 							30656,	-- Barrels of Fun
 							30655,	-- Pandaren Prisoners
 							30661,	-- The Ordo Warbringer
 							30663,	-- The Ordo Warbringer
 						},
+						["coord"] = { 62.4, 80.4, KUN_LAI_SUMMIT },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(30482, {	-- The Soul-Gatherer
+						["qg"] = 58470,	-- He Softfoot
 						["coord"] = { 55.2, 92.0, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 58470 },	-- He Softfoot
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(30799, {	-- The Tomb of Shadows
-						["coord"] = { 57.1, 47.8, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61297 },	-- Image of Lorewalker Cho
+						["qg"] = 61297,	-- Image of Lorewalker Cho
 						["sourceQuest"] = 30797,	-- It Was Almost Alive
+						["coord"] = { 57.1, 47.8, KUN_LAI_SUMMIT },
 						["groups"] = {
 							o(211770, {	-- Shen Dynasty Tablet
 								i(82393),	-- Shen Dynasty Rubbbing (QI!)
@@ -1754,24 +1693,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30829, {	-- The Tongue of Ba-Shon
-						["coord"] = { 43.7, 51.0, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60795 },	-- Lorewalker Cho
+						["qg"] = 60795,	-- Lorewalker Cho
 						["sourceQuests"] = {
 							30684,	-- Seeker's Folly
 							31306,	-- Seeker's Folly
 						},
+						["coord"] = { 43.7, 51.0, KUN_LAI_SUMMIT },
 					}),
 					q(30496, {	-- The Waterspeaker's Staff
+						["qg"] = 60973,	-- Waterspeaker Gorai
 						["coord"] = { 75.1, 87.9, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60973 },	-- Waterspeaker Gorai
 						["groups"] = {
 							i(81385),	-- Stolen Inkgill Ritual Staff (QI!)
 						},
 					}),
 					q(30621, {	-- They Stole My Luck!
-						["coord"] = { 57.3, 60.1, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59716 },	-- Ji-Lu the Lucky
+						["qg"] = 59716,	-- Ji-Lu the Lucky
 						["sourceQuest"] = 30999,	-- Path Less Traveled
+						["coord"] = { 57.3, 60.1, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(80316),	-- Lucky Virmen's Foot (QI!)
 							i(80317),	-- Lucky Yak Shoe (QI!)
@@ -1780,9 +1719,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30606, {	-- Thumping Knucklethump
-						["coord"] = { 50.5, 64.0, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59894 },	-- Brother Yakshoe
+						["qg"] = 59894,	-- Brother Yakshoe
 						["sourceQuest"] = 30605,	-- Bros Before Hozen
+						["coord"] = { 50.5, 64.0, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(88086),	-- Mushan Hide Vest
 							i(88085),	-- Dreaming Spirit Vest
@@ -1794,21 +1733,21 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30724, {	-- To the Wall!
-						["coord"] = { 34.9, 59.3, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61816 },	-- Lin Silentstrike
+						["qg"] = 61816,	-- Lin Silentstrike
 						["sourceQuests"] = {
 							30715,	-- A Line Unbroken
 							30723,	-- Honor, Even in Death
 						},
+						["coord"] = { 34.9, 59.3, KUN_LAI_SUMMIT },
 					}),
 					q(30699, {	-- To Winter's Blossom
-						["coord"] = { 44.4, 89.9, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60161 },	-- Shado-Master Chong
+						["qg"] = 60161,	-- Shado-Master Chong
 						["sourceQuest"] = 30690,	-- Unmasking the Yaungol
+						["coord"] = { 44.4, 89.9, KUN_LAI_SUMMIT },
 					}),
 					q(30616, {	-- Traffic Issues
+						["qg"] = 59597,	-- Smokey Sootassle
 						["coord"] = { 64.8, 60.4, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59597 },	-- Smokey Sootassle
 						["groups"] = {
 							i(82571),	-- Burlap Loop
 							i(82572),	-- Fire Camp Ring
@@ -1818,38 +1757,38 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30826, {	-- Trouble Brewing
+						["qg"] = 60677,	-- Uncle Tallmug
 						["coord"] = { 40.3, 81.5, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60677 },	-- Uncle Tallmug
 					}),
 					q(30745, {	-- Trouble Brewing
+						["qg"] = 60503,	-- Uncle Keenbean
 						["coord"] = { 42.5, 69.4, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60503 },	-- Uncle Keenbean
 						-- TODO: is this version available after turning in "A Fair Trade"? looks phase-related
 					}),
 					q(30569, {	-- Trouble on the Farmstead (A)
+						["qg"] = 63754,	-- Farmhand Bo
+						["sourceQuest"] = 30514,	-- Challenge Accepted
 						["coord"] = { 53.7, 84.1, KUN_LAI_SUMMIT },
 						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 63754 },	-- Farmhand Bo
-						["sourceQuest"] = 30514,	-- Challenge Accepted
 					}),
 					q(30570, {	-- Trouble on the Farmstead (H)
+						["qg"] = 63751,	-- Farmhand Ko
+						["sourceQuest"] = 30515,	-- Challenge Accepted
 						["coord"] = { 62.5, 79.4, KUN_LAI_SUMMIT },
 						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 63751 },	-- Farmhand Ko
-						["sourceQuest"] = 30515,	-- Challenge Accepted
 					}),
 					q(30670, {	-- Turnabout
-						["coord"] = { 44.4, 89.9, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60161 },	-- Shado-Master Chong
+						["qg"] = 60161,	-- Shado-Master Chong
 						["sourceQuest"] = 30457,	-- Call Out Their Leader
+						["coord"] = { 44.4, 89.9, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(81713),	-- Blind Rage Essence (QI!)
 						},
 					}),
 					q(30752, {	-- Unbelievable!
-						["coord"] = { 35.3, 49.5, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61819 },	-- Ban Bearheart
+						["qg"] = 61819,	-- Ban Bearheart
 						["sourceQuest"] = 30993,	-- Where are My Reinforcements?
+						["coord"] = { 35.3, 49.5, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(82559),	-- Growthtender Locket
 							i(82560),	-- Brewdrinker Amulet
@@ -1859,21 +1798,21 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30611, {	-- Unleash The Yeti!
-						["coord"] = { 51.9, 67.2, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 59452 },	-- Brother Rabbitsfoot
+						["qg"] = 59452,	-- Brother Rabbitsfoot
 						["sourceQuests"] = {
 							30607,	-- Hozen Love Their Keys
 							30608,	-- The Snackrifice
 							30606,	-- Thumping Knucklethump
 						},
+						["coord"] = { 51.9, 67.2, KUN_LAI_SUMMIT },
 					}),
 					q(30690, {	-- Unmasking the Yaungol
-						["coord"] = { 44.4, 89.9, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 60161 },	-- Shado-Master Chong
+						["qg"] = 60161,	-- Shado-Master Chong
 						["sourceQuests"] = {
 							30665,	-- The Defense of Shado-Pan Fallback
 							30670,	-- Turnabout
 						},
+						["coord"] = { 44.4, 89.9, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(81741),	-- Blinding Rage Trap (QI!)
 							i(88079),	-- Waterfall Cap
@@ -1894,39 +1833,39 @@ root(ROOTS.Zones, {
 						["lvl"] = 82,
 					})),
 					q(30512, {	-- Westwind Rest
-						["coord"] = { 71.5, 93.0, KUN_LAI_SUMMIT },
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 59441 },	-- Admiral Taylor
+						["qg"] = 59441,	-- Admiral Taylor
 						["sourceQuests"] = {
 							30506,	-- Admiral Taylor has Awakened
 							30507,	-- Admiral Taylor has Awakened
 							30508,	-- Admiral Taylor has Awakened
 						},
+						["coord"] = { 71.5, 93.0, KUN_LAI_SUMMIT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(30945, {	-- What's Yours Is Mine
-						["coord"] = { 63.3, 30.6, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61496 },	-- Steelbender Doshu
+						["qg"] = 61496,	-- Steelbender Doshu
 						["sourceQuest"] = 30935,	-- Fisherman's Tale
+						["coord"] = { 63.3, 30.6, KUN_LAI_SUMMIT },
 						["groups"] = {
 							i(82299),	-- Blood-Stained Blade (QI!)
 						},
 					}),
 					q(30993, {	-- Where are My Reinforcements?
-						["coord"] = { 31.2, 61.5, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 61819 },	-- Ban Bearheart
+						["qg"] = 61819,	-- Ban Bearheart
 						["sourceQuest"] = 30992,	-- Finish This!
+						["coord"] = { 31.2, 61.5, KUN_LAI_SUMMIT },
 					}),
 					q(57072, {	-- Yak of All Trades
-						["lvl"] = 120,
-						["coord"] = { 58.5, 83.9, KUN_LAI_SUMMIT },
-						["provider"] = { "n", 157180 },	-- Abandoned Stormstout Kegs
-						["timeline"] = { ADDED_8_3_0 },
+						["qg"] = 157180,	-- Abandoned Stormstout Kegs
 						["sourceQuest"] = 57071,	-- No Brew Left Behind
+						["coord"] = { 58.5, 83.9, KUN_LAI_SUMMIT },
+						["timeline"] = { ADDED_8_3_0 },
+						["lvl"] = 120,
 					}),
 					q(30587, {	-- Yakity Yak
-						["cr"] = 59718,	-- Burilgi Despoiler
-						["coord"] = { 70.0, 71.8, KUN_LAI_SUMMIT },
 						["sourceQuest"] = 30488,	-- The Missing Muskpaw
+						["coord"] = { 70.0, 71.8, KUN_LAI_SUMMIT },
+						["cr"] = 59718,	-- Burilgi Despoiler
 					}),
 				}),
 				n(RARES, {
@@ -2000,10 +1939,9 @@ root(ROOTS.Zones, {
 					}),
 					n(70323, {	-- Krakkanon
 						q(31664, {	-- An Angler's Quest
-							["icon"] = 133743,
 							["provider"] = { "i", 88563 },	-- Nat's Fishing Journal
-							["repeatable"] = true,
 							["collectible"] = false,
+							["repeatable"] = true,
 						}),
 					}),
 					n(50789, {	-- Nessos the Oracle

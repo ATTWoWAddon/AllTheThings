@@ -915,6 +915,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		}),
 		header(HEADERS.Spell, 382973, {	-- Kul Tiras and Zandalar Prospecting
 			i(154123),	-- Amberblaze
+			i(168193, { ["timeline"] = { ADDED_8_2_0 } }),	-- Azsharine
 			i(168189, { ["timeline"] = { ADDED_8_2_0 } }),	-- Dark Opal
 			i(153700),	-- Golden Beryl
 			i(153706),	-- Kraken's Eye
@@ -924,6 +925,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(154120),	-- Owlseye
 			i(154125),	-- Royal Quartz
 			i(153701),	-- Rubellite
+			i(168192, { ["timeline"] = { ADDED_8_2_0 } }),	-- Sand Spinel
 			i(154121),	-- Scarlet Diamond
 			i(153703),	-- Solstone
 			i(154122),	-- Tidal Amethyst

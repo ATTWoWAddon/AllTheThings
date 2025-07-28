@@ -41,14 +41,14 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				q(45007, {	-- Sharptalon Bonding
 					["provider"] = { "n", 115786 },	-- Sharptalon Hatchling
 					["sourceQuest"] = 45005,	-- The Uncongenial Faction
-					["g"] = {
+					["groups"] = {
 						i(142496),	-- Dirty Spoon (TOY!)
 					},
 				}),
 				q(45019, {	-- Sharptalon Reunion
 					["provider"] = { "n", 115786 },	-- Sharptalon Hatchling
 					["sourceQuest"] = 45017,	-- Sharptalon Team Rumble
-					["g"] = {
+					["groups"] = {
 						i(137580),	-- Viridian Sharptalon (MOUNT!)
 					},
 				}),

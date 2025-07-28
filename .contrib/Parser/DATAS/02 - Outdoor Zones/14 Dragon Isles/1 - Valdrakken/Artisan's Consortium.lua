@@ -11,16 +11,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(VENDORS, {
 				n(194057, {	-- Rabul
 					["coord"] = { 35.4, 59.1, VALDRAKKEN },
-					["g"] = bubbleDownRep(FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, {
+					["groups"] = bubbleDownRep(FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, {
 						{		-- Neutral --
 							i(204339, bubbleDown({ ["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 } }, {	-- Satchel of Coalescing Chaos
 								["cost"] = { { "i", 190454, 80 }, },	-- 80x Depleted Primal Chaos
-								["g"] = {
+								["groups"] = {
 									i(190454),	-- Depleted Primal Chaos
 								},
 							})),
 							i(199108, bubbleDown({ ["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 } }, {	-- Bag of Discount Goods
-								["g"] = {
+								["groups"] = {
 									i(33012),	-- Terokkar Lilac
 								},
 							})),

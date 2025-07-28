@@ -12,7 +12,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			o(281646, {	-- Honey Vat
 				["questID"] = 50576,
 				["coord"] = { 66.6, 71.1, STORMSONG_VALLEY },
-				["g"] = {
+				["groups"] = {
 					i(154476),	-- Honey-Glazed Vambraces
 				},
 			}),

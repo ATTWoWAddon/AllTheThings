@@ -47,45 +47,45 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
 					q(8700, {	-- Band of Unending Life
 						["qg"] = 15498,	-- Windcaller Yessendra
-						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["coord"] = WINDCALLER_LOCATION,
-						["classes"] = { DRUID },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["cost"] = {
 							{ "i", 20884, 1 },	-- Qiraji Magisterial Ring
 							{ "i", 20873, 2 },	-- Alabaster Idol
 							{ "i", 20861, 5 },	-- Bronze Scarab
 							{ "i", 20865, 5 },	-- Ivory Scarab
 						},
+						["classes"] = { DRUID },
 						["groups"] = {
 							i(21408),	-- Band of Unending Life
 						},
 					}),
 					q(8692, {	-- Cloak of Unending Life
 						["qg"] = 15500,	-- Keyl Swiftclaw
-						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["coord"] = KEYL_LOCATION,
-						["classes"] = { DRUID },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["cost"] = {
 							{ "i", 20889, 1 },	-- Qiraji Regal Drape
 							{ "i", 20872, 2 },	-- Vermillion Idol
 							{ "i", 20864, 5 },	-- Bone Scarab
 							{ "i", 20860, 5 },	-- Silver Scarab
 						},
+						["classes"] = { DRUID },
 						["groups"] = {
 							i(21409),	-- Cloak of Unending Life
 						},
 					}),
 					q(8708, {	-- Mace of Unending Life
 						["qg"] = 15499,	-- Warden Haro
-						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["coord"] = WARDEN_LOCATION,
-						["classes"] = { DRUID },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["cost"] = {
 							{ "i", 20890, 1 },	-- Qiraji Ornate Hilt
 							{ "i", 20870, 2 },	-- Jasper Idol
 							{ "i", 20862, 5 },	-- Crystal Scarab
 							{ "i", 20858, 5 },	-- Stone Scarab
 						},
+						["classes"] = { DRUID },
 						["groups"] = {
 							i(21407),	-- Mace of Unending Life
 						},
@@ -94,45 +94,45 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(HUNTER, bubbleDown({ ["classes"] = { HUNTER } }, {
 					q(8704, {	-- Signet of the Unseen Path
 						["qg"] = 15498,	-- Windcaller Yessendra
-						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["coord"] = WINDCALLER_LOCATION,
-						["classes"] = { HUNTER },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["cost"] = {
 							{ "i", 20888, 1 },	-- Qiraji Ceremonial Ring
 							{ "i", 20869, 2 },	-- Amber Idol
 							{ "i", 20859, 5 },	-- Gold Scarab
 							{ "i", 20863, 5 },	-- Clay Scarab
 						},
+						["classes"] = { HUNTER },
 						["groups"] = {
 							i(21402),	-- Signet of the Unseen Path
 						},
 					}),
 					q(8696, {	-- Cloak of the Unseen Path
 						["qg"] = 15500,	-- Keyl Swiftclaw
-						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["coord"] = KEYL_LOCATION,
-						["classes"] = { HUNTER },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["cost"] = {
 							{ "i", 20889, 1 },	-- Qiraji Regal Drape
 							{ "i", 20868, 2 },	-- Lambent Idol
 							{ "i", 20858, 5 },	-- Stone Scarab
 							{ "i", 20862, 5 },	-- Crystal Scarab
 						},
+						["classes"] = { HUNTER },
 						["groups"] = {
 							i(21403),	-- Cloak of the Unseen Path
 						},
 					}),
 					q(8712, {	-- Scythe of the Unseen Path
 						["qg"] = 15499,	-- Warden Haro
-						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["coord"] = WARDEN_LOCATION,
-						["classes"] = { HUNTER },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["cost"] = {
 							{ "i", 20886, 1 },	-- Qiraji Spiked Hilt
 							{ "i", 20866, 2 },	-- Azure Idol
 							{ "i", 20860, 5 },	-- Silver Scarab
 							{ "i", 20864, 5 },	-- Bone Scarab
 						},
+						["classes"] = { HUNTER },
 						["groups"] = {
 							i(21401),	-- Scythe of the Unseen Path
 						},
@@ -141,45 +141,45 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(MAGE, bubbleDown({ ["classes"] = { MAGE } }, {
 					q(8699, {	-- Band of Vaulted Secrets
 						["qg"] = 15498,	-- Windcaller Yessendra
-						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["coord"] = WINDCALLER_LOCATION,
-						["classes"] = { MAGE },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["cost"] = {
 							{ "i", 20884, 1 },	-- Qiraji Magisterial Ring
 							{ "i", 20866, 2 },	-- Azure Idol
 							{ "i", 20859, 5 },	-- Gold Scarab
 							{ "i", 20863, 5 },	-- Clay Scarab
 						},
+						["classes"] = { MAGE },
 						["groups"] = {
 							i(21414),	-- Band of Vaulted Secrets
 						},
 					}),
 					q(8691, {	-- Drape of Vaulted Secrets
 						["qg"] = 15500,	-- Keyl Swiftclaw
-						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["coord"] = KEYL_LOCATION,
-						["classes"] = { MAGE },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["cost"] = {
 							{ "i", 20885, 1 },	-- Qiraji Martial Drape
 							{ "i", 20873, 2 },	-- Alabaster Idol
 							{ "i", 20858, 5 },	-- Stone Scarab
 							{ "i", 20862, 5 },	-- Crystal Scarab
 						},
+						["classes"] = { MAGE },
 						["groups"] = {
 							i(21415),	-- Drape of Vaulted Secrets
 						},
 					}),
 					q(8707, {	-- Blade of Vaulted Secrets
 						["qg"] = 15499,	-- Warden Haro
-						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["coord"] = WARDEN_LOCATION,
-						["classes"] = { MAGE },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["cost"] = {
 							{ "i", 20890, 1 },	-- Qiraji Ornate Hilt
 							{ "i", 20871, 2 },	-- Obsidian Idol
 							{ "i", 20860, 5 },	-- Silver Scarab
 							{ "i", 20864, 5 },	-- Bone Scarab
 						},
+						["classes"] = { MAGE },
 						["groups"] = {
 							i(21413),	-- Blade of Vaulted Secrets
 						},
@@ -188,45 +188,45 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(PALADIN, bubbleDown({ ["classes"] = { PALADIN } }, {
 					q(8703, {	-- Ring of Eternal Justice
 						["qg"] = 15498,	-- Windcaller Yessendra
-						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["coord"] = WINDCALLER_LOCATION,
-						["classes"] = { PALADIN },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["cost"] = {
 							{ "i", 20884, 1 },	-- Qiraji Magisterial Ring
 							{ "i", 20872, 2 },	-- Vermillion Idol
 							{ "i", 20860, 5 },	-- Silver Scarab
 							{ "i", 20864, 5 },	-- Bone Scarab
 						},
+						["classes"] = { PALADIN },
 						["groups"] = {
 							i(21396),	-- Ring of Eternal Justice
 						},
 					}),
 					q(8695, {	-- Cape of Eternal Justice
 						["qg"] = 15500,	-- Keyl Swiftclaw
-						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["coord"] = KEYL_LOCATION,
-						["classes"] = { PALADIN },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["cost"] = {
 							{ "i", 20889, 1 },	-- Qiraji Regal Drape
 							{ "i", 20871, 2 },	-- Obsidian Idol
 							{ "i", 20859, 5 },	-- Gold Scarab
 							{ "i", 20863, 5 },	-- Clay Scarab
 						},
+						["classes"] = { PALADIN },
 						["groups"] = {
 							i(21397),	-- Cape of Eternal Justice
 						},
 					}),
 					q(8711, {	-- Blade of Eternal Justice
 						["qg"] = 15499,	-- Warden Haro
-						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["coord"] = WARDEN_LOCATION,
-						["classes"] = { PALADIN },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["cost"] = {
 							{ "i", 20886, 1 },	-- Qiraji Spiked Hilt
 							{ "i", 20869, 2 },	-- Amber Idol
 							{ "i", 20861, 5 },	-- Bronze Scarab
 							{ "i", 20865, 5 },	-- Ivory Scarab
 						},
+						["classes"] = { PALADIN },
 						["groups"] = {
 							i(21395),	-- Blade of Eternal Justice
 						},
@@ -235,45 +235,45 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(PRIEST, bubbleDown({ ["classes"] = { PRIEST } }, {
 					q(8697, {	-- Ring of Infinite Wisdom
 						["qg"] = 15498,	-- Windcaller Yessendra
-						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["coord"] = WINDCALLER_LOCATION,
-						["classes"] = { PRIEST },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["cost"] = {
 							{ "i", 20888, 1 },	-- Qiraji Ceremonial Ring
 							{ "i", 20871, 2 },	-- Obsidian Idol
 							{ "i", 20860, 5 },	-- Silver Scarab
 							{ "i", 20864, 5 },	-- Bone Scarab
 						},
+						["classes"] = { PRIEST },
 						["groups"] = {
 							i(21411),	-- Ring of Infinite Wisdom
 						},
 					}),
 					q(8689, {	-- Shroud of Infinite Wisdom
 						["qg"] = 15500,	-- Keyl Swiftclaw
-						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["coord"] = KEYL_LOCATION,
-						["classes"] = { PRIEST },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["cost"] = {
 							{ "i", 20885, 1 },	-- Qiraji Martial Drape
 							{ "i", 20870, 2 },	-- Jasper Idol
 							{ "i", 20859, 5 },	-- Gold Scarab
 							{ "i", 20863, 5 },	-- Clay Scarab
 						},
+						["classes"] = { PRIEST },
 						["groups"] = {
 							i(21412),	-- Shroud of Infinite Wisdom
 						},
 					}),
 					q(8705, {	-- Gavel of Infinite Wisdom
 						["qg"] = 15499,	-- Warden Haro
-						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["coord"] = WARDEN_LOCATION,
-						["classes"] = { PRIEST },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["cost"] = {
 							{ "i", 20890, 1 },	-- Qiraji Ornate Hilt
 							{ "i", 20868, 2 },	-- Lambent Idol
 							{ "i", 20861, 5 },	-- Bronze Scarab
 							{ "i", 20865, 5 },	-- Ivory Scarab
 						},
+						["classes"] = { PRIEST },
 						["groups"] = {
 							i(21410),	-- Gavel of Infinite Wisdom
 						},
@@ -282,45 +282,45 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(ROGUE, bubbleDown({ ["classes"] = { ROGUE } }, {
 					q(8701, {	-- Band of Veiled Shadows
 						["qg"] = 15498,	-- Windcaller Yessendra
-						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["coord"] = WINDCALLER_LOCATION,
-						["classes"] = { ROGUE },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["cost"] = {
 							{ "i", 20888, 1 },	-- Qiraji Ceremonial Ring
 							{ "i", 20867, 2 },	-- Onyx Idol
 							{ "i", 20858, 5 },	-- Stone Scarab
 							{ "i", 20862, 5 },	-- Crystal Scarab
 						},
+						["classes"] = { ROGUE },
 						["groups"] = {
 							i(21405),	-- Band of Veiled Shadows
 						},
 					}),
 					q(8693, {	-- Cloak of Veiled Shadows
 						["qg"] = 15500,	-- Keyl Swiftclaw
-						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["coord"] = KEYL_LOCATION,
-						["classes"] = { ROGUE },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["cost"] = {
 							{ "i", 20885, 1 },	-- Qiraji Martial Drape
 							{ "i", 20866, 2 },	-- Azure Idol
 							{ "i", 20861, 5 },	-- Bronze Scarab
 							{ "i", 20865, 5 },	-- Ivory Scarab
 						},
+						["classes"] = { ROGUE },
 						["groups"] = {
 							i(21406),	-- Cloak of Veiled Shadows
 						},
 					}),
 					q(8709, {	-- Dagger of Veiled Shadows
 						["qg"] = 15499,	-- Warden Haro
-						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["coord"] = WARDEN_LOCATION,
-						["classes"] = { ROGUE },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["cost"] = {
 							{ "i", 20886, 1 },	-- Qiraji Spiked Hilt
 							{ "i", 20872, 2 },	-- Vermillion Idol
 							{ "i", 20859, 5 },	-- Gold Scarab
 							{ "i", 20863, 5 },	-- Clay Scarab
 						},
+						["classes"] = { ROGUE },
 						["groups"] = {
 							i(21404),	-- Dagger of Veiled Shadows
 						},
@@ -329,45 +329,45 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN } }, {
 					q(8698, {	-- Ring of the Gathering Storm
 						["qg"] = 15498,	-- Windcaller Yessendra
-						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["coord"] = WINDCALLER_LOCATION,
-						["classes"] = { SHAMAN },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["cost"] = {
 							{ "i", 20884, 1 },	-- Qiraji Magisterial Ring
 							{ "i", 20872, 2 },	-- Vermillion Idol
 							{ "i", 20860, 5 },	-- Silver Scarab
 							{ "i", 20864, 5 },	-- Bone Scarab
 						},
+						["classes"] = { SHAMAN },
 						["groups"] = {
 							i(21399),	-- Ring of the Gathering Storm
 						},
 					}),
 					q(8690, {	-- Cloak of the Gathering Storm
 						["qg"] = 15500,	-- Keyl Swiftclaw
-						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["coord"] = KEYL_LOCATION,
-						["classes"] = { SHAMAN },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["cost"] = {
 							{ "i", 20889, 1 },	-- Qiraji Regal Drape
 							{ "i", 20871, 2 },	-- Obsidian Idol
 							{ "i", 20863, 5 },	-- Clay Scarab
 							{ "i", 20859, 5 },	-- Gold Scarab
 						},
+						["classes"] = { SHAMAN },
 						["groups"] = {
 							i(21400),	-- Cloak of the Gathering Storm
 						},
 					}),
 					q(8706, {	-- Hammer of the Gathering Storm
 						["qg"] = 15499,	-- Warden Haro
-						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["coord"] = WARDEN_LOCATION,
-						["classes"] = { SHAMAN },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["cost"] = {
 							{ "i", 20886, 1 },	-- Qiraji Spiked Hilt
 							{ "i", 20869, 2 },	-- Amber Idol
 							{ "i", 20861, 5 },	-- Bronze Scarab
 							{ "i", 20865, 5 },	-- Ivory Scarab
 						},
+						["classes"] = { SHAMAN },
 						["groups"] = {
 							i(21398),	-- Hammer of the Gathering Storm
 						},
@@ -376,45 +376,45 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(WARLOCK, bubbleDown({ ["classes"] = { WARLOCK } }, {
 					q(8702, {	-- Ring of Unspoken Names
 						["qg"] = 15498,	-- Windcaller Yessendra
-						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["coord"] = WINDCALLER_LOCATION,
-						["classes"] = { WARLOCK },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["cost"] = {
 							{ "i", 20888, 1 },	-- Qiraji Ceremonial Ring
 							{ "i", 20870, 2 },	-- Jasper Idol
 							{ "i", 20858, 5 },	-- Stone Scarab
 							{ "i", 20862, 5 },	-- Crystal Scarab
 						},
+						["classes"] = { WARLOCK },
 						["groups"] = {
 							i(21417),	-- Ring of Unspoken Names
 						},
 					}),
 					q(8694, {	-- Shroud of Unspoken Names
 						["qg"] = 15500,	-- Keyl Swiftclaw
-						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["coord"] = KEYL_LOCATION,
-						["classes"] = { WARLOCK },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["cost"] = {
 							{ "i", 20889, 1 },	-- Qiraji Regal Drape
 							{ "i", 20869, 2 },	-- Amber Idol
 							{ "i", 20861, 5 },	-- Bronze Scarab
 							{ "i", 20865, 5 },	-- Ivory Scarab
 						},
+						["classes"] = { WARLOCK },
 						["groups"] = {
 							i(21418),	-- Shroud of Unspoken Names
 						},
 					}),
 					q(8710, {	-- Kris of Unspoken Names
 						["qg"] = 15499,	-- Warden Haro
-						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["coord"] = WARDEN_LOCATION,
-						["classes"] = { WARLOCK },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["cost"] = {
 							{ "i", 20890, 1 },	-- Qiraji Ornate Hilt
 							{ "i", 20867, 2 },	-- Onyx Idol
 							{ "i", 20859, 5 },	-- Gold Scarab
 							{ "i", 20863, 5 },	-- Clay Scarab
 						},
+						["classes"] = { WARLOCK },
 						["groups"] = {
 							i(21416),	-- Kris of Unspoken Names
 						},
@@ -423,45 +423,45 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(WARRIOR, bubbleDown({ ["classes"] = { WARRIOR } }, {
 					q(8556, {	-- Signet of Unyielding Strength
 						["qg"] = 15498,	-- Windcaller Yessendra
-						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["coord"] = WINDCALLER_LOCATION,
-						["classes"] = { WARRIOR },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["cost"] = {
 							{ "i", 20884, 1 },	-- Qiraji Magisterial Ring
 							{ "i", 20868, 2 },	-- Lambent Idol
 							{ "i", 20861, 5 },	-- Bronze Scarab
 							{ "i", 20865, 5 },	-- Ivory Scarab
 						},
+						["classes"] = { WARRIOR },
 						["groups"] = {
 							i(21393),	-- Signet of Unyielding Strength
 						},
 					}),
 					q(8557, {	-- Drape of Unyielding Strength
 						["qg"] = 15500,	-- Keyl Swiftclaw
-						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["coord"] = KEYL_LOCATION,
-						["classes"] = { WARRIOR },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["cost"] = {
 							{ "i", 20885, 1 },	-- Qiraji Martial Drape
 							{ "i", 20867, 2 },	-- Onyx Idol
 							{ "i", 20864, 5 },	-- Bone Scarab
 							{ "i", 20860, 5 },	-- Silver Scarab
 						},
+						["classes"] = { WARRIOR },
 						["groups"] = {
 							i(21394),	-- Drape of Unyielding Strength
 						},
 					}),
 					q(8558, {	-- Sickle of Unyielding Strength
 						["qg"] = 15499,	-- Warden Haro
-						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["coord"] = WARDEN_LOCATION,
-						["classes"] = { WARRIOR },
+						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["cost"] = {
 							{ "i", 20886, 1 },	-- Qiraji Spiked Hilt
 							{ "i", 20873, 2 },	-- Alabaster Idol
 							{ "i", 20862, 5 },	-- Crystal Scarab
 							{ "i", 20858, 5 },	-- Stone Scarab
 						},
+						["classes"] = { WARRIOR },
 						["groups"] = {
 							i(21392),	-- Sickle of Unyielding Strength
 						},

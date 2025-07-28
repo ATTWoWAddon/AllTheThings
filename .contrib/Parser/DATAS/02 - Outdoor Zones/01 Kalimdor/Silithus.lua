@@ -66,7 +66,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						o(421152, {	-- Carved Eye
 							["coord"] = { 43.0, 9.2, AHNQIRAJ_THE_FALLEN_KINGDOM },
 							["timeline"] = { ADDED_10_2_5 },
-							["g"] = {
+							["groups"] = {
 								i(212995),	-- Grimoire of the Whispering Observer (CI!)
 							},
 						}),
@@ -1340,8 +1340,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 50.7, 34.7, SILITHUS },
 						-- #endif
 					},
-					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(53, 53, 15),
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8352, {	-- Scepter of the Council
@@ -2202,9 +2202,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				warchiefscommand(q(28527, {	-- Warchief's Command: Silithus!
-					["isBreadcrumb"] = true,
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 54. (TODO: Confirm this.)
 					-- Cataclysm: Maximum is level 57. (TODO: Test max level)

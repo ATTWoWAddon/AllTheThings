@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				71232,	-- Renown of the Dragon Isles
 				DF_ACCOUNT_CAMPAIGN_QUEST,
 			},
-			["g"] = sharedData({ ["isWorldQuest"] = true, }, {
+			["groups"] = sharedData({ ["isWorldQuest"] = true, }, {
 
 				-- q(QUEST, {	-- NAME
 				--	-- ["coord"] = { XX, YY, THE_WAKING_SHORES }
@@ -49,13 +49,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(69938, {	-- Fishing Frenzy!
 					["coord"] = { 68.8, 71.4, THE_WAKING_SHORES },
-					["g"] = {
+					["groups"] = {
 						i(198350),	-- Fresh Fish Steak (QI!)
 					},
 				}),
 				q(72030, {	-- Fishing Frenzy!
 					["coord"] = { 33.6, 63.2, THE_WAKING_SHORES },
-					["g"] = {
+					["groups"] = {
 						i(200854),	-- Cooked Caviar (QI!)
 					},
 				}),
@@ -64,7 +64,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(66989, {	-- Helpful Harvest
 					["coord"] = { 58.2, 64.7, THE_WAKING_SHORES },
-					["g"] = {
+					["groups"] = {
 						i(204343),	-- Trusty Dragonkin Rake
 					}
 				}),
@@ -76,13 +76,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				pvp(q(67005, {	-- How to Train a Proto-Drake
 					["coord"] = { 40, 89, THE_WAKING_SHORES },
-					["g"] = {
+					["groups"] = {
 						i(194818),	-- Proto-Drake Wrangler Rope (QI!)
 					},
 				})),
 				q(66833, {	-- Marmoni in Distress
 					["coord"] = { 78.1, 31.6, THE_WAKING_SHORES },
-					["g"] = {
+					["groups"] = {
 						i(193212),	-- Marmoni Rescue Pack (QI!)
 					},
 				}),
@@ -91,7 +91,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(66896, {	-- Net Income
 					["coord"] = { 51.6, 35.1, THE_WAKING_SHORES },
-					["g"] = {
+					["groups"] = {
 						i(191857),	-- Warmwater Riverfish (QI!)
 					},
 				}),

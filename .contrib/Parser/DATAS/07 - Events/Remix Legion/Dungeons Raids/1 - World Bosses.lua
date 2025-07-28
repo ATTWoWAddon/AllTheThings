@@ -60,7 +60,7 @@
 				["questID"] = 43512,	-- Ana-Mouz (WQ)
 				["isWeekly"] = true,
 				["isRaid"] = true,
-				["g"] = {
+				["groups"] = {
 					i(137778, {	-- Vantus Rune Technique: Tichondrius [Rank 3] (RECIPE!)
 						["timeline"] = { ADDED_7_1_0 },
 					}),
@@ -79,7 +79,7 @@
 				["questID"] = 47061,	-- Apocron (WQ)
 				["isWeekly"] = true,
 				["isRaid"] = true,
-				["g"] = {
+				["groups"] = {
 					i(147766),	-- Band of Dark Millennia
 					i(147734),	-- Spaulders of Forgotten Worlds
 					i(147743),	-- Harness of Devouring Flame
@@ -96,7 +96,7 @@
 				["questID"] = 46947,	-- Brutallus (WQ)
 				["isWeekly"] = true,
 				["isRaid"] = true,
-				["g"] = {
+				["groups"] = {
 					i(147749),	-- Polished Felfury Helmet
 					i(147765),	-- Clasp of Burning Demise
 					i(147742),	-- Violent Zealot's Shoulderpads
@@ -114,7 +114,7 @@
 				["questID"] = 43193,	-- Calamitous Intent (WQ)
 				["isWeekly"] = true,
 				["isRaid"] = true,
-				["g"] = {
+				["groups"] = {
 					i(137847),	-- Design: Sorcerous Shadowruby Pendant [Rank 3]
 					i(141438),	-- Pendant of Cold Flame
 					i(141432),	-- Frostburned Sabatons
@@ -131,7 +131,7 @@
 				["questID"] = 43448,	-- The Frozen King (WQ)
 				["isWeekly"] = true,
 				["isRaid"] = true,
-				["g"] = {
+				["groups"] = {
 					i(142108, {	-- Vantus Rune Technique: Guarm [Rank 3] (RECIPE!)
 						["timeline"] = { ADDED_7_1_0 },
 					}),
@@ -150,7 +150,7 @@
 				["questID"] = 43985,	-- A Dark Tide (WQ)
 				["isWeekly"] = true,
 				["isRaid"] = true,
-				["g"] = {
+				["groups"] = {
 					i(139573, {	-- The Warmace of Shirvallah (Shaman Artifact)
 						-- ["sourceQuest"] = , TODO
 					}),
@@ -169,7 +169,7 @@
 				["questID"] = 42819,	-- Pocket Wizard (WQ)
 				["isWeekly"] = true,
 				["isRaid"] = true,
-				["g"] = {
+				["groups"] = {
 					i(139895),	-- Skinning Technique: Legion Butchery
 					i(141540),	-- Coerced Wizard's Cloak
 					i(141445),	-- Mantle of the Aspiring Spellgiant
@@ -186,7 +186,7 @@
 				["questID"] = 43192,	-- Terror of the Deep (WQ)
 				["isWeekly"] = true,
 				["isRaid"] = true,
-				["g"] = {
+				["groups"] = {
 					i(142109, {	-- Vantus Rune Technique: Helya [Rank 3] (RECIPE!)
 						["timeline"] = { ADDED_7_1_0 },
 					}),
@@ -208,7 +208,7 @@
 				["questID"] = 46948,	-- Malificus (WQ)
 				["isWeekly"] = true,
 				["isRaid"] = true,
-				["g"] = {
+				["groups"] = {
 					i(147740),	-- Plague-Resistant Headcover
 					i(147764),	-- Cloak of Growing Mistrust
 					i(147733),	-- Doomsayer's Ritualistic Vestment
@@ -228,7 +228,7 @@
 				["maps"] = { SURAMAR },
 				["isWeekly"] = true,
 				["isRaid"] = true,
-				["g"] = {
+				["groups"] = {
 					i(142121, {	-- Recipe: Potion of Prolonged Power [Rank 3]
 						["timeline"] = { ADDED_7_1_0 },
 					}),
@@ -247,7 +247,7 @@
 				["questID"] = 42270,	-- Scourge of the Skies (WQ)
 				["isWeekly"] = true,
 				["isRaid"] = true,
-				["g"] = {
+				["groups"] = {
 					i(142107, {	-- Vantus Rune Technique: Odyn [Rank 3] (RECIPE!)
 						["timeline"] = { ADDED_7_1_0 },
 					}),
@@ -267,7 +267,7 @@
 				["questID"] = 42779,	-- The Sleeping Corruption (WQ)
 				["isWeekly"] = true,
 				["isRaid"] = true,
-				["g"] = {
+				["groups"] = {
 					i(140659),	-- Skull of Shar'thos
 					i(141547),	-- Choker of Dreamthorns
 					i(141542),	-- Despoiled Dreamthread Cloak
@@ -284,7 +284,7 @@
 				["questID"] = 46945,	-- Si'vash (WQ)
 				["isWeekly"] = true,
 				["isRaid"] = true,
-				["g"] = {
+				["groups"] = {
 					i(147731),	-- Cowl of Plumbed Depths
 					i(147752),	-- Pauldrons of the Engulfing Tide
 					i(147737),	-- Shorebreaker Robes
@@ -306,7 +306,7 @@
 				["questID"] = 42269,	-- The Soultakers (WQ)
 				["isWeekly"] = true,
 				["isRaid"] = true,
-				["g"] = {
+				["groups"] = {
 					i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 						["sourceQuest"] = 38990,	-- The Call of Icecrown
 					}),
@@ -325,7 +325,7 @@
 				["questID"] = 44287,	-- DEADLY: Withered J'im (WQ)
 				["isWeekly"] = true,
 				["isRaid"] = true,
-				["g"] = {
+				["groups"] = {
 					i(141455),	-- Cave Skulker's Helm
 					i(141453),	-- Magic-Warped Hood
 					i(141459),	-- Manacrystal-Adorned Helmet

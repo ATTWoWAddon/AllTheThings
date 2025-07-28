@@ -40,12 +40,12 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 					6735,	-- Inkeeper Saelienne
 					19046,	-- Minalei (ALDOR)
 				},
+				["u"] = REMOVED_FROM_GAME,
 				["groups"] = {
 					i(32542, {	-- Imp in a Ball
 						["description"] = "Obtained if you set up a 6 Month WoW Subscription between 5th May 2021 until 5th Nov 2022.",
 					}),
 				},
-				["u"] = REMOVED_FROM_GAME,
 			}),
 			-- 2022 13th Feb until 13th Aug 2022
 			q(65285, {	-- Goblin Gumbo Kettle
@@ -79,12 +79,12 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 					19232,	-- Innkeeper Haelthol <Innkeeper> (SCYRER)
 					19046,	-- Minalei (ALDOR)
 				},
+				["u"] = REMOVED_FROM_GAME,
 				["groups"] = {
 					i(33219, {	-- Goblin Gumbo Kettle
 						["description"] = "Obtained if you set up a 6 Month WoW Subscription between 13th February 2022 until 13th August 2022.",
 					}),
 				},
-				["u"] = REMOVED_FROM_GAME,
 			}),
 			-- 2022 14th July until 15th January 2023
 			q(65562, {	-- Tabard of Flame
@@ -118,12 +118,12 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 					19232,	-- Innkeeper Haelthol <Innkeeper> (SCYRER)
 					19046,	-- Minalei (ALDOR)
 				},
+				["u"] = REMOVED_FROM_GAME,
 				["groups"] = {
 					i(23705, {	-- Tabard of Flame
 						["description"] = "Obtained if you set up a 6 Month WoW Subscription between 13th February 2022 until 13th August 2022 or a 12 Month WoW Subscription between 11th November 2022 until 15th January 2023.",
 					}),
 				},
-				["u"] = REMOVED_FROM_GAME,
 			}),
 			cnONLY(i(33225, {	-- Reins of the Swift Spectral Tiger
 				["description"] = "Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",
@@ -165,6 +165,7 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 					31557,	-- Uda the Beast
 					32413,	-- Isirami Fairwind
 				},
+				["u"] = REMOVED_FROM_GAME,
 				["groups"] = {
 					i(201699, {	-- Festering Emerald Drake
 						["description"] = "Obtained if you set up a 12 Month WoW Subscription between 11th November 2022 until 15th January 2023.",
@@ -172,9 +173,7 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 					-- Also part of 12 Month Sub. For Historys Sake
 					-- i(23705),	-- Tabard of Flame
 					-- i(200060),	-- Hopling
-
 				},
-				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(74941, {	-- Flurky [2023 17th January until 31st July 2023]
 				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
@@ -207,10 +206,10 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 					31557,	-- Uda the Beast
 					32413,	-- Isirami Fairwind
 				},
+				["u"] = REMOVED_FROM_GAME,
 				["groups"] = {
 					i(187794),	-- Flurky
 				},
-				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(75492, {	-- Glub [2023 17th January until 31st July 2023]
 				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
@@ -243,12 +242,12 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 					31557,	-- Uda the Beast
 					32413,	-- Isirami Fairwind
 				},
+				["u"] = REMOVED_FROM_GAME,
 				["groups"] = {
 					i(204982, {	-- Glub
 						-- Description is under the 6 Months Promo?
 					}),
 				},
-				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(70863, {	-- Hoplet [2023 17th January until 31st July 2023]
 				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
@@ -281,13 +280,13 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 					31557,	-- Uda the Beast
 					32413,	-- Isirami Fairwind
 				},
+				["u"] = REMOVED_FROM_GAME,
 				["groups"] = {
 					i(200060, {	-- Hoplet
 					-- Description is under the 12 Months Promo
 					-- ["description"] = "Obtained if you set up a 12 Month WoW Subscription between 11th November 2022 until 15th January 2023 or a 6 Month WoW Subscription between 17th January 2023 until 31st July 2023.",
 					}),
 				},
-				["u"] = REMOVED_FROM_GAME,
 			}),
 			i(207097, {	-- Nightmarish Emerald Drake
 				["description"] = "Obtained if you set up a 12 Month WoW Subscription after 27th October 2023.",

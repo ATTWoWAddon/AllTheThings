@@ -120,19 +120,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 1569 },	-- Shadow Priest Sarvis
 								{ "i", 9559 },	-- Encrypted Scroll
 							},
-
 							-- #if AFTER CATA
 							["sourceQuest"] = 26801,	-- Scourge on our Perimeter
 							-- #else
 							["sourceQuest"] = 364,	-- The Mindless Ones
 							-- #endif
-
 							-- #if AFTER MOP
 							["coord"] = { 46.6, 58.8, DEATHKNELL },
 							-- #else
 							["coord"] = { 30.8, 66.2, TIRISFAL_GLADES },
 							-- #endif
-
 							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { UNDEAD },
 							["classes"] = { ROGUE },
@@ -152,19 +149,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 1569 },	-- Shadow Priest Sarvis
 								{ "i", 9574 },	-- Glyphic Scroll
 							},
-
 							-- #if AFTER CATA
 							["sourceQuest"] = 26801,	-- Scourge on our Perimeter
 							-- #else
 							["sourceQuest"] = 364,	-- The Mindless Ones
 							-- #endif
-
 							-- #if AFTER MOP
 							["coord"] = { 46.6, 58.8, DEATHKNELL },
 							-- #else
 							["coord"] = { 30.8, 66.2, TIRISFAL_GLADES },
 							-- #endif
-
 							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { UNDEAD },
 							["classes"] = { MAGE },
@@ -179,13 +173,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["sourceQuest"] = 364,	-- The Mindless Ones
 							-- #endif
-
 							-- #if AFTER MOP
 							["coord"] = { 46.6, 58.8, DEATHKNELL },
 							-- #else
 							["coord"] = { 30.8, 66.2, TIRISFAL_GLADES },
 							-- #endif
-
 							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { UNDEAD, BLOODELF },
 							["classes"] = { PRIEST },
@@ -454,19 +446,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 1569 },	-- Shadow Priest Sarvis
 								{ "i", 9546 },	-- Simple Scroll
 							},
-
 							-- #if AFTER CATA
 							["sourceQuest"] = 26801,	-- Scourge on our Perimeter
 							-- #else
 							["sourceQuest"] = 364,	-- The Mindless Ones
 							-- #endif
-
 							-- #if AFTER MOP
 							["coord"] = { 46.6, 58.8, DEATHKNELL },
 							-- #else
 							["coord"] = { 30.8, 66.2, TIRISFAL_GLADES },
 							-- #endif
-
 							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { UNDEAD },
 							["classes"] = { WARRIOR },
@@ -507,19 +496,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 1569 },	-- Shadow Priest Sarvis
 								{ "i", 9578 },	-- Tainted Scroll
 							},
-
 							-- #if AFTER CATA
 							["sourceQuest"] = 26801,	-- Scourge on our Perimeter
 							-- #else
 							["sourceQuest"] = 364,	-- The Mindless Ones
 							-- #endif
-
 							-- #if AFTER MOP
 							["coord"] = { 46.6, 58.8, DEATHKNELL },
 							-- #else
 							["coord"] = { 30.8, 66.2, TIRISFAL_GLADES },
 							-- #endif
-
 							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { UNDEAD },
 							["classes"] = { WARLOCK },
@@ -921,16 +907,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			m(SCARLET_MONASTERY_ENTRANCE, {
 				n(QUESTS, {
 					q(77644,{	-- The Scarlet Key
+						["coord"] = { 48, 56.3, SCARLET_MONASTERY_ENTRANCE },
 						["timeline"] = { ADDED_10_1_7 },
 						["cost"] = { {"i", 208485, 1} },	-- The Scarlet Key
-						["coord"] = { 48, 56.3, SCARLET_MONASTERY_ENTRANCE },
 					}),
 				}),
 				n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
 					o(421151, {	-- Carved Eye
 						["coord"] = { 40.5, 53.6, SCARLET_MONASTERY_ENTRANCE },
 						["timeline"] = { ADDED_10_2_5 },
-						["g"] = {
+						["groups"] = {
 							i(212984),	-- Grimoire of the Zealous Observer (CI!)
 						},
 					}),
@@ -1687,7 +1673,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(24992, {	-- Escaped From Gilneas
 					["sourceQuest"] = 24990,	-- Darkhound Pounding
-					["cr"] = 1548,	-- Cursed Darkhound
 					["description"] = "Quest is granted by getting in combat with (not by killing) a Cursed Darkhound while on or after completing |cFFFFD700Darkhound Pounding|r.",
 					-- #if ANYCLASSIC
 					["timeline"] = { CREATED_4_0_3, ADDED_5_0_4 },
@@ -1695,6 +1680,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					-- #endif
 					["races"] = HORDE_ONLY,
+					["cr"] = 1548,	-- Cursed Darkhound
 				}),
 				q(24974, {	-- Ever So Lonely
 					["qg"] = 38925,	-- Sidrick Calston
@@ -1780,8 +1766,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 24996,	-- Holland's Experiment
 					["coord"] = { 60.1, 52.6, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
-					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(5481, {	-- Gordo's Task
 					["qg"] = 10666,	-- Gordo
@@ -1952,9 +1938,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "This quest is available to Undead characters upon reaching level 10.",
 					["timeline"] = { ADDED_4_0_3, REMOVED_10_1_5 },
 					["races"] = { UNDEAD },
-					["lvl"] = 10,
-					["isBreadcrumb"] = true,
-					["DisablePartySync"] = true,
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -1962,11 +1945,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
+					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
+					["lvl"] = 10,
 				}),
 				q(14089, {	-- Learn to Ride in Tirisfal Glades
 					["provider"] = { "i", 46881 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Undead in their Mailbox upon reaching the specified level.",
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_1 },
+					["races"] = { UNDEAD },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -1974,7 +1961,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["races"] = { UNDEAD },
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(24998, {	-- Maggot Eye
@@ -2245,8 +2231,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(375, {	-- The Chill of Death
 					["qg"] = 1521,	-- Gretchen Dedmar
 					["coord"] = { 61.9, 52.7, TIRISFAL_GLADES },
-					["cost"] = { { "i", 2320, 1 } },	-- Coarse Thread
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 2320, 1 } },	-- Coarse Thread
 					["races"] = HORDE_ONLY,
 					["lvl"] = 7,
 					["groups"] = {
@@ -2379,11 +2365,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(25030, {	-- The Haunted Mills
 					["provider"] = { "i", 3082 },	-- Dargol's Skull
-					["crs"] = { 1658 },	-- Captain Dargol
-					["description"] = "At the bottom of the |cFFFFD700Agamand Family Crypt|r.",
 					["coord"] = { 52.8, 26.3, TIRISFAL_GLADES },
+					["description"] = "At the bottom of the |cFFFFD700Agamand Family Crypt|r.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["crs"] = { 1658 },	-- Captain Dargol
 				}),
 				q(357, {	-- The Lich's Identity
 					["qg"] = 1498,	-- Bethor Iceshard
@@ -2500,8 +2486,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1819, {	-- Ulag the Cleaver
 					["qg"] = 1496,	-- Deathguard Dillinger
-					["sourceQuest"] = 1818,	-- Speak with Dillinger
 					["altQuests"] = { 1502 },	-- Thun'grim Firegaze
+					["sourceQuest"] = 1818,	-- Speak with Dillinger
 					["coord"] = { 58.21, 51.45, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,

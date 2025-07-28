@@ -57,7 +57,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 		["coord"] = { 78.94, 33.62, BLACKROCK_MOUNTAIN },
 		["maps"] = { UPPER_BLACKROCK_SPIRE_WOD, 617, 618 },
 		["lvl"] = 100,
-		["g"] = {
+		["groups"] = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(OREBENDER, {
 					i(118719),	-- Petrified Willow
@@ -164,7 +164,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				n(ACHIEVEMENTS, {
 					ach(9058, {	-- Leeeeeeeeeeeeeroy...?
 						["crs"] = { 77075 },	-- Leeroy Jenkins
-						["g"] = {
+						["groups"] = {
 							follower(178),	-- Leeroy Jenkins
 							title(110, {	-- Jenkins
 								["style"] = 2,
@@ -179,7 +179,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				}),
 				n(77081, {	-- The Lanticore
 					["description"] = "This rare spawns to the right of Kyrak, the second boss.",
-					["g"] = {
+					["groups"] = {
 						i(117528),	-- Lanticore Spawnling (PET!)
 					},
 				}),

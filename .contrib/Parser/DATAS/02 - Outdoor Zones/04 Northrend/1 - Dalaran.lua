@@ -1939,12 +1939,12 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
-						-- #endif
 						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { AZJOL_NERUB, AZJOL_NERUB_FLOOR2, AZJOL_NERUB_FLOOR3 },
 						["isDaily"] = true,
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["groups"] = {
 							objective(1, {	-- 0/1 The Idle Crown of Anub'arak
 								["provider"] = { "i", 43726 },	-- The Idle Crown of Anub'arak
@@ -1955,12 +1955,12 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
-						-- #endif
 						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { THE_VIOLET_HOLD_WRATH },
 						["isDaily"] = true,
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["groups"] = {
 							objective(1, {	-- 0/1 Head of Cyanigosa
 								["provider"] = { "i", 43823 },	-- Head of Cyanigosa
@@ -1971,12 +1971,12 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
-						-- #endif
 						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { GUNDRAK, GUNDRAK_FLOOR2 },
 						["isDaily"] = true,
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["groups"] = {
 							objective(1, {	-- 0/1 Mojo Remnant of Akali
 								["provider"] = { "i", 43693 },	-- Mojo Remnant of Akali
@@ -1987,12 +1987,12 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
-						-- #endif
 						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { AHNKAHET_THE_OLD_KINGDOM },
 						["isDaily"] = true,
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["groups"] = {
 							objective(1, {	-- 0/1 Faceless One's Withered Brain
 								["provider"] = { "i", 43821 },	-- Faceless One's Withered Brain
@@ -2003,12 +2003,12 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
-						-- #endif
 						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { UTGARDE_KEEP, UTGARDE_KEEP_FLOOR2, UTGARDE_KEEP_FLOOR3 },
 						["isDaily"] = true,
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["groups"] = {
 							objective(1, {	-- 0/1 Axe of the Plunderer
 								["provider"] = { "i", 43662 },	-- Axe of the Plunderer
@@ -2019,12 +2019,12 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
-						-- #endif
 						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { THE_NEXUS },
 						["isDaily"] = true,
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["groups"] = {
 							objective(1, {	-- 0/1 Keristrasza's Broken Heart
 								["provider"] = { "i", 43665 },	-- Keristrasza's Broken Heart
@@ -2035,12 +2035,12 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
-						-- #endif
 						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { UTGARDE_PINNACLE, UTGARDE_PINNACLE_FLOOR2 },
 						["isDaily"] = true,
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["groups"] = {
 							objective(1, {	-- 0/1 Locket of the Deceased Queen
 								["provider"] = { "i", 43669 },	-- Locket of the Deceased Queen
@@ -2051,12 +2051,12 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
-						-- #endif
 						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { THE_OCULUS, THE_OCULUS_FLOOR2, THE_OCULUS_FLOOR3, THE_OCULUS_FLOOR4, THE_OCULUS_FLOOR5 },
 						["isDaily"] = true,
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["groups"] = {
 							objective(1, {	-- 0/1 Ley Line Tuner
 								["provider"] = { "i", 43668 },	-- Ley Line Tuner
@@ -2067,12 +2067,12 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
-						-- #endif
 						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { HALLS_OF_LIGHTNING, HALLS_OF_LIGHTNING_FLOOR2 },
 						["isDaily"] = true,
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["groups"] = {
 							objective(1, {	-- 0/1 Celestial Ruby Ring
 								["provider"] = { "i", 43724 },	-- Celestial Ruby Ring
@@ -2083,12 +2083,12 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
-						-- #endif
 						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { THE_CULLING_OF_STRATHOLME, THE_CULLING_OF_STRATHOLME_FLOOR2 },
 						["isDaily"] = true,
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["groups"] = {
 							objective(1, {	-- 0/1 Artifact from the Nathrezim Homeworld
 								["provider"] = { "i", 43697 },	-- Artifact from the Nathrezim Homeworld
@@ -2099,12 +2099,12 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
-						-- #endif
 						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { HALLS_OF_STONE },
 						["isDaily"] = true,
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["groups"] = {
 							objective(1, {	-- 0/1 The Curse of Flesh Disc
 								["provider"] = { "i", 43699 },	-- The Curse of Flesh Disc
@@ -2115,6 +2115,9 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
+						["timeline"] = { REMOVED_4_0_1 },
+						["maps"] = { TRIAL_OF_THE_CHAMPION },
+						["isDaily"] = true,
 						-- #if ANYCLASSIC
 						["OnUpdate"] = [[function(t)
 							if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_FOUR .. [[) then
@@ -2126,9 +2129,6 @@ root(ROOTS.Zones, {
 							end
 						end]],
 						-- #endif
-						["timeline"] = { REMOVED_4_0_1 },
-						["maps"] = { TRIAL_OF_THE_CHAMPION },
-						["isDaily"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/1 Fragment of the Black Knight's Soul
 								["provider"] = { "i", 48418 },	-- Fragment of the Black Knight's Soul
@@ -2139,12 +2139,12 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
-						-- #endif
 						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { DRAKTHARON_KEEP, DRAKTHARON_KEEP_FLOOR2 },
 						["isDaily"] = true,
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["groups"] = {
 							objective(1, {	-- 0/1 Prophet's Enchanted Tiki
 								["provider"] = { "i", 43670 },	-- Prophet's Enchanted Tiki
@@ -2155,10 +2155,10 @@ root(ROOTS.Zones, {
 					applyclassicphase(WRATH_PHASE_FOUR, q(78752, {	-- Proof of Demise: Titan Rune Protocol Gamma
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						-- #if BEFORE 4.0.1
 						["description"] = "The quest item can also drop from any of the new Icecrown Heroic Dungeons.",
 						-- #endif
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						["timeline"] = { ADDED_3_3_0, REMOVED_4_0_1 },
 						["maps"] = {
 							AHNKAHET_THE_OLD_KINGDOM,
@@ -2411,11 +2411,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12794, {	-- The Magical Kingdom of Dalaran (A)
-						["providers"] = {
-							{ "n", 23729 },	-- Baron Ulrik von Stromhearth
-							{ "n", 26673 },	-- Image of Archmage Modera
-							{ "n", 29158 },	-- Magister Dath'omere
-							{ "n", 29161 },	-- Magistrix Haelenai
+						["qgs"] = {
+							23729,	-- Baron Ulrik von Stromhearth
+							26673,	-- Image of Archmage Modera
+							29158,	-- Magister Dath'omere
+							29161,	-- Magistrix Haelenai
 						},
 						["coords"] = {
 							{ 58.6, 68.2, BOREAN_TUNDRA },
@@ -2427,11 +2427,11 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(12791, {	-- The Magical Kingdom of Dalaran (H)
-						["providers"] = {
-							{ "n", 26471 },	-- Image of Archmage Aethas Sunreaver
-							{ "n", 29160 },	-- Magistrix Phaelista
-							{ "n", 29162 },	-- Magister Tyr'ganal
-							{ "n", 29159 },	-- Magister Varenthas
+						["qgs"] = {
+							26471,	-- Image of Archmage Aethas Sunreaver
+							29160,	-- Magistrix Phaelista
+							29162,	-- Magister Tyr'ganal
+							29159,	-- Magister Varenthas
 						},
 						["coords"] = {
 							{ 20.6, 64.2, GRIZZLY_HILLS },
@@ -2456,13 +2456,13 @@ root(ROOTS.Zones, {
 						["qg"] = 31439,	-- Archmage Timear
 						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
 						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
-						-- #endif
 						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { THE_OCULUS, THE_OCULUS_FLOOR2, THE_OCULUS_FLOOR3, THE_OCULUS_FLOOR4, THE_OCULUS_FLOOR5 },
 						["isDaily"] = true,
 						["lvl"] = 78,
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["groups"] = {
 							objective(1, {	-- 0/10 Centrifuge Construct slain
 								["provider"] = { "n", 27641 },	-- Centrifuge Construct
@@ -2488,13 +2488,13 @@ root(ROOTS.Zones, {
 						["qg"] = 31439,	-- Archmage Timear
 						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
 						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
-						-- #endif
 						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { THE_CULLING_OF_STRATHOLME, THE_CULLING_OF_STRATHOLME_FLOOR2 },
 						["isDaily"] = true,
 						["lvl"] = 78,
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["groups"] = {
 							objective(1, {	-- 0/4 Infinite Agent slain
 								["provider"] = { "n", 27744 },	-- Infinite Agent
@@ -2520,13 +2520,13 @@ root(ROOTS.Zones, {
 						["qg"] = 31439,	-- Archmage Timear
 						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
 						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
-						-- #endif
 						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { HALLS_OF_LIGHTNING, HALLS_OF_LIGHTNING_FLOOR2 },
 						["isDaily"] = true,
 						["lvl"] = 78,
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["groups"] = {
 							objective(1, {	-- 0/7 Titanium Vanguard slain
 								["provider"] = { "n", 28838 },	-- Titanium Vanguard
@@ -2552,13 +2552,13 @@ root(ROOTS.Zones, {
 						["qg"] = 31439,	-- Archmage Timear
 						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
 						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
-						-- #if ANYCLASSIC
-						["OnUpdate"] = OnUpdateForTimearDailies,
-						-- #endif
 						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { UTGARDE_PINNACLE, UTGARDE_PINNACLE_FLOOR2 },
 						["isDaily"] = true,
 						["lvl"] = 78,
+						-- #if ANYCLASSIC
+						["OnUpdate"] = OnUpdateForTimearDailies,
+						-- #endif
 						["groups"] = {
 							objective(1, {	-- 0/7 Ymirjar Berserker slain
 								["provider"] = { "n", 26696 },	-- Ymirjar Berserker

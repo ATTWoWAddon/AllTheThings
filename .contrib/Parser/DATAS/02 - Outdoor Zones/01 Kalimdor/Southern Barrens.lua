@@ -172,8 +172,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(31918, {	-- A Tamer's Homecoming (H)
 					["qg"] = 66422,	-- Cassandra Kaboom
-					["sourceQuest"] = 31870,	-- Cassandra Kaboom
 					["altQuests"] = { 31917 },	-- A Tamer's Homecoming (A) -- CRIEVE NOTE: Check this on MOP Classic
+					["sourceQuest"] = 31870,	-- Cassandra Kaboom
 					["coord"] = { 39.5, 79.1, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { ORGRIMMAR },
@@ -597,14 +597,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25057, {	-- Clap 'Em In Irons
 					["qg"] = 38323,	-- General Hawthorne
-					-- #if AFTER 7.0.3
-					["description"] = "High-level players may require |cff0070ddSoft Foam Sword|r to lower creature health to 10%.",
-					-- #endif
 					["sourceQuests"] = {
 						25045,	-- A Line in the Dirt
 						25043,	-- Fields of Blood
 					},
 					["coord"] = { 49.9, 49.7, SOUTHERN_BARRENS },
+					-- #if AFTER 7.0.3
+					["description"] = "High-level players may require |cff0070ddSoft Foam Sword|r to lower creature health to 10%.",
+					-- #endif
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1061,8 +1061,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if NOT ANYCLASSIC
 					["description"] = "This quest can only be accepted from the 'Adventure Guide' by a character in Chromie timeline: Cataclysm.",
 					-- #endif
-					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
@@ -1071,8 +1071,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				})),
 				heroscall(q(28551, {	-- Hero's Call: Southern Barrens!
-					["maps"] = { STORMWIND_CITY },	-- Only found in Stormwind City in Cataclysm.
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { STORMWIND_CITY },	-- Only found in Stormwind City in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
@@ -1181,8 +1181,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "i", 5099 },	-- Hoof of Lakota'mani
 					["coord"] = { 47.6, 51.6, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cr"] = 3474,	-- Lakota'mani
 					["races"] = HORDE_ONLY,
+					["cr"] = 3474,	-- Lakota'mani
 					["lvl"] = 10,
 				}),
 				q(24941, {	-- Langridge Shot
@@ -1459,8 +1459,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "i", 5102 },	-- Owatanka's Tailspike
 					["coord"] = { 49.6, 59.6, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cr"] = 3473,	-- Owatanka
 					["races"] = HORDE_ONLY,
+					["cr"] = 3473,	-- Owatanka
 					["lvl"] = 10,
 				}),
 				q(24619, {	-- Parts-is-Parts
@@ -1993,8 +1993,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "The only way to do both this and 'Report to Aubrey' is if you do it before accepting and completing 'Repel Boarders.'",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
 					["lockCriteria"] = { 1, "questID", 24934 },	-- Repel Boarders!
+					["isBreadcrumb"] = true,
 				}),
 				q(25175, {	-- The Bad News
 					["qg"] = 39188,	-- Marley Twinbraid
@@ -2074,9 +2074,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(24518, {	-- The Low Road
 					["provider"] = { "i", 49776 },	-- Roadway Plans
-					["crs"] = { 37216 },	-- Honor's Stand Officer
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["crs"] = { 37216 },	-- Honor's Stand Officer
 				}),
 				q(24601, {	-- The Nightmare Scar
 					["qg"] = 37570,	-- Naralex
@@ -2250,8 +2250,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(885, {	-- Washte Pawne
 					["provider"] = { "i", 5103 },	-- Washte Pawne's Feather
 					["timeline"] = { REMOVED_4_0_3 },
-					["cr"] = 3472,	-- Washte Pawne
 					["races"] = HORDE_ONLY,
+					["cr"] = 3472,	-- Washte Pawne
 					["lvl"] = 10,
 				}),
 				q(893, {	-- Weapons of Choice

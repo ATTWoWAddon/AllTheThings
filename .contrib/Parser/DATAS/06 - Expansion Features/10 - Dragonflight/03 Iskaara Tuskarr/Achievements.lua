@@ -17,7 +17,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					16300,	-- Treasures of The Azure Span
 					16563,	-- We're Going to Need a Bigger Harpoon
 				}},
-				["g"] = {
+				["groups"] = {
 					i(192788),	-- Bestowed Trawling Mammoth (MOUNT!)
 				},
 			}),

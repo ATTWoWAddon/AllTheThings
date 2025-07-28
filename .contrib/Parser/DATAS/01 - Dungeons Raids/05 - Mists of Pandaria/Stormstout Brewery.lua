@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
-	applyclassicphase(MOP_PHASE_LANDFALL, inst(302, {	-- Stormstout Brewery
+	applyclassicphase(MOP_PHASE_ONE, inst(302, {	-- Stormstout Brewery
 		["coord"] = { 36, 69, VALLEY_OF_THE_FOUR_WINDS },
 		["maps"] = {
 			439,	-- Grain Cellar
@@ -10,7 +10,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 			441,	-- The Great Wheel
 			442,	-- The Tasting Room
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(6400, {	-- How Did He Get Up There?
 					["provider"] = { "n", 60276 },	-- Hozen Clinger
@@ -30,7 +30,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					["qg"] = 59822,	-- Auntie Stormstout
 					["sourceQuest"] = 30085,	-- Into the Brewery
 					["coord"] = { 76.2, 36.4, 439 },
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/1 Stormstout Secrets
 							["providers"] = {
 								{ "o", 213795 },	-- Stormstout Secrets
@@ -54,7 +54,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					["qg"] = 59704,	-- Chen Stormstout
 					["sourceQuest"] = 30085,	-- Into the Brewery
 					["coord"] = { 76.6, 36.8, 439 },
-					["g"] = {
+					["groups"] = {
 						objective(1, {	-- 0/1 Yan-Zhu the Uncasked slain
 							["provider"] = { "n", 59479 },	-- Yan-Zhu the Uncasked
 						}),
@@ -82,7 +82,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 				e(670, {	-- Yan-Zhu the Uncasked
 					["crs"] = { 59479 },	-- Yan-Zhu the Uncasked
-					["g"] = {
+					["groups"] = {
 						ach(6457),	-- Stormstout Brewery
 					},
 				}),
@@ -90,7 +90,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(668, {	-- Ook-Ook
 					["crs"] = { 56637 },	-- Ook-Ook
-					["g"] = {
+					["groups"] = {
 						-- Available
 						i(144084, {	-- Ook's Hozen Slicer
 							["timeline"] = { ADDED_7_1_5 },
@@ -122,7 +122,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				e(669, {	-- Hoptallus
 					["crs"] = { 56717 },	-- Hoptallus
-					["g"] = {
+					["groups"] = {
 						-- Available
 						i(144092, {	-- Bottle of Potent Potables
 							["timeline"] = { ADDED_7_1_5 },
@@ -154,7 +154,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				e(670, {	-- Yan-Zhu the Uncasked
 					["crs"] = { 59479 },	-- Yan-Zhu the Uncasked
-					["g"] = {
+					["groups"] = {
 						-- Available
 						i(87545, {	-- Inelava, Spirit of Inebriation [Confirmed by Carbion to drop in Normal]
 							["timeline"] = { ADDED_7_1_5 },
@@ -218,7 +218,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				e(668, {	-- Ook-Ook
 					["crs"] = { 56637 },	-- Ook-Ook
-					["g"] = {
+					["groups"] = {
 						-- Available
 						ach(6089),	-- Keep Rollin' Rollin' Rollin'
 						i(144084, {	-- Ook's Hozen Slicer
@@ -257,7 +257,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				e(669, {	-- Hoptallus
 					["crs"] = { 56717 },	-- Hoptallus
-					["g"] = {
+					["groups"] = {
 						-- Available
 						i(144092, {	-- Bottle of Potent Potables
 							["timeline"] = { ADDED_7_1_5 },
@@ -295,7 +295,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				e(670, {	-- Yan-Zhu the Uncasked
 					["crs"] = { 59479 },	-- Hoptallus
-					["g"] = {
+					["groups"] = {
 						-- Available
 						ach(6456),	-- Heroic: Stormstout Brewery
 						ach(6666),	-- Heroic: Stormstout Brewery Guild Run
@@ -367,7 +367,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 } }, {
+			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
 				ach(8431, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Stormstout Brewery
 					title(248),	-- Stormbrewer <Name>
 				})),

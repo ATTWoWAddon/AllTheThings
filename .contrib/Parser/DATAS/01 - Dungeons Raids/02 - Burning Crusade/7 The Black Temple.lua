@@ -50,8 +50,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 				-- #if AFTER 3.0.1
 				q(13429, {	-- A Distraction for Akama
 					["qg"] = 18528,	-- Xi'ri
-					["sourceQuest"] = 10949,	-- Entry Into the Black Temple
 					["altQuests"] = { 10985 },	-- A Distraction for Akama (legacy version)
+					["sourceQuest"] = 10949,	-- Entry Into the Black Temple
 					["coord"] = { 65.2, 43.9, SHADOWMOON_VALLEY },
 					["timeline"] = { ADDED_3_0_2 },
 					["lvl"] = lvlsquish(70, 70, 30),
@@ -79,7 +79,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 				}),
 				q(10958, {	-- Seek Out the Ashtongue
 					["qg"] = 18528,	-- Xi'ri
-					["coord"] = { 65.2, 44.0, SHADOWMOON_VALLEY },
 					["sourceQuests"] = {
 						10985,	-- A Distraction for Akama
 						-- #if AFTER 3.0.1
@@ -89,6 +88,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 					-- #if AFTER 3.0.1
 					["sourceQuestNumRequired"] = 1,
 					-- #endif
+					["coord"] = { 65.2, 44.0, SHADOWMOON_VALLEY },
 					["lvl"] = lvlsquish(70, 70, 30),
 				}),
 				q(10959, {	-- The Fall of the Betrayer

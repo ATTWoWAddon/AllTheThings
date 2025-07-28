@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["cr"] = 193222,	-- Archaeologist Koranir
 				["coord"] = { 90.2, 40.2, OHNAHRAN_PLAINS },
 				["questID"] = 74096,
-				["g"] = {
+				["groups"] = {
 					bo(73869, true),
 				},
 			}),
@@ -24,7 +24,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 37.3, 38.5, OHNAHRAN_PLAINS },
 				["questID"] = 74467,
-				["g"] = {
+				["groups"] = {
 					i(203673),	-- Bloodbeak's Ravenor
 				},
 			})),
@@ -36,7 +36,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(189652, {	-- Deadwaker Ghendish
 				["coord"] = { 30.8, 66.6, OHNAHRAN_PLAINS },
 				["questID"] = 73872,
-				["g"] = {
+				["groups"] = {
 					i(189055),	-- Ghendish's Backup Talisman
 				},
 			}),
@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 49.5, 67.0, OHNAHRAN_PLAINS },
 				["description"] = "Chance to spawn after killing any nearby Nokhud Mobs. Yells 'Filth! I will end you for your actions!' upon spawning.",
 				["questID"] = 74063,
-				["g"] = {
+				["groups"] = {
 					-- #if AFTER 10.0.5
 					bo(74441, true),	-- Bonus Objective was added in 10.0.5
 					-- #endif
@@ -54,7 +54,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(193142, {	-- Enraged Sapphire
 				["coord"] = { 56.6, 81.4, OHNAHRAN_PLAINS },
 				["questID"] = 73875,
-				["g"] = {
+				["groups"] = {
 					i(200309),	-- Rock Encrusted Chestguard
 				},
 			}),
@@ -63,7 +63,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 35.0, 41.1, OHNAHRAN_PLAINS },
 				["questID"] = 74549,
-				["g"] = {
+				["groups"] = {
 					bo(74463, true),
 					i(203671),	-- Pack Leader's Pelt
 				},
@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 33.5, 38.7, OHNAHRAN_PLAINS },
 				["questID"] = 74548,
-				["g"] = {
+				["groups"] = {
 					bo(74466, true),
 					i(203672),	-- Master Huntmaster's Wristguards
 				},
@@ -94,7 +94,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 80.5, 37.8, OHNAHRAN_PLAINS },	-- Boss
 				},
 				["questID"] = 73967,
-				["g"] = {
+				["groups"] = {
 					bo(66356, true),
 					i(203672),	-- Master Huntmaster's Wristguards
 				},
@@ -107,7 +107,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 33.7, 34.8, OHNAHRAN_PLAINS },
 				["questID"] = 74546,
-				["g"] = {
+				["groups"] = {
 					bo(74464, true),
 					i(203674),	-- Brutal Tramplers
 				},
@@ -127,14 +127,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["description"] = "Spawns during the Aylaag Caravan escort from River Camp to Eaglewatch Outpost.",
 				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
 				-- ["questID"] = ,
-				-- ["g"] = {
+				-- ["groups"] = {
 				-- },
 			}),
 			n(196350, {	-- Old Stormhide
 				["description"] = "Spawns during the Aylaag Caravan escort from Eaglewatch Outlook to Aylaag Outpout.",
 				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
 				-- ["questID"] = ,
-				-- ["g"] = {
+				-- ["groups"] = {
 				-- },
 			}),
 		--	n(193235),	-- Oshigol // under DF/Timed Based Rare
@@ -192,7 +192,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 				["questID"] = 74073,
 				["cost"] = {{"i", 194681, 1}},	-- Sugarwing Cupcake
-				["g"] = {
+				["groups"] = {
 					bo(69865, true),
 					i(200735),	-- Magically Magical Faerie Flower
 				},
@@ -200,14 +200,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(193136, {	-- Scav Notail
 				["coord"] = { 50.1, 75.2, OHNAHRAN_PLAINS },
 				["questID"] = 73893,
-				["g"] = {
+				["groups"] = {
 					i(200168),	-- Gnoll Hide Belt
 				},
 			}),
 			n(193188, {	-- Seeker Teryx
 				["coord"] = { 61.9, 13.0, OHNAHRAN_PLAINS },
 				["questID"] = 73894,
-				["g"] = {
+				["groups"] = {
 					i(200875),	-- Seeker's Bands
 				},
 			}),
@@ -215,7 +215,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["crs"] = { 193166 },	-- Solethus's Gravestone
 				["coord"] = { 29.9, 41.1, OHNAHRAN_PLAINS },
 				["questID"] = 74075,
-				["g"] = {
+				["groups"] = {
 					i(196996),	-- Cliffside Wylderdrake: Branched Horns (MM!)
 					i(200437),	-- Dreamsong Censer
 					i(197115),	-- Highland Drake: Thorned Jaw (MM!)
@@ -230,7 +230,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(193165, {	-- Sparkspitter Vrak
 				["coord"] = { 22.1, 38.8, OHNAHRAN_PLAINS },
 				["questID"] = 73896,
-				["g"] = {
+				["groups"] = {
 					i(200234),	-- Vrak's Embossed Aegis
 				},
 			}),
@@ -239,7 +239,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 32.5, 42.3, OHNAHRAN_PLAINS },
 				["questID"] = 74547,
-				["g"] = {
+				["groups"] = {
 					bo(74465, true),
 					i(203676),	-- Stormcaller's Grounding Shoes
 					i(197367),	-- Renewed Proto-Drake: Gray Hair (MM!)
@@ -264,7 +264,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["description"] = "Spawns during the Aylaag Caravan escort from Eaglewatch Outpost to Aylaag Outpost.",
 				-- ["coord"] = { X, Y, OHNAHRAN_PLAINS },
 				-- ["questID"] = ,
-				-- ["g"] = {
+				-- ["groups"] = {
 				-- },
 			}),
 			n(195204, {	-- The Jolly Giant
@@ -285,7 +285,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(192983, {	-- Web-Queen Ashkaz
 				["coord"] = { 43.3, 47.2, OHNAHRAN_PLAINS },
 				["questID"] = 74095,
-				["g"] = {
+				["groups"] = {
 					bo(67717, true),
 				},
 			}),
@@ -302,7 +302,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				["coord"] = { 58.6, 68.2, OHNAHRAN_PLAINS },
 				["questID"] = 74088,
-				["g"] = {
+				["groups"] = {
 					bo(74440, true),
 					i(200141),	-- Wind Generating Band
 				},
@@ -310,7 +310,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(193209, {	-- Zenet Avis <The Hard Wind>
 				["coord"] = { 31.5, 64.0, OHNAHRAN_PLAINS },
 				["questID"] = 73901,
-				["g"] = {
+				["groups"] = {
 					i(200879, {	-- Zenet Egg
 						i(198825),	-- Zenet Hatchling (MOUNT!)
 					}),
@@ -325,7 +325,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["description"] = "Use /hiss on 4 nearby Juvenile Wind Serpents to spawn.",
 				["coord"] = { 30.3, 62.1, OHNAHRAN_PLAINS },
 				["questID"] = 74091,
-				["g"] = {
+				["groups"] = {
 					i(200215),	-- Plumed Shoulderguards of the Hunt
 				},
 			}),

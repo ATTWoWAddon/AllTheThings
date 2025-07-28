@@ -97,7 +97,7 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 	}),
 	ach(9496, {	-- Warlord's Deathwheel
 		["timeline"] = { ADDED_6_0_2 },
-		["g"] = {
+		["groups"] = {
 			crit(25887, {
 				["provider"] = { "i", 116788 },
 				["_noautomation"] = true,

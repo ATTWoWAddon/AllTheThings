@@ -6,14 +6,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		n(VENDORS, {
 			n(216598, {	-- Janky <Candles>
 				["coord"] = { 47.6, 33.4, THE_RINGING_DEEPS },
-				["g"] = {
+				["groups"] = {
 					i(224070),	-- Janky's Finest
 					i(224071),	-- Sparkspitter Candle
 				},
 			}),
 			n(223163, {	-- Paxton Bombshell <Enbiggenering Vendor>
 				["coord"] = { 63.9, 78.4, THE_RINGING_DEEPS },
-				["g"] = {
+				["groups"] = {
 					i(227770),	-- Assorted Whirligigs
 					i(227771),	-- Blinker Fluid
 					i(227772),	-- Cataclysmic Converter

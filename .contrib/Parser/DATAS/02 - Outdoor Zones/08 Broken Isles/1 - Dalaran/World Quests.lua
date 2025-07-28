@@ -53,7 +53,7 @@ root(ROOTS.Zones, {
 						["isWorldQuest"] = true,
 						["requireSkill"] = BLACKSMITHING,
 						["lvl"] = { 45 },
-						["g"] = {
+						["groups"] = {
 							i(137606),	-- Plans: Leystone Gauntlets [Rank 3] (RECIPE!)
 						},
 					}),
@@ -64,7 +64,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 32725 },	-- Warmage Silva
 						["lvl"] = { 45 },
 						["isWorldQuest"] = true,
-						["g"] = {
+						["groups"] = {
 							i(128606),	-- Formula: Enchant CLoak - Word of Intellect [Rank 3] (RECIPE!)
 						},
 					}),
@@ -75,7 +75,7 @@ root(ROOTS.Zones, {
 						["lvl"] = { 45 },
 						["isWorldQuest"] = true,
 						["provider"] = { "n", 32725 },	-- Warmage Silva
-						["g"] = {
+						["groups"] = {
 							i(137724),	-- Schematic: Failure Detection Pylon [Rank 3] (RECIPE!)
 						},
 					}),
@@ -114,7 +114,7 @@ root(ROOTS.Zones, {
 					q(41656, {	-- Work Order: Azsunite Loop
 						["lvl"] = { 45 },
 						["isWorldQuest"] = true,
-						["g"] = {
+						["groups"] = {
 							i(137840),	-- Design: Azsunite Loop [Rank 3] (RECIPE!)
 						},
 					}),
@@ -125,7 +125,7 @@ root(ROOTS.Zones, {
 						["lvl"] = { 45 },
 						["isWorldQuest"] = true,
 						["provider"] = { "n", 32725 },	-- Warmage Silva
-						["g"] = {
+						["groups"] = {
 							i(137879),	-- Pattern: Warhide Gloves [Rank 3] (RECIPE!)
 						},
 					}),
@@ -135,7 +135,7 @@ root(ROOTS.Zones, {
 						["requireSkill"] = TAILORING,
 						["lvl"] = { 45 },
 						["isWorldQuest"] = true,
-						["g"] = {
+						["groups"] = {
 							i(138013),	-- Pattern: Silkweave Hood [Rank 3] (RECIPE!)
 						},
 					}),

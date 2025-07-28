@@ -18,7 +18,7 @@ BLACK_MARKET_AUCTION_HOUSE = createHeader({
 		-- #endif
 	},
 });
-root(ROOTS.BlackMarket, n(BLACK_MARKET_AUCTION_HOUSE, bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0 }, ["u"] = BLACK_MARKET }, {
+root(ROOTS.BlackMarket, n(BLACK_MARKET_AUCTION_HOUSE, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 }, ["u"] = BLACK_MARKET }, {
 	-- #if NOT RETAIL_STYLE_FILL_ENABLED
 	-- BMAH content is being loaded properly by the Madam X NPCs who are mapped into the zone. With these maps, the BMAH was loading
 	-- into the zone, then also symlinking all included versions of the NPC into the zone from the mapped group
@@ -118,7 +118,7 @@ root(ROOTS.BlackMarket, n(BLACK_MARKET_AUCTION_HOUSE, bubbleDownSelf({ ["timelin
 			["description"] = "Only available on the BMAH for a limited time!",
 			["IgnoreWarnings"] = true,
 			-- #endif
-			["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 		}, {
 			-- Heart of Fear Heroic Trash Drops. Only where available from the BMAH while HoF was current Content.
 			i(86993),	-- Darting Damselfly Cuffs
@@ -663,8 +663,8 @@ root(ROOTS.BlackMarket, n(BLACK_MARKET_AUCTION_HOUSE, bubbleDownSelf({ ["timelin
 			},
 			-- #endif
 		}),
-		i(97565, {	-- Unclaimed Black Market Container [5.1.0+]
-			["timeline"] = { ADDED_5_1_0, REMOVED_5_4_0 },
+		i(97565, {	-- Unclaimed Black Market Container [5.3.0+]
+			["timeline"] = { ADDED_5_3_0, REMOVED_5_4_0 },
 			-- #if BEFORE 5.4.0
 			["skipFill"] = true,
 			["sym"] = {

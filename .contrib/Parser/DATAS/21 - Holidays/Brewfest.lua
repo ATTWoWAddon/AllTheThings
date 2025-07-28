@@ -328,7 +328,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 			})),
 			ach(41212, {	-- A Round on the House in Khaz Algar (automated)
-				["timeline"] = { ADDED_11_2_0 }
+				["timeline"] = { ADDED_11_2_0 },
 			}),
 			ach(1684, {	-- Brewmaster (A)
 				-- Meta Achievement should symlink the contained Achievements from Source
@@ -900,10 +900,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["coord"] = { 46.4, 40.3, DUN_MOROGH },
 					-- #endif
 					["timeline"] = { ADDED_4_0_1 },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 33955, 1 },	-- Brewfest Stein Voucher
 					},
+					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
 						i(56836, {	-- Overflowing Purple Brewfest Stein
@@ -920,10 +920,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["coord"] = { 46.3, 14.8, DUROTAR },
 					-- #endif
 					["timeline"] = { ADDED_4_0_1 },
-					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 33955, 1 },	-- Brewfest Stein Voucher
 					},
+					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
 						i(56836, {	-- Overflowing Purple Brewfest Stein
@@ -943,10 +943,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["description"] = "This quest was only available during the 2009 & 2010 Brewfest. We are unsure if it will be returning during TBC Classic.",
 					-- #endif
 					["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 33955, 1 },	-- Brewfest Stein Voucher
 					},
+					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
 						i(37892, {	-- Green Brewfest Stein
@@ -966,10 +966,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["description"] = "This quest was only available during the 2009 & 2010 Brewfest. We are unsure if it will be returning during TBC Classic.",
 					-- #endif
 					["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
-					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 33955, 1 },	-- Brewfest Stein Voucher
 					},
+					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
 						i(37892, {	-- Green Brewfest Stein
@@ -1140,7 +1140,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				q(11293, {	-- Bark for the Barleybrews! (A)
 					["qg"] = 23627,	-- Becan Barleybrew
-					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
 					--[[
 					-- TODO: If they don't both check off when you complete one, uncomment.
 					["altQuests"] = {
@@ -1148,6 +1147,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						11294,	-- Bark for the Thunderbrews! (A)
 					},
 					]]--
+					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
 					-- #if AFTER CATA
 					["coord"] = { 56.0, 38.0, DUN_MOROGH },
 					-- #else
@@ -1155,16 +1155,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					-- #endif
 					["timeline"] = { ADDED_2_2_2 },
 					["maps"] = { IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 33306, 1 },	-- Ram Racing Reins
 					},
+					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = BREWFEST_TOKEN,
 				}),
 				q(11407, {	-- Bark for Drohn's Distillery! (H)
 					["qg"] = 24498,	-- Cort Gorestein
-					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
 					--[[
 					-- TODO: If they don't both check off when you complete one, uncomment.
 					["altQuests"] = {
@@ -1172,6 +1171,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						11408,	-- Bark for T'chali's Voodoo Brewery! (H)
 					},
 					]]--
+					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
 					-- #if AFTER CATA
 					["coord"] = { 40.5, 18.3, DUROTAR },
 					-- #else
@@ -1179,16 +1179,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					-- #endif
 					["timeline"] = { ADDED_2_2_2 },
 					["maps"] = { ORGRIMMAR },
-					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 33306, 1 },	-- Ram Racing Reins
 					},
+					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["groups"] = BREWFEST_TOKEN,
 				}),
 				q(11294, {	-- Bark for the Thunderbrews! (A)
 					["qg"] = 23628,	-- Daran Thunderbrew
-					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
 					--[[
 					-- TODO: If they don't both check off when you complete one, uncomment.
 					["altQuests"] = {
@@ -1196,6 +1195,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						11294,	-- Bark for the Thunderbrews! (A)
 					},
 					]]--
+					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
 					-- #if AFTER CATA
 					["coord"] = { 56.6, 36.8, DUN_MOROGH },
 					-- #else
@@ -1203,16 +1203,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					-- #endif
 					["timeline"] = { ADDED_2_2_2 },
 					["maps"] = { IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 33306, 1 },	-- Ram Racing Reins
 					},
+					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = BREWFEST_TOKEN,
 				}),
 				q(11408, {	-- Bark for T'chali's Voodoo Brewery! (H)
 					["qg"] = 24498,	-- Cort Gorestein
-					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
 					--[[
 					-- TODO: If they don't both check off when you complete one, uncomment.
 					["altQuests"] = {
@@ -1220,6 +1219,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						11408,	-- Bark for T'chali's Voodoo Brewery! (H)
 					},
 					]]--
+					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
 					-- #if AFTER CATA
 					["coord"] = { 40.5, 18.3, DUROTAR },
 					-- #else
@@ -1395,10 +1395,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["coord"] = { 46.6, 40.3, DUN_MOROGH },
 					-- #endif
 					["timeline"] = { ADDED_4_2_0 },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 33306, 1 },	-- Ram Racing Reins
 					},
+					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(29393, {	-- Brew For Brewfest (H)
@@ -1410,29 +1410,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["coord"] = { 46.3, 14.8, DUROTAR },
 					-- #endif
 					["timeline"] = { ADDED_4_2_0 },
-					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 33306, 1 },	-- Ram Racing Reins
 					},
+					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(12278, {	-- Brew of the Month Club (A)
-					["timeline"] = { ADDED_2_2_2 },	-- Originally added 3.0.2, but in TBC Classic?!
-					["maps"] = { DUN_MOROGH },
-					["races"] = ALLIANCE_ONLY,
-					["altQuests"] = { 12420 },	-- Brew of the Month Club (A) [???]
-					-- #IF ANYCLASSIC
-					-- #if AFTER WRATH
-					["OnUpdate"] = [[function(t)
-						if not (_.IsQuestFlaggedCompleted(t.questID) or _.IsQuestFlaggedCompleted(t.altQuests[1])) then
-							if ATTAccountWideData.Achievements[2796] then
-								t.collected = 2;
-								t.OnUpdate = nil;
-							end
-						end
-					end]],
-					-- #endif
-					-- #endif
 					-- #if AFTER 3.0.0
 					["provider"] = { "i", 37571 },	-- "Brew of the Month" Club Membership Form (current)
 					["repeatable"] = true,
@@ -1441,23 +1425,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["description"] = "We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",
 					["repeatable"] = true,
 					-- #endif
-				}),
-				-- #IF NOT ANYCLASSIC
-				q(12420, {	-- Brew of the Month Club (A)
-					["provider"] = { "i", 37736 },	-- "Brew of the Month" Club Membership Form (original)
-					["altQuests"] = { 12278 },	-- Brew of the Month Club (A)
+					["altQuests"] = { 12420 },	-- Brew of the Month Club (A) [???]
 					["timeline"] = { ADDED_2_2_2 },	-- Originally added 3.0.2, but in TBC Classic?!
-					["u"] = REMOVED_FROM_GAME,	-- this version isn't available, but don't know when it was 'removed'
 					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
-					["isYearly"] = true,	-- original quest was reset yearly
-				}),
-				-- #ENDIF
-				q(12306, {	-- Brew of the Month Club (H)
-					["timeline"] = { ADDED_2_2_2 },	-- Originally added 3.0.2, but in TBC Classic?!
-					["maps"] = { DUROTAR },
-					["races"] = HORDE_ONLY,
-					["altQuests"] = { 12421 },	-- Brew of the Month Club (H) [???]
 					-- #IF ANYCLASSIC
 					-- #if AFTER WRATH
 					["OnUpdate"] = [[function(t)
@@ -1470,6 +1441,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					end]],
 					-- #endif
 					-- #endif
+				}),
+				-- #IF NOT ANYCLASSIC
+				q(12420, {	-- Brew of the Month Club (A)
+					["provider"] = { "i", 37736 },	-- "Brew of the Month" Club Membership Form (original)
+					["altQuests"] = { 12278 },	-- Brew of the Month Club (A)
+					["timeline"] = { ADDED_2_2_2 },	-- Originally added 3.0.2, but in TBC Classic?!
+					["maps"] = { DUN_MOROGH },
+					["races"] = ALLIANCE_ONLY,
+					["isYearly"] = true,	-- original quest was reset yearly
+					["u"] = REMOVED_FROM_GAME,	-- this version isn't available, but don't know when it was 'removed'
+				}),
+				-- #ENDIF
+				q(12306, {	-- Brew of the Month Club (H)
 					-- #if AFTER 3.0.0
 					["provider"] = { "i", 37599 },	-- "Brew of the Month" Club Membership Form (current)
 					["repeatable"] = true,
@@ -1478,16 +1462,32 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["description"] = "We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",
 					["repeatable"] = true,
 					-- #endif
+					["altQuests"] = { 12421 },	-- Brew of the Month Club (H) [???]
+					["timeline"] = { ADDED_2_2_2 },	-- Originally added 3.0.2, but in TBC Classic?!
+					["maps"] = { DUROTAR },
+					["races"] = HORDE_ONLY,
+					-- #IF ANYCLASSIC
+					-- #if AFTER WRATH
+					["OnUpdate"] = [[function(t)
+						if not (_.IsQuestFlaggedCompleted(t.questID) or _.IsQuestFlaggedCompleted(t.altQuests[1])) then
+							if ATTAccountWideData.Achievements[2796] then
+								t.collected = 2;
+								t.OnUpdate = nil;
+							end
+						end
+					end]],
+					-- #endif
+					-- #endif
 				}),
 				-- #IF NOT ANYCLASSIC
 				q(12421, {	-- Brew of the Month Club (H)
 					["provider"] = { "i", 37737 },	-- "Brew of the Month" Club Membership Form (original)
 					["altQuests"] = { 12306 },	-- Brew of the Month Club (H)
 					["timeline"] = { ADDED_2_2_2 },	-- Originally added 3.0.2, but in TBC Classic?!
-					["u"] = REMOVED_FROM_GAME,	-- this version isn't available, but don't know when it was 'removed'
 					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,	-- original quest was reset yearly
+					["u"] = REMOVED_FROM_GAME,	-- this version isn't available, but don't know when it was 'removed'
 				}),
 				-- #ENDIF
 				q(76591, {	-- Bubbling Brews
@@ -1645,10 +1645,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["description"] = "This quest was only available during the 2007 Brewfest.",
 					-- #endif
 					["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 33955, 1 },	-- Brewfest Stein Voucher
 					},
+					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
 						i(32912, {	-- Yellow Brewfest Stein
@@ -1667,10 +1667,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["description"] = "This quest was only available during the 2007 Brewfest.",
 					-- #endif
 					["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
-					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 33955, 1 },	-- Brewfest Stein Voucher
 					},
+					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
 						i(32912, {	-- Yellow Brewfest Stein
@@ -1774,10 +1774,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["coord"] = { 46.6, 40.3, DUN_MOROGH },
 					-- #endif
 					["timeline"] = { ADDED_2_2_2 },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 33306, 1 },	-- Ram Racing Reins
 					},
+					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 				}),
 				q(11409, {	-- Now This is Ram Racing... Almost. (H)
@@ -1792,10 +1792,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["coord"] = { 46.3, 14.8, DUROTAR },
 					-- #endif
 					["timeline"] = { ADDED_2_2_2 },
-					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 33306, 1 },	-- Ram Racing Reins
 					},
+					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 				}),
 				q(11118, {	-- Pink Elekks On Parade (A) [Non-EU Only!]
@@ -1896,10 +1896,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["coord"] = { 46.4, 40.3, DUN_MOROGH },
 					-- #endif
 					["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 33955, 1 },	-- Brewfest Stein Voucher
 					},
+					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
 						i(33016, {	-- Blue Brewfest Stein
@@ -1915,10 +1915,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["coord"] = { 46.3, 14.8, DUROTAR },
 					-- #endif
 					["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 },
-					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 33955, 1 },	-- Brewfest Stein Voucher
 					},
+					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 					["groups"] = {
 						i(33016, {	-- Blue Brewfest Stein
@@ -1971,10 +1971,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["coord"] = { 46.6, 40.3, DUN_MOROGH },
 					-- #endif
 					["timeline"] = { ADDED_2_2_2 },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 33306, 1 },	-- Ram Racing Reins
 					},
+					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["groups"] = BREWFEST_TOKEN,
 				}),
@@ -1987,10 +1987,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["coord"] = { 46.3, 14.8, DUROTAR },
 					-- #endif
 					["timeline"] = { ADDED_2_2_2 },
-					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 33306, 1 },	-- Ram Racing Reins
 					},
+					["races"] = HORDE_ONLY,
 					["isYearly"] = true,
 					["groups"] = BREWFEST_TOKEN,
 				}),

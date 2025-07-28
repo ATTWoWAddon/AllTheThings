@@ -45,10 +45,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["coord"] = { 19.4, 50.0, ZANGARMARSH },
 					["maxReputation"] = { FACTION_SPOREGGAR, EXALTED },	-- Sporeggar, Exalted.
 					["timeline"] = { REMOVED_4_3_0 },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 24246, 5 },	-- Sanguine Hibiscus
 					},
+					["repeatable"] = true,
 					["lvl"] = lvlsquish(63, 63, 10),
 				}),
 				q(29692, {	-- Bring Me Another Shrubbery!
@@ -56,10 +56,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["sourceQuest"] = 29691,	-- Bring Me A Shrubbery!
 					["maxReputation"] = { FACTION_SPOREGGAR, EXALTED },	-- Sporeggar, Exalted.
 					["timeline"] = { ADDED_4_3_0 },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 24246, 5 },	-- Sanguine Hibiscus
 					},
+					["repeatable"] = true,
 					["lvl"] = lvlsquish(61, 61, 10),
 				}),
 				q(29571, {	-- Defending the Wilds

@@ -1363,7 +1363,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16528, {	-- Provisioner Vredigar
 					["coord"] = { 47.6, 32.2, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["g"] = bubbleDownClassicRep(FACTION_TRANQUILLIEN, {
+					["groups"] = bubbleDownClassicRep(FACTION_TRANQUILLIEN, {
 						{		-- Neutral
 						}, {	-- Friendly
 							i(22991),	-- Apprentice Boots

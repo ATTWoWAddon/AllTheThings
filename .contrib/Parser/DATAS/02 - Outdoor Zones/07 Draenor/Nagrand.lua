@@ -116,7 +116,7 @@ root(ROOTS.Zones, {
 					ach(9564, {	-- Securing Draenor (Alliance)
 						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							crit(26250),	-- Assault on the Broken Precipice
 							crit(26252),	-- Assault on Mok'gol Watchpost
 						},
@@ -124,7 +124,7 @@ root(ROOTS.Zones, {
 					ach(9562, {	-- Securing Draenor (Horde)
 						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							crit(26233),	-- Assault on the Broken Precipice
 							crit(26237),	-- Assault on Mok'gol Watchpost
 						},
@@ -209,7 +209,7 @@ root(ROOTS.Zones, {
 				n(FACTIONS, {
 					faction(FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY, {	-- Steamwheedle Preservation Society
 						["crs"] = { 87394 },	-- Kwilax Fuseshiv <Reputation Vendor>
-						["g"] = {
+						["groups"] = {
 							n(ACHIEVEMENTS, {
 								ach(9472, {		-- Steamwheedle Preservation Society
 									title(284),		-- "Conservationist" <Name>
@@ -308,37 +308,37 @@ root(ROOTS.Zones, {
 							n(RARES, {
 								n(86774, {	-- Aogexon
 									["coord"] = { 51.6, 16.1, DRAENOR_NAGRAND },
-									["g"] = {
+									["groups"] = {
 										i(118654),	-- Aogexon's Fang
-									}
+									},
 								}),
 								n(86732, {	-- Bergruu
 									["coord"] = { 62.3, 13.8, DRAENOR_NAGRAND },
-									["g"] = {
+									["groups"] = {
 										i(118655),	-- Bergruu's Horn
 									},
 								}),
 								n(86743, {	-- Dekorhan's Tusk
 									["coord"] = { 64.0, 30.6, DRAENOR_NAGRAND },
-									["g"] = {
+									["groups"] = {
 										i(118656),	-- Dekorhan's Tusk
 									},
 								}),
 								n(86729, {	-- Direhoof
 									["coord"] = { 60.2, 38.4, DRAENOR_NAGRAND },
-									["g"] = {
+									["groups"] = {
 										i(118657),	-- Direhoof's Hide
 									},
 								}),
 								n(86771, {	-- Gagrog the Brutal
 									["coord"] = { 48.1, 22.1, DRAENOR_NAGRAND },
-									["g"] = {
+									["groups"] = {
 										i(118658),	-- Gagrog's Skull
 									},
 								}),
 								n(87666, {	-- Mu'gra
 									["coord"] = { 34.0, 51.6, DRAENOR_NAGRAND },
-									["g"] = {
+									["groups"] = {
 										i(118659),	-- Mu'gra's Head
 									},
 								}),
@@ -350,19 +350,19 @@ root(ROOTS.Zones, {
 										{ 50.8, 38.0, DRAENOR_NAGRAND },
 										{ 59.0, 34.0, DRAENOR_NAGRAND },
 									},
-									["g"] = {
+									["groups"] = {
 										i(118660),	-- Thek'talon's Talon
 									},
 								}),
 								n(88951, {	-- Vileclaw
 									["coord"] = { 37.2, 39.0, DRAENOR_NAGRAND },
-									["g"] = {
+									["groups"] = {
 										i(120172),	-- Vileclaw's Claw
 									},
 								}),
 								n(86835, {	-- Xelganak
 									["coord"] = { 41.6, 45.0, DRAENOR_NAGRAND },
-									["g"] = {
+									["groups"] = {
 										i(118661),	-- Xelganak's Stinger
 									},
 								}),
@@ -370,7 +370,7 @@ root(ROOTS.Zones, {
 							n(VENDORS, {
 								n(87394, {	-- Kwilax Fuseshiv <Reputation Vendor>
 									["coord"] = { 50.5, 41.4, DRAENOR_NAGRAND },
-									["g"] = bubbleDownClassicRep(FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY, {
+									["groups"] = bubbleDownClassicRep(FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY, {
 										{		-- Neutral
 										}, {	-- Friendly
 											i(118667),	-- Steamwheedle Elixir
@@ -382,7 +382,7 @@ root(ROOTS.Zones, {
 										}, {	-- Revered
 											i(119165, {	-- Contract: Professor Felblast
 												["cost"] = 50000000,	-- 5,000g
-												["g"] = {
+												["groups"] = {
 													follower(460),	-- Professor Felblast
 												},
 											}),
@@ -511,7 +511,7 @@ root(ROOTS.Zones, {
 							34809,	-- A Lesson in Mineralogy
 							34811,	-- Good Help is Hard to Find
 						},
-						["g"] = {
+						["groups"] = {
 							i(114890),	-- Excavated Highmaul Doohickey
 							i(114887),	-- Excavated Highmaul Knicknack
 							i(114888),	-- Excavated Highmaul Thingamabob
@@ -536,7 +536,7 @@ root(ROOTS.Zones, {
 							{ 85.4, 38.7, DRAENOR_NAGRAND },	-- Abu'gar's Missing Reel
 							{ 38.4, 49.3, DRAENOR_NAGRAND },	-- Abu'Gar's Favorite Lure
 						},
-						["g"] = {
+						["groups"] = {
 							follower(209),	-- Abu'gar
 						},
 					}),
@@ -585,7 +585,7 @@ root(ROOTS.Zones, {
 							35062,	-- Lok-rath is Secured
 							34596,	-- Reglakk's Research
 						},
-						["g"] = {
+						["groups"] = {
 							i(118156),	-- Coif of Grasping Earth
 							i(118154),	-- Grounded Headguard
 							i(118157),	-- Thunderbolt Tanned Helmet
@@ -601,7 +601,7 @@ root(ROOTS.Zones, {
 							35098,	-- Lok-rath is Secured
 							35158,	-- Reglakk's Research
 						},
-						["g"] = {
+						["groups"] = {
 							i(118156),	-- Coif of Grasping Earth
 							i(118154),	-- Grounded Headguard
 							i(118157),	-- Thunderbolt Tanned Helmet
@@ -612,7 +612,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 83888 },	-- Mister Knuckles
 						["coord"] = { 53.8, 15.0, DRAENOR_NAGRAND },
 						["sourceQuest"] = 39278,	-- The Missing Manifest
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
@@ -672,7 +672,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 44.8, 19.8, 551 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34956,	-- Meet Me in the Cavern
-						["g"] = {
+						["groups"] = {
 							i(114707),	-- Beastrider Belt
 							i(114704),	-- Plainsthunder Girdle
 							i(114706),	-- Stormsteppe Belt
@@ -684,7 +684,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 44.8, 19.7, 551 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34866,	-- Meet Me in the Cavern
-						["g"] = {
+						["groups"] = {
 							i(114700),	-- Beastrider Spaulders
 							i(114701),	-- Plainsthunder Shoulders
 							i(114703),	-- Stormsteppe Pauldrons
@@ -750,7 +750,7 @@ root(ROOTS.Zones, {
 							35331,	-- Called to the Throne (alliance)
 							34965,	-- Called to the Throne (horde)
 						},
-						["g"] = {
+						["groups"] = {
 							i(119066),	-- Seal of Falling Snow
 							i(119074),	-- Seal of Rumbling Earth
 							i(118153),	-- Seal of Rushing Winds
@@ -780,7 +780,7 @@ root(ROOTS.Zones, {
 						["crs"] = { 80080 },	-- Bolkar the Cruel
 						["coord"] = { 40.4, 76.1, DRAENOR_NAGRAND },
 						["description"] = "Kill |cFFFFD700Bolkar the Cruel|r to loot |cFFFFD700Goldmane's Cage Key|r, then use the key on the cage.";
-						["g"] = {
+						["groups"] = {
 							follower(170),	-- Goldmane the Skinner
 						},
 					}),
@@ -801,7 +801,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 79312 },	-- Greezlex Fizzpinch
 						["coord"] = { 78.9, 58.8, DRAENOR_NAGRAND },
 						["sourceQuest"] = 34598,	-- The Missing Caravan
-						["g"] = {
+						["groups"] = {
 							i(114881),	-- Sabermaw Mauler's Gorget
 							i(114882),	-- Sabermaw Mystic's Pendant
 							i(114880),	-- Sabermaw Scarfang's Choker
@@ -814,7 +814,7 @@ root(ROOTS.Zones, {
 							35023,	-- Echoes of the Past
 							35022,	-- Lighting The Darkness
 						},
-						["g"] = {
+						["groups"] = {
 							i(118158),	-- Weatherbeaten Warsong Chain
 							i(118159),	-- Eroded Warsong Pendant
 							i(118160),	-- Weatherbeaten Warsong Locket
@@ -856,7 +856,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.4, 42.0, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 35060,	-- Terms of Surrender
-						["g"] = {
+						["groups"] = {
 							i(118150),	-- Beastrider Bracers
 							i(118148),	-- Plainsthunder Bracers
 							i(118149),	-- Stormsteppe Bracers
@@ -868,7 +868,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.4, 42.0, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 35096,	-- Terms of Surrender
-						["g"] = {
+						["groups"] = {
 							i(118150),	-- Beastrider Bracers
 							i(118148),	-- Plainsthunder Bracers
 							i(118149),	-- Stormsteppe Bracers
@@ -880,7 +880,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 63.4, 61.4, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 35356,	-- Someone's Missing Arrow
-						["g"] = {
+						["groups"] = {
 							i(114698),	-- Beastrider Breeches
 							i(114695),	-- Plainsthunder Legguards
 							i(114697),	-- Stormsteppe Leggings
@@ -892,7 +892,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 82.5, 43.9, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 35377,	-- Someone's Missing Axe
-						["g"] = {
+						["groups"] = {
 							i(114698),	-- Beastrider Breeches
 							i(114695),	-- Plainsthunder Legguards
 							i(114697),	-- Stormsteppe Leggings
@@ -950,7 +950,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 65.8, 68.6, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34682,	-- Operation: Surprise Party
-						["g"] = {
+						["groups"] = {
 							i(114694),	-- Beastrider Helm
 							i(114691),	-- Plainsthunder Helm
 							i(114693),	-- Stormsteppe Helm
@@ -977,7 +977,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 81955 },	-- Digrem Orebar
 						["coord"] = { 79.2, 52.6, DRAENOR_NAGRAND },
 						["sourceQuest"] = 34819,	-- Fruitful Ventures
-						["g"] = {
+						["groups"] = {
 							i(114834),	-- Meadowstomper Calf (PET!)
 						},
 					}),
@@ -996,7 +996,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 85.4, 54.6, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34951,	-- They Call Him Lantresor of the Blade
-						["g"] = {
+						["groups"] = {
 							i(114687),	-- Beastrider Gloves
 							i(114688),	-- Plainsthunder Gauntlets
 							i(114690),	-- Stormsteppe Gauntlets
@@ -1008,7 +1008,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 85.4, 54.5, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34818,	-- They Call Him Lantresor of the Blade
-						["g"] = {
+						["groups"] = {
 							i(114694),	-- Beastrider Helm
 							i(114691),	-- Plainsthunder Helm
 							i(114693),	-- Stormsteppe Helm
@@ -1020,7 +1020,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 78.7, 69.2, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34769,	-- A Choice to Make (alliance)
-						["g"] = {
+						["groups"] = {
 							i(114686),	-- Beastrider Boots
 							i(114683),	-- Plainsthunder Warboots
 							i(114685),	-- Stormsteppe Sabatons
@@ -1032,7 +1032,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 83.0, 67.9, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34899,	-- A Choice to Make (horde)
-						["g"] = {
+						["groups"] = {
 							i(114686),	-- Beastrider Boots
 							i(114683),	-- Plainsthunder Warboots
 							i(114685),	-- Stormsteppe Sabatons
@@ -1094,7 +1094,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 84.0, 76.8, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34593,	-- Obtaining Ogre Offensive Orders
-						["g"] = {
+						["groups"] = {
 							i(114911),	-- Mighty Gorian Cleaver
 							i(114912),	-- Mighty Gorian Greatsword
 							i(114913),	-- Mighty Gorian Hunting Bow
@@ -1111,7 +1111,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 83.7, 76.8, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 35157,	-- Obtaining Ogre Offensive Orders
-						["g"] = {
+						["groups"] = {
 							i(114911),	-- Mighty Gorian Cleaver
 							i(114912),	-- Mighty Gorian Greatsword
 							i(114913),	-- Mighty Gorian Hunting Bow
@@ -1181,7 +1181,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 79188 },	-- Dexyl Deadblade
 						["coord"] = { 79.4, 50.2, DRAENOR_NAGRAND },
 						["sourceQuest"] = 34665,	-- Ring of Trials: Captain Boomspark
-						["g"] = {
+						["groups"] = {
 							i(114711),	-- Beastrider Wristwraps
 							i(114709),	-- Plainsthunder Wristwraps
 							i(114710),	-- Stormsteppe Wristwraps
@@ -1196,7 +1196,7 @@ root(ROOTS.Zones, {
 							34719,	-- ... and My Hammer
 							34718,	-- The Others
 						},
-						["g"] = {
+						["groups"] = {
 							i(114700),	-- Beastrider Spaulders
 							i(114701),	-- Plainsthunder Shoulders
 							i(114703),	-- Stormsteppe Pauldrons
@@ -1212,7 +1212,7 @@ root(ROOTS.Zones, {
 							34917,	-- Shields Up!
 							34916,	-- The Blessing of Samedi
 						},
-						["g"] = {
+						["groups"] = {
 							i(114707),	-- Beastrider Belt
 							i(114704),	-- Plainsthunder Girdle
 							i(114706),	-- Stormsteppe Belt
@@ -1248,7 +1248,7 @@ root(ROOTS.Zones, {
 							{ 46.8, 57.5, DRAENOR_NAGRAND },
 							{ 52.0, 68.8, DRAENOR_NAGRAND },
 						},
-						["g"] = {
+						["groups"] = {
 							i(114889),	-- Kuhlrath's Cursed Totem
 							i(114886),	-- Twisted Elemental Focus
 							i(114891),	-- Void-Touched Totem
@@ -1342,7 +1342,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 63.5, 61.4, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34769,	-- A Choice to Make
-						["g"] = {
+						["groups"] = {
 							i(118137),	-- Plainshunter Blackjack
 							i(118135),	-- Plainshunter Claws
 							i(118136),	-- Plainshunter Dagger
@@ -1356,7 +1356,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 82.5, 43.9, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34899,	-- A Choice to Make
-						["g"] = {
+						["groups"] = {
 							i(118137),	-- Plainshunter Blackjack
 							i(118135),	-- Plainshunter Claws
 							i(118136),	-- Plainshunter Dagger
@@ -1381,7 +1381,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 80429 },	-- Shadow Hunter Kajassa
 						["coord"] = { 68.5, 64.5, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(114687),	-- Beastrider Gloves
 							i(114688),	-- Plainsthunder Gauntlets
 							i(114690),	-- Stormsteppe Gauntlets
@@ -1414,7 +1414,7 @@ root(ROOTS.Zones, {
 							35398,	-- Dark Binding
 							35397,	-- The Pale Threat
 						},
-						["g"] = {
+						["groups"] = {
 							i(118126),	-- Void-Warped Oshu'gun Crossbow
 							i(118127),	-- Void-Warped Oshu'gun Dagger
 							i(118125),	-- Void-Warped Oshu'gun Greatmaul
@@ -1433,7 +1433,7 @@ root(ROOTS.Zones, {
 							35144,	-- Dark Binding
 							35145,	-- The Pale Threat
 						},
-						["g"] = {
+						["groups"] = {
 							i(118126),	-- Void-Warped Oshu'gun Crossbow
 							i(118127),	-- Void-Warped Oshu'gun Dagger
 							i(118125),	-- Void-Warped Oshu'gun Greatmaul
@@ -1452,7 +1452,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 80434 },	-- Gar'rok
 						["coord"] = { 75.0, 22.7, DRAENOR_NAGRAND },
 						["sourceQuest"] = 34932,	-- Guise of the Deceiver
-						["g"] = {
+						["groups"] = {
 							i(114885),	-- Gar'rok's Patchwork Cloak
 							i(119052),	-- Gar'rok's Roadworn Cloak
 							i(114883),	-- Gar'rok's Sun-Faded Cloak
@@ -1516,7 +1516,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 64.2, 59.6, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34957,	-- Challenge of the Masters
-						["g"] = {
+						["groups"] = {
 							follower(157),	-- Lantresor of the Blade
 						},
 					}),
@@ -1525,7 +1525,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 82.6, 46.7, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34868,	-- Challenge of the Masters
-						["g"] = {
+						["groups"] = {
 							follower(157),	-- Lantresor of the Blade
 						},
 					}),
@@ -1594,7 +1594,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.5, 42.0, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 35060,	-- Terms of Surrender
-						["g"] = {
+						["groups"] = {
 							i(118142),	-- Beastrider Belt
 							i(118139),	-- Plainsthunder Waistguard
 							i(118141),	-- Stormsteppe Chain Belt
@@ -1606,7 +1606,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.5, 42.0, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 35096,	-- Terms of Surrender
-						["g"] = {
+						["groups"] = {
 							i(118142),	-- Beastrider Belt
 							i(118139),	-- Plainsthunder Waistguard
 							i(118141),	-- Stormsteppe Chain Belt
@@ -1623,7 +1623,7 @@ root(ROOTS.Zones, {
 							34893,	-- Guardians of the Plateau
 							34941,	-- The Debt We Share
 						},
-						["g"] = {
+						["groups"] = {
 							i(114682),	-- Beastrider Vest
 							i(114680),	-- Plainsthunder Chestplate
 							i(114681),	-- Stormsteppe Vest
@@ -1640,7 +1640,7 @@ root(ROOTS.Zones, {
 							34893,	-- Guardians of the Plateau
 							34941,	-- The Debt We Share
 						},
-						["g"] = {
+						["groups"] = {
 							i(114682),	-- Beastrider Vest
 							i(114680),	-- Plainsthunder Chestplate
 							i(114681),	-- Stormsteppe Vest
@@ -1651,7 +1651,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 84861 },	-- A Fascinating Fungus
 						["coord"] = { 86.6, 28.3, DRAENOR_NAGRAND },
 						["sourceQuest"] = 35146,	-- The Good Doctor
-						["g"] = {
+						["groups"] = {
 							i(116830),	-- Researcher's Ring
 							i(119063),	-- Sporebat Glowpod Ring
 							i(119071),	-- Sporebat Glowtail Loop
@@ -1671,7 +1671,7 @@ root(ROOTS.Zones, {
 							35087,	-- The Nether Approaches
 							35086,	-- The Void March
 						},
-						["g"] = {
+						["groups"] = {
 							i(118143),	-- Beastrider Gauntlets
 							i(118144),	-- Plainsthunder Handguards
 							i(118146),	-- Stormsteppe Grips
@@ -1831,7 +1831,7 @@ root(ROOTS.Zones, {
 					n(82899, {	-- Ancient Blademaster
 						["questID"] = 35778,
 						["coord"] = { 84.6, 53.6, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(116832),	-- Blademaster's Honor
 						},
 					}),
@@ -1840,7 +1840,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 76.9, 64.3, DRAENOR_NAGRAND },
 						["description"] = "Use the plunger next to the cave.",
-						["g"] = {
+						["groups"] = {
 							i(116823),	-- Katealystic Konverter
 						},
 					}),
@@ -1852,7 +1852,7 @@ root(ROOTS.Zones, {
 							{ 39.8, 13.2, DRAENOR_NAGRAND },
 						},
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(119370),	-- Rattlekilt
 						},
 					}),
@@ -1861,7 +1861,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 43.2, 36.3, DRAENOR_NAGRAND },
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(119380),	-- Brutag's Iron Toe Boots
 						},
 					}),
@@ -1869,7 +1869,7 @@ root(ROOTS.Zones, {
 						["questID"] = 34727,
 						["coord"] = { 34.6, 77.0, DRAENOR_NAGRAND },
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(118244),	-- Iron Buccaneer's Hat (TOY!)
 							i(116809),	-- Ironbeard's Blunderbuss
 						},
@@ -1882,14 +1882,14 @@ root(ROOTS.Zones, {
 							{ 35.6, 20.6, DRAENOR_NAGRAND },
 						},
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(119405),	-- Durg's Heavy Maul
 						},
 					}),
 					n(82486, {	-- Explorer Nozzand
 						["questID"] = 35623,
 						["coord"] = { 89.0, 41.0, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
@@ -1897,14 +1897,14 @@ root(ROOTS.Zones, {
 						["questID"] = 35836,
 						["coord"] = { 75.3, 10.9, DRAENOR_NAGRAND },
 						["description"] = "Use the |cFFFFD700Abandoned Fishing Rod|r.",
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					n(83483, {	-- Flinthide
 						["questID"] = 35893,
 						["coord"] = { 69.6, 42.0, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(116807),	-- Flinthide's Impenetrable Crest
 						},
 					}),
@@ -1915,21 +1915,21 @@ root(ROOTS.Zones, {
 							82766,	-- Jo'kar
 							83548,	-- Thaif
 						},
-						["g"] = {
+						["groups"] = {
 							i(118246),	-- Call of the Wolfmother
 						},
 					}),
 					n(80122, {	-- Gaz'orda
 						["questID"] = 34725,
 						["coord"] = { 42.1, 78.8, DRAENOR_NAGRAND },	-- cave
-						["g"] = {
+						["groups"] = {
 							i(116798),	-- Gaz'orda's Grim Gaze
 						},
 					}),
 					n(82778, {	-- Gnarlhoof the Rabid
 						["questID"] = 35717,
 						["coord"] = { 66.6, 56.3, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(116824),	-- Rabid Talbuk Horn
 						},
 					}),
@@ -1937,7 +1937,7 @@ root(ROOTS.Zones, {
 						["questID"] = 35898,
 						["isDaily"] = true,
 						["coord"] = { 93.2, 28.2, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(116916),	-- Gorepetal's Gentle Grasp
 						},
 					}),
@@ -1947,7 +1947,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 42.6, 36.2, DRAENOR_NAGRAND },
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							crit(26143, {	-- Gortag Steelgrip
 								["achievementID"] = 9541,	-- The Song of Silence
 							}),
@@ -1957,21 +1957,21 @@ root(ROOTS.Zones, {
 						["description"] = "Kill about 15 goren in the area to draw out Graveltooth.  He will yell 3 times before appearing.",
 						["questID"] = 36159,
 						["coord"] = { 84.0, 36.8, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(118689),	-- Graveltooth's Manacles
 						},
 					}),
 					n(82758, {	-- Greatfeather
 						["questID"] = 35714,
 						["coord"] = { 66.8, 51.2, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(116795),	-- Greatfeather's Down Robe
 						},
 					}),
 					n(82912, {	-- Grizzlemaw
 						["questID"] = 35784,
 						["coord"] = { 89.4, 72.6, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(118687),	-- Grizzled Wolfskin Cloak
 						},
 					}),
@@ -1980,14 +1980,14 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 23.7, 38.5, DRAENOR_NAGRAND },
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(129218),	-- Empyreal Manafiend (PET!)
 						},
 					})),
 					n(83603, {	-- Hunter Blacktooth
 						["questID"] = 35923,
 						["coord"] = { 80.6, 30.6, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(118245),	-- Hunter Blacktooth's Ribcruncher
 						},
 					}),
@@ -1995,7 +1995,7 @@ root(ROOTS.Zones, {
 						["questID"] = 34862,
 						["coord"] = { 87.0, 55.0, DRAENOR_NAGRAND },
 						["description"] = "Use the 3 braziers around the pit to summon him.",
-						["g"] = {
+						["groups"] = {
 							i(116799),	-- Smoldering Heart of Hyperious
 						},
 					}),
@@ -2004,7 +2004,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 45.8, 34.8, DRAENOR_NAGRAND },
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(119355),	-- Leggings of Howling Winds
 						},
 					}),
@@ -2020,7 +2020,7 @@ root(ROOTS.Zones, {
 						["questID"] = 37398,
 						["isDaily"] = true,
 						["coord"] = { 58.2, 12.0, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(119384),	-- Krud's Girthy Girdle
 						},
 					}),
@@ -2038,21 +2038,21 @@ root(ROOTS.Zones, {
 							{ 67.6, 42.6, DRAENOR_NAGRAND },
 							{ 76.0, 30.6, DRAENOR_NAGRAND },
 						},
-						["g"] = {
+						["groups"] = {
 							i(116661),		-- Mottled Meadowstomper (MOUNT!)
 						},
 					}),
 					n(83643, {	-- Malroc Stonesunder
 						["questID"] = 35932,
 						["coord"] = { 81.2, 60.0, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(116796),	-- Malroc's Staff of Command
 						},
 					}),
 					n(84435, {	-- Mr. Pinchy Sr.
 						["questID"] = 36229,
 						["coord"] = { 45.6, 15.2, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(118690),	-- Empty Crawdad Trap
 						},
 					}),
@@ -2065,14 +2065,14 @@ root(ROOTS.Zones, {
 							{ 55.8, 35.2, DRAENOR_NAGRAND },
 							{ 50.2, 34.8, DRAENOR_NAGRAND },
 						},
-						["g"] = {
+						["groups"] = {
 							i(116659),		-- Bloodhoof Bull (MOUNT!)
 						},
 					}),
 					n(83401, {	-- Netherspawn
 						["questID"] = 35865,
 						["coord"] = { 47.6, 70.39, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(116815),	-- Netherspawn, Spawn of Netherspawn (PET!)
 						},
 					}),
@@ -2083,14 +2083,14 @@ root(ROOTS.Zones, {
 							{ 42.0, 50.2, DRAENOR_NAGRAND },
 							{ 45.4, 47.4, DRAENOR_NAGRAND },
 						},
-						["g"] = {
+						["groups"] = {
 							i(116765),	-- Positive Pantaloons
 						},
 					}),
 					n(83680, {	-- Outrider Duretha
 						["questID"] = 35943,
 						["coord"] = { 61.8, 69.0, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(116800),	-- Duretha's Trail Boots
 						},
 					}),
@@ -2098,7 +2098,7 @@ root(ROOTS.Zones, {
 						["questID"] = 37637,
 						["isDaily"] = true,
 						["coord"] = { 58.2, 18.4, DRAENOR_NAGRAND },	-- **Coords unconfirmed, relied on wowhead**
-						["g"] = {
+						["groups"] = {
 							i(120317),	-- Pristine Hide of the Pit Beast
 						},
 					}),
@@ -2108,7 +2108,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 39.6, 14.6, DRAENOR_NAGRAND },	-- **Coords unconfirmed, relied on wowhead**
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(119389),	-- Pit-Slayer's Magmastone
 						},
 					}),
@@ -2117,21 +2117,21 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 28.1, 29.6, DRAENOR_NAGRAND },
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(129217),	-- Empowered Manafiend (PET!)
 						},
 					})),
 					n(82755, {	-- Redclaw the Feral
 						["questID"] = 35712,
 						["coord"] = { 73.6, 57.8, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(118243),	-- Redclaw's Gutripper
 						},
 					}),
 					n(83526, {	-- Ru'klaa
 						["questID"] = 35900,
 						["coord"] = { 58.0, 83.9, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(118688),	-- Carapace Shell Shoulders
 						},
 					}),
@@ -2140,14 +2140,14 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 25.9, 34.7, DRAENOR_NAGRAND },
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(129216),	-- Energized Manafiend (PET!)
 						},
 					})),
 					n(83634, {	-- Scout Pokhar
 						["questID"] = 35931,
 						["coord"] = { 54.8, 61.2, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(116797),	-- Pokhar's Eighth Axe
 						},
 					}),
@@ -2156,21 +2156,21 @@ root(ROOTS.Zones, {
 						["crs"] = { 83559 },	-- Highwayman
 						["coord"] = { 60.9, 47.78, DRAENOR_NAGRAND },
 						["description"] = "Spawns after abandoned chest is looted.",
-						["g"] = {
+						["groups"] = {
 							i(116834),	-- Whitesea's Waistwrap
 						},
 					}),
 					n(80057, {	-- Soulfang
 						["questID"] = 36128,
 						["coord"] = { 75.6, 65.2, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(116806),	-- Soul Fang
 						},
 					}),
 					n(83591, {	-- Tura'aka
 						["questID"] = 35920,
 						["coord"] = { 65.0, 39.2, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(116814),	-- Tura'aka's Clipped Wing
 						},
 					}),
@@ -2179,21 +2179,21 @@ root(ROOTS.Zones, {
 						["questID"] = 37546,
 						["isDaily"] = true,
 						["coord"] = { 81.3, 60.3, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(120276),	-- Outrider's Bridle Chain (TOY!)
 						},
 					}),
 					n(79024, {	-- Warmaster Blugthol
 						["questID"] = 34645,
 						["coord"] = { 82.6, 76.2, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(116805),	-- Blug'thol's Bloody Bracers
 						},
 					}),
 					n(83428, {	-- Windcaller Korast
 						["questID"] = 35877,
 						["coord"] = { 70.6, 29.6, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(116808),	-- Whirlwind's Harvest
 						},
 					}),
@@ -2219,7 +2219,7 @@ root(ROOTS.Zones, {
 					o(233452, {	-- A Pile of Dirt
 						["questID"] = 35951,
 						["coord"] = { 73.1, 10.8, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
@@ -2231,7 +2231,7 @@ root(ROOTS.Zones, {
 					o(233650, {	-- Adventurer's Mace
 						["questID"] = 36077,
 						["coord"] = { 75.8, 62.0, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(116635),	-- Howling Mace
 							i(116636),	-- Oshu'gun Scepter
 						},
@@ -2275,14 +2275,14 @@ root(ROOTS.Zones, {
 					o(233457, {	-- Adventurer's Staff
 						["questID"] = 35953,
 						["coord"] = { 81.5, 13.0, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(116640),	-- Howling Staff
 						},
 					}),
 					o(233079, {	-- Appropriated Warsong Supplies
 						["questID"] = 35673,
 						["coord"] = { 73.1, 75.5, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
@@ -2293,7 +2293,7 @@ root(ROOTS.Zones, {
 					o(233532, {	-- Bone-Carved Dagger
 						["questID"] = 35986,
 						["coord"] = { 77.3, 28.1, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(116760),	-- Saberon-Fang Shanker
 						},
 					}),
@@ -2301,14 +2301,14 @@ root(ROOTS.Zones, {
 						["description"] = "Activate the totems in order: Air, Earth, Water, Fire",
 						["questID"] = 36174,
 						["coord"] = { 77.1, 16.6, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(233048, {	-- Brilliant Dreampetal
 						["questID"] = 35661,
 						["coord"] = { 81.1, 37.2, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(118262),	-- Brilliant Dreampetal
 						},
 					}),
@@ -2320,21 +2320,21 @@ root(ROOTS.Zones, {
 					o(233492, {	-- Elemental Offering
 						["questID"] = 35954,
 						["coord"] = { 67.0, 19.5, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(118234),	-- Smoldering Offerings
 						},
 					}),
 					o(233598, {	-- Elemental Shackles
 						["questID"] = 36036,
 						["coord"] = { 78.9, 15.5, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(118251),	-- Trophy Gemstone of the Elements
 						},
 					}),
 					o(233560, {	-- Fragment of Oshu'gun
 						["questID"] = 36020,
 						["coord"] = { 45.8, 66.2, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(117981),	-- Fragment of Oshu'gun
 						},
 					}),
@@ -2345,14 +2345,14 @@ root(ROOTS.Zones, {
 					o(233044, {	-- Fungus-Covered Chest
 						["questID"] = 35660,
 						["coord"] = { 88.9, 18.2, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(233649, {	-- Gambler's Purse
 						["questID"] = 36074,
 						["coord"] = { 75.4, 47.1, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 							i(118236),	-- Counterfeit Coin
 						},
@@ -2360,35 +2360,35 @@ root(ROOTS.Zones, {
 					o(233539, {	-- Genedar Debris
 						["questID"] = 35987,
 						["coord"] = { 43.2, 57.6, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(233549, {	-- Genedar Debris
 						["questID"] = 35999,
 						["coord"] = { 48.1, 60.1, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(233551, {	-- Genedar Debris
 						["questID"] = 36002,
 						["coord"] = { 44.7, 67.6, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(233555, {	-- Genedar Debris
 						["questID"] = 36008,
 						["coord"] = { 48.6, 72.8, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(233557, {	-- Genedar Debris
 						["questID"] = 36011,
 						["coord"] = { 55.3, 68.3, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
@@ -2407,7 +2407,7 @@ root(ROOTS.Zones, {
 					o(232597, {	-- Goblin Pack
 						["questID"] = 35590,
 						["coord"] = { 73.0, 62.1, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
@@ -2415,14 +2415,14 @@ root(ROOTS.Zones, {
 						["questID"] = 35576,
 						["coord"] = { 47.2, 74.3, DRAENOR_NAGRAND },
 						["description"] = "Hidden in the tree.",
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(233134, {	-- Golden Kaliri Egg
 						["questID"] = 35694,
 						["coord"] = { 58.3, 52.5, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(118266),	-- Golden Kaliri Egg
 						},
 					}),
@@ -2433,42 +2433,42 @@ root(ROOTS.Zones, {
 					o(233626, {	-- Grizzlemaw's Bonepile
 						["questID"] = 36051,
 						["coord"] = { 87.1, 72.9, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(118054),	-- Discarded Bone x10
 						},
 					}),
 					o(232986, {	-- Hidden Stash
 						["questID"] = 35622,
 						["coord"] = { 87.6, 45.0, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(233611, {	-- Highmaul Sledge
 						["questID"] = 36039,
 						["coord"] = { 67.3, 49.0, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(118252),	-- Trophy Loop of the Highmaul
 						},
 					}),
 					o(233696, {	-- Important Exploration Supplies
 						["questID"] = 36099,
 						["coord"] = { 75.2, 65.6, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(61986),	-- Tol Barad Coconut Rum
 						},
 					}),
 					o(233651, {	-- Lost Pendant
 						["questID"] = 36082,
 						["coord"] = { 61.8, 57.5, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(116687),	-- Oshu'gun Amulet
 						},
 					}),
 					o(233032, {	-- Mountain Climber's Pack
 						["questID"] = 35643,
 						["coord"] = { 70.5, 13.8, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
@@ -2479,28 +2479,28 @@ root(ROOTS.Zones, {
 					o(233618, {	-- Ogre Beads
 						["questID"] = 36049,
 						["coord"] = { 80.9, 79.8, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(118255),	-- Trophy Ring of Gordal
 						},
 					}),
 					o(233768, {	-- Pale Elixir
 						["questID"] = 36115,
 						["coord"] = { 57.8, 62.1, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(118278),	-- Pale Vision Potion
 						},
 					}),
 					o(233593, {	-- Polished Saberon Skull
 						["questID"] = 36035,
 						["coord"] = { 72.7, 61.0, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(118254),	-- Trophy Signet of the Sabermaw
 						},
 					}),
 					o(233561, {	-- Pokkar's Thirteenth Axe
 						["questID"] = 36021,
 						["coord"] = { 58.3, 59.5, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(116688),	-- Pokhar's Thirteenth Axe
 						},
 					}),
@@ -2512,21 +2512,21 @@ root(ROOTS.Zones, {
 					o(236633, {	-- Smuggler's Cache
 						["questID"] = 36857,
 						["coord"] = { 89.1, 33.1, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(237946, {	-- Spirit Coffer
 						["questID"] = 37435,
 						["coord"] = { 40.4, 68.6, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(236610, {	-- Spirit's Gift
 						["questID"] = 36846,
 						["coord"] = { 35.5, 57.3, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
@@ -2569,47 +2569,47 @@ root(ROOTS.Zones, {
 					o(233613, {	-- Telaar Defender Shield
 						["questID"] = 36046,
 						["coord"] = { 64.6, 65.8, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(118253),	-- Trophy Band of Telaar
 						},
 					}),
 					o(230725, {	-- Treasure of Kull'krosh
 						["questID"] = 34760,	-- triggers together with questID 34276 (another treasure)
 						["coord"] = { 37.7, 70.6, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(243282, {	-- Viking Pepe
 						["coord"] = { 80.11, 50.4, DRAENOR_NAGRAND },
 						["timeline"] = { ADDED_6_2_0 },
-						["g"] = { i(127865) },	-- A Tiny Viking Helmet (Pepe!)
+						["groups"] = { i(127865) },	-- A Tiny Viking Helmet (Pepe!)
 					}),
 					o(232590, {	-- Void-Infused Crystal
 						["questID"] = 35579,
 						["coord"] = { 50.0, 66.5, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(118264),	-- Serrated Void Crystal
 						},
 					}),
 					o(233135, {	-- Warsong Cache
 						["questID"] = 35695,
 						["coord"] = { 51.7, 60.4, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(233645, {	-- Warsong Helm
 						["questID"] = 36073,
 						["coord"] = { 52.5, 44.5, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(118250),	-- Riverwashed Warsong Helm
 						},
 					}),
 					o(233103, {	-- Warsong Lockbox
 						["questID"] = 35678,
 						["coord"] = { 73.1, 70.5, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
@@ -2632,28 +2632,28 @@ root(ROOTS.Zones, {
 					o(233113, {	-- Warsong Spear
 						["questID"] = 35682,
 						["coord"] = { 76.1, 69.9, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(118678),	-- Ceremonial Warsong Spear
 						},
 					}),
 					o(232599, {	-- Warsong Spoils
 						["questID"] = 35593,
 						["coord"] = { 80.6, 60.6, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(233521, {	-- Warsong Supplies
 						["questID"] = 35976,
 						["coord"] = { 89.4, 65.8, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(235307, {	-- Watertight Bag
 						["questID"] = 36071,
 						["coord"] = { 64.8, 35.7, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(118235),	-- Ogre Diving Cap
 						},
 					}),
@@ -2673,7 +2673,7 @@ root(ROOTS.Zones, {
 				n(VENDORS, {
 					n(82754, {	-- Nurse Lizz <First Aid>
 						["coord"] = { 78.6, 47.8, DRAENOR_NAGRAND },
-						["g"] = {
+						["groups"] = {
 							i(44694),	-- Antiseptic-Soaked Dressing
 							i(44693),	-- Wound Dressing
 						},

@@ -665,6 +665,14 @@ do
 			end
 		end
 	end
+	local IgnoredTypesForCost = {
+		NonCollectible = true,
+		VisualHeader = true,
+		VisualHeaderWithGroups = true,
+	}
+	local IgnoredTypesForNestedCosts = {
+		EnsembleItem = true,
+	}
 	local function ScanGroups(group, Collector)
 
 		-- ignore costs for and within certain groups
@@ -672,13 +680,17 @@ do
 
 		local runner = Collector.Runner
 		-- app.PrintDebug("AGC:Run",app:SearchLink(group))
-		runner.Run(AddGroupCosts, group, Collector)
+		-- don't include NonCollectible or VisualHeaders
+		local groupType = group.__type
+		if not IgnoredTypesForCost[groupType] then
+			runner.Run(AddGroupCosts, group, Collector)
+		end
 		local g = group.g
 		if not g then return end
 
 		-- don't scan groups inside Item groups which have a cost/provider (i.e. ensembles)
 		-- this leads to wildly bloated totals
-		if group.filledCost or (group.itemID and (group.cost or group.providers)) then return end
+		if group.filledCost or IgnoredTypesForNestedCosts[groupType] then return end
 
 		for _,o in ipairs(g) do
 			ScanGroups(o, Collector)
@@ -694,7 +706,7 @@ do
 		group.text = (text or "").."  "..BLIZZARD_STORE_PROCESSING
 		group.OnSetVisibility = app.ReturnTrue
 		-- app.PrintDebug("AGC:Start",text)
-		app.DirectGroupUpdate(group)
+		app.DirectGroupRefresh(group, true)
 	end
 	local function EndUpdating(Collector)
 		local group = Collector.__group
@@ -745,11 +757,11 @@ do
 
 	api.GetCostCollector = function(group)
 
-		local windowRunner = group.window and group.window:GetRunner()
+		-- local windowRunner = group.window and group.window:GetRunner()
 		-- app.PrintDebug("New Cost Collector",windowRunner)
 		-- Table which can capture cost information for a collector
 		local Collector = {
-			Runner=windowRunner or CollectorRunner,
+			Runner=CollectorRunner,
 			Data = setmetatable({}, __costData),
 			Hashes = {},
 		}

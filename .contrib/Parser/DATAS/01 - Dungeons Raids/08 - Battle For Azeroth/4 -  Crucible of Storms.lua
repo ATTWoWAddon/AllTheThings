@@ -54,7 +54,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			1346,	-- Tendril of Corruption
 		},
 		["lvl"] = { 50 },
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(13414, {	-- Crucible of Storms
                     crit(44051, {    -- The Restless Cabal
@@ -127,11 +127,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					}),
 					ach(13423, bubbleDownSelf({["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 } }, {	-- Hall of Fame: Uu'nat, Harbinger of the Void (A)
 						["races"] = ALLIANCE_ONLY,
-						["g"] = { title(400) },	-- <Name>, Famed Slayer of the Harbinger
+						["groups"] = { title(400) },	-- <Name>, Famed Slayer of the Harbinger
 					})),
 					ach(13424, bubbleDownSelf({["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 } }, {	-- Hall of Fame: Uu'nat, Harbinger of the Void (H)
 						["races"] = HORDE_ONLY,
-						["g"] = { title(400) },	-- <Name>, Famed Slayer of the Harbinger
+						["groups"] = { title(400) },	-- <Name>, Famed Slayer of the Harbinger
 					})),
 				}),
 			}),

@@ -62,70 +62,70 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 					["provider"] = { "i", 234449 },	-- Dastardly Invitation
 				}),
 				q(86503, {	-- Who are the Dastardly Duos?
-					["sourceQuests"] = { 86491 },	-- Dastardly Invitation
 					["provider"] = { "n", 234296 },	-- Vinnie Sweets
+					["sourceQuests"] = { 86491 },	-- Dastardly Invitation
 					["coords"] = {
 						{ 52.8, 51.6, ISLE_OF_DORN },	-- Khaz Algar
 						--{ x, y, ORGRIMMAR },	-- Orgrimmar
 						{ 68.2, 79.0, STORMWIND_CITY },	-- Stormwind
 					},
-					["g"] = {
+					["groups"] = {
 						i(239440),	-- Dastardly Prize Purse
 						--TODO: if you wanna - you can symlink all bags with rewards
 					},
 				}),
 				q(87550, {	-- Week 2: We're Really Taking Off
-					["sourceQuests"] = { 86503 },	-- Who are the Dastardly Duos?
 					["provider"] = { "n", 234296 },	-- Vinnie Sweets
+					["sourceQuests"] = { 86503 },	-- Who are the Dastardly Duos?
 					["coord"] = { 52.8, 51.6, ISLE_OF_DORN },
-					["g"] = {
+					["groups"] = {
 						i(239440),	-- Dastardly Prize Purse
 					},
 				}),
 				q(87551, {	-- Week 3: Spread the Word
-					["sourceQuests"] = { 87550 },	-- Week 2: We're Really Taking Off
 					["provider"] = { "n", 234296 },	-- Vinnie Sweets
+					["sourceQuests"] = { 87550 },	-- Week 2: We're Really Taking Off
 					["coord"] = { 52.8, 51.6, ISLE_OF_DORN },
-					["g"] = {
+					["groups"] = {
 						i(239440),	-- Dastardly Prize Purse
 					},
 				}),
 				q(87552, {	-- Week 4: They've Heard of You
-					["sourceQuests"] = { 87551 },	-- Week 3: Spread the Word
 					["provider"] = { "n", 234296 },	-- Vinnie Sweets
+					["sourceQuests"] = { 87551 },	-- Week 3: Spread the Word
 					["coord"] = { 52.8, 51.6, ISLE_OF_DORN },
-					["g"] = {
+					["groups"] = {
 						i(239440),	-- Dastardly Prize Purse
 						spell(1227074),	-- Winner's Podium: Average Item Level
 						--spell(1227073),	-- Winner's Podium, High Score
 					},
 				}),
 				q(87553, {	-- Week 5: Another Amazing Week!
-					["sourceQuests"] = { 87552 },	-- Week 4: They've Heard of You
 					["provider"] = { "n", 234296 },	-- Vinnie Sweets
+					["sourceQuests"] = { 87552 },	-- Week 4: They've Heard of You
 					["coord"] = { 52.8, 51.6, ISLE_OF_DORN },
-					["g"] = {
+					["groups"] = {
 						i(239440),	-- Dastardly Prize Purse
 					},
 				}),
 				q(87554, {	-- Week 6: It's the Finale!
-					["sourceQuests"] = { 87553 },	-- Week 5: Another Amazing Week!
 					["provider"] = { "n", 234296 },	-- Vinnie Sweets
+					["sourceQuests"] = { 87553 },	-- Week 5: Another Amazing Week!
 					["coord"] = { 52.8, 51.6, ISLE_OF_DORN },
-					["g"] = {
+					["groups"] = {
 						i(239440),	-- Dastardly Prize Purse
 					},
 				}),
 				-- unsorted due to ptr things, sourceQuest is speculated
 				q(90701, {	-- Cowardly Cheery Bombs
-					["sourceQuests"] = { 86503 },	-- Who are the Dastardly Duos?
 					["provider"] = { "n", 234297 },	-- Wodin the Troll Servant
+					["sourceQuests"] = { 86503 },	-- Who are the Dastardly Duos?
 					["coords"] = {
 						{ 52.8, 51.6, ISLE_OF_DORN },	-- Khaz Algar
 						--{ x, y, ORGRIMMAR },	-- Orgrimmar
 						{ 68.2, 79.0, STORMWIND_CITY },	-- Stormwind
 					},
-					["g"] = {
+					["groups"] = {
 						i(239440, {	-- Dastardly Prize Purse
 							i(238989),	-- Steam-Hinge Chain of Valor (TODO: ph since lack of data)
 						}),
@@ -165,7 +165,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 						238938,	-- Vest of the Curious Visitor (Deadmines)
 						27450,	-- Wild Stalker Boots (Hellfire Ramparts)
 					}},
-					["g"] = {
+					["groups"] = {
 						--Unconfirmed to drop from dungeon bosses, move to symlink once proven
 						i(239008),	-- Moonchild Leggings (Blood Furnace)
 						i(238989),	-- Steam-Hinge Chain of Valor (Steamvault)
@@ -219,7 +219,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 						{ 50.0, 92.4, ORGRIMMAR },
 						{ 67.2, 81.0, STORMWIND_CITY },
 					},
-					["g"] = {
+					["groups"] = {
 						i(239442, {	-- Black Dastardly Epaulet
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 500 }},
 						}),

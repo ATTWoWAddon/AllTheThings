@@ -28,14 +28,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			o(281397, {	-- Cutwater Treasure Chest
 				["questID"] = 50442,	-- Cutwater Treasure Chest
 				["coord"] = { 72.5, 58.1, TIRAGARDE_SOUND },
-				["g"] = {
+				["groups"] = {
 					i(155381),	-- Cutwater-Captain's Sapphire Ring
 				},
 			}),
 			o(297933, {	-- Dusty Songbook
 				["questID"] = 53410,	-- Shanty of Fruit Counting
 				["coord"] = { 43.50, 25.59, TIRAGARDE_SOUND },
-				["g"] = {
+				["groups"] = {
 					i(163715),	-- Forbidden Sea Shanty of Fruit Counting
 				},
 			}),
@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 67.4, 51.7, TIRAGARDE_SOUND },
 				["crs"] = { 131453 },	-- Roan Berthold
 				["questID"] = 49963,
-				["g"] = {
+				["groups"] = {
 					i(155571),	-- Garyl's Riding Blanket
 				},
 			}),
@@ -59,7 +59,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			o(297934, {	-- Scoundrel's Songbook
 				["questID"] = 53411,	-- Shanty of the Horse [Criteria]
 				["coord"] = { 73.20, 84.13, TIRAGARDE_SOUND },
-				["g"] = {
+				["groups"] = {
 					i(163719),	-- Forbidden Sea Shanty of the Horse
 				},
 			}),

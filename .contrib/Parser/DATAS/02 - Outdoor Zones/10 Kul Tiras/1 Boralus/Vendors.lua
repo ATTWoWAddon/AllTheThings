@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(142190, {	-- Alchemist Hart <Amateur Potions>
 				["coord"] = { 66.8, 41.0, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(9144, {	-- Wildvine Potion
 						["timeline"] = { ADDED_8_0_1 },
 					}),
@@ -28,14 +28,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					2027,	-- Scimitar
 					2131,	-- Shortsword
 				}},
-				["g"] = {
+				["groups"] = {
 					i(15905),	-- Brass Knuckles
 				},
 			}),
 			n(142165, {	-- Arwin Blakemore <Thrift Goods>
 				["coord"] = { 66.5, 40.9, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(3363),	-- Frayed Belt
 					i(3365),	-- Frayed Bracers
 					i(1376),	-- Frayed Cloak
@@ -55,12 +55,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(161565, {	-- Bragni <Profession Liason>
 				["coord"] = { 56.3, 27.2, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = COMMON_BFA_PVP_RECIPES_S4,
+				["groups"] = COMMON_BFA_PVP_RECIPES_S4,
 			}),
 			n(148922, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Captain Klarisa
 				["coord"] = { 66.0, 32.2, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(166491, {	-- Albino Duskwatcher (PET!)
 						["cost"] = { { "c", 1710, 200 }, },	-- 200x Seaferer's Dubloon
 					}),
@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					}),
 					i(167858, {	-- Island Expedition Cloak
 						["cost"] = { { "c", 1710, 35 }, },	-- 35x Seaferer's Dubloon
-						["g"] = {
+						["groups"] = {
 							i(160332, {	-- Mud-Slicked Capote -- Opening on Alliance
 								["races"] = ALLIANCE_ONLY,
 							}),
@@ -138,7 +138,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(161091, {	-- Captain Nightrunner
 				["coord"] = { 66.2, 32.1, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["modID"] = 14,
 				},{
 					i(173950, {	-- Crestfall Salvage
@@ -198,7 +198,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(136063, {	-- Cassandra Brennor <Leatherworking Trainer>
 				["coord"] = { 75.5, 12.6, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(168028, {	-- Pattern: Mallet of Thunderous Skins (RECIPE!)
 						["sourceQuests"] = { 55235 },	-- Instruments of Destruction
 						["timeline"] = { ADDED_8_1_5 },
@@ -208,14 +208,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(141009, {	-- Col. Tenders <Chicken Vendor>
 				["coord"] = { 59.8, 22.2, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(11023),	-- Ancona Chicken (PET!)
 				},
 			}),
 			n(142065, {	-- Dana Pull
 				["coord"] = { 50.8, 46.0, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(163495, {	-- Greatwing Macaw (PET!)
 						["sourceQuests"] = { 49403 },	-- Rodrigo's Revenge
 						["cost"] = { { "i", POLISHED_PET_CHARM, 50 }, },
@@ -229,7 +229,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(136071, {	-- Daniel Brineweaver <Tailoring Trainer>
 				["coord"] = { 76.8, 11.2, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(159959),	-- Nylon Thread
 					i(168029, {	-- Pattern: Synchronous Thread
 						["description"] = "This recipe is for relearning the Synchronous Thread after you have completed the Tools of the Trade questline.",
@@ -245,7 +245,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["description"] = "To unlock this vendor, win PvP pet battles until the mission \"A Shady Message\" spawns.  Complete the mission, and you'll be able to purchase items from the vendor.  It could take 1, 10, 100 or 1,000 PvP pet battles before it spawns.",
 				["coord"] = { 68.9, 17.0, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(163506, {	-- Accursed Hexxer (PET!)
 						["cost"] = { { "i", POLISHED_PET_CHARM, 500 }, },
 					}),
@@ -272,7 +272,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(136041, {	-- Emily Fairweather <Enchanting Trainer>
 				["coord"] = { 74.1, 11.4, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(168024, {	-- Formula: Iwen's Enchanting Rod (RECIPE!)
 						["sourceQuest"] = 54002,	-- Putting it All Together
 						["timeline"] = { ADDED_8_1_5 },
@@ -282,7 +282,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(132228, {	-- Elric Whalgrene <Alchemy Trainer>
 				["coord"] = { 74.1, 6.75, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(166422, {	-- Recipe: Silas' Sphere of Transmutation (RECIPE!)
 						["sourceQuests"] = { 50129 },	-- A Recipe for Success
 					}),
@@ -291,7 +291,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(133536, {	-- Grix "Ironfists" Barlow <Blacksmithing Trainer>
 				["coord"] = { 73.5, 8.57, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(160298),	-- Durable Flux
 					i(168022, {	-- Plans: Khaz'gorian Smithing Hammer (RECIPE!)
 						["sourceQuests"] = { 50275 },	-- Anvil's Away (A)
@@ -302,10 +302,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(136059, {	-- Layla Evenkeel <Engineering Trainer>
 				["coord"] = { 77.6, 14.3, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(168025, {	-- Book of Schematics: Ub3r-Spanner
 						["sourceQuests"] = { 53949 },	-- The Ub3r-Spanner (A)
-						["g"] = {
+						["groups"] = {
 							r(282975),	-- The Ub3r-Spanner (RECIPE!)
 							r(283399),	-- Ub3r-Module: Short-Fused Bomb Bots (RECIPE!)
 							r(283403),	-- Ub3r-Module: Ub3r-Improved Target Dummy (RECIPE!)
@@ -319,12 +319,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(142564, {	-- Leedan Gustaf <Profession Liason> [NOTE: PvP Craftable Recipes]
 				["coord"] = { 56.0, 26.8, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = COMMON_BFA_PVP_RECIPES_S1_S2,
+				["groups"] = COMMON_BFA_PVP_RECIPES_S1_S2,
 			}),
 			n(145838, {	-- Marshal Frazer
 				["coord"] = { 56.4, 26.9, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 				--	i(139775),	-- Alliance Enthusiast (PET!)
 				--	i(142379),	-- Dutiful Squire (PET!)
 				},
@@ -332,7 +332,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(143560, {	-- Marshal Gabriel
 				["coord"] = { 56.2, 25.7, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(168920, {	-- Azerite-Encrusted Timequartz (Rank 1)
 						["sourceQuests"] = { 56499 },	-- Storming the Battlefields
 						["cost"] = { { "i", 137642, 5 }, },		-- 5x Mark of Honor
@@ -404,7 +404,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					2509,	-- Ornate Blunderbuss
 					2510,	-- Solid Blunderbuss
 				}},
-				["g"] = {
+				["groups"] = {
 					i(3025),	-- BKP 42 "Ultra"
 				},
 			}),
@@ -420,14 +420,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					2473,	-- Reinforced Leather Boots
 					843,	-- Tanned Leather Boots
 				}},
-				["g"] = {
+				["groups"] = {
 					i(20921),	-- Sun Cured Boots
 				},
 			}),
 			n(135808, {	-- Provisioner Fray <Proudmoore Admiralty Emissary>
 				["coord"] = { 67.5, 21.5, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = bubbleDownClassicRep(FACTION_PROUDMOORE_ADMIRALTY, {
+				["groups"] = bubbleDownClassicRep(FACTION_PROUDMOORE_ADMIRALTY, {
 					{		-- Neutral
 					}, {	-- Friendly
 					}, {	-- Honored
@@ -446,7 +446,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					}, {	-- Revered
 						i(161976, {	-- Admiralty Marine's Duffel
 							["cost"] = 30000000,	-- 3,000g
-							["g"] = { h(i(166700)) },	-- Durable Sailor's Duffel (xfer only)
+							["groups"] = { h(i(166700)) },	-- Durable Sailor's Duffel (xfer only)
 						}),
 						i(163200, {	-- Cursed Spyglass (TOY!)
 							["cost"] = 18000000,	-- 1,800g
@@ -530,7 +530,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(148927, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Provisioner Stoutforge
 				["coord"] = { 66.8, 25.7, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(166465, {	-- Azureshell Krolusk (MOUNT!)
 						["cost"] = { { "c", 1717, 200 }, },	-- 200x Legion Service Medal
 					}),
@@ -578,7 +578,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(130368, {	-- Samuel D. Colton III <Jewelcrafting Trainer>
 				["coord"] = { 75.0, 10.0, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(168027, {	-- Design: Jewelhammer's Focus (RECIPE!)
 						["sourceQuest"] = 49584,	-- The Missing Chapter [A]
 					}),
@@ -586,7 +586,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			n(149045, {	-- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
 				["coord"] = { 71.7, 13.7, BORALUS },
-				["g"] = {
+				["groups"] = {
 					i(168623, {	-- Biconcavic Lens of the Focusing Iris (Rank 4)
 						["u"] = REMOVED_FROM_GAME,
 						["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
@@ -619,7 +619,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(142691, {	-- Tricky Nick <Shady Vendor>
 				["coord"] = { 56.7, 47.0, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(163042, {	-- Mighty Caravan Brutosaur (MOUNT!)
 						["cost"] = 50000000000,	-- 5,000,000g
 						["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 },
@@ -635,7 +635,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(135446, {	-- Vindicator Jaelaana <7th Legion Emissary>
 				["coord"] = { 69.3, 24.9, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = bubbleDownClassicRep(FACTION_7TH_LEGION, {
+				["groups"] = bubbleDownClassicRep(FACTION_7TH_LEGION, {
 					{		-- Neutral
 						i(166445),	-- 7th Legion Scouting Map (CI!)
 					}, {	-- Friendly
@@ -739,8 +739,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			n(130399, {	-- Zooey Inksprocket <Inscription Trainer>
 				["coord"] = { 73.4, 6.3, BORALUS },
-				["g"] = {
+				["groups"] = {
 					i(158205),	-- Acacia Powder
+					i(158186),	-- Distilled Water
 					TempForceMisc(i(168026)),	-- Book of Techniques: Sanguine Feather Quill of Lana'thel
 				},
 			}),

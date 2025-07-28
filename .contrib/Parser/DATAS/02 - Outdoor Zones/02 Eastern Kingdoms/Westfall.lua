@@ -207,10 +207,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 15998 },	-- Lewis' Note (PQI!)
 					},
 					["coord"] = { 56.9, 47.2, WESTFALL },
-					["timeline"] = { REMOVED_4_0_3 },
 					-- #if AFTER CATA
 					["description"] = "This quest gets marked as completed when you complete the quest '|cFF4A54E8A Swift Message|r' (26393) in Elwynn Forest.",
 					-- #endif
+					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN },
 					["lvl"] = 10,
 				}),
@@ -253,6 +253,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(136, {	-- Captain Sander's Hidden Treasure (1/4)
 					["provider"] = { "i", 1357 },	-- Captain Sander's Treasure Map (QS!)
+					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						126,	-- Murloc Coastrunner
 						458,	-- Murloc Hunter
@@ -265,7 +266,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						391,	-- Old Murk-Eye
 						519,	-- Slark
 					},
-					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 10,
 				}),
 				q(138, {	-- Captain Sander's Hidden Treasure (2/4)
@@ -310,6 +310,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26353, {	-- Captain Sanders' Hidden Treasure (1/4)
 					["provider"] = { "i", 1357 },	-- Captain Sanders' Treasure Map (QS!)
+					["coord"] = { 49.2, 9.80, WESTFALL },
+					["timeline"] = { ADDED_4_0_3 },
 					["crs"] = {
 						126,	-- Murloc Coastrunner
 						458,	-- Murloc Hunter
@@ -322,8 +324,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						391,	-- Old Murk-Eye
 						519,	-- Slark
 					},
-					["coord"] = { 49.2, 9.80, WESTFALL },
-					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(26354, {	-- Captain Sanders' Hidden Treasure (2/4)
 					["providers"] = {
@@ -379,10 +379,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						WESTFALL,
 					},
 					["cost"] = { { "i", 11109, 1 } },	-- Special Chicken Feed
-					["repeatable"] = true,
 					-- #if BEFORE 3.1.0
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
+					["repeatable"] = true,
 					["groups"] = {
 						i(11110, {	-- Westfall Chicken (PET!)
 							-- #if BEFORE 3.1.0
@@ -398,10 +398,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 6181,	-- A Swift Message
 					["coord"] = { 56.4, 52.6, WESTFALL },
-					["timeline"] = { REMOVED_4_0_3 },
 					-- #if AFTER CATA
 					["description"] = "This quest gets marked as completed when you complete the quest 'Continue to Stormwind' (26394) in Stormwind.",
 					-- #endif
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = { HUMAN },
 					["lvl"] = 10,
@@ -558,9 +558,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26252, {	-- Heart of the Watcher
 					["provider"] = { "i", 57935 },	-- Harvest Watcher Heart
 					["sourceQuest"] = 26236,	-- Shakedown at the Saldean's
-					["cr"] = 114,	-- Harvest Watcher
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["cr"] = 114,	-- Harvest Watcher
 					["lvl"] = 10,
 				}),
 				q(26378, {	-- Hero's Call: Westfall! (Elwynn Forest)
@@ -1560,13 +1560,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 36,	-- Westfall Stew (1/2)
 					["coord"] = { 56.4, 30.6, WESTFALL },
 					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 729, 3 },	-- Stringy Vulture Meat
 						{ "i", 730, 3 },	-- Murloc Eye
 						{ "i", 731, 3 },	-- Goretusk Snout
 						{ "i", 732, 3 },	-- Okra
 					},
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
 						i(728),	-- Recipe: Westfall Stew (RECIPE!)

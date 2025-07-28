@@ -394,13 +394,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
             -- crit(68909),    -- Hallowfall Arathi
             -- crit(68910),    -- The Severed Threads
             ["timeline"] = { REMOVED_11_0_7 },
-            ["g"] = {
+            ["groups"] = {
                 iensemble(219110),	-- Vermillion Patron's Elegance
             },
 		}),
         ach(41169, {	-- Khaz Algar Diplomat
             ["timeline"] = { ADDED_11_0_7 },
-            ["g"] = {
+            ["groups"] = {
                 crit(71181),	-- Council of Dornogal
                 crit(71180),	-- The Assembly of the Deeps
                 crit(71179),	-- Hallowfall Arathi

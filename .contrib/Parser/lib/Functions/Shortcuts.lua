@@ -1531,7 +1531,7 @@ end
 -- Adds an item which is convertable between itself and another subitem by way of a subitem amount and whether the
 -- item to subitem is possible
 convertItem = function(itemID, subItemID, subItemAmount, includeItemToSubitem)
-	return i(itemID, {["cost"]={{"i",subItemID,subItemAmount}},["g"]=includeItemToSubitem and {i(subItemID)} or nil})
+	return i(itemID, {["cost"]={{"i",subItemID,subItemAmount}},["groups"]=includeItemToSubitem and {i(subItemID)} or nil})
 end
 crs = function(id, t)											-- Add a Creature List to an object.
 	if type(id) == "number" then

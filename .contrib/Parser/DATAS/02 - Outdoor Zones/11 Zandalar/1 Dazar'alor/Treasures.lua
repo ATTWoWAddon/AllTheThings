@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			o(293110, {	-- Pepe'jin
 				["description"] = "Located inside the |cFFFFD700Hot House|r.",
 				["coord"] = { 38.98, 15.80, DAZARALOR },
-				["g"] = { i(161443) },	-- A Tiny Voodoo Mask (Pepe!)
+				["groups"] = { i(161443) },	-- A Tiny Voodoo Mask (Pepe!)
 			}),
 		}),
 	}),

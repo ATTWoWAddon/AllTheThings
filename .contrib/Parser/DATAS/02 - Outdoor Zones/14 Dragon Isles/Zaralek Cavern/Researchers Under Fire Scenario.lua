@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						18202,	-- Rockin Research
 						18208,	-- The Small Disruptions
 					}},
-					["g"] = {
+					["groups"] = {
 						title(508),	-- Field Researcher <Name>
 					},
 				}),

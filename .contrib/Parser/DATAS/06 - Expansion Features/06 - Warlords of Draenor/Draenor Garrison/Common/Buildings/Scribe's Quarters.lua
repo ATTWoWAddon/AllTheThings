@@ -24,7 +24,7 @@ root(ROOTS.ExpansionFeatures,
 								{"select","npcID",87063},{"pop"},	-- Joao Calhandro <Inscription Recipes> (A)
 								{"exclude", "itemID", 111923 },	-- Secret of Draenor Inscription
 							},
-							["g"] = {
+							["groups"] = {
 								i(111923, {	-- Secret of Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
 									i(120136),		-- Recipe: Secrets of Draenor Inscription
 									recipe(169081),	-- War Paints
@@ -43,7 +43,7 @@ root(ROOTS.ExpansionFeatures,
 								{"select","npcID",87551},{"pop"},	-- Maru'sa <Inscription Recipes> (H)
 								{"exclude", "itemID", 111923 },	-- Secret of Draenor Inscription
 							},
-							["g"] = {
+							["groups"] = {
 								i(111923, {	-- Secret of Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
 									i(120136),		-- Recipe: Secrets of Draenor Inscription
 									recipe(169081),	-- War Paints

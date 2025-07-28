@@ -346,8 +346,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 			n(QUESTS, {
 				q(24815, {	-- Choose Your Path
 					["qg"] = 38316,	-- Ormus the Penitent
-					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, FRIENDLY },	-- The Ashen Verdict
 					["description"] = "If the quest does not appear when you hit Friendly, you may have to relog.",
+					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, FRIENDLY },	-- The Ashen Verdict
 					["groups"] = {
 						i(50375, {	-- Ashen Band of Courage
 							["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
@@ -813,7 +813,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 								36928,	-- Dreadstone
 								36922,	-- King's Amber
 								36925,	-- Majestic Zircon
-							}
+							},
 						},
 					}),
 				},

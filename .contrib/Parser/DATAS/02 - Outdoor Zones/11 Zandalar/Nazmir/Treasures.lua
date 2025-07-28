@@ -29,7 +29,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			o(279253, {	-- Lucky Horace's Lucky Chest
 				["questID"] = 49867,
 				["coord"] = { 77.6, 36.1, NAZMIR },
-				["g"] = {
+				["groups"] = {
 					i(67410),	-- Very Unlucky Rock
 				},
 			}),

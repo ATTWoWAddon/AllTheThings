@@ -8,7 +8,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 		["coord"] = { 45.56, 53.61, TANAAN_JUNGLE },
 		["isRaid"] = true,
 		["lvl"] = 100,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(11631, {["timeline"] = {ADDED_7_2_0}}),	-- Extreme Makeover: Fel Edition (Hellfire Citadel)
 				ach(10149, {	-- Glory of the Hellfire Raider
@@ -179,7 +179,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 							92144,	-- Dia Darkwhisper
 							92146,	-- Gurtogg Bloodboil
 						},
-						["g"] = {
+						["groups"] = {
 							i(128097),	-- Riverspike Cleaver
 							i(128100),	-- Spring-Loaded Jawstaff
 							i(128095),	-- Viscera-Stained Longsword
@@ -367,14 +367,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						92144,	-- Dia Darkwhisper
 						92146,	-- Gurtogg Bloodboil
 					},
-					["g"] = {
+					["groups"] = {
 						ach(10054),	-- Don't Fear the Reaper
 					},
 				}),
 				cr(90378, e(1396, {	-- Kilrogg Deadeye
 					ach(9972, {	-- A Race Against Slime
 						["crs"] = { 90980 },	-- Ariok
-						["g"] = {
+						["groups"] = {
 							follower(474),	-- Ariok
 						},
 					}),
@@ -437,7 +437,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						},
 						["DisablePartySync"] = true,
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
-						["g"] = { i(128419) },	-- Fel Essence (QI!)
+						["groups"] = { i(128419) },	-- Fel Essence (QI!)
 					}),
 					q(39499, {	-- Well of Souls (Normal)
 						["description"] = "Finishing this quest will grant you immediate access to the Upper Citadel on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
@@ -447,7 +447,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						},
 						["DisablePartySync"] = true,
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
-						["g"] = { i(128416) },	-- Soul Remnant (QI!)
+						["groups"] = { i(128416) },	-- Soul Remnant (QI!)
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -561,7 +561,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						92144,	-- Dia Darkwhisper
 						92146,	-- Gurtogg Bloodboil
 					},
-					["g"] = {
+					["groups"] = {
 						i(124388),	-- Fel-Burning Blade
 						i(124385),	-- Blazing Demonhilt Sword
 						i(124383),	-- Mindbender's Flameblade
@@ -951,14 +951,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["lockCriteria"] = { 1, "questID", 39505 },	-- The Fel Spire (Mythic)
 						["DisablePartySync"] = true,
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
-						["g"] = { i(128420) },	-- Fel Essence (QI!)
+						["groups"] = { i(128420) },	-- Fel Essence (QI!)
 					}),
 					q(39500, {	-- Well of Souls (Heroic)
 						["description"] = "Finishing this quest will grant you immediate access to the Upper Citadel on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
 						["lockCriteria"] = { 1, "questID", 39501 },	-- Well of Souls (Mythic)
 						["DisablePartySync"] = true,
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
-						["g"] = { i(128417) },	-- Soul Remnant (QI!)
+						["groups"] = { i(128417) },	-- Soul Remnant (QI!)
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -1072,7 +1072,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						92144,	-- Dia Darkwhisper
 						92146,	-- Gurtogg Bloodboil
 					},
-					["g"] = {
+					["groups"] = {
 						i(124388),	-- Fel-Burning Blade
 						i(124385),	-- Blazing Demonhilt Sword
 						i(124383),	-- Mindbender's Flameblade
@@ -1447,12 +1447,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["sourceQuests"] = { 39501 },	-- Well of Souls (Mythic)
 						["description"] = "Finishing this quest will grant you immediate access to the Destructor's Rise on Mythic difficulty each week.",
-						["g"] = { i(128421) },	-- Fel Essence (QI!)
+						["groups"] = { i(128421) },	-- Fel Essence (QI!)
 					}),
 					q(39501, {	-- Well of Souls (Mythic)
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["description"] = "Finishing this quest will grant you immediate access to the Upper Citadel on Mythic difficulty each week.",
-						["g"] = { i(128418) },	-- Soul Remnant (QI!)
+						["groups"] = { i(128418) },	-- Soul Remnant (QI!)
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -1569,7 +1569,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						92144,	-- Dia Darkwhisper
 						92146,	-- Gurtogg Bloodboil
 					},
-					["g"] = {
+					["groups"] = {
 						ach(10034),	-- Mythic: Hellfire High Council
 						i(124388),	-- Fel-Burning Blade
 						i(124385),	-- Blazing Demonhilt Sword

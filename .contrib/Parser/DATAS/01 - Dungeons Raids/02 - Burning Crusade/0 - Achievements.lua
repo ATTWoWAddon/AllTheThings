@@ -70,13 +70,13 @@ root(ROOTS.Instances, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC, 
 		ach(11746, {["timeline"] = {ADDED_7_2_0}}),	-- Outlandish Style (Gruuls' Lair, Karazhan, and Magtheridon's Lair)
 		ach(8293, {	-- Raiding with Leashes II: Attunement Edition
 			["timeline"] = { ADDED_5_3_0 },
-			["g"] = {
+			["groups"] = {
 				i(97558),	-- Tito (PET!)
 			},
 		}),
 		ach(9824, {	-- Raiding with Leashes III: Drinkin' From the Sunwell
 			["timeline"] = { ADDED_6_1_0 },
-			["g"] = {
+			["groups"] = {
 				i(122116),	-- K'ute (PET!)
 			},
 		}),

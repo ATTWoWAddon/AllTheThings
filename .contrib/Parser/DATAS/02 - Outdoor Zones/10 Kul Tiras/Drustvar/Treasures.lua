@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuest"] = 50763,	-- One Last Request
 				["coord"] = { 24.3, 14.9, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(163603),	-- Lucille's Handkerchief (TOY!)
 				},
 			}),
@@ -51,25 +51,25 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			o(298766, {	-- Old Crossbow
 				["coord"] = { 35.53, 51.88, DRUSTVAR },
-				["g"] = {
+				["groups"] = {
 					i(163749),	-- Old Crossbow
 				},
 			}),
 			o(298768, {	-- Old Flask
 				["coord"] = { 64.86, 67.80, DRUSTVAR },
-				["g"] = {
+				["groups"] = {
 					i(163746),	-- Old Flask
 				},
 			}),
 			o(298769, {	-- Old Hat
 				["coord"] = { 55.44, 27.13, DRUSTVAR },
-				["g"] = {
+				["groups"] = {
 					i(163748),	-- Old Hat
 				},
 			}),
 			o(298767, {	-- Old Knife
 				["coord"] = { 32.57, 58.90, DRUSTVAR },
-				["g"] = {
+				["groups"] = {
 					i(163747),	-- Old Knife
 				},
 			}),

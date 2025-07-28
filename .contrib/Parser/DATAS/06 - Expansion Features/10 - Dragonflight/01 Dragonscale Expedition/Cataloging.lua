@@ -56,25 +56,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			n(QUESTS, {
 				------ RENOWN 8 ------
 				q(69869, {	-- A Cataloger's Paradise
-					["description"] = "Spawns Anywhere on Dragon Isles.",
 					["provider"] = { "n", 196643 },	-- Doc Nanners
+					["description"] = "Spawns Anywhere on Dragon Isles.",
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
 				q(72525, {	-- Basic Cataloging Gear
-					["sourceQuests"] = { 69869 },	-- A Cataloger's Paradise
 					["provider"] = { "n", 187707 },	-- Cataloger Coralie
+					["sourceQuests"] = { 69869 },	-- A Cataloger's Paradise
 					["coord"] = { 48.5, 82.7, THE_WAKING_SHORES },
 				}),
 				q(69870, {	-- Pictures with Purpose
-					["sourceQuests"] = { 72525 },	-- Basic Cataloging Gear
 					["provider"] = { "n", 187707 },	-- Cataloger Coralie
+					["sourceQuests"] = { 72525 },	-- Basic Cataloging Gear
 					["coord"] = { 48.5, 82.7, THE_WAKING_SHORES },
 				}),
 				q(65486, {	-- Picture Perfect
-					["sourceQuests"] = { 69870 },	-- Pictures with Purpose
 					["provider"] = { "n", 185651 },	-- Akunda the Cataloger
+					["sourceQuests"] = { 69870 },	-- Pictures with Purpose
 					["coord"] = { 49.9, 68.4, THE_WAKING_SHORES },
-					["g"] = {
+					["groups"] = {
 						ach(16758),	-- Ready, Aim, Catalog!
 					},
 				}),

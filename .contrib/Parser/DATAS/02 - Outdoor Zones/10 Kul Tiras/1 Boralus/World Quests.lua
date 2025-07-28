@@ -22,7 +22,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51333, {	-- Anchors Aweigh!
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
-				["g"] = {
+				["groups"] = {
 					i(159926),	-- Cannonball (QI!)
 				},
 			}),
@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["lvl"] = 110,
 				["races"] = HORDE_ONLY,
 				["isWorldQuest"] = true,
-				["g"] = {
+				["groups"] = {
 					i(164742),	-- Crawler Mine Parts (QI!)
 				},
 			}),
@@ -38,7 +38,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["lvl"] = 120,
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
-				["g"] = {
+				["groups"] = {
 					i(160480),	-- Marine Dog Tags (QI!)
 				},
 			}),
@@ -46,7 +46,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["lvl"] = 120,
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
-				["g"] = {
+				["groups"] = {
 					i(160480),	-- Marine Dog Tags (QI!)
 				},
 			}),
@@ -59,7 +59,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["lvl"] = 110,
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
-				["g"] = {
+				["groups"] = {
 					i(165841),	-- Bot Scrambler (QI!)
 				},
 			}),
@@ -67,7 +67,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["lvl"] = 110,
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
-				["g"] = {
+				["groups"] = {
 					a(ach(13285, {	-- Upright Citizens
 						i(166247),		-- Citizens Brigade Whistle (TOY!)
 						hqt(54400, name(HEADERS.AchCriteria, 13285.01)),	-- Russel the Bard recruited
@@ -89,7 +89,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["lvl"] = 120,
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
-				["g"] = {
+				["groups"] = {
 					i(157540),	-- Battered S.E.L.F.I.E. Camera (QI!)
 				},
 			}),
@@ -265,7 +265,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["lvl"] = 120,
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
-				["g"] = {
+				["groups"] = {
 					i(158677),	-- Scrimshaw Ledger (QI!)
 				},
 			}),
@@ -283,7 +283,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["lvl"] = 50,
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
-				["g"] = {
+				["groups"] = {
 					i(160667),	-- Unstable Azerite Bomb (QI!)
 				},
 			}),
@@ -300,7 +300,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
 				["requireSkill"] = INSCRIPTION,
-				["g"] = {
+				["groups"] = {
 					i(162360),	-- Technique: Contract: Proudmoore Admiralty [Rank 3] (RECIPE!)
 				},
 			}),
@@ -309,7 +309,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
 				["requireSkill"] = ENGINEERING,
-				["g"] = {
+				["groups"] = {
 					i(162343),	-- Schematic: Crow's Nest Scope [Rank 3] (RECIPE!)
 				},
 			}),
@@ -318,7 +318,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
 				["requireSkill"] = ENCHANTING,
-				["g"] = {
+				["groups"] = {
 					i(162315),	-- Formula: Enchant Weapon - Coastal Surge [Rank 3] (RECIPE!)
 				},
 			}),
@@ -327,7 +327,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
 				["requireSkill"] = ENCHANTING,
-				["g"] = {
+				["groups"] = {
 					i(162319),	-- Formula: Enchant Weapon - Torrent of Elements [Rank 3] (RECIPE!)
 				},
 			}),
@@ -336,7 +336,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
 				["requireSkill"] = ENGINEERING,
-				["g"] = {
+				["groups"] = {
 					i(162321),	-- Schematic: Incendiary Ammunition [Rank 3] (RECIPE!)
 				},
 			}),
@@ -399,7 +399,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
 				["requireSkill"] = ENGINEERING,
-				["g"] = {
+				["groups"] = {
 					i(162339),	-- Schematic: XA-1000 Surface Skimmer [Rank 3] (RECIPE!)
 				},
 			}),

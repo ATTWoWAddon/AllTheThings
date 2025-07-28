@@ -26,7 +26,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 						["provider"] = { "n", 229716 },	-- Stellin Verasa
 						["coord"] = { 71.0, 39.6, SIREN_ISLE },
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(227405),	-- Research Journal (QI!)
 							o(457181,{	-- Interesting Notes
 								i(227406),	-- Interesting Notes (QI!)
@@ -56,7 +56,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 							{ 71.4, 44.1, SIREN_ISLE },
 						},
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(228988),	-- Rock Reviver (QI!)
 						},
 					}),
@@ -71,7 +71,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 					n(230137, {	-- Asbjorn the Bloodsoaked
 						["coord"] = { 63.9, 87.3, SIREN_ISLE },
 						["questID"] = 84805,
-						["g"] = {
+						["groups"] = {
 							i(234972),	-- Bloodwake Missive [book]
 						},
 					}),
@@ -88,7 +88,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 						84725,	-- The Circlet Calls
 					},
-					["g"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+					["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
 						q(84852, {	-- Legacy of the Vrykul
 							["groups"] = {
 								i(228648),	-- Roaring War-Queen's Citrine

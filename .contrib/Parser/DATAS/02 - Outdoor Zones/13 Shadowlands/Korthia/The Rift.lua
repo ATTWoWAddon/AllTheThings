@@ -9,13 +9,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				{"i",186969,1},	-- Collapsing Riftstone
 				{"i",186731,1},	-- Repaired Riftkey
 			},
-			["g"] = {
+			["groups"] = {
 				n(QUESTS, {
 					q(64522, {	-- Stolen Korthian Supplies
 						["provider"] = { "i", 187276 },	-- Stolen Korthian Supplies
 						["isWeekly"] = true,
 						["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 3 },	-- Tier 3
-						["g"] = {
+						["groups"] = {
 							i(187551),	-- Small Korthian Supply Chest
 						},
 					}),
@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						["questID"] = 64440,
 						["coord"] = { 50.2, 75.4, KORTHIA },
 						["isDaily"] = true,
-						["g"] = {
+						["groups"] = {
 							i(187405),	-- Choker of the Hidden Observer
 							i(187420),	-- Maw-Ocular Viewfinder (TOY!)
 							i(187365),	-- Rift Splitter
@@ -102,7 +102,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							179853,	-- Blinding Shadow
 							179851,	-- Guard Orguluus
 							179735,	-- Torglluun
-						}
+						},
 					}),
 					i(187006),	-- Recipe: Twilight Tea (RECIPE!)
 				}),

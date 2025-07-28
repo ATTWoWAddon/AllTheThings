@@ -1,8 +1,8 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_1_0 } }, {
-	applyclassicphase(MOP_PHASE_LANDFALL, n(ACHIEVEMENTS, {
+root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+	applyclassicphase(MOP_PHASE_ONE, n(ACHIEVEMENTS, {
 		ach(6920, {	-- Challenge Conqueror
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -32,7 +32,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				6885,	-- Temple of the Jade Serpent: Bronze
 			}},
 			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-			["g"] = {
+			["groups"] = {
 				title(201),	-- <Name> the Undaunted
 			},
 		}),
@@ -50,7 +50,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				6886,	-- Temple of the Jade Serpent: Silver
 			}},
 			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-			["g"] = {
+			["groups"] = {
 				i(90045),	-- Ancestral Phoenix Egg
 			},
 		}),
@@ -68,7 +68,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				6888,	-- Temple of the Jade Serpent: Gold
 			}},
 			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-			["g"] = {
+			["groups"] = {
 				i(90156, {	-- Golden Chest of the Betrayer
 					["classes"] = { WARLOCK },
 					["groups"] = {
@@ -227,7 +227,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				8431,	-- Challenge Master: Stormstout Brewery
 				8430,	-- Challenge Master: Temple of the Jade Serpent
 			}},
-			["g"] = {
+			["groups"] = {
 				title(255),	-- Mistwalker <Name>
 			},
 		})),
@@ -302,7 +302,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				6732,	-- Heroic: Tsulong
 				6733,	-- Heroic: Lei Shi
 			}},
-			["g"] = {
+			["groups"] = {
 				i(87773),	-- Heavenly Crimson Cloud Serpent (MOUNT!)
 			},
 		}),

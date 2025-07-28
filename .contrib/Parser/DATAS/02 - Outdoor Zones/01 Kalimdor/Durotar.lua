@@ -151,7 +151,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER DF
 								EVOKER
 								-- #endif
-								}, ALL_CLASSES),
+							}, ALL_CLASSES),
 						}),
 						q(24814, {	-- An Ancient Enemy
 							["qg"] = 38442,	-- Morakki
@@ -175,7 +175,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER DF
 								EVOKER
 								-- #endif
-								}, ALL_CLASSES),
+							}, ALL_CLASSES),
 							["groups"] = {
 								i(52879),	-- Sea Witch's Bracers
 								i(52884),	-- Footsteps of the Fallen Friend
@@ -205,7 +205,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER DF
 								EVOKER
 								-- #endif
-								}, ALL_CLASSES),
+							}, ALL_CLASSES),
 						}),
 						q(24625, {	-- Consort of the Sea Witch
 							["qg"] = 37987,	-- Tegashi
@@ -226,7 +226,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER DF
 								EVOKER
 								-- #endif
-								}, ALL_CLASSES),
+							}, ALL_CLASSES),
 							["groups"] = {
 								i(131826, {	-- Bloodtalon Chain Vest
 									["timeline"] = { ADDED_7_0_3 },
@@ -255,7 +255,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER DF
 								EVOKER
 								-- #endif
-								}, ALL_CLASSES),
+							}, ALL_CLASSES),
 						}),
 						q(24624, {	-- Mercy for the Lost
 							["qg"] = 37987,	-- Tegashi
@@ -276,7 +276,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER DF
 								EVOKER
 								-- #endif
-								}, ALL_CLASSES),
+							}, ALL_CLASSES),
 						}),
 						q(25064, {	-- Moraya
 							["qg"] = 38966,	-- Vol'jin
@@ -309,7 +309,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER DF
 								EVOKER
 								-- #endif
-								}, ALL_CLASSES),
+							}, ALL_CLASSES),
 						}),
 						q(24769, {	-- More Than Expected (Druid)
 							["qg"] = 38243,	-- Zen'tabra <Druid Trainer>
@@ -433,7 +433,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER DF
 								EVOKER
 								-- #endif
-								}, ALL_CLASSES),
+							}, ALL_CLASSES),
 							["groups"] = {
 								i(52878),	-- Merciless Hands
 								i(52886),	-- Spitescale Breastplate
@@ -594,7 +594,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER DF
 								EVOKER
 								-- #endif
-								}, ALL_CLASSES),
+							}, ALL_CLASSES),
 						}),
 						q(25073, {	-- Sen'jin Village
 							["qg"] = 38966,	-- Vol'jin
@@ -615,7 +615,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER DF
 								EVOKER
 								-- #endif
-								}, ALL_CLASSES),
+							}, ALL_CLASSES),
 							["isBreadcrumb"] = true,
 						}),
 						q(24813, {	-- Territorial Fetish
@@ -637,7 +637,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER DF
 								EVOKER
 								-- #endif
-								}, ALL_CLASSES),
+							}, ALL_CLASSES),
 						}),
 						q(24766, {	-- The Arts of a Druid
 							["qg"] = 38243,	-- Zen'tabra <Druid Trainer>
@@ -966,7 +966,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #if AFTER DF
 								EVOKER
 								-- #endif
-								}, ALL_CLASSES),
+							}, ALL_CLASSES),
 							["groups"] = {
 								i(52882),	-- Swift Plate Armbands
 								i(52877),	-- Moraya's Belt
@@ -1122,9 +1122,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #endif
 							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
-							["lvl"]	= 3,
 							["races"] = { ORC },
 							["classes"] = { WARLOCK },
+							["lvl"] = 3,
 						}),
 						q(25132, {	-- Burning Blade Medallion
 							["qg"] = 3145,	-- Zureetha Fargaze
@@ -1205,8 +1205,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 5887 },	-- Canaga Earthcaller
 								{ "i", 6635 },	-- Earth Sapta
 							},
-							["sourceQuest"] = 1516,	-- Call of Earth (1/3)
 							["altQuests"] = { 1520 },	-- Call to Earth (2/3 Mulgore)
+							["sourceQuest"] = 1516,	-- Call of Earth (1/3)
 							["coord"] = { 42.4, 69.0, DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
@@ -1219,8 +1219,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 5891 },	-- Minor Manifestation of Earth
 								{ "i", 6656 },	-- Rough Quartz
 							},
-							["sourceQuest"] = 1517,	-- Call of Earth (2/3)
 							["altQuests"] = { 1521 },	-- Call to Earth (3/3 Mulgore)
+							["sourceQuest"] = 1517,	-- Call of Earth (2/3)
 							["coord"] = { 44.0, 76.0, DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
@@ -2035,8 +2035,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["altQuests"] = { 787 },	-- The New Horde
 							["coord"] = { 43.2, 68.4, DUROTAR },
 							["timeline"] = { REMOVED_4_0_3 },
-							["isBreadcrumb"] = true,
 							["races"] = HORDE_ONLY,
+							["isBreadcrumb"] = true,
 						}),
 					}),
 					-- #if SEASON_OF_DISCOVERY
@@ -2429,8 +2429,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.78, 9.56, DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
-					["cr"] = 3204,	-- Gazz'uz
 					["races"] = HORDE_ONLY,
+					["cr"] = 3204,	-- Gazz'uz
 					["lvl"] = 4,
 				}),
 				q(791, {	-- Carry Your Weight
@@ -2790,13 +2790,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if NOT ANYCLASSIC
 				q(5654, {	-- Hex of Weakness [Durotar]
 					["qg"] = 3706,	-- Tai'jin <Priest Trainer>
-					["coord"] = { 54.2, 42.8, DUROTAR },
 					["altQuests"] = {
 						5652,	-- Hex of Weakness [Orgrimmar]
 						5655,	-- Hex of Weakness [Mulgore]
 						5656,	-- Hex of Weakness [Thunder Bluff]
 						5657,	-- Hex of Weakness [Undercity]
 					},
+					["coord"] = { 54.2, 42.8, DUROTAR },
 					["timeline"] = { REMOVED_2_4_1 },
 					["races"] = { TROLL },
 					["classes"] = { PRIEST },
@@ -2850,10 +2850,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 13317, 1 } },	-- Ivory Raptor (MOUNT!)
-					["sym"] = { { "select", "itemID", 18788, 18789, 18790 } },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["_drop"] = { "g" },
+					["sym"] = { { "select", "itemID", 18788, 18789, 18790 } },
 				}),
 				q(31012, {	-- Joining the Horde
 					["qg"] = 60570,	-- Ji Firepaw
@@ -2894,8 +2894,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(32671, {	-- Learn To Ride
 					["description"] = "This quest is available to Trolls upon reaching level 10.",
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
-					["isBreadcrumb"] = true,
-					["DisablePartySync"] = true,
+					["races"] = { TROLL },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -2903,13 +2902,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["races"] = { TROLL },
+					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(14088, {	-- Learn to Ride in Durotar
 					["provider"] = { "i", 46883 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Trolls in their Mailbox upon reaching the specified level.",
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_1 },
+					["races"] = { TROLL },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -2917,7 +2918,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["races"] = { TROLL },
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(25179, {	-- Loss Reduction
@@ -3033,9 +3033,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 25266,	-- Warchief's Emissary
 					["coord"] = { 57.6, 9.6, DUROTAR },
-					-- noted as not necessary 2022-04-17
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { GOBLIN },
+					-- noted as not necessary 2022-04-17
 					["groups"] = {
 						i(52581),	-- SI:7 Emblem (QI!)
 						--
@@ -3227,10 +3227,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 8586, 1 } },	-- Mottled Red Raptor (MOUNT!)
-					["sym"] = { { "select", "itemID", 18788, 18789, 18790 } },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["_drop"] = { "g" },
+					["sym"] = { { "select", "itemID", 18788, 18789, 18790 } },
 				}),
 				q(823, {	-- Report to Orgnil
 					["qg"] = 3188,	-- Master Gadrin
@@ -3576,9 +3576,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(40518, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {	-- The Battle for Broken Shore
 					["qg"] = 113547,	-- Stone Guard Mukar
-					["coord"] = { 55.6, 11.0, DUROTAR },
-					["sourceQuest"] = 44281,	-- To Be Prepared
 				--	["altQuest"] = 44543,	-- Scenario Skip (H)
+					["sourceQuest"] = 44281,	-- To Be Prepared
+					["coord"] = { 55.6, 11.0, DUROTAR },
 					["description"] = "Legion expansion introduction quest.|r",
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(98, 98, 10),
@@ -3683,10 +3683,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 98,
 				})),
 				q(39801, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {	-- The Splintered Fleet
-					["sourceQuest"] = 39698,	-- Making the Rounds
-					["lvl"] = 98,
 					["qg"] = 96686,	-- Lady Sylvanas Windrunner <Banshee Queen>
+					["sourceQuest"] = 39698,	-- Making the Rounds
 					["races"] = HORDE_ONLY,
+					["lvl"] = 98,
 					["groups"] = {
 						i(139916),	-- Black Rose Amice
 						i(139925),	-- Black Rose Wristwraps
@@ -3813,13 +3813,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if NOT ANYCLASSIC
 				q(5660, {	-- Touch of Weakness [Durotar]
 					["qg"] = 3706,	-- Tai'jin <Priest Trainer>
-					["coord"] = { 54.2, 42.8, DUROTAR },
 					["altQuests"] = {
 						5658,	-- Touch of Weakness [Undercity]
 						5661,	-- Touch of Weakness [Mulgore]
 						5662,	-- Touch of Weakness [Orgrimmar]
 						5663,	-- Touch of Weakness [Thunder Bluff]
 					},
+					["coord"] = { 54.2, 42.8, DUROTAR },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },

@@ -4,11 +4,11 @@
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	n(AZERITE_ESSENCES, {
 		["description"] = "The Heart of Azeroth, rewarded by Magni in the Heart of Chamber (Silithus), is required to learn Essences and maybe even to have them drop. Essences have two effects on them, one major and one minor power.\n\nPlayers may place an Essence in every unlocked Major or Minor slot in the Heart of Azeroth.\n\nThe major power will only be activated if the Essence is placed in the central Major slot.\n\nThe minor power will be activated if the Essence is placed in any Minor slot or the central Major slot.\n\nThe same Essence cannot be placed in multiple slots.",
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(13779, {		-- Phenomenal Cosmic Power
 					["timeline"] = { ADDED_8_2_0, REMOVED_9_0_1 },
-					["g"] = {
+					["groups"] = {
 						title(407, {		-- <Name>, Azeroth's Champion
 							["timeline"] = { ADDED_8_2_0, REMOVED_9_0_1 },
 						}),

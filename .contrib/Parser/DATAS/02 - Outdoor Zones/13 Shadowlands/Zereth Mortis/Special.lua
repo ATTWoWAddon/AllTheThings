@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 		n(SPECIAL, {
 			header(HEADERS.Item, 190196, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Enlightened Hearthstone
 				["description"] = "To obtain this toy, you will need six people with the Sphere of Enlightened Cogitation toy.\nEach person with the toy needs to stand on top of one of the hexagon pillars surrounding the pool of water under the Forge of Afterlives, right at the center of Zereth Mortis, and use the toy while sitting.\nOne person needs to be in each pillar.\nIf all 6 people use the toy successfully at the same time, a zone-wide chat emote will show up - The Ponderer's Portal has been opened. Once this happens, simply head to the southern hexagon pillar and loot the toy from the Ponderer's Portal - The Portal looks like a white glowy sphere.",
-				["g"] = {
+				["groups"] = {
 					i(190196),	-- Enlightened Hearthstone (TOY!)
 				},
 			})),
@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			o(375516, {	-- Lost Comb
 				["description"] = "Almost at the top of the pillar in a little nest attached to the side of the pillar. Require flying but might be doable during Portal Play and with Venthyr Ability.",
 				["coord"] = { 63.3, 60.5, ZERETH_MORTIS },
-				["g"] = {
+				["groups"] = {
 					i(189990),	-- Bee Soul (SS!)
 				},
 			}),
@@ -34,14 +34,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					{ 49.8, 80.0, ZERETH_MORTIS },
 					{ 58.4, 75.0, ZERETH_MORTIS },
 				},
-				["g"] = {
+				["groups"] = {
 					i(189988),	-- Sheep Soul (SS!)
 				},
 			}),
 			n(185279, {	-- Lost Soul
 				["description"] = "On top of an Orb.",
 				["coord"] = { 34.4, 71.3, ZERETH_MORTIS },
-				["g"] = {
+				["groups"] = {
 					i(189989),	-- Penguin Soul (SS!)
 				},
 			}),

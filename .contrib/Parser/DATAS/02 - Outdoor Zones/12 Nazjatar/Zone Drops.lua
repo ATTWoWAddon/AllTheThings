@@ -88,7 +88,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["questID"] = 57141,
 			["repeatable"] = true,
 			["coord"] = { 38.0, 59.2, NAZJATAR },
-			["g"] = {
+			["groups"] = {
 				i(170473),	-- Jingling Sack
 			},
 		}),
@@ -163,7 +163,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				152543,	-- Voidscale Hydra
 				152544,	-- Voidscale Trenchstalker
 			},
-			["g"] = {
+			["groups"] = {
 				-- (putting a 'g' prevents this from complaining about being a character unlock due to questID)
 				currency(1721),	-- Prismatic Manapearl
 			},
@@ -180,7 +180,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				152711,	-- Necrofin Reaver
 				151534,	-- Necrofin Scavenger
 			},
-			["g"] = {
+			["groups"] = {
 				i(169332),	-- Strange Mineralized Water
 				i(169334),	-- Strange Oceanic Sediment
 				i(169333),	-- Strange Volcanic Rock
@@ -362,7 +362,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 	}),
 	--	Gear
 	n(ZONE_DROPS, {
-		["g"] = {
+		["groups"] = {
 			i(170116),	-- Darkened Slicer
 			i(169402),	-- Deeptide Amice
 			i(169403),	-- Deeptide Cinch

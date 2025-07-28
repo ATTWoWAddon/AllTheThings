@@ -59,14 +59,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			n(ACHIEVEMENTS, {
 				applyevent(EVENTS.WOW_ANNIVERSARY, ach(13928, {	-- Alterac Valley of Olde (A)
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(172022),	-- Stormpike Battle Ram (MOUNT!)
 					},
 					["timeline"] = { ADDED_8_2_5 },
 				})),
 				applyevent(EVENTS.WOW_ANNIVERSARY, ach(13930, {	-- Alterac Valley of Olde (H)
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(172023),	-- Frostwolf Snarler (MOUNT!)
 					},
 					["timeline"] = { ADDED_8_2_5 },
@@ -604,8 +604,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 15350,	-- Horde Warbringer
 					["sourceQuest"] = 8369,	-- Invaders of Alterac Valley
 					["maxReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
-					["cost"] = { { "i", 20560, 3 } },	-- Alterac Valley Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20560, 3 } },	-- Alterac Valley Mark of Honor
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 				}),
@@ -801,8 +801,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 15351,	-- Alliance Brigadier General
 					["sourceQuest"] = 8375,	-- Remember Alterac Valley!
 					["maxReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
-					["cost"] = { { "i", 20560, 3 } },	-- Alterac Valey Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
+					["cost"] = { { "i", 20560, 3 } },	-- Alterac Valey Mark of Honor
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),

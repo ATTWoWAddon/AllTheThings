@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["coord"] = { 34.8, 64.1, ZERETH_MORTIS },
 				["minReputation"] = { FACTION_THE_ENLIGHTENED, EXALTED },	-- The Enlightened, Exalted
 				["repeatable"] = true,
-				["g"] = {
+				["groups"] = {
 					i(187780, {	-- Enlightened Broker Supplies
 						i(190931),	-- Cape of the Regal Wanderer
 						i(190930),	-- Dark Shawl of the Enlightened

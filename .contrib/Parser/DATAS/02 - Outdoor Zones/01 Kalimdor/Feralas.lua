@@ -178,7 +178,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 46.6, 42.8, FERALAS },
 						["races"] = ALLIANCE_ONLY,
 						-- #if BEFORE 2.1.0
-						["g"] = EXPERT_ARTISAN_ALCHEMY,
+						["groups"] = EXPERT_ARTISAN_ALCHEMY,
 						-- #endif
 					}),
 				}),
@@ -199,13 +199,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 89.4, 46.4, FERALAS },
 						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { REMOVED_4_0_3 },
-						["g"] = CLASSIC_TBC_TRIBAL,
+						["groups"] = CLASSIC_TBC_TRIBAL,
 					}),
 					n(11098, {	-- Hahrana Ironhide <Master Leatherworker>
 						["coord"] = { 74.4, 43.0, FERALAS },
 						["races"] = HORDE_ONLY,
 						-- #if BEFORE 2.1.0
-						["g"] = EXPERT_ARTISAN_LEATHERWORKING,
+						["groups"] = EXPERT_ARTISAN_LEATHERWORKING,
 						-- #endif
 					}),
 				}),
@@ -691,8 +691,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25475, {	-- Find OOX-22/FE!
 					["provider"] = { "i", 8705 },	-- OOX-22/FE Distress Beacon
-					["crs"] = { 39896 },	-- Feral Scar Yeti
 					["timeline"] = { ADDED_4_0_3 },
+					["crs"] = { 39896 },	-- Feral Scar Yeti
 				}),
 				q(2766, {	-- Find OOX-22/FE!
 					["provider"] = { "i", 8705 },	-- OOX-22/FE Distress Beacon
@@ -799,12 +799,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(26402, {	-- General Shandris Feathermoon
 					["qg"] = 40032,	-- Telaron Windflight
 					["sourceQuest"] = 25398,	-- Sealing the Dream
-					-- TODO: ideally figure out proper lockCriteria instead of description
-					["description"] = "If you completed or currently have active any quest at Feathermoon Stronghold, this quest stops being available",
 					["coord"] = { 50.7, 17.2, FERALAS },
+					["description"] = "If you completed or currently have active any quest at Feathermoon Stronghold, this quest stops being available",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					-- TODO: ideally figure out proper lockCriteria instead of description
 				}),
 				q(25458, {	-- General Skessesh
 					["qg"] = 39723,	-- Tambre
@@ -1283,11 +1283,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25403, {	-- Ogre Abduction [A]
 					["qg"] = 40052,	-- Estulan
+					["sourceQuest"] = 25402,	-- Estulan's Examination
+					["coord"] = { 57.0, 55.4, FERALAS },
 					-- #if AFTER 7.0.3
 					["description"] = "High-level players may require |cff0070ddSoft Foam Sword|r to lower creature health to 10%.",
 					-- #endif
-					["sourceQuest"] = 25402,	-- Estulan's Examination
-					["coord"] = { 57.0, 55.4, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1312,11 +1312,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25344, {	-- Ogre Abduction [H]
 					["qg"] = 39840,	-- Swar'jan
+					["sourceQuest"] = 25342,	-- Talk to Swar'jan
+					["coord"] = { 51.9, 46.6, FERALAS },
 					-- #if AFTER 7.0.3
 					["description"] = "High-level players may require |cff0070ddSoft Foam Sword|r to lower creature health to 10%.",
 					-- #endif
-					["sourceQuest"] = 25342,	-- Talk to Swar'jan
-					["coord"] = { 51.9, 46.6, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1348,9 +1348,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25454, {	-- Perfect Yeti Hide
 					["provider"] = { "i", 55167 },	-- Perfect Yeti Hide
 					["sourceQuest"] = 25452,	-- The Mark of Quality
-					["crs"] = { 39896 },	-- Feral Scar Yeti
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["crs"] = { 39896 },	-- Feral Scar Yeti
 				}),
 				q(7738, {	-- Perfect Yeti Hide
 					["provider"] = { "i", 18972 },	-- Perfect Yeti Hide
@@ -1366,11 +1366,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25451, {	-- Pristine Yeti Hide
 					["provider"] = { "i", 55166 },	-- Pristine Yeti Hide
-					["coord"] = { 55.4, 56.4, FERALAS },	-- General area where the Quest Starter can be looted
 					["sourceQuest"] = 25449,	-- The Mark of Quality
-					["crs"] = { 39896 },	-- Feral Scar Yeti
+					["coord"] = { 55.4, 56.4, FERALAS },	-- General area where the Quest Starter can be looted
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["crs"] = { 39896 },	-- Feral Scar Yeti
 				}),
 				q(7735, {	-- Pristine Yeti Hide
 					["provider"] = { "i", 18969 },	-- Pristine Yeti Hide
@@ -2938,11 +2938,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(7730, {	-- Zukk'ash Infestation
 					["qg"] = 7875,	-- Hadoken Swiftstrider
+					["sourceQuest"] = 2903,	-- The Battle Plans
+					["coord"] = { 74.8, 42.6, FERALAS },
 					-- #if AFTER 4.0.3
 					["description"] = "This quest gets marked as completed when you complete the quest 'Verinias the Twisted' (25368).",
 					-- #endif
-					["sourceQuest"] = 2903,	-- The Battle Plans
-					["coord"] = { 74.8, 42.6, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 39,
@@ -3171,7 +3171,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 61.5, 30.7, FERALAS },
 					["description"] = "Click on the Carved Eye in the room under the Maul Arena in Dire Maul",
 					["timeline"] = { ADDED_10_2_5 },
-					["g"] = {
+					["groups"] = {
 						i(212991),	-- Grimoire of the Dire Observer (CI!)
 					},
 				}),

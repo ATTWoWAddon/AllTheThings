@@ -18,7 +18,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			1364,	-- The Great Sea
 			1367,	-- Boralus
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(40961, {	-- Batle of Dazar'alor
 					["timeline"] = { ADDED_11_0_7 },
@@ -71,7 +71,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				-- 		144683,	-- Ra'wani Kanae (A)
 				-- 		144680,	-- Frida Ironbellows (H)
 				-- 	},
-				-- 	["g"] = {
+				-- 	["groups"] = {
 				-- 	},
 				-- }),
 				-- e(2323, {	-- Jadefire Masters	-- 2341 Horde
@@ -81,7 +81,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				-- 		144693,	-- Manceroy Flamefist (H)
 				-- 		144690,	-- Mestrah <The Illuminated> (H)
 				-- 	},
-				-- 	["g"] = {
+				-- 	["groups"] = {
 				-- 	},
 				-- }),
 				-- e(2340, {	-- Grong, the Revenant	-- 2325 Horde
@@ -89,7 +89,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				-- 		144638,	-- Grong the Revenant (A)
 				-- 		148117,	-- Grong the Revenant (H)
 				-- 	},
-				-- 	["g"] = {
+				-- 	["groups"] = {
 				-- 	},
 				-- }),
 				-- e(2342, {	-- Opulence
@@ -98,7 +98,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				-- 		145274,	-- Yalat's Bulwark
 				-- 		145273,	-- The Hand of In'zashi
 				-- 	},
-				-- 	["g"] = {
+				-- 	["groups"] = {
 				-- 	},
 				-- }),
 				e(2330, {	-- Loa Council / Conclave of the Chosen
@@ -108,7 +108,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						144963,	-- Kimbul's Aspect
 						144747,	-- Pa'ku's Aspect
 					},
-					["g"] = {
+					["groups"] = {
 						i(165846),	-- Child of Pa'ku (PET!)
 						i(165847),	-- Thunder Lizard Runt (PET!)
 					},
@@ -120,14 +120,14 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						146492,	-- Phantom of Rage
 						146322,	-- Siegebreaker Roka
 					},
-					["g"] = {
+					["groups"] = {
 						i(165696),	-- Formula: Enchanted Tiki Mask (RECIPE!)
 						ig(168129),	-- Essence of the Troll Dynasty
 					},
 				}),
 				e(2334, {	-- High Tinker Mekkatorque
 					["crs"] = { 144796 },	-- High Tinker Mekkatorque
-					["g"] = {
+					["groups"] = {
 						i(166276),	-- Schematic: Unstable Temporal Time Shifter (RECIPE!)
 					},
 				}),
@@ -136,12 +136,12 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				-- 		146253,	-- Brother Joseph
 				-- 		146251,	-- Sister Katherine
 				-- 	},
-				-- 	["g"] = {
+				-- 	["groups"] = {
 				-- 	},
 				-- })),
 				e(2343, {	-- Lady Jaina Proudmoore
 					["crs"] = { 146409 },	-- Lady Jaina Proudmoore
-					["g"] = {
+					["groups"] = {
 						i(166582),	-- Technique: Glyph of the Tides (RECIPE!)
 					},
 				}),
@@ -174,7 +174,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							144683,	-- Ra'wani Kanae (A)
 							144680,	-- Frida Ironbellows (H)
 						},
-						["g"] = {
+						["groups"] = {
 							crit(43867, {	-- Champion of the Light (A)
 								["races"] = ALLIANCE_ONLY,
 								["achievementID"] = 13286,	-- Siege of Dazar'alor
@@ -205,7 +205,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							144693,	-- Manceroy Flamefist (H)
 							144690,	-- Mestrah <The Illuminated> (H)
 						},
-						["g"] = {
+						["groups"] = {
 							crit(43884, {	-- Jadefire Masters (A)
 								["races"] = ALLIANCE_ONLY,
 								["achievementID"] = 13286,	-- Siege of Dazar'alor
@@ -235,7 +235,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							144638,	-- Grong the Revenant (A)
 							148117,	-- Grong the Revenant (H)
 						},
-						["g"] = {
+						["groups"] = {
 							crit(43868, {	-- Grong, the Revenant (A)
 								["races"] = ALLIANCE_ONLY,
 								["achievementID"] = 13286,	-- Siege of Dazar'alor
@@ -268,7 +268,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							145274,	-- Yalat's Bulwark
 							145273,	-- The Hand of In'zashi
 						},
-						["g"] = {
+						["groups"] = {
 							crit(43869, {	-- Opulence (A)
 								["races"] = ALLIANCE_ONLY,
 								["achievementID"] = 13287,	-- Empire's Fall
@@ -300,7 +300,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							144963,	-- Kimbul's Aspect
 							144747,	-- Pa'ku's Aspect
 						},
-						["g"] = {
+						["groups"] = {
 							crit(43870, {	-- Loa Council/Conclave of the Chosen (A)
 								["races"] = ALLIANCE_ONLY,
 								["achievementID"] = 13287,	-- Empire's Fall
@@ -331,7 +331,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							146492,	-- Phantom of Rage
 							146322,	-- Siegebreaker Roka
 						},
-						["g"] = {
+						["groups"] = {
 							crit(43871, {	-- King Rastakhan (A)
 								["races"] = ALLIANCE_ONLY,
 								["achievementID"] = 13287,	-- Empire's Fall
@@ -357,7 +357,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				header(HEADERS.LFGDungeonByFaction, 1947.1950, {	-- Might of the Alliance (A) / Victory or Death (H)
 					e(2334, {	-- High Tinker Mekkatorque
 						["crs"] = { 144796 },	-- High Tinker Mekkatorque
-						["g"] = {
+						["groups"] = {
 							crit(43872, {	-- High Tinker Mekkatorque (A)
 								["races"] = ALLIANCE_ONLY,
 								["achievementID"] = 13288,	-- Might of the Alliance
@@ -384,7 +384,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							146253,	-- Brother Joseph
 							146251,	-- Sister Katherine
 						},
-						["g"] = {
+						["groups"] = {
 							crit(43873, {	-- Stormwall Blockade (A)
 								["races"] = ALLIANCE_ONLY,
 								["achievementID"] = 13288,	-- Might of the Alliance
@@ -410,7 +410,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					})),
 					e(2343, {	-- Lady Jaina Proudmoore
 						["crs"] = { 146409 },	-- Lady Jaina Proudmoore
-						["g"] = {
+						["groups"] = {
 							crit(43874, {	-- Jaina Proudmoore (A)
 								["races"] = ALLIANCE_ONLY,
 								["achievementID"] = 13288,	-- Might of the Alliance
@@ -442,7 +442,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						144683,	-- Ra'wani Kanae (A)
 						144680,	-- Frida Ironbellows (H)
 					},
-					["g"] = {
+					["groups"] = {
 						ach(13316),	-- Can I Get a Hek Hek Hek Yeah?
 					},
 				}),
@@ -453,7 +453,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						144693,	-- Manceroy Flamefist (H)
 						144690,	-- Mestrah <The Illuminated> (H)
 					},
-					["g"] = {
+					["groups"] = {
 						ach(13431),	-- Hidden Dragon
 					},
 				}),
@@ -462,7 +462,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						144638,	-- Grong the Revenant (A)
 						148117,	-- Grong the Revenant (H)
 					},
-					["g"] = {
+					["groups"] = {
 						ach(13383),	-- Barrel of Monkeys
 					},
 				}),
@@ -472,7 +472,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						145274,	-- Yalat's Bulwark
 						145273,	-- The Hand of In'zashi
 					},
-					["g"] = {
+					["groups"] = {
 						ach(13345),	-- Praise the Sunflower
 					},
 				}),
@@ -483,7 +483,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						144963,	-- Kimbul's Aspect
 						144747,	-- Pa'ku's Aspect
 					},
-					["g"] = {
+					["groups"] = {
 						ach(13325),	-- Walk the Dinosaur
 					},
 				}),
@@ -494,13 +494,13 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						146492,	-- Phantom of Rage
 						146322,	-- Siegebreaker Roka
 					},
-					["g"] = {
+					["groups"] = {
 						ach(13425),	-- We Got Spirit, How About You?
 					},
 				}),
 				e(2334, {	-- High Tinker Mekkatorque
 					["crs"] = { 144796 },	-- High Tinker Mekkatorque
-					["g"] = {
+					["groups"] = {
 						ach(13401),	-- I Got Next!
 						i(166518),	-- G.M.O.D. (MOUNT!)
 					},
@@ -510,13 +510,13 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						146253,	-- Brother Joseph
 						146251,	-- Sister Katherine
 					},
-					["g"] = {
+					["groups"] = {
 						ach(13430),	-- De Lurker Be'loa
 					},
 				})),
 				e(2343, {	-- Lady Jaina Proudmoore
 					["crs"] = { 146409 },	-- Lady Jaina Proudmoore
-					["g"] = {
+					["groups"] = {
 						ach(13410),	-- Snow Fun Allowed
 					},
 				}),
@@ -538,7 +538,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						144683,	-- Ra'wani Kanae (A)
 						144680,	-- Frida Ironbellows (H)
 					},
-					["g"] = {
+					["groups"] = {
 						i(165586),	-- Dawnbreaker
 						i(165919),	-- Desecrated Blade of the Disciples
 						i(165584),	-- Sunburst Crest
@@ -561,7 +561,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						144693,	-- Manceroy Flamefist (H)
 						144690,	-- Mestrah <The Illuminated> (H)
 					},
-					["g"] = {
+					["groups"] = {
 						i(165587),	-- Phoenixfire Staff
 						i(165500),	-- Blazewing Hood
 						i(165548),	-- Helm of Tempered Jade
@@ -582,7 +582,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						144638,	-- Grong the Revenant (A)
 						148117,	-- Grong the Revenant (H)
 					},
-					["g"] = {
+					["groups"] = {
 						i(165589),	-- Hornridged Crusher
 						i(165920),	-- Apetagonizer's Claw
 						i(165588),	-- Bonelash Paw
@@ -605,7 +605,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						145274,	-- Yalat's Bulwark
 						145273,	-- The Hand of In'zashi
 					},
-					["g"] = {
+					["groups"] = {
 						i(165591),	-- Bloodtooth, the Soulfeaster
 						i(165592),	-- Goblet of Glittering Favor
 						i(165593),	-- Greed's Folly
@@ -629,7 +629,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						144963,	-- Kimbul's Aspect
 						144747,	-- Pa'ku's Aspect
 					},
-					["g"] = {
+					["groups"] = {
 						i(165594),	-- Akunda's Shocksplitter
 						i(165595),	-- Blade of Encroaching Death
 						i(165599),	-- Pterrorwing Longbow
@@ -652,7 +652,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						146492,	-- Phantom of Rage
 						146322,	-- Siegebreaker Roka
 					},
-					["g"] = {
+					["groups"] = {
 						i(165597),	-- Deathspeaker Spire
 						i(165596),	-- Last Fang of Rezan
 						i(165537),	-- Mantle of the Soulbinder's Caress
@@ -668,7 +668,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(2334, {	-- High Tinker Mekkatorque
 					["crs"] = { 144796 },	-- High Tinker Mekkatorque
-					["g"] = {
+					["groups"] = {
 						i(165598),	-- Servo-Claw Smasher
 						i(165600),	-- Twin-Pipe Buster Cannon
 						i(165543),	-- Target-Tracking Headgear
@@ -687,7 +687,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						146253,	-- Brother Joseph
 						146251,	-- Sister Katherine
 					},
-					["g"] = {
+					["groups"] = {
 						i(165602),	-- Crash of Tides
 						i(165590),	-- Docksplitter Siege Hook
 						i(165601),	-- Storm-Toothed Kasuyu
@@ -705,7 +705,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				})),
 				e(2343, {	-- Lady Jaina Proudmoore
 					["crs"] = { 146409 },	-- Lady Jaina Proudmoore
-					["g"] = {
+					["groups"] = {
 						i(165604),	-- Daelin Proudmoore's Saber
 						i(165583),	-- Fogbreaker, Light of the Sea
 						i(165823),	-- Glaciercrest Helm
@@ -738,7 +738,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						144683,	-- Ra'wani Kanae (A)
 						144680,	-- Frida Ironbellows (H)
 					},
-					["g"] = {
+					["groups"] = {
 						i(165586),	-- Dawnbreaker
 						i(165919),	-- Desecrated Blade of the Disciples
 						i(165584),	-- Sunburst Crest
@@ -761,7 +761,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						144693,	-- Manceroy Flamefist (H)
 						144690,	-- Mestrah <The Illuminated> (H)
 					},
-					["g"] = {
+					["groups"] = {
 						i(165587),	-- Phoenixfire Staff
 						i(165500),	-- Blazewing Hood
 						i(165548),	-- Helm of Tempered Jade
@@ -782,7 +782,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						144638,	-- Grong the Revenant (A)
 						148117,	-- Grong the Revenant (H)
 					},
-					["g"] = {
+					["groups"] = {
 						i(165589),	-- Hornridged Crusher
 						i(165920),	-- Apetagonizer's Claw
 						i(165588),	-- Bonelash Paw
@@ -805,7 +805,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						145274,	-- Yalat's Bulwark
 						145273,	-- The Hand of In'zashi
 					},
-					["g"] = {
+					["groups"] = {
 						i(165591),	-- Bloodtooth, the Soulfeaster
 						i(165592),	-- Goblet of Glittering Favor
 						i(165593),	-- Greed's Folly
@@ -829,7 +829,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						144963,	-- Kimbul's Aspect
 						144747,	-- Pa'ku's Aspect
 					},
-					["g"] = {
+					["groups"] = {
 						i(165594),	-- Akunda's Shocksplitter
 						i(165595),	-- Blade of Encroaching Death
 						i(165599),	-- Pterrorwing Longbow
@@ -852,7 +852,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						146492,	-- Phantom of Rage
 						146322,	-- Siegebreaker Roka
 					},
-					["g"] = {
+					["groups"] = {
 						i(165597),	-- Deathspeaker Spire
 						i(165596),	-- Last Fang of Rezan
 						i(165537),	-- Mantle of the Soulbinder's Caress
@@ -868,7 +868,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(2334, {	-- High Tinker Mekkatorque
 					["crs"] = { 144796 },	-- High Tinker Mekkatorque
-					["g"] = {
+					["groups"] = {
 						i(165598),	-- Servo-Claw Smasher
 						i(165600),	-- Twin-Pipe Buster Cannon
 						i(165543),	-- Target-Tracking Headgear
@@ -887,7 +887,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						146253,	-- Brother Joseph
 						146251,	-- Sister Katherine
 					},
-					["g"] = {
+					["groups"] = {
 						i(165602),	-- Crash of Tides
 						i(165590),	-- Docksplitter Siege Hook
 						i(165601),	-- Storm-Toothed Kasuyu
@@ -905,7 +905,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				})),
 				e(2343, {	-- Lady Jaina Proudmoore
 					["crs"] = { 146409 },	-- Lady Jaina Proudmoore
-					["g"] = {
+					["groups"] = {
 						ach(13322, {	-- Ahead of the Curve: Lady Jaina Proudmoore
 							["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 },
 						}),
@@ -941,7 +941,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						144683,	-- Ra'wani Kanae (A)
 						144680,	-- Frida Ironbellows (H)
 					},
-					["g"] = {
+					["groups"] = {
 						ach(13292),	-- Mythic: Champion of the Light
 						i(165586),	-- Dawnbreaker
 						i(165919),	-- Desecrated Blade of the Disciples
@@ -965,7 +965,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						144693,	-- Manceroy Flamefist (H)
 						144690,	-- Mestrah <The Illuminated> (H)
 					},
-					["g"] = {
+					["groups"] = {
 						ach(13298, {	-- Mythic: Jadefire Masters (A)
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -992,7 +992,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						144638,	-- Grong the Revenant (A)
 						148117,	-- Grong the Revenant (H)
 					},
-					["g"] = {
+					["groups"] = {
 						ach(13293),	-- Mythic: Grong
 						i(165589),	-- Hornridged Crusher
 						i(165920),	-- Apetagonizer's Claw
@@ -1016,7 +1016,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						145274,	-- Yalat's Bulwark
 						145273,	-- The Hand of In'zashi
 					},
-					["g"] = {
+					["groups"] = {
 						ach(13299),	-- Mythic: Opulence
 						i(165591),	-- Bloodtooth, the Soulfeaster
 						i(165592),	-- Goblet of Glittering Favor
@@ -1041,7 +1041,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						144963,	-- Kimbul's Aspect
 						144747,	-- Pa'ku's Aspect
 					},
-					["g"] = {
+					["groups"] = {
 						ach(13300),	-- Mythic: Conclave of the Chosen
 						i(165848),	-- Spawn of Krag'wa (PET!)
 						i(165594),	-- Akunda's Shocksplitter
@@ -1066,7 +1066,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						146492,	-- Phantom of Rage
 						146322,	-- Siegebreaker Roka
 					},
-					["g"] = {
+					["groups"] = {
 						ach(13311),	-- Mythic: King Rastakhan
 						i(165597),	-- Deathspeaker Spire
 						i(165596),	-- Last Fang of Rezan
@@ -1083,7 +1083,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(2334, {	-- High Tinker Mekkatorque
 					["crs"] = { 144796 },	-- High Tinker Mekkatorque
-					["g"] = {
+					["groups"] = {
 						ach(13312),	-- Mythic: Mekkatorque
 						i(165598),	-- Servo-Claw Smasher
 						i(165600),	-- Twin-Pipe Buster Cannon
@@ -1103,7 +1103,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						146253,	-- Brother Joseph
 						146251,	-- Sister Katherine
 					},
-					["g"] = {
+					["groups"] = {
 						ach(13313),	-- Mythic: Stormwall Blockade
 						i(165602),	-- Crash of Tides
 						i(165590),	-- Docksplitter Siege Hook
@@ -1122,7 +1122,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 				})),
 				e(2343, {	-- Lady Jaina Proudmoore
 					["crs"] = { 146409 },	-- Lady Jaina Proudmoore
-					["g"] = {
+					["groups"] = {
 						ach(13314, {	-- Mythic: Lady Jaina Proudmoore
 							title(386),	-- <Name>, Hero of Dazar'alor
 						}),
@@ -1132,13 +1132,13 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						}),
 						ach(13326, bubbleDownSelf({["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 } }, {	-- Hall of Fame: Lady Jaina Proudmoore (Alliance)
 							["races"] = ALLIANCE_ONLY,
-							["g"] = {
+							["groups"] = {
 								title(384),	-- <Name>, Famed Conqueror of Dazar'alor
 							},
 						})),
 						ach(13327, bubbleDownSelf({["timeline"] = { ADDED_8_1_0, REMOVED_8_2_0 } }, {	-- Hall of Fame: Lady Jaina Proudmoore (Horde)
 							["races"] = HORDE_ONLY,
-							["g"] = {
+							["groups"] = {
 								title(385),	-- <Name>, Famed Defender of Dazar'alor
 							},
 						})),

@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 36.8, 50.1, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 129642 },	-- Lucille Waycrest
-				["g"] = {
+				["groups"] = {
 					i(156515),	-- Lucille's Sewing Kit (QI!)
 				},
 			}),
@@ -56,7 +56,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 70.0, 42.8, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 125380 },	-- Lucille Waycrest
-				["g"] = {
+				["groups"] = {
 					i(155126),	-- Reade's Waraxe
 					i(155152),	-- Witchrend Greatsword
 					i(155148),	-- Silverwood Spire
@@ -75,7 +75,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 136234 },	-- Cesi Loosecannon
 				["coord"] = { 22.8, 46.2, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(159143),	-- Tranquil Charm (QI!)
 				},
 				-- Not required for "Drust Do It."
@@ -102,7 +102,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					-- Definitely requires "Changing of the Guard;" may not require others.  Needs confirmation.
 					-- Awarded "A New Order" criteria.
 				},
-				["g"] = {
+				["groups"] = {
 					i(156532),	-- Inquisitor's Regalia (QI!)
 					azeriteItem(155107),	-- Banisher Cowl
 					azeriteItem(155104),	-- Waycrest Militia Helmet
@@ -131,7 +131,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					50151,	-- A Steady Ballast
 					50173,	-- Precious Metals
 				},
-				["g"] = {
+				["groups"] = {
 					i(156853),	-- Battered Hand Cannon (QI!)
 				},
 			}),
@@ -140,7 +140,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 27.0, 25.2, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50449 },	-- Reeking Refuge
-				["g"] = {
+				["groups"] = {
 					i(157807),	-- Aromatic Onion (QI!)
 				},
 			}),
@@ -149,7 +149,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 70.0, 42.8, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 48111 },	-- Trial by Superstition
-				["g"] = {
+				["groups"] = {
 					i(151934),	-- Juicy Onion (QI!)
 				},
 			}),
@@ -194,7 +194,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 31.3, 30.2, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50453 },	-- Barrier Buster (must be ON quest to pick up this one)
-				["g"] = {
+				["groups"] = {
 					i(158599),	-- Wickerwoven Grips
 					i(158600),	-- Banisher Handwraps
 					i(158601),	-- Crone-Seeker's Handguards
@@ -216,7 +216,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 31.2, 29.9, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50003 },	-- The First Watch
-				["g"] = {
+				["groups"] = {
 					i(156855),	-- Falconer's Whistle (QI!)
 				},
 			}),
@@ -230,7 +230,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 31.7, 29.5, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50446 },	-- Witchrending
-				["g"] = {
+				["groups"] = {
 					i(157800),	-- Blasting Powder (QI!)
 				},
 			}),
@@ -244,7 +244,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127558 },	-- Art Hughie
 				["coord"] = { 71.7, 50.4, DRUSTVAR },
 				["sourceQuests"] = { 48880, 48904 },	-- Mean Gulls & Take the Bait
-				["g"] = {
+				["groups"] = {
 					i(155459),	-- Anglin' Art's Sandals
 					i(155468),	-- Anglin' Art's Treads
 					i(155476),	-- Anglin' Art's Waders
@@ -278,7 +278,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 26.9, 71.3, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 49939 },	-- So Long, Sister
-				["g"] = {
+				["groups"] = {
 					i(156830),	-- Lord Sharptooth (QI!)
 				},
 				-- Not required for "Drust Do It."
@@ -301,7 +301,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 25.5, 70.1, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 131442 },	-- Leandro Royston
-				["g"] = {
+				["groups"] = {
 					i(160189),	-- Wickerwoven Footwraps
 					i(160190),	-- Banisher Footwraps
 					i(160191),	-- Crone-Seeker's Treads
@@ -318,7 +318,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 141894 },	-- Ulfar
 				["coord"] = { 45.2, 45.8, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(162526),	-- Drust Runestone (QI!)
 				},
 			}),
@@ -333,7 +333,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 56.5, 23.9, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 48682 },	-- A Simple Sacrifice
-				["g"] = {
+				["groups"] = {
 					i(158592),	-- Wickerwood Torch
 					i(158594),	-- Barbthorn Bulwark
 					i(158615),	-- Wickerwoven Belt
@@ -347,7 +347,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 48519 },	-- Hope They Can't Swim
 				["provider"] = {"o",273814},	-- Bladed Charm
-				["g"] = {
+				["groups"] = {
 					i(152590),	-- Wicker Charm (QI!)
 				},
 			}),
@@ -368,7 +368,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 24.5, 56.6, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50370 },	-- Deeper Into the Woods
-				["g"] = {
+				["groups"] = {
 					i(157821),	-- Control Charm (QI!)
 					i(158557),	-- Heartsbane Charm
 				},
@@ -395,17 +395,17 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 47949 },	-- That's Not My Fetish
 				-- May have additional source quests; needs confirmation.
-				["g"] = {
+				["groups"] = {
 					i(151793),	-- Pig Fetish (QI!)
 					i(153432),	-- Pig Fetish (QI!)
-				}
+				},
 			}),
 			q(50092, {	-- Curiously Strong
 				["provider"] = { "n", 131448 },	-- Warren Ashton
 				["coord"] = { 25.3, 67.8, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50903 },	-- A Missing Master
-				["g"] = {
+				["groups"] = {
 					i(156828),	-- Frost Potion (QI!)
 				},
 			}),
@@ -427,7 +427,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 64.5, 54.8, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 48947 },	-- Gol Koval
-				["g"] = {
+				["groups"] = {
 					i(161124),	-- Emergency Supplies (QI!)
 				},
 				-- Not required for "Drust Do It."
@@ -438,7 +438,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50149 },	-- A Weather Eye
 				-- May be available earlier; needs confirmation.
-				["g"] = {
+				["groups"] = {
 					i(156663),	-- Quality Salvage (QI!)
 				},
 			}),
@@ -461,7 +461,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					48184,	-- Pieces of History
 				},
 				-- Awarded "Clear Victory" criteria.  Presumably this should be awarded by the "Clear Victory" quest, but "Drustfall" must also be required for the criteria.
-				["g"] = {
+				["groups"] = {
 					i(158581),	-- Shimmering Quicksilver Drape
 					i(155573),	-- Rowanwood Loop
 				},
@@ -480,7 +480,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					50533,	-- Stick It To 'Em!
 					50639,	-- Waycrest Manor: The Fallen Mother
 				},
-				["g"] = {
+				["groups"] = {
 					i(161247),	-- Marshal's Regalia (QI!)
 				},
 			}),
@@ -497,7 +497,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50036 },	-- A Weapon of Old
 				-- Awarded "Fighting with Fire" criteria.
-				["g"] = {
+				["groups"] = {
 					i(156710),	-- Liquid Fire Flask (QI!)
 					i(155162),	-- Band of Wortcunning
 					i(155159),	-- Waycrest Inquisitor's Cloak
@@ -536,7 +536,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 70.0, 42.8, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 48111 },	-- Trial by Superstition
-				["g"] = {
+				["groups"] = {
 					i(151935),	-- Intact Venom Gland (QI!)
 				},
 			}),
@@ -545,7 +545,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 141894 },	-- Ulfar
 				["coord"] = { 45.2, 45.8, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(162527),	-- Korvash's Skull (QI!)
 				},
 			}),
@@ -562,7 +562,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 50446 },	-- Witchrending
 				-- May be available earlier; needs confirmation.
 				-- Not required for "Drust Do It."
-				["g"] = {
+				["groups"] = {
 					i(157845),	-- Falconer's Whistle (QI!)
 				},
 			}),
@@ -583,7 +583,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 25.7, 70.2, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 131879 },	-- Inquisitor Cleardawn
-				["g"] = {
+				["groups"] = {
 					i(160202), -- Banisher Bands
 					i(158624), -- Banisher Strap
 					i(160203), -- Crone-Seeker's Bands
@@ -615,7 +615,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					49295,	-- Clear-Cutting
 					48518,	-- Save Who We Can
 				},
-				["g"] = {
+				["groups"] = {
 					i(155158), -- Alderwood Loop
 					i(155120), -- Banisher Belt
 					i(155119), -- Crone-Seeker's Belt
@@ -635,7 +635,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 48941 },	-- A Slight Detour
 				-- Needs confirmation -- the quest didn't auto-pop and I didn't notice the item in my bags until later.  This source is based on a wowhead comment.
 				-- Not required for "Drust Do It."
-				["g"] = {
+				["groups"] = {
 					i(159746),	-- Pristine Rune-Etched Bone (QI!)
 				},
 			}),
@@ -643,7 +643,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "o", 276513 },	-- Intact Mudfish
 				["coord"] = { 70.7, 50.8, DRUSTVAR },
 				["sourceQuests"] = { 48880 },	-- Mean Gulls (must be ON quest for this one to appear)
-				["g"] = {
+				["groups"] = {
 					i(152845),	-- Mudfish Innards (QI!)
 				},
 			}),
@@ -698,7 +698,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 31.2, 22.7, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50446 },	-- Witchrending
-				["g"] = {
+				["groups"] = {
 					o(281326, {	-- Falcon Cage
 						["coords"] = {
 							{ 31.8, 25.5, DRUSTVAR },
@@ -707,7 +707,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							{ 31.4, 24.2, DRUSTVAR },
 							{ 31.3, 24.8, DRUSTVAR },
 						},
-						["g"] = { i(157840) },	-- Falconer's Key (QI!)
+						["groups"] = { i(157840) },	-- Falconer's Key (QI!)
 					}),
 				},
 				-- May be available earlier; needs confirmation.
@@ -719,7 +719,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50953 },	-- Greenstalker
 				-- Not required for "Drust Do It."
-				["g"] = {
+				["groups"] = {
 					i(155097),	-- Wickerwoven Sandals
 					i(155099),	-- Banisher Boots
 					i(155098),	-- Crone-Seeker's Boots
@@ -755,7 +755,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 24.5, 56.6, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50370 },	-- Deeper Into the Woods
-				["g"] = {
+				["groups"] = {
 					i(158175),	-- Weakening Potion (QI!)
 				},
 			}),
@@ -786,7 +786,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 141894 },	-- Ulfar
 				["coord"] = { 45.2, 45.8, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(162525),	-- Ancient Sinew (QI!)
 					i(162524),	-- Intact Drust Bone (QI!)
 				},
@@ -796,7 +796,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 20.6, 57.4, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50172 },	-- Into the Crimsonwood
-				["g"] = {
+				["groups"] = {
 					i(156951),	-- Bag of Reagents (QI!)
 					i(156950),	-- Organic Matter Sample (QI!)
 					i(158595),	-- Ashenwood Defender
@@ -820,7 +820,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135200 },	-- Alexander Treadward
 				["coord"] = { 23.3, 17.4, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158654),	-- Treadward's Ring (QI!)
 				},
 				-- Not required for "Drust Do It."
@@ -842,7 +842,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					-- Definitely requires Cutthroat Business Practices; may not require other.  Needs confirmation.
 				},
 				-- Not required for "Drust Do It."
-				["g"] = {
+				["groups"] = {
 					i(158640),	-- Boss o' the Port
 					i(158642),	-- Tornsail Skull Cracker
 					i(158639),	-- Innkeep's Slyshiv
@@ -881,7 +881,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 23.2, 17.4, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50754 },	-- To Have Loved and Lost
-				["g"] = {
+				["groups"] = {
 					i(158654),	-- Treadward's Ring (QI!)
 				},
 				-- Not required for "Drust Do It."
@@ -897,7 +897,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 63.2, 27.1, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 124786 },	-- Thomas Staughton
-				["g"] = {
+				["groups"] = {
 					i(155150),	-- Swinestained Saber
 					i(158641),	-- Pork-Chopper Pike
 					i(155139),	-- Mad-Butcher's Mallet
@@ -916,7 +916,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					50450,	-- An Offensive Harvest
 					50451,	-- Eating Through the Defenses
 				},
-				["g"] = {
+				["groups"] = {
 					i(157846),	-- Sack of Aromatic Onions (QI!)
 					i(155564),	-- Mercy's Psalter
 				},
@@ -925,7 +925,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135673 },	-- Scout McKellis
 				["coord"] = { 34.6, 39.7, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(159076),	-- Azerite Powder (QI!)
 				},
 				--	["sourceQuests"] = {  },	-- UNKNOWN - this quest was bugged/not appearing when I quested through the zone, so not sure if it has a specific prereq or only access to Kul Tiras in general
@@ -936,7 +936,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 31.4, 30.2, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50149 },	-- A Weather Eye
-				["g"] = {
+				["groups"] = {
 					o(280802, {	-- Silver Nugget
 						["coords"] = {
 							{ 34.2, 30.4, DRUSTVAR },
@@ -948,7 +948,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							{ 36.0, 31.5, DRUSTVAR },
 							{ 36.7, 32.1, DRUSTVAR },
 						},
-						["g"] = { i(156722) },	-- Silver Nugget (QI!)
+						["groups"] = { i(156722) },	-- Silver Nugget (QI!)
 					}),
 				},
 			}),
@@ -956,7 +956,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 36.4, 25.8, DRUSTVAR },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 143878 },	-- Reez Grimelock
-				["g"] = {
+				["groups"] = {
 					o(280802, {	-- Silver Nugget
 						["coords"] = {
 							{ 34.2, 30.4, DRUSTVAR },
@@ -968,7 +968,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 							{ 36.0, 31.5, DRUSTVAR },
 							{ 36.7, 32.1, DRUSTVAR },
 						},
-						["g"] = { i(156722) },	-- Silver Nugget (QI!)
+						["groups"] = { i(156722) },	-- Silver Nugget (QI!)
 					}),
 				},
 			}),
@@ -989,8 +989,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 140048 },	-- Arthur Tradewind
 				["coord"] = { 58.4, 63.1, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
-				["sourceQuests"] = { 48622 },	-- The Vanishing Lord
-				-- May have other/later sourceQuests; needs confirmation.  Picked up after turning in "Deliverance."
+				["sourceQuests"] = {
+					48622,	-- The Vanishing Lord
+					52074,	-- Deliverance
+				},
+				-- May have other/later sourceQuests; needs confirmation.
 				-- Not required for "Drust Do It."
 			}),
 			q(50449, {	-- Reeking Refuge
@@ -1006,7 +1009,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50253 },	-- An Improvised Arsenal
 				-- May be available earlier; needs confirmation.
-				["g"] = {
+				["groups"] = {
 					i(157806),	-- Personal Keepsake (QI!)
 				},
 			}),
@@ -1015,7 +1018,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = {"o",284426},	-- Buried Mining Machine
 			--	["sourceQuests"] = {  },	-- UNKNOWN - this quest was bugged/not appearing when I quested through the zone, so not sure if it has a specific prereq or only access to Kul Tiras in general
-				["g"] = {
+				["groups"] = {
 					i(160101),	-- Goldspark's Ignition Key (QI!)
 				},
 			}),
@@ -1026,7 +1029,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 52074 },	-- Deliverance
 				-- Not required for "Drust Do It."
-				["g"] = {
+				["groups"] = {
 					i(158607),	-- Wickerwoven Pants
 					i(158608),	-- Banisher Pants
 					i(158609),	-- Crone-Seeker's Links
@@ -1042,7 +1045,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 48793 },	-- The Adventurer's Society
 				["provider"] = {"o",276251},	-- Excavation Inventory
-				["g"] = {
+				["groups"] = {
 					i(152699),	-- "Ancient Potsherds" (QI!)
 					i(152703),	-- "Genuine Titan Disc" (QI!)
 					i(152704),	-- "Relic of the Makers" (QI!)
@@ -1065,7 +1068,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 23.3, 12.5, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50758 },	-- Painful Memories
-				["g"] = {
+				["groups"] = {
 					i(158719),	-- Lord Waycrest's Notes (QI!)
 				},
 				-- Not required for "Drust Do It."
@@ -1084,7 +1087,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				-- May have additional/later sourceQuests; needs confirmation.
 				-- Picked up after turning in "Drustfall."
 				-- Not required for "Drust Do It."
-				["g"] = {
+				["groups"] = {
 					i(160406),	-- Mountain Sapling (QI!)
 				},
 			}),
@@ -1105,7 +1108,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 20.6, 57.4, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50172 },	-- Into the Crimsonwood
-				["g"] = {
+				["groups"] = {
 					i(156859),	-- Cage Key (QI!)
 				},
 			}),
@@ -1115,7 +1118,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 48622 },	-- The Vanishing Lord
 				-- May have additional sourceQuests; needs confirmation.  Picked up after turning in "And Justice For All."
-				["g"] = {
+				["groups"] = {
 					i(152480),	-- Gravebloom (QI!)
 					i(152481),	-- Gravebloom Salve (QI!)
 				},
@@ -1126,7 +1129,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 36.8, 50.1, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 49443 },	-- A Lesson in Witch Hunting
-				["g"] = {
+				["groups"] = {
 					i(156518),	-- Lucille's Sewing Needle (QI!)
 					i(163607),	-- Lucille's Sewing Needle (TOY!)
 				},
@@ -1143,7 +1146,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 48622, },	-- The Vanishing Lord
 				["provider"] = {"o",272179},	-- Mayor's Bulletin
-				["g"] = {
+				["groups"] = {
 					i(179385),	-- Neglected Luck Pendant (added in SL)
 				},
 			}),
@@ -1178,7 +1181,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 27.0, 57.9, DRUSTVAR },	-- Coordinates may vary slightly; the NPCs follow you when outside the cave.
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50481 },	-- In the Hall of the Drust King
-				["g"] = {
+				["groups"] = {
 					i(158064),	-- Greater Control Charm (QI!)
 				},
 				-- Awarded "Stick It To 'Em!" criteria & overall "Drust Do It." achievement.
@@ -1200,7 +1203,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					-- Definitely requires Hexecutioner; may not require others.  Needs confirmation.
 					-- Awarded "Storming the Manor" criteria.
 				},
-				["g"] = {
+				["groups"] = {
 					azeriteItem(155112),	-- Wickerwoven Robe
 					azeriteItem(155115),	-- Wickerwoven Amice
 					azeriteItem(155095),	-- Banisher Tunic
@@ -1226,14 +1229,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 27.4, 11.6, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 20,
-				["g"] = {
+				["groups"] = {
 					i(159156),	-- Sweete's Orders (QI!)
 				},
 			}),
 			q(48904, {	-- Take the Bait
 				["provider"] = { "n", 127558 },	-- Art Hughie
 				["coord"] = { 71.7, 50.4, DRUSTVAR },
-				["g"] = {
+				["groups"] = {
 					i(152865),	-- Snapclaw Meat (QI!)
 				},
 			}),
@@ -1249,7 +1252,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 45079 },	-- The Village of Glenbrook
 				-- Not required for "Drust Do It."
-				["g"] = {
+				["groups"] = {
 					i(155567),	-- Mr. Munchykins
 					i(155569),	-- Mayor Striggs
 					i(155565),	-- Trunksy
@@ -1267,7 +1270,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 48622 },	-- The Vanishing Lord
 				-- May have additional sourceQuests; needs confirmation.  Picked up after turning in "And Justice For All."
 				-- Not required for "Drust Do It."
-				["g"] = {
+				["groups"] = {
 					i(154875),	-- Mayor Striggs (QI!)
 					i(154894),	-- Mr. Munchykins (QI!)
 					i(154874),	-- Trunksy (QI!)
@@ -1278,7 +1281,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 50.6, 24.3, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 48804 },	-- Mistakes Were Made
-				["g"] = {
+				["groups"] = {
 					i(160262),	-- Relic of the Makers
 				},
 			}),
@@ -1296,7 +1299,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					47982,	-- The Final Effigy
 					48948,	-- The North Pass Caverns
 				},
-				["g"] = {
+				["groups"] = {
 					i(152677),	-- A Beginner's Guide to Archaeology (QI!)
 					i(152676),	-- Half-eaten Journal (QI!)
 					i(152685),	-- Is it a Rock? How to Identify Relics (QI!)
@@ -1308,7 +1311,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 48113, 48165, 48170 },	-- A Pungent Solution, Harmful If Swallowed, & Once Bitten, Twice Shy
 				-- Awarded "The Burden of Proof" criteria.
-				["g"] = {
+				["groups"] = {
 					i(155102),	-- Wickerwoven Gloves
 					i(155100),	-- Banisher Gloves
 					i(155103),	-- Crone-Seeker's Gloves
@@ -1327,7 +1330,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50457 },	-- Break on Through
 				["provider"] = {"o",281673},	-- Corlain Citizen's Journal
-				["g"] = { i(160109) },	-- The Fall of Corlain
+				["groups"] = { i(160109) },	-- The Fall of Corlain
 			}),
 			q(47982, {	-- The Final Effigy
 				["coord"] = { 55.8, 35.0, DRUSTVAR },
@@ -1335,7 +1338,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 47981 },	-- Cracking the Curse
 				["provider"] = {"o",278675},	-- Cursed Effigy
 				-- Awarded "The Final Effigy" criteria
-				["g"] = {
+				["groups"] = {
 					i(155109),	-- Wickerwoven Leggings
 					i(155111),	-- Banisher Breeches
 					i(155110),	-- Crone-Seeker's Legguards
@@ -1351,7 +1354,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 32.0, 30.9, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 49926 },	-- The Road to Corlain
-				["g"] = {
+				["groups"] = {
 					i(155163),	-- Rise-Breacher's Band
 					i(155156),	-- First-Watcher's Lantern
 					i(155155),	-- Waycrest Inquisitor's Shield
@@ -1375,7 +1378,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 61.9, 59.2, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 52074 },	-- Deliverance
-				["g"] = {
+				["groups"] = {
 					i(152394),	-- Runic Power Core (QI!)
 				},
 				-- Not required for "Drust Do It."
@@ -1385,7 +1388,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 23.2, 12.6, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50761 },	-- Blood in the Chapel
-				["g"] = {
+				["groups"] = {
 					i(158914),	-- Assassin's Orders (QI!)
 				},
 				-- Not required for "Drust Do It."
@@ -1418,7 +1421,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 42.5, 25.2, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 48945 },	-- The Ruins of Gol Var
-				["g"] = {
+				["groups"] = {
 					i(153053),	-- Tome of Silver and Ash (QI!)
 				},
 				-- Awarder "The Order of Embers" criteria.
@@ -1503,7 +1506,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					135902,	-- Bloodbough Fungalmancer
 					135901,	-- Bloodbough Funggarian
 				},
-				["g"] = {
+				["groups"] = {
 					i(159350),	-- Ashenwood Relic (QI!)
 				},
 			}),
@@ -1569,7 +1572,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["cr"] = 135541,	-- Bilgewater Incinerator
 				["coord"] = { 38.5, 35.5, DRUSTVAR },	-- General area where QS! can be looted
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(158928),	-- Bilgewater Patented Flamethrower (QI!)
 				},
 				-- Not required for "Drust Do It."
@@ -1592,7 +1595,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 50253 },	-- An Improvised Arsenal
 				["provider"] = {"o",288622},	-- Wanted Poster
 				-- Not required for "Drust Do It."
-				["g"] = {
+				["groups"] = {
 					i(160026),	-- Sister Lilias' Head (QI!)
 				},
 			}),
@@ -1621,7 +1624,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 				["lvl"] = 20,
 				["coord"] = { 37.51, 25.8, DRUSTVAR },
-				["g"] = {
+				["groups"] = {
 					i(160026),	-- Sister Lilias' Head (QI!)
 				},
 			}),
@@ -1675,7 +1678,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 31.4, 30.2, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50253 },	-- An Improvised Arsenal
-				["g"] = {
+				["groups"] = {
 					i(156926),	-- Witchrend (QI!)
 					i(158584),	-- Wickerwoven Sandals
 					i(158585),	-- Banisher Walkers

@@ -6,10 +6,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 		n(QUESTS, {
 			n(REWARDS, {
 				["description"] = "These pieces can be rewarded from covenant dailies in Korthia.",
-				["g"] = {
+				["groups"] = {
 					n(NIGHT_FAE, {
 						["customCollect"] = "SL_COV_NFA",	-- Night Fae
-						["g"] = {
+						["groups"] = {
 							-- Night Fae -- of the Twilight Grove -- Korthia Dailies
 							i(184956),	-- Drape of the Twilight Grove
 							i(184950),	-- Handwraps of the Twilight Grove
@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					}),
 					n(KYRIAN, {
 						["customCollect"] = "SL_COV_KYR",	-- Kyrian
-						["g"] = {
+						["groups"] = {
 							-- Kyrian -- Forsworn Aspirant's -- Korthia Dailies
 							i(184990),	-- Forsworn Aspirant's Drape
 							i(184985),	-- Forsworn Aspirant's Handwraps
@@ -40,7 +40,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					}),
 					n(NECROLORD, {
 						["customCollect"] = "SL_COV_NEC",	-- Necrolord
-						["g"] = {
+						["groups"] = {
 							-- Necrolord -- Rogue Necromancer's -- Korthia Dailies
 							i(185019),	-- Rogue Necromancer's Drape
 							i(185013),	-- Rogue Necromancer's Handwraps
@@ -55,7 +55,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					}),
 					n(VENTHYR, {
 						["customCollect"] = "SL_COV_VEN",	-- Venthyr
-						["g"] = {
+						["groups"] = {
 							-- Venthyr -- Radiant Court -- Korthia Dailies?
 							i(185073),	-- Radiant Court Cape
 							i(185076),	-- Radiant Court Leggings
@@ -108,7 +108,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["provider"] = { "n", 177141 },	-- Lady Moonberry
 					["coord"] = { 40.9, 66.2, ORIBOS },
 					["maps"] = { 2005 },	-- Ardenweald (Scenario Map)
-					["g"] = {
+					["groups"] = {
 						i(179498),	-- Faesworn Barb
 						i(179564),	-- Faesworn Channeling Root
 						i(179515),	-- Faesworn Falchion
@@ -177,7 +177,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 62.8, 24.9, KORTHIA },
-					["g"] =  {
+					["groups"] =  {
 						i(187438),	-- Anima Survey Notes (QI!)
 						i(187436),	-- Fauna of Korthia Report (QI!)
 						i(187437),	-- Keeper's Respite Defense Report (QI!)
@@ -189,7 +189,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 62.8, 24.9, KORTHIA },
 					["_drop"] = { "g" },	-- Anima Trash
-					["g"] = {
+					["groups"] = {
 						i(187543),	-- Death's Advance War Chest
 					},
 				}),
@@ -197,7 +197,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance (must be on quest)
 					["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
 					["coord"] = { 61.8, 25.6, KORTHIA },
-					["g"] = {
+					["groups"] = {
 						i(185754),	-- Devoured Anima (QI!)
 					},
 				}),
@@ -205,7 +205,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance (must be on quest)
 					["provider"] = { "n", 178844 },	-- Ta'nasi
 					["coord"] = { 64.6, 25.4, KORTHIA },
-					["g"] = {
+					["groups"] = {
 						i(186170),	-- Observational Record (QI!)
 					},
 				}),
@@ -213,7 +213,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance (must be on quest)
 					["provider"] = { "n", 179216 },	-- Mikanikos
 					["coord"] = { 61.4, 23.2, KORTHIA },
-					["g"] = {
+					["groups"] = {
 						i(187504),	-- Mikanikos' Restorative Contraption (QI!)
 					},
 				}),
@@ -227,7 +227,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 63848 },	-- A Show of Gratitude
 					["provider"] = { "n", 178470 },	-- Ve'nari
 					["coord"] = { 65.9, 23.0, KORTHIA },
-					["g"] = {
+					["groups"] = {
 						i(185966),	-- Ve'nari's Overstuffed Bag (QI!)
 					},
 				}),
@@ -251,7 +251,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 63810 },	-- Birds of a Feather
 					["provider"] = { "n", 177597 },	-- Danica the Reclaimer
 					["coord"] = { 67.2, 55.7, THE_MAW },
-					["g"] = {
+					["groups"] = {
 						i(185738),	-- Helwrought Seal (QI!)
 					},
 				}),
@@ -270,7 +270,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 63811 },	-- A Hate, Hate Relationship
 					["provider"] = { "n", 177726 },	-- Odyn
 					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (Scenario Map)
-					["g"] = {
+					["groups"] = {
 						i(185967),	-- Newly Forged Horn (QI!)
 					},
 				}),
@@ -296,7 +296,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 64014 },	-- Mawsplaining
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.8, 41.7, THE_MAW },
-					["g"] = {
+					["groups"] = {
 						i(186094),	-- Siphoning Device (QI!)
 					},
 				}),
@@ -358,7 +358,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 63710 },	-- The Anima Trail
 					["provider"] = { "n", 177452 },	-- Bonesmith Heirmir
 					["coord"] = { 34.9, 35.3, KORTHIA },
-					["g"] = {
+					["groups"] = {
 						i(185719),	-- Anima-Infused Bones (QI!)
 					},
 				}),
@@ -366,7 +366,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 63710 },	-- The Anima Trail
 					["provider"] = { "n", 177451 },	-- Tal-Galan
 					["coord"] = { 34.9, 35.3, KORTHIA },
-					["g"] = {
+					["groups"] = {
 						i(185716),	-- Cracked Record (QI!)
 						i(185921),	-- Matrix Beacon (QI!)
 					},
@@ -410,7 +410,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 63725 },	-- Into the Vault
 					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 63.0, 25.6, KORTHIA },
-					["g"] = {
+					["groups"] = {
 						i(187218, {	-- Tome of Origins (RECIPE!)
 							r(352439, {	-- Vestige of Origins (RECIPE!)
 								["requireSkill"] = BLACKSMITHING,
@@ -431,7 +431,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 63726 },	-- Untangling the Sigil
 					["provider"] = { "n", 177569 },	-- The Primus
 					["coord"] = { 50.2, 58.4, 1912 },	-- The Runecarver's Oubliette
-					["g"] = {
+					["groups"] = {
 						i(185965),	-- Memories of Sunless Skies (CI!)
 					},
 				}),
@@ -446,7 +446,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 63612 },	-- The Chains of Command
 					["provider"] = { "n", 177586 },	-- Baroness Draka
 					["coord"] = { 62.8, 66.0, THE_MAW },
-					["g"] = {
+					["groups"] = {
 						i(185742),	-- Mawsworn Chains (QI!)
 					},
 				}),
@@ -459,7 +459,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 63612 },	-- The Chains of Command
 					["provider"] = { "n", 177589 },	-- Thrall
 					["coord"] = { 62.8, 66.0, THE_MAW },
-					["g"] = {
+					["groups"] = {
 						i(185772),	-- Dra'gora (QI!)
 					},
 				}),
@@ -510,7 +510,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 63659 },	-- Dreadlords!
 					["provider"] = { "n", 177194 },	-- The Primus
 					["coord"] = { 62.8, 26.2, KORTHIA },
-					["g"] = {
+					["groups"] = {
 						i(185762),	-- The Unseen Guests Among Us (QI!)
 					},
 				}),
@@ -518,7 +518,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 63644 },	-- Dread Tidings
 					["provider"] = { "n", 168898 },	-- Prince Renathal
 					["coord"] = { 22.9, 43.7, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(185762),	-- The Unseen Guests Among Us (QI!)
 					},
 				}),
@@ -536,7 +536,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 63647 },	-- The Unseen Guests
 					["provider"] = { "n", 177637 },	-- Baroness Vashj
 					["coord"] = { 36.0, 22.4, REVENDRETH },
-					["g"] = {
+					["groups"] = {
 						i(185734),	-- Orb of Revelation (QI!)
 					},
 				}),
@@ -552,7 +552,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 63650 },	-- De-Infiltration
 					["provider"] = { "n", 178260 },	-- The Stonewright
 					["coord"] = { 54.6, 40.3, SINFALL_REACHES },
-					["g"] = {
+					["groups"] = {
 						i(185917),	-- Transcribed Infernal Cryptograms (QI!)
 						i(185918),	-- Translated Cryptograms
 					},
@@ -561,7 +561,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 63650 },	-- De-Infiltration
 					["provider"] = { "n", 158653 },	-- Prince Renathal
 					["coord"] = { 51.3, 38.1, SINFALL_REACHES },
-					["g"] = {
+					["groups"] = {
 						i(185734),	-- Orb of Revelation (QI!)
 					},
 				}),
@@ -625,7 +625,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 63674 },	-- By Your Leave
 					["provider"] = { "n", 177435 },	-- Khaliiq
 					["coord"] = { 52.8, 68.6, MALDRAXXUS },
-					["g"] = {
+					["groups"] = {
 						i(185773),	-- Token of Baron Kel'Thuzad's Favor (QI!)
 					},
 				}),
@@ -633,7 +633,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 63674 },	-- By Your Leave
 					["provider"] = { "n", 177435 },	-- Khaliiq
 					["coord"] = { 52.8, 68.6, MALDRAXXUS },
-					["g"] = {
+					["groups"] = {
 						i(185761),	-- A Crumpled Subversive Pamphlet (QI!)
 						i(185767),	-- A Folded Missive (QI!)
 						i(185768),	-- A Half-burned Scroll (QI!)
@@ -694,7 +694,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 64042 },	-- Rituals of Night
 					["provider"] = { "n", 177434 },	-- Ysera
 					["coord"] = { 45.3, 64.8, ARDENWEALD },
-					["g"] = {
+					["groups"] = {
 						i(182171),	-- Hippogryph Soul (SS!)
 					},
 				}),
@@ -726,7 +726,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						1967,	-- TG106_Floor
 						1969,	-- TG108_Floor
 					},
-					["g"] = {
+					["groups"] = {
 						i(185680),	-- Remnant of Justice (QI!)
 						i(185679),	-- Attuned Shard (QI!)
 					},
@@ -776,7 +776,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 63586 },	-- Compassion in Devotion
 					["provider"] = { "n", 177123 },	-- Kleia
 					["coord"] = { 24.2, 30.0, BASTION },
-					["g"] = {
+					["groups"] = {
 						i(185853),	-- Tainted Centurion Core (QI!)
 					},
 				}),
@@ -863,7 +863,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["provider"] = { "n", 179978 },	-- The Accuser
 					["coord"] = { 23.1, 45.9, REVENDRETH },
 					["customCollect"] = "SL_COV_VEN",	-- Venthyr
-					["g"] = {
+					["groups"] = {
 						i(187124),	-- Medallion of Wrath (QI!)
 					},
 				}),
@@ -903,7 +903,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				},
 				["provider"] = { "n", 178694 },	-- Scholar Roh-Suir
 				["coord"] = { 59.0, 58.1, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186101),	-- Interrogator's Key (QI!)
 				},
 			}),
@@ -916,7 +916,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 63732 },	-- Interrupt the Interrogations
 				["provider"] = { "n", 178713 },	-- Archivist Roh-Dahl
 				["coord"] = { 58.9, 58.1, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(185760),	-- Lodestaff Handle (QI!)
 					i(185735),	-- Lodestaff Head (QI!)
 					i(185759),	-- Lodestaff Shaft (QI!)
@@ -929,7 +929,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				},
 				["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
 				["coord"] = { 39.4, 51.3, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186157),	-- Lodestaff (QI!)
 				},
 			}),
@@ -979,7 +979,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 63755 },	-- A Matter of Urgency
 				["provider"] = { "i", 185915 },	-- Korthian Artifact
 				["crs"] = { 177204 },	-- Mawsworn Interrogator
-				["g"] = {
+				["groups"] = {
 					i(185831),	-- Axe of Storms (QI!)
 					i(185771),	-- Fatescribe's Implement (QI!)
 					i(185827),	-- Korthian Scrollcase (QI!)
@@ -998,7 +998,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 63759 },	-- Redirect the Search
 				["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
 				["coord"] = { 56.9, 22.3, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(185828),	-- Fatescribe's Implement (QI!)
 				},
 			}),
@@ -1006,7 +1006,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 63760 },	-- Echoes of Fate
 				["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
 				["coord"] = { 56.5, 17.4, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(185847),	-- Fatescribe's Implement (QI!)
 				},
 			}),
@@ -1030,7 +1030,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					{ 62.7, 22.5, KORTHIA },
 					{ 61.6, 21.8, KORTHIA },
 				},
-				["g"] = {
+				["groups"] = {
 					i(185636),	-- The Archivist's Codex
 					i(185916),	-- Codex of Memories (QI!)
 				},
@@ -1048,7 +1048,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					{ 39.8, 47.6, 2007 },	-- Gromit Hollow
 					{ 27.2, 56.8, KORTHIA },
 				},
-				["g"] = {
+				["groups"] = {
 					i(187206),	-- Book of Binding: The Mad Witch (QI!)
 					i(185971),	-- Crimson Pages (QI!)
 				},
@@ -1057,7 +1057,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64506 },	-- What Must Be Found
 				["provider"] = { "o", 369257 },	-- Celestial Shadowlands Chart
 				["coord"] = { 45.5, 56.0, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(185757),	-- Afterlife Navigation Research (QI!)
 					i(187201),	-- Celestial Shadowlands Chart (QI!)
 				},
@@ -1067,7 +1067,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64506 },	-- What Must Be Found
 				["provider"] = { "i", 187055 },	-- Pouch of Rune Chits
 				["cost"] = { { "i", 185962, 20 } },    -- 20x Rune Chit
-				["g"] = {
+				["groups"] = {
 					i(187154),	-- Ancient Korthian Runes (TOY!)
 					i(185963),	-- Diviner's Rune Chit (QI!)
 					i(185962),	-- Rune Chit (QI!)
@@ -1077,7 +1077,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64506 },	-- What Must Be Found
 				["provider"] = { "o", 369254 },	-- Singing Steel Ingot
 				["coord"] = { 62.1, 56.8, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(187200),	-- Singing Steel Ingot (QI!)
 				},
 			}),
@@ -1085,7 +1085,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64506 },	-- What Must Be Found
 				["provider"] = { "o", 368302 },	-- Talisman of the Eternal Scholar
 				["coord"] = { 40.6, 41.3, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(185914),	-- Damaged Talisman (QI!)
 				},
 			}),
@@ -1094,7 +1094,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64506 },	-- What Must Be Found
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.7, 22.5, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(187863),	-- Key of Ephemera (QI!)
 				},
 			}),
@@ -1107,7 +1107,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64511 },	-- Missing Relics
 				["provider"] = { "i", 187119 },	-- Ring of Self Reflection
 				["coord"] = { 43.8, 76.9, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(187140),	-- Ring of Duplicity (TOY!)
 				},
 			}),
@@ -1120,7 +1120,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64511 },	-- Missing Relics
 				["provider"] = { "i", 187047 },	-- Guise of the Changeling
 				["coord"] = { 41.2, 43.2, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(187155),	-- Guise of the Changeling (TOY!)
 				},
 			}),
@@ -1135,7 +1135,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["coord"] = { 52.3, 34.0, KORTHIA },
 				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
 				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 3 },	-- Tier 3
-				["g"] = {
+				["groups"] = {
 					i(187204),	-- Drum of the Death Loa (QI!)
 				},
 			}),
@@ -1150,7 +1150,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["coord"] = { 55.3, 28.6, KORTHIA },
 				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
 				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 3 },	-- Tier 3
-				["g"] = {
+				["groups"] = {
 					i(187205),	-- Sack of Strange Soil (QI!)
 				},
 			}),
@@ -1170,7 +1170,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64526 },	-- Mysterious Rifts
 				["provider"] = { "n", 179956 },	-- Blue Book
 				["coord"] = { 60.8, 34.8, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(187117),	-- Azure Pages (QI!)
 					i(187210),	-- Book of Binding: The Tormented Sorcerer (QI!)
 				},
@@ -1179,7 +1179,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64526 },	-- Mysterious Rifts
 				["provider"] = { "n", 179922 },	-- Cipher of Understanding
 				["coord"] = { 28.9, 54.2, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(187203),	-- Cipher of Understanding (QI!)
 				},
 			}),
@@ -1187,7 +1187,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64526 },	-- Mysterious Rifts
 				["provider"] = { "n", 179968 },	-- Enigmatic Decrypting Device
 				["coord"] = { 51.9, 52.6, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(187207),	-- Enigmatic Decrypting Device (QI!)
 				},
 			}),
@@ -1195,7 +1195,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64526 },	-- Mysterious Rifts
 				["provider"] = { "n", 179902 },	-- Unstable Sin'dorei Explosive
 				["coord"] = { 51.4, 20.1, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(187202),	-- Unstable Explosive Orb (QI!)
 				},
 			}),
@@ -1210,7 +1210,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64532 },	-- The Final Relics
 				["provider"] = { "o", 368438 },	-- Glowing Shield
 				["coord"] = { 18.5, 38.0, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186014),	-- Bulwark of Divine Intent (QI!)
 				},
 			}),
@@ -1219,7 +1219,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64532 },	-- The Final Relics
 				["provider"] = { "o", 369342 },	-- Pandaren Wood Carving
 				["coord"] = { 24.3, 56.6, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(187209),	-- Lang Family Wood-Carving (QI!)
 				},
 			}),
@@ -1228,7 +1228,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64532 },	-- The Final Relics
 				["provider"] = { "o", 369319 },	-- Shadow Slicing Shortsword
 				["coord"] = { 39.4, 42.6, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(187208),	-- Shadow Slicing Shortsword (QI!)
 					i(187159),	-- Shadow Slicing Shortsword (TOY!)
 				},
@@ -1253,7 +1253,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					{ 62.7, 22.5, KORTHIA },
 					{ 61.6, 21.8, KORTHIA },
 				},
-				["g"] = {
+				["groups"] = {
 					i(186664),	-- Korthian Caretaker's Sandals
 					i(186665),	-- Korthian Caretaker's Mitts
 					i(186734),	-- Shardhide Leather Treads
@@ -1274,7 +1274,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "i", 187283 },	-- Gravewing Crystal
 				["coord"] = { 46.3, 79.7, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186479),	-- Mastercraft Gravewing (MOUNT!)
 				},
 			})),
@@ -1288,7 +1288,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "i", 187282 },	-- Intact Aquilon Core
 				["coord"] = { 46.9, 35.1, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186483),	-- Forsworn Aquilon (MOUNT!)
 				},
 			})),
@@ -1336,13 +1336,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["provider"] = { "n", 177927 },	-- Tal-Galan
 				["coord"] = { 62.7, 24.8, KORTHIA },
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(186196, {	-- Death's Advance War Chest
 						["sym"] = {
 							{ "select", "itemID", 187187 },	-- select "Korthian Armaments"
 							{ "pop" },						-- pop the Item itself
 						},
-						["g"] = {
+						["groups"] = {
 							i(187506),	-- Condensed Anima Sphere
 						},
 					}),
@@ -1361,7 +1361,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "i", 187281 },	-- Wilderling Saddle
 				["coord"] = { 33.1, 39.5, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186492),	-- Summer Wilderling (MOUNT!)
 				},
 			})),
@@ -1404,7 +1404,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 179134 },	-- Pelagos
 				["coord"] = { 61.7, 24.0, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(185750),	-- Shrine Offering (QI!)
 				},
 			}),
@@ -1412,7 +1412,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
 				["coord"] = { 61.8, 25.6, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(185754),	-- Devoured Anima (QI!)
 				},
 			}),
@@ -1420,7 +1420,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178802 },	-- Messenger Mnemis
 				["coord"] = { 61.4, 22.4, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186164),	-- Stolen Message (QI!)
 				},
 			}),
@@ -1433,7 +1433,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "o", 368772 },	-- Sigilscored Scroll
 				["coord"] = { 64.7, 25.6, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(187239),	-- Mature Ossified Beak (QI!)
 				},
 			}),
@@ -1441,7 +1441,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "o", 368772 },	-- Sigilscored Scroll
 				["coord"] = { 64.7, 25.6, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186245),	-- Substantial Amount of Devourer Blood (QI!)
 				},
 			}),
@@ -1459,7 +1459,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "o", 368772 },	-- Sigilscored Scroll
 				["coord"] = { 64.7, 25.6, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(187238),	-- Heavy Spiked Hide (QI!)
 				},
 			}),
@@ -1498,7 +1498,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 179082 },	-- Tal-Rahl
 				["coord"] = { 64.1, 23.0, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(185746),	-- Stolen Cryptograph (QI!)
 				},
 			}),
@@ -1506,7 +1506,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178797 },	-- Sika
 				["coord"] = { 61.7, 23.9, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186166),	-- Devoured Anima (QI!)
 				},
 			}),
@@ -1514,7 +1514,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178841 },	-- Hunt-Captain Korayn
 				["coord"] = { 60.9, 21.7, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186474),	-- Korayn's Javelin (QI!)
 				},
 			}),
@@ -1527,7 +1527,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 179221 },	-- Rendle
 				["coord"] = { 61.6, 26.0, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186690),	-- Gold Filled Barrel
 					i(186680),	-- Gold Filled Boot
 					i(186705),	-- Gold Filled Chalice
@@ -1549,7 +1549,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 63727 },	-- The Primus Returns
 				["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
 				["coord"] = { 60.5, 27.7, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186456),	-- Gromit Foot (QI!)
 					i(186457),	-- Razorwing Spine (QI!)
 					i(186455),	-- Shardhide Talon (QI!)
@@ -1560,7 +1560,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178795 },	-- Nadjia the Mistblade
 				["coord"] = { 61.8, 25.1, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(185752),	-- Mawsworn Battle Plans (QI!)
 				},
 			}),
@@ -1568,7 +1568,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178799 },	-- Arios Riftbearer
 				["coord"] = { 61.5, 23.5, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(185753),	-- Mawsworn Grimoire (QI!)
 				},
 			}),
@@ -1576,7 +1576,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178805 },	-- Emeni
 				["coord"] = { 59.9, 27.0, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186095),	-- Gromit Teeth (QI!)
 				},
 			}),
@@ -1584,7 +1584,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178844 },	-- Ta'nasi
 				["coord"] = { 64.6, 25.4, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(185758),	-- Observational Record (QI!)
 				},
 			}),
@@ -1592,7 +1592,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178844 },	-- Ta'nasi
 				["coord"] = { 64.6, 25.4, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186168),	-- Observational Record (QI!)
 				},
 			}),
@@ -1600,7 +1600,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178844 },	-- Ta'nasi
 				["coord"] = { 64.6, 25.4, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186169),	-- Observational Record (QI!)
 				},
 			}),
@@ -1608,7 +1608,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178844 },	-- Ta'nasi
 				["coord"] = { 64.6, 25.4, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186170),	-- Observational Record (QI!)
 				},
 			}),
@@ -1616,7 +1616,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178844 },	-- Ta'nasi
 				["coord"] = { 64.6, 25.4, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186172),	-- Observational Record (QI!)
 				},
 			}),
@@ -1624,7 +1624,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178844 },	-- Ta'nasi
 				["coord"] = { 64.6, 25.4, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186171),	-- Observational Record (QI!)
 				},
 			}),
@@ -1637,7 +1637,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 179194 },	-- Kleia
 				["coord"] = { 61.6, 24.1, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186445),	-- Mikanikos' Restorative Contraption (QI!)
 				},
 			}),
@@ -1645,7 +1645,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 63727 },	-- The Primus Returns
 				["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
 				["coord"] = { 60.5, 27.6, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					ach(15056),	-- Friend of Bloop
 					i(187000),	-- Pattern: Elusive Pet Treat (RECIPE!)
 				},
@@ -1654,7 +1654,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 63727 },	-- The Primus Returns
 				["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
 				["coord"] = { 60.5, 27.6, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					ach(15055),	-- Friend of Ooz
 					i(187000),	-- Pattern: Elusive Pet Treat (RECIPE!)
 				},
@@ -1663,7 +1663,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 63727 },	-- The Primus Returns
 				["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
 				["coord"] = { 60.5, 27.6, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					ach(15057),	-- Friend of Plaguey
 					i(187000),	-- Pattern: Elusive Pet Treat (RECIPE!)
 				},
@@ -1672,7 +1672,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178842 },	-- Zayhad, The Builder
 				["coord"] = { 60.9, 21.3, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186165),	-- Residual Anima (QI!)
 				},
 			}),
@@ -1680,7 +1680,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 179134 },	-- Pelagos
 				["coord"] = { 61.7, 24.0, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186672),	-- Ephemeral Wings (QI!)
 				},
 			}),
@@ -1688,7 +1688,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178837 },	-- Lord Herne
 				["coord"] = { 61.3, 21.3, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186105),	-- Razorwing Talons (QI!)
 				},
 			}),
@@ -1700,7 +1700,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				},
 				["timeline"] = { ADDED_9_1_5 },
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(188740),	-- Korthian Repository (QI!)
 				},
 			}),
@@ -1708,7 +1708,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178845 },	-- Ve'lonu
 				["coord"] = { 64.6, 25.4, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186167),	-- Sealed Container (QI!)
 				},
 			}),
@@ -1716,7 +1716,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178845 },	-- Ve'lonu
 				["coord"] = { 64.6, 25.4, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186173),	-- Sealed Container (QI!)
 				},
 			}),
@@ -1724,7 +1724,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178845 },	-- Ve'lonu
 				["coord"] = { 64.6, 25.4, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186175),	-- Sealed Container (QI!)
 				},
 			}),
@@ -1732,7 +1732,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178845 },	-- Ve'lonu
 				["coord"] = { 64.6, 25.4, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(185763),	-- Sealed Container (QI!)
 				},
 			}),
@@ -1740,15 +1740,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178845 },	-- Ve'lonu
 				["coord"] = { 64.6, 25.4, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186174),	-- Sealed Container (QI!)
-				}
+				},
 			}),
 			q(63780, {	-- See How THEY Like It!
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178838 },	-- Lady Moonberry
 				["coord"] = { 61.2, 21.2, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(185751),	-- Mawsworn Emblem (QI!)
 				},
 			}),
@@ -1761,7 +1761,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 179218 },	-- Theotar
 				["coord"] = { 61.6, 25.7, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(187353),	-- Experimental Tea (QI!)
 				},
 			}),
@@ -1769,7 +1769,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 179214 },	-- Bonesmith Heirmir
 				["coord"] = { 63.3, 25.2, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186458),	-- Scrap Metal (QI!)
 				},
 			}),
@@ -1787,7 +1787,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 179218 },	-- Theotar
 				["coord"] = { 61.6, 25.7, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186486),	-- Korthian Herbs (QI!)
 				},
 			}),
@@ -1805,7 +1805,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178839 },	-- Dreamweaver
 				["coord"] = { 61.4, 21.4, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186561),	-- Korthian Treat (QI!)
 				},
 			}),
@@ -1818,7 +1818,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178840 },	-- Niya
 				["coord"] = { 61.1, 21.2, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(185749),	-- Plundered Anima (QI!)
 				},
 			}),
@@ -1826,7 +1826,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 179216 },	-- Mikanikos
 				["coord"] = { 61.4, 23.2, KORTHIA },
-				["g"] = {
+				["groups"] = {
 					i(186448),	-- Mikanikos' Restorative Contraption (QI!)
 				},
 			}),

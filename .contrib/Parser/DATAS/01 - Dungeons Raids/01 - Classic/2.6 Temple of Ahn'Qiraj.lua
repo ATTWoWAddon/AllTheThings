@@ -60,13 +60,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8667, {	-- Genesis Helm
 						["qg"] = 15502,	-- Andorgos
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20930, 1 },	-- Vek'lor's Diadem
 							{ "i", 20879, 2 },	-- Idol of Life
 							{ "i", 20859, 5 },	-- Gold Scarab
 							{ "i", 20863, 5 },	-- Clay Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21353),	-- Genesis Helm
 						},
@@ -74,13 +74,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8669, {	-- Genesis Shoulderpads
 						["qg"] = 15502,	-- Andorgos
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
 							{ "i", 20881, 2 },	-- Idol of Strife
 							{ "i", 20859, 5 },	-- Gold Scarab
 							{ "i", 20864, 5 },	-- Bone Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21354),	-- Genesis Shoulderpads
 						},
@@ -88,13 +88,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8666, {	-- Genesis Vest
 						["qg"] = 15504,	-- Vethsera
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20933, 1 },	-- Husk of the Old God
 							{ "i", 20878, 2 },	-- Idol of Rebirth
 							{ "i", 20861, 5 },	-- Bronze Scarab
 							{ "i", 20865, 5 },	-- Ivory Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21357),	-- Genesis Vest
 						},
@@ -102,13 +102,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8668, {	-- Genesis Trousers
 						["qg"] = 15503,	-- Kandrostrasz
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20931, 1 },	-- Skin of the Great Sandworm
 							{ "i", 20882, 2 },	-- Idol of War
 							{ "i", 20858, 5 },	-- Stone Scarab
 							{ "i", 20862, 5 },	-- Crystal Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21356),	-- Genesis Trousers
 						},
@@ -116,13 +116,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8665, {	-- Genesis Boots
 						["qg"] = 15503,	-- Kandrostrasz
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
 							{ "i", 20878, 2 },	-- Idol of Rebirth
 							{ "i", 20858, 5 },	-- Stone Scarab
 							{ "i", 20860, 5 },	-- Silver Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21355),	-- Genesis Boots
 						},
@@ -132,13 +132,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8657, {	-- Striker's Diadem
 						["qg"] = 15502,	-- Andorgos
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20930, 1 },	-- Vek'lor's Diadem
 							{ "i", 20881, 2 },	-- Idol of Strife
 							{ "i", 20861, 5 },	-- Bronze Scarab
 							{ "i", 20865, 5 },	-- Ivory Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21366),	-- Striker's Diadem
 						},
@@ -146,13 +146,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8659, {	-- Striker's Pauldrons
 						["qg"] = 15502,	-- Andorgos
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20928, 1 },	-- Qiraji Bindings of Command
 							{ "i", 20882, 2 },	-- Idol of War
 							{ "i", 20862, 5 },	-- Crystal Scarab
 							{ "i", 20865, 5 },	-- Ivory Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21367),	-- Striker's Pauldrons
 						},
@@ -160,13 +160,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8656, {	-- Striker's Hauberk
 						["qg"] = 15504,	-- Vethsera
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20929, 1 },	-- Carapace of the Old God
 							{ "i", 20879, 2 },	-- Idol of Life
 							{ "i", 20859, 5 },	-- Gold Scarab
 							{ "i", 20863, 5 },	-- Clay Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21370),	-- Striker's Hauberk
 						},
@@ -174,13 +174,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8658, {	-- Striker's Leggings
 						["qg"] = 15503,	-- Kandrostrasz
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20931, 1 },	-- Skin of the Great Sandworm
 							{ "i", 20874, 2 },	-- Idol of the Sun
 							{ "i", 20860, 5 },	-- Silver Scarab
 							{ "i", 20864, 5 },	-- Bone Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21368),	-- Striker's Leggings
 						},
@@ -188,13 +188,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8626, {	-- Striker's Footguards
 						["qg"] = 15503,	-- Kandrostrasz
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20928, 1 },	-- Qiraji Bindings of Command
 							{ "i", 20879, 2 },	-- Idol of Life
 							{ "i", 20858, 5 },	-- Stone Scarab
 							{ "i", 20864, 5 },	-- Bone Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21365),	-- Striker's Footguards
 						},
@@ -204,13 +204,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8632, {	-- Enigma Circlet
 						["qg"] = 15502,	-- Andorgos
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20926, 1 },	-- Vek'nilash's Circlet
 							{ "i", 20875, 2 },	-- Idol of Night
 							{ "i", 20861, 5 },	-- Bronze Scarab
 							{ "i", 20865, 5 },	-- Ivory Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21347),	-- Enigma Circlet
 						},
@@ -218,13 +218,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8625, {	-- Enigma Shoulderpads
 						["qg"] = 15502,	-- Andorgos
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
 							{ "i", 20876, 2 },	-- Idol of Death
 							{ "i", 20858, 5 },	-- Stone Scarab
 							{ "i", 20861, 5 },	-- Bronze Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21345),	-- Enigma Shoulderpads
 						},
@@ -232,13 +232,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8633, {	-- Enigma Robes
 						["qg"] = 15504,	-- Vethsera
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20933, 1 },	-- Husk of the Old God
 							{ "i", 20874, 2 },	-- Idol of the Sun
 							{ "i", 20859, 5 },	-- Gold Scarab
 							{ "i", 20863, 5 },	-- Clay Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21343),	-- Enigma Robes
 						},
@@ -246,13 +246,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8631, {	-- Enigma Leggings
 						["qg"] = 15503,	-- Kandrostrasz
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20927, 1 },	-- Ouro's Intact Hide
 							{ "i", 20877, 2 },	-- Idol of the Sage
 							{ "i", 20860, 5 },	-- Silver Scarab
 							{ "i", 20864, 5 },	-- Bone Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21346),	-- Enigma Leggings
 						},
@@ -260,13 +260,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8634, {	-- Enigma Boots
 						["qg"] = 15503,	-- Kandrostrasz
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
 							{ "i", 20874, 2 },	-- Idol of the Sun
 							{ "i", 20860, 5 },	-- Silver Scarab
 							{ "i", 20862, 5 },	-- Crystal Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21344),	-- Enigma Boots
 						},
@@ -276,13 +276,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8628, {	-- Avenger's Crown
 						["qg"] = 15502,	-- Andorgos
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20930, 1 },	-- Vek'lor's Diadem
 							{ "i", 20878, 2 },	-- Idol of Rebirth
 							{ "i", 20858, 5 },	-- Stone Scarab
 							{ "i", 20862, 5 },	-- Crystal Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21387),	-- Avenger's Crown
 						},
@@ -290,13 +290,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8630, {	-- Avenger's Pauldrons
 						["qg"] = 15502,	-- Andorgos
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
 							{ "i", 20879, 2 },	-- Idol of Life
 							{ "i", 20859, 5 },	-- Gold Scarab
 							{ "i", 20862, 5 },	-- Crystal Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21391),	-- Avenger's Pauldrons
 						},
@@ -304,13 +304,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8627, {	-- Avenger's Breastplate
 						["qg"] = 15504,	-- Vethsera
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20929, 1 },	-- Carapace of the Old God
 							{ "i", 20877, 2 },	-- Idol of the Sage
 							{ "i", 20860, 5 },	-- Silver Scarab
 							{ "i", 20864, 5 },	-- Bone Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21389),	-- Avenger's Breastplate
 						},
@@ -318,13 +318,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8629, {	-- Avenger's Legguards
 						["qg"] = 15503,	-- Kandrostrasz
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20931, 1 },	-- Skin of the Great Sandworm
 							{ "i", 20881, 2 },	-- Idol of Strife
 							{ "i", 20865, 5 },	-- Ivory Scarab
 							{ "i", 20861, 5 },	-- Bronze Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21390),	-- Avenger's Legguards
 						},
@@ -332,13 +332,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8655, {	-- Avenger's Greaves
 						["qg"] = 15503,	-- Kandrostrasz
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
 							{ "i", 20877, 2 },	-- Idol of the Sage
 							{ "i", 20861, 5 },	-- Bronze Scarab
 							{ "i", 20863, 5 },	-- Clay Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21388),	-- Avenger's Greaves
 						},
@@ -348,13 +348,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8592, {	-- Tiara of the Oracle
 						["qg"] = 15502,	-- Andorgos
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20926, 1 },	-- Vek'nilash's Circlet
 							{ "i", 20877, 2 },	-- Idol of the Sage
 							{ "i", 20860, 5 },	-- Silver Scarab
 							{ "i", 20864, 5 },	-- Bone Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21348),	-- Tiara of the Oracle
 						},
@@ -362,13 +362,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8594, {	-- Mantle of the Oracle
 						["qg"] = 15502,	-- Andorgos
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20928, 1 },	-- Qiraji Bindings of Command
 							{ "i", 20878, 2 },	-- Idol of Rebirth
 							{ "i", 20860, 5 },	-- Silver Scarab
 							{ "i", 20865, 5 },	-- Ivory Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21350),	-- Mantle of the Oracle
 						},
@@ -376,13 +376,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8603, {	-- Vestments of the Oracle
 						["qg"] = 15504,	-- Vethsera
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20933, 1 },	-- Husk of the Old God
 							{ "i", 20876, 2 },	-- Idol of Death
 							{ "i", 20858, 5 },	-- Stone Scarab
 							{ "i", 20862, 5 },	-- Crystal Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21351),	-- Vestments of the Oracle
 						},
@@ -390,13 +390,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8593, {	-- Trousers of the Oracle
 						["qg"] = 15503,	-- Kandrostrasz
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20927, 1 },	-- Ouro's Intact Hide
 							{ "i", 20879, 2 },	-- Idol of Life
 							{ "i", 20859, 5 },	-- Gold Scarab
 							{ "i", 20863, 5 },	-- Clay Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21352),	-- Trousers of the Oracle
 						},
@@ -404,13 +404,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8596, {	-- Footwraps of the Oracle
 						["qg"] = 15503,	-- Kandrostrasz
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20928, 1 },	-- Qiraji Bindings of Command
 							{ "i", 20876, 2 },	-- Idol of Death
 							{ "i", 20861, 5 },	-- Bronze Scarab
 							{ "i", 20859, 5 },	-- Gold Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21349),	-- Footwraps of the Oracle
 						},
@@ -420,13 +420,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8639, {	-- Deathdealer's Helm
 						["qg"] = 15502,	-- Andorgos
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20930, 1 },	-- Vek'lor's Diadem
 							{ "i", 20882, 2 },	-- Idol of War
 							{ "i", 20863, 5 },	-- Clay Scarab
 							{ "i", 20859, 5 },	-- Gold Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21360),	-- Deathdealer's Helm
 						},
@@ -434,13 +434,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8641, {	-- Deathdealer's Spaulders
 						["qg"] = 15502,	-- Andorgos
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20928, 1 },	-- Qiraji Bindings of Command
 							{ "i", 20874, 2 },	-- Idol of the Sun
 							{ "i", 20860, 5 },	-- Silver Scarab
 							{ "i", 20863, 5 },	-- Clay Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21361),	-- Deathdealer's Spaulders
 						},
@@ -448,13 +448,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8638, {	-- Deathdealer's Vest
 						["qg"] = 15504,	-- Vethsera
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20929, 1 },	-- Carapace of the Old God
 							{ "i", 20881, 2 },	-- Idol of Strife
 							{ "i", 20861, 5 },	-- Bronze Scarab
 							{ "i", 20865, 5 },	-- Ivory Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21364),	-- Deathdealer's Vest
 						},
@@ -462,13 +462,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8640, {	-- Deathdealer's Leggings
 						["qg"] = 15503,	-- Kandrostrasz
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20927, 1 },	-- Ouro's Intact Hide
 							{ "i", 20875, 2 },	-- Idol of Night
 							{ "i", 20858, 5 },	-- Stone Scarab
 							{ "i", 20862, 5 },	-- Crystal Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21362),	-- Deathdealer's Leggings
 						},
@@ -476,13 +476,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8637, {	-- Deathdealer's Boots
 						["qg"] = 15503,	-- Kandrostrasz
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20928, 1 },	-- Qiraji Bindings of Command
 							{ "i", 20881, 2 },	-- Idol of Strife
 							{ "i", 20862, 5 },	-- Crystal Scarab
 							{ "i", 20864, 5 },	-- Bone Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21359),	-- Deathdealer's Boots
 						},
@@ -492,13 +492,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8623, {	-- Stormcaller's Diadem
 						["qg"] = 15502,	-- Andorgos
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20930, 1 },	-- Vek'lor's Diadem
 							{ "i", 20878, 2 },	-- Idol of Rebirth
 							{ "i", 20858, 5 },	-- Stone Scarab
 							{ "i", 20862, 5 },	-- Crystal Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21372),	-- Stormcaller's Diadem
 						},
@@ -506,13 +506,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8602, {	-- Stormcaller's Pauldrons
 						["qg"] = 15502,	-- Andorgos
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
 							{ "i", 20879, 2 },	-- Idol of Life
 							{ "i", 20859, 5 },	-- Gold Scarab
 							{ "i", 20862, 5 },	-- Crystal Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21376),	-- Stormcaller's Pauldrons
 						},
@@ -520,13 +520,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8622, {	-- Stormcaller's Hauberk
 						["qg"] = 15504,	-- Vethsera
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20929, 1 },	-- Carapace of the Old God
 							{ "i", 20877, 2 },	-- Idol of the Sage
 							{ "i", 20860, 5 },	-- Silver Scarab
 							{ "i", 20864, 5 },	-- Bone Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21374),	-- Stormcaller's Hauberk
 						},
@@ -534,13 +534,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8624, {	-- Stormcaller's Leggings
 						["qg"] = 15503,	-- Kandrostrasz
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20931, 1 },	-- Skin of the Great Sandworm
 							{ "i", 20881, 2 },	-- Idol of Strife
 							{ "i", 20865, 5 },	-- Ivory Scarab
 							{ "i", 20861, 5 },	-- Bronze Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21375),	-- Stormcaller's Leggings
 						},
@@ -548,13 +548,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8621, {	-- Stormcaller's Footguards
 						["qg"] = 15503,	-- Kandrostrasz
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
 							{ "i", 20877, 2 },	-- Idol of the Sage
 							{ "i", 20861, 5 },	-- Bronze Scarab
 							{ "i", 20863, 5 },	-- Clay Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21373),	-- Stormcaller's Footguards
 						},
@@ -564,13 +564,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8662, {	-- Doomcaller's Circlet
 						["qg"] = 15502,	-- Andorgos
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20926, 1 },	-- Vek'nilash's Circlet
 							{ "i", 20876, 2 },	-- Idol of Death
 							{ "i", 20860, 5 },	-- Silver Scarab
 							{ "i", 20864, 5 },	-- Bone Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21337),	-- Doomcaller's Circlet
 						},
@@ -578,13 +578,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8664, {	-- Doomcaller's Mantle
 						["qg"] = 15502,	-- Andorgos
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
 							{ "i", 20877, 2 },	-- Idol of the Sage
 							{ "i", 20861, 5 },	-- Bronze Scarab
 							{ "i", 20864, 5 },	-- Bone Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21335),	-- Doomcaller's Mantle
 						},
@@ -592,13 +592,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8661, {	-- Doomcaller's Robes
 						["qg"] = 15504,	-- Vethsera
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20933, 1 },	-- Husk of the Old God
 							{ "i", 20875, 2 },	-- Idol of Night
 							{ "i", 20862, 5 },	-- Crystal Scarab
 							{ "i", 20858, 5 },	-- Stone Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21334),	-- Doomcaller's Robes
 						},
@@ -606,13 +606,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8663, {	-- Doomcaller's Trousers
 						["qg"] = 15503,	-- Kandrostrasz
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20931, 1 },	-- Skin of the Great Sandworm
 							{ "i", 20878, 2 },	-- Idol of Rebirth
 							{ "i", 20859, 5 },	-- Gold Scarab
 							{ "i", 20863, 5 },	-- Clay Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21336),	-- Doomcaller's Trousers
 						},
@@ -620,13 +620,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8660, {	-- Doomcaller's Footwraps
 						["qg"] = 15503,	-- Kandrostrasz
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
 							{ "i", 20875, 2 },	-- Idol of Night
 							{ "i", 20863, 5 },	-- Clay Scarab
 							{ "i", 20865, 5 },	-- Ivory Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21338),	-- Doomcaller's Footwraps
 						},
@@ -636,13 +636,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8561, {	-- Conqueror's Crown
 						["qg"] = 15502,	-- Andorgos
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20926, 1 },	-- Vek'nilash's Circlet
 							{ "i", 20874, 2 },	-- Idol of the Sun
 							{ "i", 20862, 5 },	-- Crystal Scarab
 							{ "i", 20858, 5 },	-- Stone Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21329),	-- Conqueror's Crown
 						},
@@ -650,13 +650,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8544, {	-- Conqueror's Spaulders
 						["qg"] = 15502,	-- Andorgos
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20928, 1 },	-- Qiraji Bindings of Command
 							{ "i", 20875, 2 },	-- Idol of Night
 							{ "i", 20863, 5 },	-- Clay Scarab
 							{ "i", 20858, 5 },	-- Stone Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21330),	-- Conqueror's Spaulders
 						},
@@ -664,13 +664,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8562, {	-- Conqueror's Breastplate
 						["qg"] = 15504,	-- Vethsera
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20929, 1 },	-- Carapace of the Old God
 							{ "i", 20882, 2 },	-- Idol of War
 							{ "i", 20860, 5 },	-- Silver Scarab
 							{ "i", 20864, 5 },	-- Bone Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21331),	-- Conqueror's Breastplate
 						},
@@ -678,13 +678,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8560, {	-- Conqueror's Legguards
 						["qg"] = 15503,	-- Kandrostrasz
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20927, 1 },	-- Ouro's Intact Hide
 							{ "i", 20876, 2 },	-- Idol of Death
 							{ "i", 20861, 5 },	-- Bronze Scarab
 							{ "i", 20865, 5 },	-- Ivory Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21332),	-- Conqueror's Legguards
 						},
@@ -692,13 +692,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					q(8559, {	-- Conqueror's Greaves
 						["qg"] = 15503,	-- Kandrostrasz
 						["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 20928, 1 },	-- Qiraji Bindings of Command
 							{ "i", 20882, 2 },	-- Idol of War
 							{ "i", 20865, 5 },	-- Ivory Scarab
 							{ "i", 20859, 5 },	-- Gold Scarab
 						},
+						["repeatable"] = true,
 						["groups"] = {
 							i(21333),	-- Conqueror's Greaves
 						},
@@ -767,8 +767,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				q(8766, {	-- The Changing of Paths - Conqueror No More
 					["qg"] = 15192,	-- Anachronos
 					["sourceQuest"] = 8756,	-- The Qiraji Conqueror
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["coord"] = ANACHRONOS_COORD,
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["cost"] = {
 						{ "i", 20864, 15 },	-- Bone Scarab
 						{ "i", 20865, 15 },	-- Ivory Scarab
@@ -787,8 +787,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				q(8765, {	-- The Changing of Paths - Invoker No More
 					["qg"] = 15192,	-- Anachronos
 					["sourceQuest"] = 8761,	-- The Grand Invoker
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["coord"] = ANACHRONOS_COORD,
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["cost"] = {
 						{ "i", 20861, 15 },	-- Bronze Scarab
 						{ "i", 20862, 15 },	-- Crystal Scarab
@@ -807,8 +807,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				q(8764, {	-- The Changing of Paths - Protector No More
 					["qg"] = 15192,	-- Anachronos
 					["sourceQuest"] = 8751,	-- The Protector of Kalimdor
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["coord"] = ANACHRONOS_COORD,
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["cost"] = {
 						{ "i", 20858, 15 },	-- Stone Scarab
 						{ "i", 20859, 15 },	-- Gold Scarab
@@ -826,13 +826,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				}),
 				q(8761, {	-- The Grand Invoker
 					["qg"] = 15192,	-- Anachronos
-					["sourceQuest"] = 8760,	-- The Path of the Invoker (4/4)
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
-					["coord"] = ANACHRONOS_COORD,
 					["altQuests"] = {
 						8756,	-- The Qiraji Conqueror
 						8751,	-- The Protector of Kalimdor
 					},
+					["sourceQuest"] = 8760,	-- The Path of the Invoker (4/4)
+					["coord"] = ANACHRONOS_COORD,
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
@@ -843,12 +843,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				}),
 				q(8752, {	-- The Path of the Conqueror (1/4)
 					["qg"] = 15192,	-- Anachronos
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-					["coord"] = ANACHRONOS_COORD,
 					["altQuests"] = {
 						8757,	-- The Path of the Invoker (1/4)
 						8747,	-- The Path of the Protector (1/4)
 					},
+					["coord"] = ANACHRONOS_COORD,
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
 					["lvl"] = 60,
 					["groups"] = {
 						i(21201),	-- Signet Ring of the Bronze Dragonflight
@@ -856,13 +856,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				}),
 				q(8753, {	-- The Path of the Conqueror (2/4)
 					["qg"] = 15192,	-- Anachronos
-					["sourceQuest"] = 8752,	-- The Path of the Conqueror (1/4)
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-					["coord"] = ANACHRONOS_COORD,
 					["altQuests"] = {
 						8758,	-- The Path of the Invoker (2/4)
 						8748,	-- The Path of the Protector (2/4)
 					},
+					["sourceQuest"] = 8752,	-- The Path of the Conqueror (1/4)
+					["coord"] = ANACHRONOS_COORD,
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
@@ -873,13 +873,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				}),
 				q(8754, {	-- The Path of the Conqueror (3/4)
 					["qg"] = 15192,	-- Anachronos
-					["sourceQuest"] = 8753,	-- The Path of the Conqueror (2/4)
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
-					["coord"] = ANACHRONOS_COORD,
 					["altQuests"] = {
 						8759,	-- The Path of the Invoker (3/4)
 						8749,	-- The Path of the Protector (3/4)
 					},
+					["sourceQuest"] = 8753,	-- The Path of the Conqueror (2/4)
+					["coord"] = ANACHRONOS_COORD,
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
@@ -890,13 +890,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				}),
 				q(8755, {	-- The Path of the Conqueror (4/4)
 					["qg"] = 15192,	-- Anachronos
-					["sourceQuest"] = 8754,	-- The Path of the Conqueror (3/4)
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
-					["coord"] = ANACHRONOS_COORD,
 					["altQuests"] = {
 						8760,	-- The Path of the Invoker (4/4)
 						8750,	-- The Path of the Protector (4/4)
 					},
+					["sourceQuest"] = 8754,	-- The Path of the Conqueror (3/4)
+					["coord"] = ANACHRONOS_COORD,
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
@@ -907,12 +907,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				}),
 				q(8757, {	-- The Path of the Invoker (1/4)
 					["qg"] = 15192,	-- Anachronos
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-					["coord"] = ANACHRONOS_COORD,
 					["altQuests"] = {
 						8752,	-- The Path of the Conqueror (1/4)
 						8747,	-- The Path of the Protector (1/4)
 					},
+					["coord"] = ANACHRONOS_COORD,
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
 					["lvl"] = 60,
 					["groups"] = {
 						i(21206),	-- Signet Ring of the Bronze Dragonflight
@@ -920,13 +920,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				}),
 				q(8758, {	-- The Path of the Invoker (2/4)
 					["qg"] = 15192,	-- Anachronos
-					["sourceQuest"] = 8757,	-- The Path of the Invoker (1/4)
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-					["coord"] = ANACHRONOS_COORD,
 					["altQuests"] = {
 						8753,	-- The Path of the Conqueror (2/4)
 						8748,	-- The Path of the Protector (2/4)
 					},
+					["sourceQuest"] = 8757,	-- The Path of the Invoker (1/4)
+					["coord"] = ANACHRONOS_COORD,
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
@@ -937,13 +937,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				}),
 				q(8759, {	-- The Path of the Invoker (3/4)
 					["qg"] = 15192,	-- Anachronos
-					["sourceQuest"] = 8758,	-- The Path of the Invoker (2/4)
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
-					["coord"] = ANACHRONOS_COORD,
 					["altQuests"] = {
 						8754,	-- The Path of the Conqueror (3/4)
 						8749,	-- The Path of the Protector (3/4)
 					},
+					["sourceQuest"] = 8758,	-- The Path of the Invoker (2/4)
+					["coord"] = ANACHRONOS_COORD,
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
@@ -954,13 +954,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				}),
 				q(8760, {	-- The Path of the Invoker (4/4)
 					["qg"] = 15192,	-- Anachronos
-					["sourceQuest"] = 8759,	-- The Path of the Invoker (3/4)
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
-					["coord"] = ANACHRONOS_COORD,
 					["altQuests"] = {
 						8755,	-- The Path of the Conqueror (4/4)
 						8750,	-- The Path of the Protector (4/4)
 					},
+					["sourceQuest"] = 8759,	-- The Path of the Invoker (3/4)
+					["coord"] = ANACHRONOS_COORD,
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
@@ -971,12 +971,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				}),
 				q(8747, {	-- The Path of the Protector (1/4)
 					["qg"] = 15192,	-- Anachronos
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-					["coord"] = ANACHRONOS_COORD,
 					["altQuests"] = {
 						8752,	-- The Path of the Conqueror (1/4)
 						8757,	-- The Path of the Invoker (1/4)
 					},
+					["coord"] = ANACHRONOS_COORD,
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
 					["lvl"] = 60,
 					["groups"] = {
 						i(21196),	-- Signet Ring of the Bronze Dragonflight
@@ -984,13 +984,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				}),
 				q(8748, {	-- The Path of the Protector (2/4)
 					["qg"] = 15192,	-- Anachronos
-					["sourceQuest"] = 8747,	-- The Path of the Protector (1/4)
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-					["coord"] = ANACHRONOS_COORD,
 					["altQuests"] = {
 						8753,	-- The Path of the Conqueror (2/4)
 						8758,	-- The Path of the Invoker (2/4)
 					},
+					["sourceQuest"] = 8747,	-- The Path of the Protector (1/4)
+					["coord"] = ANACHRONOS_COORD,
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
@@ -1001,13 +1001,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				}),
 				q(8749, {	-- The Path of the Protector (3/4)
 					["qg"] = 15192,	-- Anachronos
-					["sourceQuest"] = 8748,	-- The Path of the Protector (2/4)
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
-					["coord"] = ANACHRONOS_COORD,
 					["altQuests"] = {
 						8754,	-- The Path of the Conqueror (3/4)
 						8759,	-- The Path of the Invoker (3/4)
 					},
+					["sourceQuest"] = 8748,	-- The Path of the Protector (2/4)
+					["coord"] = ANACHRONOS_COORD,
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
@@ -1018,13 +1018,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				}),
 				q(8750, {	-- The Path of the Protector (4/4)
 					["qg"] = 15192,	-- Anachronos
-					["sourceQuest"] = 8749,	-- The Path of the Protector (3/4)
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
-					["coord"] = ANACHRONOS_COORD,
 					["altQuests"] = {
 						8755,	-- The Path of the Conqueror (4/4)
 						8760,	-- The Path of the Invoker (4/4)
 					},
+					["sourceQuest"] = 8749,	-- The Path of the Protector (3/4)
+					["coord"] = ANACHRONOS_COORD,
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
@@ -1035,13 +1035,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				}),
 				q(8751, {	-- The Protector of Kalimdor
 					["qg"] = 15192,	-- Anachronos
-					["sourceQuest"] = 8750,	-- The Path of the Protector (4/4)
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
-					["coord"] = ANACHRONOS_COORD,
 					["altQuests"] = {
 						8761,	-- The Grand Invoker
 						8756,	-- The Qiraji Conqueror
 					},
+					["sourceQuest"] = 8750,	-- The Path of the Protector (4/4)
+					["coord"] = ANACHRONOS_COORD,
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
@@ -1052,13 +1052,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				}),
 				q(8756, {	-- The Qiraji Conqueror
 					["qg"] = 15192,	-- Anachronos
-					["sourceQuest"] = 8755,	-- The Path of the Conqueror (4/4)
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
-					["coord"] = ANACHRONOS_COORD,
 					["altQuests"] = {
 						8761,	-- The Grand Invoker
 						8751,	-- The Protector of Kalimdor
 					},
+					["sourceQuest"] = 8755,	-- The Path of the Conqueror (4/4)
+					["coord"] = ANACHRONOS_COORD,
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight

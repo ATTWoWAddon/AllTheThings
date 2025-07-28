@@ -6,11 +6,11 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 		["lvl"] = 110,
 		["mapID"] = 903,
 		["coord"] = { 22.2, 55.9, EREDATH },
-		["g"] = {
+		["groups"] = {
 			n(TREASURES, {
 				o(277384, {	-- Abandoned Treasure
 					["isRepeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(152854),	-- Nethershorn Lantern
 					},
 				}),
@@ -45,13 +45,13 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						{ 51.5, 69.0, THE_VINDICAAR_EREDATH_UPPER },
 						{ 62.6, 39.4, EREDATH },
 					},
-					["g"] = { i(152205) },	-- Glowing key Fragment (QI!)
+					["groups"] = { i(152205) },	-- Glowing key Fragment (QI!)
 				}),
 				q(48271, {	-- Recovering the Pieces
 					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
 					["coord"] = { 56.9, 68.6, KROKUUN },
 					["sourceQuest"] = 48864,	-- The Broken Blacksmith
-					["g"] = {
+					["groups"] = {
 						i(152201),	-- Armory Key Fragment (QI!)
 					},
 				}),
@@ -59,7 +59,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
 					["coord"] = { 56.9, 68.6, KROKUUN },
 					["sourceQuest"] = 48864,	-- The Broken Blacksmith
-					["g"] = {
+					["groups"] = {
 						i(152200),	-- Dendrite Cluster (QI!)
 					},
 				}),
@@ -75,7 +75,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
 					["coord"] = { 56.9, 68.6, KROKUUN },
 					["sourceQuest"] = 48803,	-- Forging a Key to the Past
-					["g"] = {
+					["groups"] = {
 						iensemble(152241, {	-- Ensemble: Light-Woven Triumvirate Regalia
 							["description"] = "May require relogging to gain all appearances.",
 						}),
@@ -131,7 +131,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				})),
 				cr(122314, e(1982, {	-- L'ura
 					["crs"] = { 124729 },	-- L'ura
-					["g"] = {
+					["groups"] = {
 						ach(12007),	-- Heroic: Seat of the Triumvirate
 						i(153037),	-- Technique: Glyph of Dark Absolution (RECIPE!)
 					},
@@ -182,7 +182,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				})),
 				cr(122314, e(1982, {	-- L'ura
 					["crs"] = { 124729 },	-- L'ura
-					["g"] = {
+					["groups"] = {
 						i(151311),	-- Band of the Triumvirate
 						i(151302),	-- Cord of Unraveling Reality
 						i(151340),	-- Echo of L'ura

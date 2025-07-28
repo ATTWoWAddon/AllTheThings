@@ -21,8 +21,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 				q(28824, {	-- Wayward Child
 					["qg"] = 42465,	-- Therazane <The Stonemother>
-					["coord"] = { 56.3, 12.2, DEEPHOLM },
 					["sourceQuest"] = 26871,	-- A Rock Amongst Many
+					["coord"] = { 56.3, 12.2, DEEPHOLM },
 					["lvl"] = 82,
 					["groups"] = {
 						i(66897),	-- Crystal Shimmer Cloak

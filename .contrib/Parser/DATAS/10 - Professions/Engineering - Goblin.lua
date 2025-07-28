@@ -166,11 +166,11 @@ profession(ENGINEERING, {
 				q(3644, {	-- Membership Card Renewal
 					["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
 					["sourceQuest"] = 3639,	-- Show Your Work
-					["description"] = "Requires 200 Engineering to start this quest.",
 					["coord"] = { 54.4, 27.2, TANARIS },
-					["requireSkill"] = ENGINEERING,
-					["cost"] = { { "g", 20000 } },	-- 2g
+					["description"] = "Requires 200 Engineering to start this quest.",
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "g", 20000 } },	-- 2g
+					["requireSkill"] = ENGINEERING,
 					["repeatable"] = true,
 					["lvl"] = 30,
 					["groups"] = {
@@ -180,11 +180,11 @@ profession(ENGINEERING, {
 				q(3646, {	-- Membership Card Renewal
 					["qg"] = 8738,	-- Vazario Linkgrease <Goblin Engineering Trainer>
 					["sourceQuest"] = 3639,	-- Show Your Work
-					["description"] = "Requires 200 Engineering to start this quest.",
 					["coord"] = { 62.6, 36.2, THE_BARRENS },
-					["requireSkill"] = ENGINEERING,
-					["cost"] = { { "g", 20000 } },	-- 2g
+					["description"] = "Requires 200 Engineering to start this quest.",
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "g", 20000 } },	-- 2g
+					["requireSkill"] = ENGINEERING,
 					["repeatable"] = true,
 					["lvl"] = 30,
 					["groups"] = {

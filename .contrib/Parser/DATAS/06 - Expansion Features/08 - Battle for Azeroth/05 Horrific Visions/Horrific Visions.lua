@@ -36,7 +36,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 		["maps"] = {
 			REPAIRED_CHAMBER_OF_HEART,
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(14173),	-- A Mountain of Mementos
 				ach(14172),	-- A Monumental Amount of Mementos
@@ -49,14 +49,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						14141,	-- Solo Nightmares - Stormwind
 						14142,	-- Solo Nightmares - Orgrimmar
 					}},
-					["g"] = { title(419) },	-- <Name>, the Faceless One
+					["groups"] = { title(419) },	-- <Name>, the Faceless One
 				})),
 				ach(14143, {	-- Reeking of Visions
 					["sym"] = {{"meta_achievement",
 						14065,	-- The Even More Horrific Vision of Orgrimmar
 						14064,	-- The Even More Horrific Vision of Stormwind
 					}},
-					["g"] = { i(174463) },	-- Reek (PET!)
+					["groups"] = { i(174463) },	-- Reek (PET!)
 				}),
 				ach(14169),	-- Symphony of Masks
 				ach(14165),	-- Masked Soliloquy
@@ -70,7 +70,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						14060,	-- Unwavering Resolve
 						14061,	-- We Have the Technology
 					}},
-					["g"] = { i(174654) },	-- Black Serpent of N'Zoth (MOUNT!)
+					["groups"] = { i(174654) },	-- Black Serpent of N'Zoth (MOUNT!)
 				}),
 				ach(14060),	-- Unwavering Resolve
 				ach(14061),	-- We Have the Technology
@@ -88,39 +88,39 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 					HORRIFIC_ORGRIMMAR,
 					HORRIFIC_STORMWIND,
 				},
-				["g"] = {
+				["groups"] = {
 					q(58314, {	-- Mask of the Burned Bridge
-						["description"] = "Obtained from completing the Valley of Wisdom objective with one mask active.",
 						["provider"] = { "i", 174083 },	-- Faceless Mask of the Burned Bridge
-						["g"] = {
+						["description"] = "Obtained from completing the Valley of Wisdom objective with one mask active.",
+						["groups"] = {
 							i(174342),	-- Mask of the Burned Bridge
 						},
 					}),
 					q(58297, {	-- Mask of the Daredevil
-						["description"] = "Obtained from completing the Valley of Honor objective with one mask active.",
 						["provider"] = { "i", 174082 },	-- Faceless Mask of the Daredevil
-						["g"] = {
+						["description"] = "Obtained from completing the Valley of Honor objective with one mask active.",
+						["groups"] = {
 							i(173955),	-- Mask of the Daredevil
 						},
 					}),
 					q(58316, {	-- Mask of the Dark Imagination
-						["description"] = "Obtained from completing the Mage Quarter objective with one mask active.",
 						["provider"] = { "i", 174081 },	-- Faceless Mask of the Dark Imagination
-						["g"] = {
+						["description"] = "Obtained from completing the Mage Quarter objective with one mask active.",
+						["groups"] = {
 							i(173953),	-- Mask of the Dark Imagination
 						},
 					}),
 					q(58318, {	-- Mask of the Long Night
-						["description"] = "Obtained from a full clear of either vision.",
 						["provider"] = { "i", 174080 },	-- Faceless Mask of the Long Night
-						["g"] = {
+						["description"] = "Obtained from a full clear of either vision.",
+						["groups"] = {
 							i(172952),	-- Mask of the Long Night
 						},
 					}),
 					q(58317, {	-- Mask of the Pained
-						["description"] = "Obtained from completing the Old Town objective with one mask active.",
 						["provider"] = { "i", 174079 },	-- Faceless Mask of the Pained
-						["g"] = {
+						["description"] = "Obtained from completing the Old Town objective with one mask active.",
+						["groups"] = {
 							i(173524),	-- Mask of the Pained
 						},
 					}),
@@ -168,7 +168,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 					152718,	-- Alleria Windrunner
 					152089,	-- Thrall
 				},
-				["g"] = {
+				["groups"] = {
 					i(173308),	-- Mark of Boistrous Duty [Rank 1]
 					i(173288),	-- Overflowing Azerite Geode [Rank 1]
 					i(168936),	-- Ward of Unwavering Hope [Rank 1]
@@ -194,7 +194,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 					HORRIFIC_ORGRIMMAR,
 					HORRIFIC_STORMWIND,
 				},
-				["g"] = {
+				["groups"] = {
 					n(160708, {	-- Mail Muncher
 						["description"] = "Has a chance to spawn from Mailboxes in either vision.",
 						["coords"] = {
@@ -209,13 +209,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							{ 49.7, 87.0, HORRIFIC_STORMWIND },
 							{ 75.7, 64.6, HORRIFIC_STORMWIND },
 						},
-						["g"] = { i(174653) },	-- Mail Muncher (MOUNT!)
+						["groups"] = { i(174653) },	-- Mail Muncher (MOUNT!)
 					}),
 				},
 			}),
 			header(HEADERS.Achievement, 14063, {	-- Horrific Vision of Orgrimmar
 				["maps"] = { HORRIFIC_ORGRIMMAR },
-				["g"] = {
+				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(14063),	-- Horrific Vision of Orgrimmar
 						ach(14065),	-- The Even More Horrific Vision of Orgrimmar
@@ -227,7 +227,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 					n(CORRUPTED_AREA, {
 						n(153244, {	-- Oblivion Elemental
 							["coord"] = { 39.8, 79.2, HORRIFIC_ORGRIMMAR },
-							["g"] = {
+							["groups"] = {
 								i(173726),	-- Void-Scarred Toad (PET!)
 								i(174924),	-- Void-Touched Souvenir Totem (TOY!)
 							},
@@ -235,13 +235,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						o(342098, {	-- Coifcurl's Close Shave Kit
 							["description"] = "Requires entering the Valley of Spirits. The chest is inside the barber shop on the right.",
 							["coord"] = { 40.5, 60.3, HORRIFIC_ORGRIMMAR },
-							["g"] = { i(174920) },	-- Coifcurl's Close Shave Kit (TOY!)
+							["groups"] = { i(174920) },	-- Coifcurl's Close Shave Kit (TOY!)
 						}),
 					}),
 					n(LOST_AREA, {
 						n(155098, {	-- Rexxar
 							["coord"] = { 64.6, 32.8, HORRIFIC_ORGRIMMAR },
-							["g"] = {
+							["groups"] = {
 								i(174457),	-- C'Thuffer (PET!)
 								i(174082),	-- Faceless Mask of the Daredevil (QI!)
 								i(174855, {	-- Bow of Calamity
@@ -251,14 +251,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 						}),
 						n(152874, {	-- Vez'okk the Lightless
 							["coord"] = { 45.6, 48.6, HORRIFIC_ORGRIMMAR },
-							["g"] = {
+							["groups"] = {
 								i(174083),	-- Faceless Mask of the Burned Bridge (QI!)
 							},
 						}),
 					}),
 					n(152089, {	-- Thrall
 						["coord"] = { 48.8, 71.2, HORRIFIC_ORGRIMMAR },
-						["g"] = {
+						["groups"] = {
 							i(174646),	-- Void-Scarred Pup (PET!)
 						},
 					}),
@@ -266,7 +266,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 			}),
 			header(HEADERS.Achievement, 14062, {	-- Horrific Vision of Stormwind
 				["maps"] = { HORRIFIC_STORMWIND },
-				["g"] = {
+				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(14062),	-- Horrific Vision of Stormwind
 						ach(14064),	-- The Even More Horrific Vision of Stormwind
@@ -283,7 +283,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 							{ 62.6, 61.2, HORRIFIC_STORMWIND },
 							{ 69.6, 68.2, HORRIFIC_STORMWIND },
 						},
-						["g"] = { i(174926) },	-- Overly Sensitive Void Spectacles (TOY!)
+						["groups"] = { i(174926) },	-- Overly Sensitive Void Spectacles (TOY!)
 					}),
 					i(174928, {	-- Rotten Apple (TOY!)
 						["description"] = "Repeatedly click the bouncing apples at the coordinates provided.  Supposedly, clicking them 100 times will guarantee that the toy is in your final chest, but any click should give you a chance if you're running short on time.",
@@ -298,7 +298,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 					o(343698, {	-- Void-Touched Skull
 						["description"] = "Behind the orphanage in Cathedral Square.  It's on the ground next to some crates, is very small, and doesn't have the typical interactable sparkle.",
 						["coord"] = { 58.9, 52.9, HORRIFIC_STORMWIND },
-						["g"] = {
+						["groups"] = {
 							i(174921, {	-- Void-Touched Skull (TOY!)
 								i(174922),	-- Void-Touched Skull
 							}),
@@ -307,7 +307,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 					n(CORRUPTED_AREA, {
 						n(156577, {	-- Therum Deepforge
 							["coord"] = { 67.6, 43.2, HORRIFIC_STORMWIND },
-							["g"] = {
+							["groups"] = {
 								i(174460),	-- Void-Scarred Rat (PET!)
 							},
 						}),
@@ -315,14 +315,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 					n(LOST_AREA, {
 						n(158157, {	-- Overlord Mathias Shaw
 							["coord"] = { 78.8, 65.4, HORRIFIC_STORMWIND },
-							["g"] = {
+							["groups"] = {
 								i(174932),	-- Illusion: Void Edge (ILLUSION!)
 								i(174079),	-- Faceless Mask of the Pained (QI!)
 							},
 						}),
 						n(158035, {	-- Magister Umbric
 							["coord"] = { 50.0, 86.4, HORRIFIC_STORMWIND },
-							["g"] = {
+							["groups"] = {
 								i(174458),	-- Void-Scarred Hare (PET!)
 								i(174081),	-- Faceless Mask of the Dark Imagination (QI!)
 							},
@@ -330,7 +330,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 					}),
 					n(152718, {	-- Alleria Windrunner
 						["coord"] = { 50.4, 47.6, HORRIFIC_STORMWIND },
-						["g"] = {
+						["groups"] = {
 							i(174459),	-- Void-Scarred Cat (PET!)
 						},
 					}),

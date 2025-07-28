@@ -57,7 +57,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}),
 			n(189226, {	-- Cataloger Jakes
 				["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
-				["g"] = bubbleDownRep(FACTION_DRAGONSCALE_EXPEDITION, {
+				["groups"] = bubbleDownRep(FACTION_DRAGONSCALE_EXPEDITION, {
 					{		-- RENOWN 1 --
 						i(198854, {	-- Archeologist Artifact Notes (CI!)
 							["sourceQuest"] = 72709,	-- Funding a Treasure Hunt
@@ -524,7 +524,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}),
 			n(187444, {	-- Kajithalan
 				["coord"] = { 47.1, 82.9, THE_WAKING_SHORES },
-				["g"] = {
+				["groups"] = {
 					i(196440),	-- Dragon Flight
 					i(194691),	-- Artisanal Berry Juice
 					i(201089),	-- Craft Creche Crowler

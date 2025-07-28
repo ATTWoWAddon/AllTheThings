@@ -89,7 +89,7 @@ root(ROOTS.ExpansionFeatures,
 						})),
 						ach(9526, {	-- Master of Mounts
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"] = {
+							["groups"] = {
 								i(112003),		-- Stables, Level 3 [Blueprints]
 								crit(26064, { ["races"] = ALLIANCE_ONLY }),		-- Wolf Trained
 								crit(26065, { ["races"] = HORDE_ONLY }),		-- Wolf Trained
@@ -208,56 +208,56 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						q(36997, {	-- Boar Training: Bulbapore
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36996,	-- Boar Training: Gezz'ran
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36998, {	-- Boar Training: Cruel Ogres
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36997,	-- Boar Training: Bulbapore
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36999, {	-- Boar Training: Darkwing Roc
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36998,	-- Boar Training: Cruel Ogres
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36996, {	-- Boar Training: Gezz'ran
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36995,	-- Boar Training: Riplash
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37002, {	-- Boar Training: Ironbore
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37001,	-- Boar Training: Thundercall
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37000, {	-- Boar Training: Moth of Wrath
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36999,	-- Boar Training: Darkwing Roc
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37003, {	-- Boar Training: Orc Hunters
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37002,	-- Boar Training: Ironbore
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36995, {	-- Boar Training: Riplash
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36913,	-- Besting a Boar
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37004, {	-- Boar Training: The Garn
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37003,	-- Boar Training: Orc Hunters
-							["g"] = {
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
 								i(116675),	-- Trained Rocktusk (MOUNT!)
 							},
 						}),
 						q(37001, {	-- Boar Training: Thundercall
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37000,	-- Boar Training: Moth of Wrath
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36916, {	-- Capturing a Clefthoof
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
@@ -265,104 +265,104 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						q(36987, {	-- Clefthoof Training: Bulbapore
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36986,	-- Clefthoof Training: Gezz'ran
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36988, {	-- Clefthoof Training: Cruel Ogres
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36987,	-- Clefthoof Training: Bulbapore
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36989, {	-- Clefthoof Training: Darkwing Roc
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36988,	-- Clefthoof Training: Cruel Ogres
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36986, {	-- Clefthoof Training: Gezz'ran
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36985,	-- Clefthoof Training: Riplash
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36983, {	-- Clefthoof Training: Great-Tusk
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36916,	-- Capturing a Clefthoof
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36992, {	-- Clefthoof Training: Ironbore
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36991,	-- Clefthoof Training: Thundercall
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36990, {	-- Clefthoof Training: Moth of Wrath
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36989,	-- Clefthoof Training: Darkwing Roc
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36993, {	-- Clefthoof Training: Orc Hunters
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36992,	-- Clefthoof Training: Ironbore
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36984, {	-- Clefthoof Training: Rakkiri
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36983,	-- Clefthoof Training: Great-Tusk
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36985, {	-- Clefthoof Training: Riplash
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36984,	-- Clefthoof Training: Rakkiri
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36994, {	-- Clefthoof Training: The Garn
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36993,	-- Clefthoof Training: Orc Hunters
-							["g"] = {
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
 								i(116656),	-- Trained Icehoof (MOUNT!)
 							},
 						}),
 						q(36991, {	-- Clefthoof Training: Thundercall
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36990,	-- Clefthoof Training: Moth of Wrath
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37015, {	-- Elekk Training: Cruel Ogres
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36915,	-- Entangling an Elekk
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37016, {	-- Elekk Training: Darkwing Roc
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37015,	-- Elekk Training: Cruel Ogres
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37019, {	-- Elekk Training: Ironbore
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37018,	-- Elekk Training: Thundercall
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37017, {	-- Elekk Training: Moth of Wrath
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37016,	-- Elekk Training: Darkwing Roc
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37020, {	-- Elekk Training: Orc Hunters
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37019,	-- Elekk Training: Ironbore
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37021, {	-- Elekk Training: The Garn
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37020,	-- Elekk Training: Orc Hunters
-							["g"] = {
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
 								i(116662),	-- Trained Meadowstomper (MOUNT!)
 							},
 						}),
 						q(37018, {	-- Elekk Training: Thundercall
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37017,	-- Elekk Training: Moth of Wrath
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36915, {	-- Entangling an Elekk
 							["provider"] = { "n", 86973 },	-- Keegan Firebeard
@@ -374,114 +374,114 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						q(37006, {	-- Riverbeast Training: Bulbapore
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37005,	-- Riverbeast Training: Gezz'ran
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37007, {	-- Riverbeast Training: Cruel Ogres
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37006,	-- Riverbeast Training: Bulbapore
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37008, {	-- Riverbeast Training: Darkwing Roc
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37007,	-- Riverbeast Training: Cruel Ogres
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37005, {	-- Riverbeast Training: Gezz'ran
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36918,	-- Requisition a Riverbeast
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37011, {	-- Riverbeast Training: Ironbore
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37010,	-- Riverbeast Training: Thundercall
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37009, {	-- Riverbeast Training: Moth of Wrath
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37008,	-- Riverbeast Training: Darkwing Roc
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37012, {	-- Riverbeast Training: Orc Hunters
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37011,	-- Riverbeast Training: Ironbore
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37013, {	-- Riverbeast Training: The Garn
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37012,	-- Riverbeast Training: Orc Hunters
-							["g"] = {
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
 								i(116676),	-- Trained Riverwallow (MOUNT!)
 							},
 						}),
 						q(37010, {	-- Riverbeast Training: Thundercall
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37009,	-- Riverbeast Training: Moth of Wrath
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36975, {	-- Talbuk Training: Bulbapore
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36974,	-- Talbuk Training: Gezz'ran
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36976, {	-- Talbuk Training: Cruel Ogres
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36975,	-- Talbuk Training: Bulbapore
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36977, {	-- Talbuk Training: Darkwing Roc
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36976,	-- Talbuk Training: Cruel Ogres
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36974, {	-- Talbuk Training: Gezz'ran
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36973,	-- Talbuk Training: Riplash
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36971, {	-- Talbuk Training: Great-Tusk
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36911,	-- Taming a Talbuk
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36980, {	-- Talbuk Training: Ironbore
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36979,	-- Talbuk Training: Thundercall
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36978, {	-- Talbuk Training: Moth of Wrath
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36977,	-- Talbuk Training: Darkwing Roc
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36981, {	-- Talbuk Training: Orc Hunters
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36980,	-- Talbuk Training: Ironbore
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36972, {	-- Talbuk Training: Rakkiri
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36971,	-- Talbuk Training: Great-Tusk
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36973, {	-- Talbuk Training: Riplash
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36972,	-- Talbuk Training: Rakkiri
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36982, {	-- Talbuk Training: The Garn
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36981,	-- Talbuk Training: Orc Hunters
-							["g"] = {
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
 								i(116774),	-- Trained Silverpelt (MOUNT!)
 							},
 						}),
 						q(36979, {	-- Talbuk Training: Thundercall
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36978,	-- Talbuk Training: Moth of Wrath
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36911, {	-- Taming a Talbuk
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
@@ -497,41 +497,41 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						q(37022, {	-- Wolf Training: Cruel Ogres
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 36914,	-- Wrangling a Wolf
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37023, {	-- Wolf Training: Darkwing Roc
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37022,	-- Wolf Training: Cruel Ogres
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37026, {	-- Wolf Training: Ironbore
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37025,	-- Wolf Training: Thundercall
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37024, {	-- Wolf Training: Moth of Wrath
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37023,	-- Wolf Training: Darkwing Roc
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37027, {	-- Wolf Training: Orc Hunters
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37026,	-- Wolf Training: Ironbore
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37028, {	-- Wolf Training: The Garn
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37027,	-- Wolf Training: Orc Hunters
-							["g"] = {
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
 								i(116784),	-- Trained Snarler (MOUNT!)
 							},
 						}),
 						q(37025, {	-- Wolf Training: Thundercall
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 37024,	-- Wolf Training: Moth of Wrath
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36914, {	-- Wrangling a Wolf
 							["provider"] = { "n", 86974 },	-- Fanny Firebeard
@@ -545,56 +545,56 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						q(37034, {	-- Boar Training: Bulbapore
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37033,	-- Boar Training: Gezz'ran
+							["races"] = HORDE_ONLY,
 						}),
 						q(37035, {	-- Boar Training: Cruel Ogres
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37034,	-- Boar Training: Bulbapore
+							["races"] = HORDE_ONLY,
 						}),
 						q(37036, {	-- Boar Training: Darkwing Roc
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37035,	-- Boar Training: Cruel Ogres
+							["races"] = HORDE_ONLY,
 						}),
 						q(37033, {	-- Boar Training: Gezz'ran
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37032,	-- Boar Training: Riplash
+							["races"] = HORDE_ONLY,
 						}),
 						q(37039, {	-- Boar Training: Ironbore
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37038,	-- Boar Training: Thundercall
+							["races"] = HORDE_ONLY,
 						}),
 						q(37037, {	-- Boar Training: Moth of Wrath
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37036,	-- Boar Training: Darkwing Roc
+							["races"] = HORDE_ONLY,
 						}),
 						q(37040, {	-- Boar Training: Orc Hunters
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37039,	-- Boar Training: Ironbore
+							["races"] = HORDE_ONLY,
 						}),
 						q(37032, {	-- Boar Training: Riplash
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 36944,	-- Besting a Boar
+							["races"] = HORDE_ONLY,
 						}),
 						q(37041, {	-- Boar Training: The Garn
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37040,	-- Boar Training: Orc Hunters
-							["g"] = {
+							["races"] = HORDE_ONLY,
+							["groups"] = {
 								i(116675),	-- Trained Rocktusk (MOUNT!)
 							},
 						}),
 						q(37038, {	-- Boar Training: Thundercall
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37037,	-- Boar Training: Moth of Wrath
+							["races"] = HORDE_ONLY,
 						}),
 						q(36912, {	-- Capturing a Clefthoof
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
@@ -602,104 +602,104 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						q(37052, {	-- Clefthoof Training: Bulbapore
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37051,	-- Clefthoof Training: Gezz'ran
+							["races"] = HORDE_ONLY,
 						}),
 						q(37053, {	-- Clefthoof Training: Cruel Ogres
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37052,	-- Clefthoof Training: Bulbapore
+							["races"] = HORDE_ONLY,
 						}),
 						q(37054, {	-- Clefthoof Training: Darkwing Roc
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37053,	-- Clefthoof Training: Cruel Ogres
+							["races"] = HORDE_ONLY,
 						}),
 						q(37051, {	-- Clefthoof Training: Gezz'ran
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37050,	-- Clefthoof Training: Riplash
+							["races"] = HORDE_ONLY,
 						}),
 						q(37048, {	-- Clefthoof Training: Great-Tusk
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 36912,	-- Capturing a Clefthoof
+							["races"] = HORDE_ONLY,
 						}),
 						q(37057, {	-- Clefthoof Training: Ironbore
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37056,	-- Clefthoof Training: Thundercall
+							["races"] = HORDE_ONLY,
 						}),
 						q(37055, {	-- Clefthoof Training: Moth of Wrath
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37054,	-- Clefthoof Training: Darkwing Roc
+							["races"] = HORDE_ONLY,
 						}),
 						q(37058, {	-- Clefthoof Training: Orc Hunters
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37057,	-- Clefthoof Training: Ironbore
+							["races"] = HORDE_ONLY,
 						}),
 						q(37049, {	-- Clefthoof Training: Rakkiri
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37123,	-- The Black Claw
+							["races"] = HORDE_ONLY,
 						}),
 						q(37050, {	-- Clefthoof Training: Riplash
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37049,	-- Clefthoof Training: Rakkiri
+							["races"] = HORDE_ONLY,
 						}),
 						q(37059, {	-- Clefthoof Training: The Garn
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37058,	-- Clefthoof Training: Orc Hunters
-							["g"] = {
+							["races"] = HORDE_ONLY,
+							["groups"] = {
 								i(116656),	-- Trained Icehoof (MOUNT!)
 							},
 						}),
 						q(37056, {	-- Clefthoof Training: Thundercall
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37055,	-- Clefthoof Training: Moth of Wrath
+							["races"] = HORDE_ONLY,
 						}),
 						q(37063, {	-- Elekk Training: Cruel Ogres
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 36946,	-- Entangling an Elekk
+							["races"] = HORDE_ONLY,
 						}),
 						q(37064, {	-- Elekk Training: Darkwing Roc
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37063,	-- Elekk Training: Cruel Ogres
+							["races"] = HORDE_ONLY,
 						}),
 						q(37067, {	-- Elekk Training: Ironbore
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37066,	-- Elekk Training: Thundercall
+							["races"] = HORDE_ONLY,
 						}),
 						q(37065, {	-- Elekk Training: Moth of Wrath
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37064,	-- Elekk Training: Darkwing Roc
+							["races"] = HORDE_ONLY,
 						}),
 						q(37068, {	-- Elekk Training: Orc Hunters
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37067,	-- Elekk Training: Ironbore
+							["races"] = HORDE_ONLY,
 						}),
 						q(37069, {	-- Elekk Training: The Garn
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37068,	-- Elekk Training: Orc Hunters
-							["g"] = {
+							["races"] = HORDE_ONLY,
+							["groups"] = {
 								i(116662),	-- Trained Meadowstomper (MOUNT!)
 							},
 						}),
 						q(37066, {	-- Elekk Training: Thundercall
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37065,	-- Elekk Training: Moth of Wrath
+							["races"] = HORDE_ONLY,
 						}),
 						q(36946, {	-- Entangling an Elekk
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
@@ -711,114 +711,114 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						q(37072, {	-- Riverbeast Training: Bulbapore
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37071,	-- Riverbeast Training: Gezz'ran
+							["races"] = HORDE_ONLY,
 						}),
 						q(37073, {	-- Riverbeast Training: Cruel Ogres
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37072,	-- Riverbeast Training: Bulbapore
+							["races"] = HORDE_ONLY,
 						}),
 						q(37074, {	-- Riverbeast Training: Darkwing Roc
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37073,	-- Riverbeast Training: Cruel Ogres
+							["races"] = HORDE_ONLY,
 						}),
 						q(37071, {	-- Riverbeast Training: Gezz'ran
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 36945,	-- Requisition a Riverbeast
+							["races"] = HORDE_ONLY,
 						}),
 						q(37077, {	-- Riverbeast Training: Ironbore
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37076,	-- Riverbeast Training: Thundercall
+							["races"] = HORDE_ONLY,
 						}),
 						q(37075, {	-- Riverbeast Training: Moth of Wrath
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37074,	-- Riverbeast Training: Darkwing Roc
+							["races"] = HORDE_ONLY,
 						}),
 						q(37078, {	-- Riverbeast Training: Orc Hunters
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37077,	-- Riverbeast Training: Ironbore
+							["races"] = HORDE_ONLY,
 						}),
 						q(37079, {	-- Riverbeast Training: The Garn
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37078,	-- Riverbeast Training: Orc Hunters
-							["g"] = {
+							["races"] = HORDE_ONLY,
+							["groups"] = {
 								i(116676),	-- Trained Riverwallow (MOUNT!)
 							},
 						}),
 						q(37076, {	-- Riverbeast Training: Thundercall
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37075,	-- Riverbeast Training: Moth of Wrath
+							["races"] = HORDE_ONLY,
 						}),
 						q(37097, {	-- Talbuk Training: Bulbapore
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37096,	-- Talbuk Training: Gezz'ran
+							["races"] = HORDE_ONLY,
 						}),
 						q(37098, {	-- Talbuk Training: Cruel Ogres
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37097,	-- Talbuk Training: Bulbapore
+							["races"] = HORDE_ONLY,
 						}),
 						q(37099, {	-- Talbuk Training: Darkwing Roc
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37098,	-- Talbuk Training: Cruel Ogres
+							["races"] = HORDE_ONLY,
 						}),
 						q(37096, {	-- Talbuk Training: Gezz'ran
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37095,	-- Talbuk Training: Riplash
+							["races"] = HORDE_ONLY,
 						}),
 						q(37093, {	-- Talbuk Training: Great-Tusk
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 36917,	-- Taming a Talbuk
+							["races"] = HORDE_ONLY,
 						}),
 						q(37102, {	-- Talbuk Training: Ironbore
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37101,	-- Talbuk Training: Thundercall
+							["races"] = HORDE_ONLY,
 						}),
 						q(37100, {	-- Talbuk Training: Moth of Wrath
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37099,	-- Talbuk Training: Darkwing Roc
+							["races"] = HORDE_ONLY,
 						}),
 						q(37103, {	-- Talbuk Training: Orc Hunters
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37102,	-- Talbuk Training: Ironbore
+							["races"] = HORDE_ONLY,
 						}),
 						q(37094, {	-- Talbuk Training: Rakkiri
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37093,	-- Talbuk Training: Great-Tusk
+							["races"] = HORDE_ONLY,
 						}),
 						q(37095, {	-- Talbuk Training: Riplash
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37094,	-- Talbuk Training: Rakkiri
+							["races"] = HORDE_ONLY,
 						}),
 						q(37104, {	-- Talbuk Training: The Garn
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37103,	-- Talbuk Training: Orc Hunters
-							["g"] = {
+							["races"] = HORDE_ONLY,
+							["groups"] = {
 								i(116774),	-- Trained Silverpelt (MOUNT!)
 							},
 						}),
 						q(37101, {	-- Talbuk Training: Thundercall
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37100,	-- Talbuk Training: Moth of Wrath
+							["races"] = HORDE_ONLY,
 						}),
 						q(36917, {	-- Taming a Talbuk
 							["provider"] = { "n", 87242 },	-- Sage Paluna
@@ -834,41 +834,41 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						q(37105, {	-- Wolf Training: Cruel Ogres
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 36950,	-- Wrangling a Wolf
+							["races"] = HORDE_ONLY,
 						}),
 						q(37106, {	-- Wolf Training: Darkwing Roc
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37105,	-- Wolf Training: Cruel Ogres
+							["races"] = HORDE_ONLY,
 						}),
 						q(37109, {	-- Wolf Training: Ironbore
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37108,	-- Wolf Training: Thundercall
+							["races"] = HORDE_ONLY,
 						}),
 						q(37107, {	-- Wolf Training: Moth of Wrath
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37106,	-- Wolf Training: Darkwing Roc
+							["races"] = HORDE_ONLY,
 						}),
 						q(37110, {	-- Wolf Training: Orc Hunters
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37109,	-- Wolf Training: Ironbore
+							["races"] = HORDE_ONLY,
 						}),
 						q(37111, {	-- Wolf Training: The Garn
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37110,	-- Wolf Training: Orc Hunters
-							["g"] = {
+							["races"] = HORDE_ONLY,
+							["groups"] = {
 								i(116784),	-- Trained Snarler (MOUNT!)
 							},
 						}),
 						q(37108, {	-- Wolf Training: Thundercall
 							["provider"] = { "n", 87242 },	-- Sage Paluna
-							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 37107,	-- Wolf Training: Moth of Wrath
+							["races"] = HORDE_ONLY,
 						}),
 						q(36950, {	-- Wrangling a Wolf
 							["provider"] = { "n", 87242 },	-- Sage Paluna

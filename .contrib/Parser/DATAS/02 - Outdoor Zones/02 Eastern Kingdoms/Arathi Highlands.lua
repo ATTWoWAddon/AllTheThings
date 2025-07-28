@@ -130,7 +130,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(7869, {	-- Brumn Winterhoof <Master Elemental Leatherworker>
 						["coord"] = { 28.2, 45.0, ARATHI_HIGHLANDS },
 						["races"] = HORDE_ONLY,
-						["g"] = CLASSIC_TBC_ELEMENTAL,
+						["groups"] = CLASSIC_TBC_ELEMENTAL,
 					}),
 				}),
 			}),
@@ -445,11 +445,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26429, {	-- Crush the Witherbark
 					["qg"] = 2771,	-- Drum Fel
-					-- not required as of 2018/2024
 					-- ["sourceQuest"] = 26912,	-- The Princess Unleashed (TODO: verify. Didn't see this until after killing Myzrael)
 					["coord"] = { 69.0, 34.8, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					-- not required as of 2018/2024
 					["groups"] = {
 						objective(1, {	-- 0/10 Witherbark Axe Thrower slain
 							["provider"] = { "n", 2554 },	-- Witherbark Axe Thrower
@@ -852,6 +852,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #else
 						"Needs a minimum of 225 skill in First Aid.",
 						-- #endif
+					["timeline"] = { REMOVED_7_3_5 },
 					["requireSkill"] =
 						-- #if AFTER BFA
 						TAILORING,
@@ -859,14 +860,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						FIRST_AID,
 						-- #endif
 					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(35, 35, 10),
-					-- Horde Trauma (6623) is unavailable permanently, a GM confirmed this to me. Because of the phasing issue, they removed the quest from the NPC entirely.
-					["timeline"] = { REMOVED_7_3_5 },
 					-- #if AFTER 7.3.5
 					-- ["DisablePartySync"] = true,
 					-- ["lockCriteria"] = { 1, "achID", 12452 },	-- Allied Races: Highmountain Tauren [Appears to cause a phasing issue with the quest giver]
 					-- #endif
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(35, 35, 10),
+					-- Horde Trauma (6623) is unavailable permanently, a GM confirmed this to me. Because of the phasing issue, they removed the quest from the NPC entirely.
 				}),
 				q(26110, {	-- Just Like Old Times
 					["qg"] = 2712,	-- Quae
@@ -2746,4 +2746,3 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, bubbleDownSelf({ ["time
 		}),
 	})
 })));
-

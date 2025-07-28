@@ -12,21 +12,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			o(383625, {	-- Case of Fresh Gleamfish
 				["coord"] = { 45.6, 54.8, THE_AZURE_SPAN },
-				["g"] = {
+				["groups"] = {
 					i(200949),	-- Case of Fresh Gleamfish
 				},
 			}),
 			o(381362, {	-- Chunk of Sculpture
 				["coord"] = { 60.1, 60.1, THE_AZURE_SPAN },
 				["description"] = "Behind the dragon statue next to the mountain.",
-				["g"] = {
+				["groups"] = {
 					i(199895),	-- Chunk of Sculpture
 				},
 			}),
 			o(381356, {	-- Coldwashed Dragonclaw
 				["coord"] = { 47.1, 38.9, THE_AZURE_SPAN },
 				["description"] = "Underwater.",
-				["g"] = {
+				["groups"] = {
 					i(199843),	-- Coldwashed Dragonclaw
 				},
 			}),
@@ -77,7 +77,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 58.4, 42.7, THE_AZURE_SPAN },
 					{ 58.5, 42.7, THE_AZURE_SPAN },
 				},
-				["g"] = {
+				["groups"] = {
 					i(201368, {	-- Brackenhide Hollow Barbslinger
 						["description"] = "Drops from Gnoll Creatures or Decay Covered Chests around Bracken Hollow.",
 					}),
@@ -105,13 +105,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 45.1, 59.3, THE_AZURE_SPAN },
 				["questID"] = 70603,
 				["cost"] = { { "i", 199065, 1 }, },	--1x Sorrowful Letter
-				["g"] = {
+				["groups"] = {
 					i(201927),	-- Gleaming Arcanocrystal (TOY!)
 				},
 			}),
 			o(381510, {	-- Flying Fish Bones
 				["coord"] = { 12.5, 50.0, THE_AZURE_SPAN },
-				["g"] = {
+				["groups"] = {
 					i(200075),	-- Flying Fish Bones
 				},
 			}),
@@ -119,14 +119,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 54.0, 43.8, THE_AZURE_SPAN },
 				["questID"] = 70604,
 				["cost"] = { { "i", 199066, 1 }, },	--1x Letter of Caution
-				["g"] = {
+				["groups"] = {
 					i(202692),	-- Gnoll Fiend Flail
 				},
 			}),
 			o(381511, {	-- Harpoon Head
 				["description"] = "On the anvil in the Tuskaar area.",
 				["coord"] = { 12.9, 48.7, THE_AZURE_SPAN },
-				["g"] = {
+				["groups"] = {
 					i(200076),	-- Harpoon Head
 				},
 			}),
@@ -136,14 +136,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(381160, {	-- Lost Compass
 				["coord"] = { 74.9, 55.0, THE_AZURE_SPAN },
 				["questID"] = 70606,
-				["g"] = {
+				["groups"] = {
 					i(202711),	-- Lost Compass (TOY!)
 				},
 			}),
 			o(381513, {	-- Old Pickaxe
 				["description"] = "Visible when reaching 50 Fishing Skill (including Equipment Bonuses).",
 				["coord"] = { 18.9, 24.3, THE_AZURE_SPAN },
-				["g"] = {
+				["groups"] = {
 					i(200078),	-- Pickaxe Blade
 				},
 			}),
@@ -151,21 +151,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["description"] = "Use nearby Stick and Tree Sap to lure the bird.",
 				["coord"] = { 26.5, 46.3, THE_AZURE_SPAN },
 				["questID"] = 70441,
-				["g"] = {
+				["groups"] = {
 					i(193834),	-- Blackfeather Nester (PET!)
 				},
 			}),
 			o(380843, {	-- Rubber Fish
 				["coord"] = { 54.6, 29.3, THE_AZURE_SPAN },
 				["questID"] = 70380,
-				["g"] = {
+				["groups"] = {
 					i(202712),	-- Rubber Fish
 				},
 			}),
 			o(383660, {	-- Salt Crystal
 				["description"] = "In a cave.",
 				["coord"] = { 11.6, 41.0, THE_AZURE_SPAN },
-				["g"] = {
+				["groups"] = {
 					i(201033),	-- Magical Salt Crystal
 				},
 			}),
@@ -173,7 +173,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 49.0, 25.0, THE_AZURE_SPAN },
 				["questID"] = 70605,
 				["cost"] = { { "i", 199067, 1 }, },	--1x Precious Plans
-				["g"] = {
+				["groups"] = {
 					i(200866),	-- Glimmering Malygite Cluster
 					i(194649),	-- Design: Jeweled Sapphire Whelpling (RECIPE!)
 				},
@@ -181,14 +181,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(380533, {	-- Snow Covered Scroll
 				["coord"] = { 58.0, 42.0, THE_AZURE_SPAN },
 				["questID"] = 70237,
-				["g"] = {
+				["groups"] = {
 					i(198103),	-- Recipe: Snow in a Cone (RECIPE!)
 				},
 			}),
 			o(381353, {	-- Stone Dragontooth
 				["coord"] = { 69.2, 47.6, THE_AZURE_SPAN },
 				["description"] = "Next to the dragon statue on the ground.",
-				["g"] = {
+				["groups"] = {
 					i(199842),	-- Stone Dragontooth
 				},
 			}),
@@ -214,7 +214,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					{ 59.2, 56.6, THE_AZURE_SPAN },
 					{ 60.5, 59.0, THE_AZURE_SPAN },
 				},
-				["g"] = {
+				["groups"] = {
 					i(201373),	-- Imbu Net Cutter
 					i(201372),	-- Imbu Tuskarr Axe
 					i(201376),	-- Imbu Tuskarr Mace
@@ -227,7 +227,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(421740, {	-- Tuskarr Pepe
 				["coord"] = { 12.99, 48.59, THE_AZURE_SPAN },
 				["timeline"] = { ADDED_10_2_5 },
-				["g"] = { i(213207) },	-- A Tiny Ear Warmer (Pepe!)
+				["groups"] = { i(213207) },	-- A Tiny Ear Warmer (Pepe!)
 			}),
 			o(381722, {	-- Vakthros Maintenance
 				["coord"] = { 77.4, 31.1, THE_AZURE_SPAN },
@@ -235,7 +235,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			o(381354, {	-- Wrapped Gold Band
 				["coord"] = { 47.3, 24.6, THE_AZURE_SPAN },
 				["description"] = "Underneath the back left foot of the dragon statue.",
-				["g"] = {
+				["groups"] = {
 					i(199840),	-- Wrapped Gold Band
 				},
 			}),

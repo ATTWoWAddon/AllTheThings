@@ -6,7 +6,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		n(VENDORS, {
 			n(202468, {	-- Harlowe Marl
 				["coord"] = { 56.5, 55.6, ZARALEK_CAVERN },
-				["g"] = bubbleDownRep(FACTION_LOAMM_NIFFEN, {
+				["groups"] = bubbleDownRep(FACTION_LOAMM_NIFFEN, {
 					{		-- RENOWN 1 --
 					}, {	-- RENOWN 2 --
 					}, {	-- RENOWN 3 --

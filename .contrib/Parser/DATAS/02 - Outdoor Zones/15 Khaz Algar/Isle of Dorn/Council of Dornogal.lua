@@ -34,7 +34,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(82342),	-- A Small Bundle of Goods
 				}, {	-- RENOWN 4 --
 					q(82345, {	-- A Shining Stone
-						["g"] = { i(223951) },	-- Earth-Encrusted Gem
+						["groups"] = { i(223951) },	-- Earth-Encrusted Gem
 					}),
 				}, {	-- RENOWN 5 --
 					q(84404),	-- A Small Bundle of Goods
@@ -46,13 +46,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}, {	-- RENOWN 8 --
 					q(84403),	-- A Small Bundle of Goods
 					q(85718, {	-- A Shining Stone
-						["g"] = { i(223951) },	-- Earth-Encrusted Gem
+						["groups"] = { i(223951) },	-- Earth-Encrusted Gem
 					}),
 				}, {	-- RENOWN 9 --
 					q(82344),	-- Weathered Crests
 				}, {	-- RENOWN 10 --
 					q(82347, {	-- Assistant Councilmember
-						["g"] = { i(218346) },	-- Honorary Councilmember's Tabard (COSMETIC!)
+						["groups"] = { i(218346) },	-- Honorary Councilmember's Tabard (COSMETIC!)
 					}),
 				}, {	-- RENOWN 11 --
 				}, {	-- RENOWN 12 --
@@ -72,12 +72,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}, {	-- RENOWN 21 --
 				}, {	-- RENOWN 22 --
 					q(82361, {	-- A Small Bundle of Goods
-						["g"] = { i(226147) },	-- Bunch of Brave Rocks
+						["groups"] = { i(226147) },	-- Bunch of Brave Rocks
 					}),
 				}, {	-- RENOWN 23 --
 				}, {	-- RENOWN 24 --
 					q(82365, {	-- A Crafter's Delight
-						["g"] = { i(224072) },	-- Enchanted Runed Harbinger Crest
+						["groups"] = { i(224072) },	-- Enchanted Runed Harbinger Crest
 					}),
 					q(85546),	-- Resonance Crystals
 				}, {	-- RENOWN 25 --
@@ -85,7 +85,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					------ Paragon ------
 					q(79219, {	-- Renowned with the Council of Dornogal
 						["isRepeatable"] = true,
-						["g"] = { i(225239) },	-- Overflowing Council of Dornogal Trove
+						["groups"] = { i(225239) },	-- Overflowing Council of Dornogal Trove
 					}),
 				},
 			}))),
@@ -93,7 +93,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["icon"] = 132288,
 				["coord"] = { 56.4, 51.4, ISLE_OF_DORN },
 				["maps"] = { THE_PROSCENIUM },
-				["g"] = {
+				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(40860),	-- A Star of Dorn (automated)
 						ach(40859),	-- We're Here All Night (automated)
@@ -150,7 +150,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								i(226263, {	-- Theater Troupe's Trove (S1)
 									["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
 									["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
-									["g"] = {
+									["groups"] = {
 										i(228320),	-- Design: Binding of Binding (RECIPE!)
 										i(228708),	-- Formula: Gleeful Glamour - Earthen (RECIPE!)
 										i(223126),	-- Formula: Enchant Chest - Stormrider's Agility (RECIPE!)
@@ -161,7 +161,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								i(239128, {	-- Theater Troupe's Trove (S2)
 									["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
 									["timeline"] = { ADDED_11_1_0_SEASONSTART },
-									["g"] = {
+									["groups"] = {
 										i(228320),	-- Design: Binding of Binding (RECIPE!)
 										i(228708),	-- Formula: Gleeful Glamour - Earthen (RECIPE!)
 										i(223126),	-- Formula: Enchant Chest - Stormrider's Agility (RECIPE!)
@@ -197,7 +197,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(VENDORS, {
 				n(223728, {	-- Auditor Balwurz <Keeper of Renown>
 					["coord"] = { 39.1, 24.0, DORNOGAL },
-					["g"] = bubbleDownRep(FACTION_COUNCIL_OF_DORNOGAL, {
+					["groups"] = bubbleDownRep(FACTION_COUNCIL_OF_DORNOGAL, {
 						{		-- RENOWN 1 --
 						}, {	-- RENOWN 2 --
 							i(228419, {	-- Mineral-Sparkled Cape

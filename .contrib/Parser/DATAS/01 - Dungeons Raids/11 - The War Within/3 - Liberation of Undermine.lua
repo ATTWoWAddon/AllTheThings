@@ -278,7 +278,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			2411,	-- The Tower of Spades
 			2428,	-- Research and Destruction
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(41225, {	-- Shock and Awesome
 					crit(71696, {	-- Vexie and the Geargrinders
@@ -389,7 +389,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						41337,	-- Sleep with the Fishes
 						41347,	-- Scheming on a Thing
 					}},
-					["g"] = { i(231173) },		-- Junkmaestro's Magnetomech (MOUNT!)
+					["groups"] = { i(231173) },		-- Junkmaestro's Magnetomech (MOUNT!)
 				}),
 				ach(41525),	-- Can You Please Spell "Gobanna?"
 				ach(41289),	-- Liberation of Undermine Guild Run
@@ -410,7 +410,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					}, {	-- RENOWN 3 --
 					}, {	-- RENOWN 4 --
 						q(89018, {	-- Loyal Customer: Silver
-							["g"] = { i(234389) },	-- Gallagio Loyalty Rewards Card: Silver
+							["groups"] = { i(234389) },	-- Gallagio Loyalty Rewards Card: Silver
 						}),
 					}, {	-- RENOWN 5 --
 					}, {	-- RENOWN 6 --
@@ -424,7 +424,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						q(89020),	-- Loyal Customer: Platinum
 					}, {	-- RENOWN 11 --
 						q(89028, {	-- Chip Service
-							["g"] = { i(237578) },	-- Counterfeit Dealer's Chip
+							["groups"] = { i(237578) },	-- Counterfeit Dealer's Chip
 						}),
 						q(89025),	-- Time is Money!!
 					}, {	-- RENOWN 12 --
@@ -436,7 +436,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					}, {	-- RENOWN 14 --
 					}, {	-- RENOWN 15 --
 						q(89029, {	-- Chip Service
-							["g"] = { i(237578) },	-- Counterfeit Dealer's Chip
+							["groups"] = { i(237578) },	-- Counterfeit Dealer's Chip
 						}),
 						q(89022),	-- Loyal Customer: Diamond
 					}, {	-- RENOWN 16 --
@@ -449,7 +449,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						------ Paragon ------
 						q(85471, {	-- Renowned with the Gallagio Loyalty Rewards Club
 							["isRepeatable"] = true,
-							["g"] = { i(232463) },	-- Overflowing Undermine Trove
+							["groups"] = { i(232463) },	-- Overflowing Undermine Trove
 						}),
 					},
 				}))),
@@ -459,12 +459,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						["questID"]	= 89350,
 						["minReputation"] = { FACTION_GALLAGIO, 2 },
 						["isWeekly"] = true,
-						["g"] = { i(224572) },	-- Crystallized Augment Rune
+						["groups"] = { i(224572) },	-- Crystallized Augment Rune
 					}),
 				}),
 				n(VENDORS, {
 					n(235621, {	-- Ando the Gat <Black Market Broker>
-						["g"] = bubbleDownRep(FACTION_GALLAGIO, {	-- Gallagio Loyalty Rewards Club
+						["groups"] = bubbleDownRep(FACTION_GALLAGIO, {	-- Gallagio Loyalty Rewards Club
 							{		-- RENOWN 1 --
 							}, {	-- RENOWN 2 --
 							}, {	-- RENOWN 3 --
@@ -504,7 +504,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					}),
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
 						["minReputation"] = { FACTION_GALLAGIO, 11 },
-						["g"] = sharedData({
+						["groups"] = sharedData({
 							["cost"] = { {"i", 237578, 1 }}, -- 1x Counterfeit Dealer's Chip
 							["sharedDescription"] = "Shared Transmog with |cFFFFFFFFNormal|r.",
 						}, {
@@ -529,7 +529,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					}),
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
 						["minReputation"] = { FACTION_GALLAGIO, 11 },
-						["g"] = sharedData({
+						["groups"] = sharedData({
 							["cost"] = { {"i", 237578, 1 }}, -- 1x Counterfeit Dealer's Chip
 							["sharedDescription"] = "Shared Transmog with |cFFA330C9Heroic|r.",
 						}, {
@@ -554,7 +554,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					}),
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
 						["minReputation"] = { FACTION_GALLAGIO, 11 },
-						["g"] = sharedData({
+						["groups"] = sharedData({
 							["cost"] = { {"i", 237578, 1 }}, -- 1x Counterfeit Dealer's Chip
 							["sharedDescription"] = "Shared Transmog with |cFFED7014Mythic|r.",
 						}, {
@@ -579,7 +579,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					}),
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
 						["minReputation"] = { FACTION_GALLAGIO, 11 },
-						["g"] = sharedData({
+						["groups"] = sharedData({
 							["cost"] = { {"i", 237578, 1 }}, -- 1x Counterfeit Dealer's Chip
 							["sharedDescription"] = "Shared Transmog with |cFFAEF359Looking for Raid|r.",
 						}, {
@@ -604,7 +604,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					}),
 					n(235620, {	-- Sando the Rat <Counterfeit Dealer>
 						["minReputation"] = { FACTION_GALLAGIO, 11 },
-						["g"] = sharedData({
+						["groups"] = sharedData({
 							["cost"] = { {"i", 237578, 1 }}, -- 1x Counterfeit Dealer's Chip
 						}, {
 							i(238774),	-- Gallagio Raider's Knuckle Dusters
@@ -627,7 +627,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				["coord"] = { 50.0, 54.2, DORNOGAL },
 				["modelScale"] = 4,
 				["catalystID"] = 10,	-- ItemBonus.Value_0 TWW:S2
-				["g"] = {
+				["groups"] = {
 					Difficulty(DIFFICULTY.RAID.LFR, {["upgradeTrackID"]=UPGRADETRACKS.VETERAN}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.LFR)
 					),

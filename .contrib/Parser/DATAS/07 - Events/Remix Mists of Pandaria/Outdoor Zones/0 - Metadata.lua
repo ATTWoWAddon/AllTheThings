@@ -5,7 +5,7 @@
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(PANDARIA, {
 		["icon"] = 630786,
-		["g"] = {
+		["groups"] = {
 
 		},
 	}),

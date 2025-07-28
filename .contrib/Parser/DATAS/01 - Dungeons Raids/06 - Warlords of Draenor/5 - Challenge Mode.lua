@@ -28,7 +28,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				9002,	-- The Everbloom: Bronze
 				8892,	-- Upper Blackrock Spire: Bronze
 			}},
-			["g"] = {
+			["groups"] = {
 				title(290),	-- <Name> the Indomitable
 			},
 		}),
@@ -44,7 +44,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				9003,	-- The Everbloom: Silver
 				8893,	-- Upper Blackrock Spire: Silver
 			}},
-			["g"] = {
+			["groups"] = {
 				i(116791),	-- Challenger's War Yeti (MOUNT!)
 			},
 		}),
@@ -60,7 +60,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				9004,	-- The Everbloom: Gold
 				8894,	-- Upper Blackrock Spire: Gold
 			}},
-			["g"] = {
+			["groups"] = {
 				i(118401),	-- Arcana Shard Spire
 				i(118396),	-- Bloodmaw Gargoyle
 				i(118395),	-- Claws of Creation

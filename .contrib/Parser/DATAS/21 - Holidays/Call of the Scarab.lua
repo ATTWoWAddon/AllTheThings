@@ -17,7 +17,7 @@ CALL_OF_THE_SCARAB_HEADER = createHeader({
 });
 root(ROOTS.Holidays, applyevent(EVENTS.CALL_OF_THE_SCARAB, n(CALL_OF_THE_SCARAB_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 } }, {
 	["maps"] = { SILITHUS },
-	["g"] = {
+	["groups"] = {
 		n(QUESTS, {
 			q(45787, {	-- Call of the Scarab [A]
 				["qg"] = 117435,	-- Field Marshal Snowfall
@@ -221,7 +221,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CALL_OF_THE_SCARAB, n(CALL_OF_THE_SCARAB_
 					{ 43.6, 41.6, SILITHUS },
 					{ 26.2, 74.8, SILITHUS },
 				},
-				["g"] = {
+				["groups"] = {
 					n(117662, {	-- The Duke of Cynders <Abyssal Council>
 						i(143880),	-- Cinder of Cynders [A]
 						i(143872),	-- Cinder of Cynders [H]
@@ -248,7 +248,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CALL_OF_THE_SCARAB, n(CALL_OF_THE_SCARAB_
 					{ "i", 143857, 1 },	-- Twilight Cultist Mantle
 					{ "i", 143855, 1 },	-- Twilight Cultist Robe
 				},
-				["g"] = {
+				["groups"] = {
 					n(15205, {	-- Baron Kazum <Abyssal High Council>
 						i(143886),	-- Diamondine Sigil of Kazum [A]
 						i(143878),	-- Diamondine Sigil of Kazum [H]
@@ -272,7 +272,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CALL_OF_THE_SCARAB, n(CALL_OF_THE_SCARAB_
 			n(117435, {	-- Field Marshal Snowfall
 				["coord"] = { 34.06, 80.43, SILITHUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(151626, {	-- Blue Qiraji War Tank (MOUNT!)
 						["cost"] = { { "i", 143865, 1 } },	-- Abyssal Crest
 						["collectible"] = false,
@@ -289,7 +289,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CALL_OF_THE_SCARAB, n(CALL_OF_THE_SCARAB_
 			n(117433, {	-- Warlord Gorchuk
 				["coord"] = { 33.96, 81.91, SILITHUS },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(151625, {	-- Red Qiraji War Tank (MOUNT!)
 						["cost"] = { { "i", 143865, 1 } },	-- Abyssal Crest
 						["collectible"] = false,

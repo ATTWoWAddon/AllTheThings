@@ -188,7 +188,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["coord"] = { 66.2, 51.6, DUSTWALLOW_MARSH },
 						["races"] = ALLIANCE_ONLY,
 						-- #if BEFORE 2.1.0
-						["g"] = ARTISAN_TAILORING,
+						["groups"] = ARTISAN_TAILORING,
 						-- #endif
 					}),
 				}),
@@ -237,13 +237,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(27214, {	-- A Disturbing Development
 					["qg"] = 23951,	-- Lieutenant Aden
-					-- CRIEVE NOTE: If someone completed the original quest chain pre-Cata, they are unable to pick this quest up.
 					["altQuests"] = { 11137 },	-- Defias in Dustwallow?
 					["sourceQuest"] = 27213,	-- The End of the Deserters
 					["coord"] = { 65.1, 47.1, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					-- CRIEVE NOTE: If someone completed the original quest chain pre-Cata, they are unable to pick this quest up.
 				}),
 				q(11136, {	-- A Disturbing Development
 					["qg"] = 23951,	-- Lieutenant Aden
@@ -932,7 +932,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1258,	-- ... and Bugs
 						1222,	-- Stinky's Escape
 					},
-					["description"] = "Don't forget to loot all the food and drinks off the tables.",
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 51.8, 93.7, STORMWIND_CITY },
@@ -940,6 +939,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 41.4, 89.2, STORMWIND_CITY },
 						-- #endif
 					},
+					["description"] = "Don't forget to loot all the food and drinks off the tables.",
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(30, 30, 15),
 					["groups"] = {
@@ -948,13 +948,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if BEFORE TBC
 				q(1132, {	-- Fiora Longears
-					-- This quest was moved to Darkshore after TBC Prepatch.
 					["qg"] = 4455,	-- Red Jack Flint
 					["coord"] = { 9.9, 57.9, WETLANDS },
 					["timeline"] = { REMOVED_3_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 18,
+					-- This quest was moved to Darkshore after TBC Prepatch.
 				}),
 				-- #endif
 				q(11211, {	-- Help for Mudsprocket
@@ -990,13 +990,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if BEFORE TBC
 				q(1135, {	-- Highperch Venom
-					-- This quest was moved to Darkshore after TBC Prepatch.
 					["qg"] = 4456,	-- Fiora Longears
 					["coord"] = { 66.5, 45.2, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_2_3_0 },
 					["maps"] = { THOUSAND_NEEDLES },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
+					-- This quest was moved to Darkshore after TBC Prepatch.
 					["groups"] = {
 						objective(1, {	-- 0/10 Highperch Venom Sac
 							["provider"] = { "i", 5809 },	-- Highperch Venom Sac
@@ -1223,8 +1223,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1302, {	-- James Hyal (2/2)
 					["qg"] = 5082,	-- Vincent Hyal
-					["sourceQuest"] = 1301,	-- James Hyal (1/2)
 					["altQuests"] = { 1282 },	-- They Call Him Smiling Jim
+					["sourceQuest"] = 1301,	-- James Hyal (1/2)
 					["coord"] = { 10.8, 60.4, WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1281,8 +1281,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4792,	-- "Swamp Eye" Jarl
 					["sourceQuest"] = 1206,	-- Jarl Needs Eyes
 					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
-					["cost"] = {{ "i", 217281, 1 }},	-- Moonsteel Broadsword
 					["timeline"] = { ADDED_1_15_1 },
+					["cost"] = {{ "i", 217281, 1 }},	-- Moonsteel Broadsword
 					["lvl"] = 30,
 					["groups"] = {
 						i(5016),	-- Artisan's Trousers
@@ -1328,7 +1328,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if BEFORE TBC
 				q(1133, {	-- Journey to Astranaar
-					-- This quest was moved to Darkshore after TBC Prepatch.
 					["qg"] = 4456,	-- Fiora Longears
 					["sourceQuest"] = 1132,	-- Fiora Longears
 					["coord"] = { 66.4, 45.2, DUSTWALLOW_MARSH },
@@ -1336,6 +1335,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
+					-- This quest was moved to Darkshore after TBC Prepatch.
 				}),
 				-- #endif
 				q(1947, {	-- Journey to the Marsh
@@ -1683,14 +1683,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 58.6, 60.2, DUSTWALLOW_MARSH },
 					["description"] = "If you deleted your fishing pole from the old version of the quest, you can get a new one by completing this quest.",
 					["timeline"] = { ADDED_3_1_0 },
+					["requireSkill"] = FISHING,
+					["learnedAt"] = 225,
+					["lvl"] = 35,
 					["OnUpdate"] = [[function(t)
 						if not t.collected and t.collectible and ]] .. WOWAPI_GetItemCount(45858) .. [[ == 0 then
 							t.collectible = false;
 						end
 					end]],
-					["requireSkill"] = FISHING,
-					["learnedAt"] = 225,
-					["lvl"] = 35,
 					["groups"] = {
 						i(45858, {	-- Nat's Lucky Fishing Pole
 							["timeline"] = { ADDED_3_1_0 },
@@ -1699,13 +1699,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(6607, {	-- Nat Pagle, Angler Extreme
 					["qg"] = 12919,	-- Nat Pagle
+					-- #if AFTER 3.1.0.9637
+					["altQuests"] = { 13826 },	-- Nat Pagle, Angler Extreme
+					-- #endif
 					["sourceQuests"] = {
 						6609,	-- I Got Nothin' Left!
 						6608,	-- You Too Good.
 					},
-					-- #if AFTER 3.1.0.9637
-					["altQuests"] = { 13826 },	-- Nat Pagle, Angler Extreme
-					-- #endif
 					["coord"] = { 58.6, 60.0, DUSTWALLOW_MARSH },
 					["maps"] = {
 						FERALAS,
@@ -2319,8 +2319,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(11186, {	-- Signs of Treachery?
 					["provider"] = { "i", 33115 },	-- Sealed Letter
 					["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
-					["cr"] = 23881,	-- Apothecary Cylla
 					["races"] = HORDE_ONLY,
+					["cr"] = 23881,	-- Apothecary Cylla
 					["lvl"] = 35,
 				}),
 				q(27229, {	-- SMASH BROODQUEEN
@@ -3293,7 +3293,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 12939,	-- Doctor Gustaf VanHowzen
 					["sourceQuest"] = 6625,	-- Alliance Trauma
 					["coord"] = { 67.7, 48.9, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
 					["description"] =
 						-- #if AFTER BFA
 						"Needs a minimum of 225 skill in Tailoring.",
@@ -3306,6 +3305,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #else
 						FIRST_AID,
 						-- #endif
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
 						objective(1, {	-- 0/15 Patients Saved

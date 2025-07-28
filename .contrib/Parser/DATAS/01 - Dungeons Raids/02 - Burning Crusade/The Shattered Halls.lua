@@ -65,16 +65,16 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["provider"] = { "i", 31239 },	-- Primed Key Mold
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SHADOWMOON_VALLEY },
-					["cr"] = 22037,	-- Smith Gorlunk
 					["races"] = ALLIANCE_ONLY,
+					["cr"] = 22037,	-- Smith Gorlunk
 					["lvl"] = lvlsquish(68, 68, 10),
 				}),
 				q(10755, {	-- Entry Into the Citadel [Horde]
 					["provider"] = { "i", 31241 },	-- Primed Key Mold
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SHADOWMOON_VALLEY },
-					["cr"] = 22037,	-- Smith Gorlunk
 					["races"] = HORDE_ONLY,
+					["cr"] = 22037,	-- Smith Gorlunk
 					["lvl"] = lvlsquish(68, 68, 10),
 				}),
 				q(29650, {	-- Fel Ember

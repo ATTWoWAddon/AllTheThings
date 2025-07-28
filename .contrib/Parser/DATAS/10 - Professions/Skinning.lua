@@ -232,7 +232,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 		["description"] = "Requires 150 Zandalari Skinning to get the item.",
 		["timeline"] = { ADDED_8_0_1 },
 		["races"] = HORDE_ONLY,
-		["g"] = {
+		["groups"] = {
 			recipe(257148),	-- Skinning Technique: Leather Gathering (Rank 3)
 		},
 	}),
@@ -242,16 +242,16 @@ root(ROOTS.Professions, prof(SKINNING, {
 		["description"] = "Requires 150 Kul Tiran Skinning to get the item.",
 		["timeline"] = { ADDED_8_0_1 },
 		["races"] = ALLIANCE_ONLY,
-		["g"] = {
+		["groups"] = {
 			recipe(257148),	-- Skinning Technique: Leather Gathering (Rank 3)
 		},
 	}),
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2 }, ["requireSkill"] = SKINNING }, {
 		n(QUESTS, {
 			q(70363, {	-- Dragon Isles Skinning
-				["description"] = "Do NOT skin any Dragon Isles creatures. This quest can only be picked up PRIOR to learning Dragon Isles Skinning.",
 				["provider"] = { "n", 192558 },	-- Toninaar
 				["coord"] = { 76.7, 34.8, THE_WAKING_SHORES },
+				["description"] = "Do NOT skin any Dragon Isles creatures. This quest can only be picked up PRIOR to learning Dragon Isles Skinning.",
 				["lockCriteria"] = { 1, "spellID", 366263},	-- Dragon Isles Skinning
 			}),
 			q(70034, {	-- Artisan's Supply: Salamanther Scale
@@ -266,12 +266,12 @@ root(ROOTS.Professions, prof(SKINNING, {
 				["coord"] = { 73.3, 69.7, THE_WAKING_SHORES },
 			}),
 			q(70193, {	-- Specialized Secrets: Skinning
-				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["provider"] = { "n", 193110 },	-- Khadin
+				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
 				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
 				["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
 				["isRepeatable"] = true,
-				["g"] = {
+				["groups"] = {
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
@@ -282,7 +282,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 			["coord"] = { 28.8, 60.4, VALDRAKKEN },
 			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
 			["isWeekly"] = true,
-			["g"] = {
+			["groups"] = {
 				i(199128),	-- Skinning Field Notes
 			},
 		},{
@@ -293,7 +293,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["g"] = sharedData({ ["cost"] = { { "c", DF_SKINNING_KNOWLEDGE, 1 } }, }, {
+			["groups"] = sharedData({ ["cost"] = { { "c", DF_SKINNING_KNOWLEDGE, 1 } }, }, {
 				r(383090),	-- Aileron Seamoth Lure
 				r(383128),	-- Bottled Pheromones
 				r(375787),	-- Cerulean Spinefish Lure
@@ -316,15 +316,15 @@ root(ROOTS.Professions, prof(SKINNING, {
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
-			["g"] = {
+			["groups"] = {
 				currency(DF_SKINNING_KNOWLEDGE),
 			},
 		},{
 			i(199128),	-- Skinning Field Notes
 			q(74114, {	-- DF Inscription Order: Skinning
 				["name"] = "DF Inscription Order: Skinning",
-				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 201023 },	-- Draconic Treatise on Skinning
+				["description"] = "Requires a crafting order from Inscription.",
 			}),
 			q(70381, {	-- DF Weekly Skinning Knowledgepoint #1
 				["name"] = "DF Weekly Skinning Knowledgepoint #1",
@@ -358,7 +358,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 			["provider"] = { "n", 219083 },	-- Ginnad <Skinning Trainer>
 			["coord"] = { 54.5, 57.6, DORNOGAL },
 			["isWeekly"] = true,
-			["g"] = {
+			["groups"] = {
 				i(224807),	-- Algari Skinner's Notes
 			},
 		},{
@@ -370,7 +370,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["g"] = sharedData({ ["cost"] = {{ "c", TWW_SKINNING_KNOWLEDGE, 1 }} }, {
+			["groups"] = sharedData({ ["cost"] = {{ "c", TWW_SKINNING_KNOWLEDGE, 1 }} }, {
 				r(442647),	-- Arathor Hammerfish Lure
 				r(442654),	-- Beast Lure Scent
 				r(442615),	-- Carve Meat
@@ -396,63 +396,63 @@ root(ROOTS.Professions, prof(SKINNING, {
 			o(455948, {	-- Arathi Craftsman's Spokeshave
 				["coord"] = { 42.2, 53.9, HALLOWFALL },
 				["questID"] = 83919,
-				["g"] = {
+				["groups"] = {
 					i(226345),	-- Arathi Craftsman's Spokeshave
 				},
 			}),
 			o(455949, {	-- Arathi Tanning Agent
 				["coord"] = { 49.3, 62.1, HALLOWFALL },
 				["questID"] = 83918,
-				["g"] = {
+				["groups"] = {
 					i(226344),	-- Arathi Tanning Agent
 				},
 			}),
 			o(455951, {	-- Artisan's Drawing Knife
 				["coord"] = { 47.3, 28.3, THE_RINGING_DEEPS },
 				["questID"] = 83916,
-				["g"] = {
+				["groups"] = {
 					i(226342),	-- Artisan's Drawing Knife
 				},
 			}),
 			o(455946, {	-- Carapace Shiner
 				["coord"] = { 56.5, 55.2, AZJ_KAHET },
 				["questID"] = 83921,
-				["g"] = {
+				["groups"] = {
 					i(226347),	-- Carapace Shiner
 				},
 			}),
 			o(455953, {	-- Dornogal Carving Knife
 				["coord"] = { 28.7, 51.7, DORNOGAL },
 				["questID"] = 83914,
-				["g"] = {
+				["groups"] = {
 					i(226340),	-- Dornogal Carving Knife
 				},
 			}),
 			o(455952, {	-- Earthen Worker's Beam
 				["coord"] = { 60.0, 28.0, ISLE_OF_DORN },
 				["questID"] = 83915,
-				["g"] = {
+				["groups"] = {
 					i(226341),	-- Earthen Worker's Beams
 				},
 			}),
 			o(455950, {	-- Fungarian's Rich Tannin
 				["coord"] = { 65.7, 61.9, THE_RINGING_DEEPS },
 				["questID"] = 83917,
-				["g"] = {
+				["groups"] = {
 					i(226343),	-- Fungarian's Rich Tannin
 				},
 			}),
 			o(455947, {	-- Nerubian's Slicking Iron
 				["coord"] = { 45.5, 49.4, NERUBAR },
 				["questID"] = 83920,
-				["g"] = {
+				["groups"] = {
 					i(226346),	-- Nerubian's Slicking Iron
 				},
 			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
-			["g"] = {
+			["groups"] = {
 				currency(TWW_SKINNING_KNOWLEDGE),
 			},
 		},{

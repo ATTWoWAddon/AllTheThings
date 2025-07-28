@@ -211,7 +211,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						},
 						["races"] = HORDE_ONLY,
 						-- #if BEFORE 2.1.0
-						["g"] = ARTISAN_TAILORING,
+						["groups"] = ARTISAN_TAILORING,
 						-- #endif
 					}),
 				}),
@@ -342,8 +342,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "i", 3668 },	-- Assassin's Contract
 					["coord"] = { 50.8, 58.8, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cr"] = 2434,	-- Shadowy Assassin
 					["races"] = ALLIANCE_ONLY,
+					["cr"] = 2434,	-- Shadowy Assassin
 					["lvl"] = 30,
 				}),
 				q(523, {	-- Baron's Demise (Alterac Mountains)
@@ -366,12 +366,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2438,	-- Bartolo Ginsetti
 					["coord"] = { 49.4, 55.5, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 2997, 1 },	-- Bolt of Woolen Cloth
 						{ "i", 2321, 1 },	-- Fine Thread
 						{ "i", 3719, 1 },	-- Hillman's Cloak
 					},
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 29,
 					["groups"] = {
 						objective(4, {	-- 0/10 Yeti Fur
@@ -1039,9 +1039,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28605, {	-- Domination
-					["providers"] = {
-						{ "n", 2278 },	-- Melisara
-						{ "n", 49035 },	-- Lilith
+					["qgs"] = {
+						2278,	-- Melisara
+						49035,	-- Lilith
 					},
 					["sourceQuests"] = {
 						28604,	-- Deception and Trickery
@@ -1113,13 +1113,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
-					["classes"] = { SHAMAN },
 					["cost"] = {
 						{ "i", 7067, 1 },	-- Elemental Earth
 						{ "i", 7068, 1 },	-- Elemental Fire
 						{ "i", 7069, 1 },	-- Elemental Air
 						{ "i", 7070, 1 },	-- Elemental Water
 					},
+					["classes"] = { SHAMAN },
 					["lvl"] = 50,
 				})),
 				-- #endif
@@ -1916,8 +1916,8 @@ Click Leave vehicle and repeat steps 3-8"]],
 					["sourceQuest"] = 27483,	-- Practical Vengeance
 					["description"] = "Must complete part of the Silverpine Forest questline for the quest item to drop.",
 					["timeline"] = { ADDED_4_0_3 },
-					["cr"] = 45728,	-- Arcane Remnant
 					["races"] = HORDE_ONLY,
+					["cr"] = 45728,	-- Arcane Remnant
 					["groups"] = {
 						objective(1, {	-- 0/8 Arcane Remnant
 							["provider"] = { "i", 61311 },	-- Arcane Remnant
@@ -1986,8 +1986,8 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(28154, {	-- Muckgill's Flipper or Something...
 					["provider"] = { "i", 63090 },	-- Muckgill's Flipper
 					["timeline"] = { ADDED_4_0_1 },
-					["cr"] = 47759,	-- Muckgill
 					["races"] = HORDE_ONLY,
+					["cr"] = 47759,	-- Muckgill
 					["groups"] = {
 						i(65691, {	-- Floppy Shoulderguards
 							["timeline"] = { ADDED_4_0_3 },
@@ -2049,13 +2049,13 @@ Click Leave vehicle and repeat steps 3-8"]],
 				q(28356, {	-- Preemptive Strike
 					["provider"] = { "i", 63686 },	-- Daggerspine Attack Plans
 					["timeline"] = { ADDED_4_0_1 },
+					["races"] = HORDE_ONLY,
 					["crs"] = {
 						2370,	-- Daggerspine Screamer
 						2369,	-- Daggerspine Shorehunter
 						2368,	-- Daggerspine Shorestalker
 						2371,	-- Daggerspine Siren
 					},
-					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/15 Daggerspine Naga slain
 							["providers"] = {
@@ -2185,9 +2185,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 					["lvl"] = 20,
 				}),
 				q(1067, {	-- Return to Thunder Bluff
-					["providers"] = {
-						{ "n", 2216 },	-- Apothecary Lydon
-						{ "n", 5588 },	-- Lydon's Toxin
+					["qgs"] = {
+						2216,	-- Apothecary Lydon
+						5588,	-- Lydon's Toxin
 					},
 					["sourceQuest"] = 1066,	-- Blood of Innocents
 					["coord"] = { 61.4, 19.2, HILLSBRAD_FOOTHILLS },
@@ -2489,8 +2489,8 @@ Click Leave vehicle and repeat steps 3-8"]],
 					["sourceQuest"] = 6681,	-- The Manor, Ravenholdt
 					["coord"] = { 85.2, 79.4, ALTERAC_MOUNTAINS },
 					["maxReputation"] = { FACTION_RAVENHOLDT, FRIENDLY },	-- Ravenholdt, Friendly.
-					["cost"] = { { "i", 17124, 1 } },	-- Syndicate Emblem
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 17124, 1 } },	-- Syndicate Emblem
 					["classes"] = { ROGUE },
 					["repeatable"] = true,
 					["lvl"] = 24,
@@ -2543,8 +2543,8 @@ Click Leave vehicle and repeat steps 3-8"]],
 					["provider"] = { "i", 63250 },	-- The Battle for Hillsbrad
 					["coord"] = { 37.6, 63.7, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
-					["cr"] = 47789,	-- Clerk Horrace Whitesteed
 					["races"] = HORDE_ONLY,
+					["cr"] = 47789,	-- Clerk Horrace Whitesteed
 					-- TODO: does this always drop or is it only available after "No One Here Gets Out Alive" ?
 				}),
 				-- #if AFTER CATA
@@ -2927,8 +2927,8 @@ Click Leave vehicle and repeat steps 3-8"]],
 					["qg"] = 2333,	-- Henchman Valik
 					["altQuests"] = { 533 },	-- Infiltration (Can only be completed while on this quest)
 					["coord"] = { 57.15, 69.50, ALTERAC_MOUNTAINS },
-					["cost"] = { { "i", 3703, 1 } },	-- Southshore Stout
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 3703, 1 } },	-- Southshore Stout
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 					["groups"] = {

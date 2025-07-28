@@ -71,32 +71,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				q(10361, {	-- A Donation of Mageweave
 					["qg"] = 20612,	-- Sorim Lightsong
 					["coord"] = { 56.6, 52.5, SILVERMOON_CITY },
-					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["timeline"] = { REMOVED_4_0_3},
+					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 				}),
 				q(10362, {	-- A Donation of Runecloth
 					["qg"] = 20612,	-- Sorim Lightsong
 					["coord"] = { 56.6, 52.5, SILVERMOON_CITY },
-					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["timeline"] = { REMOVED_4_0_3},
+					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
 				}),
 				q(10360, {	-- A Donation of Silk
 					["qg"] = 20612,	-- Sorim Lightsong
 					["coord"] = { 56.6, 52.5, SILVERMOON_CITY },
-					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
 					["timeline"] = { REMOVED_4_0_3},
+					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 26,
 				}),
 				q(10359, {	-- A Donation of Wool
 					["qg"] = 20612,	-- Sorim Lightsong
 					["coord"] = { 56.6, 52.5, SILVERMOON_CITY },
-					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
 					["timeline"] = { REMOVED_4_0_3},
+					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -140,8 +140,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 20612,	-- Sorim Lightsong
 					["sourceQuest"] = 10362,	-- A Donation of Runecloth
 					["coord"] = { 56.6, 52.5, SILVERMOON_CITY },
-					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["timeline"] = { REMOVED_4_0_3},
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
@@ -158,6 +158,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						4949,	-- Thrall <Warchief>
 						-- #endif
 					},
+					["sourceQuest"] = 9626,	-- Meeting the Orcs
 					["coords"] = {
 						-- #if AFTER LEGION
 						{ 48.6, 71.0, ORGRIMMAR },	-- High Overlord Saurfang
@@ -169,7 +170,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						{ 31.6, 37.8, ORGRIMMAR },	-- Thrall <Warchief>
 						-- #endif
 					},
-					["sourceQuest"] = 9626,	-- Meeting the Orcs
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
@@ -352,9 +352,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9691,	-- Return to Silvermoon
 					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLACKFATHOM_DEEPS, GHOSTLANDS, RAGEFIRE_CHASM, SHADOWFANG_KEEP },
 					["cost"] = { { "i", 24223, 1 } },	-- Bloodvalor's Notes
-					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(20, 20, 1),
@@ -624,7 +624,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(17630, {	-- Innkeeper Jovia <Innkeeper>
 					["coord"] = { 67.85, 72.9, SILVERMOON_CITY },	-- Wayfarer's Rest
 					["races"] = HORDE_ONLY,
-					["group"] = {
+					["groups"] = {
 						i(1179),	-- Ice Cold Milk
 					},
 				}),

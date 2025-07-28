@@ -31,7 +31,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 				221848,	-- Warpweaver Voxin <Transmogrifier> (Dornogal)
 			},
 			["coord"] = { 74.4, 56.2, VALDRAKKEN },	-- Add all Coords if you want to..
-			["g"] = {
+			["groups"] = {
 				-- SEASON 1 --
 				spell(245743, {	-- Stylish!
 					i(151116, {	-- Fashionable Undershirt
@@ -425,8 +425,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 			}),
 			q(76361, {	-- Fashion Week
 				["provider"] = { "n", 199261 },	-- Holiday Enthusiast
-				["coord"] = { 31.5, 63.1, VALDRAKKEN },
 				["sourceQuest"] = 76308,	-- The Trial of Style
+				["coord"] = { 31.5, 63.1, VALDRAKKEN },
 				["description"] = "Blizzard messed up here, this should've been the first quest and breadcrumb.",
 			}),
 			q(76214, {	-- Work It

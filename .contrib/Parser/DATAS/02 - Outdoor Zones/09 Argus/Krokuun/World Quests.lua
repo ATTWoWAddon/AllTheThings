@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			q(47724),	-- Besieged
 			q(47496),	-- Bunker Buster
 			q(47624, {	-- Bury It
-				["g"] = {
+				["groups"] = {
 					o(271114, {	-- Eredar Bones
 						i(151061),	-- Chewed Eredar Bones (QI!)
 					}),
@@ -55,7 +55,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sym"] = {{"select","npcID",123464}},	-- Select the WQ NPC
 			}),
 			q(47563, {	-- Spirits of the Fallen
-				["g"] = {
+				["groups"] = {
 					i(152995),	-- Sacred Stone (QI!)
 				},
 			}),
@@ -70,7 +70,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sym"] = {{"select","npcID",124804}},	-- Select the WQ NPC
 			}),
 			q(47712, {	-- The Devastator
-				["g"] = {
+				["groups"] = {
 					i(151188),	-- Devastator Energy Cell (QI!)
 				},
 			}),
@@ -85,13 +85,13 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			}),
 			q(48318, {	-- Work Order: Lightblood Elixirs
 				["requireSkill"] = ALCHEMY,
-				["g"] = {
+				["groups"] = {
 					i(151658),	-- Recipe: Lightblood Elixir [Rank 2] (RECIPE!)
 				},
 			}),
 			q(48323, {	-- Work Order: Tears of the Naaru
 				["requireSkill"] = ALCHEMY,
-				["g"] = {
+				["groups"] = {
 					i(151704),	-- Recipe: Tears of the Naaru [Rank 2] (RECIPE!)
 				},
 			}),

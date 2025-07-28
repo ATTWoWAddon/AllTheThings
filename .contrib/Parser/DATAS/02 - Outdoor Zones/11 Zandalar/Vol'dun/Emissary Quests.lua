@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 56.68, 49.74, VOLDUN },
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
-				["g"] = {
+				["groups"] = {
 					i(166290, {	-- Voldunai Supplies
 						i(166703),	-- Goldtusk Inn Breakfast Buffet (TOY!)
 						i(166880),	-- Meerah's Jukebox (TOY!)
@@ -24,7 +24,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 56.68, 49.74, VOLDUN },
 				["races"] = HORDE_ONLY,
 				["isWorldQuest"] = true,
-				["g"] = {
+				["groups"] = {
 					i(165864, {	-- Voldunai Equipment Cache
 						["sym"] = {
 							{"select", "mapID", VOLDUN},

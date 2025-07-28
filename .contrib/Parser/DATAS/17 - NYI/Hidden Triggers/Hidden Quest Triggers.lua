@@ -339,13 +339,13 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(42212),	-- Fire Mage - Flavor Event 03
 		q(42860),	-- Tracking - God-King Scene - something happened around turning in #38811/39791 that triggered some /yells from God-King Skovald
 		q(39017, {	-- Triggered when turning in first DK artifact completion quest (likely triggers after any first artifact quest for DK)
-			-- Added sourcequests in here since this HQT unlocks the Legion DK Flight Path...
 			["name"] = "Flight Path Unlock",
 			["sourceQuests"] = {
 				40740,	-- The Dead and the Damned [Blood Artifact]*
 				38990,	-- The Call of Icecrown [Frost Artifact] TODO: confirm
 				40930,	-- Apocalypse [Unholy Artifact] TODO: confirm
 			},
+			-- Added sourcequests in here since this HQT unlocks the Legion DK Flight Path...
 		}),
 	})),
 

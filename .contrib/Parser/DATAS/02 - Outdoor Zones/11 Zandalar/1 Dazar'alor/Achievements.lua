@@ -17,7 +17,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["description"] = "The best place to get this is in the \"Council Chambers\", where all six shrines are in one room.  Head to the coordinates provided and enter the building.  Turn left and go upstairs.  There are shrines around the perimeter of the room for each loa.",
 				["coord"] = { 40.8, 11.4, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					crit(40619, {	-- Boon of Gonk
 						["sourceQuests"] = {
 							47439,	-- Gonk, Lord of the Pack

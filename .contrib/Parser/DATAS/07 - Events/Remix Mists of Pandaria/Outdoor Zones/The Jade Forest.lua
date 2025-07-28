@@ -4,7 +4,7 @@
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(THE_JADE_FOREST, {
 		["icon"] = 617824,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(19882),	-- Campaign: The Jade Forest [A] (automated)
 				ach(19883),	-- Campaign: The Jade Forest [H] (automated)
@@ -39,7 +39,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						19912,	-- Order of the Cloud Serpent
 						19962,	-- Tour The Jade Forest
 					}},
-					["g"] = {
+					["groups"] = {
 						i(220777),	-- Cherry Blossom Trail (TOY!)
 					},
 				}),
@@ -61,56 +61,56 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 			n(QUESTS, {
 				q(81638, {	-- Home Is Where the Hearthstone Is
-					["sourceQuests"] = { 79440 },	-- Recalling the War (need to confirm) we can use retail errors to confirm
 					["provider"] = { "n", 65907 },	-- Jiayi Applebloom
+					["sourceQuests"] = { 79440 },	-- Recalling the War (need to confirm) we can use retail errors to confirm
 					["coord"] = { 44.8, 84.4, THE_JADE_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(80012, {	-- Dragonriding
-					["sourceQuests"] = { 79440 },	-- Recalling the War
 					["provider"] = { "n", 218468 },	-- Moratari
+					["sourceQuests"] = { 79440 },	-- Recalling the War
 					["coord"] = { 28.5, 14.0, THE_JADE_FOREST },	-- missing ally coords
 				}),
 				q(80013, {	-- How to Glide with Your Dragon
-					["sourceQuests"] = { 80012 },	-- Dragonriding
 					["provider"] = { "n", 218469 },	-- Lord Anderstrasz
+					["sourceQuests"] = { 80012 },	-- Dragonriding
 					["coord"] = { 65.2, 37.2, THE_JADE_FOREST },
-					["g"] = {
+					["groups"] = {
 						i(216712),	-- Bronze Timepiece (QI!)
 					},
 				}),
 				q(80015, {	-- How to Dive with Your Dragon
-					["sourceQuests"] = { 80013 },	-- How to Glide with Your Dragon
 					["provider"] = { "n", 218469 },	-- Lord Anderstrasz
+					["sourceQuests"] = { 80013 },	-- How to Glide with Your Dragon
 					["coord"] = { 65.2, 37.2, THE_JADE_FOREST },
-					["g"] = {
+					["groups"] = {
 						i(216712),	-- Bronze Timepiece (QI!)
 					},
 				}),
 				q(80016, {	-- The Need For Higher Velocities
-					["sourceQuests"] = { 80015 },	-- How to Dive with Your Dragon
 					["provider"] = { "n", 218469 },	-- Lord Anderstrasz
+					["sourceQuests"] = { 80015 },	-- How to Dive with Your Dragon
 					["coord"] = { 65.2, 37.2, THE_JADE_FOREST },
-					["g"] = {
+					["groups"] = {
 						i(216712),	-- Bronze Timepiece (QI!)
 					},
 				}),
 				q(80017, {	-- The Need For Higher Altitudes
-					["sourceQuests"] = { 80016 },	-- The Need For Higher Velocities
 					["provider"] = { "n", 218469 },	-- Lord Anderstrasz
+					["sourceQuests"] = { 80016 },	-- The Need For Higher Velocities
 					["coord"] = { 65.2, 37.2, THE_JADE_FOREST },
-					["g"] = {
+					["groups"] = {
 						i(216712),	-- Bronze Timepiece (QI!)
 					},
 				}),
 				q(80018, {	-- Fashionable Flying
-					["sourceQuests"] = { 80017 },	-- The Need For Higher Altitudes
 					["provider"] = { "n", 218469 },	-- Lord Anderstrasz
+					["sourceQuests"] = { 80017 },	-- The Need For Higher Altitudes
 					["coord"] = { 65.2, 37.2, THE_JADE_FOREST },
 				}),
 				q(80349, {	-- Time to Return
-					["sourceQuests"] = { 80018 },	-- Fashionable Flying
 					["provider"] = { "n", 218469 },	-- Lord Anderstrasz
+					["sourceQuests"] = { 80018 },	-- Fashionable Flying
 					["coord"] = { 65.2, 37.2, THE_JADE_FOREST },
 				}),
 				q(79489, {	-- Gems of Power
@@ -123,42 +123,42 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["sourceQuests"] = { 80196 },	-- Extract a Gem
 				}),
 				q(78893, {	-- A Scrap of Bronze
-					["sourceQuests"] = { 79440 },	-- Recalling the War
 					["provider"] = { "i", 210526 },	-- Unraveling Tunic (QI!)
-					["g"] = {
+					["sourceQuests"] = { 79440 },	-- Recalling the War
+					["groups"] = {
 						i(217174),	-- Bronze (QI!)
 					},
 				}),
 				q(81976, {	-- Bazaar, Isn't It?
-					--["sourceQuests"] = { xx },	-- TODO: some of level up/turn in HQTs?
 					["provider"] = { "n", 222186 },	-- Nostwin
+					--["sourceQuests"] = { xx },	-- TODO: some of level up/turn in HQTs?
 					["coord"] = { 45.8, 84.7, THE_JADE_FOREST },	-- missing horde coords
-					["g"] = {
+					["groups"] = {
 						i(217930),	-- Nostwin's Voucher
 					},
 				}),
 				q(78894, {	-- Infinite Growth
-					--["sourceQuests"] = { 81976 },	-- Bazaar, Isn't It? / unsure since I didn't teleport right after I get voucher
 					["provider"] = { "n", 213664 },	-- Momentus
+					--["sourceQuests"] = { 81976 },	-- Bazaar, Isn't It? / unsure since I didn't teleport right after I get voucher
 					["coord"] = { 42.5, 27.3, THE_JADE_FOREST },
 				}),
 				q(83775, {	-- Infinite Growth II
-					["lvl"] = { 50 },
-					["sourceQuests"] = { 78894 },	-- Infinite Growth
 					["provider"] = { "n", 213664 },	-- Momentus
+					["sourceQuests"] = { 78894 },	-- Infinite Growth
 					["coord"] = { 42.5, 27.3, THE_JADE_FOREST },
+					["lvl"] = { 50 },
 				}),
 				q(83776, {	-- Infinite Growth III
-					["lvl"] = { 60 },
-					["sourceQuests"] = { 83775 },	-- Infinite Growth II
 					["provider"] = { "n", 213664 },	-- Momentus
+					["sourceQuests"] = { 83775 },	-- Infinite Growth II
 					["coord"] = { 42.5, 27.3, THE_JADE_FOREST },
+					["lvl"] = { 60 },
 				}),
 				q(83777, {	-- Infinite Growth IV
-					["lvl"] = { 70 },
-					["sourceQuests"] = { 83776 },	-- Infinite Growth III
 					["provider"] = { "n", 213664 },	-- Momentus
+					["sourceQuests"] = { 83776 },	-- Infinite Growth III
 					["coord"] = { 42.5, 27.3, THE_JADE_FOREST },
+					["lvl"] = { 70 },
 				}),
 				q(80441, {	-- Aid the Order of the Cloud Serpent
 					["provider"] = { "n", 58564 },	-- Elder Anli
@@ -175,15 +175,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				q(83793, {	-- Aid the Jinyu [A]
 					["provider"] = { "n", 54960 },	-- Elder Lusshan
 					["coord"] = { 58.8, 80.6, THE_JADE_FOREST },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
+					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),
 				q(83795, {	-- Aid the Hozen [H]
 					["provider"] = { "n", 56336 },	-- Chief Kah Kah
 					["coord"] = { 28.0, 47.0, THE_JADE_FOREST },
-					["races"] = HORDE_ONLY,
 					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
+					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 				}),
 			}),

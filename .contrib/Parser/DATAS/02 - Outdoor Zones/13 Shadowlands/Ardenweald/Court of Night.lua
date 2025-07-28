@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				n(VENDORS, {
 					n(162447, {	-- Spindlenose <Court of Night Quartermaster>
 						["coord"] = { 59.6, 52.9, ARDENWEALD },
-						["g"] = bubbleDownRep(FACTION_COURT_OF_NIGHT, {
+						["groups"] = bubbleDownRep(FACTION_COURT_OF_NIGHT, {
 							{		-- Neutral
 								ChronicleOfLostMemories({	-- Chronicle of Lost Memories
 									["cost"] = { { "c", GRATEFUL, 35 } },

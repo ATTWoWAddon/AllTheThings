@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			ach(40825),		-- Explore The Ringing Deeps (automated)
 			ach(40614, {	-- Gobblin' with Glublurp
 				["coord"] = { 44.3, 50.2, THE_RINGING_DEEPS },
-				["g"] = {
+				["groups"] = {
 					i(225930, {	-- Glimmering Crystal
 						["coord"] = { 60.0, 41.41, THE_RINGING_DEEPS },
 					}),

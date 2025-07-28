@@ -57,7 +57,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 76350 },	-- The Chronosmith
 					["provider"] = { "n", 205679 },	-- Ironus Coldsteel
 					["coord"] = { 52.5, 80.4, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(208469),	-- At-a-Stall Crystal (QI!)
 						i(208466),	-- Celestial Carrot (QI!)
 						i(208463),	-- Helm of Somnation (QI!)
@@ -83,7 +83,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 76355 },	-- If a Hammer Can Break a Lock...
 					["provider"] = { "n", 208825 },	-- Ironus Coldsteel
 					["coord"] = { 52.2, 80.6, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(206763),	-- Kabluey (PET!)
 						i(208482),	-- The Heart of the Timeforge (QI!)
 					}
@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 76355 },	-- If a Hammer Can Break a Lock...
 					["provider"] = { "n", 208825 },	-- Ironus Coldsteel
 					["coord"] = { 52.2, 80.6, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(208100),	-- Seashellamayne the Shattered (QI!)
 					}
 				}),
@@ -102,7 +102,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 75935 },	-- Time, Signature
 					["provider"] = { "n", 204990 },	-- Melly Teletone
 					["coord"] = { 52.3, 81.8, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(206520),	-- Beverage for Pedgi (QI!)
 						i(206524),	-- Eonized Latte (QI!)
 						i(206523),	-- Five-Eon Energy (QI!)
@@ -113,7 +113,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 77432 },	-- Pedgi the Parched
 					["provider"] = { "n", 204990 },	-- Melly Teletone
 					["coord"] = { 52.3, 81.8, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(208236),	-- Melly's Metronographer (QI!)
 						i(208235),	-- Pedgi's Spare Sunglasses (QI!)
 					},
@@ -127,7 +127,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 75966 },	-- Compose Yourself
 					["provider"] = { "n", 204987 },	-- Pedgi
 					["coord"] = { 53.8, 87.7, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(204263),	-- Time Grime (QI!)
 					},
 				}),
@@ -143,7 +143,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 204990 },	-- Melly Teletone
 					["coord"] = { 53.7, 87.7, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(208401),	-- Melly's Metronographer++ (QI!)
 					},
 				}),
@@ -151,7 +151,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 76552 },	-- In Sync
 					["provider"] = { "n", 204990 },	-- Melly Teletone
 					["coord"] = { 53.7, 87.7, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(206997),	-- Gilded Sunglasses (COSMETIC!)
 						i(208401),	-- Melly's Metronographer++ (QI!)
 					},
@@ -162,14 +162,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(76269, {	-- A Mislaid Egg
 					["provider"] = { "n", 205424 },	-- Chromie
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(206394),	-- Red Dragon Egg (QI!)
 					},
 				}),
 				q(76266, {	-- A Multitude of Tasks
 					["provider"] = { "n", 205424 },	-- Chromie
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(206474),	-- Smelly Cheese
 						i(206447),	-- Task List for Adventurers (QI!)
 					},
@@ -181,14 +181,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(75466, {	-- Lost Time-Lost Vikings
 					["provider"] = { "n", 203769 },	-- Bartender Bob
 					["coord"] = { 52.1, 81.5, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(204989),	-- Eric's Camera (QI!)
 					},
 				}),
 				q(75988, {	-- Lucky Hearthsone Card
 					["provider"] = { "n", 205604 },	-- Anduin Wrynn
 					["coord"] = { 52.1, 81.5, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(206022),	-- Anduin's Lucky Hearthstone Card (QI!)
 					},
 				}),
@@ -199,7 +199,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(76162, {	-- Missing Mojo
 					["provider"] = { "n", 205793 },	-- Vol'jin
 					["coord"] = { 52.3, 81.6, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(206171),	-- Vol'jin's Mojo (QI!)
 					},
 				}),
@@ -214,7 +214,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(75990, {	-- Star-Crossed Lovers
 					["provider"] = { "n", 205424 },	-- Chromie
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						o(404232, {	-- Pale Duskblossom
 							i(206695),	-- Pale Duskblossom (QI!)
 						}),
@@ -223,14 +223,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(75971, {	-- Squeaky Toy of Time and Space
 					["provider"] = { "n", 205769 },	-- Soridormi
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(206161),	-- Time-Displaced Toy (QI!)
 					},
 				}),
 				q(75989, {	-- The Black Prince Parade
 					["provider"] = { "n", 203769 },	-- Bartender Bob
 					["coord"] = { 52.1, 81.5, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(206683),	-- Wrathion's Tab (QI!)
 					},
 				}),
@@ -249,7 +249,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(75987, {	-- Woolomancer
 					["provider"] = { "n", 205769 },	-- Soridormi
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						o(403541, {	-- Wand of Mass Polymorph
 							i(206368),	-- Wand of Mass Polymorph (QI!)
 						}),
@@ -261,7 +261,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 59.8, 70.6, THALDRASZUS },
 					["questID"] = 76170,
 					["isDaily"] = true,
-					["g"] = {
+					["groups"] = {
 						i(208168),	-- Black Blade of K'tanth
 						i(208172),	-- Bloodstained Runecrook
 						i(208170),	-- Runeaxe of the Last Resistance
@@ -277,7 +277,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["questID"] = 75479,
 					["isDaily"] = true,
-					["g"] = {
+					["groups"] = {
 						i(206993),	-- Investi-gator's Pocketwatch (TOY!) / confirmed in discord #errors report
 					},
 				}),
@@ -287,7 +287,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 75986 },	-- Feats Per Minute
 					["coord"] = { 52.1, 81.4, THALDRASZUS },
 					["provider"] = {"i",208449},	-- Melly's Metronographer+++ (QI!)
-					["g"] = {
+					["groups"] = {
 						i(208448, {	-- Infinitea
 							["description"] = "Timer start right after you buy it"
 						}),
@@ -299,7 +299,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						76356,	-- Sword Stealing Searers
 					},
 					["coord"] = { 52.2, 80.8, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(12837, {	-- Plans: Masterwork Stormhammer (RECIPE!)
 							["cost"] = {
 								{ "i", 12655, 5 },	-- 5x Enchanted Thorium Bar
@@ -334,7 +334,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				n(204990, {	-- Melly Teletone
 					["coord"] = { 52.2, 81.4, THALDRASZUS },
-					["g"] = {
+					["groups"] = {
 						i(208449, {	-- Melly's Metronographer+++ (QI!)
 							["description"] = "Use next to 'Bartender Bob'.",
 						}),

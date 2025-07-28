@@ -193,7 +193,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				169484,	-- Benthic Spaulders
 				169483,	-- Benthic Treads
 			}},
-			["g"] = {
+			["groups"] = {
 				i(169351),	-- Sandclaw Nestseeker (PET!)
 			},
 		}),

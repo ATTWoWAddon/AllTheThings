@@ -415,7 +415,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 		["coord"] = { 51.55, 27.23, GORGROND },
 		["isRaid"] = true,
 		["lvl"] = 100,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(11740, {["timeline"] = {ADDED_7_2_0}}),	-- Make it W-orc W-orc (Blackrock Foundry)
 				ach(8989, {	-- Slagworks
@@ -476,7 +476,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						77231,	-- Enforcer Sorka
 						77477,	-- Marak the Blooded
 					},
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(115494)),	-- Draenic Thaumaturgical Orb
 					},
 				}),
@@ -725,7 +725,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 							37030,	-- Sigil of the Black Hand (Heroic)
 							37031,	-- Sigil of the Black Hand (Mythic)
 						},
-						["g"] = {
+						["groups"] = {
 							i(118382),	-- Ember of the Mountain (QI!)
 							i(118383),	-- Heart of Stone (QI!)
 							i(118384),	-- Sliver of Iron (QI!)
@@ -736,7 +736,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["_drop"] = { "g" },	-- API lists all 3 token types
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(120215, {	-- Helm of the Iron Conqueror
 								["sym"] = SymModID(SYM_CONQ_HELM, 3),
 							}),
@@ -759,7 +759,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["_drop"] = { "g" },	-- API lists all 3 token types
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(120215, {	-- Helm of the Iron Conqueror
 								["sym"] = SymModID(SYM_CONQ_HELM, 3),
 							}),
@@ -782,7 +782,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
+						["groups"] = {
 							i(120225, {	-- Helm of the Iron Protector
 								["sym"] = SymModID(SYM_PROT_HELM, 3),
 							}),
@@ -805,7 +805,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
+						["groups"] = {
 							i(120225, {	-- Helm of the Iron Protector
 								["sym"] = SymModID(SYM_PROT_HELM, 3),
 							}),
@@ -828,7 +828,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
+						["groups"] = {
 							i(120218, {	-- Helm of the Iron Vanquisher
 								["sym"] = SymModID(SYM_VANQ_HELM, 3),
 							}),
@@ -851,7 +851,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
+						["groups"] = {
 							i(120218, {	-- Helm of the Iron Vanquisher
 								["sym"] = SymModID(SYM_VANQ_HELM, 3),
 							}),
@@ -914,7 +914,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
 						["altQuests"] = { 37031 },	-- Sigil of the Black Hand (Mythic)
 						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
-						["g"] = {
+						["groups"] = {
 							i(118387),	-- Ember of the Mountain (QI!)
 							i(118386),	-- Heart of Stone (QI!)
 							i(118385),	-- Sliver of Iron (QI!)
@@ -925,7 +925,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
+						["groups"] = {
 							i(120230, {	-- Helm of the Iron Conqueror
 								["sym"] = SymModID(SYM_CONQ_HELM, 5),
 							}),
@@ -948,7 +948,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
+						["groups"] = {
 							i(120230, {	-- Helm of the Iron Conqueror
 								["sym"] = SymModID(SYM_CONQ_HELM, 5),
 							}),
@@ -971,7 +971,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
+						["groups"] = {
 							i(120240, {	-- Helm of the Iron Protector
 								["sym"] = SymModID(SYM_PROT_HELM, 5),
 							}),
@@ -994,7 +994,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
+						["groups"] = {
 							i(120240, {	-- Helm of the Iron Protector
 								["sym"] = SymModID(SYM_PROT_HELM, 5),
 							}),
@@ -1017,7 +1017,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
+						["groups"] = {
 							i(120233, {	-- Helm of the Iron Vanquisher
 								["sym"] = SymModID(SYM_VANQ_HELM, 5),
 							}),
@@ -1040,7 +1040,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
+						["groups"] = {
 							i(120233, {	-- Helm of the Iron Vanquisher
 								["sym"] = SymModID(SYM_VANQ_HELM, 5),
 							}),
@@ -1107,7 +1107,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					q(37031, {	-- Sigil of the Black Hand (Mythic)
 						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
 						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Mythic difficulty each week.",
-						["g"] = {
+						["groups"] = {
 							i(118390),	-- Ember of the Mountain (QI!)
 							i(118389),	-- Heart of Stone (QI!)
 							i(118388),	-- Sliver of Iron (QI!)
@@ -1118,7 +1118,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
+						["groups"] = {
 							i(120245, {	-- Helm of the Iron Conqueror
 								["sym"] = SymModID(SYM_CONQ_HELM, 6),
 							}),
@@ -1141,7 +1141,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
+						["groups"] = {
 							i(120245, {	-- Helm of the Iron Conqueror
 								["sym"] = SymModID(SYM_CONQ_HELM, 6),
 							}),
@@ -1164,7 +1164,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
+						["groups"] = {
 							i(120255, {	-- Helm of the Iron Protector
 								["sym"] = SymModID(SYM_PROT_HELM, 6),
 							}),
@@ -1187,7 +1187,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
+						["groups"] = {
 							i(120255, {	-- Helm of the Iron Protector
 								["sym"] = SymModID(SYM_PROT_HELM, 6),
 							}),
@@ -1210,7 +1210,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
+						["groups"] = {
 							i(120248, {	-- Helm of the Iron Vanquisher
 								["sym"] = SymModID(SYM_VANQ_HELM, 6),
 							}),
@@ -1233,7 +1233,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
+						["groups"] = {
 							i(120248, {	-- Helm of the Iron Vanquisher
 								["sym"] = SymModID(SYM_VANQ_HELM, 6),
 							}),

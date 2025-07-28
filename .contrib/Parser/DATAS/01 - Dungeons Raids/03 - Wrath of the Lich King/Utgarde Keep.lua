@@ -123,8 +123,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(13205, {	-- Disarmament
 					["qg"] = 24111,	-- Defender Mordun
-					["timeline"] = { ADDED_3_0_2, REMOVED_4_3_0 },
 					["coord"] = { 59.4, 48.8, HOWLING_FJORD },
+					["timeline"] = { ADDED_3_0_2, REMOVED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(68, 68, 10),
 					["groups"] = {

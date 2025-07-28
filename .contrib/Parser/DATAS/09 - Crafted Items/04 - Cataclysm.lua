@@ -75,7 +75,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				-- #if AFTER 6.0.3
 				["description"] = "Treasures from Cataclysm dungeons have been nerfed. Still viable farming mobs in raids and the open world.",
 				-- #endif
-				["group"] = { i(67539) },	-- Tiny Treasure Chest
+				["groups"] = { i(67539) },	-- Tiny Treasure Chest
 			}),
 			i(58143),	-- Prismatic Elixir
 			i(58091),	-- Volcanic Potion
@@ -743,7 +743,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				["provider"] = { "o", 202749 },	-- Azshara's Veil
 			}),
 			i(108362, {	-- Azshara's Veil Stem
-				["group"] = { i(52985) },	-- Azshara's Veil
+				["groups"] = { i(52985) },	-- Azshara's Veil
 				["provider"] = { "o", 202749 },	-- Azshara's Veil
 				["timeline"] = { ADDED_6_0_2 },
 			}),
@@ -760,7 +760,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				["provider"] = { "o", 202747 },	-- Cinderbloom
 			}),
 			i(108360, {	-- Cinderbloom Petal
-				["group"] = { i(52983) },	-- Cinderbloom
+				["groups"] = { i(52983) },	-- Cinderbloom
 				["provider"] = { "o", 202747 },	-- Cinderbloom
 				["timeline"] = { ADDED_6_0_2 },
 			}),
@@ -769,7 +769,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				["provider"] = { "o", 202750 },	-- Heartblossom
 			}),
 			i(108363, {	-- Heartblossom Petal
-				["group"] = { i(52986) },	-- Heartblossom
+				["groups"] = { i(52986) },	-- Heartblossom
 				["provider"] = { "o", 202750 },	-- Heartblossom
 				["timeline"] = { ADDED_6_0_2 },
 			}),
@@ -799,7 +799,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				["provider"] = { "o", 202748 },	-- Stormvine
 			}),
 			i(108361, {	-- Stormvine Stalk
-				["group"] = { i(52984) },	-- Stormvine
+				["groups"] = { i(52984) },	-- Stormvine
 				["provider"] = { "o", 202748 },	-- Stormvine
 				["timeline"] = { ADDED_6_0_2 },
 			}),
@@ -813,7 +813,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				},
 			}),
 			i(108364, {	-- Twilight Jasmine Petal
-				["group"] = { i(52987) },	-- Twilight Jasmine
+				["groups"] = { i(52987) },	-- Twilight Jasmine
 				["provider"] = { "o", 202751 },	-- Twilight Jasmine
 				["timeline"] = { ADDED_6_0_2 },
 			}),
@@ -829,7 +829,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				["provider"] = { "o", 202752 },	-- Whiptail
 			}),
 			i(108365, {	-- Whiptail Stem
-				["group"] = { i(52988) },	-- Whiptail
+				["groups"] = { i(52988) },	-- Whiptail
 				["provider"] = { "o", 202752 },	-- Whiptail
 				["timeline"] = { ADDED_6_0_2 },
 			}),

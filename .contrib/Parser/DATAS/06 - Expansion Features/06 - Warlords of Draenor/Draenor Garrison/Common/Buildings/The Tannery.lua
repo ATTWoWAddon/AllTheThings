@@ -45,7 +45,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"]
 						88383,	-- Leatherworking Follower [A]
 						88382,	-- Leatherworking Follower [H]
 					},
-					["g"] = sharedData({ ["u"] = TRAINING }, {
+					["groups"] = sharedData({ ["u"] = TRAINING }, {
 						r(176408),	-- Archmage's Tent
 						r(176413),	-- Blood Elven Tent
 						r(176409),	-- Brute's Tent

@@ -32,8 +32,8 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8519, {	-- A Pawn on the Eternal Board
 					["provider"] = { "o", 180633 },	-- Crystalline Tear
 					["sourceQuest"] = 8305,	-- Long Forgotten Memories
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["coord"] = { 28.7, 89.1, SILITHUS },
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
 				}),
 				q(8303, {	-- Anachronos
@@ -48,8 +48,8 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				}),
 				q(8575, {	-- Azuregos's Magical Ledger
 					["provider"] = { "i", 20949 },	-- Magical Ledger
-					["sourceQuest"] = 8555,	-- The Charge of the Dragonflights
 					["qg"] = 15481,	-- Spirit of Azuregos
+					["sourceQuest"] = 8555,	-- The Charge of the Dragonflights
 					["coord"] = { 57.0, 85.6, AZSHARA },
 					["lvl"] = 60,
 				}),
@@ -129,8 +129,8 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8305, {	-- Long Forgotten Memories
 					["qg"] = 15192,	-- Anachronos
 					["sourceQuest"] = 8303,	-- Anachronos
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["coord"] = { 65, 50, TANARIS },
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
 				}),
 				q(8599, {	-- Love Song for Narain
@@ -185,8 +185,8 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 						{ "i",  21029 },	-- Ransom Letter
 					},
 					["sourceQuest"] = 8599,	-- Love Song for Narain
-					["description"] = "The dirt is on an island waaaaaay south of Tanaris. You'll need to speak to Meridith to get a buff to swim fast enough to reach the island without dying to Fatigue.",
 					["coord"] = { 59.4, 96.0, TANARIS },
+					["description"] = "The dirt is on an island waaaaaay south of Tanaris. You'll need to speak to Meridith to get a buff to swim fast enough to reach the island without dying to Fatigue.",
 					["lvl"] = 60,
 				}),
 				q(8587, {	-- Return to Narain
@@ -201,8 +201,8 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8578, {	-- Scrying Goggles? No Problem!
 					["provider"] = { "o", 180642 },	-- Inconspicuous Crate
 					["sourceQuest"] = 8577,	-- Stewvul, Ex-B.F.F.
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu
 					["coord"] = { 46.2, 86.7, SILVERPINE_FOREST },
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu
 					["maps"] = { MOLTEN_CORE },
 					["lvl"] = 60,
 					["groups"] = {
@@ -224,15 +224,15 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 						{ "i", 21139 },	-- Green Scepter Shard
 					},
 					["sourceQuest"] = 8736,	-- The Nightmare Manifests
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["coord"] = { 36.18, 41.79, MOONGLADE },
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
 				}),
 				q(8555, {	-- The Charge of the Dragonflights
 					["qg"] = 15192,	-- Anachronos
 					["sourceQuest"] = 8519,	-- A Pawn on the Eternal Board
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["coord"] = { 65, 50, TANARIS },
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
 				}),
 				q(8728, {	-- The Good News and The Bad News
@@ -296,9 +296,9 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8736, {	-- The Nightmare Manifests
 					["qg"] = 11832,	-- Keeper Remulos
 					["sourceQuest"] = 8735,	-- The Nightmare's Corruption
+					["coord"] = { 36.18, 41.79, MOONGLADE },
 					["description"] = "You do NOT want to kill Eranikus or allow Remulos to die.",
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
-					["coord"] = { 36.18, 41.79, MOONGLADE },
 					["lvl"] = 60,
 					["groups"] = {
 						i(21531),	-- Drake Tooth Necklace
@@ -308,8 +308,8 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8735, {	-- The Nightmare's Corruption
 					["qg"] = 11832,	-- Keeper Remulos
 					["sourceQuest"] = 8734,	-- Tyrande and Remulos
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["coord"] = { 36.18, 41.79, MOONGLADE },
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["maps"] = { ASHENVALE, DUSKWOOD, FERALAS, THE_HINTERLANDS },
 					["lvl"] = 60,
 					["groups"] = {
@@ -502,14 +502,14 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8734, {	-- Tyrande and Remulos
 					["qg"] = 15624,	-- Forest Wisp
 					["sourceQuest"] = 8733,	-- Eranikus, Tyrant of the Dream
-					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["coord"] = { 37.5, 47.9, TELDRASSIL },
+					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["lvl"] = 60,
 				}),
 				q(8286, {	-- What Tomorrow Brings
 					["qg"] = 15180,	-- Baristolth of the Shifting Sands
-					["description"] = "This quest line is a prerequisite for the Ahn'Qiraj scepter line used to open the doors to Ahn'Qiraj.",
 					["coord"] = { 49.5, 36.4, SILITHUS },
+					["description"] = "This quest line is a prerequisite for the Ahn'Qiraj scepter line used to open the doors to Ahn'Qiraj.",
 					["lvl"] = 60,
 				}),
 			}),

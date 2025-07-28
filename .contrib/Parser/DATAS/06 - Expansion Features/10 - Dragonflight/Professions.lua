@@ -33,34 +33,34 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		}),
 		n(QUESTS, {
 			q(67564, {	-- Artisan's Courier
-				-- ["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
 				["provider"] = { "n", 192498 },	-- Haephesta
+				-- ["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
 				["coord"] = { 57.9, 68.2, THE_WAKING_SHORES },
-				["g"] = {
+				["groups"] = {
 					i(198790),	-- I.O.U
 					i(195357),	-- Artisan's Consortium Invoice
 				},
 			}),
 			q(67100, {	-- A Gift for Miguel
-				["sourceQuests"] = { 67564 },	-- Artisan's Courier
 				["provider"] = { "n", 192574 },	-- Thomas Bright
+				["sourceQuests"] = { 67564 },	-- Artisan's Courier
 				["coords"] = {
 					{ 60.2, 72.2, THE_WAKING_SHORES },
 					{ 71.7, 81.2, OHNAHRAN_PLAINS },
 				},
 				["cost"] = { { "i", 194728, 3 }, },	-- 3xFiery Spirit++
-				["g"] = {
+				["groups"] = {
 					i(194715),	-- Gatherer's Pouch
 				},
 			}),
 			q(67143, {	-- To Give One's Heart
-				["sourceQuests"] = { 67100 },	-- A Gift for Miguel
 				["provider"] = { "n", 192574 },	-- Thomas Bright
+				["sourceQuests"] = { 67100 },	-- A Gift for Miguel
 				["coords"] = {
 					{ 60.2, 72.2, THE_WAKING_SHORES },
 					{ 71.7, 81.2, OHNAHRAN_PLAINS },
 				},
-				["g"] = {
+				["groups"] = {
 					i(202097),	-- Bulging Box of Skins and Scales
 					i(202098),	-- Crowded Crate of Mined Materials
 					i(202100),	-- Populous Pack of Castoff Clothes
@@ -86,13 +86,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(67137, {	-- Professionally Equipped
-				["sourceQuests"] = { 67100 },	-- A Gift for Miguel
 				["provider"] = { "n", 192539 },	-- Miguel Bright
+				["sourceQuests"] = { 67100 },	-- A Gift for Miguel
 				["coords"] = {
 					{ 60.2, 72.2, THE_WAKING_SHORES },
 					{ 71.7, 81.2, OHNAHRAN_PLAINS },
 				},
-				["g"] = {
+				["groups"] = {
 					i(193487),	-- Alchemist's Hat
 					i(193615),	-- Jeweler's Tool Apron
 					i(193486),	-- Resilient Smock
@@ -105,74 +105,74 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(70126, {	-- A Finishing Touch
+				["provider"] = { "n", 192539 },	-- Miguel Bright
 				["sourceQuests"] = {
 					69979,	-- A Worthy Hunt
 					67298,	-- The Wonders of the World
 					DF_ACCOUNT_CAMPAIGN_QUEST,
 				},
 				["sourceQuestNumRequired"] = 1,
-				["provider"] = { "n", 192539 },	-- Miguel Bright
 				["coord"] = { 39.4, 69.8, VALDRAKKEN },
 				["description"] = "Even though Miguel can be found in numerous places around the Dragon Isles, this quest is only offered in Valdrakken once the Dragon Shard of Knowledge chain has been completed.",
-				["g"] = {
+				["groups"] = {
 					i(197765),	-- Impossibly Sharp Cutting Knife
 					i(191516),	-- Brood Salt
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
 			q(67295, {	-- That's My Specialty
-				-- ["sourceQuests"] = { 70126 },	-- A Finishing Touch
 				["provider"] = { "n", 192539 },	-- Miguel Bright
+				-- ["sourceQuests"] = { 70126 },	-- A Finishing Touch
 				["coords"] = {
 					{ 60.2, 72.2, THE_WAKING_SHORES },
 					{ 71.7, 81.2, OHNAHRAN_PLAINS },
 				},
-				["g"] = {
+				["groups"] = {
 					i(191784),	-- Dragon Shard of Knowledge
 				},
 			}),
 			q(67298, {	-- The Wonders of the World
-				["sourceQuests"] = { 67295 },	-- That's My Specialty
 				["provider"] = { "n", 192539 },	-- Miguel Bright
+				["sourceQuests"] = { 67295 },	-- That's My Specialty
 				["coords"] = {
 					{ 60.2, 72.2, THE_WAKING_SHORES },
 					{ 71.7, 81.2, OHNAHRAN_PLAINS },
 				},
-				["g"] = {
+				["groups"] = {
 					i(197860),	-- Ancient Scrap of Draconic Wisdom (QI!)
 					i(191784),	-- Dragon Shard of Knowledge
 				},
 			}),
 			q(69946, {	-- The Master of Their Craft
-				["sourceQuests"] = { 67298 },	-- The Wonders of the World
 				["provider"] = { "n", 192539 },	-- Miguel Bright
+				["sourceQuests"] = { 67298 },	-- The Wonders of the World
 				["coords"] = {
 					{ 60.2, 72.2, THE_WAKING_SHORES },
 					{ 71.7, 81.2, OHNAHRAN_PLAINS },
 				},
-				["g"] = {
+				["groups"] = {
 					i(191784),	-- Dragon Shard of Knowledge
 				},
 			}),
 			q(69979, {	-- A Worthy Hunt
-				["sourceQuests"] = { 69946 },	-- The Master of Their Craft
 				["provider"] = { "n", 193110 },	-- Khadin
+				["sourceQuests"] = { 69946 },	-- The Master of Their Craft
 				["coord"] = { 51.7, 33, OHNAHRAN_PLAINS },
-				["g"] = {
+				["groups"] = {
 					i(191784),	-- Dragon Shard of Knowledge
 					i(198137),	-- Esoteric Dragon Shard of Knowledge
 				},
 			}),
 			q(69919, {	-- A Craft in Need
-				["providers"] = {
-					{ "n", 194026 },	-- Azley (Valdrakken npcID)
-					{ "n", 193108 },	-- Azley (Ohn'ahran Plains npcID)
+				["qgs"] = {
+					194026,	-- Azley (Valdrakken npcID)
+					193108,	-- Azley (Ohn'ahran Plains npcID)
 				},
 				["coords"] = {
 					{ 72.0, 81.1, OHNAHRAN_PLAINS },
 					{ 35.4, 58.8, VALDRAKKEN },
 				},
-				["g"] = {
+				["groups"] = {
 					i(193528),	-- Wildercloth Alchemist's Robe
 					i(193529),	-- Wildercloth Fishing Cap
 					i(193615),	-- Jeweler's Cover
@@ -181,7 +181,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			q(69915, {	-- Targeted Ads
 				["provider"] = { "n", 193108 },	-- Azley
 				["coord"] = { 72.0, 81.1, OHNAHRAN_PLAINS },
-				["g"] = {
+				["groups"] = {
 					i(198348),	-- "Custom High-Quality Gear: Better Business with Personal Orders!" (QI!)
 					i(198346),	-- "Order Anything Crafters Make!" (QI!)
 					i(198347),	-- "Public Orders: Fast and Made For You!" (QI!)
@@ -191,15 +191,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(69981, {	-- Customer Satisfaction
-				["providers"] = {
-					{ "n", 194026 },	-- Azley (Valdrakken npcID)
-					{ "n", 193108 },	-- Azley (Ohn'ahran Plains npcID)
+				["qgs"] = {
+					194026,	-- Azley (Valdrakken npcID)
+					193108,	-- Azley (Ohn'ahran Plains npcID)
 				},
 				["coords"] = {
 					{ 72.0, 81.1, OHNAHRAN_PLAINS },
 					{ 35.4, 58.8, VALDRAKKEN },
 				},
-				["g"] = {
+				["groups"] = {
 					i(201343),	-- Bag of Cloth Armor Reagents
 					i(201352),	-- Bag of Leather Reagents
 					i(201353),	-- Bag of Mail Armor Reagents
@@ -210,15 +210,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			}),
 			q(70221, {	-- Show Your Mettle
 				["provider"] = { "n", 192574 },	-- Thomas Bright
-				["minReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 2 },	-- Artisan's Consortium, Preferred (2)
-				["isWeekly"] = true,
-				["_drop"] = { "isDaily" },	-- bad API
 				["coords"] = {
 					{ 60.2, 72.2, THE_WAKING_SHORES },
 					{ 71.7, 81.2, OHNAHRAN_PLAINS },
 					{ 39.4, 69.9, VALDRAKKEN },
 				},
-				["g"] = {
+				["minReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 2 },	-- Artisan's Consortium, Preferred (2)
+				["isWeekly"] = true,
+				["_drop"] = { "isDaily" },	-- bad API
+				["groups"] = {
 					i(190456),	-- Artisan's Mettle
 				},
 			}),
@@ -246,116 +246,116 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["isBreadcrumb"] = true,	-- unconfirmed
 				}),
 				q(70180, {	-- Jump-Start? Jump-Starting!
-					["sourceQuests"] = { 72773 },	-- Learning Ingenuity
 					["provider"] = { "n", 196066 },	-- Greyzik Cobblefinger
+					["sourceQuests"] = { 72773 },	-- Learning Ingenuity
 					["coord"] = { 84.2, 54.4, VALDRAKKEN },
 				}),
 				------ Chapter 2 ------
 				q(70845, {	-- In Tyr's Footsteeps
-					["sourceQuests"] = { 70180 },	-- Jump-Start? Jump-Starting!
 					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+					["sourceQuests"] = { 70180 },	-- Jump-Start? Jump-Starting!
 					["coord"] = { 84.3, 53.5, VALDRAKKEN },
 				}),
 				q(70181, {	-- First Challenge of Tyr: Finesse
-					["sourceQuests"] = { 70845 },	-- In Tyr's Footsteeps
 					["provider"] = { "o", 379290 },	-- Ornamented Statue
+					["sourceQuests"] = { 70845 },	-- In Tyr's Footsteeps
 					["coord"] = { 67.2, 30.8, THE_AZURE_SPAN },
-					["g"] = {
+					["groups"] = {
 						i(199197),	-- Bottled Essence
 					},
 				}),
 				q(70182, {	-- The Sweet Taste of Victory
-					["sourceQuests"] = { 70181 },	-- First Challenge of Tyr: Finesse
 					["provider"] = { "n", 195827 },	-- Maiden of Inspiration
+					["sourceQuests"] = { 70181 },	-- First Challenge of Tyr: Finesse
 					["coord"] = { 67.1, 30.9, THE_AZURE_SPAN },
 				}),
 				q(70633, {	-- Fueling the Engine
-					["sourceQuests"] = { 70182 },	-- The Sweet Taste of Victory
 					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+					["sourceQuests"] = { 70182 },	-- The Sweet Taste of Victory
 					["coord"] = { 84.3, 53.5, VALDRAKKEN },
 				}),
 				------ Chapter 3 ------
 				q(70339, {	-- In Tyr's Footsteps: The Ohn'ahran Plains
-					["sourceQuests"] = { 70181 },	-- First Challenge of Tyr: Finesse
 					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+					["sourceQuests"] = { 70181 },	-- First Challenge of Tyr: Finesse
 					["coord"] = { 84.3, 53.5, VALDRAKKEN },
 				}),
 				q(70376, {	-- Second Challenge of Tyr: Might
-					["sourceQuests"] = { 70339 },	-- In Tyr's Footsteps: The Ohn'ahran Plains
 					["provider"] = { "o", 380540 },	-- Ornamented Statue
+					["sourceQuests"] = { 70339 },	-- In Tyr's Footsteps: The Ohn'ahran Plains
 					["coord"] = { 66.2, 55.3, OHNAHRAN_PLAINS },
-					["g"] = {
+					["groups"] = {
 						i(199197),	-- Bottled Essence
 					},
 				}),
 				q(70341, {	-- Well Earned Vicotry
-					["sourceQuests"] = { 70376 },	-- Second Challenge of Tyr: Might
 					["provider"] = { "n", 195924 },	-- Maiden of Inspiration
+					["sourceQuests"] = { 70376 },	-- Second Challenge of Tyr: Might
 					["coord"] = { 66.3, 55.3, VALDRAKKEN },
 				}),
 				------ Chapter 4 ------
 				q(70650, {	-- In Tyr's Footsteps: The Waking Shores
-					["sourceQuests"] = { 70376 },	-- Second Challenge of Tyr: Might
 					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+					["sourceQuests"] = { 70376 },	-- Second Challenge of Tyr: Might
 					["coord"] = { 84.3, 53.5, VALDRAKKEN },
 				}),
 				q(70509, {	-- Third Challenge of Tyr: Persistence
-					["sourceQuests"] = { 70650 },	-- In Tyr's Footsteps: The Waking Shores
 					["provider"] = { "o", 380918 },	-- Broken Ornamented Statue
+					["sourceQuests"] = { 70650 },	-- In Tyr's Footsteps: The Waking Shores
 					["coord"] = { 63.9, 41.5, THE_WAKING_SHORES },
-					["g"] = {
+					["groups"] = {
 						i(198983),	-- Broken Part: Arm (QI!)
 						i(198982),	-- Broken Part: Head (QI!)
 						i(198984),	-- Broken Part: Shattered Orb (QI!)
 					},
 				}),
 				q(70621, {	-- Third Challenge of Tyr: Persistence Embodied
-					["sourceQuests"] = { 70509 },	-- Third Challenge of Tyr: Persistence
 					["provider"] = { "n", 195737 },	-- Maiden of Inspiration
+					["sourceQuests"] = { 70509 },	-- Third Challenge of Tyr: Persistence
 					["coord"] = { 64, 41.3, THE_WAKING_SHORES },
-					["g"] = {
+					["groups"] = {
 						i(199197),	-- Bottled Essence
 					},
 				}),
 				q(70510, {	-- Victorious
-					["sourceQuests"] = { 70621 },	-- Third Challenge of Tyr: Persistence Embodied
 					["provider"] = { "n", 195737 },	-- Maiden of Inspiration
+					["sourceQuests"] = { 70621 },	-- Third Challenge of Tyr: Persistence Embodied
 					["coord"] = { 64, 41.3, THE_WAKING_SHORES },
 				}),
 				------ Chapter 5 ------
 				q(70881, {	-- Fourth Challenge of Tyr: Resourcefulness
-					["sourceQuests"] = { 70510 },	-- Victorious
 					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+					["sourceQuests"] = { 70510 },	-- Victorious
 					["coord"] = { 83.9, 53.2, VALDRAKKEN },
 					["maps"] = { 2082, 2083 },	-- Halls of Infusion
-					["g"] = {
+					["groups"] = {
 						i(199197),	-- Bottled Essence
 						i(200108),	-- Irideus' Power Core (QI!)
 					},
 				}),
 				------ Chapter 6 ------
 				q(70899, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {	-- Fifth Challenge of Tyr: Ingenuity
-					["sourceQuests"] = { 70881 },	-- Fourth Challenge of Tyr: Resourcefulness
 					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+					["sourceQuests"] = { 70881 },	-- Fourth Challenge of Tyr: Resourcefulness
 					["coord"] = { 83.9, 53.2, VALDRAKKEN },
-					["g"] = {
+					["groups"] = {
 						i(199197),	-- Bottled Essence
 						i(200120),	-- Irideus' Power Core
 					},
 				})),
 				q(70900, {	-- Innovating the Engine
-					["sourceQuests"] = { 70899 },	-- Fifth Challenge of Tyr: Ingenuity
 					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
+					["sourceQuests"] = { 70899 },	-- Fifth Challenge of Tyr: Ingenuity
 					["coord"] = { 83.9, 53.2, VALDRAKKEN },
 					["timeline"] = { ADDED_10_0_5 },
 				}),
 					-- Alt Skip --
 				q(72339, {	-- Engine of Innovation
 					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
-					["coord"] = { 83.9, 53.2, VALDRAKKEN },
 					["altQuests"] = { 70900 },	-- Innovating the Engine
-					["DisablePartySync"] = true,
+					["coord"] = { 83.9, 53.2, VALDRAKKEN },
 					["timeline"] = { ADDED_10_0_5 },
+					["DisablePartySync"] = true,
 					["sym"] = {{"select","itemID",199197}},	-- Bottled Essence x5
 				}),
 			}),
@@ -368,7 +368,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					{ "i", 200938, 1 },	-- 1x Empty Soul Cage
 				},
 				["coord"] = { 58.2, 66.6, THE_AZURE_SPAN },
-				["g"] = {
+				["groups"] = {
 					i(201296, {	-- Docile Airy Soul
 						i(193921),	-- Airy Soul
 						i(201262),	-- Gale Spirit (PET!)
@@ -386,7 +386,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					{ 46.8, 32.8, THE_WAKING_SHORES },
 					{ 77.8, 38.8, THE_AZURE_SPAN },
 				},
-				["g"] = {
+				["groups"] = {
 					i(201297, {	-- Docile Earthen Soul
 						i(193920),	-- Earthen Soul
 						i(201260),	-- Dust Spirit (PET!)
@@ -400,7 +400,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					{ "i", 200938, 1 },	-- 1x Empty Soul Cage
 				},
 				["coord"] = { 78.4, 38.8, THE_AZURE_SPAN },
-				["g"] = {
+				["groups"] = {
 					i(201298, {	-- Docile Fiery Soul
 						i(193362),	-- Fiery Soul
 						i(201261),	-- Blaze Spirit (PET!)
@@ -414,7 +414,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					{ "i", 200938, 1 },	-- 1x Empty Soul Cage
 				},
 				["coord"] = { 58.2, 66.6, THE_AZURE_SPAN },
-				["g"] = {
+				["groups"] = {
 					i(201299, {	-- Docile Frosty Soul
 						i(193919),	-- Frosty Soul
 						i(201265),	-- Tide Spirit (PET!)

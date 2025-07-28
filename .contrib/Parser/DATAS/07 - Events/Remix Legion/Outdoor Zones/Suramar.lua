@@ -4,7 +4,7 @@
 --[[root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, bubbleDown({ ["timeline"] = { ADDED_11_2_0, REMOVED_LEGION_REMIX_END } }, {
 	m(SURAMAR, {
 		["icon"] = 617832,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(19887, {	-- Campaign: Kun-Lai Summit [A]
 					["races"] = ALLIANCE_ONLY,
@@ -45,7 +45,7 @@
 						20011,	-- Looking For Group: Kun-Lai Summit
 						19965,	-- Tour Kun-Lai Summit
 					}},
-					["g"] = {
+					["groups"] = {
 						i(218247),	-- Chen Stormstout's Hat
 						i(218248),	-- Chen Stormstout's Hat
 					},

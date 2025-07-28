@@ -34,7 +34,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 61.1, 15.1, BASTION },
 				["questID"] = 61698,
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(180783),	-- Design: Crown of the Righteous (RECIPE!)
 					i(183756),	-- Floating Circlet
 				},
@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 51.5, 18.0, BASTION },
 				["questID"] = 61052,
 				["cost"] = { { "i", 180534, 1 } },	-- Unstable Construct Anima
-				["g"] = {
+				["groups"] = {
 					i(183609),	-- Re-Powered Golliath Fists
 				},
 			}),
@@ -52,7 +52,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "The coordinates are to the first object you need to click to unlock the chest, |cFFFFFFFFAgthia's Flame|r.\n\nRun south until you get to the second torch at |cFFFFFFFF38.4, 57.0|r and click it.  An invisible walkway will appear to the west, lined with glowing orbs on either side.\n\nWalk between the orbs until you reach the floating rock.  Keep clicking all the torches and walking across the invisible bridge until you reach the treasure.",
 				["coord"] = { 39.1, 54.4, BASTION },
 				["questID"] = 60893,	-- 62847 also completed when opening
-				["g"] = {
+				["groups"] = {
 					i(180063),	-- Unearthly Chime
 				},
 			}),
@@ -60,14 +60,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Kneel in front of the chest.",
 				["coord"] = { 70.4, 36.4, BASTION },
 				["questID"] = 60892,
-				["g"] = {
+				["groups"] = {
 					i(183988),	-- Bondable Val'kyr Diadem (TOY!)
 				},
 			}),
 			o(353944, {	-- Gift of Devos
 				["coord"] = { 27.6, 21.8, BASTION },
 				["questID"] = 60895,
-				["g"] = {
+				["groups"] = {
 					i(179977),	-- Benevolent Gong
 				},
 			}),
@@ -78,7 +78,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 40.6, 18.9, BASTION },	-- Treasure
 				},
 				["questID"] = 60894,
-				["g"] = {
+				["groups"] = {
 					i(181290),	-- Harmonious Sigil of the Archon
 				},
 			}),
@@ -86,7 +86,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Ring one of the Bells of Purification on either side of the treasure.  Then turn around and stand in the waterfall next to the Purity Steward.  You will get a buff called Proof of Purity, allowing you to open the chest.",
 				["coord"] = { 64.8, 71.1, BASTION },
 				["questID"] = 60890,
-				["g"] = {
+				["groups"] = {
 					i(180859),	-- Purity (PET!)
 				},
 			}),
@@ -100,9 +100,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["questID"] = 60663,
 				["isDaily"] = true,	-- repeatable?
-				["g"] = {
+				["groups"] = {
 					i(184418),	-- Acrobatic Steward (TOY!)
-				}
+				},
 			}),
 			o_repeated({
 			-- Rewards
@@ -146,7 +146,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "At the back of the cave.",
 				["coord"] = { 55.7, 42.8, BASTION },	-- cave entrance
 				["questID"] = 61049,
-				["g"] = {
+				["groups"] = {
 					i(182653),	-- Larion Treats
 					i(183126),	-- Kyrian Smith's Kit
 				},
@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			o(354213, {	-- Lost Disciple's Notes
 				["coord"] = { 59.3, 60.9, BASTION },
 				["questID"] = 61048,
-				["g"] = {
+				["groups"] = {
 					i(182693),	-- Lost Disciple's Notes
 				},
 			}),
@@ -172,7 +172,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 54.4, 81.8, BASTION },
 					{ 54.4, 82.7, BASTION },
 				},
-				["g"] = { i(173973) },	-- Purian
+				["groups"] = { i(173973) },	-- Purian
 			}),
 			o(339601, {	-- Scroll of Aeons
 				["description"] = "Take the |cFFFFFFFFPurian|r from the bench at |cFFFFFFFF54.3, 81.8|r, place them in the tribute bowls at |cFFFFFFFF54.4, 83.8|r and |cFFFFFFFF56.1, 83.0|r, and follow the light to the treasure at |cFFFFFFFF53.5, 80.4|r.",
@@ -183,7 +183,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 				["questID"] = 58298,	-- triggers 58292, 58293 and 58294 too
 				["cost"] = {{"i", 173973, 2}},	-- 2x Purian
-				["g"] = {
+				["groups"] = {
 					i(173984),	-- Scroll of Aeons (TOY!)
 				},
 			}),
@@ -192,7 +192,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["cost"] = {
 					{ "i", 180049, 1 },	-- 1x Steward's Silver Key
 				},
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["isDaily"] = true,
 				},{
 					-- Rewards
@@ -249,7 +249,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 60798,	-- also triggered 60874... why two quests?
 				-- also triggered 60799 for non-kyrian
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(184415),	-- Soothing Vesper (TOY!) — drops only from Broken and Skyward Bell treasures
 				},
 			}),
@@ -267,14 +267,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			o(354208, {	-- Stolen Equipment
 				["coord"] = { 40.5, 49.8, BASTION },
 				["questID"] = 61044,
-				["g"] = {
+				["groups"] = {
 					i(182561),	-- Fallen Disciple's Cloak
 				},
 			}),
 			o(339641, {	-- The Purifying Draught
 				["coord"] = { 52.0, 86.0, BASTION },
 				["questID"] = 58329,
-				["g"] = {
+				["groups"] = {
 					i(174007),	-- Purifying Draught
 				},
 			}),
@@ -282,7 +282,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 57717 },	-- Step Back From That Ledge, My Friend
 				["coord"] = { 58.6, 71.4, BASTION },
 				["questID"] = 60478,	-- 62841 triggered too
-				["g"] = {
+				["groups"] = {
 					i(179982),	-- Kyrian Bell
 				},
 			}),
@@ -297,7 +297,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 61053,
 				["crs"] = { 170009 },	-- Unsettled Etherwyrm
 				["cost"] = { { "i", 180536, 1 } },	-- 1x Broken Kyrian Flute
-				["g"] = {
+				["groups"] = {
 					i(180064),	-- Ascended Flute
 				},
 			}),

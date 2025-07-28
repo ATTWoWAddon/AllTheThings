@@ -495,8 +495,8 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 				q(50668, {
 					["description"] = "Area: |cFFf09f26Orgrimmar|r",
-					["lvl"] = 10,
 					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(50768),	--
 				q(51692),	--
@@ -523,8 +523,8 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			expansion(EXPANSION.BFA, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {
 				q(55023, {	-- Bizmo's Brawlpub Awaits!
 					["description"] = "Category: |cFFf09f26Brawler's Guild|r",
-					["lvl"] = 60,
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 60,
 				}),
 				q(55238),	--
 			})),
@@ -556,8 +556,8 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			expansion(EXPANSION.BFA, patch(2,5), bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5 } }, {
 				q(57550),	--
 				q(57640, {	-- Master Ryson's All Seeing Eye
-					["description"] = "Type: |cFFf09f26PvP|r\nCategory: |cFFf09f26Korrak's Revenge|r",
 					["qg"] = 13151,	-- Syndicate Master Ryson
+					["description"] = "Type: |cFFf09f26PvP|r\nCategory: |cFFf09f26Korrak's Revenge|r",
 					["maps"] = 1537,	-- Alterac Valley
 					["lvl"] = 10,
 				}),

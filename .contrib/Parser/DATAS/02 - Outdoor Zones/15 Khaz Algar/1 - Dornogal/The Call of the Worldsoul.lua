@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 46.1, 49.6, DORNOGAL },
 				["isWeekly"] = true,
 				["_drop"] = { "g" },
-				["g"] = {
+				["groups"] = {
 					i(211297),	-- Fractured Spark of Omens
 				},
 			},{

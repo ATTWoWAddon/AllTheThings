@@ -100,7 +100,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 		},
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(8069, {	-- Last Stand of the Zandalari
 					crit(22912, {	-- Jin'rokh the Breaker
@@ -173,7 +173,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						8086,	-- From Dusk 'til Dawn
 						8090,	-- A Complete Circuit
 					}},
-					["g"] = {
+					["groups"] = {
 						i(93662),	-- Armored Skyscreamer (MOUNT!)
 					},
 				}),
@@ -717,7 +717,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				["crs"] = { 80633 },	-- Lorewalker Han <Raid Finder Storyteller>
 				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
 				-- #endif
-				["g"] = {
+				["groups"] = {
 					n(COMMON_BOSS_DROPS, sharedData({ ["timeline"] = { ADDED_5_2_0, REMOVED_6_0_2 } }, {
 						i(94593),	-- Secrets of the Empire
 						i(94594),	-- Titan Runestone
@@ -736,7 +736,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(819, {	-- Horridon
 						["crs"] = { 68476 },	-- Horridon
-						["g"] = {
+						["groups"] = {
 							i(94574),	-- Pygmy Direhorn (PET!)
 						},
 					}),
@@ -750,7 +750,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(825, {	-- Tortos
 						["crs"] = { 67977 },	-- Tortos
-						["g"] = {
+						["groups"] = {
 							i(98132, {	-- Shado-Pan Geyser Gun (TOY!)
 								["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
 								["timeline"] = { ADDED_5_3_0 },
@@ -768,17 +768,17 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(828, {	-- Ji-Kun
 						["crs"] = { 69712 },	-- Ji-Kun
-						["g"] = {
+						["groups"] = {
 							i(94835),	-- Ji-Kun Hatchling (PET!)
 						},
 					}),
 					e(818, {	-- Durumu the Forgotten
 						["crs"] = { 68036 },	-- Durumu the Forgotten
-						["g"] = {
+						["groups"] = {
 							header(HEADERS.Item, 212750, {	-- Grimoire of the Ancient Observer
 								["description"] = "1. Queue for Halls of Flesh-Shaping LFR at Mogu'Shan Palace in the Vale of Eternal Blossoms. If you can't see the LFR queue NPC, speak to Zidormi outside to change phase.\n2. Kill Durumu and loot Durumus Glass Pupil, then use the item, it doesn't matter where you target the throw.\n3. Wait for the candles around the edge of the platform to spawn in, then head for the purple circle with the cauldrons and the book.\n4. Click the book to get started. :)\n\nYou'll be shown a puzzle that connects some of the candles with coloured beams. You have to count how many beams there are of each colour and click the corresponding cauldron colour that many times.\ne.g 2 candles are connected with 1 beam of green light. Click the green cauldron once.\nYou can keep track of your clicks in your buffs. Once you have the numbers right, click the book to proceed. If you're wrong, the book will knock you over and reset your buffs but will not reset the whole chain of puzzles. You can also right-click off the buff if you overshoot to avoid resetting all of them.\nAs the puzzles progress and get more complicated, the purple cauldron will start giving you more than 1 stack of the purple buff when you click it. This is to help you get to the higher numbers faster. Be careful when you start spam clicking!\n\nTo calculate the higher purple numbers:\nThere are a couple different methods to count them, however the easiest way is using the automatic calculator linked in the WoWhead comments for this item.\n\nThanks to Fiamma from WoWhead for the comment.",
 								["cost"] = {{"i",211949,1}},	-- Durumu's Glass Pupil
-								["g"] = {
+								["groups"] = {
 									o(420873, {	-- Ritual Book
 										i(212750, {	-- Grimoire of the Ancient Observer (CI!)
 											["timeline"] = { ADDED_10_2_5 },
@@ -794,7 +794,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(820, {	-- Primordius
 						["crs"] = { 69017 },	-- Primordius
-						["g"] = {
+						["groups"] = {
 							-- #if AFTER 8.0.1
 							-- CRIEVE NOTE: This item used to be a Normal/Heroic pet only, unlike its counterpart Living Fluid which was only LFR. (and still is)
 							i(97960, {	-- Viscous Horror (PET!)
@@ -808,7 +808,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							69756,	-- Anima Orb
 							69427,	-- Dark Animus
 						},
-						["g"] = {
+						["groups"] = {
 							i(94152),	-- Son of Animus (PET!)
 						},
 					}),
@@ -828,7 +828,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(832, {	-- Lei Shen
 						["crs"] = { 68397 },	-- Lei Shen
-						["g"] = {
+						["groups"] = {
 							i(94867),	-- Heart of the Thunder King
 						},
 					}),
@@ -840,12 +840,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				["crs"] = { 80633 },	-- Lorewalker Han <Raid Finder Storyteller>
 				["coord"] = { 83.0, 30.6, VALE_OF_ETERNAL_BLOSSOMS },
 				-- #endif
-				["g"] = {
+				["groups"] = {
 					i(95343, {	-- Treasures of the Thunder
 						["description"] = "This item is awarded as a consolation prize to players who did not win loot after defeating a boss encounter in the Raid Finder mode of Throne of Thunder.",
 						["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },
 						["sym"] = {MOP_SYM_PETS},
-						["g"] = {
+						["groups"] = {
 							i(95972),	-- Abandoned Zandalari Arrowlinks
 							i(95976),	-- Abandoned Zandalari Bucklebreaker
 							i(95961),	-- Abandoned Zandalari Firecord
@@ -895,7 +895,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							68905,	-- Lu'lin <Mistress of Solitude>
 							68397,	-- Lei Shen
 						},
-						["g"] = {
+						["groups"] = {
 							i(95870),	-- Abandoned Spaulders of Arrowflight
 							i(95871),	-- Abandoned Spaulders of Renewal
 							i(95877),	-- Bo-Ris, Horror in the Night
@@ -923,7 +923,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					header(HEADERS.Achievement, 8069, {	-- Last Stand of the Zandalari
 						e(827, {	-- Jin'rokh the Breaker
 							["crs"] = { 69465 },	-- Jin'rokh the Breaker
-							["g"] = {
+							["groups"] = {
 								i(95635),	-- Al'set's Tormented Leggings
 								i(95631),	-- Bracers of Constant Implosion
 								i(95630),	-- Chestplate of Violent Detonation
@@ -948,7 +948,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						}),
 						e(819, {	-- Horridon
 							["crs"] = { 68476 },	-- Horridon
-							["g"] = {
+							["groups"] = {
 								i(95664),	-- Armplates of the Vanquished Abomination
 								i(95648),	-- Bindings of Multiplicative Strikes
 								i(95651),	-- Bloodlord's Bloodsoaked Legplates
@@ -979,7 +979,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 								69134,	-- Kazra'jin
 								69078,	-- Sul the Sandrawler
 							},
-							["g"] = {
+							["groups"] = {
 								i(95856),	-- Gauntlets of the Crackling Conqueror
 								i(95857),	-- Gauntlets of the Crackling Protector
 								i(95855),	-- Gauntlets of the Crackling Vanquisher
@@ -1002,7 +1002,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					header(HEADERS.Achievement, 8070, {	-- Forgotten Depths
 						e(825, {	-- Tortos
 							["crs"] = { 67977 },	-- Tortos
-							["g"] = {
+							["groups"] = {
 								i(95685),	-- Amulet of the Primal Turtle
 								i(95688),	-- Azure Shell Bracers
 								i(95681),	-- Beady-Eye Bracers
@@ -1032,7 +1032,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 								70235,	-- Frozen Head <Head of Megaera>
 								70247,	-- Venomous Head <Head of Megaera>
 							},
-							["g"] = {
+							["groups"] = {
 								i(95711),	-- Breath of the Hydra
 								i(95715),	-- Chain of Consuming Magic
 								i(95710),	-- Fetish of the Hydra
@@ -1056,7 +1056,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						}),
 						e(828, {	-- Ji-Kun
 							["crs"] = { 69712 },	-- Ji-Kun
-							["g"] = {
+							["groups"] = {
 								i(95888),	-- Leggings of the Crackling Conqueror
 								i(95889),	-- Leggings of the Crackling Protector
 								i(95887),	-- Leggings of the Crackling Vanquisher
@@ -1077,7 +1077,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					header(HEADERS.Achievement, 8071, {	-- Halls of Flesh-Shaping
 						e(818, {	-- Durumu the Forgotten
 							["crs"] = { 68036 },	-- Durumu the Forgotten
-							["g"] = {
+							["groups"] = {
 								i(95731),	-- Aberrant Chestguard of Torment
 								i(95735),	-- Artery Rippers
 								i(95732),	-- Caustic Spike Bracers
@@ -1102,7 +1102,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						}),
 						e(820, {	-- Primordius
 							["crs"] = { 69017 },	-- Primordius
-							["g"] = {
+							["groups"] = {
 								i(97959, {	-- Living Fluid (PET!)
 									["description"] = "This only drops in LFR.",
 									["timeline"] = { ADDED_5_3_0 },
@@ -1135,7 +1135,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 								69756,	-- Anima Orb
 								69427,	-- Dark Animus
 							},
-							["g"] = {
+							["groups"] = {
 								i(95823),	-- Chest of the Crackling Conqueror
 								i(95824),	-- Chest of the Crackling Protector
 								i(95822),	-- Chest of the Crackling Vanquisher
@@ -1161,7 +1161,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 								68080,	-- Quet'zal <The Stormcaller>
 								68079,	-- Ro'shak <The Molten Flare>
 							},
-							["g"] = {
+							["groups"] = {
 								i(95956),	-- Shoulders of the Crackling Conqueror
 								i(95957),	-- Shoulders of the Crackling Protector
 								i(95955),	-- Shoulders of the Crackling Vanquisher
@@ -1183,7 +1183,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 								68904,	-- Suen <Mistress of Anger>
 								68905,	-- Lu'lin <Mistress of Solitude>
 							},
-							["g"] = {
+							["groups"] = {
 								i(95880),	-- Helm of the Crackling Conqueror
 								i(95881),	-- Helm of the Crackling Protector
 								i(95879),	-- Helm of the Crackling Vanquisher
@@ -1202,7 +1202,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						}),
 						e(832, {	-- Lei Shen
 							["crs"] = { 68397 },	-- Lei Shen
-							["g"] = {
+							["groups"] = {
 								i(95805),	-- Conduit-Breaker Chain Leggings
 								i(95806),	-- Doomed Crown of Lei Shen
 								i(95804),	-- Fusion Slasher Chestguard
@@ -1232,7 +1232,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC, {
 				i(97153, {	-- Spoils of the Thunder King
 					["description"] = "Awarded from completing the Weekly Raid Quest.\n\nThis bag contains gold, flasks, reagents, epic necklaces, and has chance to drop a Primal Egg.",
-					["g"] = {
+					["groups"] = {
 						i(95215),	-- Abandoned Zandalari Bucklebreaker
 						i(95202),	-- Necklace of the Terra-Cotta Archer
 						i(95203),	-- Necklace of the Terra-Cotta Invoker
@@ -1244,7 +1244,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				}),
 				n(QUESTS, sharedData({
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(97153),	-- Spoils of the Thunder King
 					},
 				}, {
@@ -1252,9 +1252,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						["provider"] = { "n", 70243 },	-- Archritualist Kelada
 					}),
 					q(32716, {	-- Eyes of the Thunder King
-						["providers"] = {
-							{ "n", 70249 },	-- Focused Eye
-							{ "n", 70238 },	-- Unblinking Eye
+						["qgs"] = {
+							70249,	-- Focused Eye
+							70238,	-- Unblinking Eye
 						},
 					}),
 					q(32715, {	-- Requiem for a Queen
@@ -1325,13 +1325,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(827, {	-- Jin'rokh the Breaker
 					["crs"] = { 69465 },	-- Jin'rokh the Breaker
-					["g"] = {
+					["groups"] = {
 						ach(8094),	-- Lightning Overload
 					},
 				}),
 				e(819, {	-- Horridon
 					["crs"] = { 68476 },	-- Horridon
-					["g"] = {
+					["groups"] = {
 						ach(8038),	-- Cretaceous Collector
 						i(93666),	-- Spawn of Horridon (MOUNT!)
 					},
@@ -1343,13 +1343,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						69134,	-- Kazra'jin
 						69078,	-- Sul the Sandrawler
 					},
-					["g"] = {
+					["groups"] = {
 						ach(8073),	-- Cage Match
 					},
 				}),
 				e(825, {	-- Tortos
 					["crs"] = { 67977 },	-- Tortos
-					["g"] = {
+					["groups"] = {
 						ach(8077),	-- One-Up
 					},
 				}),
@@ -1361,7 +1361,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						68065,	-- Megaera <Terror of the Depths>
 						70247,	-- Venomous Head <Head of Megaera>
 					},
-					["g"] = {
+					["groups"] = {
 						ach(8082, {	-- Head Case
 							crit(22744, {	-- Flaming
 								["crs"] = { 70212 },
@@ -1377,20 +1377,20 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				}),
 				e(828, {	-- Ji-Kun
 					["crs"] = { 69712 },	-- Ji-Kun
-					["g"] = {
+					["groups"] = {
 						ach(8097),	-- Soft Hands
 						i(95059),	-- Clutch of Ji-Kun (MOUNT!)
 					},
 				}),
 				e(818, {	-- Durumu the Forgotten
 					["crs"] = { 68036 },	-- Durumu the Forgotten
-					["g"] = {
+					["groups"] = {
 						ach(8098),	-- You Said Crossing the Streams Was Bad
 					},
 				}),
 				e(820, {	-- Primordius
 					["crs"] = { 69017 },	-- Primordius
-					["g"] = {
+					["groups"] = {
 						ach(8037),	-- Genectically Unmodified Organism
 						-- #if BEFORE 8.0.1
 						-- CRIEVE NOTE: This item used to be a Normal/Heroic pet only, unlike its counterpart Living Fluid which was only LFR. (and still is)
@@ -1405,7 +1405,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						69756,	-- Anima Orb
 						69427,	-- Dark Animus
 					},
-					["g"] = {
+					["groups"] = {
 						ach(8081, {	-- Ritualist Who?
 							crit(22765, {	-- Aridian
 								["cr"] = 69726,
@@ -1489,7 +1489,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						68080,	-- Quet'zal <The Stormcaller>
 						68079,	-- Ro'shak <The Molten Flare>
 					},
-					["g"] = {
+					["groups"] = {
 						ach(8087, {	-- Can't Touch This
 							crit(22791),	-- Burning Cinders
 							crit(22792),	-- Frozen Blood
@@ -1504,13 +1504,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						68904,	-- Suen <Mistress of Anger>
 						68905,	-- Lu'lin <Mistress of Solitude>
 					},
-					["g"] = {
+					["groups"] = {
 						ach(8086),	-- From Dusk 'til Dawn
 					},
 				}),
 				e(832, {	-- Lei Shen
 					["crs"] = { 68397 },	-- Lei Shen
-					["g"] = {
+					["groups"] = {
 						ach(8249, {	-- Ahead of the Curve: Lei Shen
 							["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 },
 							-- #if MOP
@@ -1528,7 +1528,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
 				["ignoreBonus"] = true,
-				["g"] = {
+				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["description"] = "These can drop from any of the bosses.",
 						["crs"] = {
@@ -1556,7 +1556,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							68905,	-- Lu'lin <Mistress of Solitude>
 							68397,	-- Lei Shen
 						},
-						["g"] = {
+						["groups"] = {
 							i(95060),	-- Abandoned Spaulders of Arrowflight
 							i(95064),	-- Abandoned Spaulders of Renewal
 							i(95498),	-- Bo-Ris, Horror in the Night
@@ -1607,7 +1607,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(827, {	-- Jin'rokh the Breaker
 						["crs"] = { 69465 },	-- Jin'rokh the Breaker
-						["g"] = {
+						["groups"] = {
 							i(94739),	-- Al'set's Tormented Leggings
 							i(94727),	-- Bracers of Constant Implosion
 							i(94723),	-- Chestplate of Violent Detonation
@@ -1654,7 +1654,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(819, {	-- Horridon
 						["crs"] = { 68476 },	-- Horridon
-						["g"] = {
+						["groups"] = {
 							i(94751),	-- Armplates of the Vanquished Abomination
 							i(94743),	-- Bindings of Multiplicative Strikes
 							i(94747),	-- Bloodlord's Bloodsoaked Legplates
@@ -1708,7 +1708,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							69134,	-- Kazra'jin
 							69078,	-- Sul the Sandrawler
 						},
-						["g"] = {
+						["groups"] = {
 							i(95575),	-- Gauntlets of the Crackling Conqueror
 							i(95580),	-- Gauntlets of the Crackling Protector
 							i(95570),	-- Gauntlets of the Crackling Vanquisher
@@ -1744,7 +1744,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(825, {	-- Tortos
 						["crs"] = { 67977 },	-- Tortos
-						["g"] = {
+						["groups"] = {
 							i(94776),	-- Amulet of the Primal Turtle
 							i(94781),	-- Azure Shell Bracers
 							i(94775),	-- Beady-Eye Bracers
@@ -1797,7 +1797,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							68065,	-- Megaera <Terror of the Depths>
 							70247,	-- Venomous Head <Head of Megaera>
 						},
-						["g"] = {
+						["groups"] = {
 							i(94521),	-- Breath of the Hydra
 							i(94797),	-- Chain of Consuming Magic
 							i(94796),	-- Fetish of the Hydra
@@ -1842,7 +1842,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(828, {	-- Ji-Kun
 						["crs"] = { 69712 },	-- Ji-Kun
-						["g"] = {
+						["groups"] = {
 							i(95576),	-- Leggings of the Crackling Conqueror
 							i(95581),	-- Leggings of the Crackling Protector
 							i(95572),	-- Leggings of the Crackling Vanquisher
@@ -1874,7 +1874,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(818, {	-- Durumu the Forgotten
 						["crs"] = { 68036 },	-- Durumu the Forgotten
-						["g"] = {
+						["groups"] = {
 							i(94818),	-- Aberrant Chestguard of Torment
 							i(94821),	-- Artery Rippers
 							i(94820),	-- Caustic Spike Bracers
@@ -1921,7 +1921,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(820, {	-- Primordius
 						["crs"] = { 69017 },	-- Primordius
-						["g"] = {
+						["groups"] = {
 							i(94937),	-- Acid-Spine Bonemace
 							i(95513),	-- Band of the Scaled Tyrant
 							i(94944),	-- Black Blood Legplates
@@ -1973,7 +1973,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							69756,	-- Anima Orb
 							69427,	-- Dark Animus
 						},
-						["g"] = {
+						["groups"] = {
 							i(95574),	-- Chest of the Crackling Conqueror
 							i(95579),	-- Chest of the Crackling Protector
 							i(95569),	-- Chest of the Crackling Vanquisher
@@ -2010,7 +2010,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							68080,	-- Quet'zal <The Stormcaller>
 							68079,	-- Ro'shak <The Molten Flare>
 						},
-						["g"] = {
+						["groups"] = {
 							i(95578),	-- Shoulders of the Crackling Conqueror
 							i(95583),	-- Shoulders of the Crackling Protector
 							i(95573),	-- Shoulders of the Crackling Vanquisher
@@ -2045,7 +2045,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							68904,	-- Suen <Mistress of Anger>
 							68905,	-- Lu'lin <Mistress of Solitude>
 						},
-						["g"] = {
+						["groups"] = {
 							i(95577),	-- Helm of the Crackling Conqueror
 							i(95582),	-- Helm of the Crackling Protector
 							i(95571),	-- Helm of the Crackling Vanquisher
@@ -2077,7 +2077,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(832, {	-- Lei Shen
 						["crs"] = { 68397 },	-- Lei Shen
-						["g"] = {
+						["groups"] = {
 							i(94986),	-- Conduit-Breaker Chain Leggings
 							i(94984),	-- Doomed Crown of Lei Shen
 							i(94987),	-- Fusion Slasher Chestguard
@@ -2126,7 +2126,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.HEROIC, {
 				["ignoreBonus"] = true,
-				["g"] = {
+				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["description"] = "These can drop from any of the bosses other than Ra-den.",
 						["crs"] = {
@@ -2154,7 +2154,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							68905,	-- Lu'lin <Mistress of Solitude>
 							68397,	-- Lei Shen
 						},
-						["g"] = {
+						["groups"] = {
 							i(96614),	-- Abandoned Spaulders of Arrowflight
 							i(96615),	-- Abandoned Spaulders of Renewal
 							i(96621),	-- Bo-Ris, Horror in the Night
@@ -2205,7 +2205,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(827, {	-- Jin'rokh the Breaker
 						["crs"] = { 69465 },	-- Jin'rokh the Breaker
-						["g"] = {
+						["groups"] = {
 							ach(8056),	-- Heroic: Jin'rokh the Breaker
 							i(96379),	-- Al'set's Tormented Leggings
 							i(96375),	-- Bracers of Constant Implosion
@@ -2253,7 +2253,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(819, {	-- Horridon
 						["crs"] = { 68476 },	-- Horridon
-						["g"] = {
+						["groups"] = {
 							ach(8057),	-- Heroic: Horridon
 							i(96408),	-- Armplates of the Vanquished Abomination
 							i(96392),	-- Bindings of Multiplicative Strikes
@@ -2308,7 +2308,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							69134,	-- Kazra'jin
 							69078,	-- Sul the Sandrawler
 						},
-						["g"] = {
+						["groups"] = {
 							ach(8058),	-- Heroic: Council of Elders
 							i(96600),	-- Gauntlets of the Crackling Conqueror
 							i(96601),	-- Gauntlets of the Crackling Protector
@@ -2345,7 +2345,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(825, {	-- Tortos
 						["crs"] = { 67977 },	-- Tortos
-						["g"] = {
+						["groups"] = {
 							ach(8059),	-- Heroic: Tortos
 							i(96429),	-- Amulet of the Primal Turtle
 							i(96432),	-- Azure Shell Bracers
@@ -2398,7 +2398,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							70235,	-- Frozen Head <Head of Megaera>
 							70247,	-- Venomous Head <Head of Megaera>
 						},
-						["g"] = {
+						["groups"] = {
 							ach(8060),	-- Heroic: Megaera
 							i(96455),	-- Breath of the Hydra
 							i(96459),	-- Chain of Consuming Magic
@@ -2444,7 +2444,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(828, {	-- Ji-Kun
 						["crs"] = { 69712 },	-- Ji-Kun
-						["g"] = {
+						["groups"] = {
 							ach(8061),	-- Heroic: Ji-Kun
 							i(96632),	-- Leggings of the Crackling Conqueror
 							i(96633),	-- Leggings of the Crackling Protector
@@ -2477,7 +2477,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(818, {	-- Durumu the Forgotten
 						["crs"] = { 68036 },	-- Durumu the Forgotten
-						["g"] = {
+						["groups"] = {
 							ach(8062),	-- Heroic: Durumu the Forgotten
 							i(96475),	-- Aberrant Chestguard of Torment
 							i(96479),	-- Artery Rippers
@@ -2525,7 +2525,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(820, {	-- Primordius
 						["crs"] = { 69017 },	-- Primordius
-						["g"] = {
+						["groups"] = {
 							ach(8063),	-- Heroic: Primordius
 							i(96502),	-- Acid-Spine Bonemace
 							i(96500),	-- Band of the Scaled Tyrant
@@ -2578,7 +2578,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							69756,	-- Anima Orb
 							69427,	-- Dark Animus
 						},
-						["g"] = {
+						["groups"] = {
 							ach(8064),	-- Heroic: Dark Animus
 							i(96567),	-- Chest of the Crackling Conqueror
 							i(96568),	-- Chest of the Crackling Protector
@@ -2616,7 +2616,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							68080,	-- Quet'zal <The Stormcaller>
 							68079,	-- Ro'shak <The Molten Flare>
 						},
-						["g"] = {
+						["groups"] = {
 							ach(8065),	-- Heroic: Iron Qon
 							i(96700),	-- Shoulders of the Crackling Conqueror
 							i(96701),	-- Shoulders of the Crackling Protector
@@ -2652,7 +2652,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							68904,	-- Suen <Mistress of Anger>
 							68905,	-- Lu'lin <Mistress of Solitude>
 						},
-						["g"] = {
+						["groups"] = {
 							ach(8066),	-- Heroic: Twin Empyreans
 							i(96624),	-- Helm of the Crackling Conqueror
 							i(96625),	-- Helm of the Crackling Protector
@@ -2685,7 +2685,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(832, {	-- Lei Shen
 						["crs"] = { 68397 },	-- Lei Shen
-						["g"] = {
+						["groups"] = {
 							ach(8238, {	-- Cutting Edge: Lei Shen
 								["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 },
 								-- #if MOP
@@ -2742,7 +2742,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					}),
 					e(831, {	-- Ra-den
 						["crs"] = { 69473 },	-- Ra-den
-						["g"] = {
+						["groups"] = {
 							ach(8260, {	-- Cutting Edge: Ra-den
 								["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 },
 								-- #if MOP

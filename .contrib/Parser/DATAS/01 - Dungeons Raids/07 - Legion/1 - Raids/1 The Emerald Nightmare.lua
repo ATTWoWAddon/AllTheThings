@@ -21,7 +21,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			789,
 		},
 		["lvl"] = 110,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(10818, {    -- Darkbough
                     crit(31428, {    -- Nythendra
@@ -63,14 +63,14 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			d(DIFFICULTY.RAID.MULTI.ALL, {
 				e(1703, {	-- Nythendra
 					["crs"] = { 102672 },	-- Nythendra
-					["g"] = {
+					["groups"] = {
 						i(139636),	-- Vantus Rune Technique: Nythendra [Rank 1] (RECIPE!)
 						i(137748),	-- Vantus Rune Technique: Nythendra [Rank 2] (RECIPE!)
 					},
 				}),
 				e(1744, {	-- Elerethe Renferal
 					["crs"] = { 106087 },	-- Elerethe Renferal
-					["g"] = {
+					["groups"] = {
 						i(128611),	-- Formula: Enchant Neck - Mark of the Distant Army [Rank 3] (RECIPE!)
 						i(139640),	-- Vantus Rune Technique: Elerethe Renferal [Rank 1] (RECIPE!)
 						i(137752),	-- Vantus Rune Technique: Elerethe Renferal [Rank 2] (RECIPE!)
@@ -78,14 +78,14 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				}),
 				e(1738, {	-- Il'gynoth, Heart of Corruption
 					["crs"] = { 105393 },	--	Il'gynoth, Heart of Corruption
-					["g"] = {
+					["groups"] = {
 						i(139637),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 1] (RECIPE!)
 						i(137749),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 2] (RECIPE!)
 					},
 				}),
 				e(1667, {	-- Ursoc
 					["crs"] = { 100497 },	--	Ursoc
-					["g"] = {
+					["groups"] = {
 						i(141917),	-- Formula: Enchant Neck - Mark of the Heavy Hide [Rank 3] (RECIPE!)
 						i(139635),	-- Vantus Rune Technique: Ursoc [Rank 1] (RECIPE!)
 						i(137747),	-- Vantus Rune Technique: Ursoc [Rank 2] (RECIPE!)
@@ -98,7 +98,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						102682,	-- Lethon
 						102683,	-- Emeriss
 					},
-					["g"] = {
+					["groups"] = {
 						i(136903),	-- Nightmare Whelpling (PET!)
 						i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1] (RECIPE!)
 						i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2] (RECIPE!)
@@ -106,7 +106,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				}),
 				e(1750, {	-- Cenarius
 					["crs"] = { 104636 },	--	Cenarius
-					["g"] = {
+					["groups"] = {
 						i(127934),	-- Recipe: Spirit Cauldron [Rank 2] (RECIPE!)
 						i(139641),	-- Vantus Rune Technique: Cenarius [Rank 1] (RECIPE!)
 						i(137753),	-- Vantus Rune Technique: Cenarius [Rank 2] (RECIPE!)
@@ -114,7 +114,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				}),
 				e(1726, {	-- Xavius
 					["crs"] = { 103769 },	--	Xavius
-					["g"] = {
+					["groups"] = {
 						i(128612),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 3] (RECIPE!)
 						i(138827),	-- Illusion: Nightmare (ILLUSION!)
 						i(139639),	-- Vantus Rune Technique: Xavius [Rank 1] (RECIPE!)
@@ -125,7 +125,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			d(DIFFICULTY.RAID.LFR, {
 				["crs"] = { 111246 },	-- Archmage Timear
 				["coord"] = { 63.7, 55.0, LEGION_DALARAN },
-				["g"] = {
+				["groups"] = {
 					n(ZONE_DROPS, {
 						i(141696),	-- Pendant of Liquid Horror
 						i(141694),	-- Gauntlets of Fractured Dreams
@@ -214,7 +214,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 								102682,	-- Lethon
 								102683,	-- Emeriss
 							},
-							["g"] = {
+							["groups"] = {
 								i(139205),	-- Cowl of Fright
 								i(138215),	-- Dreamscale Inlaid Vestments
 								i(138216),	-- Horror Inscribed Chestguard
@@ -319,7 +319,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						102682,	-- Lethon
 						102683,	-- Emeriss
 					},
-					["g"] = {
+					["groups"] = {
 						ach(10663),	-- Imagined Dragons World Tour
 						i(139562, {	-- Breath of the Undying Serpent
 							-- ["sourceQuest"] = , TODO
@@ -355,7 +355,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							44285,	-- The Emerald Nightmare: Piercing the Veil (Mythic)
 						},
 						["provider"] = { "n", 106482 },	-- Malfurion Stormrage
-						["g"] = { i(141303) },	-- Essence of Clarity (QI!)
+						["groups"] = { i(141303) },	-- Essence of Clarity (QI!)
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -443,7 +443,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						102682,	-- Lethon
 						102683,	-- Emeriss
 					},
-					["g"] = {
+					["groups"] = {
 						i(139205),	-- Cowl of Fright
 						i(138215),	-- Dreamscale Inlaid Vestments
 						i(138216),	-- Horror Inscribed Chestguard
@@ -502,7 +502,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						["description"] = "Finishing this quest will grant you immediate access to Cenarius on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
 						["altQuests"] = { 44285 },	-- The Emerald Nightmare: Piercing the Veil (Mythic)
 						["provider"] = { "n", 106482 },	-- Malfurion Stormrage
-						["g"] = { i(141304) },	-- Essence of Clarity (QI!)
+						["groups"] = { i(141304) },	-- Essence of Clarity (QI!)
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -590,7 +590,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						102682,	-- Lethon
 						102683,	-- Emeriss
 					},
-					["g"] = {
+					["groups"] = {
 						i(139205),	-- Cowl of Fright
 						i(138215),	-- Dreamscale Inlaid Vestments
 						i(138216),	-- Horror Inscribed Chestguard
@@ -652,7 +652,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					q(44285, {	-- The Emerald Nightmare: Piercing the Veil [Mythic]
 						["description"] = "Finishing this quest will grant you immediate access to Cenarius on Mythic difficulty each week.\n",
 						["provider"] = { "n", 106482 },	-- Malfurion Stormrage
-						["g"] = { i(141305) },	-- Essence of Clarity (QI!)
+						["groups"] = { i(141305) },	-- Essence of Clarity (QI!)
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -744,7 +744,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						102682,	-- Lethon
 						102683,	-- Emeriss
 					},
-					["g"] = {
+					["groups"] = {
 						ach(10825),	-- Mythic: Dragons of Nightmare
 						i(139205),	-- Cowl of Fright
 						i(138215),	-- Dreamscale Inlaid Vestments

@@ -45,7 +45,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(AWAKENING_THE_MACHINE, {
 				["crs"] = { 217128 },	-- Speaker Kuldas <Awakening the Machine>
 				["coord"] = { 47.5, 31.9, THE_RINGING_DEEPS },
-				["g"] = {
+				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(40662, {		-- It's Not Much, But It's Honest Work
 							title(568),	-- <Name>, Machine-Warden
@@ -61,11 +61,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							["coord"] = { 47.5, 32.0, THE_RINGING_DEEPS },
 							-- #endif
 							["isWeekly"] = true,
-							["g"] = {
+							["groups"] = {
 								i(226273, {	-- Awakened Mechanical Cache (S1)
 									["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
 									["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
-									["g"] = {
+									["groups"] = {
 										i(223128),	-- Formula: Enchant Chest - Oathsworn's Strength (RECIPE!)
 										i(224426),	-- Pattern: Ignition Satchel (RECIPE!)
 										i(223040),	-- Plans: Charged Crusher (RECIPE!)
@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								i(239121, {	-- Awakened Mechanical Cache (S2)
 									["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
 									["timeline"] = { ADDED_11_1_0_SEASONSTART },
-									["g"] = {
+									["groups"] = {
 										i(223128),	-- Formula: Enchant Chest - Oathsworn's Strength (RECIPE!)
 										i(224426),	-- Pattern: Ignition Satchel (RECIPE!)
 										i(223040),	-- Plans: Charged Crusher (RECIPE!)
@@ -116,7 +116,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					n(VENDORS, {
 						n(225189, {	-- R-K-MEDES <Awakening The Machine>
 							["coord"] = { 47.5, 32.0, THE_RINGING_DEEPS },
-							["g"] = bubbleDownRep(FACTION_THE_ASSEMBLY_OF_THE_DEEPS, {
+							["groups"] = bubbleDownRep(FACTION_THE_ASSEMBLY_OF_THE_DEEPS, {
 								{		-- RENOWN 1 --
 								}, {	-- RENOWN 2 --
 								}, {	-- RENOWN 3 --
@@ -196,15 +196,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}, {	-- RENOWN 3 --
 				}, {	-- RENOWN 4 --
 					q(82367, {	-- Earth-Encrusted Gem
-						["g"] = { i(223951) },	-- Earth-Encrusted Gem
+						["groups"] = { i(223951) },	-- Earth-Encrusted Gem
 					}),
 				}, {	-- RENOWN 5 --
 				}, {	-- RENOWN 6 --
 					q(82369, {	-- A Shining Bundle of Goods
-						["g"] = { i(226148) },	-- Wax-sealed Weathered Crests
+						["groups"] = { i(226148) },	-- Wax-sealed Weathered Crests
 					}),
 					q(85538, {	-- Shinies
-						["g"] = {
+						["groups"] = {
 							currency(RESONANCE_CRYSTALS),
 						},
 					}),
@@ -212,31 +212,31 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(84914),	-- Valorstones
 				}, {	-- RENOWN 8 --
 					q(82371, {	-- A Flickering Candle
-						["g"] = { i(226146) },	-- Handful of Humming Shinies
+						["groups"] = { i(226146) },	-- Handful of Humming Shinies
 					}),
 				}, {	-- RENOWN 9 --
 					q(82370),	-- Crests
 					q(85539),	-- Take Candle!
 				}, {	-- RENOWN 10 --
 					q(82372, {	-- Deeps Unifier
-						["g"] = {
+						["groups"] = {
 							i(218343),	-- Tabard of the Assembly (COSMETIC!)
 							i(226146),	-- Handful of Humming Shinies
 						},
 					}),
 				}, {	-- RENOWN 11 --
 					q(82373, {	-- Crests and Rocks
-						["g"] = { i(226147) },	-- Bunch of Brave Rocks
+						["groups"] = { i(226147) },	-- Bunch of Brave Rocks
 					}),
 				}, {	-- RENOWN 12 --
 					q(82374, {	-- A Shining Candle
-						["g"] = {
+						["groups"] = {
 							i(226149),	-- Pile of Humming Shinies
 						},
 					}),
 				}, {	-- RENOWN 13 --
 					q(85540, {	-- Take Big Candle!
-						["g"] = {
+						["groups"] = {
 							i(226155),	-- Big Candle
 						},
 					}),
@@ -246,7 +246,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}, {	-- RENOWN 15 --
 					q(82377),	-- Crests
 					q(85541, {	-- Here's a Shiny!
-						["g"] = { i(226150)	},	-- Gem-Studded Candelabra
+						["groups"] = { i(226150)	},	-- Gem-Studded Candelabra
 					}),
 				}, {	-- RENOWN 16 --
 					q(82378),	-- Valorstones
@@ -254,7 +254,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(83043),	-- Carved Crests
 				}, {	-- RENOWN 18 --
 					q(82379, {	-- An Overflowing Bundle of Shinies
-						["g"] = {
+						["groups"] = {
 							currency(RESONANCE_CRYSTALS),
 							i(226151),	-- Wax-Coated Coffer Unlocker
 						},
@@ -262,30 +262,30 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}, {	-- RENOWN 19 --
 				}, {	-- RENOWN 20 --
 					q(82381, {	-- A Scintillating Candle
-						["g"] = { i(226150) },	-- Gem-Studded Candelabra
+						["groups"] = { i(226150) },	-- Gem-Studded Candelabra
 					}),
 				}, {	-- RENOWN 21 --
 					q(82382),	-- Crests
 					q(85542, {	-- Take Really Big Candle!
-						["g"] = { i(226156) },	-- Really Big Candle
+						["groups"] = { i(226156) },	-- Really Big Candle
 					}),
 				}, {	-- RENOWN 22 --
 					q(82383, {	-- Brave Rocks
-						["g"] = { i(226147) },	-- Bunch of Brave Rocks
+						["groups"] = { i(226147) },	-- Bunch of Brave Rocks
 					}),
 					q(85543),	-- More Shinies!
 				}, {	-- RENOWN 23 --
 					q(83046),	-- Carved Crests
 				}, {	-- RENOWN 24 --
 					q(82384, {	-- A Big, Big Shiny!
-						["g"] = { i(224072) },	-- Enchanted Runed Harbinger Crest
+						["groups"] = { i(224072) },	-- Enchanted Runed Harbinger Crest
 					}),
 					q(85544, {	-- Many Little Shinies!
-						["g"] = { i(226153) },	-- Big Pile of Humming Shinies
+						["groups"] = { i(226153) },	-- Big Pile of Humming Shinies
 					}),
 				}, {	-- RENOWN 25 --
 					q(82385, {	-- For What Glimmers in Candlelight
-						["g"] = { i(226147) },	-- Bunch of Rocks
+						["groups"] = { i(226147) },	-- Bunch of Rocks
 					}),
 				},
 			}))),
@@ -296,7 +296,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
 					["isRepeatable"] = true,
 					["minReputation"] = { FACTION_THE_ASSEMBLY_OF_THE_DEEPS, 25 },
-					["g"] = { i(225245) },	-- Overflowing Trove of the Deeps
+					["groups"] = { i(225245) },	-- Overflowing Trove of the Deeps
 				}),
 			}),
 			n(SNUFFLING, {
@@ -305,7 +305,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["description"] = "Quest Item drops from Nerubian enemies in the area.\nYou may need to get a few stacks of Unseeming Shift by standing in Blood Pools.",
 						["provider"] = { "i", 217390 },	-- Coagulated Black Blood Clot
 						["coord"] = { 64.8, 80.8, AZJ_KAHET },
-						["g"] = {
+						["groups"] = {
 							i(217391),	-- Coagulated Black Blood (QI!)
 							i(220161),	-- Coagulated Sticks of Blood
 						},
@@ -314,13 +314,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["description"] = "Quest Item drops from Nerubian enemies in the area.",
 						["provider"] = { "i", 217385 },	-- Clump of Waxy Excretion
 						["coord"] = { 79.4, 76.5, AZJ_KAHET },
-						["g"] = {
+						["groups"] = {
 							i(212980),	-- Waxy Excretion (QI!)
 						},
 					}),
 					q(82957, {	-- Thanks for the Wax
 						["repeatable"] = true,
-						["g"] = {
+						["groups"] = {
 							i(224642),	-- Firelight Ruby
 						},
 					}),
@@ -336,7 +336,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				n(VENDORS, {
 					n(216164, {	-- Gnawbles
 						["coord"] = { 47.7, 35.3, THE_RINGING_DEEPS },
-						["g"] = {
+						["groups"] = {
 							i(224726, {	-- Waxy Box of Rocks
 								["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
 							}),
@@ -385,7 +385,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(VENDORS, {
 				n(221390, {	-- Waxmonger Squick <Quatermaster>
 					["coord"] = { 47.3, 32.9, THE_RINGING_DEEPS },
-					["g"] = bubbleDownRep(FACTION_THE_ASSEMBLY_OF_THE_DEEPS, {
+					["groups"] = bubbleDownRep(FACTION_THE_ASSEMBLY_OF_THE_DEEPS, {
 						{		-- RENOWN 1 --
 							i(228418, {	-- Noncandescent Smithing Choker
 								["cost"] = {{"c", RESONANCE_CRYSTALS, 250}},

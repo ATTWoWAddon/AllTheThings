@@ -67,7 +67,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 	prof(ALCHEMY, {
 		spell(370747, {	-- Advanced Phial Experimentation
 			["sym"] = {{"select","spellID",370746},{"extract","recipeID"}},	-- Basic Phial Experimentation -> Recipes
-			["g"] = {
+			["groups"] = {
 				i(193366, {	-- Advanced Phial Experimentation
 					-- Move to Basic Phial Experimentation if possible discovery
 					r(370460),	-- Phial of Charged Isolation (RECIPE!)
@@ -82,7 +82,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		spell(370745, {	-- Advanced Potion Experimentation
 			-- Nothing moved to Basic yet, so don't symlink to it
 			-- ["sym"] = {{"select","spellID",370743},{"extract","recipeID"}},	-- Basic Potion Experimentation -> Recipes
-			["g"] = {
+			["groups"] = {
 				i(193367, {	-- Advanced Potion Experimentation
 					-- Move to Basic Potion Experimentation if possible discovery
 					r(370478),	-- Potion of Frozen Fatality (RECIPE!)
@@ -1160,7 +1160,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 	prof(ENGINEERING, {
 		n(DISCOVERY, {
 			["description"] = "Multiple Ways of Discovering.",
-			["g"] = {
+			["groups"] = {
 				r(382350),	-- Calibrated Safety Switch
 				r(382319),	-- Complicated Cuffs
 				r(382349),	-- Critical Failure Prevention Unit
@@ -1562,7 +1562,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 				201738,	-- Technique: Renewed Proto-Drake: Steel and Yellow Armor (RECIPE!)
 				198904,	-- Technique: Windborne Velocidrake: Windswept Pattern (RECIPE!)
 			}},
-			["g"] = {
+			["groups"] = {
 				-- Only known source is the Bottle
 				i(194671),	-- Design: "Rhinestone" Sunglasses (RECIPE!)
 				i(205161, {["timeline"] = {ADDED_10_1_0}}),	-- Plans: Heat-Resistant Rescue Ring (RECIPE!)
@@ -1643,7 +1643,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		}),
 		n(DISCOVERY, {
 			header(HEADERS.Map, EMERALD_DREAM, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 }, }, {
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["maps"] = { EMERALD_DREAM }
 				},{
 					r(422293),	-- Overload Overgrown Herb
@@ -1654,7 +1654,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 				}),
 			})),
 			header(HEADERS.Map, ZARALEK_CAVERN, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 }, }, {
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["maps"] = { ZARALEK_CAVERN }
 				},{
 					r(405124),	-- Lambent Bubble Poppy

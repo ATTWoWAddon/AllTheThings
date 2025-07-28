@@ -130,7 +130,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			ach(14771, {	-- The Afterlife Express
 				["description"] = "Coordinates listed are a single point along the path driven by each carriage.  Some have more circuitous routes than others and will require a longer wait.",
-				["g"] = {
+				["groups"] = {
 					crit(50168, {	-- Chalice Carriage
 						["coord"] = { 47.5, 47.7, REVENDRETH },
 						["crs"] = { 174750 },	-- Chalice Carriage
@@ -236,9 +236,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			ach(14770, {	-- What We Ride in the Shadows
 				["description"] = "Each ride costs 5 Infused Rubies.  Stay on the Sinrunner until you get credit for the ride.",
 				["crs"] = { 174032 },	-- Castle Sinrunner
-				["g"] = {
+				["groups"] = {
 					crit(50174, {	-- Old Gate
-						["coord"] = { 60.3, 62.6, REVENDRETH }
+						["coord"] = { 60.3, 62.6, REVENDRETH },
 					}),
 					crit(50175, {	-- Hole in the Wall
 						["coords"] = {

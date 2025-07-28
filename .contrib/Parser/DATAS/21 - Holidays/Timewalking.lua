@@ -223,10 +223,10 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 					{ 56.0, 19.0, STORMWIND_CITY },
 					{ 52.8, 83.0, ORGRIMMAR },
 				},
-				["isWeekly"] = true,
 				["timeline"] = { ADDED_11_0_5 },
 				["lockCriteria"] = { 1, "lvl", 80 },
-				["g"] = {
+				["isWeekly"] = true,
+				["groups"] = {
 					i(232877, {	-- Timely Goodie Bag
 						["sym"] = {
 							{ "select", "itemID", 229355 },	-- Chromie's Premium Goodie Bag
@@ -241,8 +241,8 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 					{ 56.0, 19.0, STORMWIND_CITY },
 					{ 52.8, 83.0, ORGRIMMAR },
 				},
-				["isWeekly"] = true,
 				["timeline"] = { ADDED_11_0_5 },
+				["isWeekly"] = true,
 				["lvl"] = 80,
 				["sym"] = { { "select", "itemID", 232877 } },	-- Timely Goodie Bag
 			}),
@@ -261,7 +261,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 					{ 52.8, 83.0, ORGRIMMAR },
 				},
 				["timeline"] = { ADDED_11_0_7 },
-				["g"] = {
+				["groups"] = {
 					n(ARMOR, bubbleDownFiltered({
 						["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
 						["modID"] = 0,
@@ -422,7 +422,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 		inst_tw(63, {	-- Deadmines
 			e(2613, {	-- Rhahk'Zor
 				["crs"] = { 644 },
-				["g"] = {
+				["groups"] = {
 					i(224735),	-- Blackened Bone Necklace
 					i(224731),	-- Ogre-Sized Belt
 					i(224732),	-- Foreman's Handwraps
@@ -433,7 +433,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(2626, {	-- Sneed
 				["crs"] = { 643 },
-				["g"] = {
+				["groups"] = {
 					i(224736),	-- Shredder Teeth
 					i(224737),	-- Goblin Treekickers
 					i(224738),	-- Logger's Wristguards
@@ -446,7 +446,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(2628, {	-- Gilned
 				["crs"] = { 1763 },
-				["g"] = {
+				["groups"] = {
 					i(224740),	-- Forgemasters's Faceshield
 					i(224741),	-- Defias Scimitar
 					i(5199),	-- Smelting Pants
@@ -455,7 +455,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(2629, {	-- Mr. Smite
 				["crs"] = { 646 },
-				["g"] = {
+				["groups"] = {
 					i(224742),	-- Smite's Pistol
 					i(224744),	-- Defias Cuirass
 					i(224745),	-- Blackguard Slippers
@@ -468,7 +468,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(2630, {	-- Captain Greenskin
 				["crs"] = { 647 },
-				["g"] = {
+				["groups"] = {
 					i(224748),	-- Captain's Tricorne
 					i(224749),	-- Goblin Griptreads
 					i(224753),	-- Pirate Captain's Girdle
@@ -479,7 +479,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(2631, {	-- Edwin VanCleef
 				["crs"] = { 639 },
-				["g"] = {
+				["groups"] = {
 					i(224754),	-- Guildmaster's Leggings
 					i(224755),	-- Defias Knifeguards
 					i(5191),	-- Cruel Barb
@@ -490,7 +490,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(2632, {	-- Cookie
 				["crs"] = { 645 },
-				["g"] = {
+				["groups"] = {
 					i(5198),	-- Cookie's Stirring Rod
 					i(5197),	-- Cookie's Tenderizer
 					i(224756),	-- Cookie's Special Flavors
@@ -503,7 +503,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 		inst_tw(230, {	-- Dire Maul - Capital Gardens
 			e(406, {	-- Tendris Warpwood
 				["crs"] = { 11489 },	-- Tendris Warpwood
-				["g"] = {
+				["groups"] = {
 					i(18353),	-- Stoneflower Staff
 					i(18352),	-- Petrified Bark Shield
 					i(18393),	-- Warpwood Bindings
@@ -512,7 +512,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(407, {	-- Illyanna Ravenoak
 				["crs"] = { 11488 },	-- Illyaana Ravenoak
-				["g"] = {
+				["groups"] = {
 					i(18347),	-- Well Balanced Axe
 					i(18383),	-- Force Imbued Gauntlets
 					i(18349),	-- Gauntlets of Accuracy
@@ -522,7 +522,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(408, {	-- Magister Kalendris
 				["crs"] = { 11487 },	-- Magister Kalendris
-				["g"] = {
+				["groups"] = {
 					i(18397),	-- Elder Magus Pendant
 					i(18374),	-- Flamescarred Shoulders
 					i(18350),	-- Amplifying Cloak
@@ -532,7 +532,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(409, {	-- Immol'thar
 				["crs"] = { 11496 },	-- Immol'thar
-				["g"] = {
+				["groups"] = {
 					i(18372),	-- Blade of the New Moon
 					i(18381),	-- Evil Eye Pendant
 					i(18384),	-- Bile-Etched Spaulders
@@ -546,7 +546,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(410, {	-- Prince Tortheldrin
 				["crs"] = { 11486 },	-- Prince Tortheldrin
-				["g"] = {
+				["groups"] = {
 					i(18392),	-- Distracting Dagger
 					i(18396),	-- Mind Carver
 					i(18376),	-- Timeworn Mace
@@ -563,7 +563,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 		inst_tw(1276, {	-- Dire Maul - Warpwood Quarter
 			e(404, {	-- Lethtendris
 				["crs"] = { 14327 },	-- Lethtendris
-				["g"] = {
+				["groups"] = {
 					i(18302),	-- Band of Vigor
 					i(18325),	-- Felhide Cap
 					i(18301),	-- Lethtendris' Wand
@@ -572,7 +572,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(403, {	-- Hydrospawn
 				["crs"] = { 13280 },	-- Hydrospawn
-				["g"] = {
+				["groups"] = {
 					i(18305),	-- Breakwater Legguards
 					i(18307),	-- Riptide Shoes
 					i(18317),	-- Tempest Talisman
@@ -582,7 +582,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(402, {	-- Zevrim Thornhoof
 				["crs"] = { 11490 },	-- Zevrim Thornhoof
-				["g"] = {
+				["groups"] = {
 					i(18308),	-- Clever Hat
 					i(18319),	-- Fervent Helm
 					i(18306),	-- Gloves of Shadowy Mist
@@ -593,7 +593,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(405, {	-- Alzzin the Wildshaper
 				["crs"] = { 11492 },	-- Alzzin the Wildshaper
-				["g"] = {
+				["groups"] = {
 					i(18321),	-- Energetic Rod
 					i(18312),	-- Energized Chestplate
 					i(18310),	-- Fiendish Machete
@@ -609,7 +609,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 		inst_tw(236, {	-- Stratholme - Main Gate
 			e(443, {	-- Hearthsinger Forresten
 				["crs"] = { 10558 },	-- Hearthsinger Forresten
-				["g"] = {
+				["groups"] = {
 					i(13384),	-- Rainbow Girdle
 					i(13378),	-- Songbird Blouse
 					i(12103),	-- Star of Mystaria
@@ -618,7 +618,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(450, {	-- The Unforgiven
 				["crs"] = { 10516 },	-- The Unforgiven
-				["g"] = {
+				["groups"] = {
 					i(151404),	-- Gauntlets of Purged Sanity
 					i(13404),	-- Mask of the Unforgiven
 					i(22406),	-- Redemption
@@ -629,7 +629,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(2633, {	-- Postmaster Malown
 				["crs"] = { 11143 },	-- Postmaster Malown
-				["g"] = {
+				["groups"] = {
 					i(232905),	-- Malown's Slam
 					i(13390),	-- The Postmaster's Band
 					i(13392),	-- The Postmaster's Seal
@@ -640,7 +640,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(445, {	-- Timmy the Cruel
 				["crs"] = { 10808 },	-- Timmy the Cruel
-				["g"] = {
+				["groups"] = {
 					i(151403),	-- Fetid Stranglers
 					i(13403),	-- Grimgore Noose
 					i(13401),	-- The Cruel Hand of Timmy
@@ -650,13 +650,13 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(749, {	-- Commander Malor
 				["crs"] = { 11032 },	-- Commander Malor
-				["g"] = {
+				["groups"] = {
 					i(22403),	-- Nacreous Shell Necklace
 				},
 			}),
 			e(446, {	-- Willey Hopebreaker
 				["crs"] = { 10997 },	-- Willey Hopebreaker
-				["g"] = {
+				["groups"] = {
 					i(18721),	-- Barrage Girdle
 					i(13382),	-- Cannonball Runner
 					i(22407),	-- Helm of the New Moon
@@ -668,7 +668,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(448, {	-- Instructor Galford
 				["crs"] = { 10811 },	-- Instructor Galford
-				["g"] = {
+				["groups"] = {
 					i(13386),	-- Archivist Cape
 					i(18716),	-- Ash Covered Boots
 					i(13387),	-- Foresight Girdle
@@ -680,7 +680,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 					10813,	-- Balnazzar
 					10812,	-- Grand Crusader Dathrohan
 				},
-				["g"] = {
+				["groups"] = {
 					i(13353),	-- Book of the Dead
 					i(13359),	-- Crown of Tyranny
 					i(13348),	-- Demonshear
@@ -696,7 +696,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 		inst_tw(1292, {	-- Stratholme - Service Entrance
 			e(451, {	-- Baroness Anastari
 				["crs"] = { 10436 },	-- Baroness Anastari
-				["g"] = {
+				["groups"] = {
 					i(18728),	-- Anastari Heirloom
 					i(13534),	-- Banshee Finger
 					i(13539),	-- Banshee's Touch
@@ -709,7 +709,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(452, {	-- Nerub'enkan
 				["crs"] = { 10437 },	-- Nerub'enkan
-				["g"] = {
+				["groups"] = {
 					i(13533),	-- Acid-Etched Pauldrons
 					i(18738),	-- Carapace Spine Crossbow
 					i(18739),	-- Chitinous Plate Legguards
@@ -722,7 +722,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(453, {	-- Maleki the Pallid
 				["crs"] = { 10438 },	-- Maleki the Pallid
-				["g"] = {
+				["groups"] = {
 					i(18737),	-- Bone Slicing Hatchet
 					i(13525),	-- Darkbind Fingers
 					i(13526),	-- Flamescarred Girdle
@@ -735,7 +735,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(454, {	-- Magistrate Barthilas
 				["crs"] = { 10435 },	-- Magistrate Barthilas
-				["g"] = {
+				["groups"] = {
 					i(18727),	-- Crimson Felt Hat
 					i(18722),	-- Death Grips
 					i(18726),	-- Magistrate's Cuffs
@@ -745,7 +745,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(455, {	-- Ramstein the Gorger
 				["crs"] = { 10439 },	-- Ramstein the Gorger
-				["g"] = {
+				["groups"] = {
 					i(18723),	-- Animated Chain Necklace
 					i(13373),	-- Band of Flesh
 					i(13375),	-- Crest of Retribution
@@ -756,7 +756,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(456, {	-- Lord Aurius Rivendare
 				["crs"] = { 45412 },	-- Lord Aurius Rivendare
-				["g"] = {
+				["groups"] = {
 					i(13335),	-- Rivendare's Deathcharger (MOUNT!)
 					i(13368),	-- Bonescraper
 					i(13340),	-- Cape of the Black Baron
@@ -777,19 +777,19 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 		inst_tw(241, {	-- Zul'Farrak
 			e(485, {	-- Theka the Martyr
 				["crs"] = { 7272 },	-- Theka the Martyr
-				["g"] = {
+				["groups"] = {
 					i(151456),	-- Theka's Seal of Vigilance
 				},
 			}),
 			e(482, {	-- Hydromancer Velratha
 				["crs"] = { 7795 },	-- Hydromancer Velratha
-				["g"] = {
+				["groups"] = {
 					i(9243),	-- Shriveled Troll Heart
 				},
 			}),
 			e(484, {	-- Antu'sul
 				["crs"] = { 8127 },	-- Antu'sul
-				["g"] = {
+				["groups"] = {
 					i(9641),	-- Lifeblood Amulet
 					i(9379),	-- Sang'thraze the Deflector
 					i(9639),	-- The Hand of Antu'sul
@@ -798,7 +798,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(486, {	-- Witch Doctor Zum'rah
 				["crs"] = { 7271 },
-				["g"] = {
+				["groups"] = {
 					i(18083),	-- Jumanza Grips
 					i(151457),	-- Witch Doctor's Ritual Collar
 					i(18082),	-- Zum'rah's Vexing Cane
@@ -806,7 +806,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 			e(483, {	-- Gahz'rilla
 				["crs"] = { 7273 },	-- Gahz'rilla
-				["g"] = {
+				["groups"] = {
 					i(9467),	-- Gahz'rilla Fang
 					i(9469),	-- Gahz'rilla Scale Armor
 					i(151455),	-- Gahz'rilla Scale Cloak
@@ -817,7 +817,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 					7796,	-- Nekrum Gutchewer
 					7275,	-- Shadowpriest Sezz'ziz
 				},
-				["g"] = {
+				["groups"] = {
 					i(9470),	-- Bad Mojo Mask
 					i(9475),	-- Diabolic Skiver
 					i(9474),	-- Jinxed Hoodoo Kilt
@@ -831,7 +831,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 					7267,	-- Chief Ukorz Sandscalp
 					7797,	-- Ruuzlu
 				},
-				["g"] = {
+				["groups"] = {
 					i(9476),	-- Big Bad Pauldrons
 					i(9479),	-- Embrace of the Lycan
 					i(151460),	-- Farraki Ceremonial Robes
@@ -876,9 +876,9 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 				["provider"] = { "n", 98685 },	-- Cupri
 				["coord"] = { 54.4, 38.8,  SHATTRATH_CITY },
 				["timeline"] = { ADDED_11_0_5 },
-				["isWeekly"] = true,
 				["lockCriteria"] = { 1, "lvl", 80 },
-				["g"] = {
+				["isWeekly"] = true,
+				["groups"] = {
 					i(232877, {	-- Timely Goodie Bag
 						["sym"] = {
 							{ "select", "itemID", 229355 },	-- Chromie's Premium Goodie Bag
@@ -888,11 +888,11 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 				},
 			}),
 			q(47523, {	-- Disturbance Detected: Black Temple
-				["coord"] = { 54.6, 39,  SHATTRATH_CITY },
 				["provider"] = { "n", 123252 },	-- Vormu
-				["isWeekly"] = true,
+				["coord"] = { 54.6, 39,  SHATTRATH_CITY },
 				["timeline"] = { ADDED_7_2_5 },
-				["g"] = {
+				["isWeekly"] = true,
+				["groups"] = {
 					i(208091, sharedDataSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Cache of Timewarped Treasures (BC)
 						["description"] = "This bag contains an item from Black Temple or an item from the WoW's 15th Birthday Event Bosses Archimonde, Kael'Thas or Lady Vashj.\nThe droprate for the mounts seems rather high (5-10%).",
 						["sym"] = {{"select","itemID",
@@ -1012,7 +1012,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 		n(VENDORS, {
 			n(98685, {	-- Cupri <Timewalking Vendor>
 				["coord"] = { 54.4, 38.8,  SHATTRATH_CITY },
-				["g"] = {
+				["groups"] = {
 					n(ARMOR, {
 						filter(BACK_F, {
 							i(129834, {	-- Bishop's Cloak
@@ -1190,7 +1190,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 						}),
 						i(33844, {	-- Barrel of Fish
 							["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
-							["g"] = {
+							["groups"] = {
 								i(33869),	-- Recipe: Broiled Bloodfin (RECIPE!)
 								i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
 								i(33875),	-- Recipe: Kibler's Bits (RECIPE!)
@@ -1222,7 +1222,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 						}),
 						i(33857, {	-- Crate of Meat
 							["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
-							["g"] = {
+							["groups"] = {
 								i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
 								i(33925),	-- Recipe: Delicious Chocolate Cake (RECIPE!)
 								i(33875),	-- Recipe: Kibler's Bits (RECIPE!)
@@ -1304,7 +1304,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 		}),
 		inst_tw(751, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 }},{	-- The Black Temple
 			["isRaid"] = true,
-			["g"] = {
+			["groups"] = {
 				cr(22887, e(1582, {	-- High Warlord Naj'entus
 					i(122104),	-- Leviathan Hatchling (PET!)
 					i(150447),	-- Halberd of Desolation
@@ -2095,9 +2095,9 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 				["provider"] = { "n", 98690 },	-- Auzin
 				["coord"] = { 50.6, 46.4, NORTHREND_DALARAN },
 				["timeline"] = { ADDED_11_0_5 },
-				["isWeekly"] = true,
 				["lockCriteria"] = { 1, "lvl", 80 },
-				["g"] = {
+				["isWeekly"] = true,
+				["groups"] = {
 					i(232877, {	-- Timely Goodie Bag
 						["sym"] = {
 							{ "select", "itemID", 229355 },	-- Chromie's Premium Goodie Bag
@@ -2109,9 +2109,9 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 			q(50316, {	-- Disturbance Detected: Ulduar
 				["provider"] = { "n", 130654 },	-- Vormu
 				["coord"] = { 49.5, 45.7, NORTHREND_DALARAN },
-				["isWeekly"] = true,
 				["timeline"] = { ADDED_7_3_5 },
-				["g"] = {
+				["isWeekly"] = true,
+				["groups"] = {
 					i(157030),	-- Titan Prison Fragment (QI!)
 					i(208094, sharedDataSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Cache of Timewarped Treasures (WOTLK)
 						["description"] = "This bag contains an item from Ulduar or an item from the WoW's 15th Birthday Event Bosses Anub, Lich King or Heigan.\nThe droprate for the mounts seems rather high (5-10%).", -- Might have been removed in 10.2.7 as a pouch dropped instead for me
@@ -2438,7 +2438,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 		n(VENDORS, {
 			n(98690, {	-- Auzin <Timewalking Vendor>
 				["maps"] = { NORTHREND_DALARAN },
-				["g"] = {
+				["groups"] = {
 					n(ARMOR, {
 						filter(CLOTH, {
 							i(171999, {	-- Coldstep Sandals
@@ -2706,7 +2706,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 		}),
 		inst_tw(759, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }},{	-- Ulduar
 			["isRaid"] = true,
-			["g"] = {
+			["groups"] = {
 				n(ZONE_DROPS, {
 					--[[ Possibly
 					-- When confirmed, also remove them from the file at the very bottom
@@ -3059,7 +3059,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 						33651,	-- VX-001
 						33670,	-- Aerial Command Unit
 					},
-					["g"] = {
+					["groups"] = {
 						i(138800),	-- Illusion: Blade Ward (ILLUSION!)
 						i(142092),	-- G0-R41-0N Ultratonk (PET!)
 						i(156211),	-- Delirium's Touch
@@ -3523,7 +3523,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 				["crs"] = {
 					24201,	-- Dalronn the Controller
 				},
-				["g"] = {
+				["groups"] = {
 					i(188432),	-- Arm Blade of Augelmir
 					i(188444),	-- Bindings of the Tunneler
 					i(188433),	-- Chestplate of the Northern Lights
@@ -3654,9 +3654,9 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 					{ 52.1, 41.6, ORGRIMMAR },
 				},
 				["timeline"] = { ADDED_11_0_7 },
-				["isWeekly"] = true,
 				["lockCriteria"] = { 1, "lvl", 80 },
-				["g"] = {
+				["isWeekly"] = true,
+				["groups"] = {
 					i(232877, {	-- Timely Goodie Bag
 						["sym"] = {
 							{ "select", "itemID", 229355 },	-- Chromie's Premium Goodie Bag
@@ -3671,9 +3671,9 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 					{ 74.8, 18.2, STORMWIND_CITY },
 					{ 49.8, 37.6, ORGRIMMAR },
 				},
-				["isWeekly"] = true,
 				["timeline"] = { ADDED_8_2_5 },
-				["g"] = {
+				["isWeekly"] = true,
+				["groups"] = {
 					i(172506),	-- Time-Locked Cinder (QI!)
 					i(208095, sharedDataSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Cache of Timewarped Treasures (Cata)
 						["description"] = "This bag contains an item from Firelands or an item from the WoW's 15th Birthday Event Bosses Cho'gall or Nefarian.\nThe droprate for the mounts seems rather high (5-10%).",
@@ -3764,16 +3764,16 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 			}),
 			q(40787, {	-- The Smoldering Ember (A)
 				["provider"] = { "i", 133378 },	-- Smoldering Timewarped Ember
-				["isWeekly"] = true,
 				["races"] = ALLIANCE_ONLY,
+				["isWeekly"] = true,
 				["groups"] = {
 					currency(TIMEWARPED_BADGE),
 				},
 			}),
 			q(40786, {	-- The Smoldering Ember (H)
 				["provider"] = { "i", 133377 },	-- Smoldering Timewarped Ember
-				["isWeekly"] = true,
 				["races"] = HORDE_ONLY,
+				["isWeekly"] = true,
 				["groups"] = {
 					currency(TIMEWARPED_BADGE),
 				},
@@ -3785,7 +3785,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 					STORMWIND_CITY,
 					ORGRIMMAR,
 				},
-				["g"] = {
+				["groups"] = {
 					n(ARMOR, {
 						filter(CLOTH, {
 							i(133536, {	-- Bracers of the Black Dream
@@ -3892,7 +3892,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 						i(67414, {	-- Bag of Shiny Things
 							["modID"] = 0,
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 150 }},
-							["g"] = {
+							["groups"] = {
 								i(44983),	-- Strand Crawler (PET!)
 								i(33820),	-- Weather-Beaten Fishing Hat
 								i(45991),	-- Bone Fishing Pole
@@ -3976,7 +3976,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 		}),
 		inst_tw(78, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5 }},{	-- Firelands
 			["isRaid"] = true,
-			["g"] = {
+			["groups"] = {
 				n(COMMON_BOSS_DROPS, {
 					["crs"] = {
 						53691,	-- Shannox
@@ -3987,7 +3987,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 						52571,	-- Majordomo Staghelm <Archdruid of the Flame>
 						52409,	-- Ragnaros
 					},
-					["g"] = {
+					["groups"] = {
 						i(173277),	-- Avool's Incendiary Shanker
 						i(173276),	-- Entrail Disgorger
 						i(173274),	-- Eye of Purification
@@ -4000,7 +4000,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 				}),
 				e(192, {	-- Beth'tilac
 					["creatureID"] = 52498,
-					["g"] = {
+					["groups"] = {
 						i(152976, {	-- Cinderweb Recluse (PET!)
 							["timeline"] = { ADDED_7_3_0 },
 						}),
@@ -4022,7 +4022,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 				}),
 				e(193, {	-- Lord Rhyolith
 					["creatureID"] = 52558,
-					["g"] = {
+					["groups"] = {
 						i(171677),	-- Volcanospike
 						i(171671),	-- Arbalest of Erupting Fury
 						i(171681),	-- Flickering Cowl
@@ -4040,7 +4040,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 				}),
 				e(194, {	-- Alysrazor
 					["creatureID"] = 52530,
-					["g"] = {
+					["groups"] = {
 						i(71665),	-- Flametalon of Alysrazor (MOUNT!)
 						i(171796, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Robes of the Cleansing Flame
 						i(171801, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Vestment of the Cleansing Flame
@@ -4083,7 +4083,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 				}),
 				e(195, {	-- Shannox
 					["creatureID"] = 53691,
-					["g"] = {
+					["groups"] = {
 						i(152975),	-- Blazehound (PET!)
 						i(171734, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Elementium Deathplate Legguards
 						i(171741, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Elementium Deathplate Greaves
@@ -4122,7 +4122,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 				}),
 				e(196, {	-- Baleroc, the Gatekeeper
 					["creatureID"] = 53494,
-					["g"] = {
+					["groups"] = {
 						i(152977),	-- Surger (PET!)
 						i(171793, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Handwraps of the Cleansing Flame
 						i(171798, { ["timeline"] = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Gloves of the Cleansing Flame
@@ -4160,7 +4160,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 				}),
 				e(197, {	-- Majordomo Staghelm
 					["creatureID"] = 52571,
-					["g"] = {
+					["groups"] = {
 						i(152978),	-- Infernal Pyreclaw (PET!)
 						i(122304),	-- Fandral's Seed Pouch (TOY!)
 						i(171807),	-- Balespider's Mantle
@@ -4201,7 +4201,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 				}),
 				e(198, {	-- Ragnaros
 					["creatureID"] = 52409,
-					["g"] = {
+					["groups"] = {
 						i(69224),	-- Pureblood Fire Hawk (MOUNT!)
 						i(171804),	-- Balespider's Hood
 						i(171794),	-- Cowl of the Cleansing Flame
@@ -4292,7 +4292,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 					54123,	-- Echo of Sylvannas
 					54544,	-- Echo of Tyrande
 				},
-				["g"] = {
+				["groups"] = {
 					i(133391),	-- Dragonshrine Scepter
 					i(133415),	-- Crescent Wand
 					i(133393),	-- Echoing Headguard
@@ -4391,7 +4391,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 		inst_tw(69, {	-- Lost City of the Tol'vir
 			e(117, {	-- General Husam
 				["crs"] = { 44577 },	-- General Husam
-				["g"] = {
+				["groups"] = {
 					i(133257),	-- Saliza's Spear
 					i(133373),	-- Necklace of Rumbling Earth
 					i(133254),	-- Kaleki Cloak
@@ -4405,7 +4405,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 					43614,	-- Lockmaw
 					49045,	-- Augh
 				},
-				["g"] = {
+				["groups"] = {
 					i(133261),	-- Balkar's Waders
 					i(133259),	-- Resonant Kris
 					i(133260),	-- Tauntka's Necklace
@@ -4421,7 +4421,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 			}),
 			e(119, {	-- High Prophet Barim
 				["crs"] = { 43612 },	-- High Prophet Barim
-				["g"] = {
+				["groups"] = {
 					i(133265),	-- Barin's Main Gauche
 					i(133277),	-- Zora's Ward
 					i(133264),	-- Sand Silk Wristband
@@ -4439,7 +4439,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 			}),
 			e(122, {	-- Siamat
 				["crs"] = { 44819 },	-- Siamat
-				["g"] = {
+				["groups"] = {
 					i(133271),	-- Hammer of Sparks
 					i(133376),	-- Hammer of Swirling Winds
 					i(133274),	-- Mantle of Master Cho
@@ -4616,9 +4616,9 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 				["provider"] = { "n", 118828 },	-- Mistweaver
 				["coord"] = { 43.1, 55.3, TIMELESS_ISLE },
 				["timeline"] = { ADDED_11_0_7 },
-				["weekly"] = true,
 				["lockCriteria"] = { 1, "lvl", 80 },
-				["g"] = {
+				["isWeekly"] = true,
+				["groups"] = {
 					i(232877, {	-- Timely Goodie Bag
 						["sym"] = {
 							{ "select", "itemID", 229355 },	-- Chromie's Premium Goodie Bag
@@ -4638,7 +4638,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 		n(VENDORS, {
 			n(118828, {	-- Mistweaver Xia <Timewalking Vendor>
 				["coord"] = { 43.0, 55.4, TIMELESS_ISLE },
-				["g"] = {
+				["groups"] = {
 					n(ARMOR, {
 						filter(BACK_F, {
 							i(144054, {	-- Blackguard Cape
@@ -4945,7 +4945,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 					61442,	-- Kuai the Brute
 					61444,	-- Ming the Cunning
 				},
-				["g"] = {
+				["groups"] = {
 					i(144020),	-- Crest of the Clan Lords
 					i(144021),	-- Meteoric Greathelm
 					i(144144),	-- Whirling Dervish Choker
@@ -4955,7 +4955,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 			}),
 			e(690, {	-- Gekkan
 				["crs"] = { 61243 },	-- Gekkan
-				["g"] = {
+				["groups"] = {
 					i(144148),	-- Claws of Gekkan
 					i(144147),	-- Cloak of Cleansing Flames
 					i(144149),	-- Hexxer's Lethargic Gloves
@@ -4965,7 +4965,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 			}),
 			e(698, {	-- Xin the Weaponmaster
 				["crs"] = { 61398 },	-- Xin the Weaponmaster
-				["g"] = {
+				["groups"] = {
 					i(144150),	-- Ghostheart
 					i(144214),	-- Mogu'Dar, Blade of the Thousand Slaves
 					i(144154),	-- Firescribe Dagger
@@ -4986,7 +4986,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 					58633,	-- Instructor Chillheart
 					58664,	-- Instructor Chillheart's Phylactery
 				},
-				["g"] = {
+				["groups"] = {
 					i(144201),	-- Gravetouch Greatsword
 					i(144180),	-- Anarchist's Pendant
 					i(143967),	-- Breastplate of Wracking Souls
@@ -4996,7 +4996,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 			}),
 			e(663,   {	-- Jandice Barov
 				["crs"] = { 59184 },	-- Jandice Barov
-				["g"] = {
+				["groups"] = {
 					i(144207),	-- Metanoia Shield
 					i(144029),	-- Barovian Ritual Hood
 					i(144208),	-- Phantasmal Drape
@@ -5006,7 +5006,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 			}),
 			e(665,   {	-- Rattlegore
 				["crs"] = { 59153 },	-- Rattlegore
-				["g"] = {
+				["groups"] = {
 					i(144011),	-- Bone Golem Boots
 					i(144204),	-- Deadwalker Bracers
 					i(144203),	-- Goresoaked Headreaper
@@ -5017,13 +5017,13 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 			}),
 			n(59369, {	-- Doctor Theolen Krastinov
 				["description"] = "This is a Rare Creature and is not always present.",
-				["g"] = {
+				["groups"] = {
 					i(88566),	-- Krastinov's Bag of Horrors (TOY!)
 				},
 			}),
 			e(666,   {	-- Lilian Voss
 				["crs"] = { 58722 },	-- Lilian Voss
-				["g"] = {
+				["groups"] = {
 					i(144030),	-- Soulburner Crown
 					i(144181),	-- Necklace of the Dark Blaze
 					i(143968),	-- Shivbreaker Vest
@@ -5033,7 +5033,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 			}),
 			e(684, {	-- Darkmaster Gandling
 				["crs"] = { 59080 },	-- Darkmaster Gandling
-				["g"] = {
+				["groups"] = {
 					i(144212),	-- Gloves of Explosive Pain
 					i(144211),	-- Headmaster's Will
 					i(144213),	-- Incineration Belt
@@ -5231,18 +5231,18 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORD
 		n(QUESTS, {
 			-- TW WoD Quest under level 80
 			q(86563, {	-- A Savage Journey Through Time
-				["providers"] = {
-					{ "n", 151955 },	-- Tempra
-					{ "n", 151987 },	-- Kronnus
+				["qgs"] = {
+					151955,	-- Tempra
+					151987,	-- Kronnus
 				},
 				["coords"] = {
 					{ 37.0, 72.4, STORMSHIELD },
 					{ 42.8, 54.4, WARSPEAR },
 				},
 				["timeline"] = { ADDED_11_0_7 },
-				["weekly"] = true,
 				["lockCriteria"] = { 1, "lvl", 80 },
-				["g"] = {
+				["isWeekly"] = true,
+				["groups"] = {
 					i(232877, {	-- Timely Goodie Bag
 						["sym"] = {
 							{ "select", "itemID", 229355 },	-- Chromie's Premium Goodie Bag
@@ -5253,16 +5253,16 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORD
 			}),
 			q(55498, {	-- The Shimmering Crystal (A)
 				["provider"] = { "i", 167921 },		-- Shimmering Timewarped Crystal (A)
-				["isWeekly"] = true,
 				["races"] = ALLIANCE_ONLY,
+				["isWeekly"] = true,
 				["groups"] = {
 					currency(TIMEWARPED_BADGE),
 				},
 			}),
 			q(55499, {	-- The Shimmering Crystal (H)
 				["provider"] = { "i", 167922 },		-- Shimmering Timewarped Crystal (H)
-				["isWeekly"] = true,
 				["races"] = HORDE_ONLY,
+				["isWeekly"] = true,
 				["groups"] = {
 					currency(TIMEWARPED_BADGE),
 				},
@@ -5272,7 +5272,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORD
 			n(151987, {	-- Kronnus <Timewalking Vendor> [Horde Side]
 				["races"] = HORDE_ONLY,
 				["coord"] = { 42.8, 54.5, WARSPEAR },
-				["g"] = {
+				["groups"] = {
 					n(ARMOR, {
 						filter(CLOTH, {
 							i(109074, {	-- Fine Void-Chain Cinch
@@ -5486,7 +5486,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORD
 			n(151955, {	-- Tempra <Timewalking Vendor> [Alliance Side]
 				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 36.9, 72.5, STORMSHIELD },
-				["g"] = {
+				["groups"] = {
 					n(ARMOR, {
 						filter(CLOTH, {
 							i(109074, {	-- Fine Void-Chain Cinch
@@ -5857,7 +5857,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 			i(210063, {	-- Invader's Satchel of Helpful Goods // Legion TW Daily Reward
 				["description"] = "Rewarded for completing any 'Legion Timewalking' dungeon.\nAvailable once per day.",
 				["timeline"] = { ADDED_10_1_7 },
-				["g"] = {
+				["groups"] = {
 					i(113788),	-- Blossoming Belt*
 					i(113764),	-- Blossoming Cap*
 					i(113766),	-- Blossoming Gloves*
@@ -5910,9 +5910,9 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 				["provider"] = { "n", 180899 },	-- Aridormi
 				["coord"] = { 68.6, 49.2, LEGION_DALARAN },
 				["timeline"] = { ADDED_11_0_7 },
-				["weekly"] = true,
 				["lockCriteria"] = { 1, "lvl", 80 },
-				["g"] = {
+				["isWeekly"] = true,
+				["groups"] = {
 					i(232877, {	-- Timely Goodie Bag
 						["sym"] = {
 							{ "select", "itemID", 229355},	-- Chromie's Premium Goodie Bag
@@ -5932,7 +5932,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 		n(VENDORS, {
 			n(180899, {	-- Aridormi <Timewalking Vendor>
 				["coord"] = { 68.60, 49.20, LEGION_DALARAN },
-				["g"] = {
+				["groups"] = {
 					n(ARMOR, {
 						filter(CLOTH, {
 							i(187580, {	-- Nar'thalas Ceremonial Legwraps
@@ -6122,7 +6122,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 						}),
 						i(187597, {	-- Broken Isles Fish Delivery
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
-							["g"] = {
+							["groups"] = {
 								i(138777),	-- Drowned Mana
 							},
 						}),
@@ -6137,7 +6137,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 						}),
 						i(187596, {	-- Broken Isles Meat Delivery
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
-							["g"] = {
+							["groups"] = {
 								i(151653),	-- Broken Isles Recipe Scrap
 							},
 						}),
@@ -6146,7 +6146,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 						}),
 						i(141018, {	-- Sargerei Blood Vessel
 							["cost"] = {{ "c", TIMEWARPED_BADGE, 150 }},
-							["g"] = {
+							["groups"] = {
 								i(124124),	-- Blood of Sargeras
 							},
 						}),
@@ -6195,7 +6195,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 		inst_tw(740, {	-- Black Rook Hold
 			e(1518, {	-- Amalgam of Souls
 				["creatureID"] = 98542,	-- Amalgam of Souls
-				["g"] = {
+				["groups"] = {
 					i(136714),	-- Amalgam's Seventh Spine
 					i(136976),	-- Etheldrin's Breastplate
 					i(134437),	-- Harrowing Soulspun Bracers
@@ -6210,7 +6210,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 			}),
 			e(1653, {	-- Illysanna Ravencrest
 				["creatureID"] = 98696,	-- Illysanna Ravencrest
-				["g"] = {
+				["groups"] = {
 					i(134412),	-- Cloak of Unwavering Loyalty
 					i(136978),	-- Ember of Nullification
 					i(134519),	-- Ravencrest Bonecrush Gauntlets
@@ -6222,7 +6222,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 			}),
 			e(1664, {	-- Smashspite the Hateful
 				["creatureID"] = 98949,	-- Smashspite the Hateful
-				["g"] = {
+				["groups"] = {
 					i(134528),	-- Band of Callous Dominance
 					i(134426),	-- Collar of Raking Claws
 					i(134483),	-- Fel-Hammered Greaves
@@ -6240,7 +6240,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 					98970,	-- Dantalionax
 					98965,	-- Kur'talos Ravencrest
 				},
-				["g"] = {
+				["groups"] = {
 					i(136716),	-- Caged Horror
 					i(136770),	-- Drape of the Raven Lord
 					i(134370),	-- Felbat Leather Leggings
@@ -6262,7 +6262,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 		inst_tw(800, {	-- Court of Stars
 			e(1718, {	-- Patrol Captain Gerdo
 				["creatureID"] = 104215,	-- Patrol Captain Gerdo
-				["g"] = {
+				["groups"] = {
 					i(134268),	-- Arcane Defender's Gauntlets
 					i(134415),	-- Arcanist's Resonant Robes
 					i(137483),	-- Cape of the Duskwatch
@@ -6277,7 +6277,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 			}),
 			e(1719, {	-- Talixae Flamewreath
 				["creatureID"] = 104217,	-- Talixae Flamewreath
-				["g"] = {
+				["groups"] = {
 					i(134529),	-- Chain of Scorched Bones
 					i(134473),	-- Collar of Fiery Allegiance
 					i(137488),	-- Cord of Wicked Pyromania
@@ -6292,7 +6292,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 			}),
 			e(1720, {	-- Advisor Melandrus
 				["creatureID"] = 104218,	-- Advisor Melandrus
-				["g"] = {
+				["groups"] = {
 					i(134432),	-- Amice of the Unfurling Tempest
 					i(134271),	-- Arcane Defender's Pants
 					i(137489),	-- Arcane-Bound Gale Chain
@@ -6314,7 +6314,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 		inst_tw(762, {	-- Darkheart Thicket
 			e(1654, {	-- Archdruid Glaidalis
 				["creatureID"] = 96512,	-- Archdruid Glaidalis
-				["g"] = {
+				["groups"] = {
 					i(134487),	-- Arch-Druid's Tainted Seal
 					i(139077),	-- Bramblemail Belt
 					i(137301),	-- Corrupted Starlight
@@ -6329,7 +6329,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 			}),
 			e(1655, {	-- Oakheart
 				["creatureID"] = 103344,	-- Oakheart
-				["g"] = {
+				["groups"] = {
 					i(134531),	-- Band of Twisted Bark
 					i(137305),	-- Blighted Grasp Bracers
 					i(134500),	-- Breastplate of Preservation
@@ -6344,7 +6344,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 			}),
 			e(1656, {	-- Dresaron
 				["creatureID"] = 99200,	-- Dresaron
-				["g"] = {
+				["groups"] = {
 					i(139082),	-- Bramblemail Greaves
 					i(137311),	-- Chain of the Green Flight
 					i(137310),	-- Greatbelt of Disruption
@@ -6359,7 +6359,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 			}),
 			e(1657, {	-- Shade of Xavius
 				["creatureID"] = 99192,	-- Shade of Xavius
-				["g"] = {
+				["groups"] = {
 					i(134448),	-- Ashen Satyr Leggings
 					i(137321),	-- Burning Sky Pauldrons
 					i(134405),	-- Cloak of Fading Echoes
@@ -6381,7 +6381,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 		inst_tw(716, {	-- Eye of Azshara
 			e(1480, {	-- Warlord Parjesh
 				["creatureID"] = 91784,	-- Warlord Parjesh
-				["g"] = {
+				["groups"] = {
 					i(134240),	-- Brinewashed Leather Cowl
 					i(134223),	-- Coralplate Chestguard
 					i(134484),	-- Crestrider Conduit Bracers
@@ -6396,7 +6396,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 			}),
 			e(1490, {	-- Lady Hatecoil
 				["creatureID"] = 91789,	-- Lady Hatecoil
-				["g"] = {
+				["groups"] = {
 					i(134238),	-- Brinewashed Leather Pants
 					i(134230),	-- Coralplate Wristguard
 					i(134433),	-- Cord of the Sea-Caller
@@ -6411,7 +6411,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 			}),
 			e(1479, {	-- Serpentrix
 				["creatureID"] = 91808,	-- Serpentrix
-				["g"] = {
+				["groups"] = {
 					i(134239),	-- Brinewashed Leather Grips
 					i(134228),	-- Coraplate Pauldrons
 					i(134465),	-- Hydra Scale Sabatons
@@ -6425,7 +6425,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 			}),
 			e(1491, {	-- King Deepbeard
 				["creatureID"] = 91797,	-- King Deepbeard
-				["g"] = {
+				["groups"] = {
 					i(134539),	-- Braided Silver Ring
 					i(137368),	-- Breastplate of Ten Lashes
 					i(137369),	-- Giant Ornamental Pearl
@@ -6437,7 +6437,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 			}),
 			e(1492, {	-- Wrath of Azshara
 				["creatureID"] = 96028,	-- Wrath of Azshara
-				["g"] = {
+				["groups"] = {
 					i(134532),	-- Band of Fused Coral
 					i(134237),	-- Brinewashed Leather Boots
 					i(137378),	-- Bottled Hurricane
@@ -6455,7 +6455,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 		inst_tw(767, {	-- Neltharion's Lair
 			e(1662, {	-- Rokmora
 				["creatureID"] = 91003,	-- Rokmora
-				["g"] = {
+				["groups"] = {
 					i(134481),	-- Boulderbuckle Strap
 					i(137337),	-- Deepfurrow Bracers
 					i(139095),	-- Greystone Belt
@@ -6470,7 +6470,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 			}),
 			e(1665, {	-- Ularogg Cragshaper
 				["creatureID"] = 91004,	-- Ularogg Cragshaper
-				["g"] = {
+				["groups"] = {
 					i(134164),	-- Bitestone Wristwraps
 					i(137341),	-- Cragshaper's Fitted Hood
 					i(134443),	-- Gravelworn Handguards
@@ -6485,7 +6485,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 			}),
 			e(1673, {	-- Naraxas
 				["creatureID"] = 91005,	-- Naraxas
-				["g"] = {
+				["groups"] = {
 					i(134524),	-- Band of the Wyrm Matron
 					i(137348),	-- Gauntlets of Innumerable Barbs
 					i(137349),	-- Naraxas' Spiked Tongue
@@ -6497,7 +6497,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 			}),
 			e(1687, {	-- Dargrul
 				["creatureID"] = 91007,	-- Dargrul
-				["g"] = {
+				["groups"] = {
 					i(134166),	-- Bitestone Boots
 					i(134495),	-- Chain of the Underking
 					i(137353),	-- Charskin Legguards
@@ -6518,7 +6518,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 		inst_tw(707, {	-- Vault of the Wardens
 			e(1467, {	-- Tirathon Saltheril
 				["creatureID"] = 95885,	-- Tirathon Saltheril
-				["g"] = {
+				["groups"] = {
 					i(134369),	-- Felbat Leather Boots
 					i(137509),	-- Glaivemaster's Studded Grips
 					i(137502),	-- Hood of Indignation
@@ -6533,7 +6533,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 			}),
 			e(1695, {	-- Inquisitor Tormentorum
 				["creatureID"] = 96015,	-- Inquisitor Tormentorum
-				["g"] = {
+				["groups"] = {
 					i(137503),	-- Amice of Cruel Laughter
 					i(137525),	-- Blood-Spattered Gauntlets
 					i(137530),	-- Drape of Vile Misfortune
@@ -6544,7 +6544,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 			}),
 			e(1468, {	-- Ash'golm
 				["creatureID"] = 95886,	-- Ash'golm
-				["g"] = {
+				["groups"] = {
 					i(139468),	-- Bindings of the Windlord (rogue appearance)
 					i(137510),	-- Charskin Mantle
 					i(137526),	-- Crown of Ash
@@ -6560,7 +6560,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 			}),
 			e(1469, {	-- Glazer
 				["creatureID"] = 95887,	-- Glazer
-				["g"] = {
+				["groups"] = {
 					i(137516),	-- Collar of Blindsight
 					i(137540),	-- Concave Reflecting Lens
 					i(137513),	-- Girdle of Lidless Sight
@@ -6572,7 +6572,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 			}),
 			e(1470, {	-- Cordana Felsong
 				["creatureID"] = 95888,	-- Cordana Felsong
-				["g"] = {
+				["groups"] = {
 					i(137522),	-- Bracers of Twisted Revelation
 					i(137514),	-- Chestguard of Insidious Desire
 					i(137531),	-- Cloak of Enthralling Darkness
@@ -6627,23 +6627,21 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					{ 70.8, 17.3, BORALUS },	-- Alliance
 					{ 46.1, 94.9, DAZARALOR },	-- Horde
 				},
-				["weekly"] = true,
 				["lockCriteria"] = { 1, "lvl", 80 },
-				["g"] = {
-				},
+				["isWeekly"] = true,
 			}),
 			q(89222, {	-- Remnant of Azeroth (A)
 				["provider"] = { "i", 238790 },		-- Remnant of Azeroth (A)
-				["isWeekly"] = true,
 				["races"] = ALLIANCE_ONLY,
+				["isWeekly"] = true,
 				["groups"] = {
 					currency(TIMEWARPED_BADGE),
 				},
 			}),
 			q(89223, {	-- Remnant of Azeroth (H)
 				["provider"] = { "i", 238791 },		-- Remnant of Azeroth (H)
-				["isWeekly"] = true,
 				["races"] = HORDE_ONLY,
+				["isWeekly"] = true,
 				["groups"] = {
 					currency(TIMEWARPED_BADGE),
 				},
@@ -6655,7 +6653,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					{ 70.8, 17.3, BORALUS },	-- Alliance
 					{ 46.1, 94.9, ZULDAZAR },	-- Horde
 				},
-				["g"] = {
+				["groups"] = {
 					n(ARMOR, {
 						filter(BACK_F, {
 							i(243569, {	-- Bloodstained Shawl of Atal'Gurub
@@ -6884,26 +6882,26 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 		inst_tw(968, {	-- Atal'Dazar
 			e(2082, {	-- Priestess Alun'za
 				["crs"] = { 122967 },	-- Priestess Alun'za
-				["g"] = {
+				["groups"] = {
 					i(158347),	-- Cincture of Glittering Gold
 					i(155861),	-- Embellished Ritual Sabatons
 				},
 			}),
 			e(2036, {	-- Vol'kaal
 				["crs"] = { 122965 },	-- Vol'kaal
-				["g"] = {
+				["groups"] = {
 					i(159632),	-- Adulation Enforcer
 					i(158375),	-- Drape of the Loyal Vassal
 				},
 			}),
 			e(2083, {	-- Rezan
 				["crs"] = { 122963 },	-- Rezan
-				["g"] = {
+				["groups"] = {
 				},
 			}),
 			e(2030, {	-- Yazma
 				["crs"] = { 122968 },	-- Yazma
-				["g"] = {
+				["groups"] = {
 					i(239073),	-- Coif of the Court Spider
 					i(239072),	-- Loa Betrayer's Vestments
 					i(239070),	-- Mantle of Fastidious Machinations
@@ -6919,7 +6917,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					126832,	-- Skycap'n Kragg
 					--  Shark Bait
 				},
-				["g"] = {
+				["groups"] = {
 				},
 			}),
 			e(2093, {	-- Council o' Captains
@@ -6928,7 +6926,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					126845,	-- Captain Jolly
 					126847,	-- Captain Raoul
 				},
-				["g"] = {
+				["groups"] = {
 				},
 			}),
 			e(2094, {	-- Ring of Booty
@@ -6938,13 +6936,13 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					129699,	-- Ludwig Von Tortollan
 					126969,	-- Trothak <The Shark Puncher>
 				},
-				["g"] = {
+				["groups"] = {
 					i(158356),	-- Shell-Kickers
 				},
 			}),
 			e(2095,	{	-- Harlan Sweete
 				["crs"] = { 126983 },	-- Harlan Sweete
-				["g"] = {
+				["groups"] = {
 					i(239058),	-- Gaping Maw Shoulderguard
 					i(239057),	-- Gold-Tasseled Epaulets
 					i(239055),	-- Irontide Captain's Hat
@@ -6959,7 +6957,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 		inst_tw(1041, {	-- King's Rest
 			e(2165, {	-- The Golden Serpent
 				["crs"] = { 135322 },	-- The Golden Serpent
-				["g"] = {
+				["groups"] = {
 					i(159313),	-- Breechees of the Sacred Hall
 					i(159304),	-- Goldfeather Boots
 					i(159617),	-- Lustrous Golden Plumage
@@ -6967,7 +6965,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 			}),
 			e(2171, {	-- Mchimba the Embalmer
 				["crs"] = { 134993 },	-- Mchimba the Embalmer
-				["g"] = {
+				["groups"] = {
 					i(159667),	-- Vessel of Last Rites
 				},
 			}),
@@ -6977,7 +6975,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					135475,	-- Kula the Butcher
 					135472,	-- Zanazal the Wise
 				},
-				["g"] = {
+				["groups"] = {
 					i(160216),	-- Crackling Jade Kilij
 					i(159418),	-- Girdle of Pestilent Purification
 					i(159300),	-- Kula's Butchering Wristwraps
@@ -6985,7 +6983,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 			}),
 			e(2172, {	-- Dazar, The First King
 				["crs"] = { 136160 },	-- King Dazar <The First>
-				["g"] = {
+				["groups"] = {
 					i(159644),	-- Geti'ikku, Cut of Death
 					i(239047),	-- Headdress of the First Empire
 					i(239050),	-- Helm of the Raptor King
@@ -7003,7 +7001,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					134056,	-- Aqu'sirr
 					134828,	-- Aqualing
 				},
-				["g"] = {
+				["groups"] = {
 					i(159420),	-- Stormsurger's Sabatons
 				},
 			}),
@@ -7012,7 +7010,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					134063,	-- Brother Ironhull
 					134058,	-- Galecaller Faye
 				},
-				["g"] = {
+				["groups"] = {
 					i(159295),	-- Footpads of the Serene Wake
 					i(159419),	-- Ironhull's Reinforced Legplates
 					i(158371),	-- Seabreeze
@@ -7022,7 +7020,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 				["crs"] = {
 					134060,	-- Lord Stormsong
 				},
-				["g"] = {
+				["groups"] = {
 					i(159308),	-- Bracers of the Sacred Fleet
 					i(159421),	-- Gauntlets of Total Subservience
 					i(159242),	-- Leggings of the Drowned Lord
@@ -7033,7 +7031,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 				["crs"] = {
 					134069,	-- Vol'zith the Whisperer
 				},
-				["g"] = {
+				["groups"] = {
 					i(239040),	-- Cowl of Fluid Machinations
 					i(239043),	-- Chestguard of the Deep Denizen
 					i(239042),	-- Hauberk of Sunken Despair
@@ -7050,7 +7048,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					133379,	-- Adderis
 					133944,	-- Aspix
 				},
-				["g"] = {
+				["groups"] = {
 					i(159263),	-- Bindings of the Slithering Current
 				},
 			}),
@@ -7058,7 +7056,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 				["crs"] = {
 					133384,	-- Merektha
 				},
-				["g"] = {
+				["groups"] = {
 					i(159375),	-- Legguards of the Awakening Brood
 					i(159327),	-- Sand-Shined Snakeskin Sandals
 				},
@@ -7067,13 +7065,13 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 				["crs"] = {
 					133389,	-- Galvazzt
 				},
-				["g"] = {
+				["groups"] = {
 					i(158366),	-- Charged Sandstone Band
 				},
 			}),
 			e(2145, {	-- Avatar of Sethraliss
 				["crs"] = { 133392 },	-- Avatar of Sethraliss
-				["g"] = {
+				["groups"] = {
 					i(239031),	-- Brood Cleanser's Amice
 					i(239037),	-- C'thraxxi Binders Pauldrons
 					i(239034),	-- Corrupted Hexxer's Vestments
@@ -7092,7 +7090,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					131823,	-- Sister Malady
 					131824,	-- Sister Malady
 				},
-				["g"] = {
+				["groups"] = {
 					i(159133),	-- Jagged Iris Sica
 					i(159272),	-- Twisted Sisters Handwraps
 				},
@@ -7101,7 +7099,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 				["crs"] = {
 					131667,	-- Soulbound Goliath
 				},
-				["g"] = {
+				["groups"] = {
 					i(159282),	-- Drust-Thatched Wristwraps
 					i(162548),	-- Thornwoven Band
 				},
@@ -7112,7 +7110,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					133361,	-- Wasting Servant
 					136541,	-- Bile Oozing
 				},
-				["g"] = {
+				["groups"] = {
 					i(159285),	-- Bloodstained Sous Chef Pants
 					i(159452),	-- Fatty Hooves of Gory Comfort
 					i(159294),	-- Raal's Bib
@@ -7123,7 +7121,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					131527,	-- Lord Waycrest
 					131545,	-- Lady Waycrest
 				},
-				["g"] = {
+				["groups"] = {
 					i(159262),	-- Belt of Undying Devotion
 					i(159347),	-- Moss-Covered Wingtip Shoes
 					i(159457),	-- Risen Lord's Oversized Gauntlets
@@ -7131,7 +7129,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 			}),
 			e(2129, {	-- Gorak Tul
 				["crs"] = { 131864 },	-- Gorak Tul
-				["g"] = {
+				["groups"] = {
 					i(239023),	-- Amice of the Returned
 					i(239029),	-- Breastplate of the Vengeful
 					i(239027),	-- Deathslaver's Hauberk

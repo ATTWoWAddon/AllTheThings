@@ -7,7 +7,7 @@ root(ROOTS.Secrets, {
 		["description"] = "***'Show All Trackable Things' is required to see all the steps.***\n\nBelow is a detailed explanation on how to obtain the Riddler's Mind-Worm mount.\r\rNote: Progress on this will be reset each week, so do make sure to complete it in one reset.",
 		["modelScale"] = .7,
 		["displayID"] = 74314,
-		["g"] = {
+		["groups"] = {
 			o(148502, {	-- Step 1: Page 9
 				["model"] = 305393,
 				["questID"] = 45470,
@@ -81,7 +81,7 @@ root(ROOTS.Secrets, {
 				["sourceQuest"] = 47213,	-- Step 8: Page 5555
 				["description"] = "|cFFFFFFFFStep 9:|r This step will take us to |cFFFFD700Westfall|r.  Head to |cFFFFFFFF30.53, 27.56|r.  |cFFFFD700Gift of the Mind-Seekers|r will be on the ground here in a broken boat.  Click this to obtain your mount.  Congratulations on getting the |cFFFFD700Riddler's Mind-Worm|r.\n\nWe would like to thank the |cFFFFD700Secret Finding Discord|r again for solving this puzzle.",
 				["isWeekly"] = true,
-				["g"] = {
+				["groups"] = {
 					i(147835),	-- Riddler's Mind Worm (MOUNT!)
 				},
 			}),

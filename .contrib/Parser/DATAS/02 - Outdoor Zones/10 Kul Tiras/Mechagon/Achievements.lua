@@ -28,7 +28,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 						13476,	-- Junkyard Tinkerer
 						13482,	-- Head Financier of Mechagon
 					}},
-				["g"] = {
+				["groups"] = {
 					title(403),	-- Junkyard
 				},
 			}),
@@ -66,7 +66,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 						13686,	-- Junkyard Melomaniac
 						13790,	-- Armed for Action
 					}},
-				["g"] = {
+				["groups"] = {
 					i(168329),	-- Mechacycle Model W (MOUNT!)
 				},
 			}),
@@ -299,7 +299,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			ach(13553, {	-- The Mechagonian Threat (A)
 				["sourceQuests"] = { 55609 },	-- Operation: Mechagon - The Mechoriginator
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					crit(45695, {	-- The Legend of Mechagon
 						["_quests"] = { 54088 },	-- The Legend of Mechagon
 					}),
@@ -353,7 +353,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			ach(13700, {	-- The Mechagonian Threat (H)
 				["sourceQuests"] = { 55609 },	-- Operation: Mechagon - The Mechoriginator
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					crit(46294, {	-- The Legend of Mechagon
 						["_quests"] = { 55646 },	-- The Legend of Mechagon
 					}),
@@ -497,7 +497,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					{ 74.0, 36.8, MECHAGON },
 				},
 				["crs"] = { 150497 },	-- Scrappy
-				["g"] = {
+				["groups"] = {
 					crit(45628, {	-- Revive Scrappy
 						["provider"] = { "i", 166970 },	-- 1x Energy Cell
 					}),
@@ -508,7 +508,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			}),
 			ach(13489, {	-- Secret Fish of Mechagon
 				["requireSkill"] = FISHING,
-				["g"] = {
+				["groups"] = {
 					i(167698, {	-- Secret Fish Goggles
 						-- #if BEFORE 11.1.5
 						["description"] = "This becomes a toy in 11.1.5.",

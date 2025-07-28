@@ -149,16 +149,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									["qg"] = 2700,	-- Captain Nials
 									["coord"] = { 40.0, 48.8, ARATHI_HIGHLANDS },
 									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-									["isBreadcrumb"] = true,
 									["races"] = ALLIANCE_ONLY,
+									["isBreadcrumb"] = true,
 									["lvl"] = 28,
 								}),
 								q(26986, {	-- The Scarlet Monastery (H)
 									["qg"] = 12920,	-- Doctor Gregory Victor <Trauma Surgeon>
 									["coord"] = { 68.4, 37.8, ARATHI_HIGHLANDS },
 									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-									["isBreadcrumb"] = true,
 									["races"] = HORDE_ONLY,
+									["isBreadcrumb"] = true,
 									["lvl"] = 28,
 								}),
 								q(1051, {	-- Vorrel's Revenge
@@ -319,8 +319,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									["qg"] = 39084,	-- Mizzy Pistonhammer
 									["coord"] = { 49.4, 67.6, SOUTHERN_BARRENS },
 									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-									["isBreadcrumb"] = true,
 									["races"] = ALLIANCE_ONLY,
+									["isBreadcrumb"] = true,
 									["lvl"] = 31,
 								}),
 								q(1050, {	-- Mythology of the Titans
@@ -425,8 +425,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									["qg"] = 14741,	-- Huntsman Markhor <Stable Master>
 									["coord"] = { 79.0, 79.6, THE_HINTERLANDS },
 									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-									["isBreadcrumb"] = true,
 									["races"] = HORDE_ONLY,
+									["isBreadcrumb"] = true,
 									["lvl"] = 31,
 								}),
 							}),
@@ -511,16 +511,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									["qg"] = 44019,	-- Livingston Marshal <Innkeeper>
 									["coord"] = { 53.2, 66.8, NORTHERN_STRANGLETHORN },
 									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-									["isBreadcrumb"] = true,
 									["races"] = ALLIANCE_ONLY,
+									["isBreadcrumb"] = true,
 									["lvl"] = 34,
 								}),
 								q(26988, {	-- Moving Things Along
 									["qg"] = 14739,	-- Mystic Yayo'jin <Reagents>
 									["coord"] = { 78.8, 78.4, THE_HINTERLANDS },
 									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-									["isBreadcrumb"] = true,
 									["races"] = HORDE_ONLY,
+									["isBreadcrumb"] = true,
 									["lvl"] = 34,
 								}),
 								q(26962, {	-- Stripping Their Offense
@@ -686,16 +686,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									["qg"] = 4791,	-- Nazeer Bloodpike
 									["coord"] = { 35.2, 30.6, DUSTWALLOW_MARSH },
 									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-									["isBreadcrumb"] = true,
 									["races"] = HORDE_ONLY,
+									["isBreadcrumb"] = true,
 									["lvl"] = 37,
 								}),
 								q(26985, {	-- Pitting Madness Against Madness
 									["qg"] = 3936,	-- Shandris Feathermoon <General of the Sentinel Army>
 									["coord"] = { 46.0, 49.0, FERALAS },
 									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-									["isBreadcrumb"] = true,
 									["races"] = ALLIANCE_ONLY,
+									["isBreadcrumb"] = true,
 									["lvl"] = 37,
 								}),
 								q(26996, {	-- Right Under Their Noses
@@ -746,7 +746,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									i(10330, {	-- Scarlet Leggings
 										["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 									}),
-								}
+								},
 							}),
 							n(3977, {	-- High Inquisitor Whitemane
 								-- NOTE: The boss herself was not removed, only redesigned with a new loot table.
@@ -1278,7 +1278,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 				},
 			}),
-			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 } }, {
+			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
 				ach(8437, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Scarlet Monastery
 					title(244),	-- Scarlet Commander <Name>
 				})),

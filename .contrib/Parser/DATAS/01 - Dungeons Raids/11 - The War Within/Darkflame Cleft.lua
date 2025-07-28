@@ -5,13 +5,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 	inst(1210, {	-- Darkflame Cleft
 		["coord"] = { 59.6, 21.6, THE_RINGING_DEEPS },
 		["maps"] = { 2303 },	-- Darkflame Cleft
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(83154, {	-- Knicknack's Knickknacks
 					--["sourceQuests"] = { x },	-- ?
 					["provider"] = { "n", 225555 },	-- Knicknack
 					["coord"] = { 46.5, 30.3, THE_RINGING_DEEPS },
-					["g"] = {
+					["groups"] = {
 						i(224775),	-- Knicknack's Definitely Rubies (QI!)
 						i(224778),	-- Knicknack's Enbiggener (QI!)
 						i(224774),	-- Knicknack's Potion Bottle (QI!)
@@ -22,7 +22,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2569, {	-- Ol' Waxbeard
 					["crs"] = { 210153 },	-- Ol' Waxbeard
-					["g"] = {
+					["groups"] = {
 						i(221097),	-- Arcane Scuttle
 						i(219304),	-- Conductor's Wax Whistle
 						i(221098),	-- Mole Knight's Grimemail
@@ -32,7 +32,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 				e(2559, {	-- Blazikon
 					["crs"] = { 208743 },	-- Blazikon
-					["g"] = {
+					["groups"] = {
 						i(219305),	-- Carved Blazikon Wax
 						i(221103),	-- Flickering Glowtorc
 						i(221104),	-- Gleamwax Shackles
@@ -43,7 +43,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 				e(2560, {	-- The Candle King
 					["crs"] = { 208745 },	-- The Candle King
-					["g"] = {
+					["groups"] = {
 						i(219306),	-- Burin of the Candle King
 						i(221109),	-- Candlebearer's Shroud
 						i(221105),	-- Dark Zone Headtaker
@@ -54,7 +54,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 				e(2561, {	-- The Darkness
 					["crs"] = { 208747 },	-- The Darkness
-					["g"] = {
+					["groups"] = {
 						ach(40427),	-- Darkflame Cleft
 						i(223061),	-- Technique: Inscribed Rolling Pin (RECIPE!)
 						i(221112),	-- Caliginous Claspers
@@ -70,7 +70,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2561, {	-- The Darkness
 					["crs"] = { 208747 },	-- The Darkness
-					["g"] = {
+					["groups"] = {
 						ach(40428),	-- Heroic: Darkflame Cleft
 					},
 				}),
@@ -78,7 +78,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			d(DIFFICULTY.DUNGEON.MYTHIC, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2, ADDED_11_1_0 } }, {
 				e(2561, {	-- The Darkness
 					["crs"] = { 208747 },	-- The Darkness
-					["g"] = {
+					["groups"] = {
 						ach(40429),	-- Mythic: Darkflame Cleft
 						i(225548),	-- Wick's Lead (MOUNT!)
 					},

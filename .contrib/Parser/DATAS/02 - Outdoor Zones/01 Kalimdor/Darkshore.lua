@@ -880,8 +880,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "i", 46318 },	-- Hellscream's Missive
 					["sourceQuest"] = 13515,	-- Ending the Threat
 					["timeline"] = { ADDED_4_0_3 },
-					["cr"] = 32862,	-- Jor'kil the Soulripper
 					["races"] = ALLIANCE_ONLY,
+					["cr"] = 32862,	-- Jor'kil the Soulripper
 					["groups"] = {
 						i(55128, {	-- Silver Embossed Boots
 							["timeline"] = { ADDED_4_0_3 },
@@ -958,11 +958,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(994, {	-- Escape Through Force
 					["qg"] = 3692,	-- Volcor
-					["sourceQuest"] = 993,	-- A Lost Master (2/2)
 					-- #if BEFORE 4.0.3
 					["altQuests"] = { 995 },	-- Escape Through Stealth
 					["description"] = "This quest becomes unavailable if you complete Escape Through Stealth",
 					-- #endif
+					["sourceQuest"] = 993,	-- A Lost Master (2/2)
 					["coord"] = { 45.0, 85.4, DARKSHORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -975,11 +975,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(995, {	-- Escape Through Stealth
 					["qg"] = 3692,	-- Volcor
-					["sourceQuest"] = 993,	-- A Lost Master (2/2)
 					-- #if BEFORE 4.0.3
 					["altQuests"] = { 994 },	-- Escape Through Force
 					["description"] = "This quest becomes unavailable if you complete Escape Through Force",
 					-- #endif
+					["sourceQuest"] = 993,	-- A Lost Master (2/2)
 					["coord"] = { 45.0, 85.4, DARKSHORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1041,8 +1041,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1579, {	-- Gaffer Jacks
 					["qg"] = 3666,	-- Wizbang Cranktoggle
-					["description"] = 'Requires fishing skill level 30',
 					["coord"] = { 37.0, 44.0, DARKSHORE },
+					["description"] = 'Requires fishing skill level 30',
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
@@ -1158,13 +1158,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #if AFTER TBC
 				q(1135, {	-- Highperch Venom
-					-- This quest was moved to Darkshore after TBC Prepatch.
 					["qg"] = 4456,	-- Fiora Longears
 					["coord"] = { 33.8, 42.4, DARKSHORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THOUSAND_NEEDLES },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
+					-- This quest was moved to Darkshore after TBC Prepatch.
 					["groups"] = {
 						objective(1, {	-- 0/10 Highperch Venom Sac
 							["provider"] = { "i", 5809 },	-- Highperch Venom Sac
@@ -1241,7 +1241,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if AFTER TBC
 				q(1133, {	-- Journey to Astranaar
-					-- This quest was moved to Darkshore after TBC Prepatch.
 					["qg"] = 4456,	-- Fiora Longears
 					["sourceQuest"] = 1132,	-- Fiora Longears
 					["coord"] = { 33.8, 42.4, DARKSHORE },
@@ -1249,6 +1248,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
+					-- This quest was moved to Darkshore after TBC Prepatch.
 				}),
 				-- #endif
 				q(13892, {	-- Leave No Tracks
@@ -1380,8 +1380,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(960, {	-- Onu is meditating
 					["qg"] = 3616,	-- Onu
 					["sourceQuest"] = 944,	-- The Master's Glaive
-					["description"] = "To complete this quest you must return to Onu after you complete The Master's Glaive, but before you turn in The Twilight Camp.",
 					["coord"] = { 43.5, 76.3, DARKSHORE },
+					["description"] = "To complete this quest you must return to Onu after you complete The Master's Glaive, but before you turn in The Twilight Camp.",
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -1392,8 +1392,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(961, {	-- Onu is meditating
 					["qg"] = 3616,	-- Onu
 					["sourceQuest"] = 949,	-- The Twilight Camp
-					["description"] = "To complete this quest you must return to Onu after you complete The Twilight Camp, but before you turn in Return to Onu.",
 					["coord"] = { 43.5, 76.3, DARKSHORE },
+					["description"] = "To complete this quest you must return to Onu after you complete The Twilight Camp, but before you turn in Return to Onu.",
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -1455,8 +1455,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "i", 44979 },	-- Overseer's Orders
 					["sourceQuest"] = 13589,	-- The Shatterspear Invaders
 					["timeline"] = { ADDED_4_0_3 },
-					["crs"] = { 32863 },	-- Shatterspear Overseer
 					["races"] = ALLIANCE_ONLY,
+					["crs"] = { 32863 },	-- Shatterspear Overseer
 				}),
 				q(13570, {	-- Remembrance of Auberdine
 					["qg"] = 32959,	-- Cerellean Whiteclaw
@@ -1582,7 +1582,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13568, {	-- Spirit of the Moonstalker
 					["qg"] = 33131,	-- Great Moonstalker Spirit
-					["coord"] = { 42.8, 40.2, DARKSHORE },
 					["altQuests"] = {
 						13567,	-- Spirit of the Stag
 						13597,	-- Spirit of the Thistle Bear
@@ -1592,14 +1591,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						13565,	-- Twice Removed
 						13598,	-- Unsavory Remedies
 					},
+					["coord"] = { 42.8, 40.2, DARKSHORE },
 					["description"] = "Great Moonstalker Spirit grants a buff increasing your haste by 10%.\nChoose carefuly, you can get only 1 buff.",
 					["timeline"] = { ADDED_4_0_3 },
-					["DisablePartySync"] = true,	-- cannot be completed with altQuests... they unflag due to the buff
 					["races"] = ALLIANCE_ONLY,
+					["DisablePartySync"] = true,	-- cannot be completed with altQuests... they unflag due to the buff
 				}),
 				q(13567, {	-- Spirit of the Stag
 					["qg"] = 33133,	-- Great Stag Spirit
-					["coord"] = { 43.7, 40.2, DARKSHORE },
 					["altQuests"] = {
 						13568,	-- Spirit of the Moonstalker
 						13597,	-- Spirit of the Thistle Bear
@@ -1609,14 +1608,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						13565,	-- Twice Removed
 						13598,	-- Unsavory Remedies
 					},
+					["coord"] = { 43.7, 40.2, DARKSHORE },
 					["description"] = "Great Stag Spirit grants a buff increasing your movement speed by 10%.\nChoose carefuly, you can get only 1 buff.",
 					["timeline"] = { ADDED_4_0_3 },
-					["DisablePartySync"] = true,	-- cannot be completed with altQuests... they unflag due to the buff
 					["races"] = ALLIANCE_ONLY,
+					["DisablePartySync"] = true,	-- cannot be completed with altQuests... they unflag due to the buff
 				}),
 				q(13597, {	-- Spirit of the Thistle Bear
 					["qg"] = 33132,	-- Great Thistle Bear Spirit
-					["coord"] = { 42.5, 38.6, DARKSHORE },
 					["altQuests"] = {
 						13568,	-- Spirit of the Moonstalker
 						13567,	-- Spirit of the Stag
@@ -1626,10 +1625,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						13565,	-- Twice Removed
 						13598,	-- Unsavory Remedies
 					},
+					["coord"] = { 42.5, 38.6, DARKSHORE },
 					["description"] = "Great Thistle Bear Spirit grants a buff reducing the damage you take by 10%.\nChoose carefuly, you can get only 1 buff.",
 					["timeline"] = { ADDED_4_0_3 },
-					["DisablePartySync"] = true,	-- cannot be completed with altQuests... they unflag due to the buff
 					["races"] = ALLIANCE_ONLY,
+					["DisablePartySync"] = true,	-- cannot be completed with altQuests... they unflag due to the buff
 				}),
 				q(13948, {	-- Stepping Up Surveillance
 					["sourceQuest"] = 13892,	-- Leave No Tracks
@@ -1801,8 +1801,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(13897, {	-- The Battle for Darkshore
 					["qg"] = 34422,	-- Malfurion Stormrage
 					["sourceQuest"] = 13900,	-- The Offering to Azshara
-					["description"] = "If you don't pick this quest up promptly after the event ends, Malfurion will despawn and you will have to repeat the event to get the quest.",
 					["coord"] = { 32.8, 84.3, DARKSHORE },
+					["description"] = "If you don't pick this quest up promptly after the event ends, Malfurion will despawn and you will have to repeat the event to get the quest.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2075,10 +2075,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1141, {	-- The Family and the Fishing Pole
 					["qg"] = 10216,	-- Gubber Blump
+					["coord"] = { 36.1, 44.9, DARKSHORE },
 					-- #if BEFORE 4.0.3
 					["description"] = "Talk to Gubber Blump after accepting the quest to learn Fishing. Buy a Fishing Pole for 23c and a Shiny Bauble for 50c from Gubber Blump. Start fishing next to Gubber Blump to catch the fish required for the quest.",
 					-- #endif
-					["coord"] = { 36.1, 44.9, DARKSHORE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 12238, 6 }},	-- Darkshore Grouper
 					["requireSkill"] = FISHING,
@@ -2092,7 +2092,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13562, {	-- The Final Flame of Bashal'Aran
 					["qg"] = 32971,	-- Ranger Glynda Nal'Shea (mobileNPC)
-					["description"] = "Ranger Glynda Nal'Shea patrols around Lor'danel.",
 					["sourceQuest"] = 13529,	-- The Corruption's Source
 					["coords"] = {
 						{ 50.1, 20.9, DARKSHORE },
@@ -2103,6 +2102,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 51.6, 18.7, DARKSHORE },
 						{ 51.7, 19.2, DARKSHORE },
 					},
+					["description"] = "Ranger Glynda Nal'Shea patrols around Lor'danel.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2270,11 +2270,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "i", 5352 },	-- Book: The Powers Below
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						2339,	-- Twilight Thug
 						2338,	-- Twilight Disciple
 					},
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(4811, {	-- The Red Crystal
@@ -2347,7 +2347,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13589, {	-- The Shatterspear Invaders
 					["qg"] = 32971,	-- Ranger Glynda Nal'Shea (mobileNPC)
-					["description"] = "Ranger Glynda Nal'Shea patrols around Lor'danel.",
 					["sourceQuest"] = 13569,	-- The Ritual Bond
 					["coords"] = {
 						{ 50.1, 20.9, DARKSHORE },
@@ -2358,6 +2357,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 51.6, 18.7, DARKSHORE },
 						{ 51.7, 19.2, DARKSHORE },
 					},
+					["description"] = "Ranger Glynda Nal'Shea patrols around Lor'danel.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2604,8 +2604,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(13510, {	-- Timely Arrival
 					["qg"] = 32964,	-- Sentinel Aynasha
-					["description"] = "In order to obtain this quest, loot a |cffffffffShatterspear Torturer's Cage Key|r dropped by |cffe50d12Rit'ko|r.",
 					["coord"] = { 64.4, 5.4, DARKSHORE },
+					["description"] = "In order to obtain this quest, loot a |cffffffffShatterspear Torturer's Cage Key|r dropped by |cffe50d12Rit'ko|r.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["cr"] = 32970,	-- Rit'ko
@@ -2801,8 +2801,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.4, 32.0, DARKSHORE },
 					["description"] = "Jump into the whirlpool.",
 					["timeline"] = { ADDED_4_0_3 },
-					["crs"] = { 48764 },	-- Telarius Voidstrider
 					["races"] = ALLIANCE_ONLY,
+					["crs"] = { 48764 },	-- Telarius Voidstrider
 				}),
 			}),
 			n(RARES, {

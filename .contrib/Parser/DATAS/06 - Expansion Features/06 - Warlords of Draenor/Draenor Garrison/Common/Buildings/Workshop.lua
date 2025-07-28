@@ -10,7 +10,7 @@ root(ROOTS.ExpansionFeatures,
 					n(ACHIEVEMENTS, {
 						ach(9527, {		-- Terrific Technology
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"] = {
+							["groups"] = {
 								a(i(111985)),	-- Gnomish Gearworks, Level 3 [Blueprints]
 								h(i(116201)),	-- Goblin Workshop, Level 3 [Blueprints]
 								crit(26627),		-- Robo-Rooster
@@ -27,13 +27,13 @@ root(ROOTS.ExpansionFeatures,
 					}),
 					n(QUESTS, {
 						q(37420, {	-- Fully Armed and Operational
-							["description"] = "Requires Gnomish Gearworks Rank 3.",
 							["provider"] = { "n", 84286 },	-- Zee
+							["description"] = "Requires Gnomish Gearworks Rank 3.",
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37418, {	-- Fully Armed and Operational
-							["description"] = "Requires Goblin Workshop Rank 3.",
 							["provider"] = { "n", 85369 },	-- Vee
+							["description"] = "Requires Goblin Workshop Rank 3.",
 							["races"] = HORDE_ONLY,
 						}),
 						q(37091, {	-- Unconventional Inventions

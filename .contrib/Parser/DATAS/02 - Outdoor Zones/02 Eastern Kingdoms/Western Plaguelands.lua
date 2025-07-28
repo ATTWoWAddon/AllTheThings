@@ -1072,8 +1072,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["sourceQuest"] = 8415,	-- Chillwind Point [TBC+] / Chillwind Camp
 					["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
-					["cost"] = { { "i", 12840, 20 } },	-- Minion's Scourgestone
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 12840, 20 } },	-- Minion's Scourgestone
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
@@ -1576,8 +1576,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 9601,	-- To The Bulwark
 					["coord"] = { 83.2, 71.2, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
-					["cost"] = { { "i", 12840, 20 } },	-- Minion's Scourgestone
 					["maps"] = { UNDERCITY },
+					["cost"] = { { "i", 12840, 20 } },	-- Minion's Scourgestone
 					["classes"] = { PALADIN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
@@ -3005,14 +3005,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 76250,	-- Spectral Essence
 					["coord"] = { 68.8, 78.9, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_10_1_5 },
-					["g"] = { i(206359) },	-- Caer Darrow Fountain Water
+					["groups"] = { i(206359) },	-- Caer Darrow Fountain Water
 				}),
 				o(403535, {	-- The Deed to Andorhal
 					["description"] = "Located by the town hall in Andorhal, on a wall to the right of where Rattlegore spawns.",
 					["sourceQuest"] = 76250,	-- Spectral Essence
 					["coord"] = { 43.6, 69.3, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_10_1_5 },
-					["g"] = { i(206362) },	-- The Deed to Andorhal
+					["groups"] = { i(206362) },	-- The Deed to Andorhal
 				}),
 			}),
 			-- #endif

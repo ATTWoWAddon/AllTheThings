@@ -311,13 +311,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						461,	-- Demisette Cloyce <Warlock Trainer>
 						4563,	-- Kaal Soulreaper <Warlock Trainer>
 					},
+					["altQuests"] = { 8420 },	-- Hot and Itchy
 					["coords"] = {
 						{ 48.4, 45.6, ORGRIMMAR },
 						{ 50.2, 6.0, IRONFORGE },
 						{ 28.4, 78.2, STORMWIND_CITY },
 						{ 86.0, 15.6, UNDERCITY },
 					},
-					["altQuests"] = { 8420 },	-- Hot and Itchy
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 14256, 1 } },	-- Felcloth
 					["races"] = HORDE_ONLY,
@@ -1170,8 +1170,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 4906,	-- Further Corruption
 					["coord"] = { 39.6, 22.2, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["cr"] = 10648,	-- Xavaric
 					["races"] = ALLIANCE_ONLY,
+					["cr"] = 10648,	-- Xavaric
 					["lvl"] = 49,
 					["groups"] = {
 						objective(2, {	-- 0/5 Jadefire Felbind
@@ -2746,11 +2746,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 7624,	-- Ulathek the Traitor
 					["coord"] = { 36.0, 44.6, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
-					["classes"] = { WARLOCK },
 					["cost"] = {
 						{ "i", 18802, 1 },	-- Shadowy Potion
 						{ "i", 18687, 1 },	-- Xorothian Stardust
 					},
+					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 				}),
 			}),

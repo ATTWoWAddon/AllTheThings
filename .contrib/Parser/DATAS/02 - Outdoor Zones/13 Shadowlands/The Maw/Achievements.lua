@@ -136,7 +136,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			ach(14761, {	-- Deciphering Death's Intentions
 				["description"] = "Most of the Maw Lore items can be found by killing Assassins, rares, or normal mobs.  The remaining ones drop from specific mobs, rares, or treasures that can be found throughout the Maw.",
-				["g"] = {
+				["groups"] = {
 					crit(49894, {	-- Constellan Writ
 						["_quests"] = { 63132 },
 					}),
@@ -319,16 +319,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			ach(14738, {	-- Hunting Party
 				crit(49251, {	-- Complete Hunt: Shadehounds
-					["_quests"] = { 63180 }
+					["_quests"] = { 63180 },
 				}),
 				crit(49238, {	-- Complete Hunt: Soul Eaters
-					["_quests"] = { 63199 }
+					["_quests"] = { 63199 },
 				}),
 				crit(49248, {	-- Complete Hunt: Death Elemental
-					["_quests"] = { 63198 }
+					["_quests"] = { 63198 },
 				}),
 				crit(51060, {	-- Complete Hunt: Winged Soul Eaters
-					["_quests"] = { 63194 }
+					["_quests"] = { 63194 },
 				}),
 			}),
 			ach(14660, {	-- It's About Sending a Message
@@ -421,7 +421,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					14663,	-- Explore The Maw
 					14656,	-- Trading Partners
 				}},
-				["g"] = {
+				["groups"] = {
 					title(462),	-- <Name>, Maw Walker
 				},
 			})),

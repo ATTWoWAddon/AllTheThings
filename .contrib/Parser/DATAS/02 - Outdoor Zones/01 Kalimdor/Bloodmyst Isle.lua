@@ -482,13 +482,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9625, {	-- Elekks Are Serious Business
 					["qg"] = 17584,	-- Torallius the Pack Handler
-					["sourceQuest"] = 9623,	-- Coming of Age
 					-- #if AFTER CATA
 					["altQuests"] = { 28559 },	-- Hero's Call: Bloodmyst Isle!
 					["coord"] = { 81.5, 51.5, THE_EXODAR },
 					-- #else
 					["coord"] = { 35.3, 43.1, AZUREMYST_ISLE },
 					-- #endif
+					["sourceQuest"] = 9623,	-- Coming of Age
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- TODO: Double check this is actually a breadcrumb. If you finish Alien Predators, does this diappear? [Not required for Alien Predators, Discord 2023-07-29]
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -512,7 +512,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9759, {	-- Ending Their World
 					["qg"] = 17982,	-- Demolitionist Legoso
-					["coord"] = { 30.8, 46.6, BLOODMYST_ISLE },
 					-- #if BEFORE CATA
 					["sourceQuest"] = 9761,	-- Clearing the Way
 					["races"] = { DRAENEI },
@@ -520,6 +519,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9760,	-- Vindicator's Rest
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
+					["coord"] = { 30.8, 46.6, BLOODMYST_ISLE },
 					["lvl"] = lvlsquish(18, 18, 1),
 					["groups"] = {
 						objective(1, {	-- Vector Coil Destroyed and Sironas Slain
@@ -997,8 +997,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9672, {	-- The Bloodcurse Legacy [Mailbox]
 					["provider"] = { "i", 24132 },	-- A Letter from the Admiral
-					["sourceQuest"] = 9671,	-- Urgent Delivery
 					["altQuests"] = { 9751 },	-- The Bloodcurse Legacy [Abandoned Other Quest]
+					["sourceQuest"] = 9671,	-- Urgent Delivery
 					["description"] = "The letter is mailed to you when you complete the |cFFFFD700Urgent Delivery|r quest. If you abandon it, you can get it at |cFFFFD700Odesyus' Landing|r in |cFFFFD700Azuremyst Isle|r.",
 					["maps"] = { AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
@@ -1006,10 +1006,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9751, {	-- The Bloodcurse Legacy [Abandoned Other Quest]
 					["qg"] = 17240,	-- Admiral Odesyus
-					["sourceQuest"] = 9671,	-- Urgent Delivery
 					["altQuests"] = { 9672 },	-- The Bloodcurse Legacy [Mailbox]
-					["description"] = "This quest is offered to you if you don't receive the 'A Letter from the Admiral' in the mail or you destroy it and abandon the quest.",
+					["sourceQuest"] = 9671,	-- Urgent Delivery
 					["coord"] = { 47.0, 70.2, AZUREMYST_ISLE },
+					["description"] = "This quest is offered to you if you don't receive the 'A Letter from the Admiral' in the mail or you destroy it and abandon the quest.",
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
@@ -1203,10 +1203,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9671, {	-- Urgent Delivery
 					["qg"] = 17703,	-- Messenger Hermesius
+					["altQuests"] = { 9750 },	-- UNUSED Urgent Delivery
 					-- #if BEFORE CATA
 					["sourceQuest"] = 9602,	-- Deliver Them From Evil...
 					-- #endif
-					["altQuests"] = { 9750 },	-- UNUSED Urgent Delivery
 					["coord"] = { 54.9, 54.6, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(18, 18, 1),

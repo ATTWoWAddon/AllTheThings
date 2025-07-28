@@ -12,7 +12,7 @@ root(ROOTS.ExpansionFeatures,
 							ach(9451),		-- Trapper's Delight (250)
 							ach(9565, {		-- Master Trapper (125)
 								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-								["g"] = {
+								["groups"] = {
 									i(111969),		-- Barn, Level 3 [Blueprints]
 								},
 							}),

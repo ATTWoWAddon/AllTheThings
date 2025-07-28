@@ -314,7 +314,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 63.6, 75.8, SEARING_GORGE },
 						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { REMOVED_4_0_3 },
-						["g"] = CLASSIC_TBC_ELEMENTAL,
+						["groups"] = CLASSIC_TBC_ELEMENTAL,
 					}),
 				}),
 			}),
@@ -590,7 +590,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["coord"] = { 38.8, 28.5, SEARING_GORGE },
-					["timeline"] = { ADDED_3_3_0 },
 					["minReputation"] = {
 						-- #if AFTER CATA
 						FACTION_THORIUM_BROTHERHOOD, REVERED,	-- Thorium Brotherhood, Revered.
@@ -605,6 +604,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						FACTION_THORIUM_BROTHERHOOD, HONORED,	-- Thorium Brotherhood, Honored.
 						-- #endif
 					},
+					["timeline"] = { ADDED_3_3_0 },
 					["cost"] = { { "i", 18945, 4 } },	-- Dark Iron Residue
 					["repeatable"] = true,
 					["lvl"] = 40,
@@ -814,8 +814,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28055,	-- Sweet, Horrible Freedom
 						28056,	-- Rise, Obsidion
 					},
-					["description"] = "After looting the first pillow during |cFFFFD700Kill 'em With Sleep Deprivation|r, a timer begins. After ~10 minutes, |cFFFFD700Chambermaid Pillaclencher|r spawns and drops her pillow. If the Pillamaster is already spawned on your shard, you do not need the prior quests to spawn them.",
 					["coord"] = { 46.0, 29.8, SEARING_GORGE },
+					["description"] = "After looting the first pillow during |cFFFFD700Kill 'em With Sleep Deprivation|r, a timer begins. After ~10 minutes, |cFFFFD700Chambermaid Pillaclencher|r spawns and drops her pillow. If the Pillamaster is already spawned on your shard, you do not need the prior quests to spawn them.",
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(18951, {	-- Evonice's Landin' Pilla
@@ -912,16 +912,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28514, {	-- Mouton Flamestar (A)
 					["qg"] = 14625,	-- Overseer Oilfist
 					["coord"] = { 38.1, 27.0, SEARING_GORGE },
-					["maps"] = { BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { BURNING_STEPPES },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(28515, {	-- Mouton Flamestar (H)
 					["qg"] = 14625,	-- Overseer Oilfist
 					["coord"] = { 38.1, 27.0, SEARING_GORGE },
-					["maps"] = { BURNING_STEPPES },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { BURNING_STEPPES },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -1358,10 +1358,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 175704 },	-- Singed Letter
 					},
 					["sourceQuest"] = 3367,	-- Suntara Stones (1/2)
+					["coord"] = { 74.5, 19.3, SEARING_GORGE },
 					-- #if BEFORE 4.0.3.13277
 					["description"] = "The Singed Letter will be on the ground after you finish escorting Dorius Stonetender.",
 					-- #endif
-					["coord"] = { 74.5, 19.3, SEARING_GORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,

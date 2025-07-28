@@ -1390,8 +1390,8 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 			text = app.GenerateSourcePathForTooltip(parent);
 			-- app.PrintDebug("SourceLocation",text,FilterInGame(j),FilterSettings(parent),FilterCharacter(parent))
 			if showUnsorted or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
-				-- doesn't meet current unobtainable filters from the Thing itself
-				if not FilterInGame(parent) then
+				-- doesn't meet current unobtainable filters from the Thing itself and its parent chain
+				if not FilterInGame(j) or not FilterInGame(parent) then
 					unobtainable[#unobtainable + 1] = text..UnobtainableTexture
 				else
 					-- something user would currently see in a list or not

@@ -110,7 +110,7 @@ MOP_FISHING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = 
 }));
 DRAENOR_FISHING = applyclassicphase(WOD_PHASE_ONE, i(111356, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	["description"] = "Rewarded for fishing",
-	["g"] = {
+	["groups"] = {
 		r(158743, {	-- Fishing (Draenor Master)
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
 			-- #if NOT ANYCLASSIC

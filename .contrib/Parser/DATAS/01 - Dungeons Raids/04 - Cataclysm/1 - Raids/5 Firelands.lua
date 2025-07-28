@@ -93,27 +93,27 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					a(q(29453, {	-- Your Time Has Come [A]
 						["qg"] = 53115,	-- Molten Lord
 						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
-						["isBreadcrumb"] = true,    -- for A Legendary Engagement
 						["maps"] = { STORMWIND_CITY },
+						["isBreadcrumb"] = true,    -- for A Legendary Engagement
 					})),
 					h(q(29452, {	-- Your Time Has Come [H]
 						["qg"] = 53115,	-- Molten Lord
 						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
-						["isBreadcrumb"] = true,    -- for A Legendary Engagement
 						["maps"] = { ORGRIMMAR },
+						["isBreadcrumb"] = true,    -- for A Legendary Engagement
 					})),
 					a(q(29132, {	-- A Legendary Engagement [A]
 						["qg"] = 52408,	-- Coridormi
 						["sourceQuest"] = 29453,	-- Your Time Has Come [A]
-						["description"] = "Located inside Portal tower.\n\nThis is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
 						["coord"] = { 47.2, 91.2, STORMWIND_CITY },
+						["description"] = "Located inside Portal tower.\n\nThis is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
 						["maps"] = { CAVERNS_OF_TIME },
 					})),
 					h(q(29129, {	-- A Legendary Engagement [H]
 						["qg"] = 52382,	-- Ziradormi
 						["sourceQuest"] = 29452,	-- Your Time Has Come [H]
-						["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
 						["coord"] = { 48.8, 70.1, ORGRIMMAR },
+						["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
 						["maps"] = { CAVERNS_OF_TIME },
 					})),
 					q(29134, {	-- A Wrinkle in Time

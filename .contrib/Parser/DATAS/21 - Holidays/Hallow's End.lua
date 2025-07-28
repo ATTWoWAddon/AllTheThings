@@ -2862,8 +2862,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(29430, {	-- A Friend in Need (Alliance)
 			["qg"] = 51934,	-- Gretchen Fenlow
 			["coord"] = { 32.3, 50.9, ELWYNN_FOREST },
-			["maps"] = { STORMWIND_CITY },
 			["timeline"] = { ADDED_4_0_1 },
+			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
 			["lvl"] = lvlsquish(10, 10, 1),
@@ -2871,8 +2871,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(29431, {	-- A Friend in Need (Horde)
 			["qg"] = 53763,	-- Candace Fenlow
 			["coord"] = { 62.4, 66.7, TIRISFAL_GLADES },
-			["maps"] = { ORGRIMMAR },
 			["timeline"] = { ADDED_4_0_1 },
+			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
 			["lvl"] = lvlsquish(10, 10, 1),
@@ -3036,11 +3036,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				11135,	-- The Headless Horseman
 				11220,	-- The Headless Horseman
 			},
+			["timeline"] = { ADDED_2_0_1, REMOVED_3_3_0 },
 			["maps"] = {
 				SCARLET_MONASTERY,
 				436,	-- Scarlet Monastery, Crusader's Chapel
 			},
-			["timeline"] = { ADDED_2_0_1, REMOVED_3_3_0 },
 			["isDaily"] = true,
 			-- #if AFTER WRATH
 			["lvl"] = 75,
@@ -3121,8 +3121,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(1658, {	-- Crashing the Wickerman Festival
 			["qg"] = 15199,	-- Sergeant Hartman
 			["coord"] = { 50, 57.2, HILLSBRAD_FOOTHILLS },
-			["maps"] = { SILVERPINE_FOREST, TIRISFAL_GLADES },
 			["timeline"] = { REMOVED_4_0_3 },
+			["maps"] = { SILVERPINE_FOREST, TIRISFAL_GLADES },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 25,
@@ -3318,8 +3318,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		q(11242, {	-- Free at Last! (Alliance)
 			["qg"] = 23904,	-- Sir Thomas
-			["maps"] = { SCARLET_MONASTERY },
 			["timeline"] = { ADDED_2_0_1, REMOVED_4_0_1 },
+			["maps"] = { SCARLET_MONASTERY },
 			["cost"] = {
 				{ "i", 33277, 1 },	-- Tome of Thomas Thomson
 			},
@@ -3328,8 +3328,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		q(11403, {	-- Free at Last! (Horde)
 			["qg"] = 23904,	-- Sir Thomas
-			["maps"] = { SCARLET_MONASTERY },
 			["timeline"] = { ADDED_2_0_1, REMOVED_4_0_1 },
+			["maps"] = { SCARLET_MONASTERY },
 			["cost"] = {
 				{ "i", 33277, 1 },	-- Tome of Thomas Thomson
 			},
@@ -3585,11 +3585,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ 51.4, 59.0, HILLSBRAD_FOOTHILLS },
 			},
 			["timeline"] = { REMOVED_4_0_3 },
-			["races"] = HORDE_ONLY,
-			["isYearly"] = true,
 			["cost"] = {
 				{ "i", 20605, 1 },	-- Rotten Eggs
 			},
+			["races"] = HORDE_ONLY,
+			["isYearly"] = true,
 			["lvl"] = 30,
 		}),
 		q(8409, {	-- Ruined Kegs
@@ -3629,8 +3629,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(1657, {	-- Stinking Up Southshore
 			["qg"] = 15197,	-- Darkcaller Yanka
 			["coord"] = { 55.6, 69.9, TIRISFAL_GLADES },
-			["maps"] = { HILLSBRAD_FOOTHILLS },
 			["timeline"] = { REMOVED_4_0_3 },
+			["maps"] = { HILLSBRAD_FOOTHILLS },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 25,
@@ -3885,7 +3885,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["lvl"] = lvlsquish(10, 10, 1),
 			["groups"] = {
 				i(71076, {	-- Creepy Crate (PET!)
-					["timeline"] = { ADDED_4_2_0}
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 			},
 		}),
@@ -3898,7 +3898,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["lvl"] = lvlsquish(10, 10, 1),
 			["groups"] = {
 				i(71076, {	-- Creepy Crate (PET!)
-					["timeline"] = { ADDED_4_2_0}
+					["timeline"] = { ADDED_4_2_0 },
 				}),
 			},
 		}),
@@ -3976,15 +3976,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						i(139134),	-- Hat of the Second Sister
 						i(139135),	-- Hat of the Third Sister
 						i(139136),	-- Hat of the Youngest Sister
-					}
+					},
 				}),
 			},
 		}),
 		q(29411, {	-- What Now? (Alliance)
 			["provider"] = { "o", 209072 },	-- Stolen Crate
 			["sourceQuest"] = 29403,	-- The Collector's Agent (Alliance)
-			["description"] = "Does not matter who you give it to, you still get the pet!",
 			["coord"] = { 55.3, 43.5, STORMWIND_CITY },
+			["description"] = "Does not matter who you give it to, you still get the pet!",
 			["timeline"] = { ADDED_4_0_1 },
 			["cost"] = {
 				{ "i", 71057, 1 },	-- Recovered Crate
@@ -3995,8 +3995,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(29428, {	-- What Now? (Horde)
 			["provider"] = { "o", 209094 },	-- Stolen Crate
 			["sourceQuest"] = 29427,	-- The Collector's Agent (Horde)
-			["description"] = "Does not matter who you give it to, you still get the pet!",
 			["coord"] = { 65.8, 74.8, TIRISFAL_GLADES },
+			["description"] = "Does not matter who you give it to, you still get the pet!",
 			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { ORGRIMMAR },
 			["cost"] = {
@@ -4026,15 +4026,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		})),
 		q(76075, {	-- A Ghostly Message
-			["providers"] = {
-				{ "n", 53869 },	-- Orphan Matron Seacole (A)
-				{ "n", 53865 },	-- Orphan Matron Nanee (H)
+			["qgs"] = {
+				53869,	-- Orphan Matron Seacole (A)
+				53865,	-- Orphan Matron Nanee (H)
 			},
-			["timeline"] = { ADDED_10_1_7 },
 			["coords"] = {
 				{ 31.9, 50, ELWYNN_FOREST },	-- Alliance
 				{ 62.4, 66.6, TIRISFAL_GLADES },	-- Horde
 			},
+			["timeline"] = { ADDED_10_1_7 },
 			["groups"] = {
 				i(206596),	-- Tome of Thomas Thomson (QI!)
 			},
@@ -4042,8 +4042,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(76072, {	-- Shades of Scarlet
 			["provider"] = { "n", 206158 },	-- Sir Thomas
 			["sourceQuest"] = 76075,	-- A Ghostly Message
-			["timeline"] = { ADDED_10_1_7 },
 			["coord"] = { 81.2, 44.6, TIRISFAL_GLADES },
+			["timeline"] = { ADDED_10_1_7 },
 			["groups"] = {
 				i(33226),	-- Tricky Treat
 			},
@@ -4051,8 +4051,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(76073, {	-- No Laughing Matter
 			["provider"] = { "n", 205473 },	-- Sir Thomas
 			["sourceQuest"] = 76072,	-- Shades of Scarlet
-			["timeline"] = { ADDED_10_1_7 },
 			["coord"] = { 82.4, 32.7, TIRISFAL_GLADES },
+			["timeline"] = { ADDED_10_1_7 },
 			["groups"] = {
 				i(33226),	-- Tricky Treat
 			},
@@ -4060,8 +4060,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(76074, {	-- The Headless Horseman, Returned
 			["provider"] = { "n", 205448 },	-- Suzannah
 			["sourceQuest"] = 76073,	-- No Laughing Matter
-			["timeline"] = { ADDED_10_1_7 },
 			["coord"] = { 83.5, 30.8, TIRISFAL_GLADES },
+			["timeline"] = { ADDED_10_1_7 },
 			["groups"] = {
 				i(33226),	-- Tricky Treat
 			},
@@ -4069,8 +4069,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(77779, {	-- The Tale of Sir Thomas
 			["provider"] = { "n", 209609 },	-- Sir Thomas
 			["sourceQuest"] = 76074,	-- The Headless Horseman, Returned
-			["timeline"] = { ADDED_10_1_7 },
 			["coord"] = { 43, 53, SCARLET_MONASTERY },
+			["timeline"] = { ADDED_10_1_7 },
 			["groups"] = {
 				i(208769),	-- Tome of Thomas Thomson
 			},

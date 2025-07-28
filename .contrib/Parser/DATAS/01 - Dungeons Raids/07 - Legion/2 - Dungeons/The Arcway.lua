@@ -5,7 +5,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 	inst(726, {	-- The Arcway
 		["mapID"] = 749,
 		["lvl"] = 110,
-		["g"] = {
+		["groups"] = {
 			n(WORLD_QUESTS, {
 				q(43639, {	-- The Arcway: Arcanist Down
 					["isWorldQuest"] = true,
@@ -26,7 +26,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				q(43641, {	-- The Arcway: Wandering Plague
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
+					["groups"] = {
 						i(141053, {	-- Technique: Glyph of Polymorphic Proportions (RECIPE!)
 							["description"] = "The rare that drops this glyph is only available during the WQ The Arcway: Wandering Plague.",
 							["cr"] = 111057,	-- The Rat King

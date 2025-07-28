@@ -4,7 +4,7 @@
 --[[root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, bubbleDown({ ["timeline"] = { ADDED_11_2_0, REMOVED_LEGION_REMIX_END } }, {
 	m(ASZUNA, {
 		["icon"] = 624970,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(19890),	-- Campaign: Dread Wastes (automated)
 				ach(19878, {	-- Dread Wastes
@@ -14,7 +14,7 @@
 						19915,	-- The Klaxxi
 						19967,	-- Tour Dread Wastes
 					}},
-					["g"] = {
+					["groups"] = {
 						i(220765),	-- Sha Corruption (ILLUSION!)
 					},
 				}),

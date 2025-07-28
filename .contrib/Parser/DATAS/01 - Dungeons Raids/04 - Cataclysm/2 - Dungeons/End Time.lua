@@ -22,13 +22,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				q(30096, {	-- Murozond
+					["qgs"] = {
+						54751,	-- Nozdormu
+						54476,	-- Nozdormu
+					},
 					["sourceQuests"] = {
 						30094,	-- The End Time (Horde)
 						30095,	-- The End Time (Alliance)
-					},
-					["providers"] = {
-						{ "n", 54751 },	-- Nozdormu
-						{ "n", 54476 },	-- Nozdormu
 					},
 					["groups"] = {
 						i(72873),	-- Bronze Blaster
@@ -41,14 +41,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					["qg"] = 52382,	-- Ziradormi
 					["coord"] = { 48.8, 70.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["DisablePartySync"] = true,
-					["isBreadcrumb"] = true,
 					-- #if NOT ANYCLASSIC
 					-- AlexSoft note: this is could be different for Classic version
 					-- I didn't check Horde version but assumed that it is same
 					-- CRIEVE NOTE: You're right, doesn't seem to have anything to do with Keeper's of Time in Cata Classic.
 					["lockCriteria"] = { 1, "factionID", 989.5 },	-- Keepers of Time, Friendly
 					-- #endif
+					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 				}),
 				q(30095, {	-- The End Time
 					["qg"] = 52408,	-- Coridormi
@@ -60,13 +60,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						-- #endif
 					},
 					["races"] = ALLIANCE_ONLY,
-					["DisablePartySync"] = true,
-					["isBreadcrumb"] = true,
 					-- #if NOT ANYCLASSIC
 					-- AlexSoft note: this is could be different for Classic version
 					-- CRIEVE NOTE: You're right, doesn't seem to have anything to do with Keeper's of Time in Cata Classic.
 					["lockCriteria"] = { 1, "factionID", 989.5 },	-- Keepers of Time, Friendly
 					-- #endif
+					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 				}),
 				q(30098, {	-- The Well of Eternity
 					["qgs"] = {

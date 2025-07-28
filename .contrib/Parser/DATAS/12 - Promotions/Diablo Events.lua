@@ -258,7 +258,7 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 		n(VENDORS, {
 			n(245378, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0, } }, {	-- Baranar <Hellhunter>
 				["coord"] = { 52.9, 68.0, DORNOGAL },
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["cost"] = {
 						{"c", 3309, 40},	-- 40x Hellstone Shard
 					},
@@ -292,7 +292,7 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 	n(DIABLO_IV, {
 		["description"] = "Granted to players who owned WoW: The War Within and Diablo IV: Vessel of Hatred before January 7th, 2025.",
 		["timeline"] = { ADDED_11_0_7, "removed 11.0.7.58608" },
-		["g"] = {
+		["groups"] = {
 			i(191114),	-- Amalgam of Rage (MOUNT!)
 			i(206018),	-- Baa'lial (PET!)
 			i(206039, {	-- Enmity Bundle

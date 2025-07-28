@@ -15,7 +15,7 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 			ach(13192, {	-- Brawler for Azeroth
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
-				["g"] = {
+				["groups"] = {
 					title(209, {	-- Brawler <Name>
 						["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
 					}),
@@ -36,7 +36,7 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 			ach(8343, {		-- Deck Your Collection (Season 1)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_5_3_0, REMOVED_6_0_2 },
-				["g"] = {
+				["groups"] = {
 					i(98543, {	-- Wraps of the Blood-Soaked Brawler
 						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
 					}),
@@ -45,7 +45,7 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 			ach(9177, {		-- Deck Your Collection (Season 2)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
-				["g"] = {
+				["groups"] = {
 					i(98543, {	-- Wraps of the Blood-Soaked Brawler
 						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
 					}),
@@ -108,7 +108,7 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 			ach(9173, {		-- The Second Rule of Brawler's Guild (Season 2)
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
-				["g"] = {
+				["groups"] = {
 					i(93195, {	-- Brawler's Pass
 						["timeline"] = { ADDED_5_1_0, REMOVED_9_1_5 },
 					}),
@@ -121,7 +121,7 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 			ach(13190, {	-- The Second Rule of Brawler's Guild
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
-				["g"] = {
+				["groups"] = {
 					i(93195, {	-- Brawler's Pass
 						["timeline"] = { ADDED_5_1_0, REMOVED_9_1_5 },
 					}),
@@ -188,8 +188,8 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 			}),
 			q(53914, {	-- Murder at the Brawl'gar Arena
 				["qg"] = 68364,	-- Paul North
-				["description"] = "This quest can be accepted after you successfully complete any (or your first) Brawl.",
 				["coord"] = { 48.4, 29.2, 503 },
+				["description"] = "This quest can be accepted after you successfully complete any (or your first) Brawl.",
 				["races"] = HORDE_ONLY,
 			}),
 			q(53915, {	-- Put Up Your Dukes
@@ -207,8 +207,8 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 			q(53918, {	-- The Financial Participation Incentive
 				["qg"] = 145582,	-- Sharisanda
 				["sourceQuest"] = 53917,	-- Undercover Agent: Sharisanda
-				["cost"] = { { "i", 142318, 1, } },	-- High Roller's Contract
 				["coord"] = { 48.8, 79.8, 503 },
+				["cost"] = { { "i", 142318, 1, } },	-- High Roller's Contract
 				["races"] = HORDE_ONLY,
 			}),
 			q(53920, {	-- A Favor for Your Ol' Pal Buxdoggle
@@ -222,7 +222,7 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 				["sourceQuest"] = 53920,	-- A Favor for Your Ol' Pal Buxdoggle
 				["coord"] = { 49.2, 68.0, 503 },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164941),	-- Huge Pile of Legitimately-Earned Brawler's Gold (QI!)
 				},
 			}),
@@ -231,7 +231,7 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 				["sourceQuest"] = 53921,	-- The Pit Boss's Debts
 				["coord"] = { 48.8, 79.8, 503 },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164962),	-- Evidence Packet: Pit Boss Buxdoggle (QI!)
 				},
 			}),
@@ -244,10 +244,10 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 			q(53924, {	-- Soul Splinters
 				["qg"] = 145691,	-- Shadowmaster Skrizzik
 				["sourceQuest"] = 53923,	-- Undercover Agent: Stone Guard Mollivox
-				["description"] = "You can save previously earned Brawler's Purses and open them while on this quest - Each Brawler's Purse gives 10 - 12 Soul Splinters, so you will need 9 - 10 Brawler's Purses to complete this quest.",
 				["coord"] = { 37.4, 33.0, 503 },
+				["description"] = "You can save previously earned Brawler's Purses and open them while on this quest - Each Brawler's Purse gives 10 - 12 Soul Splinters, so you will need 9 - 10 Brawler's Purses to complete this quest.",
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164928),	-- Soul Splinter (QI!)
 				},
 			}),
@@ -256,7 +256,7 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 				["sourceQuest"] = 53924,	-- Soul Splinters
 				["coord"] = { 37.4, 33.0, 503 },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164929),	-- Super Soul Splinter (QI!)
 				},
 			}),
@@ -269,7 +269,7 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 				["sourceQuest"] = 53926,	-- Cause for Concern
 				["coord"] = { 50.0, 12.4, 503 },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164937),	-- 13-Tooth Gogglegear (QI!)
 				},
 			}),
@@ -278,7 +278,7 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 				["sourceQuest"] = 53927,	-- The Precious 13-Tooth Gogglegear
 				["coord"] = { 50.0, 12.4, 503 },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164943),	-- Mollivox's Goggles (QI!)
 				},
 			}),
@@ -287,22 +287,22 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 				["sourceQuest"] = 53928,	-- The Mollivox Goggle Experiment
 				["coord"] = { 50.0, 12.4, 503 },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164963),	-- Evidence Packet: Shadowmaster Skrizzik (QI!)
 				},
 			}),
 			q(53930, {	-- Undercover Agent: Nugg Lumbo
 				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["sourceQuest"] = 53929,	-- Evidence Packet: Shadowmaster Skrizzik
-				["cost"] = { { "i", 143759, 1, } },	-- VIP Room Rental Form
 				["coord"] = { 43.4, 97.0, 503 },
+				["cost"] = { { "i", 143759, 1, } },	-- VIP Room Rental Form
 				["races"] = HORDE_ONLY,
 			}),
 			q(53931, {	-- Flaunt It If You Got It
 				["qg"] = 70716,	-- Libbiara Blightrunner
 				["sourceQuest"] = 53930,	-- Undercover Agent: Nugg Lumbo
-				["cost"] = { { "i", 142311, 1, } },	-- Free Drinks Voucher
 				["coord"] = { 31.2, 54.0, 503 },
+				["cost"] = { { "i", 142311, 1, } },	-- Free Drinks Voucher
 				["races"] = HORDE_ONLY,
 			}),
 			q(53952, {	-- Simply Dying of Boredom
@@ -310,7 +310,7 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 				["sourceQuest"] = 53931,	-- Flaunt It If You Got It
 				["coord"] = { 31.2, 54.0, 503 },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164947),	-- Brawl'gar Arena Sign (QI!)
 				},
 			}),
@@ -319,7 +319,7 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 				["sourceQuest"] = 53952,	-- Simply Dying of Boredom
 				["coord"] = { 29.8, 50.0, 503 },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(164964),	-- Evidence Packet: Libbiara Blightrunner (QI!)
 				},
 			}),
@@ -338,8 +338,8 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 			q(53935, {	-- Solving the Mystery
 				["qg"] = 149808,	-- Boss Bazzelflange
 				["sourceQuest"] = 53934,	-- A Clue from Area 52
-				["races"] = HORDE_ONLY,
 				["maps"] = { NETHERSTORM },
+				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 				["groups"] = {
 					i(166724),	-- Bruce (MOUNT!)

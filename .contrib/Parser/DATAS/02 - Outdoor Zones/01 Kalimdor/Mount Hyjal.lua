@@ -985,8 +985,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 80,
 				})),
 				q(29386, {	-- Hero's Call: Mount Hyjal!
-					-- @Darkal: This might be an HQT
 					["u"] = REMOVED_FROM_GAME,	-- triggers when turning in #27726
+					-- @Darkal: This might be an HQT
 				}),
 				q(25270, {	-- Howling Mad
 					["qg"] = 39432,	-- Takrik Ragehowl
@@ -1098,9 +1098,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25940, {	-- Last Stand at Whistling Grove
-					["providers"] = {
-						{ "n", 39927 },	-- Laina Nightsky
-						{ "n", 39928 },	-- Matoclaw
+					["qgs"] = {
+						39927,	-- Laina Nightsky
+						39928,	-- Matoclaw
 					},
 					["sourceQuests"] = {
 						25382,	-- Disrupting the Rituals
@@ -1115,8 +1115,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25355, {	-- Lightning in a Bottle
 					["qg"] = 39432,	-- Takrik Ragehowl
 					["sourceQuest"] = 25277,	-- Cleaning House
-					["description"] = "Before using Totem of Lo'Gosh to turn in the quest, get back to the camp and stand next to Takrik Ragehowl. Summon Spirit of Lo'Gosh, turn in your quest and without going anywhere pick up Into the Maw! from Takrik Ragehowl and then pick up Into the Maw! from Spirit of Lo'Gosh (in this order). Congratulations, you got two quests for the price of one!",
 					["coord"] = { 28.22, 29.74, MOUNT_HYJAL },
+					["description"] = "Before using Totem of Lo'Gosh to turn in the quest, get back to the camp and stand next to Takrik Ragehowl. Summon Spirit of Lo'Gosh, turn in your quest and without going anywhere pick up Into the Maw! from Takrik Ragehowl and then pick up Into the Maw! from Spirit of Lo'Gosh (in this order). Congratulations, you got two quests for the price of one!",
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Charged Condenser Jar
@@ -1131,8 +1131,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25353, {	-- Lightning in a Bottle
 					["qg"] = 39433,	-- Ian Duran
 					["sourceQuest"] = 25278,	-- Cleaning House
-					["description"] = "Before using Totem of Goldrinn to turn in the quest, get back to the camp and stand next to Ian Duran. Summon Goldrinn, turn in your quest and without going anywhere pick up Into the Maw! from Ian Duran and then pick up Into the Maw! from Goldrinn (in this order). Congratulations, you got two quests for the price of one!",
 					["coord"] = { 28.22, 29.74, MOUNT_HYJAL },
+					["description"] = "Before using Totem of Goldrinn to turn in the quest, get back to the camp and stand next to Ian Duran. Summon Goldrinn, turn in your quest and without going anywhere pick up Into the Maw! from Ian Duran and then pick up Into the Maw! from Goldrinn (in this order). Congratulations, you got two quests for the price of one!",
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Charged Condenser Jar
@@ -1218,9 +1218,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25548, {	-- Might of the Firelord
-					["providers"] = {
-						{ "n", 40772 },	-- Commander Jarod Shadowsong
-						{ "n", 40934 },	-- Emerald Drake
+					["qgs"] = {
+						40772,	-- Commander Jarod Shadowsong
+						40934,	-- Emerald Drake
 					},
 					["sourceQuest"] = 25608,	-- Slash and Burn
 					["coord"] = { 72.0, 74.0, MOUNT_HYJAL },
@@ -1653,8 +1653,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25630, {	-- The Fires of Mount Hyjal
 					["qg"] = 39434,	-- Rio Duran
 					["sourceQuest"] = 25612,	-- Return from the Firelands
-					["lockCriteria"] = { 1, "questID", 25372 },	-- Aessina's Miracle
 					["coord"] = { 28.1, 29.8, MOUNT_HYJAL },
+					["lockCriteria"] = { 1, "questID", 25372 },	-- Aessina's Miracle
 					["isBreadcrumb"] = true,
 				}),
 				q(25472, {	-- The Flameseer's Staff
@@ -1725,11 +1725,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 44.1, 45.9, MOUNT_HYJAL },
 				}),
 				q(25830, {	-- The Last Living Lorekeeper
-					["providers"] = {
-						{ "n", 40289 },	-- Ysera
-						{ "n", 46987 },	-- Vision of Ysera
-						{ "n", 46998 },	-- Vision of Ysera
-						{ "n", 47002 },	-- Vision of Ysera
+					["qgs"] = {
+						40289,	-- Ysera
+						46987,	-- Vision of Ysera
+						46998,	-- Vision of Ysera
+						47002,	-- Vision of Ysera
 					},
 					["sourceQuests"] = {
 						25520,	-- An Ancient Awakens
@@ -1767,8 +1767,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 39933,	-- Tyrus Blackhorn
 					["altQuests"] = { 25412 },	-- The Name Never Spoken
 					["sourceQuest"] = 25411,	-- A New Master
-					["description"] = "To get this quest DO NOT accept another version from Subjugated Inferno Lord after \"A New Master\", instead head back to Tyrus Blackhorn.",
 					["coord"] = { 22.2, 44.8, MOUNT_HYJAL },
+					["description"] = "To get this quest DO NOT accept another version from Subjugated Inferno Lord after \"A New Master\", instead head back to Tyrus Blackhorn.",
 				}),
 				q(25464, {	-- The Return of Baron Geddon
 					["qg"] = 39857,	-- Malfurion Stormrage
@@ -2061,8 +2061,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25985, {	-- Wings Over Mount Hyjal
 					["qg"] = 40833,	-- Tiala Whitemane
 					["coord"] = { 63.25, 21.50, MOUNT_HYJAL },
-					["isBreadcrumb"] = true,
 					["description"] = "If you also need the breadcrumb quest 'Aviana's Legacy', this quest must be completed without accepting any quests in Shrine of Aviana prior to turning in 'Return from the Firelands'.",
+					["isBreadcrumb"] = true,
 				}),
 				q(25276, {	-- Your New Identity
 					["qg"] = 39621,	-- Elementalist Ortell

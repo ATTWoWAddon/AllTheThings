@@ -9,14 +9,14 @@ root(ROOTS.Zones, {
 				n(118403, {	-- Syaith <Loaner Demon>
 					["description"] = "/kiss her during the Where There is a Whip... WQ.",
 					["coord"] = { 49.0, 55.8, BROKEN_SHORE },
-					["g"] = {
+					["groups"] = {
 						i(147120, {	-- Technique: Grimoire of the Shadow Succubus (RECIPE!)
 							["timeline"] = { ADDED_7_2_0 },
 						}),
 					},
 				}),
 				n(121589, {	-- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
-					["g"] = {
+					["groups"] = {
 						un(REMOVED_FROM_GAME, i(147796, {	-- Relinquished Hood
 							i(146786),	-- Cloth
 							i(146772),	-- Leather
@@ -76,13 +76,13 @@ root(ROOTS.Zones, {
 				n(120076, {	-- Treasure Master Iks'reeged
 					["sourceQuests"] = { 46666 },	-- The Motherlode!
 					["coord"] = { 47.8, 67.4, BROKEN_SHORE },
-					["g"] = {
+					["groups"] = {
 						i(142452, {	-- Lingering Wyrmtongue Essence (TOY!)
 							["cost"] = { { "c", 1226, 50000 }, },	-- 50,000x Nethershard
 						}),
 						i(143559, {	-- Wyrmtongue's Cache Key
 							["cost"] = { { "c", 1226, 2000 }, },	-- 2,000x Nethershard
-							["g"] = {
+							["groups"] = {
 								o(268551, {	-- Curious Wyrmtongue Cache [Used first one out of many]
 									i(147867),	-- Pilfered Sweeper (TOY!)
 									i(146953),	-- Scraps (PET!)
@@ -93,7 +93,7 @@ root(ROOTS.Zones, {
 				}),
 				n(120898, {	-- Warmage Kath'leen <Legionfall Artificer>
 					["coord"] = { 44.4, 62.2, BROKEN_SHORE },
-					["g"] = bubbleDownClassicRep(FACTION_ARMIES_OF_LEGIONFALL, {
+					["groups"] = bubbleDownClassicRep(FACTION_ARMIES_OF_LEGIONFALL, {
 						{		-- Neutral
 							i(147451, {	-- Armorcrafter's Commendation
 								["cost"] = { { "c", 1226, 1000 }, },	-- 1,000x Nethershard
@@ -109,7 +109,7 @@ root(ROOTS.Zones, {
 							}),
 							i(147212, {	-- Dauntless Bracers
 								["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
-								["g"] = {
+								["groups"] = {
 									i(147226),	-- Fel-Treated Bracers
 									i(147227),	-- Galvanized Stormscale Bracers
 									i(147225),	-- Ley-Touched Bracers
@@ -118,19 +118,19 @@ root(ROOTS.Zones, {
 							}),
 							i(147221, {	-- Dauntless Choker
 								["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
-								["g"] = {
+								["groups"] = {
 									i(147263),	-- Animus Pendant
 								},
 							}),
 							i(147222, {	-- Dauntless Cloak
 								["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
-								["g"] = {
+								["groups"] = {
 									i(147269) -- Unifying Drape
 								},
 							}),
 							i(147215, {	-- Dauntless Gauntlets
 								["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
-								["g"] = {
+								["groups"] = {
 									i(147238),	-- Fel-Treated Gauntlets
 									i(147239),	-- Galvanized Stormscale Gauntlets
 									i(147237),	-- Ley-Touched Gloves
@@ -139,7 +139,7 @@ root(ROOTS.Zones, {
 							}),
 							i(147219, {	-- Dauntless Girdle
 								["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
-								["g"] = {
+								["groups"] = {
 									i(147254),	-- Fel-Treated Belt
 									i(147255),	-- Galvanized Stormscale Belt
 									i(147253),	-- Ley-Touched Cord
@@ -148,7 +148,7 @@ root(ROOTS.Zones, {
 							}),
 							i(147216, {	-- Dauntless Hood
 								["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
-								["g"] = {
+								["groups"] = {
 									i(147242),	-- Fel-Treated Hood
 									i(147243),	-- Galvanized Stormscale Helm
 									i(147241),	-- Ley-Touched Hood
@@ -157,7 +157,7 @@ root(ROOTS.Zones, {
 							}),
 							i(147217, {	-- Dauntless Leggings
 								["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
-								["g"] = {
+								["groups"] = {
 									i(147246),	-- Fel-Treated Legguards
 									i(147247),	-- Galvanized Stormscale Legguards
 									i(147245),	-- Ley-Touched Trousers
@@ -166,13 +166,13 @@ root(ROOTS.Zones, {
 							}),
 							i(147220, {	-- Dauntless Ring
 								["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
-								["g"] = {
+								["groups"] = {
 									i(147257),	-- Avenging Band
 								},
 							}),
 							i(147218, {	-- Dauntless Spaulders
 								["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
-								["g"] = {
+								["groups"] = {
 									i(147250),	-- Fel-Treated Spaulders
 									i(147251),	-- Galvanized Stormscale Spaulders
 									i(147249),	-- Ley-Touched Mantle
@@ -181,7 +181,7 @@ root(ROOTS.Zones, {
 							}),
 							i(147214, {	-- Dauntless Treads
 								["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
-								["g"] = {
+								["groups"] = {
 									i(147234),	-- Fel-Treated Boots
 									i(147235),	-- Galvanized Stormscale Boots
 									i(147233),	-- Ley-Touched Sandals
@@ -190,7 +190,7 @@ root(ROOTS.Zones, {
 							}),
 							i(147223, {	-- Dauntless Trinket
 								["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
-								["g"] = {
+								["groups"] = {
 									i(147275),	-- Beguiler's Talisman
 									i(147276),	-- Spellbinder's Seal
 									i(147278),	-- Stalwart Crest
@@ -198,7 +198,7 @@ root(ROOTS.Zones, {
 							}),
 							i(147213, {	-- Dauntless Tunic
 								["cost"] = { { "c", 1226, 400 }, },	-- 400x Nethershard
-								["g"] = {
+								["groups"] = {
 									i(147229),	-- Fel-Treated Chestguard
 									i(147230),	-- Galvanized Stormscale Chestguard
 									i(147232),	-- Ley-Touched Robes
@@ -240,7 +240,7 @@ root(ROOTS.Zones, {
 									{ 66.0, 32.5, BROKEN_SHORE },
 									{ 74.0, 30.6, BROKEN_SHORE },
 								},
-								["g"] = {
+								["groups"] = {
 									n(121092),	-- Anomalous Observer
 									n(121049),	-- Baleful Knight-Captain
 									n(121090),	-- Demented Shivarra

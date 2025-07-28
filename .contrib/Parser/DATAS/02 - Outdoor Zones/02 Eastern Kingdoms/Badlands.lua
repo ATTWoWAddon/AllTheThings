@@ -139,7 +139,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 62.6, 57.6, BADLANDS },
 						["races"] = HORDE_ONLY,
 						["timeline"] = { REMOVED_4_0_3 },
-						["g"] = CLASSIC_TBC_DRAGONSCALE,
+						["groups"] = CLASSIC_TBC_DRAGONSCALE,
 					}),
 				}),
 			}),
@@ -498,8 +498,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(27930, {	-- Devastation
 					["provider"] = { "o", 206504 },	-- Rhea's Final Note
 					["sourceQuests"] = { 27858, 27898 },	-- Rheastrasza's Gift (A, H)
-					["description"] = "If you abandon this quest, leave the area then return to the cave.",
 					["coord"] = { 18.9, 30.3, BADLANDS },
+					["description"] = "If you abandon this quest, leave the area then return to the cave.",
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27927, {	-- Down to the Scar

@@ -10,7 +10,7 @@
 				{ 44.1, 59.7, SURAMAR },	-- actual raid entrance
 			},
 			["maps"] = { 764, 765, 766, 767, 768, 769, 770, 771, 772 },
-			["g"] = {
+			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(19955, {	-- Raid Finder: Throne of Thunder
 						crit(65724, {	-- Jin'rokh the Breaker

@@ -60,7 +60,7 @@ root(ROOTS.Professions, prof(FIRST_AID, bubbleDownSelf({ ["requireSkill"] = FIRS
 		ach(10599),	-- Legion Medic
 		ach(11139, {	-- Field Medic!
 			["description"] = "WARNING: You must drop or turn in duplicate quests otherwise you will be unable to loot anymore.",
-			["g"] = {
+			["groups"] = {
 				title(340),	-- Field Medic <Name> (TITLE!)
 				i(139534, {	-- Bloody Letter
 					["criteriaID"] = 34872,		-- Bloody Letter

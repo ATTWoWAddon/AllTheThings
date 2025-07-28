@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 		n(VENDORS, {
 			n(128199, {	-- Kuraam <Tournament Vendor>
 				["coord"] = { 50.6, 45.6, EREDATH },
-				["g"] = {
+				["groups"] = {
 					i(153169),	-- Commemorative Jed'hin Belt
 					i(153170),	-- Jed'hin Headguard
 				},

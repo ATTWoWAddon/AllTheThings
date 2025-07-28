@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				NAZMIR,
 				VOLDUN,
 			},
-			["g"] = {
+			["groups"] = {
 				i(157782, {	-- Pterrordax Egg
 					["crs"] = {
 						126618,	-- Bloodrage Pterrordax

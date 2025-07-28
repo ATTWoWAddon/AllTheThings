@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 		n(VENDORS, {
 			n(203301, {	-- Bottles <Food and Drink>
 				["coord"] = {  58.1, 55.1, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(205417),	-- Fungishine
 				},
 			}),
@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			n(201004, {	-- Explorer Bezzert <Intrepid Pet Trainer>
 				["coord"] = { 52.4, 66.0, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(205052, {	-- Miloh (PET!)
 						["cost"] = { { "i", POLISHED_PET_CHARM, 2500 } },
 					}),
@@ -26,7 +26,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			n(203293, {	-- Floressa <Innkeeper>
 				["coord"] = { 56.2, 56.3, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(204729),	-- Freshly Squeezed Mosswater
 					i(204730),	-- Grub Grub
 					i(204791),	-- Squishy Snack
@@ -35,14 +35,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			n(204860, {	-- Lyssa
 				["coord"] = { 56.8, 56.4, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(204728),	-- Friendship Censer
 					i(205936),	-- New Niffen No-Sniffin' Tonic (TOY!)
 				},
 			}),
 			n(205676, bubbleDown({ ["timeline"] = { REMOVED_11_0_0 } }, {	-- Norzko the Proud
 				["coord"] = { 52.0, 25.6, ZARALEK_CAVERN },
-				["g"] = bubbleDownFiltered({
+				["groups"] = bubbleDownFiltered({
 					["cost"] = {{ "i", 204843, 1 }},	-- Draconic Mark of Mastery
 					["bonusID"] = 7532,
 				},FILTERFUNC_itemID,{
@@ -141,7 +141,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			})),
 			n(203615, {	-- Saccratros
 				["coord"] = { 55.9, 55.4, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(205118, {	-- Diamondshell (PET!)
 						["cost"] = { { "i", COVETED_BAUBLE, 50 } },
 					}),
@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			}),
 			n(204371, {	-- Sniktak <Enterprising Mycologist>
-				["g"] = {
+				["groups"] = {
 					i(205696),	-- Amethyst Deceiver Mushroom
 					i(205417),	-- Fungishine
 					i(205693),	-- Latticed Stinkhorn
@@ -163,12 +163,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			n(203602, {	-- Spinsoa
 				["coord"] = { 55.9, 55.5, ZARALEK_CAVERN },
-				["g"] = {
+				["groups"] = {
 					i(204726, {	-- Drake's Bountiful Chest
 						["questID"] = 75329,
 						["isWeekly"] = true,
 						["cost"] = { { "i", UNEARTHED_FRAGRANT_COIN, 15 } },
-						["g"] = {
+						["groups"] = {
 							i(204076),	-- Drake's Shadowflame Crest Fragment x15
 						}
 					}),
@@ -176,7 +176,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["questID"] = 75328,
 						["isWeekly"] = true,
 						["cost"] = { { "i", UNEARTHED_FRAGRANT_COIN, 10 } },
-						["g"] = {
+						["groups"] = {
 							i(204076),	-- Drake's Shadowflame Crest Fragment x10
 						}
 					}),
@@ -184,7 +184,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["questID"] = 75327,
 						["isWeekly"] = true,
 						["cost"] = { { "i", UNEARTHED_FRAGRANT_COIN, 5 } },
-						["g"] = {
+						["groups"] = {
 							i(204076),	-- Drake's Shadowflame Crest Fragment x5
 						}
 					}),
@@ -192,7 +192,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["questID"] = 75323,
 						["isWeekly"] = true,
 						["cost"] = { { "i", UNEARTHED_FRAGRANT_COIN, 10 } },
-						["g"] = {
+						["groups"] = {
 							i(204075),	-- Whelpling's Shadowflame Crest Fragment x15
 						}
 					}),
@@ -200,7 +200,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["questID"] = 75324,
 						["isWeekly"] = true,
 						["cost"] = { { "i", UNEARTHED_FRAGRANT_COIN, 4 } },
-						["g"] = {
+						["groups"] = {
 							i(204075),	-- Whelpling's Shadowflame Crest Fragment x10
 						}
 					}),
@@ -208,7 +208,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["questID"] = 75306,
 						["isWeekly"] = true,
 						["cost"] = { { "i", UNEARTHED_FRAGRANT_COIN, 2 } },
-						["g"] = {
+						["groups"] = {
 							i(204075),	-- Whelpling's Shadowflame Crest Fragment x5
 						}
 					}),

@@ -10,7 +10,7 @@ root(ROOTS.Zones, {
 					n(92040, {	-- Fenri
 						["questID"] = 38461,
 						["coord"] = { 84.6, 49.2, HELHEIM },
-						["g"] = {
+						["groups"] = {
 							crit(33298, {	-- Fenri
 								["achievementID"] = 11263,	-- Adventurer of Stormheim
 							}),
@@ -26,7 +26,7 @@ root(ROOTS.Zones, {
 					n(97630, {	-- Soulthirster
 						["questID"] = 39870,
 						["coord"] = { 29.0, 61.6, HELHEIM },
-						["g"] = {
+						["groups"] = {
 							crit(33310, {	-- Soulthirster
 								["achievementID"] = 11263,	-- Adventurer of Stormheim
 							}),

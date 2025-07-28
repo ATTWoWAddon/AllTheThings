@@ -4,7 +4,7 @@
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(DREAD_WASTES, {
 		["icon"] = 624970,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(19890),	-- Campaign: Dread Wastes (automated)
 				ach(19878, {	-- Dread Wastes
@@ -14,7 +14,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						19915,	-- The Klaxxi
 						19967,	-- Tour Dread Wastes
 					}},
-					["g"] = {
+					["groups"] = {
 						i(220765),	-- Sha Corruption (ILLUSION!)
 					},
 				}),

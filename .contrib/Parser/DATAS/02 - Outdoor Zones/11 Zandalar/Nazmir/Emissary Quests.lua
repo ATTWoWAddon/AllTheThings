@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 39.11, 79.47, NAZMIR },
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
-				["g"] = {
+				["groups"] = {
 					i(166282, {	-- Talanji's Expedition Supplies
 						i(166308),	-- For da Blood God! (TOY!)
 						i(166716),	-- Crimson Bat Pup (PET!)
@@ -22,7 +22,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 39.11, 79.47, NAZMIR },
 				["races"] = HORDE_ONLY,
 				["isWorldQuest"] = true,
-				["g"] = {
+				["groups"] = {
 					i(165865, {	-- Nazmir Expeditionary Equipment Cache
 						["sym"] = {
 							{"select", "mapID", NAZMIR},

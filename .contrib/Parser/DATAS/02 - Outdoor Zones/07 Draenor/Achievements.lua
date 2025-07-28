@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(DRAENOR, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } 
 				10350,	-- Tanaan Diplomat (Alliance)
 				10349,	-- Tanaan Diplomat (Horde)
 			}},
-			["g"] = {
+			["groups"] = {
 				i(128706),	-- Soaring Skyterror (MOUNT!)
 			},
 		}),
@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(DRAENOR, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } 
 		})),
 		petbattle(ach(9724, {	-- Taming Draenor
 			["timeline"] = { ADDED_6_0_2 },
-			["g"] = {
+			["groups"] = {
 				crit(27012),	-- Ashlei [Shadowmoon Valley)
 				crit(27011),	-- Cymre Brightblade [Gorgrond)
 				crit(27013),	-- Gargra [Frostfire Ridge)

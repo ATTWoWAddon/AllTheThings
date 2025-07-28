@@ -69,7 +69,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 		["mapID"] = 595,
 		["coord"] = { 45.36, 13.52, GORGROND },
 		["lvl"] = 92,
-		["g"] = {
+		["groups"] = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(NOKGAR),
 				BossOnly(ENFORCERS),

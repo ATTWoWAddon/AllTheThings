@@ -134,8 +134,8 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
 			["coords"] = {
 				{ 28.6, 41.6, STORMWIND_CITY },
 			},
-			["races"] = ALLIANCE_ONLY,
 			["cost"] = {{"i",202162,1}},	-- Rumble Coin
+			["races"] = ALLIANCE_ONLY,
 			["repeatable"] = true,
 			["groups"] = {
 				i(202163, {	-- Rumble Prize Box

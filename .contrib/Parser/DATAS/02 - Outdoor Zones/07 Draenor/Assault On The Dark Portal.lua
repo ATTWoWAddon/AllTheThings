@@ -27,7 +27,7 @@ root(ROOTS.Zones, {
 				578,	-- Umbral Halls
 			},
 			["lvl"] = 90,
-			["g"] = {
+			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(8921, {	-- Welcome to Draenor (A)
 						["races"] = ALLIANCE_ONLY,
@@ -44,7 +44,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 73.0, 38.1, 577 },
 						["sourceQuest"] = 34425,	-- The Kargathar Proving Grounds
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(112440),	-- Slavebreaker Robes
 							i(112441),	-- Slavebreaker Tunic
 							i(112442),	-- Slavebreaker Chainmail
@@ -56,7 +56,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 73.0, 38.1, 577 },
 						["sourceQuest"] = 34425,	-- The Kargathar Proving Grounds
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(112440),	-- Slavebreaker Robes
 							i(112441),	-- Slavebreaker Tunic
 							i(112442),	-- Slavebreaker Chainmail
@@ -91,7 +91,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 78559 },	-- Archmage Khadgar
 						["coord"] = { 60.2, 56.3, 577 },
 						["sourceQuest"] = 34420,	-- The Cost of War
-						["g"] = {
+						["groups"] = {
 							i(112431),	-- Hollowheart Legguards
 							i(112432),	-- Hollowheart Chain Leggings
 							i(112433),	-- Hollowheart Trousers
@@ -167,7 +167,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 48.6, 14.2, 577 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34436,	-- Keli'dan the Breaker
-						["g"] = {
+						["groups"] = {
 							i(112668),	-- Quarrier's Spaulders
 							i(112669),	-- Quarrier's Shoulderplates
 							i(112670),	-- Quarrier's Mantle
@@ -179,7 +179,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 50.0, 13.3, 577 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34741,	-- Keli'dan the Breaker
-						["g"] = {
+						["groups"] = {
 							i(112668),	-- Quarrier's Spaulders
 							i(112669),	-- Quarrier's Shoulderplates
 							i(112670),	-- Quarrier's Mantle
@@ -212,10 +212,10 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 78569 },	-- Hansel Heavyhands
 						["coord"] = { 44.0, 29.5, 577 },
 						["sourceQuest"] = 34439,	-- The Battle of the Forge
-						["g"] = {
+						["groups"] = {
 							o(231119, {	-- Blackrock Powder Keg
 								["coord"] = { 46.9, 32.0, 577 },
-								["g"] = { i(112323) },	-- Blackrock Powder Keg (QI!)
+								["groups"] = { i(112323) },	-- Blackrock Powder Keg (QI!)
 							}),
 						},
 					}),
@@ -240,7 +240,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 78558 },	-- Archmage Khadgar
 						["coord"] = { 54.6, 48.2, 577 },
 						["sourceQuest"] = 34392,	-- Onslaught's End
-						["g"] = {
+						["groups"] = {
 							i(112387),	-- Iron Horde Bolt-Thrower
 							i(112388),	-- Iron Horde Tomahawk
 							i(112389),	-- Iron Horde Warcudgel
@@ -266,7 +266,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 80.7, 45.3, 578 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34429,	-- Kill Your Hundred
-						["g"] = {
+						["groups"] = {
 							i(112664),	-- Voidgazer Cap
 							i(112665),	-- Voidgazer Chain Hood
 							i(112663),	-- Voidgazer Headguard
@@ -278,7 +278,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 81.5, 44.7, 578 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34429,	-- Kill Your Hundred
-						["g"] = {
+						["groups"] = {
 							i(112664),	-- Voidgazer Cap
 							i(112665),	-- Voidgazer Chain Hood
 							i(112663),	-- Voidgazer Headguard

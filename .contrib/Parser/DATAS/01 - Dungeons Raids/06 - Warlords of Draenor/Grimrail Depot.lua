@@ -49,7 +49,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 		["coord"] = { 55.0, 31.3, GORGROND },
 		["maps"] = { 606, 607, 608, 609 },
 		["lvl"] = 100,
-		["g"] = {
+		["groups"] = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(ROCKET_BORKA),
 				BossOnly(NITROGG),

@@ -8,13 +8,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_7_2_5, REMOVED_7_3_0 } }, {
 			ach(11010, {	-- Ferocious Combatant [A]
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(103533),	-- Vicious Saddle
 				},
 			}),
 			ach(11009, {	-- Ferocious Combatant [H]
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(103533),	-- Vicious Saddle
 				},
 			}),
@@ -766,7 +766,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 }, ["races"] = ALLIANCE_ONLY }, {
 				n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
 					["coord"] = { 29.6, 74.8, LEGION_DALARAN },
-					["g"] = sharedData({
+					["groups"] = sharedData({
 						["sourceAchievements"] = { 11698 },	-- Ferocious Elite
 						["cost"] = {{"i", MOH, 50}},
 						["u"] = ELITE_PVP_REQUIREMENT,
@@ -940,7 +940,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 }, ["races"] = HORDE_ONLY }, {
 				n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
 					["coord"] = { 57.0, 27.8, LEGION_DALARAN },
-					["g"] = sharedData({
+					["groups"] = sharedData({
 						["sourceAchievements"] = { 11698 },	-- Ferocious Elite
 						["cost"] = {{"i", MOH, 50}},
 						["u"] = ELITE_PVP_REQUIREMENT,

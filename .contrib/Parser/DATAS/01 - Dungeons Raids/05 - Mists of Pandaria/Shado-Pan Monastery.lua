@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, {
-	applyclassicphase(MOP_PHASE_LANDFALL, inst(312, {	-- Shado-Pan Monastery
+	applyclassicphase(MOP_PHASE_ONE, inst(312, {	-- Shado-Pan Monastery
 		["coord"] = { 36.8 ,47.7, KUN_LAI_SUMMIT},
 		["maps"] = {
 			443,	-- Shado-Pan Monastery
@@ -10,7 +10,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 			445,	-- Snowdrift Dojo
 			446,	-- Sealed Chambers
 		},
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(31030, {	-- Into the Monastery
 					["provider"] = { "n", 62227 },	-- Ban Bearheart
@@ -27,12 +27,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				q(30757, {	-- Lord of the Shado-Pan
 					["provider"] = { "n", 62236 },	-- Ban Bearheart
-					["coord"] = { 84.8, 56.0, 444 },
 					["sourceQuests"] = {
 						31030,	-- Into the Monastery
 						31031,	-- Into the Monastery
 					},
-					["g"] = {
+					["coord"] = { 84.8, 56.0, 444 },
+					["groups"] = {
 						i(87319),	-- Antagonist's Headwrap
 						i(87315),	-- Cowl of Angry Thoughts
 						i(87321),	-- Cowl of Internal Strife
@@ -47,7 +47,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				q(31342, {	-- The Path to Respect Lies in Violence
 					["provider"] = { "n", 56541 },	-- Master Snowdrift
 					["coord"] = { 29.5, 73.0, 443 },
-					["g"] = {
+					["groups"] = {
 						i(87327),	-- Cloudstriker Cord
 						i(87332),	-- Cord of Disturbed Dreams
 						i(87324),	-- Cord of Sha Ravagery
@@ -63,7 +63,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 				e(686, {	-- Taran Zhu
 					["crs"] = { 56884 },	-- Taran Zhu
-					["g"] = {
+					["groups"] = {
 						ach(6469),	-- Shado-Pan Monastery
 					},
 				}),
@@ -71,7 +71,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(673, {	-- Gu Cloudstrike
 					["crs"] = { 56747 },	-- Gu Cloudstrike
-					["g"] = {
+					["groups"] = {
 						-- Available
 						i(144127, {	-- Cloudstrike Pendant
 							["timeline"] = { ADDED_7_1_5 },
@@ -103,7 +103,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				e(657, {	-- Master Snowdrift
 					["crs"] = { 56541 },	-- Master Snowdrift
-					["g"] = {
+					["groups"] = {
 						-- Available
 						i(144110, {	-- Snowdrift's Bladed Staff
 							["timeline"] = { ADDED_7_1_5 },
@@ -135,7 +135,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				e(685, {	-- Sha of Violence
 					["crs"] = { 56719 },	-- Sha of Violence
-					["g"] = {
+					["groups"] = {
 						-- Available
 						i(144099, {	-- Crescent of Ichor
 							["timeline"] = { ADDED_7_1_5 },
@@ -167,7 +167,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				e(686, {	-- Taran Zhu
 					["crs"] = { 56884 },	-- Taran Zhu
-					["g"] = {
+					["groups"] = {
 						-- Available
 						i(144215, {	-- Ka'eng, Breath of the Shadow
 							["timeline"] = { ADDED_7_1_5 },
@@ -228,7 +228,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(673, {	-- Gu Cloudstrike
 					["crs"] = { 56747 },	-- Gu Cloudstrike
-					["g"] = {
+					["groups"] = {
 						-- Available
 						i(144127, {	-- Cloudstrike Pendant
 							["timeline"] = { ADDED_7_1_5 },
@@ -266,7 +266,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				e(657, {	-- Master Snowdrift
 					["crs"] = { 56541 },	-- Master Snowdrift
-					["g"] = {
+					["groups"] = {
 						-- Available
 						ach(6477),	-- Respect
 						i(144110, {	-- Snowdrift's Bladed Staff
@@ -305,7 +305,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				e(685, {	-- Sha of Violence
 					["crs"] = { 56719 },	-- Sha of Violence
-					["g"] = {
+					["groups"] = {
 						-- Available
 						ach(6472),	-- The Obvious Solution
 						i(144099, {	-- Crescent of Ichor
@@ -344,7 +344,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 				}),
 				e(686, {	-- Taran Zhu
 					["crs"] = { 56884 },	-- Taran Zhu
-					["g"] = {
+					["groups"] = {
 						-- Available
 						ach(6471),	-- Hate Leads to Suffering
 						ach(6470),	-- Heroic: Shado-Pan Monastery
@@ -420,7 +420,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 } }, {
+			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
 				ach(8432, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Shado-Pan Monastery
 					title(246),	-- Purified Defender <Name>
 				})),

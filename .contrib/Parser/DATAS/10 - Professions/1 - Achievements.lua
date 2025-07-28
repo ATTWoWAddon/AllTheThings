@@ -5,7 +5,7 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, {
 	ach(19410, { ["timeline"] = { ADDED_11_0_2 } }),	-- Algari Master of All
 	ach(19515, sharedDataSelf({ ["timeline"] = { ADDED_11_0_2 } }, {	-- Algari Master of Many
 		["sym"] = {{"partial_achievement",19410}},	-- Algari Master of All
-		["g"] = {
+		["groups"] = {
 			iensemble(219125),	-- Formed Artisan's Talent
 		},
 	})),

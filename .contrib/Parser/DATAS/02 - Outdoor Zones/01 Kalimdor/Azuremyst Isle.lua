@@ -195,14 +195,11 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9303, {	-- Inoculation [Original]
-							-- 9303 is only given to you instead of 37444 if you turn in Vindicator Aldar first, confirmed by Crieve, deleted 3 level 4 Draenei to test it and different scenarios.
-							-- There was absolutely nothing different about the quest other than the quest text, so rather than duplicate the entry, using altQuests instead.
-							-- The extra information doesn't help a new player and you get credit for both anyways on turn in, so it's whatever.
 							["qg"] = 16535,	-- Vindicator Aldar
-							["sourceQuest"] = 10304,	-- Vindicator Aldar
 							-- #if AFTER 6.0.2.18816
 							["altQuests"] = { 37444 },	-- Inoculation [Skipped Breadcrumb]
 							-- #endif
+							["sourceQuest"] = 10304,	-- Vindicator Aldar
 							-- #if AFTER MOP
 							["coord"] = { 50.6, 48.7, AMMEN_VALE },
 							-- #else
@@ -210,6 +207,9 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #endif
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(2, 2, 1),
+							-- 9303 is only given to you instead of 37444 if you turn in Vindicator Aldar first, confirmed by Crieve, deleted 3 level 4 Draenei to test it and different scenarios.
+							-- There was absolutely nothing different about the quest other than the quest text, so rather than duplicate the entry, using altQuests instead.
+							-- The extra information doesn't help a new player and you get credit for both anyways on turn in, so it's whatever.
 							["groups"] = {
 								objective(1, {	-- Nestlewood Owlkin inoculated
 									["provider"] = { "i", 22962 },	-- Inoculating Crystal
@@ -220,8 +220,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						q(37444, {	-- Inoculation
 							["qg"] = 16535,	-- Vindicator Aldar
 							["sourceQuest"] = 10302,	-- Volatile Mutations
-							["description"] = "This quest is given if you pick it up before getting or turning in the quest |cFFFFD700Vindicator Aldar|r.",
 							["coord"] = { 50.6, 48.7, AMMEN_VALE },
+							["description"] = "This quest is given if you pick it up before getting or turning in the quest |cFFFFD700Vindicator Aldar|r.",
 							["timeline"] = { ADDED_6_0_2 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -256,9 +256,9 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(31172, {	-- Monk Training
-							["classes"] = { MONK },
-							["races"] = { DRAENEI },
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
+							["races"] = { DRAENEI },
+							["classes"] = { MONK },
 						}),
 						q(9287, {	-- Paladin Training
 							["qg"] = 16501,	-- Aurelon
@@ -298,8 +298,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						q(9280, {	-- Replenishing the Healing Crystals
 							["qg"] = 16477,	-- Proenitus
-							["sourceQuest"] = 9279,	-- You Survived!
 							["altQuests"] = { 9369 },	-- Replenishing the Healing Crystals [Non-Draenei Only]
+							["sourceQuest"] = 9279,	-- You Survived!
 							-- #if AFTER MOP
 							["coord"] = { 52.7, 35.9, AMMEN_VALE },
 							-- #else
@@ -372,10 +372,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						q(9305, {	-- Spare Parts
 							["qg"] = 17071,	-- Technician Zhanaa
-							["sourceQuest"] = 10302,	-- Volatile Mutations
 							-- #if AFTER WOD
 							["altQuests"] = { 37445 },	-- Spare Parts [New one that exists for no reason]
 							-- #endif
+							["sourceQuest"] = 10302,	-- Volatile Mutations
 							-- #if AFTER MOP
 							["coord"] = { 50.5, 47.9, AMMEN_VALE },
 							-- #else
@@ -726,7 +726,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9612, {	-- A Hearty Thanks!
 					["qg"] = 17587,	-- Draenei Youngling
-					["description"] = "1. Find a |cFFFFD700Draenei Youngling|r.\n2. Get them to engage in combat with an aggressive mob\n.3. Once they take damage, use |cFFFFD700Gift of the Naaru.|r\n4. Kill the creature for the quest to be offered.",
 					["coords"] = {
 						{ 37.6, 18.6, AZUREMYST_ISLE },
 						{ 40.6, 71.0, AZUREMYST_ISLE },
@@ -738,6 +737,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						{ 56.8, 59.6, AZUREMYST_ISLE },
 						{ 58.0, 41.6, AZUREMYST_ISLE },
 					},
+					["description"] = "1. Find a |cFFFFD700Draenei Youngling|r.\n2. Get them to engage in combat with an aggressive mob\n.3. Once they take damage, use |cFFFFD700Gift of the Naaru.|r\n4. Kill the creature for the quest to be offered.",
 					["races"] = { DRAENEI },
 					["lvl"] = lvlsquish(8, 8, 1),
 				}),
@@ -1018,14 +1018,14 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				q(9595, {	-- Control
-					-- TODO: verify, if possible?  i don't see any recent comments claiming to have picked this up, just questions about how to get it.
-					-- wowhead also doesn't have provider data for it, leading me to believe it has been culled/not seen in a long time
 					["qg"] = 17481,	-- Semid
 					["coord"] = { 49.9, 50.0, AZUREMYST_ISLE },
 					["timeline"] = { REMOVED_4_0_3 },	-- NOTE: Possibly added back the same time as the Ghostlands Mage quest was.
 					["classes"] = { MAGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 1),
+					-- TODO: verify, if possible?  i don't see any recent comments claiming to have picked this up, just questions about how to get it.
+					-- wowhead also doesn't have provider data for it, leading me to believe it has been culled/not seen in a long time
 					["groups"] = {
 						objective(1, {	-- Quel'dorei Magewraith slain
 							["provider"] = { "n", 17612 },	-- Quel'dorei Magewraith
@@ -1298,7 +1298,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9582, {	-- Strength of One
 					["qg"] = 17480,	-- Ruada
-					["coord"] = { 49.8, 50.4, AZUREMYST_ISLE },
 					["altQuests"] = {
 						1665,	-- Bartleby's Mug
 						-- #if AFTER TBC
@@ -1307,6 +1306,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						1678,	-- Vejrek
 						1683,	-- Vorlus Vilehoof
 					},
+					["coord"] = { 49.8, 50.4, AZUREMYST_ISLE },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 1),

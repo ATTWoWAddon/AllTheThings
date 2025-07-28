@@ -6,15 +6,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	n(NECROLORD, {
 		n(SANCTUM_UPGRADES, {
 			["icon"] = 3641396,
-			["g"] = {
+			["groups"] = {
 				n(TRANSPORT_NETWORK, {
 					["icon"] = 3854019,
-					["g"] = sharedData({ ["icon"] = 3854019 }, {
+					["groups"] = sharedData({ ["icon"] = 3854019 }, {
 						n(TIER_ONE, {
 							n(QUESTS, {
 								q(63059, {	-- Blink of an Eye
-									["sourceQuests"] = { 63055 },	-- Powering the Portals
 									["provider"] = { "n", 175963 },	-- Serafina Von
+									["sourceQuests"] = { 63055 },	-- Powering the Portals
 									["coord"] = { 59.8, 31.8, SEAT_OF_THE_PRIMUS },
 								}),
 								q(63055, {	-- Powering the Portals
@@ -27,12 +27,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						n(TIER_TWO, {
 							n(QUESTS, {
 								q(60184, {	-- Dude, Where's My Necropolis?
-									["description"] = "Becomes available during the campaign.",
+									["provider"] = { "n", 173306 },	-- Khaliiq
 									["sourceQuests"] = {
 										58820,	-- Bindings of Fleshcrafting
 									},
-									["provider"] = { "n", 173306 },	-- Khaliiq
 									["coord"] = { 29.6, 44.0, MALDRAXXUS },
+									["description"] = "Becomes available during the campaign.",
 								}),
 							}),
 						}),

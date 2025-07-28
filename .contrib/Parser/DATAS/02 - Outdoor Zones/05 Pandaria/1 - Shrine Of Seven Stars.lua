@@ -12,64 +12,64 @@ root(ROOTS.Zones, m(PANDARIA, {
 			394,	-- The Imperial Exchange
 		},
 		["lvl"] = 78,
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, sharedData({
 				["races"] = ALLIANCE_ONLY,
 			},{
 				q(32007, {	-- A Worthy Challenge: Darkmaster Gandling
 					["isDaily"] = true,
-					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 					["u"] = REMOVED_FROM_GAME,
+					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(32005, {	-- A Worthy Challenge: Durand
 					["isDaily"] = true,
-					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 					["u"] = REMOVED_FROM_GAME,
+					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(32006, {	-- A Worthy Challenge: Flameweaver Koegler
 					["isDaily"] = true,
-					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 					["u"] = REMOVED_FROM_GAME,
+					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(32003, {	-- A Worthy Challenge: Raigonn
 					["isDaily"] = true,
-					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 					["u"] = REMOVED_FROM_GAME,
+					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(31998, {	-- A Worthy Challenge: Sha of Doubt
 					["isDaily"] = true,
-					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 					["u"] = REMOVED_FROM_GAME,
+					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(32001, {	-- A Worthy Challenge: Sha of Hatred
 					["isDaily"] = true,
-					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 					["u"] = REMOVED_FROM_GAME,
+					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(32004, {	-- A Worthy Challenge: Wing Leader Ner'onok
 					["isDaily"] = true,
-					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 					["u"] = REMOVED_FROM_GAME,
+					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(32002, {	-- A Worthy Challenge: Xin the Weaponmaster
 					["isDaily"] = true,
-					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 					["u"] = REMOVED_FROM_GAME,
+					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(32000, {	-- A Worthy Challenge: Yan-zhu the Uncasked
 					["isDaily"] = true,
-					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 					["u"] = REMOVED_FROM_GAME,
+					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(33248, {	-- Proving Grounds
+					["qg"] = 64101,	-- Taijin the Cyclone
 					["coord"] = { 47.23, 49.71, 393 },
-					["provider"] = { "n", 64101 },	-- Taijin the Cyclone
 				}),
 				q(32683, {	-- So You Want to Be a Blacksmith...
-					["provider"] = { "n", 64085 },	-- Cullen Hammerbrow
+					["qg"] = 64085,	-- Cullen Hammerbrow
 					["coord"] = { 71.27, 50.52, 393 },
-					["requireSkill"] = BLACKSMITHING,
 					["timeline"] = { REMOVED_8_0_1 },	-- no longer available due to the profession level changes
+					["requireSkill"] = BLACKSMITHING,
 				}),
 				--[[
 				q(31390, {	-- The Klaxxi
@@ -85,11 +85,11 @@ root(ROOTS.Zones, m(PANDARIA, {
 			},{
 				n(64085, {	-- Cullen Hammerbrow <Blacksmithing Supplies>
 					["coord"] = { 71.2, 50.5, 393 },
-					["g"] = COMMON_MOP_BLACKSMITHING_RECIPES,
+					["groups"] = COMMON_MOP_BLACKSMITHING_RECIPES,
 				}),
 				n(64084, {	-- Jojo <Cooking Supplies>
 					["coord"] = { 63.0, 26.8, 393 },
-					["g"] = {
+					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
@@ -119,7 +119,7 @@ root(ROOTS.Zones, m(PANDARIA, {
 				n(64052, {	-- Raishen the Needle <Tailoring Supplies>
 					["requireSkill"] = TAILORING,
 					["coord"] = { 64.7, 44.1, 393 },
-					["g"] = {
+					["groups"] = {
 						i(86361, {	-- Pattern: Contender's Satin Amice (RECIPE!)
 							["cost"] = { { "i", 76061, 1 }, },	-- 1x Spirit of Harmony
 						}),
@@ -172,14 +172,14 @@ root(ROOTS.Zones, m(PANDARIA, {
 				}),
 				n(64096, {	-- Serenka <First Aid Supplies>
 					["coord"] = { 47.2, 61.2, 393 },
-					["g"] = {
+					["groups"] = {
 						i(44694),	-- Antiseptic-Soaked Dressing
 						i(44693),	-- Wound Dressing
 					},
 				}),
 				n(64094, {	-- Tanner Pang <Leatherworking & Skinning Supplies>
 					["coord"] = { 75.6, 50.2, 393 },
-					["g"] = COMMON_MOP_LEATHERWORKING_RECIPES,
+					["groups"] = COMMON_MOP_LEATHERWORKING_RECIPES,
 				}),
 			})),
 		},

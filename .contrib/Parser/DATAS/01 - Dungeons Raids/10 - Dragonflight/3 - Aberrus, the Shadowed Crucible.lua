@@ -296,11 +296,11 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			2170,	-- Edge of Oblivion
 			2211,	-- Aberrus, the Shadowed Crucible (reported in #retail-errors on 3-July-2024)
 		},
-		["g"] = {
+		["groups"] = {
 			header(HEADERS.Item, 204177, {	-- Nasz'uro, the Unbound Legacy
 				i(204274, {	-- Ancient Memories
 					["description"] = "You need to find an Evoker who is doing this quest.",
-					["g"] = {
+					["groups"] = {
 						r(407161, {	-- Immaculate Coalescing Dracothyst
 							["requireSkill"] = JEWELCRAFTING,
 							["u"] = TRAINING,
@@ -339,7 +339,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 							{ "i", 204856, 1 },	-- 1x Inspired Order Recalibrator
 							{ "i", 204832, 1 },	-- 1x Reclaimed Gauntlet Chassis
 						},
-						["g"] = {
+						["groups"] = {
 							i(204274, {	-- Ancient Memories
 								i(206163),	-- Temporal Gossamer
 							}),
@@ -349,7 +349,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						["sourceQuests"] = { 74913 },	-- Memories of an Artifact
 						["provider"] = { "i", 206163 },	-- Temporal Gossamer
 						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_7 },
-						["g"] = {
+						["groups"] = {
 							i(204808),	-- Empowered Temporal Gossamer
 							i(206165),	-- Major Resonating Vestigial (QI!)
 							i(206166),	-- Strong Resonating Vestigial (QI!)
@@ -361,7 +361,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						["provider"] = { "n", 187669 },	-- Nozdormu
 						["coord"] = { 60.8, 39.2, VALDRAKKEN },
 						["maps"] = { 2176 },	-- The Maelstrom
-						["g"] = {
+						["groups"] = {
 							i(204177),	-- Nasz'uro, the Unbound Legacy
 							ach(18256),	-- Nasz'uro, the Unbound Legacy
 						},
@@ -489,7 +489,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						18149,	-- Objects in Transit May Shatter
 						17877,	-- We'll Never See That Again, Surely
 					}},
-					["g"] = {
+					["groups"] = {
 						i(205205),	-- Shadowflame Shalewing (MOUNT!)
 					},
 				}),
@@ -594,7 +594,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			n(VENDORS, {
 				n(205676, {	-- Norzko the Proud
 					["coord"] = { 52.0, 25.6, ZARALEK_CAVERN },
-					["g"] = bubbleDownFiltered({
+					["groups"] = bubbleDownFiltered({
 						["cost"] = {{ "i", 204843, 1 }},	-- Draconic Mark of Mastery
 						["bonusID"] = 7532,
 					},FILTERFUNC_itemID,{
@@ -756,10 +756,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					["description"] = "The Revival Catalyst is a system that lets you convert Zaralek Cavern's Weekly Event Zone Items (Researchers & A Worthy Ally: Niffen) & LFR Mode Non-set items from the Aberrus Raid into your class' LFR Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
 					["coord"] = { 60.6, 53.8, THALDRASZUS },
 					["modelScale"] = 4,
-					["g"] = bubbleDown({ ["modID"] = 4 }, {
+					["groups"] = bubbleDown({ ["modID"] = 4 }, {
 						cl(DEATHKNIGHT, {
 							["sym"] = SymRaidAberrus(DEATHKNIGHT, DIFFICULTY.RAID.LFR),
-							["g"] = {
+							["groups"] = {
 								i(202458),	-- Lingering Phantom's Deathlink
 								i(202456),	-- Lingering Phantom's Drape
 								i(202463),	-- Lingering Phantom's Stompers
@@ -768,7 +768,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(DEMONHUNTER, {
 							["sym"] = SymRaidAberrus(DEMONHUNTER, DIFFICULTY.RAID.LFR),
-							["g"] = {
+							["groups"] = {
 								i(202520),	-- Kinslayer's Bindings
 								i(202526),	-- Kinslayer's Gaiters
 								i(202521),	-- Kinslayer's Sash
@@ -777,7 +777,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(DRUID, {
 							["sym"] = SymRaidAberrus(DRUID, DIFFICULTY.RAID.LFR),
-							["g"] = {
+							["groups"] = {
 								i(202511),	-- Bands of the Autumn Blaze
 								i(202510),	-- Foliage of the Autumn Blaze
 								i(202512),	-- Garland of the Autumn Blaze
@@ -786,7 +786,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(EVOKER, {
 							["sym"] = SymRaidAberrus(EVOKER, DIFFICULTY.RAID.LFR),
-							["g"] = {
+							["groups"] = {
 								i(202483),	-- Crest of Obsidian Secrets
 								i(202490),	-- Greatboots of Obsidian Secrets
 								i(202485),	-- Lasso of Obsidian Secrets
@@ -795,7 +795,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(HUNTER, {
 							["sym"] = SymRaidAberrus(HUNTER, DIFFICULTY.RAID.LFR),
-							["g"] = {
+							["groups"] = {
 								i(202481),	-- Ashen Predator's Chasers
 								i(202474),	-- Ashen Predator's Cloak
 								i(202475),	-- Ashen Predator's Skinwraps
@@ -804,7 +804,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(MAGE, {
 							["sym"] = SymRaidAberrus(MAGE, DIFFICULTY.RAID.LFR),
-							["g"] = {
+							["groups"] = {
 								i(202547),	-- Underlight Conjurer's Bracelets
 								i(202546),	-- Underlight Conjurer's Cape -- TODO: Only One sourceID?!
 								i(202548),	-- Underlight Conjurer's Charmbelt
@@ -813,7 +813,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(MONK, {
 							["sym"] = SymRaidAberrus(MONK, DIFFICULTY.RAID.LFR),
-							["g"] = {
+							["groups"] = {
 								i(202501),	-- Drape of the Vermillion Forge
 								i(202503),	-- Blackbelt of the Vermillion Forge
 								i(202502),	-- Coils of the Vermillion Forge
@@ -822,7 +822,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(PALADIN, {
 							["sym"] = SymRaidAberrus(PALADIN, DIFFICULTY.RAID.LFR),
-							["g"] = {
+							["groups"] = {
 								i(202448),	-- Heartfire Sentinel's Blessed Bindings
 								i(202454),	-- Heartfire Sentinel's Greatboots
 								i(202447),	-- Heartfire Sentinel's Pelerine
@@ -831,7 +831,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(PRIEST, {
 							["sym"] = SymRaidAberrus(PRIEST, DIFFICULTY.RAID.LFR),
-							["g"] = {
+							["groups"] = {
 								i(202538),	-- Cuffs of the Furnace Seraph
 								i(202544),	-- Sabatons of the Furnace Seraph
 								i(202539),	-- Sash of the Furnace Seraph
@@ -840,7 +840,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(ROGUE, {
 							["sym"] = SymRaidAberrus(ROGUE, DIFFICULTY.RAID.LFR),
-							["g"] = {
+							["groups"] = {
 								i(202493),	-- Lurking Specter's Armwraps
 								i(202492),	-- Lurking Specter's Capelet
 								i(202494),	-- Lurking Specter's Edgeband
@@ -849,7 +849,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(SHAMAN, {
 							["sym"] = SymRaidAberrus(SHAMAN, DIFFICULTY.RAID.LFR),
-							["g"] = {
+							["groups"] = {
 								i(202467),	-- Faulds of the Cinderwolf
 								i(202465),	-- Pelisse of the Cinderwolf
 								i(202466),	-- Runebraces of the Cinderwolf
@@ -858,7 +858,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(WARLOCK, {
 							["sym"] = SymRaidAberrus(WARLOCK, DIFFICULTY.RAID.LFR),
-							["g"] = {
+							["groups"] = {
 								i(202535),	-- Sandals of the Sinister Savant
 								i(202528),	-- Shawl of the Sinister Savant
 								i(202530),	-- Skullstrap of the Sinister Savant
@@ -867,7 +867,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(WARRIOR, {
 							["sym"] = SymRaidAberrus(WARRIOR, DIFFICULTY.RAID.LFR),
-							["g"] = {
+							["groups"] = {
 								i(202440),	-- Insignia of the Onyx Crucible
 								i(202445),	-- Ironstriders of the Onyx Crucible
 								i(202438),	-- Manteau of the Onyx Crucible
@@ -972,7 +972,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				n(QUESTS, {
 					q(76083, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (N)
 						["provider"] = { "n", 201574 },	-- Wrathion
-						["g"] = {
+						["groups"] = {
 							i(205994),	-- Tome of the Earth-Warder (N)
 						},
 					}),
@@ -982,10 +982,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					["description"] = "The Revival Catalyst is a system that lets you convert Normal Mode Non-set items from the Aberrus Raid into your class' Normal Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
 					["coord"] = { 60.6, 53.8, THALDRASZUS },
 					["modelScale"] = 4,
-					["g"] = {
+					["groups"] = {
 						cl(DEATHKNIGHT, {
 							["sym"] = SymRaidAberrus(DEATHKNIGHT, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(202458),	-- Lingering Phantom's Deathlink
 								i(202456),	-- Lingering Phantom's Drape
 								i(202463),	-- Lingering Phantom's Stompers
@@ -994,7 +994,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(DEMONHUNTER, {
 							["sym"] = SymRaidAberrus(DEMONHUNTER, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(202520),	-- Kinslayer's Bindings
 								i(202526),	-- Kinslayer's Gaiters
 								i(202521),	-- Kinslayer's Sash
@@ -1003,7 +1003,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(DRUID, {
 							["sym"] = SymRaidAberrus(DRUID, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(202511),	-- Bands of the Autumn Blaze
 								i(202510),	-- Foliage of the Autumn Blaze
 								i(202512),	-- Garland of the Autumn Blaze
@@ -1012,7 +1012,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(EVOKER, {
 							["sym"] = SymRaidAberrus(EVOKER, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(202483),	-- Crest of Obsidian Secrets
 								i(202490),	-- Greatboots of Obsidian Secrets
 								i(202485),	-- Lasso of Obsidian Secrets
@@ -1021,7 +1021,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(HUNTER, {
 							["sym"] = SymRaidAberrus(HUNTER, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(202481),	-- Ashen Predator's Chasers
 								i(202474),	-- Ashen Predator's Cloak
 								i(202475),	-- Ashen Predator's Skinwraps
@@ -1030,7 +1030,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(MAGE, {
 							["sym"] = SymRaidAberrus(MAGE, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(202547),	-- Underlight Conjurer's Bracelets
 								i(202546),	-- Underlight Conjurer's Cape -- TODO: Only One sourceID?!
 								i(202548),	-- Underlight Conjurer's Charmbelt
@@ -1039,7 +1039,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(MONK, {
 							["sym"] = SymRaidAberrus(MONK, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(202501),	-- Drape of the Vermillion Forge
 								i(202503),	-- Blackbelt of the Vermillion Forge
 								i(202502),	-- Coils of the Vermillion Forge
@@ -1048,7 +1048,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(PALADIN, {
 							["sym"] = SymRaidAberrus(PALADIN, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(202448),	-- Heartfire Sentinel's Blessed Bindings
 								i(202454),	-- Heartfire Sentinel's Greatboots
 								i(202447),	-- Heartfire Sentinel's Pelerine
@@ -1057,7 +1057,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(PRIEST, {
 							["sym"] = SymRaidAberrus(PRIEST, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(202538),	-- Cuffs of the Furnace Seraph
 								i(202544),	-- Sabatons of the Furnace Seraph
 								i(202539),	-- Sash of the Furnace Seraph
@@ -1066,7 +1066,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(ROGUE, {
 							["sym"] = SymRaidAberrus(ROGUE, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(202493),	-- Lurking Specter's Armwraps
 								i(202492),	-- Lurking Specter's Capelet
 								i(202494),	-- Lurking Specter's Edgeband
@@ -1075,7 +1075,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(SHAMAN, {
 							["sym"] = SymRaidAberrus(SHAMAN, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(202467),	-- Faulds of the Cinderwolf
 								i(202465),	-- Pelisse of the Cinderwolf
 								i(202466),	-- Runebraces of the Cinderwolf
@@ -1084,7 +1084,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(WARLOCK, {
 							["sym"] = SymRaidAberrus(WARLOCK, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(202535),	-- Sandals of the Sinister Savant
 								i(202528),	-- Shawl of the Sinister Savant
 								i(202530),	-- Skullstrap of the Sinister Savant
@@ -1093,7 +1093,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(WARRIOR, {
 							["sym"] = SymRaidAberrus(WARRIOR, DIFFICULTY.RAID.NORMAL),
-							["g"] = {
+							["groups"] = {
 								i(202440),	-- Insignia of the Onyx Crucible
 								i(202445),	-- Ironstriders of the Onyx Crucible
 								i(202438),	-- Manteau of the Onyx Crucible
@@ -1143,7 +1143,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				n(QUESTS, {
 					q(76085, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (H)
 						["provider"] = { "n", 201574 },	-- Wrathion
-						["g"] = {
+						["groups"] = {
 							i(205996),	-- Tome of the Earth-Warder (H)
 						},
 					}),
@@ -1153,10 +1153,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					["description"] = "The Revival Catalyst is a system that lets you convert Heroic Mode Non-set items from the Aberrus Raid into your class' Heroic Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
 					["coord"] = { 60.6, 53.8, THALDRASZUS },
 					["modelScale"] = 4,
-					["g"] = bubbleDown({ ["modID"] = 5 }, {
+					["groups"] = bubbleDown({ ["modID"] = 5 }, {
 						cl(DEATHKNIGHT, {
 							["sym"] = SymRaidAberrus(DEATHKNIGHT, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(202458),	-- Lingering Phantom's Deathlink
 								i(202456),	-- Lingering Phantom's Drape
 								i(202463),	-- Lingering Phantom's Stompers
@@ -1165,7 +1165,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(DEMONHUNTER, {
 							["sym"] = SymRaidAberrus(DEMONHUNTER, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(202520),	-- Kinslayer's Bindings
 								i(202526),	-- Kinslayer's Gaiters
 								i(202521),	-- Kinslayer's Sash
@@ -1174,7 +1174,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(DRUID, {
 							["sym"] = SymRaidAberrus(DRUID, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(202511),	-- Bands of the Autumn Blaze
 								i(202510),	-- Foliage of the Autumn Blaze
 								i(202512),	-- Garland of the Autumn Blaze
@@ -1183,7 +1183,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(EVOKER, {
 							["sym"] = SymRaidAberrus(EVOKER, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(202483),	-- Crest of Obsidian Secrets
 								i(202490),	-- Greatboots of Obsidian Secrets
 								i(202485),	-- Lasso of Obsidian Secrets
@@ -1192,7 +1192,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(HUNTER, {
 							["sym"] = SymRaidAberrus(HUNTER, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(202481),	-- Ashen Predator's Chasers
 								i(202474),	-- Ashen Predator's Cloak
 								i(202475),	-- Ashen Predator's Skinwraps
@@ -1201,7 +1201,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(MAGE, {
 							["sym"] = SymRaidAberrus(MAGE, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(202547),	-- Underlight Conjurer's Bracelets
 								i(202546),	-- Underlight Conjurer's Cape -- TODO: Only One sourceID?!
 								i(202548),	-- Underlight Conjurer's Charmbelt
@@ -1210,7 +1210,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(MONK, {
 							["sym"] = SymRaidAberrus(MONK, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(202501),	-- Drape of the Vermillion Forge
 								i(202503),	-- Blackbelt of the Vermillion Forge
 								i(202502),	-- Coils of the Vermillion Forge
@@ -1219,7 +1219,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(PALADIN, {
 							["sym"] = SymRaidAberrus(PALADIN, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(202448),	-- Heartfire Sentinel's Blessed Bindings
 								i(202454),	-- Heartfire Sentinel's Greatboots
 								i(202447),	-- Heartfire Sentinel's Pelerine
@@ -1228,7 +1228,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(PRIEST, {
 							["sym"] = SymRaidAberrus(PRIEST, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(202538),	-- Cuffs of the Furnace Seraph
 								i(202544),	-- Sabatons of the Furnace Seraph
 								i(202539),	-- Sash of the Furnace Seraph
@@ -1237,7 +1237,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(ROGUE, {
 							["sym"] = SymRaidAberrus(ROGUE, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(202493),	-- Lurking Specter's Armwraps
 								i(202492),	-- Lurking Specter's Capelet
 								i(202494),	-- Lurking Specter's Edgeband
@@ -1246,7 +1246,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(SHAMAN, {
 							["sym"] = SymRaidAberrus(SHAMAN, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(202467),	-- Faulds of the Cinderwolf
 								i(202465),	-- Pelisse of the Cinderwolf
 								i(202466),	-- Runebraces of the Cinderwolf
@@ -1255,7 +1255,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(WARLOCK, {
 							["sym"] = SymRaidAberrus(WARLOCK, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(202535),	-- Sandals of the Sinister Savant
 								i(202528),	-- Shawl of the Sinister Savant
 								i(202530),	-- Skullstrap of the Sinister Savant
@@ -1264,7 +1264,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(WARRIOR, {
 							["sym"] = SymRaidAberrus(WARRIOR, DIFFICULTY.RAID.HEROIC),
-							["g"] = {
+							["groups"] = {
 								i(202440),	-- Insignia of the Onyx Crucible
 								i(202445),	-- Ironstriders of the Onyx Crucible
 								i(202438),	-- Manteau of the Onyx Crucible
@@ -1300,7 +1300,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				n(QUESTS, {
 					q(76086, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (M)
 						["provider"] = { "n", 201574 },	-- Wrathion
-						["g"] = {
+						["groups"] = {
 							i(205997),	-- Tome of the Earth-Warder
 						},
 					}),
@@ -1322,10 +1322,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					["description"] = "The Revival Catalyst is a system that lets you convert Mythic Mode Non-set items from the Aberrus Raid into your class' Mythic Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
 					["coord"] = { 60.6, 53.8, THALDRASZUS },
 					["modelScale"] = 4,
-					["g"] = bubbleDown({ ["modID"] = 6 }, {
+					["groups"] = bubbleDown({ ["modID"] = 6 }, {
 						cl(DEATHKNIGHT, {
 							["sym"] = SymRaidAberrus(DEATHKNIGHT, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
+							["groups"] = {
 								i(202458),	-- Lingering Phantom's Deathlink
 								i(202456),	-- Lingering Phantom's Drape
 								i(202463),	-- Lingering Phantom's Stompers
@@ -1334,7 +1334,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(DEMONHUNTER, {
 							["sym"] = SymRaidAberrus(DEMONHUNTER, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
+							["groups"] = {
 								i(202520),	-- Kinslayer's Bindings
 								i(202526),	-- Kinslayer's Gaiters
 								i(202521),	-- Kinslayer's Sash
@@ -1343,7 +1343,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(DRUID, {
 							["sym"] = SymRaidAberrus(DRUID, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
+							["groups"] = {
 								i(202511),	-- Bands of the Autumn Blaze
 								i(202510),	-- Foliage of the Autumn Blaze
 								i(202512),	-- Garland of the Autumn Blaze
@@ -1352,7 +1352,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(EVOKER, {
 							["sym"] = SymRaidAberrus(EVOKER, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
+							["groups"] = {
 								i(202483),	-- Crest of Obsidian Secrets
 								i(202490),	-- Greatboots of Obsidian Secrets
 								i(202485),	-- Lasso of Obsidian Secrets
@@ -1361,7 +1361,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(HUNTER, {
 							["sym"] = SymRaidAberrus(HUNTER, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
+							["groups"] = {
 								i(202481),	-- Ashen Predator's Chasers
 								i(202474),	-- Ashen Predator's Cloak
 								i(202475),	-- Ashen Predator's Skinwraps
@@ -1370,7 +1370,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(MAGE, {
 							["sym"] = SymRaidAberrus(MAGE, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
+							["groups"] = {
 								i(202547),	-- Underlight Conjurer's Bracelets
 								i(202546),	-- Underlight Conjurer's Cape -- TODO: Only One sourceID?!
 								i(202548),	-- Underlight Conjurer's Charmbelt
@@ -1379,7 +1379,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(MONK, {
 							["sym"] = SymRaidAberrus(MONK, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
+							["groups"] = {
 								i(202501),	-- Drape of the Vermillion Forge
 								i(202503),	-- Blackbelt of the Vermillion Forge
 								i(202502),	-- Coils of the Vermillion Forge
@@ -1388,7 +1388,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(PALADIN, {
 							["sym"] = SymRaidAberrus(PALADIN, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
+							["groups"] = {
 								i(202448),	-- Heartfire Sentinel's Blessed Bindings
 								i(202454),	-- Heartfire Sentinel's Greatboots
 								i(202447),	-- Heartfire Sentinel's Pelerine
@@ -1397,7 +1397,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(PRIEST, {
 							["sym"] = SymRaidAberrus(PRIEST, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
+							["groups"] = {
 								i(202538),	-- Cuffs of the Furnace Seraph
 								i(202544),	-- Sabatons of the Furnace Seraph
 								i(202539),	-- Sash of the Furnace Seraph
@@ -1406,7 +1406,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(ROGUE, {
 							["sym"] = SymRaidAberrus(ROGUE, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
+							["groups"] = {
 								i(202493),	-- Lurking Specter's Armwraps
 								i(202492),	-- Lurking Specter's Capelet
 								i(202494),	-- Lurking Specter's Edgeband
@@ -1415,7 +1415,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(SHAMAN, {
 							["sym"] = SymRaidAberrus(SHAMAN, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
+							["groups"] = {
 								i(202467),	-- Faulds of the Cinderwolf
 								i(202465),	-- Pelisse of the Cinderwolf
 								i(202466),	-- Runebraces of the Cinderwolf
@@ -1424,7 +1424,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(WARLOCK, {
 							["sym"] = SymRaidAberrus(WARLOCK, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
+							["groups"] = {
 								i(202535),	-- Sandals of the Sinister Savant
 								i(202528),	-- Shawl of the Sinister Savant
 								i(202530),	-- Skullstrap of the Sinister Savant
@@ -1433,7 +1433,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						}),
 						cl(WARRIOR, {
 							["sym"] = SymRaidAberrus(WARRIOR, DIFFICULTY.RAID.MYTHIC),
-							["g"] = {
+							["groups"] = {
 								i(202440),	-- Insignia of the Onyx Crucible
 								i(202445),	-- Ironstriders of the Onyx Crucible
 								i(202438),	-- Manteau of the Onyx Crucible

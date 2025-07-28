@@ -37,7 +37,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					19944,	-- Secrets of Ragefire
 					19958,	-- Raid Finder: Siege of Orgrimmar
 				}},
-				["g"] = {
+				["groups"] = {
 					i(208554),	-- Timerunner's Beacon
 				},
 			}),
@@ -52,7 +52,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					19937,	-- Heroic: Battle on the High Seas [H]
 					19935,	-- Heroic: Battle on the High Seas [A]
 				}},
-				["g"] = {
+				["groups"] = {
 					i(208487),	-- Timerunner's Ring
 				},
 			}),
@@ -206,7 +206,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		}),
 		m(481, {	-- Crypt of Forgotten Kings
 			["maps"] = { 482 },	-- Crypt of Forgotten Kings
-			["g"] = {
+			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(19928),	-- Crypt of Forgotten Kings
 					ach(19929),	-- Heroic: Crypt of Forgotten Kings
@@ -215,7 +215,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		}),
 		m(488, {	-- Dagger in the Dark
 			["maps"] = { 489 },	-- Dagger in the Dark
-			["g"] = {
+			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(19933),	-- Dagger in the Dark
 				}),
@@ -223,7 +223,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		}),
 		m(498, {	-- Domination Point / Lion's Landing
 			["maps"] = { 486 },	-- Lion's Landing
-			["g"] = {
+			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(19932, {	-- Domination Point
 						["races"] = HORDE_ONLY,
@@ -236,7 +236,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		}),
 		m(520, {	-- Dark Heart of Pandaria
 			["maps"] = { 521 },	-- Dark Heart of Pandaria
-			["g"] = {
+			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(19942),	-- Dark Heart of Pandaria
 					ach(19943),	-- Heroic: Dark Heart of Pandaria

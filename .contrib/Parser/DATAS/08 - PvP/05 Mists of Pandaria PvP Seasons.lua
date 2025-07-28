@@ -4,7 +4,7 @@
 
 root(ROOTS.PVP, {
 	pvp(expansion(EXPANSION.MOP, {
-		n(SEASON_MALEVOLENT, applyclassicphase(MOP_PHASE_LANDFALL, {
+		n(SEASON_MALEVOLENT, applyclassicphase(MOP_PHASE_ONE, {
 			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 }, }, {
 				ach(8243, {	-- Hero of the Alliance: Malevolent
 					["races"] = ALLIANCE_ONLY,
@@ -34,7 +34,7 @@ root(ROOTS.PVP, {
 							{"select", "itemID", 84434 },	-- Dreadful Gladiator's Girdle of Accuracy
 							{"select", "itemID", 84436 },	-- Dreadful Gladiator's Warboots of Cruelty
 						},
-						["g"] = {
+						["groups"] = {
 							i(84372, {	-- Dreadful Gladiator's Dreadplate Chestpiece
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -65,7 +65,7 @@ root(ROOTS.PVP, {
 							{"select", "itemID", 84391 },	-- Dreadful Gladiator's Footguards of Alacrity (Leather)
 							{"select", "itemID", 84383 },	-- Dreadful Gladiator's Footguards of Meditation (Leather)
 						},
-						["g"] = {
+						["groups"] = {
 							i(84377, {	-- Dreadful Gladiator's Dragonhide Gloves
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -126,7 +126,7 @@ root(ROOTS.PVP, {
 							{"select", "itemID", 84405 },	-- Dreadful Gladiator's Sabatons of Alacrity
 							{"select", "itemID", 84404 },	-- Dreadful Gladiator's Sabatons of Cruelty
 						},
-						["g"] = {
+						["groups"] = {
 							i(84408, {	-- Dreadful Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -154,7 +154,7 @@ root(ROOTS.PVP, {
 							{"select", "itemID", 84353 },	-- Dreadful Gladiator's Cord of Cruelty
 							{"select", "itemID", 84356 },	-- Dreadful Gladiator's Treads of Cruelty
 						},
-						["g"] = {
+						["groups"] = {
 							i(84417, {	-- Dreadful Gladiator's Silk Amice
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -182,7 +182,7 @@ root(ROOTS.PVP, {
 							{"select", "itemID", 84456 },	-- Dreadful Gladiator's Waistband of Cruelty
 							{"select", "itemID", 84459 },	-- Dreadful Gladiator's Boots of Alacrity
 						},
-						["g"] = {
+						["groups"] = {
 							i(84548, {	-- Dreadful Gladiator's Copperskin Gloves
 								["cost"] = { { "i", 137642, 2 } },	-- 3x Mark of Honor
 							}),
@@ -228,7 +228,7 @@ root(ROOTS.PVP, {
 							{"select", "itemID", 84425 },	-- Dreadful Gladiator's Greaves of Alacrity
 							{"select", "itemID", 84426 },	-- Dreadful Gladiator's Greaves of Meditation
 						},
-						["g"] = {
+						["groups"] = {
 							i(84429, {	-- Dreadful Gladiator's Ornamented Chestguard
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -271,7 +271,7 @@ root(ROOTS.PVP, {
 							{"select", "itemID", 84355 },	-- Dreadful Gladiator's Cord of Meditation
 							{"select", "itemID", 84358 },	-- Dreadful Gladiator's Treads of Meditation
 						},
-						["g"] = {
+						["groups"] = {
 							i(84440, {	-- Dreadful Gladiator's Mooncloth Gloves
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -314,7 +314,7 @@ root(ROOTS.PVP, {
 							{"select", "itemID", 84457 },	-- Dreadful Gladiator's Waistband of Accuracy
 							{"select", "itemID", 84458 },	-- Dreadful Gladiator's Boots of Cruelty
 						},
-						["g"] = {
+						["groups"] = {
 							i(84463, {	-- Dreadful Gladiator's Leather Gloves
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -345,7 +345,7 @@ root(ROOTS.PVP, {
 							{"select", "itemID", 84468 },	-- Dreadful Gladiator's Footguards of Alacrity (Mail)
 							{"select", "itemID", 84469 },	-- Dreadful Gladiator's Footguards of Meditation (Mail)
 						},
-						["g"] = {
+						["groups"] = {
 							i(84477, {	-- Dreadful Gladiator's Linked Armor
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -403,7 +403,7 @@ root(ROOTS.PVP, {
 							{"select", "itemID", 84354 },	-- Dreadful Gladiator's Cord of Accuracy
 							{"select", "itemID", 84357 },	-- Dreadful Gladiator's Treads of Alacrity
 						},
-						["g"] = {
+						["groups"] = {
 							i(84503, {	-- Dreadful Gladiator's Felweave Amice
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -431,7 +431,7 @@ root(ROOTS.PVP, {
 							{"select", "itemID", 84435 },	-- Dreadful Gladiator's Girdle of Prowess
 							{"select", "itemID", 84437 },	-- Dreadful Gladiator's Warboots of Alacrity
 						},
-						["g"] = {
+						["groups"] = {
 							i(84504, {	-- Dreadful Gladiator's Plate Chestpiece
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -652,7 +652,7 @@ root(ROOTS.PVP, {
 			}),
 			n(PVP_GLADIATOR, {
 			--	["description"] = "These items are available from Malevolent Gladiator: Season 12 class ensembles only",
-				["g"] = {
+				["groups"] = {
 					n(WEAPONS, {
 						i(144243, {	-- Arsenal: Malevolent Gladiator's Weapons
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -688,7 +688,7 @@ root(ROOTS.PVP, {
 									84894,	-- Malevolent Gladiator's Slasher
 								},
 							},
-							["g"] = {
+							["groups"] = {
 								-- S13 Tag
 								i(91482, {	-- Malevolent Gladiator's Barrier
 									["cost"] = { { "i",  137642, 2 } },	-- 2x Mark of Honor
@@ -815,7 +815,7 @@ root(ROOTS.PVP, {
 								{"select", "itemID", 91506 },	-- Malevolent Gladiator's Dreadplate Legguards
 								{"select", "itemID", 91508 },	-- Malevolent Gladiator's Dreadplate Shoulders
 							},
-							["g"] = {
+							["groups"] = {
 								i(84795),	-- Malevolent Gladiator's Dreadplate Chestpiece
 								i(84835),	-- Malevolent Gladiator's Dreadplate Gauntlets
 								i(84853),	-- Malevolent Gladiator's Dreadplate Helm
@@ -873,7 +873,7 @@ root(ROOTS.PVP, {
 								{"select", "itemID", 91548 },	-- Malevolent Gladiator's Wyrmhide Robes
 								{"select", "itemID", 91550 },	-- Malevolent Gladiator's Wyrmhide Spaulders
 							},
-							["g"] = {
+							["groups"] = {
 								i(84832),	-- Malevolent Gladiator's Dragonhide Gloves
 								i(84852),	-- Malevolent Gladiator's Dragonhide Helm
 								i(84871),	-- Malevolent Gladiator's Dragonhide Legguards
@@ -961,7 +961,7 @@ root(ROOTS.PVP, {
 								{"select", "itemID", 91581 },	-- Malevolent Gladiator's Chain Leggings
 								{"select", "itemID", 91583 },	-- Malevolent Gladiator's Chain Spaulders
 							},
-							["g"] = {
+							["groups"] = {
 								i(84796),	-- Malevolent Gladiator's Chain Armor
 								i(84841),	-- Malevolent Gladiator's Chain Gauntlets
 								i(84858),	-- Malevolent Gladiator's Chain Helm
@@ -1013,7 +1013,7 @@ root(ROOTS.PVP, {
 								{"exclude", "itemID", 97931 },	-- Malevolent Gladiator's Silk Trousers
 								{"exclude", "itemID", 97841 },	-- Malevolent Gladiator's Silk Trousers
 							},
-							["g"] = {
+							["groups"] = {
 								i(84917),	-- Malevolent Gladiator's Silk Amice
 								i(84855),	-- Malevolent Gladiator's Silk Cowl
 								i(84837),	-- Malevolent Gladiator's Silk Handguards
@@ -1060,7 +1060,7 @@ root(ROOTS.PVP, {
 								{"select", "itemID", 91606 },	-- Malevolent Gladiator's Ironskin Spaulders
 								{"select", "itemID", 91608 },	-- Malevolent Gladiator's Ironskin Tunic
 							},
-							["g"] = {
+							["groups"] = {
 								i(84836),	-- Malevolent Gladiator's Copperskin Gloves
 								i(84854),	-- Malevolent Gladiator's Copperskin Helm
 								i(84873),	-- Malevolent Gladiator's Copperskin Legguards
@@ -1133,7 +1133,7 @@ root(ROOTS.PVP, {
 								{"select", "itemID", 91626 },	-- Malevolent Gladiator's Scaled Legguards
 								{"select", "itemID", 91628 },	-- Malevolent Gladiator's Scaled Shoulders
 							},
-							["g"] = {
+							["groups"] = {
 								i(84793),	-- Malevolent Gladiator's Ornamented Chestguard
 								i(84831),	-- Malevolent Gladiator's Ornamented Gloves
 								i(84849),	-- Malevolent Gladiator's Ornamented Headcover
@@ -1205,7 +1205,7 @@ root(ROOTS.PVP, {
 								{"exclude", "itemID", 97517 },	-- Malevolent Gladiator's Satin Mantle
 								{"exclude", "itemID", 97520 },	-- Malevolent Gladiator's Satin Robe
 							},
-							["g"] = {
+							["groups"] = {
 								i(84846),	-- Malevolent Gladiator's Mooncloth Gloves
 								i(84863),	-- Malevolent Gladiator's Mooncloth Helm
 								i(84883),	-- Malevolent Gladiator's Mooncloth Leggings
@@ -1267,7 +1267,7 @@ root(ROOTS.PVP, {
 								{"select", "itemID", 91701 },	-- Malevolent Gladiator's Leather Spaulders
 								{"select", "itemID", 91693 },	-- Malevolent Gladiator's Leather Tunic
 							},
-							["g"] = {
+							["groups"] = {
 								i(84830),	-- Malevolent Gladiator's Leather Gloves
 								i(84848),	-- Malevolent Gladiator's Leather Helm
 								i(84868),	-- Malevolent Gladiator's Leather Legguards
@@ -1325,7 +1325,7 @@ root(ROOTS.PVP, {
 								{"select", "itemID", 91717 },	-- Malevolent Gladiator's Ringmail Leggings
 								{"select", "itemID", 91719 },	-- Malevolent Gladiator's Ringmail Spaulders
 							},
-							["g"] = {
+							["groups"] = {
 								i(84799),	-- Malevolent Gladiator's Linked Armor
 								i(84844),	-- Malevolent Gladiator's Linked Gauntlets
 								i(84862),	-- Malevolent Gladiator's Linked Helm
@@ -1407,7 +1407,7 @@ root(ROOTS.PVP, {
 								{"select", "itemID", 91779 },	-- Malevolent Gladiator's Felweave Raiment
 								{"select", "itemID", 91777 },	-- Malevolent Gladiator's Felweave Trousers
 							},
-							["g"] = {
+							["groups"] = {
 								i(84923),	-- Malevolent Gladiator's Felweave Amice
 								i(84859),	-- Malevolent Gladiator's Felweave Cowl
 								i(84842),	-- Malevolent Gladiator's Felweave Handguards
@@ -1449,7 +1449,7 @@ root(ROOTS.PVP, {
 								{"select", "itemID", 91789 },	-- Malevolent Gladiator's Plate Legguards
 								{"select", "itemID", 91791 },	-- Malevolent Gladiator's Plate Shoulders
 							},
-							["g"] = {
+							["groups"] = {
 								i(84797),	-- Malevolent Gladiator's Plate Chestpiece
 								i(84840),	-- Malevolent Gladiator's Plate Gauntlets
 								i(84856),	-- Malevolent Gladiator's Plate Helm
@@ -1762,7 +1762,7 @@ root(ROOTS.PVP, {
 			}),
 			n(HONOR_TYRANNICAL, {
 				["description"] = "These items are available from Malevolent Gladiator: Season 12 Vendor.",
-				["g"] = {
+				["groups"] = {
 					n(WEAPONS, {
 						i(91482, {	-- Malevolent Gladiator's Barrier
 							["cost"] = { { "i",  137642, 2 } },	-- 2x Mark of Honor
@@ -2359,7 +2359,7 @@ root(ROOTS.PVP, {
 			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					n(PVP_GLADIATOR, {
 						n(WEAPONS, {
 							i(144246, {	-- Arsenal: Tyrannical Gladiator's Weapons (A)
@@ -2390,7 +2390,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 99795 },	-- Tyrannical Gladiator's Spellblade
 									{"select", "itemID", 99824 },	-- Tyrannical Gladiator's Staff
 								},
-								["g"] = {
+								["groups"] = {
 									-- S13 Tag
 									i(99794, {	-- Tyrannical Gladiator's Barrier
 										["cost"] = { { "i",  137642, 2 } },	-- 2x Mark of Honor
@@ -2504,7 +2504,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 99809 },	-- Tyrannical Gladiator's Dreadplate Legguards
 									{"select", "itemID", 99810 },	-- Tyrannical Gladiator's Dreadplate Shoulders
 								},
-								["g"] = {
+								["groups"] = {
 									i(91147),	-- Tyrannical Gladiator's Dreadplate Chestpiece
 									i(91149),	-- Tyrannical Gladiator's Dreadplate Gauntlets
 									i(91151),	-- Tyrannical Gladiator's Dreadplate Helm
@@ -2562,7 +2562,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 99831 },	-- Tyrannical Gladiator's Wyrmhide Robes
 									{"select", "itemID", 99832 },	-- Tyrannical Gladiator's Wyrmhide Spaulders
 								},
-								["g"] = {
+								["groups"] = {
 									i(91157),	-- Tyrannical Gladiator's Dragonhide Gloves
 									i(91159),	-- Tyrannical Gladiator's Dragonhide Helm
 									i(91161),	-- Tyrannical Gladiator's Dragonhide Legguards
@@ -2650,7 +2650,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 99850 },	-- Tyrannical Gladiator's Chain Leggings
 									{"select", "itemID", 99851 },	-- Tyrannical Gladiator's Chain Spaulders
 								},
-								["g"] = {
+								["groups"] = {
 									i(91222),	-- Tyrannical Gladiator's Chain Armor
 									i(91224),	-- Tyrannical Gladiator's Chain Gauntlets
 									i(91226),	-- Tyrannical Gladiator's Chain Helm
@@ -2692,7 +2692,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 99855 },	-- Tyrannical Gladiator's Silk Robe
 									{"select", "itemID", 99854 },	-- Tyrannical Gladiator's Silk Trousers
 								},
-								["g"] = {
+								["groups"] = {
 									i(91240),	-- Tyrannical Gladiator's Silk Amice
 									i(91234),	-- Tyrannical Gladiator's Silk Cowl
 									i(91232),	-- Tyrannical Gladiator's Silk Handguards
@@ -2739,7 +2739,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 99863 },	-- Tyrannical Gladiator's Ironskin Spaulders
 									{"select", "itemID", 99864 },	-- Tyrannical Gladiator's Ironskin Tunic
 								},
-								["g"] = {
+								["groups"] = {
 									i(91257),	-- Tyrannical Gladiator's Copperskin Gloves
 									i(91259),	-- Tyrannical Gladiator's Copperskin Helm
 									i(91261),	-- Tyrannical Gladiator's Copperskin Legguards
@@ -2812,7 +2812,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 99873 },	-- Tyrannical Gladiator's Scaled Legguards
 									{"select", "itemID", 99874 },	-- Tyrannical Gladiator's Scaled Shoulders
 								},
-								["g"] = {
+								["groups"] = {
 									i(91287),	-- Tyrannical Gladiator's Ornamented Chestguard
 									i(91289),	-- Tyrannical Gladiator's Ornamented Gloves
 									i(91291),	-- Tyrannical Gladiator's Ornamented Headcover
@@ -2879,7 +2879,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 99902 },	-- Tyrannical Gladiator's Satin Mantle
 									{"select", "itemID", 99901 },	-- Tyrannical Gladiator's Satin Robe
 								},
-								["g"] = {
+								["groups"] = {
 									i(91309),	-- Tyrannical Gladiator's Mooncloth Gloves
 									i(91311),	-- Tyrannical Gladiator's Mooncloth Helm
 									i(91313),	-- Tyrannical Gladiator's Mooncloth Leggings
@@ -2941,7 +2941,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 99910 },	-- Tyrannical Gladiator's Leather Spaulders
 									{"select", "itemID", 99906 },	-- Tyrannical Gladiator's Leather Tunic
 								},
-								["g"] = {
+								["groups"] = {
 									i(91342),	-- Tyrannical Gladiator's Leather Gloves
 									i(91344),	-- Tyrannical Gladiator's Leather Helm
 									i(91346),	-- Tyrannical Gladiator's Leather Legguards
@@ -2999,7 +2999,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 99919 },	-- Tyrannical Gladiator's Ringmail Leggings
 									{"select", "itemID", 99920 },	-- Tyrannical Gladiator's Ringmail Spaulders
 								},
-								["g"] = {
+								["groups"] = {
 									i(91368),	-- Tyrannical Gladiator's Linked Armor
 									i(91370),	-- Tyrannical Gladiator's Linked Gauntlets
 									i(91372),	-- Tyrannical Gladiator's Linked Helm
@@ -3081,7 +3081,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 99955 },	-- Tyrannical Gladiator's Felweave Raiment
 									{"select", "itemID", 99954 },	-- Tyrannical Gladiator's Felweave Trousers
 								},
-								["g"] = {
+								["groups"] = {
 									i(91428),	-- Tyrannical Gladiator's Felweave Amice
 									i(91422),	-- Tyrannical Gladiator's Felweave Cowl
 									i(91420),	-- Tyrannical Gladiator's Felweave Handguards
@@ -3123,7 +3123,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 99960 },	-- Tyrannical Gladiator's Plate Legguards
 									{"select", "itemID", 99961 },	-- Tyrannical Gladiator's Plate Shoulders
 								},
-								["g"] = {
+								["groups"] = {
 									i(91430),	-- Tyrannical Gladiator's Plate Chestpiece
 									i(91432),	-- Tyrannical Gladiator's Plate Gauntlets
 									i(91434),	-- Tyrannical Gladiator's Plate Helm
@@ -3812,7 +3812,7 @@ root(ROOTS.PVP, {
 			}),
 			n(FACTION_HEADER_HORDE, {
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					n(PVP_GLADIATOR, {
 						n(WEAPONS, {
 							i(144245, {	-- Arsenal: Tyrannical Gladiator's Weapons
@@ -3843,7 +3843,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 99967 },	-- Tyrannical Gladiator's Spellblade
 									{"select", "itemID", 99968 },	-- Tyrannical Gladiator's Staff
 								},
-								["g"] = {
+								["groups"] = {
 									-- S13 Tag
 									i(100171, {	-- Tyrannical Gladiator's Barrier
 										["cost"] = { { "i",  137642, 2 } },	-- 2x Mark of Honor
@@ -3957,7 +3957,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 100035 },	-- Tyrannical Gladiator's Dreadplate Legguards
 									{"select", "itemID", 100036 },	-- Tyrannical Gladiator's Dreadplate Shoulders
 								},
-								["g"] = {
+								["groups"] = {
 									i(94392),	-- Tyrannical Gladiator's Dreadplate Chestpiece
 									i(94364),	-- Tyrannical Gladiator's Dreadplate Gauntlets
 									i(94429),	-- Tyrannical Gladiator's Dreadplate Helm
@@ -4015,7 +4015,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 99988 },	-- Tyrannical Gladiator's Wyrmhide Robes
 									{"select", "itemID", 100086 },	-- Tyrannical Gladiator's Wyrmhide Spaulders
 								},
-								["g"] = {
+								["groups"] = {
 									i(94455),	-- Tyrannical Gladiator's Dragonhide Gloves
 									i(94367),	-- Tyrannical Gladiator's Dragonhide Helm
 									i(94368),	-- Tyrannical Gladiator's Dragonhide Legguards
@@ -4103,7 +4103,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 100054 },	-- Tyrannical Gladiator's Chain Leggings
 									{"select", "itemID", 100120 },	-- Tyrannical Gladiator's Chain Spaulders
 								},
-								["g"] = {
+								["groups"] = {
 									i(94405),	-- Tyrannical Gladiator's Chain Armor
 									i(94453),	-- Tyrannical Gladiator's Chain Gauntlets
 									i(94406),	-- Tyrannical Gladiator's Chain Helm
@@ -4145,7 +4145,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 100101 },	-- Tyrannical Gladiator's Silk Robe
 									{"select", "itemID", 100032 },	-- Tyrannical Gladiator's Silk Trousers
 								},
-								["g"] = {
+								["groups"] = {
 									i(94389),	-- Tyrannical Gladiator's Silk Amice
 									i(94381),	-- Tyrannical Gladiator's Silk Cowl
 									i(94451),	-- Tyrannical Gladiator's Silk Handguards
@@ -4192,7 +4192,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 100009 },	-- Tyrannical Gladiator's Ironskin Spaulders
 									{"select", "itemID", 100106 },	-- Tyrannical Gladiator's Ironskin Tunic
 								},
-								["g"] = {
+								["groups"] = {
 									i(94340),	-- Tyrannical Gladiator's Copperskin Gloves
 									i(94341),	-- Tyrannical Gladiator's Copperskin Helm
 									i(94478),	-- Tyrannical Gladiator's Copperskin Legguards
@@ -4265,7 +4265,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 100166 },	-- Tyrannical Gladiator's Scaled Legguards
 									{"select", "itemID", 100130 },	-- Tyrannical Gladiator's Scaled Shoulders
 								},
-								["g"] = {
+								["groups"] = {
 									i(94345),	-- Tyrannical Gladiator's Ornamented Chestguard
 									i(94438),	-- Tyrannical Gladiator's Ornamented Gloves
 									i(94348),	-- Tyrannical Gladiator's Ornamented Headcover
@@ -4332,7 +4332,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 100055 },	-- Tyrannical Gladiator's Satin Mantle
 									{"select", "itemID", 99998 },	-- Tyrannical Gladiator's Satin Robe
 								},
-								["g"] = {
+								["groups"] = {
 									i(94328),	-- Tyrannical Gladiator's Mooncloth Gloves
 									i(94419),	-- Tyrannical Gladiator's Mooncloth Helm
 									i(94420),	-- Tyrannical Gladiator's Mooncloth Leggings
@@ -4394,7 +4394,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 100117 },	-- Tyrannical Gladiator's Leather Spaulders
 									{"select", "itemID", 100113 },	-- Tyrannical Gladiator's Leather Tunic
 								},
-								["g"] = {
+								["groups"] = {
 									i(94377),	-- Tyrannical Gladiator's Leather Gloves
 									i(94426),	-- Tyrannical Gladiator's Leather Helm
 									i(94446),	-- Tyrannical Gladiator's Leather Legguards
@@ -4452,7 +4452,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 100105 },	-- Tyrannical Gladiator's Ringmail Leggings
 									{"select", "itemID", 100039 },	-- Tyrannical Gladiator's Ringmail Spaulders
 								},
-								["g"] = {
+								["groups"] = {
 									i(94475),	-- Tyrannical Gladiator's Linked Armor
 									i(94458),	-- Tyrannical Gladiator's Linked Gauntlets
 									i(94430),	-- Tyrannical Gladiator's Linked Helm
@@ -4534,7 +4534,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 100045 },	-- Tyrannical Gladiator's Felweave Raiment
 									{"select", "itemID", 100141 },	-- Tyrannical Gladiator's Felweave Trousers
 								},
-								["g"] = {
+								["groups"] = {
 									i(94398),	-- Tyrannical Gladiator's Felweave Amice
 									i(94442),	-- Tyrannical Gladiator's Felweave Cowl
 									i(94441),	-- Tyrannical Gladiator's Felweave Handguards
@@ -4576,7 +4576,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 100118 },	-- Tyrannical Gladiator's Plate Legguards
 									{"select", "itemID", 100071 },	-- Tyrannical Gladiator's Plate Shoulders
 								},
-								["g"] = {
+								["groups"] = {
 									i(94444),	-- Tyrannical Gladiator's Plate Chestpiece
 									i(94331),	-- Tyrannical Gladiator's Plate Gauntlets
 									i(94332),	-- Tyrannical Gladiator's Plate Helm
@@ -5480,7 +5480,7 @@ root(ROOTS.PVP, {
 				}),
 				ach(8654, {	-- Hero of the Alliance: Grievous
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						elitepvp(i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
 							["timeline"] = { ADDED_7_3_2 },
 						})),
@@ -5488,7 +5488,7 @@ root(ROOTS.PVP, {
 				}),
 				ach(8657, {	-- Hero of the Horde: Grievous
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						elitepvp(i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
 							["timeline"] = { ADDED_7_3_2 },
 						})),
@@ -5499,7 +5499,7 @@ root(ROOTS.PVP, {
 			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					n(PVP_GLADIATOR, {
 						n(WEAPONS, {
 							i(144252, {	-- Arsenal: Grievous Gladiator's Weapons (A)
@@ -5630,7 +5630,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 103182 },	-- Grievous Gladiator's Dreadplate Legguards
 									{"select", "itemID", 103183 },	-- Grievous Gladiator's Dreadplate Shoulders
 								},
-								["g"] = {
+								["groups"] = {
 									i(100243),	-- Grievous Gladiator's Dreadplate Chestpiece
 									i(100245),	-- Grievous Gladiator's Dreadplate Gauntlets
 									i(100247),	-- Grievous Gladiator's Dreadplate Helm
@@ -5688,7 +5688,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 103204 },	-- Grievous Gladiator's Wyrmhide Robes
 									{"select", "itemID", 103205 },	-- Grievous Gladiator's Wyrmhide Spaulders
 								},
-								["g"] = {
+								["groups"] = {
 									i(100253),	-- Grievous Gladiator's Dragonhide Gloves
 									i(100255),	-- Grievous Gladiator's Dragonhide Helm
 									i(100257),	-- Grievous Gladiator's Dragonhide Legguards
@@ -5776,7 +5776,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 103222 },	-- Grievous Gladiator's Chain Leggings
 									{"select", "itemID", 103223 },	-- Grievous Gladiator's Chain Spaulders
 								},
-								["g"] = {
+								["groups"] = {
 									i(100318),	-- Grievous Gladiator's Chain Armor
 									i(100320),	-- Grievous Gladiator's Chain Gauntlets
 									i(100322),	-- Grievous Gladiator's Chain Helm
@@ -5818,7 +5818,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 103227 },	-- Grievous Gladiator's Silk Robe
 									{"select", "itemID", 103226 },	-- Grievous Gladiator's Silk Trousers
 								},
-								["g"] = {
+								["groups"] = {
 									i(100336),	-- Grievous Gladiator's Silk Amice
 									i(100330),	-- Grievous Gladiator's Silk Cowl
 									i(100328),	-- Grievous Gladiator's Silk Handguards
@@ -5865,7 +5865,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 103235 },	-- Grievous Gladiator's Ironskin Spaulders
 									{"select", "itemID", 103236 },	-- Grievous Gladiator's Ironskin Tunic
 								},
-								["g"] = {
+								["groups"] = {
 									i(100353),	-- Grievous Gladiator's Copperskin Gloves
 									i(100355),	-- Grievous Gladiator's Copperskin Helm
 									i(100357),	-- Grievous Gladiator's Copperskin Legguards
@@ -5938,7 +5938,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 103245 },	-- Grievous Gladiator's Scaled Legguards
 									{"select", "itemID", 103246 },	-- Grievous Gladiator's Scaled Shoulders
 								},
-								["g"] = {
+								["groups"] = {
 									i(100383),	-- Grievous Gladiator's Ornamented Chestguard
 									i(100385),	-- Grievous Gladiator's Ornamented Gloves
 									i(100387),	-- Grievous Gladiator's Ornamented Headcover
@@ -6005,7 +6005,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 103274 },	-- Grievous Gladiator's Satin Mantle
 									{"select", "itemID", 103273 },	-- Grievous Gladiator's Satin Robe
 								},
-								["g"] = {
+								["groups"] = {
 									i(100405),	-- Grievous Gladiator's Mooncloth Gloves
 									i(100407),	-- Grievous Gladiator's Mooncloth Helm
 									i(100409),	-- Grievous Gladiator's Mooncloth Leggings
@@ -6068,7 +6068,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 103282 },	-- Grievous Gladiator's Leather Spaulders
 									{"select", "itemID", 103278 },	-- Grievous Gladiator's Leather Tunic
 								},
-								["g"] = {
+								["groups"] = {
 									i(100432),	-- Grievous Gladiator's Leather Gloves
 									i(100434),	-- Grievous Gladiator's Leather Helm
 									i(100436),	-- Grievous Gladiator's Leather Legguards
@@ -6126,7 +6126,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 103291 },	-- Grievous Gladiator's Ringmail Leggings
 									{"select", "itemID", 103292 },	-- Grievous Gladiator's Ringmail Spaulders
 								},
-								["g"] = {
+								["groups"] = {
 									i(100458),	-- Grievous Gladiator's Linked Armor
 									i(100460),	-- Grievous Gladiator's Linked Gauntlets
 									i(100462),	-- Grievous Gladiator's Linked Helm
@@ -6208,7 +6208,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 103326 },	-- Grievous Gladiator's Felweave Raiment
 									{"select", "itemID", 103325 },	-- Grievous Gladiator's Felweave Trousers
 								},
-								["g"] = {
+								["groups"] = {
 									i(100518),	-- Grievous Gladiator's Felweave Amice
 									i(100512),	-- Grievous Gladiator's Felweave Cowl
 									i(100510),	-- Grievous Gladiator's Felweave Handguards
@@ -6250,7 +6250,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 103331 },	-- Grievous Gladiator's Plate Legguards
 									{"select", "itemID", 103332 },	-- Grievous Gladiator's Plate Shoulders
 								},
-								["g"] = {
+								["groups"] = {
 									i(100520),	-- Grievous Gladiator's Plate Chestpiece
 									i(100522),	-- Grievous Gladiator's Plate Gauntlets
 									i(100524),	-- Grievous Gladiator's Plate Helm
@@ -6954,7 +6954,7 @@ root(ROOTS.PVP, {
 			}),
 			n(FACTION_HEADER_HORDE, {
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					n(PVP_GLADIATOR, {
 						n(WEAPONS, {
 							i(144251, {	-- Arsenal: Grievous Gladiator's Weapons (H)
@@ -7084,7 +7084,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 102848 },	-- Grievous Gladiator's Dreadplate Legguards
 									{"select", "itemID", 102849 },	-- Grievous Gladiator's Dreadplate Shoulders
 								},
-								["g"] = {
+								["groups"] = {
 									i(100622),	-- Grievous Gladiator's Dreadplate Chestpiece
 									i(100594),	-- Grievous Gladiator's Dreadplate Gauntlets
 									i(100659),	-- Grievous Gladiator's Dreadplate Helm
@@ -7142,7 +7142,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 102811 },	-- Grievous Gladiator's Wyrmhide Robes
 									{"select", "itemID", 102897 },	-- Grievous Gladiator's Wyrmhide Spaulders
 								},
-								["g"] = {
+								["groups"] = {
 									i(100685),	-- Grievous Gladiator's Dragonhide Gloves
 									i(100597),	-- Grievous Gladiator's Dragonhide Helm
 									i(100598),	-- Grievous Gladiator's Dragonhide Legguards
@@ -7230,7 +7230,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 102867 },	-- Grievous Gladiator's Chain Leggings
 									{"select", "itemID", 102931 },	-- Grievous Gladiator's Chain Spaulders
 								},
-								["g"] = {
+								["groups"] = {
 									i(100635),	-- Grievous Gladiator's Chain Armor
 									i(100683),	-- Grievous Gladiator's Chain Gauntlets
 									i(100636),	-- Grievous Gladiator's Chain Helm
@@ -7272,7 +7272,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 102912 },	-- Grievous Gladiator's Silk Robe
 									{"select", "itemID", 102845 },	-- Grievous Gladiator's Silk Trousers
 								},
-								["g"] = {
+								["groups"] = {
 									i(100619),	-- Grievous Gladiator's Silk Amice
 									i(100611),	-- Grievous Gladiator's Silk Cowl
 									i(100681),	-- Grievous Gladiator's Silk Handguards
@@ -7319,7 +7319,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 102823 },	-- Grievous Gladiator's Ironskin Spaulders
 									{"select", "itemID", 102917 },	-- Grievous Gladiator's Ironskin Tunic
 								},
-								["g"] = {
+								["groups"] = {
 									i(100570),	-- Grievous Gladiator's Copperskin Gloves
 									i(100571),	-- Grievous Gladiator's Copperskin Helm
 									i(100708),	-- Grievous Gladiator's Copperskin Legguards
@@ -7392,7 +7392,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 102977 },	-- Grievous Gladiator's Scaled Legguards
 									{"select", "itemID", 102941 },	-- Grievous Gladiator's Scaled Shoulders
 								},
-								["g"] = {
+								["groups"] = {
 									i(100575),	-- Grievous Gladiator's Ornamented Chestguard
 									i(100668),	-- Grievous Gladiator's Ornamented Gloves
 									i(100578),	-- Grievous Gladiator's Ornamented Headcover
@@ -7459,7 +7459,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 102868 },	-- Grievous Gladiator's Satin Mantle
 									{"select", "itemID", 102819 },	-- Grievous Gladiator's Satin Robe
 								},
-								["g"] = {
+								["groups"] = {
 									i(100558),	-- Grievous Gladiator's Mooncloth Gloves
 									i(100649),	-- Grievous Gladiator's Mooncloth Helm
 									i(100650),	-- Grievous Gladiator's Mooncloth Leggings
@@ -7521,7 +7521,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 102928 },	-- Grievous Gladiator's Leather Spaulders
 									{"select", "itemID", 102924 },	-- Grievous Gladiator's Leather Tunic
 								},
-								["g"] = {
+								["groups"] = {
 									i(100607),	-- Grievous Gladiator's Leather Gloves
 									i(100656),	-- Grievous Gladiator's Leather Helm
 									i(100676),	-- Grievous Gladiator's Leather Legguards
@@ -7579,7 +7579,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 102916 },	-- Grievous Gladiator's Ringmail Leggings
 									{"select", "itemID", 102852 },	-- Grievous Gladiator's Ringmail Spaulders
 								},
-								["g"] = {
+								["groups"] = {
 									i(100705),	-- Grievous Gladiator's Linked Armor
 									i(100688),	-- Grievous Gladiator's Linked Gauntlets
 									i(100660),	-- Grievous Gladiator's Linked Helm
@@ -7661,7 +7661,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 102858 },	-- Grievous Gladiator's Felweave Raiment
 									{"select", "itemID", 102952 },	-- Grievous Gladiator's Felweave Trousers
 								},
-								["g"] = {
+								["groups"] = {
 									i(100628),	-- Grievous Gladiator's Felweave Amice
 									i(100672),	-- Grievous Gladiator's Felweave Cowl
 									i(100671),	-- Grievous Gladiator's Felweave Handguards
@@ -7703,7 +7703,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 102929 },	-- Grievous Gladiator's Plate Legguards
 									{"select", "itemID", 102882 },	-- Grievous Gladiator's Plate Shoulders
 								},
-								["g"] = {
+								["groups"] = {
 									i(100674),	-- Grievous Gladiator's Plate Chestpiece
 									i(100561),	-- Grievous Gladiator's Plate Gauntlets
 									i(100562),	-- Grievous Gladiator's Plate Helm
@@ -8607,7 +8607,7 @@ root(ROOTS.PVP, {
 				}),
 				ach(8658, {	-- Hero of the Alliance: Prideful
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						elitepvp(i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
 							["timeline"] = { ADDED_7_3_2 },
 						})),
@@ -8615,7 +8615,7 @@ root(ROOTS.PVP, {
 				}),
 				ach(8659, {	-- Hero of the Horde: Prideful
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						elitepvp(i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
 							["timeline"] = { ADDED_7_3_2 },
 						})),
@@ -8639,7 +8639,7 @@ root(ROOTS.PVP, {
 			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					n(PVP_GLADIATOR, {
 						n(WEAPONS, {
 							i(144248, {	-- Arsenal: Prideful Gladiator's Weapons (A)
@@ -8647,7 +8647,7 @@ root(ROOTS.PVP, {
 								["sym"] = {
 									{"sub", "pvp_weapons_ensemble", EXPANSION.MOP, SEASON_PRIDEFUL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
 								},
-								["g"] = {
+								["groups"] = {
 									i(102785, {	-- Prideful Gladiator's Barrier
 										["cost"] = { { "i",  137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -8738,7 +8738,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 102640 },	-- Prideful Gladiator's Girdle of Accuracy
 									{"select", "itemID", 102745 },	-- Prideful Gladiator's Warboots of Alacrity
 								},
-								["g"] = {
+								["groups"] = {
 									i(102676, {	-- Prideful Gladiator's Dreadplate Chestpiece
 										["cost"] = { { "i",  137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -8769,7 +8769,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 102631 },	-- Prideful Gladiator's Footguards of Alacrity (Leather)
 									{"select", "itemID", 102760 },	-- Prideful Gladiator's Footguards of Meditation (Leather)
 								},
-								["g"] = {
+								["groups"] = {
 									i(102739, {	-- Prideful Gladiator's Dragonhide Gloves
 										["cost"] = { { "i",  137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -8830,7 +8830,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 102646 },	-- Prideful Gladiator's Sabatons of Alacrity
 									{"select", "itemID", 102729 },	-- Prideful Gladiator's Sabatons of Cruelty
 								},
-								["g"] = {
+								["groups"] = {
 									i(102689, {	-- Prideful Gladiator's Chain Armor
 										["cost"] = { { "i",  137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -8858,7 +8858,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 102684 },	-- Prideful Gladiator's Cord of Cruelty
 									{"select", "itemID", 102686 },	-- Prideful Gladiator's Treads of Cruelty
 								},
-								["g"] = {
+								["groups"] = {
 									i(102673, {	-- Prideful Gladiator's Silk Amice
 										["cost"] = { { "i",  137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -8886,7 +8886,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 102647 },	-- Prideful Gladiator's Waistband of Cruelty
 									{"select", "itemID", 102716 },	-- Prideful Gladiator's Boots of Alacrity
 								},
-								["g"] = {
+								["groups"] = {
 									i(102627, {	-- Prideful Gladiator's Copperskin Gloves
 										["cost"] = { { "i",  137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -8932,7 +8932,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 102638 },	-- Prideful Gladiator's Greaves of Alacrity
 									{"select", "itemID", 102639 },	-- Prideful Gladiator's Greaves of Meditation
 								},
-								["g"] = {
+								["groups"] = {
 									i(102632, {	-- Prideful Gladiator's Ornamented Chestguard
 										["cost"] = { { "i",  137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -8975,7 +8975,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 102709 },	-- Prideful Gladiator's Cord of Meditation
 									{"select", "itemID", 102752 },	-- Prideful Gladiator's Treads of Meditation
 								},
-								["g"] = {
+								["groups"] = {
 									i(102615, {	-- Prideful Gladiator's Mooncloth Gloves
 										["cost"] = { { "i",  137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -9018,7 +9018,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 102708 },	-- Prideful Gladiator's Waistband of Accuracy
 									{"select", "itemID", 102660 },	-- Prideful Gladiator's Boots of Cruelty
 								},
-								["g"] = {
+								["groups"] = {
 									i(102727, {	-- Prideful Gladiator's Leather Gloves
 										["cost"] = { { "i",  137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -9049,7 +9049,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 102664 },	-- Prideful Gladiator's Footguards of Alacrity (Mail)
 									{"select", "itemID", 102623 },	-- Prideful Gladiator's Footguards of Meditation (Mail)
 								},
-									["g"] = {
+									["groups"] = {
 									i(102759, {	-- Prideful Gladiator's Linked Armor
 										["cost"] = { { "i",  137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -9107,7 +9107,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 102662 },	-- Prideful Gladiator's Cord of Accuracy
 									{"select", "itemID", 102620 },	-- Prideful Gladiator's Treads of Alacrity
 								},
-								["g"] = {
+								["groups"] = {
 									i(102682, {	-- Prideful Gladiator's Felweave Amice
 										["cost"] = { { "i",  137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -9135,7 +9135,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 102724 },	-- Prideful Gladiator's Girdle of Prowess
 									{"select", "itemID", 102698 },	-- Prideful Gladiator's Warboots of Cruelty
 								},
-								["g"] = {
+								["groups"] = {
 									i(102728, {	-- Prideful Gladiator's Plate Chestpiece
 										["cost"] = { { "i",  137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -9364,7 +9364,7 @@ root(ROOTS.PVP, {
 			}),
 			n(FACTION_HEADER_HORDE, {
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					n(PVP_GLADIATOR, {
 						n(WEAPONS, {
 							i(144250, {	-- Arsenal: Prideful Gladiator's Weapons (A)
@@ -9372,7 +9372,7 @@ root(ROOTS.PVP, {
 								["sym"] = {
 									{"sub", "pvp_weapons_ensemble", EXPANSION.MOP, SEASON_PRIDEFUL, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
 								},
-								["g"] = {
+								["groups"] = {
 									i(103364, {	-- Prideful Gladiator's Barrier
 										["cost"] = { { "i",  137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -9463,7 +9463,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 103455 },	-- Prideful Gladiator's Girdle of Accuracy
 									{"select", "itemID", 103458 },	-- Prideful Gladiator's Warboots of Alacrity
 								},
-								["g"] = {
+								["groups"] = {
 									i(103376, {	-- Prideful Gladiator's Dreadplate Chestpiece
 										["cost"] = { { "i",  137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -9494,7 +9494,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 103396 },	-- Prideful Gladiator's Footguards of Alacrity (Leather)
 									{"select", "itemID", 103387 },	-- Prideful Gladiator's Footguards of Meditation (Leather)
 								},
-								["g"] = {
+								["groups"] = {
 									i(103381, {	-- Prideful Gladiator's Dragonhide Gloves
 										["cost"] = { { "i",  137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -9555,7 +9555,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 103413 },	-- Prideful Gladiator's Sabatons of Alacrity
 									{"select", "itemID", 103412 },	-- Prideful Gladiator's Sabatons of Cruelty
 								},
-								["g"] = {
+								["groups"] = {
 									i(103416, {	-- Prideful Gladiator's Chain Armor
 										["cost"] = { { "i",  137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -9583,7 +9583,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 103351 },	-- Prideful Gladiator's Cord of Cruelty
 									{"select", "itemID", 103354 },	-- Prideful Gladiator's Treads of Cruelty
 								},
-								["g"] = {
+								["groups"] = {
 									i(103425, {	-- Prideful Gladiator's Silk Amice
 										["cost"] = { { "i",  137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -9611,7 +9611,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 103426 },	-- Prideful Gladiator's Waistband of Cruelty
 									{"select", "itemID", 103427 },	-- Prideful Gladiator's Boots of Alacrity
 								},
-								["g"] = {
+								["groups"] = {
 									i(103434, {	-- Prideful Gladiator's Copperskin Gloves
 										["cost"] = { { "i",  137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -9657,7 +9657,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 103446 },	-- Prideful Gladiator's Greaves of Alacrity
 									{"select", "itemID", 103447 },	-- Prideful Gladiator's Greaves of Meditation
 								},
-								["g"] = {
+								["groups"] = {
 									i(103450, {	-- Prideful Gladiator's Ornamented Chestguard
 										["cost"] = { { "i",  137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -9701,7 +9701,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 147362 },	-- Prideful Gladiator's Cord of Prowess
 									{"select", "itemID", 103356 },	-- Prideful Gladiator's Treads of Meditation
 								},
-								["g"] = {
+								["groups"] = {
 									i(103462, {	-- Prideful Gladiator's Mooncloth Gloves
 										["cost"] = { { "i",  137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -9744,7 +9744,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 103472 },	-- Prideful Gladiator's Waistband of Accuracy
 									{"select", "itemID", 103473 },	-- Prideful Gladiator's Boots of Cruelty
 								},
-								["g"] = {
+								["groups"] = {
 									i(103476, {	-- Prideful Gladiator's Leather Gloves
 										["cost"] = { { "i",  137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -9775,7 +9775,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 103481 },	-- Prideful Gladiator's Footguards of Alacrity (Mail)
 									{"select", "itemID", 103482 },	-- Prideful Gladiator's Footguards of Meditation (Mail)
 								},
-								["g"] = {
+								["groups"] = {
 									i(103490, {	-- Prideful Gladiator's Linked Armor
 										["cost"] = { { "i",  137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -9833,7 +9833,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 103352 },	-- Prideful Gladiator's Cord of Accuracy
 									{"select", "itemID", 103355 },	-- Prideful Gladiator's Treads of Alacrity
 								},
-								["g"] = {
+								["groups"] = {
 									i(103524, {	-- Prideful Gladiator's Felweave Amice
 										["cost"] = { { "i",  137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -9861,7 +9861,7 @@ root(ROOTS.PVP, {
 									{"select", "itemID", 103456 },	-- Prideful Gladiator's Girdle of Prowess
 									{"select", "itemID", 103457 },	-- Prideful Gladiator's Warboots of Cruelty
 								},
-								["g"] = {
+								["groups"] = {
 									i(103525, {	-- Prideful Gladiator's Plate Chestpiece
 										["cost"] = { { "i",  137642, 3 } },	-- 3x Mark of Honor
 									}),

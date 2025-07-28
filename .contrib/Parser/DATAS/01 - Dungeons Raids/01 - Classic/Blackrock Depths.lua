@@ -67,9 +67,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "i", 227730 },	-- Thorium Brotherhood Contract
 					},
 					["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
-					["requireSkill"] = BLACKSMITHING,
-					["cost"] = { { "i", 17203, 1 } },	-- Sulfuron Ingot
 					["timeline"] = { ADDED_1_15_3 },
+					["cost"] = { { "i", 17203, 1 } },	-- Sulfuron Ingot
+					["requireSkill"] = BLACKSMITHING,
 					["lvl"] = 60,
 					["groups"] = {
 						i(227727),	-- Plans: Sulfuron Hammer (RECIPE!)
@@ -82,11 +82,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "i", 18628 },	-- Thorium Brotherhood Contract
 					},
 					["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
-					["requireSkill"] = BLACKSMITHING,
-					["cost"] = { { "i", 17203, 1 } },	-- Sulfuron Ingot
 					-- #if SEASON_OF_DISCOVERY
 					["timeline"] = { REMOVED_1_15_3 },
 					-- #endif
+					["cost"] = { { "i", 17203, 1 } },	-- Sulfuron Ingot
+					["requireSkill"] = BLACKSMITHING,
 					["lvl"] = lvlsquish(60, 60, 20),
 					["groups"] = {
 						i(18592, {	-- Plans: Sulfuron Hammer (RECIPE!)
@@ -123,12 +123,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(4022, {	-- A Taste of Flame (1/2) (A)
 					["qg"] = 9459,	-- Cyrus Therepentous
-					["sourceQuest"] = 3481,	-- Trinkets...
 					["altQuests"] = { 4023 },	-- A Taste of Flame
+					["sourceQuest"] = 3481,	-- Trinkets...
+					["coord"] = { 95.09, 31.56, BURNING_STEPPES },
 					-- #if BEFORE 4.0.3
 					["description"] = "If you completed the quest 'Trinkets...' in Searing Gorge, you can complete this quest immediately without having to fight the elite dragon by bringing the Black Dragonflight Molt with you.",
 					-- #endif
-					["coord"] = { 95.09, 31.56, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 10575, 1 } },	-- Black Dragonflight Molt
 					["lvl"] = 52,
@@ -228,8 +228,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(3906, {	-- Disharmony of Flame
 					["qg"] = 9084,	-- Thunderheart <Kargath Expeditionary Force>
 					["coord"] = { 3.3, 48.3, BADLANDS },
-					["maps"] = { BLACKROCK_MOUNTAIN },
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { BLACKROCK_MOUNTAIN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
@@ -268,10 +268,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(4182, {	-- Dragonkin Menace
 					["qg"] = 9562,	-- Helendis Riverhorn
+					["coord"] = { 85.8, 69.0, BURNING_STEPPES },
 					-- #if BEFORE 3.0.2
 					["description"] = "You should finish this full quest chain up to Marshal Windsor before joining a Blackrock Depths group.",
 					-- #endif
-					["coord"] = { 85.8, 69.0, BURNING_STEPPES },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
@@ -1248,10 +1248,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "i", 16662 },	-- Fragment of the Dragon's Eye
 					},
 					["sourceQuest"] = 6403,	-- The Great Masquerade
+					["coord"] = { 78.2, 18.1, STORMWIND_CITY },
 					-- #if BEFORE 3.0.2
 					["description"] = "Go to Haleh in Winterspring. Use the blue rune on the ground inside the cave to reach her. Don't bother going to Dustwallow Marsh.",
 					-- #endif
-					["coord"] = { 78.2, 18.1, STORMWIND_CITY },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
@@ -1280,10 +1280,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(6403, {	-- The Great Masquerade
 					["qg"] = 12580,	-- Reginald Windsor
 					["sourceQuest"] = 6402,	-- Stormwind Rendezvous
+					["coord"] = { 64.7, 76.8, STORMWIND_CITY },
 					-- #if BEFORE 3.0.2
 					["description"] = "This quest can be solo'd. Do NOT touch anything and let Bolvar take care of the dragons. They do heavy AOE, you will likely die unless you're in a raid group of 20+.",
 					-- #endif
-					["coord"] = { 64.7, 76.8, STORMWIND_CITY },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
@@ -1382,8 +1382,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(4201, {	-- The Love Potion
 					["qg"] = 9500,	-- Mistress Nagmara
-					["maps"] = { AZSHARA, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { AZSHARA, UNGORO_CRATER },
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/4 Gromsblood
@@ -1590,12 +1590,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(4083, {	-- The Spectral Chalice
 					["provider"] = { "o", 164869 },	-- Spectral Chalice
 					["description"] = "If you are a miner with 230 skill, speak with Gloom'rel to have him summon the Spectral Chalice.\n\nAfter you deposit the required items, speak to Gloom'rel again to learn how to smelt Dark Iron Ore.",
-					["requireSkill"] = MINING,
 					["cost"] = {
 						{ "i", 3577, 20 },	-- 20x Gold Bar
 						{ "i", 7910, 2 },	-- 2x Star Ruby
 						{ "i", 6037, 10 },	-- 10x Truesilver Bar
 					},
+					["requireSkill"] = MINING,
 					["cr"] = 9037,	-- Gloom'rel
 					["lvl"] = 40,
 					["groups"] = {
@@ -2183,6 +2183,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{"n", 164949 },	-- Patrice Lancaster
 						-- #endif
 					},
+					["sourceQuest"] = 28285,	-- Meet with High Priestess Laurena / Meet with Patrice Lancaster [SL+]
 					["coords"] = {
 						-- #if ANYCLASSIC
 						{ 49.6, 44.8, STORMWIND_CITY },
@@ -2190,7 +2191,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 78.9, 69.8, STORMWIND_CITY },
 						-- #endif
 					},
-					["sourceQuest"] = 28285,	-- Meet with High Priestess Laurena / Meet with Patrice Lancaster [SL+]
 					["timeline"] = { ADDED_4_0_3 },
 					["classes"] = { PRIEST },
 					["races"] = ALLIANCE_ONLY,

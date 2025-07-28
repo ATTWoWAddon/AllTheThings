@@ -14,7 +14,7 @@ local RADIANT_EMBLEM = 238920;
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(HALLOWFALL, {
 		n(NIGHTFALL, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
-			["g"] = {
+			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(41999),	-- Fighter of the Nightman
 					ach(41996),	-- I'm Doing My Part
@@ -38,14 +38,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["provider"] = { "n", 234774 },	-- Mylton Wyldbraun
 						["coord"] = { 28.3, 56.1, HALLOWFALL },
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(239546),	-- Confiscated Cultist's Bag
 						},
 				}, {
 					q(88945),	-- Radiant Incursion: Rak-Zakaz
 					q(88916),	-- Radiant Incursion: Sureki's End
 					q(88711, {	-- Radiant Incursion: Toxins and Pheromones
-						["g"] = {
+						["groups"] = {
 							o(529289, {	-- Spore Sample
 								i(240215),	-- Fungal Sample (QI!)
 							}),
@@ -57,14 +57,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(87480),	-- Sureki Incursion: The Eastern Assault
 					--
 					q(89295, {	-- The Flame Burns Eternal
-						["g"] = {
+						["groups"] = {
 							i(239004, {	-- Radiant Service Satchel
 								i(RADIANT_EMBLEM),
 							}),
 						},
 					}),
 					q(91173, {	-- The Flame Burns Eternal
-						["g"] = {
+						["groups"] = {
 							i(239004, {	-- Radiant Service Satchel
 								i(RADIANT_EMBLEM),
 							}),
@@ -293,7 +293,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					-- Special Single List Item:
 					container(239546, {	-- Confiscated Cultist's Bag
 						["description"] = "Rewarded by completing Radiant Incursion or Sureki Incursion Dailies.",
-						["g"] = {
+						["groups"] = {
 							i(239563),	-- Shadowbound Leash (MOUNT!)
 							i(241126),	-- Sovereign Sureki Emblem (COSMETIC!)
 							filter(CLOTH, {
@@ -551,7 +551,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				n(VENDORS, {
 					n(243253, {	-- Layne Pontelle
 						["coord"] = { 28.3, 56.1, HALLOWFALL },
-						["g"] = sharedData({ ["cost"] = {{"c", RESONANCE_CRYSTALS, 500}} }, {
+						["groups"] = sharedData({ ["cost"] = {{"c", RESONANCE_CRYSTALS, 500}} }, {
 							i(241278),	-- Stalwart's Waistcoat
 							i(241269),	-- Aeroknight's Undercoat
 							i(241268),	-- Sentry's Padded Doublet
@@ -560,7 +560,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}),
 					n(240979, {	-- Vesper Churnmoat
 						["coord"] = { 28.2, 56.0, HALLOWFALL },
-						["g"] = bubbleDownFiltered({ ["cost"] = {{"i", RADIANT_EMBLEM, 1}} },FILTERFUNC_itemID,{
+						["groups"] = bubbleDownFiltered({ ["cost"] = {{"i", RADIANT_EMBLEM, 1}} },FILTERFUNC_itemID,{
 							filter(FINGER_F, {
 								i(237471),	-- Band of the Voidmancer
 								i(237472),	-- Seal of Cosmic Embrace
@@ -595,7 +595,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}),
 					n(227797, {	-- Raen Dawncavalyr
 						["coord"] = { 28.3, 56.0, HALLOWFALL },
-						["g"] = bubbleDownFiltered({ ["cost"] = {{"i", RADIANT_EMBLEM, 1}} },FILTERFUNC_itemID,{
+						["groups"] = bubbleDownFiltered({ ["cost"] = {{"i", RADIANT_EMBLEM, 1}} },FILTERFUNC_itemID,{
 							filter(CLOAKS, {
 								i(237394),	-- Arathi Abbot's Cloak
 								i(237403),	-- Arathi Zealot's Cape

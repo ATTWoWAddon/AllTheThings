@@ -1125,7 +1125,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						revampAch(2952),	-- With Open Arms (25 player)
 						ach(3259, {	-- Realm First! Celestial Defender
 							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
-							["g"] = {
+							["groups"] = {
 								title(125, {	-- <Name> the Celestial Defender
 									["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
 								}),
@@ -1133,7 +1133,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						}),
 						ach(3117, {	-- Realm First! Death's Demise
 							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
-							["g"] = {
+							["groups"] = {
 								title(124, {	-- <Name>, Death's Demise
 								["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
 								}),
@@ -1256,7 +1256,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						}),
 						ach(3259, {	-- Realm First! Celestial Defender
 							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
-							["g"] = {
+							["groups"] = {
 								title(125, {	-- <Name> the Celestial Defender
 									["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
 								}),
@@ -1264,7 +1264,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						}),
 						ach(3117, {	-- Realm First! Death's Demise
 							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
-							["g"] = {
+							["groups"] = {
 								title(124, {	-- <Name>, Death's Demise
 								["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
 								}),

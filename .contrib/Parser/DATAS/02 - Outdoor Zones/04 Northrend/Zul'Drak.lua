@@ -134,14 +134,14 @@ root(ROOTS.Zones, {
 				}),
 				n(QUESTS, {
 					q(12912, {	-- A Great Storm Approaches
-						["coord"] = { 19.7, 56.3, ZULDRAK },
 						["qg"] = 29647,	-- Gymer
 						["sourceQuest"] = 12894,	-- Crusader Forward Camp
+						["coord"] = { 19.7, 56.3, ZULDRAK },
 					}),
 					q(12555, {	-- A Tangled Skein
-						["coord"] = { 58.2, 72.0, ZULDRAK },
 						["qg"] = 28284,	-- Specialist Cogwheel
 						["sourceQuest"] = 12583,	-- Crashed Sprayer
+						["coord"] = { 58.2, 72.0, ZULDRAK },
 						["groups"] = {
 							i(39806),	-- Blade of Diligence
 							i(39822),	-- Knife of the Dutybound
@@ -152,9 +152,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12647, {	-- An End to the Suffering
-						["coord"] = { 53.4, 39.0, ZULDRAK },
 						["qg"] = 28561,	-- Spirit of Rhunok
 						["sourceQuest"] = 12646,	-- My Prophet, My Enemy
+						["coord"] = { 53.4, 39.0, ZULDRAK },
 						["groups"] = {
 							i(39789),	-- Bloodbinder's Shoulderpads
 							i(39858),	-- Drape of the Bloodletter
@@ -167,9 +167,9 @@ root(ROOTS.Zones, {
 						["altQuests"] = { 12633 },	-- Darkness Calling
 					}),
 					q(12504, {	-- Argent Crusade, We Are Leaving!
-						["coord"] = { 40.4, 48.1, ZULDRAK },
 						["qg"] = 28056,	-- Sergeant Stackhammer
 						["sourceQuest"] = 12505,	-- New Orders for Sergeant Stackhammer
+						["coord"] = { 40.4, 48.1, ZULDRAK },
 						["groups"] = {
 							i(39771),	-- Embattled Legwraps
 							i(39834),	-- Embattled Jerkin
@@ -178,20 +178,20 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12653, {	-- Back to Har'koa
-						["coord"] = { 53.4, 39.0, ZULDRAK },
 						["qg"] = 28561,	-- Spirit of Rhunok
 						["sourceQuest"] = 12647,	-- An End to the Suffering
+						["coord"] = { 53.4, 39.0, ZULDRAK },
 					}),
 					q(12713, {	-- Betrayal
-						["coords"] = {
-							{ 28.4, 44.9, ZULDRAK },
-							{ 14.0, 73.8, ZULDRAK },
-							{ 27.6, 53.8, ZULDRAK },
-						},
 						["qg"] = 28518,	-- Stefan Vadu
 						["sourceQuests"] = {
 							12652,	-- Feedin' Da Goolz
 							12676,	-- Sabotage
+						},
+						["coords"] = {
+							{ 28.4, 44.9, ZULDRAK },
+							{ 14.0, 73.8, ZULDRAK },
+							{ 27.6, 53.8, ZULDRAK },
 						},
 						["description"] = "WARNING: Once you complete this quest, the quest |cFFFFD700Feedin' Da Goolz|r will become unavailable forever!",
 						["groups"] = {
@@ -201,37 +201,37 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12567, {	-- Blessing of Zim'Abwa
-						["coord"] = { 36.7, 72.6, ZULDRAK },
 						["provider"] = { "o", 190535 },	-- Zim'Abwa
-						["repeatable"] = true,
 						["sourceQuest"] = 12565,	-- The Blessing of Zim'Abwa
+						["coord"] = { 36.7, 72.6, ZULDRAK },
+						["repeatable"] = true,
 					}),
 					q(12656, {	-- Blessing of Zim'Rhuk
-						["coord"] = { 59.2, 44.7, ZULDRAK },
 						["provider"] = { "o", 190657 },	-- Zim'Rhuk
-						["repeatable"] = true,
 						["sourceQuest"] = 12655,	-- The Blessing of Zim'Rhuk
+						["coord"] = { 59.2, 44.7, ZULDRAK },
+						["repeatable"] = true,
 					}),
 					q(12618, {	-- Blessing of Zim'Torga
-						["coord"] = { 59.4, 57.2, ZULDRAK },
 						["provider"] = { "o", 190602 },	-- Zim'Torga
-						["repeatable"] = true,
 						["sourceQuest"] = 12615,	-- The Blessing of Zim'Torga
+						["coord"] = { 59.4, 57.2, ZULDRAK },
+						["repeatable"] = true,
 					}),
 					q(12684, {	-- Blood of a Dead God
-						["coord"] = { 63.6, 70.3, ZULDRAK },
 						["qg"] = 28401,	-- Har'koa
 						["sourceQuest"] = 12675,	-- One Last Thing
+						["coord"] = { 63.6, 70.3, ZULDRAK },
 					}),
 					q(12627, {	-- Breaking Through Jin'Alai
-						["coord"] = { 59.5, 58.0, ZULDRAK },
 						["qg"] = 28479,	-- Witch Doctor Khufu
 						["sourceQuest"] = 12623,	-- To the Witch Doctor
+						["coord"] = { 59.5, 58.0, ZULDRAK },
 					}),
 					q(12662, {	-- Bringing Down Heb'Jin
-						["coord"] = { 59.3, 56.4, ZULDRAK },
 						["qg"] = 28480,	-- Element-Tamer Dagoda
 						["sourceQuest"] = 12640,	-- Sealing the Rifts
+						["coord"] = { 59.3, 56.4, ZULDRAK },
 						["groups"] = {
 							i(39777),	-- Band of Misty Mojo
 							i(39836),	-- Supple Mantle of the Bloodletter
@@ -240,9 +240,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12632, {	-- But First My Offspring
-						["coord"] = { 63.6, 70.3, ZULDRAK },
 						["qg"] = 28401,	-- Har'koa
 						["sourceQuest"] = 12628,	-- To Speak With Har'koa
+						["coord"] = { 63.6, 70.3, ZULDRAK },
 						["groups"] = {
 							i(39787),	-- Soothsayer's Handwraps
 							i(39856),	-- Bloodletter's Pants
@@ -251,9 +251,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12610, {	-- Clipping Their Wings
-						["coord"] = { 35.6, 52.2, ZULDRAK },
 						["qg"] = 28045,	-- Captain Arnath
 						["sourceQuest"] = 12799,	-- Siphoning the Spirits
+						["coord"] = { 35.6, 52.2, ZULDRAK },
 						["groups"] = {
 							i(39804),	-- Braided Bat Sinew
 							i(39867),	-- Bat Fur Mitts
@@ -262,26 +262,26 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12638, {	-- Close Call
-						["coord"] = { 14.0, 73.8, ZULDRAK },
 						["qg"] = 28518,	-- Stefan Vadu
 						["altQuests"] = { 12637 },	-- Near Miss
 						["sourceQuest"] = 12633,	-- Darkness Calling
+						["coord"] = { 14.0, 73.8, ZULDRAK },
 					}),
 					q(12606, {	-- Cocooned!
-						["coord"] = { 58.0, 72.4, ZULDRAK },
 						["qg"] = 28044,	-- Captain Rupert
 						["sourceQuest"] = 12598,	-- Throwing Down
+						["coord"] = { 58.0, 72.4, ZULDRAK },
 					}),
 					q(12604, {	-- Congratulations!
-						-- TODO: based on speed completion of "Troll Patrol" daily. Determine condition and add as description
 						["qg"] = 28039,	-- Commander Kunz
 						["coord"] = { 40.2, 66.6, ZULDRAK },
 						["maxReputation"] = { FACTION_ARGENT_CRUSADE, EXALTED },	-- Argent Crusade, Exalted.
-						["isDaily"] = true,
 						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 1106.8 },	-- Argent Crusade, Exalted
 						-- #endif
+						["isDaily"] = true,
+						-- TODO: based on speed completion of "Troll Patrol" daily. Determine condition and add as description
 						["groups"] = {
 							i(43556, {	-- Patroller's Pack
 								["description"] = "Small chance to contain listed items.",
@@ -295,9 +295,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12730, {	-- Convocation at Zol'Heb
-						["coord"] = { 60.2, 57.7, ZULDRAK },
 						["qg"] = 28401,	-- Har'koa
 						["sourceQuest"] = 12729,	-- The Gods Have Spoken
+						["coord"] = { 60.2, 57.7, ZULDRAK },
 						["groups"] = {
 							i(41890),	-- Robe of the Conquered Prophet
 							i(41891),	-- Intricate Zandalari Tunic
@@ -306,61 +306,61 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12583, {	-- Crashed Sprayer
-						["coord"] = { 58.2, 72.0, ZULDRAK },
 						["qg"] = 28284,	-- Specialist Cogwheel
 						["sourceQuest"] = 12553,	-- Skimmer Spinnerets
+						["coord"] = { 58.2, 72.0, ZULDRAK },
 					}),
 					q(12599, {	-- Creature Comforts
-						["coord"] = { 48.1, 63.8, ZULDRAK },
 						["qg"] = 28043,	-- Captain Grondel
 						["sourceQuest"] = 12740,	-- Parachutes for the Argent Crusade
+						["coord"] = { 48.1, 63.8, ZULDRAK },
 						["description"] = "Must be on |cFFFFD700Pa'Troll|r to see this quest.",
 					}),
 					q(12894, {	-- Crusader Forward Camp
-						["coord"] = { 32.1, 75.1, ZULDRAK },
 						["qg"] = 29687,	-- Crusader Lord Lantinga
 						["sourceQuest"] = 12883,	-- Orders From Drakuru
+						["coord"] = { 32.1, 75.1, ZULDRAK },
 					}),
 					q(12664, {	-- Dark Horizon
-						["coord"] = { 27.0, 46.1, ZULDRAK },
 						["qg"] = 28503,	-- Overlord Drakuru
 						["altQuests"] = { 12663 },	-- Reunited
-						["description"] = "Must be on |cFFFFD700Infiltrating Voltarus|r to see this quest.",
 						["sourceQuest"] = 12648,	-- Dressing Down
+						["coord"] = { 27.0, 46.1, ZULDRAK },
+						["description"] = "Must be on |cFFFFD700Infiltrating Voltarus|r to see this quest.",
 					}),
 					q(12633, {	-- Darkness Calling
 						["provider"] = { "i", 38673 },	-- Writhing Choker
 						["altQuests"] = { 12631 },	-- An Invitation, of Sorts...
 					}),
 					q(12552, {	-- Death to the Necromagi
-						["coord"] = { 58.0, 72.0, ZULDRAK },
 						["qg"] = 28283,	-- Sergeant Moonshard
 						["sourceQuest"] = 12598,	-- Throwing Down
+						["coord"] = { 58.0, 72.0, ZULDRAK },
 					}),
 					q(12503, {	-- Defend the Stand -- aa
-						["coord"] = { 39.4, 66.9, ZULDRAK },
 						["qg"] = 28059,	-- Commander Falstaav
 						["sourceQuest"] = 12795,	-- Taking a Stand
+						["coord"] = { 39.4, 66.9, ZULDRAK },
 					}),
 					q(12710, {	-- Disclosure
-						["coord"] = { 27.0, 46.1, ZULDRAK },
 						["qg"] = 28503,	-- Overlord Drakuru
 						["sourceQuest"] = 12690,	-- Fuel for the Fire
+						["coord"] = { 27.0, 46.1, ZULDRAK },
 					}),
 					q(12648, {	-- Dressing Down
-						["coord"] = { 14.0, 73.8, ZULDRAK },
 						["qg"] = 28518,	-- Stefan Vadu
 						["altQuests"] = { 12649 },	-- Suit Up!
 						["sourceQuest"] = 12629,	-- You Can Run, But You Can't Hide
+						["coord"] = { 14.0, 73.8, ZULDRAK },
 					}),
 					q(13556, {	-- Eggs for Dubra'Jin -- aa
-						["coord"] = { 69.9, 20.9, ZULDRAK },
 						["qg"] = 33025,	-- Ha'wana
+						["coord"] = { 69.9, 20.9, ZULDRAK },
 					}),
 					q(12708, {	-- Enchanted Tiki Warriors
-						["coord"] = { 59.3, 56.4, ZULDRAK },
 						["qg"] = 28480,	-- Element-Tamer Dagoda
 						["sourceQuest"] = 12685,	-- You Reap What You Sow
+						["coord"] = { 59.3, 56.4, ZULDRAK },
 					}),
 					q(12652, {	-- Feedin' Da Goolz
 						["qg"] = 28589,	-- Gristlegut
@@ -377,43 +377,43 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12792, {	-- First Things First
-						["coord"] = { 40.2, 66.6, ZULDRAK },
 						["qg"] = 28039,	-- Commander Kunz
+						["coord"] = { 40.2, 66.6, ZULDRAK },
 					}),
 					q(12668, {	-- Foundation for Revenge
-						["coord"] = { 75.3, 58.6, ZULDRAK },
 						["qg"] = 28030,	-- Quetz'lun's Spirit
 						["sourceQuest"] = 12672,	-- Setting the Stage
+						["coord"] = { 75.3, 58.6, ZULDRAK },
 					}),
 					q(12690, {	-- Fuel for the Fire
-						["coord"] = { 27.0, 46.1, ZULDRAK },
 						["qg"] = 28503,	-- Overlord Drakuru
-						["description"] = "Must be on |cFFFFD700Sabotage|r to see this quest.",
 						["sourceQuest"] = 12677,	-- Hazardous Materials
+						["coord"] = { 27.0, 46.1, ZULDRAK },
+						["description"] = "Must be on |cFFFFD700Sabotage|r to see this quest.",
 					}),
 					q(12527, {	-- Gluttonous Lurkers
-						["coord"] = { 41.3, 65.1, ZULDRAK },
 						["qg"] = 28204,	-- Apprentice Pestlepot
 						["sourceQuest"] = 12510,	-- Precious Elemental Fluids
+						["coord"] = { 41.3, 65.1, ZULDRAK },
 					}),
 					q(12914, {	-- Gymer's Salvation
-						["coord"] = { 25.2, 63.8, ZULDRAK },
 						["qg"] = 29688,	-- Engineer Reed
 						["sourceQuest"] = 12912,	-- A Great Storm Approaches
+						["coord"] = { 25.2, 63.8, ZULDRAK },
 					}),
 					q(12677, {	-- Hazardous Materials
+						["qg"] = 28518,	-- Stefan Vadu
+						["sourceQuest"] = 12669,	-- So Far, So Bad
 						["coords"] = {
 							{ 28.4, 44.9, ZULDRAK },
 							{ 14.0, 73.8, ZULDRAK },
 							{ 27.6, 53.8, ZULDRAK },
 						},
-						["qg"] = 28518,	-- Stefan Vadu
-						["sourceQuest"] = 12669,	-- So Far, So Bad
 					}),
 					q(12674, {	-- Hell Hath a Fury
-						["coord"] = { 75.3, 58.6, ZULDRAK },
 						["qg"] = 28030,	-- Quetz'lun's Spirit
 						["sourceQuest"] = 12668,	-- Foundation for Revenge
+						["coord"] = { 75.3, 58.6, ZULDRAK },
 						["groups"] = {
 							i(39791),	-- Soothsayer's Wristwraps
 							i(39859),	-- Bloodletter's Skullcap
@@ -427,9 +427,9 @@ root(ROOTS.Zones, {
 						["lvl"] = 64,
 					})),
 					q(12709, {	-- Hexed Caches
-						["coord"] = { 59.9, 57.9, ZULDRAK },
 						["qg"] = 28527,	-- Chronicler To'kini
 						["sourceQuest"] = 12685,	-- You Reap What You Sow
+						["coord"] = { 59.9, 57.9, ZULDRAK },
 						["groups"] = {
 							i(39797),	-- Bloodbinder's Hood
 							i(39863),	-- Supple Vest of the Bloodbinder
@@ -438,9 +438,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12665, {	-- I Sense a Disturbance
-						["coord"] = { 63.6, 70.3, ZULDRAK },
 						["qg"] = 28401,	-- Har'koa
 						["sourceQuest"] = 12653,	-- Back to Har'koa
+						["coord"] = { 63.6, 70.3, ZULDRAK },
 					}),
 					q(12902, {	-- In Search Of Answers
 						["qg"] = 29687,	-- Crusader Lord Lantinga
@@ -453,12 +453,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 32.1, 75.7, ZULDRAK },
 					}),
 					q(12661, {	-- Infiltrating Voltarus
-						["coord"] = { 14.0, 73.7, ZULDRAK },
 						["qg"] = 28518,	-- Stefan Vadu
 						["sourceQuests"] = {
 							12648,	-- Dressing Down
 							12649,	-- Suit Up!
 						},
+						["coord"] = { 14.0, 73.7, ZULDRAK },
 						["groups"] = {
 							i(39809),	-- Sandals of Spying
 							i(39869),	-- Double-Agent's Wristwraps
@@ -468,10 +468,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12673, {	-- It Rolls Downhill
-						["coord"] = { 27.0, 46.1, ZULDRAK },
 						["qg"] = 28503,	-- Overlord Drakuru
-						["description"] = "Must be on |cFFFFD700So Far, So Bad|r to see this quest.",
 						["sourceQuest"] = 12661,	-- Infiltrating Voltarus
+						["coord"] = { 27.0, 46.1, ZULDRAK },
+						["description"] = "Must be on |cFFFFD700So Far, So Bad|r to see this quest.",
 					}),
 					q(13099, {	-- Just Checkin'
 						["qg"] = 28527,	-- Chronicler To'kini
@@ -484,19 +484,19 @@ root(ROOTS.Zones, {
 						["timeline"] = { ADDED_4_3_0 },
 					}),
 					q(12630, {	-- Kickin' Nass and Takin' Manes
-						["coord"] = { 14.0, 73.8, ZULDRAK },
 						["qg"] = 28518,	-- Stefan Vadu
 						["sourceQuest"] = 12884,	-- The Ebon Watch
+						["coord"] = { 14.0, 73.8, ZULDRAK },
 					}),
 					q(12557, {	-- Lab Work
-						["coord"] = { 35.0, 52.1, ZULDRAK },
 						["qg"] = 28205,	-- Alchemist Finklestein
 						["sourceQuest"] = 12740,	-- Parachutes for the Argent Crusade
+						["coord"] = { 35.0, 52.1, ZULDRAK },
 						["description"] = "Must be on |cFFFFD700Pa'Troll|r to see this quest.",
 					}),
 					q(12512, {	-- Leave No One Behind -- aa
-						["coord"] = { 58.6, 72.4, ZULDRAK },
 						["qg"] = 28125,	-- Dr. Rogers
+						["coord"] = { 58.6, 72.4, ZULDRAK },
 						["groups"] = {
 							i(39807),	-- Rescuer's Cloak
 							i(39868),	-- Ravager's Skullcap
@@ -505,19 +505,19 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12904, {	-- Light Won't Grant Me Vengeance
-						["coord"] = { 17.6, 57.5, ZULDRAK },
 						["qg"] = 29455,	-- Gerk
 						["sourceQuest"] = 12894,	-- Crusader Forward Camp
+						["coord"] = { 17.6, 57.5, ZULDRAK },
 					}),
 					q(12901, {	-- Making Something Out Of Nothing
-						["coord"] = { 25.2, 63.8, ZULDRAK },
 						["qg"] = 29688,	-- Engineer Reed
 						["sourceQuest"] = 12894,	-- Crusader Forward Camp
+						["coord"] = { 25.2, 63.8, ZULDRAK },
 					}),
 					q(12554, {	-- Malas the Corrupter
-						["coord"] = { 58.0, 72.0, ZULDRAK },
 						["qg"] = 28283,	-- Sergeant Moonshard
 						["sourceQuest"] = 12552,	-- Death to the Necromagi
+						["coord"] = { 58.0, 72.0, ZULDRAK },
 						["groups"] = {
 							i(43160),	-- Leggings of Fastidious Decapitation
 							i(43161),	-- Legguards of Solemn Revenge
@@ -526,50 +526,50 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12508, {	-- Mopping Up
-						["coord"] = { 40.3, 48.2, ZULDRAK },
 						["qg"] = 28099,	-- Corporal Maga
 						["sourceQuest"] = 12505,	-- New Orders for Sergeant Stackhammer
+						["coord"] = { 40.3, 48.2, ZULDRAK },
 					}),
 					q(12514, {	-- Mushroom Mixer
-						["coord"] = { 40.5, 65.6, ZULDRAK },
 						["qg"] = 28062,	-- Hexxer Ubungo
 						["sourceQuest"] = 12510,	-- Precious Elemental Fluids
+						["coord"] = { 40.5, 65.6, ZULDRAK },
 					}),
 					q(12646, {	-- My Prophet, My Enemy
-						["coord"] = { 53.4, 39.0, ZULDRAK },
 						["qg"] = 28561,	-- Spirit of Rhunok
 						["sourceQuest"] = 12642,	-- Spirit of Rhunok
+						["coord"] = { 53.4, 39.0, ZULDRAK },
 					}),
 					q(12637, {	-- Near Miss
-						["coord"] = { 14.0, 73.8, ZULDRAK },
-						["altQuests"] = { 12638 },	-- Close Call
 						["qg"] = 28518,	-- Stefan Vadu
+						["altQuests"] = { 12638 },	-- Close Call
 						["sourceQuest"] = 12631,	-- An Invitation, of Sorts...
+						["coord"] = { 14.0, 73.8, ZULDRAK },
 					}),
 					q(12505, {	-- New Orders for Sergeant Stackhammer
-						["coord"] = { 40.2, 66.6, ZULDRAK },
 						["qg"] = 28039,	-- Commander Kunz
 						["sourceQuest"] = 12740,	-- Parachutes for the Argent Crusade
+						["coord"] = { 40.2, 66.6, ZULDRAK },
 					}),
 					q(12675, {	-- One Last Thing
-						["coord"] = { 75.3, 58.6, ZULDRAK },
 						["qg"] = 28030,	-- Quetz'lun's Spirit
 						["sourceQuest"] = 12674,	-- Hell Hath a Fury
+						["coord"] = { 75.3, 58.6, ZULDRAK },
 					}),
 					q(12883, {	-- Orders From Drakuru
-						["coord"] = { 34.9, 83.9, ZULDRAK },
 						["provider"] = { "o", 191766 },	-- Orders From Drakuru
 						["sourceQuest"] = 12902,	-- In Search Of Answers
+						["coord"] = { 34.9, 83.9, ZULDRAK },
 					}),
 					q(12916, {	-- Our Only Hope
-						["coord"] = { 25.2, 63.8, ZULDRAK },
 						["qg"] = 29688,	-- Engineer Reed
 						["sourceQuest"] = 12914,	-- Gymer's Salvation
+						["coord"] = { 25.2, 63.8, ZULDRAK },
 					}),
 					q(12596, {	-- Pa'Troll
-						["coord"] = { 40.2, 66.6, ZULDRAK },
 						["qg"] = 28039,	-- Commander Kunz
 						["sourceQuest"] = 12740,	-- Parachutes for the Argent Crusade
+						["coord"] = { 40.2, 66.6, ZULDRAK },
 						["groups"] = {
 							i(39800),	-- Pantaloons of the Dutybound
 							i(39864),	-- Belt of Service
@@ -579,8 +579,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12740, {	-- Parachutes for the Argent Crusade -- aa
-						["coord"] = { 39.4, 66.9, ZULDRAK },
 						["qg"] = 28059,	-- Commander Falstaav
+						["coord"] = { 39.4, 66.9, ZULDRAK },
 						["groups"] = {
 							i(39779),	-- Crusader's Ripcord
 							i(39840),	-- Rescuer's Ripcord
@@ -590,14 +590,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12650, {	-- Plundering Their Own
-						["coord"] = { 59.9, 57.9, ZULDRAK },
 						["qg"] = 28527,	-- Chronicler To'kini
 						["sourceQuest"] = 12635,	-- Relics of the Snow Leopard Goddess
+						["coord"] = { 59.9, 57.9, ZULDRAK },
 					}),
 					q(12510, {	-- Precious Elemental Fluids
-						["coord"] = { 40.5, 65.6, ZULDRAK },
 						["qg"] = 28062,	-- Hexxer Ubungo
 						["sourceQuest"] = 12507,	-- Strange Mojo
+						["coord"] = { 40.5, 65.6, ZULDRAK },
 						["groups"] = {
 							i(39781),	-- Bloodbinder's Raiment
 							i(39842),	-- Bloodletter's Boots
@@ -606,14 +606,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12666, {	-- Preparations for the Underworld
-						["coord"] = { 63.6, 70.3, ZULDRAK },
 						["qg"] = 28401,	-- Har'koa
 						["sourceQuest"] = 12665,	-- I Sense a Disturbance
+						["coord"] = { 63.6, 70.3, ZULDRAK },
 					}),
 					q(12584, {	-- Pure Evil
-						["coord"] = { 58.0, 72.4, ZULDRAK },
 						["qg"] = 28044,	-- Captain Rupert
 						["sourceQuest"] = 12552,	-- Death to the Necromagi
+						["coord"] = { 58.0, 72.4, ZULDRAK },
 						["groups"] = {
 							i(39773),	-- Soothsayer's Shoulderpads
 							i(39837),	-- Gloves of Swift Death
@@ -622,9 +622,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12721, {	-- Rampage
-						["coord"] = { 60.2, 57.7, ZULDRAK },
 						["qg"] = 28401,	-- Har'koa
 						["sourceQuest"] = 12712,	-- The Key of Warlord Zol'Maz
+						["coord"] = { 60.2, 57.7, ZULDRAK },
 						["groups"] = {
 							i(39794),	-- Bloodbinder's Gloves
 							i(39862),	-- Supple Vest of the Bloodletter
@@ -633,25 +633,25 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12635, {	-- Relics of the Snow Leopard Goddess
-						["coord"] = { 59.9, 57.9, ZULDRAK },
 						["qg"] = 28527,	-- Chronicler To'kini
 						["sourceQuest"] = 12627,	-- Breaking Through Jin'Alai
+						["coord"] = { 59.9, 57.9, ZULDRAK },
 					}),
 					q(12663, {	-- Reunited
-						["coord"] = { 27.0, 46.1, ZULDRAK },
 						["qg"] = 28503,	-- Overlord Drakuru
 						["altQuests"] = { 12664 },	-- Dark Horizon
-						["description"] = "Must be on |cFFFFD700Infiltrating Voltarus|r to see this quest.",
 						["sourceQuest"] = 12649,	-- Suit Up!
+						["coord"] = { 27.0, 46.1, ZULDRAK },
+						["description"] = "Must be on |cFFFFD700Infiltrating Voltarus|r to see this quest.",
 					}),
 					q(12676, {	-- Sabotage
+						["qg"] = 28518,	-- Stefan Vadu
+						["sourceQuest"] = 12677,	-- Hazardous Materials
 						["coords"] = {
 							{ 28.4, 44.9, ZULDRAK },
 							{ 14.0, 73.8, ZULDRAK },
 							{ 27.6, 53.8, ZULDRAK },
 						},
-						["qg"] = 28518,	-- Stefan Vadu
-						["sourceQuest"] = 12677,	-- Hazardous Materials
 						["groups"] = {
 							i(39811),	-- Badge of the Infiltrator
 							i(39873),	-- Skins of Subterfuge
@@ -660,42 +660,42 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12659, {	-- Scalps!
-						["coord"] = { 59.1, 56.2, ZULDRAK },
 						["qg"] = 28484,	-- Scalper Ahunae
 						["sourceQuests"] = {
 							12640,	-- Sealing the Rifts
 							12639,	-- The Frozen Earth
 						},
+						["coord"] = { 59.1, 56.2, ZULDRAK },
 					}),
 					q(12640, {	-- Sealing the Rifts
-						["coord"] = { 59.1, 56.2, ZULDRAK },
 						["qg"] = 28484,	-- Scalper Ahunae
 						["sourceQuest"] = 12622,	-- The Leaders at Jin'Alai
+						["coord"] = { 59.1, 56.2, ZULDRAK },
 					}),
 					q(12667, {	-- Seek the Wind Serpent Goddess
-						["coord"] = { 63.6, 70.3, ZULDRAK },
 						["qg"] = 28401,	-- Har'koa
 						["sourceQuest"] = 12666,	-- Preparations for the Underworld
+						["coord"] = { 63.6, 70.3, ZULDRAK },
 					}),
 					q(12672, {	-- Setting the Stage
-						["coord"] = { 75.3, 58.6, ZULDRAK },
 						["qg"] = 28030,	-- Quetz'lun's Spirit
 						["sourceQuest"] = 12667,	-- Seek the Wind Serpent Goddess
+						["coord"] = { 75.3, 58.6, ZULDRAK },
 					}),
 					q(12643, {	-- Silver Lining
-						["altQuests"] = { 12629 },	-- You Can Run, But You Can't Hide (Available if you DO NOT complete "Cleansing Drak'Tharon")
-						["coord"] = { 14.0, 73.7, ZULDRAK },
 						["qg"] = 28518,	-- Stefan Vadu
+						["altQuests"] = { 12629 },	-- You Can Run, But You Can't Hide (Available if you DO NOT complete "Cleansing Drak'Tharon")
 						["sourceQuest"] = 12638,	-- Close Call
+						["coord"] = { 14.0, 73.7, ZULDRAK },
 					}),
 					q(12799, {	-- Siphoning the Spirits -- aa
-						["coord"] = { 35.6, 52.2, ZULDRAK },
 						["qg"] = 28045,	-- Captain Arnath
+						["coord"] = { 35.6, 52.2, ZULDRAK },
 					}),
 					q(12553, {	-- Skimmer Spinnerets
-						["coord"] = { 58.2, 72.0, ZULDRAK },
 						["qg"] = 28284,	-- Specialist Cogwheel
 						["sourceQuest"] = 12598,	-- Throwing Down
+						["coord"] = { 58.2, 72.0, ZULDRAK },
 					}),
 					q(12793, {	-- Smoke on the Horizon -- completes along with 12763, 12770, 12789, 12792 (probably a breadcrumb)
 					}),
@@ -715,20 +715,20 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12597, {	-- Something for the Pain
-						["coord"] = { 48.7, 78.8, ZULDRAK },
 						["qg"] = 28042,	-- Captain Brandon
 						["sourceQuest"] = 12740,	-- Parachutes for the Argent Crusade
+						["coord"] = { 48.7, 78.8, ZULDRAK },
 						["description"] = "Must be on |cFFFFD700Pa'Troll|r to see this quest.",
 					}),
 					q(12642, {	-- Spirit of Rhunok
-						["coord"] = { 63.6, 70.3, ZULDRAK },
 						["qg"] = 28401,	-- Har'koa
 						["sourceQuest"] = 12632,	-- But First My Offspring
+						["coord"] = { 63.6, 70.3, ZULDRAK },
 					}),
 					q(12609, {	-- Stocking the Shelves
-						["coord"] = { 35.6, 52.2, ZULDRAK },
 						["qg"] = 28045,	-- Captain Arnath
 						["sourceQuest"] = 12799,	-- Siphoning the Spirits
+						["coord"] = { 35.6, 52.2, ZULDRAK },
 						["groups"] = {
 							i(39865),	-- Knuckle of Victory
 							i(39852),	-- Victorious Spellblade
@@ -738,34 +738,34 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12507, {	-- Strange Mojo
+						["provider"] = { "i", 38321 },	-- Strange Mojo
 						["crs"] = {
 							28036,	-- Champion of Sseratus
 							28034,	-- Drakkari Snake Handler
 							28035,	-- Priest of Sseratus
 						},
-						["provider"] = { "i", 38321 },	-- Strange Mojo
 					}),
 					q(12649, {	-- Suit Up!
-						["coord"] = { 14.0, 73.7, ZULDRAK },
 						["qg"] = 28518,	-- Stefan Vadu
 						["altQuests"] = { 12648 },	-- Dressing Down
 						["sourceQuest"] = 12643,	-- Silver Lining
+						["coord"] = { 14.0, 73.7, ZULDRAK },
 					}),
 					q(13549, {	-- Tails Up
-						["coord"] = { 59.9, 57.9, ZULDRAK },
 						["qg"] = 28527,	-- Chronicler To'kini
 						["sourceQuest"] = 12635,	-- Relics of the Snow Leopard Goddess
+						["coord"] = { 59.9, 57.9, ZULDRAK },
 					}),
 					q(12795, {	-- Taking a Stand
-						["coord"] = { 14.2, 74.0, ZULDRAK },
 						["qg"] = 28532,	-- Bloodrose Datura
 						["sourceQuest"] = 12630,	-- Kickin' Nass and Takin' Manes
+						["coord"] = { 14.2, 74.0, ZULDRAK },
 						["isBreadcrumb"] = true,
 					}),
 					q(12903, {	-- That's What Friends Are For...
-						["coord"] = { 25.2, 63.9, ZULDRAK },
 						["qg"] = 29689,	-- Crusader MacKellar
 						["sourceQuest"] = 12894,	-- Crusader Forward Camp
+						["coord"] = { 25.2, 63.9, ZULDRAK },
 						["groups"] = {
 							i(39886),	-- Greenhealer's Gauntlets
 							i(39816),	-- Medic's Hood
@@ -774,49 +774,49 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12934, {	-- The Amphitheater of Anguish: From Beyond!
-						["coord"] = { 48.4, 56.3, ZULDRAK },
 						["qg"] = 30007,	-- Gurgthock
 						["sourceQuest"] = 12933,	-- The Amphitheater of Anguish: Magnataur!
+						["coord"] = { 48.4, 56.3, ZULDRAK },
 					}),
 					q(12936, {	-- The Amphitheater of Anguish: Korrak the Bloodrager!
-						["coord"] = { 48.4, 56.3, ZULDRAK },
 						["qg"] = 30007,	-- Gurgthock
 						["sourceQuest"] = 12935,	-- The Amphitheater of Anguish: Tuskarrmageddon!
+						["coord"] = { 48.4, 56.3, ZULDRAK },
 					}),
 					q(12933, {	-- The Amphitheater of Anguish: Magnataur!
-						["coord"] = { 48.4, 56.3, ZULDRAK },
 						["qg"] = 30007,	-- Gurgthock
 						["sourceQuest"] = 12932,	-- The Amphitheater of Anguish: Yggdras!
+						["coord"] = { 48.4, 56.3, ZULDRAK },
 					}),
 					q(12935, {	-- The Amphitheater of Anguish: Tuskarrmageddon!
-						["coord"] = { 48.4, 56.3, ZULDRAK },
 						["qg"] = 30007,	-- Gurgthock
 						["sourceQuest"] = 12934,	-- The Amphitheater of Anguish: From Beyond!
+						["coord"] = { 48.4, 56.3, ZULDRAK },
 					}),
 					q(12932, {	-- The Amphitheater of Anguish: Yggdras!
-						["coord"] = { 48.4, 56.3, ZULDRAK },
 						["qg"] = 30007,	-- Gurgthock
 						["sourceQuest"] = 12974,	-- The Champion's Call
+						["coord"] = { 48.4, 56.3, ZULDRAK },
 					}),
 					q(12954, {	-- The Amphitheater of Anguish: Yggdras!
-						["coord"] = { 48.4, 56.3, ZULDRAK },
 						["qg"] = 30007,	-- Gurgthock
 						["sourceQuest"] = 12974,	-- The Champion's Call
+						["coord"] = { 48.4, 56.3, ZULDRAK },
 						["description"] = "You will get this version if you did |cFFFFD700The Ring of Blood|r questline in Nagrand before.",
 					}),
 					q(12565, {	-- The Blessing of Zim'Abwa -- aa
-						["coord"] = { 40.5, 65.6, ZULDRAK },
 						["qg"] = 28062,	-- Hexer Ubungo
+						["coord"] = { 40.5, 65.6, ZULDRAK },
 					}),
 					q(12655, {	-- The Blessing of Zim'Rhuk
-						["coord"] = { 59.5, 58.0, ZULDRAK },
 						["qg"] = 28479,	-- Witch Doctor Khufu
 						["sourceQuest"] = 12632,	-- But First My Offspring -- TODO: verify
+						["coord"] = { 59.5, 58.0, ZULDRAK },
 					}),
 					q(12615, {	-- The Blessing of Zim'Torga
-						["coord"] = { 59.5, 58.0, ZULDRAK },
 						["qg"] = 28479,	-- Witch Doctor Khufu
 						["sourceQuest"] = 12516,	-- Too Much of a Good Thing
+						["coord"] = { 59.5, 58.0, ZULDRAK },
 					}),
 					q(12948, {	-- The Champion of Anguish
 						["qg"] = 30007,	-- Gurgthock
@@ -838,19 +838,19 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(12562, {	-- The Drakkari Do Not Need Water Elementals!
-						["coord"] = { 40.1, 68.9, ZULDRAK },
 						["qg"] = 28309,	-- Sub-Lieutenant Jax
 						["sourceQuest"] = 12507,	-- Strange Mojo
+						["coord"] = { 40.1, 68.9, ZULDRAK },
 					}),
 					q(12884, {	-- The Ebon Watch
-						["coord"] = { 32.1, 75.1, ZULDRAK },
 						["qg"] = 29687,	-- Crusader Lord Lantinga
 						["sourceQuest"] = 12883,	-- Orders From Drakuru
+						["coord"] = { 32.1, 75.1, ZULDRAK },
 					}),
 					q(12639, {	-- The Frozen Earth
-						["coord"] = { 59.3, 56.4, ZULDRAK },
 						["qg"] = 28480,	-- Element-Tamer Dagoda
 						["sourceQuest"] = 12622,	-- The Leaders at Jin'Alai
+						["coord"] = { 59.3, 56.4, ZULDRAK },
 						["groups"] = {
 							i(39772),	-- Bloodbinder's Wrist Wraps
 							i(39835),	-- Supple Bloodbinder's Helm
@@ -859,19 +859,19 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12729, {	-- The Gods Have Spoken
-						["coord"] = { 59.5, 58.0, ZULDRAK },
 						["qg"] = 28479,	-- Witch Doctor Khufu
 						["sourceQuest"] = 12721,	-- Rampage
+						["coord"] = { 59.5, 58.0, ZULDRAK },
 					}),
 					q(12712, {	-- The Key of Warlord Zol'Maz
-						["coord"] = { 60.2, 57.7, ZULDRAK },
 						["qg"] = 28401,	-- Har'koa
 						["sourceQuest"] = 12685,	-- You Reap What You Sow
+						["coord"] = { 60.2, 57.7, ZULDRAK },
 					}),
 					q(12622, {	-- The Leaders at Jin'Alai
-						["coord"] = { 59.1, 56.2, ZULDRAK },
 						["qg"] = 28484,	-- Scalper Ahunae
 						["sourceQuest"] = 12623,	-- To the Witch Doctor
+						["coord"] = { 59.1, 56.2, ZULDRAK },
 						["groups"] = {
 							i(39775),	-- Soothsayer's Sandals
 							i(39838),	-- Supple Belt of the Bloodletter
@@ -881,9 +881,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12919, {	-- The Storm King's Vengeance
-						["coord"] = { 19.7, 56.3, ZULDRAK },
 						["qg"] = 29647,	-- Gymer
 						["sourceQuest"] = 12916,	-- Our Only Hope
+						["coord"] = { 19.7, 56.3, ZULDRAK },
 						["groups"] = {
 							i(41826),	-- Grips of the Giant-Rider
 							i(41829),	-- Horns of Electrified Terror
@@ -893,32 +893,32 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12859, {	-- This Just In: Fire Still Hot! -- aa
-						["coord"] = { 32.0, 75.5, ZULDRAK },
 						["qg"] = 29733,	-- Elder Shaman Moky
+						["coord"] = { 32.0, 75.5, ZULDRAK },
 						["groups"] = {
 							i(41755),	-- The Fire Extinguisher
 						},
 					}),
 					q(12598, {	-- Throwing Down
-						["coord"] = { 58.0, 72.4, ZULDRAK },
 						["qg"] = 28044,	-- Captain Rupert
 						["sourceQuest"] = 12740,	-- Parachutes for the Argent Crusade
+						["coord"] = { 58.0, 72.4, ZULDRAK },
 						["description"] = "Must be on |cFFFFD700Pa'Troll|r to see this quest.",
 					}),
 					q(12628, {	-- To Speak With Har'koa
-						["coord"] = { 59.5, 58.0, ZULDRAK },
 						["qg"] = 28479,	-- Witch Doctor Khufu
 						["sourceQuest"] = 12627,	-- Breaking Through Jin'Alai
+						["coord"] = { 59.5, 58.0, ZULDRAK },
 					}),
 					q(12623, {	-- To the Witch Doctor
-						["coord"] = { 40.5, 65.6, ZULDRAK },
 						["qg"] = 28062,	-- Hexxer Ubungo
 						["sourceQuest"] = 12516,	-- Too Much of a Good Thing
+						["coord"] = { 40.5, 65.6, ZULDRAK },
 					}),
 					q(12516, {	-- Too Much of a Good Thing
-						["coord"] = { 40.5, 65.6, ZULDRAK },
 						["qg"] = 28062,	-- Hexxer Ubungo
 						["sourceQuest"] = 12514,	-- Mushroom Mixer
+						["coord"] = { 40.5, 65.6, ZULDRAK },
 						["groups"] = {
 							i(39785),	-- Soothsayer's Garb
 							i(39843),	-- Supple Wristguards
@@ -927,93 +927,93 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12501, {	-- Troll Patrol
-						-- confirmed available 14.October.2019 by Pr3vention
 						["qg"] = 28039,	-- Commander Kunz
 						["sourceQuest"] = 12596,	-- Pa'Troll
 						["coord"] = { 40.2, 66.6, ZULDRAK },
 						["maxReputation"] = { FACTION_ARGENT_CRUSADE, EXALTED },	-- Argent Crusade, Exalted.
 						["isDaily"] = true,
+						-- confirmed available 14.October.2019 by Pr3vention
 					}),
 					q(12563, {	-- Troll Patrol
-						-- confirmed available 26.June.2021 by Darkal
 						["qg"] = 28039,	-- Commander Kunz
 						["sourceQuest"] = 12596,	-- Pa'Troll
 						["coord"] = { 40.2, 66.6, ZULDRAK },
 						["maxReputation"] = { FACTION_ARGENT_CRUSADE, EXALTED },	-- Argent Crusade, Exalted.
 						["isDaily"] = true,
+						-- confirmed available 26.June.2021 by Darkal
 					}),
 					q(12587, {	-- Troll Patrol
-						-- almost certainly the removed version, will check in Wrath Classic
-						-- confirmed available 2023-7-30 [70/Human/Paladin/Revered]
 						["qg"] = 28039,	-- Commander Kunz
 						["sourceQuest"] = 12596,	-- Pa'Troll
 						["coord"] = { 40.2, 66.6, ZULDRAK },
 						["maxReputation"] = { FACTION_ARGENT_CRUSADE, EXALTED },	-- Argent Crusade, Exalted.
 						["isDaily"] = true,
+						-- almost certainly the removed version, will check in Wrath Classic
+						-- confirmed available 2023-7-30 [70/Human/Paladin/Revered]
 					}),
 					q(12588, {	-- Troll Patrol: Can You Dig It?
-						["coord"] = { 48.7, 78.8, ZULDRAK },
-						["isDaily"] = true,
 						["qg"] = 28042,	-- Captain Brandon
 						["sourceQuest"] = 12596,	-- Pa'Troll
+						["coord"] = { 48.7, 78.8, ZULDRAK },
+						["isDaily"] = true,
 					}),
 					q(12594, {	-- Troll Patrol: Couldn't Care Less
-						["coord"] = { 48.1, 63.8, ZULDRAK },
-						["isDaily"] = true,
 						["qg"] = 28043,	-- Captain Grondel
 						["sourceQuest"] = 12596,	-- Pa'Troll
+						["coord"] = { 48.1, 63.8, ZULDRAK },
+						["isDaily"] = true,
 					}),
 					q(12585, {	-- Troll Patrol: Creature Comforts
-						["coord"] = { 48.1, 63.8, ZULDRAK },
-						["isDaily"] = true,
 						["qg"] = 28043,	-- Captain Grondel
 						["sourceQuest"] = 12596,	-- Pa'Troll
+						["coord"] = { 48.1, 63.8, ZULDRAK },
+						["isDaily"] = true,
 					}),
 					q(12568, {	-- Troll Patrol: Done to Death
-						["coord"] = { 58.0, 72.4, ZULDRAK },
-						["isDaily"] = true,
 						["qg"] = 28044,	-- Captain Rupert
 						["sourceQuest"] = 12596,	-- Pa'Troll
+						["coord"] = { 58.0, 72.4, ZULDRAK },
+						["isDaily"] = true,
 					}),
 					q(12502, {	-- Troll Patrol: High Standards
-						["coord"] = { 48.7, 78.8, ZULDRAK },
-						["isDaily"] = true,
 						["qg"] = 28042,	-- Captain Brandon
 						["sourceQuest"] = 12596,	-- Pa'Troll
+						["coord"] = { 48.7, 78.8, ZULDRAK },
+						["isDaily"] = true,
 					}),
 					q(12509, {	-- Troll Patrol: Intestinal Fortitude
-						["coord"] = { 58.0, 72.4, ZULDRAK },
-						["isDaily"] = true,
 						["qg"] = 28044,	-- Captain Rupert
 						["sourceQuest"] = 12596,	-- Pa'Troll
+						["coord"] = { 58.0, 72.4, ZULDRAK },
+						["isDaily"] = true,
 					}),
 					q(12564, {	-- Troll Patrol: Something for the Pain
-						["coord"] = { 48.7, 78.8, ZULDRAK },
-						["isDaily"] = true,
 						["qg"] = 28042,	-- Captain Brandon
 						["sourceQuest"] = 12596,	-- Pa'Troll
+						["coord"] = { 48.7, 78.8, ZULDRAK },
+						["isDaily"] = true,
 					}),
 					q(12541, {	-- Troll Patrol: The Alchemist's Apprentice
-						["coord"] = { 35.0, 52.1, ZULDRAK },
-						["isDaily"] = true,
 						["qg"] = 28205,	-- Alchemist Finklestein
 						["sourceQuest"] = 12596,	-- Pa'Troll
+						["coord"] = { 35.0, 52.1, ZULDRAK },
+						["isDaily"] = true,
 					}),
 					q(12591, {	-- Troll Patrol: Throwing Down
-						["coord"] = { 58.0, 72.4, ZULDRAK },
-						["isDaily"] = true,
 						["qg"] = 28044,	-- Captain Rupert
 						["sourceQuest"] = 12596,	-- Pa'Troll
+						["coord"] = { 58.0, 72.4, ZULDRAK },
+						["isDaily"] = true,
 					}),
 					q(12519, {	-- Troll Patrol: Whatdya Want, a Medal?
-						["coord"] = { 48.1, 63.8, ZULDRAK },
-						["isDaily"] = true,
 						["qg"] = 28043,	-- Captain Grondel
 						["sourceQuest"] = 12596,	-- Pa'Troll
+						["coord"] = { 48.1, 63.8, ZULDRAK },
+						["isDaily"] = true,
 					}),
 					q(12861, {	-- Trolls Is Gone Crazy! -- aa
-						["coord"] = { 32.1, 75.6, ZULDRAK },
 						["qg"] = 29690,	-- Chief Rageclaw
+						["coord"] = { 32.1, 75.6, ZULDRAK },
 						["groups"] = {
 							i(41760),	-- Emancipator's Robes
 							i(41761),	-- Wristguard of Healing Fingers
@@ -1022,9 +1022,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12506, {	-- Trouble at the Altar of Sseratus
-						["coord"] = { 40.5, 65.6, ZULDRAK },
 						["qg"] = 28062,	-- Hexer Ubungo
 						["sourceQuest"] = 12740,	-- Parachutes for the Argent Crusade
+						["coord"] = { 40.5, 65.6, ZULDRAK },
 					}),
 					q(13097, {	-- Unfinished Business
 						["qg"] = 28401,	-- Har'koa
@@ -1054,9 +1054,9 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					})),
 					q(12707, {	-- Wooly Justice
-						["coord"] = { 59.1, 56.2, ZULDRAK },
 						["qg"] = 28484,	-- Scalper Ahunae
 						["sourceQuest"] = 12685,	-- You Reap What You Sow
+						["coord"] = { 59.1, 56.2, ZULDRAK },
 						["groups"] = {
 							i(39770),	-- Soothsayer's Hood
 							i(39833),	-- Supple Bloodbinder's Boots
@@ -1066,15 +1066,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12629, {	-- You Can Run, But You Can't Hide
-						["coord"] = { 14.0, 73.8, ZULDRAK },
 						["qg"] = 28518,	-- Stefan Vadu
 						["altQuests"] = { 12643 },	-- Silver Lining
 						["sourceQuest"] = 12637,	-- Near Miss
+						["coord"] = { 14.0, 73.8, ZULDRAK },
 					}),
 					q(12685, {	-- You Reap What You Sow
-						["coord"] = { 63.6, 70.3, ZULDRAK },
 						["qg"] = 28401,	-- Har'koa
 						["sourceQuest"] = 12684,	-- Blood of a Dead God
+						["coord"] = { 63.6, 70.3, ZULDRAK },
 						["groups"] = {
 							i(39844),	-- Ritualistic Shield
 							i(39861),	-- Supple Bloodbinder's Leggings
@@ -1084,10 +1084,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12686, {	-- Zero Tolerance
-						["coord"] = { 27.0, 46.1, ZULDRAK },
 						["qg"] = 28503,	-- Overlord Drakuru
-						["description"] = "Must be on |cFFFFD700Hazardous Materials|r to see this quest.",
 						["sourceQuest"] = 12669,	-- So Far, So Bad
+						["coord"] = { 27.0, 46.1, ZULDRAK },
+						["description"] = "Must be on |cFFFFD700Hazardous Materials|r to see this quest.",
 					}),
 					q(39208, {	-- Zul'Drak
 						["timeline"] = { ADDED_6_2_0, REMOVED_7_3_5 },	-- old quest from the adventure guide. Pretty sure this was removed (CRIEVE NOTE: Not sure what patch it was removed.)

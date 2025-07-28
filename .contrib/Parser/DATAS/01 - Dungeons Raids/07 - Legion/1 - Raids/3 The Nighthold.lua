@@ -11,7 +11,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 		},
 		["maps"] = { 764, 765, 766, 767, 768, 769, 770, 771, 772 },
 		["lvl"] = 110,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(10829, {    -- Arcing Aqueducts
                     crit(31445, {    -- Skorpyron
@@ -102,7 +102,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				q(45420, {	-- The Nighthold: The Eye of Aman'Thul
 					["sourceQuests"] = { 45417 },	-- The Nighthold: Lord of the Shadow Council
 					["provider"] = { "n", 106522 },	-- Archmage Khadgar
-					["g"] = {
+					["groups"] = {
 						sp(233377),	-- Gaze of Aman'Thul
 					},
 				}),
@@ -141,7 +141,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						109041,	-- Naturalist Tel'arn
 						109038,	-- Solarist Tel'arn
 					},
-					["g"] = {
+					["groups"] = {
 						i(143751),	-- Technique: Glyph of Twilight Bloom (RECIPE!)
 						i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1] (RECIPE!)
 						i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2] (RECIPE!)
@@ -161,7 +161,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						104154,	-- Gul'dan
 						111022,	-- The Demon Within
 					},
-					["g"] = {
+					["groups"] = {
 						i(119211),	-- Golden Hearthstone Card: Lord Jaraxxus (TOY!)
 						i(143544),	-- Skull of Corruption (TOY!)
 						i(141061, {	-- Technique: Grimoire of the Abyssal
@@ -175,7 +175,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			d(DIFFICULTY.RAID.LFR, {
 				["crs"] = { 111246 },	-- Archmage Timear
 				["coord"] = { 63.7, 55.0, LEGION_DALARAN },
-				["g"] = {
+				["groups"] = {
 					n(ZONE_DROPS, {
 						i(144399),	-- Aristocrat's Winter Drape
 						i(144401),	-- Cloak of Multitudinous Sheaths
@@ -295,7 +295,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 								109041,	-- Naturalist Tel'arn
 								109038,	-- Solarist Tel'arn
 							},
-							["g"] = {
+							["groups"] = {
 								i(140881),	-- Eventide Casque
 								i(140883),	-- Shoulderguard of the Eclipse
 								i(140874),	-- Thistle-Proof Thorngrabbers
@@ -453,7 +453,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						109041,	-- Naturalist Tel'arn
 						109038,	-- Solarist Tel'arn
 					},
-					["g"] = {
+					["groups"] = {
 						ach(10754),	-- Fruit of All Evil
 					},
 				}),
@@ -472,7 +472,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						104154,	-- Gul'dan
 						111022,	-- The Demon Within
 					},
-					["g"] = {
+					["groups"] = {
 						ach(10696, {	-- I've Got My Eyes On You
 							["crs"] = { 105630 },	-- Eye of Gul'dan <Gul'dan's Minion>
 						}),
@@ -489,7 +489,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 							45383,	-- The Nighthold: Talisman of the Shal'dorei (Mythic)
 						},
 						["provider"] = { "n", 110791 },	-- First Arcanist Thalyssra
-						["g"] = {
+						["groups"] = {
 							i(143656),	-- Echo of Time (QI!)
 							ig(141324),	-- Talisman of the Shal'dorei (Normal)
 						},
@@ -658,7 +658,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						109041,	-- Naturalist Tel'arn
 						109038,	-- Solarist Tel'arn
 					},
-					["g"] = {
+					["groups"] = {
 						i(140881),	-- Eventide Casque
 						i(140883),	-- Shoulderguard of the Eclipse
 						i(140874),	-- Thistle-Proof Thorngrabbers
@@ -774,7 +774,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						["description"] = "Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
 						["altQuests"] = { 45383 },	-- The Nighthold: Talisman of the Shal'dorei (Mythic)
 						["provider"] = { "n", 110791 },	-- First Arcanist Thalyssra
-						["g"] = {
+						["groups"] = {
 							i(143657),	-- Echo of Time (QI!)
 							ig(141325),	-- Talisman of the Shal'dorei (Heroic)
 						},
@@ -943,7 +943,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						109041,	-- Naturalist Tel'arn
 						109038,	-- Solarist Tel'arn
 					},
-					["g"] = {
+					["groups"] = {
 						i(140881),	-- Eventide Casque
 						i(140883),	-- Shoulderguard of the Eclipse
 						i(140874),	-- Thistle-Proof Thorngrabbers
@@ -1061,7 +1061,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					q(45383, {	-- The Nighthold: Talisman of the Shal'dorei (Mythic)
 						["description"] = "Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Mythic difficulty each week.\n",
 						["provider"] = { "n", 110791 },	-- First Arcanist Thalyssra
-						["g"] = {
+						["groups"] = {
 							i(143658),	-- Echo of Time (QI!)
 							ig(141326),	-- Talisman of the Shal'dorei (Mythic)
 						},
@@ -1236,7 +1236,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						109041,	-- Naturalist Tel'arn
 						109038,	-- Solarist Tel'arn
 					},
-					["g"] = {
+					["groups"] = {
 						ach(10846),	-- Mythic: High Botanist Tel'arn
 						i(140881),	-- Eventide Casque
 						i(140883),	-- Shoulderguard of the Eclipse
@@ -1321,7 +1321,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 						104154,	-- Gul'dan
 						111022,	-- The Demon Within
 					},
-					["g"] = {
+					["groups"] = {
 						ach(11195, {	-- Ahead of the Curve: Gul'dan
 							["u"] = REMOVED_FROM_GAME,
 						}),

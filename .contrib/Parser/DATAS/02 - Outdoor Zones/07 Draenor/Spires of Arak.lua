@@ -88,14 +88,14 @@ root(ROOTS.Zones, {
 					ach(8925, {	-- Between Arak and a Hard Place (Alliance)
 						["races"] = ALLIANCE_ONLY,
 						["sym"] = {{ "achievement_criteria" }},
-						["g"] = {
+						["groups"] = {
 							follower(218),	-- Talonpriest Ishaal
 						},
 					}),
 					ach(8926, {	-- Between Arak and a Hard Place (Horde)
 						["races"] = HORDE_ONLY,
 						["sym"] = {{ "achievement_criteria" }},
-						["g"] = {
+						["groups"] = {
 							follower(218),	-- Talonpriest Ishaal
 						},
 					}),
@@ -107,7 +107,7 @@ root(ROOTS.Zones, {
 					}),
 					ach(9072, {	-- Mantle of the Talon King
 						["sourceQuest"] = 37177,	-- Call of the Talon King
-						["g"] = {
+						["groups"] = {
 							--title_gendered(278, 279),	-- Talon King / Talon Queen
 							title_male(278),	-- Talon King <Name>
 							title_female(279),	-- Talon Queen <Name>
@@ -120,7 +120,7 @@ root(ROOTS.Zones, {
 					ach(9564, {	-- Securing Draenor (Alliance)
 						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							crit(26255),	-- Assault on Skettis
 							crit(26256),	-- Assault on Pillars of Fate
 						},
@@ -128,7 +128,7 @@ root(ROOTS.Zones, {
 					ach(9562, {	-- Securing Draenor (Horde)
 						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							crit(26240),	-- Assault on Pillars of Fate
 							crit(26243),	-- Assault on Skettis
 						},
@@ -272,7 +272,7 @@ root(ROOTS.Zones, {
 				n(QUESTS, {
 					n(STOKTRON_BREWERY, {
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							q(35926, {	-- Assassin's Mark
 								["sourceQuests"] = { 35915 },	-- Attempted Murder
 								["coord"] = { 52.0, 23.5, SPIRES_OF_ARAK },
@@ -296,7 +296,7 @@ root(ROOTS.Zones, {
 								["coord"] = { 39.5, 61.7, SPIRES_OF_ARAK },
 								["races"] = ALLIANCE_ONLY,
 								["provider"] = { "n", 84291 },	-- Kolrigg Stoktron
-								["g"] = {
+								["groups"] = {
 									i(119001),	-- Mystery Keg (TOY!)
 								},
 							}),
@@ -332,7 +332,7 @@ root(ROOTS.Zones, {
 								["coord"] = { 39.7, 60.9, SPIRES_OF_ARAK },
 								["races"] = ALLIANCE_ONLY,
 								["provider"] = { "n", 88195 },	-- Hulda Shadowblade
-								["g"] = {
+								["groups"] = {
 									follower(453),	-- Hulda Shadowblade
 								},
 							}),
@@ -352,7 +352,7 @@ root(ROOTS.Zones, {
 					}),
 					n(HEARTHFIRE_TAVERN, {
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							q(35924, {	-- Assassin's Mark
 								["sourceQuests"] = { 35907 },	-- Attempted Murder
 								["coord"] = { 52.0, 23.5, SPIRES_OF_ARAK },
@@ -406,7 +406,7 @@ root(ROOTS.Zones, {
 								["coord"] = { 40.1, 42.6, SPIRES_OF_ARAK },
 								["races"] = HORDE_ONLY,
 								["provider"] = { "n", 84292 },	-- Lunzul
-								["g"] = {
+								["groups"] = {
 									i(119001),	-- Mystery Keg (TOY!)
 								},
 							}),
@@ -415,7 +415,7 @@ root(ROOTS.Zones, {
 								["coord"] = { 40.0, 43.3, SPIRES_OF_ARAK },
 								["races"] = HORDE_ONLY,
 								["provider"] = { "n", 88179 },	-- Dark Ranger Velonara
-								["g"] = {
+								["groups"] = {
 									follower(453),	-- Dark Ranger Velonara
 								},
 							}),
@@ -538,7 +538,7 @@ root(ROOTS.Zones, {
 							["coord"] = { 60.2, 53.1, SPIRES_OF_ARAK },
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 82788 },	-- Dilbert Tinkertoss
-							["g"] = {
+							["groups"] = {
 								i(116394),	-- Outpost Building Assembly Notes
 							},
 						}),
@@ -550,7 +550,7 @@ root(ROOTS.Zones, {
 							["coord"] = { 60.1, 53.1, SPIRES_OF_ARAK },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 82786 },	-- Trixxy Weldblast
-							["g"] = {
+							["groups"] = {
 								i(116394),	-- Outpost Building Assembly Notes
 							},
 						}),
@@ -565,7 +565,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 34659 },	-- The Crone
 						["coord"] = { 51.6, 31.2, SPIRES_OF_ARAK },
 						["provider"] = { "n", 79890 },	-- Ornekka
-						["g"] = {
+						["groups"] = {
 							i(114948),	-- Skettis Deceiver's Band
 							i(119070),	-- Skettis Deceiver's Gemband
 							i(119062),	-- Skettis Deceiver's Loop
@@ -577,7 +577,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 34830 },	-- Behind the Veil
 						["coord"] = { 44.4, 24.0, SPIRES_OF_ARAK },
 						["provider"] = { "n", 80508 },	-- Talonpriest Zellek
-						["g"] = {
+						["groups"] = {
 							i(114723),	-- Cragplate Helm
 							i(114725),	-- Ravenchain Helm
 							i(114724),	-- Shadowveil Hood
@@ -617,7 +617,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 35339 },	-- A Parting Favor
 						["coord"] = { 37.6, 51.0, SPIRES_OF_ARAK },
 						["provider"] = { "n", 82124 },	-- Alice Finn
-						["g"] = {
+						["groups"] = {
 							i(114958),	-- Watch Commander Branson's Lape
 						},
 					}),
@@ -644,7 +644,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 37.6, 53.7, SPIRES_OF_ARAK },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 82278 },	-- Lady Claudia
-						["g"] = {
+						["groups"] = {
 							i(118082),	-- Admiral Taylor's Boot Knife
 							i(118079),	-- Admiral Taylor's Ceremonial Sword
 							i(118083),	-- Admiral Taylor's Cutlass
@@ -664,7 +664,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 82278 },	-- Lady Claudia
 						["coord"] = { 37.6, 53.8, SPIRES_OF_ARAK },
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							i(118082),	-- Admiral Taylor's Boot Knife
 							i(118079),	-- Admiral Taylor's Ceremonial Sword
 							i(118083),	-- Admiral Taylor's Cutlass
@@ -762,7 +762,7 @@ root(ROOTS.Zones, {
 						},
 						["coord"] = { 54.8, 54.2, SPIRES_OF_ARAK },
 						["provider"] = { "n", 80860 },	-- High Ravenspeaker Krikka
-						["g"] = {
+						["groups"] = {
 							i(114720),	-- Cragplate Gauntlets
 							i(114722),	-- Ravenchain Gauntlets
 							i(114721),	-- Shadowveil Gloves
@@ -773,7 +773,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 35619, 35620, 36862 },	-- Pinchwhistle Gearworks (Alliance and 2 Horde versions)
 						["coord"] = { 61.4, 72.8, SPIRES_OF_ARAK },
 						["provider"] = { "n", 81109 },	-- Kimzee Pinchwhistle
-						["g"] = {
+						["groups"] = {
 							i(118071),	-- "Fireproof" Venture Co. Blastplate
 							i(118072),	-- "Fireproof" Venture Co. Chainmail
 							i(118074),	-- "Fireproof" Venture Co. Robes
@@ -803,7 +803,7 @@ root(ROOTS.Zones, {
 						},
 						["coord"] = { 58.4, 92.2, SPIRES_OF_ARAK },
 						["provider"] = { "n", 81443 },	-- Krixel Pinchwhistle
-						["g"] = {
+						["groups"] = {
 							i(111957),	-- Salvage Yard, Level 1
 						},
 					}),
@@ -820,7 +820,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 39.9, 60.6, SPIRES_OF_ARAK },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 85080 },	-- Admiral Taylor
-						["g"] = {
+						["groups"] = {
 							follower(204),	-- Admiral Taylor
 						},
 					}),
@@ -841,7 +841,7 @@ root(ROOTS.Zones, {
 						},
 						["coord"] = { 36.9, 24.5, SPIRES_OF_ARAK },
 						["provider"] = { "n", 80157 },	-- Darkscryer Raastok
-						["g"] = {
+						["groups"] = {
 							i(114950),	-- Skywatch Adherent Choker
 							i(119089),	-- Skywatch Adherant Gorget
 							i(114951),	-- Skywatch Adherent Locket
@@ -853,7 +853,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 35611 },	-- Return to Veil Terokk
 						["coord"] = { 61.9, 42.2, SPIRES_OF_ARAK },
 						["provider"] = { "n", 81514 },	-- Kazu
-						["g"] = {
+						["groups"] = {
 							i(114715),	-- Cragplate Warboots
 							i(114717),	-- Ravenchain Sabatons
 							i(114716),	-- Shadowveil Treads
@@ -869,7 +869,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 34655 },	-- The Shadows of Skettis
 						["coord"] = { 43.6, 12.9, SPIRES_OF_ARAK },
 						["provider"] = { "n", 79519 },	-- Reshad
-						["g"] = {
+						["groups"] = {
 							i(114733),	-- Cragplate Shoulders
 							i(114735),	-- Ravenchain Spaulders
 							i(114734),	-- Shadowveil Mantle
@@ -887,7 +887,7 @@ root(ROOTS.Zones, {
 						["provider"] = {"o",232353},	-- Overseer's Chair
 						["coord"] = { 35.5, 32.1, SPIRES_OF_ARAK },
 						["icon"] = 1029590,
-						["g"] = {
+						["groups"] = {
 							i(114727),	-- Cragplate Legguards
 							i(114729),	-- Ravenchain Leggings
 							i(114728),	-- Shadowveil Leggings
@@ -898,7 +898,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 34886 },	-- Baby Bird
 						["coord"] = { 46.2, 45.6, SPIRES_OF_ARAK },
 						["provider"] = { "n", 85320 },	-- Ikky
-						["g"] = {
+						["groups"] = {
 							pet(1532),	-- Ikky (PET!)
 						},
 					}),
@@ -941,7 +941,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 35298 },	-- Flame On
 						["coord"] = { 61.5, 72.7, SPIRES_OF_ARAK },
 						["provider"] = { "n", 82468 },	-- Kimzee Pinchwhistle
-						["g"] = {
+						["groups"] = {
 							follower(192),	-- Kimzee Pinchwhistle
 						},
 					}),
@@ -965,7 +965,7 @@ root(ROOTS.Zones, {
 							{ 54.2, 63.0, SPIRES_OF_ARAK },	-- questgiver
 						},
 						["provider"] = { "n", 87561 },	-- Leorajh
-						["g"] = {
+						["groups"] = {
 							follower(219),	-- Leorajh
 						},
 					}),
@@ -983,7 +983,7 @@ root(ROOTS.Zones, {
 						["description"] = "Available once you pick up the gavel during |cFFFFD700The Kaliri Whisperer|r.",
 						["coord"] = { 45.4, 36.3, SPIRES_OF_ARAK },
 						["provider"] = { "n", 80233 },	-- Skizzik
-						["g"] = {
+						["groups"] = {
 							i(114957),	-- Oversized Shadeback Talon
 							i(114959),	-- Prickly Shadeback Thorn
 							i(114961),	-- Thornmother Eye
@@ -993,7 +993,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 34827 },	-- Last of the Talonpriests
 						["coord"] = { 47.9, 34.6, SPIRES_OF_ARAK },
 						["provider"] = { "n", 80232 },	-- Talonpriest Ishaal
-						["g"] = {
+						["groups"] = {
 							i(114736),	-- Cragplate Girdle
 							i(114738),	-- Ravenchain Belt
 							i(114737),	-- Shadowveil Cord
@@ -1103,7 +1103,7 @@ root(ROOTS.Zones, {
 						},
 						["coord"] = { 58.4, 92.2, SPIRES_OF_ARAK },
 						["provider"] = { "n", 81443 },	-- Krixel Pinchwhistle
-						["g"] = {
+						["groups"] = {
 							i(118090),	-- "Super Sterilized" Blastguard Britches
 							i(118089),	-- "Super Sterilized" Blastguard Leggings
 							i(118087),	-- "Super Sterilized" Blastguard Legplates
@@ -1159,7 +1159,7 @@ root(ROOTS.Zones, {
 						},
 						["coord"] = { 66.7, 51.6, SPIRES_OF_ARAK },
 						["provider"] = { "n", 80648 },	-- Anzu
-						["g"] = {
+						["groups"] = {
 							i(114955),	-- Hollowblood Cloak
 							i(114949),	-- Hollowblood Drape
 							i(114954),	-- Hollowblood Greatcloak
@@ -1179,7 +1179,7 @@ root(ROOTS.Zones, {
 						},
 						["coord"] = { 66.7, 51.6, SPIRES_OF_ARAK },
 						["provider"] = { "n", 80648 },	-- Anzu
-						["g"] = {
+						["groups"] = {
 							i(114955),	-- Hollowblood Cloak
 							i(114949),	-- Hollowblood Drape
 							i(114954),	-- Hollowblood Greatcloak
@@ -1195,7 +1195,7 @@ root(ROOTS.Zones, {
 						},
 						["coord"] = { 64.1, 37.0, SPIRES_OF_ARAK },
 						["provider"] = { "n", 86355 },	-- Anzu
-						["g"] = {
+						["groups"] = {
 							i(114712),	-- Cragplate Chestplate
 							i(114713),	-- Ravenchain Vest
 							i(114731),	-- Shadowveil Robe
@@ -1255,7 +1255,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 80758 },	-- Talon Guard Kurekk
 						["coord"] = { 46.7, 46.4, SPIRES_OF_ARAK },
 						["minReputation"] = { FACTION_ARAKKOA_OUTCASTS, EXALTED },
-						["g"] = {
+						["groups"] = {
 							follower(224),	-- Talon Guard Kurekk
 						},
 					}),
@@ -1283,7 +1283,7 @@ root(ROOTS.Zones, {
 						},
 						["coord"] = { 46.5, 46.7, SPIRES_OF_ARAK },
 						["provider"] = { "n", 83959 },	-- Talonpriest Ishaal
-						["g"] = {
+						["groups"] = {
 							follower(218),	-- Talonpriest Ishaal
 						},
 					}),
@@ -1296,7 +1296,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 36059 },	-- A Worthy Vessel
 						["coord"] = { 46.6, 46.6, SPIRES_OF_ARAK },
 						["provider"] = { "n", 84122 },	-- Shade of Terokk
-						["g"] = {
+						["groups"] = {
 							i(119073),	-- Talon Guard Bloodsworn Band
 							i(118070),	-- Talon Guard Bloodsworn Loop
 							i(118069),	-- Talon Guard Bloodsworn Ring
@@ -1308,7 +1308,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 35007 },	-- Rendezvous with the Ritualists
 						["coord"] = { 54.8, 54.1, SPIRES_OF_ARAK },
 						["provider"] = { "n", 80740 },	-- Ravenspeaker Sekara
-						["g"] = {
+						["groups"] = {
 							i(114741),	-- Cragplate Wristwraps
 							i(114742),	-- Ravenchain Wristwraps
 							i(114740),	-- Shadowveil Wristwraps
@@ -1375,7 +1375,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 35285 },	-- Follow that Hotrod!
 						["coord"] = { 58.4, 92.2, SPIRES_OF_ARAK },
 						["provider"] = { "n", 81972 },	-- Kimzee Pinchwhistle
-						["g"] = {
+						["groups"] = {
 							i(118077),	-- Fungal Reisistant Chainmail Boots
 							i(118075),	-- Fungal Resistant Plate Boots
 							i(118076),	-- Fungal Resistant Slippers
@@ -1403,7 +1403,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 86597 },	-- Benjamin Gibb
 						["coord"] = { 35.8, 52.3, SPIRES_OF_ARAK },
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							follower(204),	-- Benjamin Gibb
 						},
 					}),
@@ -1473,7 +1473,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 36085 },	-- On Ebon Wings
 						["coord"] = { 46.5, 54.3, SPIRES_OF_ARAK },
 						["provider"] = { "n", 84262 },	-- Reshad
-						["g"] = {
+						["groups"] = {
 							i(114905),	-- Talon Guard Bow
 							i(114910),	-- Talon Guard Cudgel
 							i(114906),	-- Talon Guard Dagger
@@ -1535,7 +1535,7 @@ root(ROOTS.Zones, {
 					n(84887, {	-- Betsi Boombasket
 						["questID"] = 36291,
 						["coord"] = { 58.4, 84.2, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(116907),	-- Betsi's Boomstick
 						},
 					}),
@@ -1549,14 +1549,14 @@ root(ROOTS.Zones, {
 							{ 64.4, 65.6, SPIRES_OF_ARAK },
 							{ 65.2, 67.8, SPIRES_OF_ARAK },
 						},
-						["g"] = {
+						["groups"] = {
 							i(118205),	-- Blightglow Pauldrons
 						},
 					}),
 					n(84807, {	-- Durkath Steelmaw
 						["questID"] = 36267,
 						["coord"] = { 46.4, 28.6, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(118198),	-- Steelmaw's Stompers
 						},
 					}),
@@ -1568,7 +1568,7 @@ root(ROOTS.Zones, {
 					n(84890, {	-- Festerbloom
 						["questID"] = 36297,
 						["coord"] = { 54.8, 39.8, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(118200),	-- Vile Branch of Festerbloom
 						},
 					}),
@@ -1577,7 +1577,7 @@ root(ROOTS.Zones, {
 						["questID"] = 37360,
 						["isDaily"] = true,
 						["coord"] = { 72.2, 19.6, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(119373),	-- Nightmare-Chain Bracers
 						},
 					}),
@@ -1585,7 +1585,7 @@ root(ROOTS.Zones, {
 						["description"] = "Click on the Fel Tome to summon.",
 						["questID"] = 36943,
 						["coord"] = { 25.2, 24.2, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(118696),	-- Eye of Gaze
 						},
 					}),
@@ -1594,7 +1594,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 71.6, 44.8, SPIRES_OF_ARAK },	-- **Coords unconfirmed, relied on wowhead**
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(119401),	-- Sentinel's Wingblade
 						},
 					}),
@@ -1603,7 +1603,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 74.6, 43.6, SPIRES_OF_ARAK },
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(119404),	-- Glowing Morel
 						},
 					}),
@@ -1615,21 +1615,21 @@ root(ROOTS.Zones, {
 					n(86724, {	-- Hermit Palefur
 						["questID"] = 36887,
 						["coord"] = { 59.2, 14.8, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(118279),	-- Hermit's Hood
 						},
 					}),
 					n(84955, {	-- Jiasska the Sporegorger
 						["questID"] = 36306,
 						["coord"] = { 56.6, 94.6, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(118202),	-- Fungus-Infected Hydra Lung
 						},
 					}),
 					n(84810, {	-- Kalos the Bloodbathed
 						["questID"] = 36268,
 						["coord"] = { 62.8, 37.6, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(118735),	-- Bloodbathed Outcast Robes
 						},
 					}),
@@ -1638,7 +1638,7 @@ root(ROOTS.Zones, {
 						["questID"] = 37361,
 						["isDaily"] = true,
 						["coord"] = { 70.6, 24.2, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(119354),	-- Cowl of the Unraveller
 						},
 					}),
@@ -1647,7 +1647,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 74.4, 38.6, SPIRES_OF_ARAK },
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(119398),	-- Plunderer's Drill
 						},
 					}),
@@ -1663,49 +1663,49 @@ root(ROOTS.Zones, {
 							{ 53.2, 89.0, SPIRES_OF_ARAK },
 							{ 54.8, 88.6, SPIRES_OF_ARAK },
 						},
-						["g"] = {
+						["groups"] = {
 							i(118206),	-- Mutafen's Mighty Maul
 						},
 					}),
 					n(82247, {	-- Nas Dunberlin
 						["questID"] = 36129,
 						["coord"] = { 36.6, 52.4, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(116837),	-- Spooky Scythe
 						},
 					}),
 					n(84872, {	-- Oskiira the Vengeful
 						["questID"] = 36288,
 						["coord"] = { 65.0, 54.0, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(118204),	-- Oskiira's Mercy
 						},
 					}),
 					n(84838, {	-- Poisonmaster Bortusk
 						["questID"] = 36279,
 						["coord"] = { 59.6, 37.6, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(118199),	-- Poison Cask
 						},
 					}),
 					n(85504, {	-- Rotcap
 						["questID"] = 36470,
 						["coord"] = { 38.4, 27.4, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(118107),	-- Brilliant Spore (PET!)
 						},
 					}),
 					n(84833, {	-- Sangrikass
 						["questID"] = 36276,
 						["coord"] = { 68.8, 49.0, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(118203),	-- Moultingskin Tunic
 						},
 					}),
 					n(79938, {	-- Shadowbark
 						["questID"] = 36478,
 						["coord"] = { 51.8, 35.6, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(118201),	-- Shadowbark's Skin
 						},
 					}),
@@ -1714,7 +1714,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 71.25, 33.24, SPIRES_OF_ARAK },
 						["lvl"] = 100,
-						["g"] = {
+						["groups"] = {
 							i(119363),	-- Stretchy Purple Pants
 						},
 					}),
@@ -1722,7 +1722,7 @@ root(ROOTS.Zones, {
 						["questID"] = 37394,
 						["isDaily"] = true,
 						["coord"] = { 52.0, 7.6, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(119407),	-- Cloudsplitter Greatstaff
 						},
 					}),
@@ -1730,7 +1730,7 @@ root(ROOTS.Zones, {
 						["questID"] = 37358,
 						["isDaily"] = true,
 						["coord"] = { 72.6, 19.6, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(119178),	-- Black Whirlwind (TOY!)
 							i(119410),	-- Soultwisting Staff
 						},
@@ -1738,7 +1738,7 @@ root(ROOTS.Zones, {
 					n(84805, {	-- Stonespite
 						["questID"] = 36265,
 						["coord"] = { 33.6, 22.0, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(116858),	-- Stonespite Scale Leggings
 						},
 					}),
@@ -1746,28 +1746,28 @@ root(ROOTS.Zones, {
 						["questID"] = 36298,
 						["coord"] = { 58.6, 45.0, SPIRES_OF_ARAK },
 						["description"] = "This rare can sometimes bug out. If you fly in fast enough, you can still enough wasps to get her to spawn. Melee classes may find this near impossible.",
-						["g"] = {
+						["groups"] = {
 							i(116855),	-- Stingtail's Toxic Stinger
 						},
 					}),
 					n(85520, {	-- Swarmleaf
 						["questID"] = 36472,
 						["coord"] = { 52.8, 54.8, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(116857),	-- Stave of Buzzing Bark
 						},
 					}),
 					n(84836, {	-- Talonbreaker <Bloodmane High Shaman>
 						["questID"] = 36278,
 						["coord"] = { 54.6, 63.2, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(116838),	-- Talonbreaker Talisman
 						},
 					}),
 					n(84775, {	-- Tesska the Broken
 						["questID"] = 36254,
 						["coord"] = { 57.2, 73.8, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(116852),	-- Tesska's Cursed Talisman
 						},
 					}),
@@ -1777,7 +1777,7 @@ root(ROOTS.Zones, {
 							{ 29.6, 42.0, SPIRES_OF_ARAK },	-- Varasha
 							{ 31.5, 43.3, SPIRES_OF_ARAK },	-- Cave Entrance
 						},
-						["g"] = {
+						["groups"] = {
 							i(118207),	-- Hydraling (PET!)
 						},
 					}),
@@ -1788,7 +1788,7 @@ root(ROOTS.Zones, {
 							{ 73.6, 31.2, SPIRES_OF_ARAK },
 							{ 74.8, 32.4, SPIRES_OF_ARAK },
 						},
-						["g"] = {
+						["groups"] = {
 							i(119392),	-- Voidreaver's Axe
 						},
 					}),
@@ -1797,7 +1797,7 @@ root(ROOTS.Zones, {
 					o(235313, {	-- Abandoned Mining Pick (cannot be transmogged)
 						["questID"] = 36458,
 						["coord"] = { 40.6, 55.0, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(116913),	-- Peon's Mining Pick
 						},
 					}),
@@ -1805,7 +1805,7 @@ root(ROOTS.Zones, {
 						["questID"] = 36462,
 						["description"] = "The key is on a stone behind a skeleton in front of the closed mine, south of the garrison. (37.7, 56.3)",
 						["coord"] = { 36.2, 54.4, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 							i(119348),	-- Admiral Taylor's Garrison Log
 						},
@@ -1813,7 +1813,7 @@ root(ROOTS.Zones, {
 					o(235143, {	-- Assassin's Spear
 						["questID"] = 36445,
 						["coord"] = { 49.2, 37.3, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(116835),	-- Assassin's Spear
 						},
 					}),
@@ -1839,7 +1839,7 @@ root(ROOTS.Zones, {
 						["questID"] = 36397,
 						["coord"] = { 43.8, 24.7, SPIRES_OF_ARAK },
 						["icon"] = 134746,
-						["g"] = {
+						["groups"] = {
 							i(115463),	-- Elixir of Shadow Sight
 						},
 					}),
@@ -1848,7 +1848,7 @@ root(ROOTS.Zones, {
 						["questID"] = 36401,
 						["coord"] = { 53.1, 84.5, SPIRES_OF_ARAK },
 						["icon"] = 134746,
-						["g"] = {
+						["groups"] = {
 							i(115463),	-- Elixir of Shadow Sight
 						},
 					}),
@@ -1857,7 +1857,7 @@ root(ROOTS.Zones, {
 						["questID"] = 36398,
 						["coord"] = { 69.2, 43.5, SPIRES_OF_ARAK },
 						["icon"] = 134746,
-						["g"] = {
+						["groups"] = {
 							i(115463),	-- Elixir of Shadow Sight
 						},
 					}),
@@ -1866,7 +1866,7 @@ root(ROOTS.Zones, {
 						["questID"] = 36395,
 						["coord"] = { 43.9, 15.0, SPIRES_OF_ARAK },
 						["icon"] = 134746,
-						["g"] = {
+						["groups"] = {
 							i(115463),	-- Elixir of Shadow Sight
 						},
 					}),
@@ -1875,7 +1875,7 @@ root(ROOTS.Zones, {
 						["questID"] = 36400,
 						["coord"] = { 55.6, 22.1, SPIRES_OF_ARAK },
 						["icon"] = 134746,
-						["g"] = {
+						["groups"] = {
 							i(115463),	-- Elixir of Shadow Sight
 						},
 					}),
@@ -1884,7 +1884,7 @@ root(ROOTS.Zones, {
 						["questID"] = 36399,
 						["coord"] = { 48.9, 62.5, SPIRES_OF_ARAK },
 						["icon"] = 134746,
-						["g"] = {
+						["groups"] = {
 							i(115463),	-- Elixir of Shadow Sight
 						},
 					}),
@@ -1892,21 +1892,21 @@ root(ROOTS.Zones, {
 						["questID"] = 36418,
 						["coord"] = { 36.5, 57.9, SPIRES_OF_ARAK },
 						["icon"] = 134746,
-						["g"] = {
+						["groups"] = {
 							i(116914),	-- Ephial's Grimoire
 						},
 					}),
 					o(234157, {	-- Fractured Sunstone
 						["questID"] = 36246,
 						["coord"] = { 50.5, 22.1, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(116919),	-- Fractured Sunstone
 						},
 					}),
 					o(235103, {	-- Garrison Supplies
 						["questID"] = 36420,
 						["coord"] = { 37.2, 47.5, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
@@ -1914,7 +1914,7 @@ root(ROOTS.Zones, {
 						["questID"] = 36451,
 						["coord"] = { 41.8, 50.5, SPIRES_OF_ARAK },
 						["description"] = "This treasure is bugged as of 8.0.1. The hammer can be seen in the cart from a distance but disappears when you approach it due to zone phasing. If you fly in fast enough, you can still loot it.",
-						["g"] = {
+						["groups"] = {
 							i(116918),	-- Garrison Workman's Hammer
 						},
 					}),
@@ -1924,7 +1924,7 @@ root(ROOTS.Zones, {
 						["questID"] = 36381,
 						["coord"] = { 61.1, 55.3, SPIRES_OF_ARAK },
 						["modelScale"] = 0.4,
-						["g"] = {
+						["groups"] = {
 							i(118240),	-- Anzu's Scything Talon
 						},
 					}),
@@ -1934,7 +1934,7 @@ root(ROOTS.Zones, {
 						["questID"] = 36386,
 						["coord"] = { 48.6, 44.4, SPIRES_OF_ARAK },
 						["icon"] = 132372,	-- TODO: not working
-						["g"] = {
+						["groups"] = {
 							i(118237),	-- Anzu's Malice
 						},
 					}),
@@ -1944,7 +1944,7 @@ root(ROOTS.Zones, {
 						["questID"] = 36388,
 						["coord"] = { 42.42, 26.69, SPIRES_OF_ARAK },
 						["icon"] = 132372,	-- TODO: not working
-						["g"] = {
+						["groups"] = {
 							i(118242),	-- Anzu's Scorn
 						},
 					}),
@@ -1954,7 +1954,7 @@ root(ROOTS.Zones, {
 						["questID"] = 36389,
 						["coord"] = { 46.9, 40.46, SPIRES_OF_ARAK },
 						["icon"] = 132372,	-- TODO: not working
-						["g"] = {
+						["groups"] = {
 							i(118238),	-- Anzu's Reach
 						},
 					}),
@@ -1964,7 +1964,7 @@ root(ROOTS.Zones, {
 						["questID"] = 36390,
 						["coord"] = { 57.01, 78.93, SPIRES_OF_ARAK },
 						["icon"] = 132372,	-- TODO: not working
-						["g"] = {
+						["groups"] = {
 							i(118241),	-- Anzu's Piercing Talon
 						},
 					}),
@@ -1974,14 +1974,14 @@ root(ROOTS.Zones, {
 						["questID"] = 36392,
 						["coord"] = { 52.0, 19.7, SPIRES_OF_ARAK },
 						["icon"] = 132372,	-- TODO: not working
-						["g"] = {
+						["groups"] = {
 							i(118239),	-- Anzu's Stoicism
 						},
 					}),
 					o(235141, {	-- Iron Horde Explosives
 						["questID"] = 36444,
 						["coord"] = { 50.4, 25.8, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(118691),	-- Iron Horde Explosives
 						},
 					}),
@@ -1992,14 +1992,14 @@ root(ROOTS.Zones, {
 					o(235091, {	-- Lost Ring
 						["questID"] = 36411,
 						["coord"] = { 47.8, 36.1, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(116911),	-- Outcast Decoder Ring
 						},
 					}),
 					o(235095, {	-- Misplaced Scroll
 						["questID"] = 36416,
 						["coord"] = { 52.5, 42.7, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
@@ -2007,7 +2007,7 @@ root(ROOTS.Zones, {
 						["questID"] = 36244,
 						["icon"] = 454060,
 						["coord"] = { 42.7, 18.3, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(109585),	-- Arakkoa Cipher
 						},
 					}),
@@ -2018,56 +2018,56 @@ root(ROOTS.Zones, {
 					o(232458, {	-- Nizzix's Chest
 						["questID"] = 35481,
 						["coord"] = { 60.9, 87.8, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(234744, {	-- Offering to the Raven Mother
 						["questID"] = 36403,
 						["coord"] = { 53.31, 55.51, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(118267),	-- Ravenmother Offering
 						},
 					}),
 					o(234746, {	-- Offering to the Raven Mother
 						["questID"] = 36405,
 						["coord"] = { 48.3, 52.6, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(118267),	-- Ravenmother Offering
 						},
 					}),
 					o(234748, {	-- Offering to the Raven Mother
 						["questID"] = 36406,
 						["coord"] = { 48.9, 54.7, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(118267),	-- Ravenmother Offering
 						},
 					}),
 					o(235073, {	-- Offering to the Raven Mother
 						["questID"] = 36407,
 						["coord"] = { 51.9, 64.6, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(118267),	-- Ravenmother Offering
 						},
 					}),
 					o(235090, {	-- Offering to the Raven Mother
 						["questID"] = 36410,
 						["coord"] = { 61.0, 63.8, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(118267),	-- Ravenmother Offering
 						},
 					}),
 					o(234740, {	-- Orcish Signaling Horn
 						["questID"] = 36402,
 						["coord"] = { 36.3, 39.5, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(120337),	-- Novice Rylak Hunter's Horn
 						},
 					}),
 					o(234432, {	-- Ogron Plunder
 						["questID"] = 36340,
 						["coord"] = { 58.7, 60.3, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(116922),	-- Burglar's Vest
 						},
 					}),
@@ -2089,7 +2089,7 @@ root(ROOTS.Zones, {
 					o(243280, {	-- Pirate Pepe
 						["coord"] = { 54.11, 83.61, SPIRES_OF_ARAK },
 						["timeline"] = { ADDED_6_2_0 },
-						["g"] = { i(127870) },	-- A Tiny Pirate Hat (Pepe!)
+						["groups"] = { i(127870) },	-- A Tiny Pirate Hat (Pepe!)
 					}),
 					o(234449, {	-- Relics of the Outcasts
 						["questID"] = 36355,
@@ -2131,7 +2131,7 @@ root(ROOTS.Zones, {
 						["description"] = "Buy 3 Rooby Treats from Miril Dumonde in the basement of the inn and feed them to Rooby on the main floor of the inn.  Follow Rooby and feed him each time he stops until he leaves his treasure.",
 						["questID"] = 36657,
 						["coord"] = { 37.3, 50.7, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(116887),	-- Rooby Roo's Ruby Rollar
 						},
 					}),
@@ -2154,21 +2154,21 @@ root(ROOTS.Zones, {
 					o(234458, {	-- Shattered Hand Cache
 						["questID"] = 36362,
 						["coord"] = { 56.2, 28.8, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					o(234456, {	-- Shattered Hand Lockbox
 						["questID"] = 36361,
 						["coord"] = { 47.9, 30.7, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(116920),	-- True Steel Lockbox
 						},
 					}),
 					o(235310, {	-- Shredder Parts
 						["questID"] = 36456,
 						["coord"] = { 60.9, 84.6, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
@@ -2187,7 +2187,7 @@ root(ROOTS.Zones, {
 							{ 61.9, 42.3, SPIRES_OF_ARAK },
 							{ 68.7, 44.6, SPIRES_OF_ARAK },
 						},
-						["g"] = {
+						["groups"] = {
 							i(199097),	-- Sacred Phoenix Ash
 						},
 					}),
@@ -2200,7 +2200,7 @@ root(ROOTS.Zones, {
 					o(234471, {	-- Spray-O-Matic 5000 XT
 						["questID"] = 36365,
 						["coord"] = { 59.7, 81.5, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
@@ -2223,7 +2223,7 @@ root(ROOTS.Zones, {
 					o(234461, {	-- Toxicfang Venom
 						["questID"] = 36364,
 						["coord"] = { 54.4, 32.4, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(118695),	-- Toxicfang Venom
 						},
 					}),
@@ -2238,7 +2238,7 @@ root(ROOTS.Zones, {
 						n(82459, {	-- Honest Jim
 							["description"] = "Use the |cFFFFD700Smuggling Run!|r ability to summon.",
 							["races"] = ALLIANCE_ONLY,
-							["g"] = {
+							["groups"] = {
 								i(113096, {	-- Bloodmane Charm (TOY!)
 									["isLimited"] = true,
 									["cost"] = 5000000,	-- 500g
@@ -2250,7 +2250,7 @@ root(ROOTS.Zones, {
 								}),
 								i(116915, {	-- Inactive Apexis Guardian
 									["isLimited"] = true,
-									["g"] = {
+									["groups"] = {
 										follower(168),	-- Ziri'ak
 									},
 								}),
@@ -2281,7 +2281,7 @@ root(ROOTS.Zones, {
 						n(84243, {	-- Linny "The Skinny" Leadpockets
 							["description"] = "Use the |cFFFFD700Smuggling Run!|r ability to summon.",
 							["races"] = HORDE_ONLY,
-							["g"] = {
+							["groups"] = {
 								i(113096, {	-- Bloodmane Charm (TOY!)
 									["isLimited"] = true,
 									["cost"] = 5000000,	-- 500g
@@ -2293,7 +2293,7 @@ root(ROOTS.Zones, {
 								}),
 								i(116915, {	-- Inactive Apexis Guardian
 									["isLimited"] = true,
-									["g"] = {
+									["groups"] = {
 										follower(168),	-- Ziri'ak
 									},
 								}),
@@ -2325,14 +2325,14 @@ root(ROOTS.Zones, {
 					n(82432, {	-- Miril Dumonde
 						["description"] = "Vendor only sells Admiral Taylor's Greatsword to those who have completed the associated quest.",
 						["coord"] = { 37.6, 50.8, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(118080),	-- Admiral Taylor's Greatsword
 						},
 					}),
 					n(87123, {	-- Vesharr
 						["description"] = "Items will be unavailable until you complete the pet battle daily quest |cFFFFD700Vesharr|r.",
 						["coord"] = { 46.4, 45.2, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(120051),	-- Kaliri Hatchling (PET!)
 							i(120050, {	-- Veilwatcher Hatchling (PET!)
 								["cost"] = 10000000,	-- 1,000g
@@ -2342,7 +2342,7 @@ root(ROOTS.Zones, {
 					n(88045, {	-- Zektar
 						["sourceQuest"] = 34991,	-- To the... Rescue? [May be earlier in chain, but was available at this point]
 						["coord"] = { 52.0, 50.4, SPIRES_OF_ARAK },
-						["g"] = {
+						["groups"] = {
 							i(199203, {	-- Phoenix Ash Talisman
 								["timeline"] = { ADDED_10_0_7 },
 								["cost"] = {

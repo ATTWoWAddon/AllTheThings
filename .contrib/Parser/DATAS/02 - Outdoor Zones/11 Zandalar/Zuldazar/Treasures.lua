@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			o(316863, {	-- Lost Zandalari Relic
 				["coord"] = { 46.6, 29.9, DAZARALOR },
-				["g"] = {
+				["groups"] = {
 					i(166506, {	-- Clump of Broken Loa Idols
 						i(166507),	-- Jani's First Offering (QS!)
 					}),

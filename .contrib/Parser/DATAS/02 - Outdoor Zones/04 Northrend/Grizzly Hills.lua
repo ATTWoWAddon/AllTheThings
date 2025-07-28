@@ -266,8 +266,8 @@ root(ROOTS.Zones, {
 						["qg"] = 27495,	-- Barblefink
 						["sourceQuest"] = 12443,	-- Seeking Solvent
 						["coord"] = { 23.0, 80.0, GRIZZLY_HILLS },
-						["cost"] = { { "i", 37664, 1 } },	-- Element 115
 						["timeline"] = { REMOVED_4_0_1 },
+						["cost"] = { { "i", 37664, 1 } },	-- Element 115
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 					})),
@@ -275,8 +275,8 @@ root(ROOTS.Zones, {
 						["qg"] = 27565,	-- Gurtor
 						["sourceQuest"] = 12433,	-- Seeking Solvent
 						["coord"] = { 11.1, 76.6, GRIZZLY_HILLS },
-						["cost"] = { { "i", 37664, 1 } },	-- Element 115
 						["timeline"] = { REMOVED_4_0_1 },
+						["cost"] = { { "i", 37664, 1 } },	-- Element 115
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 					})),
@@ -466,8 +466,8 @@ root(ROOTS.Zones, {
 					}),
 					q(12105, {	-- Descent into Darkness
 						["provider"] = { "i", 36940 },	-- Mikhail's Journal
-						["cr"] = 27546,	-- Silverbrook Hunter
 						["races"] = ALLIANCE_ONLY,
+						["cr"] = 27546,	-- Silverbrook Hunter
 						["groups"] = {
 							i(38734),	-- Abandoned Hood
 							i(39033),	-- Discarded Miner's Jerkin
@@ -873,8 +873,8 @@ root(ROOTS.Zones, {
 					})),
 					q(12423, {	-- Mikhail's Journal
 						["provider"] = { "i", 37830 },	-- Mikhail's Journal
-						["crs"] = { 27546 },	-- Silverbrook Hunter
 						["races"] = HORDE_ONLY,
+						["crs"] = { 27546 },	-- Silverbrook Hunter
 					}),
 					q(12225, {	-- Mmm... Amberseeds!
 						["provider"] = { "o", 188667 },	-- Amberseed
@@ -1020,9 +1020,9 @@ root(ROOTS.Zones, {
 					q(12770, {	-- Reallocating Resources
 						["qg"] = 26212,	-- Captain Gryan Stoutmantle
 						["altQuests"] = { 12789 },	-- Into the Breach
-						-- NOTE: This quest is mutually exclusive with 12789 (Into the Breach) from Dragonblight
 						["coord"] = { 59.4, 26.0, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
+						-- NOTE: This quest is mutually exclusive with 12789 (Into the Breach) from Dragonblight
 					}),
 					q(12212, {	-- Replenishing the Storehouse
 						["qg"] = 27277,	-- Master Woodsman Anderhol
@@ -1527,7 +1527,7 @@ root(ROOTS.Zones, {
 							i(36849),	-- Golem Blueprint Section 1 (QI!)
 							i(36850),	-- Golem Blueprint Section 2 (QI!)
 							i(36851),	-- Golem Blueprint Section 3 (QI!)
-						}
+						},
 					}),
 					q(11988, {	-- The Runic Keystone
 						["qg"] = 26361,	-- Torthen Deepdig

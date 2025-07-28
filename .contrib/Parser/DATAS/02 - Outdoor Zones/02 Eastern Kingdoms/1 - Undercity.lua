@@ -281,9 +281,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14729,	-- Ralston Farnsley
 					["sourceQuest"] = 7818,	-- A Donation of Runecloth
 					["coord"] = { 71.8, 29, UNDERCITY },
-					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["maxReputation"] = { FACTION_UNDERCITY, EXALTED },	-- Undercity, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
@@ -322,8 +322,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1473, {	-- Creature of the Void [Undercity]
 					["qg"] = 5675,	-- Carendin Halgar
-					["sourceQuest"] = 1478,	-- Halgar's Summons
 					["altQuests"] = { 1501 },	-- Creature of the Void [Orgrimmar]
+					["sourceQuest"] = 1478,	-- Halgar's Summons
 					["coord"] = { 85, 25.6, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { TIRISFAL_GLADES },
@@ -374,14 +374,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						6018,	-- Ur'kyo <Priest Trainer>
 						3044,	-- Miles Welsh <Priest Trainer>
 					},
+					["altQuests"] = {
+						5646,	-- Devouring Plague [Orgrimmar]
+						5644,	-- Devouring Plague [Thunder Bluff]
+					},
 					["coords"] = {
 						{ 49.0, 18.3, UNDERCITY },
 						{ 35.6, 87.6, ORGRIMMAR },
 						{ 26.0, 15.8, THUNDER_BLUFF },
-					},
-					["altQuests"] = {
-						5646,	-- Devouring Plague [Orgrimmar]
-						5644,	-- Devouring Plague [Thunder Bluff]
 					},
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
@@ -400,11 +400,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if NOT ANYCLASSIC
 				q(5679, {	-- Devouring Plague [Undercity]
 					["qg"] = 4606,	-- Aelthalyste
-					["coord"] = { 49.01, 18.32, UNDERCITY },
 					["altQuests"] = {
 						5646,	-- Devouring Plague [Orgrimmar]
 						5644,	-- Devouring Plague [Thunder Bluff]
 					},
+					["coord"] = { 49.01, 18.32, UNDERCITY },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
@@ -543,8 +543,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1478, {	-- Halgar's Summons
 					["qg"] = 5724,	-- Ageron Kargal
-					["coord"] = { 61.6, 52.6, TIRISFAL_GLADES },
 					["altQuests"] = { 1506 },	-- Gan'rul's Summons
+					["coord"] = { 61.6, 52.6, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
@@ -602,13 +602,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if NOT ANYCLASSIC
 				q(5657, {	-- Hex of Weakness [Undercity]
 					["qg"] = 4606,	-- Aelthalyste <Priest Trainer>
-					["coord"] = { 49.01, 18.32, UNDERCITY },
 					["altQuests"] = {
 						5652,	-- Hex of Weakness [Orgrimmar]
 						5654,	-- Hex of Weakness [Durotar]
 						5655,	-- Hex of Weakness [Mulgore]
 						5656,	-- Hex of Weakness [Thunder Bluff]
 					},
+					["coord"] = { 49.01, 18.32, UNDERCITY },
 					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
@@ -1074,8 +1074,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if ANYCLASSIC
 				q(65597, {	-- The Binding (Incubus) [Undercity]
 					["qg"] = 5675,	-- Carendin Halgar
-					["sourceQuest"] = 65593,	-- Hearts of the Lovers
 					["altQuests"] = { 65604 },	-- The Binding (Incubus) [Orgrimmar]
+					["sourceQuest"] = 65593,	-- Hearts of the Lovers
 					["coord"] = { 85, 25.6, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
@@ -1097,8 +1097,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				q(1474, {	-- The Binding (Succubus) [Undercity]
 					["qg"] = 5675,	-- Carendin Halgar
-					["sourceQuest"] = 1476,	-- Hearts of the Pure
 					["altQuests"] = { 1513 },	-- The Binding (Succubus) [Orgrimmar]
+					["sourceQuest"] = 1476,	-- Hearts of the Pure
 					["coord"] = { 85, 25.6, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
@@ -1119,8 +1119,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1471, {	-- The Binding (Voidwalker) [Undercity]
 					["qg"] = 5675,	-- Carendin Halgar
-					["sourceQuest"] = 1473,	-- Creature of the Void [Undercity]
 					["altQuests"] = { 1504 },	-- The Binding (Voidwalker) [Orgrimmar]
+					["sourceQuest"] = 1473,	-- Creature of the Void [Undercity]
 					["coord"] = { 85, 25.6, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
@@ -1353,18 +1353,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						6018,	-- Ur'kyo <Priest Trainer>
 						3044,	-- Miles Welsh <Priest Trainer>
 					},
+					["altQuests"] = {
+						5660,	-- Touch of Weakness [Durotar]
+						5661,	-- Touch of Weakness [Mulgore]
+						5662,	-- Touch of Weakness [Orgrimmar]
+						5663,	-- Touch of Weakness [Thunder Bluff]
+					},
 					["coords"] = {
 						{ 49.01, 18.32, UNDERCITY },
 						{ 54.2, 42.8, DUROTAR },
 						{ 47.0, 58.8, MULGORE },
 						{ 35.6, 87.6, ORGRIMMAR },
 						{ 26.0, 15.8, THUNDER_BLUFF },
-					},
-					["altQuests"] = {
-						5660,	-- Touch of Weakness [Durotar]
-						5661,	-- Touch of Weakness [Mulgore]
-						5662,	-- Touch of Weakness [Orgrimmar]
-						5663,	-- Touch of Weakness [Thunder Bluff]
 					},
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
@@ -1383,13 +1383,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if NOT ANYCLASSIC
 				q(5658, {	-- Touch of Weakness [Undercity]
 					["qg"] = 4606,	-- Aelthalyste
-					["coord"] = { 49.0, 18.3, UNDERCITY },
 					["altQuests"] = {
 						5660,	-- Touch of Weakness [Durotar]
 						5661,	-- Touch of Weakness [Mulgore]
 						5662,	-- Touch of Weakness [Orgrimmar]
 						5663,	-- Touch of Weakness [Thunder Bluff]
 					},
+					["coord"] = { 49.0, 18.3, UNDERCITY },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },

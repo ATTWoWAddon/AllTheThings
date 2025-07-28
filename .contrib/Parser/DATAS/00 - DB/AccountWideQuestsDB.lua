@@ -1870,6 +1870,7 @@ ExportDB.AccountWideQuestsDB = {
 	[87335] = true,	-- Echoing Lessons
 	[87336] = true,	-- Remembering Again and Again
 	[87374] = true,	-- C.H.E.T.T.ing In
+	[87445] = true,	-- Smartest in Town's Attire
 	[87496] = true,	-- Benefit Packages
 	[88652] = true,	-- Faceless Mask of the Nemesis
 	[88803] = true,	-- Timely Assistance

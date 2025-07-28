@@ -361,7 +361,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			2052,	-- The Grand Design
 			2061,	-- Ephemeral Plains
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(15493, {	-- Ephemeral Plains
 					crit(53151, {	-- Vigilant Guardian
@@ -505,7 +505,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						15396,	-- We Are All Made of Stars
 						15494,	-- Damnation Aviation
 					}},
-					["g"] = {
+					["groups"] = {
 						i(187675),	-- Shimmering Aurelid (MOUNT!)
 					},
 				}),
@@ -653,7 +653,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				n(185032, {	-- Taskmaster Xy'pro <Cartel Xy>
 					["description"] = "Killed when having 3 stacks of Synergy",
 					["coord"] = { 22.0, 38.0, 2061 },
-					["g"] = {
+					["groups"] = {
 						i(190727),	-- Security Override Orb
 					},
 				}),
@@ -665,7 +665,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					["questID"] = 66285,
 					["cost"] = {{ "i", 190727, 1 }},	-- 1 Security Override Orb
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(189175),	-- Mawforged Bridle (PS!)
 						i(189991),	-- Snail Soul (SS!)
 					},
@@ -673,14 +673,14 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				o(375905, {	-- Protoform Schematic
 					["description"] = "Prior to the Vigilant Guardian encounter, under the north-eastern 'island' in a chain.",
 					["coord"] = { 45.4, 32.6, 2047 },
-					["g"] = {
+					["groups"] = {
 						i(189461),	-- Schematic: Serenade (PS!)
 					},
 				}),
 				o(375907, {	-- Protoform Schematic
 					["description"] = "Located on the North side of the 2nd encounter area after defeating Halondrus.",
 					["coord"] = { 63.2, 51.9, 2061 },
-					["g"] = {
+					["groups"] = {
 						i(189476),	-- Schematic: Curious Crystalsniffer (PS!)
 					},
 				}),
@@ -691,7 +691,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				["sourceQuests"] = { 64842 },	-- Flora Frenzy
 				["modelScale"] = 4,
 				["catalystID"] = 2,	-- ItemBonus.Value_0 SL:S4
-				["g"] = {
+				["groups"] = {
 					Difficulty(DIFFICULTY.RAID.LFR, {["upgradeTrackID"]=8131}).AddGroups(
 						sharedData({["cost"] = {{"i",190189,2070}}},	-- 2070 Sandworn Relic, Full set cost from Vendor
 						ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.LFR))
@@ -949,7 +949,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				n(QUESTS, {
 					q(65764, {	-- Sepulcher of the First Ones - Heavy is the Crown [N]
 						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
-						["g"] = {
+						["groups"] = {
 							i(190967),	-- Mourne Fragment (QI!)
 						},
 					}),
@@ -973,7 +973,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH },
 					},{
 						["provider"] = { "i", 190773 },	-- Carcinized Protoform
-						["g"] = {
+						["groups"] = {
 							i(190771),	-- Carcinized Zerethsteed (MOUNT!)
 						},
 					})),
@@ -1002,7 +1002,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				n(QUESTS, {
 					q(65763, {	-- Sepulcher of the First Ones - Heavy is the Crown [H]
 						["provider"] = { "n", 184601 },	-- Highlord Bolvar Fordragon
-						["g"] = {
+						["groups"] = {
 							i(190966),	-- Mourne Fragment (QI!)
 						},
 					}),
@@ -1027,7 +1027,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 							184601,	-- Highlord Bolvar Fordragon
 							188683,	-- Knight of the Ebon Blade
 						},	--
-						["g"] = { i(190959) },	-- Mourne Fragment (QI!)
+						["groups"] = { i(190959) },	-- Mourne Fragment (QI!)
 					}),
 				}),
 				ZoneDrops(),
@@ -1072,13 +1072,13 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				Boss(THE_JAILER, bubbleDown({["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 					ach(15476, {	-- Hall of Fame: The Jailer (A)
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["groups"] = {
 							title(454),	-- <Name>, Famed Slayer of The Banished One
 						},
 					}),
 					ach(15475, {	-- Hall of Fame: The Jailer (H)
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["groups"] = {
 							title(454),	-- <Name>, Famed Slayer of The Banished One
 						},
 					}),

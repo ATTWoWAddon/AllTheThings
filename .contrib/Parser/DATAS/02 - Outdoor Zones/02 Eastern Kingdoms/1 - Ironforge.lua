@@ -321,11 +321,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(5641, {	-- A Lack of Fear
 					["qg"] = 11406,	-- High Priest Rohan <Priest Trainer>
-					["coord"] = { 25, 8.2, IRONFORGE },
 					["altQuests"] = {
 						5647,	-- A Lack of Fear [Darnassus]
 						5645,	-- A Lack of Fear [Stormwind City]
 					},
+					["coord"] = { 25, 8.2, IRONFORGE },
 					["timeline"] = { REMOVED_2_3_0 },
 					["classes"] = { PRIEST },
 					["races"] = { DWARF },
@@ -408,9 +408,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14723,	-- Mistina Steelshield
 					["sourceQuest"] = 7805,	-- A Donation of Runecloth
 					["coord"] = { 43.2, 31.9, IRONFORGE },
-					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["maxReputation"] = { FACTION_IRONFORGE, EXALTED },	-- Ironforge, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
@@ -419,9 +419,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14724,	-- Bubulo Acerbus
 					["sourceQuest"] = 7811,	-- A Donation of Runecloth
 					["coord"] = { 74.1, 48.1, IRONFORGE },
-					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["maxReputation"] = { FACTION_GNOMEREGAN, EXALTED },	-- Gnomeregan Exiles, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
@@ -437,11 +437,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if NOT ANYCLASSIC
 				q(5677, {	-- Arcane Feedback [Ironforge]
 					["qg"] = 11406,	-- High Priest Rohan <Priest Trainer>
-					["coord"] = { 26.4, 7.6, IRONFORGE },
 					["altQuests"] = {
 						5676,	-- Arcane Feedback [Stormwind City]
 						5678,	-- Arcane Feedback [Darnassus]
 					},
+					["coord"] = { 26.4, 7.6, IRONFORGE },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN },
 					["classes"] = { PRIEST },
@@ -530,10 +530,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7342, {	-- Arrows Are For Sissies
 					["qg"] = 14183,	-- Artilleryman Sheldonore
 					["coord"] = { 19.6, 52.2, IRONFORGE },
+					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.1
 					["cost"] = { { "i", 15997, 200 } },	-- Thorium Shells
 					-- #endif
-					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 52,
@@ -620,11 +620,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if NOT ANYCLASSIC
 				q(5675, {	-- Elune's Grace [Ironforge]
 					["qg"] = 11406,	-- High Priest Rohan <Priest Trainer>
-					["coord"] = { 25, 8.2, IRONFORGE },
 					["altQuests"] = {
 						5672,	-- Elune's Grace [Darnassus]
 						5673,	-- Elune's Grace [Stormwind City]
 					},
+					["coord"] = { 25, 8.2, IRONFORGE },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
@@ -642,7 +642,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if NOT ANYCLASSIC
 				q(5639, {	-- Desperate Prayer
 					["qg"] = 11406,	-- High Priest Rohan <Priest Trainer>
-					["coord"] = { 26.4, 7.6, IRONFORGE },
 					["altQuests"] = {
 						5634,	-- Desperate Prayer [Stormwind City #1]
 						5635,	-- Desperate Prayer [Elwynn Forest]
@@ -651,6 +650,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5638,	-- Desperate Prayer [Stormwind City #2]
 						5640,	-- Desperate Prayer [Darnassus]
 					},
+					["coord"] = { 26.4, 7.6, IRONFORGE },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN, DWARF },
 					["classes"] = { PRIEST },
@@ -694,13 +694,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1618, {	-- Gearing Redridge
 					["qg"] = 6031,	-- Tormus Deepforge
 					["coord"] = { 48.6, 43, IRONFORGE },
-					["requireSkill"] = BLACKSMITHING,
-					["learnedAt"] = 60,
 					["maps"] = { REDRIDGE_MOUNTAINS },
 					["cost"] = {
 						{ "i", 2857, 4 },	-- Runed Copper Belt
 						{ "i", 6214, 4 },	-- Heavy Copper Maul
 					},
+					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 60,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6735, {	-- Plans: Ironforge Breastplate (RECIPE!)
@@ -745,8 +745,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(6609, {	-- I Got Nothin' Left!
 					["qg"] = 5161,	-- Grimnur Stonebrand <Fishing Trainer>
-					["description"] = "Requires 225 Fishing to start this quest.",
 					["coord"] = { 48.2, 6.6, IRONFORGE },
+					["description"] = "Requires 225 Fishing to start this quest.",
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
@@ -757,8 +757,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5159,	-- Daryl Riknussun
 					["coord"] = { 60.1, 36.5, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
 					["requireSkill"] = COOKING,
+					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 35,
 				}),
@@ -924,8 +924,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				q(1880,	{	-- Mage-tastic Gizmonitor
 					["qg"] = 5144,	-- Bink <Mage Trainer>
-					["sourceQuest"] = 1879,	-- Speak with Bink
 					["altQuests"] = { 1861 },	-- Mirror Lake
+					["sourceQuest"] = 1879,	-- Speak with Bink
 					["coord"] = { 27.3, 8.3, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DUN_MOROGH },
@@ -1068,7 +1068,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if NOT ANYCLASSIC
 				q(5633, {	-- Returning Home [Ironforge]
 					["qg"] = 5142,	-- Braenna Flintcrag <Priest Trainer>
-					["coord"] = { 24.6, 9.2, IRONFORGE },
 					["altQuests"] = {
 						5627,	-- Returning Home [Darnassus]
 						5628,	-- Returning Home [Elwynn Forest]
@@ -1077,6 +1076,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5631,	-- Returning Home [Stormwind City]
 						5632,	-- Returning Home [Stormwind City]
 					},
+					["coord"] = { 24.6, 9.2, IRONFORGE },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
@@ -1134,18 +1134,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				q(3641, {	-- Show Your Work
 					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
-					["sourceQuest"] = 3640,	-- The Pledge of Secrecy
 					["altQuests"] = { 3639, 3643 },	-- Show Your Work
+					["sourceQuest"] = 3640,	-- The Pledge of Secrecy
 					["coord"] = { 69.8, 50.2, IRONFORGE },
 					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
-					["requireSkill"] = ENGINEERING,
-					["learnedAt"] = 200,
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 4392, 2 },	-- Advanced Target Dummy
 						{ "i", 4407, 1 },	-- Accurate Scope
 						{ "i", 10559, 6 },	-- Mithril Tube
 					},
+					["requireSkill"] = ENGINEERING,
+					["learnedAt"] = 200,
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
 						i(10790),	-- Gnome Engineer Membership Card
@@ -1171,13 +1171,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1578, {	-- Supplying the Front
 					["qg"] = 6031,	-- Tormus Deepforge
 					["coord"] = { 48.5, 43, IRONFORGE },
-					["requireSkill"] = BLACKSMITHING,
-					["learnedAt"] = 30,
 					["maps"] = { LOCH_MODAN },
 					["cost"] = {
 						{ "i", 2845, 6 },	-- Copper Axe
 						{ "i", 2851, 6 },	-- Copper Chain Belt
 					},
+					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						-- #if AFTER TBC
@@ -1217,12 +1217,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				q(3640, {	-- The Pledge of Secrecy
 					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
+					["altQuests"] = { 3638, 3642 },	-- The Pledge of Secrecy
 					["sourceQuests"] = {
 						3630,	-- Gnome Engineering
 						3630,	-- Gnome Engineering
 						3630,	-- Gnome Engineering
 					},
-					["altQuests"] = { 3638, 3642 },	-- The Pledge of Secrecy
 					["coord"] = { 69.8, 50.2, IRONFORGE },
 					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["requireSkill"] = ENGINEERING,
@@ -1290,12 +1290,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1645, {	-- The Tome of Divinity (1a/8)
 					["qg"] = 6179,	-- Tiza Battleforge
+					["altQuests"] = { 1646 },	-- The Tome of Divinity (2/8)
 					["sourceQuests"] = {
 						2997,	-- The Tome of Divinity [Dun Morogh]
 						2999,	-- The Tome of Divinity [Ironforge]
 						3000,	-- The Tome of Divinity [Stormwind City]
 					},
-					["altQuests"] = { 1646 },	-- The Tome of Divinity (2/8)
 					["coord"] = { 27.4, 12, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
@@ -1418,14 +1418,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1678, {	-- Vejrek
 					["qg"] = 6114,	-- Muren Stormpike
-					["sourceQuests"] = {
-						1638,	-- A Warrior's Training
-						1684,	-- Elanaria
-						1679,	-- Muren Stormpike
-						-- #if AFTER TBC
-						9582,	-- Strength of One
-						-- #endif
-					},
 					["altQuests"] = {
 						1665,	-- Bartleby's Mug
 						-- #if AFTER TBC
@@ -1433,6 +1425,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 						--1678,	-- Vejrek
 						1683,	-- Vorlus Vilehoof
+					},
+					["sourceQuests"] = {
+						1638,	-- A Warrior's Training
+						1684,	-- Elanaria
+						1679,	-- Muren Stormpike
+						-- #if AFTER TBC
+						9582,	-- Strength of One
+						-- #endif
 					},
 					["coord"] = { 70.6, 90.4, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },

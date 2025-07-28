@@ -5,7 +5,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(417, {	-- Temple of Kotmogu
 		["icon"] = 623704,
 		["timeline"] = { ADDED_5_0_4 },
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(6981, {	-- Master of Temple of Kotmogu
 					-- Meta Achievement should symlink the contained Achievements from Source

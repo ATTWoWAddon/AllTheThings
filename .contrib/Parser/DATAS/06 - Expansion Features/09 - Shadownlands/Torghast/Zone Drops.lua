@@ -10,7 +10,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					176578,	-- Vault Sentinel
 					179526,	-- Troz'igal the Oppressor
 				},
-				["g"] = {
+				["groups"] = {
 					i(187093),	-- Gilded Ornamental Mantle
 					i(187091),	-- Gilded Twin-Scythe Shoulders
 					i(187876),	-- Saurolisk Hatchling Soul (AV)

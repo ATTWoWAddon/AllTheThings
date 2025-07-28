@@ -8,11 +8,11 @@ root(ROOTS.ExpansionFeatures,
 			n(BUILDINGS, {
 				garrisonBuilding(39, {	-- Spirit Lodge / Mage Tower (rank 1: 37, rank 2: 38, rank 3: 39)
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
 						n(ACHIEVEMENTS, {
 							ach(9497, {		-- Finding Your Waystones
 								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-								["g"] = {
+								["groups"] = {
 									a(i(109063)),	-- Mage Tower, Level 3 [Blueprints]
 									h(i(116197)),	-- Spirit Lodge, Level 3 [Blueprints]
 								},
@@ -20,11 +20,11 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						n(QUESTS, {
 							q(36848, {	-- Ogre Waygates
-								["cost"] = { { "i", 117491, 25 } },	-- x25 Ogre Waystone
-								["providers"] = {
-									{ "n", 77367 },	-- Archmage Kem (A)
-									{ "n", 79836 },	-- Gez'la (H)
+								["qgs"] = {
+									77367,	-- Archmage Kem (A)
+									79836,	-- Gez'la (H)
 								},
+								["cost"] = { { "i", 117491, 25 } },	-- x25 Ogre Waystone
 							}),
 							q(38354, {	-- Portable Portals
 								["provider"] = { "n", 77367 },	-- Archmage Kem

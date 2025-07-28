@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					{"find","headerID",SPECIAL},	-- get Special
 					{"find","filterID",PLATE},{"pop"},	-- get Plate
 				},
-				["g"] = {
+				["groups"] = {
 					i(153255),	-- Isolon Anchorite's Cudgel
 				},
 			}),
@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48562,
 				["isDaily"] = true,
 				["coord"] = { 33.6, 75.2, KROKUUN },
-				["g"] = {
+				["groups"] = {
 					i(153113),	-- Demon's Soulstone
 				},
 			}),
@@ -34,7 +34,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					{"find","headerID",SPECIAL},	-- get Special
 					{"find","filterID",PLATE},{"pop"},	-- get Plate
 				},
-				["g"] = {
+				["groups"] = {
 					i(153299),	-- Militant Exarch's Shortsword
 				},
 			}),
@@ -52,7 +52,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					{"find","headerID",SPECIAL},	-- get Special
 					{"find","filterID",PLATE},{"pop"},	-- get Plate
 				},
-				["g"] = {
+				["groups"] = {
 					i(153316),	-- Praetor's Ornamental Edge
 				},
 			}),
@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48667,
 				["isDaily"] = true,
 				["coord"] = { 71, 32.4, KROKUUN },
-				["g"] = {
+				["groups"] = {
 					i(153190),	-- Fel-Spotted Egg
 				},
 			}),
@@ -75,7 +75,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48565,
 				["isDaily"] = true,
 				["coord"] = { 53.0, 31.0, KROKUUN },
-				["g"] = {
+				["groups"] = {
 					i(153124),	-- Spire of Spite (TOY!)
 				},
 			}),
@@ -88,7 +88,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					{"find","headerID",SPECIAL},	-- get Special
 					{"find","filterID",PLATE},{"pop"},	-- get Plate
 				},
-				["g"] = {
+				["groups"] = {
 					i(153329),	-- Mystic Wakener's Blade
 				},
 			}),
@@ -106,7 +106,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					{"find","headerID",SPECIAL},	-- get Special
 					{"find","filterID",PLATE},{"pop"},	-- get Plate
 				},
-				["g"] = {
+				["groups"] = {
 					i(153263),	-- Enclave Aspirant's Cleaver
 				},
 			}),
@@ -114,7 +114,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["questID"] = 48629,
 				["isDaily"] = true,
 				["coord"] = { 61.0, 20.6, KROKUUN },
-				["g"] = {
+				["groups"] = {
 					i(153114),	-- Nathrezim Tome of Manipulation
 				},
 			}),

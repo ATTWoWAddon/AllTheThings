@@ -92,8 +92,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 8464,	-- Winterfall Activity
 					["coord"] = { 27.8, 34.6, WINTERSPRING },
 					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
-					["cost"] = { { "i", 21383, 5 } },	-- Winterfall Spirit Beads
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 21383, 5 } },	-- Winterfall Spirit Beads
 					["repeatable"] = true,
 					["lvl"] = 50,
 				}),
@@ -219,8 +219,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28522,	-- Winterfall Activity
 					["coord"] = { 21.0, 46.1, WINTERSPRING },
 					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
-					["cost"] = { { "i", 21383, 5 } },	-- Winterfall Spirit Beads
 					["timeline"] = { ADDED_4_0_3 },
+					["cost"] = { { "i", 21383, 5 } },	-- Winterfall Spirit Beads
 					["repeatable"] = true,
 				}),
 				q(6031, {	-- Runecloth
@@ -437,9 +437,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 15395,	-- Nafien
 					--["sourceQuest"] = 28368,	-- Fire in the Hole!	TODO: could be earlier, but was available at this point //Fire in the Hole! is Horde only so cannot be the correct sourcequest
 					["coord"] = { 64.0, 10.4, FELWOOD },
+					["description"] = "Only available above level 40.",
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
-					["description"] = "Only available above level 40.",
 				}),
 			}),
 			n(VENDORS, {

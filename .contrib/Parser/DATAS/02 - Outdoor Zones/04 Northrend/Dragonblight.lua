@@ -249,28 +249,28 @@ root(ROOTS.Zones, {
 				}),
 				n(QUESTS, {
 					q(12439, {	-- A Disturbance In The West
+						["qg"] = 27158,	-- Vas the Unstable
 						["coord"] = { 78.9, 45.3, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 27158,	-- Vas the Unstable
 						["isBreadcrumb"] = true,
 					}),
 					q(12274, {	-- A Fall From Grace
-						["coord"] = { 73.5, 73.5, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27350,	-- Agent Skully
 						["sourceQuest"] = 12260,	-- The Perfect Dissemblance
+						["coord"] = { 73.5, 73.5, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12067, {	-- A Letter for Home (A)
-						["crs"] = { 26762 },	-- Captain Emmy Malin
+						["provider"] = { "i", 36756 },	-- Captain Malin's Letter
 						["coord"] = { 26.3, 64.9, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "i", 36756 },	-- Captain Malin's Letter
+						["crs"] = { 26762 },	-- Captain Emmy Malin
 					}),
 					q(12085, {	-- A Letter for Home (H)
-						["crs"] = { 26815 },	-- Lieutenant Ta'zinni
+						["provider"] = { "i", 36780 },	-- Lieutenant Ta'zinni's Letter
 						["coord"] = { 32.5, 71.7, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
-						["provider"] = { "i", 36780 },	-- Lieutenant Ta'zinni's Letter
+						["crs"] = { 26815 },	-- Lieutenant Ta'zinni
 					}),
 					q(13266, {	-- A Life Without Regret
 						["qg"] = 31412,	-- Thrall
@@ -280,10 +280,10 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(12240, {	-- A Means to an End
-						["coord"] = { 77.0, 62.9, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27248,	-- Apothecary Vicky Levine
 						["sourceQuest"] = 12230,	-- Stealing from the Siegesmiths
+						["coord"] = { 77.0, 62.9, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Foreman Kaleiki slain
 								["provider"] = { "n", 27238 },	-- Foreman Kaleiki
@@ -291,10 +291,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12321, {	-- A Righteous Sermon
-						["coord"] = { 76.7, 47.4, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27316,	-- Inquisitor Hallard
 						["sourceQuest"] = 12320,	-- Understanding the Language of Death
+						["coord"] = { 76.7, 47.4, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(37993),	-- Glade Wanderer Boots
 							i(37950),	-- Highseas Wristwraps
@@ -303,39 +303,39 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12055, {	-- A Strange Device (A)
-						["crs"] = { 26349 },	-- Goramosh
-						["coord"] = { 19.5, 58.1, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "i", 36742 },	-- Goramosh's Strange Device
-						["description"] = "Must be on or have completed |cFFFFD700Prevent the Accord|r.",
 						["sourceQuest"] = 12000,	-- Rifle the Bodies (A)
+						["coord"] = { 19.5, 58.1, DRAGONBLIGHT },
+						["description"] = "Must be on or have completed |cFFFFD700Prevent the Accord|r.",
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = { 26349 },	-- Goramosh
 					}),
 					q(12059, {	-- A Strange Device (H)
-						["crs"] = { 26349 },	-- Goramosh
-						["coord"] = { 19.5, 58.1, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["provider"] = { "i", 36746 },	-- Goramosh's Strange Device
-						["description"] = "Must be on or have completed |cFFFFD700Prevent the Accord|r.",
 						["sourceQuest"] = 11999,	-- Rifle the Bodies (H)
+						["coord"] = { 19.5, 58.1, DRAGONBLIGHT },
+						["description"] = "Must be on or have completed |cFFFFD700Prevent the Accord|r.",
+						["races"] = HORDE_ONLY,
+						["crs"] = { 26349 },	-- Goramosh
 					}),
 					q(11977, {	-- A Tauren Among Taunka
-						["coord"] = { 12.7, 51.7, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26156,	-- Wartook Iceborn
 						["sourceQuest"] = 11930,	-- Across Transborea
+						["coord"] = { 12.7, 51.7, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(12008, {	-- Agmar's Hammer
-						["coord"] = { 13.2, 48.3, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26181,	-- Emissary Brighthoof
 						["sourceQuest"] = 11983,	-- Blood Oath of the Horde
+						["coord"] = { 13.2, 48.3, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12140, {	-- All Hail Roanauk!
-						["coord"] = { 38.0, 46.3, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26379,	-- Overlord Agmar
 						["sourceQuest"] = 12069,	-- Return of the High Chief
+						["coord"] = { 38.0, 46.3, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(38002),	-- Honorborn Cloak
 							i(37960),	-- Oath Signet
@@ -344,16 +344,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12473, {	-- An End And A Beginning
-						["coord"] = { 81.1, 50.6, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27857,	-- Legion Commander Yorik
 						["sourceQuest"] = 12472,	-- Finality
+						["coord"] = { 81.1, 50.6, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12040, {	-- An Enemy in Arthas
-						["coord"] = { 26.1, 50.7, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26653,	-- Kilix the Unraveler
 						["sourceQuest"] = 12034,	-- Victory Nears...
+						["coord"] = { 26.1, 50.7, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/6 Anub'ar Underlord slain
 								["provider"] = { "n", 26605 },	-- Anub'ar Underlord
@@ -361,15 +361,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12077, {	-- Apply This Twice A Day
-						["coord"] = { 59.3, 18.1, DRAGONBLIGHT },
 						["qg"] = 26659,	-- Zort
 						["sourceQuest"] = 12076,	-- Messy Business
+						["coord"] = { 59.3, 18.1, DRAGONBLIGHT },
 					}),
 					q(12083, {	-- Atop the Woodlands (A)
-						["coord"] = { 29.0, 55.4, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26673,	-- Image of Archmage Modera
 						["sourceQuest"] = 12065,	-- The Focus on the Beach
+						["coord"] = { 29.0, 55.4, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(38029),	-- Azurehunter Handguards
 							i(38093),	-- Dalaran Sentry Wristbraces
@@ -378,10 +378,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12084, {	-- Atop the Woodlands (H)
-						["coord"] = { 38.0, 46.2, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						["sourceQuest"] = 12066,	-- The Focus on the Beach
+						["coord"] = { 38.0, 46.2, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(38029),	-- Azurehunter Handguards
 							i(38093),	-- Dalaran Sentry Wristbraces
@@ -390,38 +390,38 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12071, {	-- Attack by Air!
-						["coord"] = { 36.6, 46.5, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26415,	-- Senior Sergeant Juktok
 						["sourceQuest"] = 12053,	-- The Might of the Horde
+						["coord"] = { 36.6, 46.5, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12172, {	-- Attunement to Dalaran (A)
+						["qg"] = 26673,	-- Image of Archmage Modera
 						["coord"] = { 28.9, 55.4, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
 						["classes"] = { MAGE },
-						["qg"] = 26673,	-- Image of Archmage Modera
 					}),
 					q(12173, {	-- Attunement to Dalaran (H)
+						["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						["coord"] = { 38.0, 46.2, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
 						["classes"] = { MAGE },
-						["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 					}),
 					q(12495, {	-- Audience With The Dragon Queen (A)
-						["coord"] = { 37.8, 23.4, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27872,	-- Highlord Bolvar Fordragon
 						["sourceQuest"] = 12474,	-- To Fordragon Hold!
+						["coord"] = { 37.8, 23.4, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12496, {	-- Audience With The Dragon Queen (H)
-						["coord"] = { 40.7, 18.0, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 25257,	-- Saurfang the Younger
 						["sourceQuest"] = 12224,	-- The Kor'kron Vanguard!
+						["coord"] = { 40.7, 18.0, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12006, {	-- Avenge this Atrocity!
-						["coord"] = { 24.1, 60.0, DRAGONBLIGHT },
 						["qg"] = 26501,	-- Ethenial Moonshadow
+						["coord"] = { 24.1, 60.0, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/15 Blue Dragonflight forces at Moonrest Gardens slain
 								["providers"] = {
@@ -435,9 +435,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12304, {	-- Beachfront Property
+						["qg"] = 32599,	-- Surveyor Hansen
 						["coord"] = { 79.3, 65.0, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
-						["qg"] = 32599,	-- Surveyor Hansen
 						["groups"] = {
 							objective(1, {	-- 0/20 Forgotten ghosts slain
 								["providers"] = {
@@ -451,10 +451,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12039, {	-- Black Blood of Yogg-Saron
-						["coord"] = { 36.6, 47.1, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26564,	-- Borus Ironbender
 						["sourceQuest"] = 12034,	-- Victory Nears...
+						["coord"] = { 36.6, 47.1, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/10 Black Blood of Yogg-Saron Sample
 								["providers"] = {
@@ -465,10 +465,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12072, {	-- Blightbeasts be Damned!
-						["coord"] = { 37.2, 45.7, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26574,	-- Valnok Windrager
 						["sourceQuest"] = 12071,	-- Attack by Air!
+						["coord"] = { 37.2, 45.7, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/25 Anub'ar Blightbeast slain
 								["provider"] = { "n", 26607 },	-- Anub'ar Blightbeast
@@ -480,21 +480,21 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12206, {	-- Blighted Last Rites
+						["qg"] = 27248,	-- Apothecary Vicky Levine
 						["coord"] = { 76.9, 62.9, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
-						["qg"] = 27248,	-- Apothecary Vicky Levine
 					}),
 					q(11983, {	-- Blood Oath of the Horde
-						["coord"] = { 13.2, 48.3, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26181,	-- Emissary Brighthoof
 						["sourceQuest"] = 11978,	-- Into the Fold
+						["coord"] = { 13.2, 48.3, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12232, {	-- Bombard the Ballistae
-						["coord"] = { 76.4, 62.5, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27320,	-- Deathguard Molder
 						["sourceQuest"] = 12230,	-- Stealing from the Siegesmiths
+						["coord"] = { 76.4, 62.5, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(37992),	-- Ritual Neckguard
 							i(37949),	-- Saboteur's Wrap
@@ -502,10 +502,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12462, {	-- Breaking Off A Piece
-						["coord"] = { 85.8, 51.0, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27319,	-- Yord "Calamity" Icebeard
 						["sourceQuest"] = 12326,	-- Steamtank Surprise
+						["coord"] = { 85.8, 51.0, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Necrolord Horus slain
 								["provider"] = { "n", 27805 },	-- Necrolord Horus
@@ -532,10 +532,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12143, {	-- Canyon Chase (A)
-						["coord"] = { 64.4, 26.3, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26978,	-- Duane
 						["sourceQuest"] = 12142,	-- Pest Control
+						["coord"] = { 64.4, 26.3, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Chilltusk slain
 								["provider"] = { "n", 27005 },	-- Chilltusk
@@ -547,10 +547,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12145, {	-- Canyon Chase (H)
-						["coord"] = { 46.6, 33.4, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26979,	-- Kontokanis
 						["sourceQuest"] = 12144,	-- Pest Control
+						["coord"] = { 46.6, 33.4, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Icefist slain
 								["provider"] = { "n", 27004 },	-- Icefist
@@ -562,10 +562,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12064, {	-- Chains of the Anub'ar
-						["coord"] = { 22.6, 41.7, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26733,	-- Banthok Icemist
 						["sourceQuest"] = 12063,	-- Strength of Icemist
+						["coord"] = { 22.6, 41.7, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Anok'ra's Key Fragment
 								["provider"] = { "i", 36752 },	-- Anok'ra's Key Fragment
@@ -586,16 +586,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12466, {	-- Chasing Icestorm: The 7th Legion Front
-						["coord"] = { 85.9, 50.8, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 1293,	-- Ambo Cash
 						["sourceQuest"] = 12465,	-- Plunderbeard's Journal
+						["coord"] = { 85.9, 50.8, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12467, {	-- Chasing Icestorm: Thel'zan's Phylactery
-						["coord"] = { 64.7, 27.9, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27844,	-- Legion Commander Tyralion
 						["sourceQuest"] = 12466,	-- Chasing Icestorm: The 7th Legion Front
+						["coord"] = { 64.7, 27.9, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Thel'zan's Phylactery
 								["providers"] = {
@@ -610,10 +610,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12100, {	-- Containing the Rot
-						["coord"] = { 37.0, 48.5, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26504,	-- Soar Hawkfury
 						["sourceQuest"] = 12034,	-- Victory Nears...
+						["coord"] = { 37.0, 48.5, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/15 Infected Wildlife slain
 								["providers"] = {
@@ -647,9 +647,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12264, {	-- Culling the Damned
-						["coord"] = { 35.2, 30.0, DRAGONBLIGHT },
 						["qg"] = 26593,	-- Serinar
 						["sourceQuest"] = 12263,	-- The Best of Intentions
+						["coord"] = { 35.2, 30.0, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/3 Burning Depths Necromancer slain
 								["provider"] = { "n", 27358 },	-- Burning Depths Necromancer
@@ -706,9 +706,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12265, {	-- Defiling the Defilers
-						["coord"] = { 35.2, 30.0, DRAGONBLIGHT },
 						["qg"] = 26593,	-- Serinar
 						["sourceQuest"] = 12263,	-- The Best of Intentions
+						["coord"] = { 35.2, 30.0, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/8 Necromantic Rune destroyed
 								["provider"] = { "o", 188695 },	-- Necromantic Rune
@@ -716,22 +716,22 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12146, {	-- Disturbing Implications (A)
-						["crs"] = { 27005 },	-- Chilltusk
+						["provider"] = { "i", 36855 },	-- Emblazoned Battle Horn
 						["coord"] = { 72.3, 28.1, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "i", 36855 },	-- Emblazoned Battle Horn
+						["crs"] = { 27005 },	-- Chilltusk
 					}),
 					q(12147, {	-- Disturbing Implications (H)
-						["crs"] = { 27005 },	-- Chilltusk
+						["provider"] = { "i", 36856 },	-- Emblazoned Battle Horn
 						["coord"] = { 72.3, 28.1, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
-						["provider"] = { "i", 36856 },	-- Emblazoned Battle Horn
+						["crs"] = { 27005 },	-- Chilltusk
 					}),
 					q(12285, {	-- Do Unto Others
-						["coord"] = { 76.7, 63.2, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27243,	-- High Executor Wroth
 						["sourceQuest"] = 12283,	-- The Trull Will Out
+						["coord"] = { 76.7, 63.2, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 The Head of the High General
 								["provider"] = { "i", 37565 },	-- The Head of the High General
@@ -744,15 +744,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12030, {	-- Elder Mana'loa
-						["coord"] = { 49.1, 75.6, DRAGONBLIGHT },
 						["qg"] = 26595,	-- Toalu'u the Mystic
 						["sourceQuest"] = 12028,	-- Spiritual Insight
+						["coord"] = { 49.1, 75.6, DRAGONBLIGHT },
 					}),
 					q(12200, {	-- Emerald Dragon Tears
-						["coord"] = { 77.6, 62.7, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27172,	-- Chief Plaguebringer Middleton
 						["sourceQuest"] = 12188,	-- The Forsaken Blight and You: How Not to Die
+						["coord"] = { 77.6, 62.7, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/8 Emerald Dragon Tear
 								["providers"] = {
@@ -764,9 +764,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12013, {	-- End Arcanimus
-						["coord"] = { 24.1, 60.0, DRAGONBLIGHT },
 						["qg"] = 26501,	-- Ethenial Moonshadow
 						["sourceQuest"] = 12006,	-- Avenge this Atrocity!
+						["coord"] = { 24.1, 60.0, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/1 Arcanimus slain
 								["provider"] = { "n", 26370 },	-- Arcanimus
@@ -778,22 +778,22 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12472, {	-- Finality
-						["coord"] = { 78.6, 48.1, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27136,	-- High Commander Halford Wyrmbane
 						["sourceQuest"] = 12467,	-- Chasing Icestorm: Thel'zan's Phylactery
-					}),
-					q(12309, {	-- Find Durkon!
 						["coord"] = { 78.6, 48.1, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
+					}),
+					q(12309, {	-- Find Durkon!
 						["qg"] = 27136,	-- High Commander Halford Wyrmbane
 						["sourceQuest"] = 12253,	-- Rescue from Town Square
+						["coord"] = { 78.6, 48.1, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12243, {	-- Fire Upon the Waters
-						["coord"] = { 77.0, 62.9, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27248,	-- Apothecary Vicky Levine
 						["sourceQuest"] = 12240,	-- A Means to an End
+						["coord"] = { 77.0, 62.9, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(37993),	-- Glade Wanderer Boots
 							i(37950),	-- Highseas Wristwraps
@@ -802,10 +802,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12237, {	-- Flight of the Wintergarde Defender
-						["coord"] = { 77.0, 50.1, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27317,	-- Gryphon Commander Urik
 						["sourceQuest"] = 12235,	-- Naxxramas and the Fall of Wintergarde
+						["coord"] = { 77.0, 50.1, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12031, {	-- Freedom for the Lingering
 						["provider"] = { "o", 188419 },	--	Elder Mana'loa
@@ -814,28 +814,28 @@ root(ROOTS.Zones, {
 						["modelScale"] = 9.8,
 					}),
 					q(12214, {	-- Fresh Remounts
-						["coord"] = { 75.9, 61.8, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27028,	-- Hansel Bauer
 						["sourceQuests"] = {
 							12303,	-- Funding the War Effort
 							12209,	-- Materiel Plunder
 						},
+						["coord"] = { 75.9, 61.8, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12036, {	-- From the Depths of Azjol-Nerub
-						["coord"] = { 36.6, 46.5, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26415,	-- Senior Sergeant Juktok
 						["sourceQuest"] = 12034,	-- Victory Nears...
+						["coord"] = { 36.6, 46.5, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12478, {	-- Frostmourne Cavern
-						["coord"] = { 79.1, 47.1, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["providers"] = {
 							{ "n", 27314 },	-- Zelig the Visionary
 							{ "i", 37933 },	-- Zelig's Scrying Orb (PQI!)
 						},
 						["sourceQuest"] = 12475,	-- What Secrets Men Hide
+						["coord"] = { 79.1, 47.1, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(38532),	-- Belt of Vengeful Purification
 							i(38533),	-- Girdle of Forceful Annihilation
@@ -844,9 +844,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12303, {	-- Funding the War Effort
+						["qg"] = 27267,	-- Quartermaster Bartlett
 						["coord"] = { 75.9, 63.2, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
-						["qg"] = 27267,	-- Quartermaster Bartlett
 						["groups"] = {
 							objective(1, {	-- 0/6 Forgotten Treasure
 								["providers"] = {
@@ -862,29 +862,29 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12119, {	-- Gaining an Audience (A)
-						["coord"] = { 28.9, 55.4, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26673,	-- Image of Archmage Modera
 						["sourceQuest"] = 12107,	-- The End of the Line
+						["coord"] = { 28.9, 55.4, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12122, {	-- Gaining an Audience (H)
-						["coord"] = { 38.0, 46.2, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						["sourceQuest"] = 12110,	-- The End of the Line
+						["coord"] = { 38.0, 46.2, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12497, {	-- Galakrond and the Scourge
-						["coord"] = { 59.8, 54.6, DRAGONBLIGHT },
 						["qg"] = 26917,	-- Alexstrasza the Life-Binder
 						["sourceQuests"] = {
 							12495,	-- Audience With The Dragon Queen (A)
 							12496,	-- Audience With The Dragon Queen (H)
 						},
+						["coord"] = { 59.8, 54.6, DRAGONBLIGHT },
 					}),
 					q(12049, {	-- Hard to Swallow
-						["coord"] = { 55.0, 23.4, DRAGONBLIGHT },
 						["qg"] = 26660,	-- Xink
 						["sourceQuest"] = 12046,	-- Soft Packaging
+						["coord"] = { 55.0, 23.4, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/6 Seared Jormungar Meat
 								["providers"] = {
@@ -963,23 +963,23 @@ root(ROOTS.Zones, {
 						["lvl"] = 61,
 					})),
 					q(12174, {	-- High Commander Halford Wyrmbane
-						["coord"] = { 29.2, 55.4, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26881,	-- Palena Silvercloud
 						["sourceQuest"] = 12171,	-- Of Traitors and Treason
+						["coord"] = { 29.2, 55.4, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(12189, {	-- Imbeciles Abound!
+						["qg"] = 26505,	-- Doctor Sintar Malefious
 						["coord"] = { 36.0, 48.8, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
-						["qg"] = 26505,	-- Doctor Sintar Malefious
 						["isBreadcrumb"] = true,
 					}),
 					q(12282, {	-- Imprints on the Past
-						["coord"] = { 79.1, 47.1, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27314,	-- Zelig the Visionary
 						["sourceQuest"] = 12251,	-- Return to the High Commander
+						["coord"] = { 79.1, 47.1, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Scrying Orb
 								["providers"] = {
@@ -994,10 +994,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12102, {	-- In Search of the Ruby Lilac
-						["coord"] = { 36.0, 48.8, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26505,	-- Doctor Sintar Malefious
 						["sourceQuest"] = 12101,	-- The Good Doctor...
+						["coord"] = { 36.0, 48.8, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Ruby Lilac
 								["providers"] = {
@@ -1008,60 +1008,60 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12125, {	-- In Service of Blood
-						["coord"] = { 35.9, 46.9, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26581,	-- Koltira Deathweaver
 						["sourceQuest"] = 12115,	-- Koltira and the Language of Death
+						["coord"] = { 35.9, 46.9, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12127, {	-- In Service of Frost
-						["coord"] = { 35.9, 46.9, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26581,	-- Koltira Deathweaver
 						["sourceQuest"] = 12115,	-- Koltira and the Language of Death
+						["coord"] = { 35.9, 46.9, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12126, {	-- In Service of the Unholy
-						["coord"] = { 35.9, 46.9, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26581,	-- Koltira Deathweaver
 						["sourceQuest"] = 12115,	-- Koltira and the Language of Death
+						["coord"] = { 35.9, 46.9, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12123, {	-- Informing the Queen (A)
-						["coord"] = { 57.9, 54.1, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26443,	-- Tariolstrasz
 						["sourceQuest"] = 12768,	-- The Steward of Wyrmrest Temple
+						["coord"] = { 57.9, 54.1, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12124, {	-- Informing the Queen (H)
-						["coord"] = { 57.9, 54.1, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26443,	-- Tariolstrasz
 						["sourceQuest"] = 12769,	-- The Steward of Wyrmrest Temple
+						["coord"] = { 57.9, 54.1, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12325, {	-- Into Hostile Territory
-						["coord"] = { 78.6, 48.1, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27136,	-- High Commander Halford Wyrmbane
 						["sourceQuests"] = {
 							12321,	-- A Righteous Sermon
 							12281,	-- Understanding the Scourge War Machine
 						},
+						["coord"] = { 78.6, 48.1, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12789, {	-- Into the Breach!
 						["qg"] = 28228,	-- Crusader Valus
-						["sourceQuest"] = 12545,	-- The Cleansing of Jintha'kalar
 						["altQuests"] = { 12770 },	-- Reallocating Resources	-- TODO: confirm this
+						["sourceQuest"] = 12545,	-- The Cleansing of Jintha'kalar
 						["coord"] = { 83.9, 26.0, DRAGONBLIGHT },
 						["isBreadcrumb"] = true,
 					}),
 					q(11978, {	-- Into the Fold
-						["coord"] = { 13.0, 49.3, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26181,	-- Emissary Brighthoof
-						-- TODO: ShadowBrooks only one required need some reports though
 						["sourceQuests"] = {
 							11977,	-- A Tauren Among Taunka
 							11979,	-- The Taunka and the Tauren
 						},
+						["coord"] = { 13.0, 49.3, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
+						-- TODO: ShadowBrooks only one required need some reports though
 						["groups"] = {
 							objective(1, {	-- 0/10 Horde Armaments
 								["providers"] = {
@@ -1074,10 +1074,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12167, {	-- Kill the Cultists
-						["coord"] = { 29.1, 55.6, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26973,	-- Warden Jodi Moonsong
 						["sourceQuest"] = 12166,	-- The Liquid Fire of Elune
+						["coord"] = { 29.1, 55.6, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/5 Functional Cultist Suit
 								["provider"] = { "i", 36957 },	-- Functional Cultist Suit
@@ -1086,16 +1086,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12115, {	-- Koltira and the Language of Death
-						["coord"] = { 35.8, 48.3, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26618,	-- Captain Gort
 						["sourceQuest"] = 12057,	-- The Flesh-Bound Tome
+						["coord"] = { 35.8, 48.3, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12277, {	-- Leave Nothing to Chance
-						["coord"] = { 81.5, 42.2, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27412,	-- Slinkin the Demo-gnome
 						["sourceQuest"] = 12276,	-- The Search for Slinkin
+						["coord"] = { 81.5, 42.2, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(38002),	-- Honorborn Cloak
 							i(37960),	-- Oath Signet
@@ -1104,13 +1104,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11958, {	-- Let Nothing Go To Waste
-						["coord"] = { 48.0, 74.8, DRAGONBLIGHT },
 						["qg"] = 26194,	-- Elder Ko'nani
-						["description"] = "The breadcrumb quests have collectible rewards. Make sure to do one of them before picking up this quest!",
 						["sourceQuests"] = {
 							12117,	-- Travel to Mo'aki Harbor (Borean Tundra)
 							12118,	-- Travel to Mo'aki Harbor (Howling Fjord)
 						},
+						["coord"] = { 48.0, 74.8, DRAGONBLIGHT },
+						["description"] = "The breadcrumb quests have collectible rewards. Make sure to do one of them before picking up this quest!",
 						["groups"] = {
 							objective(1, {	-- 0/6 Stolen Moa'ki Goods
 								["provider"] = { "i", 35686 },	-- Stolen Moa'ki Goods
@@ -1124,10 +1124,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12211, {	-- Let Them Not Rise!
-						["coord"] = { 77.0, 62.9, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27248,	-- Apothecary Vicky Levine
 						["sourceQuest"] = 12206,	-- Blighted Last Rites
+						["coord"] = { 77.0, 62.9, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(38118),	-- Bite-Proof Grips
 							i(38057),	-- Rodent-Proof Headguard
@@ -1136,9 +1136,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12050, {	-- Lumber Hack
-						["coord"] = { 55.0, 23.4, DRAGONBLIGHT },
 						["qg"] = 26660,	-- Xink
 						["sourceQuest"] = 12047,	-- Something That Doesn't Melt
+						["coord"] = { 55.0, 23.4, DRAGONBLIGHT },
 						["groups"] = {
 							i(38141),	-- Coldwind Scratching Pole
 							i(38191),	-- Compact Explosive Delivery Device
@@ -1149,10 +1149,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12056, {	-- Marked for Death: High Cultist Zangus
-						["coord"] = { 35.8, 48.3, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26618,	-- Captain Gort
 						["sourceQuest"] = 12034,	-- Victory Nears...
+						["coord"] = { 35.8, 48.3, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Head of High Cultist Zangus
 								["provider"] = { "i", 36741 },	-- Head of High Cultist Zangus
@@ -1161,9 +1161,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12209, {	-- Materiel Plunder
+						["qg"] = 27267,	-- Quartermaster Bartlett
 						["coord"] = { 75.9, 63.2, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
-						["qg"] = 27267,	-- Quartermaster Bartlett
 						["groups"] = {
 							objective(1, {	-- 0/8 Scarlet Onslaught Armor
 								["providers"] = {
@@ -1180,9 +1180,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12017, {	-- Meat on the Hook
-						["coord"] = { 47.9, 76.1, DRAGONBLIGHT },
 						["qg"] = 26245,	-- Tua'kea
 						["sourceQuest"] = 12016,	-- The Bait
+						["coord"] = { 47.9, 76.1, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/1 Tu'u'gwar slain
 								["provider"] = { "n", 26510 },	-- Tu'u'gwar
@@ -1194,20 +1194,20 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12033, {	-- Message from the West
+						["qg"] = 26649,	-- Messenger Torvus
 						["sourceQuest"] = 11916,	-- Hellscream's Champion
 						["coord"] = { 37.3, 46.7, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
-						["qg"] = 26649,	-- Messenger Torvus
 					}),
 					q(12076, {	-- Messy Business
-						["coord"] = { 59.3, 18.1, DRAGONBLIGHT },
 						["qg"] = 26659,	-- Zort
 						["sourceQuest"] = 12075,	-- Slim Pickings
+						["coord"] = { 59.3, 18.1, DRAGONBLIGHT },
 					}),
 					q(12149, {	-- Mighty Magnataur
-						["coord"] = { 60.0, 55.1, DRAGONBLIGHT },
 						["qg"] = 26983,	-- Aurastrasza
 						["sourceQuest"] = 12148,	-- One of a Kind
+						["coord"] = { 60.0, 55.1, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/1 Iceshatter slain
 								["provider"] = { "n", 27007 },	-- Iceshatter
@@ -1221,13 +1221,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12464, {	-- My Old Enemy
-						["coord"] = { 76.8, 47.5, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27784,	-- Commander Eligor Dawnbringer
 						["sourceQuests"] = {
 							12174,	-- High Commander Halford Wyrmbane (Dragonblight)
 							12298,	-- High Commander Halford Wyrmbane (Howling Fjord)
 						},
+						["coord"] = { 76.8, 47.5, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 The Head of the High General
 								["provider"] = { "i", 37565 },	-- The Head of the High General
@@ -1244,8 +1244,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12470, {	-- Mystery of the Infinite
-						["coord"] = { 60.0, 54.5, DRAGONBLIGHT },
 						["qg"] = 27856,	-- Chromie
+						["coord"] = { 60.0, 54.5, DRAGONBLIGHT },
 						["groups"] = {
 							i(38173),	-- Dagger of the Returning Past
 							i(38174),	-- Time-Bending Smasher
@@ -1254,9 +1254,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13343, {	-- Mystery of the Infinite, Redux
-						["coord"] = { 60.0, 54.5, DRAGONBLIGHT },
 						["qg"] = 27856,	-- Chromie
 						["sourceQuest"] = 12470,	-- Mystery of the Infinite
+						["coord"] = { 60.0, 54.5, DRAGONBLIGHT },
 						["groups"] = {
 							i(38763),	-- Futuresight Rune
 							i(38764),	-- Rune of Finite Variation
@@ -1264,25 +1264,25 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12319, {	-- Mystery of the Tome
-						["coord"] = { 79.0, 53.2, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27318,	-- Cavalier Durkon
 						["sourceQuest"] = 12312,	-- Secrets of the Scourge
+						["coord"] = { 79.0, 53.2, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12235, {	-- Naxxramas and the Fall of Wintergarde
-						["coord"] = { 78.5, 48.1, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27136,	-- High Commander Halford Wyrmbane
 						["sourceQuests"] = {
 							12174,	-- High Commander Halford Wyrmbane (Dragonblight)
 							12298,	-- High Commander Halford Wyrmbane (Howling Fjord)
 						},
+						["coord"] = { 78.5, 48.1, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12234, {	-- Need to Know
-						["coord"] = { 76.7, 63.0, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27337,	-- Spy Mistress Repine
 						["sourceQuest"] = 12230,	-- Stealing from the Siegesmiths	-- TODO:: verify this
+						["coord"] = { 76.7, 63.0, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Scarlet Onslaught Daily Orders: Abbey
 								["providers"] = {
@@ -1305,9 +1305,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12267, {	-- Neltharion's Flame
-						["coord"] = { 35.2, 30.0, DRAGONBLIGHT },
 						["qg"] = 26593,	-- Serinar
 						["sourceQuest"] = 12265,	-- Defining the Defilers
+						["coord"] = { 35.2, 30.0, DRAGONBLIGHT },
 						["groups"] = {
 							i(37944),	-- High Priest Forith's Robes
 							i(38095),	-- Legplates of the Conquered Knight
@@ -1316,10 +1316,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12245, {	-- No Mercy for the Captured
-						["coord"] = { 76.7, 63.0, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27337,	-- Spy Mistress Repine
 						["sourceQuest"] = 12205,	-- WANTED: The Scarlet Onslaught	-- TODO: verify this
+						["coord"] = { 76.7, 63.0, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Deathguard Schneider slain
 								["provider"] = { "n", 27376 },	-- Deathguard Schneider
@@ -1336,9 +1336,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12262, {	-- No One to Save You
-						["coord"] = { 35.2, 30.0, DRAGONBLIGHT },
 						["qg"] = 26593,	-- Serinar
 						["sourceQuest"] = 12447,	-- The Obsidian Dragonshrine
+						["coord"] = { 35.2, 30.0, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/6 Burning Depths Necrolyte slain
 								["provider"] = { "n", 27356 },	-- Burning Depths Necrolyte
@@ -1352,15 +1352,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12261, {	-- No Place to Run
-						["coord"] = { 35.2, 30.0, DRAGONBLIGHT },
 						["qg"] = 26593,	-- Serinar
 						["sourceQuest"] = 12447,	-- The Obsidian Dragonshrine
+						["coord"] = { 35.2, 30.0, DRAGONBLIGHT },
 					}),
 					q(12269, {	-- Not In Our Mine
-						["coord"] = { 77.8, 50.3, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27156,	-- Highlord Leoric Von Zeldig
 						["sourceQuest"] = 12275,	-- The Demo-gnome
+						["coord"] = { 77.8, 50.3, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/10 Wintergarde Miner's Card
 								["provider"] = { "i", 37411 },	-- Wintergarde Miner's Card
@@ -1369,8 +1369,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12043, {	-- Nozzlerust Defense
-						["coord"] = { 54.4, 23.6, DRAGONBLIGHT },
 						["qg"] = 26647,	-- Narf
+						["coord"] = { 54.4, 23.6, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/1 Wastes Taskmaster slain
 								["provider"] = { "n", 26493 },	-- Wastes Taskmaster
@@ -1381,16 +1381,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12171, {	-- Of Traitors and Treason
-						["coord"] = { 28.8, 56.0, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27060,	-- Courier Lanson
 						["sourceQuest"] = 12157,	-- The Lost Courier
+						["coord"] = { 28.8, 56.0, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(12498, {	-- On Ruby Wings
-						["coord"] = { 59.5, 53.3, DRAGONBLIGHT },
 						["qg"] = 26949,	-- Torastrasza
 						["sourceQuest"] = 12497,	-- Galakrond and the Scourge
+						["coord"] = { 59.5, 53.3, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/30 Wastes Scavenger slain
 								["provider"] = { "n", 28005 },	-- Wastes Scavenger
@@ -1408,12 +1408,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12148, {	-- One of a Kind
-						["coord"] = { 60.0, 55.1, DRAGONBLIGHT },
 						["qg"] = 26983,	-- Aurastrasza
 						["sourceQuests"] = {
 							12146,	-- Disturbing Implications (alliance)
 							12147,	-- Disturbing Implications (horde)
 						},
+						["coord"] = { 60.0, 55.1, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/1 Emblazoned Battle Horn
 								["provider"] = { "i", 36854 },	-- Emblazoned Battle Horn
@@ -1422,16 +1422,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12287, {	-- Orik Trueheart and the Forgotten Shore
-						["coord"] = { 79.1, 47.1, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27314,	-- Zelig the Visionary
 						["sourceQuest"] = 12282,	-- Imprints on the Past
+						["coord"] = { 79.1, 47.1, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12305, {	-- Parting Thoughts
-						["coord"] = { 87.1, 57.4, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27347,	-- Orik Trueheart
 						["sourceQuest"] = 12301,	-- The Truth Shall Set Us Free
+						["coord"] = { 87.1, 57.4, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(38030),	-- Chestpiece of the Forgotten Captain
 							i(38036),	-- Circlet of the Forgotten Mercenary
@@ -1441,9 +1441,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12142, {	-- Pest Control (A)
+						["qg"] = 26978,	-- Duane
 						["coord"] = { 64.4, 26.3, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 26978,	-- Duane
 						["groups"] = {
 							objective(1, {	-- 0/10 Snowplain Snobolds
 								["providers"] = {
@@ -1470,9 +1470,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12144, {	-- Pest Control (H)
+						["qg"] = 26979,	-- Kontokanis
 						["coord"] = { 46.6, 33.4, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
-						["qg"] = 26979,	-- Kontokanis
 						["groups"] = {
 							objective(1, {	-- 0/10 Snowplain Snobolds
 								["providers"] = {
@@ -1514,16 +1514,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12463, {	-- Plunderbeard Must Be Found!
-						["coord"] = { 85.9, 50.8, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 1293,	-- Ambo Cash
 						["sourceQuest"] = 12457,	-- The Chain Gun And You
+						["coord"] = { 85.9, 50.8, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12465, {	-- Plunderbeard's Journal
-						["coord"] = { 84.1, 54.6, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27828,	-- Plunderbeard
 						["sourceQuest"] = 12463,	-- Plunderbeard Must Be Found!
+						["coord"] = { 84.1, 54.6, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Page 4 of Plunderbeard's Journal
 								["provider"] = { "i", 37910 },	-- Page 4 of Plunderbeard's Journal
@@ -1556,10 +1556,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12004, {	-- Prevent the Accord (A)
-						["coord"] = { 28.9, 55.4, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26673,	-- Image of Archmage Modera
 						["sourceQuest"] = 12000,	-- Rifle the Bodies (A)
+						["coord"] = { 28.9, 55.4, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Wind Trader Mu'fah's Remains
 								["provider"] = { "i", 35800 },	-- Wind Trader Mu'fah's Remains
@@ -1576,10 +1576,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12005, {	-- Prevent the Accord (H)
-						["coord"] = { 38.0, 46.2, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						["sourceQuest"] = 11999,	-- Rifle the Bodies (H)
+						["coord"] = { 38.0, 46.2, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Wind Trader Mu'fah's Remains
 								["provider"] = { "i", 35800 },	-- Wind Trader Mu'fah's Remains
@@ -1596,9 +1596,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11980, {	-- Pride of the Horde
+						["qg"] = 26180,	-- Blood Guard Roh'kill
 						["coord"] = { 14.2, 49.8, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
-						["qg"] = 26180,	-- Blood Guard Roh'kill
 						["groups"] = {
 							objective(1, {	-- 0/15 Anub'ar Ambusher slain
 								["provider"] = { "n", 26402 },	-- Anub'ar Ambusher
@@ -1611,21 +1611,21 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12060, {	-- Projections and Plans (A)
-						["coord"] = { 28.9, 55.4, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26673,	-- Image of Archmage Modera
 						["sourceQuest"] = 12055,	-- A Strange Device
+						["coord"] = { 28.9, 55.4, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12061, {	-- Projections and Plans (H)
-						["coord"] = { 38.0, 46.2, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						["sourceQuest"] = 12059,	-- A Strange Device
+						["coord"] = { 38.0, 46.2, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12080, {	-- Really Big Worm
-						["coord"] = { 58.9, 17.8, DRAGONBLIGHT },
 						["qg"] = 26473,	-- Ko'char the Unbreakable
 						["sourceQuest"] = 12077,	-- Apply This Twice A Day
+						["coord"] = { 58.9, 17.8, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/1 Rattlebore slain
 								["provider"] = { "n", 26360 },	-- Rattlebore
@@ -1637,38 +1637,38 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12150, {	-- Reclusive Runemaster
-						["coord"] = { 60.0, 55.1, DRAGONBLIGHT },
 						["qg"] = 26983,	-- Aurastrasza
 						["sourceQuest"] = 12149,	-- Mighty Magnataur
+						["coord"] = { 60.0, 55.1, DRAGONBLIGHT },
 					}),
 					q(12435, {	-- Report to Lord Afrasastrasz
-						["coord"] = { 59.8, 54.6, DRAGONBLIGHT },
 						["qg"] = 26917,	-- Alexstrasza the Life-Binder
 						["sourceQuest"] = 12123,	-- Informing the Queen
+						["coord"] = { 59.8, 54.6, DRAGONBLIGHT },
 					}),
 					q(12460, {	-- Report to the Ruby Dragonshrine (A)
-						["coord"] = { 60.0, 55.0, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27803,	-- Lauriel Trueblade
 						["sourceQuest"] = 12766,	-- Speak with your Ambassador
+						["coord"] = { 60.0, 55.0, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12461, {	-- Report to the Ruby Dragonshrine (H)
-						["coord"] = { 58.6, 56.3, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27804,	-- Golluck Rockfist
 						["sourceQuest"] = 12767,	-- Speak with your Ambassador
+						["coord"] = { 58.6, 56.3, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12253, {	-- Rescue from Town Square
-						["coord"] = { 78.5, 48.2, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27136,	-- High Commander Halford Wyrmbane
 						["sourceQuest"] = 12251,	-- Return to the High Commander
+						["coord"] = { 78.5, 48.2, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12069, {	-- Return of the High Chief
-						["coord"] = { 22.6, 41.7, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26733,	-- Banthok Icemist
 						["sourceQuest"] = 12064,	-- Chains of the Anub'ar
+						["coord"] = { 22.6, 41.7, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Fragment of Anub'et'kan's Husk
 								["providers"] = {
@@ -1679,45 +1679,45 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12499, {	-- Return To Angrathar (A)
+						["qg"] = 26917,	-- Alexstrasza the Life-Binder
+						["sourceQuest"] = 12498,	-- On Ruby Wings
 						["coord"] = { 59.8, 54.6, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 26917,	-- Alexstrasza the Life-Binder
-						["sourceQuest"] = 12498,	-- On Ruby Wings
 					}),
 					q(12500, {	-- Return To Angrathar (H)
-						["coord"] = { 59.8, 54.6, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26917,	-- Alexstrasza the Life-Binder
 						["sourceQuest"] = 12498,	-- On Ruby Wings
+						["coord"] = { 59.8, 54.6, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12469, {	-- Return to Sender
-						["coord"] = { 48.4, 24.1, DRAGONBLIGHT },
 						["qg"] = 26896,	-- Nozzlerust Supply Runner
+						["coord"] = { 48.4, 24.1, DRAGONBLIGHT },
 						["isBreadcrumb"] = true,
 					}),
 					q(12104, {	-- Return to Soar
-						["coord"] = { 36.0, 48.8, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26505,	-- Doctor Sintar Malefious
 						["sourceQuest"] = 12102,	-- In Search of the Ruby Lilac
+						["coord"] = { 36.0, 48.8, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12417, {	-- Return to the Earth (A)
-						["coord"] = { 52.2, 50.0, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27506,	-- Ceristrasz
 						["sourceQuest"] = 12416,	-- Heated Battle
+						["coord"] = { 52.2, 50.0, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12449, {	-- Return to the Earth (H)
-						["coord"] = { 42.9, 50.8, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27763,	-- Vargastrasz
 						["sourceQuest"] = 12448,	-- Heated Battle
+						["coord"] = { 42.9, 50.8, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12251, {	-- Return to the High Commander
-						["coord"] = { 77.0, 50.1, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27317,	-- Gryphon Commander Urik
 						["sourceQuest"] = 12237,	-- Flight of the Wintergarde Defender
+						["coord"] = { 77.0, 50.1, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(37956),	-- Frontrunner's Blessed Handwraps
 							i(37998),	-- Snowfall Reaver Boots
@@ -1726,8 +1726,6 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12000, {	-- Rifle the Bodies (A)
-						["coord"] = { 29.0, 55.4, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26673,	-- Image of Archmage Modera
 						["sourceQuests"] = {
 							12439,	-- A Disturbance in The West
@@ -1737,6 +1735,8 @@ root(ROOTS.Zones, {
 							12440,	-- To Stars' Rest!
 							11995,	-- Your Presence is Required at Stars' Rest
 						},
+						["coord"] = { 29.0, 55.4, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(11999, {	-- Rifle the Bodies (H)
 						["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
@@ -1750,10 +1750,10 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(12097, {	-- Sarathstra, Scourge of the North
-						["coord"] = { 47.1, 33.0, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26859,	-- Rokhan
 						["sourceQuest"] = 12095,	-- To Dragon's Fall
+						["coord"] = { 47.1, 33.0, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Sarathstra's Frozen Heart
 								["provider"] = { "i", 36793 },	-- Sarathstra's Frozen Heart
@@ -1766,10 +1766,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12455, {	-- Scattered To The Wind
-						["coord"] = { 85.9, 50.8, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 1293,	-- Ambo Cash
 						["sourceQuest"] = 12326,	-- Steamtank Surprise
+						["coord"] = { 85.9, 50.8, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/8 Wintergarde Munitions
 								["providers"] = {
@@ -1780,10 +1780,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12048, {	-- Scourge Armaments
-						["coord"] = { 36.6, 47.1, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26564,	-- Borus Ironbender
 						["sourceQuest"] = 12039,	-- Black Blood of Yogg-Saron
+						["coord"] = { 36.6, 47.1, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/8 Scourge Armament
 								["provider"] = { "i", 36736 },	-- Scourge Armament
@@ -1802,16 +1802,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12098, {	-- Search Indu'le Village (A)
-						["coord"] = { 28.9, 55.4, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26673,	-- Image of Archmage Modera
 						["sourceQuest"] = 12083,	-- Atop the Woodlands
+						["coord"] = { 28.9, 55.4, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12106, {	-- Search Indu'le Village (H)
-						["coord"] = { 38.0, 46.2, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						["sourceQuest"] = 12084,	-- Atop the Woodlands
+						["coord"] = { 38.0, 46.2, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12312, {	-- Secrets of the Scourge
 						["provider"] = { "o", 189311 },	--	Flesh-bound Tome
@@ -1820,8 +1820,8 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12458, {	-- Seeds of the Lashers
-						["coord"] = { 59.5, 54.4, DRAGONBLIGHT },
 						["qg"] = 27785,	-- Lord Itharius
+						["coord"] = { 59.5, 54.4, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/3 Lasher Seed
 								["provider"] = { "i", 37882 },	-- Lasher Seed
@@ -1830,8 +1830,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12045, {	-- Shaved Ice
-						["coord"] = { 54.7, 23.2, DRAGONBLIGHT },
 						["qg"] = 26661,	-- Zivlix
+						["coord"] = { 54.7, 23.2, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/4 Ice Shard Cluster
 								["provider"] = { "i", 36728 },	-- Ice Shard Cluster
@@ -1844,9 +1844,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 47.7, 79.9, DRAGONBLIGHT },
 					}),
 					q(11959, {	-- Slay Loguhn
-						["coord"] = { 48.0, 74.8, DRAGONBLIGHT },
 						["qg"] = 26194,	-- Elder Ko'nani
 						["sourceQuest"] = 11958,	-- Let Nothing Go To Waste
+						["coord"] = { 48.0, 74.8, DRAGONBLIGHT },
 						["groups"] = {
 							i(37939),	-- Baleen Braided Collar
 							i(37982),	-- Gleaming Tuskring
@@ -1855,14 +1855,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12075, {	-- Slim Pickings
-						["coord"] = { 59.3, 18.1, DRAGONBLIGHT },
 						["qg"] = 26659,	-- Zort
 						["sourceQuest"] = 12112,	-- Stiff Negotiations
+						["coord"] = { 59.3, 18.1, DRAGONBLIGHT },
 					}),
 					q(12046, {	-- Soft Packaging
-						["coord"] = { 54.7, 23.2, DRAGONBLIGHT },
 						["qg"] = 26661,	-- Zivlix
 						["sourceQuest"] = 12045,	-- Shaved Ice
+						["coord"] = { 54.7, 23.2, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/12 Thin Animal Hide
 								["provider"] = { "i", 36729 },	-- Thin Animal Hide
@@ -1874,9 +1874,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12047, {	-- Something That Doesn't Melt
-						["coord"] = { 54.7, 23.2, DRAGONBLIGHT },
 						["qg"] = 26661,	-- Zivlix
 						["sourceQuest"] = 12046,	-- Soft Packaging
+						["coord"] = { 54.7, 23.2, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/12 Splintered Bone Chunk
 								["providers"] = {
@@ -1892,27 +1892,27 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12766, {	-- Speak with your Ambassador (A)
-						["coord"] = { 57.9, 54.1, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26443,	-- Tariolstrasz
 						["sourceQuest"] = 12119,	-- Gaining an Audience
+						["coord"] = { 57.9, 54.1, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12767, {	-- Speak with your Ambassador (H)
-						["coord"] = { 57.9, 54.1, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26443,	-- Tariolstrasz
 						["sourceQuest"] = 12122,	-- Gaining an Audience
+						["coord"] = { 57.9, 54.1, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12028, {	-- Spiritual Insight
-						["coord"] = { 49.1, 75.6, DRAGONBLIGHT },
 						["qg"] = 26595,	-- Toalu'u the Mystic
 						["sourceQuest"] = 11959,	-- Slay Loguhn
+						["coord"] = { 49.1, 75.6, DRAGONBLIGHT },
 					}),
 					q(12218, {	-- Spread the Good Word
-						["coord"] = { 77.6, 62.7, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27172,	-- Chief Plaguebringer Middleton
 						["sourceQuest"] = 12200,	-- Emerald Dragon Tears
+						["coord"] = { 77.6, 62.7, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/30 Hungering Dead slain
 								["provider"] = { "n", 27290 },	-- Hungering Dead
@@ -1920,10 +1920,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12230, {	-- Stealing from the Siegesmiths
-						["coord"] = { 76.4, 62.5, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27320,	-- Deathguard Molder
 						["sourceQuest"] = 12211,	-- Let Them not Rise!
+						["coord"] = { 76.4, 62.5, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/6 Siegesmith Bomb
 								["providers"] = {
@@ -1935,10 +1935,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12326, {	-- Steamtank Surprise
-						["coord"] = { 89.6, 46.3, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27157,	-- Duke August Foehammer
 						["sourceQuest"] = 12325,	-- Into Hostile Territory
+						["coord"] = { 89.6, 46.3, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(37992),	-- Ritual Neckguard
 							i(37949),	-- Saboteur's Wrap
@@ -1946,18 +1946,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12112, {	-- Stiff Negotiations
-						["isBreadcrumb"] = true,
-						["coord"] = { 54.5, 23.6, DRAGONBLIGHT },
 						["qg"] = 26647,	-- Narf
 						["sourceQuests"] = {
 							12052,	-- Harp on This!
 							12050,	-- Lumber Hack
 						},
+						["coord"] = { 54.5, 23.6, DRAGONBLIGHT },
+						["isBreadcrumb"] = true,
 					}),
 					q(12044, {	-- Stocking Up
-						["coord"] = { 55.0, 23.4, DRAGONBLIGHT },
 						["qg"] = 26660,	-- Xink
 						["sourceQuest"] = 12469,	-- Return to Sender
+						["coord"] = { 55.0, 23.4, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/8 Composite Ore
 								["providers"] = {
@@ -1968,9 +1968,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12079, {	-- Stomping Grounds
-						["coord"] = { 58.9, 17.8, DRAGONBLIGHT },
 						["qg"] = 26473,	-- Ko'char the Unbreakable
 						["sourceQuest"] = 12075,	-- Slim Pickings
+						["coord"] = { 58.9, 17.8, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/8 Ice Heart Jormungar Feeder slain
 								["provider"] = { "n", 26358 },	-- Ice Heart Jormungar Feeder
@@ -1978,19 +1978,19 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12063, {	-- Strength of Icemist
-						["coord"] = { 36.1, 45.2, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26652,	-- Greatmother Icemist
 						["sourceQuests"] = {
 							12036,	-- From the Depths of Azjol-Nerub
 							12056,	-- Marked for Death: High Cultist Zangus
 						},
+						["coord"] = { 36.1, 45.2, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12092, {	-- Strengthen the Ancients (A)
-						["coord"] = { 28.7, 57.0, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26837,	-- Sarendryana
 						["sourceQuest"] = 12065,	-- The Focus on the Beach
+						["coord"] = { 28.7, 57.0, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(38112),	-- Bark Covered Pauldrons
 							i(37966),	-- Bracers of Nature's Fury
@@ -1999,10 +1999,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12096, {	-- Strengthen the Ancients (H)
-						["coord"] = { 36.5, 47.8, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26854,	-- Earthwarden Grife
 						["sourceQuest"] = 12066,	-- The Focus on the Beach
+						["coord"] = { 36.5, 47.8, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(38112),	-- Bark Covered Pauldrons
 							i(37966),	-- Bracers of Nature's Fury
@@ -2011,14 +2011,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12266, {	-- Tales of Destruction
-						["coord"] = { 35.2, 30.0, DRAGONBLIGHT },
 						["qg"] = 26593,	-- Serinar
 						["sourceQuest"] = 12267,	-- Neltharion's Flame
+						["coord"] = { 35.2, 30.0, DRAGONBLIGHT },
 					}),
 					q(12459, {	-- That Which Creates Can Also Destroy
-						["coord"] = { 59.5, 54.4, DRAGONBLIGHT },
 						["qg"] = 27785,	-- Lord Itharius
 						["sourceQuest"] = 12458,	-- Seeds of the Lashers
+						["coord"] = { 59.5, 54.4, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/1 Weakened Reanimated Frost Wyrm slain
 								["provider"] = { "n", 27821 },	-- Weakened Reanimated Frost Wyrm
@@ -2036,9 +2036,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12016, {	-- The Bait
-						["coord"] = { 47.9, 76.1, DRAGONBLIGHT },
 						["qg"] = 26245,	-- Tua'kea
 						["sourceQuest"] = 12011,	-- Signs of Big Watery Trouble
+						["coord"] = { 47.9, 76.1, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/1 "The Flesh of ""Two Huge Pincers"""
 								["provider"] = { "i", 35831 },	-- "The Flesh of ""Two Huge Pincers"""
@@ -2147,15 +2147,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12263, {	-- The Best of Intentions
-						["coord"] = { 35.2, 30.0, DRAGONBLIGHT },
 						["qg"] = 26593,	-- Serinar
 						["sourceQuest"] = 12261,	-- No Place to Run
+						["coord"] = { 35.2, 30.0, DRAGONBLIGHT },
 					}),
 					q(12272, {	-- The Bleeding Ore
-						["coord"] = { 77.8, 50.2, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27159,	-- Siege Engineer Quarterflash
 						["sourceQuest"] = 12275,	-- The Demo-gnome
+						["coord"] = { 77.8, 50.2, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/10 Strange Ore
 								["providers"] = {
@@ -2166,20 +2166,20 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12542, {	-- The Call Of The Crusade
-						["coord"] = { 87.2, 57.3, DRAGONBLIGHT },
 						["qg"] = 27348,	-- Tilda Darathan
+						["coord"] = { 87.2, 57.3, DRAGONBLIGHT },
 						["isBreadcrumb"] = true,
 					}),
 					q(12457, {	-- The Chain Gun And You
-						["coord"] = { 85.9, 50.8, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 1293,	-- Ambo Cash
 						["sourceQuest"] = 12455,	-- Scattered To The Wind
+						["coord"] = { 85.9, 50.8, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12545, {	-- The Cleansing Of Jintha'kalar
-						["coord"] = { 83.9, 26.0, DRAGONBLIGHT },
 						["qg"] = 28228,	-- Crusader Valus
 						["sourceQuest"] = 12542,	-- The Call of The Crusade
+						["coord"] = { 83.9, 26.0, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/15 Jintha'kalar Scourge Slain
 								["providers"] = {
@@ -2198,18 +2198,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12275, {	-- The Demo-gnome
-						["coord"] = { 78.5, 48.2, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27136,	-- High Commander Halford Wyrmbane
 						["sourceQuest"] = 12251,	-- Return to the High Commander
+						["coord"] = { 78.5, 48.2, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12273, {	-- The Denouncement
-						["coord"] = { 76.7, 63.2, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27243,	-- High Executor Wroth
 						["sourceQuests"] = {
 							12271,	-- The Rod of Compulsion
 						},
+						["coord"] = { 76.7, 63.2, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(38054),	-- Paingiver Wristguards
 							i(37968),	-- Robe of Calcified Tears
@@ -2218,10 +2218,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12107, {	-- The End of the Line (A)
-						["coord"] = { 40.2, 66.8, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26873,	-- Mage-Commander Evenstar
 						["sourceQuest"] = 12098,	-- Search Indu'le Village
+						["coord"] = { 40.2, 66.8, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(38151),	-- Daschal's Discarded Shiv
 							i(38152),	-- Mace of the Violet Guardian
@@ -2231,10 +2231,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12110, {	-- The End of the Line (H)
-						["coord"] = { 40.2, 66.8, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26873,	-- Mage-Commander Evenstar
 						["sourceQuest"] = 12106,	-- Search Indu'le Village
+						["coord"] = { 40.2, 66.8, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(38151),	-- Daschal's Discarded Shiv
 							i(38152),	-- Mace of the Violet Guardian
@@ -2244,10 +2244,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12258, {	-- The Fate of the Dead
-						["coord"] = { 78.6, 48.1, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27155,	-- Commander Lynore Windstryke
 						["sourceQuest"] = 12251,	-- Return to the High Commander
+						["coord"] = { 78.6, 48.1, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/15 Vengeful Geist slain
 								["provider"] = { "n", 27370 },	-- Vengeful Geist
@@ -2259,53 +2259,53 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12419, {	-- The Fate of the Ruby Dragonshrine
-						["crs"] = { 27680 },	-- Dahlia Suntouch
-						["coord"] = { 47.7, 49.2, DRAGONBLIGHT },
 						["provider"] = { "i", 37833 },	--	Ruby Brooch
+						["coord"] = { 47.7, 49.2, DRAGONBLIGHT },
+						["crs"] = { 27680 },	-- Dahlia Suntouch
 					}),
 					q(12168, {	-- The Favor of Zangus
-						["crs"] = { 26319 },	-- Anub'ar Cultist
-						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "i", 36958 },	-- The Favor of Zangus
-						["description"] = "Must be on or have completed |cFFFFD700Kill the Cultists|r for the item to drop.",
 						["sourceQuest"] = 12167,	-- Kill the Cultists
+						["description"] = "Must be on or have completed |cFFFFD700Kill the Cultists|r for the item to drop.",
+						["races"] = ALLIANCE_ONLY,
+						["crs"] = { 26319 },	-- Anub'ar Cultist
 					}),
 					q(12057, {	-- The Flesh-Bound Tome
+						["provider"] = { "i", 36744 },	-- Flesh-Bound Tome
+						["sourceQuest"] = 12056,	-- Marked For Death: High Cultist Zangus
 						["coord"] = { 25.3, 41.4, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
-						["provider"] = { "i", 36744 },	-- Flesh-Bound Tome
 						["crs"] = {
 							26319,	-- Anub'ar Cultist
 							26606,	-- Anub'ar Slayer
 						},
-						["sourceQuest"] = 12056,	-- Marked For Death: High Cultist Zangus
 					}),
 					q(12065, {	-- The Focus on the Beach (A)
-						["coord"] = { 29.0, 55.4, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26673,	-- Image of Archmage Modera
 						["sourceQuest"] = 12060,	-- Projections and Plans
+						["coord"] = { 29.0, 55.4, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12066, {	-- The Focus on the Beach (H)
-						["coord"] = { 38.0, 46.2, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
 						["sourceQuest"] = 12061,	-- Projections and Plans
+						["coord"] = { 38.0, 46.2, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12291, {	-- The Forgotten Tale
-						["coord"] = { 87.1, 57.4, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["providers"] = {
 							{ "n", 27347 },	-- Orik Trueheart
 							{ "i", 37570 },	-- Murkweed Elixir (PQI!)
 						},
 						["sourceQuest"] = 12290,	-- The Murkweek Elixir
+						["coord"] = { 87.1, 57.4, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12221, {	-- The Forsaken Blight
-						["coord"] = { 77.6, 62.7, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27172,	-- Chief Plaguebringer Middleton
 						["sourceQuest"] = 12218,	-- Spread the Good Word
+						["coord"] = { 77.6, 62.7, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(38178),	-- Battlement Enforcer's Axe
 							i(38134),	-- Bloodtinged Spellblade
@@ -2318,13 +2318,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12188, {	-- The Forsaken Blight and You: How Not to Die
-						["coord"] = { 77.6, 62.7, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27172,	-- Chief Plaguebringer Middleton
 						["sourceQuests"] = {
 							12189,	-- Imbeciles Abound!
 							12182,	-- To Venomspite!
 						},
+						["coord"] = { 77.6, 62.7, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/10 Ectoplasmic Residue
 								["provider"] = { "i", 37121 },	-- Ectoplasmic Residue
@@ -2343,16 +2343,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12101, {	-- The Good Doctor...
-						["coord"] = { 37.0, 48.5, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26504,	-- Soar Hawkfury
 						["sourceQuest"] = 12100,	-- Containing the Rot
+						["coord"] = { 37.0, 48.5, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12169, {	-- The High Cultist
-						["coord"] = { 29.1, 55.6, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26973,	-- Warden Jodi Moonsong
 						["sourceQuest"] = 12168,	-- The Favor of Zangus
+						["coord"] = { 29.1, 55.6, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 High Cultist Zangus slain
 								["provider"] = { "n", 26655 },	-- High Cultist Zangus
@@ -2364,8 +2364,6 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12488, {	-- The High Executor Needs You
-						["coord"] = { 36.6, 46.5, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26415,	-- Senior Sergeant Juktok
 						["altQuests"] = {
 							12487,	-- To Conquest Hold, But Be Careful!
@@ -2373,17 +2371,19 @@ root(ROOTS.Zones, {
 							39206,	-- Warchief's Command: Grizzly Hills!
 							-- #endif
 						},
+						["coord"] = { 36.6, 46.5, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(12224, {	-- The Kor'kron Vanguard!
-						["coord"] = { 38.1, 46.3, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26379,	-- Overlord Agmar
 						["sourceQuests"] = {
 							12140,	-- All Hail Roanauk!
 							12072,	-- Blightbeasts be Damned!
 							12221,	-- The Forsaken Blight
 						},
+						["coord"] = { 38.1, 46.3, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(38541),	-- Implacable Zombie Crushers
 							i(38543),	-- Reinforced Traveler's Boots
@@ -2392,15 +2392,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12166, {	-- The Liquid Fire of Elune
+						["qg"] = 26973,	-- Warden Jodi Moonsong
 						["coord"] = { 29.1, 55.6, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 26973,	-- Warden Jodi Moonsong
 					}),
 					q(12041, {	-- The Lost Empire
-						["coord"] = { 26.1, 50.7, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26653,	-- Kilix the Unraveler
 						["sourceQuest"] = 12040,	-- An Enemy in Arthas
+						["coord"] = { 26.1, 50.7, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(38040),	-- Iceshear Bindings
 							i(37996),	-- Snowfall Reaver Gloves
@@ -2409,10 +2409,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12053, {	-- The Might of the Horde
-						["coord"] = { 36.6, 46.5, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26415,	-- Senior Sergeant Juktok
 						["sourceQuest"] = 12036,	-- From the Depths of Azjol-Nerub
+						["coord"] = { 36.6, 46.5, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(37956),	-- Frontrunner's Blessed Handwraps
 							i(37998),	-- Snowfall Reaver Boots
@@ -2421,10 +2421,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12290, {	-- The Murkweed Elixir
-						["coord"] = { 87.1, 57.4, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27347,	-- Orik Trueheart
 						["sourceQuest"] = 12287,	-- Orik Trueheart and the Forgotten Shore
+						["coord"] = { 87.1, 57.4, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/5 Murkweed
 								["providers"] = {
@@ -2435,10 +2435,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12311, {	-- The Noble's Crypt
-						["coord"] = { 79.0, 53.2, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27318,	-- Cavalier Durkon
 						["sourceQuest"] = 12309,	-- Find Durkon!
+						["coord"] = { 79.0, 53.2, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Necrolord Amarion slain
 								["provider"] = { "n", 27508 },	-- Necrolord Amarion
@@ -2450,14 +2450,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12447, {	-- The Obsidian Dragonshrine
-						["coord"] = { 60.0, 54.1, DRAGONBLIGHT },
 						["qg"] = 27765,	-- Nalice
+						["coord"] = { 60.0, 54.1, DRAGONBLIGHT },
 					}),
 					q(12477, {	-- The Path of Redemption
-						["coord"] = { 78.6, 48.1, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27136,	-- High Commander Halford Wyrmbane
 						["sourceQuest"] = 12305,	-- Parting Thoughts
+						["coord"] = { 78.6, 48.1, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 The Path of Redemption
 								["provider"] = { "i", 37931 },	-- The Path of Redemption
@@ -2470,15 +2470,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12260, {	-- The Perfect Dissemblance
-						["coord"] = { 73.5, 73.5, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27350,	-- Agent Skully
 						["sourceQuest"] = 12254,	-- Without a Prayer
+						["coord"] = { 73.5, 73.5, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12456, {	-- The Plume of Alystros
-						["coord"] = { 63.5, 72.0, DRAGONBLIGHT },
 						["qg"] = 27255,	-- Nishera the Garden Keeper
 						["sourceQuest"] = 12454,	-- Cycle of Life
+						["coord"] = { 63.5, 72.0, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/1 The Plume of Alystros
 								["provider"] = { "i", 37880 },	-- The Plume of Alystros
@@ -2491,14 +2491,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12132, {	-- The Power to Destroy
-						["coord"] = { 35.9, 46.9, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26581,	-- Koltira Deathweaver
 						["sourceQuests"] = {
 							12125,	-- In Service of Blood
 							12127,	-- In Service of Frost
 							12126,	-- In Service of the Unholy
 						},
+						["coord"] = { 35.9, 46.9, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/6 Shadowy Tormentor slain
 								["provider"] = { "n", 26966 },	-- Shadowy Tormentor
@@ -2506,10 +2506,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12476, {	-- The Return of the Crusade?
-						["coord"] = { 78.6, 48.1, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27155,	-- Commander Lynore Windstryke
 						["sourceQuest"] = 12305,	-- Parting Thoughts
+						["coord"] = { 78.6, 48.1, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/20 Scarlet Onslaught slain
 								["providers"] = {
@@ -2524,48 +2524,48 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12271, {	-- The Rod of Compulsion
-						["crs"] = { 27209 },	-- Torturer Alphonse
-						["coord"] = { 69.7, 71.9, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["provider"] = { "i", 37432 },	-- Torturer's Rod
-						["description"] = "Must be on or have completed |cFFFFD700Torture the Torturer|r.",
 						["sourceQuest"] = 12245,	-- No Mercy for the Captured
+						["coord"] = { 69.7, 71.9, DRAGONBLIGHT },
+						["description"] = "Must be on or have completed |cFFFFD700Torture the Torturer|r.",
+						["races"] = HORDE_ONLY,
+						["crs"] = { 27209 },	-- Torturer Alphonse
 					}),
 					q(12276, {	-- The Search for Slinkin
-						["coord"] = { 77.8, 50.2, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27159,	-- Siege Engineer Quarterflash
 						["sourceQuest"] = 12275,	-- The Demo-gnome
+						["coord"] = { 77.8, 50.2, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12239, {	-- The Spy in New Hearthglen
-						["coord"] = { 76.7, 63.0, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27337,	-- Spy Mistress Repine
 						["sourceQuest"] = 12234,	-- Torture the Torturer
+						["coord"] = { 76.7, 63.0, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12768, {	-- The Steward of Wyrmrest Temple (A)
-						["coord"] = { 52.2, 50.0, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27506,	-- Ceristrasz
 						["sourceQuest"] = 12418,	-- Through Fields of Flame
+						["coord"] = { 52.2, 50.0, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12769, {	-- The Steward of Wyrmrest Temple (H)
-						["coord"] = { 42.9, 50.8, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27763,	-- Vargastrasz
 						["sourceQuest"] = 12450,	-- Through Fields of Flame
+						["coord"] = { 42.9, 50.8, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(11979, {	-- The Taunka and the Tauren
+						["qg"] = 26415,	-- Senior Sergeant Juktok
 						["coord"] = { 36.6, 46.5, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
-						["qg"] = 26415,	-- Senior Sergeant Juktok
 						["isBreadcrumb"] = true,
 					}),
 					q(12136, {	-- The Translated Tome
-						["coord"] = { 35.9, 46.9, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26581,	-- Koltira Deathweaver
 						["sourceQuest"] = 12132,	-- The Power to Destroy
+						["coord"] = { 35.9, 46.9, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(38043),	-- Anub'ar-Husk Leggings
 							i(38000),	-- Snowfall Reaver Breastplate
@@ -2574,25 +2574,25 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12301, {	-- The Truth Shall Set Us Free
-						["coord"] = { 87.1, 57.4, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["providers"] = {
 							{ "n", 27347 },	-- Orik Trueheart
 							{ "i", 37577 },	-- Orik's Crystalline Orb (PQI!)
 						},
 						["sourceQuest"] = 12291,	-- The Forgotten Tale
+						["coord"] = { 87.1, 57.4, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12283, {	-- The Truth Will Out
-						["coord"] = { 73.5, 73.5, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27350,	-- Agent Skully
 						["sourceQuest"] = 12274,	-- A Fall From Grace
+						["coord"] = { 73.5, 73.5, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12418, {	-- Through Fields of Flame (A)
-						["coord"] = { 52.2, 50.0, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27506,	-- Ceristrasz
 						["sourceQuest"] = 12417,	-- Return to the Earth
+						["coord"] = { 52.2, 50.0, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(38108),	-- Conscript's Ruby Waistguard
 							i(38004),	-- Scourgeslayer Belt
@@ -2601,10 +2601,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12450, {	-- Through Fields of Flame (H)
-						["coord"] = { 42.9, 50.8, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27763,	-- Vargastrasz
 						["sourceQuest"] = 12449,	-- Return to the Earth
+						["coord"] = { 42.9, 50.8, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(38108),	-- Conscript's Ruby Waistguard
 							i(38004),	-- Scourgeslayer Belt
@@ -2613,32 +2613,32 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12487, {	-- To Conquest Hold, But Be Careful!
-						["coord"] = { 76.8, 63.2, DRAGONBLIGHT },
-						["sourceQuest"] = 12488,	-- The High Executor Needs You
-						["races"] = HORDE_ONLY,
 						["qg"] = 27243,	-- High Executor Wroth
 						-- #if AFTER 6.2.0.19953
 						["altQuests"] = {
 							39206,	-- Warchief's Command: Grizzly Hills!
 						},
 						-- #endif
+						["sourceQuest"] = 12488,	-- The High Executor Needs You
+						["coord"] = { 76.8, 63.2, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(12095, {	-- To Dragon's Fall
-						["coord"] = { 35.8, 48.3, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26618,	-- Captain Gort
 						["sourceQuests"] = {
 							12091,	-- WANTED: Dreadtalon
 							12090,	-- WANTED: Gigantaur
 							12089,	-- WANTED: Magister Keldonus
 						},
+						["coord"] = { 35.8, 48.3, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12474, {	-- To Fordragon Hold!
-						["coord"] = { 78.6, 48.1, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27136,	-- High Commander Halford Wyrmbane
 						["sourceQuest"] = 12473,	-- An End And A Beginning
+						["coord"] = { 78.6, 48.1, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(38541),	-- Implacable Zombie Crushers
 							i(38543),	-- Reinforced Traveler's Boots
@@ -2647,17 +2647,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12440, {	-- To Stars' Rest!
-						["coord"] = { 77.0, 49.8, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26878,	-- Rodney Wells
 						["sourceQuest"] = 12439,	-- A Disturbance in The West
+						["coord"] = { 77.0, 49.8, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(12252, {	-- Torture the Torturer
-						["coord"] = { 76.7, 63.2, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27243,	-- High Executor Wroth
 						["sourceQuest"] = 12245,	-- No Mercy for the Captured
+						["coord"] = { 76.7, 63.2, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(38100),	-- Crystalplate Gauntlets
 							i(38039),	-- Iceshear Pauldrons
@@ -2666,9 +2666,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12009, {	-- Tua'kea's Crab Traps
-						["coord"] = { 47.9, 76.1, DRAGONBLIGHT },
 						["qg"] = 26245,	-- Tua'kea
 						["sourceQuest"] = 11959,	-- Slay Loguhn
+						["coord"] = { 47.9, 76.1, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/8 Tua'kea Crab Trap
 								["providers"] = {
@@ -2679,25 +2679,25 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12320, {	-- Understanding the Language of Death
-						["coord"] = { 78.6, 48.1, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27136,	-- High Commander Halford Wyrmbane
 						["sourceQuest"] = 12319,	-- Mystery of the Tome
+						["coord"] = { 78.6, 48.1, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12281, {	-- Understanding the Scourge War Machine
-						["coord"] = { 77.8, 50.2, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27159,	-- Siege Engineer Quarterflash
 						["sourceQuests"] = {
 							12277,	-- Leave Nothing to Chance
 							12272,	-- The Bleeding Ore
 						},
+						["coord"] = { 77.8, 50.2, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12034, {	-- Victory Nears...
-						["coord"] = { 38.0, 46.3, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26379,	-- Overlord Agmar
 						["sourceQuest"] = 12008,	-- Agmar's Hammer
+						["coord"] = { 38.0, 46.3, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12091, {	-- Wanted: Dreadtalon
 						["provider"] = { "o", 188418 },	-- Wanted!
@@ -2791,9 +2791,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12205, {	-- Wanted: The Scarlet Onslaught
+						["provider"] = { "o", 188649 },	-- Wanted Poster
 						["coord"] = { 76.9, 62.8, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
-						["provider"] = { "o", 188649 },	-- Wanted Poster
 						["groups"] = {
 							objective(1, {	-- 0/20 Members of the Scarlet Onslaught slain
 								["providers"] = {
@@ -2820,9 +2820,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12151, {	-- Wanton Warlord
-						["coord"] = { 60.0, 55.1, DRAGONBLIGHT },
 						["qg"] = 26983,	-- Aurastrasza
 						["sourceQuest"] = 12150,	-- Reclusive Runemaster
+						["coord"] = { 60.0, 55.1, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/1 Grom'thar's Head
 								["provider"] = { "i", 36853 },	-- Grom'thar's Head
@@ -2842,10 +2842,10 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					})),
 					q(12475, {	-- What Secrets Men Hide
-						["coord"] = { 79.1, 47.1, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27314,	-- Zelig the Visionary
 						["sourceQuest"] = 12305,	-- Parting Thoughts
+						["coord"] = { 79.1, 47.1, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Onslaught Map
 								["providers"] = {
@@ -2856,10 +2856,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12111, {	-- Where the Wild Things Roam
-						["coord"] = { 37.0, 48.5, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 26504,	-- Soar Hawkfury
 						["sourceQuest"] = 12104,	-- Return to Soar
+						["coord"] = { 37.0, 48.5, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(38171),	-- Battleworn Magnataur Crusher
 							i(38172),	-- Crossbow of the Hardened Ranger
@@ -2870,10 +2870,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12254, {	-- Without a Prayer
-						["coord"] = { 73.5, 73.5, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27350,	-- Agent Skully
 						["sourceQuest"] = 12239,	-- The Spy in New Hearthglen
+						["coord"] = { 73.5, 73.5, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Bishop Street's Prayer Book
 								["provider"] = { "i", 37350 },	-- Bishop Street's Prayer Book
@@ -2882,14 +2882,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12078, {	-- Worm Wrangler
-						["coord"] = { 59.3, 18.1, DRAGONBLIGHT },
 						["qg"] = 26659,	-- Zort
 						["sourceQuest"] = 12077,	-- Apply This Twice A Day
+						["coord"] = { 59.3, 18.1, DRAGONBLIGHT },
 					}),
 					q(11996, {	-- Your Presence is Required at Agmar's Hammer
+						["qg"] = 26441,	-- Envoy Ripfang
 						["coord"] = { 47.9, 74.7, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
-						["qg"] = 26441,	-- Envoy Ripfang
 						["isBreadcrumb"] = true,
 					}),
 					q(11995, {	-- Your Presence is Required at Stars' Rest
@@ -2962,7 +2962,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 93, 26, DRAGONBLIGHT },
 						["cost"] = {{ "i", 45000, 4 }},	-- Winter Hyacinth
 						["cr"] = 33273,	-- Maiden of Drak'Mar
-						["group"] = { i(44978) },	-- Blade of Drak'Mar
+						["groups"] = { i(44978) },	-- Blade of Drak'Mar
 					})),
 				}),
 				n(VENDORS, {

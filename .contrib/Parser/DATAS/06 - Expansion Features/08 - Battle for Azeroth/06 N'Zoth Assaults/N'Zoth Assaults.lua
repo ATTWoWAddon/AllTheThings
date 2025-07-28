@@ -10,7 +10,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			NZOTH_ASSAULT_ULDUM,
 			NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS,
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(40959, {	-- Black Empire State of Mind
 					["timeline"] = { ADDED_11_0_7 },
@@ -406,7 +406,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							1570,	-- Vale of Eternal Blossoms, Vision
 							1571,	-- Uldum, Vision
 						},
-						["g"] = {
+						["groups"] = {
 							i(173810),	-- Darksight Potion (QI!)
 							i(174288, {	-- Breath of Everlasting Spirit (once a week)
 								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
@@ -423,7 +423,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							1570,	-- Vale of Eternal Blossoms, Vision
 							1571,	-- Uldum, Vision
 						},
-						["g"] = {
+						["groups"] = {
 							i(174288, {	-- Breath of Everlasting Spirit (once a week)
 								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
 							}),
@@ -439,7 +439,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							1570,	-- Vale of Eternal Blossoms, Vision
 							1571,	-- Uldum, Vision
 						},
-						["g"] = {
+						["groups"] = {
 							i(174288, {	-- Breath of Everlasting Spirit (once a week)
 								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
 							}),
@@ -456,7 +456,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							1570,	-- Vale of Eternal Blossoms, Vision
 							1571,	-- Uldum, Vision
 						},
-						["g"] = {
+						["groups"] = {
 							i(174288, {	-- Breath of Everlasting Spirit (once a week)
 								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
 							}),
@@ -473,7 +473,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							1570,	-- Vale of Eternal Blossoms, Vision
 							1571,	-- Uldum, Vision
 						},
-						["g"] = {
+						["groups"] = {
 							i(174288, {	-- Breath of Everlasting Spirit (once a week)
 								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
 							}),

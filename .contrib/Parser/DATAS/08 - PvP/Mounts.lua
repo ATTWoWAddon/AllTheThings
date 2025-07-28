@@ -6,7 +6,7 @@ root(ROOTS.PVP, pvp(filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0
 	n(73190, {	-- Necrolord Sipe <Combatant Mount Quartermaster>
 		["coord"] = { 76.8, 65.6, STORMWIND_CITY },
 		["races"] = ALLIANCE_ONLY,
-		["g"] = sharedData({
+		["groups"] = sharedData({
 			["races"] = ALLIANCE_ONLY,
 			["cost"] = {{"i", VICIOUS_SADDLE, 1}}
 		}, {
@@ -77,7 +77,7 @@ root(ROOTS.PVP, pvp(filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0
 	n(73151, {	-- Deathguard Netharian <Combatant Mount Quartermaster>
 		["coord"] = { 41.8, 73.0, ORGRIMMAR },
 		["races"] = HORDE_ONLY,
-		["g"] = sharedData({
+		["groups"] = sharedData({
 			["races"] = HORDE_ONLY,
 			["cost"] = {{"i", VICIOUS_SADDLE, 1}}
 		}, {

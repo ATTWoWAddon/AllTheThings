@@ -23,7 +23,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["provider"] = { "n", 121239 },	-- Flynn Fairwind
 					["sourceQuests"] = { 51341 },	-- Tol Dagor
 					["coord"] = { 47.3, 46.2, TOL_DAGOR },
-					["g"] = {
+					["groups"] = {
 						i(160326),	-- Glittering Gunpowder (QI!)
 					},
 				}),

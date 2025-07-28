@@ -51,7 +51,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 		["lvl"] = 90,
 		["mapID"] = 573,
 		["coord"] = { 49.93, 24.8, FROSTFIRE_RIDGE },
-		["g"] = {
+		["groups"] = {
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(CRUSHTO),
 				BossOnly(MAGMOLATUS),
@@ -92,7 +92,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				BossOnly(CRUSHTO),
 				n(75242, {	-- Croman (The Barbarian)
 					["description"] = "Click on this manly dude and have him follow you to Magmolatus and allow him to retrieve his weapon. (He has to hit the boss at least one time.)\n\nAfter he has reclaimed his weapon, bring him to the final boss and allow him to hit that boss as well before killing the boss.  Croman must still be alive at the end of the dungeon.",
-					["g"] = {
+					["groups"] = {
 						ach(9005, {	-- Come With Me If You Want to Live
 							follower(177),	-- Croman
 						}),

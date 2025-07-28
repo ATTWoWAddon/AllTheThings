@@ -1084,12 +1084,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["coord"] = { 49.1, 37.6, ISLE_OF_QUELDANAS },
 					["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["timeline"] = { REMOVED_3_0_2 },
-					-- #if BEFORE WRATH
-					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_B .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR .. [[; end]],
-					-- #endif
 					["cost"] = { { "g", 100000 } },	-- 10g
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
+					-- #if BEFORE WRATH
+					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_B .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR .. [[; end]],
+					-- #endif
 				})),
 				q(11554, {	-- A Friend in the Frontlines
 					["qg"] = 25032,	-- Eldara Dawnrunner
@@ -1437,11 +1437,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["qg"] = 25034,	-- Tradesman Portanuus
 					["coord"] = { 47.2, 35.0, ISLE_OF_QUELDANAS },
 					["maps"] = { SHATTRATH_CITY },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(70, 70, 25),
 					-- #if ANYCLASSIC
 					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO .. [[; end]],
 					-- #endif
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(70, 70, 25),
 				})),
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B, q(11534, {	-- Report to Nasuun
 					["qg"] = 25034,	-- Tradesman Portanuus

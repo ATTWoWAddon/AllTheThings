@@ -151,7 +151,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(7871, {	-- Se'Jib <Master Tribal Leatherworker>
 						["coord"] = { 45.2, 58.6, NORTHERN_STRANGLETHORN },
 						["races"] = HORDE_ONLY,
-						["g"] = CLASSIC_TBC_TRIBAL,
+						["groups"] = CLASSIC_TBC_TRIBAL,
 					}),
 				}),
 			}),
@@ -161,8 +161,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 2465 },	-- Far Seer Mok'thardin
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
-					["description"] = "Automatically granted after killing 12 eggs during the quest |cFFFFD700The Defense of Grom'gol: Raptor Risk|r.",
 					["coord"] = { 38.3, 51.0, NORTHERN_STRANGLETHORN },
+					["description"] = "Automatically granted after killing 12 eggs during the quest |cFFFFD700The Defense of Grom'gol: Raptor Risk|r.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -274,8 +274,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(204, {	-- Bad Medicine
 					["qg"] = 733,	-- Sergeant Yohwa
 					["coord"] = { 38.0, 3.3, STRANGLETHORN_VALE },
-					["cost"] = { { "i", 2633, 7 } },	-- Jungle Remedy
 					["timeline"] = { REMOVED_4_0_3 },
+					["cost"] = { { "i", 2633, 7 } },	-- Jungle Remedy
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -796,9 +796,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2762,	-- The Great Silver Deceiver
 						2763,	-- The Art of the Imbue
 					},
-					["requireSkill"] = BLACKSMITHING,
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
+					["requireSkill"] = BLACKSMITHING,
 					["lvl"] = 40,
 					["groups"] = {
 						i(8703,	{	-- Signet of Expertise
@@ -835,8 +835,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 42736 },	-- Lashtail Hatchling
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
-					["description"] = "Available on arrival to the |cFFFFD700Bal'lal Ruins|r.",
 					["sourceQuest"] = 26739,	-- I Think She's Hungry
+					["description"] = "Available on arrival to the |cFFFFD700Bal'lal Ruins|r.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -845,8 +845,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 42736 },	-- Lashtail Hatchling
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
-					["description"] = "Available on arrival to the |cFFFFD700Bal'lal Ruins|r.",
 					["sourceQuest"] = 26321,	-- I Think She's Hungry
+					["description"] = "Available on arrival to the |cFFFFD700Bal'lal Ruins|r.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -1051,10 +1051,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(215, {	-- Jungle Secrets
 					["qg"] = 738,	-- Private Thorsen
+					["coord"] = { 40, 8, STRANGLETHORN_VALE },
 					-- #if BEFORE 4.0.3
 					["description"] = "Every so often, Thorsen will go on patrol. If you follow him, he will be ambushed by two of Kurzen's lackeys - if he survives, he will offer you this quest.",
 					-- #endif
-					["coord"] = { 40, 8, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -1064,9 +1064,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1422 },	-- Corporal Sethman
 						{ "i", 58165 },	-- Lashtail Raptor Egg Fragment
 					},
-					["description"] = "Automatically granted after obtaining 7 'Jungle Remedies' during the quest |cFFFFD700Bad Medicine|r.",
 					["sourceQuest"] = 26732,	-- Bad Medicine
 					["coord"] = { 46.9, 10.8, NORTHERN_STRANGLETHORN },
+					["description"] = "Automatically granted after obtaining 7 'Jungle Remedies' during the quest |cFFFFD700Bad Medicine|r.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1280,11 +1280,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "i", 58491 },	-- Disfigured Mosh'Ogg Hand
 					["description"] = "Typically drops during |cFFFFD700The Defense of Grom'gol: Ogre Oppression|r.",
 					["timeline"] = { ADDED_4_0_3 },
+					["races"] = HORDE_ONLY,
 					["crs"] = {
 						1142,	-- Mosh'Ogg Brute
 						1144,	-- Mosh'Ogg Witch Doctor
 					},
-					["races"] = HORDE_ONLY,
 				}),
 				q(26300, {	-- Nezzliok Will Know
 					["qg"] = 2497,	-- Nimboya
@@ -1773,12 +1773,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 2760,	-- The Mithril Order
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["requireSkill"] = BLACKSMITHING,
-					["learnedAt"] = 210,
 					["cost"] = {
 						{ "i", 3575, 40 },	-- Iron Bar
 						{ "i", 3860, 40 },	-- Mithril Bar
 					},
+					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 210,
 					["lvl"] = 40,
 					["groups"] = {
 						i(7983, {	-- Plans: Ornate Mithril Pants (RECIPE!)
@@ -2053,12 +2053,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 2760,	-- The Mithril Order
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["requireSkill"] = BLACKSMITHING,
-					["learnedAt"] = 210,
 					["cost"] = {
 						{ "i", 3860, 40 },	-- Iron Bar
 						{ "i", 3864, 4 },	-- Citrine
 					},
+					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 210,
 					["lvl"] = 40,
 					["groups"] = {
 						i(7985, {	-- Plans: Ornate Mithril Shoulder (RECIPE!)
@@ -2231,12 +2231,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 2760,	-- The Mithril Order
 					["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["requireSkill"] = BLACKSMITHING,
-					["learnedAt"] = 210,
 					["cost"] = {
 						{ "i", 3860, 40 },	-- Iron Bar
 						{ "i", 6037, 5 },	-- Truesilver Bar
 					},
+					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 210,
 					["lvl"] = 40,
 					["groups"] = {
 						i(7984, {	-- Plans: Ornate Mithril Gloves (RECIPE!)
@@ -2554,8 +2554,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26782, {	-- The Mosh'Ogg Bounty (A)
 					["qg"] = 44018,	-- Wulfred Harrys
-					["description"] = "This quest is offered to players that HAVE completed '|cff4a54e8The Source of the Madness|r' (26734) at Rebel Camp.",
 					["coord"] = { 53.4, 66.3, NORTHERN_STRANGLETHORN },
+					["description"] = "This quest is offered to players that HAVE completed '|cff4a54e8The Source of the Madness|r' (26734) at Rebel Camp.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2570,8 +2570,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26783, {	-- The Mosh'Ogg Bounty (A)
 					["qg"] = 44018,	-- Wulfred Harrys
-					["description"] = "This quest is offered to players that HAVE NOT completed '|cff4a54e8The Source of the Madness|r' (26734) at Rebel Camp.",
 					["coord"] = { 53.4, 66.3, NORTHERN_STRANGLETHORN },
+					["description"] = "This quest is offered to players that HAVE NOT completed '|cff4a54e8The Source of the Madness|r' (26734) at Rebel Camp.",
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

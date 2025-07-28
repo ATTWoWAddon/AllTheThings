@@ -7,7 +7,7 @@ local function ClassicCost(cost)
 	return cost
 	-- #ENDIF
 end
-root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_LANDFALL, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 	i(180055, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I
 	i(180057, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II
 	i(180058, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III
@@ -171,7 +171,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_LAND
 		n(DISCOVERY, {
 			spell(143255, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Balanced Trillium Ingot
 				["cost"] = ClassicCost({{ "i", 72095, 1 }}),	-- 1x Trillium Bar
-				["g"] = {
+				["groups"] = {
 					r(142959),	-- Avenger's Trillium Legplates
 					r(142968),	-- Avenger's Trillium Waistplate
 					r(142963),	-- Blessed Trillium Belt
@@ -217,7 +217,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_LAND
 			})),
 			spell(138646, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Lightning Steel Ingot
 				["cost"] = ClassicCost({{ "i", 72096, 10 }}),	-- 10x Ghost Iron Bar
-				["g"] = {
+				["groups"] = {
 					r(137792),	-- Crafted Dreadful Gladiator's Armplates of Alacrity
 					r(137791),	-- Crafted Dreadful Gladiator's Armplates of Proficiency
 					r(137781),	-- Crafted Dreadful Gladiator's Bracers of Meditation
@@ -897,7 +897,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_LAND
 		n(DISCOVERY, {
 			spell(142976, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Hardened Magnificent Hide
 				["cost"] = ClassicCost({{ "i", 72163, 2 }}),	-- 2x Magnificent Hide
-				["g"] = {
+				["groups"] = {
 					r(143146),	-- Crafted Malevolent Gladiator's Armbands of Meditation
 					r(143145),	-- Crafted Malevolent Gladiator's Armbands of Prowess
 					r(143112),	-- Crafted Malevolent Gladiator's Armwraps of Accuracy
@@ -984,7 +984,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_LAND
 			})),
 			spell(140040, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Magnificence of Leather
 				["cost"] = ClassicCost({{ "i", 72120, 20 }}),	-- 20x Mist-Touched Leather
-				["g"] = {
+				["groups"] = {
 					r(137832),	-- Crafted Dreadful Gladiator's Armwraps of Accuracy
 					r(137845),	-- Crafted Dreadful Gladiator's Armwraps of Alacrity
 					r(137822),	-- Crafted Dreadful Gladiator's Belt of Cruelty
@@ -1036,7 +1036,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_LAND
 			})),
 			spell(140041, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Magnificence of Scales
 				["cost"] = ClassicCost({{ "i", 79101, 20 }}),	-- 20x Prismatic Scale
-				["g"] = {
+				["groups"] = {
 					r(138596),	-- Cloud Serpent Helm
 					r(138595),	-- Cloud Serpent Sabatons
 					r(137866),	-- Crafted Dreadful Gladiator's Armbands of Meditation
@@ -1377,7 +1377,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_LAND
 		n(DISCOVERY, {
 			spell(143011, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Celestial Cloth
 				["cost"] = ClassicCost({{ "i", 82441, 10 }}),	-- 10x Bolt of Windwool Cloth
-				["g"] = {
+				["groups"] = {
 					r(142964),	-- Belt of the Night Sky
 					r(143053),	-- Crafted Malevolent Gladiator's Cape of Cruelty
 					r(143054),	-- Crafted Malevolent Gladiator's Cape of Prowess
@@ -1422,7 +1422,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_LAND
 			})),
 			spell(125557, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Imperial Silk
 				["cost"] = ClassicCost({{ "i", 82441, 8 }}),	-- 8x Bolt of Windwool Cloth
-				["g"] = {
+				["groups"] = {
 					r(137907),	-- Crafted Dreadful Gladiator's Cape of Cruelty
 					r(137908),	-- Crafted Dreadful Gladiator's Cape of Prowess
 					r(137936),	-- Crafted Dreadful Gladiator's Cloak of Alacrity

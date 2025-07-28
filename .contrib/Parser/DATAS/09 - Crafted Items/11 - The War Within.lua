@@ -1019,13 +1019,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 	prof(ENGINEERING, {
 		n(DISCOVERY, {
 			spell(447312, {	-- Invent
-				i(224640, {	-- Invent
-					r(447373),	-- Crowd Pummeler 2-30
-				}),
+				i(224640),	-- Invent
 			}),
 			TempForceMisc(i(219192, {	-- Comprehensibly Organized Ideas
 				["description"] = "NOTE: Some of these require a specific specialization to discover.",
-				["g"] = {
+				["groups"] = {
 					r(447325, {	-- Aqirite Brainwave Projector
 						["description"] = "Requires specialization - Profession Gear to discover",
 					}),
@@ -1048,6 +1046,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 						["description"] = "Requires specialization - Bracers to discover",
 					}),
 					r(447360),	-- Complicated Fuse Box
+					r(447373),	-- Crowd Pummeler 2-30
 					r(447362),	-- Concealed Chaos Module
 					r(447317, {	-- Dangerous Distraction Inhibitor
 						["description"] = "Requires specialization - Goggles to discover",
@@ -1146,7 +1145,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			-- and then filling it again, which repeats forever.
 			-- Eventually the Profession DBs will be done (right?) and Parser won't be magically turning Items into Recipes unless
 			-- we say so
-			TempForceMisc(i(219191)),	-- Hastily Scrawled Notes
+			TempForceMisc(i(219191, {	-- Hastily Scrawled Notes
+				["provider"] = { "i", 224640 },	-- Invent
+			})),
 			TempForceMisc(i(221968)),	-- Legibly Scribbled Notes
 		}),
 		spell(447311, {	-- Pilfer Through Parts

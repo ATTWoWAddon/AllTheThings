@@ -26,7 +26,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuest"] = 64957,	-- This Old Waystone (possibly earlier)
 					["coord"] = { 35.6, 57.5, ORIBOS },
 					["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2 },
-					["g"] = {
+					["groups"] = {
 						i(190955),	-- Protoplasmic Thread (QI!)
 						i(188778),	-- Cosmic Gladiator's Devouring Malediction
 						i(188691),	-- Cosmic Gladiator's Echoing Resolve
@@ -42,7 +42,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 168011 },	-- Zo'sorg
 					["coord"] = { 34.7, 57.3, ORIBOS },
 					["isWeekly"] = true,
-					["g"] = {
+					["groups"] = {
 						i(186980),	-- Unchained Gladiator's Shackles of Malediction
 					},
 				})),
@@ -106,7 +106,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(VENDORS, {
 				n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 					["coord"] = { 36.0, 58.6, ORIBOS },
-					["g"] = {
+					["groups"] = {
 						n(LEGENDARIES, sharedData({ ["cost"] = { { "c", HONOR, 1500 } }, }, {
 							i(183246),	-- Memory of Sephuz
 							i(183252, {	-- Memory of a Trapping Apparatus
@@ -149,7 +149,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(185834, {	-- Orboreal Distinguishment
 							["cost"] = { { "c", HONOR, 2000 } },
 							-- #if BEFORE 10.0.2
-							["g"] = {
+							["groups"] = {
 							-- Lets display it only in the latest Expansion
 								i(137642),	-- Mark of Honor
 							},
@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 				n(168011, {	-- Zo'sorg <Master of Conflict>
 					["coord"] = { 35.0, 57.6, ORIBOS },
-					["g"] = {
+					["groups"] = {
 						n(CONDUITS, sharedData({ ["cost"] = { { "c", CONQUEST, 200 } } }, {
 							i(181848),	-- Accelerated Cold
 							i(183470),	-- Born of the Wilds

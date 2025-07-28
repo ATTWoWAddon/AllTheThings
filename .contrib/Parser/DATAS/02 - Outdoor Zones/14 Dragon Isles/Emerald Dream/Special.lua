@@ -20,7 +20,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			--
 			header(HEADERS.Item, 210961, bubbleDownSelf({ ["classes"] = { DEMONHUNTER }}, {	-- Alara'shinu
 				["description"] = "Follow coords attached to steps to obtain warglaive.",
-				["g"] = {
+				["groups"] = {
 					n(213029, {	-- Landeron Felfury
 						["name"] = "Step 1. Talk to this npc.",
 						["questID"] = 78606,
@@ -49,7 +49,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						["questID"] = 78678,
 						["sourceQuest"] = 78677,
 						["coord"] = { 51.1, 57.1, VALSHARAH },
-						["g"] = {
+						["groups"] = {
 							i(210961),	-- Alara'shinu
 						},
 					}),
@@ -77,7 +77,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			header(HEADERS.Item, 210728, bubbleDownSelf({ ["classes"] = { DRUID }}, {	-- Moon-Blessed Claw
 				o(412995, {	-- Small Box of Vials
 					["coord"] = { 54.9, 25.4, EMERALD_DREAM },
-					["g"] = {
+					["groups"] = {
 						i(210991, {	-- Small Box of Vials
 							i(210840),	-- Empty Vial "B"
 							i(210839),	-- Empty Vial "D"
@@ -132,7 +132,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["provider"] = { "i", 210977 },	-- Coalesced Moonlight
 					["coord"] = { 41.74, 67.0, EMERALD_DREAM },
 					["questID"] = 78526,
-					["g"] = {
+					["groups"] = {
 						i(210728),	-- Moon-Blessed Claw (CI!)
 					},
 				}),

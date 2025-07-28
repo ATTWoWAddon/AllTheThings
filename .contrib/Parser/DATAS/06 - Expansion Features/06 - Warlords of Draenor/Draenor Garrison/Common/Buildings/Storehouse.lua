@@ -15,7 +15,7 @@ root(ROOTS.ExpansionFeatures,
 							["hordeQuestData"] = q(37060, {	-- Lost in Transition
 								["provider"] = { "n", 79862 },	-- Yorn Longhoof <Banker>
 							}),
-							["g"] = {
+							["groups"] = {
 								o(237039, {	-- Crate of Surplus Material
 									i(118417),	-- Crate of Surplus Materials (QI!)
 								}),

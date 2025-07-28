@@ -290,7 +290,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			2470,	-- Devourer's Heart
 			2471,	-- The Dark Heart
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(41601, {	-- Might of the Shadowguard
 					crit(103298, {	-- Plexus Sentinel
@@ -418,7 +418,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				n(245349, bubbleDownSelf({	-- Zo'ropo <Eccentric Engineer>
 					["cost"] = { { "i", 246727, 1 }, }, },{	-- Ethereal Essence Sliver
 					["coord"] = { 42.0, 22.0, KARESH },
-					["g"] = {
+					["groups"] = {
 						i(249145),	-- Manaforge Raider's Gamma Shockmace (COSMETIC!)
 						i(249164),	-- Manaforge Raider's Cosmic Shockmace (COSMETIC!)
 						i(249165),	-- Manaforge Raider's Umbral Shockmace (COSMETIC!)
@@ -497,7 +497,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				n(245348, bubbleDownSelf({	-- Ba'choso <Curious Curator>
 					["cost"] = { { "i", 245510, 1 }, }, },{	-- Loombeast Silk
 					["coord"] = { 42.0, 22.4, KARESH },
-					["g"] = {
+					["groups"] = {
 						iensemble(248969),	-- Ensemble: Hollow Sentinel's Wingdrapes
 						iensemble(248971),	-- Ensemble: Vicious Charhound's Felcovers
 						iensemble(248972),	-- Ensemble: Plumes of the Mother Eagle
@@ -524,7 +524,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				["coord"] = { 50.0, 54.2, DORNOGAL },
 				["modelScale"] = 4,
 				["catalystID"] = 10,	-- ItemBonus.Value_0 TWW:S2 -- Ask Runaway if this need change?
-				["g"] = {
+				["groups"] = {
 					Difficulty(DIFFICULTY.RAID.LFR, {["upgradeTrackID"]=UPGRADETRACKS.VETERAN}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(MANAFORGE_OMEGA_TIER, DIFFICULTY.RAID.LFR)
 					),

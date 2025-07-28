@@ -5,7 +5,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["modID"] = 14,
-		["g"] = {
+		["groups"] = {
 			e(2199, {	-- Azurethos, The Winged Typhoon
 				["isWeekly"] = true,
 				["questID"] = 52163,	-- The Matriarch (WQ)
@@ -18,7 +18,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					1185,	-- Winterchill Mine (upper)
 				},
 				["creatureID"] = 136385,	-- Azurethos, The Winged Typhoon
-				["g"] = bubbleDown({["modID"] = 3}, {
+				["groups"] = bubbleDown({["modID"] = 3}, {
 					i(161356),	-- Feathered Galeforce Crest
 					i(161352),	-- Chestguard of Dire Winds
 					i(161369),	-- Bindings of the Winged Typhoon
@@ -46,7 +46,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					1009,	-- Atul'Aman: The Blood Font
 				},
 				["creatureID"] = 138794,	-- Dunegorger Kraulok
-				["g"] = bubbleDown({["modID"] = 3}, {
+				["groups"] = bubbleDown({["modID"] = 3}, {
 					i(174842),	-- Mollie (MOUNT!)
 					i(161404),	-- Hood of the Sinuous Devilsaur
 					i(164385),	-- Desert Nomad's Wrap
@@ -72,7 +72,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					{ 49.2, 74.6, DRUSTVAR },	-- actual boss
 				},
 				["creatureID"] = 140252,	-- Hailstone Construct
-				["g"] = bubbleDown({["modID"] = 3}, {
+				["groups"] = bubbleDown({["modID"] = 3}, {
 					i(161372),	-- Ice-Carved Shoulderplates
 					i(161367),	-- Hailstone Hauberk
 					i(161364),	-- Chill's End Wristguards
@@ -100,7 +100,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					1177,	-- Breath Of Pa'ku,	bottom level
 				},
 				["creatureID"] = 132253,	-- Ji'arak
-				["g"] = bubbleDown({["modID"] = 3}, {
+				["groups"] = bubbleDown({["modID"] = 3}, {
 					i(161401),	-- Matriarch's Shadowveil
 					i(164384),	-- Windswept Dinorider's Cape
 					i(161409),	-- Stormcrash Chestguard
@@ -123,7 +123,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 				["coord"] = { 35.6, 33.6, NAZMIR },
 				["lvl"] = { 50 },
 				["creatureID"] = 132701,	-- T'zane <Tehe Soul Terror>
-				["g"] = bubbleDown({["modID"] = 3}, {
+				["groups"] = bubbleDown({["modID"] = 3}, {
 					i(161396),	-- Petrified Mask of the Afterlife
 					i(161391),	-- Deathshambler's Shoulderpads
 					i(161392),	-- Bindings of Eternal Fears
@@ -156,7 +156,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					152729,	-- Moon Princess Liara
 					152697,	-- Ulmath
 				},
-				["g"] = bubbleDown({["modID"] = 3 }, {
+				["groups"] = bubbleDown({["modID"] = 3 }, {
 					i(170089),	-- Liara's Spire
 					i(170093),	-- Tyr'mar's Greatsword
 					i(170091),	-- Willbinder's Halberd
@@ -182,7 +182,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					1183,	-- Thornheart
 				},
 				["creatureID"] = 140163,	-- Warbringeer Yenajz
-				["g"] = bubbleDown({["modID"] = 3}, {
+				["groups"] = bubbleDown({["modID"] = 3}, {
 					i(161349),	-- Amice of the Rending Abyss
 					i(161357),	-- Spaulders of the Enveloping Maw
 					i(161351),	-- Wristwraps of Warped Reality
@@ -206,7 +206,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					1528,	-- The Eternal Palace
 				},
 				["creatureID"] = 152671,	-- Wekemara
-				["g"] = bubbleDown({["modID"] = 3}, {
+				["groups"] = bubbleDown({["modID"] = 3}, {
 					i(168340),	-- Naga Ritualist's Mantle
 					i(168366),	-- Tidal Lurker's Greathelm
 					i(168351),	-- Spitcharged Shoulderguards

@@ -100,16 +100,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["sourceQuests"] = { 84940 },	-- Friendly Competition
 				["provider"] = { "n", 230242 },	-- Bargus
 				["coord"] = { 67.5, 41.9, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					i(230851),	-- Ornate Arathi Box (QI!)
 					i(230770),	-- Sturdy Toolbox (QI!)
 					o(475284, {	-- Earthen Prototype
 						["coord"] = { 67.9, 40.8, SIREN_ISLE },
-						["g"] = { i(230771) },	-- Earthen Prototype (QI!)
+						["groups"] = { i(230771) },	-- Earthen Prototype (QI!)
 					}),
 					o(475286, {	-- Overcharged Battery
 						["coord"] = { 71.2, 46, SIREN_ISLE },
-						["g"] = { i(230773) },	-- Overcharged Battery (QI!)
+						["groups"] = { i(230773) },	-- Overcharged Battery (QI!)
 					}),
 				},
 			}),
@@ -138,7 +138,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["sourceQuests"] = { 84723 },	-- Buried Secrets
 				["provider"] = { "n", 231143 },	-- Bargus
 				["coord"] = { 40.1, 70.7, 2375 },	-- The Forgotten Vault
-				["g"] = {
+				["groups"] = {
 					i(229002),	-- Cracked Citrine (QI!)
 					i(229001),	-- Rune Carved Band (QI!)
 					i(228411),	-- Cyrce's Circlet
@@ -148,7 +148,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["sourceQuests"] = { 84724 },	-- The Radiant Vault
 				["provider"] = { "n", 228074 },	-- Angorla
 				["coord"] = { 71.0, 44.1, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					i(228640),	-- Windsinger's Runed Citrine
 				},
 			}),
@@ -162,18 +162,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["sourceQuests"] = { 84725 },	-- The Circlet Calls
 				["provider"] = { "n", 228074 },	-- Angorla
 				["coord"] = { 71.0, 44.1, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					o(499620, {	-- Runed Storm Cache
 						["coord"] = { 68.3, 73.6, SIREN_ISLE },
-						["g"] = { i(232860) },	-- Singing Fragments (QI!)
+						["groups"] = { i(232860) },	-- Singing Fragments (QI!)
 					}),
 					o(499862, {	-- Runed Storm Cache
 						["coord"] = { 32.4, 69.3, SIREN_ISLE },
-						["g"] = { i(232861) },	-- Singing Fragments (QI!)
+						["groups"] = { i(232861) },	-- Singing Fragments (QI!)
 					}),
 					o(499863, {	-- Runed Storm Cache
 						["coord"] = { 39.3, 20.1, SIREN_ISLE },
-						["g"] = { i(232862) },	-- Singing Fragments (QI!)
+						["groups"] = { i(232862) },	-- Singing Fragments (QI!)
 					}),
 					--spell(472051),	-- Runecaster's Eye
 					--
@@ -186,7 +186,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["provider"] = { "n", 230242 },	-- Bargus
 				["coord"] = { 67.5, 42.0, SIREN_ISLE },
 				["races"] = { DARKIRON, DWARF, EARTHEN_ALLIANCE, EARTHEN_HORDE },
-				["g"] = {
+				["groups"] = {
 					i(234455),	-- Storm-flecked Debris (QI!)
 					sensemble(1215408),	-- Ensemble: Stonebound Earthen Regalia
 				},
@@ -196,7 +196,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["provider"] = { "n", 230242 },	-- Bargus
 				["coord"] = { 67.5, 42.0, SIREN_ISLE },
 				["races"] = { DARKIRON, DWARF, EARTHEN_ALLIANCE, EARTHEN_HORDE },
-				["g"] = {
+				["groups"] = {
 					i(234456),	-- Crystal-splintered Rubble (QI!)
 					sensemble(1215407),	-- Ensemble: Awakened Earthen Regalia
 				},
@@ -211,18 +211,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["sourceQuests"] = { 84726 },	-- Uncovered Mysteries
 				["provider"] = { "n", 231536 },	-- Apprentice Tanmar
 				["coord"] = { 72.3, 42.9, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					o(500688, {	-- Seafarer's Cache
 						["coord"] = { 73.6, 52.4, SIREN_ISLE },
-						["g"] = { i(232860) },	-- Singing Fragments (QI!)
+						["groups"] = { i(232860) },	-- Singing Fragments (QI!)
 					}),
 					o(500689, {	-- Seafarer's Cache
 						["coord"] = { 33.4, 20.4, SIREN_ISLE },
-						["g"] = { i(232862) },	-- Singing Fragments (QI!)
+						["groups"] = { i(232862) },	-- Singing Fragments (QI!)
 					}),
 					o(500690, {	-- Seafarer's Cache
 						["coord"] = { 46.2, 87.8, SIREN_ISLE },
-						["g"] = { i(232861) },	-- Singing Fragments (QI!)
+						["groups"] = { i(232861) },	-- Singing Fragments (QI!)
 					}),
 					--spell(470197),	-- Blessing of the Seadweller
 					--
@@ -233,7 +233,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["sourceQuests"] = { 85653 },	-- Dipping a Toe
 				["provider"] = { "n", 231997 },	-- Didi the Wrench
 				["coord"] = { 71.3, 45.9, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					--spell(470167),	-- Superjuiced
 					--
 					i(229365),	-- Raw Singing Citrine
@@ -243,7 +243,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["sourceQuests"] = { 85654 },	-- Juicing Up And Storming Out
 				["provider"] = { "n", 228074 },	-- Angorla
 				["coord"] = { 71.2, 44.0, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					--spell(470168),	-- Cyrce's Zephyr
 					--
 					i(229365),	-- Raw Singing Citrine
@@ -253,7 +253,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["sourceQuests"] = { 85655 },	-- Unleashing Her Power
 				["provider"] = { "n", 231536 },	-- Apprentice Tanmar
 				["coord"] = { 72.1, 42.9, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					i(232860),	-- Singing Fragments (QI!)
 					i(232861),	-- Singing Fragments (QI!)
 					i(232862),	-- Singing Fragments (QI!)
@@ -266,7 +266,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["sourceQuests"] = { 85656 },	-- The Singing Bandit Catcher
 				["provider"] = { "n", 231997 },	-- Didi the Wrench
 				["coord"] = { 71.2, 45.8, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					--spell(470170),	-- Wings of the Siren
 					i(235041),	-- Cyrce's Circlet (TOY!)
 				},
@@ -277,7 +277,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["sourceQuests"] = { 84725 },	-- The Circlet Calls
 				["provider"] = { "n", 232255 },	-- Benny Springjet
 				["coord"] = { 42.3, 49.1, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					i(230795),	-- Experimental Go-Pack (QI!)
 				},
 			}),
@@ -307,7 +307,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				--["sourceQuests"] = { ??? },	-- ???
 				["provider"] = { "o", 494923 },	-- Tattered Journal
 				["coord"] = { 37.1, 77.2, 2375 },	-- The Forgotten Vault
-				["g"] = {
+				["groups"] = {
 					i(232643),	-- Mysterious Tattered Journal (QI!)
 				},
 			}),
@@ -315,7 +315,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["sourceQuests"] = { 85570 },	-- The Tattered Journal
 				["provider"] = { "n", 229716 },	-- Stellin Verasa
 				["coord"] = { 71.0, 39.6, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					i(235543),	-- Faded Journal Page (QI!)
 					i(235545),	-- Stained Journal Page (QI!)
 					i(235544),	-- Soggy Journal Page (QI!)
@@ -336,10 +336,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["sourceQuests"] = { 85572 },	-- A Group Effort
 				["provider"] = { "n", 229716 },	-- Stellin Verasa
 				["coord"] = { 71.0, 39.6, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					o(499466, {	-- Tattered Kul Tiran Journal
 						["coord"] = { 38.9, 54.8, SIREN_ISLE },
-						["g"] = { i(232694) },	-- Transcribed Kul Tiran Journal (QI!)
+						["groups"] = { i(232694) },	-- Transcribed Kul Tiran Journal (QI!)
 					}),
 				},
 			}),
@@ -348,7 +348,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["sourceQuests"] = { 84726  },	-- Uncovered Mysteries
 				["provider"] = { "n", 235216 },	-- Starving Snapdragon Runt
 				["coord"] = { 70.9, 48.6, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					i(234426),	-- Kaja'Cola-Braised Meat (QI!)
 				},
 			}),
@@ -356,7 +356,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["sourceQuests"] = { 86482 },	-- A Lifeline
 				["provider"] = { "n", 235237 },	-- Growing Snapdragon Runt
 				["coord"] = { 70.9, 48.6, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					i(234443),	-- Meaty Ration (QI!)
 				},
 			}),
@@ -364,7 +364,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["sourceQuests"] = { 86483 },	-- Snap To It
 				["provider"] = { "n", 235243 },	-- Maturing Prismatic Snapdragon
 				["coord"] = { 70.9, 48.6, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					i(234592),	-- Storminfused Mystery Meat (QI!)
 				},
 			}),
@@ -373,7 +373,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["sourceQuests"] = { 86484 },	-- Temper Like A Tempest
 				["provider"] = { "n", 235250 },	-- Mature Prismatic Snapdragon
 				["coord"] = { 70.9, 48.6, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					i(233489),	-- Prismatic Snapdragon (MOUNT!)
 					i(233493),	-- Teal Snapdragon Treat TODO: need a better way to solve this, since it will (un)flag this item after changing colors.
 				},
@@ -389,7 +389,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				},
 				["coord"] = { 70.9, 48.6, SIREN_ISLE },
 				["isDaily"] = true,
-				["g"] = {
+				["groups"] = {
 					i(235368),	-- Mystery Meat Snack (QI!)
 				},
 			}),
@@ -399,7 +399,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				["sourceQuests"] = { 86240 },	-- HQT: give toy to Marmaduke
 				["provider"] = { "n", 234357 },	-- Marmaduke
 				["coord"] = { 68.3, 44.9, SIREN_ISLE },
-				["g"] = {
+				["groups"] = {
 					i(233056),	-- Marmaduke (PET!)
 				},
 			}),

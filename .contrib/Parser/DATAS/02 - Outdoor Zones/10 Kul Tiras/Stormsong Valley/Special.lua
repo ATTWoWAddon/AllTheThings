@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					{ 58.1, 66.3, BORALUS },
 					{ 72.4, 73.3, BORALUS },
 				},
-				["g"] = {
+				["groups"] = {
 					i(163702, {	-- Rosaline's Letter
 						["b"] = 1,	-- technically not BoP listed in-game, but can only obtain via yourself
 					}),
@@ -39,7 +39,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuest"] = 53200,	-- Rosaline's Letter (looted)
 				["coord"] = { 68.8, 65.2, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(163780),	-- Raimond's Secret Ingredient (QI!)
 				},
 			}),
@@ -50,7 +50,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["isDaily"] = true,
 				["coord"] = { 71.0, 69.2, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					ach(13062, {	-- Let's Bee Friends
 						["races"] = ALLIANCE_ONLY,
 					}),

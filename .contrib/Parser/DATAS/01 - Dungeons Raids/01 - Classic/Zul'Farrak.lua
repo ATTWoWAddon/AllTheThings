@@ -427,7 +427,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(9471, {	-- Nekrum's Medallion
 						["races"] = ALLIANCE_ONLY,
 					}),
-				}
+				},
 			}),
 			-- #endif
 			e(487, {	-- Nekrum & Sezzi'ziz

@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		n(VENDORS, {
 			n(226205, {	-- Cendvin <Meadery Requisitions>
 				["coord"] = { 74.4, 45.2, ISLE_OF_DORN },
-				["g"] = {
+				["groups"] = {
 					i(228424, {	-- Recipe: Cinder Nectar (RECIPE!)
 						["cost"] = 237500,	-- 23g, 75s
 					}),

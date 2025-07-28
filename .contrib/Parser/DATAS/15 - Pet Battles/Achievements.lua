@@ -18,7 +18,7 @@ root(ROOTS.PetBattles, petbattle({
 					12279,	-- Mechanical Brawler
 					12285,	-- Undead Brawler
 				}},
-				["g"] = {
+				["groups"] = {
 					i(156666),	-- Master Trainer's Tabard
 				},
 			})),
@@ -275,7 +275,7 @@ root(ROOTS.PetBattles, petbattle({
 			["timeline"] = { ADDED_3_1_0 },
 			-- #endif
 		}, {
-			["g"] = {
+			["groups"] = {
 				i(44841),	-- Little Fawn (PET!)
 			},
 		}))),
@@ -284,7 +284,7 @@ root(ROOTS.PetBattles, petbattle({
 			["timeline"] = { ADDED_3_0_2 },
 			-- #endif
 		}, {
-			["g"] = {
+			["groups"] = {
 				i(40653),	-- Stinker (PET!)
 			},
 		}))),

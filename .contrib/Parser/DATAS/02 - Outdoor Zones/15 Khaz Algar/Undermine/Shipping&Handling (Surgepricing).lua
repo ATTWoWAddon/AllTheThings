@@ -27,7 +27,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["provider"] = { "n", 231409 },	-- Smaks Topskimmer
 						["coord"] = { 43.8, 50.8, UNDERMINE },
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							i(238208, {	-- Nanny's Surge Dividends
 								["sym"] = {{"select","itemID",235639},{"pop"}},	-- Seasoned Adventurer's Cache [Undermine Zone Rewards content]
 							}),
@@ -84,7 +84,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						i(231556),	-- Breakneck Cabbie's Coat
 					}),
 					n(ARMOR, {
-						["g"] = {
+						["groups"] = {
 							filter(BACK_F, {
 								i(237123),	-- Descaled Capelet
 								i(237126),	-- Laundered Cape

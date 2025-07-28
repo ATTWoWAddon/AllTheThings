@@ -5,7 +5,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 	inst(900, {	-- Cathedral of Eternal Night
 		["coord"] = { 64.7, 16.6, BROKEN_SHORE },
 		["maps"] = { 845, 846, 847, 848, 849 },
-		["g"] = {
+		["groups"] = {
 			n(WORLD_QUESTS, {
 				q(46867, {	-- Cathedral of Eternal Night: Fel Beast
 					["sourceQuests"] = { 46773 },	-- The Command Center
@@ -38,7 +38,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					120715,	-- Raga'yut
 					120717,	-- Mistress Dominix
 				},
-				["g"] = sharedData({
+				["groups"] = sharedData({
 					["bonusID"] = 1812,
 				},{
 					i(147514),	-- Felguard Destroyer's Legplates

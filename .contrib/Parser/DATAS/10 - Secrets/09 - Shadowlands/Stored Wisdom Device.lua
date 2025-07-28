@@ -17,7 +17,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_
 		n(MAILBOX, {
 			["description"] = "You should receive a letter from Ve'nari with the toy attached 5 days after interacting with her decoy corpse in Zereth Mortis.",
 			["sourceQuests"] = { 65488 },
-			["g"] = {
+			["groups"] = {
 				i(192485),	-- Stored Wisdom Device (TOY!)
 			},
 		}),

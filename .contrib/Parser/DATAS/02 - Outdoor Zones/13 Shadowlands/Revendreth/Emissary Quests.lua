@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 61.4, 63.8, REVENDRETH },
 				["minReputation"] = { FACTION_COURT_OF_HARVESTERS, EXALTED },	-- Court of Harvesters, Exalted
 				["repeatable"] = true,
-				["g"] = {
+				["groups"] = {
 					i(180648, {	-- Court of Harvesters Supplies
 						i(180601),	-- Stoneskin Dredwing Pup (PET!)
 					}),

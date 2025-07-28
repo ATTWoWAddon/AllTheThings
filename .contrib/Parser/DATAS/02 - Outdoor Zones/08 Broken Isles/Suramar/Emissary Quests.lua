@@ -12,7 +12,7 @@ root(ROOTS.Zones, {
 						{ "n", 97140 },	-- Thalyssra
 						{ "n", 115736 },	-- First Arcanist Thalyssra
 					},
-					["g"] = {
+					["groups"] = {
 						i(157826, {	-- Nightfallen Hoard
 							["sym"] = {
 								{"select", "itemID", 141592},	-- Technique: Codex of the Tranquil Mind [Rank 3] (RECIPE!)
@@ -21,7 +21,7 @@ root(ROOTS.Zones, {
 								{"find", "headerID", ZONE_REWARDS },
 								{"pop"},	-- Push all of the groups contained to the processing layer.
 							},
-							["g"] = {
+							["groups"] = {
 								i(140495),	-- Torn Invitation
 								i(140013),	-- Night Commander's Pauldrons
 							},
@@ -54,7 +54,7 @@ root(ROOTS.Zones, {
 						{ "n", 97140 },	-- Thalyssra
 						{ "n", 115736 },	-- First Arcanist Thalyssra
 					},
-					["g"] = {
+					["groups"] = {
 						i(152105, {	-- Nightfallen Cache
 							i(143764),	-- Leywoven Flying Carpet (MOUNT!)
 							i(140495),	-- Torn Invitation [Fox Mount Quest]

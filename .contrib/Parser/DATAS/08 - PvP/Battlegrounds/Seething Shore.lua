@@ -8,7 +8,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 		["maps"] = {
 			904,	-- Silithus Brawl
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(12412, {	-- Master of Seething Shore
 					-- Meta Achievement should symlink the contained Achievements from Source

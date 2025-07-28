@@ -605,7 +605,6 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 					-- #endif
 				},
 				["timeline"] = { REMOVED_3_3_3 },
-				["races"] = ALLIANCE_ONLY,
 				["cost"] = {
 					-- #if AFTER TBC
 					{ "i", 20560, 1 },	-- Alterac Valley Mark of Honor
@@ -618,6 +617,7 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 					{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 					-- #endif
 				},
+				["races"] = ALLIANCE_ONLY,
 				-- #if AFTER WRATH
 				["lvl"] = 61,
 				-- #elseif AFTER TBC
@@ -642,8 +642,6 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 					-- #endif
 				},
 				["timeline"] = { REMOVED_3_3_3 },
-				["races"] = ALLIANCE_ONLY,
-				["repeatable"] = true,
 				["cost"] = {
 					-- #if AFTER TBC
 					{ "i", 20560, 1 },	-- Alterac Valley Mark of Honor
@@ -656,6 +654,8 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 					{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 					-- #endif
 				},
+				["races"] = ALLIANCE_ONLY,
+				["repeatable"] = true,
 				-- #if AFTER WRATH
 				["lvl"] = 61,
 				-- #elseif AFTER TBC
@@ -679,7 +679,6 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 					-- #endif
 				},
 				["timeline"] = { REMOVED_3_3_3 },
-				["races"] = HORDE_ONLY,
 				["cost"] = {
 					-- #if AFTER TBC
 					{ "i", 20560, 1 },	-- Alterac Valley Mark of Honor
@@ -692,6 +691,7 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 					{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 					-- #endif
 				},
+				["races"] = HORDE_ONLY,
 				-- #if AFTER WRATH
 				["lvl"] = 61,
 				-- #elseif AFTER TBC
@@ -716,8 +716,6 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 					-- #endif
 				},
 				["timeline"] = { REMOVED_3_3_3 },
-				["races"] = HORDE_ONLY,
-				["repeatable"] = true,
 				["cost"] = {
 					-- #if AFTER TBC
 					{ "i", 20560, 1 },	-- Alterac Valley Mark of Honor
@@ -730,6 +728,8 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 					{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 					-- #endif
 				},
+				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
 				-- #if AFTER WRATH
 				["lvl"] = 61,
 				-- #elseif AFTER TBC

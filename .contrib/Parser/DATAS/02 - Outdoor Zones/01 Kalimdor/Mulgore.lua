@@ -138,8 +138,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 5888 },	-- Seer Ravenfeather
 								{ "i", 6635 },	-- Earth Sapta
 							},
-							["sourceQuest"] = 1519,	-- Call of Earth (1/3)
 							["altQuests"] = { 1517 },	-- Call of Earth (2/3 Durotar)
+							["sourceQuest"] = 1519,	-- Call of Earth (1/3)
 							["coord"] = { 44.8, 76.2, MULGORE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
@@ -151,8 +151,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 5891 },	-- Minor Manifestation of Earth
 								{ "i", 6656 },	-- Rough Quartz
 							},
-							["sourceQuest"] = 1520,	-- Call of Earth (2/3)
 							["altQuests"] = { 1518 },	-- Call of Earth (3/3 Durotar)
+							["sourceQuest"] = 1520,	-- Call of Earth (2/3)
 							["coord"] = { 53.8, 80.4, MULGORE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
@@ -190,8 +190,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						q(1462, {	-- Earth Sapta
 							["qg"] = 5888,	-- Seer Ravenfeather
-							["sourceQuest"] = 1519,	-- Call of Earth (1/3)
 							["altQuests"] = { 1463 },	-- Earth Sapta (Durotar)
+							["sourceQuest"] = 1519,	-- Call of Earth (1/3)
 							["coord"] = { 44.8, 76.2, MULGORE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
@@ -990,13 +990,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if NOT ANYCLASSIC
 				q(5655, {	-- Hex of Weakness [Mulgore]
 					["qg"] = 11407,	-- Var'jun
-					["coord"] = { 47.0, 58.8, MULGORE },
 					["altQuests"] = {
 						5652,	-- Hex of Weakness [Orgrimmar]
 						5654,	-- Hex of Weakness [Durotar]
 						5656,	-- Hex of Weakness [Thunder Bluff]
 						5657,	-- Hex of Weakness [Undercity]
 					},
+					["coord"] = { 47.0, 58.8, MULGORE },
 					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
@@ -1064,6 +1064,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(32670, {	-- Learn to Ride
 					["description"] = "This quest is available to Tauren upon reaching level 10.",
+					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
+					["races"] = { TAUREN },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -1071,16 +1073,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
-					["races"] = { TAUREN },
-					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["lvl"] = 10,
 				}),
 				q(14087, {	-- Learn to Ride in Mulgore
 					["provider"] = { "i", 46884 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Tauren in their Mailbox upon reaching the specified level.",
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_1 },
+					["races"] = { TAUREN },
 					["lockCriteria"] = { 1,
 						"spellID", 33388,	-- Apprentice Riding
 						"spellID", 33391,	-- Journeyman Riding
@@ -1088,7 +1089,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						"spellID", 34091,	-- Artisan Riding
 						"spellID", 90265,	-- Master Riding
 					},
-					["races"] = { TAUREN },
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(26188, {	-- Mazzranache
@@ -1175,10 +1175,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 15292, 1 } },	-- Green Kodo (MOUNT!)
-					["sym"] = { { "select", "itemID", 18794, 18795, 18793 } },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["_drop"] = { "g" },
+					["sym"] = { { "select", "itemID", 18794, 18795, 18793 } },
 				}),
 				q(7662, {	-- New Kodo - Teal
 					["qg"] = 3685,	-- Harb Clawhoof
@@ -1190,10 +1190,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 15293, 1 } },	-- Teal Kodo (MOUNT!)
-					["sym"] = { { "select", "itemID", 18794, 18795, 18793 } },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["_drop"] = { "g" },
+					["sym"] = { { "select", "itemID", 18794, 18795, 18793 } },
 				}),
 				q(20440, {	-- Poison Water
 					["qg"] = 2948,	-- Mull Thunderhorn
@@ -1427,11 +1427,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14438, {	-- Sharing the Land
-							-- For some reason, on Retail this quest got marked as completed when [The Angerfang Menace (26189)] in Wetlands got turned in. Check if it happens vice-versa. -Exo 10-01-25
 					["qg"] = 36644,	-- Ahmo Thunderhorn
 					["coord"] = { 47.6, 59.5, MULGORE },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
+							-- For some reason, on Retail this quest got marked as completed when [The Angerfang Menace (26189)] in Wetlands got turned in. Check if it happens vice-versa. -Exo 10-01-25
 					["groups"] = {
 						objective(1, {	-- 0/15 Palemane Gnolls
 							["providers"] = {
@@ -1790,13 +1790,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if NOT ANYCLASSIC
 				q(5661, {	-- Touch of Weakness [Mulgore]
 					["qg"] = 11407,	-- Var'jun
-					["coord"] = { 47.0, 58.8, MULGORE },
 					["altQuests"] = {
 						5658,	-- Touch of Weakness [Undercity]
 						5660,	-- Touch of Weakness [Durotar]
 						5662,	-- Touch of Weakness [Orgrimmar]
 						5663,	-- Touch of Weakness [Thunder Bluff]
 					},
+					["coord"] = { 47.0, 58.8, MULGORE },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },

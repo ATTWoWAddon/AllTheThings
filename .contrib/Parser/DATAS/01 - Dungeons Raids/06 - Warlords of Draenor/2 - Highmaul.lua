@@ -156,7 +156,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 		["coord"] = { 32.9, 38.3, DRAENOR_NAGRAND },
 		["isRaid"] = true,
 		["lvl"] = 100,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(8986, {	-- The Walled City
 					crit(25010, {	-- Kargath Bladefist

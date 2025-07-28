@@ -93,12 +93,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					applyclassicphase(PHASE_THREE, q(7785, {	-- Examine the Vessel
 						["qg"] = 14347,	-- Highlord Demitrian
 						["provider"] = { "i", 19016 },	-- Vessel of Rebirth
-						["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
-						-- #if ANYCLASSIC
-						-- Completable by any class in Retail... confirm for Classic
-						-- Crieve NOTE: Even if it were... Some of us aren't this crazy.
-						["classes"] = SWORD_CLASSES,
-						-- #endif
 						["coords"] = {
 							-- #if AFTER LEGION
 							{ 29.6, 10.6, SILITHUS },
@@ -106,16 +100,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							{ 21.7, 8.6, SILITHUS },
 							-- #endif
 						},
-						["lvl"] = 60,
+						["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
 						["cost"] = {
 							{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
 							{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
 						},
+						-- #if ANYCLASSIC
+						-- Completable by any class in Retail... confirm for Classic
+						-- Crieve NOTE: Even if it were... Some of us aren't this crazy.
+						["classes"] = SWORD_CLASSES,
+						-- #endif
+						["lvl"] = 60,
 					})),
 					applyclassicphase(PHASE_THREE, q(7786, {	-- Thunderaan the Windseeker
 						["qg"] = 14347,	-- Highlord Demitrian
-						["sourceQuest"] = 7785,	-- Examine the Vessel
 						["altQuests"] = { 7521 },	-- Thunderaan the Windseeker [Original?]
+						["sourceQuest"] = 7785,	-- Examine the Vessel
 						["coords"] = {
 							-- #if AFTER LEGION
 							{ 29.6, 10.6, SILITHUS },
@@ -123,17 +123,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							{ 21.7, 8.6, SILITHUS },
 							-- #endif
 						},
-						-- #if ANYCLASSIC
-						-- Completable by any class in Retail... confirm for Classic
-						-- Crieve NOTE: Even if it were... Some of us aren't this crazy.
-						["classes"] = SWORD_CLASSES,
-						-- #endif
 						-- #if NOT ANYCLASSIC
 						["cost"] = {
 							{ "i", 17771, 10 },	-- Elementium Bar x10
 							{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
 							{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
 						},
+						-- #endif
+						-- #if ANYCLASSIC
+						-- Completable by any class in Retail... confirm for Classic
+						-- Crieve NOTE: Even if it were... Some of us aren't this crazy.
+						["classes"] = SWORD_CLASSES,
 						-- #endif
 						["lvl"] = 60,
 						["groups"] = {
@@ -175,12 +175,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["qg"] = 14347,	-- Highlord Demitrian
 						["provider"] = { "i", 19018 },	-- Dormant Wind Kissed Blade
 						["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
+						["coord"] = { 21.7, 8.6, SILITHUS },
 						-- #if ANYCLASSIC
 						-- Completable by any class in Retail... confirm for Classic
 						-- Crieve NOTE: Even if it were... Some of us aren't this crazy.
 						["classes"] = SWORD_CLASSES,
 						-- #endif
-						["coord"] = { 21.7, 8.6, SILITHUS },
 						["lvl"] = 60,
 						["groups"] = {
 							ach(428, {	-- Thunderfury, Blessed Blade of the Windseeker
@@ -267,9 +267,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				q(7487, {	-- Attunement to the Core [Old]
 					["qg"] = 14387,	-- Lothos Riftwaker
-					["timeline"] = { ADDED_1_1_0, REMOVED_1_3_0 },
-					["description"] = "Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
 					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN },
+					["description"] = "Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
+					["timeline"] = { ADDED_1_1_0, REMOVED_1_3_0 },
 					["maps"] = { BLACKROCK_DEPTHS },
 					["lvl"] = 55,
 					["groups"] = {
@@ -283,14 +283,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(7848, {	-- Attunement to the Core
 					["qg"] = 14387,	-- Lothos Riftwaker
-					["timeline"] = { ADDED_1_3_0 },
+					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN_LEVEL3 },
 					["description"] =
 						-- #if BEFORE 5.4.0
 						"Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
 						-- #else
 						"This quest is no longer required to enter Molten Core - you can now speak to Lothos and have him transport you inside without doing the attunement.",
 						-- #endif
-					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN_LEVEL3 },
+					["timeline"] = { ADDED_1_3_0 },
 					["maps"] = { BLACKROCK_DEPTHS },
 					["lvl"] = 55,
 					["groups"] = {
@@ -382,12 +382,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				})),
 				q(7632, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- The Ancient Leaf
 					["qg"] = 14524,	-- Vartrus the Ancient
-					["description"] = "To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",
 					["coord"] = { 47, 24.48, FELWOOD },
-					["classes"] = { HUNTER },
+					["description"] = "To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",
 					["cost"] = {
 						{ "i", 18703, 1 },	-- Ancient Petrified Leaf
 					},
+					["classes"] = { HUNTER },
 					["lvl"] = 60,
 				})),
 				q(6822, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- The Molten Core

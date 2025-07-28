@@ -5,7 +5,7 @@
 root(ROOTS.Secrets, {
 	n(159783, {	-- Jenafur
 		["description"] = "***Debug Mode is required to see all the steps.***\n",
-		["g"] = {
+		["groups"] = {
 			hqt(58076, {	-- Step 1: Speak to Amara
 				["name"] = "|cFFFFFFFFStep 1:|r Speak to Amara",
 				["description"] = "|cFFFFFFFFStep 1:|r Go to |cFFFFFFFF17.4, 49.3|r in Ashenvale. Speak with |cFFFFD700Amara Lunastar|r and follow her dialogue about her cat.\n",
@@ -33,7 +33,7 @@ root(ROOTS.Secrets, {
 				},
 				["sourceQuest"] = 58098,	-- Step 2: Empty Dish
 				["coord"] = { 46.7, 70.1, DEADWIND_PASS },	-- Return to Karazhan entrance
-				["g"] = {
+				["groups"] = {
 					n(160374, {	-- Fishy Bits (2)
 						["description"] = "Two are required.\n\n|cFFFFFFFF1.|r The first Fishy Bits can be found in the hallway prior to Maiden of Virtue.  Near the middle of hall on the left side, there is a doorway flanked by two lion statues.  The Fishy Bits are just past the lion statues and before the left-hand bust directly after them, against the wall.\n\n|cFFFFFFFF2.|r The second Fishy Bits can be found in Moroes' room, very close to the boss's platform.  It's between the bottom right corner of the platform and the upper left corner of the small right-hand table.\n",
 						["itemID"] = 173787,	-- Fishy Bits

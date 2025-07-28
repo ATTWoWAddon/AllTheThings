@@ -14,7 +14,7 @@ root(ROOTS.Zones, {
 		["timeline"] = { ADDED_4_0_1 },
 	},{
 		["description"] = "These quests can be obtained from any city or town to lead the Character to a specific Zone.",
-		["g"] = {
+		["groups"] = {
 			q(49851, {	-- Cataclysm First Responder (Horde)
 				["sourceQuests"] = { 49846 },	-- War on Two Fronts (Cataclysm)
 				["timeline"] = { ADDED_7_3_5 },
@@ -26,8 +26,8 @@ root(ROOTS.Zones, {
 				["timeline"] = { ADDED_7_3_5 },
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
-				["lvl"] = 60,
 				["u"] = REMOVED_FROM_GAME,
+				["lvl"] = 60,
 			})),
 			warchiefscommand(q(49852, {	-- To Pandaria! (Horde)
 				["sourceQuests"] = { 49864 },	-- Wars on Two Fronts (Pandaria)
@@ -48,19 +48,19 @@ root(ROOTS.Zones, {
 		["timeline"] = { ADDED_4_0_1 },
 	},{
 		["description"] = "These quests can be obtained from any city or town to lead the Character to a specific Zone.",
-		["g"] = {
+		["groups"] = {
 			q(49865, {	-- Cataclysm First Responder (Alliance)
 				["sourceQuest"] = 49846,	-- War on Two Fronts (Cataclysm)
 				["timeline"] = { ADDED_7_3_5 },
-				["isBreadcrumb"] = true,
 				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(49863, {	-- To Northrend! (Alliance)
 				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
-				["lvl"] = 60,
 				["u"] = REMOVED_FROM_GAME,
+				["lvl"] = 60,
 			}),
 			q(49866, {	-- To Pandaria! (Alliance)
 				["sourceQuests"] = { 49864 },	-- Wars on Two Fronts (Cataclysm or Pandaria)
@@ -93,34 +93,34 @@ root(ROOTS.Zones, {
 				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
 				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
-				["lvl"] = 80,
 				["u"] = REMOVED_FROM_GAME,
+				["lvl"] = 80,
 			}),
 		},
 	})),
 	n(DUNGEON_JOURNAL, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		q(72743, {	-- A Piece of Copper
 			["description"] = "If you are lucky. You will get this quest from your adventure guide.",
-			["g"] = {
+			["groups"] = {
 				ach(16789),	-- Lucky Penny
 			},
 		}),
 		q(72746, {	-- A Piece of Silver
-			["description"] = "Available on the next reset after \"A Piece of Copper\", from the adventure guide.",
 			["sourceQuests"] = { 72743 },	-- A Piece of Copper
+			["description"] = "Available on the next reset after \"A Piece of Copper\", from the adventure guide.",
 		}),
 		q(72747, {	-- A Piece of Gold
-			["description"] = "Available on the next reset after \"A Piece of Silver\", from the adventure guide.",
 			["sourceQuests"] = { 72746 },	-- A Piece of Silver
+			["description"] = "Available on the next reset after \"A Piece of Silver\", from the adventure guide.",
 		}),
 		q(72748, {	-- A Bag of Gold
-			["description"] = "Available on the next reset after \"A Piece of Gold\", from the adventure guide.",
 			["sourceQuests"] = { 72747 },	-- A Piece of Gold
+			["description"] = "Available on the next reset after \"A Piece of Gold\", from the adventure guide.",
 		}),
 		q(72749, {	-- A Curious Coin
-			["description"] = "Available on the next reset after \"A Bag of Gold\", from the adventure guide.",
 			["sourceQuests"] = { 72748 },	-- A Bag of Gold
-			["g"] = {
+			["description"] = "Available on the next reset after \"A Bag of Gold\", from the adventure guide.",
+			["groups"] = {
 				ach(16790),	-- Curious Coin
 			},
 		}),

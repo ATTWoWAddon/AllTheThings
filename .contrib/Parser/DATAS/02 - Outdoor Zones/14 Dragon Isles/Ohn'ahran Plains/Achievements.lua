@@ -49,7 +49,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(16457),	-- Explore the Ohn'ahran Plains
 			ach(16423, {	-- Honor Our Ancestors
 				["provider"] = { "i", 201323 },	-- 1x Essence of Awakening
-				["g"] = {
+				["groups"] = {
 					i(200630),	-- Ohn'ir Windsage's Hearthstone (TOY!)
 					crit(55302, {	-- Maruukai Ancestor
 						["crs"] = { 197048 },	-- Mariq Dotur

@@ -21,7 +21,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				16343,	-- Vault of the Incarnates
 				17543,	-- You Know How to Reach Me
 			}},
-			["g"] = {
+			["groups"] = {
 				i(210142),	-- Taivan (MOUNT!)
 			},
 		})),
@@ -38,7 +38,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				18867,	-- Through the Ashes and Flames
 				19479,	-- Wake Me Up
 			}},
-			["g"] = {
+			["groups"] = {
 				i(192751),	-- Stormtouched Bruffalon (MOUNT!)
 			},
 		})),
@@ -379,7 +379,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				17844,	-- Dragonflight Keystone Master: Season Two
 				17798,	-- Challenger II: Dragonflight Season 2
 			}},
-			["g"] = {
+			["groups"] = {
 				i(204843),	-- Draconic Mark of Mastery
 			},
 		})),
@@ -390,7 +390,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				17845,	-- Dragonflight Keystone Hero: Season Two
 				17831,	-- Elite: Dragonflight Season 2
 			}},
-			["g"] = {
+			["groups"] = {
 				i(205878, {	-- Obsidian Aspectral Earthstone (CI!)
 					d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
 						cl(DEATHKNIGHT, {
@@ -720,7 +720,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				19011,	-- Dragonflight Keystone Master: Season Three
 				19160,	-- Challenger II: Dragonflight Season 3
 			}},
-			["g"] = {
+			["groups"] = {
 				i(210944),	-- Emerald Mark of Mastery
 			},
 		})),
@@ -731,7 +731,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				19012,	-- Dragonflight Keystone Hero: Season Three
 				19090,	-- Elite: Dragonflight Season 3
 			}},
-			["g"] = {
+			["groups"] = {
 				i(210468, {	-- Emerald Blossom Dreamstone (CI!)
 					d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
 						cl(DEATHKNIGHT, {	-- HEAD, SHOULDERS
@@ -1051,7 +1051,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				19568,	-- Heroic: Awakened Shadows
 				19565,	-- Heroic: Awakened Storms
 			}},
-			["g"] = {
+			["groups"] = {
 				i(217410),	-- Awakened Mark of Mastery
 			},
 		})),
@@ -1212,7 +1212,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		ach(17977, { ["timeline"] = { REMOVED_TWW_LAUNCH } }),	-- Stones Can Try To Fly!
 		ach(17830, {	-- Stones Can't Fly!
 			["timeline"] = { REMOVED_TWW_LAUNCH },
-			["g"] = {
+			["groups"] = {
 				i(204195, {	-- Drake's Shadowflame Crest
 					["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 				}),

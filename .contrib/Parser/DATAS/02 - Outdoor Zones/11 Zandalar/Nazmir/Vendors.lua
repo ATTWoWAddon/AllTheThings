@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 		n(VENDORS, {
 			n(126833, {	-- Blind Wunja <Medicine Woman>
 				["coord"] = { 35.4, 55.2, NAZMIR },
-				["g"] = {
+				["groups"] = {
 					i(163506, {	-- Accursed Hexxer (PET!)
 						["sourceQuests"] = { 50976 },	-- An Ancient Curse
 						["cost"] = { { "i", POLISHED_PET_CHARM, 500 }, },
@@ -23,7 +23,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			n(148810, {	-- Gottum <Da Frogman>
 				["coord"] = { 71.2, 55.5, NAZMIR },
-				["g"] = {
+				["groups"] = {
 					i(166442, {	-- Blue Marsh Hopper (MOUNT!)
 						["cost"] = 3333330000,	-- 333,333g
 					}),
@@ -38,7 +38,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(135459, {	-- Provisioner Lija <Talanji's Expedition Emissary>
 				["races"] = HORDE_ONLY,
 				["coord"] = { 39.1, 79.4, NAZMIR },
-				["g"] = bubbleDownClassicRep(FACTION_TALANJIS_EXPEDITION, {
+				["groups"] = bubbleDownClassicRep(FACTION_TALANJIS_EXPEDITION, {
 					{		-- Neutral
 					}, {	-- Friendly
 					}, {	-- Honored
@@ -157,7 +157,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["coord"] = { 66.9, 42.0, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(163506, {	-- Accursed Hexxer (PET!)
 						["sourceQuests"] = { 50976 },	-- An Ancient Curse
 						["cost"] = { { "i", POLISHED_PET_CHARM, 500 }, },

@@ -421,8 +421,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(2842, {	-- Chief Engineer Scooty
 					["qg"] = 3413,	-- Sovik <Engineering Supplies>
-					["description"] = "You cannot get this quest until you accept the Rig Wars quest. Accept Rig Wars, then this guy gives you the quest to get to Gnomer safely...",
 					["coord"] = { 75.6, 25.2, ORGRIMMAR },
+					["description"] = "You cannot get this quest until you accept the Rig Wars quest. Accept Rig Wars, then this guy gives you the quest to get to Gnomer safely...",
 					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["maps"] = { STRANGLETHORN_VALE },
@@ -468,9 +468,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(26944, {	-- Exploring Gnomeregan
 					["qg"] = 44018,	-- Wulfred Harrys
+					["altQuests"] = { 26943 },	-- Home Sweet Gnome
 					["coord"] = { 53.3, 66.2, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
-					["altQuests"] = { 26943 },	-- Home Sweet Gnome
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(26, 26, 10),
@@ -494,13 +494,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 6826,	-- Talvash del Kissel
 					["sourceQuest"] = 2947,	-- Return of the Ring [Alliance]
 					["coord"] = { 36.2, 3.8, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 9362, 1 },	-- Brilliant Gold Ring
 						{ "i", 2842, 1 },	-- Silver Bar
 						{ "i", 1206, 1 },	-- Moss Agate
 						{ "g", 3000 },	-- 30s
 					},
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(28, 28, 10),
 					["groups"] = {
 						i(9538),	-- Talvash's Gold Ring
@@ -553,9 +553,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(26943, {	-- Home Sweet Gnome
 					["qg"] = 2789,	-- Skuerto
+					["altQuests"] = { 26944 },	-- Exploring Gnomeregan
 					["coord"] = { 40.3, 49.1, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
-					["altQuests"] = { 26944 },	-- Exploring Gnomeregan
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(26, 26, 10),
@@ -578,14 +578,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ 75.8, 25.2, ORGRIMMAR },
 						-- #endif
 					},
-					["races"] = HORDE_ONLY,
-					["lvl"] = 28,
 					["cost"] = {
 						{ "i", 9362, 1 },	-- Brilliant Gold Ring
 						{ "i", 2842, 1 },	-- Silver Bar
 						{ "i", 1206, 1 },	-- Moss Agate
 						{ "g", 3000 },	-- 30s
 					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 28,
 					["groups"] = {
 						i(9588),	-- Nogg's Gold Ring
 					},
@@ -1057,13 +1057,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["qg"] = 6826,	-- Talvash del Kissel
 							["sourceQuest"] = 79987,	-- Return of the Ring [Alliance]
 							["coord"] = { 36.2, 3.8, IRONFORGE },
-							["races"] = ALLIANCE_ONLY,
 							["cost"] = {
 								{ "i", 216662, 1 },	-- Brilliant Gold Ring
 								{ "i", 2842, 1 },	-- Silver Bar
 								{ "i", 1206, 1 },	-- Moss Agate
 								{ "g", 3000 },	-- 30s
 							},
+							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 40,
 							["groups"] = {
 								i(216673),	-- Talvash's Brilliant Gold Ring
@@ -1143,14 +1143,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ 75.8, 25.2, ORGRIMMAR },
 								-- #endif
 							},
-							["races"] = HORDE_ONLY,
-							["lvl"] = 40,
 							["cost"] = {
 								{ "i", 216662, 1 },	-- Brilliant Gold Ring
 								{ "i", 2842, 1 },	-- Silver Bar
 								{ "i", 1206, 1 },	-- Moss Agate
 								{ "g", 3000 },	-- 30s
 							},
+							["races"] = HORDE_ONLY,
+							["lvl"] = 40,
 							["groups"] = {
 								i(216674),	-- Nogg's Brilliant Gold Ring
 							},

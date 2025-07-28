@@ -213,7 +213,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 				["isWorldQuest"] = true,
 				["requireSkill"] = TAILORING,
-				["g"] = {
+				["groups"] = {
 					i(162443),	-- Pattern: Battle Flag: Spirit of Freedom [Rank 3] (RECIPE!)
 				},
 			}),
@@ -222,7 +222,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 				["isWorldQuest"] = true,
 				["requireSkill"] = INSCRIPTION,
-				["g"] = {
+				["groups"] = {
 					i(162366),	-- Technique: Contract: Zandalari Empire [Rank 3] (RECIPE!)
 				},
 			}),
@@ -231,7 +231,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 				["isWorldQuest"] = true,
 				["requireSkill"] = ENGINEERING,
-				["g"] = {
+				["groups"] = {
 					i(162343),	-- Schematic: Crow's Nest Scope [Rank 3] (RECIPE!)
 				},
 			}),
@@ -240,7 +240,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 				["isWorldQuest"] = true,
 				["requireSkill"] = ENGINEERING,
-				["g"] = {
+				["groups"] = {
 					i(162340),	-- Schematic: Electroshock Mount Motivator [Rank 3] (RECIPE!)
 				},
 			}),
@@ -249,7 +249,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 				["isWorldQuest"] = true,
 				["requireSkill"] = ENCHANTING,
-				["g"] = {
+				["groups"] = {
 					i(162299),	-- Formula: Enchant Ring - Seal of Haste [Rank 3] (RECIPE!)
 				},
 			}),
@@ -258,7 +258,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 				["isWorldQuest"] = true,
 				["requireSkill"] = ENCHANTING,
-				["g"] = {
+				["groups"] = {
 					i(162300),	-- Formula: Enchant Ring - Seal of Mastery [Rank 3] (RECIPE!)
 				},
 			}),
@@ -267,7 +267,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 				["isWorldQuest"] = true,
 				["requireSkill"] = ENGINEERING,
-				["g"] = {
+				["groups"] = {
 					i(162321),	-- Schematic: Incendiary Ammunition [Rank 3] (RECIPE!)
 				},
 			}),

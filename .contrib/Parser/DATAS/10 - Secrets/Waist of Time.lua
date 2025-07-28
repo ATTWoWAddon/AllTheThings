@@ -5,7 +5,7 @@
 root(ROOTS.Secrets, header(HEADERS.Item, 162690, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {	-- Waist of Time
 	["description"] = "***Quest tracking enabled is required to see all the steps.***\n\nYou will need uncommon quality Windwool Hood, Deathsilk Shoulders, Netherweave Tunic, Frostwoven Leggings, as well as Proximo's Rudius, Rough Wooden Staff, Punctured Pelt, and Formula: Enchant Ring - Striking later on in the secret. It is recommended that you have flying and the Ever-Shifting Mirror toy for ease of travel between Draenor and Outland.",
 	["lvl"] = 110,
-	["g"] = {
+	["groups"] = {
 		o(9999946, {	-- Summon Baa'l
 			["displayID"] = 80456,	-- Baa'l
 			["questID"] = 52829,
@@ -184,8 +184,8 @@ root(ROOTS.Secrets, header(HEADERS.Item, 162690, bubbleDown({ ["timeline"] = { A
 			["name"] = "Grimmy Dialogue",
 			["provider"] = { "n", 138578 },	-- Grimmy
 			["sourceQuests"] = { 52916 },
-			["description"] = "Equip the Windwool Hood, Deathsilk Shoulders, Netherweave Tunic, and Frostwoven Leggings, and talk to Grimmy.  Select his dialogue \"It's me, your friend. Got any secrets to tell me about?\"",
 			--["coord"] = { 85.3, 73.6, ARATHI_HIGHLANDS },	-- Grimmy Dialogue
+			["description"] = "Equip the Windwool Hood, Deathsilk Shoulders, Netherweave Tunic, and Frostwoven Leggings, and talk to Grimmy.  Select his dialogue \"It's me, your friend. Got any secrets to tell me about?\"",
 		}),
 		o(294314, {	-- Grimmy's List of Enemies
 			["model"] = 305391,
@@ -245,7 +245,7 @@ root(ROOTS.Secrets, header(HEADERS.Item, 162690, bubbleDown({ ["timeline"] = { A
 			["sourceQuests"] = { 52921 },
 			["description"] = "After asking Grimmy how you smell, go outside behind and above his house, and on the hill will be Grimmy's Rusty Lockbox waiting for you to open it.",
 			["coord"] = { 85.1, 73.3, ARATHI_HIGHLANDS },	-- Grimmy's Rusty Lockbox
-			["g"] = {
+			["groups"] = {
 				i(162690),	-- Waist of Time
 			},
 		}),

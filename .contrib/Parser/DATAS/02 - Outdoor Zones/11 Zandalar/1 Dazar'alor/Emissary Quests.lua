@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 58.0, 62.6, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
-				["g"] = {
+				["groups"] = {
 					i(166299, {	-- Honorbound Supplies
 						i(166879),	-- Rallying War Banner (TOY!)
 						i(166311),	-- Technique: Contract: The Honorbound [Rank 3] (RECIPE!)
@@ -32,7 +32,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 67.07, 71.44, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
-				["g"] = {
+				["groups"] = {
 					i(166292, {	-- Zandalari Empire Supplies
 						i(166701),	-- Warbeast Kraal Dinner Bell (TOY!)
 					}),
@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["isWorldQuest"] = true,
 				["coord"] = { 67.07, 71.44, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					i(165866, {	-- Zandalari Empire Equipment Cache
 						["sym"] = {
 							-- Include the one extra.

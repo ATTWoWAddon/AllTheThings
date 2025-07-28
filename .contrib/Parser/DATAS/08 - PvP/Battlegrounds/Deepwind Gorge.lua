@@ -8,7 +8,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 		["maps"] = {
 			1576,	-- Deepwind Gorge (revamped)
 		},
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(8360, {		-- Master of Deepwind Gorge
 					-- Meta Achievement
@@ -24,7 +24,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8358,	-- Deepwind Gorge All-Star
 					}},
 					["timeline"] = { ADDED_5_3_0, REMOVED_8_3_0 },
-					["g"] = {
+					["groups"] = {
 						title(229, {	-- Gorgeous
 							["timeline"] = { ADDED_5_3_0, REMOVED_8_3_0 },
 						}),
@@ -40,7 +40,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						14186,	-- Market Dominance
 						14188,	-- Well Gorged
 					}},
-					["g"] = {
+					["groups"] = {
 						title(229),	-- Gorgeous
 					},
 				}),

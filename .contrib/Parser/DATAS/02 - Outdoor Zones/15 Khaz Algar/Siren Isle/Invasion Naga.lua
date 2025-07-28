@@ -20,7 +20,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 						["provider"] = { "n", 231783 },	-- Machinist Kromleg
 						["coord"] = { 41.9, 68.0, SIREN_ISLE },
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							o_repeated({
 								i(229967),	-- Salvageable Scrap (QI!)
 								o(473943),	-- Salvageable Scrap
@@ -36,7 +36,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 						["provider"] = { "n", 227796 },	-- Sky-Captain Elaena Lancekat
 						["coord"] = { 69.4, 42.8, SIREN_ISLE },
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							o(465208, {	-- Crystal Chunk
 								i(228780),	-- Crystal Chunk (QI!)
 							}),
@@ -48,7 +48,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 						["provider"] = { "n", 229716 },	-- Stellin Verasa
 						["coord"] = { 71.0, 39.6, SIREN_ISLE },
 						["isWeekly"] = true,
-						["g"] = {
+						["groups"] = {
 							o(487825, {	-- Ruffled Pages
 								i(232361),	-- Ruffled Pages (QI!)
 							}),
@@ -68,7 +68,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 						-- naga
 						["coord"] = { 61.5, 89.4, SIREN_ISLE },
 						["questID"] = 84802,
-						["g"] = {
+						["groups"] = {
 							i(234973),	-- Pearlshell Scroll Case [book]
 						},
 					}),
@@ -76,7 +76,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 						-- naga
 						["coord"] = { 56.0, 83.6, SIREN_ISLE },
 						["questID"] = 84803,
-						["g"] = {
+						["groups"] = {
 							i(234973),	-- Pearlshell Scroll Case [book]
 						},
 					}),
@@ -86,7 +86,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 						["coord"] = { 68.4, 94.4, SIREN_ISLE },
 						["questID"] = 84527,
 						["isWeekly"] = true,
-						["g"] = { i(229181) },	-- Ordained Forge Maul
+						["groups"] = { i(229181) },	-- Ordained Forge Maul
 					}),
 				}),
 				n(WORLD_QUESTS, {
@@ -94,9 +94,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 						84725,	-- The Circlet Calls
 					},
-					["g"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
+					["groups"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
 						q(84850, {	-- Serpent's Wrath
-							["g"] = {
+							["groups"] = {
 								i(228647, {	-- Seabed Leviathan's Citrine
 									["description"] = "Only counts for the achievement when looted from the respective World Quest.",
 								}),

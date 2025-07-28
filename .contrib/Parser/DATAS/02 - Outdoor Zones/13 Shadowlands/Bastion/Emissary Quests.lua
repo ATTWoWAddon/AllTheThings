@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "n", 160470 },	-- Adjutant Nikos
 				["coord"] = { 52.2, 47.0, BASTION },
 				["repeatable"] = true,
-				["g"] = {
+				["groups"] = {
 					i(180647, {	-- Ascended Supplies
 						i(184399),	-- Larion Cub (PET!)
 						i(184396),	-- Malfunctioning Goliath Gauntlet (TOY!)

@@ -4,7 +4,7 @@
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(VALE_OF_ETERNAL_BLOSSOMS, {
 		["icon"] = 618798,
-		["g"] = {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(20069),		-- Elusive Foes: Vale of Eternal Blossoms (automated)
 				ach(19916),		-- Golden Lotus
@@ -27,16 +27,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						20014,	-- Looking For Group: Vale of Eternal Blossoms
 						19913,	-- The August Celestials
 					}},
-					["g"] = {
+					["groups"] = {
 						i(220768),	-- Astral Emperor's Serpent (MOUNT!)
 					},
 				}),
 			}),
 			n(QUESTS, {
 				q(80310, {	-- Setting Sun Garrison
-					["providers"] = {
-						{ "n", 64031 },	-- Xari the Kind [A]
-						{ "n", 64007 },	-- Weng the Merciful [H]
+					["qgs"] = {
+						64031,	-- Xari the Kind [A]
+						64007,	-- Weng the Merciful [H]
 					},
 					["coords"] = {
 						{ 84.2, 62.4, VALE_OF_ETERNAL_BLOSSOMS },

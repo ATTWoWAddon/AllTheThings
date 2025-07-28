@@ -216,6 +216,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						1748,	-- Highlord Bolvar Fordragon
 						-- #endif
 					},
+					["sourceQuest"] = 7781,	-- The Lord of Blackrock [A]
 					["coords"] = {
 						-- #if AFTER LEGION
 						{ 85.6, 31.8, STORMWIND_CITY },	-- Anduin Wrynn <King of Stormwind>
@@ -226,7 +227,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						{ 78.0, 18.0, STORMWIND_CITY },	-- Highlord Bolvar Fordragon
 						-- #endif
 					},
-					["sourceQuest"] = 7781,	-- The Lord of Blackrock [A]
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(19366),	-- Master Dragonslayer's Orb
@@ -237,8 +237,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FIVE, q(85643, bubbleDownSelf({ ["timeline"] = { ADDED_1_15_4 }, }, {	-- The Lord of Blackrock [A] (2/2)
 					["qg"] = 1748,	-- Highlord Bolvar Fordragon
-					["coord"] = { 78.0, 18.0, STORMWIND_CITY },
 					["sourceQuest"] = 7781,	-- The Lord of Blackrock [A]
+					["coord"] = { 78.0, 18.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(230840),	-- Master Dragonslayer's Medallion
@@ -266,6 +266,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						4949,	-- Thrall <Warchief>
 						-- #endif
 					},
+					["sourceQuest"] = 7783,	-- The Lord of Blackrock [H]
 					["coords"] = {
 						-- #if AFTER BFA
 						{ 49.0, 72.8, ORGRIMMAR },	-- Eitrigg
@@ -275,7 +276,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						{ 32, 37.8, ORGRIMMAR },	-- Thrall <Warchief>
 						-- #endif
 					},
-					["sourceQuest"] = 7783,	-- The Lord of Blackrock [H]
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(19383),	-- Master Dragonslayer's Medallion
@@ -286,8 +286,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FIVE, q(85644, bubbleDownSelf({ ["timeline"] = { ADDED_1_15_4 }, }, {	-- The Lord of Blackrock [H] (2/2)
 					["qg"] = 4949,	-- Thrall <Warchief>
-					["coord"] = { 32, 37.8, ORGRIMMAR },
 					["sourceQuest"] = 7783,	-- The Lord of Blackrock [H]
+					["coord"] = { 32, 37.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(230840),	-- Master Dragonslayer's Medallion

@@ -53,13 +53,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			}),
 			ach(40235, {	-- Forged Marshal: The War Within Season 1
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
+				["groups"] = {
 					title(555),	-- Forged Marshal <Name>
 				},
 			}),
 			ach(40234, {	-- Forged Warlord: The War Within Season 1
 				["races"] = HORDE_ONLY,
-				["g"] = {
+				["groups"] = {
 					title(554),	-- Forged Warlord <Name>
 				},
 			}),
@@ -90,7 +90,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 		n(PVP_WARMODE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
 			n(219213, {	-- Gilderann <War Mode Quartermaster>
 				["coord"] = { 55.2, 76.8, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					filter(BACK_F, {
 						bloody(525, i(223839)),	-- Forged Warmonger's Cape
 						bloody(525, i(223841)),	-- Forged Warmonger's Cloak
@@ -167,7 +167,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART } }, {
 			n(219217, {	-- Velerd <Honor Quartermaster>
 				["coord"] = { 55.0, 76.5, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					filter(BACK_F, {
 						honor(525, i(218434)),	-- Forged Aspirant's Cape
 						honor(525, i(218433)),	-- Forged Aspirant's Cloak
@@ -288,7 +288,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			n(219222, {	-- Lalandi <Conquest Quartermaster>
 				["coord"] = { 55.1, 76.2, DORNOGAL },
 				["ItemAppearanceModifierID"] = 159,
-				["g"] = {
+				["groups"] = {
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							conquest(1, i(218650)),	-- Forged Gladiator's Chestguard
@@ -613,7 +613,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 				["coord"] = { 50.0, 54.2, DORNOGAL },
 				["modelScale"] = 4,
 				["catalystID"] = 8,	-- ItemBonus.Value_0 TWW:S1
-				["g"] = bubbleDown({ ["modID"] = 14 }, {
+				["groups"] = bubbleDown({ ["modID"] = 14 }, {
 					cl(DEATHKNIGHT, {
 						i(211997),	-- Exhumed Centurion's Drape
 						i(211998),	-- Exhumed Centurion's Manacles
@@ -909,7 +909,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			}),
 			n(219216, {	-- Rogurn <Elite Conquest Quartermaster>
 				["coord"] = { 59.8, 69.3, DORNOGAL },
-				["g"] = {
+				["groups"] = {
 					honor(100, i(223616, {	-- Forged Gladiator's Tabard
 						["sourceAchievements"] = { 40392 },	-- Elite: The War Within Season 1
 					})),

@@ -202,8 +202,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					["qg"] = 23376,	-- Dragonmaw Foreman
 					["sourceQuest"] = 11075,	-- The Netherwing Mines
 					["coord"] = { 63.4, 87.4, SHADOWMOON_VALLEY },
-					["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["minReputation"] = { FACTION_NETHERWING, FRIENDLY },	-- Netherwing, Friendly.
+					["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/15 Nethermine Flayer slain
@@ -426,16 +426,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					["qg"] = 23452,	-- Commander Arcus
 					["sourceQuest"] = 11100,	-- Commander Arcus
 					["coord"] = { 62.4, 29.4, SHADOWMOON_VALLEY },
-					["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["isDaily"] = true,
 				}),
 				q(11097, {	-- The Deadliest Trap Ever Laid (Scryers)
 					["qg"] = 23434,	-- Commander Hobb
 					["sourceQuest"] = 11095,	-- Commander Hobb
 					["coord"] = { 56.6, 58.6, SHADOWMOON_VALLEY },
-					["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					["isDaily"] = true,
 				}),
 				q(11081, {	-- The Great Murkblood Revolt

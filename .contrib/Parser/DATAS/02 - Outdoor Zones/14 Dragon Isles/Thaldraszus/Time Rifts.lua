@@ -29,7 +29,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			["maps"] = {
 				2199,	-- Tyrhold Reservoir (Scenario Map)
 			},
-			["g"] = {
+			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(18637, {	-- Chronograde Connoisseur
 						crit(61885, {	-- Azmerloth
@@ -68,7 +68,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							18641,	-- To All The Squirrels I've BEEN Before
 							18635,	-- Verified Rifter
 						}},
-						["g"] = {
+						["groups"] = {
 							i(192765),	-- Bestowed Sandskimmer (MOUNT!)
 						},
 					})),
@@ -127,12 +127,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							-- 	208347,	-- Provisioner Qorra <Azq'roth Vendor>
 							-- 	208548,	-- Shi Everbreeze
 							-- },{"pop"}},
-							["g"] = {
+							["groups"] = {
 							},
 						}),
 						o(404314,{	-- Chipped Stone Tablet
 							["coord"] = { 45.7, 23.9, AZQROTH },
-							["g"] = {
+							["groups"] = {
 								i(206859),	-- Chipped Stone Tablet (QI!)
 							},
 						}),
@@ -143,12 +143,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							-- 	208341,	-- Falara Nightsong <Azwrath Vendor>
 							-- 	208548,	-- Shi Everbreeze
 							-- },{"pop"}},
-							["g"] = {
+							["groups"] = {
 							},
 						}),
 						o(403786,{	-- Antlered Skull
 							["coord"] = { 75.1, 41.9, AZEWRATH },
-							["g"] = {
+							["groups"] = {
 								i(206578),	-- An Antlered Skull (QI!)
 							},
 						}),
@@ -159,12 +159,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							-- 	208338,	-- Baron Silver <Azmourne Vendor>
 							-- 	208548,	-- Shi Everbreeze
 							-- },{"pop"}},
-							["g"] = {
+							["groups"] = {
 							},
 						}),
 						o(404492,{	-- Gilded Vase
 							["coord"] = { 40.1, 39.7, AZMOURNE },
-							["g"] = {
+							["groups"] = {
 								i(207003),	-- Gilded Vase (QI!)
 							},
 						}),
@@ -175,7 +175,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							-- 	208345,	-- Sir Finely Mrrgglton <Azmerloth Vendor>
 							-- 	208548,	-- Shi Everbreeze
 							-- },{"pop"}},
-							["g"] = {
+							["groups"] = {
 							},
 						}),
 						-- o(OBJECT, {
@@ -187,7 +187,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							-- 	208343,	-- Sorotis <Ulderoth Vendor>
 							-- 	208548,	-- Shi Everbreeze
 							-- },{"pop"}},
-							["g"] = {
+							["groups"] = {
 							},
 						}),
 						-- o(OBJECT, {
@@ -199,7 +199,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							-- 	208342,	-- Gill the Drill <A.Z.E.R.O.T.H Vendor>
 							-- 	208548,	-- Shi Everbreeze
 							-- },{"pop"}},
-							["g"] = {
+							["groups"] = {
 							},
 						}),
 						-- o(OBJECT, {
@@ -211,12 +211,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							-- 	208346,	-- Warden Krizzik <Warlands Vendor>
 							-- 	208548,	-- Shi Everbreeze
 							-- },{"pop"}},
-							["g"] = {
+							["groups"] = {
 							},
 						}),
 						o(404242,{	-- Oil Soaked Book
 							["coord"] = { 12.0, 30.9, THE_WARLANDS },
-							["g"] = {
+							["groups"] = {
 								i(206749),	-- Oil-Soaked Log Book (QI!)
 							},
 						}),
@@ -260,7 +260,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							["provider"] = { "n", 204450 },	-- Soridormi
 							["coord"] = { 51.0, 57.0, THALDRASZUS },
 							["minReputation"] = { FACTION_SORIDORMI, 2 },
-							["g"] = {
+							["groups"] = {
 								i(208058),	-- Minute Glass (TOY!)
 							},
 						}),
@@ -268,7 +268,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							["provider"] = { "n", 204450 },	-- Soridormi
 							["coord"] = { 51.0, 57.0, THALDRASZUS },
 							["minReputation"] = { FACTION_SORIDORMI, 3 },
-							["g"] = {
+							["groups"] = {
 								iensemble(207020),	-- Ensemble: Rift-Mender's Vestments
 							},
 						}),
@@ -276,7 +276,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							["provider"] = { "n", 204450 },	-- Soridormi
 							["coord"] = { 51.0, 57.0, THALDRASZUS },
 							["minReputation"] = { FACTION_SORIDORMI, 4 },
-							["g"] = {
+							["groups"] = {
 								i(207027),	-- Greater Encapsulated Destiny
 							},
 						}),
@@ -284,7 +284,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							["provider"] = { "n", 204450 },	-- Soridormi
 							["coord"] = { 51.0, 57.0, THALDRASZUS },
 							["minReputation"] = { FACTION_SORIDORMI, 5 },
-							["g"] = {
+							["groups"] = {
 								i(208006),	-- Greater Paracausal Chest / it also could contain vendor stuff, was Ensemble: Hauberk of Discipline - Alex
 								spell(417360),	-- Unparalleled (TITLE!)
 							},
@@ -304,14 +304,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					q(76548, {	-- A Fishy Gift
 						["provider"] = { "n", 207756 },	-- Murloc You
 						["coord"] = { 57.1, 63.2, 2199 },	-- Tyrhold Reservoir (Scenario Map) / follow player
-						["g"] = {
+						["groups"] = {
 							i(207008),	-- A Fish (QI!)
 						},
 					}),
 					q(76379, {	-- A Murloc and a Dragon Walk into a Time Rift...
 						["provider"] = { "n", 206822 },	-- Alulgultasza de Urgl-Blalul <Queen of the... Murloc... Dragons>
 						["coord"] = { 49.4, 73.7, AZMERLOTH },
-						["g"] = {
+						["groups"] = {
 							i(206599),	-- Azmerlothian Hourglass (QI!)
 						},
 					}),
@@ -330,7 +330,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					q(76521, {	-- Buzzing Boffins
 						["provider"] = { "n", 207509 },	-- Boffins
 						["coord"] = { 77.5, 64.1, 2199 },	-- Tyrhold Reservoir (Scenario Map)
-						["g"] = {
+						["groups"] = {
 							i(206957),	-- Boffins (QI!)
 						},
 					}),
@@ -341,7 +341,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					q(76533, {	-- Dangerous Documentation
 						["provider"] = { "n", 207525 },	-- Watcher's Log
 						["coord"] = { 58.2, 39.0, ULDEROTH },
-						["g"] = {
+						["groups"] = {
 							i(206962),	-- Watcher's Log (QI!)
 						},
 					}),
@@ -356,7 +356,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					q(76459, {	-- The Resistance
 						["provider"] = { "n", 207297 },	-- Ellemayne
 						["coord"] = { 67.4, 63.4, 2199 },	-- Tyrhold Reservoir (Scenario Map)
-						["g"] = {
+						["groups"] = {
 							i(206775),	-- Map to Suramar (QI!)
 						},
 					}),
@@ -366,7 +366,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							{ 39.4, 58.4, AZMOURNE },
 							{ 39.7, 58.0, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 						},
-						["g"] = {
+						["groups"] = {
 							i(206638),	-- Azmourne's Corrupted Ashbringer (QI!)
 						},
 					}),
@@ -388,7 +388,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["description"] = "Can be completed once per Account per week.\n\nNote: Having this quest active will block picking up 'To Soridormi's Aid' (77679) on any character which logs in while this quest is active.",
 						["isWeekly"] = true,
 						["sourceQuest"] = 77679,	-- To Soridormi's Aid
-						["g"] = {
+						["groups"] = {
 							i(208090, {	-- Contained Paracausality
 								i(207030, {	-- Dilated Time Capsule (10.1.5)
 									["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 },
@@ -416,7 +416,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(EVENT_COMPLETION, {
 					i(207582),	-- Box of Tampered Reality
 					i(207584, {	-- Box of Volatile Reality
-						["g"] = {
+						["groups"] = {
 							i(207002),	-- Encapsulated Destiny
 						},
 					}),
@@ -430,7 +430,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(TREASURES, {
 					o(404432,{	-- Bload Soaked Book
 						["coord"] = { 71.2, 70.2, 2199 },	-- Tyrhold Reservoir (Scenario Map)
-						["g"] = {
+						["groups"] = {
 							i(206984),	-- Blood-Soaked Book (QI!)
 						},
 					}),
@@ -440,19 +440,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							{ 58.1, 63.9, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 							{ 38.1, 52.3, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 						},
-						["g"] = {
+						["groups"] = {
 							i(206602),	-- Mechanized Cog (QI!)
 						},
 					}),
 					o(404480,{	-- Ragged Mantid Sword
 						["coord"] = { 63.5, 65.4, 2199 },	-- Tyrhold Reservoir (Scenario Map)
-						["g"] = {
+						["groups"] = {
 							i(206998),	-- Amber Sword (QI!)
 						},
 					}),
 					n(206587, {
 						-- ["coord"] = { 63.5, 65.4, 2199 },	-- Tyrhold Reservoir (Scenario Map)
-						["g"] = {
+						["groups"] = {
 							i(206564),	-- Time-Displaced Titanic Disc (QI!)
 						},
 					}),
@@ -462,7 +462,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},FILTERFUNC_itemID,{
 					n(208338, {	-- Baron Silver <Azmourne Vendor>
 						["coord"] = { 51.0, 56.7, THALDRASZUS },
-						["g"] = {
+						["groups"] = {
 							i(206680, {	-- Reins of the Scourgebound Vanquisher (MOUNT!)
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 3000 }},
 							}),
@@ -503,7 +503,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					n(208341, {	-- Falara Nightsong <Azwrath Vendor>
 						["coord"] = { 51.0, 56.7, THALDRASZUS },
-						["g"] = {
+						["groups"] = {
 							i(206676, {	-- Felstorm Dragon (MOUNT!)
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 3000 }},
 							}),
@@ -541,7 +541,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					n(208342, {	-- Gill the Drill <A.Z.E.R.O.T.H Vendor>
 						["coord"] = { 51.0, 56.6, THALDRASZUS },
-						["g"] = {
+						["groups"] = {
 							i(206679, {	-- Perfected Juggernaut (MOUNT!)
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 3000 }},
 							}),
@@ -579,7 +579,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					n(208347, {	-- Provisioner Qorra <Azq'roth Vendor>
 						["coord"] = { 51.1, 56.6, THALDRASZUS },
-						["g"] = {
+						["groups"] = {
 							i(206678, {	-- Sulfur Hound's Leash (MOUNT!)
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 3000 }},
 							}),
@@ -617,7 +617,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					n(208345, {	-- Sir Finely Mrrgglton <Azmerloth Vendor>
 						["coord"] = { 51.0, 56.6, THALDRASZUS },
-						["g"] = {
+						["groups"] = {
 							i(208009, {	-- Gill'dan (PET!)
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2750 }},
 							}),
@@ -628,7 +628,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					n(208548, {	-- Shi Everbreeze
 						["coord"] = { 51.0, 56.7, THALDRASZUS },
-						["g"] = bubbleDownFiltered({
+						["groups"] = bubbleDownFiltered({
 							["cost"] = {{ "i", DILATED_TIME_CAPSULE, 1 }},
 						},FILTERFUNC_itemID,{
 							filter(CLOTH, {
@@ -693,7 +693,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							}),
 							i(208945, {	-- Paracausal Crate
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 500 }},
-								["g"] = {
+								["groups"] = {
 									currency(PARACAUSAL_FLAKES),
 								},
 							}),
@@ -701,7 +701,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					n(208343, {	-- Sorotis <Ulderoth Vendor>
 						["coord"] = { 51.1, 56.7, THALDRASZUS },
-						["g"] = {
+						["groups"] = {
 							i(206675, {	-- Gold-Toed Albatross (MOUNT!)
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 3000 }},
 							}),
@@ -749,7 +749,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					n(208346, {	-- Warden Krizzik <Warlands Vendor>
 						["coord"] = { 51.1, 56.6, THALDRASZUS },
-						["g"] = {
+						["groups"] = {
 							i(208011, {	-- Obsidian Warwhelp (PET!)
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2750 }},
 							}),
@@ -779,7 +779,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								}),
 								i(207093, {	-- Jingoist's Mail Suit Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206860),	-- Jingoist's Chainmail
 										i(206869),	-- Jingoist's Vestment
 									},
@@ -803,28 +803,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								------ Cloak/Shoulders ------
 								i(207082, {	-- Jingoist's Cloth Armor Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206824),	-- Jingoist's Epaulets
 										i(206829),	-- Jingoist's Shroud
 									},
 								}),
 								i(207080, {	-- Jingoist's Leather Armor Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206831),	-- Jingoist's Cloak
 										i(206836),	-- Jingoist's Spaulders
 									},
 								}),
 								i(207078, {	-- Jingoist's Mail Armor Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206868),	-- Jingoist's Drape
 										i(206863),	-- Jingoist's Mantle
 									},
 								}),
 								i(207075, {	-- Jingoist's Plate Armor Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206870),	-- Jingoist's Cape
 										i(206875),	-- Jingoist's Pauldrons
 									},
@@ -832,28 +832,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								------ Feets/Waist ------
 								i(207071, {	-- Jingoist's Cloth Gear Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206823),	-- Jingoist's Cord
 										i(206828),	-- Jingoist's Treads
 									},
 								}),
 								i(207067, {	-- Jingoist's Leather Gear Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206837),	-- Jingoist's Belt
 										i(206832),	-- Jingoist's Boots
 									},
 								}),
 								i(207064, {	-- Jingoist's Mail Gear Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206862),	-- Jingoist's Clasp
 										i(206867),	-- Jingoist's Footpads
 									},
 								}),
 								i(207053, {	-- Jingoist's Plate Gear Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206876),	-- Jingoist's Girdle
 										i(206871),	-- Jingoist's Warboots
 									},
@@ -861,28 +861,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								------ Hands/Wrists ------
 								i(207072, {	-- Jingoist's Cloth Equipment Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206827),	-- Jingoist's Mitts
 										i(206822),	-- Jingoist's Wristwraps
 									},
 								}),
 								i(207068, {	-- Jingoist's Leather Equipment Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206838),	-- Jingoist's Bracers
 										i(206833),	-- Jingoist's Gloves
 									},
 								}),
 								i(207063, {	-- Jingoist's Mail Equipment Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206861),	-- Jingoist's Bonds
 										i(206866),	-- Jingoist's Grips
 									},
 								}),
 								i(207052, {	-- Jingoist's Plate Equipment Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-										["g"] = {
+										["groups"] = {
 										i(206872),	-- Jingoist's Gauntlets
 										i(206877),	-- Jingoist's Vambraces
 									},
@@ -923,7 +923,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								}),
 								i(207094, {	-- Warmonger's Leather Suit Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206840),	-- Warmonger's Cuirass
 										i(206844),	-- Warmonger's Vestment
 									},
@@ -950,28 +950,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								------ Cloak/Shoulders ------
 								i(207081, {	-- Warmonger's Cloth Armor Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206812),	-- Warmonger's Epaulets
 										i(206819),	-- Warmonger's Shroud
 									},
 								}),
 								i(207079, {	-- Warmonger's Leather Armor Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206849),	-- Warmonger's Cloak
 										i(206843),	-- Warmonger's Spaulders
 									},
 								}),
 								i(207077, {	-- Warmonger's Mail Armor Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206850),	-- Warmonger's Drape
 										i(206855),	-- Warmonger's Mantle
 									},
 								}),
 								i(207076, {	-- Warmonger's Plate Armor Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206887),	-- Warmonger's Cape
 										i(206882),	-- Warmonger's Pauldrons
 									},
@@ -979,28 +979,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								------ Feets/Waist ------
 								i(207073, {	-- Warmonger's Cloth Equipment Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206810),	-- Warmonger's Cord
 										i(206818),	-- Warmonger's Treads
 									},
 								}),
 								i(207069, {	-- Warmonger's Leather Equipment Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206842),	-- Warmonger's Belt
 										i(206848),	-- Warmonger's Boots
 									},
 								}),
 								i(207066, {	-- Warmonger's Mail Equipment Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206856),	-- Warmonger's Clasp
 										i(206851),	-- Warmonger's Footpads
 									},
 								}),
 								i(207051, {	-- Warmonger's Plate Equipment Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206881),	-- Warmonger's Girdle
 										i(206886),	-- Warmonger's Warboots
 									},
@@ -1008,28 +1008,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								------ Hands/Wrists ------
 								i(207074, {	-- Warmonger's Cloth Gear Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206817),	-- Warmonger's Mitts
 										i(206809),	-- Warmonger's Wristwraps
 									},
 								}),
 								i(207070, {	-- Warmonger's Leather Gear Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206841),	-- Warmonger's Bracers
 										i(206847),	-- Warmonger's Gloves
 									},
 								}),
 								i(207065, {	-- Warmonger's Mail Gear Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206857),	-- Warmonger's Bonds
 										i(206852),	-- Warmonger's Grips
 									},
 								}),
 								i(207050, {	-- Warmonger's Plate Gear Bag
 									["cost"] = {{ "c", PARACAUSAL_FLAKES, 1150 }},
-									["g"] = {
+									["groups"] = {
 										i(206885),	-- Warmonger's Gauntlets
 										i(206880),	-- Warmonger's Vambraces
 									},

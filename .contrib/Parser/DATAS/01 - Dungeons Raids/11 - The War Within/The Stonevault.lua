@@ -5,7 +5,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 	inst(1269, {	-- The Stonevault
 		["coord"] = { 46.8, 8.5, THE_RINGING_DEEPS },
 		["maps"] = { 2341 },	-- The Stonevault
-		["g"] = {
+		["groups"] = {
 			n(QUESTS, {
 				q(83108, {	-- Daily Diagnostics
 					["sourceQuests"] = { 79354 },	-- The Machine Speakers
@@ -16,7 +16,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2572, {	-- E.D.N.A.
 					["crs"] = { 210108 },	-- E.D.N.A
-					["g"] = {
+					["groups"] = {
 						i(221074),	-- Augmented Refractor Cannon
 						i(221073),	-- Earthen Nullification Aegis
 						i(221078),	-- Endoskeletal Polecrank
@@ -28,7 +28,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 				e(2579, {	-- Skarmorak
 					["crs"] = { 210156 },	-- Skarmorak
-					["g"] = {
+					["groups"] = {
 						i(221080),	-- Corpseleecher Grips
 						i(221079),	-- Crystal-Fissure Girdle
 						i(221081),	-- Guise of the Construct
@@ -43,7 +43,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 						213217,	-- Speaker Brokk
 						213216,	-- Speaker Dorlita
 					},
-					["g"] = {
+					["groups"] = {
 						i(221088),	-- Anvilhide Cape
 						i(221087),	-- Dorlita's Safety Belt
 						i(221086),	-- Machinist's Searing Handguards
@@ -54,7 +54,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 				e(2582, {	-- Void Speaker Eirich
 					["crs"] = { 213119 },	-- High Speaker Eirich
-					["g"] = {
+					["groups"] = {
 						ach(40643),	-- The Stonevault
 						i(221091),	-- Cutting-Edge Sermon
 						i(221093),	-- Deeply Corrupted Coil [Only Available as Warbound]
@@ -70,7 +70,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2582, {	-- Void Speaker Eirich
 					["crs"] = { 213119 },	-- High Speaker Eirich
-					["g"] = {
+					["groups"] = {
 						ach(40644),	-- Heroic: The Stonevault
 					},
 				}),
@@ -78,7 +78,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2582, {	-- Void Speaker Eirich
 					["crs"] = { 213119 },	-- High Speaker Eirich
-					["g"] = {
+					["groups"] = {
 						ach(40648),	-- Mythic: The Stonevault
 						i(226683),	-- Malfunctioning Mechsuit (QS!)
 					},

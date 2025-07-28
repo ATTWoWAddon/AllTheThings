@@ -96,7 +96,7 @@ end
 root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	n(COMMON_DUNGEON_DROPS, {
 		["description"] = "The following items can be obtained in the mentioned dungeons.",
-		["g"] = {
+		["groups"] = {
 			i(141643, {	-- Technique: Codex of the Clear Mind (RECIPE!)
 				["maps"] = { WOD_MAP.AUCH, WOD_MAP.BSM, WOD_MAP.RAIL, WOD_MAP.DOCKS, WOD_MAP.SBG, WOD_MAP.SKY, WOD_MAP.BLOOM, WOD_MAP.UBRS },
 			}),

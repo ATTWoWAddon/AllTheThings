@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		n(VENDORS, {
 			n(193915, {	-- Emilia Bellocq
 				["coord"] = { 75.4, 34.0, THE_WAKING_SHORES },
-				["g"] = {
+				["groups"] = {
 					i(199900),	-- Secondhand Survery Tools
 					i(198646, {	-- Ornate Dragon Statue (TOY!)
 						["sourceQuests"] = {
@@ -26,13 +26,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(186752, {	-- Firstmate Kaleson
 				["coord"] = { 43.0, 67.4, THE_WAKING_SHORES },
-				["g"] = {
+				["groups"] = {
 					i(197739),	-- Happy Trigger Sour
 				},
 			}),
 			n(189207, {	-- Griftah
 				["coord"] = { 25.6, 54.3, THE_WAKING_SHORES },
-				["g"] = {
+				["groups"] = {
 					i(27978),	-- Soap on a Rope
 					i(200265),	-- Lucky Dragon's Claw
 					i(200268),	-- Crumbling Elemental Stone
@@ -49,19 +49,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(187412, {	-- Happy Hal <Innkeeper>
 				["coord"] = { 81.2, 31.8, THE_WAKING_SHORES },
-				["g"] = {
+				["groups"] = {
 					i(194680),	-- Jerky Surprise
 				},
 			}),
 			n(186454, {	-- Kora Fullsails <Food and Provisions>
 				["coord"] = { 43.0, 67.2, THE_WAKING_SHORES },
-				["g"] = {
+				["groups"] = {
 					i(198047),	-- Kul Tiran Red
 				},
 			}),
 			n(187399, {	-- Maribeth <Innkeeper>
 				["coord"] = { 47.7, 83.2, THE_WAKING_SHORES },
-				["g"] = {
+				["groups"] = {
 					i(197848),	-- Hearty Squash Stew
 					i(197856),	-- Cup o' Wakeup
 					i(197857),	-- Swog Slurp
@@ -70,13 +70,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(197510, {	-- Talon Scaralesh
 				["coord"] = { 47.0, 83.0, THE_WAKING_SHORES },
-				["g"] = {
+				["groups"] = {
 					i(200619),	-- Scaralesh's Special
 				},
 			}),
 			n(191135, {	-- Yries Lightfingers
 				["coord"] = { 26.4, 55.4, THE_WAKING_SHORES },
-				["g"] = {
+				["groups"] = {
 					i(199326, {	-- Chip (PET!)
 						["cost"] = {
 							{ "i", 198357, 1 },	-- 1xRock of Aegis
@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							{ "i", 201839, 1 },	-- 1xNetherforged Lavaproof Boots
 							{ "i", 201840, 1 },	-- 1xSturdy Obsidian Glasses
 						},
-						["g"] = {
+						["groups"] = {
 							i(192601),	-- Loyal Magmammoth (MOUNT!)
 						},
 					}),

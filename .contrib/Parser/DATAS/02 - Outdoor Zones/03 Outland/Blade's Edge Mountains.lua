@@ -229,7 +229,6 @@ root(ROOTS.Zones, {
 						["qg"] = 23300,	-- Gahk
 						["coord"] = { 28.4, 58, BLADES_EDGE_MOUNTAINS },
 						["minReputation"] = { FACTION_ORGILA, HONORED },	-- Ogri'la, Honored.
-						["isDaily"] = true,
 						["timeline"] = {
 							ADDED_3_3_0,
 							REMOVED_4_1_0,
@@ -237,6 +236,7 @@ root(ROOTS.Zones, {
 						["cost"] = {
 							{ "i", 32643, 1 },	-- Darkrune
 						},
+						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
 							i(32602, {	-- Crystalforged Darkrune
@@ -284,8 +284,8 @@ root(ROOTS.Zones, {
 					}),
 					q(10506, {	-- A Dire Situation
 						["qg"] = 21066,	-- Rina Moonspring
-						["coord"] = { 36.2, 67.2, BLADES_EDGE_MOUNTAINS },
 						["sourceQuest"] = 10457,	-- Protecting Our Own
+						["coord"] = { 36.2, 67.2, BLADES_EDGE_MOUNTAINS },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(65, 65, 20),
 						["groups"] = {
@@ -606,8 +606,8 @@ root(ROOTS.Zones, {
 							10989,	-- Mog'dorg the Wizened
 							11057,	-- The Trouble Below
 						},
-						["description"] = "This quest has three possible breadcrumb quests. Completing one will give you credit for the other, but if you're interested in completing as many breadcrumbs as possible then you should start this quest chain by picking up 'Speak with the Ogre' in the middle of Shattrath City.",
 						["coord"] = { 55.5, 44.8, BLADES_EDGE_MOUNTAINS },
+						["description"] = "This quest has three possible breadcrumb quests. Completing one will give you credit for the other, but if you're interested in completing as many breadcrumbs as possible then you should start this quest chain by picking up 'Speak with the Ogre' in the middle of Shattrath City.",
 						["maps"] = { TEROKKAR_FOREST },
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
@@ -679,8 +679,8 @@ root(ROOTS.Zones, {
 						["qg"] = 21690,	-- R-3D0
 						["sourceQuest"] = 10580,	-- Where Did Those Darn Gnomes Go?
 						["coord"] = { 55.0, 72.8, BLADES_EDGE_MOUNTAINS },
-						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(65, 65, 20),
 					}),
 					q(10771, {	-- From the Ashes
@@ -820,8 +820,8 @@ root(ROOTS.Zones, {
 							10989,	-- Mog'dorg the Wizened
 							11057,	-- The Trouble Below
 						},
-						["description"] = "This quest has three possible breadcrumb quests. Completing one will give you credit for the other, but if you're interested in completing as many breadcrumbs as possible then you should start this quest chain by picking up 'Speak with the Ogre' in the middle of Shattrath City.",
 						["coord"] = { 55.5, 44.8, BLADES_EDGE_MOUNTAINS },
+						["description"] = "This quest has three possible breadcrumb quests. Completing one will give you credit for the other, but if you're interested in completing as many breadcrumbs as possible then you should start this quest chain by picking up 'Speak with the Ogre' in the middle of Shattrath City.",
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
 							objective(1, {	-- 0/1 Grulloc's Dragon Skull
@@ -1006,8 +1006,8 @@ root(ROOTS.Zones, {
 							10989,	-- Mog'dorg the Wizened
 							11057,	-- The Trouble Below
 						},
-						["description"] = "This quest has three possible breadcrumb quests. Completing one will give you credit for the other, but if you're interested in completing as many breadcrumbs as possible then you should start this quest chain by picking up 'Speak with the Ogre' in the middle of Shattrath City.",
 						["coord"] = { 55.5, 44.8, BLADES_EDGE_MOUNTAINS },
+						["description"] = "This quest has three possible breadcrumb quests. Completing one will give you credit for the other, but if you're interested in completing as many breadcrumbs as possible then you should start this quest chain by picking up 'Speak with the Ogre' in the middle of Shattrath City.",
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
 							objective(1, {	-- 0/1 Maggoc's Treasure Chest
@@ -1087,6 +1087,7 @@ root(ROOTS.Zones, {
 					}),
 					q(10983, {	-- Mog'dorg the Wizened
 						["qg"] = 22940,	-- Grok
+						["altQuests"] = { 10989 },	-- Mog'dorg the Wizened
 						["sourceQuest"] = 10984,	-- Speak with the Ogre
 						["coord"] = { 65.0, 68.4, SHATTRATH_CITY },
 						-- #IF ANYCLASSIC
@@ -1095,10 +1096,10 @@ root(ROOTS.Zones, {
 						-- #ENDIF
 						["lvl"] = lvlsquish(70, 70, 20),
 						-- cross-completes with 10989
-						["altQuests"] = { 10989, }	-- Mog'dorg the Wizened
 					}),
 					q(10989, {	-- Mog'dorg the Wizened
 						["qg"] = 22995,	-- Chort
+						["altQuests"] = { 10983 },	-- Mog'dorg the Wizened
 						["coord"] = { 55.4, 45.2, BLADES_EDGE_MOUNTAINS },
 						-- #IF ANYCLASSIC
 						-- maybe this is true in classic? in Retail was unable to pick up any quest from Mog'dorg until completing this
@@ -1106,7 +1107,6 @@ root(ROOTS.Zones, {
 						-- #ENDIF
 						["lvl"] = lvlsquish(70, 70, 20),
 						-- cross-completes with 10983
-						["altQuests"] = { 10983, }	-- Mog'dorg the Wizened
 					}),
 					q(10860, {	-- Mok'Nathal Treats
 						["qg"] = 21088,	-- Matron Varah
@@ -1143,10 +1143,10 @@ root(ROOTS.Zones, {
 							11000,	-- Into the Soulgrinder
 							11022,	-- Speak with Mog'dorg
 						},
+						["coord"] = { 55.5, 44.8, BLADES_EDGE_MOUNTAINS },
 						-- #if BEFORE WRATH
 						["description"] = "You can pick up this quest during phase 1, but cannot turn it in until they introduce the Ogri'la faction in a later phase.",
 						-- #endif
-						["coord"] = { 55.5, 44.8, BLADES_EDGE_MOUNTAINS },
 						["lvl"] = lvlsquish(70, 70, 20),
 					})),
 					q(10714, {	-- On Spirit's Wings
@@ -1165,15 +1165,15 @@ root(ROOTS.Zones, {
 					q(11036, {	-- Out of This World Produce!
 						["qg"] = 19471,	-- Old Orok
 						["coord"] = { 53.2, 54.4, BLADES_EDGE_MOUNTAINS },
-						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(67, 67, 20),
 					}),
 					q(11040, {	-- Parts for the Rocket-Chief
 						["qg"] = 21112,	-- Bossi Pentapiston
 						["coord"] = { 60.8, 69.1, BLADES_EDGE_MOUNTAINS },
-						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(67, 67, 20),
 					}),
 					q(10798, {	-- Pay the Baron a Visit
@@ -1285,10 +1285,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
 						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { ZANGARMARSH },
-						["classes"] = { DRUID },
 						["cost"] = {
 							{ "i", 32359, 1 },	-- Arthorn's Package (Provided)
 						},
+						["classes"] = { DRUID },
 						["lvl"] = 70,
 					})),
 					q(10709, {	-- Reunion
@@ -1476,9 +1476,9 @@ root(ROOTS.Zones, {
 					}),
 					q(11022, {	-- Speak with Mog'dorg
 						["qg"] = 23053,	-- Bladespire Supplicant
+						["altQuests"] = { 10984 },	-- Speak with the Ogre
 						["sourceQuest"] = 11000,	-- Into the Soulgrinder
 						["coord"] = { 56.2, 48.0, BLADES_EDGE_MOUNTAINS },
-						["altQuests"] = { 10984 },	-- Speak with the Ogre
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(70, 70, 20),
 					}),
@@ -1648,10 +1648,10 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10979,	-- To the Evergrove
 						["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
 						["timeline"] = { REMOVED_4_0_1 },
-						["classes"] = { DRUID },
 						["cost"] = {
 							{ "i", 32244, 1 },	-- Seer's Stone (Provided)
 						},
+						["classes"] = { DRUID },
 						["lvl"] = 70,
 					})),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11025, {	-- The Crystals
@@ -1713,11 +1713,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
 						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { TEROKKAR_FOREST },
-						["classes"] = { DRUID },
 						["cost"] = {
 							{ "i", 32657, 1 },	-- Arthorn's Sparrowhawk Whistle (Provided)
 							{ "i", 32357, 1 },	-- Essence of the Falcon
 						},
+						["classes"] = { DRUID },
 						["lvl"] = 70,
 						["groups"] = {
 							objective(1, {	-- 0/1 Essence of the Falcon
@@ -1732,11 +1732,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
 						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { TEROKKAR_FOREST },
-						["classes"] = { DRUID },
 						["cost"] = {
 							{ "i", 32657, 1 },	-- Arthorn's Sparrowhawk Whistle (Provided)
 							{ "i", 32356, 1 },	-- Essence of the Hawk
 						},
+						["classes"] = { DRUID },
 						["lvl"] = 70,
 						["groups"] = {
 							objective(1, {	-- 0/12 Bladewing Bloodletter slain
@@ -1911,12 +1911,12 @@ root(ROOTS.Zones, {
 					})),
 					q(10825, {	-- The Truth Unorbed
 						["provider"] = { "i", 31489 },	-- Orb of the Grishna
-						["lvl"] = lvlsquish(66, 66, 20),
 						["crs"] = {
 							19990,	-- Grishna Scorncrow
 							19989,	-- Grishna Harbinger
 							19988,	-- Grishna Falconwing
 						},
+						["lvl"] = lvlsquish(66, 66, 20),
 					}),
 					q(10867, {	-- There Can Be Only One Response
 						["qg"] = 22004,	-- Leoroxx
@@ -2097,8 +2097,8 @@ root(ROOTS.Zones, {
 						["qg"] = 21158,	-- Commander Skyshadow
 						["sourceQuest"] = 10518,	-- Planting the Banner
 						["coord"] = { 36.5, 66.4, BLADES_EDGE_MOUNTAINS },
-						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(65, 65, 20),
 					}),
 					q(10607, {	-- Whispers of the Raven God
@@ -2171,7 +2171,6 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11060,	-- A Crystalforged Darkrune
 						["coord"] = { 28.4, 58, BLADES_EDGE_MOUNTAINS },
 						["minReputation"] = { FACTION_ORGILA, HONORED },	-- Ogri'la, Honored.
-						["isDaily"] = true,
 						["timeline"] = {
 							ADDED_3_3_0,
 							REMOVED_4_1_0,
@@ -2179,6 +2178,7 @@ root(ROOTS.Zones, {
 						["cost"] = {
 							{ "i", 32643, 1 },	-- Darkrune
 						},
+						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 20),
 						["groups"] = {
 							objective(1, {	-- 0/1 Doomcryer slain
