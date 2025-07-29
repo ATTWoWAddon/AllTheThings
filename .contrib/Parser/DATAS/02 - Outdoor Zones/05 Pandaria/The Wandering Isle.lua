@@ -373,43 +373,43 @@ root(ROOTS.Zones, {
 					}),
 					q(30039, {	-- Much to Learn (Monk)
 						["qg"] = 53566,	-- Master Shang Xi
-						["coord"] = { 56.6, 18.6, THE_WANDERING_ISLE_STARTING_ZONE },
+						["coord"] = { 56.7, 18.6, THE_WANDERING_ISLE_STARTING_ZONE },
 						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						["classes"] = { MONK },
 					}),
 					q(30040, {	-- Much to Learn (Mage)
 						["qg"] = 53566,	-- Master Shang Xi
-						["coord"] = { 56.6, 18.6, THE_WANDERING_ISLE_STARTING_ZONE },
+						["coord"] = { 56.7, 18.6, THE_WANDERING_ISLE_STARTING_ZONE },
 						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						["classes"] = { MAGE },
 					}),
 					q(30041, {	-- Much to Learn (Hunter)
 						["qg"] = 53566,	-- Master Shang Xi
-						["coord"] = { 56.6, 18.6, THE_WANDERING_ISLE_STARTING_ZONE },
+						["coord"] = { 56.7, 18.6, THE_WANDERING_ISLE_STARTING_ZONE },
 						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						["classes"] = { HUNTER },
 					}),
 					q(30042, {	-- Much to Learn (Priest)
 						["qg"] = 53566,	-- Master Shang Xi
-						["coord"] = { 56.6, 18.6, THE_WANDERING_ISLE_STARTING_ZONE },
+						["coord"] = { 56.7, 18.6, THE_WANDERING_ISLE_STARTING_ZONE },
 						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						["classes"] = { PRIEST },
 					}),
 					q(30043, {	-- Much to Learn (Rogue)
 						["qg"] = 53566,	-- Master Shang Xi
-						["coord"] = { 56.6, 18.6, THE_WANDERING_ISLE_STARTING_ZONE },
+						["coord"] = { 56.7, 18.6, THE_WANDERING_ISLE_STARTING_ZONE },
 						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						["classes"] = { ROGUE },
 					}),
 					q(30044, {	-- Much to Learn (Shaman)
 						["qg"] = 53566,	-- Master Shang Xi
-						["coord"] = { 56.6, 18.6, THE_WANDERING_ISLE_STARTING_ZONE },
+						["coord"] = { 56.7, 18.6, THE_WANDERING_ISLE_STARTING_ZONE },
 						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						["classes"] = { SHAMAN },
 					}),
 					q(30045, {	-- Much to Learn (Warrior)
 						["qg"] = 53566,	-- Master Shang Xi
-						["coord"] = { 56.6, 18.6, THE_WANDERING_ISLE_STARTING_ZONE },
+						["coord"] = { 56.7, 18.6, THE_WANDERING_ISLE_STARTING_ZONE },
 						["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						["classes"] = { WARRIOR },
 					}),
