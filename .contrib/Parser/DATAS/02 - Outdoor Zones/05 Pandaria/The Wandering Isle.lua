@@ -68,7 +68,7 @@ root(ROOTS.Zones, {
 					q(29410, {	-- Aysa of the Tushui
 						["sourceQuest"] = 29409,	-- The Disciple's Challenge
 						["qg"] = 53566,	-- Master Shang Xi
-						["coord"] = { 56.7, 18.2, THE_WANDERING_ISLE_STARTING_ZONE },
+						["coord"] = { 66.0, 22.8, THE_WANDERING_ISLE_STARTING_ZONE },
 					}),
 					q(29784, {	-- Balanced Perspective
 						["sourceQuests"] = {
