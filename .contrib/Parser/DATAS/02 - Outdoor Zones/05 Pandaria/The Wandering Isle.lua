@@ -816,7 +816,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- Defeat Jaomin Ro
 								["provider"] = { "n", 54611 },	-- Jaomin Ro
-								["coord"] = { 67.6, 22.8, THE_WANDERING_ISLE_STARTING_ZONE },
+								["coord"] = { 67.8, 22.8, THE_WANDERING_ISLE_STARTING_ZONE },
 							}),
 							i(73222),	-- Initiate's Gauntlets
 							i(73220),	-- Initiate's Gloves
