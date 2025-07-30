@@ -46,6 +46,7 @@ end
 
 -- Faction APIs
 local C_Reputation = C_Reputation;
+local C_GossipInfo = C_GossipInfo;
 
 -- Here’s a small technique being used: (object1 and object2 and function).
 -- If object1 exists and object2 exists, then the function is passed.
@@ -86,6 +87,7 @@ AssignAPIWrapper("GetFactionReaction",
 	return factionData and factionData.reaction end,
 	GetFactionInfoByID and
 	function(factionID) return select(3, GetFactionInfoByID(factionID)) end);
+AssignAPIWrapper("GetFriendshipReputation", C_GossipInfo and C_GossipInfo.GetFriendshipReputation, app.EmptyFunction);
 ---@diagnostic enable: deprecated
 
 -- Item APIs

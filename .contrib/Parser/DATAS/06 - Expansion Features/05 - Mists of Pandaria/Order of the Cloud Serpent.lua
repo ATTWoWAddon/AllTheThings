@@ -625,7 +625,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["timeline"] = { ADDED_5_4_0 },
 					["cost"] = { { "i", 104286, 1 } },	-- 1x Quivering Firestorm Egg
 					["repeatable"] = true,
-					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestWithCost(1000),
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestClassicReputationWithCost(1000),
 				})),
 				q(30135, {	-- Beating the Odds
 					["sourceQuest"] = 30134,	-- Wild Things
@@ -730,7 +730,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["maxReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },
 					["cost"] = {{ "i", 89155, 1 }},	-- Onyx Egg
 					["repeatable"] = true,
-					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestWithCost(500),
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestClassicReputationWithCost(500),
 				}),
 				q(80311, {	-- Order of the Cloud Serpent
 					["qg"] = 63900,	-- Toortle Wider

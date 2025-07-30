@@ -6,9 +6,7 @@ root(ROOTS.Zones, {
 		m(VALLEY_OF_THE_FOUR_WINDS, {
 			["lore"] = "Valley of the Four Winds is a tranquil plain of lush farmland, bordered by dense mysterious jungles along the south and impassible mountains to the north. The valley is considered the breadbasket of Pandaria, but the year's harvest is in jeopardy and a terrible malaise has overcome the pandaren that live along the coast. The valley is also the home of the legendary Stormstout Brewery, where Chen Stormstout and his niece Li Li hope to journey to discover the whereabouts of their long-lost ancestors.",
 			["icon"] = 618317,
-			["maps"] = {
-				377,	-- Cavern of Endless Echoes
-			},
+			["maps"] = { VALLEY_OF_THE_FOUR_WINDS_CAVERN_OF_ENDLESS_ECHOES },
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(6969),	-- Explore Valley of the Four Winds
@@ -1019,14 +1017,6 @@ root(ROOTS.Zones, {
 							i(81843),	-- Cloak of the Grassy Cline
 						},
 					}),
-					q(31315, {	-- The Heartland Legacy
-						["sourceQuest"] = 31314,	-- Old Man Thistle's Treasure
-						["provider"] = { "o", 213767 },	-- Hidden Treasure
-						["coord"] = { 31.5, 53.3, 377 },
-						["groups"] = {
-							ach(7296),	-- Ain't Lost No More
-						},
-					}),
 					q(29983, {	-- The Hidden Master
 						["sourceQuests"] = {
 							29981,	-- Stemming the Swarm
@@ -1137,11 +1127,6 @@ root(ROOTS.Zones, {
 								i(76337),	-- Stolen Sack of Hops (QI!)
 							}),
 						},
-					}),
-					q(31937, {	-- "Thunder King" Pest Repellers
-						["sourceQuest"] = 30523,	-- Growing the Farm II: The Broken Wagon
-						["provider"] = { "i", 89813 },	-- "Thunder King" Pest Repellers
-						["coord"] = { 53.2, 51.8, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(30185, {	-- Tortoise Mastery
 						["sourceQuests"] = {

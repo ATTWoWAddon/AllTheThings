@@ -1,6 +1,28 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+local HARVESTING = createHeader({
+	readable = "Harvesting",
+	icon = 134427,
+	text = {
+		en = "Harvesting",
+		--[[
+		es = "",
+		mx = "",
+		de = "",
+		fr = "",
+		it = "",
+		pt = "",
+		ru = "",
+		ko = "",
+		cn = "",
+		tw = "",
+		]]--
+	},
+	description = {
+		en = "The following goods can be harvested by planting seeds in Tilled Soil at Sunsong Ranch. You will earn Tillers reputation for harvesting crops and a chance to obtain replacement seeds from the crop.\n\nFUN FACT: Priests may cast Levitate on their crops, making them float.",
+	},
+});
 root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	header(HEADERS.Faction, FACTION_THE_TILLERS, {
 		["description"] = "The Tillers are a group of pandaren farmers who harvest and produce crops to feed their people. They were seemingly founded by a man only referred to as \"the Tiller\".",
@@ -45,7 +67,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					}),
 				}),
 				ach(6544, {	-- The Tillers
-					title(195),		-- Farmer <Name>
+					title(195),	-- Farmer <Name>
 				}),
 			}),
 			n(FACTIONS, {
@@ -61,31 +83,11 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["coord"] = { 31.0, 53.0, VALLEY_OF_THE_FOUR_WINDS },
 				}),
 				faction(FACTION_SHO, {	-- Sho
-					
+					["provider"] = { "n", 58708 },	-- Sho
+					["coord"] = { 53.1, 52.0, VALLEY_OF_THE_FOUR_WINDS },
 				}),
 			}),
-			n(createHeader({
-				readable = "Harvesting",
-				icon = 134427,
-				text = {
-					en = "Harvesting",
-					--[[
-					es = "",
-					mx = "",
-					de = "",
-					fr = "",
-					it = "",
-					pt = "",
-					ru = "",
-					ko = "",
-					cn = "",
-					tw = "",
-					]]--
-				},
-				description = {
-					en = "The following goods can be harvested by planting seeds in Tilled Soil at Sunsong Ranch. You will earn Tillers reputation for harvesting crops and a chance to obtain replacement seeds from the crop.\n\nFUN FACT: Priests may cast Levitate on their crops, making them float.",
-				},
-			}), {
+			n(HARVESTING, {
 				["providers"] = {
 					{ "n", 58563 },	-- Tilled Soil
 					{ "n", 59990 },	-- Tilled Soil
@@ -368,6 +370,15 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 			}),
 			n(QUESTS, {
+				q(31937, {	-- "Thunder King" Pest Repellers
+					["description"] = "You never have to loot a Vintage Bug Sprayer ever again!",
+					["sourceQuest"] = 30523,	-- Growing the Farm II: The Broken Wagon
+					["providers"] = {
+						{ "i",  89813 },	-- "Thunder King" Pest Repellers
+						{ "o", 215162 },	-- Pest Repeller
+					},
+					["coord"] = { 53.2, 51.8, VALLEY_OF_THE_FOUR_WINDS },
+				}),
 				q(30252, {	-- A Helping Hand
 					["qg"] = 58721,	-- Farmer Yoon
 					["coord"] = { 52.0, 48.1, VALLEY_OF_THE_FOUR_WINDS },
@@ -382,6 +393,14 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["description"] = "Only available on days that Barnaby Fletcher is visiting the Market.",
 					["qg"] = 58718,	-- Merchant Greenfield
 					["coord"] = { 52.8, 52.0, VALLEY_OF_THE_FOUR_WINDS },
+				}),
+				q(31341, {	-- A Wolf In Sheep's Clothing
+					["sourceQuest"] = 31340,	-- Oh Sheepie....
+					["qg"] = 58709,	-- Chee Chee
+					["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
+					["groups"] = {
+						i(86465),	-- Old Sheepskin (QI!)
+					},
 				}),
 				q(30516, {	-- Growing the Farm I: A Little Problem
 					["sourceQuest"] = 30260,	-- Growing the Farm I: The Weeds
@@ -520,6 +539,23 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						}),
 					},
 				}),
+				q(31338, {	-- Lost Sheepie
+					["qg"] = 58709,	-- Chee Chee
+					["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
+					["minReputation"] = { FACTION_CHEE_CHEE, 3 },	-- Buddy
+					["groups"] = {
+						i(86446),	-- Sheepie (QI!)
+					},
+				}),
+				q(31339, {	-- Lost Sheepie... Again
+					["sourceQuest"] = 31338,	-- Lost Sheepie
+					["qg"] = 58709,	-- Chee Chee
+					["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
+					["minReputation"] = { FACTION_CHEE_CHEE, 4 },	-- Friend
+					["groups"] = {
+						i(86446),	-- Sheepie (QI!)
+					},
+				}),
 				q(30258, {	-- Mung-Mung's Vote I: A Hozen's Problem
 					["sourceQuest"] = 31945,	-- Learn and Grow VI: Gina's Vote
 					["qg"] = 58646,	-- Farmer Yoon
@@ -557,6 +593,12 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["qg"] = 64597,	-- Nana Mudclaw
 					["coord"] = { 54.7, 47.0, VALLEY_OF_THE_FOUR_WINDS },
 				}),
+				q(31340, {	-- Oh Sheepie...
+					["sourceQuest"] = 31339,	-- Lost Sheepie... Again
+					["qg"] = 58709,	-- Chee Chee
+					["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
+					["minReputation"] = { FACTION_CHEE_CHEE, 5 },	-- Good Friend
+				}),
 				q(31314, {	-- Old Man Thistle's Treasure
 					["sourceQuest"] = 31313,	-- Just a Folk Story
 					["qg"] = 58705,	-- Fish Fellreed
@@ -579,6 +621,14 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 					["coord"] = { 51.7, 48.7, VALLEY_OF_THE_FOUR_WINDS },
 				}),
+				q(31315, {	-- The Heartland Legacy
+					["sourceQuest"] = 31314,	-- Old Man Thistle's Treasure
+					["provider"] = { "o", 213767 },	-- Hidden Treasure
+					["coord"] = { 31.5, 53.3, VALLEY_OF_THE_FOUR_WINDS_CAVERN_OF_ENDLESS_ECHOES },
+					["groups"] = {
+						ach(7296),	-- Ain't Lost No More
+					},
+				}),
 				q(31312, {	-- The Old Map
 					["description"] = "Requires a reputation level of Exalted with The Tillers and Best Friend with all Halfhill farmers to drop.",
 					["provider"] = { "i", 86404 },	-- Old Map
@@ -590,7 +640,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
 				["qg"] = 58646,	-- Farmer Yoon
 				["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-				["maxReputation"] = { FACTION_THE_TILLERS, EXALTED },
+				["maxReputation"] = { FACTION_THE_TILLERS, EXALTED },	-- The Tillers, Exalted.
 				["isDaily"] = true,
 			}, {
 				q(31672, {	-- A Pumpkin-y Perfume
@@ -759,6 +809,44 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						},
 						["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
 					}),
+				}),
+			})),
+			n(QUESTS, sharedData({	-- Tillers Daily Quests: Chee Chee
+				["qg"] = 58709,	-- Chee Chee
+				["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
+				["maxReputation"] = { FACTION_CHEE_CHEE, 6 },	-- Chee Chee, Best Friend.
+				["isDaily"] = true,
+			}, {
+				q(30402, {	-- A Dish for Chee Chee
+					["cost"] = {{ "i", 74647, 5 }},	-- Valley Stir Fry
+				}),
+				q(30471, {	-- A Gift For Chee Chee
+					["qg"] = 64464,	-- Andi
+					["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
+					["groups"] = {
+						objective(1, {	-- 0/1 Authentic Valley Stir Fry
+							["provider"] = { "i", 79827 },	-- Authentic Valley Stir Fry (QI!)
+							["coord"] = { 33.0, 27.2, VALLEY_OF_THE_FOUR_WINDS },
+							["cr"] = 59124,	-- Kunzen Collector
+						}),
+					},
+				}),
+				q(30324, {	-- Not in Chee-Chee's Backyard
+					["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+					["groups"] = {
+						objective(1, {	-- 0/12 Kunzen tribe member slain
+							["providers"] = {
+								{ "n", 59119 },	-- Kunzen Ravager
+								{ "n", 59123 },	-- Kunzen Ritualist
+								{ "n", 59120 },	-- Kunzen Rockflinger
+								{ "n", 59124 },	-- Kunzen Collector
+								{ "n", 59121 },	-- Kunzen Hunter
+								{ "n", 59125 },	-- Kunzen Soupmaster
+								{ "n", 59122 },	-- Kunzen Herdskeeper
+							},
+							["coord"] = { 29.8, 33.4, VALLEY_OF_THE_FOUR_WINDS },
+						}),
+					},
 				}),
 			})),
 			n(QUESTS, applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, sharedData({	-- Work Order Daily Quests
@@ -1001,6 +1089,36 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 			}))),
+			n(QUESTS, sharedData({	-- Tillers Repeatable Quests: Chee Chee
+				["qg"] = 58709,	-- Chee Chee
+				["coords"] = {
+					{ 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
+					{ 34.4, 46.8, VALLEY_OF_THE_FOUR_WINDS },
+				},
+				["maxReputation"] = { FACTION_CHEE_CHEE, 6 },	-- Chee Chee, Best Friend.
+				["repeatable"] = true,
+			}, {
+				q(30400, {	-- A Blue Feather for Chee Chee
+					["cost"] = {{ "i", 79265, 1 }},	-- Blue Feather
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(900),
+				}),
+				q(30399, {	-- A Jade Cat for Chee Chee
+					["cost"] = {{ "i", 79266, 1 }},	-- Jade Cat
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30398, {	-- A Lovely Apple for Chee Chee
+					["cost"] = {{ "i", 79267, 1 }},	-- Lovely Apple
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30401, {	-- A Marsh Lily for Chee Chee
+					["cost"] = {{ "i", 79268, 1 }},	-- Marsh Lily
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30397, {	-- A Ruby Shard for Chee Chee
+					["cost"] = {{ "i", 79264, 1 }},	-- Ruby Shard
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+			})),
 			n(TREASURES, {
 				o(210565, {	-- Dark Soil
 					["description"] = "Can be found all around Pandaria.",
@@ -1152,74 +1270,6 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							i(95445),	-- Bag of Songbell Seeds
 							i(95454),	-- Bag of Windshear Cactus Seeds
 						},
-					}),
-				}),
-			}),
-			faction(FACTION_CHEE_CHEE, {	-- Chee Chee
-				["cr"] = 58709,	-- Chee Chee
-				["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
-				["groups"] = sharedData({
-					["qg"] = 58709,	-- Chee Chee
-					["maxReputation"] = { FACTION_CHEE_CHEE, 6 },
-				},{
-					q(31341, {	-- A Wolf In Sheep's Clothing
-						["sourceQuest"] = 31340,	-- Oh Sheepie....
-						["groups"] = {
-							i(86465),	-- Old Sheepskin (QI!)
-						},
-					}),
-					q(31338, {	-- Lost Sheepie
-						["minReputation"] = { FACTION_CHEE_CHEE, 3 },	-- Buddy
-						["groups"] = {
-							i(86446),	-- Sheepie (QI!)
-						},
-					}),
-					q(31339, {	-- Lost Sheepie... Again
-						["sourceQuest"] = 31338,	-- Lost Sheepie
-						["minReputation"] = { FACTION_CHEE_CHEE, 4 },	-- Friend
-						["groups"] = {
-							i(86446),	-- Sheepie (QI!)
-						},
-					}),
-					q(31340, {	-- Oh Sheepie...
-						["sourceQuest"] = 31339,	-- Lost Sheepie... Again
-						["minReputation"] = { FACTION_CHEE_CHEE, 5 },	-- Good Friend
-					}),
-					q(30402, {	-- A Dish for Chee Chee
-						["cost"] = {{"i",74647,5}},	-- Valley Stir Fry
-						["isDaily"] = true,
-					}),
-					q(30471, {	-- A Gift For Chee Chee
-						["qg"] = 64464,	-- Andi
-						["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-						["isDaily"] = true,
-						["groups"] = {
-							i(79827),	-- Authentic Valley Stir Fry (QI!)
-						},
-					}),
-					q(30324, {	-- Not in Chee-Chee's Backyard
-						["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-						["isDaily"] = true,
-					}),
-					q(30400, {	-- A Blue Feather for Chee Chee
-						["cost"] = {{"i",79265,1}},	-- Blue Feather
-						["repeatable"] = true,
-					}),
-					q(30399, {	-- A Jade Cat for Chee Chee
-						["cost"] = {{"i",79266,1}},	-- Jade Cat
-						["repeatable"] = true,
-					}),
-					q(30398, {	-- A Lovely Apple for Chee Chee
-						["cost"] = {{"i",79267,1}},	-- Lovely Apple
-						["repeatable"] = true,
-					}),
-					q(30401, {	-- A Marsh Lily for Chee Chee
-						["cost"] = {{"i",79268,1}},	-- Marsh Lily
-						["repeatable"] = true,
-					}),
-					q(30397, {	-- A Ruby Shard for Chee Chee
-						["cost"] = {{"i",79264,1}},	-- Ruby Shard
-						["repeatable"] = true,
 					}),
 				}),
 			}),
