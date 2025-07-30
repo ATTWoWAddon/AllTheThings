@@ -361,11 +361,6 @@ root(ROOTS.Zones, {
 							i(88371),	-- Watermelon Bomb
 						},
 					}),
-					q(30534, {	-- A Second Hand
-						["description"] = "Requires reputation level of \"Exalted\" with The Tillers and \"Best Friends\" with whomever you want assisting you on the farm.",
-						["provider"] = { "o", 215705 },	-- Tillers Shrine
-						["coord"] = { 52.1, 49.0, VALLEY_OF_THE_FOUR_WINDS },
-					}),
 					q(29908, {	-- A Seemingly Endless Nuisance
 						["sourceQuest"] = 29907,	-- Chen and Li Li
 						["qg"] = 56204,	-- Pang Thunderfoot

@@ -71,20 +71,72 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 			}),
 			n(FACTIONS, {
-				faction(FACTION_THE_TILLERS, {	-- The Tillers
+				faction(FACTION_THE_TILLERS, {		-- The Tillers
 					["icon"] = 645198,
 				}),
-				faction(FACTION_CHEE_CHEE, {	-- Chee Chee
+				faction(FACTION_CHEE_CHEE, {		-- Chee Chee
 					["provider"] = { "n", 58709 },	-- Chee Chee
-					["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
+					["coords"] = {
+						{ 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
+						{ 34.4, 46.8, VALLEY_OF_THE_FOUR_WINDS },
+					},
 				}),
-				faction(FACTION_OLD_HILLPAW, {	-- Old Hillpaw
+				faction(FACTION_ELLA, {				-- Ella
+					["provider"] = { "n", 58647 },	-- Ella
+					["coords"] = {
+						{ 53.0, 51.6, VALLEY_OF_THE_FOUR_WINDS },
+						{ 31.6, 58.0, VALLEY_OF_THE_FOUR_WINDS },
+					},
+				}),
+				faction(FACTION_FARMER_FUNG, {		-- Farmer Fung
+					["provider"] = { "n", 57298 },	-- Farmer Fung
+					["coords"] = {
+						{ 48.3, 33.9, VALLEY_OF_THE_FOUR_WINDS },
+						{ 48.2, 33.8, VALLEY_OF_THE_FOUR_WINDS },
+					},
+				}),
+				faction(FACTION_FISH_FELLREED, {	-- Fish Fellreed
+					["provider"] = { "n", 58705 },	-- Fish Fellreed
+					["coords"] = {
+						{ 52.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },
+						{ 41.6, 30.0, VALLEY_OF_THE_FOUR_WINDS },
+					},
+				}),
+				faction(FACTION_GINA_MUDCLAW, {		-- Gina Mudclaw
+					["provider"] = { "n", 58706 },	-- Gina Mudclaw
+					["coord"] = { 53.2, 51.8, VALLEY_OF_THE_FOUR_WINDS },
+				}),
+				faction(FACTION_HAOHAN_MUDCLAW, {	-- Haohan Mudclaw
+					["provider"] = { "n", 57402 },	-- Haohan Mudclaw
+					["coords"] = {
+						{ 53.0, 51.7, VALLEY_OF_THE_FOUR_WINDS },
+						{ 44.6, 34.0, VALLEY_OF_THE_FOUR_WINDS },
+					},
+				}),
+				faction(FACTION_JOGU_THE_DRUNK, {	-- Jogu the Drunk
+					["provider"] = { "n", 58710 },	-- Jogu the Drunk
+					["coord"] = { 53.6, 52.6, VALLEY_OF_THE_FOUR_WINDS },
+				}),
+				faction(FACTION_OLD_HILLPAW, {		-- Old Hillpaw
 					["provider"] = { "n", 58707 },	-- Old Hillpaw
-					["coord"] = { 31.0, 53.0, VALLEY_OF_THE_FOUR_WINDS },
+					["coords"] = {
+						{ 53.1, 51.9, VALLEY_OF_THE_FOUR_WINDS },
+						{ 31.0, 53.0, VALLEY_OF_THE_FOUR_WINDS },
+					},
 				}),
-				faction(FACTION_SHO, {	-- Sho
+				faction(FACTION_SHO, {				-- Sho
 					["provider"] = { "n", 58708 },	-- Sho
-					["coord"] = { 53.1, 52.0, VALLEY_OF_THE_FOUR_WINDS },
+					["coords"] = {
+						{ 53.1, 52.0, VALLEY_OF_THE_FOUR_WINDS },
+						{ 29.6, 30.6, VALLEY_OF_THE_FOUR_WINDS },
+					},
+				}),
+				faction(FACTION_TINA_MUDCLAW, {		-- Tina Mudclaw
+					["provider"] = { "n", 58761 },	-- Tina Mudclaw
+					["coords"] = {
+						{ 53.0, 51.8, VALLEY_OF_THE_FOUR_WINDS },
+						{ 45.0, 33.8, VALLEY_OF_THE_FOUR_WINDS },
+					},
 				}),
 			}),
 			n(HARVESTING, {
@@ -386,6 +438,29 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						objective(1, {	-- 0/8 Unbudging Rock cleared
 							["provider"] = { "n", 58719 },	-- Unbudging Rock
 							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
+						}),
+					},
+				}),
+				q(30534, {	-- A Second Hand
+					["description"] = "Also requires reputation level of \"Best Friends\" with whomever you want assisting you on the farm.",
+					["sourceQuest"] = 30529,	-- Growing the Farm III: The Mossy Boulder
+					["provider"] = { "o", 215705 },	-- Tillers Shrine
+					["coord"] = { 52.1, 49.0, VALLEY_OF_THE_FOUR_WINDS },
+					["minReputation"] = { FACTION_THE_TILLERS, EXALTED },	-- The Tillers, Exalted.
+					["groups"] = {
+						objective(1, {	-- Hired a farm hand
+							["providers"] = {
+								{ "n", 58709 },	-- Chee Chee
+								{ "n", 58647 },	-- Ella
+								{ "n", 57298 },	-- Farmer Fung
+								{ "n", 58705 },	-- Fish Fellreed
+								{ "n", 58706 },	-- Gina Mudclaw
+								{ "n", 57402 },	-- Haohan Mudclaw
+								{ "n", 58710 },	-- Jogu the Drunk
+								{ "n", 58707 },	-- Old Hillpaw
+								{ "n", 58708 },	-- Sho
+								{ "n", 58761 },	-- Tina Mudclaw
+							},
 						}),
 					},
 				}),
@@ -818,6 +893,10 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				["isDaily"] = true,
 			}, {
 				q(30402, {	-- A Dish for Chee Chee
+					["coords"] = {
+						{ 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
+						{ 34.4, 46.8, VALLEY_OF_THE_FOUR_WINDS },
+					},
 					["cost"] = {{ "i", 74647, 5 }},	-- Valley Stir Fry
 				}),
 				q(30471, {	-- A Gift For Chee Chee
@@ -846,6 +925,425 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							},
 							["coord"] = { 29.8, 33.4, VALLEY_OF_THE_FOUR_WINDS },
 						}),
+					},
+				}),
+			})),
+			n(QUESTS, sharedData({	-- Tillers Daily Quests: Ella [TODO]
+				["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+				["qg"] = 58647,	-- Ella
+				["coord"] = { 53.0, 51.6, VALLEY_OF_THE_FOUR_WINDS },
+				["maxReputation"] = { FACTION_ELLA, 6 },	-- Ella, Best Friend.
+				["isDaily"] = true,
+			}, {
+				q(31534, {	-- The Beginner's Brew
+					["minReputation"] = { FACTION_ELLA, 3 },	-- Buddy
+					["groups"] = {
+						i(87556),	-- Black Cherries (QI!)
+						i(87555),	-- Fuzzy Peach (QI!)
+						i(87553),	-- Red Radish (QI!)
+						i(87554),	-- Sweet Lakemelon (QI!)
+					},
+				}),
+				q(31537, {	-- Ella's Taste Test
+					["minReputation"] = { FACTION_ELLA, 4 },	-- Friend
+					["groups"] = {
+						i(87558),	-- Ella's Brew (QI!)
+					},
+				}),
+				q(31538, {	-- A Worthy Brew
+					["minReputation"] = { FACTION_ELLA, 5 },	-- Good Friend
+					["groups"] = {
+						i(87763),	-- Ella's Brew (QI!)
+					},
+				}),
+				q(30386, {	-- A Dish for Ella
+					["coords"] = {
+						{ 53.0, 51.6, VALLEY_OF_THE_FOUR_WINDS },
+						{ 31.6, 58.0, VALLEY_OF_THE_FOUR_WINDS },
+					},
+					["cost"] = {{ "i", 74651, 5 }},	-- Shrimp Dumplings
+					["isDaily"] = true,
+				}),
+				q(30474, {	-- A Gift For Ella
+					["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+					["qg"] = 64464,	-- Andi
+					["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
+					["isDaily"] = true,
+					["groups"] = {
+						i(79871),	-- Spicy Shrimp Dumplings (QI!)
+					},
+				}),
+				q(30327, {	-- You Have to Burn the Ropes
+					["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+					["isDaily"] = true,
+				}),
+			})),
+			n(QUESTS, sharedData({	-- Tillers Daily Quests: Farmer Fung [TODO]
+				["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+				["qg"] = 57298,	-- Farmer Fung
+				["coord"] = { 48.3, 33.9, VALLEY_OF_THE_FOUR_WINDS },
+				["maxReputation"] = { FACTION_FARMER_FUNG, 6 },	-- Farmer Fung, Best Friend.
+				["isDaily"] = true,
+			}, {
+				q(30517, {	-- Farmer Fung's Vote I: Yak Attack
+					["sourceQuest"] = 31946,	-- Mung-Mung's Vote III: The Great Carrot Caper
+					["qg"] = 58646,	-- Farmer Yoon
+					["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
+					["minReputation"] = { FACTION_THE_TILLERS, REVERED + 4500 },	-- The Tillers
+				}),
+				q(30518, {	-- Farmer Fung's Vote II: On the Loose
+					["sourceQuest"] = 30517,	-- Farmer Fung's Vote I: Yak Attack
+				}),
+				q(31947, {	-- Farmer Fung's Vote III: Crazy For Cabbage
+					["sourceQuest"] = 30518,	-- Farmer Fung's Vote II: On the Loose
+				}),
+				q(30421, {	-- A Dish for Farmer Fung
+					["coords"] = {
+						{ 48.3, 33.9, VALLEY_OF_THE_FOUR_WINDS },
+						{ 48.2, 33.8, VALLEY_OF_THE_FOUR_WINDS },
+					},
+					["cost"] = {{ "i", 74654, 5 }},	-- Wildfowl Roast
+					["isDaily"] = true,
+				}),
+				q(30475, {	-- A Gift For Fung
+					["qg"] = 64464,	-- Andi
+					["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
+					["isDaily"] = true,
+					["groups"] = {
+						i(80232),	-- Bloody Plainshawk Leg (QI!)
+						i(80233),	-- Grilled Plainshawk Leg (QI!)
+					},
+				}),
+				q(30317, {	-- Water, Water Everywhere
+					["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+					["isDaily"] = true,
+				}),
+			})),
+			n(QUESTS, sharedData({	-- Tillers Daily Quests: Fish Fellreed [TODO]
+				["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+				["qg"] = 58705,	-- Fish Fellreed
+				["coord"] = { 52.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },
+				["maxReputation"] = { FACTION_FISH_FELLREED, 6 },	-- Fish Fellreed, Best Friend.
+				["isDaily"] = true,
+			}, {
+				q(30427, {	-- A Dish for Fish
+					["coords"] = {
+						{ 52.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },
+						{ 41.6, 30.0, VALLEY_OF_THE_FOUR_WINDS },
+					},
+					["cost"] = {{ "i", 74655, 5 }},	-- Twin Fish Platter
+					["isDaily"] = true,
+				}),
+				q(30473, {	-- A Gift For Fish
+					["qgs"] = { 64464 },	-- Andi
+					["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
+					["isDaily"] = true,
+					["groups"] = {
+						i(79828),	-- Yak Statuette (QI!)
+					},
+				}),
+				q(30326, {	-- The Kunzen Legend-Chief
+					["isDaily"] = true,
+					["groups"] = {
+						i(79866),	-- Kunzen Legend-Book (QI!)
+					},
+				}),
+			})),
+			n(QUESTS, sharedData({	-- Tillers Daily Quests: Gina Mudclaw [TODO]
+				["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+				["qg"] = 58706,	-- Gina Mudclaw
+				["coord"] = { 53.2, 51.8, VALLEY_OF_THE_FOUR_WINDS },
+				["maxReputation"] = { FACTION_GINA_MUDCLAW, 6 },	-- Gina Mudclaw, Best Friend.
+				["isDaily"] = true,
+			}, {
+				q(31945, {	-- Learn and Grow VI: Gina's Vote
+					["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+				}),
+				q(30390, {	-- A Dish for Gina
+					["cost"] = {{ "i", 74644, 5 }},	-- Swirling Mist Soup
+					["isDaily"] = true,
+				}),
+				q(30479, {	-- A Gift For Gina
+					["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+					["qg"] = 64464,	-- Andi
+					["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
+					["isDaily"] = true,
+					["groups"] = {
+						i(80231),	-- Goldenfire Orchid (QI!)
+					},
+				}),
+				q(30322, {	-- Money Matters
+					["isDaily"] = true,
+					["groups"] = {
+						i(80215),	-- Innkeeper Lei Lan's Payment (QI!)
+						i(80216),	-- Lolo Lio's Payment (QI!)
+						i(80213),	-- Spicemaster Jin Jao's Payment (QI!)
+						i(80214),	-- Trader Jambeezi's Payment (QI!)
+					},
+				}),
+			})),
+			n(QUESTS, sharedData({	-- Tillers Daily Quests: Haohan Mudclaw [TODO]
+				["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+				["qg"] = 57402,	-- Haohan Mudclaw
+				["coord"] = { 53.0, 51.7, VALLEY_OF_THE_FOUR_WINDS },
+				["maxReputation"] = { FACTION_HAOHAN_MUDCLAW, 6 },	-- Haohan Mudclaw, Best Friend.
+				["isDaily"] = true,
+			}, {
+				q(30521, {	-- Haohan's Vote I: Bungalow Break-In
+					["qg"] = 58646,	-- Farmer Yoon
+					["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
+					["minReputation"] = { FACTION_THE_TILLERS, REVERED + 16800 },	-- The Tillers
+				}),
+				q(30414, {	-- A Dish for Haohan
+					["coords"] = {
+						{ 53.0, 51.7, VALLEY_OF_THE_FOUR_WINDS },
+						{ 44.6, 34.0, VALLEY_OF_THE_FOUR_WINDS },
+					},
+					["cost"] = {{ "i", 74642, 5 }},	-- Charbroiled Tiger Steak
+					["isDaily"] = true,
+				}),
+				q(30477, {	-- A Gift For Haohan
+					["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+					["qg"] = 64464,	-- Andi
+					["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
+					["isDaily"] = true,
+					["groups"] = {
+						i(80228),	-- Enormous Cattail Grouper Tooth (QI!)
+					},
+				}),
+				q(30319, {	-- Pest Problems
+					["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+					["isDaily"] = true,
+				}),
+			})),
+			n(QUESTS, sharedData({	-- Tillers Daily Quests: Jogu the Drunk [TODO]
+				["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+				["qg"] = 58710,	-- Jogu the Drunk
+				["coord"] = { 53.6, 52.6, VALLEY_OF_THE_FOUR_WINDS },
+				["maxReputation"] = { FACTION_JOGU_THE_DRUNK, 6 },	-- Jogu the Drunk, Best Friend.
+				["isDaily"] = true,
+			}, {
+				q(31323, {	-- Buy A Fish A Brewery?
+					["minReputation"] = { FACTION_JOGU_THE_DRUNK, 5 },	-- Good Friend
+				}),
+				q(31320, {	-- Buy A Fish A Drink?
+					["minReputation"] = { FACTION_JOGU_THE_DRUNK, 2 },	-- Acquaintance
+				}),
+				q(31322, {	-- Buy A Fish A Keg?
+					["minReputation"] = { FACTION_JOGU_THE_DRUNK, 4 },	-- Friend
+				}),
+				q(31321, {	-- Buy A Fish A Round?
+					["minReputation"] = { FACTION_JOGU_THE_DRUNK, 3 },	-- Buddy
+				}),
+				q(30439, {	-- A Dish for Jogu
+					["cost"] = {{ "i", 74643, 5 }},	-- Sauteed Carrots
+					["isDaily"] = true,
+				}),
+				q(30478, {	-- A Gift For Jogu
+					["qg"] = 64464,	-- Andi
+					["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
+					["isDaily"] = true,
+					["groups"] = {
+						i(80236),	-- Apple-Berry Hooch (QI!)
+						i(80234),	-- Yoon's Apple (QI!)
+						i(80235),	-- Yoon's Craneberry (QI!)
+					},
+				}),
+				q(30321, {	-- Weed War II
+					["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+					["isDaily"] = true,
+				}),
+			})),
+			n(QUESTS, sharedData({	-- Tillers Daily Quests: Old Hillpaw [TODO]
+				["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+				["qg"] = 58707,	-- Old Hillpaw
+				["coord"] = { 53.1, 51.9, VALLEY_OF_THE_FOUR_WINDS },
+				["maxReputation"] = { FACTION_OLD_HILLPAW, 6 },	-- Old Hillpaw, Best Friend.
+				["isDaily"] = true,
+			}, {
+				q(30396, {	-- A Dish for Old Hillpaw
+					["coords"] = {
+						{ 53.1, 51.9, VALLEY_OF_THE_FOUR_WINDS },
+						{ 31.0, 53.0, VALLEY_OF_THE_FOUR_WINDS },
+					},
+					["cost"] = {{ "i", 74649, 5 }},	-- Braised Turtle
+					["isDaily"] = true,
+				}),
+				q(30476, {	-- A Gift For Old Hillpaw
+					["qg"] = 64464,	-- Andi
+					["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
+					["isDaily"] = true,
+					["groups"] = {
+						i(80229),	-- Blue Freshwater Pearl (QI!)
+					},
+				}),
+				q(30318, {	-- Chasing the Chicken
+					["isDaily"] = true,
+					["groups"] = {
+						i(80223),	-- Old Hillpaw's Prize Chicken (QI!)
+					},
+				}),
+			})),
+			n(QUESTS, sharedData({	-- Tillers Daily Quests: Sho [TODO]
+				["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+				["qg"] = 58708,	-- Sho
+				["coord"] = { 53.1, 52.0, VALLEY_OF_THE_FOUR_WINDS },
+				["maxReputation"] = { FACTION_SHO, 6 },	-- Sho, Best Friend.
+				["isDaily"] = true,
+			}, {
+				q(31531, {	-- Mission: Aerial Threat
+					["description"] = "Must be at least 4200/8400 into \"Friend\" with Sho to start this quest.",
+					["minReputation"] = { FACTION_SHO, 4 },	-- Friend
+				}),
+				q(31529, {	-- Mission: Culling The Vermin
+					["minReputation"] = { FACTION_SHO, 3 },	-- Buddy
+				}),
+				q(31532, {	-- Mission: Predator of the Cliffs
+					["description"] = "Must be at least 4200 into \"Good Friend\" with Sho to start this quest.",
+					["minReputation"] = { FACTION_SHO, 5 },	-- Good Friend
+				}),
+				q(30408, {	-- A Dish for Sho
+					["coords"] = {
+						{ 53.1, 52.0, VALLEY_OF_THE_FOUR_WINDS },
+						{ 29.6, 30.6, VALLEY_OF_THE_FOUR_WINDS },
+					},
+					["cost"] = {{ "i", 74645, 5 }},	-- Eternal Blossom Fish
+					["isDaily"] = true,
+				}),
+				q(30472, {	-- A Gift For Sho
+					["qg"] = 64464,	-- Andi
+					["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
+					["isDaily"] = true,
+					["groups"] = {
+						i(79870),	-- Yu-Ping Soup (QI!)
+					},
+				}),
+				q(30325, {	-- Where It Counts
+					["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+					["isDaily"] = true,
+				}),
+			})),
+			n(QUESTS, sharedData({	-- Tillers Daily Quests: Tina Mudclaw [TODO]
+				["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+				["qg"] = 58761,	-- Tina Mudclaw
+				["coord"] = { 53.0, 51.8, VALLEY_OF_THE_FOUR_WINDS },
+				["maxReputation"] = { FACTION_TINA_MUDCLAW, 6 },	-- Tina Mudclaw, Best Friend.
+				["isDaily"] = true,
+			}, {
+				q(31329, {	-- A Beautiful Brooch
+					["provider"] = { "i", 86436 },	-- Beautiful Brooch
+					["minReputation"] = { FACTION_TINA_MUDCLAW, 5 },	-- Good Friend
+					["crs"] = {
+						59120,	-- Kunzen Rockflinger
+						59126,	-- Jokka-Jokka
+						59128,	-- Jim-Jim
+						59130,	-- Teeku
+						59127,	-- Kon-Kon
+						59129,	-- Maaka
+						59125,	-- Kunzen Soupmaster
+						59123,	-- Kunzen Ritualist
+						59134,	-- Yammo
+						59121,	-- Kunzen Hunter
+						59133,	-- Buk-Buk
+						59131,	-- Lor-Lor
+						59135,	-- Bimba
+						59124,	-- Kunzen Collector
+						59132,	-- Rit-Rit
+						59119,	-- Kunzen Ravager
+						59122,	-- Kunzen Herdskeeper
+					},
+				}),
+				q(31328, {	-- An Exquisite Earring
+					["provider"] = { "i", 86435 },	-- Exquisite Earring
+					["minReputation"] = { FACTION_TINA_MUDCLAW, 4 },	-- Friend
+					["crs"] = {
+						59120,	-- Kunzen Rockflinger
+						59126,	-- Jokka-Jokka
+						59128,	-- Jim-Jim
+						59130,	-- Teeku
+						59127,	-- Kon-Kon
+						59129,	-- Maaka
+						59125,	-- Kunzen Soupmaster
+						59123,	-- Kunzen Ritualist
+						59134,	-- Yammo
+						59121,	-- Kunzen Hunter
+						59133,	-- Buk-Buk
+						59131,	-- Lor-Lor
+						59135,	-- Bimba
+						59124,	-- Kunzen Collector
+						59132,	-- Rit-Rit
+						59119,	-- Kunzen Ravager
+						59122,	-- Kunzen Herdskeeper
+					},
+				}),
+				q(31325, {	-- A Very Nice Necklace
+					["provider"] = { "i", 86433 },	-- Nice Necklace
+					["minReputation"] = { FACTION_TINA_MUDCLAW, 2 },	-- Acquaintance
+					["crs"] = {
+						59120,	-- Kunzen Rockflinger
+						59126,	-- Jokka-Jokka
+						59128,	-- Jim-Jim
+						59130,	-- Teeku
+						59127,	-- Kon-Kon
+						59129,	-- Maaka
+						59125,	-- Kunzen Soupmaster
+						59123,	-- Kunzen Ritualist
+						59134,	-- Yammo
+						59121,	-- Kunzen Hunter
+						59133,	-- Buk-Buk
+						59131,	-- Lor-Lor
+						59135,	-- Bimba
+						59124,	-- Kunzen Collector
+						59132,	-- Rit-Rit
+						59119,	-- Kunzen Ravager
+						59122,	-- Kunzen Herdskeeper
+					},
+				}),
+				q(31326, {	-- Tina's Tasteful Tiara
+					["provider"] = { "i", 86434 },	-- Tasteful Tiara
+					["minReputation"] = { FACTION_TINA_MUDCLAW, 3 },	-- Buddy
+					["crs"] = {
+						59120,	-- Kunzen Rockflinger
+						59126,	-- Jokka-Jokka
+						59128,	-- Jim-Jim
+						59130,	-- Teeku
+						59127,	-- Kon-Kon
+						59129,	-- Maaka
+						59125,	-- Kunzen Soupmaster
+						59123,	-- Kunzen Ritualist
+						59134,	-- Yammo
+						59121,	-- Kunzen Hunter
+						59133,	-- Buk-Buk
+						59131,	-- Lor-Lor
+						59135,	-- Bimba
+						59124,	-- Kunzen Collector
+						59132,	-- Rit-Rit
+						59119,	-- Kunzen Ravager
+						59122,	-- Kunzen Herdskeeper
+					},
+				}),
+				q(30433, {	-- A Dish for Tina
+					["coords"] = {
+						{ 53.0, 51.8, VALLEY_OF_THE_FOUR_WINDS },
+						{ 45.0, 33.8, VALLEY_OF_THE_FOUR_WINDS },
+					},
+					["cost"] = {{ "i", 74652, 5 }},	-- Fire Spirit Salmon
+					["isDaily"] = true,
+				}),
+				q(30470, {	-- A Gift For Tina
+					["qg"] = 64464,	-- Andi
+					["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
+					["isDaily"] = true,
+					["groups"] = {
+						i(80134),	-- Uncut Chrysoberyl (QI!)
+					},
+				}),
+				q(30323, {	-- They Don't Even Wear Them
+					["isDaily"] = true,
+					["groups"] = {
+						i(80139),	-- Burglarized Bracelet (QI!)
+						i(80137),	-- Ransacked Ring (QI!)
+						i(80138),	-- Stolen Circlet (QI!)
 					},
 				}),
 			})),
@@ -1119,6 +1617,282 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
 				}),
 			})),
+			n(QUESTS, sharedData({	-- Tillers Repeatable Quests: Ella
+				["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+				["qg"] = 58647,	-- Ella
+				["coords"] = {
+					{ 53.0, 51.6, VALLEY_OF_THE_FOUR_WINDS },
+					{ 31.6, 58.0, VALLEY_OF_THE_FOUR_WINDS },
+				},
+				["maxReputation"] = { FACTION_ELLA, 6 },	-- Ella, Best Friend.
+				["repeatable"] = true,
+			}, {
+				q(30382, {	-- A Blue Feather for Ella
+					["cost"] = {{ "i", 79265, 1 }},	-- Blue Feather
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30381, {	-- A Jade Cat for Ella
+					["cost"] = {{ "i", 79266, 1 }},	-- Jade Cat
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(900),
+				}),
+				q(30189, {	-- A Lovely Apple for Ella
+					["cost"] = {{ "i", 79267, 1 }},	-- Lovely Apple
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+					["groups"] = {
+						i(79320),	-- Half a Lovely Apple
+					},
+				}),
+				q(30383, {	-- A Marsh Lily for Ella
+					["cost"] = {{ "i", 79268, 1 }},	-- Marsh Lily
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30160, {	-- A Ruby Shard for Ella
+					["cost"] = {{ "i", 79264, 1 }},	-- Ruby Shard
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+			})),
+			n(QUESTS, sharedData({	-- Tillers Repeatable Quests: Farmer Fung
+				["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+				["qg"] = 57298,	-- Farmer Fung
+				["coords"] = {
+					{ 48.3, 33.9, VALLEY_OF_THE_FOUR_WINDS },
+					{ 48.2, 33.8, VALLEY_OF_THE_FOUR_WINDS },
+				},
+				["maxReputation"] = { FACTION_FARMER_FUNG, 6 },	-- Farmer Fung, Best Friend.
+				["repeatable"] = true,
+			}, {
+				q(30419, {	-- A Blue Feather for Farmer Fung
+					["cost"] = {{ "i", 79265, 1 }},	-- Blue Feather
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30418, {	-- A Jade Cat for Farmer Fung
+					["cost"] = {{ "i", 79266, 1 }},	-- Jade Cat
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30417, {	-- A Lovely Apple for Farmer Fung
+					["cost"] = {{ "i", 79267, 1 }},	-- Lovely Apple
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30420, {	-- A Marsh Lily for Farmer Fung
+					["cost"] = {{ "i", 79268, 1 }},	-- Marsh Lily
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(900),
+				}),
+				q(30416, {	-- A Ruby Shard for Farmer Fung
+					["cost"] = {{ "i", 79264, 1 }},	-- Ruby Shard
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+			})),
+			n(QUESTS, sharedData({	-- Tillers Repeatable Quests: Fish Fellreed
+				["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+				["qg"] = 58705,	-- Fish Fellreed
+				["coords"] = {
+					{ 52.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },
+					{ 41.6, 30.0, VALLEY_OF_THE_FOUR_WINDS },
+				},
+				["maxReputation"] = { FACTION_FISH_FELLREED, 6 },	-- Fish Fellreed, Best Friend.
+				["repeatable"] = true,
+			}, {
+				q(30425, {	-- A Blue Feather for Fish
+					["cost"] = {{ "i", 79265, 1 }},	-- Blue Feather
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30424, {	-- A Jade Cat for Fish
+					["cost"] = {{ "i", 79266, 1 }},	-- Jade Cat
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(900),
+				}),
+				q(30423, {	-- A Lovely Apple for Fish
+					["cost"] = {{ "i", 79267, 1 }},	-- Lovely Apple
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30426, {	-- A Marsh Lily for Fish
+					["cost"] = {{ "i", 79268, 1 }},	-- Marsh Lily
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30422, {	-- A Ruby Shard for Fish
+					["cost"] = {{ "i", 79264, 1 }},	-- Ruby Shard
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+			})),
+			n(QUESTS, sharedData({	-- Tillers Repeatable Quests: Gina Mudclaw
+				["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+				["qg"] = 58706,	-- Gina Mudclaw
+				["coord"] = { 53.2, 51.8, VALLEY_OF_THE_FOUR_WINDS },
+				["maxReputation"] = { FACTION_GINA_MUDCLAW, 6 },	-- Gina Mudclaw, Best Friend.
+				["repeatable"] = true,
+			}, {
+				q(30388, {	-- A Blue Feather for Gina
+					["cost"] = {{ "i", 79265, 1 }},	-- Blue Feather
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30387, {	-- A Jade Cat for Gina
+					["cost"] = {{ "i", 79266, 1 }},	-- Jade Cat
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30380, {	-- A Lovely Apple for Gina
+					["cost"] = {{ "i", 79267, 1 }},	-- Lovely Apple
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30389, {	-- A Marsh Lily for Gina
+					["cost"] = {{ "i", 79268, 1 }},	-- Marsh Lily
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(900),
+				}),
+				q(30379, {	-- A Ruby Shard for Gina
+					["cost"] = {{ "i", 79264, 1 }},	-- Ruby Shard
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+			})),
+			n(QUESTS, sharedData({	-- Tillers Repeatable Quests: Haohan Mudclaw
+				["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+				["qg"] = 57402,	-- Haohan Mudclaw
+				["coords"] = {
+					{ 53.0, 51.7, VALLEY_OF_THE_FOUR_WINDS },
+					{ 44.6, 34.0, VALLEY_OF_THE_FOUR_WINDS },
+				},
+				["maxReputation"] = { FACTION_HAOHAN_MUDCLAW, 6 },	-- Haohan Mudclaw, Best Friend.
+				["repeatable"] = true,
+			}, {
+				q(30412, {	-- A Blue Feather for Haohan
+					["cost"] = {{ "i", 79265, 1 }},	-- Blue Feather
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30411, {	-- A Jade Cat for Haohan
+					["cost"] = {{ "i", 79266, 1 }},	-- Jade Cat
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30410, {	-- A Lovely Apple for Haohan
+					["cost"] = {{ "i", 79267, 1 }},	-- Lovely Apple
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30413, {	-- A Marsh Lily for Haohan
+					["cost"] = {{ "i", 79268, 1 }},	-- Marsh Lily
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30409, {	-- A Ruby Shard for Haohan
+					["cost"] = {{ "i", 79264, 1 }},	-- Ruby Shard
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(900),
+				}),
+			})),
+			n(QUESTS, sharedData({	-- Tillers Repeatable Quests: Jogu the Drunk
+				["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+				["qg"] = 58710,	-- Jogu the Drunk
+				["coord"] = { 53.6, 52.6, VALLEY_OF_THE_FOUR_WINDS },
+				["maxReputation"] = { FACTION_JOGU_THE_DRUNK, 6 },	-- Jogu the Drunk, Best Friend.
+				["repeatable"] = true,
+			}, {
+				q(30437, {	-- A Blue Feather for Jogu
+					["cost"] = {{ "i", 79265, 1 }},	-- Blue Feather
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30436, {	-- A Jade Cat for Jogu
+					["cost"] = {{ "i", 79266, 1 }},	-- Jade Cat
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30435, {	-- A Lovely Apple for Jogu
+					["cost"] = {{ "i", 79267, 1 }},	-- Lovely Apple
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(900),
+				}),
+				q(30438, {	-- A Marsh Lily for Jogu
+					["cost"] = {{ "i", 79268, 1 }},	-- Marsh Lily
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30434, {	-- A Ruby Shard for Jogu
+					["cost"] = {{ "i", 79264, 1 }},	-- Ruby Shard
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+			})),
+			n(QUESTS, sharedData({	-- Tillers Repeatable Quests: Old Hillpaw
+				["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+				["qg"] = 58707,	-- Old Hillpaw
+				["coords"] = {
+					{ 53.1, 51.9, VALLEY_OF_THE_FOUR_WINDS },
+					{ 31.0, 53.0, VALLEY_OF_THE_FOUR_WINDS },
+				},
+				["maxReputation"] = { FACTION_OLD_HILLPAW, 6 },	-- Old Hillpaw, Best Friend.
+				["repeatable"] = true,
+			}, {
+				q(30394, {	-- A Blue Feather for Old Hillpaw
+					["cost"] = {{ "i", 79265, 1 }},	-- Blue Feather
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(900),
+				}),
+				q(30393, {	-- A Jade Cat for Old Hillpaw
+					["cost"] = {{ "i", 79266, 1 }},	-- Jade Cat
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30392, {	-- A Lovely Apple for Old Hillpaw
+					["cost"] = {{ "i", 79267, 1 }},	-- Lovely Apple
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30395, {	-- A Marsh Lily for Old Hillpaw
+					["cost"] = {{ "i", 79268, 1 }},	-- Marsh Lily
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30391, {	-- A Ruby Shard for Old Hillpaw
+					["cost"] = {{ "i", 79264, 1 }},	-- Ruby Shard
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+			})),
+			n(QUESTS, sharedData({	-- Tillers Repeatable Quests: Sho
+				["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+				["qg"] = 58708,	-- Sho
+				["coords"] = {
+					{ 53.1, 52.0, VALLEY_OF_THE_FOUR_WINDS },
+					{ 29.6, 30.6, VALLEY_OF_THE_FOUR_WINDS },
+				},
+				["maxReputation"] = { FACTION_SHO, 6 },	-- Sho, Best Friend.
+				["repeatable"] = true,
+			}, {
+				q(30406, {	-- A Blue Feather for Sho
+					["cost"] = {{ "i", 79265, 1 }},	-- Blue Feather
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30405, {	-- A Jade Cat for Sho
+					["cost"] = {{ "i", 79266, 1 }},	-- Jade Cat
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30404, {	-- A Lovely Apple for Sho
+					["cost"] = {{ "i", 79267, 1 }},	-- Lovely Apple
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(900),
+				}),
+				q(30407, {	-- A Marsh Lily for Sho
+					["cost"] = {{ "i", 79268, 1 }},	-- Marsh Lily
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30403, {	-- A Ruby Shard for Sho
+					["cost"] = {{ "i", 79264, 1 }},	-- Ruby Shard
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+			})),
+			n(QUESTS, sharedData({	-- Tillers Repeatable Quests: Tina Mudclaw
+				["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+				["qg"] = 58761,	-- Tina Mudclaw
+				["coords"] = {
+					{ 53.0, 51.8, VALLEY_OF_THE_FOUR_WINDS },
+					{ 45.0, 33.8, VALLEY_OF_THE_FOUR_WINDS },
+				},
+				["maxReputation"] = { FACTION_TINA_MUDCLAW, 6 },	-- Tina Mudclaw, Best Friend.
+				["repeatable"] = true,
+			}, {
+				q(30431, {	-- A Blue Feather for Tina
+					["cost"] = {{ "i", 79265, 1 }},	-- Blue Feather
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30430, {	-- A Jade Cat for Tina
+					["cost"] = {{ "i", 79266, 1 }},	-- Jade Cat
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30429, {	-- A Lovely Apple for Tina
+					["cost"] = {{ "i", 79267, 1 }},	-- Lovely Apple
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30432, {	-- A Marsh Lily for Tina
+					["cost"] = {{ "i", 79268, 1 }},	-- Marsh Lily
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(540),
+				}),
+				q(30428, {	-- A Ruby Shard for Tina
+					["cost"] = {{ "i", 79264, 1 }},	-- Ruby Shard
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost(900),
+				}),
+			})),
 			n(TREASURES, {
 				o(210565, {	-- Dark Soil
 					["description"] = "Can be found all around Pandaria.",
@@ -1270,593 +2044,6 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							i(95445),	-- Bag of Songbell Seeds
 							i(95454),	-- Bag of Windshear Cactus Seeds
 						},
-					}),
-				}),
-			}),
-			faction(FACTION_ELLA, {	-- Ella
-				["cr"] = 58647,	-- Ella
-				["coord"] = { 53.0, 51.6, VALLEY_OF_THE_FOUR_WINDS },
-				["groups"] = sharedData({
-					["qg"] = 58647,	-- Ella
-					["maxReputation"] = { FACTION_ELLA, 6 },
-				},{
-					q(31534, {	-- The Beginner's Brew
-						["minReputation"] = { FACTION_ELLA, 3 },	-- Buddy
-						["groups"] = {
-							i(87556),	-- Black Cherries (QI!)
-							i(87555),	-- Fuzzy Peach (QI!)
-							i(87553),	-- Red Radish (QI!)
-							i(87554),	-- Sweet Lakemelon (QI!)
-						},
-					}),
-					q(31537, {	-- Ella's Taste Test
-						["minReputation"] = { FACTION_ELLA, 4 },	-- Friend
-						["groups"] = {
-							i(87558),	-- Ella's Brew (QI!)
-						},
-					}),
-					q(31538, {	-- A Worthy Brew
-						["minReputation"] = { FACTION_ELLA, 5 },	-- Good Friend
-						["groups"] = {
-							i(87763),	-- Ella's Brew (QI!)
-						},
-					}),
-					q(30386, {	-- A Dish for Ella
-						["cost"] = {{"i",74651,5}},	-- Shrimp Dumplings
-						["isDaily"] = true,
-					}),
-					q(30474, {	-- A Gift For Ella
-						["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-						["qg"] = 64464,	-- Andi
-						["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-						["isDaily"] = true,
-						["groups"] = {
-							i(79871),	-- Spicy Shrimp Dumplings (QI!)
-						},
-					}),
-					q(30327, {	-- You Have to Burn the Ropes
-						["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-						["isDaily"] = true,
-					}),
-					q(30382, {	-- A Blue Feather for Ella
-						["cost"] = {{"i",79265,1}},	-- Blue Feather
-						["repeatable"] = true,
-					}),
-					q(30381, {	-- A Jade Cat for Ella
-						["cost"] = {{"i",79266,1}},	-- Jade Cat
-						["repeatable"] = true,
-					}),
-					q(30189, {	-- A Lovely Apple for Ella
-						["cost"] = {{"i",79267,1}},	-- Lovely Apple
-						["repeatable"] = true,
-						["groups"] = {
-							i(79320),	-- Half a Lovely Apple
-						},
-					}),
-					q(30383, {	-- A Marsh Lily for Ella
-						["cost"] = {{"i",79268,1}},	-- Marsh Lily
-						["repeatable"] = true,
-					}),
-					q(30160, {	-- A Ruby Shard for Ella
-						["cost"] = {{"i",79264,1}},	-- Ruby Shard
-						["repeatable"] = true,
-					}),
-				}),
-			}),
-			faction(FACTION_FARMER_FUNG, {	-- Farmer Fung
-				["cr"] = 57298,	-- Farmer Fung
-				["coord"] = { 48.3, 33.9, VALLEY_OF_THE_FOUR_WINDS },
-				["groups"] = sharedData({
-					["qg"] = 57298,	-- Farmer Fung
-					["maxReputation"] = { FACTION_FARMER_FUNG, 6 },
-				},{
-					q(30517, {	-- Farmer Fung's Vote I: Yak Attack
-						["sourceQuest"] = 31946,	-- Mung-Mung's Vote III: The Great Carrot Caper
-						["qg"] = 58646,	-- Farmer Yoon
-						["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-						["minReputation"] = { FACTION_THE_TILLERS, REVERED + 4500 },	-- The Tillers
-					}),
-					q(30518, {	-- Farmer Fung's Vote II: On the Loose
-						["sourceQuest"] = 30517,	-- Farmer Fung's Vote I: Yak Attack
-					}),
-					q(31947, {	-- Farmer Fung's Vote III: Crazy For Cabbage
-						["sourceQuest"] = 30518,	-- Farmer Fung's Vote II: On the Loose
-					}),
-					q(30421, {	-- A Dish for Farmer Fung
-						["cost"] = {{"i",74654,5}},	-- Wildfowl Roast
-						["isDaily"] = true,
-					}),
-					q(30475, {	-- A Gift For Fung
-						["qg"] = 64464,	-- Andi
-						["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-						["isDaily"] = true,
-						["groups"] = {
-							i(80232),	-- Bloody Plainshawk Leg (QI!)
-							i(80233),	-- Grilled Plainshawk Leg (QI!)
-						},
-					}),
-					q(30317, {	-- Water, Water Everywhere
-						["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-						["isDaily"] = true,
-					}),
-					q(30419, {	-- A Blue Feather for Farmer Fung
-						["cost"] = {{"i",79265,1}},	-- Blue Feather
-						["repeatable"] = true,
-					}),
-					q(30418, {	-- A Jade Cat for Farmer Fung
-						["cost"] = {{"i",79266,1}},	-- Jade Cat
-						["repeatable"] = true,
-					}),
-					q(30417, {	-- A Lovely Apple for Farmer Fung
-						["cost"] = {{"i",79267,1}},	-- Lovely Apple
-						["repeatable"] = true,
-					}),
-					q(30420, {	-- A Marsh Lily for Farmer Fung
-						["cost"] = {{"i",79268,1}},	-- Marsh Lily
-						["repeatable"] = true,
-					}),
-					q(30416, {	-- A Ruby Shard for Farmer Fung
-						["cost"] = {{"i",79264,1}},	-- Ruby Shard
-						["repeatable"] = true,
-					}),
-				}),
-			}),
-			faction(FACTION_FISH_FELLREED, {	-- Fish Fellreed
-				["cr"] = 58705,	-- Fish Fellreed
-				["coord"] = { 52.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },
-				["groups"] = sharedData({
-					["qgs"] = {
-						58705,	-- Fish Fellreed
-						59517,	-- Fish Fellreed
-					},
-					["maxReputation"] = { FACTION_FISH_FELLREED, 6 },
-				},{
-					q(30427, {	-- A Dish for Fish
-						["cost"] = {{"i",74655,5}},	-- Twin Fish Platter
-						["isDaily"] = true,
-					}),
-					q(30473, {	-- A Gift For Fish
-						["qgs"] = { 64464 },	-- Andi
-						["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-						["isDaily"] = true,
-						["groups"] = {
-							i(79828),	-- Yak Statuette (QI!)
-						},
-					}),
-					q(30326, {	-- The Kunzen Legend-Chief
-						["isDaily"] = true,
-						["groups"] = {
-							i(79866),	-- Kunzen Legend-Book (QI!)
-						},
-					}),
-					q(30425, {	-- A Blue Feather for Fish
-						["cost"] = {{"i",79265,1}},	-- Blue Feather
-						["repeatable"] = true,
-					}),
-					q(30424, {	-- A Jade Cat for Fish
-						["cost"] = {{"i",79266,1}},	-- Jade Cat
-						["repeatable"] = true,
-					}),
-					q(30423, {	-- A Lovely Apple for Fish
-						["cost"] = {{"i",79267,1}},	-- Lovely Apple
-						["repeatable"] = true,
-					}),
-					q(30426, {	-- A Marsh Lily for Fish
-						["cost"] = {{"i",79268,1}},	-- Marsh Lily
-						["repeatable"] = true,
-					}),
-					q(30422, {	-- A Ruby Shard for Fish
-						["cost"] = {{"i",79264,1}},	-- Ruby Shard
-						["repeatable"] = true,
-					}),
-				}),
-			}),
-			faction(FACTION_GINA_MUDCLAW, {	-- Gina Mudclaw
-				["cr"] = 58706,	-- Gina Mudclaw
-				["coord"] = { 53.2, 51.8, VALLEY_OF_THE_FOUR_WINDS },
-				["groups"] = sharedData({
-					["qg"] = 58706,	-- Gina Mudclaw
-					["maxReputation"] = { FACTION_GINA_MUDCLAW, 6 },
-				},{
-					q(31945, {	-- Learn and Grow VI: Gina's Vote
-						["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-					}),
-					q(30390, {	-- A Dish for Gina
-						["cost"] = {{"i",74644,5}},	-- Swirling Mist Soup
-						["isDaily"] = true,
-					}),
-					q(30479, {	-- A Gift For Gina
-						["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-						["qg"] = 64464,	-- Andi
-						["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-						["isDaily"] = true,
-						["groups"] = {
-							i(80231),	-- Goldenfire Orchid (QI!)
-						},
-					}),
-					q(30322, {	-- Money Matters
-						["isDaily"] = true,
-						["groups"] = {
-							i(80215),	-- Innkeeper Lei Lan's Payment (QI!)
-							i(80216),	-- Lolo Lio's Payment (QI!)
-							i(80213),	-- Spicemaster Jin Jao's Payment (QI!)
-							i(80214),	-- Trader Jambeezi's Payment (QI!)
-						},
-					}),
-					q(30388, {	-- A Blue Feather for Gina
-						["cost"] = {{"i",79265,1}},	-- Blue Feather
-						["repeatable"] = true,
-					}),
-					q(30387, {	-- A Jade Cat for Gina
-						["cost"] = {{"i",79266,1}},	-- Jade Cat
-						["repeatable"] = true,
-					}),
-					q(30380, {	-- A Lovely Apple for Gina
-						["cost"] = {{"i",79267,1}},	-- Lovely Apple
-						["repeatable"] = true,
-					}),
-					q(30389, {	-- A Marsh Lily for Gina
-						["cost"] = {{"i",79268,1}},	-- Marsh Lily
-						["repeatable"] = true,
-					}),
-					q(30379, {	-- A Ruby Shard for Gina
-						["cost"] = {{"i",79264,1}},	-- Ruby Shard
-						["repeatable"] = true,
-					}),
-				}),
-			}),
-			faction(FACTION_HAOHAN_MUDCLAW, {	-- Haohan Mudclaw
-				["cr"] = 57402,	-- Haohan Mudclaw
-				["coord"] = { 53.0, 51.7, VALLEY_OF_THE_FOUR_WINDS },
-				["groups"] = sharedData({
-					["qg"] = 57402,	-- Haohan Mudclaw
-					["maxReputation"] = { FACTION_HAOHAN_MUDCLAW, 6 },
-				},{
-					q(30521, {	-- Haohan's Vote I: Bungalow Break-In
-						["qg"] = 58646,	-- Farmer Yoon
-						["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-						["minReputation"] = { FACTION_THE_TILLERS, REVERED + 16800 },	-- The Tillers
-					}),
-					q(30414, {	-- A Dish for Haohan
-						["cost"] = {{"i",74642,5}},	-- Charbroiled Tiger Steak
-						["isDaily"] = true,
-					}),
-					q(30477, {	-- A Gift For Haohan
-						["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-						["qg"] = 64464,	-- Andi
-						["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-						["isDaily"] = true,
-						["groups"] = {
-							i(80228),	-- Enormous Cattail Grouper Tooth (QI!)
-						},
-					}),
-					q(30319, {	-- Pest Problems
-						["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-						["isDaily"] = true,
-					}),
-					q(30412, {	-- A Blue Feather for Haohan
-						["cost"] = {{"i",79265,1}},	-- Blue Feather
-						["repeatable"] = true,
-					}),
-					q(30411, {	-- A Jade Cat for Haohan
-						["cost"] = {{"i",79266,1}},	-- Jade Cat
-						["repeatable"] = true,
-					}),
-					q(30410, {	-- A Lovely Apple for Haohan
-						["cost"] = {{"i",79267,1}},	-- Lovely Apple
-						["repeatable"] = true,
-					}),
-					q(30413, {	-- A Marsh Lily for Haohan
-						["cost"] = {{"i",79268,1}},	-- Marsh Lily
-						["repeatable"] = true,
-					}),
-					q(30409, {	-- A Ruby Shard for Haohan
-						["cost"] = {{"i",79264,1}},	-- Ruby Shard
-						["repeatable"] = true,
-					}),
-				}),
-			}),
-			faction(FACTION_JOGU_THE_DRUNK, {	-- Jogu the Drunk
-				["cr"] = 58710,	-- Jogu the Drunk
-				["coord"] = { 53.6, 52.6, VALLEY_OF_THE_FOUR_WINDS },
-				["groups"] = sharedData({
-					["qg"] = 58710,	-- Jogu the Drunk
-					["maxReputation"] = { FACTION_JOGU_THE_DRUNK, 6 },
-				},{
-					q(31323, {	-- Buy A Fish A Brewery?
-						["minReputation"] = { FACTION_JOGU_THE_DRUNK, 5 },	-- Good Friend
-					}),
-					q(31320, {	-- Buy A Fish A Drink?
-						["minReputation"] = { FACTION_JOGU_THE_DRUNK, 2 },	-- Acquaintance
-					}),
-					q(31322, {	-- Buy A Fish A Keg?
-						["minReputation"] = { FACTION_JOGU_THE_DRUNK, 4 },	-- Friend
-					}),
-					q(31321, {	-- Buy A Fish A Round?
-						["minReputation"] = { FACTION_JOGU_THE_DRUNK, 3 },	-- Buddy
-					}),
-					q(30439, {	-- A Dish for Jogu
-						["cost"] = {{"i",74643,5}},	-- Sauteed Carrots
-						["isDaily"] = true,
-					}),
-					q(30478, {	-- A Gift For Jogu
-						["qg"] = 64464,	-- Andi
-						["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-						["isDaily"] = true,
-						["groups"] = {
-							i(80236),	-- Apple-Berry Hooch (QI!)
-							i(80234),	-- Yoon's Apple (QI!)
-							i(80235),	-- Yoon's Craneberry (QI!)
-						},
-					}),
-					q(30321, {	-- Weed War II
-						["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-						["isDaily"] = true,
-					}),
-					q(30437, {	-- A Blue Feather for Jogu
-						["cost"] = {{"i",79265,1}},	-- Blue Feather
-						["repeatable"] = true,
-					}),
-					q(30436, {	-- A Jade Cat for Jogu
-						["cost"] = {{"i",79266,1}},	-- Jade Cat
-						["repeatable"] = true,
-					}),
-					q(30435, {	-- A Lovely Apple for Jogu
-						["cost"] = {{"i",79267,1}},	-- Lovely Apple
-						["repeatable"] = true,
-					}),
-					q(30438, {	-- A Marsh Lily for Jogu
-						["cost"] = {{"i",79268,1}},	-- Marsh Lily
-						["repeatable"] = true,
-					}),
-					q(30434, {	-- A Ruby Shard for Jogu
-						["cost"] = {{"i",79264,1}},	-- Ruby Shard
-						["repeatable"] = true,
-					}),
-				}),
-			}),
-			faction(FACTION_OLD_HILLPAW, {	-- Old Hillpaw
-				["cr"] = 58707,	-- Old Hillpaw
-				["coord"] = { 53.1, 51.9, VALLEY_OF_THE_FOUR_WINDS },
-				["groups"] = sharedData({
-					["qg"] = 58707,	-- Old Hillpaw
-					["maxReputation"] = { FACTION_OLD_HILLPAW, 6 },
-				},{
-					q(30396, {	-- A Dish for Old Hillpaw
-						["cost"] = {{"i",74649,5}},	-- Braised Turtle
-						["isDaily"] = true,
-					}),
-					q(30476, {	-- A Gift For Old Hillpaw
-						["qg"] = 64464,	-- Andi
-						["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-						["isDaily"] = true,
-						["groups"] = {
-							i(80229),	-- Blue Freshwater Pearl (QI!)
-						},
-					}),
-					q(30318, {	-- Chasing the Chicken
-						["isDaily"] = true,
-						["groups"] = {
-							i(80223),	-- Old Hillpaw's Prize Chicken (QI!)
-						},
-					}),
-					q(30394, {	-- A Blue Feather for Old Hillpaw
-						["cost"] = {{"i",79265,1}},	-- Blue Feather
-						["repeatable"] = true,
-					}),
-					q(30393, {	-- A Jade Cat for Old Hillpaw
-						["cost"] = {{"i",79266,1}},	-- Jade Cat
-						["repeatable"] = true,
-					}),
-					q(30392, {	-- A Lovely Apple for Old Hillpaw
-						["cost"] = {{"i",79267,1}},	-- Lovely Apple
-						["repeatable"] = true,
-					}),
-					q(30395, {	-- A Marsh Lily for Old Hillpaw
-						["cost"] = {{"i",79268,1}},	-- Marsh Lily
-						["repeatable"] = true,
-					}),
-					q(30391, {	-- A Ruby Shard for Old Hillpaw
-						["cost"] = {{"i",79264,1}},	-- Ruby Shard
-						["repeatable"] = true,
-					}),
-				}),
-			}),
-			faction(FACTION_SHO, {	-- Sho
-				["cr"] = 58708,	-- Sho
-				["coord"] = { 53.1, 52.0, VALLEY_OF_THE_FOUR_WINDS },
-				["groups"] = sharedData({
-					["qg"] = 58708,	-- Sho
-					["maxReputation"] = { FACTION_SHO, 6 },
-				},{
-					q(31531, {	-- Mission: Aerial Threat
-						["description"] = "Must be at least 4200/8400 into \"Friend\" with Sho to start this quest.",
-						["minReputation"] = { FACTION_SHO, 4 },	-- Friend
-					}),
-					q(31529, {	-- Mission: Culling The Vermin
-						["description"] = "Must be at least \"Buddy\" with Sho to start this quest.",
-						["minReputation"] = { FACTION_SHO, 3 },	-- Buddy
-					}),
-					q(31532, {	-- Mission: Predator of the Cliffs
-						["description"] = "Must be at least 4200 into \"Good Friend\" with Sho to start this quest.",
-						["minReputation"] = { FACTION_SHO, 5 },	-- Good Friend
-					}),
-					q(30408, {	-- A Dish for Sho
-						["cost"] = {{"i",74645,5}},	-- Eternal Blossom Fish
-						["isDaily"] = true,
-					}),
-					q(30472, {	-- A Gift For Sho
-						["qg"] = 64464,	-- Andi
-						["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-						["isDaily"] = true,
-						["groups"] = {
-							i(79870),	-- Yu-Ping Soup (QI!)
-						},
-					}),
-					q(30325, {	-- Where It Counts
-						["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-						["isDaily"] = true,
-					}),
-					q(30406, {	-- A Blue Feather for Sho
-						["cost"] = {{"i",79265,1}},	-- Blue Feather
-						["repeatable"] = true,
-					}),
-					q(30405, {	-- A Jade Cat for Sho
-						["cost"] = {{"i",79266,1}},	-- Jade Cat
-						["repeatable"] = true,
-					}),
-					q(30404, {	-- A Lovely Apple for Sho
-						["cost"] = {{"i",79267,1}},	-- Lovely Apple
-						["repeatable"] = true,
-					}),
-					q(30407, {	-- A Marsh Lily for Sho
-						["cost"] = {{"i",79268,1}},	-- Marsh Lily
-						["repeatable"] = true,
-					}),
-					q(30403, {	-- A Ruby Shard for Sho
-						["cost"] = {{"i",79264,1}},	-- Ruby Shard
-						["repeatable"] = true,
-					}),
-				}),
-			}),
-			faction(FACTION_TINA_MUDCLAW, {	-- Tina Mudclaw
-				["cr"] = 58761,	-- Tina Mudclaw
-				["coord"] = { 53.0, 51.8, VALLEY_OF_THE_FOUR_WINDS },
-				["groups"] = sharedData({
-					["qg"] = 58761,	-- Tina Mudclaw
-					["maxReputation"] = { FACTION_TINA_MUDCLAW, 6 },
-				},{
-					q(31329, {	-- A Beautiful Brooch
-						["provider"] = { "i", 86436 },	-- Beautiful Brooch
-						["minReputation"] = { FACTION_TINA_MUDCLAW, 5 },	-- Good Friend
-						["crs"] = {
-							59120,	-- Kunzen Rockflinger
-							59126,	-- Jokka-Jokka
-							59128,	-- Jim-Jim
-							59130,	-- Teeku
-							59127,	-- Kon-Kon
-							59129,	-- Maaka
-							59125,	-- Kunzen Soupmaster
-							59123,	-- Kunzen Ritualist
-							59134,	-- Yammo
-							59121,	-- Kunzen Hunter
-							59133,	-- Buk-Buk
-							59131,	-- Lor-Lor
-							59135,	-- Bimba
-							59124,	-- Kunzen Collector
-							59132,	-- Rit-Rit
-							59119,	-- Kunzen Ravager
-							59122,	-- Kunzen Herdskeeper
-						},
-					}),
-					q(31328, {	-- An Exquisite Earring
-						["provider"] = { "i", 86435 },	-- Exquisite Earring
-						["minReputation"] = { FACTION_TINA_MUDCLAW, 4 },	-- Friend
-						["crs"] = {
-							59120,	-- Kunzen Rockflinger
-							59126,	-- Jokka-Jokka
-							59128,	-- Jim-Jim
-							59130,	-- Teeku
-							59127,	-- Kon-Kon
-							59129,	-- Maaka
-							59125,	-- Kunzen Soupmaster
-							59123,	-- Kunzen Ritualist
-							59134,	-- Yammo
-							59121,	-- Kunzen Hunter
-							59133,	-- Buk-Buk
-							59131,	-- Lor-Lor
-							59135,	-- Bimba
-							59124,	-- Kunzen Collector
-							59132,	-- Rit-Rit
-							59119,	-- Kunzen Ravager
-							59122,	-- Kunzen Herdskeeper
-						},
-					}),
-					q(31325, {	-- A Very Nice Necklace
-						["provider"] = { "i", 86433 },	-- Nice Necklace
-						["minReputation"] = { FACTION_TINA_MUDCLAW, 2 },	-- Acquaintance
-						["crs"] = {
-							59120,	-- Kunzen Rockflinger
-							59126,	-- Jokka-Jokka
-							59128,	-- Jim-Jim
-							59130,	-- Teeku
-							59127,	-- Kon-Kon
-							59129,	-- Maaka
-							59125,	-- Kunzen Soupmaster
-							59123,	-- Kunzen Ritualist
-							59134,	-- Yammo
-							59121,	-- Kunzen Hunter
-							59133,	-- Buk-Buk
-							59131,	-- Lor-Lor
-							59135,	-- Bimba
-							59124,	-- Kunzen Collector
-							59132,	-- Rit-Rit
-							59119,	-- Kunzen Ravager
-							59122,	-- Kunzen Herdskeeper
-						},
-					}),
-					q(31326, {	-- Tina's Tasteful Tiara
-						["provider"] = { "i", 86434 },	-- Tasteful Tiara
-						["minReputation"] = { FACTION_TINA_MUDCLAW, 3 },	-- Buddy
-						["crs"] = {
-							59120,	-- Kunzen Rockflinger
-							59126,	-- Jokka-Jokka
-							59128,	-- Jim-Jim
-							59130,	-- Teeku
-							59127,	-- Kon-Kon
-							59129,	-- Maaka
-							59125,	-- Kunzen Soupmaster
-							59123,	-- Kunzen Ritualist
-							59134,	-- Yammo
-							59121,	-- Kunzen Hunter
-							59133,	-- Buk-Buk
-							59131,	-- Lor-Lor
-							59135,	-- Bimba
-							59124,	-- Kunzen Collector
-							59132,	-- Rit-Rit
-							59119,	-- Kunzen Ravager
-							59122,	-- Kunzen Herdskeeper
-						},
-					}),
-					q(30433, {	-- A Dish for Tina
-						["cost"] = {{"i",74652,5}},	-- Fire Spirit Salmon
-						["isDaily"] = true,
-					}),
-					q(30470, {	-- A Gift For Tina
-						["qg"] = 64464,	-- Andi
-						["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-						["isDaily"] = true,
-						["groups"] = {
-							i(80134),	-- Uncut Chrysoberyl (QI!)
-						},
-					}),
-					q(30323, {	-- They Don't Even Wear Them
-						["isDaily"] = true,
-						["groups"] = {
-							i(80139),	-- Burglarized Bracelet (QI!)
-							i(80137),	-- Ransacked Ring (QI!)
-							i(80138),	-- Stolen Circlet (QI!)
-						},
-					}),
-					q(30431, {	-- A Blue Feather for Tina
-						["cost"] = {{"i",79265,1}},	-- Blue Feather
-						["repeatable"] = true,
-					}),
-					q(30430, {	-- A Jade Cat for Tina
-						["cost"] = {{"i",79266,1}},	-- Jade Cat
-						["repeatable"] = true,
-					}),
-					q(30429, {	-- A Lovely Apple for Tina
-						["cost"] = {{"i",79267,1}},	-- Lovely Apple
-						["repeatable"] = true,
-					}),
-					q(30432, {	-- A Marsh Lily for Tina
-						["cost"] = {{"i",79268,1}},	-- Marsh Lily
-						["repeatable"] = true,
-					}),
-					q(30428, {	-- A Ruby Shard for Tina
-						["cost"] = {{"i",79264,1}},	-- Ruby Shard
-						["repeatable"] = true,
 					}),
 				}),
 			}),
