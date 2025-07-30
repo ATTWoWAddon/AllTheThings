@@ -3032,6 +3032,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 72.2, 31.1, KRASARANG_WILDS },
 					}),
 				}),
+				n(ZONE_DROPS, {
+					i(74844),	-- Red Blossom Leek
+				}),
 			},
 		}),
 	}),

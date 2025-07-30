@@ -6228,6 +6228,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 				}),
+				n(ZONE_DROPS, {
+					i(74849),	-- Pink Turnip
+					i(74844),	-- Red Blossom Leek
+				}),
 			},
 		}),
 	}),

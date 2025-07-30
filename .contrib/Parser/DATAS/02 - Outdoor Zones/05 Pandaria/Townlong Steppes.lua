@@ -1830,6 +1830,9 @@ root(ROOTS.Zones, {
 						["sym"] = {{"sub","common_vendor",65172}},	-- Len at Arms <Adventuring Supplies>
 					}),
 				}),
+				n(ZONE_DROPS, {
+					i(74849),	-- Pink Turnip
+				}),
 			},
 		}),
 	}),
