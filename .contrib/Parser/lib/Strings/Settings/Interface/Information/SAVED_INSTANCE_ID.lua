@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "已保存副本 ID",
 		-- TODO: tw = "",
 	},
 })

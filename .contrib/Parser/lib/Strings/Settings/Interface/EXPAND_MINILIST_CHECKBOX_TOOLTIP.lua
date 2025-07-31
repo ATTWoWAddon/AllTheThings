@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "启用此选项后，在每次游戏会话中首次查看迷你列表时，将自动展开其中包含的所有分组。",
 		-- TODO: tw = "",
 	},
 })

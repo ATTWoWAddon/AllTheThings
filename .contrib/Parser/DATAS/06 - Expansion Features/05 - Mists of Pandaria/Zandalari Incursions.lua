@@ -14,7 +14,7 @@ ZANDALARI_INCURSIONS = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "赞达拉入侵",
 		-- TODO: tw = "",
 	},
 	description = {
@@ -27,7 +27,7 @@ ZANDALARI_INCURSIONS = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "赞达拉部族对潘达利亚大陆的入侵始于雷神岛的开放。战争使者遍布整个大陆，拥有难度各异的单人挑战机制及可获取的坐骑！与好友一同刷取这些奖励吧。",
 		-- TODO: tw = "",
 	},
 });
