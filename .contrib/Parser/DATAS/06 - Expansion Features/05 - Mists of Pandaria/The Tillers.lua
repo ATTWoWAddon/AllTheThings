@@ -1134,14 +1134,14 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(30335, {	-- Stalling the Ravage
 					objective(1, {	-- 0/12 Kunzen hozen slain
-						["providers"] = {
-							{ "n", 59119 },	-- Kunzen Ravager
-							{ "n", 59123 },	-- Kunzen Ritualist
-							{ "n", 59120 },	-- Kunzen Rockflinger
-							{ "n", 59124 },	-- Kunzen Collector
-							{ "n", 59121 },	-- Kunzen Hunter
-							{ "n", 59125 },	-- Kunzen Soupmaster
-							{ "n", 59122 },	-- Kunzen Herdskeeper
+						["qgs"] = {
+							59119,	-- Kunzen Ravager
+							59123,	-- Kunzen Ritualist
+							59120,	-- Kunzen Rockflinger
+							59124,	-- Kunzen Collector
+							59121,	-- Kunzen Hunter
+							59125,	-- Kunzen Soupmaster
+							59122,	-- Kunzen Herdskeeper
 						},
 						["coord"] = { 29.8, 33.4, VALLEY_OF_THE_FOUR_WINDS },
 					}),
@@ -1181,12 +1181,12 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(30336, {	-- The Kunzen Hunter-Chief
 					objective(1, {	-- 0/1 Kunzen Hunter-Chief slain
-						["providers"] = {
-							{ "n", 59126 },	-- Jokka-Jokka <Hunter-Chief>
-							{ "n", 59128 },	-- Jim-Jim <Hunter-Chief>
-							{ "n", 59127 },	-- Kon-Kon <Hunter-Chief>
-							{ "n", 59129 },	-- Maaka <Hunter-Chief>
-							{ "n", 59130 },	-- Teeku <Hunter-Chief>
+						["qgs"] = {
+							59126,	-- Jokka-Jokka <Hunter-Chief>
+							59128,	-- Jim-Jim <Hunter-Chief>
+							59127,	-- Kon-Kon <Hunter-Chief>
+							59129,	-- Maaka <Hunter-Chief>
+							59130,	-- Teeku <Hunter-Chief>
 						},
 						["coord"] = { 30.8, 48, VALLEY_OF_THE_FOUR_WINDS },
 					}),
@@ -1262,14 +1262,14 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(30324, {	-- Not in Chee-Chee's Backyard
 					objective(1, {	-- 0/12 Kunzen tribe member slain
-						["providers"] = {
-							{ "n", 59119 },	-- Kunzen Ravager
-							{ "n", 59123 },	-- Kunzen Ritualist
-							{ "n", 59120 },	-- Kunzen Rockflinger
-							{ "n", 59124 },	-- Kunzen Collector
-							{ "n", 59121 },	-- Kunzen Hunter
-							{ "n", 59125 },	-- Kunzen Soupmaster
-							{ "n", 59122 },	-- Kunzen Herdskeeper
+						["qgs"] = {
+							59119,	-- Kunzen Ravager
+							59123,	-- Kunzen Ritualist
+							59120,	-- Kunzen Rockflinger
+							59124,	-- Kunzen Collector
+							59121,	-- Kunzen Hunter
+							59125,	-- Kunzen Soupmaster
+							59122,	-- Kunzen Herdskeeper
 						},
 						["coord"] = { 29.8, 33.4, VALLEY_OF_THE_FOUR_WINDS },
 					}),
@@ -1514,9 +1514,9 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(30321, {	-- Weed War II
 					objective(1, {	-- 0/100 Weeds pulled
-						["providers"] = {
-							{ "n", 57308 },	-- Nasty Weed
-							{ "n", 57306 },	-- Ugly Weed
+						["qgs"] = {
+							57308,	-- Nasty Weed
+							57306,	-- Ugly Weed
 						},
 						["coord"] = { 38.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
 					}),
