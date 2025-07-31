@@ -1191,6 +1191,15 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 30046,	-- Chen's Resolution
 						["qg"] = 57385,	-- Gai Lan
 						["coord"] = { 38.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
+						["groups"] = {
+							objective(1, {	-- 0/100 Weeds pulled
+								["providers"] = {
+									{ "n", 57308 },	-- Nasty Weed
+									{ "n", 57306 },	-- Ugly Weed
+								},
+								["coord"] = { 38.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
+							}),
+						},
 					}),
 					q(30072, {	-- Where Silk Comes From
 						["sourceQuest"] = 32035,	-- Got Silk?

@@ -1514,12 +1514,10 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(30321, {	-- Weed War II
 					objective(1, {	-- 0/100 Weeds pulled
-						--[[
 						["providers"] = {
-							-- NOT SURE IF THERE ARE NPC IDs for this or not.
-							{ "n", },	-- 
+							{ "n", 57308 },	-- Nasty Weed
+							{ "n", 57306 },	-- Ugly Weed
 						},
-						]]--
 						["coord"] = { 38.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 				}),
